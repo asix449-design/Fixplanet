@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FeatureStrip from '../components/FeatureStrip.astro';
+import SolutionCard from '../components/SolutionCard.astro';
+import { latestSolutions } from '../data/solutions';
+---
+
+<BaseLayout>
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-media">
+      <picture>
+        <source type="image/webp" srcset="/images/hero-meadow.webp" />
+        <img
+          src="/images/hero-meadow.png"
+          alt="Sunlit meadow bordered by trees under a clear sky"
+          width="1536"
+          height="1024"
+        />
+      </picture>
+    </div>
+    <div class="hero-gradient"></div>
+    <div class="wrap hero-copy">
+      <h1>Problems. Fixes. Proof.</h1>
+      <p class="hero-lead">
+        A living atlas of technologies that repair the planet — clear problems,
+        working solutions, real evidence.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/solutions">Browse solutions</a>
+        <a class="btn btn-outline" href="/book">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M5 4.5h10.5A3.5 3.5 0 0 1 19 8v12.5H8.5A3.5 3.5 0 0 0 5 17V4.5z"></path>
+            <path d="M5 17a3.5 3.5 0 0 1 3.5-3.5H19"></path>
+          </svg>
+          Read the book
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="latest-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M5 14.5C5 9.8 9.2 5.2 17 4c.4 4.8-.8 8.8-3.6 11.2 1.8-.6 3.6-2 4.6-4.2.8 2.6.4 5.4-1.4 7.5C15 20.4 12.8 21 11 21c-3.4 0-6-2.7-6-6.5z"></path>
+            </svg>
+            Latest solutions
+          </div>
+          <h2 id="latest-heading">Real solutions. Measurable impact.</h2>
+        </div>
+        <a class="text-link" href="/solutions">View all solutions →</a>
+      </div>
+      <div class="card-grid">
+        {latestSolutions.map((solution) => <SolutionCard solution={solution} />)}
+      </div>
+    </div>
+  </section>
+
+  <FeatureStrip />
+</BaseLayout>

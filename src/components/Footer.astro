@@ -1,0 +1,44 @@
+---
+import { site } from '../data/site';
+import Logo from './Logo.astro';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <Logo />
+        <p style="margin-top: 0.9rem; max-width: 28rem;">
+          A living atlas of technologies that repair the planet. Clear problems,
+          working solutions, real evidence.
+        </p>
+      </div>
+      <div>
+        <div class="footer-title">Explore</div>
+        <div class="footer-links">
+          <a href="/solutions">Solutions</a>
+          <a href="/book">The book</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-title">Coming soon</div>
+        <div class="footer-links">
+          <a href="/maps">Maps</a>
+          <a href="/law">Law</a>
+          <a href="/wildlife">Wildlife</a>
+          <a href="/forests">Forests</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>Based in {site.location}</span>
+      <span>
+        <a href={site.twitter} rel="noopener noreferrer">{site.twitterHandle}</a>
+        · © {year} {site.name}
+      </span>
+    </div>
+  </div>
+</footer>

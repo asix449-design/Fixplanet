@@ -1,0 +1,45 @@
+---
+import { features } from '../data/site';
+---
+
+<section class="section section-cream" aria-label="What Fix Planet covers">
+  <div class="wrap feature-strip">
+    {
+      features.map((item) => (
+        <a class="feature" href={item.href}>
+          <div class="feature-icon">
+            {item.icon === 'leaf' && (
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M5 14.5C5 9.8 9.2 5.2 17 4c.4 4.8-.8 8.8-3.6 11.2 1.8-.6 3.6-2 4.6-4.2.8 2.6.4 5.4-1.4 7.5C15 20.4 12.8 21 11 21c-3.4 0-6-2.7-6-6.5z"></path>
+              </svg>
+            )}
+            {item.icon === 'globe' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="8.2"></circle>
+                <path d="M3.8 12h16.4M12 3.8c2.8 2.8 2.8 13.6 0 16.4M12 3.8c-2.8 2.8-2.8 13.6 0 16.4"></path>
+              </svg>
+            )}
+            {item.icon === 'scales' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M12 4v15M8 20h8M12 6.5 6 13h12L12 6.5z"></path>
+                <path d="M6 13c0 1.8 1.2 2.8 2.8 2.8S11.6 14.8 11.6 13M12.4 13c0 1.8 1.2 2.8 2.8 2.8S18 14.8 18 13"></path>
+              </svg>
+            )}
+            {item.icon === 'paw' && (
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="7.2" cy="8.2" r="1.8"></circle>
+                <circle cx="12" cy="6.4" r="1.8"></circle>
+                <circle cx="16.8" cy="8.2" r="1.8"></circle>
+                <ellipse cx="12" cy="15.4" rx="4.1" ry="3.3"></ellipse>
+              </svg>
+            )}
+          </div>
+          <div>
+            <div class="feature-title">{item.title}</div>
+            <div class="feature-text">{item.text}</div>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>
