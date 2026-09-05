@@ -57,7 +57,14 @@ npm run preview   # serve the production build
 4. Production branch: `main`. Preview deployments are created automatically for pull requests.
 5. After the first successful build, add the custom domain (below).
 
-You can also publish a local build with [Wrangler](https://developers.cloudflare.com/pages/get-started/direct-upload/):
+The Worker name is `fixplanet`. `wrangler.jsonc` points static assets at `dist/` after `npm run build`. You can also publish a local build with [Wrangler](https://developers.cloudflare.com/workers/static-assets/):
+
+```bash
+npm run build
+npx wrangler deploy
+```
+
+Pages-style upload still works if that is how the project is connected:
 
 ```bash
 npm run build
