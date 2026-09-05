@@ -230,5 +230,13 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur_Leopard_Panthera_pardus_orientalis_Facing_Forward_1761px.jpg",
     "artist": "Photo by Derek Ramsey (Ram-Man)",
     "license": "CC BY-SA 2.5"
+  },
+  {
+    "slug": "wildlife-section-bg",
+    "file": "wildlife-section-bg.jpg",
+    "commonsTitle": "",
+    "sourceUrl": "",
+    "artist": "Fix Planet section theme — dense South American wildlife collage in a natural-history / sunset style",
+    "license": "Site theme asset"
   }
 ]

@@ -14,8 +14,17 @@ const title = `${species.commonName} — Fix Planet`;
 const image = wildlifeImageSrc(species.image);
 ---
 
-<BaseLayout title={title} description={species.hook} image={image}>
-  <header class="page-hero">
+<BaseLayout title={title} description={species.hook} image={image} theme="wildlife-detail">
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img
+      src="/images/wildlife/wildlife-section-bg.jpg"
+      alt=""
+      width="1536"
+      height="1024"
+    />
+    <div class="section-backdrop-scrim"></div>
+  </div>
+  <header class="page-hero wildlife-detail-hero">
     <div class="wrap">
       <p>
         <a class="text-link" href={localizePath('/wildlife', locale)}

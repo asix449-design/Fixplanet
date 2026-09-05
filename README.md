@@ -14,7 +14,7 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 | `/solutions` | All problem → technology cards, with topic filters |
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
-| `/wildlife` | Encyclopedia: *Homo sapiens* hero and dispersal map, plus surviving / endangered / extinct species. Detail pages at `/wildlife/[slug]` |
+| `/wildlife` | Encyclopedia: *Homo sapiens* hero and dispersal map, plus surviving / endangered / extinct species. Detail pages at `/wildlife/[slug]`. Themed South-American wildlife collage backdrop (scrimmed for type; map sits on a solid panel) |
 | `/maps` | Sourced map catalog (conflict, languages, religion, crime, pollution, energy, minerals, borders, forests, water, people). Detail pages at `/maps/[slug]`; category filters at `/maps/conflicts` and `?category=` |
 | `/law`, `/forests` | Placeholders — coming soon |
 
@@ -101,6 +101,7 @@ Do not point the apex at GitHub Pages or a third-party host while Cloudflare Pag
 
 - Brand greens: primary `#1B7A4E`, leaf `#3FA36A`, cream `#F4F7F2`
 - Hero photograph: `public/images/hero-meadow.png` (source) and `.webp` (served). Left cream gradient keeps the headline readable.
+- Section themes: Maps uses NASA Blue Marble; Wildlife uses `public/images/wildlife/wildlife-section-bg.jpg` with a cream/dark scrim. Other sections will get their own backdrops later.
 - Typeface: Inter
 
 ## License

@@ -29,11 +29,22 @@ const tabLeads = {
 <BaseLayout
   title={ui.wildlifePage.metaTitle}
   description={ui.wildlifePage.metaDescription}
+  theme="wildlife"
 >
-  <header class="page-hero">
+  <div class="section-backdrop" aria-hidden="true">
+    <img
+      src="/images/wildlife/wildlife-section-bg.jpg"
+      alt=""
+      width="1536"
+      height="1024"
+    />
+    <div class="section-backdrop-scrim"></div>
+  </div>
+
+  <header class="wildlife-page-hero" aria-labelledby="wildlife-heading">
     <div class="wrap">
-      <div class="eyebrow">{ui.wildlifePage.eyebrow}</div>
-      <h1>{ui.wildlifePage.title}</h1>
+      <div class="eyebrow wildlife-on-dark">{ui.wildlifePage.eyebrow}</div>
+      <h1 id="wildlife-heading">{ui.wildlifePage.title}</h1>
       <p>{ui.wildlifePage.lead}</p>
     </div>
   </header>
@@ -48,7 +59,7 @@ const tabLeads = {
           height="960"
         />
       </figure>
-      <div>
+      <div class="wildlife-copy-card">
         <div class="eyebrow">{ui.wildlifePage.heroEyebrow}</div>
         <h2 id="our-species"><em>{ui.wildlifePage.scientificName}</em></h2>
         <dl class="wildlife-stats">
@@ -66,14 +77,16 @@ const tabLeads = {
     </div>
   </section>
 
-  <section class="section section-cream" aria-labelledby="dispersal-heading">
+  <section class="section" aria-labelledby="dispersal-heading">
     <div class="wrap">
-      <HumanDispersalMap />
+      <div class="wildlife-map-panel">
+        <HumanDispersalMap />
+      </div>
     </div>
   </section>
 
-  <section class="section section-cream" id="species-list">
-    <div class="wrap">
+  <section class="section" id="species-list">
+    <div class="wrap wildlife-list-panel">
       <div class="filters" role="tablist" aria-label={ui.wildlifePage.tabsAria}>
         {
           wildlifeStatusKeys.map((key) => (
