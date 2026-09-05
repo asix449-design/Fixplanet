@@ -104,7 +104,7 @@ const en = {
     population:
       'About 8.2 billion people in 2025 (United Nations, World Population Prospects 2024, medium variant). The same revision put the mid-2024 world total at 8.2 billion. It is an official estimate, not a census of every person.',
     framing:
-      'Where people arrived as a new predator, most of the largest animals disappeared within a few thousand years. The wave is not one date — it follows us: Australia about 50,000–40,000 years ago, the Americas about 15,000–10,000, islands in the last few thousand, and it has not stopped. That is a loss of large-mammal genera (animals typically 44 kg and up), not 90 percent of all animals on Earth. About 20,000 years belongs in the Americas chapter, not as “first people” or Australia.',
+      'Where people arrived as a new predator, most of the largest animals disappeared within a few thousand years. The wave is not one date — it follows us: Australia about 50,000–40,000 years ago, the Americas about 15,000–10,000, islands in the last few thousand, and it has not stopped. On continents entered for the first time, about 70–90 percent of large-animal genera vanished (animals typically 44 kg and up). That is not 90 percent of all animals on Earth. About 20,000–15,000 years is when people reached the Americas — not when our species began, and not when people reached Australia.',
     imageAlt:
       'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
     scientificName: 'Homo sapiens',
@@ -134,7 +134,7 @@ const en = {
     mapLossNorth: '~72%',
     mapLossSouth: '~83%',
     mapSources:
-      'Arrival ranges, not exact years. Africa’s lower loss is the usual reading: animals there co-evolved with hominins. Continent percentages after Barnosky 2008 (and summaries such as Our World in Data); Australia’s early site Madjedbebe, Clarkson et al. 2017. Human arrival fits the Late Quaternary pattern better than climate alone (Sandom et al. 2014); some species, including woolly mammoth, still need both.',
+      'Arrival ranges, not exact years. Africa’s lower loss is the usual reading: animals there co-evolved with hominins. Continent percentages after Barnosky 2008 (and summaries such as Our World in Data; see also Andermann et al. 2020); Australia’s early site Madjedbebe, Clarkson et al. 2017. Human arrival fits the Late Quaternary pattern better than climate alone (Sandom et al. 2014); some species, including woolly mammoth, still need both.',
     cardCta: 'Read entry →',
     back: '← Wildlife',
     what: 'What it is',
@@ -339,7 +339,7 @@ const ru: typeof en = {
     population:
       'Около 8,2 миллиарда человек в 2025 году (ООН, World Population Prospects 2024, средний вариант). Та же ревизия давала 8,2 миллиарда на середину 2024-го. Это официальная оценка, а не перепись каждого человека.',
     framing:
-      'Там, где люди пришли как новый хищник, большая часть самых крупных животных исчезла за несколько тысяч лет. Волна — не одна дата: она идёт за нами. Австралия около 50–40 тысяч лет назад, Америка около 15–10 тысяч, острова за последние несколько тысяч — и она не остановилась. Это потеря родов крупных млекопитающих (обычно от 44 кг), а не 90 процентов всех животных Земли. Около 20 000 лет — глава про Америку, а не «первые люди» и не Австралия.',
+      'Там, где люди пришли как новый хищник, большая часть самых крупных животных исчезла за несколько тысяч лет. Волна — не одна дата: она идёт за нами. Австралия около 50–40 тысяч лет назад, Америка около 15–10 тысяч, острова за последние несколько тысяч — и она не остановилась. На континентах, куда люди вошли впервые, исчезло около 70–90 процентов родов крупных животных (обычно от 44 кг). Это не 90 процентов всех животных Земли. Около 20 000–15 000 лет — когда люди дошли до Америки, а не когда возник наш вид и не когда люди дошли до Австралии.',
     imageAlt:
       'Современный взрослый человек на лугу — спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
     scientificName: 'Homo sapiens',
@@ -369,7 +369,7 @@ const ru: typeof en = {
     mapLossNorth: '~72%',
     mapLossSouth: '~83%',
     mapSources:
-      'Диапазоны прихода, не точные годы. Более низкая африканская потеря — обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам — по Barnosky 2008 (и сводкам вроде Our World in Data); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
+      'Диапазоны прихода, не точные годы. Более низкая африканская потеря — обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам — по Barnosky 2008 (и сводкам вроде Our World in Data; см. также Andermann et al. 2020); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
     cardCta: 'Читать карточку →',
     back: '← Природа',
     what: 'Что это',
@@ -577,7 +577,7 @@ const pl: typeof en = {
     population:
       'Około 8,2 miliarda ludzi w 2025 roku (ONZ, World Population Prospects 2024, wariant średni). Ta sama rewizja podała 8,2 miliarda w połowie 2024. To oficjalny szacunek, nie spis każdej osoby.',
     framing:
-      'Gdzie ludzie przyszli jako nowy drapieżnik, większość największych zwierząt zniknęła w ciągu kilku tysięcy lat. Fala nie ma jednej daty — idzie za nami: Australia ok. 50–40 tysięcy lat temu, Ameryki ok. 15–10 tysięcy, wyspy w ostatnich kilku tysiącach, i nie ustała. To ubytek rodzajów dużych ssaków (zazwyczaj od 44 kg), nie 90 procent wszystkich zwierząt na Ziemi. Około 20 000 lat należy do rozdziału o Amerykach, nie do „pierwszych ludzi” ani Australii.',
+      'Gdzie ludzie przyszli jako nowy drapieżnik, większość największych zwierząt zniknęła w ciągu kilku tysięcy lat. Fala nie ma jednej daty — idzie za nami: Australia ok. 50–40 tysięcy lat temu, Ameryki ok. 15–10 tysięcy, wyspy w ostatnich kilku tysiącach, i nie ustała. Na kontynentach, na które ludzie weszli po raz pierwszy, zniknęło ok. 70–90 procent rodzajów dużych zwierząt (zazwyczaj od 44 kg). To nie 90 procent wszystkich zwierząt na Ziemi. Ok. 20 000–15 000 lat to moment, gdy ludzie dotarli do Ameryk — nie początek naszego gatunku i nie przybycie do Australii.',
     imageAlt:
       'Współczesny dorosły człowiek na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
     scientificName: 'Homo sapiens',
@@ -607,7 +607,7 @@ const pl: typeof en = {
     mapLossNorth: '~72%',
     mapLossSouth: '~83%',
     mapSources:
-      'Zakresy przybycia, nie dokładne lata. Niższa strata Afryki to zwykły odczyt: zwierzęta ewoluowały tam obok homininów. Odsetki kontynentów za Barnosky 2008 (i streszczenia jak Our World in Data); wczesne stanowisko Madjedbebe, Clarkson et al. 2017. Przybycie ludzi lepiej tłumaczy późnoczwartorzędowy wzór niż sam klimat (Sandom et al. 2014); niektóre gatunki, w tym mamut włochaty, wciąż wymagają obu.',
+      'Zakresy przybycia, nie dokładne lata. Niższa strata Afryki to zwykły odczyt: zwierzęta ewoluowały tam obok homininów. Odsetki kontynentów za Barnosky 2008 (i streszczenia jak Our World in Data; zob. też Andermann et al. 2020); wczesne stanowisko Madjedbebe, Clarkson et al. 2017. Przybycie ludzi lepiej tłumaczy późnoczwartorzędowy wzór niż sam klimat (Sandom et al. 2014); niektóre gatunki, w tym mamut włochaty, wciąż wymagają obu.',
     cardCta: 'Czytaj hasło →',
     back: '← Przyroda',
     what: 'Czym jest',
@@ -815,7 +815,7 @@ const lv: typeof en = {
     population:
       'Ap 8,2 miljardiem cilvēku 2025. gadā (ANO, World Population Prospects 2024, vidējais variants). Tā pati revīzija 2024. gada vidum deva 8,2 miljardus. Tas ir oficiāls vērtējums, ne katra cilvēka skaitīšana.',
     framing:
-      'Tur, kur cilvēki ienāca kā jauns plēsējs, lielākā daļa lielāko dzīvnieku izzuda dažu tūkstošu gadu laikā. Vilnis nav viens datums — tas iet mums līdzi: Austrālija ap 50–40 tūkstošiem gadu, Amerika ap 15–10 tūkstošiem, salas pēdējos dažos tūkstošos, un tas nav apstājies. Tā ir lielo zīdītāju ģinšu (parasti no 44 kg) zaudēšana, ne 90 procenti visu dzīvnieku uz Zemes. Ap 20 000 gadi pieder Amerikas nodaļai, ne “pirmajiem cilvēkiem” un ne Austrālijai.',
+      'Tur, kur cilvēki ienāca kā jauns plēsējs, lielākā daļa lielāko dzīvnieku izzuda dažu tūkstošu gadu laikā. Vilnis nav viens datums — tas iet mums līdzi: Austrālija ap 50–40 tūkstošiem gadu, Amerika ap 15–10 tūkstošiem, salas pēdējos dažos tūkstošos, un tas nav apstājies. Kontinentos, kuros cilvēki ienāca pirmo reizi, izzuda ap 70–90 procentiem lielo dzīvnieku ģinšu (parasti no 44 kg). Tas nav 90 procenti visu dzīvnieku uz Zemes. Ap 20 000–15 000 gadu ir brīdis, kad cilvēki sasniedza Ameriku — ne mūsu sugas sākums un ne ierašanās Austrālijā.',
     imageAlt:
       'Mūsdienu pieaugušais cilvēks pļavā — mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
     scientificName: 'Homo sapiens',
@@ -845,7 +845,7 @@ const lv: typeof en = {
     mapLossNorth: '~72%',
     mapLossSouth: '~83%',
     mapSources:
-      'Ierašanās diapazoni, ne precīzi gadi. Āfrikas mazāko zudumu parasti skaidro ar to, ka dzīvnieki tur evolūcijā jau bija līdzās hominīniem. Kontinentu procenti pēc Barnosky 2008 (un kopsavilkumiem kā Our World in Data); Austrālijas agrā vieta Madjedbebe, Clarkson et al. 2017. Cilvēku ierašanās vēlo kvartāru labāk izskaidro nekā klimats viens (Sandom et al. 2014); dažām sugām, tostarp vilnainajam mamutam, joprojām vajag abus.',
+      'Ierašanās diapazoni, ne precīzi gadi. Āfrikas mazāko zudumu parasti skaidro ar to, ka dzīvnieki tur evolūcijā jau bija līdzās hominīniem. Kontinentu procenti pēc Barnosky 2008 (un kopsavilkumiem kā Our World in Data; skat. arī Andermann et al. 2020); Austrālijas agrā vieta Madjedbebe, Clarkson et al. 2017. Cilvēku ierašanās vēlo kvartāru labāk izskaidro nekā klimats viens (Sandom et al. 2014); dažām sugām, tostarp vilnainajam mamutam, joprojām vajag abus.',
     cardCta: 'Lasīt šķirkli →',
     back: '← Savvaļa',
     what: 'Kas tas ir',
