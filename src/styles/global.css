@@ -1000,6 +1000,13 @@ a.solution-card:hover {
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  background: #d7e4d6;
+}
+
+@media (max-width: 640px) {
+  .dispersal-pin-label {
+    display: none;
+  }
 }
 
 .dispersal-steps {
