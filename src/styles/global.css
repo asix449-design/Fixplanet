@@ -199,7 +199,7 @@ p:last-child {
   gap: 0.5rem;
   min-height: 48px;
   padding: 0.7rem 1.25rem;
-  border-radius: 10px;
+  border-radius: 999px;
   font-weight: 600;
   font-size: 0.98rem;
   text-decoration: none;
@@ -455,6 +455,10 @@ a.solution-card:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.4rem;
+}
+
+.section-cream + .section-cream {
+  padding-top: 0;
 }
 
 .feature {
