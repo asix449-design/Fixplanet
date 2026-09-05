@@ -38,7 +38,8 @@ export function resolveLocale(
 
 /** Strip a leading /ru|/pl|/lv prefix so /ru/about → /about */
 export function stripLocalePrefix(pathname: string): string {
-  const [path, hash] = pathname.split('#');
+  const [beforeHash, hash] = pathname.split('#');
+  const [path, search] = beforeHash.split('?');
   const clean = path.replace(/\/+$/, '') || '/';
   const segments = clean.split('/').filter(Boolean);
   const rest =
@@ -46,13 +47,15 @@ export function stripLocalePrefix(pathname: string): string {
       ? `/${segments.slice(1).join('/')}`
       : clean;
   const normalized = rest === '/' || rest === '' ? '/' : rest;
-  return hash ? `${normalized}#${hash}` : normalized;
+  const withSearch = search ? `${normalized}?${search}` : normalized;
+  return hash ? `${withSearch}#${hash}` : withSearch;
 }
 
-/** Prefix a site-root path (/about, /solutions#slug) for the given locale. */
+/** Prefix a site-root path (/about, /solutions#slug, /wildlife?status=) for the given locale. */
 export function localizePath(path: string, locale: Locale): string {
   const unprefixed = stripLocalePrefix(path);
-  const [pathname, hash] = unprefixed.split('#');
+  const [beforeHash, hash] = unprefixed.split('#');
+  const [pathname, search] = beforeHash.split('?');
   const clean = pathname.replace(/\/+$/, '') || '/';
   const localized =
     locale === defaultLocale
@@ -60,7 +63,8 @@ export function localizePath(path: string, locale: Locale): string {
       : clean === '/'
         ? `/${locale}/`
         : `/${locale}${clean}`;
-  return hash ? `${localized}#${hash}` : localized;
+  const withSearch = search ? `${localized}?${search}` : localized;
+  return hash ? `${withSearch}#${hash}` : withSearch;
 }
 
 export function switchLocalePath(pathname: string, locale: Locale): string {

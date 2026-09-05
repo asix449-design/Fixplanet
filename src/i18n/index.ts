@@ -15,3 +15,8 @@ export {
 
 export { basedIn, getUi, ui, type Ui } from './messages';
 export { getLatestSolutions, getSolutions } from './solutions';
+export {
+  getWildlifeBySlug,
+  getWildlifeByStatus,
+  getWildlifeSpecies,
+} from './wildlife';

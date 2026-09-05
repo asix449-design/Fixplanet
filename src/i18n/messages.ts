@@ -89,6 +89,84 @@ const en = {
       energy: 'Energy',
     } satisfies Record<TagKey, string>,
   },
+  wildlifePage: {
+    metaTitle: 'Wildlife — Fix Planet',
+    metaDescription:
+      'An encyclopedia of how animal populations changed after modern humans spread: surviving, endangered, and extinct species, with a map of when people reached each continent.',
+    eyebrow: 'Encyclopedia',
+    title: 'Wildlife',
+    lead: 'Our species first — where we arose, where we went, and how the largest animals changed after we arrived as a new predator.',
+    heroEyebrow: 'Our species',
+    appearedLabel: 'Appeared',
+    appeared:
+      'About 300,000 years ago in Africa. Fossils from Jebel Irhoud, Morocco, date to around 315,000 years; genetic and fossil work places the origin of Homo sapiens on that continent at about 300,000 years. Africa later lost a relatively small share of its large-mammal genera (about 18–21 percent in the usual compilations), the usual reading being that many of those animals had already lived alongside hominins.',
+    populationLabel: 'Population today',
+    population:
+      'About 8.2 billion people in 2025 (United Nations, World Population Prospects 2024, medium variant). The same revision put the mid-2024 world total at 8.2 billion. It is an official estimate, not a census of every person.',
+    framing:
+      'Where people arrived as a new predator, most of the largest animals disappeared within a few thousand years. The wave is not one date — it follows us: Australia about 50,000–40,000 years ago, the Americas about 15,000–10,000, islands in the last few thousand, and it has not stopped. On continents entered for the first time, about 70–90 percent of large-animal genera vanished (animals typically 44 kg and up). That is not 90 percent of all animals on Earth. About 20,000–15,000 years is when people reached the Americas — not when our species began, and not when people reached Australia.',
+    imageAlt:
+      'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Filter species by status',
+    surviving: 'Surviving',
+    endangered: 'Endangered',
+    extinct: 'Extinct',
+    survivingLead:
+      'Still here, with ranges or numbers that shifted after people spread — hunting, farms, later recovery, or boom. The dates differ by continent.',
+    endangeredLead:
+      'Threatened now, mainly because of people: habitat loss, hunting, bycatch, and a climate we have changed.',
+    extinctLead:
+      'Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.',
+    mapTitle: 'Where we went, and when',
+    mapAria: 'World map of Homo sapiens dispersal with dated arrival steps',
+    mapLead:
+      'Large-animal loss follows this path. Percentages below are genera of large mammals, not of all animal species.',
+    mapAfrica: 'Africa · origin ~300,000 years ago',
+    mapOut: 'Out of Africa · ~70,000–50,000',
+    mapAustralia: 'Australia / Sahul · ~65,000–50,000',
+    mapEurasia: 'Eurasia · ~45,000–40,000',
+    mapAmericas: 'Americas · ~20,000–15,000',
+    mapIslands: 'Later islands · last few thousand years (New Zealand ~700)',
+    mapLegend: 'Numbered arrival steps',
+    mapPinAfrica: '~300,000 years',
+    mapPinOut: '~70–50 thousand',
+    mapPinAustralia: '~65–50 thousand',
+    mapPinEurasia: '~45–40 thousand',
+    mapPinAmericas: '~20–15 thousand',
+    mapPinIslands: 'islands · NZ ~700 years',
+    mapLossAfrica: '~18–21% of large-mammal genera lost',
+    mapLossAustralia: '~88%',
+    mapLossEurasia: '~35%',
+    mapLossNorth: '~72%',
+    mapLossSouth: '~83%',
+    mapSources:
+      'Arrival ranges, not exact years. Africa’s lower loss is the usual reading: animals there co-evolved with hominins. Continent percentages after Barnosky 2008 (and summaries such as Our World in Data; see also Andermann et al. 2020); Australia’s early site Madjedbebe, Clarkson et al. 2017. Human arrival fits the Late Quaternary pattern better than climate alone (Sandom et al. 2014); some species, including woolly mammoth, still need both.',
+    cardCta: 'Read entry →',
+    back: '← Wildlife',
+    what: 'What it is',
+    range: 'Range',
+    story: 'What happened',
+    when: 'When / status',
+    humanRole: 'Human role',
+    iucnLabel: 'IUCN',
+    sourcesLabel: 'Sources',
+    imageCredit: 'Image',
+    iucn: {
+      EX: 'Extinct',
+      CR: 'Critically Endangered',
+      CR_PE: 'Critically Endangered (Possibly Extinct)',
+      EN: 'Endangered',
+      VU: 'Vulnerable',
+      NT: 'Near Threatened',
+      LC: 'Least Concern',
+    },
+    status: {
+      surviving: 'Surviving',
+      endangered: 'Endangered',
+      extinct: 'Extinct',
+    },
+  },
   about: {
     metaTitle: 'About — Fix Planet',
     metaDescription:
@@ -141,13 +219,6 @@ const en = {
       metaDescription: 'Legal frameworks to protect people and planet — coming soon.',
       summary:
         'Legal frameworks that protect people and planet will be collected here. This section is not published yet.',
-    },
-    wildlife: {
-      title: 'Wildlife',
-      metaTitle: 'Wildlife — Fix Planet',
-      metaDescription: 'Protecting species and habitats — coming soon.',
-      summary:
-        'Coverage of species and habitats will appear here. This section is not published yet.',
     },
     forests: {
       title: 'Forests',
@@ -260,6 +331,84 @@ const ru: typeof en = {
       energy: 'Энергия',
     },
   },
+  wildlifePage: {
+    metaTitle: 'Природа — Fix Planet',
+    metaDescription:
+      'Энциклопедия того, как изменились популяции животных после расселения современного человека: выжившие, находящиеся под угрозой и вымершие виды, с картой того, когда люди дошли до каждого континента.',
+    eyebrow: 'Энциклопедия',
+    title: 'Природа',
+    lead: 'Сначала наш вид — где мы возникли, куда ушли и как изменились самые крупные животные после того, как мы пришли как новый хищник.',
+    heroEyebrow: 'Наш вид',
+    appearedLabel: 'Появился',
+    appeared:
+      'Около 300 000 лет назад в Африке. Находки из Джебель-Ирхуда в Марокко датируют примерно 315 000 лет; генетика и палеонтология помещают происхождение Homo sapiens на этот континент около 300 000 лет. Позже Африка потеряла сравнительно малую долю родов крупных млекопитающих (обычно приводят около 18–21 процента): многие из этих животных уже жили рядом с гомининами.',
+    populationLabel: 'Численность сегодня',
+    population:
+      'Около 8,2 миллиарда человек в 2025 году (ООН, World Population Prospects 2024, средний вариант). Та же ревизия давала 8,2 миллиарда на середину 2024-го. Это официальная оценка, а не перепись каждого человека.',
+    framing:
+      'Там, где люди пришли как новый хищник, большая часть самых крупных животных исчезла за несколько тысяч лет. Волна — не одна дата: она идёт за нами. Австралия около 50–40 тысяч лет назад, Америка около 15–10 тысяч, острова за последние несколько тысяч — и она не остановилась. На континентах, куда люди вошли впервые, исчезло около 70–90 процентов родов крупных животных (обычно от 44 кг). Это не 90 процентов всех животных Земли. Около 20 000–15 000 лет — когда люди дошли до Америки, а не когда возник наш вид и не когда люди дошли до Австралии.',
+    imageAlt:
+      'Современный взрослый человек на лугу — спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Фильтр видов по статусу',
+    surviving: 'Выжившие',
+    endangered: 'Под угрозой',
+    extinct: 'Вымершие',
+    survivingLead:
+      'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей — охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
+    endangeredLead:
+      'Под угрозой сейчас, главным образом из-за людей: потеря мест, охота, прилов и климат, который мы изменили.',
+    extinctLead:
+      'Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
+    mapTitle: 'Куда мы ушли и когда',
+    mapAria: 'Карта расселения Homo sapiens с датированными шагами',
+    mapLead:
+      'Исчезновение крупных животных идёт по этому пути. Доли ниже — роды крупных млекопитающих, а не все виды животных.',
+    mapAfrica: 'Африка · происхождение ~300 000 лет назад',
+    mapOut: 'Из Африки · ~70 000–50 000',
+    mapAustralia: 'Австралия / Сахул · ~65 000–50 000',
+    mapEurasia: 'Евразия · ~45 000–40 000',
+    mapAmericas: 'Америка · ~20 000–15 000',
+    mapIslands: 'Позднее острова · последние несколько тысяч лет (Новая Зеландия ~700)',
+    mapLegend: 'Нумерованные шаги расселения',
+    mapPinAfrica: '~300 000 лет',
+    mapPinOut: '~70–50 тысяч',
+    mapPinAustralia: '~65–50 тысяч',
+    mapPinEurasia: '~45–40 тысяч',
+    mapPinAmericas: '~20–15 тысяч',
+    mapPinIslands: 'острова · Н. Зеландия ~700 лет',
+    mapLossAfrica: 'потеряно ~18–21% родов крупных млекопитающих',
+    mapLossAustralia: '~88%',
+    mapLossEurasia: '~35%',
+    mapLossNorth: '~72%',
+    mapLossSouth: '~83%',
+    mapSources:
+      'Диапазоны прихода, не точные годы. Более низкая африканская потеря — обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам — по Barnosky 2008 (и сводкам вроде Our World in Data; см. также Andermann et al. 2020); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
+    cardCta: 'Читать карточку →',
+    back: '← Природа',
+    what: 'Что это',
+    range: 'Ареал',
+    story: 'Что произошло',
+    when: 'Когда / статус',
+    humanRole: 'Роль человека',
+    iucnLabel: 'МСОП',
+    sourcesLabel: 'Источники',
+    imageCredit: 'Изображение',
+    iucn: {
+      EX: 'Исчезнувший',
+      CR: 'На грани исчезновения',
+      CR_PE: 'На грани исчезновения (возможно, исчез)',
+      EN: 'Исчезающий',
+      VU: 'Уязвимый',
+      NT: 'Близкий к уязвимому',
+      LC: 'Вызывающий наименьшие опасения',
+    },
+    status: {
+      surviving: 'Выживший',
+      endangered: 'Под угрозой',
+      extinct: 'Вымерший',
+    },
+  },
   about: {
     metaTitle: 'О проекте — Fix Planet',
     metaDescription:
@@ -315,13 +464,6 @@ const ru: typeof en = {
       metaDescription: 'Правовые рамки для защиты людей и планеты — скоро.',
       summary:
         'Здесь будут собраны правовые рамки, которые защищают людей и планету. Раздел ещё не опубликован.',
-    },
-    wildlife: {
-      title: 'Природа',
-      metaTitle: 'Природа — Fix Planet',
-      metaDescription: 'Защита видов и мест обитания — скоро.',
-      summary:
-        'Материалы о видах и местах обитания появятся здесь. Раздел ещё не опубликован.',
     },
     forests: {
       title: 'Леса',
@@ -434,6 +576,84 @@ const pl: typeof en = {
       energy: 'Energia',
     },
   },
+  wildlifePage: {
+    metaTitle: 'Przyroda — Fix Planet',
+    metaDescription:
+      'Encyklopedia tego, jak zmieniły się populacje zwierząt po rozprzestrzenieniu się współczesnego człowieka: gatunki, które przetrwały, zagrożone i wymarłe, z mapą tego, kiedy ludzie dotarli na każdy kontynent.',
+    eyebrow: 'Encyklopedia',
+    title: 'Przyroda',
+    lead: 'Najpierw nasz gatunek — gdzie powstał, dokąd poszedł i jak zmieniły się największe zwierzęta, gdy przyszliśmy jako nowy drapieżnik.',
+    heroEyebrow: 'Nasz gatunek',
+    appearedLabel: 'Pojawił się',
+    appeared:
+      'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat; genetyka i paleontologia umieszczają pochodzenie Homo sapiens na tym kontynencie około 300 000 lat. Afryka później straciła stosunkowo małą część rodzajów dużych ssaków (zwykle ok. 18–21 procent): wiele z tych zwierząt żyło już obok homininów.',
+    populationLabel: 'Populacja dziś',
+    population:
+      'Około 8,2 miliarda ludzi w 2025 roku (ONZ, World Population Prospects 2024, wariant średni). Ta sama rewizja podała 8,2 miliarda w połowie 2024. To oficjalny szacunek, nie spis każdej osoby.',
+    framing:
+      'Gdzie ludzie przyszli jako nowy drapieżnik, większość największych zwierząt zniknęła w ciągu kilku tysięcy lat. Fala nie ma jednej daty — idzie za nami: Australia ok. 50–40 tysięcy lat temu, Ameryki ok. 15–10 tysięcy, wyspy w ostatnich kilku tysiącach, i nie ustała. Na kontynentach, na które ludzie weszli po raz pierwszy, zniknęło ok. 70–90 procent rodzajów dużych zwierząt (zazwyczaj od 44 kg). To nie 90 procent wszystkich zwierząt na Ziemi. Ok. 20 000–15 000 lat to moment, gdy ludzie dotarli do Ameryk — nie początek naszego gatunku i nie przybycie do Australii.',
+    imageAlt:
+      'Współczesny dorosły człowiek na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Filtruj gatunki według statusu',
+    surviving: 'Przetrwałe',
+    endangered: 'Zagrożone',
+    extinct: 'Wymarłe',
+    survivingLead:
+      'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi — polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
+    endangeredLead:
+      'Zagrożone teraz, głównie przez ludzi: utrata siedlisk, polowania, przyłów i klimat, który zmieniliśmy.',
+    extinctLead:
+      'Zniknęły. Większość kart ma jasną przyczynę ludzką. Przy kilku przedstawicielach megafauny późnego plejstocenu klimat jest drugim, uczciwie nazwanym czynnikiem.',
+    mapTitle: 'Dokąd poszliśmy i kiedy',
+    mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi krokami',
+    mapLead:
+      'Ubytek wielkich zwierząt idzie tą drogą. Odsetki poniżej to rodzaje dużych ssaków, nie wszystkie gatunki zwierząt.',
+    mapAfrica: 'Afryka · pochodzenie ~300 000 lat temu',
+    mapOut: 'Z Afryki · ~70 000–50 000',
+    mapAustralia: 'Australia / Sahul · ~65 000–50 000',
+    mapEurasia: 'Eurazja · ~45 000–40 000',
+    mapAmericas: 'Ameryki · ~20 000–15 000',
+    mapIslands: 'Później wyspy · ostatnie kilka tysięcy lat (Nowa Zelandia ~700)',
+    mapLegend: 'Ponumerowane etapy przybycia',
+    mapPinAfrica: '~300 000 lat',
+    mapPinOut: '~70–50 tysięcy',
+    mapPinAustralia: '~65–50 tysięcy',
+    mapPinEurasia: '~45–40 tysięcy',
+    mapPinAmericas: '~20–15 tysięcy',
+    mapPinIslands: 'wyspy · N. Zelandia ~700 lat',
+    mapLossAfrica: '~18–21% rodzajów dużych ssaków utraconych',
+    mapLossAustralia: '~88%',
+    mapLossEurasia: '~35%',
+    mapLossNorth: '~72%',
+    mapLossSouth: '~83%',
+    mapSources:
+      'Zakresy przybycia, nie dokładne lata. Niższa strata Afryki to zwykły odczyt: zwierzęta ewoluowały tam obok homininów. Odsetki kontynentów za Barnosky 2008 (i streszczenia jak Our World in Data; zob. też Andermann et al. 2020); wczesne stanowisko Madjedbebe, Clarkson et al. 2017. Przybycie ludzi lepiej tłumaczy późnoczwartorzędowy wzór niż sam klimat (Sandom et al. 2014); niektóre gatunki, w tym mamut włochaty, wciąż wymagają obu.',
+    cardCta: 'Czytaj hasło →',
+    back: '← Przyroda',
+    what: 'Czym jest',
+    range: 'Zasięg',
+    story: 'Co się stało',
+    when: 'Kiedy / status',
+    humanRole: 'Rola człowieka',
+    iucnLabel: 'IUCN',
+    sourcesLabel: 'Źródła',
+    imageCredit: 'Zdjęcie',
+    iucn: {
+      EX: 'Wymarły',
+      CR: 'Krytycznie zagrożony',
+      CR_PE: 'Krytycznie zagrożony (prawdopodobnie wymarły)',
+      EN: 'Zagrożony',
+      VU: 'Narażony',
+      NT: 'Bliski zagrożenia',
+      LC: 'Najmniejszej troski',
+    },
+    status: {
+      surviving: 'Przetrwały',
+      endangered: 'Zagrożony',
+      extinct: 'Wymarły',
+    },
+  },
   about: {
     metaTitle: 'O projekcie — Fix Planet',
     metaDescription:
@@ -489,13 +709,6 @@ const pl: typeof en = {
       metaDescription: 'Ramy prawne chroniące ludzi i planetę — wkrótce.',
       summary:
         'Tutaj zbierzemy ramy prawne chroniące ludzi i planetę. Ta część nie jest jeszcze opublikowana.',
-    },
-    wildlife: {
-      title: 'Przyroda',
-      metaTitle: 'Przyroda — Fix Planet',
-      metaDescription: 'Ochrona gatunków i siedlisk — wkrótce.',
-      summary:
-        'Materiały o gatunkach i siedliskach pojawią się tutaj. Ta część nie jest jeszcze opublikowana.',
     },
     forests: {
       title: 'Lasy',
@@ -608,6 +821,84 @@ const lv: typeof en = {
       energy: 'Enerģija',
     },
   },
+  wildlifePage: {
+    metaTitle: 'Savvaļa — Fix Planet',
+    metaDescription:
+      'Enciklopēdija par to, kā dzīvnieku populācijas mainījās pēc mūsdienu cilvēka izplatīšanās: izdzīvojušās, apdraudētās un izmirstās sugas, ar karti, kad cilvēki sasniedza katru kontinentu.',
+    eyebrow: 'Enciklopēdija',
+    title: 'Savvaļa',
+    lead: 'Vispirms mūsu suga — kur tā radās, kur gāja un kā mainījās lielākie dzīvnieki pēc tam, kad ienācām kā jauns plēsējs.',
+    heroEyebrow: 'Mūsu suga',
+    appearedLabel: 'Parādījās',
+    appeared:
+      'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem; ģenētika un paleontoloģija Homo sapiens izcelsmi liek šajā kontinentā ap 300 000 gadiem. Āfrika vēlāk zaudēja samērā mazu daļu lielo zīdītāju ģinšu (parasti ap 18–21 procentu): daudzi no šiem dzīvniekiem jau dzīvoja līdzās hominīniem.',
+    populationLabel: 'Skaits šodien',
+    population:
+      'Ap 8,2 miljardiem cilvēku 2025. gadā (ANO, World Population Prospects 2024, vidējais variants). Tā pati revīzija 2024. gada vidum deva 8,2 miljardus. Tas ir oficiāls vērtējums, ne katra cilvēka skaitīšana.',
+    framing:
+      'Tur, kur cilvēki ienāca kā jauns plēsējs, lielākā daļa lielāko dzīvnieku izzuda dažu tūkstošu gadu laikā. Vilnis nav viens datums — tas iet mums līdzi: Austrālija ap 50–40 tūkstošiem gadu, Amerika ap 15–10 tūkstošiem, salas pēdējos dažos tūkstošos, un tas nav apstājies. Kontinentos, kuros cilvēki ienāca pirmo reizi, izzuda ap 70–90 procentiem lielo dzīvnieku ģinšu (parasti no 44 kg). Tas nav 90 procenti visu dzīvnieku uz Zemes. Ap 20 000–15 000 gadu ir brīdis, kad cilvēki sasniedza Ameriku — ne mūsu sugas sākums un ne ierašanās Austrālijā.',
+    imageAlt:
+      'Mūsdienu pieaugušais cilvēks pļavā — mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Filtrēt sugas pēc statusa',
+    surviving: 'Izdzīvojušie',
+    endangered: 'Apdraudētie',
+    extinct: 'Izmirušie',
+    survivingLead:
+      'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',
+    endangeredLead:
+      'Apdraudēti tagad, galvenokārt cilvēku dēļ: dzīvotņu zudums, medības, piezveja un klimats, ko esam mainījuši.',
+    extinctLead:
+      'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas. Dažiem vēlā pleistocēna megafaunas pārstāvjiem klimats ir otrs, godīgi nosaukts cēlonis.',
+    mapTitle: 'Kur gājām un kad',
+    mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem soļiem',
+    mapLead:
+      'Lielo dzīvnieku zudums iet pa šo ceļu. Procenti zemāk ir lielo zīdītāju ģintis, ne visas dzīvnieku sugas.',
+    mapAfrica: 'Āfrika · izcelsme ~300 000 gadu',
+    mapOut: 'No Āfrikas · ~70 000–50 000',
+    mapAustralia: 'Austrālija / Sahula · ~65 000–50 000',
+    mapEurasia: 'Eirāzija · ~45 000–40 000',
+    mapAmericas: 'Amerika · ~20 000–15 000',
+    mapIslands: 'Vēlāk salas · pēdējie daži tūkstoši gadu (Jaunzēlande ~700)',
+    mapLegend: 'Numurēti ierašanās soļi',
+    mapPinAfrica: '~300 000 gadu',
+    mapPinOut: '~70–50 tūkstoši',
+    mapPinAustralia: '~65–50 tūkstoši',
+    mapPinEurasia: '~45–40 tūkstoši',
+    mapPinAmericas: '~20–15 tūkstoši',
+    mapPinIslands: 'salas · JZ ~700 gadi',
+    mapLossAfrica: 'zaudētas ~18–21% lielo zīdītāju ģinšu',
+    mapLossAustralia: '~88%',
+    mapLossEurasia: '~35%',
+    mapLossNorth: '~72%',
+    mapLossSouth: '~83%',
+    mapSources:
+      'Ierašanās diapazoni, ne precīzi gadi. Āfrikas mazāko zudumu parasti skaidro ar to, ka dzīvnieki tur evolūcijā jau bija līdzās hominīniem. Kontinentu procenti pēc Barnosky 2008 (un kopsavilkumiem kā Our World in Data; skat. arī Andermann et al. 2020); Austrālijas agrā vieta Madjedbebe, Clarkson et al. 2017. Cilvēku ierašanās vēlo kvartāru labāk izskaidro nekā klimats viens (Sandom et al. 2014); dažām sugām, tostarp vilnainajam mamutam, joprojām vajag abus.',
+    cardCta: 'Lasīt šķirkli →',
+    back: '← Savvaļa',
+    what: 'Kas tas ir',
+    range: 'Areāls',
+    story: 'Kas notika',
+    when: 'Kad / statuss',
+    humanRole: 'Cilvēka loma',
+    iucnLabel: 'IUCN',
+    sourcesLabel: 'Avoti',
+    imageCredit: 'Attēls',
+    iucn: {
+      EX: 'Izmiris',
+      CR: 'Kritiski apdraudēts',
+      CR_PE: 'Kritiski apdraudēts (iespējams, izmiris)',
+      EN: 'Apdraudēts',
+      VU: 'Ievainojams',
+      NT: 'Tuvu apdraudējumam',
+      LC: 'Vismazāk apdraudēts',
+    },
+    status: {
+      surviving: 'Izdzīvojis',
+      endangered: 'Apdraudēts',
+      extinct: 'Izmiris',
+    },
+  },
   about: {
     metaTitle: 'Par projektu — Fix Planet',
     metaDescription:
@@ -663,13 +954,6 @@ const lv: typeof en = {
       metaDescription: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai — drīzumā.',
       summary:
         'Šeit tiks savākti tiesiskie ietvari, kas sargā cilvēkus un planētu. Šī sadaļa vēl nav publicēta.',
-    },
-    wildlife: {
-      title: 'Savvaļa',
-      metaTitle: 'Savvaļa — Fix Planet',
-      metaDescription: 'Sugu un dzīvotņu aizsardzība — drīzumā.',
-      summary:
-        'Materiāli par sugām un dzīvotnēm parādīsies šeit. Šī sadaļa vēl nav publicēta.',
     },
     forests: {
       title: 'Meži',

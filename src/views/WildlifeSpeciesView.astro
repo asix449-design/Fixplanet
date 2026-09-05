@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { wildlifeImageSrc, type Species } from '../data/wildlife';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  species: Species;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const { species } = Astro.props;
+const title = `${species.commonName} — Fix Planet`;
+const image = wildlifeImageSrc(species.image);
+---
+
+<BaseLayout title={title} description={species.hook} image={image}>
+  <header class="page-hero">
+    <div class="wrap">
+      <p>
+        <a class="text-link" href={localizePath('/wildlife', locale)}
+          >{ui.wildlifePage.back}</a
+        >
+      </p>
+      <div class="eyebrow">{ui.wildlifePage.status[species.status]}</div>
+      <h1>{species.commonName}</h1>
+      <p class="scientific-kicker"><em>{species.scientificName}</em></p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail">
+      <figure class="wildlife-detail-art">
+        <img src={image} alt={species.imageAlt} width="1280" height="960" />
+        <figcaption>
+          {ui.wildlifePage.imageCredit}: {species.image.credit}
+          {
+            species.image.sourceUrl ? (
+              <>
+                {' '}
+                (
+                <a href={species.image.sourceUrl} rel="noopener noreferrer">
+                  {species.image.license}
+                </a>
+                )
+              </>
+            ) : (
+              <> ({species.image.license})</>
+            )
+          }
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose">
+        <div class="meta-row">
+          <span class:list={['pill', `status-${species.status}`]}>
+            {ui.wildlifePage.status[species.status]}
+          </span>
+          <span class="pill">
+            {ui.wildlifePage.iucnLabel}: {ui.wildlifePage.iucn[species.iucn]}
+          </span>
+        </div>
+        <h2>{ui.wildlifePage.what}</h2>
+        <p>{species.what}</p>
+        <h2>{ui.wildlifePage.range}</h2>
+        <p>{species.range}</p>
+        <h2>{ui.wildlifePage.story}</h2>
+        <p>{species.story}</p>
+        <h2>{ui.wildlifePage.when}</h2>
+        <p>{species.when}</p>
+        <h2>{ui.wildlifePage.humanRole}</h2>
+        <p>{species.humanRole}</p>
+        <h2>{ui.wildlifePage.sourcesLabel}</h2>
+        <p class="wildlife-sources">{species.sources}</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

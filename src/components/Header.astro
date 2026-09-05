@@ -16,11 +16,12 @@ const current = stripLocalePrefix(Astro.url.pathname.replace(/\/$/, '') || '/');
       {
         nav.map((item) => {
           const href = localizePath(item.href, locale);
+          const active =
+            item.href === '/'
+              ? current === '/'
+              : current === item.href || current.startsWith(`${item.href}/`);
           return (
-            <a
-              href={href}
-              aria-current={current === item.href ? 'page' : undefined}
-            >
+            <a href={href} aria-current={active ? 'page' : undefined}>
               {ui.nav[item.key]}
             </a>
           );
