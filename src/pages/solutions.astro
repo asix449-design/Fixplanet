@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SolutionCard from '../components/SolutionCard.astro';
+import { solutions, solutionTags } from '../data/solutions';
+---
+
+<BaseLayout
+  title="Solutions — Fix Planet"
+  description="Problem-to-technology cards: water, forests, waste, cities, materials, oceans, and energy."
+>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Problem → Fix</div>
+      <h1>Solutions</h1>
+      <p>
+        Each card pairs a planetary problem with a technology that already
+        works. Filter by topic, then follow the proof.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label="Filter solutions by topic">
+        {
+          solutionTags.map((tag, i) => (
+            <button
+              class:list={['filter-btn', { 'is-active': i === 0 }]}
+              type="button"
+              data-filter={tag}
+            >
+              {tag}
+            </button>
+          ))
+        }
+      </div>
+      <div class="card-grid cols-3" id="solution-grid">
+        {
+          solutions.map((solution) => (
+            <SolutionCard solution={solution} href={`#${solution.slug}`} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('#solution-grid [data-tag]');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter ?? 'All';
+      buttons.forEach((b) => b.classList.toggle('is-active', b === button));
+      cards.forEach((card) => {
+        const show = filter === 'All' || card.dataset.tag === filter;
+        card.hidden = !show;
+      });
+    });
+  });
+</script>

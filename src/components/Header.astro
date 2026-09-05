@@ -1,0 +1,51 @@
+---
+import { nav } from '../data/site';
+import Logo from './Logo.astro';
+
+const current = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <Logo />
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Primary">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            aria-current={current === item.href ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const nav = document.querySelector<HTMLElement>('#site-nav');
+
+  toggle?.addEventListener('click', () => {
+    const open = nav?.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>

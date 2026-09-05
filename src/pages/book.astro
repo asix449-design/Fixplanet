@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout
+  title="New World — Fix Planet"
+  description="New World by Aigars Abramovics: a clear look at what’s broken on our planet — and what we can still fix."
+>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">The book</div>
+      <h1>New World</h1>
+      <p>By Aigars Abramovics</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap book-layout">
+      <figure class="book-cover">
+        <img
+          src="/images/new-world-cover.jpg"
+          alt="Front cover of New World: Earth in flames under the title NEW WORLD and the H.G. Wells quote Our true nationality is mankind"
+          width="900"
+          height="1200"
+        />
+      </figure>
+      <div class="prose">
+        <p>
+          A clear look at what’s broken on our planet — and what we can still
+          fix: technologies, laws, and the choices that scale.
+        </p>
+        <div class="meta-row">
+          <span class="pill">Status: Available</span>
+        </div>
+        <h2>Inside</h2>
+        <ul class="inside-list">
+          <li>Pressures on water, forests, climate, and wildlife</li>
+          <li>Solutions that already exist, not slogans</li>
+          <li>Ideas for rules and habits that protect nature</li>
+        </ul>
+        <a
+          class="btn btn-primary"
+          href={site.bookAmazon}
+          rel="noopener noreferrer"
+        >
+          Buy on Amazon →
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

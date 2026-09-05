@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+}
+
+const { title, summary } = Astro.props;
+---
+
+<section class="coming-soon wrap">
+  <div class="soon-badge">Coming soon</div>
+  <h1>{title}</h1>
+  <p>{summary}</p>
+  <p>
+    This section is not live yet. Explore <a href="/solutions">solutions</a> or
+    <a href="/about">about Fix Planet</a> in the meantime.
+  </p>
+</section>
