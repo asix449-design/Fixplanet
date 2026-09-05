@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+---
+
+<BaseLayout
+  title={ui.notFound.metaTitle}
+  description={ui.notFound.metaDescription}
+>
+  <section class="coming-soon wrap">
+    <div class="soon-badge">404</div>
+    <h1>{ui.notFound.title}</h1>
+    <p>
+      {ui.notFound.beforeLinks}<a href={localizePath('/', locale)}
+        >{ui.notFound.homeLink}</a
+      >{ui.notFound.betweenLinks}<a href={localizePath('/solutions', locale)}
+        >{ui.notFound.solutionsLink}</a
+      >{ui.notFound.afterLinks}
+    </p>
+  </section>
+</BaseLayout>

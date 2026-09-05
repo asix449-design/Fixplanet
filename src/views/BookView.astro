@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { getUi, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+---
+
+<BaseLayout
+  title={ui.book.metaTitle}
+  description={ui.book.metaDescription}
+>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">{ui.book.eyebrow}</div>
+      <h1>{ui.book.title}</h1>
+      <p>{ui.book.by}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap book-layout">
+      <figure class="book-cover">
+        <img
+          src="/images/new-world-cover.jpg"
+          alt={ui.book.coverAlt}
+          width="900"
+          height="1200"
+        />
+      </figure>
+      <div class="prose">
+        <p>
+          {ui.book.lead}
+        </p>
+        <div class="meta-row">
+          <span class="pill">{ui.book.status}</span>
+        </div>
+        <h2>{ui.book.inside}</h2>
+        <ul class="inside-list">
+          {ui.book.bullets.map((item) => <li>{item}</li>)}
+        </ul>
+        <a
+          class="btn btn-primary"
+          href={site.bookAmazon}
+          rel="noopener noreferrer"
+        >
+          {ui.book.buy}
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

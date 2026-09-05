@@ -1,7 +1,10 @@
 ---
 import { site } from '../data/site';
+import { basedIn, getUi, localizePath, resolveLocale } from '../i18n';
 import Logo from './Logo.astro';
 
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
 const year = new Date().getFullYear();
 ---
 
@@ -11,30 +14,29 @@ const year = new Date().getFullYear();
       <div>
         <Logo />
         <p style="margin-top: 0.9rem; max-width: 28rem;">
-          A living atlas of technologies that repair the planet. Clear problems,
-          working solutions, real evidence.
+          {ui.footer.blurb}
         </p>
       </div>
       <div>
-        <div class="footer-title">Explore</div>
+        <div class="footer-title">{ui.footer.explore}</div>
         <div class="footer-links">
-          <a href="/solutions">Solutions</a>
-          <a href="/book">The book</a>
-          <a href="/about">About</a>
+          <a href={localizePath('/solutions', locale)}>{ui.nav.solutions}</a>
+          <a href={localizePath('/book', locale)}>{ui.footer.theBook}</a>
+          <a href={localizePath('/about', locale)}>{ui.nav.about}</a>
         </div>
       </div>
       <div>
-        <div class="footer-title">Coming soon</div>
+        <div class="footer-title">{ui.footer.comingSoon}</div>
         <div class="footer-links">
-          <a href="/maps">Maps</a>
-          <a href="/law">Law</a>
-          <a href="/wildlife">Wildlife</a>
-          <a href="/forests">Forests</a>
+          <a href={localizePath('/maps', locale)}>{ui.nav.maps}</a>
+          <a href={localizePath('/law', locale)}>{ui.nav.law}</a>
+          <a href={localizePath('/wildlife', locale)}>{ui.nav.wildlife}</a>
+          <a href={localizePath('/forests', locale)}>{ui.nav.forests}</a>
         </div>
       </div>
     </div>
     <div class="footer-meta">
-      <span>Based in {site.location}</span>
+      <span>{basedIn(locale)}</span>
       <span>
         <a href={site.twitter} rel="noopener noreferrer">{site.twitterHandle}</a>
         · © {year} {site.name}

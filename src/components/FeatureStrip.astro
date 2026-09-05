@@ -1,12 +1,16 @@
 ---
 import { features } from '../data/site';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
 ---
 
-<section class="section section-cream" aria-label="What Fix Planet covers">
+<section class="section section-cream" aria-label={ui.home.featuresAria}>
   <div class="wrap feature-strip">
     {
       features.map((item) => (
-        <a class="feature" href={item.href}>
+        <a class="feature" href={localizePath(item.href, locale)}>
           <div class="feature-icon">
             {item.icon === 'leaf' && (
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -35,8 +39,8 @@ import { features } from '../data/site';
             )}
           </div>
           <div>
-            <div class="feature-title">{item.title}</div>
-            <div class="feature-text">{item.text}</div>
+            <div class="feature-title">{ui.features[item.key].title}</div>
+            <div class="feature-text">{ui.features[item.key].text}</div>
           </div>
         </a>
       ))

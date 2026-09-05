@@ -1,29 +1,44 @@
 ---
 import { nav } from '../data/site';
+import { getUi, localizePath, resolveLocale, stripLocalePrefix } from '../i18n';
+import LanguageSwitcher from './LanguageSwitcher.astro';
 import Logo from './Logo.astro';
 
-const current = Astro.url.pathname.replace(/\/$/, '') || '/';
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const current = stripLocalePrefix(Astro.url.pathname.replace(/\/$/, '') || '/');
 ---
 
 <header class="site-header">
   <div class="wrap header-inner">
     <Logo />
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span></span>
-      <span class="visually-hidden">Menu</span>
-    </button>
-    <nav id="site-nav" class="nav" aria-label="Primary">
+    <nav id="site-nav" class="nav" aria-label={ui.primaryNav}>
       {
-        nav.map((item) => (
-          <a
-            href={item.href}
-            aria-current={current === item.href ? 'page' : undefined}
-          >
-            {item.label}
-          </a>
-        ))
+        nav.map((item) => {
+          const href = localizePath(item.href, locale);
+          return (
+            <a
+              href={href}
+              aria-current={current === item.href ? 'page' : undefined}
+            >
+              {ui.nav[item.key]}
+            </a>
+          );
+        })
       }
+      <div class="lang-switch-mobile">
+        <LanguageSwitcher />
+      </div>
     </nav>
+    <div class="header-tools">
+      <div class="lang-switch-bar">
+        <LanguageSwitcher />
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span class="visually-hidden">{ui.menu}</span>
+      </button>
+    </div>
   </div>
 </header>
 

@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { basedIn, getUi, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+---
+
+<BaseLayout
+  title={ui.about.metaTitle}
+  description={ui.about.metaDescription}
+>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">{ui.about.eyebrow}</div>
+      <h1>{ui.about.title}</h1>
+      <p>
+        {ui.about.lead}
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap about-grid">
+      <div class="prose">
+        <p>
+          {ui.about.p1}
+        </p>
+        <p>
+          {ui.about.p2Before}<strong>Aigars Abramovics</strong>{ui.about.p2After}
+        </p>
+        <p>
+          {ui.about.p3Before}<a href={localizePath('/book', locale)}>{ui.about.p3Book}</a
+          >{ui.about.p3Mid}<a href={site.twitter} rel="noopener noreferrer"
+            >{site.twitterHandle}</a
+          >{ui.about.p3After}
+        </p>
+        <p>{basedIn(locale)}.</p>
+      </div>
+      <aside class="curator">
+        <div class="curator-top">
+          <img
+            class="curator-photo"
+            src="/images/aigars-abramovics.jpg"
+            alt="Aigars Abramovics"
+            width="800"
+            height="800"
+          />
+          <div>
+            <div class="curator-label">{ui.about.curator}</div>
+            <h2>Aigars Abramovics</h2>
+          </div>
+        </div>
+        <p>
+          {ui.about.curatorBlurb}
+        </p>
+        <p style="margin-top: 1rem;">
+          <a class="text-link" href={site.twitter} rel="noopener noreferrer">
+            {ui.about.follow.replace('{handle}', site.twitterHandle)}
+          </a>
+        </p>
+        <p>
+          <a class="text-link" href={localizePath('/book', locale)}>{ui.about.readBook}</a>
+        </p>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

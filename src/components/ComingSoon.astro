@@ -1,18 +1,25 @@
 ---
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
 interface Props {
   title: string;
   summary: string;
 }
 
 const { title, summary } = Astro.props;
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
 ---
 
 <section class="coming-soon wrap">
-  <div class="soon-badge">Coming soon</div>
+  <div class="soon-badge">{ui.comingSoon.badge}</div>
   <h1>{title}</h1>
   <p>{summary}</p>
   <p>
-    This section is not live yet. Explore <a href="/solutions">solutions</a> or
-    <a href="/about">about Fix Planet</a> in the meantime.
+    {ui.comingSoon.beforeLinks}<a href={localizePath('/solutions', locale)}
+      >{ui.comingSoon.solutionsLink}</a
+    >{ui.comingSoon.betweenLinks}<a href={localizePath('/about', locale)}
+      >{ui.comingSoon.aboutLink}</a
+    >{ui.comingSoon.afterLinks}
   </p>
 </section>
