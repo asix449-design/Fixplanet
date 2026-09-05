@@ -5,6 +5,7 @@ export type Solution = {
   fixTitle: string;
   problem: string;
   fix: string;
+  imageAlt: string;
   latest?: boolean;
 };
 
@@ -17,6 +18,7 @@ export const solutions: Solution[] = [
     problem:
       'Dry regions lose most irrigation water to evaporation and runoff.',
     fix: 'Drip irrigation delivers water to the root — less waste, higher yield.',
+    imageAlt: 'Young corn plant in dry soil watered by a black drip-irrigation line',
     latest: true,
   },
   {
@@ -26,6 +28,7 @@ export const solutions: Solution[] = [
     fixTitle: 'Constructed wetlands',
     problem: 'Nutrients and sewage feed toxic algae and kill fish.',
     fix: 'Constructed wetlands filter water as living treatment systems.',
+    imageAlt: 'Constructed wetland with reeds, clear shallow water, and a wooden boardwalk',
     latest: true,
   },
   {
@@ -35,6 +38,7 @@ export const solutions: Solution[] = [
     fixTitle: 'Sustainable forestry',
     problem: 'Slow-growing timber drives logging of old forests.',
     fix: 'Fast-growing plantation species and sustainable forestry for building wood — pressure off wild forests.',
+    imageAlt: 'Misty forestry track with stacked logs and rows of plantation trees',
     latest: true,
   },
   {
@@ -45,6 +49,7 @@ export const solutions: Solution[] = [
     problem:
       'Landfilled food waste releases methane, a potent greenhouse gas.',
     fix: 'Anaerobic digesters turn waste into biogas and soil fertilizer.',
+    imageAlt: 'Aerial view of three green-domed anaerobic digester tanks in farmland',
   },
   {
     slug: 'cool-roofs',
@@ -53,6 +58,7 @@ export const solutions: Solution[] = [
     fixTitle: 'Cool roofs',
     problem: 'Dark roofs and asphalt trap heat and spike energy use.',
     fix: 'Cool roofs and reflective coatings lower temperatures and cut AC demand.',
+    imageAlt: 'Urban rooftops coated in reflective white cool-roof material',
   },
   {
     slug: 'lower-clinker-cement',
@@ -61,6 +67,7 @@ export const solutions: Solution[] = [
     fixTitle: 'Lower-clinker cements',
     problem: 'Ordinary cement is a major source of global CO₂.',
     fix: 'Lower-clinker cements (e.g. calcined clay & limestone blends) cut emissions at scale.',
+    imageAlt: 'Cement plant with piles of pale powder, crushed stone, and sand',
   },
   {
     slug: 'river-interceptors',
@@ -69,6 +76,7 @@ export const solutions: Solution[] = [
     fixTitle: 'River interceptor barriers',
     problem: 'Rivers carry most plastic to the sea.',
     fix: 'River interceptor barriers catch litter upstream — cheaper than ocean cleanup alone.',
+    imageAlt: 'Floating river boom with yellow buoys holding back plastic bottles and litter',
   },
   {
     slug: 'solar-microgrids',
@@ -78,6 +86,7 @@ export const solutions: Solution[] = [
     problem:
       'Fossil grids lock in emissions and leave remote places in the dark.',
     fix: 'Solar microgrids deliver clean, local power where big plants don’t reach.',
+    imageAlt: 'Rural solar panel arrays and a control cabinet beside a village field',
     latest: true,
   },
 ];

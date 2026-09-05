@@ -1,6 +1,5 @@
 ---
 import type { Solution } from '../data/solutions';
-import SolutionArt from './SolutionArt.astro';
 
 interface Props {
   solution: Solution;
@@ -8,11 +7,19 @@ interface Props {
 }
 
 const { solution, href = `/solutions#${solution.slug}` } = Astro.props;
+const photo = `/images/solutions/${solution.slug}.jpg`;
 ---
 
 <article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug}>
   <a class="solution-card" href={href}>
-    <SolutionArt tag={solution.tag} slug={solution.slug} />
+    <div class="card-art">
+      <img
+        src={photo}
+        alt={solution.imageAlt}
+        width="640"
+        height="400"
+      />
+    </div>
     <div class="card-body">
       <span class="tag">{solution.tag}</span>
       <h3>{solution.fixTitle}</h3>
