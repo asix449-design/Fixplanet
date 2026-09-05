@@ -571,6 +571,23 @@ a.solution-card:hover {
   box-shadow: var(--shadow);
 }
 
+.curator-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.curator-photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  background: var(--cream);
+}
+
 .curator-label {
   color: var(--green);
   font-size: 0.75rem;
@@ -578,6 +595,10 @@ a.solution-card:hover {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.35rem;
+}
+
+.curator h2 {
+  margin: 0;
 }
 
 .about-grid {
