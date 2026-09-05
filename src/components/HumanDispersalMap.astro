@@ -13,6 +13,7 @@ const steps = [
   { n: '6', key: 'islands', label: ui.mapIslands, pin: ui.mapPinIslands, loss: '' },
 ] as const;
 
+/** Pins sit on an equirectangular NASA Blue Marble (viewBox 1000×500 = 2:1). */
 const pins = [
   { n: '1', x: 606, y: 242, labelX: 548, labelY: 268, anchor: 'end', pin: ui.mapPinAfrica },
   { n: '2', x: 598, y: 164, labelX: 552, labelY: 148, anchor: 'end', pin: ui.mapPinOut },
@@ -36,67 +37,40 @@ const pins = [
       aria-label={ui.mapAria}
     >
       <title>{ui.mapTitle}</title>
-      <desc>{ui.mapLead} {ui.mapSources}</desc>
+      <desc>{ui.mapLead} {ui.mapSources} {ui.mapBaseCredit}</desc>
       <defs>
-        <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#d7e4d6"></stop>
-          <stop offset="100%" stop-color="#c5d6c4"></stop>
-        </linearGradient>
+        <clipPath id="earth-clip">
+          <rect width="1000" height="500" rx="14"></rect>
+        </clipPath>
+        <filter id="pin-halo" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#0a1610" flood-opacity="0.55"></feDropShadow>
+        </filter>
         <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-          <path d="M0 0 L9 4.5 L0 9 Z" fill="#3fa36a"></path>
+          <path d="M0 0 L9 4.5 L0 9 Z" fill="#f4f7f2"></path>
         </marker>
       </defs>
 
-      <rect width="1000" height="500" fill="url(#ocean)" rx="14"></rect>
-
-      <!-- Illustrated world: recognizable continents, not GIS -->
-      <g fill="#1b7a4e" stroke="#14603c" stroke-width="0.6">
-        <!-- Greenland -->
-        <path
-          d="M348 40c28-10 78-12 96 8 12 14 8 32-6 44-18 16-52 18-78 10-22-6-32-24-28-40 2-8 8-16 16-22z"
-        ></path>
-        <!-- North America -->
-        <path
-          d="M48 78c22-22 62-36 96-28 28 6 46 10 70 4 28-6 62-8 90 8 22 12 38 28 42 48 4 18-6 36-22 48-12 10-18 24-14 40 4 14 18 26 14 40-4 16-28 18-44 12-18-6-28-22-46-28-16-6-36 2-48 14-10 10-28 16-40 6-14-12-12-34-8-50 4-16-8-30-24-36-18-6-36 4-48 16-10 10-28 8-34-4-8-16 4-42 16-54z"
-        ></path>
-        <!-- Central America + Caribbean -->
-        <path d="M268 214c18 2 32 12 28 24-8 10-26 8-38 0-10-6-8-18 2-22 2-1 5-2 8-2z"></path>
-        <ellipse cx="304" cy="206" rx="16" ry="6" fill="#3fa36a" stroke="none"></ellipse>
-        <ellipse cx="322" cy="200" rx="7" ry="4" fill="#3fa36a" stroke="none"></ellipse>
-        <!-- South America -->
-        <path
-          d="M278 230c22-6 52 0 70 16 16 14 28 34 24 56-4 22-8 44-22 62-12 16-28 32-40 46-10 12-26 18-34 6-8-12-2-32 4-46 6-16 4-34-2-50-6-14-8-32 0-46 6-12 16-36 0-44z"
-        ></path>
-        <!-- Eurasia (Europe + Asia as one landmass) -->
-        <path
-          d="M472 108c18-22 48-36 78-32 28 4 48 2 76-8 32-10 70-14 104-4 36 10 72 8 106 18 28 8 58 22 72 46 12 20 8 44-8 60-16 16-40 22-62 20-18-2-34 8-44 22-10 14-28 22-44 16-16-6-22-22-38-28-14-6-32 2-40 16-8 12-24 18-36 10-12-8-10-26-22-34-12-8-30-4-40 8-8 10-24 12-32 2-10-12-4-30 6-42 8-8 6-24-6-30-14-8-32-4-44 6-10 8-28 6-32-6-4-12 8-28 22-36z"
-        ></path>
-        <!-- Arabia -->
-        <path d="M610 186c16-4 32 4 36 18 4 12-2 26-16 30-14 4-28-6-32-18-4-12 2-26 12-30z"></path>
-        <!-- India -->
-        <path d="M700 196c14-8 28 2 32 16 4 16-2 32-16 40-12 6-24-2-28-16-4-14 2-32 12-40z"></path>
-        <!-- Japan -->
-        <ellipse cx="912" cy="148" rx="8" ry="18" fill="#3fa36a" stroke="none"></ellipse>
-        <!-- Africa (origin, slightly darker — numbers still carry the meaning) -->
-        <path
-          fill="#14603c"
-          d="M486 152c22-10 52-8 72 6 16 12 28 18 42 14 14-4 22 8 18 22-4 14-2 28 8 40 8 12 16 26 8 40-8 14-22 28-28 44-6 16-18 32-34 36-18 4-32-10-36-26-4-18-2-36-10-52-8-16-22-28-24-46-2-16 4-32 8-46 4-12 8-26 26-32z"
-        ></path>
-        <!-- Madagascar -->
-        <ellipse cx="634" cy="308" rx="8" ry="16" fill="#3fa36a" stroke="none"></ellipse>
-        <!-- Australia / Sahul -->
-        <path
-          d="M812 286c28-12 64-8 88 8 18 12 28 28 22 46-6 16-26 26-46 28-22 2-44-6-60-18-16-12-24-32-16-48 4-8 6-14 12-16z"
-        ></path>
-        <!-- New Guinea -->
-        <path d="M888 268c18-4 34 4 32 16-4 8-22 10-36 6-12-4-14-14-8-18 4-2 8-4 12-4z"></path>
-        <!-- New Zealand -->
-        <ellipse cx="976" cy="356" rx="7" ry="16" fill="#3fa36a" stroke="none"></ellipse>
-        <ellipse cx="988" cy="376" rx="6" ry="12" fill="#3fa36a" stroke="none"></ellipse>
+      <g clip-path="url(#earth-clip)">
+        <image
+          href="/images/maps/blue-marble.jpg"
+          x="0"
+          y="0"
+          width="1000"
+          height="500"
+          preserveAspectRatio="xMidYMid slice"
+        ></image>
+        <rect width="1000" height="500" fill="rgba(8, 18, 14, 0.18)"></rect>
       </g>
+      <rect
+        width="1000"
+        height="500"
+        fill="none"
+        stroke="rgba(20, 34, 26, 0.22)"
+        stroke-width="1.2"
+        rx="14"
+      ></rect>
 
-      <!-- Dispersal routes: arrows plus numbered steps, not color alone -->
-      <g fill="none" stroke="#3fa36a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <g fill="none" stroke="#f4f7f2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
         <path d="M606 242 C 604 210, 600 184, 598 164" marker-end="url(#arrow)"></path>
         <path d="M598 164 C 680 190, 780 250, 878 312" marker-end="url(#arrow)"></path>
         <path d="M598 164 C 570 150, 548 132, 528 118" marker-end="url(#arrow)"></path>
@@ -105,7 +79,7 @@ const pins = [
         <path d="M900 330 C 930 348, 958 360, 980 368" stroke-dasharray="5 6" marker-end="url(#arrow)"></path>
       </g>
 
-      <g font-family="Inter, ui-sans-serif, sans-serif">
+      <g font-family="Inter, ui-sans-serif, sans-serif" filter="url(#pin-halo)">
         {
           pins.map((pin) => (
             <g>
@@ -132,8 +106,8 @@ const pins = [
                 x={pin.labelX}
                 y={pin.labelY}
                 text-anchor={pin.anchor}
-                fill="#14221a"
-                stroke="#e8efe6"
+                fill="#f4f7f2"
+                stroke="#0a1610"
                 stroke-width="4"
                 paint-order="stroke"
                 font-size="12"
@@ -164,4 +138,5 @@ const pins = [
     </ol>
   </div>
   <p class="dispersal-sources">{ui.mapSources}</p>
+  <p class="dispersal-sources dispersal-base-credit">{ui.mapBaseCredit}</p>
 </section>

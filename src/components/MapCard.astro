@@ -1,0 +1,38 @@
+---
+import { mapPreviewSrc, type MapEntry } from '../data/maps';
+import { getMapsPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  map: MapEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMapsPage(locale);
+const { map } = Astro.props;
+const href = localizePath(`/maps/${map.slug}`, locale);
+const preview = mapPreviewSrc(map.preview);
+---
+
+<article class="map-card-wrap" data-map-category={map.category} data-slug={map.slug}>
+  <a class="map-card" href={href}>
+    <div class="card-art map-card-art">
+      <img src={preview} alt={map.imageAlt} width="640" height="320" loading="lazy" />
+      {
+        map.previewKind === 'schematic' ? (
+          <span class="map-schematic-badge">{page.schematicBadge}</span>
+        ) : null
+      }
+    </div>
+    <div class="card-body">
+      <span class="tag">{page.categories[map.category]}</span>
+      <h3>{map.title}</h3>
+      <p class="map-card-meta">
+        {map.sourceShort}
+        <span aria-hidden="true"> · </span>
+        {map.year}
+      </p>
+      <p class="wildlife-hook">{map.hook}</p>
+      <span class="card-cta">{page.cardCta}</span>
+    </div>
+  </a>
+</article>

@@ -1,8 +1,12 @@
 ---
-import ComingSoonView from '../../views/ComingSoonView.astro';
+import { isMapCategory } from '../../data/maps';
 import { localeStaticPaths } from '../../i18n';
+import MapsView from '../../views/MapsView.astro';
 
 export const getStaticPaths = localeStaticPaths;
+
+const categoryParam = Astro.url.searchParams.get('category');
+const category = isMapCategory(categoryParam ?? undefined) ? categoryParam : 'all';
 ---
 
-<ComingSoonView section="maps" />
+<MapsView category={category} />

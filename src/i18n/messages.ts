@@ -55,7 +55,7 @@ const en = {
     },
     maps: {
       title: 'Mapped for action',
-      text: 'Explore solutions and projects around the world.',
+      text: 'A sourced atlas of conflict, Earth systems, and the political world.',
     },
     law: {
       title: 'Law for the future',
@@ -142,6 +142,8 @@ const en = {
     mapLossSouth: '~83%',
     mapSources:
       'Arrival ranges, not exact years. Africa’s lower loss is the usual reading: animals there co-evolved with hominins. Continent percentages after Barnosky 2008 (and summaries such as Our World in Data; see also Andermann et al. 2020); Australia’s early site Madjedbebe, Clarkson et al. 2017. Human arrival fits the Late Quaternary pattern better than climate alone (Sandom et al. 2014); some species, including woolly mammoth, still need both.',
+    mapBaseCredit:
+      'Base land: NASA Blue Marble Next Generation (December 2004, public domain) — cloud-free physical Earth, not a political map.',
     cardCta: 'Read entry →',
     back: '← Wildlife',
     what: 'What it is',
@@ -297,7 +299,7 @@ const ru: typeof en = {
     },
     maps: {
       title: 'Карта для действий',
-      text: 'Решения и проекты по всему миру.',
+      text: 'Атлас с источниками: конфликты, системы Земли и политический мир.',
     },
     law: {
       title: 'Право будущего',
@@ -384,6 +386,8 @@ const ru: typeof en = {
     mapLossSouth: '~83%',
     mapSources:
       'Диапазоны прихода, не точные годы. Более низкая африканская потеря — обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам — по Barnosky 2008 (и сводкам вроде Our World in Data; см. также Andermann et al. 2020); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
+    mapBaseCredit:
+      'Основа суши: NASA Blue Marble Next Generation (декабрь 2004, общественное достояние) — безоблачная физическая Земля, не политическая карта.',
     cardCta: 'Читать карточку →',
     back: '← Природа',
     what: 'Что это',
@@ -542,7 +546,7 @@ const pl: typeof en = {
     },
     maps: {
       title: 'Mapa do działania',
-      text: 'Rozwiązania i projekty na całym świecie.',
+      text: 'Atlas ze źródłami: konflikty, systemy Ziemi i świat polityczny.',
     },
     law: {
       title: 'Prawo dla przyszłości',
@@ -629,6 +633,8 @@ const pl: typeof en = {
     mapLossSouth: '~83%',
     mapSources:
       'Zakresy przybycia, nie dokładne lata. Niższa strata Afryki to zwykły odczyt: zwierzęta ewoluowały tam obok homininów. Odsetki kontynentów za Barnosky 2008 (i streszczenia jak Our World in Data; zob. też Andermann et al. 2020); wczesne stanowisko Madjedbebe, Clarkson et al. 2017. Przybycie ludzi lepiej tłumaczy późnoczwartorzędowy wzór niż sam klimat (Sandom et al. 2014); niektóre gatunki, w tym mamut włochaty, wciąż wymagają obu.',
+    mapBaseCredit:
+      'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
     cardCta: 'Czytaj hasło →',
     back: '← Przyroda',
     what: 'Czym jest',
@@ -787,7 +793,7 @@ const lv: typeof en = {
     },
     maps: {
       title: 'Karte rīcībai',
-      text: 'Risinājumi un projekti visā pasaulē.',
+      text: 'Atlants ar avotiem: konflikti, Zemes sistēmas un politiskā pasaule.',
     },
     law: {
       title: 'Tiesības nākotnei',
@@ -874,6 +880,8 @@ const lv: typeof en = {
     mapLossSouth: '~83%',
     mapSources:
       'Ierašanās diapazoni, ne precīzi gadi. Āfrikas mazāko zudumu parasti skaidro ar to, ka dzīvnieki tur evolūcijā jau bija līdzās hominīniem. Kontinentu procenti pēc Barnosky 2008 (un kopsavilkumiem kā Our World in Data; skat. arī Andermann et al. 2020); Austrālijas agrā vieta Madjedbebe, Clarkson et al. 2017. Cilvēku ierašanās vēlo kvartāru labāk izskaidro nekā klimats viens (Sandom et al. 2014); dažām sugām, tostarp vilnainajam mamutam, joprojām vajag abus.',
+    mapBaseCredit:
+      'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums) — bez mākoņiem fiziskā Zeme, ne politiskā karte.',
     cardCta: 'Lasīt šķirkli →',
     back: '← Savvaļa',
     what: 'Kas tas ir',
