@@ -978,6 +978,76 @@ a.solution-card:hover {
   max-width: 42rem;
 }
 
+.dispersal h2 {
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+}
+
+.dispersal-lead {
+  max-width: 44rem;
+  color: var(--muted);
+  margin-bottom: 1.4rem;
+}
+
+.dispersal-frame {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.dispersal-svg {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.dispersal-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.dispersal-steps li {
+  display: flex;
+  gap: 0.7rem;
+  align-items: flex-start;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.dispersal-n {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 750;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.dispersal-loss {
+  display: block;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  margin-top: 0.15rem;
+}
+
+.dispersal-sources {
+  margin-top: 1.1rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  max-width: 52rem;
+}
+
 .wildlife-card-wrap {
   height: 100%;
 }
@@ -1071,7 +1141,8 @@ a.wildlife-card:hover {
 
 @media (max-width: 960px) {
   .wildlife-hero,
-  .wildlife-detail {
+  .wildlife-detail,
+  .dispersal-frame {
     grid-template-columns: 1fr;
   }
 

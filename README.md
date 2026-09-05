@@ -14,7 +14,7 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 | `/solutions` | All problem → technology cards, with topic filters |
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
-| `/wildlife` | Encyclopedia: *Homo sapiens* hero plus surviving / endangered / extinct species of the last ~20,000 years. Detail pages at `/wildlife/[slug]` |
+| `/wildlife` | Encyclopedia: *Homo sapiens* hero and dispersal map, plus surviving / endangered / extinct species. Detail pages at `/wildlife/[slug]` |
 | `/maps`, `/law`, `/forests` | Placeholders — coming soon |
 
 ## Languages

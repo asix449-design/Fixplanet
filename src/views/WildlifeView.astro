@@ -1,4 +1,5 @@
 ---
+import HumanDispersalMap from '../components/HumanDispersalMap.astro';
 import WildlifeCard from '../components/WildlifeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -62,6 +63,12 @@ const tabLeads = {
         </dl>
         <p class="wildlife-framing">{ui.wildlifePage.framing}</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section section-cream" aria-labelledby="dispersal-heading">
+    <div class="wrap">
+      <HumanDispersalMap />
     </div>
   </section>
 
