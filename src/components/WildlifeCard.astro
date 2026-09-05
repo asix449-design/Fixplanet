@@ -1,0 +1,41 @@
+---
+import type { Species } from '../data/wildlife';
+import { wildlifeImageSrc } from '../data/wildlife';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  species: Species;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const { species } = Astro.props;
+const href = localizePath(`/wildlife/${species.slug}`, locale);
+---
+
+<article
+  class="wildlife-card-wrap"
+  data-wildlife-status={species.status}
+  data-slug={species.slug}
+>
+  <a class="wildlife-card" href={href}>
+    <div class="card-art">
+      <img
+        src={wildlifeImageSrc(species.image)}
+        alt={species.imageAlt}
+        width="640"
+        height="400"
+        loading="lazy"
+      />
+    </div>
+    <div class="card-body">
+      <span class:list={['tag', `status-${species.status}`]}>
+        {ui.wildlifePage.status[species.status]}
+      </span>
+      <h3>{species.commonName}</h3>
+      <p class="scientific-name"><em>{species.scientificName}</em></p>
+      <p class="wildlife-hook">{species.hook}</p>
+      <span class="card-cta">{ui.wildlifePage.cardCta}</span>
+    </div>
+  </a>
+</article>

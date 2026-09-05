@@ -14,13 +14,16 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 | `/solutions` | All problem → technology cards, with topic filters |
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
-| `/maps`, `/law`, `/wildlife`, `/forests` | Placeholders — coming soon |
+| `/wildlife` | Encyclopedia: *Homo sapiens* hero plus surviving / endangered / extinct species of the last ~20,000 years. Detail pages at `/wildlife/[slug]` |
+| `/maps`, `/law`, `/forests` | Placeholders — coming soon |
 
 ## Languages
 
 Astro i18n routing (`prefixDefaultLocale: false`) keeps English URLs unchanged. The header switcher (EN / RU / PL / LV) stays on the equivalent page.
 
-Copy lives in `src/i18n/messages.ts` (UI) and `src/i18n/solutions.ts` (the eight solution cards). To add a string: add the key to `en`, then the same key to `ru`, `pl`, and `lv`, and read it with `getUi(locale)`. New pages need the English file under `src/pages/` and a thin `src/pages/[locale]/` wrapper that reuses the same view.
+Copy lives in `src/i18n/messages.ts` (UI), `src/i18n/solutions.ts` (the eight solution cards), and `src/i18n/wildlife.ts` (species entries; Polish and Latvian files sit beside it). To add a string: add the key to `en`, then the same key to `ru`, `pl`, and `lv`, and read it with `getUi(locale)`. New pages need the English file under `src/pages/` and a thin `src/pages/[locale]/` wrapper that reuses the same view.
+
+To add a wildlife species: add metadata in `src/data/wildlife.ts` (English slug, Latin name, tab, IUCN code, image credit), the same slug in all four language objects, and a photo in `public/images/wildlife/`. Status tabs are deep-linked as `/wildlife`, `/wildlife/endangered`, and `/wildlife/extinct` (`?status=` also works).
 
 ## Local development
 

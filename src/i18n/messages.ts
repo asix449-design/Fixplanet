@@ -89,6 +89,60 @@ const en = {
       energy: 'Energy',
     } satisfies Record<TagKey, string>,
   },
+  wildlifePage: {
+    metaTitle: 'Wildlife — Fix Planet',
+    metaDescription:
+      'An encyclopedia of how animal populations changed after modern humans spread: surviving, endangered, and extinct species of the last 20,000 years.',
+    eyebrow: 'Encyclopedia',
+    title: 'Wildlife',
+    lead: 'Our species first, then the animals whose numbers and ranges shifted under human pressure in the Late Pleistocene and Holocene.',
+    heroEyebrow: 'Our species',
+    appearedLabel: 'Appeared',
+    appeared:
+      'About 300,000 years ago in Africa. Fossils from Jebel Irhoud, Morocco, date to around 315,000 years; genetic and fossil work places the origin of Homo sapiens on that continent at about 300,000 years. This is the species origin — not the start of the lists below.',
+    populationLabel: 'Population today',
+    population:
+      'About 8.2 billion people in 2025 (United Nations, World Population Prospects 2024, medium variant). The same revision put the mid-2024 world total at 8.2 billion. It is an official estimate, not a census of every person.',
+    framing:
+      'The rest of this tab is about how other animals changed after modern humans became a widespread pressure on large fauna. The lists use the last ~20,000 years — Late Pleistocene into the Holocene — not the 300,000-year origin of our species.',
+    imageAlt:
+      'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Filter species by status',
+    surviving: 'Surviving',
+    endangered: 'Endangered',
+    extinct: 'Extinct',
+    survivingLead:
+      'Still here, with ranges or numbers that shifted under human pressure since about 20,000 years ago — hunting, farms, later recovery, or boom.',
+    endangeredLead:
+      'Threatened now, mainly because of people: habitat loss, hunting, bycatch, and a climate we have changed.',
+    extinctLead:
+      'Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.',
+    cardCta: 'Read entry →',
+    back: '← Wildlife',
+    what: 'What it is',
+    range: 'Range',
+    story: 'What happened',
+    when: 'When / status',
+    humanRole: 'Human role',
+    iucnLabel: 'IUCN',
+    sourcesLabel: 'Sources',
+    imageCredit: 'Image',
+    iucn: {
+      EX: 'Extinct',
+      CR: 'Critically Endangered',
+      CR_PE: 'Critically Endangered (Possibly Extinct)',
+      EN: 'Endangered',
+      VU: 'Vulnerable',
+      NT: 'Near Threatened',
+      LC: 'Least Concern',
+    },
+    status: {
+      surviving: 'Surviving',
+      endangered: 'Endangered',
+      extinct: 'Extinct',
+    },
+  },
   about: {
     metaTitle: 'About — Fix Planet',
     metaDescription:
@@ -141,13 +195,6 @@ const en = {
       metaDescription: 'Legal frameworks to protect people and planet — coming soon.',
       summary:
         'Legal frameworks that protect people and planet will be collected here. This section is not published yet.',
-    },
-    wildlife: {
-      title: 'Wildlife',
-      metaTitle: 'Wildlife — Fix Planet',
-      metaDescription: 'Protecting species and habitats — coming soon.',
-      summary:
-        'Coverage of species and habitats will appear here. This section is not published yet.',
     },
     forests: {
       title: 'Forests',
@@ -260,6 +307,60 @@ const ru: typeof en = {
       energy: 'Энергия',
     },
   },
+  wildlifePage: {
+    metaTitle: 'Природа — Fix Planet',
+    metaDescription:
+      'Энциклопедия того, как изменились популяции животных после расселения современного человека: выжившие, находящиеся под угрозой и вымершие виды последних 20 000 лет.',
+    eyebrow: 'Энциклопедия',
+    title: 'Природа',
+    lead: 'Сначала наш вид, затем животные, чья численность и ареал сдвинулись под давлением людей в позднем плейстоцене и голоцене.',
+    heroEyebrow: 'Наш вид',
+    appearedLabel: 'Появился',
+    appeared:
+      'Около 300 000 лет назад в Африке. Находки из Джебель-Ирхуда в Марокко датируют примерно 315 000 лет; генетика и палеонтология помещают происхождение Homo sapiens на этот континент около 300 000 лет. Это происхождение вида — не начало списков ниже.',
+    populationLabel: 'Численность сегодня',
+    population:
+      'Около 8,2 миллиарда человек в 2025 году (ООН, World Population Prospects 2024, средний вариант). Та же ревизия давала 8,2 миллиарда на середину 2024-го. Это официальная оценка, а не перепись каждого человека.',
+    framing:
+      'Дальше речь о том, как изменились другие животные, когда современный человек стал широким давлением на крупную фауну. Списки берут последние ~20 000 лет — поздний плейстоцен и голоцен — а не 300 000 лет происхождения нашего вида.',
+    imageAlt:
+      'Современный взрослый человек на лугу — спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Фильтр видов по статусу',
+    surviving: 'Выжившие',
+    endangered: 'Под угрозой',
+    extinct: 'Вымершие',
+    survivingLead:
+      'Всё ещё здесь, с ареалом или численностью, которые сдвинулись под давлением людей примерно за 20 000 лет — охота, пашня, позднее восстановление или вспышка.',
+    endangeredLead:
+      'Под угрозой сейчас, главным образом из-за людей: потеря мест, охота, прилов и климат, который мы изменили.',
+    extinctLead:
+      'Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
+    cardCta: 'Читать карточку →',
+    back: '← Природа',
+    what: 'Что это',
+    range: 'Ареал',
+    story: 'Что произошло',
+    when: 'Когда / статус',
+    humanRole: 'Роль человека',
+    iucnLabel: 'МСОП',
+    sourcesLabel: 'Источники',
+    imageCredit: 'Изображение',
+    iucn: {
+      EX: 'Исчезнувший',
+      CR: 'На грани исчезновения',
+      CR_PE: 'На грани исчезновения (возможно, исчез)',
+      EN: 'Исчезающий',
+      VU: 'Уязвимый',
+      NT: 'Близкий к уязвимому',
+      LC: 'Вызывающий наименьшие опасения',
+    },
+    status: {
+      surviving: 'Выживший',
+      endangered: 'Под угрозой',
+      extinct: 'Вымерший',
+    },
+  },
   about: {
     metaTitle: 'О проекте — Fix Planet',
     metaDescription:
@@ -315,13 +416,6 @@ const ru: typeof en = {
       metaDescription: 'Правовые рамки для защиты людей и планеты — скоро.',
       summary:
         'Здесь будут собраны правовые рамки, которые защищают людей и планету. Раздел ещё не опубликован.',
-    },
-    wildlife: {
-      title: 'Природа',
-      metaTitle: 'Природа — Fix Planet',
-      metaDescription: 'Защита видов и мест обитания — скоро.',
-      summary:
-        'Материалы о видах и местах обитания появятся здесь. Раздел ещё не опубликован.',
     },
     forests: {
       title: 'Леса',
@@ -434,6 +528,60 @@ const pl: typeof en = {
       energy: 'Energia',
     },
   },
+  wildlifePage: {
+    metaTitle: 'Przyroda — Fix Planet',
+    metaDescription:
+      'Encyklopedia tego, jak zmieniły się populacje zwierząt po rozprzestrzenieniu się współczesnego człowieka: gatunki, które przetrwały, zagrożone i wymarłe z ostatnich 20 000 lat.',
+    eyebrow: 'Encyklopedia',
+    title: 'Przyroda',
+    lead: 'Najpierw nasz gatunek, potem zwierzęta, których liczebność i zasięg przesunęły się pod presją ludzi w późnym plejstocenie i holocenie.',
+    heroEyebrow: 'Nasz gatunek',
+    appearedLabel: 'Pojawił się',
+    appeared:
+      'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat; genetyka i paleontologia umieszczają pochodzenie Homo sapiens na tym kontynencie około 300 000 lat. To pochodzenie gatunku — nie początek list poniżej.',
+    populationLabel: 'Populacja dziś',
+    population:
+      'Około 8,2 miliarda ludzi w 2025 roku (ONZ, World Population Prospects 2024, wariant średni). Ta sama rewizja podała 8,2 miliarda w połowie 2024. To oficjalny szacunek, nie spis każdej osoby.',
+    framing:
+      'Reszta tej części jest o tym, jak zmieniły się inne zwierzęta, gdy współczesny człowiek stał się szeroką presją na wielką faunę. Listy biorą ostatnie ~20 000 lat — późny plejstocen i holocen — nie 300 000 lat pochodzenia naszego gatunku.',
+    imageAlt:
+      'Współczesny dorosły człowiek na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Filtruj gatunki według statusu',
+    surviving: 'Przetrwałe',
+    endangered: 'Zagrożone',
+    extinct: 'Wymarłe',
+    survivingLead:
+      'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się pod presją ludzi od około 20 000 lat — polowania, uprawa, późniejsza odbudowa albo wzrost.',
+    endangeredLead:
+      'Zagrożone teraz, głównie przez ludzi: utrata siedlisk, polowania, przyłów i klimat, który zmieniliśmy.',
+    extinctLead:
+      'Zniknęły. Większość kart ma jasną przyczynę ludzką. Przy kilku przedstawicielach megafauny późnego plejstocenu klimat jest drugim, uczciwie nazwanym czynnikiem.',
+    cardCta: 'Czytaj hasło →',
+    back: '← Przyroda',
+    what: 'Czym jest',
+    range: 'Zasięg',
+    story: 'Co się stało',
+    when: 'Kiedy / status',
+    humanRole: 'Rola człowieka',
+    iucnLabel: 'IUCN',
+    sourcesLabel: 'Źródła',
+    imageCredit: 'Zdjęcie',
+    iucn: {
+      EX: 'Wymarły',
+      CR: 'Krytycznie zagrożony',
+      CR_PE: 'Krytycznie zagrożony (prawdopodobnie wymarły)',
+      EN: 'Zagrożony',
+      VU: 'Narażony',
+      NT: 'Bliski zagrożenia',
+      LC: 'Najmniejszej troski',
+    },
+    status: {
+      surviving: 'Przetrwały',
+      endangered: 'Zagrożony',
+      extinct: 'Wymarły',
+    },
+  },
   about: {
     metaTitle: 'O projekcie — Fix Planet',
     metaDescription:
@@ -489,13 +637,6 @@ const pl: typeof en = {
       metaDescription: 'Ramy prawne chroniące ludzi i planetę — wkrótce.',
       summary:
         'Tutaj zbierzemy ramy prawne chroniące ludzi i planetę. Ta część nie jest jeszcze opublikowana.',
-    },
-    wildlife: {
-      title: 'Przyroda',
-      metaTitle: 'Przyroda — Fix Planet',
-      metaDescription: 'Ochrona gatunków i siedlisk — wkrótce.',
-      summary:
-        'Materiały o gatunkach i siedliskach pojawią się tutaj. Ta część nie jest jeszcze opublikowana.',
     },
     forests: {
       title: 'Lasy',
@@ -608,6 +749,60 @@ const lv: typeof en = {
       energy: 'Enerģija',
     },
   },
+  wildlifePage: {
+    metaTitle: 'Savvaļa — Fix Planet',
+    metaDescription:
+      'Enciklopēdija par to, kā dzīvnieku populācijas mainījās pēc mūsdienu cilvēka izplatīšanās: izdzīvojušās, apdraudētās un izmirstās sugas pēdējos 20 000 gados.',
+    eyebrow: 'Enciklopēdija',
+    title: 'Savvaļa',
+    lead: 'Vispirms mūsu suga, tad dzīvnieki, kuru skaits un areāls pārbīdījās cilvēku spiediena dēļ vēlajā pleistocēnā un holocēnā.',
+    heroEyebrow: 'Mūsu suga',
+    appearedLabel: 'Parādījās',
+    appeared:
+      'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem; ģenētika un paleontoloģija Homo sapiens izcelsmi liek šajā kontinentā ap 300 000 gadiem. Tā ir sugas izcelsme — ne zemāk esošo sarakstu sākums.',
+    populationLabel: 'Skaits šodien',
+    population:
+      'Ap 8,2 miljardiem cilvēku 2025. gadā (ANO, World Population Prospects 2024, vidējais variants). Tā pati revīzija 2024. gada vidum deva 8,2 miljardus. Tas ir oficiāls vērtējums, ne katra cilvēka skaitīšana.',
+    framing:
+      'Tālāk šī cilne ir par to, kā citi dzīvnieki mainījās, kad mūsdienu cilvēks kļuva par plašu spiedienu uz lielo faunu. Saraksti ņem pēdējos ~20 000 gadus — vēlo pleistocēnu un holocēnu —, ne 300 000 gadus mūsu sugas izcelsmes.',
+    imageAlt:
+      'Mūsdienu pieaugušais cilvēks pļavā — mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
+    scientificName: 'Homo sapiens',
+    tabsAria: 'Filtrēt sugas pēc statusa',
+    surviving: 'Izdzīvojušie',
+    endangered: 'Apdraudētie',
+    extinct: 'Izmirušie',
+    survivingLead:
+      'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās cilvēku spiediena dēļ kopš ap 20 000 gadiem — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums.',
+    endangeredLead:
+      'Apdraudēti tagad, galvenokārt cilvēku dēļ: dzīvotņu zudums, medības, piezveja un klimats, ko esam mainījuši.',
+    extinctLead:
+      'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas. Dažiem vēlā pleistocēna megafaunas pārstāvjiem klimats ir otrs, godīgi nosaukts cēlonis.',
+    cardCta: 'Lasīt šķirkli →',
+    back: '← Savvaļa',
+    what: 'Kas tas ir',
+    range: 'Areāls',
+    story: 'Kas notika',
+    when: 'Kad / statuss',
+    humanRole: 'Cilvēka loma',
+    iucnLabel: 'IUCN',
+    sourcesLabel: 'Avoti',
+    imageCredit: 'Attēls',
+    iucn: {
+      EX: 'Izmiris',
+      CR: 'Kritiski apdraudēts',
+      CR_PE: 'Kritiski apdraudēts (iespējams, izmiris)',
+      EN: 'Apdraudēts',
+      VU: 'Ievainojams',
+      NT: 'Tuvu apdraudējumam',
+      LC: 'Vismazāk apdraudēts',
+    },
+    status: {
+      surviving: 'Izdzīvojis',
+      endangered: 'Apdraudēts',
+      extinct: 'Izmiris',
+    },
+  },
   about: {
     metaTitle: 'Par projektu — Fix Planet',
     metaDescription:
@@ -663,13 +858,6 @@ const lv: typeof en = {
       metaDescription: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai — drīzumā.',
       summary:
         'Šeit tiks savākti tiesiskie ietvari, kas sargā cilvēkus un planētu. Šī sadaļa vēl nav publicēta.',
-    },
-    wildlife: {
-      title: 'Savvaļa',
-      metaTitle: 'Savvaļa — Fix Planet',
-      metaDescription: 'Sugu un dzīvotņu aizsardzība — drīzumā.',
-      summary:
-        'Materiāli par sugām un dzīvotnēm parādīsies šeit. Šī sadaļa vēl nav publicēta.',
     },
     forests: {
       title: 'Meži',

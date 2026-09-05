@@ -1,0 +1,147 @@
+---
+import WildlifeCard from '../components/WildlifeCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  humanHeroImage,
+  wildlifeImageSrc,
+  wildlifeStatusKeys,
+  wildlifeStatusPath,
+  type WildlifeStatus,
+} from '../data/wildlife';
+import { getUi, getWildlifeSpecies, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  status?: WildlifeStatus;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const activeStatus: WildlifeStatus = Astro.props.status ?? 'surviving';
+const species = getWildlifeSpecies(locale);
+const tabLeads = {
+  surviving: ui.wildlifePage.survivingLead,
+  endangered: ui.wildlifePage.endangeredLead,
+  extinct: ui.wildlifePage.extinctLead,
+} as const;
+---
+
+<BaseLayout
+  title={ui.wildlifePage.metaTitle}
+  description={ui.wildlifePage.metaDescription}
+>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">{ui.wildlifePage.eyebrow}</div>
+      <h1>{ui.wildlifePage.title}</h1>
+      <p>{ui.wildlifePage.lead}</p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="our-species">
+    <div class="wrap wildlife-hero">
+      <figure class="wildlife-hero-art">
+        <img
+          src={wildlifeImageSrc(humanHeroImage)}
+          alt={ui.wildlifePage.imageAlt}
+          width="1280"
+          height="960"
+        />
+      </figure>
+      <div>
+        <div class="eyebrow">{ui.wildlifePage.heroEyebrow}</div>
+        <h2 id="our-species"><em>{ui.wildlifePage.scientificName}</em></h2>
+        <dl class="wildlife-stats">
+          <div>
+            <dt>{ui.wildlifePage.appearedLabel}</dt>
+            <dd>{ui.wildlifePage.appeared}</dd>
+          </div>
+          <div>
+            <dt>{ui.wildlifePage.populationLabel}</dt>
+            <dd>{ui.wildlifePage.population}</dd>
+          </div>
+        </dl>
+        <p class="wildlife-framing">{ui.wildlifePage.framing}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cream" id="species-list">
+    <div class="wrap">
+      <div class="filters" role="tablist" aria-label={ui.wildlifePage.tabsAria}>
+        {
+          wildlifeStatusKeys.map((key) => (
+            <a
+              class:list={['filter-btn', { 'is-active': key === activeStatus }]}
+              href={localizePath(wildlifeStatusPath(key), locale)}
+              data-status={key}
+              role="tab"
+              aria-selected={key === activeStatus ? 'true' : 'false'}
+            >
+              {ui.wildlifePage[key]}
+            </a>
+          ))
+        }
+      </div>
+      <p class="wildlife-tab-lead" data-tab-lead>
+        {tabLeads[activeStatus]}
+      </p>
+      <div class="card-grid cols-3" id="wildlife-grid">
+        {
+          species.map((item) => (
+            <div hidden={item.status !== activeStatus}>
+              <WildlifeCard species={item} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script
+  define:vars={{
+    leads: tabLeads,
+    survivingHref: localizePath(wildlifeStatusPath('surviving'), locale),
+    endangeredHref: localizePath(wildlifeStatusPath('endangered'), locale),
+    extinctHref: localizePath(wildlifeStatusPath('extinct'), locale),
+  }}
+>
+  const hrefs = {
+    surviving: survivingHref,
+    endangered: endangeredHref,
+    extinct: extinctHref,
+  };
+
+  const buttons = document.querySelectorAll<HTMLAnchorElement>('[data-status]');
+  const cards = document.querySelectorAll<HTMLElement>('#wildlife-grid > div');
+  const lead = document.querySelector<HTMLElement>('[data-tab-lead]');
+
+  function show(status: string) {
+    if (!(status in hrefs)) return;
+    buttons.forEach((button) => {
+      const on = button.dataset.status === status;
+      button.classList.toggle('is-active', on);
+      button.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    cards.forEach((card) => {
+      const inner = card.querySelector<HTMLElement>('[data-wildlife-status]');
+      card.hidden = inner?.dataset.wildlifeStatus !== status;
+    });
+    if (lead && status in leads) {
+      lead.textContent = leads[status as keyof typeof leads];
+    }
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const status = button.dataset.status;
+      if (!status || !(status in hrefs)) return;
+      event.preventDefault();
+      show(status);
+      history.replaceState(null, '', hrefs[status as keyof typeof hrefs]);
+    });
+  });
+
+  const query = new URLSearchParams(location.search).get('status');
+  if (query && query in hrefs) show(query);
+</script>

@@ -9,7 +9,7 @@ import { getUi } from '../i18n/messages';
 
 const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
-const currentPath = Astro.url.pathname;
+const currentPath = `${Astro.url.pathname}${Astro.url.search}`;
 ---
 
 <nav class="lang-switch" aria-label={ui.language}>

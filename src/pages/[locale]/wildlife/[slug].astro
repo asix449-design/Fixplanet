@@ -1,0 +1,29 @@
+---
+import {
+  isWildlifeStatus,
+  speciesMeta,
+  wildlifeStatusKeys,
+} from '../../../data/wildlife';
+import { getWildlifeBySlug, otherLocales, resolveLocale } from '../../../i18n';
+import WildlifeSpeciesView from '../../../views/WildlifeSpeciesView.astro';
+import WildlifeView from '../../../views/WildlifeView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) => [
+    ...wildlifeStatusKeys.map((slug) => ({ params: { locale, slug } })),
+    ...speciesMeta.map((item) => ({ params: { locale, slug: item.slug } })),
+  ]);
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const species = slug && !isWildlifeStatus(slug) ? getWildlifeBySlug(locale, slug) : undefined;
+---
+
+{
+  isWildlifeStatus(slug) ? (
+    <WildlifeView status={slug} />
+  ) : (
+    species && <WildlifeSpeciesView species={species} />
+  )
+}
