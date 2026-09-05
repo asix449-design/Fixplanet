@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ComingSoon from '../components/ComingSoon.astro';
+import { getUi, resolveLocale } from '../i18n';
+
+interface Props {
+  section: 'maps' | 'law' | 'wildlife' | 'forests';
+}
+
+const { section } = Astro.props;
+const locale = resolveLocale(Astro.currentLocale);
+const page = getUi(locale).stubs[section];
+---
+
+<BaseLayout title={page.metaTitle} description={page.metaDescription}>
+  <ComingSoon title={page.title} summary={page.summary} />
+</BaseLayout>

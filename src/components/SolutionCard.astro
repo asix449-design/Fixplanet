@@ -1,12 +1,16 @@
 ---
 import type { Solution } from '../data/solutions';
+import { getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
   solution: Solution;
   href?: string;
 }
 
-const { solution, href = `/solutions#${solution.slug}` } = Astro.props;
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const { solution, href = localizePath(`/solutions#${solution.slug}`, locale) } =
+  Astro.props;
 const photo = `/images/solutions/${solution.slug}.jpg`;
 ---
 
@@ -21,20 +25,20 @@ const photo = `/images/solutions/${solution.slug}.jpg`;
       />
     </div>
     <div class="card-body">
-      <span class="tag">{solution.tag}</span>
+      <span class="tag">{ui.solutionsPage.tags[solution.tag]}</span>
       <h3>{solution.fixTitle}</h3>
       <p class="problem-title">{solution.problemTitle}</p>
       <dl class="pf">
         <div>
-          <dt>Problem</dt>
+          <dt>{ui.solutionsPage.problem}</dt>
           <dd>{solution.problem}</dd>
         </div>
         <div>
-          <dt>Fix</dt>
+          <dt>{ui.solutionsPage.fix}</dt>
           <dd>{solution.fix}</dd>
         </div>
       </dl>
-      <span class="card-cta">Explore solution →</span>
+      <span class="card-cta">{ui.solutionsPage.explore}</span>
     </div>
   </a>
 </article>

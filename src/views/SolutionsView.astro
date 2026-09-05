@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SolutionCard from '../components/SolutionCard.astro';
+import { tagKeys } from '../data/solutions';
+import { getSolutions, getUi, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const solutions = getSolutions(locale);
+const filters = [
+  { key: ui.solutionsPage.allKey, label: ui.solutionsPage.all },
+  ...tagKeys.map((key) => ({ key, label: ui.solutionsPage.tags[key] })),
+];
+---
+
+<BaseLayout
+  title={ui.solutionsPage.metaTitle}
+  description={ui.solutionsPage.metaDescription}
+>
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">{ui.solutionsPage.eyebrow}</div>
+      <h1>{ui.solutionsPage.title}</h1>
+      <p>
+        {ui.solutionsPage.lead}
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filters" role="group" aria-label={ui.solutionsPage.filterAria}>
+        {
+          filters.map((filter, i) => (
+            <button
+              class:list={['filter-btn', { 'is-active': i === 0 }]}
+              type="button"
+              data-filter={filter.key}
+            >
+              {filter.label}
+            </button>
+          ))
+        }
+      </div>
+      <div class="card-grid cols-3" id="solution-grid">
+        {
+          solutions.map((solution) => (
+            <SolutionCard
+              solution={solution}
+              href={localizePath(`/solutions#${solution.slug}`, locale)}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('#solution-grid [data-tag]');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const filter = button.dataset.filter ?? 'all';
+      buttons.forEach((b) => b.classList.toggle('is-active', b === button));
+      cards.forEach((card) => {
+        const show = filter === 'all' || card.dataset.tag === filter;
+        card.hidden = !show;
+      });
+    });
+  });
+</script>

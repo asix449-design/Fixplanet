@@ -1,10 +1,12 @@
 # Fix Planet
 
-Public English site for **Fix Planet** — a living atlas of technologies that repair the planet. Domain: [fixplanet.org](https://fixplanet.org).
+Public site for **Fix Planet** — a living atlas of technologies that repair the planet. Domain: [fixplanet.org](https://fixplanet.org). Languages: English (default), Russian, Polish, Latvian.
 
 This is a static [Astro](https://astro.build) site, ready for [Cloudflare Pages](https://developers.cloudflare.com/pages/).
 
 ## Pages
+
+Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the same path.
 
 | Route | Status |
 | --- | --- |
@@ -13,6 +15,12 @@ This is a static [Astro](https://astro.build) site, ready for [Cloudflare Pages]
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
 | `/maps`, `/law`, `/wildlife`, `/forests` | Placeholders — coming soon |
+
+## Languages
+
+Astro i18n routing (`prefixDefaultLocale: false`) keeps English URLs unchanged. The header switcher (EN / RU / PL / LV) stays on the equivalent page.
+
+Copy lives in `src/i18n/messages.ts` (UI) and `src/i18n/solutions.ts` (the eight solution cards). To add a string: add the key to `en`, then the same key to `ru`, `pl`, and `lv`, and read it with `getUi(locale)`. New pages need the English file under `src/pages/` and a thin `src/pages/[locale]/` wrapper that reuses the same view.
 
 ## Local development
 

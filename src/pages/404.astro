@@ -1,17 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import NotFoundView from '../views/NotFoundView.astro';
 ---
 
-<BaseLayout
-  title="Page not found — Fix Planet"
-  description="That page does not exist on Fix Planet."
->
-  <section class="coming-soon wrap">
-    <div class="soon-badge">404</div>
-    <h1>This page is missing</h1>
-    <p>
-      The link may be out of date. Try the
-      <a href="/">homepage</a> or <a href="/solutions">solutions</a>.
-    </p>
-  </section>
-</BaseLayout>
+<NotFoundView />

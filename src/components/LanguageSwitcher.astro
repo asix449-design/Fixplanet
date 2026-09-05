@@ -1,0 +1,50 @@
+---
+import {
+  LOCALE_COOKIE,
+  locales,
+  resolveLocale,
+  switchLocalePath,
+} from '../i18n';
+import { getUi } from '../i18n/messages';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="lang-switch" aria-label={ui.language}>
+  {
+    locales.map((code) => {
+      const href = switchLocalePath(currentPath, code);
+      const active = code === locale;
+      return (
+        <a
+          href={href}
+          hreflang={code}
+          lang={code}
+          data-locale={code}
+          data-locale-cookie={LOCALE_COOKIE}
+          aria-current={active ? 'true' : undefined}
+        >
+          {code.toUpperCase()}
+        </a>
+      );
+    })
+  }
+</nav>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('.lang-switch a[data-locale]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const code = link.dataset.locale;
+      const cookie = link.dataset.localeCookie;
+      if (!code || !cookie) return;
+      document.cookie = `${cookie}=${code}; Path=/; Max-Age=31536000; SameSite=Lax`;
+      try {
+        localStorage.setItem(cookie, code);
+      } catch {
+        /* private mode */
+      }
+    });
+  });
+</script>
