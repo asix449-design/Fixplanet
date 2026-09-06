@@ -33,47 +33,49 @@ const title = `${map.title} — Fix Planet`;
   </header>
 
   <section class="section">
-    <div class="wrap map-detail">
-      <figure class="map-detail-art">
-        <img src={preview} alt={map.imageAlt} width="1600" height="800" />
-        {
-          map.previewKind === 'schematic' ? (
-            <figcaption>{page.schematicNote}</figcaption>
-          ) : (
-            <figcaption>
-              {map.sourceOrg}. {map.year}.
-            </figcaption>
-          )
-        }
-        <a
-          class="btn btn-primary map-open-source"
-          href={map.openMapUrl}
-          rel="noopener noreferrer"
-        >
-          {page.openSource}
-        </a>
-      </figure>
-      <div class="prose wildlife-prose">
-        <div class="meta-row">
-          <span class="pill">{page.categories[map.category]}</span>
-          <span class="pill">{map.year}</span>
-          <span class="pill">{map.sourceShort}</span>
+    <div class="wrap">
+      <div class="map-detail">
+        <figure class="map-detail-art">
+          <img src={preview} alt={map.imageAlt} width="1600" height="800" />
+          {
+            map.previewKind === 'schematic' ? (
+              <figcaption>{page.schematicNote}</figcaption>
+            ) : (
+              <figcaption>
+                {map.sourceOrg}. {map.year}.
+              </figcaption>
+            )
+          }
+        </figure>
+        <div class="prose map-detail-copy">
+          <div class="meta-row">
+            <span class="pill">{page.categories[map.category]}</span>
+            <span class="pill">{map.year}</span>
+            <span class="pill">{map.sourceShort}</span>
+          </div>
+          <p>{map.description}</p>
+          <h2>{page.sourceLabel}</h2>
+          <p class="wildlife-sources">
+            <strong>{map.sourceOrg}</strong>
+            <br />
+            {page.yearLabel}: {map.year}
+            <br />
+            <a href={map.sourceUrl} rel="noopener noreferrer">{map.sourceUrl}</a>
+          </p>
+          <h2>{page.licenseLabel}</h2>
+          <p>{map.licenseNote}</p>
+          <h2>{page.howToRead}</h2>
+          <p>{map.howToRead}</p>
+          <h2>{page.caveats}</h2>
+          <p>{map.caveats}</p>
+          <a
+            class="btn btn-primary map-open-source"
+            href={map.openMapUrl}
+            rel="noopener noreferrer"
+          >
+            {page.openSource}
+          </a>
         </div>
-        <p>{map.description}</p>
-        <h2>{page.sourceLabel}</h2>
-        <p class="wildlife-sources">
-          <strong>{map.sourceOrg}</strong>
-          <br />
-          {page.yearLabel}: {map.year}
-          <br />
-          <a href={map.sourceUrl} rel="noopener noreferrer">{map.sourceUrl}</a>
-        </p>
-        <h2>{page.licenseLabel}</h2>
-        <p>{map.licenseNote}</p>
-        <h2>{page.howToRead}</h2>
-        <p>{map.howToRead}</p>
-        <h2>{page.caveats}</h2>
-        <p>{map.caveats}</p>
       </div>
     </div>
   </section>

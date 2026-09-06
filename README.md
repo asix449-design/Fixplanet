@@ -15,7 +15,7 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
 | `/wildlife` | Hub tiles first (Surviving / Endangered / Extinct), then *Homo sapiens* hero and dispersal map, then the status list. Detail pages at `/wildlife/[slug]`. Themed South-American wildlife collage backdrop (scrimmed for type; map sits on a solid panel) |
-| `/maps` | Sourced map catalog (conflict, languages, religion, crime, pollution, energy, minerals, borders, forests, water, people). Detail pages at `/maps/[slug]`; category filters at `/maps/conflicts` and `?category=` |
+| `/maps` | Sourced map catalog (conflict, languages, religion, crime, pollution, energy, minerals, borders, forests, water, people). Detail pages at `/maps/[slug]` show the preview full-width with source text below; category filters at `/maps/conflicts` and `?category=` |
 | `/innovations` | Hub tiles first (Ecology, Energy, AI), then that area’s cards. Detail pages at `/innovations/[slug]`; area URLs at `/innovations/ecology`, `/energy`, `/ai` and `?area=`. Themed Earth+circuits backdrop (scrimmed cream/dark panels) |
 | `/law`, `/forests` | Placeholders — coming soon |
 
