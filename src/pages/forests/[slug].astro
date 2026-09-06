@@ -1,0 +1,12 @@
+---
+import { forestPanelKeys, isForestPanel } from '../../data/forests';
+import ForestsView from '../../views/ForestsView.astro';
+
+export function getStaticPaths() {
+  return forestPanelKeys.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+---
+
+<ForestsView panel={isForestPanel(slug) ? slug : 'satellite'} />

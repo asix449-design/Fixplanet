@@ -39,7 +39,7 @@ export const homeHub = [
   { href: '/maps', key: 'maps', icon: 'globe' },
   { href: '/law', key: 'law', icon: 'scales', soon: true },
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
-  { href: '/forests', key: 'forests', icon: 'trees', soon: true },
+  { href: '/forests', key: 'forests', icon: 'trees' },
   { href: '/book', key: 'book', icon: 'book' },
   { href: '/about', key: 'about', icon: 'compass' },
 ] as const;

@@ -1,0 +1,518 @@
+---
+import HubTile from '../components/HubTile.astro';
+import SectionHub from '../components/SectionHub.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  faoFra2025Url,
+  forestBackdrop,
+  forestFrameSrc,
+  forestHub,
+  forestPanelPath,
+  gfw2024Url,
+  gfw2025Url,
+  gfwMapUrl,
+  hansen2013Url,
+  isForestPanel,
+  longViewImage,
+  type ForestPanel,
+} from '../data/forests';
+import {
+  getForestFrames,
+  getForestStats,
+  getForestsPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+
+interface Props {
+  panel?: ForestPanel;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getForestsPage(locale);
+const requested = Astro.props.panel ?? Astro.url.searchParams.get('panel') ?? 'satellite';
+const activePanel: ForestPanel = isForestPanel(requested) ? requested : 'satellite';
+
+const satelliteFrames = getForestFrames(locale, 'satellite');
+const reconstructionFrames = getForestFrames(locale, 'reconstruction');
+const stats = getForestStats(locale);
+const longViewSrc = forestFrameSrc(longViewImage.file);
+const backdropSrc = forestFrameSrc(forestBackdrop.file);
+
+const initialSatellite = satelliteFrames[satelliteFrames.length - 1];
+const initialReconstruction = reconstructionFrames[0];
+const scenarioKeys = ['continued', 'slower', 'restore'] as const;
+const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
+---
+
+<BaseLayout
+  title={page.metaTitle}
+  description={page.metaDescription}
+  image={backdropSrc}
+  theme="forests"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={backdropSrc} alt="" width="1280" height="960" />
+    <div class="section-backdrop-scrim forests-scrim"></div>
+  </div>
+
+  <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
+    {
+      forestHub.map((item) => (
+        <HubTile
+          href={localizePath(forestPanelPath(item.key), locale)}
+          icon={item.icon}
+          title={page.panels[item.key]}
+          text={page.tiles[item.key]}
+          active={item.key === activePanel}
+          dataPanel={item.key}
+        />
+      ))
+    }
+  </SectionHub>
+
+  <section class="section section-hub-follow" id="satellite" data-forest-panel="satellite">
+    <div class="wrap">
+      <div class="wildlife-map-panel forests-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.satellite}</div>
+        <h2>{page.panels.satellite}</h2>
+        <p class="wildlife-tab-lead">{page.leads.satellite}</p>
+        <p class="borders-honesty">{page.honesty}</p>
+
+        <div class="forest-map" data-forest-map>
+          <div class="forest-mode" role="tablist" aria-label={page.scrubberAria}>
+            <button type="button" class="forest-mode-btn is-active" data-forest-mode="satellite" role="tab" aria-selected="true">
+              {page.modeSatellite}
+            </button>
+            <button type="button" class="forest-mode-btn" data-forest-mode="reconstruction" role="tab" aria-selected="false">
+              {page.modeReconstruction}
+            </button>
+          </div>
+
+          <figure class="map-detail-art forest-map-art">
+            <img
+              data-forest-image
+              src={forestFrameSrc(initialSatellite.file)}
+              alt={initialSatellite.imageAlt}
+              width="2400"
+              height="1200"
+            />
+            <figcaption data-forest-caption>
+              {initialSatellite.sourceOrg}. {page.vintageLabel}: {initialSatellite.vintage}.
+            </figcaption>
+          </figure>
+
+          <div class="forest-map-meta">
+            <span class="pill" data-forest-fidelity>{page.fidelitySatellite}</span>
+            <span class="pill" data-forest-year-pill>{initialSatellite.label}</span>
+            <span class="pill" data-forest-source-pill>{initialSatellite.sourceShort}</span>
+          </div>
+
+          <label class="forest-slider-label" for="forest-year-range">
+            <span data-forest-slider-label>{page.yearLabel}</span>
+            <strong data-forest-year-strong>{initialSatellite.label}</strong>
+          </label>
+          <input
+            id="forest-year-range"
+            class="forest-slider"
+            type="range"
+            min="0"
+            max={satelliteFrames.length - 1}
+            value={satelliteFrames.length - 1}
+            data-forest-range
+          />
+
+          <nav class="borders-scrubber forest-year-chips" aria-label={page.scrubberAria} data-forest-chips>
+            {
+              satelliteFrames.map((frame, index) => (
+                <button
+                  type="button"
+                  class:list={['borders-year', 'forest-year', { 'is-active': index === satelliteFrames.length - 1 }]}
+                  data-forest-chip
+                  data-index={index}
+                >
+                  {frame.label}
+                </button>
+              ))
+            }
+          </nav>
+
+          <div class="prose map-detail-copy forest-frame-copy">
+            <h3 data-forest-title>{initialSatellite.title}</h3>
+            <p data-forest-body>{initialSatellite.caption}</p>
+            <p class="wildlife-sources">
+              {page.howToRead}
+            </p>
+            <p class="wildlife-sources">
+              {page.caveats}
+            </p>
+            <h3>{page.sourceLabel}</h3>
+            <p class="wildlife-sources" data-forest-source>
+              <strong>{initialSatellite.sourceOrg}</strong>
+              <br />
+              {page.vintageLabel}: {initialSatellite.vintage}
+              <br />
+              <a href={initialSatellite.sourceUrl} rel="noopener noreferrer">{initialSatellite.sourceUrl}</a>
+              <br />
+              {page.licenseLabel}:
+              <a href={initialSatellite.licenseUrl} rel="noopener noreferrer">{initialSatellite.license}</a>
+            </p>
+            <p class="wildlife-sources" data-gfw-note>
+              {page.gfwNote}
+            </p>
+            <a class="btn btn-primary map-open-source" href={gfwMapUrl} rel="noopener noreferrer">
+              {page.openGfw}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="history" data-forest-panel="history">
+    <div class="wrap">
+      <div class="wildlife-copy-card forests-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.history}</div>
+        <h2>{page.panels.history}</h2>
+        <p class="wildlife-tab-lead">{page.leads.history}</p>
+        <div class="forest-recon-grid">
+          {
+            reconstructionFrames.map((frame) => (
+              <article class="forest-recon-card" id={frame.id}>
+                <figure class="map-detail-art">
+                  <img
+                    src={forestFrameSrc(frame.file)}
+                    alt={frame.imageAlt}
+                    width="1600"
+                    height="900"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    {frame.sourceOrg}. {page.vintageLabel}: {frame.vintage}.
+                  </figcaption>
+                </figure>
+                <div class="meta-row">
+                  <span class="pill">{page.fidelityReconstruction}</span>
+                  <span class="pill">{frame.label}</span>
+                  <span class="pill">{frame.sourceShort}</span>
+                </div>
+                <h3>{frame.title}</h3>
+                <p>{frame.caption}</p>
+                <p class="wildlife-sources">
+                  <a href={frame.sourceUrl} rel="noopener noreferrer">{frame.sourceUrl}</a>
+                  <br />
+                  {page.licenseLabel}:
+                  <a href={frame.licenseUrl} rel="noopener noreferrer">{frame.license}</a>
+                </p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="numbers" data-forest-panel="numbers">
+    <div class="wrap">
+      <div class="wildlife-list-panel forests-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
+        <h2>{page.panels.numbers}</h2>
+        <p class="wildlife-tab-lead">{page.leads.numbers}</p>
+        <p class="borders-honesty">{page.numbersNote}</p>
+        <div class="forest-stat-grid">
+          {
+            stats.map((stat) => (
+              <article class="forest-stat">
+                <p class="forest-stat-value">
+                  {stat.value}
+                  <span>{page.units[stat.unitKey]}</span>
+                </p>
+                <h3>{stat.label}</h3>
+                <p>{stat.text}</p>
+                <p class="wildlife-sources">
+                  {stat.sourceShort} · {stat.vintage}
+                  <br />
+                  <a href={stat.sourceUrl} rel="noopener noreferrer">{stat.sourceUrl}</a>
+                </p>
+              </article>
+            ))
+          }
+        </div>
+        <div class="forest-distinguish">
+          <h3>{page.distinguishTitle}</h3>
+          <p>{page.distinguish}</p>
+          <p class="wildlife-sources">
+            FAO FRA 2025 · <a href={faoFra2025Url} rel="noopener noreferrer">{faoFra2025Url}</a>
+            <br />
+            Hansen et al. 2013 · <a href={hansen2013Url} rel="noopener noreferrer">{hansen2013Url}</a>
+            <br />
+            GFW 2024 · <a href={gfw2024Url} rel="noopener noreferrer">{gfw2024Url}</a>
+            <br />
+            GFW 2025 · <a href={gfw2025Url} rel="noopener noreferrer">{gfw2025Url}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="outlook" data-forest-panel="outlook">
+    <div class="wrap">
+      <div class="wildlife-copy-card forests-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.outlook}</div>
+        <h2>{page.trendTitle}</h2>
+        <p class="wildlife-tab-lead">{page.trendLead}</p>
+        <figure class="map-detail-art">
+          <img
+            src={longViewSrc}
+            alt={page.longViewAlt}
+            width="1920"
+            height="1104"
+            loading="lazy"
+          />
+          <figcaption>{page.longViewCaption}</figcaption>
+        </figure>
+
+        <div class="forest-strip" aria-hidden="true">
+          <div class="forest-strip-seg forest-strip-coarse">
+            <span>10 000 BCE</span>
+            <span>Holocene · coarse</span>
+          </div>
+          <div class="forest-strip-seg forest-strip-sat">
+            <span>2001</span>
+            <span>Satellite</span>
+          </div>
+          <div class="forest-strip-seg forest-strip-now">
+            <span>2025</span>
+            <span>now</span>
+          </div>
+          <div class="forest-strip-paths">
+            <span class="forest-path forest-path-bad"></span>
+            <span class="forest-path forest-path-mid"></span>
+            <span class="forest-path forest-path-good"></span>
+          </div>
+        </div>
+        <p class="wildlife-tab-lead">{page.leads.outlook}</p>
+
+        <h3>{page.scenarioTitle}</h3>
+        <p>{page.scenarioLead}</p>
+        <div class="forest-scenario-grid">
+          {
+            scenarioKeys.map((key) => (
+              <article class="forest-scenario">
+                <h4>{page.scenarios[key].title}</h4>
+                <p>{page.scenarios[key].text}</p>
+              </article>
+            ))
+          }
+        </div>
+
+        <h3>{page.worksTitle}</h3>
+        <p>{page.worksLead}</p>
+        <div class="forest-works">
+          {
+            workKeys.map((key) => (
+              <article>
+                <h4>{page.works[key].title}</h4>
+                <p>{page.works[key].text}</p>
+              </article>
+            ))
+          }
+        </div>
+
+        <p class="wildlife-sources">
+          {page.mapsLink}
+          {' '}
+          <a href={localizePath('/maps/forest-cover-loss', locale)}>{page.mapsLinkCta}</a>
+        </p>
+        <p class="wildlife-sources">{page.addFrame}</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script
+  define:vars={{
+    satelliteFrames,
+    reconstructionFrames,
+    satelliteHref: localizePath(forestPanelPath('satellite'), locale),
+    historyHref: localizePath(forestPanelPath('history'), locale),
+    numbersHref: localizePath(forestPanelPath('numbers'), locale),
+    outlookHref: localizePath(forestPanelPath('outlook'), locale),
+    fidelitySatellite: page.fidelitySatellite,
+    fidelityReconstruction: page.fidelityReconstruction,
+    yearLabel: page.yearLabel,
+    eraLabel: page.eraLabel,
+    vintageLabel: page.vintageLabel,
+    licenseLabel: page.licenseLabel,
+    srcPrefix: '/images/forests/',
+  }}
+>
+  const hrefs = {
+    satellite: satelliteHref,
+    history: historyHref,
+    numbers: numbersHref,
+    outlook: outlookHref,
+  };
+
+  const tiles = document.querySelectorAll('[data-panel]');
+  tiles.forEach((tile) => {
+    tile.addEventListener('click', (event) => {
+      const panel = tile.dataset.panel;
+      if (!panel || !(panel in hrefs)) return;
+      event.preventDefault();
+      tiles.forEach((item) => {
+        const on = item.dataset.panel === panel;
+        item.classList.toggle('is-active', on);
+        if (on) item.setAttribute('aria-current', 'page');
+        else item.removeAttribute('aria-current');
+      });
+      history.replaceState(null, '', hrefs[panel]);
+      document.getElementById(panel)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  const map = document.querySelector('[data-forest-map]');
+  if (map) {
+    const image = map.querySelector('[data-forest-image]');
+    const caption = map.querySelector('[data-forest-caption]');
+    const fidelity = map.querySelector('[data-forest-fidelity]');
+    const yearPill = map.querySelector('[data-forest-year-pill]');
+    const sourcePill = map.querySelector('[data-forest-source-pill]');
+    const title = map.querySelector('[data-forest-title]');
+    const body = map.querySelector('[data-forest-body]');
+    const source = map.querySelector('[data-forest-source]');
+    const sliderLabel = map.querySelector('[data-forest-slider-label]');
+    const yearStrong = map.querySelector('[data-forest-year-strong]');
+    const range = map.querySelector('[data-forest-range]');
+    const chips = map.querySelector('[data-forest-chips]');
+    const modeButtons = map.querySelectorAll('[data-forest-mode]');
+
+    let mode = 'satellite';
+    let index = satelliteFrames.length - 1;
+
+    function framesFor(nextMode) {
+      return nextMode === 'reconstruction' ? reconstructionFrames : satelliteFrames;
+    }
+
+    function renderChips() {
+      const frames = framesFor(mode);
+      if (!chips) return;
+      chips.innerHTML = '';
+      frames.forEach((frame, i) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'borders-year forest-year' + (i === index ? ' is-active' : '');
+        button.dataset.forestChip = '';
+        button.dataset.index = String(i);
+        button.textContent = frame.label;
+        button.addEventListener('click', () => show(mode, i));
+        chips.appendChild(button);
+      });
+    }
+
+    function show(nextMode, nextIndex) {
+      const frames = framesFor(nextMode);
+      mode = nextMode;
+      index = Math.max(0, Math.min(nextIndex, frames.length - 1));
+      const frame = frames[index];
+      if (!frame) return;
+
+      if (image) {
+        image.src = srcPrefix + frame.file;
+        image.alt = frame.imageAlt;
+      }
+      if (caption) {
+        caption.textContent = frame.sourceOrg + '. ' + vintageLabel + ': ' + frame.vintage + '.';
+      }
+      if (fidelity) {
+        fidelity.textContent =
+          mode === 'reconstruction' ? fidelityReconstruction : fidelitySatellite;
+      }
+      if (yearPill) yearPill.textContent = frame.label;
+      if (sourcePill) sourcePill.textContent = frame.sourceShort;
+      if (title) title.textContent = frame.title;
+      if (body) body.textContent = frame.caption;
+      if (source) {
+        source.innerHTML =
+          '<strong>' +
+          frame.sourceOrg +
+          '</strong><br />' +
+          vintageLabel +
+          ': ' +
+          frame.vintage +
+          '<br /><a href="' +
+          frame.sourceUrl +
+          '" rel="noopener noreferrer">' +
+          frame.sourceUrl +
+          '</a><br />' +
+          licenseLabel +
+          ': <a href="' +
+          frame.licenseUrl +
+          '" rel="noopener noreferrer">' +
+          frame.license +
+          '</a>';
+      }
+      if (sliderLabel) sliderLabel.textContent = mode === 'reconstruction' ? eraLabel : yearLabel;
+      if (yearStrong) yearStrong.textContent = frame.label;
+      if (range) {
+        range.max = String(frames.length - 1);
+        range.value = String(index);
+      }
+      modeButtons.forEach((button) => {
+        const on = button.dataset.forestMode === mode;
+        button.classList.toggle('is-active', on);
+        button.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      renderChips();
+    }
+
+    modeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const next = button.dataset.forestMode === 'reconstruction' ? 'reconstruction' : 'satellite';
+        const frames = framesFor(next);
+        show(next, next === 'satellite' ? frames.length - 1 : 0);
+        if (next === 'reconstruction') {
+          history.replaceState(null, '', hrefs.history);
+        } else {
+          history.replaceState(null, '', hrefs.satellite);
+        }
+      });
+    });
+
+    range?.addEventListener('input', () => {
+      show(mode, Number(range.value));
+    });
+
+    const params = new URLSearchParams(location.search);
+    const year = Number(params.get('year'));
+    const era = params.get('era');
+    if (year) {
+      const found = satelliteFrames.findIndex((frame) => frame.year === year);
+      if (found >= 0) show('satellite', found);
+    } else if (era) {
+      const found = reconstructionFrames.findIndex(
+        (frame) => frame.id === era || frame.id === 'recon-' + era || String(frame.year) === era,
+      );
+      if (found >= 0) show('reconstruction', found);
+    }
+
+    const hash = location.hash.replace('#', '');
+    if (hash.startsWith('sat-') || hash.startsWith('year-')) {
+      const y = Number(hash.replace('sat-', '').replace('year-', ''));
+      const found = satelliteFrames.findIndex((frame) => frame.year === y);
+      if (found >= 0) show('satellite', found);
+    } else if (hash.startsWith('recon-') || reconstructionFrames.some((frame) => frame.id === hash)) {
+      const found = reconstructionFrames.findIndex((frame) => frame.id === hash || frame.id === 'recon-' + hash);
+      if (found >= 0) {
+        show('reconstruction', found);
+        document.getElementById('history')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }
+
+  const path = location.pathname.replace(/\/+$/, '');
+  const last = path.split('/').filter(Boolean).pop();
+  if (last && last in hrefs && last !== 'forests' && last !== 'ru' && last !== 'pl' && last !== 'lv') {
+    document.getElementById(last)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+</script>
