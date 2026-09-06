@@ -187,8 +187,9 @@ p:last-child {
 .nav > a {
   color: var(--ink);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav > a:hover,
@@ -807,7 +808,7 @@ a.solution-card:hover {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1140px) {
   .menu-toggle {
     display: grid;
     place-items: center;
@@ -1105,6 +1106,26 @@ a.wildlife-card:hover {
 .status-extinct {
   background: #e7ebe5;
   color: #4a554c;
+}
+
+.status-research {
+  background: rgba(27, 122, 78, 0.08);
+  color: var(--green-dark);
+}
+
+.status-pilot {
+  background: rgba(63, 163, 106, 0.16);
+  color: var(--green);
+}
+
+.status-deployed {
+  background: rgba(27, 122, 78, 0.14);
+  color: var(--green);
+}
+
+.status-myth-busted {
+  background: #ece8e0;
+  color: #5a4e3d;
 }
 
 .wildlife-detail {
@@ -1542,6 +1563,91 @@ a.map-card:hover {
   }
 }
 
+/* Innovations — distinct tech/Earth circuit theme */
+.theme-innovations,
+.theme-innovations-detail {
+  background: #071410;
+}
+
+.theme-innovations .section-backdrop img,
+.theme-innovations-detail .section-backdrop img {
+  object-position: 38% 46%;
+  filter: blur(7px) saturate(1.05) brightness(0.5);
+}
+
+.innovations-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 16, 14, 0.62) 0%,
+      rgba(8, 22, 18, 0.42) 20%,
+      rgba(244, 247, 242, 0.76) 50%,
+      rgba(244, 247, 242, 0.92) 74%,
+      rgba(244, 247, 242, 0.96) 100%
+    ),
+    linear-gradient(90deg, rgba(244, 247, 242, 0.22) 0%, transparent 46%);
+}
+
+.theme-innovations-detail .section-backdrop-subtle .innovations-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(244, 247, 242, 0.8) 0%,
+      rgba(244, 247, 242, 0.92) 38%,
+      rgba(244, 247, 242, 0.96) 100%
+    );
+}
+
+.theme-innovations .site-header,
+.theme-innovations-detail .site-header {
+  background: rgba(244, 247, 242, 0.9);
+}
+
+.theme-innovations main,
+.theme-innovations-detail main {
+  position: relative;
+  z-index: 1;
+}
+
+.innovations-hero-media img {
+  object-position: 36% 48%;
+}
+
+.innovations-hero-shade {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 14, 12, 0.4) 0%,
+      rgba(6, 18, 15, 0.58) 44%,
+      rgba(6, 16, 13, 0.82) 100%
+    ),
+    linear-gradient(90deg, rgba(6, 16, 13, 0.5) 0%, transparent 62%);
+}
+
+.innovations-list-panel {
+  background: rgba(244, 247, 242, 0.97);
+}
+
+.innovation-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.innovation-card {
+  border-left-color: #1b7a4e;
+}
+
+.theme-innovations-detail .innovations-prose {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.innovation-card,
+.wildlife-card.innovation-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1550,6 +1656,7 @@ a.map-card:hover {
   .btn,
   .solution-card,
   .wildlife-card,
+  .innovation-card,
   .map-card {
     transition: none;
   }

@@ -28,6 +28,7 @@ const en = {
   },
   nav: {
     solutions: 'Solutions',
+    innovations: 'Innovations',
     maps: 'Maps',
     law: 'Law',
     wildlife: 'Wildlife',
@@ -52,6 +53,10 @@ const en = {
     solutions: {
       title: 'Solutions that work',
       text: 'Proven technologies with real-world impact.',
+    },
+    innovations: {
+      title: 'Frontier, with proof',
+      text: 'Labs and pilots that aim at planetary-scale problems — and the myths that do not.',
     },
     maps: {
       title: 'Mapped for action',
@@ -272,6 +277,7 @@ const ru: typeof en = {
   },
   nav: {
     solutions: 'Решения',
+    innovations: 'Инновации',
     maps: 'Карты',
     law: 'Право',
     wildlife: 'Природа',
@@ -296,6 +302,10 @@ const ru: typeof en = {
     solutions: {
       title: 'Решения, которые работают',
       text: 'Проверенные технологии с реальным эффектом.',
+    },
+    innovations: {
+      title: 'Рубеж — с доказательствами',
+      text: 'Лаборатории и пилоты, которые целятся в планетарные проблемы, — и мифы, которые туда не входят.',
     },
     maps: {
       title: 'Карта для действий',
@@ -519,6 +529,7 @@ const pl: typeof en = {
   },
   nav: {
     solutions: 'Rozwiązania',
+    innovations: 'Innowacje',
     maps: 'Mapy',
     law: 'Prawo',
     wildlife: 'Przyroda',
@@ -543,6 +554,10 @@ const pl: typeof en = {
     solutions: {
       title: 'Rozwiązania, które działają',
       text: 'Sprawdzone technologie z realnym skutkiem.',
+    },
+    innovations: {
+      title: 'Granica, z dowodem',
+      text: 'Laboratoria i pilotaże wobec problemów planetarnych — oraz mity, które tam nie należą.',
     },
     maps: {
       title: 'Mapa do działania',
@@ -766,6 +781,7 @@ const lv: typeof en = {
   },
   nav: {
     solutions: 'Risinājumi',
+    innovations: 'Inovācijas',
     maps: 'Kartes',
     law: 'Tiesības',
     wildlife: 'Savvaļa',
@@ -790,6 +806,10 @@ const lv: typeof en = {
     solutions: {
       title: 'Risinājumi, kas darbojas',
       text: 'Pārbaudītas tehnoloģijas ar reālu ietekmi.',
+    },
+    innovations: {
+      title: 'Pierobeža ar pierādījumiem',
+      text: 'Laboratorijas un izmēģinājumi pret planētas mēroga problēmām — un mīti, kas tur neder.',
     },
     maps: {
       title: 'Karte rīcībai',

@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { innovationImageSrc, type Innovation } from '../data/innovations';
+import { getInnovationsPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: Innovation;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getInnovationsPage(locale);
+const { item } = Astro.props;
+const title = `${item.title} — Fix Planet`;
+const image = innovationImageSrc(item.image);
+---
+
+<BaseLayout
+  title={title}
+  description={item.hook}
+  image={image}
+  theme="innovations-detail"
+>
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img
+      src="/images/innovations/innovations-section-bg.jpg"
+      alt=""
+      width="1920"
+      height="1280"
+    />
+    <div class="section-backdrop-scrim innovations-scrim"></div>
+  </div>
+  <header
+    class="wildlife-page-hero wildlife-page-hero-detail innovations-page-hero"
+    aria-labelledby="innovation-heading"
+  >
+    <div class="wildlife-page-hero-media innovations-hero-media" aria-hidden="true">
+      <img
+        src="/images/innovations/innovations-section-bg.jpg"
+        alt=""
+        width="1920"
+        height="1280"
+      />
+    </div>
+    <div class="wildlife-page-hero-shade innovations-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/innovations', locale)}>{page.back}</a>
+      </p>
+      <div class="eyebrow wildlife-on-dark">{page.areas[item.area]}</div>
+      <h1 id="innovation-heading">{item.title}</h1>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail">
+      <figure class="wildlife-detail-art">
+        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+        <figcaption>
+          {page.imageCredit}: {item.image.credit}
+          {
+            item.image.sourceUrl ? (
+              <>
+                {' '}
+                (
+                <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                  {item.image.license}
+                </a>
+                )
+              </>
+            ) : (
+              <> ({item.image.license})</>
+            )
+          }
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose innovations-prose">
+        <div class="meta-row">
+          <span class="pill">{page.areas[item.area]}</span>
+          <span class:list={['pill', `status-${item.status}`]}>
+            {page.status[item.status]}
+          </span>
+        </div>
+        <h2>{page.what}</h2>
+        <p>{item.what}</p>
+        <h2>{page.problem}</h2>
+        <p>{item.problem}</p>
+        <h2>{page.how}</h2>
+        <p>{item.how}</p>
+        <h2>{page.players}</h2>
+        <p>{item.players}</p>
+        <h2>{page.risks}</h2>
+        <p>{item.risks}</p>
+        <h2>{page.sourcesLabel}</h2>
+        <p class="wildlife-sources">{item.sources}</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

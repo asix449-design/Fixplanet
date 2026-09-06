@@ -37,6 +37,16 @@ const ui = getUi(locale);
                 <ellipse cx="12" cy="15.4" rx="4.1" ry="3.3"></ellipse>
               </svg>
             )}
+            {item.icon === 'circuit' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="6.2" cy="6.2" r="1.6"></circle>
+                <circle cx="17.8" cy="6.2" r="1.6"></circle>
+                <circle cx="6.2" cy="17.8" r="1.6"></circle>
+                <circle cx="17.8" cy="17.8" r="1.6"></circle>
+                <path d="M7.8 6.2h8.4M6.2 7.8v8.4M17.8 7.8v8.4M7.8 17.8h8.4"></path>
+                <circle cx="12" cy="12" r="2.1"></circle>
+              </svg>
+            )}
           </div>
           <div>
             <div class="feature-title">{ui.features[item.key].title}</div>

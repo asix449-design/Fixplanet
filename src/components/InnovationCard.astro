@@ -1,0 +1,43 @@
+---
+import type { Innovation } from '../data/innovations';
+import { innovationImageSrc } from '../data/innovations';
+import { getInnovationsPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: Innovation;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getInnovationsPage(locale);
+const { item } = Astro.props;
+const href = localizePath(`/innovations/${item.slug}`, locale);
+---
+
+<article
+  class="wildlife-card-wrap"
+  data-innovation-area={item.area}
+  data-slug={item.slug}
+>
+  <a class="wildlife-card innovation-card" href={href}>
+    <div class="card-art">
+      <img
+        src={innovationImageSrc(item.image)}
+        alt={item.imageAlt}
+        width="640"
+        height="400"
+        loading="lazy"
+      />
+    </div>
+    <div class="card-body">
+      <div class="innovation-badges">
+        <span class="tag">{page.areas[item.area]}</span>
+        <span class:list={['tag', `status-${item.status}`]}>
+          {page.status[item.status]}
+        </span>
+      </div>
+      <h3>{item.title}</h3>
+      <p class="wildlife-hook">{item.hook}</p>
+      <span class="card-cta">{page.cardCta}</span>
+    </div>
+  </a>
+</article>
