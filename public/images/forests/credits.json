@@ -1,0 +1,129 @@
+[
+  {
+    "file": "forests-section-bg.jpg",
+    "title": "Coast Redwood forest and understory plants in Redwood National Park, California",
+    "source": "Michael Schweppe / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park,_fog_in_the_forest.jpg",
+    "license": "CC BY-SA 2.0",
+    "kind": "hosted-original",
+    "note": "Forests section backdrop. Fogged redwood grove, not a map."
+  },
+  {
+    "file": "ndvi-2001.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2001",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "direct": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&TIME=2001-07-01T00:00:00Z&BBOX=-90,-180,90,180&CRS=EPSG:4326&LAYERS=MODIS_Terra_L3_NDVI_Monthly,Coastlines_15m&WRAP=day,x&FORMAT=image/jpeg&WIDTH=2400&HEIGHT=1200",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Satellite-era canopy greenness frame. Not Hansen 30 m loss pixels."
+  },
+  {
+    "file": "ndvi-2005.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2005",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Satellite-era canopy greenness frame."
+  },
+  {
+    "file": "ndvi-2010.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2010",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Satellite-era canopy greenness frame."
+  },
+  {
+    "file": "ndvi-2015.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2015",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Satellite-era canopy greenness frame."
+  },
+  {
+    "file": "ndvi-2020.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2020",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Satellite-era canopy greenness frame."
+  },
+  {
+    "file": "ndvi-2024.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2024",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Satellite-era canopy greenness frame."
+  },
+  {
+    "file": "ndvi-2025.jpg",
+    "title": "MODIS Terra L3 NDVI Monthly, July 2025",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Latest hosted July NDVI frame as of the Forests section launch."
+  },
+  {
+    "file": "recon-lgm.png",
+    "title": "Last Glacial Maximum Vegetation Map",
+    "source": "Locoluis after Ray & Adams 2001 shapefile",
+    "url": "https://commons.wikimedia.org/wiki/File:Last_Glacial_Maximum_Vegetation_Map.svg",
+    "license": "CC BY 3.0",
+    "kind": "hosted-original",
+    "note": "Reconstruction ~25,000–15,000 BP. Not 10,000 BCE. Not satellite."
+  },
+  {
+    "file": "recon-midholocene.png",
+    "title": "World biome / potential vegetation plate",
+    "source": "Ville Koistinen (Vzb83), Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Vegetation.png",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Recent-climate biome analogue, not a dated mid-Holocene pollen raster."
+  },
+  {
+    "file": "recon-1700.jpg",
+    "title": "Anthropogenic Biomes of the World, Version 2, 1700: Global",
+    "source": "Ellis et al.; NASA SEDAC / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Anthropogenic_Biomes_of_the_World,_Version_2,_1700_Global_(13603029325).jpg",
+    "license": "CC BY 2.0",
+    "kind": "hosted-original",
+    "note": "Anthrome reconstruction. Not percent tree cover."
+  },
+  {
+    "file": "recon-1900.jpg",
+    "title": "Anthropogenic Biomes of the World, Version 2, 1900: Global",
+    "source": "Ellis et al.; NASA SEDAC / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Anthropogenic_Biomes_of_the_World,_Version_2,_1900_Global_(13603726573).jpg",
+    "license": "CC BY 2.0",
+    "kind": "hosted-original",
+    "note": "Anthrome reconstruction. Not percent tree cover."
+  },
+  {
+    "file": "recon-2000.jpg",
+    "title": "Anthropogenic Biomes of the World, Version 2, 2000: Global",
+    "source": "Ellis et al.; NASA SEDAC / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Anthropogenic_Biomes_of_the_World,_Version_2,_2000_Global_(13603947015).jpg",
+    "license": "CC BY 2.0",
+    "kind": "hosted-original",
+    "note": "Anthrome reconstruction at the start of the satellite era."
+  },
+  {
+    "file": "anthromes-12k-timeline.png",
+    "title": "Anthromes map and timeline (10,000 BCE to 2017 CE)",
+    "source": "Erle Ellis, Anthromes 12K DGG v1, after Ellis et al. 2021",
+    "url": "https://commons.wikimedia.org/wiki/File:Anthromes_map_and_timeline_(10,000_BCE_to_2017_CE).png",
+    "license": "CC BY 2.0",
+    "kind": "hosted-original",
+    "note": "Long-view reconstruction used in the trend strip. Map face is ~2017."
+  }
+]

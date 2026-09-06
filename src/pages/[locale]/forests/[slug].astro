@@ -1,0 +1,15 @@
+---
+import { forestPanelKeys, isForestPanel } from '../../../data/forests';
+import { otherLocales } from '../../../i18n';
+import ForestsView from '../../../views/ForestsView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) =>
+    forestPanelKeys.map((slug) => ({ params: { locale, slug } })),
+  );
+}
+
+const { slug } = Astro.params;
+---
+
+<ForestsView panel={isForestPanel(slug) ? slug : 'satellite'} />

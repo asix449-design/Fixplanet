@@ -53,7 +53,7 @@ const en = {
       maps: 'A sourced atlas of Earth systems and the political world.',
       law: 'Legal frameworks to protect people and planet.',
       wildlife: 'Species, habitats, and how they changed after we spread.',
-      forests: 'Forest solutions and evidence — gathering soon.',
+      forests: 'Satellite canopy, reconstructions, and sourced forest numbers.',
       book: 'New World — what’s broken, and what we can still fix.',
       about: 'The project and the curator behind Fix Planet.',
     },
@@ -253,13 +253,6 @@ const en = {
       summary:
         'Legal frameworks that protect people and planet will be collected here. This section is not published yet.',
     },
-    forests: {
-      title: 'Forests',
-      metaTitle: 'Forests — Fix Planet',
-      metaDescription: 'Forest solutions and evidence — coming soon.',
-      summary:
-        'Forest solutions and evidence will be gathered here. This section is not published yet.',
-    },
   },
   comingSoon: {
     badge: 'Coming soon',
@@ -341,7 +334,7 @@ const ru: typeof en = {
       maps: 'Атлас с источниками: системы Земли и политический мир.',
       law: 'Правовые рамки для защиты людей и планеты.',
       wildlife: 'Виды, места обитания и то, как они изменились после нашего расселения.',
-      forests: 'Лесные решения и доказательства — скоро.',
+      forests: 'Спутниковая крона, реконструкции и лесные цифры с источниками.',
       book: 'New World — что сломано и что мы ещё можем исправить.',
       about: 'Проект и куратор Fix Planet.',
     },
@@ -544,13 +537,6 @@ const ru: typeof en = {
       summary:
         'Здесь будут собраны правовые рамки, которые защищают людей и планету. Раздел ещё не опубликован.',
     },
-    forests: {
-      title: 'Леса',
-      metaTitle: 'Леса — Fix Planet',
-      metaDescription: 'Лесные решения и доказательства — скоро.',
-      summary:
-        'Здесь будут собраны лесные решения и доказательства. Раздел ещё не опубликован.',
-    },
   },
   comingSoon: {
     badge: 'Скоро',
@@ -632,7 +618,7 @@ const pl: typeof en = {
       maps: 'Atlas ze źródłami: systemy Ziemi i świat polityczny.',
       law: 'Ramy prawne chroniące ludzi i planetę.',
       wildlife: 'Gatunki, siedliska i to, jak zmieniły się po naszym rozprzestrzenieniu.',
-      forests: 'Leśne rozwiązania i dowody — wkrótce.',
+      forests: 'Satelitarna korona, rekonstrukcje i leśne liczby ze źródłami.',
       book: 'New World — co jest zepsute i co wciąż możemy naprawić.',
       about: 'Projekt i kurator Fix Planet.',
     },
@@ -835,13 +821,6 @@ const pl: typeof en = {
       summary:
         'Tutaj zbierzemy ramy prawne chroniące ludzi i planetę. Ta część nie jest jeszcze opublikowana.',
     },
-    forests: {
-      title: 'Lasy',
-      metaTitle: 'Lasy — Fix Planet',
-      metaDescription: 'Leśne rozwiązania i dowody — wkrótce.',
-      summary:
-        'Tutaj zbierzemy leśne rozwiązania i dowody. Ta część nie jest jeszcze opublikowana.',
-    },
   },
   comingSoon: {
     badge: 'Wkrótce',
@@ -923,7 +902,7 @@ const lv: typeof en = {
       maps: 'Atlants ar avotiem: Zemes sistēmas un politiskā pasaule.',
       law: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai.',
       wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc mūsu izplatīšanās.',
-      forests: 'Meža risinājumi un pierādījumi — drīzumā.',
+      forests: 'Satelīta vainags, rekonstrukcijas un meža skaitļi ar avotiem.',
       book: 'New World — kas ir salūzis un ko vēl varam salabot.',
       about: 'Projekts un Fix Planet kurators.',
     },
@@ -1125,13 +1104,6 @@ const lv: typeof en = {
       metaDescription: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai — drīzumā.',
       summary:
         'Šeit tiks savākti tiesiskie ietvari, kas sargā cilvēkus un planētu. Šī sadaļa vēl nav publicēta.',
-    },
-    forests: {
-      title: 'Meži',
-      metaTitle: 'Meži — Fix Planet',
-      metaDescription: 'Meža risinājumi un pierādījumi — drīzumā.',
-      summary:
-        'Šeit tiks savākti meža risinājumi un pierādījumi. Šī sadaļa vēl nav publicēta.',
     },
   },
   comingSoon: {

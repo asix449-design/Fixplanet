@@ -11,6 +11,7 @@ interface Props {
   dataArea?: string;
   dataStatus?: string;
   dataFilter?: string;
+  dataPanel?: string;
 }
 
 const {
@@ -23,6 +24,7 @@ const {
   dataArea,
   dataStatus,
   dataFilter,
+  dataPanel,
 } = Astro.props;
 ---
 
@@ -33,6 +35,7 @@ const {
   {...(dataArea ? { 'data-area': dataArea } : {})}
   {...(dataStatus ? { 'data-status': dataStatus } : {})}
   {...(dataFilter ? { 'data-filter': dataFilter } : {})}
+  {...(dataPanel ? { 'data-panel': dataPanel } : {})}
 >
   <div class="hub-tile-top">
     <div class="hub-icon" aria-hidden="true">

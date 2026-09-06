@@ -1897,7 +1897,8 @@ a.map-card:hover {
 .theme-wildlife .site-footer,
 .theme-wildlife-detail .site-footer,
 .theme-innovations .site-footer,
-.theme-innovations-detail .site-footer {
+.theme-innovations-detail .site-footer,
+.theme-forests .site-footer {
   position: relative;
   z-index: 2;
 }
@@ -2227,6 +2228,297 @@ a.map-card:hover {
 .borders-frame h3 {
   font-size: 1.15rem;
   margin-top: 1.3rem;
+}
+
+/* Forests — canopy / lime-on-black monitoring room */
+.theme-forests {
+  background: #06110a;
+}
+
+.theme-forests .section-backdrop img {
+  object-position: 48% 62%;
+  filter: blur(7px) saturate(1.15) brightness(0.42);
+}
+
+.forests-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 8, 3, 0.72) 0%,
+      rgba(0, 8, 3, 0.48) 20%,
+      rgba(5, 5, 5, 0.78) 52%,
+      rgba(5, 5, 5, 0.93) 76%,
+      rgba(5, 5, 5, 0.97) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 10, 4, 0.28) 0%, transparent 48%);
+}
+
+.theme-forests .site-header {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.theme-forests main {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-forests .section,
+.forests-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.forests-eyebrow {
+  color: var(--lime);
+}
+
+.forests-panel {
+  scroll-margin-top: calc(var(--header-h) + 1.2rem);
+}
+
+.forests-panel h2 {
+  font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+}
+
+.forest-map {
+  margin-top: 1.1rem;
+}
+
+.forest-mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+}
+
+.forest-mode-btn {
+  appearance: none;
+  cursor: pointer;
+  min-height: 2.1rem;
+  padding: 0.32rem 0.85rem;
+  border: 1px solid rgba(192, 255, 0, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--cream);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+.forest-mode-btn.is-active,
+.forest-mode-btn:hover,
+.forest-year.is-active {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--black);
+}
+
+.forest-map-art img {
+  background: #020805;
+}
+
+.forest-map-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.85rem 0 0.7rem;
+}
+
+.forest-slider-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.forest-slider-label strong {
+  color: var(--lime);
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.forest-slider {
+  width: 100%;
+  accent-color: var(--lime);
+  margin: 0 0 0.75rem;
+}
+
+.forest-year-chips {
+  position: static;
+  background: none;
+  padding: 0 0 0.4rem;
+}
+
+.forest-year {
+  appearance: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.forest-frame-copy {
+  margin-top: 1.1rem;
+}
+
+.forest-recon-grid,
+.forest-stat-grid,
+.forest-scenario-grid,
+.forest-works {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.forest-recon-grid {
+  grid-template-columns: 1fr;
+  margin-top: 1.2rem;
+}
+
+.forest-recon-card {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(192, 255, 0, 0.12);
+}
+
+.forest-recon-card:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.forest-recon-card h3,
+.forest-stat h3,
+.forest-scenario h4,
+.forest-works h4 {
+  margin: 0.7rem 0 0.45rem;
+  font-size: 1.15rem;
+}
+
+.forest-stat-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.2rem 0 1.6rem;
+}
+
+.forest-stat,
+.forest-scenario,
+.forest-works article {
+  padding: 1rem 1.05rem 1.1rem;
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.forest-stat-value {
+  margin: 0 0 0.35rem;
+  color: var(--lime);
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.forest-stat-value span {
+  display: inline-block;
+  margin-left: 0.35rem;
+  color: var(--cream);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.forest-distinguish {
+  padding: 1rem 1.15rem 1.15rem;
+  border-left: 4px solid var(--lime);
+  background: rgba(192, 255, 0, 0.06);
+  border-radius: var(--radius-sm);
+}
+
+.forest-scenario-grid,
+.forest-works {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0.8rem 0 1.6rem;
+}
+
+.forest-works {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.forest-strip {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 0.55fr 1fr;
+  gap: 0.35rem;
+  margin: 1.2rem 0 1.4rem;
+  min-height: 4.4rem;
+}
+
+.forest-strip-seg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d8ecd8;
+}
+
+.forest-strip-coarse {
+  background: linear-gradient(90deg, #1a3a22, #2d5a30);
+}
+
+.forest-strip-sat {
+  background: linear-gradient(90deg, #2f6b28, #7cff3a);
+  color: #10200c;
+}
+
+.forest-strip-now {
+  background: var(--lime);
+  color: #10200c;
+}
+
+.forest-strip-paths {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.28rem;
+  padding: 0.4rem 0.2rem;
+}
+
+.forest-path {
+  display: block;
+  height: 6px;
+  border-radius: 99px;
+}
+
+.forest-path-bad {
+  width: 100%;
+  background: #ff4a12;
+}
+
+.forest-path-mid {
+  width: 72%;
+  background: #e8c84a;
+}
+
+.forest-path-good {
+  width: 48%;
+  background: var(--lime);
+}
+
+@media (max-width: 800px) {
+  .forest-stat-grid,
+  .forest-scenario-grid,
+  .forest-works,
+  .forest-strip {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
