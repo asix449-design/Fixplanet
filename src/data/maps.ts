@@ -45,10 +45,10 @@ export type MapEntry = MapMeta & MapCopy;
  * Curated first set. To add a map:
  * 1. Add a row here (English slug, category, year, named source, URLs, preview).
  * 2. Add the same slug to en/ru/pl/lv in `src/i18n/maps.ts`.
- * 3. Drop a licensed preview in `public/images/maps/` or reuse blue-marble-sm.jpg as a schematic.
+ * 3. Drop a licensed preview in `public/images/maps/` (see credits.json). Do not reuse Blue Marble as a stand-in.
  * 4. `npm run build`.
  *
- * Do not invent numbers. Prefer a source link over a fake choropleth.
+ * Do not invent country-level crime or conflict numbers. Prefer a hosted open map or a labeled Fix Planet overview.
  */
 export const mapMeta: MapMeta[] = [
   {
@@ -59,7 +59,7 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'Armed Conflict Location & Event Data Project (ACLED)',
     sourceUrl: 'https://acleddata.com/',
     openMapUrl: 'https://acleddata.com/conflict-watchlist-2025/',
-    preview: 'blue-marble-sm.jpg',
+    preview: 'armed-conflict-events.jpg',
     previewKind: 'schematic',
   },
   {
@@ -70,8 +70,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'Uppsala Conflict Data Program; Our World in Data',
     sourceUrl: 'https://ucdp.uu.se/',
     openMapUrl: 'https://ourworldindata.org/war-and-peace',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'battle-related-deaths.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'language-families',
@@ -81,8 +81,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'Glottolog (Max Planck Institute for Evolutionary Anthropology)',
     sourceUrl: 'https://glottolog.org/',
     openMapUrl: 'https://glottolog.org/glottolog/map',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'language-families.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'world-religions',
@@ -93,8 +93,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.pewresearch.org/religion/',
     openMapUrl:
       'https://www.pewresearch.org/religion/feature/religious-composition-by-country-2010-2050/',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'world-religions.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'homicide-rates',
@@ -104,8 +104,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'United Nations Office on Drugs and Crime; Our World in Data',
     sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
     openMapUrl: 'https://ourworldindata.org/homicides',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'homicide-rates.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'air-quality-pm25',
@@ -115,8 +115,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'World Health Organization; Our World in Data; NASA Earth observations',
     sourceUrl: 'https://www.who.int/data/gho/data/themes/air-pollution',
     openMapUrl: 'https://ourworldindata.org/air-pollution',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'air-quality-pm25.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'co2-emissions',
@@ -126,8 +126,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'Global Carbon Project; Our World in Data',
     sourceUrl: 'https://www.globalcarbonproject.org/',
     openMapUrl: 'https://ourworldindata.org/co2-emissions',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'co2-emissions.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'oil-gas-reserves',
@@ -137,8 +137,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'U.S. Energy Information Administration',
     sourceUrl: 'https://www.eia.gov/international/overview/world.php',
     openMapUrl: 'https://www.eia.gov/international/data/world',
-    preview: 'blue-marble-sm.jpg',
-    previewKind: 'schematic',
+    preview: 'oil-gas-reserves.jpg',
+    previewKind: 'photo',
   },
   {
     slug: 'mineral-resources',
@@ -148,7 +148,7 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'U.S. Geological Survey, Mineral Resources Program',
     sourceUrl: 'https://www.usgs.gov/programs/mineral-resources-program',
     openMapUrl: 'https://mrdata.usgs.gov/',
-    preview: 'blue-marble-sm.jpg',
+    preview: 'mineral-resources.jpg',
     previewKind: 'schematic',
   },
   {
@@ -159,7 +159,7 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'Natural Earth',
     sourceUrl: 'https://www.naturalearthdata.com/',
     openMapUrl: 'https://www.naturalearthdata.com/downloads/',
-    preview: 'world-countries.svg',
+    preview: 'world-countries.jpg',
     previewKind: 'outline',
   },
   {
@@ -170,8 +170,8 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'Hansen / University of Maryland; Global Forest Watch; NASA',
     sourceUrl: 'https://www.globalforestwatch.org/',
     openMapUrl: 'https://www.globalforestwatch.org/map/',
-    preview: 'blue-marble.jpg',
-    previewKind: 'photo',
+    preview: 'forest-cover-loss.jpg',
+    previewKind: 'schematic',
   },
   {
     slug: 'protected-areas',
@@ -181,7 +181,7 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'UNEP-WCMC and IUCN, World Database on Protected Areas (Protected Planet)',
     sourceUrl: 'https://www.protectedplanet.net/',
     openMapUrl: 'https://www.protectedplanet.net/en',
-    preview: 'blue-marble.jpg',
+    preview: 'protected-areas.jpg',
     previewKind: 'photo',
   },
   {
@@ -192,7 +192,7 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'World Resources Institute, Aqueduct Water Risk Atlas',
     sourceUrl: 'https://www.wri.org/aqueduct',
     openMapUrl: 'https://www.wri.org/applications/aqueduct/water-risk-atlas/',
-    preview: 'blue-marble-sm.jpg',
+    preview: 'water-stress.jpg',
     previewKind: 'schematic',
   },
   {
@@ -203,7 +203,7 @@ export const mapMeta: MapMeta[] = [
     sourceOrg: 'NASA SEDAC Gridded Population of the World; WorldPop; UN WPP',
     sourceUrl: 'https://sedac.ciesin.columbia.edu/data/collection/gpw-v4',
     openMapUrl: 'https://sedac.ciesin.columbia.edu/mapping/popest/sedac-maps/',
-    preview: 'earth-at-night.jpg',
+    preview: 'population-density.jpg',
     previewKind: 'photo',
   },
   {

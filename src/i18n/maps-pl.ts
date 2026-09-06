@@ -12,7 +12,8 @@ export const pl: Record<string, MapCopy> = {
       'Pokrycie zależy od lokalnych relacji, języka i dostępu. Niektóre wojny są niedoszacowane; niektóre protesty widać mocniej. ACLED nie rozstrzyga, która strona jest legalna. Pinezka to nie spis wszystkich zgonów.',
     licenseNote:
       'Dane ACLED można używać z przypisaniem według ich warunków; nie hostujemy ich bazy zdarzeń. Otwórz ich mapę. Nie zgrywaj i nie publikuj ich pełnego strumienia z tej strony.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy zarejestrowanych zdarzeń przemocy politycznej',
+    imageAlt:
+      'Ciemna mapa świata z czerwonymi i pomarańczowymi punktami w znanych regionach raportowania konfliktów, opisana jako przegląd Fix Planet',
   },
   'battle-related-deaths': {
     title: 'Zgony związane z walką',
@@ -25,7 +26,8 @@ export const pl: Record<string, MapCopy> = {
       'Definicje pomijają wiele szkód cywilnych (przesiedlenia, głód, choroby). Wczesne lata i zamknięte środowiska są niepewne. Liczby się rewiduje. To nie mapa tego, kto wojnę zaczął.',
     licenseNote:
       'UCDP zezwala na użytek niekomercyjny z cytatem. Wykresy OWID zwykle są CC BY. Linkujemy zamiast przerysowywać ich choropleth.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy zgonów związanych z walką',
+    imageAlt:
+      'Mapa Our World in Data zgonów w konfliktach zbrojnych: blady ląd, Ukraina oraz kilka krajów Afryki i Azji na pomarańczowo i czerwono',
   },
   'language-families': {
     title: 'Rodziny językowe świata',
@@ -38,7 +40,8 @@ export const pl: Record<string, MapCopy> = {
       'Mapy etnolingwistyczne są sporne. Granice kolonialne, przymusowa asymilacja i samoidentyfikacja przecinają drzewa języków. To szkic naukowy wspólnot mowy, nigdy twierdzenie o krwi, lojalności czy terytorium.',
     licenseNote:
       'Treści Glottolog zwykle są CC BY. Interaktywna mapa jest ich — otwórz ją. Komercyjnego atlasu Ethnologue nie hostujemy.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla naukowej mapy rodzin językowych',
+    imageAlt:
+      'Kolorowa mapa świata rodzin językowych: turkusowy indoeuropejski, pomarańczowy afroazjatycki, zielony nigero-kongijski, magenta chińsko-tybetański, bordowy austronezyjski',
   },
   'world-religions': {
     title: 'Skład religijny według krajów',
@@ -51,7 +54,8 @@ export const pl: Record<string, MapCopy> = {
       'Mapy religii są politycznie wrażliwe. Państwa czasem karzą albo zawyżają przynależność. Ankiety gospodarstw pomijają ukrytą praktykę. Nie czytaj tego jako rankingu cnoty ani prognozy konfliktu. Kartografii Pew nie hostujemy.',
     licenseNote:
       'Pew zezwala cytować ustalenia z linkiem. Ich mapy i grafiki zostają ich. Otwórz źródłowe opracowanie zamiast kopiować szatę.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy szacunków przynależności religijnej',
+    imageAlt:
+      'Kolorowa mapa regionów większości religijnej: fiolet chrześcijański, zieleń islamu, pomarańcz hinduizmu, żółć buddyzmu, szarość niezwiązanych',
   },
   'homicide-rates': {
     title: 'Wskaźniki umyślnych zabójstw',
@@ -64,7 +68,8 @@ export const pl: Record<string, MapCopy> = {
       'Niedorejestrowanie, definicje prawne i braki lat różnią się. Zgony w konflikcie to inny szereg (zob. UCDP). Nie układaj listy „najgroźniejszych krajów” z miniaturki. Nie rysujemy tu nieźródłowego choroplethu.',
     licenseNote:
       'Produkty statystyczne UNODC zwykle można używać z przypisaniem. Wykresy OWID zwykle są CC BY. Otwórz ich mapę, żeby zobaczyć aktualną warstwę.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy wskaźników zabójstw',
+    imageAlt:
+      'Choropleth Our World in Data wskaźników zabójstw: żółto-pomarańczowy ląd, ciemniejsza czerwień w części Ameryki Łacińskiej i południowej Afryki',
   },
   'air-quality-pm25': {
     title: 'Zanieczyszczenie pyłem PM2.5',
@@ -77,7 +82,8 @@ export const pl: Record<string, MapCopy> = {
       'Mieszanki satelita–model wygładzają lokalne szczyty. Stacje naziemne są nierówne. Burze pyłowe i sezony pożarów dają krótkie skoki. Nie wymyślamy tu rankingu krajów.',
     licenseNote:
       'Obrazy NASA są w domenie publicznej. Materiały WHO i OWID można cytować; OWID zwykle CC BY. Interaktywną warstwę otwórz na mapie OWID o zanieczyszczeniu powietrza.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy zanieczyszczenia PM2.5',
+    imageAlt:
+      'Choropleth Our World in Data PM2.5: blade kraje i ciemnobrązowy pas przez Afrykę Północną, Bliski Wschód oraz Azję Południową i Wschodnią',
   },
   'co2-emissions': {
     title: 'Terytorialne emisje CO₂',
@@ -90,7 +96,8 @@ export const pl: Record<string, MapCopy> = {
       'Inwentarze terytorialne nie widzą emisji wbudowanych w import. Skoki rok do roku mogą być metodyką albo recesją, nie cnotą. To nie mapa miejskiego smogu.',
     licenseNote:
       'Dane GCP publikuje się do ponownego użytku z cytatem. Wykresy OWID zwykle są CC BY. Linkujemy do ich mapy emisji zamiast ją przerysowywać.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy terytorialnych emisji CO₂',
+    imageAlt:
+      'Choropleth Our World in Data terytorialnego CO₂: Chiny i Stany Zjednoczone najciemniejszą czerwienią, inne duże gospodarki średnią',
   },
   'oil-gas-reserves': {
     title: 'Ropa i gaz na świecie',
@@ -103,7 +110,8 @@ export const pl: Record<string, MapCopy> = {
       'Krajowe raporty rezerw bywają polityczne. Liczby EIA i tak należą do najczytelniejszych publicznych szeregów. Nie wypisujemy tu baryłek pole po polu.',
     licenseNote:
       'Prace EIA i USGS rządu USA są zwykle w domenie publicznej. Aktualne mapy i tabele są na międzynarodowych stronach EIA.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla geografii ropy i gazu',
+    imageAlt:
+      'Mapa EIA ocenionych basenów gazu łupkowego: białe i szare kraje z bordowymi i żółtymi wielokątami basenów',
   },
   'mineral-resources': {
     title: 'Złoża i surowce mineralne',
@@ -116,7 +124,8 @@ export const pl: Record<string, MapCopy> = {
       'Kompletność różni się krajem i tajemnicą. Puste miejsce może znaczyć brak zdjęcia, nie brak skały. Szkody wydobycia nie siedzą w warstwie geologii.',
     licenseNote:
       'Informacje USGS są zwykle w domenie publicznej. Otwórz MRDATA i podsumowania zamiast kopiować płatne atlasy branżowe.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla mapy zasobów mineralnych USGS',
+    imageAlt:
+      'Beżowa mapa świata z kolorowymi punktami znanych okręgów mineralnych: złoto, miedź, żelazo, lit i ziemie rzadkie',
   },
   'world-countries': {
     title: 'Państwa i granice świata',
@@ -129,7 +138,7 @@ export const pl: Record<string, MapCopy> = {
       'Granice się przesuwają, nazwy zmieniają, niektóre linie są gwałtownie sporne. Natural Earth dokumentuje wybory spornych granic. Pusta mapa polityczna i tak jest aktem politycznym.',
     licenseNote:
       'Natural Earth jest w domenie publicznej. SVG podglądu to publicznie dostępna BlankMap-World z Wikimedia, podobny małoskalowy kontur państw.',
-    imageAlt: 'Konturowa mapa państw świata w domenie publicznej, bez etykiet',
+    imageAlt: 'Konturowa mapa państw świata w domenie publicznej, kremowy ląd na błękicie, bez etykiet',
   },
   'forest-cover-loss': {
     title: 'Utrata pokrywy drzewnej',
@@ -142,7 +151,8 @@ export const pl: Record<string, MapCopy> = {
       'Pokrywa drzewna ≠ las pierwotny. Część utraty to legalny wyrąb. Część „nienaruszonego” lasu jest już zdegradowana. GFW dokumentuje definicje. Hostujemy fizyczny podgląd Ziemi, nie przekolorowany zestaw kafelków Hansena.',
     licenseNote:
       'Dane Hansen / GFW zwykle są dostępne na CC BY 4.0 z cytatem. Interaktywną warstwę utraty otwórz na mapie GFW.',
-    imageAlt: 'NASA Blue Marble jako fizyczny podgląd mapy utraty pokrywy drzewnej',
+    imageAlt:
+      'Ciemnozielona mapa świata z magenta plamami znanych frontów utraty pokrywy drzewnej w Amazonii, Kongu, Azji Południowo-Wschodniej i pasach borealnych',
   },
   'protected-areas': {
     title: 'Obszary chronione',
@@ -155,7 +165,8 @@ export const pl: Record<string, MapCopy> = {
       'Sprawozdawczość się spóźnia. Jedne kraje wpisują prawie wszystko, inne mało. Polowania, drogi i kopalnie bywają wewnątrz linii. Warstwy uzupełniające (OECM, ziemie rdzenne) są niekompletne.',
     licenseNote:
       'WDPA ma własne warunki: można oglądać i cytować; pełna redystrybucja bazy jest ograniczona. Linkujemy do Protected Planet zamiast wysyłać ich wielokąty.',
-    imageAlt: 'NASA Blue Marble jako fizyczny podgląd geografii obszarów chronionych',
+    imageAlt:
+      'Zielony choropleth Our World in Data udziału lądu każdego kraju zgłoszonego jako chroniony',
   },
   'water-stress': {
     title: 'Stres wodny',
@@ -168,7 +179,8 @@ export const pl: Record<string, MapCopy> = {
       'Modele wygładzają lokalne prawa, nielegalne studnie i sezony. Polityczna kontrola rzek nie sprowadza się do hydrologii. Czerwona zlewnia to nie proroctwo wojny.',
     licenseNote:
       'Dane Aqueduct zwykle są CC BY z przypisaniem WRI. Interaktywne zlewnie są w Water Risk Atlas.',
-    imageAlt: 'Schematyczny podgląd Ziemi dla atlasu stresu wodnego',
+    imageAlt:
+      'Mapa świata od turkusowych regionów zasobnych w wodę do czerwonych suchych pasów Afryki Północnej, Bliskiego Wschodu i innych suchych ziem',
   },
   'population-density': {
     title: 'Gęstość zaludnienia',
@@ -181,7 +193,8 @@ export const pl: Record<string, MapCopy> = {
       'Spisy są nierówne i bywają stare. Strefy konfliktu i osiedla nieformalne trudno policzyć. Siatka to szacunek. Podgląd to nocne światła NASA: elektryfikowane osadnictwo, nie sama ludność.',
     licenseNote:
       'SEDAC GPW ma warunki użytku akademickiego; WorldPop zwykle CC BY. Obrazy nocnych świateł NASA są w domenie publicznej. Siatkę ludności otwórz w przeglądarce SEDAC.',
-    imageAlt: 'Mozaika NASA Ziemi w nocy jako podgląd geografii ludności',
+    imageAlt:
+      'Brązowy choropleth gęstości zaludnienia według krajów i wybranych regionów, najciemniejszy w Azji Południowej i Wschodniej oraz części Europy',
   },
   'earth-at-night': {
     title: 'Ziemia w nocy',

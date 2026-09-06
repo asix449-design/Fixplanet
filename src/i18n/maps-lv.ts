@@ -12,7 +12,8 @@ export const lv: Record<string, MapCopy> = {
       'Pārklājums atkarīgs no vietējām ziņām, valodas un piekļuves. Daži kari ir par maz saskaitīti; daži protesti ir pārāk redzami. ACLED neizlemj, kura puse ir likumīga. Piespraude nav visu nāvju skaitīšana.',
     licenseNote:
       'ACLED datus var lietot ar atsauci pēc viņu noteikumiem; mēs neuzturam viņu notikumu datubāzi. Atver viņu karti. Nenokasiet un nepārpublicējiet viņu pilno plūsmu no šīs vietnes.',
-    imageAlt: 'Shematisks Zemes priekšskats kartei par reģistrētiem politiskās vardarbības notikumiem',
+    imageAlt:
+      'Tumša pasaules karte ar sarkaniem un oranžiem punktiem zināmos konfliktu ziņošanas reģionos, marķēta kā Fix Planet pārskats',
   },
   'battle-related-deaths': {
     title: 'Kaujās bojāgājušie',
@@ -25,7 +26,8 @@ export const lv: Record<string, MapCopy> = {
       'Definīcijas izlaiž daudz civilā kaitējuma (pārvietošana, bads, slimības). Agrīnie gadi un slēgtas vides ir nenoteiktas. Skaitļus pārskata. Šī nav karte par to, kurš karu sāka.',
     licenseNote:
       'UCDP ļauj nekomerciālu lietojumu ar citātu. OWID grafiki parasti ir CC BY. Mēs dodam saiti, nevis pārzīmējam viņu horoplētu.',
-    imageAlt: 'Shematisks Zemes priekšskats kartei par kaujās bojāgājušajiem',
+    imageAlt:
+      'Our World in Data karte par nāvēm bruņotos konfliktos: bāla zeme, Ukraina un vairākas Āfrikas un Āzijas valstis oranžā un sarkanā',
   },
   'language-families': {
     title: 'Pasaules valodu saimes',
@@ -38,7 +40,8 @@ export const lv: Record<string, MapCopy> = {
       'Etnolingvistiskās kartes ir strīdīgas. Koloniālās robežas, piespiedu asimilācija un pašidentifikācija šķērso valodu kokus. Šis ir zinātnisks runas kopienu uzmetums, nekad apgalvojums par asinīm, lojalitāti vai teritoriju.',
     licenseNote:
       'Glottolog saturs parasti ir CC BY. Interaktīvā karte ir viņu — atver to. Ethnologue komerciālo atlantu mēs neizvietojam.',
-    imageAlt: 'Shematisks Zemes priekšskats zinātniskai valodu saišu kartei',
+    imageAlt:
+      'Krāsaina pasaules karte ar valodu saimēm: zilganzaļš indoeiropiešu, oranžs afroaziātu, zaļš nigēriešu-kongo, magenta sinotibetiešu, bordo austronēziešu',
   },
   'world-religions': {
     title: 'Reliģiskais sastāvs pa valstīm',
@@ -51,7 +54,8 @@ export const lv: Record<string, MapCopy> = {
       'Reliģiju kartes ir politiski jutīgas. Valstis dažkārt soda vai uzpūš piederību. Mājsaimniecību aptaujas palaid garām slēptu praksi. Nelasi to kā tikuma rangu vai konflikta prognozi. Pew kartogrāfiju mēs neizvietojam.',
     licenseNote:
       'Pew ļauj citēt secinājumus ar saiti. Viņu kartes un grafika paliek viņu. Atver avota pārskatu, nevis kopē noformējumu.',
-    imageAlt: 'Shematisks Zemes priekšskats reliģiskās piederības aplēšu kartei',
+    imageAlt:
+      'Krāsaina karte ar vairākuma reliģiju reģioniem: violets kristietība, zaļš islāms, oranžs hinduisms, dzeltens budisms, pelēks nepiesaistītie',
   },
   'homicide-rates': {
     title: 'Tīšu slepkavību rādītāji',
@@ -64,7 +68,8 @@ export const lv: Record<string, MapCopy> = {
       'Nepietiekama reģistrācija, juridiskās definīcijas un iztrūkstoši gadi atšķiras. Konflikta nāves ir cita rinda (sk. UCDP). Nesastādi „bīstamāko valstu” sarakstu no sīktēla. Šeit nezīmējam avotiem neatbilstošu horoplētu.',
     licenseNote:
       'UNODC statistikas produktus parasti var lietot ar atsauci. OWID grafiki parasti ir CC BY. Atver viņu karti aktuālajam slānim.',
-    imageAlt: 'Shematisks Zemes priekšskats slepkavību rādītāju kartei',
+    imageAlt:
+      'Our World in Data horoplēts par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
   },
   'air-quality-pm25': {
     title: 'Sīko daļiņu gaisa piesārņojums (PM2.5)',
@@ -77,7 +82,8 @@ export const lv: Record<string, MapCopy> = {
       'Satelīta–modeļa maisījumi nogludina vietējos maksimumus. Zemestrādes stacijas ir nevienmērīgas. Putekļu vētras un ugunssezonas dod īsus lēcienus. Šajā lapā valstu rangu neizdomājam.',
     licenseNote:
       'NASA attēli ir sabiedriskais īpašums. PVO un OWID materiālus var citēt; OWID parasti CC BY. Interaktīvo slāni atver OWID gaisa piesārņojuma kartē.',
-    imageAlt: 'Shematisks Zemes priekšskats PM2.5 gaisa piesārņojuma kartei',
+    imageAlt:
+      'Our World in Data horoplēts par PM2.5: bālas valstis un tumši brūna josla pāri Ziemeļāfrikai, Tuvajiem Austrumiem, Dienvid- un Austrumāzijai',
   },
   'co2-emissions': {
     title: 'Teritoriālās CO₂ emisijas',
@@ -90,7 +96,8 @@ export const lv: Record<string, MapCopy> = {
       'Teritoriālie inventāri neredz importā iegultās emisijas. Gada lēcieni var būt metodika vai recesija, ne tikums. Šī nav pilsētas smoga karte.',
     licenseNote:
       'GCP datus publicē atkārtotai lietošanai ar atsauci. OWID grafiki parasti ir CC BY. Mēs saistām uz viņu emisiju karti, nevis to pārzīmējam.',
-    imageAlt: 'Shematisks Zemes priekšskats teritoriālo CO₂ emisiju kartei',
+    imageAlt:
+      'Our World in Data horoplēts par teritoriālo CO₂: Ķīna un ASV tumšākajā sarkanajā, citas lielās ekonomikas vidēji sarkanā',
   },
   'oil-gas-reserves': {
     title: 'Nafta un gāze pasaulē',
@@ -103,7 +110,8 @@ export const lv: Record<string, MapCopy> = {
       'Nacionālie rezervju ziņojumi var būt politiski. EIA skaitļi tomēr ir starp caurspīdīgākajām atklātajām rindām. Šeit lauku pa laukam barelus neuzskaitām.',
     licenseNote:
       'EIA un USGS ASV valdības darbi parasti ir sabiedriskais īpašums. Aktuālās kartes un tabulas ir EIA starptautiskajās lapās.',
-    imageAlt: 'Shematisks Zemes priekšskats naftas un gāzes ģeogrāfijai',
+    imageAlt:
+      'EIA karte ar novērtētiem slānekļa gāzes baseiniem: baltas un pelēkas valstis ar bordo un dzelteniem baseinu daudzstūriem',
   },
   'mineral-resources': {
     title: 'Derīgo izrakteņu atradnes',
@@ -116,7 +124,8 @@ export const lv: Record<string, MapCopy> = {
       'Pilnība atšķiras pa valstīm un slepenību. Tukšs laukums var nozīmēt „nav uzņēmuma”, ne „nav ieža”. Ieguves kaitējums ģeoloģijas slānī nav redzams.',
     licenseNote:
       'USGS informācija parasti ir sabiedriskais īpašums. Atver MRDATA un kopsavilkumus, nevis kopē maksas nozares atlantus.',
-    imageAlt: 'Shematisks Zemes priekšskats USGS minerālresursu kartei',
+    imageAlt:
+      'Bēša pasaules karte ar krāsainiem punktiem zināmos minerālu rajonos: zelts, varš, dzelzs, litijs un retzemju elementi',
   },
   'world-countries': {
     title: 'Pasaules valstis un robežas',
@@ -129,7 +138,7 @@ export const lv: Record<string, MapCopy> = {
       'Robežas pārvietojas, vārdi mainās, dažas līnijas ir vardarbīgi strīdīgas. Natural Earth dokumentē strīdīgo robežu izvēli. Tukša politiskā karte joprojām ir politisks akts.',
     licenseNote:
       'Natural Earth ir sabiedriskais īpašums. Priekšskata SVG ir Wikimedia sabiedriskā īpašuma BlankMap-World, līdzīgs sīkmēroga valstu kontūrs.',
-    imageAlt: 'Sabiedriskā īpašuma kontūrkarte ar pasaules valstīm, bez uzrakstiem',
+    imageAlt: 'Sabiedriskā īpašuma kontūrkarte ar pasaules valstīm, krēmīga zeme uz gaiši zila, bez uzrakstiem',
   },
   'forest-cover-loss': {
     title: 'Koku seguma zudums',
@@ -142,7 +151,8 @@ export const lv: Record<string, MapCopy> = {
       'Koku segums ≠ primārais mežs. Daļa zuduma ir likumīga cirte. Daļa neskarta meža jau ir degradēta. GFW dokumentē definīcijas. Mēs rādām fizisku Zemes priekšskatu, ne pārkrāsotu Hansena flīžu kopu.',
     licenseNote:
       'Hansen / GFW dati parasti pieejami ar CC BY 4.0 un atsauci. Interaktīvo zuduma slāni atver GFW kartē.',
-    imageAlt: 'NASA Blue Marble kā fizisks priekšskats koku seguma zuduma kartei',
+    imageAlt:
+      'Tumši zaļa pasaules karte ar magenta plankumiem zināmos koku seguma zuduma frontēs Amazones, Kongo, Dienvidaustrumāzijas un boreālajās joslās',
   },
   'protected-areas': {
     title: 'Aizsargājamās teritorijas',
@@ -155,7 +165,8 @@ export const lv: Record<string, MapCopy> = {
       'Ziņošana atpaliek. Dažas valstis ieraksta gandrīz visu, citas — maz. Medības, ceļi un ieguve notiek arī līniju iekšpusē. Papildu slāņi (OECM, pirmiedzīvotāju zemes) ir nepilnīgi.',
     licenseNote:
       'WDPA ir īpaši noteikumi: var skatīt un citēt; pilnīga datubāzes izplatīšana ir ierobežota. Mēs saistām uz Protected Planet, nevis sūtām viņu daudzstūrus.',
-    imageAlt: 'NASA Blue Marble kā fizisks priekšskats aizsargājamo teritoriju ģeogrāfijai',
+    imageAlt:
+      'Our World in Data zaļš horoplēts par katras valsts zemes daļu, kas ziņota kā aizsargājama',
   },
   'water-stress': {
     title: 'Ūdens stress',
@@ -168,7 +179,8 @@ export const lv: Record<string, MapCopy> = {
       'Modeļi nogludina vietējās tiesības, nelegālās akas un sezonu pulsāciju. Upju politiskā kontrole nav tikai hidroloģija. Sarkans baseins nav kara pravietojums.',
     licenseNote:
       'Aqueduct dati parasti ir CC BY ar atsauci uz WRI. Interaktīvos baseinus atver Water Risk Atlas.',
-    imageAlt: 'Shematisks Zemes priekšskats ūdens stresa atlantam',
+    imageAlt:
+      'Pasaules karte no tirkīza ūdeņiem bagātiem reģioniem līdz sarkanām sausuma joslām Ziemeļāfrikā, Tuvajos Austrumos un citās sausajās zemēs',
   },
   'population-density': {
     title: 'Iedzīvotāju blīvums',
@@ -181,7 +193,8 @@ export const lv: Record<string, MapCopy> = {
       'Tautas skaitīšanas ir nevienmērīgas un dažkārt vecas. Konfliktu zonas un neformālās apmetnes ir grūti saskaitīt. Režģis ir aplēse. Priekšskats ir NASA nakts gaismas: elektrificēta apdzīvotība, ne paši iedzīvotāji.',
     licenseNote:
       'SEDAC GPW ir akadēmiskas lietošanas noteikumi; WorldPop parasti CC BY. NASA nakts gaismu attēli ir sabiedriskais īpašums. Iedzīvotāju režģi atver SEDAC kartes skatītājā.',
-    imageAlt: 'NASA Zemes naktī mozaīka kā iedzīvotāju ģeogrāfijas priekšskats',
+    imageAlt:
+      'Brūns horoplēts par iedzīvotāju blīvumu pēc valstīm un izraudzītiem reģioniem, tumšākais Dienvid- un Austrumāzijā un daļā Eiropas',
   },
   'earth-at-night': {
     title: 'Zeme naktī',
