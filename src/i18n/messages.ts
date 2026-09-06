@@ -37,17 +37,23 @@ const en = {
     about: 'About',
   },
   home: {
-    heroAria: 'Introduction',
-    heroTitle: 'Problems. Fixes. Proof.',
-    heroLead:
-      'A living atlas of technologies that repair the planet — clear problems, working solutions, real evidence.',
+    heroAria: 'Site sections',
+    choosePath: 'Choose a path',
     heroAlt: 'Solarpunk green city of vertical forests in a mountain valley, with a river, launch beam, and a large planet in the sky',
-    browseSolutions: 'Browse solutions',
-    readBook: 'Read the book',
     latest: 'Latest solutions',
     latestHeading: 'Real solutions. Measurable impact.',
     viewAll: 'View all solutions →',
     featuresAria: 'What Fix Planet covers',
+    tiles: {
+      solutions: 'Proven technologies with real-world impact.',
+      innovations: 'Labs and pilots aimed at planetary-scale problems.',
+      maps: 'A sourced atlas of Earth systems and the political world.',
+      law: 'Legal frameworks to protect people and planet.',
+      wildlife: 'Species, habitats, and how they changed after we spread.',
+      forests: 'Forest solutions and evidence — gathering soon.',
+      book: 'New World — what’s broken, and what we can still fix.',
+      about: 'The project and the curator behind Fix Planet.',
+    },
   },
   features: {
     solutions: {
@@ -286,17 +292,23 @@ const ru: typeof en = {
     about: 'О проекте',
   },
   home: {
-    heroAria: 'Введение',
-    heroTitle: 'Проблемы. Решения. Доказательства.',
-    heroLead:
-      'Живой атлас технологий, которые восстанавливают планету, — ясные проблемы, работающие решения, реальные доказательства.',
+    heroAria: 'Разделы сайта',
+    choosePath: 'Выберите направление',
     heroAlt: 'Соларпанк-город вертикальных лесов в горной долине: река, луч старта и большая планета в небе',
-    browseSolutions: 'Смотреть решения',
-    readBook: 'Читать книгу',
     latest: 'Новые решения',
     latestHeading: 'Реальные решения. Измеримый результат.',
     viewAll: 'Все решения →',
     featuresAria: 'О чём Fix Planet',
+    tiles: {
+      solutions: 'Проверенные технологии с реальным эффектом.',
+      innovations: 'Лаборатории и пилоты для планетарных проблем.',
+      maps: 'Атлас с источниками: системы Земли и политический мир.',
+      law: 'Правовые рамки для защиты людей и планеты.',
+      wildlife: 'Виды, места обитания и то, как они изменились после нашего расселения.',
+      forests: 'Лесные решения и доказательства — скоро.',
+      book: 'New World — что сломано и что мы ещё можем исправить.',
+      about: 'Проект и куратор Fix Planet.',
+    },
   },
   features: {
     solutions: {
@@ -538,17 +550,23 @@ const pl: typeof en = {
     about: 'O projekcie',
   },
   home: {
-    heroAria: 'Wprowadzenie',
-    heroTitle: 'Problemy. Rozwiązania. Dowody.',
-    heroLead:
-      'Żywy atlas technologii, które naprawiają planetę — jasne problemy, działające rozwiązania, realne dowody.',
+    heroAria: 'Działy serwisu',
+    choosePath: 'Wybierz ścieżkę',
     heroAlt: 'Solarpunkowe zielone miasto pionowych lasów w górskiej dolinie: rzeka, promień startu i wielka planeta na niebie',
-    browseSolutions: 'Przeglądaj rozwiązania',
-    readBook: 'Czytaj książkę',
     latest: 'Najnowsze rozwiązania',
     latestHeading: 'Realne rozwiązania. Mierzalny efekt.',
     viewAll: 'Wszystkie rozwiązania →',
     featuresAria: 'Co obejmuje Fix Planet',
+    tiles: {
+      solutions: 'Sprawdzone technologie z realnym skutkiem.',
+      innovations: 'Laboratoria i pilotaże wobec problemów planetarnych.',
+      maps: 'Atlas ze źródłami: systemy Ziemi i świat polityczny.',
+      law: 'Ramy prawne chroniące ludzi i planetę.',
+      wildlife: 'Gatunki, siedliska i to, jak zmieniły się po naszym rozprzestrzenieniu.',
+      forests: 'Leśne rozwiązania i dowody — wkrótce.',
+      book: 'New World — co jest zepsute i co wciąż możemy naprawić.',
+      about: 'Projekt i kurator Fix Planet.',
+    },
   },
   features: {
     solutions: {
@@ -790,17 +808,23 @@ const lv: typeof en = {
     about: 'Par projektu',
   },
   home: {
-    heroAria: 'Ievads',
-    heroTitle: 'Problēmas. Risinājumi. Pierādījumi.',
-    heroLead:
-      'Dzīvais atlants tehnoloģijām, kas labo planētu, — skaidras problēmas, risinājumi, kas darbojas, īsti pierādījumi.',
+    heroAria: 'Vietnes sadaļas',
+    choosePath: 'Izvēlies ceļu',
     heroAlt: 'Solarpanka zaļā pilsēta ar vertikāliem mežiem kalnu ielejā: upe, starta stars un liela planēta debesīs',
-    browseSolutions: 'Skatīt risinājumus',
-    readBook: 'Lasīt grāmatu',
     latest: 'Jaunākie risinājumi',
     latestHeading: 'Īsti risinājumi. Izmērāms efekts.',
     viewAll: 'Visi risinājumi →',
     featuresAria: 'Ko aptver Fix Planet',
+    tiles: {
+      solutions: 'Pārbaudītas tehnoloģijas ar reālu ietekmi.',
+      innovations: 'Laboratorijas un izmēģinājumi pret planētas mēroga problēmām.',
+      maps: 'Atlants ar avotiem: Zemes sistēmas un politiskā pasaule.',
+      law: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai.',
+      wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc mūsu izplatīšanās.',
+      forests: 'Meža risinājumi un pierādījumi — drīzumā.',
+      book: 'New World — kas ir salūzis un ko vēl varam salabot.',
+      about: 'Projekts un Fix Planet kurators.',
+    },
   },
   features: {
     solutions: {
