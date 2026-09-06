@@ -1,0 +1,95 @@
+---
+import MapCard from '../components/MapCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { mapPreviewSrc, type MapEntry } from '../data/maps';
+import { getMapsPage, getRelatedMaps, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  map: MapEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMapsPage(locale);
+const { map } = Astro.props;
+const related = getRelatedMaps(locale, map.slug);
+const preview = mapPreviewSrc(map.preview);
+const title = `${map.title} — Fix Planet`;
+---
+
+<BaseLayout title={title} description={map.hook} image={preview}>
+  <header class="maps-hero maps-hero-detail" aria-labelledby="map-detail-heading">
+    <div class="maps-hero-media" aria-hidden="true">
+      <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
+    </div>
+    <div class="maps-hero-shade"></div>
+    <div class="wrap maps-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/maps', locale)}>{page.back}</a>
+      </p>
+      <div class="eyebrow maps-eyebrow">{page.categories[map.category]}</div>
+      <h1 id="map-detail-heading">{map.title}</h1>
+      <p>{map.hook}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap map-detail">
+      <figure class="map-detail-art">
+        <img src={preview} alt={map.imageAlt} width="1600" height="800" />
+        {
+          map.previewKind === 'schematic' ? (
+            <figcaption>{page.schematicNote}</figcaption>
+          ) : (
+            <figcaption>
+              {map.sourceOrg}. {map.year}.
+            </figcaption>
+          )
+        }
+        <a
+          class="btn btn-primary map-open-source"
+          href={map.openMapUrl}
+          rel="noopener noreferrer"
+        >
+          {page.openSource}
+        </a>
+      </figure>
+      <div class="prose wildlife-prose">
+        <div class="meta-row">
+          <span class="pill">{page.categories[map.category]}</span>
+          <span class="pill">{map.year}</span>
+          <span class="pill">{map.sourceShort}</span>
+        </div>
+        <p>{map.description}</p>
+        <h2>{page.sourceLabel}</h2>
+        <p class="wildlife-sources">
+          <strong>{map.sourceOrg}</strong>
+          <br />
+          {page.yearLabel}: {map.year}
+          <br />
+          <a href={map.sourceUrl} rel="noopener noreferrer">{map.sourceUrl}</a>
+        </p>
+        <h2>{page.licenseLabel}</h2>
+        <p>{map.licenseNote}</p>
+        <h2>{page.howToRead}</h2>
+        <p>{map.howToRead}</p>
+        <h2>{page.caveats}</h2>
+        <p>{map.caveats}</p>
+      </div>
+    </div>
+  </section>
+
+  {
+    related.length > 0 ? (
+      <section class="section section-cream" aria-labelledby="related-maps">
+        <div class="wrap">
+          <h2 id="related-maps">{page.related}</h2>
+          <div class="card-grid cols-3">
+            {related.map((item) => (
+              <MapCard map={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+    ) : null
+  }
+</BaseLayout>

@@ -1,5 +1,9 @@
 ---
-import ComingSoonView from '../views/ComingSoonView.astro';
+import { isMapCategory } from '../data/maps';
+import MapsView from '../views/MapsView.astro';
+
+const categoryParam = Astro.url.searchParams.get('category');
+const category = isMapCategory(categoryParam ?? undefined) ? categoryParam : 'all';
 ---
 
-<ComingSoonView section="maps" />
+<MapsView category={category} />

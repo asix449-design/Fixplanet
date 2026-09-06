@@ -20,3 +20,11 @@ export {
   getWildlifeByStatus,
   getWildlifeSpecies,
 } from './wildlife';
+export {
+  getMapBySlug,
+  getMaps,
+  getMapsByCategory,
+  getMapsPage,
+  getRelatedMaps,
+  mapCategoryKeys,
+} from './maps';

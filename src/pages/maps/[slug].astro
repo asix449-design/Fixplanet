@@ -1,0 +1,25 @@
+---
+import { isMapCategory, mapCategoryKeys, mapMeta } from '../../data/maps';
+import { getMapBySlug, resolveLocale } from '../../i18n';
+import MapDetailView from '../../views/MapDetailView.astro';
+import MapsView from '../../views/MapsView.astro';
+
+export function getStaticPaths() {
+  return [
+    ...mapCategoryKeys.map((slug) => ({ params: { slug } })),
+    ...mapMeta.map((item) => ({ params: { slug: item.slug } })),
+  ];
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const map = slug && !isMapCategory(slug) ? getMapBySlug(locale, slug) : undefined;
+---
+
+{
+  isMapCategory(slug) ? (
+    <MapsView category={slug} />
+  ) : (
+    map && <MapDetailView map={map} />
+  )
+}

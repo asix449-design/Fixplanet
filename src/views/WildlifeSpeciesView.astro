@@ -14,16 +14,34 @@ const title = `${species.commonName} — Fix Planet`;
 const image = wildlifeImageSrc(species.image);
 ---
 
-<BaseLayout title={title} description={species.hook} image={image}>
-  <header class="page-hero">
-    <div class="wrap">
+<BaseLayout title={title} description={species.hook} image={image} theme="wildlife-detail">
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img
+      src="/images/wildlife/wildlife-section-bg.jpg"
+      alt=""
+      width="1536"
+      height="1024"
+    />
+    <div class="section-backdrop-scrim"></div>
+  </div>
+  <header class="wildlife-page-hero wildlife-page-hero-detail" aria-labelledby="species-heading">
+    <div class="wildlife-page-hero-media" aria-hidden="true">
+      <img
+        src="/images/wildlife/wildlife-section-bg.jpg"
+        alt=""
+        width="1536"
+        height="1024"
+      />
+    </div>
+    <div class="wildlife-page-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
       <p>
-        <a class="text-link" href={localizePath('/wildlife', locale)}
+        <a class="maps-back" href={localizePath('/wildlife', locale)}
           >{ui.wildlifePage.back}</a
         >
       </p>
-      <div class="eyebrow">{ui.wildlifePage.status[species.status]}</div>
-      <h1>{species.commonName}</h1>
+      <div class="eyebrow wildlife-on-dark">{ui.wildlifePage.status[species.status]}</div>
+      <h1 id="species-heading">{species.commonName}</h1>
       <p class="scientific-kicker"><em>{species.scientificName}</em></p>
     </div>
   </header>

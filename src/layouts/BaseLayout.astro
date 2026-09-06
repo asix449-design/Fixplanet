@@ -17,6 +17,8 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  /** Distinctive section backdrop. Maps uses its own Earth hero instead. */
+  theme?: 'wildlife' | 'wildlife-detail';
 }
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -27,6 +29,7 @@ const {
   title = ui.meta.defaultTitle,
   description = ui.meta.defaultDescription,
   image = '/images/og-meadow.jpg',
+  theme,
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, site.url).href;
@@ -90,7 +93,7 @@ const pagePath = stripLocalePrefix(Astro.url.pathname);
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class={theme ? `theme-${theme}` : undefined}>
     <a class="skip" href="#main">{ui.skip}</a>
     <Header />
     <main id="main">
