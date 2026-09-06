@@ -51,7 +51,7 @@ export const lv: Record<string, LawCopy> = {
   'costa-rica-pes': {
     title: 'Kostarika — maksa par vides pakalpojumiem',
     hook: '1996. gada meža likums, kas maksā zemes īpašniekiem par stāvošu mežu. Tas ir viens instruments, ne vienīgais iemesls, kāpēc vainags atgriezās.',
-    imageAlt: 'Mitrājs un mežs Gvanakastē, Kostarikā — tāds segums, ko PSA programma maksā aizsargāt',
+    imageAlt: 'Monteverdes mākoņu mežs Kostarikā — tāds segums, ko PSA programma maksā aizsargāt',
     jurisdiction: 'Kostarika',
     officialName: 'Pago por Servicios Ambientales (PSA), under the Forestry Law',
     citation: 'Forestry Law No. 7575 (1996); PSA administered by FONAFIFO',
@@ -239,7 +239,7 @@ export const lv: Record<string, LawCopy> = {
     title: 'Kenijas savvaļas saglabāšanas un pārvaldības likums',
     hook: 'Pašreizējais Kenijas savvaļas statūts: sabiedriska īpašumtiesība uz savvaļas dzīvniekiem, parki un konservācijas, soda shēma par nogalināšanu un tirdzniecību.',
     imageAlt:
-      'Lauva sausā savannā — dzīvotņu klase, ko Kenijas savvaļas likums ir rakstīts pārvaldīt, ne nosaukta parka lietas fotogrāfija',
+      'Savannas ziloņi Amboseli nacionālajā parkā Kenijā — savvaļas dzīvnieki, ko 2013. gada likums ir rakstīts pārvaldīt, ne nosaukta lietas fotogrāfija',
     jurisdiction: 'Kenija',
     officialName: 'Wildlife Conservation and Management Act',
     citation: 'Act No. 47 of 2013, now Cap. 376; assented 24 December 2013, commenced 10 January 2014',

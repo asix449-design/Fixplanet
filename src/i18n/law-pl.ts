@@ -51,7 +51,7 @@ export const pl: Record<string, LawCopy> = {
   'costa-rica-pes': {
     title: 'Kostaryka — płatność za usługi środowiskowe',
     hook: 'Leśna ustawa z 1996, która płaci właścicielom za stojący las. To jeden instrument, nie jedyna przyczyna powrotu koron.',
-    imageAlt: 'Mokradło i las w Guanacaste, Kostaryka — rodzaj pokrycia, które program PSA płaci chronić',
+    imageAlt: 'Las mglisty Monteverde w Kostaryce — rodzaj pokrycia, które program PSA płaci chronić',
     jurisdiction: 'Kostaryka',
     officialName: 'Pago por Servicios Ambientales (PSA), under the Forestry Law',
     citation: 'Forestry Law No. 7575 (1996); PSA administered by FONAFIFO',
@@ -239,7 +239,7 @@ export const pl: Record<string, LawCopy> = {
     title: 'Kenijska ustawa o ochronie i zarządzaniu dziką przyrodą',
     hook: 'Obowiązujący kenijski statut o dzikiej przyrodzie: publiczna własność zwierzyny, parki i konserwaty oraz schemat kar za zabijanie i handel.',
     imageAlt:
-      'Lew w suchej sawannie — klasa siedlisk, którą kenijskie prawo o dzikiej przyrodzie jest napisane zarządzać, nie zdjęcie nazwanego parkowego procesu',
+      'Słonie sawannowe w Parku Narodowym Amboseli w Kenii — dzika przyroda, którą ustawa z 2013 ma zarządzać, nie zdjęcie nazwanego procesu',
     jurisdiction: 'Kenia',
     officialName: 'Wildlife Conservation and Management Act',
     citation: 'Act No. 47 of 2013, now Cap. 376; assented 24 December 2013, commenced 10 January 2014',

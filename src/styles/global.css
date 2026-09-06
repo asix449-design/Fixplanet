@@ -818,7 +818,7 @@ a.solution-card:hover {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.4fr 1.2fr;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -1278,6 +1278,21 @@ a.wildlife-card:hover {
 .status-myth-busted {
   background: rgba(255, 74, 18, 0.14);
   color: #ffb08a;
+}
+
+.status-existing {
+  background: rgba(192, 255, 0, 0.16);
+  color: var(--lime);
+}
+
+.status-pending {
+  background: rgba(232, 200, 74, 0.16);
+  color: #e8c84a;
+}
+
+.status-ideas {
+  background: rgba(255, 255, 255, 0.08);
+  color: #d2c8b0;
 }
 
 .wildlife-detail {
@@ -1898,7 +1913,9 @@ a.map-card:hover {
 .theme-wildlife-detail .site-footer,
 .theme-innovations .site-footer,
 .theme-innovations-detail .site-footer,
-.theme-forests .site-footer {
+.theme-forests .site-footer,
+.theme-law .site-footer,
+.theme-law-detail .site-footer {
   position: relative;
   z-index: 2;
 }
@@ -2521,6 +2538,203 @@ a.map-card:hover {
   }
 }
 
+/* Law — warm institutional / parchment, distinct from forests fog and innovations circuits */
+.theme-law,
+.theme-law-detail {
+  background: #100e0a;
+}
+
+.theme-law .section-backdrop img,
+.theme-law-detail .section-backdrop img {
+  object-position: 50% 28%;
+  filter: blur(8px) saturate(0.75) brightness(0.38) sepia(0.18);
+}
+
+.law-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(12, 10, 6, 0.78) 0%,
+      rgba(12, 10, 6, 0.52) 22%,
+      rgba(8, 7, 5, 0.82) 52%,
+      rgba(8, 7, 5, 0.94) 76%,
+      rgba(8, 7, 5, 0.98) 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 72px,
+      rgba(192, 255, 0, 0.035) 72px,
+      rgba(192, 255, 0, 0.035) 73px
+    );
+}
+
+.theme-law-detail .section-backdrop-subtle .law-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 7, 5, 0.84) 0%,
+      rgba(8, 7, 5, 0.93) 38%,
+      rgba(8, 7, 5, 0.97) 100%
+    );
+}
+
+.theme-law .site-header,
+.theme-law-detail .site-header {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.theme-law main,
+.theme-law-detail main {
+  position: relative;
+  z-index: 1;
+}
+
+.law-panel {
+  background:
+    linear-gradient(180deg, rgba(36, 30, 18, 0.55), rgba(16, 14, 10, 0.9)),
+    rgba(16, 14, 10, 0.88);
+  border-color: rgba(210, 190, 130, 0.22);
+}
+
+.law-honesty {
+  margin-top: 1.2rem;
+  max-width: none;
+}
+
+.law-category-lead {
+  max-width: 46rem;
+  margin: 0 0 1.4rem;
+  color: #e8e0cc;
+}
+
+.law-shelf {
+  scroll-margin-top: calc(var(--header-h) + 1.4rem);
+  margin-bottom: 2.4rem;
+  padding: 1.2rem 1.35rem 1.5rem;
+  background: rgba(16, 13, 8, 0.86);
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+}
+
+.law-shelf.is-highlighted {
+  border-color: var(--lime);
+  box-shadow: 0 0 0 1px var(--lime), var(--shadow);
+}
+
+.law-shelf-head {
+  margin-bottom: 1.1rem;
+}
+
+.law-shelf-title {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+}
+
+.law-shelf-title:hover,
+.law-shelf-title.is-active {
+  color: var(--lime);
+}
+
+.law-shelf-head p {
+  margin: 0.4rem 0 0;
+  max-width: 44rem;
+  color: #cfc6b0;
+}
+
+.law-card {
+  border-left-color: #d2be82;
+}
+
+.law-card-pending {
+  border-left-color: #e8c84a;
+}
+
+.law-card-ideas {
+  border-left-style: dashed;
+  border-left-color: #b8aa88;
+}
+
+.law-hero-media img {
+  object-position: 50% 22%;
+}
+
+.law-hero-shade {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(16, 12, 6, 0.42) 0%,
+      rgba(14, 11, 6, 0.62) 44%,
+      rgba(12, 10, 6, 0.86) 100%
+    ),
+    linear-gradient(90deg, rgba(12, 10, 6, 0.5) 0%, transparent 62%);
+}
+
+.theme-law-detail .wildlife-detail,
+.theme-law-detail .law-prose {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-law-detail .law-prose {
+  background: rgba(18, 15, 10, 0.92);
+  color: var(--ink);
+  border: 1px solid rgba(210, 190, 130, 0.2);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.theme-law-detail .law-prose h2,
+.theme-law-detail .law-prose p {
+  color: var(--ink);
+}
+
+.theme-law-detail .law-prose .wildlife-sources {
+  color: var(--muted);
+}
+
+.law-banner {
+  margin: 0.85rem 0 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.law-banner-idea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed #b8aa88;
+  color: #e8dcc0;
+}
+
+.law-banner-pending {
+  background: rgba(232, 200, 74, 0.1);
+  border: 1px solid rgba(232, 200, 74, 0.45);
+  color: #f0d878;
+}
+
+.law-source-list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.law-source-list a {
+  color: var(--lime);
+}
+
+@media (max-width: 640px) {
+  .law-shelf {
+    padding-inline: 1rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -2530,6 +2744,7 @@ a.map-card:hover {
   .solution-card,
   .wildlife-card,
   .innovation-card,
+  .law-card,
   .map-card,
   .hub-tile {
     transition: none;

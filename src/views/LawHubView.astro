@@ -1,0 +1,47 @@
+---
+import HubTile from '../components/HubTile.astro';
+import SectionHub from '../components/SectionHub.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { lawCategoryPath, lawHub, lawSectionSrc } from '../data/law';
+import { getLawPage, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getLawPage(locale);
+---
+
+<BaseLayout
+  title={page.metaTitle}
+  description={page.metaDescription}
+  image={lawSectionSrc}
+  theme="law"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={lawSectionSrc} alt="" width="1920" height="1280" />
+    <div class="section-backdrop-scrim law-scrim"></div>
+  </div>
+
+  <SectionHub kicker={page.chooseCategory} label={page.filterAria} columns={3}>
+    {
+      lawHub.map((item) => (
+        <HubTile
+          href={localizePath(lawCategoryPath(item.key), locale)}
+          icon={item.icon}
+          title={page.categories[item.key]}
+          text={page.tiles[item.key]}
+          dataArea={item.key}
+        />
+      ))
+    }
+  </SectionHub>
+
+  <section class="section section-hub-follow">
+    <div class="wrap">
+      <div class="wildlife-copy-card law-panel">
+        <div class="eyebrow">{page.eyebrow}</div>
+        <h2>{page.title}</h2>
+        <p class="wildlife-framing">{page.lead}</p>
+        <p class="borders-honesty law-honesty">{page.honesty}</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

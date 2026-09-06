@@ -37,3 +37,12 @@ export {
   innovationAreaKeys,
 } from './innovations';
 export { getForestFrames, getForestStats, getForestsPage } from './forests';
+export {
+  getLawBySlug,
+  getLawPage,
+  getLaws,
+  getLawsByCategory,
+  getLawsByShelf,
+  lawCategoryKeys,
+  lawStatusKeys,
+} from './law';
