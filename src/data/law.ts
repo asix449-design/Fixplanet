@@ -177,6 +177,28 @@ export const lawMeta: LawMeta[] = [
     ],
   },
   {
+    slug: 'turkmenistan-two-trees',
+    category: 'ecology',
+    status: 'existing',
+    year: '1992',
+    image: img(
+      'turkmenistan-two-trees.jpg',
+      'Bjørn Christian Tørrissen',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Neutrality-Road-Ashgabat-2015.JPG',
+    ),
+    sources: [
+      {
+        label: 'FAOLEX PDF — Постановление президента Туркменистана, 9 ноября 1992 г.',
+        url: 'http://faolex.fao.org/docs/pdf/tuk80588.pdf',
+      },
+      {
+        label: 'UNEP LEAP / FAOLEX catalogue entry',
+        url: 'https://leap.unep.org/en/countries/tm/national-legislation/presidential-decree-promotion-gardening-and-planting-greenery',
+      },
+    ],
+  },
+  {
     slug: 'un-plastics-treaty',
     category: 'ecology',
     status: 'pending',

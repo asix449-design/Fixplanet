@@ -62,6 +62,24 @@ export const pl: Record<string, LawCopy> = {
     caveats: 'Płatności zależą od budżetu i od tego, kto umie przejść wniosek. Program może faworyzować grunty z tytułem. To nie zakaz wszelkiego wylesiania i nie model, który kopiuje się na każdy kraj bez bazy podatkowej i katastru.',
     sourcesNote: 'Strona PSA FONAFIFO; opracowanie UNFCCC Momentum for Change; rekord FAOLEX ustawy 7575.',
   },
+  'turkmenistan-two-trees': {
+    title: 'Turkmenistan — dwa drzewa rocznie',
+    hook: 'Dekret prezydencki z 1992, nie statut Tadżykistanu i nie „trzy drzewa”. Zdanie o dwóch drzewach to język obywatelskiego obowiązku; artykuły operacyjne organizują kampanie.',
+    imageAlt:
+      'Zadrzewiona aleja w Aszchabadzie — zieleń miejska tego rodzaju, którą dekret z 1992 próbuje organizować, nie zdjęcie tamtego miesiąca sadzenia',
+    jurisdiction: 'Turkmenistan',
+    officialName: 'On the development of horticulture and greening in Turkmenistan',
+    citation:
+      'Постановление Президента Туркменистана «О развитии садоводства и озеленении в Туркменистане», 9 November 1992',
+    yearStatus:
+      'Dekret prezydencki (постановление), 9 listopada 1992. FAOLEX/UNEP LEAP podają wejście w życie z urzędową publikacją; nie dają osobnego numeru dekretu.',
+    what: 'Preambuła stanowi, że obowiązkiem każdego obywatela Turkmenistanu jest sadzić dwa drzewa rocznie — jedno na cześć nowo narodzonego obywatela, drugie w pamięci zmarłego. Artykuły operacyjne ogłaszają potem jesienne i wiosenne miesiące sadzenia, nakazują hyakimom welajatów, Aszchabadu i etrapów organizować masowe nasadzenia (w tym wzdłuż nazwanych dróg) oraz wymagają, by ministerstwo odpowiedzialne za gospodarkę przyrodą dostarczało materiał sadzeniowy. To prezydenckie постановление, nie ustawa Medżlisu i nie kodeks karny dla osób, które nie posadzą drzewa.',
+    where: 'Turkmenistan. Późniejsze państwowe kampanie sadzenia (na przykład dekrety o parkach Kopet-Dag z 1998 albo późniejsze działania narodowego programu leśnego) to osobne akty. Ta karta dotyczy tylko tekstu z 1992.',
+    effects: 'Zamierzone skutki: ożywić ogrodnictwo i zorganizować sezonowe masowe sadzenie z publiczną dostawą sadzonek. Ta strona nie wymyśla wskaźników wykonania, przeżywalności ani sumy hektarów przypisanej dekretowi z 1992.',
+    caveats: 'Język obywatelskiego obowiązku w preambule to nie to samo co indywidualnie ścigany limit. FAOLEX zaznacza, że numer referencyjny jest niedostępny. Nie przemianowuj tego na „posadź trzy drzewa”, na tadżycką osobistą kwotę ani na filipiński projekt o maturze — to inne albo niezweryfikowane historie.',
+    sourcesNote:
+      'Pierwotny tekst rosyjski na FAOLEX (tuk80588.pdf); abstrakt katalogowy UNEP LEAP tego samego dekretu.',
+  },
   'un-plastics-treaty': {
     title: 'Traktat ONZ o plastiku (proces INC)',
     hook: 'Mandat na negocjacje prawnie wiążącego instrumentu o plastiku. Nie ma uzgodnionego tekstu traktatu.',

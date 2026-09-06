@@ -62,6 +62,24 @@ export const en: Record<string, LawCopy> = {
     caveats: 'Payments depend on the budget and on who can navigate the application. The programme can favour titled land. It is not a ban on all deforestation, and it is not a model that copies onto every country without the tax base and the cadastre.',
     sourcesNote: 'FONAFIFO PSA page; UNFCCC Momentum for Change write-up; FAOLEX record for Law 7575.',
   },
+  'turkmenistan-two-trees': {
+    title: 'Turkmenistan — two trees a year',
+    hook: 'A 1992 presidential decree, not a Tajikistan statute and not “three trees.” The two-tree line is civic-duty language; the operative articles organise campaigns.',
+    imageAlt:
+      'A landscaped avenue in Ashgabat — civic greenery of the kind the 1992 decree tries to organise, not a photograph of that year’s planting month',
+    jurisdiction: 'Turkmenistan',
+    officialName: 'On the development of horticulture and greening in Turkmenistan',
+    citation:
+      'Постановление Президента Туркменистана «О развитии садоводства и озеленении в Туркменистане», 9 November 1992',
+    yearStatus:
+      'Presidential decree (постановление), 9 November 1992. FAOLEX/UNEP LEAP list it as in force from official publication; they do not give a separate decree number.',
+    what: 'The preamble states that it is the duty of every citizen of Turkmenistan to plant two trees each year — one in honour of a newborn citizen, one in memory of the deceased. The operative articles then declare annual autumn and spring planting months, order velayat, Ashgabat, and etrap khyakims to organise mass plantings (including along named roads), and require the ministry responsible for nature management to supply planting material. It is a presidential постановление, not an act of the Mejlis and not a criminal code for people who fail to plant.',
+    where: 'Turkmenistan. Later state planting campaigns (for example Kopet Dag parkland decrees in 1998, or later national forest-programme actions) are separate instruments. This card is only the 1992 text.',
+    effects: 'Intended effects: revive horticulture and organise seasonal mass planting with a public supply of seedlings. This page does not invent compliance rates, survival rates, or a hectare total attributable to the 1992 decree.',
+    caveats: 'Civic-duty language in a preamble is not the same as an individually prosecuted quota. FAOLEX notes that a reference number is unavailable. Do not retitle this as “plant three trees,” as a Tajikistan personal quota, or as a Philippines graduation bill — those are different or unverified stories.',
+    sourcesNote:
+      'Primary Russian text on FAOLEX (tuk80588.pdf); UNEP LEAP catalogue abstract of the same decree.',
+  },
   'un-plastics-treaty': {
     title: 'UN plastics treaty (INC process)',
     hook: 'A mandated negotiation for a legally binding plastics instrument. There is no agreed treaty text.',

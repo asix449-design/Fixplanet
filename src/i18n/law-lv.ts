@@ -62,6 +62,24 @@ export const lv: Record<string, LawCopy> = {
     caveats: 'Maksājumi atkarīgi no budžeta un no tā, kas prot iziet pieteikumu. Programma var labvēlīgi izturēties pret zemi ar īpašuma titulu. Tas nav aizliegums visai atmežošanai un nav modelis, ko nokopē katrā valstī bez nodokļu bāzes un kadastra.',
     sourcesNote: 'FONAFIFO PSA lapa; UNFCCC Momentum for Change apraksts; FAOLEX ieraksts par Likumu 7575.',
   },
+  'turkmenistan-two-trees': {
+    title: 'Turkmenistāna — divi koki gadā',
+    hook: '1992. gada prezidenta dekrēts, ne Tadžikistānas statūts un ne «trīs koki». Divu koku rinda ir pilsoniskā pienākuma valoda; operatīvie panti organizē kampaņas.',
+    imageAlt:
+      'Apzaļumots prospekts Ašhabadā — pilsētas zaļums tāda veida, kādu 1992. gada dekrēts mēģina organizēt, ne tā gada stādīšanas mēneša fotogrāfija',
+    jurisdiction: 'Turkmenistāna',
+    officialName: 'On the development of horticulture and greening in Turkmenistan',
+    citation:
+      'Постановление Президента Туркменистана «О развитии садоводства и озеленении в Туркменистане», 9 November 1992',
+    yearStatus:
+      'Prezidenta dekrēts (постановление), 1992. gada 9. novembris. FAOLEX/UNEP LEAP norāda spēkā stāšanos no oficiālās publikācijas; atsevišķu dekrēta numuru nedod.',
+    what: 'Preambulā teikts, ka katra Turkmenistānas pilsoņa pienākums ir katru gadu iestādīt divus kokus — vienu par godu jaundzimušam pilsonim, otru mirušā piemiņai. Operatīvie panti tad izsludina ikgadējos rudens un pavasara stādīšanas mēnešus, uzdod velajatu, Ašhabadas un etrapu hjakimiem organizēt masveida stādījumus (arī gar nosauktiem ceļiem) un prasa, lai dabas apsaimniekošanas ministrija piegādā stādāmo materiālu. Tas ir prezidenta постановление, ne Medžlisa likums un ne kriminālkodekss tiem, kas koku neiestāda.',
+    where: 'Turkmenistāna. Vēlākas valsts stādīšanas kampaņas (piemēram, Kopetdaga parku dekrēti 1998. gadā vai vēlākas nacionālās meža programmas darbības) ir atsevišķi akti. Šī kartīte ir tikai par 1992. gada tekstu.',
+    effects: 'Iecerētais efekts: atdzīvināt dārzkopību un organizēt sezonālu masveida stādīšanu ar publisku stādu piegādi. Šī lapa neizdomā izpildes rādītājus, ieaugšanas rādītājus vai hektāru kopsummu, kas piedēvēta 1992. gada dekrētam.',
+    caveats: 'Pilsoniskā pienākuma valoda preambulā nav tas pats, kas individuāli vajāta kvota. FAOLEX atzīmē, ka atsauces numurs nav pieejams. Nepārdēvē to par «iestādi trīs kokus», par Tadžikistānas personīgo kvotu vai par Filipīnu izlaiduma likumprojektu — tās ir citas vai nepārbaudītas stāsti.',
+    sourcesNote:
+      'Primārais krievu teksts FAOLEX (tuk80588.pdf); UNEP LEAP kataloga kopsavilkums tam pašam dekrētam.',
+  },
   'un-plastics-treaty': {
     title: 'ANO plastmasas līgums (INC process)',
     hook: 'Mandāts sarunām par juridiski saistošu plastmasas instrumentu. Saskaņota līguma teksta nav.',
