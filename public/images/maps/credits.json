@@ -6,7 +6,7 @@
     "url": "https://visibleearth.nasa.gov/images/73909/december-blue-marble-next-generation-w-topography-and-bathymetry",
     "direct": "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg",
     "license": "Public domain (NASA)",
-    "note": "Cloud-free equirectangular Earth used as the Maps hero and the Wildlife dispersal base."
+    "note": "Cloud-free equirectangular Earth used as the Maps hero and the Wildlife dispersal base. Not used as a catalog card thumbnail."
   },
   {
     "file": "blue-marble-sm.jpg",
@@ -15,16 +15,16 @@
     "url": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography",
     "direct": "https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57752/land_shallow_topo_2048.jpg",
     "license": "Public domain (NASA)",
-    "note": "Smaller cloud-free Earth for catalog thumbnails."
+    "note": "Kept as a small Earth base. Catalog cards no longer use this as a shared schematic."
   },
   {
     "file": "earth-at-night.jpg",
-    "title": "Night Lights 2012 — flat map (VIIRS DNB land/ocean/ice)",
+    "title": "Night Lights 2012 — flat map (VIIRS DNB land/ocean/ice), cropped for the catalog",
     "source": "NASA Earth Observatory / Suomi NPP VIIRS",
     "url": "https://visibleearth.nasa.gov/images/79765/night-lights-2012-flat-map",
     "direct": "https://eoimages.gsfc.nasa.gov/images/imagerecords/79000/79765/dnb_land_ocean_ice.2012.3600x1800.jpg",
     "license": "Public domain (NASA)",
-    "note": "Preview for the Earth-at-night / settlement-lights map."
+    "note": "Hosted original. Preview for Earth at night only."
   },
   {
     "file": "world-countries.svg",
@@ -32,6 +32,132 @@
     "source": "Wikimedia Commons contributors",
     "url": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
     "license": "Public domain",
-    "note": "Country outlines for the political-map preview. Borders are a cartographic compromise, not a legal ruling."
+    "note": "Source outline used to render world-countries.jpg and Fix Planet schematics. Borders are a cartographic compromise, not a legal ruling."
+  },
+  {
+    "file": "world-countries.jpg",
+    "title": "Political country outlines (catalog render)",
+    "source": "Wikimedia Commons BlankMap-World; Natural Earth is the named interactive source",
+    "url": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "license": "Public domain",
+    "kind": "hosted-original",
+    "note": "Recolored public-domain outline for the political-map card."
+  },
+  {
+    "file": "armed-conflict-events.jpg",
+    "title": "Fix Planet overview of reported-conflict theaters",
+    "source": "Fix Planet schematic on BlankMap-World. ACLED dashboard artwork is not copied.",
+    "url": "https://acleddata.com/conflict-watchlist-2025/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Dots mark well-known recent reporting theaters (Ukraine, Levant, Sudan, Sahel, eastern DRC, Myanmar, Mexico, and others). Not ACLED event counts."
+  },
+  {
+    "file": "battle-related-deaths.jpg",
+    "title": "Deaths in armed conflicts (map export)",
+    "source": "Our World in Data, from Uppsala Conflict Data Program",
+    "url": "https://ourworldindata.org/grapher/deaths-in-armed-conflicts-by-country",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export. Open the OWID / UCDP page for the live layer."
+  },
+  {
+    "file": "language-families.jpg",
+    "title": "Primary Human Language Families Map",
+    "source": "Wikimedia Commons, PiMaster3",
+    "url": "https://commons.wikimedia.org/wiki/File:Primary_Human_Language_Families_Map.png",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Scholarly language-family regions. Glottolog remains the named interactive source."
+  },
+  {
+    "file": "world-religions.jpg",
+    "title": "Religion distribution (majority-religion regions)",
+    "source": "Wikimedia Commons, TheGreenEditor",
+    "url": "https://commons.wikimedia.org/wiki/File:Religion_distribution.png",
+    "license": "Public domain",
+    "kind": "hosted-original",
+    "note": "Public-domain majority-religion regions. Not Pew Research cartography. Pew remains the named source for composition estimates."
+  },
+  {
+    "file": "homicide-rates.jpg",
+    "title": "Intentional homicide rate (map export)",
+    "source": "Our World in Data, from UNODC",
+    "url": "https://ourworldindata.org/grapher/homicide-rate-unodc",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export of UNODC comparable rates. No invented country figures."
+  },
+  {
+    "file": "air-quality-pm25.jpg",
+    "title": "Exposure to outdoor PM2.5 (map export)",
+    "source": "Our World in Data, from SatPM / Atmospheric Composition Analysis Group, Washington University in St. Louis",
+    "url": "https://ourworldindata.org/grapher/pm25-air-pollution",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export."
+  },
+  {
+    "file": "co2-emissions.jpg",
+    "title": "Annual territorial CO₂ emissions (map export)",
+    "source": "Our World in Data, from Global Carbon Budget / Global Carbon Project",
+    "url": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export of production-based CO₂."
+  },
+  {
+    "file": "oil-gas-reserves.jpg",
+    "title": "EIA assessed world shale-gas basins",
+    "source": "U.S. Energy Information Administration",
+    "url": "https://commons.wikimedia.org/wiki/File:EIA_World_Shale_Gas_Map.png",
+    "license": "Public domain (U.S. government work)",
+    "kind": "hosted-original",
+    "note": "2011 EIA assessed-basin map. Open EIA international pages for current oil and gas statistics."
+  },
+  {
+    "file": "mineral-resources.jpg",
+    "title": "Fix Planet overview of well-known mineral districts",
+    "source": "Fix Planet schematic on BlankMap-World, themed from USGS Mineral Resources Program / MRDATA",
+    "url": "https://mrdata.usgs.gov/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Colored points mark well-known gold, copper, iron, lithium, and rare-earth districts. Not reserve tonnages."
+  },
+  {
+    "file": "forest-cover-loss.jpg",
+    "title": "Fix Planet overview of tree-cover loss frontiers",
+    "source": "Fix Planet schematic on BlankMap-World, themed from Hansen / Global Forest Watch",
+    "url": "https://www.globalforestwatch.org/map/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Magenta patches mark well-known loss frontiers (Amazon arc, Congo edge, Sundaland, Mekong, boreal fire belts). Not Hansen annual pixels."
+  },
+  {
+    "file": "protected-areas.jpg",
+    "title": "Share of land area that is protected (map export)",
+    "source": "Our World in Data, from Protected Planet WDPA and WD-OECM (UNEP-WCMC and IUCN) via World Bank",
+    "url": "https://ourworldindata.org/grapher/terrestrial-protected-areas",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export. We do not redistribute the WDPA polygon database."
+  },
+  {
+    "file": "water-stress.jpg",
+    "title": "Fix Planet overview of arid vs water-rich regions",
+    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct",
+    "url": "https://www.wri.org/applications/aqueduct/water-risk-atlas/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Country bands show well-known arid vs water-rich regions, not Aqueduct basin scores. Open the Water Risk Atlas for the model."
+  },
+  {
+    "file": "population-density.jpg",
+    "title": "Countries and regions by population density",
+    "source": "Wikimedia Commons, Junuxx",
+    "url": "https://commons.wikimedia.org/wiki/File:Countries_and_regions_by_population_density.png",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Country and selected subnational density classes. SEDAC / WorldPop remain the named gridded sources."
   }
 ]

@@ -26,7 +26,7 @@ Copy lives in `src/i18n/messages.ts` (UI), `src/i18n/solutions.ts` (the eight so
 
 To add a wildlife species: add metadata in `src/data/wildlife.ts` (English slug, Latin name, tab, IUCN code, image credit), the same slug in all four language objects, and a photo in `public/images/wildlife/`. Status tabs are deep-linked as `/wildlife`, `/wildlife/endangered`, and `/wildlife/extinct` (`?status=` also works).
 
-To add a map: add a row in `src/data/maps.ts` (English slug, category, vintage, named source, URLs, preview file), the same slug in `en` / `ru` / `pl` / `lv` under `src/i18n/maps.ts`, and a licensed preview in `public/images/maps/` (or reuse `blue-marble-sm.jpg` as a schematic). Category chips are real links (`/maps/conflicts`, `/ru/maps/conflicts`, …). Do not invent numbers; prefer an “Open source map” link over a fake choropleth.
+To add a map: add a row in `src/data/maps.ts` (English slug, category, vintage, named source, URLs, unique preview file), the same slug in `en` / `ru` / `pl` / `lv` under `src/i18n/maps.ts`, and a licensed preview in `public/images/maps/` recorded in `credits.json`. Do not reuse Blue Marble as a stand-in. Category chips are real links (`/maps/conflicts`, `/ru/maps/conflicts`, …). Do not invent country-level crime or conflict numbers. Prefer a hosted open map, or a labeled Fix Planet overview, plus an “Open source map” link.
 
 ## Local development
 

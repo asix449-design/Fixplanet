@@ -55,8 +55,8 @@ const pageEn: MapsPage = {
   related: 'Related maps',
   back: '← Maps',
   schematicNote:
-    'Schematic preview on a NASA Blue Marble base — not the source dataset. Open the named map for the real layer.',
-  schematicBadge: 'Schematic preview',
+    'Fix Planet overview based on the named source — not that publisher’s official graphic. Open the source map to verify the current layer.',
+  schematicBadge: 'Fix Planet overview',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors, deep blue oceans, and ice caps, with no political borders or labels',
   empty: 'No maps in this category yet.',
@@ -96,8 +96,8 @@ const pageRu: MapsPage = {
   related: 'Связанные карты',
   back: '← Карты',
   schematicNote:
-    'Схематичный превью на основе NASA Blue Marble — не сам набор данных. Откройте названную карту, чтобы увидеть слой.',
-  schematicBadge: 'Схема',
+    'Обзор Fix Planet по названному источнику — не официальная графика издателя. Откройте исходную карту, чтобы проверить слой.',
+  schematicBadge: 'Обзор Fix Planet',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши, тёмно-синие океаны и ледники, без политических границ и подписей',
   empty: 'В этой категории пока нет карт.',
@@ -137,8 +137,8 @@ const pagePl: MapsPage = {
   related: 'Powiązane mapy',
   back: '← Mapy',
   schematicNote:
-    'Schematyczny podgląd na bazie NASA Blue Marble — to nie zbiór danych. Otwórz wskazaną mapę, żeby zobaczyć warstwę.',
-  schematicBadge: 'Schemat',
+    'Przegląd Fix Planet na podstawie wskazanego źródła — to nie oficjalna grafika wydawcy. Otwórz mapę źródłową, żeby sprawdzić warstwę.',
+  schematicBadge: 'Przegląd Fix Planet',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów, głęboki błękit oceanów i czapy lodu, bez granic politycznych i etykiet',
   empty: 'W tej kategorii nie ma jeszcze map.',
@@ -178,8 +178,8 @@ const pageLv: MapsPage = {
   related: 'Saistītās kartes',
   back: '← Kartes',
   schematicNote:
-    'Shematisks priekšskats uz NASA Blue Marble pamata — tas nav datu kopa. Atver norādīto karti, lai redzētu slāni.',
-  schematicBadge: 'Shema',
+    'Fix Planet pārskats pēc nosauktā avota — ne izdevēja oficiālā grafika. Atver avota karti, lai pārbaudītu slāni.',
+  schematicBadge: 'Fix Planet pārskats',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes krāsas, tumši zili okeāni un ledus cepures, bez politiskām robežām un uzrakstiem',
   empty: 'Šajā kategorijā vēl nav karšu.',
@@ -217,8 +217,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Coverage depends on local reporting, language, and access. Some wars are under-counted; some protests are over-visible. ACLED does not decide which side is legitimate. Do not treat a pin as a census of every death.',
     licenseNote:
-      'ACLED data may be used with attribution under their terms; we do not host the event database. Open their map. Do not scrape or republish their full feed from this site.',
-    imageAlt: 'Schematic Earth preview for a map of recorded political-violence events',
+      'ACLED data may be used with attribution under their terms; we do not host the event database. The preview is a Fix Planet overview of well-known reporting theaters, not ACLED counts or their dashboard artwork. Open their map. Do not scrape or republish their full feed from this site.',
+    imageAlt:
+      'Dark world map with red and orange dots clustered in well-known conflict-reporting regions, labeled as a Fix Planet overview',
   },
   'battle-related-deaths': {
     title: 'Battle-related deaths',
@@ -230,8 +231,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Definitions exclude many civilian harms (displacement, hunger, disease). Early years and closed information environments are uncertain. Numbers are revised. This is not a map of who started a war.',
     licenseNote:
-      'UCDP allows non-commercial use with citation. OWID charts are typically CC BY. We link out rather than redraw their choropleth.',
-    imageAlt: 'Schematic Earth preview for a map of battle-related deaths',
+      'UCDP allows non-commercial use with citation. We host a cropped Our World in Data map export (CC BY) of deaths in armed conflicts. Open the OWID war-and-peace page for the live layer.',
+    imageAlt:
+      'Our World in Data world map of deaths in armed conflicts: pale land with Ukraine and several African and Asian countries in orange and red',
   },
   'language-families': {
     title: 'Language families of the world',
@@ -243,8 +245,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Ethnolinguistic maps are contested. Colonial borders, forced assimilation, and self-identification all cut across language trees. Treat this as a scholarly sketch of speech communities, never as a claim about blood, loyalty, or territory.',
     licenseNote:
-      'Glottolog content is typically CC BY. The interactive map is theirs — open it. We do not host Ethnologue’s commercial atlas.',
-    imageAlt: 'Schematic Earth preview for a scholarly language-family map',
+      'Glottolog content is typically CC BY. The preview is Wikimedia’s Primary Human Language Families Map (PiMaster3, CC BY-SA 3.0). The interactive Glottolog map is theirs — open it. We do not host Ethnologue’s commercial atlas.',
+    imageAlt:
+      'Color-coded world map of primary language families: teal Indo-European areas, orange Afro-Asiatic, green Niger-Congo, magenta Sino-Tibetan, maroon Austronesian',
   },
   'world-religions': {
     title: 'Religious composition by country',
@@ -256,8 +259,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Religion maps are politically sensitive. States sometimes punish or inflate affiliation. Household surveys miss hidden practice. Do not read this as a ranking of virtue or a forecast of conflict. We do not host Pew’s copyrighted cartography.',
     licenseNote:
-      'Pew allows citation of findings with a link. Their maps and graphics remain theirs. Open the source feature rather than copying the artwork.',
-    imageAlt: 'Schematic Earth preview for a map of religious affiliation estimates',
+      'Pew allows citation of findings with a link. Their maps and graphics remain theirs. The preview is a public-domain Wikimedia majority-religion map (TheGreenEditor), not Pew artwork. Open the Pew feature to verify composition estimates.',
+    imageAlt:
+      'Color-coded world map of majority-religion regions: purple Christian areas, green Muslim, orange Hindu, yellow Buddhist, grey unaffiliated',
   },
   'homicide-rates': {
     title: 'Intentional homicide rates',
@@ -269,8 +273,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Under-reporting, legal definitions, and missing years differ by state. Conflict deaths are a different series (see UCDP). Do not invent a “most dangerous country” list from a thumbnail. We do not draw an unsourced choropleth here.',
     licenseNote:
-      'UNODC statistical products are generally reusable with attribution. OWID charts are typically CC BY. Open their map for the current layer.',
-    imageAlt: 'Schematic Earth preview for a homicide-rate map',
+      'UNODC statistical products are generally reusable with attribution. We host a cropped Our World in Data map export (CC BY) of UNODC homicide rates. Open their map for the current layer.',
+    imageAlt:
+      'Our World in Data choropleth of intentional homicide rates: yellow-orange land with darker red in parts of Latin America and southern Africa',
   },
   'air-quality-pm25': {
     title: 'Fine particle air pollution (PM2.5)',
@@ -282,8 +287,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Satellite-model blends smooth local peaks. Ground monitors are uneven. Dust storms and fire seasons spike short periods. We do not invent a country ranking on this page.',
     licenseNote:
-      'NASA imagery is public domain. WHO and OWID materials are citable; OWID is typically CC BY. Open the OWID air-pollution map for the interactive layer.',
-    imageAlt: 'Schematic Earth preview for a PM2.5 air-pollution map',
+      'NASA imagery is public domain. We host a cropped Our World in Data map export (CC BY) of population-weighted PM2.5. Open the OWID air-pollution map for the interactive layer.',
+    imageAlt:
+      'Our World in Data choropleth of outdoor PM2.5: pale countries with a dark brown band across North Africa, the Middle East, and South and East Asia',
   },
   'co2-emissions': {
     title: 'Territorial CO₂ emissions',
@@ -295,8 +301,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Territorial inventories miss emissions embodied in imports. Year-to-year jumps can be methodology or recession, not virtue. This is not a map of local smog.',
     licenseNote:
-      'GCP data are published for reuse with citation. OWID charts are typically CC BY. We link to their emissions map rather than redrawing it.',
-    imageAlt: 'Schematic Earth preview for a territorial CO₂ emissions map',
+      'GCP data are published for reuse with citation. We host a cropped Our World in Data map export (CC BY) of territorial CO₂. Open their emissions map for the interactive layer.',
+    imageAlt:
+      'Our World in Data choropleth of territorial CO₂: China and the United States in the darkest red, other large economies in medium red',
   },
   'oil-gas-reserves': {
     title: 'Oil and gas around the world',
@@ -308,8 +315,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'National reserve reports can be political. EIA figures are still among the most transparent public series. We do not list field-by-field barrels here.',
     licenseNote:
-      'EIA and USGS works of the U.S. government are generally public domain. Open EIA’s international pages for the current maps and tables.',
-    imageAlt: 'Schematic Earth preview for oil and gas resource geography',
+      'EIA and USGS works of the U.S. government are generally public domain. The preview is EIA’s public-domain assessed shale-gas basin map. Open EIA’s international pages for current oil and gas maps and tables.',
+    imageAlt:
+      'EIA world map of assessed shale-gas basins: white and grey countries with maroon and yellow basin polygons',
   },
   'mineral-resources': {
     title: 'Mineral deposits and commodities',
@@ -321,8 +329,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Completeness varies by country and by secrecy. A blank area can mean no survey, not no rock. Environmental harm of extraction is not in the geology layer.',
     licenseNote:
-      'USGS information is generally public domain. Open MRDATA and the Mineral Commodity Summaries rather than copying paywalled industry atlases.',
-    imageAlt: 'Schematic Earth preview for a USGS mineral-resources map',
+      'USGS information is generally public domain. The preview is a Fix Planet overview of well-known districts (gold, copper, iron, lithium, rare earths), not a copy of a USGS poster and not reserve tonnages. Open MRDATA for the database.',
+    imageAlt:
+      'Tan world map with colored dots for well-known mineral districts: gold, copper, iron, lithium, and rare earths',
   },
   'world-countries': {
     title: 'World countries and borders',
@@ -334,8 +343,8 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Borders move, names change, and some lines are violently contested. Natural Earth documents its disputed-boundary choices. A blank political map is still a political act.',
     licenseNote:
-      'Natural Earth is public domain. The preview SVG is Wikimedia’s public-domain BlankMap-World, a similar small-scale country outline.',
-    imageAlt: 'Public-domain outline map of the world’s countries, without labels',
+      'Natural Earth is public domain. The preview is a recolored render of Wikimedia’s public-domain BlankMap-World, a similar small-scale country outline.',
+    imageAlt: 'Public-domain outline map of the world’s countries in cream on light blue, without labels',
   },
   'forest-cover-loss': {
     title: 'Tree-cover loss',
@@ -345,10 +354,11 @@ const en: Record<string, MapCopy> = {
     howToRead:
       'Pink or red loss pixels are canopy gone that year. Plantations, fire, and storm blowdown count as loss. “Gain” is slower and easier to miss. Zoom in; a country total hides the frontier.',
     caveats:
-      'Tree cover ≠ primary forest. Some loss is legal harvest. Some intact forest is already degraded. GFW documents the definitions. We host a physical Earth preview, not a recolored Hansen tile set.',
+      'Tree cover ≠ primary forest. Some loss is legal harvest. Some intact forest is already degraded. GFW documents the definitions. The preview is a Fix Planet overview of well-known loss frontiers, not a recolored Hansen tile set.',
     licenseNote:
-      'Hansen / GFW data are typically available under CC BY 4.0 with citation. Open the GFW map for the interactive loss layer.',
-    imageAlt: 'NASA Blue Marble Earth used as a physical preview for a tree-cover loss map',
+      'Hansen / GFW data are typically available under CC BY 4.0 with citation. The preview is a Fix Planet schematic of known frontiers. Open the GFW map for the interactive loss layer.',
+    imageAlt:
+      'Dark green world map with magenta patches over well-known tree-cover loss frontiers in the Amazon, Congo basin, Southeast Asia, and boreal belts',
   },
   'protected-areas': {
     title: 'Protected areas',
@@ -360,8 +370,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Reporting lags. Some countries list almost everything; others list little. Hunting, roads, and mining still happen inside lines. Complementary layers (OECM, indigenous lands) are incomplete.',
     licenseNote:
-      'WDPA has specific terms: you may view and cite; full redistribution of the database has restrictions. We link to Protected Planet rather than shipping their polygons.',
-    imageAlt: 'NASA Blue Marble Earth used as a physical preview for protected-area geography',
+      'WDPA has specific terms: you may view and cite; full redistribution of the database has restrictions. We host a cropped Our World in Data map export (CC BY) of terrestrial protected-area share and link to Protected Planet rather than shipping WDPA polygons.',
+    imageAlt:
+      'Our World in Data green choropleth of the share of each country’s land that is reported as protected',
   },
   'water-stress': {
     title: 'Water stress',
@@ -373,8 +384,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Models smooth local rights, illegal wells, and seasonal pulses. Political control of rivers is not in the hydrology alone. Do not treat a red basin as a prophecy of war.',
     licenseNote:
-      'Aqueduct data are typically CC BY with attribution to WRI. Open the Water Risk Atlas for the interactive basins.',
-    imageAlt: 'Schematic Earth preview for a water-stress atlas',
+      'Aqueduct data are typically CC BY with attribution to WRI. The preview is a Fix Planet overview of arid versus water-rich regions, not Aqueduct basin scores. Open the Water Risk Atlas for the interactive basins.',
+    imageAlt:
+      'World map colored from teal water-rich regions to red arid belts across North Africa, the Middle East, and other drylands',
   },
   'population-density': {
     title: 'Population density',
@@ -384,10 +396,11 @@ const en: Record<string, MapCopy> = {
     howToRead:
       'Bright or dark cells are estimated people per square kilometre. Rural sparsity can hide large absolute populations. City cores saturate any color scale.',
     caveats:
-      'Censuses are uneven and sometimes old. Conflict zones and informal settlements are hard to count. A grid is an estimate. We preview with NASA night lights, which show electrified settlement, not population itself.',
+      'Censuses are uneven and sometimes old. Conflict zones and informal settlements are hard to count. A grid is an estimate. The preview is a Wikimedia country-and-region density map, not the SEDAC grid itself.',
     licenseNote:
-      'SEDAC GPW has academic-use terms; WorldPop is typically CC BY. NASA night-lights imagery is public domain. Open SEDAC’s map viewer for the population grid.',
-    imageAlt: 'NASA Earth-at-night mosaic used as a preview for population geography',
+      'SEDAC GPW has academic-use terms; WorldPop is typically CC BY. The preview is Wikimedia’s Countries and regions by population density (Junuxx, CC BY-SA 3.0). Open SEDAC’s map viewer for the population grid.',
+    imageAlt:
+      'Brown choropleth of population density by country and selected regions, darkest over South and East Asia and parts of Europe',
   },
   'earth-at-night': {
     title: 'Earth at night',
