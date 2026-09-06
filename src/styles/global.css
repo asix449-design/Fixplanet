@@ -1639,8 +1639,28 @@ a.map-card:hover {
   border-left-color: #1b7a4e;
 }
 
+.theme-innovations-detail .wildlife-detail,
 .theme-innovations-detail .innovations-prose {
-  background: rgba(255, 255, 255, 0.94);
+  position: relative;
+  z-index: 1;
+}
+
+.theme-innovations-detail .innovations-prose {
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid rgba(20, 34, 26, 0.06);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.theme-innovations-detail .innovations-prose h2,
+.theme-innovations-detail .innovations-prose p {
+  color: var(--ink);
+}
+
+.theme-innovations-detail .innovations-prose .wildlife-sources {
+  color: var(--muted);
 }
 
 .innovation-card,
