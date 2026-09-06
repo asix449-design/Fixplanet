@@ -85,6 +85,7 @@ const en = {
     title: 'Solutions',
     lead: 'Each card pairs a planetary problem with a technology that already works. Filter by topic, then follow the proof.',
     filterAria: 'Filter solutions by topic',
+    chooseTopic: 'Choose a topic',
     all: 'All',
     allKey: 'all',
     problem: 'Problem',
@@ -99,6 +100,16 @@ const en = {
       oceans: 'Oceans',
       energy: 'Energy',
     } satisfies Record<TagKey, string>,
+    tileLeads: {
+      all: 'Every problem–fix card on one shelf.',
+      water: 'Irrigation and wetlands that already clean and save water.',
+      forests: 'Forestry that keeps forests standing and productive.',
+      waste: 'Turning organic waste into energy and useful material.',
+      cities: 'Cooler roofs and streets that cut urban heat.',
+      materials: 'Lower-carbon cement and other building materials.',
+      oceans: 'Catching plastic and waste before they reach the sea.',
+      energy: 'Clean power that already works at community scale.',
+    } satisfies Record<TagKey | 'all', string>,
   },
   wildlifePage: {
     metaTitle: 'Wildlife — Fix Planet',
@@ -120,9 +131,15 @@ const en = {
       'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
     scientificName: 'Homo sapiens',
     tabsAria: 'Filter species by status',
+    chooseStatus: 'Choose a status',
     surviving: 'Surviving',
     endangered: 'Endangered',
     extinct: 'Extinct',
+    tiles: {
+      surviving: 'Still here, with ranges or numbers that shifted after people spread.',
+      endangered: 'Threatened now, mainly because of people.',
+      extinct: 'Gone. Most entries are clearly human-caused.',
+    },
     survivingLead:
       'Still here, with ranges or numbers that shifted after people spread — hunting, farms, later recovery, or boom. The dates differ by continent.',
     endangeredLead:
@@ -340,6 +357,7 @@ const ru: typeof en = {
     title: 'Решения',
     lead: 'На каждой карточке — планетарная проблема и технология, которая уже работает. Отфильтруйте по теме и перейдите к доказательствам.',
     filterAria: 'Фильтр решений по теме',
+    chooseTopic: 'Выберите тему',
     all: 'Все',
     allKey: 'all',
     problem: 'Проблема',
@@ -353,6 +371,16 @@ const ru: typeof en = {
       materials: 'Материалы',
       oceans: 'Океаны',
       energy: 'Энергия',
+    },
+    tileLeads: {
+      all: 'Все карточки «проблема → решение» на одной полке.',
+      water: 'Орошение и болота, которые уже чистят и берегут воду.',
+      forests: 'Лесное хозяйство, которое оставляет лес стоять.',
+      waste: 'Органические отходы в энергию и полезный материал.',
+      cities: 'Прохладные крыши и улицы, которые снижают жару в городе.',
+      materials: 'Цемент с меньшим углеродом и другие материалы.',
+      oceans: 'Пластик и отходы — перехватить до моря.',
+      energy: 'Чистая энергия, которая уже работает в сообществах.',
     },
   },
   wildlifePage: {
@@ -375,9 +403,15 @@ const ru: typeof en = {
       'Современный взрослый человек на лугу — спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
     scientificName: 'Homo sapiens',
     tabsAria: 'Фильтр видов по статусу',
+    chooseStatus: 'Выберите статус',
     surviving: 'Выжившие',
     endangered: 'Под угрозой',
     extinct: 'Вымершие',
+    tiles: {
+      surviving: 'Всё ещё здесь: ареал или численность сдвинулись после расселения людей.',
+      endangered: 'Под угрозой сейчас — главным образом из-за людей.',
+      extinct: 'Исчезли. Большинство карточек — явно по вине людей.',
+    },
     survivingLead:
       'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей — охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
     endangeredLead:
@@ -598,6 +632,7 @@ const pl: typeof en = {
     title: 'Rozwiązania',
     lead: 'Każda karta łączy planetarny problem z technologią, która już działa. Filtruj według tematu, potem sprawdź dowody.',
     filterAria: 'Filtruj rozwiązania według tematu',
+    chooseTopic: 'Wybierz temat',
     all: 'Wszystkie',
     allKey: 'all',
     problem: 'Problem',
@@ -611,6 +646,16 @@ const pl: typeof en = {
       materials: 'Materiały',
       oceans: 'Oceany',
       energy: 'Energia',
+    },
+    tileLeads: {
+      all: 'Wszystkie karty problem → rozwiązanie na jednej półce.',
+      water: 'Nawadnianie i mokradła, które już czyszczą i oszczędzają wodę.',
+      forests: 'Leśnictwo, które zostawia lasy stojące.',
+      waste: 'Odpady organiczne w energię i użyteczny materiał.',
+      cities: 'Chłodniejsze dachy i ulice, które tną upał w mieście.',
+      materials: 'Cement o niższym śladzie i inne materiały budowlane.',
+      oceans: 'Plastik i odpady — zatrzymać zanim dotrą do morza.',
+      energy: 'Czysta energia, która już działa w społecznościach.',
     },
   },
   wildlifePage: {
@@ -633,9 +678,15 @@ const pl: typeof en = {
       'Współczesny dorosły człowiek na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
     scientificName: 'Homo sapiens',
     tabsAria: 'Filtruj gatunki według statusu',
+    chooseStatus: 'Wybierz status',
     surviving: 'Przetrwałe',
     endangered: 'Zagrożone',
     extinct: 'Wymarłe',
+    tiles: {
+      surviving: 'Wciąż tu są: zasięg lub liczebność przesunęły się po rozprzestrzenieniu ludzi.',
+      endangered: 'Zagrożone teraz — głównie przez ludzi.',
+      extinct: 'Zniknęły. Większość kart ma jasną przyczynę ludzką.',
+    },
     survivingLead:
       'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi — polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
     endangeredLead:
@@ -856,6 +907,7 @@ const lv: typeof en = {
     title: 'Risinājumi',
     lead: 'Katra karte savieno planētas problēmu ar tehnoloģiju, kas jau darbojas. Filtrē pēc tēmas un dodies pie pierādījumiem.',
     filterAria: 'Filtrēt risinājumus pēc tēmas',
+    chooseTopic: 'Izvēlies tēmu',
     all: 'Visi',
     allKey: 'all',
     problem: 'Problēma',
@@ -869,6 +921,16 @@ const lv: typeof en = {
       materials: 'Materiāli',
       oceans: 'Okeāni',
       energy: 'Enerģija',
+    },
+    tileLeads: {
+      all: 'Visas «problēma → risinājums» kartītes vienā plauktā.',
+      water: 'Apūdeņošana un mitrāji, kas jau tīra un taupa ūdeni.',
+      forests: 'Mežsaimniecība, kas atstāj mežus stāvus.',
+      waste: 'Organiskie atkritumi enerģijā un noderīgā materiālā.',
+      cities: 'Vēsāki jumti un ielas, kas samazina pilsētas karstumu.',
+      materials: 'Cements ar mazāku oglekli un citi būvmateriāli.',
+      oceans: 'Plastmasa un atkritumi — noķert pirms jūras.',
+      energy: 'Tīra enerģija, kas jau darbojas kopienu mērogā.',
     },
   },
   wildlifePage: {
@@ -891,9 +953,15 @@ const lv: typeof en = {
       'Mūsdienu pieaugušais cilvēks pļavā — mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
     scientificName: 'Homo sapiens',
     tabsAria: 'Filtrēt sugas pēc statusa',
+    chooseStatus: 'Izvēlies statusu',
     surviving: 'Izdzīvojušie',
     endangered: 'Apdraudētie',
     extinct: 'Izmirušie',
+    tiles: {
+      surviving: 'Joprojām šeit: areāls vai skaits pārbīdījās pēc cilvēku izplatīšanās.',
+      endangered: 'Apdraudēti tagad — galvenokārt cilvēku dēļ.',
+      extinct: 'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas.',
+    },
     survivingLead:
       'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',
     endangeredLead:

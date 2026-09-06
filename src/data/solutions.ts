@@ -1,3 +1,5 @@
+import type { HubIconName } from './hub';
+
 export const tagKeys = [
   'water',
   'forests',
@@ -9,6 +11,20 @@ export const tagKeys = [
 ] as const;
 
 export type TagKey = (typeof tagKeys)[number];
+
+export const solutionsHub = [
+  { key: 'all', icon: 'grid' },
+  { key: 'water', icon: 'droplet' },
+  { key: 'forests', icon: 'trees' },
+  { key: 'waste', icon: 'recycle' },
+  { key: 'cities', icon: 'city' },
+  { key: 'materials', icon: 'hex' },
+  { key: 'oceans', icon: 'wave' },
+  { key: 'energy', icon: 'bolt' },
+] as const satisfies ReadonlyArray<{
+  key: TagKey | 'all';
+  icon: HubIconName;
+}>;
 
 export type SolutionMeta = {
   slug: string;
@@ -36,3 +52,11 @@ export const solutionMeta: SolutionMeta[] = [
   { slug: 'river-interceptors', tag: 'oceans' },
   { slug: 'solar-microgrids', tag: 'energy', latest: true },
 ];
+
+export function isSolutionTag(value: string | undefined): value is TagKey {
+  return !!value && (tagKeys as readonly string[]).includes(value);
+}
+
+export function solutionTagPath(tag: TagKey | 'all'): string {
+  return tag === 'all' ? '/solutions' : `/solutions/${tag}`;
+}

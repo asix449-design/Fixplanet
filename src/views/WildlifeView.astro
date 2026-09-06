@@ -1,11 +1,13 @@
 ---
+import HubTile from '../components/HubTile.astro';
 import HumanDispersalMap from '../components/HumanDispersalMap.astro';
+import SectionHub from '../components/SectionHub.astro';
 import WildlifeCard from '../components/WildlifeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   humanHeroImage,
+  wildlifeHub,
   wildlifeImageSrc,
-  wildlifeStatusKeys,
   wildlifeStatusPath,
   type WildlifeStatus,
 } from '../data/wildlife';
@@ -41,24 +43,22 @@ const tabLeads = {
     <div class="section-backdrop-scrim"></div>
   </div>
 
-  <header class="wildlife-page-hero" aria-labelledby="wildlife-heading">
-    <div class="wildlife-page-hero-media" aria-hidden="true">
-      <img
-        src="/images/wildlife/wildlife-section-bg.jpg"
-        alt=""
-        width="1536"
-        height="1024"
-      />
-    </div>
-    <div class="wildlife-page-hero-shade"></div>
-    <div class="wrap wildlife-page-hero-copy">
-      <div class="eyebrow wildlife-on-dark">{ui.wildlifePage.eyebrow}</div>
-      <h1 id="wildlife-heading">{ui.wildlifePage.title}</h1>
-      <p>{ui.wildlifePage.lead}</p>
-    </div>
-  </header>
+  <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={3}>
+    {
+      wildlifeHub.map((item) => (
+        <HubTile
+          href={localizePath(wildlifeStatusPath(item.key), locale)}
+          icon={item.icon}
+          title={ui.wildlifePage[item.key]}
+          text={ui.wildlifePage.tiles[item.key]}
+          active={item.key === activeStatus}
+          dataStatus={item.key}
+        />
+      ))
+    }
+  </SectionHub>
 
-  <section class="section" aria-labelledby="our-species">
+  <section class="section section-hub-follow" aria-labelledby="our-species">
     <div class="wrap wildlife-hero">
       <figure class="wildlife-hero-art">
         <img
@@ -96,22 +96,7 @@ const tabLeads = {
 
   <section class="section" id="species-list">
     <div class="wrap wildlife-list-panel">
-      <div class="filters" role="tablist" aria-label={ui.wildlifePage.tabsAria}>
-        {
-          wildlifeStatusKeys.map((key) => (
-            <a
-              class:list={['filter-btn', { 'is-active': key === activeStatus }]}
-              href={localizePath(wildlifeStatusPath(key), locale)}
-              data-status={key}
-              role="tab"
-              aria-selected={key === activeStatus ? 'true' : 'false'}
-            >
-              {ui.wildlifePage[key]}
-            </a>
-          ))
-        }
-      </div>
-      <p class="wildlife-tab-lead" data-tab-lead>
+      <p class="wildlife-tab-lead wildlife-tab-lead-solo" data-tab-lead>
         {tabLeads[activeStatus]}
       </p>
       <div class="card-grid cols-3" id="wildlife-grid">
@@ -141,23 +126,24 @@ const tabLeads = {
     extinct: extinctHref,
   };
 
-  const buttons = document.querySelectorAll<HTMLAnchorElement>('[data-status]');
-  const cards = document.querySelectorAll<HTMLElement>('#wildlife-grid > div');
-  const lead = document.querySelector<HTMLElement>('[data-tab-lead]');
+  const buttons = document.querySelectorAll('[data-status]');
+  const cards = document.querySelectorAll('#wildlife-grid > div');
+  const lead = document.querySelector('[data-tab-lead]');
 
-  function show(status: string) {
+  function show(status) {
     if (!(status in hrefs)) return;
     buttons.forEach((button) => {
       const on = button.dataset.status === status;
       button.classList.toggle('is-active', on);
-      button.setAttribute('aria-selected', on ? 'true' : 'false');
+      if (on) button.setAttribute('aria-current', 'page');
+      else button.removeAttribute('aria-current');
     });
     cards.forEach((card) => {
-      const inner = card.querySelector<HTMLElement>('[data-wildlife-status]');
+      const inner = card.querySelector('[data-wildlife-status]');
       card.hidden = inner?.dataset.wildlifeStatus !== status;
     });
     if (lead && status in leads) {
-      lead.textContent = leads[status as keyof typeof leads];
+      lead.textContent = leads[status];
     }
   }
 
@@ -167,7 +153,11 @@ const tabLeads = {
       if (!status || !(status in hrefs)) return;
       event.preventDefault();
       show(status);
-      history.replaceState(null, '', hrefs[status as keyof typeof hrefs]);
+      history.replaceState(null, '', hrefs[status]);
+      document.getElementById('species-list')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
     });
   });
 

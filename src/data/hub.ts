@@ -1,0 +1,18 @@
+export type HubIconName =
+  | 'leaf'
+  | 'circuit'
+  | 'globe'
+  | 'scales'
+  | 'paw'
+  | 'trees'
+  | 'book'
+  | 'compass'
+  | 'bolt'
+  | 'droplet'
+  | 'recycle'
+  | 'city'
+  | 'hex'
+  | 'wave'
+  | 'grid'
+  | 'alert'
+  | 'gone';

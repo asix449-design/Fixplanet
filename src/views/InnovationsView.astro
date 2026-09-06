@@ -1,9 +1,11 @@
 ---
+import HubTile from '../components/HubTile.astro';
 import InnovationCard from '../components/InnovationCard.astro';
+import SectionHub from '../components/SectionHub.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
-  innovationAreaKeys,
   innovationAreaPath,
+  innovationHub,
   isInnovationArea,
   type InnovationArea,
 } from '../data/innovations';
@@ -24,14 +26,6 @@ const activeArea: InnovationArea | 'all' =
       : 'all';
 
 const items = getInnovations(locale);
-const filters = [
-  { key: 'all' as const, label: page.all, href: localizePath('/innovations', locale) },
-  ...innovationAreaKeys.map((key) => ({
-    key,
-    label: page.areas[key],
-    href: localizePath(innovationAreaPath(key), locale),
-  })),
-];
 ---
 
 <BaseLayout
@@ -50,40 +44,23 @@ const filters = [
     <div class="section-backdrop-scrim innovations-scrim"></div>
   </div>
 
-  <header class="wildlife-page-hero innovations-page-hero" aria-labelledby="innovations-heading">
-    <div class="wildlife-page-hero-media innovations-hero-media" aria-hidden="true">
-      <img
-        src="/images/innovations/innovations-section-bg.jpg"
-        alt=""
-        width="1920"
-        height="1280"
-      />
-    </div>
-    <div class="wildlife-page-hero-shade innovations-hero-shade"></div>
-    <div class="wrap wildlife-page-hero-copy">
-      <div class="eyebrow wildlife-on-dark">{page.eyebrow}</div>
-      <h1 id="innovations-heading">{page.title}</h1>
-      <p>{page.lead}</p>
-    </div>
-  </header>
+  <SectionHub kicker={page.chooseArea} label={page.filterAria} columns={3}>
+    {
+      innovationHub.map((item) => (
+        <HubTile
+          href={localizePath(innovationAreaPath(item.key), locale)}
+          icon={item.icon}
+          title={page.areas[item.key]}
+          text={page.tiles[item.key]}
+          active={item.key === activeArea}
+          dataArea={item.key}
+        />
+      ))
+    }
+  </SectionHub>
 
-  <section class="section" id="innovations-list">
+  <section class="section section-hub-follow" id="innovations-list">
     <div class="wrap wildlife-list-panel innovations-list-panel">
-      <div class="filters" role="tablist" aria-label={page.filterAria}>
-        {
-          filters.map((filter) => (
-            <a
-              class:list={['filter-btn', { 'is-active': filter.key === activeArea }]}
-              href={filter.href}
-              data-area={filter.key}
-              role="tab"
-              aria-selected={filter.key === activeArea ? 'true' : 'false'}
-            >
-              {filter.label}
-            </a>
-          ))
-        }
-      </div>
       <p class="wildlife-tab-lead" data-tab-lead>
         {page.areaLeads[activeArea]}
       </p>
@@ -116,24 +93,25 @@ const filters = [
     ai: aiHref,
   };
 
-  const buttons = document.querySelectorAll<HTMLAnchorElement>('[data-area]');
-  const cards = document.querySelectorAll<HTMLElement>('#innovations-grid > div');
-  const lead = document.querySelector<HTMLElement>('[data-tab-lead]');
+  const buttons = document.querySelectorAll('[data-area]');
+  const cards = document.querySelectorAll('#innovations-grid > div');
+  const lead = document.querySelector('[data-tab-lead]');
 
-  function show(area: string) {
+  function show(area) {
     if (!(area in hrefs)) return;
     buttons.forEach((button) => {
       const on = button.dataset.area === area;
       button.classList.toggle('is-active', on);
-      button.setAttribute('aria-selected', on ? 'true' : 'false');
+      if (on) button.setAttribute('aria-current', 'page');
+      else button.removeAttribute('aria-current');
     });
     cards.forEach((card) => {
-      const inner = card.querySelector<HTMLElement>('[data-innovation-area]');
+      const inner = card.querySelector('[data-innovation-area]');
       const itemArea = inner?.dataset.innovationArea;
       card.hidden = area !== 'all' && itemArea !== area;
     });
     if (lead && area in leads) {
-      lead.textContent = leads[area as keyof typeof leads];
+      lead.textContent = leads[area];
     }
   }
 
@@ -143,7 +121,11 @@ const filters = [
       if (!area || !(area in hrefs)) return;
       event.preventDefault();
       show(area);
-      history.replaceState(null, '', hrefs[area as keyof typeof hrefs]);
+      history.replaceState(null, '', hrefs[area]);
+      document.getElementById('innovations-list')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
     });
   });
 

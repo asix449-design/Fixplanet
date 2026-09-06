@@ -1,5 +1,9 @@
 ---
+import { isSolutionTag } from '../data/solutions';
 import SolutionsView from '../views/SolutionsView.astro';
+
+const tagParam = Astro.url.searchParams.get('tag');
+const tag = isSolutionTag(tagParam ?? undefined) ? tagParam : 'all';
 ---
 
-<SolutionsView />
+<SolutionsView tag={tag} />

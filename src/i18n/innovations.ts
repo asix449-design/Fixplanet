@@ -19,6 +19,8 @@ export type InnovationsPage = {
   title: string;
   lead: string;
   filterAria: string;
+  chooseArea: string;
+  tiles: Record<InnovationArea, string>;
   all: string;
   cardCta: string;
   back: string;
@@ -44,6 +46,12 @@ const pageEn: InnovationsPage = {
   title: 'Innovations',
   lead: 'Working attempts and serious laboratories — not press-kit miracles. Three shelves: ecology, energy, and artificial intelligence. Each card names the problem, the method, who is doing it, and what still fails.',
   filterAria: 'Filter innovations by area',
+  chooseArea: 'Choose an area',
+  tiles: {
+    ecology: 'Carbon, reefs, protein, plastic — living systems and their waste.',
+    energy: 'Fusion, geothermal, storage — energy that obeys thermodynamics.',
+    ai: 'Models for Earth systems, materials, grids, and recycling.',
+  },
   all: 'All',
   cardCta: 'Read the card →',
   back: '← Innovations',
@@ -86,6 +94,12 @@ const pageRu: InnovationsPage = {
   title: 'Инновации',
   lead: 'Серьёзные попытки и лаборатории — не чудеса из пресс-китов. Три полки: экология, энергия и искусственный интеллект. На каждой карточке — проблема, метод, кто этим занимается и что пока не получается.',
   filterAria: 'Фильтр инноваций по области',
+  chooseArea: 'Выберите область',
+  tiles: {
+    ecology: 'Углерод, рифы, белок, пластик — живые системы и их отходы.',
+    energy: 'Синтез, геотермия, накопители — энергия в рамках термодинамики.',
+    ai: 'Модели для систем Земли, материалов, сетей и сортировки.',
+  },
   all: 'Все',
   cardCta: 'Читать карточку →',
   back: '← Инновации',
@@ -128,6 +142,12 @@ const pagePl: InnovationsPage = {
   title: 'Innowacje',
   lead: 'Poważne próby i laboratoria — nie cuda z teczek prasowych. Trzy półki: ekologia, energia i sztuczna inteligencja. Na każdej karcie: problem, metoda, kto to robi i co jeszcze nie działa.',
   filterAria: 'Filtruj innowacje według dziedziny',
+  chooseArea: 'Wybierz dziedzinę',
+  tiles: {
+    ecology: 'Węgiel, rafy, białko, plastik — żywe systemy i ich odpady.',
+    energy: 'Fuzja, geotermia, magazyny — energia zgodna z termodynamiką.',
+    ai: 'Modele dla systemów Ziemi, materiałów, sieci i recyklingu.',
+  },
   all: 'Wszystkie',
   cardCta: 'Czytaj kartę →',
   back: '← Innowacje',
@@ -170,6 +190,12 @@ const pageLv: InnovationsPage = {
   title: 'Inovācijas',
   lead: 'Nopietni mēģinājumi un laboratorijas — ne preses komplektu brīnumi. Trīs plaukti: ekoloģija, enerģija un mākslīgais intelekts. Katrā kartītē: problēma, metode, kas to dara un kas vēl neizdodas.',
   filterAria: 'Filtrēt inovācijas pēc jomas',
+  chooseArea: 'Izvēlies jomu',
+  tiles: {
+    ecology: 'Ogleklis, rifi, olbaltumvielas, plastmasa — dzīvās sistēmas un to atkritumi.',
+    energy: 'Kodolsintēze, ģeotermija, uzkrāšana — enerģija termodinamikas ietvaros.',
+    ai: 'Modeļi Zemes sistēmām, materiāliem, tīkliem un šķirošanai.',
+  },
   all: 'Visas',
   cardCta: 'Lasīt kartīti →',
   back: '← Inovācijas',
