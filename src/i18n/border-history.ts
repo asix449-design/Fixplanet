@@ -49,7 +49,7 @@ const pageEn: BorderHistoryPage = {
   licenseLabel: 'License',
   yearLabel: 'Century step',
   mapYearLabel: 'Map dated',
-  nearestNote: 'Nearest openly licensed map — not an exact year-100 sheet.',
+  nearestNote: 'Nearest openly licensed map — not an exact year sheet.',
   coverage: {
     world: 'World reconstruction',
     'eastern-hemisphere': 'Eastern Hemisphere only — the Americas are a gap on this sheet',
