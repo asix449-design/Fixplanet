@@ -62,7 +62,7 @@ const pageEn: LawPage = {
   categoryMetaDescription: {
     ecology: 'Enacted, pending, and proposed laws on climate, pollution, forests, and circular economy.',
     ai: 'Safety, risk, transparency, and liability rules for AI systems — not tech cheerleading.',
-    animals: 'Wildlife trade, endangered species, and habitat instruments, with pending corridor bills and labeled ideas.',
+    animals: 'Wildlife trade, endangered species, and habitat instruments, plus pending corridor bills and labeled ideas — including a companion-animal proposal that is not law.',
   },
   eyebrow: 'Statute shelf',
   title: 'Law',
@@ -74,7 +74,7 @@ const pageEn: LawPage = {
   tiles: {
     ecology: 'Climate, pollution, forests, land, and circular-economy rules.',
     ai: 'Risk tiers, transparency, high-risk systems, liability — the safety shelf.',
-    animals: 'Wildlife trade, endangered species, habitats, and corridors.',
+    animals: 'Wildlife trade, endangered species, habitats, corridors, and one labeled companion-animal idea.',
   },
   cardCta: 'Read the article →',
   back: '← Law',
@@ -102,7 +102,7 @@ const pageEn: LawPage = {
       'Environmental, climate, pollution, forest, and circular-economy instruments. Restoration and clean-air statutes sit next to a plastics negotiation that is still not a treaty.',
     ai: 'Safety, risk management, transparency, and liability — not generic tech optimism. High-risk systems and frontier reporting, with a withdrawn liability idea labeled as an idea.',
     animals:
-      'Wildlife trade, endangered-species listing, habitat networks, and a live U.S. corridor bill. Habitat and species law, not a farmed-animal campaign page.',
+      'Wildlife trade, endangered-species listing, habitat networks, a live U.S. corridor bill, and one clearly labeled idea about intentional companion-animal cruelty parity. Habitat and species law first; the companion-animal card is an idea, not a statute.',
   },
   status: {
     existing: 'Existing / enacted',
@@ -133,7 +133,7 @@ const pageRu: LawPage = {
   categoryMetaDescription: {
     ecology: 'Принятые, рассматриваемые и предложенные законы о климате, загрязнении, лесах и циркулярной экономике.',
     ai: 'Правила безопасности, риска, прозрачности и ответственности для систем ИИ — не реклама технологий.',
-    animals: 'Торговля дикими видами, исчезающие виды и местообитания, плюс законопроекты о коридорах и помеченные идеи.',
+    animals: 'Торговля дикими видами, исчезающие виды и местообитания, плюс законопроекты о коридорах и помеченные идеи — в том числе предложение о животных-компаньонах, которое не закон.',
   },
   eyebrow: 'Полка статутов',
   title: 'Право',
@@ -145,7 +145,7 @@ const pageRu: LawPage = {
   tiles: {
     ecology: 'Климат, загрязнение, леса, земля и циркулярная экономика.',
     ai: 'Уровни риска, прозрачность, высокорисковые системы, ответственность.',
-    animals: 'Торговля дикими видами, исчезающие виды, местообитания и коридоры.',
+    animals: 'Торговля дикими видами, исчезающие виды, местообитания, коридоры и одна помеченная идея о животных-компаньонах.',
   },
   cardCta: 'Читать статью →',
   back: '← Право',
@@ -173,7 +173,7 @@ const pageRu: LawPage = {
       'Инструменты по среде, климату, загрязнению, лесам и циркулярной экономике. Рядом с законами о восстановлении и чистом воздухе — переговоры о пластике, которые ещё не договор.',
     ai: 'Безопасность, риск, прозрачность и ответственность — не технооптимизм. Высокий риск и отчётность по frontier-моделям; отозванная идея об ответственности помечена как идея.',
     animals:
-      'Торговля дикими видами, списки исчезающих, сети местообитаний и живой американский законопроект о коридорах. Право видов и местообитаний, не кампания о фермерских животных.',
+      'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете умышленной жестокости к животному-компаньону. Сначала право видов и местообитаний; карточка о компаньонах — идея, не статут.',
   },
   status: {
     existing: 'Действующие',
@@ -204,7 +204,7 @@ const pagePl: LawPage = {
   categoryMetaDescription: {
     ecology: 'Ustawy uchwalone, procedowane i proponowane: klimat, zanieczyszczenia, lasy, gospodarka o obiegu zamkniętym.',
     ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność systemów SI — nie reklama technologii.',
-    animals: 'Handel gatunkami, gatunki zagrożone, siedliska, projekty korytarzy i oznaczone idee.',
+    animals: 'Handel gatunkami, gatunki zagrożone, siedliska, projekty korytarzy i oznaczone idee — w tym propozycja o zwierzętach towarzyszących, która nie jest prawem.',
   },
   eyebrow: 'Półka statutów',
   title: 'Prawo',
@@ -216,7 +216,7 @@ const pagePl: LawPage = {
   tiles: {
     ecology: 'Klimat, zanieczyszczenia, lasy, ziemia i obieg zamknięty.',
     ai: 'Poziomy ryzyka, przejrzystość, systemy wysokiego ryzyka, odpowiedzialność.',
-    animals: 'Handel dzikimi gatunkami, gatunki zagrożone, siedliska i korytarze.',
+    animals: 'Handel dzikimi gatunkami, gatunki zagrożone, siedliska, korytarze i jedna oznaczona idea o zwierzętach towarzyszących.',
   },
   cardCta: 'Czytaj artykuł →',
   back: '← Prawo',
@@ -244,7 +244,7 @@ const pagePl: LawPage = {
       'Instrumenty środowiskowe, klimatyczne, antyzanieczyszczeniowe, leśne i cyrkularne. Obok ustaw o restytucji i czystym powietrzu — negocjacje o plastiku, które nie są jeszcze traktatem.',
     ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność — nie technologiczny optymizm. Wysokie ryzyko i raportowanie modeli granicznych; wycofana dyrektywa o odpowiedzialności jest ideą.',
     animals:
-      'Handel dzikimi gatunkami, listy zagrożonych, sieci siedlisk i żywy amerykański projekt o korytarzach. Prawo gatunków i siedlisk, nie kampania o zwierzętach hodowlanych.',
+      'Handel dzikimi gatunkami, listy zagrożonych, sieci siedlisk, żywy amerykański projekt o korytarzach i jedna jasno oznaczona idea o parytecie umyślnego znęcania się nad zwierzęciem towarzyszącym. Najpierw prawo gatunków i siedlisk; karta o zwierzętach towarzyszących jest ideą, nie statutem.',
   },
   status: {
     existing: 'Obowiązujące',
@@ -275,7 +275,7 @@ const pageLv: LawPage = {
   categoryMetaDescription: {
     ecology: 'Pieņemti, izskatīšanā un ierosināti likumi par klimatu, piesārņojumu, mežiem un aprites ekonomiku.',
     ai: 'MI sistēmu drošība, risks, caurredzamība un atbildība — ne tehnoloģiju reklāma.',
-    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridoru likumprojekti un marķētas idejas.',
+    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridoru likumprojekti un marķētas idejas — tostarp kompanjondzīvnieku priekšlikums, kas nav likums.',
   },
   eyebrow: 'Statūtu plaukts',
   title: 'Tiesības',
@@ -287,7 +287,7 @@ const pageLv: LawPage = {
   tiles: {
     ecology: 'Klimats, piesārņojums, meži, zeme un aprites ekonomika.',
     ai: 'Riska līmeņi, caurredzamība, augsta riska sistēmas, atbildība.',
-    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes un koridori.',
+    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridori un viena marķēta ideja par kompanjondzīvniekiem.',
   },
   cardCta: 'Lasīt rakstu →',
   back: '← Tiesības',
@@ -315,7 +315,7 @@ const pageLv: LawPage = {
       'Vides, klimata, piesārņojuma, mežu un aprites instrumenti. Blakus atjaunošanas un tīrā gaisa statūtiem — plastmasas sarunas, kas vēl nav līgums.',
     ai: 'Drošība, risks, caurredzamība un atbildība — ne tehnoloģiju optimisms. Augsts risks un robežmodeļu ziņošana; atsaukta atbildības ideja ir ideja.',
     animals:
-      'Savvaļas tirdzniecība, apdraudēto saraksti, dzīvotņu tīkli un dzīvs ASV koridoru likumprojekts. Sugu un dzīvotņu tiesības, ne lauksaimniecības dzīvnieku kampaņa.',
+      'Savvaļas tirdzniecība, apdraudēto saraksti, dzīvotņu tīkli, dzīvs ASV koridoru likumprojekts un viena skaidri marķēta ideja par tīšas cietsirdības pret kompanjondzīvnieku paritāti. Vispirms sugu un dzīvotņu tiesības; kompanjonu kartīte ir ideja, ne statūts.',
   },
   status: {
     existing: 'Spēkā / pieņemti',

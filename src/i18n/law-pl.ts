@@ -320,4 +320,25 @@ export const pl: Record<string, LawCopy> = {
     sourcesNote:
       'Congress.gov H.R. 2773 (117th) i S.1149 (118th); briefing NWF 2026, który wciąż traktuje uchwalenie w czasie przyszłym.',
   },
+  'companion-animal-homicide-parity': {
+    title: 'Parytet umyślnego znęcania się nad zwierzęciem towarzyszącym',
+    hook: 'Proponowana reguła: umyślne bicie, tortury albo sadystyczna krzywda psu albo kotu towarzyszącemu byłyby sądzone na tej samej skali karnej co odpowiadające przestępstwo przeciwko człowiekowi. Wypadki i zwierzęta zabite na drodze są poza zakresem. Żadne państwo tego nie uchwaliło. Ta karta jest ideą.',
+    imageAlt:
+      'Pręgowany kot na kamiennym murze i złoty pies za nim w Mosteiros na Azorach — zwierzęta towarzyszące, nie zdjęcie nazwanej sprawy',
+    jurisdiction: 'Idea (brak uchwalającej jurysdykcji)',
+    officialName: 'Proposed intentional companion-animal cruelty-parity rule (not a filed statute)',
+    citation:
+      'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
+    yearStatus:
+      'Idea / propozycja. Nie uchwalona. Nie rozpatrywana w nazwanym parlamencie. Żadna jurysdykcja nie zapisała pełnej równoważności pobicia albo zabójstwa człowieka za umyślne znęcanie się nad zwierzęciem towarzyszącym.',
+    what: 'Idea to reguła skali karnej tylko dla umyślnej przemocy. Umyślne bicie, tortury albo inna sadystyczna krzywda psu albo kotu towarzyszącemu siedziałaby na tej samej drabinie przestępstw co odpowiadające przestępstwo przeciwko człowiekowi — pobicie, tortury albo ciężki uszczerbek na zdrowiu; a jeśli umyślny czyn zabija — analog zabójstwa. To nie osobny niski zarzut znęcania się nad zwierzętami. To propozycja moralna i redakcyjna, nie tekst przyjęty przez jakikolwiek parlament. Szkoda przypadkowa jest poza ideą: potrącenie kota, psa albo szopa na drodze nie ma być traktowane jak zabójstwo człowieka w ruchu drogowym. Zwykłe kontratypy, które już istnieją w prawie karnym — stan wyższej konieczności, legalna eutanazja weterynaryjna, obrona konieczna — i tak trzeba by dopisać. Ta karta ich nie pisze.',
+    where:
+      'Nigdzie jako prawo. W wielu krajach umyślne znęcanie się nad zwierzęciem towarzyszącym już może być zbrodnią albo innym poważnym przestępstwem na podstawie ustaw o znęcaniu się nad zwierzętami. Te czyny siedzą w rozdziałach o ochronie zwierząt albo przestępstwach szczególnych. To nie tytuł o pobiciu albo zabójstwie człowieka, a górne kary są zwykle dużo niższe niż skala przemocy wobec człowieka. Kodeksy cywilne, które nazywają zwierzęta istotami czującymi albo „nie rzeczami”, zmieniają język własności. Nie przepisują artykułu o pobiciu albo morderstwie.',
+    effects:
+      'Tylko zamierzony skutek: silniejsze odstraszenie od umyślnego znęcania się nad zwierzętami towarzyszącymi i publiczny sygnał, że nie są zużywalną własnością. Nie ma statystyk skutku, bo nie ma statutu.',
+    caveats:
+      'Nie twierdź, że jakiekolwiek państwo ratyfikowało albo uchwaliło pełną równoważność pobicia albo zabójstwa człowieka za znęcanie się nad pupilami. Ten katalog nie znalazł żadnego. Nie czytaj tej karty jako obejmującej wypadki: zwierzę zabite na drodze nie jest w zakresie i nie jest zrównane z zabiciem człowieka w ruchu. Trzech rzeczywistych sąsiadów łatwo pomylić z tą ideą — i nie są nią. Po pierwsze, karne ustawy o znęcaniu się nad zwierzętami już karzą część umyślnej przemocy — na przykład amerykańska Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, do siedmiu lat za określony „animal crushing”. To zbrodnia znęcania, nie pobicie i nie morderstwo człowieka. Po drugie, cywilne reformy statusu uznają zwierzęta za czujące albo za „nie rzeczy”: portugalska Lei n.º 8/2017 wstawiła do kodeksu cywilnego art. 201.º-B („os animais são seres vivos dotados de sensibilidade”); niemiecki BGB § 90a („Tiere sind keine Sachen”) nadal stosuje przepisy o rzeczach, dopóki ustawa szczególna nie powie inaczej. Zmiana statusu to nie parytet skali przemocy. Po trzecie, ograniczona jurysprudencja „podmiotów praw” — Trybunał Konstytucyjny Ekwadoru, Sentencia 253-20-JH/22 (Estrellita, 27 stycznia 2022) — uznała dziką małpę wełnistą za podmiot praw w ramach praw Natury i powiedziała, że te prawa nie są równoważne prawom człowieka. To nie czyni bicia albo zabicia psa prawnie tożsamym z pobiciem albo morderstwem człowieka.',
+    sourcesNote:
+      '18 U.S.C. § 48 na Cornell LII / U.S. Code; PDF Diário da República Lei n.º 8/2017; gesetze-im-internet BGB § 90a; strona Trybunału Konstytucyjnego Ekwadoru dla Sentencia 253-20-JH/22.',
+  },
 };

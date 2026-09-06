@@ -320,4 +320,25 @@ export const lv: Record<string, LawCopy> = {
     sourcesNote:
       'Congress.gov H.R. 2773 (117th) un S.1149 (118th); NWF 2026. gada brīfings, kas joprojām tur pieņemšanu nākotnes laikā.',
   },
+  'companion-animal-homicide-parity': {
+    title: 'Tīšas cietsirdības pret kompanjondzīvnieku paritāte',
+    hook: 'Ierosināts noteikums: tīša sišana, spīdzināšana vai sadistisks kaitējums sunim vai kaķim — kompanjonam — tiktu tiesāta tajā pašā kriminālajā skalā kā atbilstošais noziegums pret cilvēku. Negadījumi un ceļa pārbraukšana ir ārpus tvēruma. Neviena valsts to nav pieņēmusi. Šī kartīte ir ideja.',
+    imageAlt:
+      'Svītrains kaķis uz akmens mūra un zeltains suns aiz tā Mosteirosā, Azoru salās — kompanjondzīvnieki, ne nosauktas lietas fotogrāfija',
+    jurisdiction: 'Ideja (nav pieņemošas jurisdikcijas)',
+    officialName: 'Proposed intentional companion-animal cruelty-parity rule (not a filed statute)',
+    citation:
+      'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
+    yearStatus:
+      'Ideja / priekšlikums. Nav pieņemts. Nav izskatīšanā nosauktā parlamentā. Neviena jurisdikcija nav ierakstījusi pilnu uzbrukuma vai slepkavības ekvivalenci par tīšu cietsirdību pret kompanjondzīvnieku.',
+    what: 'Ideja ir soda skalas noteikums tikai tīšai vardarbībai. Tīša sišana, spīdzināšana vai cits sadistisks kaitējums sunim vai kaķim — kompanjonam — stāvētu tajā pašā noziegumu kāpnē kā atbilstošais noziegums pret cilvēku — uzbrukums, spīdzināšana vai smags miesas bojājums; un, ja tīšais nodarījums nogalina, slepkavības analogs. Tas nav atsevišķs zema tarifa cietsirdības pret dzīvniekiem sastāvs. Tas ir morāls un redakcionāls priekšlikums, ne teksts, ko būtu pieņēmis kāds parlaments. Nejaušs kaitējums ir ārpus idejas: kaķa, suņa vai jenota notriešana uz ceļa nav jāuzskata par cilvēka transportlīdzekļa slepkavību. Parastie attaisnojumi, kas jau pastāv krimināltiesībās — galējā nepieciešamība, likumīga veterinārā eitanāzija, nepieciešamā aizstāvēšanās — tāpat būtu jāuzraksta. Šī kartīte tos neraksta.',
+    where:
+      'Nekur kā likums. Daudzās valstīs tīša cietsirdība pret kompanjondzīvnieku jau var būt smags noziegums pēc cietsirdības pret dzīvniekiem statūtiem. Šie sastāvi dzīvo dzīvnieku aizsardzības vai īpašo noziegumu nodaļās. Tie nav uzbrukuma vai slepkavības tituls, un maksimālie sodi parasti ir krietni zemāki par vardarbības pret cilvēku skalu. Civilkodeksi, kas sauc dzīvniekus par jūtīgiem vai „ne lietām”, maina īpašuma valodu. Tie nepārraksta uzbrukuma vai slepkavības pantu.',
+    effects:
+      'Tikai iecerētais efekts: spēcīgāks atturējums no tīšas cietsirdības pret kompanjondzīvniekiem un publisks signāls, ka tie nav izmetama manta. Iznākuma statistikas nav, jo statūta nav.',
+    caveats:
+      'Neapgalvo, ka kāda valsts ir ratificējusi vai pieņēmusi pilnu uzbrukuma vai slepkavības ekvivalenci par cietsirdību pret mājdzīvniekiem. Šis katalogs nevienu neatrada. Nelasi šo kartīti kā tādu, kas aptver negadījumus: ceļa pārbraukšana nav tvērumā un nav pielīdzināta cilvēka nogalināšanai satiksmē. Trīs reālus kaimiņus viegli sajaukt ar šo ideju — un tie nav tā. Pirmkārt, kriminālie cietsirdības pret dzīvniekiem statūti jau soda daļu tīšas vardarbības — piemēram, ASV Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, līdz septiņiem gadiem par norādīto „animal crushing”. Tā ir cietsirdības felonija, ne uzbrukums un ne slepkavība. Otrkārt, civiltiesiskā statusa reformas atzīst dzīvniekus par jūtīgiem vai „ne lietām”: Portugāles Lei n.º 8/2017 Civilkodeksā ielika 201.º-B. pantu („os animais são seres vivos dotados de sensibilidade”); Vācijas BGB § 90a („Tiere sind keine Sachen”) joprojām piemēro lietu noteikumus, ja īpašs likums nesaka citādi. Statusa maiņa nav vardarbības skalas paritāte. Treškārt, ierobežota „tiesību subjektu” judikatūra — Ekvadoras Konstitucionālā tiesa, Sentencia 253-20-JH/22 (Estrellita, 2022. gada 27. janvāris) — atzina savvaļas vilnaino pērtiķi par tiesību subjektu Dabas tiesību ietvarā un teica, ka šīs tiesības nav līdzvērtīgas cilvēka tiesībām. Tas nepadara suņa sišanu vai nogalināšanu juridiski identisku cilvēka piekaušanai vai slepkavībai.',
+    sourcesNote:
+      '18 U.S.C. § 48 Cornell LII / U.S. Code; Diário da República PDF Lei n.º 8/2017; gesetze-im-internet BGB § 90a; Ekvadoras Konstitucionālās tiesas lapa par Sentencia 253-20-JH/22.',
+  },
 };

@@ -576,6 +576,36 @@ export const lawMeta: LawMeta[] = [
       },
     ],
   },
+  {
+    slug: 'companion-animal-homicide-parity',
+    category: 'animals',
+    status: 'ideas',
+    year: 'idea',
+    image: img(
+      'companion-animal-homicide-parity.jpg',
+      'Jules Verne Times Two',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Cat_and_dog_companions,_Mosteiros,_S%C3%A3o_Miguel_Island,_Azores,_Portugal_(PPL1-Corrected).jpg',
+    ),
+    sources: [
+      {
+        label: 'U.S. Code — 18 U.S.C. § 48 (PACT Act; animal crushing, not human assault or homicide)',
+        url: 'https://www.law.cornell.edu/uscode/text/18/48',
+      },
+      {
+        label: 'Diário da República — Lei n.º 8/2017 (Portugal civil-status reform)',
+        url: 'https://files.diariodarepublica.pt/1s/2017/03/04500/0114501149.pdf',
+      },
+      {
+        label: 'gesetze-im-internet — BGB § 90a Tiere',
+        url: 'https://www.gesetze-im-internet.de/bgb/__90a.html',
+      },
+      {
+        label: 'Corte Constitucional del Ecuador — Sentencia 253-20-JH/22 (Estrellita)',
+        url: 'https://www.corteconstitucional.gob.ec/sentencia-253-20-jh-22/',
+      },
+    ],
+  },
 ];
 
 export function isLawCategory(value: string | undefined): value is LawCategory {
