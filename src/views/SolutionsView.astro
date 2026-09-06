@@ -1,53 +1,61 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import HubTile from '../components/HubTile.astro';
+import SectionHub from '../components/SectionHub.astro';
 import SolutionCard from '../components/SolutionCard.astro';
-import { tagKeys } from '../data/solutions';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  isSolutionTag,
+  solutionTagPath,
+  solutionsHub,
+  type TagKey,
+} from '../data/solutions';
 import { getSolutions, getUi, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  tag?: TagKey | 'all';
+}
 
 const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const solutions = getSolutions(locale);
-const filters = [
-  { key: ui.solutionsPage.allKey, label: ui.solutionsPage.all },
-  ...tagKeys.map((key) => ({ key, label: ui.solutionsPage.tags[key] })),
-];
+const requested = Astro.props.tag ?? Astro.url.searchParams.get('tag') ?? 'all';
+const activeTag: TagKey | 'all' =
+  requested === 'all' || !requested
+    ? 'all'
+    : isSolutionTag(requested)
+      ? requested
+      : 'all';
 ---
 
 <BaseLayout
   title={ui.solutionsPage.metaTitle}
   description={ui.solutionsPage.metaDescription}
+  theme="solutions"
 >
-  <header class="page-hero">
-    <div class="wrap">
-      <div class="eyebrow">{ui.solutionsPage.eyebrow}</div>
-      <h1>{ui.solutionsPage.title}</h1>
-      <p>
-        {ui.solutionsPage.lead}
-      </p>
-    </div>
-  </header>
+  <SectionHub kicker={ui.solutionsPage.chooseTopic} label={ui.solutionsPage.filterAria}>
+    {
+      solutionsHub.map((item) => (
+        <HubTile
+          href={localizePath(solutionTagPath(item.key), locale)}
+          icon={item.icon}
+          title={item.key === 'all' ? ui.solutionsPage.all : ui.solutionsPage.tags[item.key]}
+          text={ui.solutionsPage.tileLeads[item.key]}
+          active={item.key === activeTag}
+          dataFilter={item.key}
+        />
+      ))
+    }
+  </SectionHub>
 
-  <section class="section">
+  <section class="section section-hub-follow solutions-cards" id="solution-list">
     <div class="wrap">
-      <div class="filters" role="group" aria-label={ui.solutionsPage.filterAria}>
-        {
-          filters.map((filter, i) => (
-            <button
-              class:list={['filter-btn', { 'is-active': i === 0 }]}
-              type="button"
-              data-filter={filter.key}
-            >
-              {filter.label}
-            </button>
-          ))
-        }
-      </div>
       <div class="card-grid cols-3" id="solution-grid">
         {
           solutions.map((solution) => (
             <SolutionCard
               solution={solution}
               href={localizePath(`/solutions#${solution.slug}`, locale)}
+              hidden={activeTag !== 'all' && solution.tag !== activeTag}
             />
           ))
         }
@@ -56,18 +64,60 @@ const filters = [
   </section>
 </BaseLayout>
 
-<script>
-  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
-  const cards = document.querySelectorAll<HTMLElement>('#solution-grid [data-tag]');
+<script
+  define:vars={{
+    allHref: localizePath(solutionTagPath('all'), locale),
+    waterHref: localizePath(solutionTagPath('water'), locale),
+    forestsHref: localizePath(solutionTagPath('forests'), locale),
+    wasteHref: localizePath(solutionTagPath('waste'), locale),
+    citiesHref: localizePath(solutionTagPath('cities'), locale),
+    materialsHref: localizePath(solutionTagPath('materials'), locale),
+    oceansHref: localizePath(solutionTagPath('oceans'), locale),
+    energyHref: localizePath(solutionTagPath('energy'), locale),
+  }}
+>
+  const hrefs = {
+    all: allHref,
+    water: waterHref,
+    forests: forestsHref,
+    waste: wasteHref,
+    cities: citiesHref,
+    materials: materialsHref,
+    oceans: oceansHref,
+    energy: energyHref,
+  };
+
+  const buttons = document.querySelectorAll('[data-filter]');
+  const cards = document.querySelectorAll('#solution-grid [data-tag]');
+
+  function show(filter) {
+    if (!(filter in hrefs)) return;
+    buttons.forEach((button) => {
+      const on = button.dataset.filter === filter;
+      button.classList.toggle('is-active', on);
+      if (on) button.setAttribute('aria-current', 'page');
+      else button.removeAttribute('aria-current');
+    });
+    cards.forEach((card) => {
+      card.hidden = filter !== 'all' && card.dataset.tag !== filter;
+    });
+  }
 
   buttons.forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
       const filter = button.dataset.filter ?? 'all';
-      buttons.forEach((b) => b.classList.toggle('is-active', b === button));
-      cards.forEach((card) => {
-        const show = filter === 'all' || card.dataset.tag === filter;
-        card.hidden = !show;
+      if (!(filter in hrefs)) return;
+      event.preventDefault();
+      show(filter);
+      history.replaceState(null, '', hrefs[filter]);
+      document.getElementById('solution-list')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
       });
     });
   });
+
+  const query = new URLSearchParams(location.search).get('tag');
+  if (query && query in hrefs) show(query);
+  else show(document.querySelector('.hub-tile.is-active')?.dataset.filter ?? 'all');
 </script>

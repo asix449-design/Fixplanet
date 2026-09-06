@@ -18,7 +18,13 @@ interface Props {
   description?: string;
   image?: string;
   /** Distinctive section backdrop. Maps uses its own Earth hero instead. */
-  theme?: 'home' | 'wildlife' | 'wildlife-detail' | 'innovations' | 'innovations-detail';
+  theme?:
+    | 'home'
+    | 'wildlife'
+    | 'wildlife-detail'
+    | 'innovations'
+    | 'innovations-detail'
+    | 'solutions';
 }
 
 const locale = resolveLocale(Astro.currentLocale);

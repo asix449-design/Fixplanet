@@ -1,3 +1,5 @@
+import type { HubIconName } from './hub';
+
 export const wildlifeStatusKeys = [
   'surviving',
   'endangered',
@@ -5,6 +7,12 @@ export const wildlifeStatusKeys = [
 ] as const;
 
 export type WildlifeStatus = (typeof wildlifeStatusKeys)[number];
+
+export const wildlifeHub = [
+  { key: 'surviving', icon: 'paw' },
+  { key: 'endangered', icon: 'alert' },
+  { key: 'extinct', icon: 'gone' },
+] as const satisfies ReadonlyArray<{ key: WildlifeStatus; icon: HubIconName }>;
 
 export const iucnKeys = [
   'EX',

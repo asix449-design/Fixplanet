@@ -1,8 +1,12 @@
 ---
-import SolutionsView from '../../views/SolutionsView.astro';
+import { isSolutionTag } from '../../data/solutions';
 import { localeStaticPaths } from '../../i18n';
+import SolutionsView from '../../views/SolutionsView.astro';
 
 export const getStaticPaths = localeStaticPaths;
+
+const tagParam = Astro.url.searchParams.get('tag');
+const tag = isSolutionTag(tagParam ?? undefined) ? tagParam : 'all';
 ---
 
-<SolutionsView />
+<SolutionsView tag={tag} />

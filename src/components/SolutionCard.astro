@@ -5,16 +5,20 @@ import { getUi, localizePath, resolveLocale } from '../i18n';
 interface Props {
   solution: Solution;
   href?: string;
+  hidden?: boolean;
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
-const { solution, href = localizePath(`/solutions#${solution.slug}`, locale) } =
-  Astro.props;
+const {
+  solution,
+  href = localizePath(`/solutions#${solution.slug}`, locale),
+  hidden = false,
+} = Astro.props;
 const photo = `/images/solutions/${solution.slug}.jpg`;
 ---
 
-<article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug}>
+<article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug} hidden={hidden}>
   <a class="solution-card" href={href}>
     <div class="card-art">
       <img

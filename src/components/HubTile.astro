@@ -1,0 +1,45 @@
+---
+import HubIcon, { type HubIconName } from './HubIcon.astro';
+
+interface Props {
+  href: string;
+  icon: HubIconName;
+  title: string;
+  text: string;
+  badge?: string;
+  active?: boolean;
+  dataArea?: string;
+  dataStatus?: string;
+  dataFilter?: string;
+}
+
+const {
+  href,
+  icon,
+  title,
+  text,
+  badge,
+  active = false,
+  dataArea,
+  dataStatus,
+  dataFilter,
+} = Astro.props;
+---
+
+<a
+  class:list={['hub-tile', { 'is-active': active }]}
+  href={href}
+  aria-current={active ? 'page' : undefined}
+  {...(dataArea ? { 'data-area': dataArea } : {})}
+  {...(dataStatus ? { 'data-status': dataStatus } : {})}
+  {...(dataFilter ? { 'data-filter': dataFilter } : {})}
+>
+  <div class="hub-tile-top">
+    <div class="hub-icon" aria-hidden="true">
+      <HubIcon name={icon} />
+    </div>
+    {badge && <span class="hub-soon">{badge}</span>}
+  </div>
+  <h2>{title}</h2>
+  <p>{text}</p>
+</a>

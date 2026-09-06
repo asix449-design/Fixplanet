@@ -1,6 +1,14 @@
+import type { HubIconName } from './hub';
+
 export const innovationAreaKeys = ['ecology', 'energy', 'ai'] as const;
 
 export type InnovationArea = (typeof innovationAreaKeys)[number];
+
+export const innovationHub = [
+  { key: 'ecology', icon: 'leaf' },
+  { key: 'energy', icon: 'bolt' },
+  { key: 'ai', icon: 'circuit' },
+] as const satisfies ReadonlyArray<{ key: InnovationArea; icon: HubIconName }>;
 
 export const innovationStatusKeys = [
   'research',
