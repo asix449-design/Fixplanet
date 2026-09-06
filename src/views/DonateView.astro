@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { donateCheckoutUrl } from '../data/site';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getUi(locale).donate;
+const ui = getUi(locale);
+
+// TODO: when donateCheckoutUrl is a live Stripe / PayPal / Link URL, expose it as the primary CTA.
+const checkout = donateCheckoutUrl.trim();
+---
+
+<BaseLayout title={page.metaTitle} description={page.metaDescription}>
+  <section class="donate-page wrap">
+    <p class="eyebrow">{ui.nav.donate}</p>
+    <h1>{page.title}</h1>
+    <p class="donate-lead">{page.lead}</p>
+    <h2>{page.useHeading}</h2>
+    <p>{page.use}</p>
+    <h2>{page.statusHeading}</h2>
+    <p>{page.status}</p>
+    {
+      checkout ? (
+        <p>
+          <a class="btn btn-primary" href={checkout} rel="noopener noreferrer">
+            {ui.nav.donate}
+          </a>
+        </p>
+      ) : null
+    }
+    <p class="donate-thanks">{page.thanks}</p>
+    <p>
+      <a class="text-link" href={localizePath('/about', locale)}>{ui.nav.about} →</a>
+    </p>
+  </section>
+</BaseLayout>

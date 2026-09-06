@@ -5,5 +5,26 @@
     "artist": "Fix Planet home theme — solarpunk green city of the future (vertical forests, river valley, launch beam, planet), generated site asset after user reference",
     "license": "Site theme asset",
     "sourceUrl": ""
+  },
+  {
+    "slug": "earth-dark",
+    "file": "earth-dark.jpg",
+    "artist": "Darkened from NASA Blue Marble land surface (2048 px) for the Home globe color map",
+    "license": "Public domain (NASA) — restyled site texture",
+    "sourceUrl": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography"
+  },
+  {
+    "slug": "earth-emissive",
+    "file": "earth-emissive.jpg",
+    "artist": "Orange crack/night glow from NASA Blue Marble edges + Night Lights 2012 (VIIRS)",
+    "license": "Public domain (NASA) — restyled site texture",
+    "sourceUrl": "https://visibleearth.nasa.gov/images/79765/night-lights-2012-flat-map"
+  },
+  {
+    "slug": "earth-globe-still",
+    "file": "earth-globe-still.jpg",
+    "artist": "Orthographic still of the dark/emissive Home globe — fallback for reduced motion and no WebGL",
+    "license": "Public domain (NASA) — restyled site texture",
+    "sourceUrl": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography"
   }
 ]

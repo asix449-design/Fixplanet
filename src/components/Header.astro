@@ -32,6 +32,9 @@ const current = stripLocalePrefix(Astro.url.pathname.replace(/\/$/, '') || '/');
       </div>
     </nav>
     <div class="header-tools">
+      <a class="header-donate" href={localizePath('/donate', locale)}>
+        {ui.nav.donate}
+      </a>
       <div class="lang-switch-bar">
         <LanguageSwitcher />
       </div>

@@ -7,6 +7,13 @@ export const site = {
   bookAmazon: 'https://amzn.eu/d/0dZtkBPQ',
 };
 
+/**
+ * TODO: set this to the live Stripe / PayPal / Link checkout URL when payments open.
+ * Keep empty until then. The header Donate button always goes to /donate — never invent
+ * API keys or a fake card form.
+ */
+export const donateCheckoutUrl = '';
+
 export const nav = [
   { href: '/solutions', key: 'solutions' },
   { href: '/innovations', key: 'innovations' },

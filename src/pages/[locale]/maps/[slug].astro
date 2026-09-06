@@ -1,6 +1,8 @@
 ---
+import { HISTORY_OF_BORDERS_SLUG } from '../../../data/border-history';
 import { isMapCategory, mapCategoryKeys, mapMeta } from '../../../data/maps';
 import { getMapBySlug, otherLocales, resolveLocale } from '../../../i18n';
+import HistoryOfBordersView from '../../../views/HistoryOfBordersView.astro';
 import MapDetailView from '../../../views/MapDetailView.astro';
 import MapsView from '../../../views/MapsView.astro';
 
@@ -17,7 +19,9 @@ const map = slug && !isMapCategory(slug) ? getMapBySlug(locale, slug) : undefine
 ---
 
 {
-  isMapCategory(slug) ? (
+  slug === HISTORY_OF_BORDERS_SLUG ? (
+    <HistoryOfBordersView />
+  ) : isMapCategory(slug) ? (
     <MapsView category={slug} />
   ) : (
     map && <MapDetailView map={map} />

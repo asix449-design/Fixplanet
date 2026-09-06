@@ -1,8 +1,16 @@
 ---
 import MapCard from '../components/MapCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { HISTORY_OF_BORDERS_SLUG } from '../data/border-history';
 import { isMapCategory, mapCategoryKeys, mapCategoryPath, type MapCategory } from '../data/maps';
-import { getMaps, getMapsByCategory, getMapsPage, localizePath, resolveLocale } from '../i18n';
+import {
+  getBorderHistoryPage,
+  getMaps,
+  getMapsByCategory,
+  getMapsPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
 
 interface Props {
   category?: MapCategory | 'all';
@@ -10,6 +18,7 @@ interface Props {
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getMapsPage(locale);
+const borders = getBorderHistoryPage(locale);
 const requested = Astro.props.category ?? Astro.url.searchParams.get('category') ?? 'all';
 const activeCategory: MapCategory | 'all' =
   requested === 'all' || !requested
@@ -58,10 +67,32 @@ const filters = [
         }
       </nav>
       {
-        maps.length === 0 ? (
+        maps.length === 0 && activeCategory !== 'all' ? (
           <p class="wildlife-tab-lead">{page.empty}</p>
         ) : (
           <div class="card-grid cols-3" id="maps-grid">
+            {activeCategory === 'all' ? (
+              <article class="map-card-wrap" data-map-category={HISTORY_OF_BORDERS_SLUG}>
+                <a class="map-card" href={localizePath(`/maps/${HISTORY_OF_BORDERS_SLUG}`, locale)}>
+                  <div class="card-art map-card-art">
+                    <img
+                      src="/images/maps/borders/y1200.jpg"
+                      alt={borders.catalogAlt}
+                      width="640"
+                      height="320"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <span class="tag">{page.categories['history-of-borders']}</span>
+                    <h3>{borders.catalogTitle}</h3>
+                    <p class="map-card-meta">1–2020</p>
+                    <p class="wildlife-hook">{borders.catalogHook}</p>
+                    <span class="card-cta">{borders.catalogCta}</span>
+                  </div>
+                </a>
+              </article>
+            ) : null}
             {maps.map((item) => (
               <MapCard map={item} />
             ))}

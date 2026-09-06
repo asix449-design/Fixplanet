@@ -1,6 +1,7 @@
 ---
 import { homeHub } from '../data/site';
 import { getUi, localizePath, resolveLocale } from '../i18n';
+import EarthGlobe from './EarthGlobe.astro';
 import HubTile from './HubTile.astro';
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -9,7 +10,14 @@ const ui = getUi(locale);
 
 <section class="home-hub" aria-label={ui.home.heroAria}>
   <div class="wrap home-hub-inner">
-    <h1 class="home-hub-kicker">{ui.home.choosePath}</h1>
+    <div class="home-hero-row">
+      <div class="home-hero-copy">
+        <h1 class="home-hub-kicker">{ui.home.choosePath}</h1>
+        <p class="home-hub-slashes" aria-hidden="true">/////</p>
+        <p class="home-hub-tagline">{ui.home.tagline}</p>
+      </div>
+      <EarthGlobe label={ui.home.globeLabel} />
+    </div>
     <div class="hub-grid">
       {
         homeHub.map((item) => {

@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { borderHistoryPreviewSrc } from '../data/border-history';
+import {
+  getBorderHistoryFrames,
+  getBorderHistoryPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getBorderHistoryPage(locale);
+const frames = getBorderHistoryFrames(locale);
+const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
+---
+
+<BaseLayout title={page.metaTitle} description={page.metaDescription} image={firstPreview}>
+  <header class="maps-hero maps-hero-detail" aria-labelledby="borders-heading">
+    <div class="maps-hero-media" aria-hidden="true">
+      <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
+    </div>
+    <div class="maps-hero-shade"></div>
+    <div class="wrap maps-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/maps', locale)}>{page.back}</a>
+      </p>
+      <div class="eyebrow maps-eyebrow">{page.eyebrow}</div>
+      <h1 id="borders-heading">{page.title}</h1>
+      <p>{page.lead}</p>
+    </div>
+  </header>
+
+  <section class="section borders-timeline">
+    <div class="wrap">
+      <p class="borders-honesty">{page.honesty}</p>
+
+      <nav class="borders-scrubber" aria-label={page.scrubberAria}>
+        {
+          frames.map((frame) => (
+            <a class="borders-year" href={`#year-${frame.year}`}>
+              {frame.label}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="borders-frames">
+        {
+          frames.map((frame) => {
+            const preview = borderHistoryPreviewSrc(frame.preview);
+            return (
+              <article class="borders-frame map-detail" id={`year-${frame.year}`}>
+                <figure class="map-detail-art">
+                  <img src={preview} alt={frame.imageAlt} width="1600" height="800" />
+                  <figcaption>
+                    {frame.sourceOrg}. {page.mapYearLabel}: {frame.sourceYear}.
+                  </figcaption>
+                </figure>
+                <div class="prose map-detail-copy">
+                  <div class="meta-row">
+                    <span class="pill">{page.yearLabel}: {frame.label}</span>
+                    <span class="pill">{frame.sourceShort}</span>
+                    {frame.nearest ? <span class="pill">{page.nearestNote}</span> : null}
+                  </div>
+                  <h2>{frame.title}</h2>
+                  <p>{frame.caption}</p>
+                  <p class="wildlife-sources">{page.coverage[frame.coverage]}</p>
+                  <h3>{page.sourceLabel}</h3>
+                  <p class="wildlife-sources">
+                    <strong>{frame.sourceOrg}</strong>
+                    <br />
+                    {page.mapYearLabel}: {frame.sourceYear}
+                    <br />
+                    <a href={frame.sourceUrl} rel="noopener noreferrer">
+                      {frame.commonsUrl}
+                    </a>
+                  </p>
+                  <h3>{page.licenseLabel}</h3>
+                  <p>
+                    <a href={frame.licenseUrl} rel="noopener noreferrer">
+                      {frame.license}
+                    </a>
+                  </p>
+                </div>
+              </article>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

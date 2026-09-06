@@ -7,6 +7,7 @@ export const mapCategoryKeys = [
   'oil-gas',
   'minerals',
   'political',
+  'history-of-borders',
   'forests',
   'protected',
   'water',
