@@ -589,7 +589,7 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'U.S. Code — 18 U.S.C. § 48 (PACT Act; animal crushing, not homicide)',
+        label: 'U.S. Code — 18 U.S.C. § 48 (PACT Act; animal crushing, not human assault or homicide)',
         url: 'https://www.law.cornell.edu/uscode/text/18/48',
       },
       {

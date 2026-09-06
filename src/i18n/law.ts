@@ -102,7 +102,7 @@ const pageEn: LawPage = {
       'Environmental, climate, pollution, forest, and circular-economy instruments. Restoration and clean-air statutes sit next to a plastics negotiation that is still not a treaty.',
     ai: 'Safety, risk management, transparency, and liability — not generic tech optimism. High-risk systems and frontier reporting, with a withdrawn liability idea labeled as an idea.',
     animals:
-      'Wildlife trade, endangered-species listing, habitat networks, a live U.S. corridor bill, and one clearly labeled idea about companion-animal homicide parity. Habitat and species law first; the companion-animal card is an idea, not a statute.',
+      'Wildlife trade, endangered-species listing, habitat networks, a live U.S. corridor bill, and one clearly labeled idea about intentional companion-animal cruelty parity. Habitat and species law first; the companion-animal card is an idea, not a statute.',
   },
   status: {
     existing: 'Existing / enacted',
@@ -173,7 +173,7 @@ const pageRu: LawPage = {
       'Инструменты по среде, климату, загрязнению, лесам и циркулярной экономике. Рядом с законами о восстановлении и чистом воздухе — переговоры о пластике, которые ещё не договор.',
     ai: 'Безопасность, риск, прозрачность и ответственность — не технооптимизм. Высокий риск и отчётность по frontier-моделям; отозванная идея об ответственности помечена как идея.',
     animals:
-      'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете убийства животного-компаньона. Сначала право видов и местообитаний; карточка о компаньонах — идея, не статут.',
+      'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете умышленной жестокости к животному-компаньону. Сначала право видов и местообитаний; карточка о компаньонах — идея, не статут.',
   },
   status: {
     existing: 'Действующие',
@@ -244,7 +244,7 @@ const pagePl: LawPage = {
       'Instrumenty środowiskowe, klimatyczne, antyzanieczyszczeniowe, leśne i cyrkularne. Obok ustaw o restytucji i czystym powietrzu — negocjacje o plastiku, które nie są jeszcze traktatem.',
     ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność — nie technologiczny optymizm. Wysokie ryzyko i raportowanie modeli granicznych; wycofana dyrektywa o odpowiedzialności jest ideą.',
     animals:
-      'Handel dzikimi gatunkami, listy zagrożonych, sieci siedlisk, żywy amerykański projekt o korytarzach i jedna jasno oznaczona idea o parytecie zabójstwa zwierzęcia towarzyszącego. Najpierw prawo gatunków i siedlisk; karta o zwierzętach towarzyszących jest ideą, nie statutem.',
+      'Handel dzikimi gatunkami, listy zagrożonych, sieci siedlisk, żywy amerykański projekt o korytarzach i jedna jasno oznaczona idea o parytecie umyślnego znęcania się nad zwierzęciem towarzyszącym. Najpierw prawo gatunków i siedlisk; karta o zwierzętach towarzyszących jest ideą, nie statutem.',
   },
   status: {
     existing: 'Obowiązujące',
@@ -315,7 +315,7 @@ const pageLv: LawPage = {
       'Vides, klimata, piesārņojuma, mežu un aprites instrumenti. Blakus atjaunošanas un tīrā gaisa statūtiem — plastmasas sarunas, kas vēl nav līgums.',
     ai: 'Drošība, risks, caurredzamība un atbildība — ne tehnoloģiju optimisms. Augsts risks un robežmodeļu ziņošana; atsaukta atbildības ideja ir ideja.',
     animals:
-      'Savvaļas tirdzniecība, apdraudēto saraksti, dzīvotņu tīkli, dzīvs ASV koridoru likumprojekts un viena skaidri marķēta ideja par kompanjondzīvnieka slepkavības paritāti. Vispirms sugu un dzīvotņu tiesības; kompanjonu kartīte ir ideja, ne statūts.',
+      'Savvaļas tirdzniecība, apdraudēto saraksti, dzīvotņu tīkli, dzīvs ASV koridoru likumprojekts un viena skaidri marķēta ideja par tīšas cietsirdības pret kompanjondzīvnieku paritāti. Vispirms sugu un dzīvotņu tiesības; kompanjonu kartīte ir ideja, ne statūts.',
   },
   status: {
     existing: 'Spēkā / pieņemti',
