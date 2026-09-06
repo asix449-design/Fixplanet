@@ -35,11 +35,13 @@ const en = {
     forests: 'Forests',
     book: 'Book',
     about: 'About',
+    donate: 'Donate',
   },
   home: {
     heroAria: 'Site sections',
     choosePath: 'Choose a direction',
     tagline: 'Analysis. Action. Result. The planet will not wait.',
+    globeLabel: 'Interactive Earth — drag to rotate',
     heroAlt: 'Solarpunk green city of vertical forests in a mountain valley, with a river, launch beam, and a large planet in the sky',
     latest: 'Latest solutions',
     latestHeading: 'Real solutions. Measurable impact.',
@@ -267,6 +269,19 @@ const en = {
     solutionsLink: 'solutions',
     aboutLink: 'about Fix Planet',
   },
+  donate: {
+    metaTitle: 'Donate — Fix Planet',
+    metaDescription:
+      'Support Fix Planet when donations open. No checkout on this page yet.',
+    title: 'Support Fix Planet',
+    lead: 'Fix Planet is a living atlas. When donations open, they will keep the atlas public and independent.',
+    useHeading: 'Where support will go',
+    use: 'Research time, hosting, openly licensed maps, translations, and keeping the encyclopedia free to read. Not ads. Not a political campaign.',
+    statusHeading: 'Payments are not open yet',
+    status:
+      'There is no checkout on this page. We have not connected Stripe, PayPal, or Link. When a real processor is live, this page will send you there.',
+    thanks: 'If you want to help before then, share the atlas and the book.',
+  },
   footer: {
     blurb:
       'A living atlas of technologies that repair the planet. Clear problems, working solutions, real evidence.',
@@ -308,11 +323,13 @@ const ru: typeof en = {
     forests: 'Леса',
     book: 'Книга',
     about: 'О проекте',
+    donate: 'Поддержать',
   },
   home: {
     heroAria: 'Разделы сайта',
     choosePath: 'Выберите направление',
     tagline: 'Анализ. Действия. Результат. Планета не ждёт.',
+    globeLabel: 'Интерактивная Земля — перетащите, чтобы вращать',
     heroAlt: 'Соларпанк-город вертикальных лесов в горной долине: река, луч старта и большая планета в небе',
     latest: 'Новые решения',
     latestHeading: 'Реальные решения. Измеримый результат.',
@@ -543,6 +560,19 @@ const ru: typeof en = {
     solutionsLink: 'решения',
     aboutLink: 'о проекте Fix Planet',
   },
+  donate: {
+    metaTitle: 'Поддержать — Fix Planet',
+    metaDescription:
+      'Поддержите Fix Planet, когда откроются пожертвования. Оплаты на этой странице пока нет.',
+    title: 'Поддержать Fix Planet',
+    lead: 'Fix Planet — живой атлас. Когда пожертвования откроются, они помогут держать атлас открытым и независимым.',
+    useHeading: 'Куда пойдут средства',
+    use: 'Время на исследования, хостинг, карты с открытой лицензией, переводы и бесплатный доступ к энциклопедии. Не реклама. Не политическая кампания.',
+    statusHeading: 'Оплаты ещё нет',
+    status:
+      'На этой странице нет оформления платежа. Stripe, PayPal и Link ещё не подключены. Когда появится настоящий процессор, мы отправим вас туда.',
+    thanks: 'Пока можно помочь иначе — делиться атласом и книгой.',
+  },
   footer: {
     blurb:
       'Живой атлас технологий, которые восстанавливают планету. Ясные проблемы, работающие решения, реальные доказательства.',
@@ -584,11 +614,13 @@ const pl: typeof en = {
     forests: 'Lasy',
     book: 'Książka',
     about: 'O projekcie',
+    donate: 'Wesprzyj',
   },
   home: {
     heroAria: 'Działy serwisu',
     choosePath: 'Wybierz kierunek',
     tagline: 'Analiza. Działanie. Wynik. Planeta nie poczeka.',
+    globeLabel: 'Interaktywna Ziemia — przeciągnij, aby obrócić',
     heroAlt: 'Solarpunkowe zielone miasto pionowych lasów w górskiej dolinie: rzeka, promień startu i wielka planeta na niebie',
     latest: 'Najnowsze rozwiązania',
     latestHeading: 'Realne rozwiązania. Mierzalny efekt.',
@@ -819,6 +851,19 @@ const pl: typeof en = {
     solutionsLink: 'rozwiązania',
     aboutLink: 'o Fix Planet',
   },
+  donate: {
+    metaTitle: 'Wesprzyj — Fix Planet',
+    metaDescription:
+      'Wesprzyj Fix Planet, gdy darowizny będą otwarte. Na tej stronie nie ma jeszcze płatności.',
+    title: 'Wesprzyj Fix Planet',
+    lead: 'Fix Planet to żywy atlas. Gdy darowizny będą otwarte, utrzymają atlas publiczny i niezależny.',
+    useHeading: 'Na co pójdzie wsparcie',
+    use: 'Czas na badania, hosting, mapy na otwartej licencji, tłumaczenia i darmowy dostęp do encyklopedii. Nie reklamy. Nie kampania polityczna.',
+    statusHeading: 'Płatności nie są jeszcze otwarte',
+    status:
+      'Na tej stronie nie ma kasy. Nie podłączyliśmy Stripe, PayPal ani Link. Gdy pojawi się prawdziwy operator, ta strona tam Cię skieruje.',
+    thanks: 'Do tego czasu możesz pomóc, udostępniając atlas i książkę.',
+  },
   footer: {
     blurb:
       'Żywy atlas technologii, które naprawiają planetę. Jasne problemy, działające rozwiązania, realne dowody.',
@@ -860,11 +905,13 @@ const lv: typeof en = {
     forests: 'Meži',
     book: 'Grāmata',
     about: 'Par projektu',
+    donate: 'Atbalstīt',
   },
   home: {
     heroAria: 'Vietnes sadaļas',
     choosePath: 'Izvēlies virzienu',
     tagline: 'Analīze. Rīcība. Rezultāts. Planēta negaida.',
+    globeLabel: 'Interaktīva Zeme — velc, lai pagrieztu',
     heroAlt: 'Solarpanka zaļā pilsēta ar vertikāliem mežiem kalnu ielejā: upe, starta stars un liela planēta debesīs',
     latest: 'Jaunākie risinājumi',
     latestHeading: 'Īsti risinājumi. Izmērāms efekts.',
@@ -1094,6 +1141,19 @@ const lv: typeof en = {
     afterLinks: '.',
     solutionsLink: 'risinājumus',
     aboutLink: 'par Fix Planet',
+  },
+  donate: {
+    metaTitle: 'Atbalstīt — Fix Planet',
+    metaDescription:
+      'Atbalsti Fix Planet, kad ziedojumi būs atvērti. Šajā lapā vēl nav norēķinu.',
+    title: 'Atbalsti Fix Planet',
+    lead: 'Fix Planet ir dzīvais atlants. Kad ziedojumi būs atvērti, tie palīdzēs turēt atlantu atvērtu un neatkarīgu.',
+    useHeading: 'Kur ies atbalsts',
+    use: 'Pētījumu laiks, hostings, atklāti licencētas kartes, tulkojumi un bezmaksas enciklopēdija. Ne reklāmas. Ne politiska kampaņa.',
+    statusHeading: 'Maksājumi vēl nav atvērti',
+    status:
+      'Šajā lapā nav kases. Stripe, PayPal un Link vēl nav pieslēgti. Kad būs īsts procesors, šī lapa tevi tur aizvedīs.',
+    thanks: 'Līdz tam vari palīdzēt, daloties ar atlantu un grāmatu.',
   },
   footer: {
     blurb:

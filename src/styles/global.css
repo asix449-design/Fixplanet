@@ -178,6 +178,28 @@ p:last-child {
   flex-shrink: 0;
 }
 
+.header-donate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0.28rem 0.78rem;
+  border: 1.5px solid var(--lime);
+  background: var(--lime);
+  color: var(--black);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-donate:hover {
+  background: #d4ff3a;
+  color: var(--black);
+}
+
 .lang-switch {
   display: flex;
   align-items: center;
@@ -775,6 +797,37 @@ a.solution-card:hover {
   margin-inline: auto;
 }
 
+.donate-page {
+  padding: 3.2rem 0 4.6rem;
+  max-width: 40rem;
+}
+
+.donate-page h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.donate-page h2 {
+  margin: 1.8rem 0 0.55rem;
+  color: var(--lime);
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.donate-lead,
+.donate-page p {
+  color: var(--cream);
+  max-width: 38rem;
+}
+
+.donate-thanks {
+  color: var(--muted);
+}
+
 /* Footer */
 .site-footer {
   background: #000000;
@@ -854,6 +907,12 @@ a.solution-card:hover {
     margin-left: auto;
   }
 
+  .header-donate {
+    min-height: 32px;
+    padding: 0.22rem 0.62rem;
+    font-size: 0.64rem;
+  }
+
   .nav {
     display: none;
     position: absolute;
@@ -913,6 +972,27 @@ a.solution-card:hover {
   }
 }
 
+@media (max-width: 960px) {
+  .home-hero-row {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .earth-globe-stage {
+    width: min(58vw, 380px);
+  }
+
+  .home-hub-kicker,
+  .home-hub-slashes,
+  .home-hub-tagline {
+    text-align: center;
+  }
+
+  .home-hub-slashes {
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 640px) {
   .wrap {
     width: min(var(--max), calc(100% - 32px));
@@ -952,6 +1032,26 @@ a.solution-card:hover {
 
   .home-hub-inner {
     width: min(1180px, calc(100% - 32px));
+  }
+
+  .home-hero-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .earth-globe-stage {
+    width: min(72vw, 320px);
+  }
+
+  .home-hub-kicker,
+  .home-hub-slashes,
+  .home-hub-tagline {
+    text-align: center;
+  }
+
+  .home-hub-slashes {
+    margin-inline: auto;
   }
 
   .section-hub {
@@ -1446,7 +1546,7 @@ a.map-card:hover {
 
 .theme-home .section-backdrop img {
   object-position: 42% 28%;
-  filter: saturate(1.12) brightness(1.02);
+  filter: saturate(0.55) brightness(0.28);
   transform: none;
 }
 
@@ -1454,11 +1554,11 @@ a.map-card:hover {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.62) 0%,
-      rgba(0, 0, 0, 0.38) 22%,
-      rgba(0, 0, 0, 0.22) 48%,
-      rgba(0, 0, 0, 0.42) 78%,
-      rgba(0, 0, 0, 0.72) 100%
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.68) 22%,
+      rgba(0, 0, 0, 0.58) 48%,
+      rgba(0, 0, 0, 0.72) 78%,
+      rgba(0, 0, 0, 0.9) 100%
     );
 }
 
@@ -1489,6 +1589,52 @@ a.map-card:hover {
   width: min(1180px, calc(100% - 40px));
 }
 
+.home-hero-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 42%);
+  align-items: center;
+  gap: 1.2rem 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.home-hero-copy {
+  min-width: 0;
+}
+
+.earth-globe {
+  margin: 0;
+}
+
+.earth-globe-stage {
+  position: relative;
+  width: min(100%, 460px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.earth-globe-fallback,
+.earth-globe-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.earth-globe-fallback {
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.earth-globe-canvas {
+  touch-action: none;
+}
+
+.earth-globe-canvas[hidden] {
+  display: none;
+}
+
 .home-hub-kicker {
   margin: 0 0 0.35rem;
   color: var(--white);
@@ -1496,7 +1642,7 @@ a.map-card:hover {
   font-size: clamp(2.4rem, 7vw, 4.4rem);
   font-weight: 700;
   letter-spacing: 0.04em;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   line-height: 0.95;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
@@ -1504,21 +1650,21 @@ a.map-card:hover {
 
 .home-hub-slashes {
   display: block;
-  margin: 0 auto 0.7rem;
+  margin: 0 0 0.7rem;
   color: var(--lime);
   font-weight: 800;
   letter-spacing: 0.28em;
-  text-align: center;
+  text-align: left;
   font-size: 0.95rem;
 }
 
 .home-hub-tagline {
-  margin: 0 0 1.6rem;
+  margin: 0;
   color: #c8c8c0;
   font-size: 0.92rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
 }
