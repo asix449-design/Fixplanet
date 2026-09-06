@@ -24,3 +24,15 @@ export const features = [
   { href: '/maps', key: 'maps', icon: 'globe' },
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
 ] as const;
+
+/** Primary Home hub tiles — one entry per main nav destination. */
+export const homeHub = [
+  { href: '/solutions', key: 'solutions', icon: 'leaf' },
+  { href: '/innovations', key: 'innovations', icon: 'circuit' },
+  { href: '/maps', key: 'maps', icon: 'globe' },
+  { href: '/law', key: 'law', icon: 'scales', soon: true },
+  { href: '/wildlife', key: 'wildlife', icon: 'paw' },
+  { href: '/forests', key: 'forests', icon: 'trees', soon: true },
+  { href: '/book', key: 'book', icon: 'book' },
+  { href: '/about', key: 'about', icon: 'compass' },
+] as const;

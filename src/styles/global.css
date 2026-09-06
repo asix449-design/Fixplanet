@@ -803,6 +803,7 @@ a.solution-card:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .hub-grid,
   .feature-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -903,24 +904,28 @@ a.solution-card:hover {
       );
   }
 
-  .theme-home .hero-gradient {
-    background:
-      linear-gradient(
-        180deg,
-        rgba(244, 247, 242, 0.42) 0%,
-        rgba(244, 247, 242, 0.12) 36%,
-        rgba(8, 18, 16, 0.2) 100%
-      );
-  }
-
   .hero-copy {
     padding: 4.2rem 0 3.4rem;
     max-width: none;
   }
 
-  .theme-home .hero-copy {
-    padding: 1.45rem 1.15rem 1.55rem;
-    max-width: none;
+  .home-hub {
+    min-height: 0;
+    align-items: flex-start;
+    padding: 1.15rem 0 1.7rem;
+  }
+
+  .home-hub-inner {
+    width: min(1180px, calc(100% - 32px));
+  }
+
+  .hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-tile {
+    min-height: 132px;
+    padding: 1.1rem 1.05rem 1.15rem;
   }
 
   .home-panel {
@@ -1391,12 +1396,12 @@ a.map-card:hover {
 
 /* Section themes — one distinctive backdrop per major section */
 .theme-home {
-  background: #9eb8c4;
+  background: #1a2e28;
 }
 
 .theme-home .section-backdrop img {
   object-position: 42% 28%;
-  filter: saturate(1.06) brightness(0.96);
+  filter: saturate(1.12) brightness(1.02);
   transform: none;
 }
 
@@ -1404,17 +1409,16 @@ a.map-card:hover {
   background:
     linear-gradient(
       180deg,
-      rgba(244, 247, 242, 0.28) 0%,
-      rgba(244, 247, 242, 0.08) 22%,
-      rgba(8, 18, 16, 0.1) 52%,
-      rgba(244, 247, 242, 0.16) 78%,
-      rgba(244, 247, 242, 0.28) 100%
-    ),
-    linear-gradient(90deg, rgba(244, 247, 242, 0.22) 0%, transparent 46%);
+      rgba(8, 16, 14, 0.28) 0%,
+      rgba(8, 16, 14, 0.06) 18%,
+      transparent 38%,
+      transparent 68%,
+      rgba(8, 16, 14, 0.22) 100%
+    );
 }
 
 .theme-home .site-header {
-  background: rgba(244, 247, 242, 0.94);
+  background: rgba(244, 247, 242, 0.9);
 }
 
 .theme-home main {
@@ -1427,28 +1431,108 @@ a.map-card:hover {
   z-index: 2;
 }
 
-.theme-home .hero {
-  background: transparent;
+.home-hub {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - var(--header-h));
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 0 2.2rem;
 }
 
-.theme-home .hero-gradient {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(244, 247, 242, 0.22) 0%,
-      rgba(244, 247, 242, 0.08) 34%,
-      transparent 58%
-    ),
-    linear-gradient(180deg, rgba(244, 247, 242, 0.32) 0%, transparent 20%, transparent 78%, rgba(8, 18, 16, 0.16) 100%);
+.home-hub-inner {
+  width: min(1180px, calc(100% - 40px));
 }
 
-.theme-home .hero-copy {
-  background: rgba(244, 247, 242, 0.94);
-  border: 1px solid rgba(20, 34, 26, 0.06);
-  border-radius: calc(var(--radius) + 8px);
-  box-shadow: var(--shadow);
-  padding: 2rem 1.85rem 2.15rem;
-  max-width: 36rem;
+.home-hub-kicker {
+  margin: 0 0 1.15rem;
+  color: #f4f7f2;
+  font-size: 0.98rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow: 0 2px 14px rgba(8, 14, 12, 0.55);
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.95rem;
+}
+
+.hub-tile {
+  display: flex;
+  flex-direction: column;
+  min-height: 176px;
+  padding: 1.2rem 1.15rem 1.25rem;
+  background: rgba(8, 18, 16, 0.58);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 247, 242, 0.16);
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow: 0 12px 28px rgba(8, 14, 12, 0.22);
+  color: var(--cream);
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.hub-tile:hover {
+  transform: translateY(-3px);
+  background: rgba(10, 28, 22, 0.72);
+  border-color: rgba(63, 163, 106, 0.62);
+  box-shadow: 0 16px 34px rgba(8, 14, 12, 0.3);
+  color: var(--cream);
+}
+
+.hub-tile-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.hub-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--green);
+  color: var(--white);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.hub-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hub-soon {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(244, 247, 242, 0.14);
+  color: #d8efe0;
+  border: 1px solid rgba(244, 247, 242, 0.18);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.55rem;
+}
+
+.hub-tile h2 {
+  color: var(--cream);
+  font-size: 1.28rem;
+  margin: 0 0 0.35rem;
+}
+
+.hub-tile p {
+  margin: 0;
+  color: rgba(244, 247, 242, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.4;
 }
 
 .home-band {
@@ -1456,6 +1540,11 @@ a.map-card:hover {
   z-index: 1;
   padding-top: 1.4rem;
   padding-bottom: 2.4rem;
+}
+
+.home-band-quiet {
+  padding-top: 0.4rem;
+  padding-bottom: 1.5rem;
 }
 
 .home-panel {
@@ -1466,8 +1555,50 @@ a.map-card:hover {
   padding: 1.55rem 1.55rem 1.7rem;
 }
 
+.home-panel-quiet,
 .theme-home .feature-strip.home-panel {
-  padding: 1.45rem 1.4rem 1.55rem;
+  background: rgba(8, 18, 16, 0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(244, 247, 242, 0.12);
+  box-shadow: 0 10px 26px rgba(8, 14, 12, 0.2);
+}
+
+.home-panel-quiet {
+  padding: 1.15rem 1.2rem 1.3rem;
+}
+
+.theme-home .feature-strip.home-panel {
+  padding: 1.05rem 1.15rem 1.15rem;
+}
+
+.theme-home .home-panel-quiet .eyebrow,
+.theme-home .home-panel-quiet .section-head h2 {
+  color: var(--cream);
+}
+
+.theme-home .home-panel-quiet .eyebrow {
+  color: #8fd4a8;
+}
+
+.theme-home .home-panel-quiet .text-link {
+  color: #8fd4a8;
+}
+
+.theme-home .home-panel-quiet .section-head h2 {
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+}
+
+.theme-home .feature .feature-title {
+  color: var(--cream);
+}
+
+.theme-home .feature .feature-text {
+  color: rgba(244, 247, 242, 0.78);
+}
+
+.theme-home .feature:hover .feature-title {
+  color: #8fd4a8;
 }
 
 .theme-wildlife,
@@ -1784,7 +1915,8 @@ a.map-card:hover {
   .solution-card,
   .wildlife-card,
   .innovation-card,
-  .map-card {
+  .map-card,
+  .hub-tile {
     transition: none;
   }
 }

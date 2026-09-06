@@ -10,7 +10,7 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 
 | Route | Status |
 | --- | --- |
-| `/` | Home — full-page solarpunk city backdrop (fixed), cream readability panels for hero / latest solutions / feature strip |
+| `/` | Home — portal hub of large section tiles on a full-page solarpunk city backdrop (fixed, light scrim). Latest solutions and a short feature strip sit quieter below |
 | `/solutions` | All problem → technology cards, with topic filters |
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
@@ -103,7 +103,7 @@ Do not point the apex at GitHub Pages or a third-party host while Cloudflare Pag
 ## Design notes
 
 - Brand greens: primary `#1B7A4E`, leaf `#3FA36A`, cream `#F4F7F2`
-- Home atmosphere: `public/images/home/green-city-future-bg.jpg` is a fixed full-page backdrop on `/` and locale homes (`theme="home"`). Cream hero/solution/feature panels keep type readable; the meadow assets remain in `public/images/` but are not the Home page atmosphere.
+- Home atmosphere: `public/images/home/green-city-future-bg.jpg` is a fixed full-page backdrop on `/` and locale homes (`theme="home"`). A light dark vignette keeps the city visible; dark glass hub tiles (nav destinations) are the primary entry. Latest-solution cards stay on a quieter translucent band. Meadow assets remain in `public/images/` but are not the Home page atmosphere.
 - Section themes: Maps uses NASA Blue Marble; Wildlife uses `public/images/wildlife/wildlife-section-bg.jpg` with a cream/dark scrim; Innovations uses `public/images/innovations/innovations-section-bg.jpg` (Earth + circuits, generated site theme) with a stronger cream/dark scrim. Other sections keep their own themes.
 - Typeface: Inter
 

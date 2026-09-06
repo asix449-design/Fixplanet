@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHub from '../components/HomeHub.astro';
 import FeatureStrip from '../components/FeatureStrip.astro';
 import SolutionCard from '../components/SolutionCard.astro';
 import { getLatestSolutions, getUi, localizePath, resolveLocale } from '../i18n';
@@ -20,30 +21,10 @@ const latestSolutions = getLatestSolutions(locale);
     <div class="section-backdrop-scrim home-scrim"></div>
   </div>
 
-  <section class="hero" aria-label={ui.home.heroAria}>
-    <div class="hero-gradient"></div>
-    <div class="wrap hero-copy">
-      <h1>{ui.home.heroTitle}</h1>
-      <p class="hero-lead">
-        {ui.home.heroLead}
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href={localizePath('/solutions', locale)}
-          >{ui.home.browseSolutions}</a
-        >
-        <a class="btn btn-outline" href={localizePath('/book', locale)}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <path d="M5 4.5h10.5A3.5 3.5 0 0 1 19 8v12.5H8.5A3.5 3.5 0 0 0 5 17V4.5z"></path>
-            <path d="M5 17a3.5 3.5 0 0 1 3.5-3.5H19"></path>
-          </svg>
-          {ui.home.readBook}
-        </a>
-      </div>
-    </div>
-  </section>
+  <HomeHub />
 
-  <section class="section home-band" aria-labelledby="latest-heading">
-    <div class="wrap home-panel">
+  <section class="section home-band home-band-quiet" aria-labelledby="latest-heading">
+    <div class="wrap home-panel home-panel-quiet">
       <div class="section-head">
         <div>
           <div class="eyebrow">
