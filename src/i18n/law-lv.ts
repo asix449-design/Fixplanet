@@ -80,6 +80,26 @@ export const lv: Record<string, LawCopy> = {
     sourcesNote:
       'Primārais krievu teksts FAOLEX (tuk80588.pdf); UNEP LEAP kataloga kopsavilkums tam pašam dekrētam.',
   },
+  'uzbekistan-compensatory-planting': {
+    title: 'Uzbekistāna — 100 stādi par nelikumīgu ciršanu',
+    hook: '2024. gada likums: vismaz simts stādu pēc vērtīga, ārpus meža fonda esoša koka nelikumīgas nociršanas. Sods un kopšanas pienākums — ne ikgadēja pilsoņa kvota.',
+    imageAlt:
+      'Ziedoši aprikožu koki Taškentas ielā — pilsētas koki tāda veida, kādus aizsargā flora likuma grozījums, ne konkrētas lietas fotogrāfija',
+    jurisdiction: 'Uzbekistāna',
+    officialName: 'Par augu valsts aizsardzību un izmantošanu (ar grozījumiem)',
+    citation:
+      'Uzbekistānas Republikas likums Nr. ЗРУ-916 / O‘RQ-916 (2024. gada 29. februāris), kas ievieto 49.¹ pantu likumā «Par augu valsts aizsardzību un izmantošanu» (Nr. 543-I, 1997. gada 26. decembris, redakcijā ЗРУ-409, 2016. gada 21. septembris)',
+    yearStatus:
+      'Likumdošanas palāta 2023. gada 21. novembrī; Senāts 2023. gada 20. decembrī; parakstīts 2024. gada 29. februārī. Oficiālā publikācija 2024. gada 1. martā (nacionālā datubāze Nr. 03/24/916/0167). 49.¹ pants no publikācijas. 49.² pants par finansiālām sankcijām — pēc trim mēnešiem.',
+    what: '49.¹ pants, ko ievieto ЗРУ-916, nosaka: ja vērtīgas koku vai krūmu sugas, kas nav valsts meža fondā, tiek nelikumīgi nocirstas vai iznīcinātas, pārkāpējam pēc Ekoloģijas, vides aizsardzības un klimata pārmaiņu ministrijas lēmuma par saviem līdzekļiem jaiestāda vismaz simts stādu, kas pēc vērtības nav sliktāki par nocirstajiem, par katru šādu koku vai krūmu. Stāda ciršanas vietā; ja zemes nepietiek, pārējais — citā vietā tajā pašā administratīvi teritoriālajā vienībā. Kopšana — trīs gadi. 49.² pants juridiskajām personām pievieno naudas sodus no 100 līdz 300 bāzes aprēķina vienībām. Tas pats likums paaugstināja arī daļu administratīvā kodeksa sodu. Tas ir kompensācijas pienākums pēc pārkāpuma, ne ikgadēja stādīšanas kvota katram pilsonim.',
+    where: 'Uzbekistāna, vērtīgiem kokiem un krūmiem ārpus valsts meža fonda. Pats akts nepārraksta meža fonda noteikumus. Nacionālais apzaļumošanas projekts «Yashil Makon», minēts ЗРУ-916 preambulā, ir atsevišķa programma.',
+    effects:
+      'Iecerētie efekti, kā raksta pats grozījumu likums: atturēt nelikumīgu ciršanu, palielināt atbildību un vienādot piemērošanu. Šī lapa neizdomā 49.¹ panta ietvaros iestādīto stādu skaitu vai ieaugšanas rādītāju.',
+    caveats:
+      '«Vismaz simts» attiecas uz vērtīgu, ārpus meža fonda esošu koku nelikumīgu ciršanu vai iznīcināšanu — ne uz katru koku valstī un ne kā ikgadēju pilsoņa pienākumu. Nesajauc to ar Turkmenistānas 1992. gada divu koku dekrētu, ar Tadžikistānas personīgo kvotu (šajā katalogā nav verificēta tāda statūta) vai ar Filipīnu izlaiduma likumprojektu. Vērtības, sugu, vietas un termiņu kārtību var noteikt Ministru kabinets; tie nav šī panta teksts.',
+    sourcesNote:
+      'ЗРУ-916 primārais teksts lex.uz (krievu un uzbeku); konsolidētā flora likuma lapa ar 49.¹ pantu; UzDaily angļu piezīme par tā paša likuma izskatīšanu Senātā.',
+  },
   'un-plastics-treaty': {
     title: 'ANO plastmasas līgums (INC process)',
     hook: 'Mandāts sarunām par juridiski saistošu plastmasas instrumentu. Saskaņota līguma teksta nav.',

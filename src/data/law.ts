@@ -199,6 +199,36 @@ export const lawMeta: LawMeta[] = [
     ],
   },
   {
+    slug: 'uzbekistan-compensatory-planting',
+    category: 'ecology',
+    status: 'existing',
+    year: '2024',
+    image: img(
+      'uzbekistan-compensatory-planting.jpg',
+      'Zahro designer',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:O%27rik_daraxti_gullagan_xolati.jpg',
+    ),
+    sources: [
+      {
+        label: 'lex.uz — ЗРУ-916 of 29 February 2024 (Russian)',
+        url: 'https://lex.uz/ru/docs/6822342',
+      },
+      {
+        label: 'lex.uz — O‘RQ-916 of 29 February 2024 (Uzbek)',
+        url: 'https://lex.uz/docs/-6822348',
+      },
+      {
+        label: 'lex.uz — Law on the protection and use of flora, Article 49¹ (as amended)',
+        url: 'https://lex.uz/docs/3030360',
+      },
+      {
+        label: 'UzDaily — Senate consideration of the same amending law',
+        url: 'https://www.uzdaily.uz/en/uzbekistan-increases-penalties-for-illegal-tree-cutting/',
+      },
+    ],
+  },
+  {
     slug: 'un-plastics-treaty',
     category: 'ecology',
     status: 'pending',

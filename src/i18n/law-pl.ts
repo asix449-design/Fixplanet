@@ -80,6 +80,26 @@ export const pl: Record<string, LawCopy> = {
     sourcesNote:
       'Pierwotny tekst rosyjski na FAOLEX (tuk80588.pdf); abstrakt katalogowy UNEP LEAP tego samego dekretu.',
   },
+  'uzbekistan-compensatory-planting': {
+    title: 'Uzbekistan — 100 sadzonek za nielegalny wyrąb',
+    hook: 'Ustawa z 2024: co najmniej sto sadzonek po nielegalnym wycięciu cennego drzewa poza funduszem leśnym. Kara i obowiązek pielęgnacji — nie roczna kwota obywatelska.',
+    imageAlt:
+      'Kwitnące morele na ulicy Taszkentu — drzewa miejskie tego rodzaju, które chroni nowelizacja ustawy o świecie roślinnym, nie zdjęcie konkretnej sprawy',
+    jurisdiction: 'Uzbekistan',
+    officialName: 'O ochronie i użytkowaniu świata roślinnego (z nowelizacją)',
+    citation:
+      'Ustawa Republiki Uzbekistanu nr ЗРУ-916 / O‘RQ-916 z 29 lutego 2024, wstawiająca art. 49¹ do ustawy „O ochronie i użytkowaniu świata roślinnego” (nr 543-I z 26 grudnia 1997, w redakcji ЗРУ-409 z 21 września 2016)',
+    yearStatus:
+      'Izba Ustawodawcza 21 listopada 2023; Senat 20 grudnia 2023; podpis 29 lutego 2024. Publikacja urzędowa 1 marca 2024 (krajowa baza nr 03/24/916/0167). Art. 49¹ od publikacji. Art. 49² o sankcjach finansowych — po trzech miesiącach.',
+    what: 'Art. 49¹, wstawiony przez ЗРУ-916, stanowi: jeśli cenne gatunki drzew lub krzewów poza państwowym funduszem leśnym zostaną nielegalnie wycięte lub zniszczone, sprawca musi na decyzję organu Ministerstwa Ekologii, Ochrony Środowiska i Zmian Klimatu posadzić na własny koszt co najmniej sto sadzonek o wartości nie niższej niż wycięte — za każde takie drzewo lub krzew. Sadzenie jest w miejscu wyrębu; gdy brakuje ziemi, reszta idzie w inne miejsce tej samej jednostki administracyjno-terytorialnej. Pielęgnacja trwa trzy lata. Art. 49² dodaje grzywny 100–300 bazowych jednostek rozliczeniowych dla osób prawnych. Ta sama ustawa podniosła też część kar w kodeksie wykroczeń administracyjnych. To obowiązek kompensacyjny po wykroczeniu, nie roczna kwota sadzenia dla każdego obywatela.',
+    where: 'Uzbekistan, dla cennych drzew i krzewów poza państwowym funduszem leśnym. Sam akt nie przepisuje reguł funduszu leśnego. Ogólnokrajowy projekt „Yashil Makon”, wymieniony w preambule ЗРУ-916, to osobny program.',
+    effects:
+      'Zamierzone skutki, jak pisze sama nowelizacja: odstraszać nielegalny wyrąb, podnieść odpowiedzialność i ujednolicić praktykę. Ta strona nie wymyśla liczby sadzonek posadzonych na podstawie art. 49¹ ani wskaźnika przeżywalności.',
+    caveats:
+      '„Co najmniej sto” dotyczy nielegalnego wyrębu lub zniszczenia wymienionych cennych drzew poza funduszem leśnym — nie każdego drzewa w kraju i nie jako coroczny obowiązek obywatelski. Nie łącz tego z turkmenskim dekretem z 1992 o dwóch drzewach, z tadżycką osobistą kwotą (w katalogu nie ma zweryfikowanego takiego statutu) ani z filipińskim projektem o maturze. Szczegóły wartości, gatunków, miejsca i terminów może ustalić Gabinet Ministrów; to już nie ten artykuł.',
+    sourcesNote:
+      'Pierwotny tekst ЗРУ-916 na lex.uz (rosyjski i uzbecki); skonsolidowana strona ustawy o świecie roślinnym z art. 49¹; angielska notatka UzDaily o rozpatrzeniu tej samej ustawy w Senacie.',
+  },
   'un-plastics-treaty': {
     title: 'Traktat ONZ o plastiku (proces INC)',
     hook: 'Mandat na negocjacje prawnie wiążącego instrumentu o plastiku. Nie ma uzgodnionego tekstu traktatu.',

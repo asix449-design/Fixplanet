@@ -80,6 +80,26 @@ export const en: Record<string, LawCopy> = {
     sourcesNote:
       'Primary Russian text on FAOLEX (tuk80588.pdf); UNEP LEAP catalogue abstract of the same decree.',
   },
+  'uzbekistan-compensatory-planting': {
+    title: 'Uzbekistan — 100 saplings per illegal cut',
+    hook: 'A 2024 statute: plant at least one hundred saplings after illegal felling of a valuable non-forest-fund tree. Penalty and care duty — not an annual citizen quota.',
+    imageAlt:
+      'Apricot trees in bloom on a Tashkent street — urban trees of the kind the flora-law amendment protects, not a photograph of a named enforcement case',
+    jurisdiction: 'Uzbekistan',
+    officialName: 'On the protection and use of flora (as amended)',
+    citation:
+      'Law of the Republic of Uzbekistan No. ЗРУ-916 / O‘RQ-916 of 29 February 2024, inserting Article 49¹ into the Law “On the protection and use of flora” (No. 543-I of 26 December 1997, restated by ЗРУ-409 of 21 September 2016)',
+    yearStatus:
+      'Legislative Chamber 21 November 2023; Senate 20 December 2023; signed 29 February 2024. Official publication 1 March 2024 (National legislation database No. 03/24/916/0167). Article 49¹ in force from publication. Article 49² financial sanctions delayed three months.',
+    what: 'Article 49¹, inserted by ЗРУ-916, says that if valuable species of trees or shrubs that are not in the state forest fund are illegally cut or destroyed, the offender must, by decision of the Ministry of Ecology, Environmental Protection and Climate Change, plant at their own expense at least one hundred saplings of no lesser value for each such tree or shrub. Planting is on the site of the cut; if there is not enough land, the remainder goes elsewhere in the same administrative-territorial unit. The offender must care for the saplings for three years. Article 49² adds fines of 100–300 base calculation units for legal entities. The same law also raised some administrative-code penalties. This is a compensatory duty after an offence, not a yearly planting quota for every citizen.',
+    where: 'Uzbekistan, for valuable trees and shrubs outside the state forest fund. It does not, by itself, rewrite forest-fund rules. The national greening project “Yashil Makon,” named in the preamble of ЗРУ-916, is a separate programme.',
+    effects:
+      'Intended effects, as the amending law itself states: deter illegal felling, raise liability, and unify enforcement practice. This page does not invent a count of saplings planted under Article 49¹ or a survival rate.',
+    caveats:
+      '“At least one hundred” applies after illegal cutting or destruction of listed valuable non-forest-fund trees — not to every tree in the country and not as an annual civic duty. Do not merge this with the Turkmenistan 1992 two-trees decree, with a Tajikistan personal quota (this catalog has no verified statute of that kind), or with the Philippines graduation bill. Cabinet rules may set how value, species, place, and deadlines are decided; those implementing details are not this article.',
+    sourcesNote:
+      'Primary text of ЗРУ-916 on lex.uz (Russian and Uzbek); consolidated flora-law page showing Article 49¹; UzDaily English note on Senate consideration of the same law.',
+  },
   'un-plastics-treaty': {
     title: 'UN plastics treaty (INC process)',
     hook: 'A mandated negotiation for a legally binding plastics instrument. There is no agreed treaty text.',
