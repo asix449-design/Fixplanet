@@ -51,7 +51,7 @@ const en = {
       solutions: 'Proven technologies with real-world impact.',
       innovations: 'Labs and pilots aimed at planetary-scale problems.',
       maps: 'A sourced atlas of Earth systems and the political world.',
-      law: 'Legal frameworks to protect people and planet.',
+      law: 'Real statutes, pending bills, and labeled ideas — ecology, AI, animals.',
       wildlife: 'Species, habitats, and how they changed after we spread.',
       forests: 'Satellite canopy, reconstructions, and sourced forest numbers.',
       book: 'New World — what’s broken, and what we can still fix.',
@@ -73,7 +73,7 @@ const en = {
     },
     law: {
       title: 'Law for the future',
-      text: 'Legal frameworks to protect people and planet.',
+      text: 'Enacted rules, bills under consideration, and ideas that are not law yet.',
     },
     wildlife: {
       title: 'Wildlife matters',
@@ -332,7 +332,7 @@ const ru: typeof en = {
       solutions: 'Проверенные технологии с реальным эффектом.',
       innovations: 'Лаборатории и пилоты для планетарных проблем.',
       maps: 'Атлас с источниками: системы Земли и политический мир.',
-      law: 'Правовые рамки для защиты людей и планеты.',
+      law: 'Реальные статуты, рассматриваемые проекты и помеченные идеи — экология, ИИ, животные.',
       wildlife: 'Виды, места обитания и то, как они изменились после нашего расселения.',
       forests: 'Спутниковая крона, реконструкции и лесные цифры с источниками.',
       book: 'New World — что сломано и что мы ещё можем исправить.',
@@ -354,7 +354,7 @@ const ru: typeof en = {
     },
     law: {
       title: 'Право будущего',
-      text: 'Правовые рамки для защиты людей и планеты.',
+      text: 'Действующие правила, законопроекты на рассмотрении и идеи, которые ещё не закон.',
     },
     wildlife: {
       title: 'Дикая природа важна',
@@ -616,7 +616,7 @@ const pl: typeof en = {
       solutions: 'Sprawdzone technologie z realnym skutkiem.',
       innovations: 'Laboratoria i pilotaże wobec problemów planetarnych.',
       maps: 'Atlas ze źródłami: systemy Ziemi i świat polityczny.',
-      law: 'Ramy prawne chroniące ludzi i planetę.',
+      law: 'Prawdziwe statuty, rozpatrywane projekty i oznaczone idee — ekologia, SI, zwierzęta.',
       wildlife: 'Gatunki, siedliska i to, jak zmieniły się po naszym rozprzestrzenieniu.',
       forests: 'Satelitarna korona, rekonstrukcje i leśne liczby ze źródłami.',
       book: 'New World — co jest zepsute i co wciąż możemy naprawić.',
@@ -638,7 +638,7 @@ const pl: typeof en = {
     },
     law: {
       title: 'Prawo dla przyszłości',
-      text: 'Ramy prawne chroniące ludzi i planetę.',
+      text: 'Obowiązujące reguły, rozpatrywane projekty i idee, które jeszcze nie są prawem.',
     },
     wildlife: {
       title: 'Przyroda ma znaczenie',
@@ -900,7 +900,7 @@ const lv: typeof en = {
       solutions: 'Pārbaudītas tehnoloģijas ar reālu ietekmi.',
       innovations: 'Laboratorijas un izmēģinājumi pret planētas mēroga problēmām.',
       maps: 'Atlants ar avotiem: Zemes sistēmas un politiskā pasaule.',
-      law: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai.',
+      law: 'Īsti statūti, izskatīti projekti un marķētas idejas — ekoloģija, MI, dzīvnieki.',
       wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc mūsu izplatīšanās.',
       forests: 'Satelīta vainags, rekonstrukcijas un meža skaitļi ar avotiem.',
       book: 'New World — kas ir salūzis un ko vēl varam salabot.',
@@ -922,7 +922,7 @@ const lv: typeof en = {
     },
     law: {
       title: 'Tiesības nākotnei',
-      text: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai.',
+      text: 'Spēkā esoši noteikumi, izskatīšanā esoši projekti un idejas, kas vēl nav likums.',
     },
     wildlife: {
       title: 'Savvaļas daba ir svarīga',

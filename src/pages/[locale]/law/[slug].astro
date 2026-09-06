@@ -1,0 +1,25 @@
+---
+import { isLawCategory, lawCategoryKeys, lawMeta } from '../../../data/law';
+import { getLawBySlug, otherLocales, resolveLocale } from '../../../i18n';
+import LawCategoryView from '../../../views/LawCategoryView.astro';
+import LawDetailView from '../../../views/LawDetailView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) => [
+    ...lawCategoryKeys.map((slug) => ({ params: { locale, slug } })),
+    ...lawMeta.map((item) => ({ params: { locale, slug: item.slug } })),
+  ]);
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && !isLawCategory(slug) ? getLawBySlug(locale, slug) : undefined;
+---
+
+{
+  isLawCategory(slug) ? (
+    <LawCategoryView category={slug} />
+  ) : (
+    item && <LawDetailView item={item} />
+  )
+}

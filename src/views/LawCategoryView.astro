@@ -1,0 +1,119 @@
+---
+import HubTile from '../components/HubTile.astro';
+import LawCard from '../components/LawCard.astro';
+import SectionHub from '../components/SectionHub.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  lawCategoryPath,
+  lawHub,
+  lawSectionSrc,
+  lawStatusKeys,
+  lawStatusPath,
+  type LawCategory,
+  type LawStatus,
+} from '../data/law';
+import { getLawPage, getLawsByCategory, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  category: LawCategory;
+  status?: LawStatus;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getLawPage(locale);
+const category = Astro.props.category;
+const activeStatus = Astro.props.status;
+const items = getLawsByCategory(locale, category);
+---
+
+<BaseLayout
+  title={page.categoryMetaTitle[category]}
+  description={page.categoryMetaDescription[category]}
+  image={lawSectionSrc}
+  theme="law"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={lawSectionSrc} alt="" width="1920" height="1280" />
+    <div class="section-backdrop-scrim law-scrim"></div>
+  </div>
+
+  <SectionHub kicker={page.chooseCategory} label={page.filterAria} columns={3}>
+    {
+      lawHub.map((item) => (
+        <HubTile
+          href={localizePath(lawCategoryPath(item.key), locale)}
+          icon={item.icon}
+          title={page.categories[item.key]}
+          text={page.tiles[item.key]}
+          active={item.key === category}
+          dataArea={item.key}
+        />
+      ))
+    }
+  </SectionHub>
+
+  <section class="section section-hub-follow" id="law-shelves">
+    <div class="wrap">
+      <p class="wildlife-tab-lead law-category-lead">{page.categoryLeads[category]}</p>
+    </div>
+    {
+      lawStatusKeys.map((status) => {
+        const shelf = items.filter((item) => item.status === status);
+        const highlighted = activeStatus === status;
+        return (
+          <div
+            class:list={['wrap', 'law-shelf', { 'is-highlighted': highlighted }]}
+            id={status}
+            data-law-shelf={status}
+          >
+            <div class="law-shelf-head">
+              <div>
+                <a
+                  class:list={['law-shelf-title', { 'is-active': highlighted }]}
+                  href={localizePath(lawStatusPath(category, status), locale)}
+                >
+                  {page.status[status]}
+                </a>
+                <p>{page.statusLeads[status]}</p>
+              </div>
+            </div>
+            {shelf.length === 0 ? (
+              <p class="wildlife-tab-lead">{page.empty}</p>
+            ) : (
+              <div class="card-grid cols-3">
+                {shelf.map((item) => (
+                  <LawCard item={item} />
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })
+    }
+  </section>
+</BaseLayout>
+
+<script
+  define:vars={{
+    activeStatus: activeStatus ?? '',
+    ecologyHref: localizePath(lawCategoryPath('ecology'), locale),
+    aiHref: localizePath(lawCategoryPath('ai'), locale),
+    animalsHref: localizePath(lawCategoryPath('animals'), locale),
+  }}
+>
+  const hrefs = { ecology: ecologyHref, ai: aiHref, animals: animalsHref };
+  const buttons = document.querySelectorAll('[data-area]');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const area = button.dataset.area;
+      if (!area || !(area in hrefs)) return;
+      event.preventDefault();
+      location.assign(hrefs[area]);
+    });
+  });
+
+  if (activeStatus) {
+    document.getElementById(activeStatus)?.scrollIntoView({ block: 'start' });
+  }
+</script>

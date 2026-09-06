@@ -1,0 +1,23 @@
+---
+import {
+  isLawCategory,
+  isLawStatus,
+  lawCategoryKeys,
+  lawStatusKeys,
+} from '../../../data/law';
+import LawCategoryView from '../../../views/LawCategoryView.astro';
+
+export function getStaticPaths() {
+  return lawCategoryKeys.flatMap((category) =>
+    lawStatusKeys.map((status) => ({ params: { category, status } })),
+  );
+}
+
+const { category, status } = Astro.params;
+---
+
+{
+  isLawCategory(category) && isLawStatus(status) ? (
+    <LawCategoryView category={category} status={status} />
+  ) : null
+}

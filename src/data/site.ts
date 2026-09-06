@@ -37,7 +37,7 @@ export const homeHub = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
   { href: '/innovations', key: 'innovations', icon: 'circuit' },
   { href: '/maps', key: 'maps', icon: 'globe' },
-  { href: '/law', key: 'law', icon: 'scales', soon: true },
+  { href: '/law', key: 'law', icon: 'scales' },
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
   { href: '/forests', key: 'forests', icon: 'trees' },
   { href: '/book', key: 'book', icon: 'book' },

@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  lawCategoryPath,
+  lawImageSrc,
+  lawSectionSrc,
+  type LawEntry,
+} from '../data/law';
+import { getLawPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: LawEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getLawPage(locale);
+const { item } = Astro.props;
+const title = `${item.title} — Fix Planet`;
+const image = lawImageSrc(item.image);
+const categoryHref = localizePath(lawCategoryPath(item.category), locale);
+---
+
+<BaseLayout
+  title={title}
+  description={item.hook}
+  image={image}
+  theme="law-detail"
+>
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img src={lawSectionSrc} alt="" width="1920" height="1280" />
+    <div class="section-backdrop-scrim law-scrim"></div>
+  </div>
+  <header
+    class="wildlife-page-hero wildlife-page-hero-detail law-page-hero"
+    aria-labelledby="law-heading"
+  >
+    <div class="wildlife-page-hero-media law-hero-media" aria-hidden="true">
+      <img src={lawSectionSrc} alt="" width="1920" height="1280" />
+    </div>
+    <div class="wildlife-page-hero-shade law-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/law', locale)}>{page.back}</a>
+        {' · '}
+        <a class="maps-back" href={categoryHref}>{page.categories[item.category]}</a>
+      </p>
+      <div class="eyebrow wildlife-on-dark">{page.categories[item.category]}</div>
+      <h1 id="law-heading">{item.title}</h1>
+      <p>{item.hook}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail">
+      <figure class="wildlife-detail-art">
+        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+        <figcaption>
+          {page.imageCredit}: {item.image.credit}
+          {
+            item.image.sourceUrl ? (
+              <>
+                {' '}
+                (
+                <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                  {item.image.license}
+                </a>
+                )
+              </>
+            ) : (
+              <> ({item.image.license})</>
+            )
+          }
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose law-prose">
+        {
+          item.status === 'ideas' ? (
+            <p class="law-banner law-banner-idea">{page.ideaBanner}</p>
+          ) : item.status === 'pending' ? (
+            <p class="law-banner law-banner-pending">{page.pendingBanner}</p>
+          ) : null
+        }
+        <div class="meta-row">
+          <span class="pill">{page.categories[item.category]}</span>
+          <span class:list={['pill', `status-${item.status}`]}>
+            {page.status[item.status]}
+          </span>
+          <span class="pill">{item.jurisdiction}</span>
+        </div>
+        <p>
+          <strong>{page.officialLabel}:</strong> {item.officialName}
+          <br />
+          <strong>{page.citationLabel}:</strong> {item.citation}
+          <br />
+          <strong>{page.yearLabel}:</strong> {item.yearStatus}
+        </p>
+        <h2>{page.what}</h2>
+        <p>{item.what}</p>
+        <h2>{page.where}</h2>
+        <p>{item.where}</p>
+        <h2>{page.effects}</h2>
+        <p>{item.effects}</p>
+        <h2>{page.caveats}</h2>
+        <p>{item.caveats}</p>
+        <h2>{page.sourcesLabel}</h2>
+        <p class="wildlife-sources">{item.sourcesNote}</p>
+        <ul class="law-source-list">
+          {
+            item.sources.map((source) => (
+              <li>
+                <a href={source.url} rel="noopener noreferrer">
+                  {source.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
