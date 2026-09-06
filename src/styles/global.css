@@ -903,9 +903,28 @@ a.solution-card:hover {
       );
   }
 
+  .theme-home .hero-gradient {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(244, 247, 242, 0.42) 0%,
+        rgba(244, 247, 242, 0.12) 36%,
+        rgba(8, 18, 16, 0.2) 100%
+      );
+  }
+
   .hero-copy {
     padding: 4.2rem 0 3.4rem;
     max-width: none;
+  }
+
+  .theme-home .hero-copy {
+    padding: 1.45rem 1.15rem 1.55rem;
+    max-width: none;
+  }
+
+  .home-panel {
+    padding: 1.15rem 1rem 1.3rem;
   }
 
   .section {
@@ -1371,6 +1390,86 @@ a.map-card:hover {
 }
 
 /* Section themes — one distinctive backdrop per major section */
+.theme-home {
+  background: #9eb8c4;
+}
+
+.theme-home .section-backdrop img {
+  object-position: 42% 28%;
+  filter: saturate(1.06) brightness(0.96);
+  transform: none;
+}
+
+.home-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(244, 247, 242, 0.28) 0%,
+      rgba(244, 247, 242, 0.08) 22%,
+      rgba(8, 18, 16, 0.1) 52%,
+      rgba(244, 247, 242, 0.16) 78%,
+      rgba(244, 247, 242, 0.28) 100%
+    ),
+    linear-gradient(90deg, rgba(244, 247, 242, 0.22) 0%, transparent 46%);
+}
+
+.theme-home .site-header {
+  background: rgba(244, 247, 242, 0.94);
+}
+
+.theme-home main {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-home .site-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.theme-home .hero {
+  background: transparent;
+}
+
+.theme-home .hero-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(244, 247, 242, 0.22) 0%,
+      rgba(244, 247, 242, 0.08) 34%,
+      transparent 58%
+    ),
+    linear-gradient(180deg, rgba(244, 247, 242, 0.32) 0%, transparent 20%, transparent 78%, rgba(8, 18, 16, 0.16) 100%);
+}
+
+.theme-home .hero-copy {
+  background: rgba(244, 247, 242, 0.94);
+  border: 1px solid rgba(20, 34, 26, 0.06);
+  border-radius: calc(var(--radius) + 8px);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.85rem 2.15rem;
+  max-width: 36rem;
+}
+
+.home-band {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.home-panel {
+  background: rgba(244, 247, 242, 0.96);
+  border: 1px solid rgba(20, 34, 26, 0.06);
+  border-radius: calc(var(--radius) + 8px);
+  box-shadow: var(--shadow);
+  padding: 1.55rem 1.55rem 1.7rem;
+}
+
+.theme-home .feature-strip.home-panel {
+  padding: 1.45rem 1.4rem 1.55rem;
+}
+
 .theme-wildlife,
 .theme-wildlife-detail {
   background: #0c1410;
@@ -1426,6 +1525,14 @@ a.map-card:hover {
 .theme-wildlife .site-header,
 .theme-wildlife-detail .site-header {
   background: rgba(244, 247, 242, 0.9);
+}
+
+.theme-wildlife .site-footer,
+.theme-wildlife-detail .site-footer,
+.theme-innovations .site-footer,
+.theme-innovations-detail .site-footer {
+  position: relative;
+  z-index: 2;
 }
 
 .theme-wildlife main,

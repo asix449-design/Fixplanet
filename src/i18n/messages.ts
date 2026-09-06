@@ -41,7 +41,7 @@ const en = {
     heroTitle: 'Problems. Fixes. Proof.',
     heroLead:
       'A living atlas of technologies that repair the planet — clear problems, working solutions, real evidence.',
-    heroAlt: 'Sunlit meadow bordered by trees under a clear sky',
+    heroAlt: 'Solarpunk green city of vertical forests in a mountain valley, with a river, launch beam, and a large planet in the sky',
     browseSolutions: 'Browse solutions',
     readBook: 'Read the book',
     latest: 'Latest solutions',
@@ -290,7 +290,7 @@ const ru: typeof en = {
     heroTitle: 'Проблемы. Решения. Доказательства.',
     heroLead:
       'Живой атлас технологий, которые восстанавливают планету, — ясные проблемы, работающие решения, реальные доказательства.',
-    heroAlt: 'Солнечный луг у кромки леса под ясным небом',
+    heroAlt: 'Соларпанк-город вертикальных лесов в горной долине: река, луч старта и большая планета в небе',
     browseSolutions: 'Смотреть решения',
     readBook: 'Читать книгу',
     latest: 'Новые решения',
@@ -542,7 +542,7 @@ const pl: typeof en = {
     heroTitle: 'Problemy. Rozwiązania. Dowody.',
     heroLead:
       'Żywy atlas technologii, które naprawiają planetę — jasne problemy, działające rozwiązania, realne dowody.',
-    heroAlt: 'Słoneczna łąka przy skraju lasu pod bezchmurnym niebem',
+    heroAlt: 'Solarpunkowe zielone miasto pionowych lasów w górskiej dolinie: rzeka, promień startu i wielka planeta na niebie',
     browseSolutions: 'Przeglądaj rozwiązania',
     readBook: 'Czytaj książkę',
     latest: 'Najnowsze rozwiązania',
@@ -794,7 +794,7 @@ const lv: typeof en = {
     heroTitle: 'Problēmas. Risinājumi. Pierādījumi.',
     heroLead:
       'Dzīvais atlants tehnoloģijām, kas labo planētu, — skaidras problēmas, risinājumi, kas darbojas, īsti pierādījumi.',
-    heroAlt: 'Saules apspīdēta pļava pie koku joslas zem skaidrām debesīm',
+    heroAlt: 'Solarpanka zaļā pilsēta ar vertikāliem mežiem kalnu ielejā: upe, starta stars un liela planēta debesīs',
     browseSolutions: 'Skatīt risinājumus',
     readBook: 'Lasīt grāmatu',
     latest: 'Jaunākie risinājumi',
