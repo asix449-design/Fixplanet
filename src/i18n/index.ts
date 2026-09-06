@@ -28,6 +28,7 @@ export {
   getRelatedMaps,
   mapCategoryKeys,
 } from './maps';
+export { getBorderHistoryFrames, getBorderHistoryPage } from './border-history';
 export {
   getInnovationBySlug,
   getInnovations,

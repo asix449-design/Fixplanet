@@ -10,6 +10,8 @@ const ui = getUi(locale);
 <section class="home-hub" aria-label={ui.home.heroAria}>
   <div class="wrap home-hub-inner">
     <h1 class="home-hub-kicker">{ui.home.choosePath}</h1>
+    <p class="home-hub-slashes" aria-hidden="true">/////</p>
+    <p class="home-hub-tagline">{ui.home.tagline}</p>
     <div class="hub-grid">
       {
         homeHub.map((item) => {

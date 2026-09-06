@@ -1,0 +1,23 @@
+[
+  {
+    "file": "logo-mark.svg",
+    "title": "Fix Planet globe mark",
+    "source": "Fix Planet",
+    "license": "Site brand asset",
+    "note": "Lime-outlined globe with dark fill and orange flare. Used in the header and footer."
+  },
+  {
+    "file": "logo.svg",
+    "title": "Fix Planet lockup (SVG)",
+    "source": "Fix Planet",
+    "license": "Site brand asset",
+    "note": "Globe plus FIX (white) PLANET (lime) wordmark."
+  },
+  {
+    "file": "logo.png",
+    "title": "Fix Planet lockup (PNG)",
+    "source": "Fix Planet",
+    "license": "Site brand asset",
+    "note": "Raster lockup on black for social and print use."
+  }
+]

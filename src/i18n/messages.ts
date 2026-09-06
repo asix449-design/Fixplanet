@@ -38,7 +38,8 @@ const en = {
   },
   home: {
     heroAria: 'Site sections',
-    choosePath: 'Choose a path',
+    choosePath: 'Choose a direction',
+    tagline: 'Analysis. Action. Result. The planet will not wait.',
     heroAlt: 'Solarpunk green city of vertical forests in a mountain valley, with a river, launch beam, and a large planet in the sky',
     latest: 'Latest solutions',
     latestHeading: 'Real solutions. Measurable impact.',
@@ -311,6 +312,7 @@ const ru: typeof en = {
   home: {
     heroAria: 'Разделы сайта',
     choosePath: 'Выберите направление',
+    tagline: 'Анализ. Действия. Результат. Планета не ждёт.',
     heroAlt: 'Соларпанк-город вертикальных лесов в горной долине: река, луч старта и большая планета в небе',
     latest: 'Новые решения',
     latestHeading: 'Реальные решения. Измеримый результат.',
@@ -585,7 +587,8 @@ const pl: typeof en = {
   },
   home: {
     heroAria: 'Działy serwisu',
-    choosePath: 'Wybierz ścieżkę',
+    choosePath: 'Wybierz kierunek',
+    tagline: 'Analiza. Działanie. Wynik. Planeta nie poczeka.',
     heroAlt: 'Solarpunkowe zielone miasto pionowych lasów w górskiej dolinie: rzeka, promień startu i wielka planeta na niebie',
     latest: 'Najnowsze rozwiązania',
     latestHeading: 'Realne rozwiązania. Mierzalny efekt.',
@@ -860,7 +863,8 @@ const lv: typeof en = {
   },
   home: {
     heroAria: 'Vietnes sadaļas',
-    choosePath: 'Izvēlies ceļu',
+    choosePath: 'Izvēlies virzienu',
+    tagline: 'Analīze. Rīcība. Rezultāts. Planēta negaida.',
     heroAlt: 'Solarpanka zaļā pilsēta ar vertikāliem mežiem kalnu ielejā: upe, starta stars un liela planēta debesīs',
     latest: 'Jaunākie risinājumi',
     latestHeading: 'Īsti risinājumi. Izmērāms efekts.',
