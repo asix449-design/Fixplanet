@@ -1,23 +1,37 @@
 [
   {
-    "file": "logo-mark.svg",
-    "title": "Fix Planet globe mark",
+    "file": "logo-lockup-source.png",
+    "title": "Fix Planet official lockup (source)",
     "source": "Fix Planet",
     "license": "Site brand asset",
-    "note": "Lime-outlined globe with dark fill and orange flare. Used in the header and footer."
-  },
-  {
-    "file": "logo.svg",
-    "title": "Fix Planet lockup (SVG)",
-    "source": "Fix Planet",
-    "license": "Site brand asset",
-    "note": "Globe plus FIX (white) PLANET (lime) wordmark."
+    "note": "Exact user-supplied lockup: textured globe, lime continent outlines, orange flare, FIX + PLANET wordmark. Do not redraw."
   },
   {
     "file": "logo.png",
-    "title": "Fix Planet lockup (PNG)",
+    "title": "Fix Planet lockup (header/footer)",
     "source": "Fix Planet",
     "license": "Site brand asset",
-    "note": "Raster lockup on black for social and print use."
+    "note": "Cropped transparent derivative of logo-lockup-source.png. Used in header and footer."
+  },
+  {
+    "file": "logo.webp",
+    "title": "Fix Planet lockup (WebP)",
+    "source": "Fix Planet",
+    "license": "Site brand asset",
+    "note": "Smaller derivative of the same official lockup."
+  },
+  {
+    "file": "logo-mark.png",
+    "title": "Fix Planet globe mark",
+    "source": "Fix Planet",
+    "license": "Site brand asset",
+    "note": "Globe disk cropped from the official lockup (continents only, plus flare)."
+  },
+  {
+    "file": "favicon.png",
+    "title": "Fix Planet favicon",
+    "source": "Fix Planet",
+    "license": "Site brand asset",
+    "note": "64px mark on black, from the official globe."
   }
 ]

@@ -1,0 +1,10 @@
+[
+  {
+    "file": "earth-countries.bin",
+    "title": "Country and coastline segments for the Home wire globe",
+    "source": "Natural Earth 110m Admin 0 countries",
+    "url": "https://www.naturalearthdata.com/",
+    "license": "Public domain (Natural Earth)",
+    "note": "Line segments on the unit sphere. Rebuild with scripts/build-wire-globe.py."
+  }
+]

@@ -138,30 +138,10 @@ p:last-child {
   color: var(--white);
 }
 
-.logo-mark {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-.logo-wordmark {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.28rem;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.28rem;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.logo-fix {
-  color: var(--white);
-}
-
-.logo-planet {
-  color: var(--lime);
+.logo-lockup {
+  display: block;
+  height: 44px;
+  width: auto;
 }
 
 .nav {
@@ -898,6 +878,10 @@ a.solution-card:hover {
 }
 
 @media (max-width: 1140px) {
+  .logo-lockup {
+    height: 36px;
+  }
+
   .menu-toggle {
     display: grid;
     place-items: center;
@@ -1610,6 +1594,8 @@ a.map-card:hover {
   width: min(100%, 460px);
   aspect-ratio: 1;
   margin-inline: auto;
+  background: #000;
+  border-radius: 50%;
 }
 
 .earth-globe-fallback,

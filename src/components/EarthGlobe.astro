@@ -10,7 +10,7 @@ const { label } = Astro.props;
   <div class="earth-globe-stage">
     <img
       class="earth-globe-fallback"
-      src="/images/home/earth-globe-still.jpg"
+      src="/images/home/earth-globe-still.png"
       width="900"
       height="900"
       alt=""
@@ -22,6 +22,7 @@ const { label } = Astro.props;
 <script>
   import * as THREE from 'three';
 
+  const LIME = 0xc0ff00;
   const root = document.querySelector<HTMLElement>('[data-earth-globe]');
   const stage = root?.querySelector<HTMLElement>('.earth-globe-stage');
   const canvas = root?.querySelector<HTMLCanvasElement>('.earth-globe-canvas');
@@ -38,7 +39,9 @@ const { label } = Astro.props;
   })();
 
   if (root && stage && canvas && fallback && !reduceMotion && webglOk) {
-    void startGlobe(stage, canvas, fallback);
+    void startGlobe(stage, canvas, fallback).catch(() => {
+      /* keep the lime-on-black still */
+    });
   }
 
   async function startGlobe(
@@ -57,61 +60,55 @@ const { label } = Astro.props;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 20);
-    camera.position.set(0, 0.12, 2.55);
+    camera.position.set(0, 0.08, 2.55);
 
-    const loader = new THREE.TextureLoader();
-    const [colorMap, glowMap] = await Promise.all([
-      loader.loadAsync('/images/home/earth-dark.jpg'),
-      loader.loadAsync('/images/home/earth-emissive.jpg'),
-    ]);
-    colorMap.colorSpace = THREE.SRGBColorSpace;
-    glowMap.colorSpace = THREE.SRGBColorSpace;
-    colorMap.anisotropy = renderer.capabilities.getMaxAnisotropy();
-
-    const earth = new THREE.Mesh(
-      new THREE.SphereGeometry(1, 64, 64),
-      new THREE.MeshStandardMaterial({
-        map: colorMap,
-        emissiveMap: glowMap,
-        emissive: new THREE.Color(0xff4a12),
-        emissiveIntensity: 1.15,
-        roughness: 0.92,
-        metalness: 0.04,
-      }),
+    const earth = new THREE.Group();
+    earth.add(
+      new THREE.Mesh(
+        new THREE.SphereGeometry(1, 64, 64),
+        new THREE.MeshBasicMaterial({ color: 0x050505 }),
+      ),
     );
-    earth.rotation.y = 0.35;
-    earth.rotation.x = 0.18;
+
+    const buffer = await fetch('/data/earth-countries.bin').then((res) => {
+      if (!res.ok) throw new Error('earth-countries.bin');
+      return res.arrayBuffer();
+    });
+    const positions = new Float32Array(buffer);
+    const lines = new THREE.BufferGeometry();
+    lines.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    earth.add(
+      new THREE.LineSegments(
+        lines,
+        new THREE.LineBasicMaterial({
+          color: LIME,
+          transparent: true,
+          opacity: 0.92,
+        }),
+      ),
+    );
+    earth.rotation.y = 0.22;
+    earth.rotation.x = 0.16;
     scene.add(earth);
 
-    const atmosphere = new THREE.Mesh(
-      new THREE.SphereGeometry(1.045, 48, 48),
-      new THREE.MeshBasicMaterial({
-        color: 0xff4a12,
-        transparent: true,
-        opacity: 0.09,
-        side: THREE.BackSide,
-        depthWrite: false,
-      }),
+    const rimPts = Array.from({ length: 160 }, (_, i) => {
+      const t = (i / 160) * Math.PI * 2;
+      return new THREE.Vector3(Math.cos(t), Math.sin(t), 0);
+    });
+    const rim = new THREE.LineLoop(
+      new THREE.BufferGeometry().setFromPoints(rimPts),
+      new THREE.LineBasicMaterial({ color: LIME }),
     );
-    scene.add(atmosphere);
-
-    scene.add(new THREE.AmbientLight(0x3d3d36, 0.7));
-    const key = new THREE.DirectionalLight(0xffd2b0, 1.05);
-    key.position.set(2.6, 1.1, 2.2);
-    scene.add(key);
-    const rim = new THREE.DirectionalLight(0xc0ff00, 0.18);
-    rim.position.set(-2.2, -0.4, 1.4);
+    rim.scale.setScalar(1.001);
     scene.add(rim);
 
     let width = 0;
-    let height = 0;
     const fit = () => {
       const next = host.clientWidth || 320;
       if (next === width) return;
       width = next;
-      height = next;
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75));
-      renderer.setSize(width, height, false);
+      renderer.setSize(width, width, false);
       camera.aspect = 1;
       camera.updateProjectionMatrix();
     };
@@ -162,7 +159,6 @@ const { label } = Astro.props;
 
     const resize = new ResizeObserver(fit);
     resize.observe(host);
-
     const io = new IntersectionObserver(
       ([entry]) => {
         visible = Boolean(entry?.isIntersecting);
@@ -170,27 +166,21 @@ const { label } = Astro.props;
       { threshold: 0.08 },
     );
     io.observe(host);
-
-    const onVisibility = () => {
+    document.addEventListener('visibilitychange', () => {
       running = document.visibilityState !== 'hidden';
-    };
-    document.addEventListener('visibilitychange', onVisibility);
+    });
 
     still.hidden = true;
     canvasEl.hidden = false;
     canvasEl.style.cursor = 'grab';
 
     const tick = () => {
-      if (!running) {
-        requestAnimationFrame(tick);
-        return;
-      }
-      if (visible) {
+      if (running && visible) {
         if (!dragging) {
-          earth.rotation.y += 0.0016 + velY;
+          earth.rotation.y += 0.0014 + velY;
           velY *= 0.94;
         }
-        atmosphere.rotation.copy(earth.rotation);
+        rim.quaternion.copy(camera.quaternion);
         renderer.render(scene, camera);
       }
       requestAnimationFrame(tick);
