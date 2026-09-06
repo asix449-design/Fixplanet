@@ -1,0 +1,29 @@
+---
+import {
+  innovationAreaKeys,
+  innovationMeta,
+  isInnovationArea,
+} from '../../data/innovations';
+import { getInnovationBySlug, resolveLocale } from '../../i18n';
+import InnovationDetailView from '../../views/InnovationDetailView.astro';
+import InnovationsView from '../../views/InnovationsView.astro';
+
+export function getStaticPaths() {
+  return [
+    ...innovationAreaKeys.map((slug) => ({ params: { slug } })),
+    ...innovationMeta.map((item) => ({ params: { slug: item.slug } })),
+  ];
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && !isInnovationArea(slug) ? getInnovationBySlug(locale, slug) : undefined;
+---
+
+{
+  isInnovationArea(slug) ? (
+    <InnovationsView area={slug} />
+  ) : (
+    item && <InnovationDetailView item={item} />
+  )
+}

@@ -1,0 +1,152 @@
+---
+import InnovationCard from '../components/InnovationCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  innovationAreaKeys,
+  innovationAreaPath,
+  isInnovationArea,
+  type InnovationArea,
+} from '../data/innovations';
+import { getInnovations, getInnovationsPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  area?: InnovationArea | 'all';
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getInnovationsPage(locale);
+const requested = Astro.props.area ?? Astro.url.searchParams.get('area') ?? 'all';
+const activeArea: InnovationArea | 'all' =
+  requested === 'all' || !requested
+    ? 'all'
+    : isInnovationArea(requested)
+      ? requested
+      : 'all';
+
+const items = getInnovations(locale);
+const filters = [
+  { key: 'all' as const, label: page.all, href: localizePath('/innovations', locale) },
+  ...innovationAreaKeys.map((key) => ({
+    key,
+    label: page.areas[key],
+    href: localizePath(innovationAreaPath(key), locale),
+  })),
+];
+---
+
+<BaseLayout
+  title={page.metaTitle}
+  description={page.metaDescription}
+  image="/images/innovations/innovations-section-bg.jpg"
+  theme="innovations"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img
+      src="/images/innovations/innovations-section-bg.jpg"
+      alt=""
+      width="1920"
+      height="1280"
+    />
+    <div class="section-backdrop-scrim innovations-scrim"></div>
+  </div>
+
+  <header class="wildlife-page-hero innovations-page-hero" aria-labelledby="innovations-heading">
+    <div class="wildlife-page-hero-media innovations-hero-media" aria-hidden="true">
+      <img
+        src="/images/innovations/innovations-section-bg.jpg"
+        alt=""
+        width="1920"
+        height="1280"
+      />
+    </div>
+    <div class="wildlife-page-hero-shade innovations-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <div class="eyebrow wildlife-on-dark">{page.eyebrow}</div>
+      <h1 id="innovations-heading">{page.title}</h1>
+      <p>{page.lead}</p>
+    </div>
+  </header>
+
+  <section class="section" id="innovations-list">
+    <div class="wrap wildlife-list-panel innovations-list-panel">
+      <div class="filters" role="tablist" aria-label={page.filterAria}>
+        {
+          filters.map((filter) => (
+            <a
+              class:list={['filter-btn', { 'is-active': filter.key === activeArea }]}
+              href={filter.href}
+              data-area={filter.key}
+              role="tab"
+              aria-selected={filter.key === activeArea ? 'true' : 'false'}
+            >
+              {filter.label}
+            </a>
+          ))
+        }
+      </div>
+      <p class="wildlife-tab-lead" data-tab-lead>
+        {page.areaLeads[activeArea]}
+      </p>
+      <div class="card-grid cols-3" id="innovations-grid">
+        {
+          items.map((item) => (
+            <div hidden={activeArea !== 'all' && item.area !== activeArea}>
+              <InnovationCard item={item} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script
+  define:vars={{
+    leads: page.areaLeads,
+    allHref: localizePath(innovationAreaPath('all'), locale),
+    ecologyHref: localizePath(innovationAreaPath('ecology'), locale),
+    energyHref: localizePath(innovationAreaPath('energy'), locale),
+    aiHref: localizePath(innovationAreaPath('ai'), locale),
+  }}
+>
+  const hrefs = {
+    all: allHref,
+    ecology: ecologyHref,
+    energy: energyHref,
+    ai: aiHref,
+  };
+
+  const buttons = document.querySelectorAll<HTMLAnchorElement>('[data-area]');
+  const cards = document.querySelectorAll<HTMLElement>('#innovations-grid > div');
+  const lead = document.querySelector<HTMLElement>('[data-tab-lead]');
+
+  function show(area: string) {
+    if (!(area in hrefs)) return;
+    buttons.forEach((button) => {
+      const on = button.dataset.area === area;
+      button.classList.toggle('is-active', on);
+      button.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    cards.forEach((card) => {
+      const inner = card.querySelector<HTMLElement>('[data-innovation-area]');
+      const itemArea = inner?.dataset.innovationArea;
+      card.hidden = area !== 'all' && itemArea !== area;
+    });
+    if (lead && area in leads) {
+      lead.textContent = leads[area as keyof typeof leads];
+    }
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const area = button.dataset.area;
+      if (!area || !(area in hrefs)) return;
+      event.preventDefault();
+      show(area);
+      history.replaceState(null, '', hrefs[area as keyof typeof hrefs]);
+    });
+  });
+
+  const query = new URLSearchParams(location.search).get('area');
+  if (query && query in hrefs) show(query);
+</script>

@@ -9,6 +9,7 @@ export const site = {
 
 export const nav = [
   { href: '/solutions', key: 'solutions' },
+  { href: '/innovations', key: 'innovations' },
   { href: '/maps', key: 'maps' },
   { href: '/law', key: 'law' },
   { href: '/wildlife', key: 'wildlife' },
@@ -19,7 +20,7 @@ export const nav = [
 
 export const features = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
+  { href: '/innovations', key: 'innovations', icon: 'circuit' },
   { href: '/maps', key: 'maps', icon: 'globe' },
-  { href: '/law', key: 'law', icon: 'scales' },
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
 ] as const;

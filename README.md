@@ -10,23 +10,26 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 
 | Route | Status |
 | --- | --- |
-| `/` | Home — meadow hero, latest solutions, feature strip |
+| `/` | Home — full-page solarpunk city backdrop (fixed), cream readability panels for hero / latest solutions / feature strip |
 | `/solutions` | All problem → technology cards, with topic filters |
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
 | `/wildlife` | Encyclopedia: *Homo sapiens* hero and dispersal map, plus surviving / endangered / extinct species. Detail pages at `/wildlife/[slug]`. Themed South-American wildlife collage backdrop (scrimmed for type; map sits on a solid panel) |
 | `/maps` | Sourced map catalog (conflict, languages, religion, crime, pollution, energy, minerals, borders, forests, water, people). Detail pages at `/maps/[slug]`; category filters at `/maps/conflicts` and `?category=` |
+| `/innovations` | Frontier catalog: ecology, energy, and AI. Detail pages at `/innovations/[slug]`; area filters at `/innovations/ecology`, `/energy`, `/ai` and `?area=`. Themed Earth+circuits backdrop (scrimmed cream/dark panels) |
 | `/law`, `/forests` | Placeholders — coming soon |
 
 ## Languages
 
 Astro i18n routing (`prefixDefaultLocale: false`) keeps English URLs unchanged. The header switcher (EN / RU / PL / LV) stays on the equivalent page.
 
-Copy lives in `src/i18n/messages.ts` (UI), `src/i18n/solutions.ts` (the eight solution cards), `src/i18n/wildlife.ts` (species entries; Polish and Latvian files sit beside it), and `src/i18n/maps.ts` (map catalog chrome plus entries; Russian, Polish, and Latvian files sit beside it). To add a string: add the key to `en`, then the same key to `ru`, `pl`, and `lv`, and read it with `getUi(locale)` or `getMapsPage(locale)`. New pages need the English file under `src/pages/` and a thin `src/pages/[locale]/` wrapper that reuses the same view.
+Copy lives in `src/i18n/messages.ts` (UI), `src/i18n/solutions.ts` (the eight solution cards), `src/i18n/wildlife.ts` (species entries; Polish and Latvian files sit beside it), `src/i18n/maps.ts` (map catalog chrome plus entries; Russian, Polish, and Latvian files sit beside it), and `src/i18n/innovations.ts` (Innovations chrome plus entries; `innovations-en.ts` / `-ru.ts` / `-pl.ts` / `-lv.ts` sit beside it). To add a string: add the key to `en`, then the same key to `ru`, `pl`, and `lv`, and read it with `getUi(locale)`, `getMapsPage(locale)`, or `getInnovationsPage(locale)`. New pages need the English file under `src/pages/` and a thin `src/pages/[locale]/` wrapper that reuses the same view.
 
 To add a wildlife species: add metadata in `src/data/wildlife.ts` (English slug, Latin name, tab, IUCN code, image credit), the same slug in all four language objects, and a photo in `public/images/wildlife/`. Status tabs are deep-linked as `/wildlife`, `/wildlife/endangered`, and `/wildlife/extinct` (`?status=` also works).
 
 To add a map: add a row in `src/data/maps.ts` (English slug, category, vintage, named source, URLs, unique preview file), the same slug in `en` / `ru` / `pl` / `lv` under `src/i18n/maps.ts`, and a licensed preview in `public/images/maps/` recorded in `credits.json`. Do not reuse Blue Marble as a stand-in. Category chips are real links (`/maps/conflicts`, `/ru/maps/conflicts`, …). Do not invent country-level crime or conflict numbers. Prefer a hosted open map, or a labeled Fix Planet overview, plus an “Open source map” link.
+
+To add an innovation card: add a row in `src/data/innovations.ts` (English slug, area `ecology` | `energy` | `ai`, status `research` | `pilot` | `deployed` | `myth-busted`, image credit), the same slug in all four language objects under `src/i18n/innovations-en.ts` (and `-ru` / `-pl` / `-lv`), and a Wikimedia/PD or generated image in `public/images/innovations/`. Record the credit in `public/images/innovations/credits.json`. Area tabs are real links (`/innovations/ecology`, `/ru/innovations/energy`, …); `?area=` also works. Do not invent breakthroughs. Perpetual-motion / “free energy” devices belong only as myth-busted cards. Do not claim fusion is commercial unlimited power.
 
 ## Local development
 
@@ -100,10 +103,10 @@ Do not point the apex at GitHub Pages or a third-party host while Cloudflare Pag
 ## Design notes
 
 - Brand greens: primary `#1B7A4E`, leaf `#3FA36A`, cream `#F4F7F2`
-- Hero photograph: `public/images/hero-meadow.png` (source) and `.webp` (served). Left cream gradient keeps the headline readable.
-- Section themes: Maps uses NASA Blue Marble; Wildlife uses `public/images/wildlife/wildlife-section-bg.jpg` with a cream/dark scrim. Other sections will get their own backdrops later.
+- Home atmosphere: `public/images/home/green-city-future-bg.jpg` is a fixed full-page backdrop on `/` and locale homes (`theme="home"`). Cream hero/solution/feature panels keep type readable; the meadow assets remain in `public/images/` but are not the Home page atmosphere.
+- Section themes: Maps uses NASA Blue Marble; Wildlife uses `public/images/wildlife/wildlife-section-bg.jpg` with a cream/dark scrim; Innovations uses `public/images/innovations/innovations-section-bg.jpg` (Earth + circuits, generated site theme) with a stronger cream/dark scrim. Other sections keep their own themes.
 - Typeface: Inter
 
 ## License
 
-Site content © Fix Planet. Meadow hero image is included as a site asset.
+Site content © Fix Planet. Home city and meadow images are included as site assets.

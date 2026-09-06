@@ -1,0 +1,9 @@
+---
+import { isInnovationArea } from '../data/innovations';
+import InnovationsView from '../views/InnovationsView.astro';
+
+const areaParam = Astro.url.searchParams.get('area');
+const area = isInnovationArea(areaParam ?? undefined) ? areaParam : 'all';
+---
+
+<InnovationsView area={area} />

@@ -187,8 +187,9 @@ p:last-child {
 .nav > a {
   color: var(--ink);
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav > a:hover,
@@ -807,7 +808,7 @@ a.solution-card:hover {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1140px) {
   .menu-toggle {
     display: grid;
     place-items: center;
@@ -902,9 +903,28 @@ a.solution-card:hover {
       );
   }
 
+  .theme-home .hero-gradient {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(244, 247, 242, 0.42) 0%,
+        rgba(244, 247, 242, 0.12) 36%,
+        rgba(8, 18, 16, 0.2) 100%
+      );
+  }
+
   .hero-copy {
     padding: 4.2rem 0 3.4rem;
     max-width: none;
+  }
+
+  .theme-home .hero-copy {
+    padding: 1.45rem 1.15rem 1.55rem;
+    max-width: none;
+  }
+
+  .home-panel {
+    padding: 1.15rem 1rem 1.3rem;
   }
 
   .section {
@@ -1105,6 +1125,26 @@ a.wildlife-card:hover {
 .status-extinct {
   background: #e7ebe5;
   color: #4a554c;
+}
+
+.status-research {
+  background: rgba(27, 122, 78, 0.08);
+  color: var(--green-dark);
+}
+
+.status-pilot {
+  background: rgba(63, 163, 106, 0.16);
+  color: var(--green);
+}
+
+.status-deployed {
+  background: rgba(27, 122, 78, 0.14);
+  color: var(--green);
+}
+
+.status-myth-busted {
+  background: #ece8e0;
+  color: #5a4e3d;
 }
 
 .wildlife-detail {
@@ -1350,6 +1390,86 @@ a.map-card:hover {
 }
 
 /* Section themes — one distinctive backdrop per major section */
+.theme-home {
+  background: #9eb8c4;
+}
+
+.theme-home .section-backdrop img {
+  object-position: 42% 28%;
+  filter: saturate(1.06) brightness(0.96);
+  transform: none;
+}
+
+.home-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(244, 247, 242, 0.28) 0%,
+      rgba(244, 247, 242, 0.08) 22%,
+      rgba(8, 18, 16, 0.1) 52%,
+      rgba(244, 247, 242, 0.16) 78%,
+      rgba(244, 247, 242, 0.28) 100%
+    ),
+    linear-gradient(90deg, rgba(244, 247, 242, 0.22) 0%, transparent 46%);
+}
+
+.theme-home .site-header {
+  background: rgba(244, 247, 242, 0.94);
+}
+
+.theme-home main {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-home .site-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.theme-home .hero {
+  background: transparent;
+}
+
+.theme-home .hero-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(244, 247, 242, 0.22) 0%,
+      rgba(244, 247, 242, 0.08) 34%,
+      transparent 58%
+    ),
+    linear-gradient(180deg, rgba(244, 247, 242, 0.32) 0%, transparent 20%, transparent 78%, rgba(8, 18, 16, 0.16) 100%);
+}
+
+.theme-home .hero-copy {
+  background: rgba(244, 247, 242, 0.94);
+  border: 1px solid rgba(20, 34, 26, 0.06);
+  border-radius: calc(var(--radius) + 8px);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.85rem 2.15rem;
+  max-width: 36rem;
+}
+
+.home-band {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.home-panel {
+  background: rgba(244, 247, 242, 0.96);
+  border: 1px solid rgba(20, 34, 26, 0.06);
+  border-radius: calc(var(--radius) + 8px);
+  box-shadow: var(--shadow);
+  padding: 1.55rem 1.55rem 1.7rem;
+}
+
+.theme-home .feature-strip.home-panel {
+  padding: 1.45rem 1.4rem 1.55rem;
+}
+
 .theme-wildlife,
 .theme-wildlife-detail {
   background: #0c1410;
@@ -1405,6 +1525,14 @@ a.map-card:hover {
 .theme-wildlife .site-header,
 .theme-wildlife-detail .site-header {
   background: rgba(244, 247, 242, 0.9);
+}
+
+.theme-wildlife .site-footer,
+.theme-wildlife-detail .site-footer,
+.theme-innovations .site-footer,
+.theme-innovations-detail .site-footer {
+  position: relative;
+  z-index: 2;
 }
 
 .theme-wildlife main,
@@ -1542,6 +1670,111 @@ a.map-card:hover {
   }
 }
 
+/* Innovations — distinct tech/Earth circuit theme */
+.theme-innovations,
+.theme-innovations-detail {
+  background: #071410;
+}
+
+.theme-innovations .section-backdrop img,
+.theme-innovations-detail .section-backdrop img {
+  object-position: 38% 46%;
+  filter: blur(7px) saturate(1.05) brightness(0.5);
+}
+
+.innovations-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 16, 14, 0.62) 0%,
+      rgba(8, 22, 18, 0.42) 20%,
+      rgba(244, 247, 242, 0.76) 50%,
+      rgba(244, 247, 242, 0.92) 74%,
+      rgba(244, 247, 242, 0.96) 100%
+    ),
+    linear-gradient(90deg, rgba(244, 247, 242, 0.22) 0%, transparent 46%);
+}
+
+.theme-innovations-detail .section-backdrop-subtle .innovations-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(244, 247, 242, 0.8) 0%,
+      rgba(244, 247, 242, 0.92) 38%,
+      rgba(244, 247, 242, 0.96) 100%
+    );
+}
+
+.theme-innovations .site-header,
+.theme-innovations-detail .site-header {
+  background: rgba(244, 247, 242, 0.9);
+}
+
+.theme-innovations main,
+.theme-innovations-detail main {
+  position: relative;
+  z-index: 1;
+}
+
+.innovations-hero-media img {
+  object-position: 36% 48%;
+}
+
+.innovations-hero-shade {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 14, 12, 0.4) 0%,
+      rgba(6, 18, 15, 0.58) 44%,
+      rgba(6, 16, 13, 0.82) 100%
+    ),
+    linear-gradient(90deg, rgba(6, 16, 13, 0.5) 0%, transparent 62%);
+}
+
+.innovations-list-panel {
+  background: rgba(244, 247, 242, 0.97);
+}
+
+.innovation-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.innovation-card {
+  border-left-color: #1b7a4e;
+}
+
+.theme-innovations-detail .wildlife-detail,
+.theme-innovations-detail .innovations-prose {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-innovations-detail .innovations-prose {
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid rgba(20, 34, 26, 0.06);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.theme-innovations-detail .innovations-prose h2,
+.theme-innovations-detail .innovations-prose p {
+  color: var(--ink);
+}
+
+.theme-innovations-detail .innovations-prose .wildlife-sources {
+  color: var(--muted);
+}
+
+.innovation-card,
+.wildlife-card.innovation-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1550,6 +1783,7 @@ a.map-card:hover {
   .btn,
   .solution-card,
   .wildlife-card,
+  .innovation-card,
   .map-card {
     transition: none;
   }

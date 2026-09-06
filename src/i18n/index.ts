@@ -28,3 +28,10 @@ export {
   getRelatedMaps,
   mapCategoryKeys,
 } from './maps';
+export {
+  getInnovationBySlug,
+  getInnovations,
+  getInnovationsByArea,
+  getInnovationsPage,
+  innovationAreaKeys,
+} from './innovations';

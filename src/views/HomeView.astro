@@ -9,19 +9,18 @@ const ui = getUi(locale);
 const latestSolutions = getLatestSolutions(locale);
 ---
 
-<BaseLayout>
+<BaseLayout theme="home" image="/images/home/green-city-future-bg.jpg">
+  <div class="section-backdrop home-backdrop" aria-hidden="true">
+    <img
+      src="/images/home/green-city-future-bg.jpg"
+      alt=""
+      width="1920"
+      height="1280"
+    />
+    <div class="section-backdrop-scrim home-scrim"></div>
+  </div>
+
   <section class="hero" aria-label={ui.home.heroAria}>
-    <div class="hero-media">
-      <picture>
-        <source type="image/webp" srcset="/images/hero-meadow.webp" />
-        <img
-          src="/images/hero-meadow.png"
-          alt={ui.home.heroAlt}
-          width="1536"
-          height="1024"
-        />
-      </picture>
-    </div>
     <div class="hero-gradient"></div>
     <div class="wrap hero-copy">
       <h1>{ui.home.heroTitle}</h1>
@@ -43,8 +42,8 @@ const latestSolutions = getLatestSolutions(locale);
     </div>
   </section>
 
-  <section class="section section-cream" aria-labelledby="latest-heading">
-    <div class="wrap">
+  <section class="section home-band" aria-labelledby="latest-heading">
+    <div class="wrap home-panel">
       <div class="section-head">
         <div>
           <div class="eyebrow">
