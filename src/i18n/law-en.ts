@@ -320,4 +320,25 @@ export const en: Record<string, LawCopy> = {
     sourcesNote:
       'Congress.gov H.R. 2773 (117th) and S.1149 (118th); NWF 2026 briefing that still treats passage as future tense.',
   },
+  'companion-animal-homicide-parity': {
+    title: 'Companion-animal homicide parity',
+    hook: 'A proposed rule: unjustified, intentional killing of a companion dog or cat would be punished on the same criminal scale as killing a human. No country has enacted that. This card is an idea.',
+    imageAlt:
+      'A tabby cat on a stone wall and a golden dog behind it in Mosteiros, Azores — companion animals, not a photograph of a named case',
+    jurisdiction: 'Idea (no enacting jurisdiction)',
+    officialName: 'Proposed companion-animal homicide-parity rule (not a filed statute)',
+    citation:
+      'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
+    yearStatus:
+      'Idea / proposal. Not enacted. Not pending in a named legislature. No jurisdiction has written full homicide-equivalence for killing a companion animal.',
+    what: 'The idea is a penal-scale rule: the intentional, unjustified killing of a companion dog or cat would sit on the same criminal ladder as killing a human being — murder or manslaughter analogues, not a standalone animal-cruelty count. It is a moral and drafting proposal, not a text any parliament has adopted. Ordinary justifications that already exist in criminal law — necessity, lawful veterinary euthanasia, self-defence — would still have to be written. This card does not draft those exceptions.',
+    where:
+      'Nowhere as law. In many countries, killing a companion animal can already be a felony or other serious crime under animal-cruelty statutes. Those offences live in animal-protection or special-crime chapters. They are not the homicide title. Civil codes that call animals sentient or “not things” change property language. They do not rewrite the murder statute.',
+    effects:
+      'Intended effects only: a stronger deterrent against killing companion animals, and a public signal that those animals are not disposable property. There are no outcome statistics, because there is no statute.',
+    caveats:
+      'Do not claim any country has ratified or enacted full homicide-equivalence for killing pets. This catalog found none. Three real neighbours are easy to confuse with this idea and are not it. First, felony and other criminal animal-cruelty statutes already treat some killings as serious crime — for example the U.S. Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, which can mean up to seven years for specified “animal crushing.” That is a cruelty felony, not murder. Second, civil-status reforms recognise animals as sentient or as “not things”: Portugal Lei n.º 8/2017 inserted Civil Code art. 201.º-B (“os animais são seres vivos dotados de sensibilidade”); German BGB § 90a (“Tiere sind keine Sachen”) still applies the rules for things unless a special law says otherwise. A status change is not murder parity. Third, limited “subjects of rights” jurisprudence — Ecuador Constitutional Court Sentencia 253-20-JH/22 (Estrellita, 27 January 2022) — recognised a wild woolly monkey as a subject of rights under the rights of Nature and said those rights are not equivalent to human rights. It does not make killing a dog legally identical to human murder.',
+    sourcesNote:
+      '18 U.S.C. § 48 on Cornell LII / U.S. Code; Diário da República PDF of Lei n.º 8/2017; gesetze-im-internet BGB § 90a; Corte Constitucional del Ecuador page for Sentencia 253-20-JH/22.',
+  },
 };

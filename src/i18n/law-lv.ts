@@ -320,4 +320,25 @@ export const lv: Record<string, LawCopy> = {
     sourcesNote:
       'Congress.gov H.R. 2773 (117th) un S.1149 (118th); NWF 2026. gada brīfings, kas joprojām tur pieņemšanu nākotnes laikā.',
   },
+  'companion-animal-homicide-parity': {
+    title: 'Kompanjondzīvnieka slepkavības paritāte',
+    hook: 'Ierosināts noteikums: tīša, neattaisnota suņa vai kaķa — kompanjona — nogalināšana tiktu sodīta tajā pašā kriminālajā skalā kā cilvēka nogalināšana. Neviena valsts to nav pieņēmusi. Šī kartīte ir ideja.',
+    imageAlt:
+      'Svītrains kaķis uz akmens mūra un zeltains suns aiz tā Mosteirosā, Azoru salās — kompanjondzīvnieki, ne nosauktas lietas fotogrāfija',
+    jurisdiction: 'Ideja (nav pieņemošas jurisdikcijas)',
+    officialName: 'Proposed companion-animal homicide-parity rule (not a filed statute)',
+    citation:
+      'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
+    yearStatus:
+      'Ideja / priekšlikums. Nav pieņemts. Nav izskatīšanā nosauktā parlamentā. Neviena jurisdikcija nav ierakstījusi pilnu cilvēka slepkavības ekvivalenci par kompanjondzīvnieka nogalināšanu.',
+    what: 'Ideja ir soda skalas noteikums: tīša, neattaisnota suņa vai kaķa — kompanjona — nogalināšana stāvētu tajā pašā noziegumu kāpnē kā cilvēka nogalināšana — slepkavības vai nāves izraisīšanas analogi, ne atsevišķs cietsirdības pret dzīvniekiem sastāvs. Tas ir morāls un redakcionāls priekšlikums, ne teksts, ko būtu pieņēmis kāds parlaments. Parastie attaisnojumi, kas jau pastāv krimināltiesībās — galējā nepieciešamība, likumīga veterinārā eitanāzija, nepieciešamā aizstāvēšanās — tāpat būtu jāuzraksta. Šī kartīte tos neraksta.',
+    where:
+      'Nekur kā likums. Daudzās valstīs kompanjondzīvnieka nogalināšana jau var būt smags noziegums pēc cietsirdības pret dzīvniekiem statūtiem. Šie sastāvi dzīvo dzīvnieku aizsardzības vai īpašo noziegumu nodaļās. Tie nav cilvēka slepkavības tituls. Civilkodeksi, kas sauc dzīvniekus par jūtīgiem vai „ne lietām”, maina īpašuma valodu. Tie nepārraksta slepkavības pantu.',
+    effects:
+      'Tikai iecerētais efekts: spēcīgāks atturējums no kompanjondzīvnieku nogalināšanas un publisks signāls, ka tie nav izmetama manta. Iznākuma statistikas nav, jo statūta nav.',
+    caveats:
+      'Neapgalvo, ka kāda valsts ir ratificējusi vai pieņēmusi pilnu cilvēka slepkavības ekvivalenci par mājdzīvnieku nogalināšanu. Šis katalogs nevienu neatrada. Trīs reālus kaimiņus viegli sajaukt ar šo ideju — un tie nav tā. Pirmkārt, kriminālie cietsirdības pret dzīvniekiem statūti jau uzskata daļu nogalināšanu par smagu noziegumu — piemēram, ASV Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, līdz septiņiem gadiem par norādīto „animal crushing”. Tā ir cietsirdības felonija, ne slepkavība. Otrkārt, civiltiesiskā statusa reformas atzīst dzīvniekus par jūtīgiem vai „ne lietām”: Portugāles Lei n.º 8/2017 Civilkodeksā ielika 201.º-B. pantu („os animais são seres vivos dotados de sensibilidade”); Vācijas BGB § 90a („Tiere sind keine Sachen”) joprojām piemēro lietu noteikumus, ja īpašs likums nesaka citādi. Statusa maiņa nav slepkavības paritāte. Treškārt, ierobežota „tiesību subjektu” judikatūra — Ekvadoras Konstitucionālā tiesa, Sentencia 253-20-JH/22 (Estrellita, 2022. gada 27. janvāris) — atzina savvaļas vilnaino pērtiķi par tiesību subjektu Dabas tiesību ietvarā un teica, ka šīs tiesības nav līdzvērtīgas cilvēka tiesībām. Tas nepadara suņa nogalināšanu juridiski identisku cilvēka slepkavībai.',
+    sourcesNote:
+      '18 U.S.C. § 48 Cornell LII / U.S. Code; Diário da República PDF Lei n.º 8/2017; gesetze-im-internet BGB § 90a; Ekvadoras Konstitucionālās tiesas lapa par Sentencia 253-20-JH/22.',
+  },
 };

@@ -320,4 +320,25 @@ export const pl: Record<string, LawCopy> = {
     sourcesNote:
       'Congress.gov H.R. 2773 (117th) i S.1149 (118th); briefing NWF 2026, który wciąż traktuje uchwalenie w czasie przyszłym.',
   },
+  'companion-animal-homicide-parity': {
+    title: 'Parytet zabójstwa zwierzęcia towarzyszącego z zabójstwem człowieka',
+    hook: 'Proponowana reguła: umyślne, nieuzasadnione zabicie psa albo kota towarzyszącego karano by na tej samej skali karnej co zabicie człowieka. Żadne państwo tego nie uchwaliło. Ta karta jest ideą.',
+    imageAlt:
+      'Pręgowany kot na kamiennym murze i złoty pies za nim w Mosteiros na Azorach — zwierzęta towarzyszące, nie zdjęcie nazwanej sprawy',
+    jurisdiction: 'Idea (brak uchwalającej jurysdykcji)',
+    officialName: 'Proposed companion-animal homicide-parity rule (not a filed statute)',
+    citation:
+      'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
+    yearStatus:
+      'Idea / propozycja. Nie uchwalona. Nie rozpatrywana w nazwanym parlamencie. Żadna jurysdykcja nie zapisała pełnej równoważności zabójstwa człowieka za zabicie zwierzęcia towarzyszącego.',
+    what: 'Idea to reguła skali karnej: umyślne, nieuzasadnione zabicie psa albo kota towarzyszącego siedziałoby na tej samej drabinie przestępstw co zabicie człowieka — analogi morderstwa albo nieumyślnego spowodowania śmierci, nie osobny zarzut znęcania się nad zwierzętami. To propozycja moralna i redakcyjna, nie tekst przyjęty przez jakikolwiek parlament. Zwykłe kontratypy, które już istnieją w prawie karnym — stan wyższej konieczności, legalna eutanazja weterynaryjna, obrona konieczna — i tak trzeba by dopisać. Ta karta ich nie pisze.',
+    where:
+      'Nigdzie jako prawo. W wielu krajach zabicie zwierzęcia towarzyszącego już może być zbrodnią albo innym poważnym przestępstwem na podstawie ustaw o znęcaniu się nad zwierzętami. Te czyny siedzą w rozdziałach o ochronie zwierząt albo przestępstwach szczególnych. To nie tytuł o zabójstwie człowieka. Kodeksy cywilne, które nazywają zwierzęta istotami czującymi albo „nie rzeczami”, zmieniają język własności. Nie przepisują artykułu o morderstwie.',
+    effects:
+      'Tylko zamierzony skutek: silniejsze odstraszenie od zabijania zwierząt towarzyszących i publiczny sygnał, że nie są zużywalną własnością. Nie ma statystyk skutku, bo nie ma statutu.',
+    caveats:
+      'Nie twierdź, że jakiekolwiek państwo ratyfikowało albo uchwaliło pełną równoważność zabójstwa człowieka za zabicie pupila. Ten katalog nie znalazł żadnego. Trzech rzeczywistych sąsiadów łatwo pomylić z tą ideą — i nie są nią. Po pierwsze, karne ustawy o znęcaniu się nad zwierzętami już traktują część zabójstw jako poważne przestępstwo — na przykład amerykańska Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, do siedmiu lat za określony „animal crushing”. To zbrodnia znęcania, nie morderstwo. Po drugie, cywilne reformy statusu uznają zwierzęta za czujące albo za „nie rzeczy”: portugalska Lei n.º 8/2017 wstawiła do kodeksu cywilnego art. 201.º-B („os animais são seres vivos dotados de sensibilidade”); niemiecki BGB § 90a („Tiere sind keine Sachen”) nadal stosuje przepisy o rzeczach, dopóki ustawa szczególna nie powie inaczej. Zmiana statusu to nie parytet zabójstwa. Po trzecie, ograniczona jurysprudencja „podmiotów praw” — Trybunał Konstytucyjny Ekwadoru, Sentencia 253-20-JH/22 (Estrellita, 27 stycznia 2022) — uznała dziką małpę wełnistą za podmiot praw w ramach praw Natury i powiedziała, że te prawa nie są równoważne prawom człowieka. To nie czyni zabicia psa prawnie tożsamym z morderstwem człowieka.',
+    sourcesNote:
+      '18 U.S.C. § 48 na Cornell LII / U.S. Code; PDF Diário da República Lei n.º 8/2017; gesetze-im-internet BGB § 90a; strona Trybunału Konstytucyjnego Ekwadoru dla Sentencia 253-20-JH/22.',
+  },
 };
