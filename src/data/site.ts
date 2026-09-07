@@ -22,6 +22,7 @@ export const nav = [
   { href: '/law', key: 'law' },
   { href: '/wildlife', key: 'wildlife' },
   { href: '/forests', key: 'forests' },
+  { href: '/oceans', key: 'oceans' },
   { href: '/book', key: 'book' },
   { href: '/about', key: 'about' },
 ] as const;
@@ -42,6 +43,7 @@ export const homeHub = [
   { href: '/law', key: 'law', icon: 'scales' },
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
   { href: '/forests', key: 'forests', icon: 'trees' },
+  { href: '/oceans', key: 'oceans', icon: 'wave' },
   { href: '/book', key: 'book', icon: 'book' },
   { href: '/about', key: 'about', icon: 'compass' },
 ] as const;

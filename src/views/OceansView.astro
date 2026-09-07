@@ -1,0 +1,623 @@
+---
+import HubTile from '../components/HubTile.astro';
+import SectionHub from '../components/SectionHub.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  breitburg2018Url,
+  cheng2024Url,
+  copernicusMarineUrl,
+  ipccAr6Url,
+  isOceanPanel,
+  nasaOceanColorUrl,
+  noaaPollutionUrl,
+  oceanBackdrop,
+  oceanFrameSrc,
+  oceanHub,
+  oceanPanelPath,
+  oscarEsrUrl,
+  type OceanPanel,
+  woa2023Url,
+  worldviewChlUrl,
+  worldviewSmapUrl,
+  worldviewSstAnomUrl,
+  worldviewSstUrl,
+} from '../data/oceans';
+import {
+  getOceanCurrentFrames,
+  getOceanPollution,
+  getOceanSalinityFrames,
+  getOceanSstFrames,
+  getOceanStats,
+  getOceansPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+
+interface Props {
+  panel?: OceanPanel;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getOceansPage(locale);
+const requested = Astro.props.panel ?? Astro.url.searchParams.get('panel') ?? 'currents';
+const activePanel: OceanPanel = isOceanPanel(requested) ? requested : 'currents';
+
+const sstFrames = getOceanSstFrames(locale, 'sst');
+const anomalyFrames = getOceanSstFrames(locale, 'sst-anomaly');
+const salinityFrames = getOceanSalinityFrames(locale);
+const currentFrame = getOceanCurrentFrames(locale)[0];
+const pollution = getOceanPollution(locale);
+const stats = getOceanStats(locale);
+const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
+
+const initialSst = sstFrames[sstFrames.length - 1];
+const initialSalinity = salinityFrames[0];
+---
+
+<BaseLayout
+  title={page.metaTitle}
+  description={page.metaDescription}
+  image={backdropSrc}
+  theme="oceans"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={backdropSrc} alt="" width="1920" height="1078" />
+    <div class="section-backdrop-scrim oceans-scrim"></div>
+  </div>
+
+  <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
+    {
+      oceanHub.map((item) => (
+        <HubTile
+          href={localizePath(oceanPanelPath(item.key), locale)}
+          icon={item.icon}
+          title={page.panels[item.key]}
+          text={page.tiles[item.key]}
+          active={item.key === activePanel}
+          dataPanel={item.key}
+        />
+      ))
+    }
+  </SectionHub>
+
+  <section class="section section-hub-follow" id="currents" data-ocean-panel="currents">
+    <div class="wrap">
+      <div class="wildlife-map-panel forests-panel oceans-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.currents}</div>
+        <h2>{page.panels.currents}</h2>
+        <p class="wildlife-tab-lead">{page.leads.currents}</p>
+        <p class="borders-honesty">{page.honestyCurrents}</p>
+
+        {
+          currentFrame && (
+            <figure class="map-detail-art forest-map-art">
+              <img
+                src={oceanFrameSrc(currentFrame.file)}
+                alt={currentFrame.imageAlt}
+                width="1920"
+                height="973"
+              />
+              <figcaption>
+                {currentFrame.sourceOrg}. {page.vintageLabel}: {currentFrame.vintage}.
+              </figcaption>
+            </figure>
+          )
+        }
+
+        {
+          currentFrame && (
+            <div class="forest-map-meta">
+              <span class="pill">{page.fidelityCurrents}</span>
+              <span class="pill">{currentFrame.label}</span>
+              <span class="pill">{currentFrame.sourceShort}</span>
+            </div>
+          )
+        }
+
+        <div class="prose map-detail-copy forest-frame-copy">
+          {currentFrame && <h3>{currentFrame.title}</h3>}
+          {currentFrame && <p>{currentFrame.caption}</p>}
+          <p class="wildlife-sources">{page.oscarNote}</p>
+          <p class="wildlife-sources">{page.gfwStyleNote}</p>
+          {
+            currentFrame && (
+              <p class="wildlife-sources">
+                <strong>{currentFrame.sourceOrg}</strong>
+                <br />
+                {page.vintageLabel}: {currentFrame.vintage}
+                <br />
+                <a href={currentFrame.sourceUrl} rel="noopener noreferrer">
+                  {currentFrame.sourceUrl}
+                </a>
+                <br />
+                {page.licenseLabel}:
+                <a href={currentFrame.licenseUrl} rel="noopener noreferrer">
+                  {currentFrame.license}
+                </a>
+              </p>
+            )
+          }
+          <p class="oceans-cta-row">
+            <a class="btn btn-primary map-open-source" href={copernicusMarineUrl} rel="noopener noreferrer">
+              {page.openCopernicus}
+            </a>
+            <a class="btn btn-outline map-open-source" href={oscarEsrUrl} rel="noopener noreferrer">
+              {page.openOscar}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="salinity" data-ocean-panel="salinity">
+    <div class="wrap">
+      <div class="wildlife-map-panel forests-panel oceans-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.salinity}</div>
+        <h2>{page.panels.salinity}</h2>
+        <p class="wildlife-tab-lead">{page.leads.salinity}</p>
+        <p class="borders-honesty">{page.honestySalinity}</p>
+
+        <div class="forest-map" data-salinity-map>
+          <figure class="map-detail-art forest-map-art">
+            <img
+              data-sal-image
+              src={oceanFrameSrc(initialSalinity.file)}
+              alt={initialSalinity.imageAlt}
+              width="2340"
+              height="1156"
+            />
+            <figcaption data-sal-caption>
+              {initialSalinity.sourceOrg}. {page.vintageLabel}: {initialSalinity.vintage}.
+            </figcaption>
+          </figure>
+
+          <div class="forest-map-meta">
+            <span class="pill">{page.fidelitySalinity}</span>
+            <span class="pill" data-sal-year-pill>{initialSalinity.label}</span>
+            <span class="pill" data-sal-source-pill>{initialSalinity.sourceShort}</span>
+          </div>
+
+          <nav class="borders-scrubber forest-year-chips" aria-label={page.salinityAria} data-sal-chips>
+            {
+              salinityFrames.map((frame, index) => (
+                <button
+                  type="button"
+                  class:list={['borders-year', 'forest-year', { 'is-active': index === 0 }]}
+                  data-sal-chip
+                  data-index={index}
+                >
+                  {frame.label}
+                </button>
+              ))
+            }
+          </nav>
+
+          <div class="prose map-detail-copy forest-frame-copy">
+            <h3 data-sal-title>{initialSalinity.title}</h3>
+            <p data-sal-body>{initialSalinity.caption}</p>
+            <p class="wildlife-sources">{page.howToReadSalinity}</p>
+            <p class="wildlife-sources">{page.smapNote}</p>
+            <p class="wildlife-sources" data-sal-source>
+              <strong>{initialSalinity.sourceOrg}</strong>
+              <br />
+              {page.vintageLabel}: {initialSalinity.vintage}
+              <br />
+              <a href={initialSalinity.sourceUrl} rel="noopener noreferrer">{initialSalinity.sourceUrl}</a>
+              <br />
+              {page.licenseLabel}:
+              <a href={initialSalinity.licenseUrl} rel="noopener noreferrer">{initialSalinity.license}</a>
+            </p>
+            <p class="oceans-cta-row">
+              <a class="btn btn-primary map-open-source" href={worldviewSmapUrl} rel="noopener noreferrer">
+                {page.openWorldviewSmap}
+              </a>
+              <a class="btn btn-outline map-open-source" href={woa2023Url} rel="noopener noreferrer">
+                World Ocean Atlas 2023 →
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sst" data-ocean-panel="sst">
+    <div class="wrap">
+      <div class="wildlife-map-panel forests-panel oceans-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.sst}</div>
+        <h2>{page.panels.sst}</h2>
+        <p class="wildlife-tab-lead">{page.leads.sst}</p>
+        <p class="borders-honesty">{page.honestySst}</p>
+
+        <div class="forest-map" data-sst-map>
+          <div class="forest-mode" role="tablist" aria-label={page.scrubberAria}>
+            <button type="button" class="forest-mode-btn is-active" data-sst-mode="sst" role="tab" aria-selected="true">
+              {page.modeSst}
+            </button>
+            <button type="button" class="forest-mode-btn" data-sst-mode="sst-anomaly" role="tab" aria-selected="false">
+              {page.modeAnomaly}
+            </button>
+          </div>
+
+          <figure class="map-detail-art forest-map-art">
+            <img
+              data-sst-image
+              src={oceanFrameSrc(initialSst.file)}
+              alt={initialSst.imageAlt}
+              width="2400"
+              height="1200"
+            />
+            <figcaption data-sst-caption>
+              {initialSst.sourceOrg}. {page.vintageLabel}: {initialSst.vintage}.
+            </figcaption>
+          </figure>
+
+          <div class="forest-map-meta">
+            <span class="pill" data-sst-fidelity>{page.fidelitySst}</span>
+            <span class="pill" data-sst-year-pill>{initialSst.label}</span>
+            <span class="pill" data-sst-source-pill>{initialSst.sourceShort}</span>
+          </div>
+
+          <label class="forest-slider-label" for="ocean-sst-range">
+            <span>{page.yearLabel}</span>
+            <strong data-sst-year-strong>{initialSst.label}</strong>
+          </label>
+          <input
+            id="ocean-sst-range"
+            class="forest-slider"
+            type="range"
+            min="0"
+            max={sstFrames.length - 1}
+            value={sstFrames.length - 1}
+            data-sst-range
+          />
+
+          <nav class="borders-scrubber forest-year-chips" aria-label={page.scrubberAria} data-sst-chips>
+            {
+              sstFrames.map((frame, index) => (
+                <button
+                  type="button"
+                  class:list={['borders-year', 'forest-year', { 'is-active': index === sstFrames.length - 1 }]}
+                  data-sst-chip
+                  data-index={index}
+                >
+                  {frame.label}
+                </button>
+              ))
+            }
+          </nav>
+
+          <div class="prose map-detail-copy forest-frame-copy">
+            <h3 data-sst-title>{initialSst.title}</h3>
+            <p data-sst-body>{initialSst.caption}</p>
+            <p class="wildlife-sources">{page.howToReadSst}</p>
+            <p class="wildlife-sources">{page.caveatsSst}</p>
+            <h3>{page.sourceLabel}</h3>
+            <p class="wildlife-sources" data-sst-source>
+              <strong>{initialSst.sourceOrg}</strong>
+              <br />
+              {page.vintageLabel}: {initialSst.vintage}
+              <br />
+              <a href={initialSst.sourceUrl} rel="noopener noreferrer">{initialSst.sourceUrl}</a>
+              <br />
+              {page.licenseLabel}:
+              <a href={initialSst.licenseUrl} rel="noopener noreferrer">{initialSst.license}</a>
+            </p>
+            <p class="oceans-cta-row">
+              <a class="btn btn-primary map-open-source" href={worldviewSstUrl} rel="noopener noreferrer">
+                {page.openWorldviewSst}
+              </a>
+              <a class="btn btn-outline map-open-source" href={worldviewSstAnomUrl} rel="noopener noreferrer">
+                {page.openWorldviewAnom}
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pollution" data-ocean-panel="pollution">
+    <div class="wrap">
+      <div class="wildlife-copy-card forests-panel oceans-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.pollution}</div>
+        <h2>{page.panels.pollution}</h2>
+        <p class="wildlife-tab-lead">{page.leads.pollution}</p>
+        <p class="borders-honesty">{page.honestyPollution}</p>
+        <div class="forest-recon-grid">
+          {
+            pollution.map((item) => (
+              <article class="forest-recon-card" id={`pollution-${item.id}`}>
+                <figure class="map-detail-art">
+                  <img
+                    src={oceanFrameSrc(item.file)}
+                    alt={item.imageAlt}
+                    width="1600"
+                    height="900"
+                    loading="lazy"
+                  />
+                  <figcaption>{item.caption}</figcaption>
+                </figure>
+                <div class="meta-row">
+                  <span class="pill">{item.sourceShort}</span>
+                  <span class="pill">{item.vintage}</span>
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.lead}</p>
+                <p class="wildlife-sources">
+                  <a href={item.sourceUrl} rel="noopener noreferrer">{item.sourceUrl}</a>
+                  <br />
+                  {page.licenseLabel}:
+                  <a href={item.licenseUrl} rel="noopener noreferrer">{item.license}</a>
+                </p>
+              </article>
+            ))
+          }
+        </div>
+        <p class="oceans-cta-row">
+          <a class="btn btn-primary map-open-source" href={noaaPollutionUrl} rel="noopener noreferrer">
+            {page.openNoaaPollution}
+          </a>
+          <a class="btn btn-outline map-open-source" href={worldviewChlUrl} rel="noopener noreferrer">
+            NASA Worldview VIIRS chlorophyll →
+          </a>
+          <a class="btn btn-outline map-open-source" href={nasaOceanColorUrl} rel="noopener noreferrer">
+            {page.openOceanColor}
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="numbers" data-ocean-panel="numbers">
+    <div class="wrap">
+      <div class="wildlife-list-panel forests-panel oceans-panel">
+        <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
+        <h2>{page.panels.numbers}</h2>
+        <p class="wildlife-tab-lead">{page.leads.numbers}</p>
+        <p class="borders-honesty">{page.numbersNote}</p>
+        <div class="forest-stat-grid">
+          {
+            stats.map((stat) => (
+              <article class="forest-stat">
+                <p class="forest-stat-value">
+                  {stat.value}
+                  <span>{page.units[stat.unitKey]}</span>
+                </p>
+                <h3>{stat.label}</h3>
+                <p>{stat.text}</p>
+                <p class="wildlife-sources">
+                  {stat.sourceShort} · {stat.vintage}
+                  <br />
+                  <a href={stat.sourceUrl} rel="noopener noreferrer">{stat.sourceUrl}</a>
+                </p>
+              </article>
+            ))
+          }
+        </div>
+        <div class="forest-distinguish">
+          <h3>{page.distinguishTitle}</h3>
+          <p>{page.distinguish}</p>
+          <p class="wildlife-sources">
+            IPCC AR6 · <a href={ipccAr6Url} rel="noopener noreferrer">{ipccAr6Url}</a>
+            <br />
+            Cheng et al. 2024 · <a href={cheng2024Url} rel="noopener noreferrer">{cheng2024Url}</a>
+            <br />
+            Breitburg et al. 2018 · <a href={breitburg2018Url} rel="noopener noreferrer">{breitburg2018Url}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script
+  define:vars={{
+    sstFrames,
+    anomalyFrames,
+    salinityFrames,
+    currentsHref: localizePath(oceanPanelPath('currents'), locale),
+    salinityHref: localizePath(oceanPanelPath('salinity'), locale),
+    sstHref: localizePath(oceanPanelPath('sst'), locale),
+    pollutionHref: localizePath(oceanPanelPath('pollution'), locale),
+    numbersHref: localizePath(oceanPanelPath('numbers'), locale),
+    fidelitySst: page.fidelitySst,
+    fidelityAnomaly: page.fidelityAnomaly,
+    vintageLabel: page.vintageLabel,
+    licenseLabel: page.licenseLabel,
+    srcPrefix: '/images/oceans/',
+  }}
+>
+  const hrefs = {
+    currents: currentsHref,
+    salinity: salinityHref,
+    sst: sstHref,
+    pollution: pollutionHref,
+    numbers: numbersHref,
+  };
+
+  const tiles = document.querySelectorAll('[data-panel]');
+  tiles.forEach((tile) => {
+    tile.addEventListener('click', (event) => {
+      const panel = tile.dataset.panel;
+      if (!panel || !(panel in hrefs)) return;
+      event.preventDefault();
+      tiles.forEach((item) => {
+        const on = item.dataset.panel === panel;
+        item.classList.toggle('is-active', on);
+        if (on) item.setAttribute('aria-current', 'page');
+        else item.removeAttribute('aria-current');
+      });
+      history.replaceState(null, '', hrefs[panel]);
+      document.getElementById(panel)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  function bindFrameSwitcher(root, framesByMode, options) {
+    if (!root) return;
+    const image = root.querySelector(options.image);
+    const caption = root.querySelector(options.caption);
+    const fidelity = root.querySelector(options.fidelity);
+    const yearPill = root.querySelector(options.yearPill);
+    const sourcePill = root.querySelector(options.sourcePill);
+    const title = root.querySelector(options.title);
+    const body = root.querySelector(options.body);
+    const source = root.querySelector(options.source);
+    const yearStrong = root.querySelector(options.yearStrong);
+    const range = root.querySelector(options.range);
+    const chips = root.querySelector(options.chips);
+    const modeButtons = options.modeAttr ? root.querySelectorAll(options.modeAttr) : [];
+
+    let mode = options.initialMode;
+    let index =
+      typeof options.initialIndex === 'number'
+        ? options.initialIndex
+        : framesByMode[mode].length - 1;
+
+    function framesFor(nextMode) {
+      return framesByMode[nextMode] || framesByMode[options.initialMode];
+    }
+
+    function renderChips() {
+      const frames = framesFor(mode);
+      if (!chips) return;
+      chips.innerHTML = '';
+      frames.forEach((frame, i) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'borders-year forest-year' + (i === index ? ' is-active' : '');
+        button.dataset.index = String(i);
+        button.textContent = frame.label;
+        button.addEventListener('click', () => show(mode, i));
+        chips.appendChild(button);
+      });
+    }
+
+    function show(nextMode, nextIndex) {
+      const frames = framesFor(nextMode);
+      mode = nextMode;
+      index = Math.max(0, Math.min(nextIndex, frames.length - 1));
+      const frame = frames[index];
+      if (!frame) return;
+
+      if (image) {
+        image.src = srcPrefix + frame.file;
+        image.alt = frame.imageAlt;
+      }
+      if (caption) {
+        caption.textContent = frame.sourceOrg + '. ' + vintageLabel + ': ' + frame.vintage + '.';
+      }
+      if (fidelity && options.fidelityFor) {
+        fidelity.textContent = options.fidelityFor(mode);
+      }
+      if (yearPill) yearPill.textContent = frame.label;
+      if (sourcePill) sourcePill.textContent = frame.sourceShort;
+      if (title) title.textContent = frame.title;
+      if (body) body.textContent = frame.caption;
+      if (source) {
+        source.innerHTML =
+          '<strong>' +
+          frame.sourceOrg +
+          '</strong><br />' +
+          vintageLabel +
+          ': ' +
+          frame.vintage +
+          '<br /><a href="' +
+          frame.sourceUrl +
+          '" rel="noopener noreferrer">' +
+          frame.sourceUrl +
+          '</a><br />' +
+          licenseLabel +
+          ': <a href="' +
+          frame.licenseUrl +
+          '" rel="noopener noreferrer">' +
+          frame.license +
+          '</a>';
+      }
+      if (yearStrong) yearStrong.textContent = frame.label;
+      if (range) {
+        range.max = String(frames.length - 1);
+        range.value = String(index);
+      }
+      modeButtons.forEach((button) => {
+        const on = button.getAttribute(options.modeAttr.replace(/[\[\]=]/g, '')) === mode;
+        const attr = options.modeData;
+        const onMode = button.dataset[attr] === mode;
+        button.classList.toggle('is-active', onMode);
+        button.setAttribute('aria-selected', onMode ? 'true' : 'false');
+      });
+      renderChips();
+    }
+
+    modeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const next = button.dataset[options.modeData] || options.initialMode;
+        const frames = framesFor(next);
+        show(next, frames.length - 1);
+      });
+    });
+
+    range?.addEventListener('input', () => {
+      show(mode, Number(range.value));
+    });
+
+    chips?.querySelectorAll('button').forEach((button) => {
+      button.addEventListener('click', () => show(mode, Number(button.dataset.index)));
+    });
+
+    show(mode, index);
+  }
+
+  bindFrameSwitcher(
+    document.querySelector('[data-sst-map]'),
+    { sst: sstFrames, 'sst-anomaly': anomalyFrames },
+    {
+      image: '[data-sst-image]',
+      caption: '[data-sst-caption]',
+      fidelity: '[data-sst-fidelity]',
+      yearPill: '[data-sst-year-pill]',
+      sourcePill: '[data-sst-source-pill]',
+      title: '[data-sst-title]',
+      body: '[data-sst-body]',
+      source: '[data-sst-source]',
+      yearStrong: '[data-sst-year-strong]',
+      range: '[data-sst-range]',
+      chips: '[data-sst-chips]',
+      modeAttr: '[data-sst-mode]',
+      modeData: 'sstMode',
+      initialMode: 'sst',
+      initialIndex: sstFrames.length - 1,
+      fidelityFor: (mode) => (mode === 'sst-anomaly' ? fidelityAnomaly : fidelitySst),
+    },
+  );
+
+  bindFrameSwitcher(
+    document.querySelector('[data-salinity-map]'),
+    { salinity: salinityFrames },
+    {
+      image: '[data-sal-image]',
+      caption: '[data-sal-caption]',
+      fidelity: null,
+      yearPill: '[data-sal-year-pill]',
+      sourcePill: '[data-sal-source-pill]',
+      title: '[data-sal-title]',
+      body: '[data-sal-body]',
+      source: '[data-sal-source]',
+      yearStrong: null,
+      range: null,
+      chips: '[data-sal-chips]',
+      modeAttr: null,
+      modeData: 'salMode',
+      initialMode: 'salinity',
+      initialIndex: 0,
+      fidelityFor: null,
+    },
+  );
+
+  const path = location.pathname.replace(/\/+$/, '');
+  const last = path.split('/').filter(Boolean).pop();
+  if (last && last in hrefs && last !== 'oceans' && last !== 'ru' && last !== 'pl' && last !== 'lv') {
+    document.getElementById(last)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+</script>

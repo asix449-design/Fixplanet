@@ -38,6 +38,14 @@ export {
 } from './innovations';
 export { getForestFrames, getForestStats, getForestsPage } from './forests';
 export {
+  getOceanCurrentFrames,
+  getOceanPollution,
+  getOceanSalinityFrames,
+  getOceanSstFrames,
+  getOceanStats,
+  getOceansPage,
+} from './oceans';
+export {
   getLawBySlug,
   getLawPage,
   getLaws,
