@@ -381,7 +381,10 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:PEM_fuel_cell.jpg',
     ),
     sources: [
-      cite('NREL — Hydrogen', 'https://www.nrel.gov/hydrogen'),
+      cite(
+        'NREL — Hydrogen production and delivery',
+        'https://www.nrel.gov/hydrogen/hydrogen-production-delivery.html',
+      ),
       cite(
         'IEA — Electrolysers',
         'https://www.iea.org/energy-system/low-emission-fuels/electrolysers',
