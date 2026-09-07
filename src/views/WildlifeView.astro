@@ -131,15 +131,19 @@ const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
       </section>
     )
   }
-</BaseLayout>
 
-{
-  !isHumanShelf && (
-    <script define:vars={{ humanHref }}>
-      const hash = window.location.hash;
-      if (hash === '#our-species' || hash === '#dispersal-heading') {
-        window.location.replace(humanHref + hash);
-      }
-    </script>
-  )
-}
+  {
+    !isHumanShelf && (
+      <script define:vars={{ humanHref }}>
+        function redirectHumanAnchors() {
+          const hash = window.location.hash;
+          if (hash === '#our-species' || hash === '#dispersal-heading') {
+            window.location.replace(humanHref + hash);
+          }
+        }
+        redirectHumanAnchors();
+        window.addEventListener('hashchange', redirectHumanAnchors);
+      </script>
+    )
+  }
+</BaseLayout>
