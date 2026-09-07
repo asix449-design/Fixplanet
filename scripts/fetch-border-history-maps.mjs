@@ -1,6 +1,7 @@
 /**
  * Download openly licensed historical political maps for History of borders.
  * Run: node scripts/fetch-border-history-maps.mjs
+ * Then restyle grey/white/OER sheets: python3 scripts/unify-border-history-style.py
  */
 import { mkdir } from 'node:fs/promises';
 import { createWriteStream } from 'node:fs';
@@ -18,19 +19,15 @@ const files = [
   { file: 'y0300.png', commons: 'World_in_300_CE.PNG', width: 1600 },
   { file: 'y0400.png', commons: 'World_in_400_CE.png', width: 1600 },
   { file: 'y0500.png', commons: 'World_in_500_CE.png', width: 1600 },
-  { file: 'y0600.jpg', commons: 'East-Hem_600ad.jpg', width: 1600 },
   { file: 'y0700.png', commons: 'World_in_700_CE.png', width: 1600 },
-  { file: 'y0800.jpg', commons: 'East-Hem_800ad.jpg', width: 1600 },
+  { file: 'y0750.png', commons: 'World_in_750_CE.png', width: 1600 },
   { file: 'y0900.png', commons: 'World_in_900_CE.png', width: 1600 },
-  { file: 'y1025.jpg', commons: 'East-Hem_1025ad.jpg', width: 1600 },
-  { file: 'y1100.jpg', commons: 'East-Hem_1100ad.jpg', width: 1600 },
   { file: 'y1200.jpg', commons: 'World_map_1200.jpg', width: 1600 },
   { file: 'y1500.png', commons: 'World_map_1500.png', width: 1600 },
-  { file: 'y1600.png', commons: 'Colonisation_1600.png', width: 1600 },
+  { file: 'y1648.png', commons: 'World_map_1648.png', width: 1600 },
   { file: 'y1700.png', commons: '1700_CE_world_map.PNG', width: 1600 },
   { file: 'y1815.jpg', commons: 'World_map_1815_(COV).jpg', width: 1600 },
   { file: 'y1914.jpg', commons: 'World_map_1914.jpg', width: 1600 },
-  { file: 'y2000.jpg', commons: '(Political_map_of_the_world)._LOC_2001620596.jpg', width: 1600 },
 ];
 
 function thumbUrl(commons, width) {

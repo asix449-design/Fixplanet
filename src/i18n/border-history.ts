@@ -42,7 +42,7 @@ const pageEn: BorderHistoryPage = {
   lead:
     'Political maps, one century at a time: year 1 of the Common Era through the present. Each frame is a published reconstruction or a dated government sheet. Early borders are estimates.',
   honesty:
-    'There is no single “true” world border for antiquity. States, tribute zones, and nomadic ranges overlap. Several frames are Eastern Hemisphere only, or the nearest free map to that century. Contested lines stay contested.',
+    'There is no single “true” world border for antiquity. States, tribute zones, and nomadic ranges overlap. Several steps use the nearest openly licensed plate in this atlas family — not an invented year. Contested lines stay contested.',
   back: '← Maps',
   scrubberAria: 'Jump to a century',
   sourceLabel: 'Source',
@@ -73,7 +73,7 @@ const pageRu: BorderHistoryPage = {
   lead:
     'Политические карты — по одному столетию: от 1 года н. э. до наших дней. Каждый кадр — опубликованная реконструкция или датированный государственный лист. Ранние границы — оценки.',
   honesty:
-    'Для древности нет одной «верной» мировой границы. Государства, данники и кочевые зоны пересекаются. Часть кадров — только Восточное полушарие или ближайшая свободная карта к этому веку. Спорные линии остаются спорными.',
+    'Для древности нет одной «верной» мировой границы. Государства, данники и кочевые зоны пересекаются. Часть шагов — ближайшая открытая карта из этого семейства атласа, не выдуманный год. Спорные линии остаются спорными.',
   back: '← Карты',
   scrubberAria: 'Перейти к столетию',
   sourceLabel: 'Источник',
@@ -103,7 +103,7 @@ const pagePl: BorderHistoryPage = {
   lead:
     'Mapy polityczne, stulecie po stuleciu: od roku 1 n.e. do dziś. Każda klatka to opublikowana rekonstrukcja albo datowany arkusz rządowy. Wczesne granice to szacunki.',
   honesty:
-    'W starożytności nie ma jednej „prawdziwej” granicy świata. Państwa, trybutariusze i strefy koczownicze nachodzą na siebie. Część klatek to tylko półkula wschodnia albo najbliższa wolna mapa tego wieku. Sporne linie zostają sporne.',
+    'W starożytności nie ma jednej „prawdziwej” granicy świata. Państwa, trybutariusze i strefy koczownicze nachodzą na siebie. Część kroków to najbliższa mapa na otwartej licencji z tej rodziny atlasu — nie wymyślony rok. Sporne linie zostają sporne.',
   back: '← Mapy',
   scrubberAria: 'Skocz do stulecia',
   sourceLabel: 'Źródło',
@@ -133,7 +133,7 @@ const pageLv: BorderHistoryPage = {
   lead:
     'Politiskās kartes — pa vienam gadsimtam: no 1. gada m.ē. līdz mūsdienām. Katrs kadrs ir publicēta rekonstrukcija vai datēta valsts lapa. Agrīnās robežas ir vērtējumi.',
   honesty:
-    'Senatnei nav vienas „īstās” pasaules robežas. Valstis, meslu zonas un klejotāju areāli pārklājas. Daļa kadru ir tikai Austrumu puslode vai tuvākā brīvā karte šim gadsimtam. Strīdīgās līnijas paliek strīdīgas.',
+    'Senatnei nav vienas „īstās” pasaules robežas. Valstis, meslu zonas un klejotāju areāli pārklājas. Daļa soļu ir tuvākā atklāti licencētā karte no šīs atlanta saimes — ne izdomāts gads. Strīdīgās līnijas paliek strīdīgas.',
   back: '← Kartes',
   scrubberAria: 'Pāriet uz gadsimtu',
   sourceLabel: 'Avots',
@@ -192,10 +192,10 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'Reconstructed world political map for 500 CE',
   },
   600: {
-    title: '600 CE — Eastern Hemisphere',
+    title: '600 CE — nearest map: 500',
     caption:
-      'No good free full-world political sheet for 600. Lessman’s Eastern Hemisphere map is the best openly licensed reconstruction we host. The Americas are a gap, not “empty.”',
-    imageAlt: 'Eastern Hemisphere political reconstruction for 600 CE by Thomas Lessman',
+      'No matching-style full-world political sheet for 600 in this atlas family. We show the 500 reconstruction and mark the century as a gap rather than paste a terrain map or invent Sui/Byzantine outlines.',
+    imageAlt: 'World political reconstruction dated 500 CE, used for the 600 step',
   },
   700: {
     title: '700 CE',
@@ -204,10 +204,10 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'Reconstructed world political map for 700 CE',
   },
   800: {
-    title: '800 CE — Eastern Hemisphere',
+    title: '800 CE — nearest map: 750',
     caption:
-      'Carolingian west, Abbasid caliphate, Tang twilight. Again an Eastern Hemisphere sheet: we do not invent a 800 CE Americas political layer.',
-    imageAlt: 'Eastern Hemisphere political reconstruction for 800 CE by Thomas Lessman',
+      'No 800 CE world plate in the same flat atlas family. FamilyPedia’s 750 reconstruction (Umayyad, Tang, Frankish west) is the nearest matching-style sheet. A labeled gap, not an invented 800.',
+    imageAlt: 'World political reconstruction dated 750 CE, used for the 800 step',
   },
   900: {
     title: '900 CE',
@@ -216,16 +216,16 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'Reconstructed world political map for 900 CE',
   },
   1000: {
-    title: '1000 CE — nearest map: 1025',
+    title: '1000 CE — nearest map: 900',
     caption:
-      'No free 1000 CE world sheet of comparable honesty. We show Lessman’s 1025 Eastern Hemisphere map and say so. Do not read it as a millennial snapshot.',
-    imageAlt: 'Eastern Hemisphere political reconstruction dated 1025, used for the 1000 step',
+      'No free 1000 CE world sheet in this atlas family. We show the 900 reconstruction and say so. Do not read it as a millennial snapshot.',
+    imageAlt: 'World political reconstruction dated 900 CE, used for the 1000 step',
   },
   1100: {
-    title: '1100 CE — Eastern Hemisphere',
+    title: '1100 CE — nearest map: 1200',
     caption:
-      'Seljuk, Song, and Crusade-era West Asia. Eastern Hemisphere only. Pacific and American political geography is not on this reconstruction.',
-    imageAlt: 'Eastern Hemisphere political reconstruction for 1100 CE by Thomas Lessman',
+      'No matching-style 1100 world plate. The 1200 OER teaching map is the nearest full-world reconstruction in this series. Seljuk/Song-era lines are not invented here.',
+    imageAlt: 'OER 1200 world map standing in for the 1100 century step',
   },
   1200: {
     title: '1200 CE',
@@ -252,10 +252,10 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'World political reconstruction of main countries in 1500',
   },
   1600: {
-    title: '1600 CE — colonial empires',
+    title: '1600 CE — nearest map: 1648',
     caption:
-      'This sheet highlights European colonial claims, not a complete political census. Large Indigenous and Asian states may be under-drawn. Read it as a colonisation map.',
-    imageAlt: 'World map of colonial empires around 1600',
+      'No matching-style 1600 world plate. Babelia’s 1648 reconstruction (Peace of Westphalia year) is the nearest full-world political sheet — not a colonial-claims overlay on modern borders.',
+    imageAlt: 'World political reconstruction of 1648, used for the 1600 step',
   },
   1700: {
     title: '1700 CE',
@@ -276,16 +276,16 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'OER political map of the world in 1914, used for the 1900 step',
   },
   2000: {
-    title: '2000 CE',
+    title: '2000 CE — nearest map: present-day outlines',
     caption:
-      'CIA political world, June 2000 (U.S. government, public domain). A dated intelligence sheet: names and lines are that year’s cartographic choices, including disputed areas.',
-    imageAlt: 'CIA political map of the world dated June 2000',
+      'No matching-style 2000 choropleth in this atlas family. Country fills use present-day BlankMap-World / Natural Earth geometry, so post-2000 states (including South Sudan, 2011) appear. A labeled gap vs a June 2000 intelligence sheet.',
+    imageAlt: 'Present-day country fills used as the nearest atlas plate for the 2000 step',
   },
   2020: {
     title: '2020s — present outlines',
     caption:
-      'Public-domain country outlines (BlankMap-World / Natural Earth style). A small-scale present-day base, not a live border service. Disputed lines are drawn one way so the map can exist.',
-    imageAlt: 'Present-day public-domain outline map of the world’s countries',
+      'Public-domain country polygons (BlankMap-World / Natural Earth), 4-colored in the same tan-land / soft-blue-sea atlas language as the early centuries. A small-scale present-day base, not a live border service. Disputed lines are drawn one way so the map can exist.',
+    imageAlt: 'Present-day public-domain country map with atlas-style region colors',
   },
 };
 
@@ -327,10 +327,10 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Реконструированная политическая карта мира на 500 год н. э.',
   },
   600: {
-    title: '600 н. э. — Восточное полушарие',
+    title: '600 н. э. — ближайшая карта: 500',
     caption:
-      'Нет хорошего свободного мирового политического листа на 600 год. Карта Lessman — лучшая открытая реконструкция, которую мы размещаем. Америка — пробел, не «пустота».',
-    imageAlt: 'Политическая реконструкция Восточного полушария на 600 год н. э., Томас Лессман',
+      'Нет мирового политического листа на 600 год в этом семействе атласа. Показываем реконструкцию 500 и помечаем век как пробел — не вставляем карту рельефа и не выдумываем контуры Суй и Византии.',
+    imageAlt: 'Политическая реконструкция мира 500 года н. э. для шага 600',
   },
   700: {
     title: '700 н. э.',
@@ -339,10 +339,10 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Реконструированная политическая карта мира на 700 год н. э.',
   },
   800: {
-    title: '800 н. э. — Восточное полушарие',
+    title: '800 н. э. — ближайшая карта: 750',
     caption:
-      'Каролингский запад, Аббасиды, закат Тан. Снова только Восточное полушарие: слой американских государств на 800 год мы не выдумываем.',
-    imageAlt: 'Политическая реконструкция Восточного полушария на 800 год н. э.',
+      'Нет мирового листа на 800 год в том же плоском семействе атласа. Реконструкция FamilyPedia 750 года (Омейяды, Тан, франкский запад) — ближайший лист того же стиля. Помеченный пробел, не выдуманный 800-й.',
+    imageAlt: 'Политическая реконструкция мира 750 года н. э. для шага 800',
   },
   900: {
     title: '900 н. э.',
@@ -351,16 +351,16 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Реконструированная политическая карта мира на 900 год н. э.',
   },
   1000: {
-    title: '1000 н. э. — ближайшая карта: 1025',
+    title: '1000 н. э. — ближайшая карта: 900',
     caption:
-      'Нет свободного мирового листа на 1000 год сравнимой честности. Показываем Lessman 1025 и прямо об этом говорим. Это не снимок тысячного года.',
-    imageAlt: 'Реконструкция Восточного полушария 1025 года для шага 1000',
+      'Нет свободного мирового листа на 1000 год в этом семействе атласа. Показываем реконструкцию 900 и прямо об этом говорим. Это не снимок тысячного года.',
+    imageAlt: 'Политическая реконструкция мира 900 года н. э. для шага 1000',
   },
   1100: {
-    title: '1100 н. э. — Восточное полушарие',
+    title: '1100 н. э. — ближайшая карта: 1200',
     caption:
-      'Сельджуки, Сун, Левант эпохи крестовых походов. Только Восточное полушарие. Тихоокеанская и американская политическая география на этой реконструкции не показаны.',
-    imageAlt: 'Политическая реконструкция Восточного полушария на 1100 год н. э.',
+      'Нет мирового листа на 1100 год в том же стиле. Учебная карта OER 1200 года — ближайшая мировая реконструкция в этой серии. Линии эпохи сельджуков и Сун здесь не выдуманы.',
+    imageAlt: 'Карта мира OER 1200 года вместо шага 1100',
   },
   1200: {
     title: '1200 н. э.',
@@ -387,10 +387,10 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
   },
   1600: {
-    title: '1600 н. э. — колониальные империи',
+    title: '1600 н. э. — ближайшая карта: 1648',
     caption:
-      'Лист выделяет европейские колониальные притязания, а не полный политический перечень. Крупные коренные и азиатские государства могут быть недорисованы. Читайте как карту колонизации.',
-    imageAlt: 'Карта колониальных империй около 1600 года',
+      'Нет мирового листа на 1600 год в том же стиле. Реконструкция Babelia 1648 года (год Вестфальского мира) — ближайший полный политический лист, не колониальная заливка по современным границам.',
+    imageAlt: 'Политическая реконструкция мира 1648 года для шага 1600',
   },
   1700: {
     title: '1700 н. э.',
@@ -411,16 +411,16 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Политическая карта мира OER 1914 года для шага 1900',
   },
   2000: {
-    title: '2000 н. э.',
+    title: '2000 н. э. — ближайшая карта: современные контуры',
     caption:
-      'Политический мир ЦРУ, июнь 2000 (работа правительства США, общественное достояние). Датированный разведывательный лист: имена и линии — выбор того года, включая спорные районы.',
-    imageAlt: 'Политическая карта мира ЦРУ, июнь 2000',
+      'Нет хороплета 2000 года в этом семействе атласа. Заливка стран — современная геометрия BlankMap-World / Natural Earth, поэтому видны государства после 2000 года (включая Южный Судан, 2011). Помеченный пробел относительно разведывательного листа июня 2000-го.',
+    imageAlt: 'Современная заливка стран как ближайший лист атласа для шага 2000',
   },
   2020: {
     title: '2020-е — современные контуры',
     caption:
-      'Контуры стран в общественном достоянии (BlankMap-World / Natural Earth). Мелкомасштабная современная основа, не живой сервис границ. Спорные линии нарисованы одним способом, чтобы карту вообще можно было нарисовать.',
-    imageAlt: 'Современная контурная карта стран мира в общественном достоянии',
+      'Полигоны стран в общественном достоянии (BlankMap-World / Natural Earth), раскрашенные в том же языке атласа: бежевая суша, мягкое море. Мелкомасштабная современная основа, не живой сервис границ. Спорные линии нарисованы одним способом, чтобы карту вообще можно было нарисовать.',
+    imageAlt: 'Современная карта стран в общественном достоянии с цветами регионов в стиле атласа',
   },
 };
 
@@ -462,10 +462,10 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 500 n.e.',
   },
   600: {
-    title: '600 n.e. — półkula wschodnia',
+    title: '600 n.e. — najbliższa mapa: 500',
     caption:
-      'Brak dobrego wolnego światowego arkusza politycznego na 600. Mapa Lessmana to najlepsza otwarta rekonstrukcja, jaką hostujemy. Ameryki są luką, nie „pustką”.',
-    imageAlt: 'Rekonstrukcja polityczna półkuli wschodniej na rok 600 n.e., Thomas Lessman',
+      'Brak światowego arkusza politycznego na 600 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 500 i oznaczamy stulecie jako lukę — bez mapy terenu i bez wymyślania konturów Sui i Bizancjum.',
+    imageAlt: 'Rekonstrukcja polityczna świata z 500 n.e. użyta dla kroku 600',
   },
   700: {
     title: '700 n.e.',
@@ -474,10 +474,10 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 700 n.e.',
   },
   800: {
-    title: '800 n.e. — półkula wschodnia',
+    title: '800 n.e. — najbliższa mapa: 750',
     caption:
-      'Karoliński zachód, Abbasydzi, zmierzch Tang. Znowu tylko półkula wschodnia: nie wymyślamy warstwy politycznej Ameryk na rok 800.',
-    imageAlt: 'Rekonstrukcja polityczna półkuli wschodniej na rok 800 n.e.',
+      'Brak arkusza światowego na 800 w tej samej płaskiej rodzinie atlasu. Rekonstrukcja FamilyPedia z 750 (Umajjadzi, Tang, zachodni Frankowie) to najbliższy arkusz w tym stylu. Oznaczona luka, nie wymyślony rok 800.',
+    imageAlt: 'Rekonstrukcja polityczna świata z 750 n.e. użyta dla kroku 800',
   },
   900: {
     title: '900 n.e.',
@@ -486,16 +486,16 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 900 n.e.',
   },
   1000: {
-    title: '1000 n.e. — najbliższa mapa: 1025',
+    title: '1000 n.e. — najbliższa mapa: 900',
     caption:
-      'Brak wolnego światowego arkusza na rok 1000 o porównywalnej uczciwości. Pokazujemy Lessmana z 1025 i mówimy o tym wprost. To nie migawka roku tysięcznego.',
-    imageAlt: 'Rekonstrukcja półkuli wschodniej z 1025 użyta dla kroku 1000',
+      'Brak wolnego arkusza światowego na rok 1000 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 900 i mówimy o tym wprost. To nie migawka roku tysięcznego.',
+    imageAlt: 'Rekonstrukcja polityczna świata z 900 n.e. użyta dla kroku 1000',
   },
   1100: {
-    title: '1100 n.e. — półkula wschodnia',
+    title: '1100 n.e. — najbliższa mapa: 1200',
     caption:
-      'Seldżucy, Song, Lewant epoki krucjat. Tylko półkula wschodnia. Polityczna geografia Pacyfiku i Ameryk nie jest na tej rekonstrukcji.',
-    imageAlt: 'Rekonstrukcja polityczna półkuli wschodniej na rok 1100 n.e.',
+      'Brak arkusza światowego na 1100 w tym stylu. Mapa dydaktyczna OER z 1200 to najbliższa rekonstrukcja świata w tej serii. Linii epoki Seldżuków i Song tu nie wymyślamy.',
+    imageAlt: 'Mapa świata OER z 1200 jako zastępstwo kroku 1100',
   },
   1200: {
     title: '1200 n.e.',
@@ -522,10 +522,10 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
   },
   1600: {
-    title: '1600 n.e. — imperia kolonialne',
+    title: '1600 n.e. — najbliższa mapa: 1648',
     caption:
-      'Arkusz podkreśla europejskie roszczenia kolonialne, nie pełny spis polityczny. Duże państwa rdzenne i azjatyckie mogą być niedorysowane. Czytaj jako mapę kolonizacji.',
-    imageAlt: 'Mapa imperiów kolonialnych około 1600',
+      'Brak arkusza światowego na 1600 w tym stylu. Rekonstrukcja Babelii z 1648 (rok pokoju westfalskiego) to najbliższy pełny arkusz polityczny — nie warstwa roszczeń kolonialnych na współczesnych granicach.',
+    imageAlt: 'Rekonstrukcja polityczna świata z 1648 użyta dla kroku 1600',
   },
   1700: {
     title: '1700 n.e.',
@@ -546,16 +546,16 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Polityczna mapa świata OER z 1914 dla kroku 1900',
   },
   2000: {
-    title: '2000 n.e.',
+    title: '2000 n.e. — najbliższa mapa: współczesne kontury',
     caption:
-      'Polityczny świat CIA, czerwiec 2000 (dzieło rządu USA, domena publiczna). Datowany arkusz wywiadowczy: nazwy i linie to wybór tamtego roku, w tym sporne obszary.',
-    imageAlt: 'Polityczna mapa świata CIA z czerwca 2000',
+      'Brak choroplethu 2000 w tej rodzinie atlasu. Wypełnienia państw to współczesna geometria BlankMap-World / Natural Earth, więc widać państwa po 2000 (w tym Sudan Południowy, 2011). Oznaczona luka wobec arkusza wywiadowczego z czerwca 2000.',
+    imageAlt: 'Współczesne wypełnienia państw jako najbliższy arkusz atlasu dla kroku 2000',
   },
   2020: {
     title: 'Lata 2020. — współczesne kontury',
     caption:
-      'Kontury państw w domenie publicznej (BlankMap-World / Natural Earth). Współczesna podstawa w małej skali, nie żywy serwis granic. Sporne linie narysowano jednym sposobem, żeby mapę w ogóle dało się narysować.',
-    imageAlt: 'Współczesna konturowa mapa państw świata w domenie publicznej',
+      'Poligony państw w domenie publicznej (BlankMap-World / Natural Earth), pokolorowane w tym samym języku atlasu: płowa ziemia, miękkie morze. Współczesna podstawa w małej skali, nie żywy serwis granic. Sporne linie narysowano jednym sposobem, żeby mapę w ogóle dało się narysować.',
+    imageAlt: 'Współczesna mapa państw w domenie publicznej z kolorami regionów w stylu atlasu',
   },
 };
 
@@ -597,10 +597,10 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'Rekonstruēta pasaules politiskā karte 500. gadam m.ē.',
   },
   600: {
-    title: '600. m.ē. — Austrumu puslode',
+    title: '600. m.ē. — tuvākā karte: 500',
     caption:
-      'Nav labas brīvas pasaules politiskās lapas 600. gadam. Lesmana karte ir labākā atklātā rekonstrukcija, ko izvietojam. Amerika ir iztrūkums, ne „tukšums”.',
-    imageAlt: 'Austrumu puslodes politiskā rekonstrukcija 600. gadam m.ē., Tomas Lessman',
+      'Nav pasaules politiskās lapas 600. gadam šajā atlanta saimē. Rādām 500. gada rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu — bez reljefa kartes un bez izdomātām Sui un Bizantijas kontūrām.',
+    imageAlt: 'Pasaules politiskā rekonstrukcija no 500. gada m.ē. 600. soļa vietā',
   },
   700: {
     title: '700. m.ē.',
@@ -609,10 +609,10 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'Rekonstruēta pasaules politiskā karte 700. gadam m.ē.',
   },
   800: {
-    title: '800. m.ē. — Austrumu puslode',
+    title: '800. m.ē. — tuvākā karte: 750',
     caption:
-      'Karolingu rietumi, Abāsīdi, Tan norieta. Atkal tikai Austrumu puslode: mēs neizdomājam Amerikas politisko slāni 800. gadam.',
-    imageAlt: 'Austrumu puslodes politiskā rekonstrukcija 800. gadam m.ē.',
+      'Nav 800. gada pasaules lapas tajā pašā plakanajā atlanta saimē. FamilyPedia 750. gada rekonstrukcija (Omeijādi, Tan, franku rietumi) ir tuvākā tā paša stila lapa. Marķēts iztrūkums, ne izdomāts 800. gads.',
+    imageAlt: 'Pasaules politiskā rekonstrukcija no 750. gada m.ē. 800. soļa vietā',
   },
   900: {
     title: '900. m.ē.',
@@ -621,16 +621,16 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'Rekonstruēta pasaules politiskā karte 900. gadam m.ē.',
   },
   1000: {
-    title: '1000. m.ē. — tuvākā karte: 1025',
+    title: '1000. m.ē. — tuvākā karte: 900',
     caption:
-      'Nav brīvas 1000. gada pasaules lapas ar līdzīgu godīgumu. Rādām Lesmana 1025. gada karti un to sakām. Tā nav tūkstošgades momentuzņēmums.',
-    imageAlt: 'Austrumu puslodes rekonstrukcija no 1025. gada 1000. soļa vietā',
+      'Nav brīvas 1000. gada pasaules lapas šajā atlanta saimē. Rādām 900. gada rekonstrukciju un to sakām. Tā nav tūkstošgades momentuzņēmums.',
+    imageAlt: 'Pasaules politiskā rekonstrukcija no 900. gada m.ē. 1000. soļa vietā',
   },
   1100: {
-    title: '1100. m.ē. — Austrumu puslode',
+    title: '1100. m.ē. — tuvākā karte: 1200',
     caption:
-      'Seldžuki, Sun, krusta karu Levante. Tikai Austrumu puslode. Klusā okeāna un Amerikas politiskā ģeogrāfija šajā rekonstrukcijā nav.',
-    imageAlt: 'Austrumu puslodes politiskā rekonstrukcija 1100. gadam m.ē.',
+      'Nav 1100. gada pasaules lapas tajā pašā stilā. OER 1200. gada mācību karte ir tuvākā pasaules rekonstrukcija šajā sērijā. Seldžuku un Sun laikmeta līnijas šeit nav izdomātas.',
+    imageAlt: 'OER 1200. gada karte 1100. soļa vietā',
   },
   1200: {
     title: '1200. m.ē.',
@@ -657,10 +657,10 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
   },
   1600: {
-    title: '1600. m.ē. — koloniālās impērijas',
+    title: '1600. m.ē. — tuvākā karte: 1648',
     caption:
-      'Lapa izceļ Eiropas koloniālās pretenzijas, ne pilnu politisko uzskaiti. Lielas pirmiedzīvotāju un Āzijas valstis var būt nepietiekami uzzīmētas. Lasi kā kolonizācijas karti.',
-    imageAlt: 'Koloniālo impēriju karte ap 1600. gadu',
+      'Nav 1600. gada pasaules lapas tajā pašā stilā. Babelia 1648. gada rekonstrukcija (Vestfālenes miera gads) ir tuvākā pilnā politiskā lapa — ne koloniālo pretenziju slānis uz mūsdienu robežām.',
+    imageAlt: 'Pasaules politiskā rekonstrukcija no 1648. gada 1600. soļa vietā',
   },
   1700: {
     title: '1700. m.ē.',
@@ -681,16 +681,16 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'OER politiskā karte 1914. gadam 1900. soļa vietā',
   },
   2000: {
-    title: '2000. m.ē.',
+    title: '2000. m.ē. — tuvākā karte: mūsdienu kontūras',
     caption:
-      'CIP politiskā pasaule, 2000. gada jūnijs (ASV valdības darbs, sabiedriskais īpašums). Datēta izlūkošanas lapa: vārdi un līnijas ir tā gada kartogrāfiskā izvēle, tostarp strīdīgās vietas.',
-    imageAlt: 'CIP politiskā pasaules karte, 2000. gada jūnijs',
+      'Nav 2000. gada horoplēta šajā atlanta saimē. Valstu aizpildījums ir mūsdienu BlankMap-World / Natural Earth ģeometrija, tāpēc redzamas valstis pēc 2000. gada (tostarp Dienvidsudāna, 2011). Marķēts iztrūkums pret 2000. gada jūnija izlūkošanas lapu.',
+    imageAlt: 'Mūsdienu valstu aizpildījums kā tuvākā atlanta lapa 2000. solim',
   },
   2020: {
     title: '2020. gadi — mūsdienu kontūras',
     caption:
-      'Valstu kontūras sabiedriskajā īpašumā (BlankMap-World / Natural Earth). Maza mēroga mūsdienu pamats, ne dzīvs robežu serviss. Strīdīgās līnijas uzzīmētas vienā veidā, lai karti vispār varētu uzzīmēt.',
-    imageAlt: 'Mūsdienu sabiedriskā īpašuma valstu kontūru karte',
+      'Valstu daudzstūri sabiedriskajā īpašumā (BlankMap-World / Natural Earth), iekrāsoti tajā pašā atlanta valodā: dzeltenīgi brūna sauszeme, maiga jūra. Maza mēroga mūsdienu pamats, ne dzīvs robežu serviss. Strīdīgās līnijas uzzīmētas vienā veidā, lai karti vispār varētu uzzīmēt.',
+    imageAlt: 'Mūsdienu sabiedriskā īpašuma valstu karte ar atlanta stila reģionu krāsām',
   },
 };
 
