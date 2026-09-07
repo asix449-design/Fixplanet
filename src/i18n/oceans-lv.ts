@@ -3,15 +3,21 @@ import type { OceansPage } from './oceans';
 export const lv: OceansPage = {
   metaTitle: 'Okeāni — Fix Planet',
   metaDescription:
-    'Okeāna monitorings ar avotiem: NASA SST, Aquarius sāļums, straumes shēma un atsevišķas plastmasas, naftas, hlorofila un hipoksijas kartes — ne viltots «dzīvais okeāns».',
+    'Jūras straumes, sāļums, jūras virsmas temperatūra un piesārņojums: kas tas ir, kāpēc tas svarīgi planētai, kartes un skaitļi ar nosauktiem avotiem.',
+  eyebrow: 'Pasaules okeāns',
+  title: 'Okeāni',
+  hubLead: [
+    'Pasaules okeāns sedz ap 71 procentu Zemes virsmas. Tajā uzkrāta lielākā daļa klimata sistēmas liekā siltuma; straumes pārnes ūdeni un sāli starp baseiniem, un virsma uzņem ievērojamu daļu oglekļa dioksīda no gaisa.',
+    'Zemāk — straumes, sāļums, jūras virsmas temperatūra, piesārņojums un daži publicēti skaitļi. Katrai kartei ir nosaukts datu kopums un datums.',
+  ],
   choosePanel: 'Izvēlies plauktu',
   filterAria: 'Okeānu sadaļas',
   tiles: {
-    currents: 'Nosauktie riņķojumi kā shēma. Dzīvais OSCAR ir modelis — Copernicus / ESR.',
-    salinity: 'NASA Aquarius pirmā globālā karte. SMAP ir Worldview, ne kā filma pie mums.',
-    sst: 'GHRSST MUR, absolūtā SST 2003–2025 un anomālijas gadiem, ko GIBS tiešām atdod.',
-    pollution: 'Plastmasa, nafta, hlorofils, mirušās zonas — četri kopumi, ne viens viltots rastrs.',
-    numbers: 'Okeāna siltums, pH, plastmasas vērtējumi, hipoksija — ar citātu un gadu.',
+    currents: 'Virsmas straumes un lielie riņķojumi, kas nes siltumu, sāli un dzīvību.',
+    salinity: 'Cik sāļa ir jūra un kāpēc blīvums palīdz dzīt dziļo cirkulāciju.',
+    sst: 'Jūras virsmas temperatūra — parastais klimats un gadi siltāki vai vēsāki par normu.',
+    pollution: 'Plastmasa, nafta, fitoplanktona ziedēšana un piekrastes mirušās zonas.',
+    numbers: 'Siltums, skābums, plastmasa un hipoksija — katrs lielums no nosauktas publikācijas.',
   },
   panels: {
     currents: 'Straumes',
@@ -21,24 +27,37 @@ export const lv: OceansPage = {
     numbers: 'Skaitļi',
   },
   leads: {
-    currents:
-      'Mēs nehostējam nepārtrauktu globālu straumes animāciju. OSCAR ir NASA finansēts modelis no jūras virsmas augstuma, vēja un SST — ne nofilmēta straume. Zemāk ir 1943. gada ASV armijas shēma ar nosauktiem riņķojumiem. Dzīvais skatītājs: Copernicus Marine vai ESR OSCAR.',
-    salinity:
-      'Hostētie kadri ir NASA Aquarius (misija 2011–2015). Tas ir novērots virsmas sāļums, sāls grami uz kilogramu ūdens. SMAP turpina rindu; dzīvais slānis ir Worldview. World Ocean Atlas ir klimatoloģija, ne diena.',
-    sst: 'Galvenā vadība: NASA GHRSST MUR L4, absolūtā jūras virsmas temperatūra 1. jūlijā, 2003–2025. Tas ir jauktu satelīta SST analīzes produkts, ne viens sensors. Anomālija rāda novirzi no MUR klimatoloģijas — citādi varavīksne ekvators–pols slēpj sasilšanu.',
-    pollution:
-      'Godīga viena «okeāna piesārņojuma» rastra nav. Plastmasa šeit ir modelēta koncentrācija ziemeļu Klusajā okeānā (Lebreton 2018). Nafta ir viens NASA MODIS notikums (Deepwater Horizon), ne globāla plankumu klimatoloģija. Hlorofils-a ir ziedēšanas aizstājējs, ne nitrātu karte. Mirušās zonas ir hipoksijas apkopojums, ne šīs nedēļas skābeklis.',
-    numbers:
-      'Tikai publicēti skaitļi. Siltums, skābums, plastmasa un hipoksija ir dažādi reģistri. Nesaskaiti tos vienā viltotā okeāna veselības indeksā.',
+    currents: [
+      'Jūras straumes ir pastāvīgas vai periodiskas ūdens plūsmas Pasaules okeānā un jūrās. Tās iedala pastāvīgās (subtropu riņķojumi), periodiskās (paisuma) un neregulārās (vēja dzītas plūsmas pēc vētras).',
+      'Virsmas straumes nosaka vējš, Zemes griešanās (Koriolisa spēks) un baseinu aprises. Tās pārnes siltumu no tropiem uz augstajiem platuma grādiem, nes sāli, barības vielas un kāpurus, iezīmē ledus un dreifējošu atkritumu ceļus.',
+      'Kartē — 1943. gada mācību shēma: nosauktas virsmas straumes un ledus robežas. Modelētie mūsdienu straumes lauki ir Copernicus Marine un ESR OSCAR.',
+    ],
+    salinity: [
+      'Sāļums ir izšķīdušo sāļu daudzums jūras ūdenī. Atklātā okeāna virsmā tas parasti ir ap 32–37 gramiem sāls uz kilogramu ūdens: praktiskais sāļums, skaitliski tuvu PSU skalai.',
+      'Sāļāks ūdens ir blīvāks. Kopā ar temperatūru sāļums nosaka blīvumu, kas dzen termohalīno cirkulāciju — lēno apgriezienu, kas saista virsmas straumes ar dziļumu. Upes, lietus un kūstošs ledus virsmu padara saldāku; iztvaikošana un jūras ledus veidošanās — sāļāku.',
+      'Attēli ir NASA Aquarius misijas (2011–2015) novērojumi: jūras virsmas sāļums.',
+    ],
+    sst: [
+      'Jūras virsmas temperatūra (SST) ir okeāna augšējā slāņa temperatūra — no milimetra daļām līdz dažiem metriem, atkarībā no mērītāja. Tā ietekmē iztvaikošanu, vētras, jūras karstuma viļņus un siltuma un oglekļa apmaiņu ar gaisu.',
+      'Parastā aina ir silti tropi un aukstas polārās jūras; rietumu robežas straumes (Golfa straume, Kurošio) redzamas kā silti pavedieni. Gadu pret gadu izmaiņas vieglāk lasīt kā anomāliju — novirzi no daudzgadu klimatoloģijas — nekā absolūtajā varavīksnē ekvators–pols.',
+      'Kartes ir NASA GHRSST MUR analīze uz 1. jūliju, 2003–2025. Anomālijas šajā lapā ir 2020.–2024. gads.',
+    ],
+    pollution: [
+      'Okeānu piesārņo dažādi: noturīga plastmasa, nafta no urbumiem un kuģiem, barības vielu pārbagātība, kas dzen aļģu ziedēšanu, un hipoksija, kad šī organiskā masa sadalās.',
+      'Vienas kartes visam tam nav. Zemāk četri atsevišķi datu kopumi: modelēts atkritumu plankums, viens novērots naftas izlijums, hlorofila-a apkopojums un piekrastes mirušo zonu saraksts.',
+    ],
+    numbers: [
+      'Daži publicēti lielumi, katrs no nosaukta avota. Okeāna siltuma saturs, virsmas skābums, plastmasa un hipoksija ir dažādi mērījumi; tos nesaskaita vienā rādītājā.',
+    ],
   },
   honestyCurrents:
-    'Nepārtrauktu globālu straumes animāciju godīgi nevar hostēt. OSCAR GIBS slāņi ir zonālā un meridiānā komponente; mūsu snapshot nezīmē ātruma karti. 1943. gada plate ir shēma ar nosauktām straumēm un ledus robežām — ne OSCAR, ne 2025, ne drifteri.',
+    'ASV armijas atlants, 1943: nosauktas virsmas straumes un ledus robežas. Mācību shēma, ne satelīta straumes lauks.',
   honestySalinity:
-    'Aquarius beidzās 2015. Šie kadri nav SMAP un nav World Ocean Atlas. SMAP mēneša sāļums ir NASA Worldview; mēs nehostējam tukšu GIBS plati un nesaucam to par sāļumu.',
+    'NASA Aquarius, 2011–2015. Novērots virsmas sāļums, g/kg. Vēlākie mēneši: SMAP NASA Worldview.',
   honestySst:
-    'Absolūtā SST galvenokārt ir stāvošais gradients ekvators–pols. Gads pret gadu šajā mērogā gandrīz nav redzams. Anomālija (2020–2024, gadi, ko GIBS tiešām atdod) ir sasilšanas un El Ninjo aina. MUR ir analīzes produkts, jaukta SST ~1 km, ne jēls MODIS granuls.',
+    'NASA GHRSST MUR L4, 1. jūlijs. Absolūtā SST ir lauks ekvators–pols; anomālija ir novirze no MUR klimatoloģijas.',
   honestyPollution:
-    'Nelasiet šos četrus kadrus kā vienu slāni. Atkritumu plankuma modelis nav naftas noplūde. Hlorofils nav mēslojums. 2008. gada mirušo zonu apkopojums nav dzīva hipoksija.',
+    'Četri datu kopumi: modelēta plastmasa, viens naftas izlijums, hlorofils-a, hipoksijas apkopojums.',
   modeSst: 'Absolūtā SST',
   modeAnomaly: 'SST anomālija',
   fidelitySst: 'Analīze · absolūtā SST',
@@ -52,11 +71,11 @@ export const lv: OceansPage = {
   licenseLabel: 'Licence',
   vintageLabel: 'Datējums',
   howToReadSst:
-    'Absolūtajās platēs: sarkans/oranžs ir silts, violets ir auksts. Sauszeme ir melna. Salīdzini baseinus un rietumu robežas straumes (Golfa straume, Kurošio), ne vienu pikseļu. Anomālijās: sarkani siltāki par MUR klimatoloģiju, zili vēsāki. Sarkans ekvatoriālais Klusais okeāns bieži ir El Ninjo, ne «viss okeāns vārījās».',
+    'Absolūtajās kartēs: sarkans un oranžs ir silts, violets ir auksts, sauszeme ir melna. Salīdzini baseinus un rietumu robežas straumes, ne vienu pikseļu. Anomālijās: sarkani siltāki par MUR klimatoloģiju, zili vēsāki. Sarkans ekvatoriālais Klusais okeāns bieži ir El Ninjo.',
   caveatsSst:
-    '1. jūlijs ir viena diena dienas analīzē. Mākoņu spraugas aizpilda MUR maisījums. Hostējam 1. jūliju, lai gadi būtu salīdzināmi. Anomālijas pirms 2020 GIBS snapshotos neuzzīmējās — mēs tās neizdomājam.',
+    'Katra karte ir 1. jūlijs dienas analīzē, lai gadus varētu salīdzināt. Mākoņu spraugas aizpilda MUR maisījums. Anomāliju pirms 2020. gada šajā lapā nav.',
   howToReadSalinity:
-    '2011. gada globālajā platē: violets/zils ir saldāks (Amazone, Bengālijas līcis, augstie platumi); dzeltens/sarkans ir sāļāks (subtropu Atlantija, Arābu jūra). Vienības g/kg, tuvu praktiskajam sāļumam. Otrais kadrs ir tās pašas misijas Atlantijas 3D skats — ne vēlāks gads.',
+    '2011. gada globālajā kartē violets un zils apzīmē saldāku ūdeni (Amazonas un Gangas plūsmas, augstie platumi); dzeltens un sarkans — sāļākas subtropu jūras, it īpaši Ziemeļatlantiju un Arābu jūru. Vienības: g/kg. Otrais attēls ir tās pašas misijas Atlantijas telpisks skats.',
   openWorldviewSst: 'Atvērt NASA Worldview SST →',
   openWorldviewAnom: 'Atvērt NASA Worldview, SST anomālija →',
   openWorldviewSmap: 'Atvērt NASA Worldview, SMAP sāļums →',
@@ -64,44 +83,42 @@ export const lv: OceansPage = {
   openCopernicus: 'Atvērt Copernicus Marine →',
   openNoaaPollution: 'Atvērt NOAA jūras piesārņojuma uzraudzību →',
   openOceanColor: 'Atvērt NASA Ocean Color →',
-  gfwStyleNote:
-    'Tā pati godīgums kā Mežiem → Global Forest Watch: daži likumīgi kadri pie mums, dzīvais skatītājs pie avota, ko nemirrorējam.',
   oscarNote:
-    'OSCAR jauktā slāņa ātrumi rēķināti no satelīta SSH, vektora vēja un SST (geostrofija, Ekman, termiskais vējš). Dienas lauki 0,25°, no 1993. Tā nav straumes mērītājs katrā okeāna rūtiņā.',
+    'OSCAR (Ocean Surface Current Analyses Real-time) novērtē jauktā slāņa ātrumu no satelīta jūras virsmas augstuma, vektora vēja un SST — geostrofija, Ekmana dreifs, termiskais vējš. Dienas lauki 0,25°, no 1993. gada.',
   smapNote:
-    'SMAP virsmas sāļums (RSS mēnesis / 8 dienas) turpinās pēc Aquarius. World Ocean Atlas 2023 ir in situ klimatoloģija (desmitgades, pudeles un pludiņi) — cits produkts.',
+    'SMAP misija turpina mikroviļņu virsmas sāļuma mērījumus pēc Aquarius. World Ocean Atlas 2023 ir atsevišķa in situ klimatoloģija: pudeles, CTD un pludiņi, vidējots daudzu gadu gaitā.',
   numbersNote:
-    'Nokopēts no nosauktajām publikācijām. Mēs neinterpolējām holocēna pH filmu un ne 2026. gada plastmasas tautas skaitīšanu.',
-  distinguishTitle: 'Siltums nav pH. Hlorofils nav plastmasa. Riņķojums nav atkritumu sala.',
+    'Nokopēts no citētajām publikācijām, ar gadu. Siltuma saturs nav SST; pH ir ķīmija, ne temperatūra; plastmasas plūsma nav krājums riņķojumā.',
+  distinguishTitle: 'Ko šie skaitļi īsti mēra',
   distinguish:
-    'IPCC AR6: okeāns uzņēmis ap 90 procentiem klimata sistēmas liekā siltuma. Cheng et al. 2024: 0–2000 m okeāna siltuma saturs 2023. (un 2024. atjauninājums) ir instrumentālā rindas virsotnē — tas ir siltuma inventārs, ne SST šajā kartē. Virsmas pH krities par ap 0,1 kopš ~1750 (aptuveni +30 procenti ūdeņraža jonu koncentrācijas); tā ir ķīmija, ne temperatūra. Jambeck 2015: 4,8–12,7 miljoni tonnu plastmasas no sauszemes okeānā 2010. gadā — plūsma, ne krājums Lielajā Klusā okeāna atkritumu plankumā. Eriksen 2014: vismaz 5,25 triljoni peldošu daļiņu. Breitburg 2018: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju un paplašinošās skābekļa minimuma zonas. Nekas no tā nav viens «piesārņojuma indekss».',
+    'IPCC AR6: okeāns uzņēmis ap 90 procentiem klimata sistēmas liekā siltuma. Cheng et al. 2024: 0–2000 m okeāna siltuma saturs 2023. gadā (un 2024. atjauninājums) ir instrumentālā rindas virsotnē — siltuma krājums ūdens stabiņā, ne SST karte augstāk. Virsmas pH kritis par ap 0,1 kopš ~1750: tas ir ūdeņraža jonu koncentrācijas pieaugums par aptuveni 26–30 procentiem (IPCC AR6; NOAA PMEL), karbonātu ķīmija. Jambeck et al. 2015: 4,8–12,7 miljoni tonnu plastmasas no sauszemes okeānā 2010. gadā — plūsma, ne masa Lielajā Klusā okeāna atkritumu plankumā. Eriksen et al. 2014: vismaz 5,25 triljoni peldošu daļiņu. Breitburg et al. 2018: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju un paplašinošās atklātā okeāna skābekļa minimuma zonas (~4,5 miljoni km²).',
   pollutionKinds: {
     plastics: {
-      title: 'Plastmasa — modelēta koncentrācija ziemeļu Klusajā okeānā',
-      lead: 'Ne satelīta foto ar atkritumiem. Ne globāls plastmasas rastrs. Lebreton et al. 2018: modelēta masas koncentrācija (kg/km²) 2015. gada augustam Lielajā Klusā okeāna atkritumu plankumā. «Plankums» ir augstas koncentrācijas zona riņķojumā, ne sala, pa kuru var staigāt.',
+      title: 'Plastmasa',
+      lead: 'Lielākā daļa okeāna plastmasas nāk no sauszemes. Vējš un virsmas straumes sablīvē fragmentus subtropu riņķojumos. Lielais Klusā okeāna atkritumu plankums, starp Havajām un Kaliforniju, ir augstas koncentrācijas zona ziemeļu Klusā okeāna riņķojumā — ūdens ar vairāk atkritumu, ne sala, pa kuru var staigāt. Karte rāda modelētu masas koncentrāciju (kg/km²) 2015. gada augustam.',
       caption:
         'Lebreton et al. 2018, Scientific Reports. Modelēta masas koncentrācija, ziemeļu Klusais okeāns, 2015. gada augusts. CC BY 4.0.',
       imageAlt:
         'Izolīniju karte ar modelētu plastmasas masas koncentrāciju starp Havajām un Kaliforniju, sarkans kodols GPGP',
     },
     oil: {
-      title: 'Nafta — viens novērots izlijums, ne globāla naftas karte',
-      lead: 'NASA Terra MODIS, 2010. gada 24. maijs: Deepwater Horizon plankums Meksikas līcī. Tas ir notikuma kadrs. Godīgas globālas «naftas piesārņojuma» klimatoloģijas šajā lapā nav. Pašreizējie SAR/VIIRS ziņojumi: NOAA NESDIS.',
+      title: 'Nafta',
+      lead: 'Nafta uz jūras virsmas izplūst plānā kārtiņā un ir saskatāma no kosmosa. Attēls ir NASA Terra MODIS 2010. gada 24. maijā, Deepwater Horizon izlijums Meksikas līcī — viens liels gadījums. Operatīvie ziņojumi par plankumiem: radars un VIIRS NOAA NESDIS.',
       caption: 'NASA Terra MODIS. Deepwater Horizon naftas plankums, 2010. gada 24. maijs. Sabiedriskais īpašums.',
       imageAlt:
         'Satelīta skats uz Meksikas līci ar tumšu naftas plankumu uz dienvidiem no Misisipi deltas, 2010. gada maijs',
     },
     nutrient: {
-      title: 'Barības vielu aizstājējs — hlorofils-a, ne nitrātu rastrs',
-      lead: 'NASA okeāna krāsas hlorofils-a, 2019. gada oktobris. Zaļš ir vairāk fitoplanktona pigments. Bieži seko barības vielu pieplūdei (apvele, notece, ziedēšana), bet tā nav slāpekļa vai fosfora karte un nav mirusī zona.',
+      title: 'Hlorofils',
+      lead: 'Fitoplanktonam vajag gaismu un barības vielas. Hlorofils-a, šo šūnu zaļais pigments, tiek kartēts no okeāna krāsas. Augstas vērtības bieži iezīmē apveli, upju plūsmas un ziedēšanu; dzidrie subtropu riņķojumi ir nabadzīgi. Hlorofils ir dzīvas biomasas aizstājējs, ne nitrātu vai fosfātu karte un ne mirusī zona.',
       caption:
         'NASA ocean color, hlorofila-a koncentrācija, 2019. gada oktobris. Sabiedriskais īpašums. Vienības mg/m³.',
       imageAlt:
         'Mollveides okeāna hlorofila karte: zili riņķojumi, zaļi krasti un augstie platumi, pelēka sauszeme',
     },
     deadzones: {
-      title: 'Mirušās zonas — hipoksijas vietu apkopojums',
-      lead: 'NASA Earth Observatory pēc Roberta Diasa (VIMS): sarkani punkti ir piekrastes eitrofikācijas saistītās hipoksijas zonas, 2008. gada apkopojums. Tas nav šā gada Meksikas līča prognoze un nav tas pats, kas hlorofila plate.',
+      title: 'Mirušās zonas',
+      lead: 'Mirusī zona ir ūdens posms, kur izšķīdušā skābekļa ir par maz lielākajai daļai dzīvnieku. Piekrastē tas bieži seko eitrofikācijai: lieks slāpeklis un fosfors, ziedēšana, tad sadalīšanās, kas patērē skābekli. Karte atzīmē apkopotas piekrastes hipoksijas vietas pēc Diasa (2008). Atklātā okeāna skābekļa minimuma zonas ir radniecīga, lielāka mēroga parādība.',
       caption:
         'NASA Earth Observatory, Aquatic Dead Zones, pēc Diasa. Sabiedriskais īpašums. Datējums: 2008. gada apkopojums.',
       imageAlt:
@@ -121,7 +138,7 @@ export const lv: OceansPage = {
       label: '2003',
       title: 'Absolūtā SST, 2003. gada 1. jūlijs',
       caption:
-        'Agrīnā MUR analīzes ēra. Sarkana ekvatoriāla josla un violets polārais ūdens ir stāvošais gradients. Tā nav anomāliju karte.',
+        'Agrīnā MUR analīze. Sarkana ekvatoriāla josla un violets polārais ūdens ir parastais klimats: tropi silti, augstie platumi auksti.',
       imageAlt:
         'Ekvirektangulāra jūras virsmas temperatūras karte, 2003. gada 1. jūlijs: sarkani tropi, violeti polārie okeāni, melna sauszeme',
     },
@@ -129,7 +146,7 @@ export const lv: OceansPage = {
       label: '2010',
       title: 'Absolūtā SST, 2010. gada 1. jūlijs',
       caption:
-        'Tas pats MUR absolūtais lauks. Rietumu robežas straumes (Golfa straume, Kurošio) kā silti pavedieni. Gada jūras karstuma vilni labāk redz anomāliju plauktā.',
+        'Tas pats MUR absolūtais lauks. Rietumu robežas straumes — Golfa straume, Kurošio — redzamas kā silti pavedieni. Gada jūras karstuma vilnis skaidrāks anomāliju kartēs.',
       imageAlt:
         'Ekvirektangulāra jūras virsmas temperatūras karte, 2010. gada 1. jūlijs: sarkani tropi, violeti polārie okeāni, melna sauszeme',
     },
@@ -137,7 +154,7 @@ export const lv: OceansPage = {
       label: '2015',
       title: 'Absolūtā SST, 2015. gada 1. jūlijs',
       caption:
-        '2015.–16. bija spēcīgs El Ninjo klimata ierakstā. Absolūtajā platē ekvatoriālais Klusais okeāns vienmēr ir silts; notikumu rāda anomālija.',
+        '2015.–16. bija spēcīgs El Ninjo. Absolūtajā kartē ekvatoriālais Klusais okeāns vienmēr ir silts; pats notikums ir anomāliju plauktā.',
       imageAlt:
         'Ekvirektangulāra jūras virsmas temperatūras karte, 2015. gada 1. jūlijs: sarkani tropi, violeti polārie okeāni, melna sauszeme',
     },
@@ -145,7 +162,7 @@ export const lv: OceansPage = {
       label: '2020',
       title: 'Absolūtā SST, 2020. gada 1. jūlijs',
       caption:
-        'Satelīta ēras vidus šajā skruberī. Salīdzini ar 2020. anomāliju plauktā — tur redzams 2020. gadu siltums.',
+        'Šīs jūlija sērijas vidus. Salīdzini ar 2020. anomāliju plauktā: tur 2020. gadu siltums redzams labāk.',
       imageAlt:
         'Ekvirektangulāra jūras virsmas temperatūras karte, 2020. gada 1. jūlijs: sarkani tropi, violeti polārie okeāni, melna sauszeme',
     },
@@ -153,7 +170,7 @@ export const lv: OceansPage = {
       label: '2024',
       title: 'Absolūtā SST, 2024. gada 1. jūlijs',
       caption:
-        '2023.–24. okeāna siltuma ieraksta virsotnē (Cheng et al. 2024). Absolūtā varavīksne joprojām izskatās pēc «tropi ir silti». Atver anomālijas režīmu.',
+        '2023.–24. okeāna siltuma ieraksta virsotnē (Cheng et al. 2024). Absolūtā varavīksne joprojām lasās kā «tropi ir silti»; novirzi rāda anomālijas režīms.',
       imageAlt:
         'Ekvirektangulāra jūras virsmas temperatūras karte, 2024. gada 1. jūlijs: sarkani tropi, violeti polārie okeāni, melna sauszeme',
     },
@@ -161,7 +178,7 @@ export const lv: OceansPage = {
       label: '2025',
       title: 'Absolūtā SST, 2025. gada 1. jūlijs',
       caption:
-        'Jaunākā 1. jūlija absolūtā plate, ko hostējam. Citas dienas — dzīvais MUR NASA Worldview.',
+        'Jaunākā 1. jūlija absolūtā karte šajā lapā. Citas dienas — dzīvais MUR NASA Worldview.',
       imageAlt:
         'Ekvirektangulāra jūras virsmas temperatūras karte, 2025. gada 1. jūlijs: sarkani tropi, violeti polārie okeāni, melna sauszeme',
     },
@@ -182,7 +199,7 @@ export const lv: OceansPage = {
       label: '2023',
       title: 'SST anomālija, 2023. gada 1. jūlijs',
       caption:
-        '2023: attīstās El Ninjo ekvatoriālajā Klusajā okeānā un ļoti silta Ziemeļatlantija. Anomālija, ne absolūtā SST.',
+        '2023: attīstās El Ninjo ekvatoriālajā Klusajā okeānā un ļoti silta Ziemeļatlantija publiskajā ierakstā.',
       imageAlt:
         'Ekvirektangulāra SST anomālijas karte, 2023. gada 1. jūlijs: spēcīgi sarkani ekvatoriālajā Klusajā okeānā un Ziemeļatlantijā',
     },
@@ -190,46 +207,46 @@ export const lv: OceansPage = {
       label: '2024',
       title: 'SST anomālija, 2024. gada 1. jūlijs',
       caption:
-        'Jaunākā jūlija anomālija, ko hostējam. Joprojām analīzes produkts. Citas dienas — Worldview.',
+        'Jaunākā jūlija anomālija šajā lapā. Joprojām analīzes produkts. Citas dienas — NASA Worldview.',
       imageAlt: 'Ekvirektangulāra SST anomālijas karte, 2024. gada 1. jūlijs: sarkani un zili uz melnas sauszemes',
     },
     'sal-2011': {
       label: '2011',
       title: 'Aquarius pirmā globālā sāļuma karte',
       caption:
-        'NASA Aquarius, 2011. gada 25. aug. – 11. sept.: pirmā globālā virsmas sāļuma karte no šīs misijas. Novērota mikroviļņu SSS, ne WOA klimatoloģija. Saldāki Amazonas un Gangas plūsmas; sāļāka subtropu Atlantija.',
+        'NASA Aquarius, 2011. gada 25. augusts – 11. septembris: šīs misijas pirmā globālā virsmas sāļuma karte. Mikroviļņu SSS, g/kg. Saldākas Amazonas un Gangas plūsmas; sāļāka subtropu Atlantija.',
       imageAlt:
         'Mollveides okeāna virsmas sāļuma karte no Aquarius, 2011, no violeta salda līdz sarkanam sāļam',
     },
     'sal-atlantic': {
       label: 'Atlantija',
-      title: 'Atlantijas sāls plankums, Aquarius (3D)',
+      title: 'Ziemeļatlantijas sāls maksimums (Aquarius, 3D)',
       caption:
-        'NASA Aquarius vizualizācija Ziemeļatlantijas augsta sāļuma reģionam. Tā pati misija, cita grafika — ne vēlāks gads un ne SMAP.',
+        'NASA Aquarius skats uz Ziemeļatlantijas augsta sāļuma reģionu. Tā pati misija, kas globālā karte, cita grafika.',
       imageAlt:
         '3D globuss ar centru uz Atlantiju, Aquarius sāļuma krāsas no zila līdz sarkanam',
     },
     'currents-1943': {
       label: '1943',
-      title: 'Nosauktie riņķojumi (shēma)',
+      title: 'Nosauktie riņķojumi',
       caption:
-        'ASV armijas atlants, 1943: siltās un aukstās virsmas straumes, ledus robežas, nosauktie dreifi (Golfa straume, Kurošio, Humboldts, Agulhas). Mācību shēma. Ne OSCAR, ne satelīta altimetrija, ne 2025.',
+        'Siltās virsmas straumes oranžā, aukstās zaļā; pie poliem ledus šrafējums. Golfa straume, Kurošio, Humboldta (Peru) straume, Agulhas un citi nosauktie dreifi.',
       imageAlt:
-        'Vintage pasaules karte ar nosauktām okeāna straumēm oranžā un zaļā ar ledus šrafējumu pie poliem',
+        'Vecā pasaules karte ar nosauktām okeāna straumēm oranžā un zaļā ar ledus šrafējumu pie poliem',
     },
   },
   stats: {
     heatShare: {
       label: 'Liekais siltums okeānā',
-      text: 'Ap 90 procentiem klimata sistēmas liekā siltuma glabājas okeānā (IPCC AR6 WG1). Tas ir enerģijas inventārs, ne SST varavīksne karšu plauktā.',
+      text: 'Ap 90 procentiem klimata sistēmas liekā siltuma glabājas okeānā (IPCC AR6 WG1). Tas ir enerģijas krājums ūdens stabiņā.',
     },
     ohcRecord: {
       label: 'Okeāna siltuma saturs, nesenais maksimums',
-      text: 'Cheng et al. 2024 (Adv. Atmos. Sci.): 0–2000 m okeāna siltuma saturs 2023. gadā sasniedza jaunu instrumentālo maksimumu, 2024. atjauninājumi paliek rindas virsotnē. Siltuma saturs, ne viena SST diena.',
+      text: 'Cheng et al. 2024 (Adv. Atmos. Sci.): 0–2000 m okeāna siltuma saturs 2023. gadā sasniedza jaunu instrumentālo maksimumu; 2024. atjauninājumi paliek rindas virsotnē. Siltuma saturs, ne viena SST diena.',
     },
     phDrop: {
       label: 'Virsmas pH kritums',
-      text: 'Atklātā okeāna virsmas pH kritis par ap 0,1 kopš ~1750 — aptuveni 26–30 procentu ūdeņraža jonu koncentrācijas pieaugums (IPCC AR6; NOAA PMEL). Ķīmija, ne temperatūra, un ne karte šajā lapā.',
+      text: 'Atklātā okeāna virsmas pH kritis par ap 0,1 kopš ~1750 — ūdeņraža jonu koncentrācijas pieaugums par aptuveni 26–30 procentiem (IPCC AR6; NOAA PMEL). Karbonātu ķīmija, ne temperatūra.',
     },
     plasticLand: {
       label: 'Plastmasa no sauszemes okeānā',
@@ -237,11 +254,11 @@ export const lv: OceansPage = {
     },
     plasticFloat: {
       label: 'Peldošas plastmasas daļiņas',
-      text: 'Eriksen et al. 2014: vismaz 5,25 triljoni daļiņu (268 940 tonnas) uz virsmas. Krājuma vērtējums no tīklu vilcieniem un modeļa — ne Lebreton 2018 koncentrācijas plate.',
+      text: 'Eriksen et al. 2014: vismaz 5,25 triljoni daļiņu (268 940 tonnas) uz virsmas. Krājuma vērtējums no tīklu vilcieniem un modeļa.',
     },
     deadZones: {
       label: 'Piekrastes hipoksijas vietas',
-      text: 'Breitburg et al. 2018, Science: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju plus paplašinošās atklātā okeāna skābekļa minimuma zonas (~4,5 miljoni km²). Diasa agrākais apkopojums jau bija >400. Ne hlorofila plate.',
+      text: 'Breitburg et al. 2018, Science: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju plus paplašinošās atklātā okeāna skābekļa minimuma zonas (~4,5 miljoni km²). Diasa agrākais apkopojums jau pārsniedza 400.',
     },
   },
 };

@@ -3,15 +3,21 @@ import type { OceansPage } from './oceans';
 export const pl: OceansPage = {
   metaTitle: 'Oceany — Fix Planet',
   metaDescription:
-    'Monitorowanie oceanu ze źródłami: NASA SST, zasolenie Aquarius, schemat prądów oraz osobne mapy plastiku, ropy, chlorofilu i hipoksji — nie fałszywy „żywy ocean”.',
+    'Prądy morskie, zasolenie, temperatura powierzchni morza i zanieczyszczenie: czym są, dlaczego mają znaczenie, mapy i liczby z podanymi źródłami.',
+  eyebrow: 'Ocean Światowy',
+  title: 'Oceany',
+  hubLead: [
+    'Ocean Światowy pokrywa około 71 procent powierzchni Ziemi. Magazynuje większość nadmiaru ciepła w systemie klimatycznym, przenosi wodę i sól między basenami i pobiera znaczną część dwutlenku węgla z powietrza.',
+    'Poniżej: prądy, zasolenie, temperatura powierzchni morza, zanieczyszczenie i kilka opublikowanych liczb. Każda mapa ma nazwany zbiór danych i datę.',
+  ],
   choosePanel: 'Wybierz półkę',
   filterAria: 'Działy oceanów',
   tiles: {
-    currents: 'Nazwane gyre’y jako schemat. Żywy OSCAR to model — Copernicus / ESR.',
-    salinity: 'Pierwsza globalna mapa NASA Aquarius. SMAP jest w Worldview, nie jako film u nas.',
-    sst: 'GHRSST MUR, bezwzględna SST 2003–2025 oraz anomalie z lat, które GIBS naprawdę oddaje.',
-    pollution: 'Plastik, ropa, chlorofil, martwe strefy — cztery zbiory, nie jeden fałszywy raster.',
-    numbers: 'Ciepło oceanu, pH, szacunki plastiku, hipoksja — z cytatem i datą.',
+    currents: 'Prądy powierzchniowe i wielkie wiry, które niosą ciepło, sól i życie.',
+    salinity: 'Ile soli jest w morzu i dlaczego gęstość pomaga napędzać cyrkulację głębinową.',
+    sst: 'Temperatura powierzchni morza — zwykły klimat i lata cieplejsze albo chłodniejsze od normy.',
+    pollution: 'Plastik, ropa, zakwity fitoplanktonu i przybrzeżne martwe strefy.',
+    numbers: 'Ciepło, kwasowość, plastik i hipoksja — każda wielkość z nazwanej pracy.',
   },
   panels: {
     currents: 'Prądy',
@@ -21,30 +27,43 @@ export const pl: OceansPage = {
     numbers: 'Liczby',
   },
   leads: {
-    currents:
-      'Nie hostujemy ciągłej globalnej animacji prądów. OSCAR to model NASA z wysokości powierzchni morza, wiatru i SST — nie sfilmowany prąd. Poniżej płyta z 1943 r. (armia USA) z nazwanymi gyre’ami. Żywy podgląd: Copernicus Marine albo ESR OSCAR.',
-    salinity:
-      'Hostowane kadry to NASA Aquarius (misja 2011–2015). To obserwowane zasolenie powierzchni, gramy soli na kilogram wody. SMAP kontynuuje szereg; żywa warstwa jest w Worldview. World Ocean Atlas to klimatologia, nie dzień.',
-    sst: 'Główne sterowanie: NASA GHRSST MUR L4, bezwzględna temperatura powierzchni morza na 1 lipca, 2003–2025. To mieszana analiza satelitarnej SST, nie jeden sensor. Anomalia pokazuje odchylenie od klimatologii MUR — tęcza równik–biegun inaczej ukrywa ocieplenie.',
-    pollution:
-      'Nie ma uczciwego jednego rastra „zanieczyszczenie oceanu”. Plastik tutaj to model stężenia w północnym Pacyfiku (Lebreton 2018). Ropa to jeden kadr NASA MODIS (Deepwater Horizon), nie globalna klimatologia plam. Chlorofil-a to przybliżenie zakwitów, nie mapa azotanów. Martwe strefy to zestawienie hipoksji, nie tlen z tego tygodnia.',
-    numbers:
-      'Tylko opublikowane liczby. Ciepło, kwasowość, plastik i hipoksja to różne rejestry. Nie dodawaj ich do jednego fałszywego indeksu zdrowia oceanu.',
+    currents: [
+      'Prądy morskie to trwałe lub powtarzające się przepływy wody w Oceanie Światowym i morzach. Dzieli się je na stałe (wiry podzwrotnikowe), okresowe (pływowe) i nieregularne (znosy wiatrowe po sztormie).',
+      'Prądy powierzchniowe kształtuje wiatr, obrót Ziemi (siła Coriolisa) i zarys basenów. Przenoszą ciepło od tropików ku wysokim szerokościom, niosą sól, składniki odżywcze i larwy, wyznaczają drogi lodu i dryfujących odpadów.',
+      'Na mapie — tablica dydaktyczna z 1943 r.: nazwane prądy powierzchniowe i granice lodu. Modelowane współczesne pola prądów są w Copernicus Marine i ESR OSCAR.',
+    ],
+    salinity: [
+      'Zasolenie to zawartość rozpuszczonych soli w wodzie morskiej. Przy powierzchni otwartego oceanu wynosi zwykle około 32–37 gramów soli na kilogram wody: zasolenie praktyczne, liczbowo bliskie skali PSU.',
+      'Słońsza woda jest gęstsza. Razem z temperaturą zasolenie ustala gęstość, która napędza cyrkulację termohaliniczną — powolny obrót łączący prądy powierzchniowe z głębią. Rzeki, deszcz i topniejący lód słodzą powierzchnię; parowanie i tworzenie lodu morskiego czynią ją słonszą.',
+      'Ryciny to obserwacje misji NASA Aquarius (2011–2015): zasolenie powierzchni morza.',
+    ],
+    sst: [
+      'Temperatura powierzchni morza (SST) to temperatura górnej warstwy oceanu — od ułamka milimetra do kilku metrów, zależnie od czujnika. Wpływa na parowanie, sztormy, morskie fale upałów oraz wymianę ciepła i węgla z atmosferą.',
+      'Zwykły obraz to ciepłe tropiki i zimne morza polarne; prądy zachodnich granic (Prąd Zatokowy, Kuroshio) widać jako ciepłe nitki. Zmianę z roku na rok łatwiej czytać jako anomalię — odchylenie od wieloletniej klimatologii — niż na bezwzględnej tęczy równik–biegun.',
+      'Mapy to analiza NASA GHRSST MUR na 1 lipca, 2003–2025. Anomalie na tej stronie obejmują lata 2020–2024.',
+    ],
+    pollution: [
+      'Ocean zanieczyszcza się na kilka sposobów: trwały plastik, ropa ze studni i statków, nadmiar składników odżywczych, który napędza zakwity, oraz hipoksja, gdy ta materia organiczna się rozkłada.',
+      'Jednej mapy na to wszystko nie ma. Poniżej cztery osobne zbiory: model plamy śmieci, jeden zaobserwowany wyciek ropy, zestawienie chlorofilu-a i spis przybrzeżnych martwych stref.',
+    ],
+    numbers: [
+      'Kilka opublikowanych wielkości, każda z nazwanego źródła. Zawartość ciepła oceanu, kwasowość powierzchni, plastik i hipoksja to różne pomiary; nie dodaje się ich do jednego wskaźnika.',
+    ],
   },
   honestyCurrents:
-    'Ciągłej globalnej animacji prądów nie da się uczciwie hostować. Warstwy OSCAR w GIBS to składowe strefowa i południkowa; nasz snapshot nie maluje mapy prędkości. Płyta z 1943 r. to schemat nazwanych prądów i granic lodu — nie OSCAR, nie 2025, nie dryftery.',
+    'Atlas armii USA, 1943: nazwane prądy powierzchniowe i granice lodu. Tablica dydaktyczna, nie satelitarne pole prądów.',
   honestySalinity:
-    'Aquarius skończył się w 2015. Te kadry to nie SMAP i nie World Ocean Atlas. Miesięczne zasolenie SMAP jest w NASA Worldview; nie hostujemy pustej płyty GIBS i nie nazywamy jej zasoleniem.',
+    'NASA Aquarius, 2011–2015. Obserwowane zasolenie powierzchni, g/kg. Późniejsze miesiące: SMAP w NASA Worldview.',
   honestySst:
-    'Bezwzględna SST to głównie stały gradient równik–biegun. Zmiana rok do roku w tej skali jest mała. Anomalia (2020–2024, lata, które GIBS naprawdę zwraca) to obraz ocieplenia i El Niño. MUR to produkt analizy, mieszana SST ~1 km, nie surowy granulat MODIS.',
+    'NASA GHRSST MUR L4, 1 lipca. Bezwzględna SST to pole równik–biegun; anomalia to odchylenie od klimatologii MUR.',
   honestyPollution:
-    'Nie czytaj tych czterech kadrów jako jednej warstwy. Model plamy śmieci to nie wyciek ropy. Chlorofil to nie nawóz. Zestawienie martwych stref z 2008 r. to nie żywa hipoksja.',
+    'Cztery zbiory danych: modelowany plastik, jeden wyciek ropy, chlorofil-a, zestawienie hipoksji.',
   modeSst: 'Bezwzględna SST',
   modeAnomaly: 'Anomalia SST',
   fidelitySst: 'Analiza · bezwzględna SST',
   fidelityAnomaly: 'Analiza · anomalia SST',
   fidelitySalinity: 'Satelita · Aquarius SSS',
-  fidelityCurrents: 'Schemat · nazwane gyre’y',
+  fidelityCurrents: 'Schemat · nazwane wiry',
   scrubberAria: 'Rok temperatury powierzchni morza',
   salinityAria: 'Kadry zasolenia',
   yearLabel: 'Rok',
@@ -52,11 +71,11 @@ export const pl: OceansPage = {
   licenseLabel: 'Licencja',
   vintageLabel: 'Datowanie',
   howToReadSst:
-    'Na płytach bezwzględnych: czerwień/pomarańcz to ciepło, fiolet to chłód. Ląd jest czarny. Porównuj baseny i prądy zachodnich granic (Golfstrom, Kuroshio), nie jeden piksel. Na anomaliach: czerwienie cieplejsze od klimatologii MUR, błękity chłodniejsze. Czerwony równikowy Pacyfik to często El Niño, nie „cały ocean wrzał”.',
+    'Na mapach bezwzględnych: czerwień i pomarańcz to ciepło, fiolet to chłód, ląd jest czarny. Porównuj baseny i prądy zachodnich granic, nie jeden piksel. Na anomaliach: czerwienie cieplejsze od klimatologii MUR, błękity chłodniejsze. Czerwony równikowy Pacyfik to często El Niño.',
   caveatsSst:
-    '1 lipca to jeden dzień w analizie dziennej. Luki chmur wypełnia mieszanka MUR. Hostujemy 1 lipca, żeby lata były porównywalne. Anomalie sprzed 2020 nie wyrenderowały się w snapshotach GIBS — nie wymyślamy ich.',
+    'Każda mapa to 1 lipca w analizie dziennej, żeby lata były porównywalne. Luki chmur wypełnia mieszanka MUR. Anomalii sprzed 2020 nie ma na tej stronie.',
   howToReadSalinity:
-    'Na globalnej płycie 2011: fiolet/błękit to woda słodsza (Amazonka, Zatoka Bengalska, wysokie szerokości); żółty/czerwień to słonsza (subtropikalny Atlantyk, Morze Arabskie). Jednostki g/kg, blisko praktycznego zasolenia. Drugi kadr to widok 3-D Atlantyku z tej samej misji — nie późniejszy rok.',
+    'Na globalnej mapie z 2011 fiolet i błękit oznaczają wodę słodszą (pióropusze Amazonki i Gangesu, wysokie szerokości); żółty i czerwień — słonsze morza podzwrotnikowe, zwłaszcza Atlantyk Północny i Morze Arabskie. Jednostki: g/kg. Druga rycina to przestrzenny widok Atlantyku z tej samej misji.',
   openWorldviewSst: 'Otwórz NASA Worldview SST →',
   openWorldviewAnom: 'Otwórz NASA Worldview, anomalia SST →',
   openWorldviewSmap: 'Otwórz NASA Worldview, zasolenie SMAP →',
@@ -64,44 +83,42 @@ export const pl: OceansPage = {
   openCopernicus: 'Otwórz Copernicus Marine →',
   openNoaaPollution: 'Otwórz nadzór NOAA nad zanieczyszczeniem morza →',
   openOceanColor: 'Otwórz NASA Ocean Color →',
-  gfwStyleNote:
-    'Ta sama uczciwość co Lasy → Global Forest Watch: kilka legalnych kadrów u nas, żywy podgląd u źródła, którego nie mirroringujemy.',
   oscarNote:
-    'Prędkości warstwy mieszanej OSCAR liczy się z satelitarnego SSH, wiatru wektorowego i SST (geostrofia, Ekman, wiatr termiczny). Pola dobowe 0,25°, od 1993. To nie prądomierz na każdym kwadracie oceanu.',
+    'OSCAR (Ocean Surface Current Analyses Real-time) szacuje prędkość warstwy mieszanej z satelitarnej wysokości powierzchni morza, wiatru wektorowego i SST — geostrofia, dryf Ekmana, wiatr termiczny. Pola dobowe 0,25°, od 1993 r.',
   smapNote:
-    'Zasolenie SMAP (miesięczne RSS / 8 dni) trwa po Aquariusie. World Ocean Atlas 2023 to klimatologia in situ (dekady, butelki i pływaki) — inny produkt.',
+    'Misja SMAP kontynuuje mikrofalowe pomiary zasolenia powierzchni po Aquariusie. World Ocean Atlas 2023 to osobna klimatologia in situ: butelki, CTD i pływaki, uśrednienie z wielu lat.',
   numbersNote:
-    'Skopiowane z wymienionych publikacji. Nie interpolowaliśmy holocenowego filmu pH ani spisu plastiku na 2026.',
-  distinguishTitle: 'Ciepło to nie pH. Chlorofil to nie plastik. Gyre to nie wyspa śmieci.',
+    'Skopiowane z cytowanych prac, z datą. Zawartość ciepła to nie SST; pH to chemia, nie temperatura; przepływ plastiku to nie zapas w wirze.',
+  distinguishTitle: 'Co właściwie mierzą te liczby',
   distinguish:
-    'IPCC AR6: ocean przyjął około 90 procent nadmiaru ciepła w systemie klimatycznym. Cheng et al. 2024: zawartość ciepła 0–2000 m w 2023 (i aktualizacja 2024) na szczycie instrumentalnego szeregu — to inwentarz ciepła, nie SST na mapie. Powierzchniowe pH spadło o ok. 0,1 od ~1750 (mniej więcej +30 procent stężenia jonów wodorowych); to chemia, nie temperatura. Jambeck 2015: 4,8–12,7 mln ton plastiku z lądu do oceanu w 2010 — przepływ, nie zapas w Wielkiej Pacyficznej Plamie Śmieci. Eriksen 2014: co najmniej 5,25 bln pływających cząstek. Breitburg 2018: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji i rozszerzające się strefy minimum tlenu. Nic z tego nie jest jednym „indeksem zanieczyszczenia”.',
+    'IPCC AR6: ocean przyjął około 90 procent nadmiaru ciepła w systemie klimatycznym. Cheng et al. 2024: zawartość ciepła 0–2000 m w 2023 (i aktualizacja 2024) na szczycie instrumentalnego szeregu — zapas ciepła w słupie wody, nie mapa SST powyżej. Powierzchniowe pH spadło o ok. 0,1 od ~1750: to wzrost stężenia jonów wodorowych o mniej więcej 26–30 procent (IPCC AR6; NOAA PMEL), chemia węglanowa. Jambeck et al. 2015: 4,8–12,7 mln ton plastiku z lądu do oceanu w 2010 — przepływ, nie masa w Wielkiej Pacyficznej Plamie Śmieci. Eriksen et al. 2014: co najmniej 5,25 bln pływających cząstek. Breitburg et al. 2018: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji i rozszerzające się strefy minimum tlenu otwartego oceanu (~4,5 mln km²).',
   pollutionKinds: {
     plastics: {
-      title: 'Plastik — modelowane stężenie w północnym Pacyfiku',
-      lead: 'Nie zdjęcie satelitarne śmieci. Nie globalny raster plastiku. Lebreton et al. 2018: modelowane stężenie masy (kg/km²) dla sierpnia 2015 w Wielkiej Pacyficznej Plamie Śmieci. „Plama” to strefa wysokiego stężenia w gyre, nie wyspa, po której można chodzić.',
+      title: 'Plastik',
+      lead: 'Większość oceanicznego plastiku pochodzi z lądu. Wiatr i prądy powierzchniowe skupiają okruchy w wirach podzwrotnikowych. Wielka Pacyficzna Plama Śmieci, między Hawajami a Kalifornią, to strefa wysokiego stężenia w wirze północnego Pacyfiku — woda z większą ilością odpadów, nie wyspa, po której można chodzić. Mapa pokazuje modelowane stężenie masy (kg/km²) dla sierpnia 2015.',
       caption:
         'Lebreton et al. 2018, Scientific Reports. Modelowane stężenie masy, północny Pacyfik, sierpień 2015. CC BY 4.0.',
       imageAlt:
         'Mapa izolinii modelowanego stężenia masy plastiku między Hawajami a Kalifornią, czerwone jądro GPGP',
     },
     oil: {
-      title: 'Ropa — jeden zaobserwowany wyciek, nie globalna mapa ropy',
-      lead: 'NASA Terra MODIS, 24 maja 2010: plama Deepwater Horizon w Zatoce Meksykańskiej. To kadr zdarzenia. Nie ma na stronie uczciwej globalnej klimatologii „zanieczyszczenia ropą”. Bieżące raporty SAR/VIIRS: NOAA NESDIS.',
+      title: 'Ropa',
+      lead: 'Ropa na powierzchni morza rozlewa się cienką błoną i bywa widoczna z kosmosu. Zdjęcie to NASA Terra MODIS z 24 maja 2010, wyciek Deepwater Horizon w Zatoce Meksykańskiej — jeden duży przypadek. Bieżące meldunki o plamach: radar i VIIRS w NOAA NESDIS.',
       caption: 'NASA Terra MODIS. Plama ropy Deepwater Horizon, 24 maja 2010. Domena publiczna.',
       imageAlt:
         'Widok satelitarny Zatoki Meksykańskiej z ciemną plamą ropy na południe od delty Missisipi, maj 2010',
     },
     nutrient: {
-      title: 'Przybliżenie składników odżywczych — chlorofil-a, nie raster azotanów',
-      lead: 'NASA, chlorofil-a z koloru oceanu, październik 2019. Zieleń to więcej barwnika fitoplanktonu. Często idzie za dopływem składników (upwelling, spływ, zakwity), ale to nie mapa azotu ani fosforu i nie martwa strefa.',
+      title: 'Chlorofil',
+      lead: 'Fitoplankton potrzebuje światła i składników odżywczych. Chlorofil-a, zielony barwnik tych komórek, mapuje się z koloru oceanu. Wysokie wartości często znaczą upwelling, pióropusze rzeczne i zakwity; przejrzyste wiry podzwrotnikowe są ubogie. Chlorofil to przybliżenie żywej biomasy, nie mapa azotanów ani fosforanów i nie martwa strefa.',
       caption:
         'NASA ocean color, stężenie chlorofilu-a, październik 2019. Domena publiczna. Jednostki mg/m³.',
       imageAlt:
-        'Mapa Mollweide chlorofilu oceanu: niebieskie gyre’y, zielone wybrzeża i wysokie szerokości, szary ląd',
+        'Mapa Mollweide chlorofilu oceanu: niebieskie wiry, zielone wybrzeża i wysokie szerokości, szary ląd',
     },
     deadzones: {
-      title: 'Martwe strefy — zestawienie miejsc hipoksji',
-      lead: 'NASA Earth Observatory według Roberta Diaza (VIMS): czerwone punkty to przybrzeżne strefy hipoksji związane z eutrofizacją, zestawienie z 2008 r. To nie prognoza Zatoki Meksykańskiej na ten rok i nie to samo co płyta chlorofilu.',
+      title: 'Martwe strefy',
+      lead: 'Martwa strefa to odcinek wody, w którym rozpuszczonego tlenu jest za mało dla większości zwierząt. Przy brzegach często wynika z eutrofizacji: nadmiar azotu i fosforu, zakwit, potem rozkład, który zużywa tlen. Mapa oznacza zestawione przybrzeżne miejsca hipoksji według Diaza (2008). Strefy minimum tlenu otwartego oceanu to pokrewny, większy problem.',
       caption:
         'NASA Earth Observatory, Aquatic Dead Zones, według Diaza. Domena publiczna. Datowanie: zestawienie 2008.',
       imageAlt:
@@ -121,7 +138,7 @@ export const pl: OceansPage = {
       label: '2003',
       title: 'Bezwzględna SST, 1 lipca 2003',
       caption:
-        'Wczesna era analizy MUR. Czerwony pas równikowy i fioletowa woda polarna to stały gradient. To nie mapa anomalii.',
+        'Wczesna analiza MUR. Czerwony pas równikowy i fioletowa woda polarna to zwykły klimat: tropiki ciepłe, wysokie szerokości zimne.',
       imageAlt:
         'Mapa równoodległościowa temperatury powierzchni morza, 1 lipca 2003: czerwone tropiki, fioletowe oceany polarne, czarny ląd',
     },
@@ -129,7 +146,7 @@ export const pl: OceansPage = {
       label: '2010',
       title: 'Bezwzględna SST, 1 lipca 2010',
       caption:
-        'To samo bezwzględne pole MUR. Prądy zachodnich granic (Golfstrom, Kuroshio) jako ciepłe filamenty. Roczna morska fala upałów łatwiej widać na półce anomalii.',
+        'To samo bezwzględne pole MUR. Prądy zachodnich granic — Prąd Zatokowy, Kuroshio — widać jako ciepłe nitki. Roczna morska fala upałów jest wyraźniejsza na mapach anomalii.',
       imageAlt:
         'Mapa równoodległościowa temperatury powierzchni morza, 1 lipca 2010: czerwone tropiki, fioletowe oceany polarne, czarny ląd',
     },
@@ -137,7 +154,7 @@ export const pl: OceansPage = {
       label: '2015',
       title: 'Bezwzględna SST, 1 lipca 2015',
       caption:
-        '2015–16 to silne El Niño w zapisie klimatycznym. Na płycie bezwzględnej równikowy Pacyfik zawsze jest ciepły; zdarzenie widać na anomalii.',
+        '2015–16 to silne El Niño. Na mapie bezwzględnej równikowy Pacyfik zawsze jest ciepły; samo zdarzenie widać na półce anomalii.',
       imageAlt:
         'Mapa równoodległościowa temperatury powierzchni morza, 1 lipca 2015: czerwone tropiki, fioletowe oceany polarne, czarny ląd',
     },
@@ -145,7 +162,7 @@ export const pl: OceansPage = {
       label: '2020',
       title: 'Bezwzględna SST, 1 lipca 2020',
       caption:
-        'Środek ery satelitarnej w tym scrubberze. Porównaj z 2020 na półce anomalii — tam widać ciepło lat 2020.',
+        'Środek tej lipcowej serii. Porównaj z 2020 na półce anomalii: tam ciepło lat dwudziestych widać lepiej.',
       imageAlt:
         'Mapa równoodległościowa temperatury powierzchni morza, 1 lipca 2020: czerwone tropiki, fioletowe oceany polarne, czarny ląd',
     },
@@ -153,7 +170,7 @@ export const pl: OceansPage = {
       label: '2024',
       title: 'Bezwzględna SST, 1 lipca 2024',
       caption:
-        '2023–24 na szczycie zapisu ciepła oceanu (Cheng et al. 2024). Bezwzględna tęcza wciąż wygląda jak „tropiki są ciepłe”. Otwórz tryb anomalii.',
+        '2023–24 na szczycie zapisu ciepła oceanu (Cheng et al. 2024). Bezwzględna tęcza wciąż czyta się jako „tropiki są ciepłe”; odchylenie widać w trybie anomalii.',
       imageAlt:
         'Mapa równoodległościowa temperatury powierzchni morza, 1 lipca 2024: czerwone tropiki, fioletowe oceany polarne, czarny ląd',
     },
@@ -161,7 +178,7 @@ export const pl: OceansPage = {
       label: '2025',
       title: 'Bezwzględna SST, 1 lipca 2025',
       caption:
-        'Najnowsza bezwzględna płyta na 1 lipca, którą hostujemy. Inne dni — żywy MUR w NASA Worldview.',
+        'Najnowsza bezwzględna mapa na 1 lipca na tej stronie. Inne dni: żywy MUR w NASA Worldview.',
       imageAlt:
         'Mapa równoodległościowa temperatury powierzchni morza, 1 lipca 2025: czerwone tropiki, fioletowe oceany polarne, czarny ląd',
     },
@@ -182,7 +199,7 @@ export const pl: OceansPage = {
       label: '2023',
       title: 'Anomalia SST, 1 lipca 2023',
       caption:
-        '2023: rozwijające się El Niño na równikowym Pacyfiku i bardzo ciepły Północny Atlantyk. Anomalia, nie bezwzględna SST.',
+        '2023: rozwijające się El Niño na równikowym Pacyfiku i bardzo ciepły Północny Atlantyk w publicznym zapisie.',
       imageAlt:
         'Mapa równoodległościowa anomalii SST, 1 lipca 2023: silne czerwienie na równikowym Pacyfiku i Północnym Atlantyku',
     },
@@ -190,46 +207,46 @@ export const pl: OceansPage = {
       label: '2024',
       title: 'Anomalia SST, 1 lipca 2024',
       caption:
-        'Najnowsza lipcowa anomalia, którą hostujemy. Nadal produkt analizy. Inne dni — Worldview.',
+        'Najnowsza lipcowa anomalia na tej stronie. Nadal produkt analizy. Inne dni: NASA Worldview.',
       imageAlt: 'Mapa równoodległościowa anomalii SST, 1 lipca 2024: czerwienie i błękity na czarnym lądzie',
     },
     'sal-2011': {
       label: '2011',
       title: 'Pierwsza globalna mapa zasolenia Aquarius',
       caption:
-        'NASA Aquarius, 25 sie – 11 wrz 2011: pierwsze globalne zasolenie powierzchni z tej misji. Obserwowane mikrofalowe SSS, nie klimatologia WOA. Słodsze pióropusze Amazonki i Gangesu; słonszy subtropikalny Atlantyk.',
+        'NASA Aquarius, 25 sierpnia – 11 września 2011: pierwsza globalna mapa zasolenia powierzchni tej misji. Mikrofalowe SSS, g/kg. Słodsze pióropusze Amazonki i Gangesu; słonszy Atlantyk podzwrotnikowy.',
       imageAlt:
         'Mapa Mollweide zasolenia powierzchni oceanu z Aquariusa, 2011, od fioletu słodkiego do czerwieni słonej',
     },
     'sal-atlantic': {
       label: 'Atlantyk',
-      title: 'Słona plama Atlantyku, Aquarius (3-D)',
+      title: 'Maksimum soli na Atlantyku Północnym (Aquarius, 3-D)',
       caption:
-        'Wizualizacja NASA Aquarius północnoatlantyckiego obszaru wysokiego zasolenia. Ta sama misja, inna grafika — nie późniejszy rok i nie SMAP.',
+        'Widok NASA Aquarius północnoatlantyckiego obszaru wysokiego zasolenia. Ta sama misja co mapa globalna, inna grafika.',
       imageAlt:
         'Globus 3-D z centrum na Atlantyku, kolory zasolenia Aquarius od niebieskiego do czerwonego',
     },
     'currents-1943': {
       label: '1943',
-      title: 'Nazwane gyre’y (schemat)',
+      title: 'Nazwane wiry',
       caption:
-        'Atlas armii USA, 1943: ciepłe i zimne prądy powierzchniowe, granice lodu, nazwane dryfy (Golfstrom, Kuroshio, Humboldt, Agulhas). Schemat dydaktyczny. Nie OSCAR, nie altimetria satelitarna, nie 2025.',
+        'Ciepłe prądy powierzchniowe pomarańczem, zimne zielenią; przy biegunach kreskowanie lodu. Prąd Zatokowy, Kuroshio, Prąd Humboldta (Peruwiański), Agulhas i inne nazwane dryfy.',
       imageAlt:
-        'Vintage’owa mapa świata nazwanych prądów oceanicznych w pomarańczu i zieleni z kreskowaniem lodu przy biegunach',
+        'Dawna mapa świata nazwanych prądów oceanicznych w pomarańczu i zieleni z kreskowaniem lodu przy biegunach',
     },
   },
   stats: {
     heatShare: {
       label: 'Nadmiar ciepła w oceanie',
-      text: 'Około 90 procent nadmiaru ciepła w systemie klimatycznym jest magazynowane w oceanie (IPCC AR6 WG1). To inwentarz energii, nie tęcza SST na półce map.',
+      text: 'Około 90 procent nadmiaru ciepła w systemie klimatycznym jest magazynowane w oceanie (IPCC AR6 WG1). To zapas energii w słupie wody.',
     },
     ohcRecord: {
       label: 'Zawartość ciepła oceanu, niedawny szczyt',
-      text: 'Cheng et al. 2024 (Adv. Atmos. Sci.): zawartość ciepła 0–2000 m w 2023 osiągnęła nowe instrumentalne maksimum, aktualizacje 2024 zostają na szczycie szeregu. Zawartość ciepła, nie jeden dzień SST.',
+      text: 'Cheng et al. 2024 (Adv. Atmos. Sci.): zawartość ciepła 0–2000 m w 2023 osiągnęła nowe instrumentalne maksimum; aktualizacje 2024 zostają na szczycie szeregu. Zawartość ciepła, nie jeden dzień SST.',
     },
     phDrop: {
       label: 'Spadek powierzchniowego pH',
-      text: 'pH powierzchni otwartego oceanu spadło o ok. 0,1 od ~1750 — mniej więcej 26–30 procentowy wzrost stężenia jonów wodorowych (IPCC AR6; NOAA PMEL). Chemia, nie temperatura, i nie mapa na tej stronie.',
+      text: 'pH powierzchni otwartego oceanu spadło o ok. 0,1 od ~1750 — wzrost stężenia jonów wodorowych o mniej więcej 26–30 procent (IPCC AR6; NOAA PMEL). Chemia węglanowa, nie temperatura.',
     },
     plasticLand: {
       label: 'Plastik z lądu do oceanu',
@@ -237,11 +254,11 @@ export const pl: OceansPage = {
     },
     plasticFloat: {
       label: 'Pływające cząstki plastiku',
-      text: 'Eriksen et al. 2014: co najmniej 5,25 bln cząstek (268 940 ton) na powierzchni. Szacunek zasobu z zaciągów sieci i modelu — nie płyta stężenia Lebreton 2018.',
+      text: 'Eriksen et al. 2014: co najmniej 5,25 bln cząstek (268 940 ton) na powierzchni. Szacunek zasobu z zaciągów sieci i modelu.',
     },
     deadZones: {
       label: 'Przybrzeżne miejsca hipoksji',
-      text: 'Breitburg et al. 2018, Science: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji plus rozszerzające się strefy minimum tlenu otwartego oceanu (~4,5 mln km²). Wcześniejsze zestawienie Diaza miało już >400. Nie płyta chlorofilu.',
+      text: 'Breitburg et al. 2018, Science: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji plus rozszerzające się strefy minimum tlenu otwartego oceanu (~4,5 mln km²). Wcześniejsze zestawienie Diaza miało już ponad 400.',
     },
   },
 };

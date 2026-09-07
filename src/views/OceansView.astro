@@ -80,13 +80,26 @@ const initialSalinity = salinityFrames[0];
     }
   </SectionHub>
 
-  <section class="section section-hub-follow" id="currents" data-ocean-panel="currents">
+  <section class="section section-hub-follow" id="oceans-intro">
+    <div class="wrap">
+      <div class="wildlife-copy-card forests-panel oceans-panel oceans-hub-intro">
+        <div class="eyebrow forests-eyebrow">{page.eyebrow}</div>
+        <h2>{page.title}</h2>
+        <div class="oceans-lede">
+          {page.hubLead.map((para) => <p>{para}</p>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="currents" data-ocean-panel="currents">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.currents}</div>
         <h2>{page.panels.currents}</h2>
-        <p class="wildlife-tab-lead">{page.leads.currents}</p>
-        <p class="borders-honesty">{page.honestyCurrents}</p>
+        <div class="oceans-lede">
+          {page.leads.currents.map((para) => <p>{para}</p>)}
+        </div>
 
         {
           currentFrame && (
@@ -104,6 +117,8 @@ const initialSalinity = salinityFrames[0];
           )
         }
 
+        <p class="oceans-source-note">{page.honestyCurrents}</p>
+
         {
           currentFrame && (
             <div class="forest-map-meta">
@@ -118,7 +133,6 @@ const initialSalinity = salinityFrames[0];
           {currentFrame && <h3>{currentFrame.title}</h3>}
           {currentFrame && <p>{currentFrame.caption}</p>}
           <p class="wildlife-sources">{page.oscarNote}</p>
-          <p class="wildlife-sources">{page.gfwStyleNote}</p>
           {
             currentFrame && (
               <p class="wildlife-sources">
@@ -155,8 +169,9 @@ const initialSalinity = salinityFrames[0];
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.salinity}</div>
         <h2>{page.panels.salinity}</h2>
-        <p class="wildlife-tab-lead">{page.leads.salinity}</p>
-        <p class="borders-honesty">{page.honestySalinity}</p>
+        <div class="oceans-lede">
+          {page.leads.salinity.map((para) => <p>{para}</p>)}
+        </div>
 
         <div class="forest-map" data-salinity-map>
           <figure class="map-detail-art forest-map-art">
@@ -171,6 +186,8 @@ const initialSalinity = salinityFrames[0];
               {initialSalinity.sourceOrg}. {page.vintageLabel}: {initialSalinity.vintage}.
             </figcaption>
           </figure>
+
+          <p class="oceans-source-note">{page.honestySalinity}</p>
 
           <div class="forest-map-meta">
             <span class="pill">{page.fidelitySalinity}</span>
@@ -227,8 +244,9 @@ const initialSalinity = salinityFrames[0];
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.sst}</div>
         <h2>{page.panels.sst}</h2>
-        <p class="wildlife-tab-lead">{page.leads.sst}</p>
-        <p class="borders-honesty">{page.honestySst}</p>
+        <div class="oceans-lede">
+          {page.leads.sst.map((para) => <p>{para}</p>)}
+        </div>
 
         <div class="forest-map" data-sst-map>
           <div class="forest-mode" role="tablist" aria-label={page.scrubberAria}>
@@ -252,6 +270,8 @@ const initialSalinity = salinityFrames[0];
               {initialSst.sourceOrg}. {page.vintageLabel}: {initialSst.vintage}.
             </figcaption>
           </figure>
+
+          <p class="oceans-source-note">{page.honestySst}</p>
 
           <div class="forest-map-meta">
             <span class="pill" data-sst-fidelity>{page.fidelitySst}</span>
@@ -323,8 +343,10 @@ const initialSalinity = salinityFrames[0];
       <div class="wildlife-copy-card forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.pollution}</div>
         <h2>{page.panels.pollution}</h2>
-        <p class="wildlife-tab-lead">{page.leads.pollution}</p>
-        <p class="borders-honesty">{page.honestyPollution}</p>
+        <div class="oceans-lede">
+          {page.leads.pollution.map((para) => <p>{para}</p>)}
+        </div>
+        <p class="oceans-source-note">{page.honestyPollution}</p>
         <div class="forest-recon-grid">
           {
             pollution.map((item) => (
@@ -375,8 +397,10 @@ const initialSalinity = salinityFrames[0];
       <div class="wildlife-list-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
         <h2>{page.panels.numbers}</h2>
-        <p class="wildlife-tab-lead">{page.leads.numbers}</p>
-        <p class="borders-honesty">{page.numbersNote}</p>
+        <div class="oceans-lede">
+          {page.leads.numbers.map((para) => <p>{para}</p>)}
+        </div>
+        <p class="oceans-source-note">{page.numbersNote}</p>
         <div class="forest-stat-grid">
           {
             stats.map((stat) => (

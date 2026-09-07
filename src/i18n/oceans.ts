@@ -1,5 +1,6 @@
 import {
   currentFrames,
+  oceanPanelKeys,
   oceanStats,
   pollutionStills,
   salinityFrames,
@@ -22,11 +23,14 @@ import { ru } from './oceans-ru';
 export type OceansPage = {
   metaTitle: string;
   metaDescription: string;
+  eyebrow: string;
+  title: string;
+  hubLead: string[];
   choosePanel: string;
   filterAria: string;
   tiles: Record<OceanPanel, string>;
   panels: Record<OceanPanel, string>;
-  leads: Record<OceanPanel, string>;
+  leads: Record<OceanPanel, string[]>;
   honestyCurrents: string;
   honestySalinity: string;
   honestySst: string;
@@ -53,7 +57,6 @@ export type OceansPage = {
   openCopernicus: string;
   openNoaaPollution: string;
   openOceanColor: string;
-  gfwStyleNote: string;
   oscarNote: string;
   smapNote: string;
   numbersNote: string;
