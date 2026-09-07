@@ -17,6 +17,7 @@ export const donateCheckoutUrl = '';
 export const nav = [
   { href: '/solutions', key: 'solutions' },
   { href: '/innovations', key: 'innovations' },
+  { href: '/geoengineering', key: 'geoengineering' },
   { href: '/maps', key: 'maps' },
   { href: '/law', key: 'law' },
   { href: '/wildlife', key: 'wildlife' },
@@ -36,6 +37,7 @@ export const features = [
 export const homeHub = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
   { href: '/innovations', key: 'innovations', icon: 'circuit' },
+  { href: '/geoengineering', key: 'geoengineering', icon: 'terrain' },
   { href: '/maps', key: 'maps', icon: 'globe' },
   { href: '/law', key: 'law', icon: 'scales' },
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },

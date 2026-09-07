@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  geoImageSrc,
+  geoSectionSrc,
+  geoShelfPath,
+  type GeoProject,
+} from '../data/geoengineering';
+import { getGeoPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: GeoProject;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getGeoPage(locale);
+const { item } = Astro.props;
+const title = `${item.title} — Fix Planet`;
+const image = geoImageSrc(item.image);
+const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
+---
+
+<BaseLayout
+  title={title}
+  description={item.hook}
+  image={image}
+  theme="geoengineering-detail"
+>
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img src={geoSectionSrc} alt="" width="1920" height="1280" />
+    <div class="section-backdrop-scrim geo-scrim"></div>
+  </div>
+  <header
+    class="wildlife-page-hero wildlife-page-hero-detail geo-page-hero"
+    aria-labelledby="geo-heading"
+  >
+    <div class="wildlife-page-hero-media geo-hero-media" aria-hidden="true">
+      <img src={geoSectionSrc} alt="" width="1920" height="1280" />
+    </div>
+    <div class="wildlife-page-hero-shade geo-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/geoengineering', locale)}>{page.back}</a>
+        {' · '}
+        <a class="maps-back" href={shelfHref}>{page.shelves[item.shelf]}</a>
+      </p>
+      <div class="eyebrow wildlife-on-dark">{page.shelves[item.shelf]}</div>
+      <h1 id="geo-heading">{item.title}</h1>
+      <p>{item.hook}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail">
+      <figure class="wildlife-detail-art">
+        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+        <figcaption>
+          {page.imageCredit}: {item.image.credit}
+          {
+            item.image.sourceUrl ? (
+              <>
+                {' '}
+                (
+                <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                  {item.image.license}
+                </a>
+                )
+              </>
+            ) : (
+              <> ({item.image.license})</>
+            )
+          }
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose geo-prose">
+        {
+          item.status === 'research' ? (
+            <p class="geo-banner geo-banner-research">{page.researchBanner}</p>
+          ) : item.status === 'proposed' ? (
+            <p class="geo-banner geo-banner-proposed">{page.proposedBanner}</p>
+          ) : null
+        }
+        <div class="meta-row">
+          <span class="pill">{page.shelves[item.shelf]}</span>
+          <span class:list={['pill', `status-${item.status}`]}>
+            {page.status[item.status]}
+          </span>
+          <span class="pill">{item.jurisdiction}</span>
+        </div>
+        <p>
+          <strong>{page.jurisdictionLabel}:</strong> {item.jurisdiction}
+          <br />
+          <strong>{page.yearLabel}:</strong> {item.yearStatus}
+        </p>
+        <h2>{page.plan}</h2>
+        <p>{item.plan}</p>
+        <h2>{page.construction}</h2>
+        <p>{item.construction}</p>
+        <h2>{page.outcome}</h2>
+        <p>{item.outcome}</p>
+        <h2>{page.lessons}</h2>
+        <p>{item.lessons}</p>
+        <h2>{page.sourcesLabel}</h2>
+        <p class="wildlife-sources">{item.sourcesNote}</p>
+        <ul class="law-source-list">
+          {
+            item.sources.map((source) => (
+              <li>
+                <a href={source.url} rel="noopener noreferrer">
+                  {source.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

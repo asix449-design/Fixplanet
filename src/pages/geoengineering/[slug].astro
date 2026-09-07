@@ -1,0 +1,25 @@
+---
+import { geoMeta, geoShelfKeys, isGeoShelf } from '../../data/geoengineering';
+import { getGeoBySlug, resolveLocale } from '../../i18n';
+import GeoengineeringDetailView from '../../views/GeoengineeringDetailView.astro';
+import GeoengineeringView from '../../views/GeoengineeringView.astro';
+
+export function getStaticPaths() {
+  return [
+    ...geoShelfKeys.map((slug) => ({ params: { slug } })),
+    ...geoMeta.map((item) => ({ params: { slug: item.slug } })),
+  ];
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && !isGeoShelf(slug) ? getGeoBySlug(locale, slug) : undefined;
+---
+
+{
+  isGeoShelf(slug) ? (
+    <GeoengineeringView shelf={slug} />
+  ) : (
+    item && <GeoengineeringDetailView item={item} />
+  )
+}
