@@ -1,5 +1,6 @@
 import {
   forestFrames,
+  forestHeroStatIds,
   forestStats,
   type ForestFrame,
   type ForestFrameCopy,
@@ -20,6 +21,8 @@ export type ForestsPage = {
   title: string;
   hubLead: string[];
   choosePanel: string;
+  heroNote: string;
+  heroSources: string;
   filterAria: string;
   back: string;
   tiles: Record<ForestPanel, string>;
@@ -87,6 +90,14 @@ export function getForestStats(locale: Locale): ForestStat[] {
   return forestStats.map((meta) => {
     const fields = copy[meta.id] ?? fallback[meta.id];
     return { ...meta, ...fields };
+  });
+}
+
+export function getForestHeroStats(locale: Locale): ForestStat[] {
+  const byId = new Map(getForestStats(locale).map((stat) => [stat.id, stat]));
+  return forestHeroStatIds.flatMap((id) => {
+    const stat = byId.get(id);
+    return stat ? [stat] : [];
   });
 }
 

@@ -36,7 +36,7 @@ export {
   getInnovationsPage,
   innovationAreaKeys,
 } from './innovations';
-export { getForestFrames, getForestStats, getForestsPage } from './forests';
+export { getForestFrames, getForestHeroStats, getForestStats, getForestsPage } from './forests';
 export {
   getOceanCurrentFrames,
   getOceanPollution,

@@ -872,7 +872,8 @@ a.solution-card:hover {
 
   .hub-grid,
   .hub-grid-3,
-  .feature-strip {
+  .feature-strip,
+  .forests-hero-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -2405,8 +2406,166 @@ a.map-card:hover {
     linear-gradient(90deg, rgba(0, 10, 4, 0.28) 0%, transparent 48%);
 }
 
+/* Hub: keep the redwood photo readable; stats sit lightly on the trees. */
+.theme-forests .forests-hub-backdrop img {
+  object-position: 48% 38%;
+  filter: saturate(1.18) brightness(0.78) contrast(1.04);
+  transform: scale(1.03);
+}
+
+.forests-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 6, 2, 0.42) 0%,
+      rgba(0, 8, 3, 0.18) 22%,
+      rgba(0, 8, 3, 0.1) 46%,
+      rgba(0, 6, 2, 0.28) 72%,
+      rgba(0, 4, 2, 0.62) 100%
+    ),
+    radial-gradient(ellipse 70% 58% at 50% 42%, rgba(0, 0, 0, 0.16), transparent 72%);
+}
+
+.theme-forests:has(.forests-hero) .site-header {
+  background: rgba(0, 0, 0, 0.38);
+}
+
 .theme-forests .site-header {
   background: rgba(0, 0, 0, 0.82);
+}
+
+.forests-hero {
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - var(--header-h));
+  display: flex;
+  align-items: stretch;
+  padding: 1.4rem 0 2rem;
+}
+
+.forests-hero-inner {
+  width: min(1180px, calc(100% - 40px));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+  flex: 1;
+}
+
+.forests-hero-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1.2rem, 6vh, 3.4rem) 0 0.4rem;
+}
+
+.forests-hero-kicker {
+  margin: 0 0 0.35rem;
+  color: var(--lime);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+.forests-hero-title {
+  margin: 0 0 0.7rem;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+}
+
+.forests-hero-note {
+  max-width: 38rem;
+  margin: 0 0 1.7rem;
+  color: rgba(244, 247, 242, 0.86);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
+.forests-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.15rem 1.25rem;
+  width: 100%;
+  margin-bottom: 1.15rem;
+}
+
+.forests-hero-stat {
+  padding: 1.15rem 0.85rem 1.2rem;
+  border: 1px solid rgba(192, 255, 0, 0.32);
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.forests-hero-value {
+  margin: 0 0 0.55rem;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: clamp(2.15rem, 4.4vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.forests-hero-value span {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--lime);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.forests-hero-stat h2 {
+  margin: 0 0 0.35rem;
+  color: var(--cream);
+  font-size: 0.98rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.forests-hero-source {
+  margin: 0;
+  color: rgba(244, 247, 242, 0.68);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+}
+
+.forests-hero-sources {
+  color: var(--lime);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45);
+}
+
+.forests-hero-tiles {
+  align-items: stretch;
+}
+
+.forests-hero .hub-tile {
+  background: rgba(0, 0, 0, 0.34);
+  min-height: 164px;
+}
+
+.forests-hero .hub-tile:hover,
+.forests-hero .hub-tile.is-active {
+  background: rgba(4, 10, 2, 0.52);
 }
 
 .theme-forests main {
@@ -2669,6 +2828,35 @@ a.map-card:hover {
   .forest-scenario-grid,
   .forest-works,
   .forest-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .forests-hero {
+    min-height: 0;
+    padding: 1.15rem 0 1.6rem;
+  }
+
+  .forests-hero-inner {
+    width: min(1180px, calc(100% - 32px));
+    gap: 1.6rem;
+  }
+
+  .forests-hero-stats {
+    padding-top: 0.6rem;
+  }
+
+  .forests-hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .forests-hero-stat {
+    padding: 0.9rem 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .forests-hero-grid {
     grid-template-columns: 1fr;
   }
 }
