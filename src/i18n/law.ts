@@ -53,28 +53,28 @@ export type LawPage = {
 const pageEn: LawPage = {
   metaTitle: 'Law — Fix Planet',
   metaDescription:
-    'A curated catalog of real environmental, AI-safety, and wildlife laws — enacted, under consideration, or clearly labeled ideas — with citations and sources.',
+    'Environmental, AI-safety, and wildlife law: texts in force, bills under consideration, and proposals labeled as ideas, with citations.',
   categoryMetaTitle: {
     ecology: 'Ecology law — Fix Planet',
     ai: 'AI law — Fix Planet',
     animals: 'Animal and habitat law — Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Enacted, pending, and proposed laws on climate, pollution, forests, and circular economy.',
-    ai: 'Safety, risk, transparency, and liability rules for AI systems — not tech cheerleading.',
-    animals: 'Wildlife trade, endangered species, and habitat instruments, plus pending corridor bills and labeled ideas — including a companion-animal proposal that is not law.',
+    ecology: 'Climate, pollution, forest, and circular-economy instruments — enacted, pending, or proposed.',
+    ai: 'Safety, risk, transparency, and liability rules for AI systems.',
+    animals: 'Wildlife trade, endangered species, habitats, corridor bills, and one labeled companion-animal idea.',
   },
-  eyebrow: 'Statute shelf',
+  eyebrow: 'Rules for living systems',
   title: 'Law',
-  lead: 'Three shelves of rules that try to protect living systems and constrain high-risk machines. Every card names a jurisdiction, a citation, a status, and a source. Ideas are labeled ideas.',
+  lead: 'Environmental statutes, rules for high-risk AI, and instruments that protect wildlife and habitats. Each article names a jurisdiction, a citation, and whether the text is in force, still under consideration, or only an idea.',
   honesty:
-    'This is a curated catalog, not an encyclopedia and not legal advice. Enacted means a text in force. Under consideration means a bill or a formal negotiation that has not become law. Ideas are useful proposals that are not in force — including texts that once passed one chamber and then died. We do not invent statutes, dates, or impact statistics.',
+    'Not legal advice. “In force” means a statute, regulation, or treaty that already binds someone. Ideas stay labeled as ideas — including bills that died after one chamber.',
   filterAria: 'Choose a law category',
   chooseCategory: 'Choose a field',
   tiles: {
-    ecology: 'Climate, pollution, forests, land, and circular-economy rules.',
-    ai: 'Risk tiers, transparency, high-risk systems, liability — the safety shelf.',
-    animals: 'Wildlife trade, endangered species, habitats, corridors, and one labeled companion-animal idea.',
+    ecology: 'Climate, pollution, forests, land, circular economy.',
+    ai: 'Risk tiers, transparency, high-risk systems, liability.',
+    animals: 'Wildlife trade, endangered species, habitats, corridors.',
   },
   cardCta: 'Read the article →',
   back: '← Law',
@@ -99,10 +99,10 @@ const pageEn: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Environmental, climate, pollution, forest, and circular-economy instruments. Restoration and clean-air statutes sit next to a plastics negotiation that is still not a treaty.',
-    ai: 'Safety, risk management, transparency, and liability — not generic tech optimism. High-risk systems and frontier reporting, with a withdrawn liability idea labeled as an idea.',
+      'Climate, pollution, forest, land, and circular-economy instruments. Restoration and clean-air statutes sit next to a plastics negotiation that is still not a treaty.',
+    ai: 'Safety, risk management, transparency, and liability for high-risk and frontier systems. A withdrawn liability text is labeled as an idea.',
     animals:
-      'Wildlife trade, endangered-species listing, habitat networks, a live U.S. corridor bill, and one clearly labeled idea about intentional companion-animal cruelty parity. Habitat and species law first; the companion-animal card is an idea, not a statute.',
+      'Wildlife trade, endangered-species listing, habitat networks, a live U.S. corridor bill, and one clearly labeled idea about intentional companion-animal cruelty. Habitat and species law first; the companion-animal card is an idea, not a statute.',
   },
   status: {
     existing: 'Existing / enacted',
@@ -124,28 +124,28 @@ const pageEn: LawPage = {
 const pageRu: LawPage = {
   metaTitle: 'Право — Fix Planet',
   metaDescription:
-    'Каталог реальных законов об окружающей среде, безопасности ИИ и дикой природе — принятых, рассматриваемых или явно помеченных как идеи — с цитатами и источниками.',
+    'Экологическое право, безопасность ИИ и защита диких видов: действующие тексты, рассматриваемые проекты и предложения, помеченные как идеи, с цитатами.',
   categoryMetaTitle: {
     ecology: 'Экологическое право — Fix Planet',
     ai: 'Право ИИ — Fix Planet',
     animals: 'Право животных и местообитаний — Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Принятые, рассматриваемые и предложенные законы о климате, загрязнении, лесах и циркулярной экономике.',
-    ai: 'Правила безопасности, риска, прозрачности и ответственности для систем ИИ — не реклама технологий.',
-    animals: 'Торговля дикими видами, исчезающие виды и местообитания, плюс законопроекты о коридорах и помеченные идеи — в том числе предложение о животных-компаньонах, которое не закон.',
+    ecology: 'Климат, загрязнение, леса и циркулярная экономика — принятые, рассматриваемые или предложенные акты.',
+    ai: 'Правила безопасности, риска, прозрачности и ответственности для систем ИИ.',
+    animals: 'Торговля дикими видами, исчезающие виды, местообитания, коридоры и одна помеченная идея о животных-компаньонах.',
   },
-  eyebrow: 'Полка статутов',
+  eyebrow: 'Правила для живых систем',
   title: 'Право',
-  lead: 'Три полки правил, которые пытаются защитить живые системы и ограничить опасные машины. На каждой карточке — юрисдикция, цитата, статус и источник. Идеи помечены как идеи.',
+  lead: 'Экологические законы, правила для высокорискового ИИ и инструменты, которые защищают дикие виды и местообитания. В каждой статье — юрисдикция, цитата и то, действует ли текст, ещё рассматривается или это только идея.',
   honesty:
-    'Это курируемый каталог, не энциклопедия и не юридическая консультация. «Принято» значит, что текст действует. «На рассмотрении» — законопроект или формальные переговоры, которые ещё не стали законом. «Идеи» — полезные предложения, которые не действуют, в том числе тексты, прошедшие одну палату и умершие. Мы не выдумываем статуты, даты и цифры эффекта.',
+    'Не юридическая консультация. «Действует» значит закон, регламент или договор, который уже кого-то связывает. Идеи так и подписаны — в том числе законопроекты, прошедшие одну палату и умершие.',
   filterAria: 'Выберите область права',
   chooseCategory: 'Выберите область',
   tiles: {
-    ecology: 'Климат, загрязнение, леса, земля и циркулярная экономика.',
+    ecology: 'Климат, загрязнение, леса, земля, циркулярная экономика.',
     ai: 'Уровни риска, прозрачность, высокорисковые системы, ответственность.',
-    animals: 'Торговля дикими видами, исчезающие виды, местообитания, коридоры и одна помеченная идея о животных-компаньонах.',
+    animals: 'Торговля дикими видами, исчезающие виды, местообитания, коридоры.',
   },
   cardCta: 'Читать статью →',
   back: '← Право',
@@ -170,8 +170,8 @@ const pageRu: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Инструменты по среде, климату, загрязнению, лесам и циркулярной экономике. Рядом с законами о восстановлении и чистом воздухе — переговоры о пластике, которые ещё не договор.',
-    ai: 'Безопасность, риск, прозрачность и ответственность — не технооптимизм. Высокий риск и отчётность по frontier-моделям; отозванная идея об ответственности помечена как идея.',
+      'Климат, загрязнение, леса, земля и циркулярная экономика. Рядом с законами о восстановлении и чистом воздухе — переговоры о пластике, которые ещё не договор.',
+    ai: 'Безопасность, риск, прозрачность и ответственность для высокорисковых и frontier-систем. Отозванный текст об ответственности помечен как идея.',
     animals:
       'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете умышленной жестокости к животному-компаньону. Сначала право видов и местообитаний; карточка о компаньонах — идея, не статут.',
   },
@@ -195,28 +195,28 @@ const pageRu: LawPage = {
 const pagePl: LawPage = {
   metaTitle: 'Prawo — Fix Planet',
   metaDescription:
-    'Katalog prawdziwych ustaw środowiskowych, bezpieczeństwa SI i ochrony dzikich gatunków — uchwalonych, rozpatrywanych albo jasno oznaczonych jako idee — z cytatami i źródłami.',
+    'Prawo środowiskowe, bezpieczeństwo SI i ochrona dzikich gatunków: teksty obowiązujące, projekty rozpatrywane i propozycje oznaczone jako idee, z cytatami.',
   categoryMetaTitle: {
     ecology: 'Prawo ekologiczne — Fix Planet',
     ai: 'Prawo SI — Fix Planet',
     animals: 'Prawo zwierząt i siedlisk — Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Ustawy uchwalone, procedowane i proponowane: klimat, zanieczyszczenia, lasy, gospodarka o obiegu zamkniętym.',
-    ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność systemów SI — nie reklama technologii.',
-    animals: 'Handel gatunkami, gatunki zagrożone, siedliska, projekty korytarzy i oznaczone idee — w tym propozycja o zwierzętach towarzyszących, która nie jest prawem.',
+    ecology: 'Klimat, zanieczyszczenia, lasy i obieg zamknięty — ustawy uchwalone, procedowane albo proponowane.',
+    ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność systemów SI.',
+    animals: 'Handel gatunkami, gatunki zagrożone, siedliska, projekty korytarzy i jedna oznaczona idea o zwierzętach towarzyszących.',
   },
-  eyebrow: 'Półka statutów',
+  eyebrow: 'Reguły dla żywych systemów',
   title: 'Prawo',
-  lead: 'Trzy półki reguł, które próbują chronić żywe systemy i ograniczać ryzykowne maszyny. Na każdej karcie: jurysdykcja, cytat, status i źródło. Idee są oznaczone jako idee.',
+  lead: 'Ustawy środowiskowe, reguły dla SI wysokiego ryzyka i instrumenty chroniące dzikie gatunki i siedliska. W każdym artykule: jurysdykcja, cytat i to, czy tekst obowiązuje, jest jeszcze rozpatrywany, czy to tylko idea.',
   honesty:
-    'To kuratorski katalog, nie encyklopedia i nie porada prawna. „Uchwalone” znaczy, że tekst obowiązuje. „Rozpatrywane” to projekt ustawy albo formalne negocjacje, które nie stały się prawem. „Idee” to użyteczne propozycje, które nie obowiązują — w tym teksty, które przeszły jedną izbę i padły. Nie wymyślamy statutów, dat ani statystyk skutku.',
+    'To nie porada prawna. „Obowiązuje” znaczy ustawa, rozporządzenie albo traktat, który już kogoś wiąże. Idee zostają ideami — także projekty, które przeszły jedną izbę i padły.',
   filterAria: 'Wybierz dziedzinę prawa',
   chooseCategory: 'Wybierz dziedzinę',
   tiles: {
-    ecology: 'Klimat, zanieczyszczenia, lasy, ziemia i obieg zamknięty.',
+    ecology: 'Klimat, zanieczyszczenia, lasy, ziemia, obieg zamknięty.',
     ai: 'Poziomy ryzyka, przejrzystość, systemy wysokiego ryzyka, odpowiedzialność.',
-    animals: 'Handel dzikimi gatunkami, gatunki zagrożone, siedliska, korytarze i jedna oznaczona idea o zwierzętach towarzyszących.',
+    animals: 'Handel dzikimi gatunkami, gatunki zagrożone, siedliska, korytarze.',
   },
   cardCta: 'Czytaj artykuł →',
   back: '← Prawo',
@@ -241,8 +241,8 @@ const pagePl: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Instrumenty środowiskowe, klimatyczne, antyzanieczyszczeniowe, leśne i cyrkularne. Obok ustaw o restytucji i czystym powietrzu — negocjacje o plastiku, które nie są jeszcze traktatem.',
-    ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność — nie technologiczny optymizm. Wysokie ryzyko i raportowanie modeli granicznych; wycofana dyrektywa o odpowiedzialności jest ideą.',
+      'Klimat, zanieczyszczenia, lasy, ziemia i obieg zamknięty. Obok ustaw o restytucji i czystym powietrzu — negocjacje o plastiku, które nie są jeszcze traktatem.',
+    ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność systemów wysokiego ryzyka i granicznych. Wycofany tekst o odpowiedzialności jest ideą.',
     animals:
       'Handel dzikimi gatunkami, listy zagrożonych, sieci siedlisk, żywy amerykański projekt o korytarzach i jedna jasno oznaczona idea o parytecie umyślnego znęcania się nad zwierzęciem towarzyszącym. Najpierw prawo gatunków i siedlisk; karta o zwierzętach towarzyszących jest ideą, nie statutem.',
   },
@@ -266,28 +266,28 @@ const pagePl: LawPage = {
 const pageLv: LawPage = {
   metaTitle: 'Tiesības — Fix Planet',
   metaDescription:
-    'Kurēts reālu vides, MI drošības un savvaļas sugu likumu katalogs — spēkā esoši, izskatīšanā vai skaidri marķēti kā idejas — ar citātiem un avotiem.',
+    'Vides tiesības, MI drošība un savvaļas sugu aizsardzība: spēkā esoši teksti, izskatīšanā esoši projekti un priekšlikumi, kas marķēti kā idejas, ar citātiem.',
   categoryMetaTitle: {
     ecology: 'Ekoloģijas tiesības — Fix Planet',
     ai: 'MI tiesības — Fix Planet',
     animals: 'Dzīvnieku un dzīvotņu tiesības — Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Pieņemti, izskatīšanā un ierosināti likumi par klimatu, piesārņojumu, mežiem un aprites ekonomiku.',
-    ai: 'MI sistēmu drošība, risks, caurredzamība un atbildība — ne tehnoloģiju reklāma.',
-    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridoru likumprojekti un marķētas idejas — tostarp kompanjondzīvnieku priekšlikums, kas nav likums.',
+    ecology: 'Klimats, piesārņojums, meži un aprites ekonomika — pieņemti, izskatīšanā vai ierosināti akti.',
+    ai: 'MI sistēmu drošība, risks, caurredzamība un atbildība.',
+    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridoru likumprojekti un viena marķēta ideja par kompanjondzīvniekiem.',
   },
-  eyebrow: 'Statūtu plaukts',
+  eyebrow: 'Noteikumi dzīvajām sistēmām',
   title: 'Tiesības',
-  lead: 'Trīs plaukti ar noteikumiem, kas mēģina sargāt dzīvās sistēmas un ierobežot bīstamas mašīnas. Katrā kartītē: jurisdikcija, citāts, statuss un avots. Idejas ir marķētas kā idejas.',
+  lead: 'Vides likumi, noteikumi augsta riska MI un instrumenti, kas sargā savvaļas sugas un dzīvotnes. Katrā rakstā: jurisdikcija, citāts un tas, vai teksts ir spēkā, vēl izskatīšanā, vai tā ir tikai ideja.',
   honesty:
-    'Šis ir kurēts katalogs, ne enciklopēdija un ne juridiska konsultācija. «Spēkā» nozīmē, ka teksts darbojas. «Izskatīšanā» ir likumprojekts vai formālas sarunas, kas vēl nav likums. «Idejas» ir noderīgi priekšlikumi, kas nav spēkā, arī teksti, kas izgāja vienu palātu un nomira. Mēs neizdomājam statūtus, datumus un ietekmes statistiku.',
+    'Nav juridiska konsultācija. «Spēkā» nozīmē likumu, regulu vai līgumu, kas jau kādu saista. Idejas paliek idejas — arī projekti, kas izgāja vienu palātu un nomira.',
   filterAria: 'Izvēlies tiesību jomu',
   chooseCategory: 'Izvēlies jomu',
   tiles: {
-    ecology: 'Klimats, piesārņojums, meži, zeme un aprites ekonomika.',
+    ecology: 'Klimats, piesārņojums, meži, zeme, aprites ekonomika.',
     ai: 'Riska līmeņi, caurredzamība, augsta riska sistēmas, atbildība.',
-    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridori un viena marķēta ideja par kompanjondzīvniekiem.',
+    animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridori.',
   },
   cardCta: 'Lasīt rakstu →',
   back: '← Tiesības',
@@ -312,8 +312,8 @@ const pageLv: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Vides, klimata, piesārņojuma, mežu un aprites instrumenti. Blakus atjaunošanas un tīrā gaisa statūtiem — plastmasas sarunas, kas vēl nav līgums.',
-    ai: 'Drošība, risks, caurredzamība un atbildība — ne tehnoloģiju optimisms. Augsts risks un robežmodeļu ziņošana; atsaukta atbildības ideja ir ideja.',
+      'Klimats, piesārņojums, meži, zeme un aprites ekonomika. Blakus atjaunošanas un tīrā gaisa statūtiem — plastmasas sarunas, kas vēl nav līgums.',
+    ai: 'Drošība, risks, caurredzamība un atbildība augsta riska un robežsistēmām. Atsaukts atbildības teksts ir ideja.',
     animals:
       'Savvaļas tirdzniecība, apdraudēto saraksti, dzīvotņu tīkli, dzīvs ASV koridoru likumprojekts un viena skaidri marķēta ideja par tīšas cietsirdības pret kompanjondzīvnieku paritāti. Vispirms sugu un dzīvotņu tiesības; kompanjonu kartīte ir ideja, ne statūts.',
   },

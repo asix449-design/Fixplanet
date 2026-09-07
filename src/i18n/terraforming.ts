@@ -47,20 +47,20 @@ export type GeoPage = {
 const pageEn: GeoPage = {
   metaTitle: 'Terraforming — Fix Planet',
   metaDescription:
-    'A curated catalog of landscape megaprojects and a smaller shelf of climate-intervention proposals: what was planned, what was built, why it stalled, with sources.',
-  eyebrow: 'Failure archaeology',
+    'Canals, inland seas, and desert belts of trees: landscape megaprojects, plus a separate shelf of climate-intervention proposals, with sources.',
+  eyebrow: 'Remaking landscapes',
   title: 'Terraforming',
-  lead: 'This catalog is mostly landscape megaprojects — canals, inland seas, desert walls of trees — terraforming Earth at human scale. A smaller shelf holds climate geoengineering so those proposals stay labeled and apart.',
+  lead: 'Canals, inland seas, walls of trees: plans to remake Earth’s surface at the scale of a country or a basin. A smaller shelf holds climate-intervention proposals — solar and marine — kept apart so the terms do not mix.',
   honesty:
-    'Every card names a jurisdiction, years, a status, and sources. Status is proposed, partial, built and struggling, failed, ongoing, or research — not a pitch deck. We do not invent hectare counts, collapse dates, or “all the trees died on Tuesday.” Mixed evidence is written as mixed.',
+    'Each card names a jurisdiction, years, a status, and sources. Mixed results stay mixed.',
   naming:
-    'The catalog is called Terraforming because the cards are primarily Earth-transformation megaprojects. Climate geoengineering — solar and marine interventions — sits on its own shelf and is not sold as a ready fix.',
+    'The catalog is called Terraforming because the cards are primarily Earth-transformation megaprojects. Climate geoengineering sits on its own shelf.',
   filterAria: 'Filter projects by shelf',
   chooseShelf: 'Choose a shelf',
   tiles: {
-    water: 'Canals, river transfers, inland seas — water moved as if it were surplus.',
-    desert: 'Walls of trees, mega-planting, oasis agriculture — greening as a campaign.',
-    climate: 'SAI, ocean fertilization, cloud brightening — proposals and trials, not a thermostat.',
+    water: 'Canals, river transfers, inland seas.',
+    desert: 'Shelterbelts, mega-planting, oasis agriculture.',
+    climate: 'Solar and marine climate proposals, still research.',
   },
   all: 'All',
   cardCta: 'Read the card →',
@@ -82,13 +82,13 @@ const pageEn: GeoPage = {
     climate: 'Climate intervention',
   },
   shelfLeads: {
-    all: 'Landscape megaprojects first; climate interventions last and labelled. Every card is a real scheme with a sourced status.',
+    all: 'Landscape megaprojects first; climate interventions last, and labeled. Each card is a real scheme with a sourced status.',
     water:
-      'Canals, pumps, fossil aquifers and inland-sea dreams. Some pipes exist. Few of the climates they promised do.',
+      'Canals, pumps, fossil aquifers, and inland-sea dreams. Some pipes exist. Few of the climates they promised do.',
     desert:
-      'Shelterbelts and “green walls.” Count surviving cover and water cost, not seedlings in a press release.',
+      'Shelterbelts and green walls. Surviving cover and water cost matter more than seedlings in a press release.',
     climate:
-      'Research and contested outdoor trials. Not deployed planetary engineering. Not a substitute for cutting emissions.',
+      'Research and a few outdoor trials. Not deployed planetary engineering, and not a substitute for cutting emissions.',
   },
   status: {
     proposed: 'Proposed',
@@ -105,20 +105,20 @@ const pageEn: GeoPage = {
 const pageRu: GeoPage = {
   metaTitle: 'Терраформинг — Fix Planet',
   metaDescription:
-    'Каталог ландшафтных мегапроектов и отдельная полка климатических вмешательств: что планировали, что построили, почему застопорилось — с источниками.',
-  eyebrow: 'Археология провалов',
+    'Каналы, внутренние моря и лесные пояса в пустыне: ландшафтные мегапроекты и отдельная полка климатических вмешательств, с источниками.',
+  eyebrow: 'Переделка ландшафта',
   title: 'Терраформинг',
-  lead: 'Этот каталог в основном о ландшафтных мегапроектах: каналы, внутренние моря, стены деревьев — терраформинг Земли в человеческом масштабе. Климатическая геоинженерия стоит на отдельной полке, чтобы термины не смешивались.',
+  lead: 'Каналы, внутренние моря, стены деревьев: замыслы переделать поверхность Земли в масштабе страны или бассейна. Климатические вмешательства — солнечные и морские — стоят на отдельной полке, чтобы термины не смешивались.',
   honesty:
-    'На каждой карточке — юрисдикция, годы, статус и источники. Статус: предложен, частичный, построен и буксует, провален, идёт, исследование — не презентация для инвесторов. Мы не выдумываем гектары, даты «всё погибло» и мультяшный рок. Смешанные данные так и написаны.',
+    'На каждой карточке — юрисдикция, годы, статус и источники. Смешанные итоги так и написаны.',
   naming:
-    'Каталог называется «Терраформинг», потому что карточки — прежде всего мегапроекты преобразования ландшафта. Климатическая геоинженерия (солнечные и морские вмешательства) — отдельная полка и не продаётся как готовое решение.',
+    'Каталог называется «Терраформинг», потому что карточки — прежде всего мегапроекты преобразования ландшафта. Климатическая геоинженерия — отдельная полка.',
   filterAria: 'Фильтр проектов по полке',
   chooseShelf: 'Выберите полку',
   tiles: {
-    water: 'Каналы, переброски рек, внутренние моря — вода как будто лишняя.',
-    desert: 'Стены деревьев, мегапосадки, оазисное земледелие — озеленение как кампания.',
-    climate: 'SAI, удобрение океана, осветление облаков — опыты и проекты, не термостат.',
+    water: 'Каналы, переброски рек, внутренние моря.',
+    desert: 'Лесополосы, мегапосадки, оазисное земледелие.',
+    climate: 'Солнечные и морские климатические предложения, пока исследования.',
   },
   all: 'Все',
   cardCta: 'Читать карточку →',
@@ -144,9 +144,9 @@ const pageRu: GeoPage = {
     water:
       'Каналы, насосы, ископаемые водоносные горизонты и мечты о внутренних морях. Трубы иногда есть. Обещанного климата — почти нет.',
     desert:
-      'Лесополосы и «зелёные стены». Считайте живой покров и цену воды, а не саженцы в пресс-релизе.',
+      'Лесополосы и зелёные стены. Живой покров и цена воды значат больше, чем саженцы в пресс-релизе.',
     climate:
-      'Исследования и спорные полевые опыты. Не развёрнутая инженерия планеты. Не замена сокращению выбросов.',
+      'Исследования и несколько полевых опытов. Не развёрнутая инженерия планеты и не замена сокращению выбросов.',
   },
   status: {
     proposed: 'Предложен',
@@ -163,20 +163,20 @@ const pageRu: GeoPage = {
 const pagePl: GeoPage = {
   metaTitle: 'Terraformowanie — Fix Planet',
   metaDescription:
-    'Katalog megaprojektów krajobrazowych i osobna półka interwencji klimatycznych: co planowano, co zbudowano, dlaczego stanęło — ze źródłami.',
-  eyebrow: 'Archeologia porażek',
+    'Kanały, morza śródlądowe i pasy drzew na pustyni: megaprojekty krajobrazowe i osobna półka interwencji klimatycznych, ze źródłami.',
+  eyebrow: 'Przekształcanie krajobrazu',
   title: 'Terraformowanie',
-  lead: 'Ten katalog jest głównie o megaprojektach krajobrazowych: kanały, morza śródlądowe, mury drzew — terraformowanie Ziemi w skali człowieka. Geoinżynieria klimatu stoi na osobnej półce, żeby pojęć nie mieszać.',
+  lead: 'Kanały, morza śródlądowe, mury drzew: plany przebudowy powierzchni Ziemi w skali kraju albo basenu. Interwencje klimatyczne — słoneczne i morskie — stoją na osobnej półce, żeby pojęć nie mieszać.',
   honesty:
-    'Każda karta ma jurysdykcję, lata, status i źródła. Status: zaproponowany, częściowy, zbudowany i w tarapatach, nieudany, trwający albo badania — nie pitch. Nie zmyślamy hektarów ani daty, w której „wszystkie lasy padły”. Mieszane dowody zostają mieszane.',
+    'Każda karta ma jurysdykcję, lata, status i źródła. Mieszane wyniki zostają mieszane.',
   naming:
-    'Katalog nazywa się Terraformowanie, bo karty to przede wszystkim megaprojekty przekształcania Ziemi. Geoinżynieria klimatu — interwencje słoneczne i morskie — ma własną półkę i nie jest sprzedawana jako gotowa naprawa.',
+    'Katalog nazywa się Terraformowanie, bo karty to przede wszystkim megaprojekty przekształcania Ziemi. Geoinżynieria klimatu ma własną półkę.',
   filterAria: 'Filtruj projekty według półki',
   chooseShelf: 'Wybierz półkę',
   tiles: {
-    water: 'Kanały, przerzuty rzek, morza śródlądowe — woda traktowana jak nadwyżka.',
-    desert: 'Mury drzew, megasadzenie, rolnictwo oazowe — zazielenianie jako kampania.',
-    climate: 'SAI, nawożenie oceanu, rozjaśnianie chmur — próby i projekty, nie termostat.',
+    water: 'Kanały, przerzuty rzek, morza śródlądowe.',
+    desert: 'Pasy wiatrochronne, megasadzenie, rolnictwo oazowe.',
+    climate: 'Słoneczne i morskie propozycje klimatyczne, na razie badania.',
   },
   all: 'Wszystkie',
   cardCta: 'Czytaj kartę →',
@@ -202,9 +202,9 @@ const pagePl: GeoPage = {
     water:
       'Kanały, pompy, kopalne wodonośne i sny o morzach w głębi lądu. Rury czasem stoją. Klimat, który obiecywano — rzadko.',
     desert:
-      'Pasy wiatrochronne i „zielone mury”. Licz przetrwałą pokrywę i koszt wody, nie sadzonki z komunikatu.',
+      'Pasy wiatrochronne i zielone mury. Przetrwała pokrywa i koszt wody znaczą więcej niż sadzonki z komunikatu.',
     climate:
-      'Badania i sporne próby w terenie. Nie wdrożona inżynieria planety. Nie substytut cięcia emisji.',
+      'Badania i kilka prób w terenie. Nie wdrożona inżynieria planety i nie substytut cięcia emisji.',
   },
   status: {
     proposed: 'Zaproponowany',
@@ -221,20 +221,20 @@ const pagePl: GeoPage = {
 const pageLv: GeoPage = {
   metaTitle: 'Terraformēšana — Fix Planet',
   metaDescription:
-    'Kurēts ainavu megaprojektu katalogs un atsevišķs plaukts klimata iejaukšanās priekšlikumiem: kas tika plānots, kas uzbūvēts, kāpēc apstājās — ar avotiem.',
-  eyebrow: 'Izgāšanās arheoloģija',
+    'Kanāli, iekšzemes jūras un koku joslas tuksnesī: ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās priekšlikumiem, ar avotiem.',
+  eyebrow: 'Ainavas pārveidošana',
   title: 'Terraformēšana',
-  lead: 'Šis katalogs pārsvarā ir par ainavu megaprojektiem: kanāli, iekšzemes jūras, koku sienas — Zemes terraformēšana cilvēka mērogā. Klimata ģeoinženierija stāv atsevišķā plauktā, lai terminus nesajauktu.',
+  lead: 'Kanāli, iekšzemes jūras, koku sienas: plāni pārveidot Zemes virsmu valsts vai baseina mērogā. Klimata iejaukšanās — Saules un jūras — stāv atsevišķā plauktā, lai terminus nesajauktu.',
   honesty:
-    'Katrā kartītē ir jurisdikcija, gadi, statuss un avoti. Statuss: ierosināts, daļējs, uzbūvēts un buksē, izgāzies, notiek vai pētījums — ne investoru stāsts. Mēs neizdomājam hektārus un datumu, kad «visi koki nomira». Jaukti pierādījumi paliek jaukti.',
+    'Katrā kartītē ir jurisdikcija, gadi, statuss un avoti. Jaukti iznākumi paliek jaukti.',
   naming:
-    'Katalogs saucas Terraformēšana, jo kartītes ir vispirms Zemes pārveides megaprojekti. Klimata ģeoinženierija — Saules un okeāna iejaukšanās — ir savs plaukts un netiek pārdota kā gatavs risinājums.',
+    'Katalogs saucas Terraformēšana, jo kartītes ir vispirms Zemes pārveides megaprojekti. Klimata ģeoinženierija ir savs plaukts.',
   filterAria: 'Filtrēt projektus pēc plaukta',
   chooseShelf: 'Izvēlies plauktu',
   tiles: {
-    water: 'Kanāli, upju pārliešana, iekšzemes jūras — ūdens it kā būtu pārpalikums.',
-    desert: 'Koku sienas, milzu stādīšana, oāžu lauksaimniecība — apzaļumošana kā kampaņa.',
-    climate: 'SAI, okeāna mēslošana, mākoņu gaišināšana — mēģinājumi, ne termostats.',
+    water: 'Kanāli, upju pārliešana, iekšzemes jūras.',
+    desert: 'Vējiaizsargjoslas, milzu stādīšana, oāžu lauksaimniecība.',
+    climate: 'Saules un jūras klimata priekšlikumi, pagaidām pētījumi.',
   },
   all: 'Visi',
   cardCta: 'Lasīt kartīti →',
@@ -260,9 +260,9 @@ const pageLv: GeoPage = {
     water:
       'Kanāli, sūkņi, fosilie ūdensnesēji un sapņi par iekšzemes jūrām. Caurules reizēm ir. Solītais klimats — reti.',
     desert:
-      'Vējiaizsargjoslas un «zaļās sienas». Skaiti izdzīvojušo segumu un ūdens cenu, ne stādus paziņojumā.',
+      'Vējiaizsargjoslas un zaļās sienas. Izdzīvojušais segums un ūdens cena nozīmē vairāk nekā stādi paziņojumā.',
     climate:
-      'Pētījumi un strīdīgi lauka mēģinājumi. Ne ieviesta planētas inženierija. Ne emisiju samazināšanas aizstājējs.',
+      'Pētījumi un daži lauka mēģinājumi. Ne ieviesta planētas inženierija un ne emisiju samazināšanas aizstājējs.',
   },
   status: {
     proposed: 'Ierosināts',

@@ -3,14 +3,20 @@ import type { ForestsPage } from './forests';
 export const pl: ForestsPage = {
   metaTitle: 'Lasy — Fix Planet',
   metaDescription:
-    'Strona monitoringu lasów ze źródłami: kadry koron NASA od 2001, kilka rekonstrukcji, liczby FAO i GFW oraz scenariusze — nie fałszywy film z 12 000 lat.',
+    'Lasy: czym są, jak satelita widzi korony, rekonstrukcje dawnych krajobrazów i opublikowane liczby FAO oraz Global Forest Watch.',
+  eyebrow: 'Lasy Ziemi',
+  title: 'Lasy',
+  hubLead: [
+    'Las to ekosystem, w którym dominują drzewa. FAO traktuje las jako klasę użytkowania ziemi: około 4,14 miliarda hektarów, mniej więcej trzecia część lądów.',
+    'Lasy magazynują węgiel, uczestniczą w obiegu wody i dają schronienie większości gatunków lądowych. Poniżej: zieleń koron z kosmosu, kilka rekonstrukcji dawniejszych krajobrazów, opublikowane liczby i trzy ścieżki dalej. Każda mapa ma nazwany zbiór danych i datę.',
+  ],
   choosePanel: 'Wybierz półkę',
   filterAria: 'Działy Lasów',
   tiles: {
-    satellite: 'Lipcowa zieleń koron, 2001–2025. Żywe piksele strat — na GFW.',
-    history: 'Kilka rekonstrukcji. Grubo. Nie satelita. Luki opisane.',
-    numbers: 'Powierzchnia FAO, pierwotny tropik GFW, drzewa Crowthera — z datą.',
-    outlook: 'Długi widok, trzy ścieżki jeśli polityka trzyma albo puszcza, i co zadziałało.',
+    satellite: 'Lipcowa zieleń koron z kosmosu, 2001–2025.',
+    history: 'Roślinność epoki lodowej, biomy i ziemia po ludziach.',
+    numbers: 'Powierzchnia lasu FAO, tropikalna korona pierwotna, szacunek liczby drzew.',
+    outlook: 'Długi widok, lata, które da się zmierzyć, i trzy możliwe ścieżki.',
   },
   panels: {
     satellite: 'Epoka satelitarna',
@@ -19,17 +25,26 @@ export const pl: ForestsPage = {
     outlook: 'Trend i przyszłości',
   },
   leads: {
-    satellite:
-      'Główna kontrola: hostowany NASA MODIS NDVI za lipiec, 2001–2025. To zieleń koron, nie piksele Hansen. W tej skali rok wycinki jest niemal niewidoczny. Global Forest Watch to żywy przeglądarka 30 m.',
-    history:
-      'Druga półka: pięć rekonstrukcji / szacunków — roślinność epoki lodowej, płyta biomów klimatu niedawnego, potem antromy Ellis dla 1700, 1900 i 2000. Nauka nie ma ciągłej mapy hektarów od 10 000 p.n.e.',
-    numbers:
-      'Przybliżone liczby z nazwanym źródłem i rocznikiem. Las FAO to klasa użytkowania ziemi. GFW/Hansen to korona 30 m. Nie dodawaj ich do jednej fałszywej sumy.',
-    outlook:
-      'Gruby pasek holoceński, precyzyjniejsze spojrzenie satelitarne i trzy ścieżki — nie jedno „lasy znikną w DACIE”. Pożar borealny to nie to samo co tropikalna zamiana w pole.',
+    satellite: [
+      'Korona lasu to zwarty okap liści i igieł. Satelity nie liczą hektarów FAO: mierzą, jak zielona jest powierzchnia. NDVI to ten indeks zieleni z odbitego światła.',
+      'Na mapie świata widać pasma lasów deszczowych i tajgi. Rok wycinki w tej skali jest niemal niewidoczny. Ubytek pokrywy drzewnej w kroku około 30 metrów jest na Global Forest Watch.',
+      'Mapy to NASA MODIS Terra NDVI za lipiec, 2001–2025.',
+    ],
+    history: [
+      'Przed epoką satelitarną powierzchnię lasu odtwarza się z pyłków, modeli klimatu i map użytkowania ziemi. Nie ma ciągłego spisu hektarów od 10 000 p.n.e.',
+      'Pięć płyt: roślinność ostatniego maksimum lodowcowego, mapa biomów przy niedawnym klimacie oraz antromy Ellis — biomy ukształtowane przez ludzi — dla 1700, 1900 i 2000.',
+    ],
+    numbers: [
+      'Kilka opublikowanych wielkości, każda z nazwanym źródłem i rokiem. Las FAO to użytkowanie ziemi. Hansen / Global Forest Watch to korona w kroku 30 metrów. Crowther 2015 to liczba drzew. To różne pomiary; nie dodaje się ich do jednej sumy.',
+    ],
+    outlook: [
+      'W holocenie dziki las się skurczył: rosły uprawy, pastwiska i osiedla. Po 2000 roku zapis satelitarny jest ciaśniejszy. Tropikalna zamiana lasu pierwotnego to nie to samo co pożar borealny, i żadne z tego nie jest datą, kiedy „lasy się skończą”.',
+    ],
   },
-  honesty:
-    'Nie ma uczciwej ciągłej mapy lasów rok po roku od 10 000 p.n.e. Pyłki, modele i antromy to rekonstrukcje. Ubytek koron klasy Landsat zaczyna się około 2000. Hostujemy kilka legalnych kadrów i odsyłamy do Global Forest Watch po żywą warstwę Hansen/UMD.',
+  honestySatellite:
+    'NASA MODIS Terra NDVI, lipiec. Zieleń koron, nie piksele Hansena. Interaktywna mapa 30 m: Global Forest Watch.',
+  honestyReconstruction:
+    'Rekonstrukcje i szacunki, nie korona satelitarna. Pyłki, modele i antromy — każda płyta ma własną legendę.',
   modeSatellite: 'Satelita',
   modeReconstruction: 'Rekonstrukcja',
   fidelitySatellite: 'Satelita · zieleń koron',
@@ -39,33 +54,33 @@ export const pl: ForestsPage = {
   eraLabel: 'Epoka',
   openGfw: 'Otwórz Global Forest Watch →',
   gfwNote:
-    'Ubytek pokrywy drzewnej Hansen / GLAD University of Maryland, ~30 m, 2001–dziś. Tych pikseli nie hostujemy. Ubytek obejmuje pożar, leśnictwo i konwersję — nie tylko trwałe wylesienie.',
+    'Ubytek pokrywy drzewnej Hansen / GLAD University of Maryland, około 30 m, od 2001, na Global Forest Watch. Ubytek obejmuje pożar, leśnictwo i konwersję — nie tylko trwałe wylesienie.',
   sourceLabel: 'Źródło',
   licenseLabel: 'Licencja',
   vintageLabel: 'Rocznik',
   howToRead:
-    'Zieleń to więcej roślinności w lipcu. Czerń to woda. Beż to sucho albo goło. Porównuj pasma (Amazonia, Kongo, Sundaland, tajga), nie jeden piksel. Płyty rekonstrukcji mają własne legendy — antromy to klasy ludzi i użytkowania ziemi, nie „procent drzew”.',
+    'Zieleń to więcej roślinności w lipcu. Czerń to woda. Beż to sucho albo goło. Porównuj pasma — Amazonię, Kongo, Sundaland, tajgę — nie jeden piksel. Płyty rekonstrukcji mają własne legendy: antromy to klasy ludzi i użytkowania ziemi, nie „procent drzew”.',
   caveats:
-    'NDVI to nie powierzchnia lasu i nie las pierwotny. Uprawy i mokre lata też są zielone. Lipiec sprzyja latu na północy. Różnica rok do roku przy 2400 px jest mala: to limit kadru, nie dowód, że nic nie wycięto. LGM to ~18 000 lat temu, nie 10 000 p.n.e. Płyta biomów to analog niedawnego klimatu — w środkowym holocenie Sahara bywała bardziej zielona.',
-  distinguishTitle: 'Borealny to nie tropikalny. Pierwotny to nie plantacja.',
+    'NDVI to nie powierzchnia lasu i nie las pierwotny. Uprawy i mokre lata też są zielone. Lipiec sprzyja latu na północy, więc różnica rok do roku w tej rozdzielczości jest mała. Ostatnie maksimum lodowcowe to około 18 000 lat temu, starsze i zimniejsze niż 10 000 p.n.e. Płyta biomów to analog niedawnego klimatu; w środkowym holocenie Sahara bywała bardziej zielona.',
+  distinguishTitle: 'Las borealny to nie las tropikalny. Las pierwotny to nie plantacja.',
   distinguish:
     'Około 45 procent lasu FAO jest tropikalne; reszta to głównie borealny i umiarkowany (FRA 2025). Straty borealne to często pożar, owady albo wyrąb, po których las w sensie FAO może wrócić. Tropikalna strata lasu pierwotnego to zwykle konwersja — stary las nie wraca jako ten sam ekosystem, jeśli zastąpi go soja albo palma. Las wtórny i plantacje mogą podnieść „powierzchnię lasu”, gdy pierwotna spada. Strata netto FAO (4,12 mln ha/rok, 2015–2025) odejmuje przyrost od wylesienia (10,9 mln ha/rok). Liczby GFW za 2024 (6,7 mln ha) i 2025 (4,3 mln ha) stoją na innej definicji. Żaden szereg nie mówi „wszystkie lasy znikną w kalendarzową datę”.',
   numbersNote:
-    'Liczby poniżej skopiowano z nazwanych publikacji. Nie interpolowaliśmy holoceńskiego spisu hektarów. Crowther 2015 to szacunek liczby drzew (ok. 46 procent mniej niż projekcja historycznej pokrywy UNEP), nie powierzchnia lasu FAO.',
-  trendTitle: 'Długi widok, potem lata, które naprawdę umiemy zmierzyć',
+    'Skopiowane z cytowanych publikacji, z rocznikiem. Powierzchnia lasu FAO to nie korona Hansena; Crowther 2015 to liczba drzew, nie hektary.',
+  trendTitle: 'Długi widok, potem lata, które da się zmierzyć',
   trendLead:
-    'Wykres Ellis 12K to rekonstrukcja antromów — ziemie dzikie, kulturowe i intensywne — od 10 000 p.n.e. do 2017. To nie hektary FAO. Po 2000 liczby satelitarne są ciaśniejsze i nadal nie są jednym losem.',
+    'Wykres Ellis 12K odtwarza antromy — ziemie dzikie, kulturowe i intensywne — od 10 000 p.n.e. do 2017. To nie hektary FAO. Po 2000 liczby satelitarne są ciaśniejsze.',
   longViewCaption:
     'Erle Ellis, Anthromes 12K DGG v1, za Ellis et al. 2021, PNAS. CC BY 2.0. Mapa to ok. 2017; słupki to długa rekonstrukcja. Dzikie lasy się kurczą; uprawy, pastwiska i osiedla rosną. Celowo grubo.',
   longViewAlt:
     'Mapa antromów świata na 2017 nad słupkowym paskiem ziem dzikich, kulturowych i intensywnych od 10 000 p.n.e. do 2017',
   scenarioTitle: 'Ścieżki, nie destinacja',
   scenarioLead:
-    'Jeśli utrzyma się zeszłoroczne tempo, tropikalny las pierwotny dalej się kurczy. To ścieżka, nie proroctwo, i nie „zero lasu w DACIE”. Spokojniejszy rok pożarów albo prawdziwe moratorium mogą wygiąć linię w drugą stronę — 2025 już to zrobił, raz.',
+    'Jeśli utrzyma się niedawne tempo strat tropikalnego lasu pierwotnego, ten las dalej się kurczy. Spokojniejszy rok pożarów albo prawdziwe moratorium mogą odwrócić tendencję — 2025 już to zrobił, raz. Żadna ścieżka nie jest datą, kiedy las znika.',
   scenarios: {
     continued: {
       title: 'Jeśli utrzyma się niedawne pasmo strat pierwotnych tropików',
-      text: 'Strata wilgotnego tropikalnego lasu pierwotnego UMD/GFW: 6,7 mln ha w 2024 (rekord pożarowy) i 4,3 mln ha w 2025 (o 36 procent mniej, wciąż ok. 46 procent powyżej dekady wcześniej). Jeśli pasmo 4–7 mln ha/rok zostanie, pozostałe pierwotne wilgotne tropiki dalej się wykruszają. Nie zamieniamy tego w datę końca: pozostały zapas pierwotny GFW nie jest tu opublikowany, a borealny las FAO to inna księga.',
+      text: 'Strata wilgotnego tropikalnego lasu pierwotnego UMD/GFW: 6,7 mln ha w 2024 (rekord pożarowy) i 4,3 mln ha w 2025 (o 36 procent mniej, wciąż ok. 46 procent powyżej dekady wcześniej). Jeśli pasmo 4–7 mln ha/rok zostanie, pozostałe pierwotne wilgotne tropiki dalej się kurczą. Pozostały zapas pierwotny GFW nie jest tu opublikowany; borealny las FAO to inna księga.',
     },
     slower: {
       title: 'Jeśli polityka i ogień są trzymane',
@@ -78,7 +93,7 @@ export const pl: ForestsPage = {
   },
   worksTitle: 'Co przesunęło linię',
   worksLead:
-    'Nie hasła. Krótkie, źródłowe przypomnienia: strata to wybór, nie pogoda.',
+    'Strata to nie tylko pogoda. Reguły towarów, egzekwowanie pożarów, tytuły do ziemi i parki już przesuwały sumy w nazwanych latach.',
   works: {
     soy: {
       title: 'Moratorium sojowe w Amazonii',
@@ -97,10 +112,8 @@ export const pl: ForestsPage = {
       text: 'FRA 2025: ok. 813 mln ha lasu — 20 procent — w prawnie ustanowionych obszarach chronionych (+251 mln ha od 1990). Parki na papierze bywają. Parki, które trzymają, też. Ochrona to jedno narzędzie obok reguł towarów i straży pożarnej.',
     },
   },
-  mapsLink: 'W sali Map jest też schemat Hansen/GFW znanych frontierów strat.',
+  mapsLink: 'W sali Map jest też schemat Hansen / Global Forest Watch znanych frontierów strat.',
   mapsLinkCta: 'Otwórz kartę ubytku pokrywy leśnej →',
-  addFrame:
-    'Aby dodać rok: wrzuć lipcowy JPEG NDVI NASA Worldview do public/images/forests/, dopisz wiersz w src/data/forests.ts, ten sam id w czterech plikach locale i credits.json. Komentarz jest na górze src/data/forests.ts.',
   units: {
     billionHa: 'mld ha',
     millionHa: 'mln ha',
@@ -112,7 +125,7 @@ export const pl: ForestsPage = {
       label: '2001',
       title: 'Zieleń koron, lipiec 2001',
       caption:
-        'Pierwszy pełny lipiec MODIS Terra NDVI, który hostujemy. Zielone pasma to roślinność, nie spis powierzchni lasu. Roczny ubytek Hansen/UMD zaczyna się w 2001 — piksele na GFW.',
+        'Pierwszy pełny lipiec MODIS Terra NDVI na tej stronie. Zielone pasma to roślinność, nie spis powierzchni lasu. Roczny ubytek Hansen/UMD zaczyna się w 2001 — piksele na Global Forest Watch.',
       imageAlt:
         'Prostokątna mapa świata, lipiec 2001: zielona roślinność na czarnych oceanach, beżowe pustynie',
     },
@@ -160,7 +173,7 @@ export const pl: ForestsPage = {
       label: '2025',
       title: 'Zieleń koron, lipiec 2025',
       caption:
-        'Najnowszy lipcowy kadr, który hostujemy. GFW/UMD: strata pierwotna tropików spadła do 4,3 mln ha; globalny ubytek pokrywy drzewnej ok. 25,5 mln ha (42 procent pożar). To nie „planeta uratowana” — spokojniejszy rok po skoku.',
+        'Najnowszy lipcowy kadr na tej stronie. GFW/UMD: strata pierwotna tropików spadła do 4,3 mln ha; globalny ubytek pokrywy drzewnej ok. 25,5 mln ha (42 procent pożar). Spokojniejszy rok po skoku, nie „planeta uratowana”.',
       imageAlt:
         'Prostokątna mapa świata, lipiec 2025: zielona roślinność na czarnych oceanach, beżowe pustynie',
     },
@@ -176,7 +189,7 @@ export const pl: ForestsPage = {
       label: 'Płyta biomów',
       title: 'Potencjalne biomy (klimat niedawny)',
       caption:
-        'Szacunek / analog — nie datowana mapa pyłkowa środkowego holocenu. Zestawiona płyta biomów Ville Koistinena (CC BY-SA). Przydatna jako „gdzie las może żyć w niedawnym klimacie”. Środkowy holocen (~6000 lat temu) często miał zieleńszą Saharę; ten rysunek tego nie pokazuje. Rastra BIOME 6000 nie hostujemy.',
+        'Szacunek / analog — nie datowana mapa pyłkowa środkowego holocenu. Zestawiona płyta biomów Ville Koistinena (CC BY-SA). Przydatna jako „gdzie las może żyć w niedawnym klimacie”. Środkowy holocen (~6000 lat temu) często miał zieleńszą Saharę; ten rysunek tego nie pokazuje.',
       imageAlt:
         'Kolorowa mapa biomów świata: tajga, las liściasty, las tropikalny, pustynie i sawanny',
     },
@@ -200,7 +213,7 @@ export const pl: ForestsPage = {
       label: '2000',
       title: 'Antromy, 2000',
       caption:
-        'Ellis / SEDAC v2 u progu epoki satelitarnej. Intensywne antromy pokrywają znaczną część zamieszkałego lądu. Porównaj z półką NASA NDVI — inna legenda, inna uczciwość.',
+        'Ellis / SEDAC v2 u progu epoki satelitarnej. Intensywne antromy pokrywają znaczną część zamieszkałego lądu. Porównaj z półką NASA NDVI: inna legenda, inna wielkość.',
       imageAlt:
         'Mapa Robinsona antromów 2000: rozległe uprawy, pastwiska i osiedla',
     },

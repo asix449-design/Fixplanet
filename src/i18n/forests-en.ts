@@ -3,14 +3,20 @@ import type { ForestsPage } from './forests';
 export const en: ForestsPage = {
   metaTitle: 'Forests — Fix Planet',
   metaDescription:
-    'A sourced forest-monitoring page: NASA canopy frames from 2001 to now, a few reconstruction snapshots, FAO and GFW numbers, and scenarios — not a fake 12,000-year movie.',
+    'Forests: what they are, how satellites see the canopy, reconstructions of older landscapes, and published figures from FAO and Global Forest Watch.',
+  eyebrow: 'Earth’s forests',
+  title: 'Forests',
+  hubLead: [
+    'A forest is an ecosystem dominated by trees. FAO treats forest as a land-use class: about 4.14 billion hectares, roughly a third of the world’s land.',
+    'Forests store carbon, cycle water, and hold most terrestrial species. The shelves below show canopy greenness from space, a few reconstructions of older landscapes, published numbers, and three paths ahead. Each map has a named dataset and a date.',
+  ],
   choosePanel: 'Choose a shelf',
   filterAria: 'Forests sections',
   tiles: {
-    satellite: 'July canopy greenness, 2001–2025. Open GFW for 30 m loss pixels.',
-    history: 'A few reconstruction plates. Coarse. Not satellite. Gaps labeled.',
-    numbers: 'FAO area, GFW tropical primary, Crowther tree-count — each dated.',
-    outlook: 'Long view, three paths if policy holds or slips, and what has worked.',
+    satellite: 'July canopy greenness from space, 2001–2025.',
+    history: 'Ice-age vegetation, biomes, and land after people.',
+    numbers: 'FAO forest area, tropical primary canopy, a tree-count estimate.',
+    outlook: 'The long view, the years we can measure, and three possible paths.',
   },
   panels: {
     satellite: 'Satellite era',
@@ -19,17 +25,26 @@ export const en: ForestsPage = {
     outlook: 'Trend and futures',
   },
   leads: {
-    satellite:
-      'Primary control: hosted NASA MODIS NDVI for July, 2001–2025. This is canopy greenness, not Hansen tree-cover-loss pixels. At this scale a year of clearing is almost invisible. Global Forest Watch is the live 30 m explorer.',
-    history:
-      'Secondary shelf: five reconstruction / estimate plates — ice-age vegetation, a modern-climate biome plate, then Ellis anthromes for 1700, 1900, and 2000. Science does not have a continuous hectare map from 10,000 BCE.',
-    numbers:
-      'Approximate figures with a named source and vintage. FAO forest is a land-use class. GFW/Hansen is 30 m canopy. Do not add them into one fake total.',
-    outlook:
-      'A coarse Holocene strip, a precise satellite-era glance, and three paths — not a single “forests gone on DATE.” Boreal fire is not the same as tropical conversion.',
+    satellite: [
+      'The forest canopy is the closed layer of leaves and needles. Satellites do not count FAO hectares; they measure how green the surface is. NDVI is that greenness, derived from reflected light.',
+      'On a world map the tropical and boreal belts stand out. A single year of clearing is almost invisible at this scale. Tree-cover loss at about 30 metres is on Global Forest Watch.',
+      'The maps are NASA MODIS Terra NDVI for July, 2001–2025.',
+    ],
+    history: [
+      'Before the satellite era, forest extent is reconstructed: pollen, climate models, and maps of how people used land. There is no continuous hectare census from 10,000 BCE.',
+      'Five plates: vegetation at the last glacial maximum, a map of biomes under a recent climate, and Ellis anthromes — human-shaped biomes — for 1700, 1900, and 2000.',
+    ],
+    numbers: [
+      'A few published figures, each with a named source and year. FAO forest is land use. Hansen / Global Forest Watch is 30-metre canopy. Crowther 2015 is a count of trees. They are different measurements and should not be added into one total.',
+    ],
+    outlook: [
+      'Wild woodland has shrunk over the Holocene as cropland, pasture, and settlements grew. After 2000 the satellite record is tighter. Tropical primary conversion is not the same as boreal fire, and neither is a calendar date when “the forests end.”',
+    ],
   },
-  honesty:
-    'There is no honest continuous year-by-year global forest map from 10,000 BCE. Pollen, models, and anthromes are reconstructions. Landsat-class canopy loss begins around 2000. We host a few legal frames and send you to Global Forest Watch for the live Hansen/UMD layer.',
+  honestySatellite:
+    'NASA MODIS Terra NDVI, July. Canopy greenness, not Hansen tree-cover-loss pixels. Live 30 m explorer: Global Forest Watch.',
+  honestyReconstruction:
+    'Reconstructions and estimates, not satellite canopy. Pollen, models, and anthromes — each plate has its own legend.',
   modeSatellite: 'Satellite',
   modeReconstruction: 'Reconstruction',
   fidelitySatellite: 'Satellite · canopy greenness',
@@ -39,33 +54,33 @@ export const en: ForestsPage = {
   eraLabel: 'Era',
   openGfw: 'Open Global Forest Watch →',
   gfwNote:
-    'Hansen / University of Maryland GLAD tree-cover loss, ~30 m, 2001–present. We do not host those pixels. Loss includes fire, forestry, and conversion — not only permanent deforestation.',
+    'Hansen / University of Maryland GLAD tree-cover loss, about 30 m, 2001–present, on Global Forest Watch. Loss includes fire, forestry, and conversion — not only permanent deforestation.',
   sourceLabel: 'Source',
   licenseLabel: 'License',
   vintageLabel: 'Vintage',
   howToRead:
-    'Green is more vegetation in July. Black water. Tan is dry or bare. Compare belts (Amazon, Congo, Sundaland, boreal), not a single pixel. Reconstruction plates use their own legends — anthromes are people-and-land-use classes, not “percent trees.”',
+    'Green is more vegetation in July. Black is water. Tan is dry or bare. Compare belts — Amazon, Congo, Sundaland, boreal — not a single pixel. Reconstruction plates use their own legends: anthromes are classes of people and land use, not “percent trees.”',
   caveats:
-    'NDVI is not forest area and not primary forest. Crops and wet years look green. July favors the northern summer. Year-to-year difference at 2400 px is tiny; that is a limit of the frame, not proof that nothing was cut. LGM is ~18,000 years ago, not 10,000 BCE. The biome plate is a recent-climate analogue — mid-Holocene Sahara was often greener than it shows.',
-  distinguishTitle: 'Boreal is not tropical. Primary is not a plantation.',
+    'NDVI is not forest area and not primary forest. Crops and wet years also look green. July favors the northern summer, so year-to-year change at this resolution is small. The last glacial maximum is about 18,000 years ago, older and colder than 10,000 BCE. The biome plate is a recent-climate analogue; the mid-Holocene Sahara was often greener than it shows.',
+  distinguishTitle: 'Boreal forest is not tropical forest. Primary forest is not a plantation.',
   distinguish:
     'About 45 percent of FAO forest is tropical; the rest is mostly boreal and temperate (FRA 2025). Boreal loss is often fire, insects, or logging that can regrow as forest in FAO’s land-use sense. Tropical primary loss is usually conversion — the old forest does not come back as the same ecosystem if a soy field or oil-palm stand replaces it. Secondary forest and plantations can raise “forest area” while primary area falls. FAO net loss (4.12 million ha/year, 2015–2025) subtracts expansion from deforestation (10.9 million ha/year). GFW’s 2024 tropical primary figure (6.7 million ha) and 2025 drop (4.3 million ha) sit on a different definition. Neither series says “all forests vanish on a calendar date.”',
   numbersNote:
-    'Figures below are copied from the named publications. We did not interpolate a Holocene hectare census. Crowther 2015 is a tree-count estimate (~46 percent fewer trees than a UNEP historic-cover projection), not FAO forest area.',
-  trendTitle: 'Long view, then the years we can actually measure',
+    'Copied from the cited publications, with vintage. FAO forest area is not Hansen canopy; Crowther 2015 is a tree count, not hectares.',
+  trendTitle: 'Long view, then the years we can measure',
   trendLead:
-    'The Ellis 12K chart is a reconstruction of anthromes — wild, cultured, and intensive land — from 10,000 BCE to 2017. It is not FAO hectares. After 2000 the satellite numbers are tighter, and still not one fate.',
+    'The Ellis 12K chart reconstructs anthromes — wild, cultured, and intensive land — from 10,000 BCE to 2017. It is not FAO hectares. After 2000 the satellite figures are tighter.',
   longViewCaption:
     'Erle Ellis, Anthromes 12K DGG v1, after Ellis et al. 2021, PNAS. CC BY 2.0. Map face is ~2017; the stacked strip is the long reconstruction. Wild woodland shrinks; cropland, rangeland, and settlements grow. Coarse on purpose.',
   longViewAlt:
     'World anthrome map for 2017 above a stacked timeline of wild, cultured, and intensive land from 10,000 BCE to 2017',
   scenarioTitle: 'Paths, not fate',
   scenarioLead:
-    'If last year’s rate continues, tropical primary forest keeps shrinking. That is a path, not a prophecy, and it is not “zero forest on DATE.” A quieter fire year or a real moratorium can bend the line the other way — 2025 already did, once.',
+    'If the recent rate of tropical primary loss continues, that forest keeps shrinking. A quieter fire year or a real moratorium can bend the line the other way — 2025 already did, once. Neither path is a date when forest disappears.',
   scenarios: {
     continued: {
       title: 'If the recent tropical-primary band holds',
-      text: 'UMD/GFW humid-tropical primary loss was 6.7 million ha in 2024 (fire-heavy record) and 4.3 million ha in 2025 (36 percent lower, still about 46 percent above a decade earlier). If a 4–7 million ha/year band persists, the remaining primary humid tropics keep eroding. We do not convert that into a doomsday date: remaining primary area is not a single published GFW stock on this page, and boreal FAO forest is a different ledger.',
+      text: 'UMD/GFW humid-tropical primary loss was 6.7 million ha in 2024 (a fire-heavy record) and 4.3 million ha in 2025 (36 percent lower, still about 46 percent above a decade earlier). If a 4–7 million ha/year band persists, remaining primary humid tropics keep shrinking. Remaining primary area is not a single published GFW stock on this page; boreal FAO forest is a different ledger.',
     },
     slower: {
       title: 'If policy and fire management hold',
@@ -78,7 +93,7 @@ export const en: ForestsPage = {
   },
   worksTitle: 'What has moved the line',
   worksLead:
-    'Not slogans. Short, sourced reminders that loss is a choice, not weather.',
+    'Loss is not only weather. Commodity rules, fire enforcement, tenure, and parks have shifted the totals in named years.',
   works: {
     soy: {
       title: 'Amazon soy moratorium',
@@ -97,10 +112,8 @@ export const en: ForestsPage = {
       text: 'FRA 2025: about 813 million ha of forest — 20 percent — sits in legally established protected areas (+251 million ha since 1990). Paper parks exist. So do parks that hold. Protection is one tool next to commodity rules and fire crews.',
     },
   },
-  mapsLink: 'The Maps room also keeps a Hansen/GFW schematic of well-known loss frontiers.',
+  mapsLink: 'The Maps room also keeps a Hansen / Global Forest Watch schematic of well-known loss frontiers.',
   mapsLinkCta: 'Open the forest-cover-loss card →',
-  addFrame:
-    'To add a year: drop a NASA Worldview NDVI July JPEG in public/images/forests/, append a row in src/data/forests.ts, add the same id in all four forests locale files, and record credits.json. See the comment at the top of src/data/forests.ts.',
   units: {
     billionHa: 'billion ha',
     millionHa: 'million ha',
@@ -112,7 +125,7 @@ export const en: ForestsPage = {
       label: '2001',
       title: 'July 2001 canopy greenness',
       caption:
-        'First full northern-summer MODIS Terra NDVI month we host. Green belts are vegetation, not a forest-area census. Hansen/UMD annual loss starts in 2001 — open GFW for those pixels.',
+        'First full northern-summer MODIS Terra NDVI month on this page. Green belts are vegetation, not a forest-area census. Hansen/UMD annual loss starts in 2001 — those pixels are on Global Forest Watch.',
       imageAlt:
         'Equirectangular world map, July 2001: green vegetation on black oceans, tan deserts',
     },
@@ -160,7 +173,7 @@ export const en: ForestsPage = {
       label: '2025',
       title: 'July 2025 canopy greenness',
       caption:
-        'Latest July frame we host. GFW/UMD: tropical primary loss fell to 4.3 million ha in 2025; global tree-cover loss about 25.5 million ha (42 percent fire). Still not a “saved” planet — a quieter year after a spike.',
+        'Latest July frame on this page. GFW/UMD: tropical primary loss fell to 4.3 million ha in 2025; global tree-cover loss about 25.5 million ha (42 percent fire). A quieter year after a spike, not a “saved” planet.',
       imageAlt:
         'Equirectangular world map, July 2025: green vegetation on black oceans, tan deserts',
     },
@@ -176,7 +189,7 @@ export const en: ForestsPage = {
       label: 'Biome plate',
       title: 'Potential biomes (recent climate)',
       caption:
-        'Estimate / analogue — not a dated mid-Holocene pollen map. Ville Koistinen’s compiled biome plate (CC BY-SA). Useful for “where forest can live under a recent climate.” Mid-Holocene (~6,000 years ago) often had a greener Sahara and shifted forest limits; this drawing does not show that. We do not host a BIOME 6000 site map as a global raster.',
+        'Estimate / analogue — not a dated mid-Holocene pollen map. Ville Koistinen’s compiled biome plate (CC BY-SA). Useful for where forest can live under a recent climate. Mid-Holocene (~6,000 years ago) often had a greener Sahara and shifted forest limits; this drawing does not show that.',
       imageAlt:
         'Color-coded world biome map: taiga, temperate forest, tropical rainforest, deserts and savannas',
     },
@@ -200,7 +213,7 @@ export const en: ForestsPage = {
       label: '2000',
       title: 'Anthromes, 2000',
       caption:
-        'Ellis / SEDAC v2 at the door of the satellite era. Intensive anthromes cover much of the habitable land. Compare with the NASA NDVI shelf — different legend, different honesty.',
+        'Ellis / SEDAC v2 at the door of the satellite era. Intensive anthromes cover much of the habitable land. Compare with the NASA NDVI shelf: different legend, different quantity.',
       imageAlt:
         'Robinson map of 2000 anthropogenic biomes: widespread cropland, rangeland, and settlements',
     },

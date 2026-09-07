@@ -16,12 +16,16 @@ import { ru } from './forests-ru';
 export type ForestsPage = {
   metaTitle: string;
   metaDescription: string;
+  eyebrow: string;
+  title: string;
+  hubLead: string[];
   choosePanel: string;
   filterAria: string;
   tiles: Record<ForestPanel, string>;
   panels: Record<ForestPanel, string>;
-  leads: Record<ForestPanel, string>;
-  honesty: string;
+  leads: Record<ForestPanel, string[]>;
+  honestySatellite: string;
+  honestyReconstruction: string;
   modeSatellite: string;
   modeReconstruction: string;
   fidelitySatellite: string;
@@ -51,7 +55,6 @@ export type ForestsPage = {
   works: Record<'soy' | 'indonesia' | 'indigenous' | 'protected', { title: string; text: string }>;
   mapsLink: string;
   mapsLinkCta: string;
-  addFrame: string;
   units: Record<'billionHa' | 'millionHa' | 'millionHaYear' | 'percent', string>;
   frames: Record<string, ForestFrameCopy>;
   stats: Record<string, ForestStatCopy>;

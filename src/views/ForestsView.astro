@@ -71,13 +71,26 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
     }
   </SectionHub>
 
-  <section class="section section-hub-follow" id="satellite" data-forest-panel="satellite">
+  <section class="section section-hub-follow" id="forests-intro">
+    <div class="wrap">
+      <div class="wildlife-copy-card forests-panel oceans-hub-intro">
+        <div class="eyebrow forests-eyebrow">{page.eyebrow}</div>
+        <h2>{page.title}</h2>
+        <div class="encyc-lede">
+          {page.hubLead.map((para) => <p>{para}</p>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="satellite" data-forest-panel="satellite">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.satellite}</div>
         <h2>{page.panels.satellite}</h2>
-        <p class="wildlife-tab-lead">{page.leads.satellite}</p>
-        <p class="borders-honesty">{page.honesty}</p>
+        <div class="encyc-lede">
+          {page.leads.satellite.map((para) => <p>{para}</p>)}
+        </div>
 
         <div class="forest-map" data-forest-map>
           <div class="forest-mode" role="tablist" aria-label={page.scrubberAria}>
@@ -101,6 +114,8 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
               {initialSatellite.sourceOrg}. {page.vintageLabel}: {initialSatellite.vintage}.
             </figcaption>
           </figure>
+
+          <p class="source-note" data-forest-source-note>{page.honestySatellite}</p>
 
           <div class="forest-map-meta">
             <span class="pill" data-forest-fidelity>{page.fidelitySatellite}</span>
@@ -174,7 +189,9 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       <div class="wildlife-copy-card forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.history}</div>
         <h2>{page.panels.history}</h2>
-        <p class="wildlife-tab-lead">{page.leads.history}</p>
+        <div class="encyc-lede">
+          {page.leads.history.map((para) => <p>{para}</p>)}
+        </div>
         <div class="forest-recon-grid">
           {
             reconstructionFrames.map((frame) => (
@@ -217,8 +234,10 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       <div class="wildlife-list-panel forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
         <h2>{page.panels.numbers}</h2>
-        <p class="wildlife-tab-lead">{page.leads.numbers}</p>
-        <p class="borders-honesty">{page.numbersNote}</p>
+        <div class="encyc-lede">
+          {page.leads.numbers.map((para) => <p>{para}</p>)}
+        </div>
+        <p class="source-note">{page.numbersNote}</p>
         <div class="forest-stat-grid">
           {
             stats.map((stat) => (
@@ -291,7 +310,9 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
             <span class="forest-path forest-path-good"></span>
           </div>
         </div>
-        <p class="wildlife-tab-lead">{page.leads.outlook}</p>
+        <div class="encyc-lede">
+          {page.leads.outlook.map((para) => <p>{para}</p>)}
+        </div>
 
         <h3>{page.scenarioTitle}</h3>
         <p>{page.scenarioLead}</p>
@@ -324,7 +345,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
           {' '}
           <a href={localizePath('/maps/forest-cover-loss', locale)}>{page.mapsLinkCta}</a>
         </p>
-        <p class="wildlife-sources">{page.addFrame}</p>
       </div>
     </div>
   </section>
@@ -344,6 +364,8 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
     eraLabel: page.eraLabel,
     vintageLabel: page.vintageLabel,
     licenseLabel: page.licenseLabel,
+    honestySatellite: page.honestySatellite,
+    honestyReconstruction: page.honestyReconstruction,
     srcPrefix: '/images/forests/',
   }}
 >
@@ -381,6 +403,7 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
     const title = map.querySelector('[data-forest-title]');
     const body = map.querySelector('[data-forest-body]');
     const source = map.querySelector('[data-forest-source]');
+    const sourceNote = map.querySelector('[data-forest-source-note]');
     const sliderLabel = map.querySelector('[data-forest-slider-label]');
     const yearStrong = map.querySelector('[data-forest-year-strong]');
     const range = map.querySelector('[data-forest-range]');
@@ -430,6 +453,10 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       }
       if (yearPill) yearPill.textContent = frame.label;
       if (sourcePill) sourcePill.textContent = frame.sourceShort;
+      if (sourceNote) {
+        sourceNote.textContent =
+          mode === 'reconstruction' ? honestyReconstruction : honestySatellite;
+      }
       if (title) title.textContent = frame.title;
       if (body) body.textContent = frame.caption;
       if (source) {

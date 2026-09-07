@@ -3,14 +3,20 @@ import type { ForestsPage } from './forests';
 export const lv: ForestsPage = {
   metaTitle: 'Meži — Fix Planet',
   metaDescription:
-    'Mežu monitoringa lapa ar avotiem: NASA vainaga kadri no 2001. gada, dažas rekonstrukcijas, FAO un GFW skaitļi un scenāriji — ne viltota 12 000 gadu filma.',
+    'Meži: kas tie ir, kā satelīts redz vainagu, senāku ainavu rekonstrukcijas un publicēti FAO un Global Forest Watch skaitļi.',
+  eyebrow: 'Zemes meži',
+  title: 'Meži',
+  hubLead: [
+    'Mežs ir ekosistēma, kurā valda koki. FAO mežu uzskata par zemes lietojuma klasi: ap 4,14 miljardiem hektāru, aptuveni trešdaļa sauszemes.',
+    'Meži uzkrāj oglekli, piedalās ūdens apritē un dod mājvietu lielākajai daļai sauszemes sugu. Zemāk — vainaga zaļums no kosmosa, dažas senāku ainavu rekonstrukcijas, publicēti skaitļi un trīs ceļi tālāk. Katrai kartei ir nosaukts datu kopums un datums.',
+  ],
   choosePanel: 'Izvēlies plauktu',
   filterAria: 'Mežu sadaļas',
   tiles: {
-    satellite: 'Jūlija vainaga zaļums, 2001–2025. Dzīvie zuduma pikseļi — GFW.',
-    history: 'Dažas rekonstrukcijas. Rupji. Nav satelīts. Robežas parakstītas.',
-    numbers: 'FAO platība, GFW tropu primārais, Crowther koki — ar datumu.',
-    outlook: 'Garais skats, trīs ceļi, ja politika turas vai krīt, un kas ir strādājis.',
+    satellite: 'Jūlija vainaga zaļums no kosmosa, 2001–2025.',
+    history: 'Leduslaikmeta veģetācija, biomi un zeme pēc cilvēkiem.',
+    numbers: 'FAO meža platība, tropu primārais vainags, koku skaita aplēse.',
+    outlook: 'Garais skats, gadi, ko var izmērīt, un trīs iespējami ceļi.',
   },
   panels: {
     satellite: 'Satelīta laikmets',
@@ -19,17 +25,26 @@ export const lv: ForestsPage = {
     outlook: 'Tendence un nākotnes',
   },
   leads: {
-    satellite:
-      'Galvenā vadība: izmitināts NASA MODIS NDVI jūlijam, 2001–2025. Tas ir vainaga zaļums, ne Hansen pikseļi. Šajā mērogā ciršanas gads gandrīz nav redzams. Global Forest Watch ir dzīvais 30 m pārlūks.',
-    history:
-      'Otrais plaukts: piecas rekonstrukcijas / aplēses — leduslaikmeta veģetācija, mūsdienu klimata biomu plate, tad Ellis antromi 1700., 1900. un 2000. gadam. Zinātnei nav nepārtrauktas hektāru kartes no 10 000 p.m.ē.',
-    numbers:
-      'Aptuveni skaitļi ar nosauktu avotu un gadu. FAO mežs ir zemes lietojuma klase. GFW/Hansen ir 30 m vainags. Nesaskaiti tos vienā viltotā summā.',
-    outlook:
-      'Rupja holocēna josla, precīzāks satelīta skats un trīs ceļi — ne viens „meži pazudīs DATUMĀ”. Boreālais ugunsgrēks nav tas pats, kas tropu pārvēršana tīrumā.',
+    satellite: [
+      'Meža vainags ir slēgts lapu un skuju slānis. Satelīti neskaita FAO hektārus: tie mēra, cik zaļa ir virsma. NDVI ir šis zaļuma indekss no atstarotās gaismas.',
+      'Pasaules kartē redzamas lietusmežu un taigas joslas. Ciršanas gads šajā mērogā gandrīz nav pamanāms. Koku seguma zudums ap 30 metru soli ir Global Forest Watch.',
+      'Kartes ir NASA MODIS Terra NDVI jūlijam, 2001–2025.',
+    ],
+    history: [
+      'Pirms satelīta laikmeta meža platību atjauno no putekšņiem, klimata modeļiem un zemes lietojuma kartēm. Nepārtrauktas hektāru skaitīšanas no 10 000 p.m.ē. nav.',
+      'Piecas plates: pēdējā ledāja maksimuma veģetācija, biomu karte pie nesenā klimata un Ellis antromi — cilvēku veidoti biomi — 1700., 1900. un 2000. gadam.',
+    ],
+    numbers: [
+      'Daži publicēti lielumi, katram nosaukts avots un gads. FAO mežs ir zemes lietojums. Hansen / Global Forest Watch ir 30 metru vainags. Crowther 2015 ir koku skaits. Tie ir dažādi mērījumi; tos nesaskaita vienā summā.',
+    ],
+    outlook: [
+      'Holocēnā savvaļas mežs saruka: auga tīrumi, ganības un apmetnes. Pēc 2000. gada satelīta rinda ir blīvāka. Tropu primārā meža pārvēršana nav tas pats, kas boreālais ugunsgrēks, un neviens no tiem nav kalendāra datums, kad «meži beigsies».',
+    ],
   },
-  honesty:
-    'Godīgas nepārtrauktas ikgadējas pasaules mežu kartes no 10 000 p.m.ē. nav. Putekšņi, modeļi un antromi ir rekonstrukcijas. Landsat klases vainaga zudums sākas ap 2000. Mēs turam dažus likumīgus kadrus un sūtām uz Global Forest Watch pēc dzīvā Hansen/UMD slāņa.',
+  honestySatellite:
+    'NASA MODIS Terra NDVI, jūlijs. Vainaga zaļums, ne Hansen pikseļi. Dzīvais 30 m pārlūks: Global Forest Watch.',
+  honestyReconstruction:
+    'Rekonstrukcijas un aplēses, ne satelīta vainags. Putekšņi, modeļi un antromi — katrai platei sava leģenda.',
   modeSatellite: 'Satelīts',
   modeReconstruction: 'Rekonstrukcija',
   fidelitySatellite: 'Satelīts · vainaga zaļums',
@@ -39,33 +54,33 @@ export const lv: ForestsPage = {
   eraLabel: 'Laikmets',
   openGfw: 'Atvērt Global Forest Watch →',
   gfwNote:
-    'Hansen / Merilendas universitātes GLAD koku seguma zudums, ~30 m, 2001–tagad. Šos pikseļus mēs nehostējam. Zudumā ietilpst uguns, mežsaimniecība un pārvēršana — ne tikai pastāvīga atmežošana.',
+    'Hansen / Merilendas universitātes GLAD koku seguma zudums, ap 30 m, no 2001. gada, Global Forest Watch. Zudumā ietilpst uguns, mežsaimniecība un pārvēršana — ne tikai pastāvīga atmežošana.',
   sourceLabel: 'Avots',
   licenseLabel: 'Licence',
   vintageLabel: 'Gads',
   howToRead:
-    'Zaļš ir vairāk veģetācijas jūlijā. Melns ir ūdens. Bēšs ir sauss vai kails. Salīdzini joslas (Amazone, Kongo, Sundalenda, taiga), ne vienu pikselīti. Rekonstrukcijām ir savas leģendas — antromi ir cilvēku un zemes lietojuma klases, ne „koku procenti”.',
+    'Zaļš ir vairāk veģetācijas jūlijā. Melns ir ūdens. Bēšs ir sauss vai kails. Salīdzini joslas — Amazoni, Kongo, Sundalendu, taigu — ne vienu pikselīti. Rekonstrukcijām ir savas leģendas: antromi ir cilvēku un zemes lietojuma klases, ne „koku procenti”.',
   caveats:
-    'NDVI nav meža platība un nav primārais mežs. Kultūras un mitri gadi arī zaļo. Jūlijs labvēlīgs ziemeļu vasarai. Starpība gadu no gada pie 2400 px ir sīka: tas ir kadra limits, ne pierādījums, ka nekas nav cirsts. LGM ir ~18 000 gadu sen, ne 10 000 p.m.ē. Biomu plate ir nesena klimata analogs — vidējā holocēnā Sahara bieži bija zaļāka.',
-  distinguishTitle: 'Boreālais nav tropiskais. Primārais nav plantācija.',
+    'NDVI nav meža platība un nav primārais mežs. Kultūras un mitri gadi arī zaļo. Jūlijs labvēlīgs ziemeļu vasarai, tāpēc starpība gadu no gada šajā izšķirtspējā ir maza. Pēdējais ledāja maksimums ir ap 18 000 gadu sen, senāks un aukstāks nekā 10 000 p.m.ē. Biomu plate ir nesena klimata analogs; vidējā holocēnā Sahara bieži bija zaļāka.',
+  distinguishTitle: 'Boreālais mežs nav tropiskais. Primārais mežs nav plantācija.',
   distinguish:
     'Apmēram 45 procenti FAO meža ir tropiski; pārējais galvenokārt boreāls un mērens (FRA 2025). Boreālie zudumi bieži ir uguns, kukaiņi vai ciršana, pēc kuriem mežs FAO zemes lietojuma izpratnē var atgriezties. Tropu primārā zudums parasti ir pārvēršana — vecais mežs neatgriežas kā tā pati ekosistēma, ja to nomaina soja vai eļļas palma. Sekundārais mežs un plantācijas var celt „meža platību”, kamēr primārā krīt. FAO neto zudums (4,12 milj. ha/gadā, 2015–2025) atņem pieaugumu no atmežošanas (10,9 milj. ha/gadā). GFW 2024. (6,7 milj. ha) un 2025. (4,3 milj. ha) skaitļi stāv uz citu definīciju. Neviens rindas saka „visi meži pazudīs kalendāra datumā”.',
   numbersNote:
-    'Skaitļi zemāk ir nokopēti no nosauktajām publikācijām. Mēs neinterpolējām holocēna hektāru tautas skaitīšanu. Crowther 2015 ir koku skaita aplēse (apmēram par 46 procentiem mazāk koku nekā UNEP vēsturiskā seguma projekcija), ne FAO meža platība.',
-  trendTitle: 'Garais skats, tad gadi, ko tiešām protam mērīt',
+    'Nokopēts no citētajām publikācijām, ar gadu. FAO meža platība nav Hansen vainags; Crowther 2015 ir koku skaits, ne hektāri.',
+  trendTitle: 'Garais skats, tad gadi, ko var izmērīt',
   trendLead:
-    'Ellis 12K grafiks ir antromu rekonstrukcija — savvaļas, kultūras un intensīvā zeme — no 10 000 p.m.ē. līdz 2017. Tas nav FAO hektāri. Pēc 2000. satelīta skaitļi ir ciešāki un joprojām nav viens liktenis.',
+    'Ellis 12K grafiks rekonstruē antromus — savvaļas, kultūras un intensīvo zemi — no 10 000 p.m.ē. līdz 2017. Tas nav FAO hektāri. Pēc 2000. satelīta skaitļi ir ciešāki.',
   longViewCaption:
     'Erle Ellis, Anthromes 12K DGG v1, pēc Ellis et al. 2021, PNAS. CC BY 2.0. Kartes seja ir ~2017; stabiņi ir garā rekonstrukcija. Savvaļas mežs sašaurinās; tīrumi, ganības un apdzīvotās vietas aug. Tīši rupji.',
   longViewAlt:
     'Pasaules antromu karte 2017. gadam virs stabiņu joslas ar savvaļas, kultūras un intensīvo zemi no 10 000 p.m.ē. līdz 2017',
   scenarioTitle: 'Ceļi, ne liktenis',
   scenarioLead:
-    'Ja turas pērnā gada temps, tropu primārais mežs turpina sarukt. Tas ir ceļš, ne pravietojums, un ne „nulle meža DATUMĀ”. Klusāks uguns gads vai īsts moratorijs var locīt līniju otrādi — 2025. jau reiz locīja.',
+    'Ja turas nesenais tropu primārā zuduma temps, šis mežs turpina sarukt. Klusāks uguns gads vai īsts moratorijs var pavērst tendenci — 2025. jau reiz pavērsa. Neviens ceļš nav datums, kad mežs pazūd.',
   scenarios: {
     continued: {
       title: 'Ja turas nesenā tropu primārā josla',
-      text: 'UMD/GFW mitro tropu primārais zudums: 6,7 milj. ha 2024. (uguns rekords) un 4,3 milj. ha 2025. (par 36 procentiem zemāks, joprojām ap 46 procentiem virs dekādes iepriekš). Ja josla 4–7 milj. ha/gadā paliek, atlikušie primārie mitrie tropi turpina irties. Mēs to nepārvēršam par bojāejas datumu: GFW primārais atlikums šeit nav publicēts, un boreālais FAO mežs ir cita grāmata.',
+      text: 'UMD/GFW mitro tropu primārais zudums: 6,7 milj. ha 2024. (uguns rekords) un 4,3 milj. ha 2025. (par 36 procentiem zemāks, joprojām ap 46 procentiem virs dekādes iepriekš). Ja josla 4–7 milj. ha/gadā paliek, atlikušie primārie mitrie tropi turpina sarukt. GFW primārais atlikums šeit nav publicēts; boreālais FAO mežs ir cita grāmata.',
     },
     slower: {
       title: 'Ja politika un uguns pārvaldība turas',
@@ -78,7 +93,7 @@ export const lv: ForestsPage = {
   },
   worksTitle: 'Kas ir kustinājis līniju',
   worksLead:
-    'Ne saukļi. Īsi, avototi atgādinājumi: zudums ir izvēle, ne laikapstākļi.',
+    'Zudums nav tikai laikapstākļi. Preču noteikumi, uguns izpilde, zemes tituli un parki jau ir pakustinājuši summas nosauktos gados.',
   works: {
     soy: {
       title: 'Amazones sojas moratorijs',
@@ -97,10 +112,8 @@ export const lv: ForestsPage = {
       text: 'FRA 2025: ap 813 milj. ha meža — 20 procenti — juridiski noteiktās aizsargājamās teritorijās (+251 milj. ha kopš 1990.). Papīra parki pastāv. Un parki, kas turas, arī. Aizsardzība ir viens rīks blakus preču noteikumiem un ugunsdzēsējiem.',
     },
   },
-  mapsLink: 'Karšu zālē ir arī Hansen/GFW shēma par zināmajām zuduma frontēm.',
+  mapsLink: 'Karšu zālē ir arī Hansen / Global Forest Watch shēma par zināmajām zuduma frontēm.',
   mapsLinkCta: 'Atvērt meža seguma zuduma kartīti →',
-  addFrame:
-    'Lai pievienotu gadu: ieliec NASA Worldview NDVI jūlija JPEG mapē public/images/forests/, pievieno rindu src/data/forests.ts, to pašu id visos četros mežu locale failos un credits.json. Komentārs ir src/data/forests.ts sākumā.',
   units: {
     billionHa: 'mljrd. ha',
     millionHa: 'milj. ha',
@@ -112,7 +125,7 @@ export const lv: ForestsPage = {
       label: '2001',
       title: 'Vainaga zaļums, 2001. gada jūlijs',
       caption:
-        'Pirmais pilnais ziemeļu vasaras MODIS Terra NDVI mēnesis, ko hostējam. Zaļās joslas ir veģetācija, ne meža platības skaitīšana. Hansen/UMD gada zudums sākas 2001. — pikseļi GFW.',
+        'Pirmais pilnais ziemeļu vasaras MODIS Terra NDVI mēnesis šajā lapā. Zaļās joslas ir veģetācija, ne meža platības skaitīšana. Hansen/UMD gada zudums sākas 2001. — pikseļi Global Forest Watch.',
       imageAlt:
         'Taisnstūra pasaules karte, 2001. gada jūlijs: zaļa veģetācija uz melniem okeāniem, bēšas tuksneši',
     },
@@ -160,7 +173,7 @@ export const lv: ForestsPage = {
       label: '2025',
       title: 'Vainaga zaļums, 2025. gada jūlijs',
       caption:
-        'Jaunākais jūlija kadrs, ko hostējam. GFW/UMD: tropu primārais zudums krita līdz 4,3 milj. ha; globālais koku seguma zudums ap 25,5 milj. ha (42 procenti uguns). Tas nav „planēta glābta” — klusāks gads pēc lēciena.',
+        'Jaunākais jūlija kadrs šajā lapā. GFW/UMD: tropu primārais zudums krita līdz 4,3 milj. ha; globālais koku seguma zudums ap 25,5 milj. ha (42 procenti uguns). Klusāks gads pēc lēciena, ne „planēta glābta”.',
       imageAlt:
         'Taisnstūra pasaules karte, 2025. gada jūlijs: zaļa veģetācija uz melniem okeāniem, bēšas tuksneši',
     },
@@ -176,7 +189,7 @@ export const lv: ForestsPage = {
       label: 'Biomu plate',
       title: 'Potenciālie biomi (nesens klimats)',
       caption:
-        'Aplēse / analogs — ne datēta vidējā holocēna putekšņu karte. Ville Koistinena apkopotā biomu plate (CC BY-SA). Derīga kā „kur mežs var dzīvot nesenā klimatā”. Vidējā holocēnā (~6000 gadu sen) Sahara bieži bija zaļāka; šis zīmējums to nerāda. BIOME 6000 rastru mēs nehostējam.',
+        'Aplēse / analogs — ne datēta vidējā holocēna putekšņu karte. Ville Koistinena apkopotā biomu plate (CC BY-SA). Derīga kā „kur mežs var dzīvot nesenā klimatā”. Vidējā holocēnā (~6000 gadu sen) Sahara bieži bija zaļāka; šis zīmējums to nerāda.',
       imageAlt:
         'Krāsaina pasaules biomu karte: taiga, platlapju mežs, tropu lietusmežs, tuksneši un savannas',
     },
@@ -200,7 +213,7 @@ export const lv: ForestsPage = {
       label: '2000',
       title: 'Antromi, 2000',
       caption:
-        'Ellis / SEDAC v2 satelīta laikmeta sliekšņa. Intensīvie antromi sedz lielu daļu apdzīvojamās sauszemes. Salīdzini ar NASA NDVI plauktu — cita leģenda, cita godīgums.',
+        'Ellis / SEDAC v2 satelīta laikmeta sliekšņa. Intensīvie antromi sedz lielu daļu apdzīvojamās sauszemes. Salīdzini ar NASA NDVI plauktu: cita leģenda, cits lielums.',
       imageAlt:
         'Robinsona karte 2000. gada antromiem: plaši tīrumi, ganības un apdzīvotās vietas',
     },

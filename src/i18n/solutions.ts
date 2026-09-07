@@ -5,15 +5,15 @@ const en: Record<string, SolutionCopy> = {
   'drip-irrigation': {
     problemTitle: 'Freshwater scarcity',
     fixTitle: 'Drip irrigation',
-    problem: 'Dry regions lose most irrigation water to evaporation and runoff.',
-    fix: 'Drip irrigation delivers water to the root — less waste, higher yield.',
+    problem: 'In dry regions most irrigation water never reaches the root: it evaporates or runs off.',
+    fix: 'Drip lines deliver water at the root zone, so less is lost and yields can rise.',
     imageAlt: 'Young corn plant in dry soil watered by a black drip-irrigation line',
   },
   'constructed-wetlands': {
     problemTitle: 'River & coastal pollution',
     fixTitle: 'Constructed wetlands',
-    problem: 'Nutrients and sewage feed toxic algae and kill fish.',
-    fix: 'Constructed wetlands filter water as living treatment systems.',
+    problem: 'Nutrients and sewage in rivers feed algal blooms that starve fish of oxygen.',
+    fix: 'Constructed wetlands treat water as a living filter — reeds, microbes, and shallow flow.',
     imageAlt: 'Constructed wetland with reeds, clear shallow water, and a wooden boardwalk',
   },
   'sustainable-forestry': {
@@ -71,8 +71,8 @@ const ru: Record<string, SolutionCopy> = {
   'constructed-wetlands': {
     problemTitle: 'Загрязнение рек и побережий',
     fixTitle: 'Искусственные водно-болотные угодья',
-    problem: 'Питательные вещества и сточные воды кормят токсичные водоросли и губят рыбу.',
-    fix: 'Искусственные водно-болотные угодья фильтруют воду как живые очистные системы.',
+    problem: 'Питательные вещества и сточные воды в реках кормят цветение водорослей, из-за которого рыбе не хватает кислорода.',
+    fix: 'Искусственные водно-болотные угодья чистят воду как живой фильтр — камыш, микробы и мелкий поток.',
     imageAlt: 'Искусственное болото с камышом, прозрачной мелкой водой и деревянным настилом',
   },
   'sustainable-forestry': {

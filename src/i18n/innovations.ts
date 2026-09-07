@@ -41,15 +41,15 @@ export type InnovationsPage = {
 const pageEn: InnovationsPage = {
   metaTitle: 'Innovations — Fix Planet',
   metaDescription:
-    'A curated catalog of real frontier technologies — ecology, energy, and AI — with status, players, limits, and named sources. No free-energy scams.',
-  eyebrow: 'Frontier watch',
+    'Laboratories and plants that try to cut carbon, restore living systems, or produce energy — ecology, energy, and AI, with status and sources.',
+  eyebrow: 'Labs and plants',
   title: 'Innovations',
-  lead: 'Working attempts and serious laboratories — not press-kit miracles. Three shelves: ecology, energy, and artificial intelligence. Each card names the problem, the method, who is doing it, and what still fails.',
+  lead: 'Laboratories and plants that try to cut carbon, restore reefs and soils, or produce energy without pretending the laws of thermodynamics are optional. Three shelves: ecology, energy, and artificial intelligence.',
   filterAria: 'Filter innovations by area',
   chooseArea: 'Choose an area',
   tiles: {
     ecology: 'Carbon, reefs, protein, plastic — living systems and their waste.',
-    energy: 'Fusion, geothermal, storage — energy that obeys thermodynamics.',
+    energy: 'Fusion, geothermal, storage — and why perpetual motion fails.',
     ai: 'Models for Earth systems, materials, grids, and recycling.',
   },
   all: 'All',
@@ -71,12 +71,12 @@ const pageEn: InnovationsPage = {
     ai: 'Artificial intelligence',
   },
   areaLeads: {
-    all: 'Every card below is a real technology or a clearly labeled myth. Status means research, pilot, deployed, or myth-busted — not a stock pitch.',
+    all: 'Each card is a real technology or a clearly labeled myth. Status means research, pilot, deployed, or myth-busted.',
     ecology:
       'Carbon, reefs, protein, plastic, methane, and membranes: projects that try to repair living systems or shrink their waste.',
     energy:
-      'Dense and abundant energy that obeys thermodynamics — fusion, geothermal, storage, hydrogen with losses stated, fission, space solar — plus why perpetual motion fails.',
-    ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, recycling, and quantum chemistry hopes. Not chatbot hype.',
+      'Dense energy that still obeys thermodynamics — fusion, geothermal, storage, hydrogen with losses stated, fission, space solar — and why a closed machine cannot run forever.',
+    ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, and recycling. Weather AI still needs the satellites.',
   },
   status: {
     research: 'Research',
@@ -89,15 +89,15 @@ const pageEn: InnovationsPage = {
 const pageRu: InnovationsPage = {
   metaTitle: 'Инновации — Fix Planet',
   metaDescription:
-    'Каталог реальных передовых технологий — экология, энергия и ИИ — со статусом, участниками, ограничениями и названными источниками. Без скама «бесплатной энергии».',
-  eyebrow: 'Дозор на рубеже',
+    'Лаборатории и установки, которые пытаются убрать углерод, восстановить живые системы или дать энергию — экология, энергия и ИИ, со статусом и источниками.',
+  eyebrow: 'Лаборатории и установки',
   title: 'Инновации',
-  lead: 'Серьёзные попытки и лаборатории — не чудеса из пресс-китов. Три полки: экология, энергия и искусственный интеллект. На каждой карточке — проблема, метод, кто этим занимается и что пока не получается.',
+  lead: 'Лаборатории и установки, которые пытаются убрать углерод, восстановить рифы и почвы или дать энергию, не делая вид, что законы термодинамики необязательны. Три полки: экология, энергия и искусственный интеллект.',
   filterAria: 'Фильтр инноваций по области',
   chooseArea: 'Выберите область',
   tiles: {
     ecology: 'Углерод, рифы, белок, пластик — живые системы и их отходы.',
-    energy: 'Синтез, геотермия, накопители — энергия в рамках термодинамики.',
+    energy: 'Синтез, геотермия, накопители — и почему вечный двигатель не работает.',
     ai: 'Модели для систем Земли, материалов, сетей и сортировки.',
   },
   all: 'Все',
@@ -119,12 +119,12 @@ const pageRu: InnovationsPage = {
     ai: 'Искусственный интеллект',
   },
   areaLeads: {
-    all: 'Каждая карточка — реальная технология или явно помеченный миф. Статус: исследование, пилот, внедрение или разоблачённый миф — не реклама акций.',
+    all: 'Каждая карточка — реальная технология или явно помеченный миф. Статус: исследование, пилот, внедрение или разоблачённый миф.',
     ecology:
       'Углерод, рифы, белок, пластик, метан и мембраны: проекты, которые чинят живые системы или уменьшают их отходы.',
     energy:
-      'Плотная и обильная энергия в рамках термодинамики — термоядерный синтез, геотермия, накопители, водород с честными потерями, деление ядра, космос — и почему вечный двигатель не работает.',
-    ai: 'Модели и машины для систем Земли, материалов, сетей, белков, сортировки отходов и надежд квантовой химии. Не хайп чат-ботов.',
+      'Плотная энергия в рамках термодинамики — термоядерный синтез, геотермия, накопители, водород с названными потерями, деление ядра, космос — и почему замкнутая машина не может крутиться вечно.',
+    ai: 'Модели и машины для систем Земли, материалов, сетей, белков и сортировки отходов. Погодный ИИ по-прежнему нуждается в спутниках.',
   },
   status: {
     research: 'Исследование',
@@ -137,15 +137,15 @@ const pageRu: InnovationsPage = {
 const pagePl: InnovationsPage = {
   metaTitle: 'Innowacje — Fix Planet',
   metaDescription:
-    'Katalog prawdziwych technologii granicznych — ekologia, energia i SI — ze statusem, graczami, limitami i nazwanymi źródłami. Bez oszustw „darmowej energii”.',
-  eyebrow: 'Posterunek na froncie',
+    'Laboratoria i instalacje, które próbują ściąć węgiel, odbudować żywe systemy albo dać energię — ekologia, energia i SI, ze statusem i źródłami.',
+  eyebrow: 'Laboratoria i instalacje',
   title: 'Innowacje',
-  lead: 'Poważne próby i laboratoria — nie cuda z teczek prasowych. Trzy półki: ekologia, energia i sztuczna inteligencja. Na każdej karcie: problem, metoda, kto to robi i co jeszcze nie działa.',
+  lead: 'Laboratoria i instalacje, które próbują ściąć węgiel, odbudować rafy i gleby albo dać energię, nie udając, że prawa termodynamiki są opcjonalne. Trzy półki: ekologia, energia i sztuczna inteligencja.',
   filterAria: 'Filtruj innowacje według dziedziny',
   chooseArea: 'Wybierz dziedzinę',
   tiles: {
     ecology: 'Węgiel, rafy, białko, plastik — żywe systemy i ich odpady.',
-    energy: 'Fuzja, geotermia, magazyny — energia zgodna z termodynamiką.',
+    energy: 'Fuzja, geotermia, magazyny — i dlaczego perpetuum mobile nie działa.',
     ai: 'Modele dla systemów Ziemi, materiałów, sieci i recyklingu.',
   },
   all: 'Wszystkie',
@@ -167,12 +167,12 @@ const pagePl: InnovationsPage = {
     ai: 'Sztuczna inteligencja',
   },
   areaLeads: {
-    all: 'Każda karta to prawdziwa technologia albo jasno oznaczony mit. Status: badania, pilotaż, wdrożenie albo mit obalony — nie pitch giełdowy.',
+    all: 'Każda karta to prawdziwa technologia albo jasno oznaczony mit. Status: badania, pilotaż, wdrożenie albo mit obalony.',
     ecology:
       'Węgiel, rafy, białko, plastik, metan i membrany: projekty, które naprawiają żywe systemy albo zmniejszają ich odpady.',
     energy:
-      'Gęsta i obfita energia zgodna z termodynamiką — fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity — oraz dlaczego perpetuum mobile nie działa.',
-    ai: 'Modele i maszyny dla systemów Ziemi, materiałów, sieci, białek, recyklingu i nadziei chemii kwantowej. Nie hype chatbotów.',
+      'Gęsta energia zgodna z termodynamiką — fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity — oraz dlaczego zamknięta maszyna nie może kręcić się wiecznie.',
+    ai: 'Modele i maszyny dla systemów Ziemi, materiałów, sieci, białek i recyklingu. Pogodowe SI nadal potrzebuje satelitów.',
   },
   status: {
     research: 'Badania',
@@ -185,15 +185,15 @@ const pagePl: InnovationsPage = {
 const pageLv: InnovationsPage = {
   metaTitle: 'Inovācijas — Fix Planet',
   metaDescription:
-    'Kurēts reālu pierobežas tehnoloģiju katalogs — ekoloģija, enerģija un MI — ar statusu, dalībniekiem, robežām un nosauktiem avotiem. Bez «brīvās enerģijas» krāpšanas.',
-  eyebrow: 'Pierobežas sardze',
+    'Laboratorijas un iekārtas, kas mēģina nogriezt oglekli, atjaunot dzīvās sistēmas vai dot enerģiju — ekoloģija, enerģija un MI, ar statusu un avotiem.',
+  eyebrow: 'Laboratorijas un iekārtas',
   title: 'Inovācijas',
-  lead: 'Nopietni mēģinājumi un laboratorijas — ne preses komplektu brīnumi. Trīs plaukti: ekoloģija, enerģija un mākslīgais intelekts. Katrā kartītē: problēma, metode, kas to dara un kas vēl neizdodas.',
+  lead: 'Laboratorijas un iekārtas, kas mēģina nogriezt oglekli, atjaunot rifus un augsni vai dot enerģiju, neizliekoties, ka termodinamikas likumi ir neobligāti. Trīs plaukti: ekoloģija, enerģija un mākslīgais intelekts.',
   filterAria: 'Filtrēt inovācijas pēc jomas',
   chooseArea: 'Izvēlies jomu',
   tiles: {
     ecology: 'Ogleklis, rifi, olbaltumvielas, plastmasa — dzīvās sistēmas un to atkritumi.',
-    energy: 'Kodolsintēze, ģeotermija, uzkrāšana — enerģija termodinamikas ietvaros.',
+    energy: 'Kodolsintēze, ģeotermija, uzkrāšana — un kāpēc mūžīgais dzinējs neizdodas.',
     ai: 'Modeļi Zemes sistēmām, materiāliem, tīkliem un šķirošanai.',
   },
   all: 'Visas',
@@ -215,12 +215,12 @@ const pageLv: InnovationsPage = {
     ai: 'Mākslīgais intelekts',
   },
   areaLeads: {
-    all: 'Katra kartīte ir īsta tehnoloģija vai skaidri marķēts mīts. Statuss: pētījums, izmēģinājums, ieviests vai atmaskots mīts — ne biržas stāsts.',
+    all: 'Katra kartīte ir īsta tehnoloģija vai skaidri marķēts mīts. Statuss: pētījums, izmēģinājums, ieviests vai atmaskots mīts.',
     ecology:
       'Ogleklis, rifi, olbaltumvielas, plastmasa, metāns un membrānas: projekti, kas labo dzīvās sistēmas vai samazina to atkritumus.',
     energy:
-      'Blīva un bagāta enerģija termodinamikas ietvaros — kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar godīgiem zudumiem, skaldīšana, Saule no orbītas — un kāpēc mūžīgais dzinējs neizdodas.',
-    ai: 'Modeļi un mašīnas Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām, šķirošanai un kvantu ķīmijas cerībām. Ne tērzēšanas robotu haips.',
+      'Blīva enerģija termodinamikas ietvaros — kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar nosauktiem zudumiem, skaldīšana, Saule no orbītas — un kāpēc slēgta mašīna nevar griezties mūžīgi.',
+    ai: 'Modeļi un mašīnas Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un šķirošanai. Laikapstākļu MI joprojām vajag satelītus.',
   },
   status: {
     research: 'Pētījums',

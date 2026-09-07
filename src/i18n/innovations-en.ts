@@ -185,7 +185,7 @@ export const en: Record<string, InnovationCopy> = {
     problem: 'The wish is understandable: dense, clean, unlimited energy. The scam is to sell a wheel, a magnet, or a secret circuit as that wish. Every serious path — fusion, fission, geothermal, long-duration storage, space solar — still obeys the same laws.',
     how: 'Friction, electrical resistance, and radiation eat every real cycle. Magnets do not push a rotor around a closed loop for free; the field is conservative. A hidden battery or a measurement error is the usual “proof.” If a device needs a hidden power cord, it is not a miracle.',
     players: 'No laboratory of record. Patent offices have long rejected perpetual-motion filings that lack a working model. For real abundant-energy research see the other cards in this Energy section: ITER, NIF, enhanced geothermal, long-duration storage, hydrogen (with losses stated), modular nuclear, and space solar.',
-    risks: 'Money lost, time lost, and policy noise that drowns work that actually exists. Fix Planet will not list a “free energy” inventor as a solution.',
+    risks: 'Money lost, time lost, and policy noise that drowns work that actually exists. A “free energy” kit is not a solution.',
     sources: 'Standard thermodynamics (first and second laws); U.S. USPTO perpetual-motion practice; IEA pages on fusion, geothermal, storage, hydrogen, and nuclear as the real research set.',
   },
   'graphcast-ai-weather': {
