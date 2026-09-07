@@ -1,6 +1,7 @@
 ---
 import HubTile from '../components/HubTile.astro';
 import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   breitburg2018Url,
@@ -59,10 +60,13 @@ const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
 
 const initialSst = sstFrames[sstFrames.length - 1];
 const initialSalinity = salinityFrames[0];
+const pageTitle = activePanel
+  ? `${page.panels[activePanel]} — ${page.title} — Fix Planet`
+  : page.metaTitle;
 ---
 
 <BaseLayout
-  title={page.metaTitle}
+  title={pageTitle}
   description={page.metaDescription}
   image={backdropSrc}
   theme="oceans"
@@ -72,26 +76,33 @@ const initialSalinity = salinityFrames[0];
     <div class="section-backdrop-scrim oceans-scrim"></div>
   </div>
 
-  <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
-    {
-      oceanHub.map((item) => (
-        <HubTile
-          href={localizePath(oceanPanelPath(item.key), locale)}
-          icon={item.icon}
-          title={page.panels[item.key]}
-          text={page.tiles[item.key]}
-          active={item.key === activePanel}
+  {
+    hub ? (
+      <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
+        {oceanHub.map((item) => (
+          <HubTile
+            href={localizePath(oceanPanelPath(item.key), locale)}
+            icon={item.icon}
+            title={page.panels[item.key]}
+            text={page.tiles[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : (
+      activePanel && (
+        <ShelfHeader
+          backHref={localizePath('/oceans', locale)}
+          backLabel={page.back}
+          title={page.panels[activePanel]}
         />
-      ))
-    }
-  </SectionHub>
+      )
+    )
+  }
 
   {activePanel === 'currents' && (
   <section class="section section-hub-follow" id="currents" data-ocean-panel="currents">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.currents}</div>
-        <h2>{page.panels.currents}</h2>
         <div class="oceans-lede">
           {page.leads.currents.map((para) => <p>{para}</p>)}
         </div>
@@ -164,8 +175,6 @@ const initialSalinity = salinityFrames[0];
   <section class="section section-hub-follow" id="salinity" data-ocean-panel="salinity">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.salinity}</div>
-        <h2>{page.panels.salinity}</h2>
         <div class="oceans-lede">
           {page.leads.salinity.map((para) => <p>{para}</p>)}
         </div>
@@ -241,8 +250,6 @@ const initialSalinity = salinityFrames[0];
   <section class="section section-hub-follow" id="sst" data-ocean-panel="sst">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.sst}</div>
-        <h2>{page.panels.sst}</h2>
         <div class="oceans-lede">
           {page.leads.sst.map((para) => <p>{para}</p>)}
         </div>
@@ -342,8 +349,6 @@ const initialSalinity = salinityFrames[0];
   <section class="section section-hub-follow" id="pollution" data-ocean-panel="pollution">
     <div class="wrap">
       <div class="wildlife-copy-card forests-panel oceans-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.pollution}</div>
-        <h2>{page.panels.pollution}</h2>
         <div class="oceans-lede">
           {page.leads.pollution.map((para) => <p>{para}</p>)}
         </div>
@@ -408,8 +413,6 @@ const initialSalinity = salinityFrames[0];
   <section class="section section-hub-follow" id="numbers" data-ocean-panel="numbers">
     <div class="wrap">
       <div class="wildlife-list-panel forests-panel oceans-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
-        <h2>{page.panels.numbers}</h2>
         <div class="oceans-lede">
           {page.leads.numbers.map((para) => <p>{para}</p>)}
         </div>

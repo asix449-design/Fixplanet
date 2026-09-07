@@ -28,6 +28,7 @@ export type OceansPage = {
   hubLead: string[];
   choosePanel: string;
   filterAria: string;
+  back: string;
   tiles: Record<OceanPanel, string>;
   panels: Record<OceanPanel, string>;
   leads: Record<OceanPanel, string[]>;

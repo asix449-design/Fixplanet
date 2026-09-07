@@ -98,6 +98,7 @@ const en = {
     problem: 'Problem',
     fix: 'Fix',
     explore: 'Explore solution →',
+    back: '← Solutions',
     tags: {
       water: 'Water',
       forests: 'Forests',
@@ -386,6 +387,7 @@ const ru: typeof en = {
     problem: 'Проблема',
     fix: 'Решение',
     explore: 'Подробнее →',
+    back: '← Решения',
     tags: {
       water: 'Вода',
       forests: 'Леса',
@@ -677,6 +679,7 @@ const pl: typeof en = {
     problem: 'Problem',
     fix: 'Rozwiązanie',
     explore: 'Zobacz rozwiązanie →',
+    back: '← Rozwiązania',
     tags: {
       water: 'Woda',
       forests: 'Lasy',
@@ -968,6 +971,7 @@ const lv: typeof en = {
     problem: 'Problēma',
     fix: 'Risinājums',
     explore: 'Skatīt risinājumu →',
+    back: '← Risinājumi',
     tags: {
       water: 'Ūdens',
       forests: 'Meži',

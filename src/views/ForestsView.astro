@@ -1,6 +1,7 @@
 ---
 import HubTile from '../components/HubTile.astro';
 import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   faoFra2025Url,
@@ -48,10 +49,13 @@ const backdropSrc = forestFrameSrc(forestBackdrop.file);
 const initialSatellite = satelliteFrames[satelliteFrames.length - 1];
 const scenarioKeys = ['continued', 'slower', 'restore'] as const;
 const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
+const pageTitle = activePanel
+  ? `${page.panels[activePanel]} — ${page.title} — Fix Planet`
+  : page.metaTitle;
 ---
 
 <BaseLayout
-  title={page.metaTitle}
+  title={pageTitle}
   description={page.metaDescription}
   image={backdropSrc}
   theme="forests"
@@ -61,26 +65,33 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
     <div class="section-backdrop-scrim forests-scrim"></div>
   </div>
 
-  <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
-    {
-      forestHub.map((item) => (
-        <HubTile
-          href={localizePath(forestPanelPath(item.key), locale)}
-          icon={item.icon}
-          title={page.panels[item.key]}
-          text={page.tiles[item.key]}
-          active={item.key === activePanel}
+  {
+    hub ? (
+      <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
+        {forestHub.map((item) => (
+          <HubTile
+            href={localizePath(forestPanelPath(item.key), locale)}
+            icon={item.icon}
+            title={page.panels[item.key]}
+            text={page.tiles[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : (
+      activePanel && (
+        <ShelfHeader
+          backHref={localizePath('/forests', locale)}
+          backLabel={page.back}
+          title={page.panels[activePanel]}
         />
-      ))
-    }
-  </SectionHub>
+      )
+    )
+  }
 
   {activePanel === 'satellite' && (
   <section class="section section-hub-follow" id="satellite" data-forest-panel="satellite">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.satellite}</div>
-        <h2>{page.panels.satellite}</h2>
         <div class="encyc-lede">
           {page.leads.satellite.map((para) => <p>{para}</p>)}
         </div>
@@ -182,8 +193,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
   <section class="section section-hub-follow" id="history" data-forest-panel="history">
     <div class="wrap">
       <div class="wildlife-copy-card forests-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.history}</div>
-        <h2>{page.panels.history}</h2>
         <div class="encyc-lede">
           {page.leads.history.map((para) => <p>{para}</p>)}
         </div>
@@ -229,8 +238,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
   <section class="section section-hub-follow" id="numbers" data-forest-panel="numbers">
     <div class="wrap">
       <div class="wildlife-list-panel forests-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
-        <h2>{page.panels.numbers}</h2>
         <div class="encyc-lede">
           {page.leads.numbers.map((para) => <p>{para}</p>)}
         </div>
@@ -276,7 +283,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
   <section class="section section-hub-follow" id="outlook" data-forest-panel="outlook">
     <div class="wrap">
       <div class="wildlife-copy-card forests-panel">
-        <div class="eyebrow forests-eyebrow">{page.panels.outlook}</div>
         <h2>{page.trendTitle}</h2>
         <p class="wildlife-tab-lead">{page.trendLead}</p>
         <figure class="map-detail-art">

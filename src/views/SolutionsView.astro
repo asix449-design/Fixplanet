@@ -1,6 +1,7 @@
 ---
 import HubTile from '../components/HubTile.astro';
 import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import SolutionCard from '../components/SolutionCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -31,26 +32,41 @@ const activeTag: TagKey | 'all' | undefined = hub
 const solutions = getSolutions(locale).filter(
   (solution) => !activeTag || activeTag === 'all' || solution.tag === activeTag,
 );
+const shelfTitle =
+  !activeTag || activeTag === 'all'
+    ? ui.solutionsPage.all
+    : ui.solutionsPage.tags[activeTag];
+const pageTitle = hub
+  ? ui.solutionsPage.metaTitle
+  : `${shelfTitle} — ${ui.solutionsPage.title} — Fix Planet`;
 ---
 
 <BaseLayout
-  title={ui.solutionsPage.metaTitle}
+  title={pageTitle}
   description={ui.solutionsPage.metaDescription}
   theme="solutions"
 >
-  <SectionHub kicker={ui.solutionsPage.chooseTopic} label={ui.solutionsPage.filterAria}>
-    {
-      solutionsHub.map((item) => (
-        <HubTile
-          href={localizePath(solutionTagPath(item.key), locale)}
-          icon={item.icon}
-          title={item.key === 'all' ? ui.solutionsPage.all : ui.solutionsPage.tags[item.key]}
-          text={ui.solutionsPage.tileLeads[item.key]}
-          active={item.key === activeTag}
-        />
-      ))
-    }
-  </SectionHub>
+  {
+    hub ? (
+      <SectionHub kicker={ui.solutionsPage.chooseTopic} label={ui.solutionsPage.filterAria}>
+        {solutionsHub.map((item) => (
+          <HubTile
+            href={localizePath(solutionTagPath(item.key), locale)}
+            icon={item.icon}
+            title={item.key === 'all' ? ui.solutionsPage.all : ui.solutionsPage.tags[item.key]}
+            text={ui.solutionsPage.tileLeads[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : (
+      <ShelfHeader
+        backHref={localizePath('/solutions', locale)}
+        backLabel={ui.solutionsPage.back}
+        title={shelfTitle}
+        lede={activeTag ? ui.solutionsPage.tileLeads[activeTag] : undefined}
+      />
+    )
+  }
 
   {
     !hub && (

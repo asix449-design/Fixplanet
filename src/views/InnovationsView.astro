@@ -2,6 +2,7 @@
 import HubTile from '../components/HubTile.astro';
 import InnovationCard from '../components/InnovationCard.astro';
 import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   innovationAreaPath,
@@ -30,11 +31,16 @@ const activeArea: InnovationArea | undefined =
   hub || !isInnovationArea(requested ?? undefined) ? undefined : requested;
 
 const items = activeArea ? getInnovationsByArea(locale, activeArea) : getInnovations(locale);
+const shelfTitle = activeArea ? page.areas[activeArea] : page.title;
+const pageTitle = activeArea
+  ? `${page.areas[activeArea]} — ${page.title} — Fix Planet`
+  : page.metaTitle;
+const pageDescription = activeArea ? page.areaLeads[activeArea] : page.metaDescription;
 ---
 
 <BaseLayout
-  title={page.metaTitle}
-  description={page.metaDescription}
+  title={pageTitle}
+  description={pageDescription}
   image="/images/innovations/innovations-section-bg.jpg"
   theme="innovations"
 >
@@ -48,25 +54,32 @@ const items = activeArea ? getInnovationsByArea(locale, activeArea) : getInnovat
     <div class="section-backdrop-scrim innovations-scrim"></div>
   </div>
 
-  <SectionHub kicker={page.chooseArea} label={page.filterAria} columns={3}>
-    {
-      innovationHub.map((item) => (
-        <HubTile
-          href={localizePath(innovationAreaPath(item.key), locale)}
-          icon={item.icon}
-          title={page.areas[item.key]}
-          text={page.tiles[item.key]}
-          active={item.key === activeArea}
-        />
-      ))
-    }
-  </SectionHub>
+  {
+    hub ? (
+      <SectionHub kicker={page.chooseArea} label={page.filterAria} columns={3}>
+        {innovationHub.map((item) => (
+          <HubTile
+            href={localizePath(innovationAreaPath(item.key), locale)}
+            icon={item.icon}
+            title={page.areas[item.key]}
+            text={page.tiles[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : (
+      <ShelfHeader
+        backHref={localizePath('/innovations', locale)}
+        backLabel={page.back}
+        title={shelfTitle}
+        lede={activeArea ? page.areaLeads[activeArea] : page.areaLeads.all}
+      />
+    )
+  }
 
   {
     !hub && (
       <section class="section section-hub-follow" id="innovations-list">
         <div class="wrap wildlife-list-panel innovations-list-panel">
-          {activeArea && <p class="wildlife-tab-lead">{page.areaLeads[activeArea]}</p>}
           {items.length === 0 ? (
             <p class="wildlife-tab-lead">{page.empty}</p>
           ) : (

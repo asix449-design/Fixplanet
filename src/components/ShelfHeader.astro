@@ -1,0 +1,28 @@
+---
+interface Props {
+  backHref: string;
+  backLabel: string;
+  title: string;
+  lede?: string;
+  headingId?: string;
+}
+
+const {
+  backHref,
+  backLabel,
+  title,
+  lede,
+  headingId = 'shelf-heading',
+} = Astro.props;
+---
+
+<header class="shelf-page" aria-labelledby={headingId}>
+  <div class="wrap">
+    <p class="shelf-page-back">
+      <a class="maps-back" href={backHref}>{backLabel}</a>
+    </p>
+    <h1 id={headingId}>{title}</h1>
+    {lede && <p class="shelf-page-lede">{lede}</p>}
+    <slot />
+  </div>
+</header>

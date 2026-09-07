@@ -12,6 +12,7 @@ export const en: ForestsPage = {
   ],
   choosePanel: 'Choose a shelf',
   filterAria: 'Forests sections',
+  back: '← Forests',
   tiles: {
     satellite: 'July canopy greenness from space, 2001–2025.',
     history: 'Ice-age vegetation, biomes, and land after people.',

@@ -2,6 +2,7 @@
 import HubTile from '../components/HubTile.astro';
 import HumanDispersalMap from '../components/HumanDispersalMap.astro';
 import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import WildlifeCard from '../components/WildlifeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -43,11 +44,16 @@ const tabLeads = {
 
 const pageTitle = isHumanShelf
   ? `${ui.wildlifePage.scientificName} — Fix Planet`
-  : ui.wildlifePage.metaTitle;
+  : activeStatus
+    ? `${ui.wildlifePage[activeStatus]} — ${ui.wildlifePage.title} — Fix Planet`
+    : ui.wildlifePage.metaTitle;
 const pageDescription = isHumanShelf
   ? ui.wildlifePage.mapLead
-  : ui.wildlifePage.metaDescription;
+  : activeStatus
+    ? tabLeads[activeStatus]
+    : ui.wildlifePage.metaDescription;
 const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
+const wildlifeHref = localizePath('/wildlife', locale);
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} theme="wildlife">
@@ -61,19 +67,35 @@ const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
     <div class="section-backdrop-scrim"></div>
   </div>
 
-  <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={4}>
-    {
-      wildlifeHub.map((item) => (
-        <HubTile
-          href={localizePath(wildlifeHubPath(item.key), locale)}
-          icon={item.icon}
-          title={ui.wildlifePage[item.key]}
-          text={ui.wildlifePage.tiles[item.key]}
-          active={item.key === activeShelf}
-        />
-      ))
-    }
-  </SectionHub>
+  {
+    hub ? (
+      <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={4}>
+        {wildlifeHub.map((item) => (
+          <HubTile
+            href={localizePath(wildlifeHubPath(item.key), locale)}
+            icon={item.icon}
+            title={ui.wildlifePage[item.key]}
+            text={ui.wildlifePage.tiles[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : activeStatus ? (
+      <ShelfHeader
+        backHref={wildlifeHref}
+        backLabel={ui.wildlifePage.back}
+        title={ui.wildlifePage[activeStatus]}
+        lede={tabLeads[activeStatus]}
+      />
+    ) : isHumanShelf ? (
+      <div class="shelf-page">
+        <div class="wrap">
+          <p class="shelf-page-back">
+            <a class="maps-back" href={wildlifeHref}>{ui.wildlifePage.back}</a>
+          </p>
+        </div>
+      </div>
+    ) : null
+  }
 
   {
     isHumanShelf && (
@@ -90,7 +112,7 @@ const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
             </figure>
             <div class="wildlife-copy-card">
               <div class="eyebrow">{ui.wildlifePage.heroEyebrow}</div>
-              <h2 id="our-species"><em>{ui.wildlifePage.scientificName}</em></h2>
+              <h1 id="our-species"><em>{ui.wildlifePage.scientificName}</em></h1>
               <dl class="wildlife-stats">
                 <div>
                   <dt>{ui.wildlifePage.appearedLabel}</dt>
@@ -121,7 +143,6 @@ const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
     activeStatus && (
       <section class="section section-hub-follow" id="species-list">
         <div class="wrap wildlife-list-panel">
-          <p class="wildlife-tab-lead wildlife-tab-lead-solo">{tabLeads[activeStatus]}</p>
           <div class="card-grid cols-3" id="wildlife-grid">
             {species.map((item) => (
               <WildlifeCard species={item} />

@@ -12,6 +12,7 @@ export const en: OceansPage = {
   ],
   choosePanel: 'Choose a shelf',
   filterAria: 'Oceans sections',
+  back: '← Oceans',
   tiles: {
     currents: 'Surface currents and the great gyres that steer heat, salt, and life.',
     salinity: 'How salty the sea is, and why that density helps drive the overturning circulation.',

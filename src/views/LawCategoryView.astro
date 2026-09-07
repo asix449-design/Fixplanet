@@ -1,11 +1,8 @@
 ---
-import HubTile from '../components/HubTile.astro';
 import LawCard from '../components/LawCard.astro';
-import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
-  lawCategoryPath,
-  lawHub,
   lawSectionSrc,
   lawStatusKeys,
   lawStatusPath,
@@ -37,25 +34,14 @@ const items = getLawsByCategory(locale, category);
     <div class="section-backdrop-scrim law-scrim"></div>
   </div>
 
-  <SectionHub kicker={page.chooseCategory} label={page.filterAria} columns={3}>
-    {
-      lawHub.map((item) => (
-        <HubTile
-          href={localizePath(lawCategoryPath(item.key), locale)}
-          icon={item.icon}
-          title={page.categories[item.key]}
-          text={page.tiles[item.key]}
-          active={item.key === category}
-          dataArea={item.key}
-        />
-      ))
-    }
-  </SectionHub>
+  <ShelfHeader
+    backHref={localizePath('/law', locale)}
+    backLabel={page.back}
+    title={page.categories[category]}
+    lede={page.categoryLeads[category]}
+  />
 
   <section class="section section-hub-follow" id="law-shelves">
-    <div class="wrap">
-      <p class="wildlife-tab-lead law-category-lead">{page.categoryLeads[category]}</p>
-    </div>
     {
       lawStatusKeys.map((status) => {
         const shelf = items.filter((item) => item.status === status);
@@ -93,26 +79,7 @@ const items = getLawsByCategory(locale, category);
   </section>
 </BaseLayout>
 
-<script
-  define:vars={{
-    activeStatus: activeStatus ?? '',
-    ecologyHref: localizePath(lawCategoryPath('ecology'), locale),
-    aiHref: localizePath(lawCategoryPath('ai'), locale),
-    animalsHref: localizePath(lawCategoryPath('animals'), locale),
-  }}
->
-  const hrefs = { ecology: ecologyHref, ai: aiHref, animals: animalsHref };
-  const buttons = document.querySelectorAll('[data-area]');
-
-  buttons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-      const area = button.dataset.area;
-      if (!area || !(area in hrefs)) return;
-      event.preventDefault();
-      location.assign(hrefs[area]);
-    });
-  });
-
+<script define:vars={{ activeStatus: activeStatus ?? '' }}>
   if (activeStatus) {
     document.getElementById(activeStatus)?.scrollIntoView({ block: 'start' });
   }

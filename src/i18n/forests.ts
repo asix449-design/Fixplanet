@@ -21,6 +21,7 @@ export type ForestsPage = {
   hubLead: string[];
   choosePanel: string;
   filterAria: string;
+  back: string;
   tiles: Record<ForestPanel, string>;
   panels: Record<ForestPanel, string>;
   leads: Record<ForestPanel, string[]>;

@@ -12,6 +12,7 @@ export const lv: ForestsPage = {
   ],
   choosePanel: 'Izvēlies plauktu',
   filterAria: 'Mežu sadaļas',
+  back: '← Meži',
   tiles: {
     satellite: 'Jūlija vainaga zaļums no kosmosa, 2001–2025.',
     history: 'Leduslaikmeta veģetācija, biomi un zeme pēc cilvēkiem.',
