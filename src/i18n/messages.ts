@@ -24,7 +24,7 @@ const en = {
   meta: {
     defaultTitle: 'Fix Planet — Problems. Fixes. Proof.',
     defaultDescription:
-      'A living atlas of technologies that repair the planet — clear problems, working solutions, real evidence.',
+      'An atlas of Earth systems and of technologies that can still repair them — forests, oceans, wildlife, law, and sourced maps.',
   },
   nav: {
     solutions: 'Solutions',
@@ -42,55 +42,55 @@ const en = {
   home: {
     heroAria: 'Site sections',
     choosePath: 'Choose a direction',
-    tagline: 'Analysis. Action. Result. The planet will not wait.',
+    tagline: 'Analysis. Action. Result.',
     globeLabel: 'Interactive Earth — drag to rotate',
     heroAlt: 'Solarpunk green city of vertical forests in a mountain valley, with a river, launch beam, and a large planet in the sky',
     latest: 'Latest solutions',
-    latestHeading: 'Real solutions. Measurable impact.',
+    latestHeading: 'Problem–fix cards already in use.',
     viewAll: 'View all solutions →',
     featuresAria: 'What Fix Planet covers',
     tiles: {
-      solutions: 'Proven technologies with real-world impact.',
-      innovations: 'Labs and pilots aimed at planetary-scale problems.',
-      terraforming: 'Landscape megaprojects and a separate shelf of climate interventions — failure-honest.',
-      maps: 'A sourced atlas of Earth systems and the political world.',
-      law: 'Real statutes, pending bills, and labeled ideas — ecology, AI, animals.',
-      wildlife: 'Species, habitats, and how they changed after we spread.',
-      forests: 'Satellite canopy, reconstructions, and sourced forest numbers.',
+      solutions: 'Technologies already in use: water, forests, waste, cities, materials, oceans, energy.',
+      innovations: 'Laboratories and pilots — carbon, energy, AI — and why perpetual motion fails.',
+      terraforming: 'Landscape megaprojects, and a separate shelf of climate interventions.',
+      maps: 'Public maps of Earth systems and the political world.',
+      law: 'Statutes, bills, and labeled ideas — ecology, AI, animals.',
+      wildlife: 'Species, habitats, and how they changed after people spread.',
+      forests: 'What a forest is, how the canopy is mapped, and sourced numbers.',
       oceans: 'Currents, salinity, temperature, and pollution — sourced maps of the living ocean.',
-      book: 'New World — what’s broken, and what we can still fix.',
+      book: 'New World — what is broken, and what we can still fix.',
       about: 'The project and the curator behind Fix Planet.',
     },
   },
   features: {
     solutions: {
       title: 'Solutions that work',
-      text: 'Proven technologies with real-world impact.',
+      text: 'Technologies already in use, paired with a planetary problem.',
     },
     innovations: {
-      title: 'Frontier, with proof',
-      text: 'Labs and pilots that aim at planetary-scale problems — and the myths that do not.',
+      title: 'Labs, with limits',
+      text: 'Carbon, energy, and AI — plus the myths that do not belong.',
     },
     maps: {
-      title: 'Mapped for action',
-      text: 'A sourced atlas of conflict, Earth systems, and the political world.',
+      title: 'A sourced atlas',
+      text: 'Conflict, Earth systems, and the political world, each with a named map.',
     },
     law: {
-      title: 'Law for the future',
-      text: 'Enacted rules, bills under consideration, and ideas that are not law yet.',
+      title: 'Law, labeled',
+      text: 'Texts in force, bills under consideration, and ideas that are not law yet.',
     },
     wildlife: {
-      title: 'Wildlife matters',
-      text: 'Protecting species and habitats is our shared duty.',
+      title: 'Wildlife',
+      text: 'Species and habitats, and how they changed after people spread.',
     },
   },
   solutionsPage: {
     metaTitle: 'Solutions — Fix Planet',
     metaDescription:
-      'Problem-to-technology cards: water, forests, waste, cities, materials, oceans, and energy.',
+      'Each card pairs a planetary problem with a technology already in use: water, forests, waste, cities, materials, oceans, energy.',
     eyebrow: 'Problem → Fix',
     title: 'Solutions',
-    lead: 'Each card pairs a planetary problem with a technology that already works. Filter by topic, then follow the proof.',
+    lead: 'Each card pairs a planetary problem with a technology already in use. Filter by topic, then follow the sources.',
     filterAria: 'Filter solutions by topic',
     chooseTopic: 'Choose a topic',
     all: 'All',
@@ -124,7 +124,7 @@ const en = {
       'An encyclopedia of how animal populations changed after modern humans spread: surviving, endangered, and extinct species, with a map of when people reached each continent.',
     eyebrow: 'Encyclopedia',
     title: 'Wildlife',
-    lead: 'Our species first — where we arose, where we went, and how the largest animals changed after we arrived as a new predator.',
+    lead: 'Where our species arose, where we went, and how the largest animals changed after we arrived as a new predator.',
     heroEyebrow: 'Our species',
     appearedLabel: 'Appeared',
     appeared:
@@ -210,8 +210,8 @@ const en = {
       'Fix Planet is curated by Aigars Abramovics: practical ways to heal water, forests, energy, waste, wildlife, and the rules that protect them.',
     eyebrow: 'The project',
     title: 'About Fix Planet',
-    lead: 'Practical ways to heal the systems we depend on — collected, paired with proof, and kept honest.',
-    p1: 'Fix Planet collects practical ways to heal the systems we depend on: water, forests, energy, waste, wildlife, and the rules that protect them.',
+    lead: 'A curated atlas of Earth systems and of what can still be repaired: water, forests, energy, waste, wildlife, and the rules that protect them.',
+    p1: 'Fix Planet collects how those systems work and which technologies, laws, and habits already change them. Each card points to a named source.',
     p2Before: 'We pair each problem with a technology or approach that already works — then point to proof. The project is curated by ',
     p2After: ', an investor and writer focused on green technology and a livable future.',
     p3Before: 'The longer argument lives in the ',
@@ -237,7 +237,7 @@ const en = {
     inside: 'Inside',
     bullets: [
       'Pressures on water, forests, climate, and wildlife',
-      'Solutions that already exist, not slogans',
+      'Technologies already in use, not slogans',
       'Ideas for rules and habits that protect nature',
     ],
     buy: 'Buy on Amazon →',
@@ -269,19 +269,19 @@ const en = {
   donate: {
     metaTitle: 'Donate — Fix Planet',
     metaDescription:
-      'Support Fix Planet when donations open. No checkout on this page yet.',
+      'Support Fix Planet when donations open. Payments are not live on this page yet.',
     title: 'Support Fix Planet',
     lead: 'Fix Planet is a living atlas. When donations open, they will keep the atlas public and independent.',
     useHeading: 'Where support will go',
-    use: 'Research time, hosting, openly licensed maps, translations, and keeping the encyclopedia free to read. Not ads. Not a political campaign.',
-    statusHeading: 'Payments are not open yet',
+    use: 'Research time, hosting, openly licensed maps, translations, and keeping the encyclopedia free to read.',
+    statusHeading: 'Donations are not open yet',
     status:
-      'There is no checkout on this page. We have not connected Stripe, PayPal, or Link. When a real processor is live, this page will send you there.',
-    thanks: 'If you want to help before then, share the atlas and the book.',
+      'There is no checkout on this page. When a real payment processor is live, this page will send you there.',
+    thanks: 'Until then, sharing the atlas and the book helps.',
   },
   footer: {
     blurb:
-      'A living atlas of technologies that repair the planet. Clear problems, working solutions, real evidence.',
+      'An atlas of the living planet, and of technologies and rules that can still repair it.',
     explore: 'Explore',
     theBook: 'The book',
     comingSoon: 'Coming soon',
@@ -309,7 +309,7 @@ const ru: typeof en = {
   meta: {
     defaultTitle: 'Fix Planet — Проблемы. Решения. Доказательства.',
     defaultDescription:
-      'Живой атлас технологий, которые восстанавливают планету, — ясные проблемы, работающие решения, реальные доказательства.',
+      'Атлас систем Земли и технологий, которые ещё могут их чинить, — леса, океаны, дикая природа, право и карты с источниками.',
   },
   nav: {
     solutions: 'Решения',
@@ -327,21 +327,21 @@ const ru: typeof en = {
   home: {
     heroAria: 'Разделы сайта',
     choosePath: 'Выберите направление',
-    tagline: 'Анализ. Действия. Результат. Планета не ждёт.',
+    tagline: 'Анализ. Действия. Результат.',
     globeLabel: 'Интерактивная Земля — перетащите, чтобы вращать',
     heroAlt: 'Соларпанк-город вертикальных лесов в горной долине: река, луч старта и большая планета в небе',
     latest: 'Новые решения',
-    latestHeading: 'Реальные решения. Измеримый результат.',
+    latestHeading: 'Карточки «проблема — решение», уже в работе.',
     viewAll: 'Все решения →',
     featuresAria: 'О чём Fix Planet',
     tiles: {
-      solutions: 'Проверенные технологии с реальным эффектом.',
-      innovations: 'Лаборатории и пилоты для планетарных проблем.',
-      terraforming: 'Ландшафтные мегапроекты и отдельная полка климатических вмешательств — без прикрас.',
-      maps: 'Атлас с источниками: системы Земли и политический мир.',
-      law: 'Реальные статуты, рассматриваемые проекты и помеченные идеи — экология, ИИ, животные.',
-      wildlife: 'Виды, места обитания и то, как они изменились после нашего расселения.',
-      forests: 'Спутниковая крона, реконструкции и лесные цифры с источниками.',
+      solutions: 'Технологии, которые уже используют: вода, леса, отходы, города, материалы, океаны, энергия.',
+      innovations: 'Лаборатории и пилоты — углерод, энергия, ИИ — и почему вечный двигатель не работает.',
+      terraforming: 'Ландшафтные мегапроекты и отдельная полка климатических вмешательств.',
+      maps: 'Открытые карты систем Земли и политического мира.',
+      law: 'Законы, законопроекты и помеченные идеи — экология, ИИ, животные.',
+      wildlife: 'Виды, места обитания и то, как они изменились после расселения людей.',
+      forests: 'Что такое лес, как видят крону спутники, цифры с источниками.',
       oceans: 'Течения, солёность, температура и загрязнение — карты живого океана с источниками.',
       book: 'New World — что сломано и что мы ещё можем исправить.',
       about: 'Проект и куратор Fix Planet.',
@@ -350,23 +350,23 @@ const ru: typeof en = {
   features: {
     solutions: {
       title: 'Решения, которые работают',
-      text: 'Проверенные технологии с реальным эффектом.',
+      text: 'Технологии, которые уже используют, рядом с планетарной проблемой.',
     },
     innovations: {
-      title: 'Рубеж — с доказательствами',
-      text: 'Лаборатории и пилоты, которые целятся в планетарные проблемы, — и мифы, которые туда не входят.',
+      title: 'Лаборатории, с пределами',
+      text: 'Углерод, энергия и ИИ — и мифы, которым там не место.',
     },
     maps: {
-      title: 'Карта для действий',
-      text: 'Атлас с источниками: конфликты, системы Земли и политический мир.',
+      title: 'Атлас с источниками',
+      text: 'Конфликты, системы Земли и политический мир — у каждой карты названный источник.',
     },
     law: {
-      title: 'Право будущего',
-      text: 'Действующие правила, законопроекты на рассмотрении и идеи, которые ещё не закон.',
+      title: 'Право, с пометками',
+      text: 'Действующие тексты, рассматриваемые проекты и идеи, которые ещё не закон.',
     },
     wildlife: {
-      title: 'Дикая природа важна',
-      text: 'Защита видов и мест обитания — наша общая обязанность.',
+      title: 'Дикая природа',
+      text: 'Виды и места обитания и то, как они изменились после расселения людей.',
     },
   },
   solutionsPage: {
@@ -375,7 +375,7 @@ const ru: typeof en = {
       'Карточки «проблема → технология»: вода, леса, отходы, города, материалы, океаны и энергия.',
     eyebrow: 'Проблема → Решение',
     title: 'Решения',
-    lead: 'На каждой карточке — планетарная проблема и технология, которая уже работает. Отфильтруйте по теме и перейдите к доказательствам.',
+    lead: 'На каждой карточке — планетарная проблема и технология, которую уже используют. Отфильтруйте по теме и перейдите к источникам.',
     filterAria: 'Фильтр решений по теме',
     chooseTopic: 'Выберите тему',
     all: 'Все',
@@ -409,7 +409,7 @@ const ru: typeof en = {
       'Энциклопедия того, как изменились популяции животных после расселения современного человека: выжившие, находящиеся под угрозой и вымершие виды, с картой того, когда люди дошли до каждого континента.',
     eyebrow: 'Энциклопедия',
     title: 'Природа',
-    lead: 'Сначала наш вид — где мы возникли, куда ушли и как изменились самые крупные животные после того, как мы пришли как новый хищник.',
+    lead: 'Где возник наш вид, куда мы ушли и как изменились самые крупные животные после того, как мы пришли как новый хищник.',
     heroEyebrow: 'Наш вид',
     appearedLabel: 'Появился',
     appeared:
@@ -495,8 +495,8 @@ const ru: typeof en = {
       'Fix Planet ведёт Aigars Abramovics: практические способы восстановить воду, леса, энергию, отходы, дикую природу и правила, которые их защищают.',
     eyebrow: 'Проект',
     title: 'О Fix Planet',
-    lead: 'Практические способы восстановить системы, от которых мы зависим, — собранные, сопоставленные с доказательствами и без прикрас.',
-    p1: 'Fix Planet собирает практические способы восстановить системы, от которых мы зависим: воду, леса, энергию, отходы, дикую природу и правила, которые их защищают.',
+    lead: 'Курируемый атлас систем Земли и того, что ещё можно починить: вода, леса, энергия, отходы, дикая природа и правила, которые их защищают.',
+    p1: 'Fix Planet собирает, как эти системы устроены и какие технологии, законы и привычки уже их меняют. На каждой карточке — названный источник.',
     p2Before:
       'Каждую проблему мы связываем с технологией или подходом, которые уже работают, — и указываем на доказательства. Проект ведёт ',
     p2After:
@@ -525,7 +525,7 @@ const ru: typeof en = {
     inside: 'Содержание',
     bullets: [
       'Давление на воду, леса, климат и дикую природу',
-      'Решения, которые уже существуют, а не лозунги',
+      'Технологии, которые уже используют, а не лозунги',
       'Идеи правил и привычек, которые защищают природу',
     ],
     buy: 'Купить на Amazon →',
@@ -561,15 +561,15 @@ const ru: typeof en = {
     title: 'Поддержать Fix Planet',
     lead: 'Fix Planet — живой атлас. Когда пожертвования откроются, они помогут держать атлас открытым и независимым.',
     useHeading: 'Куда пойдут средства',
-    use: 'Время на исследования, хостинг, карты с открытой лицензией, переводы и бесплатный доступ к энциклопедии. Не реклама. Не политическая кампания.',
-    statusHeading: 'Оплаты ещё нет',
+    use: 'Время на исследования, хостинг, карты с открытой лицензией, переводы и бесплатный доступ к энциклопедии.',
+    statusHeading: 'Пожертвования ещё не открыты',
     status:
-      'На этой странице нет оформления платежа. Stripe, PayPal и Link ещё не подключены. Когда появится настоящий процессор, мы отправим вас туда.',
+      'На этой странице нет оформления платежа. Когда появится настоящий платёжный сервис, мы отправим вас туда.',
     thanks: 'Пока можно помочь иначе — делиться атласом и книгой.',
   },
   footer: {
     blurb:
-      'Живой атлас технологий, которые восстанавливают планету. Ясные проблемы, работающие решения, реальные доказательства.',
+      'Атлас живой планеты и технологий и правил, которые ещё могут её чинить.',
     explore: 'Разделы',
     theBook: 'Книга',
     comingSoon: 'Скоро',
@@ -597,7 +597,7 @@ const pl: typeof en = {
   meta: {
     defaultTitle: 'Fix Planet — Problemy. Rozwiązania. Dowody.',
     defaultDescription:
-      'Żywy atlas technologii, które naprawiają planetę — jasne problemy, działające rozwiązania, realne dowody.',
+      'Atlas systemów Ziemi i technologii, które jeszcze mogą je naprawić — lasy, oceany, przyroda, prawo i mapy ze źródłami.',
   },
   nav: {
     solutions: 'Rozwiązania',
@@ -615,21 +615,21 @@ const pl: typeof en = {
   home: {
     heroAria: 'Działy serwisu',
     choosePath: 'Wybierz kierunek',
-    tagline: 'Analiza. Działanie. Wynik. Planeta nie poczeka.',
+    tagline: 'Analiza. Działanie. Wynik.',
     globeLabel: 'Interaktywna Ziemia — przeciągnij, aby obrócić',
     heroAlt: 'Solarpunkowe zielone miasto pionowych lasów w górskiej dolinie: rzeka, promień startu i wielka planeta na niebie',
     latest: 'Najnowsze rozwiązania',
-    latestHeading: 'Realne rozwiązania. Mierzalny efekt.',
+    latestHeading: 'Karty problem–rozwiązanie, już w użyciu.',
     viewAll: 'Wszystkie rozwiązania →',
     featuresAria: 'Co obejmuje Fix Planet',
     tiles: {
-      solutions: 'Sprawdzone technologie z realnym skutkiem.',
-      innovations: 'Laboratoria i pilotaże wobec problemów planetarnych.',
-      terraforming: 'Megaprojekty krajobrazowe i osobna półka interwencji klimatycznych — bez hype’u.',
-      maps: 'Atlas ze źródłami: systemy Ziemi i świat polityczny.',
-      law: 'Prawdziwe statuty, rozpatrywane projekty i oznaczone idee — ekologia, SI, zwierzęta.',
-      wildlife: 'Gatunki, siedliska i to, jak zmieniły się po naszym rozprzestrzenieniu.',
-      forests: 'Satelitarna korona, rekonstrukcje i leśne liczby ze źródłami.',
+      solutions: 'Technologie już w użyciu: woda, lasy, odpady, miasta, materiały, oceany, energia.',
+      innovations: 'Laboratoria i pilotaże — węgiel, energia, SI — i dlaczego perpetuum mobile nie działa.',
+      terraforming: 'Megaprojekty krajobrazowe i osobna półka interwencji klimatycznych.',
+      maps: 'Publiczne mapy systemów Ziemi i świata politycznego.',
+      law: 'Ustawy, projekty i oznaczone idee — ekologia, SI, zwierzęta.',
+      wildlife: 'Gatunki, siedliska i to, jak zmieniły się po rozprzestrzenieniu ludzi.',
+      forests: 'Czym jest las, jak satelita widzi korony, liczby ze źródłami.',
       oceans: 'Prądy, zasolenie, temperatura i zanieczyszczenie — mapy żywego oceanu ze źródłami.',
       book: 'New World — co jest zepsute i co wciąż możemy naprawić.',
       about: 'Projekt i kurator Fix Planet.',
@@ -638,23 +638,23 @@ const pl: typeof en = {
   features: {
     solutions: {
       title: 'Rozwiązania, które działają',
-      text: 'Sprawdzone technologie z realnym skutkiem.',
+      text: 'Technologie już w użyciu, zestawione z planetarnym problemem.',
     },
     innovations: {
-      title: 'Granica, z dowodem',
-      text: 'Laboratoria i pilotaże wobec problemów planetarnych — oraz mity, które tam nie należą.',
+      title: 'Laboratoria, z granicami',
+      text: 'Węgiel, energia i SI — oraz mity, które tam nie należą.',
     },
     maps: {
-      title: 'Mapa do działania',
-      text: 'Atlas ze źródłami: konflikty, systemy Ziemi i świat polityczny.',
+      title: 'Atlas ze źródłami',
+      text: 'Konflikty, systemy Ziemi i świat polityczny — każda mapa z nazwanym źródłem.',
     },
     law: {
-      title: 'Prawo dla przyszłości',
-      text: 'Obowiązujące reguły, rozpatrywane projekty i idee, które jeszcze nie są prawem.',
+      title: 'Prawo, z etykietą',
+      text: 'Teksty obowiązujące, projekty rozpatrywane i idee, które jeszcze nie są prawem.',
     },
     wildlife: {
-      title: 'Przyroda ma znaczenie',
-      text: 'Ochrona gatunków i siedlisk to nasz wspólny obowiązek.',
+      title: 'Przyroda',
+      text: 'Gatunki i siedliska i to, jak zmieniły się po rozprzestrzenieniu ludzi.',
     },
   },
   solutionsPage: {
@@ -663,7 +663,7 @@ const pl: typeof en = {
       'Karty problem → technologia: woda, lasy, odpady, miasta, materiały, oceany i energia.',
     eyebrow: 'Problem → Rozwiązanie',
     title: 'Rozwiązania',
-    lead: 'Każda karta łączy planetarny problem z technologią, która już działa. Filtruj według tematu, potem sprawdź dowody.',
+    lead: 'Każda karta łączy planetarny problem z technologią, która już jest w użyciu. Filtruj według tematu, potem sprawdź źródła.',
     filterAria: 'Filtruj rozwiązania według tematu',
     chooseTopic: 'Wybierz temat',
     all: 'Wszystkie',
@@ -697,7 +697,7 @@ const pl: typeof en = {
       'Encyklopedia tego, jak zmieniły się populacje zwierząt po rozprzestrzenieniu się współczesnego człowieka: gatunki, które przetrwały, zagrożone i wymarłe, z mapą tego, kiedy ludzie dotarli na każdy kontynent.',
     eyebrow: 'Encyklopedia',
     title: 'Przyroda',
-    lead: 'Najpierw nasz gatunek — gdzie powstał, dokąd poszedł i jak zmieniły się największe zwierzęta, gdy przyszliśmy jako nowy drapieżnik.',
+    lead: 'Gdzie powstał nasz gatunek, dokąd poszedł i jak zmieniły się największe zwierzęta, gdy przyszliśmy jako nowy drapieżnik.',
     heroEyebrow: 'Nasz gatunek',
     appearedLabel: 'Pojawił się',
     appeared:
@@ -783,8 +783,8 @@ const pl: typeof en = {
       'Fix Planet prowadzi Aigars Abramovics: praktyczne sposoby naprawy wody, lasów, energii, odpadów, przyrody i reguł, które je chronią.',
     eyebrow: 'Projekt',
     title: 'O Fix Planet',
-    lead: 'Praktyczne sposoby naprawy systemów, od których zależymy — zebrane, zestawione z dowodami i trzymane w ryzach uczciwości.',
-    p1: 'Fix Planet zbiera praktyczne sposoby naprawy systemów, od których zależymy: wody, lasów, energii, odpadów, przyrody i reguł, które je chronią.',
+    lead: 'Kuratorowany atlas systemów Ziemi i tego, co jeszcze da się naprawić: woda, lasy, energia, odpady, przyroda i reguły, które je chronią.',
+    p1: 'Fix Planet zbiera, jak te systemy działają i które technologie, prawa i nawyki już je zmieniają. Każda karta wskazuje nazwane źródło.',
     p2Before:
       'Każdy problem łączymy z technologią lub podejściem, które już działa — i wskazujemy dowody. Projekt prowadzi ',
     p2After:
@@ -813,7 +813,7 @@ const pl: typeof en = {
     inside: 'W środku',
     bullets: [
       'Presja na wodę, lasy, klimat i przyrodę',
-      'Rozwiązania, które już istnieją, nie hasła',
+      'Technologie już w użyciu, nie hasła',
       'Idee reguł i nawyków, które chronią naturę',
     ],
     buy: 'Kup na Amazon →',
@@ -849,15 +849,15 @@ const pl: typeof en = {
     title: 'Wesprzyj Fix Planet',
     lead: 'Fix Planet to żywy atlas. Gdy darowizny będą otwarte, utrzymają atlas publiczny i niezależny.',
     useHeading: 'Na co pójdzie wsparcie',
-    use: 'Czas na badania, hosting, mapy na otwartej licencji, tłumaczenia i darmowy dostęp do encyklopedii. Nie reklamy. Nie kampania polityczna.',
-    statusHeading: 'Płatności nie są jeszcze otwarte',
+    use: 'Czas na badania, hosting, mapy na otwartej licencji, tłumaczenia i darmowy dostęp do encyklopedii.',
+    statusHeading: 'Darowizny nie są jeszcze otwarte',
     status:
-      'Na tej stronie nie ma kasy. Nie podłączyliśmy Stripe, PayPal ani Link. Gdy pojawi się prawdziwy operator, ta strona tam Cię skieruje.',
+      'Na tej stronie nie ma kasy. Gdy pojawi się prawdziwy operator płatności, ta strona tam Cię skieruje.',
     thanks: 'Do tego czasu możesz pomóc, udostępniając atlas i książkę.',
   },
   footer: {
     blurb:
-      'Żywy atlas technologii, które naprawiają planetę. Jasne problemy, działające rozwiązania, realne dowody.',
+      'Atlas żywej planety oraz technologii i reguł, które jeszcze mogą ją naprawić.',
     explore: 'Przeglądaj',
     theBook: 'Książka',
     comingSoon: 'Wkrótce',
@@ -885,7 +885,7 @@ const lv: typeof en = {
   meta: {
     defaultTitle: 'Fix Planet — Problēmas. Risinājumi. Pierādījumi.',
     defaultDescription:
-      'Dzīvais atlants tehnoloģijām, kas labo planētu, — skaidras problēmas, risinājumi, kas darbojas, īsti pierādījumi.',
+      'Atlants Zemes sistēmām un tehnoloģijām, kas tās vēl var labot, — meži, okeāni, savvaļa, tiesības un kartes ar avotiem.',
   },
   nav: {
     solutions: 'Risinājumi',
@@ -903,21 +903,21 @@ const lv: typeof en = {
   home: {
     heroAria: 'Vietnes sadaļas',
     choosePath: 'Izvēlies virzienu',
-    tagline: 'Analīze. Rīcība. Rezultāts. Planēta negaida.',
+    tagline: 'Analīze. Rīcība. Rezultāts.',
     globeLabel: 'Interaktīva Zeme — velc, lai pagrieztu',
     heroAlt: 'Solarpanka zaļā pilsēta ar vertikāliem mežiem kalnu ielejā: upe, starta stars un liela planēta debesīs',
     latest: 'Jaunākie risinājumi',
-    latestHeading: 'Īsti risinājumi. Izmērāms efekts.',
+    latestHeading: 'Kartītes «problēma — risinājums», jau lietošanā.',
     viewAll: 'Visi risinājumi →',
     featuresAria: 'Ko aptver Fix Planet',
     tiles: {
-      solutions: 'Pārbaudītas tehnoloģijas ar reālu ietekmi.',
-      innovations: 'Laboratorijas un izmēģinājumi pret planētas mēroga problēmām.',
-      terraforming: 'Ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās — bez haipa.',
-      maps: 'Atlants ar avotiem: Zemes sistēmas un politiskā pasaule.',
-      law: 'Īsti statūti, izskatīti projekti un marķētas idejas — ekoloģija, MI, dzīvnieki.',
-      wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc mūsu izplatīšanās.',
-      forests: 'Satelīta vainags, rekonstrukcijas un meža skaitļi ar avotiem.',
+      solutions: 'Tehnoloģijas, ko jau lieto: ūdens, meži, atkritumi, pilsētas, materiāli, okeāni, enerģija.',
+      innovations: 'Laboratorijas un izmēģinājumi — ogleklis, enerģija, MI — un kāpēc mūžīgais dzinējs neizdodas.',
+      terraforming: 'Ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās.',
+      maps: 'Publiskas kartes par Zemes sistēmām un politisko pasauli.',
+      law: 'Likumi, projekti un marķētas idejas — ekoloģija, MI, dzīvnieki.',
+      wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc cilvēku izplatīšanās.',
+      forests: 'Kas ir mežs, kā satelīts redz vainagu, skaitļi ar avotiem.',
       oceans: 'Straumes, sāļums, temperatūra un piesārņojums — dzīvā okeāna kartes ar avotiem.',
       book: 'New World — kas ir salūzis un ko vēl varam salabot.',
       about: 'Projekts un Fix Planet kurators.',
@@ -926,23 +926,23 @@ const lv: typeof en = {
   features: {
     solutions: {
       title: 'Risinājumi, kas darbojas',
-      text: 'Pārbaudītas tehnoloģijas ar reālu ietekmi.',
+      text: 'Tehnoloģijas, ko jau lieto, līdzās planētas problēmai.',
     },
     innovations: {
-      title: 'Pierobeža ar pierādījumiem',
-      text: 'Laboratorijas un izmēģinājumi pret planētas mēroga problēmām — un mīti, kas tur neder.',
+      title: 'Laboratorijas ar robežām',
+      text: 'Ogleklis, enerģija un MI — un mīti, kas tur neder.',
     },
     maps: {
-      title: 'Karte rīcībai',
-      text: 'Atlants ar avotiem: konflikti, Zemes sistēmas un politiskā pasaule.',
+      title: 'Atlants ar avotiem',
+      text: 'Konflikti, Zemes sistēmas un politiskā pasaule — katrai kartei nosaukts avots.',
     },
     law: {
-      title: 'Tiesības nākotnei',
-      text: 'Spēkā esoši noteikumi, izskatīšanā esoši projekti un idejas, kas vēl nav likums.',
+      title: 'Tiesības ar etiķeti',
+      text: 'Spēkā esoši teksti, izskatīšanā esoši projekti un idejas, kas vēl nav likums.',
     },
     wildlife: {
-      title: 'Savvaļas daba ir svarīga',
-      text: 'Sugu un dzīvotņu aizsardzība ir mūsu kopīgais pienākums.',
+      title: 'Savvaļa',
+      text: 'Sugas un dzīvotnes un tas, kā tās mainījās pēc cilvēku izplatīšanās.',
     },
   },
   solutionsPage: {
@@ -951,7 +951,7 @@ const lv: typeof en = {
       'Kartītes «problēma → tehnoloģija»: ūdens, meži, atkritumi, pilsētas, materiāli, okeāni un enerģija.',
     eyebrow: 'Problēma → Risinājums',
     title: 'Risinājumi',
-    lead: 'Katra karte savieno planētas problēmu ar tehnoloģiju, kas jau darbojas. Filtrē pēc tēmas un dodies pie pierādījumiem.',
+    lead: 'Katra karte savieno planētas problēmu ar tehnoloģiju, ko jau lieto. Filtrē pēc tēmas un dodies pie avotiem.',
     filterAria: 'Filtrēt risinājumus pēc tēmas',
     chooseTopic: 'Izvēlies tēmu',
     all: 'Visi',
@@ -985,7 +985,7 @@ const lv: typeof en = {
       'Enciklopēdija par to, kā dzīvnieku populācijas mainījās pēc mūsdienu cilvēka izplatīšanās: izdzīvojušās, apdraudētās un izmirstās sugas, ar karti, kad cilvēki sasniedza katru kontinentu.',
     eyebrow: 'Enciklopēdija',
     title: 'Savvaļa',
-    lead: 'Vispirms mūsu suga — kur tā radās, kur gāja un kā mainījās lielākie dzīvnieki pēc tam, kad ienācām kā jauns plēsējs.',
+    lead: 'Kur radās mūsu suga, kur gāja un kā mainījās lielākie dzīvnieki pēc tam, kad ienācām kā jauns plēsējs.',
     heroEyebrow: 'Mūsu suga',
     appearedLabel: 'Parādījās',
     appeared:
@@ -1071,8 +1071,8 @@ const lv: typeof en = {
       'Fix Planet vada Aigars Abramovics: praktiski veidi, kā dziedēt ūdeni, mežus, enerģiju, atkritumus, savvaļas dabu un noteikumus, kas tos sargā.',
     eyebrow: 'Projekts',
     title: 'Par Fix Planet',
-    lead: 'Praktiski veidi, kā dziedēt sistēmas, no kurām esam atkarīgi, — savākti, savienoti ar pierādījumiem un turēti godīgi.',
-    p1: 'Fix Planet vāc praktiskus veidus, kā dziedēt sistēmas, no kurām esam atkarīgi: ūdeni, mežus, enerģiju, atkritumus, savvaļas dabu un noteikumus, kas tos sargā.',
+    lead: 'Kurēts atlants Zemes sistēmām un tam, ko vēl var salabot: ūdens, meži, enerģija, atkritumi, savvaļas daba un noteikumi, kas tos sargā.',
+    p1: 'Fix Planet vāc, kā šīs sistēmas darbojas un kuras tehnoloģijas, likumi un ieradumi tās jau maina. Katrai kartītei ir nosaukts avots.',
     p2Before:
       'Katrai problēmai mēs pievienojam tehnoloģiju vai pieeju, kas jau darbojas, — un norādām uz pierādījumiem. Projektu vada ',
     p2After:
@@ -1101,7 +1101,7 @@ const lv: typeof en = {
     inside: 'Iekšā',
     bullets: [
       'Spiediens uz ūdeni, mežiem, klimatu un savvaļas dabu',
-      'Risinājumi, kas jau pastāv, ne saukļi',
+      'Tehnoloģijas, ko jau lieto, ne saukļi',
       'Idejas noteikumiem un ieradumiem, kas sargā dabu',
     ],
     buy: 'Pirkt Amazon →',
@@ -1137,15 +1137,15 @@ const lv: typeof en = {
     title: 'Atbalsti Fix Planet',
     lead: 'Fix Planet ir dzīvais atlants. Kad ziedojumi būs atvērti, tie palīdzēs turēt atlantu atvērtu un neatkarīgu.',
     useHeading: 'Kur ies atbalsts',
-    use: 'Pētījumu laiks, hostings, atklāti licencētas kartes, tulkojumi un bezmaksas enciklopēdija. Ne reklāmas. Ne politiska kampaņa.',
-    statusHeading: 'Maksājumi vēl nav atvērti',
+    use: 'Pētījumu laiks, hostings, atklāti licencētas kartes, tulkojumi un bezmaksas enciklopēdija.',
+    statusHeading: 'Ziedojumi vēl nav atvērti',
     status:
-      'Šajā lapā nav kases. Stripe, PayPal un Link vēl nav pieslēgti. Kad būs īsts procesors, šī lapa tevi tur aizvedīs.',
+      'Šajā lapā nav kases. Kad būs īsts maksājumu operators, šī lapa tevi tur aizvedīs.',
     thanks: 'Līdz tam vari palīdzēt, daloties ar atlantu un grāmatu.',
   },
   footer: {
     blurb:
-      'Dzīvais atlants tehnoloģijām, kas labo planētu. Skaidras problēmas, risinājumi, kas darbojas, īsti pierādījumi.',
+      'Dzīvās planētas atlants un tehnoloģijas un noteikumi, kas to vēl var labot.',
     explore: 'Sadaļas',
     theBook: 'Grāmata',
     comingSoon: 'Drīzumā',

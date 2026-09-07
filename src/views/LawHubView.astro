@@ -39,8 +39,10 @@ const page = getLawPage(locale);
       <div class="wildlife-copy-card law-panel">
         <div class="eyebrow">{page.eyebrow}</div>
         <h2>{page.title}</h2>
-        <p class="wildlife-framing">{page.lead}</p>
-        <p class="borders-honesty law-honesty">{page.honesty}</p>
+        <div class="encyc-lede">
+          <p>{page.lead}</p>
+        </div>
+        <p class="source-note">{page.honesty}</p>
       </div>
     </div>
   </section>

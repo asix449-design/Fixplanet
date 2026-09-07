@@ -1131,20 +1131,24 @@ a.solution-card:hover {
   margin-top: 1.15rem;
 }
 
+.encyc-lede,
 .oceans-lede {
   max-width: 42rem;
   margin: -0.25rem 0 1.15rem;
 }
 
+.encyc-lede p,
 .oceans-lede p {
   color: var(--muted);
   margin: 0 0 0.85rem;
 }
 
+.encyc-lede p:last-child,
 .oceans-lede p:last-child {
   margin-bottom: 0;
 }
 
+.source-note,
 .oceans-source-note {
   max-width: 46rem;
   margin: 0.45rem 0 1rem;

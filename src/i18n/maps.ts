@@ -38,11 +38,11 @@ export type MapsPage = {
 const pageEn: MapsPage = {
   metaTitle: 'Maps — Fix Planet',
   metaDescription:
-    'A curated atlas of public maps: conflict, languages, religion, crime, pollution, energy, minerals, borders, forests, water, and people — each with a named source.',
+    'Public maps of conflict, languages, religion, resources, forests, water, and the political world — each with a named source.',
   eyebrow: 'Map room',
   title: 'Maps',
   lead:
-    'A small, sourced atlas — not a live war room and not an infinite database. Each card is a public map we can point to: who made it, what year, how to read it, and what it cannot tell you. History of borders is a century timeline from 1 CE to now.',
+    'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders is a century-by-century timeline from 1 CE to now.',
   filterAria: 'Filter maps by category',
   all: 'All',
   cardCta: 'Read the card →',
@@ -55,7 +55,7 @@ const pageEn: MapsPage = {
   related: 'Related maps',
   back: '← Maps',
   schematicNote:
-    'Fix Planet overview based on the named source — not that publisher’s official graphic. Open the source map to verify the current layer.',
+    'A Fix Planet overview after the named source — not that publisher’s official graphic. Open the source map for the current layer.',
   schematicBadge: 'Fix Planet overview',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors, deep blue oceans, and ice caps, with no political borders or labels',
@@ -80,11 +80,11 @@ const pageEn: MapsPage = {
 const pageRu: MapsPage = {
   metaTitle: 'Карты — Fix Planet',
   metaDescription:
-    'Курируемый атлас открытых карт: конфликты, языки, религии, преступность, загрязнение, энергия, ископаемые, границы, леса, вода и население — у каждой названный источник.',
+    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира — у каждой названный источник.',
   eyebrow: 'Картографическая',
   title: 'Карты',
   lead:
-    'Небольшой атлас с источниками — не штаб войны и не бесконечная база. На каждой карточке — публичная карта: кто её сделал, за какой год, как её читать и чего она не показывает. «История границ» — лента столетий от 1 н. э. до сейчас.',
+    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» — лента столетий от 1 года н. э. до сегодня.',
   filterAria: 'Фильтр карт по теме',
   all: 'Все',
   cardCta: 'Читать карточку →',
@@ -97,7 +97,7 @@ const pageRu: MapsPage = {
   related: 'Связанные карты',
   back: '← Карты',
   schematicNote:
-    'Обзор Fix Planet по названному источнику — не официальная графика издателя. Откройте исходную карту, чтобы проверить слой.',
+    'Обзор Fix Planet по названному источнику — не официальная графика издателя. Актуальный слой — на исходной карте.',
   schematicBadge: 'Обзор Fix Planet',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши, тёмно-синие океаны и ледники, без политических границ и подписей',
@@ -122,11 +122,11 @@ const pageRu: MapsPage = {
 const pagePl: MapsPage = {
   metaTitle: 'Mapy — Fix Planet',
   metaDescription:
-    'Kuratorowany atlas map publicznych: konflikty, języki, religie, przestępczość, zanieczyszczenie, energia, złoża, granice, lasy, woda i ludność — każda z nazwanym źródłem.',
+    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego — każda z nazwanym źródłem.',
   eyebrow: 'Mapownia',
   title: 'Mapy',
   lead:
-    'Mały atlas ze źródłami — nie sztab wojenny i nie nieskończona baza. Na każdej karcie jest publiczna mapa: kto ją zrobił, z którego roku, jak ją czytać i czego nie pokazuje. Historia granic to oś czasu stuleci od 1 n.e. do dziś.',
+    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic to oś czasu stuleci od 1 n.e. do dziś.',
   filterAria: 'Filtruj mapy według kategorii',
   all: 'Wszystkie',
   cardCta: 'Czytaj kartę →',
@@ -139,7 +139,7 @@ const pagePl: MapsPage = {
   related: 'Powiązane mapy',
   back: '← Mapy',
   schematicNote:
-    'Przegląd Fix Planet na podstawie wskazanego źródła — to nie oficjalna grafika wydawcy. Otwórz mapę źródłową, żeby sprawdzić warstwę.',
+    'Przegląd Fix Planet na podstawie wskazanego źródła — to nie oficjalna grafika wydawcy. Aktualna warstwa jest na mapie źródłowej.',
   schematicBadge: 'Przegląd Fix Planet',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów, głęboki błękit oceanów i czapy lodu, bez granic politycznych i etykiet',
@@ -164,11 +164,11 @@ const pagePl: MapsPage = {
 const pageLv: MapsPage = {
   metaTitle: 'Kartes — Fix Planet',
   metaDescription:
-    'Kurēts atklāto karšu atlants: konflikti, valodas, reliģijas, noziedzība, piesārņojums, enerģija, izrakteņi, robežas, meži, ūdens un iedzīvotāji — katrai ir nosaukts avots.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli — katrai ir nosaukts avots.',
   eyebrow: 'Karšu zāle',
   title: 'Kartes',
   lead:
-    'Neliels atlants ar avotiem — ne kara štābs un ne bezgalīga datubāze. Katrā kartītē ir publiska karte: kas to veidojis, par kuriem gadiem, kā to lasīt un ko tā neparāda. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai.',
   filterAria: 'Filtrēt kartes pēc kategorijas',
   all: 'Visas',
   cardCta: 'Lasīt kartīti →',
@@ -181,7 +181,7 @@ const pageLv: MapsPage = {
   related: 'Saistītās kartes',
   back: '← Kartes',
   schematicNote:
-    'Fix Planet pārskats pēc nosauktā avota — ne izdevēja oficiālā grafika. Atver avota karti, lai pārbaudītu slāni.',
+    'Fix Planet pārskats pēc nosauktā avota — ne izdevēja oficiālā grafika. Aktuālais slānis ir avota kartē.',
   schematicBadge: 'Fix Planet pārskats',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes krāsas, tumši zili okeāni un ledus cepures, bez politiskām robežām un uzrakstiem',
@@ -221,7 +221,7 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Coverage depends on local reporting, language, and access. Some wars are under-counted; some protests are over-visible. ACLED does not decide which side is legitimate. Do not treat a pin as a census of every death.',
     licenseNote:
-      'ACLED data may be used with attribution under their terms; we do not host the event database. The preview is a Fix Planet overview of well-known reporting theaters, not ACLED counts or their dashboard artwork. Open their map. Do not scrape or republish their full feed from this site.',
+      'ACLED data may be used with attribution under their terms. The live event database is on their dashboard. The preview is a Fix Planet overview of well-known reporting theatres, not ACLED counts or their artwork.',
     imageAlt:
       'Dark world map with red and orange dots clustered in well-known conflict-reporting regions, labeled as a Fix Planet overview',
   },
@@ -249,7 +249,7 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Ethnolinguistic maps are contested. Colonial borders, forced assimilation, and self-identification all cut across language trees. Treat this as a scholarly sketch of speech communities, never as a claim about blood, loyalty, or territory.',
     licenseNote:
-      'Glottolog content is typically CC BY. The preview is Wikimedia’s Primary Human Language Families Map (PiMaster3, CC BY-SA 3.0). The interactive Glottolog map is theirs — open it. We do not host Ethnologue’s commercial atlas.',
+      'Glottolog content is typically CC BY. The preview is Wikimedia’s Primary Human Language Families Map (PiMaster3, CC BY-SA 3.0). The interactive Glottolog map is theirs.',
     imageAlt:
       'Color-coded world map of primary language families: teal Indo-European areas, orange Afro-Asiatic, green Niger-Congo, magenta Sino-Tibetan, maroon Austronesian',
   },
@@ -261,9 +261,9 @@ const en: Record<string, MapCopy> = {
     howToRead:
       'A country’s majority label is a statistical estimate. Minorities still live there. “Unaffiliated” is not one culture. National borders are a poor container for belief. Use Pew’s tables and maps, not a slogan.',
     caveats:
-      'Religion maps are politically sensitive. States sometimes punish or inflate affiliation. Household surveys miss hidden practice. Do not read this as a ranking of virtue or a forecast of conflict. We do not host Pew’s copyrighted cartography.',
+      'Religion maps are politically sensitive. States sometimes punish or inflate affiliation. Household surveys miss hidden practice. This is not a ranking of virtue or a forecast of conflict.',
     licenseNote:
-      'Pew allows citation of findings with a link. Their maps and graphics remain theirs. The preview is a public-domain Wikimedia majority-religion map (TheGreenEditor), not Pew artwork. Open the Pew feature to verify composition estimates.',
+      'Pew allows citation of findings with a link. Their maps and graphics remain theirs. The preview is a public-domain Wikimedia majority-religion map (TheGreenEditor), not Pew artwork.',
     imageAlt:
       'Color-coded world map of majority-religion regions: purple Christian areas, green Muslim, orange Hindu, yellow Buddhist, grey unaffiliated',
   },
@@ -275,7 +275,7 @@ const en: Record<string, MapCopy> = {
     howToRead:
       'The usual unit is intentional homicides per 100,000 people per year. High rates often cluster in specific cities or corridors, not uniformly across a country. Compare like years; recording changes.',
     caveats:
-      'Under-reporting, legal definitions, and missing years differ by state. Conflict deaths are a different series (see UCDP). Do not invent a “most dangerous country” list from a thumbnail. We do not draw an unsourced choropleth here.',
+      'Under-reporting, legal definitions, and missing years differ by state. Conflict deaths are a different series (see UCDP). A thumbnail is not a “most dangerous country” list.',
     licenseNote:
       'UNODC statistical products are generally reusable with attribution. We host a cropped Our World in Data map export (CC BY) of UNODC homicide rates. Open their map for the current layer.',
     imageAlt:
@@ -289,7 +289,7 @@ const en: Record<string, MapCopy> = {
     howToRead:
       'Darker or higher values usually mean more annual average PM2.5. Cities can be far worse than a country mean. Indoor smoke and ozone are separate problems. WHO’s guideline (5 µg/m³ annual PM2.5) is a health benchmark, not a legal limit everywhere.',
     caveats:
-      'Satellite-model blends smooth local peaks. Ground monitors are uneven. Dust storms and fire seasons spike short periods. We do not invent a country ranking on this page.',
+      'Satellite-model blends smooth local peaks. Ground monitors are uneven. Dust storms and fire seasons spike short periods. This page does not rank countries.',
     licenseNote:
       'NASA imagery is public domain. We host a cropped Our World in Data map export (CC BY) of population-weighted PM2.5. Open the OWID air-pollution map for the interactive layer.',
     imageAlt:
@@ -386,7 +386,7 @@ const en: Record<string, MapCopy> = {
     howToRead:
       'High stress means withdrawals are large compared with renewable supply. Cities can import water; farms may still run dry. Climate scenarios on the atlas are projections, not weather forecasts.',
     caveats:
-      'Models smooth local rights, illegal wells, and seasonal pulses. Political control of rivers is not in the hydrology alone. Do not treat a red basin as a prophecy of war.',
+      'Models smooth local rights, illegal wells, and seasonal pulses. Political control of rivers is not in the hydrology alone. A red basin is not a prophecy of war.',
     licenseNote:
       'Aqueduct data are typically CC BY with attribution to WRI. The preview is a Fix Planet overview of arid versus water-rich regions, not Aqueduct basin scores. Open the Water Risk Atlas for the interactive basins.',
     imageAlt:

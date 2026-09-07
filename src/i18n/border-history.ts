@@ -40,9 +40,9 @@ const pageEn: BorderHistoryPage = {
   eyebrow: 'Map room',
   title: 'History of borders',
   lead:
-    'Political maps, one century at a time: year 1 of the Common Era through the present. Each frame is a published reconstruction or a dated government sheet. Early borders are estimates. We do not draw lines the sources do not show.',
+    'Political maps, one century at a time: year 1 of the Common Era through the present. Each frame is a published reconstruction or a dated government sheet. Early borders are estimates.',
   honesty:
-    'Honesty note: there is no single “true” world border for antiquity. States, tribute zones, and nomadic ranges overlap. Several frames are Eastern Hemisphere only, or the nearest free map to that century. Contested lines stay contested. Open the source before treating a colour as a court.',
+    'There is no single “true” world border for antiquity. States, tribute zones, and nomadic ranges overlap. Several frames are Eastern Hemisphere only, or the nearest free map to that century. Contested lines stay contested.',
   back: '← Maps',
   scrubberAria: 'Jump to a century',
   sourceLabel: 'Source',
@@ -71,9 +71,9 @@ const pageRu: BorderHistoryPage = {
   eyebrow: 'Картографическая',
   title: 'История границ',
   lead:
-    'Политические карты — по одному столетию: от 1 года н. э. до наших дней. Каждый кадр — опубликованная реконструкция или датированный государственный лист. Ранние границы — оценки. Мы не рисуем линии, которых нет в источнике.',
+    'Политические карты — по одному столетию: от 1 года н. э. до наших дней. Каждый кадр — опубликованная реконструкция или датированный государственный лист. Ранние границы — оценки.',
   honesty:
-    'Честно: для древности нет одной «верной» мировой границы. Государства, данники и кочевые зоны пересекаются. Часть кадров — только Восточное полушарие или ближайшая свободная карта к этому веку. Спорные линии остаются спорными. Откройте источник, прежде чем принимать цвет за приговор.',
+    'Для древности нет одной «верной» мировой границы. Государства, данники и кочевые зоны пересекаются. Часть кадров — только Восточное полушарие или ближайшая свободная карта к этому веку. Спорные линии остаются спорными.',
   back: '← Карты',
   scrubberAria: 'Перейти к столетию',
   sourceLabel: 'Источник',
@@ -101,9 +101,9 @@ const pagePl: BorderHistoryPage = {
   eyebrow: 'Mapownia',
   title: 'Historia granic',
   lead:
-    'Mapy polityczne, stulecie po stuleciu: od roku 1 n.e. do dziś. Każda klatka to opublikowana rekonstrukcja albo datowany arkusz rządowy. Wczesne granice to szacunki. Nie rysujemy linii, których nie ma w źródle.',
+    'Mapy polityczne, stulecie po stuleciu: od roku 1 n.e. do dziś. Każda klatka to opublikowana rekonstrukcja albo datowany arkusz rządowy. Wczesne granice to szacunki.',
   honesty:
-    'Szczerze: w starożytności nie ma jednej „prawdziwej” granicy świata. Państwa, trybutariusze i strefy koczownicze nachodzą na siebie. Część klatek to tylko półkula wschodnia albo najbliższa wolna mapa tego wieku. Sporne linie zostają sporne. Otwórz źródło, zanim potraktujesz kolor jak wyrok.',
+    'W starożytności nie ma jednej „prawdziwej” granicy świata. Państwa, trybutariusze i strefy koczownicze nachodzą na siebie. Część klatek to tylko półkula wschodnia albo najbliższa wolna mapa tego wieku. Sporne linie zostają sporne.',
   back: '← Mapy',
   scrubberAria: 'Skocz do stulecia',
   sourceLabel: 'Źródło',
@@ -131,9 +131,9 @@ const pageLv: BorderHistoryPage = {
   eyebrow: 'Karšu zāle',
   title: 'Robežu vēsture',
   lead:
-    'Politiskās kartes — pa vienam gadsimtam: no 1. gada m.ē. līdz mūsdienām. Katrs kadrs ir publicēta rekonstrukcija vai datēta valsts lapa. Agrīnās robežas ir vērtējumi. Mēs nezīmējam līnijas, kuru nav avotā.',
+    'Politiskās kartes — pa vienam gadsimtam: no 1. gada m.ē. līdz mūsdienām. Katrs kadrs ir publicēta rekonstrukcija vai datēta valsts lapa. Agrīnās robežas ir vērtējumi.',
   honesty:
-    'Godīgi: senatnei nav vienas „īstās” pasaules robežas. Valstis, meslu zonas un klejotāju areāli pārklājas. Daļa kadru ir tikai Austrumu puslode vai tuvākā brīvā karte šim gadsimtam. Strīdīgās līnijas paliek strīdīgas. Atver avotu, pirms krāsu uzskati par tiesas spriedumu.',
+    'Senatnei nav vienas „īstās” pasaules robežas. Valstis, meslu zonas un klejotāju areāli pārklājas. Daļa kadru ir tikai Austrumu puslode vai tuvākā brīvā karte šim gadsimtam. Strīdīgās līnijas paliek strīdīgas.',
   back: '← Kartes',
   scrubberAria: 'Pāriet uz gadsimtu',
   sourceLabel: 'Avots',
