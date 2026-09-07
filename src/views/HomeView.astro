@@ -2,12 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHub from '../components/HomeHub.astro';
 import FeatureStrip from '../components/FeatureStrip.astro';
-import SolutionCard from '../components/SolutionCard.astro';
-import { getLatestSolutions, getUi, localizePath, resolveLocale } from '../i18n';
-
-const locale = resolveLocale(Astro.currentLocale);
-const ui = getUi(locale);
-const latestSolutions = getLatestSolutions(locale);
 ---
 
 <BaseLayout theme="home" image="/images/home/green-city-future-bg.jpg">
@@ -22,26 +16,6 @@ const latestSolutions = getLatestSolutions(locale);
   </div>
 
   <HomeHub />
-
-  <section class="section home-band home-band-quiet" aria-labelledby="latest-heading">
-    <div class="wrap home-panel home-panel-quiet">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M5 14.5C5 9.8 9.2 5.2 17 4c.4 4.8-.8 8.8-3.6 11.2 1.8-.6 3.6-2 4.6-4.2.8 2.6.4 5.4-1.4 7.5C15 20.4 12.8 21 11 21c-3.4 0-6-2.7-6-6.5z"></path>
-            </svg>
-            {ui.home.latest}
-          </div>
-          <h2 id="latest-heading">{ui.home.latestHeading}</h2>
-        </div>
-        <a class="text-link" href={localizePath('/solutions', locale)}>{ui.home.viewAll}</a>
-      </div>
-      <div class="card-grid">
-        {latestSolutions.map((solution) => <SolutionCard solution={solution} />)}
-      </div>
-    </div>
-  </section>
 
   <FeatureStrip />
 </BaseLayout>

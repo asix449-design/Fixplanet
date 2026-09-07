@@ -1,0 +1,12 @@
+---
+import { isOceanPanel, oceanPanelKeys } from '../../data/oceans';
+import OceansView from '../../views/OceansView.astro';
+
+export function getStaticPaths() {
+  return oceanPanelKeys.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+---
+
+<OceansView panel={isOceanPanel(slug) ? slug : 'currents'} />

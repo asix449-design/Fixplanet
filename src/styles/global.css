@@ -1914,6 +1914,7 @@ a.map-card:hover {
 .theme-innovations .site-footer,
 .theme-innovations-detail .site-footer,
 .theme-forests .site-footer,
+.theme-oceans .site-footer,
 .theme-law .site-footer,
 .theme-law-detail .site-footer {
   position: relative;
@@ -2536,6 +2537,64 @@ a.map-card:hover {
   .forest-strip {
     grid-template-columns: 1fr;
   }
+}
+
+/* Oceans — deep navy + neon lime monitoring room, distinct from forests fog */
+.theme-oceans {
+  background: #020810;
+}
+
+.theme-oceans .section-backdrop img {
+  object-position: 58% 42%;
+  filter: blur(8px) saturate(1.2) brightness(0.38);
+}
+
+.oceans-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(1, 8, 18, 0.74) 0%,
+      rgba(1, 10, 22, 0.5) 18%,
+      rgba(2, 8, 16, 0.8) 50%,
+      rgba(2, 6, 12, 0.94) 76%,
+      rgba(2, 5, 10, 0.98) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 12, 28, 0.32) 0%, transparent 48%);
+}
+
+.theme-oceans .site-header {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.theme-oceans main {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-oceans .section,
+.oceans-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.oceans-panel {
+  scroll-margin-top: calc(var(--header-h) + 1.2rem);
+}
+
+.oceans-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.1rem 0 0.2rem;
+}
+
+.theme-oceans .forest-map-art img {
+  background: #01060c;
+}
+
+.theme-oceans .borders-honesty {
+  background: rgba(80, 200, 255, 0.05);
+  border-color: rgba(192, 255, 0, 0.28);
 }
 
 /* Law — warm institutional / parchment, distinct from forests fog and innovations circuits */

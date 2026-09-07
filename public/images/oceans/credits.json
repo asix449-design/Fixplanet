@@ -1,0 +1,168 @@
+[
+  {
+    "file": "oceans-section-bg.jpg",
+    "title": "Pacific Ocean with sunglint, photographed from ISS Expedition 56",
+    "source": "NASA / ISS Expedition 56",
+    "url": "https://commons.wikimedia.org/wiki/File:ISS-56_Pacific_Ocean_with_sunglint.jpg",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Oceans section backdrop. Open ocean and sunglint, not a data map."
+  },
+  {
+    "file": "sst-2003.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature, 1 July 2003",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "direct": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&TIME=2003-07-01T00:00:00Z&BBOX=-90,-180,90,180&CRS=EPSG:4326&LAYERS=GHRSST_L4_MUR_Sea_Surface_Temperature,Coastlines_15m&WRAP=day,x&FORMAT=image/jpeg&WIDTH=2400&HEIGHT=1200",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Absolute SST analysis plate, not an anomaly map."
+  },
+  {
+    "file": "sst-2010.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature, 1 July 2010",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Absolute SST analysis plate."
+  },
+  {
+    "file": "sst-2015.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature, 1 July 2015",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Absolute SST analysis plate."
+  },
+  {
+    "file": "sst-2020.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature, 1 July 2020",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Absolute SST analysis plate."
+  },
+  {
+    "file": "sst-2024.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature, 1 July 2024",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Absolute SST analysis plate."
+  },
+  {
+    "file": "sst-2025.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature, 1 July 2025",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Latest hosted 1 July absolute SST frame."
+  },
+  {
+    "file": "sst-anom-2020.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature Anomalies, 1 July 2020",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "SST anomaly, not absolute temperature. GIBS snapshots before 2020 did not render this layer."
+  },
+  {
+    "file": "sst-anom-2022.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature Anomalies, 1 July 2022",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "SST anomaly plate."
+  },
+  {
+    "file": "sst-anom-2023.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature Anomalies, 1 July 2023",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "SST anomaly plate."
+  },
+  {
+    "file": "sst-anom-2024.jpg",
+    "title": "GHRSST L4 MUR Sea Surface Temperature Anomalies, 1 July 2024",
+    "source": "NASA Worldview / GIBS",
+    "url": "https://worldview.earthdata.nasa.gov/",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Latest hosted July SST anomaly frame."
+  },
+  {
+    "file": "salinity-aquarius-2011.jpg",
+    "title": "Aquarius first global sea-surface salinity map, 25 Aug–11 Sep 2011",
+    "source": "NASA / JPL-Caltech, Aquarius mission",
+    "url": "https://commons.wikimedia.org/wiki/File:Aquarius_spacecraft_first_global_salinity_map_Aug-Sep_2011.jpg",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Observed Aquarius SSS. Not SMAP. Not World Ocean Atlas climatology."
+  },
+  {
+    "file": "salinity-aquarius.jpg",
+    "title": "Aquarius sea-surface salinity, Atlantic 3-D visualization",
+    "source": "NASA / JPL-Caltech, Aquarius mission",
+    "url": "https://commons.wikimedia.org/wiki/File:Aquarius_Sea_Surface_Salinity.jpg",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Same mission, regional 3-D graphic — not a later year and not SMAP."
+  },
+  {
+    "file": "currents-gyres-1943.jpg",
+    "title": "Ocean currents and sea ice, Atlas of World Maps (1943)",
+    "source": "United States Army Service Forces",
+    "url": "https://commons.wikimedia.org/wiki/File:Ocean_currents_1943_(borderless)3.png",
+    "license": "Public domain (US government)",
+    "kind": "hosted-original",
+    "note": "Named-gyre schematic. Not OSCAR, not satellite altimetry, not a live current field."
+  },
+  {
+    "file": "plastic-gpgp-2015.jpg",
+    "title": "Modelled North Pacific plastic mass concentration, August 2015",
+    "source": "Lebreton et al. 2018, Scientific Reports",
+    "url": "https://doi.org/10.1038/s41598-018-22939-w",
+    "commons": "https://commons.wikimedia.org/wiki/File:Great_Pacific_Garbage_Patch-Map-2017.jpg",
+    "license": "CC BY 4.0",
+    "kind": "hosted-original",
+    "note": "Modelled kg/km² in the Great Pacific Garbage Patch. Not a satellite photo of trash. Not a global plastic raster."
+  },
+  {
+    "file": "oil-dwh-2010.jpg",
+    "title": "Deepwater Horizon oil slick, Terra MODIS, 24 May 2010",
+    "source": "NASA Terra MODIS",
+    "url": "https://commons.wikimedia.org/wiki/File:Deepwater_Horizon_oil_spill_-_May_24,_2010.jpg",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "One observed spill event. Not a global oil-pollution climatology."
+  },
+  {
+    "file": "chl-2019.png",
+    "title": "Global ocean chlorophyll-a concentration, October 2019",
+    "source": "NASA ocean color",
+    "url": "https://oceancolor.gsfc.nasa.gov/",
+    "commons": "https://commons.wikimedia.org/wiki/File:Global_ocean_chlorophyll_concentration_October_2019.png",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "Chlorophyll-a bloom proxy. Not a nitrate or phosphorus raster. Not a dead-zone map."
+  },
+  {
+    "file": "dead-zones.jpg",
+    "title": "Aquatic Dead Zones",
+    "source": "NASA Earth Observatory after Robert Diaz, VIMS; GSFC Ocean Color",
+    "url": "https://earthobservatory.nasa.gov/images/44677/aquatic-dead-zones",
+    "commons": "https://commons.wikimedia.org/wiki/File:Aquatic_Dead_Zones.jpg",
+    "license": "Public domain (NASA)",
+    "kind": "hosted-original",
+    "note": "2008 compilation of coastal hypoxic sites. Not this year's Gulf of Mexico forecast."
+  }
+]
