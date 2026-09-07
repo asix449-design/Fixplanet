@@ -1,0 +1,13 @@
+---
+import { geoMeta, geoShelfKeys } from '../../data/terraforming';
+
+export function getStaticPaths() {
+  return [
+    ...geoShelfKeys.map((slug) => ({ params: { slug } })),
+    ...geoMeta.map((item) => ({ params: { slug: item.slug } })),
+  ];
+}
+
+const { slug } = Astro.params;
+return Astro.redirect(`/terraforming/${slug}`, 301);
+---

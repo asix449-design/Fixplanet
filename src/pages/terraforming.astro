@@ -1,0 +1,9 @@
+---
+import { isGeoShelf } from '../data/terraforming';
+import TerraformingView from '../views/TerraformingView.astro';
+
+const shelfParam = Astro.url.searchParams.get('shelf');
+const shelf = isGeoShelf(shelfParam ?? undefined) ? shelfParam : 'all';
+---
+
+<TerraformingView shelf={shelf} />

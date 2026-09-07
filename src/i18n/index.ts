@@ -54,3 +54,10 @@ export {
   lawCategoryKeys,
   lawStatusKeys,
 } from './law';
+export {
+  getGeoBySlug,
+  getGeoPage,
+  getGeoProjects,
+  getGeoProjectsByShelf,
+  geoShelfKeys,
+} from './terraforming';

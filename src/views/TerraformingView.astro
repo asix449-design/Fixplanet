@@ -1,0 +1,134 @@
+---
+import TerraformingCard from '../components/TerraformingCard.astro';
+import HubTile from '../components/HubTile.astro';
+import SectionHub from '../components/SectionHub.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  geoHub,
+  geoSectionSrc,
+  geoShelfPath,
+  isGeoShelf,
+  type GeoShelf,
+} from '../data/terraforming';
+import { getGeoPage, getGeoProjects, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  shelf?: GeoShelf | 'all';
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getGeoPage(locale);
+const requested = Astro.props.shelf ?? Astro.url.searchParams.get('shelf') ?? 'all';
+const activeShelf: GeoShelf | 'all' =
+  requested === 'all' || !requested
+    ? 'all'
+    : isGeoShelf(requested)
+      ? requested
+      : 'all';
+
+const items = getGeoProjects(locale);
+---
+
+<BaseLayout
+  title={page.metaTitle}
+  description={page.metaDescription}
+  image={geoSectionSrc}
+  theme="terraforming"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={geoSectionSrc} alt="" width="1920" height="1280" />
+    <div class="section-backdrop-scrim geo-scrim"></div>
+  </div>
+
+  <SectionHub kicker={page.chooseShelf} label={page.filterAria} columns={3}>
+    {
+      geoHub.map((item) => (
+        <HubTile
+          href={localizePath(geoShelfPath(item.key), locale)}
+          icon={item.icon}
+          title={page.shelves[item.key]}
+          text={page.tiles[item.key]}
+          active={item.key === activeShelf}
+          dataArea={item.key}
+        />
+      ))
+    }
+  </SectionHub>
+
+  <section class="section section-hub-follow" id="terraforming-list">
+    <div class="wrap wildlife-list-panel geo-list-panel">
+      <div class="eyebrow geo-eyebrow">{page.eyebrow}</div>
+      <h2 class="geo-page-title">{page.title}</h2>
+      <p class="geo-naming">{page.naming}</p>
+      <p class="wildlife-tab-lead" data-tab-lead>
+        {page.shelfLeads[activeShelf]}
+      </p>
+      <p class="borders-honesty geo-honesty">{page.honesty}</p>
+      <div class="card-grid cols-3" id="terraforming-grid">
+        {
+          items.map((item) => (
+            <div hidden={activeShelf !== 'all' && item.shelf !== activeShelf}>
+              <TerraformingCard item={item} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script
+  define:vars={{
+    leads: page.shelfLeads,
+    allHref: localizePath(geoShelfPath('all'), locale),
+    waterHref: localizePath(geoShelfPath('water'), locale),
+    desertHref: localizePath(geoShelfPath('desert'), locale),
+    climateHref: localizePath(geoShelfPath('climate'), locale),
+  }}
+>
+  const hrefs = {
+    all: allHref,
+    water: waterHref,
+    desert: desertHref,
+    climate: climateHref,
+  };
+
+  const buttons = document.querySelectorAll('[data-area]');
+  const cards = document.querySelectorAll('#terraforming-grid > div');
+  const lead = document.querySelector('[data-tab-lead]');
+
+  function show(shelf) {
+    if (!(shelf in hrefs)) return;
+    buttons.forEach((button) => {
+      const on = button.dataset.area === shelf;
+      button.classList.toggle('is-active', on);
+      if (on) button.setAttribute('aria-current', 'page');
+      else button.removeAttribute('aria-current');
+    });
+    cards.forEach((card) => {
+      const inner = card.querySelector('[data-geo-shelf]');
+      const itemShelf = inner?.dataset.geoShelf;
+      card.hidden = shelf !== 'all' && itemShelf !== shelf;
+    });
+    if (lead && shelf in leads) {
+      lead.textContent = leads[shelf];
+    }
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const shelf = button.dataset.area;
+      if (!shelf || !(shelf in hrefs)) return;
+      event.preventDefault();
+      show(shelf);
+      history.replaceState(null, '', hrefs[shelf]);
+      document.getElementById('terraforming-list')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  });
+
+  const query = new URLSearchParams(location.search).get('shelf');
+  if (query && query in hrefs) show(query);
+</script>

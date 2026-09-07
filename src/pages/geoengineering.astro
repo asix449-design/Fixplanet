@@ -1,0 +1,7 @@
+---
+const shelf = Astro.url.searchParams.get('shelf');
+const dest = shelf
+  ? `/terraforming?shelf=${encodeURIComponent(shelf)}`
+  : '/terraforming';
+return Astro.redirect(dest, 301);
+---
