@@ -331,6 +331,17 @@ export const forestStats: ForestStatMeta[] = [
   },
 ];
 
+/**
+ * Headline figures on the Forests hub hero. Full notes and the rest of the
+ * published set stay on `/forests/numbers`. Ids must exist in `forestStats`.
+ */
+export const forestHeroStatIds = [
+  'remaining',
+  'primaryRemaining',
+  'netLossRecent',
+  'tropicalPrimary2025',
+] as const satisfies ReadonlyArray<(typeof forestStats)[number]['id']>;
+
 export function isForestPanel(value: string | undefined): value is ForestPanel {
   return !!value && (forestPanelKeys as readonly string[]).includes(value);
 }

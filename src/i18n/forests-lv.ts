@@ -11,12 +11,15 @@ export const lv: ForestsPage = {
     'Meži uzkrāj oglekli, piedalās ūdens apritē un dod mājvietu lielākajai daļai sauszemes sugu. Zemāk — vainaga zaļums no kosmosa, dažas senāku ainavu rekonstrukcijas, publicēti skaitļi un trīs ceļi tālāk. Katrai kartei ir nosaukts datu kopums un datums.',
   ],
   choosePanel: 'Izvēlies plauktu',
+  heroNote:
+    'Skaitļi ar avotiem. FAO mežs ir zemes lietojums; GFW tropu primārais vainags ir cits reģistrs. Tos nesaskaita vienā summā.',
+  heroSources: 'Avoti un definīcijas →',
   filterAria: 'Mežu sadaļas',
   back: '← Meži',
   tiles: {
     satellite: 'Jūlija vainaga zaļums no kosmosa, 2001–2025.',
     history: 'Leduslaikmeta veģetācija, biomi un zeme pēc cilvēkiem.',
-    numbers: 'FAO meža platība, tropu primārais vainags, koku skaita aplēse.',
+    numbers: 'Definīcijas, avoti un pārējais publicētais kopums.',
     outlook: 'Garais skats, gadi, ko var izmērīt, un trīs iespējami ceļi.',
   },
   panels: {

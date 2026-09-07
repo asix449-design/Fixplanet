@@ -11,12 +11,15 @@ export const pl: ForestsPage = {
     'Lasy magazynują węgiel, uczestniczą w obiegu wody i dają schronienie większości gatunków lądowych. Poniżej: zieleń koron z kosmosu, kilka rekonstrukcji dawniejszych krajobrazów, opublikowane liczby i trzy ścieżki dalej. Każda mapa ma nazwany zbiór danych i datę.',
   ],
   choosePanel: 'Wybierz półkę',
+  heroNote:
+    'Liczby ze źródłami. Las FAO to użytkowanie ziemi; tropikalna korona pierwotna GFW to inny rejestr. Nie dodaje się ich do jednej sumy.',
+  heroSources: 'Źródła i definicje →',
   filterAria: 'Działy Lasów',
   back: '← Lasy',
   tiles: {
     satellite: 'Lipcowa zieleń koron z kosmosu, 2001–2025.',
     history: 'Roślinność epoki lodowej, biomy i ziemia po ludziach.',
-    numbers: 'Powierzchnia lasu FAO, tropikalna korona pierwotna, szacunek liczby drzew.',
+    numbers: 'Definicje, źródła i reszta opublikowanego zestawu.',
     outlook: 'Długi widok, lata, które da się zmierzyć, i trzy możliwe ścieżki.',
   },
   panels: {

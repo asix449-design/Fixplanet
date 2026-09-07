@@ -1,6 +1,5 @@
 ---
 import HubTile from '../components/HubTile.astro';
-import SectionHub from '../components/SectionHub.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -19,6 +18,7 @@ import {
 } from '../data/forests';
 import {
   getForestFrames,
+  getForestHeroStats,
   getForestStats,
   getForestsPage,
   localizePath,
@@ -43,6 +43,7 @@ const activePanel: ForestPanel | undefined = hub
 const satelliteFrames = getForestFrames(locale, 'satellite');
 const reconstructionFrames = getForestFrames(locale, 'reconstruction');
 const stats = getForestStats(locale);
+const heroStats = getForestHeroStats(locale);
 const longViewSrc = forestFrameSrc(longViewImage.file);
 const backdropSrc = forestFrameSrc(forestBackdrop.file);
 
@@ -60,23 +61,53 @@ const pageTitle = activePanel
   image={backdropSrc}
   theme="forests"
 >
-  <div class="section-backdrop" aria-hidden="true">
+  <div class:list={['section-backdrop', { 'forests-hub-backdrop': hub }]} aria-hidden="true">
     <img src={backdropSrc} alt="" width="1280" height="960" />
-    <div class="section-backdrop-scrim forests-scrim"></div>
+    <div class:list={['section-backdrop-scrim', hub ? 'forests-hub-scrim' : 'forests-scrim']}></div>
   </div>
 
   {
     hub ? (
-      <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
-        {forestHub.map((item) => (
-          <HubTile
-            href={localizePath(forestPanelPath(item.key), locale)}
-            icon={item.icon}
-            title={page.panels[item.key]}
-            text={page.tiles[item.key]}
-          />
-        ))}
-      </SectionHub>
+      <section class="forests-hero" aria-label={page.filterAria}>
+        <div class="wrap forests-hero-inner">
+          <div class="forests-hero-stats">
+            <p class="forests-hero-kicker">{page.eyebrow}</p>
+            <h1 class="forests-hero-title">{page.panels.numbers}</h1>
+            <p class="forests-hero-note">{page.heroNote}</p>
+            <div class="forests-hero-grid">
+              {
+                heroStats.map((stat) => (
+                  <article class="forests-hero-stat">
+                    <p class="forests-hero-value">
+                      {stat.value}
+                      <span>{page.units[stat.unitKey]}</span>
+                    </p>
+                    <h2>{stat.label}</h2>
+                    <p class="forests-hero-source">
+                      {stat.sourceShort} · {stat.vintage}
+                    </p>
+                  </article>
+                ))
+              }
+            </div>
+            <a class="forests-hero-sources" href={localizePath(forestPanelPath('numbers'), locale)}>
+              {page.heroSources}
+            </a>
+          </div>
+          <nav class="hub-grid forests-hero-tiles" aria-label={page.choosePanel}>
+            {
+              forestHub.map((item) => (
+                <HubTile
+                  href={localizePath(forestPanelPath(item.key), locale)}
+                  icon={item.icon}
+                  title={page.panels[item.key]}
+                  text={page.tiles[item.key]}
+                />
+              ))
+            }
+          </nav>
+        </div>
+      </section>
     ) : (
       activePanel && (
         <ShelfHeader

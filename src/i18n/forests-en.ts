@@ -11,12 +11,15 @@ export const en: ForestsPage = {
     'Forests store carbon, cycle water, and hold most terrestrial species. The shelves below show canopy greenness from space, a few reconstructions of older landscapes, published numbers, and three paths ahead. Each map has a named dataset and a date.',
   ],
   choosePanel: 'Choose a shelf',
+  heroNote:
+    'Sourced figures. FAO forest is land use; GFW tropical primary is canopy. They do not add into one total.',
+  heroSources: 'Sources and definitions →',
   filterAria: 'Forests sections',
   back: '← Forests',
   tiles: {
     satellite: 'July canopy greenness from space, 2001–2025.',
     history: 'Ice-age vegetation, biomes, and land after people.',
-    numbers: 'FAO forest area, tropical primary canopy, a tree-count estimate.',
+    numbers: 'Definitions, sources, and the rest of the published set.',
     outlook: 'The long view, the years we can measure, and three possible paths.',
   },
   panels: {
