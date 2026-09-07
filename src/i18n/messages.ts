@@ -121,7 +121,7 @@ const en = {
   wildlifePage: {
     metaTitle: 'Wildlife — Fix Planet',
     metaDescription:
-      'An encyclopedia of how animal populations changed after modern humans spread: surviving, endangered, and extinct species, with a map of when people reached each continent.',
+      'An encyclopedia of how animal populations changed after modern humans spread: surviving, endangered, and extinct species, plus a Homo sapiens shelf on origin, migration, and the large-mammal genera that vanished after first arrival.',
     eyebrow: 'Encyclopedia',
     title: 'Wildlife',
     lead: 'Where our species arose, where we went, and how the largest animals changed after we arrived as a new predator.',
@@ -137,15 +137,18 @@ const en = {
     imageAlt:
       'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
     scientificName: 'Homo sapiens',
-    tabsAria: 'Filter species by status',
-    chooseStatus: 'Choose a status',
+    tabsAria: 'Wildlife shelves',
+    chooseStatus: 'Choose a shelf',
     surviving: 'Surviving',
     endangered: 'Endangered',
     extinct: 'Extinct',
+    'homo-sapiens': 'Homo sapiens',
     tiles: {
       surviving: 'Still here, with ranges or numbers that shifted after people spread.',
       endangered: 'Threatened now, mainly because of people.',
       extinct: 'Gone. Most entries are clearly human-caused.',
+      'homo-sapiens':
+        'Origin in Africa, the route we took, and the large-mammal genera that vanished after first arrival.',
     },
     survivingLead:
       'Still here, with ranges or numbers that shifted after people spread — hunting, farms, later recovery, or boom. The dates differ by continent.',
@@ -406,7 +409,7 @@ const ru: typeof en = {
   wildlifePage: {
     metaTitle: 'Природа — Fix Planet',
     metaDescription:
-      'Энциклопедия того, как изменились популяции животных после расселения современного человека: выжившие, находящиеся под угрозой и вымершие виды, с картой того, когда люди дошли до каждого континента.',
+      'Энциклопедия того, как изменились популяции животных после расселения современного человека: выжившие, находящиеся под угрозой и вымершие виды, плюс полка Homo sapiens — происхождение, расселение и роды крупных млекопитающих, исчезнувшие после первого прихода.',
     eyebrow: 'Энциклопедия',
     title: 'Природа',
     lead: 'Где возник наш вид, куда мы ушли и как изменились самые крупные животные после того, как мы пришли как новый хищник.',
@@ -422,15 +425,18 @@ const ru: typeof en = {
     imageAlt:
       'Современный взрослый человек на лугу — спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
     scientificName: 'Homo sapiens',
-    tabsAria: 'Фильтр видов по статусу',
-    chooseStatus: 'Выберите статус',
+    tabsAria: 'Разделы Природы',
+    chooseStatus: 'Выберите раздел',
     surviving: 'Выжившие',
     endangered: 'Под угрозой',
     extinct: 'Вымершие',
+    'homo-sapiens': 'Homo sapiens',
     tiles: {
       surviving: 'Всё ещё здесь: ареал или численность сдвинулись после расселения людей.',
       endangered: 'Под угрозой сейчас — главным образом из-за людей.',
       extinct: 'Исчезли. Большинство карточек — явно по вине людей.',
+      'homo-sapiens':
+        'Происхождение в Африке, путь расселения и роды крупных млекопитающих, исчезнувшие после нашего первого прихода.',
     },
     survivingLead:
       'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей — охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
@@ -694,7 +700,7 @@ const pl: typeof en = {
   wildlifePage: {
     metaTitle: 'Przyroda — Fix Planet',
     metaDescription:
-      'Encyklopedia tego, jak zmieniły się populacje zwierząt po rozprzestrzenieniu się współczesnego człowieka: gatunki, które przetrwały, zagrożone i wymarłe, z mapą tego, kiedy ludzie dotarli na każdy kontynent.',
+      'Encyklopedia tego, jak zmieniły się populacje zwierząt po rozprzestrzenieniu się współczesnego człowieka: gatunki, które przetrwały, zagrożone i wymarłe, plus półka Homo sapiens — pochodzenie, migracja i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu.',
     eyebrow: 'Encyklopedia',
     title: 'Przyroda',
     lead: 'Gdzie powstał nasz gatunek, dokąd poszedł i jak zmieniły się największe zwierzęta, gdy przyszliśmy jako nowy drapieżnik.',
@@ -710,15 +716,18 @@ const pl: typeof en = {
     imageAlt:
       'Współczesny dorosły człowiek na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
     scientificName: 'Homo sapiens',
-    tabsAria: 'Filtruj gatunki według statusu',
-    chooseStatus: 'Wybierz status',
+    tabsAria: 'Działy Przyrody',
+    chooseStatus: 'Wybierz dział',
     surviving: 'Przetrwałe',
     endangered: 'Zagrożone',
     extinct: 'Wymarłe',
+    'homo-sapiens': 'Homo sapiens',
     tiles: {
       surviving: 'Wciąż tu są: zasięg lub liczebność przesunęły się po rozprzestrzenieniu ludzi.',
       endangered: 'Zagrożone teraz — głównie przez ludzi.',
       extinct: 'Zniknęły. Większość kart ma jasną przyczynę ludzką.',
+      'homo-sapiens':
+        'Pochodzenie w Afryce, droga, którą poszliśmy, i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu.',
     },
     survivingLead:
       'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi — polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
@@ -982,7 +991,7 @@ const lv: typeof en = {
   wildlifePage: {
     metaTitle: 'Savvaļa — Fix Planet',
     metaDescription:
-      'Enciklopēdija par to, kā dzīvnieku populācijas mainījās pēc mūsdienu cilvēka izplatīšanās: izdzīvojušās, apdraudētās un izmirstās sugas, ar karti, kad cilvēki sasniedza katru kontinentu.',
+      'Enciklopēdija par to, kā dzīvnieku populācijas mainījās pēc mūsdienu cilvēka izplatīšanās: izdzīvojušās, apdraudētās un izmirstās sugas, plus Homo sapiens plaukts — izcelsme, migrācija un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās.',
     eyebrow: 'Enciklopēdija',
     title: 'Savvaļa',
     lead: 'Kur radās mūsu suga, kur gāja un kā mainījās lielākie dzīvnieki pēc tam, kad ienācām kā jauns plēsējs.',
@@ -998,15 +1007,18 @@ const lv: typeof en = {
     imageAlt:
       'Mūsdienu pieaugušais cilvēks pļavā — mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
     scientificName: 'Homo sapiens',
-    tabsAria: 'Filtrēt sugas pēc statusa',
-    chooseStatus: 'Izvēlies statusu',
+    tabsAria: 'Savvaļas sadaļas',
+    chooseStatus: 'Izvēlies sadaļu',
     surviving: 'Izdzīvojušie',
     endangered: 'Apdraudētie',
     extinct: 'Izmirušie',
+    'homo-sapiens': 'Homo sapiens',
     tiles: {
       surviving: 'Joprojām šeit: areāls vai skaits pārbīdījās pēc cilvēku izplatīšanās.',
       endangered: 'Apdraudēti tagad — galvenokārt cilvēku dēļ.',
       extinct: 'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas.',
+      'homo-sapiens':
+        'Izcelsme Āfrikā, ceļš, pa kuru gājām, un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās.',
     },
     survivingLead:
       'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',

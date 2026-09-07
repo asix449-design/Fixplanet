@@ -51,7 +51,7 @@ export function stripLocalePrefix(pathname: string): string {
   return hash ? `${withSearch}#${hash}` : withSearch;
 }
 
-/** Prefix a site-root path (/about, /solutions#slug, /wildlife?status=) for the given locale. */
+/** Prefix a site-root path (/about, /solutions#slug, /wildlife?shelf=) for the given locale. */
 export function localizePath(path: string, locale: Locale): string {
   const unprefixed = stripLocalePrefix(path);
   const [beforeHash, hash] = unprefixed.split('#');

@@ -6,25 +6,33 @@ import WildlifeCard from '../components/WildlifeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   humanHeroImage,
+  isWildlifeHubKey,
   isWildlifeStatus,
   wildlifeHub,
+  wildlifeHubPath,
   wildlifeImageSrc,
-  wildlifeStatusPath,
+  type WildlifeHubKey,
   type WildlifeStatus,
 } from '../data/wildlife';
 import { getUi, getWildlifeByStatus, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
   hub?: boolean;
-  status?: WildlifeStatus;
+  shelf?: WildlifeHubKey;
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const hub = Astro.props.hub === true;
-const requested = Astro.props.status ?? Astro.url.searchParams.get('status');
+const requested =
+  Astro.props.shelf ??
+  Astro.url.searchParams.get('shelf') ??
+  Astro.url.searchParams.get('status');
+const activeShelf: WildlifeHubKey | undefined =
+  hub || !isWildlifeHubKey(requested ?? undefined) ? undefined : requested;
 const activeStatus: WildlifeStatus | undefined =
-  hub || !isWildlifeStatus(requested ?? undefined) ? undefined : requested;
+  activeShelf && isWildlifeStatus(activeShelf) ? activeShelf : undefined;
+const isHumanShelf = activeShelf === 'homo-sapiens';
 
 const species = activeStatus ? getWildlifeByStatus(locale, activeStatus) : [];
 const tabLeads = {
@@ -32,13 +40,17 @@ const tabLeads = {
   endangered: ui.wildlifePage.endangeredLead,
   extinct: ui.wildlifePage.extinctLead,
 } as const;
+
+const pageTitle = isHumanShelf
+  ? `${ui.wildlifePage.scientificName} — Fix Planet`
+  : ui.wildlifePage.metaTitle;
+const pageDescription = isHumanShelf
+  ? ui.wildlifePage.mapLead
+  : ui.wildlifePage.metaDescription;
+const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
 ---
 
-<BaseLayout
-  title={ui.wildlifePage.metaTitle}
-  description={ui.wildlifePage.metaDescription}
-  theme="wildlife"
->
+<BaseLayout title={pageTitle} description={pageDescription} theme="wildlife">
   <div class="section-backdrop" aria-hidden="true">
     <img
       src="/images/wildlife/wildlife-section-bg.jpg"
@@ -49,22 +61,22 @@ const tabLeads = {
     <div class="section-backdrop-scrim"></div>
   </div>
 
-  <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={3}>
+  <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={4}>
     {
       wildlifeHub.map((item) => (
         <HubTile
-          href={localizePath(wildlifeStatusPath(item.key), locale)}
+          href={localizePath(wildlifeHubPath(item.key), locale)}
           icon={item.icon}
           title={ui.wildlifePage[item.key]}
           text={ui.wildlifePage.tiles[item.key]}
-          active={item.key === activeStatus}
+          active={item.key === activeShelf}
         />
       ))
     }
   </SectionHub>
 
   {
-    !hub && activeStatus && (
+    isHumanShelf && (
       <>
         <section class="section section-hub-follow" aria-labelledby="our-species">
           <div class="wrap wildlife-hero">
@@ -101,18 +113,33 @@ const tabLeads = {
             </div>
           </div>
         </section>
-
-        <section class="section" id="species-list">
-          <div class="wrap wildlife-list-panel">
-            <p class="wildlife-tab-lead wildlife-tab-lead-solo">{tabLeads[activeStatus]}</p>
-            <div class="card-grid cols-3" id="wildlife-grid">
-              {species.map((item) => (
-                <WildlifeCard species={item} />
-              ))}
-            </div>
-          </div>
-        </section>
       </>
     )
   }
+
+  {
+    activeStatus && (
+      <section class="section section-hub-follow" id="species-list">
+        <div class="wrap wildlife-list-panel">
+          <p class="wildlife-tab-lead wildlife-tab-lead-solo">{tabLeads[activeStatus]}</p>
+          <div class="card-grid cols-3" id="wildlife-grid">
+            {species.map((item) => (
+              <WildlifeCard species={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
 </BaseLayout>
+
+{
+  !isHumanShelf && (
+    <script define:vars={{ humanHref }}>
+      const hash = window.location.hash;
+      if (hash === '#our-species' || hash === '#dispersal-heading') {
+        window.location.replace(humanHref + hash);
+      }
+    </script>
+  )
+}

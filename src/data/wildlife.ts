@@ -8,11 +8,19 @@ export const wildlifeStatusKeys = [
 
 export type WildlifeStatus = (typeof wildlifeStatusKeys)[number];
 
+export const wildlifeHubKeys = [
+  ...wildlifeStatusKeys,
+  'homo-sapiens',
+] as const;
+
+export type WildlifeHubKey = (typeof wildlifeHubKeys)[number];
+
 export const wildlifeHub = [
   { key: 'surviving', icon: 'paw' },
   { key: 'endangered', icon: 'alert' },
   { key: 'extinct', icon: 'gone' },
-] as const satisfies ReadonlyArray<{ key: WildlifeStatus; icon: HubIconName }>;
+  { key: 'homo-sapiens', icon: 'human' },
+] as const satisfies ReadonlyArray<{ key: WildlifeHubKey; icon: HubIconName }>;
 
 export const iucnKeys = [
   'EX',
@@ -73,10 +81,11 @@ function commons(
 
 /**
  * Curated first list. To add a species:
- * 1. Add a row here (English slug, Latin name, tab, IUCN code, image credit).
+ * 1. Add a row here (English slug, Latin name, status shelf, IUCN code, image credit).
  * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts`.
  * 3. Drop a photo in `public/images/wildlife/{file}` (Wikimedia/PD preferred).
  * 4. `npm run build`.
+ * Homo sapiens copy is not a species card — it lives on the `/wildlife/homo-sapiens` hub tile.
  */
 export const speciesMeta: SpeciesMeta[] = [
   {
@@ -601,6 +610,10 @@ export function isWildlifeStatus(value: string | undefined): value is WildlifeSt
   return !!value && (wildlifeStatusKeys as readonly string[]).includes(value);
 }
 
+export function isWildlifeHubKey(value: string | undefined): value is WildlifeHubKey {
+  return !!value && (wildlifeHubKeys as readonly string[]).includes(value);
+}
+
 export function getSpeciesMeta(slug: string): SpeciesMeta | undefined {
   return speciesMeta.find((item) => item.slug === slug);
 }
@@ -609,6 +622,10 @@ export function wildlifeImageSrc(image: ImageCredit): string {
   return `/images/wildlife/${image.file}`;
 }
 
+export function wildlifeHubPath(key: WildlifeHubKey): string {
+  return `/wildlife/${key}`;
+}
+
 export function wildlifeStatusPath(status: WildlifeStatus): string {
-  return `/wildlife/${status}`;
+  return wildlifeHubPath(status);
 }

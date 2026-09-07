@@ -16,4 +16,5 @@ export type HubIconName =
   | 'grid'
   | 'alert'
   | 'gone'
-  | 'terrain';
+  | 'terrain'
+  | 'human';
