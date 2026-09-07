@@ -256,7 +256,7 @@ const pageLv: GeoPage = {
     climate: 'Klimata iejaukšanās',
   },
   shelfLeads: {
-    all: 'Vispirms ainavu megaprojekti; klimata iejaukšanās — beigās un ar etiķeti. Katra kartīte ir īsta shēma ar avotu.',
+    all: 'Lielākā daļa shēmu gribēja pārliet ūdeni vai apstādīt sauso joslu. Dažas vēlākas idejas mēģina mainīt planētas enerģijas bilanci — pagaidām pētījumi.',
     water:
       'Kanāli, sūkņi, fosilie ūdensnesēji un sapņi par iekšzemes jūrām. Caurules reizēm ir. Solītais klimats — reti.',
     desert:
