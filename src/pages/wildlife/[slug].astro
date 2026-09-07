@@ -1,8 +1,8 @@
 ---
 import {
-  isWildlifeStatus,
+  isWildlifeHubKey,
   speciesMeta,
-  wildlifeStatusKeys,
+  wildlifeHubKeys,
 } from '../../data/wildlife';
 import { getWildlifeBySlug, resolveLocale } from '../../i18n';
 import WildlifeSpeciesView from '../../views/WildlifeSpeciesView.astro';
@@ -10,19 +10,19 @@ import WildlifeView from '../../views/WildlifeView.astro';
 
 export function getStaticPaths() {
   return [
-    ...wildlifeStatusKeys.map((slug) => ({ params: { slug } })),
+    ...wildlifeHubKeys.map((slug) => ({ params: { slug } })),
     ...speciesMeta.map((item) => ({ params: { slug: item.slug } })),
   ];
 }
 
 const { slug } = Astro.params;
 const locale = resolveLocale(Astro.currentLocale);
-const species = slug && !isWildlifeStatus(slug) ? getWildlifeBySlug(locale, slug) : undefined;
+const species = slug && !isWildlifeHubKey(slug) ? getWildlifeBySlug(locale, slug) : undefined;
 ---
 
 {
-  isWildlifeStatus(slug) ? (
-    <WildlifeView status={slug} />
+  isWildlifeHubKey(slug) ? (
+    <WildlifeView shelf={slug} />
   ) : (
     species && <WildlifeSpeciesView species={species} />
   )

@@ -1,12 +1,13 @@
 ---
-import { isWildlifeStatus } from '../data/wildlife';
+import { isWildlifeHubKey } from '../data/wildlife';
 import { localizePath, resolveLocale } from '../i18n';
 import WildlifeView from '../views/WildlifeView.astro';
 
 const locale = resolveLocale(Astro.currentLocale);
-const statusParam = Astro.url.searchParams.get('status');
-if (isWildlifeStatus(statusParam ?? undefined)) {
-  return Astro.redirect(localizePath(`/wildlife/${statusParam}`, locale));
+const shelfParam =
+  Astro.url.searchParams.get('shelf') ?? Astro.url.searchParams.get('status');
+if (isWildlifeHubKey(shelfParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/wildlife/${shelfParam}`, locale));
 }
 ---
 
