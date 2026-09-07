@@ -14,8 +14,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Climeworks (Šveice) vada Orca un Mammoth Islandē kopā ar ON Power un Carbfix. ASV Enerģētikas departaments ir finansējis arī krietni lielākus DAC «hub» konceptus (tostarp Project Cypress ar Climeworks, Battelle un Heirloom); tie ir plāni, ne darbojošās megatonnu stacijas.',
     risks:
       'DAC ir enerģijas izsalkusi. Ja siltums un elektrība ir fosili, neto izņemšana sarūk vai izzūd. Kredītus var pārdot ātrāk, nekā tonnas tiek uzglabātas. Mammoth pirmais gads parādīja, ka «online» nav tas pats, kas projektētā jauda. Tā ir izmēģinājumu nozare, ne aizstājējs emisiju samazināšanai.',
-    sources:
-      'Climeworks, “Climeworks switches on world’s largest DAC plant,” 8 May 2024 (Mammoth palaišana; 36 000 t/gadā projektētā jauda; sākumā 12 no 72 konteineriem). Orca palaišana 2021. IEA Direct Air Capture uzskaite. ThinkGeoEnergy materiāli par ģeotermāli darbināto vietu.',
+    sourcesNote:
+      'Oficiālā Mammoth lapa un 2024. gada 8. maija palaišanas paziņojums; IEA DAC uzskaite. Projektētā jauda nav piegādātās tonnas.',
   },
   'northern-lights-ccs': {
     title: 'Northern Lights — punktveida avotu CCS',
@@ -30,8 +30,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Equinor, Shell un TotalEnergies kopuzņēmums ar Norvēģijas valsts atbalstu Longship ietvaros. Agrīnais emitētājs: Heidelberg Materials Brevik. Citi Eiropas rūpnieciskie klienti ir līgumos vai sarunās.',
     risks:
       'Uztveršana rūpnīcā ir grūtais, dārgais solis; uzglabāšana noder tikai tad, ja uztveršana tiešām darbojas. Noplūde, enerģijas sods un CCS lietošana fosilās ieguves pagarināšanai ir īstas debates. Miljons tonnu ir nopietna inženierija un joprojām mazs pret nacionālajiem inventarizācijas sarakstiem.',
-    sources:
-      'Northern Lights JV projekta lapas; Norvēģijas valdības Longship brīfingi; 2025. gada darbības sākuma ziņojumi (pirmā uzglabātā rūpnieciskā CO₂, August 2025); Heidelberg Materials Brevik CCS.',
+    sourcesNote:
+      'Northern Lights KV lapas; Equinor piezīme par pirmo uzglabāšanu (2025. gada 25. augusts); Longship / CCS Norway brīfings.',
   },
   'carbfix-mineralization': {
     title: 'Carbfix — CO₂ pārvēršana akmenī',
@@ -45,8 +45,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Carbfix (Reykjavík Energy / ON Power līnija) Hellisheiði; uzglabāšanas partneris Climeworks Orca un Mammoth. Matter, Oelkers, Gíslason un kolēģu pētījumi dokumentēja agrīnās ievadīšanas.',
     risks:
       'Vajag daudz ūdens un īsto iezi. Mērogošana ārpus Islandes ir tikpat ģeoloģijas problēma kā inženierijas. Tā uzglabā oglekli, kas jau uztverts — pati no sevis CO₂ no debesīm neizvelk.',
-    sources:
-      'Matter et al., Science, 2016 (rapid mineralization at Hellisheiði); Carbfix tehniskās lapas; Climeworks–Carbfix partnerības piezīmes.',
+    sourcesNote:
+      'Carbfix vietne; Matter et al., Science, 2016 — vairāk nekā 95% ievadītā CO₂ mineralizējās mazāk nekā divos gados Hellisheiði.',
   },
   'precision-fermentation': {
     title: 'Precīzā fermentācija',
@@ -60,8 +60,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Perfect Day (ASV) piena olbaltumvielām; Solar Foods (Somija) Solein; daudzi citi jaunuzņēmumi hēmā, kazeīnā un taukos. Regulatori (FDA GRAS, jaunās pārtikas noteikumi ES un Singapūrā) izlemj, ko drīkst pārdot.',
     risks:
       'Izmaksas, patērētāju pieņemšana un slēptā zeme cukura piegādē. Tas nav bada risinājums un nav katras saimniecības aizstājējs. Tas ir veids, kā dažas augstas ietekmes sastāvdaļas izgatavot bez dzīvnieka.',
-    sources:
-      'Perfect Day produktu un GRAS materiāli; Solar Foods / Solein regulatīvie paziņojumi; FAO un Poore & Nemecek 2018 lopkopības zemes un emisiju kontekstam (kārtas lielums, ne produkta apgalvojums).',
+    sourcesNote:
+      'Perfect Day un Solar Foods / Solein oficiālās vietnes. Lopkopības zemes konteksts ir atsevišķa literatūra, ne produkta apgalvojums.',
   },
   'coral-restoration': {
     title: 'Koraļļu atjaunošanas tehnoloģija',
@@ -75,8 +75,8 @@ export const lv: Record<string, InnovationCopy> = {
       'SECORE International; Mars Sustainable Solutions (MARRS) Indonēzijā un citur; Coral Vita (sauszemes audzēšana, Bahamas); valdību un NVO audzētavas Karību jūrā, Klusajā okeānā un Koraļļu trīsstūrī. NOAA un ICRI publicē metodes un robežas.',
     risks:
       'Izstādījumi iet bojā nākamajā karstuma vilnī, ja ūdens paliek pārāk silts. Atjaunošana nav licence turpināt emitēt. Ģenētika, slimības un brīvprātīgo izdegšana ir parasti neveiksmes veidi. Katru «mēs atjaunojām rifu» apgalvojumu uztver kā vietu, ne biomu.',
-    sources:
-      'NOAA Coral Reef Conservation Program; SECORE metodes; Mars MARRS projektu apraksti; IPCC AR6 ocean and cryosphere / WGII rifu atzinumi; 2023.–2024. gada globālās balēšanas atjauninājumi no NOAA Coral Reef Watch.',
+    sourcesNote:
+      'NOAA Coral Reef Conservation Program un Coral Reef Watch; SECORE metodes. Atjaunošana ir vietēja; valda karstums.',
   },
   'nano-water-membranes': {
     title: 'Nanomateriālu membrānas',
@@ -90,8 +90,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Mančestras Universitātes grafēna darbs; NREL un nacionālo laboratoriju membrānu programmas; uzņēmumi, kas ražo plāno kārtiņu nanokompozītu RO (pieticīga, īsta produktu klase). «Grafēns atsāļos pasauli» virsrakstus uztver kā cerību, ne inventāru.',
     risks:
       'Kvadrātcentimetra plēves mērogošana līdz kvadrātkilometra stacijai, plus hlors, bioplēve un izmaksas. Nanomateriālu drošībai dzeramā ūdens saskarē vajag regulējumu, ne saukļus.',
-    sources:
-      'Pārskati Nature Nanotechnology un Science par graphene-oxide un CNT membrānām; NREL membrānu pētījumu lapas; tipiskā komerciālā RO joprojām ir poliamīds (standarta ūdensnozares teksti).',
+    sourcesNote:
+      'Nair et al., Nature, 2012; Abraham et al., Nature Nanotechnology, 2017. Komerciālā RO joprojām ir poliamīds.',
   },
   'carbios-enzymes': {
     title: 'Plastmasu šķeļošie fermenti — Carbios',
@@ -105,8 +105,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Carbios (Francija) un partneri (tostarp Āzijas licencēšanas sarunas). Akadēmiskā PETase inženierija turpinās daudzās laboratorijās pēc Yoshida et al. 2016. Savākšanas sistēmas paliek pašvaldību un zīmolu — sašaurinājums tikpat bieži kā ferments.',
     risks:
       'Izejvielai jābūt samērā tīram PET. Jauktā plastmasa joprojām uzvar ar to, ka to ir lēti aprakt vai sadedzināt. Rūpnīcu kavējumi ir parasti pirmā šāda veida reciklēšanai. Nesajauc demonstrācijas reaktoru ar atrisinātu atkritumu krīzi.',
-    sources:
-      'Yoshida et al., Science, 2016 (Ideonella sakaiensis PETase); Carbios rūpnīcas un finansējuma paziņojumi (Longlaville jauda ~50 kt/gadā; 2026. gada finansējuma atjauninājumi; agrākā H1 2028 ražošanas runa).',
+    sourcesNote:
+      'Yoshida et al., Science, 2016; Carbios lapas. Longlaville 2026. gada augustā joprojām gaida finansējumu — tā nav darbojoša rūpnīca.',
   },
   'methane-feed-additive': {
     title: 'Metānu samazinošā liellopu barība (Bovaer)',
@@ -120,8 +120,8 @@ export const lv: Record<string, InnovationCopy> = {
       'dsm-firmenich (izstrādātājs); Elanco (Ziemeļamerikas komercializācija); piena kooperatīvi, kas testē oglekļa ieskaites maksājumus. Citi metāna rīki (asparagopsis jūraszāles, 3-NOP konkurenti) ir paralēlos izmēģinājumos.',
     risks:
       'Izmaksas pret piena cenu; sabiedrības neuzticība; un kārdinājums 30 procentu griezumu saukt par «klimatneitrālu liellopu gaļu». Noplūde, ja ganāmpulki aug. Jūraszāļu piedevām ir savi broma un piegādes jautājumi — šī kartīte ir par 3-NOP, ne katru barības apgalvojumu.',
-    sources:
-      'ES 3-NOP atļauja (2022); Elanco / FDA CVM izskatīšanas pabeigšana, 28 May 2024 (~30% metāna samazinājuma apgalvojums uzņēmumu un dosjē materiālos); dsm-firmenich Bovaer zinātnes lapas; recenzētās 3-NOP metaanalīzes.',
+    sourcesNote:
+      'ES regula 2022/565; dsm-firmenich piezīme par FDA izskatīšanu 2024. gada maijā. Apmēram 30% zarnu metāna piena govīm marķētajā devā ir dosjē skaitlis, ne «klimatneitrāls liellops».',
   },
   'iter-fusion': {
     title: 'ITER — magnētiskās ieslodzīšanas kodolsintēze',
@@ -135,8 +135,8 @@ export const lv: Record<string, InnovationCopy> = {
       'ITER Organization un septiņi locekļi. Privātie tokamaku un stellaratoru uzņēmumi (Commonwealth Fusion, Tokamak Energy un citi) skrien ātrākā, riskantākā pulkstenī; tie nav ITER un nav tīklā strādājoši energouzņēmumi.',
     risks:
       'Izmaksas, trītija piegāde, materiāli zem 14 MeV neitroniem un grafiks. Veiksme ITER joprojām atstātu projektējamu demonstrācijas elektrostaciju. Neveiksme neizbeigtu privātos eksperimentus, bet aizvērtu publisku ceļu.',
-    sources:
-      'ITER Organization BUJ un Padomes bāzes piezīmes; U.S. Congressional Research Service, ITER overview (grafika un izmaksu vēsture); IEA fusion uzskaite. Necitē first-plasma-2025 kā aktuālu.',
+    sourcesNote:
+      'ITER vietne un BUJ. 2016. gada pirmās plazmas datums 2025 ir novecojis; vēlākās bāzes līnijas rāda pētniecības darbu 2030. gados.',
   },
   'nif-inertial-fusion': {
     title: 'NIF — inerciālās kodolsintēzes aizdedze',
@@ -150,8 +150,8 @@ export const lv: Record<string, InnovationCopy> = {
       'LLNL / NNSA (NIF). Privāti IFE uzņēmumi (piemēram, Focused Energy, Xcimer, Marvel Fusion un citi) mēģina efektīvākus lāzerus vai citus dzinējus. DOE pēc aizdedzes atsāka koordinētu IFE programmu.',
     risks:
       'Mērķa ieguvuma sajaukšana ar stacijas ieguvumu. Ieroču laboratorijas prioritātes. Mērķu ražošana elektrostacijas tempos nav atrisināta. Godīga runa saka: «aizdedze notika» un «komerciālā IFE — nē».',
-    sources:
-      'LLNL / DOE ignition announcement, 13 December 2022 (šāviens 5 December 2022; 2,05 MJ iekšā, 3,15 MJ ārā); turpmākie LLNL šāviena atjauninājumi; DOE IFE programmas piezīmes.',
+    sourcesNote:
+      'LLNL aizdegšanās lapa; DOE paziņojums 2022. gada 13. decembrī (šāviens 5. decembrī: ap 2,05 MJ uz mērķi, 3,15 MJ kodolsintēzes iznākums). Mērķa ieguvums nav stacijas ieguvums.',
   },
   'fervo-geothermal': {
     title: 'Uzlabotā ģeotermija — Fervo',
@@ -166,8 +166,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Fervo Energy (ASV); Google kā agrīnais pircējs; citi EGS un progresīvās ģeotermijas uzņēmumi (Eavor slēgtās cilpas, valdības FORGE vieta Jūtā). Tradicionālā hidrotermija joprojām piegādā lielāko daļu ģeotermālo megavatu pasaulē.',
     risks:
       'Urbšanas izmaksas, zemestrīces, ūdens lietojums un parastie pirmā šāda veida kavējumi. Veiksmīgs izmēģinājums nav teravats. Ģeoloģija atšķiras; Nevadas urbums nav globāla veidne.',
-    sources:
-      'Fervo / Google Project Red paziņojumi (2023. gada elektrība); Fervo Cape Station materiāli; 26 August 2026 Fervo–Google PPA atklāšana par Cape jaudu (mērķis — komerciāla darbība no 2028. gada — līgums, ne elektroni).',
+    sourcesNote:
+      'Fervo un Google Project Red piezīmes (elektrība 2023). Vēlākie Cape Station PPA ir līgumi desmitgades beigām, ne elektroni.',
   },
   'long-duration-storage': {
     title: 'Ilgstošās uzkrāšanas baterijas',
@@ -181,8 +181,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Form Energy; plūsmas bateriju piegādātāji (UniEnergy / pēcteču ķīmijas, Invinity un citi); saspiestais gaiss un termiskā uzkrāšana kā nebateriju radinieki. IEA un DOE LDES programmas seko laukam.',
     risks:
       'Cikla zudumi, izvietošana un tas, vai ūdeņradis vai vairāk pārvades ir lētāki. Neskaiti izsludinātās gigarūpnīcas kā piegādātas MWh. Litijs paliek darba zirgs īsajam ilgumam.',
-    sources:
-      'Form Energy tehnoloģijas un komunālo izmēģinājumu lapas; UniEnergy Turner projekts (Commons foto no īstas 1 MW / 4 MWh plūsmas sistēmas); IEA Grid-Scale Storage un LDES Council pārskati.',
+    sourcesNote:
+      'Form Energy tehnoloģijas lapas; IEA tīkla uzkrāšanas uzskaite. Izsludinātās daudzdienu iekārtas nav piegādātas MWh.',
   },
   'green-hydrogen': {
     title: 'Zaļais ūdeņradis',
@@ -196,8 +196,8 @@ export const lv: Record<string, InnovationCopy> = {
       'IEA Hydrogen uzskaite; elektrolīzeru ražotāji (Nel, ITM, Thyssenkrupp Nucera un citi); rūpnieciskie pircēji tēraudā un amonjakā. Daudzas «ūdeņraža ielejas» joprojām ir atkarīgas no grantiem.',
     risks:
       'Noplūde (ūdeņradis ir netieša siltumnīcefekta gāze), sajaukšanas haips gāzes tīklos un netīras elektrības lietošana «zaļas» degvielas ražošanai. Skaiti tonnas, kas ražotas no papildu atjaunojamiem, ne preses relīzes.',
-    sources:
-      'IEA Global Hydrogen Review; IEA “The Future of Hydrogen”; tipiskās well-to-wheel zudumu diskusijas Royal Society un ICCT ūdeņraža brīfingos.',
+    sourcesNote:
+      'IEA ūdeņraža temata lapa un Global Hydrogen Review. Skaiti tonnas no papildu zema oglekļa enerģijas, ne preses relīzes.',
   },
   'smr-nuclear': {
     title: 'Modulārā un progresīvā kodolenerģija',
@@ -211,14 +211,14 @@ export const lv: Record<string, InnovationCopy> = {
       'China National Nuclear / Tsinghua INET (HTR-PM); NuScale, GE Hitachi BWRX-300, Rolls-Royce SMR un citi licencēšanā. Polārie un rūpnieciskā siltuma lietotāji ir klienti slaidu komplektos.',
     risks:
       'Atkritumi, proliferācija, izmaksu pārtēriņš un «modulārs» kā sauklis stacijai, kas joprojām ir liels būvdarbu projekts. Viens ķīniešu demonstrējums nerada globālu floti. Nesaiņo SMR kopā ar kodolsintēzi vai krāpšanas baterijām.',
-    sources:
-      'World Nuclear Association un Modern Power Systems par HTR-PM komerciālo darbību (December 2023); NuScale / UAMPS atcelšana, November 2023; IAEA SMR buklets; NRC NuScale konstrukcijas sertifikācija.',
+    sourcesNote:
+      'Tsinghua un World Nuclear News par HTR-PM komerciālo darbību (2023. gada decembris); IAEA SMR lapa. Viens ķīniešu demonstrējums nav Rietumu flote.',
   },
   'space-solar-power': {
     title: 'Kosmiskā saules enerģija',
     hook: '2023. gada Caltech demonstrējums no orbītas pārraidīja enerģijas pilīti. Fizika darbojas; ekonomika ir jautājums.',
     imageAlt: 'Starptautiskās kosmosa stacijas saules masīvi — tuvākais darbojošais radinieks ierosinātajiem enerģijas satelītiem',
-    what: 'Kosmiskā saules enerģija (SBSP) orbītā vāktu saules gaismu un sūtītu enerģiju uz Zemi kā mikroviļņus vai lāzerus. 2023. gada janvārī Caltech MAPLE eksperiments SSPD-1 misijā parādīja bezvadu enerģijas pārraidi no orbītas uz Zemi — milivatus, ne megavatus. ESA SOLARIS pētījums un JAXA mikroviļņu darbs ir publiskās pētījumu līnijas. Tā nav elektrostacija.',
+    what: 'Kosmiskā saules enerģija (SBSP) orbītā vāktu saules gaismu un sūtītu enerģiju uz Zemi kā mikroviļņus vai lāzerus. Caltech SSPD-1 startēja 2023. gada janvārī; MAPLE parādīja bezvadu enerģijas pārraidi orbītā — un uztveramu pilīti uz Zemes — 2023. gada martā. Milivati, ne megavati. ESA SOLARIS pētījums un JAXA mikroviļņu darbs ir publiskās pētījumu līnijas. Tā nav elektrostacija.',
     problem:
       'Nakts un laikapstākļi ierobežo sauszemes sauli. Orbīta Sauli redz lielāku laika daļu. Āķis ir palaišanas masa, montāža, stara drošība un katra kilograma izmaksas.',
     how: 'Liels fotoelektriskais vai koncentratora masīvs baro fāzētā režģa raidītāju. Rektēna uz zemes pārvērš staru elektrībā. Efektivitāte un zeme rektēnai ir parasta inženierija; lēta, bieža smagā palaišana vēl nav parasta.',
@@ -226,8 +226,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Caltech Space Solar Power Project (MAPLE / SSPD-1, 2023); ESA SOLARIS; JAXA ilggadējie mikroviļņu demonstrējumi; daži jaunuzņēmumi. NASA un IEA SBSP uztver kā izpētes, ne 2030. gada ķīli.',
     risks:
       'Izmaksas uz vatu, orbitālie atkritumi, stara vadība un zinātniskās fantastikas slaidi. Veiksmīgs milivatu demonstrējums nav teravatu nozare. Turi šo kartīti blakus kodolsintēzei: nopietns pētījums, ne mājas ģenerators.',
-    sources:
-      'Caltech MAPLE / SSPD-1 January 2023 paziņojums; ESA SOLARIS lapas; JAXA bezvadu enerģijas pētījumu kopsavilkumi.',
+    sourcesNote:
+      'Caltech SSPD-1 / MAPLE paziņojums (palaišana 2023. gada janvāris; MAPLE demo 2023. gada marts); ESA SOLARIS.',
   },
   'nano-electrolyzer-catalysts': {
     title: 'Nanostrukturētie elektrolīzeru katalizatori',
@@ -241,8 +241,8 @@ export const lv: Record<string, InnovationCopy> = {
       'NREL ūdeņraža un degvielas elementu materiālu grupas; rūpnieciskie steku ražotāji IEA elektrolīzeru lapās; akadēmiskās grupas, kas publicē Nature Energy un Joule.',
     risks:
       'Laboratorijas strāvas blīvums, kas mirst 100 stundās. Patentu migla. Katalizatora raksta sajaukšana ar gigavatu rūpnīcu.',
-    sources:
-      'NREL elektrolīzeru materiālu lapas; IEA Electrolysers uzskaite; Ir-thrift PEM katalizatoru pārskati Nature Energy / Chemical Reviews (lauks, ne viens brīnumraksts).',
+    sourcesNote:
+      'NREL ūdeņraža lapas; IEA elektrolīzeru uzskaite. Katalizatora raksts nav gigavatu rūpnīca.',
   },
   'perpetual-motion': {
     title: 'Mūžīgais dzinējs — kāpēc tas neizdodas',
@@ -256,14 +256,14 @@ export const lv: Record<string, InnovationCopy> = {
       'Nav atzītas laboratorijas. Patentu iestādes jau sen noraida mūžīgā dzinēja pieteikumus bez darbojoša modeļa. Īstajiem bagātīgās enerģijas pētījumiem skati pārējās kartītes šajā Enerģijas sadaļā: ITER, NIF, uzlabotā ģeotermija, ilgstošā uzkrāšana, ūdeņradis (ar norādītiem zudumiem), modulārā kodolenerģija un kosmiskā saule.',
     risks:
       'Zaudēta nauda, zaudēts laiks un politikas troksnis, kas noslīcina darbu, kas tiešām pastāv. Fix Planet neuzskaitīs «brīvās enerģijas» izgudrotāju kā risinājumu.',
-    sources:
-      'Standarta termodinamika (pirmais un otrais likums); U.S. USPTO mūžīgā dzinēja prakse; IEA lapas par kodolsintēzi, ģeotermiju, uzkrāšanu, ūdeņradi un kodolenerģiju kā īsto pētījumu kopu.',
+    sourcesNote:
+      'USPTO prakse noraida mūžīgā dzinēja pieteikumus bez darbojoša modeļa. Termodinamika nav neobligāta. Īstie enerģijas pētījumi ir pārējās sadaļas kartītēs.',
   },
   'graphcast-ai-weather': {
     title: 'MI laikapstākļu modeļi — GraphCast',
     hook: 'Grafu neironu tīkls tagad konkurē ar klasiskajām vidēja termiņa prognozēm — un joprojām vajag satelītus.',
     imageAlt: 'GOES-16 pilna diska Zemes attēls — novērojumi, uz kuriem MI laikapstākļu modeļi mācās un darbojas',
-    what: 'GraphCast (Google DeepMind, Nature, 2023) ir mašīnmācīšanās modelis, kas prognozē globālos laikapstākļus apmēram desmit dienas uz priekšu no atmosfēras grafa, apmācīts uz ECMWF reanalīzes. FourCastNet (NVIDIA) un Pangu-Weather (Huawei) ir radinieki. Meteoroloģijas dienesti tagad tādus modeļus dzen blakus fizikas kodiem, ne to vietā.',
+    what: 'GraphCast (Google DeepMind, Science, 2023) ir mašīnmācīšanās modelis, kas prognozē globālos laikapstākļus apmēram desmit dienas uz priekšu no atmosfēras grafa, apmācīts uz ECMWF reanalīzes. FourCastNet (NVIDIA) un Pangu-Weather (Huawei) ir radinieki. Meteoroloģijas dienesti tagad tādus modeļus dzen blakus fizikas kodiem, ne to vietā.',
     problem:
       'Laikapstākļi un sezonālais risks dzen saimniecības, tīklus un katastrofu reaģēšanu. Ātrākas, lētākas prognozes palīdz — īpaši tur, kur superdatori ir reti. Klimata pārmaiņām joprojām vajag lēnā okeāna un ledus fizikas modeļus; 10 dienu ML prognoze nav 2100. gada projekcija.',
     how: 'Modelis mācās attēlojumus no pagātnes stāvokļiem uz nākotnes stāvokļiem. Tas «nesaprot» šķidrumu dinamiku; tas to tuvina. Prasmi mēra pret ECMWF analīzi, ne pret preses demonstrējumu. Kad apmācības pasaule pārbīdās, modelis var kļūdīties jaunā veidā.',
@@ -271,8 +271,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Google DeepMind; ECMWF (dati un salīdzinājums); NVIDIA FourCastNet; Huawei Pangu-Weather; nacionālie laikapstākļu dienesti, kas testē ML kodolus.',
     risks:
       'Pārlieka uzticība, vāji ekstrēmi un novērojumu sistēmas (satelīti, radiosondes) izlaišana, kas jebkuru modeli tur godīgu. MI laikapstākļi ir infrastruktūra, ne tērzēšanas robots.',
-    sources:
-      'Lam et al., Nature, 14 November 2023 (GraphCast); Pathak et al., FourCastNet (2022); Bi et al., Pangu-Weather (2023); ECMWF ML partnerības piezīmes.',
+    sourcesNote:
+      'Lam et al., Science, 2023. gada 14. novembris (GraphCast); DeepMind lapa. Prasmi mēra pret ECMWF sistēmām, ne pret preses demo.',
   },
   'gnome-materials': {
     title: 'GNoME — MI materiāliem',
@@ -286,23 +286,23 @@ export const lv: Record<string, InnovationCopy> = {
       'Google DeepMind; Lawrence Berkeley National Laboratory / Materials Project; citas pamatmodeļu materiālu grupas (Microsoft, Meta, akadēmiskās laboratorijas).',
     risks:
       'Rakstu skaita uzpūšana, «MI atklāja supravadītāju» virsraksti un toksicitātes un mērogošanas izlaišana. Paredzēts Li-jonu katods nav gigarūpnīca.',
-    sources:
-      'Merchant et al., Nature, 2023 (GNoME); Materials Project dokumentācija; Nature news komentāri par to, cik struktūru bija jaunas pret jau datubāzēs esošajām.',
+    sourcesNote:
+      'Merchant et al., Nature, 2023; DeepMind GNoME lapa. Prognozētos kristālus vēl jāizaudzē.',
   },
   'ai-grid-optimization': {
     title: 'MI elektrotīklam',
     hook: 'Labākas vēja prognozes un dispečeru rīki noskuj rezerves. Tie neaizstāj transformatorus.',
     imageAlt: 'Augstsprieguma pārvades masti — fiziskais tīkls, uz kura sēž optimizācijas programmatūra',
-    what: 'Tīkla operatori jau lieto optimizāciju. Mašīnmācīšanās pievieno ātrākas vēja, saules un pieprasījuma prognozes un dažkārt ierosina dispečerēšanu. DeepMind 2017.–2019. gada darbs ar National Grid ESO Britānijā ziņoja par uzlabotu vēja prognozes prasmi šajā sistēmā — noderīgs pieaugums, ne jauns tīkls. Citi ISO izmēģina līdzīgus rīkus.',
+    what: 'Tīkla operatori jau lieto optimizāciju. Mašīnmācīšanās pievieno ātrākas vēja, saules un pieprasījuma prognozes un dažkārt ierosina dispečerēšanu. DeepMind 2019. gadā publicētais rezultāts attiecās uz Google vēja fermām ASV: neironu tīkls prognozēja izlaidi apmēram 36 stundas uz priekšu un cēla šo megavatu vērtību par apmēram 20 procentiem pret saistībām bez laika rāmja. Sarunas ar Britānijas National Grid bija izpēte un nekļuva par ieviestu tīkla produktu. Citi operatori izmēģina līdzīgus rīkus.',
     problem:
       'Mainīgajiem atjaunojamiem vajag labāku prognozi un ātrāku vadību, vai arī mēs dedzinām vairāk gāzes «tikai gadījumam». Pārslodze un invertoru stabilitāte ir atsevišķas, grūtākas problēmas.',
     how: 'Modeļi uzņem laikapstākļus un SCADA līdzīgas vēstures un izdod ciešāku prognozi vai ieteikto uzdoto vērtību. Cilvēki un esošās enerģijas vadības sistēmas paliek cilpā. Tīkla sabrukums nav pieņemams apmācības skrējiens.',
     players:
-      'National Grid ESO / DeepMind sadarbība (publiska 2017.–2019.); dažādi ASV ISO/RTO izmēģinājumi; atjaunojamo prognožu piegādātāji. ENTSO-E un IEA digitalizācijas ziņojumi apseko lauku.',
+      'Google DeepMind uz Google vēja fermām ASV (publiski 2019); dažādi ISO/RTO un piegādātāju izmēģinājumi; vēlākā britu saules prognoze grupām kā Open Climate Fix. IEA digitalizācijas ziņojumi apseko lauku.',
     risks:
       'Kiberdrošība, slēpta novirze, kad laikapstākļi ir jauni, un piegādātāji, kas apgalvo «MI tīklu». Invertoru un aizsardzības fizika joprojām valda.',
-    sources:
-      'DeepMind blogs un National Grid piezīmes par vēja prognožu sadarbību (2017.–2019.); IEA “Digitalisation and Energy”; ENTSO-E pētījumu ziņojumi.',
+    sourcesNote:
+      'DeepMind 2019. gada 26. februāra piezīme par vēja vērtību (Google fermas ASV); IEA Digitalisation and Energy. Sarunas ar National Grid nekļuva par produktu.',
   },
   'alphafold-proteins': {
     title: 'AlphaFold — olbaltumvielas zinātnei',
@@ -316,8 +316,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Google DeepMind un EMBL-EBI (AF Database); Meta ESM; University of Washington Institute for Protein Design (Baker); rūpnieciskā biotehnoloģija, kas rīkus lieto fermentiem un zālēm.',
     risks:
       'Bioloģiskā drošība (tie paši rīki var skicēt kaitīgas olbaltumvielas — laboratorijas un žurnāli tagad apspriež sijāšanu). Pārapgalvojums, ka prognozēta PETase ir reciklēšanas rūpnīca. Fermentiera enerģija un ūdens joprojām skaitās.',
-    sources:
-      'Jumper et al., Nature, 2021 (AlphaFold 2); AlphaFold Database (EMBL-EBI); Abramson et al., Nature, 2024 (AlphaFold 3); Lin et al., Science, 2023 (ESMFold); Watson et al., Nature, 2023 (RFdiffusion).',
+    sourcesNote:
+      'Jumper et al., Nature, 2021; AlphaFold datubāze (EMBL-EBI). Prognozētā salocīšana nav rūpniecisks enzīms.',
   },
   'amp-recycling-robots': {
     title: 'Reciklēšanas roboti — AMP',
@@ -331,8 +331,8 @@ export const lv: Record<string, InnovationCopy> = {
       'AMP Robotics; konkurenti Eiropā un Āzijā; tradicionālie optisko šķirotāju uzņēmumi (TOMRA un citi), kas tagad sūta savu ML. Atkritumu uzņēmumi un pašvaldības ir pircēji.',
     risks:
       'Ja iepirkuma rūpnīca aizveras, robots šķiro poligonam paredzētā bunkurā. Eksporta aizliegumi un lēta primārā plastmasa joprojām nosaka ekonomiku. Tā ir šķirošana, ne alķīmija.',
-    sources:
-      'AMP Robotics uzstādīšanas gadījumu lapas; nozares materiāli par MRF robotu ieviešanu; EPA un ES reciklēšanas rādītāju statistika kontekstam (šķirošana ≠ reciklēšana).',
+    sourcesNote:
+      'AMP Sortation / AMP Robotics vietne. Šķirošana nav tirgus ķīpai.',
   },
   'quantum-computing': {
     title: 'Kvantu skaitļošana — ķīmijas cerības',
@@ -346,8 +346,8 @@ export const lv: Record<string, InnovationCopy> = {
       'IBM, Google Quantum AI, IonQ, Quantinuum, akadēmiskās grupas. Ķīmijas partneri (Boeing, Mercedes, nacionālās laboratorijas) dzen izpētes algoritmus. Publiskie atskaites punkti ir īsti; produktu apgalvojumiem jābūt datētiem un šauriem.',
     risks:
       'Haipa cikli, eksporta kontroles un vadības steka enerģijas patēriņš. Neraksti zinātnisko fantastiku par tūlītējiem klimata modeļiem. Klasiskā augstas veiktspējas skaitļošana joprojām dara klimata darbu.',
-    sources:
-      'IBM kvantu procesoru paziņojumi (Condor 2023; Heron); Google Willow, December 2024; IonQ publiskās slazoto jonu ceļa kartes; kvantu ķīmijas algoritmu pārskati (NISQ robežas).',
+    sourcesNote:
+      'Google Willow paziņojums (2024. gada 9. decembris); IBM Quantum lapas. Publiskās mašīnas vēl nav projektējušas klimata katalizatoru.',
   },
   'climate-trace': {
     title: 'Climate TRACE — emisiju redzēšana',
@@ -361,8 +361,8 @@ export const lv: Record<string, InnovationCopy> = {
       'Climate TRACE koalīcija (nevalstiskās organizācijas, uzņēmumi, universitātes); GHGSat; Carbon Mapper (tostarp NASA/JPL partnerības); IMEO (UNEP) metāna zinātne. Nacionālās inventarizācijas paliek juridiskā bāze.',
     risks:
       'Viltus spalvas, politiskā pretreakcija un paneļa uztveršana kā izpilde. Satelīti dažas nozares redz labāk nekā citas (piena fermas dīķis ≠ pilsēta ar divtaktu motocikliem).',
-    sources:
-      'Climate TRACE metodoloģija un inventarizācijas laidieni; GHGSat un Carbon Mapper publiskās piezīmes; UNEP IMEO metāna ziņojumi.',
+    sourcesNote:
+      'Climate TRACE inventarizācija un metodoloģija. Spilgts pikselis ir pavediens, ne tiesas spriedums.',
   },
   'prithvi-earth-ai': {
     title: 'Prithvi — Zemes pamatmodeļi',
@@ -376,7 +376,7 @@ export const lv: Record<string, InnovationCopy> = {
       'NASA (HLS, IMPACT); IBM Research; Hugging Face / GitHub svari; lietotāji katastrofu un lauksaimniecības aģentūrās. Earth-2 ir NVIDIA atsevišķā emulācijas līnija.',
     risks:
       'Novirze tur, kur apmācības satelīti nekad neskatījās, militārs dubultais lietojums un piegādātāji, kas precizējumu ietin kā «klimata modeli». Lasi modeļa karti.',
-    sources:
-      'NASA–IBM Prithvi laidums (2023) un modeļu kartes; HLS dokumentācija; NVIDIA Earth-2 produktu piezīmes (emulācija, ne tie paši svari).',
+    sourcesNote:
+      'NASA Earthdata Prithvi laidums (2023); IBM–NASA modeļu kartes Hugging Face. Sākuma svari nav orākuls.',
   },
 };

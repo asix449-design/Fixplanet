@@ -10,7 +10,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Collectors use solid amine filters and low-temperature heat — in Iceland, geothermal steam from ON Power. Released CO₂ is dissolved and injected into basalt by Carbfix, where it mineralizes. The chain is real. The limit is cost, energy, and how fast modules can be built without pretending a few thousand tonnes is climate-scale.',
     players: 'Climeworks (Switzerland) operates Orca and Mammoth in Iceland with ON Power and Carbfix. The U.S. Department of Energy has also funded much larger DAC “hub” concepts (including Project Cypress with Climeworks, Battelle, and Heirloom); those are plans, not operating megaton plants.',
     risks: 'DAC is energy-hungry. If the heat and power are fossil, the net removal shrinks or vanishes. Credits can be sold faster than tonnes are stored. Mammoth’s first year showed that “online” is not the same as nameplate. This is a pilot industry, not a substitute for cutting emissions.',
-    sources: 'Climeworks, “Climeworks switches on world’s largest DAC plant,” 8 May 2024 (Mammoth start; 36,000 t/yr nameplate; 12 of 72 containers at start). Orca start 2021. IEA Direct Air Capture tracking. ThinkGeoEnergy coverage of the geothermal-powered site.',
+    sourcesNote:
+      'Official Mammoth plant page and 8 May 2024 start release; IEA DAC tracking. Nameplate is not tonnes delivered.',
   },
   'northern-lights-ccs': {
     title: 'Northern Lights — point-source CCS',
@@ -21,7 +22,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Captured CO₂ is liquefied, shipped, received, and piped offshore for injection. Phase 1 is designed for 1.5 million tonnes a year. Northern Lights reported first industrial volumes transported and stored in August 2025, including CO₂ from Heidelberg Materials’ Brevik cement plant. Phase 2 is meant to raise capacity toward about 5 million tonnes later in the decade — a plan, not a present fact.',
     players: 'Joint venture of Equinor, Shell, and TotalEnergies, with Norwegian state support under Longship. Early emitter: Heidelberg Materials Brevik. Other European industrial customers are contracted or in talks.',
     risks: 'Capture at the plant is the hard, expensive step; storage is only useful if capture actually runs. Leakage, energy penalty, and using CCS to stretch fossil production are real debates. A million tonnes is serious engineering and still small next to national inventories.',
-    sources: 'Northern Lights JV project pages; Norwegian government Longship briefings; 2025 operational start reporting (first stored industrial CO₂, August 2025); Heidelberg Materials Brevik CCS.',
+    sourcesNote:
+      'Northern Lights JV pages; Equinor first-storage note (25 Aug 2025); official Longship / CCS Norway briefing.',
   },
   'carbfix-mineralization': {
     title: 'Carbfix — turning CO₂ into stone',
@@ -32,7 +34,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'CO₂ is dissolved before or during injection, which also lowers the risk of a free CO₂ plume. In Iceland the water and the rock are available next to geothermal plants. The same geology does not exist everywhere; other basalt provinces (for example in the U.S. Northwest or India) are being studied, not copied overnight.',
     players: 'Carbfix (Reykjavík Energy / ON Power lineage) at Hellisheiði; storage partner for Climeworks Orca and Mammoth. Research papers by Matter, Oelkers, Gíslason and colleagues documented the early injections.',
     risks: 'Needs a lot of water and the right rock. Scaling beyond Iceland is a geology problem as much as an engineering one. It stores carbon that has already been captured — it does not pull CO₂ from the sky by itself.',
-    sources: 'Matter et al., Science, 2016 (rapid mineralization at Hellisheiði); Carbfix technical pages; Climeworks–Carbfix partnership notes.',
+    sourcesNote:
+      'Carbfix project site; Matter et al., Science, 2016 — more than 95% of injected CO₂ mineralized in under two years at Hellisheiði.',
   },
   'precision-fermentation': {
     title: 'Precision fermentation',
@@ -43,7 +46,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'A tank is fed sugar (or hydrogen and air, for Solein), minerals, and oxygen. Microbes make the target molecule; the broth is purified. The climate win depends on the feedstock and the grid. Sugar from cleared land cancels the story. Clean power and waste sugars keep it honest.',
     players: 'Perfect Day (U.S.) for dairy proteins; Solar Foods (Finland) for Solein; many other startups in heme, casein, and fats. Regulators (FDA GRAS, novel-food rules in the EU and Singapore) decide what can be sold.',
     risks: 'Cost, consumer acceptance, and hidden land in the sugar supply. This is not a famine solution and not a replacement for every farm. It is a way to make a few high-impact ingredients without an animal.',
-    sources: 'Perfect Day product and GRAS materials; Solar Foods / Solein regulatory notices; FAO and Poore & Nemecek 2018 for livestock land and emissions context (order-of-magnitude, not a product claim).',
+    sourcesNote:
+      'Perfect Day and Solar Foods / Solein official sites. Livestock land context is separate literature, not a product claim.',
   },
   'coral-restoration': {
     title: 'Coral restoration technology',
@@ -54,7 +58,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Divers or boats outplant fragments or settled larvae onto stable substrate. Some projects select for heat-tolerant colonies. Success is measured in survival and years of growth, not in press photos. The method is real; the scale is local.',
     players: 'SECORE International; Mars Sustainable Solutions (MARRS) in Indonesia and elsewhere; Coral Vita (land-based farming, Bahamas); government and NGO nurseries across the Caribbean, Pacific, and Coral Triangle. NOAA and ICRI publish methods and limits.',
     risks: 'Outplants die in the next heatwave if the water stays too warm. Restoration is not a license to keep emitting. Genetics, disease, and volunteer burnout are ordinary failure modes. Treat every “we restored a reef” claim as a site, not a biome.',
-    sources: 'NOAA Coral Reef Conservation Program; SECORE methods; Mars MARRS project descriptions; IPCC AR6 ocean and cryosphere / WGII reef findings; 2023–2024 global bleaching updates from NOAA Coral Reef Watch.',
+    sourcesNote:
+      'NOAA Coral Reef Conservation Program and Coral Reef Watch; SECORE methods. Restoration is local; heat still rules.',
   },
   'nano-water-membranes': {
     title: 'Nanomaterial membranes',
@@ -65,7 +70,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Researchers stack flakes or grow pores so water (or a target gas) passes and salts do not. Lab coupons often look excellent. Modules that last years in Red Sea or municipal wastewater are rarer. Commercial RO remains dominated by polyamide films, not wonder materials.',
     players: 'University of Manchester graphene work; NREL and national-lab membrane programs; companies making thin-film nanocomposite RO (a modest, real product class). Treat “graphene will desalinate the world” headlines as hope, not inventory.',
     risks: 'Scaling a square-centimetre film to a square-kilometre plant, plus chlorine, biofilm, and cost. Nanomaterial safety in drinking-water contact needs regulation, not slogans.',
-    sources: 'Reviews in Nature Nanotechnology and Science on graphene-oxide and CNT membranes; NREL membrane research pages; typical commercial RO is still polyamide (standard water-industry texts).',
+    sourcesNote:
+      'Nair et al., Nature, 2012 (graphene-oxide water permeation); Abraham et al., Nature Nanotechnology, 2017. Commercial RO remains polyamide.',
   },
   'carbios-enzymes': {
     title: 'Plastic-eating enzymes — Carbios',
@@ -76,7 +82,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Shredded PET is mixed with an engineered hydrolase under mild heat. The polymer falls back to terephthalic acid and ethylene glycol, which can be purified and re-polymerized. It is chemistry with a protein catalyst, not a compost heap and not a magic microbe released into the ocean.',
     players: 'Carbios (France) and partners (including Asian licensing talks). Academic PETase engineering continues in many labs after Yoshida et al. 2016. Collection systems remain municipal and brand-owned — the bottleneck as often as the enzyme.',
     risks: 'Feedstock must be relatively clean PET. Mixed plastic still wins by being cheap to bury or burn. Plant delays are normal for first-of-a-kind recycling. Do not confuse a demo reactor with a solved waste crisis.',
-    sources: 'Yoshida et al., Science, 2016 (Ideonella sakaiensis PETase); Carbios plant and financing releases (Longlaville capacity ~50 kt/yr; 2026 financing updates; earlier H1 2028 production talk).',
+    sourcesNote:
+      'Yoshida et al., Science, 2016; Carbios company pages. Longlaville remains financing-limited as of August 2026 — not an operating plant.',
   },
   'methane-feed-additive': {
     title: 'Methane-reducing cattle feed (Bovaer)',
@@ -87,7 +94,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'The additive is mixed into the total mixed ration at grams-per-cow-per-day scale. It must be fed daily. Effect size depends on diet. It is not a vaccine and not a genetic rewrite of the animal.',
     players: 'dsm-firmenich (developer); Elanco (North American commercialization); dairy cooperatives testing carbon-inset payments. Other methane tools (asparagopsis seaweed, 3-NOP rivals) are in parallel trials.',
     risks: 'Cost versus milk price; public distrust; and the temptation to call a 30 percent cut “climate-neutral beef.” Leakage if herds grow. Seaweed additives have their own bromine and supply questions — this card is about 3-NOP, not every feed claim.',
-    sources: 'EU authorization of 3-NOP (2022); Elanco / FDA CVM review completion, 28 May 2024 (~30% methane reduction claim in company and dossier materials); dsm-firmenich Bovaer science pages; peer-reviewed 3-NOP meta-analyses.',
+    sourcesNote:
+      'EU Implementing Regulation 2022/565; dsm-firmenich note on the May 2024 U.S. FDA review. About 30% enteric methane in dairy at labeled dose is the company/dossier figure, not climate-neutral beef.',
   },
   'iter-fusion': {
     title: 'ITER — magnetic-confinement fusion',
@@ -98,7 +106,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Superconducting magnets confine a hot plasma in a doughnut. Heating systems push it toward the temperatures where D–T fusion is likely. The 2016 schedule once aimed at first plasma in 2025; later baselines slipped that date after manufacturing defects, COVID, and cost growth. Public briefings in the mid-2020s point to first plasma later in the 2030s and deuterium–tritium still later. Treat any “unlimited commercial fusion this decade” line as marketing.',
     players: 'ITER Organization and seven Members. Private tokamak and stellarator firms (Commonwealth Fusion, Tokamak Energy, and others) run on a faster, riskier clock; they are not ITER and they are not online utilities.',
     risks: 'Cost, tritium supply, materials under 14 MeV neutrons, and schedule. Success at ITER would still leave a demonstration power plant to design. Failure would not end private experiments, but it would close a public path.',
-    sources: 'ITER Organization FAQs and Council baseline notes; U.S. Congressional Research Service, ITER overview (schedule and cost history); IEA fusion tracking. Do not cite first-plasma-2025 as current.',
+    sourcesNote:
+      'ITER Organization site and FAQs. The 2016 first-plasma-2025 date is obsolete; later baselines point to research operations in the 2030s.',
   },
   'nif-inertial-fusion': {
     title: 'NIF — inertial fusion ignition',
@@ -109,7 +118,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Lasers convert to X-rays inside a hohlraum; the capsule implodes; deuterium–tritium fuses for a fraction of a second. The lasers themselves take far more energy from the wall than the 2 MJ that reach the target. That gap is why this is not a power station.',
     players: 'LLNL / NNSA (NIF). Private IFE firms (for example Focused Energy, Xcimer, Marvel Fusion, and others) are trying higher-efficiency lasers or different drivers. DOE restarted a coordinated IFE program after ignition.',
     risks: 'Confusing target gain with plant gain. Weapon-lab priorities. Target manufacturing at power-plant rates is unsolved. Honest talk says “ignition happened” and “commercial IFE has not.”',
-    sources: 'LLNL / DOE ignition announcement, 13 December 2022 (shot of 5 December 2022; 2.05 MJ in, 3.15 MJ out); subsequent LLNL shot updates; DOE IFE program notes.',
+    sourcesNote:
+      'LLNL ignition page; DOE announcement of 13 Dec 2022 (shot of 5 Dec 2022: about 2.05 MJ on target, 3.15 MJ fusion yield). Target gain is not plant gain.',
   },
   'fervo-geothermal': {
     title: 'Enhanced geothermal — Fervo',
@@ -120,7 +130,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Oilfield-style horizontal drilling and stimulation open a pair of wells. Water circulates, picks up heat, and drives a binary or flash plant on the surface. Induced seismicity must be monitored. This is not “free energy”; it is mining heat with steel and pumps.',
     players: 'Fervo Energy (U.S.); Google as an early buyer; other EGS and advanced geothermal firms (Eavor’s closed loops, government FORGE site in Utah). Traditional hydrothermal still supplies most geothermal megawatts worldwide.',
     risks: 'Drilling cost, quakes, water use, and the usual first-of-a-kind delays. A successful pilot is not a terawatt. Geology varies; a Nevada well is not a global template.',
-    sources: 'Fervo / Google Project Red announcements (2023 electricity); Fervo Cape Station materials; 26 August 2026 Fervo–Google PPA disclosure for Cape capacity (target commercial operation from 2028 — a contract, not electrons yet).',
+    sourcesNote:
+      'Fervo and Google Project Red notes (electricity in 2023). Later Cape Station PPAs are contracts aimed at late-decade operation — not electrons yet.',
   },
   'long-duration-storage': {
     title: 'Long-duration batteries',
@@ -131,7 +142,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Iron-air cells “rust” iron to store energy and un-rust it to discharge — abundant materials, low energy density, large yards. Flow batteries keep liquid electrolytes in tanks you can enlarge. Both trade bulk and acres for duration. Neither is a physics miracle.',
     players: 'Form Energy; flow-battery vendors (UniEnergy / successor chemistries, Invinity, and others); compressed-air and thermal storage as non-battery cousins. IEA and DOE LDES programs track the field.',
     risks: 'Round-trip losses, siting, and whether hydrogen or more transmission is cheaper. Do not count announced gigafactories as delivered MWh. Lithium remains the workhorse for short duration.',
-    sources: 'Form Energy technology and utility-pilot pages; UniEnergy Turner project (Commons photo of a real 1 MW / 4 MWh flow system); IEA Grid-Scale Storage and LDES Council overviews.',
+    sourcesNote:
+      'Form Energy technology pages; IEA grid-scale storage tracking. Announced multi-day plants are not delivered megawatt-hours.',
   },
   'green-hydrogen': {
     title: 'Green hydrogen',
@@ -142,7 +154,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Electrolyzers split water. Compression, liquefaction, or conversion to ammonia then spends more energy. IEA and academic reviews typically find large losses on the path from renewable electricity to a hydrogen car or boiler — often well over half the original energy. That is why heat pumps and batteries win those uses on physics, not fashion.',
     players: 'IEA Hydrogen tracking; electrolyzer makers (Nel, ITM, Thyssenkrupp Nucera, and others); industrial offtakers in steel and ammonia. Many “hydrogen valleys” are still grant-dependent.',
     risks: 'Leakage (hydrogen is an indirect greenhouse gas), blending hype in gas grids, and using dirty electricity to make “green” fuel. Count tonnes produced from additional renewables, not press releases.',
-    sources: 'IEA Global Hydrogen Review; IEA “The Future of Hydrogen”; typical well-to-wheel loss discussions in Royal Society and ICCT hydrogen briefs.',
+    sourcesNote:
+      'IEA hydrogen topic page and Global Hydrogen Review. Count tonnes from additional low-carbon power, not press releases.',
   },
   'smr-nuclear': {
     title: 'Modular and advanced nuclear',
@@ -153,18 +166,20 @@ export const en: Record<string, InnovationCopy> = {
     how: 'HTR-PM uses helium-cooled pebble fuel and is designed to shut down without active emergency core cooling in tested conditions. Light-water SMRs are basically smaller PWRs. None of this is “unlimited energy.” It is nuclear engineering with a different module size.',
     players: 'China National Nuclear / Tsinghua INET (HTR-PM); NuScale, GE Hitachi BWRX-300, Rolls-Royce SMR, and others in licensing. Polar and industrial heat users are the customers on the slide decks.',
     risks: 'Waste, proliferation, cost overrun, and using “modular” as a slogan for a plant that is still a large civil-works project. One Chinese demo does not make a global fleet. Do not bundle SMRs with fusion or with scam batteries.',
-    sources: 'World Nuclear Association and Modern Power Systems on HTR-PM commercial operation (December 2023); NuScale / UAMPS cancellation, November 2023; IAEA SMR booklet; NRC NuScale design certification.',
+    sourcesNote:
+      'Tsinghua and World Nuclear News on HTR-PM commercial operation (December 2023); IAEA SMR topic page. One Chinese demo is not a Western fleet.',
   },
   'space-solar-power': {
     title: 'Space-based solar power',
     hook: 'A 2023 Caltech demo beamed a trickle of power from orbit. The physics works; the economics are the question.',
     imageAlt: 'International Space Station solar arrays — the closest working cousin of proposed power satellites',
-    what: 'Space-based solar power (SBSP) would collect sunlight in orbit and send energy to Earth as microwaves or lasers. In January 2023 Caltech’s MAPLE experiment on the SSPD-1 mission showed in-orbit wireless power transfer to Earth — milliwatts, not megawatts. ESA’s SOLARIS study and JAXA microwave work are the public research lines. This is not a power plant.',
+    what: 'Space-based solar power (SBSP) would collect sunlight in orbit and send energy to Earth as microwaves or lasers. Caltech’s SSPD-1 launched in January 2023; MAPLE demonstrated in-orbit wireless power transfer — and a detectable trickle at Earth — in March 2023. Milliwatts, not megawatts. ESA’s SOLARIS study and JAXA microwave work are the public research lines. This is not a power plant.',
     problem: 'Night and weather limit terrestrial solar. Orbit can see the Sun more of the time. The catch is launch mass, assembly, beam safety, and the cost of every kilogram.',
     how: 'A large photovoltaic or concentrator array feeds a phased-array transmitter. A rectenna on the ground turns the beam into electricity. Efficiency and land for the rectenna are ordinary engineering; cheap, frequent heavy lift is not ordinary yet.',
     players: 'Caltech Space Solar Power Project (MAPLE / SSPD-1, 2023); ESA SOLARIS; JAXA long-running microwave demos; a few startups. NASA and IEA treat SBSP as exploratory, not a 2030 wedge.',
     risks: 'Cost per watt, orbital debris, beam control, and science-fiction slides. A successful milliwatt demo is not a terawatt industry. Keep this card next to fusion: serious research, not a home generator.',
-    sources: 'Caltech MAPLE / SSPD-1 January 2023 release; ESA SOLARIS pages; JAXA wireless-power research summaries.',
+    sourcesNote:
+      'Caltech SSPD-1 / MAPLE release (launch January 2023; MAPLE demo March 2023); ESA SOLARIS.',
   },
   'nano-electrolyzer-catalysts': {
     title: 'Nanostructured electrolyzer catalysts',
@@ -175,7 +190,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'High surface area and the right crystal face raise activity. Durability under acid and high current is the usual failure. Membrane (Nafion-class ionomers) and porous transport layers are the rest of the sandwich.',
     players: 'NREL hydrogen and fuel-cell materials groups; industrial stack makers listed on IEA electrolyzer pages; academic groups publishing in Nature Energy and Joule.',
     risks: 'Lab current density that dies in 100 hours. Patent fog. Confusing a catalyst paper with a gigawatt factory.',
-    sources: 'NREL electrolyzer materials pages; IEA Electrolysers tracking; reviews of Ir-thrift PEM catalysts in Nature Energy / Chemical Reviews (field, not a single miracle paper).',
+    sourcesNote:
+      'NREL hydrogen pages; IEA electrolysers tracking. A catalyst paper is not a gigawatt factory.',
   },
   'perpetual-motion': {
     title: 'Perpetual motion — why it fails',
@@ -186,18 +202,20 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Friction, electrical resistance, and radiation eat every real cycle. Magnets do not push a rotor around a closed loop for free; the field is conservative. A hidden battery or a measurement error is the usual “proof.” If a device needs a hidden power cord, it is not a miracle.',
     players: 'No laboratory of record. Patent offices have long rejected perpetual-motion filings that lack a working model. For real abundant-energy research see the other cards in this Energy section: ITER, NIF, enhanced geothermal, long-duration storage, hydrogen (with losses stated), modular nuclear, and space solar.',
     risks: 'Money lost, time lost, and policy noise that drowns work that actually exists. A “free energy” kit is not a solution.',
-    sources: 'Standard thermodynamics (first and second laws); U.S. USPTO perpetual-motion practice; IEA pages on fusion, geothermal, storage, hydrogen, and nuclear as the real research set.',
+    sourcesNote:
+      'USPTO utility practice rejects perpetual-motion claims that lack a working model. Thermodynamics is not optional. Real energy research is on the other Energy cards.',
   },
   'graphcast-ai-weather': {
     title: 'AI weather models — GraphCast',
     hook: 'A graph neural net now rivals classical medium-range forecasts — and it still needs the satellites.',
     imageAlt: 'GOES-16 full-disk image of Earth — the observations AI weather models train and run on',
-    what: 'GraphCast (Google DeepMind, Nature, 2023) is a machine-learning model that predicts global weather about ten days ahead from a graph of the atmosphere, trained on ECMWF reanalysis. FourCastNet (NVIDIA) and Pangu-Weather (Huawei) are cousins. Meteorological services now run such models alongside, not instead of, physics codes.',
+    what: 'GraphCast (Google DeepMind, Science, 2023) is a machine-learning model that predicts global weather about ten days ahead from a graph of the atmosphere, trained on ECMWF reanalysis. FourCastNet (NVIDIA) and Pangu-Weather (Huawei) are cousins. Meteorological services now run such models alongside, not instead of, physics codes.',
     problem: 'Weather and seasonal risk drive farms, grids, and disaster response. Faster, cheaper forecasts help — especially where supercomputers are scarce. Climate change still needs physics models of the slow ocean and ice; a 10-day ML forecast is not a 2100 projection.',
     how: 'The model learns mappings from past states to future states. It does not “understand” fluid dynamics; it approximates them. Skill is measured against ECMWF analysis, not against a press demo. When the training world shifts, the model can fail in new ways.',
     players: 'Google DeepMind; ECMWF (data and comparison); NVIDIA FourCastNet; Huawei Pangu-Weather; national weather services testing ML cores.',
     risks: 'Over-trust, weak extremes, and skipping the observing system (satellites, radiosondes) that makes any model honest. AI weather is infrastructure, not a chatbot.',
-    sources: 'Lam et al., Nature, 14 November 2023 (GraphCast); Pathak et al., FourCastNet (2022); Bi et al., Pangu-Weather (2023); ECMWF ML partnership notes.',
+    sourcesNote:
+      'Lam et al., Science, 14 November 2023 (GraphCast); DeepMind GraphCast page. Skill is measured against ECMWF systems, not a press demo.',
   },
   'gnome-materials': {
     title: 'GNoME — AI for materials',
@@ -208,18 +226,20 @@ export const en: Record<string, InnovationCopy> = {
     how: 'The model scores stability and, with other tools, properties. High-throughput computation and robot labs can test a slice. Most predicted crystals will be useless, unstable in air, or already known under another name. That is normal for search.',
     players: 'Google DeepMind; Lawrence Berkeley National Laboratory / Materials Project; other foundation-model materials groups (Microsoft, Meta, academic labs).',
     risks: 'Paper-count inflation, “AI discovered a superconductor” headlines, and skipping toxicity and scale-up. A predicted Li-ion cathode is not a gigafactory.',
-    sources: 'Merchant et al., Nature, 2023 (GNoME); Materials Project documentation; commentary in Nature news on how many structures were new versus already in databases.',
+    sourcesNote:
+      'Merchant et al., Nature, 2023; DeepMind GNoME page. Predicted crystals still have to be made.',
   },
   'ai-grid-optimization': {
     title: 'AI for the power grid',
     hook: 'Better wind forecasts and dispatch tools shave reserves. They do not replace transformers.',
     imageAlt: 'High-voltage transmission pylons — the physical grid that optimization software sits on',
-    what: 'Grid operators already use optimization. Machine learning adds faster forecasts of wind, solar, and demand, and sometimes suggests dispatch. DeepMind’s 2017–2019 work with National Grid ESO in Britain reported improved wind-forecast skill for that system — a useful increment, not a new grid. Other ISOs trial similar tools.',
+    what: 'Grid operators already use optimization. Machine learning adds faster forecasts of wind, solar, and demand, and sometimes suggests dispatch. DeepMind’s published 2019 result was on Google’s U.S. wind farms: a neural net predicted output about 36 hours ahead and raised the value of those megawatts by about 20 percent versus making no time-based commitments. Talks with Britain’s National Grid were exploratory and did not become a deployed grid product. Other operators trial similar tools.',
     problem: 'Variable renewables need better prediction and faster control or we burn more gas “just in case.” Congestion and inverter-based stability are separate, harder problems.',
     how: 'Models ingest weather and SCADA-like histories and output a tighter forecast or a recommended set-point. Humans and existing energy-management systems stay in the loop. A blackout is not an acceptable training run.',
-    players: 'National Grid ESO / DeepMind collaboration (public 2017–2019); various U.S. ISO/RTO pilots; vendors of renewable forecasting. ENTSO-E and IEA digitalization reports survey the field.',
+    players: 'Google DeepMind on Google-owned U.S. wind (public 2019); various ISO/RTO and vendor pilots; later UK solar-forecast work by groups such as Open Climate Fix. IEA digitalization reports survey the field.',
     risks: 'Cybersecurity, hidden bias when the weather is new, and vendors claiming an “AI grid.” Physics of inverters and protection still rules.',
-    sources: 'DeepMind blog and National Grid notes on wind-forecast collaboration (2017–2019); IEA “Digitalisation and Energy”; ENTSO-E research reports.',
+    sourcesNote:
+      'DeepMind 26 February 2019 wind-value note (U.S. Google farms); IEA Digitalisation and Energy. National Grid talks were not a shipped product.',
   },
   'alphafold-proteins': {
     title: 'AlphaFold — proteins for science',
@@ -230,7 +250,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'The model learned from the Protein Data Bank and evolutionary pairings. Laboratories still express, purify, and assay. RFdiffusion and related tools generate new backbones; wet-lab failure remains common.',
     players: 'Google DeepMind and EMBL-EBI (AF Database); Meta ESM; University of Washington Institute for Protein Design (Baker); industrial biotech using the tools on enzymes and drugs.',
     risks: 'Biosecurity (the same tools can sketch harmful proteins — labs and journals now discuss screening). Over-claiming a predicted PETase as a recycling plant. Energy and water of the fermenter still count.',
-    sources: 'Jumper et al., Nature, 2021 (AlphaFold 2); AlphaFold Database (EMBL-EBI); Abramson et al., Nature, 2024 (AlphaFold 3); Lin et al., Science, 2023 (ESMFold); Watson et al., Nature, 2023 (RFdiffusion).',
+    sourcesNote:
+      'Jumper et al., Nature, 2021; AlphaFold Database (EMBL-EBI). A predicted fold is not an industrial enzyme.',
   },
   'amp-recycling-robots': {
     title: 'Recycling robots — AMP',
@@ -241,7 +262,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'A camera classifies objects on a belt; a suction or gripper arm picks the target into a chute. The model is retrained as packaging changes. Throughput is measured in picks per minute, not in “AI.”',
     players: 'AMP Robotics; competitors in Europe and Asia; traditional optical-sorter firms (TOMRA and others) that now ship their own ML. Waste firms and municipalities are the buyers.',
     risks: 'If the offtake mill closes, the robot sorts into a landfill-bound bunker. Export bans and cheap virgin plastic still set the economics. This is sorting, not alchemy.',
-    sources: 'AMP Robotics installation case pages; industry coverage of MRF robot deployments; EPA and EU recycling-rate statistics for context (sorting ≠ recycling).',
+    sourcesNote:
+      'AMP Sortation / AMP Robotics company site. Sorting is not a market for the bale.',
   },
   'quantum-computing': {
     title: 'Quantum computing — chemistry hopes',
@@ -252,7 +274,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Superconducting qubits sit in a dilution refrigerator. Ions sit in electromagnetic traps. Error rates are still high; useful chemical accuracy needs error correction and careful problem mapping. A press-tour “quantum advantage” on an artificial task is not an ammonia reactor.',
     players: 'IBM, Google Quantum AI, IonQ, Quantinuum, academic groups. Chemistry partners (Boeing, Mercedes, national labs) run exploratory algorithms. Public milestones are real; product claims should be dated and narrow.',
     risks: 'Hype cycles, export controls, and energy use of the control stack. Do not write science-fiction about instant climate models. Classical high-performance computing still does the climate work.',
-    sources: 'IBM quantum processor announcements (Condor 2023; Heron); Google Willow, December 2024; IonQ public trapped-ion roadmaps; reviews of quantum chemistry algorithms (NISQ limits).',
+    sourcesNote:
+      'Google Willow announcement (9 Dec 2024); IBM Quantum pages. Public machines have not designed a climate catalyst.',
   },
   'climate-trace': {
     title: 'Climate TRACE — seeing emissions',
@@ -263,7 +286,8 @@ export const en: Record<string, InnovationCopy> = {
     how: 'Models learn the look of a power plant, a feedlot, or a flare and estimate activity and emission factors, then fuse that with atmospheric retrievals where they exist. Every number has uncertainty. A bright pixel is a clue, not a court verdict.',
     players: 'Climate TRACE coalition (non-profits, companies, universities); GHGSat; Carbon Mapper (including NASA/JPL partnerships); IMEO (UNEP) methane science. National inventories remain the legal baseline.',
     risks: 'False plumes, political blowback, and treating a dashboard as enforcement. Satellites see some sectors better than others (a dairy lagoon ≠ a city of two-stroke bikes).',
-    sources: 'Climate TRACE methodology and inventory releases; GHGSat and Carbon Mapper public notes; UNEP IMEO methane reports.',
+    sourcesNote:
+      'Climate TRACE inventory and methodology. A bright pixel is a clue, not a court verdict.',
   },
   'prithvi-earth-ai': {
     title: 'Prithvi — Earth foundation models',
@@ -274,6 +298,7 @@ export const en: Record<string, InnovationCopy> = {
     how: 'A transformer or similar backbone learns generic spatial-temporal features from satellite cubes. Downstream heads are small labeled tasks. It does not replace GCMs for century-scale climate; it helps with observation tasks.',
     players: 'NASA (HLS, IMPACT); IBM Research; Hugging Face / GitHub weights; users in disaster and agriculture agencies. Earth-2 is NVIDIA’s separate emulation line.',
     risks: 'Bias where the training satellites never looked, military dual use, and vendors wrapping a fine-tune as “the climate model.” Read the model card.',
-    sources: 'NASA–IBM Prithvi release (2023) and model cards; HLS documentation; NVIDIA Earth-2 product notes (emulation, not the same weights).',
+    sourcesNote:
+      'NASA Earthdata Prithvi release (2023); IBM–NASA Hugging Face model cards. A starting weight is not an oracle.',
   },
 };

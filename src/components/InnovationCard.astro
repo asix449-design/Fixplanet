@@ -1,6 +1,6 @@
 ---
 import type { Innovation } from '../data/innovations';
-import { innovationImageSrc } from '../data/innovations';
+import { innovationImageSrc, innovationPrimarySource } from '../data/innovations';
 import { getInnovationsPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -11,10 +11,11 @@ const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
 const { item } = Astro.props;
 const href = localizePath(`/innovations/${item.slug}`, locale);
+const primary = innovationPrimarySource(item.sources);
 ---
 
 <article
-  class="wildlife-card-wrap"
+  class="wildlife-card-wrap innovation-card-wrap"
   data-innovation-area={item.area}
   data-slug={item.slug}
 >
@@ -40,4 +41,13 @@ const href = localizePath(`/innovations/${item.slug}`, locale);
       <span class="card-cta">{page.cardCta}</span>
     </div>
   </a>
+  {
+    primary && (
+      <p class="innovation-card-source">
+        <a href={primary.url} rel="noopener noreferrer">
+          {page.primarySource}: {primary.label}
+        </a>
+      </p>
+    )
+  }
 </article>

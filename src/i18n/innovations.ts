@@ -30,6 +30,7 @@ export type InnovationsPage = {
   players: string;
   risks: string;
   sourcesLabel: string;
+  primarySource: string;
   imageCredit: string;
   empty: string;
   heroAlt: string;
@@ -61,6 +62,7 @@ const pageEn: InnovationsPage = {
   players: 'Status and players',
   risks: 'Risks and limits',
   sourcesLabel: 'Sources',
+  primarySource: 'Source',
   imageCredit: 'Image',
   empty: 'No cards in this area yet.',
   heroAlt:
@@ -109,6 +111,7 @@ const pageRu: InnovationsPage = {
   players: 'Статус и участники',
   risks: 'Риски и пределы',
   sourcesLabel: 'Источники',
+  primarySource: 'Источник',
   imageCredit: 'Изображение',
   empty: 'В этой области пока нет карточек.',
   heroAlt:
@@ -157,6 +160,7 @@ const pagePl: InnovationsPage = {
   players: 'Status i gracze',
   risks: 'Ryzyka i granice',
   sourcesLabel: 'Źródła',
+  primarySource: 'Źródło',
   imageCredit: 'Zdjęcie',
   empty: 'W tej dziedzinie nie ma jeszcze kart.',
   heroAlt:
@@ -205,6 +209,7 @@ const pageLv: InnovationsPage = {
   players: 'Statuss un dalībnieki',
   risks: 'Riski un robežas',
   sourcesLabel: 'Avoti',
+  primarySource: 'Avots',
   imageCredit: 'Attēls',
   empty: 'Šajā jomā vēl nav kartīšu.',
   heroAlt:

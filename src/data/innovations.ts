@@ -1,4 +1,7 @@
 import type { HubIconName } from './hub';
+import { cite, type PrimarySource } from './sources';
+
+export type { PrimarySource } from './sources';
 
 export const innovationAreaKeys = ['ecology', 'energy', 'ai'] as const;
 
@@ -31,6 +34,8 @@ export type InnovationMeta = {
   area: InnovationArea;
   status: InnovationStatus;
   image: ImageCredit;
+  /** Official project pages, papers, lab releases — not image credits. */
+  sources: PrimarySource[];
 };
 
 export type InnovationCopy = {
@@ -42,7 +47,7 @@ export type InnovationCopy = {
   how: string;
   players: string;
   risks: string;
-  sources: string;
+  sourcesNote: string;
 };
 
 export type Innovation = InnovationMeta & InnovationCopy;
@@ -58,7 +63,7 @@ function img(
 
 /**
  * Curated first catalog. To add a card:
- * 1. Add a row here (English slug, area, status, image credit).
+ * 1. Add a row here (English slug, area, status, image credit, primary sources).
  * 2. Add the same slug to en / ru / pl / lv in `src/i18n/innovations.ts`
  *    (and the locale files beside it).
  * 3. Drop a licensed or generated image in `public/images/innovations/{file}`.
@@ -66,6 +71,8 @@ function img(
  *
  * Slugs stay English in every language. Do not invent breakthroughs.
  * Perpetual-motion / “free energy” devices belong only as myth-busted cards.
+ * Primary sources are official project pages, peer-reviewed papers, or lab
+ * releases — not blogs. Image credits stay on `image`, separate from `sources`.
  */
 export const innovationMeta: InnovationMeta[] = [
   {
@@ -78,6 +85,17 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:HellisheidiPowerStation01.jpg',
     ),
+    sources: [
+      cite('Climeworks — Mammoth plant', 'https://climeworks.com/plant-mammoth'),
+      cite(
+        'Climeworks — Mammoth start (8 May 2024)',
+        'https://climeworks.com/press-release/climeworks-switches-on-worlds-largest-direct-air-capture-plant-mammoth',
+      ),
+      cite(
+        'IEA — Direct Air Capture',
+        'https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture',
+      ),
+    ],
   },
   {
     slug: 'northern-lights-ccs',
@@ -89,6 +107,14 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:North_Sea_oil_platform.jpg',
     ),
+    sources: [
+      cite('Northern Lights — who we are', 'https://norlights.com/who-we-are/'),
+      cite(
+        'Equinor — first CO₂ volumes stored (25 Aug 2025)',
+        'https://www.equinor.com/news/20250825-first-co2-volumes-stored-at-northern-lights',
+      ),
+      cite('CCS Norway — Longship', 'https://ccsnorway.com/'),
+    ],
   },
   {
     slug: 'carbfix-mineralization',
@@ -100,6 +126,13 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Svartifoss_July_2014.JPG',
     ),
+    sources: [
+      cite('Carbfix', 'https://www.carbfix.com/'),
+      cite(
+        'Matter et al., Science, 2016',
+        'https://www.science.org/doi/10.1126/science.aad8132',
+      ),
+    ],
   },
   {
     slug: 'precision-fermentation',
@@ -111,6 +144,11 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Bioreactor.jpg',
     ),
+    sources: [
+      cite('Perfect Day', 'https://perfectday.com/'),
+      cite('Solar Foods', 'https://solarfoods.com/'),
+      cite('Solein', 'https://www.solein.com/'),
+    ],
   },
   {
     slug: 'coral-restoration',
@@ -122,6 +160,11 @@ export const innovationMeta: InnovationMeta[] = [
       'Site asset',
       '',
     ),
+    sources: [
+      cite('NOAA Coral Reef Conservation Program', 'https://coralreef.noaa.gov/'),
+      cite('NOAA Coral Reef Watch', 'https://coralreefwatch.noaa.gov/'),
+      cite('SECORE International', 'https://www.secore.org/'),
+    ],
   },
   {
     slug: 'nano-water-membranes',
@@ -133,6 +176,16 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Graphene.jpg',
     ),
+    sources: [
+      cite(
+        'Nair et al., Nature, 2012 — graphene-oxide water permeation',
+        'https://www.nature.com/articles/nature11704',
+      ),
+      cite(
+        'Abraham et al., Nature Nanotechnology, 2017',
+        'https://www.nature.com/articles/nnano.2017.21',
+      ),
+    ],
   },
   {
     slug: 'carbios-enzymes',
@@ -144,6 +197,13 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:PET_bottles.jpg',
     ),
+    sources: [
+      cite('Carbios', 'https://www.carbios.com/'),
+      cite(
+        'Yoshida et al., Science, 2016 — Ideonella sakaiensis PETase',
+        'https://www.science.org/doi/10.1126/science.aad6359',
+      ),
+    ],
   },
   {
     slug: 'methane-feed-additive',
@@ -155,6 +215,16 @@ export const innovationMeta: InnovationMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Holstein_dairy_cows.jpg',
     ),
+    sources: [
+      cite(
+        'EUR-Lex — Regulation (EU) 2022/565 (3-NOP / Bovaer)',
+        'https://eur-lex.europa.eu/eli/reg_impl/2022/565/oj',
+      ),
+      cite(
+        'dsm-firmenich — Bovaer US FDA review (May 2024)',
+        'https://our-company.dsm-firmenich.com/en/our-company/news/press-releases/2024/methane-reducing-feed-ingredient-bovaer-ready-for-us-market-launch.html',
+      ),
+    ],
   },
   {
     slug: 'iter-fusion',
@@ -166,6 +236,10 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:ITER_site_2018_aerial_view_(41809720041).jpg',
     ),
+    sources: [
+      cite('ITER Organization', 'https://www.iter.org/'),
+      cite('ITER — FAQs', 'https://www.iter.org/faqs'),
+    ],
   },
   {
     slug: 'nif-inertial-fusion',
@@ -177,6 +251,16 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:National_Ignition_Facility%27s_target_chamber.jpg',
     ),
+    sources: [
+      cite(
+        'LLNL — Achieving fusion ignition',
+        'https://lasers.llnl.gov/science/achieving-fusion-ignition',
+      ),
+      cite(
+        'U.S. DOE — NIF ignition announcement (13 Dec 2022)',
+        'https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition',
+      ),
+    ],
   },
   {
     slug: 'fervo-geothermal',
@@ -188,6 +272,17 @@ export const innovationMeta: InnovationMeta[] = [
       'CC0',
       'https://commons.wikimedia.org/wiki/File:Sonoma_Plant_at_The_Geysers_4778.png',
     ),
+    sources: [
+      cite('Fervo Energy', 'https://fervoenergy.com/'),
+      cite(
+        'Google — Project Red operational (28 Nov 2023)',
+        'https://blog.google/outreach-initiatives/sustainability/google-fervo-geothermal-energy-partnership/',
+      ),
+      cite(
+        'Fervo — Project Red well test (18 July 2023)',
+        'https://fervoenergy.com/fervo-energy-announces-technology-breakthrough-in-next-generation-geothermal/',
+      ),
+    ],
   },
   {
     slug: 'long-duration-storage',
@@ -199,6 +294,17 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:1_MW_4_MWh_Turner_Energy_Storage_Project_in_Pullman,_WA.jpg',
     ),
+    sources: [
+      cite('Form Energy', 'https://formenergy.com/'),
+      cite(
+        'Form Energy — iron-air chemistry',
+        'https://formenergy.com/form-energy-unveils-chemistry-of-multi-day-storage-battery-technology/',
+      ),
+      cite(
+        'IEA — Grid-scale storage',
+        'https://www.iea.org/energy-system/electricity/grid-scale-storage',
+      ),
+    ],
   },
   {
     slug: 'green-hydrogen',
@@ -210,6 +316,16 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Liquid_hydrogen_storage_tank_at_Launch_Pad_39B.jpg',
     ),
+    sources: [
+      cite(
+        'IEA — Hydrogen',
+        'https://www.iea.org/energy-system/low-emission-fuels/hydrogen',
+      ),
+      cite(
+        'IEA — Global Hydrogen Review 2024',
+        'https://www.iea.org/reports/global-hydrogen-review-2024',
+      ),
+    ],
   },
   {
     slug: 'smr-nuclear',
@@ -221,6 +337,17 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Nuclear_Power_Plant_Cattenom.jpg',
     ),
+    sources: [
+      cite(
+        'World Nuclear News — HTR-PM commercial operation (6 Dec 2023)',
+        'https://world-nuclear-news.org/articles/chinese-htr-pm-demo-begins-commercial-operation',
+      ),
+      cite(
+        'Tsinghua University — HTR-PM Demo',
+        'https://www.tsinghua.edu.cn/en/info/1244/12578.htm',
+      ),
+      cite('IAEA — Small modular reactors', 'https://www.iaea.org/topics/small-modular-reactors'),
+    ],
   },
   {
     slug: 'space-solar-power',
@@ -232,6 +359,16 @@ export const innovationMeta: InnovationMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:ISS_solar_arrays.jpg',
     ),
+    sources: [
+      cite(
+        'Caltech — SSPD-1 / MAPLE wireless power (2023)',
+        'https://www.caltech.edu/about/news/in-a-first-caltechs-space-solar-power-demonstrator-wirelessly-transmits-power-in-space',
+      ),
+      cite(
+        'ESA — SOLARIS',
+        'https://www.esa.int/Enabling_Support/Space_Engineering_Technology/SOLARIS',
+      ),
+    ],
   },
   {
     slug: 'nano-electrolyzer-catalysts',
@@ -243,6 +380,16 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY 4.0',
       'https://commons.wikimedia.org/wiki/File:PEM_fuel_cell.jpg',
     ),
+    sources: [
+      cite(
+        'NREL — Hydrogen production and delivery',
+        'https://www.nrel.gov/hydrogen/hydrogen-production-delivery.html',
+      ),
+      cite(
+        'IEA — Electrolysers',
+        'https://www.iea.org/energy-system/low-emission-fuels/electrolysers',
+      ),
+    ],
   },
   {
     slug: 'perpetual-motion',
@@ -254,6 +401,13 @@ export const innovationMeta: InnovationMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:WaterScrewPerpetualMotion.png',
     ),
+    sources: [
+      cite(
+        'USPTO MPEP §2107 — utility / perpetual motion',
+        'https://www.uspto.gov/web/offices/pac/mpep/s2107.html',
+      ),
+      cite('ITER Organization — real fusion research', 'https://www.iter.org/'),
+    ],
   },
   {
     slug: 'graphcast-ai-weather',
@@ -265,6 +419,16 @@ export const innovationMeta: InnovationMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:GOES-16_ABI_Full_Disk_(32440453126).jpg',
     ),
+    sources: [
+      cite(
+        'Lam et al., Science, 2023 — GraphCast',
+        'https://www.science.org/doi/10.1126/science.adi2336',
+      ),
+      cite(
+        'Google DeepMind — GraphCast',
+        'https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/',
+      ),
+    ],
   },
   {
     slug: 'gnome-materials',
@@ -276,6 +440,16 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Quartz_crystal.jpg',
     ),
+    sources: [
+      cite(
+        'Merchant et al., Nature, 2023 — GNoME',
+        'https://www.nature.com/articles/s41586-023-06735-9',
+      ),
+      cite(
+        'Google DeepMind — GNoME',
+        'https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/',
+      ),
+    ],
   },
   {
     slug: 'ai-grid-optimization',
@@ -287,6 +461,16 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Electricity_pylons.jpg',
     ),
+    sources: [
+      cite(
+        'Google DeepMind — wind-energy value (26 Feb 2019)',
+        'https://deepmind.google/blog/machine-learning-can-boost-the-value-of-wind-energy/',
+      ),
+      cite(
+        'IEA — Digitalisation and Energy',
+        'https://www.iea.org/reports/digitalisation-and-energy',
+      ),
+    ],
   },
   {
     slug: 'alphafold-proteins',
@@ -298,6 +482,13 @@ export const innovationMeta: InnovationMeta[] = [
       'Site asset',
       '',
     ),
+    sources: [
+      cite(
+        'Jumper et al., Nature, 2021 — AlphaFold 2',
+        'https://www.nature.com/articles/s41586-021-03819-2',
+      ),
+      cite('AlphaFold Database — EMBL-EBI', 'https://alphafold.ebi.ac.uk/'),
+    ],
   },
   {
     slug: 'amp-recycling-robots',
@@ -309,6 +500,9 @@ export const innovationMeta: InnovationMeta[] = [
       'Site asset',
       '',
     ),
+    sources: [
+      cite('AMP Sortation', 'https://www.ampsortation.com/'),
+    ],
   },
   {
     slug: 'quantum-computing',
@@ -320,6 +514,13 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:IBM_Q_system_(Fraunhofer_2).jpg',
     ),
+    sources: [
+      cite(
+        'Google — Willow quantum chip (9 Dec 2024)',
+        'https://blog.google/technology/research/google-willow-quantum-chip/',
+      ),
+      cite('IBM Quantum', 'https://www.ibm.com/quantum'),
+    ],
   },
   {
     slug: 'climate-trace',
@@ -331,6 +532,9 @@ export const innovationMeta: InnovationMeta[] = [
       'CC BY-SA 2.0',
       'https://commons.wikimedia.org/wiki/File:Sunset_at_Coryton_Oil_Refinery_-_geograph.org.uk_-_1052273.jpg',
     ),
+    sources: [
+      cite('Climate TRACE', 'https://climatetrace.org/'),
+    ],
   },
   {
     slug: 'prithvi-earth-ai',
@@ -342,6 +546,13 @@ export const innovationMeta: InnovationMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg',
     ),
+    sources: [
+      cite(
+        'NASA Earthdata — Prithvi geospatial model (2023)',
+        'https://www.earthdata.nasa.gov/news/nasa-ibm-openly-release-geospatial-ai-foundation-model-nasa-earth-observation-data',
+      ),
+      cite('IBM–NASA Prithvi models', 'https://huggingface.co/ibm-nasa-geospatial'),
+    ],
   },
 ];
 
@@ -359,4 +570,10 @@ export function innovationImageSrc(image: ImageCredit): string {
 
 export function innovationAreaPath(area: InnovationArea | 'all'): string {
   return area === 'all' ? '/innovations' : `/innovations/${area}`;
+}
+
+export function innovationPrimarySource(
+  sources: PrimarySource[],
+): PrimarySource | undefined {
+  return sources[0];
 }

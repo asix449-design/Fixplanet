@@ -1,0 +1,25 @@
+---
+import type { PrimarySource } from '../data/sources';
+
+interface Props {
+  heading: string;
+  note?: string;
+  sources: PrimarySource[];
+}
+
+const { heading, note, sources } = Astro.props;
+---
+
+<h2>{heading}</h2>
+{note && <p class="wildlife-sources">{note}</p>}
+<ul class="law-source-list cited-source-list">
+  {
+    sources.map((source) => (
+      <li>
+        <a href={source.url} rel="noopener noreferrer">
+          {source.label}
+        </a>
+      </li>
+    ))
+  }
+</ul>
