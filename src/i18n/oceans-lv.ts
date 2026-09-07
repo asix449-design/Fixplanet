@@ -16,7 +16,7 @@ export const lv: OceansPage = {
     currents: 'Virsmas straumes un lielie riņķojumi, kas nes siltumu, sāli un dzīvību.',
     salinity: 'Cik sāļa ir jūra un kāpēc blīvums palīdz dzīt dziļo cirkulāciju.',
     sst: 'Jūras virsmas temperatūra — parastais klimats un gadi siltāki vai vēsāki par normu.',
-    pollution: 'Plastmasa, nafta, fitoplanktona ziedēšana un piekrastes mirušās zonas.',
+    pollution: 'Pieci subtropu atkritumu plankumi, nafta, fitoplanktona ziedēšana un piekrastes mirušās zonas.',
     numbers: 'Siltums, skābums, plastmasa un hipoksija — katrs lielums no nosauktas publikācijas.',
   },
   panels: {
@@ -44,7 +44,7 @@ export const lv: OceansPage = {
     ],
     pollution: [
       'Okeānu piesārņo dažādi: noturīga plastmasa, nafta no urbumiem un kuģiem, barības vielu pārbagātība, kas dzen aļģu ziedēšanu, un hipoksija, kad šī organiskā masa sadalās.',
-      'Vienas kartes visam tam nav. Zemāk četri atsevišķi datu kopumi: modelēts atkritumu plankums, viens novērots naftas izlijums, hlorofila-a apkopojums un piekrastes mirušo zonu saraksts.',
+      'Vienas kartes visam tam nav. Zemāk atsevišķi datu kopumi. Pirmais atbild uz parasto jautājumu: lielo subtropu atkritumu plankumu ir pieci — paaugstinātas plastmasas koncentrācijas zonas lielajos riņķojumos, ne peldošas salas. Tad tuvāks ziemeļu Klusā okeāna modelis, viens novērots naftas izlijums, hlorofila-a apkopojums un piekrastes mirušo zonu saraksts.',
     ],
     numbers: [
       'Daži publicēti lielumi, katrs no nosaukta avota. Okeāna siltuma saturs, virsmas skābums, plastmasa un hipoksija ir dažādi mērījumi; tos nesaskaita vienā rādītājā.',
@@ -57,7 +57,7 @@ export const lv: OceansPage = {
   honestySst:
     'NASA GHRSST MUR L4, 1. jūlijs. Absolūtā SST ir lauks ekvators–pols; anomālija ir novirze no MUR klimatoloģijas.',
   honestyPollution:
-    'Četri datu kopumi: modelēta plastmasa, viens naftas izlijums, hlorofils-a, hipoksijas apkopojums.',
+    'Pieci attēli: piecu riņķojumu plastmasa (Eriksen 2014), ziemeļu Klusā okeāna modelis (Lebreton 2018), viens naftas izlijums, hlorofils-a, hipoksijas apkopojums.',
   modeSst: 'Absolūtā SST',
   modeAnomaly: 'SST anomālija',
   fidelitySst: 'Analīze · absolūtā SST',
@@ -82,6 +82,7 @@ export const lv: OceansPage = {
   openOscar: 'Atvērt ESR OSCAR (modelētās straumes) →',
   openCopernicus: 'Atvērt Copernicus Marine →',
   openNoaaPollution: 'Atvērt NOAA jūras piesārņojuma uzraudzību →',
+  openNoaaPatches: 'Atvērt NOAA: atkritumu plankumi →',
   openOceanColor: 'Atvērt NASA Ocean Color →',
   oscarNote:
     'OSCAR (Ocean Surface Current Analyses Real-time) novērtē jauktā slāņa ātrumu no satelīta jūras virsmas augstuma, vektora vēja un SST — geostrofija, Ekmana dreifs, termiskais vējš. Dienas lauki 0,25°, no 1993. gada.',
@@ -93,13 +94,23 @@ export const lv: OceansPage = {
   distinguish:
     'IPCC AR6: okeāns uzņēmis ap 90 procentiem klimata sistēmas liekā siltuma. Cheng et al. 2024: 0–2000 m okeāna siltuma saturs 2023. gadā (un 2024. atjauninājums) ir instrumentālā rindas virsotnē — siltuma krājums ūdens stabiņā, ne SST karte augstāk. Virsmas pH kritis par ap 0,1 kopš ~1750: tas ir ūdeņraža jonu koncentrācijas pieaugums par aptuveni 26–30 procentiem (IPCC AR6; NOAA PMEL), karbonātu ķīmija. Jambeck et al. 2015: 4,8–12,7 miljoni tonnu plastmasas no sauszemes okeānā 2010. gadā — plūsma, ne masa Lielajā Klusā okeāna atkritumu plankumā. Eriksen et al. 2014: vismaz 5,25 triljoni peldošu daļiņu. Breitburg et al. 2018: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju un paplašinošās atklātā okeāna skābekļa minimuma zonas (~4,5 miljoni km²).',
   pollutionKinds: {
+    patches: {
+      title: 'Pieci atkritumu plankumi',
+      lead: 'Piecos lielajos subtropu riņķojumos ir paaugstināta peldošās plastmasas koncentrācija: ziemeļu Klusais okeāns, dienvidu Klusais okeāns, Ziemeļatlantija, Dienvidatlantija un Indijas okeāns. Atkritumu plankums ir paaugstinātas koncentrācijas zona — galvenokārt sīki fragmenti, ne cieta peldoša sala. Kartes ir Eriksen et al. 2014: modelēts daļiņu skaita blīvums (gab./km²) pēc izmēra klases, no tīklu vilcieniem un vizuāliem uzskaites braucieniem visos piecos riņķojumos. Ziemeļu Klusā okeāna plankums ir vislabāk pētītais; rietumu sakopojums pie Japānas pieder tam pašam riņķojumam, ne sestajam subtropu plankumam. Arktikas un Barenca jūras koncentrācijas mēdz aplūkot atsevišķi, un tās nav viens no šiem pieciem.',
+      caption:
+        'Eriksen et al. 2014, PLOS ONE. Modelēts daļiņu skaita blīvums (gab./km²) četrās izmēru klasēs. CC0. Paraugi 2007.–2013.; ne satelīta foto ar atkritumu salām. NOAA izglītības materiāli apraksta tos pašus piecus subtropu riņķojumus.',
+      imageAlt:
+        'Četras pasaules kartes ar modelētu peldošās plastmasas skaita blīvumu četrās izmēru klasēs, oranži sarkani sakopojumi piecos subtropu riņķojumos',
+      seeAlso: 'Lielais Klusā okeāna atkritumu plankums — ziemeļu Klusā okeāna modelis ↓',
+    },
     plastics: {
-      title: 'Plastmasa',
-      lead: 'Lielākā daļa okeāna plastmasas nāk no sauszemes. Vējš un virsmas straumes sablīvē fragmentus subtropu riņķojumos. Lielais Klusā okeāna atkritumu plankums, starp Havajām un Kaliforniju, ir augstas koncentrācijas zona ziemeļu Klusā okeāna riņķojumā — ūdens ar vairāk atkritumu, ne sala, pa kuru var staigāt. Karte rāda modelētu masas koncentrāciju (kg/km²) 2015. gada augustam.',
+      title: 'Lielais Klusā okeāna atkritumu plankums',
+      lead: 'Lielais Klusā okeāna atkritumu plankums, starp Havajām un Kaliforniju, ir vislabāk pētītais no pieciem subtropu sakopojumiem — ūdens ar vairāk atkritumu ziemeļu Klusā okeāna riņķojumā, ne sala, pa kuru var staigāt. Rietumu koncentrācija pie Japānas pieder tam pašam riņķojumam. Lielākā daļa plastmasas ir sīki fragmenti. Karte rāda modelētu masas koncentrāciju (kg/km²) 2015. gada augustam.',
       caption:
         'Lebreton et al. 2018, Scientific Reports. Modelēta masas koncentrācija, ziemeļu Klusais okeāns, 2015. gada augusts. CC BY 4.0.',
       imageAlt:
         'Izolīniju karte ar modelētu plastmasas masas koncentrāciju starp Havajām un Kaliforniju, sarkans kodols GPGP',
+      seeAlso: 'Pieci subtropu atkritumu plankumi ↑',
     },
     oil: {
       title: 'Nafta',
@@ -254,7 +265,7 @@ export const lv: OceansPage = {
     },
     plasticFloat: {
       label: 'Peldošas plastmasas daļiņas',
-      text: 'Eriksen et al. 2014: vismaz 5,25 triljoni daļiņu (268 940 tonnas) uz virsmas. Krājuma vērtējums no tīklu vilcieniem un modeļa.',
+      text: 'Eriksen et al. 2014: vismaz 5,25 triljoni daļiņu (268 940 tonnas) uz virsmas, no paraugiem piecos subtropu riņķojumos. Krājuma vērtējums no tīklu vilcieniem un modeļa.',
     },
     deadZones: {
       label: 'Piekrastes hipoksijas vietas',

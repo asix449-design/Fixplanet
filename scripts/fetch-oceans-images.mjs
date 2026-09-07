@@ -68,6 +68,10 @@ const files = [
     url: 'https://upload.wikimedia.org/wikipedia/commons/6/67/Ocean_currents_1943_%28borderless%293.png',
   },
   {
+    file: 'plastic-five-gyres-2014.png',
+    url: 'https://journals.plos.org/plosone/article/figure/image?size=large&id=info:doi/10.1371/journal.pone.0111913.g002',
+  },
+  {
     file: 'plastic-gpgp-2015.jpg',
     url: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Great_Pacific_Garbage_Patch-Map-2017.jpg',
   },

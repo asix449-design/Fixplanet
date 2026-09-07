@@ -63,6 +63,7 @@ export type OceanPollutionMeta = {
   license: string;
   licenseUrl: string;
   vintage: string;
+  seeAlsoId?: string;
 };
 
 export type OceanPollutionCopy = {
@@ -70,6 +71,7 @@ export type OceanPollutionCopy = {
   lead: string;
   caption: string;
   imageAlt: string;
+  seeAlso?: string;
 };
 
 export type OceanFrame = OceanFrameMeta & OceanFrameCopy;
@@ -87,8 +89,9 @@ export type OceanPollution = OceanPollutionMeta & OceanPollutionCopy;
  * zonal/meridional components do not render as a speed map here; we host a
  * labeled schematic and send readers to Copernicus / ESR OSCAR.
  *
- * Do not invent a single “pollution” raster. Plastics, oil, chlorophyll, and
- * hypoxia are different datasets.
+ * Do not invent a single “pollution” raster. Five subtropical garbage
+ * patches, a North Pacific (GPGP) model, oil, chlorophyll, and hypoxia
+ * are different datasets.
  */
 export const sstFrames: OceanFrameMeta[] = [
   {
@@ -260,6 +263,17 @@ export const currentFrames: OceanFrameMeta[] = [
 
 export const pollutionStills: OceanPollutionMeta[] = [
   {
+    id: 'patches',
+    file: 'plastic-five-gyres-2014.png',
+    sourceOrg: 'Eriksen et al. 2014, PLOS ONE; modelled floating-plastic count density in five subtropical gyres',
+    sourceShort: 'Eriksen et al. 2014',
+    sourceUrl: 'https://doi.org/10.1371/journal.pone.0111913',
+    license: 'CC0 1.0',
+    licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+    vintage: '2007–2013 surveys; 2014 model',
+    seeAlsoId: 'plastics',
+  },
+  {
     id: 'plastics',
     file: 'plastic-gpgp-2015.jpg',
     sourceOrg: 'Lebreton et al. 2018, Scientific Reports; modelled North Pacific plastic mass',
@@ -268,6 +282,7 @@ export const pollutionStills: OceanPollutionMeta[] = [
     license: 'CC BY 4.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
     vintage: 'August 2015 model',
+    seeAlsoId: 'patches',
   },
   {
     id: 'oil',
@@ -372,6 +387,8 @@ export const worldviewChlUrl =
 export const oscarEsrUrl = 'https://www.esr.org/data-products/oscar/';
 export const copernicusMarineUrl = 'https://data.marine.copernicus.eu/viewer';
 export const noaaPollutionUrl = 'https://www.ospo.noaa.gov/products/ocean/marinepollution/';
+export const noaaGarbagePatchesUrl =
+  'https://marinedebris.noaa.gov/discover-marine-debris/garbage-patches';
 export const nasaOceanColorUrl = 'https://oceancolor.gsfc.nasa.gov/';
 export const woa2023Url = 'https://www.ncei.noaa.gov/products/world-ocean-atlas';
 export const ipccAr6Url = 'https://www.ipcc.ch/report/ar6/wg1/';

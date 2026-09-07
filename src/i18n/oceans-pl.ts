@@ -16,7 +16,7 @@ export const pl: OceansPage = {
     currents: 'Prądy powierzchniowe i wielkie wiry, które niosą ciepło, sól i życie.',
     salinity: 'Ile soli jest w morzu i dlaczego gęstość pomaga napędzać cyrkulację głębinową.',
     sst: 'Temperatura powierzchni morza — zwykły klimat i lata cieplejsze albo chłodniejsze od normy.',
-    pollution: 'Plastik, ropa, zakwity fitoplanktonu i przybrzeżne martwe strefy.',
+    pollution: 'Pięć podzwrotnikowych plam śmieci, ropa, zakwity fitoplanktonu i przybrzeżne martwe strefy.',
     numbers: 'Ciepło, kwasowość, plastik i hipoksja — każda wielkość z nazwanej pracy.',
   },
   panels: {
@@ -44,7 +44,7 @@ export const pl: OceansPage = {
     ],
     pollution: [
       'Ocean zanieczyszcza się na kilka sposobów: trwały plastik, ropa ze studni i statków, nadmiar składników odżywczych, który napędza zakwity, oraz hipoksja, gdy ta materia organiczna się rozkłada.',
-      'Jednej mapy na to wszystko nie ma. Poniżej cztery osobne zbiory: model plamy śmieci, jeden zaobserwowany wyciek ropy, zestawienie chlorofilu-a i spis przybrzeżnych martwych stref.',
+      'Jednej mapy na to wszystko nie ma. Poniżej osobne zbiory. Pierwszy odpowiada na zwykłe pytanie: wielkich podzwrotnikowych plam śmieci jest pięć — strefy wyższego stężenia plastiku w wielkich wirach, nie pływające wyspy. Potem bliższy model północnego Pacyfiku, jeden zaobserwowany wyciek ropy, zestawienie chlorofilu-a i spis przybrzeżnych martwych stref.',
     ],
     numbers: [
       'Kilka opublikowanych wielkości, każda z nazwanego źródła. Zawartość ciepła oceanu, kwasowość powierzchni, plastik i hipoksja to różne pomiary; nie dodaje się ich do jednego wskaźnika.',
@@ -57,7 +57,7 @@ export const pl: OceansPage = {
   honestySst:
     'NASA GHRSST MUR L4, 1 lipca. Bezwzględna SST to pole równik–biegun; anomalia to odchylenie od klimatologii MUR.',
   honestyPollution:
-    'Cztery zbiory danych: modelowany plastik, jeden wyciek ropy, chlorofil-a, zestawienie hipoksji.',
+    'Pięć rycin: plastik pięciu wirów (Eriksen 2014), model północnego Pacyfiku (Lebreton 2018), jeden wyciek ropy, chlorofil-a, zestawienie hipoksji.',
   modeSst: 'Bezwzględna SST',
   modeAnomaly: 'Anomalia SST',
   fidelitySst: 'Analiza · bezwzględna SST',
@@ -82,6 +82,7 @@ export const pl: OceansPage = {
   openOscar: 'Otwórz ESR OSCAR (modelowane prądy) →',
   openCopernicus: 'Otwórz Copernicus Marine →',
   openNoaaPollution: 'Otwórz nadzór NOAA nad zanieczyszczeniem morza →',
+  openNoaaPatches: 'Otwórz NOAA: plamy śmieci →',
   openOceanColor: 'Otwórz NASA Ocean Color →',
   oscarNote:
     'OSCAR (Ocean Surface Current Analyses Real-time) szacuje prędkość warstwy mieszanej z satelitarnej wysokości powierzchni morza, wiatru wektorowego i SST — geostrofia, dryf Ekmana, wiatr termiczny. Pola dobowe 0,25°, od 1993 r.',
@@ -93,13 +94,23 @@ export const pl: OceansPage = {
   distinguish:
     'IPCC AR6: ocean przyjął około 90 procent nadmiaru ciepła w systemie klimatycznym. Cheng et al. 2024: zawartość ciepła 0–2000 m w 2023 (i aktualizacja 2024) na szczycie instrumentalnego szeregu — zapas ciepła w słupie wody, nie mapa SST powyżej. Powierzchniowe pH spadło o ok. 0,1 od ~1750: to wzrost stężenia jonów wodorowych o mniej więcej 26–30 procent (IPCC AR6; NOAA PMEL), chemia węglanowa. Jambeck et al. 2015: 4,8–12,7 mln ton plastiku z lądu do oceanu w 2010 — przepływ, nie masa w Wielkiej Pacyficznej Plamie Śmieci. Eriksen et al. 2014: co najmniej 5,25 bln pływających cząstek. Breitburg et al. 2018: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji i rozszerzające się strefy minimum tlenu otwartego oceanu (~4,5 mln km²).',
   pollutionKinds: {
+    patches: {
+      title: 'Pięć plam śmieci',
+      lead: 'W pięciu wielkich wirach podzwrotnikowych jest podwyższone stężenie pływającego plastiku: Pacyfik Północny, Pacyfik Południowy, Atlantyk Północny, Atlantyk Południowy i Ocean Indyjski. Plama śmieci to strefa wyższego stężenia — głównie drobnych okruchów, nie stała pływająca wyspa. Mapy to Eriksen et al. 2014: modelowane stężenie liczby cząstek (szt./km²) według klasy wielkości, z połowów siecią i obserwacji we wszystkich pięciu wirach. Plama północnego Pacyfiku jest najlepiej zbadana; skupienie na zachodzie, przy Japonii, należy do tego samego wiru, nie jest szóstą plamą podzwrotnikową. Koncentracje w Arktyce i na Morzu Barentsa omawia się osobno i nie są jedną z tych pięciu.',
+      caption:
+        'Eriksen et al. 2014, PLOS ONE. Modelowane stężenie liczby cząstek (szt./km²) w czterech klasach wielkości. CC0. Pomiary 2007–2013; nie zdjęcie satelitarne wysp ze śmieci. Materiały edukacyjne NOAA opisują te same pięć wirów podzwrotnikowych.',
+      imageAlt:
+        'Cztery mapy świata z modelowanym stężeniem pływającego plastiku w czterech klasach wielkości, pomarańczowo-czerwone skupienia w pięciu wirach podzwrotnikowych',
+      seeAlso: 'Wielka Pacyficzna Plama Śmieci — model północnego Pacyfiku ↓',
+    },
     plastics: {
-      title: 'Plastik',
-      lead: 'Większość oceanicznego plastiku pochodzi z lądu. Wiatr i prądy powierzchniowe skupiają okruchy w wirach podzwrotnikowych. Wielka Pacyficzna Plama Śmieci, między Hawajami a Kalifornią, to strefa wysokiego stężenia w wirze północnego Pacyfiku — woda z większą ilością odpadów, nie wyspa, po której można chodzić. Mapa pokazuje modelowane stężenie masy (kg/km²) dla sierpnia 2015.',
+      title: 'Wielka Pacyficzna Plama Śmieci',
+      lead: 'Wielka Pacyficzna Plama Śmieci, między Hawajami a Kalifornią, to najlepiej zbadane z pięciu skupień podzwrotnikowych — woda z większą ilością odpadów w wirze północnego Pacyfiku, nie wyspa, po której można chodzić. Skupienie na zachodzie, przy Japonii, należy do tego samego wiru. Większość plastiku to drobne okruchy. Mapa pokazuje modelowane stężenie masy (kg/km²) dla sierpnia 2015.',
       caption:
         'Lebreton et al. 2018, Scientific Reports. Modelowane stężenie masy, północny Pacyfik, sierpień 2015. CC BY 4.0.',
       imageAlt:
         'Mapa izolinii modelowanego stężenia masy plastiku między Hawajami a Kalifornią, czerwone jądro GPGP',
+      seeAlso: 'Pięć podzwrotnikowych plam śmieci ↑',
     },
     oil: {
       title: 'Ropa',
@@ -254,7 +265,7 @@ export const pl: OceansPage = {
     },
     plasticFloat: {
       label: 'Pływające cząstki plastiku',
-      text: 'Eriksen et al. 2014: co najmniej 5,25 bln cząstek (268 940 ton) na powierzchni. Szacunek zasobu z zaciągów sieci i modelu.',
+      text: 'Eriksen et al. 2014: co najmniej 5,25 bln cząstek (268 940 ton) na powierzchni, z pomiarów w pięciu wirach podzwrotnikowych. Szacunek zasobu z zaciągów sieci i modelu.',
     },
     deadZones: {
       label: 'Przybrzeżne miejsca hipoksji',
