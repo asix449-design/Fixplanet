@@ -1,12 +1,13 @@
 ---
+import { isGeoShelf } from '../../data/terraforming';
 import { localeStaticPaths } from '../../i18n';
 
 export const getStaticPaths = localeStaticPaths;
 
 const locale = Astro.params.locale;
 const shelf = Astro.url.searchParams.get('shelf');
-const dest = shelf
-  ? `/${locale}/terraforming?shelf=${encodeURIComponent(shelf)}`
+const dest = isGeoShelf(shelf ?? undefined)
+  ? `/${locale}/terraforming/${shelf}`
   : `/${locale}/terraforming`;
 return Astro.redirect(dest, 301);
 ---

@@ -58,5 +58,5 @@ export function isSolutionTag(value: string | undefined): value is TagKey {
 }
 
 export function solutionTagPath(tag: TagKey | 'all'): string {
-  return tag === 'all' ? '/solutions' : `/solutions/${tag}`;
+  return `/solutions/${tag}`;
 }

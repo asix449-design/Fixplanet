@@ -1,8 +1,15 @@
 ---
-import { localeStaticPaths } from '../../i18n';
+import { isOceanPanel } from '../../data/oceans';
+import { localeStaticPaths, localizePath, resolveLocale } from '../../i18n';
 import OceansView from '../../views/OceansView.astro';
 
 export const getStaticPaths = localeStaticPaths;
+
+const locale = resolveLocale(Astro.currentLocale);
+const panelParam = Astro.url.searchParams.get('panel');
+if (isOceanPanel(panelParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/oceans/${panelParam}`, locale));
+}
 ---
 
-<OceansView panel="currents" />
+<OceansView hub />

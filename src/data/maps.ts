@@ -1,3 +1,5 @@
+import type { HubIconName } from './hub';
+
 export const mapCategoryKeys = [
   'conflicts',
   'ethnic',
@@ -15,6 +17,26 @@ export const mapCategoryKeys = [
 ] as const;
 
 export type MapCategory = (typeof mapCategoryKeys)[number];
+
+export const mapHub = [
+  { key: 'all', icon: 'grid' },
+  { key: 'conflicts', icon: 'alert' },
+  { key: 'ethnic', icon: 'globe' },
+  { key: 'religious', icon: 'book' },
+  { key: 'crime', icon: 'scales' },
+  { key: 'pollution', icon: 'recycle' },
+  { key: 'oil-gas', icon: 'bolt' },
+  { key: 'minerals', icon: 'hex' },
+  { key: 'political', icon: 'city' },
+  { key: 'history-of-borders', icon: 'compass' },
+  { key: 'forests', icon: 'trees' },
+  { key: 'protected', icon: 'paw' },
+  { key: 'water', icon: 'droplet' },
+  { key: 'population', icon: 'terrain' },
+] as const satisfies ReadonlyArray<{
+  key: MapCategory | 'all';
+  icon: HubIconName;
+}>;
 
 export type MapMeta = {
   slug: string;
@@ -235,5 +257,5 @@ export function mapsByCategory(category: MapCategory): MapMeta[] {
 }
 
 export function mapCategoryPath(category: MapCategory | 'all' = 'all'): string {
-  return category === 'all' ? '/maps' : `/maps/${category}`;
+  return `/maps/${category}`;
 }

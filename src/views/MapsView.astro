@@ -1,8 +1,16 @@
 ---
+import HubTile from '../components/HubTile.astro';
 import MapCard from '../components/MapCard.astro';
+import SectionHub from '../components/SectionHub.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { HISTORY_OF_BORDERS_SLUG } from '../data/border-history';
-import { isMapCategory, mapCategoryKeys, mapCategoryPath, type MapCategory } from '../data/maps';
+import {
+  isMapCategory,
+  mapCategoryKeys,
+  mapCategoryPath,
+  mapHub,
+  type MapCategory,
+} from '../data/maps';
 import {
   getBorderHistoryPage,
   getMaps,
@@ -13,23 +21,29 @@ import {
 } from '../i18n';
 
 interface Props {
+  hub?: boolean;
   category?: MapCategory | 'all';
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getMapsPage(locale);
 const borders = getBorderHistoryPage(locale);
-const requested = Astro.props.category ?? Astro.url.searchParams.get('category') ?? 'all';
-const activeCategory: MapCategory | 'all' =
-  requested === 'all' || !requested
+const hub = Astro.props.hub === true;
+const requested = Astro.props.category ?? Astro.url.searchParams.get('category');
+const activeCategory: MapCategory | 'all' | undefined = hub
+  ? undefined
+  : requested === 'all' || !requested
     ? 'all'
     : isMapCategory(requested)
       ? requested
       : 'all';
 
-const maps = activeCategory === 'all' ? getMaps(locale) : getMapsByCategory(locale, activeCategory);
+const maps =
+  !activeCategory || activeCategory === 'all'
+    ? getMaps(locale)
+    : getMapsByCategory(locale, activeCategory);
 const filters = [
-  { key: 'all' as const, label: page.all, href: localizePath('/maps', locale) },
+  { key: 'all' as const, label: page.all, href: localizePath(mapCategoryPath('all'), locale) },
   ...mapCategoryKeys.map((key) => ({
     key,
     label: page.categories[key],
@@ -39,66 +53,88 @@ const filters = [
 ---
 
 <BaseLayout title={page.metaTitle} description={page.metaDescription} image="/images/maps/blue-marble.jpg">
-  <header class="maps-hero" aria-labelledby="maps-heading">
-    <div class="maps-hero-media" aria-hidden="true">
-      <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
-    </div>
-    <div class="maps-hero-shade"></div>
-    <div class="wrap maps-hero-copy">
-      <div class="eyebrow maps-eyebrow">{page.eyebrow}</div>
-      <h1 id="maps-heading">{page.title}</h1>
-      <p>{page.lead}</p>
-    </div>
-  </header>
+  {
+    hub && (
+      <div class="section-backdrop" aria-hidden="true">
+        <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
+        <div class="section-backdrop-scrim"></div>
+      </div>
+    )
+  }
+  {
+    !hub && (
+      <header class="maps-hero" aria-labelledby="maps-heading">
+        <div class="maps-hero-media" aria-hidden="true">
+          <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
+        </div>
+        <div class="maps-hero-shade"></div>
+        <div class="wrap maps-hero-copy">
+          <div class="eyebrow maps-eyebrow">{page.eyebrow}</div>
+          <h1 id="maps-heading">{page.title}</h1>
+          <p>{page.lead}</p>
+        </div>
+      </header>
+    )
+  }
 
-  <section class="section maps-catalog">
-    <div class="wrap">
-      <nav class="filters maps-filters" aria-label={page.filterAria}>
-        {
-          filters.map((filter) => (
-            <a
-              class:list={['filter-btn', { 'is-active': filter.key === activeCategory }]}
-              href={filter.href}
-              data-map-filter={filter.key}
-            >
-              {filter.label}
-            </a>
-          ))
-        }
-      </nav>
-      {
-        maps.length === 0 && activeCategory !== 'all' ? (
-          <p class="wildlife-tab-lead">{page.empty}</p>
-        ) : (
-          <div class="card-grid cols-3" id="maps-grid">
-            {activeCategory === 'all' ? (
-              <article class="map-card-wrap" data-map-category={HISTORY_OF_BORDERS_SLUG}>
-                <a class="map-card" href={localizePath(`/maps/${HISTORY_OF_BORDERS_SLUG}`, locale)}>
-                  <div class="card-art map-card-art">
-                    <img
-                      src="/images/maps/borders/y1200.jpg"
-                      alt={borders.catalogAlt}
-                      width="640"
-                      height="320"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <span class="tag">{page.categories['history-of-borders']}</span>
-                    <h3>{borders.catalogTitle}</h3>
-                    <p class="map-card-meta">1–2020</p>
-                    <p class="wildlife-hook">{borders.catalogHook}</p>
-                    <span class="card-cta">{borders.catalogCta}</span>
-                  </div>
-                </a>
-              </article>
-            ) : null}
-            {maps.map((item) => (
-              <MapCard map={item} />
+  {
+    hub ? (
+      <SectionHub kicker={page.chooseCategory} label={page.filterAria}>
+        {mapHub.map((item) => (
+          <HubTile
+            href={localizePath(mapCategoryPath(item.key), locale)}
+            icon={item.icon}
+            title={item.key === 'all' ? page.all : page.categories[item.key]}
+            text={page.tiles[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : (
+      <section class="section maps-catalog">
+        <div class="wrap">
+          <nav class="filters maps-filters" aria-label={page.filterAria}>
+            {filters.map((filter) => (
+              <a
+                class:list={['filter-btn', { 'is-active': filter.key === activeCategory }]}
+                href={filter.href}
+              >
+                {filter.label}
+              </a>
             ))}
-          </div>
-        )
-      }
-    </div>
-  </section>
+          </nav>
+          {maps.length === 0 && activeCategory !== 'all' ? (
+            <p class="wildlife-tab-lead">{page.empty}</p>
+          ) : (
+            <div class="card-grid cols-3" id="maps-grid">
+              {activeCategory === 'all' ? (
+                <article class="map-card-wrap" data-map-category={HISTORY_OF_BORDERS_SLUG}>
+                  <a class="map-card" href={localizePath(`/maps/${HISTORY_OF_BORDERS_SLUG}`, locale)}>
+                    <div class="card-art map-card-art">
+                      <img
+                        src="/images/maps/borders/y1200.jpg"
+                        alt={borders.catalogAlt}
+                        width="640"
+                        height="320"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <span class="tag">{page.categories['history-of-borders']}</span>
+                      <h3>{borders.catalogTitle}</h3>
+                      <p class="map-card-meta">1–2020</p>
+                      <p class="wildlife-hook">{borders.catalogHook}</p>
+                      <span class="card-cta">{borders.catalogCta}</span>
+                    </div>
+                  </a>
+                </article>
+              ) : null}
+              {maps.map((item) => (
+                <MapCard map={item} />
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    )
+  }
 </BaseLayout>

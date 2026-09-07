@@ -25,13 +25,19 @@ import {
 } from '../i18n';
 
 interface Props {
+  hub?: boolean;
   panel?: ForestPanel;
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getForestsPage(locale);
-const requested = Astro.props.panel ?? Astro.url.searchParams.get('panel') ?? 'satellite';
-const activePanel: ForestPanel = isForestPanel(requested) ? requested : 'satellite';
+const hub = Astro.props.hub === true;
+const requested = Astro.props.panel ?? Astro.url.searchParams.get('panel');
+const activePanel: ForestPanel | undefined = hub
+  ? undefined
+  : isForestPanel(requested ?? undefined)
+    ? requested
+    : 'satellite';
 
 const satelliteFrames = getForestFrames(locale, 'satellite');
 const reconstructionFrames = getForestFrames(locale, 'reconstruction');
@@ -40,7 +46,6 @@ const longViewSrc = forestFrameSrc(longViewImage.file);
 const backdropSrc = forestFrameSrc(forestBackdrop.file);
 
 const initialSatellite = satelliteFrames[satelliteFrames.length - 1];
-const initialReconstruction = reconstructionFrames[0];
 const scenarioKeys = ['continued', 'slower', 'restore'] as const;
 const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
 ---
@@ -65,25 +70,13 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
           title={page.panels[item.key]}
           text={page.tiles[item.key]}
           active={item.key === activePanel}
-          dataPanel={item.key}
         />
       ))
     }
   </SectionHub>
 
-  <section class="section section-hub-follow" id="forests-intro">
-    <div class="wrap">
-      <div class="wildlife-copy-card forests-panel oceans-hub-intro">
-        <div class="eyebrow forests-eyebrow">{page.eyebrow}</div>
-        <h2>{page.title}</h2>
-        <div class="encyc-lede">
-          {page.hubLead.map((para) => <p>{para}</p>)}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="satellite" data-forest-panel="satellite">
+  {activePanel === 'satellite' && (
+  <section class="section section-hub-follow" id="satellite" data-forest-panel="satellite">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.satellite}</div>
@@ -183,8 +176,10 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="history" data-forest-panel="history">
+  {activePanel === 'history' && (
+  <section class="section section-hub-follow" id="history" data-forest-panel="history">
     <div class="wrap">
       <div class="wildlife-copy-card forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.history}</div>
@@ -228,8 +223,10 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="numbers" data-forest-panel="numbers">
+  {activePanel === 'numbers' && (
+  <section class="section section-hub-follow" id="numbers" data-forest-panel="numbers">
     <div class="wrap">
       <div class="wildlife-list-panel forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
@@ -273,8 +270,10 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="outlook" data-forest-panel="outlook">
+  {activePanel === 'outlook' && (
+  <section class="section section-hub-follow" id="outlook" data-forest-panel="outlook">
     <div class="wrap">
       <div class="wildlife-copy-card forests-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.outlook}</div>
@@ -348,16 +347,14 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       </div>
     </div>
   </section>
+  )}
 </BaseLayout>
 
+{activePanel === 'satellite' && (
 <script
   define:vars={{
     satelliteFrames,
     reconstructionFrames,
-    satelliteHref: localizePath(forestPanelPath('satellite'), locale),
-    historyHref: localizePath(forestPanelPath('history'), locale),
-    numbersHref: localizePath(forestPanelPath('numbers'), locale),
-    outlookHref: localizePath(forestPanelPath('outlook'), locale),
     fidelitySatellite: page.fidelitySatellite,
     fidelityReconstruction: page.fidelityReconstruction,
     yearLabel: page.yearLabel,
@@ -369,30 +366,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
     srcPrefix: '/images/forests/',
   }}
 >
-  const hrefs = {
-    satellite: satelliteHref,
-    history: historyHref,
-    numbers: numbersHref,
-    outlook: outlookHref,
-  };
-
-  const tiles = document.querySelectorAll('[data-panel]');
-  tiles.forEach((tile) => {
-    tile.addEventListener('click', (event) => {
-      const panel = tile.dataset.panel;
-      if (!panel || !(panel in hrefs)) return;
-      event.preventDefault();
-      tiles.forEach((item) => {
-        const on = item.dataset.panel === panel;
-        item.classList.toggle('is-active', on);
-        if (on) item.setAttribute('aria-current', 'page');
-        else item.removeAttribute('aria-current');
-      });
-      history.replaceState(null, '', hrefs[panel]);
-      document.getElementById(panel)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-
   const map = document.querySelector('[data-forest-map]');
   if (map) {
     const image = map.querySelector('[data-forest-image]');
@@ -498,11 +471,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
         const next = button.dataset.forestMode === 'reconstruction' ? 'reconstruction' : 'satellite';
         const frames = framesFor(next);
         show(next, next === 'satellite' ? frames.length - 1 : 0);
-        if (next === 'reconstruction') {
-          history.replaceState(null, '', hrefs.history);
-        } else {
-          history.replaceState(null, '', hrefs.satellite);
-        }
       });
     });
 
@@ -530,16 +498,8 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
       if (found >= 0) show('satellite', found);
     } else if (hash.startsWith('recon-') || reconstructionFrames.some((frame) => frame.id === hash)) {
       const found = reconstructionFrames.findIndex((frame) => frame.id === hash || frame.id === 'recon-' + hash);
-      if (found >= 0) {
-        show('reconstruction', found);
-        document.getElementById('history')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (found >= 0) show('reconstruction', found);
     }
   }
-
-  const path = location.pathname.replace(/\/+$/, '');
-  const last = path.split('/').filter(Boolean).pop();
-  if (last && last in hrefs && last !== 'forests' && last !== 'ru' && last !== 'pl' && last !== 'lv') {
-    document.getElementById(last)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
 </script>
+)}

@@ -1,12 +1,15 @@
 ---
 import { isInnovationArea } from '../../data/innovations';
-import { localeStaticPaths } from '../../i18n';
+import { localeStaticPaths, localizePath, resolveLocale } from '../../i18n';
 import InnovationsView from '../../views/InnovationsView.astro';
 
 export const getStaticPaths = localeStaticPaths;
 
+const locale = resolveLocale(Astro.currentLocale);
 const areaParam = Astro.url.searchParams.get('area');
-const area = isInnovationArea(areaParam ?? undefined) ? areaParam : 'all';
+if (isInnovationArea(areaParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/innovations/${areaParam}`, locale));
+}
 ---
 
-<InnovationsView area={area} />
+<InnovationsView hub />

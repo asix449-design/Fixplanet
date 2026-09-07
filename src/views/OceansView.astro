@@ -34,13 +34,19 @@ import {
 } from '../i18n';
 
 interface Props {
+  hub?: boolean;
   panel?: OceanPanel;
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getOceansPage(locale);
-const requested = Astro.props.panel ?? Astro.url.searchParams.get('panel') ?? 'currents';
-const activePanel: OceanPanel = isOceanPanel(requested) ? requested : 'currents';
+const hub = Astro.props.hub === true;
+const requested = Astro.props.panel ?? Astro.url.searchParams.get('panel');
+const activePanel: OceanPanel | undefined = hub
+  ? undefined
+  : isOceanPanel(requested ?? undefined)
+    ? requested
+    : 'currents';
 
 const sstFrames = getOceanSstFrames(locale, 'sst');
 const anomalyFrames = getOceanSstFrames(locale, 'sst-anomaly');
@@ -74,25 +80,13 @@ const initialSalinity = salinityFrames[0];
           title={page.panels[item.key]}
           text={page.tiles[item.key]}
           active={item.key === activePanel}
-          dataPanel={item.key}
         />
       ))
     }
   </SectionHub>
 
-  <section class="section section-hub-follow" id="oceans-intro">
-    <div class="wrap">
-      <div class="wildlife-copy-card forests-panel oceans-panel oceans-hub-intro">
-        <div class="eyebrow forests-eyebrow">{page.eyebrow}</div>
-        <h2>{page.title}</h2>
-        <div class="oceans-lede">
-          {page.hubLead.map((para) => <p>{para}</p>)}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="currents" data-ocean-panel="currents">
+  {activePanel === 'currents' && (
+  <section class="section section-hub-follow" id="currents" data-ocean-panel="currents">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.currents}</div>
@@ -163,8 +157,10 @@ const initialSalinity = salinityFrames[0];
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="salinity" data-ocean-panel="salinity">
+  {activePanel === 'salinity' && (
+  <section class="section section-hub-follow" id="salinity" data-ocean-panel="salinity">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.salinity}</div>
@@ -238,8 +234,10 @@ const initialSalinity = salinityFrames[0];
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="sst" data-ocean-panel="sst">
+  {activePanel === 'sst' && (
+  <section class="section section-hub-follow" id="sst" data-ocean-panel="sst">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.sst}</div>
@@ -337,8 +335,10 @@ const initialSalinity = salinityFrames[0];
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="pollution" data-ocean-panel="pollution">
+  {activePanel === 'pollution' && (
+  <section class="section section-hub-follow" id="pollution" data-ocean-panel="pollution">
     <div class="wrap">
       <div class="wildlife-copy-card forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.pollution}</div>
@@ -391,8 +391,10 @@ const initialSalinity = salinityFrames[0];
       </div>
     </div>
   </section>
+  )}
 
-  <section class="section" id="numbers" data-ocean-panel="numbers">
+  {activePanel === 'numbers' && (
+  <section class="section section-hub-follow" id="numbers" data-ocean-panel="numbers">
     <div class="wrap">
       <div class="wildlife-list-panel forests-panel oceans-panel">
         <div class="eyebrow forests-eyebrow">{page.panels.numbers}</div>
@@ -434,18 +436,15 @@ const initialSalinity = salinityFrames[0];
       </div>
     </div>
   </section>
+  )}
 </BaseLayout>
 
+{(activePanel === 'sst' || activePanel === 'salinity') && (
 <script
   define:vars={{
     sstFrames,
     anomalyFrames,
     salinityFrames,
-    currentsHref: localizePath(oceanPanelPath('currents'), locale),
-    salinityHref: localizePath(oceanPanelPath('salinity'), locale),
-    sstHref: localizePath(oceanPanelPath('sst'), locale),
-    pollutionHref: localizePath(oceanPanelPath('pollution'), locale),
-    numbersHref: localizePath(oceanPanelPath('numbers'), locale),
     fidelitySst: page.fidelitySst,
     fidelityAnomaly: page.fidelityAnomaly,
     vintageLabel: page.vintageLabel,
@@ -453,31 +452,6 @@ const initialSalinity = salinityFrames[0];
     srcPrefix: '/images/oceans/',
   }}
 >
-  const hrefs = {
-    currents: currentsHref,
-    salinity: salinityHref,
-    sst: sstHref,
-    pollution: pollutionHref,
-    numbers: numbersHref,
-  };
-
-  const tiles = document.querySelectorAll('[data-panel]');
-  tiles.forEach((tile) => {
-    tile.addEventListener('click', (event) => {
-      const panel = tile.dataset.panel;
-      if (!panel || !(panel in hrefs)) return;
-      event.preventDefault();
-      tiles.forEach((item) => {
-        const on = item.dataset.panel === panel;
-        item.classList.toggle('is-active', on);
-        if (on) item.setAttribute('aria-current', 'page');
-        else item.removeAttribute('aria-current');
-      });
-      history.replaceState(null, '', hrefs[panel]);
-      document.getElementById(panel)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  });
-
   function bindFrameSwitcher(root, framesByMode, options) {
     if (!root) return;
     const image = root.querySelector(options.image);
@@ -638,10 +612,5 @@ const initialSalinity = salinityFrames[0];
       fidelityFor: null,
     },
   );
-
-  const path = location.pathname.replace(/\/+$/, '');
-  const last = path.split('/').filter(Boolean).pop();
-  if (last && last in hrefs && last !== 'oceans' && last !== 'ru' && last !== 'pl' && last !== 'lv') {
-    document.getElementById(last)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
 </script>
+)}

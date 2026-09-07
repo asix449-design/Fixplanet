@@ -5,11 +5,11 @@ import SolutionsView from '../../../views/SolutionsView.astro';
 
 export function getStaticPaths() {
   return otherLocales.flatMap((locale) =>
-    tagKeys.map((slug) => ({ params: { locale, slug } })),
+    ['all', ...tagKeys].map((slug) => ({ params: { locale, slug } })),
   );
 }
 
 const { slug } = Astro.params;
 ---
 
-{isSolutionTag(slug) && <SolutionsView tag={slug} />}
+{(slug === 'all' || isSolutionTag(slug)) && <SolutionsView tag={slug} />}

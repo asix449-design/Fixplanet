@@ -335,8 +335,8 @@ export function isForestPanel(value: string | undefined): value is ForestPanel {
   return !!value && (forestPanelKeys as readonly string[]).includes(value);
 }
 
-export function forestPanelPath(panel: ForestPanel = 'satellite'): string {
-  return panel === 'satellite' ? '/forests' : `/forests/${panel}`;
+export function forestPanelPath(panel: ForestPanel): string {
+  return `/forests/${panel}`;
 }
 
 export function getForestFrameMeta(id: string): ForestFrameMeta | undefined {
