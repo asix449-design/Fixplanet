@@ -95,6 +95,101 @@ const candidates = {
     'Eretmochelys imbricata.jpg',
     'Hawksbill turtle swimming.jpg',
   ],
+  'northern-white-rhinoceros': [
+    'Northern White Rhinoceros Angalifu.jpg',
+    'Ceratotherium simum cottoni.jpg',
+    'Northern White Rhinoceros.jpg',
+  ],
+  'javan-rhinoceros': [
+    'Rhinoceros sondaicus in London Zoo.jpg',
+    'Rhinoceros sondaicus.jpg',
+    'Javan Rhinoceros.jpg',
+  ],
+  'sumatran-rhinoceros': [
+    'Sumatran Rhinoceros Way Kambas 2008.jpg',
+    'Sumatran rhinoceros resting.jpg',
+    'Dicerorhinus sumatrensis.jpg',
+  ],
+  saola: [
+    'Pseudoryx nghetinhensis.PNG',
+    'Saola.jpg',
+    'Pseudoryx nghetinhensis.jpg',
+  ],
+  'yangtze-giant-softshell-turtle': [
+    'Rùa Đồng Mô.jpg',
+    'Rafetus swinhoei.jpg',
+    'Yangtze giant softshell turtle.jpg',
+  ],
+  kakapo: [
+    'Kakapo Sirocco 1.jpg',
+    'Strigops habroptilus.jpg',
+    'Kakapo.jpg',
+  ],
+  axolotl: [
+    'Ambystoma mexicanum 1.jpg',
+    'Ambystoma mexicanum (axolotl).jpg',
+    'Axolotl (Ambystoma mexicanum).jpg',
+  ],
+  'chinese-giant-salamander': [
+    'Velemlok čínský zoo praha 1.jpg',
+    'Andrias davidianus 01.JPG',
+    'Chinese Giant Salamander (42280384805).jpg',
+  ],
+  addax: [
+    'Addax nasomaculatus.jpg',
+    'Addax (Addax nasomaculatus).jpg',
+    'Addax 1.jpg',
+  ],
+  'cao-vit-gibbon': [
+    'Nomascus nasutus.jpg',
+    'Cao Vit gibbon.jpg',
+    'Eastern black crested gibbon.jpg',
+  ],
+  'spixs-macaw': [
+    "Spix's Macaw (Cyanopsitta spixii) at Jurong Bird Park in Singapore.jpg",
+    'Cyanopsitta spixii.jpg',
+    "Spix's macaw.jpg",
+  ],
+  'devils-hole-pupfish': [
+    'Blue Devils Hole pupfish (NPS).jpg',
+    'Cyprinodon diabolis.jpg',
+    'Devils Hole pupfish.jpg',
+  ],
+  'chinese-pangolin': [
+    'Manis pentadactyla.jpg',
+    'Chinese pangolin.jpg',
+    'Chinese Pangolin (Manis pentadactyla).jpg',
+  ],
+  'sunda-pangolin': [
+    'Manis javanica.jpg',
+    'Sunda pangolin.jpg',
+    'Malayan pangolin.jpg',
+  ],
+  'philippine-pangolin': [
+    'Philippine pangolin 2015 stamp of the Philippines.jpg',
+    'Manis culionensis.jpg',
+    'Philippine pangolin.jpg',
+  ],
+  'indian-pangolin': [
+    'Scaly ant eater by Dushy Ranetunge 2.jpg',
+    'Manis crassicaudata.jpg',
+    'Indian pangolin.jpg',
+  ],
+  'sumatran-tiger': [
+    'Panthera tigris sumatrae.jpg',
+    'Sumatran tiger.jpg',
+    'Sumatran Tiger (Panthera tigris sumatrae).jpg',
+  ],
+  'rices-whale': [
+    "Rice's whale close to surface.jpg",
+    'Balaenoptera ricei.jpg',
+    "Rice's whale.jpg",
+  ],
+  'north-atlantic-right-whale': [
+    'Eubalaena glacialis with calf.jpg',
+    'North Atlantic right whale.jpg',
+    'Eubalaena glacialis.jpg',
+  ],
   'woolly-mammoth': [
     'Woolly mammoth.jpg',
     'Mammuthus primigenius.jpg',
