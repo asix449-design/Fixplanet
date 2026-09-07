@@ -1,12 +1,15 @@
 ---
 import { isMapCategory } from '../../data/maps';
-import { localeStaticPaths } from '../../i18n';
+import { localeStaticPaths, localizePath, resolveLocale } from '../../i18n';
 import MapsView from '../../views/MapsView.astro';
 
 export const getStaticPaths = localeStaticPaths;
 
+const locale = resolveLocale(Astro.currentLocale);
 const categoryParam = Astro.url.searchParams.get('category');
-const category = isMapCategory(categoryParam ?? undefined) ? categoryParam : 'all';
+if (categoryParam === 'all' || isMapCategory(categoryParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/maps/${categoryParam}`, locale));
+}
 ---
 
-<MapsView category={category} />
+<MapsView hub />

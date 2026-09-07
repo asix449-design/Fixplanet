@@ -382,6 +382,6 @@ export function isOceanPanel(value: string | undefined): value is OceanPanel {
   return !!value && (oceanPanelKeys as readonly string[]).includes(value);
 }
 
-export function oceanPanelPath(panel: OceanPanel = 'currents'): string {
-  return panel === 'currents' ? '/oceans' : `/oceans/${panel}`;
+export function oceanPanelPath(panel: OceanPanel): string {
+  return `/oceans/${panel}`;
 }

@@ -1,7 +1,7 @@
 ---
+import { isGeoShelf } from '../data/terraforming';
+
 const shelf = Astro.url.searchParams.get('shelf');
-const dest = shelf
-  ? `/terraforming?shelf=${encodeURIComponent(shelf)}`
-  : '/terraforming';
+const dest = isGeoShelf(shelf ?? undefined) ? `/terraforming/${shelf}` : '/terraforming';
 return Astro.redirect(dest, 301);
 ---

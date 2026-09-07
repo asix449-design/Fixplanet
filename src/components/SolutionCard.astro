@@ -12,7 +12,7 @@ const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const {
   solution,
-  href = localizePath(`/solutions#${solution.slug}`, locale),
+  href = localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale),
   hidden = false,
 } = Astro.props;
 const photo = `/images/solutions/${solution.slug}.jpg`;

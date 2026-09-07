@@ -1,5 +1,13 @@
 ---
+import { isWildlifeStatus } from '../data/wildlife';
+import { localizePath, resolveLocale } from '../i18n';
 import WildlifeView from '../views/WildlifeView.astro';
+
+const locale = resolveLocale(Astro.currentLocale);
+const statusParam = Astro.url.searchParams.get('status');
+if (isWildlifeStatus(statusParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/wildlife/${statusParam}`, locale));
+}
 ---
 
-<WildlifeView status="surviving" />
+<WildlifeView hub />

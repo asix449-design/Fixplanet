@@ -8,6 +8,7 @@ import MapsView from '../../../views/MapsView.astro';
 
 export function getStaticPaths() {
   return otherLocales.flatMap((locale) => [
+    { params: { locale, slug: 'all' } },
     ...mapCategoryKeys.map((slug) => ({ params: { locale, slug } })),
     ...mapMeta.map((item) => ({ params: { locale, slug: item.slug } })),
   ]);
@@ -19,7 +20,9 @@ const map = slug && !isMapCategory(slug) ? getMapBySlug(locale, slug) : undefine
 ---
 
 {
-  slug === HISTORY_OF_BORDERS_SLUG ? (
+  slug === 'all' ? (
+    <MapsView category="all" />
+  ) : slug === HISTORY_OF_BORDERS_SLUG ? (
     <HistoryOfBordersView />
   ) : isMapCategory(slug) ? (
     <MapsView category={slug} />

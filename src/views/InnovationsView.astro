@@ -9,23 +9,27 @@ import {
   isInnovationArea,
   type InnovationArea,
 } from '../data/innovations';
-import { getInnovations, getInnovationsPage, localizePath, resolveLocale } from '../i18n';
+import {
+  getInnovations,
+  getInnovationsByArea,
+  getInnovationsPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
 
 interface Props {
-  area?: InnovationArea | 'all';
+  hub?: boolean;
+  area?: InnovationArea;
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
-const requested = Astro.props.area ?? Astro.url.searchParams.get('area') ?? 'all';
-const activeArea: InnovationArea | 'all' =
-  requested === 'all' || !requested
-    ? 'all'
-    : isInnovationArea(requested)
-      ? requested
-      : 'all';
+const hub = Astro.props.hub === true;
+const requested = Astro.props.area ?? Astro.url.searchParams.get('area');
+const activeArea: InnovationArea | undefined =
+  hub || !isInnovationArea(requested ?? undefined) ? undefined : requested;
 
-const items = getInnovations(locale);
+const items = activeArea ? getInnovationsByArea(locale, activeArea) : getInnovations(locale);
 ---
 
 <BaseLayout
@@ -53,87 +57,39 @@ const items = getInnovations(locale);
           title={page.areas[item.key]}
           text={page.tiles[item.key]}
           active={item.key === activeArea}
-          dataArea={item.key}
         />
       ))
     }
   </SectionHub>
 
-  <section class="section section-hub-follow" id="innovations-list">
-    <div class="wrap wildlife-list-panel innovations-list-panel">
-      <div class="eyebrow">{page.eyebrow}</div>
-      <h2>{page.title}</h2>
-      <div class="encyc-lede">
-        <p>{page.lead}</p>
-      </div>
-      <p class="wildlife-tab-lead" data-tab-lead>
-        {page.areaLeads[activeArea]}
-      </p>
-      <div class="card-grid cols-3" id="innovations-grid">
-        {
-          items.map((item) => (
-            <div hidden={activeArea !== 'all' && item.area !== activeArea}>
-              <InnovationCard item={item} />
+  {
+    hub ? (
+      <section class="section section-hub-follow">
+        <div class="wrap">
+          <div class="wildlife-copy-card innovations-list-panel">
+            <div class="eyebrow">{page.eyebrow}</div>
+            <h2>{page.title}</h2>
+            <div class="encyc-lede">
+              <p>{page.lead}</p>
             </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-</BaseLayout>
-
-<script
-  define:vars={{
-    leads: page.areaLeads,
-    allHref: localizePath(innovationAreaPath('all'), locale),
-    ecologyHref: localizePath(innovationAreaPath('ecology'), locale),
-    energyHref: localizePath(innovationAreaPath('energy'), locale),
-    aiHref: localizePath(innovationAreaPath('ai'), locale),
-  }}
->
-  const hrefs = {
-    all: allHref,
-    ecology: ecologyHref,
-    energy: energyHref,
-    ai: aiHref,
-  };
-
-  const buttons = document.querySelectorAll('[data-area]');
-  const cards = document.querySelectorAll('#innovations-grid > div');
-  const lead = document.querySelector('[data-tab-lead]');
-
-  function show(area) {
-    if (!(area in hrefs)) return;
-    buttons.forEach((button) => {
-      const on = button.dataset.area === area;
-      button.classList.toggle('is-active', on);
-      if (on) button.setAttribute('aria-current', 'page');
-      else button.removeAttribute('aria-current');
-    });
-    cards.forEach((card) => {
-      const inner = card.querySelector('[data-innovation-area]');
-      const itemArea = inner?.dataset.innovationArea;
-      card.hidden = area !== 'all' && itemArea !== area;
-    });
-    if (lead && area in leads) {
-      lead.textContent = leads[area];
-    }
+          </div>
+        </div>
+      </section>
+    ) : (
+      <section class="section section-hub-follow" id="innovations-list">
+        <div class="wrap wildlife-list-panel innovations-list-panel">
+          {activeArea && <p class="wildlife-tab-lead">{page.areaLeads[activeArea]}</p>}
+          {items.length === 0 ? (
+            <p class="wildlife-tab-lead">{page.empty}</p>
+          ) : (
+            <div class="card-grid cols-3" id="innovations-grid">
+              {items.map((item) => (
+                <InnovationCard item={item} />
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    )
   }
-
-  buttons.forEach((button) => {
-    button.addEventListener('click', (event) => {
-      const area = button.dataset.area;
-      if (!area || !(area in hrefs)) return;
-      event.preventDefault();
-      show(area);
-      history.replaceState(null, '', hrefs[area]);
-      document.getElementById('innovations-list')?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    });
-  });
-
-  const query = new URLSearchParams(location.search).get('area');
-  if (query && query in hrefs) show(query);
-</script>
+</BaseLayout>

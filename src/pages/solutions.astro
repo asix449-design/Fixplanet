@@ -1,9 +1,13 @@
 ---
 import { isSolutionTag } from '../data/solutions';
+import { localizePath, resolveLocale } from '../i18n';
 import SolutionsView from '../views/SolutionsView.astro';
 
+const locale = resolveLocale(Astro.currentLocale);
 const tagParam = Astro.url.searchParams.get('tag');
-const tag = isSolutionTag(tagParam ?? undefined) ? tagParam : 'all';
+if (tagParam === 'all' || isSolutionTag(tagParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/solutions/${tagParam}`, locale));
+}
 ---
 
-<SolutionsView tag={tag} />
+<SolutionsView hub />

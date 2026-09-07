@@ -1,5 +1,13 @@
 ---
+import { isForestPanel } from '../data/forests';
+import { localizePath, resolveLocale } from '../i18n';
 import ForestsView from '../views/ForestsView.astro';
+
+const locale = resolveLocale(Astro.currentLocale);
+const panelParam = Astro.url.searchParams.get('panel');
+if (isForestPanel(panelParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/forests/${panelParam}`, locale));
+}
 ---
 
-<ForestsView panel="satellite" />
+<ForestsView hub />

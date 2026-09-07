@@ -442,5 +442,5 @@ export function wildlifeImageSrc(image: ImageCredit): string {
 }
 
 export function wildlifeStatusPath(status: WildlifeStatus): string {
-  return status === 'surviving' ? '/wildlife' : `/wildlife/${status}`;
+  return `/wildlife/${status}`;
 }

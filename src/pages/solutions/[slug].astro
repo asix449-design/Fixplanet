@@ -3,10 +3,10 @@ import { isSolutionTag, tagKeys } from '../../data/solutions';
 import SolutionsView from '../../views/SolutionsView.astro';
 
 export function getStaticPaths() {
-  return tagKeys.map((slug) => ({ params: { slug } }));
+  return ['all', ...tagKeys].map((slug) => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
 ---
 
-{isSolutionTag(slug) && <SolutionsView tag={slug} />}
+{(slug === 'all' || isSolutionTag(slug)) && <SolutionsView tag={slug} />}

@@ -1,12 +1,15 @@
 ---
 import { isGeoShelf } from '../../data/terraforming';
-import { localeStaticPaths } from '../../i18n';
+import { localeStaticPaths, localizePath, resolveLocale } from '../../i18n';
 import TerraformingView from '../../views/TerraformingView.astro';
 
 export const getStaticPaths = localeStaticPaths;
 
+const locale = resolveLocale(Astro.currentLocale);
 const shelfParam = Astro.url.searchParams.get('shelf');
-const shelf = isGeoShelf(shelfParam ?? undefined) ? shelfParam : 'all';
+if (isGeoShelf(shelfParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/terraforming/${shelfParam}`, locale));
+}
 ---
 
-<TerraformingView shelf={shelf} />
+<TerraformingView hub />

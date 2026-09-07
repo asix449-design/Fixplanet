@@ -18,6 +18,8 @@ export type MapsPage = {
   title: string;
   lead: string;
   filterAria: string;
+  chooseCategory: string;
+  tiles: Record<MapCategory | 'all', string>;
   all: string;
   cardCta: string;
   openSource: string;
@@ -44,6 +46,23 @@ const pageEn: MapsPage = {
   lead:
     'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders is a century-by-century timeline from 1 CE to now.',
   filterAria: 'Filter maps by category',
+  chooseCategory: 'Choose a shelf',
+  tiles: {
+    all: 'Every sourced map in the atlas, on one shelf.',
+    conflicts: 'Armed events and battle deaths from named datasets.',
+    ethnic: 'Language families as public cartography, not a census.',
+    religious: 'Major religions as mapped by named atlases.',
+    crime: 'Homicide and related rates where a public map exists.',
+    pollution: 'Air, waste, and emissions with a named source.',
+    'oil-gas': 'Fields, pipelines, and fossil infrastructure.',
+    minerals: 'Deposits and extraction, dated and sourced.',
+    political: 'States, disputed areas, and administrative lines.',
+    'history-of-borders': 'Century frames from 1 CE to now.',
+    forests: 'Canopy, loss, and cover from named satellites.',
+    protected: 'Parks and other designated areas.',
+    water: 'Rivers, basins, and freshwater stress.',
+    population: 'Where people live, at the vintage we can source.',
+  },
   all: 'All',
   cardCta: 'Read the card →',
   openSource: 'Open source map →',
@@ -86,6 +105,23 @@ const pageRu: MapsPage = {
   lead:
     'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» — лента столетий от 1 года н. э. до сегодня.',
   filterAria: 'Фильтр карт по теме',
+  chooseCategory: 'Выберите полку',
+  tiles: {
+    all: 'Все карты атласа с источниками — на одной полке.',
+    conflicts: 'Вооружённые события и боевые потери по названным данным.',
+    ethnic: 'Языковые семьи как открытая картография, не перепись.',
+    religious: 'Крупные религии по названным атласам.',
+    crime: 'Убийства и смежные показатели, где есть открытая карта.',
+    pollution: 'Воздух, отходы и выбросы с названным источником.',
+    'oil-gas': 'Месторождения, трубы и ископаемая инфраструктура.',
+    minerals: 'Залежи и добыча — с датой и источником.',
+    political: 'Государства, спорные зоны и административные линии.',
+    'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
+    forests: 'Полог, потери и покров по названным спутникам.',
+    protected: 'Парки и иные охраняемые территории.',
+    water: 'Реки, бассейны и нехватка пресной воды.',
+    population: 'Где живут люди — на тот год, который можем указать.',
+  },
   all: 'Все',
   cardCta: 'Читать карточку →',
   openSource: 'Открыть исходную карту →',
@@ -128,6 +164,23 @@ const pagePl: MapsPage = {
   lead:
     'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic to oś czasu stuleci od 1 n.e. do dziś.',
   filterAria: 'Filtruj mapy według kategorii',
+  chooseCategory: 'Wybierz półkę',
+  tiles: {
+    all: 'Cały atlas ze źródłami — na jednej półce.',
+    conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
+    ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
+    religious: 'Główne religie według nazwanych atlasów.',
+    crime: 'Zabójstwa i pokrewne wskaźniki, gdzie jest publiczna mapa.',
+    pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
+    'oil-gas': 'Złoża, rurociągi i infrastruktura kopalin.',
+    minerals: 'Złoża i wydobycie — z datą i źródłem.',
+    political: 'Państwa, spory i linie administracyjne.',
+    'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
+    forests: 'Okap, ubytek i pokrycie z nazwanych satelitów.',
+    protected: 'Parki i inne obszary chronione.',
+    water: 'Rzeki, zlewnie i presja na wodę słodką.',
+    population: 'Gdzie mieszkają ludzie — w roczniku, który umiemy podać.',
+  },
   all: 'Wszystkie',
   cardCta: 'Czytaj kartę →',
   openSource: 'Otwórz mapę źródłową →',
@@ -170,6 +223,23 @@ const pageLv: MapsPage = {
   lead:
     'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai.',
   filterAria: 'Filtrēt kartes pēc kategorijas',
+  chooseCategory: 'Izvēlies plauktu',
+  tiles: {
+    all: 'Visas atlanta kartes ar avotiem — vienā plauktā.',
+    conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
+    ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
+    religious: 'Galvenās reliģijas pēc nosauktiem atlantiem.',
+    crime: 'Slepkavības un radniecīgi rādītāji, kur ir publiska karte.',
+    pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
+    'oil-gas': 'Atradnes, cauruļvadi un fosilā infrastruktūra.',
+    minerals: 'Atradnes un ieguve — ar datumu un avotu.',
+    political: 'Valstis, strīdi un administratīvās līnijas.',
+    'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
+    forests: 'Vainags, zudums un segums no nosauktiem satelītiem.',
+    protected: 'Parki un citas aizsargājamās teritorijas.',
+    water: 'Upes, baseini un saldūdens spiediens.',
+    population: 'Kur dzīvo cilvēki — tajā gadā, ko varam norādīt.',
+  },
   all: 'Visas',
   cardCta: 'Lasīt kartīti →',
   openSource: 'Atvērt avota karti →',
