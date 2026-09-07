@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "drip-irrigation",
+    "file": "drip-irrigation.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 drip line on a young crop, not a named farm",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "constructed-wetlands",
+    "file": "constructed-wetlands.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 reed wetland and boardwalk, not a named project",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "sustainable-forestry",
+    "file": "sustainable-forestry.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 plantation track and log stack, not a named concession",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "anaerobic-digesters",
+    "file": "anaerobic-digesters.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 farm digester domes, not a named plant",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "cool-roofs",
+    "file": "cool-roofs.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 white urban roofs, not a named city programme",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "lower-clinker-cement",
+    "file": "lower-clinker-cement.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 cement plant stockpiles, not a named works",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "river-interceptors",
+    "file": "river-interceptors.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 river boom holding litter, not a named interceptor",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "solar-microgrids",
+    "file": "solar-microgrids.jpg",
+    "artist": "Fix Planet generated documentary still \u2014 village solar array, not a named microgrid",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "membrane-desalination",
+    "file": "membrane-desalination.jpg",
+    "commonsTitle": "Perth Seawater Desalination Plant, September 2020 02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perth_Seawater_Desalination_Plant,_September_2020_02.jpg",
+    "artist": "Calistemon",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "managed-aquifer-recharge",
+    "file": "managed-aquifer-recharge.jpg",
+    "commonsTitle": "CSIRO ScienceImage 3711 Bolivar Recycled Water Aquifer Storage Recovery Trial site on the Adelaide Plains SA 2002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_3711_Bolivar_Recycled_Water_Aquifer_Storage_Recovery_Trial_site_on_the_Adelaide_Plains_SA_2002.jpg",
+    "artist": "Bob Schuster, CSIRO",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "assisted-natural-regeneration",
+    "file": "assisted-natural-regeneration.jpg",
+    "commonsTitle": "Faidherbia albida (Elah valley).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Faidherbia_albida_(Elah_valley).jpg",
+    "artist": "Davidbena",
+    "license": "CC0"
+  },
+  {
+    "slug": "fire-smart-forestry",
+    "file": "fire-smart-forestry.jpg",
+    "commonsTitle": "Conducting Prescribed Fire, Lake Como, Darby Sula R.D. Bitterroot N.F.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conducting_Prescribed_Fire,_Lake_Como,_Darby_Sula_R.D._Bitterroot_N.F.jpg",
+    "artist": "Forest Service Northern Region",
+    "license": "Public domain"
+  },
+  {
+    "slug": "shade-agroforestry",
+    "file": "shade-agroforestry.jpg",
+    "commonsTitle": "Canopy of a traditional shade coffee plantation in Guatemala.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canopy_of_a_traditional_shade_coffee_plantation_in_Guatemala.jpg",
+    "artist": "John Blake",
+    "license": "Public domain"
+  },
+  {
+    "slug": "pet-bottle-recycling",
+    "file": "pet-bottle-recycling.jpg",
+    "commonsTitle": "PET-Flaschen-Recycling in Frauenfeld (2021).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PET-Flaschen-Recycling_in_Frauenfeld_(2021).jpg",
+    "artist": "JoachimKohler-HB",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "municipal-composting",
+    "file": "municipal-composting.jpg",
+    "commonsTitle": "Finished Municipal Compost for Resale at Recology's Facility.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Finished_Municipal_Compost_for_Resale_at_Recology%27s_Facility.jpg",
+    "artist": "Ckgurney",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "landfill-gas-capture",
+    "file": "landfill-gas-capture.jpg",
+    "commonsTitle": "Landfill gas collection from capped landfill area.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Landfill_gas_collection_from_capped_landfill_area.jpg",
+    "artist": "Z22",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "permeable-pavement",
+    "file": "permeable-pavement.jpg",
+    "commonsTitle": "Permeable pavement Rolling Hills Park.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Permeable_pavement_Rolling_Hills_Park.jpg",
+    "artist": "Mds08011",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "urban-tree-canopy",
+    "file": "urban-tree-canopy.jpg",
+    "commonsTitle": "Midtown Sacramento Tree Canopy.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Midtown_Sacramento_Tree_Canopy.jpg",
+    "artist": "Treefan86",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "district-heating",
+    "file": "district-heating.jpg",
+    "commonsTitle": "Power plant with ski slope Amager Bakke 05.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Power_plant_with_ski_slope_Amager_Bakke_05.jpg",
+    "artist": "Kritzolina",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "mass-timber",
+    "file": "mass-timber.jpg",
+    "commonsTitle": "20230630 Structure of Katajanokan Laituri - Helsinki, Suomi, Finland.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20230630_Structure_of_Katajanokan_Laituri_-_Helsinki,_Suomi,_Finland.jpg",
+    "artist": "Aarni Salomaa",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "green-steel",
+    "file": "green-steel.jpg",
+    "commonsTitle": "Electric Arc Furnace at Magna - geograph.org.uk - 7507.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Electric_Arc_Furnace_at_Magna_-_geograph.org.uk_-_7507.jpg",
+    "artist": "Chris J Dixon",
+    "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "mangrove-restoration",
+    "file": "mangrove-restoration.jpg",
+    "commonsTitle": "Mangrove Planting Restoration Project in Changkat Keruing.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mangrove_Planting_Restoration_Project_in_Changkat_Keruing.jpg",
+    "artist": "KUASACSR",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "bycatch-reduction",
+    "file": "bycatch-reduction.jpg",
+    "commonsTitle": "Loggerhead turtle escapes turtle exclusion device.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loggerhead_turtle_escapes_turtle_exclusion_device.jpg",
+    "artist": "NOAA",
+    "license": "Public domain"
+  },
+  {
+    "slug": "oyster-reefs",
+    "file": "oyster-reefs.jpg",
+    "commonsTitle": "Oyster reef Hunting Island SC.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oyster_reef_Hunting_Island_SC.jpg",
+    "artist": "Jstuby at English Wikipedia",
+    "license": "Public domain"
+  },
+  {
+    "slug": "onshore-wind",
+    "file": "onshore-wind.jpg",
+    "commonsTitle": "Rows of wind turbines at wind farm at hills.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rows_of_wind_turbines_at_wind_farm_at_hills.jpg",
+    "artist": "Winchell Joshua, U.S. Fish and Wildlife Service",
+    "license": "Public domain"
+  },
+  {
+    "slug": "heat-pumps",
+    "file": "heat-pumps.jpg",
+    "commonsTitle": "Ecodan outdoor unit in the snow.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ecodan_outdoor_unit_in_the_snow.jpg",
+    "artist": "PeterEastern",
+    "license": "CC BY-SA 4.0"
+  }
+]
