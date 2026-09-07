@@ -29,7 +29,7 @@ const en = {
   nav: {
     solutions: 'Solutions',
     innovations: 'Innovations',
-    geoengineering: 'Geoengineering',
+    terraforming: 'Terraforming',
     maps: 'Maps',
     law: 'Law',
     wildlife: 'Wildlife',
@@ -51,7 +51,7 @@ const en = {
     tiles: {
       solutions: 'Proven technologies with real-world impact.',
       innovations: 'Labs and pilots aimed at planetary-scale problems.',
-      geoengineering: 'Landscape megaprojects and a separate shelf of climate interventions — failure-honest.',
+      terraforming: 'Landscape megaprojects and a separate shelf of climate interventions — failure-honest.',
       maps: 'A sourced atlas of Earth systems and the political world.',
       law: 'Real statutes, pending bills, and labeled ideas — ecology, AI, animals.',
       wildlife: 'Species, habitats, and how they changed after we spread.',
@@ -312,7 +312,7 @@ const ru: typeof en = {
   nav: {
     solutions: 'Решения',
     innovations: 'Инновации',
-    geoengineering: 'Геоинженерия',
+    terraforming: 'Терраформинг',
     maps: 'Карты',
     law: 'Право',
     wildlife: 'Природа',
@@ -334,7 +334,7 @@ const ru: typeof en = {
     tiles: {
       solutions: 'Проверенные технологии с реальным эффектом.',
       innovations: 'Лаборатории и пилоты для планетарных проблем.',
-      geoengineering: 'Ландшафтные мегапроекты и отдельная полка климатических вмешательств — без прикрас.',
+      terraforming: 'Ландшафтные мегапроекты и отдельная полка климатических вмешательств — без прикрас.',
       maps: 'Атлас с источниками: системы Земли и политический мир.',
       law: 'Реальные статуты, рассматриваемые проекты и помеченные идеи — экология, ИИ, животные.',
       wildlife: 'Виды, места обитания и то, как они изменились после нашего расселения.',
@@ -598,7 +598,7 @@ const pl: typeof en = {
   nav: {
     solutions: 'Rozwiązania',
     innovations: 'Innowacje',
-    geoengineering: 'Geoinżynieria',
+    terraforming: 'Terraformowanie',
     maps: 'Mapy',
     law: 'Prawo',
     wildlife: 'Przyroda',
@@ -620,7 +620,7 @@ const pl: typeof en = {
     tiles: {
       solutions: 'Sprawdzone technologie z realnym skutkiem.',
       innovations: 'Laboratoria i pilotaże wobec problemów planetarnych.',
-      geoengineering: 'Megaprojekty krajobrazowe i osobna półka interwencji klimatycznych — bez hype’u.',
+      terraforming: 'Megaprojekty krajobrazowe i osobna półka interwencji klimatycznych — bez hype’u.',
       maps: 'Atlas ze źródłami: systemy Ziemi i świat polityczny.',
       law: 'Prawdziwe statuty, rozpatrywane projekty i oznaczone idee — ekologia, SI, zwierzęta.',
       wildlife: 'Gatunki, siedliska i to, jak zmieniły się po naszym rozprzestrzenieniu.',
@@ -884,7 +884,7 @@ const lv: typeof en = {
   nav: {
     solutions: 'Risinājumi',
     innovations: 'Inovācijas',
-    geoengineering: 'Ģeoinženierija',
+    terraforming: 'Terraformēšana',
     maps: 'Kartes',
     law: 'Tiesības',
     wildlife: 'Savvaļa',
@@ -906,7 +906,7 @@ const lv: typeof en = {
     tiles: {
       solutions: 'Pārbaudītas tehnoloģijas ar reālu ietekmi.',
       innovations: 'Laboratorijas un izmēģinājumi pret planētas mēroga problēmām.',
-      geoengineering: 'Ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās — bez haipa.',
+      terraforming: 'Ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās — bez haipa.',
       maps: 'Atlants ar avotiem: Zemes sistēmas un politiskā pasaule.',
       law: 'Īsti statūti, izskatīti projekti un marķētas idejas — ekoloģija, MI, dzīvnieki.',
       wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc mūsu izplatīšanās.',

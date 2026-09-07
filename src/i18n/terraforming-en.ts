@@ -1,4 +1,4 @@
-import type { GeoCopy } from '../data/geoengineering';
+import type { GeoCopy } from '../data/terraforming';
 
 export const en: Record<string, GeoCopy> = {
   'bradfield-scheme': {

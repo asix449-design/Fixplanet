@@ -1,9 +1,7 @@
 ---
-import { isGeoShelf } from '../data/geoengineering';
-import GeoengineeringView from '../views/GeoengineeringView.astro';
-
-const shelfParam = Astro.url.searchParams.get('shelf');
-const shelf = isGeoShelf(shelfParam ?? undefined) ? shelfParam : 'all';
+const shelf = Astro.url.searchParams.get('shelf');
+const dest = shelf
+  ? `/terraforming?shelf=${encodeURIComponent(shelf)}`
+  : '/terraforming';
+return Astro.redirect(dest, 301);
 ---
-
-<GeoengineeringView shelf={shelf} />

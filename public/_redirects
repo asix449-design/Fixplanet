@@ -1,0 +1,8 @@
+/geoengineering /terraforming 301
+/geoengineering/* /terraforming/:splat 301
+/ru/geoengineering /ru/terraforming 301
+/ru/geoengineering/* /ru/terraforming/:splat 301
+/pl/geoengineering /pl/terraforming 301
+/pl/geoengineering/* /pl/terraforming/:splat 301
+/lv/geoengineering /lv/terraforming 301
+/lv/geoengineering/* /lv/terraforming/:splat 301

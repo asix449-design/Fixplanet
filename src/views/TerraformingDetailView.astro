@@ -5,7 +5,7 @@ import {
   geoSectionSrc,
   geoShelfPath,
   type GeoProject,
-} from '../data/geoengineering';
+} from '../data/terraforming';
 import { getGeoPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -24,7 +24,7 @@ const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
   title={title}
   description={item.hook}
   image={image}
-  theme="geoengineering-detail"
+  theme="terraforming-detail"
 >
   <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
     <img src={geoSectionSrc} alt="" width="1920" height="1280" />
@@ -40,7 +40,7 @@ const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
     <div class="wildlife-page-hero-shade geo-hero-shade"></div>
     <div class="wrap wildlife-page-hero-copy">
       <p>
-        <a class="maps-back" href={localizePath('/geoengineering', locale)}>{page.back}</a>
+        <a class="maps-back" href={localizePath('/terraforming', locale)}>{page.back}</a>
         {' · '}
         <a class="maps-back" href={shelfHref}>{page.shelves[item.shelf]}</a>
       </p>

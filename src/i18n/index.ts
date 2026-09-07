@@ -52,4 +52,4 @@ export {
   getGeoProjects,
   getGeoProjectsByShelf,
   geoShelfKeys,
-} from './geoengineering';
+} from './terraforming';

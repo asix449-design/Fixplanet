@@ -6,12 +6,12 @@ import {
   type GeoProject,
   type GeoShelf,
   type GeoStatus,
-} from '../data/geoengineering';
+} from '../data/terraforming';
 import type { Locale } from './config';
-import { en } from './geoengineering-en';
-import { lv as lvEntries } from './geoengineering-lv';
-import { pl as plEntries } from './geoengineering-pl';
-import { ru as ruEntries } from './geoengineering-ru';
+import { en } from './terraforming-en';
+import { lv as lvEntries } from './terraforming-lv';
+import { pl as plEntries } from './terraforming-pl';
+import { ru as ruEntries } from './terraforming-ru';
 
 export type GeoPage = {
   metaTitle: string;
@@ -45,16 +45,16 @@ export type GeoPage = {
 };
 
 const pageEn: GeoPage = {
-  metaTitle: 'Geoengineering — Fix Planet',
+  metaTitle: 'Terraforming — Fix Planet',
   metaDescription:
     'A curated catalog of landscape megaprojects and a smaller shelf of climate-intervention proposals: what was planned, what was built, why it stalled, with sources.',
   eyebrow: 'Failure archaeology',
-  title: 'Geoengineering',
-  lead: 'The public word often means climate geoengineering. This catalog is mostly something older and heavier: canals, inland seas, desert walls of trees. A smaller shelf holds climate interventions so the terms stay apart.',
+  title: 'Terraforming',
+  lead: 'This catalog is mostly landscape megaprojects — canals, inland seas, desert walls of trees — terraforming Earth at human scale. A smaller shelf holds climate geoengineering so those proposals stay labeled and apart.',
   honesty:
     'Every card names a jurisdiction, years, a status, and sources. Status is proposed, partial, built and struggling, failed, ongoing, or research — not a pitch deck. We do not invent hectare counts, collapse dates, or “all the trees died on Tuesday.” Mixed evidence is written as mixed.',
   naming:
-    '“Geoengineering” in headlines usually means solar or marine climate hacks. Here it is the nav label for Earth-transformation megaprojects. Climate intervention sits on its own shelf and is not sold as a ready fix.',
+    'The catalog is called Terraforming because the cards are primarily Earth-transformation megaprojects. Climate geoengineering — solar and marine interventions — sits on its own shelf and is not sold as a ready fix.',
   filterAria: 'Filter projects by shelf',
   chooseShelf: 'Choose a shelf',
   tiles: {
@@ -64,7 +64,7 @@ const pageEn: GeoPage = {
   },
   all: 'All',
   cardCta: 'Read the card →',
-  back: '← Geoengineering',
+  back: '← Terraforming',
   plan: 'The plan',
   construction: 'Construction / status',
   outcome: 'What went wrong — or only partly worked',
@@ -103,16 +103,16 @@ const pageEn: GeoPage = {
 };
 
 const pageRu: GeoPage = {
-  metaTitle: 'Геоинженерия — Fix Planet',
+  metaTitle: 'Терраформинг — Fix Planet',
   metaDescription:
     'Каталог ландшафтных мегапроектов и отдельная полка климатических вмешательств: что планировали, что построили, почему застопорилось — с источниками.',
   eyebrow: 'Археология провалов',
-  title: 'Геоинженерия',
-  lead: 'В заголовках это слово чаще значит климатическую геоинженерию. Здесь каталог в основном о другом: каналы, внутренние моря, стены деревьев. Климатические вмешательства стоят на отдельной полке, чтобы термины не смешивались.',
+  title: 'Терраформинг',
+  lead: 'Этот каталог в основном о ландшафтных мегапроектах: каналы, внутренние моря, стены деревьев — терраформинг Земли в человеческом масштабе. Климатическая геоинженерия стоит на отдельной полке, чтобы термины не смешивались.',
   honesty:
     'На каждой карточке — юрисдикция, годы, статус и источники. Статус: предложен, частичный, построен и буксует, провален, идёт, исследование — не презентация для инвесторов. Мы не выдумываем гектары, даты «всё погибло» и мультяшный рок. Смешанные данные так и написаны.',
   naming:
-    '«Геоинженерия» в новостях обычно про солнце и океан как климатический рычаг. Здесь это пункт меню для мегапроектов преобразования Земли. Климатическое вмешательство — отдельная полка и не продаётся как готовое решение.',
+    'Каталог называется «Терраформинг», потому что карточки — прежде всего мегапроекты преобразования ландшафта. Климатическая геоинженерия (солнечные и морские вмешательства) — отдельная полка и не продаётся как готовое решение.',
   filterAria: 'Фильтр проектов по полке',
   chooseShelf: 'Выберите полку',
   tiles: {
@@ -122,7 +122,7 @@ const pageRu: GeoPage = {
   },
   all: 'Все',
   cardCta: 'Читать карточку →',
-  back: '← Геоинженерия',
+  back: '← Терраформинг',
   plan: 'Замысел',
   construction: 'Строительство / статус',
   outcome: 'Что пошло не так — или сработало лишь частично',
@@ -161,16 +161,16 @@ const pageRu: GeoPage = {
 };
 
 const pagePl: GeoPage = {
-  metaTitle: 'Geoinżynieria — Fix Planet',
+  metaTitle: 'Terraformowanie — Fix Planet',
   metaDescription:
     'Katalog megaprojektów krajobrazowych i osobna półka interwencji klimatycznych: co planowano, co zbudowano, dlaczego stanęło — ze źródłami.',
   eyebrow: 'Archeologia porażek',
-  title: 'Geoinżynieria',
-  lead: 'W nagłówkach to słowo zwykle znaczy geoinżynierię klimatu. Ten katalog jest głównie o czymś starszym: kanały, morza śródlądowe, mury drzew. Interwencje klimatyczne stoją na osobnej półce, żeby pojęć nie mieszać.',
+  title: 'Terraformowanie',
+  lead: 'Ten katalog jest głównie o megaprojektach krajobrazowych: kanały, morza śródlądowe, mury drzew — terraformowanie Ziemi w skali człowieka. Geoinżynieria klimatu stoi na osobnej półce, żeby pojęć nie mieszać.',
   honesty:
     'Każda karta ma jurysdykcję, lata, status i źródła. Status: zaproponowany, częściowy, zbudowany i w tarapatach, nieudany, trwający albo badania — nie pitch. Nie zmyślamy hektarów ani daty, w której „wszystkie lasy padły”. Mieszane dowody zostają mieszane.',
   naming:
-    '„Geoinżynieria” w mediach to zwykle haki słoneczne albo morskie. Tutaj to etykieta menu dla megaprojektów przekształcania Ziemi. Interwencja klimatyczna ma własną półkę i nie jest sprzedawana jako gotowa naprawa.',
+    'Katalog nazywa się Terraformowanie, bo karty to przede wszystkim megaprojekty przekształcania Ziemi. Geoinżynieria klimatu — interwencje słoneczne i morskie — ma własną półkę i nie jest sprzedawana jako gotowa naprawa.',
   filterAria: 'Filtruj projekty według półki',
   chooseShelf: 'Wybierz półkę',
   tiles: {
@@ -180,7 +180,7 @@ const pagePl: GeoPage = {
   },
   all: 'Wszystkie',
   cardCta: 'Czytaj kartę →',
-  back: '← Geoinżynieria',
+  back: '← Terraformowanie',
   plan: 'Plan',
   construction: 'Budowa / status',
   outcome: 'Co poszło nie tak — albo zadziałało tylko częściowo',
@@ -219,16 +219,16 @@ const pagePl: GeoPage = {
 };
 
 const pageLv: GeoPage = {
-  metaTitle: 'Ģeoinženierija — Fix Planet',
+  metaTitle: 'Terraformēšana — Fix Planet',
   metaDescription:
     'Kurēts ainavu megaprojektu katalogs un atsevišķs plaukts klimata iejaukšanās priekšlikumiem: kas tika plānots, kas uzbūvēts, kāpēc apstājās — ar avotiem.',
   eyebrow: 'Izgāšanās arheoloģija',
-  title: 'Ģeoinženierija',
-  lead: 'Virsrakstos šis vārds parasti nozīmē klimata ģeoinženieriju. Šis katalogs pārsvarā ir par kaut ko vecāku: kanāli, iekšzemes jūras, koku sienas. Klimata iejaukšanās stāv atsevišķā plauktā, lai terminus nesajauktu.',
+  title: 'Terraformēšana',
+  lead: 'Šis katalogs pārsvarā ir par ainavu megaprojektiem: kanāli, iekšzemes jūras, koku sienas — Zemes terraformēšana cilvēka mērogā. Klimata ģeoinženierija stāv atsevišķā plauktā, lai terminus nesajauktu.',
   honesty:
     'Katrā kartītē ir jurisdikcija, gadi, statuss un avoti. Statuss: ierosināts, daļējs, uzbūvēts un buksē, izgāzies, notiek vai pētījums — ne investoru stāsts. Mēs neizdomājam hektārus un datumu, kad «visi koki nomira». Jaukti pierādījumi paliek jaukti.',
   naming:
-    '«Ģeoinženierija» ziņās parasti ir Saules vai okeāna klimata sviras. Šeit tas ir izvēlnes vārds Zemes pārveides megaprojektiem. Klimata iejaukšanās ir savs plaukts un netiek pārdota kā gatavs risinājums.',
+    'Katalogs saucas Terraformēšana, jo kartītes ir vispirms Zemes pārveides megaprojekti. Klimata ģeoinženierija — Saules un okeāna iejaukšanās — ir savs plaukts un netiek pārdota kā gatavs risinājums.',
   filterAria: 'Filtrēt projektus pēc plaukta',
   chooseShelf: 'Izvēlies plauktu',
   tiles: {
@@ -238,7 +238,7 @@ const pageLv: GeoPage = {
   },
   all: 'Visi',
   cardCta: 'Lasīt kartīti →',
-  back: '← Ģeoinženierija',
+  back: '← Terraformēšana',
   plan: 'Plāns',
   construction: 'Būvniecība / statuss',
   outcome: 'Kas nogāja greizi — vai izdevās tikai daļēji',
