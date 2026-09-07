@@ -1941,8 +1941,8 @@ a.map-card:hover {
 .theme-forests .site-footer,
 .theme-law .site-footer,
 .theme-law-detail .site-footer,
-.theme-geoengineering .site-footer,
-.theme-geoengineering-detail .site-footer {
+.theme-terraforming .site-footer,
+.theme-terraforming-detail .site-footer {
   position: relative;
   z-index: 2;
 }
@@ -2762,14 +2762,14 @@ a.map-card:hover {
   }
 }
 
-/* Geoengineering — carved ochre earth / canal scar, distinct from forests fog, law parchment, innovations circuits */
-.theme-geoengineering,
-.theme-geoengineering-detail {
+/* Terraforming — carved ochre earth / canal scar, distinct from forests fog, law parchment, innovations circuits */
+.theme-terraforming,
+.theme-terraforming-detail {
   background: #140a06;
 }
 
-.theme-geoengineering .section-backdrop img,
-.theme-geoengineering-detail .section-backdrop img {
+.theme-terraforming .section-backdrop img,
+.theme-terraforming-detail .section-backdrop img {
   object-position: 48% 42%;
   filter: blur(7px) saturate(1.2) brightness(0.4) sepia(0.22);
 }
@@ -2787,7 +2787,7 @@ a.map-card:hover {
     linear-gradient(90deg, rgba(20, 8, 4, 0.28) 0%, transparent 48%);
 }
 
-.theme-geoengineering-detail .section-backdrop-subtle .geo-scrim {
+.theme-terraforming-detail .section-backdrop-subtle .geo-scrim {
   background:
     linear-gradient(
       180deg,
@@ -2797,13 +2797,13 @@ a.map-card:hover {
     );
 }
 
-.theme-geoengineering .site-header,
-.theme-geoengineering-detail .site-header {
+.theme-terraforming .site-header,
+.theme-terraforming-detail .site-header {
   background: rgba(0, 0, 0, 0.82);
 }
 
-.theme-geoengineering main,
-.theme-geoengineering-detail main {
+.theme-terraforming main,
+.theme-terraforming-detail main {
   position: relative;
   z-index: 1;
 }
@@ -2869,13 +2869,13 @@ a.map-card:hover {
     linear-gradient(90deg, rgba(14, 7, 4, 0.5) 0%, transparent 62%);
 }
 
-.theme-geoengineering-detail .wildlife-detail,
-.theme-geoengineering-detail .geo-prose {
+.theme-terraforming-detail .wildlife-detail,
+.theme-terraforming-detail .geo-prose {
   position: relative;
   z-index: 1;
 }
 
-.theme-geoengineering-detail .geo-prose {
+.theme-terraforming-detail .geo-prose {
   background: rgba(16, 10, 6, 0.92);
   color: var(--ink);
   border: 1px solid rgba(210, 140, 70, 0.22);
@@ -2884,12 +2884,12 @@ a.map-card:hover {
   box-shadow: var(--shadow);
 }
 
-.theme-geoengineering-detail .geo-prose h2,
-.theme-geoengineering-detail .geo-prose p {
+.theme-terraforming-detail .geo-prose h2,
+.theme-terraforming-detail .geo-prose p {
   color: var(--ink);
 }
 
-.theme-geoengineering-detail .geo-prose .wildlife-sources {
+.theme-terraforming-detail .geo-prose .wildlife-sources {
   color: var(--muted);
 }
 

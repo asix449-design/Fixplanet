@@ -1,5 +1,5 @@
 ---
-import GeoengineeringCard from '../components/GeoengineeringCard.astro';
+import TerraformingCard from '../components/TerraformingCard.astro';
 import HubTile from '../components/HubTile.astro';
 import SectionHub from '../components/SectionHub.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -9,7 +9,7 @@ import {
   geoShelfPath,
   isGeoShelf,
   type GeoShelf,
-} from '../data/geoengineering';
+} from '../data/terraforming';
 import { getGeoPage, getGeoProjects, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -33,7 +33,7 @@ const items = getGeoProjects(locale);
   title={page.metaTitle}
   description={page.metaDescription}
   image={geoSectionSrc}
-  theme="geoengineering"
+  theme="terraforming"
 >
   <div class="section-backdrop" aria-hidden="true">
     <img src={geoSectionSrc} alt="" width="1920" height="1280" />
@@ -55,7 +55,7 @@ const items = getGeoProjects(locale);
     }
   </SectionHub>
 
-  <section class="section section-hub-follow" id="geoengineering-list">
+  <section class="section section-hub-follow" id="terraforming-list">
     <div class="wrap wildlife-list-panel geo-list-panel">
       <div class="eyebrow geo-eyebrow">{page.eyebrow}</div>
       <h2 class="geo-page-title">{page.title}</h2>
@@ -64,11 +64,11 @@ const items = getGeoProjects(locale);
         {page.shelfLeads[activeShelf]}
       </p>
       <p class="borders-honesty geo-honesty">{page.honesty}</p>
-      <div class="card-grid cols-3" id="geoengineering-grid">
+      <div class="card-grid cols-3" id="terraforming-grid">
         {
           items.map((item) => (
             <div hidden={activeShelf !== 'all' && item.shelf !== activeShelf}>
-              <GeoengineeringCard item={item} />
+              <TerraformingCard item={item} />
             </div>
           ))
         }
@@ -94,7 +94,7 @@ const items = getGeoProjects(locale);
   };
 
   const buttons = document.querySelectorAll('[data-area]');
-  const cards = document.querySelectorAll('#geoengineering-grid > div');
+  const cards = document.querySelectorAll('#terraforming-grid > div');
   const lead = document.querySelector('[data-tab-lead]');
 
   function show(shelf) {
@@ -122,7 +122,7 @@ const items = getGeoProjects(locale);
       event.preventDefault();
       show(shelf);
       history.replaceState(null, '', hrefs[shelf]);
-      document.getElementById('geoengineering-list')?.scrollIntoView({
+      document.getElementById('terraforming-list')?.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });

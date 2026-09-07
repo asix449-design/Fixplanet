@@ -67,9 +67,10 @@ function img(
 }
 
 /**
- * Curated first Geoengineering catalog. To add a project:
+ * Curated Terraforming catalog (landscape megaprojects + a climate-intervention shelf).
+ * To add a project:
  * 1. Add a row here (English slug, shelf, status, years, image credit, source URLs).
- * 2. Add the same slug to en / ru / pl / lv in `src/i18n/geoengineering-en.ts`
+ * 2. Add the same slug to en / ru / pl / lv in `src/i18n/terraforming-en.ts`
  *    (and the locale files beside it).
  * 3. Drop a licensed image in `public/images/geoengineering/{file}` and record `credits.json`.
  * 4. `npm run build`.
@@ -463,11 +464,11 @@ export function geoImageSrc(image: ImageCredit): string {
 }
 
 export function geoShelfPath(shelf: GeoShelf | 'all'): string {
-  return shelf === 'all' ? '/geoengineering' : `/geoengineering/${shelf}`;
+  return shelf === 'all' ? '/terraforming' : `/terraforming/${shelf}`;
 }
 
 export function geoDetailPath(slug: string): string {
-  return `/geoengineering/${slug}`;
+  return `/terraforming/${slug}`;
 }
 
 export const geoSectionImage = {

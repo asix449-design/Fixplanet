@@ -1,12 +1,12 @@
 ---
-import { isGeoShelf } from '../../data/geoengineering';
 import { localeStaticPaths } from '../../i18n';
-import GeoengineeringView from '../../views/GeoengineeringView.astro';
 
 export const getStaticPaths = localeStaticPaths;
 
-const shelfParam = Astro.url.searchParams.get('shelf');
-const shelf = isGeoShelf(shelfParam ?? undefined) ? shelfParam : 'all';
+const locale = Astro.params.locale;
+const shelf = Astro.url.searchParams.get('shelf');
+const dest = shelf
+  ? `/${locale}/terraforming?shelf=${encodeURIComponent(shelf)}`
+  : `/${locale}/terraforming`;
+return Astro.redirect(dest, 301);
 ---
-
-<GeoengineeringView shelf={shelf} />

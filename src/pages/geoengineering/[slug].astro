@@ -1,8 +1,5 @@
 ---
-import { geoMeta, geoShelfKeys, isGeoShelf } from '../../data/geoengineering';
-import { getGeoBySlug, resolveLocale } from '../../i18n';
-import GeoengineeringDetailView from '../../views/GeoengineeringDetailView.astro';
-import GeoengineeringView from '../../views/GeoengineeringView.astro';
+import { geoMeta, geoShelfKeys } from '../../data/terraforming';
 
 export function getStaticPaths() {
   return [
@@ -12,14 +9,5 @@ export function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const locale = resolveLocale(Astro.currentLocale);
-const item = slug && !isGeoShelf(slug) ? getGeoBySlug(locale, slug) : undefined;
+return Astro.redirect(`/terraforming/${slug}`, 301);
 ---
-
-{
-  isGeoShelf(slug) ? (
-    <GeoengineeringView shelf={slug} />
-  ) : (
-    item && <GeoengineeringDetailView item={item} />
-  )
-}

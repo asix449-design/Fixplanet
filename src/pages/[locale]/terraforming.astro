@@ -1,0 +1,12 @@
+---
+import { isGeoShelf } from '../../data/terraforming';
+import { localeStaticPaths } from '../../i18n';
+import TerraformingView from '../../views/TerraformingView.astro';
+
+export const getStaticPaths = localeStaticPaths;
+
+const shelfParam = Astro.url.searchParams.get('shelf');
+const shelf = isGeoShelf(shelfParam ?? undefined) ? shelfParam : 'all';
+---
+
+<TerraformingView shelf={shelf} />
