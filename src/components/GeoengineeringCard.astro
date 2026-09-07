@@ -1,0 +1,44 @@
+---
+import type { GeoProject } from '../data/geoengineering';
+import { geoDetailPath, geoImageSrc } from '../data/geoengineering';
+import { getGeoPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: GeoProject;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getGeoPage(locale);
+const { item } = Astro.props;
+const href = localizePath(geoDetailPath(item.slug), locale);
+---
+
+<article
+  class="wildlife-card-wrap"
+  data-geo-shelf={item.shelf}
+  data-slug={item.slug}
+>
+  <a class:list={['wildlife-card', 'geo-card', `geo-card-${item.status}`]} href={href}>
+    <div class="card-art">
+      <img
+        src={geoImageSrc(item.image)}
+        alt={item.imageAlt}
+        width="640"
+        height="400"
+        loading="lazy"
+      />
+    </div>
+    <div class="card-body">
+      <div class="innovation-badges">
+        <span class="tag">{item.jurisdiction}</span>
+        <span class:list={['tag', `status-${item.status}`]}>
+          {page.status[item.status]}
+        </span>
+      </div>
+      <h3>{item.title}</h3>
+      <p class="scientific-name">{item.yearStatus}</p>
+      <p class="wildlife-hook">{item.hook}</p>
+      <span class="card-cta">{page.cardCta}</span>
+    </div>
+  </a>
+</article>

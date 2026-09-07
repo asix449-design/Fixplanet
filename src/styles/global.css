@@ -147,7 +147,7 @@ p:last-child {
 .nav {
   display: flex;
   align-items: center;
-  gap: 1.35rem;
+  gap: 1.05rem;
   margin-left: auto;
 }
 
@@ -219,9 +219,9 @@ p:last-child {
 .nav > a {
   color: var(--cream);
   text-decoration: none;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -1295,6 +1295,31 @@ a.wildlife-card:hover {
   color: #d2c8b0;
 }
 
+.status-proposed {
+  background: rgba(255, 255, 255, 0.08);
+  color: #d8c8a8;
+}
+
+.status-partial {
+  background: rgba(232, 180, 74, 0.16);
+  color: #e8c06a;
+}
+
+.status-built-struggling {
+  background: rgba(255, 120, 40, 0.16);
+  color: #ffb06a;
+}
+
+.status-failed {
+  background: rgba(255, 74, 18, 0.14);
+  color: #ff9a7a;
+}
+
+.status-ongoing {
+  background: rgba(192, 255, 0, 0.16);
+  color: var(--lime);
+}
+
 .wildlife-detail {
   display: grid;
   grid-template-columns: 0.95fr 1.15fr;
@@ -1915,7 +1940,9 @@ a.map-card:hover {
 .theme-innovations-detail .site-footer,
 .theme-forests .site-footer,
 .theme-law .site-footer,
-.theme-law-detail .site-footer {
+.theme-law-detail .site-footer,
+.theme-geoengineering .site-footer,
+.theme-geoengineering-detail .site-footer {
   position: relative;
   z-index: 2;
 }
@@ -2735,6 +2762,157 @@ a.map-card:hover {
   }
 }
 
+/* Geoengineering — carved ochre earth / canal scar, distinct from forests fog, law parchment, innovations circuits */
+.theme-geoengineering,
+.theme-geoengineering-detail {
+  background: #140a06;
+}
+
+.theme-geoengineering .section-backdrop img,
+.theme-geoengineering-detail .section-backdrop img {
+  object-position: 48% 42%;
+  filter: blur(7px) saturate(1.2) brightness(0.4) sepia(0.22);
+}
+
+.geo-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(18, 8, 4, 0.76) 0%,
+      rgba(18, 8, 4, 0.5) 20%,
+      rgba(8, 5, 4, 0.8) 52%,
+      rgba(8, 5, 4, 0.94) 76%,
+      rgba(8, 5, 4, 0.98) 100%
+    ),
+    linear-gradient(90deg, rgba(20, 8, 4, 0.28) 0%, transparent 48%);
+}
+
+.theme-geoengineering-detail .section-backdrop-subtle .geo-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 5, 4, 0.84) 0%,
+      rgba(8, 5, 4, 0.93) 38%,
+      rgba(8, 5, 4, 0.97) 100%
+    );
+}
+
+.theme-geoengineering .site-header,
+.theme-geoengineering-detail .site-header {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.theme-geoengineering main,
+.theme-geoengineering-detail main {
+  position: relative;
+  z-index: 1;
+}
+
+.geo-list-panel {
+  background: rgba(16, 10, 6, 0.9);
+  border-color: rgba(210, 140, 70, 0.22);
+}
+
+.geo-eyebrow {
+  color: #e8b86a;
+}
+
+.geo-page-title {
+  font-size: clamp(1.8rem, 3.6vw, 2.5rem);
+  margin: 0.2rem 0 0.7rem;
+}
+
+.geo-naming {
+  max-width: 46rem;
+  color: #e8d8c0;
+  margin: 0 0 0.9rem;
+}
+
+.geo-honesty {
+  margin: 0 0 1.4rem;
+  max-width: none;
+  background: rgba(210, 140, 70, 0.08);
+  border-color: rgba(210, 140, 70, 0.28);
+  border-left-color: #d48a3c;
+}
+
+.geo-card {
+  border-left-color: #d48a3c;
+}
+
+.geo-card-research {
+  border-left-style: dashed;
+  border-left-color: #7ec8d4;
+}
+
+.geo-card-proposed {
+  border-left-style: dashed;
+  border-left-color: #d2c8a8;
+}
+
+.geo-card-failed {
+  border-left-color: #ff7a4a;
+}
+
+.geo-hero-media img {
+  object-position: 46% 40%;
+}
+
+.geo-hero-shade {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(18, 8, 4, 0.4) 0%,
+      rgba(16, 8, 4, 0.6) 44%,
+      rgba(14, 7, 4, 0.86) 100%
+    ),
+    linear-gradient(90deg, rgba(14, 7, 4, 0.5) 0%, transparent 62%);
+}
+
+.theme-geoengineering-detail .wildlife-detail,
+.theme-geoengineering-detail .geo-prose {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-geoengineering-detail .geo-prose {
+  background: rgba(16, 10, 6, 0.92);
+  color: var(--ink);
+  border: 1px solid rgba(210, 140, 70, 0.22);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.theme-geoengineering-detail .geo-prose h2,
+.theme-geoengineering-detail .geo-prose p {
+  color: var(--ink);
+}
+
+.theme-geoengineering-detail .geo-prose .wildlife-sources {
+  color: var(--muted);
+}
+
+.geo-banner {
+  margin: 0.85rem 0 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.geo-banner-research {
+  background: rgba(80, 180, 200, 0.1);
+  border: 1px dashed #7ec8d4;
+  color: #c8eef4;
+}
+
+.geo-banner-proposed {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed #d2c8a8;
+  color: #e8dcc0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -2745,6 +2923,7 @@ a.map-card:hover {
   .wildlife-card,
   .innovation-card,
   .law-card,
+  .geo-card,
   .map-card,
   .hub-tile {
     transition: none;

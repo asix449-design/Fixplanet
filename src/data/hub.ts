@@ -15,4 +15,5 @@ export type HubIconName =
   | 'wave'
   | 'grid'
   | 'alert'
-  | 'gone';
+  | 'gone'
+  | 'terrain';
