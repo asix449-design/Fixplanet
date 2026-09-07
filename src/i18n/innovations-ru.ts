@@ -14,8 +14,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Climeworks (Швейцария) эксплуатирует Orca и Mammoth в Исландии вместе с ON Power и Carbfix. Минэнерго США также финансировало гораздо более крупные концепции DAC-«хабов» (включая Project Cypress с Climeworks, Battelle и Heirloom); это планы, а не работающие мегатонные заводы.',
     risks:
       'DAC прожорлив по энергии. Если тепло и электричество ископаемые, чистое изъятие сжимается или обнуляется. Кредиты можно продать быстрее, чем тонны окажутся в хранилище. Первый год Mammoth показал: «в сети» — не то же самое, что паспорт. Это пилотная отрасль, не замена сокращению выбросов.',
-    sources:
-      'Climeworks, “Climeworks switches on world’s largest DAC plant,” 8 May 2024 (Mammoth start; 36,000 t/yr nameplate; 12 of 72 containers at start). Orca start 2021. IEA Direct Air Capture tracking. ThinkGeoEnergy coverage of the geothermal-powered site.',
+    sourcesNote:
+      'Официальная страница Mammoth и релиз от 8 мая 2024; трекинг DAC МЭА. Паспорт — не сданные тонны.',
   },
   'northern-lights-ccs': {
     title: 'Northern Lights — CCS с точечных источников',
@@ -30,8 +30,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Совместное предприятие Equinor, Shell и TotalEnergies при государственной поддержке Норвегии в рамках Longship. Ранний источник выбросов: Heidelberg Materials Brevik. Другие европейские промышленные клиенты законтрактованы или на переговорах.',
     risks:
       'Улавливание на заводе — дорогой и трудный шаг; хранение полезно, только если захват реально идёт. Утечки, энергетический штраф и использование CCS, чтобы растянуть ископаемое производство, — настоящие споры. Миллион тонн — серьёзная инженерия и всё равно мало рядом с национальными инвентаризациями.',
-    sources:
-      'Northern Lights JV project pages; Norwegian government Longship briefings; 2025 operational start reporting (first stored industrial CO₂, August 2025); Heidelberg Materials Brevik CCS.',
+    sourcesNote:
+      'Страницы СП Northern Lights; заметка Equinor о первом хранении (25 августа 2025); брифинг Longship / CCS Norway.',
   },
   'carbfix-mineralization': {
     title: 'Carbfix — CO₂ в камень',
@@ -45,8 +45,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Carbfix (линия Reykjavík Energy / ON Power) на Хедлисхейди; партнёр по хранению для Climeworks Orca и Mammoth. Статьи Matter, Oelkers, Gíslason и коллег задокументировали ранние закачки.',
     risks:
       'Нужно много воды и подходящая порода. Масштаб за пределами Исландии — задача геологии не меньше, чем инженерии. Метод хранит уже уловленный углерод — сам по себе он не вытягивает CO₂ из неба.',
-    sources:
-      'Matter et al., Science, 2016 (rapid mineralization at Hellisheiði); Carbfix technical pages; Climeworks–Carbfix partnership notes.',
+    sourcesNote:
+      'Сайт Carbfix; Matter et al., Science, 2016 — более 95% закачанного CO₂ минерализовалось менее чем за два года в Хедлисхейди.',
   },
   'precision-fermentation': {
     title: 'Прецизионная ферментация',
@@ -60,8 +60,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Perfect Day (США) — молочные белки; Solar Foods (Финляндия) — Solein; много других стартапов по гему, казеину и жирам. Регуляторы (FDA GRAS, правила novel food в ЕС и Сингапуре) решают, что можно продавать.',
     risks:
       'Цена, принятие потребителем и скрытая земля в цепочке сахара. Это не решение голода и не замена каждой ферме. Это способ сделать несколько климатически весомых ингредиентов без животного.',
-    sources:
-      'Perfect Day product and GRAS materials; Solar Foods / Solein regulatory notices; FAO and Poore & Nemecek 2018 for livestock land and emissions context (order-of-magnitude, not a product claim).',
+    sourcesNote:
+      'Официальные сайты Perfect Day и Solar Foods / Solein. Контекст земли под скот — отдельная литература, не претензия продукта.',
   },
   'coral-restoration': {
     title: 'Технологии восстановления кораллов',
@@ -75,8 +75,8 @@ export const ru: Record<string, InnovationCopy> = {
       'SECORE International; Mars Sustainable Solutions (MARRS) в Индонезии и в других местах; Coral Vita (береговое выращивание, Багамы); государственные и НКО-питомники по Карибам, Тихому океану и Коралловому треугольнику. NOAA и ICRI публикуют методы и пределы.',
     risks:
       'Высадки гибнут в следующей волне жары, если вода остаётся слишком тёплой. Восстановление — не лицензия продолжать выбрасывать. Генетика, болезни и выгорание волонтёров — обычные причины провала. Каждое «мы восстановили риф» читайте как участок, не как биом.',
-    sources:
-      'NOAA Coral Reef Conservation Program; SECORE methods; Mars MARRS project descriptions; IPCC AR6 ocean and cryosphere / WGII reef findings; 2023–2024 global bleaching updates from NOAA Coral Reef Watch.',
+    sourcesNote:
+      'NOAA Coral Reef Conservation Program и Coral Reef Watch; методы SECORE. Восстановление локально; правит жара.',
   },
   'nano-water-membranes': {
     title: 'Мембраны из наноматериалов',
@@ -90,8 +90,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Работы по графену Университета Манчестера; мембранные программы NREL и национальных лабораторий; компании, делающие тонкоплёночный нанокомпозитный обратный осмос (скромный, но реальный класс изделий). Заголовки «графен опреснит мир» читайте как надежду, не как складской учёт.',
     risks:
       'Масштаб от квадратного сантиметра плёнки до завода на квадратный километр, плюс хлор, биоплёнка и цена. Безопасность наноматериалов в контакте с питьевой водой требует регулирования, не лозунгов.',
-    sources:
-      'Reviews in Nature Nanotechnology and Science on graphene-oxide and CNT membranes; NREL membrane research pages; typical commercial RO is still polyamide (standard water-industry texts).',
+    sourcesNote:
+      'Nair et al., Nature, 2012; Abraham et al., Nature Nanotechnology, 2017. Промышленный RO по-прежнему полиамид.',
   },
   'carbios-enzymes': {
     title: 'Ферменты, расщепляющие пластик — Carbios',
@@ -105,8 +105,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Carbios (Франция) и партнёры (включая переговоры о лицензиях в Азии). Академическая инженерия PETase продолжается во многих лабораториях после Yoshida et al. 2016. Системы сбора остаются муниципальными и брендовыми — узкое место не реже, чем сам фермент.',
     risks:
       'Сырьё должно быть относительно чистым ПЭТ. Смешанный пластик по-прежнему выигрывает тем, что его дёшево закопать или сжечь. Задержки завода нормальны для переработки первого в своём роде. Не путайте демонстрационный реактор с решённым кризисом отходов.',
-    sources:
-      'Yoshida et al., Science, 2016 (Ideonella sakaiensis PETase); Carbios plant and financing releases (Longlaville capacity ~50 kt/yr; 2026 financing updates; earlier H1 2028 production talk).',
+    sourcesNote:
+      'Yoshida et al., Science, 2016; страницы Carbios. Longlaville на август 2026 всё ещё упирается в финансирование — не работающий завод.',
   },
   'methane-feed-additive': {
     title: 'Кормовая добавка против метана (Bovaer)',
@@ -120,8 +120,8 @@ export const ru: Record<string, InnovationCopy> = {
       'dsm-firmenich (разработчик); Elanco (коммерциализация в Северной Америке); молочные кооперативы, пробующие выплаты за углеродные инсеты (insetting). Другие метановые инструменты (водоросль asparagopsis, конкуренты 3-NOP) идут параллельными испытаниями.',
     risks:
       'Цена против цены молока; недоверие публики; соблазн назвать срезание на 30% «климатически нейтральной говядиной». Утечка, если стада растут. У водорослевых добавок свои вопросы по брому и поставкам — эта карточка про 3-NOP, не про каждое кормовое заявление.',
-    sources:
-      'EU authorization of 3-NOP (2022); Elanco / FDA CVM review completion, 28 May 2024 (~30% methane reduction claim in company and dossier materials); dsm-firmenich Bovaer science pages; peer-reviewed 3-NOP meta-analyses.',
+    sourcesNote:
+      'Регламент ЕС 2022/565; заметка dsm-firmenich о разборе FDA в мае 2024. Около 30% кишечного метана у молочных при маркированной дозе — цифра досье, не «климатически нейтральная говядина».',
   },
   'iter-fusion': {
     title: 'ITER — термоядерный синтез с магнитным удержанием',
@@ -135,8 +135,8 @@ export const ru: Record<string, InnovationCopy> = {
       'ITER Organization и семь участников. Частные фирмы токамаков и стеллараторов (Commonwealth Fusion, Tokamak Energy и другие) живут на более быстрых и рискованных часах; они не ITER и не работающие энергокомпании.',
     risks:
       'Стоимость, поставки трития, материалы под нейтронами 14 МэВ и график. Успех ITER всё равно оставит спроектировать демонстрационную электростанцию. Провал не остановит частные эксперименты, но закроет публичный путь.',
-    sources:
-      'ITER Organization FAQs and Council baseline notes; U.S. Congressional Research Service, ITER overview (schedule and cost history); IEA fusion tracking. Do not cite first-plasma-2025 as current.',
+    sourcesNote:
+      'Сайт и FAQ ITER. Дата первой плазмы 2025 из базовой линии 2016 устарела; поздние планы указывают на исследовательскую работу в 2030-х.',
   },
   'nif-inertial-fusion': {
     title: 'NIF — зажигание инерциального синтеза',
@@ -150,8 +150,8 @@ export const ru: Record<string, InnovationCopy> = {
       'LLNL / NNSA (NIF). Частные фирмы IFE (например Focused Energy, Xcimer, Marvel Fusion и другие) пробуют более эффективные лазеры или другие драйверы. DOE после зажигания перезапустил согласованную программу IFE.',
     risks:
       'Путать усиление на мишени с усилением станции. Приоритеты оружейной лаборатории. Изготовление мишеней в темпе электростанции не решено. Честный разговор: «зажигание случилось» и «коммерческого IFE нет».',
-    sources:
-      'LLNL / DOE ignition announcement, 13 December 2022 (shot of 5 December 2022; 2.05 MJ in, 3.15 MJ out); subsequent LLNL shot updates; DOE IFE program notes.',
+    sourcesNote:
+      'Страница воспламенения LLNL; объявление DOE 13 декабря 2022 (выстрел 5 декабря 2022: около 2,05 МДж на мишень, 3,15 МДж выхода синтеза). Коэффициент мишени — не коэффициент станции.',
   },
   'fervo-geothermal': {
     title: 'Стимулированная геотермия — Fervo',
@@ -166,8 +166,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Fervo Energy (США); Google как ранний покупатель; другие фирмы EGS и продвинутой геотермии (замкнутые петли Eavor, государственная площадка FORGE в Юте). Традиционные гидротермальные станции по-прежнему дают большую часть геотермальных мегаватт в мире.',
     risks:
       'Цена бурения, толчки, расход воды и обычные задержки первого в своём роде. Удачный пилот — не тераватт. Геология разная; скважина в Неваде — не мировой шаблон.',
-    sources:
-      'Fervo / Google Project Red announcements (2023 electricity); Fervo Cape Station materials; 26 August 2026 Fervo–Google PPA disclosure for Cape capacity (target commercial operation from 2028 — a contract, not electrons yet).',
+    sourcesNote:
+      'Заметки Fervo и Google о Project Red (электричество в 2023). Поздние PPA Cape Station — контракты на конец десятилетия, не электроны.',
   },
   'long-duration-storage': {
     title: 'Долговременные накопители',
@@ -181,8 +181,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Form Energy; поставщики проточных батарей (UniEnergy / последующие химии, Invinity и другие); сжатый воздух и тепловое хранение как небатарейные родичи. Программы LDES МЭА и DOE отслеживают отрасль.',
     risks:
       'Потери цикла, площадки и вопрос, не дешевле ли водород или больше линий. Не считайте анонсированные гигафабрики уже поставленными МВт·ч. Литий остаётся рабочей лошадью короткой длительности.',
-    sources:
-      'Form Energy technology and utility-pilot pages; UniEnergy Turner project (Commons photo of a real 1 MW / 4 MWh flow system); IEA Grid-Scale Storage and LDES Council overviews.',
+    sourcesNote:
+      'Страницы технологии Form Energy; трекинг накопителей МЭА. Объявленные многодневные установки — не сданные МВт·ч.',
   },
   'green-hydrogen': {
     title: 'Зелёный водород',
@@ -196,8 +196,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Трекинг водорода МЭА; производители электролизёров (Nel, ITM, Thyssenkrupp Nucera и другие); промышленные покупатели в стали и аммиаке. Многие «водородные долины» всё ещё зависят от грантов.',
     risks:
       'Утечки (водород — косвенный парниковый газ), хайп подмешивания в газовые сети и грязное электричество под ярлыком «зелёного» топлива. Считайте тонны с дополнительных ВИЭ, не пресс-релизы.',
-    sources:
-      'IEA Global Hydrogen Review; IEA “The Future of Hydrogen”; typical well-to-wheel loss discussions in Royal Society and ICCT hydrogen briefs.',
+    sourcesNote:
+      'Тема водорода МЭА и Global Hydrogen Review. Считайте тонны с дополнительной низкоуглеродной энергии, не пресс-релизы.',
   },
   'smr-nuclear': {
     title: 'Модульные и перспективные реакторы',
@@ -211,14 +211,14 @@ export const ru: Record<string, InnovationCopy> = {
       'China National Nuclear / Tsinghua INET (HTR-PM); NuScale, GE Hitachi BWRX-300, Rolls-Royce SMR и другие в лицензировании. Полярные и промышленные потребители тепла — клиенты на слайдах.',
     risks:
       'Отходы, распространение, перерасход и слово «модульный» как лозунг для станции, которая всё ещё большой стройпроект. Один китайский демонстратор не делает мировой флот. Не склеивайте SMR с синтезом или с мошенническими батареями.',
-    sources:
-      'World Nuclear Association and Modern Power Systems on HTR-PM commercial operation (December 2023); NuScale / UAMPS cancellation, November 2023; IAEA SMR booklet; NRC NuScale design certification.',
+    sourcesNote:
+      'Tsinghua и World Nuclear News о коммерческом пуске HTR-PM (декабрь 2023); страница SMR МАГАТЭ. Один китайский демонстратор — не западный флот.',
   },
   'space-solar-power': {
     title: 'Космическая солнечная энергетика',
     hook: 'Демонстрация Caltech 2023 года передала струйку мощности с орбиты. Физика работает; экономика — вопрос.',
     imageAlt: 'Солнечные батареи Международной космической станции — ближайший рабочий родич предлагаемых энергоспутников',
-    what: 'Космическая солнечная энергетика (SBSP) собирала бы солнечный свет на орбите и слала энергию на Землю микроволнами или лазерами. В январе 2023-го эксперимент MAPLE проекта Caltech на миссии SSPD-1 показал беспроводную передачу мощности с орбиты на Землю — милливатты, не мегаватты. Исследование ESA SOLARIS и микроволновые работы JAXA — публичные исследовательские линии. Это не электростанция.',
+    what: 'Космическая солнечная энергетика (SBSP) собирала бы солнечный свет на орбите и слала энергию на Землю микроволнами или лазерами. SSPD-1 Caltech стартовал в январе 2023-го; MAPLE показал беспроводную передачу мощности на орбите — и детектируемую струйку на Земле — в марте 2023-го. Милливатты, не мегаватты. Исследование ESA SOLARIS и микроволновые работы JAXA — публичные исследовательские линии. Это не электростанция.',
     problem:
       'Ночь и погода ограничивают наземное солнце. Орбита видит Солнце большую часть времени. Загвоздка — масса запуска, сборка, безопасность луча и стоимость каждого килограмма.',
     how: 'Большая фотоэлектрическая или концентраторная решётка питает фазированный передатчик. Ректенна на земле превращает луч в электричество. КПД и земля под ректенну — обычная инженерия; дешёвый частый тяжёлый вывоз — пока нет.',
@@ -226,8 +226,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Caltech Space Solar Power Project (MAPLE / SSPD-1, 2023); ESA SOLARIS; давние микроволновые демонстрации JAXA; несколько стартапов. NASA и МЭА считают SBSP разведкой, не клином 2030 года.',
     risks:
       'Цена за ватт, орбитальный мусор, управление лучом и слайды научной фантастики. Удачная демонстрация на милливаттах — не тераваттная отрасль. Держите эту карточку рядом с синтезом: серьёзное исследование, не домашний генератор.',
-    sources:
-      'Caltech MAPLE / SSPD-1 January 2023 release; ESA SOLARIS pages; JAXA wireless-power research summaries.',
+    sourcesNote:
+      'Релиз Caltech SSPD-1 / MAPLE (запуск январь 2023; демо MAPLE март 2023); ESA SOLARIS.',
   },
   'nano-electrolyzer-catalysts': {
     title: 'Наноструктурированные катализаторы электролизёров',
@@ -241,8 +241,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Группы материалов водорода и топливных элементов NREL; промышленные сборщики стеков со страниц электролизёров МЭА; академические группы, публикующиеся в Nature Energy и Joule.',
     risks:
       'Лабораторная плотность тока, которая умирает за 100 часов. Патентный туман. Путать статью о катализаторе с гигаваттной фабрикой.',
-    sources:
-      'NREL electrolyzer materials pages; IEA Electrolysers tracking; reviews of Ir-thrift PEM catalysts in Nature Energy / Chemical Reviews (field, not a single miracle paper).',
+    sourcesNote:
+      'Страницы водорода NREL; трекинг электролизёров МЭА. Статья о катализаторе — не гигаваттная фабрика.',
   },
   'perpetual-motion': {
     title: 'Вечный двигатель — почему не работает',
@@ -256,14 +256,14 @@ export const ru: Record<string, InnovationCopy> = {
       'Признанной лаборатории нет. Патентные ведомства давно отклоняют заявки на вечный двигатель без рабочей модели. Настоящие исследования обильной энергии — на других карточках этого раздела «Энергия»: ITER, NIF, стимулированная геотермия, долговременное хранение, водород (с названными потерями), модульные реакторы и космос.',
     risks:
       'Потерянные деньги, потерянное время и политический шум, который топит работу, которая реально существует. Набор «бесплатной энергии» — не решение.',
-    sources:
-      'Standard thermodynamics (first and second laws); U.S. USPTO perpetual-motion practice; IEA pages on fusion, geothermal, storage, hydrogen, and nuclear as the real research set.',
+    sourcesNote:
+      'Практика USPTO отклоняет заявки на вечный двигатель без рабочей модели. Термодинамика не опциональна. Настоящие исследования энергии — на других карточках раздела.',
   },
   'graphcast-ai-weather': {
     title: 'ИИ-модели погоды — GraphCast',
     hook: 'Графовая нейронная сеть уже соперничает с классическими среднесрочными прогнозами — и ей по-прежнему нужны спутники.',
     imageAlt: 'Полнодисковый снимок Земли с GOES-16 — наблюдения, на которых ИИ-модели погоды учатся и работают',
-    what: 'GraphCast (Google DeepMind, Nature, 2023) — модель машинного обучения, которая предсказывает глобальную погоду примерно на десять дней вперёд по графу атмосферы, обученная на реанализе ECMWF. FourCastNet (NVIDIA) и Pangu-Weather (Huawei) — родичи. Метеослужбы теперь считают такие модели рядом с физическими кодами, а не вместо них.',
+    what: 'GraphCast (Google DeepMind, Science, 2023) — модель машинного обучения, которая предсказывает глобальную погоду примерно на десять дней вперёд по графу атмосферы, обученная на реанализе ECMWF. FourCastNet (NVIDIA) и Pangu-Weather (Huawei) — родичи. Метеослужбы теперь считают такие модели рядом с физическими кодами, а не вместо них.',
     problem:
       'Погода и сезонный риск ведут фермы, сети и реагирование на катастрофы. Более быстрые и дешёвые прогнозы помогают — особенно там, где суперкомпьютеров мало. Климатические изменения по-прежнему требуют физических моделей медленного океана и льда; 10-дневный ML-прогноз — не проекция на 2100 год.',
     how: 'Модель выучивает соответствия прошлых состояний будущим. Она не «понимает» гидродинамику; она её приближает. Навык меряют против анализа ECMWF, не против пресс-демо. Когда мир обучения сдвигается, модель может ломаться по-новому.',
@@ -271,8 +271,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Google DeepMind; ECMWF (данные и сравнение); NVIDIA FourCastNet; Huawei Pangu-Weather; национальные метеослужбы, испытывающие ML-ядра.',
     risks:
       'Чрезмерное доверие, слабые экстремумы и пропуск наблюдательной системы (спутники, радиозонды), которая делает любую модель честной. ИИ-погода — инфраструктура, не чат-бот.',
-    sources:
-      'Lam et al., Nature, 14 November 2023 (GraphCast); Pathak et al., FourCastNet (2022); Bi et al., Pangu-Weather (2023); ECMWF ML partnership notes.',
+    sourcesNote:
+      'Lam et al., Science, 14 ноября 2023 (GraphCast); страница DeepMind. Навык меряют по системам ECMWF, не по пресс-демо.',
   },
   'gnome-materials': {
     title: 'GNoME — ИИ для материалов',
@@ -286,23 +286,23 @@ export const ru: Record<string, InnovationCopy> = {
       'Google DeepMind; Lawrence Berkeley National Laboratory / Materials Project; другие группы фундаментных моделей материалов (Microsoft, Meta, академические лаборатории).',
     risks:
       'Раздувание числа статей, заголовки «ИИ открыл сверхпроводник» и пропуск токсичности и масштабирования. Предсказанный Li-ion катод — не гигафабрика.',
-    sources:
-      'Merchant et al., Nature, 2023 (GNoME); Materials Project documentation; commentary in Nature news on how many structures were new versus already in databases.',
+    sourcesNote:
+      'Merchant et al., Nature, 2023; страница GNoME DeepMind. Предсказанные кристаллы ещё нужно вырастить.',
   },
   'ai-grid-optimization': {
     title: 'ИИ для энергосистемы',
     hook: 'Лучшие прогнозы ветра и инструменты диспетчеризации срезают резервы. Они не заменяют трансформаторы.',
     imageAlt: 'Высоковольтные опоры ЛЭП — физическая сеть, на которой сидит ПО оптимизации',
-    what: 'Операторы сетей уже используют оптимизацию. Машинное обучение добавляет более быстрые прогнозы ветра, солнца и спроса и иногда предлагает диспетчеризацию. Работа DeepMind 2017–2019 годов с National Grid ESO в Великобритании сообщила о лучшем навыке прогноза ветра для той системы — полезный прирост, не новая сеть. Другие ISO пробуют похожие инструменты.',
+    what: 'Операторы сетей уже используют оптимизацию. Машинное обучение добавляет более быстрые прогнозы ветра, солнца и спроса и иногда предлагает диспетчеризацию. Опубликованный в 2019-м результат DeepMind касался ветроферм Google в США: нейросеть предсказывала выдачу примерно на 36 часов вперёд и подняла ценность этих мегаватт примерно на 20 процентов против обязательств без привязки ко времени. Разговоры с британской National Grid были разведкой и не стали внедрённым продуктом для сети. Другие операторы пробуют похожие инструменты.',
     problem:
       'Переменные ВИЭ требуют лучшего предсказания и более быстрого управления, иначе мы жжём больше газа «на всякий случай». Перегрузка и устойчивость инверторной генерации — отдельные, более трудные задачи.',
     how: 'Модели вбирают погоду и истории в духе SCADA и выдают более узкий прогноз или рекомендованную уставку. Люди и существующие системы управления энергией остаются в контуре. Блэкаут — неприемлемый учебный прогон.',
     players:
-      'Сотрудничество National Grid ESO / DeepMind (публично 2017–2019); разные пилоты ISO/RTO в США; поставщики прогнозов ВИЭ. Отчёты ENTSO-E и МЭА о цифровизации обозревают поле.',
+      'Google DeepMind на ветрофермах Google в США (публично 2019); разные пилоты ISO/RTO и вендоров; позднее британское прогнозирование солнца группами вроде Open Climate Fix. Отчёты МЭА о цифровизации обозревают поле.',
     risks:
       'Кибербезопасность, скрытое смещение, когда погода новая, и вендоры, заявляющие «ИИ-сеть». Физика инверторов и защиты по-прежнему правит.',
-    sources:
-      'DeepMind blog and National Grid notes on wind-forecast collaboration (2017–2019); IEA “Digitalisation and Energy”; ENTSO-E research reports.',
+    sourcesNote:
+      'Заметка DeepMind от 26 февраля 2019 о ценности ветра (фермы Google в США); IEA Digitalisation and Energy. Разговоры с National Grid не стали продуктом.',
   },
   'alphafold-proteins': {
     title: 'AlphaFold — белки для науки',
@@ -316,8 +316,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Google DeepMind и EMBL-EBI (AF Database); Meta ESM; University of Washington Institute for Protein Design (Baker); промышленные биотех-компании, применяющие инструменты к ферментам и лекарствам.',
     risks:
       'Биобезопасность (те же инструменты могут набросать вредные белки — лаборатории и журналы теперь обсуждают скрининг). Завышать предсказанную PETase до завода переработки. Энергия и вода ферментёра всё равно считаются.',
-    sources:
-      'Jumper et al., Nature, 2021 (AlphaFold 2); AlphaFold Database (EMBL-EBI); Abramson et al., Nature, 2024 (AlphaFold 3); Lin et al., Science, 2023 (ESMFold); Watson et al., Nature, 2023 (RFdiffusion).',
+    sourcesNote:
+      'Jumper et al., Nature, 2021; база AlphaFold (EMBL-EBI). Предсказанная укладка — не промышленный фермент.',
   },
   'amp-recycling-robots': {
     title: 'Роботы сортировки — AMP',
@@ -331,8 +331,8 @@ export const ru: Record<string, InnovationCopy> = {
       'AMP Robotics; конкуренты в Европе и Азии; традиционные фирмы оптической сортировки (TOMRA и другие), которые теперь везут свой ML. Покупатели — мусорные компании и муниципалитеты.',
     risks:
       'Если мельница сбыта закрылась, робот сортирует в бункер к свалке. Запреты экспорта и дешёвый первичный пластик по-прежнему задают экономику. Это сортировка, не алхимия.',
-    sources:
-      'AMP Robotics installation case pages; industry coverage of MRF robot deployments; EPA and EU recycling-rate statistics for context (sorting ≠ recycling).',
+    sourcesNote:
+      'Сайт AMP Sortation / AMP Robotics. Сортировка — не рынок для кипы.',
   },
   'quantum-computing': {
     title: 'Квантовые компьютеры — надежды химии',
@@ -346,8 +346,8 @@ export const ru: Record<string, InnovationCopy> = {
       'IBM, Google Quantum AI, IonQ, Quantinuum, академические группы. Химические партнёры (Boeing, Mercedes, национальные лаборатории) прогоняют разведывательные алгоритмы. Публичные вехи настоящие; продуктовые заявления должны быть датированы и узки.',
     risks:
       'Циклы хайпа, экспортный контроль и энергия стека управления. Не пишите научную фантастику про мгновенные климатические модели. Классические суперкомпьютеры по-прежнему делают климатическую работу.',
-    sources:
-      'IBM quantum processor announcements (Condor 2023; Heron); Google Willow, December 2024; IonQ public trapped-ion roadmaps; reviews of quantum chemistry algorithms (NISQ limits).',
+    sourcesNote:
+      'Объявление Google Willow (9 декабря 2024); страницы IBM Quantum. Публичные машины ещё не спроектировали климатический катализатор.',
   },
   'climate-trace': {
     title: 'Climate TRACE — видеть выбросы',
@@ -361,8 +361,8 @@ export const ru: Record<string, InnovationCopy> = {
       'Коалиция Climate TRACE (НКО, компании, университеты); GHGSat; Carbon Mapper (включая партнёрства NASA/JPL); метановая наука IMEO (UNEP). Национальные инвентаризации остаются юридической базой.',
     risks:
       'Ложные плюмы, политический откат и принятие дашборда за надзор. Спутники одни сектора видят лучше других (навозная лагуна ≠ город двухтактных мопедов).',
-    sources:
-      'Climate TRACE methodology and inventory releases; GHGSat and Carbon Mapper public notes; UNEP IMEO methane reports.',
+    sourcesNote:
+      'Инвентаризация и методика Climate TRACE. Яркий пиксель — улика, не приговор суда.',
   },
   'prithvi-earth-ai': {
     title: 'Prithvi — фундаментные модели Земли',
@@ -376,7 +376,7 @@ export const ru: Record<string, InnovationCopy> = {
       'NASA (HLS, IMPACT); IBM Research; веса на Hugging Face / GitHub; пользователи в агентствах катастроф и сельского хозяйства. Earth-2 — отдельная линия эмуляции NVIDIA.',
     risks:
       'Сдвиг там, куда обучающие спутники не смотрели, военное двойное назначение и вендоры, оборачивающие дообучение как «климатическую модель». Читайте карточку модели.',
-    sources:
-      'NASA–IBM Prithvi release (2023) and model cards; HLS documentation; NVIDIA Earth-2 product notes (emulation, not the same weights).',
+    sourcesNote:
+      'Релиз NASA Earthdata о Prithvi (2023); карточки моделей IBM–NASA на Hugging Face. Стартовые веса — не оракул.',
   },
 };

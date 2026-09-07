@@ -2253,6 +2253,30 @@ a.map-card:hover {
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
+.innovation-card-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.innovation-card-wrap .wildlife-card {
+  flex: 1;
+  height: auto;
+}
+
+.innovation-card-source {
+  margin: 0.45rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.innovation-card-source a {
+  color: var(--lime);
+}
+
+.theme-innovations-detail .cited-source-list a {
+  color: var(--lime);
+}
+
 .borders-honesty {
   max-width: 46rem;
   color: var(--muted);

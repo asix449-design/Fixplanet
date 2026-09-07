@@ -1,4 +1,5 @@
 ---
+import CitedSourceList from '../components/CitedSourceList.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { innovationImageSrc, type Innovation } from '../data/innovations';
 import { getInnovationsPage, localizePath, resolveLocale } from '../i18n';
@@ -90,8 +91,11 @@ const image = innovationImageSrc(item.image);
         <p>{item.players}</p>
         <h2>{page.risks}</h2>
         <p>{item.risks}</p>
-        <h2>{page.sourcesLabel}</h2>
-        <p class="wildlife-sources">{item.sources}</p>
+        <CitedSourceList
+          heading={page.sourcesLabel}
+          note={item.sourcesNote}
+          sources={item.sources}
+        />
       </div>
     </div>
   </section>
