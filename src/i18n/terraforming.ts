@@ -82,7 +82,7 @@ const pageEn: GeoPage = {
     climate: 'Climate intervention',
   },
   shelfLeads: {
-    all: 'Landscape megaprojects first; climate interventions last, and labeled. Each card is a real scheme with a sourced status.',
+    all: 'Most of these schemes tried to move water or plant a dry belt. A few later ideas try to change the planet’s energy budget instead — still research.',
     water:
       'Canals, pumps, fossil aquifers, and inland-sea dreams. Some pipes exist. Few of the climates they promised do.',
     desert:
@@ -140,7 +140,7 @@ const pageRu: GeoPage = {
     climate: 'Климатическое вмешательство',
   },
   shelfLeads: {
-    all: 'Сначала ландшафтные мегапроекты; климатические вмешательства — в конце и с пометкой. Каждая карточка — реальная схема с источником.',
+    all: 'Большинство схем пытались перебросить воду или засадить сухой пояс. Несколько более поздних идей меняют уже энергетический бюджет планеты — пока это исследования.',
     water:
       'Каналы, насосы, ископаемые водоносные горизонты и мечты о внутренних морях. Трубы иногда есть. Обещанного климата — почти нет.',
     desert:
@@ -198,7 +198,7 @@ const pagePl: GeoPage = {
     climate: 'Interwencja klimatyczna',
   },
   shelfLeads: {
-    all: 'Najpierw megaprojekty krajobrazowe; interwencje klimatyczne na końcu i z etykietą. Każda karta to prawdziwy schemat ze źródłem.',
+    all: 'Większość tych planów chciała przerzucić wodę albo obsadzić suchy pas. Kilka późniejszych idei próbuje zmienić bilans energetyczny planety — na razie badania.',
     water:
       'Kanały, pompy, kopalne wodonośne i sny o morzach w głębi lądu. Rury czasem stoją. Klimat, który obiecywano — rzadko.',
     desert:

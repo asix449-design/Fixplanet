@@ -46,7 +46,7 @@ const en = {
     globeLabel: 'Interactive Earth — drag to rotate',
     heroAlt: 'Solarpunk green city of vertical forests in a mountain valley, with a river, launch beam, and a large planet in the sky',
     latest: 'Latest solutions',
-    latestHeading: 'Real solutions. Measurable impact.',
+    latestHeading: 'Problem–fix cards already in use.',
     viewAll: 'View all solutions →',
     featuresAria: 'What Fix Planet covers',
     tiles: {
@@ -331,7 +331,7 @@ const ru: typeof en = {
     globeLabel: 'Интерактивная Земля — перетащите, чтобы вращать',
     heroAlt: 'Соларпанк-город вертикальных лесов в горной долине: река, луч старта и большая планета в небе',
     latest: 'Новые решения',
-    latestHeading: 'Реальные решения. Измеримый результат.',
+    latestHeading: 'Карточки «проблема — решение», уже в работе.',
     viewAll: 'Все решения →',
     featuresAria: 'О чём Fix Planet',
     tiles: {
@@ -619,7 +619,7 @@ const pl: typeof en = {
     globeLabel: 'Interaktywna Ziemia — przeciągnij, aby obrócić',
     heroAlt: 'Solarpunkowe zielone miasto pionowych lasów w górskiej dolinie: rzeka, promień startu i wielka planeta na niebie',
     latest: 'Najnowsze rozwiązania',
-    latestHeading: 'Realne rozwiązania. Mierzalny efekt.',
+    latestHeading: 'Karty problem–rozwiązanie, już w użyciu.',
     viewAll: 'Wszystkie rozwiązania →',
     featuresAria: 'Co obejmuje Fix Planet',
     tiles: {
@@ -907,7 +907,7 @@ const lv: typeof en = {
     globeLabel: 'Interaktīva Zeme — velc, lai pagrieztu',
     heroAlt: 'Solarpanka zaļā pilsēta ar vertikāliem mežiem kalnu ielejā: upe, starta stars un liela planēta debesīs',
     latest: 'Jaunākie risinājumi',
-    latestHeading: 'Īsti risinājumi. Izmērāms efekts.',
+    latestHeading: 'Kartītes «problēma — risinājums», jau lietošanā.',
     viewAll: 'Visi risinājumi →',
     featuresAria: 'Ko aptver Fix Planet',
     tiles: {
