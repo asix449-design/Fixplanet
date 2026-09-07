@@ -75,22 +75,6 @@ const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
     }
   </SectionHub>
 
-  {
-    hub && (
-      <section class="section section-hub-follow" id="forests-intro">
-        <div class="wrap">
-          <div class="wildlife-copy-card forests-panel oceans-hub-intro">
-            <div class="eyebrow forests-eyebrow">{page.eyebrow}</div>
-            <h2>{page.title}</h2>
-            <div class="encyc-lede">
-              {page.hubLead.map((para) => <p>{para}</p>)}
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
-
   {activePanel === 'satellite' && (
   <section class="section section-hub-follow" id="satellite" data-forest-panel="satellite">
     <div class="wrap">

@@ -64,7 +64,7 @@ const tabLeads = {
   </SectionHub>
 
   {
-    hub && (
+    !hub && activeStatus && (
       <>
         <section class="section section-hub-follow" aria-labelledby="our-species">
           <div class="wrap wildlife-hero">
@@ -101,22 +101,18 @@ const tabLeads = {
             </div>
           </div>
         </section>
-      </>
-    )
-  }
 
-  {
-    !hub && activeStatus && (
-      <section class="section section-hub-follow" id="species-list">
-        <div class="wrap wildlife-list-panel">
-          <p class="wildlife-tab-lead wildlife-tab-lead-solo">{tabLeads[activeStatus]}</p>
-          <div class="card-grid cols-3" id="wildlife-grid">
-            {species.map((item) => (
-              <WildlifeCard species={item} />
-            ))}
+        <section class="section" id="species-list">
+          <div class="wrap wildlife-list-panel">
+            <p class="wildlife-tab-lead wildlife-tab-lead-solo">{tabLeads[activeStatus]}</p>
+            <div class="card-grid cols-3" id="wildlife-grid">
+              {species.map((item) => (
+                <WildlifeCard species={item} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </>
     )
   }
 </BaseLayout>

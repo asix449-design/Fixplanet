@@ -59,20 +59,7 @@ const items = activeShelf ? getGeoProjectsByShelf(locale, activeShelf) : getGeoP
   </SectionHub>
 
   {
-    hub ? (
-      <section class="section section-hub-follow">
-        <div class="wrap">
-          <div class="wildlife-copy-card geo-list-panel">
-            <div class="eyebrow geo-eyebrow">{page.eyebrow}</div>
-            <h2 class="geo-page-title">{page.title}</h2>
-            <div class="encyc-lede">
-              <p>{page.lead}</p>
-            </div>
-            <p class="source-note">{page.honesty}</p>
-          </div>
-        </div>
-      </section>
-    ) : (
+    !hub && (
       <section class="section section-hub-follow" id="terraforming-list">
         <div class="wrap wildlife-list-panel geo-list-panel">
           {activeShelf && <p class="wildlife-tab-lead">{page.shelfLeads[activeShelf]}</p>}

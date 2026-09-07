@@ -14,13 +14,13 @@ Unprefixed routes are English. Other locales use `/ru/`, `/pl/`, `/lv/` plus the
 | `/solutions` | Topic hub tiles only (All + Water, Forests, Waste, Cities, Materials, Oceans, Energy). Cards live on `/solutions/all` and `/solutions/water` (etc.). `?tag=` redirects to those shelves |
 | `/about` | Curator: Aigars Abramovics |
 | `/book` | *New World* (Amazon) |
-| `/wildlife` | Hub tiles (Surviving / Endangered / Extinct) plus the *Homo sapiens* hero and dispersal map. Species cards live on `/wildlife/surviving`, `/endangered`, `/extinct`. Detail pages at `/wildlife/[slug]` |
-| `/maps` | Hub tiles for each map shelf (plus All). Cards live on `/maps/all` and `/maps/conflicts` (etc.). History of borders opens the century timeline. Detail pages at `/maps/[slug]` |
-| `/innovations` | Hub tiles (Ecology, Energy, AI) plus a short lab/plants intro. Cards live on `/innovations/ecology`, `/energy`, `/ai`. Detail pages at `/innovations/[slug]` |
-| `/forests` | Hub tiles plus a short encyclopedia intro. Satellite scrubber, reconstructions, numbers, and outlook live on `/forests/satellite`, `/history`, `/numbers`, `/outlook` |
-| `/oceans` | Hub tiles plus a short encyclopedia intro. Currents, salinity, SST, pollution, and numbers live on `/oceans/currents`, `/salinity`, `/sst`, `/pollution`, `/numbers` |
-| `/law` | Hub tiles first (Ecology / AI / Animals) plus a short intro. Category pages show three status shelves. Detail articles at `/law/[slug]`; shelf deep links at `/law/ecology/existing`, `/law/ai/ideas`, … |
-| `/terraforming` | Hub tiles plus a short intro. Cards live on `/terraforming/water`, `/desert`, `/climate`. Detail pages at `/terraforming/[slug]`. Old `/geoengineering` URLs redirect here |
+| `/wildlife` | Hub tiles only (Surviving / Endangered / Extinct). The *Homo sapiens* hero, dispersal map, and species cards live on `/wildlife/surviving`, `/endangered`, `/extinct`. Detail pages at `/wildlife/[slug]` |
+| `/maps` | Hub tiles only (plus All). Cards live on `/maps/all` and `/maps/conflicts` (etc.). History of borders opens the century timeline. Detail pages at `/maps/[slug]` |
+| `/innovations` | Hub tiles only (Ecology, Energy, AI). Cards live on `/innovations/ecology`, `/energy`, `/ai`. Detail pages at `/innovations/[slug]` |
+| `/forests` | Hub tiles only. Satellite scrubber, reconstructions, numbers, and outlook live on `/forests/satellite`, `/history`, `/numbers`, `/outlook` |
+| `/oceans` | Hub tiles only. Currents, salinity, SST, pollution, and numbers live on `/oceans/currents`, `/salinity`, `/sst`, `/pollution`, `/numbers` |
+| `/law` | Hub tiles only (Ecology / AI / Animals). Category pages show three status shelves. Detail articles at `/law/[slug]`; shelf deep links at `/law/ecology/existing`, `/law/ai/ideas`, … |
+| `/terraforming` | Hub tiles only. Cards live on `/terraforming/water`, `/desert`, `/climate`. Detail pages at `/terraforming/[slug]`. Old `/geoengineering` URLs redirect here |
 
 ## Languages
 
