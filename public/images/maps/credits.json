@@ -212,16 +212,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:World_in_500_CE.png",
     "license": "CC BY-SA 2.5",
     "kind": "hosted-original",
-    "note": "History of borders, year 500."
-  },
-  {
-    "file": "borders/y0600.jpg",
-    "title": "Eastern Hemisphere in 600 AD",
-    "source": "Thomas A. Lessman / World History Maps",
-    "url": "https://commons.wikimedia.org/wiki/File:East-Hem_600ad.jpg",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year 600. Eastern Hemisphere only; Americas are a labeled gap."
+    "note": "History of borders, year 500. Also the labeled nearest sheet for 600."
   },
   {
     "file": "borders/y0700.png",
@@ -233,13 +224,13 @@
     "note": "History of borders, year 700."
   },
   {
-    "file": "borders/y0800.jpg",
-    "title": "Eastern Hemisphere in 800 AD",
-    "source": "Thomas A. Lessman / World History Maps",
-    "url": "https://commons.wikimedia.org/wiki/File:East-Hem_800ad.jpg",
+    "file": "borders/y0750.png",
+    "title": "World in 750 CE",
+    "source": "FamilyPedia / Wikia, Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:World_in_750_CE.png",
     "license": "CC BY-SA 3.0",
     "kind": "hosted-original",
-    "note": "History of borders, year 800. Eastern Hemisphere only."
+    "note": "History of borders, year-800 step. Nearest matching-style world plate is 750."
   },
   {
     "file": "borders/y0900.png",
@@ -248,25 +239,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:World_in_900_CE.png",
     "license": "Public domain",
     "kind": "hosted-original",
-    "note": "History of borders, year 900."
-  },
-  {
-    "file": "borders/y1025.jpg",
-    "title": "Eastern Hemisphere in 1025 AD",
-    "source": "Thomas A. Lessman / World History Maps",
-    "url": "https://commons.wikimedia.org/wiki/File:East-Hem_1025ad.jpg",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year-1000 step. Nearest sheet is 1025; Eastern Hemisphere only."
-  },
-  {
-    "file": "borders/y1100.jpg",
-    "title": "Eastern Hemisphere in 1100 AD",
-    "source": "Thomas A. Lessman / World History Maps",
-    "url": "https://commons.wikimedia.org/wiki/File:East-Hem_1100ad.jpg",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year 1100. Eastern Hemisphere only."
+    "note": "History of borders, year 900. Also the labeled nearest sheet for 1000."
   },
   {
     "file": "borders/y1200.jpg",
@@ -275,7 +248,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:World_map_1200.jpg",
     "license": "CC BY 4.0",
     "kind": "hosted-original",
-    "note": "History of borders, year 1200. Also used as the labeled nearest sheet for 1300."
+    "note": "History of borders, year 1200. Recolored to the atlas sea/land palette; political fills unchanged. Also the labeled nearest sheet for 1100 and 1300."
   },
   {
     "file": "borders/y1500.png",
@@ -287,13 +260,13 @@
     "note": "History of borders, year 1500. Also used as the labeled nearest sheet for 1400."
   },
   {
-    "file": "borders/y1600.png",
-    "title": "Colonisation 1600",
-    "source": "Wikimedia Commons, Каракорум",
-    "url": "https://commons.wikimedia.org/wiki/File:Colonisation_1600.png",
-    "license": "CC BY-SA 4.0",
+    "file": "borders/y1648.png",
+    "title": "The world in 1648",
+    "source": "Wikimedia Commons, Babelia",
+    "url": "https://commons.wikimedia.org/wiki/File:World_map_1648.png",
+    "license": "CC BY 4.0",
     "kind": "hosted-original",
-    "note": "History of borders, year 1600. Colonial-empire layer, not a complete polity census."
+    "note": "History of borders, year-1600 step. Nearest matching-style world plate is 1648. Recolored grey land / white sea to tan / soft blue; borders unchanged."
   },
   {
     "file": "borders/y1700.png",
@@ -302,7 +275,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG",
     "license": "CC BY-SA 3.0",
     "kind": "hosted-original",
-    "note": "History of borders, year 1700. Illustrative early-colonial reconstruction."
+    "note": "History of borders, year 1700. Recolored white land to tan; political fills unchanged."
   },
   {
     "file": "borders/y1815.jpg",
@@ -311,7 +284,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:World_map_1815_(COV).jpg",
     "license": "CC BY-SA 3.0",
     "kind": "hosted-original",
-    "note": "History of borders, year-1800 step. Nearest detailed free political sheet is 1815."
+    "note": "History of borders, year-1800 step. Nearest detailed free political sheet is 1815. Recolored grey land to tan; political fills unchanged."
   },
   {
     "file": "borders/y1914.jpg",
@@ -320,15 +293,24 @@
     "url": "https://commons.wikimedia.org/wiki/File:World_map_1914.jpg",
     "license": "CC BY 4.0",
     "kind": "hosted-original",
-    "note": "History of borders, year-1900 step. Nearest full-world political sheet is 1914."
+    "note": "History of borders, year-1900 step. Nearest full-world political sheet is 1914. Recolored dark seas and grey land to the atlas palette; political fills unchanged."
   },
   {
-    "file": "borders/y2000.jpg",
-    "title": "Political map of the world, June 2000",
-    "source": "U.S. Central Intelligence Agency; Library of Congress",
-    "url": "https://commons.wikimedia.org/wiki/File:(Political_map_of_the_world)._LOC_2001620596.jpg",
-    "license": "Public domain (U.S. government work)",
-    "kind": "hosted-original",
-    "note": "History of borders, year 2000."
+    "file": "borders/y2000.png",
+    "title": "Present-day country fills (atlas palette), used for the 2000 step",
+    "source": "Wikimedia Commons BlankMap-World; Natural Earth is the named political base. Fix Planet 4-color fill.",
+    "url": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "license": "Public domain",
+    "kind": "fix-planet-schematic",
+    "note": "History of borders, year-2000 step. Present-day ISO country polygons, not the June 2000 CIA sheet. South Sudan (2011) and other post-2000 states appear. Labeled nearest."
+  },
+  {
+    "file": "borders/y2020.png",
+    "title": "Present-day country fills (atlas palette)",
+    "source": "Wikimedia Commons BlankMap-World; Natural Earth is the named political base. Fix Planet 4-color fill.",
+    "url": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
+    "license": "Public domain",
+    "kind": "fix-planet-schematic",
+    "note": "History of borders, year 2020. Same geometry as the political-map card, 4-colored to match the early-century atlas language."
   }
 ]

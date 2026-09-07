@@ -1573,6 +1573,14 @@ a.map-card:hover {
   border: 1px solid rgba(192, 255, 0, 0.16);
 }
 
+.borders-frame .map-detail-art img {
+  background: #f4efe4;
+}
+
+.borders-frame:target .map-detail-art img {
+  border-color: var(--lime);
+}
+
 .map-detail-art figcaption {
   margin-top: 0.7rem;
   color: var(--muted);
