@@ -16,7 +16,7 @@ export const en: OceansPage = {
     currents: 'Surface currents and the great gyres that steer heat, salt, and life.',
     salinity: 'How salty the sea is, and why that density helps drive the overturning circulation.',
     sst: 'The temperature of the sea surface — the standing climate, and years that run warmer or cooler.',
-    pollution: 'Plastics, oil, phytoplankton blooms, and coastal dead zones.',
+    pollution: 'Five subtropical garbage patches, oil, phytoplankton blooms, and coastal dead zones.',
     numbers: 'Heat, acidity, plastic, and hypoxia, each from a named paper.',
   },
   panels: {
@@ -44,7 +44,7 @@ export const en: OceansPage = {
     ],
     pollution: [
       'The ocean is polluted in several different ways: persistent plastics, oil from wells and ships, extra nutrients that fuel algal blooms, and the hypoxia that follows when that organic matter decays.',
-      'No single map shows all of that. The four figures below are separate datasets: a modelled garbage patch, one observed oil spill, a chlorophyll-a composite, and a compilation of coastal dead zones.',
+      'No single map shows all of that. The figures below are separate datasets. The first answers a common question: there are five major subtropical garbage patches — zones of higher plastic concentration in the great gyres, not floating islands. Then a closer North Pacific model, one observed oil spill, a chlorophyll-a composite, and a compilation of coastal dead zones.',
     ],
     numbers: [
       'A few published figures, each from a named source. Ocean heat, surface acidity, plastic, and hypoxia are different measurements. They should not be added into one score.',
@@ -57,7 +57,7 @@ export const en: OceansPage = {
   honestySst:
     'NASA GHRSST MUR L4, 1 July. Absolute SST is the equator–pole field; anomaly is departure from MUR climatology.',
   honestyPollution:
-    'Four datasets: modelled plastics, one oil spill, chlorophyll-a, compiled hypoxia.',
+    'Five figures: five-gyre plastics (Eriksen 2014), North Pacific model (Lebreton 2018), one oil spill, chlorophyll-a, compiled hypoxia.',
   modeSst: 'Absolute SST',
   modeAnomaly: 'SST anomaly',
   fidelitySst: 'Analysis · absolute SST',
@@ -82,6 +82,7 @@ export const en: OceansPage = {
   openOscar: 'Open ESR OSCAR (modelled currents) →',
   openCopernicus: 'Open Copernicus Marine viewer →',
   openNoaaPollution: 'Open NOAA marine-pollution surveillance →',
+  openNoaaPatches: 'Open NOAA: garbage patches →',
   openOceanColor: 'Open NASA Ocean Color →',
   oscarNote:
     'OSCAR (Ocean Surface Current Analyses Real-time) estimates mixed-layer velocity from satellite sea-surface height, vector winds, and SST, using geostrophy, Ekman drift, and thermal wind. Daily fields at 0.25°, from 1993.',
@@ -93,13 +94,23 @@ export const en: OceansPage = {
   distinguish:
     'IPCC AR6: the ocean has taken up about 90 percent of the excess heat in the climate system. Cheng et al. 2024: 0–2000 m ocean heat content in 2023 (and the 2024 update) sat at the top of the instrumental record — a heat inventory of the water column, not the SST map above. Surface pH has fallen by about 0.1 since ~1750, a roughly 26–30 percent rise in hydrogen-ion concentration (IPCC AR6; NOAA PMEL); that is carbonate chemistry. Jambeck et al. 2015 estimated 4.8–12.7 million tonnes of plastic entering the ocean from land in 2010 — a flow, not the mass in the Great Pacific Garbage Patch. Eriksen et al. 2014 estimated at least 5.25 trillion floating particles. Breitburg et al. 2018: more than 500 coastal sites with anthropogenic hypoxia, and expanding open-ocean oxygen-minimum zones (~4.5 million km²).',
   pollutionKinds: {
+    patches: {
+      title: 'Five garbage patches',
+      lead: 'There are five major subtropical gyres with elevated floating plastic: North Pacific, South Pacific, North Atlantic, South Atlantic, and Indian Ocean. A garbage patch is a zone of higher concentration of mostly small fragments, not a solid floating island. The maps are Eriksen et al. 2014 — modelled count density (pieces/km²) by size class, from net tows and visual surveys across all five gyres. The North Pacific patch is the best studied; a western buildup near Japan is part of that same gyre, not a sixth subtropical patch. Arctic and Barents concentrations are sometimes discussed separately and are not one of these five.',
+      caption:
+        'Eriksen et al. 2014, PLOS ONE. Modelled count density (pieces/km²) in four size classes. CC0. Sampling 2007–2013; not a satellite photo of trash islands. NOAA education materials describe the same five subtropical gyres.',
+      imageAlt:
+        'Four world maps of modelled floating-plastic count density in four size classes, orange-red accumulations in five subtropical gyres',
+      seeAlso: 'Great Pacific Garbage Patch — North Pacific model ↓',
+    },
     plastics: {
-      title: 'Plastics',
-      lead: 'Most ocean plastic arrives from land. Wind and surface currents concentrate fragments in the subtropical gyres. The Great Pacific Garbage Patch, between Hawaii and California, is a zone of high concentration in the North Pacific gyre — water with more debris, not a solid island. The map shows modelled mass concentration (kg/km²) for August 2015.',
+      title: 'Great Pacific Garbage Patch',
+      lead: 'The Great Pacific Garbage Patch, between Hawaii and California, is the best-studied of the five subtropical accumulations — water with more debris in the North Pacific gyre, not a solid island. A western concentration near Japan belongs to the same gyre. Most of the plastic is small fragments. The map shows modelled mass concentration (kg/km²) for August 2015.',
       caption:
         'Lebreton et al. 2018, Scientific Reports. Modelled mass concentration, North Pacific, August 2015. CC BY 4.0.',
       imageAlt:
         'Contour map of modelled plastic mass concentration between Hawaii and California, red core labeled GPGP',
+      seeAlso: 'Five subtropical garbage patches ↑',
     },
     oil: {
       title: 'Oil',
@@ -258,7 +269,7 @@ export const en: OceansPage = {
     },
     plasticFloat: {
       label: 'Floating plastic particles',
-      text: 'Eriksen et al. 2014: at least 5.25 trillion particles (268,940 tonnes) floating. A stock estimate from net tows and a model.',
+      text: 'Eriksen et al. 2014: at least 5.25 trillion particles (268,940 tonnes) floating, from sampling across the five subtropical gyres. A stock estimate from net tows and a model.',
     },
     deadZones: {
       label: 'Coastal hypoxic sites',

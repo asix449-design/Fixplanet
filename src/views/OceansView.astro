@@ -9,6 +9,7 @@ import {
   ipccAr6Url,
   isOceanPanel,
   nasaOceanColorUrl,
+  noaaGarbagePatchesUrl,
   noaaPollutionUrl,
   oceanBackdrop,
   oceanFrameSrc,
@@ -367,6 +368,13 @@ const initialSalinity = salinityFrames[0];
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.lead}</p>
+                {
+                  item.seeAlso && item.seeAlsoId && (
+                    <p class="oceans-source-note">
+                      <a href={`#pollution-${item.seeAlsoId}`}>{item.seeAlso}</a>
+                    </p>
+                  )
+                }
                 <p class="wildlife-sources">
                   <a href={item.sourceUrl} rel="noopener noreferrer">{item.sourceUrl}</a>
                   <br />
@@ -378,7 +386,10 @@ const initialSalinity = salinityFrames[0];
           }
         </div>
         <p class="oceans-cta-row">
-          <a class="btn btn-primary map-open-source" href={noaaPollutionUrl} rel="noopener noreferrer">
+          <a class="btn btn-primary map-open-source" href={noaaGarbagePatchesUrl} rel="noopener noreferrer">
+            {page.openNoaaPatches}
+          </a>
+          <a class="btn btn-outline map-open-source" href={noaaPollutionUrl} rel="noopener noreferrer">
             {page.openNoaaPollution}
           </a>
           <a class="btn btn-outline map-open-source" href={worldviewChlUrl} rel="noopener noreferrer">

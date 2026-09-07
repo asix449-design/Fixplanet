@@ -56,13 +56,17 @@ export type OceansPage = {
   openOscar: string;
   openCopernicus: string;
   openNoaaPollution: string;
+  openNoaaPatches: string;
   openOceanColor: string;
   oscarNote: string;
   smapNote: string;
   numbersNote: string;
   distinguishTitle: string;
   distinguish: string;
-  pollutionKinds: Record<'plastics' | 'oil' | 'nutrient' | 'deadzones', OceanPollutionCopy>;
+  pollutionKinds: Record<
+    'patches' | 'plastics' | 'oil' | 'nutrient' | 'deadzones',
+    OceanPollutionCopy
+  >;
   units: Record<'percent' | 'pH' | 'millionTonnes' | 'trillion' | 'sites' | 'ohc', string>;
   frames: Record<string, OceanFrameCopy>;
   stats: Record<string, OceanStatCopy>;

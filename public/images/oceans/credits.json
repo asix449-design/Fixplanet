@@ -127,6 +127,16 @@
     "note": "Named-gyre schematic. Not OSCAR, not satellite altimetry, not a live current field."
   },
   {
+    "file": "plastic-five-gyres-2014.png",
+    "title": "Modelled floating-plastic count density in four size classes, five subtropical gyres",
+    "source": "Eriksen et al. 2014, PLOS ONE",
+    "url": "https://doi.org/10.1371/journal.pone.0111913",
+    "figure": "https://journals.plos.org/plosone/article/figure/image?size=large&id=info:doi/10.1371/journal.pone.0111913.g002",
+    "license": "CC0 1.0",
+    "kind": "hosted-original",
+    "note": "Figure 2: modelled pieces/km². Five subtropical accumulation zones, not floating islands. Not a sixth Arctic patch. Not the Lebreton 2018 North Pacific mass model."
+  },
+  {
     "file": "plastic-gpgp-2015.jpg",
     "title": "Modelled North Pacific plastic mass concentration, August 2015",
     "source": "Lebreton et al. 2018, Scientific Reports",
