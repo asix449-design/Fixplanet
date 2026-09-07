@@ -44,7 +44,7 @@ ATLAS = [
 
 # Neighbor-aware overrides so large landmasses don't share a fill.
 COLOR_OVERRIDE = {
-    "us": 0, "ca": 1, "mx": 2, "gl": 3, "cu": 4, "gt": 5, "ht": 6,
+    "us": 0, "ca": 8, "mx": 2, "gl": 3, "cu": 4, "gt": 5, "ht": 6,
     "br": 4, "ar": 1, "co": 5, "pe": 6, "ve": 7, "cl": 2, "bo": 0,
     "gy": 3, "sr": 8, "ec": 9, "py": 10, "uy": 11, "fk": 0,
     "ru": 1, "cn": 4, "mn": 2, "kz": 0, "in": 5, "pk": 6, "af": 7,
@@ -290,4 +290,11 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if "--present-day" in sys.argv:
+        BORDERS.mkdir(parents=True, exist_ok=True)
+        render_present_day(BORDERS / "y2000.png", "2000")
+        render_present_day(BORDERS / "y2020.png", "2020")
+    else:
+        main()

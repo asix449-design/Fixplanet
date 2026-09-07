@@ -302,7 +302,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
     "license": "Public domain",
     "kind": "fix-planet-schematic",
-    "note": "History of borders, year-2000 step. Present-day ISO country polygons, not the June 2000 CIA sheet. South Sudan (2011) and other post-2000 states appear. Labeled nearest."
+    "note": "History of borders, year-2000 step. Present-day ISO country polygons, not the June 2000 CIA sheet. South Sudan (2011) and other post-2000 states appear. Labeled nearest. Greenwich Robinson splits Chukotka at 180°; the western-hemisphere remainder (next to Alaska) is restored from Natural Earth, public domain."
   },
   {
     "file": "borders/y2020.png",
@@ -311,6 +311,6 @@
     "url": "https://commons.wikimedia.org/wiki/File:BlankMap-World.svg",
     "license": "Public domain",
     "kind": "fix-planet-schematic",
-    "note": "History of borders, year 2020. Same geometry as the political-map card, 4-colored to match the early-century atlas language."
+    "note": "History of borders, year 2020. Same geometry as the political-map card, 4-colored to match the early-century atlas language. Chukotka west of 180° restored from Natural Earth so the Bering Strait shows both shores."
   }
 ]
