@@ -12,6 +12,7 @@ export const pl: OceansPage = {
   ],
   choosePanel: 'Wybierz półkę',
   filterAria: 'Działy oceanów',
+  back: '← Oceany',
   tiles: {
     currents: 'Prądy powierzchniowe i wielkie wiry, które niosą ciepło, sól i życie.',
     salinity: 'Ile soli jest w morzu i dlaczego gęstość pomaga napędzać cyrkulację głębinową.',

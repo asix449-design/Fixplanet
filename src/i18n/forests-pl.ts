@@ -12,6 +12,7 @@ export const pl: ForestsPage = {
   ],
   choosePanel: 'Wybierz półkę',
   filterAria: 'Działy Lasów',
+  back: '← Lasy',
   tiles: {
     satellite: 'Lipcowa zieleń koron z kosmosu, 2001–2025.',
     history: 'Roślinność epoki lodowej, biomy i ziemia po ludziach.',

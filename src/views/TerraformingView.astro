@@ -2,6 +2,7 @@
 import TerraformingCard from '../components/TerraformingCard.astro';
 import HubTile from '../components/HubTile.astro';
 import SectionHub from '../components/SectionHub.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   geoHub,
@@ -31,11 +32,16 @@ const activeShelf: GeoShelf | undefined =
   hub || !isGeoShelf(requested ?? undefined) ? undefined : requested;
 
 const items = activeShelf ? getGeoProjectsByShelf(locale, activeShelf) : getGeoProjects(locale);
+const shelfTitle = activeShelf ? page.shelves[activeShelf] : page.title;
+const pageTitle = activeShelf
+  ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
+  : page.metaTitle;
+const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDescription;
 ---
 
 <BaseLayout
-  title={page.metaTitle}
-  description={page.metaDescription}
+  title={pageTitle}
+  description={pageDescription}
   image={geoSectionSrc}
   theme="terraforming"
 >
@@ -44,25 +50,32 @@ const items = activeShelf ? getGeoProjectsByShelf(locale, activeShelf) : getGeoP
     <div class="section-backdrop-scrim geo-scrim"></div>
   </div>
 
-  <SectionHub kicker={page.chooseShelf} label={page.filterAria} columns={3}>
-    {
-      geoHub.map((item) => (
-        <HubTile
-          href={localizePath(geoShelfPath(item.key), locale)}
-          icon={item.icon}
-          title={page.shelves[item.key]}
-          text={page.tiles[item.key]}
-          active={item.key === activeShelf}
-        />
-      ))
-    }
-  </SectionHub>
+  {
+    hub ? (
+      <SectionHub kicker={page.chooseShelf} label={page.filterAria} columns={3}>
+        {geoHub.map((item) => (
+          <HubTile
+            href={localizePath(geoShelfPath(item.key), locale)}
+            icon={item.icon}
+            title={page.shelves[item.key]}
+            text={page.tiles[item.key]}
+          />
+        ))}
+      </SectionHub>
+    ) : (
+      <ShelfHeader
+        backHref={localizePath('/terraforming', locale)}
+        backLabel={page.back}
+        title={shelfTitle}
+        lede={activeShelf ? page.shelfLeads[activeShelf] : page.shelfLeads.all}
+      />
+    )
+  }
 
   {
     !hub && (
       <section class="section section-hub-follow" id="terraforming-list">
         <div class="wrap wildlife-list-panel geo-list-panel">
-          {activeShelf && <p class="wildlife-tab-lead">{page.shelfLeads[activeShelf]}</p>}
           {items.length === 0 ? (
             <p class="wildlife-tab-lead">{page.empty}</p>
           ) : (

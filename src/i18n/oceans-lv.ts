@@ -12,6 +12,7 @@ export const lv: OceansPage = {
   ],
   choosePanel: 'Izvēlies plauktu',
   filterAria: 'Okeānu sadaļas',
+  back: '← Okeāni',
   tiles: {
     currents: 'Virsmas straumes un lielie riņķojumi, kas nes siltumu, sāli un dzīvību.',
     salinity: 'Cik sāļa ir jūra un kāpēc blīvums palīdz dzīt dziļo cirkulāciju.',

@@ -1042,6 +1042,10 @@ a.solution-card:hover {
     padding: 1.15rem 0 1.3rem;
   }
 
+  .shelf-page {
+    padding: 1.15rem 0 0.2rem;
+  }
+
   .hub-grid,
   .hub-grid-3 {
     grid-template-columns: 1fr;
@@ -1069,6 +1073,7 @@ a.solution-card:hover {
   align-items: center;
 }
 
+.wildlife-hero h1,
 .wildlife-hero h2 {
   font-size: clamp(2rem, 4vw, 2.7rem);
   margin-bottom: 1.1rem;
@@ -1460,6 +1465,11 @@ a.wildlife-card:hover {
   max-width: 38rem;
 }
 
+.maps-hero-copy > p:first-child {
+  margin-bottom: 0.65rem;
+  font-size: 1rem;
+}
+
 .maps-eyebrow {
   color: var(--lime);
 }
@@ -1741,6 +1751,41 @@ a.map-card:hover {
 
 .section-hub-follow {
   padding-top: 0.55rem;
+}
+
+.shelf-page {
+  position: relative;
+  z-index: 1;
+  padding: 1.7rem 0 0.35rem;
+}
+
+.shelf-page-back {
+  margin: 0 0 0.55rem;
+}
+
+.shelf-page h1 {
+  font-size: clamp(2rem, 5.2vw, 3.2rem);
+  color: var(--cream);
+  margin: 0 0 0.65rem;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
+
+.shelf-page-lede,
+.shelf-page .encyc-lede,
+.shelf-page .oceans-lede {
+  max-width: 42rem;
+  margin: 0;
+  color: #e4eee6;
+  font-size: 1.08rem;
+}
+
+.shelf-page .encyc-lede p,
+.shelf-page .oceans-lede p {
+  color: #e4eee6;
+}
+
+.theme-solutions .shelf-page {
+  padding-top: 2rem;
 }
 
 #innovations-list,
@@ -2086,7 +2131,7 @@ a.map-card:hover {
 }
 
 .wildlife-list-panel {
-  padding: 0.4rem 1.4rem 1.6rem;
+  padding: 1.25rem 1.4rem 1.6rem;
 }
 
 .wildlife-map-panel .dispersal-svg {

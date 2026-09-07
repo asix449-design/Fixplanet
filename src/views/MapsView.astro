@@ -50,9 +50,14 @@ const filters = [
     href: localizePath(mapCategoryPath(key), locale),
   })),
 ];
+const shelfTitle =
+  !activeCategory || activeCategory === 'all' ? page.title : page.categories[activeCategory];
+const shelfLede =
+  !activeCategory || activeCategory === 'all' ? page.lead : page.tiles[activeCategory];
+const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fix Planet`;
 ---
 
-<BaseLayout title={page.metaTitle} description={page.metaDescription} image="/images/maps/blue-marble.jpg">
+<BaseLayout title={pageTitle} description={page.metaDescription} image="/images/maps/blue-marble.jpg">
   {
     hub && (
       <div class="section-backdrop" aria-hidden="true">
@@ -69,9 +74,12 @@ const filters = [
         </div>
         <div class="maps-hero-shade"></div>
         <div class="wrap maps-hero-copy">
+          <p>
+            <a class="maps-back" href={localizePath('/maps', locale)}>{page.back}</a>
+          </p>
           <div class="eyebrow maps-eyebrow">{page.eyebrow}</div>
-          <h1 id="maps-heading">{page.title}</h1>
-          <p>{page.lead}</p>
+          <h1 id="maps-heading">{shelfTitle}</h1>
+          <p>{shelfLede}</p>
         </div>
       </header>
     )
