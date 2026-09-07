@@ -196,7 +196,7 @@
     "file": "african-savanna-elephant.jpg",
     "commonsTitle": "African Bush Elephant.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg",
-    "artist": "Muhammad Mahdi Karim Facebook\n\n\n\n\n\nThe making of this document was supported by Wikimedia CH. (Submit your project!)\nFor all the files concerned, please see the category Supported by Wikimedia CH.\n\n\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\u00a0\u2219 \u09ac\u09be\u0982\u09b2\u09be\u00a0\u2219 \u010de\u0161tina\u00a0\u2219 Deutsch\u00a0\u2219 English\u00a0\u2219 Esperanto\u00a0\u2219 espa\u00f1ol\u00a0\u2219 fran\u00e7ais\u00a0\u2219 galego\u00a0\u2219 \u0939\u093f\u0928\u094d\u0926\u0940\u00a0\u2219 magyar\u00a0\u2219 italiano\u00a0\u2219 \u65e5\u672c\u8a9e\u00a0\u2219 \u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438\u00a0\u2219 Nederlands\u00a0\u2219 portugu\u00eas do Brasil\u00a0\u2219 rumantsch\u00a0\u2219 \u0440\u0443\u0441\u0441\u043a\u0438\u0439\u00a0\u2219 sicilianu\u00a0\u2219 sloven\u0161\u010dina\u00a0\u2219 \u0ba4\u0bae\u0bbf\u0bb4\u0bcd\u00a0\u2219 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\u00a0\u2219 \u4e2d\u6587\u00a0\u2219 +/\u2212",
+    "artist": "Muhammad Mahdi Karim Facebook\n\n\n\n\n\nThe making of this document was supported by Wikimedia CH. (Submit your project!)\nFor all the files concerned, please see the category Supported by Wikimedia CH.\n\n\nالعربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−",
     "license": "GFDL 1.2"
   },
   {
@@ -238,5 +238,117 @@
     "sourceUrl": "",
     "artist": "Fix Planet section theme — dense South American wildlife collage in a natural-history / sunset style",
     "license": "Site theme asset"
+  },
+  {
+    "slug": "irish-elk",
+    "file": "irish-elk.jpg",
+    "commonsTitle": "Irish Elk.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_Elk.jpg",
+    "artist": "Postdlf",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "smilodon",
+    "file": "smilodon.jpg",
+    "commonsTitle": "Saber-toothed cat (Smilodon fatalis) reconstruction, Natural History Museum, London, Mammals Gallery.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saber-toothed_cat_(Smilodon_fatalis)_reconstruction,_Natural_History_Museum,_London,_Mammals_Gallery.JPG",
+    "artist": "John Cummings",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "megatherium",
+    "file": "megatherium.jpg",
+    "commonsTitle": "Megatherium americanum Skeleton NHM.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Megatherium_americanum_Skeleton_NHM.JPG",
+    "artist": "en:User:Ballista",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "thylacoleo",
+    "file": "thylacoleo.jpg",
+    "commonsTitle": "Thylacoleo carnifex skull.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacoleo_carnifex_skull.jpg",
+    "artist": "David Hocking / Museums Victoria",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "diprotodon",
+    "file": "diprotodon.jpg",
+    "commonsTitle": "Diprotodon optatum.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diprotodon_optatum.jpg",
+    "artist": "Nobu Tamura (https://spinops.blogspot.com)",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "haast-eagle",
+    "file": "haast-eagle.jpg",
+    "commonsTitle": "Giant Haasts eagle attacking New Zealand moa.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Haasts_eagle_attacking_New_Zealand_moa.jpg",
+    "artist": "John Megahan",
+    "license": "CC BY 2.5"
+  },
+  {
+    "slug": "elephant-bird",
+    "file": "elephant-bird.jpg",
+    "commonsTitle": "Aepyornis maximus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aepyornis_maximus.jpg",
+    "artist": "Monnier",
+    "license": "Public domain"
+  },
+  {
+    "slug": "carolina-parakeet",
+    "file": "carolina-parakeet.jpg",
+    "commonsTitle": "Conuropsis carolinensis (Carolina parakeet).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conuropsis_carolinensis_(Carolina_parakeet).jpg",
+    "artist": "James St. John",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "falkland-islands-wolf",
+    "file": "falkland-islands-wolf.jpg",
+    "commonsTitle": "Falkland Island wolf, Dusicyon australis OMNZVT2369 !1pub (cropped).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Falkland_Island_wolf,_Dusicyon_australis_OMNZVT2369_!1pub_(cropped).jpg",
+    "artist": "Kane Fleury, MothmanNZ",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "bluebuck",
+    "file": "bluebuck.jpg",
+    "commonsTitle": "Hippotragus leucophaeus, Naturhistorisches Museum Wien.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippotragus_leucophaeus,_Naturhistorisches_Museum_Wien.jpg",
+    "artist": "Sandstein",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "pyrenean-ibex",
+    "file": "pyrenean-ibex.jpg",
+    "commonsTitle": "Capra pyrenaica pyrenaica MHNT ART 39.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg",
+    "artist": "Roger Culos",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "japanese-sea-lion",
+    "file": "japanese-sea-lion.jpg",
+    "commonsTitle": "Sea lion in Takeshima, Japan (June 1934).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_lion_in_Takeshima,_Japan_(June_1934).jpg",
+    "artist": "Unknown photographer, Takeshima, June 1934",
+    "license": "Public domain"
+  },
+  {
+    "slug": "kauai-oo",
+    "file": "kauai-oo.jpg",
+    "commonsTitle": "Moho braccatus Cassin, Bishop Museum, Honolulu.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moho_braccatus_Cassin,_Bishop_Museum,_Honolulu.JPG",
+    "artist": "Hiart",
+    "license": "CC0"
+  },
+  {
+    "slug": "bramble-cay-melomys",
+    "file": "bramble-cay-melomys.jpg",
+    "commonsTitle": "Bramble-cay-melomys.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg",
+    "artist": "Ian Bell, EHP, State of Queensland",
+    "license": "CC BY 3.0 au"
   }
 ]

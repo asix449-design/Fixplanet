@@ -155,6 +155,76 @@ const candidates = {
     'Giant moa.jpg',
     'Moa reconstruction.jpg',
   ],
+  'irish-elk': [
+    'Irish Elk.jpg',
+    'Megaloceros giganteus Paris 25 05 2013 01.jpg',
+    'Skeleton of giant Irish deer (Megaloceros giganteus).jpg',
+  ],
+  smilodon: [
+    'Saber-toothed cat (Smilodon fatalis) reconstruction, Natural History Museum, London, Mammals Gallery.JPG',
+    'Smilodon californicus mount.jpg',
+    'Smilodon fatalis.jpg',
+  ],
+  megatherium: [
+    'Megatherium americanum Skeleton NHM.JPG',
+    'Megatherium model at Heureka (side).jpg',
+    'Megatherium americanum Marcus Burkhardt.jpg',
+  ],
+  thylacoleo: [
+    'Thylacoleo carnifex skull.jpg',
+    'Marsupial lion (Thylacoleo carnifex).png',
+    'Thylacoleo BW.jpg',
+  ],
+  diprotodon: [
+    'Diprotodon optatum.jpg',
+    'Diprotodon optatum (2).jpg',
+    'Diprotodon australis skeleton 1.JPG',
+  ],
+  'haast-eagle': [
+    'Giant Haasts eagle attacking New Zealand moa.jpg',
+    "Canterbury Museum, Christchurch - Joy of Museums - Haast's Eagle.jpg",
+    'Harpagornis moorei skull.jpg',
+  ],
+  'elephant-bird': [
+    'Aepyornis maximus.jpg',
+    'Aepyornis maximus reconstruction.jpg',
+    'Aepyornis skull.JPG',
+  ],
+  'carolina-parakeet': [
+    'Conuropsis carolinensis (Carolina parakeet).jpg',
+    'Karolinasittich 01.jpg',
+    'Conuropsis carolinensis.jpg',
+  ],
+  'falkland-islands-wolf': [
+    'Falkland Island wolf, Dusicyon australis OMNZVT2369 !1pub (cropped).jpg',
+    'FalklandIslandFox2.jpg',
+    'Falkland Island wolf, Dusicyon australis OMNZVT2369 !5pub.jpg',
+  ],
+  bluebuck: [
+    'Hippotragus leucophaeus, Naturhistorisches Museum Wien.jpg',
+    'BlueAntelope1801.jpg',
+    'The book of antelopes (1894) Hippotragus leucophaeus.png',
+  ],
+  'pyrenean-ibex': [
+    'Capra pyrenaica pyrenaica MHNT ART 39.jpg',
+    'Pyrenean Ibex.png',
+    'Capra pyrenaica pyrenaica.png',
+  ],
+  'japanese-sea-lion': [
+    'Sea lion in Takeshima, Japan (June 1934).jpg',
+    'Zalophus japonicus.JPG',
+    'Zalophus japonicus2.jpg',
+  ],
+  'kauai-oo': [
+    'Moho braccatus Cassin, Bishop Museum, Honolulu.JPG',
+    'Moho braccatus (Kauaʻi ʻŌʻō) (48719878462).jpg',
+    'Kauaioo.jpg',
+  ],
+  'bramble-cay-melomys': [
+    'Bramble-cay-melomys.jpg',
+    'Melomys rubicola 3.jpg',
+    'Melomys rubicola 1.jpg',
+  ],
 };
 
 async function commonsInfo(title) {
