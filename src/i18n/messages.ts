@@ -195,6 +195,7 @@ const en = {
     imageCredit: 'Image',
     iucn: {
       EX: 'Extinct',
+      EW: 'Extinct in the Wild',
       CR: 'Critically Endangered',
       CR_PE: 'Critically Endangered (Possibly Extinct)',
       EN: 'Endangered',
@@ -484,6 +485,7 @@ const ru: typeof en = {
     imageCredit: 'Изображение',
     iucn: {
       EX: 'Исчезнувший',
+      EW: 'Исчез в дикой природе',
       CR: 'На грани исчезновения',
       CR_PE: 'На грани исчезновения (возможно, исчез)',
       EN: 'Исчезающий',
@@ -776,6 +778,7 @@ const pl: typeof en = {
     imageCredit: 'Zdjęcie',
     iucn: {
       EX: 'Wymarły',
+      EW: 'Wymarły na wolności',
       CR: 'Krytycznie zagrożony',
       CR_PE: 'Krytycznie zagrożony (prawdopodobnie wymarły)',
       EN: 'Zagrożony',
@@ -1068,6 +1071,7 @@ const lv: typeof en = {
     imageCredit: 'Attēls',
     iucn: {
       EX: 'Izmiris',
+      EW: 'Izmiris savvaļā',
       CR: 'Kritiski apdraudēts',
       CR_PE: 'Kritiski apdraudēts (iespējams, izmiris)',
       EN: 'Apdraudēts',

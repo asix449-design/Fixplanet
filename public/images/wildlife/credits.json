@@ -1,11 +1,27 @@
 [
   {
-    "slug": "gray-wolf",
-    "file": "gray-wolf.jpg",
-    "commonsTitle": "Gray Wolf.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_Wolf.jpg",
-    "artist": "Brendan J. O'Reilly",
+    "slug": "addax",
+    "file": "addax.jpg",
+    "commonsTitle": "Addax nasomaculatus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Addax_nasomaculatus.jpg",
+    "artist": "Dezidor",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "african-forest-elephant",
+    "file": "african-forest-elephant.jpg",
+    "commonsTitle": "African Forest Elephant.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27%C3%A9l%C3%A9phant_de_for%C3%AAt_d%27Afrique_(Loxodonta_cyclotis).jpg",
+    "artist": "VIGNA christian",
     "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "african-savanna-elephant",
+    "file": "african-savanna-elephant.jpg",
+    "commonsTitle": "African Bush Elephant.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg",
+    "artist": "Muhammad Mahdi Karim Facebook\n\n\n\n\n\nThe making of this document was supported by Wikimedia CH. (Submit your project!)\nFor all the files concerned, please see the category Supported by Wikimedia CH.\n\n\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\u00a0\u2219 \u09ac\u09be\u0982\u09b2\u09be\u00a0\u2219 \u010de\u0161tina\u00a0\u2219 Deutsch\u00a0\u2219 English\u00a0\u2219 Esperanto\u00a0\u2219 espa\u00f1ol\u00a0\u2219 fran\u00e7ais\u00a0\u2219 galego\u00a0\u2219 \u0939\u093f\u0928\u094d\u0926\u0940\u00a0\u2219 magyar\u00a0\u2219 italiano\u00a0\u2219 \u65e5\u672c\u8a9e\u00a0\u2219 \u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438\u00a0\u2219 Nederlands\u00a0\u2219 portugu\u00eas do Brasil\u00a0\u2219 rumantsch\u00a0\u2219 \u0440\u0443\u0441\u0441\u043a\u0438\u0439\u00a0\u2219 sicilianu\u00a0\u2219 sloven\u0161\u010dina\u00a0\u2219 \u0ba4\u0bae\u0bbf\u0bb4\u0bcd\u00a0\u2219 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\u00a0\u2219 \u4e2d\u6587\u00a0\u2219 +/\u2212",
+    "license": "GFDL 1.2"
   },
   {
     "slug": "american-bison",
@@ -16,44 +32,12 @@
     "license": "Public domain"
   },
   {
-    "slug": "lion",
-    "file": "lion.jpg",
-    "commonsTitle": "Lion waiting in Namibia.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion_waiting_in_Namibia.jpg",
-    "artist": "Kevin Pluck",
-    "license": "CC BY 2.0"
-  },
-  {
-    "slug": "red-deer",
-    "file": "red-deer.jpg",
-    "commonsTitle": "Cervus elaphus Luc Viatour 1.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_1.jpg",
-    "artist": "Lviatour",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "wild-boar",
-    "file": "wild-boar.jpg",
-    "commonsTitle": "Sus scrofa scrofa.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sus_scrofa_scrofa.jpg",
-    "artist": "Joshua Lutz",
-    "license": "Public domain"
-  },
-  {
-    "slug": "humpback-whale",
-    "file": "humpback-whale.jpg",
-    "commonsTitle": "Humpback stellwagen edit.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_stellwagen_edit.jpg",
-    "artist": "Whit Welles Wwelles14",
-    "license": "CC BY 3.0"
-  },
-  {
-    "slug": "vaquita",
-    "file": "vaquita.jpg",
-    "commonsTitle": "Vaquita4 Olson NOAA.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg",
-    "artist": "Paula Olson, NOAA",
-    "license": "Public domain"
+    "slug": "amur-leopard",
+    "file": "amur-leopard.jpg",
+    "commonsTitle": "Amur Leopard Panthera pardus orientalis Facing Forward 1761px.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur_Leopard_Panthera_pardus_orientalis_Facing_Forward_1761px.jpg",
+    "artist": "Photo by Derek Ramsey (Ram-Man)",
+    "license": "CC BY-SA 2.5"
   },
   {
     "slug": "amur-tiger",
@@ -61,6 +45,30 @@
     "commonsTitle": "Siberian Tiger sf.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siberian_Tiger_sf.jpg",
     "artist": "Brocken Inaglory",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "aurochs",
+    "file": "aurochs.jpg",
+    "commonsTitle": "Aurochs reconstruction.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurochs_reconstruction.jpg",
+    "artist": "Jaap Rouwenhorst (photograph) DFoidl (GIMP modifications)",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "axolotl",
+    "file": "axolotl.jpg",
+    "commonsTitle": "Ambystoma mexicanum 1.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_1.jpg",
+    "artist": "Stan Shebs",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "baiji",
+    "file": "baiji.png",
+    "commonsTitle": "Lipotes vexillifer.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lipotes_vexillifer.png",
+    "artist": "Alessio Marrucci",
     "license": "CC BY-SA 3.0"
   },
   {
@@ -72,116 +80,20 @@
     "license": "GFDL 1.2"
   },
   {
-    "slug": "african-forest-elephant",
-    "file": "african-forest-elephant.jpg",
-    "commonsTitle": "African Forest Elephant.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27%C3%A9l%C3%A9phant_de_for%C3%AAt_d%27Afrique_(Loxodonta_cyclotis).jpg",
-    "artist": "VIGNA christian",
-    "license": "CC BY-SA 4.0"
+    "slug": "bluebuck",
+    "file": "bluebuck.jpg",
+    "commonsTitle": "Hippotragus leucophaeus, Naturhistorisches Museum Wien.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippotragus_leucophaeus,_Naturhistorisches_Museum_Wien.jpg",
+    "artist": "Sandstein",
+    "license": "CC BY 3.0"
   },
   {
-    "slug": "hawksbill-turtle",
-    "file": "hawksbill-turtle.jpg",
-    "commonsTitle": "Hawksbill sea turtle swimming.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg",
-    "artist": "Pseudopanax at English Wikipedia",
-    "license": "Public domain"
-  },
-  {
-    "slug": "woolly-mammoth",
-    "file": "woolly-mammoth.jpg",
-    "commonsTitle": "Woolly mammoth.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woolly_mammoth.jpg",
-    "artist": "Flying Puffin",
-    "license": "CC BY-SA 2.0"
-  },
-  {
-    "slug": "dodo",
-    "file": "dodo.jpg",
-    "commonsTitle": "Oxford Dodo display.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oxford_Dodo_display.jpg",
-    "artist": "BazzaDaRambler",
-    "license": "CC BY 2.0"
-  },
-  {
-    "slug": "passenger-pigeon",
-    "file": "passenger-pigeon.jpg",
-    "commonsTitle": "Ectopistes migratorius (passenger pigeon).jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ectopistes_migratorius_(passenger_pigeon).jpg",
-    "artist": "James St. John",
-    "license": "CC BY 2.0"
-  },
-  {
-    "slug": "thylacine",
-    "file": "thylacine.jpg",
-    "commonsTitle": "Thylacinus.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacinus.jpg",
-    "artist": "Baker; E.J. Keller.",
-    "license": "Public domain"
-  },
-  {
-    "slug": "stellers-sea-cow",
-    "file": "stellers-sea-cow.jpg",
-    "commonsTitle": "Extanstellersseacowea.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Extanstellersseacowea.jpg",
-    "artist": "J.F. Brandt",
-    "license": "Public domain"
-  },
-  {
-    "slug": "aurochs",
-    "file": "aurochs.jpg",
-    "commonsTitle": "Aurochs reconstruction.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurochs_reconstruction.jpg",
-    "artist": "Jaap Rouwenhorst (photograph) DFoidl (GIMP modifications)",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "great-auk",
-    "file": "great-auk.jpg",
-    "commonsTitle": "Pinguinus impennis.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinguinus_impennis.jpg",
-    "artist": "J.G.Wood",
-    "license": "Public domain"
-  },
-  {
-    "slug": "caribbean-monk-seal",
-    "file": "caribbean-monk-seal.jpg",
-    "commonsTitle": "Monachus tropicalis.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monachus_tropicalis.jpg",
-    "artist": "Wikimedia Commons",
-    "license": "Public domain"
-  },
-  {
-    "slug": "quagga",
-    "file": "quagga.jpg",
-    "commonsTitle": "Quagga photo.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quagga_photo.jpg",
-    "artist": "Frederick York (d. 1903)",
-    "license": "Public domain"
-  },
-  {
-    "slug": "western-black-rhinoceros",
-    "file": "western-black-rhinoceros.jpg",
-    "commonsTitle": "Diceros bicornis longipes.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_longipes.jpg",
-    "artist": "Senckenberg Museum",
-    "license": "Public domain"
-  },
-  {
-    "slug": "baiji",
-    "file": "baiji.png",
-    "commonsTitle": "Lipotes vexillifer.png",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lipotes_vexillifer.png",
-    "artist": "Alessio Marrucci",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "moa",
-    "file": "moa.jpg",
-    "commonsTitle": "Dinornis robustus.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinornis_robustus.jpg",
-    "artist": "Mundy, Daniel Louis, 1826? -1881",
-    "license": "Public domain"
+    "slug": "bramble-cay-melomys",
+    "file": "bramble-cay-melomys.jpg",
+    "commonsTitle": "Bramble-cay-melomys.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg",
+    "artist": "Ian Bell, EHP, State of Queensland",
+    "license": "CC BY 3.0 au"
   },
   {
     "slug": "brown-bear",
@@ -192,107 +104,19 @@
     "license": "CC BY 2.5"
   },
   {
-    "slug": "african-savanna-elephant",
-    "file": "african-savanna-elephant.jpg",
-    "commonsTitle": "African Bush Elephant.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg",
-    "artist": "Muhammad Mahdi Karim Facebook\n\n\n\n\n\nThe making of this document was supported by Wikimedia CH. (Submit your project!)\nFor all the files concerned, please see the category Supported by Wikimedia CH.\n\n\nالعربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−",
-    "license": "GFDL 1.2"
-  },
-  {
-    "slug": "european-beaver",
-    "file": "european-beaver.jpg",
-    "commonsTitle": "Bever - Eurasian beaver - Castor fiber 6.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bever_-_Eurasian_beaver_-_Castor_fiber_6.jpg",
-    "artist": "Bouke ten Cate",
+    "slug": "cao-vit-gibbon",
+    "file": "cao-vit-gibbon.jpg",
+    "commonsTitle": "Nomascus nasutus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nomascus_nasutus.jpg",
+    "artist": "Laura Flamme",
     "license": "CC BY 4.0"
   },
   {
-    "slug": "sumatran-orangutan",
-    "file": "sumatran-orangutan.jpg",
-    "commonsTitle": "Sumatran Orangutan (Pongo abelii) at Perth Zoo, October 2024 18.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumatran_Orangutan_(Pongo_abelii)_at_Perth_Zoo,_October_2024_18.jpg",
-    "artist": "Calistemon",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "slug": "mountain-gorilla",
-    "file": "mountain-gorilla.jpg",
-    "commonsTitle": "Mountain gorilla (Gorilla beringei beringei) female 2.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg",
-    "artist": "Charles J. Sharp",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "slug": "amur-leopard",
-    "file": "amur-leopard.jpg",
-    "commonsTitle": "Amur Leopard Panthera pardus orientalis Facing Forward 1761px.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur_Leopard_Panthera_pardus_orientalis_Facing_Forward_1761px.jpg",
-    "artist": "Photo by Derek Ramsey (Ram-Man)",
-    "license": "CC BY-SA 2.5"
-  },
-  {
-    "slug": "wildlife-section-bg",
-    "file": "wildlife-section-bg.jpg",
-    "commonsTitle": "",
-    "sourceUrl": "",
-    "artist": "Fix Planet section theme — dense South American wildlife collage in a natural-history / sunset style",
-    "license": "Site theme asset"
-  },
-  {
-    "slug": "irish-elk",
-    "file": "irish-elk.jpg",
-    "commonsTitle": "Irish Elk.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_Elk.jpg",
-    "artist": "Postdlf",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "smilodon",
-    "file": "smilodon.jpg",
-    "commonsTitle": "Saber-toothed cat (Smilodon fatalis) reconstruction, Natural History Museum, London, Mammals Gallery.JPG",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saber-toothed_cat_(Smilodon_fatalis)_reconstruction,_Natural_History_Museum,_London,_Mammals_Gallery.JPG",
-    "artist": "John Cummings",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "megatherium",
-    "file": "megatherium.jpg",
-    "commonsTitle": "Megatherium americanum Skeleton NHM.JPG",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Megatherium_americanum_Skeleton_NHM.JPG",
-    "artist": "en:User:Ballista",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "thylacoleo",
-    "file": "thylacoleo.jpg",
-    "commonsTitle": "Thylacoleo carnifex skull.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacoleo_carnifex_skull.jpg",
-    "artist": "David Hocking / Museums Victoria",
-    "license": "CC BY 4.0"
-  },
-  {
-    "slug": "diprotodon",
-    "file": "diprotodon.jpg",
-    "commonsTitle": "Diprotodon optatum.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diprotodon_optatum.jpg",
-    "artist": "Nobu Tamura (https://spinops.blogspot.com)",
-    "license": "CC BY 3.0"
-  },
-  {
-    "slug": "haast-eagle",
-    "file": "haast-eagle.jpg",
-    "commonsTitle": "Giant Haasts eagle attacking New Zealand moa.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Haasts_eagle_attacking_New_Zealand_moa.jpg",
-    "artist": "John Megahan",
-    "license": "CC BY 2.5"
-  },
-  {
-    "slug": "elephant-bird",
-    "file": "elephant-bird.jpg",
-    "commonsTitle": "Aepyornis maximus.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aepyornis_maximus.jpg",
-    "artist": "Monnier",
+    "slug": "caribbean-monk-seal",
+    "file": "caribbean-monk-seal.jpg",
+    "commonsTitle": "Monachus tropicalis.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monachus_tropicalis.jpg",
+    "artist": "Wikimedia Commons",
     "license": "Public domain"
   },
   {
@@ -304,6 +128,62 @@
     "license": "CC BY 2.0"
   },
   {
+    "slug": "chinese-giant-salamander",
+    "file": "chinese-giant-salamander.jpg",
+    "commonsTitle": "Velemlok \u010d\u00ednsk\u00fd zoo praha 1.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg",
+    "artist": "Petr Hamern\u00edk",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "chinese-pangolin",
+    "file": "chinese-pangolin.jpg",
+    "commonsTitle": "Manis pentadactyla.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manis_pentadactyla.jpg",
+    "artist": "Claire H. from New York City, USA",
+    "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "devils-hole-pupfish",
+    "file": "devils-hole-pupfish.jpg",
+    "commonsTitle": "Blue Devils Hole pupfish (NPS).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Devils_Hole_pupfish_(NPS).jpg",
+    "artist": "Presumably Olin Feuerbacher",
+    "license": "Public domain"
+  },
+  {
+    "slug": "diprotodon",
+    "file": "diprotodon.jpg",
+    "commonsTitle": "Diprotodon optatum.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diprotodon_optatum.jpg",
+    "artist": "Nobu Tamura (https://spinops.blogspot.com)",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "dodo",
+    "file": "dodo.jpg",
+    "commonsTitle": "Oxford Dodo display.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oxford_Dodo_display.jpg",
+    "artist": "BazzaDaRambler",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "elephant-bird",
+    "file": "elephant-bird.jpg",
+    "commonsTitle": "Aepyornis maximus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aepyornis_maximus.jpg",
+    "artist": "Monnier",
+    "license": "Public domain"
+  },
+  {
+    "slug": "european-beaver",
+    "file": "european-beaver.jpg",
+    "commonsTitle": "Bever - Eurasian beaver - Castor fiber 6.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bever_-_Eurasian_beaver_-_Castor_fiber_6.jpg",
+    "artist": "Bouke ten Cate",
+    "license": "CC BY 4.0"
+  },
+  {
     "slug": "falkland-islands-wolf",
     "file": "falkland-islands-wolf.jpg",
     "commonsTitle": "Falkland Island wolf, Dusicyon australis OMNZVT2369 !1pub (cropped).jpg",
@@ -312,20 +192,60 @@
     "license": "CC BY 4.0"
   },
   {
-    "slug": "bluebuck",
-    "file": "bluebuck.jpg",
-    "commonsTitle": "Hippotragus leucophaeus, Naturhistorisches Museum Wien.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippotragus_leucophaeus,_Naturhistorisches_Museum_Wien.jpg",
-    "artist": "Sandstein",
+    "slug": "gray-wolf",
+    "file": "gray-wolf.jpg",
+    "commonsTitle": "Gray Wolf.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_Wolf.jpg",
+    "artist": "Brendan J. O'Reilly",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "great-auk",
+    "file": "great-auk.jpg",
+    "commonsTitle": "Pinguinus impennis.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinguinus_impennis.jpg",
+    "artist": "J.G.Wood",
+    "license": "Public domain"
+  },
+  {
+    "slug": "haast-eagle",
+    "file": "haast-eagle.jpg",
+    "commonsTitle": "Giant Haasts eagle attacking New Zealand moa.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Haasts_eagle_attacking_New_Zealand_moa.jpg",
+    "artist": "John Megahan",
+    "license": "CC BY 2.5"
+  },
+  {
+    "slug": "hawksbill-turtle",
+    "file": "hawksbill-turtle.jpg",
+    "commonsTitle": "Hawksbill sea turtle swimming.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg",
+    "artist": "Pseudopanax at English Wikipedia",
+    "license": "Public domain"
+  },
+  {
+    "slug": "humpback-whale",
+    "file": "humpback-whale.jpg",
+    "commonsTitle": "Humpback stellwagen edit.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_stellwagen_edit.jpg",
+    "artist": "Whit Welles Wwelles14",
     "license": "CC BY 3.0"
   },
   {
-    "slug": "pyrenean-ibex",
-    "file": "pyrenean-ibex.jpg",
-    "commonsTitle": "Capra pyrenaica pyrenaica MHNT ART 39.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg",
-    "artist": "Roger Culos",
-    "license": "CC BY-SA 4.0"
+    "slug": "indian-pangolin",
+    "file": "indian-pangolin.jpg",
+    "commonsTitle": "Scaly ant eater by Dushy Ranetunge 2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scaly_ant_eater_by_Dushy_Ranetunge_2.jpg",
+    "artist": "Dushy Ranetunge",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "irish-elk",
+    "file": "irish-elk.jpg",
+    "commonsTitle": "Irish Elk.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_Elk.jpg",
+    "artist": "Postdlf",
+    "license": "CC BY-SA 3.0"
   },
   {
     "slug": "japanese-sea-lion",
@@ -336,6 +256,22 @@
     "license": "Public domain"
   },
   {
+    "slug": "javan-rhinoceros",
+    "file": "javan-rhinoceros.jpg",
+    "commonsTitle": "Rhinoceros sondaicus in London Zoo.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhinoceros_sondaicus_in_London_Zoo.jpg",
+    "artist": "T.Dixon. The Zoological Society of London",
+    "license": "Public domain"
+  },
+  {
+    "slug": "kakapo",
+    "file": "kakapo.jpg",
+    "commonsTitle": "Kakapo Sirocco 1.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg",
+    "artist": "Department of Conservation",
+    "license": "CC BY 2.0"
+  },
+  {
     "slug": "kauai-oo",
     "file": "kauai-oo.jpg",
     "commonsTitle": "Moho braccatus Cassin, Bishop Museum, Honolulu.JPG",
@@ -344,11 +280,227 @@
     "license": "CC0"
   },
   {
-    "slug": "bramble-cay-melomys",
-    "file": "bramble-cay-melomys.jpg",
-    "commonsTitle": "Bramble-cay-melomys.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg",
-    "artist": "Ian Bell, EHP, State of Queensland",
-    "license": "CC BY 3.0 au"
+    "slug": "lion",
+    "file": "lion.jpg",
+    "commonsTitle": "Lion waiting in Namibia.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion_waiting_in_Namibia.jpg",
+    "artist": "Kevin Pluck",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "megatherium",
+    "file": "megatherium.jpg",
+    "commonsTitle": "Megatherium americanum Skeleton NHM.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Megatherium_americanum_Skeleton_NHM.JPG",
+    "artist": "en:User:Ballista",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "moa",
+    "file": "moa.jpg",
+    "commonsTitle": "Dinornis robustus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinornis_robustus.jpg",
+    "artist": "Mundy, Daniel Louis, 1826? -1881",
+    "license": "Public domain"
+  },
+  {
+    "slug": "mountain-gorilla",
+    "file": "mountain-gorilla.jpg",
+    "commonsTitle": "Mountain gorilla (Gorilla beringei beringei) female 2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "north-atlantic-right-whale",
+    "file": "north-atlantic-right-whale.jpg",
+    "commonsTitle": "Eubalaena glacialis with calf.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eubalaena_glacialis_with_calf.jpg",
+    "artist": "Wikimedia Commons",
+    "license": "Public domain"
+  },
+  {
+    "slug": "northern-white-rhinoceros",
+    "file": "northern-white-rhinoceros.jpg",
+    "commonsTitle": "Northern White Rhinoceros Angalifu.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northern_White_Rhinoceros_Angalifu.jpg",
+    "artist": "Sheep81",
+    "license": "Public domain"
+  },
+  {
+    "slug": "passenger-pigeon",
+    "file": "passenger-pigeon.jpg",
+    "commonsTitle": "Ectopistes migratorius (passenger pigeon).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ectopistes_migratorius_(passenger_pigeon).jpg",
+    "artist": "James St. John",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "philippine-pangolin",
+    "file": "philippine-pangolin.jpg",
+    "commonsTitle": "Philippine pangolin 2015 stamp of the Philippines.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philippine_pangolin_2015_stamp_of_the_Philippines.jpg",
+    "artist": "Rodine Teodoro (Philippine Postal Corporation)",
+    "license": "Public domain"
+  },
+  {
+    "slug": "pyrenean-ibex",
+    "file": "pyrenean-ibex.jpg",
+    "commonsTitle": "Capra pyrenaica pyrenaica MHNT ART 39.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg",
+    "artist": "Roger Culos",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "quagga",
+    "file": "quagga.jpg",
+    "commonsTitle": "Quagga photo.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quagga_photo.jpg",
+    "artist": "Frederick York (d. 1903)",
+    "license": "Public domain"
+  },
+  {
+    "slug": "red-deer",
+    "file": "red-deer.jpg",
+    "commonsTitle": "Cervus elaphus Luc Viatour 1.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_1.jpg",
+    "artist": "Lviatour",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "rices-whale",
+    "file": "rices-whale.jpg",
+    "commonsTitle": "Rice's whale close to surface.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice%27s_whale_close_to_surface.jpg",
+    "artist": "National Oceanic and Atmospheric Association (NOAA)",
+    "license": "Public domain"
+  },
+  {
+    "slug": "saola",
+    "file": "saola.png",
+    "commonsTitle": "Pseudoryx nghetinhensis.PNG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pseudoryx_nghetinhensis.PNG",
+    "artist": "The original uploader was Silviculture at Vietnamese Wikipedia.",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "smilodon",
+    "file": "smilodon.jpg",
+    "commonsTitle": "Saber-toothed cat (Smilodon fatalis) reconstruction, Natural History Museum, London, Mammals Gallery.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saber-toothed_cat_(Smilodon_fatalis)_reconstruction,_Natural_History_Museum,_London,_Mammals_Gallery.JPG",
+    "artist": "John Cummings",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "spixs-macaw",
+    "file": "spixs-macaw.jpg",
+    "commonsTitle": "Spix's Macaw (Cyanopsitta spixii) at Jurong Bird Park in Singapore.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spix%27s_Macaw_(Cyanopsitta_spixii)_at_Jurong_Bird_Park_in_Singapore.jpg",
+    "artist": "Evan Centanni",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "stellers-sea-cow",
+    "file": "stellers-sea-cow.jpg",
+    "commonsTitle": "Extanstellersseacowea.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Extanstellersseacowea.jpg",
+    "artist": "J.F. Brandt",
+    "license": "Public domain"
+  },
+  {
+    "slug": "sumatran-orangutan",
+    "file": "sumatran-orangutan.jpg",
+    "commonsTitle": "Sumatran Orangutan (Pongo abelii) at Perth Zoo, October 2024 18.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumatran_Orangutan_(Pongo_abelii)_at_Perth_Zoo,_October_2024_18.jpg",
+    "artist": "Calistemon",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "sumatran-rhinoceros",
+    "file": "sumatran-rhinoceros.jpg",
+    "commonsTitle": "Sumatran Rhinoceros Way Kambas 2008.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumatran_Rhinoceros_Way_Kambas_2008.jpg",
+    "artist": "Willem v Strien",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "sumatran-tiger",
+    "file": "sumatran-tiger.jpg",
+    "commonsTitle": "Panthera tigris sumatrae.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panthera_tigris_sumatrae.jpg",
+    "artist": "CrazyPhunk",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "sunda-pangolin",
+    "file": "sunda-pangolin.jpg",
+    "commonsTitle": "Manis javanica.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manis_javanica.jpg",
+    "artist": "Ari hidayat99",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "thylacine",
+    "file": "thylacine.jpg",
+    "commonsTitle": "Thylacinus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacinus.jpg",
+    "artist": "Baker; E.J. Keller.",
+    "license": "Public domain"
+  },
+  {
+    "slug": "thylacoleo",
+    "file": "thylacoleo.jpg",
+    "commonsTitle": "Thylacoleo carnifex skull.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacoleo_carnifex_skull.jpg",
+    "artist": "David Hocking / Museums Victoria",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "vaquita",
+    "file": "vaquita.jpg",
+    "commonsTitle": "Vaquita4 Olson NOAA.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg",
+    "artist": "Paula Olson, NOAA",
+    "license": "Public domain"
+  },
+  {
+    "slug": "western-black-rhinoceros",
+    "file": "western-black-rhinoceros.jpg",
+    "commonsTitle": "Diceros bicornis longipes.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_longipes.jpg",
+    "artist": "Senckenberg Museum",
+    "license": "Public domain"
+  },
+  {
+    "slug": "wild-boar",
+    "file": "wild-boar.jpg",
+    "commonsTitle": "Sus scrofa scrofa.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sus_scrofa_scrofa.jpg",
+    "artist": "Joshua Lutz",
+    "license": "Public domain"
+  },
+  {
+    "slug": "wildlife-section-bg",
+    "file": "wildlife-section-bg.jpg",
+    "commonsTitle": "",
+    "sourceUrl": "",
+    "artist": "Fix Planet section theme \u2014 dense South American wildlife collage in a natural-history / sunset style",
+    "license": "Site theme asset"
+  },
+  {
+    "slug": "woolly-mammoth",
+    "file": "woolly-mammoth.jpg",
+    "commonsTitle": "Woolly mammoth.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woolly_mammoth.jpg",
+    "artist": "Flying Puffin",
+    "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "yangtze-giant-softshell-turtle",
+    "file": "yangtze-giant-softshell-turtle.jpg",
+    "commonsTitle": "R\u00f9a \u0110\u1ed3ng M\u00f4.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B9a_%C4%90%E1%BB%93ng_M%C3%B4.jpg",
+    "artist": "Phuongcacanh at Vietnamese Wikipedia",
+    "license": "CC BY-SA 3.0"
   }
 ]
