@@ -5,6 +5,12 @@ import {
   type MigrationEntryCopy,
   type MigrationShelf,
 } from '../data/migration';
+import {
+  humanEventMeta,
+  type HumanEventCoverage,
+  type HumanEventId,
+  type HumanEventMeta,
+} from '../data/human-migration-events';
 import type { Locale } from './config';
 import { entries as enEntries, page as en } from './migration-en';
 import { entries as lvEntries, page as lv } from './migration-lv';
@@ -16,6 +22,46 @@ export type HumanSection = {
   title: string;
   body: string;
 };
+
+export type HumanEventCopy = {
+  label: string;
+  title: string;
+  when: string;
+  where: string;
+  why: string;
+  uncertainty: string;
+  caption: string;
+  imageAlt: string;
+};
+
+export type HumanEventAtlasCopy = {
+  title: string;
+  lead: string;
+  honesty: string;
+  aria: string;
+  scrubberAria: string;
+  eventLabel: string;
+  whenLabel: string;
+  whereLabel: string;
+  whyLabel: string;
+  uncertaintyLabel: string;
+  nearestNote: string;
+  forthcomingNote: string;
+  sourceLabel: string;
+  licenseLabel: string;
+  vintageLabel: string;
+  schematicCredit: string;
+  greatMigrationsCta: string;
+  greatMigrationsNote: string;
+  coverage: Record<HumanEventCoverage, string>;
+  events: Record<HumanEventId, HumanEventCopy>;
+};
+
+export type HumanEventFrame = HumanEventMeta & HumanEventCopy;
+/** @deprecated Prefer HumanEventFrame */
+export type HumanEraFrame = HumanEventFrame;
+export type HumanEraCopy = HumanEventCopy;
+export type HumanEraAtlasCopy = HumanEventAtlasCopy;
 
 export type MigrationPage = {
   metaTitle: string;
@@ -71,6 +117,7 @@ export type MigrationPage = {
     mapSources: string;
     mapBaseCredit: string;
     honesty: string;
+    eventAtlas: HumanEventAtlasCopy;
     sections: HumanSection[];
   };
   birds: {
@@ -127,5 +174,16 @@ export function getMigrationBySlug(
   if (!fields) return undefined;
   return { ...meta, ...fields };
 }
+
+export function getHumanMigrationEvents(locale: Locale): HumanEventFrame[] {
+  const atlas = pages[locale].humans.eventAtlas;
+  const fallback = pages.en.humans.eventAtlas;
+  return humanEventMeta.map((meta) => {
+    const fields = atlas.events[meta.id] ?? fallback.events[meta.id];
+    return { ...meta, ...fields };
+  });
+}
+
+export const getHumanMigrationEras = getHumanMigrationEvents;
 
 export { migrationShelfKeys } from '../data/migration';

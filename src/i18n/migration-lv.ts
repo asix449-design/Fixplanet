@@ -1,5 +1,6 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
+import { lvHumanEventAtlas } from './human-event-atlas-lv';
 
 export const page: MigrationPage = {
   metaTitle: 'Migrācija — Fix Planet',
@@ -25,7 +26,7 @@ export const page: MigrationPage = {
   pressure: 'Kas mainās',
   wildlifeLink: 'Savvaļas sugas lapa →',
   tiles: {
-    humans: 'No Āfrikas, Sahula, Amerika: datēti ierašanās logi un klimats, kas tos veidoja.',
+    humans: 'Vispirms notikumu kartes: no Āfrikas, Sahula, zemkopība, bantu, austronēzieši, tautu staigāšana, vergu tirdzniecība. Nosauktas kustības, ne ikgadēja tautas skaitīšana.',
     'great-migrations':
       'Vēsturiskas masu kustības rakstītajos avotos. Pirmā kartīte: huņu spiediens uz romiešu pasauli.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
@@ -39,7 +40,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     humans:
-      'Homo sapiens radās Āfrikā ap 300 000 gadiem. Vēlākais ceļojums — ne sugas kartīte — ir šeit: koridori, krasti, ledus un barība. Megafaunas zudums minēts tikai tur, kur tas izskaidro maršrutu; Izmirušo katalogs paliek Savvaļā. Atila un tautu staigāšanas laikmets ir cits pulkstenis: Lielās migrācijas.',
+      'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila paliek Lielajās migrācijās; tautu staigāšanas kartīte ved turp.',
     'great-migrations':
       'Nosauktas masu kustības vēsturiskajā laikā — ne izeja no Āfrikas. Pirmā kartīte ir huņu spiediens uz vēlo romiešu pasauli. Vēlāk var pievienot citas kartītes; tas nav mācību grāmata par katru Völkerwanderung tautu.',
     birds:
@@ -51,7 +52,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Mūsu suga',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'Mūsdienu pieaugušais cilvēks pļavā — cieņpilna, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
+      'Neliels viduslaiku zemnieka zīmējums vienkāršā cepurē, brūnā tunikā, ar auklas jostu un kapli — ne karalis un ne konkrētas personas portrets',
     appearedLabel: 'Parādījās',
     appeared:
       'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem (Hublin et al. 2017). Ģenētika un fosiliju rinda Homo sapiens izcelsmi liek šajā kontinentā. Agrākās Homo sugas jau bija atstājušas Āfriku; šī lapa ir mūsu sugas vēlākā, globālā izplatīšanās.',
@@ -67,7 +68,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Savvaļa · Homo sapiens →',
     greatMigrationsCta: 'Lielās migrācijas →',
     greatMigrationsNote:
-      'Vēsturiskas masu kustības rakstītajos avotos — huņņi un vēlākas kartītes — ir atsevišķā plauktā. Šī lapa ir vēlais pleistocēns un holocēns, ne Atila.',
+      'Vēsturiskas masu kustības rakstītajos avotos — huņņi un vēlākas kartītes — ir atsevišķā plauktā. Tautu staigāšanas kartīte augstāk ved turp, nevis dublē to enciklopēdiju.',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem ierašanās soļiem',
     mapLead:
@@ -91,6 +92,7 @@ export const page: MigrationPage = {
       'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums) — bez mākoņiem fiziskā Zeme, ne politiskā karte.',
     honesty:
       'Shēma ar datētiem logiem uz fiziskas Zemes attēla. Tā nav GPS trase, nav ģenētiskais koks un nav apgalvojums, ka klimats vien pārvietoja cilvēkus.',
+    eventAtlas: lvHumanEventAtlas,
     sections: [
       {
         id: 'origin',

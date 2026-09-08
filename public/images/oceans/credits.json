@@ -10,12 +10,13 @@
   },
   {
     "file": "oceans-hub-bg.jpg",
-    "title": "Sun breaking through clouds over ocean",
-    "source": "bigwavephoto / Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:Sun_breaking_through_clouds_over_ocean.jpg",
-    "license": "CC BY-SA 4.0",
+    "title": "Great Barrier Reef near the Whitsunday Islands, astronaut photograph ISS045-E-56257",
+    "source": "NASA Earth Observatory / ISS Expedition 45",
+    "url": "https://earthobservatory.nasa.gov/images/88109/great-barrier-reef-near-whitsunday-islands",
+    "direct": "https://eol.jsc.nasa.gov/DatabaseImages/ESC/large/ISS045/ISS045-E-56257.JPG",
+    "license": "Public domain (NASA)",
     "kind": "hosted-original",
-    "note": "Oceans hub hero only. Sun through storm cloud over open water, not a data map. Shelf pages keep the ISS Pacific sunglint backdrop."
+    "note": "Oceans hub hero only. Aerial turquoise reef, founder brief; this is the identifiable public-domain Commons/EO twin. Shelf pages keep the ISS Pacific sunglint backdrop."
   },
   {
     "file": "sst-2003.jpg",

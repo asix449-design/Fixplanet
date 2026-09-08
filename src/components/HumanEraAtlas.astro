@@ -1,0 +1,366 @@
+---
+import { humanEventPreviewSrc, type HumanEventId } from '../data/human-migration-events';
+import { localizePath, resolveLocale } from '../i18n';
+import type { HumanEventFrame } from '../i18n/migration';
+
+interface Props {
+  events: HumanEventFrame[];
+  atlas: {
+    title: string;
+    lead: string;
+    honesty: string;
+    aria: string;
+    scrubberAria: string;
+    eventLabel: string;
+    whenLabel: string;
+    whereLabel: string;
+    whyLabel: string;
+    uncertaintyLabel: string;
+    nearestNote: string;
+    forthcomingNote: string;
+    sourceLabel: string;
+    licenseLabel: string;
+    vintageLabel: string;
+    schematicCredit: string;
+    greatMigrationsCta: string;
+    greatMigrationsNote: string;
+    coverage: Record<string, string>;
+  };
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const { events, atlas } = Astro.props;
+const initial = events[0];
+const greatHref = localizePath('/migration/great-migrations', locale);
+
+const pins = [
+  { id: 'africa', n: '1', x: 606, y: 242, labelX: 548, labelY: 268, anchor: 'end' as const },
+  { id: 'out', n: '2', x: 598, y: 164, labelX: 552, labelY: 148, anchor: 'end' as const },
+  { id: 'sahul', n: '3', x: 878, y: 312, labelX: 878, labelY: 348, anchor: 'middle' as const },
+  { id: 'americas', n: '4', x: 92, y: 78, labelX: 118, labelY: 58, anchor: 'start' as const },
+  { id: 'bantu', n: '5', x: 555, y: 228, labelX: 500, labelY: 208, anchor: 'end' as const },
+] as const;
+
+const pinLabel: Record<(typeof pins)[number]['id'], string> = {
+  africa: events.find((e) => e.id === 'out-of-africa')?.label ?? '',
+  out: events.find((e) => e.id === 'out-of-africa')?.label ?? '',
+  sahul: events.find((e) => e.id === 'sahul')?.label ?? '',
+  americas: events.find((e) => e.id === 'americas')?.label ?? '',
+  bantu: events.find((e) => e.id === 'bantu')?.label ?? '',
+};
+
+const payload = events.map((event) => ({
+  id: event.id as HumanEventId,
+  kind: event.kind,
+  highlight: event.highlight,
+  coverage: event.coverage,
+  nearest: event.nearest,
+  mapForthcoming: event.mapForthcoming === true,
+  plate: event.plate ? humanEventPreviewSrc(event.plate) : '',
+  plateWidth: event.plateWidth ?? 1600,
+  plateHeight: event.plateHeight ?? 800,
+  sourceShort: event.sourceShort,
+  sourceOrg: event.sourceOrg,
+  sourceUrl: event.sourceUrl,
+  license: event.license,
+  licenseUrl: event.licenseUrl,
+  vintage: event.vintage,
+  greatMigrationsLink: event.greatMigrationsLink === true,
+  label: event.label,
+  title: event.title,
+  when: event.when,
+  where: event.where,
+  why: event.why,
+  uncertainty: event.uncertainty,
+  caption: event.caption,
+  imageAlt: event.imageAlt,
+}));
+---
+
+<section class="human-era" aria-labelledby="human-event-heading" data-human-era>
+  <p class="oceans-source-note">{atlas.honesty}</p>
+  <h2 id="human-event-heading">{atlas.title}</h2>
+  <p class="dispersal-lead">{atlas.lead}</p>
+
+  <div class="forest-map-meta">
+    <span class="pill" data-era-coverage>{atlas.coverage[initial.coverage]}</span>
+    <span class="pill" data-era-year-pill>{initial.label}</span>
+    <span class="pill" data-era-source-pill>{initial.sourceShort}</span>
+  </div>
+
+  <label class="forest-slider-label" for="human-event-range">
+    <span>{atlas.eventLabel}</span>
+    <strong data-era-year-strong>{initial.label}</strong>
+  </label>
+  <input
+    id="human-event-range"
+    class="forest-slider"
+    type="range"
+    min="0"
+    max={events.length - 1}
+    value="0"
+    data-era-range
+  />
+
+  <nav class="borders-scrubber forest-year-chips" aria-label={atlas.scrubberAria} data-era-chips>
+    {
+      events.map((event, index) => (
+        <button
+          type="button"
+          class:list={['borders-year', 'forest-year', { 'is-active': index === 0 }]}
+          data-era-chip
+          data-index={index}
+        >
+          {event.label}
+        </button>
+      ))
+    }
+  </nav>
+
+  <div class="human-era-stage">
+    <figure class="map-detail-art forest-map-art human-era-plate" data-era-plate hidden>
+      <img
+        data-era-image
+        src={initial.plate ? humanEventPreviewSrc(initial.plate) : ''}
+        alt={initial.imageAlt}
+        width={initial.plateWidth ?? 1600}
+        height={initial.plateHeight ?? 800}
+      />
+      <figcaption data-era-figcaption>
+        {initial.sourceOrg}. {atlas.vintageLabel}: {initial.vintage}.
+      </figcaption>
+    </figure>
+
+    <div class="dispersal-frame human-era-schematic" data-era-schematic>
+      <svg class="dispersal-svg" viewBox="0 0 1000 500" role="img" aria-label={atlas.aria}>
+        <title>{atlas.title}</title>
+        <desc>{atlas.lead} {atlas.schematicCredit}</desc>
+        <defs>
+          <clipPath id="human-era-earth-clip">
+            <rect width="1000" height="500" rx="14"></rect>
+          </clipPath>
+          <filter id="human-era-pin-halo" x="-40%" y="-40%" width="180%" height="180%">
+            <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#0a1610" flood-opacity="0.55"></feDropShadow>
+          </filter>
+          <marker id="human-era-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0 0 L9 4.5 L0 9 Z" fill="#f4f7f2"></path>
+          </marker>
+        </defs>
+
+        <g clip-path="url(#human-era-earth-clip)">
+          <image
+            href="/images/maps/blue-marble.jpg"
+            x="0"
+            y="0"
+            width="1000"
+            height="500"
+            preserveAspectRatio="xMidYMid slice"
+          ></image>
+          <rect width="1000" height="500" fill="rgba(8, 18, 14, 0.18)"></rect>
+        </g>
+        <rect
+          width="1000"
+          height="500"
+          fill="none"
+          stroke="rgba(20, 34, 26, 0.22)"
+          stroke-width="1.2"
+          rx="14"
+        ></rect>
+
+        <g
+          fill="none"
+          stroke="#f4f7f2"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          opacity="0.92"
+        >
+          <path data-era-path="out" d="M606 242 C 604 210, 600 184, 598 164" marker-end="url(#human-era-arrow)"></path>
+          <path data-era-path="sahul" d="M598 164 C 680 190, 780 250, 878 312" marker-end="url(#human-era-arrow)"></path>
+          <path data-era-path="americas" d="M760 120 C 560 70, 260 48, 92 78" marker-end="url(#human-era-arrow)"></path>
+          <path data-era-path="bantu" d="M555 228 C 590 240, 620 255, 638 268" marker-end="url(#human-era-arrow)"></path>
+          <path data-era-path="bantu-south" d="M555 228 C 560 270, 575 320, 590 348" marker-end="url(#human-era-arrow)"></path>
+        </g>
+
+        <g font-family="Inter, ui-sans-serif, sans-serif" filter="url(#human-era-pin-halo)">
+          {
+            pins.map((pin) => (
+              <g data-era-pin={pin.id}>
+                <circle cx={pin.x} cy={pin.y} r="15" fill="#f4f7f2" stroke="#14221a" stroke-width="2"></circle>
+                <text x={pin.x} y={pin.y + 5} text-anchor="middle" fill="#14221a" font-size="14" font-weight="750">
+                  {pin.n}
+                </text>
+                <text
+                  class="dispersal-pin-label"
+                  x={pin.labelX}
+                  y={pin.labelY}
+                  text-anchor={pin.anchor}
+                  fill="#f4f7f2"
+                  stroke="#0a1610"
+                  stroke-width="4"
+                  paint-order="stroke"
+                  font-size="12"
+                  font-weight="650"
+                >
+                  {pinLabel[pin.id]}
+                </text>
+              </g>
+            ))
+          }
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="prose map-detail-copy forest-frame-copy human-era-copy">
+    <h3 data-era-title>{initial.title}</h3>
+    <p data-era-caption>{initial.caption}</p>
+    <dl class="human-era-facts">
+      <div>
+        <dt>{atlas.whenLabel}</dt>
+        <dd data-era-when>{initial.when}</dd>
+      </div>
+      <div>
+        <dt>{atlas.whereLabel}</dt>
+        <dd data-era-where>{initial.where}</dd>
+      </div>
+      <div>
+        <dt>{atlas.whyLabel}</dt>
+        <dd data-era-why>{initial.why}</dd>
+      </div>
+      <div>
+        <dt>{atlas.uncertaintyLabel}</dt>
+        <dd data-era-uncertainty>{initial.uncertainty}</dd>
+      </div>
+    </dl>
+    <p class="wildlife-sources" data-era-nearest hidden>{atlas.nearestNote}</p>
+    <p class="wildlife-sources" data-era-forthcoming hidden>{atlas.forthcomingNote}</p>
+    <p class="wildlife-sources" data-era-gm hidden>
+      <a href={greatHref}>{atlas.greatMigrationsCta}</a>
+      {' '}
+      {atlas.greatMigrationsNote}
+    </p>
+    <p class="wildlife-sources" data-era-source>
+      <strong>{initial.sourceOrg}</strong>
+      <br />
+      {atlas.vintageLabel}: {initial.vintage}
+      <br />
+      <a href={initial.sourceUrl} rel="noopener noreferrer">{initial.sourceUrl}</a>
+      <br />
+      {atlas.licenseLabel}:
+      <a href={initial.licenseUrl} rel="noopener noreferrer">{initial.license}</a>
+    </p>
+    <p class="dispersal-sources dispersal-base-credit">{atlas.schematicCredit}</p>
+  </div>
+</section>
+
+<script
+  define:vars={{
+    payload,
+    coverageCopy: atlas.coverage,
+    vintageLabel: atlas.vintageLabel,
+    licenseLabel: atlas.licenseLabel,
+  }}
+>
+  const root = document.querySelector('[data-human-era]');
+  if (root) {
+    const range = root.querySelector('[data-era-range]');
+    const chips = root.querySelector('[data-era-chips]');
+    const coverage = root.querySelector('[data-era-coverage]');
+    const yearPill = root.querySelector('[data-era-year-pill]');
+    const sourcePill = root.querySelector('[data-era-source-pill]');
+    const yearStrong = root.querySelector('[data-era-year-strong]');
+    const plate = root.querySelector('[data-era-plate]');
+    const schematic = root.querySelector('[data-era-schematic]');
+    const image = root.querySelector('[data-era-image]');
+    const figcaption = root.querySelector('[data-era-figcaption]');
+    const title = root.querySelector('[data-era-title]');
+    const caption = root.querySelector('[data-era-caption]');
+    const when = root.querySelector('[data-era-when]');
+    const where = root.querySelector('[data-era-where]');
+    const why = root.querySelector('[data-era-why]');
+    const uncertainty = root.querySelector('[data-era-uncertainty]');
+    const nearest = root.querySelector('[data-era-nearest]');
+    const forthcoming = root.querySelector('[data-era-forthcoming]');
+    const gm = root.querySelector('[data-era-gm]');
+    const source = root.querySelector('[data-era-source]');
+    const pins = root.querySelectorAll('[data-era-pin]');
+    const paths = root.querySelectorAll('[data-era-path]');
+
+    function show(index) {
+      const event = payload[Math.max(0, Math.min(index, payload.length - 1))];
+      if (!event) return;
+
+      if (yearPill) yearPill.textContent = event.label;
+      if (sourcePill) sourcePill.textContent = event.sourceShort;
+      if (yearStrong) yearStrong.textContent = event.label;
+      if (coverage) coverage.textContent = coverageCopy[event.coverage] || event.coverage;
+      if (range) range.value = String(index);
+      chips?.querySelectorAll('button').forEach((button, i) => {
+        button.classList.toggle('is-active', i === index);
+      });
+
+      const isPlate = event.kind === 'plate' && event.plate;
+      if (plate) plate.hidden = !isPlate;
+      if (schematic) schematic.hidden = Boolean(isPlate);
+
+      if (isPlate && image) {
+        image.src = event.plate;
+        image.alt = event.imageAlt;
+        image.width = event.plateWidth;
+        image.height = event.plateHeight;
+      }
+      if (figcaption) {
+        figcaption.textContent = event.sourceOrg + '. ' + vintageLabel + ': ' + event.vintage + '.';
+      }
+
+      const lit = new Set(event.highlight || []);
+      pins.forEach((pin) => {
+        const id = pin.getAttribute('data-era-pin');
+        const on = lit.has(id);
+        pin.classList.toggle('is-dim', !on);
+      });
+      paths.forEach((path) => {
+        const id = path.getAttribute('data-era-path');
+        const on = id === 'bantu' || id === 'bantu-south' ? lit.has('bantu') : lit.has(id);
+        path.classList.toggle('is-dim', !on);
+      });
+
+      if (title) title.textContent = event.title;
+      if (caption) caption.textContent = event.caption;
+      if (when) when.textContent = event.when;
+      if (where) where.textContent = event.where;
+      if (why) why.textContent = event.why;
+      if (uncertainty) uncertainty.textContent = event.uncertainty;
+      if (nearest) nearest.hidden = !event.nearest;
+      if (forthcoming) forthcoming.hidden = !event.mapForthcoming;
+      if (gm) gm.hidden = !event.greatMigrationsLink;
+      if (source) {
+        source.innerHTML =
+          '<strong>' +
+          event.sourceOrg +
+          '</strong><br />' +
+          vintageLabel +
+          ': ' +
+          event.vintage +
+          '<br /><a href="' +
+          event.sourceUrl +
+          '" rel="noopener noreferrer">' +
+          event.sourceUrl +
+          '</a><br />' +
+          licenseLabel +
+          ': <a href="' +
+          event.licenseUrl +
+          '" rel="noopener noreferrer">' +
+          event.license +
+          '</a>';
+      }
+    }
+
+    range?.addEventListener('input', () => show(Number(range.value)));
+    chips?.querySelectorAll('button').forEach((button) => {
+      button.addEventListener('click', () => show(Number(button.dataset.index)));
+    });
+    show(0);
+  }
+</script>

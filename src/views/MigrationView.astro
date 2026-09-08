@@ -2,7 +2,7 @@
 import BirdFlywaysMap from '../components/BirdFlywaysMap.astro';
 import CitedSourceList from '../components/CitedSourceList.astro';
 import HubTile from '../components/HubTile.astro';
-import HumanDispersalMap from '../components/HumanDispersalMap.astro';
+import HumanEraAtlas from '../components/HumanEraAtlas.astro';
 import MigrationCard from '../components/MigrationCard.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -18,6 +18,7 @@ import {
   type MigrationShelf,
 } from '../data/migration';
 import {
+  getHumanMigrationEras,
   getMigrationByShelf,
   getMigrationPage,
   localizePath,
@@ -44,6 +45,7 @@ const animalEntries = activeShelf === 'animals' ? getMigrationByShelf(locale, 'a
 const greatEntries =
   activeShelf === 'great-migrations' ? getMigrationByShelf(locale, 'great-migrations') : [];
 const humans = page.humans;
+const humanEras = getHumanMigrationEras(locale);
 const pageTitle = activeShelf
   ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
   : page.metaTitle;
@@ -100,15 +102,26 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
   {
     activeShelf === 'humans' && (
       <>
-        <section class="section section-hub-follow" aria-labelledby="our-species">
-          <div class="wrap wildlife-hero">
-            <figure class="wildlife-hero-art">
+        <section class="section section-hub-follow" aria-labelledby="human-event-heading">
+          <div class="wrap">
+            <div class="wildlife-map-panel">
+          <HumanEraAtlas events={humanEras} atlas={humans.eventAtlas} />
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="our-species">
+          <div class="wrap migration-human-portrait">
+            <figure class="wildlife-hero-art migration-human-figure">
               <img
                 src={migrationImageSrc(humanHeroImage)}
                 alt={humans.imageAlt}
-                width="1280"
-                height="960"
+                width="540"
+                height="810"
               />
+              <figcaption>
+                {page.imageCredit}: {humanHeroImage.credit} ({humanHeroImage.license})
+              </figcaption>
             </figure>
             <div class="wildlife-copy-card">
               <div class="eyebrow">{humans.heroEyebrow}</div>
@@ -136,15 +149,6 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
                 {' '}
                 {humans.greatMigrationsNote}
               </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" aria-labelledby="migration-dispersal-heading">
-          <div class="wrap">
-            <div class="wildlife-map-panel">
-              <p class="oceans-source-note">{humans.honesty}</p>
-              <HumanDispersalMap copy={humans} hideLoss headingId="migration-dispersal-heading" />
             </div>
           </div>
         </section>

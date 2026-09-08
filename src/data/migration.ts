@@ -371,34 +371,13 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
 ];
 
 export const humanHeroImage: ImageCredit = img(
-  'homo-sapiens.png',
-  'Generated naturalistic figure for Fix Planet — not a portrait of a named person',
+  'medieval-commoner.png',
+  'Generated medieval commoner for Fix Planet — simply dressed peasant, not a king and not a portrait of a named person',
   'Site asset',
   '',
 );
 
-export const humanSources: PrimarySource[] = [
-  cite(
-    'Hublin et al., Nature, 2017 — Jebel Irhoud, Morocco, ~315,000 years',
-    'https://www.nature.com/articles/nature22336',
-  ),
-  cite(
-    'Clarkson et al., Nature, 2017 — Madjedbebe, Australia, ~65,000 years',
-    'https://www.nature.com/articles/nature22968',
-  ),
-  cite(
-    'Bergström et al., Science, 2020 — origins and expansion of modern humans (genetics)',
-    'https://www.science.org/doi/10.1126/science.aay5012',
-  ),
-  cite(
-    'Pedersen et al., PNAS, 2016 — ice-free corridor too late for the first Americans',
-    'https://www.pnas.org/doi/10.1073/pnas.1518482113',
-  ),
-  cite(
-    'IPCC AR6 WGI — glacial–interglacial climate, ice sheets, and sea level (context, not a date list)',
-    'https://www.ipcc.ch/report/ar6/wg1/',
-  ),
-];
+export { humanEventSources as humanSources } from './human-migration-events';
 
 export const flywaySources: PrimarySource[] = [
   cite(

@@ -1,5 +1,6 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
+import { plHumanEventAtlas } from './human-event-atlas-pl';
 
 export const page: MigrationPage = {
   metaTitle: 'Migracja — Fix Planet',
@@ -25,7 +26,7 @@ export const page: MigrationPage = {
   pressure: 'Co się zmienia',
   wildlifeLink: 'Karta gatunku w Przyrodzie →',
   tiles: {
-    humans: 'Z Afryki, Sahul, Ameryki: datowane okna przybycia i klimat, który je ukształtował.',
+    humans: 'Najpierw mapy zdarzeń: z Afryki, Sahul, rolnictwo, bantu, austronezyjczycy, wędrówki ludów, handel niewolnikami. Nazwane ruchy, nie spis rok po roku.',
     'great-migrations':
       'Historyczne ruchy masowe w źródłach pisanych. Pierwsza karta: hunicka presja na świat rzymski.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
@@ -39,7 +40,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     humans:
-      'Homo sapiens powstał w Afryce około 300 000 lat temu. Późniejsza droga — nie karta gatunku — jest tutaj: korytarze, wybrzeża, lód i pokarm. Utrata megafauny pojawia się tylko tam, gdzie tłumaczy trasę; katalog Wymarłych zostaje w Przyrodzie. Attyla i okres wędrówek ludów to inny zegar: Wielkie migracje.',
+      'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla zostaje na Wielkich migracjach; karta wędrówek ludów tam prowadzi.',
     'great-migrations':
       'Nazwane ruchy masowe w czasie historycznym — nie wyjście z Afryki. Pierwsza karta to hunicka presja na późny świat rzymski. Później można dodać kolejne wpisy; to nie podręcznik o każdym ludzie Völkerwanderung.',
     birds:
@@ -51,7 +52,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Nasz gatunek',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'Współczesny dorosły człowiek stojący na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
+      'Mały rysunek średniowiecznego chłopa w prostej czapce, brązowej tunice, z powrozem w pasie i motyką — nie król i nie portret konkretnej osoby',
     appearedLabel: 'Pojawił się',
     appeared:
       'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat (Hublin et al. 2017). Genetyka i zapis kopalny umieszczają pochodzenie Homo sapiens na tym kontynencie. Wcześniejsze gatunki Homo już opuściły Afrykę; ta strona to późniejsze, globalne rozprzestrzenienie naszego gatunku.',
@@ -67,7 +68,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Przyroda · Homo sapiens →',
     greatMigrationsCta: 'Wielkie migracje →',
     greatMigrationsNote:
-      'Historyczne ruchy masowe w źródłach pisanych — Hunowie i późniejsze karty — są na osobnej półce. Ta strona to późny plejstocen i holocen, nie Attyla.',
+      'Historyczne ruchy masowe w źródłach pisanych — Hunowie i późniejsze karty — są na osobnej półce. Karta wędrówek ludów powyżej prowadzi tam zamiast powielać tę encyklopedię.',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi etapami przybycia',
     mapLead:
@@ -91,6 +92,7 @@ export const page: MigrationPage = {
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
     honesty:
       'Schemat datowanych okien na fizycznym obrazie Ziemi. To nie ślad GPS, nie drzewo genetyczne i nie twierdzenie, że sam klimat ruszył ludzi.',
+    eventAtlas: plHumanEventAtlas,
     sections: [
       {
         id: 'origin',
