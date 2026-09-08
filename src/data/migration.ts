@@ -214,6 +214,83 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
     ],
   },
   {
+    slug: 'mammoth-steppe-collapse',
+    shelf: 'great-migrations',
+    image: img(
+      'mammoth-steppe-collapse.jpg',
+      'Generated naturalistic mammoth-steppe dusk for Fix Planet — not a named bone bed',
+      'Site asset',
+      '',
+    ),
+    wildlifeSlug: 'woolly-mammoth',
+    sources: [
+      cite(
+        'Stuart, Kosintsev, Higham & Lister, Nature, 2004 — giant deer to ~7,700 years in western Siberia; range shifts vs Wrangel mammoths',
+        'https://doi.org/10.1038/nature02890',
+      ),
+      cite(
+        'Vartanyan, Garutt & Sher, Nature, 1993 — Holocene mammoths on Wrangel Island',
+        'https://doi.org/10.1038/362337a0',
+      ),
+      cite(
+        'Haile et al., PNAS, 2009 — sedaDNA of mammoth and horse in interior Alaska to ~10,500 years (later bone surveys dispute the ghost range)',
+        'https://doi.org/10.1073/pnas.0912510106',
+      ),
+      cite(
+        'Guthrie, Quaternary Science Reviews, 2001 — origin and cause of the mammoth steppe',
+        'https://doi.org/10.1016/S0277-3791(00)00111-8',
+      ),
+    ],
+  },
+  {
+    slug: 'beringian-land-bridge',
+    shelf: 'great-migrations',
+    image: img(
+      'beringian-land-bridge.jpg',
+      'Generated naturalistic Beringian plain with distant horses for Fix Planet — not a dated crossing event',
+      'Site asset',
+      '',
+    ),
+    sources: [
+      cite(
+        'Vershinina / Librado et al., Science, 2025 — Late Pleistocene horse genomes; two-way Beringian exchange, Ural–Arctic cline ~50–19 ka',
+        'https://doi.org/10.1126/science.adr2355',
+      ),
+      cite(
+        'Heintzman et al., PNAS, 2016 — bison enter the ice-free corridor from the south ~13.4 ka and from the north by ~13.0 ka',
+        'https://doi.org/10.1073/pnas.1601077113',
+      ),
+      cite(
+        'Vershinina et al., Molecular Ecology, 2021 — horse dispersals across the Bering Land Bridge; the bridge as a filter',
+        'https://doi.org/10.1111/mec.15977',
+      ),
+    ],
+  },
+  {
+    slug: 'postglacial-colonization',
+    shelf: 'great-migrations',
+    image: img(
+      'postglacial-colonization.jpg',
+      'Generated naturalistic early-Holocene woodland edge with a red deer — not a named pollen core',
+      'Site asset',
+      '',
+    ),
+    sources: [
+      cite(
+        'Hewitt, Biological Journal of the Linnean Society, 1999 — post-glacial recolonization of European biota; Iberia, Italy, Balkans',
+        'https://doi.org/10.1111/j.1095-8312.1999.tb01160.x',
+      ),
+      cite(
+        'Hewitt, Nature, 2000 — genetic consequences of Quaternary climatic oscillations',
+        'https://doi.org/10.1038/35015746',
+      ),
+      cite(
+        'Heintzman et al., PNAS, 2016 — ice-free corridor chronology from bison (also used on the Beringia card)',
+        'https://doi.org/10.1073/pnas.1601077113',
+      ),
+    ],
+  },
+  {
     slug: 'wildebeest',
     shelf: 'great-migrations',
     scientificName: 'Connochaetes taurinus',
@@ -288,6 +365,10 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
       cite(
         'CMS — Convention on the Conservation of Migratory Species of Wild Animals',
         'https://www.cms.int/',
+      ),
+      cite(
+        'Gu et al., Nature, 2021 — Eurasian Arctic peregrine flyways formed as breeding grounds shifted from the LGM into the Holocene',
+        'https://doi.org/10.1038/s41586-021-03265-0',
       ),
     ],
   },

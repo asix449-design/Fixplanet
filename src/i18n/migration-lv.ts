@@ -31,7 +31,7 @@ export const page: MigrationPage = {
       'Neto migrācija pēc ANO reģioniem 2023. gadam un kas jau kur dzīvo — krājums, ne šā gada ierašanās.',
     humans: 'Vispirms notikumu kartes: no Āfrikas, Sahula, zemkopība, bantu, austronēzieši, tautu staigāšana, vergu tirdzniecība. Nosauktas kustības, ne ikgadēja tautas skaitīšana.',
     'great-migrations':
-      'Dzīvas masu kustības: Serengeti gnu, tauriņu areālu nobīdes, Arktikas gājputni.',
+      'Dzīvas masu kustības un leduslaikmeta areālu nobīdes: gnu, tauriņi, Arktikas putni, mamutu steppe, Beringija un holocēna atgriešanās.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
     animals: 'Gnu, ziemeļbrieži, vaļi, sikspārņi — atlasītas zīdītāju migrācijas un to dzinējspēki.',
   },
@@ -155,6 +155,57 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'mammoth-steppe-collapse': {
+    title: 'Mamutu stepes sabrukums',
+    hook: 'Ne bēgšana uz ziemeļiem Arktikā: auksta sausa steppe no Eiropas līdz Aļaskai nomainījās ar mežu, mitrājiem un tundru — un vairāku milžu pēdējie areāli sašaurinājās uz austrumiem.',
+    imageAlt:
+      'Auksta sausa steppe krēslā ar tālu mamutu un zirgu — zudušās mamutu stepes zīme, ne nosaukta kaulu vieta',
+    what: 'Apmēram no 20 000 līdz 8 000 gadiem mamutu steppe — Guthrie nosaukums aukstajai, sausajai, augstražīgajai zāles joslai no Rietumeiropas caur Sibīriju līdz Aļaskai — nomainījās ar mitrāku meža, purvu un tundras mozaīku. Zirgi, stepes bizoni, vilnainie degunradži un mamuti ne tikai izmira uz vietas. Datētie pēdējie ieraksti rāda areālu sašaurināšanos un nobīdi. Ziemeļeirāzijā pēdējās sauszemes kabatas ir iekšējos austrumos — Rietumsibīrija, Aizurālija, tad salu refūgiji —, ne vienkāršs gājiens «uz ziemeļiem Arktikā». Šī ir areāla nobīdes kartīte. Sugu lapas ir Savvaļas izmirušo plauktā.',
+    route:
+      'Pleistocēna apvalks gāja no rietumiem uz austrumiem, ne polāra šoseja. Kad Eiropa apmežojās, datētie pēdējie milzu brieži (Megaloceros) agrāk izzūd rietumos un turas Rietumsibīrijā ap 7700 gadiem (Stuart, Kosintsev, Higham un Lister 2004). Mamuti izzūd no lielākās daļas kontinenta pie pleistocēna–holocēna robežas, tad dzīvo Vrangelas salā ap 4000 gadiem — vienlaikus ar agrīnajām bronzas valstīm, ne pēdējo ledus impulsu (Vartanyan, Garutt un Sher 1993). Altaja–Sajanu un Kazahstānas stepju–kalnu joslas ir tuvākas pleistocēna sajaukumam nekā Rietumeiropa; tā ir biogeogrāfiska atlieka, ne katra bara GPS uz austrumiem.',
+    drivers:
+      'Klimats un veģetācija ir nosauktie pirmās kārtas dzinējspēki: sasilšana, mitrākas augsnes, pārpurvošanās un slēgts mežs noņem sauso zāli, kas vajadzīga stepes ģildei (Guthrie 2001; Stuart et al. 2004 kontrasts). Cilvēku medības ir reālas tur, kur datumi un arheoloģija pārklājas; tas nav viena cēloņa sauklis. Salu izolācija (Vrangelis) ir vēlāks, mazāks pulkstenis.',
+    timing:
+      'Pēdējais ledāja maksimums ap 26–19 tūkstošiem gadu; galvenā veģetācijas maiņa nākamajos gadu tūkstošos. Milzu briedis: ~7700 gadi Rietumsibīrijā. Vrangelas mamuti: līdz ~4000 gadiem. Aļaskas nogulumu DNS (Haile et al. 2009) dod mamutu un zirgu ap 10 500 gadiem — vēlāk nekā kauli. Vēlākie Arktikas kaulu pārskati šo «spoku» areālu apstrīd. Lapa marķē strīdu, neizvēlas saukli.',
+    pressure:
+      'Steppe kā holarktisks bioms ir zudusi. Palikuši fragmenti un analoģijas. Nelasiet mūsdienu ziemeļbriežu baru kā izdzīvojušu mamutu stepi. Sugu saraksti ir Savvaļā; šai kartītei pieder kustība.',
+    sourcesNote:
+      'Guthrie 2001 par biomu. Stuart et al. 2004 par holocēna milzu briedi Sibīrijā un kontrastu ar Vrangelu. Vartanyan et al. 1993 par Vrangelu. Haile et al. 2009 par Aļaskas sedaDNS, ar atzīmi, ka vēlākie kaulu pārskati to apstrīd.',
+  },
+  'beringian-land-bridge': {
+    title: 'Beringijas sauszemes tilts',
+    hook: 'Kad jūra nokrita, Sibīrija un Aļaska bija viena līdzenums. Zirgi to šķērsoja abos virzienos. Ne katrs milzis varēja.',
+    imageAlt:
+      'Vējains Beringijas līdzenums ar tāliem zirgiem un aukstu dūmaku — tilta zīme, ne datēta pāreja',
+    what: 'Ledāja zemā jūras līmenī Beringijas tilts savienoja Sibīrijas ziemeļaustrumus ar Aļasku kā nepārtrauktu, bieži mitru un skarbu līdzenumu — maksimumā simtiem kilometru, dažās rekonstrukcijās tuvu 1600 km. Tas ir filtrs, ne brīva šoseja. Senie zirgu genomi rāda atkārtotu apmaiņu abos virzienos. Urālu–Arktikas līnija iegāja Ziemeļamerikā vairākas reizes ap 50 000–19 000 gadiem; agrāki impulsa no austrumiem uz rietumiem atstāja pēdas Eirāzijā (Vershinina, Librado u. c., Science 2025; Vershinina et al. 2021). Bizoni vēlāk gāja bezledus koridorā abos virzienos, kad tas atvērās. Vilnainais degunradzis Amerikā nenonāca. Amerikas kamielis un īsvaigu lācis Āzijā nenonāca. Neesamība arī ir liecība.',
+    route:
+      'Rietumi–austrumi un austrumi–rietumi pāri atsegtajam šelfam, tad — kad Laurentiā un Kordiljeru vaiņagi sāka šķirties — pa Rietumkanādas bezledus koridoru. Heintzman et al. (2016) datē pirmos dienvidu bizonus koridorā ap 13 400 gadiem un ziemeļu ap 13 000. Zirgi, kas vēlāk iegāja koridorā, tālu neizpletās; 2025. gada darbs atbrīvoto zemi lasa kā pārāk mitru krioskērai steppei. Klusā okeāna piekrastes ceļi zirgu genomos ir atsevišķs, agrāks stāsts, ne otrs tilts.',
+    drivers:
+      'Jūras līmenis un ledus. Kad okeāns ir zems, šelfs ir sauszeme; kad vaiņagi aizslēdz ūdeni, tilts pastāv. Biotops uz tilta — mitrums, zāle, kalni — noteica, kurš var dzīvot pietiekami ilgi, lai šķērsotu. Tā nav «no Āfrikas» bulta, uzlīmēta dzīvniekiem.',
+    timing:
+      'Pēdējā ilgā atvērtā fāze ietver intervalu ~50–19 tūkstoši gadu zirgu klīnam 2025. gada genomos. Bezledus koridors ir vēlā pleistocēna durvis (slēgts pēc ~23 000 līdz ~13 400). Holocēna applūšana beidz tiltu kā sauszemi.',
+    pressure:
+      'Tilts ir zem ūdens. Mācība ir caurlaidība: dažas sugas gāja daudzas reizes, citas nekad. Neizdomājiet katras pārejas tautas skaitīšanu un neuzskatiet Beringiju par tukšu ceļu.',
+    sourcesNote:
+      'Science 2025 zirgu genomi — divvirzienu vēlā pleistocēna satiksme un Urālu līnija. Vershinina et al. 2021 — agrāki impulsi un filtrs. Heintzman et al. 2016 — bizoni koridorā. Degunradža / kamieļa / īsvaigu lāča neesamība ir standarta holarktiskais ieraksts.',
+  },
+  'postglacial-colonization': {
+    title: 'Pēc ledus — Eiropa un Ziemeļamerika',
+    hook: 'Kad ledus atvēra zemi, koki, brieži, lāči un vilki iegāja — no dienvidu refūgijiem, un ziemeļos no Beringijas.',
+    imageAlt:
+      'Agrā holocēna meža mala ar staltbriedi pie koku līnijas — atgriešanās pēc ledus zīme, ne nosaukts putekšņu urbums',
+    what: 'Pēc pēdējā ledāja maksimuma (~26–19 tūkstoši gadu) milzīgas Eiropas un Ziemeļamerikas platības atkal kļuva apdzīvojamas. Tā ir vislabāk dokumentētā holocēna «lielā migrācija» biotai — ne viena suga un ne viens gads. Hjūita ģenētiskās kartes (1999, 2000) ir Eiropas ietvars: mērenās sugas gaidīja Ibērijā, Itālijā, Balkānos un dažās ziemeļu kabatās (Karpati u. c.), tad izpletās. Dažādas sugas lietoja dažādus pussalas — viņa sienāža, eža un lāča paradigmas. Ziemeļamerikai ir savi dienvidu / austrumu / Beringijas avoti. Kartīte neizdomā kilometru gadsimtā saukļus katram kokam.',
+    route:
+      'Staltbriedis un stirna: dienvidu refūgiji aukstuma virsotnē, tad ass izgājiens Centrāleiropā Bēlinga–Allerēda intervālā (~14,7 tūkstoši gadu) un ziemeļu līdzenumos agrā holocēnā — Sommer un kolēģu aina no datētiem kauliem un putekšņiem. Brūnais lācis, ezis un meža pele seko Hjūita šuvju joslām, kur sastapās izplešošies genomi. Pelēkais vilks ir cita ģeometrija: liela daļa dzīvās daudzveidības nāk no vēlā pleistocēna ekspansijas no Beringijas, ne no vienkāršas Ibērijas pastaigas. Ziemeļamerikā bezledus koridors (Heintzman et al. 2016) ir vēlas durvis, ne pirmais cilvēku ceļš. Koki vilka faunu: boreālās sugas sekoja sasilšanai putekšņu tempos, gadu tūkstošiem, ne sezonu.',
+    drivers:
+      'Vispirms klimats: ledus atkāpšanās, garākas sezonas, augsnes, kas tur kokus. Tad biotops. Briedis neieņems līdzenumu, kas vēl ir ledus vai vēl sausa steppe. Cilvēki ieiet jau kustīgā laukā; viņi nav nosauktais pirmās holocēna meža līnijas cēlonis.',
+    timing:
+      'LGM ~26–19 ka; Bēlings–Allerēds ~14,7 ka; agrā holocēna ziemeļu Eiropas aizpildīšana. Fennoskandijas un boreālās sabiedrības salikās tūkstošiem gadu. «Jau kolonizēts ap 9500 gadiem» alu slāņos ir vietēji datēti horizoni, ne Eiropas tautas skaitīšana.',
+    pressure:
+      'Holocēna mežs pats tagad ir cirsts, sildīts un nožogots. Šī kartīte ir migrācija pēc ledus. Vēlākā cilvēku ainavas maiņa pieder citiem plauktiem. Nesalieciet pleistocēna Cilvēkus (no Āfrikas) šajā biotas atgriešanā.',
+    sourcesNote:
+      'Hewitt 1999 un 2000 par refūgijiem un šuvju joslām. Heintzman et al. 2016 par Ziemeļamerikas koridora pulksteni. Staltbrieža laiks seko Somera skolas datētajiem Eiropas ierakstiem — kā aina, ne jauna radiogļūdeņa tabula, sastādīta šeit.',
+  },
   'butterfly-range-shifts': {
     title: 'Tauriņu areālu nobīdes',
     hook: 'Ne viena pāreja: daudzas sugas ir pārbīdījušās pret poliem vai augšup pa nogāzi, kad klimats silst, — un dažas joprojām lido pāri kontinentiem.',
@@ -175,9 +226,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arktikas gājputni',
     hook: 'Zīriņi, lielie piekūni, tārtiņveidīgie, zosis: Arktikas vasara ir barības impulss, un ziema ir citur.',
     imageAlt: 'Polārie zīriņi virs auksta ziemeļu krasta — zīme augsto platuma grādu putnu migrācijai, ne nosaukta kolonija',
-    what: 'Šī ir klases kartīte, ne otra polārā zīriņa enciklopēdija. Daudzi putni, kas ligzdo Arktikas un subarktiskajā tundrā, aiziet, kad gaisma un kukaiņi beidzas. Polārie zīriņi iet no pola līdz polam (Egevang et al. 2010). Lielie piekūni seko medījumam gar krastiem un lidojumu ceļiem. Tārtiņveidīgie (kuitalas, īsknābji) apstājas dažos dūņu līdzenumos. Zosis seko zālei un atkusnim. BirdLife un CMS apraksta lidojumu ceļu ģimenes; CAFF Arctic Biodiversity Assessment ir reģionālais kopsavilkums.',
+    what: 'Šī ir klases kartīte, ne otra polārā zīriņa enciklopēdija un ne trešā «ceļu pēc ledus» lapa. Daudzi putni, kas ligzdo Arktikas un subarktiskajā tundrā, aiziet, kad gaisma un kukaiņi beidzas. Polārie zīriņi iet no pola līdz polam (Egevang et al. 2010). Lielie piekūni seko medījumam gar krastiem un lidojumu ceļiem. Tārtiņveidīgie apstājas dažos dūņu līdzenumos. Zosis seko zālei un atkusnim. BirdLife un CMS apraksta lidojumu ceļu ģimenes; CAFF ir reģionālais kopsavilkums. Sezonālā migrācija jau bija leduslaikmetā (modeļi uz desmitiem tūkstošu gadu). Pēc ledus mainījās ģeogrāfija: ligzdošana saspiesties uz dienvidiem, īpaši Ziemeļamerikā zem Laurentiā vaiņaga, tad holocēns atkal atvēra Arktikas vasaru.',
     route:
-      'Ligzdošana garajā Arktikas dienā; ziemošanas vietas mērenajos vai tropiskajos mitrājos, krastos vai — zīriņiem — pie Antarktīdas pakledus. Austrumatlantijas, Austrumāzijas–Australāzijas, Misisipi un Klusā okeāna Amerikas ceļi nes Arktikas ligzdotājus. Līnijas ir apvalki, ne katra bara GPS. Kuitalas Aļaska–Jaunzēlande ir Klusā okeāna saīsinājums, ne vidējais.',
+      'Ligzdošana garajā Arktikas dienā; ziemošanas vietas mērenajos vai tropiskajos mitrājos, krastos vai — zīriņiem — pie Antarktīdas pakledus. Austrumatlantijas, Austrumāzijas–Australāzijas, Misisipi un Klusā okeāna Amerikas ceļi nes Arktikas ligzdotājus. Gu et al. (Nature, 2021) izsekoja Eirāzijas Arktikas lielos piekūnus piecos mūsdienu ceļos un saista tos ar ligzdošanas vietu nobīdi no LGM uz holocēnu. Līnijas ir apvalki, ne katra bara GPS. Kuitalas Aļaska–Jaunzēlande ir Klusā okeāna saīsinājums, ne vidējais.',
     drivers:
       'Sezonālā produkcija. Augsto platuma grādu vasaras dod garu dienu un kukaiņu, zivju un jaunas zāles uzliesmojumu. Polārās ziemas — nē. Vējš un krasti vada lēto ceļu. Tas ir barības un vairošanās pulkstenis, ne bēgļu stāsts.',
     timing:
@@ -185,7 +236,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     pressure:
       'Klimats kustinā ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. CAFF un BirdLife Arktikas migrantus uzskata par kopīgu lidojumu ceļu uzdevumu, ne vienas sugas muzeju. Polārā zīriņa lapa paliek vecajā dziļajā adresē, ja vajag tikai 70 000 km rakstu.',
     sourcesNote:
-      'Egevang et al. 2010 par zīriņiem; BirdLife lidojumu ceļi; CAFF Arctic Biodiversity Assessment; CMS. Šī kartīte neizdomā visu Arktikas migrantu skaitīšanu.',
+      'Egevang et al. 2010 par zīriņiem; Gu et al. 2021 par lielā piekūna ceļu salikšanu pēc ledus; BirdLife; CAFF; CMS. Kartīte neizdomā visu Arktikas migrantu skaitīšanu un neatver otru putnu ceļu enciklopēdiju.',
   },
   'hunnic-invasion': {
     title: 'Huņu spiediens uz Romu',

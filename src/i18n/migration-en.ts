@@ -31,7 +31,7 @@ export const page: MigrationPage = {
     humans:
       'Event maps first: Out of Africa, Sahul, farming, Bantu, Austronesian, the Migration Period, the slave trade. Named movements, not a year-by-year census.',
     'great-migrations':
-      'Living mass movements still running: Serengeti wildebeest, butterfly range shifts, Arctic migratory birds.',
+      'Living mass movements and ice-age range shifts: Serengeti wildebeest, butterflies, Arctic birds, plus the mammoth steppe, Beringia, and the Holocene return.',
     birds: 'Flyways, seasons, and species that still cross hemispheres for food and breeding.',
     animals: 'Wildebeest, caribou, whales, bats — curated mammal migrations and their drivers.',
   },
@@ -330,6 +330,57 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'mammoth-steppe-collapse': {
+    title: 'Mammoth steppe collapse',
+    hook: 'Not a northward flight into the Arctic: cold dry grassland from Europe to Alaska broke into forest, wetland, and tundra — and the last ranges of several giants shrank east.',
+    imageAlt:
+      'A cold dry grassland at dusk with a distant woolly mammoth and horse — a stand-in for the lost mammoth steppe, not a named bone bed',
+    what: 'Between about 20,000 and 8,000 years ago the mammoth steppe — Guthrie’s name for the cold, dry, high-productivity grassland that ran from western Europe across Siberia into Alaska — was replaced by wetter mosaics of forest, bog, and tundra. Horses, steppe bison, woolly rhinos, and mammoths did not only die locally. Their dated last records show ranges shrinking and shifting. For northern Eurasia the last mainland pockets are in the interior east — western Siberia, the Trans-Urals, later island refugia — not a simple march “north into the Arctic.” This card is a range-shift story. The Wildlife Extinct shelf keeps the species pages.',
+    route:
+      'The Pleistocene envelope was west–east, not a polar highway. As Europe forested, dated last records of giant deer (Megaloceros, the “Irish elk”) leave western Europe earlier and persist in western Siberia to about 7,700 years ago (Stuart, Kosintsev, Higham & Lister 2004). Woolly mammoths vanish from most of the mainland near the Pleistocene–Holocene boundary, then survive on Wrangel Island to about 4,000 years ago — contemporary with early Bronze Age states, not with a last ice pulse (Vartanyan, Garutt & Sher 1993). Altai–Sayan and Kazakhstan steppe–mountain belts keep assemblages closer to the Pleistocene mix than western Europe does; treat that as a biogeographic remainder, not a GPS track of every herd walking east.',
+    drivers:
+      'Climate and vegetation are the named first-order drivers: warming, wetter soils, paludification, and the spread of closed forest remove the dry grass that the steppe guild needed (Guthrie 2001; the Stuart et al. 2004 contrast between giant deer and mammoth). Human hunting is real where dates and archaeology overlap; it is not a single-cause slogan for every region and every species. Island isolation (Wrangel) is a later, smaller clock.',
+    timing:
+      'Last Glacial Maximum around 26–19 thousand years ago; the main vegetational replacement in the millennia after. Giant deer: ~7,700 years in western Siberia. Wrangel mammoths: to ~4,000 years. Alaska sedimentary DNA (Haile et al. 2009) reports mammoth and horse to about 10,500 years — later than bones alone. Later bone-based Arctic surveys treat that ghost range as contested (possible reworked sedaDNA). This page labels the disagreement; it does not pick a slogan.',
+    pressure:
+      'The steppe itself is gone as a Holarctic biome. What remains are fragments and analogies. Do not read a modern reindeer herd as a mammoth-steppe survivor. The extinction pages on Wildlife hold the species lists; this card holds the movement.',
+    sourcesNote:
+      'Guthrie 2001 for the biome. Stuart et al. 2004 for giant-deer Holocene Siberia and the Wrangel contrast. Vartanyan et al. 1993 for Wrangel. Haile et al. 2009 for Alaska sedaDNA, labeled as disputed by later bone surveys.',
+  },
+  'beringian-land-bridge': {
+    title: 'Beringian land bridge',
+    hook: 'When the sea fell, Siberia and Alaska were one plain. Horses crossed it both ways. Not every giant could.',
+    imageAlt:
+      'A windswept Beringian plain with distant horses and cold haze — a stand-in for the land bridge, not a dated crossing',
+    what: 'At glacial low sea level, the Bering Land Bridge joined northeastern Siberia to Alaska as a continuous, often wet and harsh plain — at maximum hundreds of kilometres across, in some reconstructions approaching 1,600 km. It was a filter, not a free highway. Ancient horse genomes show repeated two-way exchange. A Ural–Arctic lineage entered North America several times between about 50,000 and 19,000 years ago; earlier east-to-west pulses left traces back in Eurasia (Vershinina, Librado and colleagues, Science 2025; Vershinina et al. 2021). Bison used the later ice-free corridor in both directions once it opened. Woolly rhinoceros never reached the Americas. American camel and short-faced bear never reached Asia. Absence is evidence too.',
+    route:
+      'West–east and east–west across the exposed shelf, then — after the Laurentide and Cordilleran ice began to part — along the ice-free corridor of western Canada. Heintzman et al. (2016) date the first southern bison into that corridor at about 13,400 years ago, and northern bison by about 13,000. Horses that later entered the corridor did not expand far; the Science 2025 study reads the deglaciated ground as too wet for cryoxeric steppe. Coastal Pacific routes are a separate, earlier story in the horse genomes, not a second bridge.',
+    drivers:
+      'Sea level and ice. When the ocean is low the shelf is land; when ice sheets lock water, the bridge exists. Habitat on the bridge — moisture, grass, mountains — decided who could live there long enough to cross. This is not a human Out-of-Africa arrow pasted onto animals.',
+    timing:
+      'The last long open phase includes the interval ~50–19 thousand years for the horse cline in the 2025 genomes. The ice-free corridor is a latest-Pleistocene door (closed after ~23,000 until ~13,400). The Holocene flood ends the bridge as dry land.',
+    pressure:
+      'The bridge is underwater. The lesson is permeability: some species crossed many times, some never. Do not invent a census of every crossing, and do not treat Beringia as an empty road.',
+    sourcesNote:
+      'Science 2025 horse genomes for two-way Late Pleistocene traffic and the Ural lineage. Vershinina et al. 2021 for earlier bidirectional pulses and the filter. Heintzman et al. 2016 for bison in the corridor. Woolly rhino / camel / short-faced bear absences are the standard Holarctic record, not a new count made here.',
+  },
+  'postglacial-colonization': {
+    title: 'After the ice — Europe and North America',
+    hook: 'When the ice unlocked land, trees, deer, bears, and wolves moved in — from southern refugia, and in the north from Beringia.',
+    imageAlt:
+      'An early-Holocene woodland edge with a red deer at the tree line — a stand-in for post-glacial return, not a named pollen site',
+    what: 'After the Last Glacial Maximum (~26–19 thousand years ago) huge areas of Europe and North America became habitable again. This is the best-documented Holocene “great migration” of biota — not one species and not one year. Hewitt’s genetic maps (1999, 2000) are the European frame: temperate species waited in Iberia, Italy, the Balkans, and some northern pockets (Carpathians and others), then expanded. Different species used different peninsulas — his grasshopper, hedgehog, and bear paradigms. North America has its own south / east / Beringian sources. This card does not invent kilometre-per-century slogans for every tree.',
+    route:
+      'Red and roe deer: southern refugia in the cold peak, then a sharp push into Central Europe in the Bølling–Allerød warm interval (~14.7 thousand years) and onto northern plains in the early Holocene — the pattern Sommer and colleagues describe from dated bones and pollen. Brown bear, hedgehog, and wood mouse follow Hewitt-style suture zones where expanding genomes met. Grey wolves are a different geometry: much of the living diversity traces a late-Pleistocene expansion out of Beringia, not a simple Iberian walk. In North America the ice-free corridor (Heintzman et al. 2016) is a late door, not the first human road. Trees pulled the fauna: boreal species tracked warming at rates read from pollen, over millennia, not a season.',
+    drivers:
+      'Climate first: ice retreat, longer seasons, soils that can hold trees. Then habitat. A deer cannot occupy a plain that is still ice or still dry steppe. Humans arrive into this already-moving field; they are not the named cause of the first Holocene tree line.',
+    timing:
+      'LGM ~26–19 ka; Bølling–Allerød ~14.7 ka; early Holocene filling of northern Europe. Fennoscandian and boreal assemblages assembled over thousands of years. Treat “already colonized by 9,500 years” cave faunas as local dated layers, not a European census.',
+    pressure:
+      'The Holocene forest is itself now cut, warmed, and fenced. This card is the ice-out migration. Later human landscape change belongs on other shelves. Do not fold Pleistocene Humans (Out of Africa) into this biotic return.',
+    sourcesNote:
+      'Hewitt 1999 and 2000 for refugia and suture zones. Heintzman et al. 2016 for the North American corridor clock. Red-deer timing follows the Sommer school of dated European records — named as a pattern, not a new radiocarbon table compiled here.',
+  },
   'butterfly-range-shifts': {
     title: 'Butterfly range shifts',
     hook: 'Not one river crossing: many species have moved poleward or upslope as climates warm — and a few still fly continents.',
@@ -350,9 +401,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arctic migratory birds',
     hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a food pulse, and the winter is somewhere else.',
     imageAlt: 'Arctic terns flying over a cold northern coast — a stand-in for high-latitude bird migration, not a named colony',
-    what: 'This is a class card, not a second Arctic tern encyclopedia. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis.',
+    what: 'This is a class card, not a second Arctic tern encyclopedia and not a third “routes after ice” page. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again.',
     route:
-      'Breeding in the long Arctic day; non-breeding grounds in temperate or tropical wetlands, coasts, or — for terns — Antarctic pack ice. East Atlantic, East Asian–Australasian, Mississippi, and Pacific Americas flyways all carry Arctic breeders. The lines are envelopes, not GPS of every flock. A godwit’s Alaska–New Zealand crossing is a Pacific shortcut, not the average.',
+      'Breeding in the long Arctic day; non-breeding grounds in temperate or tropical wetlands, coasts, or — for terns — Antarctic pack ice. East Atlantic, East Asian–Australasian, Mississippi, and Pacific Americas flyways all carry Arctic breeders. Gu et al. (Nature, 2021) tracked Eurasian Arctic peregrines on five modern flyways and argue those routes formed as breeding grounds shifted through the Last Glacial Maximum into the Holocene. The lines are envelopes, not GPS of every flock. A godwit’s Alaska–New Zealand crossing is a Pacific shortcut, not the average.',
     drivers:
       'Seasonal production. High-latitude summers offer long days and a burst of insects, fish, and new grass. Polar winters do not. Wind and coasts steer the cheap route. This is a food-and-breeding clock, not a refugee story.',
     timing:
@@ -360,7 +411,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     pressure:
       'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife treat Arctic migrants as a shared flyway problem, not a single-species museum piece. The Arctic tern species page stays on the old deep URL if you want the 70,000 km paper alone.',
     sourcesNote:
-      'Egevang et al. 2010 for terns; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS. This card does not invent a headcount of every Arctic migrant.',
+      'Egevang et al. 2010 for terns; Gu et al. 2021 for peregrine flyway assembly after the ice; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS. This card does not invent a headcount of every Arctic migrant or a second bird-routes encyclopedia.',
   },
   'hunnic-invasion': {
     title: 'Hunnic pressure on Rome',

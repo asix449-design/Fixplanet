@@ -31,7 +31,7 @@ export const page: MigrationPage = {
       'Migracja netto według regionów ONZ za 2023 i kto już gdzie mieszka — zasób, nie przyjazdy z tego roku.',
     humans: 'Najpierw mapy zdarzeń: z Afryki, Sahul, rolnictwo, bantu, austronezyjczycy, wędrówki ludów, handel niewolnikami. Nazwane ruchy, nie spis rok po roku.',
     'great-migrations':
-      'Żywe ruchy masowe: gnu Serengeti, przesunięcia arealów motyli, arktyczne ptaki wędrowne.',
+      'Żywe ruchy masowe i przesunięcia z epoki lodu: gnu, motyle, ptaki arktyczne, step mamutowy, Beringia i powrót holocenu.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
     animals: 'Gnu, karibu, wieloryby, nietoperze — wybrane migracje ssaków i ich czynniki.',
   },
@@ -155,6 +155,57 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'mammoth-steppe-collapse': {
+    title: 'Zanik stepu mamutowego',
+    hook: 'Nie ucieczka na północ w Arktykę: zimny suchy step od Europy po Alaskę ustąpił lasom, mokradłom i tundrze — a ostatnie areały kilku olbrzymów skurczyły się na wschód.',
+    imageAlt:
+      'Zimny suchy step o zmierzchu z odległym mamutem i koniem — znak utraconego stepu mamutowego, nie nazwane stanowisko kości',
+    what: 'Między około 20 000 a 8 000 lat temu step mamutowy — nazwa Guthriego na zimny, suchy, wysoko produktywny pas traw od zachodniej Europy przez Syberię po Alaskę — ustąpił wilgotniejszej mozaice lasu, bagna i tundry. Konie, bizony stepowe, nosorożce włochate i mamuty nie tylko wymierały lokalnie. Datowane ostatnie zapisy pokazują kurczenie i przesuwanie arealów. Dla północnej Eurazji ostatnie kieszenie lądowe leżą we wnętrzu wschodu — Syberia Zachodnia, Zauralie, potem refugia wyspowe — nie prosty marsz „na północ w Arktykę”. To karta przesunięcia arealu. Strony gatunków są na półce wymarłych w Przyrodzie.',
+    route:
+      'Plejstoceńska obwiednia szła ze zachodu na wschód, nie polarna autostrada. Gdy Europa zarastała lasem, datowane ostatnie jelenie olbrzymie (Megaloceros) wcześniej znikają na zachodzie i trwają na Syberii Zachodniej do około 7700 lat (Stuart, Kosintsev, Higham i Lister 2004). Mamuty znikają z większej części lądu koło granicy plejstocen–holocen, potem żyją na Wyspie Wrangla do około 4000 lat — równocześnie z wczesnymi państwami brązu, nie z ostatnim pulsem lodu (Vartanyan, Garutt i Sher 1993). Pasy Ałtaju–Sajanu i kazachskich stepów–gór są bliższe plejstoceńskiej mieszance niż Europa Zachodnia; to reszta biogeograficzna, nie GPS każdego stada na wschód.',
+    drivers:
+      'Klimat i roślinność to nazwane czynniki pierwszego rzędu: ocieplenie, wilgotniejsze gleby, zabagnienie i las zwarty zabierają suchą trawę gildii stepowej (Guthrie 2001; kontrast jelenia olbrzymiego i mamuta u Stuart et al. 2004). Polowanie ludzi jest realne tam, gdzie daty i archeologia się pokrywają; to nie hasło jednej przyczyny. Izolacja wyspowa (Wrangel) to późniejszy, mniejszy zegar.',
+    timing:
+      'Ostatnie maksimum glacjalne około 26–19 tysięcy lat; główna zmiana roślinności w następnych tysiącleciach. Jeleń olbrzymi: ~7700 lat na Syberii Zachodniej. Mamuty Wrangla: do ~4000 lat. Osadowe DNA z Alaski (Haile et al. 2009) daje mamuta i konia do około 10 500 lat — później niż kości. Późniejsze przeglądy kostne Arktyki kwestionują ten „widmowy” areał. Strona oznacza spór, nie wybiera hasła.',
+    pressure:
+      'Step jako biom holaraktyczny zniknął. Zostały fragmenty i analogie. Nie czytajcie współczesnego stada reniferów jako ocalałego stepu mamutowego. Listy gatunków są w Przyrodzie; tej karcie należy ruch.',
+    sourcesNote:
+      'Guthrie 2001 o biomie. Stuart et al. 2004 o holoceńskim jeleniu olbrzymim Syberii i kontraście z Wranglem. Vartanyan et al. 1993 o Wranglu. Haile et al. 2009 o sedaDNA Alaski, z adnotacją późniejszego sporu.',
+  },
+  'beringian-land-bridge': {
+    title: 'Most beringijski',
+    hook: 'Gdy morze opadło, Syberia i Alaska były jedną równiną. Konie szły nią w obie strony. Nie każdy olbrzym dał radę.',
+    imageAlt:
+      'Wietrzna równina beringijska z odległymi końmi i zimną mgłą — znak mostu, nie datowana przeprawa',
+    what: 'Przy glacjalnie niskim poziomie morza most beringijski łączył północno-wschodnią Syberię z Alaską w ciągłą, często mokrą i surową równinę — w maksimum setki kilometrów, w niektórych rekonstrukcjach blisko 1600 km. To filtr, nie wolna autostrada. Starożytne genomy koni pokazują powtarzaną wymianę w obie strony. Linia uralo-arktyczna wchodziła do Ameryki Północnej kilka razy między około 50 000 a 19 000 lat; wcześniejsze impulsy ze wschodu na zachód zostawiły ślady w Eurazji (Vershinina, Librado i in., Science 2025; Vershinina et al. 2021). Bisony później szły korytarzem bezlodowym w obie strony, gdy się otworzył. Nosorożec włochaty nigdy nie dotarł do Ameryk. Wielbłąd amerykański i niedźwiedź krótkopyski nigdy do Azji. Nieobecność też jest świadectwem.',
+    route:
+      'Zachód–wschód i wschód–zachód przez odsłonięty szelf, potem — gdy tarcze laurentyjska i kordylierska zaczęły się rozchodzić — korytarzem bezlodowym zachodniej Kanady. Heintzman et al. (2016) datują pierwsze południowe bisony w korytarzu około 13 400 lat, północne około 13 000. Konie, które później weszły w korytarz, nie rozeszły się daleko; praca z 2025 czyta odlodzony grunt jako zbyt mokry dla krio-ksericznego stepu. Pacyficzne drogi brzegowe w genomach koni to osobna, wcześniejsza historia, nie drugi most.',
+    drivers:
+      'Poziom morza i lód. Gdy ocean jest niski, szelf jest lądem; gdy tarcze zamykają wodę, most istnieje. Siedlisko na moście — wilgoć, trawa, góry — decydowało, kto może przeżyć dość długo, by przejść. To nie strzałka „z Afryki” przyklejona do zwierząt.',
+    timing:
+      'Ostatnia długa faza otwarta obejmuje przedział ~50–19 tysięcy lat dla klina koni w genomach z 2025. Korytarz bezlodowy to drzwi najpóźniejszego plejstocenu (zamknięty po ~23 000 do ~13 400). Holoceński zalew kończy most jako ląd.',
+    pressure:
+      'Most jest pod wodą. Lekcja to przepuszczalność: jedne gatunki szły wielokrotnie, inne nigdy. Nie wymyślajcie spisu każdej przeprawy i nie traktujcie Beringii jak pustej drogi.',
+    sourcesNote:
+      'Genomy koni Science 2025 — dwukierunkowy ruch późnego plejstocenu i linia uralska. Vershinina et al. 2021 — wcześniejsze impulsy i filtr. Heintzman et al. 2016 — bisony w korytarzu. Nieobecności nosorożca / wielbłąda / niedźwiedzia krótkopyskiego to standardowy zapis holaraktyczny.',
+  },
+  'postglacial-colonization': {
+    title: 'Po lodzie — Europa i Ameryka Północna',
+    hook: 'Gdy lód odsłonił ziemię, drzewa, jelenie, niedźwiedzie i wilki weszły — z południowych refugiów, a na północy z Beringii.',
+    imageAlt:
+      'Skraj wczesnoholoceńskiego lasu z jeleniem szlachetnym przy linii drzew — znak powrotu po lodzie, nie nazwany profil pyłkowy',
+    what: 'Po ostatnim maksimum glacjalnym (~26–19 tysięcy lat temu) ogromne obszary Europy i Ameryki Północnej znów stały się zdatne do życia. To najlepiej udokumentowana holoceńska „wielka migracja” bioty — nie jeden gatunek i nie jeden rok. Mapy genetyczne Hewitta (1999, 2000) to rama europejska: gatunki umiarkowane czekały na Iberii, we Włoszech, na Bałkanach i w niektórych północnych kieszeniach (Karpaty i inne), potem się rozszerzały. Różne gatunki używały różnych półwyspów — jego paradygmaty konika polnego, jeża i niedźwiedzia. Ameryka Północna ma własne źródła południowe / wschodnie / beringijskie. Karta nie wymyśla haseł kilometrów na wiek dla każdego drzewa.',
+    route:
+      'Jeleń szlachetny i sarna: południowe refugia w szczycie chłodu, potem ostry wchód do Europy Środkowej w Bølling–Allerød (~14,7 tysiąca lat) i na równiny północne we wczesnym holocenie — wzorzec Sommera i współpracowników z datowanych kości i pyłków. Niedźwiedź brunatny, jeż i mysz zaroślowa idą strefami szwu Hewitta, gdzie spotykały się rozszerzające genomy. Wilk szary to inna geometria: spora część żywej różnorodności idzie od późnoplejstoceńskiej ekspansji z Beringii, nie od prostego spaceru z Iberii. W Ameryce Północnej korytarz bezlodowy (Heintzman et al. 2016) to późne drzwi, nie pierwsza droga ludzi. Drzewa ciągnęły faunę: gatunki borealne szły za ociepleniem w tempie pyłkowym, przez tysiąclecia, nie przez sezon.',
+    drivers:
+      'Najpierw klimat: odwrót lodu, dłuższe sezony, gleby, które utrzymają drzewa. Potem siedlisko. Jeleń nie zajmie równiny, która jest jeszcze lodem albo jeszcze suchym stepem. Ludzie wchodzą w już ruchome pole; nie są nazwaną przyczyną pierwszej holoceńskiej granicy lasu.',
+    timing:
+      'LGM ~26–19 ka; Bølling–Allerød ~14,7 ka; wczesnoholoceńskie wypełnianie północnej Europy. Zespoły fennoskandzkie i borealne składały się przez tysiące lat. „Już skolonizowane ok. 9500 lat” w warstwach jaskiń to lokalne datowane poziomy, nie spis Europy.',
+    pressure:
+      'Holoceński las sam jest dziś cięty, ogrzewany i ogrodzony. Ta karta to migracja po zejściu lodu. Późniejsza zmiana krajobrazu przez ludzi należy na inne półki. Nie wkładajcie plejstoceńskich Ludzi (z Afryki) w ten powrót bioty.',
+    sourcesNote:
+      'Hewitt 1999 i 2000 o refugiach i strefach szwu. Heintzman et al. 2016 o zegarze korytarza północnoamerykańskiego. Datowanie jelenia szlachetnego idzie za szkołą Sommera — jako wzorzec, nie nowa tabela radiowęglowa ułożona tutaj.',
+  },
   'butterfly-range-shifts': {
     title: 'Przesunięcia arealów motyli',
     hook: 'Nie jedna przeprawa: wiele gatunków przesunęło się ku biegunom albo w górę stoku, gdy klimat się ociepla — a nieliczne wciąż lecą przez kontynenty.',
@@ -175,9 +226,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arktyczne ptaki wędrowne',
     hook: 'Rybitwy, sokoły wędrowne, siewkowce, gęsi: arktyczne lato to puls pokarmu, a zima jest gdzie indziej.',
     imageAlt: 'Rybitwy popielate nad zimnym północnym brzegiem — znak wysokiej szerokości, nie nazwana kolonia',
-    what: 'To karta klasy, nie druga encyklopedia rybitwy popielatej. Wiele ptaków lęgowych na arktycznej i subarktycznej tundrze odlatuje, gdy gasną światło i owady. Rybitwy popielate lecą od bieguna do bieguna (Egevang et al. 2010). Sokoły wędrowne idą za ofiarą wzdłuż wybrzeży i szlaków. Siewkowce (szlamniki, biegusy) stagingują na nielicznych mulistych płyciznach. Gęsi idą za trawą i odwilżą. BirdLife i CMS opisują rodziny szlaków; syntezą regionalną jest Arctic Biodiversity Assessment CAFF.',
+    what: 'To karta klasy, nie druga encyklopedia rybitwy popielatej i nie trzecia strona „szlaków po lodzie”. Wiele ptaków lęgowych na arktycznej i subarktycznej tundrze odlatuje, gdy gasną światło i owady. Rybitwy popielate lecą od bieguna do bieguna (Egevang et al. 2010). Sokoły wędrowne idą za ofiarą wzdłuż wybrzeży i szlaków. Siewkowce stagingują na nielicznych mulistych płyciznach. Gęsi idą za trawą i odwilżą. BirdLife i CMS opisują rodziny szlaków; syntezą regionalną jest CAFF. Sezonowa migracja istniała już w zlodowaceniu (modele na dziesiątki tysięcy lat). Po lodzie zmieniła się geografia: lęgi ścisnęły się na południe, zwłaszcza w Ameryce Północnej pod tarczą laurentyjską, potem holocen znów otworzył arktyczne lato.',
     route:
-      'Lęgi w długim arktycznym dniu; zimowiska na umiarkowanych albo tropikalnych mokradłach, wybrzeżach albo — u rybitw — przy antarktycznym lodzie paku. Szlaki wschodnioatlantycki, wschodnioazjatycko-australazjatycki, Missisipi i pacyficzno-amerykański niosą lęgowce arktyczne. Linie to obwiednie, nie GPS każdego stada. Przelot szlamnika Alaska–Nowa Zelandia to pacyficzne skrócenie, nie średnia.',
+      'Lęgi w długim arktycznym dniu; zimowiska na umiarkowanych albo tropikalnych mokradłach, wybrzeżach albo — u rybitw — przy antarktycznym lodzie paku. Szlaki wschodnioatlantycki, wschodnioazjatycko-australazjatycki, Missisipi i pacyficzno-amerykański niosą lęgowce arktyczne. Gu et al. (Nature, 2021) śledzili euroazjatyckie arktyczne sokoły wędrowne na pięciu współczesnych szlakach i wiążą je z przesunięciem lęgowisk od LGM do holocenu. Linie to obwiednie, nie GPS każdego stada. Przelot szlamnika Alaska–Nowa Zelandia to pacyficzne skrócenie, nie średnia.',
     drivers:
       'Sezonowa produkcja. Lata wysokich szerokości dają długi dzień i wybuch owadów, ryb i nowej trawy. Polarne zimy nie. Wiatr i wybrzeża prowadzą tanią trasą. To zegar pokarmu i rozrodu, nie historia uchodźców.',
     timing:
@@ -185,7 +236,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     pressure:
       'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. CAFF i BirdLife traktują migrantów arktycznych jako wspólny problem szlaków, nie muzeum jednego gatunku. Karta rybitwy popielatej zostaje pod starym głębokim adresem, jeśli chcesz samą pracę o 70 000 km.',
     sourcesNote:
-      'Egevang et al. 2010 o rybitwach; szlaki BirdLife; CAFF Arctic Biodiversity Assessment; CMS. Karta nie wymyśla spisu wszystkich arktycznych migrantów.',
+      'Egevang et al. 2010 o rybitwach; Gu et al. 2021 o złożeniu szlaków sokoła wędrownego po lodzie; szlaki BirdLife; CAFF; CMS. Karta nie wymyśla spisu wszystkich arktycznych migrantów ani drugiej encyklopedii ptasich szlaków.',
   },
   'hunnic-invasion': {
     title: 'Hunicka presja na Rzym',
