@@ -2408,8 +2408,8 @@ a.map-card:hover {
 
 /* Hub: sunlit pine / god-rays plate. Keep trees visible; hold type on the bright core. */
 .theme-forests .forests-hub-backdrop img {
-  object-position: 52% 36%;
-  filter: saturate(1.12) brightness(0.7) contrast(1.06);
+  object-position: 55% 38%;
+  filter: saturate(1.15) brightness(0.9) contrast(1.05);
   transform: scale(1.04);
 }
 
@@ -2417,13 +2417,13 @@ a.map-card:hover {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 4, 2, 0.5) 0%,
-      rgba(0, 6, 3, 0.22) 18%,
-      rgba(0, 4, 2, 0.2) 42%,
-      rgba(0, 4, 2, 0.38) 72%,
-      rgba(0, 2, 1, 0.72) 100%
+      rgba(0, 4, 2, 0.38) 0%,
+      rgba(0, 6, 3, 0.12) 20%,
+      rgba(0, 4, 2, 0.1) 44%,
+      rgba(0, 4, 2, 0.32) 74%,
+      rgba(0, 2, 1, 0.66) 100%
     ),
-    radial-gradient(ellipse 78% 52% at 50% 36%, rgba(0, 0, 0, 0.34), transparent 70%);
+    radial-gradient(ellipse 72% 48% at 50% 34%, rgba(0, 0, 0, 0.18), transparent 72%);
 }
 
 .theme-forests:has(.forests-hero) .site-header {
