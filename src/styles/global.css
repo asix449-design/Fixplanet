@@ -3517,6 +3517,11 @@ a.map-card:hover {
   color: #d8e4da;
 }
 
+.human-era .borders-year {
+  min-width: 0;
+  font-size: 0.78rem;
+}
+
 @media (max-width: 800px) {
   .migration-human-portrait {
     grid-template-columns: 1fr;

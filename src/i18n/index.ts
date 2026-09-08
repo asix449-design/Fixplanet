@@ -65,6 +65,7 @@ export {
 } from './terraforming';
 export {
   getHumanMigrationEras,
+  getHumanMigrationEvents,
   getMigrationByShelf,
   getMigrationBySlug,
   getMigrationEntries,

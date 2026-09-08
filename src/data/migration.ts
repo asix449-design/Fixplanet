@@ -377,7 +377,7 @@ export const humanHeroImage: ImageCredit = img(
   '',
 );
 
-export { humanEraSources as humanSources } from './human-migration-eras';
+export { humanEventSources as humanSources } from './human-migration-events';
 
 export const flywaySources: PrimarySource[] = [
   cite(

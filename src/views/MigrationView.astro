@@ -102,10 +102,10 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
   {
     activeShelf === 'humans' && (
       <>
-        <section class="section section-hub-follow" aria-labelledby="human-era-heading">
+        <section class="section section-hub-follow" aria-labelledby="human-event-heading">
           <div class="wrap">
             <div class="wildlife-map-panel">
-              <HumanEraAtlas eras={humanEras} atlas={humans.eraAtlas} />
+          <HumanEraAtlas events={humanEras} atlas={humans.eventAtlas} />
             </div>
           </div>
         </section>

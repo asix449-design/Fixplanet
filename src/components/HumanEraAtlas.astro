@@ -1,21 +1,23 @@
 ---
-import { humanEraPreviewSrc, type HumanEraId } from '../data/human-migration-eras';
+import { humanEventPreviewSrc, type HumanEventId } from '../data/human-migration-events';
 import { localizePath, resolveLocale } from '../i18n';
-import type { HumanEraFrame } from '../i18n/migration';
+import type { HumanEventFrame } from '../i18n/migration';
 
 interface Props {
-  eras: HumanEraFrame[];
+  events: HumanEventFrame[];
   atlas: {
     title: string;
     lead: string;
     honesty: string;
     aria: string;
     scrubberAria: string;
-    eraLabel: string;
+    eventLabel: string;
+    whenLabel: string;
     whereLabel: string;
     whyLabel: string;
     uncertaintyLabel: string;
     nearestNote: string;
+    forthcomingNote: string;
     sourceLabel: string;
     licenseLabel: string;
     vintageLabel: string;
@@ -27,57 +29,57 @@ interface Props {
 }
 
 const locale = resolveLocale(Astro.currentLocale);
-const { eras, atlas } = Astro.props;
-const initial = eras[0];
+const { events, atlas } = Astro.props;
+const initial = events[0];
 const greatHref = localizePath('/migration/great-migrations', locale);
 
 const pins = [
   { id: 'africa', n: '1', x: 606, y: 242, labelX: 548, labelY: 268, anchor: 'end' as const },
   { id: 'out', n: '2', x: 598, y: 164, labelX: 552, labelY: 148, anchor: 'end' as const },
   { id: 'sahul', n: '3', x: 878, y: 312, labelX: 878, labelY: 348, anchor: 'middle' as const },
-  { id: 'eurasia', n: '4', x: 528, y: 118, labelX: 528, labelY: 96, anchor: 'middle' as const },
-  { id: 'americas', n: '5', x: 92, y: 78, labelX: 118, labelY: 58, anchor: 'start' as const },
-  { id: 'islands', n: '6', x: 980, y: 368, labelX: 932, labelY: 392, anchor: 'end' as const },
+  { id: 'americas', n: '4', x: 92, y: 78, labelX: 118, labelY: 58, anchor: 'start' as const },
+  { id: 'bantu', n: '5', x: 555, y: 228, labelX: 500, labelY: 208, anchor: 'end' as const },
 ] as const;
 
 const pinLabel: Record<(typeof pins)[number]['id'], string> = {
-  africa: eras.find((e) => e.id === 'origin')?.label ?? '',
-  out: eras.find((e) => e.id === 'out-of-africa')?.label ?? '',
-  sahul: eras.find((e) => e.id === 'sahul')?.label ?? '',
-  eurasia: eras.find((e) => e.id === 'eurasia')?.label ?? '',
-  americas: eras.find((e) => e.id === 'americas')?.label ?? '',
-  islands: eras.find((e) => e.id === 'later-seafaring')?.label ?? '',
+  africa: events.find((e) => e.id === 'out-of-africa')?.label ?? '',
+  out: events.find((e) => e.id === 'out-of-africa')?.label ?? '',
+  sahul: events.find((e) => e.id === 'sahul')?.label ?? '',
+  americas: events.find((e) => e.id === 'americas')?.label ?? '',
+  bantu: events.find((e) => e.id === 'bantu')?.label ?? '',
 };
 
-const payload = eras.map((era) => ({
-  id: era.id as HumanEraId,
-  kind: era.kind,
-  highlight: era.highlight,
-  coverage: era.coverage,
-  nearest: era.nearest,
-  plate: era.plate ? humanEraPreviewSrc(era.plate) : '',
-  plateWidth: era.plateWidth ?? 1600,
-  plateHeight: era.plateHeight ?? 800,
-  sourceShort: era.sourceShort,
-  sourceOrg: era.sourceOrg,
-  sourceUrl: era.sourceUrl,
-  license: era.license,
-  licenseUrl: era.licenseUrl,
-  vintage: era.vintage,
-  greatMigrationsLink: era.greatMigrationsLink === true,
-  label: era.label,
-  title: era.title,
-  where: era.where,
-  why: era.why,
-  uncertainty: era.uncertainty,
-  caption: era.caption,
-  imageAlt: era.imageAlt,
+const payload = events.map((event) => ({
+  id: event.id as HumanEventId,
+  kind: event.kind,
+  highlight: event.highlight,
+  coverage: event.coverage,
+  nearest: event.nearest,
+  mapForthcoming: event.mapForthcoming === true,
+  plate: event.plate ? humanEventPreviewSrc(event.plate) : '',
+  plateWidth: event.plateWidth ?? 1600,
+  plateHeight: event.plateHeight ?? 800,
+  sourceShort: event.sourceShort,
+  sourceOrg: event.sourceOrg,
+  sourceUrl: event.sourceUrl,
+  license: event.license,
+  licenseUrl: event.licenseUrl,
+  vintage: event.vintage,
+  greatMigrationsLink: event.greatMigrationsLink === true,
+  label: event.label,
+  title: event.title,
+  when: event.when,
+  where: event.where,
+  why: event.why,
+  uncertainty: event.uncertainty,
+  caption: event.caption,
+  imageAlt: event.imageAlt,
 }));
 ---
 
-<section class="human-era" aria-labelledby="human-era-heading" data-human-era>
+<section class="human-era" aria-labelledby="human-event-heading" data-human-era>
   <p class="oceans-source-note">{atlas.honesty}</p>
-  <h2 id="human-era-heading">{atlas.title}</h2>
+  <h2 id="human-event-heading">{atlas.title}</h2>
   <p class="dispersal-lead">{atlas.lead}</p>
 
   <div class="forest-map-meta">
@@ -86,30 +88,30 @@ const payload = eras.map((era) => ({
     <span class="pill" data-era-source-pill>{initial.sourceShort}</span>
   </div>
 
-  <label class="forest-slider-label" for="human-era-range">
-    <span>{atlas.eraLabel}</span>
+  <label class="forest-slider-label" for="human-event-range">
+    <span>{atlas.eventLabel}</span>
     <strong data-era-year-strong>{initial.label}</strong>
   </label>
   <input
-    id="human-era-range"
+    id="human-event-range"
     class="forest-slider"
     type="range"
     min="0"
-    max={eras.length - 1}
+    max={events.length - 1}
     value="0"
     data-era-range
   />
 
   <nav class="borders-scrubber forest-year-chips" aria-label={atlas.scrubberAria} data-era-chips>
     {
-      eras.map((era, index) => (
+      events.map((event, index) => (
         <button
           type="button"
           class:list={['borders-year', 'forest-year', { 'is-active': index === 0 }]}
           data-era-chip
           data-index={index}
         >
-          {era.label}
+          {event.label}
         </button>
       ))
     }
@@ -119,7 +121,7 @@ const payload = eras.map((era) => ({
     <figure class="map-detail-art forest-map-art human-era-plate" data-era-plate hidden>
       <img
         data-era-image
-        src={initial.plate ? humanEraPreviewSrc(initial.plate) : ''}
+        src={initial.plate ? humanEventPreviewSrc(initial.plate) : ''}
         alt={initial.imageAlt}
         width={initial.plateWidth ?? 1600}
         height={initial.plateHeight ?? 800}
@@ -175,9 +177,9 @@ const payload = eras.map((era) => ({
         >
           <path data-era-path="out" d="M606 242 C 604 210, 600 184, 598 164" marker-end="url(#human-era-arrow)"></path>
           <path data-era-path="sahul" d="M598 164 C 680 190, 780 250, 878 312" marker-end="url(#human-era-arrow)"></path>
-          <path data-era-path="eurasia" d="M598 164 C 570 150, 548 132, 528 118" marker-end="url(#human-era-arrow)"></path>
           <path data-era-path="americas" d="M760 120 C 560 70, 260 48, 92 78" marker-end="url(#human-era-arrow)"></path>
-          <path data-era-path="islands" d="M900 330 C 930 348, 958 360, 980 368" stroke-dasharray="5 6" marker-end="url(#human-era-arrow)"></path>
+          <path data-era-path="bantu" d="M555 228 C 590 240, 620 255, 638 268" marker-end="url(#human-era-arrow)"></path>
+          <path data-era-path="bantu-south" d="M555 228 C 560 270, 575 320, 590 348" marker-end="url(#human-era-arrow)"></path>
         </g>
 
         <g font-family="Inter, ui-sans-serif, sans-serif" filter="url(#human-era-pin-halo)">
@@ -215,6 +217,10 @@ const payload = eras.map((era) => ({
     <p data-era-caption>{initial.caption}</p>
     <dl class="human-era-facts">
       <div>
+        <dt>{atlas.whenLabel}</dt>
+        <dd data-era-when>{initial.when}</dd>
+      </div>
+      <div>
         <dt>{atlas.whereLabel}</dt>
         <dd data-era-where>{initial.where}</dd>
       </div>
@@ -228,6 +234,7 @@ const payload = eras.map((era) => ({
       </div>
     </dl>
     <p class="wildlife-sources" data-era-nearest hidden>{atlas.nearestNote}</p>
+    <p class="wildlife-sources" data-era-forthcoming hidden>{atlas.forthcomingNote}</p>
     <p class="wildlife-sources" data-era-gm hidden>
       <a href={greatHref}>{atlas.greatMigrationsCta}</a>
       {' '}
@@ -269,77 +276,83 @@ const payload = eras.map((era) => ({
     const figcaption = root.querySelector('[data-era-figcaption]');
     const title = root.querySelector('[data-era-title]');
     const caption = root.querySelector('[data-era-caption]');
+    const when = root.querySelector('[data-era-when]');
     const where = root.querySelector('[data-era-where]');
     const why = root.querySelector('[data-era-why]');
     const uncertainty = root.querySelector('[data-era-uncertainty]');
     const nearest = root.querySelector('[data-era-nearest]');
+    const forthcoming = root.querySelector('[data-era-forthcoming]');
     const gm = root.querySelector('[data-era-gm]');
     const source = root.querySelector('[data-era-source]');
     const pins = root.querySelectorAll('[data-era-pin]');
     const paths = root.querySelectorAll('[data-era-path]');
 
     function show(index) {
-      const era = payload[Math.max(0, Math.min(index, payload.length - 1))];
-      if (!era) return;
+      const event = payload[Math.max(0, Math.min(index, payload.length - 1))];
+      if (!event) return;
 
-      if (yearPill) yearPill.textContent = era.label;
-      if (sourcePill) sourcePill.textContent = era.sourceShort;
-      if (yearStrong) yearStrong.textContent = era.label;
-      if (coverage) coverage.textContent = coverageCopy[era.coverage] || era.coverage;
+      if (yearPill) yearPill.textContent = event.label;
+      if (sourcePill) sourcePill.textContent = event.sourceShort;
+      if (yearStrong) yearStrong.textContent = event.label;
+      if (coverage) coverage.textContent = coverageCopy[event.coverage] || event.coverage;
       if (range) range.value = String(index);
       chips?.querySelectorAll('button').forEach((button, i) => {
         button.classList.toggle('is-active', i === index);
       });
 
-      const isPlate = era.kind === 'plate' && era.plate;
+      const isPlate = event.kind === 'plate' && event.plate;
       if (plate) plate.hidden = !isPlate;
       if (schematic) schematic.hidden = Boolean(isPlate);
 
       if (isPlate && image) {
-        image.src = era.plate;
-        image.alt = era.imageAlt;
-        image.width = era.plateWidth;
-        image.height = era.plateHeight;
+        image.src = event.plate;
+        image.alt = event.imageAlt;
+        image.width = event.plateWidth;
+        image.height = event.plateHeight;
       }
       if (figcaption) {
-        figcaption.textContent = era.sourceOrg + '. ' + vintageLabel + ': ' + era.vintage + '.';
+        figcaption.textContent = event.sourceOrg + '. ' + vintageLabel + ': ' + event.vintage + '.';
       }
 
-      const lit = new Set(era.highlight || []);
+      const lit = new Set(event.highlight || []);
       pins.forEach((pin) => {
-        const on = lit.size === 0 || lit.has(pin.getAttribute('data-era-pin'));
+        const id = pin.getAttribute('data-era-pin');
+        const on = lit.has(id);
         pin.classList.toggle('is-dim', !on);
       });
       paths.forEach((path) => {
         const id = path.getAttribute('data-era-path');
-        path.classList.toggle('is-dim', !lit.has(id));
+        const on = id === 'bantu' || id === 'bantu-south' ? lit.has('bantu') : lit.has(id);
+        path.classList.toggle('is-dim', !on);
       });
 
-      if (title) title.textContent = era.title;
-      if (caption) caption.textContent = era.caption;
-      if (where) where.textContent = era.where;
-      if (why) why.textContent = era.why;
-      if (uncertainty) uncertainty.textContent = era.uncertainty;
-      if (nearest) nearest.hidden = !era.nearest;
-      if (gm) gm.hidden = !era.greatMigrationsLink;
+      if (title) title.textContent = event.title;
+      if (caption) caption.textContent = event.caption;
+      if (when) when.textContent = event.when;
+      if (where) where.textContent = event.where;
+      if (why) why.textContent = event.why;
+      if (uncertainty) uncertainty.textContent = event.uncertainty;
+      if (nearest) nearest.hidden = !event.nearest;
+      if (forthcoming) forthcoming.hidden = !event.mapForthcoming;
+      if (gm) gm.hidden = !event.greatMigrationsLink;
       if (source) {
         source.innerHTML =
           '<strong>' +
-          era.sourceOrg +
+          event.sourceOrg +
           '</strong><br />' +
           vintageLabel +
           ': ' +
-          era.vintage +
+          event.vintage +
           '<br /><a href="' +
-          era.sourceUrl +
+          event.sourceUrl +
           '" rel="noopener noreferrer">' +
-          era.sourceUrl +
+          event.sourceUrl +
           '</a><br />' +
           licenseLabel +
           ': <a href="' +
-          era.licenseUrl +
+          event.licenseUrl +
           '" rel="noopener noreferrer">' +
-          era.license +
+          event.license +
           '</a>';
       }
     }

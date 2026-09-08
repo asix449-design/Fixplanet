@@ -1,21 +1,12 @@
 [
   {
-    "file": "holocene-agriculture.png",
-    "title": "Centres of origin and spread of agriculture labelled",
-    "source": "Ian Alexander after Diamond, Science, 2003 Fig. 1",
-    "url": "https://commons.wikimedia.org/wiki/File:Centres_of_origin_and_spread_of_agriculture_labelled.svg",
-    "license": "CC BY-SA 4.0",
+    "file": "neolithic-europe.png",
+    "title": "Expansion of farming in western Eurasia, 9600–4000 BCE",
+    "source": "Gronenborn, Horejs, Börner & Ober (LEIZA / ÖAI)",
+    "url": "https://commons.wikimedia.org/wiki/File:Expansion_of_farming_in_western_Eurasia,_9600%E2%80%934000_BCE.png",
+    "license": "CC BY 4.0",
     "kind": "hosted-original",
-    "note": "Holocene-Neolithic farming schematic. Not a census of all people. Amazonia as a centre omitted in the 2003 figure."
-  },
-  {
-    "file": "migration-period.jpg",
-    "title": "Invasions of the Roman Empire, 100–500 CE",
-    "source": "MapMaster / Wikimedia Commons",
-    "url": "https://commons.wikimedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png",
-    "license": "CC BY-SA 2.5",
-    "kind": "hosted-original",
-    "note": "Europe and Mediterranean only. Regional schematic, not a world population choropleth. Hunnic card stays on Great migrations."
+    "note": "Anatolia / Southwest Asia to Europe farming spread. Other Holocene centres are a labeled gap."
   },
   {
     "file": "austronesian.png",
@@ -24,6 +15,69 @@
     "url": "https://commons.wikimedia.org/wiki/File:Chronological_dispersal_of_Austronesian_people_across_the_Pacific.svg",
     "license": "CC BY-SA 4.0",
     "kind": "hosted-original",
-    "note": "Later seafaring plate. Pacific and Indian Ocean coverage, not a global 1500/1800 population raster."
+    "note": "Seafaring event plate. Pacific and Indian Ocean coverage, not a global population raster."
+  },
+  {
+    "file": "yamnaya-horizon.jpg",
+    "title": "Yamnaya archaeological culture",
+    "source": "Krakkos / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Yamnaya_culture.jpg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Culture horizon, not a racial or nationalist map. Haak et al. 2015 is the genetic paper cited in copy."
+  },
+  {
+    "file": "migration-period.jpg",
+    "title": "Invasions of the Roman Empire, 100–500 CE",
+    "source": "MapMaster / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png",
+    "license": "CC BY-SA 2.5",
+    "kind": "hosted-original",
+    "note": "Europe and Mediterranean only. Hunnic card stays on Great migrations."
+  },
+  {
+    "file": "caliphate-expansion.png",
+    "title": "Expansion of the caliphate, 622–750 CE",
+    "source": "DieBuche / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Map_of_expansion_of_Caliphate.svg",
+    "license": "Public domain",
+    "kind": "hosted-original",
+    "note": "Conquest and settlement plate, not a conversion census."
+  },
+  {
+    "file": "mongol-empire.png",
+    "title": "Mongol Empire at greatest extent",
+    "source": "Ali Zifan / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Mongol_Empire_(greatest_extent).svg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Empire extent as a proxy for war and flight, not a displacement census."
+  },
+  {
+    "file": "atlantic-slave-trade.png",
+    "title": "African and transatlantic slave trade",
+    "source": "KuroNekoNiyah after Eltis & Richardson, Atlas of the Transatlantic Slave Trade (2010), Map 1",
+    "url": "https://commons.wikimedia.org/wiki/File:African_Slave_Trade.png",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Forced migration. Voyage data: SlaveVoyages."
+  },
+  {
+    "file": "minard-emigrants-1858.jpg",
+    "title": "Worldwide emigrants in the year 1858",
+    "source": "Charles Joseph Minard, 1862",
+    "url": "https://commons.wikimedia.org/wiki/File:Charles_Joseph_Minard_-_%C3%89migrants_du_Globe.jpg",
+    "license": "Public domain",
+    "kind": "hosted-original",
+    "note": "One-year flow map, not a century census of European emigration."
+  },
+  {
+    "file": "holocene-agriculture.png",
+    "title": "Centres of origin and spread of agriculture labelled",
+    "source": "Ian Alexander after Diamond, Science, 2003 Fig. 1",
+    "url": "https://commons.wikimedia.org/wiki/File:Centres_of_origin_and_spread_of_agriculture_labelled.svg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Kept on disk; the event atlas uses the Gronenborn western-Eurasia farming plate instead."
   }
 ]
