@@ -8,9 +8,12 @@ export const en: OceansPage = {
   title: 'Oceans',
   hubLead: [
     'The World Ocean covers about 71 percent of Earth’s surface. It stores most of the extra heat in the climate system, moves water and salt between basins, and takes up a large share of carbon dioxide from the air.',
-    'The shelves below introduce currents, salinity, sea-surface temperature, pollution, and a few published figures. Each map has a named dataset and a date.',
+    'The shelves below introduce currents, salinity, sea-surface temperature, and pollution. Each map has a named dataset and a date.',
   ],
   choosePanel: 'Choose a shelf',
+  heroNote:
+    'Sourced figures. Ocean heat is not SST; pH is chemistry; a plastic flow is not the stock in a gyre.',
+  heroSources: 'Sources and definitions →',
   filterAria: 'Oceans sections',
   back: '← Oceans',
   tiles: {

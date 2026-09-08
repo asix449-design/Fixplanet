@@ -1,6 +1,5 @@
 ---
 import HubTile from '../components/HubTile.astro';
-import SectionHub from '../components/SectionHub.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -15,6 +14,7 @@ import {
   oceanBackdrop,
   oceanFrameSrc,
   oceanHub,
+  oceanHubBackdrop,
   oceanPanelPath,
   oscarEsrUrl,
   type OceanPanel,
@@ -26,6 +26,7 @@ import {
 } from '../data/oceans';
 import {
   getOceanCurrentFrames,
+  getOceanHeroStats,
   getOceanPollution,
   getOceanSalinityFrames,
   getOceanSstFrames,
@@ -56,7 +57,10 @@ const salinityFrames = getOceanSalinityFrames(locale);
 const currentFrame = getOceanCurrentFrames(locale)[0];
 const pollution = getOceanPollution(locale);
 const stats = getOceanStats(locale);
-const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
+const heroStats = getOceanHeroStats(locale);
+const backdropSrc = oceanFrameSrc(hub ? oceanHubBackdrop.file : oceanBackdrop.file);
+const backdropWidth = hub ? oceanHubBackdrop.width : 1920;
+const backdropHeight = hub ? oceanHubBackdrop.height : 1078;
 
 const initialSst = sstFrames[sstFrames.length - 1];
 const initialSalinity = salinityFrames[0];
@@ -71,23 +75,53 @@ const pageTitle = activePanel
   image={backdropSrc}
   theme="oceans"
 >
-  <div class="section-backdrop" aria-hidden="true">
-    <img src={backdropSrc} alt="" width="1920" height="1078" />
-    <div class="section-backdrop-scrim oceans-scrim"></div>
+  <div class:list={['section-backdrop', { 'oceans-hub-backdrop': hub }]} aria-hidden="true">
+    <img src={backdropSrc} alt="" width={backdropWidth} height={backdropHeight} />
+    <div class:list={['section-backdrop-scrim', hub ? 'oceans-hub-scrim' : 'oceans-scrim']}></div>
   </div>
 
   {
     hub ? (
-      <SectionHub kicker={page.choosePanel} label={page.filterAria} columns={4}>
-        {oceanHub.map((item) => (
-          <HubTile
-            href={localizePath(oceanPanelPath(item.key), locale)}
-            icon={item.icon}
-            title={page.panels[item.key]}
-            text={page.tiles[item.key]}
-          />
-        ))}
-      </SectionHub>
+      <section class="oceans-hero" aria-label={page.filterAria}>
+        <div class="wrap oceans-hero-inner">
+          <div class="oceans-hero-stats">
+            <p class="oceans-hero-kicker">{page.eyebrow}</p>
+            <h1 class="oceans-hero-title">{page.panels.numbers}</h1>
+            <p class="oceans-hero-note">{page.heroNote}</p>
+            <div class="oceans-hero-grid">
+              {
+                heroStats.map((stat) => (
+                  <article class="oceans-hero-stat">
+                    <p class="oceans-hero-value">
+                      {stat.value}
+                      <span>{page.units[stat.unitKey]}</span>
+                    </p>
+                    <h2>{stat.label}</h2>
+                    <p class="oceans-hero-source">
+                      {stat.sourceShort} · {stat.vintage}
+                    </p>
+                  </article>
+                ))
+              }
+            </div>
+            <a class="oceans-hero-sources" href={localizePath(oceanPanelPath('numbers'), locale)}>
+              {page.heroSources}
+            </a>
+          </div>
+          <nav class="hub-grid oceans-hero-tiles" aria-label={page.choosePanel}>
+            {
+              oceanHub.map((item) => (
+                <HubTile
+                  href={localizePath(oceanPanelPath(item.key), locale)}
+                  icon={item.icon}
+                  title={page.panels[item.key]}
+                  text={page.tiles[item.key]}
+                />
+              ))
+            }
+          </nav>
+        </div>
+      </section>
     ) : (
       activePanel && (
         <ShelfHeader
