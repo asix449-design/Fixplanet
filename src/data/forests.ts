@@ -9,12 +9,14 @@ export const forestPanelKeys = [
 
 export type ForestPanel = (typeof forestPanelKeys)[number];
 
+/** Hub shelves only. `/forests/numbers` stays as a sources deep-dive from the hero. */
 export const forestHub = [
   { key: 'satellite', icon: 'grid' },
   { key: 'history', icon: 'compass' },
-  { key: 'numbers', icon: 'trees' },
   { key: 'outlook', icon: 'leaf' },
 ] as const satisfies ReadonlyArray<{ key: ForestPanel; icon: HubIconName }>;
+
+export type ForestHubKey = (typeof forestHub)[number]['key'];
 
 export type ForestFidelity = 'satellite' | 'reconstruction';
 

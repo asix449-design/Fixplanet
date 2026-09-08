@@ -8,7 +8,7 @@ export const lv: ForestsPage = {
   title: 'Meži',
   hubLead: [
     'Mežs ir ekosistēma, kurā valda koki. FAO mežu uzskata par zemes lietojuma klasi: ap 4,14 miljardiem hektāru, aptuveni trešdaļa sauszemes.',
-    'Meži uzkrāj oglekli, piedalās ūdens apritē un dod mājvietu lielākajai daļai sauszemes sugu. Zemāk — vainaga zaļums no kosmosa, dažas senāku ainavu rekonstrukcijas, publicēti skaitļi un trīs ceļi tālāk. Katrai kartei ir nosaukts datu kopums un datums.',
+    'Meži uzkrāj oglekli, piedalās ūdens apritē un dod mājvietu lielākajai daļai sauszemes sugu. Zemāk — vainaga zaļums no kosmosa, dažas senāku ainavu rekonstrukcijas un trīs ceļi tālāk. Katrai kartei ir nosaukts datu kopums un datums.',
   ],
   choosePanel: 'Izvēlies plauktu',
   heroNote:
@@ -19,7 +19,6 @@ export const lv: ForestsPage = {
   tiles: {
     satellite: 'Jūlija vainaga zaļums no kosmosa, 2001–2025.',
     history: 'Leduslaikmeta veģetācija, biomi un zeme pēc cilvēkiem.',
-    numbers: 'Definīcijas, avoti un pārējais publicētais kopums.',
     outlook: 'Garais skats, gadi, ko var izmērīt, un trīs iespējami ceļi.',
   },
   panels: {
