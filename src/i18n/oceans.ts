@@ -71,7 +71,22 @@ export type OceansPage = {
     'patches' | 'plastics' | 'oil' | 'nutrient' | 'deadzones',
     OceanPollutionCopy
   >;
-  units: Record<'percent' | 'pH' | 'millionTonnes' | 'trillion' | 'sites' | 'ohc', string>;
+  units: Record<
+    | 'percent'
+    | 'pH'
+    | 'millionTonnes'
+    | 'trillion'
+    | 'sites'
+    | 'ohc'
+    | 'earthSurface'
+    | 'mmYear'
+    | 'oxygen'
+    | 'stocks'
+    | 'coral'
+    | 'mpa'
+    | 'millionHa',
+    string
+  >;
   frames: Record<string, OceanFrameCopy>;
   stats: Record<string, OceanStatCopy>;
 };

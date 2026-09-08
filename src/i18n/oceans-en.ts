@@ -51,7 +51,7 @@ export const en: OceansPage = {
       'No single map shows all of that. The figures below are separate datasets. The first answers a common question: there are five major subtropical garbage patches — zones of higher plastic concentration in the great gyres, not floating islands. Then a closer North Pacific model, one observed oil spill, a chlorophyll-a composite, and a compilation of coastal dead zones.',
     ],
     numbers: [
-      'A few published figures, each from a named source. Ocean heat, surface acidity, plastic, and hypoxia are different measurements. They should not be added into one score.',
+      'Published figures, each from a named source. Ocean area, heat, sea-level rise, acidity, oxygen, plastic, fisheries, coral, hypoxia, and protected-area coverage are different measurements. They should not be added into one score.',
     ],
   },
   honestyCurrents:
@@ -93,10 +93,10 @@ export const en: OceansPage = {
   smapNote:
     'The SMAP mission continues microwave sea-surface salinity after Aquarius. World Ocean Atlas 2023 is a separate in-situ climatology — bottles, CTDs, and floats, averaged over many years.',
   numbersNote:
-    'Copied from the cited papers, with vintage. Heat content is not SST; pH is chemistry, not temperature; a plastic flow is not the stock in a gyre.',
+    'Copied from the cited papers, with vintage. Heat content is not SST; pH is chemistry, not temperature; a plastic flow is not the stock in a gyre; designated MPA area is not fully protected ocean.',
   distinguishTitle: 'What these figures measure',
   distinguish:
-    'IPCC AR6: the ocean has taken up about 90 percent of the excess heat in the climate system. Cheng et al. 2024: 0–2000 m ocean heat content in 2023 (and the 2024 update) sat at the top of the instrumental record — a heat inventory of the water column, not the SST map above. Surface pH has fallen by about 0.1 since ~1750, a roughly 26–30 percent rise in hydrogen-ion concentration (IPCC AR6; NOAA PMEL); that is carbonate chemistry. Jambeck et al. 2015 estimated 4.8–12.7 million tonnes of plastic entering the ocean from land in 2010 — a flow, not the mass in the Great Pacific Garbage Patch. Eriksen et al. 2014 estimated at least 5.25 trillion floating particles. Breitburg et al. 2018: more than 500 coastal sites with anthropogenic hypoxia, and expanding open-ocean oxygen-minimum zones (~4.5 million km²).',
+    'IPCC SROCC: the ocean covers about 71 percent of Earth’s surface. IPCC AR6: it has taken up about 90 percent of the excess heat in the climate system; global mean sea level rose 3.7 mm/year in 2006–2018. Cheng et al. 2024: 0–2000 m ocean heat content in 2023 (and the 2024 update) sat at the top of the instrumental record — a heat inventory of the water column, not the SST map above. Surface pH has fallen by about 0.1 since ~1750 (IPCC AR6; NOAA PMEL). Open-ocean oxygen in the upper 1000 m fell by 0.5–3.3 percent over 1970–2010 (IPCC SROCC) — related to, not the same as, coastal hypoxic sites (Breitburg et al. 2018: >500). Jambeck et al. 2015 estimated 4.8–12.7 million tonnes of plastic entering the ocean from land in 2010 — a flow, not the mass in a gyre. FAO 2025: 35.5 percent of assessed marine stocks were overfished (2021 status). GCRMN 2020: about 14 percent of hard coral was lost from reefs in 2009–2018. Protected Planet Report 2024: 8.4 percent of marine and coastal areas in protected areas and OECMs — designated coverage, not a fully-protected share.',
   pollutionKinds: {
     patches: {
       title: 'Five garbage patches',
@@ -147,6 +147,13 @@ export const en: OceansPage = {
     trillion: 'trillion particles',
     sites: 'coastal sites',
     ohc: 'record 0–2000 m OHC',
+    earthSurface: '% of Earth’s surface',
+    mmYear: 'mm / year',
+    oxygen: '% O₂, upper 1000 m',
+    stocks: '% of stocks',
+    coral: '% of coral, 2009–18',
+    mpa: '% of ocean, 2024',
+    millionHa: 'million ha',
   },
   frames: {
     'sst-2003': {
@@ -255,9 +262,17 @@ export const en: OceansPage = {
     },
   },
   stats: {
+    oceanCover: {
+      label: 'Ocean of Earth’s surface',
+      text: 'About 71 percent of Earth’s surface is ocean (IPCC SROCC). Area share, not heat, acidity, or a pollution stock.',
+    },
     heatShare: {
       label: 'Excess heat in the ocean',
       text: 'About 90 percent of the excess heat in the climate system is stored in the ocean (IPCC AR6 WG1). That is an energy inventory of the water column.',
+    },
+    seaLevel: {
+      label: 'Sea-level rise rate',
+      text: 'Global mean sea level rose 3.7 [3.2–4.2] mm/year in 2006–2018, up from 2.3 [1.6–3.1] mm/year in 1971–2018 (IPCC AR6 WG1). Rate, not a single tide-gauge day.',
     },
     ohcRecord: {
       label: 'Ocean heat content, recent peak',
@@ -267,6 +282,10 @@ export const en: OceansPage = {
       label: 'Surface pH decline',
       text: 'Open-ocean surface pH has fallen by about 0.1 since ~1750 — a roughly 26–30 percent increase in hydrogen-ion concentration (IPCC AR6; NOAA PMEL). Carbonate chemistry, not temperature.',
     },
+    oxygenLoss: {
+      label: 'Open-ocean oxygen loss',
+      text: 'The open ocean lost 0.5–3.3 percent of dissolved oxygen in the upper 1000 m over 1970–2010; oxygen-minimum zones expanded by 3–8 percent (IPCC SROCC). Open-ocean deoxygenation, not the coastal dead-zone count.',
+    },
     plasticLand: {
       label: 'Plastic from land to ocean',
       text: 'Jambeck et al. 2015, Science: 4.8–12.7 million metric tonnes of plastic waste entered the ocean from land in 2010. A 2010 flow estimate, not the mass sitting in the Great Pacific Garbage Patch.',
@@ -275,9 +294,25 @@ export const en: OceansPage = {
       label: 'Floating plastic particles',
       text: 'Eriksen et al. 2014: at least 5.25 trillion particles (268,940 tonnes) floating, from sampling across the five subtropical gyres. A stock estimate from net tows and a model.',
     },
+    overfished: {
+      label: 'Marine stocks overfished',
+      text: '35.5 percent of assessed marine fishery stocks were classified as overfished; 64.5 percent were within biologically sustainable levels (FAO Review of the State of World Marine Fishery Resources 2025; status year 2021). Share of stocks, not of catch — 77.2 percent of landings still came from sustainable stocks.',
+    },
+    coralLost: {
+      label: 'Hard coral lost, 2009–18',
+      text: 'About 14 percent of the world’s hard coral was lost from coral reefs between 2009 and 2018 (GCRMN Status of Coral Reefs of the World: 2020). Living hard-coral cover, not reef map area, and not an IPCC 1.5 °C projection.',
+    },
     deadZones: {
       label: 'Coastal hypoxic sites',
       text: 'Breitburg et al. 2018, Science: more than 500 coastal sites with anthropogenic hypoxia, plus expanding open-ocean oxygen-minimum zones (~4.5 million km²). Diaz’s earlier compilation was already above 400.',
+    },
+    mpaCover: {
+      label: 'Marine protected area',
+      text: '8.4 percent of marine and coastal areas (8.44 percent in the figure) were in protected areas and OECMs in the Protected Planet Report 2024. Designated coverage toward 30×30 — not fully or highly protected ocean. Live WDPA totals move; this page keeps that 2024 snapshot.',
+    },
+    mangroveArea: {
+      label: 'Mangrove remaining (FAO)',
+      text: '15.9 million ha of mangrove forest in 2025 (FAO FRA 2025). Global net area rose in 2015–2025; that is not a claim that every mangrove coast is recovering. Blue-carbon habitat, counted as forest land use.',
     },
   },
 };

@@ -51,7 +51,7 @@ export const lv: OceansPage = {
       'Vienas kartes visam tam nav. Zemāk atsevišķi datu kopumi. Pirmais atbild uz parasto jautājumu: lielo subtropu atkritumu plankumu ir pieci — paaugstinātas plastmasas koncentrācijas zonas lielajos riņķojumos, ne peldošas salas. Tad tuvāks ziemeļu Klusā okeāna modelis, viens novērots naftas izlijums, hlorofila-a apkopojums un piekrastes mirušo zonu saraksts.',
     ],
     numbers: [
-      'Daži publicēti lielumi, katrs no nosaukta avota. Okeāna siltuma saturs, virsmas skābums, plastmasa un hipoksija ir dažādi mērījumi; tos nesaskaita vienā rādītājā.',
+      'Publicēti lielumi, katrs no nosaukta avota. Okeāna platība, siltums, jūras līmeņa kāpums, skābums, skābeklis, plastmasa, zveja, koraļļi, hipoksija un aizsargājamās akvatorijas ir dažādi mērījumi; tos nesaskaita vienā rādītājā.',
     ],
   },
   honestyCurrents:
@@ -93,10 +93,10 @@ export const lv: OceansPage = {
   smapNote:
     'SMAP misija turpina mikroviļņu virsmas sāļuma mērījumus pēc Aquarius. World Ocean Atlas 2023 ir atsevišķa in situ klimatoloģija: pudeles, CTD un pludiņi, vidējots daudzu gadu gaitā.',
   numbersNote:
-    'Nokopēts no citētajām publikācijām, ar gadu. Siltuma saturs nav SST; pH ir ķīmija, ne temperatūra; plastmasas plūsma nav krājums riņķojumā.',
+    'Nokopēts no citētajām publikācijām, ar gadu. Siltuma saturs nav SST; pH ir ķīmija, ne temperatūra; plastmasas plūsma nav krājums riņķojumā; noteikta MPA nav pilnībā aizsargāts okeāns.',
   distinguishTitle: 'Ko šie skaitļi īsti mēra',
   distinguish:
-    'IPCC AR6: okeāns uzņēmis ap 90 procentiem klimata sistēmas liekā siltuma. Cheng et al. 2024: 0–2000 m okeāna siltuma saturs 2023. gadā (un 2024. atjauninājums) ir instrumentālā rindas virsotnē — siltuma krājums ūdens stabiņā, ne SST karte augstāk. Virsmas pH kritis par ap 0,1 kopš ~1750: tas ir ūdeņraža jonu koncentrācijas pieaugums par aptuveni 26–30 procentiem (IPCC AR6; NOAA PMEL), karbonātu ķīmija. Jambeck et al. 2015: 4,8–12,7 miljoni tonnu plastmasas no sauszemes okeānā 2010. gadā — plūsma, ne masa Lielajā Klusā okeāna atkritumu plankumā. Eriksen et al. 2014: vismaz 5,25 triljoni peldošu daļiņu. Breitburg et al. 2018: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju un paplašinošās atklātā okeāna skābekļa minimuma zonas (~4,5 miljoni km²).',
+    'IPCC SROCC: okeāns sedz ap 71 procentu Zemes virsmas. IPCC AR6: tas uzņēmis ap 90 procentiem klimata sistēmas liekā siltuma; vidējais jūras līmenis auga par 3,7 mm/gadā 2006.–2018. Cheng et al. 2024: 0–2000 m okeāna siltuma saturs 2023. gadā (un 2024. atjauninājums) ir instrumentālā rindas virsotnē — siltuma krājums ūdens stabiņā, ne SST karte augstāk. Virsmas pH kritis par ap 0,1 kopš ~1750 (IPCC AR6; NOAA PMEL). Atklātā okeāna skābeklis augšējos 1000 m kritis par 0,5–3,3 procentiem 1970.–2010. (IPCC SROCC) — saistīts ar, bet nav tas pats, kas piekrastes hipoksijas vietas (Breitburg et al. 2018: >500). Jambeck et al. 2015: 4,8–12,7 miljoni tonnu plastmasas no sauszemes okeānā 2010. gadā — plūsma, ne masa riņķojumā. FAO 2025: 35,5 procenti vērtēto jūras krājumu ir pārzvejoti (stāvoklis 2021). GCRMN 2020: ap 14 procentiem cieto koraļļu zuduši no rifiem 2009.–2018. Protected Planet Report 2024: 8,4 procenti jūras un piekrastes platību aizsargājamās teritorijās un OECM — noteiktais pārklājums, ne pilnībā aizsargāta daļa.',
   pollutionKinds: {
     patches: {
       title: 'Pieci atkritumu plankumi',
@@ -147,6 +147,13 @@ export const lv: OceansPage = {
     trillion: 'trilj. daļiņu',
     sites: 'piekrastes vietas',
     ohc: 'rekords OHC 0–2000 m',
+    earthSurface: '% Zemes virsmas',
+    mmYear: 'mm / gadā',
+    oxygen: '% O₂, augšējie 1000 m',
+    stocks: '% krājumu',
+    coral: '% koraļļu, 2009–18',
+    mpa: '% okeāna, 2024',
+    millionHa: 'milj. ha',
   },
   frames: {
     'sst-2003': {
@@ -251,9 +258,17 @@ export const lv: OceansPage = {
     },
   },
   stats: {
+    oceanCover: {
+      label: 'Okeāns Zemes virsmā',
+      text: 'Ap 71 procentu Zemes virsmas ir okeāns (IPCC SROCC). Platības daļa, ne siltums, skābums vai piesārņojuma krājums.',
+    },
     heatShare: {
       label: 'Liekais siltums okeānā',
       text: 'Ap 90 procentiem klimata sistēmas liekā siltuma glabājas okeānā (IPCC AR6 WG1). Tas ir enerģijas krājums ūdens stabiņā.',
+    },
+    seaLevel: {
+      label: 'Jūras līmeņa kāpuma temps',
+      text: 'Vidējais jūras līmenis auga par 3,7 [3,2–4,2] mm/gadā 2006.–2018., pret 2,3 [1,6–3,1] mm/gadā 1971.–2018. (IPCC AR6 WG1). Temps, ne viena mērierīces diena.',
     },
     ohcRecord: {
       label: 'Okeāna siltuma saturs, nesenais maksimums',
@@ -263,6 +278,10 @@ export const lv: OceansPage = {
       label: 'Virsmas pH kritums',
       text: 'Atklātā okeāna virsmas pH kritis par ap 0,1 kopš ~1750 — ūdeņraža jonu koncentrācijas pieaugums par aptuveni 26–30 procentiem (IPCC AR6; NOAA PMEL). Karbonātu ķīmija, ne temperatūra.',
     },
+    oxygenLoss: {
+      label: 'Atklātā okeāna skābekļa zudums',
+      text: 'Atklātais okeāns zaudēja 0,5–3,3 procentus izšķīdušā skābekļa augšējos 1000 m 1970.–2010.; skābekļa minimuma zonas paplašinājās par 3–8 procentiem (IPCC SROCC). Atklātā okeāna deoksigenācija, ne piekrastes mirušo zonu skaits.',
+    },
     plasticLand: {
       label: 'Plastmasa no sauszemes okeānā',
       text: 'Jambeck et al. 2015, Science: 4,8–12,7 miljoni metrisko tonnu plastmasas atkritumu no sauszemes okeānā 2010. gadā. 2010. gada plūsmas vērtējums, ne masa Lielajā Klusā okeāna plankumā.',
@@ -271,9 +290,25 @@ export const lv: OceansPage = {
       label: 'Peldošas plastmasas daļiņas',
       text: 'Eriksen et al. 2014: vismaz 5,25 triljoni daļiņu (268 940 tonnas) uz virsmas, no paraugiem piecos subtropu riņķojumos. Krājuma vērtējums no tīklu vilcieniem un modeļa.',
     },
+    overfished: {
+      label: 'Pārzvejoti jūras krājumi',
+      text: '35,5 procenti vērtēto jūras zvejas krājumu klasificēti kā pārzvejoti; 64,5 procenti bija bioloģiski ilgtspējīgās robežās (FAO 2025. gada pārskats; stāvoklis 2021). Krājumu daļa, ne loma — 77,2 procenti izkraušanas joprojām nāca no ilgtspējīgiem krājumiem.',
+    },
+    coralLost: {
+      label: 'Cietais korallis zaudēts, 2009–18',
+      text: 'Ap 14 procentiem pasaules cieto koraļļu zuduši no rifiem 2009.–2018. (GCRMN, Status of Coral Reefs of the World: 2020). Dzīvais segums, ne rifu kartes platība un ne IPCC 1,5 °C projekcija.',
+    },
     deadZones: {
       label: 'Piekrastes hipoksijas vietas',
       text: 'Breitburg et al. 2018, Science: vairāk nekā 500 piekrastes vietas ar antropogēnu hipoksiju plus paplašinošās atklātā okeāna skābekļa minimuma zonas (~4,5 miljoni km²). Diasa agrākais apkopojums jau pārsniedza 400.',
+    },
+    mpaCover: {
+      label: 'Jūras aizsargājamās teritorijas',
+      text: '8,4 procenti jūras un piekrastes platību (8,44 procenti attēlā) bija aizsargājamās teritorijās un OECM Protected Planet Report 2024. Noteiktais pārklājums pret 30×30, ne pilnībā aizsargāts okeāns. Dzīvie WDPA summas mainās; šeit paliek 2024. momentuzņēmums.',
+    },
+    mangroveArea: {
+      label: 'Mangroves, kas palikušas (FAO)',
+      text: '15,9 milj. ha mangrovju meža 2025. gadā (FAO FRA 2025). Globālā neto platība auga 2015.–2025.; tas nav apgalvojums, ka katrs mangrovju krasts atjaunojas. Zilais ogleklis, skaitīts kā meža zemes lietojums.',
     },
   },
 };

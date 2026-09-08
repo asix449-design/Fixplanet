@@ -32,10 +32,19 @@ export type ForestFrameMeta = {
   vintage: string;
 };
 
+export type ForestStatUnit =
+  | 'billionHa'
+  | 'millionHa'
+  | 'millionHaYear'
+  | 'percent'
+  | 'ofLand'
+  | 'gigatonnesC'
+  | 'trillionTrees';
+
 export type ForestStatMeta = {
   id: string;
   value: string;
-  unitKey: 'billionHa' | 'millionHa' | 'millionHaYear' | 'percent';
+  unitKey: ForestStatUnit;
   vintage: string;
   sourceShort: string;
   sourceUrl: string;
@@ -243,6 +252,7 @@ export const faoFra2025Url =
 export const crowther2015Url = 'https://doi.org/10.1038/nature14967';
 export const ellis2021Url = 'https://doi.org/10.1073/pnas.2023483118';
 export const hansen2013Url = 'https://doi.org/10.1126/science.1244693';
+export const ifl2025Url = 'https://doi.org/10.5281/zenodo.18011599';
 
 export const longViewImage = {
   file: 'anthromes-12k-timeline.png',
@@ -285,6 +295,38 @@ export const forestStats: ForestStatMeta[] = [
     sourceUrl: faoFra2025Url,
   },
   {
+    id: 'landShare',
+    value: '32',
+    unitKey: 'ofLand',
+    vintage: 'FRA 2025',
+    sourceShort: 'FAO FRA 2025',
+    sourceUrl: faoFra2025Url,
+  },
+  {
+    id: 'primaryRemaining',
+    value: '1.18',
+    unitKey: 'billionHa',
+    vintage: 'FRA 2025',
+    sourceShort: 'FAO FRA 2025',
+    sourceUrl: faoFra2025Url,
+  },
+  {
+    id: 'plantedForest',
+    value: '312',
+    unitKey: 'millionHa',
+    vintage: 'FRA 2025',
+    sourceShort: 'FAO FRA 2025',
+    sourceUrl: faoFra2025Url,
+  },
+  {
+    id: 'carbonStock',
+    value: '714',
+    unitKey: 'gigatonnesC',
+    vintage: 'FRA 2025',
+    sourceShort: 'FAO FRA 2025',
+    sourceUrl: faoFra2025Url,
+  },
+  {
     id: 'deforestationSince1990',
     value: '489',
     unitKey: 'millionHa',
@@ -309,14 +351,6 @@ export const forestStats: ForestStatMeta[] = [
     sourceUrl: faoFra2025Url,
   },
   {
-    id: 'primaryRemaining',
-    value: '1.18',
-    unitKey: 'billionHa',
-    vintage: 'FRA 2025',
-    sourceShort: 'FAO FRA 2025',
-    sourceUrl: faoFra2025Url,
-  },
-  {
     id: 'tropicalPrimary2024',
     value: '6.7',
     unitKey: 'millionHa',
@@ -333,12 +367,28 @@ export const forestStats: ForestStatMeta[] = [
     sourceUrl: gfw2025Url,
   },
   {
+    id: 'treeCount',
+    value: '~3.04',
+    unitKey: 'trillionTrees',
+    vintage: 'Crowther 2015',
+    sourceShort: 'Crowther et al. 2015',
+    sourceUrl: crowther2015Url,
+  },
+  {
     id: 'holoceneTrees',
     value: '~46',
     unitKey: 'percent',
     vintage: 'Crowther 2015',
     sourceShort: 'Crowther et al. 2015',
     sourceUrl: crowther2015Url,
+  },
+  {
+    id: 'intactLandscapes',
+    value: '1,086',
+    unitKey: 'millionHa',
+    vintage: '2025',
+    sourceShort: 'Potapov / IFL 2025',
+    sourceUrl: ifl2025Url,
   },
 ];
 
@@ -348,9 +398,13 @@ export const forestStats: ForestStatMeta[] = [
  */
 export const forestHeroStatIds = [
   'remaining',
+  'landShare',
   'primaryRemaining',
+  'plantedForest',
+  'carbonStock',
   'netLossRecent',
   'tropicalPrimary2025',
+  'treeCount',
 ] as const satisfies ReadonlyArray<(typeof forestStats)[number]['id']>;
 
 export function isForestPanel(value: string | undefined): value is ForestPanel {
