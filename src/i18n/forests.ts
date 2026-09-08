@@ -4,6 +4,7 @@ import {
   forestStats,
   type ForestFrame,
   type ForestFrameCopy,
+  type ForestHubKey,
   type ForestPanel,
   type ForestStat,
   type ForestStatCopy,
@@ -25,7 +26,7 @@ export type ForestsPage = {
   heroSources: string;
   filterAria: string;
   back: string;
-  tiles: Record<ForestPanel, string>;
+  tiles: Record<ForestHubKey, string>;
   panels: Record<ForestPanel, string>;
   leads: Record<ForestPanel, string[]>;
   honestySatellite: string;
@@ -100,5 +101,3 @@ export function getForestHeroStats(locale: Locale): ForestStat[] {
     return stat ? [stat] : [];
   });
 }
-
-export { forestPanelKeys };
