@@ -260,6 +260,17 @@ export const forestBackdrop = {
   license: 'CC BY-SA 2.0',
 } as const;
 
+/** Hub-only hero. Shelf pages keep `forestBackdrop`. */
+export const forestHubBackdrop = {
+  file: 'forests-hub-bg.jpg',
+  sourceOrg: 'Quarkgluonplasma',
+  sourceUrl:
+    'https://commons.wikimedia.org/wiki/File:G._Zlatoust,_Chelyabinskaya_oblast%27,_Russia_-_panoramio_(45).jpg',
+  license: 'CC BY-SA 3.0',
+  width: 1920,
+  height: 2880,
+} as const;
+
 /**
  * Published figures only. Do not invent hectare counts or a single “forests gone on DATE”.
  * FAO forest (land use) ≠ Hansen/GFW tree cover (canopy ≥ ~5 m, 30 m pixels).
