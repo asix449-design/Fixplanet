@@ -91,6 +91,10 @@ const files = [
     file: 'oceans-section-bg-src.jpg',
     url: 'https://upload.wikimedia.org/wikipedia/commons/3/35/ISS-56_Pacific_Ocean_with_sunglint.jpg',
   },
+  {
+    file: 'oceans-hub-bg.jpg',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sun_breaking_through_clouds_over_ocean.jpg/1920px-Sun_breaking_through_clouds_over_ocean.jpg',
+  },
 ];
 
 function ffmpegResize(src, dest, width = 1920) {

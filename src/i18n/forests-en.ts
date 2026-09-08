@@ -8,7 +8,7 @@ export const en: ForestsPage = {
   title: 'Forests',
   hubLead: [
     'A forest is an ecosystem dominated by trees. FAO treats forest as a land-use class: about 4.14 billion hectares, roughly a third of the world’s land.',
-    'Forests store carbon, cycle water, and hold most terrestrial species. The shelves below show canopy greenness from space, a few reconstructions of older landscapes, published numbers, and three paths ahead. Each map has a named dataset and a date.',
+    'Forests store carbon, cycle water, and hold most terrestrial species. The shelves below show canopy greenness from space, a few reconstructions of older landscapes, and three paths ahead. Each map has a named dataset and a date.',
   ],
   choosePanel: 'Choose a shelf',
   heroNote:

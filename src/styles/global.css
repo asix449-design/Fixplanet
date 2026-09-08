@@ -873,7 +873,8 @@ a.solution-card:hover {
   .hub-grid,
   .hub-grid-3,
   .feature-strip,
-  .forests-hero-grid {
+  .forests-hero-grid,
+  .oceans-hero-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -2460,7 +2461,8 @@ a.map-card:hover {
     radial-gradient(ellipse 72% 48% at 50% 34%, rgba(0, 0, 0, 0.18), transparent 72%);
 }
 
-.theme-forests:has(.forests-hero) .site-header {
+.theme-forests:has(.forests-hero) .site-header,
+.theme-oceans:has(.oceans-hero) .site-header {
   background: rgba(0, 0, 0, 0.38);
 }
 
@@ -2468,7 +2470,8 @@ a.map-card:hover {
   background: rgba(0, 0, 0, 0.82);
 }
 
-.forests-hero {
+.forests-hero,
+.oceans-hero {
   position: relative;
   z-index: 1;
   min-height: calc(100vh - var(--header-h));
@@ -2477,7 +2480,8 @@ a.map-card:hover {
   padding: 1.4rem 0 2rem;
 }
 
-.forests-hero-inner {
+.forests-hero-inner,
+.oceans-hero-inner {
   width: min(1180px, calc(100% - 40px));
   display: flex;
   flex-direction: column;
@@ -2486,7 +2490,8 @@ a.map-card:hover {
   flex: 1;
 }
 
-.forests-hero-stats {
+.forests-hero-stats,
+.oceans-hero-stats {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2494,7 +2499,8 @@ a.map-card:hover {
   padding: clamp(1.2rem, 6vh, 3.4rem) 0 0.4rem;
 }
 
-.forests-hero-kicker {
+.forests-hero-kicker,
+.oceans-hero-kicker {
   margin: 0 0 0.35rem;
   color: var(--lime);
   font-family: var(--font-display);
@@ -2505,7 +2511,8 @@ a.map-card:hover {
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
 }
 
-.forests-hero-title {
+.forests-hero-title,
+.oceans-hero-title {
   margin: 0 0 0.7rem;
   color: var(--white);
   font-family: var(--font-display);
@@ -2516,7 +2523,8 @@ a.map-card:hover {
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
 }
 
-.forests-hero-note {
+.forests-hero-note,
+.oceans-hero-note {
   max-width: 38rem;
   margin: 0 0 1.7rem;
   color: rgba(244, 247, 242, 0.92);
@@ -2525,7 +2533,8 @@ a.map-card:hover {
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
 }
 
-.forests-hero-grid {
+.forests-hero-grid,
+.oceans-hero-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.15rem 1.25rem;
@@ -2533,7 +2542,8 @@ a.map-card:hover {
   margin-bottom: 1.15rem;
 }
 
-.forests-hero-stat {
+.forests-hero-stat,
+.oceans-hero-stat {
   padding: 1.15rem 0.85rem 1.2rem;
   border: 1px solid rgba(192, 255, 0, 0.38);
   border-radius: var(--radius);
@@ -2542,7 +2552,8 @@ a.map-card:hover {
   -webkit-backdrop-filter: blur(8px);
 }
 
-.forests-hero-value {
+.forests-hero-value,
+.oceans-hero-value {
   margin: 0 0 0.55rem;
   color: var(--white);
   font-family: var(--font-display);
@@ -2553,7 +2564,8 @@ a.map-card:hover {
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
 }
 
-.forests-hero-value span {
+.forests-hero-value span,
+.oceans-hero-value span {
   display: block;
   margin-top: 0.4rem;
   color: var(--lime);
@@ -2564,7 +2576,8 @@ a.map-card:hover {
   text-shadow: none;
 }
 
-.forests-hero-stat h2 {
+.forests-hero-stat h2,
+.oceans-hero-stat h2 {
   margin: 0 0 0.35rem;
   color: var(--cream);
   font-size: 0.98rem;
@@ -2573,14 +2586,16 @@ a.map-card:hover {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
-.forests-hero-source {
+.forests-hero-source,
+.oceans-hero-source {
   margin: 0;
   color: rgba(244, 247, 242, 0.68);
   font-size: 0.72rem;
   letter-spacing: 0.03em;
 }
 
-.forests-hero-sources {
+.forests-hero-sources,
+.oceans-hero-sources {
   color: var(--lime);
   font-size: 0.88rem;
   font-weight: 700;
@@ -2588,17 +2603,21 @@ a.map-card:hover {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45);
 }
 
-.forests-hero-tiles {
+.forests-hero-tiles,
+.oceans-hero-tiles {
   align-items: stretch;
 }
 
-.forests-hero .hub-tile {
+.forests-hero .hub-tile,
+.oceans-hero .hub-tile {
   background: rgba(0, 0, 0, 0.42);
   min-height: 164px;
 }
 
 .forests-hero .hub-tile:hover,
-.forests-hero .hub-tile.is-active {
+.forests-hero .hub-tile.is-active,
+.oceans-hero .hub-tile:hover,
+.oceans-hero .hub-tile.is-active {
   background: rgba(4, 10, 2, 0.52);
 }
 
@@ -2865,32 +2884,38 @@ a.map-card:hover {
     grid-template-columns: 1fr;
   }
 
-  .forests-hero {
+  .forests-hero,
+  .oceans-hero {
     min-height: 0;
     padding: 1.15rem 0 1.6rem;
   }
 
-  .forests-hero-inner {
+  .forests-hero-inner,
+  .oceans-hero-inner {
     width: min(1180px, calc(100% - 32px));
     gap: 1.6rem;
   }
 
-  .forests-hero-stats {
+  .forests-hero-stats,
+  .oceans-hero-stats {
     padding-top: 0.6rem;
   }
 
-  .forests-hero-grid {
+  .forests-hero-grid,
+  .oceans-hero-grid {
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
   }
 
-  .forests-hero-stat {
+  .forests-hero-stat,
+  .oceans-hero-stat {
     padding: 0.9rem 0.7rem 1rem;
   }
 }
 
 @media (max-width: 520px) {
-  .forests-hero-grid {
+  .forests-hero-grid,
+  .oceans-hero-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -2916,6 +2941,26 @@ a.map-card:hover {
       rgba(2, 5, 10, 0.98) 100%
     ),
     linear-gradient(90deg, rgba(0, 12, 28, 0.32) 0%, transparent 48%);
+}
+
+/* Hub: sun through storm clouds over open water. Keep the ocean visible. */
+.theme-oceans .oceans-hub-backdrop img {
+  object-position: 50% 42%;
+  filter: saturate(1.12) brightness(0.78) contrast(1.08);
+  transform: scale(1.06);
+}
+
+.oceans-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(1, 8, 18, 0.4) 0%,
+      rgba(1, 10, 22, 0.12) 22%,
+      rgba(2, 8, 16, 0.1) 46%,
+      rgba(2, 6, 12, 0.36) 74%,
+      rgba(2, 5, 10, 0.7) 100%
+    ),
+    radial-gradient(ellipse 70% 46% at 50% 32%, rgba(0, 0, 0, 0.22), transparent 72%);
 }
 
 .theme-oceans .site-header {

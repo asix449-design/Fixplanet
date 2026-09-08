@@ -43,6 +43,7 @@ export {
   getOceanPollution,
   getOceanSalinityFrames,
   getOceanSstFrames,
+  getOceanHeroStats,
   getOceanStats,
   getOceansPage,
 } from './oceans';

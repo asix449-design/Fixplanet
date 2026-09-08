@@ -10,12 +10,12 @@ export const oceanPanelKeys = [
 
 export type OceanPanel = (typeof oceanPanelKeys)[number];
 
+/** Hub tiles only. Numbers stay as a sources deep-dive, not a duplicate shelf tile. */
 export const oceanHub = [
   { key: 'currents', icon: 'wave' },
   { key: 'salinity', icon: 'droplet' },
   { key: 'sst', icon: 'grid' },
   { key: 'pollution', icon: 'alert' },
-  { key: 'numbers', icon: 'hex' },
 ] as const satisfies ReadonlyArray<{ key: OceanPanel; icon: HubIconName }>;
 
 export type OceanFrameMode = 'sst' | 'sst-anomaly' | 'salinity' | 'currents';
@@ -375,6 +375,27 @@ export const oceanBackdrop = {
   sourceUrl: 'https://commons.wikimedia.org/wiki/File:ISS-56_Pacific_Ocean_with_sunglint.jpg',
   license: 'Public domain (NASA)',
 } as const;
+
+/** Hub-only hero. Shelf pages keep `oceanBackdrop`. */
+export const oceanHubBackdrop = {
+  file: 'oceans-hub-bg.jpg',
+  sourceOrg: 'bigwavephoto',
+  sourceUrl: 'https://commons.wikimedia.org/wiki/File:Sun_breaking_through_clouds_over_ocean.jpg',
+  license: 'CC BY-SA 4.0',
+  width: 1920,
+  height: 1280,
+} as const;
+
+/**
+ * Headline figures on the Oceans hub hero. Full notes and the rest of the
+ * published set stay on `/oceans/numbers`. Ids must exist in `oceanStats`.
+ */
+export const oceanHeroStatIds = [
+  'heatShare',
+  'phDrop',
+  'plasticLand',
+  'deadZones',
+] as const satisfies ReadonlyArray<(typeof oceanStats)[number]['id']>;
 
 export const worldviewSstUrl =
   'https://worldview.earthdata.nasa.gov/?v=-180,-90,180,90&l=GHRSST_L4_MUR_Sea_Surface_Temperature,Coastlines_15m';

@@ -9,10 +9,10 @@ export const forestPanelKeys = [
 
 export type ForestPanel = (typeof forestPanelKeys)[number];
 
+/** Hub tiles only. Numbers stay as a sources deep-dive, not a duplicate shelf tile. */
 export const forestHub = [
   { key: 'satellite', icon: 'grid' },
   { key: 'history', icon: 'compass' },
-  { key: 'numbers', icon: 'trees' },
   { key: 'outlook', icon: 'leaf' },
 ] as const satisfies ReadonlyArray<{ key: ForestPanel; icon: HubIconName }>;
 

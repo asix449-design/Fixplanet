@@ -8,9 +8,12 @@ export const pl: OceansPage = {
   title: 'Oceany',
   hubLead: [
     'Ocean Światowy pokrywa około 71 procent powierzchni Ziemi. Magazynuje większość nadmiaru ciepła w systemie klimatycznym, przenosi wodę i sól między basenami i pobiera znaczną część dwutlenku węgla z powietrza.',
-    'Poniżej: prądy, zasolenie, temperatura powierzchni morza, zanieczyszczenie i kilka opublikowanych liczb. Każda mapa ma nazwany zbiór danych i datę.',
+    'Poniżej: prądy, zasolenie, temperatura powierzchni morza i zanieczyszczenie. Każda mapa ma nazwany zbiór danych i datę.',
   ],
   choosePanel: 'Wybierz półkę',
+  heroNote:
+    'Liczby ze źródłami. Ciepło oceanu to nie SST; pH to chemia; przepływ plastiku to nie zapas w wirze.',
+  heroSources: 'Źródła i definicje →',
   filterAria: 'Działy oceanów',
   back: '← Oceany',
   tiles: {

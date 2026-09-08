@@ -1,5 +1,6 @@
 import {
   currentFrames,
+  oceanHeroStatIds,
   oceanPanelKeys,
   oceanStats,
   pollutionStills,
@@ -27,6 +28,8 @@ export type OceansPage = {
   title: string;
   hubLead: string[];
   choosePanel: string;
+  heroNote: string;
+  heroSources: string;
   filterAria: string;
   back: string;
   tiles: Record<OceanPanel, string>;
@@ -121,6 +124,14 @@ export function getOceanStats(locale: Locale): OceanStat[] {
   return oceanStats.map((item) => {
     const fields = copy[item.id] ?? fallback[item.id];
     return { ...item, ...fields };
+  });
+}
+
+export function getOceanHeroStats(locale: Locale): OceanStat[] {
+  const byId = new Map(getOceanStats(locale).map((stat) => [stat.id, stat]));
+  return oceanHeroStatIds.flatMap((id) => {
+    const stat = byId.get(id);
+    return stat ? [stat] : [];
   });
 }
 

@@ -8,9 +8,12 @@ export const lv: OceansPage = {
   title: 'Okeāni',
   hubLead: [
     'Pasaules okeāns sedz ap 71 procentu Zemes virsmas. Tajā uzkrāta lielākā daļa klimata sistēmas liekā siltuma; straumes pārnes ūdeni un sāli starp baseiniem, un virsma uzņem ievērojamu daļu oglekļa dioksīda no gaisa.',
-    'Zemāk — straumes, sāļums, jūras virsmas temperatūra, piesārņojums un daži publicēti skaitļi. Katrai kartei ir nosaukts datu kopums un datums.',
+    'Zemāk — straumes, sāļums, jūras virsmas temperatūra un piesārņojums. Katrai kartei ir nosaukts datu kopums un datums.',
   ],
   choosePanel: 'Izvēlies plauktu',
+  heroNote:
+    'Skaitļi ar avotiem. Okeāna siltums nav SST; pH ir ķīmija; plastmasas plūsma nav krājums riņķojumā.',
+  heroSources: 'Avoti un definīcijas →',
   filterAria: 'Okeānu sadaļas',
   back: '← Okeāni',
   tiles: {

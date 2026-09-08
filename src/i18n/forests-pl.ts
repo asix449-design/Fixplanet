@@ -8,7 +8,7 @@ export const pl: ForestsPage = {
   title: 'Lasy',
   hubLead: [
     'Las to ekosystem, w którym dominują drzewa. FAO traktuje las jako klasę użytkowania ziemi: około 4,14 miliarda hektarów, mniej więcej trzecia część lądów.',
-    'Lasy magazynują węgiel, uczestniczą w obiegu wody i dają schronienie większości gatunków lądowych. Poniżej: zieleń koron z kosmosu, kilka rekonstrukcji dawniejszych krajobrazów, opublikowane liczby i trzy ścieżki dalej. Każda mapa ma nazwany zbiór danych i datę.',
+    'Lasy magazynują węgiel, uczestniczą w obiegu wody i dają schronienie większości gatunków lądowych. Poniżej: zieleń koron z kosmosu, kilka rekonstrukcji dawniejszych krajobrazów i trzy ścieżki dalej. Każda mapa ma nazwany zbiór danych i datę.',
   ],
   choosePanel: 'Wybierz półkę',
   heroNote:
