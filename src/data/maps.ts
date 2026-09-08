@@ -1,17 +1,15 @@
 import type { HubIconName } from './hub';
 
 export const mapCategoryKeys = [
+  'history-of-borders',
+  'religious',
   'conflicts',
   'ethnic',
-  'religious',
   'crime',
   'pollution',
-  'oil-gas',
-  'minerals',
+  'subsurface',
   'political',
-  'history-of-borders',
   'forests',
-  'protected',
   'water',
   'population',
 ] as const;
@@ -19,24 +17,30 @@ export const mapCategoryKeys = [
 export type MapCategory = (typeof mapCategoryKeys)[number];
 
 export const mapHub = [
-  { key: 'all', icon: 'grid' },
+  { key: 'history-of-borders', icon: 'compass', lead: true },
+  { key: 'religious', icon: 'book' },
   { key: 'conflicts', icon: 'alert' },
   { key: 'ethnic', icon: 'globe' },
-  { key: 'religious', icon: 'book' },
   { key: 'crime', icon: 'scales' },
   { key: 'pollution', icon: 'recycle' },
-  { key: 'oil-gas', icon: 'bolt' },
-  { key: 'minerals', icon: 'hex' },
+  { key: 'subsurface', icon: 'hex' },
   { key: 'political', icon: 'city' },
-  { key: 'history-of-borders', icon: 'compass' },
   { key: 'forests', icon: 'trees' },
-  { key: 'protected', icon: 'paw' },
   { key: 'water', icon: 'droplet' },
   { key: 'population', icon: 'terrain' },
 ] as const satisfies ReadonlyArray<{
-  key: MapCategory | 'all';
+  key: MapCategory;
   icon: HubIconName;
+  lead?: boolean;
 }>;
+
+/** Retired hub slugs → current path (no locale prefix). */
+export const retiredMapPaths: Record<string, string> = {
+  all: '/maps',
+  'oil-gas': '/maps/subsurface',
+  minerals: '/maps/subsurface',
+  protected: '/maps/forests',
+};
 
 export type MapMeta = {
   slug: string;
@@ -154,7 +158,7 @@ export const mapMeta: MapMeta[] = [
   },
   {
     slug: 'oil-gas-reserves',
-    category: 'oil-gas',
+    category: 'subsurface',
     year: '2023–2024',
     sourceShort: 'EIA',
     sourceOrg: 'U.S. Energy Information Administration',
@@ -165,7 +169,7 @@ export const mapMeta: MapMeta[] = [
   },
   {
     slug: 'mineral-resources',
-    category: 'minerals',
+    category: 'subsurface',
     year: '2024',
     sourceShort: 'USGS',
     sourceOrg: 'U.S. Geological Survey, Mineral Resources Program',
@@ -198,7 +202,7 @@ export const mapMeta: MapMeta[] = [
   },
   {
     slug: 'protected-areas',
-    category: 'protected',
+    category: 'forests',
     year: '2024',
     sourceShort: 'WDPA',
     sourceOrg: 'UNEP-WCMC and IUCN, World Database on Protected Areas (Protected Planet)',
@@ -256,6 +260,14 @@ export function mapsByCategory(category: MapCategory): MapMeta[] {
   return mapMeta.filter((item) => item.category === category);
 }
 
-export function mapCategoryPath(category: MapCategory | 'all' = 'all'): string {
+export function mapCategoryPath(category: MapCategory): string {
   return `/maps/${category}`;
+}
+
+/** Query or path slug → localized-ready site path, or undefined if it is not a maps shelf. */
+export function mapShelfRedirect(value: string | null | undefined): string | undefined {
+  if (!value) return undefined;
+  if (value in retiredMapPaths) return retiredMapPaths[value];
+  if (isMapCategory(value)) return `/maps/${value}`;
+  return undefined;
 }
