@@ -32,6 +32,31 @@ export const lvToday: TodayShelfCopy = {
   mapCredit:
     'Sauszemes kontūras: Wikimedia Commons BlankMap-World (publiskais īpašums), pārkrāsotas laima krāsā uz melna. Robežas ir kartogrāfisks kompromiss, ne juridisks spriedums. Tā nav iedzīvotāju koroplēta.',
   emptyPanel: 'Izvēlies plāksnīti. Karte nestāda «Āfrika → Eiropa» par pasaules galveno kustību.',
+  layersLabel: 'Kartes slāņi',
+  layerCamps: 'Bēgļu nometnes',
+  layerDetections: 'ES robežu konstatējumi',
+  campsTitle: 'Lielākās UNHCR nometnes un apmetnes',
+  campsLead:
+    'Nosauktas UNHCR vietas ar publicētu skaitu un datumu. Tie ir cilvēki, kas jau dzīvo nometnē vai apmetnē — ne 2023. gada neto migrācija un ne «šogad iebraukušie».',
+  campsHonesty:
+    'Skaitļi ir operatīvie dati uz katras rindas datumu. Saraksts ir atlasīts, ne pilna pasaules tautas skaitīšana visām vietām. Noklikšķini marķieri, lai redzētu avotu.',
+  campsUnrwa:
+    'UNRWA palestīniešu bēgļus reģistrē atsevišķi. Nometnes skaits nav tas pats reģistrs. Skaitļi par Gazas joslu pēc 2023. gada ir nestabili; šī karte nesajauc UNHCR un UNRWA vienā rangā.',
+  campOpen: 'Atvērt nometni vai apmetni',
+  campAsOf: 'Skaitlis uz',
+  campPeople: 'cilvēki',
+  detectionsTitle: 'ES ārējo robežu konstatējumi (Frontex)',
+  detectionsLead:
+    'Neregulāru šķērsojumu konstatējumi pie Eiropas Savienības ārējām robežām. Vienu un to pašu cilvēku var saskaitīt vairāk nekā vienreiz. Tas nav cilvēku skaits un nav globāla «izrāviena» karte.',
+  detectionsHonesty:
+    'Frontex provizoriskie skaitļi. 2024: nedaudz virs 239 000 konstatējumu (−38% pret 2023). 2025: gandrīz 178 000 (−26%), zemākais kopš 2021. Maršrutu marķieriem ir avota gads; kur Frontex devis tikai izmaiņu virzienu, izdomāta skaitļa nav.',
+  detectionsMetric: 'Konstatējumi, ne unikāli cilvēki',
+  detectionsNoGlobal:
+    'Salīdzināmas globālas «robežu izrāvienu» sērijas nav. Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
+  detectionsChange: 'pret iepriekšējo gadu',
+  detectionsOpen: 'Atvērt ES maršruta piezīmi',
+  detectionsNationalities: '2025. gadā visbiežāk konstatētās valstspiederības: Bangladeša, Ēģipte, Afganistāna — tas nav apgalvojums par to, kas «visbiežāk iebrauc» pasaulē.',
+  noHeadcount: 'Bez izdomāta skaitļa',
   regions: {
     africa: {
       name: 'Āfrika',
@@ -101,5 +126,54 @@ export const lvToday: TodayShelfCopy = {
     'latin-america-caribbean': 'Latīņamerika un Karību reģions',
     'northern-america': 'Ziemeļamerika',
     oceania: 'Okeānija',
+  },
+  campCopy: {
+    'coxs-bazar': {
+      name: 'Koksasbazāra nometnes',
+      country: 'Bangladeša',
+      note: 'Bangladešas valdība / UNHCR: 33 nometnes Koksasbazāra apgabalā, tostarp Kutupalonga. Rohindžu bēgļi no Mjanmas. Vēl ap 33 659 cilvēkiem Bhasančaras salā šajā marķierī nav iekļauti.',
+    },
+    dadaab: {
+      name: 'Dadaaba',
+      country: 'Kenija',
+      note: 'Dadaabas nometņu komplekss Kenijas austrumos. Skaitlis uz 2025. gada 31. decembri. Komplekss, ne viena telšu pilsēta.',
+    },
+    'kakuma-kalobeyei': {
+      name: 'Kakuma un Kalobejei',
+      country: 'Kenija',
+      note: 'Kakuma 225 701; Kalobejei 82 629; Eldoreta 2 425 — trīs vietas, ko UNHCR Kenija apvienoja 2025. gada 31. decembra atjauninājumā. Viens marķieris, jo tā ir viena operācija.',
+    },
+    bidibidi: {
+      name: 'Bidibidi',
+      country: 'Uganda',
+      note: 'Bidibidi apmetne, Jumbes apgabals. Galvenais kontingents ir pārvietotie no Dienvidsudānas. Apmetne, ne nocietināta nometne.',
+    },
+    zaatari: {
+      name: 'Zaatari',
+      country: 'Jordānija',
+      note: 'Ap 80–83 tūkstošiem iedzīvotāju UNHCR un Pasaules Pārtikas programmas piezīmēs no 2022.–2024. gada. Gads ir vecāks par Bangladešas un Kenijas rindām — tas nav 2026. gada tautas skaitīšana.',
+    },
+  },
+  routeCopy: {
+    'central-mediterranean': {
+      name: 'Centrālā Vidusjūra',
+      note: 'Ap 67 000 konstatējumu 2024. gadā (−59% pret 2023), otrais ES maršruts tajā gadā. 2025. gadā Frontex joprojām sauca to par visnoslogotāko, aptuveni 2024. gada līmenī. Izbraukšana no Lībijas ir nosauktais faktors Itālijas virzienā. Nav unikālu cilvēku skaits.',
+    },
+    'eastern-mediterranean': {
+      name: 'Austrumu Vidusjūra',
+      note: '69 400 konstatējumu 2024. gadā (+14%). 2025. gadā maršruts kopumā kritās; Lībija–Krēta koridors pieauga vairāk nekā trīskārt. Nelasi kā visu Āfriku → Eiropu.',
+    },
+    'western-africa': {
+      name: 'Rietumāfrika (Kanāriju salas)',
+      note: 'Gandrīz 47 000 ierašanās Kanāriju salās 2024. gadā — augstākais kopš Frontex uzskaites sākuma 2009. gadā. 2025. gadā konstatējumi šajā maršrutā kritās apmēram par divām trešdaļām (Mauritānija, Maroka, Senegāla).',
+    },
+    'western-mediterranean': {
+      name: 'Rietumu Vidusjūra',
+      note: 'Frontex ziņo par pieaugumu 2025. gadā, galvenokārt no Alžīrijas. Uz marķiera nav izdomāta 2025. gada skaitļa.',
+    },
+    'western-balkans': {
+      name: 'Rietumbalkāni',
+      note: 'Konstatējumi kritās par 78% 2024. gadā un atkal 2025. gadā. Frontex neatkārtoja 2025. gada skaitli, ko varētu citēt bez izdomājuma.',
+    },
   },
 };

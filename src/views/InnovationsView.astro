@@ -1,7 +1,6 @@
 ---
 import HubTile from '../components/HubTile.astro';
 import InnovationCard from '../components/InnovationCard.astro';
-import SectionHub from '../components/SectionHub.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -36,36 +35,50 @@ const pageTitle = activeArea
   ? `${page.areas[activeArea]} — ${page.title} — Fix Planet`
   : page.metaTitle;
 const pageDescription = activeArea ? page.areaLeads[activeArea] : page.metaDescription;
+const hubHero = '/images/innovations/innovations-hub-hero.jpg';
+const sectionBg = '/images/innovations/innovations-section-bg.jpg';
 ---
 
 <BaseLayout
   title={pageTitle}
   description={pageDescription}
-  image="/images/innovations/innovations-section-bg.jpg"
+  image={hub ? hubHero : sectionBg}
   theme="innovations"
 >
-  <div class="section-backdrop" aria-hidden="true">
+  <div class:list={['section-backdrop', { 'innovations-hub-backdrop': hub }]} aria-hidden="true">
     <img
-      src="/images/innovations/innovations-section-bg.jpg"
+      src={hub ? hubHero : sectionBg}
       alt=""
-      width="1920"
-      height="1280"
+      width={hub ? 1920 : 1920}
+      height={hub ? 1080 : 1280}
     />
-    <div class="section-backdrop-scrim innovations-scrim"></div>
+    <div class:list={['section-backdrop-scrim', 'innovations-scrim', hub && 'innovations-hub-scrim']}></div>
   </div>
 
   {
     hub ? (
-      <SectionHub kicker={page.chooseArea} label={page.filterAria} columns={3}>
-        {innovationHub.map((item) => (
-          <HubTile
-            href={localizePath(innovationAreaPath(item.key), locale)}
-            icon={item.icon}
-            title={page.areas[item.key]}
-            text={page.tiles[item.key]}
-          />
-        ))}
-      </SectionHub>
+      <section class="innovations-hero" aria-label={page.filterAria}>
+        <div class="wrap innovations-hero-inner">
+          <div class="innovations-hero-panel">
+            <p class="visually-hidden">{page.heroAlt}</p>
+            <p class="forests-hero-kicker">{page.eyebrow}</p>
+            <h1 class="forests-hero-title">{page.title}</h1>
+            <p class="forests-hero-note">{page.lead}</p>
+          </div>
+          <nav class="hub-grid hub-grid-3 innovations-hero-tiles" aria-label={page.filterAria}>
+            {
+              innovationHub.map((item) => (
+                <HubTile
+                  href={localizePath(innovationAreaPath(item.key), locale)}
+                  icon={item.icon}
+                  title={page.areas[item.key]}
+                  text={page.tiles[item.key]}
+                />
+              ))
+            }
+          </nav>
+        </div>
+      </section>
     ) : (
       <ShelfHeader
         backHref={localizePath('/innovations', locale)}

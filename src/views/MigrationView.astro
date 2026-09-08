@@ -74,7 +74,7 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
             {page.hubLead.map((para) => <p>{para}</p>)}
           </div>
           <p class="home-hub-kicker migration-choose">{page.chooseShelf}</p>
-          <nav class="hub-grid hub-grid-5" aria-label={page.chooseShelf}>
+          <nav class="hub-grid hub-grid-3" aria-label={page.chooseShelf}>
             {
               migrationHub.map((item) => (
                 <HubTile
@@ -82,6 +82,7 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
                   icon={item.icon}
                   title={page.shelves[item.key]}
                   text={page.tiles[item.key]}
+                  lead={item.key === 'today'}
                 />
               ))
             }

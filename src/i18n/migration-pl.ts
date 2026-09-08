@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migracja',
   hubLead: [
     'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
-    'Pięć półek, celowo osobno. Dziś to współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Głęboka historia Homo sapiens wychodzącego z Afryki to nie Attyla. Historyczne „wielkie migracje” to nazwane ruchy masowe w źródłach pisanych. Ptaki i inne zwierzęta wciąż odbywają sezonowe trasy. Na każdej karcie są czynniki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
+    'Trzy półki, celowo osobno. Dziś to współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Ludzie to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Wielkie migracje to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Półki Ptaki i Zwierzęta są tu zwinięte. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',
@@ -31,7 +31,7 @@ export const page: MigrationPage = {
       'Migracja netto według regionów ONZ za 2023 i kto już gdzie mieszka — zasób, nie przyjazdy z tego roku.',
     humans: 'Najpierw mapy zdarzeń: z Afryki, Sahul, rolnictwo, bantu, austronezyjczycy, wędrówki ludów, handel niewolnikami. Nazwane ruchy, nie spis rok po roku.',
     'great-migrations':
-      'Historyczne ruchy masowe w źródłach pisanych. Pierwsza karta: hunicka presja na świat rzymski.',
+      'Żywe ruchy masowe: gnu Serengeti, przesunięcia arealów motyli, arktyczne ptaki wędrowne.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
     animals: 'Gnu, karibu, wieloryby, nietoperze — wybrane migracje ssaków i ich czynniki.',
   },
@@ -44,11 +44,11 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'Współczesna mapa migracji międzynarodowej. Na tabliczkach jest migracja netto głównych regionów ONZ za 2023 (World Population Prospects 2024) — nie wymyślone przyjazdy i wyjazdy. Kliknij region: zasób migrantów z połowy 2024 według pochodzenia i kilka udokumentowanych korytarzy. Często dominuje ruch wewnątrzregionalny; Afryka → Europa nie jest rysowana jako główna historia świata.',
+      'Współczesna mapa migracji międzynarodowej. Na tabliczkach jest migracja netto głównych regionów ONZ za 2023 (World Population Prospects 2024) — nie wymyślone przyjazdy i wyjazdy. Osobno włączane są obozy UNHCR i wykrycia na granicach zewnętrznych UE (Frontex). Często dominuje ruch wewnątrzregionalny; Afryka → Europa nie jest rysowana jako główna historia świata.',
     humans:
-      'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla zostaje na Wielkich migracjach; karta wędrówek ludów tam prowadzi.',
+      'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla i wędrówki ludów zostają tutaj; żywe ruchy są na Wielkich migracjach.',
     'great-migrations':
-      'Nazwane ruchy masowe w czasie historycznym — nie wyjście z Afryki. Pierwsza karta to hunicka presja na późny świat rzymski. Później można dodać kolejne wpisy; to nie podręcznik o każdym ludzie Völkerwanderung.',
+      'Żywe ruchy masowe i przesunięcia arealów w epoce klimatu — nie wyjście z Afryki i nie druga karta Attyli. Wędrówki ludów zostają na Ludziach. Karty nazywają czynnik, sezon albo udokumentowane przesunięcie i źródło.',
     birds:
       'Sezonowa migracja ptaków to maszyna pokarmu i rozrodu. Większość gatunków dalekodystansowych gniazduje na wyższych szerokościach w długodniowym lecie, potem leci ku zimowemu pokarmowi. BirdLife i CMS opisują rodziny szlaków — schematyczne korytarze, nie ślady GPS każdego stada.',
     animals:
@@ -74,7 +74,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Przyroda · Homo sapiens →',
     greatMigrationsCta: 'Wielkie migracje →',
     greatMigrationsNote:
-      'Historyczne ruchy masowe w źródłach pisanych — Hunowie i późniejsze karty — są na osobnej półce. Karta wędrówek ludów powyżej prowadzi tam zamiast powielać tę encyklopedię.',
+      'Żywe ruchy masowe — gnu, motyle, ptaki arktyczne — są na osobnej półce. Karta wędrówek ludów powyżej to karta epoki Attyli; tam jej nie powielamy.',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi etapami przybycia',
     mapLead:
@@ -155,6 +155,38 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'butterfly-range-shifts': {
+    title: 'Przesunięcia arealów motyli',
+    hook: 'Nie jedna przeprawa: wiele gatunków przesunęło się ku biegunom albo w górę stoku, gdy klimat się ociepla — a nieliczne wciąż lecą przez kontynenty.',
+    imageAlt: 'Rusałka osetnik na polnym kwiecie — dalekodystansowy migrant jako znak klimatycznych przesunięć motyli',
+    what: '„Masowe” nie oznacza tu pętli Serengeti. To dwa fakty ze źródłami. Po pierwsze, zespoły motyli przesunęły areały lęgowe ku biegunom i w górę stoku: dostojka Edith w zachodniej Ameryce Północnej (Parmesan 1996) i globalny odcisk wielu taksonów (Parmesan & Yohe 2003). Po drugie, nieliczne gatunki odbywają prawdziwe dalekie migracje sezonowe. Rusałka osetnik (Vanessa cardui) jest najlepiej udokumentowana: wielopokoleniowe obiegi między tropikalną Afryką a Europą (Stefanescu et al. 2013). Ta karta nie wymyśla jednej światowej autostrady motyli.',
+    route:
+      'Przesunięcia arealów są lokalne lub regionalne: kolonie gasną na ciepłym albo suchym skraju i pojawiają się dalej na północ albo wyżej. Osetniki idą sezonowym obiegiem, który może łączyć Sahel i Maghreb z Europą i z powrotem — łańcuch pokoleń, nie jeden owad na całą mapę. Monarcha w Amerykach to inny system; nie naklejamy go tutaj jako tej samej historii.',
+    drivers:
+      'Dla przesunięć arealów czynnikiem jest klimat: ocieplenie i suszenie, które psują dawne miejsce lęgowe i otwierają nowe. Dla osetnika — sezonowe pulsy roślin żywicielskich i nektaru. Ani jedno, ani drugie nie jest korytarzem epoki lodowej w ludzkim sensie.',
+    timing:
+      'Prace o przesunięciu arealu mówią o dekadach, nie o kalendarzu migracji. Pulses osetnika są sezonowe i zmieniają się z rokiem; „lata inwazji” w Europie to udokumentowane szczyty, nie stały rozkład jazdy.',
+    pressure:
+      'Klimat nadal przesuwa obwiednię. Utrata siedlisk (łąki, rośliny żywicielskie) może zablokować przesunięcie, które na mapie wygląda łatwo. Spadek owadów to osobna, szersza presja; karta nie wymyśla światowego spisu motyli.',
+    sourcesNote:
+      'Parmesan 1996 i Parmesan & Yohe 2003 to nazwane prace o przesunięciu arealu. Stefanescu et al. 2013 to obieg osetnika. „Masowe” jest oznaczone tymi dwoma znaczeniami, nie jako analogon gnu.',
+  },
+  'arctic-migratory-birds': {
+    title: 'Arktyczne ptaki wędrowne',
+    hook: 'Rybitwy, sokoły wędrowne, siewkowce, gęsi: arktyczne lato to puls pokarmu, a zima jest gdzie indziej.',
+    imageAlt: 'Rybitwy popielate nad zimnym północnym brzegiem — znak wysokiej szerokości, nie nazwana kolonia',
+    what: 'To karta klasy, nie druga encyklopedia rybitwy popielatej. Wiele ptaków lęgowych na arktycznej i subarktycznej tundrze odlatuje, gdy gasną światło i owady. Rybitwy popielate lecą od bieguna do bieguna (Egevang et al. 2010). Sokoły wędrowne idą za ofiarą wzdłuż wybrzeży i szlaków. Siewkowce (szlamniki, biegusy) stagingują na nielicznych mulistych płyciznach. Gęsi idą za trawą i odwilżą. BirdLife i CMS opisują rodziny szlaków; syntezą regionalną jest Arctic Biodiversity Assessment CAFF.',
+    route:
+      'Lęgi w długim arktycznym dniu; zimowiska na umiarkowanych albo tropikalnych mokradłach, wybrzeżach albo — u rybitw — przy antarktycznym lodzie paku. Szlaki wschodnioatlantycki, wschodnioazjatycko-australazjatycki, Missisipi i pacyficzno-amerykański niosą lęgowce arktyczne. Linie to obwiednie, nie GPS każdego stada. Przelot szlamnika Alaska–Nowa Zelandia to pacyficzne skrócenie, nie średnia.',
+    drivers:
+      'Sezonowa produkcja. Lata wysokich szerokości dają długi dzień i wybuch owadów, ryb i nowej trawy. Polarne zimy nie. Wiatr i wybrzeża prowadzą tanią trasą. To zegar pokarmu i rozrodu, nie historia uchodźców.',
+    timing:
+      'Na północ wiosną półkuli północnej, na południe po lęgach. U niektórych populacji przylot przyspieszył, gdy wiosny się ocieplają — fenologia, nie nowy szlak. Rekordowe kilometry to nazwane prace telemetryczne.',
+    pressure:
+      'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. CAFF i BirdLife traktują migrantów arktycznych jako wspólny problem szlaków, nie muzeum jednego gatunku. Karta rybitwy popielatej zostaje pod starym głębokim adresem, jeśli chcesz samą pracę o 70 000 km.',
+    sourcesNote:
+      'Egevang et al. 2010 o rybitwach; szlaki BirdLife; CAFF Arctic Biodiversity Assessment; CMS. Karta nie wymyśla spisu wszystkich arktycznych migrantów.',
+  },
   'hunnic-invasion': {
     title: 'Hunicka presja na Rzym',
     hook: 'Nie wyjście z Afryki: stepowa siła IV–V wieku, której nacisk pomógł zepchnąć Gotów i inne ludy na rzymskie rubieże.',

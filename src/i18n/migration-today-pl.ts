@@ -32,6 +32,31 @@ export const plToday: TodayShelfCopy = {
   mapCredit:
     'Kontury lądu: Wikimedia Commons BlankMap-World (domena publiczna), przestylizowane na limonkę na czerni. Granice to kompromis kartograficzny, nie rozstrzygnięcie prawne. To nie choropleth ludności.',
   emptyPanel: 'Wybierz tabliczkę. Mapa nie stawia Afryki → Europy jako głównego ruchu świata.',
+  layersLabel: 'Warstwy mapy',
+  layerCamps: 'Obozy dla uchodźców',
+  layerDetections: 'Wykrycia na granicach UE',
+  campsTitle: 'Największe obozy i osiedla UNHCR',
+  campsLead:
+    'Nazwane ośrodki UNHCR z opublikowaną liczbą i datą. To ludzie już mieszkający w obozie lub osiedlu — nie migracja netto z 2023 r. i nie „przybysze z tego roku”.',
+  campsHonesty:
+    'Liczby to dane operacyjne na datę w każdym wierszu. Lista jest wyselekcjonowana, nie pełny spis wszystkich ośrodków świata. Kliknij znacznik, żeby zobaczyć źródło.',
+  campsUnrwa:
+    'UNRWA prowadzi osobny rejestr uchodźców palestyńskich. Liczba w obozie to nie ten rejestr. Dane z Gazy po 2023 r. są niestabilne; ta mapa nie miesza UNHCR i UNRWA w jeden ranking.',
+  campOpen: 'Otwórz obóz lub osiedle',
+  campAsOf: 'Liczba na dzień',
+  campPeople: 'osób',
+  detectionsTitle: 'Wykrycia na granicach zewnętrznych UE (Frontex)',
+  detectionsLead:
+    'Wykrycia nieregularnych przekroczeń granic zewnętrznych Unii Europejskiej. Ta sama osoba może być policzona więcej niż raz. To nie jest liczba ludzi i nie jest światowa mapa „przełamań”.',
+  detectionsHonesty:
+    'Wstępne dane Frontexu. 2024: nieco ponad 239 000 wykryć (−38% wobec 2023). 2025: prawie 178 000 (−26%), najniżej od 2021. Znaczniki tras mają rok źródła; tam gdzie Frontex podał tylko kierunek zmiany, nie ma wymyślonej liczby.',
+  detectionsMetric: 'Wykrycia, nie unikalne osoby',
+  detectionsNoGlobal:
+    'Nie ma porównywalnego światowego szeregu „przełamań granicy”. Afryka → Europa nie jest rysowana jako główna historia świata.',
+  detectionsChange: 'wobec poprzedniego roku',
+  detectionsOpen: 'Otwórz notatkę o trasie UE',
+  detectionsNationalities: 'Najczęściej wykrywane obywatelstwa w 2025 r.: Bangladesz, Egipt, Afganistan — to nie teza o tym, kto „przyjeżdża najczęściej” na świecie.',
+  noHeadcount: 'Bez wymyślonej liczby',
   regions: {
     africa: {
       name: 'Afryka',
@@ -101,5 +126,54 @@ export const plToday: TodayShelfCopy = {
     'latin-america-caribbean': 'Ameryka Łacińska i Karaiby',
     'northern-america': 'Ameryka Północna',
     oceania: 'Oceania',
+  },
+  campCopy: {
+    'coxs-bazar': {
+      name: 'Obozy Cox’s Bazar',
+      country: 'Bangladesz',
+      note: 'Rząd Bangladeszu / UNHCR: 33 obozy w dystrykcie Cox’s Bazar, w tym Kutupalong. Uchodźcy Rohingya z Mjanmy. Dalsze około 33 659 osób na Bhasan Char nie wchodzi w ten znacznik.',
+    },
+    dadaab: {
+      name: 'Dadaab',
+      country: 'Kenia',
+      note: 'Kompleks obozów Dadaab we wschodniej Kenii. Liczba na 31 grudnia 2025. Kompleks, nie jedno miasto namiotów.',
+    },
+    'kakuma-kalobeyei': {
+      name: 'Kakuma i Kalobeyei',
+      country: 'Kenia',
+      note: 'Kakuma 225 701; Kalobeyei 82 629; Eldoret 2 425 — trzy ośrodki, które UNHCR Kenia zestawił w aktualizacji z 31 grudnia 2025. Jeden znacznik, bo to jedna operacja.',
+    },
+    bidibidi: {
+      name: 'Bidibidi',
+      country: 'Uganda',
+      note: 'Osiedle Bidibidi, dystrykt Yumbe. Główny kontyngent to przesiedleni z Sudanu Południowego. Osiedle, nie obóz z murem.',
+    },
+    zaatari: {
+      name: 'Zaatari',
+      country: 'Jordania',
+      note: 'Około 80–83 tys. mieszkańców w publikacjach UNHCR i WFP z lat 2022–2024. Rok starszy niż wiersze Bangladeszu i Kenii — to nie spis z 2026 r.',
+    },
+  },
+  routeCopy: {
+    'central-mediterranean': {
+      name: 'Centralny Śródziemnomorski',
+      note: 'Około 67 000 wykryć w 2024 (−59% wobec 2023), druga trasa UE w tamtym roku. W 2025 Frontex nadal nazywał ją najruchliwszą, zbliżoną do 2024. Wyjazdy z Libii to wskazany czynnik w stronę Włoch. Nie liczba unikalnych osób.',
+    },
+    'eastern-mediterranean': {
+      name: 'Wschodni Śródziemnomorski',
+      note: '69 400 wykryć w 2024 (+14%). W 2025 trasa spadła ogółem; korytarz Libia–Kreta wzrósł ponad trzykrotnie. Nie czytaj jako całej Afryki → Europy.',
+    },
+    'western-africa': {
+      name: 'Afryka Zachodnia (Wyspy Kanaryjskie)',
+      note: 'Prawie 47 000 przyjazdów na Wyspy Kanaryjskie w 2024 — najwyżej od początku ewidencji Frontexu w 2009. W 2025 wykrycia na tej trasie spadły o około dwie trzecie (Mauretania, Maroko, Senegal).',
+    },
+    'western-mediterranean': {
+      name: 'Zachodni Śródziemnomorski',
+      note: 'Frontex zgłasza wzrost w 2025, głównie z Algierii. Na znaczniku nie ma wymyślonej liczby za 2025.',
+    },
+    'western-balkans': {
+      name: 'Bałkany Zachodnie',
+      note: 'Wykrycia spadły o 78% w 2024 i znów w 2025. Frontex nie powtórzył liczby za 2025, którą można by podać bez wymysłu.',
+    },
   },
 };

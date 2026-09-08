@@ -71,6 +71,63 @@ export type TodayDataset = {
     worldwideLivingInRegionOfBirth: number;
   };
   corridors: TodayCorridor[];
+  camps: {
+    committed: string;
+    agency: string;
+    unit: string;
+    rankingNote: string;
+    unrwaNote: string;
+    sites: TodayCamp[];
+  };
+  borderDetections: {
+    committed: string;
+    agency: string;
+    geography: string;
+    metric: string;
+    globalNote: string;
+    source2024Url: string;
+    source2025Url: string;
+    methodologyNote: string;
+    years: TodayDetectionYear[];
+    topNationalities2025: string[];
+    routes: TodayDetectionRoute[];
+  };
+};
+
+export type TodayCamp = {
+  id: string;
+  name: string;
+  country: string;
+  region: TodayRegionId;
+  population: number;
+  populationMax?: number;
+  approx: boolean;
+  asOf: string;
+  agency: string;
+  sourceUrl: string;
+  sourceLabel: string;
+  note: string;
+  left: number;
+  top: number;
+};
+
+export type TodayDetectionYear = {
+  year: number;
+  total: number;
+  approx: boolean;
+  changeVsPrev: number;
+  note: string;
+};
+
+export type TodayDetectionRoute = {
+  id: string;
+  name: string;
+  year: number;
+  detections: number | null;
+  approx: boolean;
+  left: number;
+  top: number;
+  note: string;
 };
 
 export const todayDataset = todayJson as TodayDataset;
@@ -117,6 +174,30 @@ export const todaySources: PrimarySource[] = [
   cite(
     'UN M49 geographic regions used for the tablets',
     'https://unstats.un.org/unsd/methodology/m49/',
+  ),
+  cite(
+    'UNHCR Operational Data Portal — Bangladesh (Cox’s Bazar, 31 July 2026)',
+    'https://data.unhcr.org/en/country/bgd',
+  ),
+  cite(
+    'UNHCR Kenya — Dadaab and Kakuma / Kalobeyei operational figures, 31 December 2025',
+    'https://www.unhcr.org/ke/',
+  ),
+  cite(
+    'UNHCR Operational Data Portal — Uganda (Bidibidi, 28 February 2026)',
+    'https://data.unhcr.org/en/country/uga',
+  ),
+  cite(
+    'UNHCR Operational Data Portal — Jordan (Zaatari range, older than 2026)',
+    'https://data.unhcr.org/en/country/jor',
+  ),
+  cite(
+    'Frontex — irregular border crossings into the EU, 2024 (detections, not unique people)',
+    'https://www.frontex.europa.eu/media-centre/news/news-release/irregular-border-crossings-into-eu-drop-sharply-in-2024-oqpweX',
+  ),
+  cite(
+    'Frontex — irregular border crossings, 2025 (detections, not unique people)',
+    'https://www.frontex.europa.eu/media-centre/news/news-release/frontex-irregular-border-crossings-down-26-in-2025-europe-must-stay-prepared-lyKpVb',
   ),
 ];
 

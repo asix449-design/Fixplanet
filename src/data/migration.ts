@@ -16,10 +16,15 @@ export type MigrationShelf = (typeof migrationShelfKeys)[number];
 export const migrationHub = [
   { key: 'today', icon: 'today' },
   { key: 'humans', icon: 'human' },
-  { key: 'great-migrations', icon: 'horse' },
-  { key: 'birds', icon: 'migrate' },
-  { key: 'animals', icon: 'paw' },
+  { key: 'great-migrations', icon: 'migrate' },
 ] as const satisfies ReadonlyArray<{ key: MigrationShelf; icon: HubIconName }>;
+
+/** Old hub shelves and the Hunnic card — keep URLs, send people to the living shelves. */
+export const migrationPathRedirects: Record<string, string> = {
+  birds: '/migration/great-migrations',
+  animals: '/migration/great-migrations',
+  'hunnic-invasion': '/migration/humans',
+};
 
 export type ImageCredit = {
   file: string;
@@ -70,37 +75,10 @@ function img(
  *
  * Slugs stay English. Do not invent routes or dates. Prefer BirdLife / CMS flyways,
  * IUCN, NOAA, named paleodemography papers, and named late-antique sources.
- * Great-migrations cards are historic mass movements — not Pleistocene dispersal.
+ * Great-migrations cards are living mass movements and range shifts —
+ * not Pleistocene dispersal and not a second Attila encyclopedia.
  */
 export const migrationEntryMeta: MigrationEntryMeta[] = [
-  {
-    slug: 'hunnic-invasion',
-    shelf: 'great-migrations',
-    image: img(
-      'hunnic-cauldron.jpg',
-      'Vyacheslav Kirillin / Wikimedia Commons — museum copy (2006) of a Hunnic cauldron type, 4th–5th c., Kazan Kremlin',
-      'CC BY-SA 4.0',
-      'https://commons.wikimedia.org/wiki/File:Hunnic_cauldron_(2023-03-07)_02.jpg',
-    ),
-    sources: [
-      cite(
-        'Ammianus Marcellinus, Res Gestae 31 — Goths at the Danube, 376 CE (Yonge trans.)',
-        'https://www.tertullian.org/fathers/ammianus_31_book31.htm',
-      ),
-      cite(
-        'Heather, English Historical Review, 1995 — Hunnic pressure and the western empire',
-        'https://doi.org/10.1093/ehr/CX.435.4',
-      ),
-      cite(
-        'Hakenbeck & Büntgen, Journal of Roman Archaeology, 2022 — drought and Hunnic raiding, 430s–450s',
-        'https://doi.org/10.1017/S1047759422000332',
-      ),
-      cite(
-        'Cambridge / Hakenbeck note on the 2022 tree-ring argument (not a 376 origin story)',
-        'https://www.cam.ac.uk/research/news/drought-encouraged-attilas-huns-to-attack-the-roman-empire-tree-rings-suggest',
-      ),
-    ],
-  },
   {
     slug: 'arctic-tern',
     shelf: 'birds',
@@ -237,7 +215,7 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
   },
   {
     slug: 'wildebeest',
-    shelf: 'animals',
+    shelf: 'great-migrations',
     scientificName: 'Connochaetes taurinus',
     image: img(
       'wildebeest.jpg',
@@ -257,6 +235,59 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
       cite(
         'Holdo, Holt & Fryxell, PLoS Biology, 2009 — rainfall, grass, and the Serengeti migration',
         'https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1000371',
+      ),
+    ],
+  },
+  {
+    slug: 'butterfly-range-shifts',
+    shelf: 'great-migrations',
+    scientificName: 'Lepidoptera',
+    image: img(
+      'butterfly-range-shifts.jpg',
+      'Generated naturalistic painted lady on a wildflower for Fix Planet — not a named field site',
+      'Site asset',
+      '',
+    ),
+    sources: [
+      cite(
+        'Parmesan, Nature, 1996 — Edith’s checkerspot range shift with climate',
+        'https://doi.org/10.1038/382765a0',
+      ),
+      cite(
+        'Parmesan & Yohe, Nature, 2003 — a globally coherent fingerprint of climate change',
+        'https://doi.org/10.1038/nature01286',
+      ),
+      cite(
+        'Stefanescu et al., Ecography, 2013 — multi-generational painted lady migration',
+        'https://doi.org/10.1111/j.1600-0587.2012.07738.x',
+      ),
+    ],
+  },
+  {
+    slug: 'arctic-migratory-birds',
+    shelf: 'great-migrations',
+    image: img(
+      'arctic-migratory-birds.jpg',
+      'Generated naturalistic Arctic terns over a northern coast for Fix Planet — not a named colony',
+      'Site asset',
+      '',
+    ),
+    sources: [
+      cite(
+        'Egevang et al., PNAS, 2010 — Greenland Arctic terns, ~70,900 km round trip',
+        'https://www.pnas.org/doi/10.1073/pnas.0909493107',
+      ),
+      cite(
+        'BirdLife International — migratory birds and flyways',
+        'https://www.birdlife.org/projects/migratory-birds-and-flyways/',
+      ),
+      cite(
+        'CAFF / Arctic Council — Arctic Biodiversity Assessment, migratory birds',
+        'https://www.caff.is/assessment-series/arctic-biodiversity-assessment',
+      ),
+      cite(
+        'CMS — Convention on the Conservation of Migratory Species of Wild Animals',
+        'https://www.cms.int/',
       ),
     ],
   },

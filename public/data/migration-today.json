@@ -6,7 +6,9 @@
     "We do not split net into invented 'arrived' and 'left' counts. Annual in- and out-flows are not published as a complete global matrix.",
     "Who-lives-where lists use UN DESA International Migrant Stock 2024 (mid-2024). Stock is not 'arrived this year'.",
     "Country corridors are migrant-stock corridors from IOM World Migration Report 2026 citing UN DESA IMS 2024. They accumulate years of movement. Arrows on the map are schematic only — no invented volumes on the lines.",
-    "Intra-regional migration often dominates. Africa→Europe is a real corridor, not the main global story."
+    "Intra-regional migration often dominates. Africa→Europe is a real corridor, not the main global story.",
+    "Camp markers are UNHCR operational figures for named sites, with the as-of date on each row. UNRWA Palestine-refugee camps are not mixed into that ranking.",
+    "Border-pressure figures are Frontex detections of irregular crossings at EU external borders — not unique people, not a global breakthrough series."
   ],
   "netMigration": {
     "year": 2023,
@@ -327,5 +329,169 @@
       "kind": "inter-regional",
       "note": "Asian-born residents of Northern America. IMS also lists Eastern and South-Eastern Asia → Northern America at 12 million as a sub-corridor."
     }
-  ]
+  ],
+  "camps": {
+    "committed": "2026-09-08",
+    "agency": "UNHCR",
+    "unit": "persons",
+    "rankingNote": "Largest named UNHCR camps or camp complexes with a published headcount and date. Not a complete global census of every site. UNRWA camps are not in this list.",
+    "unrwaNote": "UNRWA registers Palestine refugees separately from UNHCR. A camp population is not the same as the register. Post-2023 Gaza figures are unstable; this map does not invent a mixed UNHCR–UNRWA ranking.",
+    "sites": [
+      {
+        "id": "coxs-bazar",
+        "name": "Cox's Bazar camps",
+        "country": "Bangladesh",
+        "region": "asia",
+        "population": 1168375,
+        "approx": false,
+        "asOf": "2026-07-31",
+        "agency": "UNHCR",
+        "sourceUrl": "https://data.unhcr.org/en/country/bgd",
+        "sourceLabel": "UNHCR Operational Data Portal — Bangladesh, 31 July 2026",
+        "note": "Government of Bangladesh / UNHCR: 33 camps in Cox's Bazar district, including Kutupalong. Rohingya refugees from Myanmar. A further about 33,659 people on Bhasan Char are not added into this marker.",
+        "left": 78.4,
+        "top": 46.2
+      },
+      {
+        "id": "dadaab",
+        "name": "Dadaab",
+        "country": "Kenya",
+        "region": "africa",
+        "population": 406725,
+        "approx": false,
+        "asOf": "2025-12-31",
+        "agency": "UNHCR",
+        "sourceUrl": "https://www.unhcr.org/ke/",
+        "sourceLabel": "UNHCR Kenya operational figure, 31 December 2025",
+        "note": "Dadaab camp complex, eastern Kenya. Figure as published for 31 December 2025. A complex, not a single tent city.",
+        "left": 57.2,
+        "top": 54.6
+      },
+      {
+        "id": "kakuma-kalobeyei",
+        "name": "Kakuma and Kalobeyei",
+        "country": "Kenya",
+        "region": "africa",
+        "population": 310755,
+        "approx": false,
+        "asOf": "2025-12-31",
+        "agency": "UNHCR",
+        "sourceUrl": "https://www.unhcr.org/ke/",
+        "sourceLabel": "UNHCR Kenya operational figure, 31 December 2025",
+        "note": "Kakuma 225,701; Kalobeyei 82,629; Eldoret 2,425 — the three sites UNHCR Kenya grouped in the 31 December 2025 update. Shown as one marker because they are one operation.",
+        "left": 54.8,
+        "top": 52.4
+      },
+      {
+        "id": "bidibidi",
+        "name": "Bidibidi",
+        "country": "Uganda",
+        "region": "africa",
+        "population": 204783,
+        "approx": false,
+        "asOf": "2026-02-28",
+        "agency": "UNHCR",
+        "sourceUrl": "https://data.unhcr.org/en/country/uga",
+        "sourceLabel": "UNHCR Operational Data Portal — Uganda, 28 February 2026",
+        "note": "Bidibidi settlement, Yumbe District. South Sudanese displacement is the main caseload. A settlement, not a walled camp.",
+        "left": 54.2,
+        "top": 53.2
+      },
+      {
+        "id": "zaatari",
+        "name": "Zaatari",
+        "country": "Jordan",
+        "region": "asia",
+        "population": 80000,
+        "populationMax": 83000,
+        "approx": true,
+        "asOf": "2024-12-31",
+        "agency": "UNHCR",
+        "sourceUrl": "https://data.unhcr.org/en/country/jor",
+        "sourceLabel": "UNHCR / WFP operational range, about 2022–2024",
+        "note": "About 80,000–83,000 residents in published UNHCR and WFP notes from 2022–2024. The year is older than the Bangladesh and Kenya rows — do not read this as a 2026 census.",
+        "left": 56.8,
+        "top": 39.6
+      }
+    ]
+  },
+  "borderDetections": {
+    "committed": "2026-09-08",
+    "agency": "Frontex",
+    "geography": "EU external borders only",
+    "metric": "detections of irregular border crossings — not unique people",
+    "globalNote": "No comparable global series of 'border breakthroughs' exists. This layer is Frontex detections at the EU's external borders. It is not a world ranking and not an Africa→Europe volume map.",
+    "source2024Url": "https://www.frontex.europa.eu/media-centre/news/news-release/irregular-border-crossings-into-eu-drop-sharply-in-2024-oqpweX",
+    "source2025Url": "https://www.frontex.europa.eu/media-centre/news/news-release/frontex-irregular-border-crossings-down-26-in-2025-europe-must-stay-prepared-lyKpVb",
+    "methodologyNote": "Frontex: the same person may be detected crossing more than once, at different locations. Preliminary consolidated figures.",
+    "years": [
+      {
+        "year": 2024,
+        "total": 239000,
+        "approx": true,
+        "changeVsPrev": -0.38,
+        "note": "Just over 239,000 detections — 38% below 2023. Lowest since 2021 at the time of the 2024 release."
+      },
+      {
+        "year": 2025,
+        "total": 178000,
+        "approx": true,
+        "changeVsPrev": -0.26,
+        "note": "Almost 178,000 detections — 26% below 2024. Lowest since 2021; less than half of 2023."
+      }
+    ],
+    "topNationalities2025": ["Bangladesh", "Egypt", "Afghanistan"],
+    "routes": [
+      {
+        "id": "central-mediterranean",
+        "name": "Central Mediterranean",
+        "year": 2024,
+        "detections": 67000,
+        "approx": true,
+        "left": 49.6,
+        "top": 37.8,
+        "note": "About 67,000 detections in 2024 (−59% vs 2023), second among EU routes that year. In 2025 Frontex still called this the busiest route, broadly in line with 2024. Departures from Libya remain the named factor toward Italy. Not a unique-person count."
+      },
+      {
+        "id": "eastern-mediterranean",
+        "name": "Eastern Mediterranean",
+        "year": 2024,
+        "detections": 69400,
+        "approx": false,
+        "left": 55.2,
+        "top": 36.4,
+        "note": "69,400 detections in 2024 (+14%). In 2025 the route fell overall; the Libya–Crete corridor more than tripled. Do not read as all of Africa→Europe."
+      },
+      {
+        "id": "western-africa",
+        "name": "Western Africa (Canary Islands)",
+        "year": 2024,
+        "detections": 47000,
+        "approx": true,
+        "left": 40.6,
+        "top": 43.2,
+        "note": "Almost 47,000 arrivals to the Canary Islands in 2024 — highest since Frontex records began in 2009. In 2025 detections on this route fell by around two-thirds (Mauritania, Morocco, Senegal)."
+      },
+      {
+        "id": "western-mediterranean",
+        "name": "Western Mediterranean",
+        "year": 2025,
+        "detections": null,
+        "approx": true,
+        "left": 45.8,
+        "top": 38.2,
+        "note": "Frontex reports an increase in 2025, mainly from Algeria. No invented 2025 headcount is shown on the marker."
+      },
+      {
+        "id": "western-balkans",
+        "name": "Western Balkans",
+        "year": 2024,
+        "detections": null,
+        "approx": true,
+        "left": 53.2,
+        "top": 31.8,
+        "note": "Detections fell 78% in 2024 and fell again in 2025. Frontex did not restate a 2025 headcount we can cite without inventing one."
+      }
+    ]
+  }
 }

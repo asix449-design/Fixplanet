@@ -66,7 +66,7 @@ const pageEn: InnovationsPage = {
   imageCredit: 'Image',
   empty: 'No cards in this area yet.',
   heroAlt:
-    'Earth with faint circuit traces — the Innovations section theme, not a photograph of a named satellite',
+    'Anonymous dark armor with lime circuit lines overlooking a night Earth grid — generated site hero, not a film still and not a likeness of a named person',
   areas: {
     ecology: 'Ecology',
     energy: 'Energy',
@@ -115,7 +115,7 @@ const pageRu: InnovationsPage = {
   imageCredit: 'Изображение',
   empty: 'В этой области пока нет карточек.',
   heroAlt:
-    'Земля со следами схем — тема раздела «Инновации», не снимок конкретного спутника',
+    'Безымянная тёмная броня с лаймовыми контурами схем над ночной сеткой Земли — сгенерированный герой раздела, не кадр фильма и не портрет конкретного человека',
   areas: {
     ecology: 'Экология',
     energy: 'Энергия',
@@ -164,7 +164,7 @@ const pagePl: InnovationsPage = {
   imageCredit: 'Zdjęcie',
   empty: 'W tej dziedzinie nie ma jeszcze kart.',
   heroAlt:
-    'Ziemia z śladami obwodów — tło działu Innowacje, nie zdjęcie konkretnego satelity',
+    'Anonimowa ciemna zbroja z limonkowymi obwodami nad nocną siatką Ziemi — wygenerowany hero działu, nie klatka z filmu i nie podobizna konkretnej osoby',
   areas: {
     ecology: 'Ekologia',
     energy: 'Energia',
@@ -213,7 +213,7 @@ const pageLv: InnovationsPage = {
   imageCredit: 'Attēls',
   empty: 'Šajā jomā vēl nav kartīšu.',
   heroAlt:
-    'Zeme ar shēmu pēdām — sadaļas Inovācijas fons, ne konkrēta satelīta foto',
+    'Anonīmas tumšas bruņas ar laima shēmu līnijām virs nakts Zemes tīkla — ģenerēts sadaļas hero, ne filmas kadrs un ne konkrētas personas līdzība',
   areas: {
     ecology: 'Ekoloģija',
     energy: 'Enerģija',

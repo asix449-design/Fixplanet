@@ -10,7 +10,7 @@ export const page: MigrationPage = {
   title: 'Migration',
   hubLead: [
     'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and a warmer climate on top of those older clocks.',
-    'Five shelves, kept apart on purpose. Today is the current-day international map — net migration and migrant stock, labeled as such. Deep-history Homo sapiens walking out of Africa is not Attila. Historic “great migrations” are named mass movements in the written record. Birds and other animals still run seasonal routes. Drivers sit on each entry. Dates are ranges from named sources, not invented tracks.',
+    'Three shelves, kept apart on purpose. Today is the current-day international map — net migration and migrant stock, labeled as such. Humans is the deep-history event atlas, including the Migration Period. Great migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -31,7 +31,7 @@ export const page: MigrationPage = {
     humans:
       'Event maps first: Out of Africa, Sahul, farming, Bantu, Austronesian, the Migration Period, the slave trade. Named movements, not a year-by-year census.',
     'great-migrations':
-      'Historic mass movements in the written record. First card: Hunnic pressure on the Roman world.',
+      'Living mass movements still running: Serengeti wildebeest, butterfly range shifts, Arctic migratory birds.',
     birds: 'Flyways, seasons, and species that still cross hemispheres for food and breeding.',
     animals: 'Wildebeest, caribou, whales, bats — curated mammal migrations and their drivers.',
   },
@@ -44,11 +44,11 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Click a region for mid-2024 migrant stock by origin and a few documented corridors. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
+      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Toggle camps (UNHCR) and EU border detections (Frontex) as separate layers. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
     humans:
-      'Maps first: a timeline of major documented human-migration events, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Each card names when, where, and why — climate, ice, farming, war, trade, empire, slavery — only where scholarship supports it. This is not a map of everyone every fifty years. Attila stays on Great migrations; the Migration Period card links there.',
+      'Maps first: a timeline of major documented human-migration events, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Each card names when, where, and why — climate, ice, farming, war, trade, empire, slavery — only where scholarship supports it. This is not a map of everyone every fifty years. Attila and the Migration Period stay here; living movements live on Great migrations.',
     'great-migrations':
-      'Named mass movements in historical time — not Out of Africa. The first card is Hunnic pressure on the late Roman world. More entries can be added later; this is not a textbook dump of every Völkerwanderung people.',
+      'Living mass movements and climate-era range shifts — not Out of Africa and not a second Attila page. The Migration Period stays on Humans. Cards here name a driver, a season or a documented shift, and a source.',
     birds:
       'Seasonal bird migration is a food-and-breeding machine. Most long-distance species breed at higher latitudes in the long-day summer, then fly toward winter food. BirdLife and CMS describe families of flyways — schematic corridors, not GPS tracks of every flock.',
     animals:
@@ -74,7 +74,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Wildlife · Homo sapiens →',
     greatMigrationsCta: 'Great migrations →',
     greatMigrationsNote:
-      'Historic mass movements in the written record — Huns and later cards — live on a separate shelf. The Migration Period event above links there instead of duplicating that encyclopedia.',
+      'Living mass movements — wildebeest, butterflies, Arctic birds — live on a separate shelf. The Migration Period event above is the Attila-era card; it is not duplicated there.',
     mapTitle: 'Where we went, and when',
     mapAria: 'World map of Homo sapiens dispersal with dated arrival steps',
     mapLead:
@@ -103,7 +103,7 @@ export const page: MigrationPage = {
       lead:
         'A timeline of well-documented movements — not a map of everyone every fifty years. Pleistocene cards are teaching arrows on NASA Blue Marble. Later cards are published plates. Gaps are labeled. We do not invent global population choropleths.',
       honesty:
-        'Event cards, not a regular time grid. Each movement has a dated range, a route or region, drivers only where scholarship supports them, and a source. Hunnic pressure stays on Great migrations; the Migration Period card links there instead of duplicating that shelf.',
+        'Event cards, not a regular time grid. Each movement has a dated range, a route or region, drivers only where scholarship supports them, and a source. Hunnic pressure stays on this Humans shelf. Great migrations is for living mass movements, not a second Attila page.',
       aria: 'Event map of major human migrations',
       scrubberAria: 'Jump to a migration event',
       eventLabel: 'Event',
@@ -119,9 +119,9 @@ export const page: MigrationPage = {
       vintageLabel: 'Dated range',
       schematicCredit:
         'Schematic base: NASA Blue Marble Next Generation (December 2004, public domain) — physical Earth, not a political map and not a population raster.',
-      greatMigrationsCta: 'Great migrations · Huns →',
+      greatMigrationsCta: 'Great migrations →',
       greatMigrationsNote:
-        'Named mass movements in the written record live on that shelf. This plate is a regional schematic of 100–500 CE, not a second Hunnic encyclopedia.',
+        'Living mass movements live on that shelf. This plate is a regional schematic of 100–500 CE. Attila is not duplicated there.',
       coverage: {
         schematic: 'Teaching schematic · dated movement, not a census',
         'farming-europe': 'Western Eurasia farming spread — a gap for other Holocene centres',
@@ -330,6 +330,38 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'butterfly-range-shifts': {
+    title: 'Butterfly range shifts',
+    hook: 'Not one river crossing: many species have moved poleward or upslope as climates warm — and a few still fly continents.',
+    imageAlt: 'A painted lady butterfly on a wildflower, a long-distance migrant used here as a stand-in for climate-era butterfly movement',
+    what: '“Mass” here is not a Serengeti loop. It means two sourced facts. First, assemblages of butterflies have shifted their breeding ranges toward the poles and upslope as climates warm — Edith’s checkerspot in western North America (Parmesan 1996) and a global fingerprint across many taxa (Parmesan & Yohe 2003). Second, a few species make true long-distance seasonal migrations. The painted lady (Vanessa cardui) is the best-documented: multi-generational circuits between tropical Africa and Europe (Stefanescu et al. 2013). This card does not invent a single worldwide butterfly highway.',
+    route:
+      'Range shifts are local-to-regional: colonies wink out at the warm or dry edge and establish farther north or higher. Painted ladies move on a seasonal circuit that can link the Sahel and the Maghreb to Europe, then back — a chain of generations, not one insect flying the whole map. Other famous migrants (monarch in the Americas) are a different system and are not pasted onto this card as if they were the same story.',
+    drivers:
+      'For range shifts the driver is climate: warming and drying that make a former breeding site fail, and new sites become usable. For painted ladies the driver is seasonal pulses of host plants and nectar. Neither is an ice-age corridor in the human sense.',
+    timing:
+      'Range-shift papers report decades, not a migration calendar. Painted lady pulses are seasonal and vary by year; treat “invasion years” in Europe as documented peaks, not a fixed timetable.',
+    pressure:
+      'Climate continues to move the envelope. Habitat loss (grassland, host plants) can block a shift that looks easy on a map. Insect declines are a separate, broader pressure; this card does not invent a global butterfly census.',
+    sourcesNote:
+      'Parmesan 1996 and Parmesan & Yohe 2003 are the named range-shift papers. Stefanescu et al. 2013 is the painted-lady circuit. “Mass” is labeled as those two meanings, not a wildebeest analogue.',
+  },
+  'arctic-migratory-birds': {
+    title: 'Arctic migratory birds',
+    hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a food pulse, and the winter is somewhere else.',
+    imageAlt: 'Arctic terns flying over a cold northern coast — a stand-in for high-latitude bird migration, not a named colony',
+    what: 'This is a class card, not a second Arctic tern encyclopedia. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis.',
+    route:
+      'Breeding in the long Arctic day; non-breeding grounds in temperate or tropical wetlands, coasts, or — for terns — Antarctic pack ice. East Atlantic, East Asian–Australasian, Mississippi, and Pacific Americas flyways all carry Arctic breeders. The lines are envelopes, not GPS of every flock. A godwit’s Alaska–New Zealand crossing is a Pacific shortcut, not the average.',
+    drivers:
+      'Seasonal production. High-latitude summers offer long days and a burst of insects, fish, and new grass. Polar winters do not. Wind and coasts steer the cheap route. This is a food-and-breeding clock, not a refugee story.',
+    timing:
+      'North in the northern spring, south after breeding. Arrival has shifted earlier in some populations as springs warm — phenology, not a new flyway. Treat headline kilometre records as named tracking papers.',
+    pressure:
+      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife treat Arctic migrants as a shared flyway problem, not a single-species museum piece. The Arctic tern species page stays on the old deep URL if you want the 70,000 km paper alone.',
+    sourcesNote:
+      'Egevang et al. 2010 for terns; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS. This card does not invent a headcount of every Arctic migrant.',
+  },
   'hunnic-invasion': {
     title: 'Hunnic pressure on Rome',
     hook: 'Not Out of Africa: a 4th–5th-century steppe power whose pressure helped push Gothic and other peoples onto Roman frontiers.',

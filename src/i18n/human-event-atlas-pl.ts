@@ -17,7 +17,7 @@ export const plHumanEventAtlas: HumanEventAtlasCopy = {
   lead:
     'Oś czasu dobrze udokumentowanych ruchów — nie mapa wszystkich ludzi co pięćdziesiąt lat. Karty plejstocenu to dydaktyczne strzałki na NASA Blue Marble. Późniejsze to opublikowane płyty. Luki są oznaczone. Nie wymyślamy globalnych choropletów ludności.',
   honesty:
-    'Karty zdarzeń, nie regularna siatka czasu. Każdy ruch ma zakres dat, trasę lub region, czynniki tylko tam, gdzie trzyma je nauka, i źródło. Presja hunicka zostaje na Wielkich migracjach; karta wędrówek ludów prowadzi tam zamiast powielać półkę.',
+    'Karty zdarzeń, nie regularna siatka czasu. Każdy ruch ma zakres dat, trasę lub region, czynniki tylko tam, gdzie trzyma je nauka, i źródło. Presja hunicka zostaje na tej półce Ludzie. Wielkie migracje to żywe ruchy masowe, nie druga karta Attyli.',
   aria: 'Mapa wielkich zdarzeń migracji człowieka',
   scrubberAria: 'Przejdź do zdarzenia migracyjnego',
   eventLabel: 'Zdarzenie',
@@ -33,9 +33,9 @@ export const plHumanEventAtlas: HumanEventAtlasCopy = {
   vintageLabel: 'Zakres dat',
   schematicCredit:
     'Podstawa schematu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — fizyczna Ziemia, nie mapa polityczna i nie raster ludności.',
-  greatMigrationsCta: 'Wielkie migracje · Hunowie →',
+  greatMigrationsCta: 'Wielkie migracje →',
   greatMigrationsNote:
-    'Nazwane ruchy masowe w źródłach pisanych są na tamtej półce. Ta płyta to regionalny schemat 100–500 n.e., nie druga encyklopedia Hunów.',
+    'Żywe ruchy masowe są na tamtej półce. Ta płyta to regionalny schemat 100–500 n.e. Attyli tam nie powielamy.',
   coverage: coveragePl,
   events: {
     'out-of-africa': {

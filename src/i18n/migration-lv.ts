@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migrācija',
   hubLead: [
     'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Pieci plaukti, tīši šķirti. Šodien ir šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Homo sapiens dziļā vēsture, izejot no Āfrikas, nav Atila. Vēsturiskās «lielās migrācijas» ir nosauktas masu kustības rakstītajos avotos. Putni un citi dzīvnieki joprojām iet sezonālus ceļus. Dzinējspēki ir katrā kartītē. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
+    'Trīs plaukti, tīši šķirti. Šodien ir šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Cilvēki ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Lielās migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Putnu un Dzīvnieku plaukti ir te savērti. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',
@@ -31,7 +31,7 @@ export const page: MigrationPage = {
       'Neto migrācija pēc ANO reģioniem 2023. gadam un kas jau kur dzīvo — krājums, ne šā gada ierašanās.',
     humans: 'Vispirms notikumu kartes: no Āfrikas, Sahula, zemkopība, bantu, austronēzieši, tautu staigāšana, vergu tirdzniecība. Nosauktas kustības, ne ikgadēja tautas skaitīšana.',
     'great-migrations':
-      'Vēsturiskas masu kustības rakstītajos avotos. Pirmā kartīte: huņu spiediens uz romiešu pasauli.',
+      'Dzīvas masu kustības: Serengeti gnu, tauriņu areālu nobīdes, Arktikas gājputni.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
     animals: 'Gnu, ziemeļbrieži, vaļi, sikspārņi — atlasītas zīdītāju migrācijas un to dzinējspēki.',
   },
@@ -44,11 +44,11 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'Šodienas starptautiskās migrācijas karte. Uz plāksnītēm ir ANO galveno reģionu neto migrācija 2023. gadam (World Population Prospects 2024) — ne izdomātas ierašanās un izbraukšanas. Noklikšķini reģionu: 2024. gada vidus migrantu krājums pēc izcelsmes un daži dokumentēti koridori. Bieži dominē iekšreģionu kustība; Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
+      'Šodienas starptautiskās migrācijas karte. Uz plāksnītēm ir ANO galveno reģionu neto migrācija 2023. gadam (World Population Prospects 2024) — ne izdomātas ierašanās un izbraukšanas. Atsevišķi ieslēdzamas ir UNHCR nometnes un ES ārējo robežu konstatējumi (Frontex). Bieži dominē iekšreģionu kustība; Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
     humans:
-      'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila paliek Lielajās migrācijās; tautu staigāšanas kartīte ved turp.',
+      'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila un tautu staigāšana paliek šeit; dzīvās kustības ir Lielajās migrācijās.',
     'great-migrations':
-      'Nosauktas masu kustības vēsturiskajā laikā — ne izeja no Āfrikas. Pirmā kartīte ir huņu spiediens uz vēlo romiešu pasauli. Vēlāk var pievienot citas kartītes; tas nav mācību grāmata par katru Völkerwanderung tautu.',
+      'Dzīvas masu kustības un klimata laikmeta areālu nobīdes — ne izeja no Āfrikas un ne otra Atilas lapa. Tautu staigāšana paliek Cilvēkos. Kartītes nosauc dzinējspēku, sezonu vai dokumentētu nobīdi un avotu.',
     birds:
       'Sezonālā putnu migrācija ir barības un vairošanās mašīna. Lielākā daļa tālo sugu ligzdo augstākos platuma grādos garās dienas vasarā, tad lido pretī ziemas barībai. BirdLife un CMS apraksta lidojumu ceļu ģimenes — shēmātiskus koridorus, ne katra bara GPS trases.',
     animals:
@@ -74,7 +74,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Savvaļa · Homo sapiens →',
     greatMigrationsCta: 'Lielās migrācijas →',
     greatMigrationsNote:
-      'Vēsturiskas masu kustības rakstītajos avotos — huņņi un vēlākas kartītes — ir atsevišķā plauktā. Tautu staigāšanas kartīte augstāk ved turp, nevis dublē to enciklopēdiju.',
+      'Dzīvas masu kustības — gnu, tauriņi, Arktikas putni — ir atsevišķā plauktā. Tautu staigāšanas kartīte augstāk ir Atilas laikmeta kartīte; tur to nedublē.',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem ierašanās soļiem',
     mapLead:
@@ -155,6 +155,38 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'butterfly-range-shifts': {
+    title: 'Tauriņu areālu nobīdes',
+    hook: 'Ne viena pāreja: daudzas sugas ir pārbīdījušās pret poliem vai augšup pa nogāzi, kad klimats silst, — un dažas joprojām lido pāri kontinentiem.',
+    imageAlt: 'Dadžu raibenis uz savvaļas zieda — tāls migrants kā klimata laikmeta tauriņu kustības zīme',
+    what: '«Masu» šeit nav Serengeti cilpa. Tie ir divi fakti ar avotiem. Pirmkārt, tauriņu sabiedrības ir pārbīdījušas ligzdošanas areālus pret poliem un augšup pa nogāzi: Edītes raibenis Ziemeļamerikas rietumos (Parmesan 1996) un globāls nospiedums daudziem taksoniem (Parmesan & Yohe 2003). Otrkārt, dažas sugas veic īstas tālas sezonālas migrācijas. Dadžu raibenis (Vanessa cardui) ir vislabāk dokumentēts: vairāku paaudžu loki starp tropisko Āfriku un Eiropu (Stefanescu et al. 2013). Šī kartīte neizdomā vienu pasaules tauriņu šoseju.',
+    route:
+      'Areālu nobīdes ir vietējas vai reģionālas: kolonijas izdziest siltajā vai sausajā malā un parādās tālāk ziemeļos vai augstāk. Dadžu raibeņi iet sezonālā lokā, kas var saistīt Sahelu un Magribu ar Eiropu un atpakaļ — paaudžu ķēde, ne viens kukainis visā kartē. Monarhs Amerikā ir cita sistēma; to šeit nelīmē kā to pašu stāstu.',
+    drivers:
+      'Areālu nobīdēm dzinējspēks ir klimats: sasilšana un izžūšana, kas bojā bijušo ligzdošanas vietu un padara lietojamas jaunas. Dadžu raibeņiem — sezonāli saimniekaugu un nektāra viļņi. Ne viens, ne otrs nav leduslaikmeta koridors cilvēku nozīmē.',
+    timing:
+      'Areālu nobīdes raksti runā par desmitgadēm, ne migrācijas kalendāru. Dadžu raibeņu viļņi ir sezonāli un mainās pa gadiem; «iebrukuma gadi» Eiropā ir dokumentēti maksimumi, ne stingrs grafiks.',
+    pressure:
+      'Klimats turpina kustināt apvalku. Biotopu zudums (pļavas, saimniekaugi) var pārraut nobīdi, kas kartē izskatās viegla. Kukaiņu skaita kritums ir atsevišķs, platāks spiediens; kartīte neizdomā globālu tauriņu tautas skaitīšanu.',
+    sourcesNote:
+      'Parmesan 1996 un Parmesan & Yohe 2003 ir nosauktie areālu nobīdes raksti. Stefanescu et al. 2013 ir dadžu raibeņa loks. «Masu» ir marķēts ar šīm divām nozīmēm, ne kā gnu analogs.',
+  },
+  'arctic-migratory-birds': {
+    title: 'Arktikas gājputni',
+    hook: 'Zīriņi, lielie piekūni, tārtiņveidīgie, zosis: Arktikas vasara ir barības impulss, un ziema ir citur.',
+    imageAlt: 'Polārie zīriņi virs auksta ziemeļu krasta — zīme augsto platuma grādu putnu migrācijai, ne nosaukta kolonija',
+    what: 'Šī ir klases kartīte, ne otra polārā zīriņa enciklopēdija. Daudzi putni, kas ligzdo Arktikas un subarktiskajā tundrā, aiziet, kad gaisma un kukaiņi beidzas. Polārie zīriņi iet no pola līdz polam (Egevang et al. 2010). Lielie piekūni seko medījumam gar krastiem un lidojumu ceļiem. Tārtiņveidīgie (kuitalas, īsknābji) apstājas dažos dūņu līdzenumos. Zosis seko zālei un atkusnim. BirdLife un CMS apraksta lidojumu ceļu ģimenes; CAFF Arctic Biodiversity Assessment ir reģionālais kopsavilkums.',
+    route:
+      'Ligzdošana garajā Arktikas dienā; ziemošanas vietas mērenajos vai tropiskajos mitrājos, krastos vai — zīriņiem — pie Antarktīdas pakledus. Austrumatlantijas, Austrumāzijas–Australāzijas, Misisipi un Klusā okeāna Amerikas ceļi nes Arktikas ligzdotājus. Līnijas ir apvalki, ne katra bara GPS. Kuitalas Aļaska–Jaunzēlande ir Klusā okeāna saīsinājums, ne vidējais.',
+    drivers:
+      'Sezonālā produkcija. Augsto platuma grādu vasaras dod garu dienu un kukaiņu, zivju un jaunas zāles uzliesmojumu. Polārās ziemas — nē. Vējš un krasti vada lēto ceļu. Tas ir barības un vairošanās pulkstenis, ne bēgļu stāsts.',
+    timing:
+      'Uz ziemeļiem ziemeļu pavasarī, uz dienvidiem pēc ligzdošanas. Dažām populācijām ierašanās ir pārbīdījusies agrāk, kad pavasari silst, — fenoloģija, ne jauns lidojumu ceļš. Rekordu kilometri ir nosaukti izsekošanas raksti.',
+    pressure:
+      'Klimats kustinā ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. CAFF un BirdLife Arktikas migrantus uzskata par kopīgu lidojumu ceļu uzdevumu, ne vienas sugas muzeju. Polārā zīriņa lapa paliek vecajā dziļajā adresē, ja vajag tikai 70 000 km rakstu.',
+    sourcesNote:
+      'Egevang et al. 2010 par zīriņiem; BirdLife lidojumu ceļi; CAFF Arctic Biodiversity Assessment; CMS. Šī kartīte neizdomā visu Arktikas migrantu skaitīšanu.',
+  },
   'hunnic-invasion': {
     title: 'Huņu spiediens uz Romu',
     hook: 'Ne izeja no Āfrikas: 4.–5. gadsimta stepes spēks, kura spiediens palīdzēja grūst gotus un citas tautas uz romiešu robežām.',

@@ -32,6 +32,31 @@ export const enToday: TodayShelfCopy = {
   mapCredit:
     'Land outlines: Wikimedia Commons BlankMap-World (public domain), restyled lime on black. Borders are a cartographic compromise, not a legal ruling. Not a population choropleth.',
   emptyPanel: 'Choose a tablet. The map does not rank Africa → Europe as the world’s main movement.',
+  layersLabel: 'Map layers',
+  layerCamps: 'Refugee camps',
+  layerDetections: 'EU border detections',
+  campsTitle: 'Largest UNHCR camps and settlements',
+  campsLead:
+    'Named UNHCR sites with a published headcount and date. These are people already living in a camp or settlement — not 2023 net migration and not “arrived this year.”',
+  campsHonesty:
+    'Sizes are operational figures for the date on each row. The list is curated, not a complete world census of every site. Click a marker for the source.',
+  campsUnrwa:
+    'UNRWA registers Palestine refugees separately. A camp population is not the same as that register. Post-2023 Gaza figures are unstable; this map does not invent a mixed UNHCR–UNRWA ranking.',
+  campOpen: 'Open camp or settlement',
+  campAsOf: 'Figure as of',
+  campPeople: 'people',
+  detectionsTitle: 'EU external-border detections (Frontex)',
+  detectionsLead:
+    'Detections of irregular crossings at the European Union’s external borders. The same person can be counted more than once. This is not a count of people, and it is not a global “breakthrough” map.',
+  detectionsHonesty:
+    'Frontex preliminary figures. 2024: just over 239,000 detections (−38% vs 2023). 2025: almost 178,000 (−26%), lowest since 2021. Route markers use a sourced year; where Frontex gave only a direction of change, no invented headcount is shown.',
+  detectionsMetric: 'Detections, not unique people',
+  detectionsNoGlobal:
+    'No comparable global series of border “breakthroughs” exists. Africa → Europe is not drawn as the world’s main story.',
+  detectionsChange: 'vs previous year',
+  detectionsOpen: 'Open EU route note',
+  detectionsNationalities: 'Most frequently detected nationalities in 2025: Bangladeshi, Egyptian, Afghan — not a statement about who “arrives most” worldwide.',
+  noHeadcount: 'No invented headcount',
   regions: {
     africa: {
       name: 'Africa',
@@ -101,5 +126,54 @@ export const enToday: TodayShelfCopy = {
     'latin-america-caribbean': 'Latin America and the Caribbean',
     'northern-america': 'Northern America',
     oceania: 'Oceania',
+  },
+  campCopy: {
+    'coxs-bazar': {
+      name: 'Cox’s Bazar camps',
+      country: 'Bangladesh',
+      note: 'Government of Bangladesh / UNHCR: 33 camps in Cox’s Bazar district, including Kutupalong. Rohingya refugees from Myanmar. A further about 33,659 people on Bhasan Char are not added into this marker.',
+    },
+    dadaab: {
+      name: 'Dadaab',
+      country: 'Kenya',
+      note: 'Dadaab camp complex, eastern Kenya. Figure as published for 31 December 2025. A complex, not a single tent city.',
+    },
+    'kakuma-kalobeyei': {
+      name: 'Kakuma and Kalobeyei',
+      country: 'Kenya',
+      note: 'Kakuma 225,701; Kalobeyei 82,629; Eldoret 2,425 — the three sites UNHCR Kenya grouped in the 31 December 2025 update. Shown as one marker because they are one operation.',
+    },
+    bidibidi: {
+      name: 'Bidibidi',
+      country: 'Uganda',
+      note: 'Bidibidi settlement, Yumbe District. South Sudanese displacement is the main caseload. A settlement, not a walled camp.',
+    },
+    zaatari: {
+      name: 'Zaatari',
+      country: 'Jordan',
+      note: 'About 80,000–83,000 residents in published UNHCR and WFP notes from 2022–2024. The year is older than the Bangladesh and Kenya rows — do not read this as a 2026 census.',
+    },
+  },
+  routeCopy: {
+    'central-mediterranean': {
+      name: 'Central Mediterranean',
+      note: 'About 67,000 detections in 2024 (−59% vs 2023), second among EU routes that year. In 2025 Frontex still called this the busiest route, broadly in line with 2024. Departures from Libya remain the named factor toward Italy. Not a unique-person count.',
+    },
+    'eastern-mediterranean': {
+      name: 'Eastern Mediterranean',
+      note: '69,400 detections in 2024 (+14%). In 2025 the route fell overall; the Libya–Crete corridor more than tripled. Do not read as all of Africa → Europe.',
+    },
+    'western-africa': {
+      name: 'Western Africa (Canary Islands)',
+      note: 'Almost 47,000 arrivals to the Canary Islands in 2024 — highest since Frontex records began in 2009. In 2025 detections on this route fell by around two-thirds (Mauritania, Morocco, Senegal).',
+    },
+    'western-mediterranean': {
+      name: 'Western Mediterranean',
+      note: 'Frontex reports an increase in 2025, mainly from Algeria. No invented 2025 headcount is shown on the marker.',
+    },
+    'western-balkans': {
+      name: 'Western Balkans',
+      note: 'Detections fell 78% in 2024 and fell again in 2025. Frontex did not restate a 2025 headcount we can cite without inventing one.',
+    },
   },
 };
