@@ -51,7 +51,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Nasz gatunek',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'Mały rysunek średniowiecznego chłopa w prostym kapturze i z powrozem w pasie — nie król i nie portret konkretnej osoby',
+      'Mały rysunek średniowiecznego chłopa w prostej czapce, brązowej tunice, z powrozem w pasie i motyką — nie król i nie portret konkretnej osoby',
     appearedLabel: 'Pojawił się',
     appeared:
       'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat (Hublin et al. 2017). Genetyka i zapis kopalny umieszczają pochodzenie Homo sapiens na tym kontynencie. Wcześniejsze gatunki Homo już opuściły Afrykę; ta strona to późniejsze, globalne rozprzestrzenienie naszego gatunku.',

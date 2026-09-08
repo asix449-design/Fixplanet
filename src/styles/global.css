@@ -3465,14 +3465,17 @@ a.map-card:hover {
 .migration-human-figure {
   margin: 0;
   max-width: 13.5rem;
+  background: #24301a;
 }
 
+.wildlife-hero-art.migration-human-figure img,
 .migration-human-figure img {
   width: 100%;
+  height: auto;
   aspect-ratio: 2 / 3;
   object-fit: contain;
-  object-position: center bottom;
-  background: #070d0a;
+  object-position: center;
+  background: #24301a;
 }
 
 .migration-human-figure figcaption {

@@ -52,7 +52,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Our species',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'A small ink drawing of a medieval commoner in a simple hooded cloak and rope belt — not a king and not a portrait of a named person',
+      'A small drawing of a medieval commoner in a simple cap, brown tunic, rope belt, and hoe — not a king and not a portrait of a named person',
     appearedLabel: 'Appeared',
     appeared:
       'About 300,000 years ago in Africa. Fossils from Jebel Irhoud, Morocco, date to around 315,000 years (Hublin et al. 2017). Genetics and the fossil record place the origin of Homo sapiens on that continent. Earlier Homo species had already left Africa; this page is the later, global spread of our species.',

@@ -51,7 +51,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Mūsu suga',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'Neliels viduslaiku zemnieka zīmējums vienkāršā kapucē un ar auklas jostu — ne karalis un ne konkrētas personas portrets',
+      'Neliels viduslaiku zemnieka zīmējums vienkāršā cepurē, brūnā tunikā, ar auklas jostu un kapli — ne karalis un ne konkrētas personas portrets',
     appearedLabel: 'Parādījās',
     appeared:
       'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem (Hublin et al. 2017). Ģenētika un fosiliju rinda Homo sapiens izcelsmi liek šajā kontinentā. Agrākās Homo sugas jau bija atstājušas Āfriku; šī lapa ir mūsu sugas vēlākā, globālā izplatīšanās.',
