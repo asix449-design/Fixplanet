@@ -26,6 +26,7 @@ export type ReligionHistoryPage = {
   catalogCta: string;
   catalogAlt: string;
   heroAlt: string;
+  soonNotice: string;
 };
 
 export type ReligionFrameCopy = {
@@ -69,6 +70,8 @@ const pageEn: ReligionHistoryPage = {
   catalogAlt: 'Majority-religion world map used as the catalog card for the Religion century atlas',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors and oceans, used as a physical backdrop, not a religion map',
+  soonNotice:
+    'This atlas is still being brought into the History of borders visual family — tan land and soft blue seas. Century plates stay sourced; we do not invent missing polygons.',
 };
 
 const pageRu: ReligionHistoryPage = {
@@ -106,6 +109,8 @@ const pageRu: ReligionHistoryPage = {
   catalogAlt: 'Карта регионов большинства религий — карточка атласа столетий «Религии»',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши и океанов, физический фон, не карта религий',
+  soonNotice:
+    'Этот атлас ещё приводится к визуальному семейству «Истории границ» — охра суши и мягкая голубизна морей. Листы по столетиям остаются с источниками; недостающие полигоны мы не рисуем.',
 };
 
 const pagePl: ReligionHistoryPage = {
@@ -143,6 +148,8 @@ const pagePl: ReligionHistoryPage = {
   catalogAlt: 'Mapa regionów większości religijnej — karta atlasu stuleci Religii',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów i oceanów, tło fizyczne, nie mapa religii',
+  soonNotice:
+    'Ten atlas jest jeszcze dopasowywany do rodziny wizualnej Historii granic — płowy ląd i miękki błękit mórz. Płyty stuleci zostają ze źródłami; brakujących wielokątów nie wymyślamy.',
 };
 
 const pageLv: ReligionHistoryPage = {
@@ -181,6 +188,8 @@ const pageLv: ReligionHistoryPage = {
   catalogAlt: 'Vairākuma reliģiju pasaules karte — Reliģiju gadsimtu atlanta kartīte',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes un okeānu krāsas, fizisks fons, ne reliģiju karte',
+  soonNotice:
+    'Šo atlantu vēl pieved pie Robežu vēstures vizuālās ģimenes — dzeltenbrūna zeme un maigi zila jūra. Gadsimtu lapas paliek ar avotiem; trūkstošos daudzstūrus mēs neizdomājam.',
 };
 
 const captionsEn: Record<number, ReligionFrameCopy> = {
