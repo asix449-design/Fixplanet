@@ -2408,9 +2408,9 @@ a.map-card:hover {
 
 /* Hub: sunlit pine / god-rays plate. Keep trees visible; hold type on the bright core. */
 .theme-forests .forests-hub-backdrop img {
-  object-position: 55% 38%;
-  filter: saturate(1.15) brightness(0.9) contrast(1.05);
-  transform: scale(1.04);
+  object-position: 62% 68%;
+  filter: saturate(1.18) brightness(0.95) contrast(1.04);
+  transform: scale(1.06);
 }
 
 .forests-hub-scrim {
