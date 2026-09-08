@@ -265,20 +265,21 @@ export const longViewImage = {
 
 export const forestBackdrop = {
   file: 'forests-section-bg.jpg',
-  sourceOrg: 'Michael Schweppe',
-  sourceUrl: 'https://commons.wikimedia.org/wiki/File:Redwood_National_Park,_fog_in_the_forest.jpg',
+  sourceOrg: 'David Baron',
+  sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pinus_radiata_forest_Point_Lobos.jpg',
   license: 'CC BY-SA 2.0',
+  width: 1920,
+  height: 1396,
 } as const;
 
 /** Hub-only hero. Shelf pages keep `forestBackdrop`. */
 export const forestHubBackdrop = {
   file: 'forests-hub-bg.jpg',
-  sourceOrg: 'Quarkgluonplasma',
-  sourceUrl:
-    'https://commons.wikimedia.org/wiki/File:G._Zlatoust,_Chelyabinskaya_oblast%27,_Russia_-_panoramio_(45).jpg',
-  license: 'CC BY-SA 3.0',
-  width: 1920,
-  height: 2880,
+  sourceOrg: 'Sriram Rajkumar',
+  sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pine_Forest_in_Ooty.jpg',
+  license: 'CC BY-SA 4.0',
+  width: 1235,
+  height: 1824,
 } as const;
 
 /**

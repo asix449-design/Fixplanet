@@ -10,7 +10,7 @@ import {
   mapHub,
   type MapCategory,
 } from '../data/maps';
-import { getMapsByCategory, getMapsPage, localizePath, resolveLocale } from '../i18n';
+import { getMapsByCategory, getMapsPage, getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
   hub?: boolean;
@@ -19,6 +19,7 @@ interface Props {
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getMapsPage(locale);
+const ui = getUi(locale);
 const hub = Astro.props.hub === true;
 const requested = Astro.props.category ?? Astro.url.searchParams.get('category');
 const activeCategory: MapCategory | undefined = hub
@@ -78,8 +79,14 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
             title={page.categories[item.key]}
             text={page.tiles[item.key]}
             lead={item.lead === true}
-            badge={item.key === 'history-of-borders' || item.key === 'religious' ? page.centuryBadge : undefined}
-            badgeTone="atlas"
+            badge={
+              item.key === 'religious'
+                ? ui.comingSoon.badge
+                : item.key === 'history-of-borders'
+                  ? page.centuryBadge
+                  : undefined
+            }
+            badgeTone={item.key === 'religious' ? 'soon' : 'atlas'}
           />
         ))}
       </SectionHub>

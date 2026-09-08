@@ -49,8 +49,8 @@ const stats = getForestStats(locale);
 const heroStats = getForestHeroStats(locale);
 const longViewSrc = forestFrameSrc(longViewImage.file);
 const backdropSrc = forestFrameSrc(hub ? forestHubBackdrop.file : forestBackdrop.file);
-const backdropWidth = hub ? forestHubBackdrop.width : 1280;
-const backdropHeight = hub ? forestHubBackdrop.height : 960;
+const backdropWidth = hub ? forestHubBackdrop.width : forestBackdrop.width;
+const backdropHeight = hub ? forestHubBackdrop.height : forestBackdrop.height;
 
 const initialSatellite = satelliteFrames[satelliteFrames.length - 1];
 const scenarioKeys = ['continued', 'slower', 'restore'] as const;
@@ -76,9 +76,11 @@ const pageTitle = activePanel
       <section class="forests-hero" aria-label={page.filterAria}>
         <div class="wrap forests-hero-inner">
           <div class="forests-hero-stats">
-            <p class="forests-hero-kicker">{page.eyebrow}</p>
-            <h1 class="forests-hero-title">{page.panels.numbers}</h1>
-            <p class="forests-hero-note">{page.heroNote}</p>
+            <div class="forests-hero-panel">
+              <p class="forests-hero-kicker">{page.eyebrow}</p>
+              <h1 class="forests-hero-title">{page.panels.numbers}</h1>
+              <p class="forests-hero-note">{page.heroNote}</p>
+            </div>
             <div class="forests-hero-grid">
               {
                 heroStats.map((stat) => (
