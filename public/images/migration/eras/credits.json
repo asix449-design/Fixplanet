@@ -1,0 +1,29 @@
+[
+  {
+    "file": "holocene-agriculture.png",
+    "title": "Centres of origin and spread of agriculture labelled",
+    "source": "Ian Alexander after Diamond, Science, 2003 Fig. 1",
+    "url": "https://commons.wikimedia.org/wiki/File:Centres_of_origin_and_spread_of_agriculture_labelled.svg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Holocene-Neolithic farming schematic. Not a census of all people. Amazonia as a centre omitted in the 2003 figure."
+  },
+  {
+    "file": "migration-period.jpg",
+    "title": "Invasions of the Roman Empire, 100–500 CE",
+    "source": "MapMaster / Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png",
+    "license": "CC BY-SA 2.5",
+    "kind": "hosted-original",
+    "note": "Europe and Mediterranean only. Regional schematic, not a world population choropleth. Hunnic card stays on Great migrations."
+  },
+  {
+    "file": "austronesian.png",
+    "title": "Chronological dispersal of Austronesian people across the Pacific",
+    "source": "Pavljenko after Bellwood et al. 2011 / Benton et al. 2012",
+    "url": "https://commons.wikimedia.org/wiki/File:Chronological_dispersal_of_Austronesian_people_across_the_Pacific.svg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Later seafaring plate. Pacific and Indian Ocean coverage, not a global 1500/1800 population raster."
+  }
+]

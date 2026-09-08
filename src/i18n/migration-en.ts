@@ -25,7 +25,8 @@ export const page: MigrationPage = {
   pressure: 'What is changing',
   wildlifeLink: 'Wildlife species page →',
   tiles: {
-    humans: 'Out of Africa, Sahul, the Americas: dated arrival windows and the climate that shaped them.',
+    humans:
+      'Era maps first: Out of Africa, Sahul, the Americas, Holocene farming, antiquity, the Migration Period. Dated windows, not a year-by-year census.',
     'great-migrations':
       'Historic mass movements in the written record. First card: Hunnic pressure on the Roman world.',
     birds: 'Flyways, seasons, and species that still cross hemispheres for food and breeding.',
@@ -39,7 +40,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     humans:
-      'Homo sapiens arose in Africa about 300,000 years ago. The later journey — not the species card — is here: corridors, coasts, ice, and food. Megafauna loss is mentioned only where it explains a route; the Extinct catalog stays on Wildlife. Attila and the Migration Period are a different clock: Great migrations.',
+      'Maps first: major human-migration eras, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Corridors, coasts, ice, and food sit on each era. Megafauna loss is mentioned only where it explains a route; the Extinct catalog stays on Wildlife. Attila is a different clock: Great migrations.',
     'great-migrations':
       'Named mass movements in historical time — not Out of Africa. The first card is Hunnic pressure on the late Roman world. More entries can be added later; this is not a textbook dump of every Völkerwanderung people.',
     birds:
@@ -51,7 +52,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Our species',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
+      'A small ink drawing of a medieval commoner in a simple hooded cloak and rope belt — not a king and not a portrait of a named person',
     appearedLabel: 'Appeared',
     appeared:
       'About 300,000 years ago in Africa. Fossils from Jebel Irhoud, Morocco, date to around 315,000 years (Hublin et al. 2017). Genetics and the fossil record place the origin of Homo sapiens on that continent. Earlier Homo species had already left Africa; this page is the later, global spread of our species.',
@@ -91,6 +92,136 @@ export const page: MigrationPage = {
       'Base land: NASA Blue Marble Next Generation (December 2004, public domain) — cloud-free physical Earth, not a political map.',
     honesty:
       'Schematic of dated windows on a physical Earth image. It is not a GPS track, not a genetic tree, and not a claim that climate alone moved people.',
+    eraAtlas: {
+      title: 'Migration eras',
+      lead:
+        'Scrub major periods, not every year. Pleistocene steps are a teaching schematic on NASA Blue Marble. Later steps are published plates. We do not draw a global population choropleth for 50 CE or any other arbitrary year.',
+      honesty:
+        'Arrival windows, not marching years. Holocene farming, a 1 CE political sheet, a Migration Period schematic, and Austronesian seafaring are sourced plates with labeled coverage gaps — the same honesty as the Religion atlas. Hunnic pressure is on Great migrations; this scrubber links there instead of duplicating that shelf.',
+      aria: 'Era map of major human migrations',
+      scrubberAria: 'Jump to a migration era',
+      eraLabel: 'Era',
+      whereLabel: 'Where',
+      whyLabel: 'Why — drivers',
+      uncertaintyLabel: 'Uncertainty',
+      nearestNote: 'Nearest openly licensed plate — not an exact-year census.',
+      sourceLabel: 'Source',
+      licenseLabel: 'License',
+      vintageLabel: 'Vintage',
+      schematicCredit:
+        'Schematic base: NASA Blue Marble Next Generation (December 2004, public domain) — physical Earth, not a political map and not a population raster.',
+      greatMigrationsCta: 'Great migrations · Huns →',
+      greatMigrationsNote:
+        'Named mass movements in the written record live on that shelf. This plate is a regional schematic of 100–500 CE, not a second Hunnic encyclopedia.',
+      coverage: {
+        schematic: 'Teaching schematic · dated arrival windows',
+        agriculture: 'Farming origins and spread — not a census of all people',
+        polities: 'Political reconstruction ~1 CE — not a population choropleth',
+        regional: 'Europe and the Mediterranean — a gap for the rest of the world',
+        seafaring: 'Austronesian seafaring — Pacific and Indian Ocean, not a world census',
+      },
+      eras: {
+        origin: {
+          label: 'Africa origin',
+          title: 'Africa — origin, not a departure lounge',
+          where: 'Africa. Jebel Irhoud, Morocco, is the named fossil window around 315,000 years.',
+          why: 'This is an origin, not a start gun. People lived on one continent for most of that time.',
+          uncertainty:
+            'Earlier Homo species had already left Africa. Levant fossils (Skhul/Qafzeh) record presence without a lasting worldwide replacement.',
+          caption:
+            'Pin 1 only. No arrows yet. The ~300,000-year date is where the species is, not a track out of Africa.',
+          imageAlt: 'NASA Blue Marble with a pin on Africa marking the origin of Homo sapiens',
+        },
+        'out-of-africa': {
+          label: 'Out of Africa',
+          title: 'Out of Africa — climate corridors',
+          where: 'From Africa into the Levant and beyond, about 70,000–50,000 years ago.',
+          why: 'Green Sahara and Levant windows, then arid barriers. The Nile, Red Sea coasts, and Bab-el-Mandeb are discussed corridors — not one proven highway.',
+          uncertainty:
+            'Genetics (Bergström et al. 2020) supports a Late Pleistocene expansion that left most living non-African ancestry. The exact path is not drawn as fact.',
+          caption:
+            'Arrow from Africa toward the Levant. A schematic of a dated window, not GPS of every band.',
+          imageAlt: 'Schematic arrow from Africa toward Southwest Asia on NASA Blue Marble',
+        },
+        sahul: {
+          label: 'Sahul',
+          title: 'Sahul — coasts, shelves, and water gaps',
+          where: 'Australia, New Guinea, and Tasmania joined as Sahul when sea level was lower.',
+          why: 'Glacial sea-level fall exposed Sunda and narrowed water gaps. Reaching Sahul still meant boats or rafts, not an ice-free interior corridor.',
+          uncertainty:
+            'Madjedbebe is dated around 65,000 years (Clarkson et al. 2017); some reviews sit later inside 65–50 thousand. Either way it is tens of millennia before the Americas.',
+          caption: 'Arrow toward Sahul. Coastal and island-hopping skill, not a marching year.',
+          imageAlt: 'Schematic arrow from Sunda toward Sahul on NASA Blue Marble',
+        },
+        eurasia: {
+          label: 'Eurasia',
+          title: 'Eurasia — cold steppe and a delayed Europe',
+          where: 'Parts of Asia before a lasting European presence around 45,000–40,000 years ago.',
+          why: 'Mammoth-steppe hunting landscapes, rivers, and the slow opening of higher latitudes as climate allowed.',
+          uncertainty:
+            'This is not the same clock as Sahul. Neanderthal populations were already in Europe; a lasting Homo sapiens presence is the usual later window.',
+          caption: 'Arrow into Europe. Dated presence, not a claim that people walked only this line.',
+          imageAlt: 'Schematic arrow into Europe on NASA Blue Marble',
+        },
+        americas: {
+          label: 'Americas',
+          title: 'Americas — ice, coasts, and a still-moving debate',
+          where: 'Beringia, then the Americas. Working window here: about 15,000–10,000 years for a widespread presence.',
+          why: 'Low sea level linked Siberia and Alaska. Ice sheets blocked the interior. A Pacific coastal route is the usual working model after Pedersen et al. 2016.',
+          uncertainty:
+            'Older claims (including White Sands) exist and remain contested; they are not treated here as settled first-arrival dates. This is not a 50 CE census.',
+          caption: 'Arrow into the Americas. Ice and coasts, not a year-by-year GPS track.',
+          imageAlt: 'Schematic arrow into the Americas on NASA Blue Marble',
+        },
+        holocene: {
+          label: 'Holocene farming',
+          title: 'Holocene — Neolithic expansions',
+          where:
+            'Independent farming centres (Fertile Crescent, China, New Guinea, the Americas, Africa) and the spreads that followed.',
+          why: 'Crops and animals made denser, more sedentary populations possible. Language families often moved with farming, but not as a single world wave.',
+          uncertainty:
+            'Diamond 2003 Fig. 1 as redrawn by Ian Alexander. A 2003 synthesis: Amazonia as a centre is omitted; dates are approximate. This is farming, not a map of all people.',
+          caption:
+            'Published schematic of agricultural origins and spread. Not a Holocene population choropleth.',
+          imageAlt:
+            'World map of Neolithic agricultural centres of origin and arrows of spread, after Diamond 2003',
+        },
+        antiquity: {
+          label: 'Antiquity ~1 CE',
+          title: 'Classical antiquity — a political snapshot',
+          where: 'The inhabited Old World as reconstructed for about 1 CE.',
+          why: 'Empires, kingdoms, and named peoples — trade, tribute, and armies — not a count of villagers.',
+          uncertainty:
+            'This is the History of borders 1 CE sheet: polities, not population density. The Americas and much of Oceania are not a census here. We do not invent a global choropleth for 50 CE.',
+          caption:
+            'Sourced political reconstruction. Honest gap: this is not “everyone in 50 CE.”',
+          imageAlt: 'World political map reconstructed for 1 CE, not a population density map',
+        },
+        'migration-period': {
+          label: 'Migration Period',
+          title: 'Migration Period — 100–500 CE',
+          where: 'Europe and the Mediterranean: Goths, Vandals, Franks, Huns, and others on a teaching plate.',
+          why: 'Frontier pressure, climate stress in some decades, and the politics of the late Roman world. Hunnic pressure on Rome is the first Great migrations card.',
+          uncertainty:
+            'MapMaster schematic after named atlases. Europe-only coverage. Arrows are major incursions, not GPS of every group. Dates span centuries.',
+          caption:
+            'Regional schematic, 100–500 CE. Link to Great migrations for the Hunnic shelf — this page does not duplicate that card.',
+          imageAlt:
+            'Map of major invasions of the Roman Empire from about 100 to 500 CE, Europe and the Mediterranean',
+        },
+        'later-seafaring': {
+          label: 'Later seafaring',
+          title: 'Later eras — boats, not ice',
+          where: 'Austronesian dispersal across the Pacific and Indian Ocean; Remote Oceania and New Zealand much later.',
+          why: 'Seafaring toward new islands. New Zealand’s first settlement is on the order of 700 years ago in the usual archaeological reading.',
+          uncertainty:
+            'Bellwood / Benton chronology as redrawn on Wikimedia. Pacific–Indian Ocean coverage only. We still do not host a global 1500 or 1800 population raster.',
+          caption:
+            'Sourced later-era plate. Madagascar, Remote Oceania, and New Zealand are Holocene stories — not an ice corridor.',
+          imageAlt: 'Chronological map of Austronesian dispersal across the Pacific',
+        },
+      },
+    },
     sections: [
       {
         id: 'origin',

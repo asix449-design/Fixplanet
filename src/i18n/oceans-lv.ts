@@ -14,6 +14,8 @@ export const lv: OceansPage = {
   heroNote:
     'Skaitļi ar avotiem. Okeāna siltums nav SST; pH ir ķīmija; plastmasas plūsma nav krājums riņķojumā.',
   heroSources: 'Avoti un definīcijas →',
+  photoCredit:
+    'Foto: NASA Earth Observatory / ISS Expedition 45 — Lielais Barjerrifs pie Vitsandeju salām (publiskais īpašums). Identificējams Commons/EO dvīnis dibinātāja gaisa rifa īsam uzdevumam.',
   filterAria: 'Okeānu sadaļas',
   back: '← Okeāni',
   tiles: {

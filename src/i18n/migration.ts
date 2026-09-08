@@ -5,6 +5,12 @@ import {
   type MigrationEntryCopy,
   type MigrationShelf,
 } from '../data/migration';
+import {
+  humanEraMeta,
+  type HumanEraCoverage,
+  type HumanEraId,
+  type HumanEraMeta,
+} from '../data/human-migration-eras';
 import type { Locale } from './config';
 import { entries as enEntries, page as en } from './migration-en';
 import { entries as lvEntries, page as lv } from './migration-lv';
@@ -16,6 +22,39 @@ export type HumanSection = {
   title: string;
   body: string;
 };
+
+export type HumanEraCopy = {
+  label: string;
+  title: string;
+  where: string;
+  why: string;
+  uncertainty: string;
+  caption: string;
+  imageAlt: string;
+};
+
+export type HumanEraAtlasCopy = {
+  title: string;
+  lead: string;
+  honesty: string;
+  aria: string;
+  scrubberAria: string;
+  eraLabel: string;
+  whereLabel: string;
+  whyLabel: string;
+  uncertaintyLabel: string;
+  nearestNote: string;
+  sourceLabel: string;
+  licenseLabel: string;
+  vintageLabel: string;
+  schematicCredit: string;
+  greatMigrationsCta: string;
+  greatMigrationsNote: string;
+  coverage: Record<HumanEraCoverage, string>;
+  eras: Record<HumanEraId, HumanEraCopy>;
+};
+
+export type HumanEraFrame = HumanEraMeta & HumanEraCopy;
 
 export type MigrationPage = {
   metaTitle: string;
@@ -71,6 +110,7 @@ export type MigrationPage = {
     mapSources: string;
     mapBaseCredit: string;
     honesty: string;
+    eraAtlas: HumanEraAtlasCopy;
     sections: HumanSection[];
   };
   birds: {
@@ -126,6 +166,15 @@ export function getMigrationBySlug(
   const fields = copy[locale][slug] ?? copy.en[slug];
   if (!fields) return undefined;
   return { ...meta, ...fields };
+}
+
+export function getHumanMigrationEras(locale: Locale): HumanEraFrame[] {
+  const atlas = pages[locale].humans.eraAtlas;
+  const fallback = pages.en.humans.eraAtlas;
+  return humanEraMeta.map((meta) => {
+    const fields = atlas.eras[meta.id] ?? fallback.eras[meta.id];
+    return { ...meta, ...fields };
+  });
 }
 
 export { migrationShelfKeys } from '../data/migration';

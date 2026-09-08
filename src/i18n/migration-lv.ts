@@ -25,7 +25,7 @@ export const page: MigrationPage = {
   pressure: 'Kas mainās',
   wildlifeLink: 'Savvaļas sugas lapa →',
   tiles: {
-    humans: 'No Āfrikas, Sahula, Amerika: datēti ierašanās logi un klimats, kas tos veidoja.',
+    humans: 'Vispirms laikmetu kartes: no Āfrikas, Sahula, Amerika, holocēns, senatne, tautu staigāšana. Datumu logi, ne ikgadēja tautas skaitīšana.',
     'great-migrations':
       'Vēsturiskas masu kustības rakstītajos avotos. Pirmā kartīte: huņu spiediens uz romiešu pasauli.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
@@ -39,7 +39,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     humans:
-      'Homo sapiens radās Āfrikā ap 300 000 gadiem. Vēlākais ceļojums — ne sugas kartīte — ir šeit: koridori, krasti, ledus un barība. Megafaunas zudums minēts tikai tur, kur tas izskaidro maršrutu; Izmirušo katalogs paliek Savvaļā. Atila un tautu staigāšanas laikmets ir cits pulkstenis: Lielās migrācijas.',
+      'Vispirms kartes: lielie migrācijas laikmeti, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Koridori, krasti, ledus un barība ir katrā laikmetā. Megafaunas zudums minēts tikai tur, kur tas izskaidro maršrutu; Izmirušo katalogs paliek Savvaļā. Atila ir cits pulkstenis: Lielās migrācijas.',
     'great-migrations':
       'Nosauktas masu kustības vēsturiskajā laikā — ne izeja no Āfrikas. Pirmā kartīte ir huņu spiediens uz vēlo romiešu pasauli. Vēlāk var pievienot citas kartītes; tas nav mācību grāmata par katru Völkerwanderung tautu.',
     birds:
@@ -51,7 +51,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Mūsu suga',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'Mūsdienu pieaugušais cilvēks pļavā — cieņpilna, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
+      'Neliels viduslaiku zemnieka zīmējums vienkāršā kapucē un ar auklas jostu — ne karalis un ne konkrētas personas portrets',
     appearedLabel: 'Parādījās',
     appeared:
       'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem (Hublin et al. 2017). Ģenētika un fosiliju rinda Homo sapiens izcelsmi liek šajā kontinentā. Agrākās Homo sugas jau bija atstājušas Āfriku; šī lapa ir mūsu sugas vēlākā, globālā izplatīšanās.',
@@ -91,6 +91,130 @@ export const page: MigrationPage = {
       'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums) — bez mākoņiem fiziskā Zeme, ne politiskā karte.',
     honesty:
       'Shēma ar datētiem logiem uz fiziskas Zemes attēla. Tā nav GPS trase, nav ģenētiskais koks un nav apgalvojums, ka klimats vien pārvietoja cilvēkus.',
+    eraAtlas: {
+      title: 'Migrācijas laikmeti',
+      lead:
+        'Lieli periodi, ne katrs gads. Pleistocēna soļi ir mācību shēma uz NASA Blue Marble. Vēlākie soļi ir publicētas plates. Mēs nezīmējam globālu iedzīvotāju koropletu 50. gadam m.ē. un nevienam citam patvaļīgam gadam.',
+      honesty:
+        'Ierašanās logi, ne soļu gadi. Holocēna zemkopība, politiskā lapa ap 1. gadu m.ē., tautu staigāšanas shēma un austronēziešu jūrniecība ir plates ar marķētām pārklājuma spraugām — tāda pati godīgums kā reliģiju atlasam. Huņu spiediens ir Lielajās migrācijās; šis skruberis tur norāda, nevis dublē plauktu.',
+      aria: 'Lielo cilvēku migrāciju laikmetu karte',
+      scrubberAria: 'Pāriet uz migrācijas laikmetu',
+      eraLabel: 'Laikmets',
+      whereLabel: 'Kur',
+      whyLabel: 'Kāpēc — dzinējspēki',
+      uncertaintyLabel: 'Nenoteiktība',
+      nearestNote: 'Tuvākā atklāti licencētā plate — ne precīza gada tautas skaitīšana.',
+      sourceLabel: 'Avots',
+      licenseLabel: 'Licence',
+      vintageLabel: 'Datējums',
+      schematicCredit:
+        'Shēmas pamats: NASA Blue Marble Next Generation (2004. gada decembris, publiskais īpašums) — fiziskā Zeme, ne politiskā karte un ne iedzīvotāju rastrs.',
+      greatMigrationsCta: 'Lielās migrācijas · huņņi →',
+      greatMigrationsNote:
+        'Nosauktas masu kustības rakstītajos avotos ir tajā plauktā. Šī plate ir reģionāla shēma 100.–500. g., ne otra huņu enciklopēdija.',
+      coverage: {
+        schematic: 'Mācību shēma · datēti ierašanās logi',
+        agriculture: 'Zemkopības centri un izplatība — ne visu cilvēku tautas skaitīšana',
+        polities: 'Politiska rekonstrukcija ~1 m.ē. — ne iedzīvotāju koroplets',
+        regional: 'Eiropa un Vidusjūra — sprauga pārējai pasaulei',
+        seafaring: 'Austronēziešu jūrniecība — Klusais un Indijas okeāns, ne pasaules tautas skaitīšana',
+      },
+      eras: {
+        origin: {
+          label: 'Āfrika · izcelsme',
+          title: 'Āfrika — izcelsme, ne uzgaidāmā zāle',
+          where: 'Āfrika. Džebel Irhūda Marokā ir nosauktais fosiliju logs ap 315 000 gadiem.',
+          why: 'Tā ir izcelsme, ne starta šāviens. Lielāko daļu šī laika suga dzīvoja vienā kontinentā.',
+          uncertainty:
+            'Agrākās Homo sugas jau bija atstājušas Āfriku. Levantes fosilijas (Skhul/Qafzeh) fiksē klātbūtni bez noturīgas vispasaules nomaiņas.',
+          caption: 'Tikai spraudīte 1. Bultu vēl nav. Datums ~300 000 gadu ir sugas vieta, ne trase no Āfrikas.',
+          imageAlt: 'NASA Blue Marble ar spraudīti Āfrikā, kas iezīmē Homo sapiens izcelsmi',
+        },
+        'out-of-africa': {
+          label: 'No Āfrikas',
+          title: 'No Āfrikas — klimata koridori',
+          where: 'No Āfrikas uz Levanti un tālāk, ap 70 000–50 000 gadiem.',
+          why: 'Zaļās Sahāras un Levantes logi, tad sausas barjeras. Nīla, Sarkanās jūras krasti un Bab el-Mandeb ir apspriesti koridori, ne viena pierādīta šoseja.',
+          uncertainty:
+            'Ģenētika (Bergström et al. 2020) atbalsta vēlā pleistocēna izplešanos, kas atstāja lielāko daļu dzīvā ārpusāfrikas senču fonda. Precīzais ceļš nav zīmēts kā fakts.',
+          caption: 'Bulta no Āfrikas pret Levanti. Datēta loga shēma, ne katras grupas GPS.',
+          imageAlt: 'Shēmātiska bulta no Āfrikas pret Dienvidrietumāziju uz NASA Blue Marble',
+        },
+        sahul: {
+          label: 'Sahula',
+          title: 'Sahula — krasti, šelfi un ūdens spraugas',
+          where: 'Austrālija, Jaungvineja un Tasmanija bija savienotas kā Sahula, kad jūras līmenis bija zemāks.',
+          why: 'Ledāja jūras līmeņa kritums atsedza Sundu un sašaurināja ūdens spraugas. Līdz Sahulai tik un tā vajadzēja laivas vai plostus, ne bezledus iekšzemes koridoru.',
+          uncertainty:
+            'Madjedbebe datē ap 65 000 gadiem (Clarkson et al. 2017); daži apskati sēž vēlāk 65–50 tūkstošu logā. Jebkurā gadījumā tas ir desmitiem tūkstošgadu pirms Amerikas.',
+          caption: 'Bulta pret Sahulu. Krasta un salu prasme, ne soļa gads.',
+          imageAlt: 'Shēmātiska bulta no Sundas pret Sahulu uz NASA Blue Marble',
+        },
+        eurasia: {
+          label: 'Eirāzija',
+          title: 'Eirāzija — aukstā steppe un aizkavētā Eiropa',
+          where: 'Āzijas daļas pirms noturīgas klātbūtnes Eiropā ap 45 000–40 000 gadiem.',
+          why: 'Mamutu steppes medību ainavas, upes un lēna augstāku platuma grādu atvēršanās, kad klimats ļāva.',
+          uncertainty:
+            'Tas nav tas pats pulkstenis kā Sahulai. Neandertālieši jau bija Eiropā; noturīga Homo sapiens klātbūtne ir parastais vēlākais logs.',
+          caption: 'Bulta Eiropā. Datēta klātbūtne, ne apgalvojums, ka gāja tikai pa šo līniju.',
+          imageAlt: 'Shēmātiska bulta Eiropā uz NASA Blue Marble',
+        },
+        americas: {
+          label: 'Amerika',
+          title: 'Amerika — ledus, krasti un joprojām atvērta debates',
+          where: 'Beringija, tad Amerika. Darba logs šeit: ap 15 000–10 000 gadiem plašai klātbūtnei.',
+          why: 'Zems jūras līmenis saistīja Sibīriju un Aļasku. Ledāju vaiņagi bloķēja iekšzemi. Klusā okeāna krasta ceļš ir parastais darba modelis pēc Pedersen et al. 2016.',
+          uncertainty:
+            'Vecākas pretenzijas (tostarp White Sands) pastāv un paliek strīdīgas; šeit tās neuzskata par nosēdinātiem pirmās ierašanās datumiem. Tā nav 50. gada m.ē. tautas skaitīšana.',
+          caption: 'Bulta Amerikā. Ledus un krasti, ne GPS pa gadiem.',
+          imageAlt: 'Shēmātiska bulta Amerikā uz NASA Blue Marble',
+        },
+        holocene: {
+          label: 'Holocēns · zemkopība',
+          title: 'Holocēns — neolīta izplešanās',
+          where:
+            'Neatkarīgi zemkopības centri (Auglīgais pusmēness, Ķīna, Jaungvineja, Amerika, Āfrika) un turpmākā izplatība.',
+          why: 'Kultūraugi un dzīvnieki ļāva blīvākām, sēslākām populācijām. Valodu saimes bieži gāja ar zemkopību, bet ne kā viens pasaules vilnis.',
+          uncertainty:
+            'Diamond 2003 1. att. Ian Alexander zīmējumā. 2003. gada kopsavilkums: Amazone kā centrs ir izlaista; datumi ir aptuveni. Tā ir zemkopība, ne visu cilvēku karte.',
+          caption: 'Publicēta zemkopības centru un izplatības shēma. Nav holocēna iedzīvotāju koroplets.',
+          imageAlt: 'Pasaules karte ar neolīta zemkopības centriem un izplatības bultām pēc Diamond 2003',
+        },
+        antiquity: {
+          label: 'Senatne ~1 m.ē.',
+          title: 'Klasiskā senatne — politisks momentuzņēmums',
+          where: 'Apdzīvotā Vecā pasaule rekonstrukcijā ap 1. gadu m.ē.',
+          why: 'Impērijas, valstis un nosauktas tautas — tirdzniecība, mesli un armijas, ne ciemu skaitīšana.',
+          uncertainty:
+            'Robežu vēstures 1. gada m.ē. lapa: polisas, ne iedzīvotāju blīvums. Amerika un liela daļa Okeānijas šeit nav tautas skaitīšana. Mēs neizgudrojam globālu koropletu 50. gadam m.ē.',
+          caption: 'Politiska rekonstrukcija ar avotu. Godīga sprauga: tas nav «visi 50. gadā m.ē.».',
+          imageAlt: 'Pasaules politiskā karte, rekonstruēta 1. gadam m.ē., ne iedzīvotāju blīvuma karte',
+        },
+        'migration-period': {
+          label: 'Tautu staigāšana',
+          title: 'Tautu staigāšanas laikmets — 100.–500. g. m.ē.',
+          where: 'Eiropa un Vidusjūra: goti, vandaļi, franki, huņņi un citi uz mācību plates.',
+          why: 'Spiediens uz robežām, klimata stress dažās desmitgadēs un vēlās romiešu pasaules politika. Huņu spiediens uz Romu ir pirmā Lielo migrāciju kartīte.',
+          uncertainty:
+            'MapMaster shēma pēc nosauktiem atlantiem. Tikai Eiropa. Bultas ir lieli iebrukumi, ne katras grupas GPS. Datumi aptver gadsimtus.',
+          caption:
+            'Reģionāla shēma, 100.–500. g. Saite uz Lielajām migrācijām huņu plauktam — šī lapa nedublē to kartīti.',
+          imageAlt: 'Karte ar lieliem iebrukumiem Romas impērijā ap 100.–500. g. m.ē., Eiropa un Vidusjūra',
+        },
+        'later-seafaring': {
+          label: 'Vēlākā jūrniecība',
+          title: 'Vēlāki laikmeti — laivas, ne ledus',
+          where: 'Austronēziešu izplatība pāri Klusajam un Indijas okeānam; Tālā Okeānija un Jaunzēlande daudz vēlāk.',
+          why: 'Jūrniecība pret jaunām salām. Jaunzēlandes pirmā apmešanās ir ap 700 gadiem parastajā arheoloģiskajā lasījumā.',
+          uncertainty:
+            'Bellwood / Benton hronoloģija Wikimedia zīmējumā. Tikai Klusais un Indijas okeāns. Mēs joprojām neuzņemam globālu 1500. vai 1800. gadu iedzīvotāju rastru.',
+          caption:
+            'Vēlākā laikmeta plate ar avotu. Madagaskara, Tālā Okeānija un Jaunzēlande ir holocēna stāsti, ne ledus koridors.',
+          imageAlt: 'Austronēziešu izplatības hronoloģiskā karte pāri Klusajam okeānam',
+        },
+      },
+    },
     sections: [
       {
         id: 'origin',

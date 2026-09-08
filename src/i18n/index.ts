@@ -64,6 +64,7 @@ export {
   geoShelfKeys,
 } from './terraforming';
 export {
+  getHumanMigrationEras,
   getMigrationByShelf,
   getMigrationBySlug,
   getMigrationEntries,

@@ -30,6 +30,7 @@ export type OceansPage = {
   choosePanel: string;
   heroNote: string;
   heroSources: string;
+  photoCredit: string;
   filterAria: string;
   back: string;
   tiles: Record<OceanPanel, string>;

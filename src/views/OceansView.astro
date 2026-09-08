@@ -90,9 +90,11 @@ const pageTitle = activePanel
       <section class="oceans-hero" aria-label={page.filterAria}>
         <div class="wrap oceans-hero-inner">
           <div class="oceans-hero-stats">
-            <p class="oceans-hero-kicker">{page.eyebrow}</p>
-            <h1 class="oceans-hero-title">{page.panels.numbers}</h1>
-            <p class="oceans-hero-note">{page.heroNote}</p>
+            <div class="oceans-hero-panel">
+              <p class="oceans-hero-kicker">{page.eyebrow}</p>
+              <h1 class="oceans-hero-title">{page.panels.numbers}</h1>
+              <p class="oceans-hero-note">{page.heroNote}</p>
+            </div>
             <div class="oceans-hero-grid">
               {
                 heroStats.map((stat) => (
@@ -112,6 +114,7 @@ const pageTitle = activePanel
             <a class="oceans-hero-sources" href={localizePath(oceanPanelPath('numbers'), locale)}>
               {page.heroSources}
             </a>
+            <p class="oceans-hero-credit">{page.photoCredit}</p>
           </div>
           <nav class="hub-grid oceans-hero-tiles" aria-label={page.choosePanel}>
             {

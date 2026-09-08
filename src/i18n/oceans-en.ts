@@ -14,6 +14,8 @@ export const en: OceansPage = {
   heroNote:
     'Sourced figures. Ocean heat is not SST; pH is chemistry; a plastic flow is not the stock in a gyre.',
   heroSources: 'Sources and definitions →',
+  photoCredit:
+    'Photo: NASA Earth Observatory / ISS Expedition 45 — Great Barrier Reef near the Whitsunday Islands (public domain). Identifiable Commons/EO twin of the founder aerial-reef brief.',
   filterAria: 'Oceans sections',
   back: '← Oceans',
   tiles: {

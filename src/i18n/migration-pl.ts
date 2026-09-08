@@ -25,7 +25,7 @@ export const page: MigrationPage = {
   pressure: 'Co się zmienia',
   wildlifeLink: 'Karta gatunku w Przyrodzie →',
   tiles: {
-    humans: 'Z Afryki, Sahul, Ameryki: datowane okna przybycia i klimat, który je ukształtował.',
+    humans: 'Najpierw mapy epok: z Afryki, Sahul, Ameryki, holocen, starożytność, wędrówki ludów. Okna dat, nie spis rok po roku.',
     'great-migrations':
       'Historyczne ruchy masowe w źródłach pisanych. Pierwsza karta: hunicka presja na świat rzymski.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
@@ -39,7 +39,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     humans:
-      'Homo sapiens powstał w Afryce około 300 000 lat temu. Późniejsza droga — nie karta gatunku — jest tutaj: korytarze, wybrzeża, lód i pokarm. Utrata megafauny pojawia się tylko tam, gdzie tłumaczy trasę; katalog Wymarłych zostaje w Przyrodzie. Attyla i okres wędrówek ludów to inny zegar: Wielkie migracje.',
+      'Najpierw mapy: wielkie epoki migracji, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Korytarze, wybrzeża, lód i pokarm są na każdej epoce. Utrata megafauny pojawia się tylko tam, gdzie tłumaczy trasę; katalog Wymarłych zostaje w Przyrodzie. Attyla to inny zegar: Wielkie migracje.',
     'great-migrations':
       'Nazwane ruchy masowe w czasie historycznym — nie wyjście z Afryki. Pierwsza karta to hunicka presja na późny świat rzymski. Później można dodać kolejne wpisy; to nie podręcznik o każdym ludzie Völkerwanderung.',
     birds:
@@ -51,7 +51,7 @@ export const page: MigrationPage = {
     heroEyebrow: 'Nasz gatunek',
     scientificName: 'Homo sapiens',
     imageAlt:
-      'Współczesny dorosły człowiek stojący na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
+      'Mały rysunek średniowiecznego chłopa w prostym kapturze i z powrozem w pasie — nie król i nie portret konkretnej osoby',
     appearedLabel: 'Pojawił się',
     appeared:
       'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat (Hublin et al. 2017). Genetyka i zapis kopalny umieszczają pochodzenie Homo sapiens na tym kontynencie. Wcześniejsze gatunki Homo już opuściły Afrykę; ta strona to późniejsze, globalne rozprzestrzenienie naszego gatunku.',
@@ -91,6 +91,130 @@ export const page: MigrationPage = {
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
     honesty:
       'Schemat datowanych okien na fizycznym obrazie Ziemi. To nie ślad GPS, nie drzewo genetyczne i nie twierdzenie, że sam klimat ruszył ludzi.',
+    eraAtlas: {
+      title: 'Epoki migracji',
+      lead:
+        'Duże okresy, nie każdy rok. Kroki plejstocenu to schemat dydaktyczny na NASA Blue Marble. Późniejsze kroki to opublikowane płyty. Nie rysujemy globalnego choroplethu ludności dla 50 n.e. ani żadnego innego dowolnego roku.',
+      honesty:
+        'Okna przybycia, nie lata marszu. Rolnictwo holocenu, arkusz polityczny ok. 1 n.e., schemat okresu wędrówek ludów i żegluga austronezyjska to płyty z oznaczonymi lukami pokrycia — ta sama uczciwość co atlas religii. Hunicka presja jest na Wielkich migracjach; ten scrubber tam kieruje zamiast dublować półkę.',
+      aria: 'Mapa epok wielkich migracji ludzkich',
+      scrubberAria: 'Przejdź do epoki migracji',
+      eraLabel: 'Epoka',
+      whereLabel: 'Gdzie',
+      whyLabel: 'Dlaczego — czynniki',
+      uncertaintyLabel: 'Niepewność',
+      nearestNote: 'Najbliższa otwarcie licencjonowana płyta — nie spis dokładnego roku.',
+      sourceLabel: 'Źródło',
+      licenseLabel: 'Licencja',
+      vintageLabel: 'Datowanie',
+      schematicCredit:
+        'Podstawa schematu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — fizyczna Ziemia, nie mapa polityczna i nie raster ludności.',
+      greatMigrationsCta: 'Wielkie migracje · Hunowie →',
+      greatMigrationsNote:
+        'Nazwane ruchy masowe w źródłach pisanych są na tamtej półce. Ta płyta to regionalny schemat 100–500 n.e., nie druga encyklopedia huńska.',
+      coverage: {
+        schematic: 'Schemat dydaktyczny · datowane okna przybycia',
+        agriculture: 'Ośrodki i rozprzestrzenianie rolnictwa — nie spis wszystkich ludzi',
+        polities: 'Rekonstrukcja polityczna ~1 n.e. — nie choropleth ludności',
+        regional: 'Europa i Morze Śródziemne — luka dla reszty świata',
+        seafaring: 'Żegluga austronezyjska — Pacyfik i Ocean Indyjski, nie spis świata',
+      },
+      eras: {
+        origin: {
+          label: 'Afryka · pochodzenie',
+          title: 'Afryka — pochodzenie, nie poczekalnia',
+          where: 'Afryka. Dżabal Irhud w Maroku to nazwane okno skamieniałości około 315 000 lat.',
+          why: 'To pochodzenie, nie strzał startowy. Przez większość tego czasu gatunek żył na jednym kontynencie.',
+          uncertainty:
+            'Wcześniejsze gatunki Homo już opuściły Afrykę. Skamieniałości Lewantu (Skhul/Qafzeh) zapisują obecność bez trwałego ogólnoświatowego zastąpienia.',
+          caption: 'Tylko pinezka 1. Jeszcze bez strzałek. Data ~300 000 lat to miejsce gatunku, nie trop z Afryki.',
+          imageAlt: 'NASA Blue Marble z pinezką na Afryce oznaczającą pochodzenie Homo sapiens',
+        },
+        'out-of-africa': {
+          label: 'Z Afryki',
+          title: 'Z Afryki — korytarze klimatyczne',
+          where: 'Z Afryki do Lewantu i dalej, około 70 000–50 000 lat temu.',
+          why: 'Okna zielonej Sahary i Lewantu, potem suche bariery. Nil, wybrzeża Morza Czerwonego i Bab al-Mandab to omawiane korytarze, nie jedna udowodniona autostrada.',
+          uncertainty:
+            'Genetyka (Bergström et al. 2020) wspiera ekspansję późnego plejstocenu, która zostawiła większość żyjącego nieafrykańskiego pochodzenia. Dokładna trasa nie jest rysowana jako fakt.',
+          caption: 'Strzałka z Afryki ku Lewantowi. Schemat datowanego okna, nie GPS każdej grupy.',
+          imageAlt: 'Schematyczna strzałka z Afryki ku Azji Południowo-Zachodniej na NASA Blue Marble',
+        },
+        sahul: {
+          label: 'Sahul',
+          title: 'Sahul — wybrzeża, szelfy i przerwy wodne',
+          where: 'Australia, Nowa Gwinea i Tasmania były połączone jako Sahul, gdy poziom morza był niższy.',
+          why: 'Glacjalny spadek poziomu morza odsłonił Sundę i zwęził przerwy wodne. Dotarcie do Sahulu i tak wymagało łodzi lub tratw, nie bezlodowego korytarza w głębi lądu.',
+          uncertainty:
+            'Madjedbebe datuje się około 65 000 lat (Clarkson et al. 2017); część przeglądów siada później w oknie 65–50 tysięcy. Tak czy inaczej to dziesiątki tysiącleci przed Amerykami.',
+          caption: 'Strzałka ku Sahulowi. Umiejętność przybrzeżna i wyspiarska, nie rok marszu.',
+          imageAlt: 'Schematyczna strzałka z Sundy ku Sahulowi na NASA Blue Marble',
+        },
+        eurasia: {
+          label: 'Eurazja',
+          title: 'Eurazja — zimny step i spóźniona Europa',
+          where: 'Części Azji przed trwałą obecnością w Europie około 45 000–40 000 lat temu.',
+          why: 'Łowieckie krajobrazy stepu mamutowego, rzeki i powolne otwieranie wyższych szerokości, gdy klimat pozwalał.',
+          uncertainty:
+            'To nie ten sam zegar co Sahul. Neandertalczycy już byli w Europie; trwała obecność Homo sapiens to zwykłe późniejsze okno.',
+          caption: 'Strzałka do Europy. Datowana obecność, nie twierdzenie, że szli tylko tą linią.',
+          imageAlt: 'Schematyczna strzałka do Europy na NASA Blue Marble',
+        },
+        americas: {
+          label: 'Ameryki',
+          title: 'Ameryki — lód, wybrzeża i wciąż otwarty spór',
+          where: 'Beringia, potem Ameryki. Robocze okno tutaj: około 15 000–10 000 lat dla szerokiej obecności.',
+          why: 'Niski poziom morza połączył Syberię i Alaskę. Lądolody zablokowały wnętrze. Pacyficzna trasa przybrzeżna to zwykły model roboczy po Pedersen et al. 2016.',
+          uncertainty:
+            'Starsze twierdzenia (w tym White Sands) istnieją i pozostają sporne; tutaj nie są traktowane jako ustalone daty pierwszego przybycia. To nie spis z 50 n.e.',
+          caption: 'Strzałka do Ameryk. Lód i wybrzeża, nie ślad GPS rok po roku.',
+          imageAlt: 'Schematyczna strzałka do Ameryk na NASA Blue Marble',
+        },
+        holocene: {
+          label: 'Holocen · rolnictwo',
+          title: 'Holocen — ekspansje neolityczne',
+          where:
+            'Niezależne ośrodki rolnictwa (Żyzny Półksiężyc, Chiny, Nowa Gwinea, Ameryki, Afryka) i późniejsze rozprzestrzenianie.',
+          why: 'Uprawy i zwierzęta umożliwiły gęstsze, bardziej osiadłe populacje. Rodziny językowe często szły z rolnictwem, ale nie jako jedna fala światowa.',
+          uncertainty:
+            'Diamond 2003 ryc. 1 w rysunku Iana Alexandra. Synteza z 2003: Amazonia jako ośrodek pominięta; daty przybliżone. To rolnictwo, nie mapa wszystkich ludzi.',
+          caption: 'Opublikowany schemat ośrodków i rozprzestrzeniania rolnictwa. Nie choropleth ludności holocenu.',
+          imageAlt: 'Mapa świata neolitycznych ośrodków rolnictwa i strzałek rozprzestrzeniania według Diamond 2003',
+        },
+        antiquity: {
+          label: 'Starożytność ~1 n.e.',
+          title: 'Starożytność klasyczna — migawka polityczna',
+          where: 'Zamieszkany Stary Świat w rekonstrukcji około 1 n.e.',
+          why: 'Cesarstwa, królestwa i nazwane ludy — handel, danina i armie, nie spis wsi.',
+          uncertainty:
+            'Arkusz Historii granic na 1 n.e.: ustroje, nie gęstość ludności. Ameryki i większość Oceanii nie są tu spisem. Nie wymyślamy globalnego choroplethu dla 50 n.e.',
+          caption: 'Rekonstrukcja polityczna ze źródłem. Uczciwa luka: to nie „wszyscy w 50 n.e.”.',
+          imageAlt: 'Polityczna mapa świata zrekonstruowana na 1 n.e., nie mapa gęstości ludności',
+        },
+        'migration-period': {
+          label: 'Wędrówki ludów',
+          title: 'Okres wędrówek ludów — 100–500 n.e.',
+          where: 'Europa i Morze Śródziemne: Goci, Wandalowie, Frankowie, Hunowie i inni na płycie dydaktycznej.',
+          why: 'Presja na granicach, stres klimatyczny w niektórych dekadach i polityka późnego świata rzymskiego. Hunicka presja na Rzym to pierwsza karta Wielkich migracji.',
+          uncertainty:
+            'Schemat MapMastera według nazwanych atlasów. Tylko Europa. Strzałki to wielkie najazdy, nie GPS każdej grupy. Daty obejmują stulecia.',
+          caption:
+            'Schemat regionalny, 100–500 n.e. Link do Wielkich migracji dla półki huńskiej — ta strona nie dubluje tamtej karty.',
+          imageAlt: 'Mapa wielkich najazdów na Cesarstwo Rzymskie ok. 100–500 n.e., Europa i Morze Śródziemne',
+        },
+        'later-seafaring': {
+          label: 'Późniejsza żegluga',
+          title: 'Późniejsze epoki — łodzie, nie lód',
+          where: 'Rozprzestrzenianie austronezyjskie przez Pacyfik i Ocean Indyjski; Daleka Oceania i Nowa Zelandia znacznie później.',
+          why: 'Żegluga ku nowym wyspom. Pierwsze osadnictwo Nowej Zelandii to rząd 700 lat temu w zwykłym odczycie archeologicznym.',
+          uncertainty:
+            'Chronologia Bellwood / Benton w rysunku na Wikimedia. Tylko Pacyfik i Ocean Indyjski. Nadal nie hostujemy globalnego rastra ludności 1500 ani 1800.',
+          caption:
+            'Płyta późniejszej epoki ze źródłem. Madagaskar, Daleka Oceania i Nowa Zelandia to historie holocenu, nie korytarz lodowy.',
+          imageAlt: 'Chronologiczna mapa rozprzestrzeniania austronezyjskiego przez Pacyfik',
+        },
+      },
+    },
     sections: [
       {
         id: 'origin',
