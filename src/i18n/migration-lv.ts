@@ -1,6 +1,7 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
 import { lvHumanEventAtlas } from './human-event-atlas-lv';
+import { lvToday } from './migration-today-lv';
 
 export const page: MigrationPage = {
   metaTitle: 'Migrācija — Fix Planet',
@@ -10,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migrācija',
   hubLead: [
     'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Četri plaukti, tīši šķirti. Homo sapiens dziļā vēsture, izejot no Āfrikas, nav Atila. Vēsturiskās «lielās migrācijas» ir nosauktas masu kustības rakstītajos avotos. Putni un citi dzīvnieki joprojām iet sezonālus ceļus. Dzinējspēki ir katrā kartītē. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
+    'Pieci plaukti, tīši šķirti. Šodien ir šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Homo sapiens dziļā vēsture, izejot no Āfrikas, nav Atila. Vēsturiskās «lielās migrācijas» ir nosauktas masu kustības rakstītajos avotos. Putni un citi dzīvnieki joprojām iet sezonālus ceļus. Dzinējspēki ir katrā kartītē. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',
@@ -26,6 +27,8 @@ export const page: MigrationPage = {
   pressure: 'Kas mainās',
   wildlifeLink: 'Savvaļas sugas lapa →',
   tiles: {
+    today:
+      'Neto migrācija pēc ANO reģioniem 2023. gadam un kas jau kur dzīvo — krājums, ne šā gada ierašanās.',
     humans: 'Vispirms notikumu kartes: no Āfrikas, Sahula, zemkopība, bantu, austronēzieši, tautu staigāšana, vergu tirdzniecība. Nosauktas kustības, ne ikgadēja tautas skaitīšana.',
     'great-migrations':
       'Vēsturiskas masu kustības rakstītajos avotos. Pirmā kartīte: huņu spiediens uz romiešu pasauli.',
@@ -33,12 +36,15 @@ export const page: MigrationPage = {
     animals: 'Gnu, ziemeļbrieži, vaļi, sikspārņi — atlasītas zīdītāju migrācijas un to dzinējspēki.',
   },
   shelves: {
+    today: 'Šodien',
     humans: 'Cilvēki',
     'great-migrations': 'Lielās migrācijas',
     birds: 'Putni',
     animals: 'Dzīvnieki',
   },
   shelfLeads: {
+    today:
+      'Šodienas starptautiskās migrācijas karte. Uz plāksnītēm ir ANO galveno reģionu neto migrācija 2023. gadam (World Population Prospects 2024) — ne izdomātas ierašanās un izbraukšanas. Noklikšķini reģionu: 2024. gada vidus migrantu krājums pēc izcelsmes un daži dokumentēti koridori. Bieži dominē iekšreģionu kustība; Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
     humans:
       'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila paliek Lielajās migrācijās; tautu staigāšanas kartīte ved turp.',
     'great-migrations':
@@ -145,6 +151,7 @@ export const page: MigrationPage = {
     flywaysBaseCredit:
       'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums).',
   },
+  today: lvToday,
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {

@@ -1,5 +1,6 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
+import { enToday } from './migration-today-en';
 
 export const page: MigrationPage = {
   metaTitle: 'Migration — Fix Planet',
@@ -9,7 +10,7 @@ export const page: MigrationPage = {
   title: 'Migration',
   hubLead: [
     'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and a warmer climate on top of those older clocks.',
-    'Four shelves, kept apart on purpose. Deep-history Homo sapiens walking out of Africa is not Attila. Historic “great migrations” are named mass movements in the written record. Birds and other animals still run seasonal routes. Drivers sit on each entry. Dates are ranges from named sources, not invented tracks.',
+    'Five shelves, kept apart on purpose. Today is the current-day international map — net migration and migrant stock, labeled as such. Deep-history Homo sapiens walking out of Africa is not Attila. Historic “great migrations” are named mass movements in the written record. Birds and other animals still run seasonal routes. Drivers sit on each entry. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -25,6 +26,8 @@ export const page: MigrationPage = {
   pressure: 'What is changing',
   wildlifeLink: 'Wildlife species page →',
   tiles: {
+    today:
+      'Net migration by UN region for 2023, and who already lives where — stock, not this year’s arrivals.',
     humans:
       'Event maps first: Out of Africa, Sahul, farming, Bantu, Austronesian, the Migration Period, the slave trade. Named movements, not a year-by-year census.',
     'great-migrations':
@@ -33,12 +36,15 @@ export const page: MigrationPage = {
     animals: 'Wildebeest, caribou, whales, bats — curated mammal migrations and their drivers.',
   },
   shelves: {
+    today: 'Today',
     humans: 'Humans',
     'great-migrations': 'Great migrations',
     birds: 'Birds',
     animals: 'Animals',
   },
   shelfLeads: {
+    today:
+      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Click a region for mid-2024 migrant stock by origin and a few documented corridors. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
     humans:
       'Maps first: a timeline of major documented human-migration events, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Each card names when, where, and why — climate, ice, farming, war, trade, empire, slavery — only where scholarship supports it. This is not a map of everyone every fifty years. Attila stays on Great migrations; the Migration Period card links there.',
     'great-migrations':
@@ -320,6 +326,7 @@ export const page: MigrationPage = {
     flywaysBaseCredit:
       'Base land: NASA Blue Marble Next Generation (December 2004, public domain).',
   },
+  today: enToday,
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {

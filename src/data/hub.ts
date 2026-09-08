@@ -19,4 +19,5 @@ export type HubIconName =
   | 'terrain'
   | 'human'
   | 'migrate'
-  | 'horse';
+  | 'horse'
+  | 'today';

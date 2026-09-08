@@ -1,6 +1,7 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
 import { plHumanEventAtlas } from './human-event-atlas-pl';
+import { plToday } from './migration-today-pl';
 
 export const page: MigrationPage = {
   metaTitle: 'Migracja — Fix Planet',
@@ -10,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migracja',
   hubLead: [
     'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
-    'Cztery półki, celowo osobno. Głęboka historia Homo sapiens wychodzącego z Afryki to nie Attyla. Historyczne „wielkie migracje” to nazwane ruchy masowe w źródłach pisanych. Ptaki i inne zwierzęta wciąż odbywają sezonowe trasy. Na każdej karcie są czynniki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
+    'Pięć półek, celowo osobno. Dziś to współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Głęboka historia Homo sapiens wychodzącego z Afryki to nie Attyla. Historyczne „wielkie migracje” to nazwane ruchy masowe w źródłach pisanych. Ptaki i inne zwierzęta wciąż odbywają sezonowe trasy. Na każdej karcie są czynniki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',
@@ -26,6 +27,8 @@ export const page: MigrationPage = {
   pressure: 'Co się zmienia',
   wildlifeLink: 'Karta gatunku w Przyrodzie →',
   tiles: {
+    today:
+      'Migracja netto według regionów ONZ za 2023 i kto już gdzie mieszka — zasób, nie przyjazdy z tego roku.',
     humans: 'Najpierw mapy zdarzeń: z Afryki, Sahul, rolnictwo, bantu, austronezyjczycy, wędrówki ludów, handel niewolnikami. Nazwane ruchy, nie spis rok po roku.',
     'great-migrations':
       'Historyczne ruchy masowe w źródłach pisanych. Pierwsza karta: hunicka presja na świat rzymski.',
@@ -33,12 +36,15 @@ export const page: MigrationPage = {
     animals: 'Gnu, karibu, wieloryby, nietoperze — wybrane migracje ssaków i ich czynniki.',
   },
   shelves: {
+    today: 'Dziś',
     humans: 'Ludzie',
     'great-migrations': 'Wielkie migracje',
     birds: 'Ptaki',
     animals: 'Zwierzęta',
   },
   shelfLeads: {
+    today:
+      'Współczesna mapa migracji międzynarodowej. Na tabliczkach jest migracja netto głównych regionów ONZ za 2023 (World Population Prospects 2024) — nie wymyślone przyjazdy i wyjazdy. Kliknij region: zasób migrantów z połowy 2024 według pochodzenia i kilka udokumentowanych korytarzy. Często dominuje ruch wewnątrzregionalny; Afryka → Europa nie jest rysowana jako główna historia świata.',
     humans:
       'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla zostaje na Wielkich migracjach; karta wędrówek ludów tam prowadzi.',
     'great-migrations':
@@ -145,6 +151,7 @@ export const page: MigrationPage = {
     flywaysBaseCredit:
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna).',
   },
+  today: plToday,
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {

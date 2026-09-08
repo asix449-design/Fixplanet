@@ -4,6 +4,7 @@ import { cite, type PrimarySource } from './sources';
 export type { PrimarySource } from './sources';
 
 export const migrationShelfKeys = [
+  'today',
   'humans',
   'great-migrations',
   'birds',
@@ -13,6 +14,7 @@ export const migrationShelfKeys = [
 export type MigrationShelf = (typeof migrationShelfKeys)[number];
 
 export const migrationHub = [
+  { key: 'today', icon: 'today' },
   { key: 'humans', icon: 'human' },
   { key: 'great-migrations', icon: 'horse' },
   { key: 'birds', icon: 'migrate' },
@@ -28,7 +30,7 @@ export type ImageCredit = {
 
 export type MigrationEntryMeta = {
   slug: string;
-  shelf: Exclude<MigrationShelf, 'humans'>;
+  shelf: Exclude<MigrationShelf, 'humans' | 'today'>;
   scientificName?: string;
   image: ImageCredit;
   sources: PrimarySource[];

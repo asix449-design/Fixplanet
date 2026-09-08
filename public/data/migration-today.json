@@ -1,0 +1,331 @@
+{
+  "title": "International migration — current-day UN regional snapshot",
+  "committed": "2026-09-08",
+  "notes": [
+    "Net migration tablets use UN World Population Prospects 2024, calendar year 2023 — the last estimate year in that revision (2024–2100 are projections). Net = immigrants minus emigrants. A regional net cancels moves that stay inside the region.",
+    "We do not split net into invented 'arrived' and 'left' counts. Annual in- and out-flows are not published as a complete global matrix.",
+    "Who-lives-where lists use UN DESA International Migrant Stock 2024 (mid-2024). Stock is not 'arrived this year'.",
+    "Country corridors are migrant-stock corridors from IOM World Migration Report 2026 citing UN DESA IMS 2024. They accumulate years of movement. Arrows on the map are schematic only — no invented volumes on the lines.",
+    "Intra-regional migration often dominates. Africa→Europe is a real corridor, not the main global story."
+  ],
+  "netMigration": {
+    "year": 2023,
+    "unit": "persons",
+    "indicator": "Net number of migrants (immigrants minus emigrants)",
+    "sourceId": "un-wpp-2024",
+    "sourceLabel": "United Nations, World Population Prospects 2024",
+    "sourceUrl": "https://population.un.org/wpp/",
+    "citation": "United Nations, Department of Economic and Social Affairs, Population Division (2024). World Population Prospects 2024. Net number of migrants, both sexes, calendar year 2023, UN M49 major regions.",
+    "geography": "UN M49 major regions (Africa, Asia, Europe, Latin America and the Caribbean, Northern America, Oceania). Northern America is Canada, the United States, Bermuda, Greenland, and Saint Pierre and Miquelon — not Mexico.",
+    "estimateNote": "WPP 2024 treats 1950–2023 as estimates and 2024–2100 as projections. Tablets use 2023 estimates.",
+    "worldNet": 0,
+    "regions": {
+      "africa": -436290,
+      "asia": -2603560,
+      "europe": 1510380,
+      "latin-america-caribbean": -372550,
+      "northern-america": 1756190,
+      "oceania": 145840
+    }
+  },
+  "migrantStock": {
+    "year": 2024,
+    "asOf": "1 July 2024",
+    "unit": "persons",
+    "sourceId": "un-ims-2024",
+    "sourceLabel": "United Nations, International Migrant Stock 2024",
+    "sourceUrl": "https://www.un.org/development/desa/pd/content/international-migrant-stock",
+    "citation": "United Nations (2025). International Migrant Stock 2024. POP/DB/MIG/Stock/Rev.2024. Destination totals from Key facts and figures annex; origin splits from IOM World Migration Report 2026 chapter 3, citing UN DESA 2025.",
+    "world": 304022000,
+    "regions": {
+      "africa": {
+        "destination": 29180000,
+        "origins": [
+          { "id": "africa", "value": 25000000, "approx": true },
+          { "id": "asia", "value": 1300000, "approx": true },
+          { "id": "europe", "value": 583000, "approx": true }
+        ]
+      },
+      "asia": {
+        "destination": 92170000,
+        "origins": [
+          { "id": "asia", "value": 74000000, "approx": true },
+          { "id": "africa", "value": 6700000, "approx": true },
+          { "id": "europe", "value": 5000000, "approx": true }
+        ]
+      },
+      "europe": {
+        "destination": 94052000,
+        "origins": [
+          { "id": "europe", "value": 45000000, "approx": true },
+          { "id": "asia", "value": 20000000, "approx": false },
+          { "id": "africa", "value": 10600000, "approx": true },
+          { "id": "latin-america-caribbean", "value": 6000000, "approx": true }
+        ]
+      },
+      "latin-america-caribbean": {
+        "destination": 17511000,
+        "origins": [
+          { "id": "latin-america-caribbean", "value": 14000000, "approx": true },
+          { "id": "northern-america", "value": 1300000, "approx": true },
+          { "id": "europe", "value": 1200000, "approx": true }
+        ]
+      },
+      "northern-america": {
+        "destination": 61208000,
+        "origins": [
+          { "id": "latin-america-caribbean", "value": 27000000, "approx": false },
+          { "id": "asia", "value": 20000000, "approx": true },
+          { "id": "europe", "value": 6600000, "approx": true },
+          { "id": "africa", "value": 2700000, "approx": true }
+        ]
+      },
+      "oceania": {
+        "destination": 9901000,
+        "origins": [
+          { "id": "asia", "value": 5000000, "approx": true },
+          { "id": "europe", "value": 2500000, "approx": false },
+          { "id": "oceania", "value": 1300000, "approx": true }
+        ]
+      }
+    }
+  },
+  "intraRegional": {
+    "sourceId": "un-ims-2024",
+    "note": "Shares of people born in a region who live in another country of the same region — not shares of the destination stock, except where IOM states the destination mix.",
+    "europeBornLivingInEurope": 0.74,
+    "oceaniaBornLivingInOceania": 0.73,
+    "subSaharanAfricaBornLivingInRegion": 0.64,
+    "worldwideLivingInRegionOfBirth": 0.45
+  },
+  "corridors": [
+    {
+      "id": "mexico-united-states",
+      "from": "Mexico",
+      "to": "United States",
+      "fromRegion": "latin-america-caribbean",
+      "toRegion": "northern-america",
+      "stock": 11000000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Largest country-to-country corridor in the IMS 2024 tables. Stock has eased from a 2015 high near 12 million."
+    },
+    {
+      "id": "lac-northern-america",
+      "from": "Latin America and the Caribbean",
+      "to": "Northern America",
+      "fromRegion": "latin-america-caribbean",
+      "toRegion": "northern-america",
+      "stock": 27000000,
+      "approx": false,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Largest inter-regional stock corridor in IMS 2024 key facts."
+    },
+    {
+      "id": "central-southern-asia-nawa",
+      "from": "Central and Southern Asia",
+      "to": "Northern Africa and Western Asia",
+      "fromRegion": "asia",
+      "toRegion": "asia",
+      "stock": 20000000,
+      "approx": false,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Gulf labour corridor inside Asia in the IMS 2024 regional grouping. Intra-Asian, not Europe."
+    },
+    {
+      "id": "afghanistan-iran",
+      "from": "Afghanistan",
+      "to": "Iran (Islamic Republic of)",
+      "fromRegion": "asia",
+      "toRegion": "asia",
+      "stock": 3700000,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Largest Asian country corridor in IOM WMR 2026. Long-standing displacement and residence; not an annual flow."
+    },
+    {
+      "id": "syria-turkiye",
+      "from": "Syrian Arab Republic",
+      "to": "Türkiye",
+      "fromRegion": "asia",
+      "toRegion": "asia",
+      "stock": 3600000,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Second-largest Asian country corridor in 2024 stock. Conflict displacement accumulated over years."
+    },
+    {
+      "id": "asia-europe",
+      "from": "Asia",
+      "to": "Europe",
+      "fromRegion": "asia",
+      "toRegion": "europe",
+      "stock": 20000000,
+      "approx": false,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Asian-born residents of Europe. Includes labour, family, and refugee stock — not one route."
+    },
+    {
+      "id": "nawa-europe",
+      "from": "Northern Africa and Western Asia",
+      "to": "Europe",
+      "fromRegion": "africa",
+      "toRegion": "europe",
+      "stock": 13000000,
+      "approx": false,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "IMS 2024 inter-regional corridor. Overlaps Africa and Western Asia; do not read as all of Africa."
+    },
+    {
+      "id": "africa-europe",
+      "from": "Africa",
+      "to": "Europe",
+      "fromRegion": "africa",
+      "toRegion": "europe",
+      "stock": 10600000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "African-born residents of Europe. Smaller than intra-African stock (~25 million) and smaller than Asian-born residents of Europe (20 million)."
+    },
+    {
+      "id": "burkina-faso-cote-divoire",
+      "from": "Burkina Faso",
+      "to": "Côte d'Ivoire",
+      "fromRegion": "africa",
+      "toRegion": "africa",
+      "stock": null,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Largest corridor involving African countries in IOM WMR 2026 — long-standing West African labour migration. Volume not restated here as a precise census."
+    },
+    {
+      "id": "algeria-france",
+      "from": "Algeria",
+      "to": "France",
+      "fromRegion": "africa",
+      "toRegion": "europe",
+      "stock": 1500000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Post-colonial and labour stock. One North Africa–Europe corridor, not the African average."
+    },
+    {
+      "id": "morocco-spain",
+      "from": "Morocco",
+      "to": "Spain",
+      "fromRegion": "africa",
+      "toRegion": "europe",
+      "stock": 1000000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "IOM ranks this among Africa's larger extra-regional corridors. Stock, not 2024 arrivals."
+    },
+    {
+      "id": "ukraine-germany",
+      "from": "Ukraine",
+      "to": "Germany",
+      "fromRegion": "europe",
+      "toRegion": "europe",
+      "stock": 1400000,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Rose from about 270,000 in 2020 after the 2022 full-scale invasion. Intra-European displacement stock."
+    },
+    {
+      "id": "venezuela-colombia",
+      "from": "Venezuela (Bolivarian Republic of)",
+      "to": "Colombia",
+      "fromRegion": "latin-america-caribbean",
+      "toRegion": "latin-america-caribbean",
+      "stock": 2800000,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "UNHCR/IOM: most Venezuelans in need of protection in Colombia. Intra-regional — not the Mexico–United States corridor."
+    },
+    {
+      "id": "venezuela-peru",
+      "from": "Venezuela (Bolivarian Republic of)",
+      "to": "Peru",
+      "fromRegion": "latin-america-caribbean",
+      "toRegion": "latin-america-caribbean",
+      "stock": 1100000,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Second intra-LAC Venezuelan corridor named by IOM. Eight of the region's ten largest country corridors still end in the United States."
+    },
+    {
+      "id": "united-kingdom-australia",
+      "from": "United Kingdom",
+      "to": "Australia",
+      "fromRegion": "europe",
+      "toRegion": "oceania",
+      "stock": 1000000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Largest corridor involving Oceania. Stable over decades."
+    },
+    {
+      "id": "india-australia",
+      "from": "India",
+      "to": "Australia",
+      "fromRegion": "asia",
+      "toRegion": "oceania",
+      "stock": 876000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Second-largest Oceania corridor in IOM WMR 2026."
+    },
+    {
+      "id": "china-australia",
+      "from": "China",
+      "to": "Australia",
+      "fromRegion": "asia",
+      "toRegion": "oceania",
+      "stock": 656000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Third-largest Oceania corridor."
+    },
+    {
+      "id": "new-zealand-australia",
+      "from": "New Zealand",
+      "to": "Australia",
+      "fromRegion": "oceania",
+      "toRegion": "oceania",
+      "stock": 588000,
+      "approx": true,
+      "year": 2024,
+      "kind": "intra-regional",
+      "note": "Only intra-Oceania corridor in IOM's Oceania top five."
+    },
+    {
+      "id": "asia-northern-america",
+      "from": "Asia",
+      "to": "Northern America",
+      "fromRegion": "asia",
+      "toRegion": "northern-america",
+      "stock": 20000000,
+      "approx": true,
+      "year": 2024,
+      "kind": "inter-regional",
+      "note": "Asian-born residents of Northern America. IMS also lists Eastern and South-Eastern Asia → Northern America at 12 million as a sub-corridor."
+    }
+  ]
+}

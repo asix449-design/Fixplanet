@@ -5,6 +5,7 @@ import {
   type MigrationEntryCopy,
   type MigrationShelf,
 } from '../data/migration';
+import type { TodayRegionId } from '../data/migration-today';
 import {
   humanEventMeta,
   type HumanEventCoverage,
@@ -135,6 +136,44 @@ export type MigrationPage = {
     flywaysSources: string;
     flywaysBaseCredit: string;
   };
+  today: TodayShelfCopy;
+};
+
+export type TodayRegionCopy = {
+  name: string;
+  shortName: string;
+  caption: string;
+  originsIntro: string;
+  corridorsIntro: string;
+};
+
+export type TodayShelfCopy = {
+  mapTitle: string;
+  mapAria: string;
+  lead: string;
+  honesty: string;
+  tabletHint: string;
+  netLabel: string;
+  netUnitMillion: string;
+  netUnitPeople: string;
+  stockLabel: string;
+  stockUnitMillion: string;
+  originsTitle: string;
+  originsHint: string;
+  corridorsTitle: string;
+  corridorsNote: string;
+  close: string;
+  openTablet: string;
+  million: string;
+  approx: string;
+  intraCaption: string;
+  remainderNote: string;
+  stockNotFlow: string;
+  arrowLegend: string;
+  mapCredit: string;
+  emptyPanel: string;
+  regions: Record<TodayRegionId, TodayRegionCopy>;
+  originNames: Record<TodayRegionId, string>;
 };
 
 const pages: Record<Locale, MigrationPage> = { en, ru, pl, lv };
@@ -159,7 +198,7 @@ export function getMigrationEntries(locale: Locale): MigrationEntry[] {
 
 export function getMigrationByShelf(
   locale: Locale,
-  shelf: Exclude<MigrationShelf, 'humans'>,
+  shelf: Exclude<MigrationShelf, 'humans' | 'today'>,
 ): MigrationEntry[] {
   return getMigrationEntries(locale).filter((item) => item.shelf === shelf);
 }
