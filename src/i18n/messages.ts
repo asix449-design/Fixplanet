@@ -33,6 +33,7 @@ const en = {
     maps: 'Maps',
     law: 'Law',
     wildlife: 'Wildlife',
+    migration: 'Migration',
     forests: 'Forests',
     oceans: 'Oceans',
     book: 'Book',
@@ -56,6 +57,7 @@ const en = {
       maps: 'Public maps of Earth systems and the political world.',
       law: 'Statutes, bills, and labeled ideas — ecology, AI, animals.',
       wildlife: 'Species, habitats, and how they changed after people spread.',
+      migration: 'Human dispersal, historic mass movements, bird flyways, and mammal migrations — with the drivers on each card.',
       forests: 'What a forest is, how the canopy is mapped, and sourced numbers.',
       oceans: 'Currents, salinity, temperature, and pollution — sourced maps of the living ocean.',
       book: 'New World — what is broken, and what we can still fix.',
@@ -144,12 +146,15 @@ const en = {
     endangered: 'Endangered',
     extinct: 'Extinct',
     'homo-sapiens': 'Homo sapiens',
+    journeyCta: 'Migration · Humans →',
+    journeyNote:
+      'The journey — routes, dates, and drivers — is told under Migration. This shelf keeps the species frame: origin, numbers, and what vanished after first arrival.',
     tiles: {
       surviving: 'Still here, with ranges or numbers that shifted after people spread.',
       endangered: 'Threatened now, mainly because of people.',
       extinct: 'Gone. Most entries are clearly human-caused.',
       'homo-sapiens':
-        'Origin in Africa, the route we took, and the large-mammal genera that vanished after first arrival.',
+        'Origin in Africa, numbers today, and the large-mammal genera that vanished after first arrival. The route itself is under Migration.',
     },
     survivingLead:
       'Still here, with ranges or numbers that shifted after people spread — hunting, farms, later recovery, or boom. The dates differ by continent.',
@@ -323,6 +328,7 @@ const ru: typeof en = {
     maps: 'Карты',
     law: 'Право',
     wildlife: 'Природа',
+    migration: 'Миграция',
     forests: 'Леса',
     oceans: 'Океаны',
     book: 'Книга',
@@ -346,6 +352,7 @@ const ru: typeof en = {
       maps: 'Открытые карты систем Земли и политического мира.',
       law: 'Законы, законопроекты и помеченные идеи — экология, ИИ, животные.',
       wildlife: 'Виды, места обитания и то, как они изменились после расселения людей.',
+      migration: 'Расселение человека, исторические массовые движения, пролётные пути птиц и миграции млекопитающих — с факторами на каждой карточке.',
       forests: 'Что такое лес, как видят крону спутники, цифры с источниками.',
       oceans: 'Течения, солёность, температура и загрязнение — карты живого океана с источниками.',
       book: 'New World — что сломано и что мы ещё можем исправить.',
@@ -434,12 +441,15 @@ const ru: typeof en = {
     endangered: 'Под угрозой',
     extinct: 'Вымершие',
     'homo-sapiens': 'Homo sapiens',
+    journeyCta: 'Миграция · Люди →',
+    journeyNote:
+      'Путь — маршруты, даты и причины — рассказан в разделе «Миграция». Эта полка остаётся рамкой вида: происхождение, численность и то, что исчезло после первого прихода.',
     tiles: {
       surviving: 'Всё ещё здесь: ареал или численность сдвинулись после расселения людей.',
       endangered: 'Под угрозой сейчас — главным образом из-за людей.',
       extinct: 'Исчезли. Большинство карточек — явно по вине людей.',
       'homo-sapiens':
-        'Происхождение в Африке, путь расселения и роды крупных млекопитающих, исчезнувшие после нашего первого прихода.',
+        'Происхождение в Африке, численность сегодня и роды крупных млекопитающих, исчезнувшие после первого прихода. Сам путь — в разделе «Миграция».',
     },
     survivingLead:
       'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей — охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
@@ -616,6 +626,7 @@ const pl: typeof en = {
     maps: 'Mapy',
     law: 'Prawo',
     wildlife: 'Przyroda',
+    migration: 'Migracja',
     forests: 'Lasy',
     oceans: 'Oceany',
     book: 'Książka',
@@ -639,6 +650,7 @@ const pl: typeof en = {
       maps: 'Publiczne mapy systemów Ziemi i świata politycznego.',
       law: 'Ustawy, projekty i oznaczone idee — ekologia, SI, zwierzęta.',
       wildlife: 'Gatunki, siedliska i to, jak zmieniły się po rozprzestrzenieniu ludzi.',
+      migration: 'Rozprzestrzenianie ludzi, historyczne ruchy masowe, szlaki ptaków i migracje ssaków — z czynnikami na każdej karcie.',
       forests: 'Czym jest las, jak satelita widzi korony, liczby ze źródłami.',
       oceans: 'Prądy, zasolenie, temperatura i zanieczyszczenie — mapy żywego oceanu ze źródłami.',
       book: 'New World — co jest zepsute i co wciąż możemy naprawić.',
@@ -727,12 +739,15 @@ const pl: typeof en = {
     endangered: 'Zagrożone',
     extinct: 'Wymarłe',
     'homo-sapiens': 'Homo sapiens',
+    journeyCta: 'Migracja · Ludzie →',
+    journeyNote:
+      'Droga — trasy, daty i przyczyny — jest w dziale Migracja. Ta półka zostaje ramą gatunku: pochodzenie, liczebność i to, co zniknęło po pierwszym przybyciu.',
     tiles: {
       surviving: 'Wciąż tu są: zasięg lub liczebność przesunęły się po rozprzestrzenieniu ludzi.',
       endangered: 'Zagrożone teraz — głównie przez ludzi.',
       extinct: 'Zniknęły. Większość kart ma jasną przyczynę ludzką.',
       'homo-sapiens':
-        'Pochodzenie w Afryce, droga, którą poszliśmy, i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu.',
+        'Pochodzenie w Afryce, liczebność dziś i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu. Sama droga jest w dziale Migracja.',
     },
     survivingLead:
       'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi — polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
@@ -909,6 +924,7 @@ const lv: typeof en = {
     maps: 'Kartes',
     law: 'Tiesības',
     wildlife: 'Savvaļa',
+    migration: 'Migrācija',
     forests: 'Meži',
     oceans: 'Okeāni',
     book: 'Grāmata',
@@ -932,6 +948,7 @@ const lv: typeof en = {
       maps: 'Publiskas kartes par Zemes sistēmām un politisko pasauli.',
       law: 'Likumi, projekti un marķētas idejas — ekoloģija, MI, dzīvnieki.',
       wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc cilvēku izplatīšanās.',
+      migration: 'Cilvēku izplatība, vēsturiskas masu kustības, putnu lidojumu ceļi un zīdītāju migrācijas — ar dzinējspēkiem katrā kartītē.',
       forests: 'Kas ir mežs, kā satelīts redz vainagu, skaitļi ar avotiem.',
       oceans: 'Straumes, sāļums, temperatūra un piesārņojums — dzīvā okeāna kartes ar avotiem.',
       book: 'New World — kas ir salūzis un ko vēl varam salabot.',
@@ -1020,12 +1037,15 @@ const lv: typeof en = {
     endangered: 'Apdraudētie',
     extinct: 'Izmirušie',
     'homo-sapiens': 'Homo sapiens',
+    journeyCta: 'Migrācija · Cilvēki →',
+    journeyNote:
+      'Ceļš — maršruti, datumi un iemesli — ir sadaļā Migrācija. Šis plaukts paliek sugas rāmis: izcelsme, skaits un tas, kas izzuda pēc pirmās ierašanās.',
     tiles: {
       surviving: 'Joprojām šeit: areāls vai skaits pārbīdījās pēc cilvēku izplatīšanās.',
       endangered: 'Apdraudēti tagad — galvenokārt cilvēku dēļ.',
       extinct: 'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas.',
       'homo-sapiens':
-        'Izcelsme Āfrikā, ceļš, pa kuru gājām, un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās.',
+        'Izcelsme Āfrikā, skaits šodien un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās. Pats ceļš ir sadaļā Migrācija.',
     },
     survivingLead:
       'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',

@@ -1,0 +1,108 @@
+---
+import { getMigrationPage, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getMigrationPage(locale).birds;
+
+/** Schematic envelopes on equirectangular NASA Blue Marble (viewBox 1000×500). */
+const flyways = [
+  { n: '1', d: 'M478 78 C 470 120, 458 170, 452 230 C 448 280, 460 330, 490 370', label: ui.flywayEastAtlantic, lx: 410, ly: 160 },
+  { n: '2', d: 'M250 70 C 245 130, 248 190, 255 240 C 262 290, 270 340, 290 390', label: ui.flywayMississippi, lx: 168, ly: 210 },
+  { n: '3', d: 'M95 70 C 110 130, 140 190, 155 250 C 165 310, 170 360, 185 410', label: ui.flywayPacificAmericas, lx: 28, ly: 250 },
+  { n: '4', d: 'M860 55 C 845 120, 838 180, 850 250 C 862 310, 870 360, 878 410', label: ui.flywayEaaf, lx: 888, ly: 150 },
+  { n: '5', d: 'M700 50 C 705 110, 710 170, 708 230 C 700 280, 685 320, 670 350', label: ui.flywayCentralAsian, lx: 718, ly: 96 },
+  { n: '6', d: 'M640 120 C 630 170, 615 220, 600 270 C 590 310, 585 350, 595 390', label: ui.flywayAfricanEurasian, lx: 548, ly: 200 },
+] as const;
+---
+
+<section class="dispersal flyways" aria-labelledby="flyways-heading">
+  <h2 id="flyways-heading">{ui.flywaysTitle}</h2>
+  <p class="dispersal-lead">{ui.flywaysLead}</p>
+
+  <div class="dispersal-frame">
+    <svg
+      class="dispersal-svg"
+      viewBox="0 0 1000 500"
+      role="img"
+      aria-label={ui.flywaysAria}
+    >
+      <title>{ui.flywaysTitle}</title>
+      <desc>{ui.flywaysLead} {ui.flywaysSources} {ui.flywaysBaseCredit}</desc>
+      <defs>
+        <clipPath id="flyway-earth-clip">
+          <rect width="1000" height="500" rx="14"></rect>
+        </clipPath>
+        <filter id="flyway-halo" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#0a1610" flood-opacity="0.55"></feDropShadow>
+        </filter>
+        <marker id="flyway-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0 0 L9 4.5 L0 9 Z" fill="#c0ff00"></path>
+        </marker>
+      </defs>
+
+      <g clip-path="url(#flyway-earth-clip)">
+        <image
+          href="/images/maps/blue-marble.jpg"
+          x="0"
+          y="0"
+          width="1000"
+          height="500"
+          preserveAspectRatio="xMidYMid slice"
+        ></image>
+        <rect width="1000" height="500" fill="rgba(8, 18, 14, 0.22)"></rect>
+      </g>
+      <rect
+        width="1000"
+        height="500"
+        fill="none"
+        stroke="rgba(20, 34, 26, 0.22)"
+        stroke-width="1.2"
+        rx="14"
+      ></rect>
+
+      <g fill="none" stroke="#c0ff00" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.88">
+        {
+          flyways.map((flyway) => (
+            <path d={flyway.d} marker-end="url(#flyway-arrow)"></path>
+          ))
+        }
+      </g>
+
+      <g font-family="Inter, ui-sans-serif, sans-serif" filter="url(#flyway-halo)">
+        {
+          flyways.map((flyway) => (
+            <text
+              class="dispersal-pin-label"
+              x={flyway.lx}
+              y={flyway.ly}
+              fill="#f4f7f2"
+              stroke="#0a1610"
+              stroke-width="4"
+              paint-order="stroke"
+              font-size="12"
+              font-weight="650"
+            >
+              {flyway.n}. {flyway.label}
+            </text>
+          ))
+        }
+      </g>
+    </svg>
+
+    <ol class="dispersal-steps" aria-label={ui.flywaysLegend}>
+      {
+        flyways.map((flyway) => (
+          <li>
+            <span class="dispersal-n" aria-hidden="true">{flyway.n}</span>
+            <span>
+              <strong>{flyway.label}</strong>
+            </span>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+  <p class="dispersal-sources">{ui.flywaysHonesty}</p>
+  <p class="dispersal-sources">{ui.flywaysSources}</p>
+  <p class="dispersal-sources dispersal-base-credit">{ui.flywaysBaseCredit}</p>
+</section>

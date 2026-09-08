@@ -1,0 +1,51 @@
+---
+import type { MigrationEntry } from '../data/migration';
+import { migrationImageSrc, migrationPrimarySource } from '../data/migration';
+import { getMigrationPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: MigrationEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const { item } = Astro.props;
+const href = localizePath(`/migration/${item.slug}`, locale);
+const primary = migrationPrimarySource(item.sources);
+---
+
+<article
+  class="wildlife-card-wrap migration-card-wrap"
+  data-migration-shelf={item.shelf}
+  data-slug={item.slug}
+>
+  <a class="wildlife-card migration-card" href={href}>
+    <div class="card-art">
+      <img
+        src={migrationImageSrc(item.image)}
+        alt={item.imageAlt}
+        width="640"
+        height="400"
+        loading="lazy"
+      />
+    </div>
+    <div class="card-body">
+      <div class="innovation-badges">
+        <span class="tag">{page.shelves[item.shelf]}</span>
+      </div>
+      <h3>{item.title}</h3>
+      {item.scientificName && <p class="scientific-name"><em>{item.scientificName}</em></p>}
+      <p class="wildlife-hook">{item.hook}</p>
+      <span class="card-cta">{page.cardCta}</span>
+    </div>
+  </a>
+  {
+    primary && (
+      <p class="innovation-card-source">
+        <a href={primary.url} rel="noopener noreferrer">
+          {page.primarySource}: {primary.label}
+        </a>
+      </p>
+    )
+  }
+</article>

@@ -1,0 +1,108 @@
+---
+import CitedSourceList from '../components/CitedSourceList.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { migrationImageSrc, type MigrationEntry } from '../data/migration';
+import { getMigrationPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: MigrationEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const { item } = Astro.props;
+const title = `${item.title} — Fix Planet`;
+const image = migrationImageSrc(item.image);
+const backHref = localizePath(`/migration/${item.shelf}`, locale);
+---
+
+<BaseLayout
+  title={title}
+  description={item.hook}
+  image={image}
+  theme="migration-detail"
+>
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img
+      src="/images/maps/blue-marble.jpg"
+      alt=""
+      width="2048"
+      height="1024"
+    />
+    <div class="section-backdrop-scrim"></div>
+  </div>
+  <header
+    class="wildlife-page-hero wildlife-page-hero-detail migration-page-hero"
+    aria-labelledby="migration-heading"
+  >
+    <div class="wildlife-page-hero-media" aria-hidden="true">
+      <img src={image} alt="" width="1280" height="960" />
+    </div>
+    <div class="wildlife-page-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <p>
+        <a class="maps-back" href={backHref}>{page.back}</a>
+      </p>
+      <div class="eyebrow wildlife-on-dark">{page.shelves[item.shelf]}</div>
+      <h1 id="migration-heading">{item.title}</h1>
+      {item.scientificName && <p class="scientific-kicker"><em>{item.scientificName}</em></p>}
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail">
+      <figure class="wildlife-detail-art">
+        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+        <figcaption>
+          {page.imageCredit}: {item.image.credit}
+          {
+            item.image.sourceUrl ? (
+              <>
+                {' '}
+                (
+                <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                  {item.image.license}
+                </a>
+                )
+              </>
+            ) : (
+              <> ({item.image.license})</>
+            )
+          }
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose">
+        <div class="meta-row">
+          <span class="pill">{page.shelves[item.shelf]}</span>
+          {item.scientificName && (
+            <span class="pill"><em>{item.scientificName}</em></span>
+          )}
+        </div>
+        <h2>{page.what}</h2>
+        <p>{item.what}</p>
+        <h2>{page.route}</h2>
+        <p>{item.route}</p>
+        <h2>{page.drivers}</h2>
+        <p>{item.drivers}</p>
+        <h2>{page.timing}</h2>
+        <p>{item.timing}</p>
+        <h2>{page.pressure}</h2>
+        <p>{item.pressure}</p>
+        {
+          item.wildlifeSlug && (
+            <p>
+              <a href={localizePath(`/wildlife/${item.wildlifeSlug}`, locale)}>
+                {page.wildlifeLink}
+              </a>
+            </p>
+          )
+        }
+        <CitedSourceList
+          heading={page.sourcesLabel}
+          note={item.sourcesNote}
+          sources={item.sources}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,225 @@
+---
+import BirdFlywaysMap from '../components/BirdFlywaysMap.astro';
+import CitedSourceList from '../components/CitedSourceList.astro';
+import HubTile from '../components/HubTile.astro';
+import HumanDispersalMap from '../components/HumanDispersalMap.astro';
+import MigrationCard from '../components/MigrationCard.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  flywaySources,
+  hubBackdrop,
+  humanHeroImage,
+  humanSources,
+  isMigrationShelf,
+  migrationHub,
+  migrationImageSrc,
+  migrationShelfPath,
+  type MigrationShelf,
+} from '../data/migration';
+import {
+  getMigrationByShelf,
+  getMigrationPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+
+interface Props {
+  hub?: boolean;
+  shelf?: MigrationShelf;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const hub = Astro.props.hub === true;
+const requested = Astro.props.shelf ?? Astro.url.searchParams.get('shelf');
+const activeShelf: MigrationShelf | undefined = hub
+  ? undefined
+  : isMigrationShelf(requested ?? undefined)
+    ? requested
+    : 'humans';
+
+const birdEntries = activeShelf === 'birds' ? getMigrationByShelf(locale, 'birds') : [];
+const animalEntries = activeShelf === 'animals' ? getMigrationByShelf(locale, 'animals') : [];
+const greatEntries =
+  activeShelf === 'great-migrations' ? getMigrationByShelf(locale, 'great-migrations') : [];
+const humans = page.humans;
+const pageTitle = activeShelf
+  ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
+  : page.metaTitle;
+const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDescription;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={hubBackdrop.file}
+  theme="migration"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={hubBackdrop.file} alt="" width={hubBackdrop.width} height={hubBackdrop.height} />
+    <div class="section-backdrop-scrim"></div>
+  </div>
+
+  {
+    hub ? (
+      <section class="section-hub" aria-label={page.filterAria}>
+        <div class="wrap home-hub-inner">
+          <p class="eyebrow">{page.eyebrow}</p>
+          <h1 class="home-hub-kicker">{page.title}</h1>
+          <div class="encyc-lede migration-hub-lede">
+            {page.hubLead.map((para) => <p>{para}</p>)}
+          </div>
+          <p class="home-hub-kicker migration-choose">{page.chooseShelf}</p>
+          <nav class="hub-grid" aria-label={page.chooseShelf}>
+            {
+              migrationHub.map((item) => (
+                <HubTile
+                  href={localizePath(migrationShelfPath(item.key), locale)}
+                  icon={item.icon}
+                  title={page.shelves[item.key]}
+                  text={page.tiles[item.key]}
+                />
+              ))
+            }
+          </nav>
+        </div>
+      </section>
+    ) : (
+      activeShelf && (
+        <ShelfHeader
+          backHref={localizePath('/migration', locale)}
+          backLabel={page.back}
+          title={page.shelves[activeShelf]}
+          lede={page.shelfLeads[activeShelf]}
+        />
+      )
+    )
+  }
+
+  {
+    activeShelf === 'humans' && (
+      <>
+        <section class="section section-hub-follow" aria-labelledby="our-species">
+          <div class="wrap wildlife-hero">
+            <figure class="wildlife-hero-art">
+              <img
+                src={migrationImageSrc(humanHeroImage)}
+                alt={humans.imageAlt}
+                width="1280"
+                height="960"
+              />
+            </figure>
+            <div class="wildlife-copy-card">
+              <div class="eyebrow">{humans.heroEyebrow}</div>
+              <h2 id="our-species"><em>{humans.scientificName}</em></h2>
+              <dl class="wildlife-stats">
+                <div>
+                  <dt>{humans.appearedLabel}</dt>
+                  <dd>{humans.appeared}</dd>
+                </div>
+                <div>
+                  <dt>{humans.populationLabel}</dt>
+                  <dd>{humans.population}</dd>
+                </div>
+              </dl>
+              {humans.framing.map((para) => <p class="wildlife-framing">{para}</p>)}
+              <p class="wildlife-framing">
+                <a href={localizePath('/wildlife/homo-sapiens', locale)}>{humans.wildlifeCta}</a>
+                {' '}
+                {humans.wildlifePointer}
+              </p>
+              <p class="wildlife-framing">
+                <a href={localizePath('/migration/great-migrations', locale)}>
+                  {humans.greatMigrationsCta}
+                </a>
+                {' '}
+                {humans.greatMigrationsNote}
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="migration-dispersal-heading">
+          <div class="wrap">
+            <div class="wildlife-map-panel">
+              <p class="oceans-source-note">{humans.honesty}</p>
+              <HumanDispersalMap copy={humans} hideLoss headingId="migration-dispersal-heading" />
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="human-drivers">
+          <div class="wrap">
+            <div class="wildlife-copy-card forests-panel oceans-panel">
+              <div class="encyc-lede oceans-lede">
+                <h2 id="human-drivers">{page.drivers}</h2>
+                {
+                  humans.sections.map((block) => (
+                    <article class="migration-human-section">
+                      <h3>{block.title}</h3>
+                      <p>{block.body}</p>
+                    </article>
+                  ))
+                }
+              </div>
+              <CitedSourceList heading={page.sourcesLabel} sources={humanSources} />
+            </div>
+          </div>
+        </section>
+      </>
+    )
+  }
+
+  {
+    activeShelf === 'great-migrations' && (
+      <section class="section section-hub-follow" id="migration-list">
+        <div class="wrap wildlife-list-panel">
+          <div class="card-grid cols-3">
+            {greatEntries.map((item) => (
+              <MigrationCard item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    activeShelf === 'birds' && (
+      <>
+        <section class="section section-hub-follow" aria-labelledby="flyways-heading">
+          <div class="wrap">
+            <div class="wildlife-map-panel">
+              <BirdFlywaysMap />
+            </div>
+            <CitedSourceList heading={page.sourcesLabel} sources={flywaySources} />
+          </div>
+        </section>
+        <section class="section" id="migration-list">
+          <div class="wrap wildlife-list-panel">
+            <div class="card-grid cols-3">
+              {birdEntries.map((item) => (
+                <MigrationCard item={item} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </>
+    )
+  }
+
+  {
+    activeShelf === 'animals' && (
+      <section class="section section-hub-follow" id="migration-list">
+        <div class="wrap wildlife-list-panel">
+          <div class="card-grid cols-3">
+            {animalEntries.map((item) => (
+              <MigrationCard item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
