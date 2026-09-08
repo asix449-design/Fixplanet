@@ -41,6 +41,8 @@ const activeShelf: MigrationShelf | undefined = hub
 
 const birdEntries = activeShelf === 'birds' ? getMigrationByShelf(locale, 'birds') : [];
 const animalEntries = activeShelf === 'animals' ? getMigrationByShelf(locale, 'animals') : [];
+const greatEntries =
+  activeShelf === 'great-migrations' ? getMigrationByShelf(locale, 'great-migrations') : [];
 const humans = page.humans;
 const pageTitle = activeShelf
   ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
@@ -69,7 +71,7 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
             {page.hubLead.map((para) => <p>{para}</p>)}
           </div>
           <p class="home-hub-kicker migration-choose">{page.chooseShelf}</p>
-          <nav class="hub-grid hub-grid-3" aria-label={page.chooseShelf}>
+          <nav class="hub-grid" aria-label={page.chooseShelf}>
             {
               migrationHub.map((item) => (
                 <HubTile
@@ -127,6 +129,13 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
                 {' '}
                 {humans.wildlifePointer}
               </p>
+              <p class="wildlife-framing">
+                <a href={localizePath('/migration/great-migrations', locale)}>
+                  {humans.greatMigrationsCta}
+                </a>
+                {' '}
+                {humans.greatMigrationsNote}
+              </p>
             </div>
           </div>
         </section>
@@ -159,6 +168,20 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
           </div>
         </section>
       </>
+    )
+  }
+
+  {
+    activeShelf === 'great-migrations' && (
+      <section class="section section-hub-follow" id="migration-list">
+        <div class="wrap wildlife-list-panel">
+          <div class="card-grid cols-3">
+            {greatEntries.map((item) => (
+              <MigrationCard item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
     )
   }
 

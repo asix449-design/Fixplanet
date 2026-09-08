@@ -50,6 +50,8 @@ export type MigrationPage = {
     framing: string[];
     wildlifePointer: string;
     wildlifeCta: string;
+    greatMigrationsCta: string;
+    greatMigrationsNote: string;
     mapTitle: string;
     mapAria: string;
     mapLead: string;

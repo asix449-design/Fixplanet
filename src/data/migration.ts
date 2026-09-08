@@ -3,12 +3,18 @@ import { cite, type PrimarySource } from './sources';
 
 export type { PrimarySource } from './sources';
 
-export const migrationShelfKeys = ['humans', 'birds', 'animals'] as const;
+export const migrationShelfKeys = [
+  'humans',
+  'great-migrations',
+  'birds',
+  'animals',
+] as const;
 
 export type MigrationShelf = (typeof migrationShelfKeys)[number];
 
 export const migrationHub = [
   { key: 'humans', icon: 'human' },
+  { key: 'great-migrations', icon: 'horse' },
   { key: 'birds', icon: 'migrate' },
   { key: 'animals', icon: 'paw' },
 ] as const satisfies ReadonlyArray<{ key: MigrationShelf; icon: HubIconName }>;
@@ -61,9 +67,38 @@ function img(
  * 4. `npm run build`.
  *
  * Slugs stay English. Do not invent routes or dates. Prefer BirdLife / CMS flyways,
- * IUCN, NOAA, and named paleodemography papers.
+ * IUCN, NOAA, named paleodemography papers, and named late-antique sources.
+ * Great-migrations cards are historic mass movements — not Pleistocene dispersal.
  */
 export const migrationEntryMeta: MigrationEntryMeta[] = [
+  {
+    slug: 'hunnic-invasion',
+    shelf: 'great-migrations',
+    image: img(
+      'hunnic-cauldron.jpg',
+      'Vyacheslav Kirillin / Wikimedia Commons — museum copy (2006) of a Hunnic cauldron type, 4th–5th c., Kazan Kremlin',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Hunnic_cauldron_(2023-03-07)_02.jpg',
+    ),
+    sources: [
+      cite(
+        'Ammianus Marcellinus, Res Gestae 31 — Goths at the Danube, 376 CE (Yonge trans.)',
+        'https://www.tertullian.org/fathers/ammianus_31_book31.htm',
+      ),
+      cite(
+        'Heather, English Historical Review, 1995 — Hunnic pressure and the western empire',
+        'https://doi.org/10.1093/ehr/CX.435.4',
+      ),
+      cite(
+        'Hakenbeck & Büntgen, Journal of Roman Archaeology, 2022 — drought and Hunnic raiding, 430s–450s',
+        'https://doi.org/10.1017/S1047759422000332',
+      ),
+      cite(
+        'Cambridge / Hakenbeck note on the 2022 tree-ring argument (not a 376 origin story)',
+        'https://www.cam.ac.uk/research/news/drought-encouraged-attilas-huns-to-attack-the-roman-empire-tree-rings-suggest',
+      ),
+    ],
+  },
   {
     slug: 'arctic-tern',
     shelf: 'birds',

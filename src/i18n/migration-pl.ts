@@ -4,12 +4,12 @@ import type { MigrationEntryCopy } from '../data/migration';
 export const page: MigrationPage = {
   metaTitle: 'Migracja — Fix Planet',
   metaDescription:
-    'Dlaczego ludzie, ptaki i inne zwierzęta się przemieszczają: epoki lodowe i wybrzeża, sezony i pokarm, szlaki i ogrodzenia. Encyklopedia z podanymi źródłami o rozprzestrzenianiu ludzi i żywych migracjach.',
+    'Dlaczego ludzie, ptaki i inne zwierzęta się przemieszczają: epoki lodowe i wybrzeża, historyczne ruchy masowe, szlaki i ogrodzenia. Encyklopedia z podanymi źródłami o rozprzestrzenianiu ludzi, wielkich migracjach i żywych trasach.',
   eyebrow: 'Encyklopedia',
   title: 'Migracja',
   hubLead: [
-    'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci i cieplejszy klimat na te starsze zegary.',
-    'Ten dział zbiera trzy historie, które zwykle leżą osobno: Homo sapiens wychodzący z Afryki w późnym plejstocenie, ptaki na światowych szlakach oraz ssaki — i kilka innych zwierząt — które wciąż wędrują po pokarm i rozród. Na każdej karcie są czynniki. Daty to zakresy z nazwanych prac, nie wymyślone trasy.',
+    'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
+    'Cztery półki, celowo osobno. Głęboka historia Homo sapiens wychodzącego z Afryki to nie Attyla. Historyczne „wielkie migracje” to nazwane ruchy masowe w źródłach pisanych. Ptaki i inne zwierzęta wciąż odbywają sezonowe trasy. Na każdej karcie są czynniki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',
@@ -26,17 +26,22 @@ export const page: MigrationPage = {
   wildlifeLink: 'Karta gatunku w Przyrodzie →',
   tiles: {
     humans: 'Z Afryki, Sahul, Ameryki: datowane okna przybycia i klimat, który je ukształtował.',
+    'great-migrations':
+      'Historyczne ruchy masowe w źródłach pisanych. Pierwsza karta: hunicka presja na świat rzymski.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
     animals: 'Gnu, karibu, wieloryby, nietoperze — wybrane migracje ssaków i ich czynniki.',
   },
   shelves: {
     humans: 'Ludzie',
+    'great-migrations': 'Wielkie migracje',
     birds: 'Ptaki',
     animals: 'Zwierzęta',
   },
   shelfLeads: {
     humans:
-      'Homo sapiens powstał w Afryce około 300 000 lat temu. Późniejsza droga — nie karta gatunku — jest tutaj: korytarze, wybrzeża, lód i pokarm. Utrata megafauny pojawia się tylko tam, gdzie tłumaczy trasę; katalog Wymarłych zostaje w Przyrodzie.',
+      'Homo sapiens powstał w Afryce około 300 000 lat temu. Późniejsza droga — nie karta gatunku — jest tutaj: korytarze, wybrzeża, lód i pokarm. Utrata megafauny pojawia się tylko tam, gdzie tłumaczy trasę; katalog Wymarłych zostaje w Przyrodzie. Attyla i okres wędrówek ludów to inny zegar: Wielkie migracje.',
+    'great-migrations':
+      'Nazwane ruchy masowe w czasie historycznym — nie wyjście z Afryki. Pierwsza karta to hunicka presja na późny świat rzymski. Później można dodać kolejne wpisy; to nie podręcznik o każdym ludzie Völkerwanderung.',
     birds:
       'Sezonowa migracja ptaków to maszyna pokarmu i rozrodu. Większość gatunków dalekodystansowych gniazduje na wyższych szerokościach w długodniowym lecie, potem leci ku zimowemu pokarmowi. BirdLife i CMS opisują rodziny szlaków — schematyczne korytarze, nie ślady GPS każdego stada.',
     animals:
@@ -58,8 +63,11 @@ export const page: MigrationPage = {
       'Czynniki zmieniają się krokiem. Mokre i suche fazy w Afryce Północnej i Lewancie otwierały albo zamykały pustynne korytarze. Spadek poziomu morza w maksimach glacjalnych odsłonił Sundę i zwęził przerwy wodne do Sahulu. Lądolody blokowały, potem później oferowały, drogi w głąb Ameryk. Wybrzeża, rzeki i zwierzyna były zasobami. Późniejsze wyspy wymagały łodzi.',
     ],
     wildlifePointer:
-      'Przyroda trzyma ramę gatunku — pochodzenie, liczby i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu. Ta półka ma drogę.',
+      'Przyroda trzyma ramę gatunku — pochodzenie, liczby i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu. Ta półka ma drogę głębokiej historii.',
     wildlifeCta: 'Przyroda · Homo sapiens →',
+    greatMigrationsCta: 'Wielkie migracje →',
+    greatMigrationsNote:
+      'Historyczne ruchy masowe w źródłach pisanych — Hunowie i późniejsze karty — są na osobnej półce. Ta strona to późny plejstocen i holocen, nie Attyla.',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi etapami przybycia',
     mapLead:
@@ -138,6 +146,23 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'hunnic-invasion': {
+    title: 'Hunicka presja na Rzym',
+    hook: 'Nie wyjście z Afryki: stepowa siła IV–V wieku, której nacisk pomógł zepchnąć Gotów i inne ludy na rzymskie rubieże.',
+    imageAlt:
+      'Muzealna kopia huńskiego kotła brązowego, typ IV–V wieku, sfotografowana w Kazaniu — replika, nie oryginalne znalezisko grobowe',
+    what: 'Hunowie byli konną, wieloetniczną grupą stepową, którą rzymscy autorzy jasno opisują w latach 370. n.e. na północ od Morza Czarnego. Głębsze pochodzenie nie jest ustalone. Związek z Xiongnu chińskiej granicy to stara hipoteza, nie dowód. Ammianus Marcellinus jest najpełniejszą bliską czasowo relacją o wstrząsie, który zagnał Gotów nad Dunaj; Jordanes, piszący w VI wieku, jest późniejszy i bardziej mityczny — tradycja, nie spis. Ta karta nie jest portretem Attyli jako przeznaczenia rasy. To nazwany ruch w zapisie późnoantycznym.',
+    route:
+      'Rzymska geografia lat 370. umieszcza aktywność huńską na wschód i północ od Morza Czarnego, potem presję na Alanów i Gotów na zachód ku Dunajowi. W 376 Tervingowie i Greutungowie prosili o przejście do cesarstwa. Same grupy huńskie nie były jeszcze wtedy główną siłą na Dunaju; odczyt Heathera z Ammianusa: kaskada była realna, ale to nie jednorazowy pochód Hunów do Italii w 376. W latach 430–450 huńska polityka pod Ruą, potem Attylą, opierała się na Kotlinie Karpackiej, łupiła obie połowy cesarstwa, biła się na Polach Katalaunijskich w 451, weszła do Italii w 452 i rozpadła się po śmierci Attyli w 453.',
+    drivers:
+      'Presja wojskowa i polityczna to czynnik, który źródła nazywają dla 376: Goci nad rzeką z powodu Hunów (Ammianus; sekwencja jest w każdym poważnym opracowaniu). Kaskadowe przesunięcie — Alanowie, Goci, później grupy związane z przejściem Renu w 406 — to mechanizm, nie nacjonalistyczny „najazd na cywilizację”. Klimat jest późniejszym, węższym argumentem. Hakenbeck i Büntgen (2022) na podstawie hydroklimatu z przyrostów drzew proponują, że silne susze w Kotlinie Karpackiej w latach 430–450 zaburzyły utrzymanie i mogły nasilić huńskie rajdy jako bufor. To o rajdach epoki Attyli, nie o udowodnionej przyczynie pojawienia się w latach 370., i nie o późnoantycznej małej epoce lodowej od 536, która jest po Attyli. Suszę trzymajcie jako hipotezę z niepewnością, nie jako hasło.',
+    timing:
+      'Wyraźna wzmianka rzymska: lata 370. Przejście Dunaju przez Gotów: 376. Adrianopol: 378. Szczyt Attyli: lata 440.–452. Śmierć: 453. Niemiecka etykieta historiograficzna Völkerwanderung („okres wędrówek ludów”) to rama XIX wieku dla tych stuleci. To nazwa półki w starych podręcznikach, nie opowieść rasowa i nie data pochodzenia Homo sapiens.',
+    pressure:
+      'Zachodni rząd cesarski nie strawił przejścia z 376; Adrianopol i późniejsze wojny domowe znaczyły nie mniej niż jakakolwiek stepowa „horda”. Późniejszy europejski nacjonalizm przerabiał Attylę na bicz albo przodka. Ta encyklopedia nie robi ani jednego, ani drugiego. Huńska polityka rozpadła się po 453; grupy następcze nad Dunajem to inna karta, jeśli ta półka urośnie. Nie wrzucajcie tego ruchu na półkę plejstoceńskich Ludzi.',
+    sourcesNote:
+      'Ammianus 31 to główna relacja o 376. Heather 1995 to standardowy odczyt polityczno-wojskowy. Hakenbeck & Büntgen 2022 to artykuł klimatyczny o rajdach z lat 430–450 — tak opisany. Zdjęcie to muzealna kopia kotła z 2006, nie wykopany oryginał.',
+  },
   'arctic-tern': {
     title: 'Rybitwa popielata',
     hook: 'Najdłuższy regularny dojazd na Ziemi: polarne lato do polarnego lata, za światłem i pokarmem.',

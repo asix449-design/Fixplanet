@@ -4,12 +4,12 @@ import type { MigrationEntryCopy } from '../data/migration';
 export const page: MigrationPage = {
   metaTitle: 'Migration — Fix Planet',
   metaDescription:
-    'Why people, birds, and other animals move: ice ages and coasts, seasons and food, flyways and fences. Sourced encyclopedia of human dispersal and living migrations.',
+    'Why people, birds, and other animals move: ice ages and coasts, historic mass movements, flyways and fences. Sourced encyclopedia of human dispersal, great migrations, and living routes.',
   eyebrow: 'Encyclopedia',
   title: 'Migration',
   hubLead: [
-    'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, and a warmer climate on top of those older clocks.',
-    'This hub gathers three stories that are usually filed apart: Homo sapiens walking out of Africa in the Late Pleistocene, birds on the world’s flyways, and mammals — and a few other animals — that still travel for food and breeding. Drivers sit on each entry. Dates are ranges from named papers, not invented routes.',
+    'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and a warmer climate on top of those older clocks.',
+    'Four shelves, kept apart on purpose. Deep-history Homo sapiens walking out of Africa is not Attila. Historic “great migrations” are named mass movements in the written record. Birds and other animals still run seasonal routes. Drivers sit on each entry. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -26,17 +26,22 @@ export const page: MigrationPage = {
   wildlifeLink: 'Wildlife species page →',
   tiles: {
     humans: 'Out of Africa, Sahul, the Americas: dated arrival windows and the climate that shaped them.',
+    'great-migrations':
+      'Historic mass movements in the written record. First card: Hunnic pressure on the Roman world.',
     birds: 'Flyways, seasons, and species that still cross hemispheres for food and breeding.',
     animals: 'Wildebeest, caribou, whales, bats — curated mammal migrations and their drivers.',
   },
   shelves: {
     humans: 'Humans',
+    'great-migrations': 'Great migrations',
     birds: 'Birds',
     animals: 'Animals',
   },
   shelfLeads: {
     humans:
-      'Homo sapiens arose in Africa about 300,000 years ago. The later journey — not the species card — is here: corridors, coasts, ice, and food. Megafauna loss is mentioned only where it explains a route; the Extinct catalog stays on Wildlife.',
+      'Homo sapiens arose in Africa about 300,000 years ago. The later journey — not the species card — is here: corridors, coasts, ice, and food. Megafauna loss is mentioned only where it explains a route; the Extinct catalog stays on Wildlife. Attila and the Migration Period are a different clock: Great migrations.',
+    'great-migrations':
+      'Named mass movements in historical time — not Out of Africa. The first card is Hunnic pressure on the late Roman world. More entries can be added later; this is not a textbook dump of every Völkerwanderung people.',
     birds:
       'Seasonal bird migration is a food-and-breeding machine. Most long-distance species breed at higher latitudes in the long-day summer, then fly toward winter food. BirdLife and CMS describe families of flyways — schematic corridors, not GPS tracks of every flock.',
     animals:
@@ -58,8 +63,11 @@ export const page: MigrationPage = {
       'Drivers change by step. Wet and dry phases in North Africa and the Levant opened or closed desert corridors. Falling sea level in glacial maxima exposed Sunda and narrowed the water gaps to Sahul. Ice sheets blocked, then later offered, interior routes into the Americas. Coasts, rivers, and game were the resources. Later islands needed boats.',
     ],
     wildlifePointer:
-      'Wildlife keeps the species frame — origin, numbers, and the large-mammal genera that vanished after first arrival. This shelf owns the journey.',
+      'Wildlife keeps the species frame — origin, numbers, and the large-mammal genera that vanished after first arrival. This shelf owns the deep-history journey.',
     wildlifeCta: 'Wildlife · Homo sapiens →',
+    greatMigrationsCta: 'Great migrations →',
+    greatMigrationsNote:
+      'Historic mass movements in the written record — Huns and later cards — live on a separate shelf. This page is Late Pleistocene and Holocene dispersal, not Attila.',
     mapTitle: 'Where we went, and when',
     mapAria: 'World map of Homo sapiens dispersal with dated arrival steps',
     mapLead:
@@ -138,6 +146,23 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'hunnic-invasion': {
+    title: 'Hunnic pressure on Rome',
+    hook: 'Not Out of Africa: a 4th–5th-century steppe power whose pressure helped push Gothic and other peoples onto Roman frontiers.',
+    imageAlt:
+      'Museum copy of a Hunnic bronze cauldron type, 4th–5th centuries, photographed in Kazan — a replica, not an original burial find',
+    what: 'The Huns were a mounted, multi-ethnic steppe grouping that Roman writers first describe clearly in the 370s CE north of the Black Sea. Their deeper origin is not settled. A link to the Xiongnu of the Chinese frontier is an old hypothesis, not a proof. Ammianus Marcellinus is the fullest near-contemporary narrative for the shock that sent Goths to the Danube; Jordanes, writing in the sixth century, is later and more mythic — useful as a tradition, not as a census. This card is not a portrait of Attila as a race-destiny. It is a named movement in the late-antique record.',
+    route:
+      'Roman geography for the 370s places Hunnic activity east and north of the Black Sea, then pressure on Alans and Goths west toward the Danube. In 376, Tervingi and Greuthungi asked to cross into the empire. Hunnic groups were not yet the main power sitting on the Danube that year; Heather’s reading of Ammianus is that the cascade was real but not a single stampede of Huns themselves pouring into Italy in 376. By the 430s–450s a Hunnic polity under Rua and then Attila was based in the Carpathian Basin, raiding both Roman halves, fighting on the Catalaunian Plains in 451, entering Italy in 452, and fragmenting after Attila’s death in 453.',
+    drivers:
+      'Military and political pressure is the driver the sources name for 376: Goths at the river because of Huns (Ammianus; the sequence is in every serious secondary account). Cascading displacement — Alans, Goths, later groups involved in the 406 Rhine crossing — is the mechanism, not a nationalist “invasion of civilization.” Climate is a later, narrower argument. Hakenbeck and Büntgen (2022) use tree-ring hydroclimate to propose that severe drought spells in the Carpathian Basin in the 430s–450s disrupted subsistence and may have intensified Hunnic raiding as a buffer. That is about Attila-era raids, not a proven cause of the 370s appearance, and not the sixth-century Late Antique Little Ice Age (from 536), which comes after Attila. Treat drought as a sourced hypothesis with uncertainty, not as a slogan.',
+    timing:
+      'Clear Roman notice: 370s. Gothic Danube crossing: 376. Battle of Adrianople: 378. Attila’s high-water mark: 440s–452. Death: 453. The German historiographical label Völkerwanderung (“Migration Period”) is a nineteenth-century frame for these centuries. It is a shelf name in older textbooks, not a racial story and not a date of origin for Homo sapiens.',
+    pressure:
+      'The western imperial government failed to digest the 376 crossing; Adrianople and later civil wars mattered as much as any steppe “horde.” Later European nationalism recycled Attila as either scourge or ancestor. This encyclopedia does neither. The Hunnic polity broke up after 453; successor groups on the Danube are a different card if this shelf grows. Do not fold this movement into the Pleistocene Humans shelf.',
+    sourcesNote:
+      'Ammianus 31 is the primary narrative for 376. Heather 1995 is the standard political-military reading. Hakenbeck & Büntgen 2022 is the climate paper for the 430s–450s raids — labeled as such. The photograph is a 2006 museum copy of a cauldron type, not an excavated original.',
+  },
   'arctic-tern': {
     title: 'Arctic tern',
     hook: 'The longest regular commute on Earth: polar summer to polar summer, following light and food.',

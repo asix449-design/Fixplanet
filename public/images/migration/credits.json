@@ -102,5 +102,13 @@
     "sourceUrl": "",
     "artist": "Fix Planet generated naturalistic figure — not a portrait of a named person",
     "license": "Site asset"
+  },
+  {
+    "slug": "hunnic-invasion",
+    "file": "hunnic-cauldron.jpg",
+    "commonsTitle": "Hunnic cauldron (2023-03-07) 02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hunnic_cauldron_(2023-03-07)_02.jpg",
+    "artist": "Vyacheslav Kirillin — museum copy (2006) of a Hunnic cauldron type, Kazan Kremlin",
+    "license": "CC BY-SA 4.0"
   }
 ]

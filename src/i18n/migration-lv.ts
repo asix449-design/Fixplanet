@@ -4,12 +4,12 @@ import type { MigrationEntryCopy } from '../data/migration';
 export const page: MigrationPage = {
   metaTitle: 'Migrācija — Fix Planet',
   metaDescription:
-    'Kāpēc cilvēki, putni un citi dzīvnieki pārvietojas: leduslaikmeti un krasti, sezonas un barība, lidojumu ceļi un žogi. Enciklopēdija ar avotiem par cilvēku izplatīšanos un dzīvajām migrācijām.',
+    'Kāpēc cilvēki, putni un citi dzīvnieki pārvietojas: leduslaikmeti un krasti, vēsturiskas masu kustības, lidojumu ceļi un žogi. Enciklopēdija ar avotiem par cilvēku izplatīšanos, lielajām migrācijām un dzīvajiem maršrutiem.',
   eyebrow: 'Enciklopēdija',
   title: 'Migrācija',
   hubLead: [
-    'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Šī lapa savāc trīs stāstus, ko parasti glabā atsevišķi: Homo sapiens iziešana no Āfrikas vēlajā pleistocēnā, putni uz pasaules lidojumu ceļiem, un zīdītāji — plus daži citi dzīvnieki —, kas joprojām ceļo pēc barības un vairošanās. Dzinējspēki ir katrā kartītē. Datumi ir diapazoni no nosauktām publikācijām, ne izdomāti maršruti.',
+    'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
+    'Četri plaukti, tīši šķirti. Homo sapiens dziļā vēsture, izejot no Āfrikas, nav Atila. Vēsturiskās «lielās migrācijas» ir nosauktas masu kustības rakstītajos avotos. Putni un citi dzīvnieki joprojām iet sezonālus ceļus. Dzinējspēki ir katrā kartītē. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',
@@ -26,17 +26,22 @@ export const page: MigrationPage = {
   wildlifeLink: 'Savvaļas sugas lapa →',
   tiles: {
     humans: 'No Āfrikas, Sahula, Amerika: datēti ierašanās logi un klimats, kas tos veidoja.',
+    'great-migrations':
+      'Vēsturiskas masu kustības rakstītajos avotos. Pirmā kartīte: huņu spiediens uz romiešu pasauli.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
     animals: 'Gnu, ziemeļbrieži, vaļi, sikspārņi — atlasītas zīdītāju migrācijas un to dzinējspēki.',
   },
   shelves: {
     humans: 'Cilvēki',
+    'great-migrations': 'Lielās migrācijas',
     birds: 'Putni',
     animals: 'Dzīvnieki',
   },
   shelfLeads: {
     humans:
-      'Homo sapiens radās Āfrikā ap 300 000 gadiem. Vēlākais ceļojums — ne sugas kartīte — ir šeit: koridori, krasti, ledus un barība. Megafaunas zudums minēts tikai tur, kur tas izskaidro maršrutu; Izmirušo katalogs paliek Savvaļā.',
+      'Homo sapiens radās Āfrikā ap 300 000 gadiem. Vēlākais ceļojums — ne sugas kartīte — ir šeit: koridori, krasti, ledus un barība. Megafaunas zudums minēts tikai tur, kur tas izskaidro maršrutu; Izmirušo katalogs paliek Savvaļā. Atila un tautu staigāšanas laikmets ir cits pulkstenis: Lielās migrācijas.',
+    'great-migrations':
+      'Nosauktas masu kustības vēsturiskajā laikā — ne izeja no Āfrikas. Pirmā kartīte ir huņu spiediens uz vēlo romiešu pasauli. Vēlāk var pievienot citas kartītes; tas nav mācību grāmata par katru Völkerwanderung tautu.',
     birds:
       'Sezonālā putnu migrācija ir barības un vairošanās mašīna. Lielākā daļa tālo sugu ligzdo augstākos platuma grādos garās dienas vasarā, tad lido pretī ziemas barībai. BirdLife un CMS apraksta lidojumu ceļu ģimenes — shēmātiskus koridorus, ne katra bara GPS trases.',
     animals:
@@ -58,8 +63,11 @@ export const page: MigrationPage = {
       'Dzinējspēki mainās pa soļiem. Mitras un sausas fāzes Ziemeļāfrikā un Levantē atvēra vai aizvēra tuksneša koridorus. Krītošs jūras līmenis ledāja maksimumos atsedza Sundu un sašaurināja ūdens spraugas līdz Sahulai. Ledāju vaiņagi bloķēja, tad vēlāk piedāvāja, iekšzemes ceļus Amerikā. Krasti, upes un medījums bija resursi. Vēlākām salām vajadzēja laivas.',
     ],
     wildlifePointer:
-      'Savvaļa tur sugas ietvaru — izcelsmi, skaitļus un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās. Šis plaukts pieder ceļojumam.',
+      'Savvaļa tur sugas ietvaru — izcelsmi, skaitļus un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās. Šis plaukts pieder dziļās vēstures ceļojumam.',
     wildlifeCta: 'Savvaļa · Homo sapiens →',
+    greatMigrationsCta: 'Lielās migrācijas →',
+    greatMigrationsNote:
+      'Vēsturiskas masu kustības rakstītajos avotos — huņņi un vēlākas kartītes — ir atsevišķā plauktā. Šī lapa ir vēlais pleistocēns un holocēns, ne Atila.',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem ierašanās soļiem',
     mapLead:
@@ -138,6 +146,23 @@ export const page: MigrationPage = {
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'hunnic-invasion': {
+    title: 'Huņu spiediens uz Romu',
+    hook: 'Ne izeja no Āfrikas: 4.–5. gadsimta stepes spēks, kura spiediens palīdzēja grūst gotus un citas tautas uz romiešu robežām.',
+    imageAlt:
+      'Muzeja kopija huņu bronzas katla tipam, 4.–5. gadsimts, fotografēta Kazaņā — replika, ne oriģināls kapa atradums',
+    what: 'Huņņi bija jāšus, daudz etniska stepes grupa, ko romiešu autori skaidri apraksta 370. gados m.ē. uz ziemeļiem no Melnās jūras. Dziļākā izcelsme nav noskaidrota. Saikne ar Ķīnas pierobežas sjunnu ir veca hipotēze, ne pierādījums. Ammians Marcellīns ir pilnākais tuvlaicīgais stāsts par triecienu, kas dzina gotus pie Donavas; Jordāns, rakstīdams sestajā gadsimtā, ir vēlāks un mitiskāks — tradīcija, ne tautas skaitīšana. Šī kartīte nav Atilas portrets kā rases liktenis. Tā ir nosaukta kustība vēlās antikas avotos.',
+    route:
+      'Romiešu ģeogrāfija 370. gadiem liek huņu darbību austrumos un ziemeļos no Melnās jūras, tad spiedienu uz alaniem un gotiem uz rietumiem pret Donavu. 376. gadā tervingi un greutungi lūdza pāriet impērijā. Pašas huņu grupas tad vēl nebija galvenais spēks uz Donavas; Heather lasījums Ammianā: kaskāde bija īsta, bet tas nav viens huņu gājiens uz Itāliju 376. gadā. 430.–450. gados huņu polītija zem Rua, tad Atilas, balstījās Karpatu ieplakā, laupīja abas impērijas puses, cīnījās Katalaunijas laukos 451., iegāja Itālijā 452. un saira pēc Atilas nāves 453.',
+    drivers:
+      'Karaspēka un politiskais spiediens ir dzinējspēks, ko avoti nosauc 376. gadam: goti pie upes huņu dēļ (Ammians; secība ir katrā nopietnā sekundārajā stāstā). Kaskādes pārvietošanās — alani, goti, vēlāk grupas, kas saistītas ar Reinas šķērsošanu 406. gadā — ir mehānisms, ne nacionālistisks «iebrukums civilizācijā». Klimats ir vēlāks, šaurāks arguments. Hakenbeck un Büntgen (2022) ar koku gredzenu hidroklīmatu ierosina, ka stipri sausuma posmi Karpatu ieplakā 430.–450. gados izjauca iztiku un varēja pastiprināt huņu reidus kā buferi. Tas ir par Atilas laikmeta reidiem, ne pierādīts 370. gadu parādīšanās cēlonis, un ne vēlās antikas mazais leduslaikmets no 536. gada, kas ir pēc Atilas. Sausumu turiet kā hipotēzi ar nenoteiktību, ne kā saukli.',
+    timing:
+      'Skaidra romiešu ziņa: 370. gadi. Gotu Donavas šķērsošana: 376. Adrianoples kauja: 378. Atilas augstākais punkts: 440. gadi–452. Nāve: 453. Vācu historiogrāfiskā birka Völkerwanderung («tautu staigāšanas periods») ir 19. gadsimta rāmis šiem gadsimtiem. Tā ir plaukta vārds vecās mācību grāmatās, ne rases stāsts un ne Homo sapiens izcelsmes datums.',
+    pressure:
+      'Rietumu impērijas vara nesagremoja 376. gada pāreju; Adrianoples kauja un vēlākie pilsoņu kari nozīmēja ne mazāk kā jebkura stepes «orda». Vēlākais Eiropas nacionālisms Atilu pārstrādāja par rīksti vai senčiem. Šī enciklopēdija nedara ne vienu, ne otru. Huņu polītija saira pēc 453.; pēcteču grupas pie Donavas ir cita kartīte, ja šis plaukts augs. Nesaliekiet šo kustību pleistocēna Cilvēku plauktā.',
+    sourcesNote:
+      'Ammians 31 ir galvenais stāsts par 376. gadu. Heather 1995 ir standarta politiski militārais lasījums. Hakenbeck & Büntgen 2022 ir klimata raksts par 430.–450. gadu reidiem — tā arī marķēts. Fotogrāfija ir 2006. gada muzeja katla kopija, ne izrakts oriģināls.',
+  },
   'arctic-tern': {
     title: 'Polārais zīriņš',
     hook: 'Garākais regulārais ceļojums uz Zemes: no polārās vasaras uz polāro vasaru, sekojot gaismai un barībai.',
