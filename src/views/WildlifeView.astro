@@ -124,6 +124,11 @@ const wildlifeHref = localizePath('/wildlife', locale);
                 </div>
               </dl>
               <p class="wildlife-framing">{ui.wildlifePage.framing}</p>
+              <p class="wildlife-framing">
+                <a href={localizePath('/migration/humans', locale)}>{ui.wildlifePage.journeyCta}</a>
+                {' '}
+                {ui.wildlifePage.journeyNote}
+              </p>
             </div>
           </div>
         </section>

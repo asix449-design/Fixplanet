@@ -1,0 +1,15 @@
+---
+import { isMigrationShelf } from '../../data/migration';
+import { localeStaticPaths, localizePath, resolveLocale } from '../../i18n';
+import MigrationView from '../../views/MigrationView.astro';
+
+export const getStaticPaths = localeStaticPaths;
+
+const locale = resolveLocale(Astro.currentLocale);
+const shelfParam = Astro.url.searchParams.get('shelf');
+if (isMigrationShelf(shelfParam ?? undefined)) {
+  return Astro.redirect(localizePath(`/migration/${shelfParam}`, locale));
+}
+---
+
+<MigrationView hub />

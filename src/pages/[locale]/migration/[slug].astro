@@ -1,0 +1,29 @@
+---
+import {
+  isMigrationShelf,
+  migrationEntryMeta,
+  migrationShelfKeys,
+} from '../../../data/migration';
+import { getMigrationBySlug, otherLocales, resolveLocale } from '../../../i18n';
+import MigrationDetailView from '../../../views/MigrationDetailView.astro';
+import MigrationView from '../../../views/MigrationView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) => [
+    ...migrationShelfKeys.map((slug) => ({ params: { locale, slug } })),
+    ...migrationEntryMeta.map((item) => ({ params: { locale, slug: item.slug } })),
+  ]);
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && !isMigrationShelf(slug) ? getMigrationBySlug(locale, slug) : undefined;
+---
+
+{
+  isMigrationShelf(slug) ? (
+    <MigrationView shelf={slug} />
+  ) : (
+    item && <MigrationDetailView item={item} />
+  )
+}

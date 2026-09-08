@@ -1,16 +1,86 @@
 ---
 import { getUi, resolveLocale } from '../i18n';
 
+interface MapCopy {
+  heroEyebrow: string;
+  mapTitle: string;
+  mapAria: string;
+  mapLead: string;
+  mapAfrica: string;
+  mapOut: string;
+  mapAustralia: string;
+  mapEurasia: string;
+  mapAmericas: string;
+  mapIslands: string;
+  mapLegend: string;
+  mapPinAfrica: string;
+  mapPinOut: string;
+  mapPinAustralia: string;
+  mapPinEurasia: string;
+  mapPinAmericas: string;
+  mapPinIslands: string;
+  mapSources: string;
+  mapBaseCredit: string;
+  mapLossAfrica?: string;
+  mapLossAustralia?: string;
+  mapLossEurasia?: string;
+  mapLossNorth?: string;
+  mapLossSouth?: string;
+}
+
+interface Props {
+  copy?: MapCopy;
+  hideLoss?: boolean;
+  headingId?: string;
+}
+
 const locale = resolveLocale(Astro.currentLocale);
-const ui = getUi(locale).wildlifePage;
+const wildlife = getUi(locale).wildlifePage;
+const {
+  copy = {
+    heroEyebrow: wildlife.heroEyebrow,
+    mapTitle: wildlife.mapTitle,
+    mapAria: wildlife.mapAria,
+    mapLead: wildlife.mapLead,
+    mapAfrica: wildlife.mapAfrica,
+    mapOut: wildlife.mapOut,
+    mapAustralia: wildlife.mapAustralia,
+    mapEurasia: wildlife.mapEurasia,
+    mapAmericas: wildlife.mapAmericas,
+    mapIslands: wildlife.mapIslands,
+    mapLegend: wildlife.mapLegend,
+    mapPinAfrica: wildlife.mapPinAfrica,
+    mapPinOut: wildlife.mapPinOut,
+    mapPinAustralia: wildlife.mapPinAustralia,
+    mapPinEurasia: wildlife.mapPinEurasia,
+    mapPinAmericas: wildlife.mapPinAmericas,
+    mapPinIslands: wildlife.mapPinIslands,
+    mapSources: wildlife.mapSources,
+    mapBaseCredit: wildlife.mapBaseCredit,
+    mapLossAfrica: wildlife.mapLossAfrica,
+    mapLossAustralia: wildlife.mapLossAustralia,
+    mapLossEurasia: wildlife.mapLossEurasia,
+    mapLossNorth: wildlife.mapLossNorth,
+    mapLossSouth: wildlife.mapLossSouth,
+  },
+  hideLoss = false,
+  headingId = 'dispersal-heading',
+} = Astro.props;
+
+const ui = copy;
 
 const steps = [
-  { n: '1', key: 'africa', label: ui.mapAfrica, pin: ui.mapPinAfrica, loss: ui.mapLossAfrica },
-  { n: '2', key: 'out', label: ui.mapOut, pin: ui.mapPinOut, loss: '' },
-  { n: '3', key: 'australia', label: ui.mapAustralia, pin: ui.mapPinAustralia, loss: ui.mapLossAustralia },
-  { n: '4', key: 'eurasia', label: ui.mapEurasia, pin: ui.mapPinEurasia, loss: ui.mapLossEurasia },
-  { n: '5', key: 'americas', label: ui.mapAmericas, pin: ui.mapPinAmericas, loss: `${ui.mapLossNorth} / ${ui.mapLossSouth}` },
-  { n: '6', key: 'islands', label: ui.mapIslands, pin: ui.mapPinIslands, loss: '' },
+  { n: '1', label: ui.mapAfrica, pin: ui.mapPinAfrica, loss: hideLoss ? '' : (ui.mapLossAfrica ?? '') },
+  { n: '2', label: ui.mapOut, pin: ui.mapPinOut, loss: '' },
+  { n: '3', label: ui.mapAustralia, pin: ui.mapPinAustralia, loss: hideLoss ? '' : (ui.mapLossAustralia ?? '') },
+  { n: '4', label: ui.mapEurasia, pin: ui.mapPinEurasia, loss: hideLoss ? '' : (ui.mapLossEurasia ?? '') },
+  {
+    n: '5',
+    label: ui.mapAmericas,
+    pin: ui.mapPinAmericas,
+    loss: hideLoss ? '' : [ui.mapLossNorth, ui.mapLossSouth].filter(Boolean).join(' / '),
+  },
+  { n: '6', label: ui.mapIslands, pin: ui.mapPinIslands, loss: '' },
 ] as const;
 
 /** Pins sit on an equirectangular NASA Blue Marble (viewBox 1000×500 = 2:1). */
@@ -22,11 +92,15 @@ const pins = [
   { n: '5', x: 92, y: 78, labelX: 118, labelY: 58, anchor: 'start', pin: ui.mapPinAmericas },
   { n: '6', x: 980, y: 368, labelX: 932, labelY: 392, anchor: 'end', pin: ui.mapPinIslands },
 ] as const;
+
+const clipId = headingId === 'dispersal-heading' ? 'earth-clip' : 'migration-earth-clip';
+const filterId = headingId === 'dispersal-heading' ? 'pin-halo' : 'migration-pin-halo';
+const markerId = headingId === 'dispersal-heading' ? 'arrow' : 'migration-arrow';
 ---
 
-<section class="dispersal" aria-labelledby="dispersal-heading">
+<section class="dispersal" aria-labelledby={headingId}>
   <div class="eyebrow">{ui.heroEyebrow}</div>
-  <h2 id="dispersal-heading">{ui.mapTitle}</h2>
+  <h2 id={headingId}>{ui.mapTitle}</h2>
   <p class="dispersal-lead">{ui.mapLead}</p>
 
   <div class="dispersal-frame">
@@ -39,18 +113,18 @@ const pins = [
       <title>{ui.mapTitle}</title>
       <desc>{ui.mapLead} {ui.mapSources} {ui.mapBaseCredit}</desc>
       <defs>
-        <clipPath id="earth-clip">
+        <clipPath id={clipId}>
           <rect width="1000" height="500" rx="14"></rect>
         </clipPath>
-        <filter id="pin-halo" x="-40%" y="-40%" width="180%" height="180%">
+        <filter id={filterId} x="-40%" y="-40%" width="180%" height="180%">
           <feDropShadow dx="0" dy="1" stdDeviation="1.4" flood-color="#0a1610" flood-opacity="0.55"></feDropShadow>
         </filter>
-        <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+        <marker id={markerId} markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
           <path d="M0 0 L9 4.5 L0 9 Z" fill="#f4f7f2"></path>
         </marker>
       </defs>
 
-      <g clip-path="url(#earth-clip)">
+      <g clip-path={`url(#${clipId})`}>
         <image
           href="/images/maps/blue-marble.jpg"
           x="0"
@@ -71,15 +145,15 @@ const pins = [
       ></rect>
 
       <g fill="none" stroke="#f4f7f2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
-        <path d="M606 242 C 604 210, 600 184, 598 164" marker-end="url(#arrow)"></path>
-        <path d="M598 164 C 680 190, 780 250, 878 312" marker-end="url(#arrow)"></path>
-        <path d="M598 164 C 570 150, 548 132, 528 118" marker-end="url(#arrow)"></path>
-        <path d="M760 120 C 560 70, 260 48, 92 78" marker-end="url(#arrow)"></path>
+        <path d="M606 242 C 604 210, 600 184, 598 164" marker-end={`url(#${markerId})`}></path>
+        <path d="M598 164 C 680 190, 780 250, 878 312" marker-end={`url(#${markerId})`}></path>
+        <path d="M598 164 C 570 150, 548 132, 528 118" marker-end={`url(#${markerId})`}></path>
+        <path d="M760 120 C 560 70, 260 48, 92 78" marker-end={`url(#${markerId})`}></path>
         <path d="M620 280 C 626 292, 630 300, 634 308" stroke-dasharray="5 6"></path>
-        <path d="M900 330 C 930 348, 958 360, 980 368" stroke-dasharray="5 6" marker-end="url(#arrow)"></path>
+        <path d="M900 330 C 930 348, 958 360, 980 368" stroke-dasharray="5 6" marker-end={`url(#${markerId})`}></path>
       </g>
 
-      <g font-family="Inter, ui-sans-serif, sans-serif" filter="url(#pin-halo)">
+      <g font-family="Inter, ui-sans-serif, sans-serif" filter={`url(#${filterId})`}>
         {
           pins.map((pin) => (
             <g>

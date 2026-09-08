@@ -1997,7 +1997,9 @@ a.map-card:hover {
 }
 
 .theme-wildlife,
-.theme-wildlife-detail {
+.theme-wildlife-detail,
+.theme-migration,
+.theme-migration-detail {
   background: #0c1410;
 }
 
@@ -2049,12 +2051,16 @@ a.map-card:hover {
 }
 
 .theme-wildlife .site-header,
-.theme-wildlife-detail .site-header {
+.theme-wildlife-detail .site-header,
+.theme-migration .site-header,
+.theme-migration-detail .site-header {
   background: rgba(0, 0, 0, 0.82);
 }
 
 .theme-wildlife .site-footer,
 .theme-wildlife-detail .site-footer,
+.theme-migration .site-footer,
+.theme-migration-detail .site-footer,
 .theme-innovations .site-footer,
 .theme-innovations-detail .site-footer,
 .theme-forests .site-footer,
@@ -2068,13 +2074,17 @@ a.map-card:hover {
 }
 
 .theme-wildlife main,
-.theme-wildlife-detail main {
+.theme-wildlife-detail main,
+.theme-migration main,
+.theme-migration-detail main {
   position: relative;
   z-index: 1;
 }
 
 .theme-wildlife .section,
-.theme-wildlife .wildlife-hero {
+.theme-wildlife .wildlife-hero,
+.theme-migration .section,
+.theme-migration .wildlife-hero {
   position: relative;
   z-index: 1;
 }
@@ -3355,6 +3365,50 @@ a.map-card:hover {
   background: rgba(255, 255, 255, 0.05);
   border: 1px dashed #d2c8a8;
   color: #e8dcc0;
+}
+
+.theme-migration .section-backdrop img {
+  object-position: 50% 48%;
+  filter: blur(5px) saturate(1.05) brightness(0.48);
+}
+
+.migration-hub-lede {
+  max-width: 46rem;
+  margin: 0.35rem 0 0.4rem;
+}
+
+.migration-hub-lede p {
+  color: #e4eee6;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.migration-choose {
+  margin: 1.35rem 0 0.85rem;
+  font-size: 0.78rem;
+}
+
+.migration-human-section {
+  margin: 1.35rem 0;
+}
+
+.migration-human-section h3 {
+  margin: 0 0 0.45rem;
+  color: var(--cream);
+}
+
+.theme-migration-detail .wildlife-detail,
+.theme-migration-detail .wildlife-prose {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-migration-detail .wildlife-prose {
+  background: rgba(8, 8, 8, 0.88);
+  border: 1px solid rgba(192, 255, 255, 0.14);
+  border-radius: var(--radius);
+  padding: 0.4rem 1.2rem 1.2rem;
+  box-shadow: var(--shadow);
 }
 
 @media (prefers-reduced-motion: reduce) {

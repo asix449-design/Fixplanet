@@ -86,7 +86,8 @@ function commons(
  * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts`.
  * 3. Drop a photo in `public/images/wildlife/{file}` (Wikimedia/PD preferred).
  * 4. `npm run build`.
- * Homo sapiens copy is not a species card — it lives on the `/wildlife/homo-sapiens` hub tile.
+ * Homo sapiens copy is not a species card — it lives on the `/wildlife/homo-sapiens`
+ * shelf (species frame). The Late Pleistocene journey is told on `/migration/humans`.
  */
 export const speciesMeta: SpeciesMeta[] = [
   {
