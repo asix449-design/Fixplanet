@@ -1,14 +1,22 @@
 ---
 import { HISTORY_OF_BORDERS_SLUG } from '../../data/border-history';
-import { isMapCategory, mapCategoryKeys, mapMeta } from '../../data/maps';
-import { getMapBySlug, resolveLocale } from '../../i18n';
+import {
+  isMapCategory,
+  mapCategoryKeys,
+  mapMeta,
+  mapShelfRedirect,
+  retiredMapPaths,
+} from '../../data/maps';
+import { RELIGION_ATLAS_SLUG } from '../../data/religion-history';
+import { getMapBySlug, localizePath, resolveLocale } from '../../i18n';
 import HistoryOfBordersView from '../../views/HistoryOfBordersView.astro';
 import MapDetailView from '../../views/MapDetailView.astro';
 import MapsView from '../../views/MapsView.astro';
+import ReligionHistoryView from '../../views/ReligionHistoryView.astro';
 
 export function getStaticPaths() {
   return [
-    { params: { slug: 'all' } },
+    ...Object.keys(retiredMapPaths).map((slug) => ({ params: { slug } })),
     ...mapCategoryKeys.map((slug) => ({ params: { slug } })),
     ...mapMeta.map((item) => ({ params: { slug: item.slug } })),
   ];
@@ -16,14 +24,18 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const locale = resolveLocale(Astro.currentLocale);
+const retired = mapShelfRedirect(slug);
+if (retired && slug && slug in retiredMapPaths) {
+  return Astro.redirect(localizePath(retired, locale), 301);
+}
 const map = slug && !isMapCategory(slug) ? getMapBySlug(locale, slug) : undefined;
 ---
 
 {
-  slug === 'all' ? (
-    <MapsView category="all" />
-  ) : slug === HISTORY_OF_BORDERS_SLUG ? (
+  slug === HISTORY_OF_BORDERS_SLUG ? (
     <HistoryOfBordersView />
+  ) : slug === RELIGION_ATLAS_SLUG ? (
+    <ReligionHistoryView />
   ) : isMapCategory(slug) ? (
     <MapsView category={slug} />
   ) : (

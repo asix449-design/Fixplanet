@@ -7,6 +7,8 @@ interface Props {
   title: string;
   text: string;
   badge?: string;
+  badgeTone?: 'soon' | 'atlas';
+  lead?: boolean;
   active?: boolean;
   dataArea?: string;
   dataStatus?: string;
@@ -20,6 +22,8 @@ const {
   title,
   text,
   badge,
+  badgeTone = 'soon',
+  lead = false,
   active = false,
   dataArea,
   dataStatus,
@@ -29,7 +33,7 @@ const {
 ---
 
 <a
-  class:list={['hub-tile', { 'is-active': active }]}
+  class:list={['hub-tile', { 'is-active': active, 'is-lead': lead }]}
   href={href}
   aria-current={active ? 'page' : undefined}
   {...(dataArea ? { 'data-area': dataArea } : {})}
@@ -41,7 +45,7 @@ const {
     <div class="hub-icon" aria-hidden="true">
       <HubIcon name={icon} />
     </div>
-    {badge && <span class="hub-soon">{badge}</span>}
+    {badge && <span class={badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon'}>{badge}</span>}
   </div>
   <h2>{title}</h2>
   <p>{text}</p>

@@ -1,14 +1,14 @@
 ---
-import { isMapCategory } from '../../data/maps';
+import { mapShelfRedirect } from '../../data/maps';
 import { localeStaticPaths, localizePath, resolveLocale } from '../../i18n';
 import MapsView from '../../views/MapsView.astro';
 
 export const getStaticPaths = localeStaticPaths;
 
 const locale = resolveLocale(Astro.currentLocale);
-const categoryParam = Astro.url.searchParams.get('category');
-if (categoryParam === 'all' || isMapCategory(categoryParam ?? undefined)) {
-  return Astro.redirect(localizePath(`/maps/${categoryParam}`, locale));
+const dest = mapShelfRedirect(Astro.url.searchParams.get('category'));
+if (dest) {
+  return Astro.redirect(localizePath(dest, locale), 301);
 }
 ---
 
