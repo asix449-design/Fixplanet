@@ -7,6 +7,7 @@ import {
   forestBackdrop,
   forestFrameSrc,
   forestHub,
+  forestHubBackdrop,
   forestPanelPath,
   gfw2024Url,
   gfw2025Url,
@@ -45,7 +46,9 @@ const reconstructionFrames = getForestFrames(locale, 'reconstruction');
 const stats = getForestStats(locale);
 const heroStats = getForestHeroStats(locale);
 const longViewSrc = forestFrameSrc(longViewImage.file);
-const backdropSrc = forestFrameSrc(forestBackdrop.file);
+const backdropSrc = forestFrameSrc(hub ? forestHubBackdrop.file : forestBackdrop.file);
+const backdropWidth = hub ? forestHubBackdrop.width : 1280;
+const backdropHeight = hub ? forestHubBackdrop.height : 960;
 
 const initialSatellite = satelliteFrames[satelliteFrames.length - 1];
 const scenarioKeys = ['continued', 'slower', 'restore'] as const;
@@ -62,7 +65,7 @@ const pageTitle = activePanel
   theme="forests"
 >
   <div class:list={['section-backdrop', { 'forests-hub-backdrop': hub }]} aria-hidden="true">
-    <img src={backdropSrc} alt="" width="1280" height="960" />
+    <img src={backdropSrc} alt="" width={backdropWidth} height={backdropHeight} />
     <div class:list={['section-backdrop-scrim', hub ? 'forests-hub-scrim' : 'forests-scrim']}></div>
   </div>
 

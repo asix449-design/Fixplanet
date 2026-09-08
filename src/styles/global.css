@@ -2440,24 +2440,24 @@ a.map-card:hover {
     linear-gradient(90deg, rgba(0, 10, 4, 0.28) 0%, transparent 48%);
 }
 
-/* Hub: keep the redwood photo readable; stats sit lightly on the trees. */
+/* Hub: sunlit pine / god-rays plate. Keep trees visible; hold type on the bright core. */
 .theme-forests .forests-hub-backdrop img {
-  object-position: 48% 38%;
-  filter: saturate(1.18) brightness(0.78) contrast(1.04);
-  transform: scale(1.03);
+  object-position: 62% 68%;
+  filter: saturate(1.18) brightness(0.95) contrast(1.04);
+  transform: scale(1.06);
 }
 
 .forests-hub-scrim {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 6, 2, 0.42) 0%,
-      rgba(0, 8, 3, 0.18) 22%,
-      rgba(0, 8, 3, 0.1) 46%,
-      rgba(0, 6, 2, 0.28) 72%,
-      rgba(0, 4, 2, 0.62) 100%
+      rgba(0, 4, 2, 0.38) 0%,
+      rgba(0, 6, 3, 0.12) 20%,
+      rgba(0, 4, 2, 0.1) 44%,
+      rgba(0, 4, 2, 0.32) 74%,
+      rgba(0, 2, 1, 0.66) 100%
     ),
-    radial-gradient(ellipse 70% 58% at 50% 42%, rgba(0, 0, 0, 0.16), transparent 72%);
+    radial-gradient(ellipse 72% 48% at 50% 34%, rgba(0, 0, 0, 0.18), transparent 72%);
 }
 
 .theme-forests:has(.forests-hero) .site-header {
@@ -2513,16 +2513,16 @@ a.map-card:hover {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.7);
 }
 
 .forests-hero-note {
   max-width: 38rem;
   margin: 0 0 1.7rem;
-  color: rgba(244, 247, 242, 0.86);
+  color: rgba(244, 247, 242, 0.92);
   font-size: 0.95rem;
   line-height: 1.5;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
 }
 
 .forests-hero-grid {
@@ -2535,11 +2535,11 @@ a.map-card:hover {
 
 .forests-hero-stat {
   padding: 1.15rem 0.85rem 1.2rem;
-  border: 1px solid rgba(192, 255, 0, 0.32);
+  border: 1px solid rgba(192, 255, 0, 0.38);
   border-radius: var(--radius);
-  background: rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .forests-hero-value {
@@ -2550,7 +2550,7 @@ a.map-card:hover {
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 0.95;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
 }
 
 .forests-hero-value span {
@@ -2593,7 +2593,7 @@ a.map-card:hover {
 }
 
 .forests-hero .hub-tile {
-  background: rgba(0, 0, 0, 0.34);
+  background: rgba(0, 0, 0, 0.42);
   min-height: 164px;
 }
 

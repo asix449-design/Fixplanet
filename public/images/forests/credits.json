@@ -6,7 +6,16 @@
     "url": "https://commons.wikimedia.org/wiki/File:Redwood_National_Park,_fog_in_the_forest.jpg",
     "license": "CC BY-SA 2.0",
     "kind": "hosted-original",
-    "note": "Forests section backdrop. Fogged redwood grove, not a map."
+    "note": "Forests shelf-page backdrop. Fogged redwood grove, not a map."
+  },
+  {
+    "file": "forests-hub-bg.jpg",
+    "title": "Sunlit pine forest with fog and crepuscular rays, Zlatoust, Chelyabinsk Oblast, Russia",
+    "source": "Quarkgluonplasma / Wikimedia Commons (from Panoramio)",
+    "url": "https://commons.wikimedia.org/wiki/File:G._Zlatoust,_Chelyabinskaya_oblast%27,_Russia_-_panoramio_(45).jpg",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Forests hub hero only. Founder reference was a Pinterest pin of this sunlit-pine / god-rays composition; this is the license-safe Commons original. Shelf pages keep the redwood backdrop."
   },
   {
     "file": "ndvi-2001.jpg",
