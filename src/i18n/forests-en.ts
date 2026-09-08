@@ -39,7 +39,7 @@ export const en: ForestsPage = {
       'Five plates: vegetation at the last glacial maximum, a map of biomes under a recent climate, and Ellis anthromes — human-shaped biomes — for 1700, 1900, and 2000.',
     ],
     numbers: [
-      'A few published figures, each with a named source and year. FAO forest is land use. Hansen / Global Forest Watch is 30-metre canopy. Crowther 2015 is a count of trees. They are different measurements and should not be added into one total.',
+      'Published figures, each with a named source and year. FAO forest is land use. Hansen / Global Forest Watch is 30-metre canopy. Intact Forest Landscapes are a mapped wilderness class. Crowther 2015 is a count of trees. They are different measurements and should not be added into one total.',
     ],
     outlook: [
       'Wild woodland has shrunk over the Holocene as cropland, pasture, and settlements grew. After 2000 the satellite record is tighter. Tropical primary conversion is not the same as boreal fire, and neither is a calendar date when “the forests end.”',
@@ -68,9 +68,9 @@ export const en: ForestsPage = {
     'NDVI is not forest area and not primary forest. Crops and wet years also look green. July favors the northern summer, so year-to-year change at this resolution is small. The last glacial maximum is about 18,000 years ago, older and colder than 10,000 BCE. The biome plate is a recent-climate analogue; the mid-Holocene Sahara was often greener than it shows.',
   distinguishTitle: 'Boreal forest is not tropical forest. Primary forest is not a plantation.',
   distinguish:
-    'About 45 percent of FAO forest is tropical; the rest is mostly boreal and temperate (FRA 2025). Boreal loss is often fire, insects, or logging that can regrow as forest in FAO’s land-use sense. Tropical primary loss is usually conversion — the old forest does not come back as the same ecosystem if a soy field or oil-palm stand replaces it. Secondary forest and plantations can raise “forest area” while primary area falls. FAO net loss (4.12 million ha/year, 2015–2025) subtracts expansion from deforestation (10.9 million ha/year). GFW’s 2024 tropical primary figure (6.7 million ha) and 2025 drop (4.3 million ha) sit on a different definition. Neither series says “all forests vanish on a calendar date.”',
+    'About 45 percent of FAO forest is tropical; the rest is mostly boreal and temperate (FRA 2025). Boreal loss is often fire, insects, or logging that can regrow as forest in FAO’s land-use sense. Tropical primary loss is usually conversion — the old forest does not come back as the same ecosystem if a soy field or oil-palm stand replaces it. Secondary forest and plantations can raise “forest area” while primary area falls: planted forest is 312 million ha (8 percent of FAO forest), not a substitute for the 1.18 billion ha of primary. FAO net loss (4.12 million ha/year, 2015–2025) subtracts expansion from deforestation (10.9 million ha/year); that is not a global degradation hectare. Intact Forest Landscapes (1,086 million ha in 2025) are a different map from FAO primary. GFW’s 2024 tropical primary figure (6.7 million ha) and 2025 drop (4.3 million ha) sit on a third definition. Neither series says “all forests vanish on a calendar date.”',
   numbersNote:
-    'Copied from the cited publications, with vintage. FAO forest area is not Hansen canopy; Crowther 2015 is a tree count, not hectares.',
+    'Copied from the cited publications, with vintage. FAO forest area is not Hansen canopy; IFL is not FAO primary; Crowther 2015 is a tree count, not hectares.',
   trendTitle: 'Long view, then the years we can measure',
   trendLead:
     'The Ellis 12K chart reconstructs anthromes — wild, cultured, and intensive land — from 10,000 BCE to 2017. It is not FAO hectares. After 2000 the satellite figures are tighter.',
@@ -123,6 +123,9 @@ export const en: ForestsPage = {
     millionHa: 'million ha',
     millionHaYear: 'million ha / year',
     percent: '%',
+    ofLand: '% of land',
+    gigatonnesC: 'Gt C',
+    trillionTrees: 'trillion trees',
   },
   frames: {
     'sat-2001': {
@@ -225,7 +228,19 @@ export const en: ForestsPage = {
   stats: {
     remaining: {
       label: 'Forest remaining (FAO)',
-      text: '4.14 billion ha — 32 percent of land, about 0.50 ha per person. Nearly half of that forest is tropical. Land-use forest, not Hansen canopy.',
+      text: '4.14 billion ha — about 0.50 ha per person. Nearly half of that forest is tropical. Land-use forest, not Hansen canopy.',
+    },
+    landShare: {
+      label: 'Share of land (FAO)',
+      text: '32 percent of the world’s land is FAO forest in 2025. Same land-use class as the 4.14 billion ha stock, not tree-cover percent.',
+    },
+    plantedForest: {
+      label: 'Planted forest (FAO)',
+      text: '312 million ha — 8 percent of FAO forest in 2025. Up 120 million ha since 1990; the rate of increase slowed in the last decade. Plantations and planted stands, not primary forest.',
+    },
+    carbonStock: {
+      label: 'Forest carbon stock (FAO)',
+      text: '714 gigatonnes of carbon across all pools (172 t/ha): soil 46 percent, living biomass 44 percent, litter and deadwood 10 percent (FRA 2025).',
     },
     deforestationSince1990: {
       label: 'Deforestation since 1990',
@@ -237,7 +252,7 @@ export const en: ForestsPage = {
     },
     grossDeforestation: {
       label: 'Gross deforestation rate',
-      text: '10.9 million ha/year in 2015–2025, down from 17.6 million ha/year in the 1990s. Expansion also slowed (6.78 million ha/year in the latest decade).',
+      text: '10.9 million ha/year in 2015–2025, down from 17.6 million ha/year in the 1990s. Expansion also slowed (6.78 million ha/year in the latest decade). Deforestation is conversion of forest land use, not a global degradation hectare.',
     },
     primaryRemaining: {
       label: 'Primary forest (FAO)',
@@ -251,9 +266,17 @@ export const en: ForestsPage = {
       label: 'Tropical primary lost, 2025',
       text: '4.3 million ha — 36 percent below 2024, still about 46 percent above a decade earlier (WRI / UMD, 29 April 2026). Global tree-cover loss about 25.5 million ha; 42 percent fire.',
     },
+    treeCount: {
+      label: 'Trees living (estimate)',
+      text: 'Crowther et al. 2015, Nature: about 3.04 trillion trees now. A modelled stem count from ground plots and remote sensing — not FAO hectares, and not a later species-richness paper.',
+    },
     holoceneTrees: {
       label: 'Trees since agriculture (estimate)',
-      text: 'Crowther et al. 2015: about 3.04 trillion trees now, and roughly 46 percent fewer than a UNEP historic-cover projection since civilization/agriculture. Tree count, not FAO hectares. Coarse on purpose.',
+      text: 'The same Crowther et al. 2015 paper: roughly 46 percent fewer trees than a UNEP historic-cover projection since civilization/agriculture. Coarse on purpose; still a tree count, not hectares.',
+    },
+    intactLandscapes: {
+      label: 'Intact forest landscapes',
+      text: '1,086 million ha remaining in 2025 — 8.4 percent of ice-free land (Potapov / IFL Mapping Team). Patches ≥ ~50,000 ha without industrial footprint. Not FAO primary forest and not GFW tropical primary.',
     },
   },
 };

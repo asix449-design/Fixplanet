@@ -33,10 +33,25 @@ export type OceanFrameMeta = {
   vintage: string;
 };
 
+export type OceanStatUnit =
+  | 'percent'
+  | 'pH'
+  | 'millionTonnes'
+  | 'trillion'
+  | 'sites'
+  | 'ohc'
+  | 'earthSurface'
+  | 'mmYear'
+  | 'oxygen'
+  | 'stocks'
+  | 'coral'
+  | 'mpa'
+  | 'millionHa';
+
 export type OceanStatMeta = {
   id: string;
   value: string;
-  unitKey: 'percent' | 'pH' | 'millionTonnes' | 'trillion' | 'sites' | 'ohc';
+  unitKey: OceanStatUnit;
   vintage: string;
   sourceShort: string;
   sourceUrl: string;
@@ -318,10 +333,26 @@ export const pollutionStills: OceanPollutionMeta[] = [
 
 export const oceanStats: OceanStatMeta[] = [
   {
+    id: 'oceanCover',
+    value: '~71',
+    unitKey: 'earthSurface',
+    vintage: 'IPCC SROCC 2019',
+    sourceShort: 'IPCC SROCC',
+    sourceUrl: 'https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/',
+  },
+  {
     id: 'heatShare',
     value: '~90',
     unitKey: 'percent',
     vintage: 'IPCC AR6 2021',
+    sourceShort: 'IPCC AR6 WG1',
+    sourceUrl: 'https://www.ipcc.ch/report/ar6/wg1/',
+  },
+  {
+    id: 'seaLevel',
+    value: '3.7',
+    unitKey: 'mmYear',
+    vintage: '2006–2018',
     sourceShort: 'IPCC AR6 WG1',
     sourceUrl: 'https://www.ipcc.ch/report/ar6/wg1/',
   },
@@ -342,6 +373,14 @@ export const oceanStats: OceanStatMeta[] = [
     sourceUrl: 'https://www.pmel.noaa.gov/co2/story/Ocean+Acidification',
   },
   {
+    id: 'oxygenLoss',
+    value: '0.5–3.3',
+    unitKey: 'oxygen',
+    vintage: '1970–2010',
+    sourceShort: 'IPCC SROCC',
+    sourceUrl: 'https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/',
+  },
+  {
     id: 'plasticLand',
     value: '4.8–12.7',
     unitKey: 'millionTonnes',
@@ -358,12 +397,46 @@ export const oceanStats: OceanStatMeta[] = [
     sourceUrl: 'https://doi.org/10.1371/journal.pone.0111913',
   },
   {
+    id: 'overfished',
+    value: '35.5',
+    unitKey: 'stocks',
+    vintage: 'FAO 2025 (2021 status)',
+    sourceShort: 'FAO marine stocks 2025',
+    sourceUrl:
+      'https://www.fao.org/newsroom/detail/fao-releases-the-most-detailed-global-assessment-of-marine-fish-stocks-to-date/en',
+  },
+  {
+    id: 'coralLost',
+    value: '~14',
+    unitKey: 'coral',
+    vintage: '2009–2018',
+    sourceShort: 'GCRMN 2020',
+    sourceUrl: 'https://doi.org/10.59387/wotj9184',
+  },
+  {
     id: 'deadZones',
     value: '>500',
     unitKey: 'sites',
     vintage: 'Breitburg 2018',
     sourceShort: 'Breitburg et al. 2018',
     sourceUrl: 'https://doi.org/10.1126/science.aam7240',
+  },
+  {
+    id: 'mpaCover',
+    value: '8.4',
+    unitKey: 'mpa',
+    vintage: 'Protected Planet 2024',
+    sourceShort: 'Protected Planet Report 2024',
+    sourceUrl: 'https://digitalreport.protectedplanet.net/',
+  },
+  {
+    id: 'mangroveArea',
+    value: '15.9',
+    unitKey: 'millionHa',
+    vintage: 'FRA 2025',
+    sourceShort: 'FAO FRA 2025',
+    sourceUrl:
+      'https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/forest-characteristics.html',
   },
 ];
 
@@ -391,10 +464,14 @@ export const oceanHubBackdrop = {
  * published set stay on `/oceans/numbers`. Ids must exist in `oceanStats`.
  */
 export const oceanHeroStatIds = [
+  'oceanCover',
   'heatShare',
+  'seaLevel',
   'phDrop',
+  'oxygenLoss',
   'plasticLand',
-  'deadZones',
+  'overfished',
+  'coralLost',
 ] as const satisfies ReadonlyArray<(typeof oceanStats)[number]['id']>;
 
 export const worldviewSstUrl =
@@ -413,8 +490,15 @@ export const noaaGarbagePatchesUrl =
 export const nasaOceanColorUrl = 'https://oceancolor.gsfc.nasa.gov/';
 export const woa2023Url = 'https://www.ncei.noaa.gov/products/world-ocean-atlas';
 export const ipccAr6Url = 'https://www.ipcc.ch/report/ar6/wg1/';
+export const ipccSroccSpmUrl = 'https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/';
 export const cheng2024Url = 'https://doi.org/10.1007/s00376-024-3378-5';
 export const breitburg2018Url = 'https://doi.org/10.1126/science.aam7240';
+export const faoMarineStocks2025Url =
+  'https://www.fao.org/newsroom/detail/fao-releases-the-most-detailed-global-assessment-of-marine-fish-stocks-to-date/en';
+export const gcrmn2020Url = 'https://doi.org/10.59387/wotj9184';
+export const protectedPlanet2024Url = 'https://digitalreport.protectedplanet.net/';
+export const faoFra2025MangroveUrl =
+  'https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/FRA-2025/forest-characteristics.html';
 
 export function isOceanPanel(value: string | undefined): value is OceanPanel {
   return !!value && (oceanPanelKeys as readonly string[]).includes(value);

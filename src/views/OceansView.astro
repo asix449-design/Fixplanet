@@ -6,7 +6,10 @@ import {
   breitburg2018Url,
   cheng2024Url,
   copernicusMarineUrl,
+  faoMarineStocks2025Url,
+  gcrmn2020Url,
   ipccAr6Url,
+  ipccSroccSpmUrl,
   isOceanPanel,
   nasaOceanColorUrl,
   noaaGarbagePatchesUrl,
@@ -17,6 +20,8 @@ import {
   oceanHubBackdrop,
   oceanPanelPath,
   oscarEsrUrl,
+  protectedPlanet2024Url,
+  faoFra2025MangroveUrl,
   type OceanPanel,
   woa2023Url,
   worldviewChlUrl,
@@ -474,9 +479,19 @@ const pageTitle = activePanel
           <h3>{page.distinguishTitle}</h3>
           <p>{page.distinguish}</p>
           <p class="wildlife-sources">
+            IPCC SROCC · <a href={ipccSroccSpmUrl} rel="noopener noreferrer">{ipccSroccSpmUrl}</a>
+            <br />
             IPCC AR6 · <a href={ipccAr6Url} rel="noopener noreferrer">{ipccAr6Url}</a>
             <br />
             Cheng et al. 2024 · <a href={cheng2024Url} rel="noopener noreferrer">{cheng2024Url}</a>
+            <br />
+            FAO marine stocks 2025 · <a href={faoMarineStocks2025Url} rel="noopener noreferrer">{faoMarineStocks2025Url}</a>
+            <br />
+            GCRMN 2020 · <a href={gcrmn2020Url} rel="noopener noreferrer">{gcrmn2020Url}</a>
+            <br />
+            Protected Planet Report 2024 · <a href={protectedPlanet2024Url} rel="noopener noreferrer">{protectedPlanet2024Url}</a>
+            <br />
+            FAO FRA 2025 mangroves · <a href={faoFra2025MangroveUrl} rel="noopener noreferrer">{faoFra2025MangroveUrl}</a>
             <br />
             Breitburg et al. 2018 · <a href={breitburg2018Url} rel="noopener noreferrer">{breitburg2018Url}</a>
           </p>

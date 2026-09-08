@@ -51,7 +51,7 @@ export const pl: OceansPage = {
       'Jednej mapy na to wszystko nie ma. Poniżej osobne zbiory. Pierwszy odpowiada na zwykłe pytanie: wielkich podzwrotnikowych plam śmieci jest pięć — strefy wyższego stężenia plastiku w wielkich wirach, nie pływające wyspy. Potem bliższy model północnego Pacyfiku, jeden zaobserwowany wyciek ropy, zestawienie chlorofilu-a i spis przybrzeżnych martwych stref.',
     ],
     numbers: [
-      'Kilka opublikowanych wielkości, każda z nazwanego źródła. Zawartość ciepła oceanu, kwasowość powierzchni, plastik i hipoksja to różne pomiary; nie dodaje się ich do jednego wskaźnika.',
+      'Opublikowane wielkości, każda z nazwanego źródła. Powierzchnia oceanu, ciepło, wzrost poziomu morza, kwasowość, tlen, plastik, połowy, korale, hipoksja i obszary chronione to różne pomiary; nie dodaje się ich do jednego wskaźnika.',
     ],
   },
   honestyCurrents:
@@ -93,10 +93,10 @@ export const pl: OceansPage = {
   smapNote:
     'Misja SMAP kontynuuje mikrofalowe pomiary zasolenia powierzchni po Aquariusie. World Ocean Atlas 2023 to osobna klimatologia in situ: butelki, CTD i pływaki, uśrednienie z wielu lat.',
   numbersNote:
-    'Skopiowane z cytowanych prac, z datą. Zawartość ciepła to nie SST; pH to chemia, nie temperatura; przepływ plastiku to nie zapas w wirze.',
+    'Skopiowane z cytowanych prac, z datą. Zawartość ciepła to nie SST; pH to chemia, nie temperatura; przepływ plastiku to nie zapas w wirze; wyznaczony MPA to nie w pełni chroniony ocean.',
   distinguishTitle: 'Co właściwie mierzą te liczby',
   distinguish:
-    'IPCC AR6: ocean przyjął około 90 procent nadmiaru ciepła w systemie klimatycznym. Cheng et al. 2024: zawartość ciepła 0–2000 m w 2023 (i aktualizacja 2024) na szczycie instrumentalnego szeregu — zapas ciepła w słupie wody, nie mapa SST powyżej. Powierzchniowe pH spadło o ok. 0,1 od ~1750: to wzrost stężenia jonów wodorowych o mniej więcej 26–30 procent (IPCC AR6; NOAA PMEL), chemia węglanowa. Jambeck et al. 2015: 4,8–12,7 mln ton plastiku z lądu do oceanu w 2010 — przepływ, nie masa w Wielkiej Pacyficznej Plamie Śmieci. Eriksen et al. 2014: co najmniej 5,25 bln pływających cząstek. Breitburg et al. 2018: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji i rozszerzające się strefy minimum tlenu otwartego oceanu (~4,5 mln km²).',
+    'IPCC SROCC: ocean pokrywa około 71 procent powierzchni Ziemi. IPCC AR6: przyjął około 90 procent nadmiaru ciepła w systemie klimatycznym; średni poziom morza rósł o 3,7 mm/rok w 2006–2018. Cheng et al. 2024: zawartość ciepła 0–2000 m w 2023 (i aktualizacja 2024) na szczycie instrumentalnego szeregu — zapas ciepła w słupie wody, nie mapa SST powyżej. Powierzchniowe pH spadło o ok. 0,1 od ~1750 (IPCC AR6; NOAA PMEL). Tlen otwartego oceanu w górnych 1000 m spadł o 0,5–3,3 procent w 1970–2010 (IPCC SROCC) — związane z, ale nie to samo co przybrzeżne miejsca hipoksji (Breitburg et al. 2018: >500). Jambeck et al. 2015: 4,8–12,7 mln ton plastiku z lądu do oceanu w 2010 — przepływ, nie masa w wirze. FAO 2025: 35,5 procent ocenionych stad morskich było przełowionych (stan 2021). GCRMN 2020: ok. 14 procent twardych korali ubyło z raf w 2009–2018. Protected Planet Report 2024: 8,4 procent morskich i przybrzeżnych obszarów w obszarach chronionych i OECM — pokrycie wyznaczone, nie udział w pełni chronionych wód.',
   pollutionKinds: {
     patches: {
       title: 'Pięć plam śmieci',
@@ -147,6 +147,13 @@ export const pl: OceansPage = {
     trillion: 'bln cząstek',
     sites: 'miejsc przybrzeżnych',
     ohc: 'rekord OHC 0–2000 m',
+    earthSurface: '% powierzchni Ziemi',
+    mmYear: 'mm / rok',
+    oxygen: '% O₂, górne 1000 m',
+    stocks: '% stad',
+    coral: '% korali, 2009–18',
+    mpa: '% oceanu, 2024',
+    millionHa: 'mln ha',
   },
   frames: {
     'sst-2003': {
@@ -251,9 +258,17 @@ export const pl: OceansPage = {
     },
   },
   stats: {
+    oceanCover: {
+      label: 'Ocean powierzchni Ziemi',
+      text: 'Około 71 procent powierzchni Ziemi to ocean (IPCC SROCC). Udział powierzchni, nie ciepło, kwasowość ani zasób zanieczyszczenia.',
+    },
     heatShare: {
       label: 'Nadmiar ciepła w oceanie',
       text: 'Około 90 procent nadmiaru ciepła w systemie klimatycznym jest magazynowane w oceanie (IPCC AR6 WG1). To zapas energii w słupie wody.',
+    },
+    seaLevel: {
+      label: 'Tempo wzrostu poziomu morza',
+      text: 'Średni poziom morza rósł o 3,7 [3,2–4,2] mm/rok w 2006–2018, wobec 2,3 [1,6–3,1] mm/rok w 1971–2018 (IPCC AR6 WG1). Tempo, nie jeden dzień mareografu.',
     },
     ohcRecord: {
       label: 'Zawartość ciepła oceanu, niedawny szczyt',
@@ -263,6 +278,10 @@ export const pl: OceansPage = {
       label: 'Spadek powierzchniowego pH',
       text: 'pH powierzchni otwartego oceanu spadło o ok. 0,1 od ~1750 — wzrost stężenia jonów wodorowych o mniej więcej 26–30 procent (IPCC AR6; NOAA PMEL). Chemia węglanowa, nie temperatura.',
     },
+    oxygenLoss: {
+      label: 'Ubytek tlenu otwartego oceanu',
+      text: 'Otwarty ocean stracił 0,5–3,3 procent rozpuszczonego tlenu w górnych 1000 m w 1970–2010; strefy minimum tlenu rozszerzyły się o 3–8 procent (IPCC SROCC). Deoksygenacja otwartego oceanu, nie liczba przybrzeżnych martwych stref.',
+    },
     plasticLand: {
       label: 'Plastik z lądu do oceanu',
       text: 'Jambeck et al. 2015, Science: 4,8–12,7 mln ton metrycznych odpadów plastikowych trafiło do oceanu z lądu w 2010. Szacunek przepływu z 2010, nie masa w Wielkiej Pacyficznej Plamie Śmieci.',
@@ -271,9 +290,25 @@ export const pl: OceansPage = {
       label: 'Pływające cząstki plastiku',
       text: 'Eriksen et al. 2014: co najmniej 5,25 bln cząstek (268 940 ton) na powierzchni, z pomiarów w pięciu wirach podzwrotnikowych. Szacunek zasobu z zaciągów sieci i modelu.',
     },
+    overfished: {
+      label: 'Przełowione stada morskie',
+      text: '35,5 procent ocenionych stad rybołówstwa morskiego sklasyfikowano jako przełowione; 64,5 procent było w biologicznie zrównoważonych granicach (przegląd FAO 2025; stan 2021). Udział stad, nie połowu — 77,2 procent wyładunków wciąż pochodziło ze zrównoważonych stad.',
+    },
+    coralLost: {
+      label: 'Twardy koral utracony, 2009–18',
+      text: 'Około 14 procent światowego twardego korala ubyło z raf w 2009–2018 (GCRMN, Status of Coral Reefs of the World: 2020). Żywe pokrycie, nie powierzchnia mapy raf i nie projekcja IPCC na 1,5 °C.',
+    },
     deadZones: {
       label: 'Przybrzeżne miejsca hipoksji',
       text: 'Breitburg et al. 2018, Science: ponad 500 przybrzeżnych miejsc antropogenicznej hipoksji plus rozszerzające się strefy minimum tlenu otwartego oceanu (~4,5 mln km²). Wcześniejsze zestawienie Diaza miało już ponad 400.',
+    },
+    mpaCover: {
+      label: 'Morskie obszary chronione',
+      text: '8,4 procent morskich i przybrzeżnych obszarów (8,44 procent na rysunku) było w obszarach chronionych i OECM w Protected Planet Report 2024. Pokrycie wyznaczone ku 30×30, nie w pełni chroniony ocean. Żywe sumy WDPA się ruszają; tu zostaje zrzut 2024.',
+    },
+    mangroveArea: {
+      label: 'Mangrowce, które zostały (FAO)',
+      text: '15,9 mln ha lasu mangrowego w 2025 (FAO FRA 2025). Globalna powierzchnia netto wzrosła w 2015–2025; to nie twierdzenie, że każde wybrzeże mangrowe się odbudowuje. Błękitny węgiel, liczony jako leśne użytkowanie ziemi.',
     },
   },
 };
