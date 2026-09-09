@@ -285,6 +285,26 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
         'https://doi.org/10.1038/35015746',
       ),
       cite(
+        'Sommer & Zachos, Journal of Biogeography, 2009 — red deer and roe deer: LGM southern restriction, GI-1 / Bølling–Allerød push into Central Europe, northern lowlands in the early Holocene',
+        'https://doi.org/10.1111/j.1365-2699.2009.02187.x',
+      ),
+      cite(
+        'Loog et al., Molecular Ecology, 2020 — modern wolf mitochondrial diversity modeled as a late-Pleistocene expansion from Beringia or nearby Northeast Asia',
+        'https://doi.org/10.1111/mec.15329',
+      ),
+      cite(
+        'Payette et al., PNAS, 2022 — eastern North America macrofossils: black spruce ~25 km/century, jack pine ~19 km/century; jack-pine spread stopped ~3 ka',
+        'https://doi.org/10.1073/pnas.2210496119',
+      ),
+      cite(
+        'Alsos et al., Science Advances, 2022 — Fennoscandian plant sedaDNA; trait and functional diversity stabilize around 8 cal ka BP',
+        'https://doi.org/10.1126/sciadv.abo7434',
+      ),
+      cite(
+        'Boilard et al., Science Advances, 2024 — Nygrotta, Arctic Norway: ~9.5 ka freshwater fish, bear, lemming, hare; later ~5.8 ka layer in that cave',
+        'https://doi.org/10.1126/sciadv.adk3032',
+      ),
+      cite(
         'Heintzman et al., PNAS, 2016 — ice-free corridor chronology from bison (also used on the Beringia card)',
         'https://doi.org/10.1073/pnas.1601077113',
       ),
@@ -369,6 +389,10 @@ export const migrationEntryMeta: MigrationEntryMeta[] = [
       cite(
         'Gu et al., Nature, 2021 — Eurasian Arctic peregrine flyways formed as breeding grounds shifted from the LGM into the Holocene',
         'https://doi.org/10.1038/s41586-021-03265-0',
+      ),
+      cite(
+        'Thorup et al., PNAS, 2021 — red-backed shrike Afro-Palearctic loop hindcast ≥120 ka; LGM breeding likely in northern Africa, Holocene summer habitat back in Europe',
+        'https://doi.org/10.1073/pnas.2023836118',
       ),
     ],
   },
