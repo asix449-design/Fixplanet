@@ -430,8 +430,15 @@ p:last-child {
 }
 
 .solution-card-wrap {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   scroll-margin-top: calc(var(--header-h) + 18px);
+}
+
+.solution-card-wrap .solution-card {
+  flex: 1;
+  height: auto;
 }
 
 .solution-card {

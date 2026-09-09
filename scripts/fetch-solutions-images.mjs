@@ -103,6 +103,88 @@ const candidates = {
     'Ecodan outdoor unit in the snow.jpg',
     'Carrier Outdoor Split Air Conditioner Heat Pump System (55005181522).jpg',
   ],
+  'rainwater-harvesting': [
+    'Rainwater harvesting tank, India.jpg',
+    'Rainwater harvesting (South Africa) (2873512324).jpg',
+    'Variety of water storage tanks and rainwater harvesting equipment (4481563848).jpg',
+  ],
+  'newater-reclaimed-wastewater': [
+    'Microfiltration system at Bedok NEWater Factory.jpg',
+    'Reverse osmosis system at Bedok NEWater Factory.jpg',
+    'NEWater Bedok plant.jpg',
+  ],
+  'fog-harvesting': [
+    'Atrapanieblas en Alto Patache.jpg',
+    'Fog collector.jpg',
+    'Atrapaniebla en parque Pan de Azúcar.jpg',
+  ],
+  'constructed-floating-wetlands': [
+    'Sengkang Floating Wetland from Anchorvale Bridge.jpg',
+    'Sengkang Floating Wetland from Sengkang South Bridge.jpg',
+    'New floating wetland - geograph.org.uk - 8376040.jpg',
+  ],
+  'solar-still': [
+    'Photograph-picture-of-the-solar-still-combined-with-air-conditioning-system-in-side-view-Cairo-Egypt.jpg',
+    'Puits solaire de Kanyenkoko.jpg',
+    'Boite de distillation solaire.jpg',
+  ],
+  agroforestry: [
+    'Agroforestry alley cropping & Wisconsin River, Savanna Institute farm 2024.jpg',
+    'Alley cropping (26311855315).jpg',
+    'KaffrineAgroforestry.jpg',
+  ],
+  windbreaks: [
+    'Young three-row windbreak in an Illinois field.jpg',
+    'Rapeseed windbreak RM of Enniskillen Sk.jpg',
+    'Shelterbelt Project planting areas.JPG',
+  ],
+  'reduced-impact-logging': [
+    'District-Tawau Sabah Logging-Camp-04.jpg',
+    'Tawau-District Sabah Logging-Camp-11.jpg',
+    'Pensiangan Sabah Logging-Helicopter-01.jpg',
+  ],
+  'riparian-forest-restoration': [
+    'Riparian buffer on Bear Creek in Story County, Iowa.JPG',
+    'Riparian buffer augusta county va.jpg',
+    'A variety of plants make up a Riparian Buffer. (24482270284).jpg',
+  ],
+  'community-forestry': [
+    'Badikhel community forest, Lalitpur.jpg',
+    'Blue-throated Barbet, at Ranibari Community Forest, Nepal.jpg',
+  ],
+  'mrf-optical-sorting': [
+    'Materials recovery facility.jpg',
+    'Materials recovery facility 2.jpg',
+    'Sunset Park Material Recovery Facility (42856p).jpg',
+  ],
+  'textile-to-textile-recycling': [
+    'Textile Recycling Container and Waste Containers.jpg',
+    'Recycling Container for Used Clothes and Shoes in Malaga.jpg',
+    'Old Rags Into New Cloth- Salvage in Britain, April 1942 D7439.jpg',
+  ],
+  'construction-demolition-recycling': [
+    'Crushed Concrete Granular Fill.jpg',
+    'Recycling an airfield N01 - geograph.org.uk - 379748.jpg',
+  ],
+  'black-soldier-fly': [
+    'Black soldier fly larvae eating voraciously (9 days old).jpg',
+    'Black soldier fly larvae eating shrimp waste.jpg',
+    'Hermetia illucens.jpg',
+  ],
+  'waste-to-energy': [
+    'Dublin Waste-to-Energy Facility.jpg',
+    'Industry park Höchst - waste-to-energy plant - Industriepark Höchst - Müllverbrennungsanlage - 04.jpg',
+    'The Energy From Waste incinerator at Greatmoor - geograph.org.uk - 6874047.jpg',
+  ],
+  'ocean-cleanup': [
+    'How TOC works.png',
+    'Garbagepatch1.jpg',
+    'Interceptor Original 007.jpg',
+  ],
+  interceptor: [
+    'Interceptor Original 007.jpg',
+    'How TOC works.png',
+  ],
 };
 
 async function commonsInfo(title) {
@@ -155,10 +237,12 @@ function convertToJpeg(srcPath, destPath) {
 }
 
 const credits = [];
+const only = new Set(process.argv.slice(2));
 
 await mkdir(outDir, { recursive: true });
 
 for (const [slug, files] of Object.entries(candidates)) {
+  if (only.size && !only.has(slug)) continue;
   let picked = null;
   for (const file of files) {
     try {
