@@ -47,8 +47,9 @@ const en: Record<string, SolutionCopy> = {
   'river-interceptors': {
     problemTitle: 'Plastic leakage',
     fixTitle: 'River interceptor barriers',
-    problem: 'Rivers carry most plastic to the sea.',
-    fix: 'River interceptor barriers catch litter upstream — cheaper than ocean cleanup alone.',
+    problem:
+      'Rivers carry most recognizable plastic to the sea after rain. Once the litter is offshore, collection is slower and more expensive than stopping it in the channel.',
+    fix: 'Floating booms and river interceptors hold litter at a barrier so it can be lifted out. The Ocean Cleanup’s Interceptor is one named, produced family of these systems; many cities also use simpler booms. A barrier is a catcher at a choke point — not a substitute for collection upstream or for making less plastic.',
     imageAlt: 'Floating river boom with yellow buoys holding back plastic bottles and litter',
   },
   'solar-microgrids': {
@@ -204,6 +205,142 @@ const en: Record<string, SolutionCopy> = {
     fix: 'Air-source and ground-source heat pumps are the default heating kit in Norway, Sweden, and Finland and are rolling out across the EU. Cold-climate models work below freezing. They need a decent envelope, a grid that can take winter load, and refrigerants handled as chemicals, not slogans.',
     imageAlt: 'An outdoor air-source heat pump unit running beside a brick wall in falling snow',
   },
+  'rainwater-harvesting': {
+    problemTitle: 'Dry taps beside a wet roof',
+    fixTitle: 'Rainwater harvesting',
+    problem:
+      'Houses and public buildings shed rain into gutters while wells and tankers struggle. In many towns the roof is the nearest catchment, but open barrels breed mosquitoes and dirty first-flush water.',
+    fix: 'WHO’s sanitary-inspection advice treats rooftop collection and covered storage as a household water source that still needs first-flush diversion, a closed tank, and regular cleaning. The method is ordinary in dry and monsoon climates. It is not a new river: yield follows the roof and the rain, and poorly kept stores can make people sick.',
+    imageAlt: 'A covered masonry rainwater cistern standing in dry ground in India',
+  },
+  'newater-reclaimed-wastewater': {
+    problemTitle: 'Cities that run out of catchment',
+    fixTitle: 'Reclaimed wastewater / NEWater',
+    problem:
+      'A dense city can use more freshwater than its reservoirs and imports can reliably supply. Treated used water is then discarded to the sea while taps stay at risk in drought.',
+    fix: 'Singapore’s PUB recycles treated used water through micro- or ultrafiltration (or a membrane bioreactor), reverse osmosis, and ultraviolet disinfection — branded NEWater. PUB says four plants are in operation. Most of the water goes to industry and cooling; in dry periods some is blended into reservoirs and treated again before it becomes tap water. Reuse needs tight treatment and public trust. It does not make a city independent of catching rain or using less.',
+    imageAlt: 'Blue microfiltration vessels and pipes labeled Microfiltration System at Bedok NEWater Factory',
+  },
+  'fog-harvesting': {
+    problemTitle: 'Cloud on the ridge, no well in the village',
+    fixTitle: 'Fog harvesting',
+    problem:
+      'High, dry coasts and ridges can sit in frequent fog while groundwater and piped water stay out of reach. The moisture is in the air, not in a river.',
+    fix: 'Large mesh collectors intercept fog droplets. FogQuest, a charity founded in 2000, helped build collectors in places such as Tojquia in Guatemala, Chile’s Atacama sites, and Falda Verde; it now mainly mentors new projects and notes that its project pages are no longer kept current. Yield depends on wind, mesh, and fog days. Collectors need local upkeep. They are a ridge technology, not a city supply.',
+    imageAlt: 'A rectangular mesh fog collector on a dry ridge at Alto Patache, Chile, with people standing beside it above the cloud layer',
+  },
+  'constructed-floating-wetlands': {
+    problemTitle: 'Nutrients in ponds that cannot become land wetlands',
+    fixTitle: 'Constructed floating wetlands',
+    problem:
+      'Stormwater basins and wastewater lagoons collect nutrients and algae. A land-based wetland needs space and changes flood storage. Many existing ponds have neither.',
+    fix: 'Constructed floating wetlands are pontoon modules whose plant roots hang in the water, hosting biofilms that take up nutrients and trap particles. CSIRO describes them as a recent retrofit for stormwater and wastewater and is piloting systems on a lagoon at Cowes, Phillip Island, and on an urban channel in Salisbury, South Australia. They are pilots, not a replacement for a treatment plant, and plants must be harvested or they return what they stored.',
+    imageAlt: 'Sengkang Floating Wetland in Singapore: a planted mid-channel strip in a reservoir, with a bridge and high-rises beyond',
+  },
+  'solar-still': {
+    problemTitle: 'Salt water and sun, no grid',
+    fixTitle: 'Solar still / passive solar desalination',
+    problem:
+      'Coastal and island households can have seawater and sunlight but no power for a reverse-osmosis plant. Hauling or boiling water is the daily fallback.',
+    fix: 'A solar still evaporates saline water under a transparent cover and condenses the vapour as freshwater — an old, small-scale method. In 2020 MIT and Shanghai Jiao Tong University demonstrated a multi-stage passive still on an MIT rooftop that reused condensation heat between layers. That work is a research prototype, not a municipal plant. Still output follows sun and area; it does not replace membrane desalination for a city.',
+    imageAlt: 'A rooftop solar still in Cairo with an insulated duct loop around a dark evaporator box',
+  },
+  agroforestry: {
+    problemTitle: 'Fields without trees',
+    fixTitle: 'Agroforestry',
+    problem:
+      'Clearing trees from cropland and pasture leaves soil, shade, and fodder thinner. Farms then lean harder on fertilizer, irrigation, and feed brought from elsewhere.',
+    fix: 'Agroforestry puts trees back with crops and livestock — alley cropping, silvopasture, homegardens, and related systems. FAO treats it as a widespread, long-standing practice and highlights examples such as the Amazonian Chakra in Ecuador. Shade coffee and cocoa are one family of the same idea. Trees need rights, time, and design; a row of seedlings is not a forest offset.',
+    imageAlt: 'Aerial view of alley-cropping plots and young tree rows on a Savanna Institute farm beside the Wisconsin River',
+  },
+  windbreaks: {
+    problemTitle: 'Wind that dries soil and stresses livestock',
+    fixTitle: 'Windbreaks / shelterbelts',
+    problem:
+      'Open fields and yards take the full force of wind. Soil blows, snow drifts onto roads, and animals burn more feed in cold weather.',
+    fix: 'USDA’s National Agroforestry Center describes windbreaks — also called shelterbelts — as linear plantings of trees and shrubs laid out for a purpose: field protection, livestock shelter, living snow fences, or farmstead screening. Height, density, gaps, and orientation decide what they do. They are farm infrastructure, not a carbon plantation, and they fail if they are not maintained.',
+    imageAlt: 'Two young rows of staked trees forming a windbreak across a green Illinois field',
+  },
+  'reduced-impact-logging': {
+    problemTitle: 'Logging that wrecks the residual stand',
+    fixTitle: 'Reduced-impact logging',
+    problem:
+      'Conventional tropical harvest often means poorly planned skid trails, felled trees hung in climbers, and damage to the trees left behind. The next crop and the soil pay first.',
+    fix: 'Reduced-impact logging (RIL) is planned harvesting: pre-harvest mapping, directional felling, and controlled skid trails. FAO case work traces early systems in Sarawak and later trials in Suriname, Guyana, Cameroon, and elsewhere. Research found lower damage and, in some cases, lower cost, but many firms still do not change practice. RIL is not a ban on logging and it is not the same as leaving an old forest uncut.',
+    imageAlt: 'A yellow loader carrying a log at a timber camp in Tawau District, Sabah, with forest behind',
+  },
+  'riparian-forest-restoration': {
+    problemTitle: 'Bare banks, hotter streams',
+    fixTitle: 'Riparian forest restoration',
+    problem:
+      'When streamside trees are cleared for fields or lots, banks erode, nutrients wash in, and summer water warms. Fish and the channel lose the shade and roots that held the edge.',
+    fix: 'USDA Climate Hubs describe maintaining or restoring forest and other cover in riparian zones: mixed plantings, no-harvest or limited-harvest buffers, and bank stabilization. The aim is shade, woody debris, and soil held by roots. It is local stream work. A planted strip does not restore a whole watershed if the uplands stay bare.',
+    imageAlt: 'Aerial view of a wooded riparian buffer along a winding creek through farmland in Story County, Iowa',
+  },
+  'community-forestry': {
+    problemTitle: 'Forests managed far from the people who live in them',
+    fixTitle: 'Community forestry',
+    problem:
+      'When use rights sit only with a distant office, nearby households have little reason to guard a forest they cannot legally use. Illegal cutting and weak upkeep follow.',
+    fix: 'Nepal’s community forestry gives Community Forest User Groups local management rights. FAO and the Federation of Community Forestry Users Nepal (FECOFUN) treat the model as a widely cited example of people-centered forest governance. It still needs accountable groups, markets that do not strip the stand, and space for women and Indigenous users. A user-group title is not automatic conservation.',
+    imageAlt: 'Tall pines and broadleaf trees on a grassy slope in Badikhel community forest, Lalitpur, Nepal',
+  },
+  'mrf-optical-sorting': {
+    problemTitle: 'Mixed recyclables that nobody can sell',
+    fixTitle: 'MRF sorting with optics and AI',
+    problem:
+      'Household recycling arrives as a mixed stream. If paper, film, and food stay in the pile, bales are dirty and mills reject them. Manual picking cannot keep up with belt speed.',
+    fix: 'Material recovery facilities use screens, magnets, eddy currents, and optical or near-infrared sorters — increasingly with camera and software aids — to separate containers and fiber. EPA’s recycling guidance is the public face of that system in the United States: collection is only as good as the sort. Optics do not make every plastic recyclable, and they do not fix a city that does not collect.',
+    imageAlt: 'Piles of mixed plastic bottles on the apron of a material recovery facility',
+  },
+  'textile-to-textile-recycling': {
+    problemTitle: 'Clothes that become rags or trash',
+    fixTitle: 'Textile-to-textile recycling',
+    problem:
+      'Most discarded clothing is reused as second-hand stock, downcycled into rags and insulation, incinerated, or landfilled. New garments still start from virgin fiber.',
+    fix: 'The EU Strategy for Sustainable and Circular Textiles aims at design, collection, and recycling so that more fiber can become new textiles rather than waste. The Commission notes that almost none of the material in clothing is recycled into new clothing today. Fibre-to-fibre plants exist as early industry, not as the default end of a wardrobe. Collection bins are not the same as a closed loop.',
+    imageAlt: 'An orange street container labeled for textile recovery and recycling beside grey waste bins',
+  },
+  'construction-demolition-recycling': {
+    problemTitle: 'Buildings demolished into mixed rubble',
+    fixTitle: 'Construction and demolition recycling',
+    problem:
+      'Concrete, brick, wood, metal, and glass from sites are often the heaviest waste a country moves. Mixed with paint, insulation, or asbestos, the pile is hard to reuse.',
+    fix: 'The European Commission treats construction and demolition waste as a priority stream and says it accounts for more than a third of EU waste. Crushing clean concrete and brick into aggregate, pulling metals, and sorting wood are ordinary where demolition is selective. Recovery rates vary widely between member states. Recycling rubble is not a license to demolish faster.',
+    imageAlt: 'A conveyor feeding a pile of crushed concrete aggregate beside a loader',
+  },
+  'black-soldier-fly': {
+    problemTitle: 'Market waste that rots in the open',
+    fixTitle: 'Black soldier fly processing',
+    problem:
+      'City markets throw fruit and vegetable waste into heaps that smell, attract vermin, and go to dumps. Farms nearby still buy imported feed and fertilizer.',
+    fix: 'Larvae of the black soldier fly (Hermetia illucens) eat wet organic waste; dried larvae can be used as animal or fish feed and the leftover frass as a soil amendment. FAO describes a project in Abidjan, Côte d’Ivoire, that breeds the flies and trains farmers to use the products. It is a working bioeconomy method, still local and labor-intensive. It does not replace collection, and it is not a use for plastic or metals.',
+    imageAlt: 'Black soldier fly larvae in a white tray among coconut fibre and decaying leaves',
+  },
+  'waste-to-energy': {
+    problemTitle: 'Residual waste that still has heat in it',
+    fixTitle: 'Waste-to-energy',
+    problem:
+      'After recycling and organics are pulled out, cities still have a residual stream. Landfill takes the volume and keeps making methane. Open burning is worse.',
+    fix: 'Municipal waste-to-energy plants burn residual waste and raise steam for electricity or heat. EPA’s basic note on energy recovery from waste describes mass-burn as the common U.S. design, with ash sent to landfill and air controls required under later rules. Plants need a steady residual stream and do not make recycling optional. Emissions and ash remain; this is not a clean substitute for not making the waste.',
+    imageAlt: 'The Dublin Waste-to-Energy plant: a white hall and twin stacks with a hill behind',
+  },
+  'ocean-cleanup': {
+    problemTitle: 'Legacy plastic already in the ocean',
+    fixTitle: 'The Ocean Cleanup',
+    problem:
+      'Plastic that has already reached subtropical gyres is no longer a river problem. It fragments into smaller pieces that are harder to collect and easier for wildlife to ingest.',
+    fix: 'The Ocean Cleanup, a Dutch non-profit, tows floating systems in the Great Pacific Garbage Patch and also runs river Interceptors. The organization publishes its own removal totals and a 2040 target; those figures are theirs, not an independent census. Cleanup at sea is slow, weather-limited, and debated for bycatch and scale. It does not replace cutting leakage on land.',
+    imageAlt: 'Diagram of The Ocean Cleanup System 001 floating barrier, with labeled sensor and navigation pods',
+  },
+  interceptor: {
+    problemTitle: 'River plastic on the way to the sea',
+    fixTitle: 'Interceptor',
+    problem:
+      'Most ocean plastic that can still be caught as recognizable litter arrives through rivers after rain. Once it is offshore, collection is harder and more expensive.',
+    fix: 'The Ocean Cleanup’s Interceptor is a family of river systems — Original, Barrier, Tender, Barricade, and Guard — that use booms and, in the Original, solar-powered extraction to lift debris before it reaches the sea. Deployments are site-specific; one design does not fit every river. An Interceptor is a catcher at the mouth, not a substitute for collection upstream or for making less plastic.',
+    imageAlt: 'The Ocean Cleanup Interceptor Original in a channel, with a floating boom leading to the catamaran hull',
+  },
 };
 
 const ru: Record<string, SolutionCopy> = {
@@ -252,8 +389,9 @@ const ru: Record<string, SolutionCopy> = {
   'river-interceptors': {
     problemTitle: 'Утечка пластика',
     fixTitle: 'Речные барьеры-перехватчики',
-    problem: 'Большую часть пластика в море приносят реки.',
-    fix: 'Речные барьеры-перехватчики ловят мусор выше по течению — дешевле, чем одна лишь очистка океана.',
+    problem:
+      'После дождя реки несут в море большую часть ещё узнаваемого пластика. Когда мусор уже в открытой воде, собирать его медленнее и дороже, чем остановить в русле.',
+    fix: 'Плавающие боны и речные перехватчики держат мусор у барьера, чтобы его можно было поднять. Interceptor компании The Ocean Cleanup — одно именное, серийное семейство таких систем; многие города ставят и более простые боны. Барьер — это ловушка в узком месте, а не замена сбора выше по течению и не повод производить меньше пластика.',
     imageAlt: 'Плавающий речной бон с жёлтыми буями, удерживающий пластиковые бутылки и мусор',
   },
   'solar-microgrids': {
@@ -409,6 +547,142 @@ const ru: Record<string, SolutionCopy> = {
     fix: 'Воздушные и грунтовые тепловые насосы — обычный комплект отопления в Норвегии, Швеции и Финляндии и распространяются по ЕС. Холодоустойчивые модели работают ниже нуля. Нужны приличная оболочка здания, сеть, которая выдержит зимнюю нагрузку, и хладагенты как химикаты, а не лозунги.',
     imageAlt: 'Наружный блок воздушного теплового насоса у кирпичной стены в падающем снегу',
   },
+  'rainwater-harvesting': {
+    problemTitle: 'Сухие краны у мокрой крыши',
+    fixTitle: 'Сбор дождевой воды',
+    problem:
+      'Дома и общественные здания сбрасывают дождь в желоба, пока скважины и цистерны не справляются. Во многих городах крыша — ближайший водосбор, но открытые бочки плодят комаров, а первая грязная струя попадает в запас.',
+    fix: 'Санитарные рекомендации ВОЗ рассматривают сбор с крыши и закрытое хранение как бытовой источник, которому всё равно нужны отвод первой струи, закрытый бак и регулярная чистка. Метод обычен в сухих и муссонных климатах. Это не новая река: выход следует за крышей и дождём, а плохо содержимое хранилище может сделать людей больными.',
+    imageAlt: 'Закрытая каменная цистерна для дождевой воды на сухой земле в Индии'
+  },
+  'newater-reclaimed-wastewater': {
+    problemTitle: 'Города, которым не хватает водосбора',
+    fixTitle: 'Оборотные сточные воды / NEWater',
+    problem:
+      'Плотный город может тратить больше пресной воды, чем надёжно дают водохранилища и импорт. Очищенные стоки тогда сбрасывают в море, а краны в засуху остаются под угрозой.',
+    fix: 'Сингапурское PUB пропускает очищенные стоки через микро- или ультрафильтрацию (или мембранный биореактор), обратный осмос и ультрафиолетовое обеззараживание — это NEWater. PUB сообщает о четырёх работающих заводах. Большая часть воды идёт промышленности и охлаждению; в сухие периоды часть смешивают с сырой водой водохранилищ и снова очищают до водопроводной. Нужны жёсткая очистка и доверие людей. Оборот не делает город независимым от дождя и экономии.',
+    imageAlt: 'Синие сосуды микрофильтрации и трубы с табличкой Microfiltration System на заводе NEWater в Бедоке'
+  },
+  'fog-harvesting': {
+    problemTitle: 'Облако на хребте, колодца в деревне нет',
+    fixTitle: 'Сбор воды из тумана',
+    problem:
+      'Высокие сухие берега и хребты могут стоять в частом тумане, пока грунтовые и сетевые воды недоступны. Влага в воздухе, а не в реке.',
+    fix: 'Большие сетчатые коллекторы перехватывают капли тумана. Благотворительная FogQuest, основанная в 2000 году, помогала ставить коллекторы в Тойкиа в Гватемале, на участках Атакамы в Чили и в Фальда-Верде; теперь она в основном наставляет новые проекты и сама пишет, что страницы проектов больше не обновляются. Выход зависит от ветра, сетки и туманных дней. Коллекторам нужен местный уход. Это техника хребта, а не городское снабжение.',
+    imageAlt: 'Прямоугольный сетчатый туманоуловитель на сухом хребте Альто-Патаче в Чили, люди стоят рядом над облаками'
+  },
+  'constructed-floating-wetlands': {
+    problemTitle: 'Питательные вещества в прудах, которые нельзя превратить в болото',
+    fixTitle: 'Искусственные плавучие водно-болотные угодья',
+    problem:
+      'Ливневые бассейны и лагуны сточных вод копят питательные вещества и водоросли. Наземному болоту нужны площадь и изменение паводкового объёма. У многих существующих прудов нет ни того ни другого.',
+    fix: 'Искусственные плавучие угодья — понтонные модули, корни растений которых висят в воде и держат биоплёнки, забирающие питательные вещества и частицы. CSIRO описывает их как недавнюю дооснастку для ливня и стоков и испытывает системы на лагуне в Коус на острове Филлип и на городском канале в Солсбери, Южная Австралия. Это пилоты, а не замена очистным, и растения надо снимать, иначе накопленное вернётся в воду.',
+    imageAlt: 'Плавучее болото Сенканг в Сингапуре: засаженная полоса посреди водоёма, мост и высотки дальше'
+  },
+  'solar-still': {
+    problemTitle: 'Солёная вода и солнце без сети',
+    fixTitle: 'Солнечный дистиллятор / пассивное опреснение',
+    problem:
+      'Прибрежные и островные хозяйства могут иметь морскую воду и солнце, но не электричество для станции обратного осмоса. Возить или кипятить воду — ежедневный запасной путь.',
+    fix: 'Солнечный дистиллятор испаряет солёную воду под прозрачной крышкой и конденсирует пар в пресную — старый маломасштабный метод. В 2020 году MIT и Шанхайский университет транспорта показали многоступенчатый пассивный дистиллятор на крыше MIT, который повторно использует тепло конденсации между слоями. Это исследовательский прототип, а не городской завод. Выход следует за солнцем и площадью; он не заменяет мембранное опреснение для города.',
+    imageAlt: 'Солнечный дистиллятор на крыше в Каире с изолированным воздуховодом вокруг тёмного испарителя'
+  },
+  agroforestry: {
+    problemTitle: 'Поля без деревьев',
+    fixTitle: 'Агролесоводство',
+    problem:
+      'Сведение деревьев с пашни и пастбища оставляет почву, тень и корм тоньше. Хозяйства тогда сильнее зависят от удобрений, полива и привозного корма.',
+    fix: 'Агролесоводство возвращает деревья к культурам и скоту — аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. ФАО считает это распространённой давней практикой и приводит примеры вроде амазонской чакры в Эквадоре. Теневые кофе и какао — одно семейство той же идеи. Деревьям нужны права, время и проект; ряд саженцев — не лесной офсет.',
+    imageAlt: 'Вид сверху: аллейные посадки и ряды молодых деревьев на ферме Savanna Institute у реки Висконсин'
+  },
+  windbreaks: {
+    problemTitle: 'Ветер, который сушит почву и изнуряет скот',
+    fixTitle: 'Ветрозащитные полосы / лесополосы',
+    problem:
+      'Открытые поля и дворы принимают весь ветер. Почва улетает, снег метёт на дороги, животные в холод тратят больше корма.',
+    fix: 'Национальный центр агролесоводства USDA описывает ветрозащитные полосы — их же называют shelterbelts — как линейные посадки деревьев и кустарников под задачу: защита поля, укрытие скота, живые снегозадержатели или экран усадьбы. Высота, плотность, разрывы и ориентация решают, что полоса делает. Это фермерская инфраструктура, а не углеродная плантация, и без ухода она не работает.',
+    imageAlt: 'Два молодых ряда деревьев на кольях — ветрозащитная полоса на зелёном поле в Иллинойсе'
+  },
+  'reduced-impact-logging': {
+    problemTitle: 'Рубка, которая ломает оставшийся древостой',
+    fixTitle: 'Рубка с пониженным воздействием',
+    problem:
+      'Обычная тропическая заготовка часто значит плохо спланированные трелёвочные волоки, деревья, зависшие в лианах, и порчу оставленных стволов. Следующий урожай и почва платят первыми.',
+    fix: 'Рубка с пониженным воздействием (RIL) — это плановая заготовка: картирование до рубки, направленная валка и контролируемые волоки. Обзоры ФАО ведут ранние системы к Сараваку и более поздние опыты — к Суринаму, Гайане, Камеруну и другим местам. Исследования находили меньший ущерб и иногда меньшую стоимость, но многие фирмы практику не меняют. RIL — не запрет рубки и не то же самое, что оставить старый лес нетронутым.',
+    imageAlt: 'Жёлтый погрузчик несёт бревно в лесозаготовительном лагере округа Тавау, Сабах, лес позади'
+  },
+  'riparian-forest-restoration': {
+    problemTitle: 'Голые берега, более тёплые ручьи',
+    fixTitle: 'Восстановление прирусловых лесов',
+    problem:
+      'Когда прирусловые деревья сводят под поля или участки, берега размываются, питательные вещества смываются, летняя вода греется. Рыба и русло теряют тень и корни, которые держали кромку.',
+    fix: 'Климатические хабы USDA описывают сохранение или восстановление леса и другой растительности в прирусловых зонах: смешанные посадки, буферы без рубки или с ограниченной рубкой, укрепление берега. Цель — тень, древесный валеж и почва на корнях. Это местная работа у ручья. Посаженная полоса не восстанавливает весь водосбор, если верховья остаются голыми.',
+    imageAlt: 'Вид сверху: древесный прирусловый буфер вдоль извилистого ручья среди полей в округе Стори, Айова'
+  },
+  'community-forestry': {
+    problemTitle: 'Леса, которыми управляют далеко от живущих в них людей',
+    fixTitle: 'Общинное лесное хозяйство',
+    problem:
+      'Когда права пользования сидят только в далёкой канцелярии, соседние хозяйства мало берегут лес, которым нельзя законно пользоваться. Дальше — нелегальная рубка и слабый уход.',
+    fix: 'Общинное лесное хозяйство Непала передаёт местные права группам пользователей общинных лесов. ФАО и Федерация пользователей общинных лесов Непала (FECOFUN) считают модель широко цитируемым примером лесного управления «от людей». Нужны подотчётные группы, рынки, которые не оголяют древостой, и место для женщин и коренных пользователей. Титул группы сам по себе не есть охрана.',
+    imageAlt: 'Высокие сосны и лиственные деревья на травянистом склоне общинного леса Бадикхел, Лалитпур, Непал'
+  },
+  'mrf-optical-sorting': {
+    problemTitle: 'Смешанные вторсырьё, которое некому купить',
+    fixTitle: 'Сортировка на МПЗ оптикой и ИИ',
+    problem:
+      'Бытовая переработка приходит смешанным потоком. Если бумага, плёнка и еда остаются в куче, кипы грязные и заводы их отвергают. Ручной отбор не успевает за лентой.',
+    fix: 'Мусороперерабатывающие заводы используют грохоты, магниты, вихревые токи и оптические или ближние инфракрасные сортировщики — всё чаще с камерами и программами — чтобы отделить тару и макулатуру. Руководство EPA по переработке — публичное лицо этой системы в США: сбор лишь настолько хорош, насколько хороша сортировка. Оптика не делает каждый пластик оборотным и не чинит город, который не собирает.',
+    imageAlt: 'Кучи смешанных пластиковых бутылок на площадке мусоросортировочного завода'
+  },
+  'textile-to-textile-recycling': {
+    problemTitle: 'Одежда, которая становится ветошью или мусором',
+    fixTitle: 'Переработка текстиля в текстиль',
+    problem:
+      'Большая часть списанной одежды идёт секонд-хендом, в ветошь и утеплитель, в печь или на свалку. Новые вещи по-прежнему начинают с первичного волокна.',
+    fix: 'Стратегия ЕС по устойчивому и циркулярному текстилю нацелена на дизайн, сбор и переработку, чтобы больше волокна снова становилось текстилем, а не отходом. Комиссия отмечает, что почти ничего из материала одежды сегодня не перерабатывается в новую одежду. Заводы «волокно в волокно» — ранняя промышленность, а не обычный конец гардероба. Контейнер для одежды — не замкнутый цикл.',
+    imageAlt: 'Оранжевый уличный контейнер для сбора и переработки текстиля рядом с серыми баками'
+  },
+  'construction-demolition-recycling': {
+    problemTitle: 'Здания, снесённые в смешанный щебень',
+    fixTitle: 'Переработка строительных и сносных отходов',
+    problem:
+      'Бетон, кирпич, дерево, металл и стекло со строек часто самый тяжёлый поток отходов страны. Смешанные с краской, утеплителем или асбестом, они плохо идут во вторичное использование.',
+    fix: 'Европейская комиссия считает строительные и сносные отходы приоритетным потоком и пишет, что на них приходится больше трети отходов ЕС. Дробление чистого бетона и кирпича в заполнитель, отбор металла и сортировка дерева обычны там, где снос селективный. Доля восстановления сильно разнится между странами. Переработка щебня — не разрешение сносить быстрее.',
+    imageAlt: 'Конвейер сыплет дроблёный бетонный заполнитель рядом с погрузчиком'
+  },
+  'black-soldier-fly': {
+    problemTitle: 'Рыночные отходы, которые гниют под открытым небом',
+    fixTitle: 'Переработка органики чёрной львинкой',
+    problem:
+      'Городские рынки сваливают фруктовые и овощные очистки в кучи, которые пахнут, зовут вредителей и едут на свалку. Соседние хозяйства всё ещё покупают импортный корм и удобрения.',
+    fix: 'Личинки чёрной львинки (Hermetia illucens) едят влажную органику; сушёных личинок можно давать скоту или рыбе, а оставшийся фрасс — в почву. ФАО описывает проект в Абиджане, Кот-д’Ивуар, где мух разводят и учат фермеров пользоваться продуктами. Это работающий метод биоэкономики, всё ещё местный и трудоёмкий. Он не заменяет сбор и не годится для пластика или металла.',
+    imageAlt: 'Личинки чёрной львинки в белом лотке среди кокосового волокна и прелых листьев'
+  },
+  'waste-to-energy': {
+    problemTitle: 'Остаточные отходы, в которых ещё есть тепло',
+    fixTitle: 'Энергия из отходов',
+    problem:
+      'После отбора вторсырья и органики у города остаётся хвост. Свалка забирает объём и продолжает делать метан. Открытое сжигание хуже.',
+    fix: 'Муниципальные заводы «отходы в энергию» сжигают остаток и поднимают пар для электричества или тепла. Базовая справка EPA об извлечении энергии из отходов описывает mass-burn как обычную схему США: зола на полигон, газоочистка по поздним нормам. Заводу нужен устойчивый поток хвоста, и он не делает переработку необязательной. Выбросы и зола остаются; это не чистое замещение тому, чтобы отходов было меньше.',
+    imageAlt: 'Завод Dublin Waste-to-Energy: белый корпус и две трубы, холм на заднем плане'
+  },
+  'ocean-cleanup': {
+    problemTitle: 'Старый пластик, уже оказавшийся в океане',
+    fixTitle: 'The Ocean Cleanup',
+    problem:
+      'Пластик, который уже дошёл до субтропических круговоротов, больше не речная задача. Он дробится на более мелкие куски, которые труднее собрать и легче проглотить живым существам.',
+    fix: 'The Ocean Cleanup, нидерландская некоммерческая организация, буксирует плавучие системы в Большом тихоокеанском мусорном пятне и ставит речные Interceptor. Организация публикует собственные итоги изъятия и цель к 2040 году; эти цифры её, а не независимая перепись. Очистка в море медленная, зависит от погоды и спорна из-за прилова и масштаба. Она не заменяет сокращение утечки на суше.',
+    imageAlt: 'Схема плавучего барьера The Ocean Cleanup System 001 с подписанными датчиками и навигационными модулями'
+  },
+  interceptor: {
+    problemTitle: 'Речной пластик по пути в море',
+    fixTitle: 'Interceptor',
+    problem:
+      'Большая часть океанского пластика, который ещё можно поймать как узнаваемый мусор, приходит реками после дождя. Когда он уже в море, сбор труднее и дороже.',
+    fix: 'Interceptor компании The Ocean Cleanup — семейство речных систем (Original, Barrier, Tender, Barricade и Guard), которые бонами и, в Original, солнечной выгрузкой поднимают мусор до моря. Постановки привязаны к месту; одна конструкция не подходит каждой реке. Interceptor — ловушка у устья, а не замена сбору выше по течению и не повод делать меньше пластика.',
+    imageAlt: 'Interceptor Original компании The Ocean Cleanup в канале, плавучий бон ведёт к корпусу катамарана'
+  },
 };
 
 const pl: Record<string, SolutionCopy> = {
@@ -457,8 +731,9 @@ const pl: Record<string, SolutionCopy> = {
   'river-interceptors': {
     problemTitle: 'Wyciek plastiku',
     fixTitle: 'Rzeczne bariery przechwytujące',
-    problem: 'Większość plastiku do morza niosą rzeki.',
-    fix: 'Rzeczne bariery przechwytujące łapią śmieci w górze rzeki — taniej niż sama zbiórka z oceanu.',
+    problem:
+      'Po deszczu rzeki niosą do morza większość jeszcze rozpoznawalnego plastiku. Gdy śmieci są już na otwartej wodzie, zbiórka jest wolniejsza i droższa niż zatrzymanie ich w korycie.',
+    fix: 'Pływające zapory i rzeczne interceptory trzymają śmieci przy barierze, żeby można je było wyciągnąć. Interceptor The Ocean Cleanup to jedna nazwana, produkowana rodzina takich systemów; wiele miast stawia też prostsze zapory. Bariera to łapka w przewężeniu — nie zastępuje zbiórki w górze rzeki ani mniejszej ilości plastiku.',
     imageAlt: 'Pływająca zapora rzeczna z żółtymi bojami, zatrzymująca butelki i śmieci',
   },
   'solar-microgrids': {
@@ -614,6 +889,142 @@ const pl: Record<string, SolutionCopy> = {
     fix: 'Pompy ciepła powietrze-woda i gruntowe to standardowy zestaw grzewczy w Norwegii, Szwecji i Finlandii i wchodzą w całej UE. Modele zimnolubne działają poniżej zera. Potrzeba przyzwoitej obudowy budynku, sieci, która uniesie zimowe obciążenie, i czynników chłodniczych jako chemikaliów, nie haseł.',
     imageAlt: 'Zewnętrzna jednostka powietrznej pompy ciepła przy ceglanej ścianie w padającym śniegu',
   },
+  'rainwater-harvesting': {
+    problemTitle: 'Suche krany przy mokrym dachu',
+    fixTitle: 'Zbieranie wody deszczowej',
+    problem:
+      'Domy i budynki publiczne zrzucają deszcz do rynien, podczas gdy studnie i cysterny nie nadążają. W wielu miastach dach jest najbliższym zlewnią, ale otwarte beczki hodują komary, a pierwszy brudny spływ trafia do zapasu.',
+    fix: 'Poradnik sanitarny WHO traktuje zbiórkę z dachu i przykryte magazynowanie jako źródło domowe, które i tak wymaga odprowadzenia pierwszego spływu, zamkniętego zbiornika i regularnego czyszczenia. Metoda jest zwyczajna w klimatach suchych i monsunowych. To nie nowa rzeka: plon idzie za dachem i deszczem, a źle utrzymany zapas może rozchorować ludzi.',
+    imageAlt: 'Przykryta murowana cysterna na deszczówkę na suchej ziemi w Indiach'
+  },
+  'newater-reclaimed-wastewater': {
+    problemTitle: 'Miasta, którym brakuje zlewni',
+    fixTitle: 'Odzyskane ścieki / NEWater',
+    problem:
+      'Gęste miasto może zużyć więcej słodkiej wody, niż niezawodnie dają zbiorniki i import. Oczyszczone ścieki wtedy idą do morza, a krany w suszy zostają zagrożone.',
+    fix: 'Singapurskie PUB przepuszcza oczyszczone ścieki przez mikro- lub ultrafiltrację (albo bioreaktor membranowy), odwróconą osmozę i dezynfekcję ultrafioletową — to NEWater. PUB podaje, że pracują cztery zakłady. Większość wody idzie do przemysłu i chłodzenia; w suche okresy część miesza się z surową wodą zbiorników i znów oczyszcza do kranu. Potrzeba ścisłego oczyszczania i zaufania ludzi. Odzysk nie uniezależnia miasta od deszczu i oszczędzania.',
+    imageAlt: 'Niebieskie naczynia mikrofiltracji i rury z tablicą Microfiltration System w zakładzie NEWater w Bedok'
+  },
+  'fog-harvesting': {
+    problemTitle: 'Chmura na grzbiecie, w wiosce nie ma studni',
+    fixTitle: 'Zbieranie wody z mgły',
+    problem:
+      'Wysokie, suche wybrzeża i grzbiety mogą stać w częstej mgle, podczas gdy woda gruntowa i wodociąg pozostają poza zasięgiem. Wilgoć jest w powietrzu, nie w rzece.',
+    fix: 'Duże siatkowe kolektory przechwytują krople mgły. FogQuest, organizacja założona w 2000 roku, pomagała stawiać kolektory m.in. w Tojquia w Gwatemali, na stanowiskach Atacamy w Chile i w Falda Verde; dziś głównie mentoruuje nowe projekty i sama zaznacza, że strony projektów nie są już aktualizowane. Plon zależy od wiatru, siatki i dni z mgłą. Kolektory wymagają lokalnej opieki. To technika grzbietu, nie miejskie zaopatrzenie.',
+    imageAlt: 'Prostokątny siatkowy kolektor mgły na suchym grzbiecie Alto Patache w Chile, ludzie stoją obok nad chmurami'
+  },
+  'constructed-floating-wetlands': {
+    problemTitle: 'Składniki odżywcze w stawach, których nie da się przekopać w mokradła',
+    fixTitle: 'Sztuczne pływające mokradła',
+    problem:
+      'Baseny deszczowe i laguny ściekowe zbierają składniki odżywcze i glony. Lądowe mokradło potrzebuje miejsca i zmienia retencję powodziową. Wiele istniejących stawów nie ma ani jednego, ani drugiego.',
+    fix: 'Sztuczne pływające mokradła to pontonowe moduły, których korzenie zwisają w wodzie i trzymają biofilmy pobierające składniki i cząstki. CSIRO opisuje je jako niedawną modernizację dla deszczówki i ścieków i pilotażuje systemy na lagunie w Cowes na Phillip Island oraz na miejskim kanale w Salisbury w Australii Południowej. To pilotaże, nie zamiana oczyszczalni, a rośliny trzeba zbierać, bo inaczej oddadzą to, co zmagazynowały.',
+    imageAlt: 'Pływające mokradło Sengkang w Singapurze: zadrzewiony pas na środku zbiornika, most i wieżowce dalej'
+  },
+  'solar-still': {
+    problemTitle: 'Słona woda i słońce bez sieci',
+    fixTitle: 'Destylator słoneczny / bierne odsalanie',
+    problem:
+      'Nadbrzeżne i wyspiarskie gospodarstwa mogą mieć wodę morską i słońce, ale nie prąd dla zakładu odwróconej osmozy. Wożenie albo gotowanie wody to codzienny zapasowy plan.',
+    fix: 'Destylator słoneczny odparowuje wodę słoną pod przezroczystą pokrywą i skrapla parę jako słodką — stara, małoskalowa metoda. W 2020 r. MIT i Shanghai Jiao Tong University pokazały wielostopniowy bierny destylator na dachu MIT, który ponownie używał ciepła skraplania między warstwami. To prototyp badawczy, nie zakład miejski. Plon idzie za słońcem i powierzchnią; nie zastępuje odsalania membranowego dla miasta.',
+    imageAlt: 'Dachowy destylator słoneczny w Kairze z izolowanym przewodem wokół ciemnego parownika'
+  },
+  agroforestry: {
+    problemTitle: 'Pola bez drzew',
+    fixTitle: 'Agroleśnictwo',
+    problem:
+      'Wycinka drzew z upraw i pastwisk zostawia glebę, cień i paszę cieńszymi. Gospodarstwa wtedy mocniej opierają się na nawozie, nawadnianiu i paszy z zewnątrz.',
+    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt — uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. FAO traktuje to jako rozpowszechnioną, dawną praktykę i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Cień w kawie i kakao to jedna rodzina tego samego pomysłu. Drzewa potrzebują praw, czasu i projektu; rząd sadzonek to nie offset leśny.',
+    imageAlt: 'Widok z lotu ptaka: uprawy alejkowe i rzędy młodych drzew na farmie Savanna Institute nad rzeką Wisconsin'
+  },
+  windbreaks: {
+    problemTitle: 'Wiatr, który suszy glebę i męczy zwierzęta',
+    fixTitle: 'Wiatrochrony / pasy wiatrochronne',
+    problem:
+      'Otwarte pola i podwórza biorą cały wiatr. Gleba wywiewa, śnieg zawiewa na drogi, a zwierzęta w zimnie spalają więcej paszy.',
+    fix: 'Krajowe Centrum Agroleśnictwa USDA opisuje wiatrochrony — zwane też shelterbelts — jako liniowe nasadzenia drzew i krzewów pod zadanie: ochrona pola, schronienie dla zwierząt, żywe płoty śnieżne albo osłona zagrody. Wysokość, zagęszczenie, luki i orientacja decydują, co pas robi. To infrastruktura rolna, nie plantacja węglowa, i bez utrzymania nie działa.',
+    imageAlt: 'Dwa młode rzędy drzew na palikach tworzące wiatrochron na zielonym polu w Illinois'
+  },
+  'reduced-impact-logging': {
+    problemTitle: 'Wycinka, która niszczy pozostały drzewostan',
+    fixTitle: 'Pozyskanie o zmniejszonym wpływie',
+    problem:
+      'Zwykły zbiór tropikalny często oznacza źle zaplanowane szlaki zrywkowe, drzewa zawieszone w lianach i uszkodzenie pozostawionych pni. Następny plon i gleba płacą pierwsze.',
+    fix: 'Pozyskanie o zmniejszonym wpływie (RIL) to planowany wyrąb: mapowanie przed zbiorem, kierunkowy wyrąb i kontrolowane szlaki. Prace FAO prowadzą wczesne systemy do Sarawaku, a późniejsze próby do Surinamu, Gujany, Kamerunu i innych miejsc. Badania znajdowały mniejsze szkody i czasem niższy koszt, ale wiele firm praktyki nie zmienia. RIL to nie zakaz wycinki i nie to samo, co zostawienie starego lasu nietkniętego.',
+    imageAlt: 'Żółta ładowarka niesie kłodę w obozie pozyskania w dystrykcie Tawau, Sabah, las w tle'
+  },
+  'riparian-forest-restoration': {
+    problemTitle: 'Gołe brzegi, cieplejsze cieki',
+    fixTitle: 'Odtwarzanie lasów nadrzecznych',
+    problem:
+      'Gdy drzewa nad ciekiem wycinane są pod pola albo działki, brzegi erodują, składniki spływają, a letnia woda się grzeje. Ryby i koryto tracą cień i korzenie, które trzymały krawędź.',
+    fix: 'Climate Hubs USDA opisują utrzymanie albo odtworzenie lasu i innej pokrywy w strefach nadrzecznych: mieszane nasadzenia, bufory bez wyrębu albo z ograniczonym wyrębem, umocnienie brzegu. Cel to cień, rumosz drzewny i gleba na korzeniach. To lokalna praca przy cieku. Posadzony pas nie odtwarza całej zlewni, jeśli górne tereny zostają gołe.',
+    imageAlt: 'Widok z lotu ptaka: zadrzewiony bufor nadrzeczny wzdłuż wijącego się cieku wśród pól w hrabstwie Story, Iowa'
+  },
+  'community-forestry': {
+    problemTitle: 'Lasy zarządzane z dala od ludzi, którzy w nich żyją',
+    fixTitle: 'Leśnictwo wspólnotowe',
+    problem:
+      'Gdy prawa użytkowania siedzą tylko w dalekim urzędzie, okoliczne gospodarstwa nie mają powodu strzec lasu, którego nie mogą legalnie używać. Dalej idzie nielegalny wyrąb i słaba opieka.',
+    fix: 'Leśnictwo wspólnotowe Nepalu daje grupom użytkowników lasów wspólnotowych lokalne prawa zarządzania. FAO i Federacja Użytkowników Lasów Wspólnotowych Nepalu (FECOFUN) traktują model jako szeroko cytowany przykład leśnego zarządzania od ludzi. Nadal potrzeba rozliczalnych grup, rynków, które nie ogołacają drzewostanu, i miejsca dla kobiet oraz użytkowników rdzennych. Tytuł grupy sam z siebie nie jest ochroną.',
+    imageAlt: 'Wysokie sosny i drzewa liściaste na trawiastym stoku lasu wspólnotowego Badikhel, Lalitpur, Nepal'
+  },
+  'mrf-optical-sorting': {
+    problemTitle: 'Mieszane surowce wtórne, których nikt nie kupi',
+    fixTitle: 'Sortowanie w MRF optyką i SI',
+    problem:
+      'Recykling domowy przychodzi mieszanym strumieniem. Jeśli papier, folia i jedzenie zostają w pryzmie, bele są brudne i młyny je odrzucają. Ręczny wybór nie nadąża za taśmą.',
+    fix: 'Zakłady odzysku materiałów używają sit, magnesów, prądów wirowych i sorterów optycznych albo bliskiej podczerwieni — coraz częściej z kamerami i oprogramowaniem — żeby oddzielić opakowania i włókno. Poradnik EPA o recyklingu to publiczna twarz tego systemu w USA: zbiórka jest tak dobra, jak sortowanie. Optyka nie czyni każdego plastiku recyklowalnym i nie naprawia miasta, które nie zbiera.',
+    imageAlt: 'Pryzmy mieszanych butelek plastikowych na placu zakładu odzysku materiałów'
+  },
+  'textile-to-textile-recycling': {
+    problemTitle: 'Ubrania, które stają się szmatami albo śmieciem',
+    fixTitle: 'Recykling tekstyliów w tekstylia',
+    problem:
+      'Większość odrzuconej odzieży idzie jako second-hand, w szmaty i izolację, do spalarni albo na składowisko. Nowe ubrania wciąż zaczynają od włókna pierwotnego.',
+    fix: 'Strategia UE na rzecz zrównoważonych i cyrkularnych tekstyliów celuje w projekt, zbiórkę i recykling, żeby więcej włókna znów stawało się tekstyliami, a nie odpadem. Komisja zauważa, że prawie nic z materiału odzieży nie jest dziś recyklowane w nową odzież. Zakłady „włókno we włókno” to wczesny przemysł, nie zwykły koniec szafy. Pojemnik na ubrania to nie zamknięta pętla.',
+    imageAlt: 'Pomarańczowy uliczny pojemnik na odzysk i recykling tekstyliów obok szarych koszy'
+  },
+  'construction-demolition-recycling': {
+    problemTitle: 'Budynki wyburzone w mieszany gruz',
+    fixTitle: 'Recykling odpadów budowlanych i rozbiórkowych',
+    problem:
+      'Beton, cegła, drewno, metal i szkło z placów bywają najcięższym strumieniem odpadów kraju. Zmieszane z farbą, izolacją albo azbestem, źle idą do ponownego użytku.',
+    fix: 'Komisja Europejska traktuje odpady budowlane i rozbiórkowe jako strumień priorytetowy i pisze, że stanowią ponad jedną trzecią odpadów UE. Kruszenie czystego betonu i cegły na kruszywo, wyciąganie metali i sortowanie drewna są zwyczajne tam, gdzie rozbiórka jest selektywna. Wskaźniki odzysku bardzo się różnią między państwami. Recykling gruzu nie jest pozwoleniem na szybsze wyburzanie.',
+    imageAlt: 'Przenośnik sypie pokruszony beton na hałdę obok ładowarki'
+  },
+  'black-soldier-fly': {
+    problemTitle: 'Odpady rynkowe, które gniją pod gołym niebem',
+    fixTitle: 'Przetwarzanie organiki przez muchę żołnierza',
+    problem:
+      'Miejskie targi zsypują resztki owoców i warzyw w pryzmy, które śmierdzą, wabią szkodniki i jadą na wysypisko. Okoliczne gospodarstwa wciąż kupują importowaną paszę i nawóz.',
+    fix: 'Larwy czarnej muchy żołnierza (Hermetia illucens) jedzą mokrą organike; suszone larwy mogą iść na paszę dla zwierząt albo ryb, a pozostały frass na glebę. FAO opisuje projekt w Abidżanie na Wybrzeżu Kości Słoniowej, który hoduje muchy i szkoli rolników w użyciu produktów. To działająca metoda biogospodarki, wciąż lokalna i pracochłonna. Nie zastępuje zbiórki i nie nadaje się na plastik ani metal.',
+    imageAlt: 'Larwy czarnej muchy żołnierza w białej kuwecie wśród włókna kokosowego i gnijących liści'
+  },
+  'waste-to-energy': {
+    problemTitle: 'Odpad resztkowy, w którym jeszcze jest ciepło',
+    fixTitle: 'Energia z odpadów',
+    problem:
+      'Po wyciągnięciu recyklingu i organiki miasta wciąż mają strumień resztkowy. Składowisko zabiera objętość i dalej robi metan. Otwarte spalanie jest gorsze.',
+    fix: 'Komunalne zakłady waste-to-energy palą odpad resztkowy i podnoszą parę na prąd albo ciepło. Podstawowa nota EPA o odzysku energii z odpadów opisuje mass-burn jako zwykły układ w USA: popiół na składowisko, oczyszczanie spalin według późniejszych reguł. Zakład potrzebuje stałego strumienia resztek i nie czyni recyklingu opcjonalnym. Emisje i popiół zostają; to nie czysta zamiana za to, żeby odpadów było mniej.',
+    imageAlt: 'Zakład Dublin Waste-to-Energy: biała hala i dwa kominy, wzgórze w tle'
+  },
+  'ocean-cleanup': {
+    problemTitle: 'Stary plastik już w oceanie',
+    fixTitle: 'The Ocean Cleanup',
+    problem:
+      'Plastik, który już dotarł do subtropikalnych wirów, nie jest już problemem rzecznym. Kruszy się na mniejsze kawałki, które trudniej zebrać i łatwiej połknąć zwierzętom.',
+    fix: 'The Ocean Cleanup, holenderska organizacja non-profit, holuje pływające systemy w Wielkiej Pacyficznej Plamie Śmieci i stawia rzeczne Interceptory. Organizacja publikuje własne sumy wyjęcia i cel na 2040; to jej liczby, nie niezależny spis. Sprzątanie na morzu jest wolne, zależne od pogody i sporne z powodu przyłowu i skali. Nie zastępuje obcinania wycieku na lądzie.',
+    imageAlt: 'Schemat pływającej zapory The Ocean Cleanup System 001 z podpisanymi czujnikami i gondolami nawigacyjnymi'
+  },
+  interceptor: {
+    problemTitle: 'Rzeczny plastik w drodze do morza',
+    fixTitle: 'Interceptor',
+    problem:
+      'Większość oceanicznego plastiku, który da się jeszcze złapać jako rozpoznawalne śmieci, przychodzi rzekami po deszczu. Gdy jest już na morzu, zbiórka jest trudniejsza i droższa.',
+    fix: 'Interceptor The Ocean Cleanup to rodzina systemów rzecznych — Original, Barrier, Tender, Barricade i Guard — które zaporami i, w Original, słonecznym wyciąganiem podnoszą śmieci zanim dotrą do morza. Wdrożenia są miejscowe; jeden projekt nie pasuje do każdej rzeki. Interceptor to łapka u ujścia, nie zamiana zbiórki w górze rzeki ani mniejszej ilości plastiku.',
+    imageAlt: 'Interceptor Original The Ocean Cleanup w kanale, pływająca zapora prowadzi do kadłuba katamaranu'
+  },
 };
 
 const lv: Record<string, SolutionCopy> = {
@@ -662,8 +1073,9 @@ const lv: Record<string, SolutionCopy> = {
   'river-interceptors': {
     problemTitle: 'Plastmasas noplūde',
     fixTitle: 'Upes uztvērējbarjeras',
-    problem: 'Lielāko daļu plastmasas uz jūru aiznes upes.',
-    fix: 'Upes uztvērējbarjeras ķer atkritumus augštecē — lētāk nekā tikai okeāna tīrīšana.',
+    problem:
+      'Pēc lietus upes nes uz jūru lielāko daļu vēl atpazīstamas plastmasas. Kad atkritumi jau ir atklātā ūdenī, vākt tos ir lēnāk un dārgāk nekā apturēt gultnē.',
+    fix: 'Peldošie bumi un upes uztvērēji tur atkritumus pie barjeras, lai tos varētu izcelt. The Ocean Cleanup Interceptor ir viena nosaukta, ražota šādu sistēmu saime; daudzas pilsētas liek arī vienkāršākus bumus. Barjera ir ķērājs sašaurinājumā — nevis augšteces vākšanas vai mazākas plastmasas aizstājējs.',
     imageAlt: 'Peldošs upes bums ar dzeltenām bojām, kas aiztur plastmasas pudeles un atkritumus',
   },
   'solar-microgrids': {
@@ -818,6 +1230,142 @@ const lv: Record<string, SolutionCopy> = {
       'Telpu un ūdens apkure joprojām dedzina gāzi vai eļļu lielā daļā Eiropas, Ziemeļamerikas un mērenās Āzijas. Ēkas visu ziemu laiž šo siltumu ārā.',
     fix: 'Gaisa un grunts siltumsūkņi ir parastais apkures komplekts Norvēģijā, Zviedrijā un Somijā un izvēršas visā ES. Aukstuma modeļi strādā zem nulles. Vajag pieklājīgu ēkas apvalku, tīklu, kas iztur ziemas slodzi, un aukstumaģentus kā ķimikālijas, ne saukļus.',
     imageAlt: 'Āra gaisa siltumsūkņa bloks pie ķieģeļu sienas krītošā sniegā',
+  },
+  'rainwater-harvesting': {
+    problemTitle: 'Sausi krāni pie slapja jumta',
+    fixTitle: 'Lietusūdens vākšana',
+    problem:
+      'Mājas un sabiedriskās ēkas laiž lietu notekās, kamēr akas un cisternas netiek galā. Daudzās pilsētās jumts ir tuvākais sateces baseins, bet vaļējās mucas vairo odus, un pirmā netīrā straume nonāk krājumā.',
+    fix: 'PVO sanitārās pārbaudes padoms uzskata vākšanu no jumta un slēgtu uzglabāšanu par mājsaimniecības avotu, kam tik un tā vajag pirmās straumes novadi, slēgtu tvertni un regulāru tīrīšanu. Metode ir parasta sausos un musonu klimatos. Tā nav jauna upe: iznākums seko jumtam un lietum, un slikti kopts krājums var saslimdināt cilvēkus.',
+    imageAlt: 'Slēgta mūra lietusūdens cisterna sausā zemē Indijā'
+  },
+  'newater-reclaimed-wastewater': {
+    problemTitle: 'Pilsētas, kurām nepietiek sateces',
+    fixTitle: 'Reģenerēti notekūdeņi / NEWater',
+    problem:
+      'Blīva pilsēta var iztērēt vairāk saldūdens, nekā droši dod ūdenskrātuves un imports. Attīrītos notekūdeņus tad laiž jūrā, bet krāni sausumā paliek apdraudēti.',
+    fix: 'Singapūras PUB laiž attīrītos notekūdeņus caur mikro- vai ultrafiltrāciju (vai membrānu bioreaktoru), reverso osmozi un ultravioleto dezinfekciju — tas ir NEWater. PUB saka, ka darbojas četras stacijas. Lielākā daļa ūdens iet rūpniecībai un dzesēšanai; sausos periodos daļu sajauc ar ūdenskrātuvju jēlūdeni un atkal attīra līdz krāna ūdenim. Vajag stingru attīrīšanu un cilvēku uzticību. Atkārtota izmantošana nepadara pilsētu neatkarīgu no lietus un taupīšanas.',
+    imageAlt: 'Zilas mikrofiltrācijas tvertnes un caurules ar uzrakstu Microfiltration System Bedok NEWater stacijā'
+  },
+  'fog-harvesting': {
+    problemTitle: 'Mākonis uz kores, ciemā nav akas',
+    fixTitle: 'Miglas ūdens vākšana',
+    problem:
+      'Augstas, sausas piekrastes un kores var stāvēt biežā miglā, kamēr gruntsūdeņi un cauruļu ūdens paliek nesasniedzami. Mitrums ir gaisā, ne upē.',
+    fix: 'Lieli sieta kolektori uztver miglas pilienus. FogQuest, labdarības organizācija, kas dibināta 2000. gadā, palīdzēja celt kolektorus Tojquia Gvatemalā, Čīles Atakamas vietās un Falda Verde; tagad tā galvenokārt mentorē jaunus projektus un pati atzīmē, ka projektu lapas vairs nav aktuālas. Iznākums atkarīgs no vēja, sieta un miglainām dienām. Kolektoriem vajag vietēju kopšanu. Tā ir kores tehnika, ne pilsētas apgāde.',
+    imageAlt: 'Taisnstūrveida sieta miglas kolektors uz sausas kores Alto Patache Čīlē, cilvēki stāv blakus virs mākoņiem'
+  },
+  'constructed-floating-wetlands': {
+    problemTitle: 'Barības vielas dīķos, ko nevar pārvērst sauszemes mitrājos',
+    fixTitle: 'Mākslīgie peldošie mitrāji',
+    problem:
+      'Lietus baseini un notekūdeņu lagūnas krāj barības vielas un aļģes. Sauszemes mitrājam vajag vietu un tas maina plūdu tilpumu. Daudziem esošajiem dīķiem nav ne viena, ne otra.',
+    fix: 'Mākslīgie peldošie mitrāji ir pontonu moduļi, kuru augu saknes karājas ūdenī un tur bioplēves, kas ņem barības vielas un daļiņas. CSIRO tos apraksta kā nesenu piebūvi lietus un notekūdeņiem un izmēģina sistēmas lagūnā Cowes, Filipa salā, un pilsētas kanālā Solsberijā, Dienvidaustrālijā. Tie ir piloti, ne attīrīšanas stacijas aizstājējs, un augi jānovāc, citādi uzkrātais atgriežas ūdenī.',
+    imageAlt: 'Sengkang peldošais mitrājs Singapūrā: apstādīta josla ūdenskrātuves vidū, tilts un daudzstāvu ēkas tālāk'
+  },
+  'solar-still': {
+    problemTitle: 'Sālsūdens un saule bez tīkla',
+    fixTitle: 'Saules destilators / pasīvā atsāļošana',
+    problem:
+      'Piekrastes un salu saimniecībām var būt jūras ūdens un saule, bet nav elektrības reversās osmozes stacijai. Ūdens vešana vai vārīšana ir ikdienas rezerves ceļš.',
+    fix: 'Saules destilators iztvaicē sāļūdeni zem caurspīdīga vāka un kondensē tvaiku par saldūdeni — sena, maza mēroga metode. 2020. gadā MIT un Šanhajas Dzjaotunas universitāte parādīja daudzpakāpju pasīvo destilatoru uz MIT jumta, kas atkārtoti izmanto kondensācijas siltumu starp slāņiem. Tas ir pētniecības prototips, ne pilsētas rūpnīca. Iznākums seko saulei un laukumam; tas neaizstāj membrānu atsāļošanu pilsētai.',
+    imageAlt: 'Jumta saules destilators Kairā ar izolētu gaisa vadu ap tumšu iztvaicētāju'
+  },
+  agroforestry: {
+    problemTitle: 'Lauki bez kokiem',
+    fixTitle: 'Agromežsaimniecība',
+    problem:
+      'Koku ciršana no tīrumiem un ganībām atstāj augsni, ēnu un barību plānāku. Saimniecības tad vairāk balstās uz mēslojumu, laistīšanu un ievesto barību.',
+    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem — aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. FAO to uzskata par izplatītu, seno praksi un izceļ piemērus kā Amazones čakru Ekvadorā. Ēnas kafija un kakao ir viena tās pašas idejas saime. Kokiem vajag tiesības, laiku un projektu; stādu rinda nav meža ofsets.',
+    imageAlt: 'Skats no gaisa: aleju sējumi un jaunu koku rindas Savanna Institute saimniecībā pie Viskonsinas upes'
+  },
+  windbreaks: {
+    problemTitle: 'Vējš, kas žāvē augsni un nomāc lopus',
+    fixTitle: 'Vējainas / aizsargjoslas',
+    problem:
+      'Atklāti lauki un sētas ņem visu vēju. Augsne aizpūšas, sniegs sanes uz ceļiem, un dzīvnieki aukstumā tērē vairāk barības.',
+    fix: 'ASV Nacionālais agromežsaimniecības centrs apraksta vējainas — sauktas arī par shelterbelts — kā lineāras koku un krūmu stādījumu joslas kādam mērķim: lauka aizsardzība, lopu pajumte, dzīvie sniega žogi vai sētas ekrāns. Augstums, blīvums, spraugas un orientācija izlemj, ko josla dara. Tā ir saimniecības infrastruktūra, ne oglekļa plantācija, un bez kopšanas tā nestrādā.',
+    imageAlt: 'Divas jaunas koku rindas uz mietiem veido vējainu zaļā Illinoisa laukā'
+  },
+  'reduced-impact-logging': {
+    problemTitle: 'Ciršana, kas sagrauj atlikušo audzi',
+    fixTitle: 'Samazinātas ietekmes ciršana',
+    problem:
+      'Parastā tropiskā izstrāde bieži nozīmē slikti plānotus pievešanas ceļus, vītnēs iekārtus kokus un bojājumus atstātajiem stumbriem. Nākamā raža un augsne maksā pirmās.',
+    fix: 'Samazinātas ietekmes ciršana (RIL) ir plānota izstrāde: kartēšana pirms ciršanas, virziena gāšana un kontrolēti pievešanas ceļi. FAO gadījumi ved agrīnās sistēmas uz Saravaku un vēlākos izmēģinājumus uz Surinamu, Gajānu, Kamerūnu un citām vietām. Pētījumi atrada mazāku kaitējumu un dažkārt zemākas izmaksas, bet daudzas firmas praksi nemaina. RIL nav ciršanas aizliegums un nav tas pats, kas atstāt veco mežu necirstu.',
+    imageAlt: 'Dzeltens iekrāvējs nes baļķi kokmateriālu nometnē Tawau apgabalā, Sabahā, mežs fonā'
+  },
+  'riparian-forest-restoration': {
+    problemTitle: 'Kailas krastmalas, siltākas straumes',
+    fixTitle: 'Piekrastes mežu atjaunošana',
+    problem:
+      'Kad pie strauta kokus cērt tīrumiem vai gabaliem, krasti erodē, barības vielas noskalojas un vasaras ūdens sasilst. Zivis un gultne zaudē ēnu un saknes, kas turēja malu.',
+    fix: 'ASV Klimata centri apraksta meža un cita seguma uzturēšanu vai atjaunošanu piekrastes joslās: jaukti stādījumi, buferi bez ciršanas vai ar ierobežotu ciršanu, krasta nostiprināšana. Mērķis ir ēna, koksnes sagāzumi un augsne uz saknēm. Tas ir vietējs darbs pie strauta. Iestādīta josla neatjauno visu sateci, ja augštece paliek kaila.',
+    imageAlt: 'Skats no gaisa: kokains piekrastes buferis gar līkumotu strautu starp laukiem Storijas apgabalā, Aiovā'
+  },
+  'community-forestry': {
+    problemTitle: 'Meži, ko pārvalda tālu no cilvēkiem, kuri tajos dzīvo',
+    fixTitle: 'Kopienu mežsaimniecība',
+    problem:
+      'Kad lietošanas tiesības sēž tikai tālā kantorī, tuvējām saimniecībām ir maz iemesla sargāt mežu, ko nedrīkst likumīgi lietot. Tālāk nāk nelikumīga ciršana un vāja kopšana.',
+    fix: 'Nepālas kopienu mežsaimniecība dod Kopienu meža lietotāju grupām vietējas pārvaldības tiesības. FAO un Nepālas Kopienu meža lietotāju federācija (FECOFUN) uzskata modeli par plaši citētu cilvēku centrētas meža pārvaldības piemēru. Joprojām vajag atbildīgas grupas, tirgus, kas nenoplicina audzi, un vietu sievietēm un pirmiedzīvotāju lietotājiem. Grupas tituls pats par sevi nav aizsardzība.',
+    imageAlt: 'Augstas priedes un lapu koki zālainā nogāzē Badikhel kopienas mežā, Lalitpurā, Nepālā'
+  },
+  'mrf-optical-sorting': {
+    problemTitle: 'Jaukti otrreizējie materiāli, ko neviens nepirks',
+    fixTitle: 'MRF šķirošana ar optiku un MI',
+    problem:
+      'Mājsaimniecību pārstrāde atnāk jauktā plūsmā. Ja papīrs, plēve un ēdiens paliek kaudzē, ķīpas ir netīras un rūpnīcas tās noraida. Roku lasīšana netiek līdzi lentai.',
+    fix: 'Materiālu atgūšanas iekārtas lieto sietus, magnētus, virpuļstrāvas un optiskos vai tuvās infrasarkanās šķirotājus — arvien biežāk ar kamerām un programmām — lai atdalītu taru un šķiedru. EPA pārstrādes vadlīnijas ir šīs sistēmas publiskā seja ASV: vākšana ir tik laba, cik šķirošana. Optika nepadara katru plastmasu pārstrādājamu un nelabo pilsētu, kas nevāc.',
+    imageAlt: 'Jauktu plastmasas pudeļu kaudzes materiālu atgūšanas iekārtas laukumā'
+  },
+  'textile-to-textile-recycling': {
+    problemTitle: 'Drēbes, kas kļūst par lupatām vai atkritumiem',
+    fixTitle: 'Tekstila pārstrāde tekstilā',
+    problem:
+      'Lielākā daļa noraidīto drēbju iet kā lietotas, lupatās un izolācijā, sadedzināšanā vai poligonā. Jaunas drēbes joprojām sākas no primārās šķiedras.',
+    fix: 'ES ilgtspējīga un aprites tekstila stratēģija mērķē uz dizainu, vākšanu un pārstrādi, lai vairāk šķiedras atkal kļūtu par tekstilu, nevis atkritumiem. Komisija atzīmē, ka gandrīz nekas no apģērba materiāla šodien netiek pārstrādāts jaunā apģērbā. «Šķiedra šķiedrā» rūpnīcas ir agrīna industrija, ne parasts skapja gals. Drēbju konteiners nav slēgts cikls.',
+    imageAlt: 'Oranžs ielas konteiners tekstila vākšanai un pārstrādei blakus pelēkiem konteineriem'
+  },
+  'construction-demolition-recycling': {
+    problemTitle: 'Ēkas, kas nojauktas jauktos gružos',
+    fixTitle: 'Būvniecības un nojaukšanas atkritumu pārstrāde',
+    problem:
+      'Betons, ķieģelis, koks, metāls un stikls no būvlaukumiem bieži ir smagākā valsts atkritumu plūsma. Sajaukti ar krāsu, izolāciju vai azbestu, tie slikti iet atkārtotā lietošanā.',
+    fix: 'Eiropas Komisija uzskata būvniecības un nojaukšanas atkritumus par prioritāru plūsmu un raksta, ka tie veido vairāk nekā trešdaļu ES atkritumu. Tīra betona un ķieģeļu smalcināšana pildījumā, metālu izvilkšana un koksnes šķirošana ir parasta tur, kur nojaukšana ir selektīva. Atgūšanas īpatsvars starp dalībvalstīm ļoti atšķiras. Gružu pārstrāde nav atļauja nojaukt ātrāk.',
+    imageAlt: 'Konveijers ber sasmalcinātu betona pildījumu kaudzē blakus iekrāvējam'
+  },
+  'black-soldier-fly': {
+    problemTitle: 'Tirgus atkritumi, kas pūst zem klajas debesīm',
+    fixTitle: 'Melnā kareivja mušas pārstrāde',
+    problem:
+      'Pilsētas tirgi berž augļu un dārzeņu atliekas kaudzēs, kas smird, sauc kaitēkļus un brauc uz izgāztuvi. Tuvējās saimniecības joprojām pērk ievesto barību un mēslojumu.',
+    fix: 'Melnā kareivja mušas (Hermetia illucens) kāpuri ēd mitru organiku; kaltētus kāpurus var dot lopiem vai zivīm, un atlikušo frasu — augsnei. FAO apraksta projektu Abidžanā, Kotdivuārā, kur mušas audzē un māca zemniekiem lietot produktus. Tā ir strādājoša bioekonomikas metode, joprojām vietēja un darbietilpīga. Tā neaizstāj vākšanu un neder plastmasai vai metālam.',
+    imageAlt: 'Melnā kareivja mušas kāpuri baltā traukā starp kokosšķiedru un trūdošām lapām'
+  },
+  'waste-to-energy': {
+    problemTitle: 'Atlikuma atkritumi, kuros vēl ir siltums',
+    fixTitle: 'Enerģija no atkritumiem',
+    problem:
+      'Pēc pārstrādes un organikas izņemšanas pilsētām joprojām paliek atlikuma plūsma. Poligons paņem tilpumu un turpina darīt metānu. Atklāta dedzināšana ir sliktāka.',
+    fix: 'Pašvaldību waste-to-energy stacijas dedzina atlikuma atkritumus un ceļ tvaiku elektrībai vai siltumam. EPA pamata piezīme par enerģijas atgūšanu no atkritumiem apraksta mass-burn kā parasto ASV shēmu: pelni uz poligonu, gāzu attīrīšana pēc vēlākiem noteikumiem. Stacijai vajag stabilu atlikuma plūsmu, un tā nepadara pārstrādi izvēles. Emisijas un pelni paliek; tas nav tīrs aizstājējs tam, lai atkritumu būtu mazāk.',
+    imageAlt: 'Dublin Waste-to-Energy stacija: balta hallē un divi skursteņi, kalns fonā'
+  },
+  'ocean-cleanup': {
+    problemTitle: 'Senā plastmasa, kas jau ir okeānā',
+    fixTitle: 'The Ocean Cleanup',
+    problem:
+      'Plastmasa, kas jau sasniegusi subtropu virpuļus, vairs nav upes uzdevums. Tā sairst sīkākos gabalos, ko grūtāk savākt un vieglāk norīt savvaļai.',
+    fix: 'The Ocean Cleanup, Nīderlandes bezpeļņas organizācija, velk peldošas sistēmas Lielajā Klusā okeāna atkritumu plankumā un arī vada upes Interceptor. Organizācija publicē savus izņemšanas kopsummas un 2040. gada mērķi; tie ir viņu skaitļi, ne neatkarīga skaitīšana. Tīrīšana jūrā ir lēna, atkarīga no laikapstākļiem un strīdīga piezvejas un mēroga dēļ. Tā neaizstāj noplūdes griešanu uz sauszemes.',
+    imageAlt: 'The Ocean Cleanup System 001 peldošās barjeras shēma ar parakstītiem sensoriem un navigācijas moduliem'
+  },
+  interceptor: {
+    problemTitle: 'Upes plastmasa ceļā uz jūru',
+    fixTitle: 'Interceptor',
+    problem:
+      'Lielākā daļa okeāna plastmasas, ko vēl var noķert kā atpazīstamus atkritumus, atnāk pa upēm pēc lietus. Kad tā jau ir jūrā, vākšana ir grūtāka un dārgāka.',
+    fix: 'The Ocean Cleanup Interceptor ir upes sistēmu saime — Original, Barrier, Tender, Barricade un Guard —, kas ar bumiem un, Original gadījumā, saules izcelšanu paceļ atkritumus pirms jūras. Izvietošana ir vietai specifiska; viens konstrukcija neder katrai upei. Interceptor ir ķērājs grīvā, nevis augšteces vākšanas vai mazākas plastmasas aizstājējs.',
+    imageAlt: 'The Ocean Cleanup Interceptor Original kanālā, peldošs bums ved uz katamarāna korpusu'
   },
 };
 

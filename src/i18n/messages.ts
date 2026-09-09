@@ -100,6 +100,7 @@ const en = {
     problem: 'Problem',
     fix: 'Fix',
     explore: 'Explore solution →',
+    primarySource: 'Source',
     back: '← Solutions',
     tags: {
       water: 'Water',
@@ -112,9 +113,9 @@ const en = {
     } satisfies Record<TagKey, string>,
     tileLeads: {
       all: 'Every problem–fix card on one shelf.',
-      water: 'Irrigation, desalination, recharge, and living filters already in use.',
-      forests: 'Regeneration, fire-smart practice, and shade systems that keep forests working.',
-      waste: 'Bottles, organics, and landfill gas turned back into material and energy.',
+      water: 'Harvesting, reuse, desalination, recharge, and living filters already in use.',
+      forests: 'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working.',
+      waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
       cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
       materials: 'Lower-carbon cement, mass timber, and cleaner steel paths.',
       oceans: 'Catching plastic, restoring shores, and fishing with less bycatch.',
@@ -395,6 +396,7 @@ const ru: typeof en = {
     problem: 'Проблема',
     fix: 'Решение',
     explore: 'Подробнее →',
+    primarySource: 'Источник',
     back: '← Решения',
     tags: {
       water: 'Вода',
@@ -407,9 +409,9 @@ const ru: typeof en = {
     },
     tileLeads: {
       all: 'Все карточки «проблема → решение» на одной полке.',
-      water: 'Орошение, опреснение, подпитка водоносных горизонтов и живые фильтры.',
-      forests: 'Восстановление, огнестойкое хозяйство и теневые системы, которые держат лес в работе.',
-      waste: 'Бутылки, органика и свалочный газ — снова в материал и энергию.',
+      water: 'Сбор, оборотное использование, опреснение, подпитка горизонтов и живые фильтры.',
+      forests: 'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство.',
+      waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
       cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
       materials: 'Цемент с меньшим углеродом, массивная древесина и более чистая сталь.',
       oceans: 'Перехват пластика, восстановление берегов и лов с меньшим приловом.',
@@ -693,6 +695,7 @@ const pl: typeof en = {
     problem: 'Problem',
     fix: 'Rozwiązanie',
     explore: 'Zobacz rozwiązanie →',
+    primarySource: 'Źródło',
     back: '← Rozwiązania',
     tags: {
       water: 'Woda',
@@ -705,9 +708,9 @@ const pl: typeof en = {
     },
     tileLeads: {
       all: 'Wszystkie karty problem → rozwiązanie na jednej półce.',
-      water: 'Nawadnianie, odsalanie, zasilanie wód podziemnych i żywe filtry.',
-      forests: 'Regeneracja, gospodarka ognioodporna i systemy cienia, które zostawiają las w pracy.',
-      waste: 'Butelki, organika i gaz składowiskowy znów stają się materiałem i energią.',
+      water: 'Zbieranie, odzysk, odsalanie, zasilanie wód podziemnych i żywe filtry.',
+      forests: 'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna.',
+      waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
       cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
       materials: 'Cement o niższym śladzie, drewno klejone i czystsza stal.',
       oceans: 'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem.',
@@ -991,6 +994,7 @@ const lv: typeof en = {
     problem: 'Problēma',
     fix: 'Risinājums',
     explore: 'Skatīt risinājumu →',
+    primarySource: 'Avots',
     back: '← Risinājumi',
     tags: {
       water: 'Ūdens',
@@ -1003,9 +1007,9 @@ const lv: typeof en = {
     },
     tileLeads: {
       all: 'Visas «problēma → risinājums» kartītes vienā plauktā.',
-      water: 'Apūdeņošana, atsāļošana, gruntsūdeņu papildināšana un dzīvie filtri.',
-      forests: 'Atjaunošana, ugunsdroša prakse un ēnu sistēmas, kas tur mežu darbā.',
-      waste: 'Pudeles, organika un poligona gāze atkal kļūst par materiālu un enerģiju.',
+      water: 'Vākšana, atkārtota izmantošana, atsāļošana, gruntsūdeņu papildināšana un dzīvie filtri.',
+      forests: 'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse.',
+      waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
       cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
       materials: 'Cements ar mazāku oglekli, masīvkoksne un tīrāks tērauds.',
       oceans: 'Plastmasas uztveršana, krastu atjaunošana un zvejas ar mazāku piezveju.',

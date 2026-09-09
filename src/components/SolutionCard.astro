@@ -1,5 +1,6 @@
 ---
 import type { Solution } from '../data/solutions';
+import { solutionPrimarySource } from '../data/solutions';
 import { getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -16,6 +17,7 @@ const {
   hidden = false,
 } = Astro.props;
 const photo = `/images/solutions/${solution.slug}.jpg`;
+const primary = solutionPrimarySource(solution.sources);
 ---
 
 <article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug} hidden={hidden}>
@@ -45,4 +47,13 @@ const photo = `/images/solutions/${solution.slug}.jpg`;
       <span class="card-cta">{ui.solutionsPage.explore}</span>
     </div>
   </a>
+  {
+    primary && (
+      <p class="innovation-card-source">
+        <a href={primary.url} rel="noopener noreferrer">
+          {ui.solutionsPage.primarySource}: {primary.label}
+        </a>
+      </p>
+    )
+  }
 </article>
