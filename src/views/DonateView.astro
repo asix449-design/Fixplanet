@@ -6,8 +6,6 @@ import { getUi, localizePath, resolveLocale } from '../i18n';
 const locale = resolveLocale(Astro.currentLocale);
 const page = getUi(locale).donate;
 const ui = getUi(locale);
-
-// TODO: when donateCheckoutUrl is a live Stripe / PayPal / Link URL, expose it as the primary CTA.
 const checkout = donateCheckoutUrl.trim();
 ---
 
@@ -23,8 +21,13 @@ const checkout = donateCheckoutUrl.trim();
     {
       checkout ? (
         <p>
-          <a class="btn btn-primary" href={checkout} rel="noopener noreferrer">
-            {ui.nav.donate}
+          <a
+            class="btn btn-primary"
+            href={checkout}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {page.cta}
           </a>
         </p>
       ) : null

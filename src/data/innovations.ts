@@ -217,6 +217,10 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
+        'dsm-firmenich — 20,000 cows, 18 months in the Netherlands',
+        'https://www.dsm-firmenich.com/en/businesses/taste-texture-health/news-events/articles/dairy/20000-cows-18-months-what-large-scale-farm-data-tells-us-about-bovaer-in-the-netherlands.html',
+      ),
+      cite(
         'EUR-Lex — Regulation (EU) 2022/565 (3-NOP / Bovaer)',
         'https://eur-lex.europa.eu/eli/reg_impl/2022/565/oj',
       ),
@@ -224,6 +228,81 @@ export const innovationMeta: InnovationMeta[] = [
         'dsm-firmenich — Bovaer US FDA review (May 2024)',
         'https://our-company.dsm-firmenich.com/en/our-company/news/press-releases/2024/methane-reducing-feed-ingredient-bovaer-ready-for-us-market-launch.html',
       ),
+    ],
+  },
+  {
+    slug: 'deep-sky-alpha',
+    area: 'ecology',
+    status: 'pilot',
+    image: img(
+      'deep-sky-alpha.jpg',
+      'Net Power Inc.',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:NET_Power_Plant.jpg',
+    ),
+    sources: [
+      cite(
+        'Reuters — Deep Sky delivers North America’s first DAC credits (29 June 2026)',
+        'https://www.reuters.com/sustainability/climate-energy/canadian-company-delivers-north-americas-first-direct-air-capture-carbon-credits-2026-06-29/',
+      ),
+      cite('Deep Sky Alpha', 'https://www.deepskyclimate.com/alpha'),
+    ],
+  },
+  {
+    slug: 'avnos-project-brighton',
+    area: 'ecology',
+    status: 'pilot',
+    image: img(
+      'avnos-project-brighton.jpg',
+      'National Institute for Occupational Safety and Health (NIOSH)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Water_treatment_plant.jpg',
+    ),
+    sources: [
+      cite(
+        'Interesting Engineering — U.S. plant captures 450 tons of airborne CO₂',
+        'https://interestingengineering.com/energy/us-plant-captures-450-tons-of-airborne-co2',
+      ),
+      cite(
+        'Avnos — Project Brighton enters operations',
+        'https://avnos.com/avnos-largest-hybrid-direct-air-capture-deployment-enters-operations/',
+      ),
+    ],
+  },
+  {
+    slug: 'yara-sluiskil-ccs',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'yara-sluiskil-ccs.jpg',
+      'Adriaan van Oost',
+      'CC BY 3.0',
+      'https://commons.wikimedia.org/wiki/File:TERNEUZEN_-_panoramio.jpg',
+    ),
+    sources: [
+      cite(
+        'CarbonCredits — Yara Sluiskil CCS inauguration (Sep 2026)',
+        'https://carboncredits.com/yara-europe-largest-carbon-capture-facility-netherlands/',
+      ),
+      cite('Northern Lights — who we are', 'https://norlights.com/who-we-are/'),
+    ],
+  },
+  {
+    slug: 'samsara-eco',
+    area: 'ecology',
+    status: 'pilot',
+    image: img(
+      'samsara-eco.jpg',
+      'Grendelkhan',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg',
+    ),
+    sources: [
+      cite(
+        'PKN Packaging News — Samsara Eco opens first enzymatic recycling plant',
+        'https://www.packagingnews.com.au/latest/samsara-eco-opens-first-enzymatic-recycling-plant',
+      ),
+      cite('Samsara Eco', 'https://www.samsaraeco.com/'),
     ],
   },
   {
@@ -273,14 +352,14 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Sonoma_Plant_at_The_Geysers_4778.png',
     ),
     sources: [
+      cite(
+        'CNBC — Fervo Cape Station aims to power the data-center boom (5 Sep 2026)',
+        'https://www.cnbc.com/2026/09/05/fervo-energys-enhanced-geothermal-project-aims-to-power-data-center-boom.html',
+      ),
       cite('Fervo Energy', 'https://fervoenergy.com/'),
       cite(
         'Google — Project Red operational (28 Nov 2023)',
         'https://blog.google/outreach-initiatives/sustainability/google-fervo-geothermal-energy-partnership/',
-      ),
-      cite(
-        'Fervo — Project Red well test (18 July 2023)',
-        'https://fervoenergy.com/fervo-energy-announces-technology-breakthrough-in-next-generation-geothermal/',
       ),
     ],
   },
@@ -295,14 +374,67 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:1_MW_4_MWh_Turner_Energy_Storage_Project_in_Pullman,_WA.jpg',
     ),
     sources: [
+      cite(
+        'Utility Dive — Form Energy 300 MW / 30 GWh in Google–Xcel agreement',
+        'https://www.utilitydive.com/news/worlds-largest-grid-battery-part-of-google-xcel-energy-agreement/813793/',
+      ),
       cite('Form Energy', 'https://formenergy.com/'),
       cite(
         'Form Energy — iron-air chemistry',
         'https://formenergy.com/form-energy-unveils-chemistry-of-multi-day-storage-battery-technology/',
       ),
+    ],
+  },
+  {
+    slug: 'quaise-mmwave-drilling',
+    area: 'energy',
+    status: 'research',
+    image: img(
+      'quaise-mmwave-drilling.jpg',
+      'Calistemon',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Drill_rig,_Pilbara,_August_2007.jpg',
+    ),
+    sources: [
       cite(
-        'IEA — Grid-scale storage',
-        'https://www.iea.org/energy-system/electricity/grid-scale-storage',
+        'Energy Global — Quaise millimetre-wave drilling milestone (24 July 2025)',
+        'https://www.energyglobal.com/other-renewables/24072025/quaise-energy-achieves-drilling-milestone-with-millimetre-wave-technology/',
+      ),
+      cite('Quaise Energy', 'https://www.quaise.energy/'),
+    ],
+  },
+  {
+    slug: 'cfs-sparc',
+    area: 'energy',
+    status: 'research',
+    image: img(
+      'cfs-sparc.jpg',
+      'Johannes Reimer',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:ITER_Tokamak_mockup.jpg',
+    ),
+    sources: [
+      cite(
+        'CFS — SPARC progress and DOE milestone approvals',
+        'https://blog.cfs.energy/sparc-progress-doe-milestone-approvals-reflect-cfs-power-plant-maturity/',
+      ),
+      cite('CFS — SPARC', 'https://cfs.energy/technology/sparc/'),
+    ],
+  },
+  {
+    slug: 'form-energy-ireland',
+    area: 'energy',
+    status: 'pilot',
+    image: img(
+      'form-energy-ireland.jpg',
+      'Kecko',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Tesvolt_battery_energy_storage_system_Rheineck.jpg',
+    ),
+    sources: [
+      cite(
+        'Form Energy — first iron-air project in Ireland with FuturEnergy Ireland',
+        'https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/',
       ),
     ],
   },
@@ -483,6 +615,7 @@ export const innovationMeta: InnovationMeta[] = [
       '',
     ),
     sources: [
+      cite('Google DeepMind — AlphaFold', 'https://deepmind.google/science/alphafold/'),
       cite(
         'Jumper et al., Nature, 2021 — AlphaFold 2',
         'https://www.nature.com/articles/s41586-021-03819-2',
@@ -533,7 +666,53 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Sunset_at_Coryton_Oil_Refinery_-_geograph.org.uk_-_1052273.jpg',
     ),
     sources: [
-      cite('Climate TRACE', 'https://climatetrace.org/'),
+      cite(
+        'Climate TRACE — v5.10 / first-half 2026 emissions (27 Aug 2026)',
+        'https://climatetrace.org/news/climate-trace-data-show-marginal-increase-in-global-emissions-in-the-first-half-of-2026',
+      ),
+      cite('Climate TRACE — about the coalition', 'https://climatetrace.org/about'),
+    ],
+  },
+  {
+    slug: 'weathernext-3',
+    area: 'ai',
+    status: 'deployed',
+    image: img(
+      'weathernext-3.jpg',
+      'NOAA Satellites',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:First_Full_Disk_Image_from_GOES-17_as_GOES_West_(40118037553).jpg',
+    ),
+    sources: [
+      cite(
+        'Google DeepMind — Introducing WeatherNext 3 (3 Sep 2026)',
+        'https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/',
+      ),
+    ],
+  },
+  {
+    slug: 'ecmwf-aifs',
+    area: 'ai',
+    status: 'deployed',
+    image: img(
+      'ecmwf-aifs.jpg',
+      'James Hutchinson',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:European_Centre_for_Medium-Range_Weather_Forecasts.jpg',
+    ),
+    sources: [
+      cite(
+        'VAST Data — The weather model that taught itself physics (AIFS 1.1)',
+        'https://www.vastdata.com/blog/the-weather-model-that-taught-itself-physics',
+      ),
+      cite(
+        'Moldovan et al., GMD, 2026 — AIFS Single 1.1.0',
+        'https://gmd.copernicus.org/articles/19/4703/2026/',
+      ),
+      cite(
+        'ECMWF — AIFS version history',
+        'https://confluence.ecmwf.int/spaces/UDOC/pages/599165907/AIFS+Version+History',
+      ),
     ],
   },
   {

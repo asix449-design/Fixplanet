@@ -8,11 +8,12 @@ export const site = {
 };
 
 /**
- * TODO: set this to the live Stripe / PayPal / Link checkout URL when payments open.
- * Keep empty until then. The header Donate button always goes to /donate — never invent
- * API keys or a fake card form.
+ * Live Stripe Payment Link for Fix Planet support. Header and footer still go
+ * to /donate (disclaimer + context). The donate page and About CTA open this
+ * URL in a new tab. Not a tax-deductible charity gift.
  */
-export const donateCheckoutUrl = '';
+export const donateCheckoutUrl =
+  'https://buy.stripe.com/00w3cnbA548A5Za7PKffy00';
 
 export const nav = [
   { href: '/solutions', key: 'solutions' },

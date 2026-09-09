@@ -233,6 +233,9 @@ const en = {
     curatorBlurb: 'Investor and writer focused on green technology and a livable future.',
     follow: 'Follow {handle} →',
     readBook: 'Read New World →',
+    supportCta: 'Support Fix Planet →',
+    supportNote:
+      'Opens a Stripe checkout in a new tab. Support for the atlas — not a tax-deductible charity donation.',
   },
   book: {
     metaTitle: 'New World — Fix Planet',
@@ -278,17 +281,18 @@ const en = {
     aboutLink: 'about Fix Planet',
   },
   donate: {
-    metaTitle: 'Donate — Fix Planet',
+    metaTitle: 'Support Fix Planet',
     metaDescription:
-      'Support Fix Planet when donations open. Payments are not live on this page yet.',
+      'Support Fix Planet through Stripe. This is support for the atlas, not a tax-deductible charity donation.',
     title: 'Support Fix Planet',
-    lead: 'Fix Planet is a living atlas. When donations open, they will keep the atlas public and independent.',
-    useHeading: 'Where support will go',
+    lead: 'Fix Planet is a living atlas. Support keeps the encyclopedia public and independent.',
+    useHeading: 'Where support goes',
     use: 'Research time, hosting, openly licensed maps, translations, and keeping the encyclopedia free to read.',
-    statusHeading: 'Donations are not open yet',
+    statusHeading: 'How to support',
     status:
-      'There is no checkout on this page. When a real payment processor is live, this page will send you there.',
-    thanks: 'Until then, sharing the atlas and the book helps.',
+      'The button opens a Stripe checkout in a new tab. This is support for Fix Planet, not a tax-deductible charitable donation.',
+    cta: 'Support Fix Planet',
+    thanks: 'Thank you. Sharing the atlas and the book also helps.',
   },
   footer: {
     blurb:
@@ -532,6 +536,9 @@ const ru: typeof en = {
       'Инвестор и автор, который занимается зелёными технологиями и будущим, в котором можно жить.',
     follow: 'Подписаться на {handle} →',
     readBook: 'Читать New World →',
+    supportCta: 'Поддержать Fix Planet →',
+    supportNote:
+      'Открывает оплату Stripe в новой вкладке. Поддержка атласа — не благотворительный взнос с налоговым вычетом.',
   },
   book: {
     metaTitle: 'New World — Fix Planet',
@@ -577,17 +584,18 @@ const ru: typeof en = {
     aboutLink: 'о проекте Fix Planet',
   },
   donate: {
-    metaTitle: 'Поддержать — Fix Planet',
+    metaTitle: 'Поддержать Fix Planet',
     metaDescription:
-      'Поддержите Fix Planet, когда откроются пожертвования. Оплаты на этой странице пока нет.',
+      'Поддержите Fix Planet через Stripe. Это поддержка атласа, не благотворительный взнос с налоговым вычетом.',
     title: 'Поддержать Fix Planet',
-    lead: 'Fix Planet — живой атлас. Когда пожертвования откроются, они помогут держать атлас открытым и независимым.',
-    useHeading: 'Куда пойдут средства',
+    lead: 'Fix Planet — живой атлас. Поддержка держит энциклопедию открытой и независимой.',
+    useHeading: 'Куда идут средства',
     use: 'Время на исследования, хостинг, карты с открытой лицензией, переводы и бесплатный доступ к энциклопедии.',
-    statusHeading: 'Пожертвования ещё не открыты',
+    statusHeading: 'Как поддержать',
     status:
-      'На этой странице нет оформления платежа. Когда появится настоящий платёжный сервис, мы отправим вас туда.',
-    thanks: 'Пока можно помочь иначе — делиться атласом и книгой.',
+      'Кнопка открывает оплату Stripe в новой вкладке. Это поддержка Fix Planet, не благотворительный взнос с налоговым вычетом.',
+    cta: 'Поддержать Fix Planet',
+    thanks: 'Спасибо. Помогает и то, что вы делитесь атласом и книгой.',
   },
   footer: {
     blurb:
@@ -831,6 +839,9 @@ const pl: typeof en = {
       'Inwestor i autor skupiony na zielonych technologiach i przyszłości, w której da się żyć.',
     follow: 'Obserwuj {handle} →',
     readBook: 'Czytaj New World →',
+    supportCta: 'Wesprzyj Fix Planet →',
+    supportNote:
+      'Otwiera kasę Stripe w nowej karcie. Wsparcie atlasu — nie darowizna charytatywna z odliczeniem podatkowym.',
   },
   book: {
     metaTitle: 'New World — Fix Planet',
@@ -876,17 +887,18 @@ const pl: typeof en = {
     aboutLink: 'o Fix Planet',
   },
   donate: {
-    metaTitle: 'Wesprzyj — Fix Planet',
+    metaTitle: 'Wesprzyj Fix Planet',
     metaDescription:
-      'Wesprzyj Fix Planet, gdy darowizny będą otwarte. Na tej stronie nie ma jeszcze płatności.',
+      'Wesprzyj Fix Planet przez Stripe. To wsparcie atlasu, nie darowizna charytatywna z odliczeniem podatkowym.',
     title: 'Wesprzyj Fix Planet',
-    lead: 'Fix Planet to żywy atlas. Gdy darowizny będą otwarte, utrzymają atlas publiczny i niezależny.',
-    useHeading: 'Na co pójdzie wsparcie',
+    lead: 'Fix Planet to żywy atlas. Wsparcie utrzymuje encyklopedię publiczną i niezależną.',
+    useHeading: 'Na co idzie wsparcie',
     use: 'Czas na badania, hosting, mapy na otwartej licencji, tłumaczenia i darmowy dostęp do encyklopedii.',
-    statusHeading: 'Darowizny nie są jeszcze otwarte',
+    statusHeading: 'Jak wesprzeć',
     status:
-      'Na tej stronie nie ma kasy. Gdy pojawi się prawdziwy operator płatności, ta strona tam Cię skieruje.',
-    thanks: 'Do tego czasu możesz pomóc, udostępniając atlas i książkę.',
+      'Przycisk otwiera kasę Stripe w nowej karcie. To wsparcie Fix Planet, nie darowizna charytatywna z odliczeniem podatkowym.',
+    cta: 'Wesprzyj Fix Planet',
+    thanks: 'Dziękujemy. Udostępnianie atlasu i książki też pomaga.',
   },
   footer: {
     blurb:
@@ -1130,6 +1142,9 @@ const lv: typeof en = {
       'Investors un autors, kura uzmanības centrā ir zaļās tehnoloģijas un nākotne, kurā var dzīvot.',
     follow: 'Sekot {handle} →',
     readBook: 'Lasīt New World →',
+    supportCta: 'Atbalstīt Fix Planet →',
+    supportNote:
+      'Atver Stripe kasi jaunā cilnē. Atbalsts atlantam — ne labdarības ziedojums ar nodokļu atvieglojumu.',
   },
   book: {
     metaTitle: 'New World — Fix Planet',
@@ -1175,17 +1190,18 @@ const lv: typeof en = {
     aboutLink: 'par Fix Planet',
   },
   donate: {
-    metaTitle: 'Atbalstīt — Fix Planet',
+    metaTitle: 'Atbalstīt Fix Planet',
     metaDescription:
-      'Atbalsti Fix Planet, kad ziedojumi būs atvērti. Šajā lapā vēl nav norēķinu.',
+      'Atbalsti Fix Planet caur Stripe. Tas ir atbalsts atlantam, ne labdarības ziedojums ar nodokļu atvieglojumu.',
     title: 'Atbalsti Fix Planet',
-    lead: 'Fix Planet ir dzīvais atlants. Kad ziedojumi būs atvērti, tie palīdzēs turēt atlantu atvērtu un neatkarīgu.',
-    useHeading: 'Kur ies atbalsts',
+    lead: 'Fix Planet ir dzīvais atlants. Atbalsts tur enciklopēdiju atklātu un neatkarīgu.',
+    useHeading: 'Kur iet atbalsts',
     use: 'Pētījumu laiks, hostings, atklāti licencētas kartes, tulkojumi un bezmaksas enciklopēdija.',
-    statusHeading: 'Ziedojumi vēl nav atvērti',
+    statusHeading: 'Kā atbalstīt',
     status:
-      'Šajā lapā nav kases. Kad būs īsts maksājumu operators, šī lapa tevi tur aizvedīs.',
-    thanks: 'Līdz tam vari palīdzēt, daloties ar atlantu un grāmatu.',
+      'Poga atver Stripe kasi jaunā cilnē. Tas ir atbalsts Fix Planet, ne labdarības ziedojums ar nodokļu atvieglojumu.',
+    cta: 'Atbalstīt Fix Planet',
+    thanks: 'Paldies. Palīdz arī dalīšanās ar atlantu un grāmatu.',
   },
   footer: {
     blurb:

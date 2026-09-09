@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { site } from '../data/site';
+import { donateCheckoutUrl, site } from '../data/site';
 import { basedIn, getUi, localizePath, resolveLocale } from '../i18n';
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -63,6 +63,29 @@ const ui = getUi(locale);
         <p>
           <a class="text-link" href={localizePath('/book', locale)}>{ui.about.readBook}</a>
         </p>
+        {
+          donateCheckoutUrl.trim() ? (
+            <p style="margin-top: 1rem;">
+              <a
+                class="text-link"
+                href={donateCheckoutUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {ui.about.supportCta}
+              </a>
+              <span class="donate-thanks" style="display: block; margin-top: 0.45rem;">
+                {ui.about.supportNote}
+              </span>
+            </p>
+          ) : (
+            <p style="margin-top: 1rem;">
+              <a class="text-link" href={localizePath('/donate', locale)}>
+                {ui.nav.donate} →
+              </a>
+            </p>
+          )
+        }
       </aside>
     </div>
   </section>

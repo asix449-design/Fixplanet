@@ -8,6 +8,7 @@ import {
 } from '../data/innovations';
 import type { Locale } from './config';
 import { en } from './innovations-en';
+import { pack } from './innovations-pack';
 import { lv as lvEntries } from './innovations-lv';
 import { pl as plEntries } from './innovations-pl';
 import { ru as ruEntries } from './innovations-ru';
@@ -243,10 +244,10 @@ const page: Record<Locale, InnovationsPage> = {
 };
 
 const copy: Record<Locale, Record<string, InnovationCopy>> = {
-  en,
-  ru: ruEntries,
-  pl: plEntries,
-  lv: lvEntries,
+  en: { ...en, ...pack.en },
+  ru: { ...ruEntries, ...pack.ru },
+  pl: { ...plEntries, ...pack.pl },
+  lv: { ...lvEntries, ...pack.lv },
 };
 
 export function getInnovationsPage(locale: Locale): InnovationsPage {
