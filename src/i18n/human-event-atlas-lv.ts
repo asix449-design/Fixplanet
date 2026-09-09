@@ -17,7 +17,7 @@ export const lvHumanEventAtlas: HumanEventAtlasCopy = {
   lead:
     'Labi dokumentētu kustību laika skala — ne karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Pleistocēna kartītes ir mācību bultas uz NASA Blue Marble. Vēlākās ir publicētas plates. Spragas ir marķētas. Mēs neizdomājam globālus iedzīvotāju horopletus.',
   honesty:
-    'Notikumu kartītes, ne regulārs laika režģis. Katrai kustībai ir datēts diapazons, maršruts vai reģions, dzinējspēki tikai tur, kur to tur zinātne, un avots. Huņu spiediens paliek Lielajās migrācijās; tautu staigāšanas kartīte ved turp, nevis dublē plauktu.',
+    'Notikumu kartītes, ne regulārs laika režģis. Katrai kustībai ir datēts diapazons, maršruts vai reģions, dzinējspēki tikai tur, kur to tur zinātne, un avots. Huņu spiediens paliek šajā Cilvēku plauktā. Lielās migrācijas ir dzīvas masu kustības, ne otra Atilas lapa.',
   aria: 'Lielo cilvēku migrācijas notikumu karte',
   scrubberAria: 'Pāriet uz migrācijas notikumu',
   eventLabel: 'Notikums',
@@ -33,9 +33,9 @@ export const lvHumanEventAtlas: HumanEventAtlasCopy = {
   vintageLabel: 'Datējums',
   schematicCredit:
     'Shēmas pamats: NASA Blue Marble Next Generation (2004. gada decembris, publiskais īpašums) — fiziskā Zeme, ne politiskā karte un ne iedzīvotāju rastrs.',
-  greatMigrationsCta: 'Lielās migrācijas · huņņi →',
+  greatMigrationsCta: 'Lielās migrācijas →',
   greatMigrationsNote:
-    'Nosauktas masu kustības rakstītajos avotos ir tajā plauktā. Šī plate ir reģionāla shēma 100.–500. g., ne otra huņu enciklopēdija.',
+    'Dzīvas masu kustības ir tajā plauktā. Šī plate ir reģionāla shēma 100.–500. g. Atilu tur nedublē.',
   coverage: coverageLv,
   events: {
     'out-of-africa': {

@@ -2,9 +2,10 @@
 import {
   isMigrationShelf,
   migrationEntryMeta,
+  migrationPathRedirects,
   migrationShelfKeys,
 } from '../../data/migration';
-import { getMigrationBySlug, resolveLocale } from '../../i18n';
+import { getMigrationBySlug, localizePath, resolveLocale } from '../../i18n';
 import MigrationDetailView from '../../views/MigrationDetailView.astro';
 import MigrationView from '../../views/MigrationView.astro';
 
@@ -12,11 +13,15 @@ export function getStaticPaths() {
   return [
     ...migrationShelfKeys.map((slug) => ({ params: { slug } })),
     ...migrationEntryMeta.map((item) => ({ params: { slug: item.slug } })),
+    ...Object.keys(migrationPathRedirects).map((slug) => ({ params: { slug } })),
   ];
 }
 
 const { slug } = Astro.params;
 const locale = resolveLocale(Astro.currentLocale);
+if (slug && slug in migrationPathRedirects) {
+  return Astro.redirect(localizePath(migrationPathRedirects[slug], locale), 301);
+}
 const item = slug && !isMigrationShelf(slug) ? getMigrationBySlug(locale, slug) : undefined;
 ---
 

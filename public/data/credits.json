@@ -1,5 +1,13 @@
 [
   {
+    "file": "migration-today.json",
+    "title": "Curated UN regional net migration (2023) and international migrant stock (mid-2024)",
+    "source": "UN World Population Prospects 2024; UN DESA International Migrant Stock 2024; IOM World Migration Report 2026 chapter 3",
+    "url": "https://population.un.org/wpp/",
+    "license": "UN publications; reproduce figures with attribution",
+    "note": "Static extract committed 2026-09-08. Net migration is WPP 2024 calendar-year 2023 estimates for UN M49 major regions. Stock and corridors are IMS 2024 / IOM WMR 2026. Camp rows are UNHCR operational figures with as-of dates; UNRWA is captioned separately. Border-pressure rows are Frontex EU-external detections (not unique people). Not a live scrape. Stock is not annual flow."
+  },
+  {
     "file": "earth-countries.bin",
     "title": "Country and coastline segments for the Home wire globe",
     "source": "Natural Earth 110m Admin 0 countries",

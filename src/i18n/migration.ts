@@ -5,6 +5,7 @@ import {
   type MigrationEntryCopy,
   type MigrationShelf,
 } from '../data/migration';
+import type { TodayRegionId } from '../data/migration-today';
 import {
   humanEventMeta,
   type HumanEventCoverage,
@@ -135,6 +136,65 @@ export type MigrationPage = {
     flywaysSources: string;
     flywaysBaseCredit: string;
   };
+  today: TodayShelfCopy;
+};
+
+export type TodayRegionCopy = {
+  name: string;
+  shortName: string;
+  caption: string;
+  originsIntro: string;
+  corridorsIntro: string;
+};
+
+export type TodayShelfCopy = {
+  mapTitle: string;
+  mapAria: string;
+  lead: string;
+  honesty: string;
+  tabletHint: string;
+  netLabel: string;
+  netUnitMillion: string;
+  netUnitPeople: string;
+  stockLabel: string;
+  stockUnitMillion: string;
+  originsTitle: string;
+  originsHint: string;
+  corridorsTitle: string;
+  corridorsNote: string;
+  close: string;
+  openTablet: string;
+  million: string;
+  approx: string;
+  intraCaption: string;
+  remainderNote: string;
+  stockNotFlow: string;
+  arrowLegend: string;
+  mapCredit: string;
+  emptyPanel: string;
+  layersLabel: string;
+  layerCamps: string;
+  layerDetections: string;
+  campsTitle: string;
+  campsLead: string;
+  campsHonesty: string;
+  campsUnrwa: string;
+  campOpen: string;
+  campAsOf: string;
+  campPeople: string;
+  detectionsTitle: string;
+  detectionsLead: string;
+  detectionsHonesty: string;
+  detectionsMetric: string;
+  detectionsNoGlobal: string;
+  detectionsChange: string;
+  detectionsOpen: string;
+  detectionsNationalities: string;
+  noHeadcount: string;
+  regions: Record<TodayRegionId, TodayRegionCopy>;
+  originNames: Record<TodayRegionId, string>;
+  campCopy: Record<string, { name: string; country: string; note: string }>;
+  routeCopy: Record<string, { name: string; note: string }>;
 };
 
 const pages: Record<Locale, MigrationPage> = { en, ru, pl, lv };
@@ -159,7 +219,7 @@ export function getMigrationEntries(locale: Locale): MigrationEntry[] {
 
 export function getMigrationByShelf(
   locale: Locale,
-  shelf: Exclude<MigrationShelf, 'humans'>,
+  shelf: Exclude<MigrationShelf, 'humans' | 'today'>,
 ): MigrationEntry[] {
   return getMigrationEntries(locale).filter((item) => item.shelf === shelf);
 }

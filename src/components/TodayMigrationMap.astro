@@ -1,0 +1,669 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import CitedSourceList from './CitedSourceList.astro';
+import {
+  corridorsForRegion,
+  formatSignedCount,
+  formatStockCount,
+  todayDataset,
+  todayRegionAnchors,
+  todayRegionIds,
+  todaySources,
+  todayTabletLayout,
+  type TodayRegionId,
+} from '../data/migration-today';
+import { getMigrationPage, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const ui = page.today;
+const numberLocale = locale === 'en' ? 'en-GB' : locale;
+
+const svgPath = path.join(process.cwd(), 'public/images/maps/world-countries.svg');
+let mapSvg = fs.readFileSync(svgPath, 'utf8');
+mapSvg = mapSvg
+  .replace(/<\?xml[^>]*>/, '')
+  .replace(
+    '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="2754" height="1398">',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2754 1398" role="img" aria-hidden="true" focusable="false">',
+  )
+  .replace(/fill: #c0c0c0/g, 'fill: #050505')
+  .replace(/stroke: #ffffff/g, 'stroke: #c0ff00')
+  .replace(/fill: #ffffff/g, 'fill: #000000')
+  .replace(/stroke: #000000/g, 'stroke: #c0ff00')
+  .replace(/stroke-width: 0\.5/g, 'stroke-width: 1.15')
+  .replace(/stroke-width: 0\.2/g, 'stroke-width: 0.85')
+  .replace(
+    '.antxx\n{\n\topacity: 1;\n\tfill: #050505;\n}',
+    '.antxx\n{\n\topacity: 0.35;\n\tfill: #050505;\n\tstroke: #3d4a12;\n}',
+  );
+
+function formatPeople(value: number): string {
+  return value.toLocaleString(numberLocale);
+}
+
+function formatCampFigure(population: number, max?: number, approx = false): string {
+  const prefix = approx ? `${ui.approx} ` : '';
+  if (max && max !== population) {
+    return `${prefix}${formatPeople(population)}–${formatPeople(max)}`;
+  }
+  return `${prefix}${formatPeople(population)}`;
+}
+
+function formatChange(change: number): string {
+  const pct = Math.round(Math.abs(change) * 100);
+  return `${change < 0 ? '−' : '+'}${pct}% ${ui.detectionsChange}`;
+}
+
+const tablets = todayRegionIds.map((id) => {
+  const net = todayDataset.netMigration.regions[id];
+  const abs = Math.abs(net);
+  const figure = formatSignedCount(net, numberLocale);
+  const unit = abs >= 1_000_000 ? ui.netUnitMillion : ui.netUnitPeople;
+  return {
+    id,
+    net,
+    figure,
+    unit,
+    name: ui.regions[id].shortName,
+    layout: todayTabletLayout[id],
+  };
+});
+
+const camps = todayDataset.camps.sites.map((site) => {
+  const copy = ui.campCopy[site.id];
+  return {
+    ...site,
+    name: copy?.name ?? site.name,
+    country: copy?.country ?? site.country,
+    note: copy?.note ?? site.note,
+    figure: formatCampFigure(site.population, site.populationMax, site.approx),
+    asOfLabel: new Date(`${site.asOf}T00:00:00Z`).toLocaleDateString(numberLocale, {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+      timeZone: 'UTC',
+    }),
+  };
+});
+
+const detectionYears = todayDataset.borderDetections.years.map((row) => ({
+  ...row,
+  figure: `${row.approx ? `${ui.approx} ` : ''}${formatPeople(row.total)}`,
+  changeLabel: formatChange(row.changeVsPrev),
+}));
+
+const detectionRoutes = todayDataset.borderDetections.routes.map((route) => {
+  const copy = ui.routeCopy[route.id];
+  return {
+    ...route,
+    name: copy?.name ?? route.name,
+    note: copy?.note ?? route.note,
+    figure:
+      route.detections == null
+        ? ui.noHeadcount
+        : `${route.approx ? `${ui.approx} ` : ''}${formatPeople(route.detections)}`,
+    hasCount: route.detections != null,
+  };
+});
+
+const panelPayload = Object.fromEntries(
+  todayRegionIds.map((id) => {
+    const stock = todayDataset.migrantStock.regions[id];
+    const net = todayDataset.netMigration.regions[id];
+    return [
+      id,
+      {
+        name: ui.regions[id].name,
+        caption: ui.regions[id].caption,
+        originsIntro: ui.regions[id].originsIntro,
+        corridorsIntro: ui.regions[id].corridorsIntro,
+        net,
+        netFigure: formatSignedCount(net, numberLocale),
+        netUnit: Math.abs(net) >= 1_000_000 ? ui.netUnitMillion : ui.netUnitPeople,
+        stock: stock.destination,
+        stockFigure: formatStockCount(stock.destination, numberLocale),
+        origins: stock.origins.map((row) => ({
+          id: row.id,
+          label: ui.originNames[row.id as TodayRegionId] ?? row.id,
+          value: row.value,
+          figure: formatStockCount(row.value, numberLocale),
+          approx: row.approx,
+        })),
+        corridors: corridorsForRegion(id).map((row) => ({
+          id: row.id,
+          from: row.from,
+          to: row.to,
+          fromRegion: row.fromRegion,
+          toRegion: row.toRegion,
+          kind: row.kind,
+          stock: row.stock,
+          figure: row.stock == null ? '' : formatStockCount(row.stock, numberLocale),
+          approx: row.approx,
+          note: row.note,
+        })),
+      },
+    ];
+  }),
+);
+
+const campPayload = Object.fromEntries(
+  camps.map((site) => [
+    site.id,
+    {
+      name: site.name,
+      country: site.country,
+      figure: site.figure,
+      asOf: site.asOfLabel,
+      note: site.note,
+      sourceLabel: site.sourceLabel,
+      sourceUrl: site.sourceUrl,
+      agency: site.agency,
+    },
+  ]),
+);
+
+const routePayload = Object.fromEntries(
+  detectionRoutes.map((route) => [
+    route.id,
+    {
+      name: route.name,
+      year: route.year,
+      figure: route.figure,
+      hasCount: route.hasCount,
+      note: route.note,
+    },
+  ]),
+);
+
+const interArrows = todayDataset.corridors
+  .filter((row) => row.kind === 'inter-regional' && row.fromRegion !== row.toRegion)
+  .map((row) => {
+    const a = todayRegionAnchors[row.fromRegion];
+    const b = todayRegionAnchors[row.toRegion];
+    return {
+      id: row.id,
+      from: row.fromRegion,
+      to: row.toRegion,
+      x1: a.x,
+      y1: a.y,
+      x2: b.x,
+      y2: b.y,
+    };
+  });
+---
+
+<section class="today-mig" aria-labelledby="today-map-heading" data-today-mig>
+  <h2 id="today-map-heading">{ui.mapTitle}</h2>
+  <p class="dispersal-lead">{ui.lead}</p>
+  <p class="oceans-source-note">{ui.honesty}</p>
+
+  <div class="today-mig-layers" role="group" aria-label={ui.layersLabel}>
+    <button type="button" class="today-mig-layer" data-today-layer="camps" aria-pressed="false">
+      {ui.layerCamps}
+    </button>
+    <button type="button" class="today-mig-layer" data-today-layer="detections" aria-pressed="false">
+      {ui.layerDetections}
+    </button>
+  </div>
+
+  <div class="today-mig-layout">
+    <div class="today-mig-stage">
+      <div class="today-mig-map" role="img" aria-label={ui.mapAria}>
+        <div class="today-mig-svg" set:html={mapSvg}></div>
+        <svg class="today-mig-arrows" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <marker id="today-arrow-head" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+              <path d="M0 0 L5 2.5 L0 5 Z" fill="#c0ff00"></path>
+            </marker>
+          </defs>
+          {
+            interArrows.map((arrow) => (
+              <line
+                data-today-arrow={`${arrow.from} ${arrow.to}`}
+                x1={arrow.x1}
+                y1={arrow.y1}
+                x2={arrow.x2}
+                y2={arrow.y2}
+                marker-end="url(#today-arrow-head)"
+              ></line>
+            ))
+          }
+        </svg>
+        <p class="today-mig-arrow-legend" data-today-arrow-legend hidden>{ui.arrowLegend}</p>
+        <div class="today-mig-tablets">
+          {
+            tablets.map((tablet) => (
+              <button
+                type="button"
+                class:list={['today-mig-tablet', tablet.net < 0 && 'is-loss']}
+                style={`left:${tablet.layout.left}%;top:${tablet.layout.top}%`}
+                data-today-region={tablet.id}
+                aria-expanded="false"
+                aria-controls="today-mig-panel"
+              >
+                <span class="today-mig-tablet-name">{tablet.name}</span>
+                <strong class="today-mig-tablet-figure">{tablet.figure}</strong>
+                <span class="today-mig-tablet-unit">{tablet.unit}</span>
+                <span class="today-mig-tablet-source">{ui.netLabel}</span>
+                <span class="visually-hidden">
+                  {ui.openTablet} {ui.regions[tablet.id].name}
+                </span>
+              </button>
+            ))
+          }
+        </div>
+        <div class="today-mig-pins" data-today-camps hidden>
+          {
+            camps.map((site) => (
+              <button
+                type="button"
+                class="today-mig-pin today-mig-pin-camp"
+                style={`left:${site.left}%;top:${site.top}%`}
+                data-today-camp={site.id}
+                aria-expanded="false"
+                aria-controls="today-mig-panel"
+              >
+                <span class="visually-hidden">
+                  {ui.campOpen}: {site.name}, {site.country}, {site.figure} {ui.campPeople}
+                </span>
+              </button>
+            ))
+          }
+        </div>
+        <div class="today-mig-pins" data-today-routes hidden>
+          {
+            detectionRoutes.map((route) => (
+              <button
+                type="button"
+                class="today-mig-pin today-mig-pin-route"
+                style={`left:${route.left}%;top:${route.top}%`}
+                data-today-route={route.id}
+                aria-expanded="false"
+                aria-controls="today-mig-panel"
+              >
+                <span class="visually-hidden">
+                  {ui.detectionsOpen}: {route.name}
+                </span>
+              </button>
+            ))
+          }
+        </div>
+      </div>
+      <p class="dispersal-sources dispersal-base-credit">{ui.mapCredit}</p>
+    </div>
+
+    <aside class="today-mig-panel wildlife-copy-card" id="today-mig-panel" data-today-panel>
+      <p class="today-mig-empty" data-today-empty>{ui.emptyPanel}</p>
+      <div class="today-mig-detail" data-today-detail hidden>
+        <div class="today-mig-panel-top">
+          <h3 data-today-name></h3>
+          <button type="button" class="today-mig-close" data-today-close>
+            {ui.close}
+          </button>
+        </div>
+        <p class="today-mig-caption" data-today-caption></p>
+        <dl class="today-mig-stats">
+          <div>
+            <dt>{ui.netLabel}</dt>
+            <dd>
+              <strong data-today-net></strong>
+              <span data-today-net-unit></span>
+            </dd>
+          </div>
+          <div>
+            <dt>{ui.stockLabel}</dt>
+            <dd>
+              <strong data-today-stock></strong>
+              <span> {ui.million}</span>
+              <em class="today-mig-stock-tag">{ui.stockNotFlow}</em>
+            </dd>
+          </div>
+        </dl>
+        <h4>{ui.originsTitle}</h4>
+        <p class="today-mig-intro" data-today-origins-intro></p>
+        <ul class="today-mig-origins" data-today-origins></ul>
+        <p class="wildlife-sources">{ui.originsHint}</p>
+        <h4>{ui.corridorsTitle}</h4>
+        <p class="today-mig-intro" data-today-corridors-intro></p>
+        <ul class="today-mig-corridors" data-today-corridors></ul>
+        <p class="wildlife-sources">{ui.corridorsNote}</p>
+      </div>
+      <div class="today-mig-layer-detail" data-today-layer-detail hidden>
+        <div class="today-mig-panel-top">
+          <h3 data-today-layer-name></h3>
+          <button type="button" class="today-mig-close" data-today-layer-close>
+            {ui.close}
+          </button>
+        </div>
+        <p class="today-mig-layer-meta" data-today-layer-meta></p>
+        <p class="today-mig-caption" data-today-layer-note></p>
+        <p class="wildlife-sources" data-today-layer-source></p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="today-mig-layer-panel" data-today-camps-list hidden>
+    <h3>{ui.campsTitle}</h3>
+    <p>{ui.campsLead}</p>
+    <ul class="today-mig-layer-list">
+      {
+        camps.map((site) => (
+          <li>
+            <button type="button" data-today-camp={site.id}>
+              <span>
+                <strong>{site.name}</strong>
+                <em>
+                  {site.country} · {site.agency}
+                </em>
+              </span>
+              <strong>
+                {site.figure} {ui.campPeople}
+              </strong>
+            </button>
+            <p>
+              {ui.campAsOf} {site.asOfLabel}. {site.note}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="oceans-source-note">{ui.campsHonesty}</p>
+    <p class="oceans-source-note">{ui.campsUnrwa}</p>
+  </section>
+
+  <section class="today-mig-layer-panel" data-today-detections-list hidden>
+    <h3>{ui.detectionsTitle}</h3>
+    <p>{ui.detectionsLead}</p>
+    <ul class="today-mig-year-list">
+      {
+        detectionYears.map((row) => (
+          <li>
+            <strong>{row.year}</strong>
+            <span>
+              {row.figure} · {row.changeLabel}
+            </span>
+            <em>{row.note}</em>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="today-mig-stock-tag">{ui.detectionsMetric}</p>
+    <ul class="today-mig-layer-list">
+      {
+        detectionRoutes.map((route) => (
+          <li>
+            <button type="button" data-today-route={route.id}>
+              <span>
+                <strong>{route.name}</strong>
+                <em>{route.year}</em>
+              </span>
+              <strong>{route.figure}</strong>
+            </button>
+            <p>{route.note}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="oceans-source-note">{ui.detectionsHonesty}</p>
+    <p class="oceans-source-note">{ui.detectionsNoGlobal}</p>
+    <p class="wildlife-sources">{ui.detectionsNationalities}</p>
+  </section>
+
+  <p class="oceans-source-note today-mig-intra">{ui.intraCaption}</p>
+  <CitedSourceList heading={page.sourcesLabel} sources={todaySources} />
+</section>
+
+<script
+  define:vars={{
+    panelPayload,
+    campPayload,
+    routePayload,
+    million: ui.million,
+    approx: ui.approx,
+    campAsOf: ui.campAsOf,
+    campPeople: ui.campPeople,
+    detectionsMetric: ui.detectionsMetric,
+    noHeadcount: ui.noHeadcount,
+  }}
+>
+  const root = document.querySelector('[data-today-mig]');
+  if (root) {
+    const buttons = root.querySelectorAll('[data-today-region]');
+    const empty = root.querySelector('[data-today-empty]');
+    const detail = root.querySelector('[data-today-detail]');
+    const layerDetail = root.querySelector('[data-today-layer-detail]');
+    const nameEl = root.querySelector('[data-today-name]');
+    const captionEl = root.querySelector('[data-today-caption]');
+    const netEl = root.querySelector('[data-today-net]');
+    const netUnitEl = root.querySelector('[data-today-net-unit]');
+    const stockEl = root.querySelector('[data-today-stock]');
+    const originsIntro = root.querySelector('[data-today-origins-intro]');
+    const corridorsIntro = root.querySelector('[data-today-corridors-intro]');
+    const originsList = root.querySelector('[data-today-origins]');
+    const corridorsList = root.querySelector('[data-today-corridors]');
+    const arrows = root.querySelectorAll('[data-today-arrow]');
+    const arrowLegend = root.querySelector('[data-today-arrow-legend]');
+    const closeBtn = root.querySelector('[data-today-close]');
+    const layerCloseBtn = root.querySelector('[data-today-layer-close]');
+    const layerName = root.querySelector('[data-today-layer-name]');
+    const layerMeta = root.querySelector('[data-today-layer-meta]');
+    const layerNote = root.querySelector('[data-today-layer-note]');
+    const layerSource = root.querySelector('[data-today-layer-source]');
+    const campsLayer = root.querySelector('[data-today-camps]');
+    const routesLayer = root.querySelector('[data-today-routes]');
+    const campsList = root.querySelector('[data-today-camps-list]');
+    const detectionsList = root.querySelector('[data-today-detections-list]');
+    const layerButtons = root.querySelectorAll('[data-today-layer]');
+    const campButtons = root.querySelectorAll('[data-today-camp]');
+    const routeButtons = root.querySelectorAll('[data-today-route]');
+
+    function clearPins() {
+      campButtons.forEach((button) => {
+        button.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+      });
+      routeButtons.forEach((button) => {
+        button.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    function hideRegion() {
+      buttons.forEach((button) => {
+        button.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+      });
+      if (detail) detail.hidden = true;
+      arrows.forEach((line) => line.classList.remove('is-on'));
+      if (arrowLegend) arrowLegend.hidden = true;
+    }
+
+    function hideLayerDetail() {
+      if (layerDetail) layerDetail.hidden = true;
+      clearPins();
+    }
+
+    function showEmpty() {
+      if (empty) empty.hidden = false;
+    }
+
+    function close() {
+      hideRegion();
+      hideLayerDetail();
+      showEmpty();
+    }
+
+    function open(id) {
+      const data = panelPayload[id];
+      if (!data) return;
+      hideLayerDetail();
+      buttons.forEach((button) => {
+        const on = button.getAttribute('data-today-region') === id;
+        button.classList.toggle('is-open', on);
+        button.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+      if (empty) empty.hidden = true;
+      if (detail) detail.hidden = false;
+      if (nameEl) nameEl.textContent = data.name;
+      if (captionEl) captionEl.textContent = data.caption;
+      if (netEl) netEl.textContent = data.netFigure;
+      if (netUnitEl) netUnitEl.textContent = ' ' + data.netUnit;
+      if (stockEl) stockEl.textContent = data.stockFigure;
+      if (originsIntro) originsIntro.textContent = data.originsIntro;
+      if (corridorsIntro) corridorsIntro.textContent = data.corridorsIntro;
+      if (originsList) {
+        originsList.innerHTML = data.origins
+          .map((row) => {
+            const prefix = row.approx ? approx + ' ' : '';
+            return (
+              '<li><span>' +
+              row.label +
+              '</span><strong>' +
+              prefix +
+              row.figure +
+              ' ' +
+              million +
+              '</strong></li>'
+            );
+          })
+          .join('');
+      }
+      if (corridorsList) {
+        corridorsList.innerHTML = data.corridors
+          .map((row) => {
+            const vol =
+              row.figure === ''
+                ? ''
+                : '<strong>' + (row.approx ? approx + ' ' : '') + row.figure + ' ' + million + '</strong>';
+            return (
+              '<li><span>' +
+              row.from +
+              ' → ' +
+              row.to +
+              '</span>' +
+              vol +
+              '<em>' +
+              row.note +
+              '</em></li>'
+            );
+          })
+          .join('');
+      }
+      arrows.forEach((line) => {
+        const pair = (line.getAttribute('data-today-arrow') || '').split(' ');
+        const on = pair.includes(id);
+        line.classList.toggle('is-on', on);
+      });
+      if (arrowLegend) arrowLegend.hidden = false;
+      detail?.scrollIntoView({ block: 'nearest' });
+    }
+
+    function openCamp(id) {
+      const data = campPayload[id];
+      if (!data) return;
+      hideRegion();
+      clearPins();
+      campButtons.forEach((button) => {
+        const on = button.getAttribute('data-today-camp') === id;
+        button.classList.toggle('is-open', on);
+        button.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+      if (empty) empty.hidden = true;
+      if (layerDetail) layerDetail.hidden = false;
+      if (layerName) layerName.textContent = data.name;
+      if (layerMeta) {
+        layerMeta.textContent =
+          data.country +
+          ' · ' +
+          data.agency +
+          ' · ' +
+          data.figure +
+          ' ' +
+          campPeople +
+          ' · ' +
+          campAsOf +
+          ' ' +
+          data.asOf;
+      }
+      if (layerNote) layerNote.textContent = data.note;
+      if (layerSource) {
+        layerSource.innerHTML =
+          '<a href="' + data.sourceUrl + '" rel="noopener noreferrer">' + data.sourceLabel + '</a>';
+      }
+      layerDetail?.scrollIntoView({ block: 'nearest' });
+    }
+
+    function openRoute(id) {
+      const data = routePayload[id];
+      if (!data) return;
+      hideRegion();
+      clearPins();
+      routeButtons.forEach((button) => {
+        const on = button.getAttribute('data-today-route') === id;
+        button.classList.toggle('is-open', on);
+        button.setAttribute('aria-expanded', on ? 'true' : 'false');
+      });
+      if (empty) empty.hidden = true;
+      if (layerDetail) layerDetail.hidden = false;
+      if (layerName) layerName.textContent = data.name;
+      if (layerMeta) {
+        layerMeta.textContent = data.year + ' · ' + (data.hasCount ? data.figure : noHeadcount);
+      }
+      if (layerNote) layerNote.textContent = data.note;
+      if (layerSource) layerSource.textContent = detectionsMetric;
+      layerDetail?.scrollIntoView({ block: 'nearest' });
+    }
+
+    function setLayer(name, on) {
+      const button = root.querySelector('[data-today-layer="' + name + '"]');
+      button?.classList.toggle('is-on', on);
+      button?.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (name === 'camps') {
+        if (campsLayer) campsLayer.hidden = !on;
+        if (campsList) campsList.hidden = !on;
+      }
+      if (name === 'detections') {
+        if (routesLayer) routesLayer.hidden = !on;
+        if (detectionsList) detectionsList.hidden = !on;
+      }
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const id = button.getAttribute('data-today-region');
+        if (button.classList.contains('is-open')) close();
+        else open(id);
+      });
+    });
+    campButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const id = button.getAttribute('data-today-camp');
+        if (button.classList.contains('is-open')) close();
+        else openCamp(id);
+      });
+    });
+    routeButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const id = button.getAttribute('data-today-route');
+        if (button.classList.contains('is-open')) close();
+        else openRoute(id);
+      });
+    });
+    layerButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-today-layer');
+        const on = !button.classList.contains('is-on');
+        setLayer(name, on);
+        if (!on) hideLayerDetail();
+        if (!on && detail?.hidden) showEmpty();
+      });
+    });
+    closeBtn?.addEventListener('click', close);
+    layerCloseBtn?.addEventListener('click', close);
+    root.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') close();
+    });
+  }
+</script>

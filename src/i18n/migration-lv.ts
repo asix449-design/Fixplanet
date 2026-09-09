@@ -1,6 +1,7 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
 import { lvHumanEventAtlas } from './human-event-atlas-lv';
+import { lvToday } from './migration-today-lv';
 
 export const page: MigrationPage = {
   metaTitle: 'Migrācija — Fix Planet',
@@ -10,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migrācija',
   hubLead: [
     'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Četri plaukti, tīši šķirti. Homo sapiens dziļā vēsture, izejot no Āfrikas, nav Atila. Vēsturiskās «lielās migrācijas» ir nosauktas masu kustības rakstītajos avotos. Putni un citi dzīvnieki joprojām iet sezonālus ceļus. Dzinējspēki ir katrā kartītē. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
+    'Trīs plaukti, tīši šķirti. Šodien ir šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Cilvēki ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Lielās migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Putnu un Dzīvnieku plaukti ir te savērti. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',
@@ -26,23 +27,28 @@ export const page: MigrationPage = {
   pressure: 'Kas mainās',
   wildlifeLink: 'Savvaļas sugas lapa →',
   tiles: {
+    today:
+      'Neto migrācija pēc ANO reģioniem 2023. gadam un kas jau kur dzīvo — krājums, ne šā gada ierašanās.',
     humans: 'Vispirms notikumu kartes: no Āfrikas, Sahula, zemkopība, bantu, austronēzieši, tautu staigāšana, vergu tirdzniecība. Nosauktas kustības, ne ikgadēja tautas skaitīšana.',
     'great-migrations':
-      'Vēsturiskas masu kustības rakstītajos avotos. Pirmā kartīte: huņu spiediens uz romiešu pasauli.',
+      'Dzīvas masu kustības un leduslaikmeta areālu nobīdes: gnu, tauriņi, Arktikas putni, mamutu steppe, Beringija un holocēna atgriešanās.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
     animals: 'Gnu, ziemeļbrieži, vaļi, sikspārņi — atlasītas zīdītāju migrācijas un to dzinējspēki.',
   },
   shelves: {
+    today: 'Šodien',
     humans: 'Cilvēki',
     'great-migrations': 'Lielās migrācijas',
     birds: 'Putni',
     animals: 'Dzīvnieki',
   },
   shelfLeads: {
+    today:
+      'Šodienas starptautiskās migrācijas karte. Uz plāksnītēm ir ANO galveno reģionu neto migrācija 2023. gadam (World Population Prospects 2024) — ne izdomātas ierašanās un izbraukšanas. Atsevišķi ieslēdzamas ir UNHCR nometnes un ES ārējo robežu konstatējumi (Frontex). Bieži dominē iekšreģionu kustība; Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
     humans:
-      'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila paliek Lielajās migrācijās; tautu staigāšanas kartīte ved turp.',
+      'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila un tautu staigāšana paliek šeit; dzīvās kustības ir Lielajās migrācijās.',
     'great-migrations':
-      'Nosauktas masu kustības vēsturiskajā laikā — ne izeja no Āfrikas. Pirmā kartīte ir huņu spiediens uz vēlo romiešu pasauli. Vēlāk var pievienot citas kartītes; tas nav mācību grāmata par katru Völkerwanderung tautu.',
+      'Dzīvas masu kustības un klimata laikmeta areālu nobīdes — ne izeja no Āfrikas un ne otra Atilas lapa. Tautu staigāšana paliek Cilvēkos. Kartītes nosauc dzinējspēku, sezonu vai dokumentētu nobīdi un avotu.',
     birds:
       'Sezonālā putnu migrācija ir barības un vairošanās mašīna. Lielākā daļa tālo sugu ligzdo augstākos platuma grādos garās dienas vasarā, tad lido pretī ziemas barībai. BirdLife un CMS apraksta lidojumu ceļu ģimenes — shēmātiskus koridorus, ne katra bara GPS trases.',
     animals:
@@ -68,7 +74,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Savvaļa · Homo sapiens →',
     greatMigrationsCta: 'Lielās migrācijas →',
     greatMigrationsNote:
-      'Vēsturiskas masu kustības rakstītajos avotos — huņņi un vēlākas kartītes — ir atsevišķā plauktā. Tautu staigāšanas kartīte augstāk ved turp, nevis dublē to enciklopēdiju.',
+      'Dzīvas masu kustības — gnu, tauriņi, Arktikas putni — ir atsevišķā plauktā. Tautu staigāšanas kartīte augstāk ir Atilas laikmeta kartīte; tur to nedublē.',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem ierašanās soļiem',
     mapLead:
@@ -145,9 +151,93 @@ export const page: MigrationPage = {
     flywaysBaseCredit:
       'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums).',
   },
+  today: lvToday,
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'mammoth-steppe-collapse': {
+    title: 'Mamutu stepes sabrukums',
+    hook: 'Ne bēgšana uz ziemeļiem Arktikā: auksta sausa steppe no Eiropas līdz Aļaskai nomainījās ar mežu, mitrājiem un tundru — un vairāku milžu pēdējie areāli sašaurinājās uz austrumiem.',
+    imageAlt:
+      'Auksta sausa steppe krēslā ar tālu mamutu un zirgu — zudušās mamutu stepes zīme, ne nosaukta kaulu vieta',
+    what: 'Apmēram no 20 000 līdz 8 000 gadiem mamutu steppe — Guthrie nosaukums aukstajai, sausajai, augstražīgajai zāles joslai no Rietumeiropas caur Sibīriju līdz Aļaskai — nomainījās ar mitrāku meža, purvu un tundras mozaīku. Zirgi, stepes bizoni, vilnainie degunradži un mamuti ne tikai izmira uz vietas. Datētie pēdējie ieraksti rāda areālu sašaurināšanos un nobīdi. Ziemeļeirāzijā pēdējās sauszemes kabatas ir iekšējos austrumos — Rietumsibīrija, Aizurālija, tad salu refūgiji —, ne vienkāršs gājiens «uz ziemeļiem Arktikā». Šī ir areāla nobīdes kartīte. Sugu lapas ir Savvaļas izmirušo plauktā.',
+    route:
+      'Pleistocēna apvalks gāja no rietumiem uz austrumiem, ne polāra šoseja. Kad Eiropa apmežojās, datētie pēdējie milzu brieži (Megaloceros) agrāk izzūd rietumos un turas Rietumsibīrijā ap 7700 gadiem (Stuart, Kosintsev, Higham un Lister 2004). Mamuti izzūd no lielākās daļas kontinenta pie pleistocēna–holocēna robežas, tad dzīvo Vrangelas salā ap 4000 gadiem — vienlaikus ar agrīnajām bronzas valstīm, ne pēdējo ledus impulsu (Vartanyan, Garutt un Sher 1993). Altaja–Sajanu un Kazahstānas stepju–kalnu joslas ir tuvākas pleistocēna sajaukumam nekā Rietumeiropa; tā ir biogeogrāfiska atlieka, ne katra bara GPS uz austrumiem.',
+    drivers:
+      'Klimats un veģetācija ir nosauktie pirmās kārtas dzinējspēki: sasilšana, mitrākas augsnes, pārpurvošanās un slēgts mežs noņem sauso zāli, kas vajadzīga stepes ģildei (Guthrie 2001; Stuart et al. 2004 kontrasts). Cilvēku medības ir reālas tur, kur datumi un arheoloģija pārklājas; tas nav viena cēloņa sauklis. Salu izolācija (Vrangelis) ir vēlāks, mazāks pulkstenis.',
+    timing:
+      'Pēdējais ledāja maksimums ap 26–19 tūkstošiem gadu; galvenā veģetācijas maiņa nākamajos gadu tūkstošos. Milzu briedis: ~7700 gadi Rietumsibīrijā. Vrangelas mamuti: līdz ~4000 gadiem. Aļaskas nogulumu DNS (Haile et al. 2009) dod mamutu un zirgu ap 10 500 gadiem — vēlāk nekā kauli. Vēlākie Arktikas kaulu pārskati šo «spoku» areālu apstrīd. Lapa marķē strīdu, neizvēlas saukli.',
+    pressure:
+      'Steppe kā holarktisks bioms ir zudusi. Palikuši fragmenti un analoģijas. Nelasiet mūsdienu ziemeļbriežu baru kā izdzīvojušu mamutu stepi. Sugu saraksti ir Savvaļā; šai kartītei pieder kustība.',
+    sourcesNote:
+      'Guthrie 2001 par biomu. Stuart et al. 2004 par holocēna milzu briedi Sibīrijā un kontrastu ar Vrangelu. Vartanyan et al. 1993 par Vrangelu. Haile et al. 2009 par Aļaskas sedaDNS, ar atzīmi, ka vēlākie kaulu pārskati to apstrīd.',
+  },
+  'beringian-land-bridge': {
+    title: 'Beringijas sauszemes tilts',
+    hook: 'Kad jūra nokrita, Sibīrija un Aļaska bija viena līdzenums. Zirgi to šķērsoja abos virzienos. Ne katrs milzis varēja.',
+    imageAlt:
+      'Vējains Beringijas līdzenums ar tāliem zirgiem un aukstu dūmaku — tilta zīme, ne datēta pāreja',
+    what: 'Ledāja zemā jūras līmenī Beringijas tilts savienoja Sibīrijas ziemeļaustrumus ar Aļasku kā nepārtrauktu, bieži mitru un skarbu līdzenumu — maksimumā simtiem kilometru, dažās rekonstrukcijās tuvu 1600 km. Tas ir filtrs, ne brīva šoseja. Senie zirgu genomi rāda atkārtotu apmaiņu abos virzienos. Urālu–Arktikas līnija iegāja Ziemeļamerikā vairākas reizes ap 50 000–19 000 gadiem; agrāki impulsa no austrumiem uz rietumiem atstāja pēdas Eirāzijā (Vershinina, Librado u. c., Science 2025; Vershinina et al. 2021). Bizoni vēlāk gāja bezledus koridorā abos virzienos, kad tas atvērās. Vilnainais degunradzis Amerikā nenonāca. Amerikas kamielis un īsvaigu lācis Āzijā nenonāca. Neesamība arī ir liecība.',
+    route:
+      'Rietumi–austrumi un austrumi–rietumi pāri atsegtajam šelfam, tad — kad Laurentiā un Kordiljeru vaiņagi sāka šķirties — pa Rietumkanādas bezledus koridoru. Heintzman et al. (2016) datē pirmos dienvidu bizonus koridorā ap 13 400 gadiem un ziemeļu ap 13 000. Zirgi, kas vēlāk iegāja koridorā, tālu neizpletās; 2025. gada darbs atbrīvoto zemi lasa kā pārāk mitru krioskērai steppei. Klusā okeāna piekrastes ceļi zirgu genomos ir atsevišķs, agrāks stāsts, ne otrs tilts.',
+    drivers:
+      'Jūras līmenis un ledus. Kad okeāns ir zems, šelfs ir sauszeme; kad vaiņagi aizslēdz ūdeni, tilts pastāv. Biotops uz tilta — mitrums, zāle, kalni — noteica, kurš var dzīvot pietiekami ilgi, lai šķērsotu. Tā nav «no Āfrikas» bulta, uzlīmēta dzīvniekiem.',
+    timing:
+      'Pēdējā ilgā atvērtā fāze ietver intervalu ~50–19 tūkstoši gadu zirgu klīnam 2025. gada genomos. Bezledus koridors ir vēlā pleistocēna durvis (slēgts pēc ~23 000 līdz ~13 400). Holocēna applūšana beidz tiltu kā sauszemi.',
+    pressure:
+      'Tilts ir zem ūdens. Mācība ir caurlaidība: dažas sugas gāja daudzas reizes, citas nekad. Neizdomājiet katras pārejas tautas skaitīšanu un neuzskatiet Beringiju par tukšu ceļu.',
+    sourcesNote:
+      'Science 2025 zirgu genomi — divvirzienu vēlā pleistocēna satiksme un Urālu līnija. Vershinina et al. 2021 — agrāki impulsi un filtrs. Heintzman et al. 2016 — bizoni koridorā. Degunradža / kamieļa / īsvaigu lāča neesamība ir standarta holarktiskais ieraksts.',
+  },
+  'postglacial-colonization': {
+    title: 'Pēc ledus — Eiropa un Ziemeļamerika',
+    hook: 'Kad ledus atvēra zemi, koki, brieži, lāči un vilki iegāja — no dienvidu refūgijiem, un ziemeļos no Beringijas.',
+    imageAlt:
+      'Agrā holocēna meža mala ar staltbriedi pie koku līnijas — atgriešanās pēc ledus zīme, ne nosaukts putekšņu urbums',
+    what: 'Pēc pēdējā ledāja maksimuma (~26–19 tūkstoši gadu) milzīgas Eiropas un Ziemeļamerikas platības atkal kļuva apdzīvojamas. Tā ir vislabāk dokumentētā holocēna «lielā migrācija» biotai — ne viena suga un ne viens gads. Hjūita ģenētiskās kartes (1999, 2000) ir Eiropas ietvars: mērenās sugas gaidīja Ibērijā, Itālijā, Balkānos un dažās ziemeļu kabatās (Karpati u. c.), tad izpletās. Dažādas sugas lietoja dažādus pussalas — viņa sienāža, eža un lāča paradigmas. Ziemeļamerikai ir savi dienvidu / austrumu / Beringijas avoti. Divi publicēti koku ātrumi ir nosauktajiem Ziemeļamerikas austrumu skuju kokiem (Payette et al. 2022). Tie nav sauklis katram kokam.',
+    route:
+      'Staltbriedis un stirna: dienvidu refūgiji aukstuma virsotnē (LGM un agrā vēlā leduslaikmeta daļa), tad pēkšņs areāls Centrāleiropā Grenlandes interstadiāla 1 / Bēlinga–Allerēda sākumā (~14,7 tūkstoši gadu) un ziemeļu Eiropas zemienēs agrā holocēnā (Sommer & Zachos 2009). Brūnais lācis, ezis un meža pele seko Hjūita šuvju joslām, kur sastapās izplešošies genomi. Pelēkais vilks ir cita ģeometrija: Loog et al. (2020) modelē dzīvo mitohondriālo daudzveidību kā ekspansiju no Beringijas — vai tuvās Ziemeļaustrumāzijas — pēdējā ledāja maksimuma beigās, ne kā vienkāršu Ibērijas pastaigu. Ziemeļamerikā bezledus koridors (Heintzman et al. 2016) ir vēlas durvis, ne pirmais cilvēku ceļš. Koki vilka faunu. Payette et al. (2022) pēc datētiem makrofosiliem dod melnajai eglei vidēji 25 km gadsimtā no Bēlinga–Allerēda ledus malas un Benska priedei 19 km gadsimtā no neaizledotajiem Ziemeļamerikas austrumiem līdz subarktiskajai robežai, kur šis gājiens apstājās ap 3000 gadiem. Fennoskandijas augu ekosistēmas salikās gadu tūkstošiem; Alsos et al. (2022) atrod pazīmju un funkcionālās daudzveidības stabilizāciju ap 8000 gadiem, pat kad sugas vēl ieradās.',
+    drivers:
+      'Vispirms klimats: ledus atkāpšanās, garākas sezonas, augsnes, kas tur kokus. Tad biotops. Briedis neieņems līdzenumu, kas vēl ir ledus vai vēl sausa steppe. Cilvēki ieiet jau kustīgā laukā; viņi nav nosauktais pirmās holocēna meža līnijas cēlonis.',
+    timing:
+      'LGM ~26–19 ka; Bēlings–Allerēds ~14,7 ka; agrā holocēna ziemeļu Eiropas aizpildīšana. Viena Arktikas Norvēģijas ala — Nygrotta (Boilard et al. 2024) — jau dod saldūdens zivis, brūno lāci, norvēģu lemmingu un balto zaķi slānī ap 9500 gadiem: kolonizācija tūlīt aiz vietējā ledus. Ap 5800 gadiem vēlākais slānis tajā pašā alā fiksē aukstumam piemērotu sugu aiziešanu no šī griezuma. Tie ir datēti horizoni vienā alā, ne Eiropas tautas skaitīšana.',
+    pressure:
+      'Holocēna mežs pats tagad ir cirsts, sildīts un nožogots. Šī kartīte ir migrācija pēc ledus. Vēlākā cilvēku ainavas maiņa pieder citiem plauktiem. Nesalieciet pleistocēna Cilvēkus (no Āfrikas) šajā biotas atgriešanā.',
+    sourcesNote:
+      'Hewitt 1999 un 2000 par refūgijiem un šuvju joslām. Sommer & Zachos 2009 par briežu pulksteni. Loog et al. 2020 par vilka ekspansiju. Payette et al. 2022 par diviem nosauktiem Ziemeļamerikas koku ātrumiem. Alsos et al. 2022 par Fennoskandijas pazīmju stabilitāti no ~8 ka. Boilard et al. 2024 par Nygrottu. Heintzman et al. 2016 par Ziemeļamerikas koridora pulksteni.',
+  },
+  'butterfly-range-shifts': {
+    title: 'Tauriņu areālu nobīdes',
+    hook: 'Ne viena pāreja: daudzas sugas ir pārbīdījušās pret poliem vai augšup pa nogāzi, kad klimats silst, — un dažas joprojām lido pāri kontinentiem.',
+    imageAlt: 'Dadžu raibenis uz savvaļas zieda — tāls migrants kā klimata laikmeta tauriņu kustības zīme',
+    what: '«Masu» šeit nav Serengeti cilpa. Tie ir divi fakti ar avotiem. Pirmkārt, tauriņu sabiedrības ir pārbīdījušas ligzdošanas areālus pret poliem un augšup pa nogāzi: Edītes raibenis Ziemeļamerikas rietumos (Parmesan 1996) un globāls nospiedums daudziem taksoniem (Parmesan & Yohe 2003). Otrkārt, dažas sugas veic īstas tālas sezonālas migrācijas. Dadžu raibenis (Vanessa cardui) ir vislabāk dokumentēts: vairāku paaudžu loki starp tropisko Āfriku un Eiropu (Stefanescu et al. 2013). Šī kartīte neizdomā vienu pasaules tauriņu šoseju.',
+    route:
+      'Areālu nobīdes ir vietējas vai reģionālas: kolonijas izdziest siltajā vai sausajā malā un parādās tālāk ziemeļos vai augstāk. Dadžu raibeņi iet sezonālā lokā, kas var saistīt Sahelu un Magribu ar Eiropu un atpakaļ — paaudžu ķēde, ne viens kukainis visā kartē. Monarhs Amerikā ir cita sistēma; to šeit nelīmē kā to pašu stāstu.',
+    drivers:
+      'Areālu nobīdēm dzinējspēks ir klimats: sasilšana un izžūšana, kas bojā bijušo ligzdošanas vietu un padara lietojamas jaunas. Dadžu raibeņiem — sezonāli saimniekaugu un nektāra viļņi. Ne viens, ne otrs nav leduslaikmeta koridors cilvēku nozīmē.',
+    timing:
+      'Areālu nobīdes raksti runā par desmitgadēm, ne migrācijas kalendāru. Dadžu raibeņu viļņi ir sezonāli un mainās pa gadiem; «iebrukuma gadi» Eiropā ir dokumentēti maksimumi, ne stingrs grafiks.',
+    pressure:
+      'Klimats turpina kustināt apvalku. Biotopu zudums (pļavas, saimniekaugi) var pārraut nobīdi, kas kartē izskatās viegla. Kukaiņu skaita kritums ir atsevišķs, platāks spiediens; kartīte neizdomā globālu tauriņu tautas skaitīšanu.',
+    sourcesNote:
+      'Parmesan 1996 un Parmesan & Yohe 2003 ir nosauktie areālu nobīdes raksti. Stefanescu et al. 2013 ir dadžu raibeņa loks. «Masu» ir marķēts ar šīm divām nozīmēm, ne kā gnu analogs.',
+  },
+  'arctic-migratory-birds': {
+    title: 'Arktikas gājputni',
+    hook: 'Zīriņi, lielie piekūni, tārtiņveidīgie, zosis: Arktikas vasara ir barības impulss, un ziema ir citur.',
+    imageAlt: 'Polārie zīriņi virs auksta ziemeļu krasta — zīme augsto platuma grādu putnu migrācijai, ne nosaukta kolonija',
+    what: 'Šī ir klases kartīte, ne otra polārā zīriņa enciklopēdija un ne trešā «ceļu pēc ledus» lapa. Daudzi putni, kas ligzdo Arktikas un subarktiskajā tundrā, aiziet, kad gaisma un kukaiņi beidzas. Polārie zīriņi iet no pola līdz polam (Egevang et al. 2010). Lielie piekūni seko medījumam gar krastiem un lidojumu ceļiem. Tārtiņveidīgie apstājas dažos dūņu līdzenumos. Zosis seko zālei un atkusnim. BirdLife un CMS apraksta lidojumu ceļu ģimenes; CAFF ir reģionālais kopsavilkums. Sezonālā migrācija jau bija leduslaikmetā (modeļi uz desmitiem tūkstošu gadu). Pēc ledus mainījās ģeogrāfija: ligzdošana saspiesties uz dienvidiem, īpaši Ziemeļamerikā zem Laurentiā vaiņaga, tad holocēns atkal atvēra Arktikas vasaru. Thorup et al. (PNAS, 2021) hindkastē sarkanmuguras čakstes afro-palearktisko cilpu 120 000 gadu: sezonālā migrācija, visticamāk, turējās leduslaikmetā, bieži Āfrikas iekšienē; piemērotā Eiropas vasaras dzīvotne pēc LGM atkal izpletās. Tas ir modelēts klases piemērs, ne otra putnu ceļu enciklopēdija.',
+    route:
+      'Ligzdošana garajā Arktikas dienā; ziemošanas vietas mērenajos vai tropiskajos mitrājos, krastos vai — zīriņiem — pie Antarktīdas pakledus. Austrumatlantijas, Austrumāzijas–Australāzijas, Misisipi un Klusā okeāna Amerikas ceļi nes Arktikas ligzdotājus. Gu et al. (Nature, 2021) izsekoja Eirāzijas Arktikas lielos piekūnus piecos mūsdienu ceļos un saista tos ar ligzdošanas vietu nobīdi no LGM uz holocēnu. Thorupa čakstes modelis ir afro-palearktiskais pretstats: cilpa pārdzīvoja apledojumu, pārbīdot ligzdošanas platumu, neizgudrojot migrāciju no jauna. Līnijas ir apvalki, ne katra bara GPS. Kuitalas Aļaska–Jaunzēlande ir Klusā okeāna saīsinājums, ne vidējais.',
+    drivers:
+      'Sezonālā produkcija. Augsto platuma grādu vasaras dod garu dienu un kukaiņu, zivju un jaunas zāles uzliesmojumu. Polārās ziemas — nē. Vējš un krasti vada lēto ceļu. Tas ir barības un vairošanās pulkstenis, ne bēgļu stāsts.',
+    timing:
+      'Uz ziemeļiem ziemeļu pavasarī, uz dienvidiem pēc ligzdošanas. Dažām populācijām ierašanās ir pārbīdījusies agrāk, kad pavasari silst, — fenoloģija, ne jauns lidojumu ceļš. Rekordu kilometri ir nosaukti izsekošanas raksti.',
+    pressure:
+      'Klimats kustinā ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. CAFF un BirdLife Arktikas migrantus uzskata par kopīgu lidojumu ceļu uzdevumu, ne vienas sugas muzeju. Polārā zīriņa lapa paliek vecajā dziļajā adresē, ja vajag tikai 70 000 km rakstu.',
+    sourcesNote:
+      'Egevang et al. 2010 par zīriņiem; Gu et al. 2021 par lielā piekūna ceļu salikšanu pēc ledus; Thorup et al. 2021 par čakstes cilpu 120 000 gadu; BirdLife; CAFF; CMS. Kartīte neizdomā visu Arktikas migrantu skaitīšanu un neatver otru putnu ceļu enciklopēdiju.',
+  },
   'hunnic-invasion': {
     title: 'Huņu spiediens uz Romu',
     hook: 'Ne izeja no Āfrikas: 4.–5. gadsimta stepes spēks, kura spiediens palīdzēja grūst gotus un citas tautas uz romiešu robežām.',

@@ -5,6 +5,7 @@ import HubTile from '../components/HubTile.astro';
 import HumanEraAtlas from '../components/HumanEraAtlas.astro';
 import MigrationCard from '../components/MigrationCard.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
+import TodayMigrationMap from '../components/TodayMigrationMap.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   flywaySources,
@@ -73,7 +74,7 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
             {page.hubLead.map((para) => <p>{para}</p>)}
           </div>
           <p class="home-hub-kicker migration-choose">{page.chooseShelf}</p>
-          <nav class="hub-grid" aria-label={page.chooseShelf}>
+          <nav class="hub-grid hub-grid-3" aria-label={page.chooseShelf}>
             {
               migrationHub.map((item) => (
                 <HubTile
@@ -96,6 +97,18 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
           lede={page.shelfLeads[activeShelf]}
         />
       )
+    )
+  }
+
+  {
+    activeShelf === 'today' && (
+      <section class="section section-hub-follow" aria-labelledby="today-map-heading">
+        <div class="wrap">
+          <div class="wildlife-map-panel today-mig-wrap">
+            <TodayMigrationMap />
+          </div>
+        </div>
+      </section>
     )
   }
 

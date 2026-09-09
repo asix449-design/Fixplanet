@@ -1,6 +1,7 @@
 import type { MigrationPage } from './migration';
 import type { MigrationEntryCopy } from '../data/migration';
 import { plHumanEventAtlas } from './human-event-atlas-pl';
+import { plToday } from './migration-today-pl';
 
 export const page: MigrationPage = {
   metaTitle: 'Migracja — Fix Planet',
@@ -10,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migracja',
   hubLead: [
     'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
-    'Cztery półki, celowo osobno. Głęboka historia Homo sapiens wychodzącego z Afryki to nie Attyla. Historyczne „wielkie migracje” to nazwane ruchy masowe w źródłach pisanych. Ptaki i inne zwierzęta wciąż odbywają sezonowe trasy. Na każdej karcie są czynniki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
+    'Trzy półki, celowo osobno. Dziś to współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Ludzie to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Wielkie migracje to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Półki Ptaki i Zwierzęta są tu zwinięte. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',
@@ -26,23 +27,28 @@ export const page: MigrationPage = {
   pressure: 'Co się zmienia',
   wildlifeLink: 'Karta gatunku w Przyrodzie →',
   tiles: {
+    today:
+      'Migracja netto według regionów ONZ za 2023 i kto już gdzie mieszka — zasób, nie przyjazdy z tego roku.',
     humans: 'Najpierw mapy zdarzeń: z Afryki, Sahul, rolnictwo, bantu, austronezyjczycy, wędrówki ludów, handel niewolnikami. Nazwane ruchy, nie spis rok po roku.',
     'great-migrations':
-      'Historyczne ruchy masowe w źródłach pisanych. Pierwsza karta: hunicka presja na świat rzymski.',
+      'Żywe ruchy masowe i przesunięcia z epoki lodu: gnu, motyle, ptaki arktyczne, step mamutowy, Beringia i powrót holocenu.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
     animals: 'Gnu, karibu, wieloryby, nietoperze — wybrane migracje ssaków i ich czynniki.',
   },
   shelves: {
+    today: 'Dziś',
     humans: 'Ludzie',
     'great-migrations': 'Wielkie migracje',
     birds: 'Ptaki',
     animals: 'Zwierzęta',
   },
   shelfLeads: {
+    today:
+      'Współczesna mapa migracji międzynarodowej. Na tabliczkach jest migracja netto głównych regionów ONZ za 2023 (World Population Prospects 2024) — nie wymyślone przyjazdy i wyjazdy. Osobno włączane są obozy UNHCR i wykrycia na granicach zewnętrznych UE (Frontex). Często dominuje ruch wewnątrzregionalny; Afryka → Europa nie jest rysowana jako główna historia świata.',
     humans:
-      'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla zostaje na Wielkich migracjach; karta wędrówek ludów tam prowadzi.',
+      'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla i wędrówki ludów zostają tutaj; żywe ruchy są na Wielkich migracjach.',
     'great-migrations':
-      'Nazwane ruchy masowe w czasie historycznym — nie wyjście z Afryki. Pierwsza karta to hunicka presja na późny świat rzymski. Później można dodać kolejne wpisy; to nie podręcznik o każdym ludzie Völkerwanderung.',
+      'Żywe ruchy masowe i przesunięcia arealów w epoce klimatu — nie wyjście z Afryki i nie druga karta Attyli. Wędrówki ludów zostają na Ludziach. Karty nazywają czynnik, sezon albo udokumentowane przesunięcie i źródło.',
     birds:
       'Sezonowa migracja ptaków to maszyna pokarmu i rozrodu. Większość gatunków dalekodystansowych gniazduje na wyższych szerokościach w długodniowym lecie, potem leci ku zimowemu pokarmowi. BirdLife i CMS opisują rodziny szlaków — schematyczne korytarze, nie ślady GPS każdego stada.',
     animals:
@@ -68,7 +74,7 @@ export const page: MigrationPage = {
     wildlifeCta: 'Przyroda · Homo sapiens →',
     greatMigrationsCta: 'Wielkie migracje →',
     greatMigrationsNote:
-      'Historyczne ruchy masowe w źródłach pisanych — Hunowie i późniejsze karty — są na osobnej półce. Karta wędrówek ludów powyżej prowadzi tam zamiast powielać tę encyklopedię.',
+      'Żywe ruchy masowe — gnu, motyle, ptaki arktyczne — są na osobnej półce. Karta wędrówek ludów powyżej to karta epoki Attyli; tam jej nie powielamy.',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi etapami przybycia',
     mapLead:
@@ -145,9 +151,93 @@ export const page: MigrationPage = {
     flywaysBaseCredit:
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna).',
   },
+  today: plToday,
 };
 
 export const entries: Record<string, MigrationEntryCopy> = {
+  'mammoth-steppe-collapse': {
+    title: 'Zanik stepu mamutowego',
+    hook: 'Nie ucieczka na północ w Arktykę: zimny suchy step od Europy po Alaskę ustąpił lasom, mokradłom i tundrze — a ostatnie areały kilku olbrzymów skurczyły się na wschód.',
+    imageAlt:
+      'Zimny suchy step o zmierzchu z odległym mamutem i koniem — znak utraconego stepu mamutowego, nie nazwane stanowisko kości',
+    what: 'Między około 20 000 a 8 000 lat temu step mamutowy — nazwa Guthriego na zimny, suchy, wysoko produktywny pas traw od zachodniej Europy przez Syberię po Alaskę — ustąpił wilgotniejszej mozaice lasu, bagna i tundry. Konie, bizony stepowe, nosorożce włochate i mamuty nie tylko wymierały lokalnie. Datowane ostatnie zapisy pokazują kurczenie i przesuwanie arealów. Dla północnej Eurazji ostatnie kieszenie lądowe leżą we wnętrzu wschodu — Syberia Zachodnia, Zauralie, potem refugia wyspowe — nie prosty marsz „na północ w Arktykę”. To karta przesunięcia arealu. Strony gatunków są na półce wymarłych w Przyrodzie.',
+    route:
+      'Plejstoceńska obwiednia szła ze zachodu na wschód, nie polarna autostrada. Gdy Europa zarastała lasem, datowane ostatnie jelenie olbrzymie (Megaloceros) wcześniej znikają na zachodzie i trwają na Syberii Zachodniej do około 7700 lat (Stuart, Kosintsev, Higham i Lister 2004). Mamuty znikają z większej części lądu koło granicy plejstocen–holocen, potem żyją na Wyspie Wrangla do około 4000 lat — równocześnie z wczesnymi państwami brązu, nie z ostatnim pulsem lodu (Vartanyan, Garutt i Sher 1993). Pasy Ałtaju–Sajanu i kazachskich stepów–gór są bliższe plejstoceńskiej mieszance niż Europa Zachodnia; to reszta biogeograficzna, nie GPS każdego stada na wschód.',
+    drivers:
+      'Klimat i roślinność to nazwane czynniki pierwszego rzędu: ocieplenie, wilgotniejsze gleby, zabagnienie i las zwarty zabierają suchą trawę gildii stepowej (Guthrie 2001; kontrast jelenia olbrzymiego i mamuta u Stuart et al. 2004). Polowanie ludzi jest realne tam, gdzie daty i archeologia się pokrywają; to nie hasło jednej przyczyny. Izolacja wyspowa (Wrangel) to późniejszy, mniejszy zegar.',
+    timing:
+      'Ostatnie maksimum glacjalne około 26–19 tysięcy lat; główna zmiana roślinności w następnych tysiącleciach. Jeleń olbrzymi: ~7700 lat na Syberii Zachodniej. Mamuty Wrangla: do ~4000 lat. Osadowe DNA z Alaski (Haile et al. 2009) daje mamuta i konia do około 10 500 lat — później niż kości. Późniejsze przeglądy kostne Arktyki kwestionują ten „widmowy” areał. Strona oznacza spór, nie wybiera hasła.',
+    pressure:
+      'Step jako biom holaraktyczny zniknął. Zostały fragmenty i analogie. Nie czytajcie współczesnego stada reniferów jako ocalałego stepu mamutowego. Listy gatunków są w Przyrodzie; tej karcie należy ruch.',
+    sourcesNote:
+      'Guthrie 2001 o biomie. Stuart et al. 2004 o holoceńskim jeleniu olbrzymim Syberii i kontraście z Wranglem. Vartanyan et al. 1993 o Wranglu. Haile et al. 2009 o sedaDNA Alaski, z adnotacją późniejszego sporu.',
+  },
+  'beringian-land-bridge': {
+    title: 'Most beringijski',
+    hook: 'Gdy morze opadło, Syberia i Alaska były jedną równiną. Konie szły nią w obie strony. Nie każdy olbrzym dał radę.',
+    imageAlt:
+      'Wietrzna równina beringijska z odległymi końmi i zimną mgłą — znak mostu, nie datowana przeprawa',
+    what: 'Przy glacjalnie niskim poziomie morza most beringijski łączył północno-wschodnią Syberię z Alaską w ciągłą, często mokrą i surową równinę — w maksimum setki kilometrów, w niektórych rekonstrukcjach blisko 1600 km. To filtr, nie wolna autostrada. Starożytne genomy koni pokazują powtarzaną wymianę w obie strony. Linia uralo-arktyczna wchodziła do Ameryki Północnej kilka razy między około 50 000 a 19 000 lat; wcześniejsze impulsy ze wschodu na zachód zostawiły ślady w Eurazji (Vershinina, Librado i in., Science 2025; Vershinina et al. 2021). Bisony później szły korytarzem bezlodowym w obie strony, gdy się otworzył. Nosorożec włochaty nigdy nie dotarł do Ameryk. Wielbłąd amerykański i niedźwiedź krótkopyski nigdy do Azji. Nieobecność też jest świadectwem.',
+    route:
+      'Zachód–wschód i wschód–zachód przez odsłonięty szelf, potem — gdy tarcze laurentyjska i kordylierska zaczęły się rozchodzić — korytarzem bezlodowym zachodniej Kanady. Heintzman et al. (2016) datują pierwsze południowe bisony w korytarzu około 13 400 lat, północne około 13 000. Konie, które później weszły w korytarz, nie rozeszły się daleko; praca z 2025 czyta odlodzony grunt jako zbyt mokry dla krio-ksericznego stepu. Pacyficzne drogi brzegowe w genomach koni to osobna, wcześniejsza historia, nie drugi most.',
+    drivers:
+      'Poziom morza i lód. Gdy ocean jest niski, szelf jest lądem; gdy tarcze zamykają wodę, most istnieje. Siedlisko na moście — wilgoć, trawa, góry — decydowało, kto może przeżyć dość długo, by przejść. To nie strzałka „z Afryki” przyklejona do zwierząt.',
+    timing:
+      'Ostatnia długa faza otwarta obejmuje przedział ~50–19 tysięcy lat dla klina koni w genomach z 2025. Korytarz bezlodowy to drzwi najpóźniejszego plejstocenu (zamknięty po ~23 000 do ~13 400). Holoceński zalew kończy most jako ląd.',
+    pressure:
+      'Most jest pod wodą. Lekcja to przepuszczalność: jedne gatunki szły wielokrotnie, inne nigdy. Nie wymyślajcie spisu każdej przeprawy i nie traktujcie Beringii jak pustej drogi.',
+    sourcesNote:
+      'Genomy koni Science 2025 — dwukierunkowy ruch późnego plejstocenu i linia uralska. Vershinina et al. 2021 — wcześniejsze impulsy i filtr. Heintzman et al. 2016 — bisony w korytarzu. Nieobecności nosorożca / wielbłąda / niedźwiedzia krótkopyskiego to standardowy zapis holaraktyczny.',
+  },
+  'postglacial-colonization': {
+    title: 'Po lodzie — Europa i Ameryka Północna',
+    hook: 'Gdy lód odsłonił ziemię, drzewa, jelenie, niedźwiedzie i wilki weszły — z południowych refugiów, a na północy z Beringii.',
+    imageAlt:
+      'Skraj wczesnoholoceńskiego lasu z jeleniem szlachetnym przy linii drzew — znak powrotu po lodzie, nie nazwany profil pyłkowy',
+    what: 'Po ostatnim maksimum glacjalnym (~26–19 tysięcy lat temu) ogromne obszary Europy i Ameryki Północnej znów stały się zdatne do życia. To najlepiej udokumentowana holoceńska „wielka migracja” bioty — nie jeden gatunek i nie jeden rok. Mapy genetyczne Hewitta (1999, 2000) to rama europejska: gatunki umiarkowane czekały na Iberii, we Włoszech, na Bałkanach i w niektórych północnych kieszeniach (Karpaty i inne), potem się rozszerzały. Różne gatunki używały różnych półwyspów — jego paradygmaty konika polnego, jeża i niedźwiedzia. Ameryka Północna ma własne źródła południowe / wschodnie / beringijskie. Dwie opublikowane prędkości drzew dotyczą nazwanych wschodnioamerykańskich iglaków (Payette et al. 2022). To nie hasło dla każdego drzewa.',
+    route:
+      'Jeleń szlachetny i sarna: południowe refugia w szczycie chłodu (LGM i wczesny późny glacjał), potem nagły zasięg w Europie Środkowej na początku interstadiału grenlandzkiego 1 / Bølling–Allerød (~14,7 tysiąca lat) i na północne niziny europejskie we wczesnym holocenie (Sommer & Zachos 2009). Niedźwiedź brunatny, jeż i mysz zaroślowa idą strefami szwu Hewitta, gdzie spotykały się rozszerzające genomy. Wilk szary to inna geometria: Loog et al. (2020) modelują żywą różnorodność mitochondrialną jako ekspansję z Beringii — albo pobliskiej Azji Północno-Wschodniej — pod koniec ostatniego maksimum glacjalnego, nie jako prosty spacer z Iberii. W Ameryce Północnej korytarz bezlodowy (Heintzman et al. 2016) to późne drzwi, nie pierwsza droga ludzi. Drzewa ciągnęły faunę. Payette et al. (2022) z datowanych makroskamieniałości dają świerkowi czarnemu średnio 25 km na wiek od krawędzi lodu Bølling–Allerød i sosnie Banksa 19 km na wiek z niezlodowaciałej wschodniej Ameryki Północnej do jej subarktycznej granicy, gdzie ten pochód zatrzymał się około 3000 lat temu. Fennoskandzkie ekosystemy roślinne składały się przez tysiąclecia; Alsos et al. (2022) znajdują stabilizację różnorodności cech i funkcji około 8000 lat temu, nawet gdy gatunki wciąż napływały.',
+    drivers:
+      'Najpierw klimat: odwrót lodu, dłuższe sezony, gleby, które utrzymają drzewa. Potem siedlisko. Jeleń nie zajmie równiny, która jest jeszcze lodem albo jeszcze suchym stepem. Ludzie wchodzą w już ruchome pole; nie są nazwaną przyczyną pierwszej holoceńskiej granicy lasu.',
+    timing:
+      'LGM ~26–19 ka; Bølling–Allerød ~14,7 ka; wczesnoholoceńskie wypełnianie północnej Europy. Jedna jaskinia arktyczno-norweska — Nygrotta (Boilard et al. 2024) — ma już słodkowodne ryby, niedźwiedzia brunatnego, leminga norweskiego i zająca bielaka w warstwie sprzed około 9500 lat: kolonizacja tuż za lokalnym lodem. Około 5800 lat późniejsza warstwa tej jaskini zapisuje odejście gatunków zimnolubnych z tego profilu. To datowane poziomy jednej jaskini, nie spis Europy.',
+    pressure:
+      'Holoceński las sam jest dziś cięty, ogrzewany i ogrodzony. Ta karta to migracja po zejściu lodu. Późniejsza zmiana krajobrazu przez ludzi należy na inne półki. Nie wkładajcie plejstoceńskich Ludzi (z Afryki) w ten powrót bioty.',
+    sourcesNote:
+      'Hewitt 1999 i 2000 o refugiach i strefach szwu. Sommer & Zachos 2009 o zegarze jeleni. Loog et al. 2020 o ekspansji wilka. Payette et al. 2022 o dwóch nazwanych prędkościach drzew Ameryki Północnej. Alsos et al. 2022 o stabilizacji cech Fennoskandii od ~8 ka. Boilard et al. 2024 o Nygrottcie. Heintzman et al. 2016 o zegarze korytarza północnoamerykańskiego.',
+  },
+  'butterfly-range-shifts': {
+    title: 'Przesunięcia arealów motyli',
+    hook: 'Nie jedna przeprawa: wiele gatunków przesunęło się ku biegunom albo w górę stoku, gdy klimat się ociepla — a nieliczne wciąż lecą przez kontynenty.',
+    imageAlt: 'Rusałka osetnik na polnym kwiecie — dalekodystansowy migrant jako znak klimatycznych przesunięć motyli',
+    what: '„Masowe” nie oznacza tu pętli Serengeti. To dwa fakty ze źródłami. Po pierwsze, zespoły motyli przesunęły areały lęgowe ku biegunom i w górę stoku: dostojka Edith w zachodniej Ameryce Północnej (Parmesan 1996) i globalny odcisk wielu taksonów (Parmesan & Yohe 2003). Po drugie, nieliczne gatunki odbywają prawdziwe dalekie migracje sezonowe. Rusałka osetnik (Vanessa cardui) jest najlepiej udokumentowana: wielopokoleniowe obiegi między tropikalną Afryką a Europą (Stefanescu et al. 2013). Ta karta nie wymyśla jednej światowej autostrady motyli.',
+    route:
+      'Przesunięcia arealów są lokalne lub regionalne: kolonie gasną na ciepłym albo suchym skraju i pojawiają się dalej na północ albo wyżej. Osetniki idą sezonowym obiegiem, który może łączyć Sahel i Maghreb z Europą i z powrotem — łańcuch pokoleń, nie jeden owad na całą mapę. Monarcha w Amerykach to inny system; nie naklejamy go tutaj jako tej samej historii.',
+    drivers:
+      'Dla przesunięć arealów czynnikiem jest klimat: ocieplenie i suszenie, które psują dawne miejsce lęgowe i otwierają nowe. Dla osetnika — sezonowe pulsy roślin żywicielskich i nektaru. Ani jedno, ani drugie nie jest korytarzem epoki lodowej w ludzkim sensie.',
+    timing:
+      'Prace o przesunięciu arealu mówią o dekadach, nie o kalendarzu migracji. Pulses osetnika są sezonowe i zmieniają się z rokiem; „lata inwazji” w Europie to udokumentowane szczyty, nie stały rozkład jazdy.',
+    pressure:
+      'Klimat nadal przesuwa obwiednię. Utrata siedlisk (łąki, rośliny żywicielskie) może zablokować przesunięcie, które na mapie wygląda łatwo. Spadek owadów to osobna, szersza presja; karta nie wymyśla światowego spisu motyli.',
+    sourcesNote:
+      'Parmesan 1996 i Parmesan & Yohe 2003 to nazwane prace o przesunięciu arealu. Stefanescu et al. 2013 to obieg osetnika. „Masowe” jest oznaczone tymi dwoma znaczeniami, nie jako analogon gnu.',
+  },
+  'arctic-migratory-birds': {
+    title: 'Arktyczne ptaki wędrowne',
+    hook: 'Rybitwy, sokoły wędrowne, siewkowce, gęsi: arktyczne lato to puls pokarmu, a zima jest gdzie indziej.',
+    imageAlt: 'Rybitwy popielate nad zimnym północnym brzegiem — znak wysokiej szerokości, nie nazwana kolonia',
+    what: 'To karta klasy, nie druga encyklopedia rybitwy popielatej i nie trzecia strona „szlaków po lodzie”. Wiele ptaków lęgowych na arktycznej i subarktycznej tundrze odlatuje, gdy gasną światło i owady. Rybitwy popielate lecą od bieguna do bieguna (Egevang et al. 2010). Sokoły wędrowne idą za ofiarą wzdłuż wybrzeży i szlaków. Siewkowce stagingują na nielicznych mulistych płyciznach. Gęsi idą za trawą i odwilżą. BirdLife i CMS opisują rodziny szlaków; syntezą regionalną jest CAFF. Sezonowa migracja istniała już w zlodowaceniu (modele na dziesiątki tysięcy lat). Po lodzie zmieniła się geografia: lęgi ścisnęły się na południe, zwłaszcza w Ameryce Północnej pod tarczą laurentyjską, potem holocen znów otworzył arktyczne lato. Thorup et al. (PNAS, 2021) hindcastują afro-palearktyczną pętlę gąsiorka przez 120 000 lat: sezonowa migracja prawdopodobnie trwała w zlodowaceniu, często wewnątrz Afryki; odpowiednie europejskie siedliska letnie znów się rozszerzyły po LGM. To modelowany przykład klasy, nie druga encyklopedia ptasich szlaków.',
+    route:
+      'Lęgi w długim arktycznym dniu; zimowiska na umiarkowanych albo tropikalnych mokradłach, wybrzeżach albo — u rybitw — przy antarktycznym lodzie paku. Szlaki wschodnioatlantycki, wschodnioazjatycko-australazjatycki, Missisipi i pacyficzno-amerykański niosą lęgowce arktyczne. Gu et al. (Nature, 2021) śledzili euroazjatyckie arktyczne sokoły wędrowne na pięciu współczesnych szlakach i wiążą je z przesunięciem lęgowisk od LGM do holocenu. Model gąsiorka Thorupa to afro-palearktyczny odpowiednik: pętla przetrwała zlodowacenie, przesuwając szerokość lęgową, nie wymyślając migracji od zera. Linie to obwiednie, nie GPS każdego stada. Przelot szlamnika Alaska–Nowa Zelandia to pacyficzne skrócenie, nie średnia.',
+    drivers:
+      'Sezonowa produkcja. Lata wysokich szerokości dają długi dzień i wybuch owadów, ryb i nowej trawy. Polarne zimy nie. Wiatr i wybrzeża prowadzą tanią trasą. To zegar pokarmu i rozrodu, nie historia uchodźców.',
+    timing:
+      'Na północ wiosną półkuli północnej, na południe po lęgach. U niektórych populacji przylot przyspieszył, gdy wiosny się ocieplają — fenologia, nie nowy szlak. Rekordowe kilometry to nazwane prace telemetryczne.',
+    pressure:
+      'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. CAFF i BirdLife traktują migrantów arktycznych jako wspólny problem szlaków, nie muzeum jednego gatunku. Karta rybitwy popielatej zostaje pod starym głębokim adresem, jeśli chcesz samą pracę o 70 000 km.',
+    sourcesNote:
+      'Egevang et al. 2010 o rybitwach; Gu et al. 2021 o złożeniu szlaków sokoła wędrownego po lodzie; Thorup et al. 2021 o pętli gąsiorka przez 120 000 lat; szlaki BirdLife; CAFF; CMS. Karta nie wymyśla spisu wszystkich arktycznych migrantów ani drugiej encyklopedii ptasich szlaków.',
+  },
   'hunnic-invasion': {
     title: 'Hunicka presja na Rzym',
     hook: 'Nie wyjście z Afryki: stepowa siła IV–V wieku, której nacisk pomógł zepchnąć Gotów i inne ludy na rzymskie rubieże.',

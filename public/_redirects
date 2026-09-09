@@ -22,3 +22,15 @@
 /pl/geoengineering/* /pl/terraforming/:splat 301
 /lv/geoengineering /lv/terraforming 301
 /lv/geoengineering/* /lv/terraforming/:splat 301
+/migration/birds /migration/great-migrations 301
+/ru/migration/birds /ru/migration/great-migrations 301
+/pl/migration/birds /pl/migration/great-migrations 301
+/lv/migration/birds /lv/migration/great-migrations 301
+/migration/animals /migration/great-migrations 301
+/ru/migration/animals /ru/migration/great-migrations 301
+/pl/migration/animals /pl/migration/great-migrations 301
+/lv/migration/animals /lv/migration/great-migrations 301
+/migration/hunnic-invasion /migration/humans 301
+/ru/migration/hunnic-invasion /ru/migration/humans 301
+/pl/migration/hunnic-invasion /pl/migration/humans 301
+/lv/migration/hunnic-invasion /lv/migration/humans 301
