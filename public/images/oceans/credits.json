@@ -10,13 +10,12 @@
   },
   {
     "file": "oceans-hub-bg.jpg",
-    "title": "Great Barrier Reef near the Whitsunday Islands, astronaut photograph ISS045-E-56257",
-    "source": "NASA Earth Observatory / ISS Expedition 45",
-    "url": "https://earthobservatory.nasa.gov/images/88109/great-barrier-reef-near-whitsunday-islands",
-    "direct": "https://eol.jsc.nasa.gov/DatabaseImages/ESC/large/ISS045/ISS045-E-56257.JPG",
-    "license": "Public domain (NASA)",
-    "kind": "hosted-original",
-    "note": "Oceans hub hero only. Aerial turquoise reef, founder brief; this is the identifiable public-domain Commons/EO twin. Shelf pages keep the ISS Pacific sunglint backdrop."
+    "title": "Sunset over the open ocean",
+    "source": "Founder-supplied photograph",
+    "url": "",
+    "license": "Site asset",
+    "kind": "founder-supplied",
+    "note": "Oceans hub hero only. Sea-level sunset / choppy water, founder-supplied. Replaces the NASA ISS Whitsundays reef still. Shelf pages keep the ISS Pacific sunglint backdrop."
   },
   {
     "file": "sst-2003.jpg",

@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migracja',
   hubLead: [
     'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
-    'Trzy półki, celowo osobno. Dziś to współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Ludzie to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Wielkie migracje to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Półki Ptaki i Zwierzęta są tu zwinięte. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
+    'Dziś jest na tej stronie: współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Poniżej dwie półki. Migracje ludzi to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Migracje zwierząt to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',
@@ -34,6 +34,10 @@ export const page: MigrationPage = {
       'Żywe ruchy masowe i przesunięcia z epoki lodu: gnu, motyle, ptaki arktyczne, step mamutowy, Beringia i powrót holocenu.',
     birds: 'Szlaki, sezony i gatunki, które wciąż przecinają półkule po pokarm i rozród.',
     animals: 'Gnu, karibu, wieloryby, nietoperze — wybrane migracje ssaków i ich czynniki.',
+  },
+  hubTitles: {
+    humans: 'Migracje ludzi',
+    'great-migrations': 'Migracje zwierząt',
   },
   shelves: {
     today: 'Dziś',

@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migrācija',
   hubLead: [
     'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Trīs plaukti, tīši šķirti. Šodien ir šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Cilvēki ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Lielās migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Putnu un Dzīvnieku plaukti ir te savērti. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
+    'Šodien ir šajā lapā: šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Zemāk divi plaukti. Cilvēku migrācijas ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Dzīvnieku migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',
@@ -34,6 +34,10 @@ export const page: MigrationPage = {
       'Dzīvas masu kustības un leduslaikmeta areālu nobīdes: gnu, tauriņi, Arktikas putni, mamutu steppe, Beringija un holocēna atgriešanās.',
     birds: 'Lidojumu ceļi, sezonas un sugas, kas joprojām šķērso puslodes pēc barības un vairošanās.',
     animals: 'Gnu, ziemeļbrieži, vaļi, sikspārņi — atlasītas zīdītāju migrācijas un to dzinējspēki.',
+  },
+  hubTitles: {
+    humans: 'Cilvēku migrācijas',
+    'great-migrations': 'Dzīvnieku migrācijas',
   },
   shelves: {
     today: 'Šodien',

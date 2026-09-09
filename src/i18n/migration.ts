@@ -84,6 +84,10 @@ export type MigrationPage = {
   pressure: string;
   wildlifeLink: string;
   tiles: Record<MigrationShelf, string>;
+  hubTitles: {
+    humans: string;
+    'great-migrations': string;
+  };
   shelves: Record<MigrationShelf, string>;
   shelfLeads: Record<MigrationShelf, string>;
   humans: {

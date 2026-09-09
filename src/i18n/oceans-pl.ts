@@ -14,8 +14,7 @@ export const pl: OceansPage = {
   heroNote:
     'Liczby ze źródłami. Ciepło oceanu to nie SST; pH to chemia; przepływ plastiku to nie zapas w wirze.',
   heroSources: 'Źródła i definicje →',
-  photoCredit:
-    'Zdjęcie: NASA Earth Observatory / ISS Expedition 45 — Wielka Rafa Koralowa koło Wysp Whitsunday (domena publiczna). Identyfikowalny bliźniak Commons/EO briefu założyciela o lotniczej rafie.',
+  photoCredit: 'Zdjęcie: zdjęcie założyciela — zachód słońca nad otwartym oceanem.',
   filterAria: 'Działy oceanów',
   back: '← Oceany',
   tiles: {

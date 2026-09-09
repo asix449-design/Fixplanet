@@ -37,6 +37,7 @@ export type GeoPage = {
   imageCredit: string;
   empty: string;
   heroAlt: string;
+  photoCredit: string;
   shelves: Record<GeoShelf, string>;
   shelfLeads: Record<GeoShelf | 'all', string>;
   status: Record<GeoStatus, string>;
@@ -75,7 +76,9 @@ const pageEn: GeoPage = {
   imageCredit: 'Image',
   empty: 'No cards on this shelf yet.',
   heroAlt:
-    'NASA photograph of the Toshka Lakes in Egypt’s Western Desert — carved water in dry land, the section theme, not a finished New Valley',
+    'Conceptual illustration: cracked drought land beside rain-fed forest under a hexagonal atmospheric shield — the Terraforming hub theme, not a built project',
+  photoCredit:
+    'Image: generated Fix Planet theme — drought and rain under a hexagonal atmospheric shield.',
   shelves: {
     water: 'Water & diversion',
     desert: 'Desert greening',
@@ -133,7 +136,9 @@ const pageRu: GeoPage = {
   imageCredit: 'Изображение',
   empty: 'На этой полке пока нет карточек.',
   heroAlt:
-    'Снимок NASA озёр Тошка в Западной пустыне Египта — вырезанная вода в сухой земле, тема раздела, не готовая Новая долина',
+    'Концептуальная иллюстрация: засуха рядом с дождём под шестиугольным атмосферным щитом — тема хаба «Терраформинг», не построенный проект',
+  photoCredit:
+    'Изображение: сгенерированная тема Fix Planet — засуха и дождь под шестиугольным атмосферным щитом.',
   shelves: {
     water: 'Вода и переброски',
     desert: 'Озеленение пустынь',
@@ -191,7 +196,9 @@ const pagePl: GeoPage = {
   imageCredit: 'Zdjęcie',
   empty: 'Na tej półce nie ma jeszcze kart.',
   heroAlt:
-    'Zdjęcie NASA jezior Toshka na Pustyni Zachodniej Egiptu — wycięta woda w suchym lądzie, tło działu, nie skończona Nowa Dolina',
+    'Ilustracja koncepcyjna: spękana susza obok lasu pod deszczem i sześciokątna tarcza atmosferyczna — motyw huba Terraformowanie, nie zbudowany projekt',
+  photoCredit:
+    'Obraz: wygenerowany motyw Fix Planet — susza i deszcz pod sześciokątną tarczą atmosferyczną.',
   shelves: {
     water: 'Woda i przerzuty',
     desert: 'Zazielenianie pustyń',
@@ -249,7 +256,9 @@ const pageLv: GeoPage = {
   imageCredit: 'Attēls',
   empty: 'Šajā plauktā vēl nav kartīšu.',
   heroAlt:
-    'NASA foto ar Toškas ezeriem Ēģiptes Rietumu tuksnesī — izgriezts ūdens sausā zemē, sadaļas fons, ne pabeigta Jaunā ieleja',
+    'Konceptuāla ilustrācija: plaisājusi sausuma zeme blakus lietus mežam zem sešstūru atmosfēras vairoga — Terraformēšanas huba tēma, ne uzbūvēts projekts',
+  photoCredit:
+    'Attēls: ģenerēta Fix Planet tēma — sausums un lietus zem sešstūru atmosfēras vairoga.',
   shelves: {
     water: 'Ūdens un novadīšana',
     desert: 'Tuksnešu apzaļumošana',
