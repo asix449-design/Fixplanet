@@ -1,5 +1,6 @@
 import { solutionMeta, type Solution, type SolutionCopy } from '../data/solutions';
 import type { Locale } from './config';
+import { pack2 } from './solutions-pack2';
 
 const en: Record<string, SolutionCopy> = {
   'drip-irrigation': {
@@ -1369,7 +1370,12 @@ const lv: Record<string, SolutionCopy> = {
   },
 };
 
-const copy: Record<Locale, Record<string, SolutionCopy>> = { en, ru, pl, lv };
+const copy: Record<Locale, Record<string, SolutionCopy>> = {
+  en: { ...en, ...pack2.en },
+  ru: { ...ru, ...pack2.ru },
+  pl: { ...pl, ...pack2.pl },
+  lv: { ...lv, ...pack2.lv },
+};
 
 export function getSolutions(locale: Locale): Solution[] {
   return solutionMeta.map((meta) => {

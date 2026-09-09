@@ -2,56 +2,56 @@
   {
     "slug": "drip-irrigation",
     "file": "drip-irrigation.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 drip line on a young crop, not a named farm",
+    "artist": "Fix Planet generated documentary still — drip line on a young crop, not a named farm",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "constructed-wetlands",
     "file": "constructed-wetlands.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 reed wetland and boardwalk, not a named project",
+    "artist": "Fix Planet generated documentary still — reed wetland and boardwalk, not a named project",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "sustainable-forestry",
     "file": "sustainable-forestry.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 plantation track and log stack, not a named concession",
+    "artist": "Fix Planet generated documentary still — plantation track and log stack, not a named concession",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "anaerobic-digesters",
     "file": "anaerobic-digesters.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 farm digester domes, not a named plant",
+    "artist": "Fix Planet generated documentary still — farm digester domes, not a named plant",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "cool-roofs",
     "file": "cool-roofs.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 white urban roofs, not a named city programme",
+    "artist": "Fix Planet generated documentary still — white urban roofs, not a named city programme",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "lower-clinker-cement",
     "file": "lower-clinker-cement.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 cement plant stockpiles, not a named works",
+    "artist": "Fix Planet generated documentary still — cement plant stockpiles, not a named works",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "river-interceptors",
     "file": "river-interceptors.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 river boom holding litter, not a named interceptor",
+    "artist": "Fix Planet generated documentary still — river boom holding litter, not a named interceptor",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "solar-microgrids",
     "file": "solar-microgrids.jpg",
-    "artist": "Fix Planet generated documentary still \u2014 village solar array, not a named microgrid",
+    "artist": "Fix Planet generated documentary still — village solar array, not a named microgrid",
     "license": "Site asset",
     "sourceUrl": ""
   },
@@ -220,7 +220,7 @@
     "file": "fog-harvesting.jpg",
     "commonsTitle": "Atrapanieblas en Alto Patache.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atrapanieblas_en_Alto_Patache.jpg",
-    "artist": "Pontificia Universidad Cat\u00f3lica de Chile",
+    "artist": "Pontificia Universidad Católica de Chile",
     "license": "CC BY-SA 2.0"
   },
   {
@@ -284,7 +284,7 @@
     "file": "mrf-optical-sorting.jpg",
     "commonsTitle": "Materials recovery facility.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Materials_recovery_facility.jpg",
-    "artist": "Michal Ma\u0148as",
+    "artist": "Michal Maňas",
     "license": "CC BY 3.0"
   },
   {
@@ -333,6 +333,166 @@
     "commonsTitle": "Interceptor Original 007.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Interceptor_Original_007.jpg",
     "artist": "Motaykay",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "green-roofs",
+    "file": "green-roofs.jpg",
+    "commonsTitle": "20080708 Chicago City Hall Green Roof.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20080708_Chicago_City_Hall_Green_Roof.JPG",
+    "artist": "TonyTheTiger",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "rain-gardens-bioswales",
+    "file": "rain-gardens-bioswales.jpg",
+    "commonsTitle": "Bioswale and curb extension with cutouts (38067594726).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bioswale_and_curb_extension_with_cutouts_(38067594726).jpg",
+    "artist": "Eric Fischer",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "cool-pavements",
+    "file": "cool-pavements.jpg",
+    "commonsTitle": "Anchoring Tie Bars In Existing Pavement VA (8448149384).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anchoring_Tie_Bars_In_Existing_Pavement_VA_(8448149384).jpg",
+    "artist": "Federal Highway Administration",
+    "license": "Public domain"
+  },
+  {
+    "slug": "district-cooling",
+    "file": "district-cooling.jpg",
+    "commonsTitle": "KLCC District Cooling (Kuala Lumpur) in 2013.jpeg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KLCC_District_Cooling_(Kuala_Lumpur)_in_2013.jpeg",
+    "artist": "naim fadil",
+    "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "building-renovation-epbd",
+    "file": "building-renovation-epbd.jpg",
+    "commonsTitle": "06 Thermal insulation retrofit works on a department store building with mineral wool and Aluthermo aluminium composite mat.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:06_Thermal_insulation_retrofit_works_on_a_department_store_building_with_mineral_wool_and_Aluthermo_aluminium_composite_mat.jpg",
+    "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "recycled-aggregate-concrete",
+    "file": "recycled-aggregate-concrete.jpg",
+    "commonsTitle": "Recycled aggregate stockpiles (6256993200).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Recycled_aggregate_stockpiles_(6256993200).jpg",
+    "artist": "Peter Craven",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "geopolymer-binders",
+    "file": "geopolymer-binders.jpg",
+    "commonsTitle": "Samples of \"ground granulated blast furnace slag\" and \"granulated blast furnace slag\".jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samples_of_%22ground_granulated_blast_furnace_slag%22_and_%22granulated_blast_furnace_slag%22.jpg",
+    "artist": "Giám Định",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "recycled-aluminium",
+    "file": "recycled-aluminium.jpg",
+    "commonsTitle": "Aluminium recycling.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aluminium_recycling.jpg",
+    "artist": "Tiia Monto",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "hempcrete-bio-insulation",
+    "file": "hempcrete-bio-insulation.jpg",
+    "commonsTitle": "Hempcrete wall.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hempcrete_wall.jpg",
+    "artist": "Jnzl's Photos",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "cement-ccus",
+    "file": "cement-ccus.jpg",
+    "commonsTitle": "Heidelberg Brevik Carbon Capture.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heidelberg_Brevik_Carbon_Capture.jpg",
+    "artist": "PutTheKettleOn",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "seagrass-restoration",
+    "file": "seagrass-restoration.jpg",
+    "commonsTitle": "Sea Grass Restoration Project (KSC-20230329-PH-KLS01 0153).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_Grass_Restoration_Project_(KSC-20230329-PH-KLS01_0153).jpg",
+    "artist": "NASA Kennedy Space Center / NASA/Kim Shiflett",
+    "license": "Public domain"
+  },
+  {
+    "slug": "coral-restoration",
+    "file": "coral-restoration.jpg",
+    "commonsTitle": "NOAA coral nurseries help support coral restoration.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NOAA_coral_nurseries_help_support_coral_restoration.jpg",
+    "artist": "The National Oceanic and Atmospheric Administration",
+    "license": "Public domain"
+  },
+  {
+    "slug": "ghost-gear",
+    "file": "ghost-gear.jpg",
+    "commonsTitle": "February 6, 2013 EPA Divers help with abandoned fishing gear in Puget Sound (8514569738).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:February_6,_2013_EPA_Divers_help_with_abandoned_fishing_gear_in_Puget_Sound_(8514569738).jpg",
+    "artist": "USEPA Environmental-Protection-Agency",
+    "license": "Public domain"
+  },
+  {
+    "slug": "kelp-farming",
+    "file": "kelp-farming.jpg",
+    "commonsTitle": "Seaweed Farms in South Korea (detail) (17322757055).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seaweed_Farms_in_South_Korea_(detail)_(17322757055).jpg",
+    "artist": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+    "license": "Public domain"
+  },
+  {
+    "slug": "salt-marsh-restoration",
+    "file": "salt-marsh-restoration.jpg",
+    "commonsTitle": "Salt Marsh Restoration at Seatuck National Wildlife Refuge (24128583952).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_Marsh_Restoration_at_Seatuck_National_Wildlife_Refuge_(24128583952).jpg",
+    "artist": "U. S. Fish and Wildlife Service - Northeast Region",
+    "license": "Public domain"
+  },
+  {
+    "slug": "utility-scale-solar",
+    "file": "utility-scale-solar.jpg",
+    "commonsTitle": "Topaz Solar Farm, California Valley.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Topaz_Solar_Farm,_California_Valley.jpg",
+    "artist": "Earth Observatory image by Jesse Allen, using EO-1 ALI data provided courtesy of the NASA EO-1 team. Caption by Adam Voiland.",
+    "license": "Public domain"
+  },
+  {
+    "slug": "offshore-wind",
+    "file": "offshore-wind.jpg",
+    "commonsTitle": "Middelgrunden wind farm 2009-07-01 edit filtered.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Middelgrunden_wind_farm_2009-07-01_edit_filtered.jpg",
+    "artist": "Photo by Kim Hansen. Postprocessing (crop, rotation, color adjustment, dust spot removal and noise reduction) by Richard Bartz and Kim Hansen.",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "grid-scale-batteries",
+    "file": "grid-scale-batteries.jpg",
+    "commonsTitle": "Overhead View of Tehachapi Energy Storage Project, Tehachapi, CA.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Overhead_View_of_Tehachapi_Energy_Storage_Project,_Tehachapi,_CA.png",
+    "artist": "Sandia National Laboratories",
+    "license": "Public domain"
+  },
+  {
+    "slug": "geothermal",
+    "file": "geothermal.jpg",
+    "commonsTitle": "NesjavellirPowerPlant edit2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NesjavellirPowerPlant_edit2.jpg",
+    "artist": "Gretar Ívarsson – Edited by Fir0002",
+    "license": "Public domain"
+  },
+  {
+    "slug": "pumped-hydro",
+    "file": "pumped-hydro.jpg",
+    "commonsTitle": "Bath County Pumped Storage Station - upper reservoir.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bath_County_Pumped_Storage_Station_-_upper_reservoir.jpg",
+    "artist": "Z22",
     "license": "CC BY-SA 4.0"
   }
 ]
