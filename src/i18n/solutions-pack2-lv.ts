@@ -94,7 +94,7 @@ export const pack2Lv: Record<string, SolutionCopy> = {
     fixTitle: 'Koraļļu atjaunošana',
     problem:
       'NOAA raksta, ka pasaule jau zaudējusi 30–50% koraļļu rifu karstuma, paskābināšanās, piesārņojuma, invazīvo sugu un fizisku bojājumu dēļ. Vietējais “dārzs” nepārraksta okeāna ķīmiju.',
-    fix: 'Audzētavas audzē fragmentus un izstāda tos ar cementu, saitēm un naglām. NOAA ziņo par vairāk nekā 20 Karību audzētavām, kas gadā dod vairāk nekā 40 000 koraļļu. Mission: Iconic Reefs mērķē pacelt koraļļu segumu septiņās Florida Keys vietās no 2% līdz vidēji 25%. Ārkārtas brigādes pie stiprina vētras lauztos kolonijas. Atjaunošana ir vietēja pauze. Tā neaizstāj emisiju, noteces un graujošās zvejas samazināšanu.',
+    fix: 'Audzētavas audzē fragmentus un izstāda tos ar cementu, saitēm un naglām. NOAA ziņo par vairāk nekā 20 Karību audzētavām, kas gadā dod vairāk nekā 40 000 koraļļu. Mission: Iconic Reefs mērķē pacelt koraļļu segumu septiņās Florida Keys vietās no 2% līdz vidēji 25%. Ārkārtas brigādes piestiprina vētras lauztās kolonijas. Atjaunošana ir vietēja pauze. Tā neaizstāj emisiju, noteces un graujošās zvejas samazināšanu.',
     imageAlt: 'Staghorn koraļļu fragmenti uz NOAA atjaunošanas vietas zemūdens audzētavas “koka”',
   },
   'ghost-gear': {
