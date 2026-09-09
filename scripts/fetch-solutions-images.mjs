@@ -185,6 +185,108 @@ const candidates = {
     'Interceptor Original 007.jpg',
     'How TOC works.png',
   ],
+  'green-roofs': [
+    '20080708 Chicago City Hall Green Roof.JPG',
+    'Chicago-City-Hall-Green-Roof 01.jpg',
+    'EVA- Lanxmeer Green roof2 2009.jpg',
+  ],
+  'rain-gardens-bioswales': [
+    'Bioswale and curb extension with cutouts (38067594726).jpg',
+    'Right of Way Bioswale.jpg',
+    'IS 250 Playground td (2019-05-13) 46 - Rain Garden.jpg',
+  ],
+  'cool-pavements': [
+    'Anchoring Tie Bars In Existing Pavement VA (8448149384).jpg',
+    'Amboy (California, USA), Hist. Route 66 -- 2012 -- 1.jpg',
+    'MonroeStreetBridge.jpg',
+  ],
+  'district-cooling': [
+    'KLCC District Cooling (Kuala Lumpur) in 2013.jpeg',
+    'KLCC District Cooling, Kuala Lumpur in April 2020.jpg',
+    'District Energy System Pipes.jpg',
+    'Kaukojaahdytyslaitteistoja.jpg',
+  ],
+  'building-renovation-epbd': [
+    '06 Thermal insulation retrofit works on a department store building with mineral wool and Aluthermo aluminium composite mat.jpg',
+    'Garrick Close, Kingston upon Hull Bungalow Renovations Sep23 06.jpg',
+    'DOE weatherization services (677).jpg',
+  ],
+  'recycled-aggregate-concrete': [
+    'Recycled aggregate stockpiles (6256993200).jpg',
+    'Sheehan recycled 10-20mm aggregate (7590397672).jpg',
+    'Crushed Concrete Granular Fill.jpg',
+  ],
+  'geopolymer-binders': [
+    'Samples of "ground granulated blast furnace slag" and "granulated blast furnace slag".jpg',
+    'Porous Geopolymer Structure.jpg',
+    'Fly Ash FHWA dot gov.jpg',
+  ],
+  'recycled-aluminium': [
+    'Aluminium recycling.jpg',
+    'Aluminium for recycling.jpg',
+    'DillingenAluminiumSchrott.jpg',
+    'Pindamonhangaba SP-Brazil City of Aluminum Recycling.JPG',
+  ],
+  'hempcrete-bio-insulation': [
+    'Hempcrete wall.jpg',
+    'WISE, Sustainable construction in practice - geograph.org.uk - 1064131.jpg',
+    "Brique d'isolation acoustique en chanvre .jpg",
+  ],
+  'cement-ccus': [
+    'Heidelberg Brevik Carbon Capture.jpg',
+    'Norcem Brevik fra sjøen.JPG',
+    'Norcem Brevik Norway.jpg',
+  ],
+  'seagrass-restoration': [
+    'Sea Grass Restoration Project (KSC-20230329-PH-KLS01 0153).jpg',
+    'Posidonia oceanica meadow and school of Salema porgy - Exploration and observation - Calanque de Sormiou - June 2022.jpg',
+    'Green Sea Turtle grazing seagrass.jpg',
+  ],
+  'coral-restoration': [
+    'NOAA coral nurseries help support coral restoration.jpg',
+    'FKNMS - coral nursery (27367671414).jpg',
+    'Staghorn Coral Transplants.jpg',
+  ],
+  'ghost-gear': [
+    'February 6, 2013 EPA Divers help with abandoned fishing gear in Puget Sound (8514569738).jpg',
+    'Abandoned fishing net, Seaton Sluice - geograph.org.uk - 1736559.jpg',
+    'Turtle entangled in marine debris (ghost net).jpg',
+  ],
+  'kelp-farming': [
+    'Seaweed Farms in South Korea (detail) (17322757055).jpg',
+    'Seaweed farming on Hingotanan Island, Bohol.png',
+    'Kelp forest and sardines, San Clemente Island, Channel Islands, California.jpg',
+  ],
+  'salt-marsh-restoration': [
+    'Salt Marsh Restoration at Seatuck National Wildlife Refuge (24128583952).jpg',
+    'Learning about salt marsh restoration (51857061850).jpg',
+    'Newbury Salt Marsh (14625806444).jpg',
+  ],
+  'utility-scale-solar': [
+    'Topaz Solar Farm, California Valley.jpg',
+    'AMP Energy Bhadla Solar Power Plant - 53699816551.jpg',
+    'Solar farm continues to grow (9609728320).jpg',
+  ],
+  'offshore-wind': [
+    'Middelgrunden wind farm 2009-07-01 edit filtered.jpg',
+    'Westermost Rough wind farm from Barmston beach.jpg',
+    'Burbo Offshore Wind Farm, Crosby.jpg',
+  ],
+  'grid-scale-batteries': [
+    'Overhead View of Tehachapi Energy Storage Project, Tehachapi, CA.png',
+    'Tehachapi Energy Storage Project at Monolith Substation - Panorama.jpg',
+    'Utility4-SCE Tehachapi Photo2.jpg',
+  ],
+  geothermal: [
+    'NesjavellirPowerPlant edit2.jpg',
+    'Krafla geothermal power plant 21.05.2008 11-39-16.jpg',
+    'Bjarnarflag Geothermal Power Station and the Blue Lake, Iceland, 20240716 1412 1511.jpg',
+  ],
+  'pumped-hydro': [
+    'Bath County Pumped Storage Station - upper reservoir.jpg',
+    'Tanygrisiau Hydro-Electric Pumped-Storage Power Station - geograph.org.uk - 3545790.jpg',
+    'Silver Jackets team tours the Raccoon Mountain Pumped-Storage Plant.jpg',
+  ],
 };
 
 async function commonsInfo(title) {

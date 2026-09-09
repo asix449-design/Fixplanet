@@ -217,6 +217,161 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'waste',
     sources: [cite('The Ocean Cleanup — Interceptor', 'https://theoceancleanup.com/faq/what-is-an-interceptor/')],
   },
+  {
+    slug: 'green-roofs',
+    tag: 'cities',
+    sources: [
+      cite(
+        'GSA — planted roof case studies',
+        'https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/water/planted-roof/case-studies',
+      ),
+    ],
+  },
+  {
+    slug: 'rain-gardens-bioswales',
+    tag: 'cities',
+    sources: [cite('US EPA — types of green infrastructure', 'https://www.epa.gov/green-infrastructure/types-green-infrastructure')],
+  },
+  {
+    slug: 'cool-pavements',
+    tag: 'cities',
+    sources: [cite('US EPA — cool pavements', 'https://www.epa.gov/heatislands/using-cool-pavements-reduce-heat-islands')],
+  },
+  {
+    slug: 'district-cooling',
+    tag: 'cities',
+    sources: [
+      cite(
+        'SP Group — district cooling and heating',
+        'https://www.spgroup.com.sg/sustainable-energy-solutions/district-cooling-and-heating',
+      ),
+    ],
+  },
+  {
+    slug: 'building-renovation-epbd',
+    tag: 'cities',
+    sources: [
+      cite(
+        'European Commission — energy renovation of buildings',
+        'https://energy.ec.europa.eu/topics/energy-efficiency/energy-performance-buildings/energy-performance-buildings-directive/energy-renovation-buildings_en',
+      ),
+    ],
+  },
+  {
+    slug: 'recycled-aggregate-concrete',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Ireland EPA — national criteria for recycled aggregates',
+        'https://www.epa.ie/news-releases/news-releases-2023/epa-publishes-national-criteria-for-recycled-aggregates-.php',
+      ),
+    ],
+  },
+  {
+    slug: 'geopolymer-binders',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Journal of the American Ceramic Society — geopolymers and alkali-activated materials',
+        'https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.19828',
+      ),
+    ],
+  },
+  {
+    slug: 'recycled-aluminium',
+    tag: 'materials',
+    sources: [cite('International Aluminium Institute — aluminium facts', 'https://international-aluminium.org/landing/aluminium-facts/')],
+  },
+  {
+    slug: 'hempcrete-bio-insulation',
+    tag: 'materials',
+    sources: [cite('ISO 24260:2022 — hemp fibre mat and board', 'https://www.iso.org/standard/78231.html')],
+  },
+  {
+    slug: 'cement-ccus',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Heidelberg Materials — DREAM CCUS',
+        'https://www.heidelbergmaterials.com/en/sustainability/we-decarbonize-the-construction-industry/ccus/dream',
+      ),
+    ],
+  },
+  {
+    slug: 'seagrass-restoration',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'NOAA Fisheries — Indian River Lagoon seagrass and wetlands',
+        'https://www.fisheries.noaa.gov/feature-story/restoring-indian-river-lagoons-seagrass-meadows-and-wetlands',
+      ),
+    ],
+  },
+  {
+    slug: 'coral-restoration',
+    tag: 'oceans',
+    sources: [cite('NOAA Fisheries — restoring coral reefs', 'https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs')],
+  },
+  {
+    slug: 'ghost-gear',
+    tag: 'oceans',
+    sources: [cite('Global Ghost Gear Initiative', 'https://www.ghostgear.org/')],
+  },
+  {
+    slug: 'kelp-farming',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'UNEP — Into the Blue: kelp forests',
+        'https://www.unep.org/resources/report/blue-securing-sustainable-future-kelp-forests',
+      ),
+    ],
+  },
+  {
+    slug: 'salt-marsh-restoration',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'U.S. Fish and Wildlife Service — salt marsh keystone',
+        'https://www.fws.gov/story/2024-02/salt-marsh-keystone-coastal-conservation',
+      ),
+    ],
+  },
+  {
+    slug: 'utility-scale-solar',
+    tag: 'energy',
+    sources: [cite('IEA — solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
+  },
+  {
+    slug: 'offshore-wind',
+    tag: 'energy',
+    sources: [cite('IEA — Offshore Wind Outlook 2019', 'https://www.iea.org/reports/offshore-wind-outlook-2019')],
+  },
+  {
+    slug: 'grid-scale-batteries',
+    tag: 'energy',
+    sources: [cite('IEA — grid-scale storage', 'https://www.iea.org/energy-system/electricity/grid-scale-storage')],
+  },
+  {
+    slug: 'geothermal',
+    tag: 'energy',
+    sources: [
+      cite(
+        'IEA — geothermal technology breakthroughs',
+        'https://www.iea.org/news/technology-breakthroughs-are-unlocking-geothermal-energys-vast-potential-in-countries-across-the-globe',
+      ),
+    ],
+  },
+  {
+    slug: 'pumped-hydro',
+    tag: 'energy',
+    sources: [
+      cite(
+        'IEA — Hydropower Special Market Report (executive summary)',
+        'https://www.iea.org/reports/hydropower-special-market-report/executive-summary',
+      ),
+    ],
+  },
 ];
 
 export function solutionPrimarySource(
