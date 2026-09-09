@@ -10,7 +10,7 @@ export const page: MigrationPage = {
   title: 'Migration',
   hubLead: [
     'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and a warmer climate on top of those older clocks.',
-    'Three shelves, kept apart on purpose. Today is the current-day international map — net migration and migrant stock, labeled as such. Humans is the deep-history event atlas, including the Migration Period. Great migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
+    'Today sits on this page: the current-day international map — net migration and migrant stock, labeled as such. Below it, two shelves. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -34,6 +34,10 @@ export const page: MigrationPage = {
       'Living mass movements and ice-age range shifts: Serengeti wildebeest, butterflies, Arctic birds, plus the mammoth steppe, Beringia, and the Holocene return.',
     birds: 'Flyways, seasons, and species that still cross hemispheres for food and breeding.',
     animals: 'Wildebeest, caribou, whales, bats — curated mammal migrations and their drivers.',
+  },
+  hubTitles: {
+    humans: 'Human migrations',
+    'great-migrations': 'Animal migrations',
   },
   shelves: {
     today: 'Today',

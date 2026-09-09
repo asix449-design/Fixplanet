@@ -14,13 +14,13 @@ export const migrationShelfKeys = [
 export type MigrationShelf = (typeof migrationShelfKeys)[number];
 
 export const migrationHub = [
-  { key: 'today', icon: 'today' },
   { key: 'humans', icon: 'human' },
   { key: 'great-migrations', icon: 'migrate' },
 ] as const satisfies ReadonlyArray<{ key: MigrationShelf; icon: HubIconName }>;
 
 /** Old hub shelves and the Hunnic card — keep URLs, send people to the living shelves. */
 export const migrationPathRedirects: Record<string, string> = {
+  today: '/migration',
   birds: '/migration/great-migrations',
   animals: '/migration/great-migrations',
   'hunnic-invasion': '/migration/humans',

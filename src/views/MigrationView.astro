@@ -73,14 +73,16 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
           <div class="encyc-lede migration-hub-lede">
             {page.hubLead.map((para) => <p>{para}</p>)}
           </div>
-          <p class="home-hub-kicker migration-choose">{page.chooseShelf}</p>
-          <nav class="hub-grid hub-grid-3" aria-label={page.chooseShelf}>
+          <article class="migration-today-card wildlife-map-panel today-mig-wrap">
+            <TodayMigrationMap />
+          </article>
+          <nav class="hub-grid hub-grid-2 migration-hub-tiles" aria-label={page.chooseShelf}>
             {
               migrationHub.map((item) => (
                 <HubTile
                   href={localizePath(migrationShelfPath(item.key), locale)}
                   icon={item.icon}
-                  title={page.shelves[item.key]}
+                  title={page.hubTitles[item.key]}
                   text={page.tiles[item.key]}
                 />
               ))

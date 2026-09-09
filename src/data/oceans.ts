@@ -452,12 +452,11 @@ export const oceanBackdrop = {
 /** Hub-only hero. Shelf pages keep `oceanBackdrop`. */
 export const oceanHubBackdrop = {
   file: 'oceans-hub-bg.jpg',
-  sourceOrg: 'NASA Earth Observatory / ISS Expedition 45',
-  sourceUrl:
-    'https://earthobservatory.nasa.gov/images/88109/great-barrier-reef-near-whitsunday-islands',
-  license: 'Public domain (NASA)',
+  sourceOrg: 'Founder-supplied photograph',
+  sourceUrl: '',
+  license: 'Site asset',
   width: 1920,
-  height: 1278,
+  height: 1080,
 } as const;
 
 /**

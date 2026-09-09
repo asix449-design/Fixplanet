@@ -1056,6 +1056,7 @@ a.solution-card:hover {
   }
 
   .hub-grid,
+  .hub-grid-2,
   .hub-grid-3,
   .hub-grid-5 {
     grid-template-columns: 1fr;
@@ -1861,6 +1862,10 @@ a.map-card:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.hub-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .hub-tile {
   display: flex;
   flex-direction: column;
@@ -2533,7 +2538,8 @@ a.map-card:hover {
 
 .theme-forests:has(.forests-hero) .site-header,
 .theme-oceans:has(.oceans-hero) .site-header,
-.theme-innovations:has(.innovations-hero) .site-header {
+.theme-innovations:has(.innovations-hero) .site-header,
+.theme-terraforming:has(.terraforming-hero) .site-header {
   background: rgba(0, 0, 0, 0.38);
 }
 
@@ -2543,7 +2549,8 @@ a.map-card:hover {
 
 .forests-hero,
 .oceans-hero,
-.innovations-hero {
+.innovations-hero,
+.terraforming-hero {
   position: relative;
   z-index: 1;
   min-height: calc(100vh - var(--header-h));
@@ -2554,7 +2561,8 @@ a.map-card:hover {
 
 .forests-hero-inner,
 .oceans-hero-inner,
-.innovations-hero-inner {
+.innovations-hero-inner,
+.terraforming-hero-inner {
   width: min(1180px, calc(100% - 40px));
   display: flex;
   flex-direction: column;
@@ -2574,7 +2582,8 @@ a.map-card:hover {
 
 .forests-hero-panel,
 .oceans-hero-panel,
-.innovations-hero-panel {
+.innovations-hero-panel,
+.terraforming-hero-panel {
   width: min(42rem, 100%);
   padding: 0.85rem 1.15rem 0.9rem;
   border: 1px solid rgba(192, 255, 0, 0.28);
@@ -2582,7 +2591,8 @@ a.map-card:hover {
   background: rgba(4, 12, 6, 0.52);
 }
 
-.innovations-hero-panel {
+.innovations-hero-panel,
+.terraforming-hero-panel {
   margin-top: clamp(1.2rem, 8vh, 4rem);
   margin-left: auto;
 }
@@ -2718,13 +2728,15 @@ a.map-card:hover {
 
 .forests-hero-tiles,
 .oceans-hero-tiles,
-.innovations-hero-tiles {
+.innovations-hero-tiles,
+.terraforming-hero-tiles {
   align-items: stretch;
 }
 
 .forests-hero .hub-tile,
 .oceans-hero .hub-tile,
-.innovations-hero .hub-tile {
+.innovations-hero .hub-tile,
+.terraforming-hero .hub-tile {
   background: rgba(0, 0, 0, 0.42);
   min-height: 164px;
 }
@@ -2734,7 +2746,9 @@ a.map-card:hover {
 .oceans-hero .hub-tile:hover,
 .oceans-hero .hub-tile.is-active,
 .innovations-hero .hub-tile:hover,
-.innovations-hero .hub-tile.is-active {
+.innovations-hero .hub-tile.is-active,
+.terraforming-hero .hub-tile:hover,
+.terraforming-hero .hub-tile.is-active {
   background: rgba(4, 10, 2, 0.52);
 }
 
@@ -3003,14 +3017,16 @@ a.map-card:hover {
 
   .forests-hero,
   .oceans-hero,
-  .innovations-hero {
+  .innovations-hero,
+  .terraforming-hero {
     min-height: 0;
     padding: 1.15rem 0 1.6rem;
   }
 
   .forests-hero-inner,
   .oceans-hero-inner,
-  .innovations-hero-inner {
+  .innovations-hero-inner,
+  .terraforming-hero-inner {
     width: min(1180px, calc(100% - 32px));
     gap: 1.6rem;
   }
@@ -3022,7 +3038,8 @@ a.map-card:hover {
 
   .forests-hero-panel,
   .oceans-hero-panel,
-  .innovations-hero-panel {
+  .innovations-hero-panel,
+  .terraforming-hero-panel {
     padding: 0.85rem 0.8rem 0.8rem;
   }
 
@@ -3079,24 +3096,24 @@ a.map-card:hover {
     linear-gradient(90deg, rgba(0, 12, 28, 0.32) 0%, transparent 48%);
 }
 
-/* Hub: aerial Great Barrier Reef (ISS). Keep turquoise visible; stats sit on glass. */
+/* Hub: founder-supplied sunset / open ocean. Keep the gold path; stats sit on glass. */
 .theme-oceans .oceans-hub-backdrop img {
-  object-position: 42% 48%;
-  filter: saturate(1.12) brightness(0.86) contrast(1.05);
-  transform: scale(1.05);
+  object-position: 72% 46%;
+  filter: saturate(1.08) brightness(0.9) contrast(1.06);
+  transform: scale(1.04);
 }
 
 .oceans-hub-scrim {
   background:
     linear-gradient(
       180deg,
-      rgba(1, 8, 18, 0.42) 0%,
-      rgba(1, 10, 22, 0.08) 24%,
-      rgba(2, 8, 16, 0.06) 48%,
-      rgba(2, 6, 12, 0.32) 76%,
-      rgba(2, 5, 10, 0.7) 100%
+      rgba(1, 8, 18, 0.48) 0%,
+      rgba(1, 10, 22, 0.16) 22%,
+      rgba(2, 8, 16, 0.08) 46%,
+      rgba(2, 6, 12, 0.36) 74%,
+      rgba(2, 5, 10, 0.78) 100%
     ),
-    radial-gradient(ellipse 64% 44% at 48% 36%, rgba(0, 0, 0, 0.18), transparent 72%);
+    linear-gradient(90deg, rgba(2, 6, 12, 0.28) 0%, transparent 52%);
 }
 
 .theme-oceans .site-header {
@@ -3343,6 +3360,28 @@ a.map-card:hover {
   filter: blur(7px) saturate(1.2) brightness(0.4) sepia(0.22);
 }
 
+.theme-terraforming:has(.terraforming-hero) {
+  background: #060a06;
+}
+
+.theme-terraforming .terraforming-hub-backdrop img {
+  object-position: 50% 40%;
+  filter: saturate(1.1) brightness(0.78) contrast(1.06);
+  transform: scale(1.03);
+}
+
+.terraforming-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.46) 0%,
+      rgba(0, 8, 2, 0.16) 28%,
+      rgba(0, 6, 2, 0.22) 58%,
+      rgba(0, 0, 0, 0.74) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
+}
+
 .geo-scrim {
   background:
     linear-gradient(
@@ -3485,6 +3524,23 @@ a.map-card:hover {
 .theme-migration .section-backdrop img {
   object-position: 50% 48%;
   filter: blur(5px) saturate(1.05) brightness(0.48);
+}
+
+.migration-today-card {
+  margin: 1.15rem 0 1.7rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+  border: 1px solid rgba(192, 255, 0, 0.28);
+  border-radius: calc(var(--radius) + 6px);
+  background: rgba(0, 0, 0, 0.62);
+  box-shadow: var(--shadow);
+}
+
+.migration-today-card .today-mig-wrap {
+  background: transparent;
+}
+
+.migration-hub-tiles .hub-tile {
+  min-height: 168px;
 }
 
 .migration-hub-lede {

@@ -1,11 +1,12 @@
 ---
 import TerraformingCard from '../components/TerraformingCard.astro';
 import HubTile from '../components/HubTile.astro';
-import SectionHub from '../components/SectionHub.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   geoHub,
+  geoHubBackdrop,
+  geoHubSrc,
   geoSectionSrc,
   geoShelfPath,
   isGeoShelf,
@@ -37,31 +38,45 @@ const pageTitle = activeShelf
   ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
   : page.metaTitle;
 const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDescription;
+const backdropSrc = hub ? geoHubSrc : geoSectionSrc;
+const backdropWidth = hub ? geoHubBackdrop.width : 1920;
+const backdropHeight = hub ? geoHubBackdrop.height : 1280;
 ---
 
 <BaseLayout
   title={pageTitle}
   description={pageDescription}
-  image={geoSectionSrc}
+  image={backdropSrc}
   theme="terraforming"
 >
-  <div class="section-backdrop" aria-hidden="true">
-    <img src={geoSectionSrc} alt="" width="1920" height="1280" />
-    <div class="section-backdrop-scrim geo-scrim"></div>
+  <div class:list={['section-backdrop', { 'terraforming-hub-backdrop': hub }]} aria-hidden="true">
+    <img src={backdropSrc} alt="" width={backdropWidth} height={backdropHeight} />
+    <div class:list={['section-backdrop-scrim', 'geo-scrim', hub && 'terraforming-hub-scrim']}></div>
   </div>
 
   {
     hub ? (
-      <SectionHub kicker={page.chooseShelf} label={page.filterAria} columns={3}>
-        {geoHub.map((item) => (
-          <HubTile
-            href={localizePath(geoShelfPath(item.key), locale)}
-            icon={item.icon}
-            title={page.shelves[item.key]}
-            text={page.tiles[item.key]}
-          />
-        ))}
-      </SectionHub>
+      <section class="terraforming-hero" aria-label={page.filterAria}>
+        <div class="wrap terraforming-hero-inner">
+          <div class="terraforming-hero-panel">
+            <p class="visually-hidden">{page.heroAlt}</p>
+            <p class="forests-hero-kicker">{page.eyebrow}</p>
+            <h1 class="forests-hero-title">{page.title}</h1>
+            <p class="forests-hero-note">{page.lead}</p>
+            <p class="oceans-hero-credit">{page.photoCredit}</p>
+          </div>
+          <nav class="hub-grid hub-grid-3 terraforming-hero-tiles" aria-label={page.filterAria}>
+            {geoHub.map((item) => (
+              <HubTile
+                href={localizePath(geoShelfPath(item.key), locale)}
+                icon={item.icon}
+                title={page.shelves[item.key]}
+                text={page.tiles[item.key]}
+              />
+            ))}
+          </nav>
+        </div>
+      </section>
     ) : (
       <ShelfHeader
         backHref={localizePath('/terraforming', locale)}

@@ -91,10 +91,6 @@ const files = [
     file: 'oceans-section-bg-src.jpg',
     url: 'https://upload.wikimedia.org/wikipedia/commons/3/35/ISS-56_Pacific_Ocean_with_sunglint.jpg',
   },
-  {
-    file: 'oceans-hub-bg-src.jpg',
-    url: 'https://eol.jsc.nasa.gov/DatabaseImages/ESC/large/ISS045/ISS045-E-56257.JPG',
-  },
 ];
 
 function ffmpegResize(src, dest, width = 1920) {
@@ -127,8 +123,4 @@ const srcBg = new URL('oceans-section-bg-src.jpg', outDir).pathname;
 const destBg = new URL('oceans-section-bg.jpg', outDir).pathname;
 await ffmpegResize(srcBg, destBg, 1920);
 console.log('wrote oceans-section-bg.jpg');
-
-const srcHub = new URL('oceans-hub-bg-src.jpg', outDir).pathname;
-const destHub = new URL('oceans-hub-bg.jpg', outDir).pathname;
-await ffmpegResize(srcHub, destHub, 1920);
-console.log('wrote oceans-hub-bg.jpg');
+console.log('left oceans-hub-bg.jpg alone (founder-supplied hub photo)');

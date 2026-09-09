@@ -7,6 +7,9 @@ export const getStaticPaths = localeStaticPaths;
 
 const locale = resolveLocale(Astro.currentLocale);
 const shelfParam = Astro.url.searchParams.get('shelf');
+if (shelfParam === 'today') {
+  return Astro.redirect(localizePath('/migration', locale), 301);
+}
 if (isMigrationShelf(shelfParam ?? undefined)) {
   return Astro.redirect(localizePath(`/migration/${shelfParam}`, locale));
 }
