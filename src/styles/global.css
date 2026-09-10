@@ -1912,6 +1912,17 @@ a.map-card:hover {
   color: var(--cream);
 }
 
+.hub-tile.is-soon {
+  cursor: default;
+}
+
+.hub-tile.is-soon:hover {
+  transform: none;
+  background: rgba(0, 0, 0, 0.62);
+  border-color: rgba(192, 255, 0, 0.55);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
 .hub-tile.is-active {
   background: rgba(10, 14, 4, 0.88);
   border-color: var(--lime);
@@ -3669,10 +3680,10 @@ a.map-card:hover {
 }
 
 .today-mig-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.85fr);
+  display: flex;
+  flex-direction: column;
   gap: 1.4rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .today-mig-map {
@@ -3782,6 +3793,8 @@ a.map-card:hover {
 }
 
 .today-mig-panel {
+  width: 100%;
+  max-width: none;
   background: rgba(0, 0, 0, 0.78);
   border: 1px solid rgba(192, 255, 0, 0.28);
 }
@@ -3815,10 +3828,20 @@ a.map-card:hover {
   color: #d8e4da;
 }
 
+.today-mig-empty {
+  max-width: 46rem;
+}
+
 .today-mig-stats {
   display: grid;
   gap: 0.75rem;
   margin: 0.9rem 0 1rem;
+}
+
+@media (min-width: 700px) {
+  .today-mig-stats {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .today-mig-stats dt {
@@ -3996,10 +4019,6 @@ a.map-card:hover {
 }
 
 @media (max-width: 900px) {
-  .today-mig-layout {
-    grid-template-columns: 1fr;
-  }
-
   .today-mig-tablets {
     position: static;
     display: grid;

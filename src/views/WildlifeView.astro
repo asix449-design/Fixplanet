@@ -11,6 +11,7 @@ import {
   isWildlifeStatus,
   wildlifeHub,
   wildlifeHubPath,
+  wildlifeHubTilePath,
   wildlifeImageSrc,
   type WildlifeHubKey,
   type WildlifeStatus,
@@ -70,14 +71,18 @@ const wildlifeHref = localizePath('/wildlife', locale);
   {
     hub ? (
       <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={4}>
-        {wildlifeHub.map((item) => (
-          <HubTile
-            href={localizePath(wildlifeHubPath(item.key), locale)}
-            icon={item.icon}
-            title={ui.wildlifePage[item.key]}
-            text={ui.wildlifePage.tiles[item.key]}
-          />
-        ))}
+        {wildlifeHub.map((item) => {
+          const path = wildlifeHubTilePath(item);
+          return (
+            <HubTile
+              href={path ? localizePath(path, locale) : undefined}
+              icon={item.icon}
+              title={ui.wildlifePage[item.key]}
+              text={ui.wildlifePage.tiles[item.key]}
+              badge={path ? undefined : ui.comingSoon.badge}
+            />
+          );
+        })}
       </SectionHub>
     ) : activeStatus ? (
       <ShelfHeader
