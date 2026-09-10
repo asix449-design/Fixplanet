@@ -47,6 +47,8 @@ export type SpeciesMeta = {
   scientificName: string;
   status: WildlifeStatus;
   iucn: IucnKey;
+  /** Extra card label when IUCN CR still overstates a wild breeding population. */
+  functionallyExtinct?: boolean;
   image: ImageCredit;
 };
 
@@ -299,6 +301,7 @@ export const speciesMeta: SpeciesMeta[] = [
     scientificName: 'Ceratotherium simum cottoni',
     status: 'endangered',
     iucn: 'CR',
+    functionallyExtinct: true,
     image: commons(
       'northern-white-rhinoceros.jpg',
       'Sheep81 / Wikimedia Commons (Angalifu, San Diego Zoo)',
@@ -417,7 +420,7 @@ export const speciesMeta: SpeciesMeta[] = [
   {
     slug: 'spixs-macaw',
     scientificName: 'Cyanopsitta spixii',
-    status: 'endangered',
+    status: 'extinct',
     iucn: 'EW',
     image: commons(
       'spixs-macaw.jpg',

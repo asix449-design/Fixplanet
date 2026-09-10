@@ -6,14 +6,12 @@ import {
   getMapsByCategory,
   getReligionHistoryFrames,
   getReligionHistoryPage,
-  getUi,
   localizePath,
   resolveLocale,
 } from '../i18n';
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getReligionHistoryPage(locale);
-const ui = getUi(locale);
 const frames = getReligionHistoryFrames(locale);
 const shelfMaps = getMapsByCategory(locale, 'religious');
 const firstPreview = religionHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
@@ -32,10 +30,6 @@ const firstPreview = religionHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png'
       <div class="eyebrow maps-eyebrow">{page.eyebrow}</div>
       <h1 id="religion-heading">{page.title}</h1>
       <p>{page.lead}</p>
-      <div class="religion-soon-line">
-        <span class="soon-badge">{ui.comingSoon.badge}</span>
-        <p>{page.soonNotice}</p>
-      </div>
     </div>
   </header>
 

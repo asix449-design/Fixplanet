@@ -242,7 +242,7 @@ export const lv: Record<string, InnovationCopy> = {
     risks:
       'Laboratorijas strāvas blīvums, kas mirst 100 stundās. Patentu migla. Katalizatora raksta sajaukšana ar gigavatu rūpnīcu.',
     sourcesNote:
-      'NREL ūdeņraža lapas; IEA elektrolīzeru uzskaite. Katalizatora raksts nav gigavatu rūpnīca.',
+      'ASV DOE ūdeņradis; IEA elektrolīzeru uzskaite. Katalizatora raksts nav gigavatu rūpnīca.',
   },
   'perpetual-motion': {
     title: 'Mūžīgais dzinējs — kāpēc tas neizdodas',

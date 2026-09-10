@@ -62,36 +62,182 @@ export type Solution = SolutionMeta & SolutionCopy;
  * `/solutions/{tag}` and `/solutions/all`.
  */
 export const solutionMeta: SolutionMeta[] = [
-  { slug: 'drip-irrigation', tag: 'water', latest: true },
-  { slug: 'constructed-wetlands', tag: 'water', latest: true },
-  { slug: 'membrane-desalination', tag: 'water' },
-  { slug: 'managed-aquifer-recharge', tag: 'water' },
-  { slug: 'sustainable-forestry', tag: 'forests', latest: true },
-  { slug: 'assisted-natural-regeneration', tag: 'forests' },
-  { slug: 'fire-smart-forestry', tag: 'forests' },
-  { slug: 'shade-agroforestry', tag: 'forests' },
-  { slug: 'anaerobic-digesters', tag: 'waste' },
+  {
+    slug: 'drip-irrigation',
+    tag: 'water',
+    latest: true,
+    sources: [
+      cite('FAO — Land & water management', 'https://www.fao.org/land-water/water/water-management/en/'),
+    ],
+  },
+  {
+    slug: 'constructed-wetlands',
+    tag: 'water',
+    latest: true,
+    sources: [cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands')],
+  },
+  {
+    slug: 'membrane-desalination',
+    tag: 'water',
+    sources: [
+      cite(
+        'Water Corporation (WA) — Desalination',
+        'https://www.watercorporation.com.au/Our-water/Desalination',
+      ),
+    ],
+  },
+  {
+    slug: 'managed-aquifer-recharge',
+    tag: 'water',
+    sources: [cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/')],
+  },
+  {
+    slug: 'sustainable-forestry',
+    tag: 'forests',
+    latest: true,
+    sources: [
+      cite(
+        'FAO — Global Forest Resources Assessment',
+        'https://www.fao.org/forest-resources-assessment/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'assisted-natural-regeneration',
+    tag: 'forests',
+    sources: [
+      cite(
+        'Regreening Africa — FMNR',
+        'https://regreeningafrica.org/approach/farmer-managed-natural-regeneration/',
+      ),
+    ],
+  },
+  {
+    slug: 'fire-smart-forestry',
+    tag: 'forests',
+    sources: [cite('NWCG — PMS 484', 'https://www.nwcg.gov/publications/pms484')],
+  },
+  {
+    slug: 'shade-agroforestry',
+    tag: 'forests',
+    sources: [
+      cite('IUCN — Shade-grown coffee', 'https://www.iucn.org/resources/issues-brief/shade-grown-coffee'),
+    ],
+  },
+  {
+    slug: 'anaerobic-digesters',
+    tag: 'waste',
+    sources: [cite('U.S. EPA — AgSTAR', 'https://www.epa.gov/agstar')],
+  },
   { slug: 'pet-bottle-recycling', tag: 'waste' },
-  { slug: 'municipal-composting', tag: 'waste' },
-  { slug: 'landfill-gas-capture', tag: 'waste' },
-  { slug: 'cool-roofs', tag: 'cities' },
-  { slug: 'permeable-pavement', tag: 'cities' },
-  { slug: 'urban-tree-canopy', tag: 'cities' },
-  { slug: 'district-heating', tag: 'cities' },
-  { slug: 'lower-clinker-cement', tag: 'materials' },
-  { slug: 'mass-timber', tag: 'materials' },
-  { slug: 'green-steel', tag: 'materials' },
+  {
+    slug: 'municipal-composting',
+    tag: 'waste',
+    sources: [
+      cite(
+        'U.S. EPA — Composting wasted food',
+        'https://www.epa.gov/sustainable-management-food/reducing-impact-wasted-food-feeding-soil-and-composting',
+      ),
+    ],
+  },
+  {
+    slug: 'landfill-gas-capture',
+    tag: 'waste',
+    sources: [cite('U.S. EPA — LMOP', 'https://www.epa.gov/lmop')],
+  },
+  {
+    slug: 'cool-roofs',
+    tag: 'cities',
+    sources: [
+      cite(
+        'U.S. EPA — Cool roofs',
+        'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
+      ),
+    ],
+  },
+  {
+    slug: 'permeable-pavement',
+    tag: 'cities',
+    sources: [
+      cite(
+        'U.S. EPA — Permeable pavement',
+        'https://www.epa.gov/soakuptherain/soak-rain-permeable-pavement',
+      ),
+    ],
+  },
+  {
+    slug: 'urban-tree-canopy',
+    tag: 'cities',
+    sources: [
+      cite(
+        'U.S. EPA — Trees and vegetation',
+        'https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands',
+      ),
+    ],
+  },
+  {
+    slug: 'district-heating',
+    tag: 'cities',
+    sources: [
+      cite(
+        'IEA — District heating',
+        'https://www.iea.org/energy-system/buildings/district-heating',
+      ),
+    ],
+  },
+  {
+    slug: 'lower-clinker-cement',
+    tag: 'materials',
+    sources: [cite('IEA — Cement', 'https://www.iea.org/energy-system/industry/cement')],
+  },
+  {
+    slug: 'mass-timber',
+    tag: 'materials',
+    sources: [cite('WoodWorks — mass timber', 'https://www.woodworks.org/')],
+  },
+  {
+    slug: 'green-steel',
+    tag: 'materials',
+    sources: [cite('HYBRIT', 'https://www.hybritdevelopment.se/')],
+  },
   {
     slug: 'river-interceptors',
     tag: 'oceans',
-    sources: [cite('The Ocean Cleanup — Interceptor', 'https://theoceancleanup.com/faq/what-is-an-interceptor/')],
+    sources: [cite('The Ocean Cleanup — Rivers', 'https://theoceancleanup.com/rivers/')],
   },
-  { slug: 'mangrove-restoration', tag: 'oceans' },
-  { slug: 'bycatch-reduction', tag: 'oceans' },
-  { slug: 'oyster-reefs', tag: 'oceans' },
-  { slug: 'solar-microgrids', tag: 'energy', latest: true },
-  { slug: 'onshore-wind', tag: 'energy' },
-  { slug: 'heat-pumps', tag: 'energy' },
+  {
+    slug: 'mangrove-restoration',
+    tag: 'oceans',
+    sources: [cite('Global Mangrove Watch', 'https://www.globalmangrovewatch.org/')],
+  },
+  {
+    slug: 'bycatch-reduction',
+    tag: 'oceans',
+    sources: [cite('NOAA Fisheries — Bycatch', 'https://www.fisheries.noaa.gov/insight/bycatch')],
+  },
+  {
+    slug: 'oyster-reefs',
+    tag: 'oceans',
+    sources: [
+      cite('NOAA — Living shorelines', 'https://oceanservice.noaa.gov/facts/living-shoreline.html'),
+    ],
+  },
+  {
+    slug: 'solar-microgrids',
+    tag: 'energy',
+    latest: true,
+    sources: [cite('IEA — Solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
+  },
+  {
+    slug: 'onshore-wind',
+    tag: 'energy',
+    sources: [cite('IEA — Wind', 'https://www.iea.org/energy-system/renewables/wind')],
+  },
+  {
+    slug: 'heat-pumps',
+    tag: 'energy',
+    sources: [cite('IEA — Heat pumps', 'https://www.iea.org/energy-system/buildings/heat-pumps')],
+  },
   {
     slug: 'rainwater-harvesting',
     tag: 'water',

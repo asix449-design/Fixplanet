@@ -291,7 +291,7 @@ export const humanEventSources: PrimarySource[] = [
   ),
   cite(
     'Anthony, The Horse, the Wheel, and Language, 2007 — archaeological Yamnaya context (not a racial map)',
-    'https://press.princeton.edu/books/paperback/9780691147925/the-horse-the-wheel-and-language',
+    'https://press.princeton.edu/books/paperback/9780691292595/the-horse-the-wheel-and-language',
   ),
   cite(
     'MapMaster after Cornell & Matthews and others — invasions of the Roman Empire',

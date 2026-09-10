@@ -432,13 +432,13 @@ p:last-child {
 .solution-card-wrap {
   display: flex;
   flex-direction: column;
-  height: 100%;
   scroll-margin-top: calc(var(--header-h) + 18px);
 }
 
 .solution-card-wrap .solution-card {
   flex: 1;
   height: auto;
+  min-height: 0;
 }
 
 .solution-card {
@@ -2389,6 +2389,10 @@ a.map-card:hover {
   margin-bottom: 0.55rem;
 }
 
+.innovation-badges .tag {
+  margin-bottom: 0;
+}
+
 .innovation-card {
   border-left-color: var(--lime);
 }
@@ -2436,6 +2440,9 @@ a.map-card:hover {
   margin: 0.45rem 0 0;
   font-size: 0.82rem;
   line-height: 1.35;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .innovation-card-source a {
