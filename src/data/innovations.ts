@@ -514,8 +514,8 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'NREL — Hydrogen production and delivery',
-        'https://www.nlr.gov/hydrogen/hydrogen-production-delivery',
+        'U.S. DOE — Hydrogen',
+        'https://www.energy.gov/cmei/fuels/hydrogen',
       ),
       cite(
         'IEA — Electrolysers',

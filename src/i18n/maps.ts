@@ -51,7 +51,7 @@ const pageEn: MapsPage = {
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
     religious: 'Sourced religion plates, century by century — gaps labeled.',
-    conflicts: 'Armed events from named datasets.',
+    conflicts: 'Armed events and battle deaths from named datasets.',
     ethnic: 'Language families as public cartography, not a census.',
     crime: 'Homicide and related rates where a public map exists.',
     pollution: 'Air, waste, and emissions with a named source.',
@@ -111,7 +111,7 @@ const pageRu: MapsPage = {
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
     religious: 'Карты религий по столетиям — пробелы помечены.',
-    conflicts: 'Вооружённые события по названным данным.',
+    conflicts: 'Вооружённые события и боевые потери по названным данным.',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime: 'Убийства и смежные показатели, где есть открытая карта.',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
@@ -171,7 +171,7 @@ const pagePl: MapsPage = {
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
     religious: 'Płyty religii stulecie po stuleciu — luki oznaczone.',
-    conflicts: 'Zbrojne zdarzenia z nazwanych zbiorów.',
+    conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime: 'Zabójstwa i pokrewne wskaźniki, gdzie jest publiczna mapa.',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
@@ -231,7 +231,7 @@ const pageLv: MapsPage = {
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
     religious: 'Reliģiju plāksnes pa gadsimtiem — iztrūkumi marķēti.',
-    conflicts: 'Bruņoti notikumi no nosauktām datu kopām.',
+    conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime: 'Slepkavības un radniecīgi rādītāji, kur ir publiska karte.',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',

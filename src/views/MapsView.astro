@@ -8,7 +8,6 @@ import {
   mapCategoryKeys,
   mapCategoryPath,
   mapHub,
-  mapShelfVisibleOnHub,
   type MapCategory,
 } from '../data/maps';
 import { getMapsByCategory, getMapsPage, localizePath, resolveLocale } from '../i18n';
@@ -29,8 +28,7 @@ const activeCategory: MapCategory | undefined = hub
     : undefined;
 
 const maps = activeCategory ? getMapsByCategory(locale, activeCategory) : [];
-const hubItems = mapHub.filter((item) => mapShelfVisibleOnHub(item.key));
-const filters = mapCategoryKeys.filter(mapShelfVisibleOnHub).map((key) => ({
+const filters = mapCategoryKeys.map((key) => ({
   key,
   label: page.categories[key],
   href: localizePath(mapCategoryPath(key), locale),
@@ -73,15 +71,21 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
   {
     hub ? (
       <SectionHub kicker={page.chooseCategory} label={page.filterAria}>
-        {hubItems.map((item) => (
+        {mapHub.map((item) => (
           <HubTile
             href={localizePath(mapCategoryPath(item.key), locale)}
             icon={item.icon}
             title={page.categories[item.key]}
             text={page.tiles[item.key]}
             lead={item.lead === true}
-            badge={item.key === 'history-of-borders' || item.key === 'religious' ? page.centuryBadge : undefined}
-            badgeTone="atlas"
+            badge={
+              item.key === 'history-of-borders' || item.key === 'religious'
+                ? page.centuryBadge
+                : undefined
+            }
+            badgeTone={
+              item.key === 'history-of-borders' || item.key === 'religious' ? 'atlas' : 'soon'
+            }
           />
         ))}
       </SectionHub>

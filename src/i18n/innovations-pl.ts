@@ -242,7 +242,7 @@ export const pl: Record<string, InnovationCopy> = {
     risks:
       'Gęstość prądu z laboratorium, która umiera po 100 godzinach. Mgła patentowa. Mylenie pracy o katalizatorze z fabryką gigawatową.',
     sourcesNote:
-      'Strony wodorowe NREL; śledzenie elektrolizerów IEA. Artykuł o katalizatorze to nie fabryka gigawatowa.',
+      'Wodór DOE (USA); śledzenie elektrolizerów IEA. Artykuł o katalizatorze to nie fabryka gigawatowa.',
   },
   'perpetual-motion': {
     title: 'Perpetuum mobile — dlaczego zawodzi',

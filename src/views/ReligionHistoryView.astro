@@ -14,7 +14,7 @@ const locale = resolveLocale(Astro.currentLocale);
 const page = getReligionHistoryPage(locale);
 const frames = getReligionHistoryFrames(locale);
 const shelfMaps = getMapsByCategory(locale, 'religious');
-const firstPreview = religionHistoryPreviewSrc(frames[0]?.preview ?? 'y0600.png');
+const firstPreview = religionHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
 ---
 
 <BaseLayout title={page.metaTitle} description={page.metaDescription} image={firstPreview}>

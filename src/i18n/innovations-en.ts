@@ -191,7 +191,7 @@ export const en: Record<string, InnovationCopy> = {
     players: 'NREL hydrogen and fuel-cell materials groups; industrial stack makers listed on IEA electrolyzer pages; academic groups publishing in Nature Energy and Joule.',
     risks: 'Lab current density that dies in 100 hours. Patent fog. Confusing a catalyst paper with a gigawatt factory.',
     sourcesNote:
-      'NREL hydrogen pages; IEA electrolysers tracking. A catalyst paper is not a gigawatt factory.',
+      'U.S. DOE hydrogen; IEA electrolysers tracking. A catalyst paper is not a gigawatt factory.',
   },
   'perpetual-motion': {
     title: 'Perpetual motion — why it fails',

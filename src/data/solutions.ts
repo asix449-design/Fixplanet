@@ -165,11 +165,41 @@ export const solutionMeta: SolutionMeta[] = [
       ),
     ],
   },
-  { slug: 'urban-tree-canopy', tag: 'cities' },
-  { slug: 'district-heating', tag: 'cities' },
-  { slug: 'lower-clinker-cement', tag: 'materials' },
-  { slug: 'mass-timber', tag: 'materials' },
-  { slug: 'green-steel', tag: 'materials' },
+  {
+    slug: 'urban-tree-canopy',
+    tag: 'cities',
+    sources: [
+      cite(
+        'U.S. EPA — Trees and vegetation',
+        'https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands',
+      ),
+    ],
+  },
+  {
+    slug: 'district-heating',
+    tag: 'cities',
+    sources: [
+      cite(
+        'IEA — District heating',
+        'https://www.iea.org/energy-system/buildings/district-heating',
+      ),
+    ],
+  },
+  {
+    slug: 'lower-clinker-cement',
+    tag: 'materials',
+    sources: [cite('IEA — Cement', 'https://www.iea.org/energy-system/industry/cement')],
+  },
+  {
+    slug: 'mass-timber',
+    tag: 'materials',
+    sources: [cite('WoodWorks — mass timber', 'https://www.woodworks.org/')],
+  },
+  {
+    slug: 'green-steel',
+    tag: 'materials',
+    sources: [cite('HYBRIT', 'https://www.hybritdevelopment.se/')],
+  },
   {
     slug: 'river-interceptors',
     tag: 'oceans',
