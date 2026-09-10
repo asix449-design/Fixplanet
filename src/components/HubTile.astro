@@ -39,20 +39,7 @@ const dataAttrs = {
   ...(dataFilter ? { 'data-filter': dataFilter } : {}),
   ...(dataPanel ? { 'data-panel': dataPanel } : {}),
 };
-
-const inner = (
-  <>
-    <div class="hub-tile-top">
-      <div class="hub-icon" aria-hidden="true">
-        <HubIcon name={icon} />
-      </div>
-      {badge && <span class={badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon'}>{badge}</span>}
-    </div>
-    <h2>{title}</h2>
-    <p>{text}</p>
-    {href && <span class="hub-arrow" aria-hidden="true">→</span>}
-  </>
-);
+const badgeClass = badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon';
 ---
 
 {
@@ -63,11 +50,26 @@ const inner = (
       aria-current={active ? 'page' : undefined}
       {...dataAttrs}
     >
-      {inner}
+      <div class="hub-tile-top">
+        <div class="hub-icon" aria-hidden="true">
+          <HubIcon name={icon} />
+        </div>
+        {badge && <span class={badgeClass}>{badge}</span>}
+      </div>
+      <h2>{title}</h2>
+      <p>{text}</p>
+      <span class="hub-arrow" aria-hidden="true">→</span>
     </a>
   ) : (
     <article class:list={classList} {...dataAttrs}>
-      {inner}
+      <div class="hub-tile-top">
+        <div class="hub-icon" aria-hidden="true">
+          <HubIcon name={icon} />
+        </div>
+        {badge && <span class={badgeClass}>{badge}</span>}
+      </div>
+      <h2>{title}</h2>
+      <p>{text}</p>
     </article>
   )
 }
