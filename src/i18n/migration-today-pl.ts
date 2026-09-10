@@ -151,7 +151,7 @@ export const plToday: TodayShelfCopy = {
     zaatari: {
       name: 'Zaatari',
       country: 'Jordania',
-      note: 'Około 80–83 tys. mieszkańców w publikacjach UNHCR i WFP z lat 2022–2024. Rok starszy niż wiersze Bangladeszu i Kenii — to nie spis z 2026 r.',
+      note: 'Obóz Zaatari. Główny kontyngent to przesiedleni z Syrii. Operacyjna liczba UNHCR na 31 sierpnia 2026.',
     },
   },
   routeCopy: {

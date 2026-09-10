@@ -151,7 +151,7 @@ export const lvToday: TodayShelfCopy = {
     zaatari: {
       name: 'Zaatari',
       country: 'Jordānija',
-      note: 'Ap 80–83 tūkstošiem iedzīvotāju UNHCR un Pasaules Pārtikas programmas piezīmēs no 2022.–2024. gada. Gads ir vecāks par Bangladešas un Kenijas rindām — tas nav 2026. gada tautas skaitīšana.',
+      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR operatīvais skaitlis uz 2026. gada 31. augustu.',
     },
   },
   routeCopy: {

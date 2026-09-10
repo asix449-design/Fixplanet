@@ -176,7 +176,7 @@ export const todaySources: PrimarySource[] = [
     'https://unstats.un.org/unsd/methodology/m49/',
   ),
   cite(
-    'UNHCR Operational Data Portal — Bangladesh (Cox’s Bazar, 31 July 2026)',
+    'UNHCR Operational Data Portal — Bangladesh (Cox’s Bazar, 31 August 2026)',
     'https://data.unhcr.org/en/country/bgd',
   ),
   cite(
@@ -184,11 +184,11 @@ export const todaySources: PrimarySource[] = [
     'https://www.unhcr.org/ke/',
   ),
   cite(
-    'UNHCR Operational Data Portal — Uganda (Bidibidi, 28 February 2026)',
+    'UNHCR Operational Data Portal — Uganda (Bidibidi, 31 August 2026)',
     'https://data.unhcr.org/en/country/uga',
   ),
   cite(
-    'UNHCR Operational Data Portal — Jordan (Zaatari range, older than 2026)',
+    'UNHCR Operational Data Portal — Jordan (Zaatari, 31 August 2026)',
     'https://data.unhcr.org/en/country/jor',
   ),
   cite(
