@@ -2161,8 +2161,8 @@ a.map-card:hover {
 }
 
 .theme-wildlife .wildlife-hub-backdrop img {
-  object-position: 50% 42%;
-  filter: saturate(1.08) brightness(0.92) contrast(1.04);
+  object-position: 50% 58%;
+  filter: saturate(1.1) brightness(1.04) contrast(1.05);
   transform: scale(1.04);
 }
 
