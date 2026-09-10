@@ -102,6 +102,37 @@ export const page: MigrationPage = {
       'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums) — bez mākoņiem fiziskā Zeme, ne politiskā karte.',
     honesty:
       'Shēma ar datētiem logiem uz fiziskas Zemes attēla. Tā nav GPS trase, nav ģenētiskais koks un nav apgalvojums, ka klimats vien pārvietoja cilvēkus.',
+    mapLinks: {
+      title: 'Agrīno migrāciju kartes',
+      lead:
+        'Publiskas mācību kartes — atveramas to pašu vietnēs, bez iframe. Datumi paliek pie nosauktā avota. Tā nav otra notikumu atlanta un nav katras grupas GPS.',
+      openMap: 'Atvērt karti →',
+      listedBy: 'Minēts',
+      extraLabels: {
+        'odyssey-exhibit': 'Ekspozīcijas lapa',
+        'fossil-wikipedia': 'Vikipēdijas fosiliju saraksts',
+        'era-australopithecus': 'Australopitēku laikmets',
+        'era-erectus': 'Homo erectus laikmets',
+        'era-sapiens': 'Homo sapiens laikmets',
+      },
+      cards: {
+        'human-odyssey': {
+          title: 'Human Odyssey Map',
+          hook:
+            'Kalifornijas Zinātņu akadēmijas interaktīvs: arheoloģisks, ģenētisks un klimata ieskicējums Homo sapiens izplatībai no Āfrikas, ar klimata laika skalu. Akadēmijas galddatora karte; viņi atzīmē, ka tā nav veidota tālruņiem.',
+        },
+        'early-fossils': {
+          title: 'Agrīnās Homo sapiens fosiliju vietas',
+          hook:
+            'Globāli agrīno atradumu punkti pēc Vikipēdijas. History Maps interaktīvs, ko minēja Maps Mania, vairs nav uz stabila hosta — atveriet Maps Mania aprakstu, tad noturīgo Vikipēdijas sarakstu.',
+        },
+        'hominid-evolution': {
+          title: 'Hominīdu evolūcijas kartes (~7 miljoni gadu)',
+          hook:
+            'Atlas of Human Evolution: trīs laikmetu kartes — australopitēki, Homo erectus un Homo sapiens — ar atlanta paša periodu etiķetēm. Mācību kartes, ne Fix Planet hronoloģija.',
+        },
+      },
+    },
     eventAtlas: lvHumanEventAtlas,
     sections: [
       {

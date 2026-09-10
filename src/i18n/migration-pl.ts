@@ -102,6 +102,37 @@ export const page: MigrationPage = {
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
     honesty:
       'Schemat datowanych okien na fizycznym obrazie Ziemi. To nie ślad GPS, nie drzewo genetyczne i nie twierdzenie, że sam klimat ruszył ludzi.',
+    mapLinks: {
+      title: 'Mapy wczesnych migracji',
+      lead:
+        'Publiczne mapy dydaktyczne — otwierane na ich stronach, bez iframe. Daty zostają przy nazwanym źródle. To nie drugi atlas zdarzeń i nie GPS każdej grupy.',
+      openMap: 'Otwórz mapę →',
+      listedBy: 'Wymienione w',
+      extraLabels: {
+        'odyssey-exhibit': 'Strona wystawy',
+        'fossil-wikipedia': 'Lista skamieniałości w Wikipedii',
+        'era-australopithecus': 'Epoka australopiteków',
+        'era-erectus': 'Epoka Homo erectus',
+        'era-sapiens': 'Epoka Homo sapiens',
+      },
+      cards: {
+        'human-odyssey': {
+          title: 'Human Odyssey Map',
+          hook:
+            'Interaktywna mapa California Academy of Sciences: zarys archeologiczny, genetyczny i klimatyczny rozprzestrzeniania Homo sapiens z Afryki, z osią klimatu. Mapa pulpitu Akademii; zaznaczają, że nie jest zbudowana na telefony.',
+        },
+        'early-fossils': {
+          title: 'Wczesne stanowiska skamieniałości Homo sapiens',
+          hook:
+            'Globalne miejsca wczesnych znalezisk, ze źródeł Wikipedii. Interaktyw History Maps wymieniony przez Maps Mania nie ma już stabilnego hosta — otwórz opis Maps Mania, potem trwałą listę Wikipedii.',
+        },
+        'hominid-evolution': {
+          title: 'Mapy ewolucji hominidów (~7 mln lat)',
+          hook:
+            'Atlas of Human Evolution: trzy mapy epok — australopiteki, Homo erectus i Homo sapiens — z własnymi etykietami atlasu. Mapy dydaktyczne, nie chronologia Fix Planet.',
+        },
+      },
+    },
     eventAtlas: plHumanEventAtlas,
     sections: [
       {

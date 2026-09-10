@@ -102,6 +102,37 @@ export const page: MigrationPage = {
       'Base land: NASA Blue Marble Next Generation (December 2004, public domain) — cloud-free physical Earth, not a political map.',
     honesty:
       'Schematic of dated windows on a physical Earth image. It is not a GPS track, not a genetic tree, and not a claim that climate alone moved people.',
+    mapLinks: {
+      title: 'Early migration maps',
+      lead:
+        'Public teaching maps, opened in their own sites — no iframes here. Dates stay with the named source. This is not a second event atlas and not a GPS of every band.',
+      openMap: 'Open map →',
+      listedBy: 'Listed in',
+      extraLabels: {
+        'odyssey-exhibit': 'Exhibit page',
+        'fossil-wikipedia': 'Wikipedia fossil list',
+        'era-australopithecus': 'Age of Australopithecus',
+        'era-erectus': 'Age of Homo erectus',
+        'era-sapiens': 'Age of Homo sapiens',
+      },
+      cards: {
+        'human-odyssey': {
+          title: 'Human Odyssey Map',
+          hook:
+            'California Academy of Sciences interactive: archaeological, genetic, and climate outline of Homo sapiens dispersal from Africa, with a climate timeline. The Academy’s desktop map; they note it is not built for phones.',
+        },
+        'early-fossils': {
+          title: 'Early Homo sapiens fossil sites',
+          hook:
+            'Global early fossil find spots, Wikipedia-sourced. The History Maps interactive that Maps Mania listed is no longer on a stable host — open the Maps Mania write-up, then the durable Wikipedia list.',
+        },
+        'hominid-evolution': {
+          title: 'Hominid evolution maps (~7 Myr)',
+          hook:
+            'Atlas of Human Evolution: three era maps — australopithecines, Homo erectus, and Homo sapiens — using the atlas’s own period labels. Teaching maps, not a Fix Planet chronology.',
+        },
+      },
+    },
     eventAtlas: {
       title: 'Major migration events',
       lead:
