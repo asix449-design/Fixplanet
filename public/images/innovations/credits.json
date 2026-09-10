@@ -209,5 +209,77 @@
     "artist": "Apollo 17 crew / NASA (AS17-148-22727)",
     "license": "Public domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg"
+  },
+  {
+    "slug": "deep-sky-alpha",
+    "file": "deep-sky-alpha.jpg",
+    "commonsTitle": "NET Power Plant.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NET_Power_Plant.jpg",
+    "artist": "Net Power Inc.",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "avnos-project-brighton",
+    "file": "avnos-project-brighton.jpg",
+    "commonsTitle": "Water treatment plant.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Water_treatment_plant.jpg",
+    "artist": "National Institute for Occupational Safety and Health (NIOSH) from USA",
+    "license": "Public domain"
+  },
+  {
+    "slug": "yara-sluiskil-ccs",
+    "file": "yara-sluiskil-ccs.jpg",
+    "commonsTitle": "TERNEUZEN - panoramio.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TERNEUZEN_-_panoramio.jpg",
+    "artist": "Adriaan van Oost",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "samsara-eco",
+    "file": "samsara-eco.jpg",
+    "commonsTitle": "Bales of PET bottles closeup.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg",
+    "artist": "Grendelkhan",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "quaise-mmwave-drilling",
+    "file": "quaise-mmwave-drilling.jpg",
+    "commonsTitle": "Drill rig.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drill_rig,_Pilbara,_August_2007.jpg",
+    "artist": "Calistemon",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "cfs-sparc",
+    "file": "cfs-sparc.jpg",
+    "commonsTitle": "ITER Tokamak mockup.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ITER_Tokamak_mockup.jpg",
+    "artist": "Johannes Reimer",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "form-energy-ireland",
+    "file": "form-energy-ireland.jpg",
+    "commonsTitle": "Tesvolt battery energy storage system Rheineck.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesvolt_battery_energy_storage_system_Rheineck.jpg",
+    "artist": "Kecko from Eastern Switzerland",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "weathernext-3",
+    "file": "weathernext-3.jpg",
+    "commonsTitle": "First Full Disk Image from GOES-17 as GOES West (40118037553).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_Full_Disk_Image_from_GOES-17_as_GOES_West_(40118037553).jpg",
+    "artist": "NOAA Satellites",
+    "license": "Public domain"
+  },
+  {
+    "slug": "ecmwf-aifs",
+    "file": "ecmwf-aifs.jpg",
+    "commonsTitle": "European Centre for Medium-Range Weather Forecasts.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_Centre_for_Medium-Range_Weather_Forecasts.jpg",
+    "artist": "James Hutchinson",
+    "license": "CC BY-SA 4.0"
   }
 ]
