@@ -198,7 +198,7 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:PET_bottles.jpg',
     ),
     sources: [
-      cite('Carbios', 'https://www.carbios.com/'),
+      cite('Wikipedia — Carbios', 'https://en.wikipedia.org/wiki/Carbios'),
       cite(
         'Yoshida et al., Science, 2016 — Ideonella sakaiensis PETase',
         'https://www.science.org/doi/10.1126/science.aad6359',
@@ -515,7 +515,7 @@ export const innovationMeta: InnovationMeta[] = [
     sources: [
       cite(
         'NREL — Hydrogen production and delivery',
-        'https://www.nrel.gov/hydrogen/hydrogen-production-delivery.html',
+        'https://www.nlr.gov/hydrogen/hydrogen-production-delivery',
       ),
       cite(
         'IEA — Electrolysers',

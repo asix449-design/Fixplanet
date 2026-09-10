@@ -2389,6 +2389,10 @@ a.map-card:hover {
   margin-bottom: 0.55rem;
 }
 
+.innovation-badges .tag {
+  margin-bottom: 0;
+}
+
 .innovation-card {
   border-left-color: var(--lime);
 }

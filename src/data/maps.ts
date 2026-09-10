@@ -40,6 +40,10 @@ export const retiredMapPaths: Record<string, string> = {
   'oil-gas': '/maps/subsurface',
   minerals: '/maps/subsurface',
   protected: '/maps/forests',
+  'battle-related-deaths': '/maps/conflicts',
+  'homicide-rates': '/maps',
+  'air-quality-pm25': '/maps',
+  'co2-emissions': '/maps',
 };
 
 export type MapMeta = {
@@ -90,17 +94,6 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
   },
   {
-    slug: 'battle-related-deaths',
-    category: 'conflicts',
-    year: '1989–2024',
-    sourceShort: 'UCDP / OWID',
-    sourceOrg: 'Uppsala Conflict Data Program; Our World in Data',
-    sourceUrl: 'https://ucdp.uu.se/',
-    openMapUrl: 'https://ourworldindata.org/war-and-peace',
-    preview: 'battle-related-deaths.jpg',
-    previewKind: 'photo',
-  },
-  {
     slug: 'language-families',
     category: 'ethnic',
     year: '2024',
@@ -121,39 +114,6 @@ export const mapMeta: MapMeta[] = [
     openMapUrl:
       'https://www.pewresearch.org/religion/feature/religious-composition-by-country-2010-2050/',
     preview: 'world-religions.jpg',
-    previewKind: 'photo',
-  },
-  {
-    slug: 'homicide-rates',
-    category: 'crime',
-    year: '2019–2023',
-    sourceShort: 'UNODC / OWID',
-    sourceOrg: 'United Nations Office on Drugs and Crime; Our World in Data',
-    sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
-    openMapUrl: 'https://ourworldindata.org/homicides',
-    preview: 'homicide-rates.jpg',
-    previewKind: 'photo',
-  },
-  {
-    slug: 'air-quality-pm25',
-    category: 'pollution',
-    year: '2019–2022',
-    sourceShort: 'WHO / OWID',
-    sourceOrg: 'World Health Organization; Our World in Data; NASA Earth observations',
-    sourceUrl: 'https://www.who.int/data/gho/data/themes/air-pollution',
-    openMapUrl: 'https://ourworldindata.org/air-pollution',
-    preview: 'air-quality-pm25.jpg',
-    previewKind: 'photo',
-  },
-  {
-    slug: 'co2-emissions',
-    category: 'pollution',
-    year: '2023',
-    sourceShort: 'Global Carbon Project',
-    sourceOrg: 'Global Carbon Project; Our World in Data',
-    sourceUrl: 'https://www.globalcarbonproject.org/',
-    openMapUrl: 'https://ourworldindata.org/co2-emissions',
-    preview: 'co2-emissions.jpg',
     previewKind: 'photo',
   },
   {
@@ -258,6 +218,13 @@ export function getMapMeta(slug: string): MapMeta | undefined {
 
 export function mapsByCategory(category: MapCategory): MapMeta[] {
   return mapMeta.filter((item) => item.category === category);
+}
+
+const atlasShelves = new Set<MapCategory>(['history-of-borders', 'religious']);
+
+/** Atlas shelves stay on the hub even with an empty catalog grid. */
+export function mapShelfVisibleOnHub(category: MapCategory): boolean {
+  return atlasShelves.has(category) || mapsByCategory(category).length > 0;
 }
 
 export function mapCategoryPath(category: MapCategory): string {

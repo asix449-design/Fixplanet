@@ -74,8 +74,13 @@ const image = wildlifeImageSrc(species.image);
             {ui.wildlifePage.status[species.status]}
           </span>
           <span class="pill">
-            {ui.wildlifePage.iucnLabel}: {ui.wildlifePage.iucn[species.iucn]}
+            {ui.wildlifePage.iucnLabel}: {species.iucn} · {ui.wildlifePage.iucn[species.iucn]}
           </span>
+          {
+            species.functionallyExtinct ? (
+              <span class="pill status-extinct">{ui.wildlifePage.functionallyExtinct}</span>
+            ) : null
+          }
         </div>
         <h2>{ui.wildlifePage.what}</h2>
         <p>{species.what}</p>

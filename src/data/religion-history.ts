@@ -28,6 +28,9 @@ export type ReligionFrameMeta = {
 export const religionHistoryPreviewSrc = (file: string) =>
   file.startsWith('/') ? file : `/images/maps/religion/${file}`;
 
+/** Unusable hosted plates: scan fold (y0001), tiny schematic (y0820), binding spring (y1943). */
+export const unusableReligionPreviews = new Set(['y0001.png', 'y0820.png', 'y1943.jpg']);
+
 /**
  * Century steps from the start of the Common Era to now.
  * Religion maps for early centuries are sparse and contested. Each frame is a

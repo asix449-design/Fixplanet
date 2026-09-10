@@ -11,6 +11,8 @@ const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const { species } = Astro.props;
 const href = localizePath(`/wildlife/${species.slug}`, locale);
+const iucnLabel = ui.wildlifePage.iucn[species.iucn];
+const emphasizeIucn = species.iucn === 'EW' || species.functionallyExtinct === true;
 ---
 
 <article
@@ -29,9 +31,25 @@ const href = localizePath(`/wildlife/${species.slug}`, locale);
       />
     </div>
     <div class="card-body">
-      <span class:list={['tag', `status-${species.status}`]}>
-        {ui.wildlifePage.status[species.status]}
-      </span>
+      <div class="innovation-badges">
+        {
+          emphasizeIucn ? (
+            <>
+              <span class:list={['tag', `status-${species.status}`]}>{species.iucn}</span>
+              <span class:list={['tag', `status-${species.status}`]}>{iucnLabel}</span>
+            </>
+          ) : (
+            <span class:list={['tag', `status-${species.status}`]}>
+              {ui.wildlifePage.status[species.status]}
+            </span>
+          )
+        }
+        {
+          species.functionallyExtinct ? (
+            <span class="tag status-extinct">{ui.wildlifePage.functionallyExtinct}</span>
+          ) : null
+        }
+      </div>
       <h3>{species.commonName}</h3>
       <p class="scientific-name"><em>{species.scientificName}</em></p>
       <p class="wildlife-hook">{species.hook}</p>

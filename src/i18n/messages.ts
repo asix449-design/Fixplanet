@@ -199,6 +199,7 @@ const en = {
     iucnLabel: 'IUCN',
     sourcesLabel: 'Sources',
     imageCredit: 'Image',
+    functionallyExtinct: 'Functionally extinct',
     iucn: {
       EX: 'Extinct',
       EW: 'Extinct in the Wild',
@@ -499,6 +500,7 @@ const ru: typeof en = {
     iucnLabel: 'МСОП',
     sourcesLabel: 'Источники',
     imageCredit: 'Изображение',
+    functionallyExtinct: 'Функционально вымерший',
     iucn: {
       EX: 'Исчезнувший',
       EW: 'Исчез в дикой природе',
@@ -802,6 +804,7 @@ const pl: typeof en = {
     iucnLabel: 'IUCN',
     sourcesLabel: 'Źródła',
     imageCredit: 'Zdjęcie',
+    functionallyExtinct: 'Funkcjonalnie wymarły',
     iucn: {
       EX: 'Wymarły',
       EW: 'Wymarły na wolności',
@@ -1105,6 +1108,7 @@ const lv: typeof en = {
     iucnLabel: 'IUCN',
     sourcesLabel: 'Avoti',
     imageCredit: 'Attēls',
+    functionallyExtinct: 'Funkcionāli izmiris',
     iucn: {
       EX: 'Izmiris',
       EW: 'Izmiris savvaļā',

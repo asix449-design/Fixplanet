@@ -18,10 +18,12 @@ const {
 } = Astro.props;
 const photo = `/images/solutions/${solution.slug}.jpg`;
 const primary = solutionPrimarySource(solution.sources);
+const cardHref = primary?.url ?? href;
+const cardRel = primary ? 'noopener noreferrer' : undefined;
 ---
 
 <article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug} hidden={hidden}>
-  <a class="solution-card" href={href}>
+  <a class="solution-card" href={cardHref} rel={cardRel}>
     <div class="card-art">
       <img
         src={photo}

@@ -1,5 +1,6 @@
 import {
   religionHistoryFrames,
+  unusableReligionPreviews,
   type ReligionCoverage,
   type ReligionFrameMeta,
 } from '../data/religion-history';
@@ -42,9 +43,9 @@ const pageEn: ReligionHistoryPage = {
   eyebrow: 'Map room · year 0 CE to now',
   title: 'Religion',
   lead:
-    'Religion maps, one century at a time: year 1 of the Common Era through the present. Each frame is a published atlas plate, a government sheet, or an openly licensed reconstruction. Early centuries have few honest world maps.',
+    'Religion maps, one century at a time, from sourced plates we can actually host. Each frame is a published atlas plate, a government sheet, or an openly licensed reconstruction. Centuries without a usable scan are omitted rather than shown broken.',
   honesty:
-    'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. Sourced plates sit at antiquity (a 1905 Old-World reconstruction), the spread of Christianity to 600, state religions about 820, Shepherd’s Europe–Mediterranean religions about 1097, a cumulative spread-to-1500 plate, Woodbridge 1821, Dobbins 1883, the U.S. Army 1943 world sheet, and a 2000s majority-region map. Other century steps reuse the nearest plate and say so. We do not draw missing centuries.',
+    'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. Usable hosted plates sit at the spread of Christianity to 600, Shepherd’s Europe–Mediterranean religions about 1097, a cumulative spread-to-1500 plate, Woodbridge 1821, Dobbins 1883, and a 2000s majority-region map. Unusable scans are left out of the scrubber. We do not draw missing centuries.',
   back: '← Maps',
   scrubberAria: 'Jump to a century',
   sourceLabel: 'Source',
@@ -65,7 +66,7 @@ const pageEn: ReligionHistoryPage = {
     'majority-modern': 'Modern majority-religion regions — affiliation, not piety, and not Pew artwork',
   },
   catalogTitle: 'Religion',
-  catalogHook: 'Century steps from 1 CE to now: sourced plates, labeled gaps, no invented polygons.',
+  catalogHook: 'Century steps from sourced plates we can host: labeled gaps, no invented polygons.',
   catalogCta: 'Open the timeline →',
   catalogAlt: 'Majority-religion world map used as the catalog card for the Religion century atlas',
   heroAlt:
@@ -81,9 +82,9 @@ const pageRu: ReligionHistoryPage = {
   eyebrow: 'Картографическая · от 0 н. э. до сейчас',
   title: 'Религии',
   lead:
-    'Карты религий — по одному столетию: от 1 года н. э. до наших дней. Каждый кадр — изданный лист атласа, государственная карта или открытая реконструкция. Для ранних веков честных мировых карт мало.',
+    'Карты религий — по одному столетию, только с листами, которые можно честно показать. Каждый кадр — изданный лист атласа, государственная карта или открытая реконструкция. Столетия без пригодного скана пропускаем, а не показываем испорченный кадр.',
   honesty:
-    'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Есть листы: древность (реконструкция Старого Света 1905 года), распространение христианства до 600, государственные религии около 820, религии Европы и Средиземноморья у Shepherd около 1097, накопленное распространение до 1500, Woodbridge 1821, Dobbins 1883, армейский лист США 1943 и карта регионов большинства 2000-х. Остальные шаги — ближайший лист с пометкой. Недостающие века мы не рисуем.',
+    'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Пригодные размещённые листы: распространение христианства до 600, религии Европы и Средиземноморья у Shepherd около 1097, накопленное распространение до 1500, Woodbridge 1821, Dobbins 1883 и карта регионов большинства 2000-х. Непригодные сканы убраны с ленты. Недостающие века мы не рисуем.',
   back: '← Карты',
   scrubberAria: 'Перейти к столетию',
   sourceLabel: 'Источник',
@@ -104,7 +105,7 @@ const pageRu: ReligionHistoryPage = {
     'majority-modern': 'Современные регионы большинства — принадлежность, не благочестие и не графика Pew',
   },
   catalogTitle: 'Религии',
-  catalogHook: 'Столетия от 1 н. э. до сейчас: листы с источниками, помеченные пробелы, без выдуманных полигонов.',
+  catalogHook: 'Столетия с листами, которые можем разместить: помеченные пробелы, без выдуманных полигонов.',
   catalogCta: 'Открыть ленту →',
   catalogAlt: 'Карта регионов большинства религий — карточка атласа столетий «Религии»',
   heroAlt:
@@ -120,9 +121,9 @@ const pagePl: ReligionHistoryPage = {
   eyebrow: 'Mapownia · od roku 0 n.e. do dziś',
   title: 'Religie',
   lead:
-    'Mapy religii, stulecie po stuleciu: od roku 1 n.e. do dziś. Każda klatka to opublikowany arkusz atlasu, mapa rządowa albo rekonstrukcja na otwartej licencji. We wczesnych wiekach uczciwych map świata jest mało.',
+    'Mapy religii, stulecie po stuleciu, z płyt, które naprawdę możemy pokazać. Każda klatka to opublikowany arkusz atlasu, mapa rządowa albo rekonstrukcja na otwartej licencji. Stulecia bez użytecznego skanu pomijamy zamiast pokazywać zepsutą klatkę.',
   honesty:
-    'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Są arkusze: starożytność (rekonstrukcja Starego Świata z 1905), rozprzestrzenianie chrześcijaństwa do 600, religie państwowe około 820, religie Europy i Śródziemnomorza Shepherda około 1097, skumulowane rozprzestrzenienie do 1500, Woodbridge 1821, Dobbins 1883, arkusz armii USA z 1943 i mapa regionów większości z lat 2000. Pozostałe kroki to najbliższy arkusz z adnotacją. Brakujących stuleci nie rysujemy.',
+    'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Użyteczne hostowane arkusze: rozprzestrzenianie chrześcijaństwa do 600, religie Europy i Śródziemnomorza Shepherda około 1097, skumulowane rozprzestrzenienie do 1500, Woodbridge 1821, Dobbins 1883 i mapa regionów większości z lat 2000. Nieużyteczne skany wypadają z osi. Brakujących stuleci nie rysujemy.',
   back: '← Mapy',
   scrubberAria: 'Skocz do stulecia',
   sourceLabel: 'Źródło',
@@ -143,7 +144,7 @@ const pagePl: ReligionHistoryPage = {
     'majority-modern': 'Współczesne regiony większości — przynależność, nie pobożność i nie grafika Pew',
   },
   catalogTitle: 'Religie',
-  catalogHook: 'Kroki stuleci od 1 n.e. do dziś: arkusze ze źródłami, oznaczone luki, bez wymyślonych wielokątów.',
+  catalogHook: 'Kroki stuleci z płyt, które umiemy hostować: oznaczone luki, bez wymyślonych wielokątów.',
   catalogCta: 'Otwórz oś czasu →',
   catalogAlt: 'Mapa regionów większości religijnej — karta atlasu stuleci Religii',
   heroAlt:
@@ -159,9 +160,9 @@ const pageLv: ReligionHistoryPage = {
   eyebrow: 'Karšu zāle · no 0. m.ē. līdz šodienai',
   title: 'Reliģijas',
   lead:
-    'Reliģiju kartes — pa vienam gadsimtam: no 1. gada m.ē. līdz mūsdienām. Katrs kadrs ir publicēta atlanta lapa, valsts karte vai atklāti licencēta rekonstrukcija. Agrīnajiem gadsimtiem godīgu pasaules karšu ir maz.',
+    'Reliģiju kartes — pa vienam gadsimtam no lapām, ko varam godīgi rādīt. Katrs kadrs ir publicēta atlanta lapa, valsts karte vai atklāti licencēta rekonstrukcija. Gadsimtus bez lietojama skenējuma izlaižam, nevis rādām sabojātu kadru.',
   honesty:
-    'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Ir lapas: senatne (1905. gada Vecās pasaules rekonstrukcija), kristietības izplatība līdz 600., valstu reliģijas ap 820., Shepherd Eiropas–Vidusjūras reliģijas ap 1097., kumulatīva izplatība līdz 1500., Woodbridge 1821, Dobbins 1883, ASV armijas 1943. gada lapa un 2000. gadu vairākuma reģionu karte. Pārējie soļi ir tuvākā lapa ar atzīmi. Trūkstošos gadsimtus mēs nezīmējam.',
+    'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Lietojamās izvietotās lapas: kristietības izplatība līdz 600., Shepherd Eiropas–Vidusjūras reliģijas ap 1097., kumulatīva izplatība līdz 1500., Woodbridge 1821, Dobbins 1883 un 2000. gadu vairākuma reģionu karte. Nelietojamos skenējumus no slīdņa izņemam. Trūkstošos gadsimtus mēs nezīmējam.',
   back: '← Kartes',
   scrubberAria: 'Pāriet uz gadsimtu',
   sourceLabel: 'Avots',
@@ -183,7 +184,7 @@ const pageLv: ReligionHistoryPage = {
   },
   catalogTitle: 'Reliģijas',
   catalogHook:
-    'Gadsimtu soļi no 1. m.ē. līdz šodienai: lapas ar avotiem, marķēti iztrūkumi, bez izdomātiem daudzstūriem.',
+    'Gadsimtu soļi ar lapām, ko varam izvietot: marķēti iztrūkumi, bez izdomātiem daudzstūriem.',
   catalogCta: 'Atvērt laika līniju →',
   catalogAlt: 'Vairākuma reliģiju pasaules karte — Reliģiju gadsimtu atlanta kartīte',
   heroAlt:
@@ -753,8 +754,10 @@ export function getReligionHistoryPage(locale: Locale): ReligionHistoryPage {
 }
 
 export function getReligionHistoryFrames(locale: Locale): ReligionFrame[] {
-  return religionHistoryFrames.map((meta) => {
-    const copy = captions[locale][meta.year] ?? captions.en[meta.year];
-    return { ...meta, ...copy };
-  });
+  return religionHistoryFrames
+    .filter((meta) => !unusableReligionPreviews.has(meta.preview))
+    .map((meta) => {
+      const copy = captions[locale][meta.year] ?? captions.en[meta.year];
+      return { ...meta, ...copy };
+    });
 }
