@@ -34,6 +34,8 @@ export type MapsPage = {
   schematicNote: string;
   schematicBadge: string;
   heroAlt: string;
+  hubHeroAlt: string;
+  photoCredit: string;
   empty: string;
   categories: Record<MapCategory, string>;
 };
@@ -82,6 +84,9 @@ const pageEn: MapsPage = {
   schematicBadge: 'Fix Planet overview',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors, deep blue oceans, and ice caps, with no political borders or labels',
+  hubHeroAlt:
+    'Earth at night from space, Africa-centered, city lights on the continents and faint lines across dark oceans',
+  photoCredit: 'Photo: founder-supplied Earth at night from space.',
   empty: 'No maps in this category yet.',
   categories: {
     'history-of-borders': 'History of borders',
@@ -142,6 +147,9 @@ const pageRu: MapsPage = {
   schematicBadge: 'Обзор Fix Planet',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши, тёмно-синие океаны и ледники, без политических границ и подписей',
+  hubHeroAlt:
+    'Земля ночью из космоса, в центре Африка: огни городов на материках и тонкие линии над тёмными океанами',
+  photoCredit: 'Фото: снимок основателя — Земля ночью из космоса.',
   empty: 'В этой категории пока нет карт.',
   categories: {
     'history-of-borders': 'История границ',
@@ -202,6 +210,9 @@ const pagePl: MapsPage = {
   schematicBadge: 'Przegląd Fix Planet',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów, głęboki błękit oceanów i czapy lodu, bez granic politycznych i etykiet',
+  hubHeroAlt:
+    'Ziemia nocą z kosmosu, Afryka na środku: światła miast na kontynentach i blade linie nad ciemnymi oceanami',
+  photoCredit: 'Zdjęcie: zdjęcie założyciela — Ziemia nocą z kosmosu.',
   empty: 'W tej kategorii nie ma jeszcze map.',
   categories: {
     'history-of-borders': 'Historia granic',
@@ -262,6 +273,9 @@ const pageLv: MapsPage = {
   schematicBadge: 'Fix Planet pārskats',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes krāsas, tumši zili okeāni un ledus cepures, bez politiskām robežām un uzrakstiem',
+  hubHeroAlt:
+    'Zeme naktī no kosmosa, Āfrika centrā: pilsētu gaismas uz kontinentiem un vājas līnijas pāri tumšiem okeāniem',
+  photoCredit: 'Foto: dibinātāja piegādāts Zemes nakts skats no kosmosa.',
   empty: 'Šajā kategorijā vēl nav karšu.',
   categories: {
     'history-of-borders': 'Robežu vēsture',

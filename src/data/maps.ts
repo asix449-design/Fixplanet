@@ -264,6 +264,17 @@ export function mapCategoryPath(category: MapCategory): string {
   return `/maps/${category}`;
 }
 
+/** Hub-only hero. Category shelves keep the Blue Marble page hero. */
+export const mapsHubBackdrop = {
+  file: 'maps-hub-bg.jpg',
+  credit: 'Founder-supplied Earth at night from space',
+  license: 'Site asset',
+  width: 1280,
+  height: 720,
+} as const;
+
+export const mapsHubSrc = `/images/maps/${mapsHubBackdrop.file}`;
+
 /** Query or path slug → localized-ready site path, or undefined if it is not a maps shelf. */
 export function mapShelfRedirect(value: string | null | undefined): string | undefined {
   if (!value) return undefined;

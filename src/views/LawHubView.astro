@@ -1,8 +1,7 @@
 ---
 import HubTile from '../components/HubTile.astro';
-import SectionHub from '../components/SectionHub.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { lawCategoryPath, lawHub, lawSectionSrc } from '../data/law';
+import { lawCategoryPath, lawHub, lawHubBackdrop, lawHubSrc } from '../data/law';
 import { getLawPage, localizePath, resolveLocale } from '../i18n';
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -12,25 +11,36 @@ const page = getLawPage(locale);
 <BaseLayout
   title={page.metaTitle}
   description={page.metaDescription}
-  image={lawSectionSrc}
+  image={lawHubSrc}
   theme="law"
 >
-  <div class="section-backdrop" aria-hidden="true">
-    <img src={lawSectionSrc} alt="" width="1920" height="1280" />
-    <div class="section-backdrop-scrim law-scrim"></div>
+  <div class="section-backdrop law-hub-backdrop" aria-hidden="true">
+    <img src={lawHubSrc} alt="" width={lawHubBackdrop.width} height={lawHubBackdrop.height} />
+    <div class="section-backdrop-scrim law-hub-scrim"></div>
   </div>
 
-  <SectionHub kicker={page.chooseCategory} label={page.filterAria} columns={3}>
-    {
-      lawHub.map((item) => (
-        <HubTile
-          href={localizePath(lawCategoryPath(item.key), locale)}
-          icon={item.icon}
-          title={page.categories[item.key]}
-          text={page.tiles[item.key]}
-          dataArea={item.key}
-        />
-      ))
-    }
-  </SectionHub>
+  <section class="law-hero" aria-label={page.filterAria}>
+    <div class="wrap law-hero-inner">
+      <div class="law-hero-panel">
+        <p class="visually-hidden">{page.hubHeroAlt}</p>
+        <p class="forests-hero-kicker">{page.eyebrow}</p>
+        <h1 class="forests-hero-title">{page.title}</h1>
+        <p class="forests-hero-note">{page.lead}</p>
+        <p class="oceans-hero-credit">{page.photoCredit}</p>
+      </div>
+      <nav class="hub-grid hub-grid-3 law-hero-tiles" aria-label={page.filterAria}>
+        {
+          lawHub.map((item) => (
+            <HubTile
+              href={localizePath(lawCategoryPath(item.key), locale)}
+              icon={item.icon}
+              title={page.categories[item.key]}
+              text={page.tiles[item.key]}
+              dataArea={item.key}
+            />
+          ))
+        }
+      </nav>
+    </div>
+  </section>
 </BaseLayout>

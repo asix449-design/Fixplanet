@@ -485,11 +485,10 @@ export const geoSectionSrc = `/images/geoengineering/${geoSectionImage.file}`;
 /** Hub-only hero. Shelf pages keep `geoSectionImage`. */
 export const geoHubBackdrop = {
   file: 'terraforming-hub-bg.jpg',
-  credit:
-    'Fix Planet generated hub hero — drought and rain under a hexagonal atmospheric shield; not a film still',
+  credit: 'Founder-supplied split landscape — drought beside returning life',
   license: 'Site asset',
-  width: 1920,
-  height: 1080,
+  width: 1280,
+  height: 720,
 } as const;
 
 export const geoHubSrc = `/images/geoengineering/${geoHubBackdrop.file}`;

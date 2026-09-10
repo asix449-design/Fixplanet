@@ -97,6 +97,9 @@ const en = {
     chooseTopic: 'Choose a topic',
     all: 'All',
     allKey: 'all',
+    heroAlt:
+      'Five glowing laboratory flasks on a dark bench at night — yellow, cyan, green, gold, and blue reagents, with vapor rising into network diagrams and a green city',
+    photoCredit: 'Photo: founder-supplied laboratory reagent bottles.',
     problem: 'Problem',
     fix: 'Fix',
     explore: 'Explore solution →',
@@ -143,6 +146,9 @@ const en = {
     scientificName: 'Homo sapiens',
     tabsAria: 'Wildlife shelves',
     chooseStatus: 'Choose a shelf',
+    hubHeroAlt:
+      'A deer drinking from a dark mountain river at sunset, with conifers behind and yellow wildflowers in the foreground',
+    photoCredit: 'Photo: founder-supplied deer drinking from a river at sunset.',
     surviving: 'Surviving',
     endangered: 'Endangered',
     extinct: 'Extinct',
@@ -402,6 +408,9 @@ const ru: typeof en = {
     chooseTopic: 'Выберите тему',
     all: 'Все',
     allKey: 'all',
+    heroAlt:
+      'Пять светящихся лабораторных колб на тёмном столе ночью — жёлтый, голубой, зелёный, золотой и синий реактивы, пар поднимается в сети и зелёный город',
+    photoCredit: 'Фото: снимок основателя — лабораторные колбы с реактивами.',
     problem: 'Проблема',
     fix: 'Решение',
     explore: 'Подробнее →',
@@ -448,6 +457,9 @@ const ru: typeof en = {
     scientificName: 'Homo sapiens',
     tabsAria: 'Разделы Природы',
     chooseStatus: 'Выберите раздел',
+    hubHeroAlt:
+      'Олень пьёт из тёмной горной реки на закате: хвойный лес позади и жёлтые цветы на переднем плане',
+    photoCredit: 'Фото: снимок основателя — олень пьёт из реки на закате.',
     surviving: 'Выжившие',
     endangered: 'Под угрозой',
     extinct: 'Вымершие',
@@ -710,6 +722,9 @@ const pl: typeof en = {
     chooseTopic: 'Wybierz temat',
     all: 'Wszystkie',
     allKey: 'all',
+    heroAlt:
+      'Pięć świecących kolb laboratoryjnych na ciemnym stole nocą — żółty, cyjan, zielony, złoty i niebieski odczynnik, para unosi się w sieci i zielone miasto',
+    photoCredit: 'Zdjęcie: zdjęcie założyciela — laboratoryjne kolby z odczynnikami.',
     problem: 'Problem',
     fix: 'Rozwiązanie',
     explore: 'Zobacz rozwiązanie →',
@@ -756,6 +771,9 @@ const pl: typeof en = {
     scientificName: 'Homo sapiens',
     tabsAria: 'Działy Przyrody',
     chooseStatus: 'Wybierz dział',
+    hubHeroAlt:
+      'Jeleń pijący z ciemnej górskiej rzeki o zmierzchu, z iglastym lasem w tle i żółtymi kwiatami na pierwszym planie',
+    photoCredit: 'Zdjęcie: zdjęcie założyciela — jeleń pijący z rzeki o zmierzchu.',
     surviving: 'Przetrwałe',
     endangered: 'Zagrożone',
     extinct: 'Wymarłe',
@@ -1018,6 +1036,9 @@ const lv: typeof en = {
     chooseTopic: 'Izvēlies tēmu',
     all: 'Visi',
     allKey: 'all',
+    heroAlt:
+      'Piecas spīdošas laboratorijas kolbas uz tumša galda naktī — dzeltens, ciāna, zaļš, zelta un zils reaģents, tvaiks ceļas tīklos un zaļā pilsētā',
+    photoCredit: 'Foto: dibinātāja piegādātas laboratorijas reaģentu kolbas.',
     problem: 'Problēma',
     fix: 'Risinājums',
     explore: 'Skatīt risinājumu →',
@@ -1064,6 +1085,9 @@ const lv: typeof en = {
     scientificName: 'Homo sapiens',
     tabsAria: 'Savvaļas sadaļas',
     chooseStatus: 'Izvēlies sadaļu',
+    hubHeroAlt:
+      'Briedis dzer no tumšas kalnu upes saulrietā, aiz muguras skujkoku mežs un priekšplānā dzelteni ziedi',
+    photoCredit: 'Foto: dibinātāja piegādāts briedis, kas dzer no upes saulrietā.',
     surviving: 'Izdzīvojušie',
     endangered: 'Apdraudētie',
     extinct: 'Izmirušie',

@@ -16,7 +16,6 @@ export const tagKeys = [
 export type TagKey = (typeof tagKeys)[number];
 
 export const solutionsHub = [
-  { key: 'all', icon: 'grid' },
   { key: 'water', icon: 'droplet' },
   { key: 'forests', icon: 'trees' },
   { key: 'waste', icon: 'recycle' },
@@ -25,9 +24,20 @@ export const solutionsHub = [
   { key: 'oceans', icon: 'wave' },
   { key: 'energy', icon: 'bolt' },
 ] as const satisfies ReadonlyArray<{
-  key: TagKey | 'all';
+  key: TagKey;
   icon: HubIconName;
 }>;
+
+/** Hub-only hero. Shelf catalogs keep their own cards; `/solutions/all` stays a shelf. */
+export const solutionsHubBackdrop = {
+  file: 'solutions-hub-bg.jpg',
+  credit: 'Founder-supplied laboratory reagent bottles',
+  license: 'Site asset',
+  width: 1280,
+  height: 720,
+} as const;
+
+export const solutionsHubSrc = `/images/solutions/${solutionsHubBackdrop.file}`;
 
 export type SolutionMeta = {
   slug: string;
@@ -58,7 +68,7 @@ export type Solution = SolutionMeta & SolutionCopy;
  * Slugs stay English in every language. Prefer technologies already running
  * at scale or in serious deployment. Label pilots honestly. Do not invent
  * impact statistics. Primary sources are official agency or project pages —
- * not blogs. Hub tiles stay on `/solutions`; cards live on
+ * not blogs. Hub tiles stay on `/solutions` (no All tile). Cards live on
  * `/solutions/{tag}` and `/solutions/all`.
  */
 export const solutionMeta: SolutionMeta[] = [
