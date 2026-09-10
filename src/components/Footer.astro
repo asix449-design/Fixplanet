@@ -1,5 +1,5 @@
 ---
-import { site } from '../data/site';
+import { SHOW_BOOK_NAV, site } from '../data/site';
 import { basedIn, getUi, localizePath, resolveLocale } from '../i18n';
 import Logo from './Logo.astro';
 
@@ -29,7 +29,11 @@ const year = new Date().getFullYear();
           <a href={localizePath('/forests', locale)}>{ui.nav.forests}</a>
           <a href={localizePath('/oceans', locale)}>{ui.nav.oceans}</a>
           <a href={localizePath('/law', locale)}>{ui.nav.law}</a>
-          <a href={localizePath('/book', locale)}>{ui.footer.theBook}</a>
+          {
+            SHOW_BOOK_NAV && (
+              <a href={localizePath('/book', locale)}>{ui.footer.theBook}</a>
+            )
+          }
           <a href={localizePath('/about', locale)}>{ui.nav.about}</a>
           <a href={localizePath('/donate', locale)}>{ui.nav.donate}</a>
         </div>

@@ -15,7 +15,13 @@ export const site = {
 export const donateCheckoutUrl =
   'https://buy.stripe.com/00w3cnbA548A5Za7PKffy00';
 
-export const nav = [
+/**
+ * Temporarily hide Book from header, home hub, and footer while New World is
+ * being edited. `/book` routes and About copy stay live. Flip to true to restore.
+ */
+export const SHOW_BOOK_NAV = false;
+
+const allNav = [
   { href: '/solutions', key: 'solutions' },
   { href: '/innovations', key: 'innovations' },
   { href: '/terraforming', key: 'terraforming' },
@@ -29,6 +35,10 @@ export const nav = [
   { href: '/about', key: 'about' },
 ] as const;
 
+export const nav = allNav.filter(
+  (item) => SHOW_BOOK_NAV || item.key !== 'book',
+);
+
 export const features = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
   { href: '/innovations', key: 'innovations', icon: 'circuit' },
@@ -37,7 +47,7 @@ export const features = [
 ] as const;
 
 /** Primary Home hub tiles — one entry per main nav destination. */
-export const homeHub = [
+const allHomeHub = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
   { href: '/innovations', key: 'innovations', icon: 'circuit' },
   { href: '/terraforming', key: 'terraforming', icon: 'terrain' },
@@ -50,3 +60,7 @@ export const homeHub = [
   { href: '/book', key: 'book', icon: 'book' },
   { href: '/about', key: 'about', icon: 'compass' },
 ] as const;
+
+export const homeHub = allHomeHub.filter(
+  (item) => SHOW_BOOK_NAV || item.key !== 'book',
+);
