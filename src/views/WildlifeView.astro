@@ -1,7 +1,6 @@
 ---
 import HubTile from '../components/HubTile.astro';
 import HumanDispersalMap from '../components/HumanDispersalMap.astro';
-import SectionHub from '../components/SectionHub.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import WildlifeCard from '../components/WildlifeCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -10,9 +9,12 @@ import {
   isWildlifeHubKey,
   isWildlifeStatus,
   wildlifeHub,
+  wildlifeHubBackdrop,
   wildlifeHubPath,
+  wildlifeHubSrc,
   wildlifeHubTilePath,
   wildlifeImageSrc,
+  wildlifeSectionSrc,
   type WildlifeHubKey,
   type WildlifeStatus,
 } from '../data/wildlife';
@@ -55,35 +57,49 @@ const pageDescription = isHumanShelf
     : ui.wildlifePage.metaDescription;
 const humanHref = localizePath(wildlifeHubPath('homo-sapiens'), locale);
 const wildlifeHref = localizePath('/wildlife', locale);
+const backdropSrc = hub ? wildlifeHubSrc : wildlifeSectionSrc;
+const backdropWidth = hub ? wildlifeHubBackdrop.width : 1536;
+const backdropHeight = hub ? wildlifeHubBackdrop.height : 1024;
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} theme="wildlife">
-  <div class="section-backdrop" aria-hidden="true">
-    <img
-      src="/images/wildlife/wildlife-section-bg.jpg"
-      alt=""
-      width="1536"
-      height="1024"
-    />
-    <div class="section-backdrop-scrim"></div>
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  image={hub ? wildlifeHubSrc : undefined}
+  theme="wildlife"
+>
+  <div class:list={['section-backdrop', { 'wildlife-hub-backdrop': hub }]} aria-hidden="true">
+    <img src={backdropSrc} alt="" width={backdropWidth} height={backdropHeight} />
+    <div class:list={['section-backdrop-scrim', hub && 'wildlife-hub-scrim']}></div>
   </div>
 
   {
     hub ? (
-      <SectionHub kicker={ui.wildlifePage.chooseStatus} label={ui.wildlifePage.tabsAria} columns={4}>
-        {wildlifeHub.map((item) => {
-          const path = wildlifeHubTilePath(item);
-          return (
-            <HubTile
-              href={path ? localizePath(path, locale) : undefined}
-              icon={item.icon}
-              title={ui.wildlifePage[item.key]}
-              text={ui.wildlifePage.tiles[item.key]}
-              badge={path ? undefined : ui.comingSoon.badge}
-            />
-          );
-        })}
-      </SectionHub>
+      <section class="wildlife-hub-hero" aria-label={ui.wildlifePage.tabsAria}>
+        <div class="wrap wildlife-hub-hero-inner">
+          <div class="wildlife-hub-hero-panel">
+            <p class="visually-hidden">{ui.wildlifePage.hubHeroAlt}</p>
+            <p class="forests-hero-kicker">{ui.wildlifePage.eyebrow}</p>
+            <h1 class="forests-hero-title">{ui.wildlifePage.title}</h1>
+            <p class="forests-hero-note">{ui.wildlifePage.lead}</p>
+            <p class="oceans-hero-credit">{ui.wildlifePage.photoCredit}</p>
+          </div>
+          <nav class="hub-grid wildlife-hub-hero-tiles" aria-label={ui.wildlifePage.tabsAria}>
+            {wildlifeHub.map((item) => {
+              const path = wildlifeHubTilePath(item);
+              return (
+                <HubTile
+                  href={path ? localizePath(path, locale) : undefined}
+                  icon={item.icon}
+                  title={ui.wildlifePage[item.key]}
+                  text={ui.wildlifePage.tiles[item.key]}
+                  badge={path ? undefined : ui.comingSoon.badge}
+                />
+              );
+            })}
+          </nav>
+        </div>
+      </section>
     ) : activeStatus ? (
       <ShelfHeader
         backHref={wildlifeHref}

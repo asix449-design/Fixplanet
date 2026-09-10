@@ -1502,6 +1502,33 @@ a.wildlife-card:hover {
   color: var(--white);
 }
 
+.theme-maps {
+  background: #02060c;
+}
+
+.theme-maps .maps-hub-backdrop img {
+  object-position: 50% 48%;
+  filter: saturate(1.06) brightness(0.92) contrast(1.05);
+  transform: scale(1.02);
+}
+
+.maps-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.38) 0%,
+      rgba(0, 4, 10, 0.12) 26%,
+      rgba(0, 6, 12, 0.16) 54%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0%, transparent 50%);
+}
+
+.theme-maps main {
+  position: relative;
+  z-index: 1;
+}
+
 .religion-soon-line {
   display: flex;
   flex-wrap: wrap;
@@ -2129,6 +2156,28 @@ a.map-card:hover {
   background: rgba(0, 0, 0, 0.82);
 }
 
+.theme-wildlife:has(.wildlife-hub-hero) {
+  background: #06100c;
+}
+
+.theme-wildlife .wildlife-hub-backdrop img {
+  object-position: 50% 58%;
+  filter: saturate(1.1) brightness(1.04) contrast(1.05);
+  transform: scale(1.04);
+}
+
+.wildlife-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.36) 0%,
+      rgba(0, 4, 2, 0.12) 26%,
+      rgba(0, 6, 4, 0.16) 56%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.14) 0%, transparent 52%);
+}
+
 .theme-wildlife .site-footer,
 .theme-wildlife-detail .site-footer,
 .theme-migration .site-footer,
@@ -2137,6 +2186,8 @@ a.map-card:hover {
 .theme-innovations-detail .site-footer,
 .theme-forests .site-footer,
 .theme-oceans .site-footer,
+.theme-solutions .site-footer,
+.theme-maps .site-footer,
 .theme-law .site-footer,
 .theme-law-detail .site-footer,
 .theme-terraforming .site-footer,
@@ -2307,6 +2358,33 @@ a.map-card:hover {
 }
 
 .theme-solutions .solutions-cards {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-solutions:has(.solutions-hero) {
+  background: #050508;
+}
+
+.theme-solutions .solutions-hub-backdrop img {
+  object-position: 50% 42%;
+  filter: saturate(1.08) brightness(0.86) contrast(1.05);
+  transform: scale(1.03);
+}
+
+.solutions-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.16) 26%,
+      rgba(0, 2, 4, 0.2) 56%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.18) 0%, transparent 50%);
+}
+
+.theme-solutions:has(.solutions-hero) main {
   position: relative;
   z-index: 1;
 }
@@ -2564,7 +2642,11 @@ a.map-card:hover {
 .theme-forests:has(.forests-hero) .site-header,
 .theme-oceans:has(.oceans-hero) .site-header,
 .theme-innovations:has(.innovations-hero) .site-header,
-.theme-terraforming:has(.terraforming-hero) .site-header {
+.theme-terraforming:has(.terraforming-hero) .site-header,
+.theme-solutions:has(.solutions-hero) .site-header,
+.theme-maps:has(.maps-hub-hero) .site-header,
+.theme-law:has(.law-hero) .site-header,
+.theme-wildlife:has(.wildlife-hub-hero) .site-header {
   background: rgba(0, 0, 0, 0.38);
 }
 
@@ -2575,7 +2657,11 @@ a.map-card:hover {
 .forests-hero,
 .oceans-hero,
 .innovations-hero,
-.terraforming-hero {
+.terraforming-hero,
+.solutions-hero,
+.maps-hub-hero,
+.law-hero,
+.wildlife-hub-hero {
   position: relative;
   z-index: 1;
   min-height: calc(100vh - var(--header-h));
@@ -2587,7 +2673,11 @@ a.map-card:hover {
 .forests-hero-inner,
 .oceans-hero-inner,
 .innovations-hero-inner,
-.terraforming-hero-inner {
+.terraforming-hero-inner,
+.solutions-hero-inner,
+.maps-hub-hero-inner,
+.law-hero-inner,
+.wildlife-hub-hero-inner {
   width: min(1180px, calc(100% - 40px));
   display: flex;
   flex-direction: column;
@@ -2608,7 +2698,11 @@ a.map-card:hover {
 .forests-hero-panel,
 .oceans-hero-panel,
 .innovations-hero-panel,
-.terraforming-hero-panel {
+.terraforming-hero-panel,
+.solutions-hero-panel,
+.maps-hub-hero-panel,
+.law-hero-panel,
+.wildlife-hub-hero-panel {
   width: min(42rem, 100%);
   padding: 0.85rem 1.15rem 0.9rem;
   border: 1px solid rgba(192, 255, 0, 0.28);
@@ -2617,7 +2711,11 @@ a.map-card:hover {
 }
 
 .innovations-hero-panel,
-.terraforming-hero-panel {
+.terraforming-hero-panel,
+.solutions-hero-panel,
+.maps-hub-hero-panel,
+.law-hero-panel,
+.wildlife-hub-hero-panel {
   margin-top: clamp(1.2rem, 8vh, 4rem);
   margin-left: auto;
 }
@@ -2754,14 +2852,22 @@ a.map-card:hover {
 .forests-hero-tiles,
 .oceans-hero-tiles,
 .innovations-hero-tiles,
-.terraforming-hero-tiles {
+.terraforming-hero-tiles,
+.solutions-hero-tiles,
+.maps-hub-hero-tiles,
+.law-hero-tiles,
+.wildlife-hub-hero-tiles {
   align-items: stretch;
 }
 
 .forests-hero .hub-tile,
 .oceans-hero .hub-tile,
 .innovations-hero .hub-tile,
-.terraforming-hero .hub-tile {
+.terraforming-hero .hub-tile,
+.solutions-hero .hub-tile,
+.maps-hub-hero .hub-tile,
+.law-hero .hub-tile,
+.wildlife-hub-hero .hub-tile {
   background: rgba(0, 0, 0, 0.42);
   min-height: 164px;
 }
@@ -2773,7 +2879,15 @@ a.map-card:hover {
 .innovations-hero .hub-tile:hover,
 .innovations-hero .hub-tile.is-active,
 .terraforming-hero .hub-tile:hover,
-.terraforming-hero .hub-tile.is-active {
+.terraforming-hero .hub-tile.is-active,
+.solutions-hero .hub-tile:hover,
+.solutions-hero .hub-tile.is-active,
+.maps-hub-hero .hub-tile:hover,
+.maps-hub-hero .hub-tile.is-active,
+.law-hero .hub-tile:hover,
+.law-hero .hub-tile.is-active,
+.wildlife-hub-hero .hub-tile:hover,
+.wildlife-hub-hero .hub-tile.is-active {
   background: rgba(4, 10, 2, 0.52);
 }
 
@@ -3043,7 +3157,11 @@ a.map-card:hover {
   .forests-hero,
   .oceans-hero,
   .innovations-hero,
-  .terraforming-hero {
+  .terraforming-hero,
+  .solutions-hero,
+  .maps-hub-hero,
+  .law-hero,
+  .wildlife-hub-hero {
     min-height: 0;
     padding: 1.15rem 0 1.6rem;
   }
@@ -3051,7 +3169,11 @@ a.map-card:hover {
   .forests-hero-inner,
   .oceans-hero-inner,
   .innovations-hero-inner,
-  .terraforming-hero-inner {
+  .terraforming-hero-inner,
+  .solutions-hero-inner,
+  .maps-hub-hero-inner,
+  .law-hero-inner,
+  .wildlife-hub-hero-inner {
     width: min(1180px, calc(100% - 32px));
     gap: 1.6rem;
   }
@@ -3064,7 +3186,11 @@ a.map-card:hover {
   .forests-hero-panel,
   .oceans-hero-panel,
   .innovations-hero-panel,
-  .terraforming-hero-panel {
+  .terraforming-hero-panel,
+  .solutions-hero-panel,
+  .maps-hub-hero-panel,
+  .law-hero-panel,
+  .wildlife-hub-hero-panel {
     padding: 0.85rem 0.8rem 0.8rem;
   }
 
@@ -3186,6 +3312,28 @@ a.map-card:hover {
 .theme-law-detail .section-backdrop img {
   object-position: 50% 28%;
   filter: blur(8px) saturate(0.75) brightness(0.38) sepia(0.18);
+}
+
+.theme-law:has(.law-hero) {
+  background: #08080c;
+}
+
+.theme-law .law-hub-backdrop img {
+  object-position: 42% 48%;
+  filter: saturate(1.06) brightness(0.88) contrast(1.06);
+  transform: scale(1.03);
+}
+
+.law-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.14) 28%,
+      rgba(4, 4, 8, 0.2) 58%,
+      rgba(0, 0, 0, 0.74) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0%, transparent 48%);
 }
 
 .law-scrim {
@@ -3390,8 +3538,8 @@ a.map-card:hover {
 }
 
 .theme-terraforming .terraforming-hub-backdrop img {
-  object-position: 50% 40%;
-  filter: saturate(1.1) brightness(0.78) contrast(1.06);
+  object-position: 50% 46%;
+  filter: saturate(1.08) brightness(0.9) contrast(1.04);
   transform: scale(1.03);
 }
 

@@ -645,3 +645,14 @@ export const lawSectionImage = {
 } as const;
 
 export const lawSectionSrc = `/images/law/${lawSectionImage.file}`;
+
+/** Hub-only hero. Category and article pages keep `lawSectionImage`. */
+export const lawHubBackdrop = {
+  file: 'law-hub-bg.jpg',
+  credit: 'Founder-supplied scales of justice',
+  license: 'Site asset',
+  width: 1280,
+  height: 720,
+} as const;
+
+export const lawHubSrc = `/images/law/${lawHubBackdrop.file}`;

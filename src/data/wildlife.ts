@@ -872,6 +872,18 @@ export function wildlifeImageSrc(image: ImageCredit): string {
   return `/images/wildlife/${image.file}`;
 }
 
+/** Hub-only hero. Species shelves keep the blurred section backdrop. */
+export const wildlifeHubBackdrop = {
+  file: 'wildlife-hub-bg.jpg',
+  credit: 'Founder-supplied deer drinking from a river at sunset',
+  license: 'Site asset',
+  width: 864,
+  height: 1152,
+} as const;
+
+export const wildlifeHubSrc = `/images/wildlife/${wildlifeHubBackdrop.file}`;
+export const wildlifeSectionSrc = '/images/wildlife/wildlife-section-bg.jpg';
+
 export function wildlifeHubPath(key: WildlifeHubKey): string {
   return `/wildlife/${key}`;
 }

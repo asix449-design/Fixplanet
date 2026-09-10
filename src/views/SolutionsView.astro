@@ -1,6 +1,5 @@
 ---
 import HubTile from '../components/HubTile.astro';
-import SectionHub from '../components/SectionHub.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import SolutionCard from '../components/SolutionCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -8,6 +7,8 @@ import {
   isSolutionTag,
   solutionTagPath,
   solutionsHub,
+  solutionsHubBackdrop,
+  solutionsHubSrc,
   type TagKey,
 } from '../data/solutions';
 import { getSolutions, getUi, localizePath, resolveLocale } from '../i18n';
@@ -44,20 +45,45 @@ const pageTitle = hub
 <BaseLayout
   title={pageTitle}
   description={ui.solutionsPage.metaDescription}
+  image={hub ? solutionsHubSrc : undefined}
   theme="solutions"
 >
   {
+    hub && (
+      <div class="section-backdrop solutions-hub-backdrop" aria-hidden="true">
+        <img
+          src={solutionsHubSrc}
+          alt=""
+          width={solutionsHubBackdrop.width}
+          height={solutionsHubBackdrop.height}
+        />
+        <div class="section-backdrop-scrim solutions-hub-scrim"></div>
+      </div>
+    )
+  }
+  {
     hub ? (
-      <SectionHub kicker={ui.solutionsPage.chooseTopic} label={ui.solutionsPage.filterAria}>
-        {solutionsHub.map((item) => (
-          <HubTile
-            href={localizePath(solutionTagPath(item.key), locale)}
-            icon={item.icon}
-            title={item.key === 'all' ? ui.solutionsPage.all : ui.solutionsPage.tags[item.key]}
-            text={ui.solutionsPage.tileLeads[item.key]}
-          />
-        ))}
-      </SectionHub>
+      <section class="solutions-hero" aria-label={ui.solutionsPage.filterAria}>
+        <div class="wrap solutions-hero-inner">
+          <div class="solutions-hero-panel">
+            <p class="visually-hidden">{ui.solutionsPage.heroAlt}</p>
+            <p class="forests-hero-kicker">{ui.solutionsPage.eyebrow}</p>
+            <h1 class="forests-hero-title">{ui.solutionsPage.title}</h1>
+            <p class="forests-hero-note">{ui.solutionsPage.lead}</p>
+            <p class="oceans-hero-credit">{ui.solutionsPage.photoCredit}</p>
+          </div>
+          <nav class="hub-grid solutions-hero-tiles" aria-label={ui.solutionsPage.filterAria}>
+            {solutionsHub.map((item) => (
+              <HubTile
+                href={localizePath(solutionTagPath(item.key), locale)}
+                icon={item.icon}
+                title={ui.solutionsPage.tags[item.key]}
+                text={ui.solutionsPage.tileLeads[item.key]}
+              />
+            ))}
+          </nav>
+        </div>
+      </section>
     ) : (
       <ShelfHeader
         backHref={localizePath('/solutions', locale)}
