@@ -147,6 +147,8 @@ const en = {
     endangered: 'Endangered',
     extinct: 'Extinct',
     'homo-sapiens': 'Homo sapiens',
+    insects: 'Insects',
+    domesticates: 'Domesticates',
     journeyCta: 'Migration · Humans →',
     journeyNote:
       'The journey — routes, dates, and drivers — is told under Migration. This shelf keeps the species frame: origin, numbers, and what vanished after first arrival.',
@@ -156,6 +158,8 @@ const en = {
       extinct: 'Gone. Most entries are clearly human-caused.',
       'homo-sapiens':
         'Origin in Africa, numbers today, and the large-mammal genera that vanished after first arrival. The route itself is under Migration.',
+      insects: 'The six-legged majority: bees, beetles, and the rest of insect life.',
+      domesticates: 'Animals people keep: livestock, companions, and working species.',
     },
     survivingLead:
       'Still here, with ranges or numbers that shifted after people spread — hunting, farms, later recovery, or boom. The dates differ by continent.',
@@ -448,6 +452,8 @@ const ru: typeof en = {
     endangered: 'Под угрозой',
     extinct: 'Вымершие',
     'homo-sapiens': 'Homo sapiens',
+    insects: 'Насекомые',
+    domesticates: 'Доместикаты',
     journeyCta: 'Миграция · Люди →',
     journeyNote:
       'Путь — маршруты, даты и причины — рассказан в разделе «Миграция». Эта полка остаётся рамкой вида: происхождение, численность и то, что исчезло после первого прихода.',
@@ -457,6 +463,8 @@ const ru: typeof en = {
       extinct: 'Исчезли. Большинство карточек — явно по вине людей.',
       'homo-sapiens':
         'Происхождение в Африке, численность сегодня и роды крупных млекопитающих, исчезнувшие после первого прихода. Сам путь — в разделе «Миграция».',
+      insects: 'Шестиногие: пчёлы, жуки и остальная насекомая жизнь.',
+      domesticates: 'Животные, которых держат люди: скот, компаньоны и рабочие виды.',
     },
     survivingLead:
       'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей — охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
@@ -752,6 +760,8 @@ const pl: typeof en = {
     endangered: 'Zagrożone',
     extinct: 'Wymarłe',
     'homo-sapiens': 'Homo sapiens',
+    insects: 'Owady',
+    domesticates: 'Udomowione',
     journeyCta: 'Migracja · Ludzie →',
     journeyNote:
       'Droga — trasy, daty i przyczyny — jest w dziale Migracja. Ta półka zostaje ramą gatunku: pochodzenie, liczebność i to, co zniknęło po pierwszym przybyciu.',
@@ -761,6 +771,8 @@ const pl: typeof en = {
       extinct: 'Zniknęły. Większość kart ma jasną przyczynę ludzką.',
       'homo-sapiens':
         'Pochodzenie w Afryce, liczebność dziś i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu. Sama droga jest w dziale Migracja.',
+      insects: 'Sześcionogie: pszczoły, chrząszcze i reszta owadziego życia.',
+      domesticates: 'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe.',
     },
     survivingLead:
       'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi — polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
@@ -1056,6 +1068,8 @@ const lv: typeof en = {
     endangered: 'Apdraudētie',
     extinct: 'Izmirušie',
     'homo-sapiens': 'Homo sapiens',
+    insects: 'Kukaiņi',
+    domesticates: 'Pieradinātie',
     journeyCta: 'Migrācija · Cilvēki →',
     journeyNote:
       'Ceļš — maršruti, datumi un iemesli — ir sadaļā Migrācija. Šis plaukts paliek sugas rāmis: izcelsme, skaits un tas, kas izzuda pēc pirmās ierašanās.',
@@ -1065,6 +1079,8 @@ const lv: typeof en = {
       extinct: 'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas.',
       'homo-sapiens':
         'Izcelsme Āfrikā, skaits šodien un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās. Pats ceļš ir sadaļā Migrācija.',
+      insects: 'Seškāji: bites, vaboles un pārējā kukaiņu dzīve.',
+      domesticates: 'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas.',
     },
     survivingLead:
       'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',

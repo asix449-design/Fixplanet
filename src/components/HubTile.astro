@@ -2,7 +2,7 @@
 import HubIcon, { type HubIconName } from './HubIcon.astro';
 
 interface Props {
-  href: string;
+  href?: string;
   icon: HubIconName;
   title: string;
   text: string;
@@ -30,24 +30,46 @@ const {
   dataFilter,
   dataPanel,
 } = Astro.props;
+
+const isSoon = Boolean(badge && badgeTone === 'soon' && !href);
+const classList = ['hub-tile', { 'is-active': active, 'is-lead': lead, 'is-soon': isSoon }];
+const dataAttrs = {
+  ...(dataArea ? { 'data-area': dataArea } : {}),
+  ...(dataStatus ? { 'data-status': dataStatus } : {}),
+  ...(dataFilter ? { 'data-filter': dataFilter } : {}),
+  ...(dataPanel ? { 'data-panel': dataPanel } : {}),
+};
+const badgeClass = badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon';
 ---
 
-<a
-  class:list={['hub-tile', { 'is-active': active, 'is-lead': lead }]}
-  href={href}
-  aria-current={active ? 'page' : undefined}
-  {...(dataArea ? { 'data-area': dataArea } : {})}
-  {...(dataStatus ? { 'data-status': dataStatus } : {})}
-  {...(dataFilter ? { 'data-filter': dataFilter } : {})}
-  {...(dataPanel ? { 'data-panel': dataPanel } : {})}
->
-  <div class="hub-tile-top">
-    <div class="hub-icon" aria-hidden="true">
-      <HubIcon name={icon} />
-    </div>
-    {badge && <span class={badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon'}>{badge}</span>}
-  </div>
-  <h2>{title}</h2>
-  <p>{text}</p>
-  <span class="hub-arrow" aria-hidden="true">→</span>
-</a>
+{
+  href ? (
+    <a
+      class:list={classList}
+      href={href}
+      aria-current={active ? 'page' : undefined}
+      {...dataAttrs}
+    >
+      <div class="hub-tile-top">
+        <div class="hub-icon" aria-hidden="true">
+          <HubIcon name={icon} />
+        </div>
+        {badge && <span class={badgeClass}>{badge}</span>}
+      </div>
+      <h2>{title}</h2>
+      <p>{text}</p>
+      <span class="hub-arrow" aria-hidden="true">→</span>
+    </a>
+  ) : (
+    <article class:list={classList} {...dataAttrs}>
+      <div class="hub-tile-top">
+        <div class="hub-icon" aria-hidden="true">
+          <HubIcon name={icon} />
+        </div>
+        {badge && <span class={badgeClass}>{badge}</span>}
+      </div>
+      <h2>{title}</h2>
+      <p>{text}</p>
+    </article>
+  )
+}

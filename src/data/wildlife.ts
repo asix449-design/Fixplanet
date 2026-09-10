@@ -15,12 +15,25 @@ export const wildlifeHubKeys = [
 
 export type WildlifeHubKey = (typeof wildlifeHubKeys)[number];
 
+/** Hub tiles with a Coming soon badge and no catalog shelf yet. */
+export const wildlifeSoonKeys = ['insects', 'domesticates'] as const;
+
+export type WildlifeSoonKey = (typeof wildlifeSoonKeys)[number];
+
+export type WildlifeHubTileKey = WildlifeHubKey | WildlifeSoonKey;
+
 export const wildlifeHub = [
   { key: 'surviving', icon: 'paw' },
   { key: 'endangered', icon: 'alert' },
   { key: 'extinct', icon: 'gone' },
   { key: 'homo-sapiens', icon: 'human' },
-] as const satisfies ReadonlyArray<{ key: WildlifeHubKey; icon: HubIconName }>;
+  { key: 'insects', icon: 'insect', soon: true },
+  { key: 'domesticates', icon: 'horse', soon: true },
+] as const satisfies ReadonlyArray<{
+  key: WildlifeHubTileKey;
+  icon: HubIconName;
+  soon?: true;
+}>;
 
 export const iucnKeys = [
   'EX',
@@ -847,6 +860,10 @@ export function isWildlifeHubKey(value: string | undefined): value is WildlifeHu
   return !!value && (wildlifeHubKeys as readonly string[]).includes(value);
 }
 
+export function isWildlifeSoonKey(value: string | undefined): value is WildlifeSoonKey {
+  return !!value && (wildlifeSoonKeys as readonly string[]).includes(value);
+}
+
 export function getSpeciesMeta(slug: string): SpeciesMeta | undefined {
   return speciesMeta.find((item) => item.slug === slug);
 }
@@ -857,6 +874,14 @@ export function wildlifeImageSrc(image: ImageCredit): string {
 
 export function wildlifeHubPath(key: WildlifeHubKey): string {
   return `/wildlife/${key}`;
+}
+
+/** Live shelf path, or undefined for Coming soon hub tiles with no catalog yet. */
+export function wildlifeHubTilePath(
+  item: (typeof wildlifeHub)[number],
+): string | undefined {
+  if ('soon' in item && item.soon) return undefined;
+  return isWildlifeHubKey(item.key) ? wildlifeHubPath(item.key) : undefined;
 }
 
 export function wildlifeStatusPath(status: WildlifeStatus): string {
