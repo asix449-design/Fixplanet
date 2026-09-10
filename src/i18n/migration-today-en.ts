@@ -151,7 +151,7 @@ export const enToday: TodayShelfCopy = {
     zaatari: {
       name: 'Zaatari',
       country: 'Jordan',
-      note: 'About 80,000–83,000 residents in published UNHCR and WFP notes from 2022–2024. The year is older than the Bangladesh and Kenya rows — do not read this as a 2026 census.',
+      note: 'Zaatari camp. Syrian displacement is the main caseload. UNHCR operational figure, 31 August 2026.',
     },
   },
   routeCopy: {
