@@ -46,6 +46,20 @@ export const features = [
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
 ] as const;
 
+/** Founder-supplied Home tile art. Book stays unmapped while hidden from nav. */
+export const homeTileArt = {
+  solutions: '/images/home-tiles/solutions.jpg',
+  innovations: '/images/home-tiles/innovations.jpg',
+  terraforming: '/images/home-tiles/terraforming.jpg',
+  maps: '/images/home-tiles/maps.jpg',
+  law: '/images/home-tiles/law.jpg',
+  wildlife: '/images/home-tiles/nature.jpg',
+  migration: '/images/home-tiles/migration.jpg',
+  forests: '/images/home-tiles/forests.jpg',
+  oceans: '/images/home-tiles/oceans.jpg',
+  about: '/images/home-tiles/about.jpg',
+} as const;
+
 /** Primary Home hub tiles — one entry per main nav destination. */
 const allHomeHub = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },

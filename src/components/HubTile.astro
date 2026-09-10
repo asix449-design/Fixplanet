@@ -10,6 +10,8 @@ interface Props {
   badgeTone?: 'soon' | 'atlas';
   lead?: boolean;
   active?: boolean;
+  image?: string;
+  tileKey?: string;
   dataArea?: string;
   dataStatus?: string;
   dataFilter?: string;
@@ -25,6 +27,8 @@ const {
   badgeTone = 'soon',
   lead = false,
   active = false,
+  image,
+  tileKey,
   dataArea,
   dataStatus,
   dataFilter,
@@ -32,8 +36,9 @@ const {
 } = Astro.props;
 
 const isSoon = Boolean(badge && badgeTone === 'soon' && !href);
-const classList = ['hub-tile', { 'is-active': active, 'is-lead': lead, 'is-soon': isSoon }];
+const classList = ['hub-tile', { 'is-active': active, 'is-lead': lead, 'is-soon': isSoon, 'has-art': Boolean(image) }];
 const dataAttrs = {
+  ...(tileKey ? { 'data-tile': tileKey } : {}),
   ...(dataArea ? { 'data-area': dataArea } : {}),
   ...(dataStatus ? { 'data-status': dataStatus } : {}),
   ...(dataFilter ? { 'data-filter': dataFilter } : {}),
@@ -50,6 +55,12 @@ const badgeClass = badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon';
       aria-current={active ? 'page' : undefined}
       {...dataAttrs}
     >
+      {image && (
+        <>
+          <img class="hub-tile-art" src={image} alt="" decoding="async" />
+          <span class="hub-tile-scrim" aria-hidden="true"></span>
+        </>
+      )}
       <div class="hub-tile-top">
         <div class="hub-icon" aria-hidden="true">
           <HubIcon name={icon} />
@@ -62,6 +73,12 @@ const badgeClass = badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon';
     </a>
   ) : (
     <article class:list={classList} {...dataAttrs}>
+      {image && (
+        <>
+          <img class="hub-tile-art" src={image} alt="" decoding="async" />
+          <span class="hub-tile-scrim" aria-hidden="true"></span>
+        </>
+      )}
       <div class="hub-tile-top">
         <div class="hub-icon" aria-hidden="true">
           <HubIcon name={icon} />

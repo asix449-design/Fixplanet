@@ -1,5 +1,5 @@
 ---
-import { homeHub } from '../data/site';
+import { homeHub, homeTileArt } from '../data/site';
 import { getUi, localizePath, resolveLocale } from '../i18n';
 import EarthGlobe from './EarthGlobe.astro';
 import HubTile from './HubTile.astro';
@@ -22,6 +22,7 @@ const ui = getUi(locale);
       {
         homeHub.map((item) => {
           const soon = 'soon' in item && item.soon;
+          const image = item.key in homeTileArt ? homeTileArt[item.key as keyof typeof homeTileArt] : undefined;
           return (
             <HubTile
               href={localizePath(item.href, locale)}
@@ -29,6 +30,8 @@ const ui = getUi(locale);
               title={ui.nav[item.key]}
               text={ui.home.tiles[item.key]}
               badge={soon ? ui.comingSoon.badge : undefined}
+              image={image}
+              tileKey={item.key}
             />
           );
         })
