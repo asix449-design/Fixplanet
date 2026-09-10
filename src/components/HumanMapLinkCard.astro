@@ -1,0 +1,51 @@
+---
+import type { HumanMapLinkCard } from '../i18n/migration';
+import { getMigrationPage, resolveLocale } from '../i18n';
+
+interface Props {
+  item: HumanMapLinkCard;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const { item } = Astro.props;
+const extras = page.humans.mapLinks.extraLabels;
+---
+
+<article
+  class="wildlife-card-wrap migration-card-wrap human-map-link-wrap"
+  data-human-map={item.id}
+>
+  <a
+    class="wildlife-card migration-card human-map-link-card"
+    href={item.href}
+    rel="noopener noreferrer"
+  >
+    <div class="card-body">
+      <div class="innovation-badges">
+        <span class="tag">{page.shelves.humans}</span>
+      </div>
+      <h3>{item.title}</h3>
+      <p class="wildlife-hook">{item.hook}</p>
+      <span class="card-cta">{page.humans.mapLinks.openMap}</span>
+    </div>
+  </a>
+  {
+    item.extras.length > 0 && (
+      <ul class="human-map-extras">
+        {item.extras.map((extra) => (
+          <li>
+            <a href={extra.href} rel="noopener noreferrer">
+              {extras[extra.id]}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <p class="innovation-card-source">
+    <a href={item.source.url} rel="noopener noreferrer">
+      {page.primarySource}: {item.source.label}
+    </a>
+  </p>
+</article>
