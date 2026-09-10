@@ -129,7 +129,16 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'waste',
     sources: [cite('U.S. EPA — AgSTAR', 'https://www.epa.gov/agstar')],
   },
-  { slug: 'pet-bottle-recycling', tag: 'waste' },
+  {
+    slug: 'pet-bottle-recycling',
+    tag: 'waste',
+    sources: [
+      cite(
+        'Ellen MacArthur Foundation — Plastics',
+        'https://ellenmacarthurfoundation.org/topics/plastics/overview',
+      ),
+    ],
+  },
   {
     slug: 'municipal-composting',
     tag: 'waste',
