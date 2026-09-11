@@ -1,4 +1,5 @@
 ---
+import CitedSourceList from '../components/CitedSourceList.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { wildlifeImageSrc, type Species } from '../data/wildlife';
 import { getUi, localizePath, resolveLocale } from '../i18n';
@@ -12,6 +13,7 @@ const ui = getUi(locale);
 const { species } = Astro.props;
 const title = `${species.commonName} — Fix Planet`;
 const image = wildlifeImageSrc(species.image);
+const clickableSources = species.primarySources ?? [];
 ---
 
 <BaseLayout title={title} description={species.hook} image={image} theme="wildlife-detail">
@@ -92,8 +94,20 @@ const image = wildlifeImageSrc(species.image);
         <p>{species.when}</p>
         <h2>{ui.wildlifePage.humanRole}</h2>
         <p>{species.humanRole}</p>
-        <h2>{ui.wildlifePage.sourcesLabel}</h2>
-        <p class="wildlife-sources">{species.sources}</p>
+        {
+          clickableSources.length ? (
+            <CitedSourceList
+              heading={ui.wildlifePage.sourcesLabel}
+              note={species.sources}
+              sources={clickableSources}
+            />
+          ) : (
+            <>
+              <h2>{ui.wildlifePage.sourcesLabel}</h2>
+              <p class="wildlife-sources">{species.sources}</p>
+            </>
+          )
+        }
       </div>
     </div>
   </section>

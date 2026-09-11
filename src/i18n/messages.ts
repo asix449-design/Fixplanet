@@ -208,6 +208,7 @@ const en = {
     humanRole: 'Human role',
     iucnLabel: 'IUCN',
     sourcesLabel: 'Sources',
+    primarySource: 'Source',
     imageCredit: 'Image',
     functionallyExtinct: 'Functionally extinct',
     iucn: {
@@ -519,6 +520,7 @@ const ru: typeof en = {
     humanRole: 'Роль человека',
     iucnLabel: 'МСОП',
     sourcesLabel: 'Источники',
+    primarySource: 'Источник',
     imageCredit: 'Изображение',
     functionallyExtinct: 'Функционально вымерший',
     iucn: {
@@ -833,6 +835,7 @@ const pl: typeof en = {
     humanRole: 'Rola człowieka',
     iucnLabel: 'IUCN',
     sourcesLabel: 'Źródła',
+    primarySource: 'Źródło',
     imageCredit: 'Zdjęcie',
     functionallyExtinct: 'Funkcjonalnie wymarły',
     iucn: {
@@ -1147,6 +1150,7 @@ const lv: typeof en = {
     humanRole: 'Cilvēka loma',
     iucnLabel: 'IUCN',
     sourcesLabel: 'Avoti',
+    primarySource: 'Avots',
     imageCredit: 'Attēls',
     functionallyExtinct: 'Funkcionāli izmiris',
     iucn: {

@@ -77,7 +77,10 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     latest: true,
     sources: [
-      cite('FAO — Land & water management', 'https://www.fao.org/land-water/water/water-management/en/'),
+      cite(
+        'FAO — Agricultural water management',
+        'https://www.fao.org/land-water/water/agricultural-water-management/en',
+      ),
     ],
   },
   {
@@ -131,7 +134,10 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'shade-agroforestry',
     tag: 'forests',
     sources: [
-      cite('IUCN — Shade-grown coffee', 'https://www.iucn.org/resources/issues-brief/shade-grown-coffee'),
+      cite(
+        'Smithsonian National Zoo — Bird Friendly coffee',
+        'https://nationalzoo.si.edu/migratory-birds/bird-friendly-coffee',
+      ),
     ],
   },
   {
