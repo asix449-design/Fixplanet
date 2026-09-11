@@ -7,10 +7,24 @@
     "sourceUrl": ""
   },
   {
+    "slug": "home-stars",
+    "file": "home-stars.jpg",
+    "artist": "Founder-supplied star-field photograph for the Home backdrop",
+    "license": "Founder-supplied image",
+    "sourceUrl": ""
+  },
+  {
+    "slug": "earth-day",
+    "file": "earth-day.jpg",
+    "artist": "NASA Visible Earth / Blue Marble — land surface, shallow water, and shaded topography (2048×1024)",
+    "license": "Public domain (NASA)",
+    "sourceUrl": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography"
+  },
+  {
     "slug": "earth-globe-still",
     "file": "earth-globe-still.png",
-    "artist": "Orthographic still of the Home wire globe — lime country borders on black",
-    "license": "Public domain linework (Natural Earth 110m)",
-    "sourceUrl": "https://www.naturalearthdata.com/"
+    "artist": "Orthographic still of the Home globe — NASA Blue Marble day texture, no clouds or city lights",
+    "license": "Public domain texture (NASA Visible Earth / Blue Marble)",
+    "sourceUrl": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography"
   }
 ]

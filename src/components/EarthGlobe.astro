@@ -1,9 +1,10 @@
 ---
 interface Props {
   label: string;
+  credit?: string;
 }
 
-const { label } = Astro.props;
+const { label, credit } = Astro.props;
 ---
 
 <div class="earth-globe" data-earth-globe role="img" aria-label={label}>
@@ -17,12 +18,13 @@ const { label } = Astro.props;
     />
     <canvas class="earth-globe-canvas" hidden aria-hidden="true"></canvas>
   </div>
+  {credit ? <p class="earth-globe-credit">{credit}</p> : null}
 </div>
 
 <script>
   import * as THREE from 'three';
 
-  const LIME = 0xc0ff00;
+  const DAY_TEXTURE = '/images/home/earth-day.jpg';
   const root = document.querySelector<HTMLElement>('[data-earth-globe]');
   const stage = root?.querySelector<HTMLElement>('.earth-globe-stage');
   const canvas = root?.querySelector<HTMLCanvasElement>('.earth-globe-canvas');
@@ -40,8 +42,53 @@ const { label } = Astro.props;
 
   if (root && stage && canvas && fallback && !reduceMotion && webglOk) {
     void startGlobe(stage, canvas, fallback).catch(() => {
-      /* keep the lime-on-black still */
+      /* keep the still fallback */
     });
+  }
+
+  function loadTexture(url: string): Promise<THREE.Texture> {
+    const loader = new THREE.TextureLoader();
+    return new Promise((resolve, reject) => {
+      loader.load(
+        url,
+        (tex) => resolve(tex),
+        undefined,
+        () => reject(new Error(url)),
+      );
+    });
+  }
+
+  /** Soft ocean shine from the day map — blue water, dull land. No extra asset. */
+  function oceanSpecularFromDay(day: THREE.Texture): THREE.CanvasTexture | null {
+    const image = day.image as CanvasImageSource | undefined;
+    const width = (image as HTMLImageElement | undefined)?.naturalWidth || (image as HTMLCanvasElement | undefined)?.width;
+    const height = (image as HTMLImageElement | undefined)?.naturalHeight || (image as HTMLCanvasElement | undefined)?.height;
+    if (!image || !width || !height) return null;
+
+    const work = document.createElement('canvas');
+    work.width = width;
+    work.height = height;
+    const ctx = work.getContext('2d');
+    if (!ctx) return null;
+    ctx.drawImage(image, 0, 0, width, height);
+    const pixels = ctx.getImageData(0, 0, width, height);
+    const data = pixels.data;
+    for (let i = 0; i < data.length; i += 4) {
+      const r = data[i];
+      const g = data[i + 1];
+      const b = data[i + 2];
+      const ocean = b > r + 12 && b > g + 4 && b > 70;
+      const spec = ocean ? 210 : 18;
+      data[i] = spec;
+      data[i + 1] = spec;
+      data[i + 2] = spec;
+    }
+    ctx.putImageData(pixels, 0, 0);
+    const spec = new THREE.CanvasTexture(work);
+    spec.colorSpace = THREE.NoColorSpace;
+    spec.wrapS = THREE.ClampToEdgeWrapping;
+    spec.wrapT = THREE.ClampToEdgeWrapping;
+    return spec;
   }
 
   async function startGlobe(
@@ -62,45 +109,59 @@ const { label } = Astro.props;
     const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 20);
     camera.position.set(0, 0.08, 2.55);
 
-    const earth = new THREE.Group();
-    earth.add(
-      new THREE.Mesh(
-        new THREE.SphereGeometry(1, 64, 64),
-        new THREE.MeshBasicMaterial({ color: 0x050505 }),
-      ),
-    );
+    const day = await loadTexture(DAY_TEXTURE);
+    day.colorSpace = THREE.SRGBColorSpace;
+    day.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
+    day.wrapS = THREE.ClampToEdgeWrapping;
+    day.wrapT = THREE.ClampToEdgeWrapping;
 
-    const buffer = await fetch('/data/earth-countries.bin').then((res) => {
-      if (!res.ok) throw new Error('earth-countries.bin');
-      return res.arrayBuffer();
+    const specularMap = oceanSpecularFromDay(day);
+    const globeMat = new THREE.MeshPhongMaterial({
+      map: day,
+      specularMap: specularMap ?? undefined,
+      specular: new THREE.Color(0x6aa4c8),
+      shininess: 18,
+      flatShading: false,
     });
-    const positions = new Float32Array(buffer);
-    const lines = new THREE.BufferGeometry();
-    lines.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    earth.add(
-      new THREE.LineSegments(
-        lines,
-        new THREE.LineBasicMaterial({
-          color: LIME,
-          transparent: true,
-          opacity: 0.92,
-        }),
-      ),
+
+    const earth = new THREE.Group();
+    earth.add(new THREE.Mesh(new THREE.SphereGeometry(1, 64, 64), globeMat));
+
+    const atmosphere = new THREE.Mesh(
+      new THREE.SphereGeometry(1.035, 64, 64),
+      new THREE.MeshBasicMaterial({
+        color: 0x6eb6ff,
+        transparent: true,
+        opacity: 0.13,
+        side: THREE.BackSide,
+        depthWrite: false,
+      }),
     );
+    earth.add(atmosphere);
+
+    const rim = new THREE.Mesh(
+      new THREE.SphereGeometry(1.055, 48, 48),
+      new THREE.MeshBasicMaterial({
+        color: 0x9ad4ff,
+        transparent: true,
+        opacity: 0.07,
+        side: THREE.BackSide,
+        depthWrite: false,
+      }),
+    );
+    earth.add(rim);
+
     earth.rotation.y = 0.22;
     earth.rotation.x = 0.16;
     scene.add(earth);
 
-    const rimPts = Array.from({ length: 160 }, (_, i) => {
-      const t = (i / 160) * Math.PI * 2;
-      return new THREE.Vector3(Math.cos(t), Math.sin(t), 0);
-    });
-    const rim = new THREE.LineLoop(
-      new THREE.BufferGeometry().setFromPoints(rimPts),
-      new THREE.LineBasicMaterial({ color: LIME }),
-    );
-    rim.scale.setScalar(1.001);
-    scene.add(rim);
+    scene.add(new THREE.AmbientLight(0xb8c4d4, 0.42));
+    const sun = new THREE.DirectionalLight(0xfff6e8, 1.15);
+    sun.position.set(-1.6, 0.35, 1.8);
+    scene.add(sun);
+    const fill = new THREE.DirectionalLight(0x4a6a88, 0.22);
+    fill.position.set(1.4, -0.4, -1.2);
+    scene.add(fill);
 
     let width = 0;
     const fit = () => {
@@ -180,7 +241,6 @@ const { label } = Astro.props;
           earth.rotation.y += 0.0014 + velY;
           velY *= 0.94;
         }
-        rim.quaternion.copy(camera.quaternion);
         renderer.render(scene, camera);
       }
       requestAnimationFrame(tick);

@@ -31,6 +31,8 @@ export type BorderFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
+  sourceShort?: string;
+  sourceOrg?: string;
 };
 
 const pageEn: BorderHistoryPage = {
@@ -230,8 +232,10 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200 CE',
     caption:
-      'On the eve of the Mongol explosion: a full-world political teaching map from OER / World History Project. Still a classroom reconstruction, not a cadastral survey.',
-    imageAlt: 'OER World History Project political map of the world in 1200',
+      'On the eve of the Mongol explosion: a founder-supplied political reconstruction of the world in 1200. A reconstruction, not a cadastral survey.',
+    imageAlt: 'Founder-supplied political reconstruction of the world in 1200',
+    sourceShort: 'Founder reconstruction',
+    sourceOrg: 'Founder-supplied political reconstruction',
   },
   1300: {
     title: '1300 CE — nearest map: 1200',
@@ -365,8 +369,10 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200 н. э.',
     caption:
-      'Накануне монгольского взрыва: мировая учебная карта OER / World History Project. Всё ещё реконструкция для класса, не кадастр.',
-    imageAlt: 'Политическая карта мира 1200 года, World History Project / OER',
+      'Накануне монгольского взрыва: политическая реконструкция мира 1200 года, предоставленная основателем. Реконструкция, не кадастр.',
+    imageAlt: 'Политическая реконструкция мира 1200 года, предоставленная основателем',
+    sourceShort: 'Реконструкция основателя',
+    sourceOrg: 'Политическая реконструкция, предоставленная основателем',
   },
   1300: {
     title: '1300 н. э. — ближайшая карта: 1200',
@@ -500,8 +506,10 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200 n.e.',
     caption:
-      'W przededniu wybuchu mongolskiego: światowa mapa dydaktyczna OER / World History Project. Nadal rekonstrukcja szkolna, nie kataster.',
-    imageAlt: 'Polityczna mapa świata OER z roku 1200',
+      'W przededniu wybuchu mongolskiego: dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200. Rekonstrukcja, nie kataster.',
+    imageAlt: 'Dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200',
+    sourceShort: 'Rekonstrukcja założyciela',
+    sourceOrg: 'Rekonstrukcja polityczna dostarczona przez założyciela',
   },
   1300: {
     title: '1300 n.e. — najbliższa mapa: 1200',
@@ -635,8 +643,10 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200. m.ē.',
     caption:
-      'Pirms mongoļu sprādziena: OER / World History Project mācību karte visai pasaulei. Joprojām klases rekonstrukcija, ne kadastrs.',
-    imageAlt: 'OER politiskā pasaules karte 1200. gadam',
+      'Pirms mongoļu sprādziena: dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā. Rekonstrukcija, ne kadastrs.',
+    imageAlt: 'Dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā',
+    sourceShort: 'Dibinātāja rekonstrukcija',
+    sourceOrg: 'Dibinātāja piegādāta politiskā rekonstrukcija',
   },
   1300: {
     title: '1300. m.ē. — tuvākā karte: 1200',
@@ -717,6 +727,11 @@ export function getBorderHistoryPage(locale: Locale): BorderHistoryPage {
 export function getBorderHistoryFrames(locale: Locale): BorderFrame[] {
   return borderHistoryFrames.map((meta) => {
     const copy = captions[locale][meta.year] ?? captions.en[meta.year];
-    return { ...meta, ...copy };
+    return {
+      ...meta,
+      ...copy,
+      sourceShort: copy.sourceShort ?? meta.sourceShort,
+      sourceOrg: copy.sourceOrg ?? meta.sourceOrg,
+    };
   });
 }

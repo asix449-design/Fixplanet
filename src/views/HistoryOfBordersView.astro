@@ -70,16 +70,24 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
                     <strong>{frame.sourceOrg}</strong>
                     <br />
                     {page.mapYearLabel}: {frame.sourceYear}
-                    <br />
-                    <a href={frame.sourceUrl} rel="noopener noreferrer">
-                      {frame.commonsUrl}
-                    </a>
+                    {frame.sourceUrl ? (
+                      <>
+                        <br />
+                        <a href={frame.sourceUrl} rel="noopener noreferrer">
+                          {frame.commonsUrl || frame.sourceUrl}
+                        </a>
+                      </>
+                    ) : null}
                   </p>
                   <h3>{page.licenseLabel}</h3>
                   <p>
-                    <a href={frame.licenseUrl} rel="noopener noreferrer">
-                      {frame.license}
-                    </a>
+                    {frame.licenseUrl ? (
+                      <a href={frame.licenseUrl} rel="noopener noreferrer">
+                        {frame.license}
+                      </a>
+                    ) : (
+                      frame.license
+                    )}
                   </p>
                 </div>
               </article>
