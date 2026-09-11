@@ -1074,6 +1074,10 @@ a.solution-card:hover {
     padding: 1.1rem 1.05rem 1.15rem;
   }
 
+  .home-hub .hub-tile.has-art {
+    min-height: 168px;
+  }
+
   .home-panel {
     padding: 1.15rem 1rem 1.3rem;
   }
@@ -2027,6 +2031,110 @@ a.map-card:hover {
   color: rgba(244, 247, 242, 0.82);
   font-size: 0.92rem;
   line-height: 1.4;
+}
+
+/* Home glass tiles only — founder art + neon lime. Section hubs stay unchanged. */
+.home-hub .hub-tile.has-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 214px;
+  padding: 1.15rem 1.1rem 1.2rem;
+  background: rgba(4, 8, 6, 0.22);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  border: 1px solid rgba(192, 255, 0, 0.48);
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px rgba(192, 255, 0, 0.1),
+    0 0 16px rgba(192, 255, 0, 0.16),
+    0 14px 30px rgba(0, 0, 0, 0.42);
+}
+
+.home-hub .hub-tile-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-hub .hub-tile[data-tile='maps'] .hub-tile-art,
+.home-hub .hub-tile[data-tile='about'] .hub-tile-art {
+  object-position: center 46%;
+}
+
+.home-hub .hub-tile[data-tile='oceans'] .hub-tile-art {
+  object-position: center 62%;
+}
+
+.home-hub .hub-tile[data-tile='forests'] .hub-tile-art {
+  object-position: center 42%;
+}
+
+.home-hub .hub-tile[data-tile='wildlife'] .hub-tile-art {
+  object-position: 72% 48%;
+}
+
+.home-hub .hub-tile-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.36) 40%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+.home-hub .hub-tile.has-art .hub-tile-top,
+.home-hub .hub-tile.has-art h2,
+.home-hub .hub-tile.has-art p,
+.home-hub .hub-tile.has-art .hub-arrow {
+  position: relative;
+  z-index: 2;
+}
+
+.home-hub .hub-tile.has-art h2 {
+  color: var(--white);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.75);
+}
+
+.home-hub .hub-tile.has-art p {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.65);
+}
+
+.home-hub .hub-tile.has-art:hover {
+  background: rgba(6, 10, 6, 0.16);
+  border-color: var(--lime);
+  box-shadow:
+    0 0 0 1px rgba(192, 255, 0, 0.3),
+    0 0 22px rgba(192, 255, 0, 0.3),
+    0 16px 34px rgba(0, 0, 0, 0.5);
+}
+
+.home-hub .hub-tile.has-art:hover .hub-tile-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.26) 40%,
+      rgba(0, 0, 0, 0.04) 100%
+    );
+}
+
+.home-hub .hub-tile.has-art .hub-icon {
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-color: rgba(192, 255, 0, 0.58);
 }
 
 .home-band {
