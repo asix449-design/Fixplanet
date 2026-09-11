@@ -250,13 +250,22 @@
     "note": "History of borders, year 900. Also the labeled nearest sheet for 1000."
   },
   {
-    "file": "borders/y1200.jpg",
-    "title": "Political map of the world in 1200",
+    "file": "borders/y1200-oer.jpg",
+    "title": "Political map of the world in 1200 (OER sheet)",
     "source": "World History Project / OER Project",
     "url": "https://commons.wikimedia.org/wiki/File:World_map_1200.jpg",
     "license": "CC BY 4.0",
     "kind": "hosted-original",
-    "note": "History of borders, year 1200. Recolored to the atlas sea/land palette; political fills unchanged. Also the labeled nearest sheet for 1100 and 1300."
+    "note": "History of borders, labeled nearest sheet for 1100 and 1300. Recolored to the atlas sea/land palette; political fills unchanged."
+  },
+  {
+    "file": "borders/y1200.jpg",
+    "title": "Political map of the world in 1200",
+    "source": "Founder-supplied political reconstruction",
+    "url": "",
+    "license": "Founder-supplied image",
+    "kind": "hosted-original",
+    "note": "History of borders, year 1200 only. Founder JPEG, used byte-for-byte."
   },
   {
     "file": "borders/y1500.png",

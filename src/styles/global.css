@@ -865,6 +865,7 @@ a.solution-card:hover {
   font-size: 0.9rem;
 }
 
+
 @media (max-width: 1100px) {
   .nav {
     gap: 0.85rem;
@@ -1693,12 +1694,13 @@ a.map-card:hover {
 
 /* Section themes — one distinctive backdrop per major section */
 .theme-home {
-  background: #1a2e28;
+  background: #000;
 }
 
 .theme-home .section-backdrop img {
-  object-position: 42% 28%;
-  filter: saturate(0.55) brightness(0.28);
+  object-fit: cover;
+  object-position: 50% 40%;
+  filter: none;
   transform: none;
 }
 
@@ -1706,11 +1708,11 @@ a.map-card:hover {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.82) 0%,
-      rgba(0, 0, 0, 0.68) 22%,
-      rgba(0, 0, 0, 0.58) 48%,
-      rgba(0, 0, 0, 0.72) 78%,
-      rgba(0, 0, 0, 0.9) 100%
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.28) 28%,
+      rgba(0, 0, 0, 0.34) 52%,
+      rgba(0, 0, 0, 0.55) 78%,
+      rgba(0, 0, 0, 0.78) 100%
     );
 }
 
@@ -1762,8 +1764,17 @@ a.map-card:hover {
   width: min(100%, 460px);
   aspect-ratio: 1;
   margin-inline: auto;
-  background: #000;
+  background: transparent;
   border-radius: 50%;
+}
+
+.earth-globe-credit {
+  margin: 0.45rem 0 0;
+  color: rgba(232, 236, 242, 0.62);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
 }
 
 .earth-globe-fallback,
