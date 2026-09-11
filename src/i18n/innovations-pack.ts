@@ -224,6 +224,22 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       sourcesNote:
         'Founder link: VAST Data essay on AIFS 1.1. Skill numbers follow Moldovan et al., GMD, 2026. ECMWF superseded 1.1 with v2 in May 2026.',
     },
+    'esa-biomass': {
+      title: 'ESA Biomass',
+      hook: 'The first P-band radar in space, built to map forest biomass and the carbon in trees — not a weather model and not an emissions inventory.',
+      imageAlt:
+        'Artist view of ESA’s Biomass satellite over a forest canopy, the P-band mission that looks through trees to woody mass',
+      what: 'Biomass is an ESA Earth Explorer satellite. It carries the first spaceborne P-band synthetic-aperture radar, designed to measure forest biomass and the carbon stored in woody vegetation. It is not a weather forecast model and not a greenhouse-gas inventory. A 12-metre antenna flies at about 666 km. ESA launched it on 29 April 2025 from Kourou, French Guiana, on Vega-C.',
+      problem:
+        'How much carbon sits in tropical and other forests is still poorly mapped from the ground. Optical satellites see the canopy top. A longer radar wave can look into the volume of the trees — if you can fly that band from space.',
+      how: 'P-band radar (wavelength about 70 cm) penetrates the canopy and returns a signal related to woody biomass. The product is a forest-structure and carbon map, not a plume of emissions and not a rain forecast. Ground plots still calibrate the retrieval.',
+      players:
+        'ESA FutureEO / Earth Explorer. Data were opened in January 2026 after commissioning. Neighbor cards that measure the atmosphere or emissions (Climate TRACE, weather AI) are a different job.',
+      risks:
+        'P-band is a restricted radio allocation; interference and calibration are ordinary limits. A biomass map is not a carbon credit and not a court inventory. Tropical cloud is less of a problem than for optical sensors, but the retrieval still needs field plots.',
+      sourcesNote:
+        'ESA Biomass mission page (FutureEO): first P-band SAR in space; launch 29 April 2025, Kourou / Vega-C. Not weather, not an emissions inventory.',
+    },
   },
   ru: packRu,
   pl: packPl,

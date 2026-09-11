@@ -1318,6 +1318,16 @@ a.wildlife-card:hover {
   color: #c8c8c0;
 }
 
+.status-insects {
+  background: rgba(255, 180, 40, 0.12);
+  color: #e8c56a;
+}
+
+.status-domesticates {
+  background: rgba(192, 255, 0, 0.12);
+  color: var(--lime);
+}
+
 .status-research {
   background: rgba(192, 255, 0, 0.1);
   color: var(--lime);
@@ -1868,6 +1878,15 @@ a.map-card:hover {
   margin: 0;
   color: #e4eee6;
   font-size: 1.08rem;
+}
+
+.shelf-page-source {
+  max-width: 42rem;
+  margin: 0.55rem 0 0;
+}
+
+.shelf-page-source a {
+  color: var(--lime);
 }
 
 .shelf-page .encyc-lede p,

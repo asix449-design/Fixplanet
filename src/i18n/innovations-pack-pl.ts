@@ -219,4 +219,20 @@ export const packPl: Record<string, InnovationCopy> = {
     sourcesNote:
       'Link założyciela: esej VAST Data o AIFS 1.1. Liczby sprawności za Moldovan et al., GMD, 2026. ECMWF zastąpił 1.1 przez v2 w maju 2026.',
   },
+  'esa-biomass': {
+    title: 'ESA Biomass',
+    hook: 'Pierwszy radar pasma P w kosmosie, zbudowany do mapy biomasy lasu i węgla w drzewach — nie model pogody i nie inwentarz emisji.',
+    imageAlt:
+      'Wizja artystyczna satelity ESA Biomass nad koronami lasu — misja pasma P, która patrzy przez drzewa w drewnianą masę',
+    what: 'Biomass to satelita ESA Earth Explorer. Niesie pierwszy kosmiczny radar z syntetyczną aperturą w paśmie P, zaprojektowany do pomiaru biomasy lasu i węgla w drewnie. To nie model prognozy pogody i nie inwentarz gazów cieplarnianych. Antena o średnicy 12 metrów leci na około 666 km. ESA wystrzeliła go 29 kwietnia 2025 z Kourou w Gujanie Francuskiej na Vega-C.',
+    problem:
+      'Ile węgla stoi w lasach tropikalnych i innych, z ziemi wciąż słabo zmapowano. Satelity optyczne widzą wierzch koron. Dłuższa fala radarowa może zajrzeć w objętość drzew — jeśli ten pas da się wznieść w kosmos.',
+    how: 'Radar pasma P (długość fali około 70 cm) przenika koronę i wraca sygnałem związanym z biomasą drzewną. Produkt to mapa struktury lasu i węgla, nie smuga emisji i nie prognoza deszczu. Poletka naziemne wciąż kalibrują odtworzenie.',
+    players:
+      'ESA FutureEO / Earth Explorer. Dane otwarto w styczniu 2026 po rozruchu. Sąsiednie karty, które mierzą atmosferę albo emisje (Climate TRACE, pogodowe SI), to inna robota.',
+    risks:
+      'Pasmo P to ograniczony zasób radiowy; zakłócenia i kalibracja to zwykłe granice. Mapa biomasy nie jest kredytem węglowym i nie jest inwentarzem sądowym. Tropikalna chmura przeszkadza mniej niż optyce, ale odtworzenie i tak potrzebuje poletek.',
+    sourcesNote:
+      'Strona misji ESA Biomass (FutureEO): pierwszy SAR pasma P w kosmosie; start 29 kwietnia 2025, Kourou / Vega-C. Nie pogoda i nie inwentarz emisji.',
+  },
 };

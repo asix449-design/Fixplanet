@@ -75,9 +75,13 @@ const clickableSources = species.primarySources ?? [];
           <span class:list={['pill', `status-${species.status}`]}>
             {ui.wildlifePage.status[species.status]}
           </span>
-          <span class="pill">
-            {ui.wildlifePage.iucnLabel}: {species.iucn} · {ui.wildlifePage.iucn[species.iucn]}
-          </span>
+          {
+            species.iucn ? (
+              <span class="pill">
+                {ui.wildlifePage.iucnLabel}: {species.iucn} · {ui.wildlifePage.iucn[species.iucn]}
+              </span>
+            ) : null
+          }
           {
             species.functionallyExtinct ? (
               <span class="pill status-extinct">{ui.wildlifePage.functionallyExtinct}</span>

@@ -306,6 +306,23 @@ export const innovationMeta: InnovationMeta[] = [
     ],
   },
   {
+    slug: 'esa-biomass',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'esa-biomass.jpg',
+      'ESA / ATG Medialab (Wikimedia Commons)',
+      'CC BY-SA 3.0 IGO',
+      'https://commons.wikimedia.org/wiki/File:ESA_Biomass_Satellite_seeing_wood_through_trees.png',
+    ),
+    sources: [
+      cite(
+        'ESA — Biomass (FutureEO)',
+        'https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass',
+      ),
+    ],
+  },
+  {
     slug: 'iter-fusion',
     area: 'energy',
     status: 'research',
