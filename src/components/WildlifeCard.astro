@@ -1,6 +1,6 @@
 ---
 import type { Species } from '../data/wildlife';
-import { wildlifeImageSrc } from '../data/wildlife';
+import { wildlifeImageSrc, wildlifePrimarySource } from '../data/wildlife';
 import { getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -13,10 +13,11 @@ const { species } = Astro.props;
 const href = localizePath(`/wildlife/${species.slug}`, locale);
 const iucnLabel = ui.wildlifePage.iucn[species.iucn];
 const emphasizeIucn = species.iucn === 'EW' || species.functionallyExtinct === true;
+const primary = wildlifePrimarySource(species.primarySources);
 ---
 
 <article
-  class="wildlife-card-wrap"
+  class:list={['wildlife-card-wrap', primary && 'innovation-card-wrap']}
   data-wildlife-status={species.status}
   data-slug={species.slug}
 >
@@ -56,4 +57,13 @@ const emphasizeIucn = species.iucn === 'EW' || species.functionallyExtinct === t
       <span class="card-cta">{ui.wildlifePage.cardCta}</span>
     </div>
   </a>
+  {
+    primary && (
+      <p class="innovation-card-source">
+        <a href={primary.url} rel="noopener noreferrer">
+          {ui.wildlifePage.primarySource}: {primary.label}
+        </a>
+      </p>
+    )
+  }
 </article>

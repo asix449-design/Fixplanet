@@ -1,4 +1,7 @@
 import type { HubIconName } from './hub';
+import { cite, type PrimarySource } from './sources';
+
+export type { PrimarySource } from './sources';
 
 export const wildlifeStatusKeys = [
   'surviving',
@@ -63,6 +66,8 @@ export type SpeciesMeta = {
   /** Extra card label when IUCN CR still overstates a wild breeding population. */
   functionallyExtinct?: boolean;
   image: ImageCredit;
+  /** Official IUCN / agency pages — not image credits. Optional until a row is sewn. */
+  primarySources?: PrimarySource[];
 };
 
 export type SpeciesCopy = {
@@ -95,14 +100,21 @@ function commons(
   return { file, credit, license, sourceUrl };
 }
 
+function iucnList(scientificName: string, url: string): PrimarySource {
+  return cite(`IUCN Red List — ${scientificName}`, url);
+}
+
 /**
  * Curated first list. To add a species:
- * 1. Add a row here (English slug, Latin name, status shelf, IUCN code, image credit).
+ * 1. Add a row here (English slug, Latin name, status shelf, IUCN code, image credit,
+ *    optional clickable primarySources).
  * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts`.
  * 3. Drop a photo in `public/images/wildlife/{file}` (Wikimedia/PD preferred).
  * 4. `npm run build`.
  * Homo sapiens copy is not a species card — it lives on the `/wildlife/homo-sapiens`
  * shelf (species frame). The Late Pleistocene journey is told on `/migration/humans`.
+ * Primary sources are official IUCN / agency pages — not blogs. Image credits stay
+ * on `image`, separate from `primarySources`.
  */
 export const speciesMeta: SpeciesMeta[] = [
   {
@@ -224,6 +236,10 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg',
     ),
+    primarySources: [
+      iucnList('Phocoena sinus', 'https://www.iucnredlist.org/species/17028/214541137'),
+      cite('IUCN Cetacean Specialist Group', 'https://iucn-csg.org/'),
+    ],
   },
   {
     slug: 'amur-tiger',
@@ -236,6 +252,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Siberian_Tiger_sf.jpg',
     ),
+    primarySources: [
+      iucnList('Panthera tigris', 'https://www.iucnredlist.org/species/15955/214862019'),
+    ],
   },
   {
     slug: 'sumatran-orangutan',
@@ -248,6 +267,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Sumatran_Orangutan_(Pongo_abelii)_at_Perth_Zoo,_October_2024_18.jpg',
     ),
+    primarySources: [
+      iucnList('Pongo abelii', 'https://www.iucnredlist.org/species/121097935/259045437'),
+    ],
   },
   {
     slug: 'black-rhino',
@@ -260,6 +282,10 @@ export const speciesMeta: SpeciesMeta[] = [
       'GFDL 1.2',
       'https://commons.wikimedia.org/wiki/File:Diceros_bicornis.jpg',
     ),
+    primarySources: [
+      iucnList('Diceros bicornis', 'https://www.iucnredlist.org/species/6557/152728945'),
+      cite('International Rhino Foundation', 'https://rhinos.org/'),
+    ],
   },
   {
     slug: 'african-forest-elephant',
@@ -272,6 +298,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:African_Forest_Elephant.jpg',
     ),
+    primarySources: [
+      iucnList('Loxodonta cyclotis', 'https://www.iucnredlist.org/species/181007989/204404464'),
+    ],
   },
   {
     slug: 'mountain-gorilla',
@@ -284,6 +313,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Gorilla beringei beringei',
+        'https://www.iucnredlist.org/species/39999/17989719',
+      ),
+      cite('International Gorilla Conservation Programme', 'https://igcp.org/'),
+    ],
   },
   {
     slug: 'amur-leopard',
@@ -296,6 +332,12 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 2.5',
       'https://commons.wikimedia.org/wiki/File:Amur_Leopard_Panthera_pardus_orientalis_Facing_Forward_1761px.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Panthera pardus orientalis',
+        'https://www.iucnredlist.org/species/15957/5333757',
+      ),
+    ],
   },
   {
     slug: 'hawksbill-turtle',
@@ -308,6 +350,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg',
     ),
+    primarySources: [
+      iucnList('Eretmochelys imbricata', 'https://www.iucnredlist.org/species/8005/12881238'),
+    ],
   },
   {
     slug: 'northern-white-rhinoceros',
@@ -333,6 +378,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Rhinoceros_sondaicus_in_London_Zoo.jpg',
     ),
+    primarySources: [
+      iucnList('Rhinoceros sondaicus', 'https://www.iucnredlist.org/species/19495/18493900'),
+    ],
   },
   {
     slug: 'sumatran-rhinoceros',
@@ -345,6 +393,12 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Sumatran_Rhinoceros_Way_Kambas_2008.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Dicerorhinus sumatrensis',
+        'https://www.iucnredlist.org/species/6553/18493355',
+      ),
+    ],
   },
   {
     slug: 'saola',
@@ -381,6 +435,12 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg',
     ),
+    primarySources: [
+      cite(
+        'New Zealand Department of Conservation — Kākāpō',
+        'https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/',
+      ),
+    ],
   },
   {
     slug: 'axolotl',
@@ -393,6 +453,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_1.jpg',
     ),
+    primarySources: [
+      iucnList('Ambystoma mexicanum', 'https://www.iucnredlist.org/species/1095/53947343'),
+    ],
   },
   {
     slug: 'chinese-giant-salamander',
@@ -898,4 +961,10 @@ export function wildlifeHubTilePath(
 
 export function wildlifeStatusPath(status: WildlifeStatus): string {
   return wildlifeHubPath(status);
+}
+
+export function wildlifePrimarySource(
+  sources: readonly PrimarySource[] | undefined,
+): PrimarySource | undefined {
+  return sources?.[0];
 }
