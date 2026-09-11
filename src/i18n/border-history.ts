@@ -33,6 +33,7 @@ export type BorderFrameCopy = {
   imageAlt: string;
   sourceShort?: string;
   sourceOrg?: string;
+  license?: string;
 };
 
 const pageEn: BorderHistoryPage = {
@@ -236,6 +237,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'Founder-supplied political reconstruction of the world in 1200',
     sourceShort: 'Founder reconstruction',
     sourceOrg: 'Founder-supplied political reconstruction',
+    license: 'Founder-supplied image',
   },
   1300: {
     title: '1300 CE — nearest map: 1200',
@@ -373,6 +375,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Политическая реконструкция мира 1200 года, предоставленная основателем',
     sourceShort: 'Реконструкция основателя',
     sourceOrg: 'Политическая реконструкция, предоставленная основателем',
+    license: 'Изображение основателя',
   },
   1300: {
     title: '1300 н. э. — ближайшая карта: 1200',
@@ -510,6 +513,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200',
     sourceShort: 'Rekonstrukcja założyciela',
     sourceOrg: 'Rekonstrukcja polityczna dostarczona przez założyciela',
+    license: 'Obraz dostarczony przez założyciela',
   },
   1300: {
     title: '1300 n.e. — najbliższa mapa: 1200',
@@ -647,6 +651,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'Dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā',
     sourceShort: 'Dibinātāja rekonstrukcija',
     sourceOrg: 'Dibinātāja piegādāta politiskā rekonstrukcija',
+    license: 'Dibinātāja piegādāts attēls',
   },
   1300: {
     title: '1300. m.ē. — tuvākā karte: 1200',
@@ -732,6 +737,7 @@ export function getBorderHistoryFrames(locale: Locale): BorderFrame[] {
       ...copy,
       sourceShort: copy.sourceShort ?? meta.sourceShort,
       sourceOrg: copy.sourceOrg ?? meta.sourceOrg,
+      license: copy.license ?? meta.license,
     };
   });
 }
