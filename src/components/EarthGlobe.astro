@@ -121,6 +121,9 @@ const { label, credit } = Astro.props;
       specularMap: specularMap ?? undefined,
       specular: new THREE.Color(0x6aa4c8),
       shininess: 18,
+      emissive: new THREE.Color(0xffffff),
+      emissiveMap: day,
+      emissiveIntensity: 0.28,
       flatShading: false,
     });
 
@@ -155,13 +158,11 @@ const { label, credit } = Astro.props;
     earth.rotation.x = 0.16;
     scene.add(earth);
 
-    scene.add(new THREE.AmbientLight(0xb8c4d4, 0.42));
-    const sun = new THREE.DirectionalLight(0xfff6e8, 1.15);
-    sun.position.set(-1.6, 0.35, 1.8);
+    scene.add(new THREE.AmbientLight(0xd8e2ee, 0.82));
+    scene.add(new THREE.HemisphereLight(0xc5d8ee, 0x1a2430, 0.38));
+    const sun = new THREE.DirectionalLight(0xfff6e8, 1.35);
+    sun.position.set(-0.55, 0.28, 2.15);
     scene.add(sun);
-    const fill = new THREE.DirectionalLight(0x4a6a88, 0.22);
-    fill.position.set(1.4, -0.4, -1.2);
-    scene.add(fill);
 
     let width = 0;
     const fit = () => {
