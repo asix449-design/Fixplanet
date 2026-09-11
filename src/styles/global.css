@@ -784,6 +784,14 @@ a.solution-card:hover {
   margin-inline: auto;
 }
 
+.religion-soon-back {
+  padding-top: 1.5rem;
+}
+
+.religion-soon-back + .coming-soon p {
+  max-width: 36rem;
+}
+
 .donate-page {
   padding: 3.2rem 0 4.6rem;
   max-width: 40rem;

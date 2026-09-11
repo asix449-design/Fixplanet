@@ -47,12 +47,12 @@ const pageEn: MapsPage = {
   eyebrow: 'Map room',
   title: 'Maps',
   lead:
-    'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders and Religion are century timelines from 1 CE to now.',
+    'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders is a century timeline from 1 CE to now. The Religion century atlas is not published yet.',
   filterAria: 'Filter maps by category',
   chooseCategory: 'Choose a shelf',
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
-    religious: 'Sourced religion plates, century by century — gaps labeled.',
+    religious: 'A century atlas of sourced religion maps — not published yet.',
     conflicts: 'Armed events and battle deaths from named datasets.',
     ethnic: 'Language families as public cartography, not a census.',
     crime: 'Homicide and related rates where a public map exists.',
@@ -67,7 +67,7 @@ const pageEn: MapsPage = {
   categoryEyebrows: {
     subsurface: 'oil, gas, minerals',
     forests: 'canopy, loss, and parks',
-    religious: 'year 0 CE to now',
+    religious: 'coming soon',
     'history-of-borders': '1 CE to now',
   },
   cardCta: 'Read the card →',
@@ -110,12 +110,12 @@ const pageRu: MapsPage = {
   eyebrow: 'Картографическая',
   title: 'Карты',
   lead:
-    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» и «Религии» — ленты столетий от 1 года н. э. до сегодня.',
+    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» — лента столетий от 1 года н. э. до сегодня. Атлас религий по столетиям пока не опубликован.',
   filterAria: 'Фильтр карт по теме',
   chooseCategory: 'Выберите полку',
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
-    religious: 'Карты религий по столетиям — пробелы помечены.',
+    religious: 'Атлас религиозных карт по столетиям — пока не опубликован.',
     conflicts: 'Вооружённые события и боевые потери по названным данным.',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime: 'Убийства и смежные показатели, где есть открытая карта.',
@@ -130,7 +130,7 @@ const pageRu: MapsPage = {
   categoryEyebrows: {
     subsurface: 'нефть, газ, ископаемые',
     forests: 'полог, потери и парки',
-    religious: 'от 0 н. э. до сейчас',
+    religious: 'скоро',
     'history-of-borders': 'от 1 н. э. до сейчас',
   },
   cardCta: 'Читать карточку →',
@@ -173,12 +173,12 @@ const pagePl: MapsPage = {
   eyebrow: 'Mapownia',
   title: 'Mapy',
   lead:
-    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic i Religie to osie czasu stuleci od 1 n.e. do dziś.',
+    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Atlas religii po stuleciach nie jest jeszcze opublikowany.',
   filterAria: 'Filtruj mapy według kategorii',
   chooseCategory: 'Wybierz półkę',
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
-    religious: 'Płyty religii stulecie po stuleciu — luki oznaczone.',
+    religious: 'Atlas map religii po stuleciach — jeszcze nie opublikowany.',
     conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime: 'Zabójstwa i pokrewne wskaźniki, gdzie jest publiczna mapa.',
@@ -193,7 +193,7 @@ const pagePl: MapsPage = {
   categoryEyebrows: {
     subsurface: 'ropa, gaz, minerały',
     forests: 'okap, ubytek i parki',
-    religious: 'od roku 0 n.e. do dziś',
+    religious: 'wkrótce',
     'history-of-borders': 'od 1 n.e. do dziś',
   },
   cardCta: 'Czytaj kartę →',
@@ -236,12 +236,12 @@ const pageLv: MapsPage = {
   eyebrow: 'Karšu zāle',
   title: 'Kartes',
   lead:
-    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture un Reliģijas ir gadsimtu laika līnijas no 1. m.ē. līdz šodienai.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģiju gadsimtu atlants vēl nav publicēts.',
   filterAria: 'Filtrēt kartes pēc kategorijas',
   chooseCategory: 'Izvēlies plauktu',
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
-    religious: 'Reliģiju plāksnes pa gadsimtiem — iztrūkumi marķēti.',
+    religious: 'Reliģiju karšu gadsimtu atlants — vēl nav publicēts.',
     conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime: 'Slepkavības un radniecīgi rādītāji, kur ir publiska karte.',
@@ -256,7 +256,7 @@ const pageLv: MapsPage = {
   categoryEyebrows: {
     subsurface: 'nafta, gāze, izrakteņi',
     forests: 'vainags, zudums un parki',
-    religious: 'no 0. m.ē. līdz šodienai',
+    religious: 'drīzumā',
     'history-of-borders': 'no 1. m.ē. līdz šodienai',
   },
   cardCta: 'Lasīt kartīti →',

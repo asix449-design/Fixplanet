@@ -36,13 +36,13 @@ export type ReligionFrameCopy = {
 };
 
 const pageEn: ReligionHistoryPage = {
-  metaTitle: 'Religion — century atlas — Fix Planet',
+  metaTitle: 'Religion — coming soon — Fix Planet',
   metaDescription:
-    'A century-by-century atlas of sourced religion maps from the start of the Common Era to now. Early centuries are sparse; gaps are labeled. No invented polygons.',
-  eyebrow: 'Map room · year 0 CE to now',
+    'A century atlas of sourced religion maps is not published yet. Unfinished plates are not shown as a finished timeline.',
+  eyebrow: 'Map room · coming soon',
   title: 'Religion',
   lead:
-    'Religion maps, one century at a time: year 1 of the Common Era through the present. Each frame is a published atlas plate, a government sheet, or an openly licensed reconstruction. Early centuries have few honest world maps.',
+    'Religion maps, century by century, are not published yet. Fix Planet will not show unfinished plates as a working atlas.',
   honesty:
     'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. Sourced plates sit at antiquity (a 1905 Old-World reconstruction), the spread of Christianity to 600, state religions about 820, Shepherd’s Europe–Mediterranean religions about 1097, a cumulative spread-to-1500 plate, Woodbridge 1821, Dobbins 1883, the U.S. Army 1943 world sheet, and a 2000s majority-region map. Other century steps reuse the nearest plate and say so. We do not draw missing centuries.',
   back: '← Maps',
@@ -65,23 +65,23 @@ const pageEn: ReligionHistoryPage = {
     'majority-modern': 'Modern majority-religion regions — affiliation, not piety, and not Pew artwork',
   },
   catalogTitle: 'Religion',
-  catalogHook: 'Century steps from 1 CE to now: sourced plates, labeled gaps, no invented polygons.',
+  catalogHook: 'A century atlas of sourced religion maps — not published yet.',
   catalogCta: 'Open the timeline →',
   catalogAlt: 'Majority-religion world map used as the catalog card for the Religion century atlas',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors and oceans, used as a physical backdrop, not a religion map',
   soonNotice:
-    'This atlas is still being brought into the History of borders visual family — tan land and soft blue seas. Century plates stay sourced; we do not invent missing polygons.',
+    'Religion maps, century by century, are not published yet. The plates on hand are unfinished — some centuries reuse the same small raster — and Fix Planet will not present that as a working timeline.',
 };
 
 const pageRu: ReligionHistoryPage = {
-  metaTitle: 'Религии — атлас столетий — Fix Planet',
+  metaTitle: 'Религии — скоро — Fix Planet',
   metaDescription:
-    'Атлас религиозных карт по столетиям от начала нашей эры до сегодня: только опубликованные листы. Ранние века редки; пробелы помечены. Полигоны не выдуманы.',
-  eyebrow: 'Картографическая · от 0 н. э. до сейчас',
+    'Атлас религиозных карт по столетиям пока не опубликован. Незаконченные листы не показываем как готовую ленту.',
+  eyebrow: 'Картографическая · скоро',
   title: 'Религии',
   lead:
-    'Карты религий — по одному столетию: от 1 года н. э. до наших дней. Каждый кадр — изданный лист атласа, государственная карта или открытая реконструкция. Для ранних веков честных мировых карт мало.',
+    'Карты религий по столетиям пока не опубликованы. Fix Planet не показывает незаконченные листы как рабочий атлас.',
   honesty:
     'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Есть листы: древность (реконструкция Старого Света 1905 года), распространение христианства до 600, государственные религии около 820, религии Европы и Средиземноморья у Shepherd около 1097, накопленное распространение до 1500, Woodbridge 1821, Dobbins 1883, армейский лист США 1943 и карта регионов большинства 2000-х. Остальные шаги — ближайший лист с пометкой. Недостающие века мы не рисуем.',
   back: '← Карты',
@@ -104,23 +104,23 @@ const pageRu: ReligionHistoryPage = {
     'majority-modern': 'Современные регионы большинства — принадлежность, не благочестие и не графика Pew',
   },
   catalogTitle: 'Религии',
-  catalogHook: 'Столетия от 1 н. э. до сейчас: листы с источниками, помеченные пробелы, без выдуманных полигонов.',
+  catalogHook: 'Атлас религиозных карт по столетиям — пока не опубликован.',
   catalogCta: 'Открыть ленту →',
   catalogAlt: 'Карта регионов большинства религий — карточка атласа столетий «Религии»',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши и океанов, физический фон, не карта религий',
   soonNotice:
-    'Этот атлас ещё приводится к визуальному семейству «Истории границ» — охра суши и мягкая голубизна морей. Листы по столетиям остаются с источниками; недостающие полигоны мы не рисуем.',
+    'Карты религий по столетиям пока не опубликованы. Листы, которые есть, не закончены — часть веков повторяет один и тот же мелкий растр — и Fix Planet не показывает это как рабочую ленту.',
 };
 
 const pagePl: ReligionHistoryPage = {
-  metaTitle: 'Religie — atlas stuleci — Fix Planet',
+  metaTitle: 'Religie — wkrótce — Fix Planet',
   metaDescription:
-    'Atlas map religii stulecie po stuleciu od początku naszej ery do dziś: tylko opublikowane arkusze. Wczesne wieki są rzadkie; luki są oznaczone. Bez wymyślonych wielokątów.',
-  eyebrow: 'Mapownia · od roku 0 n.e. do dziś',
+    'Atlas map religii po stuleciach nie jest jeszcze opublikowany. Niedokończonych płyt nie pokazujemy jako gotowej osi czasu.',
+  eyebrow: 'Mapownia · wkrótce',
   title: 'Religie',
   lead:
-    'Mapy religii, stulecie po stuleciu: od roku 1 n.e. do dziś. Każda klatka to opublikowany arkusz atlasu, mapa rządowa albo rekonstrukcja na otwartej licencji. We wczesnych wiekach uczciwych map świata jest mało.',
+    'Mapy religii stulecie po stuleciu nie są jeszcze opublikowane. Fix Planet nie pokazuje niedokończonych płyt jako działającego atlasu.',
   honesty:
     'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Są arkusze: starożytność (rekonstrukcja Starego Świata z 1905), rozprzestrzenianie chrześcijaństwa do 600, religie państwowe około 820, religie Europy i Śródziemnomorza Shepherda około 1097, skumulowane rozprzestrzenienie do 1500, Woodbridge 1821, Dobbins 1883, arkusz armii USA z 1943 i mapa regionów większości z lat 2000. Pozostałe kroki to najbliższy arkusz z adnotacją. Brakujących stuleci nie rysujemy.',
   back: '← Mapy',
@@ -143,23 +143,23 @@ const pagePl: ReligionHistoryPage = {
     'majority-modern': 'Współczesne regiony większości — przynależność, nie pobożność i nie grafika Pew',
   },
   catalogTitle: 'Religie',
-  catalogHook: 'Kroki stuleci od 1 n.e. do dziś: arkusze ze źródłami, oznaczone luki, bez wymyślonych wielokątów.',
+  catalogHook: 'Atlas map religii po stuleciach — jeszcze nie opublikowany.',
   catalogCta: 'Otwórz oś czasu →',
   catalogAlt: 'Mapa regionów większości religijnej — karta atlasu stuleci Religii',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów i oceanów, tło fizyczne, nie mapa religii',
   soonNotice:
-    'Ten atlas jest jeszcze dopasowywany do rodziny wizualnej Historii granic — płowy ląd i miękki błękit mórz. Płyty stuleci zostają ze źródłami; brakujących wielokątów nie wymyślamy.',
+    'Mapy religii stulecie po stuleciu nie są jeszcze opublikowane. Płyty, które mamy, są niedokończone — niektóre wieki powtarzają ten sam mały raster — i Fix Planet nie pokazuje tego jako działającej osi czasu.',
 };
 
 const pageLv: ReligionHistoryPage = {
-  metaTitle: 'Reliģijas — gadsimtu atlants — Fix Planet',
+  metaTitle: 'Reliģijas — drīzumā — Fix Planet',
   metaDescription:
-    'Reliģiju karšu atlants pa gadsimtiem no mūsu ēras sākuma līdz šodienai: tikai publicētas lapas. Agrīnie gadsimti ir reti; iztrūkumi ir marķēti. Bez izdomātiem daudzstūriem.',
-  eyebrow: 'Karšu zāle · no 0. m.ē. līdz šodienai',
+    'Reliģiju karšu gadsimtu atlants vēl nav publicēts. Nepabeigtas plāksnes netiek rādītas kā gatava laika līnija.',
+  eyebrow: 'Karšu zāle · drīzumā',
   title: 'Reliģijas',
   lead:
-    'Reliģiju kartes — pa vienam gadsimtam: no 1. gada m.ē. līdz mūsdienām. Katrs kadrs ir publicēta atlanta lapa, valsts karte vai atklāti licencēta rekonstrukcija. Agrīnajiem gadsimtiem godīgu pasaules karšu ir maz.',
+    'Reliģiju kartes pa gadsimtiem vēl nav publicētas. Fix Planet nerāda nepabeigtas plāksnes kā strādājošu atlantu.',
   honesty:
     'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Ir lapas: senatne (1905. gada Vecās pasaules rekonstrukcija), kristietības izplatība līdz 600., valstu reliģijas ap 820., Shepherd Eiropas–Vidusjūras reliģijas ap 1097., kumulatīva izplatība līdz 1500., Woodbridge 1821, Dobbins 1883, ASV armijas 1943. gada lapa un 2000. gadu vairākuma reģionu karte. Pārējie soļi ir tuvākā lapa ar atzīmi. Trūkstošos gadsimtus mēs nezīmējam.',
   back: '← Kartes',
@@ -182,14 +182,13 @@ const pageLv: ReligionHistoryPage = {
     'majority-modern': 'Mūsdienu vairākuma reliģiju reģioni — piederība, ne dievbijība un ne Pew grafika',
   },
   catalogTitle: 'Reliģijas',
-  catalogHook:
-    'Gadsimtu soļi no 1. m.ē. līdz šodienai: lapas ar avotiem, marķēti iztrūkumi, bez izdomātiem daudzstūriem.',
+  catalogHook: 'Reliģiju karšu gadsimtu atlants — vēl nav publicēts.',
   catalogCta: 'Atvērt laika līniju →',
   catalogAlt: 'Vairākuma reliģiju pasaules karte — Reliģiju gadsimtu atlanta kartīte',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes un okeānu krāsas, fizisks fons, ne reliģiju karte',
   soonNotice:
-    'Šo atlantu vēl pieved pie Robežu vēstures vizuālās ģimenes — dzeltenbrūna zeme un maigi zila jūra. Gadsimtu lapas paliek ar avotiem; trūkstošos daudzstūrus mēs neizdomājam.',
+    'Reliģiju kartes pa gadsimtiem vēl nav publicētas. Plāksnes, kas ir rokā, nav pabeigtas — daži gadsimti atkārto to pašu mazo rastru — un Fix Planet to nerāda kā strādājošu laika līniju.',
 };
 
 const captionsEn: Record<number, ReligionFrameCopy> = {
