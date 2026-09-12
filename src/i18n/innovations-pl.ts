@@ -106,7 +106,7 @@ export const pl: Record<string, InnovationCopy> = {
     risks:
       'Surowiec musi być stosunkowo czystym PET. Mieszany plastik wciąż wygrywa tym, że tanio go zakopać albo spalić. Opóźnienia zakładu są normalne przy recyklingu pierwszego w swoim rodzaju. Nie myl reaktora demonstracyjnego z rozwiązanym kryzysem odpadów.',
     sourcesNote:
-      'Yoshida et al., Science, 2016; strony Carbios. Longlaville w sierpniu 2026 wciąż czeka na finansowanie — to nie działający zakład.',
+      'Yoshida et al., Science, 2016. Oficjalne strony Carbios nie odpowiadały przy sprawdzeniu; Wikipedia nie jest źródłem. Longlaville w sierpniu 2026 wciąż czeka na finansowanie — to nie działający zakład.',
   },
   'methane-feed-additive': {
     title: 'Dodatek paszowy ograniczający metan bydła (Bovaer)',

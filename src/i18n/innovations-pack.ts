@@ -113,7 +113,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       risks:
         'Four hundred and fifty tonnes is a demonstration. “No external heat” still needs electricity. Water output is a company figure. Do not treat a Bridgewater pad as a national removal wedge.',
       sourcesNote:
-        'Interesting Engineering summary of the 450 t / 475,000 gal design; Avnos 1 Sep 2026 operations note. Design capacity is not a year of metered tonnes.',
+        'Avnos site and 1 Sep 2026 operations note (450 t / 475,000 gal design). Design capacity is not a year of metered tonnes.',
     },
     'yara-sluiskil-ccs': {
       title: 'Yara Sluiskil CCS',
@@ -129,7 +129,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       risks:
         'Capture rate, shipping, and storage have to operate together. Using CCS to stretch fossil ammonia is a real debate. 800,000 tonnes is serious engineering and still small next to EU industry. Do not file this tonne as a DAC credit.',
       sourcesNote:
-        'CarbonCredits inauguration note (Sep 2026): up to 800,000 t/yr, 7 Sep opening, Northern Lights shipping. Design capacity is not a year of stored tonnes.',
+        'Yara news-and-media hub; Northern Lights pages. Opening-week coverage put design capture at up to 800,000 t/yr. Design capacity is not a year of stored tonnes.',
     },
     'samsara-eco': {
       title: 'Samsara Eco — enzymatic recycling',
@@ -144,7 +144,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       risks:
         'A first plant is not a solved waste crisis. Mixed plastic is still cheaper to bury or burn. The 20,000-tonne Asian plant is a plan for 2028. Do not confuse a Jerrabomberra opening with circular packaging at supermarket scale.',
       sourcesNote:
-        'PKN Packaging News on the Jerrabomberra opening and 20,000 t Asia plan. A first plant is not supermarket-scale circularity.',
+        'Samsara Eco official site. A first plant is not supermarket-scale circularity.',
     },
     'quaise-mmwave-drilling': {
       title: 'Quaise millimetre-wave drilling',

@@ -83,7 +83,7 @@ export const en: Record<string, InnovationCopy> = {
     players: 'Carbios (France) and partners (including Asian licensing talks). Academic PETase engineering continues in many labs after Yoshida et al. 2016. Collection systems remain municipal and brand-owned — the bottleneck as often as the enzyme.',
     risks: 'Feedstock must be relatively clean PET. Mixed plastic still wins by being cheap to bury or burn. Plant delays are normal for first-of-a-kind recycling. Do not confuse a demo reactor with a solved waste crisis.',
     sourcesNote:
-      'Yoshida et al., Science, 2016; Carbios company pages. Longlaville remains financing-limited as of August 2026 — not an operating plant.',
+      'Yoshida et al., Science, 2016. Official Carbios pages did not answer when checked; Wikipedia is not used as a source. Longlaville remains financing-limited as of August 2026 — not an operating plant.',
   },
   'methane-feed-additive': {
     title: 'Methane-reducing cattle feed (Bovaer)',

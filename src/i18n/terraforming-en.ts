@@ -196,6 +196,24 @@ export const en: Record<string, GeoCopy> = {
     sourcesNote:
       'SGI official site; MEWA/SPA 2026 milestone claim; KAPSARC on agricultural water and SGI demand; FAO AQUASTAT for the groundwater and wheat context. Pivot-circle photo is historical irrigation, labelled as such.',
   },
+  'loess-plateau-rehabilitation': {
+    title: 'Loess Plateau rehabilitation',
+    hook: 'World Bank–supported watershed work in China’s Loess Plateau (1990s–2000s): terraces, vegetation, grazing rules — erosion control and livelihoods, not a second “green wall” slogan.',
+    imageAlt:
+      'Terraced loess hills in Shanxi — the class of slope-to-terrace work the World Bank projects funded, not a proof that the whole plateau is greened',
+    jurisdiction: 'People’s Republic of China (Shanxi, Shaanxi, Gansu, Inner Mongolia — Yellow River tributary watersheds)',
+    yearStatus:
+      'Phase I (P003608) launched October 1994, completed 2002. Phase II (P056216) approved May 1999, closed June 2005. Status: partial — the World Bank phases are closed; the plateau was not “finished.”',
+    plan: 'The 2004 World Bank case study states a primary aim: raise agricultural production and incomes on 1,560,000 hectares in nine Yellow River tributary watersheds, in 21–22 poor counties of Shanxi, Shaanxi, Gansu and Inner Mongolia. A secondary aim was less sediment into the Yellow River. The package was terraces and small irrigation; trees, shrubs and orchards on slopes; grassland; sediment-control dams; village land-use plans; and — around the works — restrictions on free grazing of sheep and goats. Phase I was an IDA credit of US$150 million toward about US$250 million total (about US$160 per hectare in that paper). This is watershed rehabilitation, not a planted “green wall” from Xinjiang to the sea.',
+    construction:
+      'The same 2004 paper lists, as built: about 90,500 hectares of terraces; tens of thousands of hectares of trees, shrubs, economic trees and orchards; about 100,000 hectares of grassland; 149 key dams, 1,140 warping dams and 1,956 check dams; and about 7,100 hectares of irrigation, mostly in dry Inner Mongolia. Droughts forced replanting of some trees. Grazing bans spread from project plots to some surrounding counties — a policy shift the authors treat as a project effect, not a separate loan line. A second World Bank project (P056216) continued the same class of work and closed in 2005.',
+    outcome:
+      'The 2004 case study reports grain output in the project area from 427,000 to about 700,000 tons, fruit from 80,000 to 345,000 tons, farmer net income per capita from 360 to 1,263 yuan, and the share of people under the official poverty line from 59 percent (1993) to 27 percent (2001), with benefits claimed for more than 1.2 million farmers. Treat those as World Bank / project figures, not an independent field census. The Loess Plateau as a whole is about 640,000 km²; the Phase I project area was on the order of 15,500 km². Later national programmes kept working the plateau. They are not this loan, and they are not a finished greening.',
+    lessons:
+      'Terraces, contracts and grazing rules can raise yields and cut sediment in treated watersheds without being a slogan wall. Count surviving cover and who keeps the land — not seedlings issued. A closed World Bank project is not the end of Yellow River erosion. Do not file this card under Three-North or Africa’s Great Green Wall.',
+    sourcesNote:
+      'World Bank 2004 Shanghai case study PDF (Phase I results); World Bank project pages P003608 (1994–2002) and P056216 (approved 1999, closed 2005).',
+  },
   'stratospheric-aerosol-injection': {
     title: 'Stratospheric aerosol injection',
     hook: 'Mimic a volcano, cool the planet. It exists as models, reviews and one cancelled balloon. It is not a deployed thermostat.',
@@ -230,7 +248,7 @@ export const en: Record<string, GeoCopy> = {
     lessons:
       'A green satellite swirl is not sequestered carbon. Export and residence time are the measurement. The legal default on the high seas is no. Keep this card on the research shelf.',
     sourcesNote:
-      'IMO London Convention/Protocol ocean-fertilization pages; Boyd & others on IronEx/SOIREE (Nature 2000); Martin et al. 2013 on LOHAFEX export; 2012 parties’ statement via IMO materials.',
+      'Boyd & others on IronEx/SOIREE (Nature 2000); Martin et al. 2013 on LOHAFEX export.',
   },
   'marine-cloud-brightening': {
     title: 'Marine cloud brightening',

@@ -322,6 +322,42 @@
     "note": "History of borders, year-2000 step. Present-day ISO country polygons, not the June 2000 CIA sheet. South Sudan (2011) and other post-2000 states appear. Labeled nearest. Greenwich Robinson splits Chukotka at 180°; the western-hemisphere remainder (next to Alaska) is restored from Natural Earth, public domain."
   },
   {
+    "file": "global-river-basins.jpg",
+    "title": "Selection of world watersheds (Hidromundi)",
+    "source": "Wikimedia Commons, Babelia",
+    "url": "https://commons.wikimedia.org/wiki/File:Hidromundi.png",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Selected world watershed polygons. HydroBASINS / HydroSHEDS remains the named interactive source. Not WRI Aqueduct, not Blue Marble."
+  },
+  {
+    "file": "freshwater-aquastat.jpg",
+    "title": "Renewable freshwater resources per capita (map export)",
+    "source": "Our World in Data, from FAO AQUASTAT via World Bank",
+    "url": "https://ourworldindata.org/grapher/renewable-water-resources-per-capita?tab=map",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export of country-level renewable freshwater per person. Not WRI Aqueduct basin scores."
+  },
+  {
+    "file": "exclusive-economic-zones.jpg",
+    "title": "Exclusive economic zones / territorial waters of the world",
+    "source": "Wikimedia Commons, B1mbo, based on VLIZ maritime boundaries",
+    "url": "https://commons.wikimedia.org/wiki/File:Exclusive_Economic_Zones_-_World.svg",
+    "license": "CC BY-SA 3.0 CL",
+    "kind": "hosted-original",
+    "note": "World EEZ schematic. Marine Regions remains the named interactive source. Not a second Natural Earth countries layer."
+  },
+  {
+    "file": "living-languages-count.jpg",
+    "title": "Ethnologue 18 linguistic diversity index",
+    "source": "Wikimedia Commons, cmglee (BlankMap-World6 base by Canuckguy and others)",
+    "url": "https://commons.wikimedia.org/wiki/File:Ethnologue_18_linguistic_diversity_index_BlankMap-World6.svg",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Country choropleth of linguistic diversity from Ethnologue 18. Magnitude/diversity preview — not the Glottolog family map and not a printed living-language total."
+  },
+  {
     "file": "borders/y2020.png",
     "title": "Present-day country fills (atlas palette)",
     "source": "Wikimedia Commons BlankMap-World; Natural Earth is the named political base. Fix Planet 4-color fill.",

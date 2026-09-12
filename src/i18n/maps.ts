@@ -509,6 +509,62 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'NASA 2012 night-lights map of Earth: city lights on dark land and black oceans, no borders or labels',
   },
+  'global-river-basins': {
+    title: 'Global river basins',
+    hook: 'Nested sub-basin polygons for the whole planet (Pfafstetter levels) — a hydrographic base map, not a stress index.',
+    description:
+      'HydroBASINS, from HydroSHEDS, is a global set of hierarchically nested catchment polygons extracted from HydroSHEDS elevation hydrography at 15 arc-seconds. Twelve Pfafstetter levels run from continent-scale basins down to small sub-basins (about a million polygons at the finest breakdown). It is a hydrographic base layer — who drains where — not a model of demand versus supply. WRI Aqueduct (the Water stress card) is the risk atlas. The HydroSHEDS hub sits at hydrosheds.org.',
+    howToRead:
+      'A colored polygon is a drainage unit, not a country and not a drought score. Nested levels let you zoom. Endorheic basins do not reach an ocean. Open HydroBASINS for the downloadable polygons. The preview is a Commons selection of world watersheds, not the HydroBASINS shapefile.',
+    caveats:
+      'DEM-derived divides can miss karst, canals, and human inter-basin transfers. Antarctica is excluded. Do not read this thumbnail as water rights, water stress, or a forecast of conflict.',
+    licenseNote:
+      'HydroBASINS is distributed for scientific, educational and commercial use under the HydroSHEDS license (cite Lehner & Grill 2013). The preview is Babelia’s Hidromundi watershed selection (CC BY-SA 4.0), not a HydroSHEDS product figure.',
+    imageAlt:
+      'World map of selected river watersheds in pastel polygons on a light-blue ocean — a hydrographic base, not a water-stress index',
+  },
+  'freshwater-aquastat': {
+    title: 'Freshwater resources (AQUASTAT)',
+    hook: 'Country-level renewable water and withdrawals from FAO’s global water information system — statistics and country profiles, not a single stress raster.',
+    description:
+      'FAO AQUASTAT compiles renewable water resources, withdrawals, and irrigation statistics, plus country and basin profiles. It is a ledger of national water accounts, not a basin-scale risk model and not a well log. Do not confuse it with WRI Aqueduct (the Water stress card) or with a groundwater-level map. IGRAC is a different product and is not this card.',
+    howToRead:
+      'A country mean hides cities that import water and farms that run dry. Transboundary rivers are shared; AQUASTAT records national accounts. Open the AQUASTAT portal for tables and profiles. The preview is an Our World in Data country map of renewable freshwater per person (AQUASTAT via World Bank), not Aqueduct basins.',
+    caveats:
+      'National statistics lag and definitions differ. “Renewable” is not the same as accessible or clean. Do not invent a ranking of thirsty countries from the thumbnail.',
+    licenseNote:
+      'AQUASTAT is FAO’s system; cite FAO. We host a cropped Our World in Data map export (CC BY) of renewable freshwater resources per capita, sourced from AQUASTAT via the World Bank. Open FAO AQUASTAT for the current tables.',
+    imageAlt:
+      'Our World in Data choropleth of renewable freshwater resources per person: pale dryland countries and darker teal water-rich countries',
+  },
+  'exclusive-economic-zones': {
+    title: 'Exclusive economic zones',
+    hook: 'Maritime EEZ polygons — who claims which ocean band. Complements land borders; not a second countries layer.',
+    description:
+      'An exclusive economic zone is generally a band out to 200 nautical miles from a coastal baseline, where a state has sovereign rights over resources in the water and seabed. Marine Regions (Flanders Marine Institute) publishes a global EEZ geodatabase used as the usual public reference. This is maritime jurisdiction, not a second Natural Earth admin-0 countries map. The Marine Regions hub is marineregions.org.',
+    howToRead:
+      'A blue ocean band is a claim or a treaty line, sometimes overlapping. High seas lie beyond. Disputed EEZs are drawn one way so the map can be drawn at all. Open Marine Regions for the current polygons. The preview is a Commons world EEZ schematic, not a dump of their geodatabase.',
+    caveats:
+      'Treaties, median lines, and joint regimes change. A thumbnail is not UNCLOS litigation. Fishing and oil rights are not the same as sovereignty over every use of the water column.',
+    licenseNote:
+      'Marine Regions EEZ data are typically CC BY 4.0 (cite Flanders Marine Institute). The preview is B1mbo’s Commons world EEZ / territorial-waters schematic (CC BY-SA 3.0 CL), based on VLIZ maritime boundaries.',
+    imageAlt:
+      'World outline with a dark-blue maritime band around coasts and islands — exclusive economic zones, not land borders',
+  },
+  'living-languages-count': {
+    title: 'Living languages count',
+    hook: 'Ethnologue’s public insight on how many living languages are counted — a magnitude card next to the Glottolog family map, not a second family atlas.',
+    description:
+      'Ethnologue (SIL International) publishes a public insight on the number of living languages it lists. That tally moves as ISO 639-3 changes and as languages are reclassified living or extinct. This card is about the size of that inventory, not a second map of language families. Glottolog remains the family-classification map on this shelf.',
+    howToRead:
+      'The live number lives on Ethnologue’s insight page. We do not print a headline count here because the page is the source of record and the number changes. The preview is an older Ethnologue linguistic-diversity-index choropleth — darker where many languages share a country — not a family-tree atlas and not a census of peoples.',
+    caveats:
+      '“A language” is a scholarly and political decision. Colonial borders cut across speech communities. Do not treat a shade as ethnicity, loyalty, or territory. Do not clone this card as a second Glottolog.',
+    licenseNote:
+      'Ethnologue’s insight page is their text. The preview is Wikimedia’s Ethnologue 18 linguistic-diversity-index map (cmglee, CC BY-SA 3.0) — a country choropleth of diversity, not Glottolog families and not current-edition Ethnologue artwork.',
+    imageAlt:
+      'Green choropleth of linguistic diversity by country: darker green where many languages share a state, paler where few do — not a language-family atlas',
+  },
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {

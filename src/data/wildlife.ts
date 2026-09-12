@@ -442,6 +442,7 @@ export const speciesMeta: SpeciesMeta[] = [
         'New Zealand Department of Conservation — Kākāpō',
         'https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/',
       ),
+      iucnList('Strigops habroptilus', 'https://www.iucnredlist.org/species/22685245/129751169'),
     ],
   },
   {

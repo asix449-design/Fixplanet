@@ -210,4 +210,60 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa nocnych świateł NASA z 2012: światła miast na ciemnym lądzie i czarnych oceanach, bez granic i etykiet',
   },
+  'global-river-basins': {
+    title: 'Globalne zlewnie rzeczne',
+    hook: 'Zagnieżdżone poligony subzlewni dla całej planety (poziomy Pfafstettera) — hydrograficzna mapa bazowa, nie indeks presji.',
+    description:
+      'HydroBASINS z HydroSHEDS to globalny zestaw hierarchicznie zagnieżdżonych zlewni wyciągnięty z hydrografii wysokościowej HydroSHEDS w 15 sekundach łuku. Dwanaście poziomów Pfafstettera idzie od zlewni kontynentalnych do małych subzlewni (około miliona poligonów na najdrobniejszym podziale). To warstwa „kto dokąd spływa”, nie model popytu i podaży. WRI Aqueduct (karta Presja na wodę) to atlas ryzyka. Hub HydroSHEDS jest na hydrosheds.org.',
+    howToRead:
+      'Kolorowy poligon to jednostka odpływu, nie kraj i nie wynik suszy. Zagnieżdżone poziomy pozwalają przybliżać. Zlewnie endoreiczne nie dochodzą do oceanu. Poligony do pobrania są na HydroBASINS. Podgląd to wybór zlewni świata z Commons, nie shapefile HydroBASINS.',
+    caveats:
+      'Działy wodne z DEM mogą ominąć kras, kanały i ludzkie przerzuty między zlewniami. Antarktyda jest wyłączona. Nie czytajcie miniatury jako praw do wody, presji ani prognozy konfliktu.',
+    licenseNote:
+      'HydroBASINS jest rozprowadzany do użytku naukowego, edukacyjnego i komercyjnego na licencji HydroSHEDS (cytujcie Lehner & Grill 2013). Podgląd to wybór zlewni Hidromundi Babelii (CC BY-SA 4.0), nie figura produktowa HydroSHEDS.',
+    imageAlt:
+      'Mapa świata z wyborem zlewni rzecznych w pastelowych poligonach na jasnoniebieskim oceanie — baza hydrograficzna, nie indeks presji na wodę',
+  },
+  'freshwater-aquastat': {
+    title: 'Zasoby wody słodkiej (AQUASTAT)',
+    hook: 'Krajowe odnawialne zasoby i pobory z globalnego systemu informacji wodnej FAO — statystyka i profile krajów, nie jeden raster presji.',
+    description:
+      'FAO AQUASTAT zbiera odnawialne zasoby wodne, pobory i statystykę nawodnień oraz profile krajów i zlewni. To księga krajowych rachunków wodnych, nie basenowy model ryzyka i nie dziennik studni. Nie mylcie z WRI Aqueduct (karta Presja na wodę) ani z mapą poziomu wód gruntowych. IGRAC to inny produkt, nie ta karta.',
+    howToRead:
+      'Średnia krajowa ukrywa miasta, które wożą wodę, i gospodarstwa, które wysychają. Rzeki transgraniczne są wspólne; AQUASTAT zapisuje rachunki krajowe. Tabele i profile są na portalu AQUASTAT. Podgląd to mapa krajowa Our World in Data odnawialnej wody słodkiej na osobę (AQUASTAT przez Bank Światowy), nie zlewnie Aqueduct.',
+    caveats:
+      'Statystyka krajowa spóźnia się, definicje się różnią. „Odnawialne” to nie to samo co dostępne albo czyste. Nie wymyślajcie rankingu spragnionych krajów z miniatury.',
+    licenseNote:
+      'AQUASTAT to system FAO; cytujcie FAO. Hostujemy przycięty eksport mapy Our World in Data (CC BY) odnawialnych zasobów słodkiej wody na osobę, z AQUASTAT przez Bank Światowy. Aktualne tabele są na FAO AQUASTAT.',
+    imageAlt:
+      'Choropleth Our World in Data odnawialnej wody słodkiej na osobę: blade kraje suche i ciemniejszy turkus krajów zasobnych w wodę',
+  },
+  'exclusive-economic-zones': {
+    title: 'Wyłączne strefy ekonomiczne',
+    hook: 'Morskie poligony WSE — kto zgłasza który pas oceanu. Uzupełnia granice lądowe; nie druga warstwa państw.',
+    description:
+      'Wyłączna strefa ekonomiczna to zwykle pas do 200 mil morskich od linii podstawowej, gdzie państwo ma suwerenne prawa do zasobów w wodzie i na dnie. Marine Regions (Flanders Marine Institute) publikuje globalną bazę WSE — zwykłe publiczne odniesienie. To jurysdykcja morska, nie druga mapa państw Natural Earth admin-0. Hub Marine Regions jest na marineregions.org.',
+    howToRead:
+      'Niebieski pas oceanu to roszczenie albo linia traktatu, czasem z nachodzeniem. Morze pełne leży dalej. Sporne WSE rysuje się jednym sposobem, żeby w ogóle narysować mapę. Aktualne poligony są na Marine Regions. Podgląd to schemat WSE świata z Commons, nie zrzut ich bazy.',
+    caveats:
+      'Traktaty, linie środkowe i reżimy wspólne się zmieniają. Miniatura to nie spór UNCLOS. Prawa do ryb i ropy to nie suwerenność nad każdym użyciem słupa wody.',
+    licenseNote:
+      'Dane WSE Marine Regions zwykle są CC BY 4.0 (cytujcie Flanders Marine Institute). Podgląd to schemat światowych WSE / wód terytorialnych B1mbo na Commons (CC BY-SA 3.0 CL), na podstawie granic morskich VLIZ.',
+    imageAlt:
+      'Kontur świata z ciemnoniebieskim pasem morskim wokół wybrzeży i wysp — wyłączne strefy ekonomiczne, nie granice lądowe',
+  },
+  'living-languages-count': {
+    title: 'Liczba żywych języków',
+    hook: 'Publiczny przegląd Ethnologue o tym, ile żywych języków się liczy — karta skali obok mapy rodzin Glottolog, nie drugi atlas rodzin.',
+    description:
+      'Ethnologue (SIL International) publikuje publiczny przegląd liczby żywych języków na swojej liście. Ta suma się rusza, gdy zmienia się ISO 639-3 i gdy języki są przeklasyfikowywane jako żywe albo wymarłe. Ta karta jest o rozmiarze tego inwentarza, nie o drugiej mapie rodzin językowych. Glottolog zostaje mapą rodzin na tej półce.',
+    howToRead:
+      'Żywa liczba jest na stronie przeglądu Ethnologue. Nie drukujemy tu liczby w nagłówku, bo strona jest źródłem ewidencji, a liczba się zmienia. Podgląd to starszy choropleth indeksu różnorodności językowej Ethnologue — ciemniej tam, gdzie wiele języków dzieli kraj — nie atlas drzewa rodzin i nie spis ludów.',
+    caveats:
+      '„Język” to decyzja naukowa i polityczna. Granice kolonialne tną wspólnoty mowy. Nie czytajcie odcienia jako etnosu, lojalności ani terytorium. Nie klonujcie tej karty jako drugiego Glottologu.',
+    licenseNote:
+      'Tekst przeglądu należy do Ethnologue. Podgląd to mapa indeksu różnorodności językowej Ethnologue 18 z Wikimedia (cmglee, CC BY-SA 3.0) — krajowy choropleth różnorodności, nie rodziny Glottolog i nie grafika bieżącego wydania Ethnologue.',
+    imageAlt:
+      'Zielony choropleth różnorodności językowej według krajów: ciemniejsza zieleń tam, gdzie wiele języków dzieli państwo, bledsza tam, gdzie mało — nie atlas rodzin językowych',
+  },
 };
