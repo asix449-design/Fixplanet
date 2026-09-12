@@ -225,10 +225,13 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     imageAlt: 'World political reconstruction dated 900 CE, used for the 1000 step',
   },
   1100: {
-    title: '1100 CE — nearest map: 1200',
+    title: '1100 CE',
     caption:
-      'No matching-style 1100 world plate. The 1200 OER teaching map is the nearest full-world reconstruction in this series. Seljuk/Song-era lines are not invented here.',
-    imageAlt: 'OER 1200 world map standing in for the 1100 century step',
+      'Exact year 1100, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1200 teaching map and not an engraving. Modern coastlines; schematic / WIP borders.',
+    imageAlt: 'Schematic world political reconstruction for 1100 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200 CE',
@@ -240,10 +243,13 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     license: 'Founder-supplied image',
   },
   1300: {
-    title: '1300 CE — nearest map: 1200',
+    title: '1300 CE',
     caption:
-      'No openly licensed full-world political map for 1300 that we can host. The 1200 OER sheet is the nearest world reconstruction. The Mongol century is therefore a labeled gap, not a drawn empire we invented.',
-    imageAlt: 'OER 1200 world map standing in for the 1300 century step',
+      'Exact year 1300, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1200 teaching map and not an engraving. Modern coastlines; schematic / WIP borders.',
+    imageAlt: 'Schematic world political reconstruction for 1300 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400 CE — nearest map: 1500',
@@ -266,8 +272,11 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700 CE',
     caption:
-      'An illustrative early-colonial world: Mughal high-water mark, Qing consolidation, and Atlantic empires. Schematic, not a field survey of every frontier.',
-    imageAlt: 'Illustrative world political map for 1700 CE',
+      'Reconstructed by Fix Planet from aourednik GPL GeoJSON — not a copy of the Reddit plate. Exact year 1700. Large labels mark Russia, Qing, Safavid, Mughal and other major polities. Modern coastlines; schematic / WIP borders.',
+    imageAlt: 'Schematic world political reconstruction for 1700 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
     title: '1800 CE — nearest map: 1815',
@@ -363,10 +372,13 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     imageAlt: 'Политическая реконструкция мира 900 года н. э. для шага 1000',
   },
   1100: {
-    title: '1100 н. э. — ближайшая карта: 1200',
+    title: '1100 н. э.',
     caption:
-      'Нет мирового листа на 1100 год в том же стиле. Учебная карта OER 1200 года — ближайшая мировая реконструкция в этой серии. Линии эпохи сельджуков и Сун здесь не выдуманы.',
-    imageAlt: 'Карта мира OER 1200 года вместо шага 1100',
+      'Точный 1100 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1200 и не гравюра. Современные берега; схема / границы WIP.',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1100 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200 н. э.',
@@ -378,10 +390,13 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     license: 'Изображение основателя',
   },
   1300: {
-    title: '1300 н. э. — ближайшая карта: 1200',
+    title: '1300 н. э.',
     caption:
-      'Нет открытой мировой политической карты на 1300 год, которую мы можем разместить. Лист OER 1200 — ближайшая мировая реконструкция. Монгольский век помечен как пробел, не как нарисованная нами империя.',
-    imageAlt: 'Карта мира OER 1200 года вместо шага 1300',
+      'Точный 1300 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1200 и не гравюра. Современные берега; схема / границы WIP.',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1300 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400 н. э. — ближайшая карта: 1500',
@@ -404,8 +419,11 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700 н. э.',
     caption:
-      'Иллюстративный раннеколониальный мир: пик Моголов, укрепление Цин, атлантические империи. Схема, не полевая съёмка каждой границы.',
-    imageAlt: 'Иллюстративная политическая карта мира на 1700 год',
+      'Реконструкция Fix Planet по GPL GeoJSON aourednik — не копия reddit-листа. Точный 1700 год. Крупные подписи: Россия, Цин, Сефевиды, Моголы и другие крупные политии. Современные берега; схема / границы WIP.',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1700 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
     title: '1800 н. э. — ближайшая карта: 1815',
@@ -501,10 +519,13 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Rekonstrukcja polityczna świata z 900 n.e. użyta dla kroku 1000',
   },
   1100: {
-    title: '1100 n.e. — najbliższa mapa: 1200',
+    title: '1100 n.e.',
     caption:
-      'Brak arkusza światowego na 1100 w tym stylu. Mapa dydaktyczna OER z 1200 to najbliższa rekonstrukcja świata w tej serii. Linii epoki Seldżuków i Song tu nie wymyślamy.',
-    imageAlt: 'Mapa świata OER z 1200 jako zastępstwo kroku 1100',
+      'Dokładny rok 1100, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1200 i nie rycina. Współczesne wybrzeża; schemat / granice WIP.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1100 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200 n.e.',
@@ -516,10 +537,13 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     license: 'Obraz dostarczony przez założyciela',
   },
   1300: {
-    title: '1300 n.e. — najbliższa mapa: 1200',
+    title: '1300 n.e.',
     caption:
-      'Nie mamy otwartej światowej mapy politycznej na 1300, którą możemy hostować. Arkusz OER 1200 to najbliższa rekonstrukcja świata. Wiek mongolski jest więc oznaczoną luką, nie narysowanym przez nas imperium.',
-    imageAlt: 'Mapa świata OER z 1200 jako zastępstwo kroku 1300',
+      'Dokładny rok 1300, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1200 i nie rycina. Współczesne wybrzeża; schemat / granice WIP.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1300 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400 n.e. — najbliższa mapa: 1500',
@@ -542,8 +566,11 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700 n.e.',
     caption:
-      'Ilustracyjny wczesnokolonialny świat: szczyt Mogołów, konsolidacja Qing, imperia atlantyckie. Schemat, nie pomiar każdej granicy.',
-    imageAlt: 'Ilustracyjna mapa polityczna świata na rok 1700',
+      'Rekonstrukcja Fix Planet z GeoJSON aourednik (GPL) — nie kopia płyty z Reddita. Dokładny rok 1700. Duże podpisy: Rosja, Qing, Safawidzi, Mogołowie i inne wielkie organizmy. Współczesne wybrzeża; schemat / granice WIP.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1700 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
     title: '1800 n.e. — najbliższa mapa: 1815',
@@ -639,10 +666,13 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     imageAlt: 'Pasaules politiskā rekonstrukcija no 900. gada m.ē. 1000. soļa vietā',
   },
   1100: {
-    title: '1100. m.ē. — tuvākā karte: 1200',
+    title: '1100. m.ē.',
     caption:
-      'Nav 1100. gada pasaules lapas tajā pašā stilā. OER 1200. gada mācību karte ir tuvākā pasaules rekonstrukcija šajā sērijā. Seldžuku un Sun laikmeta līnijas šeit nav izdomātas.',
-    imageAlt: 'OER 1200. gada karte 1100. soļa vietā',
+      'Precīzs 1100. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1200. mācību karte un nav gravīra. Mūsdienu krasti; shēma / robežas WIP.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1100. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200. m.ē.',
@@ -654,10 +684,13 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     license: 'Dibinātāja piegādāts attēls',
   },
   1300: {
-    title: '1300. m.ē. — tuvākā karte: 1200',
+    title: '1300. m.ē.',
     caption:
-      'Nav atklāti licencētas 1300. gada pasaules politiskās kartes, ko varam izvietot. OER 1200. lapa ir tuvākā pasaules rekonstrukcija. Mongoļu gadsimts tātad ir marķēts iztrūkums, ne mūsu zīmēta impērija.',
-    imageAlt: 'OER 1200. gada karte 1300. soļa vietā',
+      'Precīzs 1300. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1200. mācību karte un nav gravīra. Mūsdienu krasti; shēma / robežas WIP.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1300. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400. m.ē. — tuvākā karte: 1500',
@@ -680,8 +713,11 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700. m.ē.',
     caption:
-      'Ilustratīva agrīnā koloniālā pasaule: Mogolu augstākais punkts, Cjinu nostiprināšanās, Atlantijas impērijas. Shēma, ne katras robežas uzmērījums.',
-    imageAlt: 'Ilustratīva pasaules politiskā karte 1700. gadam',
+      'Fix Planet rekonstrukcija no aourednik GPL GeoJSON — ne Reddit plates kopija. Precīzs 1700. gads. Lieli paraksti: Krievija, Cjinu, Sefevīdi, Mogoli un citas lielās politijas. Mūsdienu krasti; shēma / robežas WIP.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1700. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
     title: '1800. m.ē. — tuvākā karte: 1815',

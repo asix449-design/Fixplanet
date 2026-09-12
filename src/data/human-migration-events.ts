@@ -131,7 +131,7 @@ export const humanEventMeta: HumanEventMeta[] = [
     sourceUrl: 'https://www.pnas.org/doi/10.1073/pnas.1503793112',
     license: 'Site schematic on NASA Blue Marble (public domain)',
     licenseUrl: 'https://earthobservatory.nasa.gov/images/7373/december-blue-marble',
-    vintage: '~4000–1000 BCE, continuing into the 1st millennium CE',
+    vintage: 'Split ~6000–4000 years ago; southward waves ~3500–3000 years ago into the 1st millennium CE',
   },
   {
     id: 'austronesian',
