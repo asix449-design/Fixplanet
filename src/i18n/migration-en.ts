@@ -186,13 +186,13 @@ export const page: MigrationPage = {
         },
         bantu: {
           label: 'Bantu',
-          title: 'Bantu expansion — languages, farming, and a long clock',
-          when: 'From about 4000–1000 BCE out of the Nigeria–Cameroon area, continuing through the first millennium CE into eastern and southern Africa.',
-          where: 'West-central Africa, then east and south through rainforest and savanna. Today’s Bantu-speaking zone is the outcome, not the route map.',
-          why: 'Farming, iron, and population growth in a changing climate. Grollemund et al. 2015 argue a path through the rainforest rather than only around it.',
+          title: 'Bantu expansion — languages, farming, and long waves',
+          when: 'Split from related Bantoid languages roughly 6000–4000 years ago; southward expansion gathers pace about 3500–3000 years ago and continues in waves into the 1st millennium CE.',
+          where: 'Homeland on the Nigeria–Cameroon border (Grassfields), then much of Central, Eastern and Southern Africa. Today’s Bantu-language zone is an outcome, not a GPS track.',
+          why: 'Mixed economies (farming, hunting, fishing, foraging) and pottery first; iron later. Savanna–forest climate windows and river/coast corridors. Not a single invasion.',
           uncertainty:
-            'A millennia-long series of movements, not one march. No openly licensed dated-route plate is hosted; the arrows are a teaching schematic after named papers.',
-          caption: 'Teaching arrows in Africa. Map forthcoming for a sourced route plate — this is not a language choropleth of all people.',
+            'Early-split vs late-split models long competed; phylogeography and genetics mostly support a path through the equatorial rainforest. Few high-resolution dated route maps — this plate is schematic.',
+          caption: 'Teaching schematic, not a census or a single invasion line.',
           imageAlt: 'Schematic arrows of the Bantu expansion across Africa on NASA Blue Marble',
         },
         austronesian: {

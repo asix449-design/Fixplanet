@@ -278,8 +278,8 @@ def main() -> None:
     # Babelia 1648 (nearest sheet for 1600) — grey land / white sea.
     process_file(CAND / "y1648.png", BORDERS / "y1648.png", "white_ocean")
 
-    # Exact-year 1700 Urnanabha — white land / pale blue sea.
-    process_file(originals / "y1700.png", BORDERS / "y1700.png", "white_land")
+    # 1100 / 1300 / 1700 are aourednik GeoJSON renders (see render-aourednik-borders.py).
+    # Do not overwrite those plates from Commons thumbs.
 
     # 1815 Congress of Vienna — grey land / light blue sea.
     process_file(originals / "y1815.jpg", BORDERS / "y1815.jpg", "grey_land_blue_sea")

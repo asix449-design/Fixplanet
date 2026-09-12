@@ -250,13 +250,22 @@
     "note": "History of borders, year 900. Also the labeled nearest sheet for 1000."
   },
   {
-    "file": "borders/y1200-oer.jpg",
-    "title": "Political map of the world in 1200 (OER sheet)",
-    "source": "World History Project / OER Project",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1200.jpg",
-    "license": "CC BY 4.0",
-    "kind": "hosted-original",
-    "note": "History of borders, labeled nearest sheet for 1100 and 1300. Recolored to the atlas sea/land palette; political fills unchanged."
+    "file": "borders/y1100.png",
+    "title": "World in 1100 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1100.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1100.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1100. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1200 sheet, not an engraving, not © Fix Planet geometry."
+  },
+  {
+    "file": "borders/y1300.png",
+    "title": "World in 1300 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1300.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1300.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1300. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1200 sheet, not an engraving, not © Fix Planet geometry."
   },
   {
     "file": "borders/y1200.jpg",
@@ -287,12 +296,12 @@
   },
   {
     "file": "borders/y1700.png",
-    "title": "1700 CE world map",
-    "source": "Wikimedia Commons, Urnanabha",
-    "url": "https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year 1700. Recolored white land to tan; political fills unchanged."
+    "title": "World in 1700 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1700.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1700.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1700. Reconstructed by Fix Planet from aourednik GPL GeoJSON (fills + large Russia / Qing / Safavid / Mughal labels). Not a copy of the Reddit MapPorn plate. Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not © Fix Planet geometry."
   },
   {
     "file": "borders/y1815.jpg",
