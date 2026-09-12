@@ -43,6 +43,8 @@ const tabLeads = {
   surviving: ui.wildlifePage.survivingLead,
   endangered: ui.wildlifePage.endangeredLead,
   extinct: ui.wildlifePage.extinctLead,
+  insects: ui.wildlifePage.insectsLead,
+  domesticates: ui.wildlifePage.domesticatesLead,
 } as const;
 
 const pageTitle = isHumanShelf
@@ -89,11 +91,10 @@ const backdropHeight = hub ? wildlifeHubBackdrop.height : 1024;
               const path = wildlifeHubTilePath(item);
               return (
                 <HubTile
-                  href={path ? localizePath(path, locale) : undefined}
+                  href={localizePath(path, locale)}
                   icon={item.icon}
                   title={ui.wildlifePage[item.key]}
                   text={ui.wildlifePage.tiles[item.key]}
-                  badge={path ? undefined : ui.comingSoon.badge}
                 />
               );
             })}
@@ -106,7 +107,17 @@ const backdropHeight = hub ? wildlifeHubBackdrop.height : 1024;
         backLabel={ui.wildlifePage.back}
         title={ui.wildlifePage[activeStatus]}
         lede={tabLeads[activeStatus]}
-      />
+      >
+        {
+          activeStatus === 'domesticates' ? (
+            <p class="wildlife-sources shelf-page-source">
+              <a href="https://www.fao.org/dad-is/en/" rel="noopener noreferrer">
+                {ui.wildlifePage.dadisSource}
+              </a>
+            </p>
+          ) : null
+        }
+      </ShelfHeader>
     ) : isHumanShelf ? (
       <div class="shelf-page">
         <div class="wrap">

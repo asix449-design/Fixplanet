@@ -11,8 +11,9 @@ const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const { species } = Astro.props;
 const href = localizePath(`/wildlife/${species.slug}`, locale);
-const iucnLabel = ui.wildlifePage.iucn[species.iucn];
-const emphasizeIucn = species.iucn === 'EW' || species.functionallyExtinct === true;
+const iucnLabel = species.iucn ? ui.wildlifePage.iucn[species.iucn] : undefined;
+const emphasizeIucn =
+  species.iucn === 'EW' || species.functionallyExtinct === true;
 const primary = wildlifePrimarySource(species.primarySources);
 ---
 

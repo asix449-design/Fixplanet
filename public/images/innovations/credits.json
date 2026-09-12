@@ -281,5 +281,13 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_Centre_for_Medium-Range_Weather_Forecasts.jpg",
     "artist": "James Hutchinson",
     "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "esa-biomass",
+    "file": "esa-biomass.jpg",
+    "commonsTitle": "ESA Biomass Satellite seeing wood through trees.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESA_Biomass_Satellite_seeing_wood_through_trees.png",
+    "artist": "ESA/ATG Medialab",
+    "license": "CC BY-SA 3.0 igo"
   }
 ]

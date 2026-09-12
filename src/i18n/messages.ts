@@ -174,6 +174,11 @@ const en = {
       'Threatened now, mainly because of people: habitat loss, hunting, bycatch, and a climate we have changed.',
     extinctLead:
       'Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.',
+    insectsLead:
+      'Insects are most of animal life. This shelf is six named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, one bumble bee, a carrion beetle, and a fen dragonfly — not a second bee or a third butterfly.',
+    domesticatesLead:
+      'Animals people keep — livestock, companions, and working species. These cards are the kept animals, not their wild relatives (wild boar, aurochs, and gray wolf live on other shelves). FAO’s Domestic Animal Diversity Information System (DAD-IS) tracks breeds worldwide.',
+    dadisSource: 'FAO DAD-IS — domestic animal diversity',
     mapTitle: 'Where we went, and when',
     mapAria: 'World map of Homo sapiens dispersal with dated arrival steps',
     mapLead:
@@ -226,6 +231,8 @@ const en = {
       surviving: 'Surviving',
       endangered: 'Endangered',
       extinct: 'Extinct',
+      insects: 'Insects',
+      domesticates: 'Domesticates',
     },
   },
   about: {
@@ -487,6 +494,11 @@ const ru: typeof en = {
       'Под угрозой сейчас, главным образом из-за людей: потеря мест, охота, прилов и климат, который мы изменили.',
     extinctLead:
       'Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
+    insectsLead:
+      'Насекомые — большая часть животной жизни. На этой полке шесть названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, одна шмель, жук-падальщик и стрекоза известковых болот — не вторая пчела и не третья бабочка.',
+    domesticatesLead:
+      'Животные, которых держат люди: скот, компаньоны и рабочие виды. Эти карточки — о содержащихся животных, не об их диких родственниках (кабан, тур и серый волк живут на других полках). Информационная система ФАО DAD-IS ведёт учёт пород по всему миру.',
+    dadisSource: 'ФАО DAD-IS — разнообразие домашних животных',
     mapTitle: 'Куда мы ушли и когда',
     mapAria: 'Карта расселения Homo sapiens с датированными шагами',
     mapLead:
@@ -539,6 +551,8 @@ const ru: typeof en = {
       surviving: 'Выживший',
       endangered: 'Под угрозой',
       extinct: 'Вымерший',
+      insects: 'Насекомые',
+      domesticates: 'Доместикаты',
     },
   },
   about: {
@@ -803,6 +817,11 @@ const pl: typeof en = {
       'Zagrożone teraz, głównie przez ludzi: utrata siedlisk, polowania, przyłów i klimat, który zmieniliśmy.',
     extinctLead:
       'Zniknęły. Większość kart ma jasną przyczynę ludzką. Przy kilku przedstawicielach megafauny późnego plejstocenu klimat jest drugim, uczciwie nazwanym czynnikiem.',
+    insectsLead:
+      'Owady to większość życia zwierzęcego. Ta półka to sześć nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, jeden trzmiel, grabarz i ważka wapiennych mokradeł — nie druga pszczoła i nie trzeci motyl.',
+    domesticatesLead:
+      'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Te karty dotyczą zwierząt trzymanych, nie ich dzikich krewnych (dzik, tur i wilk szary są na innych półkach). System FAO DAD-IS śledzi rasy na świecie.',
+    dadisSource: 'FAO DAD-IS — różnorodność zwierząt hodowlanych',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi krokami',
     mapLead:
@@ -855,6 +874,8 @@ const pl: typeof en = {
       surviving: 'Przetrwały',
       endangered: 'Zagrożony',
       extinct: 'Wymarły',
+      insects: 'Owady',
+      domesticates: 'Udomowione',
     },
   },
   about: {
@@ -1119,6 +1140,11 @@ const lv: typeof en = {
       'Apdraudēti tagad, galvenokārt cilvēku dēļ: dzīvotņu zudums, medības, piezveja un klimats, ko esam mainījuši.',
     extinctLead:
       'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas. Dažiem vēlā pleistocēna megafaunas pārstāvjiem klimats ir otrs, godīgi nosaukts cēlonis.',
+    insectsLead:
+      'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir seši nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, viena kameņu suga, maitas vabole un kaļķaino avoksnāju spāre — ne otra bite un ne trešais tauriņš.',
+    domesticatesLead:
+      'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Šīs kartītes ir par turētajiem dzīvniekiem, ne par savvaļas radiniekiem (mežacūka, tauts un pelēkais vilks ir citos plauktos). FAO DAD-IS uzskaita šķirnes pasaulē.',
+    dadisSource: 'FAO DAD-IS — mājlopu daudzveidība',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem soļiem',
     mapLead:
@@ -1171,6 +1197,8 @@ const lv: typeof en = {
       surviving: 'Izdzīvojis',
       endangered: 'Apdraudēts',
       extinct: 'Izmiris',
+      insects: 'Kukaiņi',
+      domesticates: 'Pieradinātie',
     },
   },
   about: {

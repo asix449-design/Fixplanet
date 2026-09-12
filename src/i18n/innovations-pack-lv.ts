@@ -219,4 +219,20 @@ export const packLv: Record<string, InnovationCopy> = {
     sourcesNote:
       'Dibinātāja saite: VAST Data eseja par AIFS 1.1. Prasmes skaitļi pēc Moldovan et al., GMD, 2026. ECMWF 1.1 nomainīja ar v2 2026. gada maijā.',
   },
+  'esa-biomass': {
+    title: 'ESA Biomass',
+    hook: 'Pirmais P joslas radars kosmosā, būvēts meža biomasas un oglekļa kokos kartei — ne laikapstākļu modelis un ne emisiju inventārs.',
+    imageAlt:
+      'Mākslinieka skats uz ESA Biomass satelītu virs meža vainaga — P joslas misija, kas caur kokiem skatās uz koksnes masu',
+    what: 'Biomass ir ESA Earth Explorer satelīts. Tas nes pirmo kosmisko P joslas sintētiskās apertūras radaru, kas būvēts, lai mērītu meža biomasu un oglekli koksnē. Tas nav laikapstākļu prognozes modelis un nav siltumnīcas gāzu inventārs. 12 metru antena lido ap 666 km. ESA to palaida 2025. gada 29. aprīlī no Kuru, Franču Gviānā, ar Vega-C.',
+    problem:
+      'Cik oglekļa stāv tropu un citos mežos, no zemes joprojām slikti kartēts. Optiskie satelīti redz vainaga virsotni. Garāka radara vilnis var ieskatīties koku tilpumā — ja šo joslu var pacelt kosmosā.',
+    how: 'P joslas radars (viļņa garums ap 70 cm) iet cauri vainagam un atgriež signālu, kas saistīts ar koksnes biomasu. Produkts ir meža struktūras un oglekļa karte, ne emisiju strūkla un ne lietus prognoze. Zemes lauciņi joprojām kalibrē atjaunošanu.',
+    players:
+      'ESA FutureEO / Earth Explorer. Datus atvēra 2026. gada janvārī pēc ieviešanas. Kaimiņu kartītes, kas mēra atmosfēru vai emisijas (Climate TRACE, laikapstākļu MI), ir cits darbs.',
+    risks:
+      'P josla ir ierobežots radio resurs; traucējumi un kalibrācija ir parastas robežas. Biomasas karte nav oglekļa kredīts un nav tiesas inventārs. Tropu mākoņi traucē mazāk nekā optikai, bet atjaunošanai joprojām vajag lauka lauciņus.',
+    sourcesNote:
+      'ESA Biomass misijas lapa (FutureEO): pirmais P joslas SAR kosmosā; starts 2025. gada 29. aprīlī, Kuru / Vega-C. Ne laikapstākļi un ne emisiju inventārs.',
+  },
 };

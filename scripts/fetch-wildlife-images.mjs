@@ -320,6 +320,34 @@ const candidates = {
     'Melomys rubicola 3.jpg',
     'Melomys rubicola 1.jpg',
   ],
+  'lord-howe-island-stick-insect': [
+    'Lord Howe Island stick insect Dryococelus australis 10June2011 PalmNursery.jpg',
+    'Dryococelus australis, photo by Miroslav Bobek, Zoo Praha.jpg',
+    'Dryococelus australis 02 Pengo.jpg',
+  ],
+  'queen-alexandras-birdwing': [
+    '010361534 Ornithoptera alexandrae dorsal male.jpg',
+    'Ornithoptera alexandrae.jpg',
+  ],
+  monarch: [
+    'Monarch butterfly on flower.jpg',
+    'Danaus plexippus MHNT.jpg',
+    'Danaus plexippus.jpg',
+  ],
+  'franklins-bumble-bee': ['Bombus franklini.jpg'],
+  'american-burying-beetle': ['American Burying Beetle.jpg'],
+  'hines-emerald': ['Somatochlora hineana.jpg'],
+  cattle: ['Hereford cattle.jpg', 'Holstein dairy cows.jpg'],
+  chicken: ['Gallus gallus domesticus.jpg', 'Domestic chicken.jpg'],
+  sheep: ['Ovis aries.jpg', 'Domestic sheep.jpg'],
+  pig: ['Cochon domestique (Sus scrofa domesticus) (3).jpg'],
+  'water-buffalo': [
+    'Water buffalo bull, near Mehsana, Gujarat, India, 4.jpg',
+    'Water buffalo.jpg',
+  ],
+  horse: ['Camargue horse.jpg', 'Andalusian horse.jpg'],
+  dog: ['Labrador Retriever.jpg', 'Canis familiaris.jpg'],
+  camelids: ['Camelus dromedarius.jpg', 'Dromedary camel.jpg'],
 };
 
 async function commonsInfo(title) {

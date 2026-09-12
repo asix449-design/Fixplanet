@@ -7,6 +7,8 @@ export const wildlifeStatusKeys = [
   'surviving',
   'endangered',
   'extinct',
+  'insects',
+  'domesticates',
 ] as const;
 
 export type WildlifeStatus = (typeof wildlifeStatusKeys)[number];
@@ -18,24 +20,16 @@ export const wildlifeHubKeys = [
 
 export type WildlifeHubKey = (typeof wildlifeHubKeys)[number];
 
-/** Hub tiles with a Coming soon badge and no catalog shelf yet. */
-export const wildlifeSoonKeys = ['insects', 'domesticates'] as const;
-
-export type WildlifeSoonKey = (typeof wildlifeSoonKeys)[number];
-
-export type WildlifeHubTileKey = WildlifeHubKey | WildlifeSoonKey;
-
 export const wildlifeHub = [
   { key: 'surviving', icon: 'paw' },
   { key: 'endangered', icon: 'alert' },
   { key: 'extinct', icon: 'gone' },
   { key: 'homo-sapiens', icon: 'human' },
-  { key: 'insects', icon: 'insect', soon: true },
-  { key: 'domesticates', icon: 'horse', soon: true },
+  { key: 'insects', icon: 'insect' },
+  { key: 'domesticates', icon: 'horse' },
 ] as const satisfies ReadonlyArray<{
-  key: WildlifeHubTileKey;
+  key: WildlifeHubKey;
   icon: HubIconName;
-  soon?: true;
 }>;
 
 export const iucnKeys = [
@@ -62,7 +56,8 @@ export type SpeciesMeta = {
   slug: string;
   scientificName: string;
   status: WildlifeStatus;
-  iucn: IucnKey;
+  /** Omit when the pack has no global IUCN assessment (ESA-listed insects; livestock). */
+  iucn?: IucnKey;
   /** Extra card label when IUCN CR still overstates a wild breeding population. */
   functionallyExtinct?: boolean;
   image: ImageCredit;
@@ -106,9 +101,9 @@ function iucnList(scientificName: string, url: string): PrimarySource {
 
 /**
  * Curated first list. To add a species:
- * 1. Add a row here (English slug, Latin name, status shelf, IUCN code, image credit,
+ * 1. Add a row here (English slug, Latin name, status shelf, optional IUCN code, image credit,
  *    optional clickable primarySources).
- * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts`.
+ * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts` or `wildlife-pack*.ts`.
  * 3. Drop a photo in `public/images/wildlife/{file}` (Wikimedia/PD preferred).
  * 4. `npm run build`.
  * Homo sapiens copy is not a species card — it lives on the `/wildlife/homo-sapiens`
@@ -411,6 +406,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Pseudoryx_nghetinhensis.PNG',
     ),
+    primarySources: [
+      iucnList('Pseudoryx nghetinhensis', 'https://www.iucnredlist.org/species/18597/166485696'),
+      cite(
+        'IUCN SSC Saola Working Group',
+        'https://iucn.org/our-union/commissions/group/iucn-ssc-saola-working-group',
+      ),
+    ],
   },
   {
     slug: 'yangtze-giant-softshell-turtle',
@@ -913,6 +915,256 @@ export const speciesMeta: SpeciesMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg',
     ),
   },
+  {
+    slug: 'lord-howe-island-stick-insect',
+    scientificName: 'Dryococelus australis',
+    status: 'insects',
+    iucn: 'CR',
+    image: commons(
+      'lord-howe-island-stick-insect.jpg',
+      'Granitethighs / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Lord_Howe_Island_stick_insect_Dryococelus_australis_10June2011_PalmNursery.jpg',
+    ),
+    primarySources: [
+      iucnList('Dryococelus australis', 'https://www.iucnredlist.org/species/6852/21426226'),
+    ],
+  },
+  {
+    slug: 'queen-alexandras-birdwing',
+    scientificName: 'Ornithoptera alexandrae',
+    status: 'insects',
+    iucn: 'EN',
+    image: commons(
+      'queen-alexandras-birdwing.jpg',
+      'Peter Wing / Natural History Museum, London (Wikimedia Commons)',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:010361534_Ornithoptera_alexandrae_dorsal_male.jpg',
+    ),
+    primarySources: [
+      iucnList('Ornithoptera alexandrae', 'https://www.iucnredlist.org/species/15513/88565197'),
+    ],
+  },
+  {
+    slug: 'monarch',
+    scientificName: 'Danaus plexippus plexippus',
+    status: 'insects',
+    iucn: 'VU',
+    image: commons(
+      'monarch.jpg',
+      'jcantroot / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Monarch_butterfly_on_flower.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Danaus plexippus plexippus',
+        'https://www.iucnredlist.org/species/194052138/246096271',
+      ),
+      iucnList('Danaus plexippus', 'https://www.iucnredlist.org/species/159971/219149911'),
+      cite(
+        'U.S. Fish and Wildlife Service — monarch',
+        'https://www.fws.gov/species/monarch-danaus-plexippus',
+      ),
+    ],
+  },
+  {
+    slug: 'franklins-bumble-bee',
+    scientificName: 'Bombus franklini',
+    status: 'insects',
+    iucn: 'CR',
+    image: commons(
+      'franklins-bumble-bee.jpg',
+      'James P. Strange, USDA-ARS Pollinating Insect Research Unit (Wikimedia Commons)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Bombus_franklini.jpg',
+    ),
+    primarySources: [
+      iucnList('Bombus franklini', 'https://www.iucnredlist.org/species/135295/4070259'),
+    ],
+  },
+  {
+    slug: 'american-burying-beetle',
+    scientificName: 'Nicrophorus americanus',
+    status: 'insects',
+    image: commons(
+      'american-burying-beetle.jpg',
+      'USFWS Mountain-Prairie / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:American_Burying_Beetle.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — American burying beetle',
+        'https://www.fws.gov/species/american-burying-beetle-nicrophorus-americanus',
+      ),
+    ],
+  },
+  {
+    slug: 'hines-emerald',
+    scientificName: 'Somatochlora hineana',
+    status: 'insects',
+    image: commons(
+      'hines-emerald.jpg',
+      'Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Somatochlora_hineana.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Hine’s emerald',
+        'https://www.fws.gov/species/hines-emerald-somatochlora-hineana',
+      ),
+    ],
+  },
+  {
+    slug: 'cattle',
+    scientificName: 'Bos taurus / Bos indicus',
+    status: 'domesticates',
+    image: commons(
+      'cattle.jpg',
+      'Keith Weller / USDA (Wikimedia Commons)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Hereford_cattle.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — cattle',
+        'https://www.fao.org/livestock-systems/global-distributions/cattle/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'chicken',
+    scientificName: 'Gallus gallus domesticus',
+    status: 'domesticates',
+    image: commons(
+      'chicken.jpg',
+      'Susulyka / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Gallus_gallus_domesticus.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — chickens',
+        'https://www.fao.org/livestock-systems/global-distributions/chickens/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'sheep',
+    scientificName: 'Ovis aries',
+    status: 'domesticates',
+    image: commons(
+      'sheep.jpg',
+      'T.Voekler / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Ovis_aries.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — sheep',
+        'https://www.fao.org/livestock-systems/global-distributions/sheep/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'pig',
+    scientificName: 'Sus domesticus',
+    status: 'domesticates',
+    image: commons(
+      'pig.jpg',
+      'Gzen92 / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(3).jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — pigs',
+        'https://www.fao.org/livestock-systems/global-distributions/pigs/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'water-buffalo',
+    scientificName: 'Bubalus bubalis',
+    status: 'domesticates',
+    image: commons(
+      'water-buffalo.jpg',
+      'Yann Forget / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Water_buffalo_bull,_near_Mehsana,_Gujarat,_India,_4.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO — buffalo milk',
+        'https://www.fao.org/dairy-production-products/dairy/buffaloes/en',
+      ),
+      cite(
+        'FAO Livestock Systems — buffaloes',
+        'https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'horse',
+    scientificName: 'Equus ferus caballus',
+    status: 'domesticates',
+    image: commons(
+      'horse.jpg',
+      'TwoWings / Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Camargue_horse.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — horses',
+        'https://www.fao.org/livestock-systems/global-distributions/horses/en/',
+      ),
+      cite(
+        'Librado et al., Nature, 2021 — Western Eurasian steppe horses',
+        'https://doi.org/10.1038/s41586-021-04018-9',
+      ),
+    ],
+  },
+  {
+    slug: 'dog',
+    scientificName: 'Canis familiaris',
+    status: 'domesticates',
+    image: commons(
+      'dog.jpg',
+      'Marco Ponepal / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Labrador_Retriever.jpg',
+    ),
+    primarySources: [
+      cite(
+        'Bergström et al., Science, 2020 — origins of prehistoric dogs (PMC)',
+        'https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/',
+      ),
+      cite(
+        'Bergström et al., Science, 2020 (doi)',
+        'https://doi.org/10.1126/science.aba9572',
+      ),
+    ],
+  },
+  {
+    slug: 'camelids',
+    scientificName: 'Camelus / Lama / Vicugna',
+    status: 'domesticates',
+    image: commons(
+      'camelids.jpg',
+      'Hans Hillewaert / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Camelus_dromedarius.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO — International Year of Camelids 2024',
+        'https://www.fao.org/camelids-2024/en',
+      ),
+    ],
+  },
 ];
 
 export function isWildlifeStatus(value: string | undefined): value is WildlifeStatus {
@@ -921,10 +1173,6 @@ export function isWildlifeStatus(value: string | undefined): value is WildlifeSt
 
 export function isWildlifeHubKey(value: string | undefined): value is WildlifeHubKey {
   return !!value && (wildlifeHubKeys as readonly string[]).includes(value);
-}
-
-export function isWildlifeSoonKey(value: string | undefined): value is WildlifeSoonKey {
-  return !!value && (wildlifeSoonKeys as readonly string[]).includes(value);
 }
 
 export function getSpeciesMeta(slug: string): SpeciesMeta | undefined {
@@ -951,12 +1199,8 @@ export function wildlifeHubPath(key: WildlifeHubKey): string {
   return `/wildlife/${key}`;
 }
 
-/** Live shelf path, or undefined for Coming soon hub tiles with no catalog yet. */
-export function wildlifeHubTilePath(
-  item: (typeof wildlifeHub)[number],
-): string | undefined {
-  if ('soon' in item && item.soon) return undefined;
-  return isWildlifeHubKey(item.key) ? wildlifeHubPath(item.key) : undefined;
+export function wildlifeHubTilePath(item: (typeof wildlifeHub)[number]): string {
+  return wildlifeHubPath(item.key);
 }
 
 export function wildlifeStatusPath(status: WildlifeStatus): string {
