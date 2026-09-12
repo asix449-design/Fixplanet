@@ -239,7 +239,7 @@ const { label, credit } = Astro.props;
     const tick = () => {
       if (running && visible) {
         if (!dragging) {
-          earth.rotation.y += 0.0014 + velY;
+          earth.rotation.y += -0.0014 + velY;
           velY *= 0.94;
         }
         renderer.render(scene, camera);
