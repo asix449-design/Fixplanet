@@ -30,7 +30,7 @@ export const enToday: TodayShelfCopy = {
   stockNotFlow: 'Stock, not this year’s arrivals',
   arrowLegend: 'Schematic corridor — not a volume',
   mapCredit:
-    'Land outlines: Wikimedia Commons BlankMap-World (public domain), restyled lime on black. Borders are a cartographic compromise, not a legal ruling. Not a population choropleth.',
+    'Land outlines: Wikimedia Commons BlankMap-World (public domain), restyled lime on black. Borders are a cartographic compromise, not a legal ruling. Not a population choropleth (a colour-by-count map).',
   emptyPanel: 'Choose a tablet. The map does not rank Africa → Europe as the world’s main movement.',
   layersLabel: 'Map layers',
   layerCamps: 'Refugee camps',
@@ -49,14 +49,14 @@ export const enToday: TodayShelfCopy = {
   detectionsLead:
     'Detections of irregular crossings at the European Union’s external borders. The same person can be counted more than once. This is not a count of people, and it is not a global “breakthrough” map.',
   detectionsHonesty:
-    'Frontex preliminary figures. 2024: just over 239,000 detections (−38% vs 2023). 2025: almost 178,000 (−26%), lowest since 2021. Route markers use a sourced year; where Frontex gave only a direction of change, no invented headcount is shown.',
+    'Frontex preliminary figures. 2024: just over 239,000 detections (−38% vs 2023). 2025: almost 178,000 (−26%), lowest since 2021. Route markers use a sourced year; where Frontex gave only a direction of change, no reliable headcount is shown.',
   detectionsMetric: 'Detections, not unique people',
   detectionsNoGlobal:
     'No comparable global series of border “breakthroughs” exists. Africa → Europe is not drawn as the world’s main story.',
   detectionsChange: 'vs previous year',
   detectionsOpen: 'Open EU route note',
   detectionsNationalities: 'Most frequently detected nationalities in 2025: Bangladeshi, Egyptian, Afghan — not a statement about who “arrives most” worldwide.',
-  noHeadcount: 'No invented headcount',
+  noHeadcount: 'No reliable headcount',
   regions: {
     africa: {
       name: 'Africa',
@@ -146,12 +146,12 @@ export const enToday: TodayShelfCopy = {
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Bidibidi settlement, Yumbe District. South Sudanese displacement is the main caseload. A settlement, not a walled camp.',
+      note: 'Bidibidi settlement, Yumbe District. Most residents were displaced from South Sudan. A settlement, not a walled camp.',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordan',
-      note: 'Zaatari camp. Syrian displacement is the main caseload. UNHCR operational figure, 31 August 2026.',
+      note: 'Zaatari camp. Most residents were displaced from Syria. UNHCR operational figure, 31 August 2026.',
     },
   },
   routeCopy: {
@@ -169,7 +169,7 @@ export const enToday: TodayShelfCopy = {
     },
     'western-mediterranean': {
       name: 'Western Mediterranean',
-      note: 'Frontex reports an increase in 2025, mainly from Algeria. No invented 2025 headcount is shown on the marker.',
+      note: 'Frontex reports an increase in 2025, mainly from Algeria. No reliable 2025 headcount is shown on the marker.',
     },
     'western-balkans': {
       name: 'Western Balkans',

@@ -79,12 +79,14 @@ const camps = todayDataset.camps.sites.map((site) => {
     country: copy?.country ?? site.country,
     note: copy?.note ?? site.note,
     figure: formatCampFigure(site.population, site.populationMax, site.approx),
-    asOfLabel: new Date(`${site.asOf}T00:00:00Z`).toLocaleDateString(numberLocale, {
-      day: 'numeric',
-      month: 'short',
-      year: 'numeric',
-      timeZone: 'UTC',
-    }),
+    asOfLabel: new Date(`${site.asOf}T00:00:00Z`)
+      .toLocaleDateString(numberLocale, {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+        timeZone: 'UTC',
+      })
+      .replace(/\.+$/u, ''),
   };
 });
 
@@ -92,6 +94,7 @@ const detectionYears = todayDataset.borderDetections.years.map((row) => ({
   ...row,
   figure: `${row.approx ? `${ui.approx} ` : ''}${formatPeople(row.total)}`,
   changeLabel: formatChange(row.changeVsPrev),
+  note: ui.yearCopy?.[String(row.year)]?.note ?? row.note,
 }));
 
 const detectionRoutes = todayDataset.borderDetections.routes.map((route) => {
@@ -131,18 +134,21 @@ const panelPayload = Object.fromEntries(
           figure: formatStockCount(row.value, numberLocale),
           approx: row.approx,
         })),
-        corridors: corridorsForRegion(id).map((row) => ({
-          id: row.id,
-          from: row.from,
-          to: row.to,
-          fromRegion: row.fromRegion,
-          toRegion: row.toRegion,
-          kind: row.kind,
-          stock: row.stock,
-          figure: row.stock == null ? '' : formatStockCount(row.stock, numberLocale),
-          approx: row.approx,
-          note: row.note,
-        })),
+        corridors: corridorsForRegion(id).map((row) => {
+          const loc = ui.corridorCopy?.[row.id];
+          return {
+            id: row.id,
+            from: loc?.from ?? row.from,
+            to: loc?.to ?? row.to,
+            fromRegion: row.fromRegion,
+            toRegion: row.toRegion,
+            kind: row.kind,
+            stock: row.stock,
+            figure: row.stock == null ? '' : formatStockCount(row.stock, numberLocale),
+            approx: row.approx,
+            note: loc?.note ?? row.note,
+          };
+        }),
       },
     ];
   }),

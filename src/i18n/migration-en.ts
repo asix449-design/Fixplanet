@@ -9,8 +9,8 @@ export const page: MigrationPage = {
   eyebrow: 'Encyclopedia',
   title: 'Migration',
   hubLead: [
-    'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and a warmer climate on top of those older clocks.',
-    'Today sits on this page: the current-day international map — net migration and migrant stock, labeled as such. Below it, two shelves. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
+    'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and, on top of those older natural rhythms, a warmer climate.',
+    'This page opens with today’s international map — net migration and migrant stock, labeled as such. Below it, two sections. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -403,7 +403,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
   },
   'arctic-migratory-birds': {
     title: 'Arctic migratory birds',
-    hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a food pulse, and the winter is somewhere else.',
+    hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a short feast of food, and winter is spent elsewhere.',
     imageAlt: 'Arctic terns flying over a cold northern coast — a stand-in for high-latitude bird migration, not a named colony',
     what: 'This is a class card, not a second Arctic tern encyclopedia and not a third “routes after ice” page. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again. Thorup et al. (PNAS, 2021) hindcast the red-backed shrike’s Afro-Palearctic loop for 120,000 years: seasonal migration likely persisted through the glacial, often inside Africa; suitable European summer habitat expanded again after the LGM. That is a modeled class example, not a second bird-routes encyclopedia.',
     route:
@@ -532,7 +532,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
   },
   wildebeest: {
     title: 'Blue wildebeest',
-    hook: 'Rain writes the map: more than a million animals still follow new grass around the Serengeti–Mara.',
+    hook: 'Rain draws the map: more than a million animals still follow fresh grass across the Serengeti–Mara.',
     imageAlt: 'A blue wildebeest calf standing beside its mother on open grassland',
     what: 'The blue wildebeest is a grazing antelope of eastern and southern African savannas, IUCN Least Concern. The Serengeti–Mara population is the famous migratory one; other populations move less or not at all. UNESCO lists Serengeti National Park in part for this seasonal movement.',
     route:

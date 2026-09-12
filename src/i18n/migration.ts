@@ -33,6 +33,7 @@ export type HumanEventCopy = {
   uncertainty: string;
   caption: string;
   imageAlt: string;
+  license?: string;
 };
 
 export type HumanEventAtlasCopy = {
@@ -199,6 +200,8 @@ export type TodayShelfCopy = {
   originNames: Record<TodayRegionId, string>;
   campCopy: Record<string, { name: string; country: string; note: string }>;
   routeCopy: Record<string, { name: string; note: string }>;
+  corridorCopy?: Record<string, { from: string; to: string; note: string }>;
+  yearCopy?: Record<string, { note: string }>;
 };
 
 const pages: Record<Locale, MigrationPage> = { en, ru, pl, lv };
