@@ -71,6 +71,7 @@ export type Solution = SolutionMeta & SolutionCopy;
  * not blogs. Hub tiles stay on `/solutions` (no All tile). Cards live on
  * `/solutions/{tag}` and `/solutions/all`. Water encyclopedia articles
  * live at `/solutions/water/{slug}` — the shelf stays `/solutions/water`.
+ * Forests encyclopedia articles live at `/solutions/forests/{slug}`.
  */
 export const solutionMeta: SolutionMeta[] = [
   {
@@ -144,8 +145,8 @@ export const solutionMeta: SolutionMeta[] = [
     latest: true,
     sources: [
       cite(
-        'FAO — Global Forest Resources Assessment',
-        'https://www.fao.org/forest-resources-assessment/en/',
+        'FAO — Sustainable forest management overview',
+        'https://www.fao.org/forestry/sfm/overview/',
       ),
     ],
   },
@@ -375,7 +376,12 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'agroforestry',
     tag: 'forests',
-    sources: [cite('FAO — agroforestry', 'https://www.fao.org/agroforestry/en')],
+    sources: [
+      cite(
+        'FAO — Agroforestry overview',
+        'https://www.fao.org/agroforestry/about-agroforestry/overview/en',
+      ),
+    ],
   },
   {
     slug: 'windbreaks',

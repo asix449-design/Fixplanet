@@ -2,6 +2,10 @@
 import type { Solution } from '../data/solutions';
 import { solutionPrimarySource } from '../data/solutions';
 import {
+  isForestEncyclopediaSlug,
+  forestEncyclopediaPath,
+} from '../data/solutions-forests';
+import {
   isWaterEncyclopediaSlug,
   waterEncyclopediaPath,
 } from '../data/solutions-water';
@@ -24,7 +28,9 @@ const photo = `/images/solutions/${solution.slug}.jpg`;
 const primary = solutionPrimarySource(solution.sources);
 const encyclopediaHref = isWaterEncyclopediaSlug(solution.slug)
   ? localizePath(waterEncyclopediaPath(solution.slug), locale)
-  : undefined;
+  : isForestEncyclopediaSlug(solution.slug)
+    ? localizePath(forestEncyclopediaPath(solution.slug), locale)
+    : undefined;
 const cardHref = encyclopediaHref ?? primary?.url ?? href;
 const cardRel = encyclopediaHref ? undefined : primary ? 'noopener noreferrer' : undefined;
 const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;

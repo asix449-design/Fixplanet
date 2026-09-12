@@ -251,7 +251,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Agroforestry',
     problem:
       'Clearing trees from cropland and pasture leaves soil, shade, and fodder thinner. Farms then lean harder on fertilizer, irrigation, and feed brought from elsewhere.',
-    fix: 'Agroforestry puts trees back with crops and livestock — alley cropping, silvopasture, homegardens, and related systems. FAO treats it as a widespread, long-standing practice and highlights examples such as the Amazonian Chakra in Ecuador. Shade coffee and cocoa are one family of the same idea. Trees need rights, time, and design; a row of seedlings is not a forest offset.',
+    fix: 'Agroforestry puts trees back with crops and livestock — alley cropping, silvopasture, homegardens, and related systems. FAO treats three main types and highlights examples such as the Amazonian Chakra in Ecuador. Shade coffee and cocoa are a separate card. Trees need rights, time, and design; a row of seedlings is not a forest offset.',
     imageAlt: 'Aerial view of alley-cropping plots and young tree rows on a Savanna Institute farm beside the Wisconsin River',
   },
   windbreaks: {
@@ -593,7 +593,7 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Агролесоводство',
     problem:
       'Сведение деревьев с пашни и пастбища оставляет почву, тень и корм тоньше. Хозяйства тогда сильнее зависят от удобрений, полива и привозного корма.',
-    fix: 'Агролесоводство возвращает деревья к культурам и скоту — аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. ФАО считает это распространённой давней практикой и приводит примеры вроде амазонской чакры в Эквадоре. Теневые кофе и какао — одно семейство той же идеи. Деревьям нужны права, время и проект; ряд саженцев — не лесной офсет.',
+    fix: 'Агролесоводство возвращает деревья к культурам и скоту — аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. ФАО выделяет три основных типа и приводит примеры вроде амазонской чакры в Эквадоре. Теневые кофе и какао — отдельная карточка. Деревьям нужны права, время и проект; ряд саженцев — не лесной офсет.',
     imageAlt: 'Вид сверху: аллейные посадки и ряды молодых деревьев на ферме Savanna Institute у реки Висконсин'
   },
   windbreaks: {
@@ -935,7 +935,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Agroleśnictwo',
     problem:
       'Wycinka drzew z upraw i pastwisk zostawia glebę, cień i paszę cieńszymi. Gospodarstwa wtedy mocniej opierają się na nawozie, nawadnianiu i paszy z zewnątrz.',
-    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt — uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. FAO traktuje to jako rozpowszechnioną, dawną praktykę i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Cień w kawie i kakao to jedna rodzina tego samego pomysłu. Drzewa potrzebują praw, czasu i projektu; rząd sadzonek to nie offset leśny.',
+    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt — uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. FAO wyróżnia trzy główne typy i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Cień w kawie i kakao to osobna karta. Drzewa potrzebują praw, czasu i projektu; rząd sadzonek to nie offset leśny.',
     imageAlt: 'Widok z lotu ptaka: uprawy alejkowe i rzędy młodych drzew na farmie Savanna Institute nad rzeką Wisconsin'
   },
   windbreaks: {
@@ -1277,7 +1277,7 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Agromežsaimniecība',
     problem:
       'Koku ciršana no tīrumiem un ganībām atstāj augsni, ēnu un barību plānāku. Saimniecības tad vairāk balstās uz mēslojumu, laistīšanu un ievesto barību.',
-    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem — aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. FAO to uzskata par izplatītu, seno praksi un izceļ piemērus kā Amazones čakru Ekvadorā. Ēnas kafija un kakao ir viena tās pašas idejas saime. Kokiem vajag tiesības, laiku un projektu; stādu rinda nav meža ofsets.',
+    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem — aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. FAO izšķir trīs galvenos tipus un izceļ piemērus kā Amazones čakru Ekvadorā. Ēnas kafija un kakao ir atsevišķa karte. Kokiem vajag tiesības, laiku un projektu; stādu rinda nav meža ofsets.',
     imageAlt: 'Skats no gaisa: aleju sējumi un jaunu koku rindas Savanna Institute saimniecībā pie Viskonsinas upes'
   },
   windbreaks: {

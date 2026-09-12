@@ -1,0 +1,104 @@
+---
+import CitedSourceList from '../components/CitedSourceList.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  forestEncyclopediaImageSrc,
+  type ForestEncyclopedia,
+} from '../data/solutions-forests';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  item: ForestEncyclopedia;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const { item } = Astro.props;
+const title = `${item.title} — Fix Planet`;
+const image = forestEncyclopediaImageSrc(item.image);
+const forestsHref = localizePath('/solutions/forests', locale);
+---
+
+<BaseLayout
+  title={title}
+  description={item.hook}
+  image={image}
+  theme="solutions-detail"
+>
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img
+      src="/images/solutions/solutions-hub-bg.jpg"
+      alt=""
+      width="1280"
+      height="720"
+    />
+    <div class="section-backdrop-scrim solutions-detail-scrim"></div>
+  </div>
+  <header
+    class="wildlife-page-hero wildlife-page-hero-detail solutions-page-hero"
+    aria-labelledby="forest-solution-heading"
+  >
+    <div class="wildlife-page-hero-media solutions-hero-media" aria-hidden="true">
+      <img
+        src="/images/solutions/solutions-hub-bg.jpg"
+        alt=""
+        width="1280"
+        height="720"
+      />
+    </div>
+    <div class="wildlife-page-hero-shade solutions-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/solutions', locale)}>{ui.solutionsPage.back}</a>
+        {' · '}
+        <a class="maps-back" href={forestsHref}>{ui.solutionsPage.tags.forests}</a>
+      </p>
+      <div class="eyebrow wildlife-on-dark">{ui.solutionsPage.tags.forests}</div>
+      <h1 id="forest-solution-heading">{item.title}</h1>
+      <p>{item.hook}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail">
+      <figure class="wildlife-detail-art">
+        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+        <figcaption>
+          {ui.solutionsPage.imageCredit}: {item.image.credit}
+          {
+            item.image.sourceUrl ? (
+              <>
+                {' '}
+                (
+                <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                  {item.image.license}
+                </a>
+                )
+              </>
+            ) : (
+              <> ({item.image.license})</>
+            )
+          }
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose solutions-prose">
+        <div class="meta-row">
+          <span class="pill">{ui.solutionsPage.tags.forests}</span>
+        </div>
+        <h2>{ui.solutionsPage.what}</h2>
+        {item.what.map((para) => <p>{para}</p>)}
+        <h2>{ui.solutionsPage.how}</h2>
+        {item.how.map((para) => <p>{para}</p>)}
+        <h2>{ui.solutionsPage.whereRuns}</h2>
+        {item.where.map((para) => <p>{para}</p>)}
+        <h2>{ui.solutionsPage.limits}</h2>
+        {item.limits.map((para) => <p>{para}</p>)}
+        <CitedSourceList
+          heading={ui.solutionsPage.sourcesLabel}
+          note={ui.solutionsPage.sourcesVerify}
+          sources={[...item.sources]}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

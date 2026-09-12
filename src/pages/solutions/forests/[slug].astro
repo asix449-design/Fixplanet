@@ -1,0 +1,15 @@
+---
+import { forestEncyclopediaSlugs, isForestEncyclopediaSlug } from '../../../data/solutions-forests';
+import { getForestEncyclopediaBySlug, resolveLocale } from '../../../i18n';
+import SolutionForestDetailView from '../../../views/SolutionForestDetailView.astro';
+
+export function getStaticPaths() {
+  return forestEncyclopediaSlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && isForestEncyclopediaSlug(slug) ? getForestEncyclopediaBySlug(locale, slug) : undefined;
+---
+
+{item && <SolutionForestDetailView item={item} />}
