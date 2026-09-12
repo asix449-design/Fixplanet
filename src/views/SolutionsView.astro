@@ -11,6 +11,7 @@ import {
   solutionsHubSrc,
   type TagKey,
 } from '../data/solutions';
+import { isForestEncyclopediaSlug, forestEncyclopediaPath } from '../data/solutions-forests';
 import { isWaterEncyclopediaSlug, waterEncyclopediaPath } from '../data/solutions-water';
 import { getSolutions, getUi, localizePath, resolveLocale } from '../i18n';
 
@@ -106,7 +107,9 @@ const pageTitle = hub
                 href={
                   isWaterEncyclopediaSlug(solution.slug)
                     ? localizePath(waterEncyclopediaPath(solution.slug), locale)
-                    : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
+                    : isForestEncyclopediaSlug(solution.slug)
+                      ? localizePath(forestEncyclopediaPath(solution.slug), locale)
+                      : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
                 }
               />
             ))}
