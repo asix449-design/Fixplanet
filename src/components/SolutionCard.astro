@@ -1,6 +1,10 @@
 ---
 import type { Solution } from '../data/solutions';
 import { solutionPrimarySource } from '../data/solutions';
+import {
+  isWaterEncyclopediaSlug,
+  waterEncyclopediaPath,
+} from '../data/solutions-water';
 import { getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -18,8 +22,12 @@ const {
 } = Astro.props;
 const photo = `/images/solutions/${solution.slug}.jpg`;
 const primary = solutionPrimarySource(solution.sources);
-const cardHref = primary?.url ?? href;
-const cardRel = primary ? 'noopener noreferrer' : undefined;
+const encyclopediaHref = isWaterEncyclopediaSlug(solution.slug)
+  ? localizePath(waterEncyclopediaPath(solution.slug), locale)
+  : undefined;
+const cardHref = encyclopediaHref ?? primary?.url ?? href;
+const cardRel = encyclopediaHref ? undefined : primary ? 'noopener noreferrer' : undefined;
+const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;
 ---
 
 <article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug} hidden={hidden}>
@@ -46,7 +54,7 @@ const cardRel = primary ? 'noopener noreferrer' : undefined;
           <dd>{solution.fix}</dd>
         </div>
       </dl>
-      <span class="card-cta">{ui.solutionsPage.explore}</span>
+      <span class="card-cta">{cta}</span>
     </div>
   </a>
   {

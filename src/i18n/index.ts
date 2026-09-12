@@ -15,6 +15,7 @@ export {
 
 export { basedIn, getUi, ui, type Ui } from './messages';
 export { getLatestSolutions, getSolutions } from './solutions';
+export { getWaterEncyclopediaBySlug, getWaterEncyclopediaPages } from './solutions-water';
 export {
   getWildlifeBySlug,
   getWildlifeByStatus,

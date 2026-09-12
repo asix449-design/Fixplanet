@@ -69,7 +69,8 @@ export type Solution = SolutionMeta & SolutionCopy;
  * at scale or in serious deployment. Label pilots honestly. Do not invent
  * impact statistics. Primary sources are official agency or project pages —
  * not blogs. Hub tiles stay on `/solutions` (no All tile). Cards live on
- * `/solutions/{tag}` and `/solutions/all`.
+ * `/solutions/{tag}` and `/solutions/all`. Water encyclopedia articles
+ * live at `/solutions/water/{slug}` — the shelf stays `/solutions/water`.
  */
 export const solutionMeta: SolutionMeta[] = [
   {
@@ -78,8 +79,12 @@ export const solutionMeta: SolutionMeta[] = [
     latest: true,
     sources: [
       cite(
-        'FAO — Agricultural water management',
-        'https://www.fao.org/land-water/water/agricultural-water-management/en',
+        'USGS Water Science School — Irrigation: drip or microirrigation',
+        'https://www.usgs.gov/water-science-school/science/irrigation-drip-or-microirrigation',
+      ),
+      cite(
+        'FAO — Irrigation water management: drip irrigation',
+        'https://www.fao.org/4/s8684e/s8684e07.htm',
       ),
     ],
   },
@@ -87,7 +92,13 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'constructed-wetlands',
     tag: 'water',
     latest: true,
-    sources: [cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands')],
+    sources: [
+      cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands'),
+      cite(
+        'U.S. EPA — Constructed Wetlands Handbook (PDF)',
+        'https://www.epa.gov/sites/default/files/2015-10/documents/constructed-wetlands-handbook.pdf',
+      ),
+    ],
   },
   {
     slug: 'membrane-desalination',
@@ -97,12 +108,35 @@ export const solutionMeta: SolutionMeta[] = [
         'Water Corporation (WA) — Desalination',
         'https://www.watercorporation.com.au/Our-water/Desalination',
       ),
+      cite(
+        'Water Corporation (WA) — Perth Seawater Desalination Plant',
+        'https://www.watercorporation.com.au/Our-water/Desalination/Perth-Seawater-Desalination-Plant',
+      ),
+      cite(
+        'USGS Water Science School — Desalination',
+        'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
+      ),
     ],
   },
   {
     slug: 'managed-aquifer-recharge',
     tag: 'water',
-    sources: [cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/')],
+    sources: [
+      cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/'),
+      cite(
+        'Water Corporation (WA) — Groundwater replenishment',
+        'https://www.watercorporation.com.au/Our-water/Groundwater/Groundwater-replenishment',
+      ),
+      cite(
+        'Central Arizona Project — Recharge',
+        'https://www.cap-az.com/water/water-supply/future-water-supplies/recharge/',
+      ),
+      cite(
+        'NGWA — Orange County Water District case study',
+        'https://www.ngwa.org/what-is-groundwater/groundwater-issues/managed-aquifer-recharge/case-studies/orange-county-water-district-california',
+      ),
+      cite('USGS Circular 1405 — Artificial recharge / MAR', 'https://pubs.usgs.gov/circ/1405/'),
+    ],
   },
   {
     slug: 'sustainable-forestry',
@@ -268,28 +302,59 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'WHO — rainwater collection and storage',
+        'WHO — Rainwater collection, storage and management advice sheet (PDF)',
         'https://www.who.int/docs/default-source/wash-documents/sanitary-inspection-packages/rainwater-collection-storage-management-advice-sheet.pdf',
+      ),
+      cite(
+        'WHO — Guidelines for drinking-water quality',
+        'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines',
+      ),
+      cite(
+        'WHO — Guidelines for drinking-water quality, 4th edition',
+        'https://www.who.int/publications/i/item/9789241548151',
       ),
     ],
   },
   {
     slug: 'newater-reclaimed-wastewater',
     tag: 'water',
-    sources: [cite('PUB Singapore — NEWater', 'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater')],
+    sources: [
+      cite(
+        'PUB Singapore — NEWater',
+        'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater',
+      ),
+      cite(
+        'PUB Singapore — Our Water Story',
+        'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory',
+      ),
+    ],
   },
   {
     slug: 'fog-harvesting',
     tag: 'water',
-    sources: [cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/')],
+    sources: [
+      cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/'),
+      cite(
+        'Klemm et al., AMBIO 2012 — Fog as a fresh-water resource (PDF)',
+        'https://www.fogquest.org/wp-content/uploads/2012/11/AMBIO-2012-Fog-Review-10.1007_s13280-012-0247-8.pdf',
+      ),
+      cite(
+        'Frontiers in Water — fog harvesting review (2021)',
+        'https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2021.675269/full',
+      ),
+    ],
   },
   {
     slug: 'constructed-floating-wetlands',
     tag: 'water',
     sources: [
       cite(
-        'CSIRO — constructed floating wetlands',
+        'CSIRO — Constructed floating wetlands',
         'https://www.csiro.au/en/research/natural-environment/water/constructed-floating-wetlands',
+      ),
+      cite(
+        'WetlandInfo (Queensland) — floating wetlands design summary',
+        'https://www.wetlandinfo.detsi.qld.gov.au/wetlands/management/treatment-systems/for-agriculture/treatment-sys-nav-page/floating-wetlands/design-summary.html',
       ),
     ],
   },
@@ -298,8 +363,12 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'MIT News — passive solar desalination',
+        'MIT News — passive solar-powered water desalination (2020)',
         'https://news.mit.edu/2020/passive-solar-powered-water-desalination-0207',
+      ),
+      cite(
+        'USGS Water Science School — Desalination',
+        'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
       ),
     ],
   },

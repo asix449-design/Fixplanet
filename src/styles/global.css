@@ -2535,6 +2535,54 @@ a.map-card:hover {
   z-index: 1;
 }
 
+.theme-solutions-detail {
+  background: #06110c;
+}
+
+.theme-solutions-detail .site-header,
+.theme-solutions-detail .site-footer {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.theme-solutions-detail .wildlife-detail,
+.theme-solutions-detail .solutions-prose {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-solutions-detail .solutions-prose {
+  background: rgba(8, 8, 8, 0.9);
+  color: var(--ink);
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.theme-solutions-detail .solutions-prose h2,
+.theme-solutions-detail .solutions-prose p {
+  color: var(--ink);
+}
+
+.theme-solutions-detail .solutions-prose .wildlife-sources {
+  color: var(--muted);
+}
+
+.theme-solutions-detail .cited-source-list a {
+  color: var(--lime);
+}
+
+.solutions-detail-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 14, 12, 0.42) 0%,
+      rgba(6, 18, 15, 0.58) 44%,
+      rgba(6, 16, 13, 0.82) 100%
+    ),
+    linear-gradient(90deg, rgba(6, 16, 13, 0.45) 0%, transparent 62%);
+}
+
 /* Innovations — distinct tech/Earth circuit theme */
 .theme-innovations,
 .theme-innovations-detail {
