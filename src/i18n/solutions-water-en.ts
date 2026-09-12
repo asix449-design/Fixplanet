@@ -80,7 +80,7 @@ export const en: Record<WaterEncyclopediaSlug, WaterEncyclopediaCopy> = {
     ],
     where: [
       'Orange County Water District’s GWRS is the world’s largest purification system for indirect potable reuse. The district states about 130 million gallons of water a day, serving on the order of a million people, and a share of local demand. It has run since January 2008 as a joint project with the Orange County Sanitation District. NGWA’s case study sits beside the district’s own GWRS page.',
-      'Water Corporation’s groundwater-replenishment scheme in Perth recycles treated wastewater into the Gnangara groundwater system after advanced treatment. Central Arizona Project’s recharge programme stores Colorado River water in underground sites for later recovery — use the live CAP recharge URL, not an old path. The pictured Bolivar site on the Adelaide Plains was a CSIRO recycled-water aquifer storage-and-recovery trial of the same class.',
+      'Water Corporation’s groundwater-replenishment scheme in Perth recycles treated wastewater into the Gnangara groundwater system after advanced treatment. Central Arizona Project’s recharge programme stores Colorado River water in underground sites for later recovery. The pictured Bolivar site on the Adelaide Plains was a CSIRO recycled-water aquifer storage-and-recovery trial of the same class.',
     ],
     limits: [
       'MAR needs clean source water, the right geology, and years of monitoring. A clay layer can block a basin. A fractured rock can send injected water somewhere you did not plan. Recovery is never one hundred percent. If the source water is dirty, you have built a contamination project.',
