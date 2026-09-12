@@ -198,7 +198,6 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:PET_bottles.jpg',
     ),
     sources: [
-      cite('Wikipedia — Carbios', 'https://en.wikipedia.org/wiki/Carbios'),
       cite(
         'Yoshida et al., Science, 2016 — Ideonella sakaiensis PETase',
         'https://www.science.org/doi/10.1126/science.aad6359',
@@ -259,10 +258,7 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Water_treatment_plant.jpg',
     ),
     sources: [
-      cite(
-        'Interesting Engineering — U.S. plant captures 450 tons of airborne CO₂',
-        'https://interestingengineering.com/energy/us-plant-captures-450-tons-of-airborne-co2',
-      ),
+      cite('Avnos', 'https://avnos.com/'),
       cite(
         'Avnos — Project Brighton enters operations',
         'https://avnos.com/avnos-largest-hybrid-direct-air-capture-deployment-enters-operations/',
@@ -280,10 +276,7 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:TERNEUZEN_-_panoramio.jpg',
     ),
     sources: [
-      cite(
-        'CarbonCredits — Yara Sluiskil CCS inauguration (Sep 2026)',
-        'https://carboncredits.com/yara-europe-largest-carbon-capture-facility-netherlands/',
-      ),
+      cite('Yara — news and media', 'https://www.yara.com/news-and-media/'),
       cite('Northern Lights — who we are', 'https://norlights.com/who-we-are/'),
     ],
   },
@@ -298,10 +291,6 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg',
     ),
     sources: [
-      cite(
-        'PKN Packaging News — Samsara Eco opens first enzymatic recycling plant',
-        'https://www.packagingnews.com.au/latest/samsara-eco-opens-first-enzymatic-recycling-plant',
-      ),
       cite('Samsara Eco', 'https://www.samsaraeco.com/'),
     ],
   },

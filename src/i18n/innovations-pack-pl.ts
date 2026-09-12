@@ -107,7 +107,7 @@ export const packPl: Record<string, InnovationCopy> = {
     risks:
       'Czterysta pięćdziesiąt ton to demonstracja. „Bez zewnętrznego ciepła” i tak potrzebuje prądu. Wyjście wody to liczba firmy. Nie traktuj płyty w Bridgewater jako krajowego klina usuwania.',
     sourcesNote:
-      'Interesting Engineering o projekcie 450 t / 475 000 gal; nota Avnos z 1 września 2026. Moc projektowa to nie rok zliczonych ton.',
+      'Strona Avnos i nota operacyjna z 1 września 2026 (projekt 450 t / 475 000 gal). Moc projektowa to nie rok zliczonych ton.',
   },
   'yara-sluiskil-ccs': {
     title: 'Yara Sluiskil CCS',
@@ -123,7 +123,7 @@ export const packPl: Record<string, InnovationCopy> = {
     risks:
       'Stopień wychwytu, żegluga i magazyn muszą działać razem. Użycie CCS do rozciągania kopalnego amoniaku to realna debata. 800 000 ton to poważna inżynieria i wciąż mało obok przemysłu UE. Nie wpisuj tej tony jako kredytu DAC.',
     sourcesNote:
-      'Nota CarbonCredits o inauguracji (wrz 2026): do 800 000 t/rok, otwarcie 7 września, statki Northern Lights. Moc projektowa to nie rok zmagazynowanych ton.',
+      'Hub newsów Yary; strony Northern Lights. Relacje z otwarcia dają wychwyt projektowy do 800 000 t/rok. Moc projektowa to nie rok zmagazynowanych ton.',
   },
   'samsara-eco': {
     title: 'Samsara Eco — recykling enzymatyczny',
@@ -138,7 +138,7 @@ export const packPl: Record<string, InnovationCopy> = {
     risks:
       'Pierwszy zakład to nie rozwiązany kryzys odpadów. Mieszany plastik nadal taniej zakopać albo spalić. Azjatycki zakład 20 000 ton to plan na 2028. Nie myl otwarcia w Jerrabomberra z cyrkularnym opakowaniem w skali supermarketu.',
     sourcesNote:
-      'PKN Packaging News o otwarciu w Jerrabomberra i planie 20 000 t w Azji. Pierwszy zakład to nie cyrkularność skali supermarketu.',
+      'Oficjalna strona Samsara Eco. Pierwszy zakład to nie cyrkularność skali supermarketu.',
   },
   'quaise-mmwave-drilling': {
     title: 'Quaise — wiercenie falą milimetrową',

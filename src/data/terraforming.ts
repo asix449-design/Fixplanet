@@ -368,6 +368,33 @@ export const geoMeta: GeoMeta[] = [
     ],
   },
   {
+    slug: 'loess-plateau-rehabilitation',
+    shelf: 'desert',
+    status: 'partial',
+    years: '1994–2005',
+    image: img(
+      'loess-plateau-rehabilitation.jpg',
+      '螺钉',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E8%A5%BF%E7%9A%84%E9%BB%84%E5%9C%9F%E9%AB%98%E5%8E%9F.jpg',
+    ),
+    sources: [
+      {
+        label:
+          'World Bank (2004) — Loess Plateau Watershed Rehabilitation Project case study (Shanghai conference PDF)',
+        url: 'https://documents1.worldbank.org/curated/en/142661468762366534/pdf/307770CHA0Loess0Plateau01see0also0307591.pdf',
+      },
+      {
+        label: 'World Bank — Loess Plateau Watershed Rehabilitation Project (P003608)',
+        url: 'https://projects.worldbank.org/en/projects-operations/project-detail/P003608',
+      },
+      {
+        label: 'World Bank — Second Loess Plateau Watershed Rehabilitation Project (P056216)',
+        url: 'https://projects.worldbank.org/en/projects-operations/project-detail/P056216',
+      },
+    ],
+  },
+  {
     slug: 'stratospheric-aerosol-injection',
     shelf: 'climate',
     status: 'research',
@@ -406,20 +433,12 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'IMO — Ocean fertilization under the London Convention/Protocol',
-        url: 'https://www.imo.org/en/ourwork/environment/pages/oceanfertilization-default.aspx',
-      },
-      {
-        label: 'Martin et al. / IronEx and Southern Ocean iron experiments (reviews)',
-        url: 'https://doi.org/10.1038/35037500',
+        label: 'Boyd et al., Nature (2000) — IronEx / Southern Ocean iron experiments',
+        url: 'https://www.nature.com/articles/35037500',
       },
       {
         label: 'Martin et al. (2013) — LOHAFEX: production rose, export flux did not',
         url: 'https://doi.org/10.1002/gbc.20077',
-      },
-      {
-        label: 'London Convention / Protocol parties (2012) — concern over the Haida dump',
-        url: 'https://www.imo.org/en/ourwork/environment/pages/oceanfertilization-default.aspx',
       },
     ],
   },

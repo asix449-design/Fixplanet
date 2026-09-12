@@ -196,6 +196,24 @@ export const pl: Record<string, GeoCopy> = {
     sourcesNote:
       'Oficjalna strona SGI; twierdzenie kamienia milowego MEWA/SPA 2026; KAPSARC o wodzie rolniczej i popycie SGI; FAO AQUASTAT dla kontekstu wód gruntowych i pszenicy. Zdjęcie kręgów to historyczne nawodnienie, tak opisane.',
   },
+  'loess-plateau-rehabilitation': {
+    title: 'Rehabilitacja Wyżyny Lessowej',
+    hook: 'Prace zlewniowe wspierane przez Bank Światowy na chińskiej Wyżynie Lessowej (lata 90.–2000.): tarasy, roślinność, reguły wypasu — kontrola erozji i utrzymanie, nie drugi slogan „zielonego muru”.',
+    imageAlt:
+      'Tarasowane lessowe wzgórza w Shanxi — klasa zamiany stoku na taras, którą finansowały projekty Banku Światowego, nie dowód, że cała wyżyna jest zazieleniona',
+    jurisdiction: 'Chińska Republika Ludowa (Shanxi, Shaanxi, Gansu, Mongolia Wewnętrzna — zlewnie dopływów Huang He)',
+    yearStatus:
+      'Faza I (P003608) uruchomiona w październiku 1994, zakończona w 2002. Faza II (P056216) zatwierdzona w maju 1999, zamknięta w czerwcu 2005. Status: częściowy — fazy Banku Światowego są zamknięte; wyżyna nie została „dokończona”.',
+    plan: 'Studium przypadku Banku Światowego z 2004 stawia cel główny: podnieść produkcję rolną i dochody na 1 560 000 hektarach w dziewięciu zlewniach dopływów Huang He, w 21–22 biednych powiatach Shanxi, Shaanxi, Gansu i Mongolii Wewnętrznej. Cel poboczny: mniej osadów w Huang He. Pakiet: tarasy i małe nawodnienie; drzewa, krzewy i sady na stokach; łąki; zapory zatrzymujące osad; wiejskie plany użytkowania ziemi; oraz wokół robót — ograniczenia wolnego wypasu owiec i kóz. Faza I to kredyt IDA 150 mln dolarów przy około 250 mln całości (około 160 dolarów na hektar w tamtym tekście). To rehabilitacja zlewni, nie sadzony „zielony mur” od Xinjiangu do morza.',
+    construction:
+      'Ten sam tekst z 2004 wymienia jako zbudowane: około 90 500 hektarów tarasów; dziesiątki tysięcy hektarów drzew, krzewów, drzew gospodarczych i sadów; około 100 000 hektarów łąk; 149 zapór kluczowych, 1140 zapór namułowych i 1956 zastawek; oraz około 7100 hektarów nawodnienia, głównie w suchej Mongolii Wewnętrznej. Susze wymuszały przesadzanie części drzew. Zakazy wypasu rozeszły się z działek projektu na niektóre okoliczne powiaty — zmiana polityki, którą autorzy traktują jako skutek projektu, nie osobną linię kredytu. Drugi projekt Banku Światowego (P056216) kontynuował tę samą klasę prac i zamknął się w 2005.',
+    outcome:
+      'Studium z 2004 podaje: ziarno w obszarze projektu z 427 000 do około 700 000 ton, owoce z 80 000 do 345 000 ton, dochód netto rolnika na osobę z 360 do 1263 juanów, udział ludzi poniżej oficjalnej granicy biedy z 59 procent (1993) do 27 procent (2001), korzyści deklarowane dla ponad 1,2 miliona rolników. Traktujcie to jako liczby Banku / projektu, nie niezależny spis polowy. Wyżyna Lessowa jako całość ma około 640 000 km²; obszar fazy I był rzędu 15 500 km². Późniejsze programy krajowe dalej pracowały na wyżynie. To nie ta pożyczka i nie skończone zazielenienie.',
+    lessons:
+      'Tarasy, umowy i reguły wypasu mogą podnieść plony i ściąć osad w traktowanych zlewniach, nie będąc murem ze sloganu. Liczcie przetrwałą pokrywę i kto trzyma ziemię — nie wydane sadzonki. Zamknięty projekt Banku Światowego to nie koniec erozji Huang He. Nie wkładajcie tej karty pod Trzy Północy ani Wielki Zielony Mur Afryki.',
+    sourcesNote:
+      'PDF studium przypadku Banku Światowego, Szanghaj 2004 (wyniki fazy I); strony projektów P003608 (1994–2002) i P056216 (zatwierdzony 1999, zamknięty 2005).',
+  },
   'stratospheric-aerosol-injection': {
     title: 'Stratosferyczna iniekcja aerozoli',
     hook: 'Naśladować wulkan, schłodzić planetę. Istnieje jako modele, recenzje i jeden odwołany balon. To nie wdrożony termostat.',
@@ -230,7 +248,7 @@ export const pl: Record<string, GeoCopy> = {
     lessons:
       'Zielony satelitarny wir to nie zsekwestrowany węgiel. Pomiarem są eksport i czas przebywania. Prawny domyślny reżim na otwartym morzu to nie. Zostawcie tę kartę na półce badawczej.',
     sourcesNote:
-      'Strony IMO London Convention/Protocol o nawożeniu oceanu; Boyd i inni o IronEx/SOIREE (Nature 2000); Martin et al. 2013 o eksporcie LOHAFEX; oświadczenie stron 2012 przez materiały IMO.',
+      'Boyd i inni o IronEx/SOIREE (Nature 2000); Martin et al. 2013 o eksporcie LOHAFEX.',
   },
   'marine-cloud-brightening': {
     title: 'Rozjaśnianie chmur morskich',

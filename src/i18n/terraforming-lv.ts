@@ -196,6 +196,24 @@ export const lv: Record<string, GeoCopy> = {
     sourcesNote:
       'SGI oficiālā vietne; MEWA/SPA 2026. pagrieziena punkta apgalvojums; KAPSARC par lauksaimniecības ūdeni un SGI pieprasījumu; FAO AQUASTAT pazemes ūdeņu un kviešu kontekstam. Apļu foto ir vēsturiskā apūdeņošana, tā arī parakstīta.',
   },
+  'loess-plateau-rehabilitation': {
+    title: 'Lesa plato rehabilitācija',
+    hook: 'Pasaules Bankas atbalstīti sateces baseinu darbi Ķīnas Lesa plato (1990.–2000. gadi): terases, veģetācija, ganīšanas noteikumi — erozijas kontrole un iztika, ne otrs «zaļās sienas» sauklis.',
+    imageAlt:
+      'Terasēti lesa pauguri Šaņsi — slīpuma-uz-terasi darba klase, ko finansēja Pasaules Bankas projekti, ne pierādījums, ka viss plato ir apzaļumots',
+    jurisdiction: 'Ķīnas Tautas Republika (Šaņsi, Šaaņsi, Gaņsu, Iekšējā Mongolija — Dzeltenās upes pieteku baseini)',
+    yearStatus:
+      'I kārta (P003608) sākta 1994. gada oktobrī, pabeigta 2002. II kārta (P056216) apstiprināta 1999. gada maijā, slēgta 2005. gada jūnijā. Statuss: daļējs — Pasaules Bankas kārtas ir slēgtas; plato nav «pabeigts».',
+    plan: 'Pasaules Bankas 2004. gada gadījuma pētījums liek galveno mērķi: celt lauksaimniecības produkciju un ienākumus 1 560 000 hektāros deviņos Dzeltenās upes pieteku baseinos, 21–22 nabadzīgos apriņķos Šaņsi, Šaaņsi, Gaņsu un Iekšējā Mongolijā. Otrs mērķis — mazāk nogulumu Dzeltenajā upē. Pakete: terases un maza apūdeņošana; koki, krūmi un dārzi nogāzēs; zālāji; nogulumu aizsprosti; ciemu zemes plāni; un ap darbiem — brīvās aitu un kazu ganīšanas ierobežojumi. I kārta bija IDA kredīts 150 miljoni dolāru pret ap 250 miljoniem kopā (ap 160 dolāriem uz hektāru tajā rakstā). Tā ir sateces baseinu rehabilitācija, ne stādīta «zaļā siena» no Siņdzjanas līdz jūrai.',
+    construction:
+      'Tas pats 2004. gada raksts uzskaita uzbūvēto: ap 90 500 hektāru terašu; desmitiem tūkstošu hektāru koku, krūmu, saimniecisko koku un dārzu; ap 100 000 hektāru zālāju; 149 galvenie aizsprosti, 1140 sanesumu aizsprosti un 1956 slūžas; un ap 7100 hektāru apūdeņošanas, galvenokārt sausajā Iekšējā Mongolijā. Sausums lika pārstādīt daļu koku. Ganīšanas aizliegumi izplatījās no projekta laukiem uz dažiem apkārtējiem apriņķiem — politikas maiņa, ko autori uzskata par projekta efektu, ne atsevišķu kredīta rindu. Otrs Pasaules Bankas projekts (P056216) turpināja to pašu darbu klasi un slēdzās 2005.',
+    outcome:
+      '2004. gada pētījums ziņo: graudi projekta zonā no 427 000 līdz ap 700 000 tonnām, augļi no 80 000 līdz 345 000 tonnām, lauksaimnieka tīrie ienākumi uz galvu no 360 līdz 1263 juaņām, cilvēku daļa zem oficiālās nabadzības līnijas no 59 procentiem (1993) līdz 27 procentiem (2001), labums pieteikts vairāk nekā 1,2 miljoniem lauksaimnieku. Uzskati tos par Pasaules Bankas / projekta skaitļiem, ne neatkarīgu lauka tautas skaitīšanu. Lesa plato kopumā ir ap 640 000 km²; I kārtas zona bija ap 15 500 km². Vēlākās nacionālās programmas turpināja strādāt plato. Tās nav šis aizdevums un nav pabeigta apzaļumošana.',
+    lessons:
+      'Terases, līgumi un ganīšanas noteikumi var celt ražu un griezt nogulumus apstrādātos baseinos, nebūdami saukļa siena. Skaiti izdzīvojušo segumu un kam paliek zeme — ne izsniegtos stādus. Slēgts Pasaules Bankas projekts nav Dzeltenās upes erozijas beigas. Neliec šo kartīti zem trim ziemeļiem vai Āfrikas Lielās zaļās sienas.',
+    sourcesNote:
+      'Pasaules Bankas 2004. gada Šanhajas gadījuma pētījuma PDF (I kārtas rezultāti); projektu lapas P003608 (1994–2002) un P056216 (apstiprināts 1999, slēgts 2005).',
+  },
   'stratospheric-aerosol-injection': {
     title: 'Stratosfēras aerosolu ievadīšana',
     hook: 'Atdarināt vulkānu, atdzesēt planētu. Pastāv kā modeļi, pārskati un viens atcelts balons. Tas nav ieviests termostats.',
@@ -230,7 +248,7 @@ export const lv: Record<string, GeoCopy> = {
     lessons:
       'Zaļš satelīta virpulis nav sekvestrēts ogleklis. Mērījums ir eksports un uzturēšanās laiks. Tiesiskais noklusējums atklātajā jūrā ir nē. Atstājiet šo kartīti pētījumu plauktā.',
     sourcesNote:
-      'IMO London Convention/Protocol okeāna mēslošanas lapas; Boyd un citi par IronEx/SOIREE (Nature 2000); Martin et al. 2013 par LOHAFEX eksportu; 2012. pušu paziņojums caur IMO materiāliem.',
+      'Boyd un citi par IronEx/SOIREE (Nature 2000); Martin et al. 2013 par LOHAFEX eksportu.',
   },
   'marine-cloud-brightening': {
     title: 'Jūras mākoņu gaišināšana',

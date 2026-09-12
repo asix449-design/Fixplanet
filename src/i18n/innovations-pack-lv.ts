@@ -107,7 +107,7 @@ export const packLv: Record<string, InnovationCopy> = {
     risks:
       'Četri simti piecdesmit tonnas ir demonstrācija. «Bez ārēja siltuma» joprojām vajag elektrību. Ūdens iznākums ir uzņēmuma skaitlis. Neuzskati Bridžvoteras laukumu par nacionālu izņemšanas ķīli.',
     sourcesNote:
-      'Interesting Engineering par 450 t / 475 000 gal projektēšanu; Avnos 2026. g. 1. sept. darbības piezīme. Projektētā jauda nav gada uzskaitītas tonnas.',
+      'Avnos vietne un 2026. g. 1. sept. darbības piezīme (450 t / 475 000 gal projektēšana). Projektētā jauda nav gada uzskaitītas tonnas.',
   },
   'yara-sluiskil-ccs': {
     title: 'Yara Sluiskil CCS',
@@ -123,7 +123,7 @@ export const packLv: Record<string, InnovationCopy> = {
     risks:
       'Uztveršanas koeficientam, kuģošanai un glabāšanai jāstrādā kopā. CCS lietošana, lai stieptu fosilo amonjaku, ir īsta debates. 800 000 tonnas ir nopietna inženierija un joprojām maz blakus ES rūpniecībai. Neieraksti šo tonnu kā DAC kredītu.',
     sourcesNote:
-      'CarbonCredits atklāšanas piezīme (2026. g. sept.): līdz 800 000 t/gadā, atklāšana 7. septembrī, Northern Lights kuģi. Projektētā jauda nav gada noglabātas tonnas.',
+      'Yara ziņu un mediju hubs; Northern Lights lapas. Atklāšanas nedēļas ziņās projektētā uztveršana — līdz 800 000 t/gadā. Projektētā jauda nav gada noglabātas tonnas.',
   },
   'samsara-eco': {
     title: 'Samsara Eco — enzīmu pārstrāde',
@@ -138,7 +138,7 @@ export const packLv: Record<string, InnovationCopy> = {
     risks:
       'Pirmā rūpnīca nav atrisināta atkritumu krīze. Jaukto plastmasu joprojām lētāk aprakt vai sadedzināt. 20 000 tonnu Āzijas rūpnīca ir plāns 2028. gadam. Nesajauc Džerabomberas atklāšanu ar cirkulāru iepakojumu lielveikala mērogā.',
     sourcesNote:
-      'PKN Packaging News par Džerabomberas atklāšanu un 20 000 t plānu Āzijā. Pirmā rūpnīca nav lielveikala mēroga cirkularitāte.',
+      'Samsara Eco oficiālā vietne. Pirmā rūpnīca nav lielveikala mēroga cirkularitāte.',
   },
   'quaise-mmwave-drilling': {
     title: 'Quaise — milimetru viļņu urbšana',

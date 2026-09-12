@@ -210,4 +210,60 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'NASA 2012. gada nakts gaismu karte: pilsētu gaismas uz tumšas sauszemes un melniem okeāniem, bez robežām un uzrakstiem',
   },
+  'global-river-basins': {
+    title: 'Globālie upju baseini',
+    hook: 'Iekļauti apakšbaseinu daudzstūri visai planētai (Pfafstettera līmeņi) — hidrografiska pamatkarte, ne stresa indekss.',
+    description:
+      'HydroBASINS no HydroSHEDS ir globāls hierarchiski iekļautu sateces baseinu kopums, izvilkts no HydroSHEDS augstumu hidrografijas 15 loka sekundēs. Divpadsmit Pfafstettera līmeņi iet no kontinentu mēroga baseiniem līdz sīkiem apakšbaseiniem (ap miljonu daudzstūru vissīkākajā sadalījumā). Tas ir slānis «kas kur tek», ne pieprasījuma un piedāvājuma modelis. WRI Aqueduct (kartīte Ūdens stress) ir riska atlants. HydroSHEDS hubs ir hydrosheds.org.',
+    howToRead:
+      'Krāsains daudzstūris ir notece, ne valsts un ne sausuma balles. Iekļautie līmeņi ļauj tuvināt. Beznoteces baseini nesasniedz okeānu. Lejupielādes daudzstūri ir HydroBASINS. Priekšskats ir Commons pasaules sateces baseinu izlase, ne HydroBASINS shapefile.',
+    caveats:
+      'DEM atvasināti ūdensšķirtnes var palaist garām karstu, kanālus un cilvēku pārliešanu starp baseiniem. Antarktīda nav iekļauta. Nelasi sīktēlu kā ūdens tiesības, stresu vai konflikta prognozi.',
+    licenseNote:
+      'HydroBASINS izplata zinātnei, izglītībai un komercijai ar HydroSHEDS licenci (citējiet Lehner & Grill 2013). Priekšskats ir Babelia Hidromundi sateces baseinu izlase (CC BY-SA 4.0), ne HydroSHEDS produkta figūra.',
+    imageAlt:
+      'Pasaules karte ar izraudzītiem upju sateces baseiniem pasteļtoņu daudzstūros uz gaiši zila okeāna — hidrografiska bāze, ne ūdens stresa indekss',
+  },
+  'freshwater-aquastat': {
+    title: 'Saldūdens resursi (AQUASTAT)',
+    hook: 'Valstu atjaunojamais ūdens un izņemšana no FAO globālās ūdens informācijas sistēmas — statistika un valstu profili, ne viens stresa rastrs.',
+    description:
+      'FAO AQUASTAT vāc atjaunojamos ūdens resursus, izņemšanu un apūdeņošanas statistiku, plus valstu un baseinu profilus. Tā ir nacionālo ūdens rēķinu grāmata, ne baseina mēroga riska modelis un ne aku žurnāls. Nesajauc ar WRI Aqueduct (kartīte Ūdens stress) un ne ar gruntsūdens līmeņa karti. IGRAC ir cits produkts, ne šī kartīte.',
+    howToRead:
+      'Valsts vidējais slēpj pilsētas, kas ved ūdeni, un saimniecības, kas izžūst. Pārrobežu upes ir kopīgas; AQUASTAT raksta nacionālos rēķinus. Tabulas un profili ir AQUASTAT portālā. Priekšskats ir Our World in Data valstu karte par atjaunojamo saldūdeni uz cilvēku (AQUASTAT caur Pasaules Banku), ne Aqueduct baseini.',
+    caveats:
+      'Nacionālā statistika kavējas, definīcijas atšķiras. «Atjaunojams» nav tas pats, kas pieejams vai tīrs. Neizgudro slāpstošu valstu rangu no sīktēla.',
+    licenseNote:
+      'AQUASTAT ir FAO sistēma; citējiet FAO. Mēs izvietojam apgrieztu Our World in Data kartes eksportu (CC BY) par atjaunojamo saldūdeni uz iedzīvotāju, no AQUASTAT caur Pasaules Banku. Aktuālās tabulas ir FAO AQUASTAT.',
+    imageAlt:
+      'Our World in Data horoplēts par atjaunojamo saldūdeni uz cilvēku: blāvas sausās zemes un tumšāks tirkīzs ūdeņiem bagātām valstīm',
+  },
+  'exclusive-economic-zones': {
+    title: 'Ekskluzīvās ekonomiskās zonas',
+    hook: 'Jūras EEZ daudzstūri — kas piesaka kuru okeāna joslu. Papildina sauszemes robežas; ne otrs valstu slānis.',
+    description:
+      'Ekskluzīvā ekonomiskā zona parasti ir josla līdz 200 jūras jūdzēm no sākuma līnijas, kur valstij ir suverēnas tiesības uz resursiem ūdenī un gultnē. Marine Regions (Flandrijas jūras institūts) publicē globālu EEZ ģeodatubāzi — parasto publisko atsauci. Tā ir jūras jurisdikcija, ne otra Natural Earth admin-0 valstu karte. Marine Regions hubs ir marineregions.org.',
+    howToRead:
+      'Zila okeāna josla ir pretenzija vai līguma līnija, dažkārt ar pārklāšanos. Atklātā jūra ir tālāk. Strīdīgās EEZ zīmē vienā veidā, lai karti vispār varētu uzzīmēt. Aktuālie daudzstūri ir Marine Regions. Priekšskats ir Commons pasaules EEZ shēma, ne viņu datubāzes izgāšana.',
+    caveats:
+      'Līgumi, viduslīnijas un kopīgi režīmi mainās. Sīktēls nav UNCLOS tiesvedība. Zvejas un naftas tiesības nav suverenitāte pār katru ūdens staba lietošanu.',
+    licenseNote:
+      'Marine Regions EEZ dati parasti ir CC BY 4.0 (citējiet Flanders Marine Institute). Priekšskats ir B1mbo Commons pasaules EEZ / teritoriālo ūdeņu shēma (CC BY-SA 3.0 CL) pēc VLIZ jūras robežām.',
+    imageAlt:
+      'Pasaules kontūra ar tumši zilu jūras joslu ap krastiem un salām — ekskluzīvās ekonomiskās zonas, ne sauszemes robežas',
+  },
+  'living-languages-count': {
+    title: 'Dzīvo valodu skaits',
+    hook: 'Ethnologue publiskais ieskats, cik dzīvu valodu tie skaita — mēroga kartīte blakus Glottolog saimju kartei, ne otrs saimju atlants.',
+    description:
+      'Ethnologue (SIL International) publicē publisku ieskatu par dzīvo valodu skaitu savā sarakstā. Šis kopsumma kustas, kad mainās ISO 639-3 un kad valodas pārklasificē par dzīvām vai izmirušām. Šī kartīte ir par šī inventāra lielumu, ne par otru valodu saimju karti. Glottolog šajā plauktā paliek saimju klasifikācijas karte.',
+    howToRead:
+      'Dzīvais skaitlis ir Ethnologue ieskata lapā. Mēs šeit neliekam virsraksta skaitli, jo lapa ir uzskaites avots un skaitlis mainās. Priekšskats ir vecāks Ethnologue valodu daudzveidības indeksa horoplēts — tumšāks tur, kur daudzas valodas dala valsti — ne saimju koka atlants un ne tautu skaitīšana.',
+    caveats:
+      '«Valoda» ir zinātnisks un politisks lēmums. Koloniālās robežas griež runas kopienas. Nelasi toni kā etniskumu, lojalitāti vai teritoriju. Neklonē šo kartīti kā otru Glottolog.',
+    licenseNote:
+      'Ieskata teksts ir Ethnologue. Priekšskats ir Wikimedia Ethnologue 18 valodu daudzveidības indeksa karte (cmglee, CC BY-SA 3.0) — valstu daudzveidības horoplēts, ne Glottolog saimes un ne pašreizējā izdevuma Ethnologue grafika.',
+    imageAlt:
+      'Zaļš horoplēts par valodu daudzveidību pēc valstīm: tumšāks zaļš tur, kur daudzas valodas dala valsti, blāvāks tur, kur maz — ne valodu saimju atlants',
+  },
 };
