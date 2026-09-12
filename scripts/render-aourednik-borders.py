@@ -4,10 +4,12 @@
 Fills + large polity labels (stock SVGs are stroke-only). Modern Natural Earth
 coastlines are the land base — schematic / WIP, not a cadastral survey.
 
-Output: public/images/maps/borders/y1100.png, y1300.png, y1700.png
+Output: public/images/maps/borders/y1100.png, y1300.png, y1700.png,
+y1800.png, y1900.png
 Width 2560. Footer credits GPL-3.0 Corresponding Source; no © Fix Planet on geometry.
 
 Run from repo root: python3 scripts/render-aourednik-borders.py
+Optional years: python3 scripts/render-aourednik-borders.py 1800 1900
 """
 
 from __future__ import annotations
@@ -75,7 +77,12 @@ POLITY_RE = re.compile(
     r"japan|mali|ethiopia|morocco|tibet|novgorod|hungary|delhi|song|"
     r"yuan|seljuk|fatimid|byzantine|ottoman|mughal|safavid|qing|manchu|"
     r"muscov|liao|xixia|khmer|chola|ghaznavid|mamluk|peru|brazil|"
-    r"new spain|dutch|prussia|denmark|norway|venice|hungary|ryazan",
+    r"new spain|dutch|prussia|denmark|norway|venice|hungary|ryazan|"
+    r"united states|united kingdom|canada|brazil|argentina|mexico|"
+    r"persia|afghanistan|austria|germany|italy|australia|louisiana|"
+    r"granada|r[ií]o de la plata|rupert|quebec|maratha|raj|arabia|"
+    r"egypt|bolivia|colombia|venezuela|chile|algeria|sokoto|burma|"
+    r"greenland|indochina|cape colony|imperial japan",
     re.I,
 )
 
@@ -140,6 +147,42 @@ COLOR_OVERRIDE = {
     "prussia": (64, 80, 140),
     "portugal": (32, 112, 72),
     "new france": (80, 112, 176),
+    "russian empire": (139, 84, 40),
+    "qing empire": (132, 36, 78),
+    "united states of america": (56, 104, 176),
+    "united states": (56, 104, 176),
+    "rupert's land": (196, 80, 92),
+    "viceroyalty of brazil": (28, 104, 58),
+    "kingdom of brazil": (28, 104, 58),
+    "viceroyalty of new granada": (56, 140, 96),
+    "viceroyalty of the río de la plata": (80, 156, 80),
+    "viceroyalty of the rio de la plata": (80, 156, 80),
+    "luisiana": (120, 160, 88),
+    "persia": (36, 132, 72),
+    "maratha confederacy": (16, 92, 52),
+    "united kingdom": (196, 80, 92),
+    "united kingdom of great britain and ireland": (196, 80, 92),
+    "canada": (196, 80, 92),
+    "british raj": (196, 80, 92),
+    "western australia (uk)": (196, 80, 92),
+    "queensland (uk)": (196, 80, 92),
+    "northern territory (uk)": (196, 80, 92),
+    "south australia (uk)": (196, 80, 92),
+    "new south wales (uk)": (196, 80, 92),
+    "austria hungary": (176, 72, 112),
+    "austrian empire": (176, 72, 112),
+    "germany": (64, 80, 140),
+    "argentina": (80, 148, 108),
+    "mexico": (86, 164, 86),
+    "imperial japan": (196, 48, 48),
+    "japan": (196, 48, 48),
+    "netherlands indies": (184, 140, 56),
+    "french indochina": (64, 96, 176),
+    "sweden–norway": (64, 132, 176),
+    "sweden-norway": (64, 132, 176),
+    "egypt": (196, 156, 64),
+    "arabia": (196, 148, 56),
+    "sokoto caliphate": (176, 124, 48),
 }
 
 PALETTE = [
@@ -193,6 +236,28 @@ DISPLAY = {
     "central Asian khanates": "Central Asian khanates",
     "Ghaznavid Emirate": "Ghaznavid",
     "Post-Ming Warlords": "Post-Ming",
+    "Russian Empire": "Russia",
+    "Qing Empire": "Qing Dynasty",
+    "United States of America": "United States",
+    "Rupert's Land": "Rupert's Land",
+    "Viceroyalty of Brazil": "Brazil",
+    "Kingdom of Brazil": "Brazil",
+    "Viceroyalty of New Granada": "New Granada",
+    "Viceroyalty of the Río de la Plata": "Río de la Plata",
+    "Luisiana": "Louisiana",
+    "Persia": "Persia",
+    "Maratha Confederacy": "Maratha",
+    "United Kingdom": "United Kingdom",
+    "United Kingdom of Great Britain and Ireland": "United Kingdom",
+    "British Raj": "British Raj",
+    "Western Australia (UK)": "Australia",
+    "Austria Hungary": "Austria-Hungary",
+    "Austrian Empire": "Austria",
+    "Imperial Japan": "Japan",
+    "Netherlands Indies": "Dutch East Indies",
+    "French Indochina": "French Indochina",
+    "Sweden–Norway": "Sweden–Norway",
+    "Denmark-Norway": "Denmark–Norway",
 }
 
 # Forced large labels + size + preferred lon/lat (school-atlas placement).
@@ -244,6 +309,52 @@ FORCE_LABELS = {
         "Holy Roman Empire": (10, 49, 16),
         "England and Ireland": (-2, 53, 16),
         "Quazaq Khanate": (68, 48, 16),
+    },
+    1800: {
+        "Russian Empire": (95, 60, 72),
+        "Qing Empire": (108, 36, 44),
+        "Ottoman Empire": (36, 38, 26),
+        "United States of America": (-96, 38, 22),
+        "Rupert's Land": (-100, 58, 22),
+        "Viceroyalty of New Spain": (-104, 24, 24),
+        "Viceroyalty of Brazil": (-50, -10, 26),
+        "Viceroyalty of Peru": (-72, -12, 20),
+        "Viceroyalty of New Granada": (-72, 4, 16),
+        "Viceroyalty of the Río de la Plata": (-62, -32, 16),
+        "Luisiana": (-92, 32, 16),
+        "Persia": (54, 32, 22),
+        "Maratha Confederacy": (76, 20, 18),
+        "Dutch East Indies": (118, -2, 16),
+        "Sweden": (18, 62, 18),
+        "Denmark-Norway": (10, 64, 14),
+        "France": (2, 47, 18),
+        "Spain": (-4, 40, 18),
+        "United Kingdom": (-2, 54, 14),
+        "Japan": (138, 36, 16),
+        "Austrian Empire": (16, 48, 14),
+    },
+    1900: {
+        "Russian Empire": (95, 60, 72),
+        "Manchu Empire": (108, 36, 44),
+        "United States of America": (-98, 40, 24),
+        "Canada": (-106, 58, 28),
+        "Kingdom of Brazil": (-50, -10, 26),
+        "British Raj": (78, 22, 28),
+        "Ottoman Empire": (36, 38, 22),
+        "Argentina": (-64, -34, 20),
+        "Mexico": (-102, 24, 20),
+        "Persia": (54, 32, 20),
+        "Western Australia (UK)": (132, -25, 22),
+        "Netherlands Indies": (118, -2, 16),
+        "Sweden–Norway": (16, 62, 16),
+        "France": (2, 47, 18),
+        "Germany": (10, 51, 16),
+        "Austria Hungary": (16, 48, 14),
+        "United Kingdom of Great Britain and Ireland": (-2, 54, 14),
+        "Imperial Japan": (138, 36, 16),
+        "French Indochina": (106, 16, 14),
+        "Egypt": (30, 26, 16),
+        "Arabia": (46, 24, 16),
     },
 }
 
@@ -537,11 +648,14 @@ def render_year(year: int) -> Path:
     return dest
 
 
-def main() -> None:
+def main(years: list[int] | None = None) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in (1100, 1300, 1700):
+    for year in years or (1100, 1300, 1700, 1800, 1900):
         render_year(year)
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    years = [int(a) for a in sys.argv[1:] if a.isdigit()]
+    main(years or None)

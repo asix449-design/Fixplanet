@@ -279,16 +279,22 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1800: {
-    title: '1800 CE — nearest map: 1815',
+    title: '1800 CE',
     caption:
-      'Congress of Vienna world (1815), the nearest detailed free political sheet to 1800. Napoleonic redraws are already in; 1800 itself is the labeled gap.',
-    imageAlt: 'Political world map for 1815 after the Congress of Vienna',
+      'Exact year 1800, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the 1815 Congress of Vienna sheet. Modern coastlines; schematic / WIP borders.',
+    imageAlt: 'Schematic world political reconstruction for 1800 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900 CE — nearest map: 1914',
+    title: '1900 CE',
     caption:
-      'OER political world on the eve of the First World War (1914). Closer than inventing a 1900 choropleth. Empires still colour most of Africa and much of Asia.',
-    imageAlt: 'OER political map of the world in 1914, used for the 1900 step',
+      'Exact year 1900, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1914 teaching map. Modern coastlines; schematic / WIP borders.',
+    imageAlt: 'Schematic world political reconstruction for 1900 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000 CE — nearest map: present-day outlines',
@@ -426,16 +432,22 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1800: {
-    title: '1800 н. э. — ближайшая карта: 1815',
+    title: '1800 н. э.',
     caption:
-      'Мир Венского конгресса (1815) — ближайший подробный свободный политический лист к 1800 году. Наполеоновские переделы уже на карте; сам 1800-й — помеченный пробел.',
-    imageAlt: 'Политическая карта мира 1815 года после Венского конгресса',
+      'Точный 1800 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не лист Венского конгресса 1815 года. Современные берега; схема / границы WIP.',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1800 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900 н. э. — ближайшая карта: 1914',
+    title: '1900 н. э.',
     caption:
-      'Политический мир OER накануне Первой мировой (1914). Честнее, чем выдумывать хороплет 1900 года. Империи всё ещё красят большую часть Африки и много Азии.',
-    imageAlt: 'Политическая карта мира OER 1914 года для шага 1900',
+      'Точный 1900 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1914 года. Современные берега; схема / границы WIP.',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1900 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000 н. э. — ближайшая карта: современные контуры',
@@ -573,16 +585,22 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1800: {
-    title: '1800 n.e. — najbliższa mapa: 1815',
+    title: '1800 n.e.',
     caption:
-      'Świat Kongresu Wiedeńskiego (1815), najbliższy szczegółowy wolny arkusz polityczny do 1800. Przesunięcia napoleońskie już są; sam 1800 to oznaczona luka.',
-    imageAlt: 'Polityczna mapa świata z 1815 po Kongresie Wiedeńskim',
+      'Dokładny rok 1800, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie arkusz Kongresu Wiedeńskiego z 1815. Współczesne wybrzeża; schemat / granice WIP.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1800 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900 n.e. — najbliższa mapa: 1914',
+    title: '1900 n.e.',
     caption:
-      'Polityczny świat OER w przededniu I wojny (1914). Uczciwsze niż wymyślanie choroplethu 1900. Imperia wciąż kolorują większość Afryki i sporo Azji.',
-    imageAlt: 'Polityczna mapa świata OER z 1914 dla kroku 1900',
+      'Dokładny rok 1900, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1914. Współczesne wybrzeża; schemat / granice WIP.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1900 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000 n.e. — najbliższa mapa: współczesne kontury',
@@ -720,16 +738,22 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1800: {
-    title: '1800. m.ē. — tuvākā karte: 1815',
+    title: '1800. m.ē.',
     caption:
-      'Vīnes kongresa pasaule (1815), tuvākā detalizētā brīvā politiskā lapa 1800. gadam. Napoleona pārdales jau ir; pats 1800. ir marķēts iztrūkums.',
-    imageAlt: 'Politiskā pasaules karte 1815. gadā pēc Vīnes kongresa',
+      'Precīzs 1800. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav 1815. gada Vīnes kongresa lapa. Mūsdienu krasti; shēma / robežas WIP.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1800. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900. m.ē. — tuvākā karte: 1914',
+    title: '1900. m.ē.',
     caption:
-      'OER politiskā pasaule Pirmā pasaules kara priekšvakarā (1914). Godīgāk nekā izdomāt 1900. gada horoplētu. Impērijas joprojām krāso lielāko daļu Āfrikas un daudz Āzijas.',
-    imageAlt: 'OER politiskā karte 1914. gadam 1900. soļa vietā',
+      'Precīzs 1900. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1914. mācību karte. Mūsdienu krasti; shēma / robežas WIP.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1900. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000. m.ē. — tuvākā karte: mūsdienu kontūras',

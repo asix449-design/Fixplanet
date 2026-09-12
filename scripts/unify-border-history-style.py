@@ -271,18 +271,15 @@ def main() -> None:
     # Lessman DEM sheets cannot keep empire tints once hillshade is flattened;
     # those years use nearest matching-style world plates instead (see border-history.ts).
 
-    # OER / grey-land teaching maps.
+    # Founder 1200 plate may be restyled if a Commons original is cached.
     process_file(originals / "y1200.jpg", BORDERS / "y1200.jpg", "grey_land_blue_sea")
-    process_file(originals / "y1914.jpg", BORDERS / "y1914.jpg", "grey_land_blue_sea")
 
     # Babelia 1648 (nearest sheet for 1600) — grey land / white sea.
     process_file(CAND / "y1648.png", BORDERS / "y1648.png", "white_ocean")
 
-    # 1100 / 1300 / 1700 are aourednik GeoJSON renders (see render-aourednik-borders.py).
-    # Do not overwrite those plates from Commons thumbs.
-
-    # 1815 Congress of Vienna — grey land / light blue sea.
-    process_file(originals / "y1815.jpg", BORDERS / "y1815.jpg", "grey_land_blue_sea")
+    # 1100 / 1300 / 1700 / 1800 / 1900 are aourednik GeoJSON renders
+    # (see render-aourednik-borders.py). Do not overwrite those plates
+    # from Commons thumbs.
 
     # Present-day 4-color country fills on BlankMap-World.
     render_present_day(BORDERS / "y2000.png", "2000")
