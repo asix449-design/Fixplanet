@@ -104,6 +104,30 @@
     "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam major belt; Christian Baltics/north fringe; Americas unmapped."
   },
   {
+    "file": "y1300.png",
+    "title": "1300 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Mamluk Egypt–Syria, Maghreb–Libya, Anatolia fringe, Granada pocket); Americas indigenous local traditions (Aztec Mesoamerica + Andes + other)."
+  },
+  {
+    "file": "y1400.png",
+    "title": "1400 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Timur zone + Ottoman Anatolia majority + Granada pocket); Balkans mostly Christian; Americas indigenous local traditions (Aztec + Inca + other)."
+  },
+  {
+    "file": "y1500.png",
+    "title": "1500 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; no Granada; Anatolia ~Muslim Ottoman; Balkans mostly Christian; Americas Aztec+Inca local traditions + light Christian colonial edge."
+  },
+  {
     "file": "y0001.png",
     "title": "Principales religions de l’ancien monde (Planche VI)",
     "source": "Élisée Reclus, L’Homme et la Terre (1905)",
@@ -136,12 +160,12 @@
     "note": "Regional plate only. Rest of the world is a labeled gap."
   },
   {
-    "file": "y1500.png",
+    "file": "y1500-spread.png",
     "title": "Spread of world religions until 1500",
     "source": "Fährtenleser, Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Medieval-World-Religions.png",
     "license": "CC BY-SA 4.0",
-    "note": "Cumulative process map to 1500, not a year-by-year snapshot."
+    "note": "Cumulative process map to 1500, not a year-by-year snapshot. Kept for unpublished later steps after the 1500 schematic took y1500.png."
   },
   {
     "file": "y1821.jpg",

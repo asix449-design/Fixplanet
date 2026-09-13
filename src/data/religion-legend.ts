@@ -33,5 +33,5 @@ export const RELIGION_LEGEND_COLORS: Record<ReligionLegendId, string> = {
 };
 
 /** Years published in this schematic shelf. Later centuries stay unpublished. */
-export const RELIGION_PILOT_YEARS = [1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200] as const;
-export const RELIGION_PUBLISHED_YEARS = [1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200] as const;
+export const RELIGION_PILOT_YEARS = [1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500] as const;
+export const RELIGION_PUBLISHED_YEARS = [1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500] as const;
