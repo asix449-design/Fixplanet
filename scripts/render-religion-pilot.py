@@ -83,8 +83,7 @@ YEARS = {
 
 FOOTER = (
     "Religion fills © Fix Planet schematic reconstruction · "
-    "Basemap aourednik historical-basemaps GPL-3.0 · "
-    "github.com/aourednik/historical-basemaps · Not a census"
+    "Basemap historical-basemaps (GPL-3.0) · Not a census"
 )
 
 LEGEND_ORDER = [
@@ -295,7 +294,7 @@ def paint_legend(draw: ImageDraw.ImageDraw, year: int, colors: dict[str, str]) -
     item_font = load_font(14)
     title = f"{year} CE  ·  schematic"
     if year == 1:
-        title = "1 CE  ·  schematic (nearest underlay)"
+        title = "1 CE · schematic reconstruction"
     draw.text((x + pad, y + 10), title, fill=INK, font=title_font)
     row_y = y + 38
     for rid in ids:
@@ -432,7 +431,7 @@ def render_year(year: int) -> Path:
     foot_font = load_font(18)
     label = f"{year} CE"
     if year == 1:
-        label = "1 CE  ·  underlay world_100 (nearest)"
+        label = "1 CE · schematic reconstruction"
     draw.text(
         (WIDTH - 28, HEIGHT - 70),
         label,

@@ -55,22 +55,22 @@ export type ReligionFrameCopy = {
 };
 
 const pageEn: ReligionHistoryPage = {
-  metaTitle: 'Religions — 1–600 CE schematics — Fix Planet',
+  metaTitle: 'Religions — early-century schematics — Fix Planet',
   metaDescription:
-    'In-house schematic religion overlays for 1, 100, 200, 300, 400, 500, and 600 CE. Not a census. Americas not mapped.',
-  eyebrow: 'Map room · 1–600 CE schematics',
+    'In-house schematic religion overlays for the early centuries CE. Not a census. Americas not mapped.',
+  eyebrow: 'Map room · early centuries CE',
   title: 'Religions',
   lead:
-    'A shelf of flat schematic plates for 1, 100, 200, 300, 400, 500, and 600 CE. Religion fills are Fix Planet reconstructions. No globe. Later centuries keep their existing sourced plates.',
+    'A shelf of flat schematics for the early centuries CE. Religion fills are Fix Planet reconstructions. Later centuries keep their earlier source plates.',
   honesty:
-    'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. These plates are coarse Old-World washes, not a headcount. Year 1 marks its underlay as nearest. The Reclus 1905 plate remains a museum companion. The Christianity-to-600 process plate stays on the shelf as a companion, not as the 300–600 multi-religion map.',
+    'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. These plates are coarse Old-World washes — not a headcount and not a map of official state religions. The Reclus 1905 plate remains a museum companion. The AD 600 Christianity process plate stays on the shelf as a companion, not as the multi-religion schematic for those centuries.',
   back: '← Maps',
   scrubberAria: 'Jump to a century',
   sourceLabel: 'Source',
   licenseLabel: 'License',
   yearLabel: 'Century step',
   mapYearLabel: 'Map dated',
-  nearestNote: 'Nearest underlay — no world_1 sheet; world_100 stands in.',
+  nearestNote: 'Nearest openly licensed plate — not an exact-year sheet.',
   shelfHeading: 'Also on this shelf',
   coverage: {
     'schematic-pilot':
@@ -86,45 +86,44 @@ const pageEn: ReligionHistoryPage = {
     'majority-modern': 'Modern majority-religion regions — affiliation, not piety, and not Pew artwork',
   },
   catalogTitle: 'Religions',
-  catalogHook: 'Pilot schematics for 1–600 CE — not a census, not a globe.',
+  catalogHook: 'Pilot schematics for the early centuries CE — not a census.',
   catalogCta: 'Open the timeline →',
-  catalogAlt: 'Schematic religion plate used as the catalog card for the Religions 1–600 CE shelf',
+  catalogAlt: 'Schematic religion plate used as the catalog card for the Religions shelf',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors and oceans, used as a physical backdrop, not a religion map',
   soonNotice:
-    'Later centuries keep their existing sourced plates. This shelf is the 1–600 CE schematic set plus the AD 600 Christianity process companion.',
+    'Later centuries keep their earlier source plates. This shelf is the early-century schematic set plus the AD 600 Christianity process companion.',
   legendHeading: 'Shared legend',
   continentsHeading: 'By continent',
   honestyPills: [
     'Schematic reconstruction',
     'Not a census',
-    'Not Paradox',
-    'Old World / Mediterranean focus',
-    'Americas not invented',
+    'Old World focus',
+    'Americas not shown',
   ],
   companionReclus: 'Museum companion: Reclus 1905 Old-World plate (public domain)',
   companionChristianity600: 'Also: Christianity spread → 600 (process)',
-  laterUnpublished: 'Years after 600 keep their existing sourced plates; they are not new multi-religion schematics.',
-  correspondingSource: 'Corresponding Source for the GPL basemap',
+  laterUnpublished: 'Later centuries keep their earlier source plates.',
+  correspondingSource: 'github.com/aourednik/historical-basemaps',
 };
 
 const pageRu: ReligionHistoryPage = {
-  metaTitle: 'Религии — схемы 1–600 н. э. — Fix Planet',
+  metaTitle: 'Религии — схемы ранних веков — Fix Planet',
   metaDescription:
-    'Собственные схематические наложения религий на 1, 100, 200, 300, 400, 500 и 600 годы н. э. Не перепись. Америка не нанесена.',
-  eyebrow: 'Картографическая · схемы 1–600 н. э.',
+    'Собственные схематические наложения религий для ранних веков н. э. Не перепись. Америка не нанесена.',
+  eyebrow: 'Картографическая · ранние века н. э.',
   title: 'Религии',
   lead:
-    'Полка плоских схем на 1, 100, 200, 300, 400, 500 и 600 годы н. э. Заливки религий — реконструкции Fix Planet. Без глобуса. Более поздние века сохраняют свои прежние исходные листы.',
+    'Полка плоских схем для ранних веков н. э. Заливки религий — реконструкции Fix Planet. Более поздние века сохраняют свои прежние исходные листы.',
   honesty:
-    'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Эти листы — грубые смывы Старого Света, не перепись. Для 1 года подложка помечена как ближайшая. Лист Реклю 1905 года остаётся музейным компаньоном. Процессный лист христианства до 600 остаётся на полке как компаньон, не как многорелигиозная карта 300–600.',
+    'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Эти листы — грубые смывы Старого Света: не перепись и не карта официальных государственных религий. Лист Реклю 1905 года остаётся музейным компаньоном. Процессный лист христианства до 600 остаётся на полке как компаньон, не как многорелигиозная схема тех веков.',
   back: '← Карты',
   scrubberAria: 'Перейти к столетию',
   sourceLabel: 'Источник',
   licenseLabel: 'Лицензия',
   yearLabel: 'Шаг века',
   mapYearLabel: 'Дата карты',
-  nearestNote: 'Ближайшая подложка — листа world_1 нет; стоит world_100.',
+  nearestNote: 'Ближайший открытый лист — не точный лист на круглый год.',
   shelfHeading: 'Также на этой полке',
   coverage: {
     'schematic-pilot':
@@ -140,45 +139,44 @@ const pageRu: ReligionHistoryPage = {
     'majority-modern': 'Современные регионы большинства — принадлежность, не благочестие и не графика Pew',
   },
   catalogTitle: 'Религии',
-  catalogHook: 'Пилотные схемы на 1–600 н. э. — не перепись, не глобус.',
+  catalogHook: 'Пилотные схемы ранних веков н. э. — не перепись.',
   catalogCta: 'Открыть ленту →',
-  catalogAlt: 'Схематический лист религий — карточка полки «Религии» 1–600 н. э.',
+  catalogAlt: 'Схематический лист религий — карточка полки «Религии»',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши и океанов, физический фон, не карта религий',
   soonNotice:
-    'Более поздние века сохраняют свои прежние исходные листы. На полке — схемы 1–600 н. э. и компаньон процесса христианства до 600.',
+    'Более поздние века сохраняют свои прежние исходные листы. На полке — схемы ранних веков и компаньон процесса христианства до 600.',
   legendHeading: 'Общая легенда',
   continentsHeading: 'По континентам',
   honestyPills: [
     'Схематическая реконструкция',
     'Не перепись',
-    'Не Paradox',
-    'Фокус: Старый Свет / Средиземноморье',
-    'Америку не выдумываем',
+    'Фокус: Старый Свет',
+    'Америка не нанесена',
   ],
   companionReclus: 'Музейный компаньон: лист Реклю 1905 года о Старом Свете (общественное достояние)',
   companionChristianity600: 'Также: распространение христианства → 600 (процесс)',
-  laterUnpublished: 'Годы после 600 сохраняют свои прежние исходные листы; это не новые многорелигиозные схемы.',
-  correspondingSource: 'Corresponding Source подложки GPL',
+  laterUnpublished: 'Более поздние века сохраняют свои прежние исходные листы.',
+  correspondingSource: 'github.com/aourednik/historical-basemaps',
 };
 
 const pagePl: ReligionHistoryPage = {
-  metaTitle: 'Religie — schematy 1–600 n.e. — Fix Planet',
+  metaTitle: 'Religie — schematy wczesnych wieków — Fix Planet',
   metaDescription:
-    'Własne schematyczne nakładki religii na lata 1, 100, 200, 300, 400, 500 i 600 n.e. Nie spis. Ameryk nie naniesiono.',
-  eyebrow: 'Mapownia · schematy 1–600 n.e.',
+    'Własne schematyczne nakładki religii dla wczesnych wieków n.e. Nie spis. Ameryk nie naniesiono.',
+  eyebrow: 'Mapownia · wczesne wieki n.e.',
   title: 'Religie',
   lead:
-    'Półka płaskich schematów na lata 1, 100, 200, 300, 400, 500 i 600 n.e. Wypełnienia religii to rekonstrukcje Fix Planet. Bez globusa. Późniejsze stulecia zachowują swoje dotychczasowe płyty źródłowe.',
+    'Półka płaskich schematów dla wczesnych wieków n.e. Wypełnienia religii — rekonstrukcje Fix Planet. Późniejsze wieki zachowują swoje wcześniejsze płyty źródłowe.',
   honesty:
-    'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Te płyty to grube plamy Starego Świata, nie spis głów. Rok 1 oznacza podkład jako najbliższy. Tablica Reclusa z 1905 zostaje towarzyszem muzealnym. Płyta procesu chrześcijaństwa do 600 zostaje na półce jako towarzysz, nie jako wieloreligijna mapa 300–600.',
+    'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Te płyty to grube plamy Starego Świata — nie spis głów i nie mapa oficjalnych religii państwowych. Tablica Reclusa z 1905 zostaje towarzyszem muzealnym. Płyta procesu chrześcijaństwa do 600 zostaje na półce jako towarzysz, nie jako wieloreligijny schemat tych wieków.',
   back: '← Mapy',
   scrubberAria: 'Skocz do stulecia',
   sourceLabel: 'Źródło',
   licenseLabel: 'Licencja',
   yearLabel: 'Krok stulecia',
   mapYearLabel: 'Data mapy',
-  nearestNote: 'Najbliższy podkład — nie ma arkusza world_1; stoi world_100.',
+  nearestNote: 'Najbliższa płyta na otwartej licencji — nie dokładny arkusz z okrągłego roku.',
   shelfHeading: 'Także na tej półce',
   coverage: {
     'schematic-pilot':
@@ -194,45 +192,44 @@ const pagePl: ReligionHistoryPage = {
     'majority-modern': 'Współczesne regiony większości — przynależność, nie pobożność i nie grafika Pew',
   },
   catalogTitle: 'Religie',
-  catalogHook: 'Schematy pilotażowe 1–600 n.e. — nie spis, nie globus.',
+  catalogHook: 'Schematy pilotażowe wczesnych wieków n.e. — nie spis.',
   catalogCta: 'Otwórz oś czasu →',
-  catalogAlt: 'Schematyczna płyta religii — karta półki Religii 1–600 n.e.',
+  catalogAlt: 'Schematyczna płyta religii — karta półki Religii',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów i oceanów, tło fizyczne, nie mapa religii',
   soonNotice:
-    'Późniejsze stulecia zachowują dotychczasowe płyty źródłowe. Na półce są schematy 1–600 n.e. oraz towarzysz procesu chrześcijaństwa do 600.',
+    'Późniejsze wieki zachowują wcześniejsze płyty źródłowe. Na półce są schematy wczesnych wieków oraz towarzysz procesu chrześcijaństwa do 600.',
   legendHeading: 'Wspólna legenda',
   continentsHeading: 'Według kontynentu',
   honestyPills: [
     'Rekonstrukcja schematyczna',
     'Nie spis',
-    'Nie Paradox',
-    'Stary Świat / Śródziemnomorze',
-    'Ameryk nie wymyślamy',
+    'Stary Świat',
+    'Ameryk nie pokazano',
   ],
   companionReclus: 'Towarzysz muzealny: tablica Reclusa z 1905 o Starym Świecie (domena publiczna)',
   companionChristianity600: 'Także: rozprzestrzenianie chrześcijaństwa → 600 (proces)',
-  laterUnpublished: 'Lata po 600 zachowują dotychczasowe płyty źródłowe; to nie nowe wieloreligijne schematy.',
-  correspondingSource: 'Corresponding Source podkładu GPL',
+  laterUnpublished: 'Późniejsze wieki zachowują wcześniejsze płyty źródłowe.',
+  correspondingSource: 'github.com/aourednik/historical-basemaps',
 };
 
 const pageLv: ReligionHistoryPage = {
-  metaTitle: 'Reliģijas — shēmas 1.–600. m.ē. — Fix Planet',
+  metaTitle: 'Reliģijas — agrīno gadsimtu shēmas — Fix Planet',
   metaDescription:
-    'Pašu shēmatiski reliģiju pārklājumi 1., 100., 200., 300., 400., 500. un 600. gadam m.ē. Ne tautas skaitīšana. Amerika nav kartēta.',
-  eyebrow: 'Karšu zāle · shēmas 1.–600. m.ē.',
+    'Pašu shēmatiski reliģiju pārklājumi agrīnajiem gadsimtiem m.ē. Ne tautas skaitīšana. Amerika nav kartēta.',
+  eyebrow: 'Karšu zāle · agrīnie gadsimti m.ē.',
   title: 'Reliģijas',
   lead:
-    'Plaukts ar plakanām shēmām 1., 100., 200., 300., 400., 500. un 600. gadam m.ē. Reliģiju aizpildes ir Fix Planet rekonstrukcijas. Bez globusa. Vēlākie gadsimti saglabā savas līdzšinējās avota plāksnes.',
+    'Plauktu plakano shēmu komplekts agrīnajiem m.ē. gadsimtiem. Reliģiju aizpildījumi — Fix Planet rekonstrukcijas. Vēlākie gadsimti saglabā savas iepriekšējās avota plāksnes.',
   honesty:
-    'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Šīs plāksnes ir rupjas Vecās pasaules joslas, ne galvu skaitīšana. 1. gads apakšslāni atzīmē kā tuvāko. Reclus 1905. gada plāksne paliek muzeja pavadonis. Kristietības procesa plāksne līdz 600. paliek plauktā kā pavadonis, ne kā 300.–600. daudzreliģiju karte.',
+    'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Šīs plāksnes ir rupjas Vecās pasaules joslas — ne galvu skaitīšana un ne oficiālo valsts reliģiju karte. Reclus 1905. gada plāksne paliek muzeja pavadonis. Kristietības procesa plāksne līdz 600. paliek plauktā kā pavadonis, ne kā daudzreliģiju shēma tiem gadsimtiem.',
   back: '← Kartes',
   scrubberAria: 'Pāriet uz gadsimtu',
   sourceLabel: 'Avots',
   licenseLabel: 'Licence',
   yearLabel: 'Gadsimta solis',
   mapYearLabel: 'Kartes datums',
-  nearestNote: 'Tuvākais apakšslānis — world_1 lapas nav; stāv world_100.',
+  nearestNote: 'Tuvākā atklāti licencētā plāksne — ne precīza lapa uz apaļu gadu.',
   shelfHeading: 'Arī šajā plauktā',
   coverage: {
     'schematic-pilot':
@@ -248,26 +245,25 @@ const pageLv: ReligionHistoryPage = {
     'majority-modern': 'Mūsdienu vairākuma reliģiju reģioni — piederība, ne dievbijība un ne Pew grafika',
   },
   catalogTitle: 'Reliģijas',
-  catalogHook: 'Pilotshēmas 1.–600. m.ē. — ne tautas skaitīšana, ne globuss.',
+  catalogHook: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem — ne tautas skaitīšana.',
   catalogCta: 'Atvērt laika līniju →',
-  catalogAlt: 'Reliģiju shēmas plāksne — Reliģiju 1.–600. m.ē. plaukta kartīte',
+  catalogAlt: 'Reliģiju shēmas plāksne — Reliģiju plaukta kartīte',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes un okeānu krāsas, fizisks fons, ne reliģiju karte',
   soonNotice:
-    'Vēlākie gadsimti saglabā līdzšinējās avota plāksnes. Šajā plauktā ir 1.–600. m.ē. shēmas un 600. gada kristietības procesa pavadonis.',
+    'Vēlākie gadsimti saglabā iepriekšējās avota plāksnes. Šajā plauktā ir agrīno gadsimtu shēmas un kristietības procesa pavadonis līdz 600.',
   legendHeading: 'Kopīgā leģenda',
   continentsHeading: 'Pa kontinentiem',
   honestyPills: [
     'Shēmatiska rekonstrukcija',
     'Ne tautas skaitīšana',
-    'Ne Paradox',
-    'Vecā pasaule / Vidusjūra',
-    'Ameriku neizdomājam',
+    'Vecā pasaule',
+    'Amerika nav rādīta',
   ],
   companionReclus: 'Muzeja pavadonis: Reclus 1905. gada Vecās pasaules plāksne (sabiedriskais īpašums)',
   companionChristianity600: 'Arī: kristietības izplatība → 600. (process)',
-  laterUnpublished: 'Gadi pēc 600. saglabā līdzšinējās avota plāksnes; tās nav jaunas daudzreliģiju shēmas.',
-  correspondingSource: 'GPL apakšslāņa Corresponding Source',
+  laterUnpublished: 'Vēlākie gadsimti saglabā iepriekšējās avota plāksnes.',
+  correspondingSource: 'github.com/aourednik/historical-basemaps',
 };
 
 const captionsEn: Record<number, ReligionFrameCopy> = {
@@ -830,6 +826,20 @@ export function getReligionHistoryPage(locale: Locale): ReligionHistoryPage {
   return page[locale];
 }
 
+const schematicDated: Record<Locale, (year: number) => string> = {
+  en: (year) => `${year} CE schematic`,
+  ru: (year) => `${year} н. э., схема`,
+  pl: (year) => `${year} n.e., schemat`,
+  lv: (year) => `${year}. m.ē., shēma`,
+};
+
+const schematicOrg: Record<Locale, string> = {
+  en: 'Fix Planet schematic reconstruction',
+  ru: 'Схематическая реконструкция Fix Planet',
+  pl: 'Rekonstrukcja schematyczna Fix Planet',
+  lv: 'Fix Planet shēmatiska rekonstrukcija',
+};
+
 export function getReligionHistoryFrames(locale: Locale): ReligionFrame[] {
   const published = new Set<number>(RELIGION_PUBLISHED_YEARS);
   return religionHistoryFrames
@@ -838,7 +848,14 @@ export function getReligionHistoryFrames(locale: Locale): ReligionFrame[] {
       const base = captions[locale][meta.year] ?? captions.en[meta.year];
       const pilot = religionPilotCopy[locale][meta.year] ?? religionPilotCopy.en[meta.year];
       const copy = pilot ?? base;
-      return { ...meta, ...copy };
+      const localized =
+        meta.coverage === 'schematic-pilot'
+          ? {
+              sourceYear: schematicDated[locale](meta.year),
+              sourceOrg: schematicOrg[locale],
+            }
+          : {};
+      return { ...meta, ...copy, ...localized };
     });
 }
 
