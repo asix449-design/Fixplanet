@@ -79,13 +79,13 @@ export const pl: Record<string, MapCopy> = {
     whyOnShelf:
       'Przestępczość zorganizowana i odporność to inny obiekt niż wskaźniki umyślnych zabójstw. Nie włączajcie tego indeksu do karty zabójstw i nie czytajcie ciemnego kraju jako wysokiego wskaźnika zabójstw.',
     howToRead:
-      'Wynik kraju to kompozyt ekspercki, nie wskaźnik policyjny i nie liczba zabójstw UNODC. Rynki, aktorzy i odporność to osobne filary. Aktualną warstwę otwórzcie na oficjalnej mapie cieplnej. Miniatura to podpisany przegląd Fix Planet tych trzech filarów — nie wyniki krajowe GI-TOC.',
+      'Wynik kraju to kompozyt ekspercki, nie wskaźnik policyjny i nie liczba zabójstw UNODC. Rynki, aktorzy i odporność to osobne filary. Aktualną warstwę otwórzcie na oficjalnej mapie cieplnej ocindex.net.',
     caveats:
-      'To ocena ekspercka, nie spis przestępstw. Definicje i gęstość dowodów się różnią. Nie układajcie rankingu „najbardziej przestępczych państw” ze schematu. Tekst raportu GI-TOC ma zastrzeżone prawa; ich mapy cieplnej nie hostujemy.',
+      'To ocena ekspercka, nie spis przestępstw. Definicje i gęstość dowodów się różnią. Wysoki wynik rynku to nie wysoki wskaźnik zabójstw.',
     licenseNote:
-      'Raport Global Organized Crime Index 2025 zastrzega wszelkie prawa (© GI-TOC). Nie kopiujemy ich mapy cieplnej ani wyników krajowych. Podgląd to schemat Fix Planet trzech filarów indeksu na konturze świata w domenie publicznej. Oficjalne narzędzie, strona About i pliki do pobrania są na ocindex.net.',
+      'Zdjęcie: Philippe Alès, kontenerowiec w Hawrze (CC BY-SA 3.0). To nie mapa cieplna indeksu GI-TOC — ta warstwa jest na ocindex.net.',
     imageAlt:
-      'Neutralny kontur świata z legendą rynków przestępczych, aktorów i odporności — przegląd Fix Planet filarów indeksu GI-TOC, nie wyniki krajowe i nie mapa zabójstw',
+      'Kontenerowiec i suwnice w Hawrze. To zdjęcie, nie mapa cieplna Globalnego indeksu przestępczości zorganizowanej GI-TOC.',
   },
   'corruption-perceptions-index': {
     title: 'Indeks percepcji korupcji',
@@ -111,13 +111,13 @@ export const pl: Record<string, MapCopy> = {
     whyOnShelf:
       'Handel ludźmi to odrębna rodzina czynów ICCS. Uzupełnia wynik rynku handlu ludźmi w indeksie GI-TOC statystyką UNODC o wykrytych ofiarach. To nie wskaźnik zabójstw i nie mapa przepływów World Drug Report.',
     howToRead:
-      'Liczby to wykryte ofiary — pokrycie zależy od policji, definicji i dostępu. Niski wynik może znaczyć mniej wykryć, nie mniej ofiar. Formy wyzysku (seksualny, praca przymusowa i inne) to nie wskaźnik zabójstw. Tabele są w GLOTIP i na portalu danych UNODC. Miniatura to schemat Fix Planet, nie figura raportu UNODC.',
+      'Liczby to wykryte ofiary — pokrycie zależy od policji, definicji i dostępu. Niski wynik może znaczyć mniej wykryć, nie mniej ofiar. Formy wyzysku (seksualny, praca przymusowa i inne) to nie wskaźnik zabójstw. Tabele są w GLOTIP i na portalu danych UNODC.',
     caveats:
-      'Wykrycie to nie spis. Przepływy transgraniczne w raporcie to wykryte wzory, nie pełny inwentarz szlaków. Nie czytajcie schematu jako wyników krajowych. Nie podstawiajcie płyt przepływów World Drug Report.',
+      'Wykrycie to nie spis. Przepływy transgraniczne w raporcie to wykryte wzory, nie pełny inwentarz szlaków.',
     licenseNote:
-      'Mapy i figury GLOTIP UNODC są chronione prawem autorskim ONZ; to nie ogólna licencja CC. Nie hostujemy płyt GLOTIP ani World Drug Report. Podgląd to schemat Fix Planet tematów sprawozdawczości (wykryte ofiary; formy wyzysku) na konturze świata w domenie publicznej. Otwórzcie stronę GLOTIP, stronę badań TIP i data.unodc.org.',
+      'Zdjęcie: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Chrystus Odkupiciel podświetlony na niebiesko przeciw handlowi ludźmi, 28 lipca 2014. To nie figura raportu GLOTIP UNODC.',
     imageAlt:
-      'Neutralny kontur świata z legendą wykrytych ofiar handlu ludźmi i form wyzysku — przegląd Fix Planet tematów GLOTIP UNODC, nie liczby krajowe i nie mapa przepływów narkotyków',
+      'Chrystus Odkupiciel w Rio de Janeiro podświetlony na niebiesko przeciw handlowi ludźmi. To zdjęcie, nie figura raportu GLOTIP UNODC.',
   },
   'air-quality-pm25': {
     title: 'Zanieczyszczenie pyłem PM2.5',

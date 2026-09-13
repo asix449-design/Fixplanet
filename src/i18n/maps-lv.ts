@@ -79,13 +79,13 @@ export const lv: Record<string, MapCopy> = {
     whyOnShelf:
       'Organizētās noziedzības noziedzība un noturība ir cits objekts nekā tīšu slepkavību rādītāji. Nesalieciet šo indeksu slepkavību kartītē un nelasiet tumšu valsti kā augstu slepkavību rādītāju.',
     howToRead:
-      'Valsts vērtējums ir ekspertu kompozīts, ne policijas reģistrēts rādītājs un ne UNODC slepkavību skaitlis. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē. Sīktēls ir parakstīts Fix Planet pārskats par šiem trim stabiem — ne GI-TOC valstu balles.',
+      'Valsts vērtējums ir ekspertu kompozīts, ne policijas reģistrēts rādītājs un ne UNODC slepkavību skaitlis. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē ocindex.net.',
     caveats:
-      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Neizgudrojiet «visnoziedzīgāko valstu» rangu no shēmas. GI-TOC ziņojuma teksts ir ar visām tiesībām paturētām; viņu siltumkarti mēs neizvietojam.',
+      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Augsts tirgus vērtējums nav augsts slepkavību rādītājs.',
     licenseNote:
-      '2025. gada Global Organized Crime Index ziņojums patur visas tiesības (© GI-TOC). Mēs nekopējam viņu siltumkarti vai valstu balles. Priekšskats ir Fix Planet shēma par indeksa trim stabiem uz sabiedriskā īpašuma pasaules kontūra. Oficiālais rīks, About lapa un lejupielādes ir ocindex.net.',
+      'Foto: Philippe Alès, konteinerkuģis Havrā (CC BY-SA 3.0). Tā nav GI-TOC indeksa siltumkarte — tas slānis ir ocindex.net.',
     imageAlt:
-      'Neitrāls pasaules kontūrs ar leģendu noziedzīgiem tirgiem, aktoriem un noturībai — Fix Planet pārskats par GI-TOC indeksa stabiem, ne valstu balles un ne slepkavību karte',
+      'Konteinerkuģis un celtņi Havrā. Šis ir foto, ne GI-TOC Globālā organizētās noziedzības indeksa siltumkarte.',
   },
   'corruption-perceptions-index': {
     title: 'Korupcijas uztveres indekss',
@@ -111,13 +111,13 @@ export const lv: Record<string, MapCopy> = {
     whyOnShelf:
       'Cilvēku tirdzniecība ir atsevišķa ICCS nodarījumu saime. Tā papildina OC indeksa cilvēku tirdzniecības tirgus vērtējumu ar UNODC statistiku par konstatētajiem upuriem. Tas nav slepkavību rādītājs un nav World Drug Report plūsmu karte.',
     howToRead:
-      'Skaitļi ir konstatētie upuri — pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Izmantošanas formas (seksuāla izmantošana, piespiedu darbs un citas) nav slepkavību rādītājs. Tabulas ir GLOTIP un UNODC datu portālā. Sīktēls ir Fix Planet shēma, ne UNODC ziņojuma figūra.',
+      'Skaitļi ir konstatētie upuri — pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Izmantošanas formas (seksuāla izmantošana, piespiedu darbs un citas) nav slepkavību rādītājs. Tabulas ir GLOTIP un UNODC datu portālā.',
     caveats:
-      'Konstatēšana nav tautas skaitīšana. Pārrobežu plūsmas ziņojumā ir konstatēti modeļi, ne pilns maršrutu inventārs. Nelasiet shēmu kā valstu balles. Neaizstājiet to ar World Drug Report narkotiku plūsmu plāksnēm.',
+      'Konstatēšana nav tautas skaitīšana. Pārrobežu plūsmas ziņojumā ir konstatēti modeļi, ne pilns maršrutu inventārs.',
     licenseNote:
-      'UNODC GLOTIP kartes un ziņojuma figūras ir ANO autortiesības; tā nav vispārēja CC licence. Mēs neizvietojam GLOTIP vai World Drug Report plāksnes. Priekšskats ir Fix Planet shēma par pārskata tēmām (konstatētie upuri; izmantošanas formas) uz sabiedriskā īpašuma pasaules kontūra. Atveriet GLOTIP lapu, TIP pētījumu lapu un data.unodc.org.',
+      'Foto: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Kristus Pestītājs izgaismots zilā pret cilvēku tirdzniecību, 2014. gada 28. jūlijs. Tā nav UNODC GLOTIP figūra.',
     imageAlt:
-      'Neitrāls pasaules kontūrs ar leģendu par konstatētajiem cilvēku tirdzniecības upuriem un izmantošanas formām — Fix Planet pārskats par UNODC GLOTIP tēmām, ne valstu skaitļi un ne narkotiku plūsmu karte',
+      'Kristus Pestītājs Riodežaneiro, izgaismots zilā pret cilvēku tirdzniecību. Šis ir foto, ne UNODC GLOTIP ziņojuma figūra.',
   },
   'air-quality-pm25': {
     title: 'Sīko daļiņu gaisa piesārņojums (PM2.5)',

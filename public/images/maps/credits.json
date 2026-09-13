@@ -98,12 +98,12 @@
   },
   {
     "file": "organized-crime-index.jpg",
-    "title": "Fix Planet overview of GI-TOC Index pillars",
-    "source": "Fix Planet schematic on BlankMap-World. GI-TOC heatmap and country scores are not copied.",
-    "url": "https://ocindex.net/2025/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Labeled pillars only (criminal markets, criminal actors, resilience). Not GI-TOC country scores and not a homicide remix. GI-TOC 2025 report is all-rights-reserved."
+    "title": "Container ship NYK Vega at Le Havre Port 2000 (2013)",
+    "source": "Wikimedia Commons, Philippe Alès",
+    "url": "https://commons.wikimedia.org/wiki/File:Le_Havre_(France),_NYK_Vega_in_containers_terminal_(2013).JPG",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Port photograph for organized-crime / criminal-markets context. Not the GI-TOC Index heatmap and not invented country scores."
   },
   {
     "file": "corruption-perceptions-index.jpg",
@@ -116,12 +116,12 @@
   },
   {
     "file": "trafficking-in-persons.jpg",
-    "title": "Fix Planet overview of UNODC GLOTIP reporting themes",
-    "source": "Fix Planet schematic on BlankMap-World. UNODC GLOTIP and World Drug Report figures are not copied.",
-    "url": "https://www.unodc.org/unodc/en/data-and-analysis/glotip.html",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Labeled themes only (detected victims; forms of exploitation). Not UNODC country counts, not a homicide remix, and not World Drug Report drug-flow plates."
+    "title": "Christ the Redeemer lit blue against human trafficking (28 July 2014)",
+    "source": "Wikimedia Commons, Vladimir Platonow / Agência Brasil",
+    "url": "https://commons.wikimedia.org/wiki/File:Blue_Christ_the_Redeemer_against_human_trafficking.jpg",
+    "license": "CC BY 3.0 BR",
+    "kind": "hosted-original",
+    "note": "News-agency awareness photograph. Not a UNODC GLOTIP plate, not World Drug Report art, and not a picture of victims."
   },
   {
     "file": "air-quality-pm25.jpg",

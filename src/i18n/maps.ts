@@ -397,13 +397,13 @@ const en: Record<string, MapCopy> = {
     whyOnShelf:
       'Organized-crime criminality and resilience are a different object from intentional homicide rates. Do not fold this Index into the homicide card, and do not treat a dark country as a high homicide rate.',
     howToRead:
-      'A country score is an expert composite, not a police-recorded rate and not a UNODC homicide figure. Criminal markets, criminal actors, and resilience are separate pillars. Open the official heatmap for the current layer. The thumbnail is a labeled Fix Planet overview of those three pillars — not GI-TOC country scores.',
+      'A country score is an expert composite, not a police-recorded rate and not a UNODC homicide figure. Criminal markets, criminal actors, and resilience are separate pillars. Open the official heatmap on ocindex.net for the current layer.',
     caveats:
-      'Coverage is expert assessment, not a census of offences. Definitions and evidence density differ by country. Do not invent a ranking of “most criminal states” from the schematic. GI-TOC’s report text is all-rights-reserved; we do not host their heatmap.',
+      'Coverage is expert assessment, not a census of offences. Definitions and evidence density differ by country. A high market score is not a high homicide rate.',
     licenseNote:
-      'The 2025 Global Organized Crime Index report reserves all rights (© GI-TOC). We do not copy their heatmap or country scores. The preview is a Fix Planet schematic of the Index’s three pillars on a public-domain world outline. Open ocindex.net for the official tool, about page, and downloads.',
+      'Photo: Philippe Alès, container ship at Le Havre (CC BY-SA 3.0). Not the GI-TOC Index heatmap — that layer is on ocindex.net.',
     imageAlt:
-      'Neutral world outline with a labeled legend for criminal markets, criminal actors, and resilience — a Fix Planet overview of GI-TOC Index pillars, not country scores and not a homicide map',
+      'Container ship and gantry cranes at Le Havre. This photograph is not the GI-TOC Organized Crime Index heatmap.',
   },
   'corruption-perceptions-index': {
     title: 'Corruption Perceptions Index',
@@ -429,13 +429,13 @@ const en: Record<string, MapCopy> = {
     whyOnShelf:
       'Trafficking in persons is a distinct ICCS offence family. It complements the OC Index human-trafficking market score with UNODC’s detected-victim statistics. It is not a homicide rate and not a World Drug Report flow map.',
     howToRead:
-      'Figures are detected victims — coverage varies with police capacity, legal definitions, and access. A low count can mean fewer detections, not fewer victims. Forms of exploitation (sexual exploitation, forced labour, and others) are not the same as a homicide rate. Open GLOTIP and the UNODC data portal for the current tables. The thumbnail is a Fix Planet schematic, not a UNODC report figure.',
+      'Figures are detected victims — coverage varies with police capacity, legal definitions, and access. A low count can mean fewer detections, not fewer victims. Forms of exploitation (sexual exploitation, forced labour, and others) are not the same as a homicide rate. Open GLOTIP and the UNODC data portal for the current tables.',
     caveats:
-      'Detection is not a census. Cross-border flows in the report are detected patterns, not a complete route inventory. Do not treat the schematic as country scores. Do not use World Drug Report drug-flow plates as stand-in art.',
+      'Detection is not a census. Cross-border flows in the report are detected patterns, not a complete route inventory.',
     licenseNote:
-      'UNODC GLOTIP maps and report figures are United Nations copyright; reuse rights are not a blanket CC licence. We do not host GLOTIP or World Drug Report plates. The preview is a Fix Planet schematic of reporting themes (detected victims; forms of exploitation) on a public-domain world outline. Open the GLOTIP page, the TIP research page, and data.unodc.org.',
+      'Photo: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Christ the Redeemer lit blue against trafficking, 28 July 2014. Not a UNODC GLOTIP plate.',
     imageAlt:
-      'Neutral world outline with a labeled legend for detected trafficking victims and forms of exploitation — a Fix Planet overview of UNODC GLOTIP themes, not country counts and not a drug-flow map',
+      'Christ the Redeemer in Rio de Janeiro lit blue against human trafficking. This photograph is not a UNODC GLOTIP report figure.',
   },
   'air-quality-pm25': {
     title: 'Fine particle air pollution (PM2.5)',

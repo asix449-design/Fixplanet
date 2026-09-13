@@ -148,7 +148,7 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ocindex.net/2025/',
     openMapUrl: 'https://ocindex.net/2025/',
     preview: 'organized-crime-index.jpg',
-    previewKind: 'schematic',
+    previewKind: 'photo',
     sources: [
       { label: 'Organized Crime Index 2025 heatmap', url: 'https://ocindex.net/2025/' },
       { label: 'About the Index', url: 'https://ocindex.net/about' },
@@ -183,7 +183,7 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
     openMapUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
     preview: 'trafficking-in-persons.jpg',
-    previewKind: 'schematic',
+    previewKind: 'photo',
     sources: [
       {
         label: 'UNODC Global Report on Trafficking in Persons',
