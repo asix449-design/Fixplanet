@@ -18,7 +18,6 @@ export type ReligionPilotFrameCopy = {
   sources: string;
 };
 
-/** Empty Pack C slots — wait for verbatim COPY YEAR 1300 / 1400 / 1500. */
 const packCHonesty: Record<Locale, string[]> = {
   en: [
     'Schematic reconstruction',
@@ -45,22 +44,6 @@ const packCHonesty: Record<Locale, string[]> = {
     'Koloniālā mala 1500',
   ],
 };
-
-const packCTitle: Record<Locale, (year: number) => string> = {
-  en: (year) => `${year} CE — schematic reconstruction`,
-  ru: (year) => `${year} н. э. — схематическая реконструкция`,
-  pl: (year) => `${year} n.e. — rekonstrukcja schematyczna`,
-  lv: (year) => `${year}. g. m.ē. — shēmatiska rekonstrukcija`,
-};
-
-const emptyPackCCopy = (locale: Locale, year: number): ReligionPilotFrameCopy => ({
-  title: packCTitle[locale](year),
-  caption: '',
-  imageAlt: '',
-  continentBlocks: [],
-  honestyPills: packCHonesty[locale],
-  sources: '',
-});
 
 export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrameCopy>> = {
   en: {
@@ -1463,7 +1446,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
     },
-    1500: emptyPackCCopy('pl', 1500),
+    1500: {
+      title: '1500 n.e. — rekonstrukcja schematyczna',
+      caption:
+        'Około 1500 n.e. **Granady już nie ma** — cała Iberia chrześcijańska. Pas **islamu**: Maghreb–Libia–Egipt–Lewant–Arabia–Iran–Azja Środkowa oraz Anatolia w przybliżeniu muzułmańska osmańska (Konstantynopol 1453). Bałkany pod panowaniem osmańskim, ale ludność wciąż w większości chrześcijańska — bez jednolitej plamy islamskiej w Europie Południowo-Wschodniej. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach — lokalne jądra azteckie i inkaskie; lekka wczesna chrześcijańska krawędź kolonialna na Karaibach i wybrzeżu Meksyku.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 1500 n.e.: bez Granady, osmańska Anatolia, chrześcijańskie Bałkany, jądra Azteków i Inków, lekka krawędź kolonialna',
+      honestyPills: packCHonesty.pl,
+      continentBlocks: [
+        {
+          heading: 'Europa / Morze Śródziemne',
+          text: 'Chrześcijańska Iberia (po Granadzie), łaciński Zachód, Włochy, Skandynawia, Bałtyk, krawędź ruska na arkuszu. Bałkany pod panowaniem osmańskim, ale demograficznie wciąż w większości chrześcijańskie — tylko małe kieszenie muzułmańskie (krawędź Bośni / Albanii) tam, gdzie zaznaczono. Anatolia w większości muzułmańska osmańska — chrześcijański pozostałość tylko na egejskim / zachodnim wybrzeżu, nie w głąb. Plamy żydowskie.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
+          text: 'Islamski Maghreb–Libia–Egipt–Lewant–Arabia–Bliski Wschód–Persja–Azja Środkowa; Anatolia w większości muzułmańska (Osmanowie po 1453). Bez wypełnienia Iberii / Granady. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Hinduistyczne Indie; korytarze buddyjskie jak w 1300–1400 (Tybet / Azja Płd.-Wsch. / wniknięcie w Chiny); chiński pas cesarski / ludowy. Północny step i obrzeża wyspiarskie — lokalny zmyw.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Maghreb–Libia–Egipt islamskie; krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; Sahel i południe — afrykański zmyw tradycyjny.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Lokalne jądra azteckiej Mezoameryki i andyjskich Inków nadal stoją, plus Amazonia / równiny / stożek południowy; lekka wczesna chrześcijańska krawędź kolonialna tylko na Karaibach i wybrzeżu Meksyku. Antarktyda / Oceania nie naniesione.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean–Mexico Christian edge.',
+    },
   },
   lv: {
     1: {
@@ -1909,7 +1923,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
     },
-    1500: emptyPackCCopy('lv', 1500),
+    1500: {
+      title: '1500. g. m.ē. — shēmatiska rekonstrukcija',
+      caption:
+        'Ap 1500. g. m.ē. **Granadas vairs nav** — visa Ibērija kristīga. **Islāma** josla: Magriba–Lībija–Ēģipte–Levanta–Arābija–Irāna–Centrālāzija un Anatolija aptuveni musulmaņu osmaņu (Konstantinopole 1453). Balkāni osmaņu varā, bet iedzīvotāji joprojām pārsvarā kristīgi — bez vienlaidus islāma aizpildes Dienvidaustrumeiropā. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā — acteku un Inku vietējo tradīciju kodoli; viegla agrā kristīgā koloniālā mala Karību jūrā un Meksikas piekrastē.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 1500. gadam m.ē.: bez Granadas, osmaņu Anatolija, kristīgie Balkāni, acteku un Inku kodoli, viegla koloniālā mala',
+      honestyPills: packCHonesty.lv,
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Kristīgā Ibērija (pēc Granadas), latīņu Rietumi, Itālija, Skandināvija, Baltija, Krievzemes mala uz plāksnes. Balkāni osmaņu varā, bet demogrāfiski joprojām pārsvarā kristīgi — tikai mazi musulmaņu kabatas (Bosnijas / Albānijas mala), kur atzīmēts. Anatolija pārsvarā musulmaņu osmaņu — kristīgais atlikums tikai Egejas / rietumu piekrastē, ne iekšzemē. Jūdu plankumi.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
+          text: 'Islāma Magriba–Lībija–Ēģipte–Levanta–Arābija–Tuvie Austrumi–Persija–Centrālāzija; Anatolija pārsvarā musulmaņu (osmaņi pēc 1453). Bez Ibērijas / Granadas aizpildes. Tikai plāns zoroastrisma atlikuma šrafējums.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu Indija; budistu koridori kā 1300.–1400. gadā (Tibeta / DA Āzija / ieplūde Ķīnā); ķīniešu imperiālā / tautas josla. Ziemeļu stepe un salu malas — vietējā josla.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Magriba–Lībija–Ēģipte islāmiskas; sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; Sahēla un dienvidi — āfrikāņu tradicionālā josla.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Acteku Mezoamerikas un Inku Andu vietējo tradīciju kodoli joprojām stāv, plus Amazone / līdzenumi / dienvidu konuss; viegla agrā kristīgā koloniālā mala tikai Karību jūrā un Meksikas piekrastē. Antarktīda / Okeānija nav kartēta.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean–Mexico Christian edge.',
+    },
   },
 };
 
