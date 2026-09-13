@@ -509,7 +509,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
     },
-    1500: emptyPackCCopy('en', 1500),
+    1500: {
+      title: '1500 CE — schematic reconstruction',
+      caption:
+        'Around 1500 CE **no Granada** — all Iberia Christian. The **Islamic** belt is Maghreb–Libya–Egypt–Levant–Arabia–Iran–Central Asia, and Anatolia roughly Muslim Ottoman (Constantinople 1453). The Balkans sit under Ottoman rule but the population is still mostly Christian — no solid Islamic wash across Southeast Europe. India Hindu; Buddhism and the Chinese layer hold the East. In the Americas, Aztec and Inca local-tradition cores remain; a light early Christian colonial edge appears in the Caribbean and on the Mexican coast.',
+      imageAlt:
+        'Schematic world religion map for 1500 CE: no Granada, Ottoman Anatolia, Balkans Christian, Aztec and Inca cores, light colonial edge',
+      honestyPills: packCHonesty.en,
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Christian Iberia (post-Granada), Latin West, Italy, Scandinavia, Baltics, Rus fringe solid on the plate. Balkans under Ottoman rule but still mostly Christian demographically — only small Muslim pockets (Bosnia / Albania fringe) where marked. Anatolia majority Muslim Ottoman — Christian remnant on Aegean / west coast only, not inland. Jewish spots.',
+        },
+        {
+          heading: 'Southwest Asia / North Africa / Iran',
+          text: 'Islamic Maghreb–Libya–Egypt–Levant–Arabia–Near East–Persia–Central Asia; Anatolia majority Muslim (Ottoman heartland after 1453). No Iberia / Granada fill. Thin Zoroastrian remnant hatch only.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu India; Buddhist corridors as at 1300–1400 (Tibet / SE Asia / China inroads); Chinese imperial / folk belt. Northern steppe and island fringes = local wash.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Maghreb–Libya–Egypt Islamic; Sahel trade edge; Christian Ethiopia/Nubia edge where shown; Sahel–south = African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Aztec Mesoamerica and Inca Andes local-tradition cores still standing, plus Amazon / plains / southern-cone indigenous wash; light early Christian colonial edge on the Caribbean and coastal Mexico only. Antarctica / Oceania unmapped.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean–Mexico Christian edge.',
+    },
   },
   ru: {
     1: {
@@ -955,7 +986,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
     },
-    1500: emptyPackCCopy('ru', 1500),
+    1500: {
+      title: '1500 н. э. — схематическая реконструкция',
+      caption:
+        'Около 1500 н. э. **Гранады уже нет** — вся Иберия христианская. **Исламский** пояс: Магриб–Ливия–Египет–Левант–Аравия–Иран–Центральная Азия и Анатолия примерно мусульманская (османы; Константинополь 1453). Балканы под османским правлением, но население всё ещё в основном христианское — без сплошной исламской заливки Юго-Восточной Европы. Индия индуистская; буддизм и китайский слой на Востоке. В Америке — ацтекские и инкские ядра местных традиций; лёгкий ранний христианский колониальный край на Карибах и побережье Мексики.',
+      imageAlt:
+        'Схематическая карта религий на 1500 год н. э.: без Гранады, османская Анатолия, христианские Балканы, ядра ацтеков и инков, лёгкий колониальный край',
+      honestyPills: packCHonesty.ru,
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Христианская Иберия (после Гранады), латинский Запад, Италия, Скандинавия, Балтика, русский край на листе. Балканы под османским правлением, но демографически всё ещё в основном христианские — только мелкие мусульманские карманы (край Боснии / Албании) где отмечено. Анатолия в основном мусульманская османская — христианский остаток только на эгейском / западном побережье, не вглубь. Иудейские пятна.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Северная Африка / Иран',
+          text: 'Исламский Магриб–Ливия–Египет–Левант–Аравия–Ближний Восток–Персия–Центральная Азия; Анатолия в основном мусульманская (османы после 1453). Без заливки Иберии / Гранады. Только тонкая зороастрийская штриховка-остаток.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистская Индия; буддийские коридоры как в 1300–1400 (Тибет / ЮВА / проникновение в Китай); китайский имперский / народный пояс. Северная степь и островные края — местный смыв.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Магриб–Ливия–Египет исламские; сахельский торговый край; христианский край Эфиопии/Нубии где видно; Сахель и юг — африканский традиционный смыв.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Ацтекская Мезоамерика и андские ядра инков местных традиций ещё стоят, плюс Амазония / равнины / южный конус; лёгкий ранний христианский колониальный край только на Карибах и побережье Мексики. Антарктида / Океания не нанесена.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean–Mexico Christian edge.',
+    },
   },
   pl: {
     1: {
