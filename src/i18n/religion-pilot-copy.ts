@@ -3,11 +3,18 @@ import type { Locale } from './config';
 
 export type ReligionContinentKey = 'europe' | 'africa' | 'asia' | 'americas' | 'oceania';
 
+export type ReligionContinentBlock = {
+  heading: string;
+  text: string;
+};
+
 export type ReligionPilotFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
-  eraByContinent: Record<ReligionContinentKey, string>;
+  eraByContinent?: Record<ReligionContinentKey, string>;
+  continentBlocks?: ReligionContinentBlock[];
+  honestyPills?: string[];
   sources: string;
 };
 
@@ -110,6 +117,80 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Religion polygons © Fix Planet schematic reconstruction. Basemap: aourednik historical-basemaps world_400, GPL-3.0; Corresponding Source at github.com/aourednik/historical-basemaps. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0). Not a census. Not Paradox.',
     },
+    500: {
+      title: '500 CE — former Roman world, rural pagan still showing',
+      caption:
+        'Around 500 CE Christianity has widened across much of the former Roman world, while rural pagan practice still shows in places. Sasanian Iran stays Zoroastrian; India and China keep their own major belts; Aksum and Nubia appear only as a light Christian edge. Americas and Oceania stay unmapped — we do not invent fills. Islam is not on this sheet.',
+      imageAlt:
+        'Schematic world religion map for 500 CE: Christian fill across much of the former Roman world, rural pagan hatch, Zoroastrian Iran, Indic and Chinese belts, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas not shown',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Expanding Christian fill in East and much of the West; rural pagan hatch where the plate shows it; Jewish communities as spots; northern fringe still local traditions.',
+        },
+        {
+          heading: 'Southwest Asia / Iran',
+          text: 'Zoroastrian Sasanian core; Jewish spots in the Near East.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu umbrella on India; Buddhist corridors; Chinese imperial.',
+        },
+        {
+          heading: 'Africa',
+          text: 'North Africa tied to the Mediterranean Christian/pagan mix; Sahel–south = coarse African traditional wash; Aksum/Nubia = optional Christian edge.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        'Religion polygons © Fix Planet schematic reconstruction — not a census. Basemap: aourednik/historical-basemaps (GPL-3.0) and Natural Earth land clip.',
+    },
+    600: {
+      title: '600 CE — stronger Christian belt, Iran still Zoroastrian',
+      caption:
+        'By 600 CE the Christian belt across Afro-Eurasia’s Mediterranean world is stronger, but this sheet still shows Zoroastrian Iran, Hindu India, Buddhist corridors, and China’s imperial cult. Islam has not expanded as an empire colour here. Americas stay unmapped. For the one-tradition process map of Christianity to 600, see the companion plate.',
+      imageAlt:
+        'Schematic world religion map for 600 CE: wider Christian Mediterranean belt, Zoroastrian Iran, Hindu India, Buddhist corridors, Chinese imperial cult, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas not shown',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe',
+          text: 'Wider Christian presence East and West; rural pagan remnants where shown; Jewish spots; far north still local traditions.',
+        },
+        {
+          heading: 'SW Asia / Iran',
+          text: 'Zoroastrian Iran still the main colour; Arabia without an Islamic empire wash.',
+        },
+        {
+          heading: 'S/C/E Asia',
+          text: 'Hindu India; Buddhist corridors; Chinese imperial / folk.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Stronger Christian mark on Egypt and Roman Africa; Aksum/Nubia edge; south of Sahara = traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        'Religion polygons © Fix Planet schematic reconstruction — not a census. Basemap: aourednik/historical-basemaps (GPL-3.0) and Natural Earth land clip. Process companion: Christianity spread to 600 (CC BY-SA 3.0).',
+    },
   },
   ru: {
     1: {
@@ -206,6 +287,80 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       },
       sources:
         'Полигоны религий © Fix Planet, схема. Подложка: aourednik historical-basemaps world_400, GPL-3.0; Corresponding Source — github.com/aourednik/historical-basemaps. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0). Не перепись. Не Paradox.',
+    },
+    500: {
+      title: '500 н. э. — бывший римский мир, сельское язычество ещё видно',
+      caption:
+        'Около 500 г. н. э. христианство шире по бывшему римскому миру, но сельское язычество ещё видно местами. Сасанидский Иран остаётся зороастрийским; Индия и Китай держат свои крупные пояса; Аксум и Нубия — лишь лёгкий христианский край. Америка и Океания не наносятся. Ислама на этом листе нет.',
+      imageAlt:
+        'Схематическая карта религий на 500 год н. э.: христианская заливка бывшего римского мира, сельская языческая штриховка, зороастрийский Иран, пояса Индии и Китая, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'растущая христианская заливка на Востоке и большей части Запада; сельская языческая штриховка где видно на листе; иудейские общины точечно; северный край — местные традиции.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Иран',
+          text: 'зороастрийское сасанидское ядро; иудейские пятна на Ближнем Востоке.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'индуистский зонт в Индии; буддийские коридоры; китайский имперский слой.',
+        },
+        {
+          heading: 'Африка',
+          text: 'север связан со средиземноморским христианско-языческим миксом; Сахель и юг — грубый традиционный фон; Аксум/Нубия — осторожный христианский край.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'не нанесено.',
+        },
+      ],
+      sources:
+        'Полигоны религий © Fix Planet, схематическая реконструкция — не перепись. Подложка: aourednik/historical-basemaps (GPL-3.0) и обрезка суши Natural Earth.',
+    },
+    600: {
+      title: '600 н. э. — сильнее христианский пояс, Иран зороастрийский',
+      caption:
+        'К 600 г. н. э. христианский пояс средиземноморского Старого Света сильнее, но на листе по-прежнему зороастрийский Иран, индуистская Индия, буддийские коридоры и имперский культ Китая. Ислам здесь ещё не цвет империи. Америка не нанесена. Карта процесса «христианство → 600» — отдельный компаньон.',
+      imageAlt:
+        'Схематическая карта религий на 600 год н. э.: шире христианский средиземноморский пояс, зороастрийский Иран, индуистская Индия, буддийские коридоры, имперский культ Китая, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа',
+          text: 'более широкое христианское присутствие на Востоке и Западе; сельские языческие остатки где видно; иудейские пятна; дальний север — местные традиции.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Иран',
+          text: 'зороастрийский Иран по-прежнему основной цвет; Аравия без заливки исламской империи.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'индуистская Индия; буддийские коридоры; китайский имперский / народный слой.',
+        },
+        {
+          heading: 'Африка',
+          text: 'сильнее христианская метка на Египте и римской Африке; край Аксума/Нубии; южнее Сахары — традиционный фон.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'не нанесено.',
+        },
+      ],
+      sources:
+        'Полигоны религий © Fix Planet, схематическая реконструкция — не перепись. Подложка: aourednik/historical-basemaps (GPL-3.0) и обрезка суши Natural Earth. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
     },
   },
   pl: {
@@ -304,6 +459,80 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Wielokąty religii © Fix Planet, schemat. Podkład: aourednik historical-basemaps world_400, GPL-3.0; Corresponding Source: github.com/aourednik/historical-basemaps. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0). Nie spis. Nie Paradox.',
     },
+    500: {
+      title: '500 n.e. — dawny świat rzymski, wiejskie pogaństwo wciąż widoczne',
+      caption:
+        'Około 500 n.e. chrześcijaństwo rozszerzyło się na dużą część dawnego świata rzymskiego, ale wiejska praktyka pogańska wciąż widać w niektórych miejscach. Sasanidzki Iran zostaje zoroastryjski; Indie i Chiny trzymają własne wielkie pasy; Aksum i Nubia pojawiają się tylko jako lekka krawędź chrześcijańska. Ameryk i Oceanii nie naniesiono — wypełnień nie wymyślamy. Islamu nie ma na tym arkuszu.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 500 n.e.: chrześcijańskie wypełnienie dawnego świata rzymskiego, wiejskie kreskowanie pogańskie, zoroastryjski Iran, pasy Indii i Chin, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryk nie pokazano',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Rosnące wypełnienie chrześcijańskie na Wschodzie i większej części Zachodu; wiejskie kreskowanie pogańskie tam, gdzie widać je na płycie; wspólnoty żydowskie jako plamy; północny skraj nadal tradycje lokalne.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Iran',
+          text: 'Zoroastryjski rdzeń sasanidzki; plamy żydowskie na Bliskim Wschodzie.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Parasol hindu w Indiach; korytarze buddyjskie; chińska warstwa imperialna.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Afryka Północna związana ze śródziemnomorską mieszanką chrześcijańsko-pogańską; Sahel i południe = grube tradycyjne tło afrykańskie; Aksum/Nubia = ostrożna krawędź chrześcijańska.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        'Wielokąty religii © Fix Planet, rekonstrukcja schematyczna — nie spis. Podkład: aourednik/historical-basemaps (GPL-3.0) oraz przycięcie lądu Natural Earth.',
+    },
+    600: {
+      title: '600 n.e. — silniejszy pas chrześcijański, Iran zoroastryjski',
+      caption:
+        'Do 600 n.e. chrześcijański pas śródziemnomorskiego świata Afroeuroazji jest silniejszy, ale arkusz nadal pokazuje zoroastryjski Iran, hinduistyczne Indie, korytarze buddyjskie i chiński kult imperialny. Islam nie rozszerzył się tu jako kolor cesarstwa. Ameryk nie naniesiono. Jednotradycyjna mapa procesu chrześcijaństwa do 600 jest na płycie towarzyszącej.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 600 n.e.: szerszy chrześcijański pas śródziemnomorski, zoroastryjski Iran, hinduistyczne Indie, korytarze buddyjskie, chiński kult imperialny, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryk nie pokazano',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa',
+          text: 'Szersza obecność chrześcijańska na Wschodzie i Zachodzie; wiejskie resztki pogańskie tam, gdzie pokazane; plamy żydowskie; daleka północ nadal tradycje lokalne.',
+        },
+        {
+          heading: 'Azja Pd.-Zach. / Iran',
+          text: 'Zoroastryjski Iran nadal głównym kolorem; Arabia bez wypełnienia islamskiego cesarstwa.',
+        },
+        {
+          heading: 'Azja Pd. / Środkowa / Wsch.',
+          text: 'Hinduistyczne Indie; korytarze buddyjskie; chiński imperialny / ludowy.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Silniejszy znak chrześcijański na Egipcie i Afryce rzymskiej; krawędź Aksum/Nubii; na południe od Sahary = tło tradycyjne.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        'Wielokąty religii © Fix Planet, rekonstrukcja schematyczna — nie spis. Podkład: aourednik/historical-basemaps (GPL-3.0) oraz przycięcie lądu Natural Earth. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
+    },
   },
   lv: {
     1: {
@@ -400,6 +629,80 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       },
       sources:
         'Reliģiju daudzstūri © Fix Planet shēma. Apakšslānis: aourednik historical-basemaps world_400, GPL-3.0; Corresponding Source: github.com/aourednik/historical-basemaps. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0). Ne tautas skaitīšana. Ne Paradox.',
+    },
+    500: {
+      title: '500. m.ē. — bijusī romiešu pasaule, lauku pagānisms joprojām redzams',
+      caption:
+        'Ap 500. gadu m.ē. kristietība ir paplašinājusies lielā daļā bijušās romiešu pasaules, bet lauku pagāniskā prakse joprojām vietām redzama. Sasānīdu Irāna paliek zoroastriska; Indija un Ķīna patur savas lielās joslas; Aksums un Nūbija parādās tikai kā viegla kristīga mala. Amerika un Okeānija paliek bez aizpildes — mēs tās neizdomājam. Islāma uz šīs lapas nav.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 500. gadam m.ē.: kristīga aizpilde bijušajā romiešu pasaulē, lauku pagāniskais šrafējums, zoroastriskā Irāna, Indijas un Ķīnas joslas, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav rādīta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Augoša kristīga aizpilde Austrumos un lielā daļā Rietumu; lauku pagāniskais šrafējums tur, kur tas redzams plāksnē; ebreju kopienas kā plankumi; ziemeļu mala joprojām vietējās tradīcijas.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Irāna',
+          text: 'Zoroastriskais sasānīdu kodols; ebreju plankumi Tuvajos Austrumos.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hindu lietussargs Indijā; budistu koridori; Ķīnas impērijas slānis.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Ziemeļāfrika saistīta ar Vidusjūras kristiešu/pagānu sajaukumu; Sahela un dienvidi = rupjš Āfrikas tradicionālais fons; Aksums/Nūbija = piesardzīga kristīga mala.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        'Reliģiju daudzstūri © Fix Planet shēmatiska rekonstrukcija — ne tautas skaitīšana. Apakšslānis: aourednik/historical-basemaps (GPL-3.0) un Natural Earth sauszemes izgriezums.',
+    },
+    600: {
+      title: '600. m.ē. — stiprāka kristiešu josla, Irāna zoroastriska',
+      caption:
+        'Līdz 600. gadam m.ē. kristiešu josla Āfroeiropāzijas Vidusjūras pasaulē ir stiprāka, bet lapā joprojām ir zoroastriskā Irāna, hindu Indija, budistu koridori un Ķīnas impērijas kults. Islāms šeit nav izpleties kā impērijas krāsa. Amerika paliek bez aizpildes. Vienas tradīcijas procesa karte „kristietība → 600” ir atsevišķs pavadonis.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 600. gadam m.ē.: platāka kristiešu Vidusjūras josla, zoroastriskā Irāna, hindu Indija, budistu koridori, Ķīnas impērijas kults, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav rādīta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa',
+          text: 'Platāka kristiešu klātbūtne Austrumos un Rietumos; lauku pagāniskās paliekas tur, kur rādīts; ebreju plankumi; tālākie ziemeļi joprojām vietējās tradīcijas.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Irāna',
+          text: 'Zoroastriskā Irāna joprojām galvenā krāsa; Arābija bez islāma impērijas aizpildes.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hindu Indija; budistu koridori; Ķīnas impērijas / tautas slānis.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Stipāka kristiešu zīme Ēģiptē un romiešu Āfrikā; Aksuma/Nūbijas mala; uz dienvidiem no Sahāras = tradicionālais fons.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        'Reliģiju daudzstūri © Fix Planet shēmatiska rekonstrukcija — ne tautas skaitīšana. Apakšslānis: aourednik/historical-basemaps (GPL-3.0) un Natural Earth sauszemes izgriezums. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
     },
   },
 };

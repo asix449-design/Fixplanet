@@ -50,12 +50,12 @@ const pageEn: MapsPage = {
   eyebrow: 'Map room',
   title: 'Maps',
   lead:
-    'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders is a century timeline from 1 CE to now. Religions is a 1–400 CE schematic pilot plus the AD 600 Christianity process companion.',
+    'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders is a century timeline from 1 CE to now. Religions is a 1–600 CE schematic shelf plus the AD 600 Christianity process companion.',
   filterAria: 'Filter maps by category',
   chooseCategory: 'Choose a shelf',
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
-    religious: 'Pilot schematics for 1, 100, 200, 300, and 400 CE — not a census.',
+    religious: 'Pilot schematics for 1, 100, 200, 300, 400, 500, and 600 CE — not a census.',
     conflicts: 'Armed events and battle deaths from named datasets.',
     ethnic: 'Language families as public cartography, not a census.',
     crime:
@@ -71,7 +71,7 @@ const pageEn: MapsPage = {
   categoryEyebrows: {
     subsurface: 'oil, gas, minerals',
     forests: 'canopy, loss, and parks',
-    religious: '1–400 CE pilot',
+    religious: '1–600 CE schematics'
     'history-of-borders': '1 CE to now',
   },
   cardCta: 'Read the card →',
@@ -117,12 +117,12 @@ const pageRu: MapsPage = {
   eyebrow: 'Картографическая',
   title: 'Карты',
   lead:
-    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» — лента столетий от 1 года н. э. до сегодня. «Религии» — пилот схем 1–400 н. э. и компаньон процесса христианства до 600.',
+    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» — лента столетий от 1 года н. э. до сегодня. «Религии» — полка схем 1–600 н. э. и компаньон процесса христианства до 600.',
   filterAria: 'Фильтр карт по теме',
   chooseCategory: 'Выберите полку',
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
-    religious: 'Пилотные схемы на 1, 100, 200, 300 и 400 н. э. — не перепись.',
+    religious: 'Пилотные схемы на 1, 100, 200, 300, 400, 500 и 600 н. э. — не перепись.',
     conflicts: 'Вооружённые события и боевые потери по названным данным.',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime:
@@ -138,7 +138,7 @@ const pageRu: MapsPage = {
   categoryEyebrows: {
     subsurface: 'нефть, газ, ископаемые',
     forests: 'полог, потери и парки',
-    religious: 'пилот 1–400 н. э.',
+    religious: 'схемы 1–600 н. э.'
     'history-of-borders': 'от 1 н. э. до сейчас',
   },
   cardCta: 'Читать карточку →',
@@ -184,12 +184,12 @@ const pagePl: MapsPage = {
   eyebrow: 'Mapownia',
   title: 'Mapy',
   lead:
-    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Religie to pilot schematów 1–400 n.e. oraz towarzysz procesu chrześcijaństwa do 600.',
+    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Religie to półka schematów 1–600 n.e. oraz towarzysz procesu chrześcijaństwa do 600.',
   filterAria: 'Filtruj mapy według kategorii',
   chooseCategory: 'Wybierz półkę',
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
-    religious: 'Schematy pilotażowe na 1, 100, 200, 300 i 400 n.e. — nie spis.',
+    religious: 'Schematy pilotażowe na 1, 100, 200, 300, 400, 500 i 600 n.e. — nie spis.',
     conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime:
@@ -205,7 +205,7 @@ const pagePl: MapsPage = {
   categoryEyebrows: {
     subsurface: 'ropa, gaz, minerały',
     forests: 'okap, ubytek i parki',
-    religious: 'pilot 1–400 n.e.',
+    religious: 'schematy 1–600 n.e.'
     'history-of-borders': 'od 1 n.e. do dziś',
   },
   cardCta: 'Czytaj kartę →',
@@ -251,12 +251,12 @@ const pageLv: MapsPage = {
   eyebrow: 'Karšu zāle',
   title: 'Kartes',
   lead:
-    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģijas ir 1.–400. m.ē. shēmu pilots un 600. gada kristietības procesa pavadonis.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģijas ir 1.–600. m.ē. shēmu plaukts un 600. gada kristietības procesa pavadonis.',
   filterAria: 'Filtrēt kartes pēc kategorijas',
   chooseCategory: 'Izvēlies plauktu',
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
-    religious: 'Pilotshēmas 1., 100., 200., 300. un 400. gadam m.ē. — ne tautas skaitīšana.',
+    religious: 'Pilotshēmas 1., 100., 200., 300., 400., 500. un 600. gadam m.ē. — ne tautas skaitīšana.',
     conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime:
@@ -272,7 +272,7 @@ const pageLv: MapsPage = {
   categoryEyebrows: {
     subsurface: 'nafta, gāze, izrakteņi',
     forests: 'vainags, zudums un parki',
-    religious: 'pilots 1.–400. m.ē.',
+    religious: 'shēmas 1.–600. m.ē.'
     'history-of-borders': 'no 1. m.ē. līdz šodienai',
   },
   cardCta: 'Lasīt kartīti →',
