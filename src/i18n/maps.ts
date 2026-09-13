@@ -29,6 +29,9 @@ export type MapsPage = {
   licenseLabel: string;
   howToRead: string;
   caveats: string;
+  whatLabel: string;
+  whyOnShelfLabel: string;
+  sourcesList: string;
   related: string;
   back: string;
   schematicNote: string;
@@ -55,7 +58,8 @@ const pageEn: MapsPage = {
     religious: 'Pilot schematics for 1, 100, 200, 300, and 400 CE — not a census.',
     conflicts: 'Armed events and battle deaths from named datasets.',
     ethnic: 'Language families as public cartography, not a census.',
-    crime: 'Homicide and related rates where a public map exists.',
+    crime:
+      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
     pollution: 'Air, waste, and emissions with a named source.',
     subsurface: 'Oil, gas, and minerals — fossil fuel and fossil gold.',
     political: 'States, disputed areas, and administrative lines.',
@@ -77,6 +81,9 @@ const pageEn: MapsPage = {
   licenseLabel: 'License',
   howToRead: 'How to read it',
   caveats: 'Caveats',
+  whatLabel: 'What',
+  whyOnShelfLabel: 'Why on this shelf',
+  sourcesList: 'Sources',
   related: 'Related maps',
   back: '← Maps',
   schematicNote:
@@ -118,7 +125,8 @@ const pageRu: MapsPage = {
     religious: 'Пилотные схемы на 1, 100, 200, 300 и 400 н. э. — не перепись.',
     conflicts: 'Вооружённые события и боевые потери по названным данным.',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
-    crime: 'Убийства и смежные показатели, где есть открытая карта.',
+    crime:
+      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
     subsurface: 'Нефть, газ и ископаемые — топливо и золото недр.',
     political: 'Государства, спорные зоны и административные линии.',
@@ -140,6 +148,9 @@ const pageRu: MapsPage = {
   licenseLabel: 'Лицензия',
   howToRead: 'Как читать',
   caveats: 'Оговорки',
+  whatLabel: 'Что это',
+  whyOnShelfLabel: 'Зачем на этой полке',
+  sourcesList: 'Источники',
   related: 'Связанные карты',
   back: '← Карты',
   schematicNote:
@@ -181,7 +192,8 @@ const pagePl: MapsPage = {
     religious: 'Schematy pilotażowe na 1, 100, 200, 300 i 400 n.e. — nie spis.',
     conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
-    crime: 'Zabójstwa i pokrewne wskaźniki, gdzie jest publiczna mapa.',
+    crime:
+      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
     subsurface: 'Ropa, gaz i minerały — paliwo kopalne i kopalne złoto.',
     political: 'Państwa, spory i linie administracyjne.',
@@ -203,6 +215,9 @@ const pagePl: MapsPage = {
   licenseLabel: 'Licencja',
   howToRead: 'Jak czytać',
   caveats: 'Zastrzeżenia',
+  whatLabel: 'Co to jest',
+  whyOnShelfLabel: 'Dlaczego na tej półce',
+  sourcesList: 'Źródła',
   related: 'Powiązane mapy',
   back: '← Mapy',
   schematicNote:
@@ -244,7 +259,8 @@ const pageLv: MapsPage = {
     religious: 'Pilotshēmas 1., 100., 200., 300. un 400. gadam m.ē. — ne tautas skaitīšana.',
     conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
-    crime: 'Slepkavības un radniecīgi rādītāji, kur ir publiska karte.',
+    crime:
+      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
     subsurface: 'Nafta, gāze un izrakteņi — fosilā degviela un fosilais zelts.',
     political: 'Valstis, strīdi un administratīvās līnijas.',
@@ -266,6 +282,9 @@ const pageLv: MapsPage = {
   licenseLabel: 'Licence',
   howToRead: 'Kā lasīt',
   caveats: 'Atrunas',
+  whatLabel: 'Kas tas ir',
+  whyOnShelfLabel: 'Kāpēc šajā plauktā',
+  sourcesList: 'Avoti',
   related: 'Saistītās kartes',
   back: '← Kartes',
   schematicNote:
@@ -369,6 +388,54 @@ const en: Record<string, MapCopy> = {
       'UNODC statistical products are generally reusable with attribution. We host a cropped Our World in Data map export (CC BY) of UNODC homicide rates. Open their map for the current layer.',
     imageAlt:
       'Our World in Data choropleth of intentional homicide rates: yellow-orange land with darker red in parts of Latin America and southern Africa',
+  },
+  'organized-crime-index': {
+    title: 'Global Organized Crime Index',
+    hook: 'Country scores for criminal markets, criminal actors, and resilience — an expert-assessment heatmap of organized crime, not a second intentional-homicide layer.',
+    description:
+      'The Global Initiative against Transnational Organized Crime (GI-TOC) rates 193 UN member states on criminality — criminal markets and criminal actors — and on resilience. The public tool is ocindex.net. The 2025 edition is the third; its assessment year is 2024. This card is a doorway to that expert composite, not a police-recorded crime rate and not a second UNODC homicide map.',
+    whyOnShelf:
+      'Organized-crime criminality and resilience are a different object from intentional homicide rates. Do not fold this Index into the homicide card, and do not treat a dark country as a high homicide rate.',
+    howToRead:
+      'A country score is an expert composite, not a police-recorded rate and not a UNODC homicide figure. Criminal markets, criminal actors, and resilience are separate pillars. Open the official heatmap for the current layer. The thumbnail is a labeled Fix Planet overview of those three pillars — not GI-TOC country scores.',
+    caveats:
+      'Coverage is expert assessment, not a census of offences. Definitions and evidence density differ by country. Do not invent a ranking of “most criminal states” from the schematic. GI-TOC’s report text is all-rights-reserved; we do not host their heatmap.',
+    licenseNote:
+      'The 2025 Global Organized Crime Index report reserves all rights (© GI-TOC). We do not copy their heatmap or country scores. The preview is a Fix Planet schematic of the Index’s three pillars on a public-domain world outline. Open ocindex.net for the official tool, about page, and downloads.',
+    imageAlt:
+      'Neutral world outline with a labeled legend for criminal markets, criminal actors, and resilience — a Fix Planet overview of GI-TOC Index pillars, not country scores and not a homicide map',
+  },
+  'corruption-perceptions-index': {
+    title: 'Corruption Perceptions Index',
+    hook: 'Perceived public-sector corruption (0–100) from expert and business surveys — governance risk, not street-crime volume and not homicide.',
+    description:
+      'Transparency International’s Corruption Perceptions Index (CPI) 2025 ranks countries on perceived public-sector corruption. The scale runs from 0 (highly corrupt) to 100 (very clean), combining expert and business surveys. Our World in Data republishes the series as an open map. This is a governance-risk composite, not a count of bribery cases and not a violent-crime rate.',
+    whyOnShelf:
+      'Perceived public-sector corruption is a different public-harm signal from UNODC intentional homicide. Never merge this card with the homicide layer.',
+    howToRead:
+      'A score is a perception composite, not a tally of prosecutions or street crime. The year label is the CPI edition year (here 2025), not necessarily the calendar year of every underlying survey. Higher is cleaner. Compare nearby editions; one- or two-point moves are often noise. Open the Transparency International edition page for the official scores; open the OWID grapher for the interactive map.',
+    caveats:
+      'Missing countries are not “clean.” Household experience of bribery is a different series. Do not read the thumbnail as a most-corrupt-country list. This is not a homicide choropleth.',
+    licenseNote:
+      'We host a cropped Wikimedia Commons CPI 2025 country choropleth (Cnscrptr and ConnerMiner, CC BY-SA 4.0), drawn from Transparency International CPI 2025 data. Our World in Data republishes the CPI as an open map (CC BY). Open transparency.org/en/cpi/2025 for the edition.',
+    imageAlt:
+      'World choropleth of Corruption Perceptions Index 2025 scores: cooler greens where perceived public-sector corruption is lower, warmer reds where it is higher — not a homicide map',
+  },
+  'trafficking-in-persons': {
+    title: 'Trafficking in persons',
+    hook: 'Detected trafficking victims and patterns from UNODC’s Global Report on Trafficking in Persons — exploitation and coercion, not a homicide rate and not the GI-TOC markets composite alone.',
+    description:
+      'UNODC’s Global Report on Trafficking in Persons (GLOTIP) 2024 is the eighth edition under the UN Convention against Transnational Organized Crime Trafficking in Persons Protocol and the 2010 Global Plan of Action. It reports detected victims, forms of exploitation, and patterns. This card points to that victim-detection reporting — not a complete census of trafficking.',
+    whyOnShelf:
+      'Trafficking in persons is a distinct ICCS offence family. It complements the OC Index human-trafficking market score with UNODC’s detected-victim statistics. It is not a homicide rate and not a World Drug Report flow map.',
+    howToRead:
+      'Figures are detected victims — coverage varies with police capacity, legal definitions, and access. A low count can mean fewer detections, not fewer victims. Forms of exploitation (sexual exploitation, forced labour, and others) are not the same as a homicide rate. Open GLOTIP and the UNODC data portal for the current tables. The thumbnail is a Fix Planet schematic, not a UNODC report figure.',
+    caveats:
+      'Detection is not a census. Cross-border flows in the report are detected patterns, not a complete route inventory. Do not treat the schematic as country scores. Do not use World Drug Report drug-flow plates as stand-in art.',
+    licenseNote:
+      'UNODC GLOTIP maps and report figures are United Nations copyright; reuse rights are not a blanket CC licence. We do not host GLOTIP or World Drug Report plates. The preview is a Fix Planet schematic of reporting themes (detected victims; forms of exploitation) on a public-domain world outline. Open the GLOTIP page, the TIP research page, and data.unodc.org.',
+    imageAlt:
+      'Neutral world outline with a labeled legend for detected trafficking victims and forms of exploitation — a Fix Planet overview of UNODC GLOTIP themes, not country counts and not a drug-flow map',
   },
   'air-quality-pm25': {
     title: 'Fine particle air pollution (PM2.5)',

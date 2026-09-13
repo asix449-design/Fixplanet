@@ -370,5 +370,109 @@ def main() -> None:
     world_countries()
 
 
+def legend_row(items: list[tuple[str, str]], y: float = 1288) -> str:
+    """Labeled color chips in SVG pixels — themes only, not country scores."""
+    parts = ['<g id="fixplanet-legend" pointer-events="none">']
+    parts.append(
+        f'<rect x="48" y="{y - 28:.0f}" width="1180" height="78" rx="10" '
+        'fill="#0b1218" fill-opacity="0.82"/>'
+    )
+    x = 72
+    for color, label in items:
+        parts.append(
+            f'<rect x="{x}" y="{y - 6:.0f}" width="22" height="22" rx="3" fill="{color}"/>'
+        )
+        parts.append(
+            f'<text x="{x + 32}" y="{y + 12:.0f}" fill="#f4efe4" font-size="22" '
+            f'font-family="DejaVu Sans, Liberation Sans, sans-serif">{label}</text>'
+        )
+        x += 28 + max(220, 11 * len(label))
+    parts.append("</g>")
+    return "\n".join(parts)
+
+
+def organized_crime_index() -> None:
+    """Uniform land + three Index pillars. Not GI-TOC country scores, not homicide."""
+    css = """
+    .oceanxx { fill: #0e1a24 !important; stroke: none !important; }
+    .landxx { fill: #6e818c !important; stroke: #24323a !important; stroke-width: 0.35 !important; }
+    .antxx { fill: #d7dee3 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    render_svg(
+        css,
+        legend_row(
+            [
+                ("#c9a227", "Criminal markets"),
+                ("#d4653a", "Criminal actors"),
+                ("#3fa36a", "Resilience"),
+            ]
+        ),
+        "organized-crime-index.jpg",
+        "Fix Planet overview · GI-TOC Index pillars · not country scores · not homicide",
+    )
+
+
+def trafficking_in_persons() -> None:
+    """Uniform land + GLOTIP reporting themes. Not UNODC counts, not drug-flow plates."""
+    css = """
+    .oceanxx { fill: #1c2430 !important; stroke: none !important; }
+    .landxx { fill: #cbb89a !important; stroke: #5a4a38 !important; stroke-width: 0.35 !important; }
+    .antxx { fill: #e8e4dc !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    render_svg(
+        css,
+        legend_row(
+            [
+                ("#6b4c7a", "Detected victims"),
+                ("#b85c38", "Sexual exploitation"),
+                ("#2f6f8f", "Forced labour"),
+            ]
+        ),
+        "trafficking-in-persons.jpg",
+        "Fix Planet overview · UNODC GLOTIP themes · detected victims · not drug-flow plates",
+    )
+
+
+def corruption_perceptions_index(src: Path | None = None) -> None:
+    """CPI 2025 Commons choropleth (CC BY-SA 4.0) — not a homicide remix."""
+    candidate = src or SRC / "cpi-2025.svg"
+    if not candidate.exists():
+        raise SystemExit(f"missing {candidate}")
+    if candidate.suffix.lower() == ".svg":
+        png_path = Path("/tmp/map-src/cpi-2025.png")
+        png_path.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            ["rsvg-convert", "-w", "2754", "-h", "1398", "-o", str(png_path), str(candidate)],
+            check=True,
+        )
+        im = Image.open(png_path).convert("RGB")
+    else:
+        im = Image.open(candidate).convert("RGB")
+    im = fit_card(im)
+    im = credit_bar(
+        im,
+        "Wikimedia Commons · Cnscrptr & ConnerMiner · CC BY-SA 4.0 · CPI 2025 (TI data)",
+        fill=(20, 28, 36),
+    )
+    save_jpg(im, "corruption-perceptions-index.jpg")
+
+
+def crime_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    organized_crime_index()
+    trafficking_in_persons()
+    src = SRC / "cpi-2025.svg"
+    if not src.exists():
+        src = SRC / "cpi-2025.png"
+    corruption_perceptions_index(src)
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if sys.argv[1:] == ["crime"]:
+        crime_cards()
+    else:
+        main()

@@ -71,6 +71,54 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Our World in Data horoplēts par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
   },
+  'organized-crime-index': {
+    title: 'Globālais organizētās noziedzības indekss',
+    hook: 'Valstu vērtējumi noziedzīgiem tirgiem, aktoriem un noturībai — ekspertu siltumkarte organizētajai noziedzībai, ne otrs tīšu slepkavību slānis.',
+    description:
+      'Globālā iniciatīva pret transnacionālo organizēto noziedzību (GI-TOC) vērtē 193 ANO dalībvalstis pēc noziedzības — tirgiem un aktoriem — un pēc noturības. Publiskais rīks ir ocindex.net. 2025. gada izdevums ir trešais; novērtējuma gads ir 2024. Šī kartīte ved uz šo ekspertu kompozītu, ne policijas reģistrētu rādītāju un ne otru UNODC slepkavību karti.',
+    whyOnShelf:
+      'Organizētās noziedzības noziedzība un noturība ir cits objekts nekā tīšu slepkavību rādītāji. Nesalieciet šo indeksu slepkavību kartītē un nelasiet tumšu valsti kā augstu slepkavību rādītāju.',
+    howToRead:
+      'Valsts vērtējums ir ekspertu kompozīts, ne policijas reģistrēts rādītājs un ne UNODC slepkavību skaitlis. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē. Sīktēls ir parakstīts Fix Planet pārskats par šiem trim stabiem — ne GI-TOC valstu balles.',
+    caveats:
+      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Neizgudrojiet «visnoziedzīgāko valstu» rangu no shēmas. GI-TOC ziņojuma teksts ir ar visām tiesībām paturētām; viņu siltumkarti mēs neizvietojam.',
+    licenseNote:
+      '2025. gada Global Organized Crime Index ziņojums patur visas tiesības (© GI-TOC). Mēs nekopējam viņu siltumkarti vai valstu balles. Priekšskats ir Fix Planet shēma par indeksa trim stabiem uz sabiedriskā īpašuma pasaules kontūra. Oficiālais rīks, About lapa un lejupielādes ir ocindex.net.',
+    imageAlt:
+      'Neitrāls pasaules kontūrs ar leģendu noziedzīgiem tirgiem, aktoriem un noturībai — Fix Planet pārskats par GI-TOC indeksa stabiem, ne valstu balles un ne slepkavību karte',
+  },
+  'corruption-perceptions-index': {
+    title: 'Korupcijas uztveres indekss',
+    hook: 'Uztvertā publiskā sektora korupcija (0–100) no ekspertu un uzņēmēju aptaujām — pārvaldības risks, ne ielu noziedzības apjoms un ne slepkavības.',
+    description:
+      'Transparency International Korupcijas uztveres indekss (CPI) 2025 kārto valstis pēc uztvertās publiskā sektora korupcijas. Skala no 0 (ļoti korumpēts) līdz 100 (ļoti tīrs) apvieno ekspertu un uzņēmēju aptaujas. Our World in Data publicē rindu kā atklātu karti. Tas ir pārvaldības riska kompozīts, ne kukuļlietu skaits un ne vardarbības rādītājs.',
+    whyOnShelf:
+      'Uztvertā publiskā sektora korupcija ir cits sabiedriskā kaitējuma signāls nekā UNODC tīšās slepkavības. Nekad nesakausējiet šo kartīti ar slepkavību slāni.',
+    howToRead:
+      'Vērtējums ir uztveres kompozīts, ne notiesājošu spriedumu skaits un ne ielu noziedzība. Gada etiķete ir CPI izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena–divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir OWID.',
+    caveats:
+      'Trūkstoša valsts nav «tīra». Mājsaimniecību kukuļu pieredze ir cita rinda. Nelasiet sīktēlu kā «viskorumpētāko» sarakstu. Tas nav slepkavību horoplēts.',
+    licenseNote:
+      'Mēs izvietojam apgrieztu Wikimedia Commons CPI 2025 valstu horoplētu (Cnscrptr un ConnerMiner, CC BY-SA 4.0) pēc Transparency International CPI 2025 datiem. Our World in Data publicē CPI kā atklātu karti (CC BY). Izdevums ir transparency.org/en/cpi/2025.',
+    imageAlt:
+      'Pasaules horoplēts pēc Korupcijas uztveres indeksa 2025: vēsāks zaļš tur, kur uztvertā korupcija ir zemāka, siltāks sarkans tur, kur augstāka — ne slepkavību karte',
+  },
+  'trafficking-in-persons': {
+    title: 'Cilvēku tirdzniecība',
+    hook: 'Konstatētie cilvēku tirdzniecības upuri un modeļi no UNODC Globālā ziņojuma (GLOTIP) — izmantošana un piespiešana, ne slepkavību rādītājs un ne vien GI-TOC tirgu kompozīts.',
+    description:
+      'UNODC Globālais ziņojums par cilvēku tirdzniecību (GLOTIP) 2024 ir astotais izdevums saskaņā ar ANO Konvencijas pret transnacionālo organizēto noziedzību Protokolu par cilvēku tirdzniecību un 2010. gada Globālo rīcības plānu. Tas ziņo par konstatētajiem upuriem, izmantošanas formām un modeļiem. Šī kartīte ved uz šo konstatēšanas pārskatu, ne uz pilnu cilvēku tirdzniecības tautas skaitīšanu.',
+    whyOnShelf:
+      'Cilvēku tirdzniecība ir atsevišķa ICCS nodarījumu saime. Tā papildina OC indeksa cilvēku tirdzniecības tirgus vērtējumu ar UNODC statistiku par konstatētajiem upuriem. Tas nav slepkavību rādītājs un nav World Drug Report plūsmu karte.',
+    howToRead:
+      'Skaitļi ir konstatētie upuri — pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Izmantošanas formas (seksuāla izmantošana, piespiedu darbs un citas) nav slepkavību rādītājs. Tabulas ir GLOTIP un UNODC datu portālā. Sīktēls ir Fix Planet shēma, ne UNODC ziņojuma figūra.',
+    caveats:
+      'Konstatēšana nav tautas skaitīšana. Pārrobežu plūsmas ziņojumā ir konstatēti modeļi, ne pilns maršrutu inventārs. Nelasiet shēmu kā valstu balles. Neaizstājiet to ar World Drug Report narkotiku plūsmu plāksnēm.',
+    licenseNote:
+      'UNODC GLOTIP kartes un ziņojuma figūras ir ANO autortiesības; tā nav vispārēja CC licence. Mēs neizvietojam GLOTIP vai World Drug Report plāksnes. Priekšskats ir Fix Planet shēma par pārskata tēmām (konstatētie upuri; izmantošanas formas) uz sabiedriskā īpašuma pasaules kontūra. Atveriet GLOTIP lapu, TIP pētījumu lapu un data.unodc.org.',
+    imageAlt:
+      'Neitrāls pasaules kontūrs ar leģendu par konstatētajiem cilvēku tirdzniecības upuriem un izmantošanas formām — Fix Planet pārskats par UNODC GLOTIP tēmām, ne valstu skaitļi un ne narkotiku plūsmu karte',
+  },
   'air-quality-pm25': {
     title: 'Sīko daļiņu gaisa piesārņojums (PM2.5)',
     hook: 'Ārtelpas sīkās daļiņas, kas kaitē plaušām un sirdij — no satelītiem, modeļiem un stacijām, ne „pēc smaržas”.',

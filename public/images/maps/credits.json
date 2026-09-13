@@ -97,6 +97,33 @@
     "note": "Cropped OWID grapher map export of UNODC comparable rates. No invented country figures."
   },
   {
+    "file": "organized-crime-index.jpg",
+    "title": "Fix Planet overview of GI-TOC Index pillars",
+    "source": "Fix Planet schematic on BlankMap-World. GI-TOC heatmap and country scores are not copied.",
+    "url": "https://ocindex.net/2025/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Labeled pillars only (criminal markets, criminal actors, resilience). Not GI-TOC country scores and not a homicide remix. GI-TOC 2025 report is all-rights-reserved."
+  },
+  {
+    "file": "corruption-perceptions-index.jpg",
+    "title": "Map of countries by Corruption Perceptions Index (2025)",
+    "source": "Wikimedia Commons, Cnscrptr and ConnerMiner, from Transparency International CPI 2025",
+    "url": "https://commons.wikimedia.org/wiki/File:Map_of_Countries_by_Corruption_Perceptions_Index_(2025).svg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Cropped Commons CPI 2025 choropleth. Not a homicide remix. OWID republishes the series as an open map."
+  },
+  {
+    "file": "trafficking-in-persons.jpg",
+    "title": "Fix Planet overview of UNODC GLOTIP reporting themes",
+    "source": "Fix Planet schematic on BlankMap-World. UNODC GLOTIP and World Drug Report figures are not copied.",
+    "url": "https://www.unodc.org/unodc/en/data-and-analysis/glotip.html",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Labeled themes only (detected victims; forms of exploitation). Not UNODC country counts, not a homicide remix, and not World Drug Report drug-flow plates."
+  },
+  {
     "file": "air-quality-pm25.jpg",
     "title": "Exposure to outdoor PM2.5 (map export)",
     "source": "Our World in Data, from SatPM / Atmospheric Composition Analysis Group, Washington University in St. Louis",
