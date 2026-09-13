@@ -31,6 +31,8 @@ export type BorderFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
+  /** Optional long-form markdown (paragraphs, ### headings, bold/italic). */
+  essay?: string;
   sourceShort?: string;
   sourceOrg?: string;
   license?: string;
