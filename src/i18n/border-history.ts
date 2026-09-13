@@ -296,7 +296,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1100: {
     title: '1100 CE',
     caption:
-      'Exact year 1100, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1200 teaching map and not an engraving. Modern coastlines; schematic / WIP borders.',
+      'Year 1100 — Baldwin is crowned in Bethlehem; in England an arrow kills William Rufus; in Rus a congress at Uvetichi; in China Huizong takes the throne.',
     essay: year1100En,
     imageAlt: 'Schematic world political reconstruction for 1100 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
