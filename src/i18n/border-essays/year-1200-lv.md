@@ -13,7 +13,7 @@ Itālija. Pilsētas bagātinās no austrumu tirdzniecības. Venēcija skaita ku�
 
 Pāvests Inokentijs III iejaučas visur: kronēšana, laulība, ķecerība, krusta karš. Albīgiešus Francijas dienvidos arī nelaidīs — lielā ķeceru slaktiņš sāksies 1209. gadā. 1200. gadā baznīca virsotnē. Šķiet, ka Roma atkal komandē karaļus. Šķiet.
 
-Ziemeļos Šveices savienība vēl agri (1291). Norvēģija, Dānija, Zviedrija dzīvo savās ķildās. Hanza vēl veidojas.
+Ziemeļos Šveices savienība vēl agri (1291). Norvēģija, Dānija, Zviedrija dzīvo savās ķildās. Hanza vēl veidojas.
 
 ### Bizantija un krusta vējiņš
 Konstantinopolē Angelu dinastija. Impērija vāja pēc Mancikertas sen un pēc saviem apvērsumiem. Bulgārija pie Kalojaņa atkal sit grieķus. Polovci uzbrūk. Imperators Aleksijs III turas uz intrigām.
@@ -25,23 +25,23 @@ Svētā zeme. Jeruzaleme kopš 1187 pie Saladīna un viņa mantiniekiem. Krustne
 ### Stepe: nākamais Čingishans
 Mongolijā Temudžins jau sakāvis galvenos ienaidniekus starp savējiem: merkitus, taidžiūtus, daļu keraitu. Viņš vēl nav pasaules valdnieks. Viņš ir vadonis, kas prot dalīt laupījumu ne tikai pēc dzimtas, bet pēc uzticības. Tā ir jauna stepes mehānika.
 
-Ķīna no ziemeļiem viņam — Dzjiņas impērija, džurdžeņi, kas reiz pazemoja mongoļus. No rietumiem — Si Sja tanguti. Dienvidos no Dzjiņas — ķīniešu Sunu impērija, bagāta un ievainojama. 1200. gadā karte vēl vecā. Pēc divdesmit gadiem to nepazīs.
+Ķīna no ziemeļiem viņam — Dzjiņas impērija, džurdžeņi, kas reiz pazemoja mongoļus. No rietumiem — Si Sja tanguti. Dienvidos no Dzjiņas — ķīniešu Sunu impērija, bagāta un ievainojama. 1200. gadā karte vēl vecā. Pēc divdesmit gadiem to nepazīs.
 
 ### Krievzeme
-Kijeva sen nav vienīgais centrs. Stiprākā ziemeļaustrumos **Vladimiras-Suzdaļas zeme**. Vladimirā Vsevolods Lielā Ligzda — spēcīgākais Krievzemes kņazs šajā stundā. Novgoroda tirgojas, veče trokšņo, kņazus aicina un dzen. Gaļiča-Voliņa skatās uz Ungāriju un Poliju. Čerņigova, Smoļenska, Polocka — savi galdi, savas ķildas.
+Kijeva sen nav vienīgais centrs. Stiprākā ziemeļaustrumos **Vladimiras-Suzdaļas zeme**. Vladimirā Vsevolods Lielā Ligzda — spēcīgākais Krievzemes kņazs šajā stundā. Novgoroda tirgojas, veče trokšņo, kņazus aicina un dzen. Gaļiča-Voliņa skatās uz Ungāriju un Poliju. Čerņigova, Smoļenska, Polocka — savi galdi, savas ķildas.
 
 Polovci nu sievastēvs, nu ienaidnieks. Līdz 1223. gada Kalkai, kur krievi un polovci kopā kritīs zem Džebe un Subedeja izlūkošanas — vēl paaudze. 1200. gadā kņazi griežas savā starpā ierasti. Batija iebrukums viņiem nerādās sapņos.
 
 Pareizticība sava, pēc 1054. gada šķelšanās ar Romu. Pāvests tālu. Stepe tuvu.
 
 ### Āzija tālāk
-**Ķīna** sagriezta. Ziemeļi — Dzjiņa. Dienvidi — Sun: kanāli, pilsētas, papīrs, šaujampulveris, upju flote. Attīstītākā ekonomika pasaulē. Tā nezina, ka mongoļi mācās ieņemt pilsētas.
+**Ķīna** sagriezta. Ziemeļi — Dzjiņa. Dienvidi — Sun: kanāli, pilsētas, papīrs, šaujampulveris, upju flote. Attīstītākā ekonomika pasaulē. Tā nezina, ka mongoļi mācās ieņemt pilsētas.
 
 **Japāna.** Tikko, 1192. gadā, Minamoto no Joritomo kļuva par šogunu. Kamakuras šogunāts: imperators ir, valda karavīru nams. Samuraji vairs nav tikai kalpi, bet kārta.
 
 **Tuvie Austrumi.** Pēc Saladīna Ajūbīdi dala Sīriju un Ēģipti. Bagdādes kalifs vēl sēž, bet tas drīzāk svētnīca nekā vara. Līdz Hulagu un Bagdādes nodedzināšanai — 58 gadi.
 
-**Indija.** Ziemeļos musulmaņu Delī sultanāts tikai ceļas kājās pēc Gurīdu gājieniem. Dienvidi — savas hinduistu karaļvalstis.
+**Indija.** Ziemeļos musulmaņu Delī sultanāts tikai ceļas kājās pēc Gurīdu gājieniem. Dienvidi — savas hinduistu karaļvalstis.
 
 **Kambodža.** Angkora vēl dzīva, khmeru impērija milzīga, bet vairs nav mūžīga.
 
