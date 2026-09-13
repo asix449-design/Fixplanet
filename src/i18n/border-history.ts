@@ -790,7 +790,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1000: {
     title: '1000. m.ē. — tuvākā karte: 900',
     caption:
-      'Nav brīvas 1000. gada pasaules lapas šajā atlanta saimē. Rādām 900. gada rekonstrukciju un to sakām. Tā nav tūkstošgades momentuzņēmums.',
+      'Gads 1000 — Oto III Gņezno; Ištvanas Ungārijas karalis; Kijeva jau kristīta; Leifs Eriksons pie Vinlandes krasta; pasaules gals neiestājas.',
     essay: year1000Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 900. gada m.ē. 1000. soļa vietā',
   },
