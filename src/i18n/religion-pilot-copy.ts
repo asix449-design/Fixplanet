@@ -445,8 +445,70 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1300: emptyPackCCopy('en', 1300),
-    1400: emptyPackCCopy('en', 1400),
+    1300: {
+      title: '1300 CE — schematic reconstruction',
+      caption:
+        'Around 1300 CE the **Islamic** belt is Mamluk Egypt and Syria, Maghreb and Libya, an Anatolia fringe (early Ottoman), a Granada pocket in Iberia, plus Near East–Arabia–Iran–Central Asia and a Delhi fringe. Christian Europe is nearly solid in the west and center; the Balkans stay Christian. India Hindu; Buddhist corridors and the Chinese layer hold the East. In the Americas, local traditions: rising Mesoamerica (Aztec) and the Andes, plus other indigenous zones.',
+      imageAlt:
+        'Schematic world religion map for 1300 CE: Mamluk Islamic belt, Anatolia fringe, Granada pocket, Americas indigenous fill',
+      honestyPills: packCHonesty.en,
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Christian fill across Latin West, Italy, Britain, Scandinavia fringe, east-Elbe / Rus hold, and the Balkans. Iberia mostly Christian except the Granada Islamic pocket. Anatolia only an Islamic fringe — not majority wash. Jewish spots where shown.',
+        },
+        {
+          heading: 'Southwest Asia / North Africa / Iran',
+          text: 'Mamluk Islamic Egypt–Syria / Levant; Maghreb–Libya; Arabia–Near East–Iran–Central Asia; Anatolia Islamic fringe (early Ottoman); Delhi / Indus fringe. Thin Zoroastrian remnant hatch only where marked.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu umbrella on India (Delhi fringe Islamic on the northwest edge); Buddhist corridors (Tibet / SE Asia / China inroads); Chinese imperial / folk belt. Northern steppe and island fringes = local wash.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Maghreb–Libya–Egypt in the Islamic belt; light Sahel trade edge; Christian Ethiopia/Nubia edge where shown; south of the Sahara = coarse African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Local traditions across the Americas — rising Aztec / Mesoamerica and Andean highland cores, plus Amazon, North American plains, and southern-cone indigenous wash. Antarctica / Oceania unmapped.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+    },
+    1400: {
+      title: '1400 CE — schematic reconstruction',
+      caption:
+        'By 1400 CE the **Islamic** belt is wider: Mamluk Egypt–Syria–Levant, Maghreb–Libya, the Timur zone (Central Asia / Iran / Near East), Anatolia already majority Islamic (Ottoman), Granada pocket still held. Christian Europe fuller; the Balkans still mostly Christian demographically. India Hindu; Buddhism and the Chinese layer hold the East. In the Americas, strong local cores: Aztec Mesoamerica and the Inca Andes, plus other indigenous zones.',
+      imageAlt:
+        'Schematic world religion map for 1400 CE: wider Islamic belt, Ottoman Anatolia, Granada pocket, Aztec and Inca cores',
+      honestyPills: packCHonesty.en,
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Fuller Christian west, center, Scandinavia, Baltics, and Rus fringe; Balkans still mostly Christian demographically. Iberia Christian except Granada pocket. Anatolia majority Islamic (Ottoman) — not a Byzantine Christian wash. Jewish spots.',
+        },
+        {
+          heading: 'Southwest Asia / North Africa / Iran',
+          text: 'Islamic Maghreb–Libya–Egypt–Levant–Arabia plus Timur-zone wash fuller into Iran and Central Asia; Anatolia majority Islamic (Ottoman). Granada pocket remains in Iberia. Thin Zoroastrian remnant hatch only.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu India; Buddhist corridors as at 1300 (Tibet / SE Asia / China inroads); Chinese imperial / folk belt (Ming-era plate). Northern steppe and island fringes = local wash.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Maghreb–Libya–Egypt Islamic; Sahel trade edge; Christian Ethiopia/Nubia edge where shown; Sahel–south = African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Strong local traditions — Aztec Mesoamerica and Inca Andes cores, plus Amazon, North American plains, and southern-cone indigenous wash. Antarctica / Oceania unmapped.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+    },
     1500: emptyPackCCopy('en', 1500),
   },
   ru: {
@@ -829,8 +891,70 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1300: emptyPackCCopy('ru', 1300),
-    1400: emptyPackCCopy('ru', 1400),
+    1300: {
+      title: '1300 н. э. — схематическая реконструкция',
+      caption:
+        'Около 1300 н. э. **исламский** пояс — мамлюкский Египет и Сирия, Магриб и Ливия, край Анатолии (ранние османы), карман Гранады в Иберии, плюс Ближний Восток–Аравия–Иран–Центральная Азия и край Дели. Христианская Европа почти сплошная на Западе и в центре; Балканы христианские. Индия индуистская; буддийские коридоры и китайский слой на Востоке. В Америке — местные традиции: поднимающаяся Мезоамерика (ацтеки) и Анды, плюс другие коренные зоны.',
+      imageAlt:
+        'Схематическая карта религий на 1300 год н. э.: мамлюкский исламский пояс, край Анатолии, карман Гранады, Америка — местные традиции',
+      honestyPills: packCHonesty.ru,
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Христианская заливка по латинскому Западу, Италии, Британии, скандинавскому краю, за Эльбой / русскому краю и Балканам. Иберия в основном христианская, кроме исламского кармана Гранады. Анатолия — только исламский край, не мажоритарная заливка. Иудейские пятна где видно.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Северная Африка / Иран',
+          text: 'Мамлюкский исламский Египет–Сирия / Левант; Магриб–Ливия; Аравия–Ближний Восток–Иран–Центральная Азия; исламский край Анатолии (ранние османы); край Дели / Инда. Только тонкая зороастрийская штриховка-остаток где отмечено.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистский зонт в Индии (исламский край Дели на северо-западе); буддийские коридоры (Тибет / ЮВА / проникновение в Китай); китайский имперский / народный пояс. Северная степь и островные края — местный смыв.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Магриб–Ливия–Египет в исламском поясе; лёгкий сахельский торговый край; христианский край Эфиопии/Нубии где видно; к югу от Сахары — грубый африканский традиционный смыв.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Местные традиции по Америке — поднимающиеся ацтекская / мезоамериканская и андская высокогорные ядра, плюс Амазония, равнины Северной Америки и южный конус. Антарктида / Океания не нанесена.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+    },
+    1400: {
+      title: '1400 н. э. — схематическая реконструкция',
+      caption:
+        'К 1400 н. э. **исламский** пояс шире: мамлюкский Египет–Сирия–Левант, Магриб–Ливия, зона Тимура (Центральная Азия / Иран / Ближний Восток), Анатолия уже в основном исламская (османы), карман Гранады ещё на месте. Христианская Европа полнее; Балканы демографически всё ещё в основном христианские. Индия индуистская; буддизм и китайский слой на Востоке. В Америке — сильные местные ядра: ацтекская Мезоамерика и империя инков в Андах, плюс другие коренные зоны.',
+      imageAlt:
+        'Схематическая карта религий на 1400 год н. э.: шире исламский пояс, османская Анатолия, карман Гранады, ядра ацтеков и инков',
+      honestyPills: packCHonesty.ru,
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Полнее христианский Запад, центр, Скандинавия, Балтика и русский край; Балканы демографически всё ещё в основном христианские. Иберия христианская, кроме кармана Гранады. Анатолия в основном исламская (османы) — не византийская христианская заливка. Иудейские пятна.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Северная Африка / Иран',
+          text: 'Исламский Магриб–Ливия–Египет–Левант–Аравия плюс тимуровская заливка полнее в Иран и Центральную Азию; Анатолия в основном исламская (османы). Карман Гранады в Иберии остаётся. Только тонкая зороастрийская штриховка-остаток.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистская Индия; буддийские коридоры как в 1300 (Тибет / ЮВА / проникновение в Китай); китайский имперский / народный пояс (минский лист). Северная степь и островные края — местный смыв.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Магриб–Ливия–Египет исламские; сахельский торговый край; христианский край Эфиопии/Нубии где видно; Сахель и юг — африканский традиционный смыв.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Сильные местные традиции — ацтекская Мезоамерика и андские ядра инков, плюс Амазония, равнины Северной Америки и южный конус. Антарктида / Океания не нанесена.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+    },
     1500: emptyPackCCopy('ru', 1500),
   },
   pl: {
@@ -1213,7 +1337,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1300: emptyPackCCopy('pl', 1300),
+    1300: {
+      title: '1300 n.e. — rekonstrukcja schematyczna',
+      caption:
+        'Około 1300 n.e. pas **islamu** — mamelucki Egipt i Syria, Maghreb i Libia, krawędź Anatolii (wcześni Osmanowie), kieszeń Granady w Iberii, plus Bliski Wschód–Arabia–Iran–Azja Środkowa i krawędź Delhi. Chrześcijańska Europa niemal jednolita na zachodzie i w centrum; Bałkany chrześcijańskie. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa na Wschodzie. W Amerykach — tradycje lokalne: rosnąca Mezoameryka (Aztekowie) i Andy, plus inne strefy rdzenne.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 1300 n.e.: mamelucki pas islamu, krawędź Anatolii, kieszeń Granady, Ameryki — tradycje lokalne',
+      honestyPills: packCHonesty.pl,
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Wypełnienie chrześcijańskie na łacińskim Zachodzie, we Włoszech, Brytanii, krawędzi skandynawskiej, za Łabą / ruskiej i na Bałkanach. Iberia w większości chrześcijańska poza islamską kieszenią Granady. Anatolia — tylko krawędź islamska, nie większość. Plamy żydowskie tam, gdzie widać.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
+          text: 'Mamelucki islamski Egipt–Syria / Lewant; Maghreb–Libia; Arabia–Bliski Wschód–Iran–Azja Środkowa; islamska krawędź Anatolii (wcześni Osmanowie); krawędź Delhi / Indusu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości tam, gdzie zaznaczono.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Parasol hinduistyczny w Indiach (islamska krawędź Delhi na północnym zachodzie); korytarze buddyjskie (Tybet / Azja Płd.-Wsch. / wniknięcie w Chiny); chiński pas cesarski / ludowy. Północny step i obrzeża wyspiarskie — lokalny zmyw.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Maghreb–Libia–Egipt w pasie islamskim; lekka krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; na południe od Sahary — gruby afrykański zmyw tradycyjny.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Tradycje lokalne w Amerykach — rosnące jądra azteckie / mezoamerykańskie i andyjskie wyżyny, plus Amazonia, równiny Ameryki Północnej i stożek południowy. Antarktyda / Oceania nie naniesione.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+    },
     1400: emptyPackCCopy('pl', 1400),
     1500: emptyPackCCopy('pl', 1500),
   },
@@ -1597,7 +1752,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1300: emptyPackCCopy('lv', 1300),
+    1300: {
+      title: '1300. g. m.ē. — shēmatiska rekonstrukcija',
+      caption:
+        'Ap 1300. g. m.ē. **islāma** josla — mameluku Ēģipte un Sīrija, Magriba un Lībija, Anatolijas mala (agrie osmaņi), Granadas kabata Ibērijā, plus Tuvie Austrumi–Arābija–Irāna–Centrālāzija un Deli mala. Kristīgā Eiropa gandrīz vienlaidus rietumos un centrā; Balkāni kristīgi. Indija hinduistu; budistu koridori un ķīniešu slānis Austrumos. Amerikā — vietējās tradīcijas: augošā Mezoamerika (acteki) un Andi, plus citas indīgēnās zonas.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 1300. gadam m.ē.: mameluku islāma josla, Anatolijas mala, Granadas kabata, Amerika — vietējās tradīcijas',
+      honestyPills: packCHonesty.lv,
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Kristīgā aizpilde latīņu Rietumos, Itālijā, Britānijā, Skandināvijas malā, aiz Elbas / Krievzemes malā un Balkānos. Ibērija pārsvarā kristīga, izņemot islāma Granadas kabatu. Anatolija — tikai islāma mala, ne vairākuma aizpilde. Jūdu plankumi, kur redzami.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
+          text: 'Mameluku islāma Ēģipte–Sīrija / Levanta; Magriba–Lībija; Arābija–Tuvie Austrumi–Irāna–Centrālāzija; Anatolijas islāma mala (agrie osmaņi); Deli / Indas mala. Tikai plāns zoroastrisma atlikuma šrafējums, kur atzīmēts.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu lietussargs Indijā (islāma Deli mala ziemeļrietumos); budistu koridori (Tibeta / DA Āzija / ieplūde Ķīnā); ķīniešu imperiālā / tautas josla. Ziemeļu stepe un salu malas — vietējā josla.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Magriba–Lībija–Ēģipte islāma joslā; viegla sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; uz dienvidiem no Sahāras — rupja āfrikāņu tradicionālā josla.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Vietējās tradīcijas Amerikā — augoši acteku / Mezoamerikas un Andu kalnu kodoli, plus Amazone, Ziemeļamerikas līdzenumi un dienvidu konuss. Antarktīda / Okeānija nav kartēta.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+    },
     1400: emptyPackCCopy('lv', 1400),
     1500: emptyPackCCopy('lv', 1500),
   },
