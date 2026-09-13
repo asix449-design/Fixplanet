@@ -13,7 +13,7 @@ Francija. Kapetingi sēž Parīzē un faktiski valda lupatiņu ap to. Pārējais
 
 Skandināvija sakārtojas karaļvalstīs. 1000. gada septembrī (vai ap to) pie Svolderas iet bojā norvēģu karalis Olafs Trigvasons: viņu sit dāņi un zviedri. Kristietība Ziemeļos jau nav jaunums, bet vēl nav katras fjordu sādžas ikdiena. Islande altinā tieši pieņem kristību — bez zobena no augšas, ar savu lēmumu.
 
-Roma. Pāvests Silvestrs II — mācītais francūzis Žerbērs, Oto draugs. Ne tas pāvests, kas komandē karaļus kā Inokentijs pēc divsimt gadiem. Pilsēta netīra, diżciltīgie dzimtas griežas, imperators atbrauc sakārtot un aizbrauc.
+Roma. Pāvests Silvestrs II — mācītais francūzis Žerbērs, Oto draugs. Ne tas pāvests, kas komandē karaļus kā Inokentijs pēc divsimt gadiem. Pilsēta netīra, dižciltīgie dzimtas griežas, imperators atbrauc sakārtot un aizbrauc.
 
 Bailes no «tūkstošā gada» hronikās mazāk, nekā vēlāk uzrakstīs romantiķi. Kāds gaidīja Tiesu. 1. janvāra rīts iestājās. Gāja art tālāk.
 
