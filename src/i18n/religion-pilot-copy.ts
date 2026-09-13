@@ -306,7 +306,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
     },
-    1000: emptySchematicCopy(SCHEMATIC_SOURCES.en),
+    1000: {
+      title: '1000 CE — schematic reconstruction',
+      caption:
+        'Around 1000 CE a wide **Islamic** belt still holds Maghreb–Libya–Egypt–Near East, Arabia, Iran, Central Asia, and Sind; al-Andalus stays, with a light Sahel edge. Christian Europe pushes further north and east — Saxon / Polish / Kievan fringe — still not solid Scandinavia or the Baltic. India Hindu; Buddhist corridors and the Chinese imperial layer hold the East. Americas unmapped.',
+      imageAlt:
+        'Schematic world religion map for 1000 CE: wide Islamic Maghreb–Libya–Egypt–Near East belt, Christian Europe expanding north and east, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas unmapped',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Wider Christian west and center (Germany / Saxon push, Bohemia and Poland fringe, Kievan Christian edge) plus Byzantine east, Italy, Britain; Iberia Islamic. Far north / Viking lands and Baltic pockets still local traditions. Jewish spots where shown.',
+        },
+        {
+          heading: 'Southwest Asia / North Africa / Iran',
+          text: 'Islamic Maghreb–Libya–Egypt–Near East belt through Arabia into Iran, Central Asia, and Sind; al-Andalus held; light Sahel / West Africa trade edge. Thin Zoroastrian remnant hatch; Manichaean minority hatch smaller where shown.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu umbrella on India; Buddhist corridors much as at 900 (Silk Road, SE Asia stronger); Chinese imperial / folk belt. Far north steppe and island fringes stay local wash.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Maghreb–Libya–Egypt in the Islamic belt; light Sahel trade edge; Aksum/Nubia Christian edge; south of the Sahara = coarse African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+    },
     1100: emptySchematicCopy(SCHEMATIC_SOURCES.en),
     1200: emptySchematicCopy(SCHEMATIC_SOURCES.en),
   },
@@ -579,7 +615,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
     },
-    1000: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
+    1000: {
+      title: '1000 н. э. — схематическая реконструкция',
+      caption:
+        'Около 1000 н. э. широкий **исламский** пояс всё ещё держит Магриб–Ливию–Египет–Ближний Восток, Аравию, Иран, Центральную Азию и Синд; аль-Андалус на месте, лёгкий сахельский край. Христианская Европа шире на север и восток — саксонский / польский / киевский край, но не сплошь Скандинавия и Балтика. Индия индуистская; буддийские коридоры и китайский имперский слой на Востоке. Америка не нанесена.',
+      imageAlt:
+        'Схематическая карта религий на 1000 год н. э.: широкий исламский пояс Магриб–Ливия–Египет–Ближний Восток, христианская Европа шире на север и восток, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Шире христианский Запад и центр (саксонский толчок в Германию, край Богемии и Польши, киевский христианский край) плюс византийский Восток, Италия, Британия; Иберия исламская. Дальний север / викингские земли и балтийские карманы — ещё местные традиции. Иудейские пятна где видно.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Северная Африка / Иран',
+          text: 'Исламский пояс Магриб–Ливия–Египет–Ближний Восток через Аравию в Иран, Центральную Азию и Синд; аль-Андалус держится; лёгкий сахельский / западноафриканский торговый край. Тонкая зороастрийская штриховка-остаток; манихейская меньшинственная штриховка меньше где видно.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистский зонт в Индии; буддийские коридоры примерно как в 900 (Шёлковый путь, сильнее ЮВА); китайский имперский / народный пояс. Дальняя северная степь и островные края — местный смыв.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Магриб–Ливия–Египет в исламском поясе; лёгкий сахельский торговый край; Аксум/Нубия — христианский край; к югу от Сахары — грубый африканский традиционный смыв.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Не нанесено.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+    },
     1100: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
     1200: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
   },
@@ -852,7 +924,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
     },
-    1000: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
+    1000: {
+      title: '1000 n.e. — rekonstrukcja schematyczna',
+      caption:
+        'Około 1000 n.e. szeroki pas **islamu** nadal trzyma Maghreb–Libię–Egipt–Bliski Wschód, Arabię, Iran, Azję Środkową i Sind; al-Andalus na miejscu, lekka krawędź sahelska. Chrześcijańska Europa szersza na północ i wschód — krawędź saska / polska / kijowska — wciąż nie jednolita Skandynawia ani Bałtyk. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa cesarska na Wschodzie. Ameryki nie naniesione.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 1000 n.e.: szeroki pas islamu Maghreb–Libia–Egipt–Bliski Wschód, chrześcijańska Europa szersza na północ i wschód, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryki nie naniesione',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Szerszy chrześcijański Zachód i centrum (pchnięcie saskie w Niemczech, krawędź Czech i Polski, kijowska krawędź chrześcijańska) plus bizantyński Wschód, Włochy, Brytania; Iberia islamska. Daleka północ / ziemie wikińskie i kieszenie bałtyckie — wciąż tradycje lokalne. Plamy żydowskie tam, gdzie widać.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
+          text: 'Islamski pas Maghreb–Libia–Egipt–Bliski Wschód przez Arabię do Iranu, Azji Środkowej i Sind; al-Andalus trzymany; lekka krawędź sahelska / zachodnioafrykańskiego handlu. Cienkie kreskowanie zoroastryjskiego pozostałości; manichejska kreska mniejszościowa mniejsza tam, gdzie widać.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Parasol hinduistyczny w Indiach; korytarze buddyjskie mniej więcej jak w 900 (Jedwabny Szlak, silniejsza Azja Płd.-Wsch.); chiński pas cesarski / ludowy. Daleki północny step i obrzeża wyspiarskie — lokalny zmyw.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Maghreb–Libia–Egipt w pasie islamskim; lekka krawędź handlowa Sahelu; Aksum/Nubia — krawędź chrześcijańska; na południe od Sahary — gruby afrykański zmyw tradycyjny.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+    },
     1100: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
     1200: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
   },
@@ -1125,7 +1233,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
     },
-    1000: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
+    1000: {
+      title: '1000. g. m.ē. — shēmatiska rekonstrukcija',
+      caption:
+        'Ap 1000. g. m.ē. plata **islāma** josla joprojām tur Magribu–Lībiju–Ēģipti–Tuvos Austrumus, Arābiju, Irānu, Centrālāziju un Sindu; al-Andalusa vietā, viegla sahēlas mala. Kristīgā Eiropa platāka uz ziemeļiem un austrumiem — sakšu / poļu / Kijivas mala — joprojām ne vienlaidus Skandināvija vai Baltija. Indija hinduistu; budistu koridori un ķīniešu imperiālais slānis Austrumos. Amerika nav kartēta.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 1000. gadam m.ē.: plata islāma Magribas–Lībijas–Ēģiptes–Tuvo Austrumu josla, kristīgā Eiropa platāka uz ziemeļiem un austrumiem, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav kartēta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Platāks kristīgais Rietums un centrs (sakšu grūdiens Vācijā, Bohēmijas un Polijas mala, Kijivas kristīgā mala) plus Bizantijas austrumi, Itālija, Britānija; Ibērija islāmiska. Tālie ziemeļi / vikingu zemes un Baltijas kabatas — vēl vietējās tradīcijas. Jūdu plankumi, kur redzami.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
+          text: 'Islāma Magribas–Lībijas–Ēģiptes–Tuvo Austrumu josla caur Arābiju uz Irānu, Centrālāziju un Sindu; al-Andalusa turas; viegla sahēlas / Rietumāfrikas tirdzniecības mala. Plāns zoroastrisma atlikuma šrafējums; maniheisma minoritātes šrafējums mazāks, kur redzams.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu lietussargs Indijā; budistu koridori aptuveni kā 900. gadā (Zīda ceļš, spēcīgāka DA Āzija); ķīniešu imperiālā / tautas josla. Tālā ziemeļu stepe un salu malas — vietējā josla.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Magriba–Lībija–Ēģipte islāma joslā; viegla sahēlas tirdzniecības mala; Aksūma/Nūbija — kristīgā mala; uz dienvidiem no Sahāras — rupja āfrikāņu tradicionālā josla.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+    },
     1100: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
     1200: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
   },
