@@ -623,7 +623,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1000: {
     title: '1000 n.e. — najbliższa mapa: 900',
     caption:
-      'Brak wolnego arkusza światowego na rok 1000 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 900 i mówimy o tym wprost. To nie migawka roku tysięcznego.',
+      'Rok 1000 — Otton III w Gnieźnie; Stefan król Węgier; Kijów już ochrzczony; Leif Eriksson u brzegu Winlandii; koniec świata nie nadchodzi.',
     essay: year1000Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 900 n.e. użyta dla kroku 1000',
   },
