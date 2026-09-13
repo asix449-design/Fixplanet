@@ -2797,6 +2797,79 @@ a.map-card:hover {
   margin-top: 1.3rem;
 }
 
+.religion-legend {
+  margin: 0 0 1.6rem;
+  padding: 1rem 1.15rem 1.15rem;
+  background: rgba(10, 10, 10, 0.72);
+  border: 1px solid rgba(192, 255, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.religion-legend-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.religion-legend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.45rem 1rem;
+}
+
+.religion-legend-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--cream);
+  font-size: 0.88rem;
+}
+
+.religion-legend-list code {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: var(--lime);
+  font-size: 0.74rem;
+}
+
+.religion-swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 3px;
+  border: 1px solid rgba(244, 244, 240, 0.35);
+  flex: 0 0 auto;
+}
+
+.religion-honesty-pills {
+  max-width: none;
+}
+
+.religion-continents h4 {
+  margin: 1rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.religion-companion {
+  margin: 1.2rem 0 0;
+}
+
+.religion-companion img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  background: #f4efe4;
+}
+
+.religion-companion figcaption,
+.religion-companion-link {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 /* Forests — canopy / lime-on-black monitoring room */
 .theme-forests {
   background: #06110a;

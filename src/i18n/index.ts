@@ -31,7 +31,12 @@ export {
   mapCategoryKeys,
 } from './maps';
 export { getBorderHistoryFrames, getBorderHistoryPage } from './border-history';
-export { getReligionHistoryFrames, getReligionHistoryPage } from './religion-history';
+export {
+  getReligionContinentLabels,
+  getReligionHistoryFrames,
+  getReligionHistoryPage,
+  getReligionLegend,
+} from './religion-history';
 export {
   getInnovationBySlug,
   getInnovations,

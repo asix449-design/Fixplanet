@@ -1,6 +1,7 @@
 export const RELIGION_ATLAS_SLUG = 'religious';
 
 export type ReligionCoverage =
+  | 'schematic-pilot'
   | 'old-world'
   | 'christianity-expansion'
   | 'state-religion'
@@ -9,6 +10,12 @@ export type ReligionCoverage =
   | 'colonial-atlas'
   | 'intelligence-atlas'
   | 'majority-modern';
+
+export type ReligionCompanion = {
+  kind: 'reclus' | 'christianity-600';
+  preview?: string;
+  href?: string;
+};
 
 export type ReligionFrameMeta = {
   year: number;
@@ -23,6 +30,7 @@ export type ReligionFrameMeta = {
   commonsUrl: string;
   license: string;
   licenseUrl: string;
+  companion?: ReligionCompanion;
 };
 
 export const religionHistoryPreviewSrc = (file: string) =>
@@ -39,82 +47,75 @@ export const religionHistoryFrames: ReligionFrameMeta[] = [
   {
     year: 1,
     label: '1',
-    sourceYear: 'antiquity (1905 reconstruction)',
-    preview: 'y0001.png',
-    coverage: 'old-world',
-    nearest: false,
-    sourceShort: 'Reclus',
-    sourceOrg: 'Élisée Reclus, L’Homme et la Terre (1905 plate of Old-World religions)',
-    sourceUrl:
-      'https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png',
-    commonsUrl:
-      'https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png',
-    license: 'Public domain',
-    licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
+    sourceYear: '1 CE schematic (underlay world_100, nearest)',
+    preview: 'y0001-schematic.png',
+    coverage: 'schematic-pilot',
+    nearest: true,
+    sourceShort: 'Fix Planet schematic',
+    sourceOrg: 'Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_100',
+    sourceUrl: 'https://github.com/aourednik/historical-basemaps',
+    commonsUrl: 'https://github.com/aourednik/historical-basemaps',
+    license: 'Religion fills © Fix Planet schematic; basemap GPL-3.0',
+    licenseUrl: 'https://www.gnu.org/licenses/gpl-3.0.html',
+    companion: { kind: 'reclus', preview: 'y0001.png' },
   },
   {
     year: 100,
     label: '100',
-    sourceYear: 'antiquity (1905 reconstruction)',
-    preview: 'y0001.png',
-    coverage: 'old-world',
-    nearest: true,
-    sourceShort: 'Reclus',
-    sourceOrg: 'Élisée Reclus, L’Homme et la Terre (1905 plate of Old-World religions)',
-    sourceUrl:
-      'https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png',
-    commonsUrl:
-      'https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png',
-    license: 'Public domain',
-    licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
+    sourceYear: '100 CE schematic (underlay world_100)',
+    preview: 'y0100.png',
+    coverage: 'schematic-pilot',
+    nearest: false,
+    sourceShort: 'Fix Planet schematic',
+    sourceOrg: 'Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_100',
+    sourceUrl: 'https://github.com/aourednik/historical-basemaps',
+    commonsUrl: 'https://github.com/aourednik/historical-basemaps',
+    license: 'Religion fills © Fix Planet schematic; basemap GPL-3.0',
+    licenseUrl: 'https://www.gnu.org/licenses/gpl-3.0.html',
   },
   {
     year: 200,
     label: '200',
-    sourceYear: 'antiquity (1905 reconstruction)',
-    preview: 'y0001.png',
-    coverage: 'old-world',
-    nearest: true,
-    sourceShort: 'Reclus',
-    sourceOrg: 'Élisée Reclus, L’Homme et la Terre (1905 plate of Old-World religions)',
-    sourceUrl:
-      'https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png',
-    commonsUrl:
-      'https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png',
-    license: 'Public domain',
-    licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
+    sourceYear: '200 CE schematic (underlay world_200)',
+    preview: 'y0200.png',
+    coverage: 'schematic-pilot',
+    nearest: false,
+    sourceShort: 'Fix Planet schematic',
+    sourceOrg: 'Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_200',
+    sourceUrl: 'https://github.com/aourednik/historical-basemaps',
+    commonsUrl: 'https://github.com/aourednik/historical-basemaps',
+    license: 'Religion fills © Fix Planet schematic; basemap GPL-3.0',
+    licenseUrl: 'https://www.gnu.org/licenses/gpl-3.0.html',
   },
   {
     year: 300,
     label: '300',
-    sourceYear: 'to 600 CE',
-    preview: 'y0600.png',
-    coverage: 'christianity-expansion',
-    nearest: true,
-    sourceShort: 'Atlas of World History',
-    sourceOrg: 'Geuiwogbil after Atlas of World History; Wikimedia Commons',
-    sourceUrl:
-      'https://commons.wikimedia.org/wiki/File:Spread_of_Christianity_to_AD_600_-_Atlas_of_World_History.png',
-    commonsUrl:
-      'https://commons.wikimedia.org/wiki/File:Spread_of_Christianity_to_AD_600_-_Atlas_of_World_History.png',
-    license: 'CC BY-SA 3.0',
-    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceYear: '300 CE schematic (underlay world_300)',
+    preview: 'y0300.png',
+    coverage: 'schematic-pilot',
+    nearest: false,
+    sourceShort: 'Fix Planet schematic',
+    sourceOrg: 'Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_300',
+    sourceUrl: 'https://github.com/aourednik/historical-basemaps',
+    commonsUrl: 'https://github.com/aourednik/historical-basemaps',
+    license: 'Religion fills © Fix Planet schematic; basemap GPL-3.0',
+    licenseUrl: 'https://www.gnu.org/licenses/gpl-3.0.html',
+    companion: { kind: 'christianity-600', href: '#year-600' },
   },
   {
     year: 400,
     label: '400',
-    sourceYear: 'to 600 CE',
-    preview: 'y0600.png',
-    coverage: 'christianity-expansion',
-    nearest: true,
-    sourceShort: 'Atlas of World History',
-    sourceOrg: 'Geuiwogbil after Atlas of World History; Wikimedia Commons',
-    sourceUrl:
-      'https://commons.wikimedia.org/wiki/File:Spread_of_Christianity_to_AD_600_-_Atlas_of_World_History.png',
-    commonsUrl:
-      'https://commons.wikimedia.org/wiki/File:Spread_of_Christianity_to_AD_600_-_Atlas_of_World_History.png',
-    license: 'CC BY-SA 3.0',
-    licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+    sourceYear: '400 CE schematic (underlay world_400)',
+    preview: 'y0400.png',
+    coverage: 'schematic-pilot',
+    nearest: false,
+    sourceShort: 'Fix Planet schematic',
+    sourceOrg: 'Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_400',
+    sourceUrl: 'https://github.com/aourednik/historical-basemaps',
+    commonsUrl: 'https://github.com/aourednik/historical-basemaps',
+    license: 'Religion fills © Fix Planet schematic; basemap GPL-3.0',
+    licenseUrl: 'https://www.gnu.org/licenses/gpl-3.0.html',
+    companion: { kind: 'christianity-600', href: '#year-600' },
   },
   {
     year: 500,
