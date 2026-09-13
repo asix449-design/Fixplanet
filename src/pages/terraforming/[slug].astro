@@ -1,6 +1,11 @@
 ---
-import { geoMeta, geoShelfKeys, isGeoShelf } from '../../data/terraforming';
-import { getGeoBySlug, resolveLocale } from '../../i18n';
+import {
+  geoMeta,
+  geoPathRedirects,
+  geoShelfKeys,
+  isGeoShelf,
+} from '../../data/terraforming';
+import { getGeoBySlug, localizePath, resolveLocale } from '../../i18n';
 import TerraformingDetailView from '../../views/TerraformingDetailView.astro';
 import TerraformingView from '../../views/TerraformingView.astro';
 
@@ -8,11 +13,15 @@ export function getStaticPaths() {
   return [
     ...geoShelfKeys.map((slug) => ({ params: { slug } })),
     ...geoMeta.map((item) => ({ params: { slug: item.slug } })),
+    ...Object.keys(geoPathRedirects).map((slug) => ({ params: { slug } })),
   ];
 }
 
 const { slug } = Astro.params;
 const locale = resolveLocale(Astro.currentLocale);
+if (slug && slug in geoPathRedirects) {
+  return Astro.redirect(localizePath(geoPathRedirects[slug], locale), 301);
+}
 const item = slug && !isGeoShelf(slug) ? getGeoBySlug(locale, slug) : undefined;
 ---
 
