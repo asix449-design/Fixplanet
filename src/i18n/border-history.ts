@@ -306,7 +306,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200 CE',
     caption:
-      'On the eve of the Mongol explosion: a founder-supplied political reconstruction of the world in 1200. A reconstruction, not a cadastral survey.',
+      'Year 1200 — Innocent III at his peak; the Fourth Crusade still in the preaching; Temüjin has already gathered the Mongols; in Rus, Vsevolod the Big Nest.',
     essay: year1200En,
     imageAlt: 'Founder-supplied political reconstruction of the world in 1200',
     sourceShort: 'Founder reconstruction',
