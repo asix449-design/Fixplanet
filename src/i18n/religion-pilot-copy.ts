@@ -18,22 +18,6 @@ export type ReligionPilotFrameCopy = {
   sources: string;
 };
 
-/** Empty Pack B slots — wait for verbatim COPY YEAR 1000 / 1100 / 1200. */
-const emptySchematicCopy = (sources: string): ReligionPilotFrameCopy => ({
-  title: '',
-  caption: '',
-  imageAlt: '',
-  continentBlocks: [],
-  sources,
-});
-
-const SCHEMATIC_SOURCES = {
-  en: 'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
-  ru: 'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
-  pl: 'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
-  lv: 'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
-} as const;
-
 export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrameCopy>> = {
   en: {
     1: {
@@ -380,7 +364,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1200: emptySchematicCopy(SCHEMATIC_SOURCES.en),
+    1200: {
+      title: '1200 CE — schematic reconstruction',
+      caption:
+        'Around 1200 CE (Mongol eve) the same major **Islamic** belt — Maghreb–Libya–Egypt–Near East–Iran–Central Asia, al-Andalus, Indus edge and Sahel edge — no invented new empire wash. Christianity a bit further into the Baltics and Scandinavia; still not all Europe solid. India Hindu; Buddhism and the Chinese imperial layer hold the East. Americas unmapped.',
+      imageAlt:
+        'Schematic world religion map for 1200 CE: major Islamic belt, Christian Baltics and Scandinavia fringe, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas unmapped',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Further Christian Baltic / Scandinavia fringe and east-Elbe / Rus hold; Latin West, Byzantium, Italy solid on the plate. Iberia Islamic. Far Arctic / Finnic residual still local traditions. Jewish spots.',
+        },
+        {
+          heading: 'Southwest Asia / North Africa / Iran',
+          text: 'Same major Islamic belt as 1100, plus Indus / Multan hold and a slight Sahel trade edge — Maghreb–Libya–Egypt–Near East–Persia–Central Asia; al-Andalus. Thin Zoroastrian remnant hatch only.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu India; Buddhist corridors as at 1100 (Tibet, SE Asia, China inroads); Chinese imperial / folk belt. Northern steppe and island fringes = local wash.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Maghreb–Libya–Egypt Islamic; slight Sahel trade edge; Aksum/Nubia Christian edge; Sahel–south = African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+    },
   },
   ru: {
     1: {
@@ -725,7 +745,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1200: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
+    1200: {
+      title: '1200 н. э. — схематическая реконструкция',
+      caption:
+        'Около 1200 н. э. (канун монгольской эпохи) тот же крупный **исламский** пояс — Магриб–Ливия–Египет–Ближний Восток–Иран–Центральная Азия, аль-Андалус, край Инда и сахельский край; без выдуманной новой империи. Христианство чуть дальше в Балтику и Скандинавию, всё ещё не сплошь Европа. Индия индуистская; буддизм и китайский имперский слой на Востоке. Америка не нанесена.',
+      imageAlt:
+        'Схематическая карта религий на 1200 год н. э.: крупный исламский пояс, христианский край Балтики и Скандинавии, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Дальше христианский балтийский / скандинавский край и за Эльбой / русский край; латинский Запад, Византия, Италия на листе. Иберия исламская. Дальний арктический / финский остаток — ещё местные традиции. Иудейские пятна.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Северная Африка / Иран',
+          text: 'Тот же крупный исламский пояс, что в 1100, плюс край Инда / Мултана и чуть сахельский торговый край — Магриб–Ливия–Египет–Ближний Восток–Персия–Центральная Азия; аль-Андалус. Только тонкая зороастрийская штриховка-остаток.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистская Индия; буддийские коридоры как в 1100 (Тибет, ЮВА, проникновение в Китай); китайский имперский / народный пояс. Северная степь и островные края — местный смыв.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Магриб–Ливия–Египет исламские; чуть сахельский торговый край; Аксум/Нубия — христианский край; Сахель и юг — африканский традиционный смыв.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Не нанесено.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+    },
   },
   pl: {
     1: {
@@ -1070,7 +1126,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1200: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
+    1200: {
+      title: '1200 n.e. — rekonstrukcja schematyczna',
+      caption:
+        'Około 1200 n.e. (przededniu ery mongolskiej) ten sam wielki pas **islamu** — Maghreb–Libia–Egipt–Bliski Wschód–Iran–Azja Środkowa, al-Andalus, krawędź Indusu i Sahelu — bez wymyślonego nowego imperium. Chrześcijaństwo nieco dalej w Bałtyk i Skandynawię; wciąż nie cała Europa. Indie hinduistyczne; buddyzm i chińska warstwa cesarska na Wschodzie. Ameryki nie naniesione.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 1200 n.e.: wielki pas islamu, chrześcijańska krawędź Bałtyku i Skandynawii, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryki nie naniesione',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Dalej chrześcijańska krawędź bałtycka / skandynawska oraz za Łabą / ruska; łaciński Zachód, Bizancjum, Włochy na arkuszu. Iberia islamska. Daleki arktyczny / fiński pozostałość — wciąż tradycje lokalne. Plamy żydowskie.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
+          text: 'Ten sam wielki pas islamski co w 1100, plus krawędź Indusu / Multanu i lekka krawędź handlowa Sahelu — Maghreb–Libia–Egipt–Bliski Wschód–Persja–Azja Środkowa; al-Andalus. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Hinduistyczne Indie; korytarze buddyjskie jak w 1100 (Tybet, Azja Płd.-Wsch., wniknięcie w Chiny); chiński pas cesarski / ludowy. Północny step i obrzeża wyspiarskie — lokalny zmyw.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Maghreb–Libia–Egipt islamskie; lekka krawędź handlowa Sahelu; Aksum/Nubia — krawędź chrześcijańska; Sahel i południe — afrykański zmyw tradycyjny.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+    },
   },
   lv: {
     1: {
@@ -1415,7 +1507,43 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
-    1200: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
+    1200: {
+      title: '1200. g. m.ē. — shēmatiska rekonstrukcija',
+      caption:
+        'Ap 1200. g. m.ē. (mongolu laikmeta priekšvakarā) tā pati lielā **islāma** josla — Magriba–Lībija–Ēģipte–Tuvie Austrumi–Irāna–Centrālāzija, al-Andalusa, Indas un sahēlas mala — bez izdomātas jaunas impērijas. Kristietība nedaudz tālāk Baltijā un Skandināvijā; joprojām ne visa Eiropa. Indija hinduistu; budisms un ķīniešu imperiālais slānis Austrumos. Amerika nav kartēta.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 1200. gadam m.ē.: lielā islāma josla, kristīgā Baltijas un Skandināvijas mala, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav kartēta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Tālāk kristīgā Baltijas / Skandināvijas mala un aiz Elbas / Krievzemes mala; latīņu Rietumi, Bizantija, Itālija uz plāksnes. Ibērija islāmiska. Tālais arktiskais / somu atlikums — vēl vietējās tradīcijas. Jūdu plankumi.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
+          text: 'Tā pati lielā islāma josla kā 1100. gadā, plus Indas / Multānas mala un viegla sahēlas tirdzniecības mala — Magriba–Lībija–Ēģipte–Tuvie Austrumi–Persija–Centrālāzija; al-Andalusa. Tikai plāns zoroastrisma atlikuma šrafējums.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu Indija; budistu koridori kā 1100. gadā (Tibeta, DA Āzija, ieplūde Ķīnā); ķīniešu imperiālā / tautas josla. Ziemeļu stepe un salu malas — vietējā josla.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Magriba–Lībija–Ēģipte islāmiskas; viegla sahēlas tirdzniecības mala; Aksūma/Nūbija — kristīgā mala; Sahēla un dienvidi — āfrikāņu tradicionālā josla.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+    },
   },
 };
 
