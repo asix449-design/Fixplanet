@@ -268,21 +268,21 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   700: {
     title: '700 CE',
     caption:
-      'Umayyad expansion, Tang China, and a post-Roman west. A world reconstruction of major states — still silent on most Indigenous polities.',
+      'Year 700 — the Islamic world is already the main power from the Atlantic almost to Central Asia: Umayyads in Damascus, Persia gone, Byzantium shrunk, China under the Tang (and Wu Zetian) on the rise. Europe — kingdoms and mayors of the palace; Gibraltar and Spain are within reach.',
     essay: year700En,
     imageAlt: 'Reconstructed world political map for 700 CE',
   },
   800: {
     title: '800 CE — nearest map: 750',
     caption:
-      'No 800 CE world plate in the same flat atlas family. FamilyPedia’s 750 reconstruction (Umayyad, Tang, Frankish west) is the nearest matching-style sheet. A labeled gap, not an invented 800.',
+      'Year 800 is remembered for Christmas at Saint Peter’s: Pope Leo III crowns Charlemagne emperor of the West. Byzantium does not recognise it; Baghdad under Harun al-Rashid watches from the side. Three “centres” on one map — Aachen/Rome, Constantinople, Baghdad.',
     essay: year800En,
     imageAlt: 'World political reconstruction dated 750 CE, used for the 800 step',
   },
   900: {
     title: '900 CE',
     caption:
-      'Fragmented caliphates, a new Byzantine recovery, and Five Dynasties China. Colours mark large named states, not every duchy or steppe confederation.',
+      'Year 900 — the Viking Age is not over yet, but the great empires are crumbling: the Carolingians are gone as a unity, the Tang are dying out, Baghdad rules more in name. On the fringes, Wessex, the Samanids, Oleg’s Rus, and the Magyars are gathering.',
     essay: year900En,
     imageAlt: 'Reconstructed world political map for 900 CE',
   },
@@ -435,21 +435,21 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   700: {
     title: '700 н. э.',
     caption:
-      'Омейядская экспансия, Тан и пост-римский запад. Мировая реконструкция крупных государств — без большинства коренных политий.',
+      'Год 700 — исламский мир уже главная сила от Атлантики почти до Центральной Азии: Омейяды в Дамаске, Персии нет, Византия сжалась, Китай при Тан (и У Цзэтянь) на подъёме. Европа — королевства и майордомы; до Гибралтара и Испании рукой подать.',
     essay: year700Ru,
     imageAlt: 'Реконструированная политическая карта мира на 700 год н. э.',
   },
   800: {
     title: '800 н. э. — ближайшая карта: 750',
     caption:
-      'Нет мирового листа на 800 год в том же плоском семействе атласа. Реконструкция FamilyPedia 750 года (Омейяды, Тан, франкский запад) — ближайший лист того же стиля. Помеченный пробел, не выдуманный 800-й.',
+      'Год 800 запоминают по Рождеству в Святом Петре: папа Лев III коронует Карла Великого императором Запада. Византия не признаёт; Багдад Харуна ар-Рашида смотрит со стороны. Три «центра» на одной карте — Ахен/Рим, Константинополь, Багдад.',
     essay: year800Ru,
     imageAlt: 'Политическая реконструкция мира 750 года н. э. для шага 800',
   },
   900: {
     title: '900 н. э.',
     caption:
-      'Расколотые халифаты, византийское оживление, эпоха пяти династий. Цвета — крупные названные государства, не каждое герцогство.',
+      'Год 900 — век викингов ещё не кончился, но большие империи сыплются: Каролингов нет как единства, Тан доживает, Багдад правит больше по имени. На окраинах собираются Уэссекс, Саманиды, русь Олега, мадьяры.',
     essay: year900Ru,
     imageAlt: 'Реконструированная политическая карта мира на 900 год н. э.',
   },
@@ -602,21 +602,21 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   700: {
     title: '700 n.e.',
     caption:
-      'Ekspansja Umajjadów, Tang i post-rzymski zachód. Światowa rekonstrukcja dużych państw — wciąż milcząca o większości organizmów rdzennych.',
+      'Rok 700 — świat islamski jest już główną siłą od Atlantyku niemal po Azję Środkową: Umajjadzi w Damaszku, Persji nie ma, Bizancjum się skurczyło, Chiny za Tangów (i Wu Zetian) w rozkwicie. Europa — królestwa i majordomowie; do Gibraltaru i Hiszpanii rzut beretem.',
     essay: year700Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 700 n.e.',
   },
   800: {
     title: '800 n.e. — najbliższa mapa: 750',
     caption:
-      'Brak arkusza światowego na 800 w tej samej płaskiej rodzinie atlasu. Rekonstrukcja FamilyPedia z 750 (Umajjadzi, Tang, zachodni Frankowie) to najbliższy arkusz w tym stylu. Oznaczona luka, nie wymyślony rok 800.',
+      'Rok 800 zapamiętano po Bożym Narodzeniu w Świętym Piotrze: papież Leon III koronuje Karola Wielkiego cesarzem Zachodu. Bizancjum nie uznaje; Bagdad Haruna ar-Raszida patrzy z boku. Trzy „centra” na jednej mapie — Akwizgran/Rzym, Konstantynopol, Bagdad.',
     essay: year800Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 750 n.e. użyta dla kroku 800',
   },
   900: {
     title: '900 n.e.',
     caption:
-      'Rozbite kalifaty, bizantyjskie odbicie, Pięć Dynastii. Kolory to duże nazwane państwa, nie każde księstwo.',
+      'Rok 900 — wiek wikingów jeszcze się nie skończył, ale wielkie imperia sypią się: Karolingów nie ma jako jedności, Tang dogorywa, Bagdad rządzi bardziej z nazwy. Na obrzeżach zbierają się Wessex, Samanidzi, Ruś Olega, Madziarzy.',
     essay: year900Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 900 n.e.',
   },
@@ -769,21 +769,21 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   700: {
     title: '700. m.ē.',
     caption:
-      'Omeijādu ekspansija, Tan un pēcrimas rietumi. Lielo valstu pasaules rekonstrukcija — joprojām klusa par lielāko daļu pirmiedzīvotāju politiju.',
+      'Gads 700 — islāma pasaule jau ir galvenais spēks no Atlantijas gandrīz līdz Centrālāzijai: Omeijadi Damaskā, Persijas vairs nav, Bizantija sarukusi, Ķīna Tanu dinastijas (un Vu Dzetiaņas) uzplaukumā. Eiropa — karaļvalstis un majordomi; līdz Gibraltāram un Spānijai — rokas stiepiena attālumā.',
     essay: year700Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 700. gadam m.ē.',
   },
   800: {
     title: '800. m.ē. — tuvākā karte: 750',
     caption:
-      'Nav 800. gada pasaules lapas tajā pašā plakanajā atlanta saimē. FamilyPedia 750. gada rekonstrukcija (Omeijādi, Tan, franku rietumi) ir tuvākā tā paša stila lapa. Marķēts iztrūkums, ne izdomāts 800. gads.',
+      'Gadu 800 atceras pēc Ziemassvētkiem Svētajā Pēterī: pāvests Leons III kronē Kārli Lielo par Rietumu imperatoru. Bizantija neatzīst; Bagdāde Haruna ar-Rašīda laikā skatās no malas. Trīs «centri» vienā kartē — Āhene/Roma, Konstantinopole, Bagdāde.',
     essay: year800Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 750. gada m.ē. 800. soļa vietā',
   },
   900: {
     title: '900. m.ē.',
     caption:
-      'Sadrumstalotie kalifāti, bizantiešu atveseļošanās, Piecu dinastiju Ķīna. Krāsas ir lielas nosauktas valstis, ne katra hercogiste.',
+      'Gads 900 — vikingu laikmets vēl nav beidzies, bet lielās impērijas irt: Karolingi vairs nav vienība, Tanu dinastija nīkst, Bagdāde valda vairāk pēc vārda. Malās sapulcējas Veseksa, Sāmānīdi, Oļega Krievzeme, madjari.',
     essay: year900Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 900. gadam m.ē.',
   },
