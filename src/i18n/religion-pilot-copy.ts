@@ -18,6 +18,50 @@ export type ReligionPilotFrameCopy = {
   sources: string;
 };
 
+/** Empty Pack C slots — wait for verbatim COPY YEAR 1300 / 1400 / 1500. */
+const packCHonesty: Record<Locale, string[]> = {
+  en: [
+    'Schematic reconstruction',
+    'Not a census',
+    'Americas indigenous fill',
+    'Colonial edge 1500',
+  ],
+  ru: [
+    'Схематическая реконструкция',
+    'Не перепись',
+    'Америка: местные традиции',
+    'Колониальный край 1500',
+  ],
+  pl: [
+    'Rekonstrukcja schematyczna',
+    'Nie spis',
+    'Ameryki: tradycje lokalne',
+    'Krawędź kolonialna 1500',
+  ],
+  lv: [
+    'Shēmatiska rekonstrukcija',
+    'Ne tautas skaitīšana',
+    'Amerika: vietējās tradīcijas',
+    'Koloniālā mala 1500',
+  ],
+};
+
+const packCTitle: Record<Locale, (year: number) => string> = {
+  en: (year) => `${year} CE — schematic reconstruction`,
+  ru: (year) => `${year} н. э. — схематическая реконструкция`,
+  pl: (year) => `${year} n.e. — rekonstrukcja schematyczna`,
+  lv: (year) => `${year}. g. m.ē. — shēmatiska rekonstrukcija`,
+};
+
+const emptyPackCCopy = (locale: Locale, year: number): ReligionPilotFrameCopy => ({
+  title: packCTitle[locale](year),
+  caption: '',
+  imageAlt: '',
+  continentBlocks: [],
+  honestyPills: packCHonesty[locale],
+  sources: '',
+});
+
 export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrameCopy>> = {
   en: {
     1: {
@@ -401,6 +445,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
+    1300: emptyPackCCopy('en', 1300),
+    1400: emptyPackCCopy('en', 1400),
+    1500: emptyPackCCopy('en', 1500),
   },
   ru: {
     1: {
@@ -782,6 +829,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
+    1300: emptyPackCCopy('ru', 1300),
+    1400: emptyPackCCopy('ru', 1400),
+    1500: emptyPackCCopy('ru', 1500),
   },
   pl: {
     1: {
@@ -1163,6 +1213,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
+    1300: emptyPackCCopy('pl', 1300),
+    1400: emptyPackCCopy('pl', 1400),
+    1500: emptyPackCCopy('pl', 1500),
   },
   lv: {
     1: {
@@ -1544,6 +1597,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
+    1300: emptyPackCCopy('lv', 1300),
+    1400: emptyPackCCopy('lv', 1400),
+    1500: emptyPackCCopy('lv', 1500),
   },
 };
 

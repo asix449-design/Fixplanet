@@ -33,7 +33,7 @@ const files = [
     width: 1600,
   },
   {
-    file: 'y1500.png',
+    file: 'y1500-spread.png',
     commons: 'Medieval-World-Religions.png',
     width: 1600,
   },

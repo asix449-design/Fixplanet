@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Hand-authored schematic religion regions for the 1–1200 CE shelf.
+"""Hand-authored schematic religion regions for the 1–1500 CE shelf.
 
 Coarse ellipse unions — original Fix Planet artwork, not a trace of any
-commercial atlas. Americas / Oceania are omitted here; the renderer paints
-those lands unmapped gray. Do not add 1300+.
+commercial atlas. Oceania is omitted here; the renderer paints those lands
+unmapped gray. Americas stay unmapped through 1200; from 1300 they take an
+indigenous local-traditions wash. Do not add 1600+.
 """
 
 from __future__ import annotations
@@ -369,6 +370,80 @@ def buddhist_se_asia_1200() -> list[Polygon]:
     ]
 
 
+def islamic_without_iberia() -> list[Polygon]:
+    """1200 Islamic belt minus the wide al-Andalus ellipse."""
+    return islamic_1200()[1:]
+
+
+def granada_pocket() -> list[Polygon]:
+    return [ellipse(-3.8, 37.15, 1.7, 1.15)]
+
+
+def anatolia_ottoman_fringe() -> list[Polygon]:
+    """Early Ottoman west-Anatolia fringe — not a majority wash."""
+    return [ellipse(28.0, 40.1, 2.5, 1.9)]
+
+
+def anatolia_ottoman_majority() -> list[Polygon]:
+    return [ellipse(32.4, 39.2, 6.8, 3.9)]
+
+
+def islamic_1300() -> list[Polygon]:
+    """Mamluk Egypt–Syria, Maghreb–Libya, Granada pocket, Anatolia fringe."""
+    return islamic_without_iberia() + granada_pocket() + anatolia_ottoman_fringe()
+
+
+def islamic_1400() -> list[Polygon]:
+    """Anatolia already majority Islamic; Timur zone; Granada still."""
+    return islamic_without_iberia() + granada_pocket() + anatolia_ottoman_majority() + [
+        ellipse(66.5, 36.4, 8.2, 5.6),
+    ]
+
+
+def islamic_1500() -> list[Polygon]:
+    """No Granada. Anatolia Ottoman. No solid Islamic wash of SE Europe."""
+    return islamic_without_iberia() + anatolia_ottoman_majority()
+
+
+def christian_iberia() -> list[Polygon]:
+    return [ellipse(-4.2, 40.4, 6.6, 5.4)]
+
+
+def christian_fill_1300() -> list[Polygon]:
+    """Iberia Christian except Granada; Anatolia still mostly Christian."""
+    return christian_fill_1200() + christian_iberia() + [
+        ellipse(24.8, 54.8, 5.2, 4.0),
+    ]
+
+
+def christian_fill_1400() -> list[Polygon]:
+    """Same Latin/Byzantine hold; Ottoman Anatolia is painted by Islam on top."""
+    return christian_fill_1300()
+
+
+def christian_colonial_1500() -> list[Polygon]:
+    """Light colonial edge: Caribbean / coastal Mexico only."""
+    return [
+        ellipse(-72.0, 18.6, 4.6, 2.3),
+        ellipse(-96.4, 19.3, 3.4, 2.1),
+    ]
+
+
+def christian_fill_1500() -> list[Polygon]:
+    """All Iberia Christian; Balkans still Christian; colonial edge."""
+    return christian_fill_1400() + christian_colonial_1500()
+
+
+def americas_local() -> list[Polygon]:
+    """Aztec Mesoamerica + Andes + other indigenous wash. Not a census."""
+    return [
+        ellipse(-100.0, 48.0, 32.0, 16.5),
+        ellipse(-99.0, 19.6, 10.5, 7.8),
+        ellipse(-68.5, -12.5, 8.2, 16.5),
+        ellipse(-58.0, -8.0, 16.5, 18.5),
+    ]
+
+
 def year_layers(year: int) -> dict[str, list]:
     """Return style buckets for one year: fill / hatch / dots."""
     fills: list[tuple[str, list[Polygon]]] = [
@@ -465,6 +540,27 @@ def year_layers(year: int) -> dict[str, list]:
         fills.append(("islam", islamic_1200()))
         hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
         hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1300:
+        fills.append(("local_trad", americas_local()))
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1300()))
+        fills.append(("islam", islamic_1300()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1400:
+        fills.append(("local_trad", americas_local()))
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1400()))
+        fills.append(("islam", islamic_1400()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1500:
+        fills.append(("local_trad", americas_local()))
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1500()))
+        fills.append(("islam", islamic_1500()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
     else:
         raise ValueError(f"no schematic layers for year {year}")
 
@@ -507,7 +603,7 @@ def collection_for(year: int) -> dict:
 
 def write_geojson() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200):
+    for year in (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500):
         dest = OUT / f"y{year:04d}.geojson"
         dest.write_text(json.dumps(collection_for(year), indent=2), encoding="utf-8")
         print(f"wrote {dest.relative_to(ROOT)}")

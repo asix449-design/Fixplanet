@@ -6,10 +6,10 @@ and data/religion-pilot/*.geojson). The political/coast underlay is aourednik
 historical-basemaps (GPL-3.0). Do not copy proprietary geometry into this file.
 
 Year 1 has no world_1 — uses world_100 and marks nearest.
-Years 500–1200 use world_500 … world_1200 (clip_to_land).
+Years 500–1500 use world_500 … world_1500 (clip_to_land).
 Year 600 writes y0600-schematic.png and must not overwrite y0600.png
-(the Christianity-to-600 process companion). Years 700–1200 write
-y0700.png … y1200.png with no on-image legend. Do not add 1300.
+(the Christianity-to-600 process companion). Years 700–1500 write
+y0700.png … y1500.png with no on-image legend. Do not add 1600.
 
 Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y0001-schematic.png
@@ -25,6 +25,9 @@ Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y1000.png
   public/images/maps/religion/y1100.png
   public/images/maps/religion/y1200.png
+  public/images/maps/religion/y1300.png
+  public/images/maps/religion/y1400.png
+  public/images/maps/religion/y1500.png
 
 Run from repo root: python3 scripts/render-religion-pilot.py
 """
@@ -92,6 +95,9 @@ YEARS = {
     1000: 1000,
     1100: 1100,
     1200: 1200,
+    1300: 1300,
+    1400: 1400,
+    1500: 1500,
 }
 
 FOOTER = (
@@ -243,27 +249,30 @@ def mpl_patch(poly: Polygon, **kwargs) -> PathPatch:
     return PathPatch(MplPath(verts, codes), **kwargs)
 
 
-def is_unmapped_centroid(lon: float, lat: float) -> bool:
+def is_unmapped_centroid(lon: float, lat: float, year: int) -> bool:
     if lat < -55:
-        return True
-    if lon < -25:
         return True
     if 110 < lon < 180 and -48 < lat < -10:
         return True
     if lon > 163 and lat < 20:
+        return True
+    if year >= 1300:
+        # Americas mapped from 1300 (indigenous fill). Oceania stays gray.
+        return False
+    if lon < -25:
         return True
     if lon < -140:
         return True
     return False
 
 
-def land_split(land: dict) -> tuple[list[Polygon], list[Polygon]]:
+def land_split(land: dict, year: int) -> tuple[list[Polygon], list[Polygon]]:
     mapped: list[Polygon] = []
     unmapped: list[Polygon] = []
     for feat in land["features"]:
         for poly in clipped_parts(feat["geometry"]):
             c = poly.centroid
-            if is_unmapped_centroid(c.x, c.y):
+            if is_unmapped_centroid(c.x, c.y, year):
                 unmapped.append(poly)
             else:
                 mapped.append(poly)
@@ -360,7 +369,7 @@ def render_year(year: int) -> Path:
         CACHE / f"world_{underlay_year}.geojson",
     )
     land = load_json(LAND_URL, CACHE / "ne_110m_land.geojson")
-    mapped, unmapped = land_split(land)
+    mapped, unmapped = land_split(land, year)
     land_union = unary_union(mapped) if mapped else WORLD
 
     fig_w = WIDTH / DPI
@@ -473,7 +482,7 @@ def render_year(year: int) -> Path:
 def main(years: list[int] | None = None) -> None:
     write_geojson()
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200):
+    for year in years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500):
         render_year(year)
 
 
