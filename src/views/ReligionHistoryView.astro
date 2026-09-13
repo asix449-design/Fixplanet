@@ -39,7 +39,6 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
   <section class="section borders-timeline">
     <div class="wrap">
       <p class="source-note">{page.honesty}</p>
-      <p class="wildlife-sources">{page.laterUnpublished}</p>
 
       <div class="religion-legend" aria-labelledby="religion-legend-heading">
         <h2 id="religion-legend-heading" class="religion-legend-title">{page.legendHeading}</h2>
@@ -86,11 +85,6 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
                 </figure>
                 <div class="prose map-detail-copy">
                   <div class="meta-row religion-honesty-pills">
-                    <span class="pill">
-                      {page.yearLabel}: {frame.label}
-                    </span>
-                    <span class="pill">{frame.sourceShort}</span>
-                    {frame.nearest ? <span class="pill">{page.nearestNote}</span> : null}
                     {honestyPills.map((pill) => (
                       <span class="pill">{pill}</span>
                     ))}
@@ -158,13 +152,11 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
                         {frame.sources}
                       </>
                     ) : null}
-                    {frame.sourceUrl ? (
+                    {frame.sourceUrl && frame.coverage !== 'schematic-pilot' ? (
                       <>
                         <br />
-                        <a href={frame.sourceUrl} rel="noopener noreferrer">
-                          {frame.coverage === 'schematic-pilot'
-                            ? page.correspondingSource
-                            : frame.commonsUrl || frame.sourceUrl}
+                        <a href={frame.commonsUrl || frame.sourceUrl} rel="noopener noreferrer">
+                          {frame.commonsUrl || frame.sourceUrl}
                         </a>
                       </>
                     ) : null}
