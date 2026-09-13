@@ -650,7 +650,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1300: {
     title: '1300 n.e.',
     caption:
-      'Dokładny rok 1300, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1200 i nie rycina. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1300 — papieski jubileusz w Rzymie; Filip Piękny już ugniata kościół; Osman gryzie bizantyński skraj; Imperium Mongolskie jeszcze ogromne, ale już odłamki.',
     essay: year1300Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1300 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
