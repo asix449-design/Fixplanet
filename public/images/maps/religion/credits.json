@@ -77,7 +77,31 @@
     "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
     "url": "https://github.com/aourednik/historical-basemaps",
     "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
-    "note": "Abbasid-successor belt; stronger Buddhist Southeast Asia; no deep Sahel Islam. No year 1000 plate. Americas unmapped."
+    "note": "Abbasid-successor belt; stronger Buddhist Southeast Asia; no deep Sahel Islam. Americas unmapped."
+  },
+  {
+    "file": "y1000.png",
+    "title": "1000 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Maghreb–Libya–Egypt–Near East belt); Christian Europe expanding; Americas unmapped."
+  },
+  {
+    "file": "y1100.png",
+    "title": "1100 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam major belt; Christian West + Crusader Levant edge; Americas unmapped."
+  },
+  {
+    "file": "y1200.png",
+    "title": "1200 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam major belt; Christian Baltics/north fringe; Americas unmapped."
   },
   {
     "file": "y0001.png",

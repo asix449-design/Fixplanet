@@ -1,6 +1,6 @@
-# Religions schematic shelf (1–900 CE) — overlay method
+# Religions schematic shelf (1–1200 CE) — overlay method
 
-Ten flat shelf cards (1, 100, 200, 300, 400, 500, 600, 700, 800, 900). No globe, no Three.js, no Cesium, no year slider on a sphere. Do not add 1000 / 1100 / 1200 schematic plates here.
+Thirteen flat shelf cards (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200). No globe, no Three.js, no Cesium, no year slider on a sphere. Do not add 1300 schematic plates here.
 
 ## What is original
 
@@ -19,7 +19,7 @@ Americas and Oceania are left **unmapped gray**. We do not invent those fills.
 
 Coastline / land underlays come from
 [aourednik/historical-basemaps](https://github.com/aourednik/historical-basemaps)
-(`world_100` … `world_900`), GPL-3.0.
+(`world_100` … `world_1200`), GPL-3.0.
 
 There is **no `world_1`**. The year-1 card uses `world_100` as the nearest
 underlay. Public copy does not name the underlay file.
@@ -50,7 +50,9 @@ python3 scripts/render-religion-pilot.py
 ```
 
 Writes `y0001-schematic.png`, `y0100.png`–`y0500.png`, `y0600-schematic.png`,
-and `y0700.png` / `y0800.png` / `y0900.png` at 2560×1280 plus a credit footer.
-Does **not** overwrite `y0600.png`. Years 700–900 have no on-image legend.
+`y0700.png` / `y0800.png` / `y0900.png`, and `y1000.png` / `y1100.png` /
+`y1200.png` at 2560×1280 plus a credit footer.
+Does **not** overwrite `y0600.png`. Years 700–1200 have no on-image legend.
 Palette: tan land `#FFDF99`, sea `#C9EDFB` (same family as History of borders
 plates). All fills use `clip_to_land`. Islam is a public legend color from 700.
+Do not add 1300.
