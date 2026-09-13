@@ -4,6 +4,34 @@ import {
   type BorderFrameMeta,
 } from '../data/border-history';
 import type { Locale } from './config';
+import year1En from './border-essays/year-1-en.md?raw';
+import year1Lv from './border-essays/year-1-lv.md?raw';
+import year1Pl from './border-essays/year-1-pl.md?raw';
+import year1Ru from './border-essays/year-1-ru.md?raw';
+import year100En from './border-essays/year-100-en.md?raw';
+import year100Lv from './border-essays/year-100-lv.md?raw';
+import year100Pl from './border-essays/year-100-pl.md?raw';
+import year100Ru from './border-essays/year-100-ru.md?raw';
+import year200En from './border-essays/year-200-en.md?raw';
+import year200Lv from './border-essays/year-200-lv.md?raw';
+import year200Pl from './border-essays/year-200-pl.md?raw';
+import year200Ru from './border-essays/year-200-ru.md?raw';
+import year300En from './border-essays/year-300-en.md?raw';
+import year300Lv from './border-essays/year-300-lv.md?raw';
+import year300Pl from './border-essays/year-300-pl.md?raw';
+import year300Ru from './border-essays/year-300-ru.md?raw';
+import year400En from './border-essays/year-400-en.md?raw';
+import year400Lv from './border-essays/year-400-lv.md?raw';
+import year400Pl from './border-essays/year-400-pl.md?raw';
+import year400Ru from './border-essays/year-400-ru.md?raw';
+import year500En from './border-essays/year-500-en.md?raw';
+import year500Lv from './border-essays/year-500-lv.md?raw';
+import year500Pl from './border-essays/year-500-pl.md?raw';
+import year500Ru from './border-essays/year-500-ru.md?raw';
+import year600En from './border-essays/year-600-en.md?raw';
+import year600Lv from './border-essays/year-600-lv.md?raw';
+import year600Pl from './border-essays/year-600-pl.md?raw';
+import year600Ru from './border-essays/year-600-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -31,6 +59,8 @@ export type BorderFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
+  /** Optional long-form markdown (paragraphs, ### headings, bold/italic). */
+  essay?: string;
   sourceShort?: string;
   sourceOrg?: string;
   license?: string;
@@ -161,43 +191,50 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 CE — start of the Common Era',
     caption:
-      'Rome in the Mediterranean, Han China in East Asia, Parthia between them. The Americas and much of Oceania are not drawn as states. This is a reconstruction of known polities, not a survey of every people.',
+      'Year 1 CE — for people then, just another year from Rome\'s founding and the year of Emperor Ping; Augustus holds the Mediterranean, Han holds the Middle Kingdom; between them, silk and Parthia.',
+    essay: year1En,
     imageAlt: 'Reconstructed world political map for 1 CE, public-domain Wikimedia sheet',
   },
   100: {
     title: '100 CE',
     caption:
-      'The high Roman Empire, Kushan and Han worlds, and a still-open Afro-Eurasian interior. Lines are scholarly guesses about control, not fences on the ground.',
+      'The 2nd century — Rome\'s "golden age" from Trajan to Marcus Aurelius and the break at Commodus; the Antonine Plague; in China Eastern Han cracks by the end (Yellow Turbans).',
+    essay: year100En,
     imageAlt: 'Reconstructed world political map for 100 CE',
   },
   200: {
     title: '200 CE',
     caption:
-      'Rome, Parthia/Sasanian prelude, and Han China after a century of strain. Blank land is not empty — it is unmapped as a state on this sheet.',
+      'Year 200 — no longer a calm antique noon: the empires still stand, but something creaks inside. Septimius Severus\'s Rome after Parthian campaigns and plague; China on the eve of the Three Kingdoms after Guandu; Parthia living out its days until the Sasanians. Quieter outside than it seems.',
+    essay: year200En,
     imageAlt: 'Reconstructed world political map for 200 CE',
   },
   300: {
     title: '300 CE',
     caption:
-      'A late-antique Afro-Eurasia: a divided Roman world taking shape, Sasanian Iran, and successor states in China. Treat colours as claims, not censuses.',
+      'Year 300 — Diocletian\'s tetrarchy; Sasanians in Persia; Jin in China already gnawing itself; Christians numerous — in three years the Great Persecution begins.',
+    essay: year300En,
     imageAlt: 'Reconstructed world political map for 300 CE',
   },
   400: {
     title: '400 CE',
     caption:
-      'After 376 and before 476: migration-era Europe, a Sasanian plateau, Gupta India, and a fragmented China. Many “borders” here are war fronts.',
+      'Year 400 — already two empires: Honorius in the West, Arcadius in the East; Goths inside; ten years until Alaric in Rome; Christianity official since 380.',
+    essay: year400En,
     imageAlt: 'Reconstructed world political map for 400 CE',
   },
   500: {
     title: '500 CE',
     caption:
-      'Successor kingdoms in the west, Sasanian Iran, and Northern/Southern China. The map is a published reconstruction (CC BY-SA), not a treaty atlas.',
+      'Year 500 — Theodoric in Ravenna; Clovis\'s Franks already baptized; Constantinople hoards a treasury for Justinian; China is split, the north gathered by Northern Wei.',
+    essay: year500En,
     imageAlt: 'Reconstructed world political map for 500 CE',
   },
   600: {
     title: '600 CE — nearest map: 500',
     caption:
-      'No matching-style full-world political sheet for 600 in this atlas family. We show the 500 reconstruction and mark the century as a gap rather than paste a terrain map or invent Sui/Byzantine outlines.',
+      'Year 600 — already a medieval frame: no Western Roman Empire for over a century; in the east Rome still holds (Maurice), but in two years the world will jerk so hard it remaps half the board. Lombards in Italy, Franks in shreds, Sui has just gathered China; in Mecca still a quiet trading year.',
+    essay: year600En,
     imageAlt: 'World political reconstruction dated 500 CE, used for the 600 step',
   },
   700: {
@@ -314,43 +351,50 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 н. э. — начало нашей эры',
     caption:
-      'Рим у Средиземного моря, Хань в Восточной Азии, Парфия между ними. Америка и большая часть Океании не нарисованы как государства. Это реконструкция известных политий, не перепись всех народов.',
+      'Год 1 н. э. — для современников просто год от основания Рима и год императора Пина; Август держит Средиземноморье, Хань — Поднебесную; между ними шёлк и Парфия.',
+    essay: year1Ru,
     imageAlt: 'Реконструированная политическая карта мира на 1 год н. э.',
   },
   100: {
     title: '100 н. э.',
     caption:
-      'Высокая Римская империя, кушанский и ханьский миры, ещё открытая внутренность Афроевразии. Линии — учёные оценки контроля, не заборы на земле.',
+      'II век — римский «золотой век» от Траяна до Марка Аврелия и слом на Коммоде; Антонинова чума; в Китае Восточная Хань к концу трескается (Жёлтые повязки).',
+    essay: year100Ru,
     imageAlt: 'Реконструированная политическая карта мира на 100 год н. э.',
   },
   200: {
     title: '200 н. э.',
     caption:
-      'Рим, Парфия / канун Сасанидов и Хань после века напряжения. Пустая суша — не пустота, а отсутствие государственной заливки на этом листе.',
+      'Год 200 — уже не спокойный античный полдень: империи ещё стоят, но внутри скрипит. Рим Септимия Севера после парфянских походов и чумы; Китай накануне Троецарствия после Гуаньду; Парфия доживает до Сасанидов. Снаружи тише, чем кажется.',
+    essay: year200Ru,
     imageAlt: 'Реконструированная политическая карта мира на 200 год н. э.',
   },
   300: {
     title: '300 н. э.',
     caption:
-      'Поздняя античность: делится римский мир, Сасанидский Иран, государства-преемники в Китае. Цвета — притязания, не переписи.',
+      'Год 300 — тетрархия Диоклетиана; Сасаниды в Персии; Цзинь в Китае уже грызёт себя; христиане многочисленны — через три года начнётся Великое гонение.',
+    essay: year300Ru,
     imageAlt: 'Реконструированная политическая карта мира на 300 год н. э.',
   },
   400: {
     title: '400 н. э.',
     caption:
-      'После 376-го и до 476-го: эпоха переселений в Европе, Сасаниды, Гупты, раздробленный Китай. Многие «границы» здесь — линии фронта.',
+      'Год 400 — империя уже две: Гонорий на Западе, Аркадий на Востоке; готы внутри; до Алариха в Риме десять лет; христианство официально с 380-го.',
+    essay: year400Ru,
     imageAlt: 'Реконструированная политическая карта мира на 400 год н. э.',
   },
   500: {
     title: '500 н. э.',
     caption:
-      'Королевства-преемники на западе, Сасаниды, Северный и Южный Китай. Опубликованная реконструкция (CC BY-SA), не атлас договоров.',
+      'Год 500 — Теодорих в Равенне; франки Хлодвига уже крещены; Константинополь копит казну для Юстиниана; Китай разрезан, север собирает Северная Вэй.',
+    essay: year500Ru,
     imageAlt: 'Реконструированная политическая карта мира на 500 год н. э.',
   },
   600: {
     title: '600 н. э. — ближайшая карта: 500',
     caption:
-      'Нет мирового политического листа на 600 год в этом семействе атласа. Показываем реконструкцию 500 и помечаем век как пробел — не вставляем карту рельефа и не выдумываем контуры Суй и Византии.',
+      'Год 600 — уже средневековый кадр: Запада Римской империи нет больше века; на востоке Рим ещё держится (Маврикий), но через два года мир дёрнет так, что перекроит полкарты. Лангобарды в Италии, франки в клочьях, Суй только что собрала Китай; в Мекке ещё тихий торговый год.',
+    essay: year600Ru,
     imageAlt: 'Политическая реконструкция мира 500 года н. э. для шага 600',
   },
   700: {
@@ -467,43 +511,50 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 n.e. — początek naszej ery',
     caption:
-      'Rzym nad Morzem Śródziemnym, Han we wschodniej Azji, Partia między nimi. Ameryki i większość Oceanii nie są narysowane jako państwa. To rekonstrukcja znanych organizmów, nie spis wszystkich ludów.',
+      'Rok 1 n.e. — dla ówczesnych po prostu rok od założenia Rzymu i rok cesarza Pinga; August trzyma Morze Śródziemne, Han — Państwo Środka; między nimi jedwab i Partia.',
+    essay: year1Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 1 n.e.',
   },
   100: {
     title: '100 n.e.',
     caption:
-      'Wysokie cesarstwo rzymskie, świat Kuszanów i Han oraz wciąż otwarte wnętrze Afroeuroazji. Linie to naukowe zgadywanie kontroli, nie płoty w terenie.',
+      'II wiek — rzymski „złoty wiek” od Trajana do Marka Aureliusza i załamanie na Kommodusie; dżuma antonińska; w Chinach Wschodnia Han pod koniec pęka (Żółte Turbany).',
+    essay: year100Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 100 n.e.',
   },
   200: {
     title: '200 n.e.',
     caption:
-      'Rzym, Partia / przedświt Sasanidów i Han po stuleciu napięcia. Pusty ląd to nie pustka — to brak warstwy państwowej na tym arkuszu.',
+      'Rok 200 — już nie spokojne antyczne południe: imperia jeszcze stoją, ale wewnątrz skrzypi. Rzym Septymiusza Sewera po partyjskich wyprawach i dżumie; Chiny w przededniu Trójkrólestwa po Guandu; Partia dogorywa do Sasanidów. Na zewnątrz ciszej, niż się wydaje.',
+    essay: year200Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 200 n.e.',
   },
   300: {
     title: '300 n.e.',
     caption:
-      'Późny antyk: dzielący się świat rzymski, sasanidzki Iran, państwa sukcesyjne w Chinach. Kolory to roszczenia, nie spisy.',
+      'Rok 300 — tetrarchia Dioklecjana; Sasanidzi w Persji; Jin w Chinach już gryzie sama siebie; chrześcijan wielu — za trzy lata zacznie się Wielkie Prześladowanie.',
+    essay: year300Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 300 n.e.',
   },
   400: {
     title: '400 n.e.',
     caption:
-      'Po 376 i przed 476: Europa wędrówek ludów, Sasanidzi, Guptowie, rozbita Chiny. Wiele „granic” to tu linie frontu.',
+      'Rok 400 — imperium już dwa: Honoriusz na Zachodzie, Arkadiusz na Wschodzie; Goci wewnątrz; do Alaryka w Rzymie dziesięć lat; chrześcijaństwo oficjalnie od 380.',
+    essay: year400Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 400 n.e.',
   },
   500: {
     title: '500 n.e.',
     caption:
-      'Królestwa sukcesyjne na zachodzie, Sasanidzi, Chiny Północne i Południowe. Opublikowana rekonstrukcja (CC BY-SA), nie atlas traktatów.',
+      'Rok 500 — Teodoryk w Rawennie; Frankowie Chlodwiga już ochrzczeni; Konstantynopol gromadzi skarbiec dla Justyniana; Chiny przecięte, północ zbiera Północna Wei.',
+    essay: year500Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 500 n.e.',
   },
   600: {
     title: '600 n.e. — najbliższa mapa: 500',
     caption:
-      'Brak światowego arkusza politycznego na 600 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 500 i oznaczamy stulecie jako lukę — bez mapy terenu i bez wymyślania konturów Sui i Bizancjum.',
+      'Rok 600 — już średniowieczny kadr: Zachodniego Cesarstwa Rzymskiego nie ma ponad wiek; na wschodzie Rzym jeszcze się trzyma (Maurycjusz), ale za dwa lata świat szarpnie tak, że przerysuje pół mapy. Longobardowie we Włoszech, Frankowie w strzępach, Sui dopiero co zebrała Chiny; w Mekce jeszcze cichy rok handlowy.',
+    essay: year600Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 500 n.e. użyta dla kroku 600',
   },
   700: {
@@ -620,43 +671,50 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1: {
     title: '1. m.ē. — mūsu ēras sākums',
     caption:
-      'Roma pie Vidusjūras, Haņu Ķīna Austrumāzijā, Partija pa vidu. Amerika un lielā daļa Okeānijas nav zīmētas kā valstis. Tā ir zināmo politiju rekonstrukcija, ne visu tautu uzskaite.',
+      '1. gads m.ē. — laikabiedriem vienkārši gads no Romas dibināšanas un imperatora Pina gads; Augusts tur Vidusjūru, Haņi — Debesu valstību; starp tiem zīds un Partija.',
+    essay: year1Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 1. gadam m.ē.',
   },
   100: {
     title: '100. m.ē.',
     caption:
-      'Augstā Romas impērija, kušānu un Haņu pasaules, joprojām atvērtais Āfroeiropas iekšiene. Līnijas ir zinātniski minējumi par kontroli, ne žogi uz zemes.',
+      'II gadsimts — romiešu „zelta laikmets” no Trajāna līdz Markam Aurēlijam un lūzums pie Komoda; Antonīnu mēris; Ķīnā Austrumu Haņi līdz beigām plīst (Dzeltenie lakati).',
+    essay: year100Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 100. gadam m.ē.',
   },
   200: {
     title: '200. m.ē.',
     caption:
-      'Roma, Partija / sasanīdu priekšvakars un Haņu Ķīna pēc gadsimta spriedzes. Tukšā sauszeme nav tukšums — tā ir valsts slāņa neesamība šajā lapā.',
+      '200. gads — vairs ne mierīgs antīkais pusdienlaiks: impērijas vēl stāv, bet iekšā čīkst. Septīmija Sevēra Roma pēc partiešu karagājieniem un mēra; Ķīna Trīs valstību priekšvakarā pēc Guandu; Partija nodzīvo līdz Sasānīdiem. Ārpusē klusāk, nekā šķiet.',
+    essay: year200Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 200. gadam m.ē.',
   },
   300: {
     title: '300. m.ē.',
     caption:
-      'Vēlā antīkā pasaule: dalās Romas pasaule, sasanīdu Irāna, pēcteču valstis Ķīnā. Krāsas ir pretenzijas, ne tautas skaitīšana.',
+      '300. gads — Diokletiāna tetrarhija; Sasānīdi Persijā; Dzjiņ Ķīnā jau grauž sevi; kristiešu daudz — pēc trim gadiem sāksies Lielā vajāšana.',
+    essay: year300Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 300. gadam m.ē.',
   },
   400: {
     title: '400. m.ē.',
     caption:
-      'Pēc 376. un pirms 476.: tautu staigāšanas Eiropa, sasanīdi, Guptas, sašķelta Ķīna. Daudzas „robežas” šeit ir frontes.',
+      '400. gads — impērija jau divas: Honorijs Rietumos, Arkādijs Austrumos; goti iekšā; līdz Alariham Romā desmit gadi; kristietība oficiāli no 380.',
+    essay: year400Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 400. gadam m.ē.',
   },
   500: {
     title: '500. m.ē.',
     caption:
-      'Pēcteču karaļvalstis rietumos, sasanīdi, Ziemeļu un Dienvidu Ķīna. Publicēta rekonstrukcija (CC BY-SA), ne līgumu atlants.',
+      '500. gads — Teodorihs Ravennā; Hlodviga franki jau kristīti; Konstantinopole krāj kasi Justiniānam; Ķīna pārdalīta, ziemeļus savāc Ziemeļu Vei.',
+    essay: year500Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 500. gadam m.ē.',
   },
   600: {
     title: '600. m.ē. — tuvākā karte: 500',
     caption:
-      'Nav pasaules politiskās lapas 600. gadam šajā atlanta saimē. Rādām 500. gada rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu — bez reljefa kartes un bez izdomātām Sui un Bizantijas kontūrām.',
+      '600. gads — jau viduslaiku kadrs: Rietumu Romas impērijas nav vairāk nekā gadsimtu; austrumos Roma vēl turas (Maurīcijs), bet pēc diviem gadiem pasaule rāvsies tā, ka pārzīmēs pusi kartes. Longobardi Itālijā, franki gabalos, Sui tikko savākusi Ķīnu; Mekā vēl kluss tirdzniecības gads.',
+    essay: year600Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 500. gada m.ē. 600. soļa vietā',
   },
   700: {
