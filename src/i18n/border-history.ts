@@ -289,7 +289,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1000: {
     title: '1000 CE — nearest map: 900',
     caption:
-      'No free 1000 CE world sheet in this atlas family. We show the 900 reconstruction and say so. Do not read it as a millennial snapshot.',
+      'Year 1000 — Otto III in Gniezno; Stephen king of Hungary; Kiev already baptised; Leif Erikson off the shore of Vinland; the end of the world does not come.',
     essay: year1000En,
     imageAlt: 'World political reconstruction dated 900 CE, used for the 1000 step',
   },
