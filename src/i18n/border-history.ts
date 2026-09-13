@@ -24,6 +24,10 @@ import year400En from './border-essays/year-400-en.md?raw';
 import year400Lv from './border-essays/year-400-lv.md?raw';
 import year400Pl from './border-essays/year-400-pl.md?raw';
 import year400Ru from './border-essays/year-400-ru.md?raw';
+import year500En from './border-essays/year-500-en.md?raw';
+import year500Lv from './border-essays/year-500-lv.md?raw';
+import year500Pl from './border-essays/year-500-pl.md?raw';
+import year500Ru from './border-essays/year-500-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -218,7 +222,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   500: {
     title: '500 CE',
     caption:
-      'Successor kingdoms in the west, Sasanian Iran, and Northern/Southern China. The map is a published reconstruction (CC BY-SA), not a treaty atlas.',
+      'Year 500 — Theodoric in Ravenna; Clovis\'s Franks already baptized; Constantinople hoards a treasury for Justinian; China is split, the north gathered by Northern Wei.',
+    essay: year500En,
     imageAlt: 'Reconstructed world political map for 500 CE',
   },
   600: {
@@ -376,7 +381,8 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   500: {
     title: '500 н. э.',
     caption:
-      'Королевства-преемники на западе, Сасаниды, Северный и Южный Китай. Опубликованная реконструкция (CC BY-SA), не атлас договоров.',
+      'Год 500 — Теодорих в Равенне; франки Хлодвига уже крещены; Константинополь копит казну для Юстиниана; Китай разрезан, север собирает Северная Вэй.',
+    essay: year500Ru,
     imageAlt: 'Реконструированная политическая карта мира на 500 год н. э.',
   },
   600: {
@@ -534,7 +540,8 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   500: {
     title: '500 n.e.',
     caption:
-      'Królestwa sukcesyjne na zachodzie, Sasanidzi, Chiny Północne i Południowe. Opublikowana rekonstrukcja (CC BY-SA), nie atlas traktatów.',
+      'Rok 500 — Teodoryk w Rawennie; Frankowie Chlodwiga już ochrzczeni; Konstantynopol gromadzi skarbiec dla Justyniana; Chiny przecięte, północ zbiera Północna Wei.',
+    essay: year500Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 500 n.e.',
   },
   600: {
@@ -692,7 +699,8 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   500: {
     title: '500. m.ē.',
     caption:
-      'Pēcteču karaļvalstis rietumos, sasanīdi, Ziemeļu un Dienvidu Ķīna. Publicēta rekonstrukcija (CC BY-SA), ne līgumu atlants.',
+      '500. gads — Teodorihs Ravennā; Hlodviga franki jau kristīti; Konstantinopole krāj kasi Justiniānam; Ķīna pārdalīta, ziemeļus savāc Ziemeļu Vei.',
+    essay: year500Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 500. gadam m.ē.',
   },
   600: {
