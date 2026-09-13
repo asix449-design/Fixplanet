@@ -28,6 +28,10 @@ import year500En from './border-essays/year-500-en.md?raw';
 import year500Lv from './border-essays/year-500-lv.md?raw';
 import year500Pl from './border-essays/year-500-pl.md?raw';
 import year500Ru from './border-essays/year-500-ru.md?raw';
+import year600En from './border-essays/year-600-en.md?raw';
+import year600Lv from './border-essays/year-600-lv.md?raw';
+import year600Pl from './border-essays/year-600-pl.md?raw';
+import year600Ru from './border-essays/year-600-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -229,7 +233,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   600: {
     title: '600 CE — nearest map: 500',
     caption:
-      'No matching-style full-world political sheet for 600 in this atlas family. We show the 500 reconstruction and mark the century as a gap rather than paste a terrain map or invent Sui/Byzantine outlines.',
+      'Year 600 — already a medieval frame: no Western Roman Empire for over a century; in the east Rome still holds (Maurice), but in two years the world will jerk so hard it remaps half the board. Lombards in Italy, Franks in shreds, Sui has just gathered China; in Mecca still a quiet trading year.',
+    essay: year600En,
     imageAlt: 'World political reconstruction dated 500 CE, used for the 600 step',
   },
   700: {
@@ -388,7 +393,8 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   600: {
     title: '600 н. э. — ближайшая карта: 500',
     caption:
-      'Нет мирового политического листа на 600 год в этом семействе атласа. Показываем реконструкцию 500 и помечаем век как пробел — не вставляем карту рельефа и не выдумываем контуры Суй и Византии.',
+      'Год 600 — уже средневековый кадр: Запада Римской империи нет больше века; на востоке Рим ещё держится (Маврикий), но через два года мир дёрнет так, что перекроит полкарты. Лангобарды в Италии, франки в клочьях, Суй только что собрала Китай; в Мекке ещё тихий торговый год.',
+    essay: year600Ru,
     imageAlt: 'Политическая реконструкция мира 500 года н. э. для шага 600',
   },
   700: {
@@ -547,7 +553,8 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   600: {
     title: '600 n.e. — najbliższa mapa: 500',
     caption:
-      'Brak światowego arkusza politycznego na 600 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 500 i oznaczamy stulecie jako lukę — bez mapy terenu i bez wymyślania konturów Sui i Bizancjum.',
+      'Rok 600 — już średniowieczny kadr: Zachodniego Cesarstwa Rzymskiego nie ma ponad wiek; na wschodzie Rzym jeszcze się trzyma (Maurycjusz), ale za dwa lata świat szarpnie tak, że przerysuje pół mapy. Longobardowie we Włoszech, Frankowie w strzępach, Sui dopiero co zebrała Chiny; w Mekce jeszcze cichy rok handlowy.',
+    essay: year600Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 500 n.e. użyta dla kroku 600',
   },
   700: {
@@ -706,7 +713,8 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   600: {
     title: '600. m.ē. — tuvākā karte: 500',
     caption:
-      'Nav pasaules politiskās lapas 600. gadam šajā atlanta saimē. Rādām 500. gada rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu — bez reljefa kartes un bez izdomātām Sui un Bizantijas kontūrām.',
+      '600. gads — jau viduslaiku kadrs: Rietumu Romas impērijas nav vairāk nekā gadsimtu; austrumos Roma vēl turas (Maurīcijs), bet pēc diviem gadiem pasaule rāvsies tā, ka pārzīmēs pusi kartes. Longobardi Itālijā, franki gabalos, Sui tikko savākusi Ķīnu; Mekā vēl kluss tirdzniecības gads.',
+    essay: year600Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 500. gada m.ē. 600. soļa vietā',
   },
   700: {
