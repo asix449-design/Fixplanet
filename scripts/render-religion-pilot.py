@@ -6,10 +6,10 @@ and data/religion-pilot/*.geojson). The political/coast underlay is aourednik
 historical-basemaps (GPL-3.0). Do not copy proprietary geometry into this file.
 
 Year 1 has no world_1 — uses world_100 and marks nearest.
-Years 500–900 use world_500 … world_900 (clip_to_land).
+Years 500–1200 use world_500 … world_1200 (clip_to_land).
 Year 600 writes y0600-schematic.png and must not overwrite y0600.png
-(the Christianity-to-600 process companion). Years 700–900 write
-y0700.png / y0800.png / y0900.png with no on-image legend.
+(the Christianity-to-600 process companion). Years 700–1200 write
+y0700.png … y1200.png with no on-image legend. Do not add 1300.
 
 Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y0001-schematic.png
@@ -22,6 +22,9 @@ Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y0700.png
   public/images/maps/religion/y0800.png
   public/images/maps/religion/y0900.png
+  public/images/maps/religion/y1000.png
+  public/images/maps/religion/y1100.png
+  public/images/maps/religion/y1200.png
 
 Run from repo root: python3 scripts/render-religion-pilot.py
 """
@@ -86,6 +89,9 @@ YEARS = {
     700: 700,
     800: 800,
     900: 900,
+    1000: 1000,
+    1100: 1100,
+    1200: 1200,
 }
 
 FOOTER = (
@@ -467,7 +473,7 @@ def render_year(year: int) -> Path:
 def main(years: list[int] | None = None) -> None:
     write_geojson()
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900):
+    for year in years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200):
         render_year(year)
 
 

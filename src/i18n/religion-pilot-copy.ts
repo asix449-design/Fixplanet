@@ -18,6 +18,22 @@ export type ReligionPilotFrameCopy = {
   sources: string;
 };
 
+/** Empty Pack B slots — wait for verbatim COPY YEAR 1000 / 1100 / 1200. */
+const emptySchematicCopy = (sources: string): ReligionPilotFrameCopy => ({
+  title: '',
+  caption: '',
+  imageAlt: '',
+  continentBlocks: [],
+  sources,
+});
+
+const SCHEMATIC_SOURCES = {
+  en: 'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+  ru: 'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+  pl: 'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+  lv: 'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+} as const;
+
 export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrameCopy>> = {
   en: {
     1: {
@@ -290,6 +306,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
     },
+    1000: emptySchematicCopy(SCHEMATIC_SOURCES.en),
+    1100: emptySchematicCopy(SCHEMATIC_SOURCES.en),
+    1200: emptySchematicCopy(SCHEMATIC_SOURCES.en),
   },
   ru: {
     1: {
@@ -560,6 +579,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
     },
+    1000: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
+    1100: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
+    1200: emptySchematicCopy(SCHEMATIC_SOURCES.ru),
   },
   pl: {
     1: {
@@ -830,6 +852,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
     },
+    1000: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
+    1100: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
+    1200: emptySchematicCopy(SCHEMATIC_SOURCES.pl),
   },
   lv: {
     1: {
@@ -1100,6 +1125,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
     },
+    1000: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
+    1100: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
+    1200: emptySchematicCopy(SCHEMATIC_SOURCES.lv),
   },
 };
 

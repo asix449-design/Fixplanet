@@ -77,7 +77,31 @@
     "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
     "url": "https://github.com/aourednik/historical-basemaps",
     "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
-    "note": "Abbasid-successor belt; stronger Buddhist Southeast Asia; no deep Sahel Islam. No year 1000 plate. Americas unmapped."
+    "note": "Abbasid-successor belt; stronger Buddhist Southeast Asia; no deep Sahel Islam. Americas unmapped."
+  },
+  {
+    "file": "y1000.png",
+    "title": "1000 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Schematic sibling of 1–900. No on-image legend. No deep Sahel Islam. y0600.png process companion untouched. Americas unmapped. Caption copy pending."
+  },
+  {
+    "file": "y1100.png",
+    "title": "1100 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Schematic sibling of 1–900. No on-image legend. No year 1300 plate. Americas unmapped. Caption copy pending."
+  },
+  {
+    "file": "y1200.png",
+    "title": "1200 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Schematic sibling of 1–900. No on-image legend. Do not add 1300. Americas unmapped. Caption copy pending."
   },
   {
     "file": "y0001.png",

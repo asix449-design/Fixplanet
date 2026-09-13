@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Hand-authored schematic religion regions for the 1–900 CE shelf.
+"""Hand-authored schematic religion regions for the 1–1200 CE shelf.
 
 Coarse ellipse unions — original Fix Planet artwork, not a trace of any
 commercial atlas. Americas / Oceania are omitted here; the renderer paints
-those lands unmapped gray.
+those lands unmapped gray. Do not add 1300+.
 """
 
 from __future__ import annotations
@@ -308,6 +308,67 @@ def buddhist_se_asia_900() -> list[Polygon]:
     ]
 
 
+def islamic_1000() -> list[Polygon]:
+    """Abbasid-successor belt plus a fuller Ghaznavid east. No Sahel wash."""
+    return islamic_successor_900() + [
+        ellipse(67.0, 33.4, 8.2, 5.6),
+        ellipse(69.5, 30.0, 5.6, 4.4),
+    ]
+
+
+def islamic_1100() -> list[Polygon]:
+    return islamic_1000() + [
+        ellipse(66.0, 32.2, 7.4, 5.0),
+    ]
+
+
+def islamic_1200() -> list[Polygon]:
+    """Ghurid / early Delhi edge on the Indus — still not a painted India."""
+    return islamic_1100() + [
+        ellipse(72.8, 28.4, 6.2, 4.8),
+        ellipse(74.5, 31.2, 4.6, 3.6),
+    ]
+
+
+def christian_fill_1000() -> list[Polygon]:
+    """Latin West + Byzantium + cautious Hungary / Kievan Rus. Still open north."""
+    return christian_fill_900() + [
+        ellipse(19.4, 47.4, 5.4, 4.2),
+        ellipse(31.6, 50.4, 5.8, 4.4),
+    ]
+
+
+def christian_fill_1100() -> list[Polygon]:
+    return christian_fill_1000() + [
+        ellipse(19.8, 52.0, 5.2, 4.0),
+        ellipse(11.2, 58.6, 4.0, 3.4),
+    ]
+
+
+def christian_fill_1200() -> list[Polygon]:
+    return christian_fill_1100() + [
+        ellipse(24.0, 53.6, 5.6, 4.2),
+        ellipse(34.0, 52.2, 6.0, 4.6),
+    ]
+
+
+def buddhist_se_asia_1000() -> list[Polygon]:
+    return buddhist_se_asia_900()
+
+
+def buddhist_se_asia_1100() -> list[Polygon]:
+    return buddhist_se_asia_900() + [
+        ellipse(100.8, 16.4, 6.4, 5.2),
+    ]
+
+
+def buddhist_se_asia_1200() -> list[Polygon]:
+    return buddhist_se_asia_1100() + [
+        ellipse(104.5, 13.6, 6.8, 5.4),
+        ellipse(110.0, 14.8, 4.8, 4.0),
+    ]
+
+
 def year_layers(year: int) -> dict[str, list]:
     """Return style buckets for one year: fill / hatch / dots."""
     fills: list[tuple[str, list[Polygon]]] = [
@@ -380,12 +441,32 @@ def year_layers(year: int) -> dict[str, list]:
         fills.append(("islam", islamic_abbasid_800()))
         hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
         hatches.append(("buddhist", buddhist_china_hatch()))
-    else:  # 900 — Abbasid-successor belt; no deep Sahel Islam
+    elif year == 900:  # Abbasid-successor belt; no deep Sahel Islam
         fills.append(("buddhist", buddhist_se_asia_900()))
         fills.append(("christian", christian_fill_900()))
         fills.append(("islam", islamic_successor_900()))
         hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
         hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1000:
+        fills.append(("buddhist", buddhist_se_asia_1000()))
+        fills.append(("christian", christian_fill_1000()))
+        fills.append(("islam", islamic_1000()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1100:
+        fills.append(("buddhist", buddhist_se_asia_1100()))
+        fills.append(("christian", christian_fill_1100()))
+        fills.append(("islam", islamic_1100()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1200:
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1200()))
+        fills.append(("islam", islamic_1200()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    else:
+        raise ValueError(f"no schematic layers for year {year}")
 
     jewish = [("jewish", ellipse(lon, lat, rx, ry)) for _, lon, lat, rx, ry in JEWISH_SPOTS]
     return {"fills": fills, "hatches": hatches, "dots": dots, "spots": jewish}
@@ -426,7 +507,7 @@ def collection_for(year: int) -> dict:
 
 def write_geojson() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in (1, 100, 200, 300, 400, 500, 600, 700, 800, 900):
+    for year in (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200):
         dest = OUT / f"y{year:04d}.geojson"
         dest.write_text(json.dumps(collection_for(year), indent=2), encoding="utf-8")
         print(f"wrote {dest.relative_to(ROOT)}")
