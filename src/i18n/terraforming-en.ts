@@ -158,7 +158,7 @@ export const en: Record<string, GeoCopy> = {
     lessons:
       'NDVI is not a forest. Monoculture poplars are a drought bet. A shelterbelt can cut sand and still mine the water table. Count surviving, useful cover — and who lost grazing — not only seedlings issued.',
     sourcesNote:
-      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 on the programme to 2022; Sun et al. 2018 on Populus simonii dieback.',
+      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 on the programme to 2022.',
   },
   'africa-great-green-wall': {
     title: 'Great Green Wall (Africa)',
@@ -172,11 +172,11 @@ export const en: Record<string, GeoCopy> = {
     construction:
       'National programmes differ. Ethiopia reports large seedling numbers; Senegal has better-documented plots; several states have thin monitoring. The UNCCD’s 2020 status report put restored area on the order of 4 million hectares (about 4 percent of the 100 million target) with uneven survival data. A 2021 “Accelerator” pledged new finance; disbursement lagged pledges.',
     outcome:
-      'In June 2024 the president of the previous UN desertification COP told Reuters that about 30 million hectares had been restored — 30 percent of the 2030 goal — and that the deadline would be missed. Survival rates are still poorly and inconsistently monitored outside a few countries. Three million jobs have been claimed in later briefings; treat jobs and hectares as programme figures, not a field census.',
+      'Later programme briefings have cited on the order of 30 million hectares restored — about 30 percent of the 2030 goal — and have said the deadline would be missed. Survival rates are still poorly and inconsistently monitored outside a few countries. Three million jobs have been claimed in later briefings; treat jobs and hectares as programme figures, not a field census.',
     lessons:
       'A wall was the wrong metaphor for a rainfall gradient. Restoration that pays local users lasts longer than ceremonial planting. Do not equate “hectares reported” with “trees alive in 2030.” Finance that is pledged and not spent is not a canopy.',
     sourcesNote:
-      'UNCCD 2020 implementation status; UNCCD GGW pages; Reuters 12 June 2024 on ~30 million ha and the missed 2030 path.',
+      'UNCCD Great Green Wall initiative pages; UNCCD 2020 implementation status and way ahead to 2030.',
   },
   'saudi-green-initiative': {
     title: 'Saudi Green Initiative',
@@ -190,11 +190,11 @@ export const en: Record<string, GeoCopy> = {
     construction:
       'Planting and “rehabilitation” campaigns are underway via MEWA and the National Center for Vegetation Cover. Officials said rehabilitated area moved from 18,000 hectares at the start to 250,000 by 2024 and 1 million in early 2026, with 159 million trees planted. Those are government and SPA figures, not a third-party stem count. A 2030 waypoint of 2.5 million hectares has been mentioned.',
     outcome:
-      'If the official million hectares holds under audit, it is 2.5 percent of the 40-million-hectare slogan — a start, not a completed greening of Arabia. Independent literature still stresses the older, better-measured story: decades of wheat grown on non-renewable aquifers, later scaled back (including a mid-2010s wheat phase-down) because the water did not return. Desalination mainly serves cities; it does not make cereal irrigation cheap. SGI’s own tree-water demand is a live research question (KAPSARC and others).',
+      'If the official million hectares holds under audit, it is 2.5 percent of the 40-million-hectare slogan — a start, not a completed greening of Arabia. Independent literature still stresses the older, better-measured story: decades of wheat grown on non-renewable aquifers, later scaled back (including a mid-2010s wheat phase-down) because the water did not return. Desalination mainly serves cities; it does not make cereal irrigation cheap. SGI’s own tree-water demand is a live research question.',
     lessons:
       'Keep the programmes apart: SGI ≠ pivot-circle wheat ≠ NEOM. Believe planted-and-surviving numbers when plots are public. A desert can host parks and still have a mined aquifer underneath. Ten billion trees is a target. One million hectares, if real, is a first increment.',
     sourcesNote:
-      'SGI official site; MEWA/SPA 2026 milestone claim; KAPSARC on agricultural water and SGI demand; FAO AQUASTAT for the groundwater and wheat context. Pivot-circle photo is historical irrigation, labelled as such.',
+      'Vision 2030 Saudi Green Initiative page; MEWA/SPA 2026 milestone claim; FAO AQUASTAT for the groundwater and wheat context. Pivot-circle photo is historical irrigation, labelled as such.',
   },
   'loess-plateau-rehabilitation': {
     title: 'Loess Plateau rehabilitation',
@@ -213,6 +213,24 @@ export const en: Record<string, GeoCopy> = {
       'Terraces, contracts and grazing rules can raise yields and cut sediment in treated watersheds without being a slogan wall. Count surviving cover and who keeps the land — not seedlings issued. A closed World Bank project is not the end of Yellow River erosion. Do not file this card under Three-North or Africa’s Great Green Wall.',
     sourcesNote:
       'World Bank 2004 Shanghai case study PDF (Phase I results); World Bank project pages P003608 (1994–2002) and P056216 (approved 1999, closed 2005).',
+  },
+  'jordan-badia-restoration': {
+    title: 'Jordan Badia restoration',
+    hook: 'Gulf War environmental compensation paid for dryland repair in Jordan’s Badia. Contour furrows, ponds, native fodder shrubs, and resting pastures — community grazing rules, not a belt of trees across Asia.',
+    imageAlt:
+      'Saltbush (Atriplex) in the White Desert / Wadi Dahek of north-eastern Jordan — the class of native fodder shrub Badia restoration plants, not a photograph of a named UNCC plot',
+    jurisdiction: 'Hashemite Kingdom of Jordan (Badia rangelands)',
+    yearStatus:
+      'UNCC Claim 5000304 award; Community Action Plan submitted 2013. Watershed works and grazing rules through the 2010s–2020s. Status: partial — award-funded programme, not a finished green wall.',
+    plan: 'UNCC Claim 5000304 funded cooperative rangeland restoration in Jordan’s Badia after Gulf War environmental damage awards. National Focal Point submitted a Community Action Plan (CAP) in 2013, accepted under the Follow-up Programme for Environmental Awards. CAP targets degraded Badia watersheds with water harvesting (ponds, earth dams, contour furrowing), planting of indigenous fodder shrubs, managed grazing / resting, and community-run fodder production. Best-scenario planning language aimed at restoring on the order of 10% of the Badia (~ 7,100 km²) via selected watersheds — not a continuous planted wall.',
+    construction:
+      'Ministry of Environment programme unit through the 2010s; UNCC follow-up oversight transferred to Jordan after Governing Council decisions in 2013–2014. ICARDA and partners: mechanised micro-catchments (e.g. Vallerani), native shrub planting, watershed sites such as Al Majeddyeh. Twelve watersheds in CAP planning; delivery uneven by basin. This is rangeland rehabilitation, not the African Great Green Wall and not China’s Three-North shelterbelt.',
+    outcome:
+      'Overstocking incentives remain; survival and monitoring quality vary; long-term resting needs community buy-in after award oversight thins. Treat official hectare claims as programme targets under audit, not a finished desert greening.',
+    lessons:
+      'An award can fund contour pits and still leave stocking incentives in place. A selected watershed is not a green wall. Count surviving shrubs and rested pasture under community rules — not award dollars or target hectares. The 10 percent Badia figure is a planning ceiling, not a finished canopy.',
+    sourcesNote:
+      'UNCC Claim 5000304 cooperative rangeland restoration; UNCC Follow-up Programme for Environmental Awards; ICARDA watershed restoration in Badia areas of Jordan.',
   },
   'stratospheric-aerosol-injection': {
     title: 'Stratospheric aerosol injection',
