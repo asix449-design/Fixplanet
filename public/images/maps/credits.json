@@ -304,22 +304,22 @@
     "note": "History of borders, exact year 1700. Reconstructed by Fix Planet from aourednik GPL GeoJSON (fills + large Russia / Qing / Safavid / Mughal labels). Not a copy of the Reddit MapPorn plate. Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not © Fix Planet geometry."
   },
   {
-    "file": "borders/y1815.jpg",
-    "title": "World map 1815 (Congress of Vienna)",
-    "source": "Wikimedia Commons, SvoHljott",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1815_(COV).jpg",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year-1800 step. Nearest detailed free political sheet is 1815. Recolored grey land to tan; political fills unchanged."
+    "file": "borders/y1800.png",
+    "title": "World in 1800 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1800.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1800.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1800. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the 1815 Congress of Vienna sheet, not © Fix Planet geometry."
   },
   {
-    "file": "borders/y1914.jpg",
-    "title": "Political map of the world in 1914",
-    "source": "World History Project / OER Project",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1914.jpg",
-    "license": "CC BY 4.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year-1900 step. Nearest full-world political sheet is 1914. Recolored dark seas and grey land to the atlas palette; political fills unchanged."
+    "file": "borders/y1900.png",
+    "title": "World in 1900 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1900.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1900.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1900. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1914 sheet, not © Fix Planet geometry."
   },
   {
     "file": "borders/y2000.png",
