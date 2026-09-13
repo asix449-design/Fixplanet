@@ -483,7 +483,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1300: {
     title: '1300 н. э.',
     caption:
-      'Точный 1300 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1200 и не гравюра. Современные берега; схема / границы WIP.',
+      'Год 1300 — папский юбилей в Риме; Филипп Красивый уже давит церковь; Осман кусает византийский край; Монгольская империя ещё огромная, но уже осколки.',
     essay: year1300Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1300 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
