@@ -3,7 +3,14 @@ import {
   type ReligionCoverage,
   type ReligionFrameMeta,
 } from '../data/religion-history';
+import { RELIGION_PUBLISHED_YEARS } from '../data/religion-legend';
 import type { Locale } from './config';
+import {
+  religionContinentLabels,
+  religionLegendLabels,
+  religionPilotCopy,
+  type ReligionContinentKey,
+} from './religion-pilot-copy';
 
 export type ReligionHistoryPage = {
   metaTitle: string;
@@ -27,33 +34,44 @@ export type ReligionHistoryPage = {
   catalogAlt: string;
   heroAlt: string;
   soonNotice: string;
+  legendHeading: string;
+  continentsHeading: string;
+  honestyPills: string[];
+  companionReclus: string;
+  companionChristianity600: string;
+  laterUnpublished: string;
+  correspondingSource: string;
 };
 
 export type ReligionFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
+  eraByContinent?: Record<ReligionContinentKey, string>;
+  sources?: string;
 };
 
 const pageEn: ReligionHistoryPage = {
-  metaTitle: 'Religion — coming soon — Fix Planet',
+  metaTitle: 'Religions — 1–400 CE pilot — Fix Planet',
   metaDescription:
-    'A century atlas of sourced religion maps is not published yet. Unfinished plates are not shown as a finished timeline.',
-  eyebrow: 'Map room · coming soon',
-  title: 'Religion',
+    'Five in-house schematic religion overlays for 1, 100, 200, 300, and 400 CE on aourednik underlays. Not a census. Americas not invented.',
+  eyebrow: 'Map room · 1–400 CE pilot',
+  title: 'Religions',
   lead:
-    'Religion maps, century by century, are not published yet. Fix Planet will not show unfinished plates as a working atlas.',
+    'A pilot shelf of five flat schematic plates: years 1, 100, 200, 300, and 400 CE. Religion fills are Fix Planet reconstructions on aourednik historical-basemaps underlays. No globe. Later centuries stay unpublished.',
   honesty:
-    'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. Sourced plates sit at antiquity (a 1905 Old-World reconstruction), the spread of Christianity to 600, state religions about 820, Shepherd’s Europe–Mediterranean religions about 1097, a cumulative spread-to-1500 plate, Woodbridge 1821, Dobbins 1883, the U.S. Army 1943 world sheet, and a 2000s majority-region map. Other century steps reuse the nearest plate and say so. We do not draw missing centuries.',
+    'There is no single “true” world religion map for antiquity. Belief, practice, and state cult overlap; most people were never counted. These five plates are coarse Old-World washes, not a headcount and not a Paradox state-religion layer. Year 1 uses world_100 as the nearest underlay — there is no world_1. The Reclus 1905 plate remains a museum companion. The AD 600 Christianity process plate stays on the shelf as a companion, not as the 300/400 multi-religion map.',
   back: '← Maps',
   scrubberAria: 'Jump to a century',
   sourceLabel: 'Source',
   licenseLabel: 'License',
   yearLabel: 'Century step',
   mapYearLabel: 'Map dated',
-  nearestNote: 'Nearest openly licensed plate — not an exact year sheet.',
+  nearestNote: 'Nearest underlay — no world_1 sheet; world_100 stands in.',
   shelfHeading: 'Also on this shelf',
   coverage: {
+    'schematic-pilot':
+      'Fix Planet hand-authored schematic — Old World / Mediterranean focus; Americas and Oceania stay unmapped',
     'old-world': 'Old World reconstruction — the Americas and Oceania are not mapped as religions here',
     'christianity-expansion':
       'Spread of one tradition (Christianity) in Afro-Eurasia — not a census of all faiths',
@@ -64,35 +82,50 @@ const pageEn: ReligionHistoryPage = {
     'intelligence-atlas': 'Wartime world sheet — a 1943 intelligence atlas, not a 2000 survey',
     'majority-modern': 'Modern majority-religion regions — affiliation, not piety, and not Pew artwork',
   },
-  catalogTitle: 'Religion',
-  catalogHook: 'A century atlas of sourced religion maps — not published yet.',
+  catalogTitle: 'Religions',
+  catalogHook: 'Pilot schematics for 1–400 CE — not a census, not a globe.',
   catalogCta: 'Open the timeline →',
-  catalogAlt: 'Majority-religion world map used as the catalog card for the Religion century atlas',
+  catalogAlt: 'Schematic religion plate used as the catalog card for the Religions 1–400 CE pilot',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors and oceans, used as a physical backdrop, not a religion map',
   soonNotice:
-    'Religion maps, century by century, are not published yet. The plates on hand are unfinished — some centuries reuse the same small raster — and Fix Planet will not present that as a working timeline.',
+    'Later centuries stay unpublished. This shelf is the 1–400 CE schematic pilot plus the AD 600 Christianity process companion.',
+  legendHeading: 'Shared legend',
+  continentsHeading: 'By continent',
+  honestyPills: [
+    'Schematic reconstruction',
+    'Not a census',
+    'Not Paradox',
+    'Old World / Mediterranean focus',
+    'Americas not invented',
+  ],
+  companionReclus: 'Museum companion: Reclus 1905 Old-World plate (public domain)',
+  companionChristianity600: 'Also: Christianity spread → 600 (process)',
+  laterUnpublished: 'Years after 400 (except the AD 600 process companion) are not published on this pilot.',
+  correspondingSource: 'Corresponding Source for the GPL basemap',
 };
 
 const pageRu: ReligionHistoryPage = {
-  metaTitle: 'Религии — скоро — Fix Planet',
+  metaTitle: 'Религии — пилот 1–400 н. э. — Fix Planet',
   metaDescription:
-    'Атлас религиозных карт по столетиям пока не опубликован. Незаконченные листы не показываем как готовую ленту.',
-  eyebrow: 'Картографическая · скоро',
+    'Пять собственных схематических наложений религий на 1, 100, 200, 300 и 400 годы н. э. на подложках aourednik. Не перепись. Америку не выдумываем.',
+  eyebrow: 'Картографическая · пилот 1–400 н. э.',
   title: 'Религии',
   lead:
-    'Карты религий по столетиям пока не опубликованы. Fix Planet не показывает незаконченные листы как рабочий атлас.',
+    'Пилотная полка из пяти плоских схем: 1, 100, 200, 300 и 400 годы н. э. Заливки религий — реконструкции Fix Planet на подложках aourednik historical-basemaps. Без глобуса. Более поздние века не опубликованы.',
   honesty:
-    'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Есть листы: древность (реконструкция Старого Света 1905 года), распространение христианства до 600, государственные религии около 820, религии Европы и Средиземноморья у Shepherd около 1097, накопленное распространение до 1500, Woodbridge 1821, Dobbins 1883, армейский лист США 1943 и карта регионов большинства 2000-х. Остальные шаги — ближайший лист с пометкой. Недостающие века мы не рисуем.',
+    'Для древности нет одной «верной» мировой карты религий. Вера, практика и государственный культ пересекаются; большинство людей никогда не считали. Эти пять листов — грубые смывы Старого Света, не перепись и не слой государственных религий Paradox. Для 1 года подложка — world_100, ближайшая: листа world_1 нет. Лист Реклю 1905 года остаётся музейным компаньоном. Процессный лист христианства до 600 остаётся на полке как компаньон, не как многорелигиозная карта 300/400.',
   back: '← Карты',
   scrubberAria: 'Перейти к столетию',
   sourceLabel: 'Источник',
   licenseLabel: 'Лицензия',
   yearLabel: 'Шаг века',
   mapYearLabel: 'Дата карты',
-  nearestNote: 'Ближайший открытый лист — не точная карта на круглый год.',
+  nearestNote: 'Ближайшая подложка — листа world_1 нет; стоит world_100.',
   shelfHeading: 'Также на этой полке',
   coverage: {
+    'schematic-pilot':
+      'Авторская схема Fix Planet — фокус на Старом Свете / Средиземноморье; Америка и Океания без заливки',
     'old-world': 'Реконструкция Старого Света — Америка и Океания здесь не залиты как религии',
     'christianity-expansion':
       'Распространение одной традиции (христианства) в Афроевразии — не перепись всех вер',
@@ -104,34 +137,49 @@ const pageRu: ReligionHistoryPage = {
     'majority-modern': 'Современные регионы большинства — принадлежность, не благочестие и не графика Pew',
   },
   catalogTitle: 'Религии',
-  catalogHook: 'Атлас религиозных карт по столетиям — пока не опубликован.',
+  catalogHook: 'Пилотные схемы на 1–400 н. э. — не перепись, не глобус.',
   catalogCta: 'Открыть ленту →',
-  catalogAlt: 'Карта регионов большинства религий — карточка атласа столетий «Религии»',
+  catalogAlt: 'Схематический лист религий — карточка пилота «Религии» 1–400 н. э.',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши и океанов, физический фон, не карта религий',
   soonNotice:
-    'Карты религий по столетиям пока не опубликованы. Листы, которые есть, не закончены — часть веков повторяет один и тот же мелкий растр — и Fix Planet не показывает это как рабочую ленту.',
+    'Более поздние века не опубликованы. На полке — пилот схем 1–400 н. э. и компаньон процесса христианства до 600.',
+  legendHeading: 'Общая легенда',
+  continentsHeading: 'По континентам',
+  honestyPills: [
+    'Схематическая реконструкция',
+    'Не перепись',
+    'Не Paradox',
+    'Фокус: Старый Свет / Средиземноморье',
+    'Америку не выдумываем',
+  ],
+  companionReclus: 'Музейный компаньон: лист Реклю 1905 года о Старом Свете (общественное достояние)',
+  companionChristianity600: 'Также: распространение христианства → 600 (процесс)',
+  laterUnpublished: 'Годы после 400 (кроме процессного компаньона 600 н. э.) в этом пилоте не опубликованы.',
+  correspondingSource: 'Corresponding Source подложки GPL',
 };
 
 const pagePl: ReligionHistoryPage = {
-  metaTitle: 'Religie — wkrótce — Fix Planet',
+  metaTitle: 'Religie — pilot 1–400 n.e. — Fix Planet',
   metaDescription:
-    'Atlas map religii po stuleciach nie jest jeszcze opublikowany. Niedokończonych płyt nie pokazujemy jako gotowej osi czasu.',
-  eyebrow: 'Mapownia · wkrótce',
+    'Pięć własnych schematycznych nakładek religii na lata 1, 100, 200, 300 i 400 n.e. na podkładach aourednik. Nie spis. Ameryk nie wymyślamy.',
+  eyebrow: 'Mapownia · pilot 1–400 n.e.',
   title: 'Religie',
   lead:
-    'Mapy religii stulecie po stuleciu nie są jeszcze opublikowane. Fix Planet nie pokazuje niedokończonych płyt jako działającego atlasu.',
+    'Pilotażowa półka pięciu płaskich schematów: lata 1, 100, 200, 300 i 400 n.e. Wypełnienia religii to rekonstrukcje Fix Planet na podkładach aourednik historical-basemaps. Bez globusa. Późniejsze stulecia pozostają nieopublikowane.',
   honesty:
-    'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Są arkusze: starożytność (rekonstrukcja Starego Świata z 1905), rozprzestrzenianie chrześcijaństwa do 600, religie państwowe około 820, religie Europy i Śródziemnomorza Shepherda około 1097, skumulowane rozprzestrzenienie do 1500, Woodbridge 1821, Dobbins 1883, arkusz armii USA z 1943 i mapa regionów większości z lat 2000. Pozostałe kroki to najbliższy arkusz z adnotacją. Brakujących stuleci nie rysujemy.',
+    'W starożytności nie ma jednej „prawdziwej” mapy religii świata. Wiara, praktyka i kult państwowy nachodzą na siebie; większości ludzi nigdy nie policzono. Te pięć płyt to grube plamy Starego Świata, nie spis głów i nie warstwa religii państwowych Paradox. Rok 1 używa world_100 jako najbliższego podkładu — nie ma world_1. Tablica Reclusa z 1905 zostaje towarzyszem muzealnym. Płyta procesu chrześcijaństwa do 600 zostaje na półce jako towarzysz, nie jako wieloreligijna mapa 300/400.',
   back: '← Mapy',
   scrubberAria: 'Skocz do stulecia',
   sourceLabel: 'Źródło',
   licenseLabel: 'Licencja',
   yearLabel: 'Krok stulecia',
   mapYearLabel: 'Data mapy',
-  nearestNote: 'Najbliższy arkusz na otwartej licencji — nie dokładna mapa z okrągłego roku.',
+  nearestNote: 'Najbliższy podkład — nie ma arkusza world_1; stoi world_100.',
   shelfHeading: 'Także na tej półce',
   coverage: {
+    'schematic-pilot':
+      'Ręczny schemat Fix Planet — Stary Świat / Śródziemnomorze; Ameryki i Oceania bez wypełnienia',
     'old-world': 'Rekonstrukcja Starego Świata — Ameryki i Oceania nie są tu zalane jako religie',
     'christianity-expansion':
       'Rozprzestrzenianie jednej tradycji (chrześcijaństwa) w Afroeuroazji — nie spis wszystkich wiar',
@@ -143,34 +191,49 @@ const pagePl: ReligionHistoryPage = {
     'majority-modern': 'Współczesne regiony większości — przynależność, nie pobożność i nie grafika Pew',
   },
   catalogTitle: 'Religie',
-  catalogHook: 'Atlas map religii po stuleciach — jeszcze nie opublikowany.',
+  catalogHook: 'Schematy pilotażowe 1–400 n.e. — nie spis, nie globus.',
   catalogCta: 'Otwórz oś czasu →',
-  catalogAlt: 'Mapa regionów większości religijnej — karta atlasu stuleci Religii',
+  catalogAlt: 'Schematyczna płyta religii — karta pilota Religii 1–400 n.e.',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów i oceanów, tło fizyczne, nie mapa religii',
   soonNotice:
-    'Mapy religii stulecie po stuleciu nie są jeszcze opublikowane. Płyty, które mamy, są niedokończone — niektóre wieki powtarzają ten sam mały raster — i Fix Planet nie pokazuje tego jako działającej osi czasu.',
+    'Późniejsze stulecia pozostają nieopublikowane. Na półce jest pilot schematów 1–400 n.e. oraz towarzysz procesu chrześcijaństwa do 600.',
+  legendHeading: 'Wspólna legenda',
+  continentsHeading: 'Według kontynentu',
+  honestyPills: [
+    'Rekonstrukcja schematyczna',
+    'Nie spis',
+    'Nie Paradox',
+    'Stary Świat / Śródziemnomorze',
+    'Ameryk nie wymyślamy',
+  ],
+  companionReclus: 'Towarzysz muzealny: tablica Reclusa z 1905 o Starym Świecie (domena publiczna)',
+  companionChristianity600: 'Także: rozprzestrzenianie chrześcijaństwa → 600 (proces)',
+  laterUnpublished: 'Lata po 400 (oprócz towarzysza procesu 600 n.e.) nie są opublikowane w tym pilocie.',
+  correspondingSource: 'Corresponding Source podkładu GPL',
 };
 
 const pageLv: ReligionHistoryPage = {
-  metaTitle: 'Reliģijas — drīzumā — Fix Planet',
+  metaTitle: 'Reliģijas — pilots 1.–400. m.ē. — Fix Planet',
   metaDescription:
-    'Reliģiju karšu gadsimtu atlants vēl nav publicēts. Nepabeigtas plāksnes netiek rādītas kā gatava laika līnija.',
-  eyebrow: 'Karšu zāle · drīzumā',
+    'Pieci pašu shēmatiski reliģiju pārklājumi 1., 100., 200., 300. un 400. gadam m.ē. uz aourednik apakšslāņiem. Ne tautas skaitīšana. Ameriku neizdomājam.',
+  eyebrow: 'Karšu zāle · pilots 1.–400. m.ē.',
   title: 'Reliģijas',
   lead:
-    'Reliģiju kartes pa gadsimtiem vēl nav publicētas. Fix Planet nerāda nepabeigtas plāksnes kā strādājošu atlantu.',
+    'Pilotplaukts ar piecām plakanām shēmām: 1., 100., 200., 300. un 400. gads m.ē. Reliģiju aizpildes ir Fix Planet rekonstrukcijas uz aourednik historical-basemaps apakšslāņiem. Bez globusa. Vēlākie gadsimti paliek nepublicēti.',
   honesty:
-    'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Ir lapas: senatne (1905. gada Vecās pasaules rekonstrukcija), kristietības izplatība līdz 600., valstu reliģijas ap 820., Shepherd Eiropas–Vidusjūras reliģijas ap 1097., kumulatīva izplatība līdz 1500., Woodbridge 1821, Dobbins 1883, ASV armijas 1943. gada lapa un 2000. gadu vairākuma reģionu karte. Pārējie soļi ir tuvākā lapa ar atzīmi. Trūkstošos gadsimtus mēs nezīmējam.',
+    'Senatnei nav vienas „īstās” pasaules reliģiju kartes. Ticība, prakse un valsts kults pārklājas; lielāko daļu cilvēku nekad neskaitīja. Šīs piecas plāksnes ir rupjas Vecās pasaules joslas, ne galvu skaitīšana un ne Paradox valsts reliģiju slānis. 1. gads lieto world_100 kā tuvāko apakšslāni — world_1 nav. Reclus 1905. gada plāksne paliek muzeja pavadonis. Kristietības procesa plāksne līdz 600. paliek plauktā kā pavadonis, ne kā 300./400. daudzreliģiju karte.',
   back: '← Kartes',
   scrubberAria: 'Pāriet uz gadsimtu',
   sourceLabel: 'Avots',
   licenseLabel: 'Licence',
   yearLabel: 'Gadsimta solis',
   mapYearLabel: 'Kartes datums',
-  nearestNote: 'Tuvākā atklāti licencētā lapa — ne precīza karte uz apaļu gadu.',
+  nearestNote: 'Tuvākais apakšslānis — world_1 lapas nav; stāv world_100.',
   shelfHeading: 'Arī šajā plauktā',
   coverage: {
+    'schematic-pilot':
+      'Fix Planet pašu shēma — Vecā pasaule / Vidusjūra; Amerika un Okeānija paliek bez aizpildes',
     'old-world': 'Vecās pasaules rekonstrukcija — Amerika un Okeānija šeit nav iekrāsotas kā reliģijas',
     'christianity-expansion':
       'Vienas tradīcijas (kristietības) izplatība Āfroeiropāzijā — ne visu ticību uzskaite',
@@ -182,13 +245,26 @@ const pageLv: ReligionHistoryPage = {
     'majority-modern': 'Mūsdienu vairākuma reliģiju reģioni — piederība, ne dievbijība un ne Pew grafika',
   },
   catalogTitle: 'Reliģijas',
-  catalogHook: 'Reliģiju karšu gadsimtu atlants — vēl nav publicēts.',
+  catalogHook: 'Pilotshēmas 1.–400. m.ē. — ne tautas skaitīšana, ne globuss.',
   catalogCta: 'Atvērt laika līniju →',
-  catalogAlt: 'Vairākuma reliģiju pasaules karte — Reliģiju gadsimtu atlanta kartīte',
+  catalogAlt: 'Reliģiju shēmas plāksne — Reliģiju 1.–400. m.ē. pilota kartīte',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes un okeānu krāsas, fizisks fons, ne reliģiju karte',
   soonNotice:
-    'Reliģiju kartes pa gadsimtiem vēl nav publicētas. Plāksnes, kas ir rokā, nav pabeigtas — daži gadsimti atkārto to pašu mazo rastru — un Fix Planet to nerāda kā strādājošu laika līniju.',
+    'Vēlākie gadsimti paliek nepublicēti. Šajā plauktā ir 1.–400. m.ē. shēmu pilots un 600. gada kristietības procesa pavadonis.',
+  legendHeading: 'Kopīgā leģenda',
+  continentsHeading: 'Pa kontinentiem',
+  honestyPills: [
+    'Shēmatiska rekonstrukcija',
+    'Ne tautas skaitīšana',
+    'Ne Paradox',
+    'Vecā pasaule / Vidusjūra',
+    'Ameriku neizdomājam',
+  ],
+  companionReclus: 'Muzeja pavadonis: Reclus 1905. gada Vecās pasaules plāksne (sabiedriskais īpašums)',
+  companionChristianity600: 'Arī: kristietības izplatība → 600. (process)',
+  laterUnpublished: 'Gadi pēc 400. (izņemot 600. m.ē. procesa pavadoni) šajā pilotā nav publicēti.',
+  correspondingSource: 'GPL apakšslāņa Corresponding Source',
 };
 
 const captionsEn: Record<number, ReligionFrameCopy> = {
@@ -752,8 +828,21 @@ export function getReligionHistoryPage(locale: Locale): ReligionHistoryPage {
 }
 
 export function getReligionHistoryFrames(locale: Locale): ReligionFrame[] {
-  return religionHistoryFrames.map((meta) => {
-    const copy = captions[locale][meta.year] ?? captions.en[meta.year];
-    return { ...meta, ...copy };
-  });
+  const published = new Set<number>(RELIGION_PUBLISHED_YEARS);
+  return religionHistoryFrames
+    .filter((meta) => published.has(meta.year))
+    .map((meta) => {
+      const base = captions[locale][meta.year] ?? captions.en[meta.year];
+      const pilot = religionPilotCopy[locale][meta.year] ?? religionPilotCopy.en[meta.year];
+      const copy = pilot ?? base;
+      return { ...meta, ...copy };
+    });
+}
+
+export function getReligionLegend(locale: Locale) {
+  return religionLegendLabels[locale];
+}
+
+export function getReligionContinentLabels(locale: Locale) {
+  return religionContinentLabels[locale];
 }

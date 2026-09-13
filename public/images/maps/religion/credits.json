@@ -1,11 +1,51 @@
 [
   {
+    "file": "y0001-schematic.png",
+    "title": "1 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_100 (nearest — no world_1)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Hand-authored Old-World washes. Americas/Oceania unmapped. Corresponding Source: https://github.com/aourednik/historical-basemaps. Method: docs/religion-pilot-method.md."
+  },
+  {
+    "file": "y0100.png",
+    "title": "100 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_100",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Trajan still pagan. Christian urban dots only. Americas unmapped. Corresponding Source: https://github.com/aourednik/historical-basemaps."
+  },
+  {
+    "file": "y0200.png",
+    "title": "200 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_200",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Official pagan Rome; Christian urban hatch; optional Manichaean hatch. Americas unmapped."
+  },
+  {
+    "file": "y0300.png",
+    "title": "300 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_300",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Eve of Constantine — majority pagan; Christianity as eastern urban minority, not empire fill. Americas unmapped."
+  },
+  {
+    "file": "y0400.png",
+    "title": "400 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; underlay aourednik historical-basemaps world_400",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Post-Theodosius Christian expansion in cities/elites; rural pagan hatch remains. Not all-Europe Christian. Americas unmapped."
+  },
+  {
     "file": "y0001.png",
     "title": "Principales religions de l’ancien monde (Planche VI)",
     "source": "Élisée Reclus, L’Homme et la Terre (1905)",
     "url": "https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png",
     "license": "Public domain",
-    "note": "1905 scholarly reconstruction of ancient Old-World religions. Not a year-1 survey. Americas and Oceania are off the sheet. Seas recolored toward the Borders atlas palette; religion fills unchanged."
+    "note": "Museum companion for year 1 — not the schematic shelf card. 1905 scholarly reconstruction of ancient Old-World religions. Seas recolored toward the Borders atlas palette; religion fills unchanged."
   },
   {
     "file": "y0600.png",
