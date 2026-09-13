@@ -75,6 +75,14 @@ export type BorderHistoryPage = {
   yearLabel: string;
   mapYearLabel: string;
   nearestNote: string;
+  play: string;
+  pause: string;
+  stop: string;
+  playAria: string;
+  pauseAria: string;
+  stopAria: string;
+  rateLabel: string;
+  noVoice: string;
   coverage: Record<BorderCoverage, string>;
   catalogTitle: string;
   catalogHook: string;
@@ -111,6 +119,14 @@ const pageEn: BorderHistoryPage = {
   yearLabel: 'Century step',
   mapYearLabel: 'Map dated',
   nearestNote: 'Nearest openly licensed map — not an exact year sheet.',
+  play: 'Play',
+  pause: 'Pause',
+  stop: 'Stop',
+  playAria: 'Read this century aloud',
+  pauseAria: 'Pause reading',
+  stopAria: 'Stop reading',
+  rateLabel: 'Speed',
+  noVoice: 'No matching voice in this browser',
   coverage: {
     world: 'World reconstruction',
     'eastern-hemisphere': 'Eastern Hemisphere only — the Americas are a gap on this sheet',
@@ -142,6 +158,14 @@ const pageRu: BorderHistoryPage = {
   yearLabel: 'Шаг века',
   mapYearLabel: 'Дата карты',
   nearestNote: 'Ближайшая открытая карта — не точный лист на круглый год.',
+  play: 'Слушать',
+  pause: 'Пауза',
+  stop: 'Стоп',
+  playAria: 'Прочитать это столетие вслух',
+  pauseAria: 'Приостановить чтение',
+  stopAria: 'Остановить чтение',
+  rateLabel: 'Темп',
+  noVoice: 'В этом браузере нет подходящего голоса',
   coverage: {
     world: 'Мировая реконструкция',
     'eastern-hemisphere': 'Только Восточное полушарие — Америка на этом листе отсутствует',
@@ -172,6 +196,14 @@ const pagePl: BorderHistoryPage = {
   yearLabel: 'Krok stulecia',
   mapYearLabel: 'Data mapy',
   nearestNote: 'Najbliższa mapa na otwartej licencji — nie dokładny arkusz z okrągłego roku.',
+  play: 'Odtwórz',
+  pause: 'Pauza',
+  stop: 'Stop',
+  playAria: 'Przeczytaj to stulecie na głos',
+  pauseAria: 'Wstrzymaj czytanie',
+  stopAria: 'Zatrzymaj czytanie',
+  rateLabel: 'Tempo',
+  noVoice: 'Brak pasującego głosu w tej przeglądarce',
   coverage: {
     world: 'Rekonstrukcja światowa',
     'eastern-hemisphere': 'Tylko półkula wschodnia — Ameryki są luką na tym arkuszu',
@@ -202,6 +234,14 @@ const pageLv: BorderHistoryPage = {
   yearLabel: 'Gadsimta solis',
   mapYearLabel: 'Kartes datums',
   nearestNote: 'Tuvākā atklāti licencētā karte — ne precīza lapa uz apaļu gadu.',
+  play: 'Atskaņot',
+  pause: 'Pauze',
+  stop: 'Apturēt',
+  playAria: 'Nolasīt šo gadsimtu skaļi',
+  pauseAria: 'Pauzēt lasīšanu',
+  stopAria: 'Pārtraukt lasīšanu',
+  rateLabel: 'Temps',
+  noVoice: 'Šajā pārlūkā nav atbilstošas balss',
   coverage: {
     world: 'Pasaules rekonstrukcija',
     'eastern-hemisphere': 'Tikai Austrumu puslode — Amerika šajā lapā ir iztrūkums',
