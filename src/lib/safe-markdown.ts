@@ -27,6 +27,7 @@ export function renderSafeMarkdown(source: string): string {
 
   const html: string[] = [];
   let paragraph: string[] = [];
+  let list: string[] = [];
 
   const flushParagraph = () => {
     if (!paragraph.length) return;
@@ -35,20 +36,36 @@ export function renderSafeMarkdown(source: string): string {
     paragraph = [];
   };
 
+  const flushList = () => {
+    if (!list.length) return;
+    html.push(`<ul>${list.map((item) => `<li>${renderInline(item)}</li>`).join('')}</ul>`);
+    list = [];
+  };
+
   for (const raw of text.split('\n')) {
     const heading = raw.match(/^###\s+(.+)$/);
     if (heading) {
       flushParagraph();
+      flushList();
       html.push(`<h3>${renderInline(heading[1].trim())}</h3>`);
+      continue;
+    }
+    const bullet = raw.match(/^\s*-\s+(.+)$/);
+    if (bullet) {
+      flushParagraph();
+      list.push(bullet[1].trim());
       continue;
     }
     if (raw.trim() === '') {
       flushParagraph();
+      flushList();
       continue;
     }
+    flushList();
     paragraph.push(raw.trim());
   }
 
   flushParagraph();
+  flushList();
   return html.join('');
 }

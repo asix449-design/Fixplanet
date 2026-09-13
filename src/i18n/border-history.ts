@@ -4,6 +4,10 @@ import {
   type BorderFrameMeta,
 } from '../data/border-history';
 import type { Locale } from './config';
+import year1En from './border-essays/year-1-en.md?raw';
+import year1Lv from './border-essays/year-1-lv.md?raw';
+import year1Pl from './border-essays/year-1-pl.md?raw';
+import year1Ru from './border-essays/year-1-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -164,6 +168,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     title: '1 CE — start of the Common Era',
     caption:
       'Year 1 CE — for people then, just another year from Rome\'s founding and the year of Emperor Ping; Augustus holds the Mediterranean, Han holds the Middle Kingdom; between them, silk and Parthia.',
+    essay: year1En,
     imageAlt: 'Reconstructed world political map for 1 CE, public-domain Wikimedia sheet',
   },
   100: {
@@ -317,6 +322,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1 н. э. — начало нашей эры',
     caption:
       'Год 1 н. э. — для современников просто год от основания Рима и год императора Пина; Август держит Средиземноморье, Хань — Поднебесную; между ними шёлк и Парфия.',
+    essay: year1Ru,
     imageAlt: 'Реконструированная политическая карта мира на 1 год н. э.',
   },
   100: {
@@ -470,6 +476,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1 n.e. — początek naszej ery',
     caption:
       'Rok 1 n.e. — dla ówczesnych po prostu rok od założenia Rzymu i rok cesarza Pinga; August trzyma Morze Śródziemne, Han — Państwo Środka; między nimi jedwab i Partia.',
+    essay: year1Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 1 n.e.',
   },
   100: {
@@ -623,6 +630,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1. m.ē. — mūsu ēras sākums',
     caption:
       '1. gads m.ē. — laikabiedriem vienkārši gads no Romas dibināšanas un imperatora Pina gads; Augusts tur Vidusjūru, Haņi — Debesu valstību; starp tiem zīds un Partija.',
+    essay: year1Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 1. gadam m.ē.',
   },
   100: {

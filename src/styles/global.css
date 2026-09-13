@@ -2819,6 +2819,16 @@ a.map-card:hover {
   margin-top: 1.05rem;
 }
 
+.borders-essay ul {
+  margin: 0 0 1em;
+  padding-left: 1.25rem;
+}
+
+.borders-essay li {
+  margin: 0.28rem 0;
+  line-height: 1.65;
+}
+
 .religion-legend {
   margin: 0 0 1.6rem;
   padding: 1rem 1.15rem 1.15rem;
