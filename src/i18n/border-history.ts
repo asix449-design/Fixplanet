@@ -463,7 +463,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1100: {
     title: '1100 н. э.',
     caption:
-      'Точный 1100 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1200 и не гравюра. Современные берега; схема / границы WIP.',
+      'Год 1100 — Балдуина коронуют в Вифлееме; в Англии стрела убивает Вильгельма Рыжего; на Руси съезд в Уветичах; в Китае на престол садится Хуэй-цзун.',
     essay: year1100Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1100 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
