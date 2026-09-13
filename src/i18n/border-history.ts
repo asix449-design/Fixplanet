@@ -32,6 +32,34 @@ import year600En from './border-essays/year-600-en.md?raw';
 import year600Lv from './border-essays/year-600-lv.md?raw';
 import year600Pl from './border-essays/year-600-pl.md?raw';
 import year600Ru from './border-essays/year-600-ru.md?raw';
+import year700En from './border-essays/year-700-en.md?raw';
+import year700Lv from './border-essays/year-700-lv.md?raw';
+import year700Pl from './border-essays/year-700-pl.md?raw';
+import year700Ru from './border-essays/year-700-ru.md?raw';
+import year800En from './border-essays/year-800-en.md?raw';
+import year800Lv from './border-essays/year-800-lv.md?raw';
+import year800Pl from './border-essays/year-800-pl.md?raw';
+import year800Ru from './border-essays/year-800-ru.md?raw';
+import year900En from './border-essays/year-900-en.md?raw';
+import year900Lv from './border-essays/year-900-lv.md?raw';
+import year900Pl from './border-essays/year-900-pl.md?raw';
+import year900Ru from './border-essays/year-900-ru.md?raw';
+import year1000En from './border-essays/year-1000-en.md?raw';
+import year1000Lv from './border-essays/year-1000-lv.md?raw';
+import year1000Pl from './border-essays/year-1000-pl.md?raw';
+import year1000Ru from './border-essays/year-1000-ru.md?raw';
+import year1100En from './border-essays/year-1100-en.md?raw';
+import year1100Lv from './border-essays/year-1100-lv.md?raw';
+import year1100Pl from './border-essays/year-1100-pl.md?raw';
+import year1100Ru from './border-essays/year-1100-ru.md?raw';
+import year1200En from './border-essays/year-1200-en.md?raw';
+import year1200Lv from './border-essays/year-1200-lv.md?raw';
+import year1200Pl from './border-essays/year-1200-pl.md?raw';
+import year1200Ru from './border-essays/year-1200-ru.md?raw';
+import year1300En from './border-essays/year-1300-en.md?raw';
+import year1300Lv from './border-essays/year-1300-lv.md?raw';
+import year1300Pl from './border-essays/year-1300-pl.md?raw';
+import year1300Ru from './border-essays/year-1300-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -241,30 +269,35 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     title: '700 CE',
     caption:
       'Umayyad expansion, Tang China, and a post-Roman west. A world reconstruction of major states — still silent on most Indigenous polities.',
+    essay: year700En,
     imageAlt: 'Reconstructed world political map for 700 CE',
   },
   800: {
     title: '800 CE — nearest map: 750',
     caption:
       'No 800 CE world plate in the same flat atlas family. FamilyPedia’s 750 reconstruction (Umayyad, Tang, Frankish west) is the nearest matching-style sheet. A labeled gap, not an invented 800.',
+    essay: year800En,
     imageAlt: 'World political reconstruction dated 750 CE, used for the 800 step',
   },
   900: {
     title: '900 CE',
     caption:
       'Fragmented caliphates, a new Byzantine recovery, and Five Dynasties China. Colours mark large named states, not every duchy or steppe confederation.',
+    essay: year900En,
     imageAlt: 'Reconstructed world political map for 900 CE',
   },
   1000: {
     title: '1000 CE — nearest map: 900',
     caption:
       'No free 1000 CE world sheet in this atlas family. We show the 900 reconstruction and say so. Do not read it as a millennial snapshot.',
+    essay: year1000En,
     imageAlt: 'World political reconstruction dated 900 CE, used for the 1000 step',
   },
   1100: {
     title: '1100 CE',
     caption:
       'Exact year 1100, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1200 teaching map and not an engraving. Modern coastlines; schematic / WIP borders.',
+    essay: year1100En,
     imageAlt: 'Schematic world political reconstruction for 1100 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -274,6 +307,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     title: '1200 CE',
     caption:
       'On the eve of the Mongol explosion: a founder-supplied political reconstruction of the world in 1200. A reconstruction, not a cadastral survey.',
+    essay: year1200En,
     imageAlt: 'Founder-supplied political reconstruction of the world in 1200',
     sourceShort: 'Founder reconstruction',
     sourceOrg: 'Founder-supplied political reconstruction',
@@ -283,6 +317,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     title: '1300 CE',
     caption:
       'Exact year 1300, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1200 teaching map and not an engraving. Modern coastlines; schematic / WIP borders.',
+    essay: year1300En,
     imageAlt: 'Schematic world political reconstruction for 1300 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -401,30 +436,35 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '700 н. э.',
     caption:
       'Омейядская экспансия, Тан и пост-римский запад. Мировая реконструкция крупных государств — без большинства коренных политий.',
+    essay: year700Ru,
     imageAlt: 'Реконструированная политическая карта мира на 700 год н. э.',
   },
   800: {
     title: '800 н. э. — ближайшая карта: 750',
     caption:
       'Нет мирового листа на 800 год в том же плоском семействе атласа. Реконструкция FamilyPedia 750 года (Омейяды, Тан, франкский запад) — ближайший лист того же стиля. Помеченный пробел, не выдуманный 800-й.',
+    essay: year800Ru,
     imageAlt: 'Политическая реконструкция мира 750 года н. э. для шага 800',
   },
   900: {
     title: '900 н. э.',
     caption:
       'Расколотые халифаты, византийское оживление, эпоха пяти династий. Цвета — крупные названные государства, не каждое герцогство.',
+    essay: year900Ru,
     imageAlt: 'Реконструированная политическая карта мира на 900 год н. э.',
   },
   1000: {
     title: '1000 н. э. — ближайшая карта: 900',
     caption:
       'Нет свободного мирового листа на 1000 год в этом семействе атласа. Показываем реконструкцию 900 и прямо об этом говорим. Это не снимок тысячного года.',
+    essay: year1000Ru,
     imageAlt: 'Политическая реконструкция мира 900 года н. э. для шага 1000',
   },
   1100: {
     title: '1100 н. э.',
     caption:
       'Точный 1100 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1200 и не гравюра. Современные берега; схема / границы WIP.',
+    essay: year1100Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1100 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -434,6 +474,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1200 н. э.',
     caption:
       'Накануне монгольского взрыва: политическая реконструкция мира 1200 года, предоставленная основателем. Реконструкция, не кадастр.',
+    essay: year1200Ru,
     imageAlt: 'Политическая реконструкция мира 1200 года, предоставленная основателем',
     sourceShort: 'Реконструкция основателя',
     sourceOrg: 'Политическая реконструкция, предоставленная основателем',
@@ -443,6 +484,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1300 н. э.',
     caption:
       'Точный 1300 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1200 и не гравюра. Современные берега; схема / границы WIP.',
+    essay: year1300Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1300 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -561,30 +603,35 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '700 n.e.',
     caption:
       'Ekspansja Umajjadów, Tang i post-rzymski zachód. Światowa rekonstrukcja dużych państw — wciąż milcząca o większości organizmów rdzennych.',
+    essay: year700Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 700 n.e.',
   },
   800: {
     title: '800 n.e. — najbliższa mapa: 750',
     caption:
       'Brak arkusza światowego na 800 w tej samej płaskiej rodzinie atlasu. Rekonstrukcja FamilyPedia z 750 (Umajjadzi, Tang, zachodni Frankowie) to najbliższy arkusz w tym stylu. Oznaczona luka, nie wymyślony rok 800.',
+    essay: year800Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 750 n.e. użyta dla kroku 800',
   },
   900: {
     title: '900 n.e.',
     caption:
       'Rozbite kalifaty, bizantyjskie odbicie, Pięć Dynastii. Kolory to duże nazwane państwa, nie każde księstwo.',
+    essay: year900Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 900 n.e.',
   },
   1000: {
     title: '1000 n.e. — najbliższa mapa: 900',
     caption:
       'Brak wolnego arkusza światowego na rok 1000 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 900 i mówimy o tym wprost. To nie migawka roku tysięcznego.',
+    essay: year1000Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 900 n.e. użyta dla kroku 1000',
   },
   1100: {
     title: '1100 n.e.',
     caption:
       'Dokładny rok 1100, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1200 i nie rycina. Współczesne wybrzeża; schemat / granice WIP.',
+    essay: year1100Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1100 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -594,6 +641,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1200 n.e.',
     caption:
       'W przededniu wybuchu mongolskiego: dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200. Rekonstrukcja, nie kataster.',
+    essay: year1200Pl,
     imageAlt: 'Dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200',
     sourceShort: 'Rekonstrukcja założyciela',
     sourceOrg: 'Rekonstrukcja polityczna dostarczona przez założyciela',
@@ -603,6 +651,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1300 n.e.',
     caption:
       'Dokładny rok 1300, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1200 i nie rycina. Współczesne wybrzeża; schemat / granice WIP.',
+    essay: year1300Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1300 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -721,30 +770,35 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '700. m.ē.',
     caption:
       'Omeijādu ekspansija, Tan un pēcrimas rietumi. Lielo valstu pasaules rekonstrukcija — joprojām klusa par lielāko daļu pirmiedzīvotāju politiju.',
+    essay: year700Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 700. gadam m.ē.',
   },
   800: {
     title: '800. m.ē. — tuvākā karte: 750',
     caption:
       'Nav 800. gada pasaules lapas tajā pašā plakanajā atlanta saimē. FamilyPedia 750. gada rekonstrukcija (Omeijādi, Tan, franku rietumi) ir tuvākā tā paša stila lapa. Marķēts iztrūkums, ne izdomāts 800. gads.',
+    essay: year800Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 750. gada m.ē. 800. soļa vietā',
   },
   900: {
     title: '900. m.ē.',
     caption:
       'Sadrumstalotie kalifāti, bizantiešu atveseļošanās, Piecu dinastiju Ķīna. Krāsas ir lielas nosauktas valstis, ne katra hercogiste.',
+    essay: year900Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 900. gadam m.ē.',
   },
   1000: {
     title: '1000. m.ē. — tuvākā karte: 900',
     caption:
       'Nav brīvas 1000. gada pasaules lapas šajā atlanta saimē. Rādām 900. gada rekonstrukciju un to sakām. Tā nav tūkstošgades momentuzņēmums.',
+    essay: year1000Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 900. gada m.ē. 1000. soļa vietā',
   },
   1100: {
     title: '1100. m.ē.',
     caption:
       'Precīzs 1100. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1200. mācību karte un nav gravīra. Mūsdienu krasti; shēma / robežas WIP.',
+    essay: year1100Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1100. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -754,6 +808,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1200. m.ē.',
     caption:
       'Pirms mongoļu sprādziena: dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā. Rekonstrukcija, ne kadastrs.',
+    essay: year1200Lv,
     imageAlt: 'Dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā',
     sourceShort: 'Dibinātāja rekonstrukcija',
     sourceOrg: 'Dibinātāja piegādāta politiskā rekonstrukcija',
@@ -763,6 +818,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1300. m.ē.',
     caption:
       'Precīzs 1300. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1200. mācību karte un nav gravīra. Mūsdienu krasti; shēma / robežas WIP.',
+    essay: year1300Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1300. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
