@@ -807,7 +807,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200. m.ē.',
     caption:
-      'Pirms mongoļu sprādziena: dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā. Rekonstrukcija, ne kadastrs.',
+      'Gads 1200 — Inokentijs III virsotnē; Ceturtais krusta karš vēl sludināšanā; Temudžins jau savācis mongoļus; Krievzemē Vsevolods Lielā Ligzda.',
     essay: year1200Lv,
     imageAlt: 'Dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā',
     sourceShort: 'Dibinātāja rekonstrukcija',
