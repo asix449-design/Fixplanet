@@ -630,7 +630,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1100: {
     title: '1100 n.e.',
     caption:
-      'Dokładny rok 1100, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1200 i nie rycina. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1100 — Baldwina koronują w Betlejem; w Anglii strzała zabija Wilhelma Rudego; na Rusi zjazd w Uwieticzach; w Chinach na tron wstępuje Huizong.',
     essay: year1100Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1100 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
