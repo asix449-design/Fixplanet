@@ -1369,7 +1369,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
     },
-    1400: emptyPackCCopy('pl', 1400),
+    1400: {
+      title: '1400 n.e. — rekonstrukcja schematyczna',
+      caption:
+        'Do 1400 n.e. pas **islamu** szerszy: mamelucki Egipt–Syria–Lewant, Maghreb–Libia, strefa Timura (Azja Środkowa / Iran / Bliski Wschód), Anatolia już w większości islamska (Osmanowie), kieszeń Granady nadal na miejscu. Chrześcijańska Europa pełniejsza; Bałkany demograficznie wciąż w większości chrześcijańskie. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach — silne lokalne jądra: aztecka Mezoameryka i Andy inkaskie, plus inne strefy rdzenne.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 1400 n.e.: szerszy pas islamu, osmańska Anatolia, kieszeń Granady, jądra Azteków i Inków',
+      honestyPills: packCHonesty.pl,
+      continentBlocks: [
+        {
+          heading: 'Europa / Morze Śródziemne',
+          text: 'Pełniejszy chrześcijański Zachód, centrum, Skandynawia, Bałtyk i krawędź ruska; Bałkany demograficznie wciąż w większości chrześcijańskie. Iberia chrześcijańska poza kieszenią Granady. Anatolia w większości islamska (Osmanowie) — nie bizantyńska plama chrześcijańska. Plamy żydowskie.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
+          text: 'Islamski Maghreb–Libia–Egipt–Lewant–Arabia plus plama strefy Timura pełniejsza ku Iranowi i Azji Środkowej; Anatolia w większości islamska (Osmanowie). Kieszeń Granady w Iberii pozostaje. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Hinduistyczne Indie; korytarze buddyjskie jak w 1300 (Tybet / Azja Płd.-Wsch. / wniknięcie w Chiny); chiński pas cesarski / ludowy (arkusz ery Ming). Północny step i obrzeża wyspiarskie — lokalny zmyw.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Maghreb–Libia–Egipt islamskie; krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; Sahel i południe — afrykański zmyw tradycyjny.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Silne tradycje lokalne — aztecka Mezoameryka i andyjskie jądra Inków, plus Amazonia, równiny Ameryki Północnej i stożek południowy. Antarktyda / Oceania nie naniesione.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+    },
     1500: emptyPackCCopy('pl', 1500),
   },
   lv: {
@@ -1784,7 +1815,38 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
     },
-    1400: emptyPackCCopy('lv', 1400),
+    1400: {
+      title: '1400. g. m.ē. — shēmatiska rekonstrukcija',
+      caption:
+        'Līdz 1400. g. m.ē. **islāma** josla platāka: mameluku Ēģipte–Sīrija–Levanta, Magriba–Lībija, Timura zona (Centrālāzija / Irāna / Tuvie Austrumi), Anatolija jau pārsvarā islāmiska (osmaņi), Granadas kabata vēl vietā. Kristīgā Eiropa pilnāka; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā — spēcīgi vietējie kodoli: acteku Mezoamerika un Inku Andi, plus citas indīģēnās zonas.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 1400. gadam m.ē.: platāka islāma josla, osmaņu Anatolija, Granadas kabata, acteku un Inku kodoli',
+      honestyPills: packCHonesty.lv,
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Pilnāks kristīgais Rietums, centrs, Skandināvija, Baltija un Krievzemes mala; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Ibērija kristīga, izņemot Granadas kabatu. Anatolija pārsvarā islāmiska (osmaņi) — nav Bizantijas kristīgā aizpilde. Jūdu plankumi.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
+          text: 'Islāma Magriba–Lībija–Ēģipte–Levanta–Arābija plus Timura zonas aizpilde pilnāka uz Irānu un Centrālāziju; Anatolija pārsvarā islāmiska (osmaņi). Granadas kabata Ibērijā paliek. Tikai plāns zoroastrisma atlikuma šrafējums.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu Indija; budistu koridori kā 1300. gadā (Tibeta / DA Āzija / ieplūde Ķīnā); ķīniešu imperiālā / tautas josla (Minu laikmeta plāksne). Ziemeļu stepe un salu malas — vietējā josla.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Magriba–Lībija–Ēģipte islāmiskas; sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; Sahēla un dienvidi — āfrikāņu tradicionālā josla.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Spēcīgas vietējās tradīcijas — acteku Mezoamerika un Inku Andu kodoli, plus Amazone, Ziemeļamerikas līdzenumi un dienvidu konuss. Antarktīda / Okeānija nav kartēta.',
+        },
+      ],
+      sources:
+        '1. Religion fills — Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay — GPL-3.0 (Sources / License only). 3. Land mask — Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+    },
     1500: emptyPackCCopy('lv', 1500),
   },
 };
