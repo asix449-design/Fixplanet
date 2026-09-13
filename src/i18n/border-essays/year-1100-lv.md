@@ -25,7 +25,7 @@ Normāņi nesen (1066) ieņēma Angliju un sen sēž Dienviditālijā un Sicīli
 ### Krievzeme
 Kijeva vēl «pilsētu māte», bet galds vairs nenozīmē to, kas pie Jaroslava. Lielkņazs — **Svjatopolks II Izjaslavičs**. Blakus stiprāks un gudrāks — **Vladimirs Monomahs**.
 
-1097. gadā ļubečā kņazi vienojās: katrs tur savu tēviju, neej pie brāļa. Uzreiz pārkāpa: padarīja aklu Vasiļko no Terebovļas. Sākās karš. 1100. gada augustā sapulce Uvetičos. Miers. Davidu Igoreviču, galveno nemiernieku, tiesā un pārvieto uz mazākām pilsētām. Uz papīra atkal vienība pret polovciem. Faktiski dalījumi nostiprinās. «Feodālā» Krievzeme — tieši šādas sapulces: zvērēja, aizbrauca, pēc gada nazis mugurā.
+1097. gadā Ļubečā kņazi vienojās: katrs tur savu tēviju, neej pie brāļa. Uzreiz pārkāpa: padarīja aklu Vasiļko no Terebovļas. Sākās karš. 1100. gada augustā sapulce Uvetičos. Miers. Davidu Igoreviču, galveno nemiernieku, tiesā un pārvieto uz mazākām pilsētām. Uz papīra atkal vienība pret polovciem. Faktiski dalījumi nostiprinās. «Feodālā» Krievzeme — tieši šādas sapulces: zvērēja, aizbrauca, pēc gada nazis mugurā.
 
 Polovci nu prec meitas ar kņaziem, nu dedzina robežas. Pečeņegus jau sakāvuši. Stepe nav aizgājusi.
 
