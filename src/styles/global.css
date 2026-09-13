@@ -2828,13 +2828,6 @@ a.map-card:hover {
   font-size: 0.88rem;
 }
 
-.religion-legend-list code {
-  display: inline-block;
-  margin-right: 0.35rem;
-  color: var(--lime);
-  font-size: 0.74rem;
-}
-
 .religion-swatch {
   width: 0.9rem;
   height: 0.9rem;

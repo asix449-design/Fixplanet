@@ -47,11 +47,8 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
           {
             RELIGION_LEGEND_IDS.map((id) => (
               <li>
-                <span class="religion-swatch" style={`background:${RELIGION_LEGEND_COLORS[id]}`}></span>
-                <span>
-                  <code>{id}</code>
-                  {legendLabels[id]}
-                </span>
+                <span class="religion-swatch" style={`background:${RELIGION_LEGEND_COLORS[id]}`} aria-hidden="true"></span>
+                <span>{legendLabels[id]}</span>
               </li>
             ))
           }
