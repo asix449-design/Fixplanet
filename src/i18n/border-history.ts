@@ -163,7 +163,7 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 CE — start of the Common Era',
     caption:
-      'Rome in the Mediterranean, Han China in East Asia, Parthia between them. The Americas and much of Oceania are not drawn as states. This is a reconstruction of known polities, not a survey of every people.',
+      'Year 1 CE — for people then, just another year from Rome\'s founding and the year of Emperor Ping; Augustus holds the Mediterranean, Han holds the Middle Kingdom; between them, silk and Parthia.',
     imageAlt: 'Reconstructed world political map for 1 CE, public-domain Wikimedia sheet',
   },
   100: {
@@ -316,7 +316,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 н. э. — начало нашей эры',
     caption:
-      'Рим у Средиземного моря, Хань в Восточной Азии, Парфия между ними. Америка и большая часть Океании не нарисованы как государства. Это реконструкция известных политий, не перепись всех народов.',
+      'Год 1 н. э. — для современников просто год от основания Рима и год императора Пина; Август держит Средиземноморье, Хань — Поднебесную; между ними шёлк и Парфия.',
     imageAlt: 'Реконструированная политическая карта мира на 1 год н. э.',
   },
   100: {
@@ -469,7 +469,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 n.e. — początek naszej ery',
     caption:
-      'Rzym nad Morzem Śródziemnym, Han we wschodniej Azji, Partia między nimi. Ameryki i większość Oceanii nie są narysowane jako państwa. To rekonstrukcja znanych organizmów, nie spis wszystkich ludów.',
+      'Rok 1 n.e. — dla ówczesnych po prostu rok od założenia Rzymu i rok cesarza Pinga; August trzyma Morze Śródziemne, Han — Państwo Środka; między nimi jedwab i Partia.',
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 1 n.e.',
   },
   100: {
@@ -622,7 +622,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1: {
     title: '1. m.ē. — mūsu ēras sākums',
     caption:
-      'Roma pie Vidusjūras, Haņu Ķīna Austrumāzijā, Partija pa vidu. Amerika un lielā daļa Okeānijas nav zīmētas kā valstis. Tā ir zināmo politiju rekonstrukcija, ne visu tautu uzskaite.',
+      '1. gads m.ē. — laikabiedriem vienkārši gads no Romas dibināšanas un imperatora Pina gads; Augusts tur Vidusjūru, Haņi — Debesu valstību; starp tiem zīds un Partija.',
     imageAlt: 'Rekonstruēta pasaules politiskā karte 1. gadam m.ē.',
   },
   100: {
