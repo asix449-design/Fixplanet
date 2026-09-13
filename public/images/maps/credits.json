@@ -277,13 +277,22 @@
     "note": "History of borders, year 1200 only. Founder JPEG, used byte-for-byte."
   },
   {
+    "file": "borders/y1400.png",
+    "title": "World in 1400 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1400.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1400.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1400. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. The source still names China Great Khanate (Yuan-era blob); Ming from 1368 is not invented by splitting the polygon. Not © Fix Planet geometry."
+  },
+  {
     "file": "borders/y1500.png",
-    "title": "Main countries of the world in 1500",
-    "source": "Wikimedia Commons, Babelia",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1500.png",
-    "license": "CC BY 4.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year 1500. Also used as the labeled nearest sheet for 1400."
+    "title": "World in 1500 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1500.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1500.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1500. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. No Spain after 1492 — Iberian footholds are missing and not drawn. Not world_1492. Not © Fix Planet geometry."
   },
   {
     "file": "borders/y1648.png",

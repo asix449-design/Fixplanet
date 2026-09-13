@@ -30,7 +30,11 @@ export {
   getRelatedMaps,
   mapCategoryKeys,
 } from './maps';
-export { getBorderHistoryFrames, getBorderHistoryPage } from './border-history';
+export {
+  BORDER_CONTINENT_ORDER,
+  getBorderHistoryFrames,
+  getBorderHistoryPage,
+} from './border-history';
 export { getReligionHistoryFrames, getReligionHistoryPage } from './religion-history';
 export {
   getInnovationBySlug,

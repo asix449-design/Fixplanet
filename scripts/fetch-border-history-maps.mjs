@@ -3,9 +3,10 @@
  * Run: node scripts/fetch-border-history-maps.mjs
  * Then restyle grey/white/OER sheets: python3 scripts/unify-border-history-style.py
  *
- * Years 1100, 1300, 1700, 1800, and 1900 are Fix Planet renders of aourednik
- * historical-basemaps GeoJSON (GPL-3.0). Do not overwrite those PNGs
- * from Commons thumbs. Rebuild with: python3 scripts/render-aourednik-borders.py
+ * Years 1100, 1300, 1400, 1500, 1700, 1800, and 1900 are Fix Planet renders
+ * of aourednik historical-basemaps GeoJSON (GPL-3.0). Do not overwrite those
+ * PNGs from Commons thumbs. Rebuild with:
+ * python3 scripts/render-aourednik-borders.py
  */
 import { mkdir } from 'node:fs/promises';
 import { createWriteStream } from 'node:fs';
@@ -27,7 +28,6 @@ const files = [
   { file: 'y0750.png', commons: 'World_in_750_CE.png', width: 1600 },
   { file: 'y0900.png', commons: 'World_in_900_CE.png', width: 1600 },
   { file: 'y1200.jpg', commons: 'World_map_1200.jpg', width: 1600 },
-  { file: 'y1500.png', commons: 'World_map_1500.png', width: 1600 },
   { file: 'y1648.png', commons: 'World_map_1648.png', width: 1600 },
 ];
 

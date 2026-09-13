@@ -25,12 +25,27 @@ export type BorderHistoryPage = {
   catalogCta: string;
   catalogAlt: string;
   heroAlt: string;
+  continents: Record<BorderContinent, string>;
 };
+
+export type BorderContinent = 'africa' | 'americas' | 'asia' | 'europe' | 'oceania';
+
+export type BorderEraByContinent = Partial<Record<BorderContinent, string>>;
+
+export const BORDER_CONTINENT_ORDER: BorderContinent[] = [
+  'africa',
+  'americas',
+  'asia',
+  'europe',
+  'oceania',
+];
 
 export type BorderFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
+  /** Short per-continent notes. Omit a key when there is nothing honest to say. */
+  eraByContinent?: BorderEraByContinent;
   sourceShort?: string;
   sourceOrg?: string;
   license?: string;
@@ -65,6 +80,13 @@ const pageEn: BorderHistoryPage = {
     'Historical political world map used as the catalog card for the History of borders timeline',
   heroAlt:
     'Cloud-free NASA Blue Marble: natural land colors and oceans, used as a physical backdrop, not a political map',
+  continents: {
+    africa: 'Africa',
+    americas: 'Americas',
+    asia: 'Asia',
+    europe: 'Europe',
+    oceania: 'Oceania',
+  },
 };
 
 const pageRu: BorderHistoryPage = {
@@ -95,6 +117,13 @@ const pageRu: BorderHistoryPage = {
   catalogAlt: 'Историческая политическая карта мира — карточка ленты «История границ»',
   heroAlt:
     'Безоблачный NASA Blue Marble: естественные цвета суши и океанов, физический фон, не политическая карта',
+  continents: {
+    africa: 'Африка',
+    americas: 'Америка',
+    asia: 'Азия',
+    europe: 'Европа',
+    oceania: 'Океания',
+  },
 };
 
 const pagePl: BorderHistoryPage = {
@@ -125,6 +154,13 @@ const pagePl: BorderHistoryPage = {
   catalogAlt: 'Historyczna mapa polityczna świata — karta osi czasu Historii granic',
   heroAlt:
     'Bezachmurny NASA Blue Marble: naturalne barwy lądów i oceanów, tło fizyczne, nie mapa polityczna',
+  continents: {
+    africa: 'Afryka',
+    americas: 'Ameryki',
+    asia: 'Azja',
+    europe: 'Europa',
+    oceania: 'Oceania',
+  },
 };
 
 const pageLv: BorderHistoryPage = {
@@ -155,6 +191,13 @@ const pageLv: BorderHistoryPage = {
   catalogAlt: 'Vēsturiska politiskā pasaules karte — Robežu vēstures laika līnijas kartīte',
   heroAlt:
     'Bez mākoņiem NASA Blue Marble: dabiskas sauszemes un okeānu krāsas, fizisks fons, ne politiskā karte',
+  continents: {
+    africa: 'Āfrika',
+    americas: 'Amerika',
+    asia: 'Āzija',
+    europe: 'Eiropa',
+    oceania: 'Okeānija',
+  },
 };
 
 const captionsEn: Record<number, BorderFrameCopy> = {
@@ -252,16 +295,42 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400 CE — nearest map: 1500',
+    title: '1400 CE',
     caption:
-      'No free 1400 world political sheet in this set. We show the 1500 reconstruction and mark the century as a gap. Timur, Ming, and late medieval Europe are not invented here.',
-    imageAlt: '1500 world political reconstruction used as the nearest sheet for 1400',
+      'Exact year 1400, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Modern coastlines; schematic / WIP borders. The source still fills China as “Great Khanate,” a Yuan-era blob — Ming has ruled since 1368, and Mongols after that are Northern Yuan on the steppe; we keep the geometry and do not relabel the fill “Ming.”',
+    imageAlt: 'Schematic world political reconstruction for 1400 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Mali is the large West African fill. The Mamluk Sultanate holds Egypt and the Levantine coast on this sheet. Most of the continent is unnamed as a state.',
+      americas:
+        'Not drawn as states. A few Andean chiefdoms and Chimú-scale fills sit in the source; we do not invent Aztec or Inca outlines for 1400.',
+      asia:
+        'Ming has ruled since 1368 (Hongwu d. 1398; Jingnan 1399–1402; Yongle from 1402). The plate still paints a Great Khanate — aourednik’s Yuan-era blob, not Ming; we do not split it. Timur is alive (d. 1405) after the 1398 sack of Delhi. Ottomans under Bayezid hold Anatolia.',
+      europe:
+        'Kalmar Union in the north; Holy Roman Empire in the centre; Castile, France, Poland-Lithuania, Novgorod, and a Byzantine rump. Ottomans under Bayezid are already in the Balkans. Lines are schematic claims, not treaties.',
+    },
   },
   1500: {
     title: '1500 CE',
     caption:
-      'Just after 1492 contact: Iberian footholds, a still-sovereign Americas interior, Ming China, and Ottoman expansion. Main countries only — not every kingdom.',
-    imageAlt: 'World political reconstruction of main countries in 1500',
+      'Exact year 1500, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Modern coastlines; schematic / WIP borders. The sheet has no Spain after 1492 — Iberian footholds existed in history but are missing here, and we do not draw them.',
+    imageAlt: 'Schematic world political reconstruction for 1500 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Songhai is the large West African state. Mamluks still hold Egypt on this sheet. Most of the continent is unnamed as a state.',
+      americas:
+        'Aztec and Inca interiors are still sovereign. Iberian footholds existed in history after 1492 but are missing on this sheet; we do not paint colonies over those interiors.',
+      asia:
+        'Ming is the named East Asian empire. Ottomans expand in Anatolia and the Levant. Timurid Emirates, Delhi, Chagatai, and Tibet remain as source fills. We do not replace this layer with world_1492.',
+      europe:
+        'Muscovy is rising. The Holy Roman Empire, Kalmar Union, Poland-Lithuania, Portugal, and England are on the sheet. There is no Spain after 1492 — we do not draw it. Ottoman Europe is the same source polygon, not a second invented state.',
+    },
   },
   1600: {
     title: '1600 CE — nearest map: 1648',
@@ -405,16 +474,42 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400 н. э. — ближайшая карта: 1500',
+    title: '1400 н. э.',
     caption:
-      'В этом наборе нет свободного мирового листа на 1400 год. Показываем реконструкцию 1500 и помечаем век как пробел. Тимур, Мин и позднесредневековая Европа здесь не выдуманы.',
-    imageAlt: 'Реконструкция мира 1500 года как ближайший лист для 1400',
+      'Точный 1400 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Современные берега; схема / границы WIP. Источник по-прежнему заливает Китай как «Great Khanate» — юаньский контур: Мин правит с 1368 года, монголы после этого — Северная Юань в степи; геометрию оставляем и не переименовываем заливку в «Мин».',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1400 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Мали — крупная западноафриканская заливка. Мамлюкский султанат на этом листе держит Египет и левантийское побережье. Большая часть континента не названа как государство.',
+      americas:
+        'Не нарисованы как государства. В источнике есть несколько андских вождеств и контуры масштаба Чиму; ацтекских и инкских границ на 1400 год мы не выдумываем.',
+      asia:
+        'Мин правит с 1368 года (Хунъу ум. 1398; война Цзиннань 1399–1402; Юнлэ с 1402). Лист всё ещё красит Великий каганат — юаньский контур aourednik, не Мин; мы его не режем. Тимур жив (ум. 1405) после разграбления Дели в 1398-м. Османы при Баязиде держат Анатолию.',
+      europe:
+        'Кальмарская уния на севере; Священная Римская империя в центре; Кастилия, Франция, Польша-Литва, Новгород и византийский осколок. Османы при Баязиде уже на Балканах. Линии — схематические притязания, не договоры.',
+    },
   },
   1500: {
     title: '1500 н. э.',
     caption:
-      'Сразу после контакта 1492 года: иберийские плацдармы, ещё суверенная внутренность Америк, Мин, османская экспансия. Только главные страны.',
-    imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
+      'Точный 1500 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Современные берега; схема / границы WIP. На листе нет Испании после 1492 года — иберийские плацдармы в истории уже есть, но на этом слое их нет, и мы их не дорисовываем.',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1500 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Сонгай — крупное западноафриканское государство. Мамлюки на этом листе ещё держат Египет. Большая часть континента не названа как государство.',
+      americas:
+        'Внутренность ацтеков и инков ещё суверенна. Иберийские плацдармы после 1492 года в истории есть, но на этом листе их нет; колонии поверх этих внутренностей мы не красим.',
+      asia:
+        'Мин — названная восточноазиатская империя. Османы расширяются в Анатолии и Леванте. Тимуридские эмираты, Дели, Чагатай и Тибет остаются заливками источника. Слой world_1492 мы не подставляем.',
+      europe:
+        'Московия поднимается. На листе — Священная Римская империя, Кальмарская уния, Польша-Литва, Португалия и Англия. Испании после 1492 года нет — мы её не рисуем. Османская Европа — тот же исходный полигон, не второе выдуманное государство.',
+    },
   },
   1600: {
     title: '1600 н. э. — ближайшая карта: 1648',
@@ -558,16 +653,42 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400 n.e. — najbliższa mapa: 1500',
+    title: '1400 n.e.',
     caption:
-      'W tym zestawie nie ma wolnego światowego arkusza na 1400. Pokazujemy rekonstrukcję 1500 i oznaczamy stulecie jako lukę. Timur, Ming i późnośredniowieczna Europa nie są tu wymyślone.',
-    imageAlt: 'Rekonstrukcja świata z 1500 jako najbliższy arkusz dla 1400',
+      'Dokładny rok 1400, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). Współczesne wybrzeża; schemat / granice WIP. Źródło nadal wypełnia Chiny jako „Great Khanate”, blob z epoki Yuan — Ming rządzi od 1368, a Mongołowie po tym to Północne Yuan na stepie; zachowujemy geometrię i nie przemianowujemy wypełnienia na „Ming”.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1400 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Mali to duże wypełnienie zachodnioafrykańskie. Sułtanat mameluków trzyma na tym arkuszu Egipt i wybrzeże Lewantu. Większość kontynentu nie jest nazwana jako państwo.',
+      americas:
+        'Nie narysowane jako państwa. W źródle są nieliczne wodzostwa andyjskie i wypełnienia skali Chimú; nie wymyślamy konturów Azteków ani Inków na rok 1400.',
+      asia:
+        'Ming rządzi od 1368 (Hongwu zm. 1398; wojna Jingnan 1399–1402; Yongle od 1402). Arkusz nadal maluje Great Khanate — yuanowski blob aourednika, nie Ming; nie dzielimy go. Timur żyje (zm. 1405) po złupieniu Delhi w 1398. Osmanowie pod Bajazydem trzymają Anatolię.',
+      europe:
+        'Unia kalmarska na północy; Święte Cesarstwo Rzymskie w środku; Kastylia, Francja, Polska-Litwa, Nowogród i resztka Bizancjum. Osmanowie pod Bajazydem są już na Bałkanach. Linie to schematyczne roszczenia, nie traktaty.',
+    },
   },
   1500: {
     title: '1500 n.e.',
     caption:
-      'Tuż po kontakcie 1492: przyczółki iberyjskie, wciąż suwerenne wnętrze Ameryk, Ming, ekspansja osmańska. Tylko główne kraje.',
-    imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
+      'Dokładny rok 1500, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). Współczesne wybrzeża; schemat / granice WIP. Na arkuszu nie ma Hiszpanii po 1492 — przyczółki iberyjskie istniały w historii, ale nie ma ich na tej warstwie i nie dorysowujemy ich.',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1500 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Songhaj to duże państwo zachodnioafrykańskie. Mamelucy na tym arkuszu wciąż trzymają Egipt. Większość kontynentu nie jest nazwana jako państwo.',
+      americas:
+        'Wnętrza Azteków i Inków są wciąż suwerenne. Przyczółki iberyjskie po 1492 istniały w historii, ale nie ma ich na tym arkuszu; nie malujemy kolonii na tych wnętrzach.',
+      asia:
+        'Ming to nazwane imperium wschodnioazjatyckie. Osmanowie rozszerzają się w Anatolii i Lewancie. Emiraty Timurydów, Delhi, Czagataj i Tybet zostają wypełnieniami źródła. Nie podstawiamy warstwy world_1492.',
+      europe:
+        'Moskwa rośnie. Na arkuszu są Święte Cesarstwo Rzymskie, unia kalmarska, Polska-Litwa, Portugalia i Anglia. Po 1492 nie ma Hiszpanii — nie rysujemy jej. Osmańska Europa to ten sam wielokąt źródła, nie drugie wymyślone państwo.',
+    },
   },
   1600: {
     title: '1600 n.e. — najbliższa mapa: 1648',
@@ -711,16 +832,42 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400. m.ē. — tuvākā karte: 1500',
+    title: '1400. m.ē.',
     caption:
-      'Šajā komplektā nav brīvas 1400. gada pasaules lapas. Rādām 1500. rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu. Timurs, Min un vēlie viduslaiki šeit nav izdomāti.',
-    imageAlt: '1500. gada pasaules rekonstrukcija kā tuvākā lapa 1400. gadam',
+      'Precīzs 1400. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Mūsdienu krasti; shēma / robežas WIP. Avots joprojām aizpilda Ķīnu kā „Great Khanate” — Jiaņa laikmeta kontūru: Min valda kopš 1368., un mongoļi pēc tam ir Ziemeļu Jiaņa stepē; ģeometriju atstājam un nepārdēvējam aizpildījumu par „Min”.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1400. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Mali ir lielais Rietumāfrikas aizpildījums. Mamluku sultanāts šajā lapā tur Ēģipti un Levantes piekrasti. Lielākā daļa kontinenta nav nosaukta kā valsts.',
+      americas:
+        'Nav zīmētas kā valstis. Avotā ir daži Andu virsaišu novadi un Čimu mēroga aizpildījumi; acteku un inku kontūras 1400. gadam mēs neizdomājam.',
+      asia:
+        'Min valda kopš 1368. (Hunvu miris 1398.; Dzinnan karš 1399.–1402.; Junle no 1402.). Lapa joprojām krāso Great Khanate — aourednik Jiaņa laikmeta kontūru, ne Min; mēs to nesadalām. Timurs ir dzīvs (miris 1405.) pēc Deli izlaupīšanas 1398. Osmaņi zem Bajazida tur Anatoliju.',
+      europe:
+        'Kalmāras ūnija ziemeļos; Svētā Romas impērija vidū; Kastīlija, Francija, Polija-Lietuva, Novgoroda un bizantiešu atlieka. Osmaņi zem Bajazida jau ir Balkānos. Līnijas ir shēmātiskas pretenzijas, ne līgumi.',
+    },
   },
   1500: {
     title: '1500. m.ē.',
     caption:
-      'Tūlīt pēc 1492. kontakta: ibēriešu placdarmi, joprojām suverēna Amerikas iekšiene, Min, osmaņu ekspansija. Tikai galvenās valstis.',
-    imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
+      'Precīzs 1500. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Mūsdienu krasti; shēma / robežas WIP. Uz lapas nav Spānijas pēc 1492. — ibēriešu placdarmi vēsturē jau ir, bet šajā slānī to nav, un mēs tos nepiezīmējam.',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1500. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
+    eraByContinent: {
+      africa:
+        'Songaja ir lielā Rietumāfrikas valsts. Mamluki šajā lapā joprojām tur Ēģipti. Lielākā daļa kontinenta nav nosaukta kā valsts.',
+      americas:
+        'Acteku un inku iekšiene joprojām ir suverēna. Ibēriešu placdarmi pēc 1492. vēsturē pastāvēja, bet šajā lapā to nav; mēs nekrašojam kolonijas pāri šīm iekšienēm.',
+      asia:
+        'Min ir nosauktā Austrumāzijas impērija. Osmaņi paplašinās Anatolijā un Levantē. Timuru emirāti, Deli, Čagatajs un Tibeta paliek avota aizpildījumi. Mēs neaizstājam šo slāni ar world_1492.',
+      europe:
+        'Maskavija ceļas. Uz lapas ir Svētā Romas impērija, Kalmāras ūnija, Polija-Lietuva, Portugāle un Anglija. Pēc 1492. nav Spānijas — mēs to nezīmējam. Osmaņu Eiropa ir tas pats avota daudzstūris, ne otra izdomāta valsts.',
+    },
   },
   1600: {
     title: '1600. m.ē. — tuvākā karte: 1648',
