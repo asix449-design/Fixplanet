@@ -71,6 +71,54 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Our World in Data horoplēts par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
   },
+  'organized-crime-index': {
+    title: 'Globālais organizētās noziedzības indekss',
+    hook: 'Valstu vērtējumi noziedzīgiem tirgiem, aktoriem un noturībai — ekspertu siltumkarte organizētajai noziedzībai, ne otrs tīšu slepkavību slānis.',
+    description:
+      'Globālā iniciatīva pret transnacionālo organizēto noziedzību (GI-TOC) vērtē 193 ANO dalībvalstis pēc noziedzības — tirgiem un aktoriem — un pēc noturības. Publiskais rīks ir ocindex.net. 2025. gada izdevums ir trešais; novērtējuma gads ir 2024. Šī kartīte ved uz šo ekspertu kompozītu, ne policijas reģistrētu rādītāju un ne otru UNODC slepkavību karti.',
+    whyOnShelf:
+      'Organizētās noziedzības noziedzība un noturība ir cits objekts nekā tīšu slepkavību rādītāji. Nesalieciet šo indeksu slepkavību kartītē un nelasiet tumšu valsti kā augstu slepkavību rādītāju.',
+    howToRead:
+      'Valsts vērtējums ir ekspertu kompozīts, ne policijas reģistrēts rādītājs un ne UNODC slepkavību skaitlis. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē ocindex.net.',
+    caveats:
+      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Augsts tirgus vērtējums nav augsts slepkavību rādītājs.',
+    licenseNote:
+      'Foto: Philippe Alès, konteinerkuģis Havrā (CC BY-SA 3.0). Tā nav GI-TOC indeksa siltumkarte — tas slānis ir ocindex.net.',
+    imageAlt:
+      'Konteinerkuģis un celtņi Havrā. Šis ir foto, ne GI-TOC Globālā organizētās noziedzības indeksa siltumkarte.',
+  },
+  'corruption-perceptions-index': {
+    title: 'Korupcijas uztveres indekss',
+    hook: 'Uztvertā publiskā sektora korupcija (0–100) no ekspertu un uzņēmēju aptaujām — pārvaldības risks, ne ielu noziedzības apjoms un ne slepkavības.',
+    description:
+      'Transparency International Korupcijas uztveres indekss (CPI) 2025 kārto valstis pēc uztvertās publiskā sektora korupcijas. Skala no 0 (ļoti korumpēts) līdz 100 (ļoti tīrs) apvieno ekspertu un uzņēmēju aptaujas. Our World in Data publicē rindu kā atklātu karti. Tas ir pārvaldības riska kompozīts, ne kukuļlietu skaits un ne vardarbības rādītājs.',
+    whyOnShelf:
+      'Uztvertā publiskā sektora korupcija ir cits sabiedriskā kaitējuma signāls nekā UNODC tīšās slepkavības. Nekad nesakausējiet šo kartīti ar slepkavību slāni.',
+    howToRead:
+      'Vērtējums ir uztveres kompozīts, ne notiesājošu spriedumu skaits un ne ielu noziedzība. Gada etiķete ir CPI izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena–divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir OWID.',
+    caveats:
+      'Trūkstoša valsts nav «tīra». Mājsaimniecību kukuļu pieredze ir cita rinda. Nelasiet sīktēlu kā «viskorumpētāko» sarakstu. Tas nav slepkavību horoplēts.',
+    licenseNote:
+      'Mēs izvietojam apgrieztu Wikimedia Commons CPI 2025 valstu horoplētu (Cnscrptr un ConnerMiner, CC BY-SA 4.0) pēc Transparency International CPI 2025 datiem. Our World in Data publicē CPI kā atklātu karti (CC BY). Izdevums ir transparency.org/en/cpi/2025.',
+    imageAlt:
+      'Pasaules horoplēts pēc Korupcijas uztveres indeksa 2025: vēsāks zaļš tur, kur uztvertā korupcija ir zemāka, siltāks sarkans tur, kur augstāka — ne slepkavību karte',
+  },
+  'trafficking-in-persons': {
+    title: 'Cilvēku tirdzniecība',
+    hook: 'Konstatētie cilvēku tirdzniecības upuri un modeļi no UNODC Globālā ziņojuma (GLOTIP) — izmantošana un piespiešana, ne slepkavību rādītājs un ne vien GI-TOC tirgu kompozīts.',
+    description:
+      'UNODC Globālais ziņojums par cilvēku tirdzniecību (GLOTIP) 2024 ir astotais izdevums saskaņā ar ANO Konvencijas pret transnacionālo organizēto noziedzību Protokolu par cilvēku tirdzniecību un 2010. gada Globālo rīcības plānu. Tas ziņo par konstatētajiem upuriem, izmantošanas formām un modeļiem. Šī kartīte ved uz šo konstatēšanas pārskatu, ne uz pilnu cilvēku tirdzniecības tautas skaitīšanu.',
+    whyOnShelf:
+      'Cilvēku tirdzniecība ir atsevišķa ICCS nodarījumu saime. Tā papildina OC indeksa cilvēku tirdzniecības tirgus vērtējumu ar UNODC statistiku par konstatētajiem upuriem. Tas nav slepkavību rādītājs un nav World Drug Report plūsmu karte.',
+    howToRead:
+      'Skaitļi ir konstatētie upuri — pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Izmantošanas formas (seksuāla izmantošana, piespiedu darbs un citas) nav slepkavību rādītājs. Tabulas ir GLOTIP un UNODC datu portālā.',
+    caveats:
+      'Konstatēšana nav tautas skaitīšana. Pārrobežu plūsmas ziņojumā ir konstatēti modeļi, ne pilns maršrutu inventārs.',
+    licenseNote:
+      'Foto: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Kristus Pestītājs izgaismots zilā pret cilvēku tirdzniecību, 2014. gada 28. jūlijs. Tā nav UNODC GLOTIP figūra.',
+    imageAlt:
+      'Kristus Pestītājs Riodežaneiro, izgaismots zilā pret cilvēku tirdzniecību. Šis ir foto, ne UNODC GLOTIP ziņojuma figūra.',
+  },
   'air-quality-pm25': {
     title: 'Sīko daļiņu gaisa piesārņojums (PM2.5)',
     hook: 'Ārtelpas sīkās daļiņas, kas kaitē plaušām un sirdij — no satelītiem, modeļiem un stacijām, ne „pēc smaržas”.',

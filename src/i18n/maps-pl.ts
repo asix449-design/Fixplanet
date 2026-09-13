@@ -71,6 +71,54 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Choropleth Our World in Data wskaźników zabójstw: żółto-pomarańczowy ląd, ciemniejsza czerwień w części Ameryki Łacińskiej i południowej Afryki',
   },
+  'organized-crime-index': {
+    title: 'Globalny indeks przestępczości zorganizowanej',
+    hook: 'Oceny krajów dla rynków przestępczych, aktorów i odporności — ekspercka mapa cieplna przestępczości zorganizowanej, nie druga warstwa umyślnych zabójstw.',
+    description:
+      'Global Initiative against Transnational Organized Crime (GI-TOC) ocenia 193 państwa członkowskie ONZ pod względem przestępczości — rynków i aktorów — oraz odporności. Publiczne narzędzie to ocindex.net. Edycja 2025 jest trzecia; rok oceny to 2024. Ta karta prowadzi do tego eksperckiego kompozytu, nie do policyjnego wskaźnika i nie do drugiej mapy zabójstw UNODC.',
+    whyOnShelf:
+      'Przestępczość zorganizowana i odporność to inny obiekt niż wskaźniki umyślnych zabójstw. Nie włączajcie tego indeksu do karty zabójstw i nie czytajcie ciemnego kraju jako wysokiego wskaźnika zabójstw.',
+    howToRead:
+      'Wynik kraju to kompozyt ekspercki, nie wskaźnik policyjny i nie liczba zabójstw UNODC. Rynki, aktorzy i odporność to osobne filary. Aktualną warstwę otwórzcie na oficjalnej mapie cieplnej ocindex.net.',
+    caveats:
+      'To ocena ekspercka, nie spis przestępstw. Definicje i gęstość dowodów się różnią. Wysoki wynik rynku to nie wysoki wskaźnik zabójstw.',
+    licenseNote:
+      'Zdjęcie: Philippe Alès, kontenerowiec w Hawrze (CC BY-SA 3.0). To nie mapa cieplna indeksu GI-TOC — ta warstwa jest na ocindex.net.',
+    imageAlt:
+      'Kontenerowiec i suwnice w Hawrze. To zdjęcie, nie mapa cieplna Globalnego indeksu przestępczości zorganizowanej GI-TOC.',
+  },
+  'corruption-perceptions-index': {
+    title: 'Indeks percepcji korupcji',
+    hook: 'Postrzegana korupcja w sektorze publicznym (0–100) z ankiet ekspertów i biznesu — ryzyko rządzenia, nie wolumen przestępczości ulicznej i nie zabójstwa.',
+    description:
+      'Indeks percepcji korupcji (CPI) 2025 Transparency International porządkuje kraje według postrzeganej korupcji w sektorze publicznym. Skala od 0 (wysoce skorumpowany) do 100 (bardzo czysty) łączy ankiety ekspertów i biznesu. Our World in Data publikuje szereg jako otwartą mapę. To kompozyt ryzyka rządzenia, nie liczba spraw o łapówki i nie wskaźnik przemocy.',
+    whyOnShelf:
+      'Postrzegana korupcja w sektorze publicznym to inny sygnał szkody publicznej niż umyślne zabójstwa UNODC. Nigdy nie łączcie tej karty z warstwą zabójstw.',
+    howToRead:
+      'Wynik to kompozyt percepcji, nie liczba wyroków i nie przestępczość uliczna. Etykieta roku to rok edycji CPI (tu 2025), niekoniecznie rok kalendarzowy każdej ankiety. Wyżej znaczy czyściej. Porównujcie bliskie edycje; zmiana o jeden–dwa punkty bywa szumem. Oficjalne wyniki są na stronie Transparency International; interaktywna mapa u OWID.',
+    caveats:
+      'Brak kraju nie znaczy „czysty”. Doświadczenie łapówek w gospodarstwach to inny szereg. Nie czytajcie miniatury jako listy „najbardziej skorumpowanych”. To nie choropleth zabójstw.',
+    licenseNote:
+      'Hostujemy przycięty choropleth krajowy CPI 2025 z Wikimedia Commons (Cnscrptr i ConnerMiner, CC BY-SA 4.0) na podstawie danych Transparency International CPI 2025. Our World in Data publikuje CPI jako otwartą mapę (CC BY). Edycja jest na transparency.org/en/cpi/2025.',
+    imageAlt:
+      'Choropleth świata według Indeksu percepcji korupcji 2025: chłodniejsza zieleń tam, gdzie postrzegana korupcja jest niższa, cieplejsza czerwień tam, gdzie wyższa — nie mapa zabójstw',
+  },
+  'trafficking-in-persons': {
+    title: 'Handel ludźmi',
+    hook: 'Wykryte ofiary handlu ludźmi i wzory z Globalnego raportu UNODC (GLOTIP) — wyzysk i przymus, nie wskaźnik zabójstw i nie sam kompozyt rynków GI-TOC.',
+    description:
+      'Globalny raport UNODC o handlu ludźmi (GLOTIP) 2024 to ósma edycja na podstawie Protokołu o handlu ludźmi do Konwencji ONZ przeciwko transnarodowej przestępczości zorganizowanej i Globalnego planu działania z 2010 r. Podaje wykryte ofiary, formy wyzysku i wzory. Ta karta prowadzi do tej sprawozdawczości o wykryciu, nie do pełnego spisu handlu ludźmi.',
+    whyOnShelf:
+      'Handel ludźmi to odrębna rodzina czynów ICCS. Uzupełnia wynik rynku handlu ludźmi w indeksie GI-TOC statystyką UNODC o wykrytych ofiarach. To nie wskaźnik zabójstw i nie mapa przepływów World Drug Report.',
+    howToRead:
+      'Liczby to wykryte ofiary — pokrycie zależy od policji, definicji i dostępu. Niski wynik może znaczyć mniej wykryć, nie mniej ofiar. Formy wyzysku (seksualny, praca przymusowa i inne) to nie wskaźnik zabójstw. Tabele są w GLOTIP i na portalu danych UNODC.',
+    caveats:
+      'Wykrycie to nie spis. Przepływy transgraniczne w raporcie to wykryte wzory, nie pełny inwentarz szlaków.',
+    licenseNote:
+      'Zdjęcie: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Chrystus Odkupiciel podświetlony na niebiesko przeciw handlowi ludźmi, 28 lipca 2014. To nie figura raportu GLOTIP UNODC.',
+    imageAlt:
+      'Chrystus Odkupiciel w Rio de Janeiro podświetlony na niebiesko przeciw handlowi ludźmi. To zdjęcie, nie figura raportu GLOTIP UNODC.',
+  },
   'air-quality-pm25': {
     title: 'Zanieczyszczenie pyłem PM2.5',
     hook: 'Drobne cząstki na zewnątrz, które szkodzą płucom i sercu — z satelitów, modeli i stacji, nie „na węch”.',

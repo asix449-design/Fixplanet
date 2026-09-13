@@ -2714,7 +2714,8 @@ a.map-card:hover {
   flex-direction: column;
 }
 
-.innovation-card-wrap .wildlife-card {
+.innovation-card-wrap .wildlife-card,
+.innovation-card-wrap .map-card {
   flex: 1;
   height: auto;
 }

@@ -370,5 +370,63 @@ def main() -> None:
     world_countries()
 
 
+def organized_crime_index() -> None:
+    """Licensed port photo — criminal-markets context, not the GI-TOC heatmap."""
+    process_hosted(
+        SRC / "le-havre-containers.jpg",
+        "organized-crime-index.jpg",
+        "Wikimedia Commons · Philippe Alès · CC BY-SA 3.0 · Le Havre container terminal",
+        (0, 352, 4288, 2496),
+    )
+
+
+def trafficking_in_persons() -> None:
+    """Licensed awareness photo — not a UNODC GLOTIP plate, not victims."""
+    process_hosted(
+        SRC / "redeemer-blue-tip.jpg",
+        "trafficking-in-persons.jpg",
+        "Agência Brasil · Vladimir Platonow · CC BY 3.0 BR · lit against trafficking",
+        (0, 40, 4000, 2040),
+    )
+
+
+def corruption_perceptions_index(src: Path | None = None) -> None:
+    """CPI 2025 Commons choropleth (CC BY-SA 4.0) — not a homicide remix."""
+    candidate = src or SRC / "cpi-2025.svg"
+    if not candidate.exists():
+        raise SystemExit(f"missing {candidate}")
+    if candidate.suffix.lower() == ".svg":
+        png_path = Path("/tmp/map-src/cpi-2025.png")
+        png_path.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            ["rsvg-convert", "-w", "2754", "-h", "1398", "-o", str(png_path), str(candidate)],
+            check=True,
+        )
+        im = Image.open(png_path).convert("RGB")
+    else:
+        im = Image.open(candidate).convert("RGB")
+    im = fit_card(im)
+    im = credit_bar(
+        im,
+        "Wikimedia Commons · Cnscrptr & ConnerMiner · CC BY-SA 4.0 · CPI 2025 (TI data)",
+        fill=(20, 28, 36),
+    )
+    save_jpg(im, "corruption-perceptions-index.jpg")
+
+
+def crime_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    organized_crime_index()
+    trafficking_in_persons()
+    src = SRC / "cpi-2025.svg"
+    if src.exists() or (SRC / "cpi-2025.png").exists():
+        corruption_perceptions_index(src if src.exists() else SRC / "cpi-2025.png")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if sys.argv[1:] == ["crime"]:
+        crime_cards()
+    else:
+        main()

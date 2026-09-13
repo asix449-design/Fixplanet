@@ -1,4 +1,5 @@
 import type { HubIconName } from './hub';
+import type { PrimarySource } from './sources';
 
 export const mapCategoryKeys = [
   'history-of-borders',
@@ -54,6 +55,8 @@ export type MapMeta = {
   /** Hosted preview in /public/images/maps/ */
   preview: string;
   previewKind: 'photo' | 'outline' | 'schematic';
+  /** Optional clickable citations. First row is the grid Source link. */
+  sources?: PrimarySource[];
 };
 
 export type MapCopy = {
@@ -64,6 +67,8 @@ export type MapCopy = {
   caveats: string;
   licenseNote: string;
   imageAlt: string;
+  /** When set, the detail page uses What / Why on this shelf headings. */
+  whyOnShelf?: string;
 };
 
 export type MapEntry = MapMeta & MapCopy;
@@ -133,6 +138,63 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://ourworldindata.org/homicides',
     preview: 'homicide-rates.jpg',
     previewKind: 'photo',
+  },
+  {
+    slug: 'organized-crime-index',
+    category: 'crime',
+    year: 'Index 2025 (covers 2024)',
+    sourceShort: 'GI-TOC',
+    sourceOrg: 'Global Initiative against Transnational Organized Crime (GI-TOC)',
+    sourceUrl: 'https://ocindex.net/2025/',
+    openMapUrl: 'https://ocindex.net/2025/',
+    preview: 'organized-crime-index.jpg',
+    previewKind: 'photo',
+    sources: [
+      { label: 'Organized Crime Index 2025 heatmap', url: 'https://ocindex.net/2025/' },
+      { label: 'About the Index', url: 'https://ocindex.net/about' },
+      { label: 'Downloads', url: 'https://ocindex.net/downloads' },
+    ],
+  },
+  {
+    slug: 'corruption-perceptions-index',
+    category: 'crime',
+    year: 'CPI 2025',
+    sourceShort: 'Transparency International',
+    sourceOrg: 'Transparency International; Our World in Data',
+    sourceUrl: 'https://www.transparency.org/en/cpi/2025',
+    openMapUrl: 'https://ourworldindata.org/grapher/ti-corruption-perception-index',
+    preview: 'corruption-perceptions-index.jpg',
+    previewKind: 'photo',
+    sources: [
+      { label: 'Corruption Perceptions Index 2025', url: 'https://www.transparency.org/en/cpi/2025' },
+      {
+        label: 'Our World in Data — CPI open map',
+        url: 'https://ourworldindata.org/grapher/ti-corruption-perception-index',
+      },
+      { label: 'Our World in Data — Corruption', url: 'https://ourworldindata.org/corruption' },
+    ],
+  },
+  {
+    slug: 'trafficking-in-persons',
+    category: 'crime',
+    year: '2024 report',
+    sourceShort: 'UNODC GLOTIP',
+    sourceOrg: 'United Nations Office on Drugs and Crime — Global Report on Trafficking in Persons',
+    sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
+    openMapUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
+    preview: 'trafficking-in-persons.jpg',
+    previewKind: 'photo',
+    sources: [
+      {
+        label: 'UNODC Global Report on Trafficking in Persons',
+        url: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
+      },
+      {
+        label: 'UNODC trafficking in persons research',
+        url: 'https://www.unodc.org/unodc/en/data-and-analysis/tip.html',
+      },
+      { label: 'UNODC data portal', url: 'https://data.unodc.org/' },
+    ],
   },
   {
     slug: 'air-quality-pm25',
@@ -302,6 +364,10 @@ export function getMapMeta(slug: string): MapMeta | undefined {
 
 export function mapsByCategory(category: MapCategory): MapMeta[] {
   return mapMeta.filter((item) => item.category === category);
+}
+
+export function mapPrimarySource(item: MapMeta): PrimarySource | undefined {
+  return item.sources?.[0];
 }
 
 export function mapCategoryPath(category: MapCategory): string {
