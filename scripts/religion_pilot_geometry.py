@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hand-authored schematic religion regions for the 1–400 CE pilot.
+"""Hand-authored schematic religion regions for the 1–600 CE pilot.
 
 Coarse ellipse unions — original Fix Planet artwork, not a trace of any
 commercial atlas. Americas / Oceania are omitted here; the renderer paints
@@ -177,6 +177,67 @@ def buddhist_china_hatch() -> list[Polygon]:
     return [ellipse(110.0, 33.5, 6.5, 4.0)]
 
 
+def christian_fill_500() -> list[Polygon]:
+    return christian_fill_400_east() + [
+        ellipse(12.5, 42.0, 9.5, 7.5),
+        ellipse(5.0, 44.0, 9.0, 6.5),
+        ellipse(-1.0, 48.0, 7.0, 5.5),
+        ellipse(-3.0, 40.0, 6.5, 5.5),
+        ellipse(10.0, 36.0, 11.0, 4.5),
+        ellipse(28.0, 42.0, 7.5, 5.5),
+        ellipse(44.0, 45.0, 6.5, 5.5),
+        ellipse(38.0, 12.0, 7.0, 8.0),
+        ellipse(32.0, 17.0, 5.5, 5.5),
+        ellipse(30.0, 39.0, 15.0, 8.5),
+    ]
+
+
+def christian_fill_600() -> list[Polygon]:
+    return christian_fill_500() + [
+        ellipse(28.0, 40.0, 18.0, 10.5),
+        ellipse(3.0, 45.0, 11.0, 7.5),
+        ellipse(-1.0, 52.0, 5.5, 5.0),
+        ellipse(20.0, 45.0, 8.5, 6.5),
+        ellipse(38.0, 35.0, 5.5, 4.5),
+        ellipse(39.0, 12.0, 7.5, 8.5),
+        ellipse(10.0, 36.0, 13.0, 5.0),
+    ]
+
+
+def rural_pagan_hatch_500() -> list[Polygon]:
+    return [
+        ellipse(2.0, 46.0, 7.0, 5.5),
+        ellipse(-2.0, 52.0, 4.0, 3.5),
+        ellipse(-4.0, 40.0, 5.0, 4.0),
+        ellipse(11.0, 44.5, 3.5, 2.5),
+        ellipse(21.0, 44.5, 5.5, 3.5),
+    ]
+
+
+def rural_pagan_hatch_600() -> list[Polygon]:
+    return [
+        ellipse(2.0, 47.0, 6.0, 4.5),
+        ellipse(-1.0, 52.0, 3.5, 3.0),
+        ellipse(8.0, 45.0, 4.0, 2.8),
+    ]
+
+
+def manichaean_hatch_500() -> list[Polygon]:
+    return manichaean_hatch() + [ellipse(70.0, 40.0, 5.5, 2.8)]
+
+
+def manichaean_hatch_600() -> list[Polygon]:
+    return manichaean_hatch_500() + [ellipse(108.0, 38.0, 4.0, 2.5)]
+
+
+def buddhist_se_asia() -> list[Polygon]:
+    return buddhist_silk() + [ellipse(100.0, 18.0, 5.5, 4.5), ellipse(95.0, 30.0, 5.5, 4.0)]
+
+
+def roman_pagan_residual_600() -> list[Polygon]:
+    return [ellipse(2.0, 46.0, 5.0, 4.0), ellipse(-2.0, 52.0, 3.0, 2.8)]
+
+
 def year_layers(year: int) -> dict[str, list]:
     """Return style buckets for one year: fill / hatch / dots."""
     fills: list[tuple[str, list[Polygon]]] = [
@@ -209,7 +270,7 @@ def year_layers(year: int) -> dict[str, list]:
         hatches.append(("manichaean", manichaean_hatch()))
         hatches.append(("buddhist", buddhist_china_hatch()))
         dots = [("christian", lon, lat) for _, lon, lat in CHRISTIAN_DOTS_100]
-    else:  # 400
+    elif year == 400:
         fills.append(("roman_pagan", roman_pagan_core()))
         fills.append(("zoroastrian", zoroastrian_sasanian()))
         fills.append(("buddhist", buddhist_silk()))
@@ -217,6 +278,24 @@ def year_layers(year: int) -> dict[str, list]:
         hatches.append(("christian", christian_urban_400_west()))
         hatches.append(("roman_pagan", rural_pagan_hatch_400()))
         hatches.append(("manichaean", manichaean_hatch()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+        dots = [("christian", lon, lat) for _, lon, lat in CHRISTIAN_DOTS_100]
+    elif year == 500:
+        fills.append(("roman_pagan", roman_pagan_core()))
+        fills.append(("zoroastrian", zoroastrian_sasanian()))
+        fills.append(("buddhist", buddhist_se_asia()))
+        fills.append(("christian", christian_fill_500()))
+        hatches.append(("roman_pagan", rural_pagan_hatch_500()))
+        hatches.append(("manichaean", manichaean_hatch_500()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+        dots = [("christian", lon, lat) for _, lon, lat in CHRISTIAN_DOTS_100]
+    else:  # 600 — no Islamic empire wash (conquests after 632)
+        fills.append(("roman_pagan", roman_pagan_residual_600()))
+        fills.append(("zoroastrian", zoroastrian_sasanian()))
+        fills.append(("buddhist", buddhist_se_asia()))
+        fills.append(("christian", christian_fill_600()))
+        hatches.append(("roman_pagan", rural_pagan_hatch_600()))
+        hatches.append(("manichaean", manichaean_hatch_600()))
         hatches.append(("buddhist", buddhist_china_hatch()))
         dots = [("christian", lon, lat) for _, lon, lat in CHRISTIAN_DOTS_100]
 
@@ -259,7 +338,7 @@ def collection_for(year: int) -> dict:
 
 def write_geojson() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in (1, 100, 200, 300, 400):
+    for year in (1, 100, 200, 300, 400, 500, 600):
         dest = OUT / f"y{year:04d}.geojson"
         dest.write_text(json.dumps(collection_for(year), indent=2), encoding="utf-8")
         print(f"wrote {dest.relative_to(ROOT)}")

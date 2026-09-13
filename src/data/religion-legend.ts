@@ -31,5 +31,5 @@ export const RELIGION_LEGEND_COLORS: Record<ReligionLegendId, string> = {
 };
 
 /** Years published in this pilot. Later centuries stay in the data file unpublished. */
-export const RELIGION_PILOT_YEARS = [1, 100, 200, 300, 400] as const;
-export const RELIGION_PUBLISHED_YEARS = [1, 100, 200, 300, 400, 600] as const;
+export const RELIGION_PILOT_YEARS = [1, 100, 200, 300, 400, 500, 600] as const;
+export const RELIGION_PUBLISHED_YEARS = [1, 100, 200, 300, 400, 500, 600] as const;

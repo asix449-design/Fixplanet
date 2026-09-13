@@ -73,6 +73,12 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
           frames.map((frame) => {
             const preview = religionHistoryPreviewSrc(frame.preview);
             const continents = frame.eraByContinent;
+            const continentBlocks = frame.continentBlocks?.length
+              ? frame.continentBlocks
+              : continentOrder
+                  .filter((key) => continents?.[key])
+                  .map((key) => ({ heading: continentLabels[key], text: continents?.[key] ?? '' }));
+            const honestyPills = frame.honestyPills ?? page.honestyPills;
             return (
               <article class="borders-frame map-detail" id={`year-${frame.year}`}>
                 <figure class="map-detail-art">
@@ -88,7 +94,7 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
                     </span>
                     <span class="pill">{frame.sourceShort}</span>
                     {frame.nearest ? <span class="pill">{page.nearestNote}</span> : null}
-                    {page.honestyPills.map((pill) => (
+                    {honestyPills.map((pill) => (
                       <span class="pill">{pill}</span>
                     ))}
                   </div>
@@ -96,13 +102,13 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
                   <p>{frame.caption}</p>
                   <p class="wildlife-sources">{page.coverage[frame.coverage]}</p>
                   {
-                    continents ? (
+                    continentBlocks.length ? (
                       <div class="religion-continents">
                         <h3>{page.continentsHeading}</h3>
-                        {continentOrder.map((key) => (
+                        {continentBlocks.map((block) => (
                           <div>
-                            <h4>{continentLabels[key]}</h4>
-                            <p>{continents[key]}</p>
+                            <h4>{block.heading}</h4>
+                            <p>{block.text}</p>
                           </div>
                         ))}
                       </div>
@@ -122,7 +128,23 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
                     ) : null
                   }
                   {
-                    frame.companion?.kind === 'christianity-600' ? (
+                    frame.companion?.kind === 'christianity-600' && frame.companion.preview ? (
+                      <figure class="religion-companion">
+                        <a href={frame.companion.href || religionHistoryPreviewSrc(frame.companion.preview)}>
+                          <img
+                            src={religionHistoryPreviewSrc(frame.companion.preview)}
+                            alt={page.companionChristianity600}
+                            width="1600"
+                            height="800"
+                          />
+                        </a>
+                        <figcaption>
+                          <a href={frame.companion.href || religionHistoryPreviewSrc(frame.companion.preview)}>
+                            {page.companionChristianity600}
+                          </a>
+                        </figcaption>
+                      </figure>
+                    ) : frame.companion?.kind === 'christianity-600' ? (
                       <p class="religion-companion-link">
                         <a href={frame.companion.href || '#year-600'}>{page.companionChristianity600}</a>
                       </p>
