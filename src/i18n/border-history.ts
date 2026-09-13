@@ -797,7 +797,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1100: {
     title: '1100. m.ē.',
     caption:
-      'Precīzs 1100. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1200. mācību karte un nav gravīra. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1100 — Baldvinu kronē Betlēmē; Anglijā bulta nogalina Vilhelmu Sarkano; Krievzemē sapulce Uvetičos; Ķīnā tronī kāpj Hueidzuns.',
     essay: year1100Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1100. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
