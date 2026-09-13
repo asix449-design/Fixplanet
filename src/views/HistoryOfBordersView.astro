@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { borderHistoryPreviewSrc } from '../data/border-history';
 import {
+  BORDER_CONTINENT_ORDER,
   getBorderHistoryFrames,
   getBorderHistoryPage,
   localizePath,
@@ -48,6 +49,7 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
         {
           frames.map((frame) => {
             const preview = borderHistoryPreviewSrc(frame.preview);
+            const eraBlocks = BORDER_CONTINENT_ORDER.filter((key) => frame.eraByContinent?.[key]);
             return (
               <article class="borders-frame map-detail" id={`year-${frame.year}`}>
                 <figure class="map-detail-art">
@@ -65,6 +67,16 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
                   <h2>{frame.title}</h2>
                   <p>{frame.caption}</p>
                   <p class="wildlife-sources">{page.coverage[frame.coverage]}</p>
+                  {eraBlocks.length ? (
+                    <div class="borders-era">
+                      {eraBlocks.map((key) => (
+                        <section class="borders-era-block">
+                          <h3>{page.continents[key]}</h3>
+                          <p>{frame.eraByContinent?.[key]}</p>
+                        </section>
+                      ))}
+                    </div>
+                  ) : null}
                   <h3>{page.sourceLabel}</h3>
                   <p class="wildlife-sources">
                     <strong>{frame.sourceOrg}</strong>

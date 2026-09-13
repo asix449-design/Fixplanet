@@ -2797,6 +2797,20 @@ a.map-card:hover {
   margin-top: 1.3rem;
 }
 
+.borders-era {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.15rem 0 0.2rem;
+}
+
+.borders-era-block h3 {
+  margin-top: 0.15rem;
+}
+
+.borders-era-block p {
+  margin: 0.35rem 0 0;
+}
+
 /* Forests — canopy / lime-on-black monitoring room */
 .theme-forests {
   background: #06110a;
