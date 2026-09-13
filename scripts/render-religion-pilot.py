@@ -6,9 +6,10 @@ and data/religion-pilot/*.geojson). The political/coast underlay is aourednik
 historical-basemaps (GPL-3.0). Do not copy proprietary geometry into this file.
 
 Year 1 has no world_1 — uses world_100 and marks nearest.
-Years 500 and 600 use world_500 and world_600 (clip_to_land).
+Years 500–900 use world_500 … world_900 (clip_to_land).
 Year 600 writes y0600-schematic.png and must not overwrite y0600.png
-(the Christianity-to-600 process companion).
+(the Christianity-to-600 process companion). Years 700–900 write
+y0700.png / y0800.png / y0900.png with no on-image legend.
 
 Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y0001-schematic.png
@@ -18,6 +19,9 @@ Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y0400.png
   public/images/maps/religion/y0500.png
   public/images/maps/religion/y0600-schematic.png
+  public/images/maps/religion/y0700.png
+  public/images/maps/religion/y0800.png
+  public/images/maps/religion/y0900.png
 
 Run from repo root: python3 scripts/render-religion-pilot.py
 """
@@ -79,6 +83,9 @@ YEARS = {
     400: 400,
     500: 500,
     600: 600,
+    700: 700,
+    800: 800,
+    900: 900,
 }
 
 FOOTER = (
@@ -89,6 +96,7 @@ FOOTER = (
 LEGEND_ORDER = [
     "roman_pagan",
     "christian",
+    "islam",
     "jewish",
     "zoroastrian",
     "hindu",
@@ -104,6 +112,7 @@ LEGEND_ORDER = [
 LEGEND_LABELS = {
     "roman_pagan": "Roman civic / pagan",
     "christian": "Christian (dot / hatch)",
+    "islam": "Islam",
     "jewish": "Jewish communities",
     "zoroastrian": "Zoroastrian-leaning",
     "hindu": "Hindu umbrella",
@@ -285,7 +294,12 @@ def iter_polys(geom):
 
 
 def paint_legend(draw: ImageDraw.ImageDraw, year: int, colors: dict[str, str]) -> None:
-    ids = [rid for rid in LEGEND_ORDER if not (year < 200 and rid == "manichaean")]
+    ids = [
+        rid
+        for rid in LEGEND_ORDER
+        if not (year < 200 and rid == "manichaean")
+        and not (year < 700 and rid == "islam")
+    ]
     pad, sw, row_h, box_w = 14, 18, 22, 268
     box_h = pad * 2 + 28 + row_h * len(ids)
     x, y = 16, 16
@@ -442,7 +456,8 @@ def render_year(year: int) -> Path:
         anchor="rt",
     )
     draw.text((24, HEIGHT + 24), FOOTER, fill=FOOTER_FG, font=foot_font)
-    paint_legend(draw, year, colors)
+    if year < 700:
+        paint_legend(draw, year, colors)
     dest.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(dest, "PNG", optimize=True)
     print(f"wrote {dest.relative_to(ROOT)} ({dest.stat().st_size // 1024} KB) {canvas.size}")
@@ -452,7 +467,7 @@ def render_year(year: int) -> Path:
 def main(years: list[int] | None = None) -> None:
     write_geojson()
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in years or (1, 100, 200, 300, 400, 500, 600):
+    for year in years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900):
         render_year(year)
 
 

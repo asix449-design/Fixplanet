@@ -56,6 +56,30 @@
     "note": "Wider Christian Mediterranean belt; Zoroastrian Iran; no Islamic empire wash. y0600.png remains the Christianity-to-600 process companion. Americas unmapped."
   },
   {
+    "file": "y0700.png",
+    "title": "700 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "First wide Umayyad Islamic belt including Libya. No on-image legend. y0600.png process companion untouched. Americas unmapped."
+  },
+  {
+    "file": "y0800.png",
+    "title": "800 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Abbasid Islamic belt, fuller east; stronger Carolingian Christian west. No on-image legend. Americas unmapped."
+  },
+  {
+    "file": "y0900.png",
+    "title": "900 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Abbasid-successor belt; stronger Buddhist Southeast Asia; no deep Sahel Islam. No year 1000 plate. Americas unmapped."
+  },
+  {
     "file": "y0001.png",
     "title": "Principales religions de l’ancien monde (Planche VI)",
     "source": "Élisée Reclus, L’Homme et la Terre (1905)",

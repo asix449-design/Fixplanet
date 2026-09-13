@@ -18,6 +18,9 @@ const legendLabels = getReligionLegend(locale);
 const continentLabels = getReligionContinentLabels(locale);
 const firstPreview = religionHistoryPreviewSrc(frames[0]?.preview ?? 'y0001-schematic.png');
 const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as const;
+
+const emphasizeCaption = (text: string) =>
+  text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 ---
 
 <BaseLayout title={page.metaTitle} description={page.metaDescription} image={firstPreview}>
@@ -90,7 +93,7 @@ const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as co
                     ))}
                   </div>
                   <h2>{frame.title}</h2>
-                  <p>{frame.caption}</p>
+                  <p set:html={emphasizeCaption(frame.caption)} />
                   <p class="wildlife-sources">{page.coverage[frame.coverage]}</p>
                   {
                     continentBlocks.length ? (

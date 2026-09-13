@@ -179,6 +179,117 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
     },
+    700: {
+      title: '700 CE — first wide Islamic Umayyad belt',
+      caption:
+        'Around 700 CE the plate first shows a wide **Islamic** Umayyad belt — Iberia and the Maghreb through Egypt and Arabia to Iran, Transoxiana, and Sind. Christianity holds Byzantium, Italy, the Frankish core, and Britain; northern and eastern Europe stay local traditions. India keeps a Hindu umbrella; Buddhist corridors and China keep their belts. Americas and Oceania stay unmapped.',
+      imageAlt:
+        'Schematic world religion map for 700 CE: first wide Islamic Umayyad belt from Iberia and the Maghreb through Egypt and Arabia to Iran, Transoxiana and Sind, Christian Byzantium Italy Frankish core and Britain, Hindu India, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas unmapped',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Christian fill in Byzantium, Italy, the Frankish core, and Britain. Iberia is Islamic. North and east Europe stay local traditions.',
+        },
+        {
+          heading: 'Southwest Asia / Iran',
+          text: 'Umayyad Islamic wash from the Levant through Arabia and Iran to Transoxiana and Sind. Thin Zoroastrian remnant hatch in Iran.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu umbrella on India; Buddhist corridors; Chinese imperial / folk.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Umayyad Islamic wash on the Maghreb — including Libya — and Egypt. Aksum and Nubia a light Christian edge. South of the Sahara a coarse African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+    },
+    800: {
+      title: '800 CE — Abbasid belt, stronger Frankish west',
+      caption:
+        'By 800 CE the Islamic belt is **Abbasid** — same Mediterranean-to-Iran wash, a little fuller in the east; al-Andalus and the Maghreb still on the plate. In the west, Frankish / Carolingian Christianity is stronger; Scandinavia and the Slavic east stay local. India Hindu; Buddhism and the Chinese imperial layer hold the East. Americas unmapped.',
+      imageAlt:
+        'Schematic world religion map for 800 CE: Abbasid Islamic belt fuller in the east, stronger Frankish Carolingian Christian west, Hindu India, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas unmapped',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Stronger Frankish / Carolingian Christian west. Byzantium, Italy, and Britain stay Christian. Iberia remains Islamic. Scandinavia and the Slavic east stay local traditions.',
+        },
+        {
+          heading: 'Southwest Asia / Iran',
+          text: 'Abbasid Islamic belt — the same Mediterranean-to-Iran wash, a little fuller in the east. Thin Zoroastrian remnant hatch in Iran. Al-Andalus and the Maghreb stay on the plate.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu India; Buddhist corridors; Chinese imperial / folk.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Abbasid-era Islamic wash on the Maghreb and Egypt. Aksum and Nubia a light Christian edge. South of the Sahara a coarse African traditional wash.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+    },
+    900: {
+      title: '900 CE — Abbasid successors, Christian Europe still open north',
+      caption:
+        'Around 900 CE the Islamic West and Abbasid-successor belt stay wide — Maghreb, Egypt, Arabia, Iran, Central Asia, Sind; al-Andalus holds. Christian Europe is Byzantium plus the Latin West and the Balkans — still not solid Scandinavia, Baltic, or steppe north. East: Hindu India, stronger Buddhist Southeast Asia, Chinese imperial layer. Americas unmapped.',
+      imageAlt:
+        'Schematic world religion map for 900 CE: wide Abbasid-successor Islamic belt, Christian Latin West and Balkans, stronger Buddhist Southeast Asia, Americas unmapped',
+      honestyPills: [
+        'Schematic reconstruction',
+        'Not a census',
+        'Old World focus',
+        'Americas unmapped',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europe / Mediterranean',
+          text: 'Christian Europe is Byzantium plus the Latin West and the Balkans — still not solid Scandinavia, Baltic, or steppe north. Al-Andalus holds as Islamic.',
+        },
+        {
+          heading: 'Southwest Asia / Iran',
+          text: 'Abbasid-successor Islamic belt stays wide through Arabia, Iran, Central Asia, and Sind. Thin Zoroastrian remnant hatch in Iran.',
+        },
+        {
+          heading: 'South / Central / East Asia',
+          text: 'Hindu India; stronger Buddhist Southeast Asia; Chinese imperial / folk.',
+        },
+        {
+          heading: 'Africa',
+          text: 'Islamic Maghreb and Egypt. Aksum and Nubia a light Christian edge. South of the Sahara a coarse African traditional wash — no deep Sahel Islam yet.',
+        },
+        {
+          heading: 'Americas / Oceania',
+          text: 'Not mapped.',
+        },
+      ],
+      sources:
+        'Religion fills © Fix Planet (schematic reconstruction — not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+    },
   },
   ru: {
     1: {
@@ -337,6 +448,117 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       ],
       sources:
         'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
+    },
+    700: {
+      title: '700 н. э. — впервые широкий исламский пояс Омейядов',
+      caption:
+        'Около 700 н. э. на листе впервые широкий **исламский** пояс Омейядов — от Иберии и Магриба через Египет и Аравию к Ирану, Трансоксиане и Синд. Христианство держит Византию, Италию, франкское ядро и Британию; север и восток Европы ещё местные традиции. Индия — индуистский зонт; буддийские коридоры и Китай — свои пояса. Америка и Океания не нанесены.',
+      imageAlt:
+        'Схематическая карта религий на 700 год н. э.: впервые широкий исламский пояс Омейядов от Иберии и Магриба через Египет и Аравию к Ирану, Трансоксиане и Синд, христианские Византия Италия франкское ядро и Британия, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Христианская заливка в Византии, Италии, франкском ядре и Британии. Иберия исламская. Север и восток Европы — местные традиции.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Иран',
+          text: 'Омейядский исламский смыв от Леванта через Аравию и Иран к Трансоксиане и Синд. Тонкая зороастрийская штриховка-остаток в Иране.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистский зонт в Индии; буддийские коридоры; китайский имперский / народный слой.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Омейядский исламский смыв на Магрибе — включая Ливию — и Египте. Аксум и Нубия — лёгкий христианский край. Южнее Сахары — грубый традиционный африканский фон.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Не нанесено.',
+        },
+      ],
+      sources:
+        'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+    },
+    800: {
+      title: '800 н. э. — аббасидский пояс, сильнее франкский запад',
+      caption:
+        'К 800 н. э. исламский пояс уже **аббасидский** — то же Средиземноморье–Иран, чуть полнее на востоке; аль-Андалус и Магриб на месте. На западе сильнее франкское / каролингское христианство; Скандинавия и славянский восток всё ещё местные. Индия индуистская; буддизм и китайский имперский слой держат Восток. Америка не нанесена.',
+      imageAlt:
+        'Схематическая карта религий на 800 год н. э.: аббасидский исламский пояс полнее на востоке, сильнее франкское каролингское христианство на западе, индуистская Индия, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Сильнее франкское / каролингское христианство на западе. Византия, Италия и Британия остаются христианскими. Иберия исламская. Скандинавия и славянский восток — местные традиции.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Иран',
+          text: 'Аббасидский исламский пояс — то же Средиземноморье–Иран, чуть полнее на востоке. Тонкая зороастрийская штриховка-остаток в Иране. Аль-Андалус и Магриб на месте.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистская Индия; буддийские коридоры; китайский имперский / народный слой.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Аббасидский исламский смыв на Магрибе и Египте. Аксум и Нубия — лёгкий христианский край. Южнее Сахары — грубый традиционный африканский фон.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Не нанесено.',
+        },
+      ],
+      sources:
+        'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+    },
+    900: {
+      title: '900 н. э. — преемники аббасидов, христианская Европа не сплошь на севере',
+      caption:
+        'Около 900 н. э. исламский Запад и преемники аббасидского пояса всё ещё широки — Магриб, Египет, Аравия, Иран, Центральная Азия, Синд; аль-Андалус держится. Христианская Европа — Византия плюс латинский Запад и Балканы, но не сплошь Скандинавия, Балтика и степной север. Восток: индуистская Индия, сильнее буддийская ЮВА, китайский имперский слой. Америка не нанесена.',
+      imageAlt:
+        'Схематическая карта религий на 900 год н. э.: широкий пояс преемников аббасидов, христианские латинский Запад и Балканы, сильнее буддийская Юго-Восточная Азия, Америка без заливки',
+      honestyPills: [
+        'Схематическая реконструкция',
+        'Не перепись',
+        'Фокус: Старый Свет',
+        'Америка не нанесена',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Европа / Средиземноморье',
+          text: 'Христианская Европа — Византия плюс латинский Запад и Балканы, но не сплошь Скандинавия, Балтика и степной север. Аль-Андалус держится как исламский.',
+        },
+        {
+          heading: 'Юго-Западная Азия / Иран',
+          text: 'Пояс преемников аббасидов всё ещё широк через Аравию, Иран, Центральную Азию и Синд. Тонкая зороастрийская штриховка-остаток в Иране.',
+        },
+        {
+          heading: 'Южная / Центральная / Восточная Азия',
+          text: 'Индуистская Индия; сильнее буддийская Юго-Восточная Азия; китайский имперский / народный слой.',
+        },
+        {
+          heading: 'Африка',
+          text: 'Исламские Магриб и Египет. Аксум и Нубия — лёгкий христианский край. Южнее Сахары — грубый традиционный африканский фон; глубокого ислама Сахеля ещё нет.',
+        },
+        {
+          heading: 'Америка / Океания',
+          text: 'Не нанесено.',
+        },
+      ],
+      sources:
+        'Полигоны религий © Fix Planet (схематическая реконструкция — не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
     },
   },
   pl: {
@@ -497,6 +719,117 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
     },
+    700: {
+      title: '700 n.e. — pierwszy szeroki pas islamu Umajjadów',
+      caption:
+        'Około 700 n.e. na arkuszu po raz pierwszy szeroki pas **islamu** Umajjadów — od Iberii i Maghrebu przez Egipt i Arabię po Iran, Transoksjanię i Sind. Chrześcijaństwo trzyma Bizancjum, Włochy, frankijskie jądro i Brytanię; północ i wschód Europy to jeszcze tradycje lokalne. Indie — parasol hinduistyczny; korytarze buddyjskie i Chiny — własne pasy. Ameryki i Oceania bez wypełnienia.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 700 n.e.: pierwszy szeroki pas islamu Umajjadów od Iberii i Maghrebu przez Egipt i Arabię po Iran, Transoksjanię i Sind, chrześcijańskie Bizancjum Włochy frankijskie jądro i Brytania, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryki nie naniesione',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Wypełnienie chrześcijańskie w Bizancjum, we Włoszech, we frankijskim jądrze i w Brytanii. Iberia jest islamska. Północ i wschód Europy pozostają tradycjami lokalnymi.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Iran',
+          text: 'Umajjadzki pas islamski od Lewantu przez Arabię i Iran po Transoksjanię i Sind. Cienkie kreskowanie pozostałości zoroastryjskiej w Iranie.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Parasol hindu w Indiach; korytarze buddyjskie; chińska warstwa imperialna / ludowa.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Umajjadzki pas islamski na Maghrebie — w tym Libia — i w Egipcie. Aksum i Nubia to lekka krawędź chrześcijańska. Na południe od Sahary grube tradycyjne tło afrykańskie.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+    },
+    800: {
+      title: '800 n.e. — pas abbasydzki, silniejszy zachód frankijski',
+      caption:
+        'Do 800 n.e. pas islamski jest już **abbasydzki** — ta sama plama od Śródziemnomorza po Iran, nieco pełniejsza na wschodzie; al-Andalus i Maghreb nadal na arkuszu. Na zachodzie silniejsze chrześcijaństwo frankijskie / karolińskie; Skandynawia i słowiański wschód wciąż lokalne. Indie hinduistyczne; buddyzm i chińska warstwa cesarska trzymają Wschód. Ameryki nie naniesione.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 800 n.e.: abbasydzki pas islamski pełniejszy na wschodzie, silniejsze chrześcijaństwo frankijskie karolińskie na zachodzie, hinduistyczne Indie, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryki nie naniesione',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Silniejsze chrześcijaństwo frankijskie / karolińskie na zachodzie. Bizancjum, Włochy i Brytania pozostają chrześcijańskie. Iberia pozostaje islamska. Skandynawia i słowiański wschód — tradycje lokalne.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Iran',
+          text: 'Abbasydzki pas islamski — ta sama plama od Śródziemnomorza po Iran, nieco pełniejsza na wschodzie. Cienkie kreskowanie pozostałości zoroastryjskiej w Iranie. Al-Andalus i Maghreb nadal na arkuszu.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Hinduistyczne Indie; korytarze buddyjskie; chińska warstwa imperialna / ludowa.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Abbasydzki pas islamski na Maghrebie i w Egipcie. Aksum i Nubia to lekka krawędź chrześcijańska. Na południe od Sahary grube tradycyjne tło afrykańskie.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+    },
+    900: {
+      title: '900 n.e. — następcy Abbasydów, chrześcijańska Europa wciąż nie jednolita na północy',
+      caption:
+        'Około 900 n.e. islamski Zachód i pas następców Abbasydów nadal szeroki — Maghreb, Egipt, Arabia, Iran, Azja Środkowa, Sind; al-Andalus się trzyma. Chrześcijańska Europa to Bizancjum plus łaciński Zachód i Bałkany — wciąż nie jednolita Skandynawia, Bałtyk ani stepowa północ. Wschód: hinduistyczne Indie, silniejsza buddyjska Azja Płd.-Wsch., chińska warstwa cesarska. Ameryki nie naniesione.',
+      imageAlt:
+        'Schematyczna mapa religii na rok 900 n.e.: szeroki pas następców Abbasydów, chrześcijański łaciński Zachód i Bałkany, silniejsza buddyjska Azja Południowo-Wschodnia, Ameryki bez wypełnienia',
+      honestyPills: [
+        'Rekonstrukcja schematyczna',
+        'Nie spis',
+        'Stary Świat',
+        'Ameryki nie naniesione',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Europa / Śródziemnomorze',
+          text: 'Chrześcijańska Europa to Bizancjum plus łaciński Zachód i Bałkany — wciąż nie jednolita Skandynawia, Bałtyk ani stepowa północ. Al-Andalus trzyma się jako islamski.',
+        },
+        {
+          heading: 'Azja Południowo-Zachodnia / Iran',
+          text: 'Pas następców Abbasydów nadal szeroki przez Arabię, Iran, Azję Środkową i Sind. Cienkie kreskowanie pozostałości zoroastryjskiej w Iranie.',
+        },
+        {
+          heading: 'Azja Południowa / Środkowa / Wschodnia',
+          text: 'Hinduistyczne Indie; silniejsza buddyjska Azja Południowo-Wschodnia; chińska warstwa imperialna / ludowa.',
+        },
+        {
+          heading: 'Afryka',
+          text: 'Islamski Maghreb i Egipt. Aksum i Nubia to lekka krawędź chrześcijańska. Na południe od Sahary grube tradycyjne tło afrykańskie — nie ma jeszcze głębokiego islamu Sahelu.',
+        },
+        {
+          heading: 'Ameryki / Oceania',
+          text: 'Nie naniesione.',
+        },
+      ],
+      sources:
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna — nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+    },
   },
   lv: {
     1: {
@@ -656,6 +989,117 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       sources:
         'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
     },
+    700: {
+      title: '700. g. m.ē. — pirmo reizi plata islāma Omeijadu josla',
+      caption:
+        'Ap 700. g. m.ē. uz plāksnes pirmo reizi plats **islāma** Omeijadu josla — no Ibērijas un Magribas caur Ēģipti un Arābiju līdz Irānai, Transoksānai un Sindai. Kristietība tur Bizantiju, Itāliju, franku kodolu un Britāniju; Eiropas ziemeļi un austrumi vēl vietējās tradīcijas. Indija — hinduistu lietussargs; budistu koridori un Ķīna — savas joslas. Amerika un Okeānija nav kartētas.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 700. gadam m.ē.: pirmo reizi plata islāma Omeijadu josla no Ibērijas un Magribas caur Ēģipti un Arābiju līdz Irānai, Transoksānai un Sindai, kristīgā Bizantija Itālija franku kodols un Britānija, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav kartēta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Kristīga aizpilde Bizantijā, Itālijā, franku kodolā un Britānijā. Ibērija ir islāma. Eiropas ziemeļi un austrumi paliek vietējās tradīcijas.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Irāna',
+          text: 'Omeijadu islāma josla no Levantes caur Arābiju un Irānu līdz Transoksānai un Sindai. Plāns zoroastriskais palieku šrafējums Irānā.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hindu lietussargs Indijā; budistu koridori; Ķīnas impērijas / tautas slānis.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Omeijadu islāma josla Magribā — tostarp Lībijā — un Ēģiptē. Aksums un Nūbija ir viegla kristīga mala. Uz dienvidiem no Sahāras rupjš Āfrikas tradicionālais fons.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+    },
+    800: {
+      title: '800. g. m.ē. — abasīdu josla, spēcīgāki franku rietumi',
+      caption:
+        'Līdz 800. g. m.ē. islāma josla jau ir **abasīdu** — tā pati Vidusjūras–Irānas aizpilde, austrumos nedaudz pilnāka; al-Andalusa un Magriba joprojām uz plāksnes. Rietumos spēcīgāka franku / karolingiskā kristietība; Skandināvija un slāvu austrumi vēl vietējie. Indija hinduistu; budisms un ķīniešu imperiālais slānis tur Austrumus. Amerika nav kartēta.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 800. gadam m.ē.: abasīdu islāma josla pilnāka austrumos, spēcīgāka franku karolingiskā kristietība rietumos, hinduistu Indija, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav kartēta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Spēcīgāka franku / karolingiskā kristietība rietumos. Bizantija, Itālija un Britānija paliek kristīgas. Ibērija paliek islāma. Skandināvija un slāvu austrumi — vietējās tradīcijas.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Irāna',
+          text: 'Abasīdu islāma josla — tā pati Vidusjūras–Irānas aizpilde, austrumos nedaudz pilnāka. Plāns zoroastriskais palieku šrafējums Irānā. Al-Andalusa un Magriba joprojām uz plāksnes.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu Indija; budistu koridori; Ķīnas impērijas / tautas slānis.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Abasīdu islāma josla Magribā un Ēģiptē. Aksums un Nūbija ir viegla kristīga mala. Uz dienvidiem no Sahāras rupjš Āfrikas tradicionālais fons.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+    },
+    900: {
+      title: '900. g. m.ē. — abasīdu pēcteči, kristīgā Eiropa joprojām ne vienlaidus ziemeļos',
+      caption:
+        'Ap 900. g. m.ē. islāma Rietumi un abasīdu pēcteču josla joprojām plata — Magriba, Ēģipte, Arābija, Irāna, Centrālāzija, Sinda; al-Andalusa turas. Kristīgā Eiropa — Bizantija plus latīņu Rietumi un Balkāni — joprojām ne vienlaidus Skandināvija, Baltija vai stepes ziemeļi. Austrumi: hinduistu Indija, spēcīgāka budistu Dienvidaustrumāzija, ķīniešu imperiālais slānis. Amerika nav kartēta.',
+      imageAlt:
+        'Shēmatiska reliģiju karte 900. gadam m.ē.: plata abasīdu pēcteču josla, kristīgie latīņu Rietumi un Balkāni, spēcīgāka budistu Dienvidaustrumāzija, Amerika bez aizpildes',
+      honestyPills: [
+        'Shēmatiska rekonstrukcija',
+        'Ne tautas skaitīšana',
+        'Vecā pasaule',
+        'Amerika nav kartēta',
+      ],
+      continentBlocks: [
+        {
+          heading: 'Eiropa / Vidusjūra',
+          text: 'Kristīgā Eiropa — Bizantija plus latīņu Rietumi un Balkāni — joprojām ne vienlaidus Skandināvija, Baltija vai stepes ziemeļi. Al-Andalusa turas kā islāma.',
+        },
+        {
+          heading: 'Dienvidrietumāzija / Irāna',
+          text: 'Abasīdu pēcteču josla joprojām plata caur Arābiju, Irānu, Centrālāziju un Sindu. Plāns zoroastriskais palieku šrafējums Irānā.',
+        },
+        {
+          heading: 'Dienvidu / Centrālā / Austrumāzija',
+          text: 'Hinduistu Indija; spēcīgāka budistu Dienvidaustrumāzija; Ķīnas impērijas / tautas slānis.',
+        },
+        {
+          heading: 'Āfrika',
+          text: 'Islāma Magriba un Ēģipte. Aksums un Nūbija ir viegla kristīga mala. Uz dienvidiem no Sahāras rupjš Āfrikas tradicionālais fons — dziļa Sahelas islāma vēl nav.',
+        },
+        {
+          heading: 'Amerika / Okeānija',
+          text: 'Nav kartēts.',
+        },
+      ],
+      sources:
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija — ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+    },
   },
 };
 
@@ -663,6 +1107,7 @@ export const religionLegendLabels: Record<Locale, Record<ReligionLegendId, strin
   en: {
     roman_pagan: 'Roman civic / pagan',
     christian: 'Christian (dot / hatch)',
+    islam: 'Islam',
     jewish: 'Jewish communities',
     zoroastrian: 'Zoroastrian-leaning',
     hindu: 'Hindu umbrella',
@@ -677,6 +1122,7 @@ export const religionLegendLabels: Record<Locale, Record<ReligionLegendId, strin
   ru: {
     roman_pagan: 'Римский гражданский / языческий',
     christian: 'Христианство (точка / штрих)',
+    islam: 'Ислам',
     jewish: 'Еврейские общины',
     zoroastrian: 'Зороастрийский наклон',
     hindu: 'Индуистский зонт',
@@ -691,6 +1137,7 @@ export const religionLegendLabels: Record<Locale, Record<ReligionLegendId, strin
   pl: {
     roman_pagan: 'Rzymski obywatelski / pogański',
     christian: 'Chrześcijaństwo (kropka / kreska)',
+    islam: 'Islam',
     jewish: 'Wspólnoty żydowskie',
     zoroastrian: 'Nachylenie zoroastryjskie',
     hindu: 'Parasol hindu',
@@ -705,6 +1152,7 @@ export const religionLegendLabels: Record<Locale, Record<ReligionLegendId, strin
   lv: {
     roman_pagan: 'Romiešu pilsoniskais / pagāniskais',
     christian: 'Kristietība (punkts / šrafējums)',
+    islam: 'Islāms',
     jewish: 'Ebreju kopienas',
     zoroastrian: 'Zoroastrisks slīpums',
     hindu: 'Hindu lietussargs',

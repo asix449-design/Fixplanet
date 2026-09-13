@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Hand-authored schematic religion regions for the 1–600 CE pilot.
+"""Hand-authored schematic religion regions for the 1–900 CE shelf.
 
 Coarse ellipse unions — original Fix Planet artwork, not a trace of any
 commercial atlas. Americas / Oceania are omitted here; the renderer paints
@@ -238,6 +238,76 @@ def roman_pagan_residual_600() -> list[Polygon]:
     return [ellipse(2.0, 46.0, 5.0, 4.0), ellipse(-2.0, 52.0, 3.0, 2.8)]
 
 
+def islamic_umayyad_700() -> list[Polygon]:
+    """Iberia–Maghreb–Libya–Egypt–Arabia–Iran–Transoxiana/Sind wash."""
+    return [
+        ellipse(-4.5, 39.8, 6.8, 5.6),
+        ellipse(-6.0, 34.0, 10.5, 4.8),
+        ellipse(3.5, 33.2, 10.0, 4.2),
+        ellipse(13.5, 31.6, 8.5, 3.8),
+        ellipse(20.5, 31.8, 6.2, 3.4),
+        ellipse(31.0, 27.5, 7.0, 7.2),
+        ellipse(38.0, 33.2, 6.2, 5.4),
+        ellipse(44.0, 33.0, 6.5, 5.2),
+        ellipse(46.0, 22.0, 10.5, 9.2),
+        ellipse(54.0, 32.6, 14.5, 9.8),
+        ellipse(66.5, 38.2, 8.5, 5.2),
+        ellipse(68.2, 26.2, 5.8, 4.6),
+    ]
+
+
+def islamic_abbasid_800() -> list[Polygon]:
+    return islamic_umayyad_700() + [
+        ellipse(70.5, 39.4, 9.5, 5.6),
+        ellipse(71.0, 28.0, 5.4, 4.2),
+    ]
+
+
+def islamic_successor_900() -> list[Polygon]:
+    return islamic_abbasid_800() + [
+        ellipse(72.0, 40.2, 10.5, 6.0),
+        ellipse(70.5, 26.8, 6.8, 5.2),
+    ]
+
+
+def zoroastrian_remnant_iran() -> list[Polygon]:
+    return [ellipse(54.0, 32.4, 8.0, 5.5)]
+
+
+def christian_fill_700() -> list[Polygon]:
+    """Byzantium, Italy, Frankish core, Britain; light Aksum/Nubia. Not Iberia."""
+    return [
+        ellipse(29.0, 39.5, 13.5, 8.8),
+        ellipse(21.0, 43.8, 6.5, 5.2),
+        ellipse(12.5, 42.2, 8.2, 6.6),
+        ellipse(3.2, 46.4, 8.2, 6.0),
+        ellipse(-1.2, 52.6, 5.2, 4.6),
+        ellipse(38.0, 12.2, 5.2, 6.2),
+        ellipse(32.2, 16.8, 3.6, 4.0),
+    ]
+
+
+def christian_fill_800() -> list[Polygon]:
+    return christian_fill_700() + [
+        ellipse(4.5, 47.6, 9.5, 6.8),
+        ellipse(8.0, 49.0, 6.5, 5.0),
+    ]
+
+
+def christian_fill_900() -> list[Polygon]:
+    return christian_fill_800() + [
+        ellipse(22.0, 43.2, 8.0, 6.0),
+        ellipse(18.0, 44.8, 6.5, 5.0),
+    ]
+
+
+def buddhist_se_asia_900() -> list[Polygon]:
+    return buddhist_se_asia() + [
+        ellipse(102.0, 14.2, 7.2, 6.0),
+        ellipse(108.0, 15.8, 5.2, 4.6),
+    ]
+
+
 def year_layers(year: int) -> dict[str, list]:
     """Return style buckets for one year: fill / hatch / dots."""
     fills: list[tuple[str, list[Polygon]]] = [
@@ -289,7 +359,7 @@ def year_layers(year: int) -> dict[str, list]:
         hatches.append(("manichaean", manichaean_hatch_500()))
         hatches.append(("buddhist", buddhist_china_hatch()))
         dots = [("christian", lon, lat) for _, lon, lat in CHRISTIAN_DOTS_100]
-    else:  # 600 — no Islamic empire wash (conquests after 632)
+    elif year == 600:
         fills.append(("roman_pagan", roman_pagan_residual_600()))
         fills.append(("zoroastrian", zoroastrian_sasanian()))
         fills.append(("buddhist", buddhist_se_asia()))
@@ -298,6 +368,24 @@ def year_layers(year: int) -> dict[str, list]:
         hatches.append(("manichaean", manichaean_hatch_600()))
         hatches.append(("buddhist", buddhist_china_hatch()))
         dots = [("christian", lon, lat) for _, lon, lat in CHRISTIAN_DOTS_100]
+    elif year == 700:
+        fills.append(("buddhist", buddhist_se_asia()))
+        fills.append(("christian", christian_fill_700()))
+        fills.append(("islam", islamic_umayyad_700()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 800:
+        fills.append(("buddhist", buddhist_se_asia()))
+        fills.append(("christian", christian_fill_800()))
+        fills.append(("islam", islamic_abbasid_800()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    else:  # 900 — Abbasid-successor belt; no deep Sahel Islam
+        fills.append(("buddhist", buddhist_se_asia_900()))
+        fills.append(("christian", christian_fill_900()))
+        fills.append(("islam", islamic_successor_900()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
 
     jewish = [("jewish", ellipse(lon, lat, rx, ry)) for _, lon, lat, rx, ry in JEWISH_SPOTS]
     return {"fills": fills, "hatches": hatches, "dots": dots, "spots": jewish}
@@ -338,7 +426,7 @@ def collection_for(year: int) -> dict:
 
 def write_geojson() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in (1, 100, 200, 300, 400, 500, 600):
+    for year in (1, 100, 200, 300, 400, 500, 600, 700, 800, 900):
         dest = OUT / f"y{year:04d}.geojson"
         dest.write_text(json.dumps(collection_for(year), indent=2), encoding="utf-8")
         print(f"wrote {dest.relative_to(ROOT)}")
