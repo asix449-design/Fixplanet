@@ -8,6 +8,18 @@ import year1En from './border-essays/year-1-en.md?raw';
 import year1Lv from './border-essays/year-1-lv.md?raw';
 import year1Pl from './border-essays/year-1-pl.md?raw';
 import year1Ru from './border-essays/year-1-ru.md?raw';
+import year100En from './border-essays/year-100-en.md?raw';
+import year100Lv from './border-essays/year-100-lv.md?raw';
+import year100Pl from './border-essays/year-100-pl.md?raw';
+import year100Ru from './border-essays/year-100-ru.md?raw';
+import year200En from './border-essays/year-200-en.md?raw';
+import year200Lv from './border-essays/year-200-lv.md?raw';
+import year200Pl from './border-essays/year-200-pl.md?raw';
+import year200Ru from './border-essays/year-200-ru.md?raw';
+import year300En from './border-essays/year-300-en.md?raw';
+import year300Lv from './border-essays/year-300-lv.md?raw';
+import year300Pl from './border-essays/year-300-pl.md?raw';
+import year300Ru from './border-essays/year-300-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -174,19 +186,22 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   100: {
     title: '100 CE',
     caption:
-      'The high Roman Empire, Kushan and Han worlds, and a still-open Afro-Eurasian interior. Lines are scholarly guesses about control, not fences on the ground.',
+      'The 2nd century — Rome\'s "golden age" from Trajan to Marcus Aurelius and the break at Commodus; the Antonine Plague; in China Eastern Han cracks by the end (Yellow Turbans).',
+    essay: year100En,
     imageAlt: 'Reconstructed world political map for 100 CE',
   },
   200: {
     title: '200 CE',
     caption:
-      'Rome, Parthia/Sasanian prelude, and Han China after a century of strain. Blank land is not empty — it is unmapped as a state on this sheet.',
+      'Year 200 — no longer a calm antique noon: the empires still stand, but something creaks inside. Septimius Severus\'s Rome after Parthian campaigns and plague; China on the eve of the Three Kingdoms after Guandu; Parthia living out its days until the Sasanians. Quieter outside than it seems.',
+    essay: year200En,
     imageAlt: 'Reconstructed world political map for 200 CE',
   },
   300: {
     title: '300 CE',
     caption:
-      'A late-antique Afro-Eurasia: a divided Roman world taking shape, Sasanian Iran, and successor states in China. Treat colours as claims, not censuses.',
+      'Year 300 — Diocletian\'s tetrarchy; Sasanians in Persia; Jin in China already gnawing itself; Christians numerous — in three years the Great Persecution begins.',
+    essay: year300En,
     imageAlt: 'Reconstructed world political map for 300 CE',
   },
   400: {
@@ -328,19 +343,22 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   100: {
     title: '100 н. э.',
     caption:
-      'Высокая Римская империя, кушанский и ханьский миры, ещё открытая внутренность Афроевразии. Линии — учёные оценки контроля, не заборы на земле.',
+      'II век — римский «золотой век» от Траяна до Марка Аврелия и слом на Коммоде; Антонинова чума; в Китае Восточная Хань к концу трескается (Жёлтые повязки).',
+    essay: year100Ru,
     imageAlt: 'Реконструированная политическая карта мира на 100 год н. э.',
   },
   200: {
     title: '200 н. э.',
     caption:
-      'Рим, Парфия / канун Сасанидов и Хань после века напряжения. Пустая суша — не пустота, а отсутствие государственной заливки на этом листе.',
+      'Год 200 — уже не спокойный античный полдень: империи ещё стоят, но внутри скрипит. Рим Септимия Севера после парфянских походов и чумы; Китай накануне Троецарствия после Гуаньду; Парфия доживает до Сасанидов. Снаружи тише, чем кажется.',
+    essay: year200Ru,
     imageAlt: 'Реконструированная политическая карта мира на 200 год н. э.',
   },
   300: {
     title: '300 н. э.',
     caption:
-      'Поздняя античность: делится римский мир, Сасанидский Иран, государства-преемники в Китае. Цвета — притязания, не переписи.',
+      'Год 300 — тетрархия Диоклетиана; Сасаниды в Персии; Цзинь в Китае уже грызёт себя; христиане многочисленны — через три года начнётся Великое гонение.',
+    essay: year300Ru,
     imageAlt: 'Реконструированная политическая карта мира на 300 год н. э.',
   },
   400: {
@@ -482,19 +500,22 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   100: {
     title: '100 n.e.',
     caption:
-      'Wysokie cesarstwo rzymskie, świat Kuszanów i Han oraz wciąż otwarte wnętrze Afroeuroazji. Linie to naukowe zgadywanie kontroli, nie płoty w terenie.',
+      'II wiek — rzymski „złoty wiek” od Trajana do Marka Aureliusza i załamanie na Kommodusie; dżuma antonińska; w Chinach Wschodnia Han pod koniec pęka (Żółte Turbany).',
+    essay: year100Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 100 n.e.',
   },
   200: {
     title: '200 n.e.',
     caption:
-      'Rzym, Partia / przedświt Sasanidów i Han po stuleciu napięcia. Pusty ląd to nie pustka — to brak warstwy państwowej na tym arkuszu.',
+      'Rok 200 — już nie spokojne antyczne południe: imperia jeszcze stoją, ale wewnątrz skrzypi. Rzym Septymiusza Sewera po partyjskich wyprawach i dżumie; Chiny w przededniu Trójkrólestwa po Guandu; Partia dogorywa do Sasanidów. Na zewnątrz ciszej, niż się wydaje.',
+    essay: year200Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 200 n.e.',
   },
   300: {
     title: '300 n.e.',
     caption:
-      'Późny antyk: dzielący się świat rzymski, sasanidzki Iran, państwa sukcesyjne w Chinach. Kolory to roszczenia, nie spisy.',
+      'Rok 300 — tetrarchia Dioklecjana; Sasanidzi w Persji; Jin w Chinach już gryzie sama siebie; chrześcijan wielu — za trzy lata zacznie się Wielkie Prześladowanie.',
+    essay: year300Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 300 n.e.',
   },
   400: {
@@ -636,19 +657,22 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   100: {
     title: '100. m.ē.',
     caption:
-      'Augstā Romas impērija, kušānu un Haņu pasaules, joprojām atvērtais Āfroeiropas iekšiene. Līnijas ir zinātniski minējumi par kontroli, ne žogi uz zemes.',
+      'II gadsimts — romiešu „zelta laikmets” no Trajāna līdz Markam Aurēlijam un lūzums pie Komoda; Antonīnu mēris; Ķīnā Austrumu Haņi līdz beigām plīst (Dzeltenie lakati).',
+    essay: year100Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 100. gadam m.ē.',
   },
   200: {
     title: '200. m.ē.',
     caption:
-      'Roma, Partija / sasanīdu priekšvakars un Haņu Ķīna pēc gadsimta spriedzes. Tukšā sauszeme nav tukšums — tā ir valsts slāņa neesamība šajā lapā.',
+      '200. gads — vairs ne mierīgs antīkais pusdienlaiks: impērijas vēl stāv, bet iekšā čīkst. Septīmija Sevēra Roma pēc partiešu karagājieniem un mēra; Ķīna Trīs valstību priekšvakarā pēc Guandu; Partija nodzīvo līdz Sasānīdiem. Ārpusē klusāk, nekā šķiet.',
+    essay: year200Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 200. gadam m.ē.',
   },
   300: {
     title: '300. m.ē.',
     caption:
-      'Vēlā antīkā pasaule: dalās Romas pasaule, sasanīdu Irāna, pēcteču valstis Ķīnā. Krāsas ir pretenzijas, ne tautas skaitīšana.',
+      '300. gads — Diokletiāna tetrarhija; Sasānīdi Persijā; Dzjiņ Ķīnā jau grauž sevi; kristiešu daudz — pēc trim gadiem sāksies Lielā vajāšana.',
+    essay: year300Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 300. gadam m.ē.',
   },
   400: {
