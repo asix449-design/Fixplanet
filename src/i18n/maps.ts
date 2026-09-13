@@ -71,7 +71,7 @@ const pageEn: MapsPage = {
   categoryEyebrows: {
     subsurface: 'oil, gas, minerals',
     forests: 'canopy, loss, and parks',
-    religious: '1–600 CE schematics'
+    religious: '1–600 CE schematics',
     'history-of-borders': '1 CE to now',
   },
   cardCta: 'Read the card →',
@@ -138,7 +138,7 @@ const pageRu: MapsPage = {
   categoryEyebrows: {
     subsurface: 'нефть, газ, ископаемые',
     forests: 'полог, потери и парки',
-    religious: 'схемы 1–600 н. э.'
+    religious: 'схемы 1–600 н. э.',
     'history-of-borders': 'от 1 н. э. до сейчас',
   },
   cardCta: 'Читать карточку →',
@@ -205,7 +205,7 @@ const pagePl: MapsPage = {
   categoryEyebrows: {
     subsurface: 'ropa, gaz, minerały',
     forests: 'okap, ubytek i parki',
-    religious: 'schematy 1–600 n.e.'
+    religious: 'schematy 1–600 n.e.',
     'history-of-borders': 'od 1 n.e. do dziś',
   },
   cardCta: 'Czytaj kartę →',
@@ -272,7 +272,7 @@ const pageLv: MapsPage = {
   categoryEyebrows: {
     subsurface: 'nafta, gāze, izrakteņi',
     forests: 'vainags, zudums un parki',
-    religious: 'shēmas 1.–600. m.ē.'
+    religious: 'shēmas 1.–600. m.ē.',
     'history-of-borders': 'no 1. m.ē. līdz šodienai',
   },
   cardCta: 'Lasīt kartīti →',
