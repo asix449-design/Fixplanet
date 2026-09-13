@@ -20,6 +20,10 @@ import year300En from './border-essays/year-300-en.md?raw';
 import year300Lv from './border-essays/year-300-lv.md?raw';
 import year300Pl from './border-essays/year-300-pl.md?raw';
 import year300Ru from './border-essays/year-300-ru.md?raw';
+import year400En from './border-essays/year-400-en.md?raw';
+import year400Lv from './border-essays/year-400-lv.md?raw';
+import year400Pl from './border-essays/year-400-pl.md?raw';
+import year400Ru from './border-essays/year-400-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -207,7 +211,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   400: {
     title: '400 CE',
     caption:
-      'After 376 and before 476: migration-era Europe, a Sasanian plateau, Gupta India, and a fragmented China. Many “borders” here are war fronts.',
+      'Year 400 — already two empires: Honorius in the West, Arcadius in the East; Goths inside; ten years until Alaric in Rome; Christianity official since 380.',
+    essay: year400En,
     imageAlt: 'Reconstructed world political map for 400 CE',
   },
   500: {
@@ -364,7 +369,8 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   400: {
     title: '400 н. э.',
     caption:
-      'После 376-го и до 476-го: эпоха переселений в Европе, Сасаниды, Гупты, раздробленный Китай. Многие «границы» здесь — линии фронта.',
+      'Год 400 — империя уже две: Гонорий на Западе, Аркадий на Востоке; готы внутри; до Алариха в Риме десять лет; христианство официально с 380-го.',
+    essay: year400Ru,
     imageAlt: 'Реконструированная политическая карта мира на 400 год н. э.',
   },
   500: {
@@ -521,7 +527,8 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   400: {
     title: '400 n.e.',
     caption:
-      'Po 376 i przed 476: Europa wędrówek ludów, Sasanidzi, Guptowie, rozbita Chiny. Wiele „granic” to tu linie frontu.',
+      'Rok 400 — imperium już dwa: Honoriusz na Zachodzie, Arkadiusz na Wschodzie; Goci wewnątrz; do Alaryka w Rzymie dziesięć lat; chrześcijaństwo oficjalnie od 380.',
+    essay: year400Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 400 n.e.',
   },
   500: {
@@ -678,7 +685,8 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   400: {
     title: '400. m.ē.',
     caption:
-      'Pēc 376. un pirms 476.: tautu staigāšanas Eiropa, sasanīdi, Guptas, sašķelta Ķīna. Daudzas „robežas” šeit ir frontes.',
+      '400. gads — impērija jau divas: Honorijs Rietumos, Arkādijs Austrumos; goti iekšā; līdz Alariham Romā desmit gadi; kristietība oficiāli no 380.',
+    essay: year400Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 400. gadam m.ē.',
   },
   500: {
