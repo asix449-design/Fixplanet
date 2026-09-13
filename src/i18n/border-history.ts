@@ -640,7 +640,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1200: {
     title: '1200 n.e.',
     caption:
-      'W przededniu wybuchu mongolskiego: dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200. Rekonstrukcja, nie kataster.',
+      'Rok 1200 — Innocenty III na szczycie; Czwarta krucjata jeszcze w kazaniu; Temudżyn już zebrał Mongołów; na Rusi Wsiewołod Wielkie Gniazdo.',
     essay: year1200Pl,
     imageAlt: 'Dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200',
     sourceShort: 'Rekonstrukcja założyciela',
