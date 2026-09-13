@@ -1,6 +1,7 @@
 export const RELIGION_LEGEND_IDS = [
   'roman_pagan',
   'christian',
+  'islam',
   'jewish',
   'zoroastrian',
   'hindu',
@@ -18,6 +19,7 @@ export type ReligionLegendId = (typeof RELIGION_LEGEND_IDS)[number];
 export const RELIGION_LEGEND_COLORS: Record<ReligionLegendId, string> = {
   roman_pagan: '#C4784A',
   christian: '#6B3A7A',
+  islam: '#2F7A40',
   jewish: '#D4A017',
   zoroastrian: '#2E8B6E',
   hindu: '#E07A2F',
@@ -30,6 +32,6 @@ export const RELIGION_LEGEND_COLORS: Record<ReligionLegendId, string> = {
   unmapped: '#B8B3A8',
 };
 
-/** Years published in this pilot. Later centuries stay in the data file unpublished. */
-export const RELIGION_PILOT_YEARS = [1, 100, 200, 300, 400, 500, 600] as const;
-export const RELIGION_PUBLISHED_YEARS = [1, 100, 200, 300, 400, 500, 600] as const;
+/** Years published in this schematic shelf. Later centuries stay unpublished. */
+export const RELIGION_PILOT_YEARS = [1, 100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
+export const RELIGION_PUBLISHED_YEARS = [1, 100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
