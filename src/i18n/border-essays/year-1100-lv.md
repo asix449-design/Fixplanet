@@ -5,11 +5,11 @@ Pirmais krusta karš jau noticis. 1099. gadā bruņinieki ieņēma Jeruzalemi �
 
 Viņa brālis **Baldvins**, līdz tam Edesas grāfs, iet uz dienvidiem. Patriarhs Daimberts, Pizas cilvēks, grib, lai svētā pilsēta būtu baznīcas. Bruņinieki grib karali. 25. decembrī Betlēmes Kristus dzimšanas baznīcā Baldvinu kronē. Rodas **Jeruzalemes karaļvalsts**. Blakus — Antiohija, Edesa, drīz Tripole. Šaura cietokšņu lente uz sveša krasta.
 
-Antiohijas kņazs Boemunds tajā pašā gadā nonāk dānišmendu gūstā. Regents kļūst Tankreds. Haifu ieņem ar Venēcijas flotes palīdzību. Bez itāļu kuģiem šīs valstis uzreiz nosmaktu.
+Antiohijas kņazs Boemunds tajā pašā gadā nonāk dānišmendu gūstā. Reģents kļūst Tankreds. Haifu ieņem ar Venēcijas flotes palīdzību. Bez itāļu kuģiem šīs valstis uzreiz nosmaktu.
 
 Musulmaņu pasaule nav viena. Selčuki kaujas savā starpā. Ēģiptes Fatimīdi grib atgūt Palestīnu. Ar to krustneši dzīvo: kamēr ienaidnieki nav salikušies vienā Saladīnā — un līdz viņam gandrīz gadsimts.
 
-Pāvests Pašālijs II sauc jaunus cilvēkus uz Austrumiem. Ies «1101. gada gājiens» — vēlāk to sauks par to gājienu, kas baidījās pirmajā reizē. Selčuki Anatolijā tos sadragās pa gabaliem.
+Pāvests Pashālijs II sauc jaunus cilvēkus uz Austrumiem. Ies «1101. gada gājiens» — vēlāk to sauks par to gājienu, kas baidījās pirmajā reizē. Selčuki Anatolijā tos sadragās pa gabaliem.
 
 ### Eiropa
 Anglija. 2. augustā Jaunajā mežā medībās bulta trāpa karalim **Vilhelmam Sarkanajam**, Iekarotāja dēlam. Oficiāli — nelaimes gadījums. Šāva it kā vasalis Tirels, uzreiz aizbēga. Jaunākais brālis **Henrijs I** negaida bēres: auļo uz Vinčesteru pēc kases un pēc trim dienām kronējas Vestminsterā. Vecākais brālis Roberts vēl krusta karā. Lai baroni neceltos, Henrijs izdod «Brīvību hartu» — sola neaplaupīt viņus kā Sarkanais. Tā nav 1215. gada Lielā harta, bet papīrs jau ir: karalis rakstiski ierobežo sevi.
