@@ -287,6 +287,26 @@ const candidates = {
     'Tanygrisiau Hydro-Electric Pumped-Storage Power Station - geograph.org.uk - 3545790.jpg',
     'Silver Jackets team tours the Raccoon Mountain Pumped-Storage Plant.jpg',
   ],
+  hydropower: [
+    'ThreeGorgesDam-China2009.jpg',
+    'Itaipu Dam 4084 filtered (1).jpg',
+    'Three Gorges Dam, China.jpg',
+  ],
+  'nuclear-fission': [
+    'Cattenom-Kernkraftwerk-02-2013-gje.jpg',
+    'Nuclear Power Plant Cattenom.jpg',
+    'Diablo Canyon Nuclear Power Plant.jpg',
+  ],
+  'concentrating-solar-power': [
+    'Gemasolar Thermosolar Plant 2.jpg',
+    'PS10 solar power tower.jpg',
+    'Ivanpah Solar Electric Generating System Tower.jpg',
+  ],
+  'farm-biogas-power': [
+    'Farm-scale biogas reactors (3092936939).jpg',
+    'Pennwood Farm Digester (7598268164).jpg',
+    'Secondary digester and storage for biogas (tank goes 8 m into the ground). (3092933633).jpg',
+  ],
 };
 
 async function commonsInfo(title) {

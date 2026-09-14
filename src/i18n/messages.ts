@@ -131,7 +131,7 @@ const en = {
       cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
       materials: 'Lower-carbon cement, mass timber, and cleaner steel paths.',
       oceans: 'Catching plastic, restoring shores, and fishing with less bycatch.',
-      energy: 'Wind, solar, and heat pumps that already run on real grids.',
+      energy: 'Wind, solar, hydro, nuclear, storage, and heat already running on real grids.',
     } satisfies Record<TagKey | 'all', string>,
   },
   wildlifePage: {
@@ -459,7 +459,7 @@ const ru: typeof en = {
       cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
       materials: 'Цемент с меньшим углеродом, массивная древесина и более чистая сталь.',
       oceans: 'Перехват пластика, восстановление берегов и лов с меньшим приловом.',
-      energy: 'Ветер, солнце и тепловые насосы, которые уже работают в реальных сетях.',
+      energy: 'Ветер, солнце, гидро, атом, накопление и тепло — уже на реальных сетях.',
     },
   },
   wildlifePage: {
@@ -790,7 +790,7 @@ const pl: typeof en = {
       cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
       materials: 'Cement o niższym śladzie, drewno klejone i czystsza stal.',
       oceans: 'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem.',
-      energy: 'Wiatr, słońce i pompy ciepła, które już działają w prawdziwych sieciach.',
+      energy: 'Wiatr, słońce, hydro, atom, magazyny i ciepło — już na prawdziwych sieciach.',
     },
   },
   wildlifePage: {
@@ -1121,7 +1121,7 @@ const lv: typeof en = {
       cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
       materials: 'Cements ar mazāku oglekli, masīvkoksne un tīrāks tērauds.',
       oceans: 'Plastmasas uztveršana, krastu atjaunošana un zvejas ar mazāku piezveju.',
-      energy: 'Vējš, saule un siltumsūkņi, kas jau darbojas īstos tīklos.',
+      energy: 'Vējš, saule, hidro, kodols, uzkrāšana un siltums — jau reālos tīklos.',
     },
   },
   wildlifePage: {

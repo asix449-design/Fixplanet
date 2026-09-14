@@ -161,4 +161,32 @@ export const pack2Pl: Record<string, SolutionCopy> = {
     fix: 'Elektrownia szczytowo-pompowa podnosi wodę do górnego zbiornika i spuszcza ją przez turbiny, gdy brakuje mocy. Specjalny raport IEA o hydroenergetyce nazywa elastyczność zbiorników i ESP niezrównaną i prognozuje ESP jako 30% przyrostu netto mocy wodnych do 2030 r. IEA oszacowała, że istniejące konwencjonalne zbiorniki mogą zmagazynować około 1500 TWh w jednym cyklu — znacznie więcej energii niż dzisiejsza flota ESP albo baterie. Nowe elektrownie potrzebują dwóch mis, lat pozwoleń i rynku, który płaci za magazyn, nie tylko za kilowatogodziny. Pompownie to nie nowa rzeka.',
     imageAlt: 'Zadrzewiony górny zbiornik elektrowni szczytowo-pompowej Bath County w górskiej misie',
   },
+  hydropower: {
+    problemTitle: 'Kopalniana baza tam, gdzie rzeki już napędzają turbiny',
+    fixTitle: 'Konwencjonalna hydroenergetyka',
+    problem: 'Kopalniana baza tam, gdzie rzeki już napędzają turbiny',
+    fix: 'Zapory i elektrownie przepływowe, które już produkują prąd — największe odnawialne źródło na świecie. To nie elektrownia szczytowo-pompowa (magazyn) z tej samej półki.',
+    imageAlt: 'Zapora Trzech Przełomów na Jangcy: betonowa ściana i przelew, powyżej zbiornik',
+  },
+  'nuclear-fission': {
+    problemTitle: 'Potrzebna stabilna niskoemisyjna MWh bez czekania na pogodę',
+    fixTitle: 'Rozszczepienie jądra (działająca flota)',
+    problem: 'Potrzebna stabilna niskoemisyjna MWh bez czekania na pogodę',
+    fix: 'Komercyjne reaktory już w sieci. To działająca flota, nie laboratoryjny SMR (piloty — na Innovations).',
+    imageAlt: 'Elektrownia jądrowa Cattenom: cztery pracujące bloki i chłodnie kominowe nad Mozelą',
+  },
+  'concentrating-solar-power': {
+    problemTitle: 'Dużo słońca w dzień, mało taniego wieczornego magazynu na miejscu',
+    fixTitle: 'Skoncentrowana energia słoneczna cieplna (CSP)',
+    problem: 'Dużo słońca w dzień, mało taniego wieczornego magazynu na miejscu',
+    fix: 'Lustra grzeją czynnik dla turbiny, często z magazynem soli. Już działa w Hiszpanii, na południowym zachodzie USA, MENA, w Chinach i RPA. To nie karty PV na tej półce.',
+    imageAlt: 'Elektrownia termosolarna Gemasolar w Hiszpanii: centralna wieża w kręgu luster heliostatów',
+  },
+  'farm-biogas-power': {
+    problemTitle: 'Metan z obornika i diesle na fermach zwierzęcych',
+    fixTitle: 'Biogaz z farmy na prąd',
+    problem: 'Metan z obornika i diesle na fermach zwierzęcych',
+    fix: 'Fermentory na farmach: obornik → silnik/CHP. Już w użyciu (EPA AgSTAR i podobne). Nie mylić z kartą odpadów o żywności ani z gazem składowiskowym.',
+    imageAlt: 'Fermentory biogazu w skali farmy: cylindryczne zbiorniki na wiejskim podwórzu przy budynkach gospodarczych',
+  },
 };

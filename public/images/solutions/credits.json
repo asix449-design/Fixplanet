@@ -501,5 +501,37 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bath_County_Pumped_Storage_Station_-_upper_reservoir.jpg",
     "artist": "Z22",
     "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "hydropower",
+    "file": "hydropower.jpg",
+    "commonsTitle": "ThreeGorgesDam-China2009.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ThreeGorgesDam-China2009.jpg",
+    "artist": "Source file: Le Grand Portage. Derivative work: Rehman",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "nuclear-fission",
+    "file": "nuclear-fission.jpg",
+    "commonsTitle": "Cattenom-Kernkraftwerk-02-2013-gje.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cattenom-Kernkraftwerk-02-2013-gje.jpg",
+    "artist": "Gerd Eichmann",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "concentrating-solar-power",
+    "file": "concentrating-solar-power.jpg",
+    "commonsTitle": "Gemasolar Thermosolar Plant 2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gemasolar_Thermosolar_Plant_2.jpg",
+    "artist": "kallerna",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "farm-biogas-power",
+    "file": "farm-biogas-power.jpg",
+    "commonsTitle": "Farm-scale biogas reactors (3092936939).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Farm-scale_biogas_reactors_(3092936939).jpg",
+    "artist": "SuSanA Secretariat",
+    "license": "CC BY 2.0"
   }
 ]
