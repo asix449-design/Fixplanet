@@ -61,6 +61,7 @@ import year1300Lv from './border-essays/year-1300-lv.md?raw';
 import year1300Pl from './border-essays/year-1300-pl.md?raw';
 import year1300Ru from './border-essays/year-1300-ru.md?raw';
 import year1400En from './border-essays/year-1400-en.md?raw';
+import year1400Pl from './border-essays/year-1400-pl.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -663,6 +664,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1400 n.e. — najbliższa mapa: 1500',
     caption:
       'Rok 1400 — Timur pcha się na Syrię; w Europie dwóch papieży i wojna stuletnia; Moskwa Wasyla I między Ordą a Litwą; w Chinach Zhu Di bije się o tron Mingów.',
+    essay: year1400Pl,
     imageAlt: 'Rekonstrukcja świata z 1500 jako najbliższy arkusz dla 1400',
   },
   1500: {
