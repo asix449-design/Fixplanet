@@ -71,6 +71,7 @@ import year1500Ru from './border-essays/year-1500-ru.md?raw';
 import year1600En from './border-essays/year-1600-en.md?raw';
 import year1600Lv from './border-essays/year-1600-lv.md?raw';
 import year1600Pl from './border-essays/year-1600-pl.md?raw';
+import year1600Ru from './border-essays/year-1600-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -522,6 +523,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1600 н. э. — ближайшая карта: 1648',
     caption:
       'Год 1600 — Япония заканчивает гражданские войны при Сэкигахаре; Англия выдаёт хартию Ост-Индской компании; в Риме жгут Бруно; в Москве Борис Годунов — и страна ещё не знает про голод и Смуту.',
+    essay: year1600Ru,
     imageAlt: 'Политическая реконструкция мира 1648 года для шага 1600',
   },
   1700: {
