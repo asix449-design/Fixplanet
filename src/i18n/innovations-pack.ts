@@ -240,6 +240,22 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       sourcesNote:
         'ESA Biomass mission page (FutureEO): first P-band SAR in space; launch 29 April 2025, Kourou / Vega-C. Not weather, not an emissions inventory.',
     },
+    'vesuvius-challenge': {
+      title: 'Vesuvius Challenge — sealed scrolls',
+      hook: 'X-ray CT and machine learning recovered first passages in Feb 2024 and a full Herculaneum scroll in June 2026 — a prize contest, not magic OCR of all antiquity.',
+      imageAlt:
+        'Carbonized Herculaneum papyrus fragments (PHerc. 1103 and PHerc. 110) — the class of sealed rolls Vesuvius Challenge reads without opening',
+      what: 'Vesuvius Challenge is an open machine-learning and imaging contest to read the carbonized Herculaneum papyri without opening them. The scrolls come from the Villa of the Papyri — a luxury villa at Herculaneum buried under hot mud and ash when Mount Vesuvius erupted in AD 79. Many rolls were found in the 1750s; physical unrolling often destroyed them. Hundreds remain sealed. The challenge launched in March 2023. Co-founders and founding sponsors include Nat Friedman and Daniel Gross, with principal advisor Brent Seales (EduceLab / University of Kentucky), whose lab pioneered “virtual unwrapping.” Partners include the National Library of Naples, synchrotron facilities (Diamond Light Source; ESRF BM18), and Scroll Prize, Inc., a US nonprofit. As of scrollprize.org (checked 14 Sep 2026), roughly $1.87M in prizes have been awarded; a new $1M Grand Prize targets June 2027.',
+      problem:
+        'A Roman villa library carbonized in AD 79 is too fragile to unroll. Opening by hand destroyed scrolls for centuries.',
+      how: 'Scan — High-resolution X-ray CT (often at a synchrotron) builds a 3D volume of the sealed roll. Carbon ink barely differs from carbonized papyrus in the scan. Trace and flatten — Software follows the wound sheet inside the volume and flattens it into a virtual page (segmentation / virtual unwrapping). Dense packing and tears still defeat full automation. Detect ink — Models trained on fragments with visible ink learn faint texture cues (including the “crackle” pattern) and paint ink probability on the flattened surface. Scholars then read and check the Greek. Winning methods and scan data are released openly.',
+      players:
+        '5 Feb 2024 — 2023 Grand Prize ($700,000) to Youssef Nader, Luke Farritor, and Julian Schilliger: ~15 columns / 2,000+ characters (~5%) from PHerc. Paris 4 (Scroll 1) — Epicurean discussion of pleasure (likely Philodemus). First Letters earlier in late 2023 (Farritor’s word πορφύρας / “purple”). 2024 prize cycle — 2024 Grand Prize (90% of four scrolls) unclaimed; automated segmentation awards given, but ink recovery not yet at the 2023 bar across all targets. 5 May 2025 — First Title Prize ($60,000) to Marcel Roth and Micha Nowak: title of still-rolled PHerc. 172 as Philodemus, On Vices (Book 1, pending full scholarly confirmation). 25 Jun 2026 — First complete virtual unwrapping and reading of preserved text in PHerc. 1667 (Scroll 4); preprint on arXiv; related work in Scientific Reports (2026). Open data at scrollprize.org/data. Ongoing — Progress prizes monthly; 2027 Grand Prize ($1M pool, deadline 25 Jun 2027).',
+      risks:
+        'Not every scanned scroll yields readable ink yet; organizers report ink signal on a minority of the ~45 scanned scrolls and fragments. The method targets carbonized, still-rolled Herculaneum-type material — not general OCR for all ancient books. Models can hallucinate letter shapes; prizes require open methods and papyrological review. Hundreds of rolls remain unread; much of the villa may still be underground.',
+      sourcesNote:
+        'Primary: scrollprize.org (checked 14 Sep 2026). 2023 Grand Prize awarded February 2024; 2024 Grand Prize unclaimed. Not a reading of all antiquity.',
+    },
   },
   ru: packRu,
   pl: packPl,

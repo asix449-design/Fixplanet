@@ -289,5 +289,13 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:ESA_Biomass_Satellite_seeing_wood_through_trees.png",
     "artist": "ESA/ATG Medialab",
     "license": "CC BY-SA 3.0 igo"
+  },
+  {
+    "slug": "vesuvius-challenge",
+    "file": "vesuvius-challenge.jpg",
+    "commonsTitle": "Herculaneum papyri.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herculaneum_papyri.jpg",
+    "artist": "Sara Stabile, Francesca Palermo, Inna Bukreeva, Daniela Mele, Vincenzo Formoso, Roberto Bartolino & Alessia Cedola",
+    "license": "CC BY 4.0"
   }
 ]
