@@ -69,6 +69,7 @@ import year1500Lv from './border-essays/year-1500-lv.md?raw';
 import year1500Pl from './border-essays/year-1500-pl.md?raw';
 import year1500Ru from './border-essays/year-1500-ru.md?raw';
 import year1600En from './border-essays/year-1600-en.md?raw';
+import year1600Lv from './border-essays/year-1600-lv.md?raw';
 import year1600Pl from './border-essays/year-1600-pl.md?raw';
 
 export type BorderHistoryPage = {
@@ -860,6 +861,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1600. m.ē. — tuvākā karte: 1648',
     caption:
       'Gads 1600 — Japāna beidz pilsoņu karus pie Sekigaharas; Anglija izsniedz Austrumindijas kompānijas hartu; Romā dedzina Bruno; Maskavā Boriss Godunovs — un zeme vēl nezina par badu un Juku laiku.',
+    essay: year1600Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 1648. gada 1600. soļa vietā',
   },
   1700: {
