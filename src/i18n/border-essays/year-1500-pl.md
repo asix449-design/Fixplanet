@@ -22,7 +22,7 @@ Portugalski król Manuel I już wie: Vasco da Gama w 1498 doszedł do Indii wok�
 
 Hiszpanie w tym samym roku też grzebią przy tym brzegu: Pinzón jeszcze w styczniu natyka się na północ Brazylii. Kto «pierwszy» — potem będą się spierać historycy. Politycznie wygrał papier: Brazylia stanie się portugalska, cały pozostały wielki kawałek Ameryki — hiszpański. Nikt jeszcze nie wie, jak ogromny jest kontynent. Kolumb jeszcze żyje i wciąż myli wyspy z Azją.
 
-W Indiach Cabralowi wyjdzie źle: w Kalikucie faktorę wytną, on odpowie ogniem po okrętach, odejdzie do innego księcia, załaduje pieprz i wróci niekompletnym składem. Schemat na lata naprzód: handel plus armata.
+W Indiach Cabralowi wyjdzie źle: w Kalikucie faktorię wytną, on odpowie ogniem po okrętach, odejdzie do innego księcia, załaduje pieprz i wróci niekompletnym składem. Schemat na lata naprzód: handel plus armata.
 
 ### Rosja
 Panujący — **Iwan III**, później nazwą go Wielkim. Już zebrał wokół Moskwy Twer, Nowogród, kupę księstw, przestał kłaniać się Ordzie. Dwugłowy orzeł na pieczęci, ceglany Kreml, żona kiedyś była bizantyńską księżniczką Zofią Paleolog — stąd nawyk czuć się «trzecim Rzymem», choć słowa te trochę później.
