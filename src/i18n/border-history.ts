@@ -79,6 +79,7 @@ import year1700Ru from './border-essays/year-1700-ru.md?raw';
 import year1800En from './border-essays/year-1800-en.md?raw';
 import year1800Lv from './border-essays/year-1800-lv.md?raw';
 import year1800Pl from './border-essays/year-1800-pl.md?raw';
+import year1800Ru from './border-essays/year-1800-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -549,6 +550,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1800 н. э.',
     caption:
       'Год 1800 — Наполеон ещё консул: Маренго почти проигран и выигран в один день; столица США переезжает в Вашингтон; Павел I ссорится с союзниками и тянется к Бонапарту.',
+    essay: year1800Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1800 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
