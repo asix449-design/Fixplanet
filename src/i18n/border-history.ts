@@ -67,6 +67,7 @@ import year1400Ru from './border-essays/year-1400-ru.md?raw';
 import year1500En from './border-essays/year-1500-en.md?raw';
 import year1500Lv from './border-essays/year-1500-lv.md?raw';
 import year1500Pl from './border-essays/year-1500-pl.md?raw';
+import year1500Ru from './border-essays/year-1500-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -510,6 +511,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1500 н. э.',
     caption:
       'Год 1500 — Кабрал «находит» Бразилию по пути в Индию; Иван III бьёт Литву на Ведроши; в Италии французы и герцоги режутся за города; Реформации ещё нет.',
+    essay: year1500Ru,
     imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
   },
   1600: {
