@@ -314,4 +314,44 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Zielony choropleth różnorodności językowej według krajów: ciemniejsza zieleń tam, gdzie wiele języków dzieli państwo, bledsza tam, gdzie mało — nie atlas rodzin językowych',
   },
+  'disputed-breakaway-areas': {
+    title: 'Sporne i odłączone terytoria',
+    hook: 'Poligony, które Natural Earth oznacza jako odłączone lub sporne — roboczy zestaw kartografa dla spornego lądu, nie wyrok sądu i nie druga warstwa państw świata.',
+    description:
+      'Warstwa Admin 0 – Breakaway, disputed areas. Ta sama rodzina public domain co karta państw, ale inny obiekt: sporne / specjalne poligony, nie zwykłe wypełnienie admin-0. Nie czytać jako uznanie państwa. EEZ zostaje morskie; tu ląd.',
+    howToRead: 'Nie czytać jako uznanie państwa. EEZ zostaje morskie; tu ląd.',
+    caveats:
+      'Natural Earth oznacza te poligony jako odłączone lub sporne, żeby w ogóle narysować mapę. To wybór kartograficzny, nie uznanie państwa i nie wyrok sądu. Nie scalać tej warstwy z kartą państw jako drugiego wypełnienia admin-0.',
+    licenseNote:
+      'Natural Earth jest w domenie publicznej. Miniatura przekolorowuje tylko poligony Admin 0 – Breakaway, disputed areas. Miniatura to kartografia, nie wyrok sądu.',
+    imageAlt:
+      'Mapa świata z kremowym lądem i jasnoniebieskim oceanem; koralowe poligony zaznaczają tylko sporne i odłączone terytoria Natural Earth — nie drugie wypełnienie państw i nie wyrok sądu',
+  },
+  'states-provinces': {
+    title: 'Stany i prowincje',
+    hook: 'Wewnętrzne jednostki pierwszego rzędu (stany, prowincje, obwody…) — linie administracyjne wewnątrz państw, nie drugi atlas granic suwerennych i nie EEZ.',
+    description:
+      'Warstwa Admin 1. Uzupełnia kartę państw: wewnątrz kraju, nie suwerenność i nie morze. Uogólnienie do map małoskalowych; nie GADM. Natural Earth — ta sama licencja co żywa karta krajów.',
+    howToRead: 'Uogólnienie do map małoskalowych; nie GADM. Natural Earth — ta sama licencja co żywa karta krajów.',
+    caveats:
+      'Nazwy i granice prowincji się zmieniają. Natural Earth uogólnia jednostki pierwszego rzędu do map małoskalowych. To nie GADM i nie spis samorządów.',
+    licenseNote:
+      'Natural Earth jest w domenie publicznej. Miniatura pokazuje kontury stanów i prowincji Admin 1. Miniatura to kartografia, nie wyrok sądu.',
+    imageAlt:
+      'Mapa świata wewnętrznych jednostek pierwszego rzędu cienkimi konturami — stany, prowincje, obwody — nie choropleth państw i nie strefy morskie',
+  },
+  'land-boundary-lines': {
+    title: 'Linie granic lądowych',
+    hook: 'Międzynarodowe granice lądowe jako linie — krawędź między poligonami, nie wypełnienie państw i nie morskie limity EEZ.',
+    description:
+      'Liniowa warstwa granic przy admin-0. Uzupełnia wypełnienie państw; nie EEZ i nie sporne poligony. Te same zastrzeżenia o spornych odcinkach — linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
+    howToRead:
+      'Te same zastrzeżenia o spornych odcinkach — linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
+    caveats:
+      'Niektóre odcinki granic lądowych są sporne; Natural Earth dokumentuje ten wybór. Linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
+    licenseNote:
+      'Natural Earth jest w domenie publicznej. Miniatura to liniowa warstwa granic lądowych Admin 0. Miniatura to kartografia, nie wyrok sądu.',
+    imageAlt:
+      'Mapa świata międzynarodowych granic lądowych ciemnymi liniami na jasnym lądzie — geometria liniowa, nie wypełnienie państw i nie limity morskie',
+  },
 };

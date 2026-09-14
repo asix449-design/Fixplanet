@@ -62,7 +62,8 @@ const pageEn: MapsPage = {
       'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
     pollution: 'Air, waste, and emissions with a named source.',
     subsurface: 'Oil, gas, and minerals — fossil fuel and fossil gold.',
-    political: 'States, disputed areas, and administrative lines.',
+    political:
+      'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ — each card names the public vector set and what it is not.',
     forests: 'Canopy, loss, and protected areas from named sources.',
     water: 'Rivers, basins, and freshwater stress.',
     population: 'Where people live, at the vintage we can source.',
@@ -129,7 +130,8 @@ const pageRu: MapsPage = {
       'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
     subsurface: 'Нефть, газ и ископаемые — топливо и золото недр.',
-    political: 'Государства, спорные зоны и административные линии.',
+    political:
+      'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ — на каждой карточке указан открытый векторный набор и что он не измеряет.',
     forests: 'Полог, потери и ООПТ по названным источникам.',
     water: 'Реки, бассейны и нехватка пресной воды.',
     population: 'Где живут люди — на тот год, который можем указать.',
@@ -196,7 +198,8 @@ const pagePl: MapsPage = {
       'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
     subsurface: 'Ropa, gaz i minerały — paliwo kopalne i kopalne złoto.',
-    political: 'Państwa, spory i linie administracyjne.',
+    political:
+      'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ — na każdej karcie nazwany jest otwarty zestaw wektorów i to, czego on nie mierzy.',
     forests: 'Okap, ubytek i obszary chronione z nazwanych źródeł.',
     water: 'Rzeki, zlewnie i presja na wodę słodką.',
     population: 'Gdzie mieszkają ludzie — w roczniku, który umiemy podać.',
@@ -263,7 +266,8 @@ const pageLv: MapsPage = {
       'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
     subsurface: 'Nafta, gāze un izrakteņi — fosilā degviela un fosilais zelts.',
-    political: 'Valstis, strīdi un administratīvās līnijas.',
+    political:
+      'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ — katrā kartītē norādīts atvērtais vektoru komplekts un tas, ko tas nemēra.',
     forests: 'Vainags, zudums un aizsargājamās teritorijas no nosauktiem avotiem.',
     water: 'Upes, baseini un saldūdens spiediens.',
     population: 'Kur dzīvo cilvēki — tajā gadā, ko varam norādīt.',
@@ -506,6 +510,54 @@ const en: Record<string, MapCopy> = {
       'Natural Earth is public domain. The preview is a recolored render of Wikimedia’s public-domain BlankMap-World, a similar small-scale country outline.',
     imageAlt: 'Public-domain outline map of the world’s countries in cream on light blue, without labels',
   },
+  'disputed-breakaway-areas': {
+    title: 'Disputed and breakaway areas',
+    hook: 'Polygons Natural Earth flags as breakaway or disputed — a cartographer’s working set for contested land, not a court ruling and not a second world-countries layer.',
+    description:
+      'Natural Earth’s Admin 0 – Breakaway, disputed areas layer (10m cultural vectors) marks polygons the dataset treats as breakaway regions or disputed territories. Same public-domain family as the live World countries card; different object: contested / special-status polygons, not the standard sovereign admin-0 fill.',
+    whyOnShelf:
+      'The Political hub already promises “disputed areas.” EEZ covers maritime claims; this card covers land polygons that are contested or breakaway in the Natural Earth coding — without pretending the shapefile settles sovereignty.',
+    howToRead:
+      'Treat each polygon as “this dataset drew a special case here,” not as recognition of a state. For a legal claim, read a treaty or a court, not a 1:10m vector. Do not merge this into World countries as a second fill of the same admin-0 story.',
+    caveats:
+      'Natural Earth codes these polygons as breakaway or disputed so a world map can be drawn. That coding is a cartographic choice, not recognition of a state and not a court ruling. Do not merge this layer into World countries as a second admin-0 fill.',
+    licenseNote:
+      'Natural Earth is public domain. The thumbnail recolors the Admin 0 – Breakaway, disputed areas polygons only. A thumbnail is cartography, not a court ruling.',
+    imageAlt:
+      'World map with cream land and light-blue ocean; coral polygons mark only the Natural Earth breakaway and disputed areas — not a second country fill and not a court ruling',
+  },
+  'states-provinces': {
+    title: 'States and provinces',
+    hook: 'First-order internal divisions (states, provinces, oblasts…) — administrative lines inside countries, not another sovereign-border atlas and not EEZ.',
+    description:
+      'Natural Earth’s Admin 1 – States, provinces layer: polygons for first-order subnational units worldwide, generalized for small-scale world maps. Public domain, same cultural-vector family as admin-0 countries.',
+    whyOnShelf:
+      'Hub lede names “administrative lines.” World countries = who administers the sovereign polygon; this card = internal first-order divisions. EEZ stays maritime.',
+    howToRead:
+      'Names and borders of provinces change; Natural Earth generalizes for cartography. This is not GADM street-level detail and not a census of local governments. Prefer Natural Earth here to stay license-consistent with the live countries card (GADM is a later optional deeper card if needed).',
+    caveats:
+      'Province names and borders change. Natural Earth generalizes first-order divisions for small-scale maps. This is not GADM street-level detail and not a census of local governments.',
+    licenseNote:
+      'Natural Earth is public domain. The thumbnail shows Admin 1 states and provinces outlines. A thumbnail is cartography, not a court ruling.',
+    imageAlt:
+      'World map of first-order internal divisions as thin outlines — states, provinces, oblasts — not a country choropleth and not maritime zones',
+  },
+  'land-boundary-lines': {
+    title: 'Land boundary lines',
+    hook: 'International land borders as line geometries — the edge between polygons, not a filled countries map and not maritime EEZ limits.',
+    description:
+      'Natural Earth’s Admin 0 – Boundary lines cultural vectors: the linear representation of international land boundaries used with the admin-0 polygons. Public domain.',
+    whyOnShelf:
+      'Country polygons show fills; this card shows the lines the hub lede names. Distinct from EEZ (maritime) and from disputed polygons (special areas). Useful when a design needs borders without a full choropleth.',
+    howToRead:
+      'Same caveats as World countries: some segments are disputed; Natural Earth documents coding choices. A boundary line on a small-scale map is still a political choice. Do not treat it as a UN surveyor’s cadastral edge.',
+    caveats:
+      'Some land-boundary segments are disputed; Natural Earth documents those coding choices. A line on a small-scale map is still a political choice, not a UN surveyor’s cadastral edge.',
+    licenseNote:
+      'Natural Earth is public domain. The thumbnail is the Admin 0 land boundary-lines layer. A thumbnail is cartography, not a court ruling.',
+    imageAlt:
+      'World map of international land borders as dark lines on light land — line geometry, not filled countries and not maritime limits',
+  },
   'forest-cover-loss': {
     title: 'Tree-cover loss',
     hook: 'Hansen / Global Forest Watch: where tree cover was lost, including clearing, fire, and harvest — not only “deforestation.”',
@@ -673,6 +725,16 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   const rest = getMaps(locale).filter(
     (item) => item.slug !== slug && item.category !== current.category,
   );
+  if (current.category === 'political') {
+    // Five political cards would otherwise crowd out the Conflicts siblings
+    // that world-countries already cross-links. List every political sibling;
+    // keep Conflicts on world-countries only.
+    if (slug === 'world-countries') {
+      const conflicts = rest.filter((item) => item.category === 'conflicts');
+      return [...same, ...conflicts];
+    }
+    return same;
+  }
   return [...same, ...rest].slice(0, limit);
 }
 

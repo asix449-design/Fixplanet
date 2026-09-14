@@ -314,4 +314,45 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Zaļš horoplēts par valodu daudzveidību pēc valstīm: tumšāks zaļš tur, kur daudzas valodas dala valsti, blāvāks tur, kur maz — ne valodu saimju atlants',
   },
+  'disputed-breakaway-areas': {
+    title: 'Strīdīgās un atdalījušās teritorijas',
+    hook: 'Poligoni, ko Natural Earth atzīmē kā atdalījušās vai strīdīgas — kartogrāfa darba kopa strīdīgai sauszemei, nevis tiesas spriedums un ne otrs pasaules valstu slānis.',
+    description:
+      'Slānis Admin 0 – Breakaway, disputed areas. Tā pati public domain ģimene kā valstu kartīte, bet cits objekts: strīdīgi / īpaši poligoni, ne parastā admin-0 aizpilde. Nelasīt kā valsts atzīšanu. IEZ paliek jūra; šeit sauszeme.',
+    howToRead: 'Nelasīt kā valsts atzīšanu. IEZ paliek jūra; šeit sauszeme.',
+    caveats:
+      'Natural Earth atzīmē šos poligonus kā atdalījušās vai strīdīgas, lai karti vispār varētu uzzīmēt. Tas ir kartogrāfisks kodējums, ne valsts atzīšana un ne tiesas spriedums. Nesajauc šo slāni ar valstu kartīti kā otru admin-0 aizpildi.',
+    licenseNote:
+      'Natural Earth ir sabiedriskais īpašums. Sīktēls pārkrāso tikai Admin 0 – Breakaway, disputed areas poligonus. Sīktēls ir kartogrāfija, ne tiesas spriedums.',
+    imageAlt:
+      'Pasaules karte ar krēmīgu sauszemi un gaiši zilu okeānu; koraļļu poligoni atzīmē tikai Natural Earth strīdīgās un atdalījušās teritorijas — ne otra valstu aizpilde un ne tiesas spriedums',
+  },
+  'states-provinces': {
+    title: 'Štati un provinces',
+    hook: 'Iekšējās pirmās kārtas vienības (štati, provinces, apgabali…) — administratīvās līnijas valstu iekšienē, ne otrs suverēno robežu atlants un ne IEZ.',
+    description:
+      'Slānis Admin 1. Papildina valstu kartīti: valsts iekšienē, ne suverenitāte un ne jūra. Vispārinājums maza mēroga kartēm; ne GADM. Natural Earth — tā pati licence kā dzīvajai valstu kartītei.',
+    howToRead:
+      'Vispārinājums maza mēroga kartēm; ne GADM. Natural Earth — tā pati licence kā dzīvajai valstu kartītei.',
+    caveats:
+      'Provinču nosaukumi un robežas mainās. Natural Earth vispārina pirmās kārtas vienības maza mēroga kartēm. Tas nav GADM un nav vietējo pašvaldību tautas skaitīšana.',
+    licenseNote:
+      'Natural Earth ir sabiedriskais īpašums. Sīktēls rāda Admin 1 štatu un provincu kontūras. Sīktēls ir kartogrāfija, ne tiesas spriedums.',
+    imageAlt:
+      'Pasaules karte ar pirmās kārtas iekšējām vienībām kā plānām kontūrām — štati, provinces, apgabali — ne valstu horoplēts un ne jūras joslas',
+  },
+  'land-boundary-lines': {
+    title: 'Sauszemes robežlīnijas',
+    hook: 'Starptautiskās sauszemes robežas kā līnijas — mala starp poligoniem, ne valstu aizpilde un ne jūras IEZ robežas.',
+    description:
+      'Lineārais robežu slānis pie admin-0. Papildina valstu aizpildi; ne IEZ un ne strīdīgie poligoni. Tās pašas atrunas par strīdīgiem posmiem — līnija mazā mērogā joprojām ir kartogrāfiska izvēle, ne ANO kadastrs.',
+    howToRead:
+      'Tās pašas atrunas par strīdīgiem posmiem — līnija mazā mērogā joprojām ir kartogrāfiska izvēle, ne ANO kadastrs.',
+    caveats:
+      'Daži sauszemes robežu posmi ir strīdīgi; Natural Earth dokumentē šo kodējumu. Līnija mazā mērogā joprojām ir kartogrāfiska izvēle, ne ANO kadastrs.',
+    licenseNote:
+      'Natural Earth ir sabiedriskais īpašums. Sīktēls ir Admin 0 sauszemes robežlīniju slānis. Sīktēls ir kartogrāfija, ne tiesas spriedums.',
+    imageAlt:
+      'Pasaules karte ar starptautiskām sauszemes robežām kā tumšām līnijām uz gaišas sauszemes — līniju ģeometrija, ne valstu aizpilde un ne jūras robežas',
+  },
 };
