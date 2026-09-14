@@ -73,6 +73,7 @@ import year1600Lv from './border-essays/year-1600-lv.md?raw';
 import year1600Pl from './border-essays/year-1600-pl.md?raw';
 import year1600Ru from './border-essays/year-1600-ru.md?raw';
 import year1700En from './border-essays/year-1700-en.md?raw';
+import year1700Pl from './border-essays/year-1700-pl.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -702,6 +703,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1700 n.e.',
     caption:
       'Rok 1700 — zaczyna się wojna północna; pod Narwą Szwedzi biją Rosjan; umiera ostatni hiszpański Habsburg — Europa szykuje się dzielić imperium; Piotr już wycelowany w Bałtyk.',
+    essay: year1700Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1700 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
