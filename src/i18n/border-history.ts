@@ -75,6 +75,7 @@ import year1600Ru from './border-essays/year-1600-ru.md?raw';
 import year1700En from './border-essays/year-1700-en.md?raw';
 import year1700Lv from './border-essays/year-1700-lv.md?raw';
 import year1700Pl from './border-essays/year-1700-pl.md?raw';
+import year1700Ru from './border-essays/year-1700-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -534,6 +535,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1700 н. э.',
     caption:
       'Год 1700 — начинается Северная война; под Нарвой шведы бьют русских; умирает последний испанский Габсбург — Европа готовится делить империю; Пётр уже нацелен на Балтику.',
+    essay: year1700Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1700 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
