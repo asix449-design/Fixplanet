@@ -37,7 +37,7 @@ Brytania w wojnie z Francją prawie bez przerwy. Flota — jej główny atut. Ne
 Holenderska Kompania Wschodnioindyjska od 1 stycznia prawnie martwa: państwo zabiera kolonie sobie. Epoka kupieckich imperiów-kompanii dożywa ostatnich dekad.
 
 ### Stany Zjednoczone
-Kraj ma 24 lata. Prezydent — John Adams, federalista. Stolicę przenoszą z Filadelfii do **Waszyngtonu**. 1 listopada Adams jako pierwszy z prezydentów nocuje w Białym Domu. — dom jeszcze wilgotny, niedokończony.
+Kraj ma 24 lata. Prezydent — John Adams, federalista. Stolicę przenoszą z Filadelfii do **Waszyngtonu**. 1 listopada Adams jako pierwszy z prezydentów nocuje w Białym Domu — dom jeszcze wilgotny, niedokończony.
 
 W kwietniu zakładają Bibliotekę Kongresu.
 
