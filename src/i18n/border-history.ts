@@ -76,6 +76,7 @@ import year1700En from './border-essays/year-1700-en.md?raw';
 import year1700Lv from './border-essays/year-1700-lv.md?raw';
 import year1700Pl from './border-essays/year-1700-pl.md?raw';
 import year1700Ru from './border-essays/year-1700-ru.md?raw';
+import year1800En from './border-essays/year-1800-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -373,7 +374,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800 CE',
     caption:
-      'Exact year 1800, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the 1815 Congress of Vienna sheet. Modern coastlines; schematic / WIP borders.',
+      'Year 1800 — Napoleon is still consul: Marengo almost lost and won in a single day; the US capital moves to Washington; Paul I quarrels with his allies and leans toward Bonaparte.',
+    essay: year1800En,
     imageAlt: 'Schematic world political reconstruction for 1800 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -544,7 +546,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800 н. э.',
     caption:
-      'Точный 1800 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не лист Венского конгресса 1815 года. Современные берега; схема / границы WIP.',
+      'Год 1800 — Наполеон ещё консул: Маренго почти проигран и выигран в один день; столица США переезжает в Вашингтон; Павел I ссорится с союзниками и тянется к Бонапарту.',
     imageAlt: 'Схематическая политическая реконструкция мира на 1800 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -715,7 +717,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800 n.e.',
     caption:
-      'Dokładny rok 1800, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie arkusz Kongresu Wiedeńskiego z 1815. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1800 — Napoleon wciąż konsul: Marengo prawie przegrane i wygrane w jeden dzień; stolica USA przenosi się do Waszyngtonu; Paweł I kłóci się z sojusznikami i ciągnie ku Bonaparteemu.',
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1800 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -886,7 +888,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800. m.ē.',
     caption:
-      'Precīzs 1800. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav 1815. gada Vīnes kongresa lapa. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1800 — Napoleons vēl konsuls: Marengo gandrīz zaudēta un uzvarēta vienā dienā; ASV galvaspilsēta pārcelās uz Vašingtonu; Pāvils I strīdas ar sabiedrotajiem un tiecas pie Bonaparta.',
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1800. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
