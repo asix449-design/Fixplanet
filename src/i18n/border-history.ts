@@ -84,6 +84,7 @@ import year1900En from './border-essays/year-1900-en.md?raw';
 import year1900Lv from './border-essays/year-1900-lv.md?raw';
 import year1900Pl from './border-essays/year-1900-pl.md?raw';
 import year1900Ru from './border-essays/year-1900-ru.md?raw';
+import year2000En from './border-essays/year-2000-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -401,7 +402,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000 CE — nearest map: present-day outlines',
     caption:
-      'No matching-style 2000 choropleth in this atlas family. Country fills use present-day BlankMap-World / Natural Earth geometry, so post-2000 states (including South Sudan, 2011) appear. A labeled gap vs a June 2000 intelligence sheet.',
+      'Year 2000 — Y2K almost without catastrophe; in Russia Putin; in the USA the Florida dispute; in Belgrade a bulldozer on parliament; the Second Intifada; the dot-com bubble bursts.',
+    essay: year2000En,
     imageAlt: 'Present-day country fills used as the nearest atlas plate for the 2000 step',
   },
   2020: {
@@ -574,7 +576,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000 н. э. — ближайшая карта: современные контуры',
     caption:
-      'Нет хороплета 2000 года в этом семействе атласа. Заливка стран — современная геометрия BlankMap-World / Natural Earth, поэтому видны государства после 2000 года (включая Южный Судан, 2011). Помеченный пробел относительно разведывательного листа июня 2000-го.',
+      'Год 2000 — Y2K почти без катастрофы; в России Путин; в США спор Флориды; в Белграде бульдозер на парламент; вторая интифада; лопается пузырь доткомов.',
     imageAlt: 'Современная заливка стран как ближайший лист атласа для шага 2000',
   },
   2020: {
@@ -747,7 +749,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000 n.e. — najbliższa mapa: współczesne kontury',
     caption:
-      'Brak choroplethu 2000 w tej rodzinie atlasu. Wypełnienia państw to współczesna geometria BlankMap-World / Natural Earth, więc widać państwa po 2000 (w tym Sudan Południowy, 2011). Oznaczona luka wobec arkusza wywiadowczego z czerwca 2000.',
+      'Rok 2000 — Y2K niemal bez katastrofy; w Rosji Putin; w USA spór o Florydę; w Belgradzie spychacz na parlament; druga intifada; pęka bańka dotcomów.',
     imageAlt: 'Współczesne wypełnienia państw jako najbliższy arkusz atlasu dla kroku 2000',
   },
   2020: {
@@ -920,7 +922,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000. m.ē. — tuvākā karte: mūsdienu kontūras',
     caption:
-      'Nav 2000. gada horoplēta šajā atlanta saimē. Valstu aizpildījums ir mūsdienu BlankMap-World / Natural Earth ģeometrija, tāpēc redzamas valstis pēc 2000. gada (tostarp Dienvidsudāna, 2011). Marķēts iztrūkums pret 2000. gada jūnija izlūkošanas lapu.',
+      'Gads 2000 — Y2K gandrīz bez katastrofas; Krievijā Putins; ASV Floridas strīds; Belgradā buldozers uz parlamentu; otrā intifāda; plīst dotkomu burbulis.',
     imageAlt: 'Mūsdienu valstu aizpildījums kā tuvākā atlanta lapa 2000. solim',
   },
   2020: {
