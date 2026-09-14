@@ -739,6 +739,59 @@ export const innovationMeta: InnovationMeta[] = [
       cite('IBM–NASA Prithvi models', 'https://huggingface.co/ibm-nasa-geospatial'),
     ],
   },
+  {
+    slug: 'vesuvius-challenge',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'vesuvius-challenge.jpg',
+      'Sara Stabile, Francesca Palermo, Inna Bukreeva, Daniela Mele, Vincenzo Formoso, Roberto Bartolino & Alessia Cedola',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Herculaneum_papyri.jpg',
+    ),
+    sources: [
+      cite('Vesuvius Challenge', 'https://scrollprize.org/'),
+      cite(
+        'Vesuvius Challenge — 2023 Grand Prize',
+        'https://scrollprize.org/grandprize',
+      ),
+      cite(
+        'Vesuvius Challenge — first complete scroll (PHerc. 1667)',
+        'https://scrollprize.org/firstscroll',
+      ),
+      cite('Vesuvius Challenge — FAQ', 'https://scrollprize.org/faq'),
+      cite('Vesuvius Challenge — data', 'https://scrollprize.org/data'),
+      cite('Vesuvius Challenge — prizes', 'https://scrollprize.org/prizes'),
+      cite(
+        'arXiv:2606.29085 — complete virtual unwrapping of a rolled Herculaneum papyrus',
+        'https://arxiv.org/abs/2606.29085',
+      ),
+      cite(
+        'Angelotti et al., Scientific Reports, 2026 — ink detection from surface topography',
+        'https://www.nature.com/articles/s41598-026-58467-1',
+      ),
+      cite(
+        'EduceLab — Vesuvius Challenge Grand Prize winners',
+        'https://educelab.engr.uky.edu/news/vesuvius-challenge-grand-prize-winners-announced',
+      ),
+      cite(
+        'Scroll Prize — First Title Prize ($60,000)',
+        'https://scrollprize.substack.com/p/60000-first-title-prize-awarded',
+      ),
+      cite(
+        'Scroll Prize — $1M Grand Prize for 2027',
+        'https://scrollprize.substack.com/p/a-new-1m-grand-prize-for-2027',
+      ),
+      cite(
+        'BBC — Herculaneum scrolls (5 Feb 2024)',
+        'https://www.bbc.com/news/science-environment-68221243',
+      ),
+      cite(
+        'Nature news — AI reads burnt scroll (2024)',
+        'https://www.nature.com/articles/d41586-024-00488-9',
+      ),
+    ],
+  },
 ];
 
 export function isInnovationArea(value: string | undefined): value is InnovationArea {

@@ -90,6 +90,11 @@ const candidates = {
     'Surface weather analysis.jpg',
     'GOES-16 ABI Full Disk (32440453126).jpg',
   ],
+  'vesuvius-challenge': [
+    'Herculaneum papyri.jpg',
+    'PHerc. Paris 4.webp',
+    'Herculanean Rolls - Papyrus 157-152.JPG',
+  ],
 };
 
 async function commonsInfo(title) {
@@ -164,6 +169,7 @@ const searchFallback = {
   'form-energy-ireland': 'battery energy storage containers',
   'weathernext-3': 'GOES full disk Earth',
   'ecmwf-aifs': 'weather forecast map synoptic',
+  'vesuvius-challenge': 'Herculaneum papyri carbonized scroll',
 };
 
 await mkdir(outDir, { recursive: true });

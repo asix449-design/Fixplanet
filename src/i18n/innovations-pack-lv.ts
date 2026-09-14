@@ -235,4 +235,20 @@ export const packLv: Record<string, InnovationCopy> = {
     sourcesNote:
       'ESA Biomass misijas lapa (FutureEO): pirmais P joslas SAR kosmosā; starts 2025. gada 29. aprīlī, Kuru / Vega-C. Ne laikapstākļi un ne emisiju inventārs.',
   },
+  'vesuvius-challenge': {
+    title: 'Vesuvius Challenge — aizzīmogotie ruļļi',
+    hook: 'Rentgena CT un mašīnmācīšanās 2024. gada februārī atklāja pirmos fragmentus un 2026. gada jūnijā — veselu Herkulānes rulli; tas ir balvu konkursa, ne visas senatnes burvju OCR.',
+    imageAlt:
+      'Herkulānes pārogļoti papirusa fragmenti (PHerc. 1103 un PHerc. 110) — aizzīmogoto ruļļu klase, ko Vesuvius Challenge lasa, neatritinot',
+    what: 'Vesuvius Challenge ir atvērts mašīnmācīšanās un attēlošanas konkurss: nolasīt Herkulānes pārogļotos papirusus, tos neatverot. Ruļļi nāk no Papirusu villas — greznas villas Herkulānē, ko karsti dubļi un pelni apraka, kad Vezuvs izvirdās 79. gadā pēc Kristus. Daudzus ruļļus atrada 1750. gados; fiziska atritināšana tos bieži iznīcināja. Simti paliek aizzīmogoti. Konkurss sākās 2023. gada martā. Starp līdzdibinātājiem un pirmajiem sponsoriem ir Nat Friedman un Daniel Gross; galvenais padomnieks ir Brent Seales (EduceLab / Kentuki universitāte), kura laboratorija izstrādāja «virtuālo atritināšanu». Partneri ir Neapoles Nacionālā bibliotēka, sinhrotroni (Diamond Light Source; ESRF BM18) un Scroll Prize, Inc., ASV bezpeļņas organizācija. Pēc scrollprize.org (pārbaudīts 2026. gada 14. septembrī) piešķirti aptuveni 1,87 miljoni dolāru balvu; jauna 1 miljona dolāru Grand Prize mērķē 2027. gada jūniju.',
+    problem:
+      'Romas villas bibliotēka 79. gadā pēc Kristus pārogļojās un ir pārāk trausla, lai ruļļus atritinātu ar rokām.',
+    how: 'Skenēšana — augstas izšķirtspējas rentgena CT (bieži sinhrotronā) veido aizzīmogotā ruļļa 3D tilpumu. Oglekļa tinte skenā gandrīz neatšķiras no pārogļotā papirusa. Izsekošana un izlīdzināšana — programmatūra seko tinumam tilpumā un izlīdzina to par virtuālu lapu (segmentācija / virtuālā atritināšana). Blīvais saiņojums un plīsumi joprojām sagrauj pilnu automatizāciju. Tintes noteikšana — modeļi, kas apmācīti uz fragmentiem ar redzamu tinti, mācās vājus tekstūras pavedienus (tostarp «crackle» rakstu) un zīmē tintes varbūtību uz izlīdzinātās virsmas. Tad zinātnieki lasa un pārbauda grieķu tekstu. Uzvarējušās metodes un skena dati tiek publicēti atvērti.',
+    players:
+      '2024. gada 5. februāris — 2023. gada Grand Prize (700 000 dolāru) Youssef Nader, Luke Farritor un Julian Schilliger: ap 15 kolonnām / vairāk nekā 2000 rakstzīmēm (ap 5%) no PHerc. Paris 4 (1. rullis) — epikūriešu saruna par baudu (visticamāk Filodēms). First Letters agrāk, 2023. gada beigās (Farritora vārds πορφύρας / «purpurs»). 2024. gada balvu cikls — 2024. gada Grand Prize (90% no četriem ruļļiem) nav piešķirta; automatizētās segmentācijas balvas izsniegtas, bet tintes atgūšana vēl nav 2023. gada līmenī visos mērķos. 2025. gada 5. maijs — First Title Prize (60 000 dolāru) Marcel Roth un Micha Nowak: joprojām savītā PHerc. 172 virsraksts kā Filodēms, Par netikumiem (1. grāmata, gaidot pilnu zinātnisku apstiprinājumu). 2026. gada 25. jūnijs — pirmā pilnīgā virtuālā atritināšana un saglabātā teksta lasīšana PHerc. 1667 (4. rullis); preprint arXiv; radniecīgs darbs Scientific Reports (2026). Atvērti dati scrollprize.org/data. Turpinās — ikmēneša progresa balvas; 2027. gada Grand Prize (1 miljona dolāru fonds, termiņš 2027. gada 25. jūnijs).',
+    risks:
+      'Ne katrs noskenētais rullis vēl dod lasāmu tinti; rīkotāji ziņo tintes signālu mazākumā no aptuveni 45 noskenētajiem ruļļiem un fragmentiem. Metode mērķē pārogļotu, joprojām savītu Herkulānes tipa materiālu — ne vispārīgu OCR visām senajām grāmatām. Modeļi var halucinēt burtu formas; balvas prasa atvērtas metodes un papiroloģisku pārbaudi. Simti ruļļu paliek nelasīti; liela daļa villas, iespējams, joprojām ir zem zemes.',
+    sourcesNote:
+      'Galvenais avots: scrollprize.org (pārbaudīts 2026. gada 14. septembrī). 2023. gada Grand Prize piešķirta 2024. gada februārī; 2024. gada Grand Prize nav piešķirta. Tā nav visas senatnes nolasīšana.',
+  },
 };
