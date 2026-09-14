@@ -161,4 +161,32 @@ export const pack2Lv: Record<string, SolutionCopy> = {
     fix: 'Sūknēšanas stacija paceļ ūdeni augšējā baseinā un laiž to lejā caur turbīnām, kad jaudas trūkst. IEA Hydropower Special Market Report sauc ūdenskrātuvju un sūknēšanas staciju elastību par nepārspētu un prognozē sūknēšanu kā 30% no tīrā hidropieauguma līdz 2030. gadam. IEA lēsa, ka esošās parastās ūdenskrātuves var uzkrāt ap 1500 TWh vienā ciklā — daudz vairāk enerģijas nekā šodienas sūknēšanas parks vai baterijas. Jaunām stacijām vajag divus baseinus, gadu atļaujas un tirgu, kas maksā par uzkrāšanu, ne tikai kilovatstundām. Sūknēšana nav jauna upe.',
     imageAlt: 'Bath County sūknēšanas stacijas ar kokiem apaugušais augšējais baseins kalnu bļodā',
   },
+  hydropower: {
+    problemTitle: 'Izrakteņu bāzes režīms tur, kur upes jau griež turbīnas',
+    fixTitle: 'Parastā hidroenerģētika',
+    problem: 'Izrakteņu bāzes režīms tur, kur upes jau griež turbīnas',
+    fix: 'Dambji un upju HES, kas jau dod elektrību — lielākais atjaunojamais avots pasaulē. Tas nav sūkņu-akumulācijas HES (uzglabāšana) šajā pašā plauktā.',
+    imageAlt: 'Trīs aizu dambis uz Jandzi: betona siena un pārplūde, augšpusē ūdenskrātuve',
+  },
+  'nuclear-fission': {
+    problemTitle: 'Vajag stabilu mazoglekļa MWh bez laikapstākļiem',
+    fixTitle: 'Kodolšķelšanās (esošais parks)',
+    problem: 'Vajag stabilu mazoglekļa MWh bez laikapstākļiem',
+    fix: 'Komerciālie reaktori, kas jau strādā tīklā. Šis ir esošais parks, ne laboratorijas SMR (piloti — uz Innovations).',
+    imageAlt: 'Cattenom AES: četri darbojošies bloki un dzesēšanas torņi pie Mozeles',
+  },
+  'concentrating-solar-power': {
+    problemTitle: 'Daudz saules dienā, maz lēta vakara uzkrājuma objektā',
+    fixTitle: 'Koncentrētā saules siltumenerģija (CSP)',
+    problem: 'Daudz saules dienā, maz lēta vakara uzkrājuma objektā',
+    fix: 'Spoguļi silda siltumnesēju turbīnai, bieži ar sāls akumulatoru. Jau strādā Spānijā, ASV dienvidrietumos, MENA, Ķīnā un Dienvidāfrikā. Tas nav PV kartītes šajā plauktā.',
+    imageAlt: 'Gemasolar termosolārā stacija Spānijā: centrālais tornis heliostatu spoguļu aplī',
+  },
+  'farm-biogas-power': {
+    problemTitle: 'Kūtsmēslu metāns un dīzeļģeneratori lopkopības fermās',
+    fixTitle: 'Ferma biogāze uz elektrību',
+    problem: 'Kūtsmēslu metāns un dīzeļģeneratori lopkopības fermās',
+    fix: 'Fermentācijas iekārtas fermās: kūtsmēsli → motors/koģenerācija. Jau lietots (EPA AgSTAR un līdzīgi). Nejauc ar atkritumu kartīti par pārtiku vai poligona gāzi.',
+    imageAlt: 'Divi balti biogāzes kupoli Great Thorns Farm stacijā pie Svaffemas, skats pāri zālei',
+  },
 };

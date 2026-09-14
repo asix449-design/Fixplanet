@@ -287,6 +287,26 @@ const candidates = {
     'Tanygrisiau Hydro-Electric Pumped-Storage Power Station - geograph.org.uk - 3545790.jpg',
     'Silver Jackets team tours the Raccoon Mountain Pumped-Storage Plant.jpg',
   ],
+  hydropower: [
+    'ThreeGorgesDam-China2009.jpg',
+    'Itaipu Dam 4084 filtered (1).jpg',
+    'Three Gorges Dam, China.jpg',
+  ],
+  'nuclear-fission': [
+    'Cattenom-Kernkraftwerk-02-2013-gje.jpg',
+    'Nuclear Power Plant Cattenom.jpg',
+    'Diablo Canyon Nuclear Power Plant.jpg',
+  ],
+  'concentrating-solar-power': [
+    'Gemasolar Thermosolar Plant 2.jpg',
+    'PS10 solar power tower.jpg',
+    'Ivanpah Solar Electric Generating System Tower.jpg',
+  ],
+  'farm-biogas-power': [
+    'Biogas plant at Great Thorns Farm near Swaffham - geograph.org.uk - 5621243.jpg',
+    'Kleve Knipweg Biogas PM220618 01.jpg',
+    'Biogas plant at Crouchland Farm - geograph.org.uk - 2164888.jpg',
+  ],
 };
 
 async function commonsInfo(title) {

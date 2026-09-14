@@ -286,7 +286,12 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'solar-microgrids',
     tag: 'energy',
     latest: true,
-    sources: [cite('IEA — Solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
+    sources: [
+      cite(
+        'World Bank / ESMAP — Mini Grids for Half a Billion People',
+        'https://www.worldbank.org/en/topic/energy/publication/mini-grids-for-half-a-billion-people',
+      ),
+    ],
   },
   {
     slug: 'onshore-wind',
@@ -591,20 +596,25 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'offshore-wind',
     tag: 'energy',
-    sources: [cite('IEA — Offshore Wind Outlook 2019', 'https://www.iea.org/reports/offshore-wind-outlook-2019')],
+    sources: [cite('IEA — Wind', 'https://www.iea.org/energy-system/renewables/wind')],
   },
   {
     slug: 'grid-scale-batteries',
     tag: 'energy',
-    sources: [cite('IEA — grid-scale storage', 'https://www.iea.org/energy-system/electricity/grid-scale-storage')],
+    sources: [
+      cite(
+        'IEA — Batteries and Secure Energy Transitions',
+        'https://www.iea.org/reports/batteries-and-secure-energy-transitions',
+      ),
+    ],
   },
   {
     slug: 'geothermal',
     tag: 'energy',
     sources: [
       cite(
-        'IEA — geothermal technology breakthroughs',
-        'https://www.iea.org/news/technology-breakthroughs-are-unlocking-geothermal-energys-vast-potential-in-countries-across-the-globe',
+        'IEA — The Future of Geothermal Energy',
+        'https://www.iea.org/reports/the-future-of-geothermal-energy',
       ),
     ],
   },
@@ -615,6 +625,48 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'IEA — Hydropower Special Market Report (executive summary)',
         'https://www.iea.org/reports/hydropower-special-market-report/executive-summary',
+      ),
+    ],
+  },
+  {
+    slug: 'hydropower',
+    tag: 'energy',
+    sources: [
+      cite(
+        'IEA — Hydropower',
+        'https://www.iea.org/energy-system/renewables-and-low-emissions-fuels/hydroelectricity',
+      ),
+    ],
+  },
+  {
+    slug: 'nuclear-fission',
+    tag: 'energy',
+    sources: [
+      cite('IEA — Nuclear', 'https://www.iea.org/energy-system/renewables-and-low-emissions/nuclear'),
+      cite(
+        'World Nuclear Association — Nuclear Power in the World Today',
+        'https://world-nuclear.org/information-library/current-and-future-generation/nuclear-power-in-the-world-today',
+      ),
+    ],
+  },
+  {
+    slug: 'concentrating-solar-power',
+    tag: 'energy',
+    sources: [
+      cite(
+        'U.S. DOE — Concentrating Solar-Thermal Power',
+        'https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power',
+      ),
+    ],
+  },
+  {
+    slug: 'farm-biogas-power',
+    tag: 'energy',
+    sources: [
+      cite('U.S. EPA — AgSTAR', 'https://www.epa.gov/agstar'),
+      cite(
+        'IEA — Biogases (Renewables 2025)',
+        'https://www.iea.org/reports/renewables-2025/biogases',
       ),
     ],
   },
