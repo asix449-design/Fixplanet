@@ -72,6 +72,7 @@ import year1600En from './border-essays/year-1600-en.md?raw';
 import year1600Lv from './border-essays/year-1600-lv.md?raw';
 import year1600Pl from './border-essays/year-1600-pl.md?raw';
 import year1600Ru from './border-essays/year-1600-ru.md?raw';
+import year1700En from './border-essays/year-1700-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -359,7 +360,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700 CE',
     caption:
-      'Reconstructed by Fix Planet from aourednik GPL GeoJSON — not a copy of the Reddit plate. Exact year 1700. Large labels mark Russia, Qing, Safavid, Mughal and other major polities. Modern coastlines; schematic / WIP borders.',
+      'Year 1700 — the Great Northern War begins; at Narva the Swedes beat the Russians; the last Spanish Habsburg dies — Europe prepares to divide an empire; Peter is already aimed at the Baltic.',
+    essay: year1700En,
     imageAlt: 'Schematic world political reconstruction for 1700 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -529,7 +531,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700 н. э.',
     caption:
-      'Реконструкция Fix Planet по GPL GeoJSON aourednik — не копия reddit-листа. Точный 1700 год. Крупные подписи: Россия, Цин, Сефевиды, Моголы и другие крупные политии. Современные берега; схема / границы WIP.',
+      'Год 1700 — начинается Северная война; под Нарвой шведы бьют русских; умирает последний испанский Габсбург — Европа готовится делить империю; Пётр уже нацелен на Балтику.',
     imageAlt: 'Схематическая политическая реконструкция мира на 1700 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -699,7 +701,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700 n.e.',
     caption:
-      'Rekonstrukcja Fix Planet z GeoJSON aourednik (GPL) — nie kopia płyty z Reddita. Dokładny rok 1700. Duże podpisy: Rosja, Qing, Safawidzi, Mogołowie i inne wielkie organizmy. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1700 — zaczyna się wojna północna; pod Narwą Szwedzi biją Rosjan; umiera ostatni hiszpański Habsburg — Europa szykuje się dzielić imperium; Piotr już wycelowany w Bałtyk.',
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1700 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -869,7 +871,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1700: {
     title: '1700. m.ē.',
     caption:
-      'Fix Planet rekonstrukcija no aourednik GPL GeoJSON — ne Reddit plates kopija. Precīzs 1700. gads. Lieli paraksti: Krievija, Cjinu, Sefevīdi, Mogoli un citas lielās politijas. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1700 — sākas Ziemeļu karš; pie Narvas zviedri sit krievus; mirst pēdējais spāņu Habsburgs — Eiropa gatavojas dalīt impēriju; Pēteris jau mērķēts uz Baltiju.',
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1700. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
