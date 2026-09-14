@@ -65,6 +65,7 @@ import year1400Lv from './border-essays/year-1400-lv.md?raw';
 import year1400Pl from './border-essays/year-1400-pl.md?raw';
 import year1400Ru from './border-essays/year-1400-ru.md?raw';
 import year1500En from './border-essays/year-1500-en.md?raw';
+import year1500Pl from './border-essays/year-1500-pl.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -676,6 +677,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1500 n.e.',
     caption:
       'Rok 1500 — Cabral «znajduje» Brazylię w drodze do Indii; Iwan III bije Litwę nad Wiedroszą; we Włoszech Francuzi i książęta tną się o miasta; Reformacji jeszcze nie ma.',
+    essay: year1500Pl,
     imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
   },
   1600: {
