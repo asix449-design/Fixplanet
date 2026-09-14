@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Hand-authored schematic religion regions for the 1–1500 CE shelf.
+"""Hand-authored schematic religion regions for the 1–1800 CE shelf.
 
 Coarse ellipse unions — original Fix Planet artwork, not a trace of any
-commercial atlas. Oceania is omitted here; the renderer paints those lands
-unmapped gray. Americas stay unmapped through 1200; from 1300 they take an
-indigenous local-traditions wash. Do not add 1600+.
+commercial atlas. Oceania is omitted through 1500; the renderer paints those
+lands unmapped gray. Americas stay unmapped through 1200; from 1300 they take
+an indigenous local-traditions wash. From 1600 Australia is Aboriginal
+traditional (local wash); a NSW colonial speck appears in 1800 only.
 """
 
 from __future__ import annotations
@@ -444,6 +445,137 @@ def americas_local() -> list[Polygon]:
     ]
 
 
+def islamic_sahel_swahili() -> list[Polygon]:
+    """Sahel trade belt + Swahili coast. Not Madagascar. Not a census."""
+    return [
+        ellipse(-8.0, 16.8, 8.5, 3.6),
+        ellipse(3.5, 16.2, 11.0, 4.2),
+        ellipse(16.0, 15.4, 10.0, 3.8),
+        ellipse(39.8, -5.8, 3.8, 7.2),
+        ellipse(43.6, -10.4, 3.2, 5.8),
+    ]
+
+
+def islamic_1600() -> list[Polygon]:
+    """Ottoman Anatolia Islamic; Balkans not a solid Islamic wash."""
+    return islamic_1500() + islamic_sahel_swahili()
+
+
+def africa_christian_pockets() -> list[Polygon]:
+    """Ethiopia, Kongo, Portuguese coasts only. No Madagascar Christian."""
+    return [
+        ellipse(38.4, 11.6, 4.6, 5.4),
+        ellipse(16.2, -4.8, 3.8, 3.6),
+        ellipse(13.4, -12.4, 2.8, 4.6),
+        ellipse(35.2, -18.0, 2.6, 5.2),
+    ]
+
+
+def australia_aboriginal() -> list[Polygon]:
+    """Aboriginal traditional wash. Not a colony until the 1800 NSW speck."""
+    return [ellipse(134.2, -25.4, 18.5, 14.2)]
+
+
+def americas_residual_1600() -> list[Polygon]:
+    """Inland indigenous residual — not Aztec/Inca empire washes."""
+    return [
+        ellipse(-100.0, 52.0, 30.0, 14.5),
+        ellipse(-105.0, 40.0, 18.0, 12.0),
+        ellipse(-62.0, -8.0, 14.0, 16.0),
+        ellipse(-68.0, -38.0, 10.0, 12.0),
+        ellipse(-58.0, -20.0, 10.0, 12.0),
+    ]
+
+
+def christian_colonial_1600() -> list[Polygon]:
+    """New Spain, Andes, Brazil, Caribbean edge. Inland residual remains."""
+    return [
+        ellipse(-72.0, 18.6, 6.2, 3.0),
+        ellipse(-99.0, 20.4, 8.4, 6.2),
+        ellipse(-78.0, 8.6, 5.0, 4.4),
+        ellipse(-74.5, -10.2, 6.4, 12.0),
+        ellipse(-48.5, -12.0, 9.5, 12.5),
+        ellipse(-60.0, -32.0, 6.0, 6.5),
+    ]
+
+
+def christian_europe_1600() -> list[Polygon]:
+    """Iberia Christian; Balkans demographically Christian; Scandinavia hold."""
+    return christian_fill_1500() + [
+        ellipse(15.0, 62.4, 8.5, 5.2),
+        ellipse(25.8, 61.0, 6.0, 4.4),
+        ellipse(36.0, 56.0, 8.0, 5.5),
+    ]
+
+
+def christian_fill_1600() -> list[Polygon]:
+    return christian_europe_1600() + africa_christian_pockets() + christian_colonial_1600()
+
+
+def christian_siberia_1700() -> list[Polygon]:
+    """Orthodox Russia with a Siberia belt — not yet the Pacific shore."""
+    return [
+        ellipse(60.0, 58.5, 16.0, 7.5),
+        ellipse(85.0, 58.0, 22.0, 8.0),
+        ellipse(110.0, 58.5, 16.0, 7.0),
+    ]
+
+
+def christian_colonial_1700() -> list[Polygon]:
+    """Iberian America largely baptized; British/French eastern North America."""
+    return christian_colonial_1600() + [
+        ellipse(-74.0, 41.5, 12.5, 9.5),
+        ellipse(-90.0, 21.0, 10.0, 7.5),
+        ellipse(-58.0, -15.0, 14.0, 18.0),
+        ellipse(-70.0, -35.0, 8.0, 10.0),
+        ellipse(19.0, -33.4, 3.2, 2.4),  # Cape Colony from 1652
+    ]
+
+
+def christian_fill_1700() -> list[Polygon]:
+    return christian_europe_1600() + africa_christian_pockets() + christian_colonial_1700() + christian_siberia_1700()
+
+
+def americas_residual_1700() -> list[Polygon]:
+    """Inland residual remains; no Aztec/Inca empire washes."""
+    return [
+        ellipse(-110.0, 48.0, 18.0, 12.0),
+        ellipse(-100.0, 55.0, 16.0, 8.0),
+        ellipse(-62.0, -5.0, 10.0, 10.0),
+    ]
+
+
+def christian_siberia_1800() -> list[Polygon]:
+    """Orthodoxy to the Pacific."""
+    return christian_siberia_1700() + [
+        ellipse(135.0, 60.0, 22.0, 8.5),
+        ellipse(160.0, 62.0, 16.0, 7.0),
+    ]
+
+
+def christian_colonial_1800() -> list[Polygon]:
+    """South America nearly monolithic Catholic; North America east–center."""
+    return christian_colonial_1700() + [
+        ellipse(-90.0, 38.0, 22.0, 14.0),
+        ellipse(-58.0, -20.0, 16.0, 22.0),
+        ellipse(-70.0, -40.0, 9.0, 10.0),
+        ellipse(-13.2, 8.4, 1.5, 1.3),  # tiny Freetown
+        ellipse(151.2, -33.9, 1.4, 1.1),  # NSW speck at Sydney from 1788
+    ]
+
+
+def christian_fill_1800() -> list[Polygon]:
+    return christian_europe_1600() + africa_christian_pockets() + christian_colonial_1800() + christian_siberia_1800()
+
+
+def americas_residual_1800() -> list[Polygon]:
+    """Northwest residual only. No Aztec/Inca empire washes."""
+    return [
+        ellipse(-122.0, 52.0, 12.0, 9.0),
+        ellipse(-140.0, 64.0, 14.0, 7.0),
+    ]
+
+
 def year_layers(year: int) -> dict[str, list]:
     """Return style buckets for one year: fill / hatch / dots."""
     fills: list[tuple[str, list[Polygon]]] = [
@@ -561,6 +693,27 @@ def year_layers(year: int) -> dict[str, list]:
         fills.append(("islam", islamic_1500()))
         hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
         hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1600:
+        fills.append(("local_trad", americas_residual_1600() + australia_aboriginal()))
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1600()))
+        fills.append(("islam", islamic_1600()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1700:
+        fills.append(("local_trad", americas_residual_1700() + australia_aboriginal()))
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1700()))
+        fills.append(("islam", islamic_1600()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
+    elif year == 1800:
+        fills.append(("local_trad", americas_residual_1800() + australia_aboriginal()))
+        fills.append(("buddhist", buddhist_se_asia_1200()))
+        fills.append(("christian", christian_fill_1800()))
+        fills.append(("islam", islamic_1600()))
+        hatches.append(("zoroastrian", zoroastrian_remnant_iran()))
+        hatches.append(("buddhist", buddhist_china_hatch()))
     else:
         raise ValueError(f"no schematic layers for year {year}")
 
@@ -595,15 +748,22 @@ def collection_for(year: int) -> dict:
         "properties": {
             "year": year,
             "author": "Fix Planet schematic reconstruction",
-            "note": "Original artwork. Not a census. Americas/Oceania omitted.",
+            "note": (
+                "Original artwork. Not a census. Australia Aboriginal from 1600; NSW speck 1800 only."
+                if year >= 1600
+                else "Original artwork. Not a census. Americas/Oceania omitted."
+            ),
         },
         "features": feats,
     }
 
 
-def write_geojson() -> None:
+def write_geojson(years: list[int] | None = None) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500):
+    published = (
+        1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800
+    )
+    for year in years or published:
         dest = OUT / f"y{year:04d}.geojson"
         dest.write_text(json.dumps(collection_for(year), indent=2), encoding="utf-8")
         print(f"wrote {dest.relative_to(ROOT)}")

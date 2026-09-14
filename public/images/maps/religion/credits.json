@@ -128,6 +128,30 @@
     "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; no Granada; Anatolia ~Muslim Ottoman; Balkans mostly Christian; Americas Aztec+Inca local traditions + light Christian colonial edge."
   },
   {
+    "file": "y1600.png",
+    "title": "1600 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Ottoman Anatolia Islamic; Balkans demographically Christian; Americas inland indigenous residual + Christian colonial edge (New Spain, Andes, Brazil, Caribbean); Africa Christian pockets only (Ethiopia, Kongo, Portuguese coasts); Australia Aboriginal."
+  },
+  {
+    "file": "y1700.png",
+    "title": "1700 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Iberian America largely baptized; British/French eastern North America Christian; inland residual; Orthodox Siberia belt; Lutheran Scandinavia; Cape Colony from 1652; Australia Aboriginal. No Aztec/Inca empire washes."
+  },
+  {
+    "file": "y1800.png",
+    "title": "1800 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; South America nearly monolithic Catholic; North America Christian east–center; Russia Orthodoxy to the Pacific; Africa still pockets (Ethiopia, Kongo, Angola/Mozambique, Cape, tiny Freetown); Australia Aboriginal with NSW speck at Sydney from 1788."
+  },
+  {
     "file": "y0001.png",
     "title": "Principales religions de l’ancien monde (Planche VI)",
     "source": "Élisée Reclus, L’Homme et la Terre (1905)",
