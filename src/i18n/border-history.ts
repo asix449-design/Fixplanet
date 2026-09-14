@@ -85,6 +85,9 @@ import year1900Lv from './border-essays/year-1900-lv.md?raw';
 import year1900Pl from './border-essays/year-1900-pl.md?raw';
 import year1900Ru from './border-essays/year-1900-ru.md?raw';
 import year2000En from './border-essays/year-2000-en.md?raw';
+import year2000Lv from './border-essays/year-2000-lv.md?raw';
+import year2000Pl from './border-essays/year-2000-pl.md?raw';
+import year2000Ru from './border-essays/year-2000-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -577,6 +580,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '2000 н. э. — ближайшая карта: современные контуры',
     caption:
       'Год 2000 — Y2K почти без катастрофы; в России Путин; в США спор Флориды; в Белграде бульдозер на парламент; вторая интифада; лопается пузырь доткомов.',
+    essay: year2000Ru,
     imageAlt: 'Современная заливка стран как ближайший лист атласа для шага 2000',
   },
   2020: {
@@ -750,6 +754,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '2000 n.e. — najbliższa mapa: współczesne kontury',
     caption:
       'Rok 2000 — Y2K niemal bez katastrofy; w Rosji Putin; w USA spór o Florydę; w Belgradzie spychacz na parlament; druga intifada; pęka bańka dotcomów.',
+    essay: year2000Pl,
     imageAlt: 'Współczesne wypełnienia państw jako najbliższy arkusz atlasu dla kroku 2000',
   },
   2020: {
@@ -923,6 +928,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '2000. m.ē. — tuvākā karte: mūsdienu kontūras',
     caption:
       'Gads 2000 — Y2K gandrīz bez katastrofas; Krievijā Putins; ASV Floridas strīds; Belgradā buldozers uz parlamentu; otrā intifāda; plīst dotkomu burbulis.',
+    essay: year2000Lv,
     imageAlt: 'Mūsdienu valstu aizpildījums kā tuvākā atlanta lapa 2000. solim',
   },
   2020: {
