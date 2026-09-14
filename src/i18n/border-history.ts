@@ -81,6 +81,7 @@ import year1800Lv from './border-essays/year-1800-lv.md?raw';
 import year1800Pl from './border-essays/year-1800-pl.md?raw';
 import year1800Ru from './border-essays/year-1800-ru.md?raw';
 import year1900En from './border-essays/year-1900-en.md?raw';
+import year1900Lv from './border-essays/year-1900-lv.md?raw';
 import year1900Pl from './border-essays/year-1900-pl.md?raw';
 
 export type BorderHistoryPage = {
@@ -908,6 +909,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1900. m.ē.',
     caption:
       'Gads 1900 — «bokseri» Ķīnā un sūtniecību aplenkums; astoņas lielvalstis ņem Pekinu; Dienvidāfrikā angļu–būru karš; Parīzē metro un cepelīns, Plankam — kvants.',
+    essay: year1900Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1900. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
