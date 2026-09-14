@@ -60,6 +60,34 @@ import year1300En from './border-essays/year-1300-en.md?raw';
 import year1300Lv from './border-essays/year-1300-lv.md?raw';
 import year1300Pl from './border-essays/year-1300-pl.md?raw';
 import year1300Ru from './border-essays/year-1300-ru.md?raw';
+import year1400En from './border-essays/year-1400-en.md?raw';
+import year1400Lv from './border-essays/year-1400-lv.md?raw';
+import year1400Pl from './border-essays/year-1400-pl.md?raw';
+import year1400Ru from './border-essays/year-1400-ru.md?raw';
+import year1500En from './border-essays/year-1500-en.md?raw';
+import year1500Lv from './border-essays/year-1500-lv.md?raw';
+import year1500Pl from './border-essays/year-1500-pl.md?raw';
+import year1500Ru from './border-essays/year-1500-ru.md?raw';
+import year1600En from './border-essays/year-1600-en.md?raw';
+import year1600Lv from './border-essays/year-1600-lv.md?raw';
+import year1600Pl from './border-essays/year-1600-pl.md?raw';
+import year1600Ru from './border-essays/year-1600-ru.md?raw';
+import year1700En from './border-essays/year-1700-en.md?raw';
+import year1700Lv from './border-essays/year-1700-lv.md?raw';
+import year1700Pl from './border-essays/year-1700-pl.md?raw';
+import year1700Ru from './border-essays/year-1700-ru.md?raw';
+import year1800En from './border-essays/year-1800-en.md?raw';
+import year1800Lv from './border-essays/year-1800-lv.md?raw';
+import year1800Pl from './border-essays/year-1800-pl.md?raw';
+import year1800Ru from './border-essays/year-1800-ru.md?raw';
+import year1900En from './border-essays/year-1900-en.md?raw';
+import year1900Lv from './border-essays/year-1900-lv.md?raw';
+import year1900Pl from './border-essays/year-1900-pl.md?raw';
+import year1900Ru from './border-essays/year-1900-ru.md?raw';
+import year2000En from './border-essays/year-2000-en.md?raw';
+import year2000Lv from './border-essays/year-2000-lv.md?raw';
+import year2000Pl from './border-essays/year-2000-pl.md?raw';
+import year2000Ru from './border-essays/year-2000-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -366,25 +394,29 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400 CE — nearest map: 1500',
     caption:
-      'No free 1400 world political sheet in this set. We show the 1500 reconstruction and mark the century as a gap. Timur, Ming, and late medieval Europe are not invented here.',
+      'Year 1400 — Timur drives into Syria; in Europe two popes and the Hundred Years\' War; Vasily I\'s Moscow between the Horde and Lithuania; in China Zhu Di fights for the Ming throne.',
+    essay: year1400En,
     imageAlt: '1500 world political reconstruction used as the nearest sheet for 1400',
   },
   1500: {
     title: '1500 CE',
     caption:
-      'Just after 1492 contact: Iberian footholds, a still-sovereign Americas interior, Ming China, and Ottoman expansion. Main countries only — not every kingdom.',
+      'Year 1500 — Cabral "finds" Brazil on the way to India; Ivan III beats Lithuania at Vedrosha; in Italy the French and the dukes cut each other over cities; the Reformation is not yet here.',
+    essay: year1500En,
     imageAlt: 'World political reconstruction of main countries in 1500',
   },
   1600: {
     title: '1600 CE — nearest map: 1648',
     caption:
-      'No matching-style 1600 world plate. Babelia’s 1648 reconstruction (Peace of Westphalia year) is the nearest full-world political sheet — not a colonial-claims overlay on modern borders.',
+      'Year 1600 — Japan ends the civil wars at Sekigahara; England grants the East India Company its charter; in Rome they burn Bruno; in Moscow Boris Godunov — and the country does not yet know about the famine and the Time of Troubles.',
+    essay: year1600En,
     imageAlt: 'World political reconstruction of 1648, used for the 1600 step',
   },
   1700: {
     title: '1700 CE',
     caption:
-      'Reconstructed by Fix Planet from aourednik GPL GeoJSON — not a copy of the Reddit plate. Exact year 1700. Large labels mark Russia, Qing, Safavid, Mughal and other major polities. Modern coastlines; schematic / WIP borders.',
+      'Year 1700 — the Great Northern War begins; at Narva the Swedes beat the Russians; the last Spanish Habsburg dies — Europe prepares to divide an empire; Peter is already aimed at the Baltic.',
+    essay: year1700En,
     imageAlt: 'Schematic world political reconstruction for 1700 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -393,7 +425,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800 CE',
     caption:
-      'Exact year 1800, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the 1815 Congress of Vienna sheet. Modern coastlines; schematic / WIP borders.',
+      'Year 1800 — Napoleon is still consul: Marengo almost lost and won in a single day; the US capital moves to Washington; Paul I quarrels with his allies and leans toward Bonaparte.',
+    essay: year1800En,
     imageAlt: 'Schematic world political reconstruction for 1800 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -402,7 +435,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900 CE',
     caption:
-      'Exact year 1900, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1914 teaching map. Modern coastlines; schematic / WIP borders.',
+      'Year 1900 — “Boxers” in China and the siege of the legations; eight powers take Beijing; in South Africa the Anglo-Boer War; in Paris the Métro and a zeppelin, for Planck — the quantum.',
+    essay: year1900En,
     imageAlt: 'Schematic world political reconstruction for 1900 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -411,7 +445,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000 CE — nearest map: present-day outlines',
     caption:
-      'No matching-style 2000 choropleth in this atlas family. Country fills use present-day BlankMap-World / Natural Earth geometry, so post-2000 states (including South Sudan, 2011) appear. A labeled gap vs a June 2000 intelligence sheet.',
+      'Year 2000 — Y2K almost without catastrophe; in Russia Putin; in the USA the Florida dispute; in Belgrade a bulldozer on parliament; the Second Intifada; the dot-com bubble bursts.',
+    essay: year2000En,
     imageAlt: 'Present-day country fills used as the nearest atlas plate for the 2000 step',
   },
   2020: {
@@ -533,25 +568,29 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400 н. э. — ближайшая карта: 1500',
     caption:
-      'В этом наборе нет свободного мирового листа на 1400 год. Показываем реконструкцию 1500 и помечаем век как пробел. Тимур, Мин и позднесредневековая Европа здесь не выдуманы.',
+      'Год 1400 — Тимур прёт на Сирию; в Европе два папы и Столетняя война; Москва Василия I между Ордой и Литвой; в Китае Чжу Ди бьётся за престол Мин.',
+    essay: year1400Ru,
     imageAlt: 'Реконструкция мира 1500 года как ближайший лист для 1400',
   },
   1500: {
     title: '1500 н. э.',
     caption:
-      'Сразу после контакта 1492 года: иберийские плацдармы, ещё суверенная внутренность Америк, Мин, османская экспансия. Только главные страны.',
+      'Год 1500 — Кабрал «находит» Бразилию по пути в Индию; Иван III бьёт Литву на Ведроши; в Италии французы и герцоги режутся за города; Реформации ещё нет.',
+    essay: year1500Ru,
     imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
   },
   1600: {
     title: '1600 н. э. — ближайшая карта: 1648',
     caption:
-      'Нет мирового листа на 1600 год в том же стиле. Реконструкция Babelia 1648 года (год Вестфальского мира) — ближайший полный политический лист, не колониальная заливка по современным границам.',
+      'Год 1600 — Япония заканчивает гражданские войны при Сэкигахаре; Англия выдаёт хартию Ост-Индской компании; в Риме жгут Бруно; в Москве Борис Годунов — и страна ещё не знает про голод и Смуту.',
+    essay: year1600Ru,
     imageAlt: 'Политическая реконструкция мира 1648 года для шага 1600',
   },
   1700: {
     title: '1700 н. э.',
     caption:
-      'Реконструкция Fix Planet по GPL GeoJSON aourednik — не копия reddit-листа. Точный 1700 год. Крупные подписи: Россия, Цин, Сефевиды, Моголы и другие крупные политии. Современные берега; схема / границы WIP.',
+      'Год 1700 — начинается Северная война; под Нарвой шведы бьют русских; умирает последний испанский Габсбург — Европа готовится делить империю; Пётр уже нацелен на Балтику.',
+    essay: year1700Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1700 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -560,7 +599,8 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800 н. э.',
     caption:
-      'Точный 1800 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не лист Венского конгресса 1815 года. Современные берега; схема / границы WIP.',
+      'Год 1800 — Наполеон ещё консул: Маренго почти проигран и выигран в один день; столица США переезжает в Вашингтон; Павел I ссорится с союзниками и тянется к Бонапарту.',
+    essay: year1800Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1800 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -569,7 +609,8 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900 н. э.',
     caption:
-      'Точный 1900 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1914 года. Современные берега; схема / границы WIP.',
+      'Год 1900 — «боксёры» в Китае и осада посольств; восемь держав берут Пекин; в Южной Африке англо-бурская война; в Париже метро и цеппелин, у Планка — квант.',
+    essay: year1900Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1900 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -578,7 +619,8 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000 н. э. — ближайшая карта: современные контуры',
     caption:
-      'Нет хороплета 2000 года в этом семействе атласа. Заливка стран — современная геометрия BlankMap-World / Natural Earth, поэтому видны государства после 2000 года (включая Южный Судан, 2011). Помеченный пробел относительно разведывательного листа июня 2000-го.',
+      'Год 2000 — Y2K почти без катастрофы; в России Путин; в США спор Флориды; в Белграде бульдозер на парламент; вторая интифада; лопается пузырь доткомов.',
+    essay: year2000Ru,
     imageAlt: 'Современная заливка стран как ближайший лист атласа для шага 2000',
   },
   2020: {
@@ -700,25 +742,29 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400 n.e. — najbliższa mapa: 1500',
     caption:
-      'W tym zestawie nie ma wolnego światowego arkusza na 1400. Pokazujemy rekonstrukcję 1500 i oznaczamy stulecie jako lukę. Timur, Ming i późnośredniowieczna Europa nie są tu wymyślone.',
+      'Rok 1400 — Timur pcha się na Syrię; w Europie dwóch papieży i wojna stuletnia; Moskwa Wasyla I między Ordą a Litwą; w Chinach Zhu Di bije się o tron Mingów.',
+    essay: year1400Pl,
     imageAlt: 'Rekonstrukcja świata z 1500 jako najbliższy arkusz dla 1400',
   },
   1500: {
     title: '1500 n.e.',
     caption:
-      'Tuż po kontakcie 1492: przyczółki iberyjskie, wciąż suwerenne wnętrze Ameryk, Ming, ekspansja osmańska. Tylko główne kraje.',
+      'Rok 1500 — Cabral «znajduje» Brazylię w drodze do Indii; Iwan III bije Litwę nad Wiedroszą; we Włoszech Francuzi i książęta tną się o miasta; Reformacji jeszcze nie ma.',
+    essay: year1500Pl,
     imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
   },
   1600: {
     title: '1600 n.e. — najbliższa mapa: 1648',
     caption:
-      'Brak arkusza światowego na 1600 w tym stylu. Rekonstrukcja Babelii z 1648 (rok pokoju westfalskiego) to najbliższy pełny arkusz polityczny — nie warstwa roszczeń kolonialnych na współczesnych granicach.',
+      'Rok 1600 — Japonia kończy wojny domowe pod Sekigaharą; Anglia wydaje kartę Kompanii Wschodnioindyjskiej; w Rzymie palą Bruno; w Moskwie Borys Godunow — a kraj jeszcze nie wie o głodzie i Smutcie.',
+    essay: year1600Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 1648 użyta dla kroku 1600',
   },
   1700: {
     title: '1700 n.e.',
     caption:
-      'Rekonstrukcja Fix Planet z GeoJSON aourednik (GPL) — nie kopia płyty z Reddita. Dokładny rok 1700. Duże podpisy: Rosja, Qing, Safawidzi, Mogołowie i inne wielkie organizmy. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1700 — zaczyna się wojna północna; pod Narwą Szwedzi biją Rosjan; umiera ostatni hiszpański Habsburg — Europa szykuje się dzielić imperium; Piotr już wycelowany w Bałtyk.',
+    essay: year1700Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1700 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -727,7 +773,8 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800 n.e.',
     caption:
-      'Dokładny rok 1800, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie arkusz Kongresu Wiedeńskiego z 1815. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1800 — Napoleon wciąż konsul: Marengo prawie przegrane i wygrane w jeden dzień; stolica USA przenosi się do Waszyngtonu; Paweł I kłóci się z sojusznikami i ciągnie ku Bonaparteemu.',
+    essay: year1800Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1800 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -736,7 +783,8 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900 n.e.',
     caption:
-      'Dokładny rok 1900, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1914. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1900 — „bokserzy” w Chinach i oblężenie poselstw; osiem mocarstw bierze Pekin; w Afryce Południowej wojna burska; w Paryżu metro i zeppelin, u Plancka — kwant.',
+    essay: year1900Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1900 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -745,7 +793,8 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000 n.e. — najbliższa mapa: współczesne kontury',
     caption:
-      'Brak choroplethu 2000 w tej rodzinie atlasu. Wypełnienia państw to współczesna geometria BlankMap-World / Natural Earth, więc widać państwa po 2000 (w tym Sudan Południowy, 2011). Oznaczona luka wobec arkusza wywiadowczego z czerwca 2000.',
+      'Rok 2000 — Y2K niemal bez katastrofy; w Rosji Putin; w USA spór o Florydę; w Belgradzie spychacz na parlament; druga intifada; pęka bańka dotcomów.',
+    essay: year2000Pl,
     imageAlt: 'Współczesne wypełnienia państw jako najbliższy arkusz atlasu dla kroku 2000',
   },
   2020: {
@@ -867,25 +916,29 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400. m.ē. — tuvākā karte: 1500',
     caption:
-      'Šajā komplektā nav brīvas 1400. gada pasaules lapas. Rādām 1500. rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu. Timurs, Min un vēlie viduslaiki šeit nav izdomāti.',
+      'Gads 1400 — Timurs spiežas uz Sīriju; Eiropā divi pāvesti un Simtgadu karš; Vasilija I Maskava starp Ordu un Lietuvu; Ķīnā Džu Di cīnās par Minu troni.',
+    essay: year1400Lv,
     imageAlt: '1500. gada pasaules rekonstrukcija kā tuvākā lapa 1400. gadam',
   },
   1500: {
     title: '1500. m.ē.',
     caption:
-      'Tūlīt pēc 1492. kontakta: ibēriešu placdarmi, joprojām suverēna Amerikas iekšiene, Min, osmaņu ekspansija. Tikai galvenās valstis.',
+      'Gads 1500 — Kabrals «atrod» Brazīliju ceļā uz Indiju; Ivans III sit Lietuvu pie Vedrošas; Itālijā franči un hercogi griežas par pilsētām; Reformācijas vēl nav.',
+    essay: year1500Lv,
     imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
   },
   1600: {
     title: '1600. m.ē. — tuvākā karte: 1648',
     caption:
-      'Nav 1600. gada pasaules lapas tajā pašā stilā. Babelia 1648. gada rekonstrukcija (Vestfālenes miera gads) ir tuvākā pilnā politiskā lapa — ne koloniālo pretenziju slānis uz mūsdienu robežām.',
+      'Gads 1600 — Japāna beidz pilsoņu karus pie Sekigaharas; Anglija izsniedz Austrumindijas kompānijas hartu; Romā dedzina Bruno; Maskavā Boriss Godunovs — un zeme vēl nezina par badu un Juku laiku.',
+    essay: year1600Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 1648. gada 1600. soļa vietā',
   },
   1700: {
     title: '1700. m.ē.',
     caption:
-      'Fix Planet rekonstrukcija no aourednik GPL GeoJSON — ne Reddit plates kopija. Precīzs 1700. gads. Lieli paraksti: Krievija, Cjinu, Sefevīdi, Mogoli un citas lielās politijas. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1700 — sākas Ziemeļu karš; pie Narvas zviedri sit krievus; mirst pēdējais spāņu Habsburgs — Eiropa gatavojas dalīt impēriju; Pēteris jau mērķēts uz Baltiju.',
+    essay: year1700Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1700. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -894,7 +947,8 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1800: {
     title: '1800. m.ē.',
     caption:
-      'Precīzs 1800. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav 1815. gada Vīnes kongresa lapa. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1800 — Napoleons vēl konsuls: Marengo gandrīz zaudēta un uzvarēta vienā dienā; ASV galvaspilsēta pārcelās uz Vašingtonu; Pāvils I strīdas ar sabiedrotajiem un tiecas pie Bonaparta.',
+    essay: year1800Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1800. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -903,7 +957,8 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900. m.ē.',
     caption:
-      'Precīzs 1900. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1914. mācību karte. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1900 — «bokseri» Ķīnā un sūtniecību aplenkums; astoņas lielvalstis ņem Pekinu; Dienvidāfrikā angļu–būru karš; Parīzē metro un cepelīns, Plankam — kvants.',
+    essay: year1900Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1900. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -912,7 +967,8 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   2000: {
     title: '2000. m.ē. — tuvākā karte: mūsdienu kontūras',
     caption:
-      'Nav 2000. gada horoplēta šajā atlanta saimē. Valstu aizpildījums ir mūsdienu BlankMap-World / Natural Earth ģeometrija, tāpēc redzamas valstis pēc 2000. gada (tostarp Dienvidsudāna, 2011). Marķēts iztrūkums pret 2000. gada jūnija izlūkošanas lapu.',
+      'Gads 2000 — Y2K gandrīz bez katastrofas; Krievijā Putins; ASV Floridas strīds; Belgradā buldozers uz parlamentu; otrā intifāda; plīst dotkomu burbulis.',
+    essay: year2000Lv,
     imageAlt: 'Mūsdienu valstu aizpildījums kā tuvākā atlanta lapa 2000. solim',
   },
   2020: {
