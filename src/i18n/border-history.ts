@@ -61,6 +61,7 @@ import year1300Lv from './border-essays/year-1300-lv.md?raw';
 import year1300Pl from './border-essays/year-1300-pl.md?raw';
 import year1300Ru from './border-essays/year-1300-ru.md?raw';
 import year1400En from './border-essays/year-1400-en.md?raw';
+import year1400Lv from './border-essays/year-1400-lv.md?raw';
 import year1400Pl from './border-essays/year-1400-pl.md?raw';
 
 export type BorderHistoryPage = {
@@ -832,6 +833,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1400. m.ē. — tuvākā karte: 1500',
     caption:
       'Gads 1400 — Timurs spiežas uz Sīriju; Eiropā divi pāvesti un Simtgadu karš; Vasilija I Maskava starp Ordu un Lietuvu; Ķīnā Džu Di cīnās par Minu troni.',
+    essay: year1400Lv,
     imageAlt: '1500. gada pasaules rekonstrukcija kā tuvākā lapa 1400. gadam',
   },
   1500: {
