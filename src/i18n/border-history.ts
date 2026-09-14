@@ -77,6 +77,7 @@ import year1700Lv from './border-essays/year-1700-lv.md?raw';
 import year1700Pl from './border-essays/year-1700-pl.md?raw';
 import year1700Ru from './border-essays/year-1700-ru.md?raw';
 import year1800En from './border-essays/year-1800-en.md?raw';
+import year1800Pl from './border-essays/year-1800-pl.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -718,6 +719,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1800 n.e.',
     caption:
       'Rok 1800 — Napoleon wciąż konsul: Marengo prawie przegrane i wygrane w jeden dzień; stolica USA przenosi się do Waszyngtonu; Paweł I kłóci się z sojusznikami i ciągnie ku Bonaparteemu.',
+    essay: year1800Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1800 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
