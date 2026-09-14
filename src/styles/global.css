@@ -2798,6 +2798,78 @@ a.map-card:hover {
   margin-top: 1.3rem;
 }
 
+.borders-heading-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.55rem 1rem;
+  margin: 0 0 0.6em;
+}
+
+.borders-heading-row h2 {
+  margin: 0;
+  flex: 1 1 16rem;
+}
+
+.borders-readout {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  margin: 0.12rem 0 0;
+}
+
+.borders-readout button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid rgba(192, 255, 0, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.borders-readout-play:not(:disabled):hover,
+.borders-readout-play:not(:disabled):focus-visible,
+.borders-readout-play[aria-pressed='true'] {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--black);
+}
+
+.borders-readout-stop:not(:disabled):hover,
+.borders-readout-stop:not(:disabled):focus-visible {
+  background: rgba(192, 255, 0, 0.12);
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.borders-readout button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.borders-readout-rate {
+  display: inline-flex;
+  align-items: center;
+  width: 4.2rem;
+  margin-left: 0.1rem;
+}
+
+.borders-readout-rate input {
+  width: 100%;
+  accent-color: var(--lime);
+}
+
 .borders-essay {
   margin: 0.35rem 0 1.15rem;
   max-width: 42rem;
