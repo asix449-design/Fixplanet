@@ -77,6 +77,7 @@ import year1700Lv from './border-essays/year-1700-lv.md?raw';
 import year1700Pl from './border-essays/year-1700-pl.md?raw';
 import year1700Ru from './border-essays/year-1700-ru.md?raw';
 import year1800En from './border-essays/year-1800-en.md?raw';
+import year1800Lv from './border-essays/year-1800-lv.md?raw';
 import year1800Pl from './border-essays/year-1800-pl.md?raw';
 
 export type BorderHistoryPage = {
@@ -891,6 +892,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1800. m.ē.',
     caption:
       'Gads 1800 — Napoleons vēl konsuls: Marengo gandrīz zaudēta un uzvarēta vienā dienā; ASV galvaspilsēta pārcelās uz Vašingtonu; Pāvils I strīdas ar sabiedrotajiem un tiecas pie Bonaparta.',
+    essay: year1800Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1800. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
