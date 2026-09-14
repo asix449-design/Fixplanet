@@ -80,6 +80,7 @@ import year1800En from './border-essays/year-1800-en.md?raw';
 import year1800Lv from './border-essays/year-1800-lv.md?raw';
 import year1800Pl from './border-essays/year-1800-pl.md?raw';
 import year1800Ru from './border-essays/year-1800-ru.md?raw';
+import year1900En from './border-essays/year-1900-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -387,7 +388,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900 CE',
     caption:
-      'Exact year 1900, reconstructed by Fix Planet from open GeoJSON (aourednik historical-basemaps, GPL-3.0). Not the OER 1914 teaching map. Modern coastlines; schematic / WIP borders.',
+      'Year 1900 — “Boxers” in China and the siege of the legations; eight powers take Beijing; in South Africa the Anglo-Boer War; in Paris the Métro and a zeppelin, for Planck — the quantum.',
+    essay: year1900En,
     imageAlt: 'Schematic world political reconstruction for 1900 from aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -559,7 +561,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900 н. э.',
     caption:
-      'Точный 1900 год: реконструкция Fix Planet по открытому GeoJSON (aourednik historical-basemaps, GPL-3.0). Не учебная карта OER 1914 года. Современные берега; схема / границы WIP.',
+      'Год 1900 — «боксёры» в Китае и осада посольств; восемь держав берут Пекин; в Южной Африке англо-бурская война; в Париже метро и цеппелин, у Планка — квант.',
     imageAlt: 'Схематическая политическая реконструкция мира на 1900 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -731,7 +733,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900 n.e.',
     caption:
-      'Dokładny rok 1900, rekonstrukcja Fix Planet z otwartego GeoJSON (aourednik historical-basemaps, GPL-3.0). To nie mapa OER z 1914. Współczesne wybrzeża; schemat / granice WIP.',
+      'Rok 1900 — „bokserzy” w Chinach i oblężenie poselstw; osiem mocarstw bierze Pekin; w Afryce Południowej wojna burska; w Paryżu metro i zeppelin, u Plancka — kwant.',
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1900 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
@@ -903,7 +905,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1900: {
     title: '1900. m.ē.',
     caption:
-      'Precīzs 1900. gads, Fix Planet rekonstrukcija no atvērta GeoJSON (aourednik historical-basemaps, GPL-3.0). Tā nav OER 1914. mācību karte. Mūsdienu krasti; shēma / robežas WIP.',
+      'Gads 1900 — «bokseri» Ķīnā un sūtniecību aplenkums; astoņas lielvalstis ņem Pekinu; Dienvidāfrikā angļu–būru karš; Parīzē metro un cepelīns, Plankam — kvants.',
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1900. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
