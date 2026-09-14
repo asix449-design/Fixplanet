@@ -303,9 +303,9 @@ const candidates = {
     'Ivanpah Solar Electric Generating System Tower.jpg',
   ],
   'farm-biogas-power': [
-    'Farm-scale biogas reactors (3092936939).jpg',
-    'Pennwood Farm Digester (7598268164).jpg',
-    'Secondary digester and storage for biogas (tank goes 8 m into the ground). (3092933633).jpg',
+    'Biogas plant at Great Thorns Farm near Swaffham - geograph.org.uk - 5621243.jpg',
+    'Kleve Knipweg Biogas PM220618 01.jpg',
+    'Biogas plant at Crouchland Farm - geograph.org.uk - 2164888.jpg',
   ],
 };
 

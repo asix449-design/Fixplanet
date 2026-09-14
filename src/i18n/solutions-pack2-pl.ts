@@ -187,6 +187,6 @@ export const pack2Pl: Record<string, SolutionCopy> = {
     fixTitle: 'Biogaz z farmy na prąd',
     problem: 'Metan z obornika i diesle na fermach zwierzęcych',
     fix: 'Fermentory na farmach: obornik → silnik/CHP. Już w użyciu (EPA AgSTAR i podobne). Nie mylić z kartą odpadów o żywności ani z gazem składowiskowym.',
-    imageAlt: 'Fermentory biogazu w skali farmy: cylindryczne zbiorniki na wiejskim podwórzu przy budynkach gospodarczych',
+    imageAlt: 'Dwie białe kopuły biogazowni Great Thorns Farm koło Swaffham, widok przez łąkę',
   },
 };

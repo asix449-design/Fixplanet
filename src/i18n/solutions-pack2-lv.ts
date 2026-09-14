@@ -187,6 +187,6 @@ export const pack2Lv: Record<string, SolutionCopy> = {
     fixTitle: 'Ferma biogāze uz elektrību',
     problem: 'Kūtsmēslu metāns un dīzeļģeneratori lopkopības fermās',
     fix: 'Fermentācijas iekārtas fermās: kūtsmēsli → motors/koģenerācija. Jau lietots (EPA AgSTAR un līdzīgi). Nejauc ar atkritumu kartīti par pārtiku vai poligona gāzi.',
-    imageAlt: 'Fermu mēroga biogāzes reaktori: cilindriskas fermentācijas tvertnes lauku pagalmā pie saimniecības ēkām',
+    imageAlt: 'Divi balti biogāzes kupoli Great Thorns Farm stacijā pie Svaffemas, skats pāri zālei',
   },
 };

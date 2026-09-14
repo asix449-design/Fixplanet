@@ -193,7 +193,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Farm biogas to power',
       problem: 'Manure methane and diesel gensets on livestock farms',
       fix: 'Anaerobic digesters on farms capture manure biogas for engines or CHP — electricity and heat already in use (US EPA AgSTAR and peers). Distinct from Solutions→Waste Anaerobic digesters (municipal food waste) and from landfill-gas cards.',
-      imageAlt: 'Farm-scale biogas reactors: cylindrical digester tanks in a rural yard beside farm buildings',
+      imageAlt: 'Two white biogas domes of the plant at Great Thorns Farm near Swaffham, seen across a grass field',
     },
   },
   ru: pack2Ru,
