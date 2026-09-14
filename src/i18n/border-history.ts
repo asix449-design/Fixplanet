@@ -68,6 +68,7 @@ import year1500En from './border-essays/year-1500-en.md?raw';
 import year1500Lv from './border-essays/year-1500-lv.md?raw';
 import year1500Pl from './border-essays/year-1500-pl.md?raw';
 import year1500Ru from './border-essays/year-1500-ru.md?raw';
+import year1600En from './border-essays/year-1600-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -348,7 +349,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1600: {
     title: '1600 CE — nearest map: 1648',
     caption:
-      'No matching-style 1600 world plate. Babelia’s 1648 reconstruction (Peace of Westphalia year) is the nearest full-world political sheet — not a colonial-claims overlay on modern borders.',
+      'Year 1600 — Japan ends the civil wars at Sekigahara; England grants the East India Company its charter; in Rome they burn Bruno; in Moscow Boris Godunov — and the country does not yet know about the famine and the Time of Troubles.',
+    essay: year1600En,
     imageAlt: 'World political reconstruction of 1648, used for the 1600 step',
   },
   1700: {
@@ -517,7 +519,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1600: {
     title: '1600 н. э. — ближайшая карта: 1648',
     caption:
-      'Нет мирового листа на 1600 год в том же стиле. Реконструкция Babelia 1648 года (год Вестфальского мира) — ближайший полный политический лист, не колониальная заливка по современным границам.',
+      'Год 1600 — Япония заканчивает гражданские войны при Сэкигахаре; Англия выдаёт хартию Ост-Индской компании; в Риме жгут Бруно; в Москве Борис Годунов — и страна ещё не знает про голод и Смуту.',
     imageAlt: 'Политическая реконструкция мира 1648 года для шага 1600',
   },
   1700: {
@@ -686,7 +688,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1600: {
     title: '1600 n.e. — najbliższa mapa: 1648',
     caption:
-      'Brak arkusza światowego na 1600 w tym stylu. Rekonstrukcja Babelii z 1648 (rok pokoju westfalskiego) to najbliższy pełny arkusz polityczny — nie warstwa roszczeń kolonialnych na współczesnych granicach.',
+      'Rok 1600 — Japonia kończy wojny domowe pod Sekigaharą; Anglia wydaje kartę Kompanii Wschodnioindyjskiej; w Rzymie palą Bruno; w Moskwie Borys Godunow — a kraj jeszcze nie wie o głodzie i Smutcie.',
     imageAlt: 'Rekonstrukcja polityczna świata z 1648 użyta dla kroku 1600',
   },
   1700: {
@@ -855,7 +857,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1600: {
     title: '1600. m.ē. — tuvākā karte: 1648',
     caption:
-      'Nav 1600. gada pasaules lapas tajā pašā stilā. Babelia 1648. gada rekonstrukcija (Vestfālenes miera gads) ir tuvākā pilnā politiskā lapa — ne koloniālo pretenziju slānis uz mūsdienu robežām.',
+      'Gads 1600 — Japāna beidz pilsoņu karus pie Sekigaharas; Anglija izsniedz Austrumindijas kompānijas hartu; Romā dedzina Bruno; Maskavā Boriss Godunovs — un zeme vēl nezina par badu un Juku laiku.',
     imageAlt: 'Pasaules politiskā rekonstrukcija no 1648. gada 1600. soļa vietā',
   },
   1700: {
