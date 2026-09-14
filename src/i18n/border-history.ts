@@ -65,6 +65,7 @@ import year1400Lv from './border-essays/year-1400-lv.md?raw';
 import year1400Pl from './border-essays/year-1400-pl.md?raw';
 import year1400Ru from './border-essays/year-1400-ru.md?raw';
 import year1500En from './border-essays/year-1500-en.md?raw';
+import year1500Lv from './border-essays/year-1500-lv.md?raw';
 import year1500Pl from './border-essays/year-1500-pl.md?raw';
 
 export type BorderHistoryPage = {
@@ -846,6 +847,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1500. m.ē.',
     caption:
       'Gads 1500 — Kabrals «atrod» Brazīliju ceļā uz Indiju; Ivans III sit Lietuvu pie Vedrošas; Itālijā franči un hercogi griežas par pilsētām; Reformācijas vēl nav.',
+    essay: year1500Lv,
     imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
   },
   1600: {
