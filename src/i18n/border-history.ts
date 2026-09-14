@@ -64,6 +64,7 @@ import year1400En from './border-essays/year-1400-en.md?raw';
 import year1400Lv from './border-essays/year-1400-lv.md?raw';
 import year1400Pl from './border-essays/year-1400-pl.md?raw';
 import year1400Ru from './border-essays/year-1400-ru.md?raw';
+import year1500En from './border-essays/year-1500-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -337,7 +338,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1500: {
     title: '1500 CE',
     caption:
-      'Just after 1492 contact: Iberian footholds, a still-sovereign Americas interior, Ming China, and Ottoman expansion. Main countries only — not every kingdom.',
+      'Year 1500 — Cabral "finds" Brazil on the way to India; Ivan III beats Lithuania at Vedrosha; in Italy the French and the dukes cut each other over cities; the Reformation is not yet here.',
+    essay: year1500En,
     imageAlt: 'World political reconstruction of main countries in 1500',
   },
   1600: {
@@ -505,7 +507,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1500: {
     title: '1500 н. э.',
     caption:
-      'Сразу после контакта 1492 года: иберийские плацдармы, ещё суверенная внутренность Америк, Мин, османская экспансия. Только главные страны.',
+      'Год 1500 — Кабрал «находит» Бразилию по пути в Индию; Иван III бьёт Литву на Ведроши; в Италии французы и герцоги режутся за города; Реформации ещё нет.',
     imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
   },
   1600: {
@@ -673,7 +675,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1500: {
     title: '1500 n.e.',
     caption:
-      'Tuż po kontakcie 1492: przyczółki iberyjskie, wciąż suwerenne wnętrze Ameryk, Ming, ekspansja osmańska. Tylko główne kraje.',
+      'Rok 1500 — Cabral «znajduje» Brazylię w drodze do Indii; Iwan III bije Litwę nad Wiedroszą; we Włoszech Francuzi i książęta tną się o miasta; Reformacji jeszcze nie ma.',
     imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
   },
   1600: {
@@ -841,7 +843,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1500: {
     title: '1500. m.ē.',
     caption:
-      'Tūlīt pēc 1492. kontakta: ibēriešu placdarmi, joprojām suverēna Amerikas iekšiene, Min, osmaņu ekspansija. Tikai galvenās valstis.',
+      'Gads 1500 — Kabrals «atrod» Brazīliju ceļā uz Indiju; Ivans III sit Lietuvu pie Vedrošas; Itālijā franči un hercogi griežas par pilsētām; Reformācijas vēl nav.',
     imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
   },
   1600: {
