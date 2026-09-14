@@ -63,6 +63,7 @@ import year1300Ru from './border-essays/year-1300-ru.md?raw';
 import year1400En from './border-essays/year-1400-en.md?raw';
 import year1400Lv from './border-essays/year-1400-lv.md?raw';
 import year1400Pl from './border-essays/year-1400-pl.md?raw';
+import year1400Ru from './border-essays/year-1400-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -498,6 +499,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1400 н. э. — ближайшая карта: 1500',
     caption:
       'Год 1400 — Тимур прёт на Сирию; в Европе два папы и Столетняя война; Москва Василия I между Ордой и Литвой; в Китае Чжу Ди бьётся за престол Мин.',
+    essay: year1400Ru,
     imageAlt: 'Реконструкция мира 1500 года как ближайший лист для 1400',
   },
   1500: {
