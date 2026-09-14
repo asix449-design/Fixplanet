@@ -83,6 +83,7 @@ import year1800Ru from './border-essays/year-1800-ru.md?raw';
 import year1900En from './border-essays/year-1900-en.md?raw';
 import year1900Lv from './border-essays/year-1900-lv.md?raw';
 import year1900Pl from './border-essays/year-1900-pl.md?raw';
+import year1900Ru from './border-essays/year-1900-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -564,6 +565,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     title: '1900 н. э.',
     caption:
       'Год 1900 — «боксёры» в Китае и осада посольств; восемь держав берут Пекин; в Южной Африке англо-бурская война; в Париже метро и цеппелин, у Планка — квант.',
+    essay: year1900Ru,
     imageAlt: 'Схематическая политическая реконструкция мира на 1900 год по GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
