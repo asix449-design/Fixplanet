@@ -60,6 +60,7 @@ import year1300En from './border-essays/year-1300-en.md?raw';
 import year1300Lv from './border-essays/year-1300-lv.md?raw';
 import year1300Pl from './border-essays/year-1300-pl.md?raw';
 import year1300Ru from './border-essays/year-1300-ru.md?raw';
+import year1400En from './border-essays/year-1400-en.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -326,7 +327,8 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400 CE — nearest map: 1500',
     caption:
-      'No free 1400 world political sheet in this set. We show the 1500 reconstruction and mark the century as a gap. Timur, Ming, and late medieval Europe are not invented here.',
+      'Year 1400 — Timur drives into Syria; in Europe two popes and the Hundred Years\' War; Vasily I\'s Moscow between the Horde and Lithuania; in China Zhu Di fights for the Ming throne.',
+    essay: year1400En,
     imageAlt: '1500 world political reconstruction used as the nearest sheet for 1400',
   },
   1500: {
@@ -493,7 +495,7 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400 н. э. — ближайшая карта: 1500',
     caption:
-      'В этом наборе нет свободного мирового листа на 1400 год. Показываем реконструкцию 1500 и помечаем век как пробел. Тимур, Мин и позднесредневековая Европа здесь не выдуманы.',
+      'Год 1400 — Тимур прёт на Сирию; в Европе два папы и Столетняя война; Москва Василия I между Ордой и Литвой; в Китае Чжу Ди бьётся за престол Мин.',
     imageAlt: 'Реконструкция мира 1500 года как ближайший лист для 1400',
   },
   1500: {
@@ -660,7 +662,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400 n.e. — najbliższa mapa: 1500',
     caption:
-      'W tym zestawie nie ma wolnego światowego arkusza na 1400. Pokazujemy rekonstrukcję 1500 i oznaczamy stulecie jako lukę. Timur, Ming i późnośredniowieczna Europa nie są tu wymyślone.',
+      'Rok 1400 — Timur pcha się na Syrię; w Europie dwóch papieży i wojna stuletnia; Moskwa Wasyla I między Ordą a Litwą; w Chinach Zhu Di bije się o tron Mingów.',
     imageAlt: 'Rekonstrukcja świata z 1500 jako najbliższy arkusz dla 1400',
   },
   1500: {
@@ -827,7 +829,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1400: {
     title: '1400. m.ē. — tuvākā karte: 1500',
     caption:
-      'Šajā komplektā nav brīvas 1400. gada pasaules lapas. Rādām 1500. rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu. Timurs, Min un vēlie viduslaiki šeit nav izdomāti.',
+      'Gads 1400 — Timurs spiežas uz Sīriju; Eiropā divi pāvesti un Simtgadu karš; Vasilija I Maskava starp Ordu un Lietuvu; Ķīnā Džu Di cīnās par Minu troni.',
     imageAlt: '1500. gada pasaules rekonstrukcija kā tuvākā lapa 1400. gadam',
   },
   1500: {
