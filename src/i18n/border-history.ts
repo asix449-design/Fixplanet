@@ -81,6 +81,7 @@ import year1800Lv from './border-essays/year-1800-lv.md?raw';
 import year1800Pl from './border-essays/year-1800-pl.md?raw';
 import year1800Ru from './border-essays/year-1800-ru.md?raw';
 import year1900En from './border-essays/year-1900-en.md?raw';
+import year1900Pl from './border-essays/year-1900-pl.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -734,6 +735,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1900 n.e.',
     caption:
       'Rok 1900 — „bokserzy” w Chinach i oblężenie poselstw; osiem mocarstw bierze Pekin; w Afryce Południowej wojna burska; w Paryżu metro i zeppelin, u Plancka — kwant.',
+    essay: year1900Pl,
     imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1900 z GeoJSON aourednik',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',

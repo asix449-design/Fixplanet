@@ -3,7 +3,7 @@ Year **1900**. By the calendar it is the last year of the nineteenth century. By
 ### China: the “Boxers”
 In northern China for several years the **Yihetuan** movement has been growing — the “Righteous and Harmonious Fists.” Europeans call them Boxers: they practised a gymnastics like martial arts and believed amulets would stop bullets.
 
-Why the explosion. After China’s defeat by Japan in 1895 the great powers carved themselves “spheres of influence”: ports, railways, missions, concessions. Missionaries, traders, engineers — for many Chinese making this breaks the village, the temple and dignity. Droughts and famine add rage. The slogan is simple: foreigners and Christianity out.
+Why the explosion. After China’s defeat by Japan in 1895 the great powers carved themselves “spheres of influence”: ports, railways, missions, concessions. Missionaries, traders, engineers — for many Chinese this breaks the village, the temple and dignity. Droughts and famine add rage. The slogan is simple: foreigners and Christianity out.
 
 In spring 1900 the bands burn churches, kill missionaries and Chinese Christians, tear up the rails. Empress Dowager Cixi hesitates at first, then effectively sides with them. In June they kill the German minister Ketteler. The **siege of the Beijing legation quarter** begins — about 55 days. Locked in the quarter are diplomats, guard soldiers, civilians: Russians, English, French, Americans, Japanese, Germans and others.
 
