@@ -69,6 +69,7 @@ import year1500Lv from './border-essays/year-1500-lv.md?raw';
 import year1500Pl from './border-essays/year-1500-pl.md?raw';
 import year1500Ru from './border-essays/year-1500-ru.md?raw';
 import year1600En from './border-essays/year-1600-en.md?raw';
+import year1600Pl from './border-essays/year-1600-pl.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -689,6 +690,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     title: '1600 n.e. — najbliższa mapa: 1648',
     caption:
       'Rok 1600 — Japonia kończy wojny domowe pod Sekigaharą; Anglia wydaje kartę Kompanii Wschodnioindyjskiej; w Rzymie palą Bruno; w Moskwie Borys Godunow — a kraj jeszcze nie wie o głodzie i Smutcie.',
+    essay: year1600Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 1648 użyta dla kroku 1600',
   },
   1700: {
