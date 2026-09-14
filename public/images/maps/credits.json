@@ -385,6 +385,33 @@
     "note": "World EEZ schematic. Marine Regions remains the named interactive source. Not a second Natural Earth countries layer."
   },
   {
+    "file": "disputed-breakaway-areas.jpg",
+    "title": "Admin 0 breakaway and disputed areas (catalog render)",
+    "source": "Natural Earth 10m cultural vectors — Admin 0 breakaway, disputed areas",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/",
+    "license": "Public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "Recolored Natural Earth breakaway and disputed polygons only. Small polygons are slightly enlarged so they read at card size. A thumbnail is cartography, not a court ruling."
+  },
+  {
+    "file": "states-provinces.jpg",
+    "title": "Admin 1 states and provinces (catalog render)",
+    "source": "Natural Earth cultural vectors — Admin 1 states, provinces (small-scale outlines)",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "license": "Public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "First-order internal divisions as outlines. A thumbnail is cartography, not a court ruling. Not a countries choropleth and not maritime zones."
+  },
+  {
+    "file": "land-boundary-lines.jpg",
+    "title": "Admin 0 land boundary lines (catalog render)",
+    "source": "Natural Earth 10m cultural vectors — Admin 0 boundary lines, land",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/",
+    "license": "Public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "International land borders as line geometry. A thumbnail is cartography, not a court ruling. Not a filled countries map and not maritime limits."
+  },
+  {
     "file": "living-languages-count.jpg",
     "title": "Ethnologue 18 linguistic diversity index",
     "source": "Wikimedia Commons, cmglee (BlankMap-World6 base by Canuckguy and others)",

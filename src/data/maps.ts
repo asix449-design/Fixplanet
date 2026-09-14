@@ -252,6 +252,83 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'outline',
   },
   {
+    slug: 'states-provinces',
+    category: 'political',
+    year: '2024',
+    sourceShort: 'Natural Earth',
+    sourceOrg: 'Natural Earth',
+    sourceUrl:
+      'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/',
+    openMapUrl:
+      'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/',
+    preview: 'states-provinces.jpg',
+    previewKind: 'outline',
+    sources: [
+      {
+        label: 'Natural Earth 10m Admin 1 – States, provinces',
+        url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/',
+      },
+      {
+        label: 'NACIS 10m states and provinces download',
+        url: 'https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_1_states_provinces.zip',
+      },
+    ],
+  },
+  {
+    slug: 'disputed-breakaway-areas',
+    category: 'political',
+    year: '2024',
+    sourceShort: 'Natural Earth',
+    sourceOrg: 'Natural Earth',
+    sourceUrl:
+      'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/',
+    openMapUrl:
+      'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/',
+    preview: 'disputed-breakaway-areas.jpg',
+    previewKind: 'outline',
+    sources: [
+      {
+        label: 'Natural Earth 10m Admin 0 – Breakaway, disputed areas',
+        url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/',
+      },
+      {
+        label: 'Natural Earth',
+        url: 'https://www.naturalearthdata.com/',
+      },
+      {
+        label: 'NACIS 10m disputed areas download',
+        url: 'https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_disputed_areas.zip',
+      },
+      {
+        label: 'Natural Earth vectors on GitHub',
+        url: 'https://github.com/nvkelso/natural-earth-vector',
+      },
+    ],
+  },
+  {
+    slug: 'land-boundary-lines',
+    category: 'political',
+    year: '2024',
+    sourceShort: 'Natural Earth',
+    sourceOrg: 'Natural Earth',
+    sourceUrl:
+      'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/',
+    openMapUrl:
+      'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/',
+    preview: 'land-boundary-lines.jpg',
+    previewKind: 'outline',
+    sources: [
+      {
+        label: 'Natural Earth 10m Admin 0 – Boundary lines',
+        url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/',
+      },
+      {
+        label: 'NACIS 10m land boundary lines download',
+        url: 'https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_boundary_lines_land.zip',
+      },
+    ],
+  },
+  {
     slug: 'forest-cover-loss',
     category: 'forests',
     year: '2001–2023',
