@@ -73,6 +73,7 @@ import year1600Lv from './border-essays/year-1600-lv.md?raw';
 import year1600Pl from './border-essays/year-1600-pl.md?raw';
 import year1600Ru from './border-essays/year-1600-ru.md?raw';
 import year1700En from './border-essays/year-1700-en.md?raw';
+import year1700Lv from './border-essays/year-1700-lv.md?raw';
 import year1700Pl from './border-essays/year-1700-pl.md?raw';
 
 export type BorderHistoryPage = {
@@ -874,6 +875,7 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     title: '1700. m.ē.',
     caption:
       'Gads 1700 — sākas Ziemeļu karš; pie Narvas zviedri sit krievus; mirst pēdējais spāņu Habsburgs — Eiropa gatavojas dalīt impēriju; Pēteris jau mērķēts uz Baltiju.',
+    essay: year1700Lv,
     imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1700. gadā no aourednik GeoJSON',
     sourceShort: 'Ourednik',
     sourceOrg: 'Historical basemaps © André Ourednik et al.',
