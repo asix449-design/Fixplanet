@@ -73,6 +73,106 @@ function img(
  */
 export const lawMeta: LawMeta[] = [
   {
+    slug: 'paris-agreement',
+    category: 'ecology',
+    status: 'existing',
+    year: '2015',
+    image: img(
+      'paris-agreement.jpg',
+      'U.S. Department of State',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:French_President_Hollande,_Foreign_Minister_Fabius,_and_UN_Secretary-General_Ki-moon_Applaud_Delegates_to_the_COP21_Climate_Change_Conference_(23696822225).jpg',
+    ),
+    sources: [
+      {
+        label: 'UNFCCC — The Paris Agreement',
+        url: 'https://unfccc.int/process-and-meetings/the-paris-agreement',
+      },
+      {
+        label: 'UNFCCC — Paris Agreement (English PDF)',
+        url: 'https://unfccc.int/sites/default/files/english_paris_agreement.pdf',
+      },
+      {
+        label: 'UN Treaty Depositary — Paris Agreement',
+        url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-7-d&chapter=27&clang=_en',
+      },
+    ],
+  },
+  {
+    slug: 'montreal-protocol',
+    category: 'ecology',
+    status: 'existing',
+    year: '1987',
+    image: img(
+      'montreal-protocol.jpg',
+      'NASA Scientific Visualization Studio',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:2023_Ozone_Hole_Update_(SVS14449_-_ozone_geos5_2023264_print).jpg',
+    ),
+    sources: [
+      {
+        label: 'Ozone Secretariat — Montreal Protocol',
+        url: 'https://ozone.unep.org/treaties/montreal-protocol',
+      },
+      {
+        label: 'Ozone Secretariat — Amendments (incl. Kigali)',
+        url: 'https://ozone.unep.org/treaties/montreal-protocol/amendments',
+      },
+      {
+        label: 'UN Treaty Depositary — Kigali Amendment',
+        url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-2-f&chapter=27&clang=_en',
+      },
+    ],
+  },
+  {
+    slug: 'eu-deforestation-regulation',
+    category: 'ecology',
+    status: 'existing',
+    year: '2023',
+    image: img(
+      'eu-deforestation-regulation.jpg',
+      'T. R. Shankar Raman',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Oil_palm_and_rainforest_fragment_Borneo.JPG',
+    ),
+    sources: [
+      {
+        label: 'EUR-Lex — Regulation (EU) 2023/1115',
+        url: 'https://eur-lex.europa.eu/eli/reg/2023/1115/oj',
+      },
+      {
+        label: 'European Commission — Deforestation-free products',
+        url: 'https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en',
+      },
+    ],
+  },
+  {
+    slug: 'eu-ets',
+    category: 'ecology',
+    status: 'existing',
+    year: '2003',
+    image: img(
+      'eu-ets.jpg',
+      'Vogone',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Kohlekraftwerk_Niederaußem_edit.JPG',
+    ),
+    sources: [
+      {
+        label: 'European Commission — EU ETS hub',
+        url: 'https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en',
+      },
+      {
+        label: 'European Commission — What is the EU ETS',
+        url: 'https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets/what-eu-ets_en',
+      },
+      {
+        label: 'EUR-Lex — Directive 2003/87/EC',
+        url: 'https://eur-lex.europa.eu/eli/dir/2003/87/oj',
+      },
+    ],
+  },
+  {
     slug: 'nature-restoration',
     category: 'ecology',
     status: 'existing',

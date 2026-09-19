@@ -1,9 +1,81 @@
 import type { LawCopy } from '../data/law';
 
 export const pl: Record<string, LawCopy> = {
+  'paris-agreement': {
+    title: 'Porozumienie paryskie',
+    hook: 'Główny obowiązujący traktat klimatyczny. Wiąże strony NDC i celem „znacznie poniżej 2°C / dążyć do 1,5°C” — nie globalnym sufitem emisji wpisanym w tekst.',
+    imageAlt:
+      'François Hollande, Laurent Fabius i Ban Ki-moon klaszczą na scenie COP21 po przyjęciu Porozumienia paryskiego',
+    jurisdiction: 'Ramowa konwencja ONZ w sprawie zmian klimatu (strony)',
+    officialName: 'Porozumienie paryskie',
+    citation:
+      'Porozumienie paryskie w ramach UNFCCC; przyjęte 12 grudnia 2015 (COP21); weszło w życie 4 listopada 2016',
+    yearStatus: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016.',
+    what: 'Prawnie wiążący traktat przy UNFCCC: NDC, sprawozdawczość, globalne podsumowanie; cele temperaturowe, adaptacja, finanse, pochłaniacze (w tym lasy).',
+    where: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016. Lista stron — depozytariusz ONZ / UNFCCC.',
+    effects:
+      'Zamierzony skutek: zebrać krajowe plany klimatyczne w jedną architekturę traktatową, pięcioletni cykl ambicji i wpisać 1,5°C w prawo wielostronne. Wyniki zależą od treści NDC i wdrożenia krajowego — traktat sam nie zamyka elektrowni.',
+    caveats:
+      'Treść NDC ustalają same państwa; traktat sam nie zamyka elektrowni. Nie mylić z Protokołem z Kioto.',
+    sourcesNote: 'Te same trzy URL: strona UNFCCC; angielski PDF porozumienia; depozytariusz ONZ.',
+  },
+  'montreal-protocol': {
+    title: 'Protokół montrealski w sprawie substancji zubożających warstwę ozonową',
+    hook: 'Traktat ozonowy, który realnie uciął produkcję i handel ODS. Kigali później dodało HFC dla klimatu — ta sama maszyna Montrealu, nie drugi UNFCCC.',
+    imageAlt:
+      'Wizualizacja NASA niskiego ozonu nad Antarktydą — dziura ozonowa, którą Protokół montrealski miał odwrócić',
+    jurisdiction: 'Strony Protokołu montrealskiego (sekretariat ozonowy UNEP)',
+    officialName: 'Protokół montrealski w sprawie substancji zubożających warstwę ozonową',
+    citation:
+      'Protokół montrealski (1987, ze zmianami); poprawka z Kigali 15 października 2016; kontrola HFC od 1 stycznia 2019 dla stron, u których poprawka weszła w życie',
+    yearStatus:
+      'Protokół z 1987. Kigali w mocy od 01.01.2019 po progach ratyfikacji.',
+    what: 'Harmonogramy redukcji ODS, ograniczenia handlu, sprawozdawczość, Fundusz wielostronny; Kigali — stopniowe obniżanie HFC.',
+    where: 'Niemal powszechne uczestnictwo; Kigali w mocy od 01.01.2019 po progach ratyfikacji.',
+    effects:
+      'Udokumentowany sukces protokołu to harmonogramy wycofywania ODS i metryki odbudowy warstwy ozonowej (oceny sekretariatu / WMO–UNEP, nie marketing). Zamierzony skutek klimatyczny Kigali to uniknięte ocieplenie od HFC; dostawa idzie według krajowych harmonogramów obniżania.',
+    caveats:
+      'Sukces ozonu ≠ kontrola CO₂/metanu (to Paryż/UNFCCC). Nie podpisywać karty jako „główny traktat klimatyczny”.',
+    sourcesNote: 'Te same trzy URL: sekretariat ozonowy — protokół i poprawki; depozytariusz ONZ — Kigali.',
+  },
+  'eu-deforestation-regulation': {
+    title: 'Rozporządzenie UE o produktach wolnych od wylesiania (EUDR)',
+    hook: 'Reguła rynku UE: wymienione towary muszą być wolne od wylesiania i legalne. Uchwalone 2023; główne obowiązki od końca 2026 / połowy 2027 według wielkości operatora. To nie unijny traktat leśny ONZ.',
+    imageAlt:
+      'Plantacja palmy olejowej wokół pozostałego fragmentu lasu deszczowego na Borneo — krawędź towaru i lasu, którą obejmuje unijna reguła',
+    jurisdiction: 'Unia Europejska',
+    officialName: 'Rozporządzenie w sprawie produktów niezwiązanych z wylesianiem',
+    citation: 'Rozporządzenie (UE) 2023/1115 z 31 maja 2023 r. w sprawie produktów niezwiązanych z wylesianiem',
+    yearStatus:
+      'Rozporządzenie w mocy; stosowanie dużych/średnich od 30.12.2026, mikro/małych od 30.06.2027 (z zastrzeżeniami dla byłych EUTR).',
+    what: 'Due diligence i geolokalizacja dla bydła, kakao, kawy, oleju palmowego, kauczuku, soi, drewna i pochodnych; uchyla EUTR w zakresie pokrycia.',
+    where:
+      'Rozporządzenie w mocy; stosowanie dużych/średnich od 30.12.2026, mikro/małych od 30.06.2027 (z zastrzeżeniami dla byłych EUTR). Nie wrzucać do «pod rozwagą».',
+    effects:
+      'Cele statutowe: ograniczyć wylesianie/degradację napędzane popytem UE oraz związane emisje i utratę bioróżnorodności. Szacunki cięcia emisji z oceny skutków Komisji — zamierzone/modelowane, nie zmierzone wyniki 2026.',
+    caveats: 'Wyciek na inne rynki; odroczenie ≠ «już blokuje wszystko dziś».',
+    sourcesNote: 'Te same dwa URL: EUR-Lex — Rozporządzenie (UE) 2023/1115; strona Komisji o produktach wolnych od wylesiania.',
+  },
+  'eu-ets': {
+    title: 'Unijny system handlu uprawnieniami do emisji (EU ETS)',
+    hook: 'Unijny cap-and-trade dla dużych emitentów. Kurczący się pułap uprawnień, aukcje i rezerwa stabilności rynku — nie domowy podatek węglowy i nie samo Porozumienie paryskie.',
+    imageAlt:
+      'Elektrownia lignitowa Niederaussem w Niemczech — duży stacjonarny emitent takiego typu, jaki obejmuje EU ETS',
+    jurisdiction: 'Unia Europejska',
+    officialName: 'Unijny system handlu uprawnieniami do emisji',
+    citation:
+      'Dyrektywa 2003/87/WE (ze zmianami) ustanawiająca system handlu uprawnieniami do emisji gazów cieplarnianych',
+    yearStatus: 'Obowiązuje w UE; rdzeń — Dyrektywa 2003/87/WE ze zmianami.',
+    what: 'Rynek uprawnień dla objętych instalacji (i lotnictwa / dalszych sektorów według nowelizacji); zwrot uprawnień wobec zweryfikowanych emisji.',
+    where: 'Obowiązuje w UE; rdzeń — Dyrektywa 2003/87/WE ze zmianami.',
+    effects:
+      'Zamierzony skutek: dać cenę objętym emisjom GHG i ciąć je pod kurczącym się pułapem. Udokumentowane wyniki systemu — w raportach EEA/Komisji o ETS; tony stamtąd, nie z głowy.',
+    caveats: 'Nie cała gospodarka; nie Paryż i nie EUDR. Tony — tylko z raportów EEA/Komisji.',
+    sourcesNote: 'Te same trzy URL: hub Komisji o EU ETS; strona „What is the EU ETS”; EUR-Lex — Dyrektywa 2003/87/WE.',
+  },
   'nature-restoration': {
     title: 'Unijne prawo odbudowy przyrody',
-    hook: 'Wiążące rozporządzenie o odbudowie — nie papier strategiczny. Krajowe projekty planów miały być gotowe w 2026.',
+    hook: 'Wiążące rozporządzenie o restytucji — nie dokument strategiczny. Projekty planów krajowych miały być do 1 września 2026; Komisja je ocenia.',
     imageAlt:
       'Torfowisko z otwartą wodą i niską roślinnością — typ siedliska mokradłowego, który obejmują unijne cele odbudowy',
     jurisdiction: 'Unia Europejska',
