@@ -35,6 +35,7 @@ export const enToday: TodayShelfCopy = {
   layersLabel: 'Map layers',
   layerCamps: 'Refugee camps',
   layerDetections: 'EU border detections',
+  layerIdp: 'Internal displacement',
   campsTitle: 'Largest UNHCR camps and settlements',
   campsLead:
     'Named UNHCR sites with a published headcount and date. These are people already living in a camp or settlement — not 2023 net migration and not “arrived this year.”',
@@ -57,6 +58,73 @@ export const enToday: TodayShelfCopy = {
   detectionsOpen: 'Open EU route note',
   detectionsNationalities: 'Most frequently detected nationalities in 2025: Bangladeshi, Egyptian, Afghan — not a statement about who “arrives most” worldwide.',
   noHeadcount: 'No reliable headcount',
+  idpTitle: 'Internal displacement (IDMC)',
+  idpLead:
+    'IDMC recorded more than 62.2 million internal displacements in 2025 (−6% vs 2024): 32.3 million from conflict and violence (record) and 29.9 million from disasters. Conflict led disasters for the first time; 42 countries recorded both.',
+  idpDefinition:
+    'IDMC counts people forced from home by conflict, violence, or disasters who have not crossed an international border. This is not UN DESA international migrant stock, not a Frontex detection count, and not a UNHCR camp headcount. Movements during the year (new or repeated) are not the same as year-end stock, and the same person can move more than once.',
+  idpHonesty:
+    'GRID 2026 covers calendar 2025 (report published 12 May 2026). Stock is people still living in internal displacement at year-end. Annual figures are counted movements, not unique people. Do not caption 32.3 million as 32.3 million unique people.',
+  idpNoChoropleth:
+    'Named crises below are sourced notes, not a colour-by-count world map. IDMC coverage is incomplete; this page does not invent a global choropleth or a “breakthrough” arrow layer from these totals.',
+  idpMillion: 'million',
+  idpMovementsUnit: 'movements, 2025',
+  idpStockUnit: 'people, end-2025',
+  idpConflictLabel: 'Conflict and violence',
+  idpDisasterLabel: 'Disasters',
+  idpCountriesLabel: 'countries and territories',
+  idpBothLabel: 'countries with both triggers',
+  idpCrisesTitle: 'Named crises — sourced notes, not a map',
+  idpCards: {
+    'idp-stock-2025': {
+      tag: 'Stock · end-2025',
+      title: 'People living in internal displacement',
+      hook: 'More than 82.2 million people were living in internal displacement across 104 countries and territories at the end of 2025 — the first slight global decline in a decade, still near record levels.',
+      detail: [
+        'IDMC’s year-end stock of people who have been forced to flee their homes by conflict, violence, or disasters and have not crossed an international border. It is not UN DESA international migrant stock, not a Frontex detection count, and not a UNHCR camp headcount.',
+        'Of that stock, more than 68.6 million were displaced by conflict and violence (54 countries/territories) and almost 13.6 million by disasters (82 countries/territories), as of 31 December 2025.',
+        'GRID 2026 attributes much of the small global decline to returns in parts of Sudan, the DRC, and Syria — and warns that returns are not automatically durable solutions. Nearly three-quarters of countries hosting conflict IDPs still lacked up-to-date data by year-end.',
+      ],
+    },
+    'idp-conflict-displacements-2025': {
+      tag: 'Movements · 2025',
+      title: 'Conflict and violence displacements',
+      hook: 'Conflict and violence triggered a record 32.3 million internal displacements across 48 countries and territories in 2025 — about 60% above 2024, and more than disasters for the first time in IDMC’s series.',
+      detail: [
+        'Counted movements during the year (new or repeated). The same person can move more than once. Do not caption this as “32.3 million unique people.”',
+        'GRID 2026 notes displacement was highly concentrated: Iran and the DRC each accounted for around a third of the global conflict-displacement total. International armed conflicts accounted for about 46% of conflict displacements; the number of countries with displacement linked to international conflicts rose from 6 in 2024 to 13 in 2025.',
+        'Urban fighting around places such as El Fasher, Goma, and Tehran is named in the executive summary as feeding large, often repeated movements. Sudan remained the largest IDP-hosting crisis (about 9.1 million people living in displacement in Sudan at year-end).',
+      ],
+    },
+    'idp-disaster-displacements-2025': {
+      tag: 'Movements · 2025',
+      title: 'Disaster displacements',
+      hook: 'Disasters triggered 29.9 million internal displacements across 140 countries and territories in 2025 — down 35% from the extreme 2024 peak, still about 13% above the decade average.',
+      detail: [
+        'Storms: about 17.9 million movements (~60% of disaster displacements; second-highest annual storm figure on record). Floods: under 7.9 million (−31% vs the decade average). Wildfires: more than 694,000 movements (second-highest in a decade). Geophysical hazards: around 2.5 million, including large pre-emptive evacuations after major earthquakes.',
+        'The Philippines alone recorded about 10.7 million disaster displacements in 2025 (~36% of the global disaster total in GRID’s map summary). That is mostly weather-hazard movement and evacuation accounting — not a claim that climate “explains” all migration on the page.',
+        'Disaster IDP movements are real and sourced; they are still internal and are not the same series as the M49 net-migration tablets.',
+      ],
+    },
+    'idp-movements-2025-overview': {
+      tag: 'Overview · 2025',
+      title: 'Internal displacements in 2025',
+      hook: 'IDMC recorded more than 62.2 million internal displacements in 2025 (−6% vs 2024): 32.3 million from conflict and violence (record) and 29.9 million from disasters. Conflict led disasters for the first time; 42 countries recorded both.',
+      detail: [
+        'Movements during the year are not the year-end stock and not cross-border migration. The stock, conflict, and disaster panels give the splits. These totals are not a global “breakthrough” arrow layer.',
+      ],
+    },
+  },
+  idpCrisisCopy: {
+    'sudan-stock': {
+      place: 'Sudan',
+      note: 'Largest IDP-hosting crisis at year-end 2025. About 9.1 million people were still living in internal displacement in Sudan. A year-end stock, not 2025 movements, and not a UNHCR camp headcount.',
+    },
+    'philippines-disaster-2025': {
+      place: 'Philippines',
+      note: 'About 10.7 million disaster displacements in 2025 — around 36% of the global disaster total in GRID’s map summary. Mostly weather-hazard movement and evacuation accounting, not a “climate migrant” world map.',
+    },
+  },
   regions: {
     africa: {
       name: 'Africa',

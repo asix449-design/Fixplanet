@@ -35,6 +35,7 @@ export const plToday: TodayShelfCopy = {
   layersLabel: 'Warstwy mapy',
   layerCamps: 'Obozy dla uchodźców',
   layerDetections: 'Wykrycia na granicach UE',
+  layerIdp: 'Wewnętrzne przesiedlenie',
   campsTitle: 'Największe obozy i osiedla UNHCR',
   campsLead:
     'Nazwane ośrodki UNHCR z opublikowaną liczbą i datą. To ludzie już mieszkający w obozie lub osiedlu — nie migracja netto z 2023 r. i nie „przybysze z tego roku”.',
@@ -57,6 +58,67 @@ export const plToday: TodayShelfCopy = {
   detectionsOpen: 'Otwórz notatkę o trasie UE',
   detectionsNationalities: 'Najczęściej wykrywane obywatelstwa w 2025 r.: Bangladesz, Egipt, Afganistan — to nie teza o tym, kto „przyjeżdża najczęściej” na świecie.',
   noHeadcount: 'Bez wymyślonej liczby',
+  idpTitle: 'Wewnętrzne przesiedlenie (IDMC)',
+  idpLead:
+    'Ponad 62,2 mln wewnętrznych przesiedleń w 2025 (−6% vs 2024): 32,3 mln z konfliktu i przemocy (rekord) oraz 29,9 mln z katastrof. Konflikt po raz pierwszy wyprzedził katastrofy; w 42 krajach wystąpiły oba.',
+  idpDefinition:
+    'IDMC liczy ludzi zmuszonych do opuszczenia domu przez konflikt, przemoc lub katastrofy, którzy nie przekroczyli granicy międzynarodowej. To nie międzynarodowy migrant stock UN DESA, nie wykrycia Frontexu i nie headcount obozów UNHCR. Ruchy w ciągu roku (nowe lub powtórne) to nie to samo co stan na koniec roku; ta sama osoba może się przesunąć więcej niż raz.',
+  idpHonesty:
+    'GRID 2026 obejmuje rok kalendarzowy 2025 (raport opublikowany 12 maja 2026). Stan to ludzie, którzy nadal żyją w wewnętrznym przesiedleniu na koniec roku. Liczby roczne to policzone ruchy, nie unikalne osoby. Nie podpisuj 32,3 mln jako 32,3 mln unikalnych ludzi.',
+  idpNoChoropleth:
+    'Nazwane kryzysy poniżej to notatki ze źródłem, nie mapa świata kolorowana liczbą. Pokrycie IDMC jest niepełne; strona nie rysuje globalnego choroplethu ani warstwy «strzałki przełomu» z tych sum.',
+  idpMillion: 'mln',
+  idpMovementsUnit: 'ruchów, 2025',
+  idpStockUnit: 'osób, koniec 2025',
+  idpConflictLabel: 'Konflikt i przemoc',
+  idpDisasterLabel: 'Katastrofy',
+  idpCountriesLabel: 'krajów i terytoriów',
+  idpBothLabel: 'krajów z oboma czynnikami',
+  idpCrisesTitle: 'Nazwane kryzysy — notatki ze źródłem, nie mapa',
+  idpCards: {
+    'idp-stock-2025': {
+      tag: 'Stan · koniec 2025',
+      title: 'Ludzie w wewnętrznym przesiedleniu',
+      hook: 'Ponad 82,2 mln ludzi żyło w wewnętrznym przesiedleniu w 104 krajach i terytoriach na koniec 2025 — pierwszy od dekady lekki spadek, liczby wciąż blisko rekordu.',
+      detail: [
+        'Stan IDMC: ludzie zmuszeni do opuszczenia domu przez konflikt, przemoc lub katastrofy, którzy nie przekroczyli granicy międzynarodowej. Ponad 68,6 mln — konflikt/przemoc; prawie 13,6 mln — katastrofy (na 31 grudnia 2025). To nie międzynarodowy migrant stock i nie headcount obozów UNHCR.',
+      ],
+    },
+    'idp-conflict-displacements-2025': {
+      tag: 'Ruchy · 2025',
+      title: 'Przesiedlenia z powodu konfliktu i przemocy',
+      hook: 'Konflikt i przemoc wywołały rekordowe 32,3 mln wewnętrznych przesiedleń w 48 krajach w 2025 — około 60% powyżej 2024 i po raz pierwszy więcej niż katastrofy.',
+      detail: [
+        'To ruchy w ciągu roku (nowe lub powtórne), nie unikalne osoby. Iran i DRC — około jednej trzeciej światowego wyniku każdy. Międzynarodowe konflikty zbrojne — około 46%. W Sudanie pod koniec roku w wewnętrznym przesiedleniu pozostawało około 9,1 mln ludzi.',
+      ],
+    },
+    'idp-disaster-displacements-2025': {
+      tag: 'Ruchy · 2025',
+      title: 'Przesiedlenia z powodu katastrof',
+      hook: 'Katastrofy wywołały 29,9 mln wewnętrznych przesiedleń w 140 krajach w 2025 — o 35% poniżej szczytu 2024, wciąż około 13% powyżej średniej dekady.',
+      detail: [
+        'Burze ~17,9 mln; powodzie <7,9 mln; pożary >694 tys.; geofizyka ~2,5 mln. Na Filipiny przypadło około 10,7 mln przesiedleń katastroficznych (~36% światowego disaster-wyniku). To nie mapa «migrantów klimatycznych» i nie międzynarodowy net migration.',
+      ],
+    },
+    'idp-movements-2025-overview': {
+      tag: 'Przegląd · 2025',
+      title: 'Wewnętrzne przesiedlenia w 2025',
+      hook: 'Ponad 62,2 mln wewnętrznych przesiedleń w 2025 (−6% vs 2024): 32,3 mln z konfliktu i przemocy (rekord) oraz 29,9 mln z katastrof. Konflikt po raz pierwszy wyprzedził katastrofy; w 42 krajach wystąpiły oba.',
+      detail: [
+        'Kafelek wprowadzający warstwy. Raz: ruchy ≠ stan ≠ migracja transgraniczna. Szczegóły A–C. Nie rysować globalnej «strzałki przełomu» z tych sum.',
+      ],
+    },
+  },
+  idpCrisisCopy: {
+    'sudan-stock': {
+      place: 'Sudan',
+      note: 'Największy kryzys pod względem ludzi w wewnętrznym przesiedleniu na koniec 2025. Około 9,1 mln ludzi nadal żyło w wewnętrznym przesiedleniu w Sudanie. To stan na koniec roku, nie ruchy 2025 i nie headcount obozów UNHCR.',
+    },
+    'philippines-disaster-2025': {
+      place: 'Filipiny',
+      note: 'Około 10,7 mln przesiedleń katastroficznych w 2025 — około 36% światowego disaster-wyniku w podsumowaniu mapy GRID. Głównie ruch i ewakuacje z zagrożeń pogodowych, nie światowa mapa «migrantów klimatycznych».',
+    },
+  },
   regions: {
     africa: {
       name: 'Afryka',
