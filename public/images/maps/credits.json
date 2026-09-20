@@ -421,6 +421,42 @@
     "note": "Country choropleth of linguistic diversity from Ethnologue 18. Magnitude/diversity preview — not the Glottolog family map and not a printed living-language total."
   },
   {
+    "file": "endangered-languages-unesco.jpg",
+    "title": "UNESCO Atlas endangerment degrees (catalog schematic)",
+    "source": "UNESCO / Moseley (ed.) 2010, Atlas of the World’s Languages in Danger; Natural Earth land (public domain)",
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000187026",
+    "license": "Map geometry public domain; overlay is Fix Planet schematic of Atlas degrees",
+    "kind": "fix-planet-schematic",
+    "note": "Neutral schematic of UNESCO endangerment degrees (vulnerable → extinct). Not a political ethnicity choropleth and not a second Glottolog family tree."
+  },
+  {
+    "file": "wals-language-structures.jpg",
+    "title": "WALS feature 1A — Consonant inventories",
+    "source": "WALS Online (Dryer & Haspelmath / Max Planck EVA); Maddieson, Consonant Inventories; Natural Earth land",
+    "url": "https://wals.info/feature/1A",
+    "license": "CC BY 4.0 (WALS); land public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "Redraw of WALS Online feature 1A from the CLDF release. Structural typology points, not Glottolog families and not UNESCO endangerment pins."
+  },
+  {
+    "file": "language-areas-asher-moseley.jpg",
+    "title": "Language areas from Asher & Moseley (digitized polygons)",
+    "source": "Glottography/asher2007world; Ranacher et al., Scientific Data 2025; Natural Earth land",
+    "url": "https://github.com/glottography/asher2007world",
+    "license": "CC BY 4.0 (Glottography/asher2007world); land public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "Sample language-area polygons from the traditional / time-of-contact sheets, linked to Glottocodes. Areas, not Glottolog points, and not a family-tree choropleth."
+  },
+  {
+    "file": "endangered-languages-project.jpg",
+    "title": "Endangered Languages Project catalogue (catalog schematic)",
+    "source": "Endangered Languages Project; Natural Earth land (public domain)",
+    "url": "https://www.endangeredlanguages.com/",
+    "license": "Map geometry public domain; overlay is Fix Planet schematic of ELP catalogue vitality",
+    "kind": "fix-planet-schematic",
+    "note": "Living-catalogue schematic with ELP-style vitality colors. Distinct from UNESCO Atlas degrees and from Ethnologue EGIDS. Not a political map."
+  },
+  {
     "file": "borders/y2020.png",
     "title": "Present-day country fills (atlas palette)",
     "source": "Wikimedia Commons BlankMap-World; Natural Earth is the named political base. Fix Planet 4-color fill.",

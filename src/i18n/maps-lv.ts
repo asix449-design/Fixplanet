@@ -355,4 +355,56 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Pasaules karte ar starptautiskām sauszemes robežām kā tumšām līnijām uz gaišas sauszemes — līniju ģeometrija, ne valstu aizpilde un ne jūras robežas',
   },
+  'endangered-languages-unesco': {
+    title: 'Apdraudētās valodas (UNESCO atlants)',
+    hook: 'Valodas, ko UNESCO klasificēja kā apdraudētas vai izzūdošas — apdraudējuma atlants, ne tautu skaitīšana un ne otra ģimeņu karte.',
+    description:
+      'Moseley 2010 izdevums (~2500 valodas, apdraudējuma pakāpes pēc paaudžu pārmantošanas). Blakus Glottolog (radniecība) un Ethnologue (dzīvo skaits) — cits jautājums: ko UNESCO uzskatīja par apdraudētu. Nelasīt kā etnisko karti vai tiesas spriedumu.',
+    whyOnShelf:
+      'Blakus Glottolog (radniecība) un Ethnologue (dzīvo skaits) — cits jautājums: ko UNESCO uzskatīja par apdraudētu.',
+    howToRead: 'Nelasīt kā etnisko karti vai tiesas spriedumu.',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Nelasīt kā etnisko karti vai tiesas spriedumu.',
+    licenseNote:
+      'UNESCO / Moseley (red.) 2010. Priekšskats ir atlanta apdraudējuma pakāpju shēma (ievainojama → izzudusi) uz sabiedriskā īpašuma pasaules kontūra — ne etnisks horoplēts un ne otrs Glottolog ģimeņu koks. Citējiet UNESDOC izdevumu.',
+    imageAlt:
+      'Shēmatiska pasaules karte ar UNESCO atlanta apdraudējuma pakāpju punktiem no ievainojamas (dzeltena) līdz izzudušai (melna) — ne tautu skaitīšana un ne valodu saimju karte',
+  },
+  'wals-language-structures': {
+    title: 'Pasaules valodu struktūru atlants (WALS)',
+    hook: 'Valodu strukturālās iezīmes — fonētika, vārdu kārtība, gramatika — no aprakstošām gramatikām. Tipoloģija, ne etniskums un ne ģimeņu koks.',
+    description:
+      'WALS Online datubāze (MPI EVA). Glottolog = radniecība; WALS = kuras strukturālās iezīmes kur sastopamas. Krāsa iezīmes kartē — kods izlasē, ne «tauta» un ne valsts.',
+    whyOnShelf: 'Glottolog = radniecība; WALS = kuras strukturālās iezīmes kur sastopamas.',
+    howToRead: 'Krāsa iezīmes kartē — kods izlasē, ne «tauta» un ne valsts.',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Krāsa — kods izlasē, ne «tauta» un ne valsts.',
+    licenseNote:
+      'WALS Online dati ir CC BY 4.0 (Dryer & Haspelmath / Maksa Planka evolūcijas antropoloģijas institūts). Priekšskats pārzīmē iezīmi 1A, līdzskaņu inventāra lielumu (Maddieson), no CLDF laidiena — strukturālās tipoloģijas karte, ne Glottolog saimes un ne UNESCO apdraudējuma punkti.',
+    imageAlt:
+      'WALS Online karte par līdzskaņu inventāra lielumu: krāsaini punkti valodu atsauces vietās no maza (zils) līdz lielam (sarkans) — tipoloģija, ne etniskums un ne ģimeņu koks',
+  },
+  'language-areas-asher-moseley': {
+    title: 'Valodu areāli (Asher & Moseley)',
+    hook: 'Atvērti areālu poligoni no Asher & Moseley atlanta, piesaistīti Glottocode — laukumi, ne Glottolog punkti, un joprojām ne tautu skaitīšana.',
+    description: '~6992 poligoni; Glottolog punkti ≠ areāli. Lasīt kā atlanta vispārinājumu, ne suverenitāti un ne «asinis».',
+    whyOnShelf: 'Glottolog punkti ≠ areāli.',
+    howToRead: 'Lasīt kā atlanta vispārinājumu, ne suverenitāti un ne «asinis».',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Lasīt kā atlanta vispārinājumu, ne suverenitāti un ne «asinis».',
+    licenseNote:
+      'Areālu poligoni no Glottography/asher2007world (CC BY 4.0), digitalizēti no Asher & Moseley un piesaistīti Glottocode; citējiet Ranacher et al., Scientific Data 2025. Priekšskats ir laukumu izlase no tradicionālajām / kontakta laika lapām — ne Glottolog saimju horoplēts un ne tautu skaitīšana.',
+    imageAlt:
+      'Valodu areālu poligonu izlase, digitalizēta no Asher & Moseley atlanta un piesaistīta Glottocode — laukumi, ne Glottolog punkti un ne tautu skaitīšana',
+  },
+  'endangered-languages-project': {
+    title: 'Endangered Languages Project katalogs',
+    hook: 'Dzīvs katalogs un karte apdraudētajām valodām ar resursiem kopienām — cits skats uz apdraudējumu blakus UNESCO 2010 atlantam, ne otrs Glottolog.',
+    description:
+      'Nepeļņas ELP: katalogs, karte, vitalitāte, resursu bibliotēka. Nejauc ar UNESCO 2010 izdevumu un nelasīt kā etnisko/politisko karti.',
+    whyOnShelf: 'Nejauc ar UNESCO 2010 izdevumu.',
+    howToRead: 'Nejauc ar UNESCO 2010 izdevumu un nelasīt kā etnisko/politisko karti.',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Nelasīt kā etnisko/politisko karti.',
+    licenseNote:
+      'Endangered Languages Project. Priekšskats ir dzīva kataloga shēma — atšķirīga no UNESCO atlanta pakāpēm un Ethnologue EGIDS punktiem, un ne politiska karte.',
+    imageAlt:
+      'Shēmatiska apdraudēto valodu kataloga karte Endangered Languages Project krāsās — vitalitātes punkti, ne UNESCO 2010 atlants un ne otrs Glottolog',
+  },
 };
