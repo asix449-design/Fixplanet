@@ -286,4 +286,66 @@ export const pl: Record<string, GeoCopy> = {
     sourcesNote:
       'Przegląd Latham et al. 2012 w Philosophical Transactions; program MCB University of Washington; strony programu RRAP Cooling and Shading.',
   },
+  'cirrus-cloud-thinning': {
+    title: 'Przerzedzanie chmur pierzastych',
+    hook: 'Zasiać wysokie chmury lodowe, by stały się cieńsze i wypuszczały więcej ciepła w kosmos. Modele się rozchodzą; IPCC ma niską pewność co do chłodzenia. To nie SAI pod inną nazwą.',
+    imageAlt:
+      'Obraz MODIS wysokich chmur pierzastych nad Pacyfikiem i środkowym Chile — naturalne chmury lodowe, nie eksperyment przerzedzania',
+    jurisdiction: 'Społeczność badawcza (modele; bez operacyjnego wdrożenia państwowego)',
+    yearStatus:
+      'Cirrus cloud thinning (CCT); ocena w IPCC AR6 WG I; osobno od SAI i MCB w przeglądzie NOAA SRM (lipiec 2024). Status: badania.',
+    plan: 'Dodaje jądra nukleacji lodu do zimnych chmur pierzastych: kryształy większe, szybciej opadają, chmura cieńsza — więcej wychodzącego długofalowego promieniowania.',
+    construction: 'Modele i prace o mikrofizyce; brak floty państwowej. IPCC — niska pewność.',
+    outcome: 'Modele się rozchodzą; IPCC ma niską pewność co do chłodzenia.',
+    lessons:
+      'Nie usuwa CO₂ i nie leczy zakwaszenia oceanu. Nie podpisywać jako gotowy termostat i nie mylić z SAI/MCB.',
+    sourcesNote:
+      'IPCC AR6 WG I, rozdział 4 (i PDF); NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (lipiec 2024); Gasparini et al., ACP 2017.',
+  },
+  'surface-albedo-modification': {
+    title: 'Podnoszenie albedo powierzchni',
+    hook: 'Jaśniejsze dachy i drogi — ulice chłodniejsze, mniej klimatyzacji. To nie globalny ściemniacz: miasta to około jednego procenta powierzchni Ziemi.',
+    imageAlt:
+      'Bielone dachy i tarasy na Santorini — śródziemnomorska jasna tradycja, nie planetarny program albedo',
+    jurisdiction: 'Miasta, budynki i propozycje pokrycia terenu (bez programu planetarnego)',
+    yearStatus:
+      'Surface albedo enhancement (chłodne dachy, jasne nawierzchnie); NOAA SRM SoS (lipiec 2024); EPA o cieple miejskim; IPCC AR6 WG III, budynki. Status: badania / lokalna praktyka.',
+    plan: 'Podnosi odbijalność dachów/nawierzchni; EPA — narzędzie przeciw miejskiej wyspie ciepła.',
+    construction: 'Zwykła praktyka budowlana w gorących miastach; brak programu planetarnego.',
+    outcome: 'To nie globalny ściemniacz: miasta to około jednego procenta powierzchni Ziemi.',
+    lessons:
+      'Kara zimowa w zimnym klimacie; nie usuwa CO₂; nie sprzedawać białego dachu jako geoengineeringu planety.',
+    sourcesNote:
+      'EPA — Using Cool Roofs to Reduce Heat Islands; IPCC AR6 WG III, rozdział 9 (budynki, PDF); NOAA CSL SRM SoS (lipiec 2024); NASEM Reflecting Sunlight.',
+  },
+  'ocean-alkalinity-enhancement': {
+    title: 'Podnoszenie zasadowości oceanu',
+    hook: 'Dodać zasadowość, by woda trzymała więcej CO₂ jako wodorowęglan. Chemia, nie żelazne „zasiewanie” planktonu. Nadal badania.',
+    imageAlt:
+      'Boja NOAA MAP-CO2 do badań zakwaszenia oceanu przy rafie Cayo Enrique, Portoryko — monitoring chemii węglanowej, nie wdrożenie OAE',
+    jurisdiction: 'Grupy badawcze / próby mCDR przy wsparciu NOAA (bez komercyjnej licencji planetarnej)',
+    yearStatus:
+      'Ocean alkalinity enhancement (OAE); strategia National Academies dla oceanicznego CDR; przegląd NOAA OAP; granty NOPP. Status: badania.',
+    plan: 'Podnosi zasadowość wody morskiej (minerały lub elektrochemia) → większe pochłanianie CO₂. Nie mylić z nawożeniem żelazem.',
+    construction: 'Laboratoria, modele, wczesne próby terenowe; nie gotowa usługa klimatyczna.',
+    outcome: 'Chemia, nie żelazne „zasiewanie” planktonu. Nadal badania.',
+    lessons: 'Cykl życia, ekologia, monitoring. Nie zastępuje cięcia emisji.',
+    sourcesNote:
+      'NOAA Ocean Acidification Program — Carbon Dioxide Removal; granty NOAA / NOPP dla mCDR; strategia National Academies dla oceanicznego CDR; szkic strategii CDR Rady Naukowej NOAA.',
+  },
+  'glacial-climate-intervention': {
+    title: 'Lodowcowa interwencja klimatyczna',
+    hook: 'Spowolnić kolaps lodowców kurtynami na dnie, hydrologią bazalną lub zimowym pogrubianiem lodu — na papierze. Nie zbudowany mur dla Antarktydy.',
+    imageAlt:
+      'Czoło cielenia lodowca szelfowego Thwaites, morze Amundsena, zdjęcie NASA IceBridge — klasa lodu, o której mówi wizja badawcza z 2024, nie zbudowana kurtyna denna',
+    jurisdiction: 'Wizja badawcza (glacjologia / propozycje polarne; bez wdrożonego programu)',
+    yearStatus:
+      'Glacial Climate Intervention research vision (2024); przegląd interwencji wysokich szerokości w Climatic Change (2024). Status: badania / spekulatywne.',
+    plan: 'Lokalna inżynieria przy lodowcach i lodzie morskim (kurtyny, środki bazalne, pompy), nie przyciemnianie Słońca.',
+    construction: 'Białe księgi i modele; przegląd 2024 — wiele pomysłów słabo gotowych.',
+    outcome: 'Na papierze. Nie zbudowany mur dla Antarktydy.',
+    lessons: 'Ekosystemy, prawa ludności rdzennej, logistyka. Cięcie emisji — główna dźwignia.',
+    sourcesNote:
+      'Glacial Climate Intervention: A Research Vision (2024, PDF przez AWI EPIC); przegląd Moore et al. 2024 w Climatic Change; NOAA CSL SRM SoS.',
+  },
 };

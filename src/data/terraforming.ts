@@ -481,6 +481,126 @@ export const geoMeta: GeoMeta[] = [
       },
     ],
   },
+  {
+    slug: 'cirrus-cloud-thinning',
+    shelf: 'climate',
+    status: 'research',
+    years: '2010s–',
+    image: img(
+      'cirrus-cloud-thinning.jpg',
+      'MODIS Land Rapid Response Team, NASA GSFC',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Cirrus_Clouds_off_Chile_(MODIS_2024-05-09).jpg',
+    ),
+    sources: [
+      {
+        label: 'IPCC AR6 WG I — Chapter 4 (SRM / radiation proposals incl. CCT)',
+        url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/',
+      },
+      {
+        label: 'IPCC AR6 WG I — Chapter 4 PDF',
+        url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter04.pdf',
+      },
+      {
+        label: 'NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (July 2024)',
+        url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
+      },
+      {
+        label: 'Gasparini et al. (2017) — ACP (cirrus seeding proxies in models)',
+        url: 'https://acp.copernicus.org/articles/17/4871/2017/',
+      },
+    ],
+  },
+  {
+    slug: 'surface-albedo-modification',
+    shelf: 'climate',
+    status: 'research',
+    years: '1990s–',
+    image: img(
+      'surface-albedo-modification.jpg',
+      'Anthony Delanoix',
+      'CC0',
+      'https://commons.wikimedia.org/wiki/File:Archipel_de_Santorin,_Santorini,_Greece_(Unsplash).jpg',
+    ),
+    sources: [
+      {
+        label: 'U.S. EPA — Using Cool Roofs to Reduce Heat Islands',
+        url: 'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
+      },
+      {
+        label: 'IPCC AR6 WG III — Chapter 9 Buildings (PDF)',
+        url: 'https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter09.pdf',
+      },
+      {
+        label: 'NOAA CSL — SRM State of the Science Fact Sheet (July 2024; lists surface albedo enhancement)',
+        url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
+      },
+      {
+        label: 'NASEM — Reflecting Sunlight (research agenda & governance; catalog)',
+        url: 'https://nap.nationalacademies.org/catalog/25762/reflecting-sunlight-recommendations-for-solar-geoengineering-research-and-research-governance',
+      },
+    ],
+  },
+  {
+    slug: 'ocean-alkalinity-enhancement',
+    shelf: 'climate',
+    status: 'research',
+    years: '2010s–',
+    image: img(
+      'ocean-alkalinity-enhancement.jpg',
+      'Hendee / NOAA',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Oa-buoy-enrique-reef.jpg',
+    ),
+    sources: [
+      {
+        label: 'NOAA Ocean Acidification Program — Carbon Dioxide Removal',
+        url: 'https://oceanacidification.noaa.gov/carbon-dioxide-removal/',
+      },
+      {
+        label: 'NOAA / NOPP — Marine CDR research awards overview',
+        url: 'https://oceanacidification.noaa.gov/fy23-nopp-mcdr-awards/',
+      },
+      {
+        label: 'National Academies — A Research Strategy for Ocean-based CDR (catalog)',
+        url: 'https://nap.nationalacademies.org/catalog/26278/a-research-strategy-for-ocean-based-carbon-dioxide-removal-and-sequestration',
+      },
+      {
+        label: 'NOAA Science Advisory Board — Draft CDR Research Strategy PDF',
+        url: 'https://sciencecouncil.noaa.gov/wp-content/uploads/2022/09/Clean-copy-of-Draft-CDR-Research-Strategy.pdf',
+      },
+    ],
+  },
+  {
+    slug: 'glacial-climate-intervention',
+    shelf: 'climate',
+    status: 'research',
+    years: '2024–',
+    image: img(
+      'glacial-climate-intervention.jpg',
+      'NASA ICE / James Yungel',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Thwaites_Glacier_Tongue.jpg',
+    ),
+    sources: [
+      {
+        label: 'Glacial Climate Intervention: A Research Vision (2024 PDF via AWI EPIC)',
+        url: 'https://epic.awi.de/id/eprint/60129/1/Glacial_Climate_Intervention_White_Paper_6.4.24_FINAL2.pdf',
+      },
+      {
+        label: 'Moore et al. / survey — Interventions to conserve the frozen North (Climatic Change, 2024)',
+        url: 'https://link.springer.com/article/10.1007/s10584-024-03705-6',
+      },
+      {
+        label: 'Same article via DOI',
+        url: 'https://doi.org/10.1007/s10584-024-03705-6',
+      },
+      {
+        label: 'NOAA CSL — SRM SoS (context: SRM ≠ ice-sheet engineering)',
+        url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
+      },
+    ],
+  },
 ];
 
 export function geoPrimarySource(
