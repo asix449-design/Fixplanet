@@ -189,4 +189,32 @@ export const pack2Pl: Record<string, SolutionCopy> = {
     fix: 'Fermentory na farmach: obornik → silnik/CHP. Już w użyciu (EPA AgSTAR i podobne). Nie mylić z kartą odpadów o żywności ani z gazem składowiskowym.',
     imageAlt: 'Dwie białe kopuły biogazowni Great Thorns Farm koło Swaffham, widok przez łąkę',
   },
+  'reclaimed-asphalt-pavement': {
+    problemTitle: 'Świeży kruszywo i bitum przy każdym remoncie drogi',
+    fixTitle: 'Regenerowany asfalt (RAP)',
+    problem: 'Świeży kruszywo i bitum przy każdym remoncie drogi',
+    fix: 'Sfrezowany asfalt wraca do nowej mieszanki — kamień i lepiszcze. Zwykła praktyka przy dobrym projekcie mieszanki (FHWA). To nie kruszywo z betonu z tej półki.',
+    imageAlt: 'Czerwona frezarka Wirtgen W 1500 zaparkowana na ulicy w Berlinie',
+  },
+  'glass-cullet': {
+    problemTitle: 'Piece na świeżej szarży, gdy butelki idą na składowisko',
+    fixTitle: 'Stłuczka opakowaniowa (cullet)',
+    problem: 'Piece na świeżej szarży, gdy butelki idą na składowisko',
+    fix: 'Posortowana stłuczka wraca do nowych butelek i słoików — zamknięty obieg szkła, nie włókno szklane. Nie mylić z PET na półce odpadów.',
+    imageAlt: 'Wielobarwna stłuczka opakowaniowa na białym tle obok monety euro',
+  },
+  'mineral-wool-insulation': {
+    problemTitle: 'Ciepło ucieka przez cienkie ściany i dachy',
+    fixTitle: 'Wełna mineralna',
+    problem: 'Ciepło ucieka przez cienkie ściany i dachy',
+    fix: 'Wełna skalna i szklana — standard w europejskiej renowacji i nowym budownictwie. Nie mylić z kartą konopi na tej półce.',
+    imageAlt: 'Płyty i rolki wełny mineralnej w bieli, żółci, brązie i zieleni',
+  },
+  'recycled-copper': {
+    problemTitle: 'Nowa ruda do sieci i silników, gdy złom omija piec',
+    fixTitle: 'Miedź z recyklingu',
+    problem: 'Nowa ruda do sieci i silników, gdy złom omija piec',
+    fix: 'Złom poprodukcyjny i pokonsumencki wraca do nowej miedzi — mniej energii niż z rudy. Nie mylić z aluminium i stalą na tej półce.',
+    imageAlt: 'Motek oczyszczonego miedzianego drutu na ziemi w Santa Clara del Cobre',
+  },
 };
