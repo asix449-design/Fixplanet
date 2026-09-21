@@ -55,6 +55,8 @@ export type MapMeta = {
   /** Hosted preview in /public/images/maps/ */
   preview: string;
   previewKind: 'photo' | 'outline' | 'schematic';
+  /** Optional grid meta line. Defaults to sourceShort · year. */
+  cardMeta?: string;
   /** Optional clickable citations. First row is the grid Source link. */
   sources?: PrimarySource[];
 };
@@ -404,6 +406,124 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://www.fao.org/aquastat/en/',
     preview: 'freshwater-aquastat.jpg',
     previewKind: 'photo',
+  },
+  {
+    slug: 'groundwater-whymap',
+    category: 'water',
+    year: '2008',
+    sourceShort: 'BGR / UNESCO · WHYMAP',
+    sourceOrg: 'BGR / UNESCO — WHYMAP Groundwater Resources of the World',
+    sourceUrl: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+    openMapUrl: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+    preview: 'groundwater-whymap.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'BGR / UNESCO · WHYMAP · Groundwater Resources of the World',
+    sources: [
+      {
+        label: 'BGR / UNESCO — WHYMAP Groundwater Resources of the World',
+        url: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+      },
+      { label: 'WHYMAP hub', url: 'https://www.whymap.org/' },
+      {
+        label: 'WHYMAP GWR shapefile (BGR download)',
+        url: 'https://download.bgr.de/bgr/grundwasser/whymap/shp/WHYMAP_GWR_v1.zip',
+      },
+      {
+        label: 'Richts et al. 2011 (WHYMAP chapter, Springer)',
+        url: 'https://doi.org/10.1007/978-90-481-3426-7_10',
+      },
+    ],
+  },
+  {
+    slug: 'global-lakes-hydrolakes',
+    category: 'water',
+    year: '2016',
+    sourceShort: 'HydroSHEDS · HydroLAKES',
+    sourceOrg: 'HydroSHEDS — HydroLAKES',
+    sourceUrl: 'https://www.hydrosheds.org/products/hydrolakes',
+    openMapUrl: 'https://www.hydrosheds.org/products/hydrolakes',
+    preview: 'global-lakes-hydrolakes.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'HydroSHEDS · HydroLAKES · Messager et al. 2016',
+    sources: [
+      {
+        label: 'HydroSHEDS — HydroLAKES',
+        url: 'https://www.hydrosheds.org/products/hydrolakes',
+      },
+      {
+        label: 'Messager et al. 2016 — Nature Communications',
+        url: 'https://doi.org/10.1038/ncomms13603',
+      },
+      { label: 'HydroSHEDS hub', url: 'https://www.hydrosheds.org/' },
+      {
+        label: 'HydroSHEDS — HydroBASINS (live sibling)',
+        url: 'https://www.hydrosheds.org/products/hydrobasins',
+      },
+    ],
+  },
+  {
+    slug: 'lakes-wetlands-glwd',
+    category: 'water',
+    year: '2025',
+    sourceShort: 'HydroSHEDS · GLWD v2',
+    sourceOrg: 'HydroSHEDS — GLWD v2',
+    sourceUrl: 'https://www.hydrosheds.org/products/glwd',
+    openMapUrl: 'https://www.hydrosheds.org/products/glwd',
+    preview: 'lakes-wetlands-glwd.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'HydroSHEDS · GLWD v2 · Lehner et al. 2025',
+    sources: [
+      {
+        label: 'HydroSHEDS — GLWD v2',
+        url: 'https://www.hydrosheds.org/products/glwd',
+      },
+      {
+        label: 'Lehner et al. 2025 — ESSD (GLWD v2 paper)',
+        url: 'https://doi.org/10.5194/essd-17-2277-2025',
+      },
+      {
+        label: 'WWF — GLWD overview (v1 context / legacy levels)',
+        url: 'https://www.worldwildlife.org/our-work/science/global-lakes-and-wetlands-database/',
+      },
+      {
+        label: 'Figshare dataset DOI (download mirror)',
+        url: 'https://doi.org/10.6084/m9.figshare.28519994',
+      },
+    ],
+  },
+  {
+    slug: 'flood-hazard-aqueduct',
+    category: 'water',
+    year: '2020',
+    sourceShort: 'WRI · Aqueduct Floods',
+    sourceOrg: 'World Resources Institute, Aqueduct Floods',
+    sourceUrl: 'https://www.wri.org/data/aqueduct-floods',
+    openMapUrl: 'https://www.wri.org/applications/aqueduct/floods/',
+    preview: 'flood-hazard-aqueduct.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'WRI · Aqueduct Floods · riverine & coastal',
+    sources: [
+      {
+        label: 'WRI — Aqueduct Floods',
+        url: 'https://www.wri.org/data/aqueduct-floods',
+      },
+      {
+        label: 'WRI — Aqueduct Floods Hazard Maps',
+        url: 'https://www.wri.org/data/aqueduct-floods-hazard-maps',
+      },
+      {
+        label: 'Aqueduct Floods interactive application',
+        url: 'https://www.wri.org/applications/aqueduct/floods/',
+      },
+      {
+        label: 'WRI Data Explorer — hazard maps dataset',
+        url: 'https://datasets.wri.org/datasets/aqueduct-floods-hazard-maps',
+      },
+      {
+        label: 'WRI Aqueduct Water Risk Atlas (live sibling)',
+        url: 'https://www.wri.org/aqueduct',
+      },
+    ],
   },
   {
     slug: 'exclusive-economic-zones',

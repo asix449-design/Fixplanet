@@ -32,9 +32,17 @@ const primary = mapPrimarySource(map);
       <span class="tag">{page.categories[map.category]}</span>
       <h3>{map.title}</h3>
       <p class="map-card-meta">
-        {map.sourceShort}
-        <span aria-hidden="true"> · </span>
-        {map.year}
+        {
+          map.cardMeta ? (
+            map.cardMeta
+          ) : (
+            <>
+              {map.sourceShort}
+              <span aria-hidden="true"> · </span>
+              {map.year}
+            </>
+          )
+        }
       </p>
       <p class="wildlife-hook">{map.hook}</p>
       <span class="card-cta">{page.cardCta}</span>

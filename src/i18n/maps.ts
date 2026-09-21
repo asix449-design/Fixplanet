@@ -65,7 +65,8 @@ const pageEn: MapsPage = {
     political:
       'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ — each card names the public vector set and what it is not.',
     forests: 'Canopy, loss, and protected areas from named sources.',
-    water: 'Rivers, basins, and freshwater stress.',
+    water:
+      'Rivers, basins, groundwater, lakes, wetlands, flood hazard, and freshwater stress — each card names the publisher and what the measure is (and is not).',
     population: 'Where people live, at the vintage we can source.',
   },
   centuryBadge: 'Century atlas',
@@ -133,7 +134,8 @@ const pageRu: MapsPage = {
     political:
       'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ — на каждой карточке указан открытый векторный набор и что он не измеряет.',
     forests: 'Полог, потери и ООПТ по названным источникам.',
-    water: 'Реки, бассейны и нехватка пресной воды.',
+    water:
+      'Реки, бассейны, подземные воды, озёра, водно-болотные угодья, наводнения и нехватка пресной воды — у каждой карточки издатель и что именно измеряется (и чего нет).',
     population: 'Где живут люди — на тот год, который можем указать.',
   },
   centuryBadge: 'Атлас столетий',
@@ -201,7 +203,8 @@ const pagePl: MapsPage = {
     political:
       'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ — na każdej karcie nazwany jest otwarty zestaw wektorów i to, czego on nie mierzy.',
     forests: 'Okap, ubytek i obszary chronione z nazwanych źródeł.',
-    water: 'Rzeki, zlewnie i presja na wodę słodką.',
+    water:
+      'Rzeki, zlewnie, wody podziemne, jeziora, mokradła, zagrożenie powodziowe i presja na wodę słodką — na każdej karcie wydawca i co dana miara jest (i czym nie jest).',
     population: 'Gdzie mieszkają ludzie — w roczniku, który umiemy podać.',
   },
   centuryBadge: 'Atlas stuleci',
@@ -269,7 +272,8 @@ const pageLv: MapsPage = {
     political:
       'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ — katrā kartītē norādīts atvērtais vektoru komplekts un tas, ko tas nemēra.',
     forests: 'Vainags, zudums un aizsargājamās teritorijas no nosauktiem avotiem.',
-    water: 'Upes, baseini un saldūdens spiediens.',
+    water:
+      'Upes, baseini, pazemes ūdeņi, ezeri, mitrāji, plūdu risks un saldūdens stress — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko nē).',
     population: 'Kur dzīvo cilvēki — tajā gadā, ko varam norādīt.',
   },
   centuryBadge: 'Gadsimtu atlants',
@@ -684,6 +688,70 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'Green choropleth of linguistic diversity by country: darker green where many languages share a state, paler where few do — not a language-family atlas',
   },
+  'groundwater-whymap': {
+    title: 'Groundwater resources (WHYMAP)',
+    hook: 'Global aquifer environments and recharge potential from WHYMAP — a hydrogeology base map, not Aqueduct stress and not FAO national water accounts.',
+    description:
+      'The World-wide Hydrogeological Mapping and Assessment Programme (WHYMAP), led by Germany’s BGR with UNESCO, publishes the Groundwater Resources of the World map (1:25M / 1:40M). It classifies continental groundwater environments (large sedimentary basins, complex folded/faulted regions, local and shallow aquifers) and shades them by modelled recharge, with overlays for salinity, heavy abstraction, and selected groundwater-dependent wetlands.',
+    whyOnShelf:
+      'Live AQUASTAT is national water accounts; Aqueduct is demand-vs-supply stress; HydroBASINS is surface drainage. This card is the missing groundwater layer the AQUASTAT detail already pointed at (“IGRAC is a different product”). WHYMAP is the public global hydrogeology atlas for that gap.',
+    howToRead:
+      'Blue / green / brown families are hydrogeological environments, not country rankings and not water-war forecasts. Darker shades mean higher modelled recharge (WaterGAP, ~1961–1990), not “infinite wells.” Salinity hatching and over-abstraction marks are regional warnings, not court findings. Open the WHYMAP download page for PDF / shapefile / viewer; do not invent a live well-depth dashboard.',
+    caveats:
+      'A thumbnail is hydrogeology cartography, not a well log and not IGRAC GGIS. Blue / green / brown families are environments, not a ranking of countries. Do not read darker recharge as infinite wells or as a water-war forecast.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of WHYMAP aquifer-environment families (blue sedimentary basins / green complex / brown local-shallow), not BGR’s official map and not an Aqueduct stress choropleth. Open the WHYMAP Groundwater Resources of the World page for the PDF, shapefile, and viewer. Cite BGR and UNESCO / WHYMAP.',
+    imageAlt:
+      'World map with blue sedimentary-basin patches, green folded-complex belts, and brown local-shallow aquifers — a hydrogeology schematic, not water-stress',
+  },
+  'global-lakes-hydrolakes': {
+    title: 'Global lakes (HydroLAKES)',
+    hook: 'Shoreline polygons for ~1.4 million lakes and reservoirs ≥10 ha — a lake inventory map, not river basins and not a stress index.',
+    description:
+      'HydroLAKES (HydroSHEDS secondary product) compiles shoreline polygons for about 1.43 million lakes and reservoirs with surface area ≥10 ha worldwide, with attributes for area, shoreline length, and modelled mean depth / volume / residence time. Co-registered to HydroSHEDS river and basin IDs. Cite Messager et al., Nature Communications 2016.',
+    whyOnShelf:
+      'Live HydroBASINS answers “who drains where.” The shelf still has no dedicated lake card. HydroLAKES stays in the same public HydroSHEDS family already used for basins, without duplicating the Pfafstetter polygon story.',
+    howToRead:
+      'A polygon is a lake or reservoir shoreline in the dataset, not a wetland class map (see GLWD) and not water quality. Small ponds under 10 ha are out of scope. Volume and depth for most lakes are model estimates, not bathymetric surveys. Open hydrosheds.org/products/hydrolakes for downloads; the Nature Communications paper is the scholarly cite.',
+    caveats:
+      'A thumbnail is lake-district density, not the HydroLAKES shapefile and not a wetland class map. Ponds under 10 ha are out of scope. Volume and depth for most lakes are model estimates, not bathymetric surveys.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of well-known lake districts, not a HydroSHEDS product figure and not a second river-basin fill. HydroLAKES is distributed with the HydroSHEDS license (cite Messager et al. 2016). Open the HydroLAKES product page for downloads.',
+    imageAlt:
+      'World map with dark-blue lake and reservoir dots clustered in known lake districts — a shoreline inventory schematic, not river basins',
+  },
+  'lakes-wetlands-glwd': {
+    title: 'Lakes and wetlands (GLWD v2)',
+    hook: 'Global inland waters in 33 waterbody and wetland classes — marshes, peatlands, intermittent water and more, not a second HydroLAKES shoreline layer.',
+    description:
+      'The Global Lakes and Wetlands Database version 2 (GLWD v2) maps inland surface waters into 33 non-overlapping waterbody and wetland classes at 15-arc-second resolution (~500 m), representing up to ~18.2 million km² of wetlands for the contemporary ~1990–2020 window. Successor to GLWD v1 (Lehner & Döll 2004). Cite Lehner et al., Earth System Science Data 2025. CC BY 4.0.',
+    whyOnShelf:
+      'HydroLAKES = lake/reservoir shorelines ≥10 ha. GLWD v2 answers a broader question: wetland and inland-water classes (including intermittent and vegetated wetlands) that lakes alone miss. Same HydroSHEDS delivery path.',
+    howToRead:
+      'A class shade is “this cell’s dominant inland-water / wetland type in the harmonized map,” not a Ramsar legal listing and not water stress. Open water vs marsh vs peat vs rice-related classes are ecological cartography, not land titles. Prefer the HydroSHEDS product page + ESSD paper; Figshare holds the download (cite the DOI in the paper if the Figshare landing is flaky).',
+    caveats:
+      'A class shade is not a Ramsar legal listing and not water stress. Open water vs marsh vs peat vs intermittent classes are ecological cartography, not land titles. HydroLAKES remains the shoreline inventory; this card is the class map.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of inland-water classes (open water, marsh, peat, intermittent), not a HydroSHEDS product figure and not a second HydroLAKES shoreline layer. GLWD v2 is CC BY 4.0 (cite Lehner et al. 2025). Open the HydroSHEDS GLWD page for the product.',
+    imageAlt:
+      'World map with teal open-water, green marsh, brown peat, and gold intermittent-water patches — wetland classes, not lake shorelines',
+  },
+  'flood-hazard-aqueduct': {
+    title: 'Flood hazard (Aqueduct Floods)',
+    hook: 'Modelled riverine and coastal flood hazard and exposure — inundation risk, not the same as baseline water-stress on the Water stress card.',
+    description:
+      'WRI Aqueduct Floods maps riverine and coastal flood risks under a baseline and future projections (2030 / 2050 / 2080), with hazard maps of inundation depth by return period and tools for exposure and dike cost–benefit. Built with Deltares, VU Amsterdam IVM, Utrecht University, and PBL, released ~2020. Separate from the Aqueduct Water Risk Atlas used on the live Water stress card.',
+    whyOnShelf:
+      'The Water stress card already notes that Aqueduct models related risks including flood — but the shelf has no flood card. This fills that hole without replacing baseline stress, basins, or AQUASTAT.',
+    howToRead:
+      'Hazard layers are modelled inundation depths, often without existing flood protection in the hazard rasters — so a deep cell is not “this city will flood tomorrow.” Coastal vs riverine are different mechanisms; do not merge them into one “all water bad” story. Open the Aqueduct Floods tool and hazard-maps dataset pages; cite WRI.',
+    caveats:
+      'Hazard rasters often omit existing flood protection — a deep cell is not “this city will flood tomorrow.” Coastal and riverine are different mechanisms. This card is not the Aqueduct Water Risk Atlas baseline-stress layer.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of riverine and coastal inundation districts, not WRI’s official Floods graphic and not a second baseline water-stress choropleth. Aqueduct data are typically CC BY with attribution to WRI. Open the Aqueduct Floods tool for the interactive maps.',
+    imageAlt:
+      'World map with medium-blue riverine flood corridors and bright cyan coastal inundation patches — flood hazard, not baseline water stress',
+  },
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
@@ -733,6 +801,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
       const conflicts = rest.filter((item) => item.category === 'conflicts');
       return [...same, ...conflicts];
     }
+    return same;
+  }
+  if (current.category === 'water') {
+    // Seven Water cards would otherwise be sliced to three. List every
+    // Water sibling on each Water detail page.
     return same;
   }
   return [...same, ...rest].slice(0, limit);
