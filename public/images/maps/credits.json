@@ -70,6 +70,42 @@
     "note": "Cropped OWID grapher map export. Open the OWID / UCDP page for the live layer."
   },
   {
+    "file": "global-peace-index.jpg",
+    "title": "Fix Planet overview of peacefulness bands",
+    "source": "Fix Planet schematic on BlankMap-World. Vision of Humanity / IEP artwork is not copied.",
+    "url": "https://www.visionofhumanity.org/maps/global-peace-index/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Green and red are orientation bands in a peacefulness palette. Grey land is not classed on this overview. Not GPI 2026 scores and not Vision of Humanity artwork."
+  },
+  {
+    "file": "fragile-states-index.jpg",
+    "title": "Fix Planet overview of fragility bands",
+    "source": "Fix Planet schematic on BlankMap-World. Fund for Peace heat-map artwork is not copied.",
+    "url": "https://fragilestatesindex.org/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Darker brown is a higher-fragility orientation; pale gold is a lower-fragility orientation. Mid-tone land is not classed here. Not FSI scores."
+  },
+  {
+    "file": "military-expenditure-sipri.jpg",
+    "title": "Fix Planet overview of military spending level",
+    "source": "Fix Planet schematic on BlankMap-World. SIPRI yearbook and Milex artwork are not copied.",
+    "url": "https://www.sipri.org/databases/milex",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "One story only: spending level, not share of GDP. Darker blue marks larger-spender bands. Most countries stay unclassified. Not SIPRI Milex figures. milex.sipri.org is not used."
+  },
+  {
+    "file": "conflict-barometer-hiik.jpg",
+    "title": "Fix Planet overview of conflict-intensity bands",
+    "source": "Fix Planet schematic on BlankMap-World. HIIK cover art is not copied.",
+    "url": "https://hiik.de/en/conflict-barometer/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Deep red is a war-intensity orientation; orange is other violent-conflict orientation. Grey land is not an intensity class. Not HIIK scores, not ACLED pins, and not a single class for every conflict in a country."
+  },
+  {
     "file": "language-families.jpg",
     "title": "Primary Human Language Families Map",
     "source": "Wikimedia Commons, PiMaster3",

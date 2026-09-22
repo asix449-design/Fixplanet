@@ -29,6 +29,51 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Our World in Data karte par nāvēm bruņotos konfliktos: bāla zeme, Ukraina un vairākas Āfrikas un Āzijas valstis oranžā un sarkanā',
   },
+  'global-peace-index': {
+    title: 'Globālais miera indekss (GPI)',
+    hook: 'Valstu miera rangs no Institute for Economics & Peace — saliktais rādītājs, ne ACLED notikumu punkti un ne verdikts «kuram taisnība».',
+    description: 'GPI (IEP / Vision of Humanity) salīdzina valstis ar salikto miera indeksu.',
+    whyOnShelf: 'Cits objekts nekā ACLED (notikumi) un UCDP (kaujas zaudējumi).',
+    howToRead: 'Krāsa — ranga josla, ne tiesas spriedums. Atvērt GPI karti un ziņojumu.',
+    caveats: 'Saliktais rādītājs, ne ACLED notikumu punkti un ne verdikts «kuram taisnība».',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: zaļš — mierīgāka josla, sarkans — mazāk mierīga, pelēka zeme bez klases. Tā nav Vision of Humanity grafika un ne GPI balles.',
+  },
+  'fragile-states-index': {
+    title: 'Trauslo valstu indekss (FSI)',
+    hook: 'Valstu trausluma vērtējumi pēc spiediena un kohēzijas — trausluma risks, ne kaujas zaudējumi un ne miera rangs.',
+    description: 'FSI (Fund for Peace) — salīdzinoša skala par spiedienu uz valsti un kohēziju.',
+    whyOnShelf: 'Ne ACLED notikumu karte un ne GPI.',
+    howToRead: 'Skatīt methodology un global data.',
+    caveats: 'Augsts rezultāts ≠ spriedums un ≠ kara prognoze uz rītdienu.',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: tumšāk — augstāks trauslums šajā shēmā, gaišāk — zemāks, vidējs tonis bez klases. Tā nav Fund for Peace karte un ne FSI balles.',
+  },
+  'military-expenditure-sipri': {
+    title: 'Militārie izdevumi (SIPRI)',
+    hook: 'Salīdzināmas valstu militāro izdevumu sērijas no SIPRI — budžeti un slodze, ne notikumu punkti un ne ieroču katalogs.',
+    description: 'Milex (SIPRI) — izdevumi, ne «kurš sāka karu» un ne UCDP zaudējumu skaits.',
+    whyOnShelf: 'Nejauc ar SIPRI ieroču piegāžu bāzi.',
+    howToRead:
+      'Interaktīvais milex.sipri.org pārbaudē neatbildēja — balstīties uz sipri.org/databases/milex un fact sheet.',
+    caveats: 'Augsti tēriņi ≠ agresors.',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: tumšāks zils — augstāks militāro izdevumu līmenis, gaišāka zeme bez klases. Tā nav SIPRI gadagrāmatas vāks un ne Milex skaitļi.',
+  },
+  'conflict-barometer-hiik': {
+    title: 'Konfliktu barometrs (HIIK)',
+    hook: 'Ikgadēja konfliktu intensitāte pa valstīm un reģioniem no HIIK — intensitātes klases, ne notikumu punkti un ne zaudējumu summas.',
+    description: 'Conflict Barometer (HIIK) kodē politisko konfliktu intensitāti gada griezumā.',
+    whyOnShelf: 'Cits objekts nekā ACLED un UCDP.',
+    howToRead: 'Atvērt aktuālo PDF un HIIK kartes.',
+    caveats: 'Intensitātes klase ≠ ANO rezolūcija. ANO miera uzturēšanas karte nav vajadzīga — HIIK atbild 200.',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: dziļi sarkans — kara intensitātes orientācija, oranžs — cita vardarbība, pelēka zeme bez klases. Tā nav HIIK vāks un ne ACLED punkti.',
+  },
   'language-families': {
     title: 'Pasaules valodu saimes',
     hook: 'Lingvistiska radniecīgu valodu karte — etnolingvistiskās ģeogrāfijas tuvinājums, ne tautu tautasskaitīšana.',
