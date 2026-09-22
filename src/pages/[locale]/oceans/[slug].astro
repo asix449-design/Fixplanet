@@ -1,15 +1,23 @@
 ---
+import { isOceanAtlas, oceanAtlasSlugs } from '../../../data/ocean-atlas';
 import { isOceanPanel, oceanPanelKeys } from '../../../data/oceans';
 import { otherLocales } from '../../../i18n';
+import OceanAtlasDetailView from '../../../views/OceanAtlasDetailView.astro';
 import OceansView from '../../../views/OceansView.astro';
 
 export function getStaticPaths() {
   return otherLocales.flatMap((locale) =>
-    oceanPanelKeys.map((slug) => ({ params: { locale, slug } })),
+    [...oceanPanelKeys, ...oceanAtlasSlugs].map((slug) => ({ params: { locale, slug } })),
   );
 }
 
 const { slug } = Astro.params;
 ---
 
-<OceansView panel={isOceanPanel(slug) ? slug : 'currents'} />
+{
+  isOceanAtlas(slug) ? (
+    <OceanAtlasDetailView slug={slug} />
+  ) : (
+    <OceansView panel={isOceanPanel(slug) ? slug : 'currents'} />
+  )
+}

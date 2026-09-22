@@ -1,0 +1,62 @@
+---
+import OceanAtlasCard from './OceanAtlasCard.astro';
+import type { OceanAtlasSlug } from '../data/ocean-atlas';
+import { oceanFrameSrc, oceanPanelKeys, oceanPanelPath, type OceanPanel } from '../data/oceans';
+import { getMapsPage, getOceanAtlas, getOceansPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  currentAtlas?: OceanAtlasSlug;
+  currentPanel?: OceanPanel;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const oceans = getOceansPage(locale);
+const maps = getMapsPage(locale);
+const atlas = getOceanAtlas(locale).filter((item) => item.slug !== Astro.props.currentAtlas);
+const panels = oceanPanelKeys.filter((key) => key !== Astro.props.currentPanel);
+
+const panelPreview: Partial<Record<OceanPanel, string>> = {
+  currents: 'currents-gyres-1943.jpg',
+  salinity: 'salinity-aquarius-2011.jpg',
+  sst: 'sst-2024.jpg',
+  pollution: 'plastic-five-gyres-2014.png',
+};
+---
+
+<section class="section section-cream" aria-labelledby="related-maps">
+  <div class="wrap">
+    <h2 id="related-maps">{maps.related}</h2>
+    <div class="card-grid">
+      {atlas.map((item) => <OceanAtlasCard map={item} />)}
+      {
+        panels.map((key) => {
+          const preview = panelPreview[key];
+          return (
+            <article class="map-card-wrap">
+              <a class="map-card" href={localizePath(oceanPanelPath(key), locale)}>
+                {
+                  preview && (
+                    <div class="card-art map-card-art">
+                      <img
+                        src={oceanFrameSrc(preview)}
+                        alt=""
+                        width="640"
+                        height="320"
+                        loading="lazy"
+                      />
+                    </div>
+                  )
+                }
+                <div class="card-body">
+                  <h3>{oceans.panels[key]}</h3>
+                  <p class="wildlife-hook">{oceans.tiles[key]}</p>
+                  <span class="card-cta">{maps.cardCta}</span>
+                </div>
+              </a>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

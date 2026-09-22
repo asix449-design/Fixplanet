@@ -55,6 +55,12 @@ export {
   getOceansPage,
 } from './oceans';
 export {
+  getOceanAtlas,
+  getOceanAtlasBySlug,
+  oceanAtlasHubLede,
+  oceanAtlasSectionLabels,
+} from './ocean-atlas';
+export {
   getLawBySlug,
   getLawPage,
   getLaws,
