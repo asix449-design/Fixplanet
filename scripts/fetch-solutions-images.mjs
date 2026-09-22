@@ -307,6 +307,18 @@ const candidates = {
     'Kleve Knipweg Biogas PM220618 01.jpg',
     'Biogas plant at Crouchland Farm - geograph.org.uk - 2164888.jpg',
   ],
+  'non-revenue-water-reduction': [
+    "Recherche d'une fuite d'eau à l'aide d'un Hydreka MicroCorr, Montée de la Paroche à Saint-Maurice-de-Beynost (avril 2019).jpg",
+  ],
+  'uv-disinfection': [
+    '^New^ Sooke River Road UV Disinfection Plant - panoramio.jpg',
+  ],
+  'onsite-greywater-reuse': [
+    'Greywater treatement steps (3110373058).jpg',
+  ],
+  'sand-dams': [
+    'Sand dam illustration 3.jpg',
+  ],
 };
 
 async function commonsInfo(title) {
