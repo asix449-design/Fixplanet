@@ -194,4 +194,76 @@ export const en: Record<WaterEncyclopediaSlug, WaterEncyclopediaCopy> = {
       'Stills are not municipal. They do not irrigate a farm. Salt and scale still accumulate in many tray designs; the MIT team argued their wicking configuration could shed salt at night, which is a research claim to watch, not a finished product. Treat the solar still as off-grid drinking water under a clear sky — not as a substitute for a desalination works.',
     ],
   },
+  'non-revenue-water-reduction': {
+    title: 'Non-revenue water / DMA leak reduction',
+    hook: 'Utilities produce drinking water that never reaches a billed tap — leaks, theft, and bad meters waste the catchments already under stress.',
+    imageAlt:
+      'A technician listens for a leak on a street water main in Saint-Maurice-de-Beynost with a correlator and a ground microphone',
+    what: [
+      'Treated drinking water is lost in the pipes before a meter records it. Leaks, theft, and bad meters waste water from catchments that are already under stress. Utilities cut those physical and commercial losses with district metered areas, pressure management, and active leak detection, saving water that has already been treated. The work is on the drinking-water network, not drip irrigation on a farm and not a rain garden for street runoff.',
+    ],
+    how: [
+      'A district metered area bounds a piece of the network so the utility can compare water that enters the zone with water that is billed. Pressure management keeps surplus pressure from opening leaks. Active leak detection listens for the breaks. A one-off patch, without the zones and the pressure control, does not hold the savings.',
+    ],
+    where: [
+      'The World Bank’s brief on reducing water losses and the International Water Association’s water-loss work describe this as ordinary utility practice. The photograph is an acoustic leak search on a street main in Saint-Maurice-de-Beynost, France — that class of detection, not a named World Bank project.',
+    ],
+    limits: [
+      'Needs maps, meters, and sustained crews. A one-off pipe patch without district metered areas and pressure control does not hold savings.',
+    ],
+  },
+  'uv-disinfection': {
+    title: 'UV disinfection',
+    hook: 'Clear-looking water can still carry Cryptosporidium and other microbes that chlorine alone does not always stop.',
+    imageAlt:
+      'Pipe gallery inside the Sooke River Road ultraviolet disinfection plant in British Columbia, a drinking-water works',
+    what: [
+      'Ultraviolet light inactivates microbes in a drinking-water plant without leaving a chemical residual. Validated reactors are standard practice under the U.S. EPA Long Term 2 guidance. This is a plant barrier for drinking water, not a desalination membrane and not a wetland filter. Singapore’s NEWater uses ultraviolet light as one step in municipal wastewater reclaim; that is a different practice.',
+    ],
+    how: [
+      'Water passes a bank of ultraviolet lamps inside a reactor. The dose has to be validated for the flow and the clarity of the water. Turbid water and unvalidated lamps fail. Ultraviolet light does not leave a residual in the pipes downstream, and it does not remove salts or most chemicals.',
+    ],
+    where: [
+      'The U.S. EPA Ultraviolet Disinfection Guidance Manual and the Long Term 2 rule documents are the reference for validated reactors. The photograph is the Sooke River Road ultraviolet disinfection plant in British Columbia, a municipal drinking-water works.',
+    ],
+    limits: [
+      'No lasting residual in the distribution network. Turbid water and unvalidated lamps fail. Ultraviolet disinfection does not remove salts or most chemicals.',
+    ],
+  },
+  'onsite-greywater-reuse': {
+    title: 'Onsite greywater reuse',
+    hook: 'Buildings send lightly used sink and shower water to the sewer while toilets and irrigation still take potable supply.',
+    imageAlt:
+      'Onsite greywater treatment: settling tanks with a grease trap, a planted bed, and storage tanks',
+    what: [
+      'Treated greywater from sinks, showers, and laundry is reused on site for toilets or irrigation, at the scale of a building or a district. The U.S. EPA groups this under onsite non-potable water reuse. It is not Singapore NEWater, which is city-scale reclaim into industry and reservoirs, and it is not rooftop rainwater harvesting.',
+    ],
+    how: [
+      'Lightly used water is kept separate from toilet waste, treated to match the end use, and returned to flushing or irrigation inside the same building or district. Cross-connections with the drinking-water pipes are the hazard the plumbing has to prevent. It is not a drinking-water source.',
+    ],
+    where: [
+      'EPA’s onsite non-potable reuse pages describe the practice. The photograph shows one such train: settling tanks with a grease trap, a planted bed, and storage tanks. The planted bed is part of that building-scale treatment, not a river wetland and not a municipal reclaim plant.',
+    ],
+    limits: [
+      'Cross-connection risk and local codes. Treatment must match the end use. Not a drinking-water source.',
+    ],
+  },
+  'sand-dams': {
+    title: 'Sand dams',
+    hook: 'Seasonal sandy rivers run for days then leave dryland villages walking hours for water while the bed looks empty.',
+    imageAlt:
+      'Diagram of a sand dam: a low wall across a sandy riverbed, with water stored in the sand and a hand pump on the bank',
+    what: [
+      'A sand dam is a low masonry wall across a seasonal sandy river. The wall traps sand, and water is stored in the pores of that sand bank — dryland storage with little evaporation, already used in Kenya and elsewhere. It is not managed aquifer recharge by basins or wells, and it is not rooftop rainwater harvesting. Check dams and gully plugs are a smaller erosion tool, not this structure.',
+    ],
+    how: [
+      'Seasonal floods drop their sand load behind the wall. The water sits in the pores instead of in an open pond that would evaporate. The right sandy bed and sound siting decide whether the bank holds water. A wall on the wrong geology stores little.',
+    ],
+    where: [
+      'Practical Action’s sand-dam guidance and IWMI’s note on community sand dams in Kenya describe works already in use. The picture is a diagram of that structure — a low wall, sand, and a well on the bank — not a photograph of one named dam.',
+    ],
+    limits: [
+      'Needs the right sandy seasonal bed, community labour, and sound siting. A wall on the wrong geology stores little water.',
+    ],
+  },
 };

@@ -104,6 +104,7 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'membrane-desalination',
     tag: 'water',
+    // Shelf note: leave the Water Corporation (WA) desalination primary. No resolving IEA desalination hub to swap in.
     sources: [
       cite(
         'Water Corporation (WA) — Desalination',
@@ -338,6 +339,7 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'fog-harvesting',
     tag: 'water',
+    // Shelf note: FogQuest primary stays. The organisation says its project pages are no longer kept current (soft/stale). Do not swap the URL.
     sources: [
       cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/'),
       cite(
@@ -375,6 +377,71 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'USGS Water Science School — Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
+      ),
+    ],
+  },
+  {
+    slug: 'non-revenue-water-reduction',
+    tag: 'water',
+    sources: [
+      cite(
+        'World Bank — Reducing water losses',
+        'https://www.worldbank.org/en/topic/water/brief/reducing-water-losses',
+      ),
+      cite('IWA — Water Loss', 'https://iwa-network.org/projects/water-loss/'),
+      cite(
+        'World Bank — The challenge of reducing non-revenue water',
+        'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/297191468176683069/the-challenge-of-reducing-non-revenue-water-nrw-in-developing-countries-how-the-private-sector-can-help-a-look-at-performance-based-service-contracting',
+      ),
+    ],
+  },
+  {
+    slug: 'uv-disinfection',
+    tag: 'water',
+    sources: [
+      cite(
+        'U.S. EPA — Ultraviolet Disinfection Guidance Manual (PDF)',
+        'https://www.epa.gov/system/files/documents/2022-10/ultraviolet-disinfection-guidance-manual-2006.pdf',
+      ),
+      cite(
+        'U.S. EPA — Long Term 2 Enhanced Surface Water Treatment Rule documents',
+        'https://www.epa.gov/dwreginfo/long-term-2-enhanced-surface-water-treatment-rule-documents',
+      ),
+    ],
+  },
+  {
+    slug: 'onsite-greywater-reuse',
+    tag: 'water',
+    sources: [
+      cite(
+        'U.S. EPA — Onsite Non-Potable Water Reuse Resources',
+        'https://www.epa.gov/waterreuse/onsite-non-potable-water-reuse-resources',
+      ),
+      cite(
+        'WHO — Guidelines for the safe use of wastewater, excreta and greywater',
+        'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta',
+      ),
+      cite(
+        'U.S. EPA — Basic information about water reuse',
+        'https://www.epa.gov/waterreuse/basic-information-about-water-reuse',
+      ),
+    ],
+  },
+  {
+    slug: 'sand-dams',
+    tag: 'water',
+    sources: [
+      cite(
+        'Practical Action — Sand dams',
+        'https://www.practicalaction.org/knowledge-centre/resources/sand-dams/',
+      ),
+      cite(
+        'IWMI GRIPP — Community sand dams in Kenya',
+        'https://gripp.iwmi.org/natural-infrastructure/water-storage/ensuring-resilience-through-community-sand-dams-in-kenya/',
+      ),
+      cite(
+        'Maddrell & Neal — Sand Dams: a Practical Guide (PDF)',
+        'https://www.samsamwater.com/library/Maddrell_and_Neal_2012_Sand_Dams_a_Practical_Guide_LR.pdf',
       ),
     ],
   },

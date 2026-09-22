@@ -125,7 +125,8 @@ const en = {
     } satisfies Record<TagKey, string>,
     tileLeads: {
       all: 'Every problem–fix card on one shelf.',
-      water: 'Harvesting, reuse, desalination, recharge, and living filters already in use.',
+      water:
+        'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
       forests: 'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working.',
       waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
       cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
@@ -453,7 +454,8 @@ const ru: typeof en = {
     },
     tileLeads: {
       all: 'Все карточки «проблема → решение» на одной полке.',
-      water: 'Сбор, оборотное использование, опреснение, подпитка горизонтов и живые фильтры.',
+      water:
+        'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
       forests: 'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство.',
       waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
       cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
@@ -784,7 +786,8 @@ const pl: typeof en = {
     },
     tileLeads: {
       all: 'Wszystkie karty problem → rozwiązanie na jednej półce.',
-      water: 'Zbieranie, odzysk, odsalanie, zasilanie wód podziemnych i żywe filtry.',
+      water:
+        'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
       forests: 'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna.',
       waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
       cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
@@ -1115,7 +1118,8 @@ const lv: typeof en = {
     },
     tileLeads: {
       all: 'Visas «problēma → risinājums» kartītes vienā plauktā.',
-      water: 'Vākšana, atkārtota izmantošana, atsāļošana, gruntsūdeņu papildināšana un dzīvie filtri.',
+      water:
+        'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
       forests: 'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse.',
       waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
       cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
