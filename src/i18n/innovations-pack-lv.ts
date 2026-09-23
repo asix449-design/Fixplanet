@@ -251,4 +251,68 @@ export const packLv: Record<string, InnovationCopy> = {
     sourcesNote:
       'Galvenais avots: scrollprize.org (pārbaudīts 2026. gada 14. septembrī). 2023. gada Grand Prize piešķirta 2024. gada februārī; 2024. gada Grand Prize nav piešķirta. Tā nav visas senatnes nolasīšana.',
   },
+  'edna-biodiversity-monitoring': {
+    title: 'Bioloģiskās daudzveidības monitorings ar eDNA',
+    hook: 'DNS no ūdens un augsnes plus NatureMetrics platforma (Habitat Insights / Portfolio Assessment 2025) dod sugu sarakstus TNFD tipa pārskatiem — nav koraļļu atjaunošana un nav DAC.',
+    imageAlt:
+      'Biologs ņem ūdens paraugus vides DNS noteikšanai — lauka solis līdz sugu sarakstam, ne katra dzīvnieka skaitīšana upē',
+    what: 'Vides DNS (eDNA) metodes atrod sugas pēc ģenētiskajām pēdām ūdenī, augsnē vai gaisā. NatureMetrics savieno paraugu ņemšanu, laboratoriju un portfeļa paneli (Nature Intelligence Platform) dabas riskam un atklāšanai. 2024.–2026. gada laidienos ir autonomas ūdens paraugošanas partnerības, Habitat Insights (ģeotelpisks dzīvotņu novērtējums, paziņots 2025. gada sākumā) un ar MI atbalstīts portfeļa novērtējums (Portfolio Assessment).',
+    problem:
+      'Atļaujas un dabas pārskati joprojām balstās uz lēnām punktu aptaujām, bet regulatori un aizdevēji prasa salīdzināmus bioloģiskās daudzveidības pierādījumus veseliem objektu portfeļiem.',
+    how: 'Lauka komandas vai automātiskie paraugotāji savāc filtrētu ūdeni vai augsni. Laboratorijas amplificē un sekvencē marķiergēnus. Bioinformātika salīdzina nolasījumus ar references bibliotēkām. Ģeotelpiskie slāņi un prognožu vērtējumi stāv blakus sugu sarakstiem, lai vispirms izsijātu daudzus objektus.',
+    players:
+      'NatureMetrics komerciāli ievieš rīku ieguves, atjaunīgās enerģijas un infrastruktūras klientiem (uzņēmuma publiskie materiāli). Paralēli iet publiskā zinātne un ASV Nacionālā ūdens eDNA stratēģija (2024) ar kopīgiem standartiem ūdens invazīvo sugu un bioloģiskās daudzveidības monitoringam.',
+    risks:
+      'eDNA uztver ģenētiskās pēdas, ne skaitu un ne dzīvnieku veselību pašu par sevi. Pozitīvs trāpījums nav skaitīšana. Viltus izlaidumi un trāpījumi, DNS, ko nes straume, un plānas references bibliotēkas var maldināt. Komerciāls panelis neaizstāj lauka ekoloģiju tur, kur to prasa regulators.',
+    sourcesNote:
+      'NatureMetrics platforma un Habitat Insights palaišana; USGS ziņa par Nacionālo ūdens eDNA stratēģiju. Skrīnings un pierādījums, ne pilns bioloģiskās daudzveidības uzskaitījums.',
+  },
+  'marine-litter-satellite': {
+    title: 'Jūras atkritumi no kosmosa',
+    hook: 'ESA/JRC darbs (Nature Communications, 2024. gada jūnijs) rāda: Sentinel-2 kartē peldošu atkritumu joslas Vidusjūrā — karstie punkti un sezonas, ne enzīmu rūpnīca.',
+    imageAlt:
+      'Plastmasa un citi atkritumi Atlantijas krastā — atkritumu klase, kuras jūras joslas meklē Sentinel-2; tā nav 2024. gada raksta detekcijas karte',
+    what: '2024. gada recenzēts pierādījums: Copernicus Sentinel-2 attēli Vidusjūras mērogā (ap 300 000 ainu) atrod peldošu atkritumu joslas kā proxies ieplūdei un ceļiem. Darbs gāja ar ESA līgumiem un ES Kopīgā pētniecības centra līdzdalību.',
+    problem:
+      'Plastmasa un citi peldoši atkritumi šķērso veselas jūras, bet pārvaldniekiem joprojām nav baseina mēroga karšu: kur veidojas blīvas joslas un kad no sauszemes nāk uzplūdi.',
+    how: 'Algoritmi atzīmē gaišas, izstieptas saplūšanas joslas 10 m optiskajos kanālos. Detekcijas salīdzina ar hidroloģiju un krasta noteces modeļiem. Lietusgāzes un krasta straumes iznāk par galvenajiem iemesliem, kad un kur atkritumi sakrājas.',
+    players:
+      'Pētniecisks monitorings pa Vidusjūras vēsturisko arhīvu (raksta analīzes logs — 2015.–2021.), vēl ne ikdienas operacionāls dienests. JRC piezīme 2024. gada 14. jūnijā rāda rezultātu kā pavērsienu politikas uzraudzībai, ne kā tīrīšanas kuģi.',
+    risks:
+      'Šodienas sensori redz blīvus metru mēroga agregātus. Izkliedēta mikroplastmasa paliek neredzama. Mākoņi un līdzinieki (putas, sargass) jāatsijā. No viena raksta neseko globāla operacionāla plastmasas karte.',
+    sourcesNote:
+      'Cózar et al., Nature Communications (2024); ES JRC ziņa, 2024. gada 14. jūnijs; Copernicus Sentinel-2 (ESA). Joslas Vidusjūrā, ne globāla operacionāla karte.',
+  },
+  'encore-nature-risk': {
+    title: 'ENCORE — dabas riska rīks',
+    hook: 'ENCORE (Global Canopy / UNEP FI / UNEP-WCMC) — bezmaksas skrīnings nozaru atkarībām un ietekmēm; liela bāzes atjaunināšana 2024. gada jūlijā. Nav DAC un nav eDNA laboratorija.',
+    imageAlt:
+      'Amazones lietusmeža un upes skats no gaisa — dzīvo sistēmu klase, kuru atkarības un ietekmes sijā ENCORE; tas nav rīka ekrānuzņēmums',
+    what: 'ENCORE (Exploring Natural Capital Opportunities, Risks and Exposure) ir bezmaksas tiešsaistes rīks no Global Canopy, UNEP Finance Initiative un UNEP-WCMC. Tas palīdz finanšu iestādēm un uzņēmumiem skatīt, kā ražošanas procesi ir atkarīgi no dabas un kā to ietekmē. TNFD un radniecīgi ietvari uz to bieži norāda.',
+    problem:
+      'Bankām un uzņēmumiem, kas pieņem TNFD, joprojām vajag bezmaksas pirmo skrīningu, kas saista saimnieciskās darbības ar dabas atkarībām un ietekmēm, pirms dziļām uzmērīšanām objektā.',
+    how: 'Lietotājs pārlūko saites starp saimnieciskajām darbībām, ekosistēmu pakalpojumiem un ietekmes virzītājiem atjauninātā zināšanu bāzē. 2024. gada jūlija atjauninājums (projekts SUSTAIN) precizēja materialitātes vērtējumus, ekosistēmu detalizāciju un vērtības ķēdes saites. Vēlāk šie dati iegāja Explore un Natural Capital moduļos.',
+    players:
+      'Publisks tīmekļa rīks. ENCORE publiskie materiāli min desmitiem tūkstošu reģistrētu lietotāju. To izmanto kā pirmo ieeju TNFD LEAP tipa novērtējumos.',
+    risks:
+      'ENCORE ir materialitātes un ceļu skrīnings, ne objekta uzmērīšana un ne zaļā gaisma projektam. Tas neaizstāj telpiskus bioloģiskās daudzveidības datus, licences nosacījumus vai konsultācijas ar kopienām. Lēmumiem un atklāšanai joprojām vajag konkrētas vietas datus.',
+    sourcesNote:
+      'ENCORE vietne un 2024. gada jūlija atjauninājuma piezīme; TNFD rīku katalogs. Atvērts dabas riska skrīnings, ne noslēgts bioloģiskās daudzveidības uzskaitījums.',
+  },
+  'nasa-pace': {
+    title: 'NASA PACE — okeāna krāsa un ekosistēma',
+    hook: 'NASA PACE (starts 2024. g. 8. feb.; publiski dati no aprīļa) — hiperspektrāla okeāna krāsa plus polarimetri: fitoplanktons, aerosoli un mākoņi kopā. Nav Biomass radars un nav atkritumu joslas.',
+    imageAlt:
+      'NASA vizualizācija okeāna krāsai no PACE Ocean Color Instrument — fitoplanktona raksti, ne meža biomasas karte un ne plastmasas inventārs',
+    what: 'PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) ir NASA Zemes zinātnes satelīts, palaists 2024. gada 8. februārī no Kanaveralas zemesraga. Tas nes hiperspektrālu Ocean Color Instrument (OCI) un divus daudzu leņķu polarimetrus (HARP2 un SPEXone), lai okeāna bioloģiju un atmosfēras daļiņas novērotu kopā.',
+    problem:
+      'Okeāna krāsas satelīti ilgi redzēja vispārēju zaļumu. Pārvaldniekiem vajag ikdienas globālas kartes, kuras fitoplanktona kopienas ir klāt un kā aerosoli un mākoņi saistās ar šo bioloģiju.',
+    how: 'OCI mēra no ūdens aizejošo atstarojumu daudzās šaurās joslās, lai atdalītu fitoplanktona kopienu tipus, ne tikai kopējo hlorofilu. Polarimetri ierobežo aerosolu un mākoņu īpašības, kas arī veido klimatu un gaisa kvalitāti. Publiski zinātnes kvalitātes dati sākās 2024. gada 11. aprīlī.',
+    players:
+      'NASA, globāla Zemes orbīta, atvērta datu izdale. Lietojumi: kaitīgo ziedēšanu izsekošana, zvejniecībai būtiski okeāna veselības pētījumi un klimata procesi.',
+    risks:
+      'Optiski sarežģīti piekrastes ūdeņi un mākoņi joprojām traucē atjaunošanu. PACE labāk šķir planktona kopienas. Tas nav zvejniecības pārvaldības sistēma pati par sevi un nav plastmasas inventārs. Pārvaldības lēmumiem blakus satelītam joprojām vajag in situ tīklus.',
+    sourcesNote:
+      'NASA PACE misijas lapa, 2024. gada 8. februāra palaišanas relīze un NASA Science lapa. Publiski dati no 2024. gada 11. aprīļa. Nav meža biomasas radars un nav plastmasas inventārs.',
+  },
 };

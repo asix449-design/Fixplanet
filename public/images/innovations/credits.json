@@ -297,5 +297,37 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Herculaneum_papyri.jpg",
     "artist": "Sara Stabile, Francesca Palermo, Inna Bukreeva, Daniela Mele, Vincenzo Formoso, Roberto Bartolino & Alessia Cedola",
     "license": "CC BY 4.0"
+  },
+  {
+    "slug": "edna-biodiversity-monitoring",
+    "file": "edna-biodiversity-monitoring.jpg",
+    "commonsTitle": "EDNA Water Sampling (36024122736).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EDNA_Water_Sampling_(36024122736).jpg",
+    "artist": "Monica Blaser, U.S. Fish and Wildlife Service, Midwest Region",
+    "license": "Public domain"
+  },
+  {
+    "slug": "marine-litter-satellite",
+    "file": "marine-litter-satellite.jpg",
+    "commonsTitle": "004 Beach pollution in Tenerife - Atlantic Ocean beach plastic garbage debris.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:004_Beach_pollution_in_Tenerife_-_Atlantic_Ocean_beach_plastic_garbage_debris.jpg",
+    "artist": "Marek Ślusarczyk (Tupungato)",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "encore-nature-risk",
+    "file": "encore-nature-risk.jpg",
+    "commonsTitle": "Aerial view of the Amazon Rainforest.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg",
+    "artist": "lubasi",
+    "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "nasa-pace",
+    "file": "nasa-pace.jpg",
+    "commonsTitle": "PACE Observes Namesake Plankton, Aerosols, Clouds and Ocean Ecosystem (SVS31294 - hyperw PACE OCI 2024040820240408).png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PACE_Observes_Namesake_Plankton,_Aerosols,_Clouds_and_Ocean_Ecosystem_(SVS31294_-_hyperw_PACE_OCI_2024040820240408).png",
+    "artist": "NASA Scientific Visualization Studio",
+    "license": "Public domain"
   }
 ]

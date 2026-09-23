@@ -1,0 +1,17 @@
+---
+import { ecologyShelfDetailSlugs } from '../../../../data/innovations';
+import { getInnovationBySlug, otherLocales, resolveLocale } from '../../../../i18n';
+import InnovationDetailView from '../../../../views/InnovationDetailView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) =>
+    ecologyShelfDetailSlugs.map((slug) => ({ params: { locale, slug } })),
+  );
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug ? getInnovationBySlug(locale, slug) : undefined;
+---
+
+{item && <InnovationDetailView item={item} />}
