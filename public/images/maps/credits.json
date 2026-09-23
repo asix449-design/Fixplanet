@@ -500,5 +500,41 @@
     "license": "Public domain",
     "kind": "fix-planet-schematic",
     "note": "History of borders, year 2020. Same geometry as the political-map card, 4-colored to match the early-century atlas language. Chukotka west of 180° restored from Natural Earth so the Bering Strait shows both shores."
+  },
+  {
+    "file": "groundwater-whymap.jpg",
+    "title": "Fix Planet overview of WHYMAP aquifer environments",
+    "source": "Fix Planet schematic on BlankMap-World, themed from BGR / UNESCO WHYMAP Groundwater Resources of the World",
+    "url": "https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Blue sedimentary basins / green complex folded-faulted / brown local-shallow. Not BGR’s official map, not Aqueduct stress, not a well log."
+  },
+  {
+    "file": "global-lakes-hydrolakes.jpg",
+    "title": "Fix Planet overview of HydroLAKES shoreline density",
+    "source": "Fix Planet schematic on BlankMap-World, themed from HydroSHEDS HydroLAKES / Messager et al. 2016",
+    "url": "https://www.hydrosheds.org/products/hydrolakes",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Lake-district dots for shorelines ≥10 ha. Not the HydroLAKES shapefile, not HydroBASINS polygons, not Aqueduct stress."
+  },
+  {
+    "file": "lakes-wetlands-glwd.jpg",
+    "title": "Fix Planet overview of GLWD inland-water classes",
+    "source": "Fix Planet schematic on BlankMap-World, themed from HydroSHEDS GLWD v2 / Lehner et al. 2025",
+    "url": "https://www.hydrosheds.org/products/glwd",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Open water / marsh / peat / intermittent. Not a second HydroLAKES shoreline layer, not Ramsar listings, not Aqueduct stress."
+  },
+  {
+    "file": "flood-hazard-aqueduct.jpg",
+    "title": "Fix Planet overview of Aqueduct Floods hazard",
+    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct Floods",
+    "url": "https://www.wri.org/data/aqueduct-floods",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Riverine corridors and coastal inundation patches. Not WRI’s official Floods graphic and not a second baseline water-stress choropleth."
   }
 ]

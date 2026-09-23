@@ -150,6 +150,263 @@ def ellipses(blobs: list[tuple[float, float, float, float, str, float]]) -> str:
     return "\n".join(parts)
 
 
+def legend_box(items: list[tuple[str, str]], x: float = 72, y: float = 1188) -> str:
+    """Simple color key in SVG pixel space (BlankMap-World)."""
+    parts = [
+        '<g id="fixplanet-legend" pointer-events="none" '
+        'font-family="DejaVu Sans, Liberation Sans, sans-serif" font-size="26">'
+        f'<rect x="{x - 18}" y="{y - 28}" width="520" height="{36 + 36 * len(items)}" '
+        'fill="#f7f4ee" fill-opacity="0.88" stroke="#3d4a42" stroke-width="0.8"/>'
+    ]
+    for i, (color, label) in enumerate(items):
+        yy = y + i * 34
+        parts.append(
+            f'<rect x="{x}" y="{yy - 16}" width="30" height="22" fill="{color}" '
+            'stroke="#1a1a1a" stroke-width="0.7"/>'
+        )
+        parts.append(f'<text x="{x + 42}" y="{yy}" fill="#1a1a1a">{label}</text>')
+    parts.append("</g>")
+    return "\n".join(parts)
+
+
+def lake_cluster(
+    cx: float, cy: float, n: int, spread: float, r: float, color: str, opacity: float = 0.9
+) -> list[tuple[float, float, float, str, float]]:
+    """A handful of shoreline dots around a lake district — not a count."""
+    pts: list[tuple[float, float, float, str, float]] = []
+    for i in range(n):
+        ang = (i * 2.399) % 6.2832
+        rad = spread * (0.18 + (i % 5) * 0.16)
+        pts.append((cx + rad * __import__("math").cos(ang), cy + rad * __import__("math").sin(ang), r * (0.7 + (i % 3) * 0.18), color, opacity))
+    return pts
+
+
+def groundwater_whymap() -> None:
+    """Blue sedimentary / green complex / brown local-shallow — not Aqueduct stress."""
+    css = """
+    .oceanxx { fill: #d7e4ec !important; stroke: none !important; }
+    .landxx { fill: #efe6d4 !important; stroke: #8a7a62 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #f4f1ea !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    sedimentary = [
+        (1380, 520, 95, 42, "#2f6f9a", 0.72),  # Nubian / Sahara
+        (1588, 500, 55, 32, "#3a7ca5", 0.7),  # Arabian
+        (2260, 780, 70, 38, "#2f6f9a", 0.68),  # Great Artesian
+        (430, 400, 48, 22, "#3a7ca5", 0.7),  # High Plains
+        (420, 470, 40, 16, "#3a7ca5", 0.55),  # Gulf Coast aquifer
+        (1850, 250, 80, 30, "#2f6f9a", 0.62),  # West Siberian
+        (740, 690, 70, 36, "#3a7ca5", 0.58),  # Amazon basin sediments
+        (1460, 700, 48, 28, "#3a7ca5", 0.55),  # Congo basin
+        (1820, 480, 70, 22, "#2f6f9a", 0.7),  # Indo-Gangetic
+        (2020, 380, 42, 18, "#3a7ca5", 0.62),  # North China Plain
+        (1450, 280, 70, 22, "#3a7ca5", 0.5),  # North European plain
+        (700, 820, 36, 18, "#3a7ca5", 0.5),  # Paraná / Pampas
+    ]
+    complex_fold = [
+        (680, 760, 18, 70, "#4f8a4a", 0.7),  # Andes
+        (380, 380, 16, 55, "#5b8f5a", 0.62),  # Rockies
+        (1750, 380, 90, 18, "#4f8a4a", 0.7),  # Alpine–Himalaya
+        (1555, 680, 14, 55, "#5b8f5a", 0.62),  # East African rift
+        (2160, 400, 22, 18, "#5b8f5a", 0.55),  # Japan
+        (1650, 430, 28, 16, "#4f8a4a", 0.55),  # Zagros
+    ]
+    local_shallow = [
+        (520, 260, 70, 40, "#a67c52", 0.55),  # Canadian Shield
+        (1480, 180, 45, 22, "#a67c52", 0.55),  # Baltic Shield
+        (780, 760, 40, 28, "#b08968", 0.45),  # Brazilian Shield
+        (1480, 760, 55, 40, "#a67c52", 0.5),  # African shields
+        (2180, 800, 40, 22, "#a67c52", 0.5),  # Western Australia
+        (2050, 220, 50, 22, "#b08968", 0.4),  # Siberian shield
+    ]
+    overlay = ellipses(local_shallow + sedimentary + complex_fold).replace(
+        "</g>", legend_box(
+            [
+                ("#2f6f9a", "sedimentary basins"),
+                ("#4f8a4a", "complex folded / faulted"),
+                ("#a67c52", "local and shallow"),
+            ]
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "groundwater-whymap.jpg",
+        "Fix Planet overview · WHYMAP aquifer environments · not Aqueduct stress",
+    )
+
+
+def global_lakes_hydrolakes() -> None:
+    """Shoreline / lake-density dots — not river-basin fills, not stress."""
+    css = """
+    .oceanxx { fill: #c5d9e8 !important; stroke: none !important; }
+    .landxx { fill: #f3efe4 !important; stroke: #9aa39c !important; stroke-width: 0.25 !important; }
+    .antxx { fill: #f7f4ee !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    lake = "#1d4e89"
+    districts = [
+        *lake_cluster(510, 365, 8, 42, 9.5, lake),  # Great Lakes
+        *lake_cluster(480, 250, 16, 80, 6.0, lake, 0.85),  # Canadian Shield
+        *lake_cluster(1475, 195, 14, 42, 6.2, lake),  # Fennoscandia
+        *lake_cluster(2000, 210, 8, 40, 5.5, lake, 0.7),  # Siberian lakes
+        *lake_cluster(1555, 700, 6, 28, 8.0, lake),  # East African Great Lakes
+        *lake_cluster(1688, 345, 4, 22, 11.0, lake),  # Caspian
+        *lake_cluster(2048, 275, 3, 14, 8.5, lake),  # Baikal
+        *lake_cluster(1960, 430, 10, 36, 4.8, lake, 0.8),  # Tibetan plateau
+        *lake_cluster(700, 900, 7, 28, 5.5, lake, 0.85),  # Patagonia
+        *lake_cluster(760, 700, 9, 48, 4.5, lake, 0.7),  # Amazon
+        *lake_cluster(2055, 430, 5, 22, 5.0, lake, 0.75),  # Yangtze / Dongting
+        *lake_cluster(1575, 240, 5, 20, 6.0, lake, 0.8),  # Ladoga / Onega
+        *lake_cluster(400, 220, 6, 28, 5.5, lake, 0.8),  # Great Bear / Slave
+        *lake_cluster(530, 575, 3, 10, 5.0, lake, 0.8),  # Nicaragua
+        *lake_cluster(675, 775, 2, 8, 6.0, lake, 0.85),  # Titicaca
+        *lake_cluster(2025, 555, 3, 12, 5.0, lake, 0.75),  # Tonle Sap
+        *lake_cluster(1488, 888, 3, 14, 5.5, lake, 0.75),  # southern Africa
+        *lake_cluster(2240, 820, 3, 16, 4.5, lake, 0.6),  # Australian
+        *lake_cluster(1720, 348, 2, 10, 6.0, "#3a6ea5", 0.55),  # Aral remnant
+    ]
+    overlay = circles(districts).replace(
+        "</g>",
+        legend_box([("#1d4e89", "lakes and reservoirs ≥10 ha")], x=72, y=1248)
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "global-lakes-hydrolakes.jpg",
+        "Fix Planet overview · HydroLAKES shoreline density · not HydroBASINS",
+    )
+
+
+def lakes_wetlands_glwd() -> None:
+    """Open water / marsh / peat / intermittent — not a second HydroLAKES shoreline layer."""
+    css = """
+    .oceanxx { fill: #b9cfc4 !important; stroke: none !important; }
+    .landxx { fill: #efe8d6 !important; stroke: #7d8a72 !important; stroke-width: 0.25 !important; }
+    .antxx { fill: #f2eee6 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    open_water = [
+        (510, 365, 38, 16, "#1a6b8a", 0.85),  # Great Lakes
+        (1555, 700, 22, 40, "#1a6b8a", 0.8),  # East African lakes
+        (1688, 345, 28, 16, "#1a6b8a", 0.85),  # Caspian
+        (2048, 275, 14, 8, "#1a6b8a", 0.8),  # Baikal
+        (1475, 195, 22, 12, "#1a6b8a", 0.55),  # Fennoscandian lakes
+    ]
+    marsh = [
+        (760, 760, 36, 20, "#3d9a5a", 0.75),  # Pantanal
+        (470, 470, 22, 12, "#3d9a5a", 0.7),  # Everglades / Gulf
+        (1520, 620, 28, 16, "#3d9a5a", 0.75),  # Sudd
+        (1630, 430, 20, 12, "#3d9a5a", 0.7),  # Mesopotamian marshes
+        (2020, 555, 22, 12, "#3d9a5a", 0.7),  # Mekong
+        (1480, 700, 24, 16, "#4eaa68", 0.55),  # Congo wetlands
+        (760, 690, 40, 18, "#4eaa68", 0.45),  # Amazon várzea
+    ]
+    peat = [
+        (520, 240, 70, 28, "#6b4a2a", 0.7),  # Hudson Bay lowlands
+        (1900, 230, 80, 28, "#6b4a2a", 0.65),  # West Siberian peat
+        (2080, 660, 28, 14, "#6b4a2a", 0.75),  # Indonesia peat
+        (1475, 200, 30, 14, "#7a5a38", 0.45),  # Fennoscandian peat
+        (1460, 720, 22, 14, "#6b4a2a", 0.5),  # Congo peat
+    ]
+    intermittent = [
+        (1380, 560, 70, 22, "#d4a017", 0.55),  # Sahel / Chad
+        (2240, 800, 50, 22, "#d4a017", 0.5),  # Australian intermittent
+        (1750, 380, 36, 16, "#d4a017", 0.45),  # Central Asia
+        (1488, 820, 28, 14, "#d4a017", 0.4),  # Kalahari pans
+    ]
+    overlay = ellipses(intermittent + peat + marsh + open_water).replace(
+        "</g>",
+        legend_box(
+            [
+                ("#1a6b8a", "open water"),
+                ("#3d9a5a", "marsh / vegetated wetland"),
+                ("#6b4a2a", "peatland"),
+                ("#d4a017", "intermittent water"),
+            ],
+            x=72,
+            y=1128,
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "lakes-wetlands-glwd.jpg",
+        "Fix Planet overview · GLWD inland-water classes · not HydroLAKES shorelines",
+    )
+
+
+def flood_hazard_aqueduct() -> None:
+    """Riverine + coastal inundation schematic — not baseline water-stress choropleth."""
+    css = """
+    .oceanxx { fill: #16324a !important; stroke: none !important; }
+    .landxx { fill: #e4e0d4 !important; stroke: #6a7268 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #eef1f2 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    coastal = [
+        (1865, 500, 32, 14, "#5ec8f0", 0.9),  # Ganges–Brahmaputra delta
+        (2020, 560, 30, 14, "#5ec8f0", 0.88),  # Mekong delta
+        (1548, 500, 20, 12, "#5ec8f0", 0.85),  # Nile delta
+        (1438, 265, 22, 12, "#5ec8f0", 0.9),  # Rhine / Netherlands
+        (470, 470, 32, 14, "#5ec8f0", 0.85),  # Mississippi / Gulf
+        (2080, 430, 40, 14, "#5ec8f0", 0.85),  # China coast
+        (2100, 640, 24, 12, "#5ec8f0", 0.8),  # Jakarta / N Java
+        (1488, 300, 16, 10, "#5ec8f0", 0.75),  # Po / Venice
+        (2260, 720, 18, 10, "#5ec8f0", 0.6),  # N Australia
+        (580, 620, 18, 10, "#5ec8f0", 0.65),  # Guianas / Orinoco
+        (2180, 560, 16, 10, "#5ec8f0", 0.7),  # Philippines
+        (500, 430, 22, 10, "#5ec8f0", 0.6),  # US Atlantic
+        (1285, 575, 16, 10, "#5ec8f0", 0.55),  # Niger delta
+        (2120, 720, 16, 10, "#5ec8f0", 0.55),  # N Australia / Gulf of Carpentaria
+    ]
+    riverine = [
+        (1860, 470, 55, 10, "#3d8ec9", 0.75),  # Ganges corridor
+        (2040, 400, 50, 10, "#3d8ec9", 0.7),  # Yangtze
+        (430, 400, 55, 10, "#3d8ec9", 0.7),  # Mississippi
+        (740, 700, 60, 16, "#3d8ec9", 0.55),  # Amazon floodplain
+        (1360, 560, 40, 10, "#3d8ec9", 0.65),  # Niger / inland delta
+        (1430, 280, 28, 8, "#3d8ec9", 0.6),  # Rhine–Danube
+        (1780, 470, 28, 8, "#3d8ec9", 0.65),  # Indus
+        (1480, 620, 22, 10, "#3d8ec9", 0.55),  # Nile / Sudd
+        (700, 640, 22, 8, "#3d8ec9", 0.5),  # Magdalena / Orinoco
+        (2050, 500, 22, 8, "#3d8ec9", 0.5),  # Pearl / Red
+    ]
+    overlay = ellipses(riverine + coastal).replace(
+        "</g>",
+        legend_box(
+            [
+                ("#3d8ec9", "riverine inundation"),
+                ("#5ec8f0", "coastal inundation"),
+            ],
+            x=72,
+            y=1218,
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "flood-hazard-aqueduct.jpg",
+        "Fix Planet overview · Aqueduct Floods hazard · not baseline water stress",
+    )
+
+
+def water_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    groundwater_whymap()
+    global_lakes_hydrolakes()
+    lakes_wetlands_glwd()
+    flood_hazard_aqueduct()
+
+
 def process_owid(src: Path, dest: str, credit: str, crop: tuple[int, int, int, int]) -> None:
     im = Image.open(src).convert("RGB")
     im = im.crop(crop)
@@ -568,5 +825,7 @@ if __name__ == "__main__":
         crime_cards()
     elif sys.argv[1:] == ["conflicts"]:
         conflicts_cards()
+    elif sys.argv[1:] == ["water"]:
+        water_cards()
     else:
         main()

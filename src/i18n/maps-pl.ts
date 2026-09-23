@@ -452,4 +452,59 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project — pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
   },
+  'groundwater-whymap': {
+    title: 'Zasoby wód podziemnych (WHYMAP)',
+    hook: 'Globalne środowiska hydrogeologiczne i potencjał zasilania z WHYMAP — mapa bazowa wód podziemnych, nie stres Aqueduct i nie krajowe rachunki FAO.',
+    description:
+      'Mapa Groundwater Resources of the World (BGR + UNESCO). Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres). Kolory = typy środowisk i zasilanie, nie ranking krajów.',
+    whyOnShelf: 'Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres).',
+    howToRead: 'Kolory = typy środowisk i zasilanie, nie ranking krajów.',
+    caveats:
+      'Kolory = typy środowisk i zasilanie, nie ranking krajów. Nie AQUASTAT i nie Aqueduct. Nie IGRAC GGIS.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet rodzin środowisk hydrogeologicznych WHYMAP (niebieskie baseny osadowe / zielone złożone / brązowe lokalne-płytkie), nie oficjalna mapa BGR i nie choropleth stresu Aqueduct. PDF i shapefile są na stronie WHYMAP. Cytujcie BGR i UNESCO / WHYMAP.',
+    imageAlt:
+      'Mapa świata z niebieskimi plamami basenów osadowych, zielonymi pasami fałdowymi i brązowymi lokalnymi płytkimi warstwami wodonośnymi — schemat hydrogeologii, nie stres wodny',
+  },
+  'global-lakes-hydrolakes': {
+    title: 'Globalne jeziora (HydroLAKES)',
+    hook: 'Poligony brzegów ~1,4 mln jezior i zbiorników ≥10 ha — inwentarz jezior, nie zlewnie i nie indeks stresu.',
+    description:
+      'Ta sama rodzina HydroSHEDS co HydroBASINS, ale obiekt = brzeg jeziora/zbiornika. Nie mapa mokradeł (GLWD) i nie jakość wody.',
+    whyOnShelf: 'Ta sama rodzina HydroSHEDS co HydroBASINS, ale obiekt = brzeg jeziora/zbiornika.',
+    howToRead: 'Nie mapa mokradeł (GLWD) i nie jakość wody.',
+    caveats:
+      'Nie mapa mokradeł (GLWD) i nie jakość wody. Objętość i głębokość dla większości to oceny modelowe.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet znanych okręgów jeziornych, nie figura produktowa HydroSHEDS i nie drugie wypełnienie zlewni. Pobranie jest na stronie HydroLAKES. Cytujcie Messager et al. 2016.',
+    imageAlt:
+      'Mapa świata z ciemnoniebieskimi punktami jezior i zbiorników w znanych okręgach jeziornych — inwentarz brzegów, nie zlewnie rzeczne',
+  },
+  'lakes-wetlands-glwd': {
+    title: 'Jeziora i mokradła (GLWD v2)',
+    hook: 'Śródlądowe wody świata w 33 klasach zbiorników i mokradeł — bagna, torfowiska, wody okresowe i więcej, nie druga warstwa brzegów HydroLAKES.',
+    description:
+      'GLWD v2 (~15″, do ~18,2 mln km²). HydroLAKES = brzegi ≥10 ha; GLWD = szersze klasy mokradeł. Nie lista Ramsar i nie stres wodny.',
+    whyOnShelf: 'HydroLAKES = brzegi ≥10 ha; GLWD = szersze klasy mokradeł.',
+    howToRead: 'Nie lista Ramsar i nie stres wodny.',
+    caveats: 'Nie lista Ramsar i nie stres wodny. HydroLAKES zostaje inwentarzem brzegów.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet klas wód śródlądowych (woda otwarta, bagno, torf, woda okresowa), nie figura produktowa HydroSHEDS i nie druga warstwa brzegów HydroLAKES. GLWD v2 jest CC BY 4.0 (cytujcie Lehner et al. 2025). Strona produktu jest na HydroSHEDS.',
+    imageAlt:
+      'Mapa świata z turkusową wodą otwartą, zielonymi bagnami, brązowym torfem i złotą wodą okresową — klasy mokradeł, nie brzegi jezior',
+  },
+  'flood-hazard-aqueduct': {
+    title: 'Zagrożenie powodziowe (Aqueduct Floods)',
+    hook: 'Modelowane zagrożenie i ekspozycja powodzi rzecznych i przybrzeżnych — ryzyko zalania, nie ten sam bazowy stres wodny co na karcie Water stress.',
+    description:
+      'Osobne narzędzie WRI od Water Risk Atlas. Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
+    whyOnShelf: 'Osobne narzędzie WRI od Water Risk Atlas.',
+    howToRead: 'Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
+    caveats:
+      'Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze. Nie bazowy stres wodny Aqueduct Water Risk Atlas.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet rejonów zalania rzecznego i przybrzeżnego, nie oficjalna grafika WRI Floods i nie drugi choropleth bazowego stresu wodnego. Dane Aqueduct zwykle są CC BY z przypisaniem WRI. Interaktywne mapy są w narzędziu Aqueduct Floods.',
+    imageAlt:
+      'Mapa świata ze średnioniebieskimi korytarzami powodzi rzecznymi i jasnym cyjanem plam przybrzeżnych — zagrożenie powodziowe, nie bazowy stres wodny',
+  },
 };

@@ -452,4 +452,59 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Shēmatiska apdraudēto valodu kataloga karte Endangered Languages Project krāsās — vitalitātes punkti, ne UNESCO 2010 atlants un ne otrs Glottolog',
   },
+  'groundwater-whymap': {
+    title: 'Pazemes ūdens resursi (WHYMAP)',
+    hook: 'Globālas hidroģeoloģiskās vides un uztures potenciāls no WHYMAP — pazemes ūdeņu pamatkarte, ne Aqueduct stress un ne FAO valstu konti.',
+    description:
+      'Groundwater Resources of the World karte (BGR + UNESCO). Cits objekts nekā AQUASTAT un Aqueduct. Krāsas = vides tipi un uzture, ne valstu rangs.',
+    whyOnShelf: 'Cits objekts nekā AQUASTAT un Aqueduct.',
+    howToRead: 'Krāsas = vides tipi un uzture, ne valstu rangs.',
+    caveats:
+      'Krāsas = vides tipi un uzture, ne valstu rangs. Ne AQUASTAT un ne Aqueduct. Ne IGRAC GGIS.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par WHYMAP hidroģeoloģisko vides saimēm (zili nogulumu baseini / zaļi sarežģīti / brūni vietēji-seklie), ne BGR oficiālā karte un ne Aqueduct stresa horoplēts. PDF un shapefile ir WHYMAP lapā. Citējiet BGR un UNESCO / WHYMAP.',
+    imageAlt:
+      'Pasaules karte ar ziliem nogulumu baseinu plankumiem, zaļām locījumu joslām un brūniem vietējiem seklajiem ūdensnesējiem — hidroģeoloģijas shēma, ne ūdens stress',
+  },
+  'global-lakes-hydrolakes': {
+    title: 'Globālie ezeri (HydroLAKES)',
+    hook: 'Krasta poligoni ~1,4 milj. ezeriem un ūdenskrātuvēm ≥10 ha — ezeru inventārs, ne baseini un ne stresa indekss.',
+    description:
+      'Tā pati HydroSHEDS saime kā HydroBASINS, bet objekts = ezera/ūdenskrātuves krasts. Ne mitrāju karte (GLWD) un ne ūdens kvalitāte.',
+    whyOnShelf: 'Tā pati HydroSHEDS saime kā HydroBASINS, bet objekts = ezera/ūdenskrātuves krasts.',
+    howToRead: 'Ne mitrāju karte (GLWD) un ne ūdens kvalitāte.',
+    caveats:
+      'Ne mitrāju karte (GLWD) un ne ūdens kvalitāte. Tilpums un dziļums lielākajai daļai ir modeļa aplēses.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par zināmiem ezeru apvidiem, ne HydroSHEDS produkta figūra un ne otra baseinu aizpilde. Lejupielāde ir HydroLAKES lapā. Citējiet Messager et al. 2016.',
+    imageAlt:
+      'Pasaules karte ar tumši ziliem ezeru un ūdenskrātuvju punktiem zināmos ezeru apvidos — krastu inventārs, ne upju baseini',
+  },
+  'lakes-wetlands-glwd': {
+    title: 'Ezeri un mitrāji (GLWD v2)',
+    hook: 'Pasaules iekšzemes ūdeņi 33 ūdenstilpju un mitrāju klasēs — purvi, kūdrāji, periodiski ūdeņi u.c., ne otrs HydroLAKES krastu slānis.',
+    description:
+      'GLWD v2 (~15″, līdz ~18,2 milj. km²). HydroLAKES = krasti ≥10 ha; GLWD = plašākas mitrāju klases. Ne Ramsar saraksts un ne ūdens stress.',
+    whyOnShelf: 'HydroLAKES = krasti ≥10 ha; GLWD = plašākas mitrāju klases.',
+    howToRead: 'Ne Ramsar saraksts un ne ūdens stress.',
+    caveats: 'Ne Ramsar saraksts un ne ūdens stress. HydroLAKES paliek krastu inventārs.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par iekšzemes ūdeņu klasēm (atklāts ūdens, purvs, kūdra, periodisks ūdens), ne HydroSHEDS produkta figūra un ne otrs HydroLAKES krastu slānis. GLWD v2 ir CC BY 4.0 (citējiet Lehner et al. 2025). Produkta lapa ir HydroSHEDS.',
+    imageAlt:
+      'Pasaules karte ar tirkīza atklātu ūdeni, zaļiem purviem, brūnu kūdru un zeltainu periodisku ūdeni — mitrāju klases, ne ezeru krasti',
+  },
+  'flood-hazard-aqueduct': {
+    title: 'Plūdu risks (Aqueduct Floods)',
+    hook: 'Modelēts upju un piekrastes plūdu risks un ekspozīcija — applūšanas risks, ne tas pats bāzes ūdens stress kā Water stress kartītē.',
+    description:
+      'Atsevišķs WRI rīks no Water Risk Atlas. Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
+    whyOnShelf: 'Atsevišķs WRI rīks no Water Risk Atlas.',
+    howToRead: 'Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
+    caveats:
+      'Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra. Ne Aqueduct Water Risk Atlas bāzes ūdens stress.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par upju un piekrastes applūšanas apvidiem, ne WRI Floods oficiālā grafika un ne otrs bāzes ūdens stresa horoplēts. Aqueduct dati parasti ir CC BY ar atsauci uz WRI. Interaktīvās kartes ir Aqueduct Floods rīkā.',
+    imageAlt:
+      'Pasaules karte ar vidēji ziliem upju plūdu koridoriem un spilgti ciāna piekrastes plankumiem — plūdu risks, ne bāzes ūdens stress',
+  },
 };
