@@ -427,6 +427,106 @@ export const mapMeta: MapMeta[] = [
     preview: 'living-languages-count.jpg',
     previewKind: 'outline',
   },
+  {
+    slug: 'endangered-languages-unesco',
+    category: 'ethnic',
+    year: '2010',
+    sourceShort: 'UNESCO · Atlas of the World’s Languages in Danger',
+    sourceOrg: 'UNESCO — Atlas of the World’s Languages in Danger (Moseley ed. 2010)',
+    sourceUrl: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+    openMapUrl: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+    preview: 'endangered-languages-unesco.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'UNESCO — Atlas of the World’s Languages in Danger',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+      },
+      {
+        label: 'UNESDOC same work (locale=en)',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026.locale=en',
+      },
+      {
+        label: 'Ethnologue — How many languages are endangered?',
+        url: 'https://www.ethnologue.com/insights/how-many-languages-endangered/',
+      },
+    ],
+  },
+  {
+    slug: 'wals-language-structures',
+    category: 'ethnic',
+    year: 'Dryer & Haspelmath',
+    sourceShort: 'WALS Online · Max Planck EVA',
+    sourceOrg: 'WALS Online (Max Planck Institute for Evolutionary Anthropology)',
+    sourceUrl: 'https://wals.info/',
+    openMapUrl: 'https://wals.info/',
+    preview: 'wals-language-structures.jpg',
+    previewKind: 'outline',
+    sources: [
+      { label: 'WALS Online (Max Planck EVA)', url: 'https://wals.info/' },
+      { label: 'WALS Online — Features index', url: 'https://wals.info/feature' },
+      {
+        label: 'WALS Online — Consonant Inventories (feature 1A)',
+        url: 'https://wals.info/feature/1A',
+      },
+      { label: 'CLDF dataset mirror (GitHub)', url: 'https://github.com/cldf-datasets/wals' },
+      {
+        label: 'Max Planck Institute for Evolutionary Anthropology',
+        url: 'https://www.eva.mpg.de/',
+      },
+      { label: 'Glottolog', url: 'https://glottolog.org/' },
+    ],
+  },
+  {
+    slug: 'language-areas-asher-moseley',
+    category: 'ethnic',
+    year: 'Atlas of the World’s Languages digitization',
+    sourceShort: 'Scientific Data · 2025',
+    sourceOrg: 'Ranacher et al., Scientific Data 2025 — language areas from Asher & Moseley',
+    sourceUrl: 'https://www.nature.com/articles/s41597-025-05828-6',
+    openMapUrl: 'https://www.nature.com/articles/s41597-025-05828-6',
+    preview: 'language-areas-asher-moseley.jpg',
+    previewKind: 'outline',
+    sources: [
+      {
+        label: 'Ranacher et al., Scientific Data 2025 — language areas from Asher & Moseley',
+        url: 'https://www.nature.com/articles/s41597-025-05828-6',
+      },
+      { label: 'Same via doi.org', url: 'https://doi.org/10.1038/s41597-025-05828-6' },
+      { label: 'PMC full text', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12373819/' },
+      {
+        label: 'GitHub — Glottography/asher2007world (polygons + Glottocodes)',
+        url: 'https://github.com/glottography/asher2007world',
+      },
+      { label: 'Glottolog', url: 'https://glottolog.org/' },
+    ],
+  },
+  {
+    slug: 'endangered-languages-project',
+    category: 'ethnic',
+    year: 'vitality & resources',
+    sourceShort: 'ELP · Endangered Languages Project',
+    sourceOrg: 'Endangered Languages Project',
+    sourceUrl: 'https://www.endangeredlanguages.com/',
+    openMapUrl: 'https://www.endangeredlanguages.com/',
+    preview: 'endangered-languages-project.jpg',
+    previewKind: 'schematic',
+    sources: [
+      { label: 'Endangered Languages Project', url: 'https://www.endangeredlanguages.com/' },
+      {
+        label: 'Endangered Languages Project — About',
+        url: 'https://www.endangeredlanguages.com/about/',
+      },
+      {
+        label: 'Ethnologue — How many languages are endangered?',
+        url: 'https://www.ethnologue.com/insights/how-many-languages-endangered/',
+      },
+      {
+        label: 'UNESCO Atlas of the World’s Languages in Danger (UNESDOC)',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+      },
+    ],
+  },
 ];
 
 export const mapPreviewSrc = (file: string) => `/images/maps/${file}`;

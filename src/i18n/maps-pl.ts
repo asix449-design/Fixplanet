@@ -354,4 +354,56 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa świata międzynarodowych granic lądowych ciemnymi liniami na jasnym lądzie — geometria liniowa, nie wypełnienie państw i nie limity morskie',
   },
+  'endangered-languages-unesco': {
+    title: 'Języki zagrożone (Atlas UNESCO)',
+    hook: 'Języki, które UNESCO uznała za narażone lub ginące — atlas zagrożenia, nie spis ludów i nie druga mapa rodzin.',
+    description:
+      'Wydanie Moseley 2010 (~2500 języków, stopnie zagrożenia według przekazu międzypokoleniowego). Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych) — inne pytanie: kogo UNESCO uznała za zagrożone. Nie czytać jako mapy etnicznej ani wyroku sądu.',
+    whyOnShelf:
+      'Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych) — inne pytanie: kogo UNESCO uznała za zagrożone.',
+    howToRead: 'Nie czytać jako mapy etnicznej ani wyroku sądu.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Nie czytać jako mapy etnicznej ani wyroku sądu.',
+    licenseNote:
+      'UNESCO / Moseley (red.) 2010. Podgląd to schemat stopni zagrożenia Atlasu (narażony → wymarły) na konturze świata w domenie publicznej — nie choropleth etniczny i nie drugie drzewo rodzin Glottolog. Cytujcie wydanie UNESDOC.',
+    imageAlt:
+      'Schematyczna mapa świata z pinezkami stopni zagrożenia Atlasu UNESCO od narażonego (żółty) do wymarłego (czarny) — nie spis ludów i nie mapa rodzin językowych',
+  },
+  'wals-language-structures': {
+    title: 'Światowy atlas struktur językowych (WALS)',
+    hook: 'Cechy strukturalne języków — fonetyka, szyk wyrazów, gramatyka — z gramatyk opisowych. Typologia, nie etniczność i nie drzewo rodzin.',
+    description:
+      'Baza WALS Online (MPI EVA). Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują. Kolor na mapie cechy — kod w próbie, nie «naród» i nie państwo.',
+    whyOnShelf: 'Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują.',
+    howToRead: 'Kolor na mapie cechy — kod w próbie, nie «naród» i nie państwo.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Kolor — kod w próbie, nie «naród» i nie państwo.',
+    licenseNote:
+      'Dane WALS Online są CC BY 4.0 (Dryer & Haspelmath / Instytut Maxa Plancka). Podgląd przerysowuje cechę 1A, zasób spółgłosek (Maddieson), z wydania CLDF — mapa typologii strukturalnej, nie rodziny Glottolog i nie pinezki zagrożenia UNESCO.',
+    imageAlt:
+      'Mapa WALS Online rozmiaru inwentarza spółgłoskowego: kolorowe punkty w miejscach odniesienia języków od małego (niebieski) do dużego (czerwony) — typologia, nie etniczność i nie drzewo rodzin',
+  },
+  'language-areas-asher-moseley': {
+    title: 'Obszary językowe (Asher & Moseley)',
+    hook: 'Otwarte poligony obszarów z atlasu Asher & Moseley, powiązane z Glottocode — powierzchnie, nie punkty Glottolog, i nadal nie spis ludów.',
+    description: '~6992 poligonów; punkty Glottolog ≠ obszary. Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
+    whyOnShelf: 'Punkty Glottolog ≠ obszary.',
+    howToRead: 'Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
+    caveats: 'Języki ≠ ludy ≠ państwa. Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
+    licenseNote:
+      'Poligony obszarów z Glottography/asher2007world (CC BY 4.0), zdigitalizowane z Asher & Moseley i powiązane z Glottocode; cytujcie Ranacher et al., Scientific Data 2025. Podgląd to próbka powierzchni z arkuszy tradycyjnych / czasu kontaktu — nie choropleth rodzin Glottolog i nie spis ludów.',
+    imageAlt:
+      'Próbka poligonów obszarów językowych zdigitalizowanych z atlasu Asher & Moseley i powiązanych z Glottocode — powierzchnie, nie punkty Glottolog i nie spis ludów',
+  },
+  'endangered-languages-project': {
+    title: 'Katalog Endangered Languages Project',
+    hook: 'Żywy katalog i mapa języków zagrożonych z zasobami dla społeczności — inne spojrzenie na zagrożenie obok Atlasu UNESCO 2010, nie drugi Glottolog.',
+    description:
+      'Nonprofit ELP: katalog, mapa, witalność, biblioteka zasobów. Nie mylić z wydaniem UNESCO 2010 i nie czytać jako mapy etnicznej/politycznej.',
+    whyOnShelf: 'Nie mylić z wydaniem UNESCO 2010.',
+    howToRead: 'Nie mylić z wydaniem UNESCO 2010 i nie czytać jako mapy etnicznej/politycznej.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Nie czytać jako mapy etnicznej/politycznej.',
+    licenseNote:
+      'Endangered Languages Project. Podgląd to schemat żywego katalogu — inny niż stopnie Atlasu UNESCO i pinezki Ethnologue EGIDS, i nie mapa polityczna.',
+    imageAlt:
+      'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project — pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
+  },
 };

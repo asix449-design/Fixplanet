@@ -684,6 +684,70 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'Green choropleth of linguistic diversity by country: darker green where many languages share a state, paler where few do — not a language-family atlas',
   },
+  'endangered-languages-unesco': {
+    title: 'Endangered languages (UNESCO Atlas)',
+    hook: 'Languages UNESCO listed as vulnerable to extinct — an endangerment atlas, not a census of peoples and not a second family-tree map.',
+    description:
+      'UNESCO’s Atlas of the World’s Languages in Danger (3rd edn, Moseley ed., 2010; UNESDOC) lists about 2,500 languages with a degree of endangerment based on intergenerational transmission and related vitality factors. The print Atlas and its (archived) interactive companion were built to monitor linguistic diversity loss — scholarly and policy cartography, not a headcount of ethnic groups.',
+    whyOnShelf:
+      'The live Glottolog card shows relatedness; Ethnologue’s living-languages insight shows inventory size. This card answers a different question: which languages the UN cultural agency treated as endangered, and at what degree. It belongs next to family and count cards, not under Conflicts or Political.',
+    howToRead:
+      'Degrees (vulnerable, definitely/severely/critically endangered, extinct) are expert judgements from the Atlas framework, not court findings and not DNA. A pin or shade means “this language was coded endangered in that edition,” not “this land belongs to one people.” Prefer the UNESDOC edition as the citable source of record; do not invent a live interactive UNESCO URL that no longer resolves.',
+    caveats:
+      'Many speakers are multilingual; colonial borders cut across speech communities. Languages are not peoples and not states. A pin is not a claim about blood, loyalty, or territory.',
+    licenseNote:
+      'UNESCO / Moseley (ed.) 2010. The preview is a Fix Planet schematic of Atlas endangerment degrees (vulnerable → extinct) on a public-domain world outline — not a political ethnicity choropleth and not a second Glottolog family tree. Cite the UNESDOC edition.',
+    imageAlt:
+      'Schematic world map with pins colored by UNESCO Atlas endangerment degrees from vulnerable (yellow) to extinct (black) — not a census of peoples and not a language-family map',
+  },
+  'wals-language-structures': {
+    title: 'World Atlas of Language Structures',
+    hook: 'Structural features of languages — sound systems, word order, grammar — mapped from reference grammars. Typology, not ethnicity and not a family tree.',
+    description:
+      'WALS Online (World Atlas of Language Structures) is a Max Planck Institute for Evolutionary Anthropology publication: a large database of phonological, grammatical, and lexical properties coded from descriptive grammars by a team of authors. First book+CD 2005 (OUP); online from 2008; 2013 edition with ongoing corrections. The live Glottolog card on this shelf already points readers to WALS as the related scholarly atlas of structure.',
+    whyOnShelf:
+      'Glottolog answers “who is related to whom.” WALS answers “which structural features show up where.” Both are language science, not political ethnicity. Putting WALS on the Ethnic shelf keeps the promise that ethnolinguistic maps here are about speech systems.',
+    howToRead:
+      'Each feature chapter is a separate map (e.g. consonant inventory size, dominant word order). A color is a coding value for that feature in a sampled language, usually at a reference point — not a claim that everyone in the polygon speaks one tongue or shares one identity. Cite the specific WALS chapter you use; cite the general work only when drawing on many chapters. Dataset versioning is published via the WALS project (see GitHub CLDF release); the interactive atlas is https://wals.info/.',
+    caveats:
+      'A color is a coding value in a sampled language, not a people and not a state. Languages are not peoples and not states.',
+    licenseNote:
+      'WALS Online data are CC BY 4.0 (Dryer & Haspelmath / Max Planck Institute for Evolutionary Anthropology). The preview redraws feature 1A, Consonant Inventories (Maddieson), from the CLDF release — a structural typology map, not Glottolog families and not UNESCO endangerment pins.',
+    imageAlt:
+      'WALS Online map of consonant inventory size: colored points at language reference locations from small (blue) to large (red) — structural typology, not ethnicity and not a family tree',
+  },
+  'language-areas-asher-moseley': {
+    title: 'Language areas (Asher & Moseley)',
+    hook: 'Open polygons for language areas digitized from Asher & Moseley’s atlas and linked to Glottocodes — areas, not single Glottolog points, and still not a census of peoples.',
+    description:
+      'Asher & Moseley’s Atlas of the World’s Languages drew language distributions as printed maps. A 2025 Scientific Data paper (Ranacher et al.) georeferenced those sheets, digitized 6,992 distinct language-area polygons, and linked each polygon to a Glottocode. Data are released as a faithful replication plus enriched aggregates (GitHub Glottography / asher2007world). This closes a gap Glottolog itself states: Glottolog gives coordinates (points), not speaker-area polygons.',
+    whyOnShelf:
+      'Live Language families is Glottolog classification geography. This card is the complementary object: polygonal language areas from a named atlas, interoperable with Glottolog IDs. It is still linguistic geography — not Political admin-0 and not Ethnicity-as-race.',
+    howToRead:
+      'Treat polygons as “the atlas drew a speech-area here,” generalized for atlas scale. Historical vs contemporary sheets differ; colonial borders and multilingual regions cut across neat fills. Do not merge into World countries. Do not treat a Glottocode link as proof of sovereignty or blood. Prefer citing the Scientific Data article + the GitHub dataset together.',
+    caveats:
+      'Polygons are a generalized atlas drawing of a speech-area, not sovereignty and not blood. Languages are not peoples and not states.',
+    licenseNote:
+      'Language-area polygons from Glottography/asher2007world (CC BY 4.0), digitized from Asher & Moseley and linked to Glottocodes; cite Ranacher et al., Scientific Data 2025. The preview samples those areas from the traditional / time-of-contact sheets — not the Glottolog family choropleth and not a census of peoples.',
+    imageAlt:
+      'Sample language-area polygons digitized from Asher and Moseley’s atlas and linked to Glottocodes — areas, not Glottolog points, and not a census of peoples',
+  },
+  'endangered-languages-project': {
+    title: 'Endangered Languages Project catalogue',
+    hook: 'A living catalogue and map of endangered and Indigenous languages with community resources — another endangerment lens beside UNESCO’s 2010 Atlas, not a second Glottolog.',
+    description:
+      'The Endangered Languages Project (ELP) is a U.S.-based nonprofit that publishes a public catalogue and language map supporting revitalization of Indigenous and endangered languages. It emphasizes evidence-based vitality data, resource libraries, and community collaboration — a working catalogue, not a one-time print atlas.',
+    whyOnShelf:
+      'UNESCO’s 2010 Atlas is the citable historical UN edition. ELP is the current public catalogue/map many educators and communities actually open. Together with Glottolog (families) and WALS (structure), the shelf covers relatedness, structure, printed UN endangerment, and a living endangerment catalogue — without opening Religions or Political ethnicity.',
+    howToRead:
+      'Vitality labels and map points change as communities and researchers update entries. “Endangered” here is about language use and transmission, not about race or statehood. Cross-check important claims against UNESCO Atlas, Ethnologue EGIDS, or primary community sources. Do not caption ELP as “the UN map” (that is the UNESCO Atlas card).',
+    caveats:
+      '“Endangered” here is about language use and transmission, not about race or statehood. Languages are not peoples and not states. Do not caption ELP as the UN map.',
+    licenseNote:
+      'Endangered Languages Project. The preview is a Fix Planet schematic of a living catalogue map — distinct from UNESCO Atlas degrees and from Ethnologue EGIDS pins, and not a political map.',
+    imageAlt:
+      'Schematic catalogue map of endangered-language locations in Endangered Languages Project colors — vitality pins, not the UNESCO 2010 Atlas and not a second Glottolog',
+  },
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
@@ -733,6 +797,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
       const conflicts = rest.filter((item) => item.category === 'conflicts');
       return [...same, ...conflicts];
     }
+    return same;
+  }
+  if (current.category === 'ethnic') {
+    // Six ethnolinguistic cards. List every Ethnic sibling so
+    // language-families and living-languages-count link the four new cards.
     return same;
   }
   return [...same, ...rest].slice(0, limit);
