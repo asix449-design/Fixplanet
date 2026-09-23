@@ -1,6 +1,81 @@
 import type { SpeciesCopy } from '../data/wildlife';
 
 export const packPl: Record<string, SpeciesCopy> = {
+  'european-bison': {
+    commonName: 'Żubr',
+    hook: 'Wytępiony na wolności na początku XX wieku, potem odbudowany — wolno żyjące stada wzrosły z około 1800 zwierząt w 2003 do 6244 w 47 subpopulacjach do 2019; IUCN przesunął gatunek z Vulnerable do Near Threatened.',
+    imageAlt: 'Byk żubra stoi w jesiennym lesie',
+    what: 'Największy ssak lądowy Europy — dziki krewniak żubra amerykańskiego, inny gatunek. Linie nizinne i górskie uratowano w zoo, potem wypuszczono do lasów od lat 50. XX w.',
+    range:
+      'Europa. Do 2019 wolno żyjące zwierzęta wróciły do lasów, w 47 subpopulacjach. Tylko około ośmiu stad jest dość dużych dla długiej żywotności genetycznej; większość stad zostaje mała i w większości izolowana.',
+    story:
+      'To zarządzany powrót po tym, jak ludzie opróżnili zasięg: hodowla w niewoli, reintrodukcje i stałe prowadzenie stad. Wciąż zależny od ochrony (małe, izolowane stada), nie beztroski boom jak dzik — ale z powrotem w krajobrazie.',
+    when: 'IUCN (ocena 2020): populacja wolno żyjąca ~1800 (2003) → 6244 (2019) w 47 stadach. Status: Near Threatened, przesunięty z Vulnerable. Późniejsza notka Oryx podawała około 6800 wolno żyjących do 2020, gdy planowanie trwało.',
+    humanRole:
+      'Ludzie odstrzelili ostatnie dzikie zwierzęta. Hodowla w niewoli, wypuszczenia do lasów od lat 50. i stałe prowadzenie stad wróciły wolno żyjące stada.',
+    sources:
+      'Czerwona lista IUCN (Bison bonasus, Near Threatened, 2020); wiadomość IUCN, 10 gru 2020; notka Oryx o planie działań na cały zasięg.',
+  },
+  'north-american-beaver': {
+    commonName: 'Bóbr amerykański',
+    hook: 'Około 1900 niemal wytarty z dużej części zasięgu dla filcowych kapeluszy; regulowane odłowy i reintradukcje odbudowały kontynentalny gatunek kluczowy — IUCN: Least Concern, współczesne szacunki często ~10–15 mln.',
+    imageAlt: 'Bóbr amerykański siedzi na kłodzie przy brzegu stawu',
+    what: 'Budowniczy tam Nowego Świata — ta sama rodzina co żywy bóbr europejski, inny gatunek. Przebudowuje cieki w mokradła, które trzymają wodę, magazynują węgiel w stawach i karmią inną zwierzynę.',
+    range:
+      'Znów kontynentalny gatunek kluczowy tam, gdzie zostało siedlisko, po niemal całkowitym starciu z dużej części zasięgu. Nie mylić z Castor fiber.',
+    story:
+      'Ludzie doprowadzili go do lokalnego wymarcia dla futra, potem sprowadzili z powrotem. Tam gdzie jest dużo — konflikt z rolnictwem i przepustami. Klasyczna historia półki „wciąż tu, potem boom”, nie rzadkość ze statusu Endangered.',
+    when: 'Około 1900 bobry niemal zniknęły z wielu pierwotnych siedlisk. Ocena USDA Forest Service, region 2: reguły pozyskania, ochrona mokradeł, przesiedlenia i naturalne rozprzestrzenienie odbudowały populacje tam, gdzie siedlisko zostało. Współczesne sumy często szacuje się na dziesiątki milionów (często ~10–15 mln). Streszczenie Stanford niedawnego mapowania podaje spadek od zgrubnych przedkolonialnych zgadywań 60–400 mln do około 10–15 mln dziś — historyczny sufit traktować jako niepewny; kierunek (załamanie → znów miliony) jest solidny. IUCN: Least Concern.',
+    humanRole:
+      'Handel futrami na filcowe kapelusze niemal go starł. Regulowane odłowy i reintradukcje w połowie wieku go odbudowały.',
+    sources:
+      'Czerwona lista IUCN (Castor canadensis, Least Concern); Animal Diversity Web; ocena USDA Forest Service, region 2; Stanford Report, 11 sie 2025; Communications Earth & Environment (doi:10.1038/s43247-025-02572-y).',
+  },
+  'bald-eagle': {
+    commonName: 'Bielik amerykański',
+    hook: 'W 1963 w dolnych 48 stanach USA zostało 417 znanych par lęgowych; po zakazie DDT i pracy ESA USFWS naliczył około 316\u202f700 osobników i 71\u202f467 zajętych gniazd w 2018–2019.',
+    imageAlt: 'Dorosły bielik amerykański w locie nad wodą: biała głowa i ogon',
+    what: 'Orzeł rybny Ameryki Północnej i symbol narodowy USA — jedyny orzeł rodzimy wyłącznie dla tego kontynentu. Dorosłe mają białą głowę i ogon; młodsze latami zostają pstrokato brązowe.',
+    range:
+      'Ameryka Północna. Główne liczby odbudowy to dolne 48 stanów USA. Alaski nie wpisywano do ESA w ten sam sposób.',
+    story:
+      'Strzelanie i DDT przerzedzały skorupy jaj, aż ptak niemal zniknął ze stanów kontynentalnych USA. Ochrona prawna, praca przy gniazdach i zakaz DDT w USA w 1972 odwróciły krach. Zdjęty z ESA w 2007; nadal chroniony ustawą o bieliku i orle przednim oraz ustawą o traktacie ptaków wędrownych.',
+    when: 'USFWS: 417 znanych par lęgowych w dolnych 48 stanach w 1963 → 9789 par przy zdjęciu z listy w 2007 → około 316\u202f700 osobników i 71\u202f467 zajętych gniazd (dane 2018–2019). IUCN: Least Concern.',
+    humanRole:
+      'Strzelanie i DDT spowodowały krach. Zakaz DDT z 1972, praca ESA i ochrona gniazd go odwróciły.',
+    sources:
+      'Strona gatunku USFWS; USFWS Bald Eagle Population Size: 2020 Update; zasada zdjęcia z listy, Federal Register, 2007.',
+  },
+  'white-rhinoceros': {
+    commonName: 'Nosorożec biały',
+    hook: 'Południowe białe nosorożce sprowadzono sto lat temu do jednego schronienia w RPA; IUCN/TRAFFIC na koniec 2024 szacuje afrykańskie białe na około 15\u202f752 — Near Threatened, wciąż główny żywy zasób gatunku.',
+    imageAlt: 'Południowy nosorożec biały z cielęciem na pastwisku; widać szeroką kwadratową wargę',
+    what: 'Szerokopyski pasący się nosorożec sawanny. Dwa podgatunki: południowy (odzysk) i północny (funkcjonalnie wymarły na wolności — już na półce Endangered). Niemal wszystkie żywe białe nosorożce to podgatunek południowy (C. s. simum).',
+    range:
+      'Sawanna afrykańska. Południowe białe sprowadzono sto lat temu do jednego schronienia w RPA. Podgatunek północny nie jest bohaterem tej karty.',
+    story:
+      'Ochrona i przesiedlenia z Hluhluwe–iMfolozi odbudowały południowe liczby z maleńkiej resztki do dziesiątek tysięcy. To powrót półki Przetrwałe. To nie ta sama historia co krytycznie zagrożone nosorożce czarny, jawajski czy sumatrzański i nie resztka północnego białego.',
+    when: 'Komunikat IUCN (7 sie 2025, za raportem AfRSG/TRAFFIC dla CITES): 15\u202f752 białych nosorożców w Afryce na koniec 2024 (spadek o 11,2% wobec 2023 — susza, spis i wstrząsy zarządzania po wcześniejszych zyskach). Podsumowania IRF nadal trzymają długi łuk: „mniej niż 100 na początku XX wieku → dziesiątki tysięcy”. Czerwona lista IUCN: Near Threatened.',
+    humanRole:
+      'Polowania zbiły podgatunek południowy do jednego schronienia. Ochrona i przesiedlenia odbudowały żywy zasób.',
+    sources:
+      'Czerwona lista IUCN (Ceratotherium simum, Near Threatened); komunikat IUCN, 7 sie 2025; International Rhino Foundation; raport przewodniczącego AfRSG w Pachyderm; plan zarządzania bioróżnorodnością RPA.',
+  },
+  'arabian-oryx': {
+    commonName: 'Oryks arabski',
+    hook: 'Na początku lat 70. uznany za wymarły na wolności, potem wrócił z hodowli; do oceny IUCN 2016 na wolności znów około 1220 (850 dorosłych) — pierwszy gatunek, który wrócił z Extinct in the Wild do Vulnerable.',
+    imageAlt: 'Oryks arabski w pustynnych zaroślach rezerwatu Uruq Bani Ma’arid w Arabii Saudyjskiej',
+    what: 'Biała pustynna antylopa z długimi, niemal prostymi rogami — najmniejszy Oryx, rodzimy dla pustyń i stepów Półwyspu Arabskiego.',
+    range:
+      'Pustynie i stepy Półwyspu Arabskiego. Wypuszczenia od 1980 wróciły zwierzęta do Omanu, Arabii Saudyjskiej, Izraela, ZEA, Jordanii i miejsc pokrewnych.',
+    story:
+      'Myślistwo zmotoryzowane opróżniło stada. Hodowla w niewoli i wypuszczenia od 1980 wróciły zwierzęta ze stad hodowlanych. Nadal zagrożony (siedlisko, nielegalne polowania, małe dzikie sumy) — ale udokumentowany powrót z Extinct in the Wild, nie CR bez ścieżki odzysku.',
+    when: 'Na początku lat 70. uznany za wymarły na wolności. Karta faktów IUCN SSC Antelope Specialist Group (ocena 2016): około 1220 na wolności (850 dorosłych) i 6000–7000 w niewoli. Status: Vulnerable — pierwszy gatunek, który wrócił z Extinct in the Wild do Vulnerable. Wiadomość IUCN (2011) zapisała zejście z wyższej kategorii zagrożenia. Royal Society Open Science (2021) omawia genetykę reintrodukcji w Omanie.',
+    humanRole:
+      'Myślistwo zmotoryzowane opróżniło ostatnie dzikie stada. Hodowla w niewoli i wypuszczenia od 1980 wróciły gatunek.',
+    sources:
+      'Czerwona lista IUCN (Oryx leucoryx, Vulnerable); IUCN, „A grain of hope in the desert” (2011); karta faktów IUCN SSC Antelope Specialist Group; Royal Society Open Science, 2021.',
+  },
   'lord-howe-island-stick-insect': {
     commonName: 'Straszyk z Lord Howe',
     hook: 'Uznany za wymarły na Lord Howe po szczurach w 1918 — maleńka dzika populacja trzyma się na Ball’s Pyramid.',
