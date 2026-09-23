@@ -423,10 +423,127 @@ def crime_cards() -> None:
         corruption_perceptions_index(src if src.exists() else SRC / "cpi-2025.png")
 
 
+def intact_forest_landscapes() -> None:
+    """Large wilderness blocks — not the magenta Hansen loss frontiers."""
+    css = """
+    .oceanxx { fill: #071410 !important; stroke: none !important; }
+    .landxx { fill: #243528 !important; stroke: #152016 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #d5ddd6 !important; }
+    """
+    blocks = [
+        (720, 680, 110, 55, "#3ddc6a", 0.72),  # Amazon core
+        (820, 600, 48, 26, "#2fbf58", 0.55),  # Guiana shield
+        (1420, 680, 70, 36, "#3ddc6a", 0.7),  # Congo interior
+        (500, 230, 100, 28, "#49e07a", 0.5),  # boreal Canada
+        (1900, 210, 150, 32, "#49e07a", 0.48),  # Siberia
+        (2260, 700, 36, 16, "#3ddc6a", 0.65),  # New Guinea
+        (2085, 650, 26, 14, "#2fbf58", 0.55),  # Borneo interior
+    ]
+    render_svg(
+        css,
+        ellipses(blocks),
+        "intact-forest-landscapes.jpg",
+        "Fix Planet overview · intact forest landscapes · based on IFL Mapping Team",
+    )
+
+
+def mangrove_extent() -> None:
+    """Tidal-forest fringe on tropical coasts — not inland canopy loss."""
+    css = """
+    .oceanxx { fill: #0c3d4a !important; stroke: none !important; }
+    .landxx { fill: #c4b48a !important; stroke: #6d6248 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #e7eef0 !important; }
+    """
+    coasts = [
+        (700, 500, 16, 7, "#14b8a6", 0.9),  # Florida / Caribbean
+        (900, 640, 18, 8, "#0d9488", 0.9),  # Amazon mouth
+        (1180, 610, 22, 8, "#14b8a6", 0.85),  # West Africa
+        (1560, 720, 10, 22, "#0f766e", 0.85),  # East Africa
+        (1605, 790, 8, 14, "#14b8a6", 0.8),  # Madagascar
+        (1860, 505, 20, 8, "#0d9488", 0.9),  # Sundarbans
+        (2040, 670, 16, 8, "#14b8a6", 0.85),  # Sumatra
+        (2100, 655, 18, 8, "#0f766e", 0.85),  # Borneo coast
+        (2280, 720, 14, 7, "#14b8a6", 0.8),  # New Guinea coast
+        (2180, 780, 36, 8, "#0d9488", 0.85),  # northern Australia
+    ]
+    render_svg(
+        css,
+        ellipses(coasts),
+        "mangrove-extent.jpg",
+        "Fix Planet overview · mangrove shoreline · based on Global Mangrove Watch",
+    )
+
+
+def primary_humid_tropical_forests() -> None:
+    """2001 humid-tropical primary belt — boreal stays out of the green."""
+    css = """
+    .oceanxx { fill: #10243a !important; stroke: none !important; }
+    .landxx { fill: #8d9078 !important; stroke: #3e4638 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #e4ebe8 !important; }
+    """
+    belt = [
+        (740, 690, 130, 48, "#0b7a32", 0.82),  # Amazon
+        (1430, 690, 80, 34, "#0b7a32", 0.8),  # Congo
+        (2050, 660, 70, 22, "#0e8a3a", 0.78),  # Sundaland
+        (2260, 705, 34, 14, "#0e8a3a", 0.75),  # New Guinea
+        (1980, 560, 22, 12, "#149447", 0.6),  # mainland SE Asia
+    ]
+    render_svg(
+        css,
+        ellipses(belt),
+        "primary-humid-tropical-forests.jpg",
+        "Fix Planet overview · primary humid tropics 2001 · based on UMD GLAD",
+    )
+
+
+def forest_landscape_integrity() -> None:
+    """Continuous integrity bands — high remote, mid, and modified standing forest."""
+    css = """
+    .oceanxx { fill: #0e1c28 !important; stroke: none !important; }
+    .landxx { fill: #6e7c68 !important; stroke: #2c3830 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #e6ece8 !important; }
+    """
+    high = [
+        (720, 680, 90, 40, "#145c32", 0.85),
+        (1420, 680, 55, 28, "#145c32", 0.82),
+        (480, 230, 80, 22, "#1b7a40", 0.7),
+        (1950, 200, 120, 26, "#1b7a40", 0.68),
+        (2260, 700, 28, 12, "#145c32", 0.75),
+    ]
+    mid = [
+        (620, 420, 40, 18, "#e0b04a", 0.55),
+        (1500, 360, 36, 16, "#e0b04a", 0.5),
+        (1860, 430, 40, 16, "#d4a017", 0.5),
+        (2050, 400, 50, 18, "#e0b04a", 0.48),
+    ]
+    low = [
+        (1380, 340, 28, 14, "#e07a2f", 0.62),
+        (1840, 480, 30, 14, "#e07a2f", 0.58),
+        (1980, 420, 36, 16, "#c65a1e", 0.6),
+        (560, 400, 28, 14, "#e07a2f", 0.5),
+    ]
+    render_svg(
+        css,
+        ellipses(high + mid + low),
+        "forest-landscape-integrity.jpg",
+        "Fix Planet overview · forest landscape integrity · based on Grantham et al.",
+    )
+
+
+def forests_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    intact_forest_landscapes()
+    mangrove_extent()
+    primary_humid_tropical_forests()
+    forest_landscape_integrity()
+
+
 if __name__ == "__main__":
     import sys
 
     if sys.argv[1:] == ["crime"]:
         crime_cards()
+    elif sys.argv[1:] == ["forests"]:
+        forests_cards()
     else:
         main()

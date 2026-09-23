@@ -355,4 +355,60 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Pasaules karte ar starptautiskām sauszemes robežām kā tumšām līnijām uz gaišas sauszemes — līniju ģeometrija, ne valstu aizpilde un ne jūras robežas',
   },
+  'intact-forest-landscapes': {
+    title: 'Neskartie meža ainavu kompleksi (IFL)',
+    hook: 'Potapov / IFL Mapping Team poligoni (2000.–2025. atjauninājumi) — savvaļas meža mozaīkas veselums, nevis Hansen ikgadējie pikseļi un nevis parku robežas.',
+    description:
+      'Neskartie meža ainavu kompleksi (IFL) ir lielas meža un saistīto ekosistēmu mozaīkas bez attālināti konstatētas rūpnieciskas darbības. IFL komanda (UMD GLAD un partneri) publicē globālos apjomus 2000., 2013., 2016., 2020. un 2025. gadam ar CC BY 4.0. Metode: Potapov et al., Science Advances 2017; pašreizējam apjomam izmanto 2025. slāni. Tas nav FAO land use un nav WDPA.',
+    howToRead:
+      'Krāsains laukums ir IFL poligons kartes gadā — ne plantācija un ne parka robeža. Zudums starp gadiem ir fragmentācija vai rūpnieciska ielaušanās bijušajā IFL; tas var atšķirties no Hansen vainagu zuduma kopsummām.',
+    caveats:
+      'IFL ir minimāla izmēra savvaļas klase (apmēram 500 km² mozaīka bez konstatētas rūpnieciskas infrastruktūras), ne visi primārie meži un ne oglekļa krājums. Mežs var būt primārs un tomēr neiekļūt IFL, ja to sašķeļ ceļi vai izcirtumi. Robežas pārvietojas starp atjauninājumu gadiem. Sīku vai vainaga apakšēju izmantošanu satelīts var nepamanīt.',
+    licenseNote:
+      'GeoPackage ir intactforests.org. Tīmekļa skatītājs ir Greenpeace IFL karte. 2000.–2025. arhīvs ir Zenodo. Atvērtais metodes teksts ir Potapov et al. 2017 PMC. Priekšskats ir Fix Planet lielu savvaļas bloku shēma, ne IFL poligoni.',
+    imageAlt:
+      'Tumša pasaules karte ar spilgti zaļiem savvaļas meža blokiem Amazōnijā, Kongo baseinā, boreālajā Kanādā un Sibīrijā un Jaungvinejā — neskartas ainavas, ne ikgadējie vainagu zuduma pikseļi',
+  },
+  'mangrove-extent': {
+    title: 'Mangrovju platība',
+    hook: 'Global Mangrove Watch — ikgadējā mangrovju platība (v4.1 sērija līdz 2025) — paisuma mežs, nevis iekšzemes Hansen un nevis WDPA parki.',
+    description:
+      'Global Mangrove Watch (GMW) kartē aplēsto mangrovju mežu platību un tās izmaiņas. Versija 4.1 ir ikgadēja rinda no 1985. līdz 2025. gadam (JAXA Kyoto & Carbon, Aberystwyth University un partneri). Platforma rāda platību, neto izmaiņu un brīdinājumus; rastri un vektori ir Zenodo un JAXA. Tas nav koraļļi un nav aizsargājamās teritorijas.',
+    howToRead:
+      'Mangrovju pikselis ir GMW klasifikatora paisuma mežs tajā gadā — ne koraļļu rifs, ne sāls purva karte un ne aizsardzības statuss. Salīdzini gadus GMW ietvaros; nesajauc ar Hansen kopsummām.',
+    caveats:
+      'Mangrovju kartes vājāk darbojas dubļainās malās, akvakultūras dīķos un retā apmalē. Ikgadējā izmaiņa nav tas pats, kas likumīga meža izciršana. Ogleklis un sugas ir atsevišķi produkti tajā pašā platformā. Precizitāte atšķiras pa valstīm un duļķainību. Atjaunošanas stādījumi klasifikatorā var kavēties. Brīdinājumi ir atlase, tad vietējais attēls.',
+    licenseNote:
+      'GMW slāņus lieto nacionālie paneļi un piekrastes projekti. v4.1 steku ĢIS lejupielādei apraksta JAXA. Priekšskats ir Fix Planet zināmo mangrovju piekrastes shēma, ne GMW rastrs. Karte ir globalmangrovewatch.org.',
+    imageAlt:
+      'Pasaules karte ar tirkīza paisuma meža apmali gar tropu piekrastēm — mangrovju platība, ne iekšzemes vainagu zudums',
+  },
+  'primary-humid-tropical-forests': {
+    title: 'Primārie mitrie tropu meži',
+    hook: 'UMD GLAD 30 m karte — primāro mitro tropu mežu platība 2001. (Turubanova et al.) — primaritātes bāze, nevis Hansen ikgadējie zudumi un nevis IFL izmēra noteikumi.',
+    description:
+      '2001. bāzes slānis. UMD GLAD kartēja primāros mitros tropu mežus 30 m no Landsat: mežs, kas nebija pilnībā nocirsts ierakstā, ko izmantoja šai bāzei. Kontinentālie GeoTIFF un Earth Engine kolekcija ir publiski. Metode: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c). Tikai mitrie tropi.',
+    howToRead:
+      'Pikselis 1 ir primārais mitrais tropu mežs 2001. kartē; 0 ir cita zeme vai ūdens. Zudumus pēc 2001. parasti lasa ar Hansen / Global Forest Watch. 2001. slānis pats nav 2025. platības karte.',
+    caveats:
+      'Tikai mitrie tropi — ne boreālais primārais mežs un ne sausais mežs. Sekundārais mežs pēc nociršanas ir ārpus 2001. primārās klases. Klasifikācijas kļūdas ir malās un sarežģītās mozaīkās. Plantācijas, kas ierīkotas pirms bāzes loģikas, var jaukt vietējo lasījumu — lasi GLAD piezīmes.',
+    licenseNote:
+      'Slāņi ir GLAD datu kopas lapā un Google Earth Engine katalogā. Priekšskats ir Fix Planet mitro tropu joslas shēma, ne 30 m GeoTIFF. Citē Turubanova et al. 2018 un UMD GLAD.',
+    imageAlt:
+      'Pasaules karte ar piesātināti zaļu primāro mitro tropu mežu joslu Amazōnijā, Kongo un Dienvidaustrumāzijā 2001. bāzē — ne boreālais mežs un ne ikgadējais vainagu zudums',
+  },
+  'forest-landscape-integrity': {
+    title: 'Meža ainavu integritātes indekss (FLII)',
+    hook: 'Grantham et al. nepārtrauktais mežu integritātes vērtējums (~2019) — antropogēna modificēšana un savienojamība, nevis tikai Hansen un nevis WDPA pārklājums.',
+    description:
+      'Meža ainavu integritātes indekss (FLII) apvieno meža platību, kartētus cilvēka spiedienus, izsecinātus saistītos spiedienus un savienojamības zudumu nepārtrauktā 0–10 vērtējumā pasaules mežiem (Grantham et al., Nature Communications 2020). Aptuveni 40% atlikušo mežu iekrita autoru ilustratīvajā augstas integritātes joslā; tikai daļa no tās ir aizsargājamās teritorijās.',
+    howToRead:
+      'Augsts vērtējums nozīmē mazāku modelētu antropogēnu modificēšanu ainavas mērogā — ne „neskarts uz visiem laikiem” un ne oglekļa blīvumu. Zems vērtējums joprojām var būt zem vainaga. FLII nav IFL un nav vainagu zuduma datums. Zema / vidēja / augsta griezumi ir ilustrācija; produkts ir nepārtrauktais vērtējums.',
+    caveats:
+      'FLII ir modelēts indekss ap 300 m, aptuveni 2019. gada sākumā, ne 2025. gada ikgadējs atjauninājums oriģinālajā rakstā. Tas neaizstāj lauka ekoloģiju un nav pirmiedzīvotāju zemju karte. Vietējie svari var atšķirties no globālā noklusējuma. Medības un pameža degradāciju daļēji izsecina no pieejamības.',
+    licenseNote:
+      'Raksts ir Nature Communications. Rastri ir Forest Landscape Integrity lejupielādes lapā. Priekšskats ir Fix Planet integritātes joslu shēma, ne autoru rastrs. Citē Grantham et al. 2020.',
+    imageAlt:
+      'Pasaules karte ar meža integritātes skalu: tumši zaļi attāli masīvi, zelta vidus un oranžs stipri pārveidots mežs — ne vainagu zuduma datums',
+  },
 };
