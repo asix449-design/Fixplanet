@@ -1,11 +1,12 @@
 ---
+import { isOceanAtlas } from '../data/ocean-atlas';
 import { isOceanPanel } from '../data/oceans';
 import { localizePath, resolveLocale } from '../i18n';
 import OceansView from '../views/OceansView.astro';
 
 const locale = resolveLocale(Astro.currentLocale);
 const panelParam = Astro.url.searchParams.get('panel');
-if (isOceanPanel(panelParam ?? undefined)) {
+if (isOceanPanel(panelParam ?? undefined) || isOceanAtlas(panelParam ?? undefined)) {
   return Astro.redirect(localizePath(`/oceans/${panelParam}`, locale));
 }
 ---

@@ -183,5 +183,41 @@
     "license": "Public domain (NASA)",
     "kind": "hosted-original",
     "note": "2008 compilation of coastal hypoxic sites. Not this year's Gulf of Mexico forecast."
+  },
+  {
+    "file": "ocean-acidification.svg",
+    "title": "Surface-ocean pH schematic",
+    "source": "Fix Planet overview after NOAA Ocean Acidification Program / PMEL Carbon Program",
+    "url": "https://oceanacidification.noaa.gov/",
+    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Cooler, lower-pH basins distinguished from higher-pH water. Not an SST plate and not NOAA marketing art."
+  },
+  {
+    "file": "dissolved-oxygen.svg",
+    "title": "Open-ocean dissolved oxygen / OMZ schematic",
+    "source": "Fix Planet overview after NOAA NCEI World Ocean Atlas 2023",
+    "url": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
+    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Low-oxygen tongues in the eastern tropical Pacific, eastern Atlantic, and Arabian Sea. Not the coastal dead-zone pins on Pollution."
+  },
+  {
+    "file": "sea-ice-extent.svg",
+    "title": "Arctic and Antarctic sea-ice extent schematic",
+    "source": "Fix Planet overview after NSIDC Sea Ice Index / Sea Ice Today",
+    "url": "https://nsidc.org/sea-ice-today",
+    "license": "Fix Planet schematic",
+    "kind": "schematic",
+    "note": "Ice edge against a dashed 1981–2010 median outline. Not SST and not land ice. Not an NSIDC plate."
+  },
+  {
+    "file": "sea-level.svg",
+    "title": "Global mean sea-level time-series schematic",
+    "source": "Fix Planet overview after NASA Sea Level Change Portal",
+    "url": "https://sealevel.nasa.gov/",
+    "license": "Fix Planet schematic",
+    "kind": "schematic",
+    "note": "Altimetry-era rise since about 1993, without a plotted rate. Not the NASA series, not climate.nasa.gov/vital-signs/sea-level (404), and not AVISO."
   }
 ]

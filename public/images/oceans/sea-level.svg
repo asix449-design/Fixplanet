@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img">
+  <title>Sea level — Fix Planet schematic</title>
+  <desc>Global mean sea-level time-series schematic for the satellite altimetry era since about 1993. A Fix Planet overview, not the NASA series and not one tide-gauge day.</desc>
+  <rect width="1600" height="800" fill="#07141c"/>
+  <line x1="150" y1="220" x2="1460" y2="220" stroke="#e7eef2" stroke-opacity="0.16"/><line x1="150" y1="320" x2="1460" y2="320" stroke="#e7eef2" stroke-opacity="0.16"/><line x1="150" y1="420" x2="1460" y2="420" stroke="#e7eef2" stroke-opacity="0.16"/><line x1="150" y1="520" x2="1460" y2="520" stroke="#e7eef2" stroke-opacity="0.16"/>
+  <line x1="150" y1="120" x2="150" y2="600" stroke="#e7eef2" stroke-opacity="0.7" stroke-width="2"/>
+  <line x1="150" y1="600" x2="1460" y2="600" stroke="#e7eef2" stroke-opacity="0.7" stroke-width="2"/>
+  <polyline points="170.0,560.0 185.8,558.4 201.5,556.4 217.2,554.3 233.0,552.0 248.8,549.7 264.5,547.3 280.2,544.8 296.0,542.3 311.8,539.7 327.5,537.1 343.2,534.5 359.0,531.8 374.8,529.1 390.5,526.3 406.2,523.5 422.0,520.7 437.8,517.9 453.5,515.0 469.2,512.1 485.0,509.2 500.8,506.3 516.5,503.4 532.2,500.4 548.0,497.4 563.8,494.4 579.5,491.4 595.2,488.3 611.0,485.2 626.8,482.2 642.5,479.1 658.2,476.0 674.0,472.8 689.8,469.7 705.5,466.5 721.2,463.4 737.0,460.2 752.8,457.0 768.5,453.8 784.2,450.6 800.0,447.3 815.8,444.1 831.5,440.8 847.2,437.6 863.0,434.3 878.8,431.0 894.5,427.7 910.2,424.4 926.0,421.1 941.8,417.7 957.5,414.4 973.2,411.0 989.0,407.7 1004.8,404.3 1020.5,400.9 1036.2,397.5 1052.0,394.1 1067.8,390.7 1083.5,387.3 1099.2,383.9 1115.0,380.4 1130.8,377.0 1146.5,373.5 1162.2,370.1 1178.0,366.6 1193.8,363.1 1209.5,359.6 1225.2,356.1 1241.0,352.6 1256.8,349.1 1272.5,345.6 1288.2,342.1 1304.0,338.5 1319.8,335.0 1335.5,331.4 1351.2,327.9 1367.0,324.3 1382.8,320.8 1398.5,317.2 1414.2,313.6 1430.0,310.0" fill="none" stroke="#c8f54a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="150" y="660" fill="#e7eef2" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28">1993</text>
+</svg>
