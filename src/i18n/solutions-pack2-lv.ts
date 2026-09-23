@@ -189,4 +189,32 @@ export const pack2Lv: Record<string, SolutionCopy> = {
     fix: 'Fermentācijas iekārtas fermās: kūtsmēsli → motors/koģenerācija. Jau lietots (EPA AgSTAR un līdzīgi). Nejauc ar atkritumu kartīti par pārtiku vai poligona gāzi.',
     imageAlt: 'Divi balti biogāzes kupoli Great Thorns Farm stacijā pie Svaffemas, skats pāri zālei',
   },
+  'reclaimed-asphalt-pavement': {
+    problemTitle: 'Jauna šķembas un bitumens katram ceļa remontam',
+    fixTitle: 'Regenerētais asfaltbetons (RAP)',
+    problem: 'Jauna šķembas un bitumens katram ceļa remontam',
+    fix: 'Nosfrezētais asfalts atgriežas karstajā maisījumā — gan akmens, gan saistviela. Parasta prakse pie laba maisījuma (FHWA). Tas nav betona šķembas šajā plauktā.',
+    imageAlt: 'Sarkana Wirtgen W 1500 frēze uz Berlīnes ielas',
+  },
+  'glass-cullet': {
+    problemTitle: 'Krāsnis ar jaunu izejvielu, kamēr pudeles nonāk poligonā',
+    fixTitle: 'Taras stikla šķemba (cullet)',
+    problem: 'Krāsnis ar jaunu izejvielu, kamēr pudeles nonāk poligonā',
+    fix: 'Sašķirotais pudeles stikls atkal kausējas jaunās pudelēs — slēgts cikls, ne stikla vate. Nejauc ar PET uz atkritumu plaukta.',
+    imageAlt: 'Dažādu krāsu taras stikla šķembas uz balta fona blakus eiro monētai',
+  },
+  'mineral-wool-insulation': {
+    problemTitle: 'Siltums izplūst caur plānām sienām un jumtiem',
+    fixTitle: 'Minerālvate',
+    problem: 'Siltums izplūst caur plānām sienām un jumtiem',
+    fix: 'Akmens un stikla vate — ierasta Eiropas renovācijā un jaunbūvēs. Nejauc ar kaņepju kartīti šajā plauktā.',
+    imageAlt: 'Minerālvates plātnes un ruļļi baltā, dzeltenā, brūnā un zaļā krāsā',
+  },
+  'recycled-copper': {
+    problemTitle: 'Jauna rūda tīkliem un motoriem, kamēr lūžņi iet garām krāsnij',
+    fixTitle: 'Pārstrādātais varš',
+    problem: 'Jauna rūda tīkliem un motoriem, kamēr lūžņi iet garām krāsnij',
+    fix: 'Ražošanas un nolietotais lūžņi atkal kausējas — krietni mazāk enerģijas nekā no rūdas. Nejauc ar alumīniju un tēraudu šajā plauktā.',
+    imageAlt: 'Attīrīta vara stieples kamols uz zemes Santa Clara del Cobre',
+  },
 };

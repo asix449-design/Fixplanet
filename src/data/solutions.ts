@@ -254,12 +254,20 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'mass-timber',
     tag: 'materials',
-    sources: [cite('WoodWorks — mass timber', 'https://www.woodworks.org/')],
+    sources: [
+      cite(
+        'USDA Forest Service — Forest Products Laboratory',
+        'https://research.fs.usda.gov/fpl',
+      ),
+    ],
   },
   {
     slug: 'green-steel',
     tag: 'materials',
-    sources: [cite('HYBRIT', 'https://www.hybritdevelopment.se/')],
+    sources: [
+      cite('IEA — Iron and Steel', 'https://www.iea.org/energy-system/industry/iron-and-steel'),
+      cite('HYBRIT', 'https://www.hybritdevelopment.se/'),
+    ],
   },
   {
     slug: 'river-interceptors',
@@ -580,8 +588,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Ireland EPA — national criteria for recycled aggregates',
-        'https://www.epa.ie/news-releases/news-releases-2023/epa-publishes-national-criteria-for-recycled-aggregates-.php',
+        'European Commission — Construction and demolition waste',
+        'https://environment.ec.europa.eu/topics/waste-and-recycling/construction-and-demolition-waste_en',
       ),
     ],
   },
@@ -590,8 +598,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Journal of the American Ceramic Society — geopolymers and alkali-activated materials',
-        'https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.19828',
+        'FHWA — TechBrief: Geopolymer Concrete',
+        'https://www.fhwa.dot.gov/pavement/concrete/pubs/hif10014/hif10014.pdf',
       ),
     ],
   },
@@ -610,8 +618,62 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Heidelberg Materials — DREAM CCUS',
-        'https://www.heidelbergmaterials.com/en/sustainability/we-decarbonize-the-construction-industry/ccus/dream',
+        'Global CCS Institute — Brevik CCS',
+        'https://www.globalccsinstitute.com/brevikccsfacility/',
+      ),
+      cite(
+        'IEA — CCUS',
+        'https://www.iea.org/energy-system/renewables-and-low-emissions/carbon-capture-utilisation-and-storage',
+      ),
+    ],
+  },
+  {
+    slug: 'reclaimed-asphalt-pavement',
+    tag: 'materials',
+    sources: [
+      cite('FHWA — Pavement Recycling', 'https://www.fhwa.dot.gov/pavement/recycling/'),
+      cite(
+        'FHWA — Resource Responsible Use of RAP (HIF-22-003)',
+        'https://www.fhwa.dot.gov/pavement/asphalt/pubs/hif22003.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'glass-cullet',
+    tag: 'materials',
+    sources: [
+      cite(
+        'U.S. EPA — Glass: Material-Specific Data',
+        'https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/glass-material-specific-data',
+      ),
+      cite(
+        'Close the Glass Loop — Performance of Packaging Glass Recycling in Europe (2024 report)',
+        'https://closetheglassloop.eu/performance-of-packaging-glass-recycling-in-europe-2024-report/',
+      ),
+    ],
+  },
+  {
+    slug: 'mineral-wool-insulation',
+    tag: 'materials',
+    sources: [
+      cite('EURIMA — Benefits of mineral wool', 'https://www.eurima.org/benefits-of-mineral-wool'),
+      cite(
+        'IEA — Building envelopes',
+        'https://www.iea.org/energy-system/buildings/building-envelopes',
+      ),
+    ],
+  },
+  {
+    slug: 'recycled-copper',
+    tag: 'materials',
+    sources: [
+      cite(
+        'World Resources Institute — Recycled copper and the energy transition',
+        'https://www.wri.org/insights/pivotal-role-recycled-copper-energy-transition',
+      ),
+      cite(
+        'USGS — Recycling statistics and information',
+        'https://www.usgs.gov/centers/national-minerals-information-center/recycling-statistics-and-information',
       ),
     ],
   },

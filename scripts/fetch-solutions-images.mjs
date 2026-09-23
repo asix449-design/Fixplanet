@@ -319,6 +319,26 @@ const candidates = {
   'sand-dams': [
     'Sand dam illustration 3.jpg',
   ],
+  'reclaimed-asphalt-pavement': [
+    'Wirtgen W 1500 (2009).jpg',
+    'BOMAG MP 1300 Asphalt Milling Machine.jpg',
+    'SAKAI ER551F asphalt milling machine, in Tokyo.jpg',
+  ],
+  'glass-cullet': [
+    'Glas aus Aufbereitungsanlage bunt - glass cullet various (Alter Fritz).JPG',
+    'Glas aus Aufbereitungsanlage weiß - glass cullet white (Alter Fritz).JPG',
+    'Glas aus Aufbereitungsanlage grün - glass cullet green (Alter Fritz).JPG',
+  ],
+  'mineral-wool-insulation': [
+    'Arrangement Mineralwolle.jpeg',
+    'Moscow, Lefortovsky Val 24, pile of mineral wool mats (31136798850).jpg',
+    'Rockwool close up 1.jpg',
+  ],
+  'recycled-copper': [
+    'PunzoWorkshop07.JPG',
+    'Residuo electronico colombia cobre reciclaje metales 2.jpg',
+    'Coil from washing machine.JPG',
+  ],
 };
 
 async function commonsInfo(title) {
