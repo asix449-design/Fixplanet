@@ -180,6 +180,7 @@ export type TodayShelfCopy = {
   layersLabel: string;
   layerCamps: string;
   layerDetections: string;
+  layerIdp: string;
   campsTitle: string;
   campsLead: string;
   campsHonesty: string;
@@ -196,6 +197,27 @@ export type TodayShelfCopy = {
   detectionsOpen: string;
   detectionsNationalities: string;
   noHeadcount: string;
+  idpTitle: string;
+  idpLead: string;
+  idpDefinition: string;
+  idpHonesty: string;
+  idpNoChoropleth: string;
+  idpMillion: string;
+  idpMovementsUnit: string;
+  idpStockUnit: string;
+  idpConflictLabel: string;
+  idpDisasterLabel: string;
+  idpCountriesLabel: string;
+  idpBothLabel: string;
+  idpCrisesTitle: string;
+  idpCards: Record<
+    | 'idp-stock-2025'
+    | 'idp-conflict-displacements-2025'
+    | 'idp-disaster-displacements-2025'
+    | 'idp-movements-2025-overview',
+    { tag: string; title: string; hook: string; detail: string[] }
+  >;
+  idpCrisisCopy: Record<string, { place: string; note: string }>;
   regions: Record<TodayRegionId, TodayRegionCopy>;
   originNames: Record<TodayRegionId, string>;
   campCopy: Record<string, { name: string; country: string; note: string }>;

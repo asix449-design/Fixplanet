@@ -92,6 +92,59 @@ export type TodayDataset = {
     topNationalities2025: string[];
     routes: TodayDetectionRoute[];
   };
+  internalDisplacement: TodayInternalDisplacement;
+};
+
+export type TodayIdpCardId =
+  | 'idp-stock-2025'
+  | 'idp-conflict-displacements-2025'
+  | 'idp-disaster-displacements-2025'
+  | 'idp-movements-2025-overview';
+
+export type TodayIdpCrisis = {
+  id: string;
+  kind: 'stock' | 'disaster-movements';
+  place: string;
+  figure: number;
+  approx: boolean;
+  asOf?: string;
+  shareOfDisaster?: number;
+};
+
+export type TodayInternalDisplacement = {
+  committed: string;
+  agency: string;
+  report: string;
+  published: string;
+  coversYear: number;
+  sourceSummaryUrl: string;
+  sourceSummaryLabel: string;
+  sourcePdfUrl: string;
+  sourcePdfLabel: string;
+  sourceHubUrl: string;
+  sourceHubLabel: string;
+  stockEnd2025: {
+    figure: number;
+    asOf: string;
+    conflictStock: number;
+    disasterStock: number;
+    countries: number;
+    conflictCountries: number;
+    disasterCountries: number;
+  };
+  movements2025: {
+    total: number;
+    conflict: number;
+    disaster: number;
+    conflictCountries: number;
+    disasterCountries: number;
+    bothCountries: number;
+    changeVsPrev: number;
+    conflictChangeVsPrev: number;
+    disasterChangeVsPrev: number;
+    disasterVsDecadeAvg: number;
+  };
+  crises: TodayIdpCrisis[];
 };
 
 export type TodayCamp = {
@@ -198,6 +251,18 @@ export const todaySources: PrimarySource[] = [
   cite(
     'Frontex — irregular border crossings, 2025 (detections, not unique people)',
     'https://www.frontex.europa.eu/media-centre/news/news-release/frontex-irregular-border-crossings-down-26-in-2025-europe-must-stay-prepared-lyKpVb',
+  ),
+  cite(
+    'IDMC — Summary, GRID 2026 (12 May 2026)',
+    'https://www.internal-displacement.org/publications/summary-global-report-on-internal-displacement-2026/',
+  ),
+  cite(
+    'IDMC — GRID 2026 full PDF',
+    'https://api.internal-displacement.org/sites/default/files/publications/documents/IDMC-GRID-2026-Global-Report-on-Internal-Displacement.pdf',
+  ),
+  cite(
+    'IDMC displacement data hub',
+    'https://www.internal-displacement.org/database/displacement-data/',
   ),
 ];
 

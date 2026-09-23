@@ -35,6 +35,7 @@ export const lvToday: TodayShelfCopy = {
   layersLabel: 'Kartes slāņi',
   layerCamps: 'Bēgļu nometnes',
   layerDetections: 'ES robežu konstatējumi',
+  layerIdp: 'Iekšējā pārvietošana',
   campsTitle: 'Lielākās UNHCR nometnes un apmetnes',
   campsLead:
     'Nosauktas UNHCR vietas ar publicētu skaitu un datumu. Tie ir cilvēki, kas jau dzīvo nometnē vai apmetnē — ne 2023. gada neto migrācija un ne «šogad iebraukušie».',
@@ -57,6 +58,67 @@ export const lvToday: TodayShelfCopy = {
   detectionsOpen: 'Atvērt ES maršruta piezīmi',
   detectionsNationalities: '2025. gadā visbiežāk konstatētās valstspiederības: Bangladeša, Ēģipte, Afganistāna — tas nav apgalvojums par to, kas «visbiežāk iebrauc» pasaulē.',
   noHeadcount: 'Bez izdomāta skaitļa',
+  idpTitle: 'Iekšējā pārvietošana (IDMC)',
+  idpLead:
+    'Vairāk nekā 62,2 milj. iekšējo pārvietošanu 2025. gadā (−6% pret 2024): 32,3 milj. no konflikta un vardarbības (rekords) un 29,9 milj. no katastrofām. Konflikts pirmo reizi apsteidza katastrofas; 42 valstīs bija abi.',
+  idpDefinition:
+    'IDMC skaita cilvēkus, kas spiesti pamest mājas konflikta, vardarbības vai katastrofu dēļ un nav šķērsojuši starptautisku robežu. Tas nav UN DESA starptautiskais migrant stock, ne Frontex konstatējumi un ne UNHCR nometņu headcount. Kustības gada laikā (jaunas vai atkārtotas) nav tas pats, kas krājums gada beigās; viens cilvēks var pārvietoties vairāk nekā vienreiz.',
+  idpHonesty:
+    'GRID 2026 aptver 2025. kalendāra gadu (ziņojums publicēts 2026. gada 12. maijā). Krājums ir cilvēki, kas gada beigās joprojām dzīvo iekšējā pārvietošanā. Gada skaitļi ir saskaitītas kustības, ne unikāli cilvēki. 32,3 milj. nedrīkst parakstīt kā 32,3 milj. unikālu cilvēku.',
+  idpNoChoropleth:
+    'Nosauktās krīzes zemāk ir piezīmes ar avotu, ne pasaules karte, kas krāsota pēc skaita. IDMC pārklājums ir nepilnīgs; lapa nezīmē globālu koroplētu un ne «izrāviena bultiņu» slāni no šīm summām.',
+  idpMillion: 'milj.',
+  idpMovementsUnit: 'kustības, 2025',
+  idpStockUnit: 'cilvēki, 2025. gada beigas',
+  idpConflictLabel: 'Konflikts un vardarbība',
+  idpDisasterLabel: 'Katastrofas',
+  idpCountriesLabel: 'valstis un teritorijas',
+  idpBothLabel: 'valstis ar abiem cēloņiem',
+  idpCrisesTitle: 'Nosauktas krīzes — piezīmes ar avotu, ne karte',
+  idpCards: {
+    'idp-stock-2025': {
+      tag: 'Krājums · 2025. gada beigas',
+      title: 'Cilvēki iekšējā pārvietošanā',
+      hook: 'Vairāk nekā 82,2 milj. cilvēku dzīvoja iekšējā pārvietošanā 104 valstīs un teritorijās 2025. gada beigās — pirmais vieglais kritums desmitgadē, skaitļi joprojām pie rekorda.',
+      detail: [
+        'IDMC krājums: cilvēki, kas spiesti pamest mājas konflikta, vardarbības vai katastrofu dēļ un nav šķērsojuši starptautisku robežu. Vairāk nekā 68,6 milj. — konflikts/vardarbība; gandrīz 13,6 milj. — katastrofas (uz 2025. gada 31. decembri). Tas nav starptautiskais migrant stock un ne UNHCR nometņu headcount.',
+      ],
+    },
+    'idp-conflict-displacements-2025': {
+      tag: 'Kustības · 2025',
+      title: 'Pārvietošanas konflikta un vardarbības dēļ',
+      hook: 'Konflikts un vardarbība izraisīja rekordlielas 32,3 milj. iekšējās pārvietošanas 48 valstīs 2025. gadā — aptuveni 60% virs 2024 un pirmo reizi vairāk nekā katastrofas.',
+      detail: [
+        'Tās ir kustības gada laikā (jaunas vai atkārtotas), ne unikāli cilvēki. Irāna un DRC — aptuveni trešdaļa globālā iznākuma katrai. Starptautiskie bruņotie konflikti — aptuveni 46%. Sudānā gada beigās iekšējā pārvietošanā palika aptuveni 9,1 milj. cilvēku.',
+      ],
+    },
+    'idp-disaster-displacements-2025': {
+      tag: 'Kustības · 2025',
+      title: 'Pārvietošanas katastrofu dēļ',
+      hook: 'Katastrofas izraisīja 29,9 milj. iekšējās pārvietošanas 140 valstīs 2025. gadā — 35% zem 2024. gada maksimuma, joprojām aptuveni 13% virs desmitgades vidējā.',
+      detail: [
+        'Vētras ~17,9 milj.; plūdi <7,9 milj.; ugunsgrēki >694 tūkst.; ģeofizika ~2,5 milj. Filipīnās — aptuveni 10,7 milj. katastrofu pārvietošanu (~36% globālā disaster iznākuma). Tā nav «klimata migrantu» karte un ne starptautiskais net migration.',
+      ],
+    },
+    'idp-movements-2025-overview': {
+      tag: 'Pārskats · 2025',
+      title: 'Iekšējās pārvietošanas 2025. gadā',
+      hook: 'Vairāk nekā 62,2 milj. iekšējo pārvietošanu 2025. gadā (−6% pret 2024): 32,3 milj. no konflikta un vardarbības (rekords) un 29,9 milj. no katastrofām. Konflikts pirmo reizi apsteidza katastrofas; 42 valstīs bija abi.',
+      detail: [
+        'Slāņa ievada flīze. Vienreiz: kustības ≠ krājums ≠ pārrobežu migrācija. A–C detalizācija. Nedrīkst zīmēt globālu «izrāviena bultiņu» no šīm summām.',
+      ],
+    },
+  },
+  idpCrisisCopy: {
+    'sudan-stock': {
+      place: 'Sudāna',
+      note: 'Lielākā krīze pēc cilvēkiem iekšējā pārvietošanā 2025. gada beigās. Aptuveni 9,1 milj. cilvēku joprojām dzīvoja iekšējā pārvietošanā Sudānā. Tas ir gada beigu krājums, ne 2025. gada kustības un ne UNHCR nometņu headcount.',
+    },
+    'philippines-disaster-2025': {
+      place: 'Filipīnas',
+      note: 'Aptuveni 10,7 milj. katastrofu pārvietošanu 2025. gadā — ap 36% globālā disaster iznākuma GRID kartes kopsavilkumā. Galvenokārt laikapstākļu apdraudējumu kustība un evakuāciju uzskaite, ne «klimata migrantu» pasaules karte.',
+    },
+  },
   regions: {
     africa: {
       name: 'Āfrika',

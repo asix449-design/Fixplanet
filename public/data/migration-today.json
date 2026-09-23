@@ -8,7 +8,8 @@
     "Country corridors are migrant-stock corridors from IOM World Migration Report 2026 citing UN DESA IMS 2024. They accumulate years of movement. Arrows on the map are schematic only — no invented volumes on the lines.",
     "Intra-regional migration often dominates. Africa→Europe is a real corridor, not the main global story.",
     "Camp markers are UNHCR operational figures for named sites, with the as-of date on each row. UNRWA Palestine-refugee camps are not mixed into that ranking.",
-    "Border-pressure figures are Frontex detections of irregular crossings at EU external borders — not unique people, not a global breakthrough series."
+    "Border-pressure figures are Frontex detections of irregular crossings at EU external borders — not unique people, not a global breakthrough series.",
+    "Internal-displacement figures are IDMC GRID 2026 (calendar 2025; report published 12 May 2026). Year-end stock is people still displaced inside their country. Annual displacements are movements (new or repeated), not unique people. Not UN DESA migrant stock, not a UNHCR camp headcount, not Frontex detections. No global choropleth — coverage is incomplete."
   ],
   "netMigration": {
     "year": 2023,
@@ -490,6 +491,58 @@
         "left": 53.2,
         "top": 31.8,
         "note": "Detections fell 78% in 2024 and fell again in 2025. Frontex did not restate a 2025 headcount we can cite without inventing one."
+      }
+    ]
+  },
+  "internalDisplacement": {
+    "committed": "2026-09-20",
+    "agency": "IDMC",
+    "report": "Global Report on Internal Displacement 2026",
+    "published": "2026-05-12",
+    "coversYear": 2025,
+    "sourceSummaryUrl": "https://www.internal-displacement.org/publications/summary-global-report-on-internal-displacement-2026/",
+    "sourceSummaryLabel": "IDMC — Summary, GRID 2026 (12 May 2026)",
+    "sourcePdfUrl": "https://api.internal-displacement.org/sites/default/files/publications/documents/IDMC-GRID-2026-Global-Report-on-Internal-Displacement.pdf",
+    "sourcePdfLabel": "IDMC — GRID 2026 full PDF",
+    "sourceHubUrl": "https://www.internal-displacement.org/database/displacement-data/",
+    "sourceHubLabel": "IDMC displacement data hub",
+    "stockEnd2025": {
+      "figure": 82200000,
+      "asOf": "2025-12-31",
+      "conflictStock": 68600000,
+      "disasterStock": 13600000,
+      "countries": 104,
+      "conflictCountries": 54,
+      "disasterCountries": 82
+    },
+    "movements2025": {
+      "total": 62200000,
+      "conflict": 32300000,
+      "disaster": 29900000,
+      "conflictCountries": 48,
+      "disasterCountries": 140,
+      "bothCountries": 42,
+      "changeVsPrev": -0.06,
+      "conflictChangeVsPrev": 0.6,
+      "disasterChangeVsPrev": -0.35,
+      "disasterVsDecadeAvg": 0.13
+    },
+    "crises": [
+      {
+        "id": "sudan-stock",
+        "kind": "stock",
+        "place": "Sudan",
+        "figure": 9100000,
+        "approx": true,
+        "asOf": "2025-12-31"
+      },
+      {
+        "id": "philippines-disaster-2025",
+        "kind": "disaster-movements",
+        "place": "Philippines",
+        "figure": 10700000,
+        "approx": true,
+        "shareOfDisaster": 0.36
       }
     ]
   }

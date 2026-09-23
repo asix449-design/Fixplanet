@@ -11,6 +11,7 @@ import {
   todayRegionIds,
   todaySources,
   todayTabletLayout,
+  type TodayIdpCardId,
   type TodayRegionId,
 } from '../data/migration-today';
 import { getMigrationPage, resolveLocale } from '../i18n';
@@ -183,6 +184,84 @@ const routePayload = Object.fromEntries(
   ]),
 );
 
+const idp = todayDataset.internalDisplacement;
+const idpCardOrder: TodayIdpCardId[] = [
+  'idp-movements-2025-overview',
+  'idp-stock-2025',
+  'idp-conflict-displacements-2025',
+  'idp-disaster-displacements-2025',
+];
+
+function millionFigure(value: number): string {
+  return formatStockCount(value, numberLocale);
+}
+
+const idpFigures: Record<
+  TodayIdpCardId,
+  { figure: string; unit: string; splits: { label: string; figure: string }[] }
+> = {
+  'idp-movements-2025-overview': {
+    figure: millionFigure(idp.movements2025.total),
+    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    splits: [
+      { label: ui.idpConflictLabel, figure: `${millionFigure(idp.movements2025.conflict)} ${ui.idpMillion}` },
+      { label: ui.idpDisasterLabel, figure: `${millionFigure(idp.movements2025.disaster)} ${ui.idpMillion}` },
+      {
+        label: ui.idpBothLabel,
+        figure: idp.movements2025.bothCountries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+  'idp-stock-2025': {
+    figure: millionFigure(idp.stockEnd2025.figure),
+    unit: `${ui.idpMillion} · ${ui.idpStockUnit}`,
+    splits: [
+      { label: ui.idpConflictLabel, figure: `${millionFigure(idp.stockEnd2025.conflictStock)} ${ui.idpMillion}` },
+      { label: ui.idpDisasterLabel, figure: `${millionFigure(idp.stockEnd2025.disasterStock)} ${ui.idpMillion}` },
+      {
+        label: ui.idpCountriesLabel,
+        figure: idp.stockEnd2025.countries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+  'idp-conflict-displacements-2025': {
+    figure: millionFigure(idp.movements2025.conflict),
+    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    splits: [
+      {
+        label: ui.idpCountriesLabel,
+        figure: idp.movements2025.conflictCountries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+  'idp-disaster-displacements-2025': {
+    figure: millionFigure(idp.movements2025.disaster),
+    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    splits: [
+      {
+        label: ui.idpCountriesLabel,
+        figure: idp.movements2025.disasterCountries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+};
+
+const idpCards = idpCardOrder.map((id) => ({
+  id,
+  ...ui.idpCards[id],
+  ...idpFigures[id],
+}));
+
+const idpCrises = idp.crises.map((crisis) => {
+  const copy = ui.idpCrisisCopy[crisis.id];
+  return {
+    id: crisis.id,
+    place: copy?.place ?? crisis.place,
+    note: copy?.note ?? '',
+    figure: `${crisis.approx ? `${ui.approx} ` : ''}${millionFigure(crisis.figure)} ${ui.idpMillion}`,
+  };
+});
+
 const interArrows = todayDataset.corridors
   .filter((row) => row.kind === 'inter-regional' && row.fromRegion !== row.toRegion)
   .map((row) => {
@@ -211,6 +290,9 @@ const interArrows = todayDataset.corridors
     </button>
     <button type="button" class="today-mig-layer" data-today-layer="detections" aria-pressed="false">
       {ui.layerDetections}
+    </button>
+    <button type="button" class="today-mig-layer" data-today-layer="idp" aria-pressed="false">
+      {ui.layerIdp}
     </button>
   </div>
 
@@ -417,6 +499,54 @@ const interArrows = todayDataset.corridors
     <p class="wildlife-sources">{ui.detectionsNationalities}</p>
   </section>
 
+  <section class="today-mig-layer-panel" data-today-idp-list hidden>
+    <h3>{ui.idpTitle}</h3>
+    <p>{ui.idpLead}</p>
+    <p class="today-mig-stock-tag">{ui.idpDefinition}</p>
+    <ul class="today-mig-idp-grid">
+      {
+        idpCards.map((card) => (
+          <li class="today-mig-idp-card" id={card.id}>
+            <p class="today-mig-idp-tag">{card.tag}</p>
+            <h4>{card.title}</h4>
+            <p class="today-mig-idp-figure">
+              <strong>{card.figure}</strong>
+              <span>{card.unit}</span>
+            </p>
+            <p class="today-mig-idp-hook">{card.hook}</p>
+            <dl class="today-mig-idp-splits">
+              {card.splits.map((row) => (
+                <div>
+                  <dt>{row.label}</dt>
+                  <dd>{row.figure}</dd>
+                </div>
+              ))}
+            </dl>
+            {card.detail.map((para) => (
+              <p class="today-mig-idp-detail">{para}</p>
+            ))}
+          </li>
+        ))
+      }
+    </ul>
+    <h4 class="today-mig-idp-crises-title">{ui.idpCrisesTitle}</h4>
+    <ul class="today-mig-layer-list">
+      {
+        idpCrises.map((crisis) => (
+          <li>
+            <p>
+              <strong>{crisis.place}</strong>
+              <strong>{crisis.figure}</strong>
+            </p>
+            <p>{crisis.note}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="oceans-source-note">{ui.idpHonesty}</p>
+    <p class="oceans-source-note">{ui.idpNoChoropleth}</p>
+  </section>
+
   <p class="oceans-source-note today-mig-intra">{ui.intraCaption}</p>
   <CitedSourceList heading={page.sourcesLabel} sources={todaySources} />
 </section>
@@ -461,6 +591,7 @@ const interArrows = todayDataset.corridors
     const routesLayer = root.querySelector('[data-today-routes]');
     const campsList = root.querySelector('[data-today-camps-list]');
     const detectionsList = root.querySelector('[data-today-detections-list]');
+    const idpList = root.querySelector('[data-today-idp-list]');
     const layerButtons = root.querySelectorAll('[data-today-layer]');
     const campButtons = root.querySelectorAll('[data-today-camp]');
     const routeButtons = root.querySelectorAll('[data-today-route]');
@@ -633,6 +764,9 @@ const interArrows = todayDataset.corridors
       if (name === 'detections') {
         if (routesLayer) routesLayer.hidden = !on;
         if (detectionsList) detectionsList.hidden = !on;
+      }
+      if (name === 'idp') {
+        if (idpList) idpList.hidden = !on;
       }
     }
 

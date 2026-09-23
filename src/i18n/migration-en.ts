@@ -10,7 +10,7 @@ export const page: MigrationPage = {
   title: 'Migration',
   hubLead: [
     'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and, on top of those older natural rhythms, a warmer climate.',
-    'This page opens with today’s international map — net migration and migrant stock, labeled as such. Below it, two sections. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
+    'This page opens with today’s international map — net migration and migrant stock, labeled as such. A separate layer covers people displaced inside their own country (IDMC). Below it, two sections. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -48,7 +48,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Toggle camps (UNHCR) and EU border detections (Frontex) as separate layers. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
+      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Toggle camps (UNHCR), EU border detections (Frontex), and internal displacement (IDMC) as separate layers. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
     humans:
       'Maps first: a timeline of major documented human-migration events, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Each card names when, where, and why — climate, ice, farming, war, trade, empire, slavery — only where scholarship supports it. This is not a map of everyone every fifty years. Attila and the Migration Period stay here; living movements live on Great migrations.',
     'great-migrations':
