@@ -536,5 +536,41 @@
     "license": "Map geometry public domain; overlay is Fix Planet",
     "kind": "fix-planet-schematic",
     "note": "Riverine corridors and coastal inundation patches. Not WRI’s official Floods graphic and not a second baseline water-stress choropleth."
+  },
+  {
+    "file": "intact-forest-landscapes.jpg",
+    "title": "Fix Planet overview of intact forest landscape blocks",
+    "source": "Fix Planet schematic on BlankMap-World, themed from the IFL Mapping Team (Potapov et al.)",
+    "url": "https://intactforests.org/data.ifl.html",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Bright blocks mark large wilderness-scale forest regions (Amazon, Congo, boreal, New Guinea). Not IFL polygons and not Hansen annual loss pixels."
+  },
+  {
+    "file": "mangrove-extent.jpg",
+    "title": "Fix Planet overview of mangrove coasts",
+    "source": "Fix Planet schematic on BlankMap-World, themed from Global Mangrove Watch",
+    "url": "https://www.globalmangrovewatch.org/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Teal fringe marks known tropical mangrove coasts. Not a GMW raster and not inland tree-cover loss."
+  },
+  {
+    "file": "primary-humid-tropical-forests.jpg",
+    "title": "Fix Planet overview of the primary humid tropical belt",
+    "source": "Fix Planet schematic on BlankMap-World, themed from UMD GLAD primary humid tropical forests (2001)",
+    "url": "https://glad.umd.edu/dataset/primary-forest-humid-tropics",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Green belt marks humid-tropical primary forest regions on the 2001 baseline. Not the 30 m GeoTIFF, not boreal forest, and not annual Hansen loss."
+  },
+  {
+    "file": "forest-landscape-integrity.jpg",
+    "title": "Fix Planet overview of forest landscape integrity bands",
+    "source": "Fix Planet schematic on BlankMap-World, themed from Grantham et al. Forest Landscape Integrity Index",
+    "url": "https://www.nature.com/articles/s41467-020-19493-3",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Deep green, gold, and orange mark high, mid, and low integrity themes. Not the FLII raster and not a canopy-loss date."
   }
 ]

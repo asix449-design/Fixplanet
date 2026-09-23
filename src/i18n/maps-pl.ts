@@ -507,4 +507,60 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa świata ze średnioniebieskimi korytarzami powodzi rzecznymi i jasnym cyjanem plam przybrzeżnych — zagrożenie powodziowe, nie bazowy stres wodny',
   },
+  'intact-forest-landscapes': {
+    title: 'Nienaruszone krajobrazy leśne (IFL)',
+    hook: 'Poligony Potapov / IFL Mapping Team (aktualizacje 2000–2025) — integralność dzikiej mozaiki leśnej, nie roczne piksele Hansena i nie granice parków.',
+    description:
+      'Nienaruszone krajobrazy leśne (IFL) to duże mozaiki lasu i powiązanych ekosystemów bez wykrytej przemysłowej infrastruktury. Zespół IFL (UMD GLAD i partnerzy) publikuje zasięgi globalne na lata 2000, 2013, 2016, 2020 i 2025 na CC BY 4.0. Metoda: Potapov et al., Science Advances 2017; aktualny zasięg to warstwa 2025. To nie FAO land use i nie WDPA.',
+    howToRead:
+      'Kolorowa łatka to poligon IFL w roku mapy — nie plantacja i nie granica parku. Ubytek między latami to fragmentacja albo przemysłowe wejście w dawny IFL; może różnić się od sum utraty koron Hansena.',
+    caveats:
+      'IFL to klasa dzikiej mozaiki o minimalnej wielkości (około 500 km² bez wykrytej infrastruktury przemysłowej), nie cały las pierwotny i nie zapas węgla. Las może być pierwotny i nadal nie być IFL, jeśli drogi albo zręby go tną. Granice przesuwają się między latami aktualizacji. Drobne albo podokapowe użytkowanie satelita może pominąć.',
+    licenseNote:
+      'GeoPackage są na intactforests.org. Opcjonalna przeglądarka to mapa IFL Greenpeace. Archiwum 2000–2025 jest na Zenodo. Otwarty tekst metody to Potapov et al. 2017 w PMC. Podgląd to schemat Fix Planet dużych dzikich bloków, nie poligony IFL.',
+    imageAlt:
+      'Ciemna mapa świata z jasnozielonymi blokami dzikiego lasu w Amazonii, Kotlinie Konga, borealnej Kanadzie i Syberii oraz na Nowej Gwinei — nienaruszone krajobrazy, nie roczne piksele utraty koron',
+  },
+  'mangrove-extent': {
+    title: 'Zasięg namorzyn',
+    hook: 'Global Mangrove Watch — roczny zasięg namorzyn (seria v4.1 do 2025) — las pływowy, nie śródlądowy Hansen i nie parki WDPA.',
+    description:
+      'Global Mangrove Watch (GMW) mapuje szacowany zasięg lasów namorzynowych i jego zmianę. Wersja 4.1 to szereg roczny od 1985 do 2025 (JAXA Kyoto & Carbon, Aberystwyth University i partnerzy). Platforma pokazuje zasięg, zmianę netto i alerty; rastry i wektory są na Zenodo i w JAXA. To nie rafy i nie obszary chronione.',
+    howToRead:
+      'Piksel namorzynu to las pływowy klasyfikatora GMW w danym roku — nie rafa koralowa, nie mapa solnisk i nie status ochrony. Porównuj lata w GMW; nie mieszaj z sumami Hansena.',
+    caveats:
+      'Mapy namorzyn słabiej radzą sobie na mulistych krawędziach, stawach akwakultury i rzadkiej frędzli. Zmiana roczna to nie to samo co prawne wylesienie. Węgiel i gatunki to osobne produkty tej samej platformy. Dokładność zależy od kraju i zmętnienia. Nasadzenia odtworzeniowe mogą spóźniać się w klasyfikatorze. Alerty to przesiew, potem lokalny obraz.',
+    licenseNote:
+      'Warstw GMW używają krajowe panele i projekty wybrzeża. Stos v4.1 do GIS opisuje JAXA. Podgląd to schemat Fix Planet znanych wybrzeży namorzynowych, nie raster GMW. Mapa jest na globalmangrovewatch.org.',
+    imageAlt:
+      'Mapa świata z turkusową frędzlą lasu pływowego wzdłuż tropikalnych wybrzeży — zasięg namorzyn, nie śródlądowa utrata koron',
+  },
+  'primary-humid-tropical-forests': {
+    title: 'Pierwotne wilgotne lasy tropikalne',
+    hook: 'Mapa UMD GLAD 30 m — zasięg pierwotnych wilgotnych lasów tropikalnych na 2001 (Turubanova et al.) — baza pierwotności, nie roczne straty Hansena i nie reguły wielkości IFL.',
+    description:
+      'Warstwa bazowa 2001. UMD GLAD zmapował pierwotny wilgotny las tropikalny w 30 m z Landsata: las, który nie został całkowicie wycięty w zapisie użytym do tej bazy. Kontynentalne GeoTIFF-y i kolekcja Earth Engine są publiczne. Metoda: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c). Tylko wilgotne tropiki.',
+    howToRead:
+      'Piksel 1 to pierwotny wilgotny las tropikalny na mapie 2001; 0 to inny ląd albo woda. Straty po 2001 zwykle czyta się z Hansen / Global Forest Watch. Sama warstwa 2001 nie jest mapą zasięgu 2025.',
+    caveats:
+      'Tylko wilgotne tropiki — nie pierwotny las borealny i nie las suchy. Las wtórny po wycięciu jest poza klasą pierwotną 2001. Błędy klasyfikacji bywają na krawędziach i w złożonej mozaice. Plantacje założone przed logiką bazy mogą mylić lokalny odczyt — czytaj noty GLAD.',
+    licenseNote:
+      'Warstwy są na stronie zbioru GLAD i w katalogu Google Earth Engine. Podgląd to schemat Fix Planet pasa wilgotnych tropików, nie GeoTIFF 30 m. Cytuj Turubanova et al. 2018 i UMD GLAD.',
+    imageAlt:
+      'Mapa świata z nasyconym zielonym pasem pierwotnego wilgotnego lasu tropikalnego w Amazonii, Kongu i Azji Południowo-Wschodniej na bazie 2001 — nie las borealny i nie roczna utrata koron',
+  },
+  'forest-landscape-integrity': {
+    title: 'Wskaźnik integralności krajobrazów leśnych (FLII)',
+    hook: 'Ciągła ocena integralności lasów Grantham et al. (~2019) — antropogeniczna modyfikacja i łączność, nie sam Hansen i nie pokrycie WDPA.',
+    description:
+      'Wskaźnik integralności krajobrazów leśnych (FLII) składa zasięg lasu, zmapowane presje człowieka, wnioskowane presje towarzyszące i utratę łączności w ciągłą ocenę 0–10 dla lasów świata (Grantham et al., Nature Communications 2020). Około 40% pozostałych lasów wpadło w ilustracyjne pasmo wysokiej integralności; tylko część tego pasma leży w obszarach chronionych.',
+    howToRead:
+      'Wysoki wynik to niższa modelowana antropogeniczna modyfikacja w skali krajobrazu — nie „nietknięte na zawsze” i nie gęstość węgla. Niski wynik może nadal być pod koroną. FLII to nie IFL i nie data utraty koron. Cięcia niska / średnia / wysoka są ilustracją; produktem jest wynik ciągły.',
+    caveats:
+      'FLII to indeks modelowy około 300 m, circa początek 2019, nie roczna aktualizacja 2025 w oryginalnym artykule. To nie zastępstwo ekologii terenowej ani mapa ziem rdzennych. Lokalne wagi mogą różnić się od globalnego domyślnego. Polowania i degradację podszytu częściowo wnioskuje się z dostępności.',
+    licenseNote:
+      'Artykuł jest w Nature Communications. Rastry są na stronie pobierania Forest Landscape Integrity. Podgląd to schemat Fix Planet pasm integralności, nie raster autorów. Cytuj Grantham et al. 2020.',
+    imageAlt:
+      'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las — nie data utraty koron',
+  },
 };

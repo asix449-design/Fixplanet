@@ -884,6 +884,62 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'World map with medium-blue riverine flood corridors and bright cyan coastal inundation patches — flood hazard, not baseline water stress',
   },
+  'intact-forest-landscapes': {
+    title: 'Intact Forest Landscapes',
+    hook: 'Potapov / IFL Mapping Team polygons for wilderness-scale forest mosaics (2000–2025 updates) — intactness, not Hansen annual loss pixels and not park boundaries.',
+    description:
+      'Intact Forest Landscapes (IFL) map seamless mosaics of forest and associated natural ecosystems with no remotely detected industrial human activity, large enough to sustain wide-ranging species. The IFL Mapping Team (UMD GLAD and partners) publishes global extents for 2000, 2013, 2016, 2020, and 2025 under CC BY 4.0. Cite Potapov et al., Science Advances 2017, for the method; use the 2025 layer for current extent.',
+    howToRead:
+      'A coloured patch is an IFL polygon at the map year — not FAO forest land use, not a plantation, and not a protected-area boundary. Loss between years is fragmentation or industrial intrusion into a former IFL, which can differ from Hansen tree-cover loss area totals.',
+    caveats:
+      'IFL is a minimum-size wilderness class (at least about 500 km² mosaic with no detected industrial infrastructure), not all primary forest and not a carbon stock. A forest can be primary yet fail IFL if roads or clearings fragment it. Boundaries move when new disturbance appears between update years. Detection depends on satellite evidence of infrastructure and clearing. Small-scale or under-canopy uses can be missed.',
+    licenseNote:
+      'Download GeoPackages from intactforests.org. An optional web viewer is the Greenpeace IFL map. Zenodo holds the 2000–2025 archive. The open method text is Potapov et al. 2017 on PMC. The preview is a Fix Planet schematic of large wilderness blocks, not the IFL polygons. Cite the IFL Mapping Team and Potapov et al.',
+    imageAlt:
+      'Dark world map with bright green wilderness blocks over the Amazon, the Congo basin, boreal Canada and Siberia, and New Guinea — intact forest landscapes, not annual canopy-loss pixels',
+  },
+  'mangrove-extent': {
+    title: 'Mangrove extent',
+    hook: 'Global Mangrove Watch annual extent (v4.1 series through 2025) — tidal forest shoreline, not inland Hansen loss and not WDPA parks.',
+    description:
+      'Global Mangrove Watch (GMW) maps estimated global mangrove forest extent and change. Version 4.1 provides an annual time series from 1985 through 2025 (JAXA Kyoto & Carbon, Aberystwyth University, and partners). The public platform shows habitat extent, net change, and alerts. Zenodo and JAXA host downloadable rasters and vectors.',
+    howToRead:
+      'A mangrove pixel is tidal forest in the GMW classifier for that year — not a coral reef, not a salt-marsh class map, and not a protected-area designation. Compare years for shoreline loss or gain. Do not mix GMW extent with Hansen tree-cover totals into one deforestation rate.',
+    caveats:
+      'Mangrove maps struggle at muddy edges, aquaculture ponds, and sparse fringes. Annual change is not the same as legal deforestation. Carbon and species layers are separate products on the same platform. Accuracy varies by country and turbidity. Restoration plantings may lag in the classifier. Treat alerts as screening, then check local imagery.',
+    licenseNote:
+      'National dashboards and coast projects use GMW layers. JAXA documents the v4.1 stack for GIS download. The preview is a Fix Planet schematic of known mangrove coasts, not a GMW raster. Open globalmangrovewatch.org for the map platform.',
+    imageAlt:
+      'World map with a teal fringe of tidal forest along tropical coasts — mangrove extent, not inland tree-cover loss',
+  },
+  'primary-humid-tropical-forests': {
+    title: 'Primary humid tropical forests',
+    hook: 'UMD GLAD 30 m map of primary humid tropical forest extent for 2001 (Turubanova et al.) — a primary baseline, not annual Hansen loss and not IFL wilderness size rules.',
+    description:
+      'UMD GLAD mapped primary humid tropical forest extent for year 2001 at 30 m from Landsat. Primary here means forest that had not been completely cleared in the Landsat record used for that baseline. Continental GeoTIFFs and an Earth Engine image collection are public. Method paper: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c).',
+    howToRead:
+      'Pixel value 1 is primary humid tropical forest in the 2001 map; 0 is other land or water. To discuss primary loss since 2001, combine this baseline with a tree-cover loss product. The 2001 layer alone is not a 2025 extent map.',
+    caveats:
+      'Humid tropics only — not boreal primary forest and not dry forest. Secondary forest after clearing is outside the 2001 primary class. Classification errors exist at edges and in complex mosaics. Plantations established before the baseline logic can confuse local readings. Read the GLAD notes.',
+    licenseNote:
+      'Open the GLAD dataset page and the Google Earth Engine catalog for the public layers. The preview is a Fix Planet schematic of the humid-tropical primary belt, not the 30 m GeoTIFF. Cite Turubanova et al. 2018 and UMD GLAD.',
+    imageAlt:
+      'World map with a saturated green belt of primary humid tropical forest across the Amazon, the Congo basin, and Southeast Asia on a 2001 baseline — not boreal forest and not annual canopy loss',
+  },
+  'forest-landscape-integrity': {
+    title: 'Forest Landscape Integrity Index',
+    hook: 'Grantham et al. continuous integrity score for the world’s forests (~2019) — anthropogenic modification and connectivity, not Hansen loss alone and not WDPA coverage.',
+    description:
+      'The Forest Landscape Integrity Index (FLII) combines forest extent, mapped human pressures, inferred associated pressures, and connectivity loss into a continuous 0–10 integrity score for forests worldwide (Grantham et al., Nature Communications 2020). Roughly 40% of remaining forest fell in the authors’ illustrative high-integrity band; only part of that sits inside protected areas.',
+    howToRead:
+      'High scores mean lower modelled anthropogenic modification at landscape scale — not untouched forever and not carbon density. Low scores can still be tree-covered. FLII is not Intact Forest Landscapes: a forest can score mid-integrity without qualifying as an IFL. Category cuts (low, medium, high) are illustrative; the continuous score is the product.',
+    caveats:
+      'FLII is a modelled index at about 300 m, circa the start of 2019, not a 2025 annual update in the original paper. It is not a substitute for field ecology or Indigenous land maps. Local weighting may differ from the global default. Hunting and understorey degradation are partly inferred from accessibility, not counted animal by animal.',
+    licenseNote:
+      'Read the open Nature Communications article and download rasters from the Forest Landscape Integrity download page. The preview is a Fix Planet schematic of integrity bands, not the authors’ raster. Cite Grantham et al. 2020.',
+    imageAlt:
+      'World map with a continuous forest-integrity scale: deep green remote blocks, gold mid-scores, and orange heavily modified standing forest — not a canopy-loss date',
+  },
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
@@ -927,6 +983,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   );
   if (current.category === 'conflicts') {
     // List every Conflicts sibling. Do not fill the strip with Ethnic or Religion cards.
+    return same;
+  }
+  if (current.category === 'forests') {
+    // Six Forests cards would otherwise be sliced to three. List every
+    // Forests sibling so each detail page reaches the rest of the shelf.
     return same;
   }
   if (current.category === 'political') {

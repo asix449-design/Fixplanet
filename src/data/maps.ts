@@ -479,6 +479,110 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'photo',
   },
   {
+    slug: 'intact-forest-landscapes',
+    category: 'forests',
+    year: '2000–2025',
+    sourceShort: 'IFL',
+    sourceOrg: 'Intact Forest Landscapes Mapping Team (UMD GLAD and partners)',
+    sourceUrl: 'https://intactforests.org/data.ifl.html',
+    openMapUrl: 'https://intactforests.org/data.ifl.html',
+    preview: 'intact-forest-landscapes.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Intact Forest Landscapes — data download (IFL 2000–2025)',
+        url: 'https://intactforests.org/data.ifl.html',
+      },
+      {
+        label: 'Zenodo — Intact Forest Landscapes Extent and Change, 2000–2025',
+        url: 'https://zenodo.org/records/18011599',
+      },
+      {
+        label: 'Greenpeace — World Intact Forest Landscapes map viewer',
+        url: 'https://maps.greenpeace.org/maps/gpint/world-ifl/',
+      },
+      {
+        label: 'Potapov et al. 2017 (PMC full text)',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5604104/',
+      },
+    ],
+  },
+  {
+    slug: 'mangrove-extent',
+    category: 'forests',
+    year: '1985–2025',
+    sourceShort: 'GMW',
+    sourceOrg: 'Global Mangrove Watch (JAXA, Aberystwyth University, and partners)',
+    sourceUrl: 'https://www.globalmangrovewatch.org/',
+    openMapUrl: 'https://www.globalmangrovewatch.org/',
+    preview: 'mangrove-extent.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Global Mangrove Watch — map platform',
+        url: 'https://www.globalmangrovewatch.org/',
+      },
+      {
+        label: 'JAXA EORC — Global Mangrove Watch dataset (v4.1)',
+        url: 'https://www.eorc.jaxa.jp/ALOS/en/dataset/gmw_e.htm',
+      },
+      {
+        label: 'Zenodo — Global Mangrove Watch timeseries v4.1.12',
+        url: 'https://zenodo.org/records/21346457',
+      },
+      {
+        label: 'Mangrove Alliance — GMW 4.1 launch note',
+        url: 'https://www.mangrovealliance.org/news/global-mangrove-watch-4-launch',
+      },
+    ],
+  },
+  {
+    slug: 'primary-humid-tropical-forests',
+    category: 'forests',
+    year: '2001',
+    sourceShort: 'UMD GLAD',
+    sourceOrg: 'University of Maryland GLAD — Primary Humid Tropical Forests',
+    sourceUrl: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
+    openMapUrl: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
+    preview: 'primary-humid-tropical-forests.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'GLAD UMD — Primary Humid Tropical Forests dataset',
+        url: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
+      },
+      {
+        label: 'Google Earth Engine catalog — UMD/GLAD Primary Humid Tropical Forests v1',
+        url: 'https://developers.google.com/earth-engine/datasets/catalog/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1',
+      },
+    ],
+  },
+  {
+    slug: 'forest-landscape-integrity',
+    category: 'forests',
+    year: '~2019',
+    sourceShort: 'FLII',
+    sourceOrg: 'Grantham et al., Nature Communications 2020 — Forest Landscape Integrity Index',
+    sourceUrl: 'https://www.nature.com/articles/s41467-020-19493-3',
+    openMapUrl: 'https://www.nature.com/articles/s41467-020-19493-3',
+    preview: 'forest-landscape-integrity.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Grantham et al. 2020 — Nature Communications (FLII paper)',
+        url: 'https://www.nature.com/articles/s41467-020-19493-3',
+      },
+      {
+        label: 'Forest Landscape Integrity — download data',
+        url: 'https://www.forestlandscapeintegrity.com/download-data',
+      },
+      {
+        label: 'Nature Communications PDF',
+        url: 'https://www.nature.com/articles/s41467-020-19493-3.pdf',
+      },
+    ],
+  },
+  {
     slug: 'water-stress',
     category: 'water',
     year: '2023',
