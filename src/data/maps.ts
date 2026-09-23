@@ -71,6 +71,8 @@ export type MapCopy = {
   imageAlt: string;
   /** When set, the detail page uses What / Why on this shelf headings. */
   whyOnShelf?: string;
+  /** Locale override of the grid meta line. English stays on MapMeta.cardMeta. */
+  cardMeta?: string;
 };
 
 export type MapEntry = MapMeta & MapCopy;
@@ -345,6 +347,146 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://ourworldindata.org/co2-emissions',
     preview: 'co2-emissions.jpg',
     previewKind: 'photo',
+  },
+  {
+    slug: 'consumption-co2-emissions',
+    category: 'pollution',
+    year: 'trade-adjusted',
+    sourceShort: 'GCP / OWID',
+    sourceOrg: 'Global Carbon Project; Our World in Data',
+    sourceUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
+    openMapUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
+    preview: 'consumption-co2-emissions.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'Global Carbon Project · OWID · trade-adjusted',
+    sources: [
+      {
+        label: 'Global Carbon Project / Our World in Data — consumption-based CO₂',
+        url: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
+      },
+      {
+        label: 'OWID — Consumption-based CO₂ emissions',
+        url: 'https://ourworldindata.org/grapher/consumption-co2-emissions',
+      },
+      {
+        label: 'OWID — explainer: consumption-based CO₂',
+        url: 'https://ourworldindata.org/consumption-based-co2',
+      },
+      {
+        label: 'Global Carbon Project hub',
+        url: 'https://www.globalcarbonproject.org/',
+      },
+    ],
+  },
+  {
+    slug: 'nitrogen-dioxide-no2',
+    category: 'pollution',
+    year: 'multi-day average',
+    sourceShort: 'Sentinel-5P',
+    sourceOrg: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
+    sourceUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
+    openMapUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
+    preview: 'nitrogen-dioxide-no2.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    sources: [
+      {
+        label: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
+        url: 'https://maps.s5p-pal.com/no2-tropospheric/',
+      },
+      {
+        label: 'S5P-PAL — Total Column NO₂',
+        url: 'https://maps.s5p-pal.com/no2/',
+      },
+      {
+        label: 'ESA — Sentinel-5P mission',
+        url: 'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P',
+      },
+      {
+        label: 'Copernicus Atmosphere Monitoring Service',
+        url: 'https://atmosphere.copernicus.eu/',
+      },
+      {
+        label: 'NASA Air Quality (context)',
+        url: 'https://airquality.gsfc.nasa.gov/',
+      },
+    ],
+  },
+  {
+    slug: 'mismanaged-plastic-waste',
+    category: 'pollution',
+    year: '2021',
+    sourceShort: 'OWID · Meijer 2021',
+    sourceOrg: 'Our World in Data, after Meijer et al. 2021',
+    sourceUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
+    openMapUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
+    preview: 'mismanaged-plastic-waste.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'OWID · Meijer et al. 2021',
+    sources: [
+      {
+        label: 'Our World in Data (after Meijer et al. 2021)',
+        url: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
+      },
+      {
+        label: 'OWID — Share of plastic waste that is mismanaged',
+        url: 'https://ourworldindata.org/grapher/share-of-plastic-waste-that-is-mismanaged',
+      },
+      {
+        label: 'OWID — Plastic waste emitted to the ocean',
+        url: 'https://ourworldindata.org/grapher/plastic-waste-emitted-to-the-ocean',
+      },
+      {
+        label: 'OWID — Plastic pollution topic',
+        url: 'https://ourworldindata.org/plastic-pollution',
+      },
+      {
+        label: 'Meijer et al. 2021 — PMC full text',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7880581/',
+      },
+    ],
+  },
+  {
+    slug: 'methane-emissions',
+    category: 'pollution',
+    year: 'EDGAR 2025',
+    sourceShort: 'EDGAR / OWID',
+    sourceOrg: 'EDGAR (JRC); Our World in Data',
+    sourceUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
+    openMapUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
+    preview: 'methane-emissions.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'EDGAR JRC · OWID · CH₄',
+    sources: [
+      {
+        label: 'EDGAR (JRC) / Our World in Data — methane emissions',
+        url: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
+      },
+      {
+        label: 'OWID — Methane emissions',
+        url: 'https://ourworldindata.org/grapher/methane-emissions',
+      },
+      {
+        label: 'EDGAR — emissions data and maps',
+        url: 'https://edgar.jrc.ec.europa.eu/emissions_data_and_maps',
+      },
+      {
+        label: 'EDGAR_2025_GHG release',
+        url: 'https://edgar.jrc.ec.europa.eu/dataset_ghg2025',
+      },
+      {
+        label: 'EDGAR hub',
+        url: 'https://edgar.jrc.ec.europa.eu/',
+      },
+      {
+        label: 'UNEP IMEO — Eye on Methane',
+        url: 'https://methanedata.unep.org/',
+      },
+      {
+        label: 'IEA — Global Methane Tracker 2025',
+        url: 'https://www.iea.org/reports/global-methane-tracker-2025',
+      },
+    ],
   },
   {
     slug: 'oil-gas-reserves',

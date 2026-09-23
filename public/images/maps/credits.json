@@ -178,6 +178,42 @@
     "note": "Cropped OWID grapher map export of production-based CO₂."
   },
   {
+    "file": "consumption-co2-emissions.jpg",
+    "title": "Fix Planet overview of consumption-based CO₂",
+    "source": "Fix Planet schematic on BlankMap-World. Global Carbon Project / Our World in Data artwork is not copied.",
+    "url": "https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map",
+    "license": "Map geometry public domain; overlay is Fix Planet. GCP / OWID data are CC BY with attribution.",
+    "kind": "fix-planet-schematic",
+    "note": "Slate blue marks a higher consumption-footprint orientation. Unlisted countries stay unclassed. Not GCP figures, not an OWID export, and not territorial CO₂."
+  },
+  {
+    "file": "nitrogen-dioxide-no2.jpg",
+    "title": "Fix Planet overview of tropospheric NO₂",
+    "source": "Fix Planet schematic on BlankMap-World. ESA and S5P-PAL marketing stills are not copied.",
+    "url": "https://maps.s5p-pal.com/no2-tropospheric/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Amber columns mark well-known combustion and shipping corridors. Not TROPOMI retrievals and not a PM2.5 choropleth."
+  },
+  {
+    "file": "mismanaged-plastic-waste.jpg",
+    "title": "Fix Planet overview of mismanaged plastic waste",
+    "source": "Fix Planet schematic on BlankMap-World. Our World in Data artwork is not copied.",
+    "url": "https://ourworldindata.org/grapher/plastic-waste-mismanaged",
+    "license": "Map geometry public domain; overlay is Fix Planet. OWID republishes Meijer et al. 2021 under CC BY.",
+    "kind": "fix-planet-schematic",
+    "note": "Amber marks a larger mismanaged-mass orientation. Unlisted countries stay unclassed. Not Meijer tonnages and not a beach photograph. Paper text is on PMC."
+  },
+  {
+    "file": "methane-emissions.jpg",
+    "title": "Fix Planet overview of methane emissions",
+    "source": "Fix Planet schematic on BlankMap-World. EDGAR and Our World in Data artwork is not copied.",
+    "url": "https://ourworldindata.org/grapher/methane-emissions?tab=map",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Ochre marks a larger methane-inventory orientation. Unlisted countries stay unclassed. Not EDGAR grid values, not a flare photograph, and not a CO₂ map."
+  },
+  {
     "file": "oil-gas-reserves.jpg",
     "title": "EIA assessed world shale-gas basins",
     "source": "U.S. Energy Information Administration",
