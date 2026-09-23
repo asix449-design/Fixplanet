@@ -925,6 +925,114 @@ def forest_landscape_integrity() -> None:
     )
 
 
+def consumption_co2() -> None:
+    """Higher consumption-footprint orientation. Not GCP figures and not territorial CO₂."""
+    higher = "us ca au gb de fr jp kr nl be se no dk fi ch at ie ae sa qa kw".split()
+    conflicts_schematic(
+        {"#1f4e79": higher},
+        ocean="#e7eef4",
+        land="#d5d8dc",
+        ant="#f4f7f8",
+        stroke="#8d939c",
+        dest="consumption-co2-emissions.jpg",
+        swatches=[
+            ((31, 78, 121), "Higher footprint"),
+            ((213, 216, 220), "Not classed here"),
+        ],
+        credit="Fix Planet overview · consumption-based CO₂ · not GCP figures · not territorial CO₂",
+    )
+
+
+def nitrogen_dioxide() -> None:
+    """Tropospheric NO₂ column hotspots — cities, industry, shipping. Not PM2.5."""
+    css = """
+    .oceanxx { fill: #1c2836 !important; stroke: none !important; }
+    .landxx { fill: #3e4a46 !important; stroke: #2a3330 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #d5ddd8 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    column = "#f0b429"
+    hotspots = [
+        (520, 390, 28, 14, column, 0.9),  # US Northeast
+        (300, 430, 18, 10, column, 0.75),  # California
+        (1438, 265, 26, 12, column, 0.9),  # Benelux / Ruhr
+        (1488, 300, 16, 10, column, 0.8),  # Po Valley
+        (1600, 230, 14, 10, column, 0.65),  # Moscow
+        (1860, 480, 36, 14, column, 0.88),  # Indo-Gangetic
+        (2080, 420, 40, 16, column, 0.92),  # Eastern China
+        (2140, 400, 16, 10, column, 0.8),  # Korea
+        (2185, 410, 14, 10, column, 0.75),  # Japan
+        (1660, 450, 22, 12, column, 0.8),  # Gulf industry
+        (1488, 860, 14, 10, column, 0.7),  # Highveld
+        (1405, 250, 22, 6, "#ffe08a", 0.55),  # North Sea shipping
+        (1520, 370, 36, 6, "#ffe08a", 0.45),  # Mediterranean shipping
+        (2050, 540, 28, 6, "#ffe08a", 0.5),  # South China Sea shipping
+    ]
+    overlay = ellipses(hotspots).replace(
+        "</g>",
+        legend_box(
+            [
+                ("#f0b429", "combustion column"),
+                ("#ffe08a", "shipping corridor"),
+            ],
+            x=72,
+            y=1218,
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "nitrogen-dioxide-no2.jpg",
+        "Fix Planet overview · tropospheric NO₂ · not PM2.5 · Sentinel-5P / TROPOMI",
+    )
+
+
+def mismanaged_plastic() -> None:
+    """Larger mismanaged-mass orientation. Not Meijer tonnages and not a beach photo."""
+    larger = "cn in id ph vn bd pk ng eg th br".split()
+    conflicts_schematic(
+        {"#b85c38": larger},
+        ocean="#d5e2ea",
+        land="#efe6d6",
+        ant="#f7f4ee",
+        stroke="#8a7d6a",
+        dest="mismanaged-plastic-waste.jpg",
+        swatches=[
+            ((184, 92, 56), "Larger mismanaged mass"),
+            ((239, 230, 214), "Not classed here"),
+        ],
+        credit="Fix Planet overview · mismanaged plastic · not Meijer tonnages · OWID",
+    )
+
+
+def methane_emissions() -> None:
+    """Larger methane-inventory orientation. Not EDGAR grid values and not CO₂."""
+    larger = "cn us ru in br id".split()
+    conflicts_schematic(
+        {"#8a5a12": larger},
+        ocean="#d7e0d8",
+        land="#e8e4d4",
+        ant="#f4f1ea",
+        stroke="#8a8474",
+        dest="methane-emissions.jpg",
+        swatches=[
+            ((138, 90, 18), "Larger CH₄ inventory"),
+            ((232, 228, 212), "Not classed here"),
+        ],
+        credit="Fix Planet overview · methane inventory · not EDGAR grid values · not CO₂",
+    )
+
+
+def pollution_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    consumption_co2()
+    nitrogen_dioxide()
+    mismanaged_plastic()
+    methane_emissions()
+
+
 def forests_cards() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     intact_forest_landscapes()
@@ -944,5 +1052,7 @@ if __name__ == "__main__":
         water_cards()
     elif sys.argv[1:] == ["forests"]:
         forests_cards()
+    elif sys.argv[1:] == ["pollution"]:
+        pollution_cards()
     else:
         main()

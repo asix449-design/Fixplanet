@@ -192,6 +192,66 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Our World in Data horoplēts par teritoriālo CO₂: Ķīna un ASV tumšākajā sarkanajā, citas lielās ekonomikas vidēji sarkanā',
   },
+  'consumption-co2-emissions': {
+    title: 'Patēriņa CO₂ emisijas',
+    cardMeta: 'Global Carbon Project · OWID · ar tirdzniecības korekciju',
+    hook: 'Oglekļa dioksīds, attiecināts uz preču un pakalpojumu patēriņa valsti — teritoriālais uzskaitījums ar tirdzniecības korekciju, ne otra ražošanas karte.',
+    description:
+      'Patēriņa (trade-adjusted) CO₂ emisijas no GCP / OWID. Cits objekts nekā dzīvā teritoriālo emisiju karte.',
+    whyOnShelf: 'Cits objekts nekā dzīvā teritoriālo emisiju karte. Ne otra ražošanas karte.',
+    howToRead:
+      'Augsts rezultāts ≠ morāls verdikts un ≠ PM2.5. Atvērt OWID karti; priekšskatījums — Fix Planet pārskats.',
+    caveats: 'Augsts rezultāts ≠ morāls verdikts un ≠ PM2.5. Tā nav ražošanas karte un nav PM2.5 karte.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne OWID oficiālā grafika. Atribūcija: Global Carbon Project / Our World in Data (CC BY). Atvērt OWID karti.',
+    imageAlt:
+      'Fix Planet pārskats: patēriņa CO₂ emisiju horoplēts, ne teritoriālā ražošanas karte un ne OWID eksports',
+  },
+  'nitrogen-dioxide-no2': {
+    title: 'Slāpekļa dioksīds (NO₂)',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    hook: 'Satelīta slāpekļa dioksīda kolonna virs pilsētām, rūpniecības un kuģniecības — degšanas piesārņojums, ne tas pats, kas PM2.5 masa.',
+    description:
+      'NO₂ no TROPOMI / Sentinel-5P S5P-PAL portālā (slīdošais vidējais). Cits objekts nekā dzīvā PM2.5 karte.',
+    whyOnShelf: 'Cits objekts nekā dzīvā PM2.5 karte. Degšanas piesārņojums, ne daļiņu masa.',
+    howToRead:
+      'Mākoņi slēpj virsmu; spilgta kolonna ≠ gada limits. Atvērt tropospheric NO₂; priekšskatījums — Fix Planet pārskats.',
+    caveats: 'Mākoņi slēpj virsmu. Spilgta kolonna ≠ gada limits. Tā nav PM2.5 karte.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne ESA vai S5P-PAL mārketinga kadrs. Atribūcija: Copernicus Sentinel-5P / TROPOMI.',
+    imageAlt:
+      'Fix Planet pārskats: dzintara slāpekļa dioksīda kolonnas virs pilsētām, rūpniecības un kuģniecības — ne PM2.5 horoplēts un ne ESA kadrs',
+  },
+  'mismanaged-plastic-waste': {
+    title: 'Nekontrolēti plastmasas atkritumi',
+    cardMeta: 'OWID · Meijer et al. 2021',
+    hook: 'Plastmasa, kas nav pārstrādāta, sadedzināta vai hermētiski apglabāta — noplūdes risks upēs un piekrastē, ne pludmales atkritumu foto.',
+    description:
+      'Mismanaged plastic waste pēc OWID (Meijer et al. 2021, teksts PMC). Cits objekts nekā CO₂ un PM2.5.',
+    whyOnShelf: 'Cits objekts nekā CO₂ un PM2.5. Tie ir atkritumi, ne emisijas un ne daļiņu masa.',
+    howToRead:
+      'Liela masa bieži saistīta ar iedzīvotājiem un vāju infrastruktūru, ne ar «valsts raksturu». Atvērt OWID karti; priekšskatījums — Fix Planet pārskats.',
+    caveats:
+      'Liela masa bieži saistīta ar iedzīvotājiem un vāju infrastruktūru, ne ar «valsts raksturu». Ne pludmales atkritumu foto.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne okeāna plastmasas foto un ne OWID oficiālais kadrs. Atribūcija: Our World in Data (CC BY) pēc Meijer et al. 2021; raksta teksts ir PMC.',
+    imageAlt:
+      'Fix Planet pārskats: nekontrolētu plastmasas atkritumu horoplēts, ne pludmales foto un ne OWID eksports',
+  },
+  'methane-emissions': {
+    title: 'Metāna emisijas (CH₄)',
+    cardMeta: 'EDGAR JRC · OWID · CH₄',
+    hook: 'Valstu un režģa metāna kartes no fosilā kurināmā, lauksaimniecības un atkritumiem — cits siltumnīcefekta gāze nekā dzīvās CO₂ kartes.',
+    description: 'CH₄ pēc EDGAR / OWID (+ IMEO izmērītiem strūklām). Ne CO₂ un ne PM2.5.',
+    whyOnShelf:
+      'Ne CO₂ un ne PM2.5. Cits siltumnīcefekta gāze nekā oglekļa dioksīda kartes. Tā nav Climate TRACE kartīte Innovations plauktā.',
+    howToRead:
+      'Inventārs ≠ satelīta spraudīte. Atvērt OWID karti un EDGAR_2025_GHG; priekšskatījums — Fix Planet pārskats.',
+    caveats: 'Inventārs ≠ satelīta spraudīte. Ne teritoriālās un ne patēriņa CO₂.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne lāpas foto un ne EDGAR vai OWID oficiālais kadrs. Atribūcija: EDGAR (JRC) / Our World in Data. IMEO Eye on Methane ir izmērītas strūklas, ne inventāra aizstājējs.',
+    imageAlt: 'Fix Planet pārskats: metāna emisiju horoplēts, ne CO₂ karte un ne lāpas foto',
+  },
   'oil-gas-reserves': {
     title: 'Nafta un gāze pasaulē',
     hook: 'ASV valdības skats uz naftu un gāzi — atradnes, rezerves un plūsmas, ne biržas ekrāns.',

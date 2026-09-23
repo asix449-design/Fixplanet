@@ -193,6 +193,66 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Choropleth Our World in Data terytorialnego CO₂: Chiny i Stany Zjednoczone najciemniejszą czerwienią, inne duże gospodarki średnią',
   },
+  'consumption-co2-emissions': {
+    title: 'Emisje CO₂ według konsumpcji',
+    cardMeta: 'Global Carbon Project · OWID · z korektą handlu',
+    hook: 'Dwutlenek węgla przypisany do kraju konsumpcji dóbr i usług — inwentarz terytorialny skorygowany o handel, nie druga mapa produkcji.',
+    description:
+      'Emisje konsumpcyjne (trade-adjusted) CO₂ od GCP / OWID. Inny obiekt niż żywa mapa emisji terytorialnych.',
+    whyOnShelf: 'Inny obiekt niż żywa mapa emisji terytorialnych. Nie druga mapa produkcji.',
+    howToRead:
+      'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. Otwierać mapę OWID; podgląd — przegląd Fix Planet.',
+    caveats: 'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. To nie mapa produkcji i nie mapa PM2.5.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie oficjalna grafika OWID. Atrybucja: Global Carbon Project / Our World in Data (CC BY). Otwierać mapę OWID.',
+    imageAlt:
+      'Przegląd Fix Planet: choropleth emisji CO₂ według konsumpcji, nie mapa terytorialna i nie eksport OWID',
+  },
+  'nitrogen-dioxide-no2': {
+    title: 'Dwutlenek azotu (NO₂)',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    hook: 'Satelitarna kolumna dwutlenku azotu nad miastami, przemysłem i żeglugą — zanieczyszczenie ze spalania, nie to samo co masa PM2.5.',
+    description:
+      'NO₂ z TROPOMI / Sentinel-5P na portalu S5P-PAL (średnia ruchoma). Inny obiekt niż żywa mapa PM2.5.',
+    whyOnShelf: 'Inny obiekt niż żywa mapa PM2.5. Zanieczyszczenie ze spalania, nie masa cząstek.',
+    howToRead:
+      'Chmury zasłaniają powierzchnię; jasna kolumna ≠ roczny limit. Otwierać tropospheric NO₂; podgląd — przegląd Fix Planet.',
+    caveats: 'Chmury zasłaniają powierzchnię. Jasna kolumna ≠ roczny limit. To nie mapa PM2.5.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie kadr marketingowy ESA ani S5P-PAL. Atrybucja: Copernicus Sentinel-5P / TROPOMI.',
+    imageAlt:
+      'Przegląd Fix Planet: bursztynowe kolumny dwutlenku azotu nad miastami, przemysłem i żeglugą — nie choropleth PM2.5 i nie kadr ESA',
+  },
+  'mismanaged-plastic-waste': {
+    title: 'Niekontrolowane odpady plastikowe',
+    cardMeta: 'OWID · Meijer et al. 2021',
+    hook: 'Plastik niepoddany recyklingowi, spaleniu ani szczelnemu składowaniu — ryzyko wycieku do rzek i wybrzeży, nie zdjęcie śmieci na plaży.',
+    description:
+      'Mismanaged plastic waste według OWID (Meijer et al. 2021, tekst na PMC). Inny obiekt niż CO₂ i PM2.5.',
+    whyOnShelf: 'Inny obiekt niż CO₂ i PM2.5. To odpady, nie emisje i nie masa cząstek.',
+    howToRead:
+      'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Otwierać mapę OWID; podgląd — przegląd Fix Planet.',
+    caveats:
+      'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Nie zdjęcie śmieci na plaży.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie zdjęcie plastiku w oceanie i nie oficjalny kadr OWID. Atrybucja: Our World in Data (CC BY) według Meijer et al. 2021; tekst artykułu jest na PMC.',
+    imageAlt:
+      'Przegląd Fix Planet: choropleth niekontrolowanych odpadów plastikowych, nie zdjęcie plaży i nie eksport OWID',
+  },
+  'methane-emissions': {
+    title: 'Emisje metanu (CH₄)',
+    cardMeta: 'EDGAR JRC · OWID · CH₄',
+    hook: 'Krajowe i siatkowe mapy metanu z paliw kopalnych, rolnictwa i odpadów — inny gaz cieplarniany niż żywe mapy CO₂.',
+    description: 'CH₄ według EDGAR / OWID (+ IMEO dla zmierzonych pióropuszy). Nie CO₂ i nie PM2.5.',
+    whyOnShelf:
+      'Nie CO₂ i nie PM2.5. Inny gaz cieplarniany niż mapy dwutlenku węgla. To nie karta Climate TRACE z półki Innovations.',
+    howToRead:
+      'Inwentarz ≠ pinezka satelitarna. Otwierać mapę OWID i EDGAR_2025_GHG; podgląd — przegląd Fix Planet.',
+    caveats: 'Inwentarz ≠ pinezka satelitarna. Nie terytorialne i nie konsumpcyjne CO₂.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie zdjęcie flary i nie oficjalny kadr EDGAR ani OWID. Atrybucja: EDGAR (JRC) / Our World in Data. IMEO Eye on Methane to zmierzone pióropusze, nie zamiennik inwentarza.',
+    imageAlt: 'Przegląd Fix Planet: choropleth emisji metanu, nie mapa CO₂ i nie zdjęcie flary',
+  },
   'oil-gas-reserves': {
     title: 'Ropa i gaz na świecie',
     hook: 'Amerykański rządowy obraz ropy i gazu — złoża, rezerwy i przepływy, nie ekran giełdowy.',

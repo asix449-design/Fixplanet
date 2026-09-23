@@ -541,6 +541,70 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'Our World in Data choropleth of territorial CO₂: China and the United States in the darkest red, other large economies in medium red',
   },
+  'consumption-co2-emissions': {
+    title: 'Consumption-based CO₂ emissions',
+    hook: 'Carbon dioxide attributed to where goods and services are consumed — territorial inventories adjusted for trade, not a second production map.',
+    description:
+      'Consumption-based CO₂ (also called trade-adjusted or footprint emissions) from the Global Carbon Project, mapped by Our World in Data. Emissions from fossil fuels and industry are reassigned from the country of production to the country of final consumption when goods and services cross borders. Land-use change is usually excluded from this series.',
+    whyOnShelf:
+      'Territorial CO₂ emissions answers where the CO₂ was produced. This card answers a different question: where was the lifestyle and demand that drove those emissions? Importers can look large on this map and small on the territorial one. It is not a second production choropleth and not a smog map.',
+    howToRead:
+      'Compare totals and per-capita carefully. A high consumption total is not a moral verdict and not the same object as PM2.5. Methods and country coverage matter — open the OWID map and the Global Carbon Budget notes. This card is a doorway to the living GCP/OWID product; the preview is a Fix Planet overview after the named source.',
+    caveats:
+      'A high consumption total is not a moral verdict and not PM2.5. Land-use change is usually excluded. This is not territorial CO₂ and not a methane inventory.',
+    licenseNote:
+      'The preview is a Fix Planet overview of consumption-based (trade-adjusted) CO₂ — not Our World in Data’s marketing crop and not a second territorial-CO₂ map. Attribute Global Carbon Project / Our World in Data (CC BY). Open the OWID map for the interactive layer.',
+    imageAlt:
+      'Fix Planet overview choropleth of consumption-based CO₂: slate-blue countries in a higher-footprint orientation, other land left unclassed — not a territorial CO₂ map and not an OWID export',
+  },
+  'nitrogen-dioxide-no2': {
+    title: 'Nitrogen dioxide (NO₂)',
+    hook: 'Satellite column of nitrogen dioxide over cities, industry, and shipping — combustion pollution, not the same as PM2.5 mass.',
+    description:
+      'Tropospheric (and total-column) nitrogen dioxide measured by the TROPOMI instrument on Copernicus Sentinel-5P, shown as a multi-day moving average on the public S5P-PAL mapping portal. NO₂ is a short-lived combustion tracer from traffic, power plants, industry, shipping, and fires.',
+    whyOnShelf:
+      'PM2.5 answers how much fine particle mass a person breathes on average. NO₂ answers a different air question: where is fresh combustion nitrogen oxide pollution visible from orbit? It is not a CO₂ inventory and not a plastic-waste map.',
+    howToRead:
+      'Bright columns mark recent emissions under clear-sky sampling — clouds hide the surface. A 14-day average smooths weather noise; it is not an annual legal limit and not WHO’s PM2.5 guideline. Open the tropospheric NO₂ layer on S5P-PAL; the preview is a Fix Planet overview after the named mission.',
+    caveats:
+      'Clouds hide the surface. A bright column is not an annual legal limit and not WHO’s PM2.5 guideline. This is not a CO₂ inventory and not a plastic-waste map.',
+    licenseNote:
+      'The preview is a Fix Planet overview of tropospheric NO₂ hotspots — not an ESA or S5P-PAL marketing still. Attribute Copernicus Sentinel-5P / TROPOMI. Open the tropospheric NO₂ layer on S5P-PAL for the living map.',
+    imageAlt:
+      'Fix Planet overview of tropospheric nitrogen dioxide: amber columns over cities, industry, and shipping lanes on a muted world map — not a PM2.5 choropleth and not an ESA still',
+  },
+  'mismanaged-plastic-waste': {
+    title: 'Mismanaged plastic waste',
+    hook: 'Plastic waste not recycled, incinerated, or sealed in landfill — the leak risk to rivers and coasts, not a beach litter photo.',
+    description:
+      'Country estimates of mismanaged plastic waste compiled and mapped by Our World in Data after Meijer et al. (2021) (Science Advances; open full text on PMC). Mismanaged means plastic that is not recycled, incinerated, or kept in sealed landfill — the fraction most likely to escape into the environment. Related OWID layers show plastic emitted to the ocean and the share of waste that is mismanaged.',
+    whyOnShelf:
+      'The Pollution shelf covers waste beside air and emissions. The PM2.5 and territorial CO₂ cards do not answer where plastic waste systems fail to contain material. This card is not a count of CO₂ produced and not a count of battle deaths.',
+    howToRead:
+      'A high mismanaged mass often tracks population and weak waste infrastructure more than character. Landlocked countries can mismanage plastic without large ocean emissions. Prefer the interactive OWID map and cite Meijer et al. via PMC. The preview is a Fix Planet overview, not a stock ocean-plastic image.',
+    caveats:
+      'A high mismanaged mass often tracks population and weak waste infrastructure, not a country’s character. Landlocked countries can mismanage plastic without large ocean emissions. This is not a CO₂ inventory, not PM2.5, and not a beach-litter photograph.',
+    licenseNote:
+      'The preview is a Fix Planet overview of mismanaged plastic waste — not an ocean-gyre stock photo and not Our World in Data’s marketing crop. Attribute Our World in Data (CC BY) after Meijer et al. 2021. The open paper is on PMC. Open the OWID map for the interactive layer.',
+    imageAlt:
+      'Fix Planet overview choropleth of mismanaged plastic waste: amber countries in a larger-mass orientation, other land left unclassed — not a beach photograph and not an OWID export',
+  },
+  'methane-emissions': {
+    title: 'Methane emissions',
+    hook: 'Country and grid maps of methane from fossil fuels, agriculture, and waste — a different greenhouse gas than the CO₂ cards.',
+    description:
+      'Methane (CH₄) emission inventories from the European Commission JRC EDGAR Community GHG database (public release EDGAR_2025_GHG), with a public country map on Our World in Data. EDGAR publishes sector and 0.1° grid products. UNEP IMEO Eye on Methane adds measurement-based plume alerts as a companion, not a replacement inventory. IEA Global Methane Tracker 2025 covers the energy sector in depth.',
+    whyOnShelf:
+      'The CO₂ cards on this shelf are carbon dioxide only. Methane is a separate short-lived greenhouse gas from oil and gas, coal, livestock, rice, and landfills. This is not PM2.5 and not the Climate TRACE card on the Innovations shelf.',
+    howToRead:
+      'Inventory totals are modelled activity × emission factors — not the same object as a satellite plume pin. Sector mix matters: a livestock-heavy country and a gas-flaring country can look similar on a total map for different reasons. Open OWID’s methane map and EDGAR’s GHG 2025 release notes; use methanedata.unep.org for measured events. The preview is a Fix Planet overview after the named sources.',
+    caveats:
+      'An inventory total is not a satellite plume pin. Livestock, rice, coal, oil and gas, and landfills can add up to a similar country total for different reasons. This is not territorial or consumption-based CO₂, and not a map that shows methane only as CO₂-equivalent.',
+    licenseNote:
+      'The preview is a Fix Planet overview of methane emissions — not a flare stock photo and not an EDGAR or OWID marketing crop. Attribute EDGAR (JRC) / Our World in Data. Eye on Methane (UNEP IMEO) is the measurement companion, not a replacement inventory. Open the OWID methane map for the interactive layer.',
+    imageAlt:
+      'Fix Planet overview choropleth of methane emissions: ochre countries in a larger-inventory orientation, other land left unclassed — not a CO₂ map and not a flare photograph',
+  },
   'oil-gas-reserves': {
     title: 'Oil and gas around the world',
     hook: 'A U.S. government view of petroleum and natural-gas resources and flows — deposits, reserves, and trade.',
@@ -1008,6 +1072,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'water') {
     // Seven Water cards would otherwise be sliced to three. List every
     // Water sibling on each Water detail page.
+    return same;
+  }
+  if (current.category === 'pollution') {
+    // Six Pollution cards would otherwise be sliced to three. List every
+    // Pollution sibling so PM2.5 and territorial CO₂ reach the rest of the shelf.
     return same;
   }
   return [...same, ...rest].slice(0, limit);
