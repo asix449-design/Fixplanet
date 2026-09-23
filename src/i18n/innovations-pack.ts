@@ -256,6 +256,70 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       sourcesNote:
         'Primary: scrollprize.org (checked 14 Sep 2026). 2023 Grand Prize awarded February 2024; 2024 Grand Prize unclaimed. Not a reading of all antiquity.',
     },
+    'edna-biodiversity-monitoring': {
+      title: 'eDNA biodiversity monitoring',
+      hook: 'Environmental DNA and bioacoustics, tied into NatureMetrics’ Nature Intelligence Platform (Habitat Insights 2025; Portfolio Assessment 2025), turn water and soil samples into species lists for TNFD-style reporting — not coral gardening and not DAC.',
+      imageAlt:
+        'A biologist collects water samples for environmental DNA — the field step behind a species list, not a count of every animal in the river',
+      what: 'Environmental DNA (eDNA) methods detect species from genetic traces in water, soil, or air. NatureMetrics packages sampling, lab analysis, and a portfolio dashboard (Nature Intelligence Platform) used for nature-risk and disclosure work. Releases in 2024–2026 include autonomous aquatic sampling partnerships, Habitat Insights (geospatial habitat assessment, announced early 2025), and AI-assisted Portfolio Assessment.',
+      problem:
+        'Permits and nature reports still lean on slow, patchy field surveys while regulators and lenders ask for comparable biodiversity evidence across whole site portfolios.',
+      how: 'Field teams or autosamplers collect filtered water or soil. Labs amplify and sequence marker genes. Bioinformatics match reads to reference libraries. Geospatial layers and predictive scores sit beside the species evidence so operators can screen many sites before deep surveys.',
+      players:
+        'NatureMetrics, on commercial deployments for mining, renewables, and infrastructure clients (company public materials). Parallel public science includes the U.S. National Aquatic eDNA Strategy (2024), which pushes shared standards for aquatic invasive-species and biodiversity monitoring.',
+      risks:
+        'eDNA detects genetic traces, not abundance or animal health by itself. A positive hit is not a census. False negatives and positives, DNA carried downstream, and thin reference libraries can mislead. A commercial dashboard is not a substitute for field ecology where regulators demand it.',
+      sourcesNote:
+        'NatureMetrics Nature Intelligence Platform and the Habitat Insights launch; USGS news on the National Aquatic eDNA Strategy. Screening and evidence, not a full biodiversity survey.',
+    },
+    'marine-litter-satellite': {
+      title: 'Marine litter from space',
+      hook: 'ESA- and JRC-backed work (Nature Communications, June 2024) showed Sentinel-2 can map floating litter windrows across the Mediterranean — hotspots and seasonal pulses, not a plastic-eating enzyme plant.',
+      imageAlt:
+        'Plastic and other litter on an Atlantic shoreline — the debris class Sentinel-2 windrow maps track at sea, not a detection product from the 2024 paper',
+      what: 'A 2024 peer-reviewed proof that Copernicus Sentinel-2 imagery, searched at Mediterranean scale (about 300,000 scenes), can detect floating litter windrows as proxies for marine litter inputs and pathways. The work was led with ESA contracts and reported with EU Joint Research Centre participation.',
+      problem:
+        'Plastic and other floating litter move across whole seas, but managers still lack basin-scale maps of where dense windrows form and when land spills surge.',
+      how: 'Algorithms flag bright, elongated convergence features on 10 m optical bands. Detections are matched to hydrology and coastal runoff models. Torrential rain and coastal currents emerge as key drivers of when and where litter aggregates.',
+      players:
+        'Research and pre-operational monitoring over the Mediterranean historical archive (the paper’s analysis window is 2015–2021). The JRC public note of 14 June 2024 frames the result as a shift for policy monitoring, not a cleanup vessel.',
+      risks:
+        'Today’s sensors need dense, metre-scale aggregations (windrows). Scattered microplastics stay invisible. Cloudy scenes and look-alikes (foam, sargassum) need careful filtering. This paper is not a global operational plastic map. Dedicated litter sensors that could lower the detection floor are not yet routine operations.',
+      sourcesNote:
+        'Cózar et al., Nature Communications (2024); EU JRC news, 14 June 2024; ESA Copernicus Sentinel-2. Mediterranean windrows, not a global operational map.',
+    },
+    'encore-nature-risk': {
+      title: 'ENCORE nature-risk tool',
+      hook: 'ENCORE (Global Canopy / UNEP FI / UNEP-WCMC) — free TNFD-referenced screening of sector dependencies and impacts on nature; major knowledge-base upgrade July 2024. Not a DAC plant and not an eDNA lab.',
+      imageAlt:
+        'Aerial view of Amazon rainforest and river — the kind of living system ENCORE screens for dependencies and impacts, not a screenshot of the tool',
+      what: 'ENCORE (Exploring Natural Capital Opportunities, Risks and Exposure) is a free online tool from Global Canopy, the UNEP Finance Initiative, and UNEP-WCMC. It helps financial institutions and companies explore how production processes depend on and impact nature. TNFD and related frameworks often point to it.',
+      problem:
+        'Banks and companies adopting TNFD still need a free screening layer that links economic activities to nature dependencies and impacts before deep site surveys.',
+      how: 'Users explore links between economic activities, ecosystem services, and impact drivers in an updated knowledge base. The July 2024 upgrade (SUSTAIN project) refined materiality ratings, ecosystem detail, and value-chain links. Those data were later integrated into the Explore and Natural Capital modules.',
+      players:
+        'A public web tool. ENCORE’s public materials report tens of thousands of registered users. Institutions use it as a first pass into TNFD LEAP-style assessments.',
+      risks:
+        'ENCORE is a materiality and pathway screen, not a site survey and not a green light for a project. It does not replace spatial biodiversity data, licence conditions, or community consultation. Location-specific evidence is still required for decisions and disclosures.',
+      sourcesNote:
+        'ENCORE hub and the July 2024 upgrade note; TNFD tools catalogue. An open nature-risk screen, not a finished biodiversity account.',
+    },
+    'nasa-pace': {
+      title: 'NASA PACE — ocean ecosystem colour',
+      hook: 'NASA’s PACE satellite (launched 8 Feb 2024; public data from April 2024) uses a hyperspectral Ocean Color Instrument plus polarimeters to map phytoplankton communities, aerosols, and clouds together — not forest biomass radar (ESA Biomass) and not litter windrows.',
+      imageAlt:
+        'NASA visualization of ocean colour from the PACE Ocean Color Instrument — phytoplankton patterns, not a forest-biomass map and not a plastic inventory',
+      what: 'PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) is a NASA Earth science satellite launched 8 February 2024 from Cape Canaveral. It carries a hyperspectral Ocean Color Instrument (OCI) and two multi-angle polarimeters (HARP2 and SPEXone) so ocean biology and atmospheric particles are observed together.',
+      problem:
+        'Ocean colour satellites long saw a blur of green. Managers needed daily global maps of which phytoplankton communities are present, and how aerosols and clouds couple to that biology.',
+      how: 'OCI measures water-leaving reflectance across many narrow bands, so scientists can separate phytoplankton community types rather than bulk chlorophyll alone. The polarimeters constrain aerosol and cloud properties that also shape climate and air quality. Public science-quality data began 11 April 2024.',
+      players:
+        'NASA, in global Earth orbit, with open data distribution. Uses include harmful algal bloom tracking, fisheries-relevant ocean-health research, and climate process studies.',
+      risks:
+        'Coastal waters that are optically complex, and clouds, still challenge the retrievals. PACE improves discrimination of plankton communities. It is not a fisheries management system by itself and not a plastic inventory. Management decisions still need in-situ networks beside the satellite.',
+      sourcesNote:
+        'NASA PACE mission page, the 8 February 2024 launch release, and the NASA Science mission page. Public data from 11 April 2024. Not forest biomass radar and not a plastic inventory.',
+    },
   },
   ru: packRu,
   pl: packPl,

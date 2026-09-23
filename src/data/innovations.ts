@@ -312,6 +312,103 @@ export const innovationMeta: InnovationMeta[] = [
     ],
   },
   {
+    slug: 'edna-biodiversity-monitoring',
+    area: 'ecology',
+    status: 'pilot',
+    image: img(
+      'edna-biodiversity-monitoring.jpg',
+      'Monica Blaser, U.S. Fish and Wildlife Service, Midwest Region',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:EDNA_Water_Sampling_(36024122736).jpg',
+    ),
+    sources: [
+      cite(
+        'NatureMetrics — Nature Intelligence Platform',
+        'https://naturemetrics.com/products/nature-intelligence-platform',
+      ),
+      cite(
+        'USGS — National Aquatic eDNA Strategy',
+        'https://www.usgs.gov/news/science-snippet/a-new-strategy-help-unleash-usgs-edna-capabilities',
+      ),
+      cite(
+        'NatureMetrics — Habitat Insights launch',
+        'https://naturemetrics.com/news/naturemetrics-launches-habitat-insights',
+      ),
+    ],
+  },
+  {
+    slug: 'marine-litter-satellite',
+    area: 'ecology',
+    status: 'research',
+    image: img(
+      'marine-litter-satellite.jpg',
+      'Marek Ślusarczyk (Tupungato)',
+      'CC BY 3.0',
+      'https://commons.wikimedia.org/wiki/File:004_Beach_pollution_in_Tenerife_-_Atlantic_Ocean_beach_plastic_garbage_debris.jpg',
+    ),
+    sources: [
+      cite(
+        'Cózar et al., Nature Communications, 2024 — marine litter from space',
+        'https://www.nature.com/articles/s41467-024-48674-7',
+      ),
+      cite(
+        'EU JRC — Surveilling marine litter from space becomes reality (14 June 2024)',
+        'https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/surveilling-marine-litter-space-becomes-reality-2024-06-14_en',
+      ),
+      cite(
+        'ESA — Copernicus Sentinel-2',
+        'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2',
+      ),
+    ],
+  },
+  {
+    slug: 'encore-nature-risk',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'encore-nature-risk.jpg',
+      'lubasi',
+      'CC BY-SA 2.0',
+      'https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg',
+    ),
+    sources: [
+      cite(
+        'ENCORE — Exploring Natural Capital Opportunities, Risks and Exposure',
+        'https://encorenature.org/en',
+      ),
+      cite(
+        'ENCORE — major upgrade, July 2024',
+        'https://encorenature.org/news/major-upgrade-for-encore-launches-july-2024',
+      ),
+      cite(
+        'TNFD — Tools Catalogue',
+        'https://tnfd.global/assessment-guidance/tools-catalogue/',
+      ),
+    ],
+  },
+  {
+    slug: 'nasa-pace',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'nasa-pace.jpg',
+      'NASA Scientific Visualization Studio',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:PACE_Observes_Namesake_Plankton,_Aerosols,_Clouds_and_Ocean_Ecosystem_(SVS31294_-_hyperw_PACE_OCI_2024040820240408).png',
+    ),
+    sources: [
+      cite('NASA — PACE mission', 'https://www.nasa.gov/pace'),
+      cite(
+        'NASA — PACE launch (8 February 2024)',
+        'https://www.nasa.gov/news-release/nasa-launches-new-climate-mission-to-study-ocean-atmosphere/',
+      ),
+      cite(
+        'NASA Science — PACE',
+        'https://science.nasa.gov/mission/pace/',
+      ),
+    ],
+  },
+  {
     slug: 'iter-fusion',
     area: 'energy',
     status: 'research',
@@ -806,8 +903,26 @@ export function innovationImageSrc(image: ImageCredit): string {
   return `/images/innovations/${image.file}`;
 }
 
+/** Ecology cards whose detail lives under the shelf, not beside it. */
+export const ecologyShelfDetailSlugs = [
+  'edna-biodiversity-monitoring',
+  'marine-litter-satellite',
+  'encore-nature-risk',
+  'nasa-pace',
+] as const;
+
 export function innovationAreaPath(area: InnovationArea | 'all'): string {
   return area === 'all' ? '/innovations' : `/innovations/${area}`;
+}
+
+export function innovationDetailPath(slug: string, area: InnovationArea): string {
+  if (
+    area === 'ecology' &&
+    (ecologyShelfDetailSlugs as readonly string[]).includes(slug)
+  ) {
+    return `/innovations/ecology/${slug}`;
+  }
+  return `/innovations/${slug}`;
 }
 
 export function innovationPrimarySource(

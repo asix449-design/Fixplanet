@@ -76,7 +76,7 @@ const pageEn: InnovationsPage = {
   areaLeads: {
     all: 'Each card is a real technology or a clearly labeled myth. Status means research, pilot, deployed, or myth-busted.',
     ecology:
-      'Carbon, reefs, protein, plastic, methane, and membranes: projects that try to repair living systems or shrink their waste.',
+      'Carbon removal, circular enzymes, coral husbandry — and now biodiversity evidence, nature-risk screens, and ocean-colour missions from 2024 on.',
     energy:
       'Dense energy that still obeys thermodynamics — fusion, geothermal, storage, hydrogen with losses stated, fission, space solar — and why a closed machine cannot run forever.',
     ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, and recycling. Weather AI still needs the satellites.',
@@ -125,7 +125,7 @@ const pageRu: InnovationsPage = {
   areaLeads: {
     all: 'Каждая карточка — реальная технология или явно помеченный миф. Статус: исследование, пилот, внедрение или разоблачённый миф.',
     ecology:
-      'Углерод, рифы, белок, пластик, метан и мембраны: проекты, которые чинят живые системы или уменьшают их отходы.',
+      'Улавливание углерода, ферменты, кораллы — и теперь доказательства биоразнообразия, скрининг рисков для природы и миссии цвета океана с 2024 года.',
     energy:
       'Плотная энергия в рамках термодинамики — термоядерный синтез, геотермия, накопители, водород с названными потерями, деление ядра, космос — и почему замкнутая машина не может крутиться вечно.',
     ai: 'Модели и машины для систем Земли, материалов, сетей, белков и сортировки отходов. Погодный ИИ по-прежнему нуждается в спутниках.',
@@ -174,7 +174,7 @@ const pagePl: InnovationsPage = {
   areaLeads: {
     all: 'Każda karta to prawdziwa technologia albo jasno oznaczony mit. Status: badania, pilotaż, wdrożenie albo mit obalony.',
     ecology:
-      'Węgiel, rafy, białko, plastik, metan i membrany: projekty, które naprawiają żywe systemy albo zmniejszają ich odpady.',
+      'Usuwanie węgla, enzymy, korale — a teraz dowody bioróżnorodności, screening ryzyka dla przyrody i misje koloru oceanu od 2024.',
     energy:
       'Gęsta energia zgodna z termodynamiką — fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity — oraz dlaczego zamknięta maszyna nie może kręcić się wiecznie.',
     ai: 'Modele i maszyny dla systemów Ziemi, materiałów, sieci, białek i recyklingu. Pogodowe SI nadal potrzebuje satelitów.',
@@ -223,7 +223,7 @@ const pageLv: InnovationsPage = {
   areaLeads: {
     all: 'Katra kartīte ir īsta tehnoloģija vai skaidri marķēts mīts. Statuss: pētījums, izmēģinājums, ieviests vai atmaskots mīts.',
     ecology:
-      'Ogleklis, rifi, olbaltumvielas, plastmasa, metāns un membrānas: projekti, kas labo dzīvās sistēmas vai samazina to atkritumus.',
+      'Oglekļa uztveršana, enzīmi, koraļļi — un tagad bioloģiskās daudzveidības pierādījumi, dabas riska skrīnings un okeāna krāsas misijas no 2024. gada.',
     energy:
       'Blīva enerģija termodinamikas ietvaros — kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar nosauktiem zudumiem, skaldīšana, Saule no orbītas — un kāpēc slēgta mašīna nevar griezties mūžīgi.',
     ai: 'Modeļi un mašīnas Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un šķirošanai. Laikapstākļu MI joprojām vajag satelītus.',

@@ -1,6 +1,10 @@
 ---
 import type { Innovation } from '../data/innovations';
-import { innovationImageSrc, innovationPrimarySource } from '../data/innovations';
+import {
+  innovationDetailPath,
+  innovationImageSrc,
+  innovationPrimarySource,
+} from '../data/innovations';
 import { getInnovationsPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -10,7 +14,7 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
 const { item } = Astro.props;
-const href = localizePath(`/innovations/${item.slug}`, locale);
+const href = localizePath(innovationDetailPath(item.slug, item.area), locale);
 const primary = innovationPrimarySource(item.sources);
 ---
 

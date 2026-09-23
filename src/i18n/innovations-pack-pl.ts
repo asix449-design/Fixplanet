@@ -251,4 +251,68 @@ export const packPl: Record<string, InnovationCopy> = {
     sourcesNote:
       'Źródło główne: scrollprize.org (sprawdzone 14 września 2026). Grand Prize 2023 przyznano w lutym 2024; Grand Prize 2024 nie przyznano. To nie odczyt całej starożytności.',
   },
+  'edna-biodiversity-monitoring': {
+    title: 'Monitoring bioróżnorodności eDNA',
+    hook: 'DNA ze wody i gleby plus platforma NatureMetrics (Habitat Insights / Portfolio Assessment 2025) daje listy gatunków pod raportowanie w stylu TNFD — to nie odbudowa korali ani DAC.',
+    imageAlt:
+      'Biolog pobiera próby wody pod środowiskowe DNA — krok terenowy do listy gatunków, nie liczenie każdego zwierzęcia w rzece',
+    what: 'Metody środowiskowego DNA (eDNA) wykrywają gatunki ze śladów genetycznych w wodzie, glebie albo powietrzu. NatureMetrics łączy pobór prób, laboratorium i dashboard portfela (Nature Intelligence Platform) do ryzyka dla przyrody i ujawnień. Wydania 2024–2026 obejmują partnerstwa autonomicznego poboru z wody, Habitat Insights (geoprzestrzenną ocenę siedlisk, zapowiedź na początku 2025) oraz wspieraną przez SI ocenę portfela (Portfolio Assessment).',
+    problem:
+      'Pozwolenia i raporty o przyrodzie wciąż opierają się na wolnych, punktowych badaniach, a regulatorzy i kredytodawcy chcą porównywalnych dowodów bioróżnorodności dla całych portfeli lokalizacji.',
+    how: 'Zespoły terenowe albo autosamplery zbierają przefiltrowaną wodę lub glebę. Laboratoria amplifikują i sekwencjonują geny markerowe. Bioinformatyka dopasowuje odczyty do bibliotek referencyjnych. Warstwy geoprzestrzenne i oceny predykcyjne stoją obok list gatunków, żeby najpierw przesiać wiele lokalizacji.',
+    players:
+      'NatureMetrics: wdrożenia komercyjne u klientów z górnictwa, odnawialnych źródeł i infrastruktury (materiały publiczne firmy). Równolegle idzie nauka publiczna i amerykańska National Aquatic eDNA Strategy (2024) ze wspólnymi standardami monitoringu wodnych gatunków obcych i bioróżnorodności.',
+    risks:
+      'eDNA wykrywa ślady genetyczne, nie liczebność ani zdrowie zwierząt samo w sobie. Trafienie dodatnie nie jest spisem. Fałszywe braki i trafienia, DNA niesione w dół rzeki oraz cienkie biblioteki referencyjne mogą zmylić. Komercyjny dashboard nie zastępuje ekologii terenowej tam, gdzie wymaga jej regulator.',
+    sourcesNote:
+      'Platforma NatureMetrics i start Habitat Insights; wiadomość USGS o National Aquatic eDNA Strategy. Screening i dowód, nie pełny spis bioróżnorodności.',
+  },
+  'marine-litter-satellite': {
+    title: 'Śmieci morskie z kosmosu',
+    hook: 'Praca ESA/JRC (Nature Communications, czerwiec 2024) pokazała, że Sentinel-2 mapuje pasma śmieci na Morzu Śródziemnym — hotspoty i sezony, nie fabryka enzymów.',
+    imageAlt:
+      'Plastik i inne śmieci na atlantyckim brzegu — klasa odpadów, których morskie pasma szuka Sentinel-2; to nie mapa detekcji z artykułu z 2024',
+    what: 'Recenzowany dowód z 2024 roku: zobrazowania Copernicus Sentinel-2, przejrzane w skali Morza Śródziemnego (około 300 000 scen), wykrywają pływające pasma śmieci jako proxy dopływu i szlaków. Pracę prowadzono na kontraktach ESA i z udziałem Wspólnego Centrum Badawczego UE.',
+    problem:
+      'Plastik i inne pływające śmieci przemieszczają się przez całe morza, a zarządcom wciąż brakuje map skali basenu: gdzie tworzą się gęste pasma i kiedy z lądu idzie zrzut.',
+    how: 'Algorytmy oznaczają jasne, wydłużone strefy zbiegania na pasmach optycznych 10 m. Detekcje zestawia się z hydrologią i modelami spływu z brzegu. Ulewny deszcz i prądy przybrzeżne wychodzą jako główne przyczyny tego, kiedy i gdzie śmieci się skupiają.',
+    players:
+      'Monitoring badawczy archiwum historycznego Morza Śródziemnego (okno analizy w artykule: 2015–2021), jeszcze nie codzienna służba operacyjna. Nota JRC z 14 czerwca 2024 przedstawia wynik jako przesunięcie w monitoringu polityki, nie statek sprzątający.',
+    risks:
+      'Dzisiejsze sensory widzą gęste agregacje w skali metrów. Rozproszony mikroplastik zostaje niewidoczny. Chmury i sobowtóry (piana, sargassum) trzeba odfiltrować. Z samego artykułu nie wynika globalna mapa operacyjna plastiku.',
+    sourcesNote:
+      'Cózar et al., Nature Communications (2024); wiadomość JRC UE, 14 czerwca 2024; Copernicus Sentinel-2 (ESA). Pasma na Morzu Śródziemnym, nie globalna mapa operacyjna.',
+  },
+  'encore-nature-risk': {
+    title: 'ENCORE — narzędzie ryzyka dla przyrody',
+    hook: 'ENCORE (Global Canopy / UNEP FI / UNEP-WCMC) — darmowy screening zależności i wpływów sektorów; duża aktualizacja bazy lipiec 2024. To nie DAC ani laboratorium eDNA.',
+    imageAlt:
+      'Widok z powietrza na las deszczowy Amazonii i rzekę — klasa żywych systemów, których zależności i wpływy przesiewa ENCORE; to nie zrzut ekranu narzędzia',
+    what: 'ENCORE (Exploring Natural Capital Opportunities, Risks and Exposure) to darmowe narzędzie online Global Canopy, UNEP Finance Initiative i UNEP-WCMC. Pomaga instytucjom finansowym i firmom sprawdzić, jak procesy produkcji zależą od przyrody i jak na nią wpływają. TNFD i pokrewne ramy często do niego odsyłają.',
+    problem:
+      'Banki i firmy przyjmujące TNFD wciąż potrzebują darmowej warstwy pierwszego screeningu, która łączy działalności gospodarcze z zależnościami i wpływami na przyrodę, zanim dojdzie do głębokich badań na miejscu.',
+    how: 'Użytkownik przegląda powiązania działalności, usług ekosystemów i czynników wpływu w zaktualizowanej bazie wiedzy. Aktualizacja z lipca 2024 (projekt SUSTAIN) doprecyzowała oceny materialności, szczegół ekosystemów i ogniwa łańcucha wartości. Dane weszły później do modułów Explore i Natural Capital.',
+    players:
+      'Publiczne narzędzie webowe. Materiały ENCORE mówią o dziesiątkach tysięcy zarejestrowanych użytkowników. Służy jako pierwsze wejście do ocen w stylu TNFD LEAP.',
+    risks:
+      'ENCORE to screening materialności i ścieżek, nie badanie stanowiska i nie zielone światło dla projektu. Nie zastępuje przestrzennych danych o bioróżnorodności, warunków licencji ani konsultacji ze społecznościami. Do decyzji i ujawnień wciąż potrzeba danych z konkretnego miejsca.',
+    sourcesNote:
+      'Serwis ENCORE i nota o aktualizacji z lipca 2024; katalog narzędzi TNFD. Otwarty screening ryzyka dla przyrody, nie domknięty rachunek bioróżnorodności.',
+  },
+  'nasa-pace': {
+    title: 'NASA PACE — kolor oceanu i ekosystem',
+    hook: 'Satelita NASA PACE (start 8 lut 2024; dane publiczne od kwietnia 2024) — hiperspektralny kolor oceanu plus polarymetry: fitoplankton, aerozole i chmury razem. To nie radar Biomass ani pasma śmieci.',
+    imageAlt:
+      'Wizualizacja NASA koloru oceanu z instrumentu Ocean Color misji PACE — wzory fitoplanktonu, nie mapa biomasy lasu i nie inwentarz plastiku',
+    what: 'PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) to satelita nauk o Ziemi NASA, wyniesiony 8 lutego 2024 z Cape Canaveral. Niesie hiperspektralny Ocean Color Instrument (OCI) i dwa polarymetry wielokątowe (HARP2 i SPEXone), żeby biologię oceanu i cząstki atmosfery obserwować razem.',
+    problem:
+      'Satelity koloru oceanu długo widziały ogólną zieleń. Zarządcom potrzebne są codzienne globalne mapy tego, które społeczności fitoplanktonu są obecne i jak aerozole oraz chmury sprzęgają się z tą biologią.',
+    how: 'OCI mierzy odbicie opuszczające wodę w wielu wąskich pasmach, żeby rozdzielać typy społeczności fitoplanktonu, a nie sam chlorofil masowy. Polarymetry ograniczają właściwości aerozoli i chmur, które także kształtują klimat i jakość powietrza. Publiczne dane jakości naukowej ruszyły 11 kwietnia 2024.',
+    players:
+      'NASA, globalna orbita okołoziemska, otwarta dystrybucja danych. Zastosowania: śledzenie szkodliwych zakwitów, badania zdrowia oceanu istotne dla rybołówstwa, procesy klimatyczne.',
+    risks:
+      'Optycznie złożone wody przybrzeżne i chmury wciąż utrudniają odtworzenie. PACE lepiej rozróżnia społeczności planktonu. To nie system zarządzania rybołówstwem sam w sobie i nie inwentarz plastiku. Decyzje zarządcze nadal potrzebują sieci in situ obok satelity.',
+    sourcesNote:
+      'Strona misji NASA PACE, komunikat o starcie 8 lutego 2024 i strona NASA Science. Dane publiczne od 11 kwietnia 2024. Nie radar biomasy lasu i nie inwentarz plastiku.',
+  },
 };
