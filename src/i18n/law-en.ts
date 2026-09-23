@@ -1,9 +1,91 @@
 import type { LawCopy } from '../data/law';
 
 export const en: Record<string, LawCopy> = {
+  'paris-agreement': {
+    title: 'Paris Agreement',
+    hook: 'The main climate treaty still in force. It binds parties to NDCs and a well-below-2°C / 1.5°C temperature goal — not a global emissions cap written into the text.',
+    imageAlt:
+      'François Hollande, Laurent Fabius and Ban Ki-moon applaud on the COP21 stage after the Paris Agreement was adopted',
+    jurisdiction: 'United Nations Framework Convention on Climate Change (Parties)',
+    officialName: 'Paris Agreement',
+    citation:
+      'Paris Agreement under the UNFCCC; adopted 12 December 2015 (COP21); entered into force 4 November 2016',
+    yearStatus: 'Adopted 12 December 2015 (COP21). Entered into force 4 November 2016.',
+    what: 'A legally binding treaty under the UNFCCC. Parties submit nationally determined contributions (NDCs), report progress, and take stock together. The Agreement’s temperature language aims to hold warming well below 2°C above pre-industrial levels and pursue 1.5°C. It also covers adaptation, finance, technology, and sinks (including forests) — in treaty form, not as a voluntary pledge sheet alone.',
+    where:
+      'Applies to Parties that have ratified or otherwise consented. Adopted at COP21 in Paris (12 December 2015); entered into force 4 November 2016. UNFCCC and the UN Treaty Depositary keep the authoritative party list. Withdrawal and re-accession rules exist; treat membership as a living depositary fact, not a slogan.',
+    effects:
+      'Intended effects: align national climate plans under one treaty architecture, create a five-year ambition cycle, and put 1.5°C into multilateral law. Outcomes depend on NDC content and domestic implementation — the treaty does not itself shut a power plant.',
+    caveats:
+      'NDCs are nationally determined; the Agreement does not prescribe identical economy-wide caps for every Party. Temperature goals are collective aims, not a court-enforceable global carbon budget inside the text. Do not confuse Paris with the Kyoto Protocol’s earlier Annex-I quantified targets.',
+    sourcesNote:
+      'UNFCCC page on the Paris Agreement; UNFCCC English PDF of the Agreement; UN Treaty Depositary record.',
+  },
+  'montreal-protocol': {
+    title: 'Montreal Protocol on Substances that Deplete the Ozone Layer',
+    hook: 'The ozone treaty that actually cut ODS production and trade. Kigali later added HFCs for climate — still Montreal machinery, not a second UNFCCC.',
+    imageAlt:
+      'NASA visualization of low ozone over Antarctica — the ozone hole the Montreal Protocol was written to reverse',
+    jurisdiction: 'Parties to the Montreal Protocol (UNEP Ozone Secretariat)',
+    officialName: 'Montreal Protocol on Substances that Deplete the Ozone Layer',
+    citation:
+      'Montreal Protocol (1987, as adjusted/amended); Kigali Amendment adopted 15 October 2016, HFC controls in force from 1 January 2019 for Parties for which it entered into force',
+    yearStatus:
+      'Protocol adopted 1987. Kigali Amendment adopted 15 October 2016; HFC controls in force from 1 January 2019 for Parties for which it entered into force.',
+    what: 'Controls production and consumption of ozone-depleting substances through binding schedules, trade controls with non-Parties, reporting, and a Multilateral Fund for Article 5 Parties. Adjustments and amendments tighten annex chemicals over time. The Kigali Amendment (2016) phases down hydrofluorocarbons (HFCs) — potent greenhouse gases used as ODS substitutes — under the same Protocol.',
+    where:
+      'Near-universal Protocol membership (Ozone Secretariat / depositary). Protocol adopted 1987; successive adjustments and amendments. Kigali entered into force 1 January 2019 once ratification thresholds were met; HFC trade-control provisions have a separate later trigger. Treat party status for Kigali as depositary-specific.',
+    effects:
+      'Ozone-layer recovery metrics and ODS phase-out schedules are the Protocol’s documented success track — use Ozone Secretariat / WMO–UNEP scientific assessments, not marketing. Kigali’s intended climate benefit is avoided HFC warming; delivery follows national phase-down schedules.',
+    caveats:
+      'Success on ODS is not automatic success on every climate gas. HFCs are under Montreal via Kigali; CO₂ and methane stay under UNFCCC/Paris. Illegal trade and exemptions still matter. Do not caption this card as “the climate treaty” — that is Paris.',
+    sourcesNote:
+      'Ozone Secretariat Montreal Protocol page; Ozone Secretariat amendments page (including Kigali); UN Treaty Depositary record for the Kigali Amendment.',
+  },
+  'eu-deforestation-regulation': {
+    title: 'EU Deforestation Regulation',
+    hook: 'An EU market rule: listed commodities must be deforestation-free and legal to place or export. Enacted 2023; main duties apply from late 2026 / mid-2027 by operator size — not a UN forest treaty.',
+    imageAlt:
+      'Oil-palm plantation surrounding a remaining rainforest fragment in Borneo — a commodity-and-forest edge the EU deforestation rule covers',
+    jurisdiction: 'European Union',
+    officialName: 'Regulation on deforestation-free products',
+    citation:
+      'Regulation (EU) 2023/1115 of the European Parliament and of the Council of 31 May 2023 on deforestation-free products',
+    yearStatus:
+      'Enacted 31 May 2023. In force as EU regulation. Application: large and medium operators 30 December 2026; micro and small operators 30 June 2027 (micro/small already under EUTR: 30 December 2026).',
+    what: 'Operators and traders placing in-scope commodities (cattle, cocoa, coffee, oil palm, rubber, soya, wood, and listed derived products) on the EU market, or exporting them, must show the goods are deforestation-free (cut-off 31 December 2020) and produced legally, with due diligence and geolocation. Repeals the EU Timber Regulation for the overlapping wood pathway. Country benchmarking and an Information System support checks.',
+    where:
+      'In force as EU regulation. Commission pages (checked 19 Sep 2026) state application dates: large and medium operators 30 December 2026; micro and small operators 30 June 2027 (micro/small already under EUTR: 30 December 2026). Later delegated additions can have a further delayed product start. Status = enacted law with phased application — do not file under “Under consideration.”',
+    effects:
+      'Statutory aims: cut EU-driven deforestation/degradation and related emissions and biodiversity loss. Commission materials cite order-of-magnitude emission-cut estimates from the impact assessment — label those as intended/modelled, not measured 2026 outcomes.',
+    caveats:
+      'Due diligence shifts costs onto supply chains; leakage to other markets is a real risk. Delayed application means shelves must not say “already blocking every shipment today.” Not a substitute for producer-country land law or for Paris NDCs.',
+    sourcesNote:
+      'EUR-Lex official text of Regulation (EU) 2023/1115; Commission deforestation-free products page.',
+  },
+  'eu-ets': {
+    title: 'EU Emissions Trading System (EU ETS)',
+    hook: 'The EU’s cap-and-trade for large emitters. A declining allowance cap with auctioning and a market stability reserve — not a consumer carbon tax and not Paris itself.',
+    imageAlt:
+      'The Niederaussem lignite power station in Germany — a large stationary emitter of the kind the EU ETS covers',
+    jurisdiction: 'European Union',
+    officialName: 'EU Emissions Trading System',
+    citation:
+      'Directive 2003/87/EC of the European Parliament and of the Council (as amended) establishing a system for greenhouse gas emission allowance trading',
+    yearStatus: 'In force. Legal spine: Directive 2003/87/EC as amended.',
+    what: 'Creates a Union-wide market in emission allowances for covered installations and aviation (and, under later reforms, further sectors as amended). The cap falls over time; operators surrender allowances against verified emissions. Links and neighbouring systems are policy choices around the Directive, not automatic global coverage.',
+    where:
+      'In force across the EU (and linked arrangements where agreed). Legal spine: Directive 2003/87/EC as amended; Commission “What is the EU ETS” hub summarises current design. Use EUR-Lex consolidated text for citation hygiene when amending packages land.',
+    effects:
+      'Intended: put a price on covered GHG emissions and cut them under a falling cap. Documented system outcomes belong in EEA/Commission ETS reports — cite those for tonne figures; do not invent.',
+    caveats:
+      'Coverage is sector-limited; free allocation, carbon leakage rules, and price volatility are design features under debate. EU ETS is not the Paris Agreement and not a household fuel duty. Do not merge with EUDR or Nature Restoration on one card.',
+    sourcesNote:
+      'Commission EU ETS hub; Commission “What is the EU ETS” page; EUR-Lex Directive 2003/87/EC.',
+  },
   'nature-restoration': {
     title: 'EU Nature Restoration Law',
-    hook: 'A binding restoration regulation — not a strategy paper. National draft plans were due in 2026.',
+    hook: 'A binding restoration regulation — not a strategy paper. Draft national plans were due 1 September 2026; the Commission is assessing them.',
     imageAlt:
       'A peat bog with open water and low vegetation — the kind of wetland habitat EU restoration targets cover',
     jurisdiction: 'European Union',

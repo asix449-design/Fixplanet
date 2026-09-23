@@ -1,9 +1,77 @@
 import type { LawCopy } from '../data/law';
 
 export const lv: Record<string, LawCopy> = {
+  'paris-agreement': {
+    title: 'Parīzes nolīgums',
+    hook: 'Galvenais spēkā esošais klimata līgums. Saista puses ar NDC un mērķi «krietni zem 2°C / tiekties uz 1,5°C» — nevis globālu emisiju griestu tekstā.',
+    imageAlt:
+      'Fransuā Olands, Lorāns Fabius un Ban Kimuns aplaudē COP21 skatuvē pēc Parīzes nolīguma pieņemšanas',
+    jurisdiction: 'ANO Vispārējā konvencija par klimata pārmaiņām (puses)',
+    officialName: 'Parīzes nolīgums',
+    citation:
+      'Parīzes nolīgums UNFCCC ietvaros; pieņemts 2015. gada 12. decembrī (COP21); stājās spēkā 2016. gada 4. novembrī',
+    yearStatus: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016.',
+    what: 'Juridiski saistošs līgums pie UNFCCC: NDC, pārskati, globālā izvērtēšana; temperatūras mērķi, adaptācija, finansējums, piesaistītāji (tostarp meži).',
+    where: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016. Pušu saraksts — ANO depozitārijs / UNFCCC.',
+    effects:
+      'Iecerētais efekts: savietot nacionālos klimata plānus vienā līguma arhitektūrā, piecu gadu ambīciju ciklu un iestrādāt 1,5°C daudzpusējās tiesībās. Iznākumi atkarīgi no NDC satura un iekšējās īstenošanas — līgums pats neaizver elektrostaciju.',
+    caveats: 'NDC saturu nosaka valstis; līgums pats neaizver elektrostaciju. Nejauc ar Kioto protokolu.',
+    sourcesNote: 'Tie paši trīs URL: UNFCCC lapa; nolīguma angļu PDF; ANO depozitārijs.',
+  },
+  'montreal-protocol': {
+    title: 'Monreālas protokols par ozona slāni noārdošām vielām',
+    hook: 'Ozona līgums, kas reāli samazināja ODS ražošanu un tirdzniecību. Kigali vēlāk pievienoja HFC klimata dēļ — tā pati Monreālas mašīna, ne otrs UNFCCC.',
+    imageAlt:
+      'NASA vizualizācija ar zemu ozonu virs Antarktīdas — ozona caurums, kura dēļ rakstīts Monreālas protokols',
+    jurisdiction: 'Monreālas protokola puses (UNEP ozona sekretariāts)',
+    officialName: 'Monreālas protokols par ozona slāni noārdošām vielām',
+    citation:
+      'Monreālas protokols (1987, ar grozījumiem); Kigali grozījums 2016. gada 15. oktobrī; HFC kontrole no 2019. gada 1. janvāra pusēm, kurām grozījums stājies spēkā',
+    yearStatus: 'Protokols no 1987. Kigali spēkā no 01.01.2019 pēc ratifikācijas sliekšņiem.',
+    what: 'ODS samazināšanas grafiki, tirdzniecības ierobežojumi, pārskati, Daudzpusējais fonds; Kigali — pakāpeniska HFC samazināšana.',
+    where: 'Gandrīz universāla dalība; Kigali spēkā no 01.01.2019 pēc ratifikācijas sliekšņiem.',
+    effects:
+      'Dokumentētie protokola panākumi ir ODS izslēgšanas grafiki un ozona slāņa atjaunošanās rādītāji (sekretariāta / WMO–UNEP izvērtējumi, ne mārketings). Kigali iecerētais klimata ieguvums ir novērstā HFC sasilšana; izpilde seko nacionālajiem samazināšanas grafikiem.',
+    caveats: 'Ozona panākumi ≠ CO₂/metāna kontrole (tas ir Parīze/UNFCCC). Nekartē kā «galveno klimata līgumu».',
+    sourcesNote: 'Tie paši trīs URL: ozona sekretariāts — protokols un grozījumi; ANO depozitārijs — Kigali.',
+  },
+  'eu-deforestation-regulation': {
+    title: 'ES regula par produktiem bez mežu izciršanas (EUDR)',
+    hook: 'ES tirgus noteikums: uzskaitītajām precēm jābūt bez mežu izciršanas un likumīgām. Pieņemta 2023; galvenie pienākumi no 2026. gada beigām / 2027. gada vidus pēc operatora lieluma. Tas nav ANO mežu līgums.',
+    imageAlt:
+      'Eļļas palmu plantācija ap palikušu lietusmeža fragmentu Borneo — preces un meža mala, ko sedz ES noteikums',
+    jurisdiction: 'Eiropas Savienība',
+    officialName: 'Regula par produktiem, kas nav saistīti ar mežu izciršanu',
+    citation: 'Regula (ES) 2023/1115 (2023. gada 31. maijs) par produktiem, kas nav saistīti ar mežu izciršanu',
+    yearStatus:
+      'Regula spēkā; piemērošana lielajiem/vidējiem no 30.12.2026, mikro/mazajiem no 30.06.2027 (ar atrunām bijušajiem EUTR).',
+    what: 'Due diligence un ģeolokācija liellopiem, kakao, kafijai, palmu eļļai, kaučukam, sojai, kokmateriāliem un atvasinājumiem; atceļ EUTR pārklājumā.',
+    where:
+      'Regula spēkā; piemērošana lielajiem/vidējiem no 30.12.2026, mikro/mazajiem no 30.06.2027 (ar atrunām bijušajiem EUTR). Nelikt «izskatīšanā».',
+    effects:
+      'Statūtu mērķi: mazināt ES pieprasījuma dzīto mežu izciršanu/degradāciju un saistītās emisijas un bioloģiskās daudzveidības zudumu. Komisijas ietekmes novērtējuma emisiju aplēses — iecerētas/modelētas, ne izmērīti 2026. gada iznākumi.',
+    caveats: 'Noplūde citos tirgos; atlikšana ≠ «jau bloķē visu šodien».',
+    sourcesNote: 'Tie paši divi URL: EUR-Lex — Regula (ES) 2023/1115; Komisijas lapa par produktiem bez mežu izciršanas.',
+  },
+  'eu-ets': {
+    title: 'ES emisiju kvotu tirdzniecības sistēma (EU ETS)',
+    hook: 'ES cap-and-trade lielajiem emitētājiem. Sarūkošs kvotu griesti, izsoles un tirgus stabilitātes rezerve — ne mājsaimniecības oglekļa nodoklis un ne pats Parīzes nolīgums.',
+    imageAlt:
+      'Niderausemas lignīta elektrostacija Vācijā — liels stacionārs emitētājs tāda veida, kādu aptver EU ETS',
+    jurisdiction: 'Eiropas Savienība',
+    officialName: 'ES emisiju kvotu tirdzniecības sistēma',
+    citation: 'Direktīva 2003/87/EK (ar grozījumiem) par siltumnīcefekta gāzu emisiju kvotu tirdzniecības sistēmu',
+    yearStatus: 'Spēkā ES; pamats — Direktīva 2003/87/EK ar grozījumiem.',
+    what: 'Kvotu tirgus aptvertajām iekārtām (un aviācijai / tālākiem sektoriem pēc grozījumiem); kvotu nodošana pret verificētām emisijām.',
+    where: 'Spēkā ES; pamats — Direktīva 2003/87/EK ar grozījumiem.',
+    effects:
+      'Iecerētais: uzlikt cenu aptvertajām SEG emisijām un tās samazināt zem krītoša griesta. Dokumentētie sistēmas iznākumi ir EEA/Komisijas ETS ziņojumos — tonnas no turienes, ne izdomātas.',
+    caveats: 'Ne visa ekonomika; ne Parīze un ne EUDR. Tonnu skaitļi — tikai no EEA/Komisijas ziņojumiem.',
+    sourcesNote: 'Tie paši trīs URL: Komisijas EU ETS centrs; lapa «What is the EU ETS»; EUR-Lex — Direktīva 2003/87/EK.',
+  },
   'nature-restoration': {
     title: 'ES dabas atjaunošanas likums',
-    hook: 'Saistoša atjaunošanas regula — ne stratēģijas papīrs. Valstu plānu projektiem bija jābūt 2026. gadā.',
+    hook: 'Saistoša atjaunošanas regula — nevis stratēģijas dokuments. Valstu projektu plāniem bija jābūt līdz 2026. gada 1. septembrim; Komisija tos vērtē.',
     imageAlt:
       'Kūdras purvs ar atklātu ūdeni un zemu veģetāciju — tāds mitrājs, ko sedz ES atjaunošanas mērķi',
     jurisdiction: 'Eiropas Savienība',
