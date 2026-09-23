@@ -46,6 +46,29 @@ def fit_card(im: Image.Image, bg: tuple[int, int, int] = (255, 255, 255)) -> Ima
     return im.resize((W, H), Image.Resampling.LANCZOS)
 
 
+def legend_bar(
+    im: Image.Image,
+    swatches: list[tuple[tuple[int, int, int], str]],
+    credit: str,
+    fill: tuple[int, int, int] = (18, 24, 22),
+) -> Image.Image:
+    """Swatch row plus credit. Labels name the overview bands, not publisher scores."""
+    im = im.convert("RGB").copy()
+    draw = ImageDraw.Draw(im)
+    bar_h = 58
+    draw.rectangle((0, im.height - bar_h, im.width, im.height), fill=fill)
+    font = load_font(15)
+    x = 14
+    y = im.height - bar_h + 8
+    for color, label in swatches:
+        draw.rectangle((x, y, x + 18, y + 14), fill=color, outline=(236, 240, 234))
+        draw.text((x + 24, y - 2), label, fill=(236, 240, 234), font=font)
+        bbox = draw.textbbox((0, 0), label, font=font)
+        x += 24 + (bbox[2] - bbox[0]) + 22
+    draw.text((14, im.height - 26), credit, fill=(236, 240, 234), font=font)
+    return im
+
+
 def credit_bar(im: Image.Image, text: str, fill: tuple[int, int, int] = (18, 24, 22)) -> Image.Image:
     im = im.convert("RGB").copy()
     draw = ImageDraw.Draw(im)
@@ -74,7 +97,7 @@ def css_fills(groups: dict[str, list[str]]) -> str:
     return "\n".join(rules)
 
 
-def render_svg(theme_css: str, overlays: str, dest_name: str, credit: str | None = None) -> None:
+def render_svg_image(theme_css: str, overlays: str) -> Image.Image:
     svg = SVG_BASE.read_text(encoding="utf-8")
     extra = f"\n{theme_css}\n"
     if "</style>" not in svg:
@@ -90,13 +113,17 @@ def render_svg(theme_css: str, overlays: str, dest_name: str, credit: str | None
         ["rsvg-convert", "-w", str(W), "-h", str(H), "-o", str(png_path), str(tmp_path)],
         check=True,
     )
-    im = Image.open(png_path).convert("RGB")
-    im = fit_card(im)
+    im = fit_card(Image.open(png_path).convert("RGB"))
+    tmp_path.unlink(missing_ok=True)
+    png_path.unlink(missing_ok=True)
+    return im
+
+
+def render_svg(theme_css: str, overlays: str, dest_name: str, credit: str | None = None) -> None:
+    im = render_svg_image(theme_css, overlays)
     if credit:
         im = credit_bar(im, credit)
     save_jpg(im, dest_name)
-    tmp_path.unlink(missing_ok=True)
-    png_path.unlink(missing_ok=True)
 
 
 def circles(points: list[tuple[float, float, float, str, float]]) -> str:
@@ -139,6 +166,117 @@ def process_hosted(src: Path, dest: str, credit: str, crop: tuple[int, int, int,
     im = fit_card(im)
     im = credit_bar(im, credit)
     save_jpg(im, dest)
+
+
+def conflicts_schematic(
+    groups: dict[str, list[str]],
+    ocean: str,
+    land: str,
+    ant: str,
+    stroke: str,
+    dest: str,
+    swatches: list[tuple[tuple[int, int, int], str]],
+    credit: str,
+) -> None:
+    """Country bands for a Fix Planet overview. Unlisted countries stay the land colour."""
+    css = f"""
+    .oceanxx {{ fill: {ocean} !important; stroke: none !important; }}
+    .landxx {{ fill: {land} !important; stroke: {stroke} !important; stroke-width: 0.28 !important; }}
+    .antxx {{ fill: {ant} !important; }}
+    .circlexx, .subxx, .noxx, .unxx {{ opacity: 0 !important; }}
+    {css_fills(groups)}
+    """
+    im = render_svg_image(css, "")
+    im = legend_bar(im, swatches, credit)
+    save_jpg(im, dest)
+
+
+def global_peace_index() -> None:
+    """Peacefulness palette. Bands are orientation, not GPI 2026 scores."""
+    more = "is ie nz at sg ch pt si jp cz dk fi no se nl ca au".split()
+    less = "ua ye sd ss so cd mm sy af ml bf ne ng et ly ht ps il iq".split()
+    conflicts_schematic(
+        {"#1e8a4a": more, "#c0392b": less},
+        ocean="#e4eef2",
+        land="#d9ded8",
+        ant="#f4f7f8",
+        stroke="#8a938c",
+        dest="global-peace-index.jpg",
+        swatches=[
+            ((30, 138, 74), "More peaceful"),
+            ((192, 57, 43), "Less peaceful"),
+            ((217, 222, 216), "Not classed here"),
+        ],
+        credit="Fix Planet overview · peacefulness bands · not GPI scores · IEP / Vision of Humanity",
+    )
+
+
+def fragile_states_index() -> None:
+    """Fragility palette. Darker = higher fragility on this overview, not FSI scores."""
+    higher = "ye so ss sd sy cd af cf td ht ml ly iq mm bf ne ng et".split()
+    lower = "is no fi se dk ch nz ie lu at ca au nl sg jp pt si".split()
+    conflicts_schematic(
+        {"#5c2e24": higher, "#f4e4c4": lower},
+        ocean="#c5d0d4",
+        land="#d4cdc2",
+        ant="#f7f4ee",
+        stroke="#8d8478",
+        dest="fragile-states-index.jpg",
+        swatches=[
+            ((92, 46, 36), "Higher fragility"),
+            ((244, 228, 196), "Lower fragility"),
+            ((212, 205, 194), "Not classed here"),
+        ],
+        credit="Fix Planet overview · fragility bands · not FSI scores · Fund for Peace",
+    )
+
+
+def military_expenditure_sipri() -> None:
+    """Spending level (not share of GDP). Darker = larger budgets. Not Milex figures."""
+    largest = "us cn ru".split()
+    large = "in sa gb de fr jp kr ua".split()
+    conflicts_schematic(
+        {"#0a335c": largest, "#3d78b4": large},
+        ocean="#8aa4b8",
+        land="#e3e8ee",
+        ant="#f4f7fa",
+        stroke="#6d7c88",
+        dest="military-expenditure-sipri.jpg",
+        swatches=[
+            ((10, 51, 92), "Largest spenders"),
+            ((61, 120, 180), "Other large spenders"),
+            ((227, 232, 238), "Not classed here"),
+        ],
+        credit="Fix Planet overview · spending level · not share of GDP · not SIPRI Milex figures",
+    )
+
+
+def conflict_barometer_hiik() -> None:
+    """Intensity bands, not event pins and not one class for every conflict in a country."""
+    war = "ua sd mm ye sy so cd".split()
+    violent = "ml bf ne ng af iq ly ht cf ps il et".split()
+    conflicts_schematic(
+        {"#8e1e32": war, "#e07a2f": violent},
+        ocean="#243140",
+        land="#c9cfd4",
+        ant="#e8eef2",
+        stroke="#5c6870",
+        dest="conflict-barometer-hiik.jpg",
+        swatches=[
+            ((142, 30, 50), "War-intensity band"),
+            ((224, 122, 47), "Violent-conflict band"),
+            ((201, 207, 212), "Not classed here"),
+        ],
+        credit="Fix Planet overview · intensity bands · not HIIK scores · not ACLED pins",
+    )
+
+
+def conflicts_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    global_peace_index()
+    fragile_states_index()
+    military_expenditure_sipri()
+    conflict_barometer_hiik()
 
 
 def armed_conflict() -> None:
@@ -428,5 +566,7 @@ if __name__ == "__main__":
 
     if sys.argv[1:] == ["crime"]:
         crime_cards()
+    elif sys.argv[1:] == ["conflicts"]:
+        conflicts_cards()
     else:
         main()

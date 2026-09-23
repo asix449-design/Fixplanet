@@ -56,7 +56,8 @@ const pageEn: MapsPage = {
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
     religious: 'Pilot schematics for the early centuries CE — not a census.',
-    conflicts: 'Armed events and battle deaths from named datasets.',
+    conflicts:
+      'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity — each card names the publisher and what the measure is (and is not).',
     ethnic: 'Language families as public cartography, not a census.',
     crime:
       'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
@@ -124,7 +125,8 @@ const pageRu: MapsPage = {
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
     religious: 'Пилотные схемы ранних веков н. э. — не перепись.',
-    conflicts: 'Вооружённые события и боевые потери по названным данным.',
+    conflicts:
+      'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов — у каждой карточки издатель и что именно измеряется (и чего нет).',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime:
       'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
@@ -192,7 +194,8 @@ const pagePl: MapsPage = {
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
     religious: 'Schematy pilotażowe wczesnych wieków n.e. — nie spis.',
-    conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
+    conflicts:
+      'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów — na każdej karcie wydawca oraz to, co miara obejmuje (i czego nie).',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime:
       'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
@@ -260,7 +263,8 @@ const pageLv: MapsPage = {
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
     religious: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem — ne tautas skaitīšana.',
-    conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
+    conflicts:
+      'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko ne).',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime:
       'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
@@ -350,6 +354,70 @@ const en: Record<string, MapCopy> = {
       'UCDP allows non-commercial use with citation. We host a cropped Our World in Data map export (CC BY) of deaths in armed conflicts. Open the OWID war-and-peace page for the live layer.',
     imageAlt:
       'Our World in Data world map of deaths in armed conflicts: pale land with Ukraine and several African and Asian countries in orange and red',
+  },
+  'global-peace-index': {
+    title: 'Global Peace Index',
+    hook: 'Country ranking of peacefulness from the Institute for Economics & Peace — a composite score, not ACLED event pins and not a verdict on who is right.',
+    description:
+      'The Global Peace Index (GPI), published by the Institute for Economics & Peace (IEP) via Vision of Humanity, ranks countries on peacefulness using a composite of indicators across ongoing domestic and international conflict, societal safety and security, and militarisation. The interactive map and annual report (latest public report checked: GPI 2026) are the public front door.',
+    whyOnShelf:
+      'Live ACLED answers “where were events recorded?” Live UCDP/OWID answers “how many battle-related deaths?” GPI answers a different question: how peaceful is this country on a comparable composite score? It complements casualties and events without duplicating either.',
+    howToRead:
+      'A colour on the map is a rank/score band, not a court finding and not “this side started the war.” Domain weights and year matter — open the latest GPI report for methods. Dense red on GPI is not the same object as dense ACLED pins.',
+    caveats:
+      'Not this card: ACLED event points; UCDP battle-death tallies; Fragile States Index (separate card). Do not paste proprietary GPI artwork.',
+    licenseNote:
+      'This card is a doorway to IEP’s living product; the preview is a Fix Planet overview after the named source, not that publisher’s official artwork. Attribute Institute for Economics & Peace / Vision of Humanity.',
+    imageAlt:
+      'Fix Planet overview choropleth in a peacefulness palette: greener land in a more-peaceful band, redder land in a less-peaceful band, and grey land left unclassified — not Vision of Humanity artwork and not GPI scores',
+  },
+  'fragile-states-index': {
+    title: 'Fragile States Index',
+    hook: 'Country scores of state fragility across pressure and cohesion indicators — fragility risk, not battle deaths and not a peace ranking.',
+    description:
+      'The Fragile States Index (FSI), produced by the Fund for Peace, scores countries on social, economic, and political/military pressures and on cohesion capacities. Public products include global data tables, country pages, methodology notes, and an analytics heat map. It is an annual comparative scorecard, not an event geodatabase.',
+    whyOnShelf:
+      'Conflicts today only show events and deaths. Fragility asks whether state institutions and social cohesion are under stress — often a different geography from the loudest war theatres. Complements GPI (peacefulness) without duplicating ACLED or UCDP.',
+    howToRead:
+      'A high FSI score means higher measured fragility on FfP’s framework, not a UN listing, not a prediction that war will start tomorrow, and not a moral ranking of peoples. Indicators and years change; open methodology and global data. Do not treat the heat map as a census of every local conflict.',
+    caveats:
+      'Not this card: GPI peacefulness ranks; ACLED pins; UCDP deaths; World Bank WGI (different product — defer).',
+    licenseNote:
+      'Attribute Fund for Peace / Fragile States Index. The preview is a Fix Planet overview, not Fund for Peace’s branded heat map.',
+    imageAlt:
+      'Fix Planet overview heat map of fragility bands: darker land where fragility is higher on this overview, lighter land where it is lower, and mid-tone land left unclassified — not Fund for Peace artwork and not FSI scores',
+  },
+  'military-expenditure-sipri': {
+    title: 'Military expenditure (SIPRI)',
+    hook: 'Comparable country series of military spending from SIPRI — budgets and burden, not event pins and not a catalog of weapon systems.',
+    description:
+      'The Stockholm International Peace Research Institute (SIPRI) Military Expenditure Database (Milex) compiles consistent time series of military spending for most countries, with documentation, fact sheets (e.g. trends in world military expenditure), and research pages. Public entry points: the Milex database page, the annual fact sheet PDF, and SIPRI press notes on global totals.',
+    whyOnShelf:
+      'Spending is a resource / militarisation layer. It is not “who fought where” (ACLED) and not “who died in battle” (UCDP). Together with GPI’s militarisation domain and HIIK intensity, it rounds the shelf without a second death map.',
+    howToRead:
+      'Figures are SIPRI estimates under their definitions (often constant prices / share of GDP depending on the view). High spend ≠ “aggressor” and low spend ≠ “peaceful.” Some countries are opaque; SIPRI marks uncertainty.',
+    caveats:
+      'Not this card: arms-transfer ledgers, nuclear stockpiles, or equipment inventories — those are other SIPRI products. The interactive host milex.sipri.org did not respond to automated GET (timeout / no HTTP code). Primary cite is sipri.org/databases/milex and the fact sheet (both 200).',
+    licenseNote:
+      'Attribute SIPRI Military Expenditure Database. The preview is a Fix Planet overview of spending level (larger budgets darker), not share of GDP, not a weapons-systems catalog, and not SIPRI’s branded yearbook cover art.',
+    imageAlt:
+      'Fix Planet overview choropleth of military spending level: darker blue where spending is in a larger-spender band, lighter land left unclassified — not SIPRI yearbook art and not Milex figures',
+  },
+  'conflict-barometer-hiik': {
+    title: 'Conflict Barometer (HIIK)',
+    hook: 'Annual conflict intensity by country and region from Heidelberg’s Conflict Barometer — intensity classes, not event pins and not battle-death totals.',
+    description:
+      'The Heidelberg Institute for International Conflict Research (HIIK) publishes the annual Conflict Barometer (Konfliktbarometer): a global inventory of political conflicts with intensity levels (from non-violent dispute through limited violence to war), regional chapters, static maps, and downloadable datasets. Latest PDF checked: Conflict Barometer 2025 (coba_2025.pdf). English and German hubs both resolve.',
+    whyOnShelf:
+      'ACLED is high-frequency event geography; UCDP is death accounting; GPI/FSI are country indices; SIPRI is spending. HIIK answers how intense is this conflict this year on a coded scale? — the missing intensity layer. HIIK hubs and PDFs returned 200, so no UN Peacekeeping substitute was needed.',
+    howToRead:
+      'An intensity class is HIIK’s coding for that conflict-year, not a UN Security Council resolution and not ACLED’s pin count. One country can host several conflicts at different intensities. Open the current Conflict Barometer and the static maps and datasets pages. Preview = Fix Planet overview after HIIK, not their cover art.',
+    caveats:
+      'Not this card: ACLED dashboard; UCDP GED; UN mission deployment maps (different question).',
+    licenseNote:
+      'Attribute Heidelberg Institute for International Conflict Research (HIIK). The preview is a Fix Planet overview, not a second ACLED dot field and not HIIK cover art.',
+    imageAlt:
+      'Fix Planet overview of conflict-intensity bands: deep red for a war-intensity orientation, orange for other violent-conflict orientation, and grey land left unclassified — not HIIK cover art and not ACLED pins',
   },
   'language-families': {
     title: 'Language families of the world',
@@ -789,6 +857,10 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   const rest = getMaps(locale).filter(
     (item) => item.slug !== slug && item.category !== current.category,
   );
+  if (current.category === 'conflicts') {
+    // List every Conflicts sibling. Do not fill the strip with Ethnic or Religion cards.
+    return same;
+  }
   if (current.category === 'political') {
     // Five political cards would otherwise crowd out the Conflicts siblings
     // that world-countries already cross-links. List every political sibling;

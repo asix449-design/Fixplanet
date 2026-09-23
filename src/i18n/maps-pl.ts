@@ -29,6 +29,52 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa Our World in Data zgonów w konfliktach zbrojnych: blady ląd, Ukraina oraz kilka krajów Afryki i Azji na pomarańczowo i czerwono',
   },
+  'global-peace-index': {
+    title: 'Globalny indeks pokoju (GPI)',
+    hook: 'Ranking pokojowości krajów od Institute for Economics & Peace — złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
+    description: 'GPI (IEP / Vision of Humanity) porównuje kraje złożonym indeksem pokoju.',
+    whyOnShelf: 'Inny obiekt niż ACLED (zdarzenia) i UCDP (zgony bojowe).',
+    howToRead: 'Kolor — pasmo rankingu, nie wyrok sądu. Otwierać mapę i raport GPI.',
+    caveats: 'Złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: zieleń — pasmo bardziej pokojowe, czerwień — mniej pokojowe, szara ziemia bez klasy. To nie grafika Vision of Humanity i nie wyniki GPI.',
+  },
+  'fragile-states-index': {
+    title: 'Indeks państw kruchych (FSI)',
+    hook: 'Oceny kruchości państw według nacisku i spójności — ryzyko kruchości, nie ofiary bojowe i nie ranking pokoju.',
+    description: 'FSI (Fund for Peace) — porównawcza skala nacisku na państwo i spójności.',
+    whyOnShelf: 'Nie mapa zdarzeń ACLED i nie GPI.',
+    howToRead: 'Patrzeć methodology i global data.',
+    caveats: 'Wysoki wynik ≠ wyrok i ≠ prognoza wojny na jutro.',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: ciemniej — wyższa kruchość na tym schemacie, jaśniej — niższa, średni ton bez klasy. To nie mapa Fund for Peace i nie wyniki FSI.',
+  },
+  'military-expenditure-sipri': {
+    title: 'Wydatki wojskowe (SIPRI)',
+    hook: 'Porównywalne serie wydatków wojskowych krajów od SIPRI — budżety i obciążenie, nie pinezki zdarzeń i nie katalog uzbrojenia.',
+    description: 'Milex (SIPRI) — wydatki, nie «kto zaczął wojnę» i nie liczba ofiar UCDP.',
+    whyOnShelf: 'Nie mylić z bazą transferów broni SIPRI.',
+    howToRead:
+      'Interaktywny milex.sipri.org w sprawdzeniu nie odpowiedział — opierać się na sipri.org/databases/milex i fact sheet.',
+    caveats: 'Wysokie wydatki ≠ agresor.',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: ciemniejszy błękit — wyższy poziom wydatków wojskowych, jaśniejszy ląd bez klasy. To nie okładka rocznika SIPRI i nie liczby Milex.',
+  },
+  'conflict-barometer-hiik': {
+    title: 'Barometr konfliktów (HIIK)',
+    hook: 'Roczna intensywność konfliktów według krajów i regionów od HIIK — klasy intensywności, nie pinezki zdarzeń i nie sumy ofiar.',
+    description: 'Conflict Barometer (HIIK) koduje intensywność konfliktów politycznych za rok.',
+    whyOnShelf: 'Inny obiekt niż ACLED i UCDP.',
+    howToRead: 'Otwierać aktualny PDF i mapy HIIK.',
+    caveats:
+      'Klasa intensywności ≠ rezolucja ONZ. Zamiana na mapę misji pokojowych ONZ niepotrzebna — HIIK odpowiada 200.',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: głęboka czerwień — orientacja natężenia wojny, pomarańcz — inna przemoc, szara ziemia bez klasy. To nie okładka HIIK i nie pinezki ACLED.',
+  },
   'language-families': {
     title: 'Rodziny językowe świata',
     hook: 'Lingwistyczna mapa spokrewnionych języków — przybliżenie geografii etnolingwistycznej, nie spis ludów.',
