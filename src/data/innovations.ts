@@ -889,6 +889,115 @@ export const innovationMeta: InnovationMeta[] = [
       ),
     ],
   },
+  {
+    slug: 'methanesat',
+    area: 'ai',
+    status: 'pilot',
+    image: img(
+      'methanesat.jpg',
+      'CSU/CIRA and NOAA/NESDIS',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Changes_in_the_Permian_Basin_Oil_Field_Over_the_Years_(CIRA_2024-05-23_-_202405230754_snpp_viirs_dnb_permianoil_nolabels0).png',
+    ),
+    sources: [
+      cite(
+        'MethaneSAT — successful launch (4 Mar 2024)',
+        'https://www.methanesat.org/project-updates/orbit-successful-methanesat-launch-represents-groundbreaking-mission-protect',
+      ),
+      cite(
+        'MethaneSAT — first look at a system-wide view (2 Feb 2026)',
+        'https://www.methanesat.org/project-updates/first-look-system-wide-view',
+      ),
+      cite(
+        'Varon et al., Atmos. Chem. Phys. 26, 5961–5980 (2026)',
+        'https://acp.copernicus.org/articles/26/5961/2026/',
+      ),
+      cite(
+        'MethaneSAT — anomaly investigation (6 Nov 2025)',
+        'https://www.methanesat.org/project-updates/results-anomaly-investigation-loss-communication-methanesat',
+      ),
+    ],
+  },
+  {
+    slug: 'firesat',
+    area: 'ai',
+    status: 'pilot',
+    image: img(
+      'firesat.jpg',
+      'Pierre Markuse',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Earth_from_Space_Wildfires_in_Portugal_and_Spain_(28347392594).jpg',
+    ),
+    sources: [
+      cite(
+        'Earth Fire Alliance — first three operational FireSats reach orbit (7 Jul 2026)',
+        'https://earthfirealliance.org/news-article/earth-fire-alliances-first-three-operational-firesats-reach-orbit/',
+      ),
+      cite(
+        'Google Research — FireSat',
+        'https://sites.research.google/gr/wildfires/firesat/',
+      ),
+      cite(
+        'Google — FireSat announcement (16 Sep 2024)',
+        'https://blog.google/company-news/outreach-and-initiatives/sustainability/google-ai-wildfire-detection/',
+      ),
+      cite(
+        'Muon Space — operational launch (7 Jul 2026)',
+        'https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/',
+      ),
+    ],
+  },
+  {
+    slug: 'google-flood-hub',
+    area: 'ai',
+    status: 'deployed',
+    image: img(
+      'google-flood-hub.jpg',
+      'NASA Earth Observatory / Wanmei Liang; Landsat (USGS) and MODIS',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Tanzania_flood_rufiji_river_on_20240429.jpg',
+    ),
+    sources: [
+      cite(
+        'Nearing et al., Nature — global flood prediction (20 Mar 2024)',
+        'https://www.nature.com/articles/s41586-024-07145-1',
+      ),
+      cite(
+        'Google — expanding flood forecasting coverage (11 Nov 2024)',
+        'https://blog.google/innovation-and-ai/products/expanding-flood-forecasting-coverage-helping-partners/',
+      ),
+      cite('Flood Hub', 'https://g.co/floodhub'),
+      cite(
+        'Google Research — floods',
+        'https://sites.research.google/floods/',
+      ),
+    ],
+  },
+  {
+    slug: 'alphaearth-foundations',
+    area: 'ai',
+    status: 'deployed',
+    image: img(
+      'alphaearth-foundations.jpg',
+      'NASA Earth Observatory / Michala Garrison',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:An_Agricultural_Mosaic_in_Taiwan_(1215103_-_taiwan_agriculture_oli2_20260318).jpg',
+    ),
+    sources: [
+      cite(
+        'Google DeepMind — AlphaEarth Foundations (30 Jul 2025)',
+        'https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/',
+      ),
+      cite(
+        'Earth Engine — Satellite Embedding V1 annual',
+        'https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL',
+      ),
+      cite(
+        'arXiv 2507.22291 — AlphaEarth Foundations',
+        'https://arxiv.org/abs/2507.22291',
+      ),
+    ],
+  },
 ];
 
 export function isInnovationArea(value: string | undefined): value is InnovationArea {

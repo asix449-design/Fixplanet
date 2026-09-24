@@ -329,5 +329,37 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:PACE_Observes_Namesake_Plankton,_Aerosols,_Clouds_and_Ocean_Ecosystem_(SVS31294_-_hyperw_PACE_OCI_2024040820240408).png",
     "artist": "NASA Scientific Visualization Studio",
     "license": "Public domain"
+  },
+  {
+    "slug": "methanesat",
+    "file": "methanesat.jpg",
+    "commonsTitle": "Changes in the Permian Basin Oil Field Over the Years (CIRA 2024-05-23 - 202405230754 snpp viirs dnb permianoil nolabels0).png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Changes_in_the_Permian_Basin_Oil_Field_Over_the_Years_(CIRA_2024-05-23_-_202405230754_snpp_viirs_dnb_permianoil_nolabels0).png",
+    "artist": "CSU/CIRA and NOAA/NESDIS",
+    "license": "Public domain"
+  },
+  {
+    "slug": "firesat",
+    "file": "firesat.jpg",
+    "commonsTitle": "Earth from Space Wildfires in Portugal and Spain (28347392594).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Earth_from_Space_Wildfires_in_Portugal_and_Spain_(28347392594).jpg",
+    "artist": "Pierre Markuse",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "google-flood-hub",
+    "file": "google-flood-hub.jpg",
+    "commonsTitle": "Tanzania flood rufiji river on 20240429.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tanzania_flood_rufiji_river_on_20240429.jpg",
+    "artist": "NASA Earth Observatory / Wanmei Liang; Landsat (USGS) and MODIS",
+    "license": "Public domain"
+  },
+  {
+    "slug": "alphaearth-foundations",
+    "file": "alphaearth-foundations.jpg",
+    "commonsTitle": "An Agricultural Mosaic in Taiwan (1215103 - taiwan agriculture oli2 20260318).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_Agricultural_Mosaic_in_Taiwan_(1215103_-_taiwan_agriculture_oli2_20260318).jpg",
+    "artist": "NASA Earth Observatory / Michala Garrison",
+    "license": "Public domain"
   }
 ]

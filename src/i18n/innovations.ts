@@ -79,7 +79,7 @@ const pageEn: InnovationsPage = {
       'Carbon removal, circular enzymes, coral husbandry — and now biodiversity evidence, nature-risk screens, and ocean-colour missions from 2024 on.',
     energy:
       'Dense energy that still obeys thermodynamics — fusion, geothermal, storage, hydrogen with losses stated, fission, space solar — and why a closed machine cannot run forever.',
-    ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, and recycling. Weather AI still needs the satellites.',
+    ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, and recycling — plus methane and fire EO, flood AI, and geospatial embeddings from 2024 on. Weather AI still needs the satellites.',
   },
   status: {
     research: 'Research',
@@ -128,7 +128,7 @@ const pageRu: InnovationsPage = {
       'Улавливание углерода, ферменты, кораллы — и теперь доказательства биоразнообразия, скрининг рисков для природы и миссии цвета океана с 2024 года.',
     energy:
       'Плотная энергия в рамках термодинамики — термоядерный синтез, геотермия, накопители, водород с названными потерями, деление ядра, космос — и почему замкнутая машина не может крутиться вечно.',
-    ai: 'Модели и машины для систем Земли, материалов, сетей, белков и сортировки отходов. Погодный ИИ по-прежнему нуждается в спутниках.',
+    ai: 'Модели для систем Земли, материалов, сетей, белков и переработки — плюс EO метана и пожаров, ИИ паводков и геоэмбеддинги с 2024. Погодному ИИ по-прежнему нужны спутники.',
   },
   status: {
     research: 'Исследование',
@@ -177,7 +177,7 @@ const pagePl: InnovationsPage = {
       'Usuwanie węgla, enzymy, korale — a teraz dowody bioróżnorodności, screening ryzyka dla przyrody i misje koloru oceanu od 2024.',
     energy:
       'Gęsta energia zgodna z termodynamiką — fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity — oraz dlaczego zamknięta maszyna nie może kręcić się wiecznie.',
-    ai: 'Modele i maszyny dla systemów Ziemi, materiałów, sieci, białek i recyklingu. Pogodowe SI nadal potrzebuje satelitów.',
+    ai: 'Modele dla systemów Ziemi, materiałów, sieci, białek i recyklingu — plus EO metanu i pożarów, AI powodzi i geo-embeddingi od 2024. AI pogodowe nadal potrzebuje satelitów.',
   },
   status: {
     research: 'Badania',
@@ -226,7 +226,7 @@ const pageLv: InnovationsPage = {
       'Oglekļa uztveršana, enzīmi, koraļļi — un tagad bioloģiskās daudzveidības pierādījumi, dabas riska skrīnings un okeāna krāsas misijas no 2024. gada.',
     energy:
       'Blīva enerģija termodinamikas ietvaros — kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar nosauktiem zudumiem, skaldīšana, Saule no orbītas — un kāpēc slēgta mašīna nevar griezties mūžīgi.',
-    ai: 'Modeļi un mašīnas Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un šķirošanai. Laikapstākļu MI joprojām vajag satelītus.',
+    ai: 'Modeļi Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un pārstrādei — plus metāna un uguns EO, plūdu AI un ģeoembeddingi no 2024. Laikapstākļu AI joprojām vajag satelītus.',
   },
   status: {
     research: 'Pētījums',
