@@ -559,6 +559,46 @@
     "license": "Public domain"
   },
   {
+    "slug": "rusty-patched-bumble-bee",
+    "file": "rusty-patched-bumble-bee.jpg",
+    "commonsTitle": "Rusty Patched Bumble Bee on Wild Bergamot (28626833097).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rusty_Patched_Bumble_Bee_on_Wild_Bergamot_(28626833097).jpg",
+    "artist": "USFWS Midwest Region",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "european-stag-beetle",
+    "file": "european-stag-beetle.jpg",
+    "commonsTitle": "Bamberg Hain Hirschkäfer focus stacked-20240520-RM-103648.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg",
+    "artist": "Reinhold Möller",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "hermit-beetle",
+    "file": "hermit-beetle.jpg",
+    "commonsTitle": "Osmoderma eremita, Urwald Sababurg.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osmoderma_eremita,_Urwald_Sababurg.jpg",
+    "artist": "Nemracc",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "salt-creek-tiger-beetle",
+    "file": "salt-creek-tiger-beetle.jpg",
+    "commonsTitle": "Ellipsoptera nevadica lincolniana.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ellipsoptera_nevadica_lincolniana.jpg",
+    "artist": "Kai243",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "wetapunga",
+    "file": "wetapunga.jpg",
+    "commonsTitle": "Deinacrida heteracantha 12260329.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_12260329.jpg",
+    "artist": "Shaun Lee",
+    "license": "CC BY 4.0"
+  },
+  {
     "slug": "cattle",
     "file": "cattle.jpg",
     "commonsTitle": "Hereford cattle.jpg",

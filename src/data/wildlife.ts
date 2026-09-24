@@ -1214,6 +1214,130 @@ export const speciesMeta: SpeciesMeta[] = [
     ],
   },
   {
+    slug: 'rusty-patched-bumble-bee',
+    scientificName: 'Bombus affinis',
+    status: 'insects',
+    image: commons(
+      'rusty-patched-bumble-bee.jpg',
+      'USFWS Midwest Region / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Rusty_Patched_Bumble_Bee_on_Wild_Bergamot_(28626833097).jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Rusty patched bumble bee',
+        'https://www.fws.gov/species/rusty-patched-bumble-bee-bombus-affinis',
+      ),
+    ],
+  },
+  {
+    slug: 'european-stag-beetle',
+    scientificName: 'Lucanus cervus',
+    status: 'insects',
+    iucn: 'NT',
+    image: commons(
+      'european-stag-beetle.jpg',
+      'Reinhold Möller / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Lucanus cervus (Europe / EU27)',
+        'https://www.iucnredlist.org/species/239951016/213072777',
+      ),
+      cite(
+        'DOI — IUCN assessment record',
+        'https://doi.org/10.2305/iucn.uk.2025-2.rlts.t239951016a213072777.en',
+      ),
+      cite('EUNIS — Lucanus cervus', 'https://eunis.eea.europa.eu/species/221'),
+      cite(
+        'JNCC — UK Habitats Directive Art.17 S1083 (2019)',
+        'https://jncc.gov.uk/jncc-assets/Art17/S1083-UK-Habitats-Directive-Art17-2019.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'hermit-beetle',
+    scientificName: 'Osmoderma eremita',
+    status: 'insects',
+    iucn: 'NT',
+    image: commons(
+      'hermit-beetle.jpg',
+      'Nemracc / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Osmoderma_eremita,_Urwald_Sababurg.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Osmoderma eremita',
+        'https://www.iucnredlist.org/species/15632/283806710',
+      ),
+      cite(
+        'DOI — IUCN assessment record',
+        'https://doi.org/10.2305/iucn.uk.2025-2.rlts.t15632a283806710.en',
+      ),
+    ],
+  },
+  {
+    slug: 'salt-creek-tiger-beetle',
+    scientificName: 'Cicindela nevadica lincolniana',
+    status: 'insects',
+    image: commons(
+      'salt-creek-tiger-beetle.jpg',
+      'Kai243 / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Ellipsoptera_nevadica_lincolniana.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Salt Creek tiger beetle',
+        'https://www.fws.gov/species/salt-creek-tiger-beetle-cicindela-nevadica-lincolniana',
+      ),
+      cite(
+        'Nebraska Game and Parks — Salt Creek tiger beetle',
+        'https://outdoornebraska.gov/learn/nebraska-wildlife/nebraska-animals/insects/salt-creek-tiger-beetle/',
+      ),
+      cite(
+        'USFWS — Salt Creek tiger beetle recovery plan (PDF)',
+        'https://ecos.fws.gov/docs/recovery_plan/SCTB%20Signed%20Final%20Recovery%20Plan.pdf',
+      ),
+      cite(
+        'UNL — 30-year visual population estimates (open PDF)',
+        'https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2041&context=entomologyfacpub',
+      ),
+    ],
+  },
+  {
+    slug: 'wetapunga',
+    scientificName: 'Deinacrida heteracantha',
+    status: 'insects',
+    image: commons(
+      'wetapunga.jpg',
+      'Shaun Lee / Wikimedia Commons',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_12260329.jpg',
+    ),
+    primarySources: [
+      cite(
+        'NZTCS — Deinacrida heteracantha',
+        'https://nztcs.org.nz/assessments/19134',
+      ),
+      cite(
+        'DOC — Wetapunga',
+        'https://www.doc.govt.nz/nature/native-animals/invertebrates/weta/wetapunga/',
+      ),
+      cite(
+        'DOC — Best practice translocation of giant wētā (PDF)',
+        'https://www.doc.govt.nz/globalassets/documents/getting-involved/translocation/translocation-best-practice-giant-weta.pdf',
+      ),
+      cite(
+        'Auckland Zoo — Bay of Islands return (2020)',
+        'https://www.aucklandzoo.co.nz/news/were-returning-wetapunga-to-the-bay-of-islands-after-a-180-year-absence',
+      ),
+    ],
+  },
+  {
     slug: 'cattle',
     scientificName: 'Bos taurus / Bos indicus',
     status: 'domesticates',

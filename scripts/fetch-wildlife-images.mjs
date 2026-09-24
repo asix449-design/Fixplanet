@@ -337,6 +337,15 @@ const candidates = {
   'franklins-bumble-bee': ['Bombus franklini.jpg'],
   'american-burying-beetle': ['American Burying Beetle.jpg'],
   'hines-emerald': ['Somatochlora hineana.jpg'],
+  'rusty-patched-bumble-bee': [
+    'Rusty Patched Bumble Bee on Wild Bergamot (28626833097).jpg',
+  ],
+  'european-stag-beetle': [
+    'Bamberg Hain Hirschkäfer focus stacked-20240520-RM-103648.jpg',
+  ],
+  'hermit-beetle': ['Osmoderma eremita, Urwald Sababurg.jpg'],
+  'salt-creek-tiger-beetle': ['Ellipsoptera nevadica lincolniana.jpg'],
+  wetapunga: ['Deinacrida heteracantha 12260329.jpg'],
   cattle: ['Hereford cattle.jpg', 'Holstein dairy cows.jpg'],
   chicken: ['Gallus gallus domesticus.jpg', 'Domestic chicken.jpg'],
   sheep: ['Ovis aries.jpg', 'Domestic sheep.jpg'],

@@ -127,13 +127,13 @@ export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
     },
     'franklins-bumble-bee': {
       commonName: 'Franklin’s bumble bee',
-      hook: 'A bumble bee of a tiny Oregon–California range that collapsed in the 1990s–2000s. This shelf’s only bee.',
+      hook: 'A bumble bee of a tiny Oregon–California range that collapsed in the 1990s–2000s.',
       imageAlt: 'Franklin’s bumble bee on a flower, yellow and black, photographed for USDA',
       what: 'Franklin’s bumble bee (Bombus franklini) is a bumble bee with one of the smallest ranges of any Bombus — a sliver of southern Oregon and northern California. IUCN lists it as Critically Endangered. Surveys from the 1990s into the 2000s documented a collapse.',
       range:
         'A short stretch of the Klamath-Siskiyou region, historically from southern Oregon into northern California. It was never a continent-wide bee.',
       story:
-        'Once locally familiar to specialists, it became vanishingly rare within about a decade. Disease spillover from managed bees, habitat loss, and a small range are the usual suspects; the last widely accepted records are sparse. This is the shelf’s one bee card — not a second species and not a stand-in for every declining Bombus.',
+        'Once locally familiar to specialists, it became vanishingly rare within about a decade. Disease spillover from managed bees, habitat loss, and a small range are the usual suspects; the last widely accepted records are sparse. The range was always a short Oregon–California sliver — not a stand-in for every declining Bombus.',
       when: 'Critically Endangered now. Range always tiny; numbers collapsed recently.',
       humanRole:
         'A small endemic range plus the pressures people added — pathogens, farms, and a changed landscape.',
@@ -164,6 +164,81 @@ export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
       when: 'Federally listed in the United States. Tied to a rare wetland type.',
       humanRole: 'Drainage, quarry, and development of calcareous fens — the only habitat the species uses.',
       sources: 'U.S. Fish and Wildlife Service species page (Somatochlora hineana).',
+    },
+    'rusty-patched-bumble-bee': {
+      commonName: 'Rusty patched bumble bee',
+      hook: 'Once common across the eastern United States and southern Canada; after a steep early-2000s crash it was listed under the U.S. Endangered Species Act in 2017, and recent records cover only about 13 U.S. states plus one Canadian province.',
+      imageAlt:
+        'A rusty patched bumble bee on purple wild bergamot, rusty abdominal patch showing',
+      what: 'One of roughly 21 eastern U.S. bumble bee species — a pollen-storing social bee whose workers show a distinctive rusty patch on the abdomen (hence the name). It is Bombus affinis, not Franklin’s bumble bee (Bombus franklini).',
+      range:
+        'Historical range from Georgia north into southern Quebec and Ontario and west toward the Dakotas. Since about 2000 the U.S. Fish and Wildlife Service overview confirms it from far fewer jurisdictions: about 13 U.S. states and one Canadian province.',
+      story:
+        'Pathogens, pesticides, habitat loss, competition with managed bees, and climate stress stacked into a range collapse. Franklin’s bumble bee is a different species with a tiny Oregon–California range. This bee was once common across the eastern half of the continent.',
+      when: 'U.S. Fish and Wildlife Service: federally Endangered (2017); recovery plan finalized 2021. Recent records cover about 13 U.S. states and one Canadian province.',
+      humanRole:
+        'Pesticides, pathogens from managed bees, lost habitat, and a changed climate cut a once-common eastern bee down to a fraction of its map. The 2017 Endangered Species Act listing and the 2021 recovery plan are the federal response.',
+      sources:
+        'U.S. Fish and Wildlife Service — rusty patched bumble bee (Bombus affinis).',
+    },
+    'european-stag-beetle': {
+      commonName: 'European stag beetle',
+      hook: 'Europe’s largest beetle and a Habitats Directive flagship for rotting broadleaf wood — IUCN’s 2023 Europe / EU27 assessment lists it Near Threatened as breeding habitat keeps shrinking even while citizen-science records rise.',
+      imageAlt: 'A male European stag beetle with large antler-like mandibles on a green leaf',
+      what: 'A big lucanid (Lucanus cervus) whose larvae spend years in moist, decaying broadleaf wood — stumps, buried roots, veteran trees. Males carry the famous “antlers”; females lack them. It is a deadwood specialist, not a carrion beetle.',
+      range:
+        'Europe. Breeding needs continuity of moist, decaying broadleaf wood. Adults wander, so a sighting is not the same as a breeding stump.',
+      story:
+        'Rising records from citizen science do not equal more breeding sites — many sightings are wanderers. The Red List treats continuing loss of deadwood continuity as the real signal. Habitats Directive Article 17 reporting has shown unfavourable status in a substantial share of Member States across successive cycles.',
+      when: 'IUCN Europe / EU27 (2023): Near Threatened under B2b(ii,iii). Larval development typically takes 4–5 years, so a gap in deadwood bites for more than a decade.',
+      humanRole:
+        'People remove stumps, fell veteran broadleaf trees, and break the continuity of rotting wood the larvae need. The beetle is a Habitats Directive flagship for that wood.',
+      sources:
+        'IUCN Red List (Lucanus cervus, Europe / EU27, Near Threatened, 2023); EUNIS; JNCC UK Habitats Directive Article 17 S1083 (2019).',
+    },
+    'hermit-beetle': {
+      commonName: 'Hermit beetle',
+      hook: 'A scarab that lives almost its whole life in the wood mould of old hollow trees across Europe — IUCN (2023) lists it Near Threatened because veteran trees are still being lost and the next generation of hollows is decades behind.',
+      imageAlt: 'A dark brown hermit beetle on the rough bark of an old tree',
+      what: 'An obligate saproxylic scarab (Osmoderma eremita) of hollow broadleaf trees. Adults rarely fly far; populations sit inside single trees or tiny tree groups for generations.',
+      range:
+        'Europe and the EU27. The extent of occurrence is large, but the area of occupancy for breeding sites is estimated at only about 2,000–2,500 km², and those sites are severely fragmented.',
+      story:
+        'Stag beetle larvae need a volume of moist deadwood. Hermit beetles need a cavity that holds wood mould, and the next generation of hollows is decades behind the trees being lost now. Because adults rarely fly far, a gap between veteran trees can isolate a population for generations.',
+      when: 'IUCN (2023): Near Threatened, B2ab(ii,iii,v). Old hollow trees are in continuous decline, with a long regeneration lag.',
+      humanRole:
+        'Felling veteran hollow trees, and failing to keep the next generation of cavities, removes the only places this beetle can breed.',
+      sources: 'IUCN Red List (Osmoderma eremita, Near Threatened, 2023).',
+    },
+    'salt-creek-tiger-beetle': {
+      commonName: 'Salt Creek tiger beetle',
+      hook: 'A tiger beetle endemic to eastern Nebraska’s salt flats — after wetland drainage around Lincoln, intensive surveys since 1991 have counted as few as 153 adults (2005) and a peak of 777 (2002), all in a handful of remnant sites.',
+      imageAlt: 'A Salt Creek tiger beetle, metallic green-bronze, on pale saline mud',
+      what: 'A small, fast predatory beetle of bare saline mud along Salt Creek and Little Salt Creek. Larvae dig burrows in the salt crust; adults hunt on open flats. Taxonomy sometimes uses Ellipsoptera nevadica lincolniana; the U.S. Fish and Wildlife Service page still leads with Cicindela nevadica lincolniana.',
+      range:
+        'Eastern Nebraska’s saline wetlands, on remnant salt flats along Salt Creek and Little Salt Creek north of Lincoln. It is not a carrion beetle and it is not a widespread tiger beetle.',
+      story:
+        'Levees, channelization, and the growth of Lincoln erased most of the salt marsh, leaving one fragile metapopulation. Nebraska Game and Parks survey synthesis: six populations in 1991, and three of those later lost. Every recent count is from a handful of remnant sites.',
+      when: 'Endangered under the U.S. Endangered Species Act. Intensive surveys since 1991 include a high of 777 adults (2002), a low of 153 (2005), and 374 counted in 2012. The Service species page and the signed recovery plan document the listing and the recovery outline.',
+      humanRole:
+        'Drainage, levees, channelization, and city growth around Lincoln removed most of the saline mudflats the beetle hunts and burrows in.',
+      sources:
+        'U.S. Fish and Wildlife Service species page; Nebraska Game and Parks; USFWS Salt Creek tiger beetle recovery plan; University of Nebraska–Lincoln visual population estimates.',
+    },
+    wetapunga: {
+      commonName: 'Wetapunga',
+      hook: 'New Zealand’s largest wētā — once reduced to Hauturu-o-Toi / Little Barrier, then bred and moved: Auckland Zoo and partners have released more than 5,000 animals onto predator-free islands, and NZTCS now rates the species Nationally Increasing (still Threatened / conservation-dependent).',
+      imageAlt: 'A wetapunga, a large flightless wētā, on a green leaf',
+      what: 'Deinacrida heteracantha — a giant flightless orthopteran, the wētāpunga. Adult females average about 40 g; the heaviest recorded gravid female reached about 71 g. Nocturnal leaf-eaters that also move seeds in nutrient-rich droppings.',
+      range:
+        'Once reduced to Hauturu-o-Toi / Little Barrier Island. Captive-bred animals now also live on other predator-free islands, including Motuora, Tiritiri Matangi, and sites in the Bay of Islands.',
+      story:
+        'After Pacific rats were cleared from Little Barrier, the Department of Conservation and Auckland Zoo built captive lines and moved animals to Motuora, Tiritiri Matangi, Bay of Islands sites, and other pest-free islands. It is a managed comeback that still depends on predator-free habitat.',
+      when: 'New Zealand Threat Classification System: Nationally Increasing, still under the Threatened umbrella and still conservation-dependent. Population on the order of 1,000–5,000 mature individuals, on multiple predator-free islands; the assessment reads the trend as an increase of more than 10 percent, and notes also record more than 30 percent. Auckland Zoo (2020): more than 5,000 released; the Bay of Islands release opened islands 6–8 in that island set.',
+      humanRole:
+        'Introduced predators reduced the wētā to one island. Rat clearance, captive breeding, and island releases by the Department of Conservation and Auckland Zoo put animals back — only where predators stay out.',
+      sources:
+        'NZTCS assessment (Deinacrida heteracantha); Department of Conservation Wetapunga page and giant wētā translocation guidance; Auckland Zoo, 2020.',
     },
     cattle: {
       commonName: 'Cattle',
