@@ -649,7 +649,7 @@ export const lawMeta: LawMeta[] = [
         url: 'https://www.cms.int/',
       },
       {
-        label: 'CMS — Convention text (alt path)',
+        label: 'CMS — Convention text',
         url: 'https://www.cms.int/en/page/convention-text',
       },
     ],
@@ -701,7 +701,7 @@ export const lawMeta: LawMeta[] = [
         url: 'https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=104',
       },
       {
-        label: 'CoE — Treaty 104 (alt list path)',
+        label: 'CoE — Treaty 104',
         url: 'https://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/104',
       },
       {
@@ -757,7 +757,7 @@ export const lawMeta: LawMeta[] = [
         url: 'https://www.fws.gov/law/lacey-act',
       },
       {
-        label: 'NOAA Fisheries — laws hub (Lacey section on topic pages)',
+        label: 'NOAA Fisheries — laws and policies',
         url: 'https://www.fisheries.noaa.gov/topic/laws-policies/marine-mammal-protection-act',
       },
     ],
