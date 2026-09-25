@@ -14,6 +14,7 @@ import {
   type TodayIdpCardId,
   type TodayRegionId,
 } from '../data/migration-today';
+import type { TodayRefugeeCardId } from '../i18n/migration';
 import { getMigrationPage, resolveLocale } from '../i18n';
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -252,6 +253,19 @@ const idpCards = idpCardOrder.map((id) => ({
   ...idpFigures[id],
 }));
 
+const refugeeCardOrder: TodayRefugeeCardId[] = [
+  'refugees-unhcr-stock-2025',
+  'refugees-top-hosts-2025',
+  'refugees-top-origins-2025',
+  'refugees-neighbouring-hosts-2025',
+  'refugees-returns-2025',
+];
+
+const refugeeCards = refugeeCardOrder.map((id) => ({
+  id,
+  ...ui.refugeesCards[id],
+}));
+
 const idpCrises = idp.crises.map((crisis) => {
   const copy = ui.idpCrisisCopy[crisis.id];
   return {
@@ -287,6 +301,9 @@ const interArrows = todayDataset.corridors
   <div class="today-mig-layers" role="group" aria-label={ui.layersLabel}>
     <button type="button" class="today-mig-layer" data-today-layer="camps" aria-pressed="false">
       {ui.layerCamps}
+    </button>
+    <button type="button" class="today-mig-layer" data-today-layer="refugees" aria-pressed="false">
+      {ui.layerRefugees}
     </button>
     <button type="button" class="today-mig-layer" data-today-layer="detections" aria-pressed="false">
       {ui.layerDetections}
@@ -547,6 +564,40 @@ const interArrows = todayDataset.corridors
     <p class="oceans-source-note">{ui.idpNoChoropleth}</p>
   </section>
 
+  <section class="today-mig-layer-panel" data-today-refugees-list hidden>
+    <h3>{ui.refugeesTitle}</h3>
+    <p>{ui.refugeesLead}</p>
+    <p class="today-mig-stock-tag">{ui.refugeesDefinition}</p>
+    <ul class="today-mig-idp-grid">
+      {
+        refugeeCards.map((card) => (
+          <li class="today-mig-idp-card" id={card.id}>
+            <p class="today-mig-idp-tag">{card.tag}</p>
+            <h4>{card.title}</h4>
+            <p class="today-mig-idp-figure">
+              <strong>{card.figure}</strong>
+              <span>{card.unit}</span>
+            </p>
+            <p class="today-mig-idp-hook">{card.hook}</p>
+            <dl class="today-mig-idp-splits">
+              {card.rows.map((row) => (
+                <div>
+                  <dt>{row.label}</dt>
+                  <dd>{row.figure}</dd>
+                </div>
+              ))}
+            </dl>
+            {card.detail.map((para) => (
+              <p class="today-mig-idp-detail">{para}</p>
+            ))}
+          </li>
+        ))
+      }
+    </ul>
+    <p class="oceans-source-note">{ui.refugeesHonesty}</p>
+    <p class="oceans-source-note">{ui.refugeesNoChoropleth}</p>
+  </section>
+
   <p class="oceans-source-note today-mig-intra">{ui.intraCaption}</p>
   <CitedSourceList heading={page.sourcesLabel} sources={todaySources} />
 </section>
@@ -592,6 +643,7 @@ const interArrows = todayDataset.corridors
     const campsList = root.querySelector('[data-today-camps-list]');
     const detectionsList = root.querySelector('[data-today-detections-list]');
     const idpList = root.querySelector('[data-today-idp-list]');
+    const refugeesList = root.querySelector('[data-today-refugees-list]');
     const layerButtons = root.querySelectorAll('[data-today-layer]');
     const campButtons = root.querySelectorAll('[data-today-camp]');
     const routeButtons = root.querySelectorAll('[data-today-route]');
@@ -767,6 +819,9 @@ const interArrows = todayDataset.corridors
       }
       if (name === 'idp') {
         if (idpList) idpList.hidden = !on;
+      }
+      if (name === 'refugees') {
+        if (refugeesList) refugeesList.hidden = !on;
       }
     }
 

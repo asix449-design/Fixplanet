@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migrācija',
   hubLead: [
     'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Šodien ir šajā lapā: šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Atsevišķs slānis ir cilvēki, kas pārvietoti savas valsts iekšienē (IDMC). Zemāk divi plaukti. Cilvēku migrācijas ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Dzīvnieku migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
+    'Šodien ir šajā lapā: šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Atsevišķs slānis ir cilvēki, kas pārvietoti savas valsts iekšienē (IDMC). Nometņu slānis rāda nosauktas vietas, ne pasaules bēgļu krājumu; šis krājums ir slānī „Bēgļi (UNHCR)”. Zemāk divi plaukti. Cilvēku migrācijas ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Dzīvnieku migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',
@@ -48,7 +48,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'Šodienas starptautiskās migrācijas karte. Uz plāksnītēm ir ANO galveno reģionu neto migrācija 2023. gadam (World Population Prospects 2024) — ne izdomātas ierašanās un izbraukšanas. Atsevišķi ieslēdzamas ir UNHCR nometnes, ES ārējo robežu konstatējumi (Frontex) un iekšējā pārvietošana (IDMC). Bieži dominē iekšreģionu kustība; Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
+      'Šodienas starptautiskās migrācijas karte. Uz plāksnītēm ir ANO galveno reģionu neto migrācija 2023. gadam (World Population Prospects 2024) — ne izdomātas ierašanās un izbraukšanas. Atsevišķi ieslēdzami ir bēgļi UNHCR mandātā, nosauktās nometnes, ES ārējo robežu konstatējumi (Frontex) un iekšējā pārvietošana (IDMC). Nometņu slānis rāda nosauktas vietas, ne pasaules bēgļu krājumu; šis krājums ir slānī „Bēgļi (UNHCR)”. Bieži dominē iekšreģionu kustība; Āfrika → Eiropa nav zīmēta kā pasaules galvenais stāsts.',
     humans:
       'Vispirms kartes: dokumentētu lielo cilvēku migrāciju notikumu skala, tad maza figūra un enciklopēdija. Homo sapiens radās Āfrikā ap 300 000 gadiem. Katrā kartītē ir kad, kur un kāpēc — klimats, ledus, zemkopība, karš, tirdzniecība, impērija, verdzība — tikai tur, kur to tur zinātne. Tā nav karte par visiem cilvēkiem ik pēc piecdesmit gadiem. Atila un tautu staigāšana paliek šeit; dzīvās kustības ir Lielajās migrācijās.',
     'great-migrations':
