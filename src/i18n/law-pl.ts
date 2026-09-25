@@ -365,14 +365,14 @@ export const pl: Record<string, LawCopy> = {
     hook: 'Traktat ONZ dla zwierząt migrujących przez granice. Załącznik I — ścisła ochrona; Załącznik II — umowy państw areału. To nie CITES i nie krajowa ustawa siedliskowa.',
     imageAlt:
       'Gnu w ruchu przez trawę Serengeti — transgraniczna migracja tego rodzaju, który konwencja z Bonn każe uzgadniać państwom areału',
-    jurisdiction: 'Międzynarodowy (Strony; aktualna lista na cms.int)',
+    jurisdiction: 'Międzynarodowy (Strony konwencji)',
     officialName: 'Konwencja o ochronie wędrownych gatunków dzikich zwierząt',
     citation:
       'Konwencja o ochronie wędrownych gatunków dzikich zwierząt; Bonn, 23 czerwca 1979; weszła w życie 1 listopada 1983',
     yearStatus:
       'Sporządzona w Bonn 23 czerwca 1979. Weszła w życie 1 listopada 1983. Depozytariusz: Republika Federalna Niemiec.',
     what: 'Konwencja ramowa UNEP: siedliska i zakaz pozyskania (załącznik I); AGREEMENTS lub MoU (załącznik II).',
-    where: 'Od 1 listopada 1983. Lista Stron — na cms.int.',
+    where: 'Od 1 listopada 1983. Lista Stron jest opublikowana na cms.int.',
     effects:
       'Zamierzony skutek: uzgodnić ochronę wzdłuż całych tras przelotu i wędrówki oraz dać początek porozumieniom pochodnym (AEWA, EUROBATS i inne instrumenty rodziny CMS). Sam tekst konwencji nie grodzi korytarza.',
     caveats: 'Nie system pozwoleń handlowych (CITES). Nie Birds/Habitats ani ESA.',
@@ -380,7 +380,7 @@ export const pl: Record<string, LawCopy> = {
   },
   'birds-directive': {
     title: 'Dyrektywa ptasia UE',
-    hook: 'Pierwsza unijna dyrektywa przyrodnicza. Chroni wszystkie naturalnie występujące dzikie ptaki i napędza OSO w Natura 2000 — para z już obecną dyrektywą siedliskową.',
+    hook: 'Pierwsza unijna dyrektywa przyrodnicza. Chroni wszystkie naturalnie występujące dzikie ptaki i napędza OSO w Natura 2000 — para z dyrektywą siedliskową.',
     imageAlt:
       'Bielik nad wodą w Svolvær w Norwegii — dziki europejski ptak tego rodzaju, którego dyrektywa ptasia każe chronić państwom członkowskim',
     jurisdiction: 'Unia Europejska',
@@ -393,7 +393,7 @@ export const pl: Record<string, LawCopy> = {
     where: 'Obowiązuje; tekst 2009/147/WE. Konsultacja uproszczeń z 2026 roku nie jest uchyleniem.',
     effects:
       'Zamierzony skutek: zatrzymać spadek dzikich ptaków, odbudować siedliska i zbudować sieć OSO. Komisja podaje ponad 5400 obszarów o powierzchni powyżej 832 000 km². Spadek ptaków krajobrazu rolniczego pozostaje udokumentowaną presją; dyrektywa jest ramą prawną, nie gwarancją odbudowy wskaźników.',
-    caveats: 'Nie CITES. Nie łączyć w jedną kartę z Habitats.',
+    caveats: 'Nie CITES. Dyrektywa siedliskowa jest osobnym aktem.',
     sourcesNote: 'Strona Komisji Europejskiej o dyrektywie ptasiej; tekst dyrektywy 2009/147/WE w EUR-Lex.',
   },
   'bern-convention': {
@@ -410,7 +410,7 @@ export const pl: Record<string, LawCopy> = {
     where: 'ETS nr 104; od 1 czerwca 1982.',
     effects:
       'Zamierzony skutek: wspólna europejska podstawa ochrony gatunków i siedlisk obok dyrektyw UE i poza nimi; obszary sieci Emerald dla Stron spoza UE. Miękkie zalecenia i tak wymagają wdrożenia krajowego, żeby zaczęły działać.',
-    caveats: 'Nie CITES ani CMS. Nie zastępuje Birds/Habitats w prawie UE.',
+    caveats: 'Nie CITES ani CMS. Dyrektywy ptasia i siedliskowa wiążą państwa członkowskie jako prawo UE. Sieć Emerald w ramach konwencji berneńskiej ma cele zbliżone do Natura 2000, ale inną podstawę prawną.',
     sourcesNote: 'Strona konwencji berneńskiej Rady Europy, traktat nr 104 i PDF tekstu konwencji.',
   },
   'marine-mammal-protection-act': {
@@ -425,7 +425,7 @@ export const pl: Record<string, LawCopy> = {
     where: 'Federalne prawo USA od 1972; nowelizacje między innymi w 1992 i 1994.',
     effects:
       'Zamierzony skutek: zatrzymać uszczuplanie stad ssaków morskich jako składników ekosystemu, wymagać wykazania, że pozyskanie nie zaszkodzi stadu, i wspierać reakcję na wyrzucenia na brzeg. Status stad różni się między gatunkami — ustawa jest ramą, nie świadectwem odbudowy.',
-    caveats: 'Nie zastępuje ESA. Nie CITES ani sama konwencja wielorybnicza.',
+    caveats: 'To nie ESA: gatunek może podlegać obu aktom. Nie CITES ani sama konwencja wielorybnicza.',
     sourcesNote:
       'Strony NOAA Fisheries, FWS i Marine Mammal Commission; tekst scalony w GovInfo.',
   },
@@ -438,7 +438,7 @@ export const pl: Record<string, LawCopy> = {
     officialName: 'Lacey Act',
     citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (od 1900; nowelizacje handlu dziką przyrodą m.in. 1981)',
     yearStatus: 'Od 1900. Nowelizacje handlu dziką przyrodą, między innymi w 1981. Nadal w mocy.',
-    what: 'Zakaz handlu przy naruszeniu prawa bazowego; fałszywe oznakowanie przesyłek.',
+    what: 'Zakaz handlu przy naruszeniu prawa bazowego; fałszywe oznakowanie przesyłek. Ustawa rolna z 2008 roku rozszerzyła ustawę na rośliny i produkty z drewna.',
     where: 'Federalne prawo USA od 1900; nowelizacje między innymi w 1981.',
     effects:
       'Zamierzony skutek: zamknąć rynek USA dla nielegalnie pozyskanej dzikiej przyrody i wesprzeć obce oraz stanowe prawo ochrony przez federalne ściganie. Skuteczność zależy od wykrywania i jakości prawa, na którym ustawa się opiera.',

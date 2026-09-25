@@ -361,14 +361,14 @@ export const lv: Record<string, LawCopy> = {
     hook: 'ANO līgums dzīvniekiem, kas cikliski šķērso robežas. I pielikums — stingra aizsardzība; II — areāla valstu vienošanās. Tas nav CITES un nav valsts biotopu likums.',
     imageAlt:
       'Gnu kustībā caur Serengeti zāli — pārrobežu migrācija, kādu Bonnas konvencija lūdz saskaņot areāla valstīm',
-    jurisdiction: 'Starptautisks (Puses; aktuālais saraksts cms.int)',
+    jurisdiction: 'Starptautisks (Konvencijas Puses)',
     officialName: 'Konvencija par migrējošo savvaļas dzīvnieku sugu aizsardzību',
     citation:
       'Konvencija par migrējošo savvaļas dzīvnieku sugu aizsardzību; Bonnā 1979. gada 23. jūnijā; spēkā no 1983. gada 1. novembra',
     yearStatus:
       'Parakstīta Bonnā 1979. gada 23. jūnijā. Spēkā no 1983. gada 1. novembra. Depozitārijs: Vācijas Federatīvā Republika.',
     what: 'UNEP ietvara konvencija: biotopi un ņemšanas aizliegums (I pielikums); AGREEMENTS vai MoU (II pielikums).',
-    where: 'Spēkā no 1983. gada 1. novembra. Pušu saraksts — cms.int.',
+    where: 'Spēkā no 1983. gada 1. novembra. Pušu saraksts ir publicēts cms.int.',
     effects:
       'Iecerētais efekts: saskaņot aizsardzību visā lidojuma un migrācijas ceļā un dot pamatu meitas vienošanām (AEWA, EUROBATS un citi CMS saimes instrumenti). Konvencijas teksts pats koridoru nenorobežo.',
     caveats: 'Nav tirdzniecības atļauju sistēma (CITES). Nav Birds/Habitats vai ASV ESA.',
@@ -376,7 +376,7 @@ export const lv: Record<string, LawCopy> = {
   },
   'birds-directive': {
     title: 'ES Putnu direktīva',
-    hook: 'Pirmā ES dabas direktīva. Aizsargā visus dabiski sastopamos savvaļas putnus un veido SPA Natura 2000 — pāris ar jau esošo Biotopu direktīvu.',
+    hook: 'Pirmā ES dabas direktīva. Aizsargā visus dabiski sastopamos savvaļas putnus un veido SPA Natura 2000 — pāris ar Biotopu direktīvu.',
     imageAlt:
       'Jūras ērglis virs ūdens Svolvērā, Norvēģijā — savvaļas Eiropas putns, kādu Putnu direktīva prasa dalībvalstīm aizsargāt',
     jurisdiction: 'Eiropas Savienība',
@@ -388,7 +388,7 @@ export const lv: Record<string, LawCopy> = {
     where: 'Spēkā; teksts 2009/147/EK. 2026. gada vienkāršošanas konsultācija nav atcelšana.',
     effects:
       'Iecerētais efekts: apturēt savvaļas putnu samazināšanos, atjaunot dzīvotnes un veidot SPA tīklu. Komisija min vairāk nekā 5400 teritorijas, kas sedz vairāk nekā 832 000 km². Lauksaimniecības putnu lejupslīde joprojām ir dokumentēts spiediens; direktīva ir juridisks ietvars, ne garantija, ka indeksi atjaunosies.',
-    caveats: 'Nav CITES. Nesapludināt ar Habitats.',
+    caveats: 'Nav CITES. Biotopu direktīva ir atsevišķs akts.',
     sourcesNote: 'Eiropas Komisijas lapa par Putnu direktīvu; Direktīvas 2009/147/EK teksts EUR-Lex.',
   },
   'bern-convention': {
@@ -405,7 +405,7 @@ export const lv: Record<string, LawCopy> = {
     where: 'ETS Nr. 104; spēkā no 1982. gada 1. jūnija.',
     effects:
       'Iecerētais efekts: kopīga Eiropas pamatlīnija sugu un biotopu aizsardzībai līdzās ES direktīvām un ārpus tām; Emerald tīkla vietas pusēm ārpus ES. Mīkstas rekomendācijas joprojām jāpārnes valsts tiesībās, lai tās ķertos.',
-    caveats: 'Nav CITES vai CMS. Neaizstāj Birds/Habitats ES tiesībās.',
+    caveats: 'Nav CITES vai CMS. Putnu un Biotopu direktīvas saista dalībvalstis kā ES tiesības. Emerald tīklam Bernes konvencijā ir mērķi, kas saistīti ar Natura 2000, bet cita juridiskā bāze.',
     sourcesNote: 'Eiropas Padomes Bernes konvencijas lapa, līgums Nr. 104 un konvencijas teksta PDF.',
   },
   'marine-mammal-protection-act': {
@@ -420,7 +420,7 @@ export const lv: Record<string, LawCopy> = {
     where: 'ASV federālās tiesības kopš 1972. gada; grozījumi 1992. un 1994. gadā.',
     effects:
       'Iecerētais efekts: apturēt jūras zīdītāju krājumu noplicināšanu kā ekosistēmas daļu, prasīt parādīt, ka ņemšana krājumu nekaitēs, un atbalstīt izskalošanās reaģēšanu. Krājumu statuss pa sugām atšķiras — likums ir ietvars, ne atjaunošanās apliecība.',
-    caveats: 'Neaizstāj ESA. Nav CITES vai tikai vaļu konvencija.',
+    caveats: 'Tas nav ESA: suga var būt zem abiem aktiem. Nav CITES vai tikai vaļu konvencija.',
     sourcesNote: 'NOAA Fisheries, ASV Zivju un savvaļas dienesta un Jūras zīdītāju komisijas lapas; apkopotais teksts GovInfo.',
   },
   'lacey-act': {
@@ -432,7 +432,7 @@ export const lv: Record<string, LawCopy> = {
     officialName: 'Lacey Act',
     citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (no 1900; grozījumi savvaļas tirdzniecībā, t.sk. 1981)',
     yearStatus: 'No 1900. gada. Grozījumi savvaļas tirdzniecībā, tostarp 1981. gadā. Joprojām spēkā.',
-    what: 'Aizliegums tirgot, ja pārkāpts pamata likums; nepatiesa marķēšana.',
+    what: 'Aizliegums tirgot, ja pārkāpts pamata likums; nepatiesa marķēšana. 2008. gada lauksaimniecības likums attiecināja likumu uz augiem un kokmateriālu produktiem.',
     where: 'ASV federālās tiesības no 1900. gada; grozījumi tostarp 1981. gadā.',
     effects:
       'Iecerētais efekts: slēgt ASV tirgu nelikumīgi iegūtai savvaļai un atbalstīt ārvalstu un štatu aizsardzības likumus ar federālu kriminālvajāšanu. Iedarbība atkarīga no atklāšanas un tā pamata likuma kvalitātes, uz kuru likums balstās.',
