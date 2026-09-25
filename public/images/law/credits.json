@@ -213,5 +213,45 @@
     "artist": "Jules Verne Times Two",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_and_dog_companions,_Mosteiros,_S%C3%A3o_Miguel_Island,_Azores,_Portugal_(PPL1-Corrected).jpg"
+  },
+  {
+    "slug": "cms-bonn-convention",
+    "file": "cms-bonn-convention.jpg",
+    "commonsTitle": "Serengeti wildebeest migration JF2.jpg",
+    "artist": "Wolves201",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serengeti_wildebeest_migration_JF2.jpg"
+  },
+  {
+    "slug": "birds-directive",
+    "file": "birds-directive.jpg",
+    "commonsTitle": "Haliaeetus albicilla (Svolvær, 2012).jpg",
+    "artist": "Yathin S Krishnappa",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haliaeetus_albicilla_(Svolvær,_2012).jpg"
+  },
+  {
+    "slug": "bern-convention",
+    "file": "bern-convention.jpg",
+    "commonsTitle": "002 Wild Alpine Ibex Swiss Alps and Creux du Van Photo by Giles Laurent.jpg",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "slug": "marine-mammal-protection-act",
+    "file": "marine-mammal-protection-act.jpg",
+    "commonsTitle": "Humpback Whale Underwater (37209287981).jpg",
+    "artist": "Ed Lyman, NOAA Hawaiian Islands Humpback Whale National Marine Sanctuary",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_Whale_Underwater_(37209287981).jpg"
+  },
+  {
+    "slug": "lacey-act",
+    "file": "lacey-act.jpg",
+    "commonsTitle": "Seized ivory slated for destruction in the crush. (10843354356).jpg",
+    "artist": "USFWS Mountain-Prairie",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seized_ivory_slated_for_destruction_in_the_crush._(10843354356).jpg"
   }
 ]
