@@ -134,5 +134,41 @@
     "license": "CC BY 2.0",
     "kind": "hosted-original",
     "note": "Long-view reconstruction used in the trend strip. Map face is ~2017."
+  },
+  {
+    "file": "canopy-height.svg",
+    "title": "Mean canopy height schematic",
+    "source": "Schematic after NASA GEDI L3 / ORNL DAAC",
+    "url": "https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-gedi-l3-landsurface-metrics-v2-1952-2",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Taller tropical and boreal stands, shorter drylands. Coverage fades outside about ±52° latitude. Not a tree-cover loss map."
+  },
+  {
+    "file": "aboveground-biomass.svg",
+    "title": "Aboveground biomass density schematic",
+    "source": "Schematic after NASA GEDI L4B / ORNL DAAC",
+    "url": "https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-gedi-l4b-gridded-biomass-v2-1-2299-2.1",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Density in tonnes per hectare: denser moist tropics, sparser drylands. Not a national carbon-stock total."
+  },
+  {
+    "file": "burned-area.svg",
+    "title": "Burned-area schematic",
+    "source": "Schematic after NASA LP DAAC MCD64A1 / FIRMS",
+    "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd64a1-061",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Fire-scar footprints. Scars are burned area, not live hotspot points alone."
+  },
+  {
+    "file": "ecological-zones.svg",
+    "title": "Global ecological zones schematic",
+    "source": "Schematic after FAO Global Ecological Zones 2010 / FRA",
+    "url": "https://data.apps.fao.org/catalog/dataset/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Climatic-ecological bands for forest statistics: tropical, subtropical, temperate, boreal, and polar."
   }
 ]

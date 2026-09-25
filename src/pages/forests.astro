@@ -1,11 +1,12 @@
 ---
+import { isForestAtlas } from '../data/forest-atlas';
 import { isForestPanel } from '../data/forests';
 import { localizePath, resolveLocale } from '../i18n';
 import ForestsView from '../views/ForestsView.astro';
 
 const locale = resolveLocale(Astro.currentLocale);
 const panelParam = Astro.url.searchParams.get('panel');
-if (isForestPanel(panelParam ?? undefined)) {
+if (isForestPanel(panelParam ?? undefined) || isForestAtlas(panelParam ?? undefined)) {
   return Astro.redirect(localizePath(`/forests/${panelParam}`, locale));
 }
 ---
