@@ -2,14 +2,14 @@
 """Render aourednik historical-basemaps GeoJSON as school-GIS world plates.
 
 Fills + large polity labels (stock SVGs are stroke-only). Modern Natural Earth
-coastlines are the land base — schematic / WIP, not a cadastral survey.
+coastlines are the land base — schematic, not a cadastral survey.
 
-Output: public/images/maps/borders/y1100.png, y1300.png, y1700.png,
-y1800.png, y1900.png
+Output: public/images/maps/borders/y1100.png, y1300.png, y1400.png,
+y1500.png, y1700.png, y1800.png, y1900.png
 Width 2560. Footer credits GPL-3.0 Corresponding Source; no © Fix Planet on geometry.
 
 Run from repo root: python3 scripts/render-aourednik-borders.py
-Optional years: python3 scripts/render-aourednik-borders.py 1800 1900
+Optional years: python3 scripts/render-aourednik-borders.py 1400 1500
 """
 
 from __future__ import annotations
@@ -82,7 +82,8 @@ POLITY_RE = re.compile(
     r"persia|afghanistan|austria|germany|italy|australia|louisiana|"
     r"granada|r[ií]o de la plata|rupert|quebec|maratha|raj|arabia|"
     r"egypt|bolivia|colombia|venezuela|chile|algeria|sokoto|burma|"
-    r"greenland|indochina|cape colony|imperial japan",
+    r"greenland|indochina|cape colony|imperial japan|"
+    r"timurid|aztec|inca|songhai|ming|kalmar|castile|castille|chim[uú]",
     re.I,
 )
 
@@ -93,6 +94,22 @@ COLOR_OVERRIDE = {
     "manchu empire": (132, 36, 78),
     "song empire": (150, 44, 70),
     "great khanate": (168, 40, 48),
+    "ming chinese empire": (132, 36, 78),
+    "blue horde": (64, 108, 176),
+    "white horde": (196, 168, 96),
+    "golden horde": (196, 148, 52),
+    "kalmar union": (80, 140, 168),
+    "timurid empire": (176, 124, 48),
+    "timurid emirates": (176, 88, 72),
+    "aztec empire": (46, 124, 72),
+    "inca empire": (139, 84, 40),
+    "songhai": (180, 120, 48),
+    "castile": (86, 164, 86),
+    "castille": (86, 164, 86),
+    "poland-lithuania": (176, 72, 112),
+    "shogun japan (kamakura)": (196, 48, 48),
+    "chimú empire": (148, 96, 56),
+    "chimu empire": (148, 96, 56),
     "safavid empire": (36, 132, 72),
     "mughal empire": (16, 92, 52),
     "ottoman empire": (196, 56, 56),
@@ -212,6 +229,20 @@ DISPLAY = {
     "Ottoman Empire": "Ottoman Empire",
     "Song Empire": "Song",
     "Great Khanate": "Yuan",
+    "Ming Chinese Empire": "Ming",
+    "Kalmar Union": "Kalmar Union",
+    "Blue Horde": "Blue Horde",
+    "White Horde": "White Horde",
+    "Golden Horde": "Golden Horde",
+    "Timurid Empire": "Timurid Empire",
+    "Timurid Emirates": "Timurid Emirates",
+    "Aztec Empire": "Aztec Empire",
+    "Inca Empire": "Inca Empire",
+    "Songhai": "Songhai",
+    "Poland-Lithuania": "Poland-Lithuania",
+    "Shogun Japan (Kamakura)": "Japan",
+    "Castile": "Castile",
+    "Castille": "Castile",
     "Khanate of the Golden Horde": "Golden Horde",
     "Ilkhanate": "Ilkhanate",
     "Chagatai Khanate": "Chagatai",
@@ -276,6 +307,25 @@ FORCE_LABELS = {
         "Cuman-Kipchak confederation": (68, 48, 20),
         "Khmer Empire": (104, 13, 18),
     },
+    1400: {
+        "Great Khanate": (110, 36, 52),
+        "Timurid Empire": (62, 36, 32),
+        "Sultanate of Delhi": (78, 24, 28),
+        "Mamluke Sultanate": (32, 28, 22),
+        "Mali": (-6, 14, 28),
+        "Kalmar Union": (16, 62, 18),
+        "Holy Roman Empire": (10, 49, 18),
+        "Byzantine Empire": (30, 40, 18),
+        "Chagatai Khanate": (78, 42, 22),
+        "Tibet": (88, 32, 22),
+        "France": (2, 47, 20),
+        "Castile": (-4, 40, 18),
+        "Poland-Lithuania": (24, 52, 16),
+        "Novgorod": (36, 58, 18),
+        "Blue Horde": (52, 50, 18),
+        "White Horde": (70, 50, 16),
+        "Shogun Japan (Kamakura)": (138, 36, 16),
+    },
     1300: {
         "Great Khanate": (110, 36, 52),
         "Khanate of the Golden Horde": (60, 52, 28),
@@ -289,6 +339,27 @@ FORCE_LABELS = {
         "Tibet": (88, 32, 24),
         "France": (2, 47, 20),
         "Byzantine Empire": (30, 40, 18),
+    },
+    1500: {
+        "Ming Chinese Empire": (110, 36, 52),
+        "Grand Duchy of Moscow": (70, 58, 36),
+        "Ottoman Empire": (36, 38, 26),
+        "Aztec Empire": (-100, 20, 22),
+        "Inca Empire": (-72, -12, 24),
+        "Songhai": (0, 16, 22),
+        "Timurid Emirates": (62, 34, 20),
+        "Sultanate of Delhi": (78, 24, 24),
+        "Mamluke Sultanate": (32, 28, 20),
+        "Chagatai Khanate": (78, 42, 20),
+        "Tibet": (88, 32, 20),
+        "Kalmar Union": (16, 62, 16),
+        "Holy Roman Empire": (10, 49, 16),
+        "Poland-Lithuania": (24, 52, 16),
+        "Portugal": (-8, 39, 16),
+        "England": (-2, 53, 16),
+        "Japan": (138, 36, 16),
+        "Golden Horde": (50, 50, 16),
+        "White Horde": (70, 50, 14),
     },
     1700: {
         "Tsardom of Muscovy": (95, 60, 72),
@@ -358,9 +429,48 @@ FORCE_LABELS = {
     },
 }
 
+# Year-specific label text. 1400 must keep “Great Khanate” — do not show Yuan or Ming.
+DISPLAY_YEAR = {
+    1400: {
+        "Great Khanate": "Great Khanate",
+        "Kalmar Union": "Kalmar-Union",
+        "Holy Roman Empire": "Holyroman-Empire",
+        "Blue Horde": "Blueghorde",
+        "White Horde": "Whitehorde",
+        "Byzantine Empire": "Byzantine-Empire",
+        "Poland-Lithuania": "Poland-Lithuania",
+        "Shogun Japan (Kamakura)": "Japan",
+        "Mamluke Sultanate": "Mameluks",
+        "Sultanate of Delhi": "Delhi",
+        "Chagatai Khanate": "Chagatai",
+        "Timurid Empire": "Timurid Empire",
+    },
+    1500: {
+        "Grand Duchy of Moscow": "Muscovy",
+        "Ming Chinese Empire": "Ming",
+        "Aztec Empire": "Aztec-Empire",
+        "Inca Empire": "Inca-Empire",
+        "Kalmar Union": "Kalmar-Union",
+        "Holy Roman Empire": "Holyroman-Empire",
+        "Golden Horde": "Golden-Horde",
+        "White Horde": "White-Horde",
+        "Poland-Lithuania": "Poland-Lithuania",
+        "Mamluke Sultanate": "Mameluks",
+        "Sultanate of Delhi": "Delhi",
+        "Chagatai Khanate": "Chagatai",
+        "Timurid Emirates": "Timurid Emirates",
+        "Ottoman Empire": "Ottoman Empire",
+    },
+}
+
+
+def label_text(year: int, name: str) -> str:
+    return DISPLAY_YEAR.get(year, {}).get(name) or DISPLAY.get(name, name)
+
+
 FOOTER = (
     "Historical basemaps © André Ourednik et al. · GPL-3.0 · "
-    "github.com/aourednik/historical-basemaps · Approximate / WIP borders"
+    "github.com/aourednik/historical-basemaps · Approximate borders"
 )
 
 WORLD = box(-179.999, -89.9, 179.999, 89.9)
@@ -596,7 +706,7 @@ def render_year(year: int) -> Path:
         # Approximate collision box in data units.
         w = size * 0.22 * max(1, len(text) * 0.32)
         h = size * 0.28
-        if overlaps(lon, lat, w, h) and text not in {DISPLAY.get(k, k) for k in forced}:
+        if overlaps(lon, lat, w, h) and text not in {label_text(year, k) for k in forced}:
             return
         txt = ax.text(
             lon,
@@ -618,7 +728,7 @@ def render_year(year: int) -> Path:
     for name, (lon, lat, size) in forced.items():
         if name not in groups:
             continue
-        draw_label(DISPLAY.get(name, name), lon, lat, size)
+        draw_label(label_text(year, name), lon, lat, size)
 
     dest = OUT / f"y{year:04d}.png"
     tmp = CACHE / f"render_{year}.png"
@@ -650,7 +760,7 @@ def render_year(year: int) -> Path:
 
 def main(years: list[int] | None = None) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in years or (1100, 1300, 1700, 1800, 1900):
+    for year in years or (1100, 1300, 1400, 1500, 1700, 1800, 1900):
         render_year(year)
 
 
