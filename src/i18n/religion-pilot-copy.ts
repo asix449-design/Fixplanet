@@ -62,13 +62,13 @@ const packDHonesty: Record<Locale, string[]> = {
     'Rekonstrukcja schematyczna',
     'Nie spis',
     'Ameryki się chrystianizują',
-    'Afryka: chrześcijańskie kieszenie',
+    'Afryka: chrześcijańskie enklawy',
   ],
   lv: [
     'Shēmatiska rekonstrukcija',
     'Ne tautas skaitīšana',
     'Amerika kristianizējas',
-    'Āfrika: kristīgās kabatas',
+    'Āfrika: kristīgie anklāvi',
   ],
 };
 
@@ -932,7 +932,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Европа / Средиземноморье',
-          text: 'Шире христианский Запад и центр (саксонский толчок в Германию, край Богемии и Польши, киевский христианский край) плюс византийский Восток, Италия, Британия; Иберия исламская. Дальний север / викингские земли и балтийские карманы — ещё местные традиции. Иудейские пятна где видно.',
+          text: 'Шире христианский Запад и центр (саксонский толчок в Германию, край Богемии и Польши, киевский христианский край) плюс византийский Восток, Италия, Британия; Иберия исламская. Дальний север / викингские земли и балтийские очаги — ещё местные традиции. Иудейские пятна где видно.',
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
@@ -969,7 +969,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Европа / Средиземноморье',
-          text: 'Полнее христианский Рейнланд / Германия, край Богемии–Польши, Балканы / Византия, Италия; схематический крестоносный край в Леванте. Иберия всё ещё исламская. Дальний северный остаток и балтийско-финские карманы — местные традиции. Иудейские пятна.',
+          text: 'Полнее христианский Рейнланд / Германия, край Богемии–Польши, Балканы / Византия, Италия; схематический крестоносный край в Леванте. Иберия всё ещё исламская. Дальний северный остаток и балтийско-финские очаги — местные традиции. Иудейские пятна.',
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
@@ -1031,14 +1031,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1300: {
       title: '1300 н. э. — схематическая реконструкция',
       caption:
-        'Около 1300 н. э. **исламский** пояс — мамлюкский Египет и Сирия, Магриб и Ливия, край Анатолии (ранние османы), карман Гранады в Иберии, плюс Ближний Восток–Аравия–Иран–Центральная Азия и край Дели. Христианская Европа почти сплошная на Западе и в центре; Балканы христианские. Индия индуистская; буддийские коридоры и китайский слой на Востоке. В Америке — местные традиции: поднимающаяся Мезоамерика (ацтеки) и Анды, плюс другие коренные зоны.',
+        'Около 1300 н. э. **исламский** пояс — мамлюкский Египет и Сирия, Магриб и Ливия, край Анатолии (ранние османы), анклав Гранады в Иберии, плюс Ближний Восток–Аравия–Иран–Центральная Азия и край Дели. Христианская Европа почти сплошная на Западе и в центре; Балканы христианские. Индия индуистская; буддийские коридоры и китайский слой на Востоке. В Америке — местные традиции: поднимающаяся Мезоамерика (ацтеки) и Анды, плюс другие коренные зоны.',
       imageAlt:
-        'Схематическая карта религий на 1300 год н. э.: мамлюкский исламский пояс, край Анатолии, карман Гранады, Америка — местные традиции',
+        'Схематическая карта религий на 1300 год н. э.: мамлюкский исламский пояс, край Анатолии, анклав Гранады, Америка — местные традиции',
       honestyPills: packCHonesty.ru,
       continentBlocks: [
         {
           heading: 'Европа / Средиземноморье',
-          text: 'Христианская заливка по латинскому Западу, Италии, Британии, скандинавскому краю, за Эльбой / русскому краю и Балканам. Иберия в основном христианская, кроме исламского кармана Гранады. Анатолия — только исламский край, не мажоритарная заливка. Иудейские пятна где видно.',
+          text: 'Христианская заливка по латинскому Западу, Италии, Британии, скандинавскому краю, за Эльбой / русскому краю и Балканам. Иберия в основном христианская, кроме исламского анклава Гранады. Анатолия — только исламский край, не мажоритарная заливка. Иудейские пятна где видно.',
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
@@ -1063,14 +1063,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1400: {
       title: '1400 н. э. — схематическая реконструкция',
       caption:
-        'К 1400 н. э. **исламский** пояс шире: мамлюкский Египет–Сирия–Левант, Магриб–Ливия, зона Тимура (Центральная Азия / Иран / Ближний Восток), Анатолия уже в основном исламская (османы), карман Гранады ещё на месте. Христианская Европа полнее; Балканы демографически всё ещё в основном христианские. Индия индуистская; буддизм и китайский слой на Востоке. В Америке — сильные местные ядра: ацтекская Мезоамерика и империя инков в Андах, плюс другие коренные зоны.',
+        'К 1400 н. э. **исламский** пояс шире: мамлюкский Египет–Сирия–Левант, Магриб–Ливия, зона Тимура (Центральная Азия / Иран / Ближний Восток), Анатолия уже в основном исламская (османы), анклав Гранады ещё на месте. Христианская Европа полнее; Балканы демографически всё ещё в основном христианские. Индия индуистская; буддизм и китайский слой на Востоке. В Америке — сильные местные ядра: ацтекская Мезоамерика и империя инков в Андах, плюс другие коренные зоны.',
       imageAlt:
-        'Схематическая карта религий на 1400 год н. э.: шире исламский пояс, османская Анатолия, карман Гранады, ядра ацтеков и инков',
+        'Схематическая карта религий на 1400 год н. э.: шире исламский пояс, османская Анатолия, анклав Гранады, ядра ацтеков и инков',
       honestyPills: packCHonesty.ru,
       continentBlocks: [
         {
           heading: 'Европа / Средиземноморье',
-          text: 'Полнее христианский Запад, центр, Скандинавия, Балтика и русский край; Балканы демографически всё ещё в основном христианские. Иберия христианская, кроме кармана Гранады. Анатолия в основном исламская (османы) — не византийская христианская заливка. Иудейские пятна.',
+          text: 'Полнее христианский Запад, центр, Скандинавия, Балтика и русский край; Балканы демографически всё ещё в основном христианские. Иберия христианская, кроме анклава Гранады. Анатолия в основном исламская (османы) — не византийская христианская заливка. Иудейские пятна.',
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
@@ -1102,7 +1102,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Европа / Средиземноморье',
-          text: 'Христианская Иберия (после Гранады), латинский Запад, Италия, Скандинавия, Балтика, русский край на листе. Балканы под османским правлением, но демографически всё ещё в основном христианские — только мелкие мусульманские карманы (край Боснии / Албании) где отмечено. Анатолия в основном мусульманская османская — христианский остаток только на эгейском / западном побережье, не вглубь. Иудейские пятна.',
+          text: 'Христианская Иберия (после Гранады), латинский Запад, Италия, Скандинавия, Балтика, русский край на листе. Балканы под османским правлением, но демографически всё ещё в основном христианские — только мелкие мусульманские анклавы (край Боснии / Албании) где отмечено. Анатолия в основном мусульманская османская — христианский остаток только на эгейском / западном побережье, не вглубь. Иудейские пятна.',
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
@@ -1127,9 +1127,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1600: {
       title: '1600 н. э. — схематическая реконструкция',
       caption:
-        'Около 1600 н. э. Османская Анатолия — исламская; Балканы демографически христианские; Иберия христианская. В Америке — остатки местных традиций внутри материка плюс христианский колониальный край (Новая Испания, Анды, Бразилия, Карибы). Африка: исламский север/Сахель; южнее Сахары — африканские традиции, с христианскими карманами Эфиопии, Конго и португальских берегов. Австралия — аборигенные традиции (колонии ещё нет).',
+        'Около 1600 н. э. Османская Анатолия — исламская; Балканы демографически христианские; Иберия христианская. В Америке — остатки местных традиций внутри материка плюс христианский колониальный край (Новая Испания, Анды, Бразилия, Карибы). Африка: исламский север/Сахель; южнее Сахары — африканские традиции, с христианскими анклавами Эфиопии, Конго и португальских берегов. Австралия — аборигенные традиции (колонии ещё нет).',
       imageAlt:
-        'Схематическая карта религий на 1600 год н. э.: османская исламская Анатолия, христианские Балканы, христианская Иберия, в Америке местный остаток и христианский колониальный край, в Африке христианские карманы, Австралия аборигенная',
+        'Схематическая карта религий на 1600 год н. э.: османская исламская Анатолия, христианские Балканы, христианская Иберия, в Америке местный остаток и христианский колониальный край, в Африке христианские анклавы, Австралия аборигенная',
       honestyPills: packDHonesty.ru,
       continentBlocks: [
         {
@@ -1146,7 +1146,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб–Египет–Сахель–суахилийский берег в исламском поясе. Южнее Сахары в основном африканские традиции. Христианские карманы только: Эфиопия, Конго и португальские берега. Мадагаскар не христианский.',
+          text: 'Магриб–Египет–Сахель–суахилийский берег в исламском поясе. Южнее Сахары в основном африканские традиции. Христианские анклавы только: Эфиопия, Конго и португальские берега. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
@@ -1159,7 +1159,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1700: {
       title: '1700 н. э. — схематическая реконструкция',
       caption:
-        'Около 1700 н. э. Иберийская Америка уже в основном крещена (публичное христианское большинство); британский/французский восток Северной Америки христианский; внутри материка — местный остаток. Россия — православная империя с поясом по Сибири; Скандинавия — сплошные лютеранские госцеркви. Африка: те же христианские карманы + Капская колония (с 1652). Австралия всё ещё аборигенная.',
+        'Около 1700 н. э. Иберийская Америка уже в основном крещена (публичное христианское большинство); британский/французский восток Северной Америки христианский; внутри материка — местный остаток. Россия — православная империя с поясом по Сибири; Скандинавия — сплошные лютеранские госцеркви. Африка: те же христианские анклавы + Капская колония (с 1652). Австралия всё ещё аборигенная.',
       imageAlt:
         'Схематическая карта религий на 1700 год н. э.: иберийская Америка в основном христианская, британский и французский восток Северной Америки, местный остаток, православный пояс Сибири, лютеранская Скандинавия, Капская колония, аборигенная Австралия',
       honestyPills: packDHonesty.ru,
@@ -1178,7 +1178,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Те же христианские карманы, что в 1600 (Эфиопия, Конго, португальские берега), плюс Капская колония (с 1652). Магриб–Египет–Сахель–суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
+          text: 'Те же христианские анклавы, что в 1600 (Эфиопия, Конго, португальские берега), плюс Капская колония (с 1652). Магриб–Египет–Сахель–суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
@@ -1191,9 +1191,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1800: {
       title: '1800 н. э. — схематическая реконструкция',
       caption:
-        'Около 1800 н. э. (накануне наполеоновских войн и независимости): Южная Америка почти монолитно католическая; Северная — христианский восток–центр (протестантские США, католические Квебек/Мексика). Россия — православная империя до Тихого; Скандинавия лютеранская. Африка всё ещё карманы (Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток). Австралия: крошечная колония Нового Южного Уэльса у Сиднея (с 1788), материк аборигенный.',
+        'Около 1800 н. э. (накануне наполеоновских войн и независимости): Южная Америка почти монолитно католическая; Северная — христианский восток–центр (протестантские США, католические Квебек/Мексика). Россия — православная империя до Тихого; Скандинавия лютеранская. В Африке всё ещё анклавы (Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток). Австралия: крошечная колония Нового Южного Уэльса у Сиднея (с 1788), материк аборигенный.',
       imageAlt:
-        'Схематическая карта религий на 1800 год н. э.: Южная Америка почти католическая, Северная — христианский восток-центр, Россия до Тихого, лютеранская Скандинавия, карманы в Африке, крошечная колония Нового Южного Уэльса, материк аборигенный',
+        'Схематическая карта религий на 1800 год н. э.: Южная Америка почти католическая, Северная — христианский восток-центр, Россия до Тихого, лютеранская Скандинавия, анклавы в Африке, крошечная колония Нового Южного Уэльса, материк аборигенный',
       honestyPills: packDHonesty.ru,
       continentBlocks: [
         {
@@ -1210,7 +1210,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Всё ещё только карманы: Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток. Магриб–Египет–Сахель–суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
+          text: 'Всё ещё только анклавы: Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток. Магриб–Египет–Сахель–суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
@@ -1505,7 +1505,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Europa / Śródziemnomorze',
-          text: 'Szerszy chrześcijański Zachód i centrum (pchnięcie saskie w Niemczech, krawędź Czech i Polski, kijowska krawędź chrześcijańska) plus bizantyński Wschód, Włochy, Brytania; Iberia islamska. Daleka północ / ziemie wikińskie i kieszenie bałtyckie — wciąż tradycje lokalne. Plamy żydowskie tam, gdzie widać.',
+          text: 'Szerszy chrześcijański Zachód i centrum (pchnięcie saskie w Niemczech, krawędź Czech i Polski, kijowska krawędź chrześcijańska) plus bizantyński Wschód, Włochy, Brytania; Iberia islamska. Daleka północ / ziemie wikińskie i ogniska bałtyckie — wciąż tradycje lokalne. Plamy żydowskie tam, gdzie widać.',
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
@@ -1542,7 +1542,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Europa / Śródziemnomorze',
-          text: 'Pełniejszy chrześcijański Nadrenia / Niemcy, krawędź Czech–Polski, Bałkany / Bizancjum, Włochy; schematyczna krawędź krzyżowców w Lewancie. Iberia nadal islamska. Daleki północny pozostałość i kieszenie bałtycko-fińskie — tradycje lokalne. Plamy żydowskie.',
+          text: 'Pełniejszy chrześcijański Nadrenia / Niemcy, krawędź Czech–Polski, Bałkany / Bizancjum, Włochy; schematyczna krawędź krzyżowców w Lewancie. Iberia nadal islamska. Daleki północny pozostałość i ogniska bałtycko-fińskie — tradycje lokalne. Plamy żydowskie.',
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
@@ -1604,14 +1604,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1300: {
       title: '1300 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1300 n.e. pas **islamu** — mamelucki Egipt i Syria, Maghreb i Libia, krawędź Anatolii (wcześni Osmanowie), kieszeń Granady w Iberii, plus Bliski Wschód–Arabia–Iran–Azja Środkowa i krawędź Delhi. Chrześcijańska Europa niemal jednolita na zachodzie i w centrum; Bałkany chrześcijańskie. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa na Wschodzie. W Amerykach — tradycje lokalne: rosnąca Mezoameryka (Aztekowie) i Andy, plus inne strefy rdzenne.',
+        'Około 1300 n.e. pas **islamu** — mamelucki Egipt i Syria, Maghreb i Libia, krawędź Anatolii (wcześni Osmanowie), enklawa Granady w Iberii, plus Bliski Wschód–Arabia–Iran–Azja Środkowa i krawędź Delhi. Chrześcijańska Europa niemal jednolita na zachodzie i w centrum; Bałkany chrześcijańskie. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa na Wschodzie. W Amerykach — tradycje lokalne: rosnąca Mezoameryka (Aztekowie) i Andy, plus inne strefy rdzenne.',
       imageAlt:
-        'Schematyczna mapa religii na rok 1300 n.e.: mamelucki pas islamu, krawędź Anatolii, kieszeń Granady, Ameryki — tradycje lokalne',
+        'Schematyczna mapa religii na rok 1300 n.e.: mamelucki pas islamu, krawędź Anatolii, enklawa Granady, Ameryki — tradycje lokalne',
       honestyPills: packCHonesty.pl,
       continentBlocks: [
         {
           heading: 'Europa / Śródziemnomorze',
-          text: 'Wypełnienie chrześcijańskie na łacińskim Zachodzie, we Włoszech, Brytanii, krawędzi skandynawskiej, za Łabą / ruskiej i na Bałkanach. Iberia w większości chrześcijańska poza islamską kieszenią Granady. Anatolia — tylko krawędź islamska, nie większość. Plamy żydowskie tam, gdzie widać.',
+          text: 'Wypełnienie chrześcijańskie na łacińskim Zachodzie, we Włoszech, Brytanii, krawędzi skandynawskiej, za Łabą / ruskiej i na Bałkanach. Iberia w większości chrześcijańska poza islamską enklawą Granady. Anatolia — tylko krawędź islamska, nie większość. Plamy żydowskie tam, gdzie widać.',
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
@@ -1636,14 +1636,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1400: {
       title: '1400 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Do 1400 n.e. pas **islamu** szerszy: mamelucki Egipt–Syria–Lewant, Maghreb–Libia, strefa Timura (Azja Środkowa / Iran / Bliski Wschód), Anatolia już w większości islamska (Osmanowie), kieszeń Granady nadal na miejscu. Chrześcijańska Europa pełniejsza; Bałkany demograficznie wciąż w większości chrześcijańskie. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach — silne lokalne jądra: aztecka Mezoameryka i Andy inkaskie, plus inne strefy rdzenne.',
+        'Do 1400 n.e. pas **islamu** szerszy: mamelucki Egipt–Syria–Lewant, Maghreb–Libia, strefa Timura (Azja Środkowa / Iran / Bliski Wschód), Anatolia już w większości islamska (Osmanowie), enklawa Granady nadal na miejscu. Chrześcijańska Europa pełniejsza; Bałkany demograficznie wciąż w większości chrześcijańskie. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach — silne lokalne jądra: aztecka Mezoameryka i Andy inkaskie, plus inne strefy rdzenne.',
       imageAlt:
-        'Schematyczna mapa religii na rok 1400 n.e.: szerszy pas islamu, osmańska Anatolia, kieszeń Granady, jądra Azteków i Inków',
+        'Schematyczna mapa religii na rok 1400 n.e.: szerszy pas islamu, osmańska Anatolia, enklawa Granady, jądra Azteków i Inków',
       honestyPills: packCHonesty.pl,
       continentBlocks: [
         {
           heading: 'Europa / Morze Śródziemne',
-          text: 'Pełniejszy chrześcijański Zachód, centrum, Skandynawia, Bałtyk i krawędź ruska; Bałkany demograficznie wciąż w większości chrześcijańskie. Iberia chrześcijańska poza kieszenią Granady. Anatolia w większości islamska (Osmanowie) — nie bizantyńska plama chrześcijańska. Plamy żydowskie.',
+          text: 'Pełniejszy chrześcijański Zachód, centrum, Skandynawia, Bałtyk i krawędź ruska; Bałkany demograficznie wciąż w większości chrześcijańskie. Iberia chrześcijańska poza enklawą Granady. Anatolia w większości islamska (Osmanowie) — nie bizantyńska plama chrześcijańska. Plamy żydowskie.',
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
@@ -1675,7 +1675,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Europa / Morze Śródziemne',
-          text: 'Chrześcijańska Iberia (po Granadzie), łaciński Zachód, Włochy, Skandynawia, Bałtyk, krawędź ruska na arkuszu. Bałkany pod panowaniem osmańskim, ale demograficznie wciąż w większości chrześcijańskie — tylko małe kieszenie muzułmańskie (krawędź Bośni / Albanii) tam, gdzie zaznaczono. Anatolia w większości muzułmańska osmańska — chrześcijański pozostałość tylko na egejskim / zachodnim wybrzeżu, nie w głąb. Plamy żydowskie.',
+          text: 'Chrześcijańska Iberia (po Granadzie), łaciński Zachód, Włochy, Skandynawia, Bałtyk, krawędź ruska na arkuszu. Bałkany pod panowaniem osmańskim, ale demograficznie wciąż w większości chrześcijańskie — tylko małe enklawy muzułmańskie (krawędź Bośni / Albanii) tam, gdzie zaznaczono. Anatolia w większości muzułmańska osmańska — chrześcijański pozostałość tylko na egejskim / zachodnim wybrzeżu, nie w głąb. Plamy żydowskie.',
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
@@ -1700,9 +1700,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1600: {
       title: '1600 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1600 n.e. osmańska Anatolia jest islamska; Bałkany demograficznie chrześcijańskie; Iberia chrześcijańska. W Amerykach — rdzenna pozostałość w głębi lądu plus chrześcijańska krawędź kolonialna (Nowa Hiszpania, Andy, Brazylia, Karaiby). Afryka: islamska północ/Sahel; na południe od Sahary przeważnie tradycje afrykańskie, z chrześcijańskimi kieszeniami Etiopii, Kongo i portugalskich wybrzeży. Australia: tradycje aborygeńskie (jeszcze bez kolonii).',
+        'Około 1600 n.e. osmańska Anatolia jest islamska; Bałkany demograficznie chrześcijańskie; Iberia chrześcijańska. W Amerykach — rdzenna pozostałość w głębi lądu plus chrześcijańska krawędź kolonialna (Nowa Hiszpania, Andy, Brazylia, Karaiby). Afryka: islamska północ/Sahel; na południe od Sahary przeważnie tradycje afrykańskie, z chrześcijańskimi enklawami Etiopii, Kongo i portugalskich wybrzeży. Australia: tradycje aborygeńskie (jeszcze bez kolonii).',
       imageAlt:
-        'Schematyczna mapa religii na rok 1600 n.e.: osmańska islamska Anatolia, chrześcijańskie Bałkany, chrześcijańska Iberia, w Amerykach rdzenna pozostałość i krawędź kolonialna, w Afryce kieszenie chrześcijańskie, Australia aborygeńska',
+        'Schematyczna mapa religii na rok 1600 n.e.: osmańska islamska Anatolia, chrześcijańskie Bałkany, chrześcijańska Iberia, w Amerykach rdzenna pozostałość i krawędź kolonialna, w Afryce enklawy chrześcijańskie, Australia aborygeńska',
       honestyPills: packDHonesty.pl,
       continentBlocks: [
         {
@@ -1719,7 +1719,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb–Egipt–Sahel–wybrzeże suahili w pasie islamu. Na południe od Sahary przeważnie tradycje afrykańskie. Kieszenie chrześcijańskie tylko: Etiopia, Kongo i portugalskie wybrzeża. Madagaskar nie chrześcijański.',
+          text: 'Maghreb–Egipt–Sahel–wybrzeże suahili w pasie islamu. Na południe od Sahary przeważnie tradycje afrykańskie. Enklawy chrześcijańskie tylko: Etiopia, Kongo i portugalskie wybrzeża. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1732,7 +1732,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1700: {
       title: '1700 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1700 n.e. Ameryka iberyjska jest w większości ochrzczona (publiczna większość chrześcijańska); brytyjski/francuski wschód Ameryki Północnej jest chrześcijański; pozostałość wewnątrz lądu zostaje. Rosja — imperium prawosławne z pasem przez Syberię; Skandynawia — jednolite luterańskie kościoły państwowe. Afryka: te same kieszenie chrześcijańskie plus Kolonia Przylądkowa (od 1652). Australia nadal aborygeńska.',
+        'Około 1700 n.e. Ameryka iberyjska jest w większości ochrzczona (publiczna większość chrześcijańska); brytyjski/francuski wschód Ameryki Północnej jest chrześcijański; pozostałość wewnątrz lądu zostaje. Rosja — imperium prawosławne z pasem przez Syberię; Skandynawia — jednolite luterańskie kościoły państwowe. Afryka: te same enklawy chrześcijańskie plus Kolonia Przylądkowa (od 1652). Australia nadal aborygeńska.',
       imageAlt:
         'Schematyczna mapa religii na rok 1700 n.e.: Ameryka iberyjska w większości chrześcijańska, brytyjski i francuski wschód Ameryki Północnej, pozostałość wewnątrz, prawosławny pas Syberii, luterańska Skandynawia, Kolonia Przylądkowa, Australia aborygeńska',
       honestyPills: packDHonesty.pl,
@@ -1751,7 +1751,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Te same kieszenie chrześcijańskie co w 1600 (Etiopia, Kongo, portugalskie wybrzeża) plus Kolonia Przylądkowa (od 1652). Maghreb–Egipt–Sahel–wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
+          text: 'Te same enklawy chrześcijańskie co w 1600 (Etiopia, Kongo, portugalskie wybrzeża) plus Kolonia Przylądkowa (od 1652). Maghreb–Egipt–Sahel–wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1764,9 +1764,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1800: {
       title: '1800 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1800 n.e. (przed napoleońskimi / niepodległością): Ameryka Południowa niemal monolitycznie katolicka; Ameryka Północna chrześcijański wschód–centrum (protestanckie USA, katolicki Québec/Meksyk). Rosja prawosławna po Pacyfik; Skandynawia luterańska. Afryka nadal kieszenie (Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość). Australia: maleńka kolonia Nowej Południowej Walii w Sydney (od 1788), kontynent aborygeński.',
+        'Około 1800 n.e. (przed napoleońskimi / niepodległością): Ameryka Południowa niemal monolitycznie katolicka; Ameryka Północna chrześcijański wschód–centrum (protestanckie USA, katolicki Québec/Meksyk). Rosja prawosławna po Pacyfik; Skandynawia luterańska. W Afryce nadal enklawy (Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość). Australia: maleńka kolonia Nowej Południowej Walii w Sydney (od 1788), kontynent aborygeński.',
       imageAlt:
-        'Schematyczna mapa religii na rok 1800 n.e.: Ameryka Południowa niemal katolicka, Ameryka Północna chrześcijański wschód-centrum, Rosja po Pacyfik, luterańska Skandynawia, kieszenie w Afryce, maleńka kolonia Nowej Południowej Walii, kontynent aborygeński',
+        'Schematyczna mapa religii na rok 1800 n.e.: Ameryka Południowa niemal katolicka, Ameryka Północna chrześcijański wschód-centrum, Rosja po Pacyfik, luterańska Skandynawia, enklawy w Afryce, maleńka kolonia Nowej Południowej Walii, kontynent aborygeński',
       honestyPills: packDHonesty.pl,
       continentBlocks: [
         {
@@ -1783,7 +1783,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Nadal tylko kieszenie: Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość. Maghreb–Egipt–Sahel–wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
+          text: 'Nadal tylko enklawy: Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość. Maghreb–Egipt–Sahel–wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -2078,7 +2078,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Eiropa / Vidusjūra',
-          text: 'Platāks kristīgais Rietums un centrs (sakšu grūdiens Vācijā, Bohēmijas un Polijas mala, Kijivas kristīgā mala) plus Bizantijas austrumi, Itālija, Britānija; Ibērija islāmiska. Tālie ziemeļi / vikingu zemes un Baltijas kabatas — vēl vietējās tradīcijas. Jūdu plankumi, kur redzami.',
+          text: 'Platāks kristīgais Rietums un centrs (sakšu grūdiens Vācijā, Bohēmijas un Polijas mala, Kijivas kristīgā mala) plus Bizantijas austrumi, Itālija, Britānija; Ibērija islāmiska. Tālie ziemeļi / vikingu zemes un Baltijas perēkļi — vēl vietējās tradīcijas. Jūdu plankumi, kur redzami.',
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
@@ -2115,7 +2115,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Eiropa / Vidusjūra',
-          text: 'Pilnāks kristīgais Reinzeme / Vācija, Bohēmijas–Polijas mala, Balkāni / Bizantija, Itālija; shēmatiska krustnešu mala Levantā. Ibērija joprojām islāmiska. Tālā ziemeļu atlikums un Baltijas / somu kabatas — vietējās tradīcijas. Jūdu plankumi.',
+          text: 'Pilnāks kristīgais Reinzeme / Vācija, Bohēmijas–Polijas mala, Balkāni / Bizantija, Itālija; shēmatiska krustnešu mala Levantā. Ibērija joprojām islāmiska. Tālā ziemeļu atlikums un Baltijas / somu perēkļi — vietējās tradīcijas. Jūdu plankumi.',
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
@@ -2177,14 +2177,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1300: {
       title: '1300. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1300. g. m.ē. **islāma** josla — mameluku Ēģipte un Sīrija, Magriba un Lībija, Anatolijas mala (agrie osmaņi), Granadas kabata Ibērijā, plus Tuvie Austrumi–Arābija–Irāna–Centrālāzija un Deli mala. Kristīgā Eiropa gandrīz vienlaidus rietumos un centrā; Balkāni kristīgi. Indija hinduistu; budistu koridori un ķīniešu slānis Austrumos. Amerikā — vietējās tradīcijas: augošā Mezoamerika (acteki) un Andi, plus citas indīgēnās zonas.',
+        'Ap 1300. g. m.ē. **islāma** josla — mameluku Ēģipte un Sīrija, Magriba un Lībija, Anatolijas mala (agrie osmaņi), Granadas anklāvs Ibērijā, plus Tuvie Austrumi–Arābija–Irāna–Centrālāzija un Deli mala. Kristīgā Eiropa gandrīz vienlaidus rietumos un centrā; Balkāni kristīgi. Indija hinduistu; budistu koridori un ķīniešu slānis Austrumos. Amerikā — vietējās tradīcijas: augošā Mezoamerika (acteki) un Andi, plus citas indīgēnās zonas.',
       imageAlt:
-        'Shēmatiska reliģiju karte 1300. gadam m.ē.: mameluku islāma josla, Anatolijas mala, Granadas kabata, Amerika — vietējās tradīcijas',
+        'Shēmatiska reliģiju karte 1300. gadam m.ē.: mameluku islāma josla, Anatolijas mala, Granadas anklāvs, Amerika — vietējās tradīcijas',
       honestyPills: packCHonesty.lv,
       continentBlocks: [
         {
           heading: 'Eiropa / Vidusjūra',
-          text: 'Kristīgā aizpilde latīņu Rietumos, Itālijā, Britānijā, Skandināvijas malā, aiz Elbas / Krievzemes malā un Balkānos. Ibērija pārsvarā kristīga, izņemot islāma Granadas kabatu. Anatolija — tikai islāma mala, ne vairākuma aizpilde. Jūdu plankumi, kur redzami.',
+          text: 'Kristīgā aizpilde latīņu Rietumos, Itālijā, Britānijā, Skandināvijas malā, aiz Elbas / Krievzemes malā un Balkānos. Ibērija pārsvarā kristīga, izņemot islāma Granadas anklāvu. Anatolija — tikai islāma mala, ne vairākuma aizpilde. Jūdu plankumi, kur redzami.',
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
@@ -2209,18 +2209,18 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1400: {
       title: '1400. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Līdz 1400. g. m.ē. **islāma** josla platāka: mameluku Ēģipte–Sīrija–Levanta, Magriba–Lībija, Timura zona (Centrālāzija / Irāna / Tuvie Austrumi), Anatolija jau pārsvarā islāmiska (osmaņi), Granadas kabata vēl vietā. Kristīgā Eiropa pilnāka; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā — spēcīgi vietējie kodoli: acteku Mezoamerika un Inku Andi, plus citas indīģēnās zonas.',
+        'Līdz 1400. g. m.ē. **islāma** josla platāka: mameluku Ēģipte–Sīrija–Levanta, Magriba–Lībija, Timura zona (Centrālāzija / Irāna / Tuvie Austrumi), Anatolija jau pārsvarā islāmiska (osmaņi), Granadas anklāvs vēl vietā. Kristīgā Eiropa pilnāka; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā — spēcīgi vietējie kodoli: acteku Mezoamerika un Inku Andi, plus citas indīģēnās zonas.',
       imageAlt:
-        'Shēmatiska reliģiju karte 1400. gadam m.ē.: platāka islāma josla, osmaņu Anatolija, Granadas kabata, acteku un Inku kodoli',
+        'Shēmatiska reliģiju karte 1400. gadam m.ē.: platāka islāma josla, osmaņu Anatolija, Granadas anklāvs, acteku un Inku kodoli',
       honestyPills: packCHonesty.lv,
       continentBlocks: [
         {
           heading: 'Eiropa / Vidusjūra',
-          text: 'Pilnāks kristīgais Rietums, centrs, Skandināvija, Baltija un Krievzemes mala; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Ibērija kristīga, izņemot Granadas kabatu. Anatolija pārsvarā islāmiska (osmaņi) — nav Bizantijas kristīgā aizpilde. Jūdu plankumi.',
+          text: 'Pilnāks kristīgais Rietums, centrs, Skandināvija, Baltija un Krievzemes mala; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Ibērija kristīga, izņemot Granadas anklāvu. Anatolija pārsvarā islāmiska (osmaņi) — nav Bizantijas kristīgā aizpilde. Jūdu plankumi.',
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba–Lībija–Ēģipte–Levanta–Arābija plus Timura zonas aizpilde pilnāka uz Irānu un Centrālāziju; Anatolija pārsvarā islāmiska (osmaņi). Granadas kabata Ibērijā paliek. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba–Lībija–Ēģipte–Levanta–Arābija plus Timura zonas aizpilde pilnāka uz Irānu un Centrālāziju; Anatolija pārsvarā islāmiska (osmaņi). Granadas anklāvs Ibērijā paliek. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2248,7 +2248,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Eiropa / Vidusjūra',
-          text: 'Kristīgā Ibērija (pēc Granadas), latīņu Rietumi, Itālija, Skandināvija, Baltija, Krievzemes mala uz plāksnes. Balkāni osmaņu varā, bet demogrāfiski joprojām pārsvarā kristīgi — tikai mazi musulmaņu kabatas (Bosnijas / Albānijas mala), kur atzīmēts. Anatolija pārsvarā musulmaņu osmaņu — kristīgais atlikums tikai Egejas / rietumu piekrastē, ne iekšzemē. Jūdu plankumi.',
+          text: 'Kristīgā Ibērija (pēc Granadas), latīņu Rietumi, Itālija, Skandināvija, Baltija, Krievzemes mala uz plāksnes. Balkāni osmaņu varā, bet demogrāfiski joprojām pārsvarā kristīgi — tikai mazi musulmaņu anklāvi (Bosnijas / Albānijas mala), kur atzīmēts. Anatolija pārsvarā musulmaņu osmaņu — kristīgais atlikums tikai Egejas / rietumu piekrastē, ne iekšzemē. Jūdu plankumi.',
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
@@ -2273,9 +2273,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1600: {
       title: '1600. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1600. g. m.ē. osmaņu Anatolija ir islāmiska; Balkāni demogrāfiski kristīgi; Ibērija kristīga. Amerikā — indīgēnais atlikums iekšzemē plus kristīgā koloniālā mala (Jaunā Spānija, Andi, Brazīlija, Karību). Āfrika: islāma ziemeļi/Sahēla; uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas, ar kristīgām kabatām Etiopijā, Kongo un portugāļu piekrastēs. Austrālija: aborigēnu tradīcijas (kolonijas vēl nav).',
+        'Ap 1600. g. m.ē. osmaņu Anatolija ir islāmiska; Balkāni demogrāfiski kristīgi; Ibērija kristīga. Amerikā — indīgēnais atlikums iekšzemē plus kristīgā koloniālā mala (Jaunā Spānija, Andi, Brazīlija, Karību). Āfrika: islāma ziemeļi/Sahēla; uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas, ar kristīgiem anklāviem Etiopijā, Kongo un portugāļu piekrastēs. Austrālija: aborigēnu tradīcijas (kolonijas vēl nav).',
       imageAlt:
-        'Shēmatiska reliģiju karte 1600. gadam m.ē.: osmaņu islāmiskā Anatolija, kristīgie Balkāni, kristīgā Ibērija, Amerikā iekšzemes atlikums un koloniālā mala, Āfrikā kristīgās kabatas, aborigēnu Austrālija',
+        'Shēmatiska reliģiju karte 1600. gadam m.ē.: osmaņu islāmiskā Anatolija, kristīgie Balkāni, kristīgā Ibērija, Amerikā iekšzemes atlikums un koloniālā mala, Āfrikā kristīgie anklāvi, aborigēnu Austrālija',
       honestyPills: packDHonesty.lv,
       continentBlocks: [
         {
@@ -2292,7 +2292,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba–Ēģipte–Sahēla–svahili piekraste islāma joslā. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Kristīgās kabatas tikai: Etiopija, Kongo un portugāļu piekrastes. Madagaskara nav kristīga.',
+          text: 'Magriba–Ēģipte–Sahēla–svahili piekraste islāma joslā. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Kristīgie anklāvi tikai: Etiopija, Kongo un portugāļu piekrastes. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2305,7 +2305,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1700: {
       title: '1700. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1700. g. m.ē. Ibērijas Amerika lielā mērā kristīta (publiskais kristīgais vairākums); britu/franču Ziemeļamerikas austrumi kristīgi; iekšzemes atlikums paliek. Krievija — ortodoksā imperija ar Sibīrijas joslu; Skandināvija — vienlaidus luterāņu valsts baznīcas. Āfrika: tās pašas kristīgās kabatas plus Kapas kolonija (no 1652). Austrālija joprojām aborigēnu.',
+        'Ap 1700. g. m.ē. Ibērijas Amerika lielā mērā kristīta (publiskais kristīgais vairākums); britu/franču Ziemeļamerikas austrumi kristīgi; iekšzemes atlikums paliek. Krievija — ortodoksā imperija ar Sibīrijas joslu; Skandināvija — vienlaidus luterāņu valsts baznīcas. Āfrika: tie paši kristīgie anklāvi plus Kapas kolonija (no 1652). Austrālija joprojām aborigēnu.',
       imageAlt:
         'Shēmatiska reliģiju karte 1700. gadam m.ē.: Ibērijas Amerika lielā mērā kristīga, britu un franču Ziemeļamerikas austrumi, iekšzemes atlikums, ortodoksā Sibīrijas josla, luterāņu Skandināvija, Kapas kolonija, aborigēnu Austrālija',
       honestyPills: packDHonesty.lv,
@@ -2324,7 +2324,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Tās pašas kristīgās kabatas kā 1600. gadā (Etiopija, Kongo, portugāļu piekrastes) plus Kapas kolonija (no 1652). Magriba–Ēģipte–Sahēla–svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
+          text: 'Tie paši kristīgie anklāvi kā 1600. gadā (Etiopija, Kongo, portugāļu piekrastes) plus Kapas kolonija (no 1652). Magriba–Ēģipte–Sahēla–svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2337,9 +2337,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1800: {
       title: '1800. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1800. g. m.ē. (napoleona / neatkarības priekšvakarā): Dienvidamerika gandrīz monolīti katoliska; Ziemeļamerika kristīgi austrumi–centrs (protestantu ASV, katoļu Kvebeka/Meksika). Krievija ortodoksā līdz Klusajam okeānam; Skandināvija luterāņu. Āfrika joprojām kabatas (Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums). Austrālija: sīkā Jaunās Dienvidvelsas kolonija Sidnejā (no 1788), kontinents aborigēnu.',
+        'Ap 1800. g. m.ē. (napoleona / neatkarības priekšvakarā): Dienvidamerika gandrīz monolīti katoliska; Ziemeļamerika kristīgi austrumi–centrs (protestantu ASV, katoļu Kvebeka/Meksika). Krievija ortodoksā līdz Klusajam okeānam; Skandināvija luterāņu. Āfrikā joprojām anklāvi (Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums). Austrālija: sīkā Jaunās Dienvidvelsas kolonija Sidnejā (no 1788), kontinents aborigēnu.',
       imageAlt:
-        'Shēmatiska reliģiju karte 1800. gadam m.ē.: Dienvidamerika gandrīz katoliska, Ziemeļamerika kristīgi austrumi-centrs, Krievija līdz Klusajam okeānam, luterāņu Skandināvija, kabatas Āfrikā, sīkā Jaunās Dienvidvelsas kolonija, kontinents aborigēnu',
+        'Shēmatiska reliģiju karte 1800. gadam m.ē.: Dienvidamerika gandrīz katoliska, Ziemeļamerika kristīgi austrumi-centrs, Krievija līdz Klusajam okeānam, luterāņu Skandināvija, anklāvi Āfrikā, sīkā Jaunās Dienvidvelsas kolonija, kontinents aborigēnu',
       honestyPills: packDHonesty.lv,
       continentBlocks: [
         {
@@ -2356,7 +2356,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Joprojām tikai kabatas: Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums. Magriba–Ēģipte–Sahēla–svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
+          text: 'Joprojām tikai anklāvi: Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums. Magriba–Ēģipte–Sahēla–svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
