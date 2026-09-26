@@ -268,7 +268,7 @@ export const en: Record<string, LawCopy> = {
   },
   'bbnj-agreement': {
     title: 'BBNJ Agreement (High Seas Treaty)',
-    hook: 'The high-seas biodiversity agreement under the United Nations Convention on the Law of the Sea. It covers marine genetic resources, tools for protecting areas of ocean (including marine protected areas beyond national jurisdiction), environmental impact assessments, and help with skills and technology. It is in force. The first Conference of the Parties is still ahead.',
+    hook: 'The high-seas biodiversity agreement under the United Nations Convention on the Law of the Sea. It covers marine genetic resources, tools for protecting areas of ocean (including marine protected areas beyond national jurisdiction), environmental impact assessments, and help with skills and technology. It entered into force on 17 January 2026.',
     imageAlt:
       'Open water of the North Atlantic, seen from a vessel, with a distant ship on the horizon',
     jurisdiction:
@@ -281,7 +281,7 @@ export const en: Record<string, LawCopy> = {
       'Adopted on 19 June 2023. Opened for signature on 20 September 2023. Entered into force on 17 January 2026.',
     what: 'A legally binding agreement that carries out the United Nations Convention on the Law of the Sea for areas beyond national jurisdiction: the high seas and the international seabed. One part addresses marine genetic resources and sharing the benefits from them. Another covers tools for managing areas of ocean, including marine protected areas. Another covers environmental impact assessments. Another covers building skills and transferring marine technology. Institutions include a Conference of the Parties and scientific and technical bodies, which the conference process is meant to set up.',
     where:
-      'Adopted on 19 June 2023 and opened for signature on 20 September 2023. It entered into force on 17 January 2026, which is 120 days after the sixtieth ratification, as article 68 provides. The United Nations Treaty Collection, record XXI-10, keeps the current list of parties. Preparations for the first Conference of the Parties run toward 2027, so being in force does not yet mean every institution is working at full speed.',
+      'Adopted on 19 June 2023 and opened for signature on 20 September 2023. It entered into force on 17 January 2026, which is 120 days after the sixtieth ratification, as article 68 provides. The United Nations Treaty Collection, record XXI-10, keeps the current list of parties.',
     effects:
       'The intended effects are to close the gap in how biodiversity is governed on the high seas, to make it possible to protect areas of ocean beyond the exclusive economic zones that coastal states control, to set expectations for environmental impact assessments of activities that affect areas beyond national jurisdiction, and to share benefits from marine genetic resources. How well that works will depend on the conference’s rules, on funding, and on proposals from parties to designate sites.',
     caveats:

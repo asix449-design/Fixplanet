@@ -257,7 +257,7 @@ export const lv: Record<string, LawCopy> = {
   'bbnj-agreement': {
     title:
       'Nolīgums par jūras bioloģisko daudzveidību apgabalos ārpus valstu jurisdikcijas (atklātās jūras līgums)',
-    hook: 'Atklātās jūras bioloģiskās daudzveidības nolīgums Apvienoto Nāciju Organizācijas Jūras tiesību konvencijas ietvaros. Tas aptver jūras ģenētiskos resursus, teritoriju aizsardzības instrumentus, tostarp aizsargājamas jūras teritorijas ārpus valstu jurisdikcijas, ietekmes uz vidi novērtējumus un palīdzību valstīm prasmēs un tehnoloģijā. Tas jau ir spēkā. Pirmā Pušu konference vēl ir priekšā.',
+    hook: 'Atklātās jūras bioloģiskās daudzveidības nolīgums Apvienoto Nāciju Organizācijas Jūras tiesību konvencijas ietvaros. Tas aptver jūras ģenētiskos resursus, teritoriju aizsardzības instrumentus, tostarp aizsargājamas jūras teritorijas ārpus valstu jurisdikcijas, ietekmes uz vidi novērtējumus un palīdzību valstīm prasmēs un tehnoloģijā. Tas stājās spēkā 2026. gada 17. janvārī.',
     imageAlt: 'Ziemeļatlantijas atklātie ūdeņi, skatoties no kuģa, ar tālu kuģi pie horizonta',
     jurisdiction:
       'Starptautisks (nolīguma puses; Apvienoto Nāciju Organizācijas Jūras tiesību konvencijas ietvarā)',
@@ -269,7 +269,7 @@ export const lv: Record<string, LawCopy> = {
       'Pieņemts 2023. gada 19. jūnijā. Parakstīšanai atvērts 2023. gada 20. septembrī. Stājās spēkā 2026. gada 17. janvārī.',
     what: 'Juridiski saistošs nolīgums, kas īsteno Apvienoto Nāciju Organizācijas Jūras tiesību konvenciju apgabaliem ārpus valstu jurisdikcijas: atklātajai jūrai un starptautiskajam jūras dibena rajonam. Viena daļa attiecas uz jūras ģenētiskajiem resursiem un labumu sadali no tiem. Cita aptver teritoriju pārvaldības instrumentus, tostarp aizsargājamas jūras teritorijas. Vēl cita attiecas uz ietekmes uz vidi novērtējumu. Vēl cita attiecas uz prasmju stiprināšanu un jūras tehnoloģiju nodošanu. Iestāžu starpā ir Pušu konference un zinātniskās un tehniskās struktūras, ko konferences process ir paredzējis izveidot.',
     where:
-      'Pieņemts 2023. gada 19. jūnijā un parakstīšanai atvērts 2023. gada 20. septembrī. Stājās spēkā 2026. gada 17. janvārī, tas ir, 120. dienā pēc sešdesmitās ratifikācijas, kā noteic 68. pants. Aktuālo pušu sarakstu ved Apvienoto Nāciju Organizācijas Līgumu krājums, ieraksts XXI-10. Gatavošanās pirmajai Pušu konferencei virzās uz 2027. gadu, tāpēc stāšanās spēkā vēl nenozīmē, ka visas iestādes jau strādā pilnā gaitā.',
+      'Pieņemts 2023. gada 19. jūnijā un parakstīšanai atvērts 2023. gada 20. septembrī. Stājās spēkā 2026. gada 17. janvārī, tas ir, 120. dienā pēc sešdesmitās ratifikācijas, kā noteic 68. pants. Aktuālo pušu sarakstu ved Apvienoto Nāciju Organizācijas Līgumu krājums, ieraksts XXI-10.',
     effects:
       'Iecerētais efekts: aizvērt robu tajā, kā atklātajā jūrā pārvalda bioloģisko daudzveidību, darīt iespējamu okeāna teritoriju aizsardzību ārpus ekskluzīvajām ekonomiskajām zonām, ko kontrolē piekrastes valstis, noteikt gaidas ietekmes uz vidi novērtējumam darbībām, kas skar apgabalus ārpus valstu jurisdikcijas, un dalīt labumus no jūras ģenētiskajiem resursiem. Cik labi tas izdosies, būs atkarīgs no konferences noteikumiem, no finansējuma un no pušu priekšlikumiem par vietām.',
     caveats:

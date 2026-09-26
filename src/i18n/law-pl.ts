@@ -260,7 +260,7 @@ export const pl: Record<string, LawCopy> = {
   'bbnj-agreement': {
     title:
       'Porozumienie o różnorodności biologicznej obszarów poza jurysdykcją krajową (traktat o morzu pełnym)',
-    hook: 'Porozumienie o różnorodności biologicznej morza pełnego w ramach Konwencji Narodów Zjednoczonych o prawie morza. Obejmuje morskie zasoby genetyczne, narzędzia ochrony obszarów, w tym morskie obszary chronione poza jurysdykcją krajową, oceny oddziaływania na środowisko oraz pomoc państwom w umiejętnościach i technologii. Jest już w mocy. Pierwsza Konferencja Stron jest dopiero przed nami.',
+    hook: 'Porozumienie o różnorodności biologicznej morza pełnego w ramach Konwencji Narodów Zjednoczonych o prawie morza. Obejmuje morskie zasoby genetyczne, narzędzia ochrony obszarów, w tym morskie obszary chronione poza jurysdykcją krajową, oceny oddziaływania na środowisko oraz pomoc państwom w umiejętnościach i technologii. Weszło w życie 17 stycznia 2026.',
     imageAlt: 'Otwarte wody północnego Atlantyku widziane ze statku, z dalekim statkiem na horyzoncie',
     jurisdiction:
       'Międzynarodowy (strony porozumienia; w ramach Konwencji Narodów Zjednoczonych o prawie morza)',
@@ -272,7 +272,7 @@ export const pl: Record<string, LawCopy> = {
       'Przyjęte 19 czerwca 2023. Otwarte do podpisu 20 września 2023. Weszło w życie 17 stycznia 2026.',
     what: 'Prawnie wiążące porozumienie, które wykonuje Konwencję Narodów Zjednoczonych o prawie morza dla obszarów poza jurysdykcją krajową: morza pełnego i międzynarodowego obszaru dna morskiego. Jedna część dotyczy morskich zasobów genetycznych i podziału korzyści z nich. Inna obejmuje narzędzia zarządzania obszarami, w tym morskie obszary chronione. Kolejna dotyczy ocen oddziaływania na środowisko. Jeszcze inna dotyczy wzmacniania umiejętności i przekazywania technologii morskiej. Wśród organów są Konferencja Stron oraz organy naukowe i techniczne, które ma powołać proces konferencji.',
     where:
-      'Przyjęte 19 czerwca 2023, otwarte do podpisu 20 września 2023. Weszło w życie 17 stycznia 2026, czyli 120 dni po sześćdziesiątej ratyfikacji, jak stanowi artykuł 68. Aktualną listę stron prowadzi Zbiór traktatów Organizacji Narodów Zjednoczonych, zapis XXI-10. Przygotowania do pierwszej Konferencji Stron idą ku 2027 rokowi, więc wejście w życie nie znaczy jeszcze, że wszystkie organy działają pełną parą.',
+      'Przyjęte 19 czerwca 2023, otwarte do podpisu 20 września 2023. Weszło w życie 17 stycznia 2026, czyli 120 dni po sześćdziesiątej ratyfikacji, jak stanowi artykuł 68. Aktualną listę stron prowadzi Zbiór traktatów Organizacji Narodów Zjednoczonych, zapis XXI-10.',
     effects:
       'Zamierzony skutek: zamknąć lukę w zarządzaniu różnorodnością biologiczną na morzu pełnym, umożliwić ochronę obszarów oceanu poza wyłącznymi strefami ekonomicznymi, którymi rządzą państwa przybrzeżne, ustalić oczekiwania co do ocen oddziaływania działalności wpływającej na obszary poza jurysdykcją krajową i dzielić korzyści z morskich zasobów genetycznych. Skutek zależy od reguł konferencji, od finansowania i od wniosków stron o wyznaczenie miejsc.',
     caveats:
