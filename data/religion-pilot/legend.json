@@ -33,7 +33,7 @@
     "dao_folk": "Optional merge with chinese_imperial on these plates — same fill.",
     "manichaean": "Hatch / minority only from about 200 CE. Never a majority wash.",
     "christian": "Dots (1–100), urban hatch (200–300), expanding fill (400–600). No Islam id on 500/600.",
-    "islam": "Public fill from 700 (Umayyad belt). Color matches the green wash on the 700–1500 plates.",
-    "unmapped": "Oceania stays gray. Americas are unmapped through 1200; from 1300 they take an indigenous local-traditions fill, not a census."
+    "islam": "Public fill from 700 (Umayyad belt). Color matches the green wash on the 700–1800 plates.",
+    "unmapped": "Oceania stays gray through 1500. Americas are unmapped through 1200; from 1300 they take an indigenous local-traditions fill, not a census. From 1600 Australia is Aboriginal traditional; NSW speck in 1800 only."
   }
 }

@@ -81,7 +81,7 @@ const emphasizeCaption = (text: string) =>
             return (
               <article class="borders-frame map-detail" id={`year-${frame.year}`}>
                 <figure class="map-detail-art">
-                  <img src={preview} alt={frame.imageAlt} width="2560" height="1352" />
+                  <img src={preview} alt={frame.imageAlt} width="2560" height={frame.year >= 1600 ? 1376 : 1352} />
                   <figcaption>
                     {frame.sourceOrg}. {page.mapYearLabel}: {frame.sourceYear}.
                   </figcaption>
