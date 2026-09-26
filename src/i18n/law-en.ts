@@ -182,6 +182,113 @@ export const en: Record<string, LawCopy> = {
     sourcesNote:
       'Primary text of ЗРУ-916 on lex.uz (Russian and Uzbek); consolidated flora-law page showing Article 49¹; UzDaily English note on Senate consideration of the same law.',
   },
+  'convention-on-biological-diversity': {
+    title: 'Convention on Biological Diversity',
+    hook: 'The main United Nations biodiversity treaty. It sets three objectives: conserve biological diversity, use it sustainably, and share the benefits from genetic resources fairly. Parties must plan and report. It is not a single global list of species.',
+    imageAlt:
+      'Primary tropical rainforest in Taman Negara, Malaysia, with a river running through dense green canopy',
+    jurisdiction: 'International (parties to the Convention; the United States has not ratified)',
+    officialName: 'Convention on Biological Diversity',
+    citation:
+      'Convention on Biological Diversity; adopted in Nairobi on 22 May 1992; opened for signature in Rio de Janeiro on 5 June 1992; entered into force on 29 December 1993',
+    yearStatus:
+      'Adopted in Nairobi on 22 May 1992. Opened for signature in Rio de Janeiro on 5 June 1992. Entered into force on 29 December 1993.',
+    what: 'A framework convention for biological diversity. Parties commit to conservation where species live and in collections away from the wild, to sustainable use, to assessing how projects affect the environment, and to cooperation. It creates the Conference of the Parties, a scientific body that advises them, and a reporting cycle. Two protocols sit under it: the Cartagena Protocol on biosafety and the Nagoya Protocol on access and benefit-sharing. They are separate instruments in the same family.',
+    where:
+      'Applies to parties that have ratified or acceded. In force from 29 December 1993. The depositary is the United Nations Secretary-General. The list of parties changes over time. The Convention secretariat and the United Nations Treaty Collection keep the current record.',
+    effects:
+      'The intended effects are to put biodiversity into binding multilateral law beside the climate and ozone treaties, to drive national strategies and action plans for biodiversity, and to host later protocols and the Kunming-Montreal framework. Outcomes depend on national measures. The Convention text alone does not fence a reserve.',
+    caveats:
+      'The Convention does not run a permit system for the wildlife trade. Trade in endangered species is covered by a separate treaty, the Convention on International Trade in Endangered Species of Wild Fauna and Flora. The Kunming-Montreal Global Biodiversity Framework was adopted as a decision of the Conference of the Parties under this Convention. The United States signed the Convention but has not ratified it.',
+    sourcesNote:
+      'Convention secretariat text page; English text of the Convention; convention page; secretariat home page.',
+  },
+  'kunming-montreal-gbf': {
+    title: 'Kunming-Montreal Global Biodiversity Framework',
+    hook: 'The current global biodiversity plan under the Convention on Biological Diversity. It sets four goals for 2050 and twenty-three targets for 2030, including the widely cited aim to protect at least 30 percent of land and sea. It was adopted as a decision of the Conference of the Parties, not as a second biodiversity treaty.',
+    imageAlt: 'A shallow Florida coral reef with sea fans and small fish',
+    jurisdiction:
+      'International (parties to the Convention on Biological Diversity implementing Decision 15/4)',
+    officialName: 'Kunming-Montreal Global Biodiversity Framework',
+    citation:
+      'Kunming-Montreal Global Biodiversity Framework; Decision 15/4 of the 15th Conference of the Parties to the Convention on Biological Diversity, adopted 19 December 2022 in Montreal',
+    yearStatus:
+      'Adopted 19 December 2022 at the second part of the 15th Conference of the Parties in Montreal (Decision 15/4). A decision under the Convention, not a separately ratified treaty.',
+    what: 'Decision 15/4 adopts the Kunming-Montreal Global Biodiversity Framework as the pathway for putting the Convention into practice this decade. It sets a 2050 vision of living in harmony with nature, four goals for 2050, and 23 action targets for 2030. Target 3, on conservation of areas, is often summarised as protecting 30 percent of land and sea. Companion decisions from the same meeting cover monitoring, planning, reporting, review, finance, and support for countries carrying out the work.',
+    where:
+      'It applies through the national targets and biodiversity strategies of parties to the Convention. Adopted in Montreal on 19 December 2022 as Decision 15/4. It is a decision of the Conference of the Parties under the Convention on Biological Diversity, not a separately ratified treaty. A first global review of collective progress is on the agenda of the 17th Conference of the Parties, in a process set for 2026.',
+    effects:
+      'The intended effects are to replace the earlier 2010–2020 biodiversity targets, known as the Aichi Targets, with a clearer set of aims for 2030, to line up national biodiversity plans, and to create a cycle of monitoring and review. Delivery depends on national law, money, and which areas of land and sea countries designate. The decision text alone does not create a protected area.',
+    caveats:
+      'The Framework is not a standalone treaty and does not replace the text of the Convention. The 30 percent figure in Target 3 is a collective aim for 2030, not a sign that the world has already protected 30 percent of land and sea. The exact wording of the goals and targets is in Decision 15/4 and on the Convention secretariat’s framework page.',
+    sourcesNote:
+      'Framework page at the Convention secretariat; Decision 15/4; page of 2030 targets; secretariat note on the text adopted in Montreal.',
+  },
+  'ramsar-convention': {
+    title: 'Ramsar Convention',
+    hook: 'The oldest global wetlands treaty. Parties name wetlands of international importance for a public list and commit to using wetlands in their territory with care. It is a list of sites and a duty to look after them, not a code for the wildlife trade.',
+    imageAlt: 'Waterfowl feeding along a marsh at the Pariette Wetlands in Utah',
+    jurisdiction: 'International (contracting parties; UNESCO is the depositary)',
+    officialName:
+      'Convention on Wetlands of International Importance especially as Waterfowl Habitat',
+    citation:
+      'Convention on Wetlands of International Importance especially as Waterfowl Habitat; done at Ramsar, Iran, on 2 February 1971; entered into force on 21 December 1975 (as amended)',
+    yearStatus:
+      'Done at Ramsar, Iran, on 2 February 1971. Entered into force on 21 December 1975. The present text includes later amendments.',
+    what: 'Each party must designate at least one wetland for the List of Wetlands of International Importance, promote conservation of listed sites, and use wetlands in general with care so that they keep their ecological character. It organises cooperation on shared wetlands and waterfowl. A conference of the contracting parties steers guidance. The present text incorporates later amendments: the Paris Protocol of 1982 and the Regina Amendments of 1987.',
+    where:
+      'Applies to contracting parties. Done at Ramsar on 2 February 1971. In force from 21 December 1975. Depositary functions sit with UNESCO. The lists of parties and designated sites change over time. UNESCO, as depositary, and the Convention’s own documentation keep the current record.',
+    effects:
+      'The intended effects are to keep internationally important wetlands on a public list with conservation duties, and to spread careful use as the management standard. Listing alone does not equal full protection on the ground. National law and management plans carry the work.',
+    caveats:
+      'The Convention does not ban the use of wetlands. It asks parties to use wetlands with care and to look after the sites they list.',
+    sourcesNote:
+      'UNESCO depositary page; English text in the United Nations Treaty Series; record in the United Nations Treaty Collection; environmental-treaty catalogue entry.',
+  },
+  'aarhus-convention': {
+    title: 'Aarhus Convention',
+    hook: 'The United Nations treaty on environmental democracy. It gives the public rights to environmental information, a say in certain decisions, and a way to seek review in a court or another independent body. These are rights about procedure, not a statute that sets pollution limits.',
+    imageAlt: 'The council chamber at Toronto City Hall, where the public can attend meetings',
+    jurisdiction:
+      'International (parties in the region of the United Nations Economic Commission for Europe; open to other states under the accession rules)',
+    officialName:
+      'Convention on Access to Information, Public Participation in Decision-Making and Access to Justice in Environmental Matters',
+    citation:
+      'Convention on Access to Information, Public Participation in Decision-Making and Access to Justice in Environmental Matters; done at Aarhus on 25 June 1998; entered into force on 30 October 2001',
+    yearStatus: 'Done at Aarhus on 25 June 1998. Entered into force on 30 October 2001.',
+    what: 'Three parts. First, access to environmental information held by public authorities. Second, a public say in decisions on specific activities and on programmes. Third, access to justice when those rights are denied or environmental law is breached. A meeting of the parties and a way of checking whether parties keep their promises oversee implementation. The Kyiv Protocol on registers of pollutant releases and transfers is a related instrument.',
+    where:
+      'Negotiated under the United Nations Economic Commission for Europe. In force from 30 October 2001. It applies to parties that have ratified or acceded, including some states outside that region under the Convention’s rules. The United Nations Treaty Collection, record XXVII-13, lists current parties.',
+    effects:
+      'The intended effects are to make environmental decisions open to challenge and to public view, and to narrow the information gap between authorities and the public. How strong that is depends on domestic courts, fees, and who is allowed to bring a case. The Convention sets minimums that parties must meet in national law.',
+    caveats:
+      'The Aarhus Convention is not a worldwide freedom-of-information law. It binds only its parties: countries in the region of the United Nations Economic Commission for Europe that have joined, plus some states outside it. The United Nations Treaty Collection lists current parties. Latin America has its own regional treaty on similar rights, the Escazú Agreement.',
+    sourcesNote:
+      'United Nations Treaty Collection record XXVII-13; treaty text No. 37770; environmental-treaty catalogue entry.',
+  },
+  'bbnj-agreement': {
+    title: 'BBNJ Agreement (High Seas Treaty)',
+    hook: 'The high-seas biodiversity agreement under the United Nations Convention on the Law of the Sea. It covers marine genetic resources, tools for protecting areas of ocean (including marine protected areas beyond national jurisdiction), environmental impact assessments, and help with skills and technology. It is in force. The first Conference of the Parties is still ahead.',
+    imageAlt:
+      'Open water of the North Atlantic, seen from a vessel, with a distant ship on the horizon',
+    jurisdiction:
+      'International (parties to the Agreement; under the United Nations Convention on the Law of the Sea)',
+    officialName:
+      'Agreement under the United Nations Convention on the Law of the Sea on the Conservation and Sustainable Use of Marine Biological Diversity of Areas beyond National Jurisdiction',
+    citation:
+      'Agreement under the United Nations Convention on the Law of the Sea on the Conservation and Sustainable Use of Marine Biological Diversity of Areas beyond National Jurisdiction; adopted in New York on 19 June 2023; entered into force on 17 January 2026',
+    yearStatus:
+      'Adopted on 19 June 2023. Opened for signature on 20 September 2023. Entered into force on 17 January 2026.',
+    what: 'A legally binding agreement that carries out the United Nations Convention on the Law of the Sea for areas beyond national jurisdiction: the high seas and the international seabed. One part addresses marine genetic resources and sharing the benefits from them. Another covers tools for managing areas of ocean, including marine protected areas. Another covers environmental impact assessments. Another covers building skills and transferring marine technology. Institutions include a Conference of the Parties and scientific and technical bodies, which the conference process is meant to set up.',
+    where:
+      'Adopted on 19 June 2023 and opened for signature on 20 September 2023. It entered into force on 17 January 2026, which is 120 days after the sixtieth ratification, as article 68 provides. The United Nations Treaty Collection, record XXI-10, keeps the current list of parties. Preparations for the first Conference of the Parties run toward 2027, so being in force does not yet mean every institution is working at full speed.',
+    effects:
+      'The intended effects are to close the gap in how biodiversity is governed on the high seas, to make it possible to protect areas of ocean beyond the exclusive economic zones that coastal states control, to set expectations for environmental impact assessments of activities that affect areas beyond national jurisdiction, and to share benefits from marine genetic resources. How well that works will depend on the conference’s rules, on funding, and on proposals from parties to designate sites.',
+    caveats:
+      'The Agreement works under the United Nations Convention on the Law of the Sea and does not replace it. Coastal waters and exclusive economic zones are outside its scope. Biodiversity duties there fall under the Convention on Biological Diversity. The Agreement sets up the legal process for creating protected areas on the high seas. Each site still has to be proposed and approved.',
+    sourcesNote:
+      'United Nations page on the agreement; English text; United Nations Treaty Collection record XXI-10; International Maritime Organization note on entry into force.',
+  },
   'un-plastics-treaty': {
     title: 'UN plastics treaty (INC process)',
     hook: 'A mandated negotiation for a legally binding plastics instrument. There is no agreed treaty text.',

@@ -172,6 +172,114 @@ export const pl: Record<string, LawCopy> = {
     sourcesNote:
       'Pierwotny tekst ЗРУ-916 na lex.uz (rosyjski i uzbecki); skonsolidowana strona ustawy o świecie roślinnym z art. 49¹; angielska notatka UzDaily o rozpatrzeniu tej samej ustawy w Senacie.',
   },
+  'convention-on-biological-diversity': {
+    title: 'Konwencja o różnorodności biologicznej',
+    hook: 'Główny traktat Organizacji Narodów Zjednoczonych o różnorodności biologicznej. Wyznacza trzy cele: chronić różnorodność biologiczną, użytkować ją w sposób zrównoważony i sprawiedliwie dzielić korzyści z zasobów genetycznych. Strony mają obowiązek planować i składać sprawozdania. To nie jest jedna światowa lista gatunków.',
+    imageAlt:
+      'Pierwotny las deszczowy w parku Taman Negara w Malezji: rzeka wśród gęstego zielonego sklepienia',
+    jurisdiction: 'Międzynarodowy (strony konwencji; Stany Zjednoczone nie ratyfikowały)',
+    officialName: 'Konwencja o różnorodności biologicznej',
+    citation:
+      'Konwencja o różnorodności biologicznej; przyjęta w Nairobi 22 maja 1992; otwarta do podpisu w Rio de Janeiro 5 czerwca 1992; weszła w życie 29 grudnia 1993',
+    yearStatus:
+      'Przyjęta w Nairobi 22 maja 1992. Otwarta do podpisu w Rio de Janeiro 5 czerwca 1992. Weszła w życie 29 grudnia 1993.',
+    what: 'Konwencja ramowa. Strony zobowiązują się chronić różnorodność w miejscu występowania gatunków i poza nim, w kolekcjach, użytkować ją w sposób zrównoważony, oceniać oddziaływanie na środowisko i współpracować. Tworzy Konferencję Stron, organ naukowy, który jej doradza, oraz cykl sprawozdań. Pod konwencją stoją dwa odrębne protokoły tej samej rodziny: protokół z Kartageny o bezpieczeństwie biologicznym i protokół z Nagoi o dostępie do zasobów genetycznych i podziale korzyści.',
+    where:
+      'Dotyczy stron, które ją ratyfikowały albo do niej przystąpiły. W mocy od 29 grudnia 1993. Depozytariuszem jest sekretarz generalny Organizacji Narodów Zjednoczonych. Lista stron się zmienia. Aktualny wykaz prowadzą sekretariat konwencji i Zbiór traktatów Organizacji Narodów Zjednoczonych.',
+    effects:
+      'Zamierzony skutek: wpisać różnorodność biologiczną w wiążące prawo wielostronne obok traktatów o klimacie i ozonie, skłonić państwa do krajowych strategii i planów działań oraz dać miejsce późniejszym protokołom i globalnym ramom różnorodności biologicznej z Kunming-Montrealu. Wynik zależy od środków krajowych. Sam tekst konwencji nie grodzi rezerwatu.',
+    caveats:
+      'Konwencja nie wydaje zezwoleń na handel dzikimi gatunkami. Tym zajmuje się odrębny traktat, Konwencja o międzynarodowym handlu dzikimi zwierzętami i roślinami gatunków zagrożonych wyginięciem. Globalne ramy różnorodności biologicznej z Kunming-Montrealu przyjęto jako decyzję Konferencji Stron tej konwencji. Stany Zjednoczone podpisały konwencję, ale jej nie ratyfikowały.',
+    sourcesNote:
+      'Tekst konwencji na stronie sekretariatu; angielski tekst konwencji; strona o konwencji; strona główna sekretariatu.',
+  },
+  'kunming-montreal-gbf': {
+    title: 'Globalne ramy różnorodności biologicznej z Kunming-Montrealu',
+    hook: 'Obecny światowy plan różnorodności biologicznej przy Konwencji o różnorodności biologicznej. Cztery cele do 2050 roku i dwadzieścia trzy zadania do 2030 roku, w tym szeroko cytowany zamiar objęcia ochroną co najmniej 30 procent lądu i morza. Przyjęto je jako decyzję Konferencji Stron, a nie jako drugi traktat o różnorodności biologicznej.',
+    imageAlt:
+      'Płytka rafa koralowa na Florydzie: wachlarze morskie i drobne ryby, życie morskie, którego dotyczy ochrona obszarowa',
+    jurisdiction:
+      'Międzynarodowy (strony Konwencji o różnorodności biologicznej wykonujące decyzję 15/4)',
+    officialName: 'Globalne ramy różnorodności biologicznej z Kunming-Montrealu',
+    citation:
+      'Globalne ramy różnorodności biologicznej z Kunming-Montrealu; decyzja 15/4 piętnastej Konferencji Stron Konwencji o różnorodności biologicznej, przyjęta 19 grudnia 2022 w Montrealu',
+    yearStatus:
+      'Przyjęta 19 grudnia 2022 na drugiej części piętnastej Konferencji Stron w Montrealu (decyzja 15/4). To decyzja przy konwencji, nie osobno ratyfikowany traktat.',
+    what: 'Decyzja 15/4 przyjmuje globalne ramy różnorodności biologicznej z Kunming-Montrealu jako drogę wykonywania konwencji w tej dekadzie. Wyznacza wizję na 2050 rok: życie w harmonii z przyrodą, cztery cele na 2050 rok i 23 zadania na 2030 rok. Zadanie 3, o ochronie obszarów, często streszcza się jako ochronę 30 procent lądu i morza. Towarzyszące decyzje tego samego spotkania obejmują obserwację, planowanie, sprawozdawczość, przegląd, finanse i wsparcie państw w wykonaniu.',
+    where:
+      'Działa przez krajowe cele i strategie stron konwencji. Przyjęta w Montrealu 19 grudnia 2022 jako decyzja 15/4. To decyzja Konferencji Stron przy Konwencji o różnorodności biologicznej, nie osobno ratyfikowany traktat. Pierwszy światowy przegląd wspólnego postępu jest w porządku obrad siedemnastej Konferencji Stron, w procesie na 2026 rok.',
+    effects:
+      'Zamierzony skutek: zastąpić wygasłe cele z Aichi na lata 2010–2020 jaśniejszym zestawem celów na 2030 rok, zestawić krajowe plany różnorodności biologicznej i stworzyć cykl obserwacji i przeglądu. Wykonanie zależy od prawa krajowego, pieniędzy i od tego, które obszary lądu i morza państwa wskażą. Sam tekst decyzji nie tworzy obszaru chronionego.',
+    caveats:
+      'Ramy nie są osobnym traktatem i nie zastępują tekstu konwencji. Liczba 30 procent w zadaniu 3 to wspólny cel na 2030 rok, a nie znak, że świat już objął ochroną 30 procent lądu i morza. Dokładne brzmienie celów i zadań jest w decyzji 15/4 i na stronie ram w sekretariacie konwencji.',
+    sourcesNote:
+      'Strona ram w sekretariacie konwencji; decyzja 15/4; strona zadań na 2030 rok; komunikat sekretariatu o tekście przyjętym w Montrealu.',
+  },
+  'ramsar-convention': {
+    title: 'Konwencja ramsarska',
+    hook: 'Najstarszy światowy traktat o mokradłach. Strony wpisują mokradła o znaczeniu międzynarodowym na publiczną listę i zobowiązują się użytkować mokradła na swoim terytorium z rozwagą. To lista miejsc i obowiązek dbania o nie, a nie kodeks handlu dziką przyrodą.',
+    imageAlt: 'Ptactwo wodne żeruje na bagnie w mokradłach Pariette w Utah',
+    jurisdiction: 'Międzynarodowy (strony; depozytariuszem jest UNESCO)',
+    officialName:
+      'Konwencja o obszarach wodno-błotnych mających znaczenie międzynarodowe, zwłaszcza jako środowisko życiowe ptactwa wodnego',
+    citation:
+      'Konwencja o obszarach wodno-błotnych mających znaczenie międzynarodowe, zwłaszcza jako środowisko życiowe ptactwa wodnego; sporządzona w Ramsarze (Iran) 2 lutego 1971; weszła w życie 21 grudnia 1975 (z późniejszymi zmianami)',
+    yearStatus:
+      'Sporządzona w Ramsarze (Iran) 2 lutego 1971. Weszła w życie 21 grudnia 1975. Obecny tekst obejmuje późniejsze zmiany.',
+    what: 'Każda strona wyznacza co najmniej jedno mokradło na Listę obszarów wodno-błotnych o znaczeniu międzynarodowym, wspiera ochronę wpisanych miejsc i użytkowanie mokradeł w ogóle z rozwagą, tak aby zachowały swój przyrodniczy charakter. Konwencja organizuje współpracę przy wspólnych mokradłach i ptactwie wodnym. Konferencja stron kieruje wytycznymi. Obecny tekst obejmuje późniejsze zmiany: protokół paryski z 1982 roku i zmiany przyjęte w Reginie w 1987 roku.',
+    where:
+      'Dotyczy stron konwencji. Sporządzona w Ramsarze 2 lutego 1971. W mocy od 21 grudnia 1975. Funkcje depozytariusza pełni UNESCO. Listy stron i wyznaczonych miejsc się zmieniają. UNESCO jako depozytariusz oraz własne dokumenty konwencji prowadzą aktualny wykaz.',
+    effects:
+      'Zamierzony skutek: trzymać mokradła o znaczeniu międzynarodowym na publicznej liście z obowiązkami ochrony i upowszechnić rozważne użytkowanie jako normę zarządzania. Sam wpis na listę nie jest pełną ochroną w terenie. Główną pracę wykonują prawo krajowe i plany zarządzania.',
+    caveats:
+      'Konwencja nie zakazuje użytkowania mokradeł. Prosi strony, aby użytkowały je z rozwagą i dbały o miejsca, które wpisały na listę.',
+    sourcesNote:
+      'Strona depozytariusza UNESCO; angielski tekst w Zbiorze traktatów Organizacji Narodów Zjednoczonych; zapis w Zbiorze traktatów Organizacji Narodów Zjednoczonych; karta w katalogu traktatów o środowisku.',
+  },
+  'aarhus-convention': {
+    title: 'Konwencja z Aarhus',
+    hook: 'Traktat Organizacji Narodów Zjednoczonych o demokracji środowiskowej. Daje ludziom prawo do informacji o środowisku, udziału w niektórych decyzjach i kontroli w sądzie albo w innym niezależnym organie. To prawa dotyczące procedury, a nie ustawa o limitach zanieczyszczeń.',
+    imageAlt: 'Sala obrad rady miasta w ratuszu Toronto, na których może być obecna publiczność',
+    jurisdiction:
+      'Międzynarodowy (strony regionu Europejskiej Komisji Gospodarczej Organizacji Narodów Zjednoczonych; otwarta także dla państw spoza regionu według reguł przystąpienia)',
+    officialName:
+      'Konwencja o dostępie do informacji, udziale społeczeństwa w podejmowaniu decyzji oraz dostępie do sprawiedliwości w sprawach dotyczących środowiska',
+    citation:
+      'Konwencja o dostępie do informacji, udziale społeczeństwa w podejmowaniu decyzji oraz dostępie do sprawiedliwości w sprawach dotyczących środowiska; Aarhus, 25 czerwca 1998; weszła w życie 30 października 2001',
+    yearStatus: 'Sporządzona w Aarhus 25 czerwca 1998. Weszła w życie 30 października 2001.',
+    what: 'Trzy części. Pierwsza: dostęp do informacji o środowisku, którą mają organy publiczne. Druga: udział społeczeństwa w decyzjach o konkretnych przedsięwzięciach i o programach. Trzecia: dostęp do sądu, gdy tych praw odmawia się albo gdy naruszone jest prawo środowiska. Wykonywanie nadzoruje spotkanie stron i tryb sprawdzania, czy strony dotrzymują zobowiązań. Pokrewny akt to protokół kijowski o rejestrach uwalniania i przenoszenia zanieczyszczeń.',
+    where:
+      'Wynegocjowana w ramach Europejskiej Komisji Gospodarczej Organizacji Narodów Zjednoczonych. W mocy od 30 października 2001. Dotyczy stron, które ją ratyfikowały albo do niej przystąpiły, w tym niektórych państw spoza tego regionu według reguł konwencji. Aktualną listę stron prowadzi Zbiór traktatów Organizacji Narodów Zjednoczonych, zapis XXVII-13.',
+    effects:
+      'Zamierzony skutek: uczynić decyzje środowiskowe możliwymi do zaskarżenia i jawnymi oraz zmniejszyć lukę informacyjną między władzą a ludźmi. Siła tego zależy od sądów krajowych, opłat i od tego, kto może wnieść sprawę. Konwencja wyznacza minimum, które strony muszą spełnić w prawie krajowym.',
+    caveats:
+      'Konwencja z Aarhus nie jest światową ustawą o dostępie do informacji. Wiąże tylko swoje strony: państwa regionu Europejskiej Komisji Gospodarczej Organizacji Narodów Zjednoczonych, które do niej przystąpiły, oraz niektóre państwa spoza regionu. Listę stron prowadzi Zbiór traktatów Organizacji Narodów Zjednoczonych. Ameryka Łacińska ma własny regionalny traktat o podobnych prawach, Porozumienie z Escazú.',
+    sourcesNote:
+      'Zapis XXVII-13 w Zbiorze traktatów Organizacji Narodów Zjednoczonych; tekst traktatu nr 37770; karta w katalogu traktatów o środowisku.',
+  },
+  'bbnj-agreement': {
+    title:
+      'Porozumienie o różnorodności biologicznej obszarów poza jurysdykcją krajową (traktat o morzu pełnym)',
+    hook: 'Porozumienie o różnorodności biologicznej morza pełnego w ramach Konwencji Narodów Zjednoczonych o prawie morza. Obejmuje morskie zasoby genetyczne, narzędzia ochrony obszarów, w tym morskie obszary chronione poza jurysdykcją krajową, oceny oddziaływania na środowisko oraz pomoc państwom w umiejętnościach i technologii. Jest już w mocy. Pierwsza Konferencja Stron jest dopiero przed nami.',
+    imageAlt: 'Otwarte wody północnego Atlantyku widziane ze statku, z dalekim statkiem na horyzoncie',
+    jurisdiction:
+      'Międzynarodowy (strony porozumienia; w ramach Konwencji Narodów Zjednoczonych o prawie morza)',
+    officialName:
+      'Porozumienie w ramach Konwencji Narodów Zjednoczonych o prawie morza o ochronie i zrównoważonym użytkowaniu morskiej różnorodności biologicznej obszarów poza jurysdykcją krajową',
+    citation:
+      'Porozumienie w ramach Konwencji Narodów Zjednoczonych o prawie morza o ochronie i zrównoważonym użytkowaniu morskiej różnorodności biologicznej obszarów poza jurysdykcją krajową; przyjęte w Nowym Jorku 19 czerwca 2023; weszło w życie 17 stycznia 2026',
+    yearStatus:
+      'Przyjęte 19 czerwca 2023. Otwarte do podpisu 20 września 2023. Weszło w życie 17 stycznia 2026.',
+    what: 'Prawnie wiążące porozumienie, które wykonuje Konwencję Narodów Zjednoczonych o prawie morza dla obszarów poza jurysdykcją krajową: morza pełnego i międzynarodowego obszaru dna morskiego. Jedna część dotyczy morskich zasobów genetycznych i podziału korzyści z nich. Inna obejmuje narzędzia zarządzania obszarami, w tym morskie obszary chronione. Kolejna dotyczy ocen oddziaływania na środowisko. Jeszcze inna dotyczy wzmacniania umiejętności i przekazywania technologii morskiej. Wśród organów są Konferencja Stron oraz organy naukowe i techniczne, które ma powołać proces konferencji.',
+    where:
+      'Przyjęte 19 czerwca 2023, otwarte do podpisu 20 września 2023. Weszło w życie 17 stycznia 2026, czyli 120 dni po sześćdziesiątej ratyfikacji, jak stanowi artykuł 68. Aktualną listę stron prowadzi Zbiór traktatów Organizacji Narodów Zjednoczonych, zapis XXI-10. Przygotowania do pierwszej Konferencji Stron idą ku 2027 rokowi, więc wejście w życie nie znaczy jeszcze, że wszystkie organy działają pełną parą.',
+    effects:
+      'Zamierzony skutek: zamknąć lukę w zarządzaniu różnorodnością biologiczną na morzu pełnym, umożliwić ochronę obszarów oceanu poza wyłącznymi strefami ekonomicznymi, którymi rządzą państwa przybrzeżne, ustalić oczekiwania co do ocen oddziaływania działalności wpływającej na obszary poza jurysdykcją krajową i dzielić korzyści z morskich zasobów genetycznych. Skutek zależy od reguł konferencji, od finansowania i od wniosków stron o wyznaczenie miejsc.',
+    caveats:
+      'Porozumienie działa w ramach Konwencji Narodów Zjednoczonych o prawie morza i jej nie zastępuje. Wody przybrzeżne i wyłączne strefy ekonomiczne są poza jego zakresem. Tam obowiązują zobowiązania z Konwencji o różnorodności biologicznej. Porozumienie ustala prawną drogę tworzenia obszarów chronionych na morzu pełnym. Każde miejsce trzeba jeszcze zgłosić i zatwierdzić.',
+    sourcesNote:
+      'Strona porozumienia w Organizacji Narodów Zjednoczonych; angielski tekst; zapis XXI-10 w Zbiorze traktatów Organizacji Narodów Zjednoczonych; komunikat Międzynarodowej Organizacji Morskiej o wejściu w życie.',
+  },
   'un-plastics-treaty': {
     title: 'Traktat ONZ o plastiku (proces INC)',
     hook: 'Mandat na negocjacje prawnie wiążącego instrumentu o plastiku. Nie ma uzgodnionego tekstu traktatu.',
