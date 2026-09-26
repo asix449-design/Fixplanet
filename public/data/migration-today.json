@@ -394,7 +394,7 @@
         "agency": "UNHCR",
         "sourceUrl": "https://data.unhcr.org/en/documents/details/123935",
         "sourceLabel": "UNHCR Operational Data Portal — Uganda, Active Population by Settlement, 31 August 2026",
-        "note": "Bidibidi settlement, Yumbe District. South Sudanese displacement is the main caseload. UNHCR Uganda Active Population by Settlement, August 2026.",
+        "note": "Bidibidi settlement, Yumbe District. Most residents were displaced from South Sudan. A settlement, not a walled camp.",
         "left": 54.2,
         "top": 53.2
       },
@@ -409,7 +409,7 @@
         "agency": "UNHCR",
         "sourceUrl": "https://data.unhcr.org/en/documents/details/123941",
         "sourceLabel": "UNHCR Operational Data Portal — Jordan, August 2026",
-        "note": "Zaatari camp. Syrian displacement is the main caseload. UNHCR Jordan population figures, August 2026.",
+        "note": "Zaatari camp. Most residents were displaced from Syria. UNHCR Jordan population figures, 31 August 2026.",
         "left": 56.8,
         "top": 39.6
       }

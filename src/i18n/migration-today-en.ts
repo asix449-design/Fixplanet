@@ -214,12 +214,12 @@ export const enToday: TodayShelfCopy = {
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Bidibidi settlement, Yumbe District. South Sudanese displacement is the main caseload. UNHCR Uganda Active Population by Settlement, August 2026.',
+      note: 'Bidibidi settlement, Yumbe District. Most residents were displaced from South Sudan. A settlement, not a walled camp.',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordan',
-      note: 'Zaatari camp. Syrian displacement is the main caseload. UNHCR Jordan population figures, August 2026.',
+      note: 'Zaatari camp. Most residents were displaced from Syria. UNHCR Jordan population figures, 31 August 2026.',
     },
   },
   routeCopy: {

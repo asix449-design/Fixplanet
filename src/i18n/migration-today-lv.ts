@@ -208,12 +208,12 @@ export const lvToday: TodayShelfCopy = {
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Bidibidi apmetne, Jumbes apgabals. Galvenais kontingents ir pārvietotie no Dienvidsudānas. UNHCR Uganda Active Population by Settlement, 2026. gada augusts.',
+      note: 'Bidibidi apmetne, Jumbes apgabals. Galvenais kontingents ir pārvietotie no Dienvidsudānas. Apmetne, ne nocietināta nometne.',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordānija',
-      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR Jordānijas iedzīvotāju skaitļi, 2026. gada augusts.',
+      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR Jordānijas iedzīvotāju skaitļi, 2026. gada 31. augusts.',
     },
   },
   routeCopy: {

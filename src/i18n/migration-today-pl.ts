@@ -208,12 +208,12 @@ export const plToday: TodayShelfCopy = {
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Osiedle Bidibidi, dystrykt Yumbe. Główny kontyngent to przesiedleni z Sudanu Południowego. UNHCR Uganda Active Population by Settlement, sierpień 2026.',
+      note: 'Osiedle Bidibidi, dystrykt Yumbe. Główny kontyngent to przesiedleni z Sudanu Południowego. Osiedle, nie obóz z murem.',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordania',
-      note: 'Obóz Zaatari. Główny kontyngent to przesiedleni z Syrii. Dane ludności UNHCR dla Jordanii, sierpień 2026.',
+      note: 'Obóz Zaatari. Główny kontyngent to przesiedleni z Syrii. Dane ludności UNHCR dla Jordanii, 31 sierpnia 2026.',
     },
   },
   routeCopy: {
