@@ -72,6 +72,8 @@ export type Solution = SolutionMeta & SolutionCopy;
  * `/solutions/{tag}` and `/solutions/all`. Water encyclopedia articles
  * live at `/solutions/water/{slug}` — the shelf stays `/solutions/water`.
  * Forests encyclopedia articles live at `/solutions/forests/{slug}`.
+ * Oceans stays hub-only: cards link to the primary source. Do not add
+ * `/solutions/oceans/{slug}` until every oceans slug has a detail page.
  */
 export const solutionMeta: SolutionMeta[] = [
   {
@@ -714,6 +716,83 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'U.S. Fish and Wildlife Service — salt marsh keystone',
         'https://www.fws.gov/story/2024-02/salt-marsh-keystone-coastal-conservation',
+      ),
+    ],
+  },
+  {
+    slug: 'marine-protected-areas',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'Protected Planet — Marine protected areas',
+        'https://www.protectedplanet.net/en/thematic-areas/marine-protected-areas',
+      ),
+      cite(
+        'IUCN — Marine protected areas and climate change',
+        'https://www.iucn.org/resources/issues-brief/marine-protected-areas-and-climate-change',
+      ),
+      cite('Marine Protection Atlas', 'https://mpatlas.org/'),
+    ],
+  },
+  {
+    slug: 'ballast-water-management',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'IMO — Ballast Water Management',
+        'https://www.imo.org/en/OurWork/Environment/Pages/BallastWaterManagement.aspx',
+      ),
+      cite(
+        'IMO — BWM Hot Topics',
+        'https://www.imo.org/en/MediaCentre/HotTopics/Pages/BWM-Default.aspx',
+      ),
+    ],
+  },
+  {
+    slug: 'shore-power',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'EPA — Shore Power Technology Assessment at U.S. Ports',
+        'https://www.epa.gov/ports-initiative/shore-power-technology-assessment-us-ports',
+      ),
+      cite('EPA — Ports Initiative', 'https://www.epa.gov/ports-initiative'),
+      cite(
+        'IEA — International shipping',
+        'https://www.iea.org/energy-system/transport/international-shipping',
+      ),
+    ],
+  },
+  {
+    slug: 'vessel-speed-reduction',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'NOAA Office of National Marine Sanctuaries — Ship strikes',
+        'https://sanctuaries.noaa.gov/protect/shipstrike/',
+      ),
+      cite(
+        'NOAA Fisheries — Reducing vessel strikes to North Atlantic right whales',
+        'https://www.fisheries.noaa.gov/national/endangered-species-conservation/reducing-ship-strikes-north-atlantic-right-whales',
+      ),
+      cite(
+        'NOAA Fisheries — Understanding vessel strikes',
+        'https://www.fisheries.noaa.gov/insight/understanding-vessel-strikes',
+      ),
+    ],
+  },
+  {
+    slug: 'integrated-multi-trophic-aquaculture',
+    tag: 'oceans',
+    sources: [
+      cite('FAO — Aquaculture', 'https://www.fao.org/fishery/en/aquaculture'),
+      cite(
+        'FAO Fisheries and Aquaculture Technical Paper 529 — Integrated mariculture (PDF)',
+        'https://www.fao.org/3/i4626e/i4626e.pdf',
+      ),
+      cite(
+        'FAO — documents card cb7670en',
+        'https://www.fao.org/documents/card/en/c/cb7670en',
       ),
     ],
   },

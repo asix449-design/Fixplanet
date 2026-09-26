@@ -131,7 +131,8 @@ const en = {
       waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
       cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
       materials: 'Cement, metals, timber, and recycled building materials already cutting embodied carbon.',
-      oceans: 'Catching plastic, restoring shores, and fishing with less bycatch.',
+      oceans:
+        'Catching plastic, restoring shores, fishing with less bycatch — plus protected areas, ship rules, and water-column farms.',
       energy: 'Wind, solar, hydro, nuclear, storage, and heat already running on real grids.',
     } satisfies Record<TagKey | 'all', string>,
   },
@@ -460,7 +461,8 @@ const ru: typeof en = {
       waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
       cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
       materials: 'Цемент, металлы, древесина и вторичные стройматериалы — уже снижают встроенный углерод.',
-      oceans: 'Перехват пластика, восстановление берегов и лов с меньшим приловом.',
+      oceans:
+        'Перехват пластика, восстановление берегов и лов с меньшим приловом — плюс охраняемые районы, правила для судов и фермы в толще воды.',
       energy: 'Ветер, солнце, гидро, атом, накопление и тепло — уже на реальных сетях.',
     },
   },
@@ -792,7 +794,8 @@ const pl: typeof en = {
       waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
       cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
       materials: 'Cement, metale, drewno i wtórne materiały budowlane — już tną wbudowany węgiel.',
-      oceans: 'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem.',
+      oceans:
+        'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem — oraz obszary chronione, reguły dla statków i hodowle w toni.',
       energy: 'Wiatr, słońce, hydro, atom, magazyny i ciepło — już na prawdziwych sieciach.',
     },
   },
@@ -1124,7 +1127,8 @@ const lv: typeof en = {
       waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
       cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
       materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli — jau samazina ietverto oglekli.',
-      oceans: 'Plastmasas uztveršana, krastu atjaunošana un zvejas ar mazāku piezveju.',
+      oceans:
+        'Plastmasas uztveršana, krastu atjaunošana un zveja ar mazāku piezveju — plus aizsargājamās teritorijas, kuģu noteikumi un audzes ūdens stabā.',
       energy: 'Vējš, saule, hidro, kodols, uzkrāšana un siltums — jau reālos tīklos.',
     },
   },

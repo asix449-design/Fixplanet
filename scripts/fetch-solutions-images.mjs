@@ -339,6 +339,25 @@ const candidates = {
     'Residuo electronico colombia cobre reciclaje metales 2.jpg',
     'Coil from washing machine.JPG',
   ],
+  'marine-protected-areas': [
+    'Florida Keys National Marine Sanctuary buoy mooring team.png',
+    'Scientist counts fish in Papahānaumokuākea Marine National Monument 2006.png',
+  ],
+  'ballast-water-management': [
+    'Tugboat Boss discharging ballast water before departure.jpg',
+    'Ballast pumps electric motors.jpg',
+  ],
+  'shore-power': [
+    'Liberty of the Seas cold-ironing in Copenhagen.jpg',
+    '2019-10-03 - Landstromanlage Port of Kiel.jpg',
+  ],
+  'vessel-speed-reduction': [
+    'SBNMS - right whale - NOAA Permit 633-1762-01 (27740030522).jpg',
+    'SBNMS North Atlantic right whale (50040735308).jpg',
+  ],
+  'integrated-multi-trophic-aquaculture': [
+    'IMTA cultured mussels (Mytilus edulis) in the Bay of Fundy Canada.jpg',
+  ],
 };
 
 async function commonsInfo(title) {
