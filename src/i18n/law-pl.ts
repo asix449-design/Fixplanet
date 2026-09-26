@@ -360,6 +360,91 @@ export const pl: Record<string, LawCopy> = {
     caveats: 'Konflikt człowiek–dzika przyroda i spory o odszkodowania są wbudowane w kenijską politykę dzikiej przyrody. Statut to nie strażnik. Międzynarodowe reguły handlu nadal idą przez przepisy wdrażające CITES.',
     sourcesNote: 'Oficjalny tekst Kenya Law (Cap. 376); rekord FAOLEX Act No. 47 of 2013.',
   },
+  'cms-bonn-convention': {
+    title: 'CMS — konwencja z Bonn',
+    hook: 'Traktat ONZ dla zwierząt migrujących przez granice. Załącznik I — ścisła ochrona; Załącznik II — umowy państw areału. To nie CITES i nie krajowa ustawa siedliskowa.',
+    imageAlt:
+      'Gnu w ruchu przez trawę Serengeti — transgraniczna migracja tego rodzaju, który konwencja z Bonn każe uzgadniać państwom areału',
+    jurisdiction: 'Międzynarodowy (Strony konwencji)',
+    officialName: 'Konwencja o ochronie wędrownych gatunków dzikich zwierząt',
+    citation:
+      'Konwencja o ochronie wędrownych gatunków dzikich zwierząt; Bonn, 23 czerwca 1979; weszła w życie 1 listopada 1983',
+    yearStatus:
+      'Sporządzona w Bonn 23 czerwca 1979. Weszła w życie 1 listopada 1983. Depozytariusz: Republika Federalna Niemiec.',
+    what: 'Konwencja ramowa UNEP: siedliska i zakaz pozyskania (załącznik I); AGREEMENTS lub MoU (załącznik II).',
+    where: 'Od 1 listopada 1983. Lista Stron jest opublikowana na cms.int.',
+    effects:
+      'Zamierzony skutek: uzgodnić ochronę wzdłuż całych tras przelotu i wędrówki oraz dać początek porozumieniom pochodnym (AEWA, EUROBATS i inne instrumenty rodziny CMS). Sam tekst konwencji nie grodzi korytarza.',
+    caveats: 'Nie system pozwoleń handlowych (CITES). Nie Birds/Habitats ani ESA.',
+    sourcesNote: 'Tekst konwencji i strona główna CMS na cms.int.',
+  },
+  'birds-directive': {
+    title: 'Dyrektywa ptasia UE',
+    hook: 'Pierwsza unijna dyrektywa przyrodnicza. Chroni wszystkie naturalnie występujące dzikie ptaki i napędza OSO w Natura 2000 — para z dyrektywą siedliskową.',
+    imageAlt:
+      'Bielik nad wodą w Svolvær w Norwegii — dziki europejski ptak tego rodzaju, którego dyrektywa ptasia każe chronić państwom członkowskim',
+    jurisdiction: 'Unia Europejska',
+    officialName: 'Dyrektywa 2009/147/WE w sprawie ochrony dzikiego ptactwa',
+    citation:
+      'Dyrektywa 2009/147/WE (kodyfikacja; pierwotnie 79/409/EWG, 1979) w sprawie ochrony dzikiego ptactwa',
+    yearStatus:
+      'Pierwotna dyrektywa 79/409/EWG (1979). Obowiązujący tekst skodyfikowany: 2009/147/WE. Obowiązuje w państwach członkowskich. Konsultacja uproszczeń z 2026 roku nie jest uchyleniem.',
+    what: 'Zakazy uśmiercania, chwytania i niszczenia gniazd; OSO dla załącznika I i innych migrantów; część Natura 2000.',
+    where: 'Obowiązuje; tekst 2009/147/WE. Konsultacja uproszczeń z 2026 roku nie jest uchyleniem.',
+    effects:
+      'Zamierzony skutek: zatrzymać spadek dzikich ptaków, odbudować siedliska i zbudować sieć OSO. Komisja podaje ponad 5400 obszarów o powierzchni powyżej 832 000 km². Spadek ptaków krajobrazu rolniczego pozostaje udokumentowaną presją; dyrektywa jest ramą prawną, nie gwarancją odbudowy wskaźników.',
+    caveats: 'Nie CITES. Dyrektywa siedliskowa jest osobnym aktem.',
+    sourcesNote: 'Strona Komisji Europejskiej o dyrektywie ptasiej; tekst dyrektywy 2009/147/WE w EUR-Lex.',
+  },
+  'bern-convention': {
+    title: 'Konwencja berneńska',
+    hook: 'Traktat Rady Europy o dzikiej przyrodzie i siedliskach. Listy gatunków ściśle chronionych i Komitet Stały — instrument paneuropejski, nie tożsamy z dyrektywami UE o ptakach i siedliskach.',
+    imageAlt:
+      'Koziorożec alpejski na wysokogórskiej łące w Alpach Szwajcarskich — europejska dzika przyroda tego rodzaju, który konwencja berneńska obejmuje ochroną',
+    jurisdiction: 'Rada Europy (Strony; otwarta też dla spoza RE według reguł traktatu)',
+    officialName: 'Konwencja o ochronie europejskiej przyrody dzikiej i siedlisk naturalnych',
+    citation:
+      'Konwencja o ochronie europejskiej przyrody dzikiej i siedlisk naturalnych (ETS nr 104); Berno, 19 września 1979; weszła w życie 1 czerwca 1982',
+    yearStatus: 'ETS nr 104. Otwarta do podpisu w Bernie 19 września 1979. Weszła w życie 1 czerwca 1982.',
+    what: 'Ochrona flory i fauny oraz siedlisk; załączniki; Komitet Stały; sieć Emerald poza UE.',
+    where: 'ETS nr 104; od 1 czerwca 1982.',
+    effects:
+      'Zamierzony skutek: wspólna europejska podstawa ochrony gatunków i siedlisk obok dyrektyw UE i poza nimi; obszary sieci Emerald dla Stron spoza UE. Miękkie zalecenia i tak wymagają wdrożenia krajowego, żeby zaczęły działać.',
+    caveats: 'Nie CITES ani CMS. Dyrektywy ptasia i siedliskowa wiążą państwa członkowskie jako prawo UE. Sieć Emerald w ramach konwencji berneńskiej ma cele zbliżone do Natura 2000, ale inną podstawę prawną.',
+    sourcesNote: 'Strona konwencji berneńskiej Rady Europy, traktat nr 104 i PDF tekstu konwencji.',
+  },
+  'marine-mammal-protection-act': {
+    title: 'Amerykańska ustawa o ochronie ssaków morskich (MMPA)',
+    hook: 'Federalna ustawa USA zasadniczo zakazująca pozyskania ssaków morskich w wodach USA i przez osoby USA. Szersza niż samo wpisanie na listę ESA.',
+    imageAlt: 'Długopłetwiec i cielę pod wodą — ssaki morskie objęte amerykańskim moratorium na pozyskanie',
+    jurisdiction: 'Stany Zjednoczone',
+    officialName: 'Marine Mammal Protection Act of 1972',
+    citation: 'Marine Mammal Protection Act of 1972, 16 U.S.C. § 1361 et seq. (ze zmianami)',
+    yearStatus: 'Uchwalona w 1972. Nowelizacje między innymi w 1992 i 1994. Nadal w mocy.',
+    what: 'Moratorium na „take” i import z wyjątkami; oceny stad; role NOAA, FWS i MMC.',
+    where: 'Federalne prawo USA od 1972; nowelizacje między innymi w 1992 i 1994.',
+    effects:
+      'Zamierzony skutek: zatrzymać uszczuplanie stad ssaków morskich jako składników ekosystemu, wymagać wykazania, że pozyskanie nie zaszkodzi stadu, i wspierać reakcję na wyrzucenia na brzeg. Status stad różni się między gatunkami — ustawa jest ramą, nie świadectwem odbudowy.',
+    caveats: 'To nie ESA: gatunek może podlegać obu aktom. Nie CITES ani sama konwencja wielorybnicza.',
+    sourcesNote:
+      'Strony NOAA Fisheries, FWS i Marine Mammal Commission; tekst scalony w GovInfo.',
+  },
+  'lacey-act': {
+    title: 'Ustawa Laceya (Lacey Act)',
+    hook: 'Amerykańska ustawa, która czyni federalnym przestępstwem handel dziką przyrodą, rybami lub roślinami pozyskanymi z naruszeniem prawa USA, stanu lub obcego państwa — wzmacniacz obok CITES, nie druga lista CITES.',
+    imageAlt:
+      'Ułożona skonfiskowana kość słoniowa w magazynie przed zniszczeniem — nielegalny produkt dzikiej przyrody tego rodzaju, który ustawa Laceya ma nie wpuszczać do handlu USA',
+    jurisdiction: 'Stany Zjednoczone',
+    officialName: 'Lacey Act',
+    citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (od 1900; nowelizacje handlu dziką przyrodą m.in. 1981)',
+    yearStatus: 'Od 1900. Nowelizacje handlu dziką przyrodą, między innymi w 1981. Nadal w mocy.',
+    what: 'Zakaz handlu przy naruszeniu prawa bazowego; fałszywe oznakowanie przesyłek. Ustawa rolna z 2008 roku rozszerzyła ustawę na rośliny i produkty z drewna.',
+    where: 'Federalne prawo USA od 1900; nowelizacje między innymi w 1981.',
+    effects:
+      'Zamierzony skutek: zamknąć rynek USA dla nielegalnie pozyskanej dzikiej przyrody i wesprzeć obce oraz stanowe prawo ochrony przez federalne ściganie. Skuteczność zależy od wykrywania i jakości prawa, na którym ustawa się opiera.',
+    caveats: 'Nie sam CITES. Nie ESA ani MMPA.',
+    sourcesNote: 'Strona U.S. Fish and Wildlife Service o ustawie Laceya; ustawy i polityki NOAA Fisheries.',
+  },
   'wildlife-corridors-act': {
     title: 'Amerykański projekt o korytarzach dzikiej przyrody (2026)',
     hook: 'Projekt Izby o mapowaniu i finansowaniu spójności siedlisk. Wniesiony. Nie uchwalony.',

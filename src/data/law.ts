@@ -629,6 +629,140 @@ export const lawMeta: LawMeta[] = [
     ],
   },
   {
+    slug: 'cms-bonn-convention',
+    category: 'animals',
+    status: 'existing',
+    year: '1979',
+    image: img(
+      'cms-bonn-convention.jpg',
+      'Wolves201',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Serengeti_wildebeest_migration_JF2.jpg',
+    ),
+    sources: [
+      {
+        label: 'CMS — Convention text',
+        url: 'https://www.cms.int/en/convention-text',
+      },
+      {
+        label: 'CMS — home',
+        url: 'https://www.cms.int/',
+      },
+      {
+        label: 'CMS — Convention text',
+        url: 'https://www.cms.int/en/page/convention-text',
+      },
+    ],
+  },
+  {
+    slug: 'birds-directive',
+    category: 'animals',
+    status: 'existing',
+    year: '2009',
+    image: img(
+      'birds-directive.jpg',
+      'Yathin S Krishnappa',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Haliaeetus_albicilla_(Svolvær,_2012).jpg',
+    ),
+    sources: [
+      {
+        label: 'European Commission — Birds Directive',
+        url: 'https://environment.ec.europa.eu/topics/nature-and-biodiversity/birds-directive_en',
+      },
+      {
+        label: 'EUR-Lex — Directive 2009/147/EC',
+        url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009L0147',
+      },
+      {
+        label: 'EUR-Lex — HTML text',
+        url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0147',
+      },
+    ],
+  },
+  {
+    slug: 'bern-convention',
+    category: 'animals',
+    status: 'existing',
+    year: '1979',
+    image: img(
+      'bern-convention.jpg',
+      'Giles Laurent',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Giles_Laurent.jpg',
+    ),
+    sources: [
+      {
+        label: 'Council of Europe — Bern Convention hub',
+        url: 'https://www.coe.int/en/web/bern-convention',
+      },
+      {
+        label: 'CoE — Treaty 104 detail',
+        url: 'https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=104',
+      },
+      {
+        label: 'CoE — Treaty 104',
+        url: 'https://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/104',
+      },
+      {
+        label: 'CoE — Convention text PDF',
+        url: 'https://rm.coe.int/1680078aff',
+      },
+    ],
+  },
+  {
+    slug: 'marine-mammal-protection-act',
+    category: 'animals',
+    status: 'existing',
+    year: '1972',
+    image: img(
+      'marine-mammal-protection-act.jpg',
+      'Ed Lyman, NOAA Hawaiian Islands Humpback Whale National Marine Sanctuary',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Humpback_Whale_Underwater_(37209287981).jpg',
+    ),
+    sources: [
+      {
+        label: 'NOAA Fisheries — MMPA',
+        url: 'https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-protection-act',
+      },
+      {
+        label: 'U.S. FWS — MMPA',
+        url: 'https://www.fws.gov/law/marine-mammal-protection-act',
+      },
+      {
+        label: 'Marine Mammal Commission — MMPA',
+        url: 'https://www.mmc.gov/about-the-commission/our-mission/marine-mammal-protection-act/',
+      },
+      {
+        label: 'GovInfo — MMPA compiled PDF',
+        url: 'https://www.govinfo.gov/content/pkg/COMPS-1675/pdf/COMPS-1675.pdf',
+      },
+    ],
+  },
+  {
+    slug: 'lacey-act',
+    category: 'animals',
+    status: 'existing',
+    year: '1900',
+    image: img(
+      'lacey-act.jpg',
+      'USFWS Mountain-Prairie',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Seized_ivory_slated_for_destruction_in_the_crush._(10843354356).jpg',
+    ),
+    sources: [
+      {
+        label: 'U.S. FWS — Lacey Act',
+        url: 'https://www.fws.gov/law/lacey-act',
+      },
+      {
+        label: 'NOAA Fisheries — laws and policies',
+        url: 'https://www.fisheries.noaa.gov/topic/laws-policies/marine-mammal-protection-act',
+      },
+    ],
+  },
+  {
     slug: 'wildlife-corridors-act',
     category: 'animals',
     status: 'pending',

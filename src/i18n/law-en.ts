@@ -370,6 +370,99 @@ export const en: Record<string, LawCopy> = {
     caveats: 'Human–wildlife conflict and compensation disputes are built into Kenyan wildlife politics. A statute is not a ranger. International trade rules still run through CITES implementing regulations.',
     sourcesNote: 'Kenya Law official text (Cap. 376); FAOLEX record for Act No. 47 of 2013.',
   },
+  'cms-bonn-convention': {
+    title: 'CMS — Bonn Convention',
+    hook: 'The UN-backed treaty for animals that cross borders on a cycle. Appendix I species get strict protection duties; Appendix II species get range-state Agreements. It is not CITES (trade lists) and not a single-country habitat statute.',
+    imageAlt:
+      'Wildebeest moving through grass in the Serengeti — a cross-border migration of the kind the Bonn Convention asks range states to coordinate',
+    jurisdiction: 'International (Parties to the Convention)',
+    officialName: 'Convention on the Conservation of Migratory Species of Wild Animals',
+    citation:
+      'Convention on the Conservation of Migratory Species of Wild Animals; done at Bonn 23 June 1979; entered into force 1 November 1983',
+    yearStatus:
+      'Done at Bonn, 23 June 1979. Entered into force 1 November 1983. Depositary: Federal Republic of Germany.',
+    what: 'A framework convention under UNEP for migratory wild animals. Range States of Appendix I species must work to protect and restore key habitats, reduce migration barriers, and generally prohibit taking (with narrow exceptions). For Appendix II, Parties are to conclude AGREEMENTS or MoUs that cover whole ranges. The Conference of the Parties and a Scientific Council steer listings and guidance.',
+    where: 'Applies to Parties that have ratified or acceded. Signed in Bonn (23 June 1979); in force from 1 November 1983. Depositary: Federal Republic of Germany. Party and Range-State lists are published on cms.int.',
+    effects:
+      'Intended effects: coordinate conservation along entire flyways and swimways; seed daughter Agreements (e.g. AEWA, EUROBATS and other CMS Family instruments). Outcomes depend on Party measures and Agreement strength — the Convention text alone does not fence a corridor.',
+    caveats:
+      'Not a wildlife-trade permit system (that is CITES). Not the EU Birds or Habitats Directives. Not the U.S. ESA. Appendix lists change by decision of the Conference of the Parties. The current Appendices are published on cms.int.',
+    sourcesNote: 'CMS convention text and the CMS home page on cms.int.',
+  },
+  'birds-directive': {
+    title: 'EU Birds Directive',
+    hook: 'The first EU nature directive. It protects all naturally occurring wild birds in the Union and drives Special Protection Areas inside Natura 2000 — the bird half of the pair with the Habitats Directive.',
+    imageAlt:
+      'A white-tailed eagle above the water at Svolvær, Norway — a wild European bird of the kind the Birds Directive requires Member States to protect',
+    jurisdiction: 'European Union',
+    officialName: 'Directive 2009/147/EC on the conservation of wild birds',
+    citation:
+      'Directive 2009/147/EC of the European Parliament and of the Council of 30 November 2009 on the conservation of wild birds (codified; originally Directive 79/409/EEC, 1979)',
+    yearStatus:
+      'Original Birds Directive 79/409/EEC (1979). Current codified text: Directive 2009/147/EC of 30 November 2009. In force across EU Member States. A 2026 Commission consultation on simplification does not repeal it.',
+    what: 'Requires Member States to protect wild bird species: bans on deliberate killing/capture, nest and egg destruction, and significant disturbance (with listed hunting and derogation rules). It also requires habitat measures and classification of Special Protection Areas (SPAs) for Annex I species and for other migratory birds, with wetlands of international importance called out. SPAs form part of Natura 2000 together with Habitats SACs.',
+    where: 'Applies across EU Member States. Original Birds Directive 79/409/EEC (1979); current codified text Directive 2009/147/EC. Member States classify Special Protection Areas, report under Article 12, and may use Article 9 derogations. A 2026 Commission consultation on simplifying the Birds and Habitats Directives does not repeal the Directive.',
+    effects:
+      'Intended effects: stop declines of wild birds, restore habitats, and build the SPA network (thousands of sites; Commission cites 5,400+ SPAs covering >832,000 km²). Farmland-bird declines remain a documented pressure; the Directive is the legal frame, not a guarantee of recovering indices.',
+    caveats:
+      'Not CITES. Not CMS alone, though migratory birds are covered by both. Not the Habitats Directive; the two instruments stay separate. The 2026 simplification consultation does not repeal the Birds Directive.',
+    sourcesNote: 'European Commission Birds Directive page; EUR-Lex text of Directive 2009/147/EC.',
+  },
+  'bern-convention': {
+    title: 'Bern Convention',
+    hook: 'The Council of Europe’s wildlife and habitats treaty. Strictly protected species and habitats lists, plus a Standing Committee — pan-European, not the same instrument as the EU Birds or Habitats Directives (though EU law draws on the same conservation agenda).',
+    imageAlt:
+      'An Alpine ibex on a high meadow in the Swiss Alps — European wildlife of the kind the Bern Convention lists for protection',
+    jurisdiction: 'Council of Europe (Parties; open to non-members under the treaty rules)',
+    officialName: 'Convention on the Conservation of European Wildlife and Natural Habitats',
+    citation:
+      'Convention on the Conservation of European Wildlife and Natural Habitats (ETS No. 104); opened for signature Bern, 19 September 1979; entered into force 1 June 1982',
+    yearStatus:
+      'Opened for signature in Bern, 19 September 1979. Entered into force 1 June 1982. Council of Europe treaty ETS No. 104.',
+    what: 'Requires Parties to conserve wild flora and fauna and their natural habitats, with special attention to endangered and vulnerable species (including migratory ones). Appendices list strictly protected flora/fauna and protected fauna; Parties regulate exploitation of Appendix III species and protect habitats. A Standing Committee oversees implementation and can adopt recommendations and action plans (including Emerald Network work for non-EU Parties).',
+    where: 'Council of Europe treaty ETS No. 104. Opened in Bern 19 September 1979; force from 1 June 1982. Party list and treaty text: CoE conventions portal. The EU and many European states are Parties; non-European accession follows treaty rules.',
+    effects:
+      'Intended effects: common European baseline for species and habitat protection outside (and alongside) EU directives; Emerald Network sites for non-EU Parties. Recommendations still need to be written into domestic law before they bind.',
+    caveats:
+      'Not CITES (trade). Not CMS (though migratory species overlap). The Birds and Habitats Directives bind EU Member States as EU law. The Emerald Network under the Bern Convention has goals related to Natura 2000, but a different legal basis.',
+    sourcesNote: 'Council of Europe Bern Convention hub, treaty No. 104, and the convention text PDF.',
+  },
+  'marine-mammal-protection-act': {
+    title: 'U.S. Marine Mammal Protection Act',
+    hook: 'The U.S. statute that generally bans the take of marine mammals in U.S. waters and by U.S. persons — whales, dolphins, seals, sea lions under NOAA; manatees, sea otters, walrus, polar bears under FWS. Broader than ESA listing alone.',
+    imageAlt: 'A humpback whale and calf underwater — marine mammals covered by the U.S. take moratorium',
+    jurisdiction: 'United States',
+    officialName: 'Marine Mammal Protection Act of 1972',
+    citation: 'Marine Mammal Protection Act of 1972, 16 U.S.C. § 1361 et seq. (as amended)',
+    yearStatus:
+      'Enacted 1972. Major amendments include 1992 (stranding and health) and 1994 (harassment definitions, fisheries program, stock assessments). Still in force.',
+    what: 'Establishes a moratorium on taking and importing marine mammals and products, with defined exceptions (permits, Alaska Native subsistence, certain incidental take authorizations, scientific research, public display under other regimes). Introduces optimum sustainable population and stock-assessment duties. NOAA Fisheries, FWS, and the Marine Mammal Commission share roles.',
+    where: 'U.S. federal law enacted 1972; major amendments include 1992 (stranding/health) and 1994 (harassment definitions, fisheries program, stock assessments). Full compiled text available via GovInfo. Shared implementation: NOAA (cetaceans, seals, sea lions), FWS (walrus, manatees, sea otters, polar bears), MMC oversight.',
+    effects:
+      'Intended effects: stop depletion of marine mammal stocks as ecosystem components; force users to show takes will not harm stocks; support stranding response and take-reduction plans. Stock status still varies by species — the Act is the frame, not a recovery certificate.',
+    caveats:
+      'Not the ESA. A species can be covered by both. Not the CITES permit system alone. Not the International Convention for the Regulation of Whaling or the Whaling Convention Act; those are related but separate. Not every marine mammal stock has recovered.',
+    sourcesNote:
+      'NOAA Fisheries, U.S. Fish and Wildlife Service, and Marine Mammal Commission pages on the Act; GovInfo compiled text.',
+  },
+  'lacey-act': {
+    title: 'Lacey Act',
+    hook: 'The U.S. enforcement statute that makes it a federal crime to trade wildlife, fish, or plants taken, possessed, transported, or sold in violation of U.S., state, or foreign law — a force-multiplier beside CITES permits, not a second CITES list.',
+    imageAlt:
+      'Seized elephant ivory stacked in a warehouse for destruction — illegal wildlife product of the kind the Lacey Act is written to keep out of U.S. commerce',
+    jurisdiction: 'United States',
+    officialName: 'Lacey Act',
+    citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (origins 1900; major wildlife-trade amendments including 1981)',
+    yearStatus:
+      'First passed in 1900. Major wildlife amendments in 1969, 1981, and 1988, with later plant-related updates. Still in force.',
+    what: 'Prohibits trafficking in wildlife, fish, and plants taken illegally under underlying law, plus false labeling of wildlife shipments and certain marking failures. It lets U.S. enforcers attach federal penalties to violations of foreign or state conservation rules when product crosses into U.S. commerce. The 2008 Farm Bill extended the Act to plants and timber products.',
+    where: 'U.S. federal law; first passed 1900; major wildlife amendments 1969, 1981, 1988 and later plant-related updates. The U.S. Fish and Wildlife Service administers the wildlife provisions. NOAA Fisheries applies the Act to fisheries.',
+    effects:
+      'Intended effects: close U.S. markets to illegally taken wildlife and support foreign and state conservation laws through federal prosecution. Effectiveness depends on detection and underlying foreign/state law quality.',
+    caveats:
+      'Not CITES. Lacey is the U.S. statute on trafficking in illegally taken wildlife, fish, and plants. Not the ESA listing rules. Not the MMPA take rules. Lawful trade with clean provenance remains possible.',
+    sourcesNote: 'U.S. Fish and Wildlife Service Lacey Act page; NOAA Fisheries laws and policies.',
+  },
   'wildlife-corridors-act': {
     title: 'U.S. Wildlife Corridors bill (2026)',
     hook: 'A House bill to map and fund habitat connectivity. Introduced. Not enacted.',
