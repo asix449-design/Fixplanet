@@ -81,14 +81,12 @@ const camps = todayDataset.camps.sites.map((site) => {
     country: copy?.country ?? site.country,
     note: copy?.note ?? site.note,
     figure: formatCampFigure(site.population, site.populationMax, site.approx),
-    asOfLabel: new Date(`${site.asOf}T00:00:00Z`)
-      .toLocaleDateString(numberLocale, {
-        day: 'numeric',
-        month: 'short',
-        year: 'numeric',
-        timeZone: 'UTC',
-      })
-      .replace(/\.+$/u, ''),
+    asOfLabel: new Date(`${site.asOf}T00:00:00Z`).toLocaleDateString(numberLocale, {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+      timeZone: 'UTC',
+    }),
   };
 });
 
@@ -468,7 +466,7 @@ const interArrows = todayDataset.corridors
               </strong>
             </button>
             <p>
-              {ui.campAsOf} {site.asOfLabel}. {site.note}
+              {ui.campAsOf} {site.asOfLabel}{site.asOfLabel.endsWith('.') ? '' : '.'} {site.note}
             </p>
           </li>
         ))

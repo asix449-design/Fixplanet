@@ -233,16 +233,24 @@ export const todaySources: PrimarySource[] = [
     'https://data.unhcr.org/en/country/bgd',
   ),
   cite(
-    'UNHCR Kenya — Dadaab and Kakuma / Kalobeyei operational figures, 31 December 2025',
-    'https://www.unhcr.org/ke/',
+    'Joint Government of Bangladesh - UNHCR Population Dashboard as of August 2026',
+    'https://data.unhcr.org/en/documents/details/123986',
   ),
   cite(
-    'UNHCR Operational Data Portal — Uganda (Bidibidi, 31 August 2026)',
-    'https://data.unhcr.org/en/country/uga',
+    'Joint Government of Bangladesh - UNHCR Population Dashboard, Bhasan Char, as of August 2026',
+    'https://data.unhcr.org/en/documents/details/123990',
   ),
   cite(
-    'UNHCR Operational Data Portal — Jordan (Zaatari, 31 August 2026)',
-    'https://data.unhcr.org/en/country/jor',
+    'UNHCR / DRS Kenya Statistics Infographics — August 2026 (Dadaab 429,352; Kakuma area 323,662, as of 31 August 2026)',
+    'https://data.unhcr.org/en/documents/details/124047',
+  ),
+  cite(
+    'UNHCR Uganda — Bidibidi 210,568, 31 August 2026',
+    'https://data.unhcr.org/en/documents/details/123935',
+  ),
+  cite(
+    'UNHCR Jordan — Zaatari 45,364, August 2026',
+    'https://data.unhcr.org/en/documents/details/123941',
   ),
   cite(
     'Frontex — irregular border crossings into the EU, 2024 (detections, not unique people)',

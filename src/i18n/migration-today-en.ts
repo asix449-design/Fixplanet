@@ -301,17 +301,17 @@ export const enToday: TodayShelfCopy = {
     'coxs-bazar': {
       name: 'Cox’s Bazar camps',
       country: 'Bangladesh',
-      note: 'Government of Bangladesh / UNHCR: 33 camps in Cox’s Bazar district, including Kutupalong. Rohingya refugees from Myanmar. A further about 33,659 people on Bhasan Char are not added into this marker.',
+      note: 'Government of Bangladesh / UNHCR: 33 camps in Cox’s Bazar district, including Kutupalong. Rohingya refugees from Myanmar. A further 33,514 people on Bhasan Char are not added into this marker.',
     },
     dadaab: {
       name: 'Dadaab',
       country: 'Kenya',
-      note: 'Dadaab camp complex, eastern Kenya. Figure as published for 31 December 2025. A complex, not a single tent city.',
+      note: 'Dadaab camp complex, eastern Kenya. Kenya Statistics Package as of 31 August 2026 (Government / UNHCR). A complex, not a single tent city.',
     },
     'kakuma-kalobeyei': {
       name: 'Kakuma and Kalobeyei',
       country: 'Kenya',
-      note: 'Kakuma 225,701; Kalobeyei 82,629; Eldoret 2,425 — the three sites UNHCR Kenya grouped in the 31 December 2025 update. Shown as one marker because they are one operation.',
+      note: 'Kakuma 234,542, Kalobeyei 86,547 and Eldoret 2,573, grouped as one Kakuma-area operation in the Kenya Statistics Package, 31 August 2026.',
     },
     bidibidi: {
       name: 'Bidibidi',
@@ -321,7 +321,7 @@ export const enToday: TodayShelfCopy = {
     zaatari: {
       name: 'Zaatari',
       country: 'Jordan',
-      note: 'Zaatari camp. Most residents were displaced from Syria. UNHCR operational figure, 31 August 2026.',
+      note: 'Zaatari camp. Most residents were displaced from Syria. UNHCR Jordan population figures, 31 August 2026.',
     },
   },
   routeCopy: {
