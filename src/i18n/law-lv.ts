@@ -1,9 +1,77 @@
 import type { LawCopy } from '../data/law';
 
 export const lv: Record<string, LawCopy> = {
+  'paris-agreement': {
+    title: 'Parīzes nolīgums',
+    hook: 'Galvenais spēkā esošais klimata līgums. Saista puses ar NDC un mērķi «krietni zem 2°C / tiekties uz 1,5°C» — nevis globālu emisiju griestu tekstā.',
+    imageAlt:
+      'Fransuā Olands, Lorāns Fabius un Ban Kimuns aplaudē COP21 skatuvē pēc Parīzes nolīguma pieņemšanas',
+    jurisdiction: 'ANO Vispārējā konvencija par klimata pārmaiņām (puses)',
+    officialName: 'Parīzes nolīgums',
+    citation:
+      'Parīzes nolīgums UNFCCC ietvaros; pieņemts 2015. gada 12. decembrī (COP21); stājās spēkā 2016. gada 4. novembrī',
+    yearStatus: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016.',
+    what: 'Juridiski saistošs līgums pie UNFCCC: NDC, pārskati, globālā izvērtēšana; temperatūras mērķi, adaptācija, finansējums, piesaistītāji (tostarp meži).',
+    where: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016. Pušu saraksts — ANO depozitārijs / UNFCCC.',
+    effects:
+      'Iecerētais efekts: savietot nacionālos klimata plānus vienā līguma arhitektūrā, piecu gadu ambīciju ciklu un iestrādāt 1,5°C daudzpusējās tiesībās. Iznākumi atkarīgi no NDC satura un iekšējās īstenošanas — līgums pats neaizver elektrostaciju.',
+    caveats: 'NDC saturu nosaka valstis; līgums pats neaizver elektrostaciju. Nejauc ar Kioto protokolu.',
+    sourcesNote: 'Tie paši trīs URL: UNFCCC lapa; nolīguma angļu PDF; ANO depozitārijs.',
+  },
+  'montreal-protocol': {
+    title: 'Monreālas protokols par ozona slāni noārdošām vielām',
+    hook: 'Ozona līgums, kas reāli samazināja ODS ražošanu un tirdzniecību. Kigali vēlāk pievienoja HFC klimata dēļ — tā pati Monreālas mašīna, ne otrs UNFCCC.',
+    imageAlt:
+      'NASA vizualizācija ar zemu ozonu virs Antarktīdas — ozona caurums, kura dēļ rakstīts Monreālas protokols',
+    jurisdiction: 'Monreālas protokola puses (UNEP ozona sekretariāts)',
+    officialName: 'Monreālas protokols par ozona slāni noārdošām vielām',
+    citation:
+      'Monreālas protokols (1987, ar grozījumiem); Kigali grozījums 2016. gada 15. oktobrī; HFC kontrole no 2019. gada 1. janvāra pusēm, kurām grozījums stājies spēkā',
+    yearStatus: 'Protokols no 1987. Kigali spēkā no 01.01.2019 pēc ratifikācijas sliekšņiem.',
+    what: 'ODS samazināšanas grafiki, tirdzniecības ierobežojumi, pārskati, Daudzpusējais fonds; Kigali — pakāpeniska HFC samazināšana.',
+    where: 'Gandrīz universāla dalība; Kigali spēkā no 01.01.2019 pēc ratifikācijas sliekšņiem.',
+    effects:
+      'Dokumentētie protokola panākumi ir ODS izslēgšanas grafiki un ozona slāņa atjaunošanās rādītāji (sekretariāta / WMO–UNEP izvērtējumi, ne mārketings). Kigali iecerētais klimata ieguvums ir novērstā HFC sasilšana; izpilde seko nacionālajiem samazināšanas grafikiem.',
+    caveats: 'Ozona panākumi ≠ CO₂/metāna kontrole (tas ir Parīze/UNFCCC). Nekartē kā «galveno klimata līgumu».',
+    sourcesNote: 'Tie paši trīs URL: ozona sekretariāts — protokols un grozījumi; ANO depozitārijs — Kigali.',
+  },
+  'eu-deforestation-regulation': {
+    title: 'ES regula par produktiem bez mežu izciršanas (EUDR)',
+    hook: 'ES tirgus noteikums: uzskaitītajām precēm jābūt bez mežu izciršanas un likumīgām. Pieņemta 2023; galvenie pienākumi no 2026. gada beigām / 2027. gada vidus pēc operatora lieluma. Tas nav ANO mežu līgums.',
+    imageAlt:
+      'Eļļas palmu plantācija ap palikušu lietusmeža fragmentu Borneo — preces un meža mala, ko sedz ES noteikums',
+    jurisdiction: 'Eiropas Savienība',
+    officialName: 'Regula par produktiem, kas nav saistīti ar mežu izciršanu',
+    citation: 'Regula (ES) 2023/1115 (2023. gada 31. maijs) par produktiem, kas nav saistīti ar mežu izciršanu',
+    yearStatus:
+      'Regula spēkā; piemērošana lielajiem/vidējiem no 30.12.2026, mikro/mazajiem no 30.06.2027 (ar atrunām bijušajiem EUTR).',
+    what: 'Due diligence un ģeolokācija liellopiem, kakao, kafijai, palmu eļļai, kaučukam, sojai, kokmateriāliem un atvasinājumiem; atceļ EUTR pārklājumā.',
+    where:
+      'Regula spēkā; piemērošana lielajiem/vidējiem no 30.12.2026, mikro/mazajiem no 30.06.2027 (ar atrunām bijušajiem EUTR). Nelikt «izskatīšanā».',
+    effects:
+      'Statūtu mērķi: mazināt ES pieprasījuma dzīto mežu izciršanu/degradāciju un saistītās emisijas un bioloģiskās daudzveidības zudumu. Komisijas ietekmes novērtējuma emisiju aplēses — iecerētas/modelētas, ne izmērīti 2026. gada iznākumi.',
+    caveats: 'Noplūde citos tirgos; atlikšana ≠ «jau bloķē visu šodien».',
+    sourcesNote: 'Tie paši divi URL: EUR-Lex — Regula (ES) 2023/1115; Komisijas lapa par produktiem bez mežu izciršanas.',
+  },
+  'eu-ets': {
+    title: 'ES emisiju kvotu tirdzniecības sistēma (EU ETS)',
+    hook: 'ES cap-and-trade lielajiem emitētājiem. Sarūkošs kvotu griesti, izsoles un tirgus stabilitātes rezerve — ne mājsaimniecības oglekļa nodoklis un ne pats Parīzes nolīgums.',
+    imageAlt:
+      'Niderausemas lignīta elektrostacija Vācijā — liels stacionārs emitētājs tāda veida, kādu aptver EU ETS',
+    jurisdiction: 'Eiropas Savienība',
+    officialName: 'ES emisiju kvotu tirdzniecības sistēma',
+    citation: 'Direktīva 2003/87/EK (ar grozījumiem) par siltumnīcefekta gāzu emisiju kvotu tirdzniecības sistēmu',
+    yearStatus: 'Spēkā ES; pamats — Direktīva 2003/87/EK ar grozījumiem.',
+    what: 'Kvotu tirgus aptvertajām iekārtām (un aviācijai / tālākiem sektoriem pēc grozījumiem); kvotu nodošana pret verificētām emisijām.',
+    where: 'Spēkā ES; pamats — Direktīva 2003/87/EK ar grozījumiem.',
+    effects:
+      'Iecerētais: uzlikt cenu aptvertajām SEG emisijām un tās samazināt zem krītoša griesta. Dokumentētie sistēmas iznākumi ir EEA/Komisijas ETS ziņojumos — tonnas no turienes, ne izdomātas.',
+    caveats: 'Ne visa ekonomika; ne Parīze un ne EUDR. Tonnu skaitļi — tikai no EEA/Komisijas ziņojumiem.',
+    sourcesNote: 'Tie paši trīs URL: Komisijas EU ETS centrs; lapa «What is the EU ETS»; EUR-Lex — Direktīva 2003/87/EK.',
+  },
   'nature-restoration': {
     title: 'ES dabas atjaunošanas likums',
-    hook: 'Saistoša atjaunošanas regula — ne stratēģijas papīrs. Valstu plānu projektiem bija jābūt 2026. gadā.',
+    hook: 'Saistoša atjaunošanas regula — nevis stratēģijas dokuments. Valstu projektu plāniem bija jābūt līdz 2026. gada 1. septembrim; Komisija tos vērtē.',
     imageAlt:
       'Kūdras purvs ar atklātu ūdeni un zemu veģetāciju — tāds mitrājs, ko sedz ES atjaunošanas mērķi',
     jurisdiction: 'Eiropas Savienība',
@@ -287,6 +355,89 @@ export const lv: Record<string, LawCopy> = {
     effects: 'Iecerētie efekti: mūsdienīgs tiesisks ietvars pēc vecākā 1976. gada likuma, vieta konservācijām un stingrāki rakstīti sodi par malumedniecību un tirdzniecību. Iznākumi uz zemes joprojām atkarīgi no izpildes, kopienu darījumiem un ziloņkaula un krūmāju gaļas tirdzniecības. Šī lapa neizdomā nacionālu ziloņu atjaunošanās procentu 2013.–2026. gadam.',
     caveats: 'Cilvēku–savvaļas konflikts un kompensāciju strīdi ir iebūvēti Kenijas savvaļas politikā. Statūts nav reindžers. Starptautiskās tirdzniecības noteikumi joprojām iet caur CITES īstenošanas regulām.',
     sourcesNote: 'Kenya Law oficiālais teksts (Cap. 376); FAOLEX ieraksts par Act No. 47 of 2013.',
+  },
+  'cms-bonn-convention': {
+    title: 'CMS — Bonnas konvencija',
+    hook: 'ANO līgums dzīvniekiem, kas cikliski šķērso robežas. I pielikums — stingra aizsardzība; II — areāla valstu vienošanās. Tas nav CITES un nav valsts biotopu likums.',
+    imageAlt:
+      'Gnu kustībā caur Serengeti zāli — pārrobežu migrācija, kādu Bonnas konvencija lūdz saskaņot areāla valstīm',
+    jurisdiction: 'Starptautisks (Konvencijas Puses)',
+    officialName: 'Konvencija par migrējošo savvaļas dzīvnieku sugu aizsardzību',
+    citation:
+      'Konvencija par migrējošo savvaļas dzīvnieku sugu aizsardzību; Bonnā 1979. gada 23. jūnijā; spēkā no 1983. gada 1. novembra',
+    yearStatus:
+      'Parakstīta Bonnā 1979. gada 23. jūnijā. Spēkā no 1983. gada 1. novembra. Depozitārijs: Vācijas Federatīvā Republika.',
+    what: 'UNEP ietvara konvencija: biotopi un ņemšanas aizliegums (I pielikums); AGREEMENTS vai MoU (II pielikums).',
+    where: 'Spēkā no 1983. gada 1. novembra. Pušu saraksts ir publicēts cms.int.',
+    effects:
+      'Iecerētais efekts: saskaņot aizsardzību visā lidojuma un migrācijas ceļā un dot pamatu meitas vienošanām (AEWA, EUROBATS un citi CMS saimes instrumenti). Konvencijas teksts pats koridoru nenorobežo.',
+    caveats: 'Nav tirdzniecības atļauju sistēma (CITES). Nav Birds/Habitats vai ASV ESA.',
+    sourcesNote: 'Konvencijas teksts un CMS sākumlapa cms.int.',
+  },
+  'birds-directive': {
+    title: 'ES Putnu direktīva',
+    hook: 'Pirmā ES dabas direktīva. Aizsargā visus dabiski sastopamos savvaļas putnus un veido SPA Natura 2000 — pāris ar Biotopu direktīvu.',
+    imageAlt:
+      'Jūras ērglis virs ūdens Svolvērā, Norvēģijā — savvaļas Eiropas putns, kādu Putnu direktīva prasa dalībvalstīm aizsargāt',
+    jurisdiction: 'Eiropas Savienība',
+    officialName: 'Direktīva 2009/147/EK par savvaļas putnu aizsardzību',
+    citation: 'Direktīva 2009/147/EK (kodificēta; sākotnēji 79/409/EEK, 1979) par savvaļas putnu aizsardzību',
+    yearStatus:
+      'Sākotnējā direktīva 79/409/EEK (1979). Spēkā esošais kodificētais teksts — 2009/147/EK. Piemēro dalībvalstīs. 2026. gada vienkāršošanas konsultācija nav atcelšana.',
+    what: 'Aizliegumi nogalināt, ķert un iznīcināt ligzdas; SPA I pielikumam un citiem migrantiem; daļa no Natura 2000.',
+    where: 'Spēkā; teksts 2009/147/EK. 2026. gada vienkāršošanas konsultācija nav atcelšana.',
+    effects:
+      'Iecerētais efekts: apturēt savvaļas putnu samazināšanos, atjaunot dzīvotnes un veidot SPA tīklu. Komisija min vairāk nekā 5400 teritorijas, kas sedz vairāk nekā 832 000 km². Lauksaimniecības putnu lejupslīde joprojām ir dokumentēts spiediens; direktīva ir juridisks ietvars, ne garantija, ka indeksi atjaunosies.',
+    caveats: 'Nav CITES. Biotopu direktīva ir atsevišķs akts.',
+    sourcesNote: 'Eiropas Komisijas lapa par Putnu direktīvu; Direktīvas 2009/147/EK teksts EUR-Lex.',
+  },
+  'bern-convention': {
+    title: 'Bernes konvencija',
+    hook: 'Eiropas Padomes līgums par savvaļas dabu un biotopiem. Stingri aizsargāto sugu saraksti un Pastāvīgā komiteja — paneiropiska, nav tas pats, kas ES Putnu un Biotopu direktīvas.',
+    imageAlt:
+      'Alpu kalnu kaza augstkalnu pļavā Šveices Alpos — Eiropas savvaļa, kādu Bernes konvencija iekļauj aizsardzībā',
+    jurisdiction: 'Eiropas Padome (Puses; atvērta arī ārpus EP pēc līguma noteikumiem)',
+    officialName: 'Konvencija par Eiropas savvaļas dabas un dabisko biotopu aizsardzību',
+    citation:
+      'Konvencija par Eiropas savvaļas dabas un dabisko biotopu aizsardzību (ETS Nr. 104); Bernē 1979. gada 19. septembrī; spēkā no 1982. gada 1. jūnija',
+    yearStatus: 'ETS Nr. 104. Atvērta parakstīšanai Bernē 1979. gada 19. septembrī. Spēkā no 1982. gada 1. jūnija.',
+    what: 'Floras un faunas un biotopu aizsardzība; pielikumi; Pastāvīgā komiteja; Emerald tīkls ārpus ES.',
+    where: 'ETS Nr. 104; spēkā no 1982. gada 1. jūnija.',
+    effects:
+      'Iecerētais efekts: kopīga Eiropas pamatlīnija sugu un biotopu aizsardzībai līdzās ES direktīvām un ārpus tām; Emerald tīkla vietas pusēm ārpus ES. Mīkstas rekomendācijas joprojām jāpārnes valsts tiesībās, lai tās ķertos.',
+    caveats: 'Nav CITES vai CMS. Putnu un Biotopu direktīvas saista dalībvalstis kā ES tiesības. Emerald tīklam Bernes konvencijā ir mērķi, kas saistīti ar Natura 2000, bet cita juridiskā bāze.',
+    sourcesNote: 'Eiropas Padomes Bernes konvencijas lapa, līgums Nr. 104 un konvencijas teksta PDF.',
+  },
+  'marine-mammal-protection-act': {
+    title: 'ASV Jūras zīdītāju aizsardzības likums (MMPA)',
+    hook: 'ASV federālais likums, kas kopumā aizliedz jūras zīdītāju ņemšanu ASV ūdeņos un ASV personām. Plašāks par vien ESA sarakstu.',
+    imageAlt: 'Kuprvalis un mazulis zem ūdens — jūras zīdītāji, ko sedz ASV ņemšanas moratorijs',
+    jurisdiction: 'Amerikas Savienotās Valstis',
+    officialName: 'Marine Mammal Protection Act of 1972',
+    citation: 'Marine Mammal Protection Act of 1972, 16 U.S.C. § 1361 et seq. (ar grozījumiem)',
+    yearStatus: 'Pieņemts 1972. gadā. Grozījumi 1992. un 1994. gadā. Joprojām spēkā.',
+    what: 'Moratorijs uz „take” un importu ar izņēmumiem; krājumu novērtējumi; NOAA, FWS un MMC lomas.',
+    where: 'ASV federālās tiesības kopš 1972. gada; grozījumi 1992. un 1994. gadā.',
+    effects:
+      'Iecerētais efekts: apturēt jūras zīdītāju krājumu noplicināšanu kā ekosistēmas daļu, prasīt parādīt, ka ņemšana krājumu nekaitēs, un atbalstīt izskalošanās reaģēšanu. Krājumu statuss pa sugām atšķiras — likums ir ietvars, ne atjaunošanās apliecība.',
+    caveats: 'Tas nav ESA: suga var būt zem abiem aktiem. Nav CITES vai tikai vaļu konvencija.',
+    sourcesNote: 'NOAA Fisheries, ASV Zivju un savvaļas dienesta un Jūras zīdītāju komisijas lapas; apkopotais teksts GovInfo.',
+  },
+  'lacey-act': {
+    title: 'Leisija likums (Lacey Act)',
+    hook: 'ASV likums, kas padara par federālu noziegumu tirdzniecību ar savvaļas dzīvniekiem, zivīm vai augiem, kas iegūti, pārkāpjot ASV, štata vai ārvalsts tiesības — pastiprinātājs blakus CITES, ne otrs CITES saraksts.',
+    imageAlt:
+      'Sakrauts konfiscēts ziloņa ziloņkauls noliktavā pirms iznīcināšanas — nelikumīgs savvaļas produkts, kādu Leisija likums ir rakstīts neielaist ASV tirdzniecībā',
+    jurisdiction: 'Amerikas Savienotās Valstis',
+    officialName: 'Lacey Act',
+    citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (no 1900; grozījumi savvaļas tirdzniecībā, t.sk. 1981)',
+    yearStatus: 'No 1900. gada. Grozījumi savvaļas tirdzniecībā, tostarp 1981. gadā. Joprojām spēkā.',
+    what: 'Aizliegums tirgot, ja pārkāpts pamata likums; nepatiesa marķēšana. 2008. gada lauksaimniecības likums attiecināja likumu uz augiem un kokmateriālu produktiem.',
+    where: 'ASV federālās tiesības no 1900. gada; grozījumi tostarp 1981. gadā.',
+    effects:
+      'Iecerētais efekts: slēgt ASV tirgu nelikumīgi iegūtai savvaļai un atbalstīt ārvalstu un štatu aizsardzības likumus ar federālu kriminālvajāšanu. Iedarbība atkarīga no atklāšanas un tā pamata likuma kvalitātes, uz kuru likums balstās.',
+    caveats: 'Nav pats CITES. Nav ESA vai MMPA.',
+    sourcesNote: 'ASV Zivju un savvaļas dienesta lapa par Leisija likumu; NOAA Fisheries likumi un politikas.',
   },
   'wildlife-corridors-act': {
     title: 'ASV savvaļas koridoru likumprojekts (2026)',

@@ -192,4 +192,76 @@ export const pl: Record<WaterEncyclopediaSlug, WaterEncyclopediaCopy> = {
       'Destylatory nie są komunalne. Nie nawadniają gospodarstwa. Sól i kamień i tak zbierają się w wielu konstrukcjach tacowych; zespół MIT twierdził, że ich układ knota może zrzucać sól w nocy — to twierdzenie badawcze do śledzenia, nie skończony produkt. Traktujcie destylator słoneczny jako pozasieciową wodę pitną pod czystym niebem — nie jako zamiennik zakładu odsalania.',
     ],
   },
+  'non-revenue-water-reduction': {
+    title: 'Redukcja strat wody (NRW) / DMA',
+    hook: 'Wodociągi produkują wodę pitną, która nigdy nie dociera do opomiarowanego kranu — przecieki, kradzież i złe wodomierze marnują wodę zlewni, które już są pod presją.',
+    imageAlt:
+      'Technik nasłuchuje przecieku na ulicznej magistrali wodociągowej w Saint-Maurice-de-Beynost korelatorem i mikrofonem gruntowym',
+    what: [
+      'Uzdatniona woda pitna ginie w rurach, zanim zapisze ją wodomierz. Przecieki, kradzież i złe wodomierze marnują wodę zlewni, które już są pod presją. Strefy pomiarowe (DMA), sterowanie ciśnieniem i aktywne wykrywanie przecieków tną straty fizyczne i handlowe — to oszczędność wody już uzdatnionej. To sieć wody pitnej, nie nawadnianie kropelkowe na polu i nie ogród deszczowy dla spływu z ulicy.',
+    ],
+    how: [
+      'Strefa DMA odcina kawałek sieci, żeby wodociąg porównał wodę wchodzącą do strefy z wodą zafakturowaną. Sterowanie ciśnieniem nie pozwala nadmiarowemu ciśnieniu otwierać przecieków. Aktywne wykrywanie nasłuchuje pęknięć. Jednorazowa łata bez stref i bez kontroli ciśnienia nie utrzymuje oszczędności.',
+    ],
+    where: [
+      'Notatka Banku Światowego o redukcji strat wody i praca Międzynarodowego Stowarzyszenia Wodnego o stratach opisują to jako zwykłą praktykę wodociągów. Zdjęcie pokazuje nasłuch akustyczny przecieku na ulicznej magistrali w Saint-Maurice-de-Beynost we Francji — tę klasę wykrywania, nie nazwany projekt Banku Światowego.',
+    ],
+    limits: [
+      'Potrzeba map, wodomierzy i stałych ekip. Jednorazowa łata rury bez stref DMA i kontroli ciśnienia nie utrzymuje oszczędności.',
+    ],
+  },
+  'uv-disinfection': {
+    title: 'Dezynfekcja UV (woda pitna)',
+    hook: 'Woda, która wygląda na czystą, wciąż może nieść Cryptosporidium i inne mikroby, których sam chlor nie zawsze zatrzymuje.',
+    imageAlt:
+      'Galeria rur w zakładzie dezynfekcji UV przy Sooke River Road w Kolumbii Brytyjskiej — zakład wody pitnej',
+    what: [
+      'Światło ultrafioletowe unieszkodliwia drobnoustroje w zakładzie wody pitnej i nie zostawia trwałego środka chemicznego. Walidowane reaktory to zwykła praktyka według wytycznych EPA Long Term 2. To bariera zakładu wody pitnej, nie membrana odsalania i nie filtr-mokradło. W singapurskim NEWater ultrafiolet jest jednym krokiem miejskiego odzysku ścieków; to inna praktyka.',
+    ],
+    how: [
+      'Woda przechodzi przez zespół lamp ultrafioletowych w reaktorze. Dawkę trzeba zwalidować pod przepływ i klarowność wody. Mętna woda i niezwalidowane lampy zawodzą. Ultrafiolet nie zostawia pozostałości w rurach dalej w sieci i nie usuwa soli ani większości chemikaliów.',
+    ],
+    where: [
+      'Podręcznik EPA o dezynfekcji ultrafioletowej i dokumenty reguły Long Term 2 są odniesieniem dla zwalidowanych reaktorów. Zdjęcie pokazuje zakład dezynfekcji ultrafioletowej przy Sooke River Road w Kolumbii Brytyjskiej, miejski zakład wody pitnej.',
+    ],
+    limits: [
+      'W sieci rozdzielczej nie ma trwałej pozostałości. Mętna woda i niezwalidowane lampy zawodzą. Dezynfekcja UV nie usuwa soli ani większości chemikaliów.',
+    ],
+  },
+  'onsite-greywater-reuse': {
+    title: 'Szara woda na miejscu (budynek)',
+    hook: 'Budynki odprowadzają lekko zużytą wodę ze zlewów i pryszniców do kanalizacji, podczas gdy spłuczki i nawadnianie wciąż biorą wodę pitną.',
+    imageAlt:
+      'Oczyszczanie szarej wody na miejscu: osadniki z łapaczem tłuszczu, obsadzone złoże i zbiorniki magazynowe',
+    what: [
+      'Oczyszczona szara woda z umywalek, pryszniców i prania wraca na miejscu do spłuczek albo nawadniania, w skali budynku albo osiedla. EPA grupuje to jako odzysk wody niepitnej na miejscu. To nie singapurskie NEWater, czyli miejski pełny odzysk do przemysłu i zbiorników, i nie zbieranie deszczówki z dachu.',
+    ],
+    how: [
+      'Lekko zużytą wodę trzyma się osobno od ścieków z toalet, oczyszcza stosownie do celu i zawraca do spłukiwania albo nawadniania w tym samym budynku lub osiedlu. Połączenie krzyżowe z rurami wody pitnej to ryzyko, któremu instalacja musi zapobiec. To nie jest źródło wody pitnej.',
+    ],
+    where: [
+      'Strony EPA o odzysku wody niepitnej na miejscu opisują tę praktykę. Zdjęcie pokazuje jeden taki ciąg: osadniki z łapaczem tłuszczu, obsadzone złoże i zbiorniki magazynowe. Obsadzone złoże jest częścią oczyszczania w skali budynku, nie mokradłem rzecznym i nie miejskim zakładem odzysku.',
+    ],
+    limits: [
+      'Ryzyko połączenia krzyżowego i lokalne przepisy. Oczyszczanie musi pasować do celu. To nie jest źródło wody pitnej.',
+    ],
+  },
+  'sand-dams': {
+    title: 'Tamy piaskowe (sand dams)',
+    hook: 'Sezonowe piaszczyste rzeki płyną kilka dni, a potem zostawiają suche wsie, które po wodę idą godzinami, choć koryto wygląda na puste.',
+    imageAlt:
+      'Schemat tamy piaskowej: niski mur w poprzek piaszczystego koryta, woda w porach piasku i ręczna pompa na brzegu',
+    what: [
+      'Tama piaskowa to niski mur murowany w poprzek sezonowej piaszczystej rzeki. Mur zatrzymuje piasek, a woda siedzi w porach tej łachy — magazyn dla suchych terenów, z małym parowaniem, już używany w Kenii i gdzie indziej. To nie jest zasilanie warstwy wodonośnej przez baseny albo studnie i nie jest deszczówka z dachu. Zapory kontrolne i korki wąwozów to mniejszy środek przeciw erozji, nie ta budowla.',
+    ],
+    how: [
+      'Sezonowe wezbrania zrzucają ładunek piasku za murem. Woda siedzi w porach, a nie w otwartym stawie, który by wyparował. Właściwe piaszczyste koryto i dobre miejsce decydują, czy łacha trzyma wodę. Mur na złej geologii magazynuje niewiele.',
+    ],
+    where: [
+      'Poradnik Practical Action o tamach piaskowych i notatka IWMI o wspólnotowych tamach piaskowych w Kenii opisują budowle już w użyciu. Obraz to schemat tej budowli — niski mur, piasek i studnia na brzegu — nie fotografia jednej nazwanej tamy.',
+    ],
+    limits: [
+      'Potrzeba właściwego sezonowego piaszczystego koryta, pracy wspólnoty i dobrego usytuowania. Mur na złej geologii magazynuje mało wody.',
+    ],
+  },
 };

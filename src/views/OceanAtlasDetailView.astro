@@ -1,0 +1,93 @@
+---
+import CitedSourceList from '../components/CitedSourceList.astro';
+import OceanRelated from '../components/OceanRelated.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  oceanAtlasLandCredit,
+  oceanAtlasPreviewSrc,
+  type OceanAtlasSlug,
+} from '../data/ocean-atlas';
+import { oceanBackdrop, oceanFrameSrc } from '../data/oceans';
+import {
+  getMapsPage,
+  getOceanAtlasBySlug,
+  getOceansPage,
+  localizePath,
+  oceanAtlasSectionLabels,
+  resolveLocale,
+} from '../i18n';
+
+interface Props {
+  slug: OceanAtlasSlug;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const oceans = getOceansPage(locale);
+const maps = getMapsPage(locale);
+const map = getOceanAtlasBySlug(locale, Astro.props.slug);
+if (!map) {
+  throw new Error(`Unknown oceans atlas slug: ${Astro.props.slug}`);
+}
+const preview = oceanAtlasPreviewSrc(map.preview);
+const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
+---
+
+<BaseLayout
+  title={`${map.title} — ${oceans.title} — Fix Planet`}
+  description={map.blurb}
+  image={preview}
+  theme="oceans"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={backdropSrc} alt="" width="1920" height="1078" />
+    <div class="section-backdrop-scrim oceans-scrim"></div>
+  </div>
+
+  <ShelfHeader
+    backHref={localizePath('/oceans', locale)}
+    backLabel={oceans.back}
+    title={map.title}
+    lede={map.blurb}
+  >
+    <p class="shelf-page-source">{map.meta}</p>
+  </ShelfHeader>
+
+  <section class="section section-hub-follow">
+    <div class="wrap">
+      <div class="wildlife-map-panel forests-panel oceans-panel">
+        <figure class="map-detail-art forest-map-art">
+          <img src={preview} alt={map.blurb} width="1600" height="800" />
+          <figcaption>
+            {map.sourceOrg}. {maps.schematicNote}
+            {map.usesCoastline ? <><br />{oceanAtlasLandCredit}</> : null}
+          </figcaption>
+        </figure>
+        <div class="prose map-detail-copy forest-frame-copy">
+          {
+            map.what && map.why && map.howToRead ? (
+              <>
+                <h2>{oceanAtlasSectionLabels.what}</h2>
+                <p>{map.what}</p>
+                <h2>{map.whyHeading ?? oceanAtlasSectionLabels.why}</h2>
+                <p>{map.why}</p>
+                <h2>{oceanAtlasSectionLabels.how}</h2>
+                <p>{map.howToRead}</p>
+              </>
+            ) : (
+              <p>{map.detailShort}</p>
+            )
+          }
+          <CitedSourceList heading={maps.sourcesList} sources={map.sources} />
+          <p class="oceans-cta-row">
+            <a class="btn btn-primary map-open-source" href={map.sourceUrl} rel="noopener noreferrer">
+              {maps.openSource}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <OceanRelated currentAtlas={map.slug} />
+</BaseLayout>

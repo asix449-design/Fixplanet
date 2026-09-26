@@ -286,4 +286,76 @@ export const en: Record<string, GeoCopy> = {
     sourcesNote:
       'Latham et al. 2012 Philosophical Transactions review; University of Washington MCB Program; RRAP Cooling and Shading programme pages.',
   },
+  'cirrus-cloud-thinning': {
+    title: 'Cirrus cloud thinning',
+    hook: 'Seed high ice clouds so they thin and leak more heat to space. Models disagree; IPCC has low confidence in the cooling. It is not SAI with a different name.',
+    imageAlt:
+      'MODIS true-color image of high cirrus clouds over the Pacific and central Chile — natural ice clouds, not a cirrus-thinning experiment',
+    jurisdiction: 'Research community (models; no operational national deployment)',
+    yearStatus:
+      'Cirrus cloud thinning (CCT); assessed in IPCC AR6 WG I alongside other radiation-budget proposals; NOAA SRM State of the Science (July 2024) lists CCT separately from SAI and MCB. Status: research.',
+    plan: 'CCT would add ice-nucleating particles (often discussed as bismuth triiodide or similar) into cold, high cirrus so ice crystals grow larger, fall faster, and leave a thinner, shorter-lived cloud. The intended effect is more outgoing longwave radiation — cooling by letting Earth’s heat escape — not by reflecting sunlight the way SAI or MCB would. NOAA’s SRM fact sheet draws that distinction explicitly.',
+    construction:
+      'Exists as model experiments and microphysics papers. No national CCT fleet, no outdoor seeding programme of record comparable even to cancelled SAI balloon trials. IPCC AR6 WG I assesses CCT among solar-radiation-modification–adjacent options and flags low confidence. Atmospheric chemistry and physics papers (e.g. Gasparini et al., ACP 2017) test how models proxy “seeding” and show that simple sedimentation tricks are a poor stand-in for real ice nucleation.',
+    outcome:
+      'Documented today: model ranges and process studies, not a measured planetary cool. Some simulations suggest possible cooling on the order of roughly 1–2 W m⁻² under optimistic assumptions; others find little effect or warming if clouds are “over-seeded.” IPCC’s low-confidence line is the honest summary for a public card.',
+    lessons:
+      'CCT does not remove CO₂ or fix ocean acidification. Rainfall, regional heat, and unintended cloud changes are uncertain. Do not caption this as a ready thermostat or as “the same as SAI.” If a model needs a perfect seeding recipe that nobody has demonstrated outdoors, the card stays Research.',
+    sourcesNote:
+      'IPCC AR6 WG I Chapter 4 (SRM / radiation proposals including CCT) and the Chapter 4 PDF; NOAA CSL State of the Science Fact Sheet: Solar Radiation Modification (July 2024); Gasparini et al. 2017 Atmospheric Chemistry and Physics on cirrus seeding proxies in models.',
+  },
+  'surface-albedo-modification': {
+    title: 'Surface albedo modification',
+    hook: 'Paint roofs and roads lighter so cities bounce more sun. That can cool streets and cut AC. It is not a global dimmer — cities are about one percent of Earth’s surface.',
+    imageAlt:
+      'Whitewashed roofs and terraces in Santorini, Greece — Mediterranean light-surface tradition, not a planetary albedo programme',
+    jurisdiction: 'Cities, buildings, and land-cover proposals (no planetary programme)',
+    yearStatus:
+      'Surface albedo enhancement (cool roofs, reflective pavements, land-cover brightening); listed in NOAA SRM SoS (July 2024); cool roofs documented by U.S. EPA for urban heat; buildings chapter of IPCC AR6 WG III. Status: research / local practice.',
+    plan: 'Raises the reflectivity of ground and building surfaces so more sunlight leaves instead of becoming heat. The practical end is cool roofs, cool pavements, and related land-cover choices. EPA treats cool roofs as an urban heat-island tool: lower roof and near-surface temperatures, less cooling energy in hot seasons. NOAA’s SRM overview lists surface albedo enhancement as a radiation-budget idea alongside SAI, MCB, and CCT — while noting far less research on global deployment than on SAI/MCB.',
+    construction:
+      'Cool roofs and light surfaces are ordinary building practice in many hot cities (including long Mediterranean white-wash traditions). There is no planetary albedo programme. IPCC AR6 WG III discusses reflective roofs and related sufficiency measures in the buildings chapter as local mitigation/adaptation — not as a substitute for emissions cuts.',
+    outcome:
+      'Documented at building and city scale: cooler roofs, lower indoor heat gain in hot climates, urban heat-island relief where materials and maintenance hold up. Global mean temperature effect of brightening urban surfaces alone is tiny because urban land is a small fraction of the planet. Treat “degrees of global cooling” claims as model curiosities unless tied to a named study with clear assumptions.',
+    lessons:
+      'Winter heating penalties in cold climates; glare; material ageing; rainfall and regional circulation side effects appear in some modelling. Surface brightening does not remove CO₂. Do not sell a white roof as planetary geoengineering — sell it as local heat management that happens to sit on the same shelf family as SRM research.',
+    sourcesNote:
+      'U.S. EPA Using Cool Roofs to Reduce Heat Islands; IPCC AR6 WG III Chapter 9 Buildings PDF; NOAA CSL SRM State of the Science Fact Sheet (July 2024); NASEM Reflecting Sunlight research agenda and governance catalog.',
+  },
+  'ocean-alkalinity-enhancement': {
+    title: 'Ocean alkalinity enhancement',
+    hook: 'Add alkalinity so seawater can hold more CO₂ as bicarbonate. Chemistry, not iron-fed plankton blooms. Still research — measurement and ecology are the hard parts.',
+    imageAlt:
+      'NOAA MAP-CO2 ocean acidification research buoy at Cayo Enrique Reef, Puerto Rico — carbonate-chemistry monitoring, not an alkalinity-enhancement deployment',
+    jurisdiction: 'Research groups / NOAA-supported mCDR trials (no commercial planetary licence)',
+    yearStatus:
+      'Ocean alkalinity enhancement (OAE); National Academies ocean CDR research strategy; NOAA Ocean Acidification Program CDR overview; NOPP marine CDR awards. Status: research.',
+    plan: 'OAE raises seawater alkalinity (mineral addition or electrochemical routes) so the ocean can take up more atmospheric CO₂ and store it mainly as dissolved bicarbonate/carbonate on long timescales. Unlike ocean iron fertilization, the lever is carbonate chemistry, not a stimulated bloom. NOAA notes a possible local co-benefit against acidification — and a long list of unknowns.',
+    construction:
+      'Lab work, models, and early field trials. NOAA’s Ocean Acidification Program hosts CDR context pages; NOPP has funded multi-agency marine CDR projects including OAE field and lab studies. The National Academies’ ocean-based CDR strategy treats OAE as a priority research track, not a finished climate service. London Convention/Protocol politics that constrain iron fertilization are a reminder that marine interventions need lawful assessment — do not imply OAE is already waved through.',
+    outcome:
+      'Documented: chemical principles and small-scale experiments showing alkalinity additions can increase CO₂ uptake in controlled settings; early trial reports remain limited in space and time. There is no verified gigatonne planetary removal ledger from OAE deployment.',
+    lessons:
+      'Lifecycle emissions of mining, grinding, shipping, or electrochemistry can erase net removal if ignored. Trace metals, particle plumes, and ecosystem responses need monitoring. Do not merge this card with ocean iron fertilization. Do not call OAE a substitute for cutting emissions.',
+    sourcesNote:
+      'NOAA Ocean Acidification Program Carbon Dioxide Removal page; NOAA / NOPP marine CDR research awards overview; National Academies A Research Strategy for Ocean-based CDR catalog; NOAA Science Advisory Board draft CDR research strategy PDF.',
+  },
+  'glacial-climate-intervention': {
+    title: 'Glacial climate intervention',
+    hook: 'Slow ice-sheet collapse with seabed curtains, basal-water tricks, or winter ice thickening — on paper. A 2024 research vision asks whether any of it can work. Nothing here is a built sea wall for Antarctica.',
+    imageAlt:
+      'Calving front of Thwaites Ice Shelf, Amundsen Sea, photographed on a NASA IceBridge flight — the class of ice the 2024 research vision discusses, not a built seabed curtain',
+    jurisdiction: 'Research vision (glaciology / polar engineering proposals; no deployed ice-sheet programme)',
+    yearStatus:
+      'Glacial Climate Intervention research vision (MacAyeal, Moore, Mankoff, Wolovick, Minchew et al., 2024); surveyed among high-latitude interventions in Climatic Change (2024). Status: research / speculative.',
+    plan: 'A family of proposals to reduce sea-level contribution from ice sheets and to slow Arctic sea-ice loss by local engineering rather than by dimming the sun. Ideas include seabed curtains or berms to block warm water from ice-shelf cavities, basal-hydrology interventions, and pumping seawater onto ice in winter to thicken it. The 2024 Glacial Climate Intervention: A Research Vision paper argues for a decade of research and transparent consultation — not for immediate construction.',
+    construction:
+      'White papers, models, and early engineering concepts. A 2024 Climatic Change survey graded dozens of high-latitude “emergency” interventions and found many ocean/ice ideas score poorly on readiness and risk knowledge. No government has an operational glacial-intervention programme that demonstrably holds an ice sheet.',
+    outcome:
+      'Documented: modelling that modest cavity barriers could slow melt in specific geometries; small-scale ice-thickening practice for winter roads is not the same as basin-scale Arctic pumps. There is no field proof that curtains or pumps stabilise Thwaites-class glaciers at climate-policy scale.',
+    lessons:
+      'Polar ecosystems, Indigenous rights, logistics, and failure modes are first-order — not footnotes. Glass-bead or albedo “fixes” for sea ice have published counter-results. Emissions cuts remain the primary lever; this card is research honesty, not a Plan B sticker.',
+    sourcesNote:
+      'Glacial Climate Intervention: A Research Vision (2024 PDF via AWI EPIC); Moore et al. 2024 Climatic Change survey of high-latitude interventions (journal page and DOI); NOAA CSL SRM State of the Science fact sheet for the SRM ≠ ice-sheet-engineering distinction.',
+  },
 };

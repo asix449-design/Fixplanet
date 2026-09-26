@@ -12,6 +12,10 @@ export const waterEncyclopediaSlugs = [
   'fog-harvesting',
   'constructed-floating-wetlands',
   'solar-still',
+  'non-revenue-water-reduction',
+  'uv-disinfection',
+  'onsite-greywater-reuse',
+  'sand-dams',
 ] as const;
 
 export type WaterEncyclopediaSlug = (typeof waterEncyclopediaSlugs)[number];
@@ -88,6 +92,7 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
   },
   {
     slug: 'membrane-desalination',
+    // Shelf note: leave the Water Corporation (WA) desalination primary. No resolving IEA desalination hub to swap in.
     image: img(
       'membrane-desalination.jpg',
       'Calistemon — Perth Seawater Desalination Plant, September 2020',
@@ -181,6 +186,7 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
   },
   {
     slug: 'fog-harvesting',
+    // Shelf note: FogQuest primary stays. The organisation says its project pages are no longer kept current (soft/stale). Do not swap the URL.
     image: img(
       'fog-harvesting.jpg',
       'Pontificia Universidad Católica de Chile — fog collector at Alto Patache',
@@ -234,6 +240,91 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
       cite(
         'USGS Water Science School — Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
+      ),
+    ],
+  },
+  {
+    slug: 'non-revenue-water-reduction',
+    image: img(
+      'non-revenue-water-reduction.jpg',
+      'Benoît Prieur — acoustic leak search with a Hydreka MicroCorr, Saint-Maurice-de-Beynost, April 2019',
+      'CC0',
+      'https://commons.wikimedia.org/wiki/File:Recherche_d%27une_fuite_d%27eau_%C3%A0_l%27aide_d%27un_Hydreka_MicroCorr,_Mont%C3%A9e_de_la_Paroche_%C3%A0_Saint-Maurice-de-Beynost_(avril_2019).jpg',
+    ),
+    sources: [
+      cite(
+        'World Bank — Reducing water losses',
+        'https://www.worldbank.org/en/topic/water/brief/reducing-water-losses',
+      ),
+      cite('IWA — Water Loss', 'https://iwa-network.org/projects/water-loss/'),
+      cite(
+        'World Bank — The challenge of reducing non-revenue water',
+        'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/297191468176683069/the-challenge-of-reducing-non-revenue-water-nrw-in-developing-countries-how-the-private-sector-can-help-a-look-at-performance-based-service-contracting',
+      ),
+    ],
+  },
+  {
+    slug: 'uv-disinfection',
+    image: img(
+      'uv-disinfection.jpg',
+      'Kiwibirdman — Sooke River Road ultraviolet disinfection plant, British Columbia',
+      'CC BY 3.0',
+      'https://commons.wikimedia.org/wiki/File:%5ENew%5E_Sooke_River_Road_UV_Disinfection_Plant_-_panoramio.jpg',
+    ),
+    sources: [
+      cite(
+        'U.S. EPA — Ultraviolet Disinfection Guidance Manual (PDF)',
+        'https://www.epa.gov/system/files/documents/2022-10/ultraviolet-disinfection-guidance-manual-2006.pdf',
+      ),
+      cite(
+        'U.S. EPA — Long Term 2 Enhanced Surface Water Treatment Rule documents',
+        'https://www.epa.gov/dwreginfo/long-term-2-enhanced-surface-water-treatment-rule-documents',
+      ),
+    ],
+  },
+  {
+    slug: 'onsite-greywater-reuse',
+    image: img(
+      'onsite-greywater-reuse.jpg',
+      'SuSanA Secretariat — onsite greywater treatment: settling tanks, a planted bed, and storage tanks',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Greywater_treatement_steps_(3110373058).jpg',
+    ),
+    sources: [
+      cite(
+        'U.S. EPA — Onsite Non-Potable Water Reuse Resources',
+        'https://www.epa.gov/waterreuse/onsite-non-potable-water-reuse-resources',
+      ),
+      cite(
+        'WHO — Guidelines for the safe use of wastewater, excreta and greywater',
+        'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta',
+      ),
+      cite(
+        'U.S. EPA — Basic information about water reuse',
+        'https://www.epa.gov/waterreuse/basic-information-about-water-reuse',
+      ),
+    ],
+  },
+  {
+    slug: 'sand-dams',
+    image: img(
+      'sand-dams.jpg',
+      'Iangrahamneal — diagram of a sand dam: a low wall, stored sand, and a hand pump',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Sand_dam_illustration_3.jpg',
+    ),
+    sources: [
+      cite(
+        'Practical Action — Sand dams',
+        'https://www.practicalaction.org/knowledge-centre/resources/sand-dams/',
+      ),
+      cite(
+        'IWMI GRIPP — Community sand dams in Kenya',
+        'https://gripp.iwmi.org/natural-infrastructure/water-storage/ensuring-resilience-through-community-sand-dams-in-kenya/',
+      ),
+      cite(
+        'Maddrell & Neal — Sand Dams: a Practical Guide (PDF)',
+        'https://www.samsamwater.com/library/Maddrell_and_Neal_2012_Sand_Dams_a_Practical_Guide_LR.pdf',
       ),
     ],
   },

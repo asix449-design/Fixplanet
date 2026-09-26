@@ -286,4 +286,66 @@ export const lv: Record<string, GeoCopy> = {
     sourcesNote:
       'Latham et al. 2012 Philosophical Transactions pārskats; Vašingtonas universitātes MCB programma; RRAP Cooling and Shading programmas lapas.',
   },
+  'cirrus-cloud-thinning': {
+    title: 'Cirrus mākoņu retināšana',
+    hook: 'Iesēt augstos ledus mākoņus, lai tie kļūtu plānāki un laidītu vairāk siltuma kosmosā. Modeļi atšķiras; IPCC zema pārliecība par atdzišanu. Tas nav SAI ar citu vārdu.',
+    imageAlt:
+      'MODIS attēls ar augstiem cirrus mākoņiem virs Klusā okeāna un centrālās Čīles — dabiski ledus mākoņi, ne retināšanas eksperiments',
+    jurisdiction: 'Pētniecības kopiena (modeļi; bez operatīvas valsts izvēršanas)',
+    yearStatus:
+      'Cirrus cloud thinning (CCT); IPCC AR6 WG I; atsevišķi no SAI un MCB NOAA SRM pārskatā (2024. gada jūlijs). Statuss: pētījums.',
+    plan: 'Pievieno ledus nukleācijas kodolus aukstiem cirrus mākoņiem: kristāli lielāki, ātrāk krīt, mākonis plānāks — vairāk izejošā garo viļņu starojuma.',
+    construction: 'Modeļi un mikrofizikas raksti; nav nacionālas flotes. IPCC — zema pārliecība.',
+    outcome: 'Modeļi atšķiras; IPCC zema pārliecība par atdzišanu.',
+    lessons:
+      'Neizņem CO₂ un neārstē okeāna paskābināšanos. Nekartē kā gatavu termostatu un nejauc ar SAI/MCB.',
+    sourcesNote:
+      'IPCC AR6 WG I, 4. nodaļa (un PDF); NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (2024. gada jūlijs); Gasparini et al., ACP 2017.',
+  },
+  'surface-albedo-modification': {
+    title: 'Virsmas albedo paaugstināšana',
+    hook: 'Gaišāki jumti un ceļi — ielas vēsākas, mazāk kondicionēšanas. Tas nav globāls aptumšotājs: pilsētas ir apmēram viens procents Zemes virsmas.',
+    imageAlt:
+      'Baltie jumti un terases Santorīnē — Vidusjūras gaišā tradīcija, ne planētas albedo programma',
+    jurisdiction: 'Pilsētas, ēkas un zemes seguma priekšlikumi (bez planētas programmas)',
+    yearStatus:
+      'Surface albedo enhancement (vēsie jumti, gaišie segumi); NOAA SRM SoS (2024. gada jūlijs); EPA par pilsētas siltumu; IPCC AR6 WG III, ēkas. Statuss: pētījums / vietējā prakse.',
+    plan: 'Paaugstina jumtu/segumu atstarošanu; EPA — rīks pret pilsētas siltuma salu.',
+    construction: 'Parasta būvniecības prakse karstās pilsētās; planētas programmas nav.',
+    outcome: 'Tas nav globāls aptumšotājs: pilsētas ir apmēram viens procents Zemes virsmas.',
+    lessons:
+      'Ziemas sods aukstā klimatā; neizņem CO₂; nepārdot balto jumtu kā planētas ģeoengineeringu.',
+    sourcesNote:
+      'EPA — Using Cool Roofs to Reduce Heat Islands; IPCC AR6 WG III, 9. nodaļa (ēkas, PDF); NOAA CSL SRM SoS (2024. gada jūlijs); NASEM Reflecting Sunlight.',
+  },
+  'ocean-alkalinity-enhancement': {
+    title: 'Okeāna sārmainības paaugstināšana',
+    hook: 'Pievienot sārmainību, lai ūdens turētu vairāk CO₂ kā bikarbonātu. Ķīmija, ne dzelzs «planktona sēšana». Joprojām pētījums.',
+    imageAlt:
+      'NOAA MAP-CO2 okeāna paskābināšanās pētījumu boja pie Cayo Enrique rifa, Puertoriko — karbonātu ķīmijas monitorings, ne OAE izvēršana',
+    jurisdiction: 'Pētniecības grupas / mCDR izmēģinājumi ar NOAA atbalstu (bez komerciālas planētas licences)',
+    yearStatus:
+      'Ocean alkalinity enhancement (OAE); National Academies okeāna CDR stratēģija; NOAA OAP pārskats; NOPP granti. Statuss: pētījums.',
+    plan: 'Paaugstina jūras ūdens sārmainību (minerāli vai elektroķīmija) → lielāka CO₂ uzņemšana. Nejauc ar dzelzs mēslošanu.',
+    construction: 'Laboratorijas, modeļi, agrīni lauka izmēģinājumi; nav gatavs klimata pakalpojums.',
+    outcome: 'Ķīmija, ne dzelzs «planktona sēšana». Joprojām pētījums.',
+    lessons: 'Dzīves cikls, ekoloģija, monitorings. Neaizstāj emisiju samazināšanu.',
+    sourcesNote:
+      'NOAA Ocean Acidification Program — Carbon Dioxide Removal; NOAA / NOPP mCDR granti; National Academies okeāna CDR stratēģija; NOAA Zinātnes padomdevējas padomes CDR stratēģijas melnraksts.',
+  },
+  'glacial-climate-intervention': {
+    title: 'Ledāju klimata iejaukšanās',
+    hook: 'Palēnināt ledāju sabrukumu ar dibena aizkariem, bazālo hidroloģiju vai ziemas ledus sabiezināšanu — uz papīra. Nav uzbūvēts mūris Antarktīdai.',
+    imageAlt:
+      'Tveitsa šelfa ledāja atnešanās fronte, Amundsena jūra, NASA IceBridge foto — ledus klase, par ko runā 2024. gada pētniecības vīzija, ne uzbūvēts dibena aizkars',
+    jurisdiction: 'Pētniecības vīzija (glacioloģija / polārie priekšlikumi; bez izvērstas programmas)',
+    yearStatus:
+      'Glacial Climate Intervention research vision (2024); augsto platuma grādu intervenču apskats Climatic Change (2024). Statuss: pētījums / spekulatīvi.',
+    plan: 'Vietēja inženierija pie ledājiem un jūras ledus (aizkari, bazālie pasākumi, sūkņi), ne Saules aptumšošana.',
+    construction: 'Baltās grāmatas un modeļi; 2024. gada apskats — daudzas idejas vāji gatavas.',
+    outcome: 'Uz papīra. Nav uzbūvēts mūris Antarktīdai.',
+    lessons: 'Ekosistēmas, pamatiedzīvotāju tiesības, loģistika. Emisiju samazināšana — galvenais sviras.',
+    sourcesNote:
+      'Glacial Climate Intervention: A Research Vision (2024, PDF caur AWI EPIC); Moore et al. 2024 apskats Climatic Change; NOAA CSL SRM SoS.',
+  },
 };

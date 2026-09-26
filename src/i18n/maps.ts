@@ -56,7 +56,8 @@ const pageEn: MapsPage = {
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
     religious: 'Pilot schematics for the early centuries CE — not a census.',
-    conflicts: 'Armed events and battle deaths from named datasets.',
+    conflicts:
+      'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity — each card names the publisher and what the measure is (and is not).',
     ethnic: 'Language families as public cartography, not a census.',
     crime:
       'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
@@ -65,7 +66,8 @@ const pageEn: MapsPage = {
     political:
       'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ — each card names the public vector set and what it is not.',
     forests: 'Canopy, loss, and protected areas from named sources.',
-    water: 'Rivers, basins, and freshwater stress.',
+    water:
+      'Rivers, basins, groundwater, lakes, wetlands, flood hazard, and freshwater stress — each card names the publisher and what the measure is (and is not).',
     population: 'Where people live, at the vintage we can source.',
   },
   centuryBadge: 'Century atlas',
@@ -124,7 +126,8 @@ const pageRu: MapsPage = {
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
     religious: 'Пилотные схемы ранних веков н. э. — не перепись.',
-    conflicts: 'Вооружённые события и боевые потери по названным данным.',
+    conflicts:
+      'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов — у каждой карточки издатель и что именно измеряется (и чего нет).',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime:
       'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
@@ -133,7 +136,8 @@ const pageRu: MapsPage = {
     political:
       'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ — на каждой карточке указан открытый векторный набор и что он не измеряет.',
     forests: 'Полог, потери и ООПТ по названным источникам.',
-    water: 'Реки, бассейны и нехватка пресной воды.',
+    water:
+      'Реки, бассейны, подземные воды, озёра, водно-болотные угодья, наводнения и нехватка пресной воды — у каждой карточки издатель и что именно измеряется (и чего нет).',
     population: 'Где живут люди — на тот год, который можем указать.',
   },
   centuryBadge: 'Атлас столетий',
@@ -192,7 +196,8 @@ const pagePl: MapsPage = {
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
     religious: 'Schematy pilotażowe wczesnych wieków n.e. — nie spis.',
-    conflicts: 'Zbrojne zdarzenia i ofiary walk z nazwanych zbiorów.',
+    conflicts:
+      'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów — na każdej karcie wydawca oraz to, co miara obejmuje (i czego nie).',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime:
       'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
@@ -201,7 +206,8 @@ const pagePl: MapsPage = {
     political:
       'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ — na każdej karcie nazwany jest otwarty zestaw wektorów i to, czego on nie mierzy.',
     forests: 'Okap, ubytek i obszary chronione z nazwanych źródeł.',
-    water: 'Rzeki, zlewnie i presja na wodę słodką.',
+    water:
+      'Rzeki, zlewnie, wody podziemne, jeziora, mokradła, zagrożenie powodziowe i presja na wodę słodką — na każdej karcie wydawca i co dana miara jest (i czym nie jest).',
     population: 'Gdzie mieszkają ludzie — w roczniku, który umiemy podać.',
   },
   centuryBadge: 'Atlas stuleci',
@@ -260,7 +266,8 @@ const pageLv: MapsPage = {
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
     religious: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem — ne tautas skaitīšana.',
-    conflicts: 'Bruņoti notikumi un kauju nāves no nosauktām datu kopām.',
+    conflicts:
+      'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko ne).',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime:
       'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
@@ -269,7 +276,8 @@ const pageLv: MapsPage = {
     political:
       'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ — katrā kartītē norādīts atvērtais vektoru komplekts un tas, ko tas nemēra.',
     forests: 'Vainags, zudums un aizsargājamās teritorijas no nosauktiem avotiem.',
-    water: 'Upes, baseini un saldūdens spiediens.',
+    water:
+      'Upes, baseini, pazemes ūdeņi, ezeri, mitrāji, plūdu risks un saldūdens stress — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko nē).',
     population: 'Kur dzīvo cilvēki — tajā gadā, ko varam norādīt.',
   },
   centuryBadge: 'Gadsimtu atlants',
@@ -350,6 +358,70 @@ const en: Record<string, MapCopy> = {
       'UCDP allows non-commercial use with citation. We host a cropped Our World in Data map export (CC BY) of deaths in armed conflicts. Open the OWID war-and-peace page for the live layer.',
     imageAlt:
       'Our World in Data world map of deaths in armed conflicts: pale land with Ukraine and several African and Asian countries in orange and red',
+  },
+  'global-peace-index': {
+    title: 'Global Peace Index',
+    hook: 'Country ranking of peacefulness from the Institute for Economics & Peace — a composite score, not ACLED event pins and not a verdict on who is right.',
+    description:
+      'The Global Peace Index (GPI), published by the Institute for Economics & Peace (IEP) via Vision of Humanity, ranks countries on peacefulness using a composite of indicators across ongoing domestic and international conflict, societal safety and security, and militarisation. The interactive map and annual report (latest public report checked: GPI 2026) are the public front door.',
+    whyOnShelf:
+      'Live ACLED answers “where were events recorded?” Live UCDP/OWID answers “how many battle-related deaths?” GPI answers a different question: how peaceful is this country on a comparable composite score? It complements casualties and events without duplicating either.',
+    howToRead:
+      'A colour on the map is a rank/score band, not a court finding and not “this side started the war.” Domain weights and year matter — open the latest GPI report for methods. Dense red on GPI is not the same object as dense ACLED pins.',
+    caveats:
+      'Not this card: ACLED event points; UCDP battle-death tallies; Fragile States Index (separate card). Do not paste proprietary GPI artwork.',
+    licenseNote:
+      'This card is a doorway to IEP’s living product; the preview is a Fix Planet overview after the named source, not that publisher’s official artwork. Attribute Institute for Economics & Peace / Vision of Humanity.',
+    imageAlt:
+      'Fix Planet overview choropleth in a peacefulness palette: greener land in a more-peaceful band, redder land in a less-peaceful band, and grey land left unclassified — not Vision of Humanity artwork and not GPI scores',
+  },
+  'fragile-states-index': {
+    title: 'Fragile States Index',
+    hook: 'Country scores of state fragility across pressure and cohesion indicators — fragility risk, not battle deaths and not a peace ranking.',
+    description:
+      'The Fragile States Index (FSI), produced by the Fund for Peace, scores countries on social, economic, and political/military pressures and on cohesion capacities. Public products include global data tables, country pages, methodology notes, and an analytics heat map. It is an annual comparative scorecard, not an event geodatabase.',
+    whyOnShelf:
+      'Conflicts today only show events and deaths. Fragility asks whether state institutions and social cohesion are under stress — often a different geography from the loudest war theatres. Complements GPI (peacefulness) without duplicating ACLED or UCDP.',
+    howToRead:
+      'A high FSI score means higher measured fragility on FfP’s framework, not a UN listing, not a prediction that war will start tomorrow, and not a moral ranking of peoples. Indicators and years change; open methodology and global data. Do not treat the heat map as a census of every local conflict.',
+    caveats:
+      'Not this card: GPI peacefulness ranks; ACLED pins; UCDP deaths; World Bank WGI (different product — defer).',
+    licenseNote:
+      'Attribute Fund for Peace / Fragile States Index. The preview is a Fix Planet overview, not Fund for Peace’s branded heat map.',
+    imageAlt:
+      'Fix Planet overview heat map of fragility bands: darker land where fragility is higher on this overview, lighter land where it is lower, and mid-tone land left unclassified — not Fund for Peace artwork and not FSI scores',
+  },
+  'military-expenditure-sipri': {
+    title: 'Military expenditure (SIPRI)',
+    hook: 'Comparable country series of military spending from SIPRI — budgets and burden, not event pins and not a catalog of weapon systems.',
+    description:
+      'The Stockholm International Peace Research Institute (SIPRI) Military Expenditure Database (Milex) compiles consistent time series of military spending for most countries, with documentation, fact sheets (e.g. trends in world military expenditure), and research pages. Public entry points: the Milex database page, the annual fact sheet PDF, and SIPRI press notes on global totals.',
+    whyOnShelf:
+      'Spending is a resource / militarisation layer. It is not “who fought where” (ACLED) and not “who died in battle” (UCDP). Together with GPI’s militarisation domain and HIIK intensity, it rounds the shelf without a second death map.',
+    howToRead:
+      'Figures are SIPRI estimates under their definitions (often constant prices / share of GDP depending on the view). High spend ≠ “aggressor” and low spend ≠ “peaceful.” Some countries are opaque; SIPRI marks uncertainty.',
+    caveats:
+      'Not this card: arms-transfer ledgers, nuclear stockpiles, or equipment inventories — those are other SIPRI products. The interactive host milex.sipri.org did not respond to automated GET (timeout / no HTTP code). Primary cite is sipri.org/databases/milex and the fact sheet (both 200).',
+    licenseNote:
+      'Attribute SIPRI Military Expenditure Database. The preview is a Fix Planet overview of spending level (larger budgets darker), not share of GDP, not a weapons-systems catalog, and not SIPRI’s branded yearbook cover art.',
+    imageAlt:
+      'Fix Planet overview choropleth of military spending level: darker blue where spending is in a larger-spender band, lighter land left unclassified — not SIPRI yearbook art and not Milex figures',
+  },
+  'conflict-barometer-hiik': {
+    title: 'Conflict Barometer (HIIK)',
+    hook: 'Annual conflict intensity by country and region from Heidelberg’s Conflict Barometer — intensity classes, not event pins and not battle-death totals.',
+    description:
+      'The Heidelberg Institute for International Conflict Research (HIIK) publishes the annual Conflict Barometer (Konfliktbarometer): a global inventory of political conflicts with intensity levels (from non-violent dispute through limited violence to war), regional chapters, static maps, and downloadable datasets. Latest PDF checked: Conflict Barometer 2025 (coba_2025.pdf). English and German hubs both resolve.',
+    whyOnShelf:
+      'ACLED is high-frequency event geography; UCDP is death accounting; GPI/FSI are country indices; SIPRI is spending. HIIK answers how intense is this conflict this year on a coded scale? — the missing intensity layer. HIIK hubs and PDFs returned 200, so no UN Peacekeeping substitute was needed.',
+    howToRead:
+      'An intensity class is HIIK’s coding for that conflict-year, not a UN Security Council resolution and not ACLED’s pin count. One country can host several conflicts at different intensities. Open the current Conflict Barometer and the static maps and datasets pages. Preview = Fix Planet overview after HIIK, not their cover art.',
+    caveats:
+      'Not this card: ACLED dashboard; UCDP GED; UN mission deployment maps (different question).',
+    licenseNote:
+      'Attribute Heidelberg Institute for International Conflict Research (HIIK). The preview is a Fix Planet overview, not a second ACLED dot field and not HIIK cover art.',
+    imageAlt:
+      'Fix Planet overview of conflict-intensity bands: deep red for a war-intensity orientation, orange for other violent-conflict orientation, and grey land left unclassified — not HIIK cover art and not ACLED pins',
   },
   'language-families': {
     title: 'Language families of the world',
@@ -468,6 +540,70 @@ const en: Record<string, MapCopy> = {
       'GCP data are published for reuse with citation. We host a cropped Our World in Data map export (CC BY) of territorial CO₂. Open their emissions map for the interactive layer.',
     imageAlt:
       'Our World in Data choropleth of territorial CO₂: China and the United States in the darkest red, other large economies in medium red',
+  },
+  'consumption-co2-emissions': {
+    title: 'Consumption-based CO₂ emissions',
+    hook: 'Carbon dioxide attributed to where goods and services are consumed — territorial inventories adjusted for trade, not a second production map.',
+    description:
+      'Consumption-based CO₂ (also called trade-adjusted or footprint emissions) from the Global Carbon Project, mapped by Our World in Data. Emissions from fossil fuels and industry are reassigned from the country of production to the country of final consumption when goods and services cross borders. Land-use change is usually excluded from this series.',
+    whyOnShelf:
+      'Territorial CO₂ emissions answers where the CO₂ was produced. This card answers a different question: where was the lifestyle and demand that drove those emissions? Importers can look large on this map and small on the territorial one. It is not a second production choropleth and not a smog map.',
+    howToRead:
+      'Compare totals and per-capita carefully. A high consumption total is not a moral verdict and not the same object as PM2.5. Methods and country coverage matter — open the OWID map and the Global Carbon Budget notes. This card is a doorway to the living GCP/OWID product; the preview is a Fix Planet overview after the named source.',
+    caveats:
+      'A high consumption total is not a moral verdict and not PM2.5. Land-use change is usually excluded. This is not territorial CO₂ and not a methane inventory.',
+    licenseNote:
+      'The preview is a Fix Planet overview of consumption-based (trade-adjusted) CO₂ — not Our World in Data’s marketing crop and not a second territorial-CO₂ map. Attribute Global Carbon Project / Our World in Data (CC BY). Open the OWID map for the interactive layer.',
+    imageAlt:
+      'Fix Planet overview choropleth of consumption-based CO₂: slate-blue countries in a higher-footprint orientation, other land left unclassed — not a territorial CO₂ map and not an OWID export',
+  },
+  'nitrogen-dioxide-no2': {
+    title: 'Nitrogen dioxide (NO₂)',
+    hook: 'Satellite column of nitrogen dioxide over cities, industry, and shipping — combustion pollution, not the same as PM2.5 mass.',
+    description:
+      'Tropospheric (and total-column) nitrogen dioxide measured by the TROPOMI instrument on Copernicus Sentinel-5P, shown as a multi-day moving average on the public S5P-PAL mapping portal. NO₂ is a short-lived combustion tracer from traffic, power plants, industry, shipping, and fires.',
+    whyOnShelf:
+      'PM2.5 answers how much fine particle mass a person breathes on average. NO₂ answers a different air question: where is fresh combustion nitrogen oxide pollution visible from orbit? It is not a CO₂ inventory and not a plastic-waste map.',
+    howToRead:
+      'Bright columns mark recent emissions under clear-sky sampling — clouds hide the surface. A 14-day average smooths weather noise; it is not an annual legal limit and not WHO’s PM2.5 guideline. Open the tropospheric NO₂ layer on S5P-PAL; the preview is a Fix Planet overview after the named mission.',
+    caveats:
+      'Clouds hide the surface. A bright column is not an annual legal limit and not WHO’s PM2.5 guideline. This is not a CO₂ inventory and not a plastic-waste map.',
+    licenseNote:
+      'The preview is a Fix Planet overview of tropospheric NO₂ hotspots — not an ESA or S5P-PAL marketing still. Attribute Copernicus Sentinel-5P / TROPOMI. Open the tropospheric NO₂ layer on S5P-PAL for the living map.',
+    imageAlt:
+      'Fix Planet overview of tropospheric nitrogen dioxide: amber columns over cities, industry, and shipping lanes on a muted world map — not a PM2.5 choropleth and not an ESA still',
+  },
+  'mismanaged-plastic-waste': {
+    title: 'Mismanaged plastic waste',
+    hook: 'Plastic waste not recycled, incinerated, or sealed in landfill — the leak risk to rivers and coasts, not a beach litter photo.',
+    description:
+      'Country estimates of mismanaged plastic waste compiled and mapped by Our World in Data after Meijer et al. (2021) (Science Advances; open full text on PMC). Mismanaged means plastic that is not recycled, incinerated, or kept in sealed landfill — the fraction most likely to escape into the environment. Related OWID layers show plastic emitted to the ocean and the share of waste that is mismanaged.',
+    whyOnShelf:
+      'The Pollution shelf covers waste beside air and emissions. The PM2.5 and territorial CO₂ cards do not answer where plastic waste systems fail to contain material. This card is not a count of CO₂ produced and not a count of battle deaths.',
+    howToRead:
+      'A high mismanaged mass often tracks population and weak waste infrastructure more than character. Landlocked countries can mismanage plastic without large ocean emissions. Prefer the interactive OWID map and cite Meijer et al. via PMC. The preview is a Fix Planet overview, not a stock ocean-plastic image.',
+    caveats:
+      'A high mismanaged mass often tracks population and weak waste infrastructure, not a country’s character. Landlocked countries can mismanage plastic without large ocean emissions. This is not a CO₂ inventory, not PM2.5, and not a beach-litter photograph.',
+    licenseNote:
+      'The preview is a Fix Planet overview of mismanaged plastic waste — not an ocean-gyre stock photo and not Our World in Data’s marketing crop. Attribute Our World in Data (CC BY) after Meijer et al. 2021. The open paper is on PMC. Open the OWID map for the interactive layer.',
+    imageAlt:
+      'Fix Planet overview choropleth of mismanaged plastic waste: amber countries in a larger-mass orientation, other land left unclassed — not a beach photograph and not an OWID export',
+  },
+  'methane-emissions': {
+    title: 'Methane emissions',
+    hook: 'Country and grid maps of methane from fossil fuels, agriculture, and waste — a different greenhouse gas than the CO₂ cards.',
+    description:
+      'Methane (CH₄) emission inventories from the European Commission JRC EDGAR Community GHG database (public release EDGAR_2025_GHG), with a public country map on Our World in Data. EDGAR publishes sector and 0.1° grid products. UNEP IMEO Eye on Methane adds measurement-based plume alerts as a companion, not a replacement inventory. IEA Global Methane Tracker 2025 covers the energy sector in depth.',
+    whyOnShelf:
+      'The CO₂ cards on this shelf are carbon dioxide only. Methane is a separate short-lived greenhouse gas from oil and gas, coal, livestock, rice, and landfills. This is not PM2.5 and not the Climate TRACE card on the Innovations shelf.',
+    howToRead:
+      'Inventory totals are modelled activity × emission factors — not the same object as a satellite plume pin. Sector mix matters: a livestock-heavy country and a gas-flaring country can look similar on a total map for different reasons. Open OWID’s methane map and EDGAR’s GHG 2025 release notes; use methanedata.unep.org for measured events. The preview is a Fix Planet overview after the named sources.',
+    caveats:
+      'An inventory total is not a satellite plume pin. Livestock, rice, coal, oil and gas, and landfills can add up to a similar country total for different reasons. This is not territorial or consumption-based CO₂, and not a map that shows methane only as CO₂-equivalent.',
+    licenseNote:
+      'The preview is a Fix Planet overview of methane emissions — not a flare stock photo and not an EDGAR or OWID marketing crop. Attribute EDGAR (JRC) / Our World in Data. Eye on Methane (UNEP IMEO) is the measurement companion, not a replacement inventory. Open the OWID methane map for the interactive layer.',
+    imageAlt:
+      'Fix Planet overview choropleth of methane emissions: ochre countries in a larger-inventory orientation, other land left unclassed — not a CO₂ map and not a flare photograph',
   },
   'oil-gas-reserves': {
     title: 'Oil and gas around the world',
@@ -684,6 +820,190 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'Green choropleth of linguistic diversity by country: darker green where many languages share a state, paler where few do — not a language-family atlas',
   },
+  'endangered-languages-unesco': {
+    title: 'Endangered languages (UNESCO Atlas)',
+    hook: 'Languages UNESCO listed as vulnerable to extinct — an endangerment atlas, not a census of peoples and not a second family-tree map.',
+    description:
+      'UNESCO’s Atlas of the World’s Languages in Danger (3rd edn, Moseley ed., 2010; UNESDOC) lists about 2,500 languages with a degree of endangerment based on intergenerational transmission and related vitality factors. The print Atlas and its (archived) interactive companion were built to monitor linguistic diversity loss — scholarly and policy cartography, not a headcount of ethnic groups.',
+    whyOnShelf:
+      'The live Glottolog card shows relatedness; Ethnologue’s living-languages insight shows inventory size. This card answers a different question: which languages the UN cultural agency treated as endangered, and at what degree. It belongs next to family and count cards, not under Conflicts or Political.',
+    howToRead:
+      'Degrees (vulnerable, definitely/severely/critically endangered, extinct) are expert judgements from the Atlas framework, not court findings and not DNA. A pin or shade means “this language was coded endangered in that edition,” not “this land belongs to one people.” Prefer the UNESDOC edition as the citable source of record; do not invent a live interactive UNESCO URL that no longer resolves.',
+    caveats:
+      'Many speakers are multilingual; colonial borders cut across speech communities. Languages are not peoples and not states. A pin is not a claim about blood, loyalty, or territory.',
+    licenseNote:
+      'UNESCO / Moseley (ed.) 2010. The preview is a Fix Planet schematic of Atlas endangerment degrees (vulnerable → extinct) on a public-domain world outline — not a political ethnicity choropleth and not a second Glottolog family tree. Cite the UNESDOC edition.',
+    imageAlt:
+      'Schematic world map with pins colored by UNESCO Atlas endangerment degrees from vulnerable (yellow) to extinct (black) — not a census of peoples and not a language-family map',
+  },
+  'wals-language-structures': {
+    title: 'World Atlas of Language Structures',
+    hook: 'Structural features of languages — sound systems, word order, grammar — mapped from reference grammars. Typology, not ethnicity and not a family tree.',
+    description:
+      'WALS Online (World Atlas of Language Structures) is a Max Planck Institute for Evolutionary Anthropology publication: a large database of phonological, grammatical, and lexical properties coded from descriptive grammars by a team of authors. First book+CD 2005 (OUP); online from 2008; 2013 edition with ongoing corrections. The live Glottolog card on this shelf already points readers to WALS as the related scholarly atlas of structure.',
+    whyOnShelf:
+      'Glottolog answers “who is related to whom.” WALS answers “which structural features show up where.” Both are language science, not political ethnicity. Putting WALS on the Ethnic shelf keeps the promise that ethnolinguistic maps here are about speech systems.',
+    howToRead:
+      'Each feature chapter is a separate map (e.g. consonant inventory size, dominant word order). A color is a coding value for that feature in a sampled language, usually at a reference point — not a claim that everyone in the polygon speaks one tongue or shares one identity. Cite the specific WALS chapter you use; cite the general work only when drawing on many chapters. Dataset versioning is published via the WALS project (see GitHub CLDF release); the interactive atlas is https://wals.info/.',
+    caveats:
+      'A color is a coding value in a sampled language, not a people and not a state. Languages are not peoples and not states.',
+    licenseNote:
+      'WALS Online data are CC BY 4.0 (Dryer & Haspelmath / Max Planck Institute for Evolutionary Anthropology). The preview redraws feature 1A, Consonant Inventories (Maddieson), from the CLDF release — a structural typology map, not Glottolog families and not UNESCO endangerment pins.',
+    imageAlt:
+      'WALS Online map of consonant inventory size: colored points at language reference locations from small (blue) to large (red) — structural typology, not ethnicity and not a family tree',
+  },
+  'language-areas-asher-moseley': {
+    title: 'Language areas (Asher & Moseley)',
+    hook: 'Open polygons for language areas digitized from Asher & Moseley’s atlas and linked to Glottocodes — areas, not single Glottolog points, and still not a census of peoples.',
+    description:
+      'Asher & Moseley’s Atlas of the World’s Languages drew language distributions as printed maps. A 2025 Scientific Data paper (Ranacher et al.) georeferenced those sheets, digitized 6,992 distinct language-area polygons, and linked each polygon to a Glottocode. Data are released as a faithful replication plus enriched aggregates (GitHub Glottography / asher2007world). This closes a gap Glottolog itself states: Glottolog gives coordinates (points), not speaker-area polygons.',
+    whyOnShelf:
+      'Live Language families is Glottolog classification geography. This card is the complementary object: polygonal language areas from a named atlas, interoperable with Glottolog IDs. It is still linguistic geography — not Political admin-0 and not Ethnicity-as-race.',
+    howToRead:
+      'Treat polygons as “the atlas drew a speech-area here,” generalized for atlas scale. Historical vs contemporary sheets differ; colonial borders and multilingual regions cut across neat fills. Do not merge into World countries. Do not treat a Glottocode link as proof of sovereignty or blood. Prefer citing the Scientific Data article + the GitHub dataset together.',
+    caveats:
+      'Polygons are a generalized atlas drawing of a speech-area, not sovereignty and not blood. Languages are not peoples and not states.',
+    licenseNote:
+      'Language-area polygons from Glottography/asher2007world (CC BY 4.0), digitized from Asher & Moseley and linked to Glottocodes; cite Ranacher et al., Scientific Data 2025. The preview samples those areas from the traditional / time-of-contact sheets — not the Glottolog family choropleth and not a census of peoples.',
+    imageAlt:
+      'Sample language-area polygons digitized from Asher and Moseley’s atlas and linked to Glottocodes — areas, not Glottolog points, and not a census of peoples',
+  },
+  'endangered-languages-project': {
+    title: 'Endangered Languages Project catalogue',
+    hook: 'A living catalogue and map of endangered and Indigenous languages with community resources — another endangerment lens beside UNESCO’s 2010 Atlas, not a second Glottolog.',
+    description:
+      'The Endangered Languages Project (ELP) is a U.S.-based nonprofit that publishes a public catalogue and language map supporting revitalization of Indigenous and endangered languages. It emphasizes evidence-based vitality data, resource libraries, and community collaboration — a working catalogue, not a one-time print atlas.',
+    whyOnShelf:
+      'UNESCO’s 2010 Atlas is the citable historical UN edition. ELP is the current public catalogue/map many educators and communities actually open. Together with Glottolog (families) and WALS (structure), the shelf covers relatedness, structure, printed UN endangerment, and a living endangerment catalogue — without opening Religions or Political ethnicity.',
+    howToRead:
+      'Vitality labels and map points change as communities and researchers update entries. “Endangered” here is about language use and transmission, not about race or statehood. Cross-check important claims against UNESCO Atlas, Ethnologue EGIDS, or primary community sources. Do not caption ELP as “the UN map” (that is the UNESCO Atlas card).',
+    caveats:
+      '“Endangered” here is about language use and transmission, not about race or statehood. Languages are not peoples and not states. Do not caption ELP as the UN map.',
+    licenseNote:
+      'Endangered Languages Project. The preview is a Fix Planet schematic of a living catalogue map — distinct from UNESCO Atlas degrees and from Ethnologue EGIDS pins, and not a political map.',
+    imageAlt:
+      'Schematic catalogue map of endangered-language locations in Endangered Languages Project colors — vitality pins, not the UNESCO 2010 Atlas and not a second Glottolog',
+  },
+  'groundwater-whymap': {
+    title: 'Groundwater resources (WHYMAP)',
+    hook: 'Global aquifer environments and recharge potential from WHYMAP — a hydrogeology base map, not Aqueduct stress and not FAO national water accounts.',
+    description:
+      'The World-wide Hydrogeological Mapping and Assessment Programme (WHYMAP), led by Germany’s BGR with UNESCO, publishes the Groundwater Resources of the World map (1:25M / 1:40M). It classifies continental groundwater environments (large sedimentary basins, complex folded/faulted regions, local and shallow aquifers) and shades them by modelled recharge, with overlays for salinity, heavy abstraction, and selected groundwater-dependent wetlands.',
+    whyOnShelf:
+      'Live AQUASTAT is national water accounts; Aqueduct is demand-vs-supply stress; HydroBASINS is surface drainage. This card is the missing groundwater layer the AQUASTAT detail already pointed at (“IGRAC is a different product”). WHYMAP is the public global hydrogeology atlas for that gap.',
+    howToRead:
+      'Blue / green / brown families are hydrogeological environments, not country rankings and not water-war forecasts. Darker shades mean higher modelled recharge (WaterGAP, ~1961–1990), not “infinite wells.” Salinity hatching and over-abstraction marks are regional warnings, not court findings. Open the WHYMAP download page for PDF / shapefile / viewer; do not invent a live well-depth dashboard.',
+    caveats:
+      'A thumbnail is hydrogeology cartography, not a well log and not IGRAC GGIS. Blue / green / brown families are environments, not a ranking of countries. Do not read darker recharge as infinite wells or as a water-war forecast.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of WHYMAP aquifer-environment families (blue sedimentary basins / green complex / brown local-shallow), not BGR’s official map and not an Aqueduct stress choropleth. Open the WHYMAP Groundwater Resources of the World page for the PDF, shapefile, and viewer. Cite BGR and UNESCO / WHYMAP.',
+    imageAlt:
+      'World map with blue sedimentary-basin patches, green folded-complex belts, and brown local-shallow aquifers — a hydrogeology schematic, not water-stress',
+  },
+  'global-lakes-hydrolakes': {
+    title: 'Global lakes (HydroLAKES)',
+    hook: 'Shoreline polygons for ~1.4 million lakes and reservoirs ≥10 ha — a lake inventory map, not river basins and not a stress index.',
+    description:
+      'HydroLAKES (HydroSHEDS secondary product) compiles shoreline polygons for about 1.43 million lakes and reservoirs with surface area ≥10 ha worldwide, with attributes for area, shoreline length, and modelled mean depth / volume / residence time. Co-registered to HydroSHEDS river and basin IDs. Cite Messager et al., Nature Communications 2016.',
+    whyOnShelf:
+      'Live HydroBASINS answers “who drains where.” The shelf still has no dedicated lake card. HydroLAKES stays in the same public HydroSHEDS family already used for basins, without duplicating the Pfafstetter polygon story.',
+    howToRead:
+      'A polygon is a lake or reservoir shoreline in the dataset, not a wetland class map (see GLWD) and not water quality. Small ponds under 10 ha are out of scope. Volume and depth for most lakes are model estimates, not bathymetric surveys. Open hydrosheds.org/products/hydrolakes for downloads; the Nature Communications paper is the scholarly cite.',
+    caveats:
+      'A thumbnail is lake-district density, not the HydroLAKES shapefile and not a wetland class map. Ponds under 10 ha are out of scope. Volume and depth for most lakes are model estimates, not bathymetric surveys.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of well-known lake districts, not a HydroSHEDS product figure and not a second river-basin fill. HydroLAKES is distributed with the HydroSHEDS license (cite Messager et al. 2016). Open the HydroLAKES product page for downloads.',
+    imageAlt:
+      'World map with dark-blue lake and reservoir dots clustered in known lake districts — a shoreline inventory schematic, not river basins',
+  },
+  'lakes-wetlands-glwd': {
+    title: 'Lakes and wetlands (GLWD v2)',
+    hook: 'Global inland waters in 33 waterbody and wetland classes — marshes, peatlands, intermittent water and more, not a second HydroLAKES shoreline layer.',
+    description:
+      'The Global Lakes and Wetlands Database version 2 (GLWD v2) maps inland surface waters into 33 non-overlapping waterbody and wetland classes at 15-arc-second resolution (~500 m), representing up to ~18.2 million km² of wetlands for the contemporary ~1990–2020 window. Successor to GLWD v1 (Lehner & Döll 2004). Cite Lehner et al., Earth System Science Data 2025. CC BY 4.0.',
+    whyOnShelf:
+      'HydroLAKES = lake/reservoir shorelines ≥10 ha. GLWD v2 answers a broader question: wetland and inland-water classes (including intermittent and vegetated wetlands) that lakes alone miss. Same HydroSHEDS delivery path.',
+    howToRead:
+      'A class shade is “this cell’s dominant inland-water / wetland type in the harmonized map,” not a Ramsar legal listing and not water stress. Open water vs marsh vs peat vs rice-related classes are ecological cartography, not land titles. Prefer the HydroSHEDS product page + ESSD paper; Figshare holds the download (cite the DOI in the paper if the Figshare landing is flaky).',
+    caveats:
+      'A class shade is not a Ramsar legal listing and not water stress. Open water vs marsh vs peat vs intermittent classes are ecological cartography, not land titles. HydroLAKES remains the shoreline inventory; this card is the class map.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of inland-water classes (open water, marsh, peat, intermittent), not a HydroSHEDS product figure and not a second HydroLAKES shoreline layer. GLWD v2 is CC BY 4.0 (cite Lehner et al. 2025). Open the HydroSHEDS GLWD page for the product.',
+    imageAlt:
+      'World map with teal open-water, green marsh, brown peat, and gold intermittent-water patches — wetland classes, not lake shorelines',
+  },
+  'flood-hazard-aqueduct': {
+    title: 'Flood hazard (Aqueduct Floods)',
+    hook: 'Modelled riverine and coastal flood hazard and exposure — inundation risk, not the same as baseline water-stress on the Water stress card.',
+    description:
+      'WRI Aqueduct Floods maps riverine and coastal flood risks under a baseline and future projections (2030 / 2050 / 2080), with hazard maps of inundation depth by return period and tools for exposure and dike cost–benefit. Built with Deltares, VU Amsterdam IVM, Utrecht University, and PBL, released ~2020. Separate from the Aqueduct Water Risk Atlas used on the live Water stress card.',
+    whyOnShelf:
+      'The Water stress card already notes that Aqueduct models related risks including flood — but the shelf has no flood card. This fills that hole without replacing baseline stress, basins, or AQUASTAT.',
+    howToRead:
+      'Hazard layers are modelled inundation depths, often without existing flood protection in the hazard rasters — so a deep cell is not “this city will flood tomorrow.” Coastal vs riverine are different mechanisms; do not merge them into one “all water bad” story. Open the Aqueduct Floods tool and hazard-maps dataset pages; cite WRI.',
+    caveats:
+      'Hazard rasters often omit existing flood protection — a deep cell is not “this city will flood tomorrow.” Coastal and riverine are different mechanisms. This card is not the Aqueduct Water Risk Atlas baseline-stress layer.',
+    licenseNote:
+      'The preview is a Fix Planet schematic of riverine and coastal inundation districts, not WRI’s official Floods graphic and not a second baseline water-stress choropleth. Aqueduct data are typically CC BY with attribution to WRI. Open the Aqueduct Floods tool for the interactive maps.',
+    imageAlt:
+      'World map with medium-blue riverine flood corridors and bright cyan coastal inundation patches — flood hazard, not baseline water stress',
+  },
+  'intact-forest-landscapes': {
+    title: 'Intact Forest Landscapes',
+    hook: 'Potapov / IFL Mapping Team polygons for wilderness-scale forest mosaics (2000–2025 updates) — intactness, not Hansen annual loss pixels and not park boundaries.',
+    description:
+      'Intact Forest Landscapes (IFL) map seamless mosaics of forest and associated natural ecosystems with no remotely detected industrial human activity, large enough to sustain wide-ranging species. The IFL Mapping Team (UMD GLAD and partners) publishes global extents for 2000, 2013, 2016, 2020, and 2025 under CC BY 4.0. Cite Potapov et al., Science Advances 2017, for the method; use the 2025 layer for current extent.',
+    howToRead:
+      'A coloured patch is an IFL polygon at the map year — not FAO forest land use, not a plantation, and not a protected-area boundary. Loss between years is fragmentation or industrial intrusion into a former IFL, which can differ from Hansen tree-cover loss area totals.',
+    caveats:
+      'IFL is a minimum-size wilderness class (at least about 500 km² mosaic with no detected industrial infrastructure), not all primary forest and not a carbon stock. A forest can be primary yet fail IFL if roads or clearings fragment it. Boundaries move when new disturbance appears between update years. Detection depends on satellite evidence of infrastructure and clearing. Small-scale or under-canopy uses can be missed.',
+    licenseNote:
+      'Download GeoPackages from intactforests.org. An optional web viewer is the Greenpeace IFL map. Zenodo holds the 2000–2025 archive. The open method text is Potapov et al. 2017 on PMC. The preview is a Fix Planet schematic of large wilderness blocks, not the IFL polygons. Cite the IFL Mapping Team and Potapov et al.',
+    imageAlt:
+      'Dark world map with bright green wilderness blocks over the Amazon, the Congo basin, boreal Canada and Siberia, and New Guinea — intact forest landscapes, not annual canopy-loss pixels',
+  },
+  'mangrove-extent': {
+    title: 'Mangrove extent',
+    hook: 'Global Mangrove Watch annual extent (v4.1 series through 2025) — tidal forest shoreline, not inland Hansen loss and not WDPA parks.',
+    description:
+      'Global Mangrove Watch (GMW) maps estimated global mangrove forest extent and change. Version 4.1 provides an annual time series from 1985 through 2025 (JAXA Kyoto & Carbon, Aberystwyth University, and partners). The public platform shows habitat extent, net change, and alerts. Zenodo and JAXA host downloadable rasters and vectors.',
+    howToRead:
+      'A mangrove pixel is tidal forest in the GMW classifier for that year — not a coral reef, not a salt-marsh class map, and not a protected-area designation. Compare years for shoreline loss or gain. Do not mix GMW extent with Hansen tree-cover totals into one deforestation rate.',
+    caveats:
+      'Mangrove maps struggle at muddy edges, aquaculture ponds, and sparse fringes. Annual change is not the same as legal deforestation. Carbon and species layers are separate products on the same platform. Accuracy varies by country and turbidity. Restoration plantings may lag in the classifier. Treat alerts as screening, then check local imagery.',
+    licenseNote:
+      'National dashboards and coast projects use GMW layers. JAXA documents the v4.1 stack for GIS download. The preview is a Fix Planet schematic of known mangrove coasts, not a GMW raster. Open globalmangrovewatch.org for the map platform.',
+    imageAlt:
+      'World map with a teal fringe of tidal forest along tropical coasts — mangrove extent, not inland tree-cover loss',
+  },
+  'primary-humid-tropical-forests': {
+    title: 'Primary humid tropical forests',
+    hook: 'UMD GLAD 30 m map of primary humid tropical forest extent for 2001 (Turubanova et al.) — a primary baseline, not annual Hansen loss and not IFL wilderness size rules.',
+    description:
+      'UMD GLAD mapped primary humid tropical forest extent for year 2001 at 30 m from Landsat. Primary here means forest that had not been completely cleared in the Landsat record used for that baseline. Continental GeoTIFFs and an Earth Engine image collection are public. Method paper: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c).',
+    howToRead:
+      'Pixel value 1 is primary humid tropical forest in the 2001 map; 0 is other land or water. To discuss primary loss since 2001, combine this baseline with a tree-cover loss product. The 2001 layer alone is not a 2025 extent map.',
+    caveats:
+      'Humid tropics only — not boreal primary forest and not dry forest. Secondary forest after clearing is outside the 2001 primary class. Classification errors exist at edges and in complex mosaics. Plantations established before the baseline logic can confuse local readings. Read the GLAD notes.',
+    licenseNote:
+      'Open the GLAD dataset page and the Google Earth Engine catalog for the public layers. The preview is a Fix Planet schematic of the humid-tropical primary belt, not the 30 m GeoTIFF. Cite Turubanova et al. 2018 and UMD GLAD.',
+    imageAlt:
+      'World map with a saturated green belt of primary humid tropical forest across the Amazon, the Congo basin, and Southeast Asia on a 2001 baseline — not boreal forest and not annual canopy loss',
+  },
+  'forest-landscape-integrity': {
+    title: 'Forest Landscape Integrity Index',
+    hook: 'Grantham et al. continuous integrity score for the world’s forests (~2019) — anthropogenic modification and connectivity, not Hansen loss alone and not WDPA coverage.',
+    description:
+      'The Forest Landscape Integrity Index (FLII) combines forest extent, mapped human pressures, inferred associated pressures, and connectivity loss into a continuous 0–10 integrity score for forests worldwide (Grantham et al., Nature Communications 2020). Roughly 40% of remaining forest fell in the authors’ illustrative high-integrity band; only part of that sits inside protected areas.',
+    howToRead:
+      'High scores mean lower modelled anthropogenic modification at landscape scale — not untouched forever and not carbon density. Low scores can still be tree-covered. FLII is not Intact Forest Landscapes: a forest can score mid-integrity without qualifying as an IFL. Category cuts (low, medium, high) are illustrative; the continuous score is the product.',
+    caveats:
+      'FLII is a modelled index at about 300 m, circa the start of 2019, not a 2025 annual update in the original paper. It is not a substitute for field ecology or Indigenous land maps. Local weighting may differ from the global default. Hunting and understorey degradation are partly inferred from accessibility, not counted animal by animal.',
+    licenseNote:
+      'Read the open Nature Communications article and download rasters from the Forest Landscape Integrity download page. The preview is a Fix Planet schematic of integrity bands, not the authors’ raster. Cite Grantham et al. 2020.',
+    imageAlt:
+      'World map with a continuous forest-integrity scale: deep green remote blocks, gold mid-scores, and orange heavily modified standing forest — not a canopy-loss date',
+  },
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
@@ -725,6 +1045,15 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   const rest = getMaps(locale).filter(
     (item) => item.slug !== slug && item.category !== current.category,
   );
+  if (current.category === 'conflicts') {
+    // List every Conflicts sibling. Do not fill the strip with Ethnic or Religion cards.
+    return same;
+  }
+  if (current.category === 'forests') {
+    // Six Forests cards would otherwise be sliced to three. List every
+    // Forests sibling so each detail page reaches the rest of the shelf.
+    return same;
+  }
   if (current.category === 'political') {
     // Five political cards would otherwise crowd out the Conflicts siblings
     // that world-countries already cross-links. List every political sibling;
@@ -733,6 +1062,21 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
       const conflicts = rest.filter((item) => item.category === 'conflicts');
       return [...same, ...conflicts];
     }
+    return same;
+  }
+  if (current.category === 'ethnic') {
+    // Six ethnolinguistic cards. List every Ethnic sibling so
+    // language-families and living-languages-count link the four new cards.
+    return same;
+  }
+  if (current.category === 'water') {
+    // Seven Water cards would otherwise be sliced to three. List every
+    // Water sibling on each Water detail page.
+    return same;
+  }
+  if (current.category === 'pollution') {
+    // Six Pollution cards would otherwise be sliced to three. List every
+    // Pollution sibling so PM2.5 and territorial CO₂ reach the rest of the shelf.
     return same;
   }
   return [...same, ...rest].slice(0, limit);

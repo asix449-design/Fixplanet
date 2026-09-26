@@ -2,63 +2,63 @@
   {
     "slug": "solutions-hub-bg",
     "file": "solutions-hub-bg.jpg",
-    "artist": "Founder-supplied hub hero — laboratory reagent bottles on a dark bench",
+    "artist": "Founder-supplied hub hero \u2014 laboratory reagent bottles on a dark bench",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "drip-irrigation",
     "file": "drip-irrigation.jpg",
-    "artist": "Fix Planet generated documentary still — drip line on a young crop, not a named farm",
+    "artist": "Fix Planet generated documentary still \u2014 drip line on a young crop, not a named farm",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "constructed-wetlands",
     "file": "constructed-wetlands.jpg",
-    "artist": "Fix Planet generated documentary still — reed wetland and boardwalk, not a named project",
+    "artist": "Fix Planet generated documentary still \u2014 reed wetland and boardwalk, not a named project",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "sustainable-forestry",
     "file": "sustainable-forestry.jpg",
-    "artist": "Fix Planet generated documentary still — plantation track and log stack, not a named concession",
+    "artist": "Fix Planet generated documentary still \u2014 plantation track and log stack, not a named concession",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "anaerobic-digesters",
     "file": "anaerobic-digesters.jpg",
-    "artist": "Fix Planet generated documentary still — farm digester domes, not a named plant",
+    "artist": "Fix Planet generated documentary still \u2014 farm digester domes, not a named plant",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "cool-roofs",
     "file": "cool-roofs.jpg",
-    "artist": "Fix Planet generated documentary still — white urban roofs, not a named city programme",
+    "artist": "Fix Planet generated documentary still \u2014 white urban roofs, not a named city programme",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "lower-clinker-cement",
     "file": "lower-clinker-cement.jpg",
-    "artist": "Fix Planet generated documentary still — cement plant stockpiles, not a named works",
+    "artist": "Fix Planet generated documentary still \u2014 cement plant stockpiles, not a named works",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "river-interceptors",
     "file": "river-interceptors.jpg",
-    "artist": "Fix Planet generated documentary still — river boom holding litter, not a named interceptor",
+    "artist": "Fix Planet generated documentary still \u2014 river boom holding litter, not a named interceptor",
     "license": "Site asset",
     "sourceUrl": ""
   },
   {
     "slug": "solar-microgrids",
     "file": "solar-microgrids.jpg",
-    "artist": "Fix Planet generated documentary still — village solar array, not a named microgrid",
+    "artist": "Fix Planet generated documentary still \u2014 village solar array, not a named microgrid",
     "license": "Site asset",
     "sourceUrl": ""
   },
@@ -227,7 +227,7 @@
     "file": "fog-harvesting.jpg",
     "commonsTitle": "Atrapanieblas en Alto Patache.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atrapanieblas_en_Alto_Patache.jpg",
-    "artist": "Pontificia Universidad Católica de Chile",
+    "artist": "Pontificia Universidad Cat\u00f3lica de Chile",
     "license": "CC BY-SA 2.0"
   },
   {
@@ -245,6 +245,38 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photograph-picture-of-the-solar-still-combined-with-air-conditioning-system-in-side-view-Cairo-Egypt.jpg",
     "artist": "Z. S. Abdel-Rehim, A. Lashine",
     "license": "CC BY 4.0"
+  },
+  {
+    "slug": "non-revenue-water-reduction",
+    "file": "non-revenue-water-reduction.jpg",
+    "commonsTitle": "Recherche d'une fuite d'eau \u00e0 l'aide d'un Hydreka MicroCorr, Mont\u00e9e de la Paroche \u00e0 Saint-Maurice-de-Beynost (avril 2019).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Recherche_d%27une_fuite_d%27eau_%C3%A0_l%27aide_d%27un_Hydreka_MicroCorr,_Mont%C3%A9e_de_la_Paroche_%C3%A0_Saint-Maurice-de-Beynost_(avril_2019).jpg",
+    "artist": "Beno\u00eet Prieur",
+    "license": "CC0"
+  },
+  {
+    "slug": "uv-disinfection",
+    "file": "uv-disinfection.jpg",
+    "commonsTitle": "^New^ Sooke River Road UV Disinfection Plant - panoramio.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%5ENew%5E_Sooke_River_Road_UV_Disinfection_Plant_-_panoramio.jpg",
+    "artist": "Kiwibirdman",
+    "license": "CC BY 3.0"
+  },
+  {
+    "slug": "onsite-greywater-reuse",
+    "file": "onsite-greywater-reuse.jpg",
+    "commonsTitle": "Greywater treatement steps (3110373058).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greywater_treatement_steps_(3110373058).jpg",
+    "artist": "SuSanA Secretariat",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "sand-dams",
+    "file": "sand-dams.jpg",
+    "commonsTitle": "Sand dam illustration 3.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sand_dam_illustration_3.jpg",
+    "artist": "Iangrahamneal",
+    "license": "CC BY-SA 3.0"
   },
   {
     "slug": "agroforestry",
@@ -291,7 +323,7 @@
     "file": "mrf-optical-sorting.jpg",
     "commonsTitle": "Materials recovery facility.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Materials_recovery_facility.jpg",
-    "artist": "Michal Maňas",
+    "artist": "Michal Ma\u0148as",
     "license": "CC BY 3.0"
   },
   {
@@ -379,7 +411,7 @@
     "file": "building-renovation-epbd.jpg",
     "commonsTitle": "06 Thermal insulation retrofit works on a department store building with mineral wool and Aluthermo aluminium composite mat.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:06_Thermal_insulation_retrofit_works_on_a_department_store_building_with_mineral_wool_and_Aluthermo_aluminium_composite_mat.jpg",
-    "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+    "artist": "Marek \u015alusarczyk (Tupungato) Photo portfolio",
     "license": "CC BY 3.0"
   },
   {
@@ -395,7 +427,7 @@
     "file": "geopolymer-binders.jpg",
     "commonsTitle": "Samples of \"ground granulated blast furnace slag\" and \"granulated blast furnace slag\".jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samples_of_%22ground_granulated_blast_furnace_slag%22_and_%22granulated_blast_furnace_slag%22.jpg",
-    "artist": "Giám Định",
+    "artist": "Gi\u00e1m \u0110\u1ecbnh",
     "license": "CC BY-SA 4.0"
   },
   {
@@ -491,7 +523,7 @@
     "file": "geothermal.jpg",
     "commonsTitle": "NesjavellirPowerPlant edit2.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:NesjavellirPowerPlant_edit2.jpg",
-    "artist": "Gretar Ívarsson – Edited by Fir0002",
+    "artist": "Gretar \u00cdvarsson \u2013 Edited by Fir0002",
     "license": "Public domain"
   },
   {
@@ -533,5 +565,77 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biogas_plant_at_Great_Thorns_Farm_near_Swaffham_-_geograph.org.uk_-_5621243.jpg",
     "artist": "Colin Park",
     "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "reclaimed-asphalt-pavement",
+    "file": "reclaimed-asphalt-pavement.jpg",
+    "commonsTitle": "Wirtgen W 1500 (2009).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wirtgen_W_1500_(2009).jpg",
+    "artist": "Jochen Teufel",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "glass-cullet",
+    "file": "glass-cullet.jpg",
+    "commonsTitle": "Glas aus Aufbereitungsanlage bunt - glass cullet various (Alter Fritz).JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glas_aus_Aufbereitungsanlage_bunt_-_glass_cullet_various_(Alter_Fritz).JPG",
+    "artist": "Alter Fritz",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "mineral-wool-insulation",
+    "file": "mineral-wool-insulation.jpg",
+    "commonsTitle": "Arrangement Mineralwolle.jpeg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arrangement_Mineralwolle.jpeg",
+    "artist": "FMI Fachverband Mineralwolleindustrie",
+    "license": "CC BY-SA 3.0 de"
+  },
+  {
+    "slug": "recycled-copper",
+    "file": "recycled-copper.jpg",
+    "commonsTitle": "PunzoWorkshop07.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PunzoWorkshop07.JPG",
+    "artist": "AlejandroLinaresGarcia",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "marine-protected-areas",
+    "file": "marine-protected-areas.jpg",
+    "commonsTitle": "Florida Keys National Marine Sanctuary buoy mooring team.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Florida_Keys_National_Marine_Sanctuary_buoy_mooring_team.png",
+    "artist": "Matt McIntosh/National Oceanic and Atmospheric Administration",
+    "license": "Public domain"
+  },
+  {
+    "slug": "ballast-water-management",
+    "file": "ballast-water-management.jpg",
+    "commonsTitle": "Tugboat Boss discharging ballast water before departure.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tugboat_Boss_discharging_ballast_water_before_departure.jpg",
+    "artist": "W.carter",
+    "license": "CC0"
+  },
+  {
+    "slug": "shore-power",
+    "file": "shore-power.jpg",
+    "commonsTitle": "Liberty of the Seas cold-ironing in Copenhagen.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liberty_of_the_Seas_cold-ironing_in_Copenhagen.jpg",
+    "artist": "Back ache",
+    "license": "CC0"
+  },
+  {
+    "slug": "vessel-speed-reduction",
+    "file": "vessel-speed-reduction.jpg",
+    "commonsTitle": "SBNMS - right whale - NOAA Permit 633-1762-01 (27740030522).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBNMS_-_right_whale_-_NOAA_Permit_633-1762-01_(27740030522).jpg",
+    "artist": "National Marine Sanctuaries",
+    "license": "Public domain"
+  },
+  {
+    "slug": "integrated-multi-trophic-aquaculture",
+    "file": "integrated-multi-trophic-aquaculture.jpg",
+    "commonsTitle": "IMTA cultured mussels (Mytilus edulis) in the Bay of Fundy Canada.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMTA_cultured_mussels_(Mytilus_edulis)_in_the_Bay_of_Fundy_Canada.jpg",
+    "artist": "ReidGK",
+    "license": "Public domain"
   }
 ]

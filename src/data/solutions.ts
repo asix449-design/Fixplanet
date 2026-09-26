@@ -72,6 +72,8 @@ export type Solution = SolutionMeta & SolutionCopy;
  * `/solutions/{tag}` and `/solutions/all`. Water encyclopedia articles
  * live at `/solutions/water/{slug}` — the shelf stays `/solutions/water`.
  * Forests encyclopedia articles live at `/solutions/forests/{slug}`.
+ * Oceans stays hub-only: cards link to the primary source. Do not add
+ * `/solutions/oceans/{slug}` until every oceans slug has a detail page.
  */
 export const solutionMeta: SolutionMeta[] = [
   {
@@ -104,6 +106,7 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'membrane-desalination',
     tag: 'water',
+    // Shelf note: leave the Water Corporation (WA) desalination primary. No resolving IEA desalination hub to swap in.
     sources: [
       cite(
         'Water Corporation (WA) — Desalination',
@@ -253,12 +256,20 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'mass-timber',
     tag: 'materials',
-    sources: [cite('WoodWorks — mass timber', 'https://www.woodworks.org/')],
+    sources: [
+      cite(
+        'USDA Forest Service — Forest Products Laboratory',
+        'https://research.fs.usda.gov/fpl',
+      ),
+    ],
   },
   {
     slug: 'green-steel',
     tag: 'materials',
-    sources: [cite('HYBRIT', 'https://www.hybritdevelopment.se/')],
+    sources: [
+      cite('IEA — Iron and Steel', 'https://www.iea.org/energy-system/industry/iron-and-steel'),
+      cite('HYBRIT', 'https://www.hybritdevelopment.se/'),
+    ],
   },
   {
     slug: 'river-interceptors',
@@ -338,6 +349,7 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'fog-harvesting',
     tag: 'water',
+    // Shelf note: FogQuest primary stays. The organisation says its project pages are no longer kept current (soft/stale). Do not swap the URL.
     sources: [
       cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/'),
       cite(
@@ -375,6 +387,71 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'USGS Water Science School — Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
+      ),
+    ],
+  },
+  {
+    slug: 'non-revenue-water-reduction',
+    tag: 'water',
+    sources: [
+      cite(
+        'World Bank — Reducing water losses',
+        'https://www.worldbank.org/en/topic/water/brief/reducing-water-losses',
+      ),
+      cite('IWA — Water Loss', 'https://iwa-network.org/projects/water-loss/'),
+      cite(
+        'World Bank — The challenge of reducing non-revenue water',
+        'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/297191468176683069/the-challenge-of-reducing-non-revenue-water-nrw-in-developing-countries-how-the-private-sector-can-help-a-look-at-performance-based-service-contracting',
+      ),
+    ],
+  },
+  {
+    slug: 'uv-disinfection',
+    tag: 'water',
+    sources: [
+      cite(
+        'U.S. EPA — Ultraviolet Disinfection Guidance Manual (PDF)',
+        'https://www.epa.gov/system/files/documents/2022-10/ultraviolet-disinfection-guidance-manual-2006.pdf',
+      ),
+      cite(
+        'U.S. EPA — Long Term 2 Enhanced Surface Water Treatment Rule documents',
+        'https://www.epa.gov/dwreginfo/long-term-2-enhanced-surface-water-treatment-rule-documents',
+      ),
+    ],
+  },
+  {
+    slug: 'onsite-greywater-reuse',
+    tag: 'water',
+    sources: [
+      cite(
+        'U.S. EPA — Onsite Non-Potable Water Reuse Resources',
+        'https://www.epa.gov/waterreuse/onsite-non-potable-water-reuse-resources',
+      ),
+      cite(
+        'WHO — Guidelines for the safe use of wastewater, excreta and greywater',
+        'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta',
+      ),
+      cite(
+        'U.S. EPA — Basic information about water reuse',
+        'https://www.epa.gov/waterreuse/basic-information-about-water-reuse',
+      ),
+    ],
+  },
+  {
+    slug: 'sand-dams',
+    tag: 'water',
+    sources: [
+      cite(
+        'Practical Action — Sand dams',
+        'https://www.practicalaction.org/knowledge-centre/resources/sand-dams/',
+      ),
+      cite(
+        'IWMI GRIPP — Community sand dams in Kenya',
+        'https://gripp.iwmi.org/natural-infrastructure/water-storage/ensuring-resilience-through-community-sand-dams-in-kenya/',
+      ),
+      cite(
+        'Maddrell & Neal — Sand Dams: a Practical Guide (PDF)',
+        'https://www.samsamwater.com/library/Maddrell_and_Neal_2012_Sand_Dams_a_Practical_Guide_LR.pdf',
       ),
     ],
   },
@@ -513,8 +590,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Ireland EPA — national criteria for recycled aggregates',
-        'https://www.epa.ie/news-releases/news-releases-2023/epa-publishes-national-criteria-for-recycled-aggregates-.php',
+        'European Commission — Construction and demolition waste',
+        'https://environment.ec.europa.eu/topics/waste-and-recycling/construction-and-demolition-waste_en',
       ),
     ],
   },
@@ -523,8 +600,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Journal of the American Ceramic Society — geopolymers and alkali-activated materials',
-        'https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.19828',
+        'FHWA — TechBrief: Geopolymer Concrete',
+        'https://www.fhwa.dot.gov/pavement/concrete/pubs/hif10014/hif10014.pdf',
       ),
     ],
   },
@@ -543,8 +620,62 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Heidelberg Materials — DREAM CCUS',
-        'https://www.heidelbergmaterials.com/en/sustainability/we-decarbonize-the-construction-industry/ccus/dream',
+        'Global CCS Institute — Brevik CCS',
+        'https://www.globalccsinstitute.com/brevikccsfacility/',
+      ),
+      cite(
+        'IEA — CCUS',
+        'https://www.iea.org/energy-system/renewables-and-low-emissions/carbon-capture-utilisation-and-storage',
+      ),
+    ],
+  },
+  {
+    slug: 'reclaimed-asphalt-pavement',
+    tag: 'materials',
+    sources: [
+      cite('FHWA — Pavement Recycling', 'https://www.fhwa.dot.gov/pavement/recycling/'),
+      cite(
+        'FHWA — Resource Responsible Use of RAP (HIF-22-003)',
+        'https://www.fhwa.dot.gov/pavement/asphalt/pubs/hif22003.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'glass-cullet',
+    tag: 'materials',
+    sources: [
+      cite(
+        'U.S. EPA — Glass: Material-Specific Data',
+        'https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/glass-material-specific-data',
+      ),
+      cite(
+        'Close the Glass Loop — Performance of Packaging Glass Recycling in Europe (2024 report)',
+        'https://closetheglassloop.eu/performance-of-packaging-glass-recycling-in-europe-2024-report/',
+      ),
+    ],
+  },
+  {
+    slug: 'mineral-wool-insulation',
+    tag: 'materials',
+    sources: [
+      cite('EURIMA — Benefits of mineral wool', 'https://www.eurima.org/benefits-of-mineral-wool'),
+      cite(
+        'IEA — Building envelopes',
+        'https://www.iea.org/energy-system/buildings/building-envelopes',
+      ),
+    ],
+  },
+  {
+    slug: 'recycled-copper',
+    tag: 'materials',
+    sources: [
+      cite(
+        'World Resources Institute — Recycled copper and the energy transition',
+        'https://www.wri.org/insights/pivotal-role-recycled-copper-energy-transition',
+      ),
+      cite(
+        'USGS — Recycling statistics and information',
+        'https://www.usgs.gov/centers/national-minerals-information-center/recycling-statistics-and-information',
       ),
     ],
   },
@@ -585,6 +716,83 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'U.S. Fish and Wildlife Service — salt marsh keystone',
         'https://www.fws.gov/story/2024-02/salt-marsh-keystone-coastal-conservation',
+      ),
+    ],
+  },
+  {
+    slug: 'marine-protected-areas',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'Protected Planet — Marine protected areas',
+        'https://www.protectedplanet.net/en/thematic-areas/marine-protected-areas',
+      ),
+      cite(
+        'IUCN — Marine protected areas and climate change',
+        'https://www.iucn.org/resources/issues-brief/marine-protected-areas-and-climate-change',
+      ),
+      cite('Marine Protection Atlas', 'https://mpatlas.org/'),
+    ],
+  },
+  {
+    slug: 'ballast-water-management',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'IMO — Ballast Water Management',
+        'https://www.imo.org/en/OurWork/Environment/Pages/BallastWaterManagement.aspx',
+      ),
+      cite(
+        'IMO — BWM Hot Topics',
+        'https://www.imo.org/en/MediaCentre/HotTopics/Pages/BWM-Default.aspx',
+      ),
+    ],
+  },
+  {
+    slug: 'shore-power',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'EPA — Shore Power Technology Assessment at U.S. Ports',
+        'https://www.epa.gov/ports-initiative/shore-power-technology-assessment-us-ports',
+      ),
+      cite('EPA — Ports Initiative', 'https://www.epa.gov/ports-initiative'),
+      cite(
+        'IEA — International shipping',
+        'https://www.iea.org/energy-system/transport/international-shipping',
+      ),
+    ],
+  },
+  {
+    slug: 'vessel-speed-reduction',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'NOAA Office of National Marine Sanctuaries — Ship strikes',
+        'https://sanctuaries.noaa.gov/protect/shipstrike/',
+      ),
+      cite(
+        'NOAA Fisheries — Reducing vessel strikes to North Atlantic right whales',
+        'https://www.fisheries.noaa.gov/national/endangered-species-conservation/reducing-ship-strikes-north-atlantic-right-whales',
+      ),
+      cite(
+        'NOAA Fisheries — Understanding vessel strikes',
+        'https://www.fisheries.noaa.gov/insight/understanding-vessel-strikes',
+      ),
+    ],
+  },
+  {
+    slug: 'integrated-multi-trophic-aquaculture',
+    tag: 'oceans',
+    sources: [
+      cite('FAO — Aquaculture', 'https://www.fao.org/fishery/en/aquaculture'),
+      cite(
+        'FAO Fisheries and Aquaculture Technical Paper 529 — Integrated mariculture (PDF)',
+        'https://www.fao.org/3/i4626e/i4626e.pdf',
+      ),
+      cite(
+        'FAO — documents card cb7670en',
+        'https://www.fao.org/documents/card/en/c/cb7670en',
       ),
     ],
   },

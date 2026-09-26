@@ -1,0 +1,70 @@
+---
+import ForestAtlasCard from './ForestAtlasCard.astro';
+import type { ForestAtlasSlug } from '../data/forest-atlas';
+import { forestFrameSrc, forestPanelPath, type ForestPanel } from '../data/forests';
+import {
+  forestAtlasChrome,
+  getForestAtlas,
+  getForestsPage,
+  getMapsPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+
+interface Props {
+  currentAtlas?: ForestAtlasSlug;
+  currentPanel?: ForestPanel;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const forests = getForestsPage(locale);
+const maps = getMapsPage(locale);
+const chrome = forestAtlasChrome(locale);
+const atlas = getForestAtlas(locale).filter((item) => item.slug !== Astro.props.currentAtlas);
+const panelOrder = ['numbers', 'satellite', 'history', 'outlook'] as const;
+const panels = panelOrder.filter((key) => key !== Astro.props.currentPanel);
+
+const panelPreview: Partial<Record<ForestPanel, string>> = {
+  satellite: 'ndvi-2025.jpg',
+  history: 'recon-midholocene.png',
+  outlook: 'anthromes-12k-timeline.png',
+};
+---
+
+<section class="section section-cream" aria-labelledby="related-maps">
+  <div class="wrap">
+    <h2 id="related-maps">{maps.related}</h2>
+    <div class="card-grid">
+      {atlas.map((item) => <ForestAtlasCard map={item} />)}
+      {
+        panels.map((key) => {
+          const preview = panelPreview[key];
+          return (
+            <article class="map-card-wrap">
+              <a class="map-card" href={localizePath(forestPanelPath(key), locale)}>
+                {
+                  preview && (
+                    <div class="card-art map-card-art">
+                      <img
+                        src={forestFrameSrc(preview)}
+                        alt=""
+                        width="640"
+                        height="320"
+                        loading="lazy"
+                      />
+                    </div>
+                  )
+                }
+                <div class="card-body">
+                  <h3>{forests.panels[key]}</h3>
+                  <p class="wildlife-hook">{forests.tiles[key]}</p>
+                  <span class="card-cta">{chrome.readMore}</span>
+                </div>
+              </a>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

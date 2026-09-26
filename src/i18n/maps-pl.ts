@@ -29,6 +29,52 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa Our World in Data zgonów w konfliktach zbrojnych: blady ląd, Ukraina oraz kilka krajów Afryki i Azji na pomarańczowo i czerwono',
   },
+  'global-peace-index': {
+    title: 'Globalny indeks pokoju (GPI)',
+    hook: 'Ranking pokojowości krajów od Institute for Economics & Peace — złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
+    description: 'GPI (IEP / Vision of Humanity) porównuje kraje złożonym indeksem pokoju.',
+    whyOnShelf: 'Inny obiekt niż ACLED (zdarzenia) i UCDP (zgony bojowe).',
+    howToRead: 'Kolor — pasmo rankingu, nie wyrok sądu. Otwierać mapę i raport GPI.',
+    caveats: 'Złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: zieleń — pasmo bardziej pokojowe, czerwień — mniej pokojowe, szara ziemia bez klasy. To nie grafika Vision of Humanity i nie wyniki GPI.',
+  },
+  'fragile-states-index': {
+    title: 'Indeks państw kruchych (FSI)',
+    hook: 'Oceny kruchości państw według nacisku i spójności — ryzyko kruchości, nie ofiary bojowe i nie ranking pokoju.',
+    description: 'FSI (Fund for Peace) — porównawcza skala nacisku na państwo i spójności.',
+    whyOnShelf: 'Nie mapa zdarzeń ACLED i nie GPI.',
+    howToRead: 'Patrzeć methodology i global data.',
+    caveats: 'Wysoki wynik ≠ wyrok i ≠ prognoza wojny na jutro.',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: ciemniej — wyższa kruchość na tym schemacie, jaśniej — niższa, średni ton bez klasy. To nie mapa Fund for Peace i nie wyniki FSI.',
+  },
+  'military-expenditure-sipri': {
+    title: 'Wydatki wojskowe (SIPRI)',
+    hook: 'Porównywalne serie wydatków wojskowych krajów od SIPRI — budżety i obciążenie, nie pinezki zdarzeń i nie katalog uzbrojenia.',
+    description: 'Milex (SIPRI) — wydatki, nie «kto zaczął wojnę» i nie liczba ofiar UCDP.',
+    whyOnShelf: 'Nie mylić z bazą transferów broni SIPRI.',
+    howToRead:
+      'Interaktywny milex.sipri.org w sprawdzeniu nie odpowiedział — opierać się na sipri.org/databases/milex i fact sheet.',
+    caveats: 'Wysokie wydatki ≠ agresor.',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: ciemniejszy błękit — wyższy poziom wydatków wojskowych, jaśniejszy ląd bez klasy. To nie okładka rocznika SIPRI i nie liczby Milex.',
+  },
+  'conflict-barometer-hiik': {
+    title: 'Barometr konfliktów (HIIK)',
+    hook: 'Roczna intensywność konfliktów według krajów i regionów od HIIK — klasy intensywności, nie pinezki zdarzeń i nie sumy ofiar.',
+    description: 'Conflict Barometer (HIIK) koduje intensywność konfliktów politycznych za rok.',
+    whyOnShelf: 'Inny obiekt niż ACLED i UCDP.',
+    howToRead: 'Otwierać aktualny PDF i mapy HIIK.',
+    caveats:
+      'Klasa intensywności ≠ rezolucja ONZ. Zamiana na mapę misji pokojowych ONZ niepotrzebna — HIIK odpowiada 200.',
+    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    imageAlt:
+      'Przegląd Fix Planet: głęboka czerwień — orientacja natężenia wojny, pomarańcz — inna przemoc, szara ziemia bez klasy. To nie okładka HIIK i nie pinezki ACLED.',
+  },
   'language-families': {
     title: 'Rodziny językowe świata',
     hook: 'Lingwistyczna mapa spokrewnionych języków — przybliżenie geografii etnolingwistycznej, nie spis ludów.',
@@ -146,6 +192,66 @@ export const pl: Record<string, MapCopy> = {
       'Dane GCP publikuje się do ponownego użytku z cytatem. Wykresy OWID zwykle są CC BY. Linkujemy do ich mapy emisji zamiast ją przerysowywać.',
     imageAlt:
       'Choropleth Our World in Data terytorialnego CO₂: Chiny i Stany Zjednoczone najciemniejszą czerwienią, inne duże gospodarki średnią',
+  },
+  'consumption-co2-emissions': {
+    title: 'Emisje CO₂ według konsumpcji',
+    cardMeta: 'Global Carbon Project · OWID · z korektą handlu',
+    hook: 'Dwutlenek węgla przypisany do kraju konsumpcji dóbr i usług — inwentarz terytorialny skorygowany o handel, nie druga mapa produkcji.',
+    description:
+      'Emisje konsumpcyjne (trade-adjusted) CO₂ od GCP / OWID. Inny obiekt niż żywa mapa emisji terytorialnych.',
+    whyOnShelf: 'Inny obiekt niż żywa mapa emisji terytorialnych. Nie druga mapa produkcji.',
+    howToRead:
+      'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. Otwierać mapę OWID; podgląd — przegląd Fix Planet.',
+    caveats: 'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. To nie mapa produkcji i nie mapa PM2.5.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie oficjalna grafika OWID. Atrybucja: Global Carbon Project / Our World in Data (CC BY). Otwierać mapę OWID.',
+    imageAlt:
+      'Przegląd Fix Planet: choropleth emisji CO₂ według konsumpcji, nie mapa terytorialna i nie eksport OWID',
+  },
+  'nitrogen-dioxide-no2': {
+    title: 'Dwutlenek azotu (NO₂)',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    hook: 'Satelitarna kolumna dwutlenku azotu nad miastami, przemysłem i żeglugą — zanieczyszczenie ze spalania, nie to samo co masa PM2.5.',
+    description:
+      'NO₂ z TROPOMI / Sentinel-5P na portalu S5P-PAL (średnia ruchoma). Inny obiekt niż żywa mapa PM2.5.',
+    whyOnShelf: 'Inny obiekt niż żywa mapa PM2.5. Zanieczyszczenie ze spalania, nie masa cząstek.',
+    howToRead:
+      'Chmury zasłaniają powierzchnię; jasna kolumna ≠ roczny limit. Otwierać tropospheric NO₂; podgląd — przegląd Fix Planet.',
+    caveats: 'Chmury zasłaniają powierzchnię. Jasna kolumna ≠ roczny limit. To nie mapa PM2.5.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie kadr marketingowy ESA ani S5P-PAL. Atrybucja: Copernicus Sentinel-5P / TROPOMI.',
+    imageAlt:
+      'Przegląd Fix Planet: bursztynowe kolumny dwutlenku azotu nad miastami, przemysłem i żeglugą — nie choropleth PM2.5 i nie kadr ESA',
+  },
+  'mismanaged-plastic-waste': {
+    title: 'Niekontrolowane odpady plastikowe',
+    cardMeta: 'OWID · Meijer et al. 2021',
+    hook: 'Plastik niepoddany recyklingowi, spaleniu ani szczelnemu składowaniu — ryzyko wycieku do rzek i wybrzeży, nie zdjęcie śmieci na plaży.',
+    description:
+      'Mismanaged plastic waste według OWID (Meijer et al. 2021, tekst na PMC). Inny obiekt niż CO₂ i PM2.5.',
+    whyOnShelf: 'Inny obiekt niż CO₂ i PM2.5. To odpady, nie emisje i nie masa cząstek.',
+    howToRead:
+      'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Otwierać mapę OWID; podgląd — przegląd Fix Planet.',
+    caveats:
+      'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Nie zdjęcie śmieci na plaży.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie zdjęcie plastiku w oceanie i nie oficjalny kadr OWID. Atrybucja: Our World in Data (CC BY) według Meijer et al. 2021; tekst artykułu jest na PMC.',
+    imageAlt:
+      'Przegląd Fix Planet: choropleth niekontrolowanych odpadów plastikowych, nie zdjęcie plaży i nie eksport OWID',
+  },
+  'methane-emissions': {
+    title: 'Emisje metanu (CH₄)',
+    cardMeta: 'EDGAR JRC · OWID · CH₄',
+    hook: 'Krajowe i siatkowe mapy metanu z paliw kopalnych, rolnictwa i odpadów — inny gaz cieplarniany niż żywe mapy CO₂.',
+    description: 'CH₄ według EDGAR / OWID (+ IMEO dla zmierzonych pióropuszy). Nie CO₂ i nie PM2.5.',
+    whyOnShelf:
+      'Nie CO₂ i nie PM2.5. Inny gaz cieplarniany niż mapy dwutlenku węgla. To nie karta Climate TRACE z półki Innovations.',
+    howToRead:
+      'Inwentarz ≠ pinezka satelitarna. Otwierać mapę OWID i EDGAR_2025_GHG; podgląd — przegląd Fix Planet.',
+    caveats: 'Inwentarz ≠ pinezka satelitarna. Nie terytorialne i nie konsumpcyjne CO₂.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet, nie zdjęcie flary i nie oficjalny kadr EDGAR ani OWID. Atrybucja: EDGAR (JRC) / Our World in Data. IMEO Eye on Methane to zmierzone pióropusze, nie zamiennik inwentarza.',
+    imageAlt: 'Przegląd Fix Planet: choropleth emisji metanu, nie mapa CO₂ i nie zdjęcie flary',
   },
   'oil-gas-reserves': {
     title: 'Ropa i gaz na świecie',
@@ -353,5 +459,168 @@ export const pl: Record<string, MapCopy> = {
       'Natural Earth jest w domenie publicznej. Miniatura to liniowa warstwa granic lądowych Admin 0. Miniatura to kartografia, nie wyrok sądu.',
     imageAlt:
       'Mapa świata międzynarodowych granic lądowych ciemnymi liniami na jasnym lądzie — geometria liniowa, nie wypełnienie państw i nie limity morskie',
+  },
+  'endangered-languages-unesco': {
+    title: 'Języki zagrożone (Atlas UNESCO)',
+    hook: 'Języki, które UNESCO uznała za narażone lub ginące — atlas zagrożenia, nie spis ludów i nie druga mapa rodzin.',
+    description:
+      'Wydanie Moseley 2010 (~2500 języków, stopnie zagrożenia według przekazu międzypokoleniowego). Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych) — inne pytanie: kogo UNESCO uznała za zagrożone. Nie czytać jako mapy etnicznej ani wyroku sądu.',
+    whyOnShelf:
+      'Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych) — inne pytanie: kogo UNESCO uznała za zagrożone.',
+    howToRead: 'Nie czytać jako mapy etnicznej ani wyroku sądu.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Nie czytać jako mapy etnicznej ani wyroku sądu.',
+    licenseNote:
+      'UNESCO / Moseley (red.) 2010. Podgląd to schemat stopni zagrożenia Atlasu (narażony → wymarły) na konturze świata w domenie publicznej — nie choropleth etniczny i nie drugie drzewo rodzin Glottolog. Cytujcie wydanie UNESDOC.',
+    imageAlt:
+      'Schematyczna mapa świata z pinezkami stopni zagrożenia Atlasu UNESCO od narażonego (żółty) do wymarłego (czarny) — nie spis ludów i nie mapa rodzin językowych',
+  },
+  'wals-language-structures': {
+    title: 'Światowy atlas struktur językowych (WALS)',
+    hook: 'Cechy strukturalne języków — fonetyka, szyk wyrazów, gramatyka — z gramatyk opisowych. Typologia, nie etniczność i nie drzewo rodzin.',
+    description:
+      'Baza WALS Online (MPI EVA). Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują. Kolor na mapie cechy — kod w próbie, nie «naród» i nie państwo.',
+    whyOnShelf: 'Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują.',
+    howToRead: 'Kolor na mapie cechy — kod w próbie, nie «naród» i nie państwo.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Kolor — kod w próbie, nie «naród» i nie państwo.',
+    licenseNote:
+      'Dane WALS Online są CC BY 4.0 (Dryer & Haspelmath / Instytut Maxa Plancka). Podgląd przerysowuje cechę 1A, zasób spółgłosek (Maddieson), z wydania CLDF — mapa typologii strukturalnej, nie rodziny Glottolog i nie pinezki zagrożenia UNESCO.',
+    imageAlt:
+      'Mapa WALS Online rozmiaru inwentarza spółgłoskowego: kolorowe punkty w miejscach odniesienia języków od małego (niebieski) do dużego (czerwony) — typologia, nie etniczność i nie drzewo rodzin',
+  },
+  'language-areas-asher-moseley': {
+    title: 'Obszary językowe (Asher & Moseley)',
+    hook: 'Otwarte poligony obszarów z atlasu Asher & Moseley, powiązane z Glottocode — powierzchnie, nie punkty Glottolog, i nadal nie spis ludów.',
+    description: '~6992 poligonów; punkty Glottolog ≠ obszary. Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
+    whyOnShelf: 'Punkty Glottolog ≠ obszary.',
+    howToRead: 'Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
+    caveats: 'Języki ≠ ludy ≠ państwa. Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
+    licenseNote:
+      'Poligony obszarów z Glottography/asher2007world (CC BY 4.0), zdigitalizowane z Asher & Moseley i powiązane z Glottocode; cytujcie Ranacher et al., Scientific Data 2025. Podgląd to próbka powierzchni z arkuszy tradycyjnych / czasu kontaktu — nie choropleth rodzin Glottolog i nie spis ludów.',
+    imageAlt:
+      'Próbka poligonów obszarów językowych zdigitalizowanych z atlasu Asher & Moseley i powiązanych z Glottocode — powierzchnie, nie punkty Glottolog i nie spis ludów',
+  },
+  'endangered-languages-project': {
+    title: 'Katalog Endangered Languages Project',
+    hook: 'Żywy katalog i mapa języków zagrożonych z zasobami dla społeczności — inne spojrzenie na zagrożenie obok Atlasu UNESCO 2010, nie drugi Glottolog.',
+    description:
+      'Nonprofit ELP: katalog, mapa, witalność, biblioteka zasobów. Nie mylić z wydaniem UNESCO 2010 i nie czytać jako mapy etnicznej/politycznej.',
+    whyOnShelf: 'Nie mylić z wydaniem UNESCO 2010.',
+    howToRead: 'Nie mylić z wydaniem UNESCO 2010 i nie czytać jako mapy etnicznej/politycznej.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Nie czytać jako mapy etnicznej/politycznej.',
+    licenseNote:
+      'Endangered Languages Project. Podgląd to schemat żywego katalogu — inny niż stopnie Atlasu UNESCO i pinezki Ethnologue EGIDS, i nie mapa polityczna.',
+    imageAlt:
+      'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project — pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
+  },
+  'groundwater-whymap': {
+    title: 'Zasoby wód podziemnych (WHYMAP)',
+    hook: 'Globalne środowiska hydrogeologiczne i potencjał zasilania z WHYMAP — mapa bazowa wód podziemnych, nie stres Aqueduct i nie krajowe rachunki FAO.',
+    description:
+      'Mapa Groundwater Resources of the World (BGR + UNESCO). Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres). Kolory = typy środowisk i zasilanie, nie ranking krajów.',
+    whyOnShelf: 'Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres).',
+    howToRead: 'Kolory = typy środowisk i zasilanie, nie ranking krajów.',
+    caveats:
+      'Kolory = typy środowisk i zasilanie, nie ranking krajów. Nie AQUASTAT i nie Aqueduct. Nie IGRAC GGIS.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet rodzin środowisk hydrogeologicznych WHYMAP (niebieskie baseny osadowe / zielone złożone / brązowe lokalne-płytkie), nie oficjalna mapa BGR i nie choropleth stresu Aqueduct. PDF i shapefile są na stronie WHYMAP. Cytujcie BGR i UNESCO / WHYMAP.',
+    imageAlt:
+      'Mapa świata z niebieskimi plamami basenów osadowych, zielonymi pasami fałdowymi i brązowymi lokalnymi płytkimi warstwami wodonośnymi — schemat hydrogeologii, nie stres wodny',
+  },
+  'global-lakes-hydrolakes': {
+    title: 'Globalne jeziora (HydroLAKES)',
+    hook: 'Poligony brzegów ~1,4 mln jezior i zbiorników ≥10 ha — inwentarz jezior, nie zlewnie i nie indeks stresu.',
+    description:
+      'Ta sama rodzina HydroSHEDS co HydroBASINS, ale obiekt = brzeg jeziora/zbiornika. Nie mapa mokradeł (GLWD) i nie jakość wody.',
+    whyOnShelf: 'Ta sama rodzina HydroSHEDS co HydroBASINS, ale obiekt = brzeg jeziora/zbiornika.',
+    howToRead: 'Nie mapa mokradeł (GLWD) i nie jakość wody.',
+    caveats:
+      'Nie mapa mokradeł (GLWD) i nie jakość wody. Objętość i głębokość dla większości to oceny modelowe.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet znanych okręgów jeziornych, nie figura produktowa HydroSHEDS i nie drugie wypełnienie zlewni. Pobranie jest na stronie HydroLAKES. Cytujcie Messager et al. 2016.',
+    imageAlt:
+      'Mapa świata z ciemnoniebieskimi punktami jezior i zbiorników w znanych okręgach jeziornych — inwentarz brzegów, nie zlewnie rzeczne',
+  },
+  'lakes-wetlands-glwd': {
+    title: 'Jeziora i mokradła (GLWD v2)',
+    hook: 'Śródlądowe wody świata w 33 klasach zbiorników i mokradeł — bagna, torfowiska, wody okresowe i więcej, nie druga warstwa brzegów HydroLAKES.',
+    description:
+      'GLWD v2 (~15″, do ~18,2 mln km²). HydroLAKES = brzegi ≥10 ha; GLWD = szersze klasy mokradeł. Nie lista Ramsar i nie stres wodny.',
+    whyOnShelf: 'HydroLAKES = brzegi ≥10 ha; GLWD = szersze klasy mokradeł.',
+    howToRead: 'Nie lista Ramsar i nie stres wodny.',
+    caveats: 'Nie lista Ramsar i nie stres wodny. HydroLAKES zostaje inwentarzem brzegów.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet klas wód śródlądowych (woda otwarta, bagno, torf, woda okresowa), nie figura produktowa HydroSHEDS i nie druga warstwa brzegów HydroLAKES. GLWD v2 jest CC BY 4.0 (cytujcie Lehner et al. 2025). Strona produktu jest na HydroSHEDS.',
+    imageAlt:
+      'Mapa świata z turkusową wodą otwartą, zielonymi bagnami, brązowym torfem i złotą wodą okresową — klasy mokradeł, nie brzegi jezior',
+  },
+  'flood-hazard-aqueduct': {
+    title: 'Zagrożenie powodziowe (Aqueduct Floods)',
+    hook: 'Modelowane zagrożenie i ekspozycja powodzi rzecznych i przybrzeżnych — ryzyko zalania, nie ten sam bazowy stres wodny co na karcie Water stress.',
+    description:
+      'Osobne narzędzie WRI od Water Risk Atlas. Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
+    whyOnShelf: 'Osobne narzędzie WRI od Water Risk Atlas.',
+    howToRead: 'Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
+    caveats:
+      'Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze. Nie bazowy stres wodny Aqueduct Water Risk Atlas.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet rejonów zalania rzecznego i przybrzeżnego, nie oficjalna grafika WRI Floods i nie drugi choropleth bazowego stresu wodnego. Dane Aqueduct zwykle są CC BY z przypisaniem WRI. Interaktywne mapy są w narzędziu Aqueduct Floods.',
+    imageAlt:
+      'Mapa świata ze średnioniebieskimi korytarzami powodzi rzecznymi i jasnym cyjanem plam przybrzeżnych — zagrożenie powodziowe, nie bazowy stres wodny',
+  },
+  'intact-forest-landscapes': {
+    title: 'Nienaruszone krajobrazy leśne (IFL)',
+    hook: 'Poligony Potapov / IFL Mapping Team (aktualizacje 2000–2025) — integralność dzikiej mozaiki leśnej, nie roczne piksele Hansena i nie granice parków.',
+    description:
+      'Nienaruszone krajobrazy leśne (IFL) to duże mozaiki lasu i powiązanych ekosystemów bez wykrytej przemysłowej infrastruktury. Zespół IFL (UMD GLAD i partnerzy) publikuje zasięgi globalne na lata 2000, 2013, 2016, 2020 i 2025 na CC BY 4.0. Metoda: Potapov et al., Science Advances 2017; aktualny zasięg to warstwa 2025. To nie FAO land use i nie WDPA.',
+    howToRead:
+      'Kolorowa łatka to poligon IFL w roku mapy — nie plantacja i nie granica parku. Ubytek między latami to fragmentacja albo przemysłowe wejście w dawny IFL; może różnić się od sum utraty koron Hansena.',
+    caveats:
+      'IFL to klasa dzikiej mozaiki o minimalnej wielkości (około 500 km² bez wykrytej infrastruktury przemysłowej), nie cały las pierwotny i nie zapas węgla. Las może być pierwotny i nadal nie być IFL, jeśli drogi albo zręby go tną. Granice przesuwają się między latami aktualizacji. Drobne albo podokapowe użytkowanie satelita może pominąć.',
+    licenseNote:
+      'GeoPackage są na intactforests.org. Opcjonalna przeglądarka to mapa IFL Greenpeace. Archiwum 2000–2025 jest na Zenodo. Otwarty tekst metody to Potapov et al. 2017 w PMC. Podgląd to schemat Fix Planet dużych dzikich bloków, nie poligony IFL.',
+    imageAlt:
+      'Ciemna mapa świata z jasnozielonymi blokami dzikiego lasu w Amazonii, Kotlinie Konga, borealnej Kanadzie i Syberii oraz na Nowej Gwinei — nienaruszone krajobrazy, nie roczne piksele utraty koron',
+  },
+  'mangrove-extent': {
+    title: 'Zasięg namorzyn',
+    hook: 'Global Mangrove Watch — roczny zasięg namorzyn (seria v4.1 do 2025) — las pływowy, nie śródlądowy Hansen i nie parki WDPA.',
+    description:
+      'Global Mangrove Watch (GMW) mapuje szacowany zasięg lasów namorzynowych i jego zmianę. Wersja 4.1 to szereg roczny od 1985 do 2025 (JAXA Kyoto & Carbon, Aberystwyth University i partnerzy). Platforma pokazuje zasięg, zmianę netto i alerty; rastry i wektory są na Zenodo i w JAXA. To nie rafy i nie obszary chronione.',
+    howToRead:
+      'Piksel namorzynu to las pływowy klasyfikatora GMW w danym roku — nie rafa koralowa, nie mapa solnisk i nie status ochrony. Porównuj lata w GMW; nie mieszaj z sumami Hansena.',
+    caveats:
+      'Mapy namorzyn słabiej radzą sobie na mulistych krawędziach, stawach akwakultury i rzadkiej frędzli. Zmiana roczna to nie to samo co prawne wylesienie. Węgiel i gatunki to osobne produkty tej samej platformy. Dokładność zależy od kraju i zmętnienia. Nasadzenia odtworzeniowe mogą spóźniać się w klasyfikatorze. Alerty to przesiew, potem lokalny obraz.',
+    licenseNote:
+      'Warstw GMW używają krajowe panele i projekty wybrzeża. Stos v4.1 do GIS opisuje JAXA. Podgląd to schemat Fix Planet znanych wybrzeży namorzynowych, nie raster GMW. Mapa jest na globalmangrovewatch.org.',
+    imageAlt:
+      'Mapa świata z turkusową frędzlą lasu pływowego wzdłuż tropikalnych wybrzeży — zasięg namorzyn, nie śródlądowa utrata koron',
+  },
+  'primary-humid-tropical-forests': {
+    title: 'Pierwotne wilgotne lasy tropikalne',
+    hook: 'Mapa UMD GLAD 30 m — zasięg pierwotnych wilgotnych lasów tropikalnych na 2001 (Turubanova et al.) — baza pierwotności, nie roczne straty Hansena i nie reguły wielkości IFL.',
+    description:
+      'Warstwa bazowa 2001. UMD GLAD zmapował pierwotny wilgotny las tropikalny w 30 m z Landsata: las, który nie został całkowicie wycięty w zapisie użytym do tej bazy. Kontynentalne GeoTIFF-y i kolekcja Earth Engine są publiczne. Metoda: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c). Tylko wilgotne tropiki.',
+    howToRead:
+      'Piksel 1 to pierwotny wilgotny las tropikalny na mapie 2001; 0 to inny ląd albo woda. Straty po 2001 zwykle czyta się z Hansen / Global Forest Watch. Sama warstwa 2001 nie jest mapą zasięgu 2025.',
+    caveats:
+      'Tylko wilgotne tropiki — nie pierwotny las borealny i nie las suchy. Las wtórny po wycięciu jest poza klasą pierwotną 2001. Błędy klasyfikacji bywają na krawędziach i w złożonej mozaice. Plantacje założone przed logiką bazy mogą mylić lokalny odczyt — czytaj noty GLAD.',
+    licenseNote:
+      'Warstwy są na stronie zbioru GLAD i w katalogu Google Earth Engine. Podgląd to schemat Fix Planet pasa wilgotnych tropików, nie GeoTIFF 30 m. Cytuj Turubanova et al. 2018 i UMD GLAD.',
+    imageAlt:
+      'Mapa świata z nasyconym zielonym pasem pierwotnego wilgotnego lasu tropikalnego w Amazonii, Kongu i Azji Południowo-Wschodniej na bazie 2001 — nie las borealny i nie roczna utrata koron',
+  },
+  'forest-landscape-integrity': {
+    title: 'Wskaźnik integralności krajobrazów leśnych (FLII)',
+    hook: 'Ciągła ocena integralności lasów Grantham et al. (~2019) — antropogeniczna modyfikacja i łączność, nie sam Hansen i nie pokrycie WDPA.',
+    description:
+      'Wskaźnik integralności krajobrazów leśnych (FLII) składa zasięg lasu, zmapowane presje człowieka, wnioskowane presje towarzyszące i utratę łączności w ciągłą ocenę 0–10 dla lasów świata (Grantham et al., Nature Communications 2020). Około 40% pozostałych lasów wpadło w ilustracyjne pasmo wysokiej integralności; tylko część tego pasma leży w obszarach chronionych.',
+    howToRead:
+      'Wysoki wynik to niższa modelowana antropogeniczna modyfikacja w skali krajobrazu — nie „nietknięte na zawsze” i nie gęstość węgla. Niski wynik może nadal być pod koroną. FLII to nie IFL i nie data utraty koron. Cięcia niska / średnia / wysoka są ilustracją; produktem jest wynik ciągły.',
+    caveats:
+      'FLII to indeks modelowy około 300 m, circa początek 2019, nie roczna aktualizacja 2025 w oryginalnym artykule. To nie zastępstwo ekologii terenowej ani mapa ziem rdzennych. Lokalne wagi mogą różnić się od globalnego domyślnego. Polowania i degradację podszytu częściowo wnioskuje się z dostępności.',
+    licenseNote:
+      'Artykuł jest w Nature Communications. Rastry są na stronie pobierania Forest Landscape Integrity. Podgląd to schemat Fix Planet pasm integralności, nie raster autorów. Cytuj Grantham et al. 2020.',
+    imageAlt:
+      'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las — nie data utraty koron',
   },
 };

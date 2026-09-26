@@ -307,6 +307,57 @@ const candidates = {
     'Kleve Knipweg Biogas PM220618 01.jpg',
     'Biogas plant at Crouchland Farm - geograph.org.uk - 2164888.jpg',
   ],
+  'non-revenue-water-reduction': [
+    "Recherche d'une fuite d'eau à l'aide d'un Hydreka MicroCorr, Montée de la Paroche à Saint-Maurice-de-Beynost (avril 2019).jpg",
+  ],
+  'uv-disinfection': [
+    '^New^ Sooke River Road UV Disinfection Plant - panoramio.jpg',
+  ],
+  'onsite-greywater-reuse': [
+    'Greywater treatement steps (3110373058).jpg',
+  ],
+  'sand-dams': [
+    'Sand dam illustration 3.jpg',
+  ],
+  'reclaimed-asphalt-pavement': [
+    'Wirtgen W 1500 (2009).jpg',
+    'BOMAG MP 1300 Asphalt Milling Machine.jpg',
+    'SAKAI ER551F asphalt milling machine, in Tokyo.jpg',
+  ],
+  'glass-cullet': [
+    'Glas aus Aufbereitungsanlage bunt - glass cullet various (Alter Fritz).JPG',
+    'Glas aus Aufbereitungsanlage weiß - glass cullet white (Alter Fritz).JPG',
+    'Glas aus Aufbereitungsanlage grün - glass cullet green (Alter Fritz).JPG',
+  ],
+  'mineral-wool-insulation': [
+    'Arrangement Mineralwolle.jpeg',
+    'Moscow, Lefortovsky Val 24, pile of mineral wool mats (31136798850).jpg',
+    'Rockwool close up 1.jpg',
+  ],
+  'recycled-copper': [
+    'PunzoWorkshop07.JPG',
+    'Residuo electronico colombia cobre reciclaje metales 2.jpg',
+    'Coil from washing machine.JPG',
+  ],
+  'marine-protected-areas': [
+    'Florida Keys National Marine Sanctuary buoy mooring team.png',
+    'Scientist counts fish in Papahānaumokuākea Marine National Monument 2006.png',
+  ],
+  'ballast-water-management': [
+    'Tugboat Boss discharging ballast water before departure.jpg',
+    'Ballast pumps electric motors.jpg',
+  ],
+  'shore-power': [
+    'Liberty of the Seas cold-ironing in Copenhagen.jpg',
+    '2019-10-03 - Landstromanlage Port of Kiel.jpg',
+  ],
+  'vessel-speed-reduction': [
+    'SBNMS - right whale - NOAA Permit 633-1762-01 (27740030522).jpg',
+    'SBNMS North Atlantic right whale (50040735308).jpg',
+  ],
+  'integrated-multi-trophic-aquaculture': [
+    'IMTA cultured mussels (Mytilus edulis) in the Bay of Fundy Canada.jpg',
+  ],
 };
 
 async function commonsInfo(title) {

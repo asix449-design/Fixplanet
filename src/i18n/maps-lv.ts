@@ -29,6 +29,51 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Our World in Data karte par nāvēm bruņotos konfliktos: bāla zeme, Ukraina un vairākas Āfrikas un Āzijas valstis oranžā un sarkanā',
   },
+  'global-peace-index': {
+    title: 'Globālais miera indekss (GPI)',
+    hook: 'Valstu miera rangs no Institute for Economics & Peace — saliktais rādītājs, ne ACLED notikumu punkti un ne verdikts «kuram taisnība».',
+    description: 'GPI (IEP / Vision of Humanity) salīdzina valstis ar salikto miera indeksu.',
+    whyOnShelf: 'Cits objekts nekā ACLED (notikumi) un UCDP (kaujas zaudējumi).',
+    howToRead: 'Krāsa — ranga josla, ne tiesas spriedums. Atvērt GPI karti un ziņojumu.',
+    caveats: 'Saliktais rādītājs, ne ACLED notikumu punkti un ne verdikts «kuram taisnība».',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: zaļš — mierīgāka josla, sarkans — mazāk mierīga, pelēka zeme bez klases. Tā nav Vision of Humanity grafika un ne GPI balles.',
+  },
+  'fragile-states-index': {
+    title: 'Trauslo valstu indekss (FSI)',
+    hook: 'Valstu trausluma vērtējumi pēc spiediena un kohēzijas — trausluma risks, ne kaujas zaudējumi un ne miera rangs.',
+    description: 'FSI (Fund for Peace) — salīdzinoša skala par spiedienu uz valsti un kohēziju.',
+    whyOnShelf: 'Ne ACLED notikumu karte un ne GPI.',
+    howToRead: 'Skatīt methodology un global data.',
+    caveats: 'Augsts rezultāts ≠ spriedums un ≠ kara prognoze uz rītdienu.',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: tumšāk — augstāks trauslums šajā shēmā, gaišāk — zemāks, vidējs tonis bez klases. Tā nav Fund for Peace karte un ne FSI balles.',
+  },
+  'military-expenditure-sipri': {
+    title: 'Militārie izdevumi (SIPRI)',
+    hook: 'Salīdzināmas valstu militāro izdevumu sērijas no SIPRI — budžeti un slodze, ne notikumu punkti un ne ieroču katalogs.',
+    description: 'Milex (SIPRI) — izdevumi, ne «kurš sāka karu» un ne UCDP zaudējumu skaits.',
+    whyOnShelf: 'Nejauc ar SIPRI ieroču piegāžu bāzi.',
+    howToRead:
+      'Interaktīvais milex.sipri.org pārbaudē neatbildēja — balstīties uz sipri.org/databases/milex un fact sheet.',
+    caveats: 'Augsti tēriņi ≠ agresors.',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: tumšāks zils — augstāks militāro izdevumu līmenis, gaišāka zeme bez klases. Tā nav SIPRI gadagrāmatas vāks un ne Milex skaitļi.',
+  },
+  'conflict-barometer-hiik': {
+    title: 'Konfliktu barometrs (HIIK)',
+    hook: 'Ikgadēja konfliktu intensitāte pa valstīm un reģioniem no HIIK — intensitātes klases, ne notikumu punkti un ne zaudējumu summas.',
+    description: 'Conflict Barometer (HIIK) kodē politisko konfliktu intensitāti gada griezumā.',
+    whyOnShelf: 'Cits objekts nekā ACLED un UCDP.',
+    howToRead: 'Atvērt aktuālo PDF un HIIK kartes.',
+    caveats: 'Intensitātes klase ≠ ANO rezolūcija. ANO miera uzturēšanas karte nav vajadzīga — HIIK atbild 200.',
+    licenseNote: 'Priekšskatījums — Fix Planet pārskats, ne izdevēja oficiālā grafika.',
+    imageAlt:
+      'Fix Planet pārskats: dziļi sarkans — kara intensitātes orientācija, oranžs — cita vardarbība, pelēka zeme bez klases. Tā nav HIIK vāks un ne ACLED punkti.',
+  },
   'language-families': {
     title: 'Pasaules valodu saimes',
     hook: 'Lingvistiska radniecīgu valodu karte — etnolingvistiskās ģeogrāfijas tuvinājums, ne tautu tautasskaitīšana.',
@@ -146,6 +191,66 @@ export const lv: Record<string, MapCopy> = {
       'GCP datus publicē atkārtotai lietošanai ar atsauci. OWID grafiki parasti ir CC BY. Mēs saistām uz viņu emisiju karti, nevis to pārzīmējam.',
     imageAlt:
       'Our World in Data horoplēts par teritoriālo CO₂: Ķīna un ASV tumšākajā sarkanajā, citas lielās ekonomikas vidēji sarkanā',
+  },
+  'consumption-co2-emissions': {
+    title: 'Patēriņa CO₂ emisijas',
+    cardMeta: 'Global Carbon Project · OWID · ar tirdzniecības korekciju',
+    hook: 'Oglekļa dioksīds, attiecināts uz preču un pakalpojumu patēriņa valsti — teritoriālais uzskaitījums ar tirdzniecības korekciju, ne otra ražošanas karte.',
+    description:
+      'Patēriņa (trade-adjusted) CO₂ emisijas no GCP / OWID. Cits objekts nekā dzīvā teritoriālo emisiju karte.',
+    whyOnShelf: 'Cits objekts nekā dzīvā teritoriālo emisiju karte. Ne otra ražošanas karte.',
+    howToRead:
+      'Augsts rezultāts ≠ morāls verdikts un ≠ PM2.5. Atvērt OWID karti; priekšskatījums — Fix Planet pārskats.',
+    caveats: 'Augsts rezultāts ≠ morāls verdikts un ≠ PM2.5. Tā nav ražošanas karte un nav PM2.5 karte.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne OWID oficiālā grafika. Atribūcija: Global Carbon Project / Our World in Data (CC BY). Atvērt OWID karti.',
+    imageAlt:
+      'Fix Planet pārskats: patēriņa CO₂ emisiju horoplēts, ne teritoriālā ražošanas karte un ne OWID eksports',
+  },
+  'nitrogen-dioxide-no2': {
+    title: 'Slāpekļa dioksīds (NO₂)',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    hook: 'Satelīta slāpekļa dioksīda kolonna virs pilsētām, rūpniecības un kuģniecības — degšanas piesārņojums, ne tas pats, kas PM2.5 masa.',
+    description:
+      'NO₂ no TROPOMI / Sentinel-5P S5P-PAL portālā (slīdošais vidējais). Cits objekts nekā dzīvā PM2.5 karte.',
+    whyOnShelf: 'Cits objekts nekā dzīvā PM2.5 karte. Degšanas piesārņojums, ne daļiņu masa.',
+    howToRead:
+      'Mākoņi slēpj virsmu; spilgta kolonna ≠ gada limits. Atvērt tropospheric NO₂; priekšskatījums — Fix Planet pārskats.',
+    caveats: 'Mākoņi slēpj virsmu. Spilgta kolonna ≠ gada limits. Tā nav PM2.5 karte.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne ESA vai S5P-PAL mārketinga kadrs. Atribūcija: Copernicus Sentinel-5P / TROPOMI.',
+    imageAlt:
+      'Fix Planet pārskats: dzintara slāpekļa dioksīda kolonnas virs pilsētām, rūpniecības un kuģniecības — ne PM2.5 horoplēts un ne ESA kadrs',
+  },
+  'mismanaged-plastic-waste': {
+    title: 'Nekontrolēti plastmasas atkritumi',
+    cardMeta: 'OWID · Meijer et al. 2021',
+    hook: 'Plastmasa, kas nav pārstrādāta, sadedzināta vai hermētiski apglabāta — noplūdes risks upēs un piekrastē, ne pludmales atkritumu foto.',
+    description:
+      'Mismanaged plastic waste pēc OWID (Meijer et al. 2021, teksts PMC). Cits objekts nekā CO₂ un PM2.5.',
+    whyOnShelf: 'Cits objekts nekā CO₂ un PM2.5. Tie ir atkritumi, ne emisijas un ne daļiņu masa.',
+    howToRead:
+      'Liela masa bieži saistīta ar iedzīvotājiem un vāju infrastruktūru, ne ar «valsts raksturu». Atvērt OWID karti; priekšskatījums — Fix Planet pārskats.',
+    caveats:
+      'Liela masa bieži saistīta ar iedzīvotājiem un vāju infrastruktūru, ne ar «valsts raksturu». Ne pludmales atkritumu foto.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne okeāna plastmasas foto un ne OWID oficiālais kadrs. Atribūcija: Our World in Data (CC BY) pēc Meijer et al. 2021; raksta teksts ir PMC.',
+    imageAlt:
+      'Fix Planet pārskats: nekontrolētu plastmasas atkritumu horoplēts, ne pludmales foto un ne OWID eksports',
+  },
+  'methane-emissions': {
+    title: 'Metāna emisijas (CH₄)',
+    cardMeta: 'EDGAR JRC · OWID · CH₄',
+    hook: 'Valstu un režģa metāna kartes no fosilā kurināmā, lauksaimniecības un atkritumiem — cits siltumnīcefekta gāze nekā dzīvās CO₂ kartes.',
+    description: 'CH₄ pēc EDGAR / OWID (+ IMEO izmērītiem strūklām). Ne CO₂ un ne PM2.5.',
+    whyOnShelf:
+      'Ne CO₂ un ne PM2.5. Cits siltumnīcefekta gāze nekā oglekļa dioksīda kartes. Tā nav Climate TRACE kartīte Innovations plauktā.',
+    howToRead:
+      'Inventārs ≠ satelīta spraudīte. Atvērt OWID karti un EDGAR_2025_GHG; priekšskatījums — Fix Planet pārskats.',
+    caveats: 'Inventārs ≠ satelīta spraudīte. Ne teritoriālās un ne patēriņa CO₂.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats, ne lāpas foto un ne EDGAR vai OWID oficiālais kadrs. Atribūcija: EDGAR (JRC) / Our World in Data. IMEO Eye on Methane ir izmērītas strūklas, ne inventāra aizstājējs.',
+    imageAlt: 'Fix Planet pārskats: metāna emisiju horoplēts, ne CO₂ karte un ne lāpas foto',
   },
   'oil-gas-reserves': {
     title: 'Nafta un gāze pasaulē',
@@ -354,5 +459,168 @@ export const lv: Record<string, MapCopy> = {
       'Natural Earth ir sabiedriskais īpašums. Sīktēls ir Admin 0 sauszemes robežlīniju slānis. Sīktēls ir kartogrāfija, ne tiesas spriedums.',
     imageAlt:
       'Pasaules karte ar starptautiskām sauszemes robežām kā tumšām līnijām uz gaišas sauszemes — līniju ģeometrija, ne valstu aizpilde un ne jūras robežas',
+  },
+  'endangered-languages-unesco': {
+    title: 'Apdraudētās valodas (UNESCO atlants)',
+    hook: 'Valodas, ko UNESCO klasificēja kā apdraudētas vai izzūdošas — apdraudējuma atlants, ne tautu skaitīšana un ne otra ģimeņu karte.',
+    description:
+      'Moseley 2010 izdevums (~2500 valodas, apdraudējuma pakāpes pēc paaudžu pārmantošanas). Blakus Glottolog (radniecība) un Ethnologue (dzīvo skaits) — cits jautājums: ko UNESCO uzskatīja par apdraudētu. Nelasīt kā etnisko karti vai tiesas spriedumu.',
+    whyOnShelf:
+      'Blakus Glottolog (radniecība) un Ethnologue (dzīvo skaits) — cits jautājums: ko UNESCO uzskatīja par apdraudētu.',
+    howToRead: 'Nelasīt kā etnisko karti vai tiesas spriedumu.',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Nelasīt kā etnisko karti vai tiesas spriedumu.',
+    licenseNote:
+      'UNESCO / Moseley (red.) 2010. Priekšskats ir atlanta apdraudējuma pakāpju shēma (ievainojama → izzudusi) uz sabiedriskā īpašuma pasaules kontūra — ne etnisks horoplēts un ne otrs Glottolog ģimeņu koks. Citējiet UNESDOC izdevumu.',
+    imageAlt:
+      'Shēmatiska pasaules karte ar UNESCO atlanta apdraudējuma pakāpju punktiem no ievainojamas (dzeltena) līdz izzudušai (melna) — ne tautu skaitīšana un ne valodu saimju karte',
+  },
+  'wals-language-structures': {
+    title: 'Pasaules valodu struktūru atlants (WALS)',
+    hook: 'Valodu strukturālās iezīmes — fonētika, vārdu kārtība, gramatika — no aprakstošām gramatikām. Tipoloģija, ne etniskums un ne ģimeņu koks.',
+    description:
+      'WALS Online datubāze (MPI EVA). Glottolog = radniecība; WALS = kuras strukturālās iezīmes kur sastopamas. Krāsa iezīmes kartē — kods izlasē, ne «tauta» un ne valsts.',
+    whyOnShelf: 'Glottolog = radniecība; WALS = kuras strukturālās iezīmes kur sastopamas.',
+    howToRead: 'Krāsa iezīmes kartē — kods izlasē, ne «tauta» un ne valsts.',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Krāsa — kods izlasē, ne «tauta» un ne valsts.',
+    licenseNote:
+      'WALS Online dati ir CC BY 4.0 (Dryer & Haspelmath / Maksa Planka evolūcijas antropoloģijas institūts). Priekšskats pārzīmē iezīmi 1A, līdzskaņu inventāra lielumu (Maddieson), no CLDF laidiena — strukturālās tipoloģijas karte, ne Glottolog saimes un ne UNESCO apdraudējuma punkti.',
+    imageAlt:
+      'WALS Online karte par līdzskaņu inventāra lielumu: krāsaini punkti valodu atsauces vietās no maza (zils) līdz lielam (sarkans) — tipoloģija, ne etniskums un ne ģimeņu koks',
+  },
+  'language-areas-asher-moseley': {
+    title: 'Valodu areāli (Asher & Moseley)',
+    hook: 'Atvērti areālu poligoni no Asher & Moseley atlanta, piesaistīti Glottocode — laukumi, ne Glottolog punkti, un joprojām ne tautu skaitīšana.',
+    description: '~6992 poligoni; Glottolog punkti ≠ areāli. Lasīt kā atlanta vispārinājumu, ne suverenitāti un ne «asinis».',
+    whyOnShelf: 'Glottolog punkti ≠ areāli.',
+    howToRead: 'Lasīt kā atlanta vispārinājumu, ne suverenitāti un ne «asinis».',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Lasīt kā atlanta vispārinājumu, ne suverenitāti un ne «asinis».',
+    licenseNote:
+      'Areālu poligoni no Glottography/asher2007world (CC BY 4.0), digitalizēti no Asher & Moseley un piesaistīti Glottocode; citējiet Ranacher et al., Scientific Data 2025. Priekšskats ir laukumu izlase no tradicionālajām / kontakta laika lapām — ne Glottolog saimju horoplēts un ne tautu skaitīšana.',
+    imageAlt:
+      'Valodu areālu poligonu izlase, digitalizēta no Asher & Moseley atlanta un piesaistīta Glottocode — laukumi, ne Glottolog punkti un ne tautu skaitīšana',
+  },
+  'endangered-languages-project': {
+    title: 'Endangered Languages Project katalogs',
+    hook: 'Dzīvs katalogs un karte apdraudētajām valodām ar resursiem kopienām — cits skats uz apdraudējumu blakus UNESCO 2010 atlantam, ne otrs Glottolog.',
+    description:
+      'Nepeļņas ELP: katalogs, karte, vitalitāte, resursu bibliotēka. Nejauc ar UNESCO 2010 izdevumu un nelasīt kā etnisko/politisko karti.',
+    whyOnShelf: 'Nejauc ar UNESCO 2010 izdevumu.',
+    howToRead: 'Nejauc ar UNESCO 2010 izdevumu un nelasīt kā etnisko/politisko karti.',
+    caveats: 'Valodas ≠ tautas ≠ valstis. Nelasīt kā etnisko/politisko karti.',
+    licenseNote:
+      'Endangered Languages Project. Priekšskats ir dzīva kataloga shēma — atšķirīga no UNESCO atlanta pakāpēm un Ethnologue EGIDS punktiem, un ne politiska karte.',
+    imageAlt:
+      'Shēmatiska apdraudēto valodu kataloga karte Endangered Languages Project krāsās — vitalitātes punkti, ne UNESCO 2010 atlants un ne otrs Glottolog',
+  },
+  'groundwater-whymap': {
+    title: 'Pazemes ūdens resursi (WHYMAP)',
+    hook: 'Globālas hidroģeoloģiskās vides un uztures potenciāls no WHYMAP — pazemes ūdeņu pamatkarte, ne Aqueduct stress un ne FAO valstu konti.',
+    description:
+      'Groundwater Resources of the World karte (BGR + UNESCO). Cits objekts nekā AQUASTAT un Aqueduct. Krāsas = vides tipi un uzture, ne valstu rangs.',
+    whyOnShelf: 'Cits objekts nekā AQUASTAT un Aqueduct.',
+    howToRead: 'Krāsas = vides tipi un uzture, ne valstu rangs.',
+    caveats:
+      'Krāsas = vides tipi un uzture, ne valstu rangs. Ne AQUASTAT un ne Aqueduct. Ne IGRAC GGIS.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par WHYMAP hidroģeoloģisko vides saimēm (zili nogulumu baseini / zaļi sarežģīti / brūni vietēji-seklie), ne BGR oficiālā karte un ne Aqueduct stresa horoplēts. PDF un shapefile ir WHYMAP lapā. Citējiet BGR un UNESCO / WHYMAP.',
+    imageAlt:
+      'Pasaules karte ar ziliem nogulumu baseinu plankumiem, zaļām locījumu joslām un brūniem vietējiem seklajiem ūdensnesējiem — hidroģeoloģijas shēma, ne ūdens stress',
+  },
+  'global-lakes-hydrolakes': {
+    title: 'Globālie ezeri (HydroLAKES)',
+    hook: 'Krasta poligoni ~1,4 milj. ezeriem un ūdenskrātuvēm ≥10 ha — ezeru inventārs, ne baseini un ne stresa indekss.',
+    description:
+      'Tā pati HydroSHEDS saime kā HydroBASINS, bet objekts = ezera/ūdenskrātuves krasts. Ne mitrāju karte (GLWD) un ne ūdens kvalitāte.',
+    whyOnShelf: 'Tā pati HydroSHEDS saime kā HydroBASINS, bet objekts = ezera/ūdenskrātuves krasts.',
+    howToRead: 'Ne mitrāju karte (GLWD) un ne ūdens kvalitāte.',
+    caveats:
+      'Ne mitrāju karte (GLWD) un ne ūdens kvalitāte. Tilpums un dziļums lielākajai daļai ir modeļa aplēses.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par zināmiem ezeru apvidiem, ne HydroSHEDS produkta figūra un ne otra baseinu aizpilde. Lejupielāde ir HydroLAKES lapā. Citējiet Messager et al. 2016.',
+    imageAlt:
+      'Pasaules karte ar tumši ziliem ezeru un ūdenskrātuvju punktiem zināmos ezeru apvidos — krastu inventārs, ne upju baseini',
+  },
+  'lakes-wetlands-glwd': {
+    title: 'Ezeri un mitrāji (GLWD v2)',
+    hook: 'Pasaules iekšzemes ūdeņi 33 ūdenstilpju un mitrāju klasēs — purvi, kūdrāji, periodiski ūdeņi u.c., ne otrs HydroLAKES krastu slānis.',
+    description:
+      'GLWD v2 (~15″, līdz ~18,2 milj. km²). HydroLAKES = krasti ≥10 ha; GLWD = plašākas mitrāju klases. Ne Ramsar saraksts un ne ūdens stress.',
+    whyOnShelf: 'HydroLAKES = krasti ≥10 ha; GLWD = plašākas mitrāju klases.',
+    howToRead: 'Ne Ramsar saraksts un ne ūdens stress.',
+    caveats: 'Ne Ramsar saraksts un ne ūdens stress. HydroLAKES paliek krastu inventārs.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par iekšzemes ūdeņu klasēm (atklāts ūdens, purvs, kūdra, periodisks ūdens), ne HydroSHEDS produkta figūra un ne otrs HydroLAKES krastu slānis. GLWD v2 ir CC BY 4.0 (citējiet Lehner et al. 2025). Produkta lapa ir HydroSHEDS.',
+    imageAlt:
+      'Pasaules karte ar tirkīza atklātu ūdeni, zaļiem purviem, brūnu kūdru un zeltainu periodisku ūdeni — mitrāju klases, ne ezeru krasti',
+  },
+  'flood-hazard-aqueduct': {
+    title: 'Plūdu risks (Aqueduct Floods)',
+    hook: 'Modelēts upju un piekrastes plūdu risks un ekspozīcija — applūšanas risks, ne tas pats bāzes ūdens stress kā Water stress kartītē.',
+    description:
+      'Atsevišķs WRI rīks no Water Risk Atlas. Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
+    whyOnShelf: 'Atsevišķs WRI rīks no Water Risk Atlas.',
+    howToRead: 'Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
+    caveats:
+      'Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra. Ne Aqueduct Water Risk Atlas bāzes ūdens stress.',
+    licenseNote:
+      'Priekšskats ir Fix Planet pārskats par upju un piekrastes applūšanas apvidiem, ne WRI Floods oficiālā grafika un ne otrs bāzes ūdens stresa horoplēts. Aqueduct dati parasti ir CC BY ar atsauci uz WRI. Interaktīvās kartes ir Aqueduct Floods rīkā.',
+    imageAlt:
+      'Pasaules karte ar vidēji ziliem upju plūdu koridoriem un spilgti ciāna piekrastes plankumiem — plūdu risks, ne bāzes ūdens stress',
+  },
+  'intact-forest-landscapes': {
+    title: 'Neskartie meža ainavu kompleksi (IFL)',
+    hook: 'Potapov / IFL Mapping Team poligoni (2000.–2025. atjauninājumi) — savvaļas meža mozaīkas veselums, nevis Hansen ikgadējie pikseļi un nevis parku robežas.',
+    description:
+      'Neskartie meža ainavu kompleksi (IFL) ir lielas meža un saistīto ekosistēmu mozaīkas bez attālināti konstatētas rūpnieciskas darbības. IFL komanda (UMD GLAD un partneri) publicē globālos apjomus 2000., 2013., 2016., 2020. un 2025. gadam ar CC BY 4.0. Metode: Potapov et al., Science Advances 2017; pašreizējam apjomam izmanto 2025. slāni. Tas nav FAO land use un nav WDPA.',
+    howToRead:
+      'Krāsains laukums ir IFL poligons kartes gadā — ne plantācija un ne parka robeža. Zudums starp gadiem ir fragmentācija vai rūpnieciska ielaušanās bijušajā IFL; tas var atšķirties no Hansen vainagu zuduma kopsummām.',
+    caveats:
+      'IFL ir minimāla izmēra savvaļas klase (apmēram 500 km² mozaīka bez konstatētas rūpnieciskas infrastruktūras), ne visi primārie meži un ne oglekļa krājums. Mežs var būt primārs un tomēr neiekļūt IFL, ja to sašķeļ ceļi vai izcirtumi. Robežas pārvietojas starp atjauninājumu gadiem. Sīku vai vainaga apakšēju izmantošanu satelīts var nepamanīt.',
+    licenseNote:
+      'GeoPackage ir intactforests.org. Tīmekļa skatītājs ir Greenpeace IFL karte. 2000.–2025. arhīvs ir Zenodo. Atvērtais metodes teksts ir Potapov et al. 2017 PMC. Priekšskats ir Fix Planet lielu savvaļas bloku shēma, ne IFL poligoni.',
+    imageAlt:
+      'Tumša pasaules karte ar spilgti zaļiem savvaļas meža blokiem Amazōnijā, Kongo baseinā, boreālajā Kanādā un Sibīrijā un Jaungvinejā — neskartas ainavas, ne ikgadējie vainagu zuduma pikseļi',
+  },
+  'mangrove-extent': {
+    title: 'Mangrovju platība',
+    hook: 'Global Mangrove Watch — ikgadējā mangrovju platība (v4.1 sērija līdz 2025) — paisuma mežs, nevis iekšzemes Hansen un nevis WDPA parki.',
+    description:
+      'Global Mangrove Watch (GMW) kartē aplēsto mangrovju mežu platību un tās izmaiņas. Versija 4.1 ir ikgadēja rinda no 1985. līdz 2025. gadam (JAXA Kyoto & Carbon, Aberystwyth University un partneri). Platforma rāda platību, neto izmaiņu un brīdinājumus; rastri un vektori ir Zenodo un JAXA. Tas nav koraļļi un nav aizsargājamās teritorijas.',
+    howToRead:
+      'Mangrovju pikselis ir GMW klasifikatora paisuma mežs tajā gadā — ne koraļļu rifs, ne sāls purva karte un ne aizsardzības statuss. Salīdzini gadus GMW ietvaros; nesajauc ar Hansen kopsummām.',
+    caveats:
+      'Mangrovju kartes vājāk darbojas dubļainās malās, akvakultūras dīķos un retā apmalē. Ikgadējā izmaiņa nav tas pats, kas likumīga meža izciršana. Ogleklis un sugas ir atsevišķi produkti tajā pašā platformā. Precizitāte atšķiras pa valstīm un duļķainību. Atjaunošanas stādījumi klasifikatorā var kavēties. Brīdinājumi ir atlase, tad vietējais attēls.',
+    licenseNote:
+      'GMW slāņus lieto nacionālie paneļi un piekrastes projekti. v4.1 steku ĢIS lejupielādei apraksta JAXA. Priekšskats ir Fix Planet zināmo mangrovju piekrastes shēma, ne GMW rastrs. Karte ir globalmangrovewatch.org.',
+    imageAlt:
+      'Pasaules karte ar tirkīza paisuma meža apmali gar tropu piekrastēm — mangrovju platība, ne iekšzemes vainagu zudums',
+  },
+  'primary-humid-tropical-forests': {
+    title: 'Primārie mitrie tropu meži',
+    hook: 'UMD GLAD 30 m karte — primāro mitro tropu mežu platība 2001. (Turubanova et al.) — primaritātes bāze, nevis Hansen ikgadējie zudumi un nevis IFL izmēra noteikumi.',
+    description:
+      '2001. bāzes slānis. UMD GLAD kartēja primāros mitros tropu mežus 30 m no Landsat: mežs, kas nebija pilnībā nocirsts ierakstā, ko izmantoja šai bāzei. Kontinentālie GeoTIFF un Earth Engine kolekcija ir publiski. Metode: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c). Tikai mitrie tropi.',
+    howToRead:
+      'Pikselis 1 ir primārais mitrais tropu mežs 2001. kartē; 0 ir cita zeme vai ūdens. Zudumus pēc 2001. parasti lasa ar Hansen / Global Forest Watch. 2001. slānis pats nav 2025. platības karte.',
+    caveats:
+      'Tikai mitrie tropi — ne boreālais primārais mežs un ne sausais mežs. Sekundārais mežs pēc nociršanas ir ārpus 2001. primārās klases. Klasifikācijas kļūdas ir malās un sarežģītās mozaīkās. Plantācijas, kas ierīkotas pirms bāzes loģikas, var jaukt vietējo lasījumu — lasi GLAD piezīmes.',
+    licenseNote:
+      'Slāņi ir GLAD datu kopas lapā un Google Earth Engine katalogā. Priekšskats ir Fix Planet mitro tropu joslas shēma, ne 30 m GeoTIFF. Citē Turubanova et al. 2018 un UMD GLAD.',
+    imageAlt:
+      'Pasaules karte ar piesātināti zaļu primāro mitro tropu mežu joslu Amazōnijā, Kongo un Dienvidaustrumāzijā 2001. bāzē — ne boreālais mežs un ne ikgadējais vainagu zudums',
+  },
+  'forest-landscape-integrity': {
+    title: 'Meža ainavu integritātes indekss (FLII)',
+    hook: 'Grantham et al. nepārtrauktais mežu integritātes vērtējums (~2019) — antropogēna modificēšana un savienojamība, nevis tikai Hansen un nevis WDPA pārklājums.',
+    description:
+      'Meža ainavu integritātes indekss (FLII) apvieno meža platību, kartētus cilvēka spiedienus, izsecinātus saistītos spiedienus un savienojamības zudumu nepārtrauktā 0–10 vērtējumā pasaules mežiem (Grantham et al., Nature Communications 2020). Aptuveni 40% atlikušo mežu iekrita autoru ilustratīvajā augstas integritātes joslā; tikai daļa no tās ir aizsargājamās teritorijās.',
+    howToRead:
+      'Augsts vērtējums nozīmē mazāku modelētu antropogēnu modificēšanu ainavas mērogā — ne „neskarts uz visiem laikiem” un ne oglekļa blīvumu. Zems vērtējums joprojām var būt zem vainaga. FLII nav IFL un nav vainagu zuduma datums. Zema / vidēja / augsta griezumi ir ilustrācija; produkts ir nepārtrauktais vērtējums.',
+    caveats:
+      'FLII ir modelēts indekss ap 300 m, aptuveni 2019. gada sākumā, ne 2025. gada ikgadējs atjauninājums oriģinālajā rakstā. Tas neaizstāj lauka ekoloģiju un nav pirmiedzīvotāju zemju karte. Vietējie svari var atšķirties no globālā noklusējuma. Medības un pameža degradāciju daļēji izsecina no pieejamības.',
+    licenseNote:
+      'Raksts ir Nature Communications. Rastri ir Forest Landscape Integrity lejupielādes lapā. Priekšskats ir Fix Planet integritātes joslu shēma, ne autoru rastrs. Citē Grantham et al. 2020.',
+    imageAlt:
+      'Pasaules karte ar meža integritātes skalu: tumši zaļi attāli masīvi, zelta vidus un oranžs stipri pārveidots mežs — ne vainagu zuduma datums',
   },
 };

@@ -1,0 +1,41 @@
+---
+import { forestAtlasPath, forestAtlasPreviewSrc } from '../data/forest-atlas';
+import {
+  forestAtlasChrome,
+  getForestsPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+import type { ForestAtlasEntry } from '../i18n/forest-atlas';
+
+interface Props {
+  map: ForestAtlasEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const forests = getForestsPage(locale);
+const chrome = forestAtlasChrome(locale);
+const { map } = Astro.props;
+const href = localizePath(forestAtlasPath(map.slug), locale);
+const preview = forestAtlasPreviewSrc(map.preview);
+---
+
+<article class="map-card-wrap innovation-card-wrap" data-slug={map.slug}>
+  <a class="map-card" href={href}>
+    <div class="card-art map-card-art">
+      <img src={preview} alt={map.blurb} width="1600" height="800" loading="lazy" />
+      <span class="map-schematic-badge">{chrome.badge}</span>
+    </div>
+    <div class="card-body">
+      <h3>{map.title}</h3>
+      <p class="map-card-meta">{map.meta}</p>
+      <p class="wildlife-hook">{map.blurb}</p>
+      <span class="card-cta">{chrome.readMore}</span>
+    </div>
+  </a>
+  <p class="innovation-card-source">
+    <a href={map.sourceUrl} rel="noopener noreferrer">
+      {forests.sourceLabel}: {map.sourceLabel}
+    </a>
+  </p>
+</article>

@@ -55,6 +55,8 @@ export type MapMeta = {
   /** Hosted preview in /public/images/maps/ */
   preview: string;
   previewKind: 'photo' | 'outline' | 'schematic';
+  /** Optional grid meta line. Defaults to sourceShort · year. */
+  cardMeta?: string;
   /** Optional clickable citations. First row is the grid Source link. */
   sources?: PrimarySource[];
 };
@@ -69,6 +71,8 @@ export type MapCopy = {
   imageAlt: string;
   /** When set, the detail page uses What / Why on this shelf headings. */
   whyOnShelf?: string;
+  /** Locale override of the grid meta line. English stays on MapMeta.cardMeta. */
+  cardMeta?: string;
 };
 
 export type MapEntry = MapMeta & MapCopy;
@@ -104,6 +108,132 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://ourworldindata.org/war-and-peace',
     preview: 'battle-related-deaths.jpg',
     previewKind: 'photo',
+  },
+  {
+    slug: 'global-peace-index',
+    category: 'conflicts',
+    year: '2026',
+    sourceShort: 'IEP · Vision of Humanity · Global Peace Index',
+    sourceOrg: 'Institute for Economics & Peace / Vision of Humanity',
+    sourceUrl: 'https://www.visionofhumanity.org/maps/global-peace-index/',
+    openMapUrl: 'https://www.visionofhumanity.org/maps/global-peace-index/',
+    preview: 'global-peace-index.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Institute for Economics & Peace / Vision of Humanity — Global Peace Index',
+        url: 'https://www.visionofhumanity.org/maps/global-peace-index/',
+      },
+      { label: 'Vision of Humanity — maps hub', url: 'https://www.visionofhumanity.org/maps/' },
+      {
+        label: 'Global Peace Index 2026 — full report (PDF)',
+        url: 'https://www.visionofhumanity.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Report.pdf',
+      },
+      {
+        label: 'Global Peace Index 2026 — briefing (PDF)',
+        url: 'https://www.visionofhumanity.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Briefing-web.pdf',
+      },
+      {
+        label: 'Institute for Economics & Peace — GPI programme',
+        url: 'https://www.economicsandpeace.org/global-peace-index/',
+      },
+      { label: 'IEP hub', url: 'https://www.economicsandpeace.org/' },
+    ],
+  },
+  {
+    slug: 'fragile-states-index',
+    category: 'conflicts',
+    year: 'Annual',
+    sourceShort: 'Fund for Peace · Fragile States Index (FSI)',
+    sourceOrg: 'Fund for Peace',
+    sourceUrl: 'https://fragilestatesindex.org/',
+    openMapUrl: 'https://fragilestatesindex.org/analytics/fsi-heat-map/',
+    preview: 'fragile-states-index.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Fund for Peace — Fragile States Index',
+        url: 'https://fragilestatesindex.org/',
+      },
+      { label: 'FSI — global data', url: 'https://fragilestatesindex.org/global-data/' },
+      { label: 'FSI — analytics heat map', url: 'https://fragilestatesindex.org/analytics/fsi-heat-map/' },
+      { label: 'FSI — methodology', url: 'https://fragilestatesindex.org/methodology/' },
+      { label: 'FSI — indicators', url: 'https://fragilestatesindex.org/indicators/' },
+      { label: 'FSI — Excel / data download', url: 'https://fragilestatesindex.org/excel/' },
+      { label: 'Fund for Peace — FSI overview', url: 'https://fundforpeace.org/fsi/' },
+      { label: 'Fund for Peace hub', url: 'https://fundforpeace.org/' },
+    ],
+  },
+  {
+    slug: 'military-expenditure-sipri',
+    category: 'conflicts',
+    year: '2024',
+    sourceShort: 'SIPRI · Military Expenditure Database (Milex)',
+    sourceOrg: 'Stockholm International Peace Research Institute (SIPRI)',
+    sourceUrl: 'https://www.sipri.org/databases/milex',
+    openMapUrl: 'https://www.sipri.org/databases/milex',
+    preview: 'military-expenditure-sipri.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'SIPRI — Military Expenditure Database',
+        url: 'https://www.sipri.org/databases/milex',
+      },
+      {
+        label: 'SIPRI — Trends in world military expenditure, 2024 (fact sheet page)',
+        url: 'https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024',
+      },
+      {
+        label: 'SIPRI — Milex 2024 fact sheet (PDF)',
+        url: 'https://www.sipri.org/sites/default/files/2025-04/2504_fs_milex_2024.pdf',
+      },
+      {
+        label: 'SIPRI — press release (Apr 2025 spending surge)',
+        url: 'https://www.sipri.org/media/press-release/2025/unprecedented-rise-global-military-expenditure-european-and-middle-east-spending-surges',
+      },
+      {
+        label: 'SIPRI — military expenditure research',
+        url: 'https://www.sipri.org/research/armament-and-disarmament/arms-and-military-expenditure/military-expenditure',
+      },
+      { label: 'SIPRI hub', url: 'https://www.sipri.org/' },
+    ],
+  },
+  {
+    slug: 'conflict-barometer-hiik',
+    category: 'conflicts',
+    year: '2025',
+    sourceShort: 'HIIK Heidelberg · Conflict Barometer',
+    sourceOrg: 'Heidelberg Institute for International Conflict Research (HIIK)',
+    sourceUrl: 'https://hiik.de/en/conflict-barometer/',
+    openMapUrl: 'https://hiik.de/en/conflict-barometer/',
+    preview: 'conflict-barometer-hiik.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'HIIK — Conflict Barometer',
+        url: 'https://hiik.de/en/conflict-barometer/',
+      },
+      {
+        label: 'HIIK — Conflict Barometer current version (EN)',
+        url: 'https://hiik.de/en/conflict-barometer/current-version/',
+      },
+      {
+        label: 'HIIK — previous editions / PDFs',
+        url: 'https://hiik.de/conflict-barometer/bisherige-ausgaben/',
+      },
+      {
+        label: 'Conflict Barometer 2025 (PDF)',
+        url: 'https://hiik.de/wp-content/uploads/2026/08/coba_2025.pdf',
+      },
+      {
+        label: 'Conflict Barometer 2024 (PDF)',
+        url: 'https://hiik.de/wp-content/uploads/2026/05/coba-2024.pdf',
+      },
+      { label: 'HIIK — static maps', url: 'https://hiik.de/daten-karten/statische-karten/' },
+      { label: 'HIIK — datasets', url: 'https://hiik.de/daten-karten/datensaetze/' },
+      { label: 'HIIK — methodology (EN)', url: 'https://hiik.de/hiik/methodik/?lang=en' },
+      { label: 'HIIK hub', url: 'https://hiik.de/' },
+    ],
   },
   {
     slug: 'language-families',
@@ -217,6 +347,146 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://ourworldindata.org/co2-emissions',
     preview: 'co2-emissions.jpg',
     previewKind: 'photo',
+  },
+  {
+    slug: 'consumption-co2-emissions',
+    category: 'pollution',
+    year: 'trade-adjusted',
+    sourceShort: 'GCP / OWID',
+    sourceOrg: 'Global Carbon Project; Our World in Data',
+    sourceUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
+    openMapUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
+    preview: 'consumption-co2-emissions.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'Global Carbon Project · OWID · trade-adjusted',
+    sources: [
+      {
+        label: 'Global Carbon Project / Our World in Data — consumption-based CO₂',
+        url: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
+      },
+      {
+        label: 'OWID — Consumption-based CO₂ emissions',
+        url: 'https://ourworldindata.org/grapher/consumption-co2-emissions',
+      },
+      {
+        label: 'OWID — explainer: consumption-based CO₂',
+        url: 'https://ourworldindata.org/consumption-based-co2',
+      },
+      {
+        label: 'Global Carbon Project hub',
+        url: 'https://www.globalcarbonproject.org/',
+      },
+    ],
+  },
+  {
+    slug: 'nitrogen-dioxide-no2',
+    category: 'pollution',
+    year: 'multi-day average',
+    sourceShort: 'Sentinel-5P',
+    sourceOrg: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
+    sourceUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
+    openMapUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
+    preview: 'nitrogen-dioxide-no2.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    sources: [
+      {
+        label: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
+        url: 'https://maps.s5p-pal.com/no2-tropospheric/',
+      },
+      {
+        label: 'S5P-PAL — Total Column NO₂',
+        url: 'https://maps.s5p-pal.com/no2/',
+      },
+      {
+        label: 'ESA — Sentinel-5P mission',
+        url: 'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P',
+      },
+      {
+        label: 'Copernicus Atmosphere Monitoring Service',
+        url: 'https://atmosphere.copernicus.eu/',
+      },
+      {
+        label: 'NASA Air Quality (context)',
+        url: 'https://airquality.gsfc.nasa.gov/',
+      },
+    ],
+  },
+  {
+    slug: 'mismanaged-plastic-waste',
+    category: 'pollution',
+    year: '2021',
+    sourceShort: 'OWID · Meijer 2021',
+    sourceOrg: 'Our World in Data, after Meijer et al. 2021',
+    sourceUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
+    openMapUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
+    preview: 'mismanaged-plastic-waste.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'OWID · Meijer et al. 2021',
+    sources: [
+      {
+        label: 'Our World in Data (after Meijer et al. 2021)',
+        url: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
+      },
+      {
+        label: 'OWID — Share of plastic waste that is mismanaged',
+        url: 'https://ourworldindata.org/grapher/share-of-plastic-waste-that-is-mismanaged',
+      },
+      {
+        label: 'OWID — Plastic waste emitted to the ocean',
+        url: 'https://ourworldindata.org/grapher/plastic-waste-emitted-to-the-ocean',
+      },
+      {
+        label: 'OWID — Plastic pollution topic',
+        url: 'https://ourworldindata.org/plastic-pollution',
+      },
+      {
+        label: 'Meijer et al. 2021 — PMC full text',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7880581/',
+      },
+    ],
+  },
+  {
+    slug: 'methane-emissions',
+    category: 'pollution',
+    year: 'EDGAR 2025',
+    sourceShort: 'EDGAR / OWID',
+    sourceOrg: 'EDGAR (JRC); Our World in Data',
+    sourceUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
+    openMapUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
+    preview: 'methane-emissions.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'EDGAR JRC · OWID · CH₄',
+    sources: [
+      {
+        label: 'EDGAR (JRC) / Our World in Data — methane emissions',
+        url: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
+      },
+      {
+        label: 'OWID — Methane emissions',
+        url: 'https://ourworldindata.org/grapher/methane-emissions',
+      },
+      {
+        label: 'EDGAR — emissions data and maps',
+        url: 'https://edgar.jrc.ec.europa.eu/emissions_data_and_maps',
+      },
+      {
+        label: 'EDGAR_2025_GHG release',
+        url: 'https://edgar.jrc.ec.europa.eu/dataset_ghg2025',
+      },
+      {
+        label: 'EDGAR hub',
+        url: 'https://edgar.jrc.ec.europa.eu/',
+      },
+      {
+        label: 'UNEP IMEO — Eye on Methane',
+        url: 'https://methanedata.unep.org/',
+      },
+      {
+        label: 'IEA — Global Methane Tracker 2025',
+        url: 'https://www.iea.org/reports/global-methane-tracker-2025',
+      },
+    ],
   },
   {
     slug: 'oil-gas-reserves',
@@ -351,6 +621,110 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'photo',
   },
   {
+    slug: 'intact-forest-landscapes',
+    category: 'forests',
+    year: '2000–2025',
+    sourceShort: 'IFL',
+    sourceOrg: 'Intact Forest Landscapes Mapping Team (UMD GLAD and partners)',
+    sourceUrl: 'https://intactforests.org/data.ifl.html',
+    openMapUrl: 'https://intactforests.org/data.ifl.html',
+    preview: 'intact-forest-landscapes.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Intact Forest Landscapes — data download (IFL 2000–2025)',
+        url: 'https://intactforests.org/data.ifl.html',
+      },
+      {
+        label: 'Zenodo — Intact Forest Landscapes Extent and Change, 2000–2025',
+        url: 'https://zenodo.org/records/18011599',
+      },
+      {
+        label: 'Greenpeace — World Intact Forest Landscapes map viewer',
+        url: 'https://maps.greenpeace.org/maps/gpint/world-ifl/',
+      },
+      {
+        label: 'Potapov et al. 2017 (PMC full text)',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5604104/',
+      },
+    ],
+  },
+  {
+    slug: 'mangrove-extent',
+    category: 'forests',
+    year: '1985–2025',
+    sourceShort: 'GMW',
+    sourceOrg: 'Global Mangrove Watch (JAXA, Aberystwyth University, and partners)',
+    sourceUrl: 'https://www.globalmangrovewatch.org/',
+    openMapUrl: 'https://www.globalmangrovewatch.org/',
+    preview: 'mangrove-extent.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Global Mangrove Watch — map platform',
+        url: 'https://www.globalmangrovewatch.org/',
+      },
+      {
+        label: 'JAXA EORC — Global Mangrove Watch dataset (v4.1)',
+        url: 'https://www.eorc.jaxa.jp/ALOS/en/dataset/gmw_e.htm',
+      },
+      {
+        label: 'Zenodo — Global Mangrove Watch timeseries v4.1.12',
+        url: 'https://zenodo.org/records/21346457',
+      },
+      {
+        label: 'Mangrove Alliance — GMW 4.1 launch note',
+        url: 'https://www.mangrovealliance.org/news/global-mangrove-watch-4-launch',
+      },
+    ],
+  },
+  {
+    slug: 'primary-humid-tropical-forests',
+    category: 'forests',
+    year: '2001',
+    sourceShort: 'UMD GLAD',
+    sourceOrg: 'University of Maryland GLAD — Primary Humid Tropical Forests',
+    sourceUrl: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
+    openMapUrl: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
+    preview: 'primary-humid-tropical-forests.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'GLAD UMD — Primary Humid Tropical Forests dataset',
+        url: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
+      },
+      {
+        label: 'Google Earth Engine catalog — UMD/GLAD Primary Humid Tropical Forests v1',
+        url: 'https://developers.google.com/earth-engine/datasets/catalog/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1',
+      },
+    ],
+  },
+  {
+    slug: 'forest-landscape-integrity',
+    category: 'forests',
+    year: '~2019',
+    sourceShort: 'FLII',
+    sourceOrg: 'Grantham et al., Nature Communications 2020 — Forest Landscape Integrity Index',
+    sourceUrl: 'https://www.nature.com/articles/s41467-020-19493-3',
+    openMapUrl: 'https://www.nature.com/articles/s41467-020-19493-3',
+    preview: 'forest-landscape-integrity.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'Grantham et al. 2020 — Nature Communications (FLII paper)',
+        url: 'https://www.nature.com/articles/s41467-020-19493-3',
+      },
+      {
+        label: 'Forest Landscape Integrity — download data',
+        url: 'https://www.forestlandscapeintegrity.com/download-data',
+      },
+      {
+        label: 'Nature Communications PDF',
+        url: 'https://www.nature.com/articles/s41467-020-19493-3.pdf',
+      },
+    ],
+  },
+  {
     slug: 'water-stress',
     category: 'water',
     year: '2023',
@@ -406,6 +780,124 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'photo',
   },
   {
+    slug: 'groundwater-whymap',
+    category: 'water',
+    year: '2008',
+    sourceShort: 'BGR / UNESCO · WHYMAP',
+    sourceOrg: 'BGR / UNESCO — WHYMAP Groundwater Resources of the World',
+    sourceUrl: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+    openMapUrl: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+    preview: 'groundwater-whymap.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'BGR / UNESCO · WHYMAP · Groundwater Resources of the World',
+    sources: [
+      {
+        label: 'BGR / UNESCO — WHYMAP Groundwater Resources of the World',
+        url: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+      },
+      { label: 'WHYMAP hub', url: 'https://www.whymap.org/' },
+      {
+        label: 'WHYMAP GWR shapefile (BGR download)',
+        url: 'https://download.bgr.de/bgr/grundwasser/whymap/shp/WHYMAP_GWR_v1.zip',
+      },
+      {
+        label: 'Richts et al. 2011 (WHYMAP chapter, Springer)',
+        url: 'https://doi.org/10.1007/978-90-481-3426-7_10',
+      },
+    ],
+  },
+  {
+    slug: 'global-lakes-hydrolakes',
+    category: 'water',
+    year: '2016',
+    sourceShort: 'HydroSHEDS · HydroLAKES',
+    sourceOrg: 'HydroSHEDS — HydroLAKES',
+    sourceUrl: 'https://www.hydrosheds.org/products/hydrolakes',
+    openMapUrl: 'https://www.hydrosheds.org/products/hydrolakes',
+    preview: 'global-lakes-hydrolakes.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'HydroSHEDS · HydroLAKES · Messager et al. 2016',
+    sources: [
+      {
+        label: 'HydroSHEDS — HydroLAKES',
+        url: 'https://www.hydrosheds.org/products/hydrolakes',
+      },
+      {
+        label: 'Messager et al. 2016 — Nature Communications',
+        url: 'https://doi.org/10.1038/ncomms13603',
+      },
+      { label: 'HydroSHEDS hub', url: 'https://www.hydrosheds.org/' },
+      {
+        label: 'HydroSHEDS — HydroBASINS (live sibling)',
+        url: 'https://www.hydrosheds.org/products/hydrobasins',
+      },
+    ],
+  },
+  {
+    slug: 'lakes-wetlands-glwd',
+    category: 'water',
+    year: '2025',
+    sourceShort: 'HydroSHEDS · GLWD v2',
+    sourceOrg: 'HydroSHEDS — GLWD v2',
+    sourceUrl: 'https://www.hydrosheds.org/products/glwd',
+    openMapUrl: 'https://www.hydrosheds.org/products/glwd',
+    preview: 'lakes-wetlands-glwd.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'HydroSHEDS · GLWD v2 · Lehner et al. 2025',
+    sources: [
+      {
+        label: 'HydroSHEDS — GLWD v2',
+        url: 'https://www.hydrosheds.org/products/glwd',
+      },
+      {
+        label: 'Lehner et al. 2025 — ESSD (GLWD v2 paper)',
+        url: 'https://doi.org/10.5194/essd-17-2277-2025',
+      },
+      {
+        label: 'WWF — GLWD overview (v1 context / legacy levels)',
+        url: 'https://www.worldwildlife.org/our-work/science/global-lakes-and-wetlands-database/',
+      },
+      {
+        label: 'Figshare dataset DOI (download mirror)',
+        url: 'https://doi.org/10.6084/m9.figshare.28519994',
+      },
+    ],
+  },
+  {
+    slug: 'flood-hazard-aqueduct',
+    category: 'water',
+    year: '2020',
+    sourceShort: 'WRI · Aqueduct Floods',
+    sourceOrg: 'World Resources Institute, Aqueduct Floods',
+    sourceUrl: 'https://www.wri.org/data/aqueduct-floods',
+    openMapUrl: 'https://www.wri.org/applications/aqueduct/floods/',
+    preview: 'flood-hazard-aqueduct.jpg',
+    previewKind: 'schematic',
+    cardMeta: 'WRI · Aqueduct Floods · riverine & coastal',
+    sources: [
+      {
+        label: 'WRI — Aqueduct Floods',
+        url: 'https://www.wri.org/data/aqueduct-floods',
+      },
+      {
+        label: 'WRI — Aqueduct Floods Hazard Maps',
+        url: 'https://www.wri.org/data/aqueduct-floods-hazard-maps',
+      },
+      {
+        label: 'Aqueduct Floods interactive application',
+        url: 'https://www.wri.org/applications/aqueduct/floods/',
+      },
+      {
+        label: 'WRI Data Explorer — hazard maps dataset',
+        url: 'https://datasets.wri.org/datasets/aqueduct-floods-hazard-maps',
+      },
+      {
+        label: 'WRI Aqueduct Water Risk Atlas (live sibling)',
+        url: 'https://www.wri.org/aqueduct',
+      },
+    ],
+  },
+  {
     slug: 'exclusive-economic-zones',
     category: 'political',
     year: '2023',
@@ -426,6 +918,106 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://www.ethnologue.com/insights/how-many-languages/',
     preview: 'living-languages-count.jpg',
     previewKind: 'outline',
+  },
+  {
+    slug: 'endangered-languages-unesco',
+    category: 'ethnic',
+    year: '2010',
+    sourceShort: 'UNESCO · Atlas of the World’s Languages in Danger',
+    sourceOrg: 'UNESCO — Atlas of the World’s Languages in Danger (Moseley ed. 2010)',
+    sourceUrl: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+    openMapUrl: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+    preview: 'endangered-languages-unesco.jpg',
+    previewKind: 'schematic',
+    sources: [
+      {
+        label: 'UNESCO — Atlas of the World’s Languages in Danger',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+      },
+      {
+        label: 'UNESDOC same work (locale=en)',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026.locale=en',
+      },
+      {
+        label: 'Ethnologue — How many languages are endangered?',
+        url: 'https://www.ethnologue.com/insights/how-many-languages-endangered/',
+      },
+    ],
+  },
+  {
+    slug: 'wals-language-structures',
+    category: 'ethnic',
+    year: 'Dryer & Haspelmath',
+    sourceShort: 'WALS Online · Max Planck EVA',
+    sourceOrg: 'WALS Online (Max Planck Institute for Evolutionary Anthropology)',
+    sourceUrl: 'https://wals.info/',
+    openMapUrl: 'https://wals.info/',
+    preview: 'wals-language-structures.jpg',
+    previewKind: 'outline',
+    sources: [
+      { label: 'WALS Online (Max Planck EVA)', url: 'https://wals.info/' },
+      { label: 'WALS Online — Features index', url: 'https://wals.info/feature' },
+      {
+        label: 'WALS Online — Consonant Inventories (feature 1A)',
+        url: 'https://wals.info/feature/1A',
+      },
+      { label: 'CLDF dataset mirror (GitHub)', url: 'https://github.com/cldf-datasets/wals' },
+      {
+        label: 'Max Planck Institute for Evolutionary Anthropology',
+        url: 'https://www.eva.mpg.de/',
+      },
+      { label: 'Glottolog', url: 'https://glottolog.org/' },
+    ],
+  },
+  {
+    slug: 'language-areas-asher-moseley',
+    category: 'ethnic',
+    year: 'Atlas of the World’s Languages digitization',
+    sourceShort: 'Scientific Data · 2025',
+    sourceOrg: 'Ranacher et al., Scientific Data 2025 — language areas from Asher & Moseley',
+    sourceUrl: 'https://www.nature.com/articles/s41597-025-05828-6',
+    openMapUrl: 'https://www.nature.com/articles/s41597-025-05828-6',
+    preview: 'language-areas-asher-moseley.jpg',
+    previewKind: 'outline',
+    sources: [
+      {
+        label: 'Ranacher et al., Scientific Data 2025 — language areas from Asher & Moseley',
+        url: 'https://www.nature.com/articles/s41597-025-05828-6',
+      },
+      { label: 'Same via doi.org', url: 'https://doi.org/10.1038/s41597-025-05828-6' },
+      { label: 'PMC full text', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12373819/' },
+      {
+        label: 'GitHub — Glottography/asher2007world (polygons + Glottocodes)',
+        url: 'https://github.com/glottography/asher2007world',
+      },
+      { label: 'Glottolog', url: 'https://glottolog.org/' },
+    ],
+  },
+  {
+    slug: 'endangered-languages-project',
+    category: 'ethnic',
+    year: 'vitality & resources',
+    sourceShort: 'ELP · Endangered Languages Project',
+    sourceOrg: 'Endangered Languages Project',
+    sourceUrl: 'https://www.endangeredlanguages.com/',
+    openMapUrl: 'https://www.endangeredlanguages.com/',
+    preview: 'endangered-languages-project.jpg',
+    previewKind: 'schematic',
+    sources: [
+      { label: 'Endangered Languages Project', url: 'https://www.endangeredlanguages.com/' },
+      {
+        label: 'Endangered Languages Project — About',
+        url: 'https://www.endangeredlanguages.com/about/',
+      },
+      {
+        label: 'Ethnologue — How many languages are endangered?',
+        url: 'https://www.ethnologue.com/insights/how-many-languages-endangered/',
+      },
+      {
+        label: 'UNESCO Atlas of the World’s Languages in Danger (UNESDOC)',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
+      },
+    ],
   },
 ];
 

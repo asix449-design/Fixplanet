@@ -1,5 +1,7 @@
 ---
 import HubTile from '../components/HubTile.astro';
+import OceanAtlasCard from '../components/OceanAtlasCard.astro';
+import OceanRelated from '../components/OceanRelated.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
@@ -36,8 +38,10 @@ import {
   getOceanSalinityFrames,
   getOceanSstFrames,
   getOceanStats,
+  getOceanAtlas,
   getOceansPage,
   localizePath,
+  oceanAtlasHubLede,
   resolveLocale,
 } from '../i18n';
 
@@ -63,6 +67,8 @@ const currentFrame = getOceanCurrentFrames(locale)[0];
 const pollution = getOceanPollution(locale);
 const stats = getOceanStats(locale);
 const heroStats = getOceanHeroStats(locale);
+const atlasMaps = getOceanAtlas(locale);
+const atlasLede = oceanAtlasHubLede[locale];
 const backdropSrc = oceanFrameSrc(hub ? oceanHubBackdrop.file : oceanBackdrop.file);
 const backdropWidth = hub ? oceanHubBackdrop.width : 1920;
 const backdropHeight = hub ? oceanHubBackdrop.height : 1078;
@@ -138,6 +144,27 @@ const pageTitle = activePanel
           title={page.panels[activePanel]}
         />
       )
+    )
+  }
+
+  {
+    hub && (
+      <section class="section section-hub-follow" aria-label={page.choosePanel}>
+        <div class="wrap">
+          <div class="wildlife-copy-card forests-panel oceans-panel">
+            {
+              atlasLede && (
+                <div class="oceans-lede">
+                  <p>{atlasLede}</p>
+                </div>
+              )
+            }
+            <div class="card-grid">
+              {atlasMaps.map((item) => <OceanAtlasCard map={item} />)}
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 
@@ -503,6 +530,8 @@ const pageTitle = activePanel
     </div>
   </section>
   )}
+
+  {activePanel && <OceanRelated currentPanel={activePanel} />}
 </BaseLayout>
 
 {(activePanel === 'sst' || activePanel === 'salinity') && (

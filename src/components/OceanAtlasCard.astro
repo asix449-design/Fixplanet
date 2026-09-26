@@ -1,0 +1,36 @@
+---
+import { oceanAtlasPath, oceanAtlasPreviewSrc } from '../data/ocean-atlas';
+import { getMapsPage, getOceansPage, localizePath, resolveLocale } from '../i18n';
+import type { OceanAtlasEntry } from '../i18n/ocean-atlas';
+
+interface Props {
+  map: OceanAtlasEntry;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const oceans = getOceansPage(locale);
+const maps = getMapsPage(locale);
+const { map } = Astro.props;
+const href = localizePath(oceanAtlasPath(map.slug), locale);
+const preview = oceanAtlasPreviewSrc(map.preview);
+---
+
+<article class="map-card-wrap innovation-card-wrap" data-slug={map.slug}>
+  <a class="map-card" href={href}>
+    <div class="card-art map-card-art">
+      <img src={preview} alt={map.blurb} width="1600" height="800" loading="lazy" />
+      <span class="map-schematic-badge">{maps.schematicBadge}</span>
+    </div>
+    <div class="card-body">
+      <h3>{map.title}</h3>
+      <p class="map-card-meta">{map.meta}</p>
+      <p class="wildlife-hook">{map.blurb}</p>
+      <span class="card-cta">{maps.cardCta}</span>
+    </div>
+  </a>
+  <p class="innovation-card-source">
+    <a href={map.sourceUrl} rel="noopener noreferrer">
+      {oceans.sourceLabel}: {map.sourceLabel}
+    </a>
+  </p>
+</article>

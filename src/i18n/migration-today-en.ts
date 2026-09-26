@@ -35,6 +35,8 @@ export const enToday: TodayShelfCopy = {
   layersLabel: 'Map layers',
   layerCamps: 'Refugee camps',
   layerDetections: 'EU border detections',
+  layerIdp: 'Internal displacement',
+  layerRefugees: 'Refugees (UNHCR)',
   campsTitle: 'Largest UNHCR camps and settlements',
   campsLead:
     'Named UNHCR sites with a published headcount and date. These are people already living in a camp or settlement — not 2023 net migration and not “arrived this year.”',
@@ -57,6 +59,174 @@ export const enToday: TodayShelfCopy = {
   detectionsOpen: 'Open EU route note',
   detectionsNationalities: 'Most frequently detected nationalities in 2025: Bangladeshi, Egyptian, Afghan — not a statement about who “arrives most” worldwide.',
   noHeadcount: 'No reliable headcount',
+  idpTitle: 'Internal displacement (IDMC)',
+  idpLead:
+    'IDMC recorded more than 62.2 million internal displacements in 2025 (−6% vs 2024): 32.3 million from conflict and violence (record) and 29.9 million from disasters. Conflict led disasters for the first time; 42 countries recorded both.',
+  idpDefinition:
+    'IDMC counts people forced from home by conflict, violence, or disasters who have not crossed an international border. This is not UN DESA international migrant stock, not a Frontex detection count, and not a UNHCR camp headcount. Movements during the year (new or repeated) are not the same as year-end stock, and the same person can move more than once.',
+  idpHonesty:
+    'GRID 2026 covers calendar 2025 (report published 12 May 2026). Stock is people still living in internal displacement at year-end. Annual figures are counted movements, not unique people. Do not caption 32.3 million as 32.3 million unique people.',
+  idpNoChoropleth:
+    'Named crises below are sourced notes, not a colour-by-count world map. IDMC coverage is incomplete; this page does not invent a global choropleth or a “breakthrough” arrow layer from these totals.',
+  idpMillion: 'million',
+  idpMovementsUnit: 'movements, 2025',
+  idpStockUnit: 'people, end-2025',
+  idpConflictLabel: 'Conflict and violence',
+  idpDisasterLabel: 'Disasters',
+  idpCountriesLabel: 'countries and territories',
+  idpBothLabel: 'countries with both triggers',
+  idpCrisesTitle: 'Named crises — sourced notes, not a map',
+  idpCards: {
+    'idp-stock-2025': {
+      tag: 'Stock · end-2025',
+      title: 'People living in internal displacement',
+      hook: 'More than 82.2 million people were living in internal displacement across 104 countries and territories at the end of 2025 — the first slight global decline in a decade, still near record levels.',
+      detail: [
+        'IDMC’s year-end stock of people who have been forced to flee their homes by conflict, violence, or disasters and have not crossed an international border. It is not UN DESA international migrant stock, not a Frontex detection count, and not a UNHCR camp headcount.',
+        'Of that stock, more than 68.6 million were displaced by conflict and violence (54 countries/territories) and almost 13.6 million by disasters (82 countries/territories), as of 31 December 2025.',
+        'GRID 2026 attributes much of the small global decline to returns in parts of Sudan, the DRC, and Syria — and warns that returns are not automatically durable solutions. Nearly three-quarters of countries hosting conflict IDPs still lacked up-to-date data by year-end.',
+      ],
+    },
+    'idp-conflict-displacements-2025': {
+      tag: 'Movements · 2025',
+      title: 'Conflict and violence displacements',
+      hook: 'Conflict and violence triggered a record 32.3 million internal displacements across 48 countries and territories in 2025 — about 60% above 2024, and more than disasters for the first time in IDMC’s series.',
+      detail: [
+        'Counted movements during the year (new or repeated). The same person can move more than once. Do not caption this as “32.3 million unique people.”',
+        'GRID 2026 notes displacement was highly concentrated: Iran and the DRC each accounted for around a third of the global conflict-displacement total. International armed conflicts accounted for about 46% of conflict displacements; the number of countries with displacement linked to international conflicts rose from 6 in 2024 to 13 in 2025.',
+        'Urban fighting around places such as El Fasher, Goma, and Tehran is named in the executive summary as feeding large, often repeated movements. Sudan remained the largest IDP-hosting crisis (about 9.1 million people living in displacement in Sudan at year-end).',
+      ],
+    },
+    'idp-disaster-displacements-2025': {
+      tag: 'Movements · 2025',
+      title: 'Disaster displacements',
+      hook: 'Disasters triggered 29.9 million internal displacements across 140 countries and territories in 2025 — down 35% from the extreme 2024 peak, still about 13% above the decade average.',
+      detail: [
+        'Storms: about 17.9 million movements (~60% of disaster displacements; second-highest annual storm figure on record). Floods: under 7.9 million (−31% vs the decade average). Wildfires: more than 694,000 movements (second-highest in a decade). Geophysical hazards: around 2.5 million, including large pre-emptive evacuations after major earthquakes.',
+        'The Philippines alone recorded about 10.7 million disaster displacements in 2025 (~36% of the global disaster total in GRID’s map summary). That is mostly weather-hazard movement and evacuation accounting — not a claim that climate “explains” all migration on the page.',
+        'Disaster IDP movements are real and sourced; they are still internal and are not the same series as the M49 net-migration tablets.',
+      ],
+    },
+    'idp-movements-2025-overview': {
+      tag: 'Overview · 2025',
+      title: 'Internal displacements in 2025',
+      hook: 'IDMC recorded more than 62.2 million internal displacements in 2025 (−6% vs 2024): 32.3 million from conflict and violence (record) and 29.9 million from disasters. Conflict led disasters for the first time; 42 countries recorded both.',
+      detail: [
+        'Movements during the year are not the year-end stock and not cross-border migration. The stock, conflict, and disaster panels give the splits. These totals are not a global “breakthrough” arrow layer.',
+      ],
+    },
+  },
+  refugeesTitle: 'Refugees under UNHCR mandate',
+  refugeesLead:
+    'People who fled across an international border and remain under UNHCR’s mandate. Global Trends 2025, published on 11 June 2026, puts that stock at 35.6 million at the end of 2025 — about 3% fewer than a year earlier, still near record levels.',
+  refugeesDefinition:
+    'Crossed an international border, and counted by UNHCR as a refugee, a person in a refugee-like situation, or another person in need of international protection. This is not a UNHCR camp headcount, not IDMC internal displacement, not Palestine refugees under UNRWA, not UN DESA migrant stock, and not a Frontex detection count. Asylum-seekers still waiting for a decision are counted separately.',
+  refugeesHonesty:
+    'Global Trends 2025 covers calendar 2025. Stock is the population at 31 December 2025. Returns are movements during that year. The lists below are curated from the report and the Refugee Data Finder, not a complete country census on this page.',
+  refugeesNoChoropleth:
+    'No colour-by-count world map. Host and origin ranks are short lists with sources, not invented country shapes. Named camps stay on the camps layer.',
+  refugeesCards: {
+    'refugees-unhcr-stock-2025': {
+      tag: 'Stock · end-2025',
+      title: 'Refugees under UNHCR mandate',
+      hook: '35.6 million people were refugees, people in a refugee-like situation, or other people in need of international protection under UNHCR’s mandate at the end of 2025 — about 3% fewer than a year earlier, still near record levels.',
+      figure: '35.6',
+      unit: 'million people, end-2025',
+      rows: [
+        { label: 'Refugees, including refugee-like situations', figure: '28.5 million' },
+        { label: 'Other people in need of international protection', figure: '7.2 million' },
+        { label: 'Palestine refugees under UNRWA (separate)', figure: 'about 6 million' },
+        { label: 'Asylum-seekers waiting for a decision (separate)', figure: 'almost 9 million' },
+      ],
+      detail: [
+        'UNHCR’s year-end stock of people who have fled across an international border and need international protection under its mandate. It includes about 28.5 million refugees (including people in a refugee-like situation) and 7.2 million other people in need of international protection. It is not a UNHCR camp headcount, not IDMC internal displacement, not UN DESA migrant stock, and not a Frontex detection count.',
+        'About 6 million Palestine refugees under UNRWA’s mandate sit beside this figure, not inside it. Together with UNRWA, the broader refugees glance figure is about 41.6 million. Almost 9 million asylum-seekers were still waiting for a decision on their claims at end-2025 — counted separately.',
+        'Global Trends 2025 links the decline mainly to returns in large situations, especially Afghanistan, Syria, and Sudan, and notes that many returns happened under pressure, to fragile conditions.',
+      ],
+    },
+    'refugees-top-hosts-2025': {
+      tag: 'Hosts · end-2025',
+      title: 'Where refugees are hosted',
+      hook: 'Five countries hosted about one-third of refugees and other people in need of international protection under UNHCR’s scope at end-2025: Colombia 2.8 million, Germany 2.7 million, Türkiye 2.4 million, Uganda 1.9 million, Iran 1.7 million.',
+      figure: '1/3',
+      unit: 'in five host countries, end-2025',
+      rows: [
+        { label: 'Colombia', figure: '2.8 million' },
+        { label: 'Germany', figure: '2.7 million' },
+        { label: 'Türkiye', figure: '2.4 million' },
+        { label: 'Uganda', figure: '1.9 million' },
+        { label: 'Iran', figure: '1.7 million' },
+      ],
+      detail: [
+        'End-2025 host stocks from UNHCR Global Trends and the Refugee Data Finder, for refugees, people in a refugee-like situation, and other people in need of international protection. This is not a ranking of camp sizes and not a count of who received the most arrivals this year.',
+        'Colombia’s figure is driven largely by Venezuelans with protection status. Germany and Türkiye are high-income and upper-middle-income hosts with different legal pathways. Uganda and Iran are major neighbouring hosts. Low- and middle-income countries still host 68% of this population. Least developed countries host 26% (about 9.4 million).',
+        'Named UNHCR camps, including Cox’s Bazar and Dadaab, stay on the camps layer. A large host can have few large camps. Most refugees worldwide do not live in camps.',
+      ],
+    },
+    'refugees-top-origins-2025': {
+      tag: 'Origins · end-2025',
+      title: 'Where refugees come from',
+      hook: 'About two-thirds of refugees and other people in need of international protection under UNHCR’s scope came from just five countries at end-2025: Venezuela 6.5 million, Ukraine 5.2 million, Syria 4.9 million, Afghanistan 3.7 million, Sudan 2.8 million.',
+      figure: '2/3',
+      unit: 'from five countries of origin, end-2025',
+      rows: [
+        { label: 'Venezuela', figure: '6.5 million' },
+        { label: 'Ukraine', figure: '5.2 million' },
+        { label: 'Syria', figure: '4.9 million' },
+        { label: 'Afghanistan', figure: '3.7 million' },
+        { label: 'Sudan', figure: '2.8 million' },
+      ],
+      detail: [
+        'Origin stocks for the same UNHCR population as the host list. More than 70% come from six countries when South Sudan is included with those five.',
+        'Syrian refugee numbers fell to about 4.9 million by end-2025 after large returns. Afghan numbers fell to about 3.7 million. Ukrainian figures remain high under temporary protection and related statuses counted in this scope. Venezuelans remain the largest origin group among other people in need of international protection across the Americas.',
+        'About 5.4 million people were forced to flee across a border during 2025. That is a flow for the year, not this stock.',
+      ],
+    },
+    'refugees-neighbouring-hosts-2025': {
+      tag: 'Pattern · end-2025',
+      title: 'Most refugees stay nearby',
+      hook: '65% of refugees and other people in need of international protection lived in countries neighbouring their origin at end-2025. 68% were hosted in low- and middle-income countries.',
+      figure: '65%',
+      unit: 'in neighbouring countries, end-2025',
+      rows: [
+        { label: 'Neighbouring countries', figure: '65%' },
+        { label: 'Low- and middle-income countries', figure: '68%' },
+        { label: 'Protracted situations, five years or more', figure: 'about 70%' },
+      ],
+      detail: [
+        'These shares answer where the stock sits, not which European Union route is busiest. Frontex detections remain a separate count of irregular crossings at the EU’s external borders.',
+        'About 70% of refugees under this scope were in protracted situations — five years or more without an immediate durable solution. Global Trends 2025 counts about 24.9 million people in just over 1,300 such situations in low- and middle-income countries.',
+        'Neighbouring and lower-income hosting is the durable pattern in UNHCR’s series. These shares are not a claim that the world’s refugees mainly move from Africa to Europe.',
+      ],
+    },
+    'refugees-returns-2025': {
+      tag: 'Returns · 2025',
+      title: 'Refugee returns in 2025',
+      hook: 'Nearly 4.4 million refugees returned to their countries of origin in 2025 — among the highest return years on record. Over 90% went back to just three countries: Afghanistan (about 1.9 million), Syria (about 1.3 million), and Sudan (about 651,500).',
+      figure: '4.4',
+      unit: 'million returns, 2025',
+      rows: [
+        { label: 'Afghanistan', figure: 'about 1.9 million' },
+        { label: 'Syria', figure: 'about 1.3 million' },
+        { label: 'Sudan', figure: 'about 651,500' },
+      ],
+      detail: [
+        'Refugee returns during calendar 2025, as reported in Global Trends. UNHCR warns that many returns happened under adverse circumstances, to areas where insecurity and weak services persist. A return is not automatically a durable solution.',
+        'Returns of people displaced inside their own country are a different series and stay on the internal displacement layer. Resettlement and sponsorship arrivals fell by more than half, to about 81,800 in 2025.',
+        'Return volume rose. Safety and reintegration often did not match that headline.',
+      ],
+    },
+  },
+  idpCrisisCopy: {
+    'sudan-stock': {
+      place: 'Sudan',
+      note: 'Largest IDP-hosting crisis at year-end 2025. About 9.1 million people were still living in internal displacement in Sudan. A year-end stock, not 2025 movements, and not a UNHCR camp headcount.',
+    },
+    'philippines-disaster-2025': {
+      place: 'Philippines',
+      note: 'About 10.7 million disaster displacements in 2025 — around 36% of the global disaster total in GRID’s map summary. Mostly weather-hazard movement and evacuation accounting, not a “climate migrant” world map.',
+    },
+  },
   regions: {
     africa: {
       name: 'Africa',
@@ -131,17 +301,17 @@ export const enToday: TodayShelfCopy = {
     'coxs-bazar': {
       name: 'Cox’s Bazar camps',
       country: 'Bangladesh',
-      note: 'Government of Bangladesh / UNHCR: 33 camps in Cox’s Bazar district, including Kutupalong. Rohingya refugees from Myanmar. A further about 33,659 people on Bhasan Char are not added into this marker.',
+      note: 'Government of Bangladesh / UNHCR: 33 camps in Cox’s Bazar district, including Kutupalong. Rohingya refugees from Myanmar. A further 33,514 people on Bhasan Char are not added into this marker.',
     },
     dadaab: {
       name: 'Dadaab',
       country: 'Kenya',
-      note: 'Dadaab camp complex, eastern Kenya. Figure as published for 31 December 2025. A complex, not a single tent city.',
+      note: 'Dadaab camp complex, eastern Kenya. Kenya Statistics Package as of 31 August 2026 (Government / UNHCR). A complex, not a single tent city.',
     },
     'kakuma-kalobeyei': {
       name: 'Kakuma and Kalobeyei',
       country: 'Kenya',
-      note: 'Kakuma 225,701; Kalobeyei 82,629; Eldoret 2,425 — the three sites UNHCR Kenya grouped in the 31 December 2025 update. Shown as one marker because they are one operation.',
+      note: 'Kakuma 234,542, Kalobeyei 86,547 and Eldoret 2,573, grouped as one Kakuma-area operation in the Kenya Statistics Package, 31 August 2026.',
     },
     bidibidi: {
       name: 'Bidibidi',
@@ -151,7 +321,7 @@ export const enToday: TodayShelfCopy = {
     zaatari: {
       name: 'Zaatari',
       country: 'Jordan',
-      note: 'Zaatari camp. Most residents were displaced from Syria. UNHCR operational figure, 31 August 2026.',
+      note: 'Zaatari camp. Most residents were displaced from Syria. UNHCR Jordan population figures, 31 August 2026.',
     },
   },
   routeCopy: {
