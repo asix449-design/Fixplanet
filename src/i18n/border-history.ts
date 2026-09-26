@@ -1019,6 +1019,17 @@ const captions: Record<Locale, Record<number, BorderFrameCopy>> = {
 
 export type BorderFrame = BorderFrameMeta & BorderFrameCopy;
 
+/** Stored years look like "1500 CE". Public captions use the era mark already used in that locale's titles. */
+export function formatBorderSourceYear(sourceYear: string, locale: Locale): string {
+  const match = /^(\d+)\s+CE$/.exec(sourceYear);
+  if (!match) return sourceYear;
+  const year = match[1];
+  if (locale === 'ru') return `${year} н. э.`;
+  if (locale === 'pl') return `${year} n.e.`;
+  if (locale === 'lv') return `${year}. m.ē.`;
+  return sourceYear;
+}
+
 export function getBorderHistoryPage(locale: Locale): BorderHistoryPage {
   return page[locale];
 }

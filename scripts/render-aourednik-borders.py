@@ -2,7 +2,7 @@
 """Render aourednik historical-basemaps GeoJSON as school-GIS world plates.
 
 Fills + large polity labels (stock SVGs are stroke-only). Modern Natural Earth
-coastlines are the land base — schematic / WIP, not a cadastral survey.
+coastlines are the land base — schematic, not a cadastral survey.
 
 Output: public/images/maps/borders/y1100.png, y1300.png, y1400.png,
 y1500.png, y1700.png, y1800.png, y1900.png
@@ -470,7 +470,7 @@ def label_text(year: int, name: str) -> str:
 
 FOOTER = (
     "Historical basemaps © André Ourednik et al. · GPL-3.0 · "
-    "github.com/aourednik/historical-basemaps · Approximate / WIP borders"
+    "github.com/aourednik/historical-basemaps · Approximate borders"
 )
 
 WORLD = box(-179.999, -89.9, 179.999, 89.9)
