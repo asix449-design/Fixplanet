@@ -46,6 +46,13 @@ export {
 } from './innovations';
 export { getForestFrames, getForestHeroStats, getForestStats, getForestsPage } from './forests';
 export {
+  forestAtlasChrome,
+  forestAtlasHubLede,
+  forestAtlasSectionLabels,
+  getForestAtlas,
+  getForestAtlasBySlug,
+} from './forest-atlas';
+export {
   getOceanCurrentFrames,
   getOceanPollution,
   getOceanSalinityFrames,

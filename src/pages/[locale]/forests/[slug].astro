@@ -1,15 +1,23 @@
 ---
+import { forestAtlasSlugs, isForestAtlas } from '../../../data/forest-atlas';
 import { forestPanelKeys, isForestPanel } from '../../../data/forests';
 import { otherLocales } from '../../../i18n';
+import ForestAtlasDetailView from '../../../views/ForestAtlasDetailView.astro';
 import ForestsView from '../../../views/ForestsView.astro';
 
 export function getStaticPaths() {
   return otherLocales.flatMap((locale) =>
-    forestPanelKeys.map((slug) => ({ params: { locale, slug } })),
+    [...forestPanelKeys, ...forestAtlasSlugs].map((slug) => ({ params: { locale, slug } })),
   );
 }
 
 const { slug } = Astro.params;
 ---
 
-<ForestsView panel={isForestPanel(slug) ? slug : 'satellite'} />
+{
+  isForestAtlas(slug) ? (
+    <ForestAtlasDetailView slug={slug} />
+  ) : (
+    <ForestsView panel={isForestPanel(slug) ? slug : 'satellite'} />
+  )
+}

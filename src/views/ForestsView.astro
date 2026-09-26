@@ -1,4 +1,6 @@
 ---
+import ForestAtlasCard from '../components/ForestAtlasCard.astro';
+import ForestRelated from '../components/ForestRelated.astro';
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -20,6 +22,9 @@ import {
   type ForestPanel,
 } from '../data/forests';
 import {
+  forestAtlasChrome,
+  forestAtlasHubLede,
+  getForestAtlas,
   getForestFrames,
   getForestHeroStats,
   getForestStats,
@@ -45,6 +50,9 @@ const activePanel: ForestPanel | undefined = hub
 
 const satelliteFrames = getForestFrames(locale, 'satellite');
 const reconstructionFrames = getForestFrames(locale, 'reconstruction');
+const atlasMaps = getForestAtlas(locale);
+const atlasLede = forestAtlasHubLede[locale];
+const atlasChrome = forestAtlasChrome(locale);
 const stats = getForestStats(locale);
 const heroStats = getForestHeroStats(locale);
 const longViewSrc = forestFrameSrc(longViewImage.file);
@@ -123,6 +131,27 @@ const pageTitle = activePanel
           title={page.panels[activePanel]}
         />
       )
+    )
+  }
+
+  {
+    hub && (
+      <section class="section section-hub-follow" aria-label={atlasChrome.layersAria}>
+        <div class="wrap">
+          <div class="wildlife-copy-card forests-panel">
+            {
+              atlasLede && (
+                <div class="encyc-lede">
+                  <p>{atlasLede}</p>
+                </div>
+              )
+            }
+            <div class="card-grid">
+              {atlasMaps.map((item) => <ForestAtlasCard map={item} />)}
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 
@@ -396,6 +425,7 @@ const pageTitle = activePanel
     </div>
   </section>
   )}
+  {activePanel && <ForestRelated currentPanel={activePanel} />}
 </BaseLayout>
 
 {activePanel === 'satellite' && (
