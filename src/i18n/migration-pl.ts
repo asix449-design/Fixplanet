@@ -105,7 +105,7 @@ export const page: MigrationPage = {
     mapLinks: {
       title: 'Mapy wczesnych migracji',
       lead:
-        'Publiczne mapy dydaktyczne — otwierane na ich stronach, bez iframe. Daty zostają przy nazwanym źródle. To nie drugi atlas zdarzeń i nie GPS każdej grupy.',
+        'Publiczne mapy dydaktyczne — otwierane na ich stronach. Daty zostają przy nazwanym źródle. To nie GPS każdej grupy.',
       openMap: 'Otwórz mapę →',
       listedBy: 'Wymienione w',
       extraLabels: {
@@ -124,12 +124,12 @@ export const page: MigrationPage = {
         'early-fossils': {
           title: 'Wczesne stanowiska skamieniałości Homo sapiens',
           hook:
-            'Globalne miejsca wczesnych znalezisk, ze źródeł Wikipedii. Interaktyw History Maps wymieniony przez Maps Mania nie ma już stabilnego hosta — otwórz opis Maps Mania, potem trwałą listę Wikipedii.',
+            'Globalne miejsca wczesnych znalezisk, ze źródeł Wikipedii.',
         },
         'hominid-evolution': {
           title: 'Mapy ewolucji hominidów (~7 mln lat)',
           hook:
-            'Atlas of Human Evolution: trzy mapy epok — australopiteki, Homo erectus i Homo sapiens — z własnymi etykietami atlasu. Mapy dydaktyczne, nie chronologia Fix Planet.',
+            'Atlas of Human Evolution: trzy mapy epok — australopiteki, Homo erectus i Homo sapiens — z własnymi etykietami atlasu.',
         },
       },
     },

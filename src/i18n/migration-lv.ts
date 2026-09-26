@@ -105,7 +105,7 @@ export const page: MigrationPage = {
     mapLinks: {
       title: 'Agrīno migrāciju kartes',
       lead:
-        'Publiskas mācību kartes — atveramas to pašu vietnēs, bez iframe. Datumi paliek pie nosauktā avota. Tā nav otra notikumu atlanta un nav katras grupas GPS.',
+        'Publiskas mācību kartes — atveramas to pašu vietnēs. Datumi paliek pie nosauktā avota. Tā nav katras grupas GPS.',
       openMap: 'Atvērt karti →',
       listedBy: 'Minēts',
       extraLabels: {
@@ -124,12 +124,12 @@ export const page: MigrationPage = {
         'early-fossils': {
           title: 'Agrīnās Homo sapiens fosiliju vietas',
           hook:
-            'Globāli agrīno atradumu punkti pēc Vikipēdijas. History Maps interaktīvs, ko minēja Maps Mania, vairs nav uz stabila hosta — atveriet Maps Mania aprakstu, tad noturīgo Vikipēdijas sarakstu.',
+            'Globāli agrīno atradumu punkti pēc Vikipēdijas.',
         },
         'hominid-evolution': {
           title: 'Hominīdu evolūcijas kartes (~7 miljoni gadu)',
           hook:
-            'Atlas of Human Evolution: trīs laikmetu kartes — australopitēki, Homo erectus un Homo sapiens — ar atlanta paša periodu etiķetēm. Mācību kartes, ne Fix Planet hronoloģija.',
+            'Atlas of Human Evolution: trīs laikmetu kartes — australopitēki, Homo erectus un Homo sapiens — ar atlanta paša periodu etiķetēm.',
         },
       },
     },

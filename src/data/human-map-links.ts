@@ -24,7 +24,7 @@ export type HumanMapLinkMeta = {
 
 /** Cartetika listed these maps — attribution only, not a primary paper. */
 export const cartetikaRoundup = cite(
-  'Cartetika — maps of early human migrations (roundup, not a primary paper)',
+  'Cartetika — maps of early human migrations',
   'https://cartetika.ru/tpost/xbc3v1db01-karti-rannih-migratsii-lyudei',
 );
 
@@ -57,7 +57,7 @@ export const humanMapLinkMeta: readonly HumanMapLinkMeta[] = [
       },
     ],
     source: cite(
-      'Wikipedia — List of human evolution fossils (durable catalog)',
+      'Wikipedia — List of human evolution fossils',
       'https://en.wikipedia.org/wiki/List_of_human_evolution_fossils',
     ),
   },

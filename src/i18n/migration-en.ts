@@ -105,7 +105,7 @@ export const page: MigrationPage = {
     mapLinks: {
       title: 'Early migration maps',
       lead:
-        'Public teaching maps, opened in their own sites — no iframes here. Dates stay with the named source. This is not a second event atlas and not a GPS of every band.',
+        'Public teaching maps, opened on their own sites. Dates stay with the named source. Not a GPS of every band.',
       openMap: 'Open map →',
       listedBy: 'Listed in',
       extraLabels: {
@@ -124,12 +124,12 @@ export const page: MigrationPage = {
         'early-fossils': {
           title: 'Early Homo sapiens fossil sites',
           hook:
-            'Global early fossil find spots, Wikipedia-sourced. The History Maps interactive that Maps Mania listed is no longer on a stable host — open the Maps Mania write-up, then the durable Wikipedia list.',
+            'Global early fossil find spots, Wikipedia-sourced.',
         },
         'hominid-evolution': {
           title: 'Hominid evolution maps (~7 Myr)',
           hook:
-            'Atlas of Human Evolution: three era maps — australopithecines, Homo erectus, and Homo sapiens — using the atlas’s own period labels. Teaching maps, not a Fix Planet chronology.',
+            'Atlas of Human Evolution: three era maps — australopithecines, Homo erectus, and Homo sapiens — using the atlas’s own period labels.',
         },
       },
     },
