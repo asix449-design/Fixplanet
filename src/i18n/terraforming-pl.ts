@@ -158,7 +158,7 @@ export const pl: Record<string, GeoCopy> = {
     lessons:
       'NDVI to nie las. Monokulturowe topole to zakład o suszę. Pas wiatrochronny może ściąć piasek i nadal wydobywać wodonośny. Liczcie przetrwałą, użyteczną pokrywę — i kto stracił wypas — nie tylko wydane sadzonki.',
     sourcesNote:
-      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 o programie do 2022; Sun et al. 2018 o zamieraniu Populus simonii.',
+      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 o programie do 2022.',
   },
   'africa-great-green-wall': {
     title: 'Wielki Zielony Mur (Afryka)',
@@ -172,11 +172,11 @@ export const pl: Record<string, GeoCopy> = {
     construction:
       'Programy krajowe się różnią. Etiopia zgłasza duże liczby sadzonek; Senegal ma lepiej udokumentowane działki; kilka państw ma cienki monitoring. Raport statusu UNCCD z 2020 dał odbudowany areał rzędu 4 milionów hektarów (około 4 procent celu 100 milionów) z nierównymi danymi o przeżyciu. „Akcelerator” z 2021 obiecał nowe finanse; wypłaty zostawały za deklaracjami.',
     outcome:
-      'W czerwcu 2024 prezydent poprzedniej COP ONZ ds. pustynnienia powiedział Reutersowi, że odbudowano około 30 milionów hektarów — 30 procent celu 2030 — i że termin nie zostanie dotrzymany. Wskaźniki przeżycia nadal są słabo i niespójnie monitorowane poza kilkoma krajami. W późniejszych briefingach zgłoszono trzy miliony miejsc pracy; miejsca pracy i hektary traktujcie jako liczby programowe, nie spis terenowy.',
+      'Późniejsze briefingi programowe podawały rzędu 30 milionów hektarów odbudowanych — około 30 procent celu 2030 — i mówiły, że termin nie zostanie dotrzymany. Wskaźniki przeżycia nadal są słabo i niespójnie monitorowane poza kilkoma krajami. W późniejszych briefingach zgłoszono trzy miliony miejsc pracy; miejsca pracy i hektary traktujcie jako liczby programowe, nie spis terenowy.',
     lessons:
       'Mur był złą metaforą dla gradientu opadów. Odbudowa, która płaci lokalnym użytkownikom, trwa dłużej niż ceremonialne sadzenie. Nie zrównujcie „zgłoszonych hektarów” z „drzewami żywymi w 2030”. Finanse zadeklarowane i niewydane to nie korona.',
     sourcesNote:
-      'Status wdrożenia UNCCD 2020; strony UNCCD GGW; Reuters 12 czerwca 2024 o ~30 milionach ha i niedotrzymanej ścieżce 2030.',
+      'Strony inicjatywy Great Green Wall UNCCD; status wdrożenia UNCCD 2020 i droga do 2030.',
   },
   'saudi-green-initiative': {
     title: 'Saudyjska Inicjatywa Zielona',
@@ -190,11 +190,11 @@ export const pl: Record<string, GeoCopy> = {
     construction:
       'Kampanie sadzenia i „rehabilitacji” trwają przez MEWA i National Center for Vegetation Cover. Urzędnicy powiedzieli, że zrehabilitowany areał przeszedł z 18 000 hektarów na starcie do 250 000 do 2024 i 1 miliona na początku 2026, przy 159 milionach posadzonych drzew. To liczby rządu i SPA, nie zewnętrzny spis pni. Wspomniano punkt 2030: 2,5 miliona hektarów.',
     outcome:
-      'Jeśli oficjalny milion hektarów utrzyma się w audycie, to 2,5 procent sloganu 40 milionów hektarów — początek, nie skończone zazielenienie Arabii. Niezależna literatura nadal podkreśla starszą, lepiej zmierzoną historię: dekady pszenicy na nieodnawialnych wodonośnych, później ograniczanej (w tym wygaszanie pszenicy z połowy lat 2010.), bo woda nie wracała. Odsalanie służy głównie miastom; nie czyni nawodnienia zbóż tanim. Własny popyt drzew SGI na wodę to żywe pytanie badawcze (KAPSARC i inni).',
+      'Jeśli oficjalny milion hektarów utrzyma się w audycie, to 2,5 procent sloganu 40 milionów hektarów — początek, nie skończone zazielenienie Arabii. Niezależna literatura nadal podkreśla starszą, lepiej zmierzoną historię: dekady pszenicy na nieodnawialnych wodonośnych, później ograniczanej (w tym wygaszanie pszenicy z połowy lat 2010.), bo woda nie wracała. Odsalanie służy głównie miastom; nie czyni nawodnienia zbóż tanim. Własny popyt drzew SGI na wodę to żywe pytanie badawcze.',
     lessons:
       'Trzymajcie programy osobno: SGI ≠ pszenica kręgów obrotowych ≠ NEOM. Wierzcie liczbom posadzonych-i-przeżyłych, gdy działki są publiczne. Pustynia może gościć parki i nadal mieć wydobywany wodonośny pod spodem. Dziesięć miliardów drzew to cel. Jeden milion hektarów, jeśli prawdziwy, to pierwszy przyrost.',
     sourcesNote:
-      'Oficjalna strona SGI; twierdzenie kamienia milowego MEWA/SPA 2026; KAPSARC o wodzie rolniczej i popycie SGI; FAO AQUASTAT dla kontekstu wód gruntowych i pszenicy. Zdjęcie kręgów to historyczne nawodnienie, tak opisane.',
+      'Strona Saudi Green Initiative w Vision 2030; twierdzenie kamienia milowego MEWA/SPA 2026; FAO AQUASTAT dla kontekstu wód gruntowych i pszenicy. Zdjęcie kręgów to historyczne nawodnienie, tak opisane.',
   },
   'loess-plateau-rehabilitation': {
     title: 'Rehabilitacja Wyżyny Lessowej',
@@ -213,6 +213,24 @@ export const pl: Record<string, GeoCopy> = {
       'Tarasy, umowy i reguły wypasu mogą podnieść plony i ściąć osad w traktowanych zlewniach, nie będąc murem ze sloganu. Liczcie przetrwałą pokrywę i kto trzyma ziemię — nie wydane sadzonki. Zamknięty projekt Banku Światowego to nie koniec erozji Huang He. Nie wkładajcie tej karty pod Trzy Północy ani Wielki Zielony Mur Afryki.',
     sourcesNote:
       'PDF studium przypadku Banku Światowego, Szanghaj 2004 (wyniki fazy I); strony projektów P003608 (1994–2002) i P056216 (zatwierdzony 1999, zamknięty 2005).',
+  },
+  'jordan-badia-restoration': {
+    title: 'Odbudowa Badii (Jordania)',
+    hook: 'Kompensata za szkody środowiskowe po wojnie w Zatoce zapłaciła za naprawę suchych pastwisk jordańskiej Badii. Bruzdy konturowe, stawy, rodzime krzewy paszowe i odpoczywające pastwiska — reguły wypasu wspólnot, nie pas drzew przez Azję.',
+    imageAlt:
+      'Łoboda (Atriplex) na Białej Pustyni / Wadi Dahek w północno-wschodniej Jordanii — klasa rodzimych krzewów paszowych, które sadzi odbudowa Badii, nie zdjęcie nazwanego poletka UNCC',
+    jurisdiction: 'Jordańskie Królestwo Haszymidzkie (pastwiska Badii)',
+    yearStatus:
+      'Wypłata UNCC z roszczenia 5000304; Community Action Plan złożony w 2013. Prace zlewniowe i reguły wypasu przez lata 2010.–2020. Status: częściowy — program z kompensaty, nie skończony „zielony mur”.',
+    plan: 'Roszczenie UNCC 5000304 sfinansowało spółdzielczą odbudowę pastwisk jordańskiej Badii po odszkodowaniach za szkody środowiskowe wojny w Zatoce. Krajowy punkt kontaktowy złożył Community Action Plan (CAP) w 2013; plan przyjęto w ramach Follow-up Programme for Environmental Awards. CAP celuje w zdegradowane zlewnie Badii: zbieranie wody (stawy, ziemne zapory, bruzdowanie konturowe), sadzenie rodzimych krzewów paszowych, zarządzany wypas / odpoczynek i wspólnotowa produkcja paszy. W najlepszym scenariuszu planowano odbudować rzędu 10% Badii (~7100 km²) wybranymi zlewniami — nie ciągły sadzony mur.',
+    construction:
+      'Jednostka programowa Ministerstwa Środowiska w latach 2010.; nadzór follow-up UNCC przekazano Jordanii po decyzjach Rady Zarządzającej w 2013–2014. ICARDA i partnerzy: zmechanizowane mikrozlewnie (np. Vallerani), sadzenie rodzimych krzewów, zlewnie takie jak Al Majeddyeh. Dwanaście zlewni w planowaniu CAP; realizacja nierówna według basenów. To rehabilitacja pastwisk, nie afrykański Wielki Zielony Mur i nie chiński pas Trzech Północy.',
+    outcome:
+      'Bodźce do przegęszczenia stad pozostają; przeżycie i jakość monitoringu się różnią; długi odpoczynek pastwisk wymaga zgody wspólnot, gdy nadzór z kompensaty cienieje. Oficjalne hektary traktujcie jako cele programu pod audytem, nie skończone zazielenianie pustyni.',
+    lessons:
+      'Odszkodowanie może opłacić jamy konturowe i nadal zostawić bodźce do przegęszczenia. Wybrana zlewnia to nie zielony mur. Liczcie przetrwałe krzewy i odpoczęte pastwiska przy regułach wspólnot — nie dolary roszczenia ani hektary-cele. Cyfra 10 procent Badii to pułap planowania, nie gotowa korona.',
+    sourcesNote:
+      'Roszczenie UNCC 5000304 o spółdzielczą odbudowę pastwisk; Follow-up Programme for Environmental Awards UNCC; ICARDA o odbudowie zlewni Badii.',
   },
   'stratospheric-aerosol-injection': {
     title: 'Stratosferyczna iniekcja aerozoli',
@@ -267,5 +285,67 @@ export const pl: Record<string, GeoCopy> = {
       'Ślad statku to trop, nie polityka klimatyczna. Lokalne eksperymenty cieniowania rafy muszą zostać opisane jako eksperymenty. Nie sprzedawajcie MCB jako sposobu, by dalej emitować. Jeśli miasto może zamknąć próbę, nie macie planetarnej technologii — macie sporny instrument.',
     sourcesNote:
       'Przegląd Latham et al. 2012 w Philosophical Transactions; program MCB University of Washington; strony programu RRAP Cooling and Shading.',
+  },
+  'cirrus-cloud-thinning': {
+    title: 'Przerzedzanie chmur pierzastych',
+    hook: 'Zasiać wysokie chmury lodowe, by stały się cieńsze i wypuszczały więcej ciepła w kosmos. Modele się rozchodzą; IPCC ma niską pewność co do chłodzenia. To nie SAI pod inną nazwą.',
+    imageAlt:
+      'Obraz MODIS wysokich chmur pierzastych nad Pacyfikiem i środkowym Chile — naturalne chmury lodowe, nie eksperyment przerzedzania',
+    jurisdiction: 'Społeczność badawcza (modele; bez operacyjnego wdrożenia państwowego)',
+    yearStatus:
+      'Cirrus cloud thinning (CCT); ocena w IPCC AR6 WG I; osobno od SAI i MCB w przeglądzie NOAA SRM (lipiec 2024). Status: badania.',
+    plan: 'Dodaje jądra nukleacji lodu do zimnych chmur pierzastych: kryształy większe, szybciej opadają, chmura cieńsza — więcej wychodzącego długofalowego promieniowania.',
+    construction: 'Modele i prace o mikrofizyce; brak floty państwowej. IPCC — niska pewność.',
+    outcome: 'Modele się rozchodzą; IPCC ma niską pewność co do chłodzenia.',
+    lessons:
+      'Nie usuwa CO₂ i nie leczy zakwaszenia oceanu. Nie podpisywać jako gotowy termostat i nie mylić z SAI/MCB.',
+    sourcesNote:
+      'IPCC AR6 WG I, rozdział 4 (i PDF); NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (lipiec 2024); Gasparini et al., ACP 2017.',
+  },
+  'surface-albedo-modification': {
+    title: 'Podnoszenie albedo powierzchni',
+    hook: 'Jaśniejsze dachy i drogi — ulice chłodniejsze, mniej klimatyzacji. To nie globalny ściemniacz: miasta to około jednego procenta powierzchni Ziemi.',
+    imageAlt:
+      'Bielone dachy i tarasy na Santorini — śródziemnomorska jasna tradycja, nie planetarny program albedo',
+    jurisdiction: 'Miasta, budynki i propozycje pokrycia terenu (bez programu planetarnego)',
+    yearStatus:
+      'Surface albedo enhancement (chłodne dachy, jasne nawierzchnie); NOAA SRM SoS (lipiec 2024); EPA o cieple miejskim; IPCC AR6 WG III, budynki. Status: badania / lokalna praktyka.',
+    plan: 'Podnosi odbijalność dachów/nawierzchni; EPA — narzędzie przeciw miejskiej wyspie ciepła.',
+    construction: 'Zwykła praktyka budowlana w gorących miastach; brak programu planetarnego.',
+    outcome: 'To nie globalny ściemniacz: miasta to około jednego procenta powierzchni Ziemi.',
+    lessons:
+      'Kara zimowa w zimnym klimacie; nie usuwa CO₂; nie sprzedawać białego dachu jako geoengineeringu planety.',
+    sourcesNote:
+      'EPA — Using Cool Roofs to Reduce Heat Islands; IPCC AR6 WG III, rozdział 9 (budynki, PDF); NOAA CSL SRM SoS (lipiec 2024); NASEM Reflecting Sunlight.',
+  },
+  'ocean-alkalinity-enhancement': {
+    title: 'Podnoszenie zasadowości oceanu',
+    hook: 'Dodać zasadowość, by woda trzymała więcej CO₂ jako wodorowęglan. Chemia, nie żelazne „zasiewanie” planktonu. Nadal badania.',
+    imageAlt:
+      'Boja NOAA MAP-CO2 do badań zakwaszenia oceanu przy rafie Cayo Enrique, Portoryko — monitoring chemii węglanowej, nie wdrożenie OAE',
+    jurisdiction: 'Grupy badawcze / próby mCDR przy wsparciu NOAA (bez komercyjnej licencji planetarnej)',
+    yearStatus:
+      'Ocean alkalinity enhancement (OAE); strategia National Academies dla oceanicznego CDR; przegląd NOAA OAP; granty NOPP. Status: badania.',
+    plan: 'Podnosi zasadowość wody morskiej (minerały lub elektrochemia) → większe pochłanianie CO₂. Nie mylić z nawożeniem żelazem.',
+    construction: 'Laboratoria, modele, wczesne próby terenowe; nie gotowa usługa klimatyczna.',
+    outcome: 'Chemia, nie żelazne „zasiewanie” planktonu. Nadal badania.',
+    lessons: 'Cykl życia, ekologia, monitoring. Nie zastępuje cięcia emisji.',
+    sourcesNote:
+      'NOAA Ocean Acidification Program — Carbon Dioxide Removal; granty NOAA / NOPP dla mCDR; strategia National Academies dla oceanicznego CDR; szkic strategii CDR Rady Naukowej NOAA.',
+  },
+  'glacial-climate-intervention': {
+    title: 'Lodowcowa interwencja klimatyczna',
+    hook: 'Spowolnić kolaps lodowców kurtynami na dnie, hydrologią bazalną lub zimowym pogrubianiem lodu — na papierze. Nie zbudowany mur dla Antarktydy.',
+    imageAlt:
+      'Czoło cielenia lodowca szelfowego Thwaites, morze Amundsena, zdjęcie NASA IceBridge — klasa lodu, o której mówi wizja badawcza z 2024, nie zbudowana kurtyna denna',
+    jurisdiction: 'Wizja badawcza (glacjologia / propozycje polarne; bez wdrożonego programu)',
+    yearStatus:
+      'Glacial Climate Intervention research vision (2024); przegląd interwencji wysokich szerokości w Climatic Change (2024). Status: badania / spekulatywne.',
+    plan: 'Lokalna inżynieria przy lodowcach i lodzie morskim (kurtyny, środki bazalne, pompy), nie przyciemnianie Słońca.',
+    construction: 'Białe księgi i modele; przegląd 2024 — wiele pomysłów słabo gotowych.',
+    outcome: 'Na papierze. Nie zbudowany mur dla Antarktydy.',
+    lessons: 'Ekosystemy, prawa ludności rdzennej, logistyka. Cięcie emisji — główna dźwignia.',
+    sourcesNote:
+      'Glacial Climate Intervention: A Research Vision (2024, PDF przez AWI EPIC); przegląd Moore et al. 2024 w Climatic Change; NOAA CSL SRM SoS.',
   },
 };

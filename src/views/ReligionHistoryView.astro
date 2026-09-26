@@ -1,15 +1,185 @@
 ---
-import ComingSoon from '../components/ComingSoon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getReligionHistoryPage, localizePath, resolveLocale } from '../i18n';
+import { religionHistoryPreviewSrc } from '../data/religion-history';
+import { RELIGION_LEGEND_COLORS, RELIGION_LEGEND_IDS } from '../data/religion-legend';
+import {
+  getReligionContinentLabels,
+  getReligionHistoryFrames,
+  getReligionHistoryPage,
+  getReligionLegend,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getReligionHistoryPage(locale);
+const frames = getReligionHistoryFrames(locale);
+const legendLabels = getReligionLegend(locale);
+const continentLabels = getReligionContinentLabels(locale);
+const firstPreview = religionHistoryPreviewSrc(frames[0]?.preview ?? 'y0001-schematic.png');
+const continentOrder = ['europe', 'africa', 'asia', 'americas', 'oceania'] as const;
+
+const emphasizeCaption = (text: string) =>
+  text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 ---
 
-<BaseLayout title={page.metaTitle} description={page.metaDescription}>
-  <p class="wrap religion-soon-back">
-    <a class="maps-back" href={localizePath('/maps', locale)}>{page.back}</a>
-  </p>
-  <ComingSoon title={page.title} summary={page.soonNotice} />
+<BaseLayout title={page.metaTitle} description={page.metaDescription} image={firstPreview}>
+  <header class="maps-hero maps-hero-detail" aria-labelledby="religion-heading">
+    <div class="maps-hero-media" aria-hidden="true">
+      <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
+    </div>
+    <div class="maps-hero-shade"></div>
+    <div class="wrap maps-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/maps', locale)}>{page.back}</a>
+      </p>
+      <div class="eyebrow maps-eyebrow">{page.eyebrow}</div>
+      <h1 id="religion-heading">{page.title}</h1>
+      <p>{page.lead}</p>
+    </div>
+  </header>
+
+  <section class="section borders-timeline">
+    <div class="wrap">
+      <p class="source-note">{page.honesty}</p>
+
+      <div class="religion-legend" aria-labelledby="religion-legend-heading">
+        <h2 id="religion-legend-heading" class="religion-legend-title">{page.legendHeading}</h2>
+        <ul class="religion-legend-list">
+          {
+            RELIGION_LEGEND_IDS.map((id) => (
+              <li>
+                <span class="religion-swatch" style={`background:${RELIGION_LEGEND_COLORS[id]}`} aria-hidden="true"></span>
+                <span>{legendLabels[id]}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <nav class="borders-scrubber" aria-label={page.scrubberAria}>
+        {
+          frames.map((frame) => (
+            <a class="borders-year" href={`#year-${frame.year}`}>
+              {frame.label}
+            </a>
+          ))
+        }
+      </nav>
+
+      <div class="borders-frames">
+        {
+          frames.map((frame) => {
+            const preview = religionHistoryPreviewSrc(frame.preview);
+            const continents = frame.eraByContinent;
+            const continentBlocks = frame.continentBlocks?.length
+              ? frame.continentBlocks
+              : continentOrder
+                  .filter((key) => continents?.[key])
+                  .map((key) => ({ heading: continentLabels[key], text: continents?.[key] ?? '' }));
+            const honestyPills = frame.honestyPills ?? page.honestyPills;
+            return (
+              <article class="borders-frame map-detail" id={`year-${frame.year}`}>
+                <figure class="map-detail-art">
+                  <img src={preview} alt={frame.imageAlt} width="2560" height="1352" />
+                  <figcaption>
+                    {frame.sourceOrg}. {page.mapYearLabel}: {frame.sourceYear}.
+                  </figcaption>
+                </figure>
+                <div class="prose map-detail-copy">
+                  <div class="meta-row religion-honesty-pills">
+                    {honestyPills.map((pill) => (
+                      <span class="pill">{pill}</span>
+                    ))}
+                  </div>
+                  <h2>{frame.title}</h2>
+                  <p set:html={emphasizeCaption(frame.caption)} />
+                  <p class="wildlife-sources">{page.coverage[frame.coverage]}</p>
+                  {
+                    continentBlocks.length ? (
+                      <div class="religion-continents">
+                        <h3>{page.continentsHeading}</h3>
+                        {continentBlocks.map((block) => (
+                          <div>
+                            <h4>{block.heading}</h4>
+                            <p>{block.text}</p>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null
+                  }
+                  {
+                    frame.companion?.kind === 'reclus' && frame.companion.preview ? (
+                      <figure class="religion-companion">
+                        <img
+                          src={religionHistoryPreviewSrc(frame.companion.preview)}
+                          alt={page.companionReclus}
+                          width="1600"
+                          height="800"
+                        />
+                        <figcaption>{page.companionReclus}</figcaption>
+                      </figure>
+                    ) : null
+                  }
+                  {
+                    frame.companion?.kind === 'christianity-600' && frame.companion.preview ? (
+                      <figure class="religion-companion">
+                        <a href={frame.companion.href || religionHistoryPreviewSrc(frame.companion.preview)}>
+                          <img
+                            src={religionHistoryPreviewSrc(frame.companion.preview)}
+                            alt={page.companionChristianity600}
+                            width="1600"
+                            height="800"
+                          />
+                        </a>
+                        <figcaption>
+                          <a href={frame.companion.href || religionHistoryPreviewSrc(frame.companion.preview)}>
+                            {page.companionChristianity600}
+                          </a>
+                        </figcaption>
+                      </figure>
+                    ) : frame.companion?.kind === 'christianity-600' ? (
+                      <p class="religion-companion-link">
+                        <a href={frame.companion.href || '#year-600'}>{page.companionChristianity600}</a>
+                      </p>
+                    ) : null
+                  }
+                  <h3>{page.sourceLabel}</h3>
+                  <p class="wildlife-sources">
+                    <strong>{frame.sourceOrg}</strong>
+                    <br />
+                    {page.mapYearLabel}: {frame.sourceYear}
+                    {frame.sources ? (
+                      <>
+                        <br />
+                        {frame.sources}
+                      </>
+                    ) : null}
+                    {frame.sourceUrl && frame.coverage !== 'schematic-pilot' ? (
+                      <>
+                        <br />
+                        <a href={frame.commonsUrl || frame.sourceUrl} rel="noopener noreferrer">
+                          {frame.commonsUrl || frame.sourceUrl}
+                        </a>
+                      </>
+                    ) : null}
+                  </p>
+                  <h3>{page.licenseLabel}</h3>
+                  <p>
+                    {frame.licenseUrl ? (
+                      <a href={frame.licenseUrl} rel="noopener noreferrer">
+                        {frame.license}
+                      </a>
+                    ) : (
+                      frame.license
+                    )}
+                  </p>
+                </div>
+              </article>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
 </BaseLayout>

@@ -1,9 +1,81 @@
 import type { LawCopy } from '../data/law';
 
 export const pl: Record<string, LawCopy> = {
+  'paris-agreement': {
+    title: 'Porozumienie paryskie',
+    hook: 'Główny obowiązujący traktat klimatyczny. Wiąże strony NDC i celem „znacznie poniżej 2°C / dążyć do 1,5°C” — nie globalnym sufitem emisji wpisanym w tekst.',
+    imageAlt:
+      'François Hollande, Laurent Fabius i Ban Ki-moon klaszczą na scenie COP21 po przyjęciu Porozumienia paryskiego',
+    jurisdiction: 'Ramowa konwencja ONZ w sprawie zmian klimatu (strony)',
+    officialName: 'Porozumienie paryskie',
+    citation:
+      'Porozumienie paryskie w ramach UNFCCC; przyjęte 12 grudnia 2015 (COP21); weszło w życie 4 listopada 2016',
+    yearStatus: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016.',
+    what: 'Prawnie wiążący traktat przy UNFCCC: NDC, sprawozdawczość, globalne podsumowanie; cele temperaturowe, adaptacja, finanse, pochłaniacze (w tym lasy).',
+    where: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016. Lista stron — depozytariusz ONZ / UNFCCC.',
+    effects:
+      'Zamierzony skutek: zebrać krajowe plany klimatyczne w jedną architekturę traktatową, pięcioletni cykl ambicji i wpisać 1,5°C w prawo wielostronne. Wyniki zależą od treści NDC i wdrożenia krajowego — traktat sam nie zamyka elektrowni.',
+    caveats:
+      'Treść NDC ustalają same państwa; traktat sam nie zamyka elektrowni. Nie mylić z Protokołem z Kioto.',
+    sourcesNote: 'Te same trzy URL: strona UNFCCC; angielski PDF porozumienia; depozytariusz ONZ.',
+  },
+  'montreal-protocol': {
+    title: 'Protokół montrealski w sprawie substancji zubożających warstwę ozonową',
+    hook: 'Traktat ozonowy, który realnie uciął produkcję i handel ODS. Kigali później dodało HFC dla klimatu — ta sama maszyna Montrealu, nie drugi UNFCCC.',
+    imageAlt:
+      'Wizualizacja NASA niskiego ozonu nad Antarktydą — dziura ozonowa, którą Protokół montrealski miał odwrócić',
+    jurisdiction: 'Strony Protokołu montrealskiego (sekretariat ozonowy UNEP)',
+    officialName: 'Protokół montrealski w sprawie substancji zubożających warstwę ozonową',
+    citation:
+      'Protokół montrealski (1987, ze zmianami); poprawka z Kigali 15 października 2016; kontrola HFC od 1 stycznia 2019 dla stron, u których poprawka weszła w życie',
+    yearStatus:
+      'Protokół z 1987. Kigali w mocy od 01.01.2019 po progach ratyfikacji.',
+    what: 'Harmonogramy redukcji ODS, ograniczenia handlu, sprawozdawczość, Fundusz wielostronny; Kigali — stopniowe obniżanie HFC.',
+    where: 'Niemal powszechne uczestnictwo; Kigali w mocy od 01.01.2019 po progach ratyfikacji.',
+    effects:
+      'Udokumentowany sukces protokołu to harmonogramy wycofywania ODS i metryki odbudowy warstwy ozonowej (oceny sekretariatu / WMO–UNEP, nie marketing). Zamierzony skutek klimatyczny Kigali to uniknięte ocieplenie od HFC; dostawa idzie według krajowych harmonogramów obniżania.',
+    caveats:
+      'Sukces ozonu ≠ kontrola CO₂/metanu (to Paryż/UNFCCC). Nie podpisywać karty jako „główny traktat klimatyczny”.',
+    sourcesNote: 'Te same trzy URL: sekretariat ozonowy — protokół i poprawki; depozytariusz ONZ — Kigali.',
+  },
+  'eu-deforestation-regulation': {
+    title: 'Rozporządzenie UE o produktach wolnych od wylesiania (EUDR)',
+    hook: 'Reguła rynku UE: wymienione towary muszą być wolne od wylesiania i legalne. Uchwalone 2023; główne obowiązki od końca 2026 / połowy 2027 według wielkości operatora. To nie unijny traktat leśny ONZ.',
+    imageAlt:
+      'Plantacja palmy olejowej wokół pozostałego fragmentu lasu deszczowego na Borneo — krawędź towaru i lasu, którą obejmuje unijna reguła',
+    jurisdiction: 'Unia Europejska',
+    officialName: 'Rozporządzenie w sprawie produktów niezwiązanych z wylesianiem',
+    citation: 'Rozporządzenie (UE) 2023/1115 z 31 maja 2023 r. w sprawie produktów niezwiązanych z wylesianiem',
+    yearStatus:
+      'Rozporządzenie w mocy; stosowanie dużych/średnich od 30.12.2026, mikro/małych od 30.06.2027 (z zastrzeżeniami dla byłych EUTR).',
+    what: 'Due diligence i geolokalizacja dla bydła, kakao, kawy, oleju palmowego, kauczuku, soi, drewna i pochodnych; uchyla EUTR w zakresie pokrycia.',
+    where:
+      'Rozporządzenie w mocy; stosowanie dużych/średnich od 30.12.2026, mikro/małych od 30.06.2027 (z zastrzeżeniami dla byłych EUTR). Nie wrzucać do «pod rozwagą».',
+    effects:
+      'Cele statutowe: ograniczyć wylesianie/degradację napędzane popytem UE oraz związane emisje i utratę bioróżnorodności. Szacunki cięcia emisji z oceny skutków Komisji — zamierzone/modelowane, nie zmierzone wyniki 2026.',
+    caveats: 'Wyciek na inne rynki; odroczenie ≠ «już blokuje wszystko dziś».',
+    sourcesNote: 'Te same dwa URL: EUR-Lex — Rozporządzenie (UE) 2023/1115; strona Komisji o produktach wolnych od wylesiania.',
+  },
+  'eu-ets': {
+    title: 'Unijny system handlu uprawnieniami do emisji (EU ETS)',
+    hook: 'Unijny cap-and-trade dla dużych emitentów. Kurczący się pułap uprawnień, aukcje i rezerwa stabilności rynku — nie domowy podatek węglowy i nie samo Porozumienie paryskie.',
+    imageAlt:
+      'Elektrownia lignitowa Niederaussem w Niemczech — duży stacjonarny emitent takiego typu, jaki obejmuje EU ETS',
+    jurisdiction: 'Unia Europejska',
+    officialName: 'Unijny system handlu uprawnieniami do emisji',
+    citation:
+      'Dyrektywa 2003/87/WE (ze zmianami) ustanawiająca system handlu uprawnieniami do emisji gazów cieplarnianych',
+    yearStatus: 'Obowiązuje w UE; rdzeń — Dyrektywa 2003/87/WE ze zmianami.',
+    what: 'Rynek uprawnień dla objętych instalacji (i lotnictwa / dalszych sektorów według nowelizacji); zwrot uprawnień wobec zweryfikowanych emisji.',
+    where: 'Obowiązuje w UE; rdzeń — Dyrektywa 2003/87/WE ze zmianami.',
+    effects:
+      'Zamierzony skutek: dać cenę objętym emisjom GHG i ciąć je pod kurczącym się pułapem. Udokumentowane wyniki systemu — w raportach EEA/Komisji o ETS; tony stamtąd, nie z głowy.',
+    caveats: 'Nie cała gospodarka; nie Paryż i nie EUDR. Tony — tylko z raportów EEA/Komisji.',
+    sourcesNote: 'Te same trzy URL: hub Komisji o EU ETS; strona „What is the EU ETS”; EUR-Lex — Dyrektywa 2003/87/WE.',
+  },
   'nature-restoration': {
     title: 'Unijne prawo odbudowy przyrody',
-    hook: 'Wiążące rozporządzenie o odbudowie — nie papier strategiczny. Krajowe projekty planów miały być gotowe w 2026.',
+    hook: 'Wiążące rozporządzenie o restytucji — nie dokument strategiczny. Projekty planów krajowych miały być do 1 września 2026; Komisja je ocenia.',
     imageAlt:
       'Torfowisko z otwartą wodą i niską roślinnością — typ siedliska mokradłowego, który obejmują unijne cele odbudowy',
     jurisdiction: 'Unia Europejska',
@@ -287,6 +359,91 @@ export const pl: Record<string, LawCopy> = {
     effects: 'Zamierzone skutki: nowoczesna rama prawna po starszej ustawie z 1976, przestrzeń dla konserwatów i mocniejsze pisane kary za kłusownictwo i handel. Skutki w terenie nadal zależą od egzekwowania, umów ze wspólnotami oraz handlu kością i mięsem bushmeat. Ta strona nie wymyśla krajowego procentu odbudowy słoni za 2013–2026.',
     caveats: 'Konflikt człowiek–dzika przyroda i spory o odszkodowania są wbudowane w kenijską politykę dzikiej przyrody. Statut to nie strażnik. Międzynarodowe reguły handlu nadal idą przez przepisy wdrażające CITES.',
     sourcesNote: 'Oficjalny tekst Kenya Law (Cap. 376); rekord FAOLEX Act No. 47 of 2013.',
+  },
+  'cms-bonn-convention': {
+    title: 'CMS — konwencja z Bonn',
+    hook: 'Traktat ONZ dla zwierząt migrujących przez granice. Załącznik I — ścisła ochrona; Załącznik II — umowy państw areału. To nie CITES i nie krajowa ustawa siedliskowa.',
+    imageAlt:
+      'Gnu w ruchu przez trawę Serengeti — transgraniczna migracja tego rodzaju, który konwencja z Bonn każe uzgadniać państwom areału',
+    jurisdiction: 'Międzynarodowy (Strony konwencji)',
+    officialName: 'Konwencja o ochronie wędrownych gatunków dzikich zwierząt',
+    citation:
+      'Konwencja o ochronie wędrownych gatunków dzikich zwierząt; Bonn, 23 czerwca 1979; weszła w życie 1 listopada 1983',
+    yearStatus:
+      'Sporządzona w Bonn 23 czerwca 1979. Weszła w życie 1 listopada 1983. Depozytariusz: Republika Federalna Niemiec.',
+    what: 'Konwencja ramowa UNEP: siedliska i zakaz pozyskania (załącznik I); AGREEMENTS lub MoU (załącznik II).',
+    where: 'Od 1 listopada 1983. Lista Stron jest opublikowana na cms.int.',
+    effects:
+      'Zamierzony skutek: uzgodnić ochronę wzdłuż całych tras przelotu i wędrówki oraz dać początek porozumieniom pochodnym (AEWA, EUROBATS i inne instrumenty rodziny CMS). Sam tekst konwencji nie grodzi korytarza.',
+    caveats: 'Nie system pozwoleń handlowych (CITES). Nie Birds/Habitats ani ESA.',
+    sourcesNote: 'Tekst konwencji i strona główna CMS na cms.int.',
+  },
+  'birds-directive': {
+    title: 'Dyrektywa ptasia UE',
+    hook: 'Pierwsza unijna dyrektywa przyrodnicza. Chroni wszystkie naturalnie występujące dzikie ptaki i napędza OSO w Natura 2000 — para z dyrektywą siedliskową.',
+    imageAlt:
+      'Bielik nad wodą w Svolvær w Norwegii — dziki europejski ptak tego rodzaju, którego dyrektywa ptasia każe chronić państwom członkowskim',
+    jurisdiction: 'Unia Europejska',
+    officialName: 'Dyrektywa 2009/147/WE w sprawie ochrony dzikiego ptactwa',
+    citation:
+      'Dyrektywa 2009/147/WE (kodyfikacja; pierwotnie 79/409/EWG, 1979) w sprawie ochrony dzikiego ptactwa',
+    yearStatus:
+      'Pierwotna dyrektywa 79/409/EWG (1979). Obowiązujący tekst skodyfikowany: 2009/147/WE. Obowiązuje w państwach członkowskich. Konsultacja uproszczeń z 2026 roku nie jest uchyleniem.',
+    what: 'Zakazy uśmiercania, chwytania i niszczenia gniazd; OSO dla załącznika I i innych migrantów; część Natura 2000.',
+    where: 'Obowiązuje; tekst 2009/147/WE. Konsultacja uproszczeń z 2026 roku nie jest uchyleniem.',
+    effects:
+      'Zamierzony skutek: zatrzymać spadek dzikich ptaków, odbudować siedliska i zbudować sieć OSO. Komisja podaje ponad 5400 obszarów o powierzchni powyżej 832 000 km². Spadek ptaków krajobrazu rolniczego pozostaje udokumentowaną presją; dyrektywa jest ramą prawną, nie gwarancją odbudowy wskaźników.',
+    caveats: 'Nie CITES. Dyrektywa siedliskowa jest osobnym aktem.',
+    sourcesNote: 'Strona Komisji Europejskiej o dyrektywie ptasiej; tekst dyrektywy 2009/147/WE w EUR-Lex.',
+  },
+  'bern-convention': {
+    title: 'Konwencja berneńska',
+    hook: 'Traktat Rady Europy o dzikiej przyrodzie i siedliskach. Listy gatunków ściśle chronionych i Komitet Stały — instrument paneuropejski, nie tożsamy z dyrektywami UE o ptakach i siedliskach.',
+    imageAlt:
+      'Koziorożec alpejski na wysokogórskiej łące w Alpach Szwajcarskich — europejska dzika przyroda tego rodzaju, który konwencja berneńska obejmuje ochroną',
+    jurisdiction: 'Rada Europy (Strony; otwarta też dla spoza RE według reguł traktatu)',
+    officialName: 'Konwencja o ochronie europejskiej przyrody dzikiej i siedlisk naturalnych',
+    citation:
+      'Konwencja o ochronie europejskiej przyrody dzikiej i siedlisk naturalnych (ETS nr 104); Berno, 19 września 1979; weszła w życie 1 czerwca 1982',
+    yearStatus: 'ETS nr 104. Otwarta do podpisu w Bernie 19 września 1979. Weszła w życie 1 czerwca 1982.',
+    what: 'Ochrona flory i fauny oraz siedlisk; załączniki; Komitet Stały; sieć Emerald poza UE.',
+    where: 'ETS nr 104; od 1 czerwca 1982.',
+    effects:
+      'Zamierzony skutek: wspólna europejska podstawa ochrony gatunków i siedlisk obok dyrektyw UE i poza nimi; obszary sieci Emerald dla Stron spoza UE. Miękkie zalecenia i tak wymagają wdrożenia krajowego, żeby zaczęły działać.',
+    caveats: 'Nie CITES ani CMS. Dyrektywy ptasia i siedliskowa wiążą państwa członkowskie jako prawo UE. Sieć Emerald w ramach konwencji berneńskiej ma cele zbliżone do Natura 2000, ale inną podstawę prawną.',
+    sourcesNote: 'Strona konwencji berneńskiej Rady Europy, traktat nr 104 i PDF tekstu konwencji.',
+  },
+  'marine-mammal-protection-act': {
+    title: 'Amerykańska ustawa o ochronie ssaków morskich (MMPA)',
+    hook: 'Federalna ustawa USA zasadniczo zakazująca pozyskania ssaków morskich w wodach USA i przez osoby USA. Szersza niż samo wpisanie na listę ESA.',
+    imageAlt: 'Długopłetwiec i cielę pod wodą — ssaki morskie objęte amerykańskim moratorium na pozyskanie',
+    jurisdiction: 'Stany Zjednoczone',
+    officialName: 'Marine Mammal Protection Act of 1972',
+    citation: 'Marine Mammal Protection Act of 1972, 16 U.S.C. § 1361 et seq. (ze zmianami)',
+    yearStatus: 'Uchwalona w 1972. Nowelizacje między innymi w 1992 i 1994. Nadal w mocy.',
+    what: 'Moratorium na „take” i import z wyjątkami; oceny stad; role NOAA, FWS i MMC.',
+    where: 'Federalne prawo USA od 1972; nowelizacje między innymi w 1992 i 1994.',
+    effects:
+      'Zamierzony skutek: zatrzymać uszczuplanie stad ssaków morskich jako składników ekosystemu, wymagać wykazania, że pozyskanie nie zaszkodzi stadu, i wspierać reakcję na wyrzucenia na brzeg. Status stad różni się między gatunkami — ustawa jest ramą, nie świadectwem odbudowy.',
+    caveats: 'To nie ESA: gatunek może podlegać obu aktom. Nie CITES ani sama konwencja wielorybnicza.',
+    sourcesNote:
+      'Strony NOAA Fisheries, FWS i Marine Mammal Commission; tekst scalony w GovInfo.',
+  },
+  'lacey-act': {
+    title: 'Ustawa Laceya (Lacey Act)',
+    hook: 'Amerykańska ustawa, która czyni federalnym przestępstwem handel dziką przyrodą, rybami lub roślinami pozyskanymi z naruszeniem prawa USA, stanu lub obcego państwa — wzmacniacz obok CITES, nie druga lista CITES.',
+    imageAlt:
+      'Ułożona skonfiskowana kość słoniowa w magazynie przed zniszczeniem — nielegalny produkt dzikiej przyrody tego rodzaju, który ustawa Laceya ma nie wpuszczać do handlu USA',
+    jurisdiction: 'Stany Zjednoczone',
+    officialName: 'Lacey Act',
+    citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (od 1900; nowelizacje handlu dziką przyrodą m.in. 1981)',
+    yearStatus: 'Od 1900. Nowelizacje handlu dziką przyrodą, między innymi w 1981. Nadal w mocy.',
+    what: 'Zakaz handlu przy naruszeniu prawa bazowego; fałszywe oznakowanie przesyłek. Ustawa rolna z 2008 roku rozszerzyła ustawę na rośliny i produkty z drewna.',
+    where: 'Federalne prawo USA od 1900; nowelizacje między innymi w 1981.',
+    effects:
+      'Zamierzony skutek: zamknąć rynek USA dla nielegalnie pozyskanej dzikiej przyrody i wesprzeć obce oraz stanowe prawo ochrony przez federalne ściganie. Skuteczność zależy od wykrywania i jakości prawa, na którym ustawa się opiera.',
+    caveats: 'Nie sam CITES. Nie ESA ani MMPA.',
+    sourcesNote: 'Strona U.S. Fish and Wildlife Service o ustawie Laceya; ustawy i polityki NOAA Fisheries.',
   },
   'wildlife-corridors-act': {
     title: 'Amerykański projekt o korytarzach dzikiej przyrody (2026)',

@@ -32,6 +32,7 @@ export type GeoPage = {
   outcome: string;
   lessons: string;
   sourcesLabel: string;
+  primarySource: string;
   jurisdictionLabel: string;
   yearLabel: string;
   imageCredit: string;
@@ -71,6 +72,7 @@ const pageEn: GeoPage = {
   outcome: 'What went wrong — or only partly worked',
   lessons: 'Lessons',
   sourcesLabel: 'Sources',
+  primarySource: 'Source',
   jurisdictionLabel: 'Jurisdiction',
   yearLabel: 'Years / status',
   imageCredit: 'Image',
@@ -130,6 +132,7 @@ const pageRu: GeoPage = {
   outcome: 'Что пошло не так — или сработало лишь частично',
   lessons: 'Уроки',
   sourcesLabel: 'Источники',
+  primarySource: 'Источник',
   jurisdictionLabel: 'Юрисдикция',
   yearLabel: 'Годы / статус',
   imageCredit: 'Изображение',
@@ -189,6 +192,7 @@ const pagePl: GeoPage = {
   outcome: 'Co poszło nie tak — albo zadziałało tylko częściowo',
   lessons: 'Wnioski',
   sourcesLabel: 'Źródła',
+  primarySource: 'Źródło',
   jurisdictionLabel: 'Jurysdykcja',
   yearLabel: 'Lata / status',
   imageCredit: 'Zdjęcie',
@@ -248,6 +252,7 @@ const pageLv: GeoPage = {
   outcome: 'Kas nogāja greizi — vai izdevās tikai daļēji',
   lessons: 'Mācības',
   sourcesLabel: 'Avoti',
+  primarySource: 'Avots',
   jurisdictionLabel: 'Jurisdikcija',
   yearLabel: 'Gadi / statuss',
   imageCredit: 'Attēls',

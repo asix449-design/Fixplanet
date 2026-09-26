@@ -123,6 +123,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Gray_Wolf.jpg',
     ),
+    primarySources: [
+      iucnList('Canis lupus', 'https://www.iucnredlist.org/species/3746/226161232'),
+      cite(
+        'U.S. Fish and Wildlife Service — gray wolf',
+        'https://www.fws.gov/species/gray-wolf-canis-lupus',
+      ),
+    ],
   },
   {
     slug: 'brown-bear',
@@ -135,6 +142,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.5',
       'https://commons.wikimedia.org/wiki/File:Brown_bear_(Ursus_arctos_arctos)_running.jpg',
     ),
+    primarySources: [
+      iucnList('Ursus arctos', 'https://www.iucnredlist.org/species/41688/121229971'),
+      cite(
+        'Large Carnivore Initiative for Europe — brown bear',
+        'https://www.lcie.org/Large-carnivores/Brown-bear',
+      ),
+    ],
   },
   {
     slug: 'american-bison',
@@ -147,6 +161,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg',
     ),
+    primarySources: [
+      iucnList('Bison bison', 'https://www.iucnredlist.org/species/2815/123789863'),
+      cite(
+        'U.S. Fish and Wildlife Service — American bison',
+        'https://www.fws.gov/species/american-bison-bison-bison',
+      ),
+    ],
   },
   {
     slug: 'african-savanna-elephant',
@@ -159,6 +180,16 @@ export const speciesMeta: SpeciesMeta[] = [
       'GFDL 1.2',
       'https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Loxodonta africana',
+        'https://www.iucnredlist.org/species/181008073/223031019',
+      ),
+      cite(
+        'IUCN SSC African Elephant Specialist Group',
+        'https://iucn.org/our-union/commissions/group/iucn-ssc-african-elephant-specialist-group',
+      ),
+    ],
   },
   {
     slug: 'lion',
@@ -171,6 +202,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Lion_waiting_in_Namibia.jpg',
     ),
+    primarySources: [
+      iucnList('Panthera leo', 'https://www.iucnredlist.org/species/15951/259030422'),
+    ],
   },
   {
     slug: 'red-deer',
@@ -183,6 +217,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_1.jpg',
     ),
+    primarySources: [
+      iucnList('Cervus elaphus', 'https://www.iucnredlist.org/species/55997072/142404453'),
+    ],
   },
   {
     slug: 'wild-boar',
@@ -195,6 +232,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Sus_scrofa_scrofa.jpg',
     ),
+    primarySources: [
+      iucnList('Sus scrofa', 'https://www.iucnredlist.org/species/41775/44141833'),
+    ],
   },
   {
     slug: 'european-beaver',
@@ -207,6 +247,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 4.0',
       'https://commons.wikimedia.org/wiki/File:Bever_-_Eurasian_beaver_-_Castor_fiber_6.jpg',
     ),
+    primarySources: [
+      iucnList('Castor fiber', 'https://www.iucnredlist.org/species/4007/197499749'),
+      cite(
+        'IUCN SSC Beaver Specialist Group',
+        'https://www.iucn.org/our-union/commissions/group/iucn-ssc-beaver-specialist-group',
+      ),
+    ],
   },
   {
     slug: 'humpback-whale',
@@ -219,6 +266,154 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 3.0',
       'https://commons.wikimedia.org/wiki/File:Humpback_stellwagen_edit.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Megaptera novaeangliae',
+        'https://www.iucnredlist.org/species/13006/50362794',
+      ),
+      cite(
+        'NOAA Fisheries — humpback whale',
+        'https://www.fisheries.noaa.gov/species/humpback-whale',
+      ),
+    ],
+  },
+  {
+    slug: 'european-bison',
+    scientificName: 'Bison bonasus',
+    status: 'surviving',
+    iucn: 'NT',
+    image: commons(
+      'european-bison.jpg',
+      'Charles J. Sharp / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:European_bison_(Bison_bonasus)_male_Bia%C5%82owieza.jpg',
+    ),
+    primarySources: [
+      iucnList('Bison bonasus', 'https://www.iucnredlist.org/species/2814/45156279'),
+      cite(
+        'IUCN news — European bison recovering (10 Dec 2020)',
+        'https://www.iucn.org/news/species/202012/european-bison-recovering-31-species-declared-extinct-iucn-red-list',
+      ),
+      cite(
+        'Oryx — range-wide conservation action plan for the European bison',
+        'https://www.cambridge.org/core/journals/oryx/article/rangewide-conservation-action-plan-for-the-european-bison/6AC6945EF32219F45721A8443EC94141',
+      ),
+    ],
+  },
+  {
+    slug: 'north-american-beaver',
+    scientificName: 'Castor canadensis',
+    status: 'surviving',
+    iucn: 'LC',
+    image: commons(
+      'north-american-beaver.jpg',
+      'Glacier National Park / U.S. National Park Service (Wikimedia Commons)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Beaver_-_Castor_canadensis_(51361589026).jpg',
+    ),
+    primarySources: [
+      iucnList('Castor canadensis', 'https://www.iucnredlist.org/species/4003/10308287'),
+      cite(
+        'Animal Diversity Web — Castor canadensis',
+        'https://animaldiversity.org/accounts/Castor_canadensis/',
+      ),
+      cite(
+        'USDA Forest Service Region 2 — North American beaver assessment',
+        'https://westernbeavers.org/wp-content/uploads/2024/02/6.-North-American-Beaver-Castor-canadensis-for-USDA-Forest-Service-stelprdb5181919.pdf',
+      ),
+      cite(
+        'Stanford Report — beaver rebound (11 Aug 2025)',
+        'https://news.stanford.edu/stories/2025/08/beavers-climate-resilient-watersheds-biodiversity-research',
+      ),
+      cite(
+        'Communications Earth & Environment (2025)',
+        'https://doi.org/10.1038/s43247-025-02572-y',
+      ),
+    ],
+  },
+  {
+    slug: 'bald-eagle',
+    scientificName: 'Haliaeetus leucocephalus',
+    status: 'surviving',
+    iucn: 'LC',
+    image: commons(
+      'bald-eagle.jpg',
+      'Andy Morffew / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Bald_eagle_in_Alaska_2016-3.jpg',
+    ),
+    primarySources: [
+      cite(
+        'USFWS — bald eagle',
+        'https://www.fws.gov/species/bald-eagle-haliaeetus-leucocephalus',
+      ),
+      cite(
+        'USFWS — Bald Eagle Population Size: 2020 Update',
+        'https://www.fws.gov/sites/default/files/documents/2020-bald-eagle-population-size-report.pdf',
+      ),
+      cite(
+        'Federal Register — bald eagle delisting (2007)',
+        'https://www.fws.gov/sites/default/files/federal_register_document/07-4302.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'white-rhinoceros',
+    scientificName: 'Ceratotherium simum',
+    status: 'surviving',
+    iucn: 'NT',
+    image: commons(
+      'white-rhinoceros.jpg',
+      'Charles J. Sharp / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:White_rhinoceros_(Ceratotherium_simum)_with_calf_Kruger.jpg',
+    ),
+    primarySources: [
+      iucnList('Ceratotherium simum', 'https://www.iucnredlist.org/species/4185/45813880'),
+      cite(
+        'IUCN press release — African rhino status (7 Aug 2025)',
+        'https://iucn.org/press-release/202508/poaching-african-rhinos-down-drought-and-other-threats-drive-losses-globally',
+      ),
+      cite(
+        'International Rhino Foundation — white rhino',
+        'https://rhinos.org/about-rhinos/rhino-species/white-rhino/',
+      ),
+      cite(
+        'Pachyderm — AfRSG chair report',
+        'https://pachydermjournal.org/index.php/pachyderm/article/view/1311',
+      ),
+      cite(
+        'South Africa — biodiversity management plan for the white rhinoceros',
+        'https://www.gov.za/sites/default/files/gcis_document/201512/39469gen1191.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'arabian-oryx',
+    scientificName: 'Oryx leucoryx',
+    status: 'surviving',
+    iucn: 'VU',
+    image: commons(
+      'arabian-oryx.jpg',
+      'Saudi Press Agency / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Uruq_Bani_Ma%27arid_Reserve,_Saudi_Arabia_(2025).jpg',
+    ),
+    primarySources: [
+      iucnList('Oryx leucoryx', 'https://www.iucnredlist.org/species/15569/50191626'),
+      cite(
+        'IUCN — A grain of hope in the desert (Arabian oryx, 2011)',
+        'https://iucn.org/content/a-grain-hope-desert',
+      ),
+      cite(
+        'IUCN SSC Antelope Specialist Group — Arabian oryx',
+        'https://antelopesg.org/arabian-oryx/',
+      ),
+      cite(
+        'Royal Society Open Science — Oman oryx genetics (2021)',
+        'https://royalsocietypublishing.org/doi/10.1098/rsos.210558',
+      ),
+    ],
   },
   {
     slug: 'vaquita',
@@ -1015,6 +1210,130 @@ export const speciesMeta: SpeciesMeta[] = [
       cite(
         'U.S. Fish and Wildlife Service — Hine’s emerald',
         'https://www.fws.gov/species/hines-emerald-somatochlora-hineana',
+      ),
+    ],
+  },
+  {
+    slug: 'rusty-patched-bumble-bee',
+    scientificName: 'Bombus affinis',
+    status: 'insects',
+    image: commons(
+      'rusty-patched-bumble-bee.jpg',
+      'USFWS Midwest Region / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Rusty_Patched_Bumble_Bee_on_Wild_Bergamot_(28626833097).jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Rusty patched bumble bee',
+        'https://www.fws.gov/species/rusty-patched-bumble-bee-bombus-affinis',
+      ),
+    ],
+  },
+  {
+    slug: 'european-stag-beetle',
+    scientificName: 'Lucanus cervus',
+    status: 'insects',
+    iucn: 'NT',
+    image: commons(
+      'european-stag-beetle.jpg',
+      'Reinhold Möller / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Lucanus cervus (Europe / EU27)',
+        'https://www.iucnredlist.org/species/239951016/213072777',
+      ),
+      cite(
+        'DOI — IUCN assessment record',
+        'https://doi.org/10.2305/iucn.uk.2025-2.rlts.t239951016a213072777.en',
+      ),
+      cite('EUNIS — Lucanus cervus', 'https://eunis.eea.europa.eu/species/221'),
+      cite(
+        'JNCC — UK Habitats Directive Art.17 S1083 (2019)',
+        'https://jncc.gov.uk/jncc-assets/Art17/S1083-UK-Habitats-Directive-Art17-2019.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'hermit-beetle',
+    scientificName: 'Osmoderma eremita',
+    status: 'insects',
+    iucn: 'NT',
+    image: commons(
+      'hermit-beetle.jpg',
+      'Nemracc / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Osmoderma_eremita,_Urwald_Sababurg.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Osmoderma eremita',
+        'https://www.iucnredlist.org/species/15632/283806710',
+      ),
+      cite(
+        'DOI — IUCN assessment record',
+        'https://doi.org/10.2305/iucn.uk.2025-2.rlts.t15632a283806710.en',
+      ),
+    ],
+  },
+  {
+    slug: 'salt-creek-tiger-beetle',
+    scientificName: 'Cicindela nevadica lincolniana',
+    status: 'insects',
+    image: commons(
+      'salt-creek-tiger-beetle.jpg',
+      'Kai243 / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Ellipsoptera_nevadica_lincolniana.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Salt Creek tiger beetle',
+        'https://www.fws.gov/species/salt-creek-tiger-beetle-cicindela-nevadica-lincolniana',
+      ),
+      cite(
+        'Nebraska Game and Parks — Salt Creek tiger beetle',
+        'https://outdoornebraska.gov/learn/nebraska-wildlife/nebraska-animals/insects/salt-creek-tiger-beetle/',
+      ),
+      cite(
+        'USFWS — Salt Creek tiger beetle recovery plan (PDF)',
+        'https://ecos.fws.gov/docs/recovery_plan/SCTB%20Signed%20Final%20Recovery%20Plan.pdf',
+      ),
+      cite(
+        'UNL — 30-year visual population estimates (open PDF)',
+        'https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2041&context=entomologyfacpub',
+      ),
+    ],
+  },
+  {
+    slug: 'wetapunga',
+    scientificName: 'Deinacrida heteracantha',
+    status: 'insects',
+    image: commons(
+      'wetapunga.jpg',
+      'Shaun Lee / Wikimedia Commons',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_12260329.jpg',
+    ),
+    primarySources: [
+      cite(
+        'NZTCS — Deinacrida heteracantha',
+        'https://nztcs.org.nz/assessments/19134',
+      ),
+      cite(
+        'DOC — Wetapunga',
+        'https://www.doc.govt.nz/nature/native-animals/invertebrates/weta/wetapunga/',
+      ),
+      cite(
+        'DOC — Best practice translocation of giant wētā (PDF)',
+        'https://www.doc.govt.nz/globalassets/documents/getting-involved/translocation/translocation-best-practice-giant-weta.pdf',
+      ),
+      cite(
+        'Auckland Zoo — Bay of Islands return (2020)',
+        'https://www.aucklandzoo.co.nz/news/were-returning-wetapunga-to-the-bay-of-islands-after-a-180-year-absence',
       ),
     ],
   },

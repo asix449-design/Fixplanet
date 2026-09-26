@@ -298,16 +298,12 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Turner et al. (2023) — Great Green Walls: Hype, Myth, and Science',
+        label: 'Annual Review — Great Green Walls (2023)',
         url: 'https://doi.org/10.1146/annurev-environ-112321-111102',
       },
       {
         label: 'Zheng et al. (2024) — Three-North Protective Forest Program 1978–2022',
         url: 'https://doi.org/10.1007/s11427-024-2705-4',
-      },
-      {
-        label: 'Sun et al. (2018) — Drought and Populus simonii dieback in TNSF belts',
-        url: 'https://doi.org/10.3390/f9090564',
       },
     ],
   },
@@ -324,16 +320,12 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'UNCCD (2020) — The Great Green Wall Implementation Status and Trend',
-        url: 'https://www.unccd.int/resources/publications/great-green-wall-implementation-status-and-way-ahead-2030',
-      },
-      {
-        label: 'Reuters (12 Jun 2024) — GGW unlikely to meet 2030 goal; ~30 million ha',
-        url: 'https://www.reuters.com/business/environment/africas-great-green-wall-miss-2030-goal-says-un-desertification-president-2024-06-12/',
-      },
-      {
-        label: 'African Union / UNCCD — Great Green Wall initiative',
+        label: 'UNCCD — Great Green Wall',
         url: 'https://www.unccd.int/our-work/ggwi',
+      },
+      {
+        label: 'UNCCD (2020) — Great Green Wall Implementation Status and Way Ahead to 2030',
+        url: 'https://www.unccd.int/resources/publications/great-green-wall-implementation-status-and-way-ahead-2030',
       },
     ],
   },
@@ -350,16 +342,12 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Saudi Green Initiative — official programme page',
-        url: 'https://www.sgi.gov.sa/',
+        label: 'Vision 2030 — Saudi Green Initiative',
+        url: 'https://www.vision2030.gov.sa/en/explore/programs/saudi-green-initiative',
       },
       {
         label: 'SPA / MEWA (2026) — official 1 million ha / 159 million trees claim',
         url: 'https://www.mewa.gov.sa/en/MediaCenter/News/Pages/News14482020.aspx',
-      },
-      {
-        label: 'KAPSARC — water–energy nexus in Saudi agriculture (groundwater history)',
-        url: 'https://www.kapsarc.org/research/publications/the-water-energy-nexus-in-the-saudi-agriculture/',
       },
       {
         label: 'FAO AQUASTAT — country water profiles (non-renewable groundwater context)',
@@ -380,8 +368,7 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label:
-          'World Bank (2004) — Loess Plateau Watershed Rehabilitation Project case study (Shanghai conference PDF)',
+        label: 'World Bank — Loess Plateau case study (PDF)',
         url: 'https://documents1.worldbank.org/curated/en/142661468762366534/pdf/307770CHA0Loess0Plateau01see0also0307591.pdf',
       },
       {
@@ -391,6 +378,32 @@ export const geoMeta: GeoMeta[] = [
       {
         label: 'World Bank — Second Loess Plateau Watershed Rehabilitation Project (P056216)',
         url: 'https://projects.worldbank.org/en/projects-operations/project-detail/P056216',
+      },
+    ],
+  },
+  {
+    slug: 'jordan-badia-restoration',
+    shelf: 'desert',
+    status: 'partial',
+    years: '2013–',
+    image: img(
+      'jordan-badia-restoration.jpg',
+      'Iainsimpsonstewart',
+      'CC0',
+      'https://commons.wikimedia.org/wiki/File:Atriplex_bush_in_Jordan.jpg',
+    ),
+    sources: [
+      {
+        label: 'UNCC — Claim 5000304 Badia rangeland restoration',
+        url: 'https://uncc.un.org/en/what-we-did/follow-up-programme-environmental-awards/claim-5000304-cooperative-rangeland-restoration',
+      },
+      {
+        label: 'UNCC — Follow-up Programme for Environmental Awards',
+        url: 'https://uncc.un.org/en/what-we-did/follow-programme-environmental-awards',
+      },
+      {
+        label: 'ICARDA — Watershed restoration in Badia areas of Jordan',
+        url: 'https://icarda.org/research/projects/watershed-restoration-badia-areas-jordan',
       },
     ],
   },
@@ -468,7 +481,138 @@ export const geoMeta: GeoMeta[] = [
       },
     ],
   },
+  {
+    slug: 'cirrus-cloud-thinning',
+    shelf: 'climate',
+    status: 'research',
+    years: '2010s–',
+    image: img(
+      'cirrus-cloud-thinning.jpg',
+      'MODIS Land Rapid Response Team, NASA GSFC',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Cirrus_Clouds_off_Chile_(MODIS_2024-05-09).jpg',
+    ),
+    sources: [
+      {
+        label: 'IPCC AR6 WG I — Chapter 4 (SRM / radiation proposals incl. CCT)',
+        url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/',
+      },
+      {
+        label: 'IPCC AR6 WG I — Chapter 4 PDF',
+        url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter04.pdf',
+      },
+      {
+        label: 'NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (July 2024)',
+        url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
+      },
+      {
+        label: 'Gasparini et al. (2017) — ACP (cirrus seeding proxies in models)',
+        url: 'https://acp.copernicus.org/articles/17/4871/2017/',
+      },
+    ],
+  },
+  {
+    slug: 'surface-albedo-modification',
+    shelf: 'climate',
+    status: 'research',
+    years: '1990s–',
+    image: img(
+      'surface-albedo-modification.jpg',
+      'Anthony Delanoix',
+      'CC0',
+      'https://commons.wikimedia.org/wiki/File:Archipel_de_Santorin,_Santorini,_Greece_(Unsplash).jpg',
+    ),
+    sources: [
+      {
+        label: 'U.S. EPA — Using Cool Roofs to Reduce Heat Islands',
+        url: 'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
+      },
+      {
+        label: 'IPCC AR6 WG III — Chapter 9 Buildings (PDF)',
+        url: 'https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter09.pdf',
+      },
+      {
+        label: 'NOAA CSL — SRM State of the Science Fact Sheet (July 2024; lists surface albedo enhancement)',
+        url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
+      },
+      {
+        label: 'NASEM — Reflecting Sunlight (research agenda & governance; catalog)',
+        url: 'https://nap.nationalacademies.org/catalog/25762/reflecting-sunlight-recommendations-for-solar-geoengineering-research-and-research-governance',
+      },
+    ],
+  },
+  {
+    slug: 'ocean-alkalinity-enhancement',
+    shelf: 'climate',
+    status: 'research',
+    years: '2010s–',
+    image: img(
+      'ocean-alkalinity-enhancement.jpg',
+      'Hendee / NOAA',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Oa-buoy-enrique-reef.jpg',
+    ),
+    sources: [
+      {
+        label: 'NOAA Ocean Acidification Program — Carbon Dioxide Removal',
+        url: 'https://oceanacidification.noaa.gov/carbon-dioxide-removal/',
+      },
+      {
+        label: 'NOAA / NOPP — Marine CDR research awards overview',
+        url: 'https://oceanacidification.noaa.gov/fy23-nopp-mcdr-awards/',
+      },
+      {
+        label: 'National Academies — A Research Strategy for Ocean-based CDR (catalog)',
+        url: 'https://nap.nationalacademies.org/catalog/26278/a-research-strategy-for-ocean-based-carbon-dioxide-removal-and-sequestration',
+      },
+      {
+        label: 'NOAA Science Advisory Board — Draft CDR Research Strategy PDF',
+        url: 'https://sciencecouncil.noaa.gov/wp-content/uploads/2022/09/Clean-copy-of-Draft-CDR-Research-Strategy.pdf',
+      },
+    ],
+  },
+  {
+    slug: 'glacial-climate-intervention',
+    shelf: 'climate',
+    status: 'research',
+    years: '2024–',
+    image: img(
+      'glacial-climate-intervention.jpg',
+      'NASA ICE / James Yungel',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Thwaites_Glacier_Tongue.jpg',
+    ),
+    sources: [
+      {
+        label: 'Glacial Climate Intervention: A Research Vision (2024 PDF via AWI EPIC)',
+        url: 'https://epic.awi.de/id/eprint/60129/1/Glacial_Climate_Intervention_White_Paper_6.4.24_FINAL2.pdf',
+      },
+      {
+        label: 'Moore et al. / survey — Interventions to conserve the frozen North (Climatic Change, 2024)',
+        url: 'https://link.springer.com/article/10.1007/s10584-024-03705-6',
+      },
+      {
+        label: 'Same article via DOI',
+        url: 'https://doi.org/10.1007/s10584-024-03705-6',
+      },
+      {
+        label: 'NOAA CSL — SRM SoS (context: SRM ≠ ice-sheet engineering)',
+        url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
+      },
+    ],
+  },
 ];
+
+export function geoPrimarySource(
+  sources: readonly GeoSource[] | undefined,
+): GeoSource | undefined {
+  return sources?.[0];
+}
+
+/** Old English shelf names that should land on the current desert grid. */
+export const geoPathRedirects: Record<string, string> = {
+  'desert-greening': '/terraforming/desert',
+};
 
 export function isGeoShelf(value: string | undefined): value is GeoShelf {
   return !!value && (geoShelfKeys as readonly string[]).includes(value);

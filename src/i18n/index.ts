@@ -30,12 +30,13 @@ export {
   getRelatedMaps,
   mapCategoryKeys,
 } from './maps';
+export { getBorderHistoryFrames, getBorderHistoryPage } from './border-history';
 export {
-  BORDER_CONTINENT_ORDER,
-  getBorderHistoryFrames,
-  getBorderHistoryPage,
-} from './border-history';
-export { getReligionHistoryFrames, getReligionHistoryPage } from './religion-history';
+  getReligionContinentLabels,
+  getReligionHistoryFrames,
+  getReligionHistoryPage,
+  getReligionLegend,
+} from './religion-history';
 export {
   getInnovationBySlug,
   getInnovations,
@@ -45,6 +46,13 @@ export {
 } from './innovations';
 export { getForestFrames, getForestHeroStats, getForestStats, getForestsPage } from './forests';
 export {
+  forestAtlasChrome,
+  forestAtlasHubLede,
+  forestAtlasSectionLabels,
+  getForestAtlas,
+  getForestAtlasBySlug,
+} from './forest-atlas';
+export {
   getOceanCurrentFrames,
   getOceanPollution,
   getOceanSalinityFrames,
@@ -53,6 +61,12 @@ export {
   getOceanStats,
   getOceansPage,
 } from './oceans';
+export {
+  getOceanAtlas,
+  getOceanAtlasBySlug,
+  oceanAtlasHubLede,
+  oceanAtlasSectionLabels,
+} from './ocean-atlas';
 export {
   getLawBySlug,
   getLawPage,

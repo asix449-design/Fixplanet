@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   lawCategoryPath,
+  lawDetailPath,
   lawImageSrc,
   lawSectionSrc,
   type LawEntry,
@@ -18,6 +19,41 @@ const { item } = Astro.props;
 const title = `${item.title} — Fix Planet`;
 const image = lawImageSrc(item.image);
 const categoryHref = localizePath(lawCategoryPath(item.category), locale);
+const birdsHref = localizePath(lawDetailPath('birds-directive'), locale);
+
+/** Longest first so inflected forms win over a shorter stem. */
+const birdsPhrases = [
+  'Директивой о птицах',
+  'Директиву о птицах',
+  'Директива о птицах',
+  'dyrektywą ptasią',
+  'dyrektywę ptasią',
+  'Dyrektywa ptasia',
+  'Putnu direktīvu',
+  'Putnu direktīva',
+  'Birds Directive',
+];
+
+function escapeHtml(value: string): string {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;');
+}
+
+/** Habitats keeps its wording and, on this page, links the Birds Directive mention. */
+function linkedPlain(value: string): string {
+  if (item.slug !== 'habitats-directive') return escapeHtml(value);
+  const phrase = birdsPhrases.find((candidate) => value.includes(candidate));
+  if (!phrase) return escapeHtml(value);
+  const index = value.indexOf(phrase);
+  return (
+    escapeHtml(value.slice(0, index)) +
+    `<a href="${escapeHtml(birdsHref)}">${escapeHtml(phrase)}</a>` +
+    escapeHtml(value.slice(index + phrase.length))
+  );
+}
 ---
 
 <BaseLayout
@@ -46,7 +82,7 @@ const categoryHref = localizePath(lawCategoryPath(item.category), locale);
       </p>
       <div class="eyebrow wildlife-on-dark">{page.categories[item.category]}</div>
       <h1 id="law-heading">{item.title}</h1>
-      <p>{item.hook}</p>
+      <p set:html={linkedPlain(item.hook)} />
     </div>
   </header>
 
@@ -92,7 +128,8 @@ const categoryHref = localizePath(lawCategoryPath(item.category), locale);
           <br />
           <strong>{page.citationLabel}:</strong> {item.citation}
           <br />
-          <strong>{page.yearLabel}:</strong> {item.yearStatus}
+          <strong>{page.yearLabel}:</strong>{' '}
+          <span set:html={linkedPlain(item.yearStatus)} />
         </p>
         <h2>{page.what}</h2>
         <p>{item.what}</p>
@@ -101,7 +138,7 @@ const categoryHref = localizePath(lawCategoryPath(item.category), locale);
         <h2>{page.effects}</h2>
         <p>{item.effects}</p>
         <h2>{page.caveats}</h2>
-        <p>{item.caveats}</p>
+        <p set:html={linkedPlain(item.caveats)} />
         <h2>{page.sourcesLabel}</h2>
         <p class="wildlife-sources">{item.sourcesNote}</p>
         <ul class="law-source-list">

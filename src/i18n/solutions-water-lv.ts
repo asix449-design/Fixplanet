@@ -192,4 +192,76 @@ export const lv: Record<WaterEncyclopediaSlug, WaterEncyclopediaCopy> = {
       'Destilatori nav pašvaldību. Tie neapūdeņo saimniecību. Sāls un katlakmens tik un tā krājas daudzās paplāšu konstrukcijās; MIT komanda apgalvoja, ka viņu dakts konfigurācija var naktī nokratīt sāli — tas ir pētniecības apgalvojums, ko vērot, ne gatavs produkts. Uzskatiet saules destilatoru par ārpus tīkla dzeramo ūdeni zem skaidrām debesīm — ne par atsāļošanas rūpnīcas aizstājēju.',
     ],
   },
+  'non-revenue-water-reduction': {
+    title: 'Neieņēmumu ūdens / DMA noplūžu samazināšana',
+    hook: 'Ūdenssaimniecības sagatavo dzeramo ūdeni, kas nekad nesasniedz apmaksātu krānu — noplūdes, zādzības un slikti skaitītāji tērē sateces ūdeni, kas jau ir zem slodzes.',
+    imageAlt:
+      'Tehniķis klausās noplūdi ielas ūdensvadā Saint-Maurice-de-Beynost ar korelātoru un zemes mikrofonu',
+    what: [
+      'Attīrīts dzeramais ūdens pazūd caurulēs, pirms skaitītājs to pieraksta. Noplūdes, zādzības un slikti skaitītāji tērē sateces ūdeni, kas jau ir zem slodzes. Uzskaites zonas (DMA), spiediena vadība un aktīva noplūžu meklēšana mazina fiziskos un komerciālos zudumus — tā ir jau sagatavota ūdens taupīšana. Tas ir dzeramā ūdens tīkls, ne pilienveida apūdeņošana laukā un ne lietus dārzs ielas notecē.',
+    ],
+    how: [
+      'DMA zona norobežo tīkla daļu, lai saimniecība salīdzinātu ūdeni, kas ieplūst zonā, ar ūdeni, par ko izrakstīts rēķins. Spiediena vadība neļauj liekam spiedienam atvērt noplūdes. Aktīva meklēšana klausās plīsumus. Vienreizējs ielāps bez zonām un bez spiediena kontroles ietaupījumu netur.',
+    ],
+    where: [
+      'Pasaules Bankas piezīme par ūdens zudumu samazināšanu un Starptautiskās ūdens asociācijas darbs par zudumiem to apraksta kā parasto ūdenssaimniecību praksi. Fotogrāfijā ir akustiska noplūdes meklēšana ielas maģistrālē Saint-Maurice-de-Beynost Francijā — tā pati meklēšanas klase, ne nosaukts Pasaules Bankas projekts.',
+    ],
+    limits: [
+      'Vajag kartes, skaitītājus un pastāvīgas brigādes. Vienreizējs caurules ielāps bez DMA zonām un spiediena kontroles ietaupījumu netur.',
+    ],
+  },
+  'uv-disinfection': {
+    title: 'UV dezinfekcija (dzeramais ūdens)',
+    hook: 'Ūdens, kas izskatās dzidrs, joprojām var nest Cryptosporidium un citus mikrobus, kurus hlors viens pats ne vienmēr aptur.',
+    imageAlt:
+      'Cauruļu zāle Sooke River Road ultravioletās dezinfekcijas stacijā Britu Kolumbijā — dzeramā ūdens iekārta',
+    what: [
+      'Ultravioletais starojums inaktivē mikrobus dzeramā ūdens stacijā un neatstāj ķīmisku atlikumu. Validēti reaktori ir ierasta prakse pēc EPA Long Term 2 vadlīnijām. Tā ir dzeramā ūdens stacijas barjera, ne atsāļošanas membrāna un ne mitrāja filtrs. Singapūras NEWater ultravioletā gaisma ir viens solis pašvaldības notekūdeņu atguvē; tā ir cita prakse.',
+    ],
+    how: [
+      'Ūdens iet caur ultravioletajām lampām reaktorā. Devu jāvalidē pret plūsmu un ūdens dzidrumu. Duļķains ūdens un nevalidētas lampas neizdodas. Ultravioletais starojums neatstāj atlikumu tālākajās caurulēs un neizņem sāļus vai lielāko daļu ķimikāliju.',
+    ],
+    where: [
+      'EPA ultravioletās dezinfekcijas rokasgrāmata un Long Term 2 noteikumu dokumenti ir atsauce validētiem reaktoriem. Fotogrāfijā ir Sooke River Road ultravioletās dezinfekcijas stacija Britu Kolumbijā, pašvaldības dzeramā ūdens iekārta.',
+    ],
+    limits: [
+      'Sadalīšanas tīklā nav noturīga atlikuma. Duļķains ūdens un nevalidētas lampas neizdodas. UV dezinfekcija neizņem sāļus vai lielāko daļu ķimikāliju.',
+    ],
+  },
+  'onsite-greywater-reuse': {
+    title: 'Pelēkais ūdens uz vietas (ēka)',
+    hook: 'Ēkas sūta viegli lietotu izlietnes un dušas ūdeni kanalizācijā, kamēr tualetes un laistīšana joprojām ņem dzeramo ūdeni.',
+    imageAlt:
+      'Pelēkā ūdens attīrīšana uz vietas: nostādinātāji ar tauku uztvērēju, apstādīta gultne un uzglabāšanas tvertnes',
+    what: [
+      'Attīrīts pelēkais ūdens no izlietnēm, dušām un veļas uz vietas atkal iet tualetēm vai apūdeņošanai, ēkas vai kvartāla mērogā. EPA to grupē kā uz vietas lietojamu nedzeramā ūdens atkārtotu izmantošanu. Tas nav Singapūras NEWater, pilsētas mēroga atguve rūpniecībai un ūdenskrātuvēm, un nav jumta lietusūdens vākšana.',
+    ],
+    how: [
+      'Viegli lietotu ūdeni tur atsevišķi no tualešu notekūdeņiem, attīra atbilstoši gala lietojumam un atgriež skalošanai vai laistīšanai tajā pašā ēkā vai kvartālā. Krustojums ar dzeramā ūdens caurulēm ir risks, no kura santehnikai jāizvairās. Tas nav dzeramā ūdens avots.',
+    ],
+    where: [
+      'EPA lapas par nedzeramā ūdens atkārtotu izmantošanu uz vietas apraksta šo praksi. Fotogrāfijā ir viena tāda līnija: nostādinātāji ar tauku uztvērēju, apstādīta gultne un uzglabāšanas tvertnes. Apstādītā gultne ir daļa no attīrīšanas ēkas mērogā, ne upes mitrājs un ne pašvaldības atguves stacija.',
+    ],
+    limits: [
+      'Krustojuma risks un vietējie noteikumi. Attīrīšanai jāatbilst gala lietojumam. Tas nav dzeramā ūdens avots.',
+    ],
+  },
+  'sand-dams': {
+    title: 'Smilšu dambji (sand dams)',
+    hook: 'Sezonālas smilšainas upes tek dažas dienas un tad atstāj sauszemes ciemus, kuriem pēc ūdens jāiet stundām, lai gan gultne izskatās tukša.',
+    imageAlt:
+      'Smilšu dambja shēma: zema siena pāri smilšainai gultnei, ūdens smilšu porās un rokas sūknis krastā',
+    what: [
+      'Smilšu dambis ir zema mūra siena pāri sezonālai smilšainai upei. Siena aiztur smiltis, un ūdens glabājas šīs smilšu krātuves porās — sauszemes krātuve ar mazu iztvaikošanu, jau lietota Kenijā un citur. Tā nav ūdens horizonta papildināšana ar baseiniem vai akām un nav jumta lietusūdens. Gravu aizsprosti un erozijas aizbāžņi ir mazāks erozijas rīks, ne šī būve.',
+    ],
+    how: [
+      'Sezonas plūdi nomet smilšu kravu aiz sienas. Ūdens sēž porās, ne atklātā dīķī, kas iztvaikotu. Īstā smilšainā gultne un pareiza vieta izlemj, vai krātuve tur ūdeni. Siena uz nepareizas ģeoloģijas uzkrāj maz.',
+    ],
+    where: [
+      'Practical Action smilšu dambju vadlīnijas un IWMI piezīme par kopienas smilšu dambjiem Kenijā apraksta būves, kas jau ir lietošanā. Attēls ir šīs būves shēma — zema siena, smiltis un aka krastā —, ne viena nosaukta dambja fotogrāfija.',
+    ],
+    limits: [
+      'Vajag īsto sezonālo smilšaino gultni, kopienas darbu un pareizu vietu. Siena uz nepareizas ģeoloģijas uzkrāj maz ūdens.',
+    ],
+  },
 };

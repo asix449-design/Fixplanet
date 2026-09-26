@@ -2714,7 +2714,8 @@ a.map-card:hover {
   flex-direction: column;
 }
 
-.innovation-card-wrap .wildlife-card {
+.innovation-card-wrap .wildlife-card,
+.innovation-card-wrap .map-card {
   flex: 1;
   height: auto;
 }
@@ -2797,18 +2798,173 @@ a.map-card:hover {
   margin-top: 1.3rem;
 }
 
-.borders-era {
+.borders-heading-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.55rem 1rem;
+  margin: 0 0 0.6em;
+}
+
+.borders-heading-row h2 {
+  margin: 0;
+  flex: 1 1 16rem;
+}
+
+.borders-readout {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  margin: 0.12rem 0 0;
+}
+
+.borders-readout button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid rgba(192, 255, 0, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.borders-readout-play:not(:disabled):hover,
+.borders-readout-play:not(:disabled):focus-visible,
+.borders-readout-play[aria-pressed='true'] {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--black);
+}
+
+.borders-readout-stop:not(:disabled):hover,
+.borders-readout-stop:not(:disabled):focus-visible {
+  background: rgba(192, 255, 0, 0.12);
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.borders-readout button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.borders-readout-rate {
+  display: inline-flex;
+  align-items: center;
+  width: 4.2rem;
+  margin-left: 0.1rem;
+}
+
+.borders-readout-rate input {
+  width: 100%;
+  accent-color: var(--lime);
+}
+
+.borders-essay {
+  margin: 0.35rem 0 1.15rem;
+  max-width: 42rem;
+}
+
+.borders-essay p {
+  color: var(--ink);
+  line-height: 1.7;
+  margin: 0 0 1em;
+}
+
+.borders-essay h3 {
+  color: var(--cream);
+  font-size: 1.15rem;
+  margin: 1.5rem 0 0.55rem;
+}
+
+.borders-essay h3:first-child {
+  margin-top: 1.05rem;
+}
+
+.borders-essay ul {
+  margin: 0 0 1em;
+  padding-left: 1.25rem;
+}
+
+.borders-essay li {
+  margin: 0.28rem 0;
+  line-height: 1.65;
+}
+
+.religion-legend {
+  margin: 0 0 1.6rem;
+  padding: 1rem 1.15rem 1.15rem;
+  background: rgba(10, 10, 10, 0.72);
+  border: 1px solid rgba(192, 255, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.religion-legend-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.religion-legend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  gap: 0.85rem;
-  margin: 1.15rem 0 0.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.45rem 1rem;
 }
 
-.borders-era-block h3 {
-  margin-top: 0.15rem;
+.religion-legend-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--cream);
+  font-size: 0.88rem;
 }
 
-.borders-era-block p {
-  margin: 0.35rem 0 0;
+.religion-swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 3px;
+  border: 1px solid rgba(244, 244, 240, 0.35);
+  flex: 0 0 auto;
+}
+
+.religion-honesty-pills {
+  max-width: none;
+}
+
+.religion-continents h4 {
+  margin: 1rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.religion-companion {
+  margin: 1.2rem 0 0;
+}
+
+.religion-companion img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  background: #f4efe4;
+}
+
+.religion-companion figcaption,
+.religion-companion-link {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 /* Forests — canopy / lime-on-black monitoring room */
@@ -4373,6 +4529,123 @@ a.map-card:hover {
   color: #a3a39a;
   font-style: normal;
   font-size: 0.86rem;
+}
+
+.today-mig-idp-grid {
+  list-style: none;
+  margin: 0.9rem 0 1.1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 700px) {
+  .today-mig-idp-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.today-mig-idp-card {
+  padding: 0.85rem 0.95rem 1rem;
+  background: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(192, 255, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.today-mig-idp-tag {
+  margin: 0 0 0.35rem;
+  color: var(--lime);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.today-mig-idp-card h4,
+.today-mig-idp-crises-title {
+  margin: 0 0 0.45rem;
+  color: var(--cream);
+}
+
+.today-mig-idp-figure {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0 0 0.55rem;
+}
+
+.today-mig-idp-figure strong {
+  color: var(--lime);
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+
+.today-mig-idp-figure span,
+.today-mig-idp-hook,
+.today-mig-idp-detail {
+  margin: 0 0 0.55rem;
+  color: #d8e4da;
+}
+
+.today-mig-idp-figure span {
+  color: #a3a39a;
+  font-size: 0.82rem;
+}
+
+.today-mig-idp-hook {
+  color: var(--cream);
+}
+
+.today-mig-idp-detail {
+  color: #a3a39a;
+  font-size: 0.9rem;
+}
+
+.today-mig-idp-detail:last-child {
+  margin-bottom: 0;
+}
+
+.today-mig-idp-splits {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0 0 0.7rem;
+}
+
+.today-mig-idp-splits div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.today-mig-idp-splits dt {
+  margin: 0;
+  color: #a3a39a;
+  font-size: 0.8rem;
+}
+
+.today-mig-idp-splits dd {
+  margin: 0;
+  color: var(--lime);
+  font-size: 0.86rem;
+}
+
+.today-mig-idp-crises-title {
+  margin-top: 0.35rem;
+}
+
+.today-mig-layer-list > li > p:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0.45rem 0 0;
+  border-top: 1px solid rgba(192, 255, 0, 0.16);
+  color: var(--cream);
+}
+
+.today-mig-layer-list > li > p:first-child strong:last-child {
+  color: var(--lime);
 }
 
 @media (max-width: 900px) {

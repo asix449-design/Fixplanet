@@ -125,13 +125,15 @@ const en = {
     } satisfies Record<TagKey, string>,
     tileLeads: {
       all: 'Every problem–fix card on one shelf.',
-      water: 'Harvesting, reuse, desalination, recharge, and living filters already in use.',
+      water:
+        'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
       forests: 'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working.',
       waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
       cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
-      materials: 'Lower-carbon cement, mass timber, and cleaner steel paths.',
-      oceans: 'Catching plastic, restoring shores, and fishing with less bycatch.',
-      energy: 'Wind, solar, and heat pumps that already run on real grids.',
+      materials: 'Cement, metals, timber, and recycled building materials already cutting embodied carbon.',
+      oceans:
+        'Catching plastic, restoring shores, fishing with less bycatch — plus protected areas, ship rules, and water-column farms.',
+      energy: 'Wind, solar, hydro, nuclear, storage, and heat already running on real grids.',
     } satisfies Record<TagKey | 'all', string>,
   },
   wildlifePage: {
@@ -183,7 +185,7 @@ const en = {
     extinctLead:
       'Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.',
     insectsLead:
-      'Insects are most of animal life. This shelf is six named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, one bumble bee, a carrion beetle, and a fen dragonfly — not a second bee or a third butterfly.',
+      'Insects are most of animal life. This shelf is eleven named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.',
     domesticatesLead:
       'Animals people keep — livestock, companions, and working species. These cards are the kept animals, not their wild relatives (wild boar, aurochs, and gray wolf live on other shelves). FAO’s Domestic Animal Diversity Information System (DAD-IS) tracks breeds worldwide.',
     dadisSource: 'FAO DAD-IS — domestic animal diversity',
@@ -453,13 +455,15 @@ const ru: typeof en = {
     },
     tileLeads: {
       all: 'Все карточки «проблема → решение» на одной полке.',
-      water: 'Сбор, оборотное использование, опреснение, подпитка горизонтов и живые фильтры.',
+      water:
+        'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
       forests: 'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство.',
       waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
       cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
-      materials: 'Цемент с меньшим углеродом, массивная древесина и более чистая сталь.',
-      oceans: 'Перехват пластика, восстановление берегов и лов с меньшим приловом.',
-      energy: 'Ветер, солнце и тепловые насосы, которые уже работают в реальных сетях.',
+      materials: 'Цемент, металлы, древесина и вторичные стройматериалы — уже снижают встроенный углерод.',
+      oceans:
+        'Перехват пластика, восстановление берегов и лов с меньшим приловом — плюс охраняемые районы, правила для судов и фермы в толще воды.',
+      energy: 'Ветер, солнце, гидро, атом, накопление и тепло — уже на реальных сетях.',
     },
   },
   wildlifePage: {
@@ -511,7 +515,7 @@ const ru: typeof en = {
     extinctLead:
       'Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
     insectsLead:
-      'Насекомые — большая часть животной жизни. На этой полке шесть названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, одна шмель, жук-падальщик и стрекоза известковых болот — не вторая пчела и не третья бабочка.',
+      'Насекомые — большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.',
     domesticatesLead:
       'Животные, которых держат люди: скот, компаньоны и рабочие виды. Эти карточки — о содержащихся животных, не об их диких родственниках (кабан, тур и серый волк живут на других полках). Информационная система ФАО DAD-IS ведёт учёт пород по всему миру.',
     dadisSource: 'ФАО DAD-IS — разнообразие домашних животных',
@@ -784,13 +788,15 @@ const pl: typeof en = {
     },
     tileLeads: {
       all: 'Wszystkie karty problem → rozwiązanie na jednej półce.',
-      water: 'Zbieranie, odzysk, odsalanie, zasilanie wód podziemnych i żywe filtry.',
+      water:
+        'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
       forests: 'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna.',
       waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
       cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
-      materials: 'Cement o niższym śladzie, drewno klejone i czystsza stal.',
-      oceans: 'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem.',
-      energy: 'Wiatr, słońce i pompy ciepła, które już działają w prawdziwych sieciach.',
+      materials: 'Cement, metale, drewno i wtórne materiały budowlane — już tną wbudowany węgiel.',
+      oceans:
+        'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem — oraz obszary chronione, reguły dla statków i hodowle w toni.',
+      energy: 'Wiatr, słońce, hydro, atom, magazyny i ciepło — już na prawdziwych sieciach.',
     },
   },
   wildlifePage: {
@@ -842,7 +848,7 @@ const pl: typeof en = {
     extinctLead:
       'Zniknęły. Większość kart ma jasną przyczynę ludzką. Przy kilku przedstawicielach megafauny późnego plejstocenu klimat jest drugim, uczciwie nazwanym czynnikiem.',
     insectsLead:
-      'Owady to większość życia zwierzęcego. Ta półka to sześć nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, jeden trzmiel, grabarz i ważka wapiennych mokradeł — nie druga pszczoła i nie trzeci motyl.',
+      'Owady to większość życia zwierzęcego. Ta półka to jedenaście nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, dwa trzmiele, grabarz, dwa europejskie chrząszcze martwego drewna, ważka wapiennych mokradeł, trzyszcz słonych mokradeł i wetapunga na wyspach bez drapieżników.',
     domesticatesLead:
       'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Te karty dotyczą zwierząt trzymanych, nie ich dzikich krewnych (dzik, tur i wilk szary są na innych półkach). System FAO DAD-IS śledzi rasy na świecie.',
     dadisSource: 'FAO DAD-IS — różnorodność zwierząt hodowlanych',
@@ -1115,13 +1121,15 @@ const lv: typeof en = {
     },
     tileLeads: {
       all: 'Visas «problēma → risinājums» kartītes vienā plauktā.',
-      water: 'Vākšana, atkārtota izmantošana, atsāļošana, gruntsūdeņu papildināšana un dzīvie filtri.',
+      water:
+        'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
       forests: 'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse.',
       waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
       cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
-      materials: 'Cements ar mazāku oglekli, masīvkoksne un tīrāks tērauds.',
-      oceans: 'Plastmasas uztveršana, krastu atjaunošana un zvejas ar mazāku piezveju.',
-      energy: 'Vējš, saule un siltumsūkņi, kas jau darbojas īstos tīklos.',
+      materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli — jau samazina ietverto oglekli.',
+      oceans:
+        'Plastmasas uztveršana, krastu atjaunošana un zveja ar mazāku piezveju — plus aizsargājamās teritorijas, kuģu noteikumi un audzes ūdens stabā.',
+      energy: 'Vējš, saule, hidro, kodols, uzkrāšana un siltums — jau reālos tīklos.',
     },
   },
   wildlifePage: {
@@ -1173,7 +1181,7 @@ const lv: typeof en = {
     extinctLead:
       'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas. Dažiem vēlā pleistocēna megafaunas pārstāvjiem klimats ir otrs, godīgi nosaukts cēlonis.',
     insectsLead:
-      'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir seši nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, viena kameņu suga, maitas vabole un kaļķaino avoksnāju spāre — ne otra bite un ne trešais tauriņš.',
+      'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir vienpadsmit nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, divas kamenes, maitas vabole, divas Eiropas mirušās koksnes vaboles, kaļķaino avoksnāju spāre, sāļo mitrāju smilšvabole un vetapunga plēsēju brīvās salās.',
     domesticatesLead:
       'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Šīs kartītes ir par turētajiem dzīvniekiem, ne par savvaļas radiniekiem (mežacūka, tauts un pelēkais vilks ir citos plauktos). FAO DAD-IS uzskaita šķirnes pasaulē.',
     dadisSource: 'FAO DAD-IS — mājlopu daudzveidība',

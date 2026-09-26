@@ -1,6 +1,81 @@
 import type { SpeciesCopy } from '../data/wildlife';
 
 export const packLv: Record<string, SpeciesCopy> = {
+  'european-bison': {
+    commonName: 'Eiropas bizons (zubr)',
+    hook: 'Iznīcināts savvaļā 20. gadsimta sākumā, pēc tam atjaunots — brīvi dzīvojošie ganāmpulki pieauga no aptuveni 1800 dzīvniekiem 2003. gadā līdz 6244 47 apakšpopulācijās līdz 2019. gadam; IUCN pārcēla no Vulnerable uz Near Threatened.',
+    imageAlt: 'Eiropas bizona bullis stāv rudens mežā',
+    what: 'Eiropas lielākais sauszemes zīdītājs — savvaļas radinieks Amerikas bizonam, cita suga. Līnijas glābtas zoodārzos, pēc tam izlaistas mežos no 1950. gadiem.',
+    range:
+      'Eiropa. Līdz 2019. gadam brīvi dzīvojošie dzīvnieki atkal bija mežos, 47 apakšpopulācijās. Tikai aptuveni astoņi ganāmpulki ir pietiekami lieli ilgtermiņa ģenētiskai dzīvotspējai; vairums ganāmpulku paliek mazi un pārsvarā izolēti.',
+    story:
+      'Tā ir pārvaldīta atgriešanās pēc tam, kad cilvēki iztukšoja areālu: vairošana nebrīvē, reintrodukcijas un pastāvīga ganāmpulku pārvaldība. Joprojām atkarīgs no aizsardzības (mazi, izolēti ganāmpulki), ne neapdraudēts bums kā mežacūkai — bet atkal ainavā.',
+    when: 'IUCN (2020. gada novērtējums): brīvi dzīvojošā populācija ~1800 (2003) → 6244 (2019) 47 ganāmpulkos. Statuss: Near Threatened, pārcelts no Vulnerable. Vēlāka Oryx piezīme minēja aptuveni 6800 brīvi dzīvojošus līdz 2020. gadam, kamēr plānošana turpinājās.',
+    humanRole:
+      'Cilvēki nošāva pēdējos savvaļas dzīvniekus. Vairošana nebrīvē, izlaišana mežos no 1950. gadiem un pastāvīga ganāmpulku pārvaldība atgrieza brīvi dzīvojošos ganāmpulkus.',
+    sources:
+      'IUCN Sarkanais saraksts (Bison bonasus, Near Threatened, 2020); IUCN ziņa, 2020. gada 10. dec.; Oryx piezīme par areāla mēroga rīcības plānu.',
+  },
+  'north-american-beaver': {
+    commonName: 'Ziemeļamerikas bebrs',
+    hook: 'Ap 1900. gadu gandrīz izdzēsts lielā daļā areāla filca cepurēm; regulēta medniecība un reintrodukcijas atjaunoja kontinentālu atslēgas sugu — IUCN: Least Concern, mūsdienu novērtējumi bieži ~10–15 milj.',
+    imageAlt: 'Ziemeļamerikas bebrs sēž uz baļķa dīķa malā',
+    what: 'Jaunās pasaules dambju būvētājs — tā pati ģimene kā dzīvais Eiropas bebrs, cita suga. Pārveido upītes par mitrājiem, kas tur ūdeni, uzkrāj oglekli dīķos un baro citu dzīvnieku.',
+    range:
+      'Atkal kontinentāla atslēgas suga tur, kur palikusi dzīvotne, pēc gandrīz pilnīgas izdzēšanas lielā daļā areāla. Nejauc ar Castor fiber.',
+    story:
+      'Cilvēki medībās to noveda līdz vietējai izzušanai kažokādas dēļ, pēc tam atveda atpakaļ. Kur daudz — konflikts ar lauksaimniecību un ceļu caurtekām. Klasisks izdzīvojušo stāsts „vēl šeit, tad bums”, ne Endangered retums.',
+    when: 'Ap 1900. gadu bebri bija gandrīz pazuduši no daudzām sākotnējām dzīvotnēm. USDA Forest Service 2. reģiona novērtējums: ieguves noteikumi, mitrāju aizsardzība, pārvietošana un dabiska izplatīšanās atjaunoja populācijas tur, kur dzīvotne palika. Mūsdienu kopsummas bieži vērtē desmitos miljonu (bieži ~10–15 milj.). Stanford kopsavilkums par nesenu kartēšanu min kritumu no aptuveniem pirmskoloniālajiem minējumiem 60–400 milj. līdz aptuveni 10–15 milj. šodien — vēsturisko griestu uzskatīt par nenoteiktu; virziens (sabrukums → atkal miljoni) ir stingrs. IUCN: Least Concern.',
+    humanRole:
+      'Kažokādu tirdzniecība filca cepurēm to gandrīz izdzēsa. Regulēta medniecība un gadsimta vidus reintrodukcijas to atjaunoja.',
+    sources:
+      'IUCN Sarkanais saraksts (Castor canadensis, Least Concern); Animal Diversity Web; USDA Forest Service 2. reģiona novērtējums; Stanford Report, 2025. gada 11. aug.; Communications Earth & Environment (doi:10.1038/s43247-025-02572-y).',
+  },
+  'bald-eagle': {
+    commonName: 'Baltgalvas ērglis',
+    hook: '1963. gadā ASV apakšējos 48 štatos palika 417 zināmu ligzdošanas pāru; pēc DDT aizlieguma un ESA darba USFWS saskaitīja aptuveni 316\u202f700 indivīdu un 71\u202f467 aizņemtas ligzdas 2018.–2019. gadā.',
+    imageAlt: 'Pieaudzis baltgalvas ērglis lidojumā virs ūdens: balta galva un aste',
+    what: 'Ziemeļamerikas zivju ērglis un ASV nacionālais simbols — vienīgais ērglis, kas dzimts tikai šim kontinentam. Pieaugušajiem ir balta galva un aste; jaunāki putni gadiem paliek raibi brūni.',
+    range:
+      'Ziemeļamerika. Galvenie atjaunošanas skaitļi ir apakšējo 48 štatu stāsts. Aļasku ESA tāpat neiekļāva.',
+    story:
+      'Šaušana un DDT plānināja olu čaumalas, līdz putns gandrīz pazuda no ASV blakus štatiem. Likuma aizsardzība, darbs pie ligzdām un DDT aizliegums ASV 1972. gadā apgrieza krahu. Noņemts no ESA 2007. gadā; joprojām aizsargāts ar Baltgalvas un zelta ērgļa aizsardzības likumu un gājputnu līguma likumu.',
+    when: 'USFWS: 417 zināmi ligzdošanas pāri apakšējos 48 štatos 1963. gadā → 9789 pāri 2007. gada izņemšanā no saraksta → aptuveni 316\u202f700 indivīdu un 71\u202f467 aizņemtas ligzdas (2018.–2019. gada dati). IUCN: Least Concern.',
+    humanRole:
+      'Šaušana un DDT izraisīja krahu. 1972. gada DDT aizliegums, ESA darbs un ligzdu aizsardzība to apgrieza.',
+    sources:
+      'USFWS sugas lapa; USFWS Bald Eagle Population Size: 2020 Update; izņemšanas noteikums, Federal Register, 2007.',
+  },
+  'white-rhinoceros': {
+    commonName: 'Baltais degunradzis',
+    hook: 'Dienvidu baltos degunradžus pirms gadsimta novadīja līdz vienam patvērumam Dienvidāfrikā; IUCN/TRAFFIC 2024. gada beigās novērtē Āfrikas baltos aptuveni 15\u202f752 — Near Threatened, joprojām galvenais dzīvais krājums.',
+    imageAlt: 'Dienvidu baltais degunradzis ar mazuli ganībās; redzama platā kvadrātveida lūpa',
+    what: 'Platiņā degunradža zālēdājs savannā. Divas pasugas: dienvidu (atjaunošana) un ziemeļu (funkcionāli izmirusi savvaļā — jau Endangered plauktā). Gandrīz visi dzīvie baltie degunradži ir dienvidu pasuga (C. s. simum).',
+    range:
+      'Āfrikas savanna. Dienvidu baltos pirms gadsimta novadīja līdz vienam patvērumam Dienvidāfrikā. Ziemeļu pasuga nav šīs kartītes varonis.',
+    story:
+      'Aizsardzība un pārvietošana no Hluhluwe–iMfolozi atjaunoja dienvidu skaitu no niecīga atlikuma līdz desmitiem tūkstošu. Tā ir izdzīvojušo atgriešanās. Tas nav tas pats stāsts kā kritiski apdraudētajiem melnajam, Javas vai Sumatras degunradzim, un tā nav ziemeļu baltā atlieka.',
+    when: 'IUCN paziņojums presei (2025. gada 7. aug., atsaukdamies uz AfRSG/TRAFFIC CITES ziņojumu): 15\u202f752 baltie degunradži Āfrikā 2024. gada beigās (mīnus 11,2% pret 2023 — sausums, uzskaite un pārvaldības satricinājumi pēc agrākiem pieaugumiem). IRF kopsavilkumi joprojām tur garo loku: „mazāk nekā 100 1900. gadu sākumā → desmitiem tūkstošu”. IUCN Sarkanais saraksts: Near Threatened.',
+    humanRole:
+      'Medības noveda dienvidu pasugu līdz vienam patvērumam. Aizsardzība un pārvietošana atjaunoja dzīvo krājumu.',
+    sources:
+      'IUCN Sarkanais saraksts (Ceratotherium simum, Near Threatened); IUCN paziņojums presei, 2025. gada 7. aug.; International Rhino Foundation; AfRSG priekšsēdētāja ziņojums Pachyderm; Dienvidāfrikas bioloģiskās daudzveidības pārvaldības plāns.',
+  },
+  'arabian-oryx': {
+    commonName: 'Arābijas orikss',
+    hook: '1970. gadu sākumā atzīts par izzudušu savvaļā, pēc tam atgriezts no zoodārziem; līdz IUCN 2016. gada novērtējumam savvaļā atkal aptuveni 1220 (850 pieaugušie) — pirmā suga, kas atgriezās no Extinct in the Wild uz Vulnerable.',
+    imageAlt: 'Arābijas orikss tuksneša krūmājā Uruk Bani Maaridas rezervātā Saūda Arābijā',
+    what: 'Balta tuksneša antilope ar gariem, gandrīz taisniem ragiem — mazākais Oryx, dzimts Arābijas pussalas tuksnešiem un stepēm.',
+    range:
+      'Arābijas pussalas tuksneši un stepes. Izlaišanas no 1980. gada atgrieza dzīvniekus Omānā, Saūda Arābijā, Izraēlā, AAE, Jordānijā un radniecīgās vietās.',
+    story:
+      'Motorizēta medniecība iztukšoja ganāmpulkus. Vairošana nebrīvē un izlaišanas no 1980. gada atgrieza dzīvniekus no zoodārziem. Joprojām apdraudēta (dzīvotne, nelikumīgas medības, mazi savvaļas kopējie) — bet dokumentēta atgriešanās no Extinct in the Wild, ne CR bez atjaunošanas ceļa.',
+    when: '1970. gadu sākumā atzīts par izzudušu savvaļā. IUCN SSC Antelope Specialist Group faktu lapa (2016. gada novērtējums): aptuveni 1220 savvaļā (850 pieaugušie) un 6000–7000 nebrīvē. Statuss: Vulnerable — pirmā suga, kas atgriezās no Extinct in the Wild uz Vulnerable. IUCN ziņa (2011) fiksēja soli uz leju no augstākas apdraudējuma kategorijas. Royal Society Open Science (2021) aplūko Omānas reintrodukcijas ģenētiku.',
+    humanRole:
+      'Motorizēta medniecība iztukšoja pēdējos savvaļas ganāmpulkus. Vairošana nebrīvē un izlaišanas no 1980. gada sugu atgrieza.',
+    sources:
+      'IUCN Sarkanais saraksts (Oryx leucoryx, Vulnerable); IUCN, „A grain of hope in the desert” (2011); IUCN SSC Antelope Specialist Group faktu lapa; Royal Society Open Science, 2021.',
+  },
   'lord-howe-island-stick-insect': {
     commonName: 'Lordhauas kociņš',
     hook: 'Uzskatīts par izmirstu Lordhauā pēc žurkām 1918. gadā — sīka savvaļas populācija turas Bolla piramīdā.',
@@ -46,13 +121,13 @@ export const packLv: Record<string, SpeciesCopy> = {
   },
   'franklins-bumble-bee': {
     commonName: 'Franklina kamene',
-    hook: 'Kamene ar sīku Oregonas–Kalifornijas areālu, kas sabruka 1990.–2000. gados. Šī plaukta vienīgā bite.',
+    hook: 'Kamene ar sīku Oregonas–Kalifornijas areālu, kas sabruka 1990.–2000. gados.',
     imageAlt: 'Franklina kamene uz zieda, dzeltenmelna — USDA foto',
     what: 'Franklina kamene (Bombus franklini) ir kamene ar vienu no mazākajiem areāliem ģintī Bombus — sloksne dienvidu Oregonā un ziemeļu Kalifornijā. IUCN: kritiski apdraudēta. Uzskaites no 1990. gadiem līdz 2000. gadiem dokumentēja sabrukumu.',
     range:
       'Īss Klamatas–Siskijū posms, vēsturiski no dienvidu Oregonas uz ziemeļu Kaliforniju. Tā nekad nebija kontinenta bite.',
     story:
-      'Speciālistiem tā bija vietēji pazīstama, tad ap desmit gadiem kļuva izzūdoši reta. Parastie aizdomās turamie ir slimību pārnese no turētām bitēm, dzīvotņu zudums un mazais areāls; pēdējo plaši pieņemto novērojumu ir maz. Šī ir plaukta vienīgā bišu kartīte — ne otra suga un ne aizstājēja visām krītošajām Bombus.',
+      'Speciālistiem tā bija vietēji pazīstama, tad ap desmit gadiem kļuva izzūdoši reta. Parastie aizdomās turamie ir slimību pārnese no turētām bitēm, dzīvotņu zudums un mazais areāls; pēdējo plaši pieņemto novērojumu ir maz. Areāls vienmēr bija īsa Oregonas–Kalifornijas sloksne — ne aizstājēja visām krītošajām Bombus.',
     when: 'Kritiski apdraudēta tagad. Areāls vienmēr bija sīks; skaits sabruka nesen.',
     humanRole:
       'Mazs endēms areāls plus tas, ko pievienoja cilvēki — patogēni, saimniecības un mainīta ainava.',
@@ -83,6 +158,79 @@ export const packLv: Record<string, SpeciesCopy> = {
     when: 'Federālais saraksts ASV. Piesaistīta retam mitrāja veidam.',
     humanRole: 'Kaļķaino fen nosusināšana, karjeri un apbūve — vienīgā sugas dzīvotne.',
     sources: 'ASV Zivju un savvaļas dienesta sugas lapa (Somatochlora hineana).',
+  },
+  'rusty-patched-bumble-bee': {
+    commonName: 'Rūsganā plankuma kamene',
+    hook: 'Kādreiz parasta ASV austrumos un Kanādas dienvidos; pēc strauja sabrukuma 2000. gadu sākumā iekļauta Endangered Species Act 2017. gadā, un jaunākie atradumi aptver tikai aptuveni 13 ASV štatus un vienu Kanādas provinci.',
+    imageAlt: 'Rūsganā plankuma kamene uz violetas bergamotes, ar rūsganu plankumu uz vēdera',
+    what: 'Viena no aptuveni 21 ASV austrumu kameņu sugām — putekšņus uzkrājoša sociāla bite, kuras darba bitēm uz vēdera ir raksturīgs rūsganais plankums (no tā nosaukums). Tā ir Bombus affinis, ne Franklina kamene (Bombus franklini).',
+    range:
+      'Vēsturiskais areāls no Džordžijas ziemeļos līdz dienvidu Kvebekai un Ontārio un rietumos uz Dakotām. Kopš aptuveni 2000. gada ASV Zivju un savvaļas dienesta pārskats to apstiprina daudz mazākā skaitā vienību: aptuveni 13 ASV štatos un vienā Kanādas provincē.',
+    story:
+      'Patogēni, pesticīdi, dzīvotņu zudums, konkurence ar turētām bitēm un klimata stress sakrājās areāla sabrukumā. Franklina kamene ir cita suga ar sīku Oregonas–Kalifornijas areālu. Šī kamene kādreiz bija parasta kontinenta austrumu pusē.',
+    when: 'ASV Zivju un savvaļas dienests: federāli Endangered (2017); atjaunošanas plāns pabeigts 2021. gadā. Jaunākie atradumi aptver aptuveni 13 ASV štatus un vienu Kanādas provinci.',
+    humanRole:
+      'Pesticīdi, patogēni no turētām bitēm, zaudētas dzīvotnes un mainīts klimats samazināja kādreiz parasto austrumu kameni līdz daļai no kartes. 2017. gada Endangered Species Act iekļaušana un 2021. gada atjaunošanas plāns ir federālā atbilde.',
+    sources: 'ASV Zivju un savvaļas dienests — rūsganā plankuma kamene (Bombus affinis).',
+  },
+  'european-stag-beetle': {
+    commonName: 'Briežvabole',
+    hook: 'Eiropas lielākā vabole un Dzīvotņu direktīvas karogs pūstošai platlapju koksnei — IUCN 2023. gada Eiropas / EU27 novērtējums to vērtē kā Near Threatened, jo vairošanās vietas turpina sarukt, pat ja pilsoņu zinātnes atradumu kļūst vairāk.',
+    imageAlt: 'Briežvaboles tēviņš ar lielām ragu žokļu daļām uz zaļas lapas',
+    what: 'Liela briežvabole (Lucanus cervus), kuras kāpuri gadus pavada mitrā, trūdošā platlapju koksnē — celmos, apraktās saknēs, vecos kokos. Tēviņiem ir slavenie „ragi”; mātītēm to nav. Tā ir mirušās koksnes speciāliste, ne maitas vabole.',
+    range:
+      'Eiropa. Vairošanai vajag nepārtrauktu mitru, trūdošu platlapju koksni. Pieaugušie klejo, tāpēc novērojums nav tas pats, kas vairošanās celms.',
+    story:
+      'Pieaugoši pilsoņu zinātnes atradumi nenozīmē vairāk vairošanās vietu — daudzi novērojumi ir klejotāji. Sarkanais saraksts par īsto signālu uzskata turpinātu mirušās koksnes nepārtrauktības zudumu. Dzīvotņu direktīvas 17. panta ziņojumi secīgos ciklos rādījuši nelabvēlīgu stāvokli ievērojamā daļā dalībvalstu.',
+    when: 'IUCN Eiropa / EU27 (2023): Near Threatened pēc B2b(ii,iii). Kāpuru attīstība parasti ilgst 4–5 gadus, tāpēc robs mirušajā koksnē kož ilgāk nekā desmitgadi.',
+    humanRole:
+      'Cilvēki izvāc celmus, nozāģē vecos platlapjus un pārrauj trūdošās koksnes nepārtrauktību, kas kāpuriem vajadzīga. Vabole ir Dzīvotņu direktīvas karogs šai koksnei.',
+    sources:
+      'IUCN Sarkanais saraksts (Lucanus cervus, Eiropa / EU27, Near Threatened, 2023); EUNIS; JNCC, Apvienotās Karalistes Dzīvotņu direktīvas 17. pants, S1083 (2019).',
+  },
+  'hermit-beetle': {
+    commonName: 'Eremītvabole',
+    hook: 'Skarabejs, kas gandrīz visu mūžu dzīvo vecu dobumainu koku trūdē Eiropā — IUCN (2023) to vērtē kā Near Threatened, jo vecie koki joprojām zūd un nākamā dobumu paaudze atpaliek par gadu desmitiem.',
+    imageAlt: 'Tumši brūna eremītvabole uz veca koka raupjās mizas',
+    what: 'Obligāta saproksilā skarabeju vabole (Osmoderma eremita) dobumainos platlapju kokos. Pieaugušie reti lido tālu; populācijas paaudzēm sēž vienā kokā vai sīkā koku grupā.',
+    range:
+      'Eiropa un EU27. Izplatības apmērs ir liels, bet vairošanās vietu aizņemtā platība lēsta tikai aptuveni 2000–2500 km², un šīs vietas ir stipri sadrumstalotas.',
+    story:
+      'Briežvaboles kāpuriem vajag mitras mirušās koksnes apjomu. Eremītvabolei vajag dobumu ar trūdi, un nākamā dobumu paaudze atpaliek par gadu desmitiem no kokiem, ko zaudē tagad. Tā kā pieaugušie reti lido tālu, robs starp vecajiem kokiem var izolēt populāciju paaudzēm.',
+    when: 'IUCN (2023): Near Threatened, B2ab(ii,iii,v). Vecie dobumainie koki nepārtraukti samazinās, un dobumu atjaunošanās ilgst ilgi.',
+    humanRole:
+      'Veco dobumaino koku nociršana un nākamās dobumu paaudzes trūkums atņem vienīgās vietas, kur šī vabole var vairoties.',
+    sources: 'IUCN Sarkanais saraksts (Osmoderma eremita, Near Threatened, 2023).',
+  },
+  'salt-creek-tiger-beetle': {
+    commonName: 'Solnāja smilšvabole',
+    hook: 'Smilšvabole, endēma Austrumnebraskas sāļajiem līdzenumiem — pēc mitrāju nosusināšanas ap Linkolnu intensīvas uzskaites kopš 1991. gada skaitījušas tikai 153 pieaugušos (2005) un maksimumu 777 (2002), visus saujiņā atlieku vietu.',
+    imageAlt: 'Solnāja smilšvabole, metāliski zaļi bronzas krāsā, uz gaišām sāļām dūņām',
+    what: 'Maza, ātra plēsīga vabole kailās sāļās dūņās gar Salt Creek un Little Salt Creek. Kāpuri rok alas sāls garozā; pieaugušie medī atklātos līdzenumos. Taksonomija dažkārt lieto Ellipsoptera nevadica lincolniana; ASV Zivju un savvaļas dienesta lapa joprojām ved ar Cicindela nevadica lincolniana.',
+    range:
+      'Austrumnebraskas sāļie mitrāji, atlieku sālslīdzenumos gar Salt Creek un Little Salt Creek uz ziemeļiem no Linkolnas. Tā nav maitas vabole un nav plaši izplatīta smilšvabole.',
+    story:
+      'Dambji, gultnes regulēšana un Linkolnas augšana izdzēsa lielāko daļu sāļā mitrāja, atstājot vienu trauslu metapopulāciju. Nebraska Game and Parks uzskaišu kopsavilkums: sešas populācijas 1991. gadā, un trīs no tām vēlāk zaudētas. Katrs nesenais skaits nāk no saujiņas atlieku vietu.',
+    when: 'Endangered ASV Endangered Species Act. Intensīvas uzskaites kopš 1991. gada ietver maksimumu 777 pieaugušos (2002), minimumu 153 (2005) un 374 saskaitītus 2012. gadā. Dienesta sugas lapa un parakstītais atjaunošanas plāns dokumentē iekļaušanu un atjaunošanas aprises.',
+    humanRole:
+      'Nosusināšana, dambji, gultnes regulēšana un pilsētas augšana ap Linkolnu atņēma lielāko daļu sāļo līdzenumu, kur vabole medī un rok alas.',
+    sources:
+      'ASV Zivju un savvaļas dienesta sugas lapa; Nebraska Game and Parks; USFWS solnāja smilšvaboles atjaunošanas plāns; Nebraskas–Linkolnas universitātes vizuālie populācijas novērtējumi.',
+  },
+  wetapunga: {
+    commonName: 'Vetapunga',
+    hook: 'Jaunzēlandes lielākā veta — kādreiz sarukusi līdz Hauturu-o-Toi / Little Barrier, tad audzēta un pārvietota: Auckland Zoo un partneri izlaiduši vairāk nekā 5000 dzīvnieku plēsēju brīvās salās, un NZTCS sugu vērtē kā Nationally Increasing (joprojām Threatened / atkarīga no aizsardzības).',
+    imageAlt: 'Vetapunga, liela nelidojoša veta, uz zaļas lapas',
+    what: 'Deinacrida heteracantha — milzu nelidojošs taisnspārnis, wētāpunga. Pieaugušās mātītes vidēji sver aptuveni 40 g; smagākā reģistrētā grūsna mātīte sasniegusi aptuveni 71 g. Naktī ēd lapas un pārnēsā arī sēklas barības vielām bagātos ekskrementos.',
+    range:
+      'Kādreiz sarukusi līdz Hauturu-o-Toi / Little Barrier salai. Nebrīvē audzēti dzīvnieki tagad dzīvo arī citās plēsēju brīvās salās, tostarp Motuora, Tiritiri Matangi un vietās Bay of Islands.',
+    story:
+      'Pēc Klusā okeāna žurku izskaušanas no Little Barrier Dabas aizsardzības departaments un Auckland Zoo izveidoja nebrīves līnijas un pārvietoja dzīvniekus uz Motuora, Tiritiri Matangi, Bay of Islands vietām un citām kaitēkļu brīvām salām. Tā ir pārvaldīta atgriešanās, kas joprojām ir piesaistīta plēsēju brīvai dzīvotnei.',
+    when: 'Jaunzēlandes apdraudējuma klasifikācijas sistēma (NZTCS): Nationally Increasing, joprojām zem Threatened lietussarga un joprojām atkarīga no aizsardzības. Populācija 1000–5000 pieaugušo kārtā, vairākās plēsēju brīvās salās; novērtējums lasa tendenci kā pieaugumu vairāk nekā par 10 procentiem, un piezīmes min arī vairāk nekā 30 procentus. Auckland Zoo (2020): vairāk nekā 5000 izlaisti; Bay of Islands izlaišana atvēra salas 6–8 to salu kopā.',
+    humanRole:
+      'Ievazāti plēsēji samazināja vetu līdz vienai salai. Žurku izskaušana, audzēšana nebrīvē un salu izlaišanas, ko veica Dabas aizsardzības departaments un Auckland Zoo, dzīvniekus atgrieza — tikai tur, kur plēsēji paliek ārpusē.',
+    sources:
+      'NZTCS novērtējums (Deinacrida heteracantha); DOC Vetapunga lapa un milzu vetu pārvietošanas vadlīnijas; Auckland Zoo, 2020.',
   },
   cattle: {
     commonName: 'Liellopi',

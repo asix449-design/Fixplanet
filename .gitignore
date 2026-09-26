@@ -7,3 +7,5 @@ dist/
 !.env.example
 brand-ref/
 public/data/ne_110m_admin_0_countries.geojson
+__pycache__/
+*.pyc

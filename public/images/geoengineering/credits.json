@@ -112,6 +112,14 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E8%A5%BF%E7%9A%84%E9%BB%84%E5%9C%9F%E9%AB%98%E5%8E%9F.jpg"
   },
   {
+    "slug": "jordan-badia-restoration",
+    "file": "jordan-badia-restoration.jpg",
+    "commonsTitle": "Atriplex bush in Jordan.jpg",
+    "artist": "Iainsimpsonstewart",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atriplex_bush_in_Jordan.jpg"
+  },
+  {
     "slug": "stratospheric-aerosol-injection",
     "file": "stratospheric-aerosol-injection.jpg",
     "commonsTitle": "Pinatubo91eruption_plume.jpg",
@@ -134,5 +142,37 @@
     "artist": "MODIS Land Rapid Response Team, NASA GSFC",
     "license": "Public domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ship_Tracks_over_the_Pacific_(MODIS_2024-04-03).jpg"
+  },
+  {
+    "slug": "cirrus-cloud-thinning",
+    "file": "cirrus-cloud-thinning.jpg",
+    "commonsTitle": "Cirrus Clouds off Chile (MODIS 2024-05-09).jpg",
+    "artist": "MODIS Land Rapid Response Team, NASA GSFC",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cirrus_Clouds_off_Chile_(MODIS_2024-05-09).jpg"
+  },
+  {
+    "slug": "surface-albedo-modification",
+    "file": "surface-albedo-modification.jpg",
+    "commonsTitle": "Archipel de Santorin, Santorini, Greece (Unsplash).jpg",
+    "artist": "Anthony Delanoix",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Archipel_de_Santorin,_Santorini,_Greece_(Unsplash).jpg"
+  },
+  {
+    "slug": "ocean-alkalinity-enhancement",
+    "file": "ocean-alkalinity-enhancement.jpg",
+    "commonsTitle": "Oa-buoy-enrique-reef.jpg",
+    "artist": "Hendee / NOAA",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oa-buoy-enrique-reef.jpg"
+  },
+  {
+    "slug": "glacial-climate-intervention",
+    "file": "glacial-climate-intervention.jpg",
+    "commonsTitle": "Thwaites Glacier Tongue.jpg",
+    "artist": "NASA ICE / James Yungel",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thwaites_Glacier_Tongue.jpg"
   }
 ]

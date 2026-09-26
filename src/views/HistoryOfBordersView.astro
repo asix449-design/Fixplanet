@@ -2,12 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { borderHistoryPreviewSrc } from '../data/border-history';
 import {
-  BORDER_CONTINENT_ORDER,
   getBorderHistoryFrames,
   getBorderHistoryPage,
   localizePath,
   resolveLocale,
 } from '../i18n';
+import { renderSafeMarkdown } from '../lib/safe-markdown';
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getBorderHistoryPage(locale);
@@ -31,7 +31,17 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
     </div>
   </header>
 
-  <section class="section borders-timeline">
+  <section
+    class="section borders-timeline"
+    data-borders-speech
+    data-locale={locale}
+    data-label-play={page.play}
+    data-label-pause={page.pause}
+    data-label-play-aria={page.playAria}
+    data-label-pause-aria={page.pauseAria}
+    data-label-stop-aria={page.stopAria}
+    data-label-no-voice={page.noVoice}
+  >
     <div class="wrap">
       <p class="source-note">{page.honesty}</p>
 
@@ -49,7 +59,6 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
         {
           frames.map((frame) => {
             const preview = borderHistoryPreviewSrc(frame.preview);
-            const eraBlocks = BORDER_CONTINENT_ORDER.filter((key) => frame.eraByContinent?.[key]);
             return (
               <article class="borders-frame map-detail" id={`year-${frame.year}`}>
                 <figure class="map-detail-art">
@@ -64,19 +73,54 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
                     <span class="pill">{frame.sourceShort}</span>
                     {frame.nearest ? <span class="pill">{page.nearestNote}</span> : null}
                   </div>
-                  <h2>{frame.title}</h2>
+                  <div class="borders-heading-row">
+                    <h2>{frame.title}</h2>
+                    {
+                      frame.essay ? (
+                        <div class="borders-readout" data-borders-readout>
+                          <button
+                            type="button"
+                            class="borders-readout-play"
+                            data-readout-play
+                            aria-label={`${page.playAria}: ${frame.title}`}
+                            aria-pressed="false"
+                            disabled
+                          >
+                            {page.play}
+                          </button>
+                          <button
+                            type="button"
+                            class="borders-readout-stop"
+                            data-readout-stop
+                            aria-label={`${page.stopAria}: ${frame.title}`}
+                            disabled
+                          >
+                            {page.stop}
+                          </button>
+                          <label class="borders-readout-rate">
+                            <span class="visually-hidden">{page.rateLabel}</span>
+                            <input
+                              type="range"
+                              data-readout-rate
+                              min="0.9"
+                              max="1.1"
+                              step="0.05"
+                              value="1"
+                              aria-label={page.rateLabel}
+                              disabled
+                            />
+                          </label>
+                        </div>
+                      ) : null
+                    }
+                  </div>
                   <p>{frame.caption}</p>
+                  {
+                    frame.essay ? (
+                      <div class="borders-essay" set:html={renderSafeMarkdown(frame.essay)} />
+                    ) : null
+                  }
                   <p class="wildlife-sources">{page.coverage[frame.coverage]}</p>
-                  {eraBlocks.length ? (
-                    <div class="borders-era">
-                      {eraBlocks.map((key) => (
-                        <section class="borders-era-block">
-                          <h3>{page.continents[key]}</h3>
-                          <p>{frame.eraByContinent?.[key]}</p>
-                        </section>
-                      ))}
-                    </div>
-                  ) : null}
                   <h3>{page.sourceLabel}</h3>
                   <p class="wildlife-sources">
                     <strong>{frame.sourceOrg}</strong>
@@ -110,3 +154,9 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  import { initBorderReadAloud } from '../lib/border-read-aloud';
+
+  initBorderReadAloud();
+</script>

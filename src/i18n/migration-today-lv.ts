@@ -35,6 +35,8 @@ export const lvToday: TodayShelfCopy = {
   layersLabel: 'Kartes slāņi',
   layerCamps: 'Bēgļu nometnes',
   layerDetections: 'ES robežu konstatējumi',
+  layerIdp: 'Iekšējā pārvietošana',
+  layerRefugees: 'Bēgļi (UNHCR)',
   campsTitle: 'Lielākās UNHCR nometnes un apmetnes',
   campsLead:
     'Nosauktas UNHCR vietas ar publicētu skaitu un datumu. Tie ir cilvēki, kas jau dzīvo nometnē vai apmetnē — ne 2023. gada neto migrācija un ne «šogad iebraukušie».',
@@ -57,6 +59,168 @@ export const lvToday: TodayShelfCopy = {
   detectionsOpen: 'Atvērt ES maršruta piezīmi',
   detectionsNationalities: '2025. gadā visbiežāk konstatētās valstspiederības: Bangladeša, Ēģipte, Afganistāna — tas nav apgalvojums par to, kas «visbiežāk iebrauc» pasaulē.',
   noHeadcount: 'Bez izdomāta skaitļa',
+  idpTitle: 'Iekšējā pārvietošana (IDMC)',
+  idpLead:
+    'Vairāk nekā 62,2 milj. iekšējo pārvietošanu 2025. gadā (−6% pret 2024): 32,3 milj. no konflikta un vardarbības (rekords) un 29,9 milj. no katastrofām. Konflikts pirmo reizi apsteidza katastrofas; 42 valstīs bija abi.',
+  idpDefinition:
+    'IDMC skaita cilvēkus, kas spiesti pamest mājas konflikta, vardarbības vai katastrofu dēļ un nav šķērsojuši starptautisku robežu. Tas nav UN DESA starptautiskais migrant stock, ne Frontex konstatējumi un ne UNHCR nometņu headcount. Kustības gada laikā (jaunas vai atkārtotas) nav tas pats, kas krājums gada beigās; viens cilvēks var pārvietoties vairāk nekā vienreiz.',
+  idpHonesty:
+    'GRID 2026 aptver 2025. kalendāra gadu (ziņojums publicēts 2026. gada 12. maijā). Krājums ir cilvēki, kas gada beigās joprojām dzīvo iekšējā pārvietošanā. Gada skaitļi ir saskaitītas kustības, ne unikāli cilvēki. 32,3 milj. nedrīkst parakstīt kā 32,3 milj. unikālu cilvēku.',
+  idpNoChoropleth:
+    'Nosauktās krīzes zemāk ir piezīmes ar avotu, ne pasaules karte, kas krāsota pēc skaita. IDMC pārklājums ir nepilnīgs; lapa nezīmē globālu koroplētu un ne «izrāviena bultiņu» slāni no šīm summām.',
+  idpMillion: 'milj.',
+  idpMovementsUnit: 'kustības, 2025',
+  idpStockUnit: 'cilvēki, 2025. gada beigas',
+  idpConflictLabel: 'Konflikts un vardarbība',
+  idpDisasterLabel: 'Katastrofas',
+  idpCountriesLabel: 'valstis un teritorijas',
+  idpBothLabel: 'valstis ar abiem cēloņiem',
+  idpCrisesTitle: 'Nosauktas krīzes — piezīmes ar avotu, ne karte',
+  idpCards: {
+    'idp-stock-2025': {
+      tag: 'Krājums · 2025. gada beigas',
+      title: 'Cilvēki iekšējā pārvietošanā',
+      hook: 'Vairāk nekā 82,2 milj. cilvēku dzīvoja iekšējā pārvietošanā 104 valstīs un teritorijās 2025. gada beigās — pirmais vieglais kritums desmitgadē, skaitļi joprojām pie rekorda.',
+      detail: [
+        'IDMC krājums: cilvēki, kas spiesti pamest mājas konflikta, vardarbības vai katastrofu dēļ un nav šķērsojuši starptautisku robežu. Vairāk nekā 68,6 milj. — konflikts/vardarbība; gandrīz 13,6 milj. — katastrofas (uz 2025. gada 31. decembri). Tas nav starptautiskais migrant stock un ne UNHCR nometņu headcount.',
+      ],
+    },
+    'idp-conflict-displacements-2025': {
+      tag: 'Kustības · 2025',
+      title: 'Pārvietošanas konflikta un vardarbības dēļ',
+      hook: 'Konflikts un vardarbība izraisīja rekordlielas 32,3 milj. iekšējās pārvietošanas 48 valstīs 2025. gadā — aptuveni 60% virs 2024 un pirmo reizi vairāk nekā katastrofas.',
+      detail: [
+        'Tās ir kustības gada laikā (jaunas vai atkārtotas), ne unikāli cilvēki. Irāna un DRC — aptuveni trešdaļa globālā iznākuma katrai. Starptautiskie bruņotie konflikti — aptuveni 46%. Sudānā gada beigās iekšējā pārvietošanā palika aptuveni 9,1 milj. cilvēku.',
+      ],
+    },
+    'idp-disaster-displacements-2025': {
+      tag: 'Kustības · 2025',
+      title: 'Pārvietošanas katastrofu dēļ',
+      hook: 'Katastrofas izraisīja 29,9 milj. iekšējās pārvietošanas 140 valstīs 2025. gadā — 35% zem 2024. gada maksimuma, joprojām aptuveni 13% virs desmitgades vidējā.',
+      detail: [
+        'Vētras ~17,9 milj.; plūdi <7,9 milj.; ugunsgrēki >694 tūkst.; ģeofizika ~2,5 milj. Filipīnās — aptuveni 10,7 milj. katastrofu pārvietošanu (~36% globālā disaster iznākuma). Tā nav «klimata migrantu» karte un ne starptautiskais net migration.',
+      ],
+    },
+    'idp-movements-2025-overview': {
+      tag: 'Pārskats · 2025',
+      title: 'Iekšējās pārvietošanas 2025. gadā',
+      hook: 'Vairāk nekā 62,2 milj. iekšējo pārvietošanu 2025. gadā (−6% pret 2024): 32,3 milj. no konflikta un vardarbības (rekords) un 29,9 milj. no katastrofām. Konflikts pirmo reizi apsteidza katastrofas; 42 valstīs bija abi.',
+      detail: [
+        'Slāņa ievada flīze. Vienreiz: kustības ≠ krājums ≠ pārrobežu migrācija. A–C detalizācija. Nedrīkst zīmēt globālu «izrāviena bultiņu» no šīm summām.',
+      ],
+    },
+  },
+  refugeesTitle: 'Bēgļi UNHCR mandātā',
+  refugeesLead:
+    'Cilvēki, kas bēga pāri starptautiskai robežai un paliek UNHCR mandātā. Global Trends 2025, publicēts 2026. gada 11. jūnijā, šo krājumu 2025. gada beigās vērtē 35,6 milj. — aptuveni par 3% mazāk nekā gadu iepriekš, skaitļi joprojām pie rekorda.',
+  refugeesDefinition:
+    'Cilvēks ir šķērsojis starptautisku robežu, un UNHCR viņu skaita kā bēgli, cilvēku bēgļa situācijai līdzīgā stāvoklī vai citu cilvēku, kam vajadzīga starptautiskā aizsardzība. Tas nav nosaukto UNHCR nometņu skaits, ne iekšējā pārvietošana pēc IDMC, ne palestīniešu bēgļi UNRWA mandātā, ne UN DESA starptautisko migrantu skaits un ne Frontex konstatējumi. Patvēruma meklētāji, kas vēl gaida lēmumu, tiek skaitīti atsevišķi.',
+  refugeesHonesty:
+    'Global Trends 2025 aptver 2025. kalendāra gadu. Krājums ir iedzīvotāji 2025. gada 31. decembrī. Atgriešanās ir kustības šajā gadā. Saraksti zemāk ir atlasīti no ziņojuma un no UNHCR atvērtās rādītāju bāzes, ne pilna valstu skaitīšana šajā lapā.',
+  refugeesNoChoropleth:
+    'Nav pasaules kartes, kas krāsota pēc skaita. Uzņemošo valstu un izcelsmes valstu rindas ir īsi saraksti ar avotiem, ne izdomāti valstu apveidi. Nosauktās nometnes paliek nometņu slānī.',
+  refugeesCards: {
+    'refugees-unhcr-stock-2025': {
+      tag: 'Krājums · 2025. gada beigas',
+      title: 'Bēgļi UNHCR mandātā',
+      hook: '35,6 milj. cilvēku 2025. gada beigās bija bēgļi, cilvēki bēgļa situācijai līdzīgā stāvoklī vai citi cilvēki, kam vajadzīga starptautiskā aizsardzība UNHCR mandātā — aptuveni par 3% mazāk nekā gadu iepriekš, skaitļi joprojām pie rekorda.',
+      figure: '35,6',
+      unit: 'milj. cilvēku, 2025. gada beigas',
+      rows: [
+        { label: 'Bēgļi, ieskaitot līdzīgu situāciju', figure: '28,5 milj.' },
+        { label: 'Citi cilvēki, kam vajadzīga starptautiskā aizsardzība', figure: '7,2 milj.' },
+        { label: 'Palestīniešu bēgļi UNRWA mandātā (atsevišķi)', figure: 'ap 6 milj.' },
+        { label: 'Patvēruma meklētāji, gaida lēmumu (atsevišķi)', figure: 'gandrīz 9 milj.' },
+      ],
+      detail: [
+        'UNHCR gada beigu krājums: cilvēki, kas bēguši pāri starptautiskai robežai un kam vajadzīga starptautiskā aizsardzība tā mandātā. Aptuveni 28,5 milj. ir bēgļi, ieskaitot cilvēkus bēgļa situācijai līdzīgā stāvoklī. 7,2 milj. ir citi cilvēki, kam vajadzīga starptautiskā aizsardzība. Tas nav nometņu skaits, ne iekšējā pārvietošana pēc IDMC, ne UN DESA starptautisko migrantu skaits un ne Frontex konstatējumi.',
+        'Aptuveni 6 milj. palestīniešu bēgļu UNRWA mandātā stāv blakus šim skaitlim, ne tā iekšpusē. Kopā ar UNRWA plašāks skats uz bēgļiem dod aptuveni 41,6 milj. Gandrīz 9 milj. patvēruma meklētāju 2025. gada beigās joprojām gaidīja lēmumu par pieteikumu — viņus skaita atsevišķi.',
+        'Global Trends 2025 kritumu galvenokārt saista ar atgriešanos lielās situācijās, īpaši Afganistānā, Sīrijā un Sudānā, un atzīmē, ka daudzas atgriešanās notika spiediena apstākļos, trauslos apstākļos.',
+      ],
+    },
+    'refugees-top-hosts-2025': {
+      tag: 'Uzņemošās valstis · 2025. gada beigas',
+      title: 'Kur dzīvo bēgļi',
+      hook: 'Piecas valstis 2025. gada beigās uzņēma aptuveni trešdaļu bēgļu un citu cilvēku, kam vajadzīga starptautiskā aizsardzība UNHCR tvērumā: Kolumbija 2,8 milj., Vācija 2,7 milj., Turcija 2,4 milj., Uganda 1,9 milj., Irāna 1,7 milj.',
+      figure: '1/3',
+      unit: 'piecās uzņemošajās valstīs, 2025. gada beigas',
+      rows: [
+        { label: 'Kolumbija', figure: '2,8 milj.' },
+        { label: 'Vācija', figure: '2,7 milj.' },
+        { label: 'Turcija', figure: '2,4 milj.' },
+        { label: 'Uganda', figure: '1,9 milj.' },
+        { label: 'Irāna', figure: '1,7 milj.' },
+      ],
+      detail: [
+        'Uzņemošo valstu krājums 2025. gada beigās pēc Global Trends un UNHCR atvērtās rādītāju bāzes: bēgļi, cilvēki līdzīgā situācijā un citi cilvēki, kam vajadzīga starptautiskā aizsardzība. Tas nav nometņu lieluma rangs un ne saraksts, kas šajā gadā uzņēma visvairāk ierašanos.',
+        'Kolumbijas skaitli lielā mērā veido venecuēlieši ar aizsardzības statusu. Vācija un Turcija ir valstis ar augstiem un vidēji augstiem ienākumiem un atšķirīgiem tiesiskajiem ceļiem. Uganda un Irāna ir lielas izcelsmes valstu kaimiņvalstis. Valstis ar zemiem un vidējiem ienākumiem joprojām uzņem 68% šīs populācijas. Vismazāk attīstītās valstis — 26% (aptuveni 9,4 milj.).',
+        'Nosauktās UNHCR nometnes, tostarp Koksbazāra un Dādāba, paliek nometņu slānī. Lielai uzņemošai valstij var būt maz lielu nometņu. Lielākā daļa bēgļu pasaulē nedzīvo nometnēs.',
+      ],
+    },
+    'refugees-top-origins-2025': {
+      tag: 'Izcelsmes valstis · 2025. gada beigas',
+      title: 'No kurienes nāk bēgļi',
+      hook: 'Aptuveni divas trešdaļas bēgļu un citu cilvēku, kam vajadzīga starptautiskā aizsardzība UNHCR tvērumā, 2025. gada beigās nāca no tikai piecām valstīm: Venecuēla 6,5 milj., Ukraina 5,2 milj., Sīrija 4,9 milj., Afganistāna 3,7 milj., Sudāna 2,8 milj.',
+      figure: '2/3',
+      unit: 'no piecām izcelsmes valstīm, 2025. gada beigas',
+      rows: [
+        { label: 'Venecuēla', figure: '6,5 milj.' },
+        { label: 'Ukraina', figure: '5,2 milj.' },
+        { label: 'Sīrija', figure: '4,9 milj.' },
+        { label: 'Afganistāna', figure: '3,7 milj.' },
+        { label: 'Sudāna', figure: '2,8 milj.' },
+      ],
+      detail: [
+        'Izcelsmes valstu krājums tai pašai UNHCR populācijai kā uzņemošo valstu sarakstā. Ja šīm piecām pievieno Dienvidsudānu, no sešām valstīm nāk vairāk nekā 70%.',
+        'Sīrijas krājums līdz 2025. gada beigām pēc lielas atgriešanās samazinājās līdz aptuveni 4,9 milj. Afganistānas — līdz aptuveni 3,7 milj. Ukrainas skaitļi paliek augsti: pagaidu aizsardzība un radniecīgi statusi ietilpst šajā tvērumā. Venecuēlieši paliek lielākā izcelsmes grupa starp citiem cilvēkiem, kam vajadzīga starptautiskā aizsardzība, abās Amerikās.',
+        'Aptuveni 5,4 milj. cilvēku 2025. gada laikā bija spiesti bēgt pāri robežai. Tā ir gada plūsma, ne šis krājums.',
+      ],
+    },
+    'refugees-neighbouring-hosts-2025': {
+      tag: 'Aina · 2025. gada beigas',
+      title: 'Lielākā daļa bēgļu paliek tuvumā',
+      hook: '65% bēgļu un citu cilvēku, kam vajadzīga starptautiskā aizsardzība, 2025. gada beigās dzīvoja valstīs, kas robežojas ar izcelsmes valsti. 68% uzņēma valstis ar zemiem un vidējiem ienākumiem.',
+      figure: '65%',
+      unit: 'kaimiņvalstīs, 2025. gada beigas',
+      rows: [
+        { label: 'Kaimiņvalstis', figure: '65%' },
+        { label: 'Valstis ar zemiem un vidējiem ienākumiem', figure: '68%' },
+        { label: 'Ieilgušās situācijas, pieci gadi vai ilgāk', figure: 'ap 70%' },
+      ],
+      detail: [
+        'Šīs daļas atbild, kur atrodas krājums, ne kurš Eiropas Savienības maršruts ir noslogotākais. Frontex konstatējumi paliek atsevišķs skaits par neatļautiem šķērsojumiem ES ārējās robežās.',
+        'Aptuveni 70% bēgļu šajā tvērumā bija ieilgušās situācijās — pieci gadi vai ilgāk bez tuva ilgstoša risinājuma. Global Trends 2025 skaita aptuveni 24,9 milj. cilvēku nedaudz vairāk nekā 1 300 šādās situācijās valstīs ar zemiem un vidējiem ienākumiem.',
+        'Uzņemšana kaimiņos un zemāku ienākumu valstīs ir noturīga aina UNHCR rindās. No šīm daļām neizriet, ka pasaules bēgļu galvenais stāsts ir ceļš no Āfrikas uz Eiropu.',
+      ],
+    },
+    'refugees-returns-2025': {
+      tag: 'Atgriešanās · 2025',
+      title: 'Bēgļu atgriešanās 2025. gadā',
+      hook: 'Gandrīz 4,4 milj. bēgļu 2025. gadā atgriezās izcelsmes valstīs — viens no augstākajiem atgriešanās gadiem rindā. Vairāk nekā 90% devās tikai uz trim valstīm: Afganistānu (ap 1,9 milj.), Sīriju (ap 1,3 milj.) un Sudānu (ap 651 500).',
+      figure: '4,4',
+      unit: 'milj. atgriešanās, 2025',
+      rows: [
+        { label: 'Afganistāna', figure: 'ap 1,9 milj.' },
+        { label: 'Sīrija', figure: 'ap 1,3 milj.' },
+        { label: 'Sudāna', figure: 'ap 651 500' },
+      ],
+      detail: [
+        'Bēgļu atgriešanās 2025. kalendāra gadā pēc Global Trends. UNHCR brīdina, ka daudzas atgriešanās notika nelabvēlīgos apstākļos, vietās, kur saglabājas nedrošība un vāji pakalpojumi. Atgriešanās pati par sevi nav ilgstošs risinājums.',
+        'Cilvēku, kas pārvietoti savas valsts iekšienē, atgriešanās ir cita rinda, un tā paliek iekšējās pārvietošanas slānī. Pārmitināšanas un sponsorēšanas ierašanās samazinājās vairāk nekā uz pusi, līdz aptuveni 81 800 2025. gadā.',
+        'Atgriešanās apjoms pieauga. Drošība un iekārtošanās uz vietas bieži neatbilda šim skaitlim.',
+      ],
+    },
+  },
+  idpCrisisCopy: {
+    'sudan-stock': {
+      place: 'Sudāna',
+      note: 'Lielākā krīze pēc cilvēkiem iekšējā pārvietošanā 2025. gada beigās. Aptuveni 9,1 milj. cilvēku joprojām dzīvoja iekšējā pārvietošanā Sudānā. Tas ir gada beigu krājums, ne 2025. gada kustības un ne UNHCR nometņu headcount.',
+    },
+    'philippines-disaster-2025': {
+      place: 'Filipīnas',
+      note: 'Aptuveni 10,7 milj. katastrofu pārvietošanu 2025. gadā — ap 36% globālā disaster iznākuma GRID kartes kopsavilkumā. Galvenokārt laikapstākļu apdraudējumu kustība un evakuāciju uzskaite, ne «klimata migrantu» pasaules karte.',
+    },
+  },
   regions: {
     africa: {
       name: 'Āfrika',
@@ -131,17 +295,17 @@ export const lvToday: TodayShelfCopy = {
     'coxs-bazar': {
       name: 'Koksasbazāra nometnes',
       country: 'Bangladeša',
-      note: 'Bangladešas valdība / UNHCR: 33 nometnes Koksasbazāra apgabalā, tostarp Kutupalonga. Rohindžu bēgļi no Mjanmas. Vēl ap 33 659 cilvēkiem Bhasančaras salā šajā marķierī nav iekļauti.',
+      note: 'Bangladešas valdība / UNHCR: 33 nometnes Koksasbazāra apgabalā, tostarp Kutupalonga. Rohindžu bēgļi no Mjanmas. Vēl 33 514 cilvēki Bhasančaras salā šajā marķierī nav iekļauti.',
     },
     dadaab: {
       name: 'Dadaaba',
       country: 'Kenija',
-      note: 'Dadaabas nometņu komplekss Kenijas austrumos. Skaitlis uz 2025. gada 31. decembri. Komplekss, ne viena telšu pilsēta.',
+      note: 'Dadaabas nometņu komplekss Kenijas austrumos. Kenijas statistikas pakete uz 2026. gada 31. augustu (valdība / UNHCR). Komplekss, ne viena telšu pilsēta.',
     },
     'kakuma-kalobeyei': {
       name: 'Kakuma un Kalobejei',
       country: 'Kenija',
-      note: 'Kakuma 225 701; Kalobejei 82 629; Eldoreta 2 425 — trīs vietas, ko UNHCR Kenija apvienoja 2025. gada 31. decembra atjauninājumā. Viens marķieris, jo tā ir viena operācija.',
+      note: 'Kakuma 234 542, Kalobejei 86 547 un Eldoreta 2 573, grupēti kā viena Kakumas apgabala operācija Kenijas statistikas paketē, 2026. gada 31. augustā.',
     },
     bidibidi: {
       name: 'Bidibidi',
@@ -151,7 +315,7 @@ export const lvToday: TodayShelfCopy = {
     zaatari: {
       name: 'Zaatari',
       country: 'Jordānija',
-      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR operatīvais skaitlis uz 2026. gada 31. augustu.',
+      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR Jordānijas iedzīvotāju skaitļi, 2026. gada 31. augusts.',
     },
   },
   routeCopy: {

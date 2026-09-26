@@ -1,5 +1,5 @@
 ---
-import { mapPreviewSrc, type MapEntry } from '../data/maps';
+import { mapPreviewSrc, mapPrimarySource, type MapEntry } from '../data/maps';
 import { getMapsPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -11,9 +11,14 @@ const page = getMapsPage(locale);
 const { map } = Astro.props;
 const href = localizePath(`/maps/${map.slug}`, locale);
 const preview = mapPreviewSrc(map.preview);
+const primary = mapPrimarySource(map);
 ---
 
-<article class="map-card-wrap" data-map-category={map.category} data-slug={map.slug}>
+<article
+  class:list={['map-card-wrap', primary && 'innovation-card-wrap']}
+  data-map-category={map.category}
+  data-slug={map.slug}
+>
   <a class="map-card" href={href}>
     <div class="card-art map-card-art">
       <img src={preview} alt={map.imageAlt} width="640" height="320" loading="lazy" />
@@ -27,12 +32,29 @@ const preview = mapPreviewSrc(map.preview);
       <span class="tag">{page.categories[map.category]}</span>
       <h3>{map.title}</h3>
       <p class="map-card-meta">
-        {map.sourceShort}
-        <span aria-hidden="true"> · </span>
-        {map.year}
+        {
+          map.cardMeta ? (
+            map.cardMeta
+          ) : (
+            <>
+              {map.sourceShort}
+              <span aria-hidden="true"> · </span>
+              {map.year}
+            </>
+          )
+        }
       </p>
       <p class="wildlife-hook">{map.hook}</p>
       <span class="card-cta">{page.cardCta}</span>
     </div>
   </a>
+  {
+    primary ? (
+      <p class="innovation-card-source">
+        <a href={primary.url} rel="noopener noreferrer">
+          {page.sourceLabel}: {primary.label}
+        </a>
+      </p>
+    ) : null
+  }
 </article>
