@@ -152,6 +152,23 @@ export type TodayRegionCopy = {
   corridorsIntro: string;
 };
 
+export type TodayRefugeeCardId =
+  | 'refugees-unhcr-stock-2025'
+  | 'refugees-top-hosts-2025'
+  | 'refugees-top-origins-2025'
+  | 'refugees-neighbouring-hosts-2025'
+  | 'refugees-returns-2025';
+
+export type TodayRefugeeCardCopy = {
+  tag: string;
+  title: string;
+  hook: string;
+  figure: string;
+  unit: string;
+  rows: { label: string; figure: string }[];
+  detail: string[];
+};
+
 export type TodayShelfCopy = {
   mapTitle: string;
   mapAria: string;
@@ -181,6 +198,13 @@ export type TodayShelfCopy = {
   layerCamps: string;
   layerDetections: string;
   layerIdp: string;
+  layerRefugees: string;
+  refugeesTitle: string;
+  refugeesLead: string;
+  refugeesDefinition: string;
+  refugeesHonesty: string;
+  refugeesNoChoropleth: string;
+  refugeesCards: Record<TodayRefugeeCardId, TodayRefugeeCardCopy>;
   campsTitle: string;
   campsLead: string;
   campsHonesty: string;

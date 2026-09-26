@@ -264,6 +264,26 @@ export const todaySources: PrimarySource[] = [
     'IDMC displacement data hub',
     'https://www.internal-displacement.org/database/displacement-data/',
   ),
+  cite(
+    'UNHCR — Global Trends',
+    'https://www.unhcr.org/global-trends',
+  ),
+  cite(
+    'UNHCR — Global Trends 2025 (PDF, June 2026)',
+    'https://www.unhcr.org/sites/default/files/2026-06/global-trends-report-2025.pdf',
+  ),
+  cite(
+    'UNHCR — Refugee Data Finder',
+    'https://www.unhcr.org/refugee-statistics',
+  ),
+  cite(
+    'UNHCR — press release, 11 June 2026',
+    'https://www.unhcr.org/news/press-releases/7-10-refugees-living-long-term-displacement-unhcr-chief-calls-renewed-push',
+  ),
+  cite(
+    'UNHCR — Refugee hosting metrics',
+    'https://www.unhcr.org/refugee-statistics/insights/explainers/refugee-hosting-metrics.html',
+  ),
 ];
 
 export function isTodayRegion(value: string | undefined): value is TodayRegionId {

@@ -36,6 +36,7 @@ export const plToday: TodayShelfCopy = {
   layerCamps: 'Obozy dla uchodźców',
   layerDetections: 'Wykrycia na granicach UE',
   layerIdp: 'Wewnętrzne przesiedlenie',
+  layerRefugees: 'Uchodźcy (UNHCR)',
   campsTitle: 'Największe obozy i osiedla UNHCR',
   campsLead:
     'Nazwane ośrodki UNHCR z opublikowaną liczbą i datą. To ludzie już mieszkający w obozie lub osiedlu — nie migracja netto z 2023 r. i nie „przybysze z tego roku”.',
@@ -106,6 +107,107 @@ export const plToday: TodayShelfCopy = {
       hook: 'Ponad 62,2 mln wewnętrznych przesiedleń w 2025 (−6% vs 2024): 32,3 mln z konfliktu i przemocy (rekord) oraz 29,9 mln z katastrof. Konflikt po raz pierwszy wyprzedził katastrofy; w 42 krajach wystąpiły oba.',
       detail: [
         'Kafelek wprowadzający warstwy. Raz: ruchy ≠ stan ≠ migracja transgraniczna. Szczegóły A–C. Nie rysować globalnej «strzałki przełomu» z tych sum.',
+      ],
+    },
+  },
+  refugeesTitle: 'Uchodźcy pod mandatem UNHCR',
+  refugeesLead:
+    'Ludzie, którzy uciekli przez granicę międzynarodową i pozostają pod mandatem UNHCR. Global Trends 2025, opublikowany 11 czerwca 2026, szacuje ten stan na koniec 2025 roku na 35,6 mln — około 3% mniej niż rok wcześniej, wciąż blisko rekordu.',
+  refugeesDefinition:
+    'Osoba przekroczyła granicę międzynarodową, a UNHCR liczy ją jako uchodźcę, osobę w sytuacji zbliżonej do statusu uchodźcy albo inną osobę potrzebującą ochrony międzynarodowej. To nie liczba nazwanych obozów UNHCR, nie wewnętrzne przesiedlenie według IDMC, nie uchodźcy palestyńscy pod mandatem UNRWA, nie stan migrantów międzynarodowych UN DESA i nie wykrycia Frontexu. Osoby ubiegające się o azyl, które wciąż czekają na decyzję, liczy się osobno.',
+  refugeesHonesty:
+    'Global Trends 2025 obejmuje rok kalendarzowy 2025. Stan to ludność na 31 grudnia 2025. Powroty to ruchy w ciągu tego roku. Listy poniżej są wybrane z raportu i z otwartej bazy wskaźników UNHCR, a nie pełnym spisem krajów na tej stronie.',
+  refugeesNoChoropleth:
+    'Nie ma mapy świata kolorowanej liczbą. Szeregi krajów przyjmujących i krajów pochodzenia to krótkie listy ze źródłami, nie wymyślone kształty państw. Nazwane obozy zostają na warstwie obozów.',
+  refugeesCards: {
+    'refugees-unhcr-stock-2025': {
+      tag: 'Stan · koniec 2025',
+      title: 'Uchodźcy pod mandatem UNHCR',
+      hook: '35,6 mln osób było na koniec 2025 roku uchodźcami, osobami w sytuacji zbliżonej do statusu uchodźcy albo innymi osobami potrzebującymi ochrony międzynarodowej pod mandatem UNHCR — około 3% mniej niż rok wcześniej, wciąż blisko rekordu.',
+      figure: '35,6',
+      unit: 'mln osób, koniec 2025',
+      rows: [
+        { label: 'Uchodźcy, w tym sytuacja zbliżona', figure: '28,5 mln' },
+        { label: 'Inne osoby potrzebujące ochrony międzynarodowej', figure: '7,2 mln' },
+        { label: 'Uchodźcy palestyńscy pod mandatem UNRWA (osobno)', figure: 'około 6 mln' },
+        { label: 'Osoby ubiegające się o azyl, czekają na decyzję (osobno)', figure: 'prawie 9 mln' },
+      ],
+      detail: [
+        'Stan UNHCR na koniec roku: ludzie, którzy uciekli przez granicę międzynarodową i potrzebują ochrony międzynarodowej pod jego mandatem. Około 28,5 mln to uchodźcy, wliczając osoby w sytuacji zbliżonej do statusu uchodźcy. 7,2 mln to inne osoby potrzebujące ochrony międzynarodowej. To nie liczba ludzi w obozach, nie wewnętrzne przesiedlenie według IDMC, nie stan migrantów międzynarodowych UN DESA i nie wykrycia Frontexu.',
+        'Około 6 mln uchodźców palestyńskich pod mandatem UNRWA stoi obok tej liczby, a nie w jej środku. Razem z UNRWA szersze spojrzenie na uchodźców daje około 41,6 mln. Prawie 9 mln osób ubiegających się o azyl na koniec 2025 roku wciąż czekało na decyzję — liczy się je osobno.',
+        'Global Trends 2025 wiąże spadek głównie z powrotami w dużych sytuacjach, zwłaszcza do Afganistanu, Syrii i Sudanu, i zaznacza, że wiele powrotów odbyło się pod presją, do kruchych warunków.',
+      ],
+    },
+    'refugees-top-hosts-2025': {
+      tag: 'Kraje przyjmujące · koniec 2025',
+      title: 'Gdzie żyją uchodźcy',
+      hook: 'Pięć krajów przyjmowało około jednej trzeciej uchodźców i innych osób potrzebujących ochrony międzynarodowej w zakresie UNHCR na koniec 2025: Kolumbia 2,8 mln, Niemcy 2,7 mln, Turcja 2,4 mln, Uganda 1,9 mln, Iran 1,7 mln.',
+      figure: '1/3',
+      unit: 'w pięciu krajach przyjmujących, koniec 2025',
+      rows: [
+        { label: 'Kolumbia', figure: '2,8 mln' },
+        { label: 'Niemcy', figure: '2,7 mln' },
+        { label: 'Turcja', figure: '2,4 mln' },
+        { label: 'Uganda', figure: '1,9 mln' },
+        { label: 'Iran', figure: '1,7 mln' },
+      ],
+      detail: [
+        'Stany krajów przyjmujących na koniec 2025 roku według Global Trends i otwartej bazy wskaźników UNHCR: uchodźcy, osoby w sytuacji zbliżonej i inne osoby potrzebujące ochrony międzynarodowej. To nie ranking wielkości obozów i nie lista tego, kto przyjął najwięcej przyjazdów w tym roku.',
+        'Liczba Kolumbii w dużej mierze opiera się na Wenezuelczykach ze statusem ochrony. Niemcy i Turcja to kraje o wysokim i wyższym średnim dochodzie, z różnymi ścieżkami prawnymi. Uganda i Iran to duzi sąsiedzi krajów pochodzenia. Kraje o niskim i średnim dochodzie nadal przyjmują 68% tej ludności. Kraje najsłabiej rozwinięte — 26% (około 9,4 mln).',
+        'Nazwane obozy UNHCR, w tym Cox’s Bazar i Dadaab, zostają na warstwie obozów. Duży kraj przyjmujący może mieć niewiele dużych obozów. Większość uchodźców na świecie nie mieszka w obozach.',
+      ],
+    },
+    'refugees-top-origins-2025': {
+      tag: 'Kraje pochodzenia · koniec 2025',
+      title: 'Skąd pochodzą uchodźcy',
+      hook: 'Około dwóch trzecich uchodźców i innych osób potrzebujących ochrony międzynarodowej w zakresie UNHCR pochodziło na koniec 2025 z zaledwie pięciu krajów: Wenezuela 6,5 mln, Ukraina 5,2 mln, Syria 4,9 mln, Afganistan 3,7 mln, Sudan 2,8 mln.',
+      figure: '2/3',
+      unit: 'z pięciu krajów pochodzenia, koniec 2025',
+      rows: [
+        { label: 'Wenezuela', figure: '6,5 mln' },
+        { label: 'Ukraina', figure: '5,2 mln' },
+        { label: 'Syria', figure: '4,9 mln' },
+        { label: 'Afganistan', figure: '3,7 mln' },
+        { label: 'Sudan', figure: '2,8 mln' },
+      ],
+      detail: [
+        'Stany według kraju pochodzenia dla tej samej ludności UNHCR co lista krajów przyjmujących. Gdy do tych pięciu dodać Sudan Południowy, z sześciu krajów pochodzi ponad 70%.',
+        'Syryjski stan spadł do końca 2025 roku do około 4,9 mln po dużych powrotach. Afgański — do około 3,7 mln. Liczby ukraińskie pozostają wysokie: ochrona tymczasowa i pokrewne statusy wchodzą w ten zakres. Wenezuelczycy pozostają największą grupą pochodzenia wśród innych osób potrzebujących ochrony międzynarodowej w obu Amerykach.',
+        'Około 5,4 mln osób zostało zmuszonych do ucieczki przez granicę w ciągu 2025 roku. To ruch w danym roku, a nie ten stan.',
+      ],
+    },
+    'refugees-neighbouring-hosts-2025': {
+      tag: 'Układ · koniec 2025',
+      title: 'Większość uchodźców zostaje blisko',
+      hook: '65% uchodźców i innych osób potrzebujących ochrony międzynarodowej mieszkało na koniec 2025 w krajach sąsiadujących z krajem pochodzenia. 68% przyjmowały kraje o niskim i średnim dochodzie.',
+      figure: '65%',
+      unit: 'w krajach sąsiednich, koniec 2025',
+      rows: [
+        { label: 'Kraje sąsiednie', figure: '65%' },
+        { label: 'Kraje o niskim i średnim dochodzie', figure: '68%' },
+        { label: 'Sytuacje przewlekłe, pięć lat lub dłużej', figure: 'około 70%' },
+      ],
+      detail: [
+        'Te udziały odpowiadają na pytanie, gdzie znajduje się stan, a nie który szlak Unii Europejskiej jest najbardziej obciążony. Wykrycia Frontexu pozostają osobnym liczeniem nieuregulowanych przekroczeń na granicach zewnętrznych UE.',
+        'Około 70% uchodźców w tym zakresie było w sytuacjach przewlekłych — pięć lat lub dłużej bez bliskiego trwałego rozwiązania. Global Trends 2025 liczy około 24,9 mln osób w nieco ponad 1 300 takich sytuacjach w krajach o niskim i średnim dochodzie.',
+        'Przyjmowanie u sąsiadów i w krajach o niższym dochodzie to trwały układ w szeregach UNHCR. Z tych udziałów nie wynika, że główną historią uchodźców świata jest droga z Afryki do Europy.',
+      ],
+    },
+    'refugees-returns-2025': {
+      tag: 'Powroty · 2025',
+      title: 'Powroty uchodźców w 2025',
+      hook: 'Prawie 4,4 mln uchodźców wróciło do krajów pochodzenia w 2025 roku — jeden z najwyższych lat powrotów w szeregu. Ponad 90% wróciło do zaledwie trzech krajów: Afganistanu (około 1,9 mln), Syrii (około 1,3 mln) i Sudanu (około 651 500).',
+      figure: '4,4',
+      unit: 'mln powrotów, 2025',
+      rows: [
+        { label: 'Afganistan', figure: 'około 1,9 mln' },
+        { label: 'Syria', figure: 'około 1,3 mln' },
+        { label: 'Sudan', figure: 'około 651 500' },
+      ],
+      detail: [
+        'Powroty uchodźców w roku kalendarzowym 2025 według Global Trends. UNHCR ostrzega, że wiele powrotów odbyło się w trudnych warunkach, do miejsc, gdzie utrzymuje się zagrożenie i słabe usługi. Powrót sam w sobie nie jest trwałym rozwiązaniem.',
+        'Powroty osób przesiedlonych wewnątrz własnego kraju to inny szereg i zostają na warstwie wewnętrznego przesiedlenia. Przyjazdy w ramach przesiedlenia i programów sponsorskich spadły o ponad połowę, do około 81 800 w 2025 roku.',
+        'Skala powrotów wzrosła. Bezpieczeństwo i ponowne urządzenie się na miejscu często nie dorównywały tej liczbie.',
       ],
     },
   },

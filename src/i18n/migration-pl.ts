@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migracja',
   hubLead: [
     'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
-    'Dziś jest na tej stronie: współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Osobna warstwa to ludzie przesiedleni wewnątrz własnego kraju (IDMC). Poniżej dwie półki. Migracje ludzi to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Migracje zwierząt to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
+    'Dziś jest na tej stronie: współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Osobna warstwa to ludzie przesiedleni wewnątrz własnego kraju (IDMC). Warstwa obozów pokazuje nazwane miejsca, a nie światowy stan uchodźców; ten stan jest w warstwie „Uchodźcy (UNHCR)”. Poniżej dwie półki. Migracje ludzi to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Migracje zwierząt to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',
@@ -48,7 +48,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'Współczesna mapa migracji międzynarodowej. Na tabliczkach jest migracja netto głównych regionów ONZ za 2023 (World Population Prospects 2024) — nie wymyślone przyjazdy i wyjazdy. Osobno włączane są obozy UNHCR, wykrycia na granicach zewnętrznych UE (Frontex) i wewnętrzne przesiedlenie (IDMC). Często dominuje ruch wewnątrzregionalny; Afryka → Europa nie jest rysowana jako główna historia świata.',
+      'Współczesna mapa migracji międzynarodowej. Na tabliczkach jest migracja netto głównych regionów ONZ za 2023 (World Population Prospects 2024) — nie wymyślone przyjazdy i wyjazdy. Osobno włączani są uchodźcy pod mandatem UNHCR, nazwane obozy, wykrycia na granicach zewnętrznych UE (Frontex) i wewnętrzne przesiedlenie (IDMC). Warstwa obozów pokazuje nazwane miejsca, a nie światowy stan uchodźców; ten stan jest w warstwie „Uchodźcy (UNHCR)”. Często dominuje ruch wewnątrzregionalny; Afryka → Europa nie jest rysowana jako główna historia świata.',
     humans:
       'Najpierw mapy: oś czasu wielkich udokumentowanych migracji człowieka, potem mała figura i encyklopedia. Homo sapiens powstał w Afryce około 300 000 lat temu. Na każdej karcie jest kiedy, gdzie i dlaczego — klimat, lód, rolnictwo, wojna, handel, imperium, niewolnictwo — tylko tam, gdzie to trzyma nauka. To nie mapa wszystkich ludzi co pięćdziesiąt lat. Attyla i wędrówki ludów zostają tutaj; żywe ruchy są na Wielkich migracjach.',
     'great-migrations':
