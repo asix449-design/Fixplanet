@@ -56,7 +56,7 @@ const packDHonesty: Record<Locale, string[]> = {
     'Схематическая реконструкция',
     'Не перепись',
     'Америка христианизируется',
-    'Африка: христианские карманы',
+    'Африка: христианские анклавы',
   ],
   pl: [
     'Rekonstrukcja schematyczna',
@@ -1129,7 +1129,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       caption:
         'Около 1600 н. э. Османская Анатолия — исламская; Балканы демографически христианские; Иберия христианская. В Америке — остатки местных традиций внутри материка плюс христианский колониальный край (Новая Испания, Анды, Бразилия, Карибы). Африка: исламский север/Сахель; южнее Сахары — африканские традиции, с христианскими карманами Эфиопии, Конго и португальских берегов. Австралия — аборигенные традиции (колонии ещё нет).',
       imageAlt:
-        'Схематическая карта религий на 1600 год н. э.: османская исламская Анатолия, христианские Балканы, христианская Иберия, в Америке местный residual и христианский колониальный край, в Африке христианские карманы, Австралия аборигенная',
+        'Схематическая карта религий на 1600 год н. э.: османская исламская Анатолия, христианские Балканы, христианская Иберия, в Америке местный остаток и христианский колониальный край, в Африке христианские карманы, Австралия аборигенная',
       honestyPills: packDHonesty.ru,
       continentBlocks: [
         {
@@ -1150,7 +1150,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Америка / Океания',
-          text: 'Местный residual внутри материка плюс христианский колониальный край (Новая Испания, Анды, Бразилия, Карибы). Без заливки империй ацтеков и инков. Австралия — аборигенные традиции, колонии ещё нет. Тихоокеанские острова не нанесены.',
+          text: 'Местный остаток внутри материка плюс христианский колониальный край (Новая Испания, Анды, Бразилия, Карибы). Без заливки империй ацтеков и инков. Австралия — аборигенные традиции, колонии ещё нет. Тихоокеанские острова не нанесены.',
         },
       ],
       sources:
@@ -1159,9 +1159,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1700: {
       title: '1700 н. э. — схематическая реконструкция',
       caption:
-        'Около 1700 н. э. Иберийская Америка уже в основном крещена (публичное христианское большинство); британский/французский восток Северной Америки христианский; внутри материка — местный residual. Россия — православная империя с поясом по Сибири; Скандинавия — сплошные лютеранские госцеркви. Африка: те же христианские карманы + Капская колония (с 1652). Австралия всё ещё аборигенная.',
+        'Около 1700 н. э. Иберийская Америка уже в основном крещена (публичное христианское большинство); британский/французский восток Северной Америки христианский; внутри материка — местный остаток. Россия — православная империя с поясом по Сибири; Скандинавия — сплошные лютеранские госцеркви. Африка: те же христианские карманы + Капская колония (с 1652). Австралия всё ещё аборигенная.',
       imageAlt:
-        'Схематическая карта религий на 1700 год н. э.: иберийская Америка в основном христианская, британский и французский восток Северной Америки, местный residual, православный пояс Сибири, лютеранская Скандинавия, Капская колония, аборигенная Австралия',
+        'Схематическая карта религий на 1700 год н. э.: иберийская Америка в основном христианская, британский и французский восток Северной Америки, местный остаток, православный пояс Сибири, лютеранская Скандинавия, Капская колония, аборигенная Австралия',
       honestyPills: packDHonesty.ru,
       continentBlocks: [
         {
@@ -1182,7 +1182,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Америка / Океания',
-          text: 'Иберийская Америка уже в основном крещена (публичное христианское большинство). Британский/французский восток Северной Америки христианский; внутри материка остаётся residual. Без заливки империй ацтеков и инков. Австралия всё ещё аборигенная. Тихоокеанские острова не нанесены.',
+          text: 'Иберийская Америка уже в основном крещена (публичное христианское большинство). Британский/французский восток Северной Америки христианский; внутри материка остаётся местный остаток. Без заливки империй ацтеков и инков. Австралия всё ещё аборигенная. Тихоокеанские острова не нанесены.',
         },
       ],
       sources:
@@ -1191,9 +1191,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1800: {
       title: '1800 н. э. — схематическая реконструкция',
       caption:
-        'Около 1800 н. э. (накануне наполеоновских войн и независимости): Южная Америка почти монолитно католическая; Северная — христианский восток–центр (протестантский US, католические Квебек/Мексика). Россия — православная империя до Тихого; Скандинавия лютеранская. Африка всё ещё карманы (Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Freetown и коптский остаток). Австралия: крошечная колония NSW у Сиднея (с 1788), материк аборигенный.',
+        'Около 1800 н. э. (накануне наполеоновских войн и независимости): Южная Америка почти монолитно католическая; Северная — христианский восток–центр (протестантские США, католические Квебек/Мексика). Россия — православная империя до Тихого; Скандинавия лютеранская. Африка всё ещё карманы (Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток). Австралия: крошечная колония Нового Южного Уэльса у Сиднея (с 1788), материк аборигенный.',
       imageAlt:
-        'Схематическая карта религий на 1800 год н. э.: Южная Америка почти католическая, Северная — христианский восток-центр, Россия до Тихого, лютеранская Скандинавия, карманы в Африке, крошечная колония NSW, материк аборигенный',
+        'Схематическая карта религий на 1800 год н. э.: Южная Америка почти католическая, Северная — христианский восток-центр, Россия до Тихого, лютеранская Скандинавия, карманы в Африке, крошечная колония Нового Южного Уэльса, материк аборигенный',
       honestyPills: packDHonesty.ru,
       continentBlocks: [
         {
@@ -1210,11 +1210,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Всё ещё только карманы: Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Freetown и коптский остаток. Магриб–Египет–Сахель–суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
+          text: 'Всё ещё только карманы: Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток. Магриб–Египет–Сахель–суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
-          text: 'Южная Америка почти монолитно католическая. Северная — христианский восток–центр (протестантский US, католические Квебек/Мексика); на северо-западе residual остаётся. Без заливки империй ацтеков и инков. Австралия: крошечная колония NSW у Сиднея (с 1788); материк аборигенный. Тихоокеанские острова не нанесены.',
+          text: 'Южная Америка почти монолитно католическая. Северная — христианский восток–центр (протестантские США, католические Квебек/Мексика); на северо-западе местный остаток остаётся. Без заливки империй ацтеков и инков. Австралия: крошечная колония Нового Южного Уэльса у Сиднея (с 1788); материк аборигенный. Тихоокеанские острова не нанесены.',
         },
       ],
       sources:
@@ -1700,9 +1700,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1600: {
       title: '1600 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1600 n.e. osmańska Anatolia jest islamska; Bałkany demograficznie chrześcijańskie; Iberia chrześcijańska. W Amerykach — rdzenny residual w głębi lądu plus chrześcijańska krawędź kolonialna (Nowa Hiszpania, Andy, Brazylia, Karaiby). Afryka: islamska północ/Sahel; na południe od Sahary przeważnie tradycje afrykańskie, z chrześcijańskimi kieszeniami Etiopii, Kongo i portugalskich wybrzeży. Australia: tradycje aborygeńskie (jeszcze bez kolonii).',
+        'Około 1600 n.e. osmańska Anatolia jest islamska; Bałkany demograficznie chrześcijańskie; Iberia chrześcijańska. W Amerykach — rdzenna pozostałość w głębi lądu plus chrześcijańska krawędź kolonialna (Nowa Hiszpania, Andy, Brazylia, Karaiby). Afryka: islamska północ/Sahel; na południe od Sahary przeważnie tradycje afrykańskie, z chrześcijańskimi kieszeniami Etiopii, Kongo i portugalskich wybrzeży. Australia: tradycje aborygeńskie (jeszcze bez kolonii).',
       imageAlt:
-        'Schematyczna mapa religii na rok 1600 n.e.: osmańska islamska Anatolia, chrześcijańskie Bałkany, chrześcijańska Iberia, w Amerykach rdzenny residual i krawędź kolonialna, w Afryce kieszenie chrześcijańskie, Australia aborygeńska',
+        'Schematyczna mapa religii na rok 1600 n.e.: osmańska islamska Anatolia, chrześcijańskie Bałkany, chrześcijańska Iberia, w Amerykach rdzenna pozostałość i krawędź kolonialna, w Afryce kieszenie chrześcijańskie, Australia aborygeńska',
       honestyPills: packDHonesty.pl,
       continentBlocks: [
         {
@@ -1715,7 +1715,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
-          text: 'Parasol hindu w Indiach; korytarze buddyjskie (Tybet / Azja Płd.-Wsch. / wniknięcie w Chiny); chiński pas cesarski / ludowy. Północny step i obrzeża wyspiarskie — lokalny zmyw.',
+          text: 'Parasol hinduistyczny w Indiach; korytarze buddyjskie (Tybet / Azja Płd.-Wsch. / wniknięcie w Chiny); chiński pas cesarski / ludowy. Północny step i obrzeża wyspiarskie — lokalny zmyw.',
         },
         {
           heading: 'Afryka',
@@ -1723,7 +1723,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Ameryki / Oceania',
-          text: 'Rdzenny residual w głębi lądu plus chrześcijańska krawędź kolonialna (Nowa Hiszpania, Andy, Brazylia, Karaiby). Bez plamy imperiów Azteków i Inków. Australia: tradycje aborygeńskie — jeszcze bez kolonii. Wyspy Pacyfiku nie naniesione.',
+          text: 'Rdzenna pozostałość w głębi lądu plus chrześcijańska krawędź kolonialna (Nowa Hiszpania, Andy, Brazylia, Karaiby). Bez plamy imperiów Azteków i Inków. Australia: tradycje aborygeńskie — jeszcze bez kolonii. Wyspy Pacyfiku nie naniesione.',
         },
       ],
       sources:
@@ -1732,9 +1732,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1700: {
       title: '1700 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1700 n.e. Ameryka iberyjska jest w większości ochrzczona (publiczna większość chrześcijańska); brytyjski/francuski wschód Ameryki Północnej jest chrześcijański; residual wewnątrz lądu zostaje. Rosja — imperium prawosławne z pasem przez Syberię; Skandynawia — jednolite luterańskie kościoły państwowe. Afryka: te same kieszenie chrześcijańskie plus Kolonia Przylądkowa (od 1652). Australia nadal aborygeńska.',
+        'Około 1700 n.e. Ameryka iberyjska jest w większości ochrzczona (publiczna większość chrześcijańska); brytyjski/francuski wschód Ameryki Północnej jest chrześcijański; pozostałość wewnątrz lądu zostaje. Rosja — imperium prawosławne z pasem przez Syberię; Skandynawia — jednolite luterańskie kościoły państwowe. Afryka: te same kieszenie chrześcijańskie plus Kolonia Przylądkowa (od 1652). Australia nadal aborygeńska.',
       imageAlt:
-        'Schematyczna mapa religii na rok 1700 n.e.: Ameryka iberyjska w większości chrześcijańska, brytyjski i francuski wschód Ameryki Północnej, residual wewnątrz, prawosławny pas Syberii, luterańska Skandynawia, Kolonia Przylądkowa, Australia aborygeńska',
+        'Schematyczna mapa religii na rok 1700 n.e.: Ameryka iberyjska w większości chrześcijańska, brytyjski i francuski wschód Ameryki Północnej, pozostałość wewnątrz, prawosławny pas Syberii, luterańska Skandynawia, Kolonia Przylądkowa, Australia aborygeńska',
       honestyPills: packDHonesty.pl,
       continentBlocks: [
         {
@@ -1755,7 +1755,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Ameryki / Oceania',
-          text: 'Ameryka iberyjska w większości ochrzczona (publiczna większość chrześcijańska). Brytyjski/francuski wschód Ameryki Północnej chrześcijański; residual wewnątrz lądu zostaje. Bez plamy imperiów Azteków i Inków. Australia nadal aborygeńska. Wyspy Pacyfiku nie naniesione.',
+          text: 'Ameryka iberyjska w większości ochrzczona (publiczna większość chrześcijańska). Brytyjski/francuski wschód Ameryki Północnej chrześcijański; pozostałość wewnątrz lądu zostaje. Bez plamy imperiów Azteków i Inków. Australia nadal aborygeńska. Wyspy Pacyfiku nie naniesione.',
         },
       ],
       sources:
@@ -1764,9 +1764,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1800: {
       title: '1800 n.e. — rekonstrukcja schematyczna',
       caption:
-        'Około 1800 n.e. (przed napoleońskimi / niepodległością): Ameryka Południowa niemal monolitycznie katolicka; Ameryka Północna chrześcijański wschód–centrum (protestanckie USA, katolicki Quebec/Meksyk). Rosja prawosławna po Pacyfik; Skandynawia luterańska. Afryka nadal kieszenie (Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjski residual). Australia: maleńka kolonia NSW w Sydney (od 1788), kontynent aborygeński.',
+        'Około 1800 n.e. (przed napoleońskimi / niepodległością): Ameryka Południowa niemal monolitycznie katolicka; Ameryka Północna chrześcijański wschód–centrum (protestanckie USA, katolicki Québec/Meksyk). Rosja prawosławna po Pacyfik; Skandynawia luterańska. Afryka nadal kieszenie (Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość). Australia: maleńka kolonia Nowej Południowej Walii w Sydney (od 1788), kontynent aborygeński.',
       imageAlt:
-        'Schematyczna mapa religii na rok 1800 n.e.: Ameryka Południowa niemal katolicka, Ameryka Północna chrześcijański wschód-centrum, Rosja po Pacyfik, luterańska Skandynawia, kieszenie w Afryce, maleńka kolonia NSW, kontynent aborygeński',
+        'Schematyczna mapa religii na rok 1800 n.e.: Ameryka Południowa niemal katolicka, Ameryka Północna chrześcijański wschód-centrum, Rosja po Pacyfik, luterańska Skandynawia, kieszenie w Afryce, maleńka kolonia Nowej Południowej Walii, kontynent aborygeński',
       honestyPills: packDHonesty.pl,
       continentBlocks: [
         {
@@ -1775,7 +1775,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb–Libia–Egipt–Lewant–Arabia–Bliski Wschód–Persja–Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Maleńki koptyjski residual w Egipcie tam, gdzie zaznaczono. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Islamski Maghreb–Libia–Egipt–Lewant–Arabia–Bliski Wschód–Persja–Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Maleńka koptyjska pozostałość w Egipcie tam, gdzie zaznaczono. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1783,11 +1783,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Nadal tylko kieszenie: Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjski residual. Maghreb–Egipt–Sahel–wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
+          text: 'Nadal tylko kieszenie: Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość. Maghreb–Egipt–Sahel–wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
-          text: 'Ameryka Południowa niemal monolitycznie katolicka. Ameryka Północna chrześcijański wschód–centrum (protestanckie USA, katolicki Quebec/Meksyk); residual na północnym zachodzie zostaje. Bez plamy imperiów Azteków i Inków. Australia: maleńka kolonia NSW w Sydney (od 1788); kontynent aborygeński. Wyspy Pacyfiku nie naniesione.',
+          text: 'Ameryka Południowa niemal monolitycznie katolicka. Ameryka Północna chrześcijański wschód–centrum (protestanckie USA, katolicki Québec/Meksyk); pozostałość na północnym zachodzie zostaje. Bez plamy imperiów Azteków i Inków. Australia: maleńka kolonia Nowej Południowej Walii w Sydney (od 1788); kontynent aborygeński. Wyspy Pacyfiku nie naniesione.',
         },
       ],
       sources:
@@ -2273,9 +2273,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1600: {
       title: '1600. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1600. g. m.ē. osmaņu Anatolija ir islāmiska; Balkāni demogrāfiski kristīgi; Ibērija kristīga. Amerikā — indīgēnais residual iekšzemē plus kristīgā koloniālā mala (Jaunā Spānija, Andi, Brazīlija, Karību). Āfrika: islāma ziemeļi/Sahēla; uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas, ar kristīgām kabatām Etiopijā, Kongo un portugāļu piekrastēs. Austrālija: aborigēnu tradīcijas (kolonijas vēl nav).',
+        'Ap 1600. g. m.ē. osmaņu Anatolija ir islāmiska; Balkāni demogrāfiski kristīgi; Ibērija kristīga. Amerikā — indīgēnais atlikums iekšzemē plus kristīgā koloniālā mala (Jaunā Spānija, Andi, Brazīlija, Karību). Āfrika: islāma ziemeļi/Sahēla; uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas, ar kristīgām kabatām Etiopijā, Kongo un portugāļu piekrastēs. Austrālija: aborigēnu tradīcijas (kolonijas vēl nav).',
       imageAlt:
-        'Shēmatiska reliģiju karte 1600. gadam m.ē.: osmaņu islāmiskā Anatolija, kristīgie Balkāni, kristīgā Ibērija, Amerikā iekšzemes residual un koloniālā mala, Āfrikā kristīgās kabatas, aborigēnu Austrālija',
+        'Shēmatiska reliģiju karte 1600. gadam m.ē.: osmaņu islāmiskā Anatolija, kristīgie Balkāni, kristīgā Ibērija, Amerikā iekšzemes atlikums un koloniālā mala, Āfrikā kristīgās kabatas, aborigēnu Austrālija',
       honestyPills: packDHonesty.lv,
       continentBlocks: [
         {
@@ -2296,7 +2296,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Amerika / Okeānija',
-          text: 'Indīgēnais residual iekšzemē plus kristīgā koloniālā mala (Jaunā Spānija, Andi, Brazīlija, Karību). Bez acteku un Inku impēriju aizpildes. Austrālija: aborigēnu tradīcijas — kolonijas vēl nav. Klusā okeāna salas nav kartētas.',
+          text: 'Indīgēnais atlikums iekšzemē plus kristīgā koloniālā mala (Jaunā Spānija, Andi, Brazīlija, Karību). Bez acteku un Inku impēriju aizpildes. Austrālija: aborigēnu tradīcijas — kolonijas vēl nav. Klusā okeāna salas nav kartētas.',
         },
       ],
       sources:
@@ -2305,9 +2305,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1700: {
       title: '1700. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1700. g. m.ē. Ibērijas Amerika lielā mērā kristīta (publiskais kristīgais vairākums); britu/franču ZA austrumi kristīgi; iekšzemes residual paliek. Krievija — ortodoksā imperija ar Sibīrijas joslu; Skandināvija — vienlaidus luterāņu valsts baznīcas. Āfrika: tās pašas kristīgās kabatas plus Kapas kolonija (no 1652). Austrālija joprojām aborigēnu.',
+        'Ap 1700. g. m.ē. Ibērijas Amerika lielā mērā kristīta (publiskais kristīgais vairākums); britu/franču Ziemeļamerikas austrumi kristīgi; iekšzemes atlikums paliek. Krievija — ortodoksā imperija ar Sibīrijas joslu; Skandināvija — vienlaidus luterāņu valsts baznīcas. Āfrika: tās pašas kristīgās kabatas plus Kapas kolonija (no 1652). Austrālija joprojām aborigēnu.',
       imageAlt:
-        'Shēmatiska reliģiju karte 1700. gadam m.ē.: Ibērijas Amerika lielā mērā kristīga, britu un franču ZA austrumi, iekšzemes residual, ortodoksā Sibīrijas josla, luterāņu Skandināvija, Kapas kolonija, aborigēnu Austrālija',
+        'Shēmatiska reliģiju karte 1700. gadam m.ē.: Ibērijas Amerika lielā mērā kristīga, britu un franču Ziemeļamerikas austrumi, iekšzemes atlikums, ortodoksā Sibīrijas josla, luterāņu Skandināvija, Kapas kolonija, aborigēnu Austrālija',
       honestyPills: packDHonesty.lv,
       continentBlocks: [
         {
@@ -2328,7 +2328,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Amerika / Okeānija',
-          text: 'Ibērijas Amerika lielā mērā kristīta (publiskais kristīgais vairākums). Britu/franču ZA austrumi kristīgi; iekšzemes residual paliek. Bez acteku un Inku impēriju aizpildes. Austrālija joprojām aborigēnu. Klusā okeāna salas nav kartētas.',
+          text: 'Ibērijas Amerika lielā mērā kristīta (publiskais kristīgais vairākums). Britu/franču Ziemeļamerikas austrumi kristīgi; iekšzemes atlikums paliek. Bez acteku un Inku impēriju aizpildes. Austrālija joprojām aborigēnu. Klusā okeāna salas nav kartētas.',
         },
       ],
       sources:
@@ -2337,9 +2337,9 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
     1800: {
       title: '1800. g. m.ē. — shēmatiska rekonstrukcija',
       caption:
-        'Ap 1800. g. m.ē. (napoleona / neatkarības priekšvakarā): Dienvidamerika gandrīz monolīti katoliska; Ziemeļamerika kristīgi austrumi–centrs (protestantu ASV, katoļu Kvebeka/Meksika). Krievija ortodoksā līdz Klusajam okeānam; Skandināvija luterāņu. Āfrika joprojām kabatas (Etiopija, Kongo, Angola/Mozambika, Kapa; sīkais Freetown un koptu residual). Austrālija: sīkā NSW kolonija Sidnejā (no 1788), kontinents aborigēnu.',
+        'Ap 1800. g. m.ē. (napoleona / neatkarības priekšvakarā): Dienvidamerika gandrīz monolīti katoliska; Ziemeļamerika kristīgi austrumi–centrs (protestantu ASV, katoļu Kvebeka/Meksika). Krievija ortodoksā līdz Klusajam okeānam; Skandināvija luterāņu. Āfrika joprojām kabatas (Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums). Austrālija: sīkā Jaunās Dienvidvelsas kolonija Sidnejā (no 1788), kontinents aborigēnu.',
       imageAlt:
-        'Shēmatiska reliģiju karte 1800. gadam m.ē.: Dienvidamerika gandrīz katoliska, Ziemeļamerika kristīgi austrumi-centrs, Krievija līdz Klusajam okeānam, luterāņu Skandināvija, kabatas Āfrikā, sīkā NSW kolonija, kontinents aborigēnu',
+        'Shēmatiska reliģiju karte 1800. gadam m.ē.: Dienvidamerika gandrīz katoliska, Ziemeļamerika kristīgi austrumi-centrs, Krievija līdz Klusajam okeānam, luterāņu Skandināvija, kabatas Āfrikā, sīkā Jaunās Dienvidvelsas kolonija, kontinents aborigēnu',
       honestyPills: packDHonesty.lv,
       continentBlocks: [
         {
@@ -2348,7 +2348,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba–Lībija–Ēģipte–Levanta–Arābija–Tuvie Austrumi–Persija–Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Sīkais koptu residual Ēģiptē, kur atzīmēts. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba–Lībija–Ēģipte–Levanta–Arābija–Tuvie Austrumi–Persija–Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Sīkais koptu atlikums Ēģiptē, kur atzīmēts. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2356,11 +2356,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Joprojām tikai kabatas: Etiopija, Kongo, Angola/Mozambika, Kapa; sīkais Freetown un koptu residual. Magriba–Ēģipte–Sahēla–svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
+          text: 'Joprojām tikai kabatas: Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums. Magriba–Ēģipte–Sahēla–svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
-          text: 'Dienvidamerika gandrīz monolīti katoliska. Ziemeļamerika kristīgi austrumi–centrs (protestantu ASV, katoļu Kvebeka/Meksika); ziemeļrietumu residual paliek. Bez acteku un Inku impēriju aizpildes. Austrālija: sīkā NSW kolonija Sidnejā (no 1788); kontinents aborigēnu. Klusā okeāna salas nav kartētas.',
+          text: 'Dienvidamerika gandrīz monolīti katoliska. Ziemeļamerika kristīgi austrumi–centrs (protestantu ASV, katoļu Kvebeka/Meksika); ziemeļrietumu atlikums paliek. Bez acteku un Inku impēriju aizpildes. Austrālija: sīkā Jaunās Dienvidvelsas kolonija Sidnejā (no 1788); kontinents aborigēnu. Klusā okeāna salas nav kartētas.',
         },
       ],
       sources:
