@@ -289,6 +289,126 @@ def sea_level() -> str:
 """
 
 
+def marine_heatwaves(land: str) -> str:
+    warm = "#f0a05a"
+    hot = "#e25b2a"
+    body = "\n".join(
+        [
+            f'<g fill="{warm}" fill-opacity="0.9">',
+            ellipse(-148, 44, 16, 7),
+            ellipse(-162, 14, 12, 5),
+            ellipse(18, 38, 11, 4),
+            ellipse(118, -26, 13, 5),
+            "</g>",
+            f'<g fill="{hot}" fill-opacity="0.92">',
+            ellipse(-78, 16, 9, 5),
+            ellipse(128, -2, 14, 6),
+            ellipse(-128, 0, 11, 4),
+            ellipse(55, 14, 8, 4),
+            "</g>",
+        ]
+    )
+    return frame(
+        "Marine heatwaves — Fix Planet schematic",
+        "Discrete warm-event patches. A temporary extreme, separate from average sea-surface temperature and from heat stored through the water column.",
+        "#12344c",
+        body,
+        land,
+        legend_bar(48, 760, "#12344c", hot, "usual", "heatwave"),
+    )
+
+
+def ocean_heat_content() -> str:
+    def curve(power: float, amp: float) -> str:
+        pts = []
+        for i in range(81):
+            t = i / 80
+            x = 220 + t * 1160
+            y = 560 - amp * (t**power)
+            pts.append(f"{x:.1f},{y:.1f}")
+        return " ".join(pts)
+
+    grid = []
+    for y in (200, 300, 400, 500):
+        grid.append(
+            f'<line x1="180" y1="{y}" x2="1420" y2="{y}" stroke="{OCEAN_INK}" stroke-opacity="0.16"/>'
+        )
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">
+  <title>Ocean heat content — Fix Planet schematic</title>
+  <desc>Heat stored through the water column, shown as two rising series for the upper and deeper layers. Not a sea-surface temperature map.</desc>
+  <rect width="{W}" height="{H}" fill="#07141c"/>
+  {"".join(grid)}
+  <line x1="180" y1="140" x2="180" y2="580" stroke="{OCEAN_INK}" stroke-opacity="0.7" stroke-width="2"/>
+  <line x1="180" y1="580" x2="1420" y2="580" stroke="{OCEAN_INK}" stroke-opacity="0.7" stroke-width="2"/>
+  <polyline points="{curve(1.05, 180)}" fill="none" stroke="#f0a05a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="{curve(1.2, 280)}" fill="none" stroke="#e25b2a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" fill="{OCEAN_INK}">
+    <line x1="180" y1="660" x2="230" y2="660" stroke="#f0a05a" stroke-width="4"/>
+    <text x="246" y="666">0–700 m</text>
+    <line x1="420" y1="660" x2="470" y2="660" stroke="#e25b2a" stroke-width="4"/>
+    <text x="486" y="666">0–2000 m</text>
+  </g>
+</svg>
+"""
+
+
+def coral_reefs(land: str) -> str:
+    reefs = [
+        (-84, 17, 8, 4),
+        (-70, 18, 6, 3),
+        (38, 22, 3, 8),
+        (43, 14, 3, 5),
+        (50, -6, 5, 4),
+        (73, 4, 4, 3),
+        (95, 6, 5, 3),
+        (122, 5, 8, 4),
+        (128, -2, 10, 5),
+        (146, -16, 4, 9),
+        (166, -16, 7, 4),
+        (-157, 20, 4, 3),
+        (-150, -17, 9, 4),
+        (-175, -18, 6, 3),
+    ]
+    dots = "\n".join(ellipse(lon, lat, rx, ry) for lon, lat, rx, ry in reefs)
+    return frame(
+        "Coral reefs — Fix Planet schematic",
+        "Reef regions drawn as discrete marks along tropical coasts. Hard-coral status context, not a restoration plan.",
+        "#0e3f4c",
+        "",
+        land,
+        f'<g fill="#ee8b6a" fill-opacity="0.92">{dots}</g>\n'
+        + legend_bar(48, 760, "#0e3f4c", "#ee8b6a", "ocean", "reefs"),
+    )
+
+
+def marine_fisheries() -> str:
+    track_x, track_y, track_w, track_h = 180, 300, 1240, 88
+    over_w = track_w * 0.355
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img">
+  <title>Marine fisheries — Fix Planet schematic</title>
+  <desc>Share of assessed marine stocks classified as overfished. A status chart, not fishing gear and not a protected-area map.</desc>
+  <rect width="{W}" height="{H}" fill="#07141c"/>
+  <rect x="{track_x}" y="{track_y}" width="{track_w}" height="{track_h}" rx="8" fill="#1c4d62"/>
+  <rect x="{track_x}" y="{track_y}" width="{over_w:.1f}" height="{track_h}" rx="8" fill="#e25b2a"/>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" fill="{OCEAN_INK}">
+    <text x="{track_x}" y="260" font-size="28">Assessed marine stocks</text>
+    <text x="{track_x}" y="440" font-size="28">35.5% overfished</text>
+  </g>
+</svg>
+"""
+
+
+def new_atlas_svgs(land: str) -> dict[str, str]:
+    return {
+        "marine-heatwaves.svg": marine_heatwaves(land),
+        "ocean-heat-content.svg": ocean_heat_content(),
+        "coral-reefs.svg": coral_reefs(land),
+        "marine-fisheries.svg": marine_fisheries(),
+    }
+
+
 def main() -> None:
     geo = ensure_land()
     land = land_path(geo)
@@ -298,6 +418,7 @@ def main() -> None:
         "dissolved-oxygen.svg": oxygen(land),
         "sea-ice-extent.svg": sea_ice(),
         "sea-level.svg": sea_level(),
+        **new_atlas_svgs(land),
     }
     for name, svg in files.items():
         path = OUT / name
@@ -305,5 +426,25 @@ def main() -> None:
         print(f"{path.name} {path.stat().st_size}")
 
 
+def write_new_only() -> None:
+    svg = (OUT / "ocean-acidification.svg").read_text()
+    marker = '<path d="'
+    start = svg.find(marker)
+    if start < 0:
+        raise SystemExit("existing coastline path not found")
+    start += len(marker)
+    land = svg[start : svg.find('"', start)]
+    OUT.mkdir(parents=True, exist_ok=True)
+    for name, body in new_atlas_svgs(land).items():
+        path = OUT / name
+        path.write_text(body)
+        print(f"{path.name} {path.stat().st_size}")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if "--new-only" in sys.argv:
+        write_new_only()
+    else:
+        main()
