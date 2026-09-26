@@ -121,13 +121,13 @@ export const packPl: Record<string, SpeciesCopy> = {
   },
   'franklins-bumble-bee': {
     commonName: 'Trzmiel Franklina',
-    hook: 'Trzmiel maleńkiego zasięgu Oregon–Kalifornia, który runął w latach 1990–2000. Jedyna pszczoła na tej półce.',
+    hook: 'Trzmiel maleńkiego zasięgu Oregon–Kalifornia, który runął w latach 1990–2000.',
     imageAlt: 'Trzmiel Franklina na kwiecie, żółto-czarny — zdjęcie USDA',
     what: 'Trzmiel Franklina (Bombus franklini) to trzmiel o jednym z najmniejszych zasięgów w rodzaju Bombus — skrawek południowego Oregonu i północnej Kalifornii. IUCN: krytycznie zagrożony. Monitoring z lat 1990. i 2000. udokumentował załamanie.',
     range:
       'Krótki odcinek regionu Klamath-Siskiyou, historycznie od południowego Oregonu po północną Kalifornię. Nigdy nie był pszczołą kontynentalną.',
     story:
-      'Dla specjalistów był lokalnie znany, potem w około dekadę stał się znikomo rzadki. Zwykli podejrzani to choroby z pszczół hodowlanych, utrata siedlisk i mały zasięg; ostatnich szeroko przyjętych stwierdzeń jest mało. To jedyna karta pszczoły na półce — nie drugi gatunek i nie zastępstwo dla każdego ubywającego Bombus.',
+      'Dla specjalistów był lokalnie znany, potem w około dekadę stał się znikomo rzadki. Zwykli podejrzani to choroby z pszczół hodowlanych, utrata siedlisk i mały zasięg; ostatnich szeroko przyjętych stwierdzeń jest mało. Zasięg zawsze był krótkim skrawkiem Oregonu i Kalifornii — nie zastępstwem dla każdego ubywającego Bombus.',
     when: 'Krytycznie zagrożony teraz. Zasięg zawsze był maleńki; liczebność runęła niedawno.',
     humanRole:
       'Mały endemityczny zasięg plus to, co dołożyli ludzie — patogeny, farmy i zmieniony krajobraz.',
@@ -158,6 +158,79 @@ export const packPl: Record<string, SpeciesCopy> = {
     when: 'Lista federalna USA. Przywiązana do rzadkiego typu mokradła.',
     humanRole: 'Odwodnienie, kamieniołomy i zabudowa wapiennych fen — jedynego siedliska gatunku.',
     sources: 'Strona gatunku U.S. Fish and Wildlife Service (Somatochlora hineana).',
+  },
+  'rusty-patched-bumble-bee': {
+    commonName: 'Trzmiel rdzawoplamy',
+    hook: 'Kiedyś pospolity na wschodzie Stanów Zjednoczonych i na południu Kanady; po ostrym załamaniu na początku lat 2000. wpisany na listę Endangered Species Act w 2017; współczesne stwierdzenia obejmują tylko około 13 stanów USA i jedną prowincję kanadyjską.',
+    imageAlt: 'Trzmiel rdzawoplamy na fioletowej bergamotce, z rdzawą plamą na odwłoku',
+    what: 'Jeden z około 21 wschodnich gatunków trzmieli USA — społeczna pszczoła magazynująca pyłek, której robotnice mają charakterystyczną rdzawą plamę na odwłoku (stąd nazwa). To Bombus affinis, nie trzmiel Franklina (Bombus franklini).',
+    range:
+      'Historyczny zasięg od Georgii na północ do południowego Quebecu i Ontario i na zachód ku Dakotom. Od około 2000 roku przegląd U.S. Fish and Wildlife Service potwierdza go w znacznie mniejszej liczbie jednostek: około 13 stanów USA i jedna prowincja kanadyjska.',
+    story:
+      'Patogeny, pestycydy, utrata siedlisk, konkurencja z pszczołami hodowlanymi i stres klimatyczny złożyły się na załamanie zasięgu. Trzmiel Franklina to inny gatunek o maleńkim zasięgu Oregon–Kalifornia. Ten trzmiel był kiedyś pospolity na wschodniej połowie kontynentu.',
+    when: 'U.S. Fish and Wildlife Service: federalnie Endangered (2017); plan odbudowy sfinalizowany w 2021. Współczesne stwierdzenia obejmują około 13 stanów USA i jedną prowincję kanadyjską.',
+    humanRole:
+      'Pestycydy, patogeny od pszczół hodowlanych, utracone siedliska i zmieniony klimat ścięły kiedyś pospolitego wschodniego trzmiela do ułamka mapy. Wpis na listę Endangered Species Act w 2017 i plan odbudowy z 2021 to odpowiedź federalna.',
+    sources: 'U.S. Fish and Wildlife Service — trzmiel rdzawoplamy (Bombus affinis).',
+  },
+  'european-stag-beetle': {
+    commonName: 'Jelonek rogacz',
+    hook: 'Największy chrząszcz Europy i gatunek flagowy dyrektywy siedliskowej dla gnijącego drewna liściastego — ocena IUCN 2023 dla Europy / EU27: Near Threatened, bo miejsca rozrodu wciąż się kurczą, nawet gdy przybywa stwierdzeń z nauki obywatelskiej.',
+    imageAlt: 'Samiec jelonka rogacza z dużymi żuwaczkami jak poroże, na zielonym liściu',
+    what: 'Duży jelonek (Lucanus cervus), którego larwy spędzają lata w wilgotnym, rozkładającym się drewnie liściastym — pniakach, zagrzebanych korzeniach, drzewach sędziwych. Samce noszą słynne „poroże”; samice go nie mają. To specjalista martwego drewna, nie grabarz.',
+    range:
+      'Europa. Rozród wymaga ciągłości wilgotnego, rozkładającego się drewna liściastego. Owady dorosłe wędrują, więc obserwacja to nie to samo co pniak lęgowy.',
+    story:
+      'Rosnące stwierdzenia z nauki obywatelskiej nie oznaczają więcej miejsc rozrodu — wiele obserwacji to wędrowcy. Czerwona lista za właściwy sygnał uznaje postępującą utratę ciągłości martwego drewna. Sprawozdania z art. 17 dyrektywy siedliskowej w kolejnych cyklach pokazywały niekorzystny stan w znacznej części państw członkowskich.',
+    when: 'IUCN Europa / EU27 (2023): Near Threatened według B2b(ii,iii). Rozwój larwy trwa zwykle 4–5 lat, więc luka w martwym drewnie boli dłużej niż dekadę.',
+    humanRole:
+      'Ludzie usuwają pniaki, wycinają sędziwe drzewa liściaste i przerywają ciągłość gnijącego drewna, którego potrzebują larwy. Chrząszcz jest gatunkiem flagowym dyrektywy siedliskowej dla tego drewna.',
+    sources:
+      'Czerwona lista IUCN (Lucanus cervus, Europa / EU27, Near Threatened, 2023); EUNIS; JNCC, art. 17 dyrektywy siedliskowej UK, S1083 (2019).',
+  },
+  'hermit-beetle': {
+    commonName: 'Pachnica dębowa',
+    hook: 'Żuk, który prawie całe życie spędza w próchnie starych dziuplastych drzew Europy — IUCN (2023) uznaje go za Near Threatened, bo drzewa sędziwe wciąż giną, a następne pokolenie dziupli spóźnione jest o dekady.',
+    imageAlt: 'Ciemnobrązowa pachnica dębowa na szorstkiej korze starego drzewa',
+    what: 'Obligatoryjny żuk saproksyliczny (Osmoderma eremita) dziuplastych drzew liściastych. Owady dorosłe rzadko latają daleko; populacje siedzą w jednym drzewie albo w maleńkiej grupie drzew przez pokolenia.',
+    range:
+      'Europa i EU27. Zasięg występowania jest duży, ale obszar zajmowany przez miejsca rozrodu szacuje się tylko na około 2000–2500 km² i miejsca te są silnie pofragmentowane.',
+    story:
+      'Larwy jelonka potrzebują objętości wilgotnego martwego drewna. Pachnica potrzebuje dziupli z próchnem, a następne pokolenie dziupli spóźnione jest o dekady wobec drzew wycinanych teraz. Ponieważ owady dorosłe rzadko latają daleko, luka między drzewami sędziwymi może izolować populację przez pokolenia.',
+    when: 'IUCN (2023): Near Threatened, B2ab(ii,iii,v). Stare dziuplaste drzewa stale ubywają, a odtworzenie dziupli trwa bardzo długo.',
+    humanRole:
+      'Wycinanie sędziwych dziuplastych drzew i brak następnego pokolenia dziupli zabiera jedyne miejsca, w których ten chrząszcz może się rozmnażać.',
+    sources: 'Czerwona lista IUCN (Osmoderma eremita, Near Threatened, 2023).',
+  },
+  'salt-creek-tiger-beetle': {
+    commonName: 'Trzyszcz solniskowy',
+    hook: 'Trzyszcz endemiczny dla słonych równin wschodniej Nebraski — po osuszeniu mokradeł wokół Lincoln intensywne liczenia od 1991 notowały zaledwie 153 osobniki dorosłe (2005) i szczyt 777 (2002), wszystko na garstce pozostałych miejsc.',
+    imageAlt: 'Trzyszcz solniskowy, metalicznie zielonobrązowy, na jasnym słonym mule',
+    what: 'Mały, szybki drapieżny chrząszcz nagiego słonego mułu wzdłuż Salt Creek i Little Salt Creek. Larwy kopią norki w solnej skorupie; owady dorosłe polują na otwartych równinach. Taksonomia czasem używa Ellipsoptera nevadica lincolniana; strona U.S. Fish and Wildlife Service nadal prowadzi Cicindela nevadica lincolniana.',
+    range:
+      'Słone mokradła wschodniej Nebraski, na pozostałych solniskach wzdłuż Salt Creek i Little Salt Creek na północ od Lincoln. To nie grabarz i nie szeroko rozpowszechniony trzyszcz.',
+    story:
+      'Wały, uregulowanie koryta i rozrost Lincoln wymazały większość słonego mokradła, zostawiając jedną kruchą metapopulację. Synteza liczeń Nebraska Game and Parks: sześć populacji w 1991, a trzy z nich później zniknęły. Każde niedawne liczenie pochodzi z garstki pozostałych miejsc.',
+    when: 'Endangered na mocy amerykańskiej Endangered Species Act. Intensywne liczenia od 1991 obejmują szczyt 777 osobników dorosłych (2002), minimum 153 (2005) i 374 naliczone w 2012. Strona gatunku Służby i podpisany plan odbudowy dokumentują wpis i zarys odbudowy.',
+    humanRole:
+      'Osuszenie, wały, uregulowanie koryta i rozrost miasta wokół Lincoln zabrały większość słonych równin, na których chrząszcz poluje i kopie norki.',
+    sources:
+      'Strona gatunku U.S. Fish and Wildlife Service; Nebraska Game and Parks; plan odbudowy USFWS dla trzyszcza solniskowego; wizualne szacunki populacji University of Nebraska–Lincoln.',
+  },
+  wetapunga: {
+    commonName: 'Wetapunga',
+    hook: 'Największa weta Nowej Zelandii — kiedyś ściśnięta do Hauturu-o-Toi / Little Barrier, potem hodowana i przenoszona: Auckland Zoo i partnerzy wypuścili ponad 5000 zwierząt na wyspy bez drapieżników, a NZTCS ocenia gatunek jako Nationally Increasing (nadal Threatened / zależny od ochrony).',
+    imageAlt: 'Wetapunga, duża nielotna weta, na zielonym liściu',
+    what: 'Deinacrida heteracantha — olbrzymi nielotny prostoskrzydły, wētāpunga. Dorosłe samice ważą średnio około 40 g; najcięższa odnotowana ciężarna samica sięgnęła około 71 g. Nocą zjada liście i przenosi też nasiona w odchodach bogatych w składniki pokarmowe.',
+    range:
+      'Kiedyś ściśnięta do wyspy Hauturu-o-Toi / Little Barrier. Zwierzęta z hodowli żyją też na innych wyspach bez drapieżników, w tym Motuora, Tiritiri Matangi i miejscach w Bay of Islands.',
+    story:
+      'Po usunięciu szczura pacyficznego z Little Barrier Department of Conservation i Auckland Zoo zbudowały linie hodowlane i przeniosły zwierzęta na Motuora, Tiritiri Matangi, miejsca w Bay of Islands i inne wyspy bez szkodników. To zarządzany powrót, który nadal zależy od siedliska bez drapieżników.',
+    when: 'Nowozelandzki system klasyfikacji zagrożeń (NZTCS): Nationally Increasing, nadal pod parasolem Threatened i nadal zależny od ochrony. Populacja rzędu 1000–5000 osobników dorosłych, na kilku wyspach bez drapieżników; ocena czyta trend jako wzrost o ponad 10 procent, a notatki podają też ponad 30 procent. Auckland Zoo (2020): ponad 5000 wypuszczonych; wypuszczenie w Bay of Islands otworzyło wyspy 6–8 w ich zestawie wysp.',
+    humanRole:
+      'Wprowadzone drapieżniki ścięły wetę do jednej wyspy. Usunięcie szczurów, hodowla i wsiedlenia na wyspy przez Department of Conservation i Auckland Zoo przywróciły zwierzęta — tylko tam, gdzie drapieżniki zostają poza wyspą.',
+    sources:
+      'Ocena NZTCS (Deinacrida heteracantha); strona DOC Wetapunga i wytyczne translokacji wielkich wet; Auckland Zoo, 2020.',
   },
   cattle: {
     commonName: 'Bydło',

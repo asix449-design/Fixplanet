@@ -184,7 +184,7 @@ const en = {
     extinctLead:
       'Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.',
     insectsLead:
-      'Insects are most of animal life. This shelf is six named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, one bumble bee, a carrion beetle, and a fen dragonfly — not a second bee or a third butterfly.',
+      'Insects are most of animal life. This shelf is eleven named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.',
     domesticatesLead:
       'Animals people keep — livestock, companions, and working species. These cards are the kept animals, not their wild relatives (wild boar, aurochs, and gray wolf live on other shelves). FAO’s Domestic Animal Diversity Information System (DAD-IS) tracks breeds worldwide.',
     dadisSource: 'FAO DAD-IS — domestic animal diversity',
@@ -513,7 +513,7 @@ const ru: typeof en = {
     extinctLead:
       'Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
     insectsLead:
-      'Насекомые — большая часть животной жизни. На этой полке шесть названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, одна шмель, жук-падальщик и стрекоза известковых болот — не вторая пчела и не третья бабочка.',
+      'Насекомые — большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.',
     domesticatesLead:
       'Животные, которых держат люди: скот, компаньоны и рабочие виды. Эти карточки — о содержащихся животных, не об их диких родственниках (кабан, тур и серый волк живут на других полках). Информационная система ФАО DAD-IS ведёт учёт пород по всему миру.',
     dadisSource: 'ФАО DAD-IS — разнообразие домашних животных',
@@ -845,7 +845,7 @@ const pl: typeof en = {
     extinctLead:
       'Zniknęły. Większość kart ma jasną przyczynę ludzką. Przy kilku przedstawicielach megafauny późnego plejstocenu klimat jest drugim, uczciwie nazwanym czynnikiem.',
     insectsLead:
-      'Owady to większość życia zwierzęcego. Ta półka to sześć nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, jeden trzmiel, grabarz i ważka wapiennych mokradeł — nie druga pszczoła i nie trzeci motyl.',
+      'Owady to większość życia zwierzęcego. Ta półka to jedenaście nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, dwa trzmiele, grabarz, dwa europejskie chrząszcze martwego drewna, ważka wapiennych mokradeł, trzyszcz słonych mokradeł i wetapunga na wyspach bez drapieżników.',
     domesticatesLead:
       'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Te karty dotyczą zwierząt trzymanych, nie ich dzikich krewnych (dzik, tur i wilk szary są na innych półkach). System FAO DAD-IS śledzi rasy na świecie.',
     dadisSource: 'FAO DAD-IS — różnorodność zwierząt hodowlanych',
@@ -1177,7 +1177,7 @@ const lv: typeof en = {
     extinctLead:
       'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas. Dažiem vēlā pleistocēna megafaunas pārstāvjiem klimats ir otrs, godīgi nosaukts cēlonis.',
     insectsLead:
-      'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir seši nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, viena kameņu suga, maitas vabole un kaļķaino avoksnāju spāre — ne otra bite un ne trešais tauriņš.',
+      'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir vienpadsmit nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, divas kamenes, maitas vabole, divas Eiropas mirušās koksnes vaboles, kaļķaino avoksnāju spāre, sāļo mitrāju smilšvabole un vetapunga plēsēju brīvās salās.',
     domesticatesLead:
       'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Šīs kartītes ir par turētajiem dzīvniekiem, ne par savvaļas radiniekiem (mežacūka, tauts un pelēkais vilks ir citos plauktos). FAO DAD-IS uzskaita šķirnes pasaulē.',
     dadisSource: 'FAO DAD-IS — mājlopu daudzveidība',
