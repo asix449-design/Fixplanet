@@ -3,6 +3,7 @@ import BirdFlywaysMap from '../components/BirdFlywaysMap.astro';
 import CitedSourceList from '../components/CitedSourceList.astro';
 import HubTile from '../components/HubTile.astro';
 import HumanEraAtlas from '../components/HumanEraAtlas.astro';
+import HumanMapLinkCard from '../components/HumanMapLinkCard.astro';
 import MigrationCard from '../components/MigrationCard.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import TodayMigrationMap from '../components/TodayMigrationMap.astro';
@@ -18,7 +19,9 @@ import {
   migrationShelfPath,
   type MigrationShelf,
 } from '../data/migration';
+import { cartetikaRoundup } from '../data/human-map-links';
 import {
+  getHumanMapLinks,
   getHumanMigrationEras,
   getMigrationByShelf,
   getMigrationPage,
@@ -47,6 +50,7 @@ const greatEntries =
   activeShelf === 'great-migrations' ? getMigrationByShelf(locale, 'great-migrations') : [];
 const humans = page.humans;
 const humanEras = getHumanMigrationEras(locale);
+const humanMapLinks = activeShelf === 'humans' ? getHumanMapLinks(locale) : [];
 const pageTitle = activeShelf
   ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
   : page.metaTitle;
@@ -122,6 +126,26 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
             <div class="wildlife-map-panel">
           <HumanEraAtlas events={humanEras} atlas={humans.eventAtlas} />
             </div>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="human-map-links">
+          <div class="wrap wildlife-list-panel">
+            <div class="encyc-lede">
+              <h2 id="human-map-links">{humans.mapLinks.title}</h2>
+              <p class="human-map-links-lead">{humans.mapLinks.lead}</p>
+            </div>
+            <div class="card-grid cols-3">
+              {humanMapLinks.map((item) => (
+                <HumanMapLinkCard item={item} />
+              ))}
+            </div>
+            <p class="human-map-listed">
+              {humans.mapLinks.listedBy}{' '}
+              <a href={cartetikaRoundup.url} rel="noopener noreferrer">
+                {cartetikaRoundup.label}
+              </a>
+            </p>
           </div>
         </section>
 
