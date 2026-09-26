@@ -8,6 +8,7 @@ import {
 import type { Locale } from './config';
 import { lv } from './wildlife-lv';
 import { pl } from './wildlife-pl';
+import { pack } from './wildlife-pack';
 
 const en: Record<string, SpeciesCopy> = {
   'gray-wolf': {
@@ -1379,7 +1380,12 @@ const ru: Record<string, SpeciesCopy> = {
   },
 };
 
-const copy: Record<Locale, Record<string, SpeciesCopy>> = { en, ru, pl, lv };
+const copy: Record<Locale, Record<string, SpeciesCopy>> = {
+  en: { ...en, ...pack.en },
+  ru: { ...ru, ...pack.ru },
+  pl: { ...pl, ...pack.pl },
+  lv: { ...lv, ...pack.lv },
+};
 
 export function getWildlifeSpecies(locale: Locale): Species[] {
   return speciesMeta.map((meta) => {

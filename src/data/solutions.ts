@@ -16,7 +16,6 @@ export const tagKeys = [
 export type TagKey = (typeof tagKeys)[number];
 
 export const solutionsHub = [
-  { key: 'all', icon: 'grid' },
   { key: 'water', icon: 'droplet' },
   { key: 'forests', icon: 'trees' },
   { key: 'waste', icon: 'recycle' },
@@ -25,9 +24,20 @@ export const solutionsHub = [
   { key: 'oceans', icon: 'wave' },
   { key: 'energy', icon: 'bolt' },
 ] as const satisfies ReadonlyArray<{
-  key: TagKey | 'all';
+  key: TagKey;
   icon: HubIconName;
 }>;
+
+/** Hub-only hero. Shelf catalogs keep their own cards; `/solutions/all` stays a shelf. */
+export const solutionsHubBackdrop = {
+  file: 'solutions-hub-bg.jpg',
+  credit: 'Founder-supplied laboratory reagent bottles',
+  license: 'Site asset',
+  width: 1280,
+  height: 720,
+} as const;
+
+export const solutionsHubSrc = `/images/solutions/${solutionsHubBackdrop.file}`;
 
 export type SolutionMeta = {
   slug: string;
@@ -58,8 +68,12 @@ export type Solution = SolutionMeta & SolutionCopy;
  * Slugs stay English in every language. Prefer technologies already running
  * at scale or in serious deployment. Label pilots honestly. Do not invent
  * impact statistics. Primary sources are official agency or project pages —
- * not blogs. Hub tiles stay on `/solutions`; cards live on
- * `/solutions/{tag}` and `/solutions/all`.
+ * not blogs. Hub tiles stay on `/solutions` (no All tile). Cards live on
+ * `/solutions/{tag}` and `/solutions/all`. Water encyclopedia articles
+ * live at `/solutions/water/{slug}` — the shelf stays `/solutions/water`.
+ * Forests encyclopedia articles live at `/solutions/forests/{slug}`.
+ * Oceans stays hub-only: cards link to the primary source. Do not add
+ * `/solutions/oceans/{slug}` until every oceans slug has a detail page.
  */
 export const solutionMeta: SolutionMeta[] = [
   {
@@ -67,29 +81,66 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     latest: true,
     sources: [
-      cite('FAO — Land & water management', 'https://www.fao.org/land-water/water/water-management/en/'),
+      cite(
+        'USGS Water Science School — Irrigation: drip or microirrigation',
+        'https://www.usgs.gov/water-science-school/science/irrigation-drip-or-microirrigation',
+      ),
+      cite(
+        'FAO — Irrigation water management: drip irrigation',
+        'https://www.fao.org/4/s8684e/s8684e07.htm',
+      ),
     ],
   },
   {
     slug: 'constructed-wetlands',
     tag: 'water',
     latest: true,
-    sources: [cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands')],
+    sources: [
+      cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands'),
+      cite(
+        'U.S. EPA — Constructed Wetlands Handbook (PDF)',
+        'https://www.epa.gov/sites/default/files/2015-10/documents/constructed-wetlands-handbook.pdf',
+      ),
+    ],
   },
   {
     slug: 'membrane-desalination',
     tag: 'water',
+    // Shelf note: leave the Water Corporation (WA) desalination primary. No resolving IEA desalination hub to swap in.
     sources: [
       cite(
         'Water Corporation (WA) — Desalination',
         'https://www.watercorporation.com.au/Our-water/Desalination',
+      ),
+      cite(
+        'Water Corporation (WA) — Perth Seawater Desalination Plant',
+        'https://www.watercorporation.com.au/Our-water/Desalination/Perth-Seawater-Desalination-Plant',
+      ),
+      cite(
+        'USGS Water Science School — Desalination',
+        'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
       ),
     ],
   },
   {
     slug: 'managed-aquifer-recharge',
     tag: 'water',
-    sources: [cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/')],
+    sources: [
+      cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/'),
+      cite(
+        'Water Corporation (WA) — Groundwater replenishment',
+        'https://www.watercorporation.com.au/Our-water/Groundwater/Groundwater-replenishment',
+      ),
+      cite(
+        'Central Arizona Project — Recharge',
+        'https://www.cap-az.com/water/water-supply/future-water-supplies/recharge/',
+      ),
+      cite(
+        'NGWA — Orange County Water District case study',
+        'https://www.ngwa.org/what-is-groundwater/groundwater-issues/managed-aquifer-recharge/case-studies/orange-county-water-district-california',
+      ),
+      cite('USGS Circular 1405 — Artificial recharge / MAR', 'https://pubs.usgs.gov/circ/1405/'),
+    ],
   },
   {
     slug: 'sustainable-forestry',
@@ -97,8 +148,8 @@ export const solutionMeta: SolutionMeta[] = [
     latest: true,
     sources: [
       cite(
-        'FAO — Global Forest Resources Assessment',
-        'https://www.fao.org/forest-resources-assessment/en/',
+        'FAO — Sustainable forest management overview',
+        'https://www.fao.org/forestry/sfm/overview/',
       ),
     ],
   },
@@ -121,7 +172,10 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'shade-agroforestry',
     tag: 'forests',
     sources: [
-      cite('IUCN — Shade-grown coffee', 'https://www.iucn.org/resources/issues-brief/shade-grown-coffee'),
+      cite(
+        'Smithsonian National Zoo — Bird Friendly coffee',
+        'https://nationalzoo.si.edu/migratory-birds/bird-friendly-coffee',
+      ),
     ],
   },
   {
@@ -202,12 +256,20 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'mass-timber',
     tag: 'materials',
-    sources: [cite('WoodWorks — mass timber', 'https://www.woodworks.org/')],
+    sources: [
+      cite(
+        'USDA Forest Service — Forest Products Laboratory',
+        'https://research.fs.usda.gov/fpl',
+      ),
+    ],
   },
   {
     slug: 'green-steel',
     tag: 'materials',
-    sources: [cite('HYBRIT', 'https://www.hybritdevelopment.se/')],
+    sources: [
+      cite('IEA — Iron and Steel', 'https://www.iea.org/energy-system/industry/iron-and-steel'),
+      cite('HYBRIT', 'https://www.hybritdevelopment.se/'),
+    ],
   },
   {
     slug: 'river-interceptors',
@@ -235,7 +297,12 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'solar-microgrids',
     tag: 'energy',
     latest: true,
-    sources: [cite('IEA — Solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
+    sources: [
+      cite(
+        'World Bank / ESMAP — Mini Grids for Half a Billion People',
+        'https://www.worldbank.org/en/topic/energy/publication/mini-grids-for-half-a-billion-people',
+      ),
+    ],
   },
   {
     slug: 'onshore-wind',
@@ -252,28 +319,60 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'WHO — rainwater collection and storage',
+        'WHO — Rainwater collection, storage and management advice sheet (PDF)',
         'https://www.who.int/docs/default-source/wash-documents/sanitary-inspection-packages/rainwater-collection-storage-management-advice-sheet.pdf',
+      ),
+      cite(
+        'WHO — Guidelines for drinking-water quality',
+        'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines',
+      ),
+      cite(
+        'WHO — Guidelines for drinking-water quality, 4th edition',
+        'https://www.who.int/publications/i/item/9789241548151',
       ),
     ],
   },
   {
     slug: 'newater-reclaimed-wastewater',
     tag: 'water',
-    sources: [cite('PUB Singapore — NEWater', 'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater')],
+    sources: [
+      cite(
+        'PUB Singapore — NEWater',
+        'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater',
+      ),
+      cite(
+        'PUB Singapore — Our Water Story',
+        'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory',
+      ),
+    ],
   },
   {
     slug: 'fog-harvesting',
     tag: 'water',
-    sources: [cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/')],
+    // Shelf note: FogQuest primary stays. The organisation says its project pages are no longer kept current (soft/stale). Do not swap the URL.
+    sources: [
+      cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/'),
+      cite(
+        'Klemm et al., AMBIO 2012 — Fog as a fresh-water resource (PDF)',
+        'https://www.fogquest.org/wp-content/uploads/2012/11/AMBIO-2012-Fog-Review-10.1007_s13280-012-0247-8.pdf',
+      ),
+      cite(
+        'Frontiers in Water — fog harvesting review (2021)',
+        'https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2021.675269/full',
+      ),
+    ],
   },
   {
     slug: 'constructed-floating-wetlands',
     tag: 'water',
     sources: [
       cite(
-        'CSIRO — constructed floating wetlands',
+        'CSIRO — Constructed floating wetlands',
         'https://www.csiro.au/en/research/natural-environment/water/constructed-floating-wetlands',
+      ),
+      cite(
+        'WetlandInfo (Queensland) — floating wetlands design summary',
+        'https://www.wetlandinfo.detsi.qld.gov.au/wetlands/management/treatment-systems/for-agriculture/treatment-sys-nav-page/floating-wetlands/design-summary.html',
       ),
     ],
   },
@@ -282,15 +381,89 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'MIT News — passive solar desalination',
+        'MIT News — passive solar-powered water desalination (2020)',
         'https://news.mit.edu/2020/passive-solar-powered-water-desalination-0207',
+      ),
+      cite(
+        'USGS Water Science School — Desalination',
+        'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
+      ),
+    ],
+  },
+  {
+    slug: 'non-revenue-water-reduction',
+    tag: 'water',
+    sources: [
+      cite(
+        'World Bank — Reducing water losses',
+        'https://www.worldbank.org/en/topic/water/brief/reducing-water-losses',
+      ),
+      cite('IWA — Water Loss', 'https://iwa-network.org/projects/water-loss/'),
+      cite(
+        'World Bank — The challenge of reducing non-revenue water',
+        'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/297191468176683069/the-challenge-of-reducing-non-revenue-water-nrw-in-developing-countries-how-the-private-sector-can-help-a-look-at-performance-based-service-contracting',
+      ),
+    ],
+  },
+  {
+    slug: 'uv-disinfection',
+    tag: 'water',
+    sources: [
+      cite(
+        'U.S. EPA — Ultraviolet Disinfection Guidance Manual (PDF)',
+        'https://www.epa.gov/system/files/documents/2022-10/ultraviolet-disinfection-guidance-manual-2006.pdf',
+      ),
+      cite(
+        'U.S. EPA — Long Term 2 Enhanced Surface Water Treatment Rule documents',
+        'https://www.epa.gov/dwreginfo/long-term-2-enhanced-surface-water-treatment-rule-documents',
+      ),
+    ],
+  },
+  {
+    slug: 'onsite-greywater-reuse',
+    tag: 'water',
+    sources: [
+      cite(
+        'U.S. EPA — Onsite Non-Potable Water Reuse Resources',
+        'https://www.epa.gov/waterreuse/onsite-non-potable-water-reuse-resources',
+      ),
+      cite(
+        'WHO — Guidelines for the safe use of wastewater, excreta and greywater',
+        'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta',
+      ),
+      cite(
+        'U.S. EPA — Basic information about water reuse',
+        'https://www.epa.gov/waterreuse/basic-information-about-water-reuse',
+      ),
+    ],
+  },
+  {
+    slug: 'sand-dams',
+    tag: 'water',
+    sources: [
+      cite(
+        'Practical Action — Sand dams',
+        'https://www.practicalaction.org/knowledge-centre/resources/sand-dams/',
+      ),
+      cite(
+        'IWMI GRIPP — Community sand dams in Kenya',
+        'https://gripp.iwmi.org/natural-infrastructure/water-storage/ensuring-resilience-through-community-sand-dams-in-kenya/',
+      ),
+      cite(
+        'Maddrell & Neal — Sand Dams: a Practical Guide (PDF)',
+        'https://www.samsamwater.com/library/Maddrell_and_Neal_2012_Sand_Dams_a_Practical_Guide_LR.pdf',
       ),
     ],
   },
   {
     slug: 'agroforestry',
     tag: 'forests',
-    sources: [cite('FAO — agroforestry', 'https://www.fao.org/agroforestry/en')],
+    sources: [
+      cite(
+        'FAO — Agroforestry overview',
+        'https://www.fao.org/agroforestry/about-agroforestry/overview/en',
+      ),
+    ],
   },
   {
     slug: 'windbreaks',
@@ -417,8 +590,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Ireland EPA — national criteria for recycled aggregates',
-        'https://www.epa.ie/news-releases/news-releases-2023/epa-publishes-national-criteria-for-recycled-aggregates-.php',
+        'European Commission — Construction and demolition waste',
+        'https://environment.ec.europa.eu/topics/waste-and-recycling/construction-and-demolition-waste_en',
       ),
     ],
   },
@@ -427,8 +600,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Journal of the American Ceramic Society — geopolymers and alkali-activated materials',
-        'https://ceramics.onlinelibrary.wiley.com/doi/10.1111/jace.19828',
+        'FHWA — TechBrief: Geopolymer Concrete',
+        'https://www.fhwa.dot.gov/pavement/concrete/pubs/hif10014/hif10014.pdf',
       ),
     ],
   },
@@ -447,8 +620,62 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'Heidelberg Materials — DREAM CCUS',
-        'https://www.heidelbergmaterials.com/en/sustainability/we-decarbonize-the-construction-industry/ccus/dream',
+        'Global CCS Institute — Brevik CCS',
+        'https://www.globalccsinstitute.com/brevikccsfacility/',
+      ),
+      cite(
+        'IEA — CCUS',
+        'https://www.iea.org/energy-system/renewables-and-low-emissions/carbon-capture-utilisation-and-storage',
+      ),
+    ],
+  },
+  {
+    slug: 'reclaimed-asphalt-pavement',
+    tag: 'materials',
+    sources: [
+      cite('FHWA — Pavement Recycling', 'https://www.fhwa.dot.gov/pavement/recycling/'),
+      cite(
+        'FHWA — Resource Responsible Use of RAP (HIF-22-003)',
+        'https://www.fhwa.dot.gov/pavement/asphalt/pubs/hif22003.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'glass-cullet',
+    tag: 'materials',
+    sources: [
+      cite(
+        'U.S. EPA — Glass: Material-Specific Data',
+        'https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/glass-material-specific-data',
+      ),
+      cite(
+        'Close the Glass Loop — Performance of Packaging Glass Recycling in Europe (2024 report)',
+        'https://closetheglassloop.eu/performance-of-packaging-glass-recycling-in-europe-2024-report/',
+      ),
+    ],
+  },
+  {
+    slug: 'mineral-wool-insulation',
+    tag: 'materials',
+    sources: [
+      cite('EURIMA — Benefits of mineral wool', 'https://www.eurima.org/benefits-of-mineral-wool'),
+      cite(
+        'IEA — Building envelopes',
+        'https://www.iea.org/energy-system/buildings/building-envelopes',
+      ),
+    ],
+  },
+  {
+    slug: 'recycled-copper',
+    tag: 'materials',
+    sources: [
+      cite(
+        'World Resources Institute — Recycled copper and the energy transition',
+        'https://www.wri.org/insights/pivotal-role-recycled-copper-energy-transition',
+      ),
+      cite(
+        'USGS — Recycling statistics and information',
+        'https://www.usgs.gov/centers/national-minerals-information-center/recycling-statistics-and-information',
       ),
     ],
   },
@@ -493,6 +720,83 @@ export const solutionMeta: SolutionMeta[] = [
     ],
   },
   {
+    slug: 'marine-protected-areas',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'Protected Planet — Marine protected areas',
+        'https://www.protectedplanet.net/en/thematic-areas/marine-protected-areas',
+      ),
+      cite(
+        'IUCN — Marine protected areas and climate change',
+        'https://www.iucn.org/resources/issues-brief/marine-protected-areas-and-climate-change',
+      ),
+      cite('Marine Protection Atlas', 'https://mpatlas.org/'),
+    ],
+  },
+  {
+    slug: 'ballast-water-management',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'IMO — Ballast Water Management',
+        'https://www.imo.org/en/OurWork/Environment/Pages/BallastWaterManagement.aspx',
+      ),
+      cite(
+        'IMO — BWM Hot Topics',
+        'https://www.imo.org/en/MediaCentre/HotTopics/Pages/BWM-Default.aspx',
+      ),
+    ],
+  },
+  {
+    slug: 'shore-power',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'EPA — Shore Power Technology Assessment at U.S. Ports',
+        'https://www.epa.gov/ports-initiative/shore-power-technology-assessment-us-ports',
+      ),
+      cite('EPA — Ports Initiative', 'https://www.epa.gov/ports-initiative'),
+      cite(
+        'IEA — International shipping',
+        'https://www.iea.org/energy-system/transport/international-shipping',
+      ),
+    ],
+  },
+  {
+    slug: 'vessel-speed-reduction',
+    tag: 'oceans',
+    sources: [
+      cite(
+        'NOAA Office of National Marine Sanctuaries — Ship strikes',
+        'https://sanctuaries.noaa.gov/protect/shipstrike/',
+      ),
+      cite(
+        'NOAA Fisheries — Reducing vessel strikes to North Atlantic right whales',
+        'https://www.fisheries.noaa.gov/national/endangered-species-conservation/reducing-ship-strikes-north-atlantic-right-whales',
+      ),
+      cite(
+        'NOAA Fisheries — Understanding vessel strikes',
+        'https://www.fisheries.noaa.gov/insight/understanding-vessel-strikes',
+      ),
+    ],
+  },
+  {
+    slug: 'integrated-multi-trophic-aquaculture',
+    tag: 'oceans',
+    sources: [
+      cite('FAO — Aquaculture', 'https://www.fao.org/fishery/en/aquaculture'),
+      cite(
+        'FAO Fisheries and Aquaculture Technical Paper 529 — Integrated mariculture (PDF)',
+        'https://www.fao.org/3/i4626e/i4626e.pdf',
+      ),
+      cite(
+        'FAO — documents card cb7670en',
+        'https://www.fao.org/documents/card/en/c/cb7670en',
+      ),
+    ],
+  },
+  {
     slug: 'utility-scale-solar',
     tag: 'energy',
     sources: [cite('IEA — solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
@@ -500,20 +804,25 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'offshore-wind',
     tag: 'energy',
-    sources: [cite('IEA — Offshore Wind Outlook 2019', 'https://www.iea.org/reports/offshore-wind-outlook-2019')],
+    sources: [cite('IEA — Wind', 'https://www.iea.org/energy-system/renewables/wind')],
   },
   {
     slug: 'grid-scale-batteries',
     tag: 'energy',
-    sources: [cite('IEA — grid-scale storage', 'https://www.iea.org/energy-system/electricity/grid-scale-storage')],
+    sources: [
+      cite(
+        'IEA — Batteries and Secure Energy Transitions',
+        'https://www.iea.org/reports/batteries-and-secure-energy-transitions',
+      ),
+    ],
   },
   {
     slug: 'geothermal',
     tag: 'energy',
     sources: [
       cite(
-        'IEA — geothermal technology breakthroughs',
-        'https://www.iea.org/news/technology-breakthroughs-are-unlocking-geothermal-energys-vast-potential-in-countries-across-the-globe',
+        'IEA — The Future of Geothermal Energy',
+        'https://www.iea.org/reports/the-future-of-geothermal-energy',
       ),
     ],
   },
@@ -524,6 +833,48 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'IEA — Hydropower Special Market Report (executive summary)',
         'https://www.iea.org/reports/hydropower-special-market-report/executive-summary',
+      ),
+    ],
+  },
+  {
+    slug: 'hydropower',
+    tag: 'energy',
+    sources: [
+      cite(
+        'IEA — Hydropower',
+        'https://www.iea.org/energy-system/renewables-and-low-emissions-fuels/hydroelectricity',
+      ),
+    ],
+  },
+  {
+    slug: 'nuclear-fission',
+    tag: 'energy',
+    sources: [
+      cite('IEA — Nuclear', 'https://www.iea.org/energy-system/renewables-and-low-emissions/nuclear'),
+      cite(
+        'World Nuclear Association — Nuclear Power in the World Today',
+        'https://world-nuclear.org/information-library/current-and-future-generation/nuclear-power-in-the-world-today',
+      ),
+    ],
+  },
+  {
+    slug: 'concentrating-solar-power',
+    tag: 'energy',
+    sources: [
+      cite(
+        'U.S. DOE — Concentrating Solar-Thermal Power',
+        'https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power',
+      ),
+    ],
+  },
+  {
+    slug: 'farm-biogas-power',
+    tag: 'energy',
+    sources: [
+      cite('U.S. EPA — AgSTAR', 'https://www.epa.gov/agstar'),
+      cite(
+        'IEA — Biogases (Renewables 2025)',
+        'https://www.iea.org/reports/renewables-2025/biogases',
       ),
     ],
   },

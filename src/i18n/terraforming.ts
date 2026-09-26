@@ -32,6 +32,7 @@ export type GeoPage = {
   outcome: string;
   lessons: string;
   sourcesLabel: string;
+  primarySource: string;
   jurisdictionLabel: string;
   yearLabel: string;
   imageCredit: string;
@@ -71,14 +72,14 @@ const pageEn: GeoPage = {
   outcome: 'What went wrong — or only partly worked',
   lessons: 'Lessons',
   sourcesLabel: 'Sources',
+  primarySource: 'Source',
   jurisdictionLabel: 'Jurisdiction',
   yearLabel: 'Years / status',
   imageCredit: 'Image',
   empty: 'No cards on this shelf yet.',
   heroAlt:
-    'Conceptual illustration: cracked drought land beside rain-fed forest under a hexagonal atmospheric shield — the Terraforming hub theme, not a built project',
-  photoCredit:
-    'Image: generated Fix Planet theme — drought and rain under a hexagonal atmospheric shield.',
+    'Split landscape: cracked drought earth on the left and mossy green hills with two rabbits on the right — founder-supplied Terraforming hub theme, not a built project',
+  photoCredit: 'Photo: founder-supplied split landscape — drought beside returning life.',
   shelves: {
     water: 'Water & diversion',
     desert: 'Desert greening',
@@ -131,14 +132,14 @@ const pageRu: GeoPage = {
   outcome: 'Что пошло не так — или сработало лишь частично',
   lessons: 'Уроки',
   sourcesLabel: 'Источники',
+  primarySource: 'Источник',
   jurisdictionLabel: 'Юрисдикция',
   yearLabel: 'Годы / статус',
   imageCredit: 'Изображение',
   empty: 'На этой полке пока нет карточек.',
   heroAlt:
-    'Концептуальная иллюстрация: засуха рядом с дождём под шестиугольным атмосферным щитом — тема хаба «Терраформинг», не построенный проект',
-  photoCredit:
-    'Изображение: сгенерированная тема Fix Planet — засуха и дождь под шестиугольным атмосферным щитом.',
+    'Расколотый пейзаж: потрескавшаяся засуха слева и мшистые зелёные холмы с двумя кроликами справа — тема хаба «Терраформинг», снимок основателя, не построенный проект',
+  photoCredit: 'Фото: снимок основателя — засуха рядом с вернувшейся жизнью.',
   shelves: {
     water: 'Вода и переброски',
     desert: 'Озеленение пустынь',
@@ -191,14 +192,14 @@ const pagePl: GeoPage = {
   outcome: 'Co poszło nie tak — albo zadziałało tylko częściowo',
   lessons: 'Wnioski',
   sourcesLabel: 'Źródła',
+  primarySource: 'Źródło',
   jurisdictionLabel: 'Jurysdykcja',
   yearLabel: 'Lata / status',
   imageCredit: 'Zdjęcie',
   empty: 'Na tej półce nie ma jeszcze kart.',
   heroAlt:
-    'Ilustracja koncepcyjna: spękana susza obok lasu pod deszczem i sześciokątna tarcza atmosferyczna — motyw huba Terraformowanie, nie zbudowany projekt',
-  photoCredit:
-    'Obraz: wygenerowany motyw Fix Planet — susza i deszcz pod sześciokątną tarczą atmosferyczną.',
+    'Rozdzielony krajobraz: spękana susza po lewej i mszyste zielone wzgórza z dwoma królikami po prawej — motyw huba Terraformowanie, zdjęcie założyciela, nie zbudowany projekt',
+  photoCredit: 'Zdjęcie: zdjęcie założyciela — susza obok wracającego życia.',
   shelves: {
     water: 'Woda i przerzuty',
     desert: 'Zazielenianie pustyń',
@@ -251,14 +252,14 @@ const pageLv: GeoPage = {
   outcome: 'Kas nogāja greizi — vai izdevās tikai daļēji',
   lessons: 'Mācības',
   sourcesLabel: 'Avoti',
+  primarySource: 'Avots',
   jurisdictionLabel: 'Jurisdikcija',
   yearLabel: 'Gadi / statuss',
   imageCredit: 'Attēls',
   empty: 'Šajā plauktā vēl nav kartīšu.',
   heroAlt:
-    'Konceptuāla ilustrācija: plaisājusi sausuma zeme blakus lietus mežam zem sešstūru atmosfēras vairoga — Terraformēšanas huba tēma, ne uzbūvēts projekts',
-  photoCredit:
-    'Attēls: ģenerēta Fix Planet tēma — sausums un lietus zem sešstūru atmosfēras vairoga.',
+    'Sadalīta ainava: plaisājusi sausuma zeme pa kreisi un sūnu zaļi pakalni ar diviem trušiem pa labi — Terraformēšanas huba tēma, dibinātāja foto, ne uzbūvēts projekts',
+  photoCredit: 'Foto: dibinātāja piegādāta sadalīta ainava — sausums blakus atgriezušajai dzīvībai.',
   shelves: {
     water: 'Ūdens un novadīšana',
     desert: 'Tuksnešu apzaļumošana',

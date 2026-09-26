@@ -267,7 +267,7 @@ def main() -> None:
         ("y0600.png", christianity_to_600),
         ("y0820.png", grey_land_blue_sea),
         ("y1097.jpg", pale_sea_keep_fills),
-        ("y1500.png", flatten_physical),
+        ("y1500-spread.png", flatten_physical),
         ("y1821.jpg", cream_seas),
         ("y1883.jpg", dobbins_hemispheres),
         ("y1943.jpg", wartime_sheet),

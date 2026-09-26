@@ -46,6 +46,29 @@ def fit_card(im: Image.Image, bg: tuple[int, int, int] = (255, 255, 255)) -> Ima
     return im.resize((W, H), Image.Resampling.LANCZOS)
 
 
+def legend_bar(
+    im: Image.Image,
+    swatches: list[tuple[tuple[int, int, int], str]],
+    credit: str,
+    fill: tuple[int, int, int] = (18, 24, 22),
+) -> Image.Image:
+    """Swatch row plus credit. Labels name the overview bands, not publisher scores."""
+    im = im.convert("RGB").copy()
+    draw = ImageDraw.Draw(im)
+    bar_h = 58
+    draw.rectangle((0, im.height - bar_h, im.width, im.height), fill=fill)
+    font = load_font(15)
+    x = 14
+    y = im.height - bar_h + 8
+    for color, label in swatches:
+        draw.rectangle((x, y, x + 18, y + 14), fill=color, outline=(236, 240, 234))
+        draw.text((x + 24, y - 2), label, fill=(236, 240, 234), font=font)
+        bbox = draw.textbbox((0, 0), label, font=font)
+        x += 24 + (bbox[2] - bbox[0]) + 22
+    draw.text((14, im.height - 26), credit, fill=(236, 240, 234), font=font)
+    return im
+
+
 def credit_bar(im: Image.Image, text: str, fill: tuple[int, int, int] = (18, 24, 22)) -> Image.Image:
     im = im.convert("RGB").copy()
     draw = ImageDraw.Draw(im)
@@ -74,7 +97,7 @@ def css_fills(groups: dict[str, list[str]]) -> str:
     return "\n".join(rules)
 
 
-def render_svg(theme_css: str, overlays: str, dest_name: str, credit: str | None = None) -> None:
+def render_svg_image(theme_css: str, overlays: str) -> Image.Image:
     svg = SVG_BASE.read_text(encoding="utf-8")
     extra = f"\n{theme_css}\n"
     if "</style>" not in svg:
@@ -90,13 +113,17 @@ def render_svg(theme_css: str, overlays: str, dest_name: str, credit: str | None
         ["rsvg-convert", "-w", str(W), "-h", str(H), "-o", str(png_path), str(tmp_path)],
         check=True,
     )
-    im = Image.open(png_path).convert("RGB")
-    im = fit_card(im)
+    im = fit_card(Image.open(png_path).convert("RGB"))
+    tmp_path.unlink(missing_ok=True)
+    png_path.unlink(missing_ok=True)
+    return im
+
+
+def render_svg(theme_css: str, overlays: str, dest_name: str, credit: str | None = None) -> None:
+    im = render_svg_image(theme_css, overlays)
     if credit:
         im = credit_bar(im, credit)
     save_jpg(im, dest_name)
-    tmp_path.unlink(missing_ok=True)
-    png_path.unlink(missing_ok=True)
 
 
 def circles(points: list[tuple[float, float, float, str, float]]) -> str:
@@ -123,6 +150,263 @@ def ellipses(blobs: list[tuple[float, float, float, float, str, float]]) -> str:
     return "\n".join(parts)
 
 
+def legend_box(items: list[tuple[str, str]], x: float = 72, y: float = 1188) -> str:
+    """Simple color key in SVG pixel space (BlankMap-World)."""
+    parts = [
+        '<g id="fixplanet-legend" pointer-events="none" '
+        'font-family="DejaVu Sans, Liberation Sans, sans-serif" font-size="26">'
+        f'<rect x="{x - 18}" y="{y - 28}" width="520" height="{36 + 36 * len(items)}" '
+        'fill="#f7f4ee" fill-opacity="0.88" stroke="#3d4a42" stroke-width="0.8"/>'
+    ]
+    for i, (color, label) in enumerate(items):
+        yy = y + i * 34
+        parts.append(
+            f'<rect x="{x}" y="{yy - 16}" width="30" height="22" fill="{color}" '
+            'stroke="#1a1a1a" stroke-width="0.7"/>'
+        )
+        parts.append(f'<text x="{x + 42}" y="{yy}" fill="#1a1a1a">{label}</text>')
+    parts.append("</g>")
+    return "\n".join(parts)
+
+
+def lake_cluster(
+    cx: float, cy: float, n: int, spread: float, r: float, color: str, opacity: float = 0.9
+) -> list[tuple[float, float, float, str, float]]:
+    """A handful of shoreline dots around a lake district — not a count."""
+    pts: list[tuple[float, float, float, str, float]] = []
+    for i in range(n):
+        ang = (i * 2.399) % 6.2832
+        rad = spread * (0.18 + (i % 5) * 0.16)
+        pts.append((cx + rad * __import__("math").cos(ang), cy + rad * __import__("math").sin(ang), r * (0.7 + (i % 3) * 0.18), color, opacity))
+    return pts
+
+
+def groundwater_whymap() -> None:
+    """Blue sedimentary / green complex / brown local-shallow — not Aqueduct stress."""
+    css = """
+    .oceanxx { fill: #d7e4ec !important; stroke: none !important; }
+    .landxx { fill: #efe6d4 !important; stroke: #8a7a62 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #f4f1ea !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    sedimentary = [
+        (1380, 520, 95, 42, "#2f6f9a", 0.72),  # Nubian / Sahara
+        (1588, 500, 55, 32, "#3a7ca5", 0.7),  # Arabian
+        (2260, 780, 70, 38, "#2f6f9a", 0.68),  # Great Artesian
+        (430, 400, 48, 22, "#3a7ca5", 0.7),  # High Plains
+        (420, 470, 40, 16, "#3a7ca5", 0.55),  # Gulf Coast aquifer
+        (1850, 250, 80, 30, "#2f6f9a", 0.62),  # West Siberian
+        (740, 690, 70, 36, "#3a7ca5", 0.58),  # Amazon basin sediments
+        (1460, 700, 48, 28, "#3a7ca5", 0.55),  # Congo basin
+        (1820, 480, 70, 22, "#2f6f9a", 0.7),  # Indo-Gangetic
+        (2020, 380, 42, 18, "#3a7ca5", 0.62),  # North China Plain
+        (1450, 280, 70, 22, "#3a7ca5", 0.5),  # North European plain
+        (700, 820, 36, 18, "#3a7ca5", 0.5),  # Paraná / Pampas
+    ]
+    complex_fold = [
+        (680, 760, 18, 70, "#4f8a4a", 0.7),  # Andes
+        (380, 380, 16, 55, "#5b8f5a", 0.62),  # Rockies
+        (1750, 380, 90, 18, "#4f8a4a", 0.7),  # Alpine–Himalaya
+        (1555, 680, 14, 55, "#5b8f5a", 0.62),  # East African rift
+        (2160, 400, 22, 18, "#5b8f5a", 0.55),  # Japan
+        (1650, 430, 28, 16, "#4f8a4a", 0.55),  # Zagros
+    ]
+    local_shallow = [
+        (520, 260, 70, 40, "#a67c52", 0.55),  # Canadian Shield
+        (1480, 180, 45, 22, "#a67c52", 0.55),  # Baltic Shield
+        (780, 760, 40, 28, "#b08968", 0.45),  # Brazilian Shield
+        (1480, 760, 55, 40, "#a67c52", 0.5),  # African shields
+        (2180, 800, 40, 22, "#a67c52", 0.5),  # Western Australia
+        (2050, 220, 50, 22, "#b08968", 0.4),  # Siberian shield
+    ]
+    overlay = ellipses(local_shallow + sedimentary + complex_fold).replace(
+        "</g>", legend_box(
+            [
+                ("#2f6f9a", "sedimentary basins"),
+                ("#4f8a4a", "complex folded / faulted"),
+                ("#a67c52", "local and shallow"),
+            ]
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "groundwater-whymap.jpg",
+        "Fix Planet overview · WHYMAP aquifer environments · not Aqueduct stress",
+    )
+
+
+def global_lakes_hydrolakes() -> None:
+    """Shoreline / lake-density dots — not river-basin fills, not stress."""
+    css = """
+    .oceanxx { fill: #c5d9e8 !important; stroke: none !important; }
+    .landxx { fill: #f3efe4 !important; stroke: #9aa39c !important; stroke-width: 0.25 !important; }
+    .antxx { fill: #f7f4ee !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    lake = "#1d4e89"
+    districts = [
+        *lake_cluster(510, 365, 8, 42, 9.5, lake),  # Great Lakes
+        *lake_cluster(480, 250, 16, 80, 6.0, lake, 0.85),  # Canadian Shield
+        *lake_cluster(1475, 195, 14, 42, 6.2, lake),  # Fennoscandia
+        *lake_cluster(2000, 210, 8, 40, 5.5, lake, 0.7),  # Siberian lakes
+        *lake_cluster(1555, 700, 6, 28, 8.0, lake),  # East African Great Lakes
+        *lake_cluster(1688, 345, 4, 22, 11.0, lake),  # Caspian
+        *lake_cluster(2048, 275, 3, 14, 8.5, lake),  # Baikal
+        *lake_cluster(1960, 430, 10, 36, 4.8, lake, 0.8),  # Tibetan plateau
+        *lake_cluster(700, 900, 7, 28, 5.5, lake, 0.85),  # Patagonia
+        *lake_cluster(760, 700, 9, 48, 4.5, lake, 0.7),  # Amazon
+        *lake_cluster(2055, 430, 5, 22, 5.0, lake, 0.75),  # Yangtze / Dongting
+        *lake_cluster(1575, 240, 5, 20, 6.0, lake, 0.8),  # Ladoga / Onega
+        *lake_cluster(400, 220, 6, 28, 5.5, lake, 0.8),  # Great Bear / Slave
+        *lake_cluster(530, 575, 3, 10, 5.0, lake, 0.8),  # Nicaragua
+        *lake_cluster(675, 775, 2, 8, 6.0, lake, 0.85),  # Titicaca
+        *lake_cluster(2025, 555, 3, 12, 5.0, lake, 0.75),  # Tonle Sap
+        *lake_cluster(1488, 888, 3, 14, 5.5, lake, 0.75),  # southern Africa
+        *lake_cluster(2240, 820, 3, 16, 4.5, lake, 0.6),  # Australian
+        *lake_cluster(1720, 348, 2, 10, 6.0, "#3a6ea5", 0.55),  # Aral remnant
+    ]
+    overlay = circles(districts).replace(
+        "</g>",
+        legend_box([("#1d4e89", "lakes and reservoirs ≥10 ha")], x=72, y=1248)
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "global-lakes-hydrolakes.jpg",
+        "Fix Planet overview · HydroLAKES shoreline density · not HydroBASINS",
+    )
+
+
+def lakes_wetlands_glwd() -> None:
+    """Open water / marsh / peat / intermittent — not a second HydroLAKES shoreline layer."""
+    css = """
+    .oceanxx { fill: #b9cfc4 !important; stroke: none !important; }
+    .landxx { fill: #efe8d6 !important; stroke: #7d8a72 !important; stroke-width: 0.25 !important; }
+    .antxx { fill: #f2eee6 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    open_water = [
+        (510, 365, 38, 16, "#1a6b8a", 0.85),  # Great Lakes
+        (1555, 700, 22, 40, "#1a6b8a", 0.8),  # East African lakes
+        (1688, 345, 28, 16, "#1a6b8a", 0.85),  # Caspian
+        (2048, 275, 14, 8, "#1a6b8a", 0.8),  # Baikal
+        (1475, 195, 22, 12, "#1a6b8a", 0.55),  # Fennoscandian lakes
+    ]
+    marsh = [
+        (760, 760, 36, 20, "#3d9a5a", 0.75),  # Pantanal
+        (470, 470, 22, 12, "#3d9a5a", 0.7),  # Everglades / Gulf
+        (1520, 620, 28, 16, "#3d9a5a", 0.75),  # Sudd
+        (1630, 430, 20, 12, "#3d9a5a", 0.7),  # Mesopotamian marshes
+        (2020, 555, 22, 12, "#3d9a5a", 0.7),  # Mekong
+        (1480, 700, 24, 16, "#4eaa68", 0.55),  # Congo wetlands
+        (760, 690, 40, 18, "#4eaa68", 0.45),  # Amazon várzea
+    ]
+    peat = [
+        (520, 240, 70, 28, "#6b4a2a", 0.7),  # Hudson Bay lowlands
+        (1900, 230, 80, 28, "#6b4a2a", 0.65),  # West Siberian peat
+        (2080, 660, 28, 14, "#6b4a2a", 0.75),  # Indonesia peat
+        (1475, 200, 30, 14, "#7a5a38", 0.45),  # Fennoscandian peat
+        (1460, 720, 22, 14, "#6b4a2a", 0.5),  # Congo peat
+    ]
+    intermittent = [
+        (1380, 560, 70, 22, "#d4a017", 0.55),  # Sahel / Chad
+        (2240, 800, 50, 22, "#d4a017", 0.5),  # Australian intermittent
+        (1750, 380, 36, 16, "#d4a017", 0.45),  # Central Asia
+        (1488, 820, 28, 14, "#d4a017", 0.4),  # Kalahari pans
+    ]
+    overlay = ellipses(intermittent + peat + marsh + open_water).replace(
+        "</g>",
+        legend_box(
+            [
+                ("#1a6b8a", "open water"),
+                ("#3d9a5a", "marsh / vegetated wetland"),
+                ("#6b4a2a", "peatland"),
+                ("#d4a017", "intermittent water"),
+            ],
+            x=72,
+            y=1128,
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "lakes-wetlands-glwd.jpg",
+        "Fix Planet overview · GLWD inland-water classes · not HydroLAKES shorelines",
+    )
+
+
+def flood_hazard_aqueduct() -> None:
+    """Riverine + coastal inundation schematic — not baseline water-stress choropleth."""
+    css = """
+    .oceanxx { fill: #16324a !important; stroke: none !important; }
+    .landxx { fill: #e4e0d4 !important; stroke: #6a7268 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #eef1f2 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    coastal = [
+        (1865, 500, 32, 14, "#5ec8f0", 0.9),  # Ganges–Brahmaputra delta
+        (2020, 560, 30, 14, "#5ec8f0", 0.88),  # Mekong delta
+        (1548, 500, 20, 12, "#5ec8f0", 0.85),  # Nile delta
+        (1438, 265, 22, 12, "#5ec8f0", 0.9),  # Rhine / Netherlands
+        (470, 470, 32, 14, "#5ec8f0", 0.85),  # Mississippi / Gulf
+        (2080, 430, 40, 14, "#5ec8f0", 0.85),  # China coast
+        (2100, 640, 24, 12, "#5ec8f0", 0.8),  # Jakarta / N Java
+        (1488, 300, 16, 10, "#5ec8f0", 0.75),  # Po / Venice
+        (2260, 720, 18, 10, "#5ec8f0", 0.6),  # N Australia
+        (580, 620, 18, 10, "#5ec8f0", 0.65),  # Guianas / Orinoco
+        (2180, 560, 16, 10, "#5ec8f0", 0.7),  # Philippines
+        (500, 430, 22, 10, "#5ec8f0", 0.6),  # US Atlantic
+        (1285, 575, 16, 10, "#5ec8f0", 0.55),  # Niger delta
+        (2120, 720, 16, 10, "#5ec8f0", 0.55),  # N Australia / Gulf of Carpentaria
+    ]
+    riverine = [
+        (1860, 470, 55, 10, "#3d8ec9", 0.75),  # Ganges corridor
+        (2040, 400, 50, 10, "#3d8ec9", 0.7),  # Yangtze
+        (430, 400, 55, 10, "#3d8ec9", 0.7),  # Mississippi
+        (740, 700, 60, 16, "#3d8ec9", 0.55),  # Amazon floodplain
+        (1360, 560, 40, 10, "#3d8ec9", 0.65),  # Niger / inland delta
+        (1430, 280, 28, 8, "#3d8ec9", 0.6),  # Rhine–Danube
+        (1780, 470, 28, 8, "#3d8ec9", 0.65),  # Indus
+        (1480, 620, 22, 10, "#3d8ec9", 0.55),  # Nile / Sudd
+        (700, 640, 22, 8, "#3d8ec9", 0.5),  # Magdalena / Orinoco
+        (2050, 500, 22, 8, "#3d8ec9", 0.5),  # Pearl / Red
+    ]
+    overlay = ellipses(riverine + coastal).replace(
+        "</g>",
+        legend_box(
+            [
+                ("#3d8ec9", "riverine inundation"),
+                ("#5ec8f0", "coastal inundation"),
+            ],
+            x=72,
+            y=1218,
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "flood-hazard-aqueduct.jpg",
+        "Fix Planet overview · Aqueduct Floods hazard · not baseline water stress",
+    )
+
+
+def water_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    groundwater_whymap()
+    global_lakes_hydrolakes()
+    lakes_wetlands_glwd()
+    flood_hazard_aqueduct()
+
+
 def process_owid(src: Path, dest: str, credit: str, crop: tuple[int, int, int, int]) -> None:
     im = Image.open(src).convert("RGB")
     im = im.crop(crop)
@@ -139,6 +423,117 @@ def process_hosted(src: Path, dest: str, credit: str, crop: tuple[int, int, int,
     im = fit_card(im)
     im = credit_bar(im, credit)
     save_jpg(im, dest)
+
+
+def conflicts_schematic(
+    groups: dict[str, list[str]],
+    ocean: str,
+    land: str,
+    ant: str,
+    stroke: str,
+    dest: str,
+    swatches: list[tuple[tuple[int, int, int], str]],
+    credit: str,
+) -> None:
+    """Country bands for a Fix Planet overview. Unlisted countries stay the land colour."""
+    css = f"""
+    .oceanxx {{ fill: {ocean} !important; stroke: none !important; }}
+    .landxx {{ fill: {land} !important; stroke: {stroke} !important; stroke-width: 0.28 !important; }}
+    .antxx {{ fill: {ant} !important; }}
+    .circlexx, .subxx, .noxx, .unxx {{ opacity: 0 !important; }}
+    {css_fills(groups)}
+    """
+    im = render_svg_image(css, "")
+    im = legend_bar(im, swatches, credit)
+    save_jpg(im, dest)
+
+
+def global_peace_index() -> None:
+    """Peacefulness palette. Bands are orientation, not GPI 2026 scores."""
+    more = "is ie nz at sg ch pt si jp cz dk fi no se nl ca au".split()
+    less = "ua ye sd ss so cd mm sy af ml bf ne ng et ly ht ps il iq".split()
+    conflicts_schematic(
+        {"#1e8a4a": more, "#c0392b": less},
+        ocean="#e4eef2",
+        land="#d9ded8",
+        ant="#f4f7f8",
+        stroke="#8a938c",
+        dest="global-peace-index.jpg",
+        swatches=[
+            ((30, 138, 74), "More peaceful"),
+            ((192, 57, 43), "Less peaceful"),
+            ((217, 222, 216), "Not classed here"),
+        ],
+        credit="Fix Planet overview · peacefulness bands · not GPI scores · IEP / Vision of Humanity",
+    )
+
+
+def fragile_states_index() -> None:
+    """Fragility palette. Darker = higher fragility on this overview, not FSI scores."""
+    higher = "ye so ss sd sy cd af cf td ht ml ly iq mm bf ne ng et".split()
+    lower = "is no fi se dk ch nz ie lu at ca au nl sg jp pt si".split()
+    conflicts_schematic(
+        {"#5c2e24": higher, "#f4e4c4": lower},
+        ocean="#c5d0d4",
+        land="#d4cdc2",
+        ant="#f7f4ee",
+        stroke="#8d8478",
+        dest="fragile-states-index.jpg",
+        swatches=[
+            ((92, 46, 36), "Higher fragility"),
+            ((244, 228, 196), "Lower fragility"),
+            ((212, 205, 194), "Not classed here"),
+        ],
+        credit="Fix Planet overview · fragility bands · not FSI scores · Fund for Peace",
+    )
+
+
+def military_expenditure_sipri() -> None:
+    """Spending level (not share of GDP). Darker = larger budgets. Not Milex figures."""
+    largest = "us cn ru".split()
+    large = "in sa gb de fr jp kr ua".split()
+    conflicts_schematic(
+        {"#0a335c": largest, "#3d78b4": large},
+        ocean="#8aa4b8",
+        land="#e3e8ee",
+        ant="#f4f7fa",
+        stroke="#6d7c88",
+        dest="military-expenditure-sipri.jpg",
+        swatches=[
+            ((10, 51, 92), "Largest spenders"),
+            ((61, 120, 180), "Other large spenders"),
+            ((227, 232, 238), "Not classed here"),
+        ],
+        credit="Fix Planet overview · spending level · not share of GDP · not SIPRI Milex figures",
+    )
+
+
+def conflict_barometer_hiik() -> None:
+    """Intensity bands, not event pins and not one class for every conflict in a country."""
+    war = "ua sd mm ye sy so cd".split()
+    violent = "ml bf ne ng af iq ly ht cf ps il et".split()
+    conflicts_schematic(
+        {"#8e1e32": war, "#e07a2f": violent},
+        ocean="#243140",
+        land="#c9cfd4",
+        ant="#e8eef2",
+        stroke="#5c6870",
+        dest="conflict-barometer-hiik.jpg",
+        swatches=[
+            ((142, 30, 50), "War-intensity band"),
+            ((224, 122, 47), "Violent-conflict band"),
+            ((201, 207, 212), "Not classed here"),
+        ],
+        credit="Fix Planet overview · intensity bands · not HIIK scores · not ACLED pins",
+    )
+
+
+def conflicts_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    global_peace_index()
+    fragile_states_index()
+    military_expenditure_sipri()
+    conflict_barometer_hiik()
 
 
 def armed_conflict() -> None:
@@ -370,5 +765,294 @@ def main() -> None:
     world_countries()
 
 
+def organized_crime_index() -> None:
+    """Licensed port photo — criminal-markets context, not the GI-TOC heatmap."""
+    process_hosted(
+        SRC / "le-havre-containers.jpg",
+        "organized-crime-index.jpg",
+        "Wikimedia Commons · Philippe Alès · CC BY-SA 3.0 · Le Havre container terminal",
+        (0, 352, 4288, 2496),
+    )
+
+
+def trafficking_in_persons() -> None:
+    """Licensed awareness photo — not a UNODC GLOTIP plate, not victims."""
+    process_hosted(
+        SRC / "redeemer-blue-tip.jpg",
+        "trafficking-in-persons.jpg",
+        "Agência Brasil · Vladimir Platonow · CC BY 3.0 BR · lit against trafficking",
+        (0, 40, 4000, 2040),
+    )
+
+
+def corruption_perceptions_index(src: Path | None = None) -> None:
+    """CPI 2025 Commons choropleth (CC BY-SA 4.0) — not a homicide remix."""
+    candidate = src or SRC / "cpi-2025.svg"
+    if not candidate.exists():
+        raise SystemExit(f"missing {candidate}")
+    if candidate.suffix.lower() == ".svg":
+        png_path = Path("/tmp/map-src/cpi-2025.png")
+        png_path.parent.mkdir(parents=True, exist_ok=True)
+        subprocess.run(
+            ["rsvg-convert", "-w", "2754", "-h", "1398", "-o", str(png_path), str(candidate)],
+            check=True,
+        )
+        im = Image.open(png_path).convert("RGB")
+    else:
+        im = Image.open(candidate).convert("RGB")
+    im = fit_card(im)
+    im = credit_bar(
+        im,
+        "Wikimedia Commons · Cnscrptr & ConnerMiner · CC BY-SA 4.0 · CPI 2025 (TI data)",
+        fill=(20, 28, 36),
+    )
+    save_jpg(im, "corruption-perceptions-index.jpg")
+
+
+def crime_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    organized_crime_index()
+    trafficking_in_persons()
+    src = SRC / "cpi-2025.svg"
+    if src.exists() or (SRC / "cpi-2025.png").exists():
+        corruption_perceptions_index(src if src.exists() else SRC / "cpi-2025.png")
+
+
+def intact_forest_landscapes() -> None:
+    """Large wilderness blocks — not the magenta Hansen loss frontiers."""
+    css = """
+    .oceanxx { fill: #071410 !important; stroke: none !important; }
+    .landxx { fill: #243528 !important; stroke: #152016 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #d5ddd6 !important; }
+    """
+    blocks = [
+        (720, 680, 110, 55, "#3ddc6a", 0.72),  # Amazon core
+        (820, 600, 48, 26, "#2fbf58", 0.55),  # Guiana shield
+        (1420, 680, 70, 36, "#3ddc6a", 0.7),  # Congo interior
+        (500, 230, 100, 28, "#49e07a", 0.5),  # boreal Canada
+        (1900, 210, 150, 32, "#49e07a", 0.48),  # Siberia
+        (2260, 700, 36, 16, "#3ddc6a", 0.65),  # New Guinea
+        (2085, 650, 26, 14, "#2fbf58", 0.55),  # Borneo interior
+    ]
+    render_svg(
+        css,
+        ellipses(blocks),
+        "intact-forest-landscapes.jpg",
+        "Fix Planet overview · intact forest landscapes · based on IFL Mapping Team",
+    )
+
+
+def mangrove_extent() -> None:
+    """Tidal-forest fringe on tropical coasts — not inland canopy loss."""
+    css = """
+    .oceanxx { fill: #0c3d4a !important; stroke: none !important; }
+    .landxx { fill: #c4b48a !important; stroke: #6d6248 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #e7eef0 !important; }
+    """
+    coasts = [
+        (700, 500, 16, 7, "#14b8a6", 0.9),  # Florida / Caribbean
+        (900, 640, 18, 8, "#0d9488", 0.9),  # Amazon mouth
+        (1180, 610, 22, 8, "#14b8a6", 0.85),  # West Africa
+        (1560, 720, 10, 22, "#0f766e", 0.85),  # East Africa
+        (1605, 790, 8, 14, "#14b8a6", 0.8),  # Madagascar
+        (1860, 505, 20, 8, "#0d9488", 0.9),  # Sundarbans
+        (2040, 670, 16, 8, "#14b8a6", 0.85),  # Sumatra
+        (2100, 655, 18, 8, "#0f766e", 0.85),  # Borneo coast
+        (2280, 720, 14, 7, "#14b8a6", 0.8),  # New Guinea coast
+        (2180, 780, 36, 8, "#0d9488", 0.85),  # northern Australia
+    ]
+    render_svg(
+        css,
+        ellipses(coasts),
+        "mangrove-extent.jpg",
+        "Fix Planet overview · mangrove shoreline · based on Global Mangrove Watch",
+    )
+
+
+def primary_humid_tropical_forests() -> None:
+    """2001 humid-tropical primary belt — boreal stays out of the green."""
+    css = """
+    .oceanxx { fill: #10243a !important; stroke: none !important; }
+    .landxx { fill: #8d9078 !important; stroke: #3e4638 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #e4ebe8 !important; }
+    """
+    belt = [
+        (740, 690, 130, 48, "#0b7a32", 0.82),  # Amazon
+        (1430, 690, 80, 34, "#0b7a32", 0.8),  # Congo
+        (2050, 660, 70, 22, "#0e8a3a", 0.78),  # Sundaland
+        (2260, 705, 34, 14, "#0e8a3a", 0.75),  # New Guinea
+        (1980, 560, 22, 12, "#149447", 0.6),  # mainland SE Asia
+    ]
+    render_svg(
+        css,
+        ellipses(belt),
+        "primary-humid-tropical-forests.jpg",
+        "Fix Planet overview · primary humid tropics 2001 · based on UMD GLAD",
+    )
+
+
+def forest_landscape_integrity() -> None:
+    """Continuous integrity bands — high remote, mid, and modified standing forest."""
+    css = """
+    .oceanxx { fill: #0e1c28 !important; stroke: none !important; }
+    .landxx { fill: #6e7c68 !important; stroke: #2c3830 !important; stroke-width: 0.3 !important; }
+    .antxx { fill: #e6ece8 !important; }
+    """
+    high = [
+        (720, 680, 90, 40, "#145c32", 0.85),
+        (1420, 680, 55, 28, "#145c32", 0.82),
+        (480, 230, 80, 22, "#1b7a40", 0.7),
+        (1950, 200, 120, 26, "#1b7a40", 0.68),
+        (2260, 700, 28, 12, "#145c32", 0.75),
+    ]
+    mid = [
+        (620, 420, 40, 18, "#e0b04a", 0.55),
+        (1500, 360, 36, 16, "#e0b04a", 0.5),
+        (1860, 430, 40, 16, "#d4a017", 0.5),
+        (2050, 400, 50, 18, "#e0b04a", 0.48),
+    ]
+    low = [
+        (1380, 340, 28, 14, "#e07a2f", 0.62),
+        (1840, 480, 30, 14, "#e07a2f", 0.58),
+        (1980, 420, 36, 16, "#c65a1e", 0.6),
+        (560, 400, 28, 14, "#e07a2f", 0.5),
+    ]
+    render_svg(
+        css,
+        ellipses(high + mid + low),
+        "forest-landscape-integrity.jpg",
+        "Fix Planet overview · forest landscape integrity · based on Grantham et al.",
+    )
+
+
+def consumption_co2() -> None:
+    """Higher consumption-footprint orientation. Not GCP figures and not territorial CO₂."""
+    higher = "us ca au gb de fr jp kr nl be se no dk fi ch at ie ae sa qa kw".split()
+    conflicts_schematic(
+        {"#1f4e79": higher},
+        ocean="#e7eef4",
+        land="#d5d8dc",
+        ant="#f4f7f8",
+        stroke="#8d939c",
+        dest="consumption-co2-emissions.jpg",
+        swatches=[
+            ((31, 78, 121), "Higher footprint"),
+            ((213, 216, 220), "Not classed here"),
+        ],
+        credit="Fix Planet overview · consumption-based CO₂ · not GCP figures · not territorial CO₂",
+    )
+
+
+def nitrogen_dioxide() -> None:
+    """Tropospheric NO₂ column hotspots — cities, industry, shipping. Not PM2.5."""
+    css = """
+    .oceanxx { fill: #1c2836 !important; stroke: none !important; }
+    .landxx { fill: #3e4a46 !important; stroke: #2a3330 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #d5ddd8 !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    column = "#f0b429"
+    hotspots = [
+        (520, 390, 28, 14, column, 0.9),  # US Northeast
+        (300, 430, 18, 10, column, 0.75),  # California
+        (1438, 265, 26, 12, column, 0.9),  # Benelux / Ruhr
+        (1488, 300, 16, 10, column, 0.8),  # Po Valley
+        (1600, 230, 14, 10, column, 0.65),  # Moscow
+        (1860, 480, 36, 14, column, 0.88),  # Indo-Gangetic
+        (2080, 420, 40, 16, column, 0.92),  # Eastern China
+        (2140, 400, 16, 10, column, 0.8),  # Korea
+        (2185, 410, 14, 10, column, 0.75),  # Japan
+        (1660, 450, 22, 12, column, 0.8),  # Gulf industry
+        (1488, 860, 14, 10, column, 0.7),  # Highveld
+        (1405, 250, 22, 6, "#ffe08a", 0.55),  # North Sea shipping
+        (1520, 370, 36, 6, "#ffe08a", 0.45),  # Mediterranean shipping
+        (2050, 540, 28, 6, "#ffe08a", 0.5),  # South China Sea shipping
+    ]
+    overlay = ellipses(hotspots).replace(
+        "</g>",
+        legend_box(
+            [
+                ("#f0b429", "combustion column"),
+                ("#ffe08a", "shipping corridor"),
+            ],
+            x=72,
+            y=1218,
+        )
+        + "\n</g>",
+        1,
+    )
+    render_svg(
+        css,
+        overlay,
+        "nitrogen-dioxide-no2.jpg",
+        "Fix Planet overview · tropospheric NO₂ · not PM2.5 · Sentinel-5P / TROPOMI",
+    )
+
+
+def mismanaged_plastic() -> None:
+    """Larger mismanaged-mass orientation. Not Meijer tonnages and not a beach photo."""
+    larger = "cn in id ph vn bd pk ng eg th br".split()
+    conflicts_schematic(
+        {"#b85c38": larger},
+        ocean="#d5e2ea",
+        land="#efe6d6",
+        ant="#f7f4ee",
+        stroke="#8a7d6a",
+        dest="mismanaged-plastic-waste.jpg",
+        swatches=[
+            ((184, 92, 56), "Larger mismanaged mass"),
+            ((239, 230, 214), "Not classed here"),
+        ],
+        credit="Fix Planet overview · mismanaged plastic · not Meijer tonnages · OWID",
+    )
+
+
+def methane_emissions() -> None:
+    """Larger methane-inventory orientation. Not EDGAR grid values and not CO₂."""
+    larger = "cn us ru in br id".split()
+    conflicts_schematic(
+        {"#8a5a12": larger},
+        ocean="#d7e0d8",
+        land="#e8e4d4",
+        ant="#f4f1ea",
+        stroke="#8a8474",
+        dest="methane-emissions.jpg",
+        swatches=[
+            ((138, 90, 18), "Larger CH₄ inventory"),
+            ((232, 228, 212), "Not classed here"),
+        ],
+        credit="Fix Planet overview · methane inventory · not EDGAR grid values · not CO₂",
+    )
+
+
+def pollution_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    consumption_co2()
+    nitrogen_dioxide()
+    mismanaged_plastic()
+    methane_emissions()
+
+
+def forests_cards() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    intact_forest_landscapes()
+    mangrove_extent()
+    primary_humid_tropical_forests()
+    forest_landscape_integrity()
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if sys.argv[1:] == ["crime"]:
+        crime_cards()
+    elif sys.argv[1:] == ["conflicts"]:
+        conflicts_cards()
+    elif sys.argv[1:] == ["water"]:
+        water_cards()
+    elif sys.argv[1:] == ["forests"]:
+        forests_cards()
+    elif sys.argv[1:] == ["pollution"]:
+        pollution_cards()
+    else:
+        main()

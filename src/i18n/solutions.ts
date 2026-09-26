@@ -246,12 +246,48 @@ const en: Record<string, SolutionCopy> = {
     fix: 'A solar still evaporates saline water under a transparent cover and condenses the vapour as freshwater — an old, small-scale method. In 2020 MIT and Shanghai Jiao Tong University demonstrated a multi-stage passive still on an MIT rooftop that reused condensation heat between layers. That work is a research prototype, not a municipal plant. Still output follows sun and area; it does not replace membrane desalination for a city.',
     imageAlt: 'A rooftop solar still in Cairo with an insulated duct loop around a dark evaporator box',
   },
+  'non-revenue-water-reduction': {
+    problemTitle: 'Treated water lost in the pipes before the meter',
+    fixTitle: 'Non-revenue water / DMA leak reduction',
+    problem:
+      'Utilities produce drinking water that never reaches a billed tap — leaks, theft, and bad meters waste the catchments already under stress.',
+    fix: 'Utilities cut physical and commercial losses with district metered areas, pressure management, and active leak detection — saving water already treated. Distinct from drip irrigation (farm) and from rain gardens (street runoff).',
+    imageAlt:
+      'A technician listens for a leak on a street water main in Saint-Maurice-de-Beynost with a correlator and a ground microphone',
+  },
+  'uv-disinfection': {
+    problemTitle: 'Pathogens that slip past ordinary chlorination',
+    fixTitle: 'UV disinfection',
+    problem:
+      'Clear-looking water can still carry Cryptosporidium and other microbes that chlorine alone does not always stop.',
+    fix: 'Ultraviolet light inactivates microbes in drinking-water plants without adding a chemical residual — standard under U.S. EPA LT2 guidance when reactors are validated. Not a desalination membrane and not a wetland filter.',
+    imageAlt:
+      'Pipe gallery inside the Sooke River Road ultraviolet disinfection plant in British Columbia, a drinking-water works',
+  },
+  'onsite-greywater-reuse': {
+    problemTitle: 'Potable water used once, then discarded from the building',
+    fixTitle: 'Onsite greywater reuse',
+    problem:
+      'Buildings send lightly used sink and shower water to the sewer while toilets and irrigation still take potable supply.',
+    fix: 'Treated greywater from sinks, showers, and laundry reused on-site for toilets or irrigation at building or district scale — EPA’s onsite non-potable reuse track. Distinct from Singapore NEWater (municipal full reclaim) and from rooftop rainwater harvesting.',
+    imageAlt:
+      'Onsite greywater treatment: settling tanks with a grease trap, a planted bed, and storage tanks',
+  },
+  'sand-dams': {
+    problemTitle: 'Seasonal rivers that vanish while villages still walk for water',
+    fixTitle: 'Sand dams',
+    problem:
+      'Seasonal sandy rivers run for days then leave dryland villages walking hours for water while the bed looks empty.',
+    fix: 'A low masonry wall across a seasonal sandy river traps sand; water is stored in the pores of the sand bank — low-evaporation dryland storage already used in Kenya and elsewhere. Distinct from managed aquifer recharge (basins/wells) and from rooftop rainwater harvesting.',
+    imageAlt:
+      'Diagram of a sand dam: a low wall across a sandy riverbed, with water stored in the sand and a hand pump on the bank',
+  },
   agroforestry: {
     problemTitle: 'Fields without trees',
     fixTitle: 'Agroforestry',
     problem:
       'Clearing trees from cropland and pasture leaves soil, shade, and fodder thinner. Farms then lean harder on fertilizer, irrigation, and feed brought from elsewhere.',
-    fix: 'Agroforestry puts trees back with crops and livestock — alley cropping, silvopasture, homegardens, and related systems. FAO treats it as a widespread, long-standing practice and highlights examples such as the Amazonian Chakra in Ecuador. Shade coffee and cocoa are one family of the same idea. Trees need rights, time, and design; a row of seedlings is not a forest offset.',
+    fix: 'Agroforestry puts trees back with crops and livestock — alley cropping, silvopasture, homegardens, and related systems. FAO treats three main types and highlights examples such as the Amazonian Chakra in Ecuador. Shade coffee and cocoa are a separate card. Trees need rights, time, and design; a row of seedlings is not a forest offset.',
     imageAlt: 'Aerial view of alley-cropping plots and young tree rows on a Savanna Institute farm beside the Wisconsin River',
   },
   windbreaks: {
@@ -588,12 +624,48 @@ const ru: Record<string, SolutionCopy> = {
     fix: 'Солнечный дистиллятор испаряет солёную воду под прозрачной крышкой и конденсирует пар в пресную — старый маломасштабный метод. В 2020 году MIT и Шанхайский университет транспорта показали многоступенчатый пассивный дистиллятор на крыше MIT, который повторно использует тепло конденсации между слоями. Это исследовательский прототип, а не городской завод. Выход следует за солнцем и площадью; он не заменяет мембранное опреснение для города.',
     imageAlt: 'Солнечный дистиллятор на крыше в Каире с изолированным воздуховодом вокруг тёмного испарителя'
   },
+  'non-revenue-water-reduction': {
+    problemTitle: 'Очищенная вода теряется в трубах до счётчика',
+    fixTitle: 'Снижение потерь (NRW) / DMA',
+    problem:
+      'Коммунальные службы готовят питьевую воду, которая не доходит до оплачиваемого крана — утечки, хищения и неисправные счётчики тратят воду водосборов, которые и так под нагрузкой.',
+    fix: 'Районы учёта (DMA), давление и поиск утечек — экономия уже подготовленной воды. Не капельный полив и не дождевые сады на улице.',
+    imageAlt:
+      'Техник слушает утечку на уличной водопроводной магистрали в Сен-Морис-де-Бейно коррелятором и наземным микрофоном',
+  },
+  'uv-disinfection': {
+    problemTitle: 'Патогены, которые хлорирование не всегда останавливает',
+    fixTitle: 'УФ-обеззараживание питьевой воды',
+    problem:
+      'Прозрачная на вид вода всё ещё может нести Cryptosporidium и другие микробы, которых один хлор не всегда останавливает.',
+    fix: 'Ультрафиолет обеззараживает воду на станции без химического остатка — обычная практика при валидации реакторов (EPA LT2). Не мембрана опреснения и не болото-фильтр.',
+    imageAlt:
+      'Трубный зал ультрафиолетовой станции обеззараживания питьевой воды на Sooke River Road в Британской Колумбии',
+  },
+  'onsite-greywater-reuse': {
+    problemTitle: 'Питьевая вода один раз — и в канализацию из дома',
+    fixTitle: 'Серая вода на месте (здание)',
+    problem:
+      'Здания отправляют слегка использованную воду из раковин и душа в канализацию, пока унитазы и полив всё ещё берут питьевую.',
+    fix: 'Очищенная серая вода из раковин, душа и стирки снова для унитазов или полива в здании/квартале (EPA ONWS). Не путать с NEWater и с дождевой водой с крыши.',
+    imageAlt:
+      'Очистка серой воды на месте: отстойники с жироуловителем, засаженное ложе и накопительные баки',
+  },
+  'sand-dams': {
+    problemTitle: 'Сезонные реки исчезают, а за водой всё ещё идут часами',
+    fixTitle: 'Песчаные плотины (sand dams)',
+    problem:
+      'Сезонные песчаные реки текут несколько дней, а потом оставляют деревни в сухих землях, которым до воды идти часами, хотя русло выглядит пустым.',
+    fix: 'Низкая кладка поперёк песчаного русла копит песок; вода держится в порах — сухое хранилище уже в Кении и других засушливых местах. Не MAR и не бочка с крыши.',
+    imageAlt:
+      'Схема песчаной плотины: низкая стенка поперёк песчаного русла, вода в порах песка и ручной насос на берегу',
+  },
   agroforestry: {
     problemTitle: 'Поля без деревьев',
     fixTitle: 'Агролесоводство',
     problem:
       'Сведение деревьев с пашни и пастбища оставляет почву, тень и корм тоньше. Хозяйства тогда сильнее зависят от удобрений, полива и привозного корма.',
-    fix: 'Агролесоводство возвращает деревья к культурам и скоту — аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. ФАО считает это распространённой давней практикой и приводит примеры вроде амазонской чакры в Эквадоре. Теневые кофе и какао — одно семейство той же идеи. Деревьям нужны права, время и проект; ряд саженцев — не лесной офсет.',
+    fix: 'Агролесоводство возвращает деревья к культурам и скоту — аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. ФАО выделяет три основных типа и приводит примеры вроде амазонской чакры в Эквадоре. Теневые кофе и какао — отдельная карточка. Деревьям нужны права, время и проект; ряд саженцев — не лесной офсет.',
     imageAlt: 'Вид сверху: аллейные посадки и ряды молодых деревьев на ферме Savanna Institute у реки Висконсин'
   },
   windbreaks: {
@@ -930,12 +1002,48 @@ const pl: Record<string, SolutionCopy> = {
     fix: 'Destylator słoneczny odparowuje wodę słoną pod przezroczystą pokrywą i skrapla parę jako słodką — stara, małoskalowa metoda. W 2020 r. MIT i Shanghai Jiao Tong University pokazały wielostopniowy bierny destylator na dachu MIT, który ponownie używał ciepła skraplania między warstwami. To prototyp badawczy, nie zakład miejski. Plon idzie za słońcem i powierzchnią; nie zastępuje odsalania membranowego dla miasta.',
     imageAlt: 'Dachowy destylator słoneczny w Kairze z izolowanym przewodem wokół ciemnego parownika'
   },
+  'non-revenue-water-reduction': {
+    problemTitle: 'Uzdatniona woda ginie w rurach przed wodomierzem',
+    fixTitle: 'Redukcja strat wody (NRW) / DMA',
+    problem:
+      'Wodociągi produkują wodę pitną, która nigdy nie dociera do opomiarowanego kranu — przecieki, kradzież i złe wodomierze marnują wodę zlewni, które już są pod presją.',
+    fix: 'Strefy DMA, ciśnienie i aktywne wykrywanie przecieków — oszczędność wody już uzdatnionej. To nie nawadnianie kropelkowe ani ogrody deszczowe.',
+    imageAlt:
+      'Technik nasłuchuje przecieku na ulicznej magistrali wodociągowej w Saint-Maurice-de-Beynost korelatorem i mikrofonem gruntowym',
+  },
+  'uv-disinfection': {
+    problemTitle: 'Patogeny, których zwykłe chlorowanie nie zawsze zatrzymuje',
+    fixTitle: 'Dezynfekcja UV (woda pitna)',
+    problem:
+      'Woda, która wygląda na czystą, wciąż może nieść Cryptosporidium i inne mikroby, których sam chlor nie zawsze zatrzymuje.',
+    fix: 'Światło UV unieszkodliwia drobnoustroje w zakładzie bez trwałego środka chemicznego — standard przy walidacji (EPA LT2). To nie odsalanie ani mokradło.',
+    imageAlt:
+      'Galeria rur w zakładzie dezynfekcji UV przy Sooke River Road w Kolumbii Brytyjskiej — zakład wody pitnej',
+  },
+  'onsite-greywater-reuse': {
+    problemTitle: 'Woda pitna użyta raz i spuszczona z budynku',
+    fixTitle: 'Szara woda na miejscu (budynek)',
+    problem:
+      'Budynki odprowadzają lekko zużytą wodę ze zlewów i pryszniców do kanalizacji, podczas gdy spłuczki i nawadnianie wciąż biorą wodę pitną.',
+    fix: 'Oczyszczona szara woda z umywalek, pryszniców i prania wraca do spłuczek lub nawadniania w budynku/osiedlu (EPA ONWS). Nie mylić z NEWater ani z deszczówką z dachu.',
+    imageAlt:
+      'Oczyszczanie szarej wody na miejscu: osadniki z łapaczem tłuszczu, obsadzone złoże i zbiorniki magazynowe',
+  },
+  'sand-dams': {
+    problemTitle: 'Sezonowe rzeki znikają, a po wodę wciąż się chodzi godzinami',
+    fixTitle: 'Tamy piaskowe (sand dams)',
+    problem:
+      'Sezonowe piaszczyste rzeki płyną kilka dni, a potem zostawiają suche wsie, które po wodę idą godzinami, choć koryto wygląda na puste.',
+    fix: 'Niski mur w poprzek piaszczystego koryta zatrzymuje piasek; woda siedzi w porach — magazyn dla suchych terenów (Kenya i inne). To nie MAR ani deszczówka z dachu.',
+    imageAlt:
+      'Schemat tamy piaskowej: niski mur w poprzek piaszczystego koryta, woda w porach piasku i ręczna pompa na brzegu',
+  },
   agroforestry: {
     problemTitle: 'Pola bez drzew',
     fixTitle: 'Agroleśnictwo',
     problem:
       'Wycinka drzew z upraw i pastwisk zostawia glebę, cień i paszę cieńszymi. Gospodarstwa wtedy mocniej opierają się na nawozie, nawadnianiu i paszy z zewnątrz.',
-    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt — uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. FAO traktuje to jako rozpowszechnioną, dawną praktykę i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Cień w kawie i kakao to jedna rodzina tego samego pomysłu. Drzewa potrzebują praw, czasu i projektu; rząd sadzonek to nie offset leśny.',
+    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt — uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. FAO wyróżnia trzy główne typy i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Cień w kawie i kakao to osobna karta. Drzewa potrzebują praw, czasu i projektu; rząd sadzonek to nie offset leśny.',
     imageAlt: 'Widok z lotu ptaka: uprawy alejkowe i rzędy młodych drzew na farmie Savanna Institute nad rzeką Wisconsin'
   },
   windbreaks: {
@@ -1272,12 +1380,48 @@ const lv: Record<string, SolutionCopy> = {
     fix: 'Saules destilators iztvaicē sāļūdeni zem caurspīdīga vāka un kondensē tvaiku par saldūdeni — sena, maza mēroga metode. 2020. gadā MIT un Šanhajas Dzjaotunas universitāte parādīja daudzpakāpju pasīvo destilatoru uz MIT jumta, kas atkārtoti izmanto kondensācijas siltumu starp slāņiem. Tas ir pētniecības prototips, ne pilsētas rūpnīca. Iznākums seko saulei un laukumam; tas neaizstāj membrānu atsāļošanu pilsētai.',
     imageAlt: 'Jumta saules destilators Kairā ar izolētu gaisa vadu ap tumšu iztvaicētāju'
   },
+  'non-revenue-water-reduction': {
+    problemTitle: 'Attīrītais ūdens pazūd caurulēs pirms skaitītāja',
+    fixTitle: 'Neieņēmumu ūdens / DMA noplūžu samazināšana',
+    problem:
+      'Ūdenssaimniecības sagatavo dzeramo ūdeni, kas nekad nesasniedz apmaksātu krānu — noplūdes, zādzības un slikti skaitītāji tērē sateces ūdeni, kas jau ir zem slodzes.',
+    fix: 'DMA zonas, spiediena vadība un noplūžu meklēšana — ietaupa jau sagatavotu ūdeni. Nav pilienveida apūdeņošana un nav lietus dārzi.',
+    imageAlt:
+      'Tehniķis klausās noplūdi ielas ūdensvadā Saint-Maurice-de-Beynost ar korelātoru un zemes mikrofonu',
+  },
+  'uv-disinfection': {
+    problemTitle: 'Patogēni, ko parastā hlorēšana ne vienmēr aptur',
+    fixTitle: 'UV dezinfekcija (dzeramais ūdens)',
+    problem:
+      'Ūdens, kas izskatās dzidrs, joprojām var nest Cryptosporidium un citus mikrobus, kurus hlors viens pats ne vienmēr aptur.',
+    fix: 'Ultravioletais starojums inaktivē mikrobus stacijā bez ķīmiska atlikuma — ierasta prakse ar validētiem reaktoriem (EPA LT2). Nav atsāļošana un nav mitrājs.',
+    imageAlt:
+      'Cauruļu zāle Sooke River Road ultravioletās dezinfekcijas stacijā Britu Kolumbijā — dzeramā ūdens iekārta',
+  },
+  'onsite-greywater-reuse': {
+    problemTitle: 'Dzeramais ūdens vienreiz — un no ēkas kanalizācijā',
+    fixTitle: 'Pelēkais ūdens uz vietas (ēka)',
+    problem:
+      'Ēkas sūta viegli lietotu izlietnes un dušas ūdeni kanalizācijā, kamēr tualetes un laistīšana joprojām ņem dzeramo ūdeni.',
+    fix: 'Attīrīts pelēkais ūdens no izlietnēm, dušām un veļas atkal tualetēm vai apūdeņošanai ēkā/kvartālā (EPA ONWS). Nejauc ar NEWater un jumta lietusūdeni.',
+    imageAlt:
+      'Pelēkā ūdens attīrīšana uz vietas: nostādinātāji ar tauku uztvērēju, apstādīta gultne un uzglabāšanas tvertnes',
+  },
+  'sand-dams': {
+    problemTitle: 'Sezonālas upes izzūd, bet pēc ūdens joprojām iet stundām',
+    fixTitle: 'Smilšu dambji (sand dams)',
+    problem:
+      'Sezonālas smilšainas upes tek dažas dienas un tad atstāj sauszemes ciemus, kuriem pēc ūdens jāiet stundām, lai gan gultne izskatās tukša.',
+    fix: 'Zems mūra dambis pāri smilšainai gultnei aiztur smiltis; ūdens glabājas porās — sauszemes krātuve jau Kenijā u.c. Nav MAR un nav jumta lietusūdens.',
+    imageAlt:
+      'Smilšu dambja shēma: zema siena pāri smilšainai gultnei, ūdens smilšu porās un rokas sūknis krastā',
+  },
   agroforestry: {
     problemTitle: 'Lauki bez kokiem',
     fixTitle: 'Agromežsaimniecība',
     problem:
       'Koku ciršana no tīrumiem un ganībām atstāj augsni, ēnu un barību plānāku. Saimniecības tad vairāk balstās uz mēslojumu, laistīšanu un ievesto barību.',
-    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem — aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. FAO to uzskata par izplatītu, seno praksi un izceļ piemērus kā Amazones čakru Ekvadorā. Ēnas kafija un kakao ir viena tās pašas idejas saime. Kokiem vajag tiesības, laiku un projektu; stādu rinda nav meža ofsets.',
+    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem — aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. FAO izšķir trīs galvenos tipus un izceļ piemērus kā Amazones čakru Ekvadorā. Ēnas kafija un kakao ir atsevišķa karte. Kokiem vajag tiesības, laiku un projektu; stādu rinda nav meža ofsets.',
     imageAlt: 'Skats no gaisa: aleju sējumi un jaunu koku rindas Savanna Institute saimniecībā pie Viskonsinas upes'
   },
   windbreaks: {

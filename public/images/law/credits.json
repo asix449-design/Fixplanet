@@ -1,11 +1,50 @@
 [
   {
+    "slug": "law-hub-bg",
+    "file": "law-hub-bg.jpg",
+    "artist": "Founder-supplied hub hero — golden scales of justice in a night lobby",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
     "slug": "law-section-bg",
     "file": "law-section-bg.jpg",
     "commonsTitle": "European Parliament Strasbourg Hemicycle - Diliff.jpg",
     "artist": "Diliff",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg"
+  },
+  {
+    "slug": "paris-agreement",
+    "file": "paris-agreement.jpg",
+    "commonsTitle": "French President Hollande, Foreign Minister Fabius, and UN Secretary-General Ki-moon Applaud Delegates to the COP21 Climate Change Conference (23696822225).jpg",
+    "artist": "U.S. Department of State",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:French_President_Hollande,_Foreign_Minister_Fabius,_and_UN_Secretary-General_Ki-moon_Applaud_Delegates_to_the_COP21_Climate_Change_Conference_(23696822225).jpg"
+  },
+  {
+    "slug": "montreal-protocol",
+    "file": "montreal-protocol.jpg",
+    "commonsTitle": "2023 Ozone Hole Update (SVS14449 - ozone geos5 2023264 print).jpg",
+    "artist": "NASA Scientific Visualization Studio",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ozone_Hole_Update_(SVS14449_-_ozone_geos5_2023264_print).jpg"
+  },
+  {
+    "slug": "eu-deforestation-regulation",
+    "file": "eu-deforestation-regulation.jpg",
+    "commonsTitle": "Oil palm and rainforest fragment Borneo.JPG",
+    "artist": "T. R. Shankar Raman",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oil_palm_and_rainforest_fragment_Borneo.JPG"
+  },
+  {
+    "slug": "eu-ets",
+    "file": "eu-ets.jpg",
+    "commonsTitle": "Kohlekraftwerk Niederaußem edit.JPG",
+    "artist": "Vogone",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kohlekraftwerk_Niederaußem_edit.JPG"
   },
   {
     "slug": "nature-restoration",
@@ -174,5 +213,45 @@
     "artist": "Jules Verne Times Two",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_and_dog_companions,_Mosteiros,_S%C3%A3o_Miguel_Island,_Azores,_Portugal_(PPL1-Corrected).jpg"
+  },
+  {
+    "slug": "cms-bonn-convention",
+    "file": "cms-bonn-convention.jpg",
+    "commonsTitle": "Serengeti wildebeest migration JF2.jpg",
+    "artist": "Wolves201",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serengeti_wildebeest_migration_JF2.jpg"
+  },
+  {
+    "slug": "birds-directive",
+    "file": "birds-directive.jpg",
+    "commonsTitle": "Haliaeetus albicilla (Svolvær, 2012).jpg",
+    "artist": "Yathin S Krishnappa",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haliaeetus_albicilla_(Svolvær,_2012).jpg"
+  },
+  {
+    "slug": "bern-convention",
+    "file": "bern-convention.jpg",
+    "commonsTitle": "002 Wild Alpine Ibex Swiss Alps and Creux du Van Photo by Giles Laurent.jpg",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:002_Wild_Alpine_Ibex_Swiss_Alps_and_Creux_du_Van_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "slug": "marine-mammal-protection-act",
+    "file": "marine-mammal-protection-act.jpg",
+    "commonsTitle": "Humpback Whale Underwater (37209287981).jpg",
+    "artist": "Ed Lyman, NOAA Hawaiian Islands Humpback Whale National Marine Sanctuary",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_Whale_Underwater_(37209287981).jpg"
+  },
+  {
+    "slug": "lacey-act",
+    "file": "lacey-act.jpg",
+    "commonsTitle": "Seized ivory slated for destruction in the crush. (10843354356).jpg",
+    "artist": "USFWS Mountain-Prairie",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seized_ivory_slated_for_destruction_in_the_crush._(10843354356).jpg"
   }
 ]

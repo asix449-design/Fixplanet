@@ -1,11 +1,139 @@
 [
   {
+    "file": "y0001-schematic.png",
+    "title": "1 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Hand-authored Old-World washes. Americas/Oceania unmapped. Method: docs/religion-pilot-method.md."
+  },
+  {
+    "file": "y0100.png",
+    "title": "100 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Trajan still pagan. Christian urban dots only. Americas unmapped."
+  },
+  {
+    "file": "y0200.png",
+    "title": "200 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Official pagan Rome; Christian urban hatch; optional Manichaean hatch. Americas unmapped."
+  },
+  {
+    "file": "y0300.png",
+    "title": "300 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Eve of Constantine — majority pagan; Christianity as eastern urban minority, not empire fill. Americas unmapped."
+  },
+  {
+    "file": "y0400.png",
+    "title": "400 CE religion schematic (Fix Planet pilot)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Post-Theodosius Christian expansion in cities/elites; rural pagan hatch remains. Not all-Europe Christian. Americas unmapped."
+  },
+  {
+    "file": "y0500.png",
+    "title": "500 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Christian fill across much of the former Roman world; rural pagan hatch; Zoroastrian Iran; no Islam. Americas/Oceania unmapped."
+  },
+  {
+    "file": "y0600-schematic.png",
+    "title": "600 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Wider Christian Mediterranean belt; Zoroastrian Iran; no Islamic empire wash. y0600.png remains the Christianity-to-600 process companion. Americas unmapped."
+  },
+  {
+    "file": "y0700.png",
+    "title": "700 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "First wide Umayyad Islamic belt including Libya. No on-image legend. y0600.png process companion untouched. Americas unmapped."
+  },
+  {
+    "file": "y0800.png",
+    "title": "800 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Abbasid Islamic belt, fuller east; stronger Carolingian Christian west. No on-image legend. Americas unmapped."
+  },
+  {
+    "file": "y0900.png",
+    "title": "900 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Abbasid-successor belt; stronger Buddhist Southeast Asia; no deep Sahel Islam. Americas unmapped."
+  },
+  {
+    "file": "y1000.png",
+    "title": "1000 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Maghreb–Libya–Egypt–Near East belt); Christian Europe expanding; Americas unmapped."
+  },
+  {
+    "file": "y1100.png",
+    "title": "1100 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam major belt; Christian West + Crusader Levant edge; Americas unmapped."
+  },
+  {
+    "file": "y1200.png",
+    "title": "1200 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam major belt; Christian Baltics/north fringe; Americas unmapped."
+  },
+  {
+    "file": "y1300.png",
+    "title": "1300 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Mamluk Egypt–Syria, Maghreb–Libya, Anatolia fringe, Granada pocket); Americas indigenous local traditions (Aztec Mesoamerica + Andes + other)."
+  },
+  {
+    "file": "y1400.png",
+    "title": "1400 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Timur zone + Ottoman Anatolia majority + Granada pocket); Balkans mostly Christian; Americas indigenous local traditions (Aztec + Inca + other)."
+  },
+  {
+    "file": "y1500.png",
+    "title": "1500 CE religion schematic (Fix Planet)",
+    "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
+    "url": "https://github.com/aourednik/historical-basemaps",
+    "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; no Granada; Anatolia ~Muslim Ottoman; Balkans mostly Christian; Americas Aztec+Inca local traditions + light Christian colonial edge."
+  },
+  {
     "file": "y0001.png",
     "title": "Principales religions de l’ancien monde (Planche VI)",
     "source": "Élisée Reclus, L’Homme et la Terre (1905)",
     "url": "https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png",
     "license": "Public domain",
-    "note": "1905 scholarly reconstruction of ancient Old-World religions. Not a year-1 survey. Americas and Oceania are off the sheet. Seas recolored toward the Borders atlas palette; religion fills unchanged."
+    "note": "Museum companion for year 1 — not the schematic shelf card. 1905 scholarly reconstruction of ancient Old-World religions. Seas recolored toward the Borders atlas palette; religion fills unchanged."
   },
   {
     "file": "y0600.png",
@@ -13,7 +141,7 @@
     "source": "Geuiwogbil after Atlas of World History; Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Spread_of_Christianity_to_AD_600_-_Atlas_of_World_History.png",
     "license": "CC BY-SA 3.0",
-    "note": "Process map of one tradition in Afro-Eurasia. Not a census of all religions."
+    "note": "Process companion of one tradition in Afro-Eurasia — not the 600 multi-religion schematic. Not a census of all religions."
   },
   {
     "file": "y0820.png",
@@ -32,12 +160,12 @@
     "note": "Regional plate only. Rest of the world is a labeled gap."
   },
   {
-    "file": "y1500.png",
+    "file": "y1500-spread.png",
     "title": "Spread of world religions until 1500",
     "source": "Fährtenleser, Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Medieval-World-Religions.png",
     "license": "CC BY-SA 4.0",
-    "note": "Cumulative process map to 1500, not a year-by-year snapshot."
+    "note": "Cumulative process map to 1500, not a year-by-year snapshot. Kept for unpublished later steps after the 1500 schematic took y1500.png."
   },
   {
     "file": "y1821.jpg",

@@ -158,7 +158,7 @@ export const lv: Record<string, GeoCopy> = {
     lessons:
       'NDVI nav mežs. Monokultūras apses ir sausuma likme. Vējiaizsargjosla var nogriezt smiltis un tomēr rakt ūdensnesēju. Skaitiet izdzīvojušo, noderīgo segumu — un kas zaudēja ganības —, ne tikai izsniegtos stādus.',
     sourcesNote:
-      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 par programmu līdz 2022.; Sun et al. 2018 par Populus simonii nokalšanu.',
+      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 par programmu līdz 2022.',
   },
   'africa-great-green-wall': {
     title: 'Lielā zaļā siena (Āfrika)',
@@ -172,11 +172,11 @@ export const lv: Record<string, GeoCopy> = {
     construction:
       'Nacionālās programmas atšķiras. Etiopija ziņo lielus stādu skaitļus; Senegālai ir labāk dokumentēti lauki; vairākām valstīm ir plāns monitorings. UNCCD 2020. gada statusa ziņojums lika atjaunoto platību kārtībā 4 miljonus hektāru (ap 4 procentiem no 100 miljonu mērķa) ar nevienmērīgiem izdzīvošanas datiem. 2021. «Paātrinātājs» solīja jaunas finanses; izmaksas atpalika no solījumiem.',
     outcome:
-      '2024. gada jūnijā iepriekšējās ANO pārtuksnešošanās COP prezidents Reuters teica, ka atjaunoti ap 30 miljoniem hektāru — 30 procenti no 2030. mērķa — un ka termiņš tiks nokavēts. Izdzīvošanas rādītāji joprojām slikti un nekonsekventi monitorēti ārpus dažām valstīm. Vēlākos brīfingos apgalvotas trīs miljoni darbavietu; darbavietas un hektārus uzskatiet par programmas skaitļiem, ne lauka tautas skaitīšanu.',
+      'Vēlāki programmas brīfingi minējuši kārtībā 30 miljonus atjaunotu hektāru — ap 30 procentiem no 2030. mērķa — un teikuši, ka termiņš tiks nokavēts. Izdzīvošanas rādītāji joprojām slikti un nekonsekventi monitorēti ārpus dažām valstīm. Vēlākos brīfingos apgalvotas trīs miljoni darbavietu; darbavietas un hektārus uzskatiet par programmas skaitļiem, ne lauka tautas skaitīšanu.',
     lessons:
       'Siena bija nepareiza metafora nokrišņu gradientam. Atjaunošana, kas maksā vietējiem lietotājiem, dzīvo ilgāk nekā ceremoniāla stādīšana. Nevienādojiet «ziņotos hektārus» ar «kokiem, kas dzīvi 2030. gadā». Finanses, kas solītas un nav iztērētas, nav vainags.',
     sourcesNote:
-      'UNCCD 2020. īstenošanas statuss; UNCCD GGW lapas; Reuters 2024. gada 12. jūnijs par ~30 miljoniem ha un nokavēto 2030. ceļu.',
+      'UNCCD Great Green Wall iniciatīvas lapas; UNCCD 2020. īstenošanas statuss un ceļš uz 2030.',
   },
   'saudi-green-initiative': {
     title: 'Saūda zaļā iniciatīva',
@@ -190,11 +190,47 @@ export const lv: Record<string, GeoCopy> = {
     construction:
       'Stādīšanas un «rehabilitācijas» kampaņas notiek caur MEWA un National Center for Vegetation Cover. Amatpersonas teica, ka rehabilitētā platība no 18 000 hektāru sākumā pieauga līdz 250 000 līdz 2024. un 1 miljonam 2026. gada sākumā, ar 159 miljoniem iestādītu koku. Tie ir valdības un SPA skaitļi, ne trešās puses stumbru skaitīšana. Minēts 2030. starpmērķis 2,5 miljoni hektāru.',
     outcome:
-      'Ja oficiālais miljons hektāru iztur auditu, tas ir 2,5 procenti no 40 miljonu hektāru saukļa — sākums, ne pabeigta Arābijas apzaļumošana. Neatkarīgā literatūra joprojām uzsver vecāko, labāk izmērīto stāstu: gadu desmitiem kvieši uz neatjaunojamiem ūdensnesējiem, vēlāk samazināti (tostarp kviešu noņemšana 2010. gadu vidū), jo ūdens neatgriezās. Atsāļošana galvenokārt kalpo pilsētām; tā nepadara graudu apūdeņošanu lētu. SGI pašu koku ūdens pieprasījums ir dzīvs pētniecības jautājums (KAPSARC un citi).',
+      'Ja oficiālais miljons hektāru iztur auditu, tas ir 2,5 procenti no 40 miljonu hektāru saukļa — sākums, ne pabeigta Arābijas apzaļumošana. Neatkarīgā literatūra joprojām uzsver vecāko, labāk izmērīto stāstu: gadu desmitiem kvieši uz neatjaunojamiem ūdensnesējiem, vēlāk samazināti (tostarp kviešu noņemšana 2010. gadu vidū), jo ūdens neatgriezās. Atsāļošana galvenokārt kalpo pilsētām; tā nepadara graudu apūdeņošanu lētu. SGI pašu koku ūdens pieprasījums ir dzīvs pētniecības jautājums.',
     lessons:
       'Turiet programmas atsevišķi: SGI ≠ apļu kvieši ≠ NEOM. Ticiet iestādīto-un-izdzīvojušo skaitļiem, kad lauki ir publiski. Tuksnesī var būt parki un tomēr izrakts ūdensnesējs zem tiem. Desmit miljardi koku ir mērķis. Viens miljons hektāru, ja īsts, ir pirmais pieaugums.',
     sourcesNote:
-      'SGI oficiālā vietne; MEWA/SPA 2026. pagrieziena punkta apgalvojums; KAPSARC par lauksaimniecības ūdeni un SGI pieprasījumu; FAO AQUASTAT pazemes ūdeņu un kviešu kontekstam. Apļu foto ir vēsturiskā apūdeņošana, tā arī parakstīta.',
+      'Vision 2030 Saudi Green Initiative lapa; MEWA/SPA 2026. pagrieziena punkta apgalvojums; FAO AQUASTAT pazemes ūdeņu un kviešu kontekstam. Apļu foto ir vēsturiskā apūdeņošana, tā arī parakstīta.',
+  },
+  'loess-plateau-rehabilitation': {
+    title: 'Lesa plato rehabilitācija',
+    hook: 'Pasaules Bankas atbalstīti sateces baseinu darbi Ķīnas Lesa plato (1990.–2000. gadi): terases, veģetācija, ganīšanas noteikumi — erozijas kontrole un iztika, ne otrs «zaļās sienas» sauklis.',
+    imageAlt:
+      'Terasēti lesa pauguri Šaņsi — slīpuma-uz-terasi darba klase, ko finansēja Pasaules Bankas projekti, ne pierādījums, ka viss plato ir apzaļumots',
+    jurisdiction: 'Ķīnas Tautas Republika (Šaņsi, Šaaņsi, Gaņsu, Iekšējā Mongolija — Dzeltenās upes pieteku baseini)',
+    yearStatus:
+      'I kārta (P003608) sākta 1994. gada oktobrī, pabeigta 2002. II kārta (P056216) apstiprināta 1999. gada maijā, slēgta 2005. gada jūnijā. Statuss: daļējs — Pasaules Bankas kārtas ir slēgtas; plato nav «pabeigts».',
+    plan: 'Pasaules Bankas 2004. gada gadījuma pētījums liek galveno mērķi: celt lauksaimniecības produkciju un ienākumus 1 560 000 hektāros deviņos Dzeltenās upes pieteku baseinos, 21–22 nabadzīgos apriņķos Šaņsi, Šaaņsi, Gaņsu un Iekšējā Mongolijā. Otrs mērķis — mazāk nogulumu Dzeltenajā upē. Pakete: terases un maza apūdeņošana; koki, krūmi un dārzi nogāzēs; zālāji; nogulumu aizsprosti; ciemu zemes plāni; un ap darbiem — brīvās aitu un kazu ganīšanas ierobežojumi. I kārta bija IDA kredīts 150 miljoni dolāru pret ap 250 miljoniem kopā (ap 160 dolāriem uz hektāru tajā rakstā). Tā ir sateces baseinu rehabilitācija, ne stādīta «zaļā siena» no Siņdzjanas līdz jūrai.',
+    construction:
+      'Tas pats 2004. gada raksts uzskaita uzbūvēto: ap 90 500 hektāru terašu; desmitiem tūkstošu hektāru koku, krūmu, saimniecisko koku un dārzu; ap 100 000 hektāru zālāju; 149 galvenie aizsprosti, 1140 sanesumu aizsprosti un 1956 slūžas; un ap 7100 hektāru apūdeņošanas, galvenokārt sausajā Iekšējā Mongolijā. Sausums lika pārstādīt daļu koku. Ganīšanas aizliegumi izplatījās no projekta laukiem uz dažiem apkārtējiem apriņķiem — politikas maiņa, ko autori uzskata par projekta efektu, ne atsevišķu kredīta rindu. Otrs Pasaules Bankas projekts (P056216) turpināja to pašu darbu klasi un slēdzās 2005.',
+    outcome:
+      '2004. gada pētījums ziņo: graudi projekta zonā no 427 000 līdz ap 700 000 tonnām, augļi no 80 000 līdz 345 000 tonnām, lauksaimnieka tīrie ienākumi uz galvu no 360 līdz 1263 juaņām, cilvēku daļa zem oficiālās nabadzības līnijas no 59 procentiem (1993) līdz 27 procentiem (2001), labums pieteikts vairāk nekā 1,2 miljoniem lauksaimnieku. Uzskati tos par Pasaules Bankas / projekta skaitļiem, ne neatkarīgu lauka tautas skaitīšanu. Lesa plato kopumā ir ap 640 000 km²; I kārtas zona bija ap 15 500 km². Vēlākās nacionālās programmas turpināja strādāt plato. Tās nav šis aizdevums un nav pabeigta apzaļumošana.',
+    lessons:
+      'Terases, līgumi un ganīšanas noteikumi var celt ražu un griezt nogulumus apstrādātos baseinos, nebūdami saukļa siena. Skaiti izdzīvojušo segumu un kam paliek zeme — ne izsniegtos stādus. Slēgts Pasaules Bankas projekts nav Dzeltenās upes erozijas beigas. Neliec šo kartīti zem trim ziemeļiem vai Āfrikas Lielās zaļās sienas.',
+    sourcesNote:
+      'Pasaules Bankas 2004. gada Šanhajas gadījuma pētījuma PDF (I kārtas rezultāti); projektu lapas P003608 (1994–2002) un P056216 (apstiprināts 1999, slēgts 2005).',
+  },
+  'jordan-badia-restoration': {
+    title: 'Badijas atjaunošana (Jordānija)',
+    hook: 'Kompensācija par kaitējumu pēc kara Līcī apmaksāja Jordānas Badijas sauso ganību remontu — mikroūdenskrātuves, dīķi, vietējie lopbarības krūmi un atpūtinātas ganības: kopienas ganīšanas noteikumi, ne koku josla pāri Āzijai.',
+    imageAlt:
+      'Balanda (Atriplex) Baltajā tuksnesī / Vadi Dahekā ziemeļaustrumu Jordānijā — vietējo lopbarības krūmu klase, ko stāda Badijas atjaunošana, ne nosaukta UNCC lauka foto',
+    jurisdiction: 'Jordānas Hāšimītu Karaliste (Badijas ganības)',
+    yearStatus:
+      'UNCC izmaksā pēc prasības 5000304; Community Action Plan iesniegts 2013. Sateces baseinu darbi un ganīšanas noteikumi 2010.–2020. gados. Statuss: daļējs — kompensācijas programma, ne pabeigta «zaļā siena».',
+    plan: 'UNCC prasība 5000304 finansēja kooperatīvu ganību atjaunošanu Jordānas Badijā pēc kompensācijām par kara Līcī vides kaitējumu. Nacionālais kontaktpunkts 2013. iesniedza Community Action Plan (CAP); plāns pieņemts Follow-up Programme for Environmental Awards ietvaros. CAP mērķē degradētus Badijas sateces baseinus: ūdens ievākšana (dīķi, zemes dambji, kontūrborēšana), vietējo lopbarības krūmu stādīšana, pārvaldīta ganīšana / atpūta un kopienas lopbarības ražošana. Labākajā scenārijā plānoja atjaunot kārtībā 10% Badijas (~7100 km²) ar izvēlētiem baseiniem — ne nepārtrauktu iestādītu sienu.',
+    construction:
+      'Vides ministrijas programmas vienība 2010. gados; UNCC follow-up uzraudzība nodota Jordānijai pēc Pārvaldības padomes lēmumiem 2013.–2014. ICARDA un partneri: mehanizētas mikroūdenskrātuves (piemēram, Vallerani), vietējo krūmu stādīšana, baseini kā Al Madžidija. CAP plānošanā divpadsmit sateces baseini; izpilde nevienmērīga pa baseiniem. Tā ir ganību rehabilitācija, ne Āfrikas Lielā zaļā siena un ne Ķīnas Trīs ziemeļu vējiaizsargjosla.',
+    outcome:
+      'Pārmērīgas ganīšanas stimuli paliek; izdzīvošana un monitoringa kvalitāte atšķiras; ilglaicīga atpūta prasa kopienas piekrišanu, kad kompensācijas uzraudzība kļūst plānāka. Oficiālos hektārus uzskatiet par programmas mērķiem zem audita, ne pabeigtu tuksneša apzaļumošanu.',
+    lessons:
+      'Kompensācija var apmaksāt kontūrbedres un tomēr atstāt pārmērīgas ganīšanas stimulus. Izvēlēts sateces baseins nav zaļā siena. Skaitiet izdzīvojušos krūmus un atpūtinātās ganības pie kopienas noteikumiem — ne prasības dolārus vai mērķa hektārus. 10 procentu Badijas skaitlis ir plānošanas griesti, ne gatavs vainags.',
+    sourcesNote:
+      'UNCC prasība 5000304 par kooperatīvu ganību atjaunošanu; UNCC Follow-up Programme for Environmental Awards; ICARDA par Badijas sateces baseinu atjaunošanu.',
   },
   'stratospheric-aerosol-injection': {
     title: 'Stratosfēras aerosolu ievadīšana',
@@ -230,7 +266,7 @@ export const lv: Record<string, GeoCopy> = {
     lessons:
       'Zaļš satelīta virpulis nav sekvestrēts ogleklis. Mērījums ir eksports un uzturēšanās laiks. Tiesiskais noklusējums atklātajā jūrā ir nē. Atstājiet šo kartīti pētījumu plauktā.',
     sourcesNote:
-      'IMO London Convention/Protocol okeāna mēslošanas lapas; Boyd un citi par IronEx/SOIREE (Nature 2000); Martin et al. 2013 par LOHAFEX eksportu; 2012. pušu paziņojums caur IMO materiāliem.',
+      'Boyd un citi par IronEx/SOIREE (Nature 2000); Martin et al. 2013 par LOHAFEX eksportu.',
   },
   'marine-cloud-brightening': {
     title: 'Jūras mākoņu gaišināšana',
@@ -249,5 +285,67 @@ export const lv: Record<string, GeoCopy> = {
       'Kuģa pēda ir pavediens, ne klimata politika. Vietējiem rifu ēnošanas eksperimentiem jāpaliek parakstītiem kā eksperimentiem. Nepārdodiet MCB kā veidu turpināt emitēt. Ja pilsēta var slēgt izmēģinājumu, jums nav planetāras tehnoloģijas — jums ir strīdīgs instruments.',
     sourcesNote:
       'Latham et al. 2012 Philosophical Transactions pārskats; Vašingtonas universitātes MCB programma; RRAP Cooling and Shading programmas lapas.',
+  },
+  'cirrus-cloud-thinning': {
+    title: 'Cirrus mākoņu retināšana',
+    hook: 'Iesēt augstos ledus mākoņus, lai tie kļūtu plānāki un laidītu vairāk siltuma kosmosā. Modeļi atšķiras; IPCC zema pārliecība par atdzišanu. Tas nav SAI ar citu vārdu.',
+    imageAlt:
+      'MODIS attēls ar augstiem cirrus mākoņiem virs Klusā okeāna un centrālās Čīles — dabiski ledus mākoņi, ne retināšanas eksperiments',
+    jurisdiction: 'Pētniecības kopiena (modeļi; bez operatīvas valsts izvēršanas)',
+    yearStatus:
+      'Cirrus cloud thinning (CCT); IPCC AR6 WG I; atsevišķi no SAI un MCB NOAA SRM pārskatā (2024. gada jūlijs). Statuss: pētījums.',
+    plan: 'Pievieno ledus nukleācijas kodolus aukstiem cirrus mākoņiem: kristāli lielāki, ātrāk krīt, mākonis plānāks — vairāk izejošā garo viļņu starojuma.',
+    construction: 'Modeļi un mikrofizikas raksti; nav nacionālas flotes. IPCC — zema pārliecība.',
+    outcome: 'Modeļi atšķiras; IPCC zema pārliecība par atdzišanu.',
+    lessons:
+      'Neizņem CO₂ un neārstē okeāna paskābināšanos. Nekartē kā gatavu termostatu un nejauc ar SAI/MCB.',
+    sourcesNote:
+      'IPCC AR6 WG I, 4. nodaļa (un PDF); NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (2024. gada jūlijs); Gasparini et al., ACP 2017.',
+  },
+  'surface-albedo-modification': {
+    title: 'Virsmas albedo paaugstināšana',
+    hook: 'Gaišāki jumti un ceļi — ielas vēsākas, mazāk kondicionēšanas. Tas nav globāls aptumšotājs: pilsētas ir apmēram viens procents Zemes virsmas.',
+    imageAlt:
+      'Baltie jumti un terases Santorīnē — Vidusjūras gaišā tradīcija, ne planētas albedo programma',
+    jurisdiction: 'Pilsētas, ēkas un zemes seguma priekšlikumi (bez planētas programmas)',
+    yearStatus:
+      'Surface albedo enhancement (vēsie jumti, gaišie segumi); NOAA SRM SoS (2024. gada jūlijs); EPA par pilsētas siltumu; IPCC AR6 WG III, ēkas. Statuss: pētījums / vietējā prakse.',
+    plan: 'Paaugstina jumtu/segumu atstarošanu; EPA — rīks pret pilsētas siltuma salu.',
+    construction: 'Parasta būvniecības prakse karstās pilsētās; planētas programmas nav.',
+    outcome: 'Tas nav globāls aptumšotājs: pilsētas ir apmēram viens procents Zemes virsmas.',
+    lessons:
+      'Ziemas sods aukstā klimatā; neizņem CO₂; nepārdot balto jumtu kā planētas ģeoengineeringu.',
+    sourcesNote:
+      'EPA — Using Cool Roofs to Reduce Heat Islands; IPCC AR6 WG III, 9. nodaļa (ēkas, PDF); NOAA CSL SRM SoS (2024. gada jūlijs); NASEM Reflecting Sunlight.',
+  },
+  'ocean-alkalinity-enhancement': {
+    title: 'Okeāna sārmainības paaugstināšana',
+    hook: 'Pievienot sārmainību, lai ūdens turētu vairāk CO₂ kā bikarbonātu. Ķīmija, ne dzelzs «planktona sēšana». Joprojām pētījums.',
+    imageAlt:
+      'NOAA MAP-CO2 okeāna paskābināšanās pētījumu boja pie Cayo Enrique rifa, Puertoriko — karbonātu ķīmijas monitorings, ne OAE izvēršana',
+    jurisdiction: 'Pētniecības grupas / mCDR izmēģinājumi ar NOAA atbalstu (bez komerciālas planētas licences)',
+    yearStatus:
+      'Ocean alkalinity enhancement (OAE); National Academies okeāna CDR stratēģija; NOAA OAP pārskats; NOPP granti. Statuss: pētījums.',
+    plan: 'Paaugstina jūras ūdens sārmainību (minerāli vai elektroķīmija) → lielāka CO₂ uzņemšana. Nejauc ar dzelzs mēslošanu.',
+    construction: 'Laboratorijas, modeļi, agrīni lauka izmēģinājumi; nav gatavs klimata pakalpojums.',
+    outcome: 'Ķīmija, ne dzelzs «planktona sēšana». Joprojām pētījums.',
+    lessons: 'Dzīves cikls, ekoloģija, monitorings. Neaizstāj emisiju samazināšanu.',
+    sourcesNote:
+      'NOAA Ocean Acidification Program — Carbon Dioxide Removal; NOAA / NOPP mCDR granti; National Academies okeāna CDR stratēģija; NOAA Zinātnes padomdevējas padomes CDR stratēģijas melnraksts.',
+  },
+  'glacial-climate-intervention': {
+    title: 'Ledāju klimata iejaukšanās',
+    hook: 'Palēnināt ledāju sabrukumu ar dibena aizkariem, bazālo hidroloģiju vai ziemas ledus sabiezināšanu — uz papīra. Nav uzbūvēts mūris Antarktīdai.',
+    imageAlt:
+      'Tveitsa šelfa ledāja atnešanās fronte, Amundsena jūra, NASA IceBridge foto — ledus klase, par ko runā 2024. gada pētniecības vīzija, ne uzbūvēts dibena aizkars',
+    jurisdiction: 'Pētniecības vīzija (glacioloģija / polārie priekšlikumi; bez izvērstas programmas)',
+    yearStatus:
+      'Glacial Climate Intervention research vision (2024); augsto platuma grādu intervenču apskats Climatic Change (2024). Statuss: pētījums / spekulatīvi.',
+    plan: 'Vietēja inženierija pie ledājiem un jūras ledus (aizkari, bazālie pasākumi, sūkņi), ne Saules aptumšošana.',
+    construction: 'Baltās grāmatas un modeļi; 2024. gada apskats — daudzas idejas vāji gatavas.',
+    outcome: 'Uz papīra. Nav uzbūvēts mūris Antarktīdai.',
+    lessons: 'Ekosistēmas, pamatiedzīvotāju tiesības, loģistika. Emisiju samazināšana — galvenais sviras.',
+    sourcesNote:
+      'Glacial Climate Intervention: A Research Vision (2024, PDF caur AWI EPIC); Moore et al. 2024 apskats Climatic Change; NOAA CSL SRM SoS.',
   },
 };

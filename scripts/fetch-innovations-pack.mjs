@@ -90,6 +90,28 @@ const candidates = {
     'Surface weather analysis.jpg',
     'GOES-16 ABI Full Disk (32440453126).jpg',
   ],
+  'vesuvius-challenge': [
+    'Herculaneum papyri.jpg',
+    'PHerc. Paris 4.webp',
+    'Herculanean Rolls - Papyrus 157-152.JPG',
+  ],
+  'edna-biodiversity-monitoring': [
+    'EDNA Water Sampling (36024122736).jpg',
+    'Extracting total DNA from environmental DNA water filter samples collected in the field. (48789082022).jpg',
+  ],
+  'marine-litter-satellite': [
+    '004 Beach pollution in Tenerife - Atlantic Ocean beach plastic garbage debris.jpg',
+    'Ocean pollution 04.jpg',
+    'Water Pollution with Trash Disposal of Waste at the Garbage Beach.jpg',
+  ],
+  'encore-nature-risk': [
+    'Aerial view of the Amazon Rainforest.jpg',
+    'Vista aérea del delta del Okavango, Botsuana, 2018-08-01, DD 39.jpg',
+  ],
+  'nasa-pace': [
+    'PACE Observes Namesake Plankton, Aerosols, Clouds and Ocean Ecosystem (SVS31294 - hyperw PACE OCI 2024040820240408).png',
+    'OCI Installed to PACE Spacecraft (GSFC 20221121 PACE 081520) (cropped).jpeg',
+  ],
 };
 
 async function commonsInfo(title) {
@@ -164,6 +186,11 @@ const searchFallback = {
   'form-energy-ireland': 'battery energy storage containers',
   'weathernext-3': 'GOES full disk Earth',
   'ecmwf-aifs': 'weather forecast map synoptic',
+  'vesuvius-challenge': 'Herculaneum papyri carbonized scroll',
+  'edna-biodiversity-monitoring': 'environmental DNA water sampling',
+  'marine-litter-satellite': 'plastic beach litter ocean',
+  'encore-nature-risk': 'amazon rainforest aerial river',
+  'nasa-pace': 'NASA PACE ocean color satellite',
 };
 
 await mkdir(outDir, { recursive: true });

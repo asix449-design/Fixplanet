@@ -4,6 +4,90 @@ import {
   type BorderFrameMeta,
 } from '../data/border-history';
 import type { Locale } from './config';
+import year1En from './border-essays/year-1-en.md?raw';
+import year1Lv from './border-essays/year-1-lv.md?raw';
+import year1Pl from './border-essays/year-1-pl.md?raw';
+import year1Ru from './border-essays/year-1-ru.md?raw';
+import year100En from './border-essays/year-100-en.md?raw';
+import year100Lv from './border-essays/year-100-lv.md?raw';
+import year100Pl from './border-essays/year-100-pl.md?raw';
+import year100Ru from './border-essays/year-100-ru.md?raw';
+import year200En from './border-essays/year-200-en.md?raw';
+import year200Lv from './border-essays/year-200-lv.md?raw';
+import year200Pl from './border-essays/year-200-pl.md?raw';
+import year200Ru from './border-essays/year-200-ru.md?raw';
+import year300En from './border-essays/year-300-en.md?raw';
+import year300Lv from './border-essays/year-300-lv.md?raw';
+import year300Pl from './border-essays/year-300-pl.md?raw';
+import year300Ru from './border-essays/year-300-ru.md?raw';
+import year400En from './border-essays/year-400-en.md?raw';
+import year400Lv from './border-essays/year-400-lv.md?raw';
+import year400Pl from './border-essays/year-400-pl.md?raw';
+import year400Ru from './border-essays/year-400-ru.md?raw';
+import year500En from './border-essays/year-500-en.md?raw';
+import year500Lv from './border-essays/year-500-lv.md?raw';
+import year500Pl from './border-essays/year-500-pl.md?raw';
+import year500Ru from './border-essays/year-500-ru.md?raw';
+import year600En from './border-essays/year-600-en.md?raw';
+import year600Lv from './border-essays/year-600-lv.md?raw';
+import year600Pl from './border-essays/year-600-pl.md?raw';
+import year600Ru from './border-essays/year-600-ru.md?raw';
+import year700En from './border-essays/year-700-en.md?raw';
+import year700Lv from './border-essays/year-700-lv.md?raw';
+import year700Pl from './border-essays/year-700-pl.md?raw';
+import year700Ru from './border-essays/year-700-ru.md?raw';
+import year800En from './border-essays/year-800-en.md?raw';
+import year800Lv from './border-essays/year-800-lv.md?raw';
+import year800Pl from './border-essays/year-800-pl.md?raw';
+import year800Ru from './border-essays/year-800-ru.md?raw';
+import year900En from './border-essays/year-900-en.md?raw';
+import year900Lv from './border-essays/year-900-lv.md?raw';
+import year900Pl from './border-essays/year-900-pl.md?raw';
+import year900Ru from './border-essays/year-900-ru.md?raw';
+import year1000En from './border-essays/year-1000-en.md?raw';
+import year1000Lv from './border-essays/year-1000-lv.md?raw';
+import year1000Pl from './border-essays/year-1000-pl.md?raw';
+import year1000Ru from './border-essays/year-1000-ru.md?raw';
+import year1100En from './border-essays/year-1100-en.md?raw';
+import year1100Lv from './border-essays/year-1100-lv.md?raw';
+import year1100Pl from './border-essays/year-1100-pl.md?raw';
+import year1100Ru from './border-essays/year-1100-ru.md?raw';
+import year1200En from './border-essays/year-1200-en.md?raw';
+import year1200Lv from './border-essays/year-1200-lv.md?raw';
+import year1200Pl from './border-essays/year-1200-pl.md?raw';
+import year1200Ru from './border-essays/year-1200-ru.md?raw';
+import year1300En from './border-essays/year-1300-en.md?raw';
+import year1300Lv from './border-essays/year-1300-lv.md?raw';
+import year1300Pl from './border-essays/year-1300-pl.md?raw';
+import year1300Ru from './border-essays/year-1300-ru.md?raw';
+import year1400En from './border-essays/year-1400-en.md?raw';
+import year1400Lv from './border-essays/year-1400-lv.md?raw';
+import year1400Pl from './border-essays/year-1400-pl.md?raw';
+import year1400Ru from './border-essays/year-1400-ru.md?raw';
+import year1500En from './border-essays/year-1500-en.md?raw';
+import year1500Lv from './border-essays/year-1500-lv.md?raw';
+import year1500Pl from './border-essays/year-1500-pl.md?raw';
+import year1500Ru from './border-essays/year-1500-ru.md?raw';
+import year1600En from './border-essays/year-1600-en.md?raw';
+import year1600Lv from './border-essays/year-1600-lv.md?raw';
+import year1600Pl from './border-essays/year-1600-pl.md?raw';
+import year1600Ru from './border-essays/year-1600-ru.md?raw';
+import year1700En from './border-essays/year-1700-en.md?raw';
+import year1700Lv from './border-essays/year-1700-lv.md?raw';
+import year1700Pl from './border-essays/year-1700-pl.md?raw';
+import year1700Ru from './border-essays/year-1700-ru.md?raw';
+import year1800En from './border-essays/year-1800-en.md?raw';
+import year1800Lv from './border-essays/year-1800-lv.md?raw';
+import year1800Pl from './border-essays/year-1800-pl.md?raw';
+import year1800Ru from './border-essays/year-1800-ru.md?raw';
+import year1900En from './border-essays/year-1900-en.md?raw';
+import year1900Lv from './border-essays/year-1900-lv.md?raw';
+import year1900Pl from './border-essays/year-1900-pl.md?raw';
+import year1900Ru from './border-essays/year-1900-ru.md?raw';
+import year2000En from './border-essays/year-2000-en.md?raw';
+import year2000Lv from './border-essays/year-2000-lv.md?raw';
+import year2000Pl from './border-essays/year-2000-pl.md?raw';
+import year2000Ru from './border-essays/year-2000-ru.md?raw';
 
 export type BorderHistoryPage = {
   metaTitle: string;
@@ -19,6 +103,14 @@ export type BorderHistoryPage = {
   yearLabel: string;
   mapYearLabel: string;
   nearestNote: string;
+  play: string;
+  pause: string;
+  stop: string;
+  playAria: string;
+  pauseAria: string;
+  stopAria: string;
+  rateLabel: string;
+  noVoice: string;
   coverage: Record<BorderCoverage, string>;
   catalogTitle: string;
   catalogHook: string;
@@ -31,6 +123,11 @@ export type BorderFrameCopy = {
   title: string;
   caption: string;
   imageAlt: string;
+  /** Optional long-form markdown (paragraphs, ### headings, bold/italic). */
+  essay?: string;
+  sourceShort?: string;
+  sourceOrg?: string;
+  license?: string;
 };
 
 const pageEn: BorderHistoryPage = {
@@ -50,6 +147,14 @@ const pageEn: BorderHistoryPage = {
   yearLabel: 'Century step',
   mapYearLabel: 'Map dated',
   nearestNote: 'Nearest openly licensed map — not an exact year sheet.',
+  play: 'Play',
+  pause: 'Pause',
+  stop: 'Stop',
+  playAria: 'Read this century aloud',
+  pauseAria: 'Pause reading',
+  stopAria: 'Stop reading',
+  rateLabel: 'Speed',
+  noVoice: 'No matching voice in this browser',
   coverage: {
     world: 'World reconstruction',
     'eastern-hemisphere': 'Eastern Hemisphere only — the Americas are a gap on this sheet',
@@ -81,6 +186,14 @@ const pageRu: BorderHistoryPage = {
   yearLabel: 'Шаг века',
   mapYearLabel: 'Дата карты',
   nearestNote: 'Ближайшая открытая карта — не точный лист на круглый год.',
+  play: 'Слушать',
+  pause: 'Пауза',
+  stop: 'Стоп',
+  playAria: 'Прочитать это столетие вслух',
+  pauseAria: 'Приостановить чтение',
+  stopAria: 'Остановить чтение',
+  rateLabel: 'Темп',
+  noVoice: 'В этом браузере нет подходящего голоса',
   coverage: {
     world: 'Мировая реконструкция',
     'eastern-hemisphere': 'Только Восточное полушарие — Америка на этом листе отсутствует',
@@ -111,6 +224,14 @@ const pagePl: BorderHistoryPage = {
   yearLabel: 'Krok stulecia',
   mapYearLabel: 'Data mapy',
   nearestNote: 'Najbliższa mapa na otwartej licencji — nie dokładny arkusz z okrągłego roku.',
+  play: 'Odtwórz',
+  pause: 'Pauza',
+  stop: 'Stop',
+  playAria: 'Przeczytaj to stulecie na głos',
+  pauseAria: 'Wstrzymaj czytanie',
+  stopAria: 'Zatrzymaj czytanie',
+  rateLabel: 'Tempo',
+  noVoice: 'Brak pasującego głosu w tej przeglądarce',
   coverage: {
     world: 'Rekonstrukcja światowa',
     'eastern-hemisphere': 'Tylko półkula wschodnia — Ameryki są luką na tym arkuszu',
@@ -141,6 +262,14 @@ const pageLv: BorderHistoryPage = {
   yearLabel: 'Gadsimta solis',
   mapYearLabel: 'Kartes datums',
   nearestNote: 'Tuvākā atklāti licencētā karte — ne precīza lapa uz apaļu gadu.',
+  play: 'Atskaņot',
+  pause: 'Pauze',
+  stop: 'Apturēt',
+  playAria: 'Nolasīt šo gadsimtu skaļi',
+  pauseAria: 'Pauzēt lasīšanu',
+  stopAria: 'Pārtraukt lasīšanu',
+  rateLabel: 'Temps',
+  noVoice: 'Šajā pārlūkā nav atbilstošas balss',
   coverage: {
     world: 'Pasaules rekonstrukcija',
     'eastern-hemisphere': 'Tikai Austrumu puslode — Amerika šajā lapā ir iztrūkums',
@@ -158,127 +287,166 @@ const captionsEn: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 CE — start of the Common Era',
     caption:
-      'Rome in the Mediterranean, Han China in East Asia, Parthia between them. The Americas and much of Oceania are not drawn as states. This is a reconstruction of known polities, not a survey of every people.',
+      'Year 1 CE — for people then, just another year from Rome\'s founding and the year of Emperor Ping; Augustus holds the Mediterranean, Han holds the Middle Kingdom; between them, silk and Parthia.',
+    essay: year1En,
     imageAlt: 'Reconstructed world political map for 1 CE, public-domain Wikimedia sheet',
   },
   100: {
     title: '100 CE',
     caption:
-      'The high Roman Empire, Kushan and Han worlds, and a still-open Afro-Eurasian interior. Lines are scholarly guesses about control, not fences on the ground.',
+      'The 2nd century — Rome\'s "golden age" from Trajan to Marcus Aurelius and the break at Commodus; the Antonine Plague; in China Eastern Han cracks by the end (Yellow Turbans).',
+    essay: year100En,
     imageAlt: 'Reconstructed world political map for 100 CE',
   },
   200: {
     title: '200 CE',
     caption:
-      'Rome, Parthia/Sasanian prelude, and Han China after a century of strain. Blank land is not empty — it is unmapped as a state on this sheet.',
+      'Year 200 — no longer a calm antique noon: the empires still stand, but something creaks inside. Septimius Severus\'s Rome after Parthian campaigns and plague; China on the eve of the Three Kingdoms after Guandu; Parthia living out its days until the Sasanians. Quieter outside than it seems.',
+    essay: year200En,
     imageAlt: 'Reconstructed world political map for 200 CE',
   },
   300: {
     title: '300 CE',
     caption:
-      'A late-antique Afro-Eurasia: a divided Roman world taking shape, Sasanian Iran, and successor states in China. Treat colours as claims, not censuses.',
+      'Year 300 — Diocletian\'s tetrarchy; Sasanians in Persia; Jin in China already gnawing itself; Christians numerous — in three years the Great Persecution begins.',
+    essay: year300En,
     imageAlt: 'Reconstructed world political map for 300 CE',
   },
   400: {
     title: '400 CE',
     caption:
-      'After 376 and before 476: migration-era Europe, a Sasanian plateau, Gupta India, and a fragmented China. Many “borders” here are war fronts.',
+      'Year 400 — already two empires: Honorius in the West, Arcadius in the East; Goths inside; ten years until Alaric in Rome; Christianity official since 380.',
+    essay: year400En,
     imageAlt: 'Reconstructed world political map for 400 CE',
   },
   500: {
     title: '500 CE',
     caption:
-      'Successor kingdoms in the west, Sasanian Iran, and Northern/Southern China. The map is a published reconstruction (CC BY-SA), not a treaty atlas.',
+      'Year 500 — Theodoric in Ravenna; Clovis\'s Franks already baptized; Constantinople hoards a treasury for Justinian; China is split, the north gathered by Northern Wei.',
+    essay: year500En,
     imageAlt: 'Reconstructed world political map for 500 CE',
   },
   600: {
     title: '600 CE — nearest map: 500',
     caption:
-      'No matching-style full-world political sheet for 600 in this atlas family. We show the 500 reconstruction and mark the century as a gap rather than paste a terrain map or invent Sui/Byzantine outlines.',
+      'Year 600 — already a medieval frame: no Western Roman Empire for over a century; in the east Rome still holds (Maurice), but in two years the world will jerk so hard it remaps half the board. Lombards in Italy, Franks in shreds, Sui has just gathered China; in Mecca still a quiet trading year.',
+    essay: year600En,
     imageAlt: 'World political reconstruction dated 500 CE, used for the 600 step',
   },
   700: {
     title: '700 CE',
     caption:
-      'Umayyad expansion, Tang China, and a post-Roman west. A world reconstruction of major states — still silent on most Indigenous polities.',
+      'Year 700 — the Islamic world is already the main power from the Atlantic almost to Central Asia: Umayyads in Damascus, Persia gone, Byzantium shrunk, China under the Tang (and Wu Zetian) on the rise. Europe — kingdoms and mayors of the palace; Gibraltar and Spain are within reach.',
+    essay: year700En,
     imageAlt: 'Reconstructed world political map for 700 CE',
   },
   800: {
     title: '800 CE — nearest map: 750',
     caption:
-      'No 800 CE world plate in the same flat atlas family. FamilyPedia’s 750 reconstruction (Umayyad, Tang, Frankish west) is the nearest matching-style sheet. A labeled gap, not an invented 800.',
+      'Year 800 is remembered for Christmas at Saint Peter’s: Pope Leo III crowns Charlemagne emperor of the West. Byzantium does not recognise it; Baghdad under Harun al-Rashid watches from the side. Three “centres” on one map — Aachen/Rome, Constantinople, Baghdad.',
+    essay: year800En,
     imageAlt: 'World political reconstruction dated 750 CE, used for the 800 step',
   },
   900: {
     title: '900 CE',
     caption:
-      'Fragmented caliphates, a new Byzantine recovery, and Five Dynasties China. Colours mark large named states, not every duchy or steppe confederation.',
+      'Year 900 — the Viking Age is not over yet, but the great empires are crumbling: the Carolingians are gone as a unity, the Tang are dying out, Baghdad rules more in name. On the fringes, Wessex, the Samanids, Oleg’s Rus, and the Magyars are gathering.',
+    essay: year900En,
     imageAlt: 'Reconstructed world political map for 900 CE',
   },
   1000: {
     title: '1000 CE — nearest map: 900',
     caption:
-      'No free 1000 CE world sheet in this atlas family. We show the 900 reconstruction and say so. Do not read it as a millennial snapshot.',
+      'Year 1000 — Otto III in Gniezno; Stephen king of Hungary; Kiev already baptised; Leif Erikson off the shore of Vinland; the end of the world does not come.',
+    essay: year1000En,
     imageAlt: 'World political reconstruction dated 900 CE, used for the 1000 step',
   },
   1100: {
-    title: '1100 CE — nearest map: 1200',
+    title: '1100 CE',
     caption:
-      'No matching-style 1100 world plate. The 1200 OER teaching map is the nearest full-world reconstruction in this series. Seljuk/Song-era lines are not invented here.',
-    imageAlt: 'OER 1200 world map standing in for the 1100 century step',
+      'Year 1100 — Baldwin is crowned in Bethlehem; in England an arrow kills William Rufus; in Rus a congress at Uvetichi; in China Huizong takes the throne.',
+    essay: year1100En,
+    imageAlt: 'Schematic world political reconstruction for 1100 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200 CE',
     caption:
-      'On the eve of the Mongol explosion: a full-world political teaching map from OER / World History Project. Still a classroom reconstruction, not a cadastral survey.',
-    imageAlt: 'OER World History Project political map of the world in 1200',
+      'Year 1200 — Innocent III at his peak; the Fourth Crusade still in the preaching; Temüjin has already gathered the Mongols; in Rus, Vsevolod the Big Nest.',
+    essay: year1200En,
+    imageAlt: 'Founder-supplied political reconstruction of the world in 1200',
+    sourceShort: 'Founder reconstruction',
+    sourceOrg: 'Founder-supplied political reconstruction',
+    license: 'Founder-supplied image',
   },
   1300: {
-    title: '1300 CE — nearest map: 1200',
+    title: '1300 CE',
     caption:
-      'No openly licensed full-world political map for 1300 that we can host. The 1200 OER sheet is the nearest world reconstruction. The Mongol century is therefore a labeled gap, not a drawn empire we invented.',
-    imageAlt: 'OER 1200 world map standing in for the 1300 century step',
+      'Year 1300 — the papal jubilee in Rome; Philip the Fair already squeezes the church; Osman bites the Byzantine edge; the Mongol Empire is still huge, but already in shards.',
+    essay: year1300En,
+    imageAlt: 'Schematic world political reconstruction for 1300 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400 CE — nearest map: 1500',
     caption:
-      'No free 1400 world political sheet in this set. We show the 1500 reconstruction and mark the century as a gap. Timur, Ming, and late medieval Europe are not invented here.',
+      'Year 1400 — Timur drives into Syria; in Europe two popes and the Hundred Years\' War; Vasily I\'s Moscow between the Horde and Lithuania; in China Zhu Di fights for the Ming throne.',
+    essay: year1400En,
     imageAlt: '1500 world political reconstruction used as the nearest sheet for 1400',
   },
   1500: {
     title: '1500 CE',
     caption:
-      'Just after 1492 contact: Iberian footholds, a still-sovereign Americas interior, Ming China, and Ottoman expansion. Main countries only — not every kingdom.',
+      'Year 1500 — Cabral "finds" Brazil on the way to India; Ivan III beats Lithuania at Vedrosha; in Italy the French and the dukes cut each other over cities; the Reformation is not yet here.',
+    essay: year1500En,
     imageAlt: 'World political reconstruction of main countries in 1500',
   },
   1600: {
     title: '1600 CE — nearest map: 1648',
     caption:
-      'No matching-style 1600 world plate. Babelia’s 1648 reconstruction (Peace of Westphalia year) is the nearest full-world political sheet — not a colonial-claims overlay on modern borders.',
+      'Year 1600 — Japan ends the civil wars at Sekigahara; England grants the East India Company its charter; in Rome they burn Bruno; in Moscow Boris Godunov — and the country does not yet know about the famine and the Time of Troubles.',
+    essay: year1600En,
     imageAlt: 'World political reconstruction of 1648, used for the 1600 step',
   },
   1700: {
     title: '1700 CE',
     caption:
-      'An illustrative early-colonial world: Mughal high-water mark, Qing consolidation, and Atlantic empires. Schematic, not a field survey of every frontier.',
-    imageAlt: 'Illustrative world political map for 1700 CE',
+      'Year 1700 — the Great Northern War begins; at Narva the Swedes beat the Russians; the last Spanish Habsburg dies — Europe prepares to divide an empire; Peter is already aimed at the Baltic.',
+    essay: year1700En,
+    imageAlt: 'Schematic world political reconstruction for 1700 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
-    title: '1800 CE — nearest map: 1815',
+    title: '1800 CE',
     caption:
-      'Congress of Vienna world (1815), the nearest detailed free political sheet to 1800. Napoleonic redraws are already in; 1800 itself is the labeled gap.',
-    imageAlt: 'Political world map for 1815 after the Congress of Vienna',
+      'Year 1800 — Napoleon is still consul: Marengo almost lost and won in a single day; the US capital moves to Washington; Paul I quarrels with his allies and leans toward Bonaparte.',
+    essay: year1800En,
+    imageAlt: 'Schematic world political reconstruction for 1800 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900 CE — nearest map: 1914',
+    title: '1900 CE',
     caption:
-      'OER political world on the eve of the First World War (1914). Closer than inventing a 1900 choropleth. Empires still colour most of Africa and much of Asia.',
-    imageAlt: 'OER political map of the world in 1914, used for the 1900 step',
+      'Year 1900 — “Boxers” in China and the siege of the legations; eight powers take Beijing; in South Africa the Anglo-Boer War; in Paris the Métro and a zeppelin, for Planck — the quantum.',
+    essay: year1900En,
+    imageAlt: 'Schematic world political reconstruction for 1900 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000 CE — nearest map: present-day outlines',
     caption:
-      'No matching-style 2000 choropleth in this atlas family. Country fills use present-day BlankMap-World / Natural Earth geometry, so post-2000 states (including South Sudan, 2011) appear. A labeled gap vs a June 2000 intelligence sheet.',
+      'Year 2000 — Y2K almost without catastrophe; in Russia Putin; in the USA the Florida dispute; in Belgrade a bulldozer on parliament; the Second Intifada; the dot-com bubble bursts.',
+    essay: year2000En,
     imageAlt: 'Present-day country fills used as the nearest atlas plate for the 2000 step',
   },
   2020: {
@@ -293,127 +461,166 @@ const captionsRu: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 н. э. — начало нашей эры',
     caption:
-      'Рим у Средиземного моря, Хань в Восточной Азии, Парфия между ними. Америка и большая часть Океании не нарисованы как государства. Это реконструкция известных политий, не перепись всех народов.',
+      'Год 1 н. э. — для современников просто год от основания Рима и год императора Пина; Август держит Средиземноморье, Хань — Поднебесную; между ними шёлк и Парфия.',
+    essay: year1Ru,
     imageAlt: 'Реконструированная политическая карта мира на 1 год н. э.',
   },
   100: {
     title: '100 н. э.',
     caption:
-      'Высокая Римская империя, кушанский и ханьский миры, ещё открытая внутренность Афроевразии. Линии — учёные оценки контроля, не заборы на земле.',
+      'II век — римский «золотой век» от Траяна до Марка Аврелия и слом на Коммоде; Антонинова чума; в Китае Восточная Хань к концу трескается (Жёлтые повязки).',
+    essay: year100Ru,
     imageAlt: 'Реконструированная политическая карта мира на 100 год н. э.',
   },
   200: {
     title: '200 н. э.',
     caption:
-      'Рим, Парфия / канун Сасанидов и Хань после века напряжения. Пустая суша — не пустота, а отсутствие государственной заливки на этом листе.',
+      'Год 200 — уже не спокойный античный полдень: империи ещё стоят, но внутри скрипит. Рим Септимия Севера после парфянских походов и чумы; Китай накануне Троецарствия после Гуаньду; Парфия доживает до Сасанидов. Снаружи тише, чем кажется.',
+    essay: year200Ru,
     imageAlt: 'Реконструированная политическая карта мира на 200 год н. э.',
   },
   300: {
     title: '300 н. э.',
     caption:
-      'Поздняя античность: делится римский мир, Сасанидский Иран, государства-преемники в Китае. Цвета — притязания, не переписи.',
+      'Год 300 — тетрархия Диоклетиана; Сасаниды в Персии; Цзинь в Китае уже грызёт себя; христиане многочисленны — через три года начнётся Великое гонение.',
+    essay: year300Ru,
     imageAlt: 'Реконструированная политическая карта мира на 300 год н. э.',
   },
   400: {
     title: '400 н. э.',
     caption:
-      'После 376-го и до 476-го: эпоха переселений в Европе, Сасаниды, Гупты, раздробленный Китай. Многие «границы» здесь — линии фронта.',
+      'Год 400 — империя уже две: Гонорий на Западе, Аркадий на Востоке; готы внутри; до Алариха в Риме десять лет; христианство официально с 380-го.',
+    essay: year400Ru,
     imageAlt: 'Реконструированная политическая карта мира на 400 год н. э.',
   },
   500: {
     title: '500 н. э.',
     caption:
-      'Королевства-преемники на западе, Сасаниды, Северный и Южный Китай. Опубликованная реконструкция (CC BY-SA), не атлас договоров.',
+      'Год 500 — Теодорих в Равенне; франки Хлодвига уже крещены; Константинополь копит казну для Юстиниана; Китай разрезан, север собирает Северная Вэй.',
+    essay: year500Ru,
     imageAlt: 'Реконструированная политическая карта мира на 500 год н. э.',
   },
   600: {
     title: '600 н. э. — ближайшая карта: 500',
     caption:
-      'Нет мирового политического листа на 600 год в этом семействе атласа. Показываем реконструкцию 500 и помечаем век как пробел — не вставляем карту рельефа и не выдумываем контуры Суй и Византии.',
+      'Год 600 — уже средневековый кадр: Запада Римской империи нет больше века; на востоке Рим ещё держится (Маврикий), но через два года мир дёрнет так, что перекроит полкарты. Лангобарды в Италии, франки в клочьях, Суй только что собрала Китай; в Мекке ещё тихий торговый год.',
+    essay: year600Ru,
     imageAlt: 'Политическая реконструкция мира 500 года н. э. для шага 600',
   },
   700: {
     title: '700 н. э.',
     caption:
-      'Омейядская экспансия, Тан и пост-римский запад. Мировая реконструкция крупных государств — без большинства коренных политий.',
+      'Год 700 — исламский мир уже главная сила от Атлантики почти до Центральной Азии: Омейяды в Дамаске, Персии нет, Византия сжалась, Китай при Тан (и У Цзэтянь) на подъёме. Европа — королевства и майордомы; до Гибралтара и Испании рукой подать.',
+    essay: year700Ru,
     imageAlt: 'Реконструированная политическая карта мира на 700 год н. э.',
   },
   800: {
     title: '800 н. э. — ближайшая карта: 750',
     caption:
-      'Нет мирового листа на 800 год в том же плоском семействе атласа. Реконструкция FamilyPedia 750 года (Омейяды, Тан, франкский запад) — ближайший лист того же стиля. Помеченный пробел, не выдуманный 800-й.',
+      'Год 800 запоминают по Рождеству в Святом Петре: папа Лев III коронует Карла Великого императором Запада. Византия не признаёт; Багдад Харуна ар-Рашида смотрит со стороны. Три «центра» на одной карте — Ахен/Рим, Константинополь, Багдад.',
+    essay: year800Ru,
     imageAlt: 'Политическая реконструкция мира 750 года н. э. для шага 800',
   },
   900: {
     title: '900 н. э.',
     caption:
-      'Расколотые халифаты, византийское оживление, эпоха пяти династий. Цвета — крупные названные государства, не каждое герцогство.',
+      'Год 900 — век викингов ещё не кончился, но большие империи сыплются: Каролингов нет как единства, Тан доживает, Багдад правит больше по имени. На окраинах собираются Уэссекс, Саманиды, русь Олега, мадьяры.',
+    essay: year900Ru,
     imageAlt: 'Реконструированная политическая карта мира на 900 год н. э.',
   },
   1000: {
     title: '1000 н. э. — ближайшая карта: 900',
     caption:
-      'Нет свободного мирового листа на 1000 год в этом семействе атласа. Показываем реконструкцию 900 и прямо об этом говорим. Это не снимок тысячного года.',
+      'Год 1000 — Оттон III в Гнезно; Иштван король Венгрии; Киев уже крещёный; Лейф Эрикссон у берега Винланда; конец света не наступает.',
+    essay: year1000Ru,
     imageAlt: 'Политическая реконструкция мира 900 года н. э. для шага 1000',
   },
   1100: {
-    title: '1100 н. э. — ближайшая карта: 1200',
+    title: '1100 н. э.',
     caption:
-      'Нет мирового листа на 1100 год в том же стиле. Учебная карта OER 1200 года — ближайшая мировая реконструкция в этой серии. Линии эпохи сельджуков и Сун здесь не выдуманы.',
-    imageAlt: 'Карта мира OER 1200 года вместо шага 1100',
+      'Год 1100 — Балдуина коронуют в Вифлееме; в Англии стрела убивает Вильгельма Рыжего; на Руси съезд в Уветичах; в Китае на престол садится Хуэй-цзун.',
+    essay: year1100Ru,
+    imageAlt: 'Схематическая политическая реконструкция мира на 1100 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200 н. э.',
     caption:
-      'Накануне монгольского взрыва: мировая учебная карта OER / World History Project. Всё ещё реконструкция для класса, не кадастр.',
-    imageAlt: 'Политическая карта мира 1200 года, World History Project / OER',
+      'Год 1200 — Иннокентий III на пике; Четвёртый крестовый поход ещё в проповеди; Тэмуджин уже собрал монголов; на Руси Всеволод Большое Гнездо.',
+    essay: year1200Ru,
+    imageAlt: 'Политическая реконструкция мира 1200 года, предоставленная основателем',
+    sourceShort: 'Реконструкция основателя',
+    sourceOrg: 'Политическая реконструкция, предоставленная основателем',
+    license: 'Изображение основателя',
   },
   1300: {
-    title: '1300 н. э. — ближайшая карта: 1200',
+    title: '1300 н. э.',
     caption:
-      'Нет открытой мировой политической карты на 1300 год, которую мы можем разместить. Лист OER 1200 — ближайшая мировая реконструкция. Монгольский век помечен как пробел, не как нарисованная нами империя.',
-    imageAlt: 'Карта мира OER 1200 года вместо шага 1300',
+      'Год 1300 — папский юбилей в Риме; Филипп Красивый уже давит церковь; Осман кусает византийский край; Монгольская империя ещё огромная, но уже осколки.',
+    essay: year1300Ru,
+    imageAlt: 'Схематическая политическая реконструкция мира на 1300 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400 н. э. — ближайшая карта: 1500',
     caption:
-      'В этом наборе нет свободного мирового листа на 1400 год. Показываем реконструкцию 1500 и помечаем век как пробел. Тимур, Мин и позднесредневековая Европа здесь не выдуманы.',
+      'Год 1400 — Тимур прёт на Сирию; в Европе два папы и Столетняя война; Москва Василия I между Ордой и Литвой; в Китае Чжу Ди бьётся за престол Мин.',
+    essay: year1400Ru,
     imageAlt: 'Реконструкция мира 1500 года как ближайший лист для 1400',
   },
   1500: {
     title: '1500 н. э.',
     caption:
-      'Сразу после контакта 1492 года: иберийские плацдармы, ещё суверенная внутренность Америк, Мин, османская экспансия. Только главные страны.',
+      'Год 1500 — Кабрал «находит» Бразилию по пути в Индию; Иван III бьёт Литву на Ведроши; в Италии французы и герцоги режутся за города; Реформации ещё нет.',
+    essay: year1500Ru,
     imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
   },
   1600: {
     title: '1600 н. э. — ближайшая карта: 1648',
     caption:
-      'Нет мирового листа на 1600 год в том же стиле. Реконструкция Babelia 1648 года (год Вестфальского мира) — ближайший полный политический лист, не колониальная заливка по современным границам.',
+      'Год 1600 — Япония заканчивает гражданские войны при Сэкигахаре; Англия выдаёт хартию Ост-Индской компании; в Риме жгут Бруно; в Москве Борис Годунов — и страна ещё не знает про голод и Смуту.',
+    essay: year1600Ru,
     imageAlt: 'Политическая реконструкция мира 1648 года для шага 1600',
   },
   1700: {
     title: '1700 н. э.',
     caption:
-      'Иллюстративный раннеколониальный мир: пик Моголов, укрепление Цин, атлантические империи. Схема, не полевая съёмка каждой границы.',
-    imageAlt: 'Иллюстративная политическая карта мира на 1700 год',
+      'Год 1700 — начинается Северная война; под Нарвой шведы бьют русских; умирает последний испанский Габсбург — Европа готовится делить империю; Пётр уже нацелен на Балтику.',
+    essay: year1700Ru,
+    imageAlt: 'Схематическая политическая реконструкция мира на 1700 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
-    title: '1800 н. э. — ближайшая карта: 1815',
+    title: '1800 н. э.',
     caption:
-      'Мир Венского конгресса (1815) — ближайший подробный свободный политический лист к 1800 году. Наполеоновские переделы уже на карте; сам 1800-й — помеченный пробел.',
-    imageAlt: 'Политическая карта мира 1815 года после Венского конгресса',
+      'Год 1800 — Наполеон ещё консул: Маренго почти проигран и выигран в один день; столица США переезжает в Вашингтон; Павел I ссорится с союзниками и тянется к Бонапарту.',
+    essay: year1800Ru,
+    imageAlt: 'Схематическая политическая реконструкция мира на 1800 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900 н. э. — ближайшая карта: 1914',
+    title: '1900 н. э.',
     caption:
-      'Политический мир OER накануне Первой мировой (1914). Честнее, чем выдумывать хороплет 1900 года. Империи всё ещё красят большую часть Африки и много Азии.',
-    imageAlt: 'Политическая карта мира OER 1914 года для шага 1900',
+      'Год 1900 — «боксёры» в Китае и осада посольств; восемь держав берут Пекин; в Южной Африке англо-бурская война; в Париже метро и цеппелин, у Планка — квант.',
+    essay: year1900Ru,
+    imageAlt: 'Схематическая политическая реконструкция мира на 1900 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000 н. э. — ближайшая карта: современные контуры',
     caption:
-      'Нет хороплета 2000 года в этом семействе атласа. Заливка стран — современная геометрия BlankMap-World / Natural Earth, поэтому видны государства после 2000 года (включая Южный Судан, 2011). Помеченный пробел относительно разведывательного листа июня 2000-го.',
+      'Год 2000 — Y2K почти без катастрофы; в России Путин; в США спор Флориды; в Белграде бульдозер на парламент; вторая интифада; лопается пузырь доткомов.',
+    essay: year2000Ru,
     imageAlt: 'Современная заливка стран как ближайший лист атласа для шага 2000',
   },
   2020: {
@@ -428,127 +635,166 @@ const captionsPl: Record<number, BorderFrameCopy> = {
   1: {
     title: '1 n.e. — początek naszej ery',
     caption:
-      'Rzym nad Morzem Śródziemnym, Han we wschodniej Azji, Partia między nimi. Ameryki i większość Oceanii nie są narysowane jako państwa. To rekonstrukcja znanych organizmów, nie spis wszystkich ludów.',
+      'Rok 1 n.e. — dla ówczesnych po prostu rok od założenia Rzymu i rok cesarza Pinga; August trzyma Morze Śródziemne, Han — Państwo Środka; między nimi jedwab i Partia.',
+    essay: year1Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 1 n.e.',
   },
   100: {
     title: '100 n.e.',
     caption:
-      'Wysokie cesarstwo rzymskie, świat Kuszanów i Han oraz wciąż otwarte wnętrze Afroeuroazji. Linie to naukowe zgadywanie kontroli, nie płoty w terenie.',
+      'II wiek — rzymski „złoty wiek” od Trajana do Marka Aureliusza i załamanie na Kommodusie; dżuma antonińska; w Chinach Wschodnia Han pod koniec pęka (Żółte Turbany).',
+    essay: year100Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 100 n.e.',
   },
   200: {
     title: '200 n.e.',
     caption:
-      'Rzym, Partia / przedświt Sasanidów i Han po stuleciu napięcia. Pusty ląd to nie pustka — to brak warstwy państwowej na tym arkuszu.',
+      'Rok 200 — już nie spokojne antyczne południe: imperia jeszcze stoją, ale wewnątrz skrzypi. Rzym Septymiusza Sewera po partyjskich wyprawach i dżumie; Chiny w przededniu Trójkrólestwa po Guandu; Partia dogorywa do Sasanidów. Na zewnątrz ciszej, niż się wydaje.',
+    essay: year200Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 200 n.e.',
   },
   300: {
     title: '300 n.e.',
     caption:
-      'Późny antyk: dzielący się świat rzymski, sasanidzki Iran, państwa sukcesyjne w Chinach. Kolory to roszczenia, nie spisy.',
+      'Rok 300 — tetrarchia Dioklecjana; Sasanidzi w Persji; Jin w Chinach już gryzie sama siebie; chrześcijan wielu — za trzy lata zacznie się Wielkie Prześladowanie.',
+    essay: year300Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 300 n.e.',
   },
   400: {
     title: '400 n.e.',
     caption:
-      'Po 376 i przed 476: Europa wędrówek ludów, Sasanidzi, Guptowie, rozbita Chiny. Wiele „granic” to tu linie frontu.',
+      'Rok 400 — imperium już dwa: Honoriusz na Zachodzie, Arkadiusz na Wschodzie; Goci wewnątrz; do Alaryka w Rzymie dziesięć lat; chrześcijaństwo oficjalnie od 380.',
+    essay: year400Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 400 n.e.',
   },
   500: {
     title: '500 n.e.',
     caption:
-      'Królestwa sukcesyjne na zachodzie, Sasanidzi, Chiny Północne i Południowe. Opublikowana rekonstrukcja (CC BY-SA), nie atlas traktatów.',
+      'Rok 500 — Teodoryk w Rawennie; Frankowie Chlodwiga już ochrzczeni; Konstantynopol gromadzi skarbiec dla Justyniana; Chiny przecięte, północ zbiera Północna Wei.',
+    essay: year500Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 500 n.e.',
   },
   600: {
     title: '600 n.e. — najbliższa mapa: 500',
     caption:
-      'Brak światowego arkusza politycznego na 600 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 500 i oznaczamy stulecie jako lukę — bez mapy terenu i bez wymyślania konturów Sui i Bizancjum.',
+      'Rok 600 — już średniowieczny kadr: Zachodniego Cesarstwa Rzymskiego nie ma ponad wiek; na wschodzie Rzym jeszcze się trzyma (Maurycjusz), ale za dwa lata świat szarpnie tak, że przerysuje pół mapy. Longobardowie we Włoszech, Frankowie w strzępach, Sui dopiero co zebrała Chiny; w Mekce jeszcze cichy rok handlowy.',
+    essay: year600Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 500 n.e. użyta dla kroku 600',
   },
   700: {
     title: '700 n.e.',
     caption:
-      'Ekspansja Umajjadów, Tang i post-rzymski zachód. Światowa rekonstrukcja dużych państw — wciąż milcząca o większości organizmów rdzennych.',
+      'Rok 700 — świat islamski jest już główną siłą od Atlantyku niemal po Azję Środkową: Umajjadzi w Damaszku, Persji nie ma, Bizancjum się skurczyło, Chiny za Tangów (i Wu Zetian) w rozkwicie. Europa — królestwa i majordomowie; do Gibraltaru i Hiszpanii rzut beretem.',
+    essay: year700Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 700 n.e.',
   },
   800: {
     title: '800 n.e. — najbliższa mapa: 750',
     caption:
-      'Brak arkusza światowego na 800 w tej samej płaskiej rodzinie atlasu. Rekonstrukcja FamilyPedia z 750 (Umajjadzi, Tang, zachodni Frankowie) to najbliższy arkusz w tym stylu. Oznaczona luka, nie wymyślony rok 800.',
+      'Rok 800 zapamiętano po Bożym Narodzeniu w Świętym Piotrze: papież Leon III koronuje Karola Wielkiego cesarzem Zachodu. Bizancjum nie uznaje; Bagdad Haruna ar-Raszida patrzy z boku. Trzy „centra” na jednej mapie — Akwizgran/Rzym, Konstantynopol, Bagdad.',
+    essay: year800Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 750 n.e. użyta dla kroku 800',
   },
   900: {
     title: '900 n.e.',
     caption:
-      'Rozbite kalifaty, bizantyjskie odbicie, Pięć Dynastii. Kolory to duże nazwane państwa, nie każde księstwo.',
+      'Rok 900 — wiek wikingów jeszcze się nie skończył, ale wielkie imperia sypią się: Karolingów nie ma jako jedności, Tang dogorywa, Bagdad rządzi bardziej z nazwy. Na obrzeżach zbierają się Wessex, Samanidzi, Ruś Olega, Madziarzy.',
+    essay: year900Pl,
     imageAlt: 'Zrekonstruowana mapa polityczna świata na rok 900 n.e.',
   },
   1000: {
     title: '1000 n.e. — najbliższa mapa: 900',
     caption:
-      'Brak wolnego arkusza światowego na rok 1000 w tej rodzinie atlasu. Pokazujemy rekonstrukcję z 900 i mówimy o tym wprost. To nie migawka roku tysięcznego.',
+      'Rok 1000 — Otton III w Gnieźnie; Stefan król Węgier; Kijów już ochrzczony; Leif Eriksson u brzegu Winlandii; koniec świata nie nadchodzi.',
+    essay: year1000Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 900 n.e. użyta dla kroku 1000',
   },
   1100: {
-    title: '1100 n.e. — najbliższa mapa: 1200',
+    title: '1100 n.e.',
     caption:
-      'Brak arkusza światowego na 1100 w tym stylu. Mapa dydaktyczna OER z 1200 to najbliższa rekonstrukcja świata w tej serii. Linii epoki Seldżuków i Song tu nie wymyślamy.',
-    imageAlt: 'Mapa świata OER z 1200 jako zastępstwo kroku 1100',
+      'Rok 1100 — Baldwina koronują w Betlejem; w Anglii strzała zabija Wilhelma Rudego; na Rusi zjazd w Uwieticzach; w Chinach na tron wstępuje Huizong.',
+    essay: year1100Pl,
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1100 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200 n.e.',
     caption:
-      'W przededniu wybuchu mongolskiego: światowa mapa dydaktyczna OER / World History Project. Nadal rekonstrukcja szkolna, nie kataster.',
-    imageAlt: 'Polityczna mapa świata OER z roku 1200',
+      'Rok 1200 — Innocenty III na szczycie; Czwarta krucjata jeszcze w kazaniu; Temudżyn już zebrał Mongołów; na Rusi Wsiewołod Wielkie Gniazdo.',
+    essay: year1200Pl,
+    imageAlt: 'Dostarczona przez założyciela rekonstrukcja polityczna świata w roku 1200',
+    sourceShort: 'Rekonstrukcja założyciela',
+    sourceOrg: 'Rekonstrukcja polityczna dostarczona przez założyciela',
+    license: 'Obraz dostarczony przez założyciela',
   },
   1300: {
-    title: '1300 n.e. — najbliższa mapa: 1200',
+    title: '1300 n.e.',
     caption:
-      'Nie mamy otwartej światowej mapy politycznej na 1300, którą możemy hostować. Arkusz OER 1200 to najbliższa rekonstrukcja świata. Wiek mongolski jest więc oznaczoną luką, nie narysowanym przez nas imperium.',
-    imageAlt: 'Mapa świata OER z 1200 jako zastępstwo kroku 1300',
+      'Rok 1300 — papieski jubileusz w Rzymie; Filip Piękny już ugniata kościół; Osman gryzie bizantyński skraj; Imperium Mongolskie jeszcze ogromne, ale już odłamki.',
+    essay: year1300Pl,
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1300 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400 n.e. — najbliższa mapa: 1500',
     caption:
-      'W tym zestawie nie ma wolnego światowego arkusza na 1400. Pokazujemy rekonstrukcję 1500 i oznaczamy stulecie jako lukę. Timur, Ming i późnośredniowieczna Europa nie są tu wymyślone.',
+      'Rok 1400 — Timur pcha się na Syrię; w Europie dwóch papieży i wojna stuletnia; Moskwa Wasyla I między Ordą a Litwą; w Chinach Zhu Di bije się o tron Mingów.',
+    essay: year1400Pl,
     imageAlt: 'Rekonstrukcja świata z 1500 jako najbliższy arkusz dla 1400',
   },
   1500: {
     title: '1500 n.e.',
     caption:
-      'Tuż po kontakcie 1492: przyczółki iberyjskie, wciąż suwerenne wnętrze Ameryk, Ming, ekspansja osmańska. Tylko główne kraje.',
+      'Rok 1500 — Cabral «znajduje» Brazylię w drodze do Indii; Iwan III bije Litwę nad Wiedroszą; we Włoszech Francuzi i książęta tną się o miasta; Reformacji jeszcze nie ma.',
+    essay: year1500Pl,
     imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
   },
   1600: {
     title: '1600 n.e. — najbliższa mapa: 1648',
     caption:
-      'Brak arkusza światowego na 1600 w tym stylu. Rekonstrukcja Babelii z 1648 (rok pokoju westfalskiego) to najbliższy pełny arkusz polityczny — nie warstwa roszczeń kolonialnych na współczesnych granicach.',
+      'Rok 1600 — Japonia kończy wojny domowe pod Sekigaharą; Anglia wydaje kartę Kompanii Wschodnioindyjskiej; w Rzymie palą Bruno; w Moskwie Borys Godunow — a kraj jeszcze nie wie o głodzie i Smutcie.',
+    essay: year1600Pl,
     imageAlt: 'Rekonstrukcja polityczna świata z 1648 użyta dla kroku 1600',
   },
   1700: {
     title: '1700 n.e.',
     caption:
-      'Ilustracyjny wczesnokolonialny świat: szczyt Mogołów, konsolidacja Qing, imperia atlantyckie. Schemat, nie pomiar każdej granicy.',
-    imageAlt: 'Ilustracyjna mapa polityczna świata na rok 1700',
+      'Rok 1700 — zaczyna się wojna północna; pod Narwą Szwedzi biją Rosjan; umiera ostatni hiszpański Habsburg — Europa szykuje się dzielić imperium; Piotr już wycelowany w Bałtyk.',
+    essay: year1700Pl,
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1700 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
-    title: '1800 n.e. — najbliższa mapa: 1815',
+    title: '1800 n.e.',
     caption:
-      'Świat Kongresu Wiedeńskiego (1815), najbliższy szczegółowy wolny arkusz polityczny do 1800. Przesunięcia napoleońskie już są; sam 1800 to oznaczona luka.',
-    imageAlt: 'Polityczna mapa świata z 1815 po Kongresie Wiedeńskim',
+      'Rok 1800 — Napoleon wciąż konsul: Marengo prawie przegrane i wygrane w jeden dzień; stolica USA przenosi się do Waszyngtonu; Paweł I kłóci się z sojusznikami i ciągnie ku Bonaparteemu.',
+    essay: year1800Pl,
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1800 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900 n.e. — najbliższa mapa: 1914',
+    title: '1900 n.e.',
     caption:
-      'Polityczny świat OER w przededniu I wojny (1914). Uczciwsze niż wymyślanie choroplethu 1900. Imperia wciąż kolorują większość Afryki i sporo Azji.',
-    imageAlt: 'Polityczna mapa świata OER z 1914 dla kroku 1900',
+      'Rok 1900 — „bokserzy” w Chinach i oblężenie poselstw; osiem mocarstw bierze Pekin; w Afryce Południowej wojna burska; w Paryżu metro i zeppelin, u Plancka — kwant.',
+    essay: year1900Pl,
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1900 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000 n.e. — najbliższa mapa: współczesne kontury',
     caption:
-      'Brak choroplethu 2000 w tej rodzinie atlasu. Wypełnienia państw to współczesna geometria BlankMap-World / Natural Earth, więc widać państwa po 2000 (w tym Sudan Południowy, 2011). Oznaczona luka wobec arkusza wywiadowczego z czerwca 2000.',
+      'Rok 2000 — Y2K niemal bez katastrofy; w Rosji Putin; w USA spór o Florydę; w Belgradzie spychacz na parlament; druga intifada; pęka bańka dotcomów.',
+    essay: year2000Pl,
     imageAlt: 'Współczesne wypełnienia państw jako najbliższy arkusz atlasu dla kroku 2000',
   },
   2020: {
@@ -563,127 +809,166 @@ const captionsLv: Record<number, BorderFrameCopy> = {
   1: {
     title: '1. m.ē. — mūsu ēras sākums',
     caption:
-      'Roma pie Vidusjūras, Haņu Ķīna Austrumāzijā, Partija pa vidu. Amerika un lielā daļa Okeānijas nav zīmētas kā valstis. Tā ir zināmo politiju rekonstrukcija, ne visu tautu uzskaite.',
+      '1. gads m.ē. — laikabiedriem vienkārši gads no Romas dibināšanas un imperatora Pina gads; Augusts tur Vidusjūru, Haņi — Debesu valstību; starp tiem zīds un Partija.',
+    essay: year1Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 1. gadam m.ē.',
   },
   100: {
     title: '100. m.ē.',
     caption:
-      'Augstā Romas impērija, kušānu un Haņu pasaules, joprojām atvērtais Āfroeiropas iekšiene. Līnijas ir zinātniski minējumi par kontroli, ne žogi uz zemes.',
+      'II gadsimts — romiešu „zelta laikmets” no Trajāna līdz Markam Aurēlijam un lūzums pie Komoda; Antonīnu mēris; Ķīnā Austrumu Haņi līdz beigām plīst (Dzeltenie lakati).',
+    essay: year100Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 100. gadam m.ē.',
   },
   200: {
     title: '200. m.ē.',
     caption:
-      'Roma, Partija / sasanīdu priekšvakars un Haņu Ķīna pēc gadsimta spriedzes. Tukšā sauszeme nav tukšums — tā ir valsts slāņa neesamība šajā lapā.',
+      '200. gads — vairs ne mierīgs antīkais pusdienlaiks: impērijas vēl stāv, bet iekšā čīkst. Septīmija Sevēra Roma pēc partiešu karagājieniem un mēra; Ķīna Trīs valstību priekšvakarā pēc Guandu; Partija nodzīvo līdz Sasānīdiem. Ārpusē klusāk, nekā šķiet.',
+    essay: year200Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 200. gadam m.ē.',
   },
   300: {
     title: '300. m.ē.',
     caption:
-      'Vēlā antīkā pasaule: dalās Romas pasaule, sasanīdu Irāna, pēcteču valstis Ķīnā. Krāsas ir pretenzijas, ne tautas skaitīšana.',
+      '300. gads — Diokletiāna tetrarhija; Sasānīdi Persijā; Dzjiņ Ķīnā jau grauž sevi; kristiešu daudz — pēc trim gadiem sāksies Lielā vajāšana.',
+    essay: year300Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 300. gadam m.ē.',
   },
   400: {
     title: '400. m.ē.',
     caption:
-      'Pēc 376. un pirms 476.: tautu staigāšanas Eiropa, sasanīdi, Guptas, sašķelta Ķīna. Daudzas „robežas” šeit ir frontes.',
+      '400. gads — impērija jau divas: Honorijs Rietumos, Arkādijs Austrumos; goti iekšā; līdz Alariham Romā desmit gadi; kristietība oficiāli no 380.',
+    essay: year400Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 400. gadam m.ē.',
   },
   500: {
     title: '500. m.ē.',
     caption:
-      'Pēcteču karaļvalstis rietumos, sasanīdi, Ziemeļu un Dienvidu Ķīna. Publicēta rekonstrukcija (CC BY-SA), ne līgumu atlants.',
+      '500. gads — Teodorihs Ravennā; Hlodviga franki jau kristīti; Konstantinopole krāj kasi Justiniānam; Ķīna pārdalīta, ziemeļus savāc Ziemeļu Vei.',
+    essay: year500Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 500. gadam m.ē.',
   },
   600: {
     title: '600. m.ē. — tuvākā karte: 500',
     caption:
-      'Nav pasaules politiskās lapas 600. gadam šajā atlanta saimē. Rādām 500. gada rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu — bez reljefa kartes un bez izdomātām Sui un Bizantijas kontūrām.',
+      '600. gads — jau viduslaiku kadrs: Rietumu Romas impērijas nav vairāk nekā gadsimtu; austrumos Roma vēl turas (Maurīcijs), bet pēc diviem gadiem pasaule rāvsies tā, ka pārzīmēs pusi kartes. Longobardi Itālijā, franki gabalos, Sui tikko savākusi Ķīnu; Mekā vēl kluss tirdzniecības gads.',
+    essay: year600Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 500. gada m.ē. 600. soļa vietā',
   },
   700: {
     title: '700. m.ē.',
     caption:
-      'Omeijādu ekspansija, Tan un pēcrimas rietumi. Lielo valstu pasaules rekonstrukcija — joprojām klusa par lielāko daļu pirmiedzīvotāju politiju.',
+      'Gads 700 — islāma pasaule jau ir galvenais spēks no Atlantijas gandrīz līdz Centrālāzijai: Omeijadi Damaskā, Persijas vairs nav, Bizantija sarukusi, Ķīna Tanu dinastijas (un Vu Dzetiaņas) uzplaukumā. Eiropa — karaļvalstis un majordomi; līdz Gibraltāram un Spānijai — rokas stiepiena attālumā.',
+    essay: year700Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 700. gadam m.ē.',
   },
   800: {
     title: '800. m.ē. — tuvākā karte: 750',
     caption:
-      'Nav 800. gada pasaules lapas tajā pašā plakanajā atlanta saimē. FamilyPedia 750. gada rekonstrukcija (Omeijādi, Tan, franku rietumi) ir tuvākā tā paša stila lapa. Marķēts iztrūkums, ne izdomāts 800. gads.',
+      'Gadu 800 atceras pēc Ziemassvētkiem Svētajā Pēterī: pāvests Leons III kronē Kārli Lielo par Rietumu imperatoru. Bizantija neatzīst; Bagdāde Haruna ar-Rašīda laikā skatās no malas. Trīs «centri» vienā kartē — Āhene/Roma, Konstantinopole, Bagdāde.',
+    essay: year800Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 750. gada m.ē. 800. soļa vietā',
   },
   900: {
     title: '900. m.ē.',
     caption:
-      'Sadrumstalotie kalifāti, bizantiešu atveseļošanās, Piecu dinastiju Ķīna. Krāsas ir lielas nosauktas valstis, ne katra hercogiste.',
+      'Gads 900 — vikingu laikmets vēl nav beidzies, bet lielās impērijas irt: Karolingi vairs nav vienība, Tanu dinastija nīkst, Bagdāde valda vairāk pēc vārda. Malās sapulcējas Veseksa, Sāmānīdi, Oļega Krievzeme, madjari.',
+    essay: year900Lv,
     imageAlt: 'Rekonstruēta pasaules politiskā karte 900. gadam m.ē.',
   },
   1000: {
     title: '1000. m.ē. — tuvākā karte: 900',
     caption:
-      'Nav brīvas 1000. gada pasaules lapas šajā atlanta saimē. Rādām 900. gada rekonstrukciju un to sakām. Tā nav tūkstošgades momentuzņēmums.',
+      'Gads 1000 — Oto III Gņezno; Ištvanas Ungārijas karalis; Kijeva jau kristīta; Leifs Eriksons pie Vinlandes krasta; pasaules gals neiestājas.',
+    essay: year1000Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 900. gada m.ē. 1000. soļa vietā',
   },
   1100: {
-    title: '1100. m.ē. — tuvākā karte: 1200',
+    title: '1100. m.ē.',
     caption:
-      'Nav 1100. gada pasaules lapas tajā pašā stilā. OER 1200. gada mācību karte ir tuvākā pasaules rekonstrukcija šajā sērijā. Seldžuku un Sun laikmeta līnijas šeit nav izdomātas.',
-    imageAlt: 'OER 1200. gada karte 1100. soļa vietā',
+      'Gads 1100 — Baldvinu kronē Betlēmē; Anglijā bulta nogalina Vilhelmu Sarkano; Krievzemē sapulce Uvetičos; Ķīnā tronī kāpj Hueidzuns.',
+    essay: year1100Lv,
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1100. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1200: {
     title: '1200. m.ē.',
     caption:
-      'Pirms mongoļu sprādziena: OER / World History Project mācību karte visai pasaulei. Joprojām klases rekonstrukcija, ne kadastrs.',
-    imageAlt: 'OER politiskā pasaules karte 1200. gadam',
+      'Gads 1200 — Inokentijs III virsotnē; Ceturtais krusta karš vēl sludināšanā; Temudžins jau savācis mongoļus; Krievzemē Vsevolods Lielā Ligzda.',
+    essay: year1200Lv,
+    imageAlt: 'Dibinātāja piegādāta politiskā rekonstrukcija pasaulei 1200. gadā',
+    sourceShort: 'Dibinātāja rekonstrukcija',
+    sourceOrg: 'Dibinātāja piegādāta politiskā rekonstrukcija',
+    license: 'Dibinātāja piegādāts attēls',
   },
   1300: {
-    title: '1300. m.ē. — tuvākā karte: 1200',
+    title: '1300. m.ē.',
     caption:
-      'Nav atklāti licencētas 1300. gada pasaules politiskās kartes, ko varam izvietot. OER 1200. lapa ir tuvākā pasaules rekonstrukcija. Mongoļu gadsimts tātad ir marķēts iztrūkums, ne mūsu zīmēta impērija.',
-    imageAlt: 'OER 1200. gada karte 1300. soļa vietā',
+      'Gads 1300 — pāvesta jubileja Romā; Filips Skaistais jau spiež baznīcu; Osmans kož bizantiešu malu; Mongoļu impērija vēl milzīga, bet jau lauskas.',
+    essay: year1300Lv,
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1300. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1400: {
     title: '1400. m.ē. — tuvākā karte: 1500',
     caption:
-      'Šajā komplektā nav brīvas 1400. gada pasaules lapas. Rādām 1500. rekonstrukciju un gadsimtu atzīmējam kā iztrūkumu. Timurs, Min un vēlie viduslaiki šeit nav izdomāti.',
+      'Gads 1400 — Timurs spiežas uz Sīriju; Eiropā divi pāvesti un Simtgadu karš; Vasilija I Maskava starp Ordu un Lietuvu; Ķīnā Džu Di cīnās par Minu troni.',
+    essay: year1400Lv,
     imageAlt: '1500. gada pasaules rekonstrukcija kā tuvākā lapa 1400. gadam',
   },
   1500: {
     title: '1500. m.ē.',
     caption:
-      'Tūlīt pēc 1492. kontakta: ibēriešu placdarmi, joprojām suverēna Amerikas iekšiene, Min, osmaņu ekspansija. Tikai galvenās valstis.',
+      'Gads 1500 — Kabrals «atrod» Brazīliju ceļā uz Indiju; Ivans III sit Lietuvu pie Vedrošas; Itālijā franči un hercogi griežas par pilsētām; Reformācijas vēl nav.',
+    essay: year1500Lv,
     imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
   },
   1600: {
     title: '1600. m.ē. — tuvākā karte: 1648',
     caption:
-      'Nav 1600. gada pasaules lapas tajā pašā stilā. Babelia 1648. gada rekonstrukcija (Vestfālenes miera gads) ir tuvākā pilnā politiskā lapa — ne koloniālo pretenziju slānis uz mūsdienu robežām.',
+      'Gads 1600 — Japāna beidz pilsoņu karus pie Sekigaharas; Anglija izsniedz Austrumindijas kompānijas hartu; Romā dedzina Bruno; Maskavā Boriss Godunovs — un zeme vēl nezina par badu un Juku laiku.',
+    essay: year1600Lv,
     imageAlt: 'Pasaules politiskā rekonstrukcija no 1648. gada 1600. soļa vietā',
   },
   1700: {
     title: '1700. m.ē.',
     caption:
-      'Ilustratīva agrīnā koloniālā pasaule: Mogolu augstākais punkts, Cjinu nostiprināšanās, Atlantijas impērijas. Shēma, ne katras robežas uzmērījums.',
-    imageAlt: 'Ilustratīva pasaules politiskā karte 1700. gadam',
+      'Gads 1700 — sākas Ziemeļu karš; pie Narvas zviedri sit krievus; mirst pēdējais spāņu Habsburgs — Eiropa gatavojas dalīt impēriju; Pēteris jau mērķēts uz Baltiju.',
+    essay: year1700Lv,
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1700. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1800: {
-    title: '1800. m.ē. — tuvākā karte: 1815',
+    title: '1800. m.ē.',
     caption:
-      'Vīnes kongresa pasaule (1815), tuvākā detalizētā brīvā politiskā lapa 1800. gadam. Napoleona pārdales jau ir; pats 1800. ir marķēts iztrūkums.',
-    imageAlt: 'Politiskā pasaules karte 1815. gadā pēc Vīnes kongresa',
+      'Gads 1800 — Napoleons vēl konsuls: Marengo gandrīz zaudēta un uzvarēta vienā dienā; ASV galvaspilsēta pārcelās uz Vašingtonu; Pāvils I strīdas ar sabiedrotajiem un tiecas pie Bonaparta.',
+    essay: year1800Lv,
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1800. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1900: {
-    title: '1900. m.ē. — tuvākā karte: 1914',
+    title: '1900. m.ē.',
     caption:
-      'OER politiskā pasaule Pirmā pasaules kara priekšvakarā (1914). Godīgāk nekā izdomāt 1900. gada horoplētu. Impērijas joprojām krāso lielāko daļu Āfrikas un daudz Āzijas.',
-    imageAlt: 'OER politiskā karte 1914. gadam 1900. soļa vietā',
+      'Gads 1900 — «bokseri» Ķīnā un sūtniecību aplenkums; astoņas lielvalstis ņem Pekinu; Dienvidāfrikā angļu–būru karš; Parīzē metro un cepelīns, Plankam — kvants.',
+    essay: year1900Lv,
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1900. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   2000: {
     title: '2000. m.ē. — tuvākā karte: mūsdienu kontūras',
     caption:
-      'Nav 2000. gada horoplēta šajā atlanta saimē. Valstu aizpildījums ir mūsdienu BlankMap-World / Natural Earth ģeometrija, tāpēc redzamas valstis pēc 2000. gada (tostarp Dienvidsudāna, 2011). Marķēts iztrūkums pret 2000. gada jūnija izlūkošanas lapu.',
+      'Gads 2000 — Y2K gandrīz bez katastrofas; Krievijā Putins; ASV Floridas strīds; Belgradā buldozers uz parlamentu; otrā intifāda; plīst dotkomu burbulis.',
+    essay: year2000Lv,
     imageAlt: 'Mūsdienu valstu aizpildījums kā tuvākā atlanta lapa 2000. solim',
   },
   2020: {
@@ -717,6 +1002,12 @@ export function getBorderHistoryPage(locale: Locale): BorderHistoryPage {
 export function getBorderHistoryFrames(locale: Locale): BorderFrame[] {
   return borderHistoryFrames.map((meta) => {
     const copy = captions[locale][meta.year] ?? captions.en[meta.year];
-    return { ...meta, ...copy };
+    return {
+      ...meta,
+      ...copy,
+      sourceShort: copy.sourceShort ?? meta.sourceShort,
+      sourceOrg: copy.sourceOrg ?? meta.sourceOrg,
+      license: copy.license ?? meta.license,
+    };
   });
 }

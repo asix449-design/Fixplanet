@@ -9,8 +9,8 @@ export const page: MigrationPage = {
   eyebrow: 'Encyclopedia',
   title: 'Migration',
   hubLead: [
-    'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and a warmer climate on top of those older clocks.',
-    'Today sits on this page: the current-day international map — net migration and migrant stock, labeled as such. Below it, two shelves. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
+    'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and, on top of those older natural rhythms, a warmer climate.',
+    'This page opens with today’s international map — net migration and migrant stock, labeled as such. A separate layer covers people displaced inside their own country (IDMC). The camps layer shows named sites, not the world’s refugee stock; that stock is in the Refugees (UNHCR) layer. Below it, two sections. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -48,7 +48,7 @@ export const page: MigrationPage = {
   },
   shelfLeads: {
     today:
-      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Toggle camps (UNHCR) and EU border detections (Frontex) as separate layers. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
+      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Toggle refugees under UNHCR’s mandate, named camps, EU border detections (Frontex), and internal displacement (IDMC) as separate layers. The camps layer shows named sites, not the world’s refugee stock; that stock is in the Refugees (UNHCR) layer. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
     humans:
       'Maps first: a timeline of major documented human-migration events, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Each card names when, where, and why — climate, ice, farming, war, trade, empire, slavery — only where scholarship supports it. This is not a map of everyone every fifty years. Attila and the Migration Period stay here; living movements live on Great migrations.',
     'great-migrations':
@@ -217,13 +217,13 @@ export const page: MigrationPage = {
         },
         bantu: {
           label: 'Bantu',
-          title: 'Bantu expansion — languages, farming, and a long clock',
-          when: 'From about 4000–1000 BCE out of the Nigeria–Cameroon area, continuing through the first millennium CE into eastern and southern Africa.',
-          where: 'West-central Africa, then east and south through rainforest and savanna. Today’s Bantu-speaking zone is the outcome, not the route map.',
-          why: 'Farming, iron, and population growth in a changing climate. Grollemund et al. 2015 argue a path through the rainforest rather than only around it.',
+          title: 'Bantu expansion — languages, farming, and long waves',
+          when: 'Split from related Bantoid languages roughly 6000–4000 years ago; southward expansion gathers pace about 3500–3000 years ago and continues in waves into the 1st millennium CE.',
+          where: 'Homeland on the Nigeria–Cameroon border (Grassfields), then much of Central, Eastern and Southern Africa. Today’s Bantu-language zone is an outcome, not a GPS track.',
+          why: 'Mixed economies (farming, hunting, fishing, foraging) and pottery first; iron later. Savanna–forest climate windows and river/coast corridors. Not a single invasion.',
           uncertainty:
-            'A millennia-long series of movements, not one march. No openly licensed dated-route plate is hosted; the arrows are a teaching schematic after named papers.',
-          caption: 'Teaching arrows in Africa. Map forthcoming for a sourced route plate — this is not a language choropleth of all people.',
+            'Early-split vs late-split models long competed; phylogeography and genetics mostly support a path through the equatorial rainforest. Few high-resolution dated route maps — this plate is schematic.',
+          caption: 'Teaching schematic, not a census or a single invasion line.',
           imageAlt: 'Schematic arrows of the Bantu expansion across Africa on NASA Blue Marble',
         },
         austronesian: {
@@ -434,7 +434,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
   },
   'arctic-migratory-birds': {
     title: 'Arctic migratory birds',
-    hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a food pulse, and the winter is somewhere else.',
+    hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a short feast of food, and winter is spent elsewhere.',
     imageAlt: 'Arctic terns flying over a cold northern coast — a stand-in for high-latitude bird migration, not a named colony',
     what: 'This is a class card, not a second Arctic tern encyclopedia and not a third “routes after ice” page. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again. Thorup et al. (PNAS, 2021) hindcast the red-backed shrike’s Afro-Palearctic loop for 120,000 years: seasonal migration likely persisted through the glacial, often inside Africa; suitable European summer habitat expanded again after the LGM. That is a modeled class example, not a second bird-routes encyclopedia.',
     route:
@@ -563,7 +563,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
   },
   wildebeest: {
     title: 'Blue wildebeest',
-    hook: 'Rain writes the map: more than a million animals still follow new grass around the Serengeti–Mara.',
+    hook: 'Rain draws the map: more than a million animals still follow fresh grass across the Serengeti–Mara.',
     imageAlt: 'A blue wildebeest calf standing beside its mother on open grassland',
     what: 'The blue wildebeest is a grazing antelope of eastern and southern African savannas, IUCN Least Concern. The Serengeti–Mara population is the famous migratory one; other populations move less or not at all. UNESCO lists Serengeti National Park in part for this seasonal movement.',
     route:

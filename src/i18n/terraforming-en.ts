@@ -158,7 +158,7 @@ export const en: Record<string, GeoCopy> = {
     lessons:
       'NDVI is not a forest. Monoculture poplars are a drought bet. A shelterbelt can cut sand and still mine the water table. Count surviving, useful cover — and who lost grazing — not only seedlings issued.',
     sourcesNote:
-      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 on the programme to 2022; Sun et al. 2018 on Populus simonii dieback.',
+      'Turner, Davis & Barron, Annual Review of Environment and Resources 2023; Zheng et al. 2024 on the programme to 2022.',
   },
   'africa-great-green-wall': {
     title: 'Great Green Wall (Africa)',
@@ -172,11 +172,11 @@ export const en: Record<string, GeoCopy> = {
     construction:
       'National programmes differ. Ethiopia reports large seedling numbers; Senegal has better-documented plots; several states have thin monitoring. The UNCCD’s 2020 status report put restored area on the order of 4 million hectares (about 4 percent of the 100 million target) with uneven survival data. A 2021 “Accelerator” pledged new finance; disbursement lagged pledges.',
     outcome:
-      'In June 2024 the president of the previous UN desertification COP told Reuters that about 30 million hectares had been restored — 30 percent of the 2030 goal — and that the deadline would be missed. Survival rates are still poorly and inconsistently monitored outside a few countries. Three million jobs have been claimed in later briefings; treat jobs and hectares as programme figures, not a field census.',
+      'Later programme briefings have cited on the order of 30 million hectares restored — about 30 percent of the 2030 goal — and have said the deadline would be missed. Survival rates are still poorly and inconsistently monitored outside a few countries. Three million jobs have been claimed in later briefings; treat jobs and hectares as programme figures, not a field census.',
     lessons:
       'A wall was the wrong metaphor for a rainfall gradient. Restoration that pays local users lasts longer than ceremonial planting. Do not equate “hectares reported” with “trees alive in 2030.” Finance that is pledged and not spent is not a canopy.',
     sourcesNote:
-      'UNCCD 2020 implementation status; UNCCD GGW pages; Reuters 12 June 2024 on ~30 million ha and the missed 2030 path.',
+      'UNCCD Great Green Wall initiative pages; UNCCD 2020 implementation status and way ahead to 2030.',
   },
   'saudi-green-initiative': {
     title: 'Saudi Green Initiative',
@@ -190,11 +190,47 @@ export const en: Record<string, GeoCopy> = {
     construction:
       'Planting and “rehabilitation” campaigns are underway via MEWA and the National Center for Vegetation Cover. Officials said rehabilitated area moved from 18,000 hectares at the start to 250,000 by 2024 and 1 million in early 2026, with 159 million trees planted. Those are government and SPA figures, not a third-party stem count. A 2030 waypoint of 2.5 million hectares has been mentioned.',
     outcome:
-      'If the official million hectares holds under audit, it is 2.5 percent of the 40-million-hectare slogan — a start, not a completed greening of Arabia. Independent literature still stresses the older, better-measured story: decades of wheat grown on non-renewable aquifers, later scaled back (including a mid-2010s wheat phase-down) because the water did not return. Desalination mainly serves cities; it does not make cereal irrigation cheap. SGI’s own tree-water demand is a live research question (KAPSARC and others).',
+      'If the official million hectares holds under audit, it is 2.5 percent of the 40-million-hectare slogan — a start, not a completed greening of Arabia. Independent literature still stresses the older, better-measured story: decades of wheat grown on non-renewable aquifers, later scaled back (including a mid-2010s wheat phase-down) because the water did not return. Desalination mainly serves cities; it does not make cereal irrigation cheap. SGI’s own tree-water demand is a live research question.',
     lessons:
       'Keep the programmes apart: SGI ≠ pivot-circle wheat ≠ NEOM. Believe planted-and-surviving numbers when plots are public. A desert can host parks and still have a mined aquifer underneath. Ten billion trees is a target. One million hectares, if real, is a first increment.',
     sourcesNote:
-      'SGI official site; MEWA/SPA 2026 milestone claim; KAPSARC on agricultural water and SGI demand; FAO AQUASTAT for the groundwater and wheat context. Pivot-circle photo is historical irrigation, labelled as such.',
+      'Vision 2030 Saudi Green Initiative page; MEWA/SPA 2026 milestone claim; FAO AQUASTAT for the groundwater and wheat context. Pivot-circle photo is historical irrigation, labelled as such.',
+  },
+  'loess-plateau-rehabilitation': {
+    title: 'Loess Plateau rehabilitation',
+    hook: 'World Bank–supported watershed work in China’s Loess Plateau (1990s–2000s): terraces, vegetation, grazing rules — erosion control and livelihoods, not a second “green wall” slogan.',
+    imageAlt:
+      'Terraced loess hills in Shanxi — the class of slope-to-terrace work the World Bank projects funded, not a proof that the whole plateau is greened',
+    jurisdiction: 'People’s Republic of China (Shanxi, Shaanxi, Gansu, Inner Mongolia — Yellow River tributary watersheds)',
+    yearStatus:
+      'Phase I (P003608) launched October 1994, completed 2002. Phase II (P056216) approved May 1999, closed June 2005. Status: partial — the World Bank phases are closed; the plateau was not “finished.”',
+    plan: 'The 2004 World Bank case study states a primary aim: raise agricultural production and incomes on 1,560,000 hectares in nine Yellow River tributary watersheds, in 21–22 poor counties of Shanxi, Shaanxi, Gansu and Inner Mongolia. A secondary aim was less sediment into the Yellow River. The package was terraces and small irrigation; trees, shrubs and orchards on slopes; grassland; sediment-control dams; village land-use plans; and — around the works — restrictions on free grazing of sheep and goats. Phase I was an IDA credit of US$150 million toward about US$250 million total (about US$160 per hectare in that paper). This is watershed rehabilitation, not a planted “green wall” from Xinjiang to the sea.',
+    construction:
+      'The same 2004 paper lists, as built: about 90,500 hectares of terraces; tens of thousands of hectares of trees, shrubs, economic trees and orchards; about 100,000 hectares of grassland; 149 key dams, 1,140 warping dams and 1,956 check dams; and about 7,100 hectares of irrigation, mostly in dry Inner Mongolia. Droughts forced replanting of some trees. Grazing bans spread from project plots to some surrounding counties — a policy shift the authors treat as a project effect, not a separate loan line. A second World Bank project (P056216) continued the same class of work and closed in 2005.',
+    outcome:
+      'The 2004 case study reports grain output in the project area from 427,000 to about 700,000 tons, fruit from 80,000 to 345,000 tons, farmer net income per capita from 360 to 1,263 yuan, and the share of people under the official poverty line from 59 percent (1993) to 27 percent (2001), with benefits claimed for more than 1.2 million farmers. Treat those as World Bank / project figures, not an independent field census. The Loess Plateau as a whole is about 640,000 km²; the Phase I project area was on the order of 15,500 km². Later national programmes kept working the plateau. They are not this loan, and they are not a finished greening.',
+    lessons:
+      'Terraces, contracts and grazing rules can raise yields and cut sediment in treated watersheds without being a slogan wall. Count surviving cover and who keeps the land — not seedlings issued. A closed World Bank project is not the end of Yellow River erosion. Do not file this card under Three-North or Africa’s Great Green Wall.',
+    sourcesNote:
+      'World Bank 2004 Shanghai case study PDF (Phase I results); World Bank project pages P003608 (1994–2002) and P056216 (approved 1999, closed 2005).',
+  },
+  'jordan-badia-restoration': {
+    title: 'Jordan Badia restoration',
+    hook: 'Gulf War environmental compensation paid for dryland repair in Jordan’s Badia. Contour furrows, ponds, native fodder shrubs, and resting pastures — community grazing rules, not a belt of trees across Asia.',
+    imageAlt:
+      'Saltbush (Atriplex) in the White Desert / Wadi Dahek of north-eastern Jordan — the class of native fodder shrub Badia restoration plants, not a photograph of a named UNCC plot',
+    jurisdiction: 'Hashemite Kingdom of Jordan (Badia rangelands)',
+    yearStatus:
+      'UNCC Claim 5000304 award; Community Action Plan submitted 2013. Watershed works and grazing rules through the 2010s–2020s. Status: partial — award-funded programme, not a finished green wall.',
+    plan: 'UNCC Claim 5000304 funded cooperative rangeland restoration in Jordan’s Badia after Gulf War environmental damage awards. National Focal Point submitted a Community Action Plan (CAP) in 2013, accepted under the Follow-up Programme for Environmental Awards. CAP targets degraded Badia watersheds with water harvesting (ponds, earth dams, contour furrowing), planting of indigenous fodder shrubs, managed grazing / resting, and community-run fodder production. Best-scenario planning language aimed at restoring on the order of 10% of the Badia (~ 7,100 km²) via selected watersheds — not a continuous planted wall.',
+    construction:
+      'Ministry of Environment programme unit through the 2010s; UNCC follow-up oversight transferred to Jordan after Governing Council decisions in 2013–2014. ICARDA and partners: mechanised micro-catchments (e.g. Vallerani), native shrub planting, watershed sites such as Al Majeddyeh. Twelve watersheds in CAP planning; delivery uneven by basin. This is rangeland rehabilitation, not the African Great Green Wall and not China’s Three-North shelterbelt.',
+    outcome:
+      'Overstocking incentives remain; survival and monitoring quality vary; long-term resting needs community buy-in after award oversight thins. Treat official hectare claims as programme targets under audit, not a finished desert greening.',
+    lessons:
+      'An award can fund contour pits and still leave stocking incentives in place. A selected watershed is not a green wall. Count surviving shrubs and rested pasture under community rules — not award dollars or target hectares. The 10 percent Badia figure is a planning ceiling, not a finished canopy.',
+    sourcesNote:
+      'UNCC Claim 5000304 cooperative rangeland restoration; UNCC Follow-up Programme for Environmental Awards; ICARDA watershed restoration in Badia areas of Jordan.',
   },
   'stratospheric-aerosol-injection': {
     title: 'Stratospheric aerosol injection',
@@ -230,7 +266,7 @@ export const en: Record<string, GeoCopy> = {
     lessons:
       'A green satellite swirl is not sequestered carbon. Export and residence time are the measurement. The legal default on the high seas is no. Keep this card on the research shelf.',
     sourcesNote:
-      'IMO London Convention/Protocol ocean-fertilization pages; Boyd & others on IronEx/SOIREE (Nature 2000); Martin et al. 2013 on LOHAFEX export; 2012 parties’ statement via IMO materials.',
+      'Boyd & others on IronEx/SOIREE (Nature 2000); Martin et al. 2013 on LOHAFEX export.',
   },
   'marine-cloud-brightening': {
     title: 'Marine cloud brightening',
@@ -249,5 +285,77 @@ export const en: Record<string, GeoCopy> = {
       'A ship track is a clue, not a climate policy. Local reef shading experiments must stay labelled experiments. Do not sell MCB as a way to keep emitting. If a city can shut a trial, you do not have a planetary technology — you have a contentious instrument.',
     sourcesNote:
       'Latham et al. 2012 Philosophical Transactions review; University of Washington MCB Program; RRAP Cooling and Shading programme pages.',
+  },
+  'cirrus-cloud-thinning': {
+    title: 'Cirrus cloud thinning',
+    hook: 'Seed high ice clouds so they thin and leak more heat to space. Models disagree; IPCC has low confidence in the cooling. It is not SAI with a different name.',
+    imageAlt:
+      'MODIS true-color image of high cirrus clouds over the Pacific and central Chile — natural ice clouds, not a cirrus-thinning experiment',
+    jurisdiction: 'Research community (models; no operational national deployment)',
+    yearStatus:
+      'Cirrus cloud thinning (CCT); assessed in IPCC AR6 WG I alongside other radiation-budget proposals; NOAA SRM State of the Science (July 2024) lists CCT separately from SAI and MCB. Status: research.',
+    plan: 'CCT would add ice-nucleating particles (often discussed as bismuth triiodide or similar) into cold, high cirrus so ice crystals grow larger, fall faster, and leave a thinner, shorter-lived cloud. The intended effect is more outgoing longwave radiation — cooling by letting Earth’s heat escape — not by reflecting sunlight the way SAI or MCB would. NOAA’s SRM fact sheet draws that distinction explicitly.',
+    construction:
+      'Exists as model experiments and microphysics papers. No national CCT fleet, no outdoor seeding programme of record comparable even to cancelled SAI balloon trials. IPCC AR6 WG I assesses CCT among solar-radiation-modification–adjacent options and flags low confidence. Atmospheric chemistry and physics papers (e.g. Gasparini et al., ACP 2017) test how models proxy “seeding” and show that simple sedimentation tricks are a poor stand-in for real ice nucleation.',
+    outcome:
+      'Documented today: model ranges and process studies, not a measured planetary cool. Some simulations suggest possible cooling on the order of roughly 1–2 W m⁻² under optimistic assumptions; others find little effect or warming if clouds are “over-seeded.” IPCC’s low-confidence line is the honest summary for a public card.',
+    lessons:
+      'CCT does not remove CO₂ or fix ocean acidification. Rainfall, regional heat, and unintended cloud changes are uncertain. Do not caption this as a ready thermostat or as “the same as SAI.” If a model needs a perfect seeding recipe that nobody has demonstrated outdoors, the card stays Research.',
+    sourcesNote:
+      'IPCC AR6 WG I Chapter 4 (SRM / radiation proposals including CCT) and the Chapter 4 PDF; NOAA CSL State of the Science Fact Sheet: Solar Radiation Modification (July 2024); Gasparini et al. 2017 Atmospheric Chemistry and Physics on cirrus seeding proxies in models.',
+  },
+  'surface-albedo-modification': {
+    title: 'Surface albedo modification',
+    hook: 'Paint roofs and roads lighter so cities bounce more sun. That can cool streets and cut AC. It is not a global dimmer — cities are about one percent of Earth’s surface.',
+    imageAlt:
+      'Whitewashed roofs and terraces in Santorini, Greece — Mediterranean light-surface tradition, not a planetary albedo programme',
+    jurisdiction: 'Cities, buildings, and land-cover proposals (no planetary programme)',
+    yearStatus:
+      'Surface albedo enhancement (cool roofs, reflective pavements, land-cover brightening); listed in NOAA SRM SoS (July 2024); cool roofs documented by U.S. EPA for urban heat; buildings chapter of IPCC AR6 WG III. Status: research / local practice.',
+    plan: 'Raises the reflectivity of ground and building surfaces so more sunlight leaves instead of becoming heat. The practical end is cool roofs, cool pavements, and related land-cover choices. EPA treats cool roofs as an urban heat-island tool: lower roof and near-surface temperatures, less cooling energy in hot seasons. NOAA’s SRM overview lists surface albedo enhancement as a radiation-budget idea alongside SAI, MCB, and CCT — while noting far less research on global deployment than on SAI/MCB.',
+    construction:
+      'Cool roofs and light surfaces are ordinary building practice in many hot cities (including long Mediterranean white-wash traditions). There is no planetary albedo programme. IPCC AR6 WG III discusses reflective roofs and related sufficiency measures in the buildings chapter as local mitigation/adaptation — not as a substitute for emissions cuts.',
+    outcome:
+      'Documented at building and city scale: cooler roofs, lower indoor heat gain in hot climates, urban heat-island relief where materials and maintenance hold up. Global mean temperature effect of brightening urban surfaces alone is tiny because urban land is a small fraction of the planet. Treat “degrees of global cooling” claims as model curiosities unless tied to a named study with clear assumptions.',
+    lessons:
+      'Winter heating penalties in cold climates; glare; material ageing; rainfall and regional circulation side effects appear in some modelling. Surface brightening does not remove CO₂. Do not sell a white roof as planetary geoengineering — sell it as local heat management that happens to sit on the same shelf family as SRM research.',
+    sourcesNote:
+      'U.S. EPA Using Cool Roofs to Reduce Heat Islands; IPCC AR6 WG III Chapter 9 Buildings PDF; NOAA CSL SRM State of the Science Fact Sheet (July 2024); NASEM Reflecting Sunlight research agenda and governance catalog.',
+  },
+  'ocean-alkalinity-enhancement': {
+    title: 'Ocean alkalinity enhancement',
+    hook: 'Add alkalinity so seawater can hold more CO₂ as bicarbonate. Chemistry, not iron-fed plankton blooms. Still research — measurement and ecology are the hard parts.',
+    imageAlt:
+      'NOAA MAP-CO2 ocean acidification research buoy at Cayo Enrique Reef, Puerto Rico — carbonate-chemistry monitoring, not an alkalinity-enhancement deployment',
+    jurisdiction: 'Research groups / NOAA-supported mCDR trials (no commercial planetary licence)',
+    yearStatus:
+      'Ocean alkalinity enhancement (OAE); National Academies ocean CDR research strategy; NOAA Ocean Acidification Program CDR overview; NOPP marine CDR awards. Status: research.',
+    plan: 'OAE raises seawater alkalinity (mineral addition or electrochemical routes) so the ocean can take up more atmospheric CO₂ and store it mainly as dissolved bicarbonate/carbonate on long timescales. Unlike ocean iron fertilization, the lever is carbonate chemistry, not a stimulated bloom. NOAA notes a possible local co-benefit against acidification — and a long list of unknowns.',
+    construction:
+      'Lab work, models, and early field trials. NOAA’s Ocean Acidification Program hosts CDR context pages; NOPP has funded multi-agency marine CDR projects including OAE field and lab studies. The National Academies’ ocean-based CDR strategy treats OAE as a priority research track, not a finished climate service. London Convention/Protocol politics that constrain iron fertilization are a reminder that marine interventions need lawful assessment — do not imply OAE is already waved through.',
+    outcome:
+      'Documented: chemical principles and small-scale experiments showing alkalinity additions can increase CO₂ uptake in controlled settings; early trial reports remain limited in space and time. There is no verified gigatonne planetary removal ledger from OAE deployment.',
+    lessons:
+      'Lifecycle emissions of mining, grinding, shipping, or electrochemistry can erase net removal if ignored. Trace metals, particle plumes, and ecosystem responses need monitoring. Do not merge this card with ocean iron fertilization. Do not call OAE a substitute for cutting emissions.',
+    sourcesNote:
+      'NOAA Ocean Acidification Program Carbon Dioxide Removal page; NOAA / NOPP marine CDR research awards overview; National Academies A Research Strategy for Ocean-based CDR catalog; NOAA Science Advisory Board draft CDR research strategy PDF.',
+  },
+  'glacial-climate-intervention': {
+    title: 'Glacial climate intervention',
+    hook: 'Slow ice-sheet collapse with seabed curtains, basal-water tricks, or winter ice thickening — on paper. A 2024 research vision asks whether any of it can work. Nothing here is a built sea wall for Antarctica.',
+    imageAlt:
+      'Calving front of Thwaites Ice Shelf, Amundsen Sea, photographed on a NASA IceBridge flight — the class of ice the 2024 research vision discusses, not a built seabed curtain',
+    jurisdiction: 'Research vision (glaciology / polar engineering proposals; no deployed ice-sheet programme)',
+    yearStatus:
+      'Glacial Climate Intervention research vision (MacAyeal, Moore, Mankoff, Wolovick, Minchew et al., 2024); surveyed among high-latitude interventions in Climatic Change (2024). Status: research / speculative.',
+    plan: 'A family of proposals to reduce sea-level contribution from ice sheets and to slow Arctic sea-ice loss by local engineering rather than by dimming the sun. Ideas include seabed curtains or berms to block warm water from ice-shelf cavities, basal-hydrology interventions, and pumping seawater onto ice in winter to thicken it. The 2024 Glacial Climate Intervention: A Research Vision paper argues for a decade of research and transparent consultation — not for immediate construction.',
+    construction:
+      'White papers, models, and early engineering concepts. A 2024 Climatic Change survey graded dozens of high-latitude “emergency” interventions and found many ocean/ice ideas score poorly on readiness and risk knowledge. No government has an operational glacial-intervention programme that demonstrably holds an ice sheet.',
+    outcome:
+      'Documented: modelling that modest cavity barriers could slow melt in specific geometries; small-scale ice-thickening practice for winter roads is not the same as basin-scale Arctic pumps. There is no field proof that curtains or pumps stabilise Thwaites-class glaciers at climate-policy scale.',
+    lessons:
+      'Polar ecosystems, Indigenous rights, logistics, and failure modes are first-order — not footnotes. Glass-bead or albedo “fixes” for sea ice have published counter-results. Emissions cuts remain the primary lever; this card is research honesty, not a Plan B sticker.',
+    sourcesNote:
+      'Glacial Climate Intervention: A Research Vision (2024 PDF via AWI EPIC); Moore et al. 2024 Climatic Change survey of high-latitude interventions (journal page and DOI); NOAA CSL SRM State of the Science fact sheet for the SRM ≠ ice-sheet-engineering distinction.',
   },
 };

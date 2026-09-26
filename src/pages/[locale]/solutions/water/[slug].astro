@@ -1,0 +1,17 @@
+---
+import { isWaterEncyclopediaSlug, waterEncyclopediaSlugs } from '../../../../data/solutions-water';
+import { getWaterEncyclopediaBySlug, otherLocales, resolveLocale } from '../../../../i18n';
+import SolutionWaterDetailView from '../../../../views/SolutionWaterDetailView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) =>
+    waterEncyclopediaSlugs.map((slug) => ({ params: { locale, slug } })),
+  );
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && isWaterEncyclopediaSlug(slug) ? getWaterEncyclopediaBySlug(locale, slug) : undefined;
+---
+
+{item && <SolutionWaterDetailView item={item} />}

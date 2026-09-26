@@ -107,7 +107,7 @@ export const packLv: Record<string, InnovationCopy> = {
     risks:
       'Četri simti piecdesmit tonnas ir demonstrācija. «Bez ārēja siltuma» joprojām vajag elektrību. Ūdens iznākums ir uzņēmuma skaitlis. Neuzskati Bridžvoteras laukumu par nacionālu izņemšanas ķīli.',
     sourcesNote:
-      'Interesting Engineering par 450 t / 475 000 gal projektēšanu; Avnos 2026. g. 1. sept. darbības piezīme. Projektētā jauda nav gada uzskaitītas tonnas.',
+      'Avnos vietne un 2026. g. 1. sept. darbības piezīme (450 t / 475 000 gal projektēšana). Projektētā jauda nav gada uzskaitītas tonnas.',
   },
   'yara-sluiskil-ccs': {
     title: 'Yara Sluiskil CCS',
@@ -123,7 +123,7 @@ export const packLv: Record<string, InnovationCopy> = {
     risks:
       'Uztveršanas koeficientam, kuģošanai un glabāšanai jāstrādā kopā. CCS lietošana, lai stieptu fosilo amonjaku, ir īsta debates. 800 000 tonnas ir nopietna inženierija un joprojām maz blakus ES rūpniecībai. Neieraksti šo tonnu kā DAC kredītu.',
     sourcesNote:
-      'CarbonCredits atklāšanas piezīme (2026. g. sept.): līdz 800 000 t/gadā, atklāšana 7. septembrī, Northern Lights kuģi. Projektētā jauda nav gada noglabātas tonnas.',
+      'Yara ziņu un mediju hubs; Northern Lights lapas. Atklāšanas nedēļas ziņās projektētā uztveršana — līdz 800 000 t/gadā. Projektētā jauda nav gada noglabātas tonnas.',
   },
   'samsara-eco': {
     title: 'Samsara Eco — enzīmu pārstrāde',
@@ -138,7 +138,7 @@ export const packLv: Record<string, InnovationCopy> = {
     risks:
       'Pirmā rūpnīca nav atrisināta atkritumu krīze. Jaukto plastmasu joprojām lētāk aprakt vai sadedzināt. 20 000 tonnu Āzijas rūpnīca ir plāns 2028. gadam. Nesajauc Džerabomberas atklāšanu ar cirkulāru iepakojumu lielveikala mērogā.',
     sourcesNote:
-      'PKN Packaging News par Džerabomberas atklāšanu un 20 000 t plānu Āzijā. Pirmā rūpnīca nav lielveikala mēroga cirkularitāte.',
+      'Samsara Eco oficiālā vietne. Pirmā rūpnīca nav lielveikala mēroga cirkularitāte.',
   },
   'quaise-mmwave-drilling': {
     title: 'Quaise — milimetru viļņu urbšana',
@@ -218,5 +218,145 @@ export const packLv: Record<string, InnovationCopy> = {
       'Iemācīti modeļi var izdomāt pieklājīgus ekstrēmus vai lauzt saglabāšanu bez važām — tāpēc 1.1 pievienoja robežas. GPU nedeterminisms nozīmē, ka oficiālo skrējienu mājās pa bitiem neatkārtosi. Laikapstākļu MI joprojām vajag satelītus.',
     sourcesNote:
       'Dibinātāja saite: VAST Data eseja par AIFS 1.1. Prasmes skaitļi pēc Moldovan et al., GMD, 2026. ECMWF 1.1 nomainīja ar v2 2026. gada maijā.',
+  },
+  'esa-biomass': {
+    title: 'ESA Biomass',
+    hook: 'Pirmais P joslas radars kosmosā, būvēts meža biomasas un oglekļa kokos kartei — ne laikapstākļu modelis un ne emisiju inventārs.',
+    imageAlt:
+      'Mākslinieka skats uz ESA Biomass satelītu virs meža vainaga — P joslas misija, kas caur kokiem skatās uz koksnes masu',
+    what: 'Biomass ir ESA Earth Explorer satelīts. Tas nes pirmo kosmisko P joslas sintētiskās apertūras radaru, kas būvēts, lai mērītu meža biomasu un oglekli koksnē. Tas nav laikapstākļu prognozes modelis un nav siltumnīcas gāzu inventārs. 12 metru antena lido ap 666 km. ESA to palaida 2025. gada 29. aprīlī no Kuru, Franču Gviānā, ar Vega-C.',
+    problem:
+      'Cik oglekļa stāv tropu un citos mežos, no zemes joprojām slikti kartēts. Optiskie satelīti redz vainaga virsotni. Garāka radara vilnis var ieskatīties koku tilpumā — ja šo joslu var pacelt kosmosā.',
+    how: 'P joslas radars (viļņa garums ap 70 cm) iet cauri vainagam un atgriež signālu, kas saistīts ar koksnes biomasu. Produkts ir meža struktūras un oglekļa karte, ne emisiju strūkla un ne lietus prognoze. Zemes lauciņi joprojām kalibrē atjaunošanu.',
+    players:
+      'ESA FutureEO / Earth Explorer. Datus atvēra 2026. gada janvārī pēc ieviešanas. Kaimiņu kartītes, kas mēra atmosfēru vai emisijas (Climate TRACE, laikapstākļu MI), ir cits darbs.',
+    risks:
+      'P josla ir ierobežots radio resurs; traucējumi un kalibrācija ir parastas robežas. Biomasas karte nav oglekļa kredīts un nav tiesas inventārs. Tropu mākoņi traucē mazāk nekā optikai, bet atjaunošanai joprojām vajag lauka lauciņus.',
+    sourcesNote:
+      'ESA Biomass misijas lapa (FutureEO): pirmais P joslas SAR kosmosā; starts 2025. gada 29. aprīlī, Kuru / Vega-C. Ne laikapstākļi un ne emisiju inventārs.',
+  },
+  'vesuvius-challenge': {
+    title: 'Vesuvius Challenge — aizzīmogotie ruļļi',
+    hook: 'Rentgena CT un mašīnmācīšanās 2024. gada februārī atklāja pirmos fragmentus un 2026. gada jūnijā — veselu Herkulānes rulli; tas ir balvu konkursa, ne visas senatnes burvju OCR.',
+    imageAlt:
+      'Herkulānes pārogļoti papirusa fragmenti (PHerc. 1103 un PHerc. 110) — aizzīmogoto ruļļu klase, ko Vesuvius Challenge lasa, neatritinot',
+    what: 'Vesuvius Challenge ir atvērts mašīnmācīšanās un attēlošanas konkurss: nolasīt Herkulānes pārogļotos papirusus, tos neatverot. Ruļļi nāk no Papirusu villas — greznas villas Herkulānē, ko karsti dubļi un pelni apraka, kad Vezuvs izvirdās 79. gadā pēc Kristus. Daudzus ruļļus atrada 1750. gados; fiziska atritināšana tos bieži iznīcināja. Simti paliek aizzīmogoti. Konkurss sākās 2023. gada martā. Starp līdzdibinātājiem un pirmajiem sponsoriem ir Nat Friedman un Daniel Gross; galvenais padomnieks ir Brent Seales (EduceLab / Kentuki universitāte), kura laboratorija izstrādāja «virtuālo atritināšanu». Partneri ir Neapoles Nacionālā bibliotēka, sinhrotroni (Diamond Light Source; ESRF BM18) un Scroll Prize, Inc., ASV bezpeļņas organizācija. Pēc scrollprize.org (pārbaudīts 2026. gada 14. septembrī) piešķirti aptuveni 1,87 miljoni dolāru balvu; jauna 1 miljona dolāru Grand Prize mērķē 2027. gada jūniju.',
+    problem:
+      'Romas villas bibliotēka 79. gadā pēc Kristus pārogļojās un ir pārāk trausla, lai ruļļus atritinātu ar rokām.',
+    how: 'Skenēšana — augstas izšķirtspējas rentgena CT (bieži sinhrotronā) veido aizzīmogotā ruļļa 3D tilpumu. Oglekļa tinte skenā gandrīz neatšķiras no pārogļotā papirusa. Izsekošana un izlīdzināšana — programmatūra seko tinumam tilpumā un izlīdzina to par virtuālu lapu (segmentācija / virtuālā atritināšana). Blīvais saiņojums un plīsumi joprojām sagrauj pilnu automatizāciju. Tintes noteikšana — modeļi, kas apmācīti uz fragmentiem ar redzamu tinti, mācās vājus tekstūras pavedienus (tostarp «crackle» rakstu) un zīmē tintes varbūtību uz izlīdzinātās virsmas. Tad zinātnieki lasa un pārbauda grieķu tekstu. Uzvarējušās metodes un skena dati tiek publicēti atvērti.',
+    players:
+      '2024. gada 5. februāris — 2023. gada Grand Prize (700 000 dolāru) Youssef Nader, Luke Farritor un Julian Schilliger: ap 15 kolonnām / vairāk nekā 2000 rakstzīmēm (ap 5%) no PHerc. Paris 4 (1. rullis) — epikūriešu saruna par baudu (visticamāk Filodēms). First Letters agrāk, 2023. gada beigās (Farritora vārds πορφύρας / «purpurs»). 2024. gada balvu cikls — 2024. gada Grand Prize (90% no četriem ruļļiem) nav piešķirta; automatizētās segmentācijas balvas izsniegtas, bet tintes atgūšana vēl nav 2023. gada līmenī visos mērķos. 2025. gada 5. maijs — First Title Prize (60 000 dolāru) Marcel Roth un Micha Nowak: joprojām savītā PHerc. 172 virsraksts kā Filodēms, Par netikumiem (1. grāmata, gaidot pilnu zinātnisku apstiprinājumu). 2026. gada 25. jūnijs — pirmā pilnīgā virtuālā atritināšana un saglabātā teksta lasīšana PHerc. 1667 (4. rullis); preprint arXiv; radniecīgs darbs Scientific Reports (2026). Atvērti dati scrollprize.org/data. Turpinās — ikmēneša progresa balvas; 2027. gada Grand Prize (1 miljona dolāru fonds, termiņš 2027. gada 25. jūnijs).',
+    risks:
+      'Ne katrs noskenētais rullis vēl dod lasāmu tinti; rīkotāji ziņo tintes signālu mazākumā no aptuveni 45 noskenētajiem ruļļiem un fragmentiem. Metode mērķē pārogļotu, joprojām savītu Herkulānes tipa materiālu — ne vispārīgu OCR visām senajām grāmatām. Modeļi var halucinēt burtu formas; balvas prasa atvērtas metodes un papiroloģisku pārbaudi. Simti ruļļu paliek nelasīti; liela daļa villas, iespējams, joprojām ir zem zemes.',
+    sourcesNote:
+      'Galvenais avots: scrollprize.org (pārbaudīts 2026. gada 14. septembrī). 2023. gada Grand Prize piešķirta 2024. gada februārī; 2024. gada Grand Prize nav piešķirta. Tā nav visas senatnes nolasīšana.',
+  },
+  'edna-biodiversity-monitoring': {
+    title: 'Bioloģiskās daudzveidības monitorings ar eDNA',
+    hook: 'DNS no ūdens un augsnes plus NatureMetrics platforma (Habitat Insights / Portfolio Assessment 2025) dod sugu sarakstus TNFD tipa pārskatiem — nav koraļļu atjaunošana un nav DAC.',
+    imageAlt:
+      'Biologs ņem ūdens paraugus vides DNS noteikšanai — lauka solis līdz sugu sarakstam, ne katra dzīvnieka skaitīšana upē',
+    what: 'Vides DNS (eDNA) metodes atrod sugas pēc ģenētiskajām pēdām ūdenī, augsnē vai gaisā. NatureMetrics savieno paraugu ņemšanu, laboratoriju un portfeļa paneli (Nature Intelligence Platform) dabas riskam un atklāšanai. 2024.–2026. gada laidienos ir autonomas ūdens paraugošanas partnerības, Habitat Insights (ģeotelpisks dzīvotņu novērtējums, paziņots 2025. gada sākumā) un ar MI atbalstīts portfeļa novērtējums (Portfolio Assessment).',
+    problem:
+      'Atļaujas un dabas pārskati joprojām balstās uz lēnām punktu aptaujām, bet regulatori un aizdevēji prasa salīdzināmus bioloģiskās daudzveidības pierādījumus veseliem objektu portfeļiem.',
+    how: 'Lauka komandas vai automātiskie paraugotāji savāc filtrētu ūdeni vai augsni. Laboratorijas amplificē un sekvencē marķiergēnus. Bioinformātika salīdzina nolasījumus ar references bibliotēkām. Ģeotelpiskie slāņi un prognožu vērtējumi stāv blakus sugu sarakstiem, lai vispirms izsijātu daudzus objektus.',
+    players:
+      'NatureMetrics komerciāli ievieš rīku ieguves, atjaunīgās enerģijas un infrastruktūras klientiem (uzņēmuma publiskie materiāli). Paralēli iet publiskā zinātne un ASV Nacionālā ūdens eDNA stratēģija (2024) ar kopīgiem standartiem ūdens invazīvo sugu un bioloģiskās daudzveidības monitoringam.',
+    risks:
+      'eDNA uztver ģenētiskās pēdas, ne skaitu un ne dzīvnieku veselību pašu par sevi. Pozitīvs trāpījums nav skaitīšana. Viltus izlaidumi un trāpījumi, DNS, ko nes straume, un plānas references bibliotēkas var maldināt. Komerciāls panelis neaizstāj lauka ekoloģiju tur, kur to prasa regulators.',
+    sourcesNote:
+      'NatureMetrics platforma un Habitat Insights palaišana; USGS ziņa par Nacionālo ūdens eDNA stratēģiju. Skrīnings un pierādījums, ne pilns bioloģiskās daudzveidības uzskaitījums.',
+  },
+  'marine-litter-satellite': {
+    title: 'Jūras atkritumi no kosmosa',
+    hook: 'ESA/JRC darbs (Nature Communications, 2024. gada jūnijs) rāda: Sentinel-2 kartē peldošu atkritumu joslas Vidusjūrā — karstie punkti un sezonas, ne enzīmu rūpnīca.',
+    imageAlt:
+      'Plastmasa un citi atkritumi Atlantijas krastā — atkritumu klase, kuras jūras joslas meklē Sentinel-2; tā nav 2024. gada raksta detekcijas karte',
+    what: '2024. gada recenzēts pierādījums: Copernicus Sentinel-2 attēli Vidusjūras mērogā (ap 300 000 ainu) atrod peldošu atkritumu joslas kā proxies ieplūdei un ceļiem. Darbs gāja ar ESA līgumiem un ES Kopīgā pētniecības centra līdzdalību.',
+    problem:
+      'Plastmasa un citi peldoši atkritumi šķērso veselas jūras, bet pārvaldniekiem joprojām nav baseina mēroga karšu: kur veidojas blīvas joslas un kad no sauszemes nāk uzplūdi.',
+    how: 'Algoritmi atzīmē gaišas, izstieptas saplūšanas joslas 10 m optiskajos kanālos. Detekcijas salīdzina ar hidroloģiju un krasta noteces modeļiem. Lietusgāzes un krasta straumes iznāk par galvenajiem iemesliem, kad un kur atkritumi sakrājas.',
+    players:
+      'Pētniecisks monitorings pa Vidusjūras vēsturisko arhīvu (raksta analīzes logs — 2015.–2021.), vēl ne ikdienas operacionāls dienests. JRC piezīme 2024. gada 14. jūnijā rāda rezultātu kā pavērsienu politikas uzraudzībai, ne kā tīrīšanas kuģi.',
+    risks:
+      'Šodienas sensori redz blīvus metru mēroga agregātus. Izkliedēta mikroplastmasa paliek neredzama. Mākoņi un līdzinieki (putas, sargass) jāatsijā. No viena raksta neseko globāla operacionāla plastmasas karte.',
+    sourcesNote:
+      'Cózar et al., Nature Communications (2024); ES JRC ziņa, 2024. gada 14. jūnijs; Copernicus Sentinel-2 (ESA). Joslas Vidusjūrā, ne globāla operacionāla karte.',
+  },
+  'encore-nature-risk': {
+    title: 'ENCORE — dabas riska rīks',
+    hook: 'ENCORE (Global Canopy / UNEP FI / UNEP-WCMC) — bezmaksas skrīnings nozaru atkarībām un ietekmēm; liela bāzes atjaunināšana 2024. gada jūlijā. Nav DAC un nav eDNA laboratorija.',
+    imageAlt:
+      'Amazones lietusmeža un upes skats no gaisa — dzīvo sistēmu klase, kuru atkarības un ietekmes sijā ENCORE; tas nav rīka ekrānuzņēmums',
+    what: 'ENCORE (Exploring Natural Capital Opportunities, Risks and Exposure) ir bezmaksas tiešsaistes rīks no Global Canopy, UNEP Finance Initiative un UNEP-WCMC. Tas palīdz finanšu iestādēm un uzņēmumiem skatīt, kā ražošanas procesi ir atkarīgi no dabas un kā to ietekmē. TNFD un radniecīgi ietvari uz to bieži norāda.',
+    problem:
+      'Bankām un uzņēmumiem, kas pieņem TNFD, joprojām vajag bezmaksas pirmo skrīningu, kas saista saimnieciskās darbības ar dabas atkarībām un ietekmēm, pirms dziļām uzmērīšanām objektā.',
+    how: 'Lietotājs pārlūko saites starp saimnieciskajām darbībām, ekosistēmu pakalpojumiem un ietekmes virzītājiem atjauninātā zināšanu bāzē. 2024. gada jūlija atjauninājums (projekts SUSTAIN) precizēja materialitātes vērtējumus, ekosistēmu detalizāciju un vērtības ķēdes saites. Vēlāk šie dati iegāja Explore un Natural Capital moduļos.',
+    players:
+      'Publisks tīmekļa rīks. ENCORE publiskie materiāli min desmitiem tūkstošu reģistrētu lietotāju. To izmanto kā pirmo ieeju TNFD LEAP tipa novērtējumos.',
+    risks:
+      'ENCORE ir materialitātes un ceļu skrīnings, ne objekta uzmērīšana un ne zaļā gaisma projektam. Tas neaizstāj telpiskus bioloģiskās daudzveidības datus, licences nosacījumus vai konsultācijas ar kopienām. Lēmumiem un atklāšanai joprojām vajag konkrētas vietas datus.',
+    sourcesNote:
+      'ENCORE vietne un 2024. gada jūlija atjauninājuma piezīme; TNFD rīku katalogs. Atvērts dabas riska skrīnings, ne noslēgts bioloģiskās daudzveidības uzskaitījums.',
+  },
+  'nasa-pace': {
+    title: 'NASA PACE — okeāna krāsa un ekosistēma',
+    hook: 'NASA PACE (starts 2024. g. 8. feb.; publiski dati no aprīļa) — hiperspektrāla okeāna krāsa plus polarimetri: fitoplanktons, aerosoli un mākoņi kopā. Nav Biomass radars un nav atkritumu joslas.',
+    imageAlt:
+      'NASA vizualizācija okeāna krāsai no PACE Ocean Color Instrument — fitoplanktona raksti, ne meža biomasas karte un ne plastmasas inventārs',
+    what: 'PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) ir NASA Zemes zinātnes satelīts, palaists 2024. gada 8. februārī no Kanaveralas zemesraga. Tas nes hiperspektrālu Ocean Color Instrument (OCI) un divus daudzu leņķu polarimetrus (HARP2 un SPEXone), lai okeāna bioloģiju un atmosfēras daļiņas novērotu kopā.',
+    problem:
+      'Okeāna krāsas satelīti ilgi redzēja vispārēju zaļumu. Pārvaldniekiem vajag ikdienas globālas kartes, kuras fitoplanktona kopienas ir klāt un kā aerosoli un mākoņi saistās ar šo bioloģiju.',
+    how: 'OCI mēra no ūdens aizejošo atstarojumu daudzās šaurās joslās, lai atdalītu fitoplanktona kopienu tipus, ne tikai kopējo hlorofilu. Polarimetri ierobežo aerosolu un mākoņu īpašības, kas arī veido klimatu un gaisa kvalitāti. Publiski zinātnes kvalitātes dati sākās 2024. gada 11. aprīlī.',
+    players:
+      'NASA, globāla Zemes orbīta, atvērta datu izdale. Lietojumi: kaitīgo ziedēšanu izsekošana, zvejniecībai būtiski okeāna veselības pētījumi un klimata procesi.',
+    risks:
+      'Optiski sarežģīti piekrastes ūdeņi un mākoņi joprojām traucē atjaunošanu. PACE labāk šķir planktona kopienas. Tas nav zvejniecības pārvaldības sistēma pati par sevi un nav plastmasas inventārs. Pārvaldības lēmumiem blakus satelītam joprojām vajag in situ tīklus.',
+    sourcesNote:
+      'NASA PACE misijas lapa, 2024. gada 8. februāra palaišanas relīze un NASA Science lapa. Publiski dati no 2024. gada 11. aprīļa. Nav meža biomasas radars un nav plastmasas inventārs.',
+  },
+  'methanesat': {
+    title: 'MethaneSAT — naftas un gāzes metāns no kosmosa',
+    hook: 'MethaneSAT (starts 2024. g. 4. mar.; sakari zaudēti 20. jūn.) kartēja metānu ~45 baseinos — dati un ACP 2026 zinātne ir atklāti. Nav Climate TRACE inventārs un nav laikapstākļu modelis.',
+    imageAlt: 'Suomi NPP nakts gaismas virs Permian baseina 2024. gada maijā — gāzes lāpas naftas un gāzes reģionā, ko mērīja MethaneSAT, ne MethaneSAT aina',
+    what: 'MethaneSAT bija mērķtiecīgi būvēts metāna novērošanas satelīts, ko izstrādāja MethaneSAT LLC (Environmental Defense Fund saistītais uzņēmums) un palaida 2024. gada 4. martā ar SpaceX. Tas bija paredzēts, lai saskaitītu kopējo metānu plašos naftas un gāzes reģionos — arī izkliedētus avotus, kurus citiem sensoriem grūti sasummēt — un publicētu brīvu, salīdzināmu baseinu analītiku.',
+    problem: 'Metānu ziņo ar koeficientiem, nevis mēra veselos baseinos',
+    how: 'Plata tvēruma spektrometrs atjaunoja metāna kolonnu augstā pamatizšķirtspējā. Atmosfēras inversijas pārvērta šīs kolonnas laukumu emisiju tempos (ap 4 km šūnas) un baseinu kopsummās. Publiskie laidieni aptver vairāk nekā 221 ainu 45 reģionos (apmēram puse pasaules sauszemes naftas un gāzes ieguves). Misijas zinātne turpinās literatūrā, tostarp baseinu analīze ACP 2026.',
+    players: 'Globāla lielo baseinu tēmēšana (Permian, Eagle Ford, San Joaquin, Centrālāzija, Tuvie Austrumi un citi). Sistēmas publiskais kopsavilkums (2026. gada februāris): izmērītais naftas un gāzes metāns aptuveni par 50% augstāks nekā EDGAR / EPA stila inventāri vērtētajos baseinos. Neviens izmērītais baseins nesasniedza OGDC 0,2% intensitātes mērķi.',
+    risks: 'Anomālija orbītā, pēc tam sakari zaudēti 2025. gada 20. jūnijā (avionika vai elektroapgādes apakšsistēma — cēlonis nav viennozīmīgi noteikts). Šī kartīte ir par 2024.–2025. gada misiju un tās atklātajiem datiem un zinātni, ne par ikdienas globālu metāna darbību. Vietu labošanai vajag zemes noplūžu meklēšanu. Intensitātes un inventāri nesakrīt daudzu iemeslu dēļ. Viens raksts nav tiesas spriedums.',
+    sourcesNote: 'MethaneSAT palaišanas lapa, sistēmas skats (2026. gada februāris) un anomālijas izmeklēšana; Varon et al., Atmos. Chem. Phys. 26, 5961–5980 (2026). Viens raksts nav tiesas spriedums.',
+  },
+  'firesat': {
+    title: 'FireSat — agrīna ugunsgrēku noteikšana no kosmosa',
+    hook: 'Earth Fire Alliance / Muon / Google Research — Protoflight 2025. g. mar.; trīs operacionāli satelīti 2026. g. 7. jūl. AI salīdzina IR plankumus ~5×5 m. Nav laikapstākļu modelis un nav Climate TRACE.',
+    imageAlt: 'Ugunsgrēki Portugālē un Spānijā, redzēti no orbītas — uguns klase, ko FireSat būvēts atzīmēt agrāk, ne FireSat kadrs',
+    what: 'FireSat ir mērķtiecīgi būvēta ugunsgrēku noteikšanas un novērošanas konstelācija bezpeļņas organizācijas Earth Fire Alliance vadībā, ar Muon Space aparātiem un Google Research sensora un AI ieguldījumu. Konstrukcijas mērķis: ugunsgrēki apmēram 5×5 metri un, kad konstelācija būs pilna, atjauninājumi ik 20 minūtes vai biežāk.',
+    problem: 'Mazi ugunsgrēki neredzami, līdz frontes jau lielas',
+    how: 'Daudzspektru infrasarkanie attēli un AI, kas salīdzina katru zemes punktu ar iepriekšējo attēlu un kontekstu (laikapstākļi, infrastruktūra), lai atzīmētu agru ugunsgrēku. Protoflight (starts 2025. gada martā) apstiprināja mazu un vēsu ugunsgrēku noteikšanu, ko citas sistēmas palaida garām. Trīs operacionāli satelīti startēja 2026. gada 7. jūlijā ar SpaceX Transporter-17. Tā ir sākotnējā operacionālā gatavība.',
+    players: 'Protoflight savāca vairāk nekā 1 miljonu infrasarkano kadru dažādos kontinentos (Muon un Earth Fire Alliance publiskās piezīmes). Operacionālais trio ir nodošanā ekspluatācijā pēc 2026. gada jūlija starta. Early Adopter ugunsdzēsības dienestiem dati paredzēti 2026. gada ceturtajā ceturksnī (vismaz divreiz dienā), plašāka piekļuve pa posmiem 2027.–2028. gadā.',
+    risks: 'Nav nacionālo brīdinājuma dienestu vai aviācijas aizstājējs. Konstelācijas blīvums un līdz ar to atkārtojums aug gadiem. Pilns globāls 20 minūšu atkārtojums ir 2030. gadu mērķis. 2026. gada ceturtā ceturkšņa Early Adopter dati ir aptuveni divreiz dienā, vēl ne globāla darbība katrai aģentūrai. Noteikšanai joprojām vajag zemes apstiprinājumu. Dūmi, mākoņi un viltus trauksmes paliek grūti. Šodienas pakalpojums nav «katrs ugunsgrēks uz Zemes ik 20 minūtes».',
+    sourcesNote: 'Earth Fire Alliance, starts 2026. gada 7. jūlijā; Google Research FireSat lapa un 2024. gada 16. septembra paziņojums; Muon Space starta piezīme. Tas vēl nav globāls pakalpojums ar 20 minūšu atkārtojumu.',
+  },
+  'google-flood-hub': {
+    title: 'Google Flood Hub — AI upju plūdu prognozes',
+    hook: 'Flood Hub (Nature, 2024. g. 20. mar.; pārklājums no 2024. g. nov. — 100+ valstis / ~700 milj.) dod bezmaksas AI upju plūdu prognozes līdz 7 dienām — hidroloģija, ne GraphCast.',
+    imageAlt: 'Landsat un MODIS skats uz Rufidži upes plūdiem Tanzānijā 2024. gada aprīlī — upju plūdu klase, ko prognozē Flood Hub, ne Flood Hub ekrānuzņēmums',
+    what: 'Flood Hub ir Google bezmaksas platforma AI upju plūdu prognozēm: reāllaika kartes un brīdinājumi ar sagatavošanās laiku līdz aptuveni septiņām dienām, caur Flood Hub un, kur pieejams, Search, Maps un Android partneriem.',
+    problem: 'Daudzdienu plūdu brīdinājumu nav tur, kur maz hidroloģisko postu',
+    how: 'Globāls mašīnmācīšanās hidroloģiskais modelis prognozē caurplūdumu un plūdu risku. To mācīja un vērtēja baseinos ar posteņiem un bez tiem (Nature, 2024. gada 20. marts). Pārbaudīto publisko prognožu pārklājums 2024. gada novembrī paplašinājās no aptuveni 80 līdz vairāk nekā 100 valstīm (ap 700 miljoniem cilvēku, iepriekš ap 460 miljoniem). Ekspertu slāņi pievieno ap 250 000 virtuālo posteņu aptuveni 150 valstīs pētniekiem un partneriem.',
+    players: 'Publiskais Flood Hub un partnerības ar palīdzības grupām (anticipējošo izmaksu piloti, uz kuriem atsaucas Google 2025. gada produktu piezīmes). Tas nav nacionālā plūdu brīdinājuma dienesta aizstājējs.',
+    risks: 'Spēcīgākais upju plūdos ar pārbaudāmiem posteņiem. Pēkšņie un pilsētu plūdi paliek grūtāki. Virtuālo posteņu slāņi ekspertiem nav tas pats, kas pilnībā pārbaudīti publiski brīdinājumi visur. Nacionālie meteoroloģijas un hidroloģijas dienesti paliek oficiālo brīdinājumu autoritāte. Flood Hub nav GraphCast, nav WeatherNext un nav AIFS. Prasme mainās pa baseiniem un datu blīvumu. Tas ir lēmumu atbalsts: pirms evakuācijas apgalvojuma jāsaskaņo ar vietējām iestādēm.',
+    sourcesNote: 'Nearing et al., Nature, 2024. gada 20. marts; Google pārklājuma paplašinājums, 2024. gada 11. novembris; Flood Hub; Google Research plūdu lapa. Oficiālie brīdinājumi paliek nacionālajiem dienestiem.',
+  },
+  'alphaearth-foundations': {
+    title: 'AlphaEarth Foundations — Zemes embeddingi',
+    hook: 'Google DeepMind AlphaEarth (2025. g. 30. jūl.) savieno multi-sensoru datus 64-D embeddingos pie 10 m; ikgadējais Satellite Embedding V1 ir Earth Engine. Kartēšanas fonds — nav Prithvi svari un nav laikapstākļu prognoze.',
+    imageAlt: 'Landsat skats uz lauksaimniecības zemēm Taivānā — zemes raksta klase, ko ģeoembeddingi apkopo, ne AlphaEarth renderējums',
+    what: 'AlphaEarth Foundations (paziņots 2025. gada 30. jūlijā) ir Google DeepMind modelis, kas būvē vienotu digitālu attēlojumu — embeddinga lauku — Zemes sauszemei un piekrastes ūdeņiem, apvienojot petabaitus Zemes novērojumu un radniecīgu slāņu.',
+    problem: 'Planētas kartēšana buksē retu etiķešu un dažādu sensoru dēļ',
+    how: 'Katrai aptuveni 10×10 m šūnai modelis dod kompaktu 64 dimensiju embeddingu, kas apkopo daudzu sensoru kontekstu laikā (DeepMind: aptuveni 16 reižu mazāka krātuve nekā citām AI sistēmām, kuras viņi testēja). Gada embeddingi publicēti kā Satellite Embedding datu kopa Google Earth Engine kartēm pēc pieprasījuma: zemes lietojums, ekosistēmas, lauksaimniecības izmaiņas.',
+    players: 'Earth Engine datu kopa ir publiska. DeepMind min partneru testus ar vairāk nekā 50 organizācijām (ar FAO saistīts ekosistēmu atlanta darbs, MapBiomas, universitātes). Embeddingus lieto, lai klasificētu nekartētas ekosistēmas un paātrinātu kartes pie retām etiķetēm. Tas nav laikapstākļu dienests.',
+    risks: 'Embeddingi paātrina kartēšanu. Tie neaizstāj lauka pārbaudi, zemes tiesības vai politiku. Kvalitātes apgalvojumi, piemēram mazāka kļūda pret DeepMind testētajām bāzēm, ir modeļa kartes zinātne, ne garantija katrai nacionālajai kartei. Antarktīdai un noturīgiem mākoņiem joprojām vajag piesardzību. Embeddinga lauks ir sākuma attēlojums. Lejupējiem klasifikatoriem joprojām vajag etiķetes, kvalitātes kontroli un pārvaldību. Gada embeddinga produkts viens pats nenozīmē, ka AlphaEarth redz katru izmaiņu uz Zemes reāllaikā.',
+    sourcesNote: 'Google DeepMind, 2025. gada 30. jūlijs; Earth Engine Satellite Embedding V1 katalogs; arXiv 2507.22291. Gada embeddings nav reāllaika izmaiņu karte.',
   },
 };

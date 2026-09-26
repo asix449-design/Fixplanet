@@ -113,7 +113,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       risks:
         'Four hundred and fifty tonnes is a demonstration. “No external heat” still needs electricity. Water output is a company figure. Do not treat a Bridgewater pad as a national removal wedge.',
       sourcesNote:
-        'Interesting Engineering summary of the 450 t / 475,000 gal design; Avnos 1 Sep 2026 operations note. Design capacity is not a year of metered tonnes.',
+        'Avnos site and 1 Sep 2026 operations note (450 t / 475,000 gal design). Design capacity is not a year of metered tonnes.',
     },
     'yara-sluiskil-ccs': {
       title: 'Yara Sluiskil CCS',
@@ -129,7 +129,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       risks:
         'Capture rate, shipping, and storage have to operate together. Using CCS to stretch fossil ammonia is a real debate. 800,000 tonnes is serious engineering and still small next to EU industry. Do not file this tonne as a DAC credit.',
       sourcesNote:
-        'CarbonCredits inauguration note (Sep 2026): up to 800,000 t/yr, 7 Sep opening, Northern Lights shipping. Design capacity is not a year of stored tonnes.',
+        'Yara news-and-media hub; Northern Lights pages. Opening-week coverage put design capture at up to 800,000 t/yr. Design capacity is not a year of stored tonnes.',
     },
     'samsara-eco': {
       title: 'Samsara Eco — enzymatic recycling',
@@ -144,7 +144,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
       risks:
         'A first plant is not a solved waste crisis. Mixed plastic is still cheaper to bury or burn. The 20,000-tonne Asian plant is a plan for 2028. Do not confuse a Jerrabomberra opening with circular packaging at supermarket scale.',
       sourcesNote:
-        'PKN Packaging News on the Jerrabomberra opening and 20,000 t Asia plan. A first plant is not supermarket-scale circularity.',
+        'Samsara Eco official site. A first plant is not supermarket-scale circularity.',
     },
     'quaise-mmwave-drilling': {
       title: 'Quaise millimetre-wave drilling',
@@ -223,6 +223,146 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
         'Learned models can invent polite extremes or break conservation if unconstrained — that is why 1.1 added bounds. GPU non-determinism means you cannot bit-reproduce an official run at home. AI weather still needs the satellites.',
       sourcesNote:
         'Founder link: VAST Data essay on AIFS 1.1. Skill numbers follow Moldovan et al., GMD, 2026. ECMWF superseded 1.1 with v2 in May 2026.',
+    },
+    'esa-biomass': {
+      title: 'ESA Biomass',
+      hook: 'The first P-band radar in space, built to map forest biomass and the carbon in trees — not a weather model and not an emissions inventory.',
+      imageAlt:
+        'Artist view of ESA’s Biomass satellite over a forest canopy, the P-band mission that looks through trees to woody mass',
+      what: 'Biomass is an ESA Earth Explorer satellite. It carries the first spaceborne P-band synthetic-aperture radar, designed to measure forest biomass and the carbon stored in woody vegetation. It is not a weather forecast model and not a greenhouse-gas inventory. A 12-metre antenna flies at about 666 km. ESA launched it on 29 April 2025 from Kourou, French Guiana, on Vega-C.',
+      problem:
+        'How much carbon sits in tropical and other forests is still poorly mapped from the ground. Optical satellites see the canopy top. A longer radar wave can look into the volume of the trees — if you can fly that band from space.',
+      how: 'P-band radar (wavelength about 70 cm) penetrates the canopy and returns a signal related to woody biomass. The product is a forest-structure and carbon map, not a plume of emissions and not a rain forecast. Ground plots still calibrate the retrieval.',
+      players:
+        'ESA FutureEO / Earth Explorer. Data were opened in January 2026 after commissioning. Neighbor cards that measure the atmosphere or emissions (Climate TRACE, weather AI) are a different job.',
+      risks:
+        'P-band is a restricted radio allocation; interference and calibration are ordinary limits. A biomass map is not a carbon credit and not a court inventory. Tropical cloud is less of a problem than for optical sensors, but the retrieval still needs field plots.',
+      sourcesNote:
+        'ESA Biomass mission page (FutureEO): first P-band SAR in space; launch 29 April 2025, Kourou / Vega-C. Not weather, not an emissions inventory.',
+    },
+    'vesuvius-challenge': {
+      title: 'Vesuvius Challenge — sealed scrolls',
+      hook: 'X-ray CT and machine learning recovered first passages in Feb 2024 and a full Herculaneum scroll in June 2026 — a prize contest, not magic OCR of all antiquity.',
+      imageAlt:
+        'Carbonized Herculaneum papyrus fragments (PHerc. 1103 and PHerc. 110) — the class of sealed rolls Vesuvius Challenge reads without opening',
+      what: 'Vesuvius Challenge is an open machine-learning and imaging contest to read the carbonized Herculaneum papyri without opening them. The scrolls come from the Villa of the Papyri — a luxury villa at Herculaneum buried under hot mud and ash when Mount Vesuvius erupted in AD 79. Many rolls were found in the 1750s; physical unrolling often destroyed them. Hundreds remain sealed. The challenge launched in March 2023. Co-founders and founding sponsors include Nat Friedman and Daniel Gross, with principal advisor Brent Seales (EduceLab / University of Kentucky), whose lab pioneered “virtual unwrapping.” Partners include the National Library of Naples, synchrotron facilities (Diamond Light Source; ESRF BM18), and Scroll Prize, Inc., a US nonprofit. As of scrollprize.org (checked 14 Sep 2026), roughly $1.87M in prizes have been awarded; a new $1M Grand Prize targets June 2027.',
+      problem:
+        'A Roman villa library carbonized in AD 79 is too fragile to unroll. Opening by hand destroyed scrolls for centuries.',
+      how: 'Scan — High-resolution X-ray CT (often at a synchrotron) builds a 3D volume of the sealed roll. Carbon ink barely differs from carbonized papyrus in the scan. Trace and flatten — Software follows the wound sheet inside the volume and flattens it into a virtual page (segmentation / virtual unwrapping). Dense packing and tears still defeat full automation. Detect ink — Models trained on fragments with visible ink learn faint texture cues (including the “crackle” pattern) and paint ink probability on the flattened surface. Scholars then read and check the Greek. Winning methods and scan data are released openly.',
+      players:
+        '5 Feb 2024 — 2023 Grand Prize ($700,000) to Youssef Nader, Luke Farritor, and Julian Schilliger: ~15 columns / 2,000+ characters (~5%) from PHerc. Paris 4 (Scroll 1) — Epicurean discussion of pleasure (likely Philodemus). First Letters earlier in late 2023 (Farritor’s word πορφύρας / “purple”). 2024 prize cycle — 2024 Grand Prize (90% of four scrolls) unclaimed; automated segmentation awards given, but ink recovery not yet at the 2023 bar across all targets. 5 May 2025 — First Title Prize ($60,000) to Marcel Roth and Micha Nowak: title of still-rolled PHerc. 172 as Philodemus, On Vices (Book 1, pending full scholarly confirmation). 25 Jun 2026 — First complete virtual unwrapping and reading of preserved text in PHerc. 1667 (Scroll 4); preprint on arXiv; related work in Scientific Reports (2026). Open data at scrollprize.org/data. Ongoing — Progress prizes monthly; 2027 Grand Prize ($1M pool, deadline 25 Jun 2027).',
+      risks:
+        'Not every scanned scroll yields readable ink yet; organizers report ink signal on a minority of the ~45 scanned scrolls and fragments. The method targets carbonized, still-rolled Herculaneum-type material — not general OCR for all ancient books. Models can hallucinate letter shapes; prizes require open methods and papyrological review. Hundreds of rolls remain unread; much of the villa may still be underground.',
+      sourcesNote:
+        'Primary: scrollprize.org (checked 14 Sep 2026). 2023 Grand Prize awarded February 2024; 2024 Grand Prize unclaimed. Not a reading of all antiquity.',
+    },
+    'edna-biodiversity-monitoring': {
+      title: 'eDNA biodiversity monitoring',
+      hook: 'Environmental DNA and bioacoustics, tied into NatureMetrics’ Nature Intelligence Platform (Habitat Insights 2025; Portfolio Assessment 2025), turn water and soil samples into species lists for TNFD-style reporting — not coral gardening and not DAC.',
+      imageAlt:
+        'A biologist collects water samples for environmental DNA — the field step behind a species list, not a count of every animal in the river',
+      what: 'Environmental DNA (eDNA) methods detect species from genetic traces in water, soil, or air. NatureMetrics packages sampling, lab analysis, and a portfolio dashboard (Nature Intelligence Platform) used for nature-risk and disclosure work. Releases in 2024–2026 include autonomous aquatic sampling partnerships, Habitat Insights (geospatial habitat assessment, announced early 2025), and AI-assisted Portfolio Assessment.',
+      problem:
+        'Permits and nature reports still lean on slow, patchy field surveys while regulators and lenders ask for comparable biodiversity evidence across whole site portfolios.',
+      how: 'Field teams or autosamplers collect filtered water or soil. Labs amplify and sequence marker genes. Bioinformatics match reads to reference libraries. Geospatial layers and predictive scores sit beside the species evidence so operators can screen many sites before deep surveys.',
+      players:
+        'NatureMetrics, on commercial deployments for mining, renewables, and infrastructure clients (company public materials). Parallel public science includes the U.S. National Aquatic eDNA Strategy (2024), which pushes shared standards for aquatic invasive-species and biodiversity monitoring.',
+      risks:
+        'eDNA detects genetic traces, not abundance or animal health by itself. A positive hit is not a census. False negatives and positives, DNA carried downstream, and thin reference libraries can mislead. A commercial dashboard is not a substitute for field ecology where regulators demand it.',
+      sourcesNote:
+        'NatureMetrics Nature Intelligence Platform and the Habitat Insights launch; USGS news on the National Aquatic eDNA Strategy. Screening and evidence, not a full biodiversity survey.',
+    },
+    'marine-litter-satellite': {
+      title: 'Marine litter from space',
+      hook: 'ESA- and JRC-backed work (Nature Communications, June 2024) showed Sentinel-2 can map floating litter windrows across the Mediterranean — hotspots and seasonal pulses, not a plastic-eating enzyme plant.',
+      imageAlt:
+        'Plastic and other litter on an Atlantic shoreline — the debris class Sentinel-2 windrow maps track at sea, not a detection product from the 2024 paper',
+      what: 'A 2024 peer-reviewed proof that Copernicus Sentinel-2 imagery, searched at Mediterranean scale (about 300,000 scenes), can detect floating litter windrows as proxies for marine litter inputs and pathways. The work was led with ESA contracts and reported with EU Joint Research Centre participation.',
+      problem:
+        'Plastic and other floating litter move across whole seas, but managers still lack basin-scale maps of where dense windrows form and when land spills surge.',
+      how: 'Algorithms flag bright, elongated convergence features on 10 m optical bands. Detections are matched to hydrology and coastal runoff models. Torrential rain and coastal currents emerge as key drivers of when and where litter aggregates.',
+      players:
+        'Research and pre-operational monitoring over the Mediterranean historical archive (the paper’s analysis window is 2015–2021). The JRC public note of 14 June 2024 frames the result as a shift for policy monitoring, not a cleanup vessel.',
+      risks:
+        'Today’s sensors need dense, metre-scale aggregations (windrows). Scattered microplastics stay invisible. Cloudy scenes and look-alikes (foam, sargassum) need careful filtering. This paper is not a global operational plastic map. Dedicated litter sensors that could lower the detection floor are not yet routine operations.',
+      sourcesNote:
+        'Cózar et al., Nature Communications (2024); EU JRC news, 14 June 2024; ESA Copernicus Sentinel-2. Mediterranean windrows, not a global operational map.',
+    },
+    'encore-nature-risk': {
+      title: 'ENCORE nature-risk tool',
+      hook: 'ENCORE (Global Canopy / UNEP FI / UNEP-WCMC) — free TNFD-referenced screening of sector dependencies and impacts on nature; major knowledge-base upgrade July 2024. Not a DAC plant and not an eDNA lab.',
+      imageAlt:
+        'Aerial view of Amazon rainforest and river — the kind of living system ENCORE screens for dependencies and impacts, not a screenshot of the tool',
+      what: 'ENCORE (Exploring Natural Capital Opportunities, Risks and Exposure) is a free online tool from Global Canopy, the UNEP Finance Initiative, and UNEP-WCMC. It helps financial institutions and companies explore how production processes depend on and impact nature. TNFD and related frameworks often point to it.',
+      problem:
+        'Banks and companies adopting TNFD still need a free screening layer that links economic activities to nature dependencies and impacts before deep site surveys.',
+      how: 'Users explore links between economic activities, ecosystem services, and impact drivers in an updated knowledge base. The July 2024 upgrade (SUSTAIN project) refined materiality ratings, ecosystem detail, and value-chain links. Those data were later integrated into the Explore and Natural Capital modules.',
+      players:
+        'A public web tool. ENCORE’s public materials report tens of thousands of registered users. Institutions use it as a first pass into TNFD LEAP-style assessments.',
+      risks:
+        'ENCORE is a materiality and pathway screen, not a site survey and not a green light for a project. It does not replace spatial biodiversity data, licence conditions, or community consultation. Location-specific evidence is still required for decisions and disclosures.',
+      sourcesNote:
+        'ENCORE hub and the July 2024 upgrade note; TNFD tools catalogue. An open nature-risk screen, not a finished biodiversity account.',
+    },
+    'nasa-pace': {
+      title: 'NASA PACE — ocean ecosystem colour',
+      hook: 'NASA’s PACE satellite (launched 8 Feb 2024; public data from April 2024) uses a hyperspectral Ocean Color Instrument plus polarimeters to map phytoplankton communities, aerosols, and clouds together — not forest biomass radar (ESA Biomass) and not litter windrows.',
+      imageAlt:
+        'NASA visualization of ocean colour from the PACE Ocean Color Instrument — phytoplankton patterns, not a forest-biomass map and not a plastic inventory',
+      what: 'PACE (Plankton, Aerosol, Cloud, ocean Ecosystem) is a NASA Earth science satellite launched 8 February 2024 from Cape Canaveral. It carries a hyperspectral Ocean Color Instrument (OCI) and two multi-angle polarimeters (HARP2 and SPEXone) so ocean biology and atmospheric particles are observed together.',
+      problem:
+        'Ocean colour satellites long saw a blur of green. Managers needed daily global maps of which phytoplankton communities are present, and how aerosols and clouds couple to that biology.',
+      how: 'OCI measures water-leaving reflectance across many narrow bands, so scientists can separate phytoplankton community types rather than bulk chlorophyll alone. The polarimeters constrain aerosol and cloud properties that also shape climate and air quality. Public science-quality data began 11 April 2024.',
+      players:
+        'NASA, in global Earth orbit, with open data distribution. Uses include harmful algal bloom tracking, fisheries-relevant ocean-health research, and climate process studies.',
+      risks:
+        'Coastal waters that are optically complex, and clouds, still challenge the retrievals. PACE improves discrimination of plankton communities. It is not a fisheries management system by itself and not a plastic inventory. Management decisions still need in-situ networks beside the satellite.',
+      sourcesNote:
+        'NASA PACE mission page, the 8 February 2024 launch release, and the NASA Science mission page. Public data from 11 April 2024. Not forest biomass radar and not a plastic inventory.',
+    },
+    'methanesat': {
+      title: 'MethaneSAT — oil & gas methane from space',
+      hook: 'EDF’s MethaneSAT (launched 4 Mar 2024; lost contact 20 Jun 2025) mapped area + point methane over ~45 basins — data and ACP 2026 science remain public. Not Climate TRACE’s inventory product and not a weather model.',
+      imageAlt: 'Suomi NPP night lights over the Permian Basin in May 2024 — gas flares in an oil-and-gas region MethaneSAT measured, not a MethaneSAT scene',
+      what: 'MethaneSAT was a purpose-built methane-monitoring satellite developed by MethaneSAT LLC (Environmental Defense Fund affiliate), launched 4 March 2024 on SpaceX. It was designed to quantify total methane over wide oil-and-gas regions — including dispersed sources other sensors struggle to total — and to publish free, comparable basin analytics.',
+      problem: 'Methane reported by factors, not measured over whole basins',
+      how: 'A wide-swath spectrometer retrieved column methane at high native resolution; atmospheric inversions turned those columns into area emission rates (~4 km cells) and basin totals. Public releases cover more than 221 scenes across 45 regions (~half of global onshore oil-and-gas production). Mission science continues in the literature (for example the ACP 2026 basin analysis).',
+      players: 'Global targeting of major basins (Permian, Eagle Ford, San Joaquin, Central Asia, Middle East, and others). System-wide public summary (February 2026): measured oil-and-gas methane ~50% higher than EDGAR / EPA-style inventories in the basins assessed; no measured basin met the OGDC 0.2% intensity goal.',
+      risks: 'On-orbit anomaly, then loss of contact on 20 June 2025 (avionics or electrical-power subsystem — root cause not uniquely identified). This card is about the 2024–2025 mission and its open data and science, not a claim of ongoing daily global methane operations. Pair it with ground leak detection for site fixes. Intensities and inventories disagree for many reasons; one paper is not a court verdict.',
+      sourcesNote: 'MethaneSAT launch page, system-wide view (February 2026), and anomaly investigation; Varon et al., Atmos. Chem. Phys. 26, 5961–5980 (2026). One paper is not a court verdict.',
+    },
+    'firesat': {
+      title: 'FireSat — wildfire early detection from space',
+      hook: 'Earth Fire Alliance / Muon Space / Google Research FireSat — Protoflight Mar 2025; first three operational sats launched 7 Jul 2026 (Transporter-17). AI compares 5×5 m IR spots for early fire flags — not a weather FM and not Climate TRACE.',
+      imageAlt: 'Wildfires in Portugal and Spain seen from orbit — the class of fire FireSat is built to flag earlier, not a FireSat frame',
+      what: 'FireSat is a purpose-built wildfire detection and monitoring constellation under the nonprofit Earth Fire Alliance, with spacecraft by Muon Space and sensor and AI contributions from Google Research. Design target: detect fires as small as about 5×5 metres, with eventual updates every 20 minutes or less when the full constellation is up.',
+      problem: 'Small wildfires invisible until they are already large',
+      how: 'Multispectral infrared imagers plus AI that compares each ground spot with prior imagery and context (weather, infrastructure) to flag early fires. The Protoflight (launched March 2025) validated small and cool fire detection other systems missed. Three operational satellites launched 7 July 2026 on SpaceX Transporter-17 mark Initial Operational Capability.',
+      players: 'Protoflight collected more than 1 million infrared frames across continents (Muon and Earth Fire Alliance public notes). The operational trio is in commissioning after the July 2026 launch. Early Adopter fire agencies are targeted for data in the fourth quarter of 2026 (at least twice daily), with broader access phased through 2027–2028.',
+      risks: 'Not a replacement for national warning services or aircraft. Constellation density — and therefore revisit — grows over years. Full 20-minute global revisit is a 2030s constellation goal. Fourth-quarter 2026 Early Adopter data is about twice daily, not yet global operations for every agency. Detection still needs ground confirmation; smoke, cloud, and false alarms remain hard. Do not treat “every fire on Earth every 20 minutes” as today’s service level.',
+      sourcesNote: 'Earth Fire Alliance, 7 July 2026 launch; Google Research FireSat page and 16 September 2024 announcement; Muon Space launch note. Not a 20-minute global service today.',
+    },
+    'google-flood-hub': {
+      title: 'Google Flood Hub — AI river flood forecasts',
+      hook: 'Google’s Flood Hub (Nature, 20 Mar 2024; coverage expanded Nov 2024 to 100+ countries / ~700M people) issues free AI riverine forecasts up to seven days ahead — hydrology, not GraphCast-style global weather.',
+      imageAlt: 'Landsat and MODIS view of Rufiji River flooding in Tanzania, April 2024 — a riverine flood of the kind Flood Hub forecasts, not a Flood Hub screenshot',
+      what: 'Flood Hub is Google’s free platform for AI-based riverine flood forecasts — real-time maps and alerts with lead times up to about seven days, delivered via Flood Hub and, where available, Search, Maps, and Android partners.',
+      problem: 'Multi-day river flood warnings missing where gauges are sparse',
+      how: 'A global machine-learning hydrologic model predicts streamflow and flood risk, trained and evaluated across gauged and ungauged basins (Nature, 20 March 2024). Coverage of verified public forecasts expanded in November 2024 from about 80 to 100+ countries (about 700 million people, up from about 460 million). Expert layers add about 250,000 virtual-gauge points across about 150 countries for researchers and partners.',
+      players: 'Public Flood Hub, plus partnerships with aid groups (anticipatory-cash pilots cited in Google 2025 product notes). Not a substitute for a national flood-warning agency.',
+      risks: 'Strongest on riverine floods with verifiable gauges; flash and urban floods remain harder. Virtual-gauge layers for experts are not the same as fully validated public alerts everywhere. National meteorological and hydrological services remain authoritative for official warnings. Do not equate Flood Hub with GraphCast, WeatherNext, or AIFS. Skill varies by basin and data density. Treat it as decision support — confirm with local authorities before any evacuation claim.',
+      sourcesNote: 'Nearing et al., Nature, 20 March 2024; Google coverage expansion, 11 November 2024; Flood Hub; Google Research floods page. National services remain the warning authority.',
+    },
+    'alphaearth-foundations': {
+      title: 'AlphaEarth Foundations — Earth embeddings',
+      hook: 'Google DeepMind’s AlphaEarth Foundations (30 Jul 2025) turns multi-sensor Earth data into 64-D embeddings at 10 m; annual Satellite Embedding V1 is in Earth Engine. A mapping foundation — not Prithvi HLS weights and not a weather forecast.',
+      imageAlt: 'Landsat view of farmland in Taiwan — the kind of land pattern geospatial embeddings summarize, not an AlphaEarth rendering',
+      what: 'AlphaEarth Foundations (announced 30 July 2025) is Google DeepMind’s model that builds a unified digital representation — an embedding field — of Earth’s land and coastal waters by integrating petabytes of Earth observation and related layers.',
+      problem: 'Planetary maps stalled by sparse labels and mismatched sensors',
+      how: 'For each roughly 10×10 m cell the model produces a compact 64-dimensional embedding that summarises multi-sensor context over time (DeepMind: about 16 times less storage than other AI systems they tested). Annual embeddings are published as the Satellite Embedding dataset in Google Earth Engine for on-demand maps of land use, ecosystems, and agricultural change.',
+      players: 'The Earth Engine dataset is public. DeepMind cites partner testing with more than 50 organisations (FAO-related ecosystem-atlas work, MapBiomas, universities). The embeddings are used to classify unmapped ecosystems and to speed mapping when labels are scarce — not as a weather service.',
+      risks: 'Embeddings accelerate mapping. They do not replace field validation, land rights, or policy. Performance claims, such as lower error against baselines DeepMind tested, are model-card science — not a guarantee for every national map. Antarctica and persistent cloud still need care. A foundation embedding is a starting representation. Downstream classifiers still need labels, quality checks, and governance. Do not claim AlphaEarth sees every change on Earth in real time from the annual embedding product alone.',
+      sourcesNote: 'Google DeepMind, 30 July 2025; Earth Engine Satellite Embedding V1; arXiv 2507.22291. An annual embedding is not a real-time change map.',
     },
   },
   ru: packRu,

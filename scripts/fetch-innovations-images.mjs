@@ -150,6 +150,10 @@ const candidates = {
     'NASA Blue Marble.jpg',
     'Earth from DSCOVR.jpg',
   ],
+  'esa-biomass': [
+    'ESA Biomass Satellite seeing wood through trees.png',
+    'Rolling Biomass to the cleanroom ESA507406.jpg',
+  ],
 };
 
 async function commonsInfo(title) {

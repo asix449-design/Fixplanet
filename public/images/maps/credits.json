@@ -1,5 +1,13 @@
 [
   {
+    "file": "maps-hub-bg.jpg",
+    "title": "Earth at night from space (Maps hub)",
+    "source": "Founder-supplied photograph",
+    "url": "",
+    "license": "Site asset",
+    "note": "Hub-only hero. Category shelves keep Blue Marble. Not a catalog card thumbnail."
+  },
+  {
     "file": "blue-marble.jpg",
     "title": "Blue Marble Next Generation with topography and bathymetry (December 2004)",
     "source": "NASA Earth Observatory / NASA Visible Earth",
@@ -62,6 +70,42 @@
     "note": "Cropped OWID grapher map export. Open the OWID / UCDP page for the live layer."
   },
   {
+    "file": "global-peace-index.jpg",
+    "title": "Fix Planet overview of peacefulness bands",
+    "source": "Fix Planet schematic on BlankMap-World. Vision of Humanity / IEP artwork is not copied.",
+    "url": "https://www.visionofhumanity.org/maps/global-peace-index/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Green and red are orientation bands in a peacefulness palette. Grey land is not classed on this overview. Not GPI 2026 scores and not Vision of Humanity artwork."
+  },
+  {
+    "file": "fragile-states-index.jpg",
+    "title": "Fix Planet overview of fragility bands",
+    "source": "Fix Planet schematic on BlankMap-World. Fund for Peace heat-map artwork is not copied.",
+    "url": "https://fragilestatesindex.org/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Darker brown is a higher-fragility orientation; pale gold is a lower-fragility orientation. Mid-tone land is not classed here. Not FSI scores."
+  },
+  {
+    "file": "military-expenditure-sipri.jpg",
+    "title": "Fix Planet overview of military spending level",
+    "source": "Fix Planet schematic on BlankMap-World. SIPRI yearbook and Milex artwork are not copied.",
+    "url": "https://www.sipri.org/databases/milex",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "One story only: spending level, not share of GDP. Darker blue marks larger-spender bands. Most countries stay unclassified. Not SIPRI Milex figures. milex.sipri.org is not used."
+  },
+  {
+    "file": "conflict-barometer-hiik.jpg",
+    "title": "Fix Planet overview of conflict-intensity bands",
+    "source": "Fix Planet schematic on BlankMap-World. HIIK cover art is not copied.",
+    "url": "https://hiik.de/en/conflict-barometer/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Deep red is a war-intensity orientation; orange is other violent-conflict orientation. Grey land is not an intensity class. Not HIIK scores, not ACLED pins, and not a single class for every conflict in a country."
+  },
+  {
     "file": "language-families.jpg",
     "title": "Primary Human Language Families Map",
     "source": "Wikimedia Commons, PiMaster3",
@@ -89,6 +133,33 @@
     "note": "Cropped OWID grapher map export of UNODC comparable rates. No invented country figures."
   },
   {
+    "file": "organized-crime-index.jpg",
+    "title": "Container ship NYK Vega at Le Havre Port 2000 (2013)",
+    "source": "Wikimedia Commons, Philippe Alès",
+    "url": "https://commons.wikimedia.org/wiki/File:Le_Havre_(France),_NYK_Vega_in_containers_terminal_(2013).JPG",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Port photograph for organized-crime / criminal-markets context. Not the GI-TOC Index heatmap and not invented country scores."
+  },
+  {
+    "file": "corruption-perceptions-index.jpg",
+    "title": "Map of countries by Corruption Perceptions Index (2025)",
+    "source": "Wikimedia Commons, Cnscrptr and ConnerMiner, from Transparency International CPI 2025",
+    "url": "https://commons.wikimedia.org/wiki/File:Map_of_Countries_by_Corruption_Perceptions_Index_(2025).svg",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Cropped Commons CPI 2025 choropleth. Not a homicide remix. OWID republishes the series as an open map."
+  },
+  {
+    "file": "trafficking-in-persons.jpg",
+    "title": "Christ the Redeemer lit blue against human trafficking (28 July 2014)",
+    "source": "Wikimedia Commons, Vladimir Platonow / Agência Brasil",
+    "url": "https://commons.wikimedia.org/wiki/File:Blue_Christ_the_Redeemer_against_human_trafficking.jpg",
+    "license": "CC BY 3.0 BR",
+    "kind": "hosted-original",
+    "note": "News-agency awareness photograph. Not a UNODC GLOTIP plate, not World Drug Report art, and not a picture of victims."
+  },
+  {
     "file": "air-quality-pm25.jpg",
     "title": "Exposure to outdoor PM2.5 (map export)",
     "source": "Our World in Data, from SatPM / Atmospheric Composition Analysis Group, Washington University in St. Louis",
@@ -105,6 +176,42 @@
     "license": "CC BY (Our World in Data)",
     "kind": "hosted-original",
     "note": "Cropped OWID grapher map export of production-based CO₂."
+  },
+  {
+    "file": "consumption-co2-emissions.jpg",
+    "title": "Fix Planet overview of consumption-based CO₂",
+    "source": "Fix Planet schematic on BlankMap-World. Global Carbon Project / Our World in Data artwork is not copied.",
+    "url": "https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map",
+    "license": "Map geometry public domain; overlay is Fix Planet. GCP / OWID data are CC BY with attribution.",
+    "kind": "fix-planet-schematic",
+    "note": "Slate blue marks a higher consumption-footprint orientation. Unlisted countries stay unclassed. Not GCP figures, not an OWID export, and not territorial CO₂."
+  },
+  {
+    "file": "nitrogen-dioxide-no2.jpg",
+    "title": "Fix Planet overview of tropospheric NO₂",
+    "source": "Fix Planet schematic on BlankMap-World. ESA and S5P-PAL marketing stills are not copied.",
+    "url": "https://maps.s5p-pal.com/no2-tropospheric/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Amber columns mark well-known combustion and shipping corridors. Not TROPOMI retrievals and not a PM2.5 choropleth."
+  },
+  {
+    "file": "mismanaged-plastic-waste.jpg",
+    "title": "Fix Planet overview of mismanaged plastic waste",
+    "source": "Fix Planet schematic on BlankMap-World. Our World in Data artwork is not copied.",
+    "url": "https://ourworldindata.org/grapher/plastic-waste-mismanaged",
+    "license": "Map geometry public domain; overlay is Fix Planet. OWID republishes Meijer et al. 2021 under CC BY.",
+    "kind": "fix-planet-schematic",
+    "note": "Amber marks a larger mismanaged-mass orientation. Unlisted countries stay unclassed. Not Meijer tonnages and not a beach photograph. Paper text is on PMC."
+  },
+  {
+    "file": "methane-emissions.jpg",
+    "title": "Fix Planet overview of methane emissions",
+    "source": "Fix Planet schematic on BlankMap-World. EDGAR and Our World in Data artwork is not copied.",
+    "url": "https://ourworldindata.org/grapher/methane-emissions?tab=map",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Ochre marks a larger methane-inventory orientation. Unlisted countries stay unclassed. Not EDGAR grid values, not a flare photograph, and not a CO₂ map."
   },
   {
     "file": "oil-gas-reserves.jpg",
@@ -242,13 +349,31 @@
     "note": "History of borders, year 900. Also the labeled nearest sheet for 1000."
   },
   {
+    "file": "borders/y1100.png",
+    "title": "World in 1100 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1100.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1100.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1100. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1200 sheet, not an engraving, not © Fix Planet geometry."
+  },
+  {
+    "file": "borders/y1300.png",
+    "title": "World in 1300 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1300.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1300.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1300. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1200 sheet, not an engraving, not © Fix Planet geometry."
+  },
+  {
     "file": "borders/y1200.jpg",
     "title": "Political map of the world in 1200",
-    "source": "World History Project / OER Project",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1200.jpg",
-    "license": "CC BY 4.0",
+    "source": "Founder-supplied political reconstruction",
+    "url": "",
+    "license": "Founder-supplied image",
     "kind": "hosted-original",
-    "note": "History of borders, year 1200. Recolored to the atlas sea/land palette; political fills unchanged. Also the labeled nearest sheet for 1100 and 1300."
+    "note": "History of borders, year 1200 only. Founder JPEG, used byte-for-byte."
   },
   {
     "file": "borders/y1500.png",
@@ -270,30 +395,30 @@
   },
   {
     "file": "borders/y1700.png",
-    "title": "1700 CE world map",
-    "source": "Wikimedia Commons, Urnanabha",
-    "url": "https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year 1700. Recolored white land to tan; political fills unchanged."
+    "title": "World in 1700 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1700.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1700.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1700. Reconstructed by Fix Planet from aourednik GPL GeoJSON (fills + large Russia / Qing / Safavid / Mughal labels). Not a copy of the Reddit MapPorn plate. Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not © Fix Planet geometry."
   },
   {
-    "file": "borders/y1815.jpg",
-    "title": "World map 1815 (Congress of Vienna)",
-    "source": "Wikimedia Commons, SvoHljott",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1815_(COV).jpg",
-    "license": "CC BY-SA 3.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year-1800 step. Nearest detailed free political sheet is 1815. Recolored grey land to tan; political fills unchanged."
+    "file": "borders/y1800.png",
+    "title": "World in 1800 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1800.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1800.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1800. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the 1815 Congress of Vienna sheet, not © Fix Planet geometry."
   },
   {
-    "file": "borders/y1914.jpg",
-    "title": "Political map of the world in 1914",
-    "source": "World History Project / OER Project",
-    "url": "https://commons.wikimedia.org/wiki/File:World_map_1914.jpg",
-    "license": "CC BY 4.0",
-    "kind": "hosted-original",
-    "note": "History of borders, year-1900 step. Nearest full-world political sheet is 1914. Recolored dark seas and grey land to the atlas palette; political fills unchanged."
+    "file": "borders/y1900.png",
+    "title": "World in 1900 CE (Fix Planet render of aourednik GeoJSON)",
+    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1900.geojson",
+    "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1900.geojson",
+    "license": "GPL-3.0",
+    "kind": "fix-planet-render",
+    "note": "History of borders, exact year 1900. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1914 sheet, not © Fix Planet geometry."
   },
   {
     "file": "borders/y2000.png",
@@ -305,6 +430,105 @@
     "note": "History of borders, year-2000 step. Present-day ISO country polygons, not the June 2000 CIA sheet. South Sudan (2011) and other post-2000 states appear. Labeled nearest. Greenwich Robinson splits Chukotka at 180°; the western-hemisphere remainder (next to Alaska) is restored from Natural Earth, public domain."
   },
   {
+    "file": "global-river-basins.jpg",
+    "title": "Selection of world watersheds (Hidromundi)",
+    "source": "Wikimedia Commons, Babelia",
+    "url": "https://commons.wikimedia.org/wiki/File:Hidromundi.png",
+    "license": "CC BY-SA 4.0",
+    "kind": "hosted-original",
+    "note": "Selected world watershed polygons. HydroBASINS / HydroSHEDS remains the named interactive source. Not WRI Aqueduct, not Blue Marble."
+  },
+  {
+    "file": "freshwater-aquastat.jpg",
+    "title": "Renewable freshwater resources per capita (map export)",
+    "source": "Our World in Data, from FAO AQUASTAT via World Bank",
+    "url": "https://ourworldindata.org/grapher/renewable-water-resources-per-capita?tab=map",
+    "license": "CC BY (Our World in Data)",
+    "kind": "hosted-original",
+    "note": "Cropped OWID grapher map export of country-level renewable freshwater per person. Not WRI Aqueduct basin scores."
+  },
+  {
+    "file": "exclusive-economic-zones.jpg",
+    "title": "Exclusive economic zones / territorial waters of the world",
+    "source": "Wikimedia Commons, B1mbo, based on VLIZ maritime boundaries",
+    "url": "https://commons.wikimedia.org/wiki/File:Exclusive_Economic_Zones_-_World.svg",
+    "license": "CC BY-SA 3.0 CL",
+    "kind": "hosted-original",
+    "note": "World EEZ schematic. Marine Regions remains the named interactive source. Not a second Natural Earth countries layer."
+  },
+  {
+    "file": "disputed-breakaway-areas.jpg",
+    "title": "Admin 0 breakaway and disputed areas (catalog render)",
+    "source": "Natural Earth 10m cultural vectors — Admin 0 breakaway, disputed areas",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/",
+    "license": "Public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "Recolored Natural Earth breakaway and disputed polygons only. Small polygons are slightly enlarged so they read at card size. A thumbnail is cartography, not a court ruling."
+  },
+  {
+    "file": "states-provinces.jpg",
+    "title": "Admin 1 states and provinces (catalog render)",
+    "source": "Natural Earth cultural vectors — Admin 1 states, provinces (small-scale outlines)",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "license": "Public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "First-order internal divisions as outlines. A thumbnail is cartography, not a court ruling. Not a countries choropleth and not maritime zones."
+  },
+  {
+    "file": "land-boundary-lines.jpg",
+    "title": "Admin 0 land boundary lines (catalog render)",
+    "source": "Natural Earth 10m cultural vectors — Admin 0 boundary lines, land",
+    "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/",
+    "license": "Public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "International land borders as line geometry. A thumbnail is cartography, not a court ruling. Not a filled countries map and not maritime limits."
+  },
+  {
+    "file": "living-languages-count.jpg",
+    "title": "Ethnologue 18 linguistic diversity index",
+    "source": "Wikimedia Commons, cmglee (BlankMap-World6 base by Canuckguy and others)",
+    "url": "https://commons.wikimedia.org/wiki/File:Ethnologue_18_linguistic_diversity_index_BlankMap-World6.svg",
+    "license": "CC BY-SA 3.0",
+    "kind": "hosted-original",
+    "note": "Country choropleth of linguistic diversity from Ethnologue 18. Magnitude/diversity preview — not the Glottolog family map and not a printed living-language total."
+  },
+  {
+    "file": "endangered-languages-unesco.jpg",
+    "title": "UNESCO Atlas endangerment degrees (catalog schematic)",
+    "source": "UNESCO / Moseley (ed.) 2010, Atlas of the World’s Languages in Danger; Natural Earth land (public domain)",
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000187026",
+    "license": "Map geometry public domain; overlay is Fix Planet schematic of Atlas degrees",
+    "kind": "fix-planet-schematic",
+    "note": "Neutral schematic of UNESCO endangerment degrees (vulnerable → extinct). Not a political ethnicity choropleth and not a second Glottolog family tree."
+  },
+  {
+    "file": "wals-language-structures.jpg",
+    "title": "WALS feature 1A — Consonant inventories",
+    "source": "WALS Online (Dryer & Haspelmath / Max Planck EVA); Maddieson, Consonant Inventories; Natural Earth land",
+    "url": "https://wals.info/feature/1A",
+    "license": "CC BY 4.0 (WALS); land public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "Redraw of WALS Online feature 1A from the CLDF release. Structural typology points, not Glottolog families and not UNESCO endangerment pins."
+  },
+  {
+    "file": "language-areas-asher-moseley.jpg",
+    "title": "Language areas from Asher & Moseley (digitized polygons)",
+    "source": "Glottography/asher2007world; Ranacher et al., Scientific Data 2025; Natural Earth land",
+    "url": "https://github.com/glottography/asher2007world",
+    "license": "CC BY 4.0 (Glottography/asher2007world); land public domain (Natural Earth)",
+    "kind": "fix-planet-render",
+    "note": "Sample language-area polygons from the traditional / time-of-contact sheets, linked to Glottocodes. Areas, not Glottolog points, and not a family-tree choropleth."
+  },
+  {
+    "file": "endangered-languages-project.jpg",
+    "title": "Endangered Languages Project catalogue (catalog schematic)",
+    "source": "Endangered Languages Project; Natural Earth land (public domain)",
+    "url": "https://www.endangeredlanguages.com/",
+    "license": "Map geometry public domain; overlay is Fix Planet schematic of ELP catalogue vitality",
+    "kind": "fix-planet-schematic",
+    "note": "Living-catalogue schematic with ELP-style vitality colors. Distinct from UNESCO Atlas degrees and from Ethnologue EGIDS. Not a political map."
+  },
+  {
     "file": "borders/y2020.png",
     "title": "Present-day country fills (atlas palette)",
     "source": "Wikimedia Commons BlankMap-World; Natural Earth is the named political base. Fix Planet 4-color fill.",
@@ -312,5 +536,77 @@
     "license": "Public domain",
     "kind": "fix-planet-schematic",
     "note": "History of borders, year 2020. Same geometry as the political-map card, 4-colored to match the early-century atlas language. Chukotka west of 180° restored from Natural Earth so the Bering Strait shows both shores."
+  },
+  {
+    "file": "groundwater-whymap.jpg",
+    "title": "Fix Planet overview of WHYMAP aquifer environments",
+    "source": "Fix Planet schematic on BlankMap-World, themed from BGR / UNESCO WHYMAP Groundwater Resources of the World",
+    "url": "https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Blue sedimentary basins / green complex folded-faulted / brown local-shallow. Not BGR’s official map, not Aqueduct stress, not a well log."
+  },
+  {
+    "file": "global-lakes-hydrolakes.jpg",
+    "title": "Fix Planet overview of HydroLAKES shoreline density",
+    "source": "Fix Planet schematic on BlankMap-World, themed from HydroSHEDS HydroLAKES / Messager et al. 2016",
+    "url": "https://www.hydrosheds.org/products/hydrolakes",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Lake-district dots for shorelines ≥10 ha. Not the HydroLAKES shapefile, not HydroBASINS polygons, not Aqueduct stress."
+  },
+  {
+    "file": "lakes-wetlands-glwd.jpg",
+    "title": "Fix Planet overview of GLWD inland-water classes",
+    "source": "Fix Planet schematic on BlankMap-World, themed from HydroSHEDS GLWD v2 / Lehner et al. 2025",
+    "url": "https://www.hydrosheds.org/products/glwd",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Open water / marsh / peat / intermittent. Not a second HydroLAKES shoreline layer, not Ramsar listings, not Aqueduct stress."
+  },
+  {
+    "file": "flood-hazard-aqueduct.jpg",
+    "title": "Fix Planet overview of Aqueduct Floods hazard",
+    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct Floods",
+    "url": "https://www.wri.org/data/aqueduct-floods",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Riverine corridors and coastal inundation patches. Not WRI’s official Floods graphic and not a second baseline water-stress choropleth."
+  },
+  {
+    "file": "intact-forest-landscapes.jpg",
+    "title": "Fix Planet overview of intact forest landscape blocks",
+    "source": "Fix Planet schematic on BlankMap-World, themed from the IFL Mapping Team (Potapov et al.)",
+    "url": "https://intactforests.org/data.ifl.html",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Bright blocks mark large wilderness-scale forest regions (Amazon, Congo, boreal, New Guinea). Not IFL polygons and not Hansen annual loss pixels."
+  },
+  {
+    "file": "mangrove-extent.jpg",
+    "title": "Fix Planet overview of mangrove coasts",
+    "source": "Fix Planet schematic on BlankMap-World, themed from Global Mangrove Watch",
+    "url": "https://www.globalmangrovewatch.org/",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Teal fringe marks known tropical mangrove coasts. Not a GMW raster and not inland tree-cover loss."
+  },
+  {
+    "file": "primary-humid-tropical-forests.jpg",
+    "title": "Fix Planet overview of the primary humid tropical belt",
+    "source": "Fix Planet schematic on BlankMap-World, themed from UMD GLAD primary humid tropical forests (2001)",
+    "url": "https://glad.umd.edu/dataset/primary-forest-humid-tropics",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Green belt marks humid-tropical primary forest regions on the 2001 baseline. Not the 30 m GeoTIFF, not boreal forest, and not annual Hansen loss."
+  },
+  {
+    "file": "forest-landscape-integrity.jpg",
+    "title": "Fix Planet overview of forest landscape integrity bands",
+    "source": "Fix Planet schematic on BlankMap-World, themed from Grantham et al. Forest Landscape Integrity Index",
+    "url": "https://www.nature.com/articles/s41467-020-19493-3",
+    "license": "Map geometry public domain; overlay is Fix Planet",
+    "kind": "fix-planet-schematic",
+    "note": "Deep green, gold, and orange mark high, mid, and low integrity themes. Not the FLII raster and not a canopy-loss date."
   }
 ]

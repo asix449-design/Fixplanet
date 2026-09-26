@@ -106,7 +106,7 @@ export const lv: Record<string, InnovationCopy> = {
     risks:
       'Izejvielai jābūt samērā tīram PET. Jauktā plastmasa joprojām uzvar ar to, ka to ir lēti aprakt vai sadedzināt. Rūpnīcu kavējumi ir parasti pirmā šāda veida reciklēšanai. Nesajauc demonstrācijas reaktoru ar atrisinātu atkritumu krīzi.',
     sourcesNote:
-      'Yoshida et al., Science, 2016; Carbios lapas. Longlaville 2026. gada augustā joprojām gaida finansējumu — tā nav darbojoša rūpnīca.',
+      'Yoshida et al., Science, 2016. Oficiālās Carbios lapas pārbaudē neatbildēja; Vikipēdija nav avots. Longlaville 2026. gada augustā joprojām gaida finansējumu — tā nav darbojoša rūpnīca.',
   },
   'methane-feed-additive': {
     title: 'Metānu samazinošā liellopu barība (Bovaer)',

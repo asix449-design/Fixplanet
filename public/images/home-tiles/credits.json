@@ -1,0 +1,98 @@
+[
+  {
+    "file": "solutions.jpg",
+    "title": "Home tile — Solutions",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/solutions.jpg. Used only on the Home glass tile."
+  },
+  {
+    "file": "innovations.jpg",
+    "title": "Home tile — Innovations",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/innovations.jpg. Used only on the Home glass tile."
+  },
+  {
+    "file": "terraforming.jpg",
+    "title": "Home tile — Terraforming",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/terraforming.jpg. Used only on the Home glass tile."
+  },
+  {
+    "file": "maps.jpg",
+    "title": "Home tile — Maps",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/maps.jpg. Used only on the Home glass tile."
+  },
+  {
+    "file": "law.jpg",
+    "title": "Home tile — Law",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/law.jpg. Used only on the Home glass tile."
+  },
+  {
+    "file": "nature.jpg",
+    "title": "Home tile — Nature / Wildlife",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/nature.jpg. Mapped to the Wildlife home tile."
+  },
+  {
+    "file": "migration.jpg",
+    "title": "Home tile — Migration",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/migration.jpg. Used only on the Home glass tile."
+  },
+  {
+    "file": "forest.jpg",
+    "title": "Home tile — Forests (original filename)",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/forest.jpg. Duplicate of forests.jpg."
+  },
+  {
+    "file": "forests.jpg",
+    "title": "Home tile — Forests",
+    "source": "Founder-supplied JPEG (copy of forest.jpg; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Byte-identical copy of forest.jpg so the Forests tile can use the route key name."
+  },
+  {
+    "file": "ocean.jpg",
+    "title": "Home tile — Oceans (original filename)",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/ocean.jpg. Duplicate of oceans.jpg."
+  },
+  {
+    "file": "oceans.jpg",
+    "title": "Home tile — Oceans",
+    "source": "Founder-supplied JPEG (copy of ocean.jpg; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Byte-identical copy of ocean.jpg so the Oceans tile can use the route key name."
+  },
+  {
+    "file": "about.jpg",
+    "title": "Home tile — About",
+    "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
+    "license": "Site theme asset",
+    "kind": "hosted-original",
+    "note": "Exact file from main/about.jpg. Used only on the Home glass tile."
+  }
+]

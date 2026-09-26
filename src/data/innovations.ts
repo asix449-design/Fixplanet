@@ -198,7 +198,6 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:PET_bottles.jpg',
     ),
     sources: [
-      cite('Wikipedia — Carbios', 'https://en.wikipedia.org/wiki/Carbios'),
       cite(
         'Yoshida et al., Science, 2016 — Ideonella sakaiensis PETase',
         'https://www.science.org/doi/10.1126/science.aad6359',
@@ -259,10 +258,7 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Water_treatment_plant.jpg',
     ),
     sources: [
-      cite(
-        'Interesting Engineering — U.S. plant captures 450 tons of airborne CO₂',
-        'https://interestingengineering.com/energy/us-plant-captures-450-tons-of-airborne-co2',
-      ),
+      cite('Avnos', 'https://avnos.com/'),
       cite(
         'Avnos — Project Brighton enters operations',
         'https://avnos.com/avnos-largest-hybrid-direct-air-capture-deployment-enters-operations/',
@@ -280,10 +276,7 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:TERNEUZEN_-_panoramio.jpg',
     ),
     sources: [
-      cite(
-        'CarbonCredits — Yara Sluiskil CCS inauguration (Sep 2026)',
-        'https://carboncredits.com/yara-europe-largest-carbon-capture-facility-netherlands/',
-      ),
+      cite('Yara — news and media', 'https://www.yara.com/news-and-media/'),
       cite('Northern Lights — who we are', 'https://norlights.com/who-we-are/'),
     ],
   },
@@ -298,11 +291,121 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg',
     ),
     sources: [
-      cite(
-        'PKN Packaging News — Samsara Eco opens first enzymatic recycling plant',
-        'https://www.packagingnews.com.au/latest/samsara-eco-opens-first-enzymatic-recycling-plant',
-      ),
       cite('Samsara Eco', 'https://www.samsaraeco.com/'),
+    ],
+  },
+  {
+    slug: 'esa-biomass',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'esa-biomass.jpg',
+      'ESA / ATG Medialab (Wikimedia Commons)',
+      'CC BY-SA 3.0 IGO',
+      'https://commons.wikimedia.org/wiki/File:ESA_Biomass_Satellite_seeing_wood_through_trees.png',
+    ),
+    sources: [
+      cite(
+        'ESA — Biomass (FutureEO)',
+        'https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass',
+      ),
+    ],
+  },
+  {
+    slug: 'edna-biodiversity-monitoring',
+    area: 'ecology',
+    status: 'pilot',
+    image: img(
+      'edna-biodiversity-monitoring.jpg',
+      'Monica Blaser, U.S. Fish and Wildlife Service, Midwest Region',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:EDNA_Water_Sampling_(36024122736).jpg',
+    ),
+    sources: [
+      cite(
+        'NatureMetrics — Nature Intelligence Platform',
+        'https://naturemetrics.com/products/nature-intelligence-platform',
+      ),
+      cite(
+        'USGS — National Aquatic eDNA Strategy',
+        'https://www.usgs.gov/news/science-snippet/a-new-strategy-help-unleash-usgs-edna-capabilities',
+      ),
+      cite(
+        'NatureMetrics — Habitat Insights launch',
+        'https://naturemetrics.com/news/naturemetrics-launches-habitat-insights',
+      ),
+    ],
+  },
+  {
+    slug: 'marine-litter-satellite',
+    area: 'ecology',
+    status: 'research',
+    image: img(
+      'marine-litter-satellite.jpg',
+      'Marek Ślusarczyk (Tupungato)',
+      'CC BY 3.0',
+      'https://commons.wikimedia.org/wiki/File:004_Beach_pollution_in_Tenerife_-_Atlantic_Ocean_beach_plastic_garbage_debris.jpg',
+    ),
+    sources: [
+      cite(
+        'Cózar et al., Nature Communications, 2024 — marine litter from space',
+        'https://www.nature.com/articles/s41467-024-48674-7',
+      ),
+      cite(
+        'EU JRC — Surveilling marine litter from space becomes reality (14 June 2024)',
+        'https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/surveilling-marine-litter-space-becomes-reality-2024-06-14_en',
+      ),
+      cite(
+        'ESA — Copernicus Sentinel-2',
+        'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2',
+      ),
+    ],
+  },
+  {
+    slug: 'encore-nature-risk',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'encore-nature-risk.jpg',
+      'lubasi',
+      'CC BY-SA 2.0',
+      'https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg',
+    ),
+    sources: [
+      cite(
+        'ENCORE — Exploring Natural Capital Opportunities, Risks and Exposure',
+        'https://encorenature.org/en',
+      ),
+      cite(
+        'ENCORE — major upgrade, July 2024',
+        'https://encorenature.org/news/major-upgrade-for-encore-launches-july-2024',
+      ),
+      cite(
+        'TNFD — Tools Catalogue',
+        'https://tnfd.global/assessment-guidance/tools-catalogue/',
+      ),
+    ],
+  },
+  {
+    slug: 'nasa-pace',
+    area: 'ecology',
+    status: 'deployed',
+    image: img(
+      'nasa-pace.jpg',
+      'NASA Scientific Visualization Studio',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:PACE_Observes_Namesake_Plankton,_Aerosols,_Clouds_and_Ocean_Ecosystem_(SVS31294_-_hyperw_PACE_OCI_2024040820240408).png',
+    ),
+    sources: [
+      cite('NASA — PACE mission', 'https://www.nasa.gov/pace'),
+      cite(
+        'NASA — PACE launch (8 February 2024)',
+        'https://www.nasa.gov/news-release/nasa-launches-new-climate-mission-to-study-ocean-atmosphere/',
+      ),
+      cite(
+        'NASA Science — PACE',
+        'https://science.nasa.gov/mission/pace/',
+      ),
     ],
   },
   {
@@ -733,6 +836,168 @@ export const innovationMeta: InnovationMeta[] = [
       cite('IBM–NASA Prithvi models', 'https://huggingface.co/ibm-nasa-geospatial'),
     ],
   },
+  {
+    slug: 'vesuvius-challenge',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'vesuvius-challenge.jpg',
+      'Sara Stabile, Francesca Palermo, Inna Bukreeva, Daniela Mele, Vincenzo Formoso, Roberto Bartolino & Alessia Cedola',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Herculaneum_papyri.jpg',
+    ),
+    sources: [
+      cite('Vesuvius Challenge', 'https://scrollprize.org/'),
+      cite(
+        'Vesuvius Challenge — 2023 Grand Prize',
+        'https://scrollprize.org/grandprize',
+      ),
+      cite(
+        'Vesuvius Challenge — first complete scroll (PHerc. 1667)',
+        'https://scrollprize.org/firstscroll',
+      ),
+      cite('Vesuvius Challenge — FAQ', 'https://scrollprize.org/faq'),
+      cite('Vesuvius Challenge — data', 'https://scrollprize.org/data'),
+      cite('Vesuvius Challenge — prizes', 'https://scrollprize.org/prizes'),
+      cite(
+        'arXiv:2606.29085 — complete virtual unwrapping of a rolled Herculaneum papyrus',
+        'https://arxiv.org/abs/2606.29085',
+      ),
+      cite(
+        'Angelotti et al., Scientific Reports, 2026 — ink detection from surface topography',
+        'https://www.nature.com/articles/s41598-026-58467-1',
+      ),
+      cite(
+        'EduceLab — Vesuvius Challenge Grand Prize winners',
+        'https://educelab.engr.uky.edu/news/vesuvius-challenge-grand-prize-winners-announced',
+      ),
+      cite(
+        'Scroll Prize — First Title Prize ($60,000)',
+        'https://scrollprize.substack.com/p/60000-first-title-prize-awarded',
+      ),
+      cite(
+        'Scroll Prize — $1M Grand Prize for 2027',
+        'https://scrollprize.substack.com/p/a-new-1m-grand-prize-for-2027',
+      ),
+      cite(
+        'BBC — Herculaneum scrolls (5 Feb 2024)',
+        'https://www.bbc.com/news/science-environment-68221243',
+      ),
+      cite(
+        'Nature news — AI reads burnt scroll (2024)',
+        'https://www.nature.com/articles/d41586-024-00488-9',
+      ),
+    ],
+  },
+  {
+    slug: 'methanesat',
+    area: 'ai',
+    status: 'pilot',
+    image: img(
+      'methanesat.jpg',
+      'CSU/CIRA and NOAA/NESDIS',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Changes_in_the_Permian_Basin_Oil_Field_Over_the_Years_(CIRA_2024-05-23_-_202405230754_snpp_viirs_dnb_permianoil_nolabels0).png',
+    ),
+    sources: [
+      cite(
+        'MethaneSAT — successful launch (4 Mar 2024)',
+        'https://www.methanesat.org/project-updates/orbit-successful-methanesat-launch-represents-groundbreaking-mission-protect',
+      ),
+      cite(
+        'MethaneSAT — first look at a system-wide view (2 Feb 2026)',
+        'https://www.methanesat.org/project-updates/first-look-system-wide-view',
+      ),
+      cite(
+        'Varon et al., Atmos. Chem. Phys. 26, 5961–5980 (2026)',
+        'https://acp.copernicus.org/articles/26/5961/2026/',
+      ),
+      cite(
+        'MethaneSAT — anomaly investigation (6 Nov 2025)',
+        'https://www.methanesat.org/project-updates/results-anomaly-investigation-loss-communication-methanesat',
+      ),
+    ],
+  },
+  {
+    slug: 'firesat',
+    area: 'ai',
+    status: 'pilot',
+    image: img(
+      'firesat.jpg',
+      'Pierre Markuse',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Earth_from_Space_Wildfires_in_Portugal_and_Spain_(28347392594).jpg',
+    ),
+    sources: [
+      cite(
+        'Earth Fire Alliance — first three operational FireSats reach orbit (7 Jul 2026)',
+        'https://earthfirealliance.org/news-article/earth-fire-alliances-first-three-operational-firesats-reach-orbit/',
+      ),
+      cite(
+        'Google Research — FireSat',
+        'https://sites.research.google/gr/wildfires/firesat/',
+      ),
+      cite(
+        'Google — FireSat announcement (16 Sep 2024)',
+        'https://blog.google/company-news/outreach-and-initiatives/sustainability/google-ai-wildfire-detection/',
+      ),
+      cite(
+        'Muon Space — operational launch (7 Jul 2026)',
+        'https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/',
+      ),
+    ],
+  },
+  {
+    slug: 'google-flood-hub',
+    area: 'ai',
+    status: 'deployed',
+    image: img(
+      'google-flood-hub.jpg',
+      'NASA Earth Observatory / Wanmei Liang; Landsat (USGS) and MODIS',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Tanzania_flood_rufiji_river_on_20240429.jpg',
+    ),
+    sources: [
+      cite(
+        'Nearing et al., Nature — global flood prediction (20 Mar 2024)',
+        'https://www.nature.com/articles/s41586-024-07145-1',
+      ),
+      cite(
+        'Google — expanding flood forecasting coverage (11 Nov 2024)',
+        'https://blog.google/innovation-and-ai/products/expanding-flood-forecasting-coverage-helping-partners/',
+      ),
+      cite('Flood Hub', 'https://g.co/floodhub'),
+      cite(
+        'Google Research — floods',
+        'https://sites.research.google/floods/',
+      ),
+    ],
+  },
+  {
+    slug: 'alphaearth-foundations',
+    area: 'ai',
+    status: 'deployed',
+    image: img(
+      'alphaearth-foundations.jpg',
+      'NASA Earth Observatory / Michala Garrison',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:An_Agricultural_Mosaic_in_Taiwan_(1215103_-_taiwan_agriculture_oli2_20260318).jpg',
+    ),
+    sources: [
+      cite(
+        'Google DeepMind — AlphaEarth Foundations (30 Jul 2025)',
+        'https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/',
+      ),
+      cite(
+        'Earth Engine — Satellite Embedding V1 annual',
+        'https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL',
+      ),
+      cite(
+        'arXiv 2507.22291 — AlphaEarth Foundations',
+        'https://arxiv.org/abs/2507.22291',
+      ),
+    ],
+  },
 ];
 
 export function isInnovationArea(value: string | undefined): value is InnovationArea {
@@ -747,8 +1012,26 @@ export function innovationImageSrc(image: ImageCredit): string {
   return `/images/innovations/${image.file}`;
 }
 
+/** Ecology cards whose detail lives under the shelf, not beside it. */
+export const ecologyShelfDetailSlugs = [
+  'edna-biodiversity-monitoring',
+  'marine-litter-satellite',
+  'encore-nature-risk',
+  'nasa-pace',
+] as const;
+
 export function innovationAreaPath(area: InnovationArea | 'all'): string {
   return area === 'all' ? '/innovations' : `/innovations/${area}`;
+}
+
+export function innovationDetailPath(slug: string, area: InnovationArea): string {
+  if (
+    area === 'ecology' &&
+    (ecologyShelfDetailSlugs as readonly string[]).includes(slug)
+  ) {
+    return `/innovations/ecology/${slug}`;
+  }
+  return `/innovations/${slug}`;
 }
 
 export function innovationPrimarySource(

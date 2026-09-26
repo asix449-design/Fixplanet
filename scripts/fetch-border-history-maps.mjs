@@ -2,6 +2,10 @@
  * Download openly licensed historical political maps for History of borders.
  * Run: node scripts/fetch-border-history-maps.mjs
  * Then restyle grey/white/OER sheets: python3 scripts/unify-border-history-style.py
+ *
+ * Years 1100, 1300, 1700, 1800, and 1900 are Fix Planet renders of aourednik
+ * historical-basemaps GeoJSON (GPL-3.0). Do not overwrite those PNGs
+ * from Commons thumbs. Rebuild with: python3 scripts/render-aourednik-borders.py
  */
 import { mkdir } from 'node:fs/promises';
 import { createWriteStream } from 'node:fs';
@@ -25,9 +29,6 @@ const files = [
   { file: 'y1200.jpg', commons: 'World_map_1200.jpg', width: 1600 },
   { file: 'y1500.png', commons: 'World_map_1500.png', width: 1600 },
   { file: 'y1648.png', commons: 'World_map_1648.png', width: 1600 },
-  { file: 'y1700.png', commons: '1700_CE_world_map.PNG', width: 1600 },
-  { file: 'y1815.jpg', commons: 'World_map_1815_(COV).jpg', width: 1600 },
-  { file: 'y1914.jpg', commons: 'World_map_1914.jpg', width: 1600 },
 ];
 
 function thumbUrl(commons, width) {

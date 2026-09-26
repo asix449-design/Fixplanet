@@ -41,6 +41,8 @@ export type LawPage = {
   imageCredit: string;
   empty: string;
   heroAlt: string;
+  hubHeroAlt: string;
+  photoCredit: string;
   categories: Record<LawCategory, string>;
   categoryLeads: Record<LawCategory, string>;
   status: Record<LawStatus, string>;
@@ -92,6 +94,9 @@ const pageEn: LawPage = {
   empty: 'No entries on this shelf yet.',
   heroAlt:
     'The European Parliament hemicycle — institutional backdrop for the Law section, not a photograph of a named vote',
+  hubHeroAlt:
+    'Golden scales of justice on a lit circular plinth beside a bronze Lady Justice statue in a dark marble lobby at night',
+  photoCredit: 'Photo: founder-supplied scales of justice.',
   categories: {
     ecology: 'Ecology',
     ai: 'AI',
@@ -163,6 +168,9 @@ const pageRu: LawPage = {
   empty: 'На этой полке пока нет записей.',
   heroAlt:
     'Полукруг Европейского парламента — институциональный фон раздела «Право», не снимок конкретного голосования',
+  hubHeroAlt:
+    'Золотые весы правосудия на подсвеченном круглом подиуме рядом с бронзовой статуей Фемиды в тёмном мраморном холле ночью',
+  photoCredit: 'Фото: снимок основателя — золотые весы правосудия.',
   categories: {
     ecology: 'Экология',
     ai: 'ИИ',
@@ -234,6 +242,9 @@ const pagePl: LawPage = {
   empty: 'Na tej półce nie ma jeszcze wpisów.',
   heroAlt:
     'Hemicycle Parlamentu Europejskiego — instytucjonalne tło działu Prawo, nie zdjęcie konkretnego głosowania',
+  hubHeroAlt:
+    'Złote wagi sprawiedliwości na podświetlonym okrągłym podium obok brązowego posągu Temidy w ciemnym marmurowym holu nocą',
+  photoCredit: 'Zdjęcie: zdjęcie założyciela — złote wagi sprawiedliwości.',
   categories: {
     ecology: 'Ekologia',
     ai: 'SI',
@@ -305,6 +316,9 @@ const pageLv: LawPage = {
   empty: 'Šajā plauktā vēl nav ierakstu.',
   heroAlt:
     'Eiropas Parlamenta hemikikls — sadaļas Tiesības institucionālais fons, ne konkrēta balsojuma foto',
+  hubHeroAlt:
+    'Zelta taisnības svari uz apgaismota apaļa podiuma blakus bronzas Tēmisas statujai tumšā marmora vestibilā naktī',
+  photoCredit: 'Foto: dibinātāja piegādāti zelta taisnības svari.',
   categories: {
     ecology: 'Ekoloģija',
     ai: 'MI',

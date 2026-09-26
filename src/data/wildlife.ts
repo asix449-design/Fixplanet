@@ -1,9 +1,14 @@
 import type { HubIconName } from './hub';
+import { cite, type PrimarySource } from './sources';
+
+export type { PrimarySource } from './sources';
 
 export const wildlifeStatusKeys = [
   'surviving',
   'endangered',
   'extinct',
+  'insects',
+  'domesticates',
 ] as const;
 
 export type WildlifeStatus = (typeof wildlifeStatusKeys)[number];
@@ -15,24 +20,16 @@ export const wildlifeHubKeys = [
 
 export type WildlifeHubKey = (typeof wildlifeHubKeys)[number];
 
-/** Hub tiles with a Coming soon badge and no catalog shelf yet. */
-export const wildlifeSoonKeys = ['insects', 'domesticates'] as const;
-
-export type WildlifeSoonKey = (typeof wildlifeSoonKeys)[number];
-
-export type WildlifeHubTileKey = WildlifeHubKey | WildlifeSoonKey;
-
 export const wildlifeHub = [
   { key: 'surviving', icon: 'paw' },
   { key: 'endangered', icon: 'alert' },
   { key: 'extinct', icon: 'gone' },
   { key: 'homo-sapiens', icon: 'human' },
-  { key: 'insects', icon: 'insect', soon: true },
-  { key: 'domesticates', icon: 'horse', soon: true },
+  { key: 'insects', icon: 'insect' },
+  { key: 'domesticates', icon: 'horse' },
 ] as const satisfies ReadonlyArray<{
-  key: WildlifeHubTileKey;
+  key: WildlifeHubKey;
   icon: HubIconName;
-  soon?: true;
 }>;
 
 export const iucnKeys = [
@@ -59,10 +56,13 @@ export type SpeciesMeta = {
   slug: string;
   scientificName: string;
   status: WildlifeStatus;
-  iucn: IucnKey;
+  /** Omit when the pack has no global IUCN assessment (ESA-listed insects; livestock). */
+  iucn?: IucnKey;
   /** Extra card label when IUCN CR still overstates a wild breeding population. */
   functionallyExtinct?: boolean;
   image: ImageCredit;
+  /** Official IUCN / agency pages — not image credits. Optional until a row is sewn. */
+  primarySources?: PrimarySource[];
 };
 
 export type SpeciesCopy = {
@@ -95,14 +95,21 @@ function commons(
   return { file, credit, license, sourceUrl };
 }
 
+function iucnList(scientificName: string, url: string): PrimarySource {
+  return cite(`IUCN Red List — ${scientificName}`, url);
+}
+
 /**
  * Curated first list. To add a species:
- * 1. Add a row here (English slug, Latin name, status shelf, IUCN code, image credit).
- * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts`.
+ * 1. Add a row here (English slug, Latin name, status shelf, optional IUCN code, image credit,
+ *    optional clickable primarySources).
+ * 2. Add the same slug to en/ru/pl/lv in `src/i18n/wildlife.ts` or `wildlife-pack*.ts`.
  * 3. Drop a photo in `public/images/wildlife/{file}` (Wikimedia/PD preferred).
  * 4. `npm run build`.
  * Homo sapiens copy is not a species card — it lives on the `/wildlife/homo-sapiens`
  * shelf (species frame). The Late Pleistocene journey is told on `/migration/humans`.
+ * Primary sources are official IUCN / agency pages — not blogs. Image credits stay
+ * on `image`, separate from `primarySources`.
  */
 export const speciesMeta: SpeciesMeta[] = [
   {
@@ -116,6 +123,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Gray_Wolf.jpg',
     ),
+    primarySources: [
+      iucnList('Canis lupus', 'https://www.iucnredlist.org/species/3746/226161232'),
+      cite(
+        'U.S. Fish and Wildlife Service — gray wolf',
+        'https://www.fws.gov/species/gray-wolf-canis-lupus',
+      ),
+    ],
   },
   {
     slug: 'brown-bear',
@@ -128,6 +142,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.5',
       'https://commons.wikimedia.org/wiki/File:Brown_bear_(Ursus_arctos_arctos)_running.jpg',
     ),
+    primarySources: [
+      iucnList('Ursus arctos', 'https://www.iucnredlist.org/species/41688/121229971'),
+      cite(
+        'Large Carnivore Initiative for Europe — brown bear',
+        'https://www.lcie.org/Large-carnivores/Brown-bear',
+      ),
+    ],
   },
   {
     slug: 'american-bison',
@@ -140,6 +161,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg',
     ),
+    primarySources: [
+      iucnList('Bison bison', 'https://www.iucnredlist.org/species/2815/123789863'),
+      cite(
+        'U.S. Fish and Wildlife Service — American bison',
+        'https://www.fws.gov/species/american-bison-bison-bison',
+      ),
+    ],
   },
   {
     slug: 'african-savanna-elephant',
@@ -152,6 +180,16 @@ export const speciesMeta: SpeciesMeta[] = [
       'GFDL 1.2',
       'https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Loxodonta africana',
+        'https://www.iucnredlist.org/species/181008073/223031019',
+      ),
+      cite(
+        'IUCN SSC African Elephant Specialist Group',
+        'https://iucn.org/our-union/commissions/group/iucn-ssc-african-elephant-specialist-group',
+      ),
+    ],
   },
   {
     slug: 'lion',
@@ -164,6 +202,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Lion_waiting_in_Namibia.jpg',
     ),
+    primarySources: [
+      iucnList('Panthera leo', 'https://www.iucnredlist.org/species/15951/259030422'),
+    ],
   },
   {
     slug: 'red-deer',
@@ -176,6 +217,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_1.jpg',
     ),
+    primarySources: [
+      iucnList('Cervus elaphus', 'https://www.iucnredlist.org/species/55997072/142404453'),
+    ],
   },
   {
     slug: 'wild-boar',
@@ -188,6 +232,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Sus_scrofa_scrofa.jpg',
     ),
+    primarySources: [
+      iucnList('Sus scrofa', 'https://www.iucnredlist.org/species/41775/44141833'),
+    ],
   },
   {
     slug: 'european-beaver',
@@ -200,6 +247,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 4.0',
       'https://commons.wikimedia.org/wiki/File:Bever_-_Eurasian_beaver_-_Castor_fiber_6.jpg',
     ),
+    primarySources: [
+      iucnList('Castor fiber', 'https://www.iucnredlist.org/species/4007/197499749'),
+      cite(
+        'IUCN SSC Beaver Specialist Group',
+        'https://www.iucn.org/our-union/commissions/group/iucn-ssc-beaver-specialist-group',
+      ),
+    ],
   },
   {
     slug: 'humpback-whale',
@@ -212,6 +266,154 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 3.0',
       'https://commons.wikimedia.org/wiki/File:Humpback_stellwagen_edit.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Megaptera novaeangliae',
+        'https://www.iucnredlist.org/species/13006/50362794',
+      ),
+      cite(
+        'NOAA Fisheries — humpback whale',
+        'https://www.fisheries.noaa.gov/species/humpback-whale',
+      ),
+    ],
+  },
+  {
+    slug: 'european-bison',
+    scientificName: 'Bison bonasus',
+    status: 'surviving',
+    iucn: 'NT',
+    image: commons(
+      'european-bison.jpg',
+      'Charles J. Sharp / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:European_bison_(Bison_bonasus)_male_Bia%C5%82owieza.jpg',
+    ),
+    primarySources: [
+      iucnList('Bison bonasus', 'https://www.iucnredlist.org/species/2814/45156279'),
+      cite(
+        'IUCN news — European bison recovering (10 Dec 2020)',
+        'https://www.iucn.org/news/species/202012/european-bison-recovering-31-species-declared-extinct-iucn-red-list',
+      ),
+      cite(
+        'Oryx — range-wide conservation action plan for the European bison',
+        'https://www.cambridge.org/core/journals/oryx/article/rangewide-conservation-action-plan-for-the-european-bison/6AC6945EF32219F45721A8443EC94141',
+      ),
+    ],
+  },
+  {
+    slug: 'north-american-beaver',
+    scientificName: 'Castor canadensis',
+    status: 'surviving',
+    iucn: 'LC',
+    image: commons(
+      'north-american-beaver.jpg',
+      'Glacier National Park / U.S. National Park Service (Wikimedia Commons)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Beaver_-_Castor_canadensis_(51361589026).jpg',
+    ),
+    primarySources: [
+      iucnList('Castor canadensis', 'https://www.iucnredlist.org/species/4003/10308287'),
+      cite(
+        'Animal Diversity Web — Castor canadensis',
+        'https://animaldiversity.org/accounts/Castor_canadensis/',
+      ),
+      cite(
+        'USDA Forest Service Region 2 — North American beaver assessment',
+        'https://westernbeavers.org/wp-content/uploads/2024/02/6.-North-American-Beaver-Castor-canadensis-for-USDA-Forest-Service-stelprdb5181919.pdf',
+      ),
+      cite(
+        'Stanford Report — beaver rebound (11 Aug 2025)',
+        'https://news.stanford.edu/stories/2025/08/beavers-climate-resilient-watersheds-biodiversity-research',
+      ),
+      cite(
+        'Communications Earth & Environment (2025)',
+        'https://doi.org/10.1038/s43247-025-02572-y',
+      ),
+    ],
+  },
+  {
+    slug: 'bald-eagle',
+    scientificName: 'Haliaeetus leucocephalus',
+    status: 'surviving',
+    iucn: 'LC',
+    image: commons(
+      'bald-eagle.jpg',
+      'Andy Morffew / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Bald_eagle_in_Alaska_2016-3.jpg',
+    ),
+    primarySources: [
+      cite(
+        'USFWS — bald eagle',
+        'https://www.fws.gov/species/bald-eagle-haliaeetus-leucocephalus',
+      ),
+      cite(
+        'USFWS — Bald Eagle Population Size: 2020 Update',
+        'https://www.fws.gov/sites/default/files/documents/2020-bald-eagle-population-size-report.pdf',
+      ),
+      cite(
+        'Federal Register — bald eagle delisting (2007)',
+        'https://www.fws.gov/sites/default/files/federal_register_document/07-4302.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'white-rhinoceros',
+    scientificName: 'Ceratotherium simum',
+    status: 'surviving',
+    iucn: 'NT',
+    image: commons(
+      'white-rhinoceros.jpg',
+      'Charles J. Sharp / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:White_rhinoceros_(Ceratotherium_simum)_with_calf_Kruger.jpg',
+    ),
+    primarySources: [
+      iucnList('Ceratotherium simum', 'https://www.iucnredlist.org/species/4185/45813880'),
+      cite(
+        'IUCN press release — African rhino status (7 Aug 2025)',
+        'https://iucn.org/press-release/202508/poaching-african-rhinos-down-drought-and-other-threats-drive-losses-globally',
+      ),
+      cite(
+        'International Rhino Foundation — white rhino',
+        'https://rhinos.org/about-rhinos/rhino-species/white-rhino/',
+      ),
+      cite(
+        'Pachyderm — AfRSG chair report',
+        'https://pachydermjournal.org/index.php/pachyderm/article/view/1311',
+      ),
+      cite(
+        'South Africa — biodiversity management plan for the white rhinoceros',
+        'https://www.gov.za/sites/default/files/gcis_document/201512/39469gen1191.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'arabian-oryx',
+    scientificName: 'Oryx leucoryx',
+    status: 'surviving',
+    iucn: 'VU',
+    image: commons(
+      'arabian-oryx.jpg',
+      'Saudi Press Agency / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Uruq_Bani_Ma%27arid_Reserve,_Saudi_Arabia_(2025).jpg',
+    ),
+    primarySources: [
+      iucnList('Oryx leucoryx', 'https://www.iucnredlist.org/species/15569/50191626'),
+      cite(
+        'IUCN — A grain of hope in the desert (Arabian oryx, 2011)',
+        'https://iucn.org/content/a-grain-hope-desert',
+      ),
+      cite(
+        'IUCN SSC Antelope Specialist Group — Arabian oryx',
+        'https://antelopesg.org/arabian-oryx/',
+      ),
+      cite(
+        'Royal Society Open Science — Oman oryx genetics (2021)',
+        'https://royalsocietypublishing.org/doi/10.1098/rsos.210558',
+      ),
+    ],
   },
   {
     slug: 'vaquita',
@@ -224,6 +426,10 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg',
     ),
+    primarySources: [
+      iucnList('Phocoena sinus', 'https://www.iucnredlist.org/species/17028/214541137'),
+      cite('IUCN Cetacean Specialist Group', 'https://iucn-csg.org/'),
+    ],
   },
   {
     slug: 'amur-tiger',
@@ -236,6 +442,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Siberian_Tiger_sf.jpg',
     ),
+    primarySources: [
+      iucnList('Panthera tigris', 'https://www.iucnredlist.org/species/15955/214862019'),
+    ],
   },
   {
     slug: 'sumatran-orangutan',
@@ -248,6 +457,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Sumatran_Orangutan_(Pongo_abelii)_at_Perth_Zoo,_October_2024_18.jpg',
     ),
+    primarySources: [
+      iucnList('Pongo abelii', 'https://www.iucnredlist.org/species/121097935/259045437'),
+    ],
   },
   {
     slug: 'black-rhino',
@@ -260,6 +472,10 @@ export const speciesMeta: SpeciesMeta[] = [
       'GFDL 1.2',
       'https://commons.wikimedia.org/wiki/File:Diceros_bicornis.jpg',
     ),
+    primarySources: [
+      iucnList('Diceros bicornis', 'https://www.iucnredlist.org/species/6557/152728945'),
+      cite('International Rhino Foundation', 'https://rhinos.org/'),
+    ],
   },
   {
     slug: 'african-forest-elephant',
@@ -272,6 +488,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:African_Forest_Elephant.jpg',
     ),
+    primarySources: [
+      iucnList('Loxodonta cyclotis', 'https://www.iucnredlist.org/species/181007989/204404464'),
+    ],
   },
   {
     slug: 'mountain-gorilla',
@@ -284,6 +503,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Gorilla beringei beringei',
+        'https://www.iucnredlist.org/species/39999/17989719',
+      ),
+      cite('International Gorilla Conservation Programme', 'https://igcp.org/'),
+    ],
   },
   {
     slug: 'amur-leopard',
@@ -296,6 +522,12 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 2.5',
       'https://commons.wikimedia.org/wiki/File:Amur_Leopard_Panthera_pardus_orientalis_Facing_Forward_1761px.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Panthera pardus orientalis',
+        'https://www.iucnredlist.org/species/15957/5333757',
+      ),
+    ],
   },
   {
     slug: 'hawksbill-turtle',
@@ -308,6 +540,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg',
     ),
+    primarySources: [
+      iucnList('Eretmochelys imbricata', 'https://www.iucnredlist.org/species/8005/12881238'),
+    ],
   },
   {
     slug: 'northern-white-rhinoceros',
@@ -333,6 +568,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Rhinoceros_sondaicus_in_London_Zoo.jpg',
     ),
+    primarySources: [
+      iucnList('Rhinoceros sondaicus', 'https://www.iucnredlist.org/species/19495/18493900'),
+    ],
   },
   {
     slug: 'sumatran-rhinoceros',
@@ -345,6 +583,12 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Sumatran_Rhinoceros_Way_Kambas_2008.jpg',
     ),
+    primarySources: [
+      iucnList(
+        'Dicerorhinus sumatrensis',
+        'https://www.iucnredlist.org/species/6553/18493355',
+      ),
+    ],
   },
   {
     slug: 'saola',
@@ -357,6 +601,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Pseudoryx_nghetinhensis.PNG',
     ),
+    primarySources: [
+      iucnList('Pseudoryx nghetinhensis', 'https://www.iucnredlist.org/species/18597/166485696'),
+      cite(
+        'IUCN SSC Saola Working Group',
+        'https://iucn.org/our-union/commissions/group/iucn-ssc-saola-working-group',
+      ),
+    ],
   },
   {
     slug: 'yangtze-giant-softshell-turtle',
@@ -381,6 +632,13 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg',
     ),
+    primarySources: [
+      cite(
+        'New Zealand Department of Conservation — Kākāpō',
+        'https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/',
+      ),
+      iucnList('Strigops habroptilus', 'https://www.iucnredlist.org/species/22685245/129751169'),
+    ],
   },
   {
     slug: 'axolotl',
@@ -393,6 +651,9 @@ export const speciesMeta: SpeciesMeta[] = [
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_1.jpg',
     ),
+    primarySources: [
+      iucnList('Ambystoma mexicanum', 'https://www.iucnredlist.org/species/1095/53947343'),
+    ],
   },
   {
     slug: 'chinese-giant-salamander',
@@ -850,6 +1111,380 @@ export const speciesMeta: SpeciesMeta[] = [
       'https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg',
     ),
   },
+  {
+    slug: 'lord-howe-island-stick-insect',
+    scientificName: 'Dryococelus australis',
+    status: 'insects',
+    iucn: 'CR',
+    image: commons(
+      'lord-howe-island-stick-insect.jpg',
+      'Granitethighs / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Lord_Howe_Island_stick_insect_Dryococelus_australis_10June2011_PalmNursery.jpg',
+    ),
+    primarySources: [
+      iucnList('Dryococelus australis', 'https://www.iucnredlist.org/species/6852/21426226'),
+    ],
+  },
+  {
+    slug: 'queen-alexandras-birdwing',
+    scientificName: 'Ornithoptera alexandrae',
+    status: 'insects',
+    iucn: 'EN',
+    image: commons(
+      'queen-alexandras-birdwing.jpg',
+      'Peter Wing / Natural History Museum, London (Wikimedia Commons)',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:010361534_Ornithoptera_alexandrae_dorsal_male.jpg',
+    ),
+    primarySources: [
+      iucnList('Ornithoptera alexandrae', 'https://www.iucnredlist.org/species/15513/88565197'),
+    ],
+  },
+  {
+    slug: 'monarch',
+    scientificName: 'Danaus plexippus plexippus',
+    status: 'insects',
+    iucn: 'VU',
+    image: commons(
+      'monarch.jpg',
+      'jcantroot / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Monarch_butterfly_on_flower.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Danaus plexippus plexippus',
+        'https://www.iucnredlist.org/species/194052138/246096271',
+      ),
+      iucnList('Danaus plexippus', 'https://www.iucnredlist.org/species/159971/219149911'),
+      cite(
+        'U.S. Fish and Wildlife Service — monarch',
+        'https://www.fws.gov/species/monarch-danaus-plexippus',
+      ),
+    ],
+  },
+  {
+    slug: 'franklins-bumble-bee',
+    scientificName: 'Bombus franklini',
+    status: 'insects',
+    iucn: 'CR',
+    image: commons(
+      'franklins-bumble-bee.jpg',
+      'James P. Strange, USDA-ARS Pollinating Insect Research Unit (Wikimedia Commons)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Bombus_franklini.jpg',
+    ),
+    primarySources: [
+      iucnList('Bombus franklini', 'https://www.iucnredlist.org/species/135295/4070259'),
+    ],
+  },
+  {
+    slug: 'american-burying-beetle',
+    scientificName: 'Nicrophorus americanus',
+    status: 'insects',
+    image: commons(
+      'american-burying-beetle.jpg',
+      'USFWS Mountain-Prairie / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:American_Burying_Beetle.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — American burying beetle',
+        'https://www.fws.gov/species/american-burying-beetle-nicrophorus-americanus',
+      ),
+    ],
+  },
+  {
+    slug: 'hines-emerald',
+    scientificName: 'Somatochlora hineana',
+    status: 'insects',
+    image: commons(
+      'hines-emerald.jpg',
+      'Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Somatochlora_hineana.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Hine’s emerald',
+        'https://www.fws.gov/species/hines-emerald-somatochlora-hineana',
+      ),
+    ],
+  },
+  {
+    slug: 'rusty-patched-bumble-bee',
+    scientificName: 'Bombus affinis',
+    status: 'insects',
+    image: commons(
+      'rusty-patched-bumble-bee.jpg',
+      'USFWS Midwest Region / Wikimedia Commons',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Rusty_Patched_Bumble_Bee_on_Wild_Bergamot_(28626833097).jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Rusty patched bumble bee',
+        'https://www.fws.gov/species/rusty-patched-bumble-bee-bombus-affinis',
+      ),
+    ],
+  },
+  {
+    slug: 'european-stag-beetle',
+    scientificName: 'Lucanus cervus',
+    status: 'insects',
+    iucn: 'NT',
+    image: commons(
+      'european-stag-beetle.jpg',
+      'Reinhold Möller / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Lucanus cervus (Europe / EU27)',
+        'https://www.iucnredlist.org/species/239951016/213072777',
+      ),
+      cite(
+        'DOI — IUCN assessment record',
+        'https://doi.org/10.2305/iucn.uk.2025-2.rlts.t239951016a213072777.en',
+      ),
+      cite('EUNIS — Lucanus cervus', 'https://eunis.eea.europa.eu/species/221'),
+      cite(
+        'JNCC — UK Habitats Directive Art.17 S1083 (2019)',
+        'https://jncc.gov.uk/jncc-assets/Art17/S1083-UK-Habitats-Directive-Art17-2019.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'hermit-beetle',
+    scientificName: 'Osmoderma eremita',
+    status: 'insects',
+    iucn: 'NT',
+    image: commons(
+      'hermit-beetle.jpg',
+      'Nemracc / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Osmoderma_eremita,_Urwald_Sababurg.jpg',
+    ),
+    primarySources: [
+      iucnList(
+        'Osmoderma eremita',
+        'https://www.iucnredlist.org/species/15632/283806710',
+      ),
+      cite(
+        'DOI — IUCN assessment record',
+        'https://doi.org/10.2305/iucn.uk.2025-2.rlts.t15632a283806710.en',
+      ),
+    ],
+  },
+  {
+    slug: 'salt-creek-tiger-beetle',
+    scientificName: 'Cicindela nevadica lincolniana',
+    status: 'insects',
+    image: commons(
+      'salt-creek-tiger-beetle.jpg',
+      'Kai243 / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Ellipsoptera_nevadica_lincolniana.jpg',
+    ),
+    primarySources: [
+      cite(
+        'U.S. Fish and Wildlife Service — Salt Creek tiger beetle',
+        'https://www.fws.gov/species/salt-creek-tiger-beetle-cicindela-nevadica-lincolniana',
+      ),
+      cite(
+        'Nebraska Game and Parks — Salt Creek tiger beetle',
+        'https://outdoornebraska.gov/learn/nebraska-wildlife/nebraska-animals/insects/salt-creek-tiger-beetle/',
+      ),
+      cite(
+        'USFWS — Salt Creek tiger beetle recovery plan (PDF)',
+        'https://ecos.fws.gov/docs/recovery_plan/SCTB%20Signed%20Final%20Recovery%20Plan.pdf',
+      ),
+      cite(
+        'UNL — 30-year visual population estimates (open PDF)',
+        'https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2041&context=entomologyfacpub',
+      ),
+    ],
+  },
+  {
+    slug: 'wetapunga',
+    scientificName: 'Deinacrida heteracantha',
+    status: 'insects',
+    image: commons(
+      'wetapunga.jpg',
+      'Shaun Lee / Wikimedia Commons',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_12260329.jpg',
+    ),
+    primarySources: [
+      cite(
+        'NZTCS — Deinacrida heteracantha',
+        'https://nztcs.org.nz/assessments/19134',
+      ),
+      cite(
+        'DOC — Wetapunga',
+        'https://www.doc.govt.nz/nature/native-animals/invertebrates/weta/wetapunga/',
+      ),
+      cite(
+        'DOC — Best practice translocation of giant wētā (PDF)',
+        'https://www.doc.govt.nz/globalassets/documents/getting-involved/translocation/translocation-best-practice-giant-weta.pdf',
+      ),
+      cite(
+        'Auckland Zoo — Bay of Islands return (2020)',
+        'https://www.aucklandzoo.co.nz/news/were-returning-wetapunga-to-the-bay-of-islands-after-a-180-year-absence',
+      ),
+    ],
+  },
+  {
+    slug: 'cattle',
+    scientificName: 'Bos taurus / Bos indicus',
+    status: 'domesticates',
+    image: commons(
+      'cattle.jpg',
+      'Keith Weller / USDA (Wikimedia Commons)',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Hereford_cattle.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — cattle',
+        'https://www.fao.org/livestock-systems/global-distributions/cattle/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'chicken',
+    scientificName: 'Gallus gallus domesticus',
+    status: 'domesticates',
+    image: commons(
+      'chicken.jpg',
+      'Susulyka / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Gallus_gallus_domesticus.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — chickens',
+        'https://www.fao.org/livestock-systems/global-distributions/chickens/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'sheep',
+    scientificName: 'Ovis aries',
+    status: 'domesticates',
+    image: commons(
+      'sheep.jpg',
+      'T.Voekler / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Ovis_aries.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — sheep',
+        'https://www.fao.org/livestock-systems/global-distributions/sheep/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'pig',
+    scientificName: 'Sus domesticus',
+    status: 'domesticates',
+    image: commons(
+      'pig.jpg',
+      'Gzen92 / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(3).jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — pigs',
+        'https://www.fao.org/livestock-systems/global-distributions/pigs/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'water-buffalo',
+    scientificName: 'Bubalus bubalis',
+    status: 'domesticates',
+    image: commons(
+      'water-buffalo.jpg',
+      'Yann Forget / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Water_buffalo_bull,_near_Mehsana,_Gujarat,_India,_4.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO — buffalo milk',
+        'https://www.fao.org/dairy-production-products/dairy/buffaloes/en',
+      ),
+      cite(
+        'FAO Livestock Systems — buffaloes',
+        'https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'horse',
+    scientificName: 'Equus ferus caballus',
+    status: 'domesticates',
+    image: commons(
+      'horse.jpg',
+      'TwoWings / Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Camargue_horse.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems — horses',
+        'https://www.fao.org/livestock-systems/global-distributions/horses/en/',
+      ),
+      cite(
+        'Librado et al., Nature, 2021 — Western Eurasian steppe horses',
+        'https://doi.org/10.1038/s41586-021-04018-9',
+      ),
+    ],
+  },
+  {
+    slug: 'dog',
+    scientificName: 'Canis familiaris',
+    status: 'domesticates',
+    image: commons(
+      'dog.jpg',
+      'Marco Ponepal / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Labrador_Retriever.jpg',
+    ),
+    primarySources: [
+      cite(
+        'Bergström et al., Science, 2020 — origins of prehistoric dogs (PMC)',
+        'https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/',
+      ),
+      cite(
+        'Bergström et al., Science, 2020 (doi)',
+        'https://doi.org/10.1126/science.aba9572',
+      ),
+    ],
+  },
+  {
+    slug: 'camelids',
+    scientificName: 'Camelus / Lama / Vicugna',
+    status: 'domesticates',
+    image: commons(
+      'camelids.jpg',
+      'Hans Hillewaert / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Camelus_dromedarius.jpg',
+    ),
+    primarySources: [
+      cite(
+        'FAO — International Year of Camelids 2024',
+        'https://www.fao.org/camelids-2024/en',
+      ),
+    ],
+  },
 ];
 
 export function isWildlifeStatus(value: string | undefined): value is WildlifeStatus {
@@ -860,10 +1495,6 @@ export function isWildlifeHubKey(value: string | undefined): value is WildlifeHu
   return !!value && (wildlifeHubKeys as readonly string[]).includes(value);
 }
 
-export function isWildlifeSoonKey(value: string | undefined): value is WildlifeSoonKey {
-  return !!value && (wildlifeSoonKeys as readonly string[]).includes(value);
-}
-
 export function getSpeciesMeta(slug: string): SpeciesMeta | undefined {
   return speciesMeta.find((item) => item.slug === slug);
 }
@@ -872,18 +1503,32 @@ export function wildlifeImageSrc(image: ImageCredit): string {
   return `/images/wildlife/${image.file}`;
 }
 
+/** Hub-only hero. Species shelves keep the blurred section backdrop. */
+export const wildlifeHubBackdrop = {
+  file: 'wildlife-hub-bg.jpg',
+  credit: 'Founder-supplied deer drinking from a river at sunset',
+  license: 'Site asset',
+  width: 864,
+  height: 1152,
+} as const;
+
+export const wildlifeHubSrc = `/images/wildlife/${wildlifeHubBackdrop.file}`;
+export const wildlifeSectionSrc = '/images/wildlife/wildlife-section-bg.jpg';
+
 export function wildlifeHubPath(key: WildlifeHubKey): string {
   return `/wildlife/${key}`;
 }
 
-/** Live shelf path, or undefined for Coming soon hub tiles with no catalog yet. */
-export function wildlifeHubTilePath(
-  item: (typeof wildlifeHub)[number],
-): string | undefined {
-  if ('soon' in item && item.soon) return undefined;
-  return isWildlifeHubKey(item.key) ? wildlifeHubPath(item.key) : undefined;
+export function wildlifeHubTilePath(item: (typeof wildlifeHub)[number]): string {
+  return wildlifeHubPath(item.key);
 }
 
 export function wildlifeStatusPath(status: WildlifeStatus): string {
   return wildlifeHubPath(status);
+}
+
+export function wildlifePrimarySource(
+  sources: readonly PrimarySource[] | undefined,
+): PrimarySource | undefined {
+  return sources?.[0];
 }

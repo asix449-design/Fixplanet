@@ -1,0 +1,95 @@
+---
+import CitedSourceList from '../components/CitedSourceList.astro';
+import ForestRelated from '../components/ForestRelated.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  forestAtlasLandCredit,
+  forestAtlasPreviewSrc,
+  type ForestAtlasSlug,
+} from '../data/forest-atlas';
+import { forestBackdrop, forestFrameSrc } from '../data/forests';
+import {
+  forestAtlasChrome,
+  forestAtlasSectionLabels,
+  getForestAtlasBySlug,
+  getForestsPage,
+  getMapsPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+
+interface Props {
+  slug: ForestAtlasSlug;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const forests = getForestsPage(locale);
+const maps = getMapsPage(locale);
+const chrome = forestAtlasChrome(locale);
+const map = getForestAtlasBySlug(locale, Astro.props.slug);
+if (!map) {
+  throw new Error(`Unknown forests atlas slug: ${Astro.props.slug}`);
+}
+const preview = forestAtlasPreviewSrc(map.preview);
+const backdropSrc = forestFrameSrc(forestBackdrop.file);
+---
+
+<BaseLayout
+  title={`${map.title} — ${forests.title} — Fix Planet`}
+  description={map.blurb}
+  image={preview}
+  theme="forests"
+>
+  <div class="section-backdrop" aria-hidden="true">
+    <img src={backdropSrc} alt="" width={forestBackdrop.width} height={forestBackdrop.height} />
+    <div class="section-backdrop-scrim forests-scrim"></div>
+  </div>
+
+  <ShelfHeader
+    backHref={localizePath('/forests', locale)}
+    backLabel={forests.back}
+    title={map.title}
+    lede={map.blurb}
+  >
+    <p class="shelf-page-source">{map.meta}</p>
+  </ShelfHeader>
+
+  <section class="section section-hub-follow">
+    <div class="wrap">
+      <div class="wildlife-map-panel forests-panel">
+        <figure class="map-detail-art forest-map-art">
+          <img src={preview} alt={map.blurb} width="1600" height="800" />
+          <figcaption>
+            {map.sourceOrg}. {chrome.schematic}
+            {map.usesCoastline ? <><br />{forestAtlasLandCredit}</> : null}
+          </figcaption>
+        </figure>
+        <div class="prose map-detail-copy forest-frame-copy">
+          {
+            map.what && map.why && map.howToRead ? (
+              <>
+                <h2>{forestAtlasSectionLabels.what}</h2>
+                <p>{map.what}</p>
+                <h2>{forestAtlasSectionLabels.why}</h2>
+                <p>{map.why}</p>
+                <h2>{forestAtlasSectionLabels.how}</h2>
+                <p>{map.howToRead}</p>
+              </>
+            ) : (
+              <p>{map.detailShort}</p>
+            )
+          }
+          <CitedSourceList heading={maps.sourcesList} sources={map.sources} />
+          <p class="oceans-cta-row">
+            <a class="btn btn-primary map-open-source" href={map.sourceUrl} rel="noopener noreferrer">
+              {maps.openSource}
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ForestRelated currentAtlas={map.slug} />
+</BaseLayout>

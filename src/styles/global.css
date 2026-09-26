@@ -784,6 +784,14 @@ a.solution-card:hover {
   margin-inline: auto;
 }
 
+.religion-soon-back {
+  padding-top: 1.5rem;
+}
+
+.religion-soon-back + .coming-soon p {
+  max-width: 36rem;
+}
+
 .donate-page {
   padding: 3.2rem 0 4.6rem;
   max-width: 40rem;
@@ -864,6 +872,7 @@ a.solution-card:hover {
   color: #8a8a82;
   font-size: 0.9rem;
 }
+
 
 @media (max-width: 1100px) {
   .nav {
@@ -1072,6 +1081,10 @@ a.solution-card:hover {
   .hub-tile {
     min-height: 132px;
     padding: 1.1rem 1.05rem 1.15rem;
+  }
+
+  .home-hub .hub-tile.has-art {
+    min-height: 168px;
   }
 
   .home-panel {
@@ -1313,6 +1326,16 @@ a.wildlife-card:hover {
   color: #c8c8c0;
 }
 
+.status-insects {
+  background: rgba(255, 180, 40, 0.12);
+  color: #e8c56a;
+}
+
+.status-domesticates {
+  background: rgba(192, 255, 0, 0.12);
+  color: var(--lime);
+}
+
 .status-research {
   background: rgba(192, 255, 0, 0.1);
   color: var(--lime);
@@ -1502,6 +1525,33 @@ a.wildlife-card:hover {
   color: var(--white);
 }
 
+.theme-maps {
+  background: #02060c;
+}
+
+.theme-maps .maps-hub-backdrop img {
+  object-position: 50% 48%;
+  filter: saturate(1.06) brightness(0.92) contrast(1.05);
+  transform: scale(1.02);
+}
+
+.maps-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.38) 0%,
+      rgba(0, 4, 10, 0.12) 26%,
+      rgba(0, 6, 12, 0.16) 54%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0%, transparent 50%);
+}
+
+.theme-maps main {
+  position: relative;
+  z-index: 1;
+}
+
 .religion-soon-line {
   display: flex;
   flex-wrap: wrap;
@@ -1662,12 +1712,13 @@ a.map-card:hover {
 
 /* Section themes — one distinctive backdrop per major section */
 .theme-home {
-  background: #1a2e28;
+  background: #000;
 }
 
 .theme-home .section-backdrop img {
-  object-position: 42% 28%;
-  filter: saturate(0.55) brightness(0.28);
+  object-fit: cover;
+  object-position: 50% 40%;
+  filter: none;
   transform: none;
 }
 
@@ -1675,11 +1726,11 @@ a.map-card:hover {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.82) 0%,
-      rgba(0, 0, 0, 0.68) 22%,
-      rgba(0, 0, 0, 0.58) 48%,
-      rgba(0, 0, 0, 0.72) 78%,
-      rgba(0, 0, 0, 0.9) 100%
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.28) 28%,
+      rgba(0, 0, 0, 0.34) 52%,
+      rgba(0, 0, 0, 0.55) 78%,
+      rgba(0, 0, 0, 0.78) 100%
     );
 }
 
@@ -1731,8 +1782,17 @@ a.map-card:hover {
   width: min(100%, 460px);
   aspect-ratio: 1;
   margin-inline: auto;
-  background: #000;
+  background: transparent;
   border-radius: 50%;
+}
+
+.earth-globe-credit {
+  margin: 0.45rem 0 0;
+  color: rgba(232, 236, 242, 0.62);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
 }
 
 .earth-globe-fallback,
@@ -1826,6 +1886,15 @@ a.map-card:hover {
   margin: 0;
   color: #e4eee6;
   font-size: 1.08rem;
+}
+
+.shelf-page-source {
+  max-width: 42rem;
+  margin: 0.55rem 0 0;
+}
+
+.shelf-page-source a {
+  color: var(--lime);
 }
 
 .shelf-page .encyc-lede p,
@@ -2002,6 +2071,110 @@ a.map-card:hover {
   line-height: 1.4;
 }
 
+/* Home glass tiles only — founder art + neon lime. Section hubs stay unchanged. */
+.home-hub .hub-tile.has-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 214px;
+  padding: 1.15rem 1.1rem 1.2rem;
+  background: rgba(4, 8, 6, 0.22);
+  backdrop-filter: blur(18px) saturate(1.15);
+  -webkit-backdrop-filter: blur(18px) saturate(1.15);
+  border: 1px solid rgba(192, 255, 0, 0.48);
+  border-radius: 18px;
+  box-shadow:
+    0 0 0 1px rgba(192, 255, 0, 0.1),
+    0 0 16px rgba(192, 255, 0, 0.16),
+    0 14px 30px rgba(0, 0, 0, 0.42);
+}
+
+.home-hub .hub-tile-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-hub .hub-tile[data-tile='maps'] .hub-tile-art,
+.home-hub .hub-tile[data-tile='about'] .hub-tile-art {
+  object-position: center 46%;
+}
+
+.home-hub .hub-tile[data-tile='oceans'] .hub-tile-art {
+  object-position: center 62%;
+}
+
+.home-hub .hub-tile[data-tile='forests'] .hub-tile-art {
+  object-position: center 42%;
+}
+
+.home-hub .hub-tile[data-tile='wildlife'] .hub-tile-art {
+  object-position: 72% 48%;
+}
+
+.home-hub .hub-tile-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.36) 40%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+.home-hub .hub-tile.has-art .hub-tile-top,
+.home-hub .hub-tile.has-art h2,
+.home-hub .hub-tile.has-art p,
+.home-hub .hub-tile.has-art .hub-arrow {
+  position: relative;
+  z-index: 2;
+}
+
+.home-hub .hub-tile.has-art h2 {
+  color: var(--white);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.75);
+}
+
+.home-hub .hub-tile.has-art p {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.65);
+}
+
+.home-hub .hub-tile.has-art:hover {
+  background: rgba(6, 10, 6, 0.16);
+  border-color: var(--lime);
+  box-shadow:
+    0 0 0 1px rgba(192, 255, 0, 0.3),
+    0 0 22px rgba(192, 255, 0, 0.3),
+    0 16px 34px rgba(0, 0, 0, 0.5);
+}
+
+.home-hub .hub-tile.has-art:hover .hub-tile-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.26) 40%,
+      rgba(0, 0, 0, 0.04) 100%
+    );
+}
+
+.home-hub .hub-tile.has-art .hub-icon {
+  background: rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-color: rgba(192, 255, 0, 0.58);
+}
+
 .home-band {
   position: relative;
   z-index: 1;
@@ -2129,6 +2302,28 @@ a.map-card:hover {
   background: rgba(0, 0, 0, 0.82);
 }
 
+.theme-wildlife:has(.wildlife-hub-hero) {
+  background: #06100c;
+}
+
+.theme-wildlife .wildlife-hub-backdrop img {
+  object-position: 50% 58%;
+  filter: saturate(1.1) brightness(1.04) contrast(1.05);
+  transform: scale(1.04);
+}
+
+.wildlife-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.36) 0%,
+      rgba(0, 4, 2, 0.12) 26%,
+      rgba(0, 6, 4, 0.16) 56%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.14) 0%, transparent 52%);
+}
+
 .theme-wildlife .site-footer,
 .theme-wildlife-detail .site-footer,
 .theme-migration .site-footer,
@@ -2137,6 +2332,8 @@ a.map-card:hover {
 .theme-innovations-detail .site-footer,
 .theme-forests .site-footer,
 .theme-oceans .site-footer,
+.theme-solutions .site-footer,
+.theme-maps .site-footer,
 .theme-law .site-footer,
 .theme-law-detail .site-footer,
 .theme-terraforming .site-footer,
@@ -2311,6 +2508,81 @@ a.map-card:hover {
   z-index: 1;
 }
 
+.theme-solutions:has(.solutions-hero) {
+  background: #050508;
+}
+
+.theme-solutions .solutions-hub-backdrop img {
+  object-position: 50% 42%;
+  filter: saturate(1.08) brightness(0.86) contrast(1.05);
+  transform: scale(1.03);
+}
+
+.solutions-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(0, 0, 0, 0.16) 26%,
+      rgba(0, 2, 4, 0.2) 56%,
+      rgba(0, 0, 0, 0.72) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.18) 0%, transparent 50%);
+}
+
+.theme-solutions:has(.solutions-hero) main {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-solutions-detail {
+  background: #06110c;
+}
+
+.theme-solutions-detail .site-header,
+.theme-solutions-detail .site-footer {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.theme-solutions-detail .wildlife-detail,
+.theme-solutions-detail .solutions-prose {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-solutions-detail .solutions-prose {
+  background: rgba(8, 8, 8, 0.9);
+  color: var(--ink);
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.theme-solutions-detail .solutions-prose h2,
+.theme-solutions-detail .solutions-prose p {
+  color: var(--ink);
+}
+
+.theme-solutions-detail .solutions-prose .wildlife-sources {
+  color: var(--muted);
+}
+
+.theme-solutions-detail .cited-source-list a {
+  color: var(--lime);
+}
+
+.solutions-detail-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 14, 12, 0.42) 0%,
+      rgba(6, 18, 15, 0.58) 44%,
+      rgba(6, 16, 13, 0.82) 100%
+    ),
+    linear-gradient(90deg, rgba(6, 16, 13, 0.45) 0%, transparent 62%);
+}
+
 /* Innovations — distinct tech/Earth circuit theme */
 .theme-innovations,
 .theme-innovations-detail {
@@ -2442,7 +2714,8 @@ a.map-card:hover {
   flex-direction: column;
 }
 
-.innovation-card-wrap .wildlife-card {
+.innovation-card-wrap .wildlife-card,
+.innovation-card-wrap .map-card {
   flex: 1;
   height: auto;
 }
@@ -2460,7 +2733,8 @@ a.map-card:hover {
   color: var(--lime);
 }
 
-.theme-innovations-detail .cited-source-list a {
+.theme-innovations-detail .cited-source-list a,
+.theme-wildlife-detail .cited-source-list a {
   color: var(--lime);
 }
 
@@ -2524,6 +2798,175 @@ a.map-card:hover {
   margin-top: 1.3rem;
 }
 
+.borders-heading-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.55rem 1rem;
+  margin: 0 0 0.6em;
+}
+
+.borders-heading-row h2 {
+  margin: 0;
+  flex: 1 1 16rem;
+}
+
+.borders-readout {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  margin: 0.12rem 0 0;
+}
+
+.borders-readout button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid rgba(192, 255, 0, 0.28);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.borders-readout-play:not(:disabled):hover,
+.borders-readout-play:not(:disabled):focus-visible,
+.borders-readout-play[aria-pressed='true'] {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--black);
+}
+
+.borders-readout-stop:not(:disabled):hover,
+.borders-readout-stop:not(:disabled):focus-visible {
+  background: rgba(192, 255, 0, 0.12);
+  border-color: var(--lime);
+  color: var(--lime);
+}
+
+.borders-readout button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.borders-readout-rate {
+  display: inline-flex;
+  align-items: center;
+  width: 4.2rem;
+  margin-left: 0.1rem;
+}
+
+.borders-readout-rate input {
+  width: 100%;
+  accent-color: var(--lime);
+}
+
+.borders-essay {
+  margin: 0.35rem 0 1.15rem;
+  max-width: 42rem;
+}
+
+.borders-essay p {
+  color: var(--ink);
+  line-height: 1.7;
+  margin: 0 0 1em;
+}
+
+.borders-essay h3 {
+  color: var(--cream);
+  font-size: 1.15rem;
+  margin: 1.5rem 0 0.55rem;
+}
+
+.borders-essay h3:first-child {
+  margin-top: 1.05rem;
+}
+
+.borders-essay ul {
+  margin: 0 0 1em;
+  padding-left: 1.25rem;
+}
+
+.borders-essay li {
+  margin: 0.28rem 0;
+  line-height: 1.65;
+}
+
+.religion-legend {
+  margin: 0 0 1.6rem;
+  padding: 1rem 1.15rem 1.15rem;
+  background: rgba(10, 10, 10, 0.72);
+  border: 1px solid rgba(192, 255, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.religion-legend-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+}
+
+.religion-legend-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.45rem 1rem;
+}
+
+.religion-legend-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--cream);
+  font-size: 0.88rem;
+}
+
+.religion-swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 3px;
+  border: 1px solid rgba(244, 244, 240, 0.35);
+  flex: 0 0 auto;
+}
+
+.religion-honesty-pills {
+  max-width: none;
+}
+
+.religion-continents h4 {
+  margin: 1rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.religion-companion {
+  margin: 1.2rem 0 0;
+}
+
+.religion-companion img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  background: #f4efe4;
+}
+
+.religion-companion figcaption,
+.religion-companion-link {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 /* Forests — canopy / lime-on-black monitoring room */
 .theme-forests {
   background: #06110a;
@@ -2564,7 +3007,11 @@ a.map-card:hover {
 .theme-forests:has(.forests-hero) .site-header,
 .theme-oceans:has(.oceans-hero) .site-header,
 .theme-innovations:has(.innovations-hero) .site-header,
-.theme-terraforming:has(.terraforming-hero) .site-header {
+.theme-terraforming:has(.terraforming-hero) .site-header,
+.theme-solutions:has(.solutions-hero) .site-header,
+.theme-maps:has(.maps-hub-hero) .site-header,
+.theme-law:has(.law-hero) .site-header,
+.theme-wildlife:has(.wildlife-hub-hero) .site-header {
   background: rgba(0, 0, 0, 0.38);
 }
 
@@ -2575,7 +3022,11 @@ a.map-card:hover {
 .forests-hero,
 .oceans-hero,
 .innovations-hero,
-.terraforming-hero {
+.terraforming-hero,
+.solutions-hero,
+.maps-hub-hero,
+.law-hero,
+.wildlife-hub-hero {
   position: relative;
   z-index: 1;
   min-height: calc(100vh - var(--header-h));
@@ -2587,7 +3038,11 @@ a.map-card:hover {
 .forests-hero-inner,
 .oceans-hero-inner,
 .innovations-hero-inner,
-.terraforming-hero-inner {
+.terraforming-hero-inner,
+.solutions-hero-inner,
+.maps-hub-hero-inner,
+.law-hero-inner,
+.wildlife-hub-hero-inner {
   width: min(1180px, calc(100% - 40px));
   display: flex;
   flex-direction: column;
@@ -2608,7 +3063,11 @@ a.map-card:hover {
 .forests-hero-panel,
 .oceans-hero-panel,
 .innovations-hero-panel,
-.terraforming-hero-panel {
+.terraforming-hero-panel,
+.solutions-hero-panel,
+.maps-hub-hero-panel,
+.law-hero-panel,
+.wildlife-hub-hero-panel {
   width: min(42rem, 100%);
   padding: 0.85rem 1.15rem 0.9rem;
   border: 1px solid rgba(192, 255, 0, 0.28);
@@ -2617,7 +3076,11 @@ a.map-card:hover {
 }
 
 .innovations-hero-panel,
-.terraforming-hero-panel {
+.terraforming-hero-panel,
+.solutions-hero-panel,
+.maps-hub-hero-panel,
+.law-hero-panel,
+.wildlife-hub-hero-panel {
   margin-top: clamp(1.2rem, 8vh, 4rem);
   margin-left: auto;
 }
@@ -2754,14 +3217,22 @@ a.map-card:hover {
 .forests-hero-tiles,
 .oceans-hero-tiles,
 .innovations-hero-tiles,
-.terraforming-hero-tiles {
+.terraforming-hero-tiles,
+.solutions-hero-tiles,
+.maps-hub-hero-tiles,
+.law-hero-tiles,
+.wildlife-hub-hero-tiles {
   align-items: stretch;
 }
 
 .forests-hero .hub-tile,
 .oceans-hero .hub-tile,
 .innovations-hero .hub-tile,
-.terraforming-hero .hub-tile {
+.terraforming-hero .hub-tile,
+.solutions-hero .hub-tile,
+.maps-hub-hero .hub-tile,
+.law-hero .hub-tile,
+.wildlife-hub-hero .hub-tile {
   background: rgba(0, 0, 0, 0.42);
   min-height: 164px;
 }
@@ -2773,7 +3244,15 @@ a.map-card:hover {
 .innovations-hero .hub-tile:hover,
 .innovations-hero .hub-tile.is-active,
 .terraforming-hero .hub-tile:hover,
-.terraforming-hero .hub-tile.is-active {
+.terraforming-hero .hub-tile.is-active,
+.solutions-hero .hub-tile:hover,
+.solutions-hero .hub-tile.is-active,
+.maps-hub-hero .hub-tile:hover,
+.maps-hub-hero .hub-tile.is-active,
+.law-hero .hub-tile:hover,
+.law-hero .hub-tile.is-active,
+.wildlife-hub-hero .hub-tile:hover,
+.wildlife-hub-hero .hub-tile.is-active {
   background: rgba(4, 10, 2, 0.52);
 }
 
@@ -3043,7 +3522,11 @@ a.map-card:hover {
   .forests-hero,
   .oceans-hero,
   .innovations-hero,
-  .terraforming-hero {
+  .terraforming-hero,
+  .solutions-hero,
+  .maps-hub-hero,
+  .law-hero,
+  .wildlife-hub-hero {
     min-height: 0;
     padding: 1.15rem 0 1.6rem;
   }
@@ -3051,7 +3534,11 @@ a.map-card:hover {
   .forests-hero-inner,
   .oceans-hero-inner,
   .innovations-hero-inner,
-  .terraforming-hero-inner {
+  .terraforming-hero-inner,
+  .solutions-hero-inner,
+  .maps-hub-hero-inner,
+  .law-hero-inner,
+  .wildlife-hub-hero-inner {
     width: min(1180px, calc(100% - 32px));
     gap: 1.6rem;
   }
@@ -3064,7 +3551,11 @@ a.map-card:hover {
   .forests-hero-panel,
   .oceans-hero-panel,
   .innovations-hero-panel,
-  .terraforming-hero-panel {
+  .terraforming-hero-panel,
+  .solutions-hero-panel,
+  .maps-hub-hero-panel,
+  .law-hero-panel,
+  .wildlife-hub-hero-panel {
     padding: 0.85rem 0.8rem 0.8rem;
   }
 
@@ -3186,6 +3677,28 @@ a.map-card:hover {
 .theme-law-detail .section-backdrop img {
   object-position: 50% 28%;
   filter: blur(8px) saturate(0.75) brightness(0.38) sepia(0.18);
+}
+
+.theme-law:has(.law-hero) {
+  background: #08080c;
+}
+
+.theme-law .law-hub-backdrop img {
+  object-position: 42% 48%;
+  filter: saturate(1.06) brightness(0.88) contrast(1.06);
+  transform: scale(1.03);
+}
+
+.law-hub-scrim {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.14) 28%,
+      rgba(4, 4, 8, 0.2) 58%,
+      rgba(0, 0, 0, 0.74) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0%, transparent 48%);
 }
 
 .law-scrim {
@@ -3390,8 +3903,8 @@ a.map-card:hover {
 }
 
 .theme-terraforming .terraforming-hub-backdrop img {
-  object-position: 50% 40%;
-  filter: saturate(1.1) brightness(0.78) contrast(1.06);
+  object-position: 50% 46%;
+  filter: saturate(1.08) brightness(0.9) contrast(1.04);
   transform: scale(1.03);
 }
 
@@ -4058,6 +4571,123 @@ a.map-card:hover {
   color: #a3a39a;
   font-style: normal;
   font-size: 0.86rem;
+}
+
+.today-mig-idp-grid {
+  list-style: none;
+  margin: 0.9rem 0 1.1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 700px) {
+  .today-mig-idp-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.today-mig-idp-card {
+  padding: 0.85rem 0.95rem 1rem;
+  background: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(192, 255, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.today-mig-idp-tag {
+  margin: 0 0 0.35rem;
+  color: var(--lime);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.today-mig-idp-card h4,
+.today-mig-idp-crises-title {
+  margin: 0 0 0.45rem;
+  color: var(--cream);
+}
+
+.today-mig-idp-figure {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0 0 0.55rem;
+}
+
+.today-mig-idp-figure strong {
+  color: var(--lime);
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+
+.today-mig-idp-figure span,
+.today-mig-idp-hook,
+.today-mig-idp-detail {
+  margin: 0 0 0.55rem;
+  color: #d8e4da;
+}
+
+.today-mig-idp-figure span {
+  color: #a3a39a;
+  font-size: 0.82rem;
+}
+
+.today-mig-idp-hook {
+  color: var(--cream);
+}
+
+.today-mig-idp-detail {
+  color: #a3a39a;
+  font-size: 0.9rem;
+}
+
+.today-mig-idp-detail:last-child {
+  margin-bottom: 0;
+}
+
+.today-mig-idp-splits {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0 0 0.7rem;
+}
+
+.today-mig-idp-splits div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.today-mig-idp-splits dt {
+  margin: 0;
+  color: #a3a39a;
+  font-size: 0.8rem;
+}
+
+.today-mig-idp-splits dd {
+  margin: 0;
+  color: var(--lime);
+  font-size: 0.86rem;
+}
+
+.today-mig-idp-crises-title {
+  margin-top: 0.35rem;
+}
+
+.today-mig-layer-list > li > p:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0.45rem 0 0;
+  border-top: 1px solid rgba(192, 255, 0, 0.16);
+  color: var(--cream);
+}
+
+.today-mig-layer-list > li > p:first-child strong:last-child {
+  color: var(--lime);
 }
 
 @media (max-width: 900px) {

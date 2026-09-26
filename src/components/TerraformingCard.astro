@@ -1,6 +1,6 @@
 ---
 import type { GeoProject } from '../data/terraforming';
-import { geoDetailPath, geoImageSrc } from '../data/terraforming';
+import { geoDetailPath, geoImageSrc, geoPrimarySource } from '../data/terraforming';
 import { getGeoPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -11,10 +11,11 @@ const locale = resolveLocale(Astro.currentLocale);
 const page = getGeoPage(locale);
 const { item } = Astro.props;
 const href = localizePath(geoDetailPath(item.slug), locale);
+const primary = item.shelf === 'desert' ? geoPrimarySource(item.sources) : undefined;
 ---
 
 <article
-  class="wildlife-card-wrap"
+  class="wildlife-card-wrap innovation-card-wrap"
   data-geo-shelf={item.shelf}
   data-slug={item.slug}
 >
@@ -41,4 +42,13 @@ const href = localizePath(geoDetailPath(item.slug), locale);
       <span class="card-cta">{page.cardCta}</span>
     </div>
   </a>
+  {
+    primary && (
+      <p class="innovation-card-source">
+        <a href={primary.url} rel="noopener noreferrer">
+          {page.primarySource}: {primary.label}
+        </a>
+      </p>
+    )
+  }
 </article>

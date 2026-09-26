@@ -1,5 +1,12 @@
 [
   {
+    "slug": "wildlife-hub-bg",
+    "file": "wildlife-hub-bg.jpg",
+    "artist": "Founder-supplied hub hero — deer drinking from a river at sunset",
+    "license": "Site asset",
+    "sourceUrl": ""
+  },
+  {
     "slug": "addax",
     "file": "addax.jpg",
     "commonsTitle": "Addax nasomaculatus.jpg",
@@ -20,7 +27,7 @@
     "file": "african-savanna-elephant.jpg",
     "commonsTitle": "African Bush Elephant.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg",
-    "artist": "Muhammad Mahdi Karim Facebook\n\n\n\n\n\nThe making of this document was supported by Wikimedia CH. (Submit your project!)\nFor all the files concerned, please see the category Supported by Wikimedia CH.\n\n\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\u00a0\u2219 \u09ac\u09be\u0982\u09b2\u09be\u00a0\u2219 \u010de\u0161tina\u00a0\u2219 Deutsch\u00a0\u2219 English\u00a0\u2219 Esperanto\u00a0\u2219 espa\u00f1ol\u00a0\u2219 fran\u00e7ais\u00a0\u2219 galego\u00a0\u2219 \u0939\u093f\u0928\u094d\u0926\u0940\u00a0\u2219 magyar\u00a0\u2219 italiano\u00a0\u2219 \u65e5\u672c\u8a9e\u00a0\u2219 \u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438\u00a0\u2219 Nederlands\u00a0\u2219 portugu\u00eas do Brasil\u00a0\u2219 rumantsch\u00a0\u2219 \u0440\u0443\u0441\u0441\u043a\u0438\u0439\u00a0\u2219 sicilianu\u00a0\u2219 sloven\u0161\u010dina\u00a0\u2219 \u0ba4\u0bae\u0bbf\u0bb4\u0bcd\u00a0\u2219 \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\u00a0\u2219 \u4e2d\u6587\u00a0\u2219 +/\u2212",
+    "artist": "Muhammad Mahdi Karim Facebook\n\n\n\n\n\nThe making of this document was supported by Wikimedia CH. (Submit your project!)\nFor all the files concerned, please see the category Supported by Wikimedia CH.\n\n\nالعربية ∙ বাংলা ∙ čeština ∙ Deutsch ∙ English ∙ Esperanto ∙ español ∙ français ∙ galego ∙ हिन्दी ∙ magyar ∙ italiano ∙ 日本語 ∙ македонски ∙ Nederlands ∙ português do Brasil ∙ rumantsch ∙ русский ∙ sicilianu ∙ slovenščina ∙ தமிழ் ∙ українська ∙ 中文 ∙ +/−",
     "license": "GFDL 1.2"
   },
   {
@@ -130,9 +137,9 @@
   {
     "slug": "chinese-giant-salamander",
     "file": "chinese-giant-salamander.jpg",
-    "commonsTitle": "Velemlok \u010d\u00ednsk\u00fd zoo praha 1.jpg",
+    "commonsTitle": "Velemlok čínský zoo praha 1.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg",
-    "artist": "Petr Hamern\u00edk",
+    "artist": "Petr Hamerník",
     "license": "CC BY-SA 4.0"
   },
   {
@@ -484,7 +491,7 @@
     "file": "wildlife-section-bg.jpg",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet section theme \u2014 dense South American wildlife collage in a natural-history / sunset style",
+    "artist": "Fix Planet section theme — dense South American wildlife collage in a natural-history / sunset style",
     "license": "Site theme asset"
   },
   {
@@ -498,9 +505,201 @@
   {
     "slug": "yangtze-giant-softshell-turtle",
     "file": "yangtze-giant-softshell-turtle.jpg",
-    "commonsTitle": "R\u00f9a \u0110\u1ed3ng M\u00f4.jpg",
+    "commonsTitle": "Rùa Đồng Mô.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B9a_%C4%90%E1%BB%93ng_M%C3%B4.jpg",
     "artist": "Phuongcacanh at Vietnamese Wikipedia",
     "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "lord-howe-island-stick-insect",
+    "file": "lord-howe-island-stick-insect.jpg",
+    "commonsTitle": "Lord Howe Island stick insect Dryococelus australis 10June2011 PalmNursery.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lord_Howe_Island_stick_insect_Dryococelus_australis_10June2011_PalmNursery.jpg",
+    "artist": "Granitethighs",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "queen-alexandras-birdwing",
+    "file": "queen-alexandras-birdwing.jpg",
+    "commonsTitle": "010361534 Ornithoptera alexandrae dorsal male.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:010361534_Ornithoptera_alexandrae_dorsal_male.jpg",
+    "artist": "Peter_Wing",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "monarch",
+    "file": "monarch.jpg",
+    "commonsTitle": "Monarch butterfly on flower.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monarch_butterfly_on_flower.jpg",
+    "artist": "jcantroot",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "franklins-bumble-bee",
+    "file": "franklins-bumble-bee.jpg",
+    "commonsTitle": "Bombus franklini.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bombus_franklini.jpg",
+    "artist": "James P. Strange, USDA-ARS Pollinating Insect Research Unit",
+    "license": "Public domain"
+  },
+  {
+    "slug": "american-burying-beetle",
+    "file": "american-burying-beetle.jpg",
+    "commonsTitle": "American Burying Beetle.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Burying_Beetle.jpg",
+    "artist": "USFWS Mountain-Prairie",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "hines-emerald",
+    "file": "hines-emerald.jpg",
+    "commonsTitle": "Somatochlora hineana.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Somatochlora_hineana.jpg",
+    "artist": "Wikimedia Commons",
+    "license": "Public domain"
+  },
+  {
+    "slug": "rusty-patched-bumble-bee",
+    "file": "rusty-patched-bumble-bee.jpg",
+    "commonsTitle": "Rusty Patched Bumble Bee on Wild Bergamot (28626833097).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rusty_Patched_Bumble_Bee_on_Wild_Bergamot_(28626833097).jpg",
+    "artist": "USFWS Midwest Region",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "european-stag-beetle",
+    "file": "european-stag-beetle.jpg",
+    "commonsTitle": "Bamberg Hain Hirschkäfer focus stacked-20240520-RM-103648.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg",
+    "artist": "Reinhold Möller",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "hermit-beetle",
+    "file": "hermit-beetle.jpg",
+    "commonsTitle": "Osmoderma eremita, Urwald Sababurg.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osmoderma_eremita,_Urwald_Sababurg.jpg",
+    "artist": "Nemracc",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "salt-creek-tiger-beetle",
+    "file": "salt-creek-tiger-beetle.jpg",
+    "commonsTitle": "Ellipsoptera nevadica lincolniana.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ellipsoptera_nevadica_lincolniana.jpg",
+    "artist": "Kai243",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "wetapunga",
+    "file": "wetapunga.jpg",
+    "commonsTitle": "Deinacrida heteracantha 12260329.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_12260329.jpg",
+    "artist": "Shaun Lee",
+    "license": "CC BY 4.0"
+  },
+  {
+    "slug": "cattle",
+    "file": "cattle.jpg",
+    "commonsTitle": "Hereford cattle.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hereford_cattle.jpg",
+    "artist": "Keith Weller",
+    "license": "Public domain"
+  },
+  {
+    "slug": "chicken",
+    "file": "chicken.jpg",
+    "commonsTitle": "Gallus gallus domesticus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gallus_gallus_domesticus.jpg",
+    "artist": "Susulyka",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "sheep",
+    "file": "sheep.jpg",
+    "commonsTitle": "Ovis aries.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovis_aries.jpg",
+    "artist": "T.Voekler",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "pig",
+    "file": "pig.jpg",
+    "commonsTitle": "Cochon domestique (Sus scrofa domesticus) (3).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(3).jpg",
+    "artist": "Gzen92",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "water-buffalo",
+    "file": "water-buffalo.jpg",
+    "commonsTitle": "Water buffalo bull, near Mehsana, Gujarat, India, 4.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Water_buffalo_bull,_near_Mehsana,_Gujarat,_India,_4.jpg",
+    "artist": "Yann Forget",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "horse",
+    "file": "horse.jpg",
+    "commonsTitle": "Camargue horse.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camargue_horse.jpg",
+    "artist": "TwoWings",
+    "license": "Public domain"
+  },
+  {
+    "slug": "dog",
+    "file": "dog.jpg",
+    "commonsTitle": "Labrador Retriever.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labrador_Retriever.jpg",
+    "artist": "Marco Ponepal",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "camelids",
+    "file": "camelids.jpg",
+    "commonsTitle": "Camelus dromedarius.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius.jpg",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "european-bison",
+    "file": "european-bison.jpg",
+    "commonsTitle": "European bison (Bison bonasus) male Białowieza.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_bison_(Bison_bonasus)_male_Bia%C5%82owieza.jpg",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "north-american-beaver",
+    "file": "north-american-beaver.jpg",
+    "commonsTitle": "Beaver - Castor canadensis (51361589026).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaver_-_Castor_canadensis_(51361589026).jpg",
+    "artist": "GlacierNPS",
+    "license": "Public domain"
+  },
+  {
+    "slug": "bald-eagle",
+    "file": "bald-eagle.jpg",
+    "commonsTitle": "Bald eagle in Alaska 2016-3.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bald_eagle_in_Alaska_2016-3.jpg",
+    "artist": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "white-rhinoceros",
+    "file": "white-rhinoceros.jpg",
+    "commonsTitle": "White rhinoceros (Ceratotherium simum) with calf Kruger.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_rhinoceros_(Ceratotherium_simum)_with_calf_Kruger.jpg",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "arabian-oryx",
+    "file": "arabian-oryx.jpg",
+    "commonsTitle": "Uruq Bani Ma'arid Reserve, Saudi Arabia (2025).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uruq_Bani_Ma%27arid_Reserve,_Saudi_Arabia_(2025).jpg",
+    "artist": "Saudi Press Agency (SPA)",
+    "license": "CC BY-SA 4.0"
   }
 ]

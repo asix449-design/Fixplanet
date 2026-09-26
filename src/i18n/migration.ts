@@ -39,6 +39,7 @@ export type HumanEventCopy = {
   uncertainty: string;
   caption: string;
   imageAlt: string;
+  license?: string;
 };
 
 export type HumanEventAtlasCopy = {
@@ -174,6 +175,23 @@ export type TodayRegionCopy = {
   corridorsIntro: string;
 };
 
+export type TodayRefugeeCardId =
+  | 'refugees-unhcr-stock-2025'
+  | 'refugees-top-hosts-2025'
+  | 'refugees-top-origins-2025'
+  | 'refugees-neighbouring-hosts-2025'
+  | 'refugees-returns-2025';
+
+export type TodayRefugeeCardCopy = {
+  tag: string;
+  title: string;
+  hook: string;
+  figure: string;
+  unit: string;
+  rows: { label: string; figure: string }[];
+  detail: string[];
+};
+
 export type TodayShelfCopy = {
   mapTitle: string;
   mapAria: string;
@@ -202,6 +220,14 @@ export type TodayShelfCopy = {
   layersLabel: string;
   layerCamps: string;
   layerDetections: string;
+  layerIdp: string;
+  layerRefugees: string;
+  refugeesTitle: string;
+  refugeesLead: string;
+  refugeesDefinition: string;
+  refugeesHonesty: string;
+  refugeesNoChoropleth: string;
+  refugeesCards: Record<TodayRefugeeCardId, TodayRefugeeCardCopy>;
   campsTitle: string;
   campsLead: string;
   campsHonesty: string;
@@ -218,10 +244,33 @@ export type TodayShelfCopy = {
   detectionsOpen: string;
   detectionsNationalities: string;
   noHeadcount: string;
+  idpTitle: string;
+  idpLead: string;
+  idpDefinition: string;
+  idpHonesty: string;
+  idpNoChoropleth: string;
+  idpMillion: string;
+  idpMovementsUnit: string;
+  idpStockUnit: string;
+  idpConflictLabel: string;
+  idpDisasterLabel: string;
+  idpCountriesLabel: string;
+  idpBothLabel: string;
+  idpCrisesTitle: string;
+  idpCards: Record<
+    | 'idp-stock-2025'
+    | 'idp-conflict-displacements-2025'
+    | 'idp-disaster-displacements-2025'
+    | 'idp-movements-2025-overview',
+    { tag: string; title: string; hook: string; detail: string[] }
+  >;
+  idpCrisisCopy: Record<string, { place: string; note: string }>;
   regions: Record<TodayRegionId, TodayRegionCopy>;
   originNames: Record<TodayRegionId, string>;
   campCopy: Record<string, { name: string; country: string; note: string }>;
   routeCopy: Record<string, { name: string; note: string }>;
+  corridorCopy?: Record<string, { from: string; to: string; note: string }>;
+  yearCopy?: Record<string, { note: string }>;
 };
 
 const pages: Record<Locale, MigrationPage> = { en, ru, pl, lv };
