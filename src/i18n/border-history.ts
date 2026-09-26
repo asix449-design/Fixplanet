@@ -392,18 +392,24 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400 CE — nearest map: 1500',
+    title: '1400 CE',
     caption:
       'Year 1400 — Timur drives into Syria; in Europe two popes and the Hundred Years\' War; Vasily I\'s Moscow between the Horde and Lithuania; in China Zhu Di fights for the Ming throne.',
     essay: year1400En,
-    imageAlt: '1500 world political reconstruction used as the nearest sheet for 1400',
+    imageAlt: 'Schematic world political reconstruction for 1400 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1500: {
     title: '1500 CE',
     caption:
       'Year 1500 — Cabral "finds" Brazil on the way to India; Ivan III beats Lithuania at Vedrosha; in Italy the French and the dukes cut each other over cities; the Reformation is not yet here.',
     essay: year1500En,
-    imageAlt: 'World political reconstruction of main countries in 1500',
+    imageAlt: 'Schematic world political reconstruction for 1500 from aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1600: {
     title: '1600 CE — nearest map: 1648',
@@ -566,18 +572,24 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400 н. э. — ближайшая карта: 1500',
+    title: '1400 н. э.',
     caption:
       'Год 1400 — Тимур прёт на Сирию; в Европе два папы и Столетняя война; Москва Василия I между Ордой и Литвой; в Китае Чжу Ди бьётся за престол Мин.',
     essay: year1400Ru,
-    imageAlt: 'Реконструкция мира 1500 года как ближайший лист для 1400',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1400 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1500: {
     title: '1500 н. э.',
     caption:
       'Год 1500 — Кабрал «находит» Бразилию по пути в Индию; Иван III бьёт Литву на Ведроши; в Италии французы и герцоги режутся за города; Реформации ещё нет.',
     essay: year1500Ru,
-    imageAlt: 'Политическая реконструкция главных стран мира в 1500 году',
+    imageAlt: 'Схематическая политическая реконструкция мира на 1500 год по GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1600: {
     title: '1600 н. э. — ближайшая карта: 1648',
@@ -740,18 +752,24 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400 n.e. — najbliższa mapa: 1500',
+    title: '1400 n.e.',
     caption:
       'Rok 1400 — Timur pcha się na Syrię; w Europie dwóch papieży i wojna stuletnia; Moskwa Wasyla I między Ordą a Litwą; w Chinach Zhu Di bije się o tron Mingów.',
     essay: year1400Pl,
-    imageAlt: 'Rekonstrukcja świata z 1500 jako najbliższy arkusz dla 1400',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1400 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1500: {
     title: '1500 n.e.',
     caption:
       'Rok 1500 — Cabral «znajduje» Brazylię w drodze do Indii; Iwan III bije Litwę nad Wiedroszą; we Włoszech Francuzi i książęta tną się o miasta; Reformacji jeszcze nie ma.',
     essay: year1500Pl,
-    imageAlt: 'Rekonstrukcja polityczna głównych krajów świata w 1500',
+    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1500 z GeoJSON aourednik',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1600: {
     title: '1600 n.e. — najbliższa mapa: 1648',
@@ -914,18 +932,24 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     license: 'GPL-3.0',
   },
   1400: {
-    title: '1400. m.ē. — tuvākā karte: 1500',
+    title: '1400. m.ē.',
     caption:
       'Gads 1400 — Timurs spiežas uz Sīriju; Eiropā divi pāvesti un Simtgadu karš; Vasilija I Maskava starp Ordu un Lietuvu; Ķīnā Džu Di cīnās par Minu troni.',
     essay: year1400Lv,
-    imageAlt: '1500. gada pasaules rekonstrukcija kā tuvākā lapa 1400. gadam',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1400. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1500: {
     title: '1500. m.ē.',
     caption:
       'Gads 1500 — Kabrals «atrod» Brazīliju ceļā uz Indiju; Ivans III sit Lietuvu pie Vedrošas; Itālijā franči un hercogi griežas par pilsētām; Reformācijas vēl nav.',
     essay: year1500Lv,
-    imageAlt: 'Galveno pasaules valstu politiskā rekonstrukcija 1500. gadā',
+    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1500. gadā no aourednik GeoJSON',
+    sourceShort: 'Ourednik',
+    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    license: 'GPL-3.0',
   },
   1600: {
     title: '1600. m.ē. — tuvākā karte: 1648',
@@ -994,6 +1018,17 @@ const captions: Record<Locale, Record<number, BorderFrameCopy>> = {
 };
 
 export type BorderFrame = BorderFrameMeta & BorderFrameCopy;
+
+/** Stored years look like "1500 CE". Public captions use the era mark already used in that locale's titles. */
+export function formatBorderSourceYear(sourceYear: string, locale: Locale): string {
+  const match = /^(\d+)\s+CE$/.exec(sourceYear);
+  if (!match) return sourceYear;
+  const year = match[1];
+  if (locale === 'ru') return `${year} н. э.`;
+  if (locale === 'pl') return `${year} n.e.`;
+  if (locale === 'lv') return `${year}. m.ē.`;
+  return sourceYear;
+}
 
 export function getBorderHistoryPage(locale: Locale): BorderHistoryPage {
   return page[locale];

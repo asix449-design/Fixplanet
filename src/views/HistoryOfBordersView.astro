@@ -7,6 +7,7 @@ import {
   localizePath,
   resolveLocale,
 } from '../i18n';
+import { formatBorderSourceYear } from '../i18n/border-history';
 import { renderSafeMarkdown } from '../lib/safe-markdown';
 
 const locale = resolveLocale(Astro.currentLocale);
@@ -59,12 +60,14 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
         {
           frames.map((frame) => {
             const preview = borderHistoryPreviewSrc(frame.preview);
+            const sourceYear = formatBorderSourceYear(frame.sourceYear, locale);
+            const sourceYearSentence = sourceYear.endsWith('.') ? sourceYear : `${sourceYear}.`;
             return (
               <article class="borders-frame map-detail" id={`year-${frame.year}`}>
                 <figure class="map-detail-art">
                   <img src={preview} alt={frame.imageAlt} width="1600" height="800" />
                   <figcaption>
-                    {frame.sourceOrg}. {page.mapYearLabel}: {frame.sourceYear}.
+                    {frame.sourceOrg}. {page.mapYearLabel}: {sourceYearSentence}
                   </figcaption>
                 </figure>
                 <div class="prose map-detail-copy">
@@ -125,7 +128,7 @@ const firstPreview = borderHistoryPreviewSrc(frames[0]?.preview ?? 'y0001.png');
                   <p class="wildlife-sources">
                     <strong>{frame.sourceOrg}</strong>
                     <br />
-                    {page.mapYearLabel}: {frame.sourceYear}
+                    {page.mapYearLabel}: {sourceYear}
                     {frame.sourceUrl ? (
                       <>
                         <br />
