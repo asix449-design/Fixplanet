@@ -102,6 +102,37 @@ export const page: MigrationPage = {
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
     honesty:
       'Schemat datowanych okien na fizycznym obrazie Ziemi. To nie ślad GPS, nie drzewo genetyczne i nie twierdzenie, że sam klimat ruszył ludzi.',
+    mapLinks: {
+      title: 'Mapy wczesnych migracji',
+      lead:
+        'Publiczne mapy dydaktyczne — otwierane na ich stronach. Daty zostają przy nazwanym źródle. To nie GPS każdej grupy.',
+      openMap: 'Otwórz mapę →',
+      listedBy: 'Wymienione w',
+      extraLabels: {
+        'odyssey-exhibit': 'Strona wystawy',
+        'fossil-wikipedia': 'Lista skamieniałości w Wikipedii',
+        'era-australopithecus': 'Epoka australopiteków',
+        'era-erectus': 'Epoka Homo erectus',
+        'era-sapiens': 'Epoka Homo sapiens',
+      },
+      cards: {
+        'human-odyssey': {
+          title: 'Human Odyssey Map',
+          hook:
+            'Interaktywna mapa California Academy of Sciences: zarys archeologiczny, genetyczny i klimatyczny rozprzestrzeniania Homo sapiens z Afryki, z osią klimatu. Mapa pulpitu Akademii; zaznaczają, że nie jest zbudowana na telefony.',
+        },
+        'early-fossils': {
+          title: 'Wczesne stanowiska skamieniałości Homo sapiens',
+          hook:
+            'Globalne miejsca wczesnych znalezisk, ze źródeł Wikipedii.',
+        },
+        'hominid-evolution': {
+          title: 'Mapy ewolucji hominidów (~7 mln lat)',
+          hook:
+            'Atlas of Human Evolution: trzy mapy epok — australopiteki, Homo erectus i Homo sapiens — z własnymi etykietami atlasu.',
+        },
+      },
+    },
     eventAtlas: plHumanEventAtlas,
     sections: [
       {

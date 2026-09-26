@@ -5,6 +5,12 @@ import {
   type MigrationEntryCopy,
   type MigrationShelf,
 } from '../data/migration';
+import {
+  humanMapLinkMeta,
+  type HumanMapExtraId,
+  type HumanMapLinkId,
+  type HumanMapLinkMeta,
+} from '../data/human-map-links';
 import type { TodayRegionId } from '../data/migration-today';
 import {
   humanEventMeta,
@@ -65,6 +71,22 @@ export type HumanEraFrame = HumanEventFrame;
 export type HumanEraCopy = HumanEventCopy;
 export type HumanEraAtlasCopy = HumanEventAtlasCopy;
 
+export type HumanMapLinkCardCopy = {
+  title: string;
+  hook: string;
+};
+
+export type HumanMapLinksCopy = {
+  title: string;
+  lead: string;
+  openMap: string;
+  listedBy: string;
+  extraLabels: Record<HumanMapExtraId, string>;
+  cards: Record<HumanMapLinkId, HumanMapLinkCardCopy>;
+};
+
+export type HumanMapLinkCard = HumanMapLinkMeta & HumanMapLinkCardCopy;
+
 export type MigrationPage = {
   metaTitle: string;
   metaDescription: string;
@@ -123,6 +145,7 @@ export type MigrationPage = {
     mapSources: string;
     mapBaseCredit: string;
     honesty: string;
+    mapLinks: HumanMapLinksCopy;
     eventAtlas: HumanEventAtlasCopy;
     sections: HumanSection[];
   };
@@ -298,5 +321,14 @@ export function getHumanMigrationEvents(locale: Locale): HumanEventFrame[] {
 }
 
 export const getHumanMigrationEras = getHumanMigrationEvents;
+
+export function getHumanMapLinks(locale: Locale): HumanMapLinkCard[] {
+  const cards = pages[locale].humans.mapLinks.cards;
+  const fallback = pages.en.humans.mapLinks.cards;
+  return humanMapLinkMeta.map((meta) => {
+    const fields = cards[meta.id] ?? fallback[meta.id];
+    return { ...meta, ...fields };
+  });
+}
 
 export { migrationShelfKeys } from '../data/migration';
