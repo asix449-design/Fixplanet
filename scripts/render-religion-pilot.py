@@ -6,10 +6,10 @@ and data/religion-pilot/*.geojson). The political/coast underlay is aourednik
 historical-basemaps (GPL-3.0). Do not copy proprietary geometry into this file.
 
 Year 1 has no world_1 — uses world_100 and marks nearest.
-Years 500–1500 use world_500 … world_1500 (clip_to_land).
+Years 500–1800 use world_500 … world_1800 (clip_to_land).
 Year 600 writes y0600-schematic.png and must not overwrite y0600.png
-(the Christianity-to-600 process companion). Years 700–1500 write
-y0700.png … y1500.png with no on-image legend. Do not add 1600.
+(the Christianity-to-600 process companion). Years 700–1800 write
+y0700.png … y1800.png with no on-image legend.
 
 Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y0001-schematic.png
@@ -28,8 +28,12 @@ Output (2560 wide, tan land / soft blue sea, credit footer):
   public/images/maps/religion/y1300.png
   public/images/maps/religion/y1400.png
   public/images/maps/religion/y1500.png
+  public/images/maps/religion/y1600.png
+  public/images/maps/religion/y1700.png
+  public/images/maps/religion/y1800.png
 
 Run from repo root: python3 scripts/render-religion-pilot.py
+Pack D only: python3 scripts/render-religion-pilot.py 1600 1700 1800
 """
 
 from __future__ import annotations
@@ -69,6 +73,7 @@ LAND_URL = (
 WIDTH = 2560
 HEIGHT = 1280
 FOOTER_H = 72
+FOOTER_H_PACK_D = 96
 DPI = 100
 
 SEA = "#c9edfb"
@@ -98,6 +103,9 @@ YEARS = {
     1300: 1300,
     1400: 1400,
     1500: 1500,
+    1600: 1600,
+    1700: 1700,
+    1800: 1800,
 }
 
 FOOTER = (
@@ -252,6 +260,14 @@ def mpl_patch(poly: Polygon, **kwargs) -> PathPatch:
 def is_unmapped_centroid(lon: float, lat: float, year: int) -> bool:
     if lat < -55:
         return True
+    if year >= 1600:
+        # Australia is Aboriginal traditional from 1600 (mapped land).
+        # Other Pacific islands stay gray. Americas already mapped from 1300.
+        if lon > 163 and -10 < lat < 20:
+            return True
+        if 165 < lon < 180 and -48 < lat < -30:
+            return True  # New Zealand stays unmapped gray
+        return False
     if 110 < lon < 180 and -48 < lat < -10:
         return True
     if lon > 163 and lat < 20:
@@ -453,24 +469,44 @@ def render_year(year: int) -> Path:
     im = Image.open(tmp).convert("RGB")
     if im.size != (WIDTH, HEIGHT):
         im = im.resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS)
-    canvas = Image.new("RGB", (WIDTH, HEIGHT + FOOTER_H), FOOTER_BG)
+    footer_h = FOOTER_H_PACK_D if year >= 1600 else FOOTER_H
+    canvas = Image.new("RGB", (WIDTH, HEIGHT + footer_h), FOOTER_BG)
     canvas.paste(im, (0, 0))
     draw = ImageDraw.Draw(canvas)
     year_font = load_font(40)
     foot_font = load_font(18)
-    label = f"{year} CE"
-    if year == 1:
-        label = "1 CE · schematic reconstruction"
-    draw.text(
-        (WIDTH - 28, HEIGHT - 70),
-        label,
-        fill=INK,
-        font=year_font,
-        stroke_width=3,
-        stroke_fill=HALO,
-        anchor="rt",
-    )
-    draw.text((24, HEIGHT + 24), FOOTER, fill=FOOTER_FG, font=foot_font)
+    if year >= 1600:
+        # Four-digit year + wide gap + CE in the footer (not on-map; not 16000).
+        draw.text((24, HEIGHT + 22), "Religion fills © Fix Planet schematic", fill=FOOTER_FG, font=foot_font)
+        draw.text((24, HEIGHT + 52), "Basemap GPL-3.0 · Not a census", fill=FOOTER_FG, font=foot_font)
+        draw.text(
+            (WIDTH - 28, HEIGHT + 32),
+            "CE",
+            fill=FOOTER_FG,
+            font=year_font,
+            anchor="rt",
+        )
+        draw.text(
+            (WIDTH - 28 - 220, HEIGHT + 32),
+            f"{year:04d}",
+            fill=FOOTER_FG,
+            font=year_font,
+            anchor="rt",
+        )
+    else:
+        label = f"{year} CE"
+        if year == 1:
+            label = "1 CE · schematic reconstruction"
+        draw.text(
+            (WIDTH - 28, HEIGHT - 70),
+            label,
+            fill=INK,
+            font=year_font,
+            stroke_width=3,
+            stroke_fill=HALO,
+            anchor="rt",
+        )
+        draw.text((24, HEIGHT + 24), FOOTER, fill=FOOTER_FG, font=foot_font)
     if year < 700:
         paint_legend(draw, year, colors)
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -480,9 +516,10 @@ def render_year(year: int) -> Path:
 
 
 def main(years: list[int] | None = None) -> None:
-    write_geojson()
+    target = years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500)
+    write_geojson(list(target))
     OUT.mkdir(parents=True, exist_ok=True)
-    for year in years or (1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500):
+    for year in target:
         render_year(year)
 
 
