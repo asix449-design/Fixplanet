@@ -193,27 +193,27 @@ export const lvToday: TodayShelfCopy = {
     'coxs-bazar': {
       name: 'Koksasbazāra nometnes',
       country: 'Bangladeša',
-      note: 'Bangladešas valdība / UNHCR: 33 nometnes Koksasbazāra apgabalā, tostarp Kutupalonga. Rohindžu bēgļi no Mjanmas. Vēl ap 33 659 cilvēkiem Bhasančaras salā šajā marķierī nav iekļauti.',
+      note: 'Bangladešas valdība / UNHCR: 33 nometnes Koksasbazāra apgabalā, tostarp Kutupalonga. Rohindžu bēgļi no Mjanmas. Vēl 33 514 cilvēki Bhasančaras salā šajā marķierī nav iekļauti.',
     },
     dadaab: {
       name: 'Dadaaba',
       country: 'Kenija',
-      note: 'Dadaabas nometņu komplekss Kenijas austrumos. Skaitlis uz 2025. gada 31. decembri. Komplekss, ne viena telšu pilsēta.',
+      note: 'Dadaabas nometņu komplekss Kenijas austrumos. Kenijas statistikas pakete uz 2026. gada 31. augustu (valdība / UNHCR). Komplekss, ne viena telšu pilsēta.',
     },
     'kakuma-kalobeyei': {
       name: 'Kakuma un Kalobejei',
       country: 'Kenija',
-      note: 'Kakuma 225 701; Kalobejei 82 629; Eldoreta 2 425 — trīs vietas, ko UNHCR Kenija apvienoja 2025. gada 31. decembra atjauninājumā. Viens marķieris, jo tā ir viena operācija.',
+      note: 'Kakuma 234 542, Kalobejei 86 547 un Eldoreta 2 573, grupēti kā viena Kakumas apgabala operācija Kenijas statistikas paketē, 2026. gada 31. augustā.',
     },
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Bidibidi apmetne, Jumbes apgabals. Galvenais kontingents ir pārvietotie no Dienvidsudānas. Apmetne, ne nocietināta nometne.',
+      note: 'Bidibidi apmetne, Jumbes apgabals. Galvenais kontingents ir pārvietotie no Dienvidsudānas. UNHCR Uganda Active Population by Settlement, 2026. gada augusts.',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordānija',
-      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR operatīvais skaitlis uz 2026. gada 31. augustu.',
+      note: 'Zaatari nometne. Galvenais kontingents ir pārvietotie no Sīrijas. UNHCR Jordānijas iedzīvotāju skaitļi, 2026. gada augusts.',
     },
   },
   routeCopy: {

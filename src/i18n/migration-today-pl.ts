@@ -193,27 +193,27 @@ export const plToday: TodayShelfCopy = {
     'coxs-bazar': {
       name: 'Obozy Cox’s Bazar',
       country: 'Bangladesz',
-      note: 'Rząd Bangladeszu / UNHCR: 33 obozy w dystrykcie Cox’s Bazar, w tym Kutupalong. Uchodźcy Rohingya z Mjanmy. Dalsze około 33 659 osób na Bhasan Char nie wchodzi w ten znacznik.',
+      note: 'Rząd Bangladeszu / UNHCR: 33 obozy w dystrykcie Cox’s Bazar, w tym Kutupalong. Uchodźcy Rohingya z Mjanmy. Dalsze 33 514 osób na Bhasan Char nie wchodzi w ten znacznik.',
     },
     dadaab: {
       name: 'Dadaab',
       country: 'Kenia',
-      note: 'Kompleks obozów Dadaab we wschodniej Kenii. Liczba na 31 grudnia 2025. Kompleks, nie jedno miasto namiotów.',
+      note: 'Kompleks obozów Dadaab we wschodniej Kenii. Pakiet statystyk Kenii na 31 sierpnia 2026 (rząd / UNHCR). Kompleks, nie jedno miasto namiotów.',
     },
     'kakuma-kalobeyei': {
       name: 'Kakuma i Kalobeyei',
       country: 'Kenia',
-      note: 'Kakuma 225 701; Kalobeyei 82 629; Eldoret 2 425 — trzy ośrodki, które UNHCR Kenia zestawił w aktualizacji z 31 grudnia 2025. Jeden znacznik, bo to jedna operacja.',
+      note: 'Kakuma 234 542, Kalobeyei 86 547 i Eldoret 2 573, zgrupowane jako jedna operacja obszaru Kakumy w pakiecie statystyk Kenii, 31 sierpnia 2026.',
     },
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Osiedle Bidibidi, dystrykt Yumbe. Główny kontyngent to przesiedleni z Sudanu Południowego. Osiedle, nie obóz z murem.',
+      note: 'Osiedle Bidibidi, dystrykt Yumbe. Główny kontyngent to przesiedleni z Sudanu Południowego. UNHCR Uganda Active Population by Settlement, sierpień 2026.',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordania',
-      note: 'Obóz Zaatari. Główny kontyngent to przesiedleni z Syrii. Operacyjna liczba UNHCR na 31 sierpnia 2026.',
+      note: 'Obóz Zaatari. Główny kontyngent to przesiedleni z Syrii. Dane ludności UNHCR dla Jordanii, sierpień 2026.',
     },
   },
   routeCopy: {
