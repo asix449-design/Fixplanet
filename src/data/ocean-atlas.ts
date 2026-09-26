@@ -6,6 +6,10 @@ export const oceanAtlasSlugs = [
   'dissolved-oxygen',
   'sea-ice-extent',
   'sea-level',
+  'marine-heatwaves',
+  'ocean-heat-content',
+  'coral-reefs',
+  'marine-fisheries',
 ] as const;
 
 export type OceanAtlasSlug = (typeof oceanAtlasSlugs)[number];
@@ -194,6 +198,120 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
       cite(
         'IPCC AR6 WG1 report (Numbers vintage for 3.7 mm/yr)',
         'https://www.ipcc.ch/report/ar6/wg1/',
+      ),
+    ],
+  },
+  {
+    slug: 'marine-heatwaves',
+    preview: 'marine-heatwaves.svg',
+    sourceOrg: 'NOAA Coral Reef Watch / NOAA Physical Sciences Laboratory',
+    sourceLabel: 'NOAA Coral Reef Watch — Marine Heatwave',
+    sourceUrl: 'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
+    usesCoastline: true,
+    sources: [
+      cite(
+        'NOAA Coral Reef Watch — Marine Heatwave product',
+        'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
+      ),
+      cite('NOAA PSL — Marine heatwaves hub', 'https://psl.noaa.gov/marine-heatwaves/'),
+      cite(
+        'NOAA PSL — Marine heatwaves overview',
+        'https://psl.noaa.gov/marine-heatwaves/overview.html',
+      ),
+      cite(
+        'marineheatwaves.org (optional secondary)',
+        'https://www.marineheatwaves.org/',
+      ),
+      cite(
+        'marineheatwaves.org tracker (optional secondary)',
+        'https://www.marineheatwaves.org/tracker.html',
+      ),
+    ],
+  },
+  {
+    slug: 'ocean-heat-content',
+    preview: 'ocean-heat-content.svg',
+    sourceOrg: 'NOAA NCEI / NASA',
+    sourceLabel: 'NOAA NCEI — Ocean Heat Content',
+    sourceUrl: 'https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level',
+    usesCoastline: false,
+    sources: [
+      cite(
+        'NOAA NCEI — Ocean Heat Content, Salt Content, and Sea Level Anomalies',
+        'https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level',
+      ),
+      cite('NASA — Ocean heat vital signs', 'https://climate.nasa.gov/vital-signs/ocean-heat/'),
+      cite(
+        'NASA — Ocean heat content vital signs (alternate path)',
+        'https://climate.nasa.gov/vital-signs/ocean-heat-content/',
+      ),
+      cite(
+        'Climate.gov — Ocean heat content explainer',
+        'https://www.climate.gov/news-features/understanding-climate/climate-change-ocean-heat-content',
+      ),
+      cite(
+        'Mercator Ocean — Ocean heat content (optional secondary)',
+        'https://www.mercator-ocean.eu/en/ocean-heat-content/',
+      ),
+      cite('IPCC SROCC hub (assessment framing)', 'https://www.ipcc.ch/srocc/'),
+      cite('IPCC AR6 WG1 report', 'https://www.ipcc.ch/report/ar6/wg1/'),
+    ],
+  },
+  {
+    slug: 'coral-reefs',
+    preview: 'coral-reefs.svg',
+    sourceOrg: 'GCRMN / ICRI / NOAA Coral Reef Watch',
+    sourceLabel: 'GCRMN — Status of Coral Reefs 2020',
+    sourceUrl: 'https://gcrmn.net/2020-report/',
+    usesCoastline: true,
+    sources: [
+      cite(
+        'GCRMN — Status of Coral Reefs of the World: 2020 (report page)',
+        'https://gcrmn.net/2020-report/',
+      ),
+      cite(
+        'GCRMN — Status 2020 full PDF',
+        'https://gcrmn.net/wp-content/uploads/2025/08/GCRMN_Status_of_Coral_Reefs_of_the_World_2020.pdf',
+      ),
+      cite('DOI — GCRMN Status 2020', 'https://doi.org/10.59387/WOTJ9184'),
+      cite('GCRMN hub', 'https://gcrmn.net/'),
+      cite('ICRI — GCRMN', 'https://www.icriforum.org/gcrmn/'),
+      cite(
+        'UNEP — Status of Coral Reefs of the World 2020',
+        'https://www.unep.org/resources/status-coral-reefs-world-2020',
+      ),
+      cite(
+        'NOAA Coral Reef Watch — 5 km product',
+        'https://www.coralreefwatch.noaa.gov/product/5km/',
+      ),
+      cite(
+        'NOAA Ocean Service — Coral bleaching facts',
+        'https://oceanservice.noaa.gov/facts/coral_bleach.html',
+      ),
+      cite(
+        'NOAA — Fourth global coral bleaching event (context)',
+        'https://www.noaa.gov/news-release/noaa-confirms-4th-global-coral-bleaching-event',
+      ),
+    ],
+  },
+  {
+    slug: 'marine-fisheries',
+    preview: 'marine-fisheries.svg',
+    sourceOrg: 'FAO',
+    sourceLabel: 'FAO — State of World Fisheries and Aquaculture (SOFIA)',
+    sourceUrl: 'https://www.fao.org/publications/sofia/en',
+    usesCoastline: false,
+    sources: [
+      cite('FAO — SOFIA publications hub', 'https://www.fao.org/publications/sofia/en'),
+      cite('FAO — Fishery SOFIA entry', 'https://www.fao.org/fishery/en/sofia'),
+      cite(
+        'FAO — State of fisheries and aquaculture hub',
+        'https://www.fao.org/state-of-fisheries-aquaculture',
+      ),
+      cite('FAO Fishery hub', 'https://www.fao.org/fishery/en'),
+      cite(
+        'FAO FishStat data (optional secondary)',
+        'https://www.fao.org/fishery/en/fishstat/data',
       ),
     ],
   },
