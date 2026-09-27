@@ -385,23 +385,23 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'nitrogen-dioxide-no2',
     category: 'pollution',
-    year: 'multi-day average',
+    year: '2024',
     sourceShort: 'Sentinel-5P',
-    sourceOrg: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
-    sourceUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
-    openMapUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
+    sourceOrg: 'KNMI / TEMIS, from Copernicus Sentinel-5P TROPOMI',
+    sourceUrl: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
+    openMapUrl: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
     preview: 'nitrogen-dioxide-no2.jpg',
     detail: 'detail/nitrogen-dioxide-no2.webp',
     previewKind: 'data',
-    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · 2024 annual mean',
     sources: [
       {
-        label: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
-        url: 'https://maps.s5p-pal.com/no2-tropospheric/',
+        label: 'KNMI / TEMIS — monthly mean tropospheric NO₂ from TROPOMI',
+        url: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
       },
       {
-        label: 'S5P-PAL — Total Column NO₂',
-        url: 'https://maps.s5p-pal.com/no2/',
+        label: 'S5P-PAL — tropospheric NO₂ (living portal, not this annual mean)',
+        url: 'https://maps.s5p-pal.com/no2-tropospheric/',
       },
       {
         label: 'ESA — Sentinel-5P mission',

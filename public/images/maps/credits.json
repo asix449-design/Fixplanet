@@ -188,12 +188,12 @@
   },
   {
     "file": "nitrogen-dioxide-no2.jpg",
-    "title": "Tropospheric nitrogen dioxide, Sentinel-5P TROPOMI, June 2024",
-    "source": "Fix Planet map from Copernicus Sentinel-5P TROPOMI tropospheric NO₂, mean of 1–16 June 2024, NASA GIBS. Boundaries: Natural Earth 1:10m.",
-    "url": "https://maps.s5p-pal.com/no2-tropospheric/",
-    "license": "Copernicus Sentinel data (ESA) via NASA GIBS. Boundaries public domain (Natural Earth).",
+    "title": "Tropospheric nitrogen dioxide, Sentinel-5P TROPOMI, annual mean 2024",
+    "source": "Fix Planet map from Copernicus Sentinel-5P TROPOMI tropospheric NO₂, annual mean of the 2024 KNMI/TEMIS monthly grids. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.temis.nl/airpollution/no2col/no2month_tropomi.php",
+    "license": "Copernicus Sentinel data (ESA), processed by KNMI/TEMIS. Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "NASA colour scale. No legend text in the image."
+    "note": "Log scale from 1×10¹⁵ molecules/cm². Country outlines drawn on the base map. No legend text in the image."
   },
   {
     "file": "mismanaged-plastic-waste.jpg",

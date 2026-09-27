@@ -209,16 +209,16 @@ export const lv: Record<string, MapCopy> = {
   },
   'nitrogen-dioxide-no2': {
     title: 'Slāpekļa dioksīds (NO₂)',
-    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · 2024. gada vidējais',
     hook: 'Satelīta slāpekļa dioksīda kolonna virs pilsētām, rūpniecības un kuģniecības — degšanas piesārņojums, ne tas pats, kas PM2.5 masa.',
     description:
-      'NO₂ no TROPOMI / Sentinel-5P S5P-PAL portālā (slīdošais vidējais). Cits objekts nekā dzīvā PM2.5 karte.',
+      'Troposfēras NO₂ no TROPOMI / Sentinel-5P. Plate ir 2024. gada vidējais: divpadsmit KNMI/TEMIS mēneša režģu vidējais. Cits objekts nekā dzīvā PM2.5 karte.',
     whyOnShelf: 'Cits objekts nekā dzīvā PM2.5 karte. Degšanas piesārņojums, ne daļiņu masa.',
     howToRead:
-      'Mākoņi slēpj virsmu; spilgta kolonna ≠ gada limits. Atvērt tropospheric NO₂; priekšskatījums — Fix Planet pārskats.',
+      'Krāsa ir 2024. gada kolonnas logaritmiskā skala. Tīrs fons paliek pamatkarte; oranžs un tumši sarkans ir pilsētu un rūpniecības perēkļi. Tas nav gada limits un nav PM2.5 karte.',
     caveats: 'Mākoņi slēpj virsmu. Spilgta kolonna ≠ gada limits. Tā nav PM2.5 karte.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats, ne ESA vai S5P-PAL mārketinga kadrs. Atribūcija: Copernicus Sentinel-5P / TROPOMI.',
+      'Priekšskats ir Fix Planet pārskats par 2024. gada vidējo NO₂ kolonnu, ne ESA vai TEMIS mārketinga kadrs. Atribūcija: Copernicus Sentinel-5P / TROPOMI un KNMI/TEMIS.',
     imageAlt:
       'Fix Planet pārskats: dzintara slāpekļa dioksīda kolonnas virs pilsētām, rūpniecības un kuģniecības — ne PM2.5 horoplēts un ne ESA kadrs',
   },

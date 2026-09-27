@@ -36,10 +36,10 @@ const credits: Record<string, Record<Locale, string>> = {
     lv: 'Karte: Fix Planet no Hansen Global Forest Change lossyear slāņa, versija 2024 v1.12. Krāsa ir 30 m pikseļu daļa ar segas zudumu no 2001. līdz 2024. gadam 0,02° tīklā. Robežas: Natural Earth.',
   },
   'nitrogen-dioxide-no2': {
-    en: 'Map: Fix Planet from Copernicus Sentinel-5P TROPOMI data via NASA GIBS, 1–16 June 2024. Color follows the NASA scale for tropospheric nitrogen dioxide. Boundaries: Natural Earth.',
-    ru: 'Карта: Fix Planet по данным Copernicus Sentinel-5P TROPOMI через NASA GIBS, 1–16 июня 2024. Цвет — шкала NASA для тропосферного диоксида азота. Границы: Natural Earth.',
-    pl: 'Mapa: Fix Planet na podstawie danych Copernicus Sentinel-5P TROPOMI przez NASA GIBS, 1–16 czerwca 2024. Kolor odpowiada skali NASA dla dwutlenku azotu w troposferze. Granice: Natural Earth.',
-    lv: 'Karte: Fix Planet no Copernicus Sentinel-5P TROPOMI datiem caur NASA GIBS, 1.–16. jūnijā 2024. Krāsa atbilst NASA skalai troposfēras slāpekļa dioksīdam. Robežas: Natural Earth.',
+    en: 'Map: Fix Planet from Copernicus Sentinel-5P TROPOMI, annual mean tropospheric NO₂ for 2024, KNMI/TEMIS monthly grids. Colour is a log scale of the column, from 1×10¹⁵ molecules/cm². Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по данным Copernicus Sentinel-5P TROPOMI, среднегодовая тропосферная колонка NO₂ за 2024 год, месячные сетки KNMI/TEMIS. Цвет — логарифмическая шкала колонки от 1×10¹⁵ молекул/см². Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie Copernicus Sentinel-5P TROPOMI, średnia roczna troposferycznej kolumny NO₂ za 2024, miesięczne siatki KNMI/TEMIS. Kolor to skala logarytmiczna kolumny od 1×10¹⁵ cząsteczek/cm². Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Copernicus Sentinel-5P TROPOMI, 2024. gada troposfēras NO₂ kolonnas gada vidējais, KNMI/TEMIS mēneša režģi. Krāsa ir kolonnas logaritmiskā skala no 1×10¹⁵ molekulām/cm². Robežas: Natural Earth.',
   },
   'mineral-resources': {
     en: 'Map: Fix Planet from USGS Mineral Resources Data System locations. Boundaries: Natural Earth.',

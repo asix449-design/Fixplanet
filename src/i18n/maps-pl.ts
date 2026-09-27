@@ -210,16 +210,16 @@ export const pl: Record<string, MapCopy> = {
   },
   'nitrogen-dioxide-no2': {
     title: 'Dwutlenek azotu (NO₂)',
-    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · średnia 2024',
     hook: 'Satelitarna kolumna dwutlenku azotu nad miastami, przemysłem i żeglugą — zanieczyszczenie ze spalania, nie to samo co masa PM2.5.',
     description:
-      'NO₂ z TROPOMI / Sentinel-5P na portalu S5P-PAL (średnia ruchoma). Inny obiekt niż żywa mapa PM2.5.',
+      'Troposferyczny NO₂ z TROPOMI / Sentinel-5P. Płyta to średnia roczna 2024: średnia dwunastu miesięcznych siatek KNMI/TEMIS. Inny obiekt niż żywa mapa PM2.5.',
     whyOnShelf: 'Inny obiekt niż żywa mapa PM2.5. Zanieczyszczenie ze spalania, nie masa cząstek.',
     howToRead:
-      'Chmury zasłaniają powierzchnię; jasna kolumna ≠ roczny limit. Otwierać tropospheric NO₂; podgląd — przegląd Fix Planet.',
+      'Kolor to skala logarytmiczna kolumny za 2024 rok. Czyste tło zostaje mapą bazową; pomarańcz i głęboka czerwień to ogniska miejskie i przemysłowe. To nie roczny limit i nie mapa PM2.5.',
     caveats: 'Chmury zasłaniają powierzchnię. Jasna kolumna ≠ roczny limit. To nie mapa PM2.5.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet, nie kadr marketingowy ESA ani S5P-PAL. Atrybucja: Copernicus Sentinel-5P / TROPOMI.',
+      'Podgląd to przegląd Fix Planet średniej rocznej kolumny NO₂ za 2024, nie kadr marketingowy ESA ani TEMIS. Atrybucja: Copernicus Sentinel-5P / TROPOMI i KNMI/TEMIS.',
     imageAlt:
       'Przegląd Fix Planet: bursztynowe kolumny dwutlenku azotu nad miastami, przemysłem i żeglugą — nie choropleth PM2.5 i nie kadr ESA',
   },

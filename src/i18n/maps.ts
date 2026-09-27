@@ -561,17 +561,17 @@ const en: Record<string, MapCopy> = {
     title: 'Nitrogen dioxide (NO₂)',
     hook: 'Satellite column of nitrogen dioxide over cities, industry, and shipping — combustion pollution, not the same as PM2.5 mass.',
     description:
-      'Tropospheric (and total-column) nitrogen dioxide measured by the TROPOMI instrument on Copernicus Sentinel-5P, shown as a multi-day moving average on the public S5P-PAL mapping portal. NO₂ is a short-lived combustion tracer from traffic, power plants, industry, shipping, and fires.',
+      'Tropospheric nitrogen dioxide measured by the TROPOMI instrument on Copernicus Sentinel-5P. This plate is the annual mean for 2024, the average of the twelve KNMI/TEMIS monthly grids. NO₂ is a short-lived combustion tracer from traffic, power plants, industry, shipping, and fires.',
     whyOnShelf:
       'PM2.5 answers how much fine particle mass a person breathes on average. NO₂ answers a different air question: where is fresh combustion nitrogen oxide pollution visible from orbit? It is not a CO₂ inventory and not a plastic-waste map.',
     howToRead:
-      'Bright columns mark recent emissions under clear-sky sampling — clouds hide the surface. A 14-day average smooths weather noise; it is not an annual legal limit and not WHO’s PM2.5 guideline. Open the tropospheric NO₂ layer on S5P-PAL; the preview is a Fix Planet overview after the named mission.',
+      'Colour is a log scale of the tropospheric column, starting at 1×10¹⁵ molecules per square centimetre. Clean air stays the base map; orange and deep red mark urban and industrial hotspots. The 2024 annual mean closes the daily swath gaps. It is not a legal limit and not WHO’s PM2.5 guideline. Open the TEMIS monthly archive for the source grids.',
     caveats:
       'Clouds hide the surface. A bright column is not an annual legal limit and not WHO’s PM2.5 guideline. This is not a CO₂ inventory and not a plastic-waste map.',
     licenseNote:
-      'The preview is a Fix Planet overview of tropospheric NO₂ hotspots — not an ESA or S5P-PAL marketing still. Attribute Copernicus Sentinel-5P / TROPOMI. Open the tropospheric NO₂ layer on S5P-PAL for the living map.',
+      'The preview is a Fix Planet overview of the 2024 annual mean tropospheric NO₂ column — not an ESA or TEMIS marketing still. Attribute Copernicus Sentinel-5P / TROPOMI and KNMI/TEMIS. Open the TEMIS monthly archive for the source grids.',
     imageAlt:
-      'Fix Planet overview of tropospheric nitrogen dioxide: amber columns over cities, industry, and shipping lanes on a muted world map — not a PM2.5 choropleth and not an ESA still',
+      'Fix Planet overview of the 2024 annual mean tropospheric nitrogen dioxide: orange and deep-red columns over cities, industry, and shipping lanes on the base map — not a PM2.5 choropleth and not an ESA still',
   },
   'mismanaged-plastic-waste': {
     title: 'Mismanaged plastic waste',

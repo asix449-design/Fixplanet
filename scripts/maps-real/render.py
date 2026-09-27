@@ -30,7 +30,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.collections import PolyCollection
-from matplotlib.colors import LogNorm, Normalize
+from matplotlib.colors import LinearSegmentedColormap, LogNorm, Normalize
 from matplotlib.cm import ScalarMappable
 from PIL import Image, ImageDraw, ImageFont
 from pyproj import Transformer
@@ -308,15 +308,16 @@ def add_colorbar(
     return im
 
 
-def save_pair(im: Image.Image, folder: str, stem: str) -> None:
+def save_pair(im: Image.Image, folder: str, stem: str, preview: Image.Image | None = None) -> None:
     detail_dir = PUBLIC / folder / "detail"
     detail_dir.mkdir(parents=True, exist_ok=True)
-    preview = PUBLIC / folder / f"{stem}.jpg"
+    preview_path = PUBLIC / folder / f"{stem}.jpg"
     detail = detail_dir / f"{stem}.webp"
     rgb = im.convert("RGB")
     rgb.save(detail, "WEBP", quality=82, method=4)
-    rgb.resize((PREVIEW_W, PREVIEW_H), Image.Resampling.LANCZOS).save(
-        preview, "JPEG", quality=84, optimize=True, progressive=True
+    card = (preview if preview is not None else rgb).convert("RGB")
+    card.resize((PREVIEW_W, PREVIEW_H), Image.Resampling.LANCZOS).save(
+        preview_path, "JPEG", quality=84, optimize=True, progressive=True
     )
     print(f"wrote {folder}/{stem}.jpg and detail/{stem}.webp")
 
@@ -541,25 +542,124 @@ def render_gibs_layer(base: Image.Image, scale: float, layer: str, when: str | N
     save_pair(composite_on_base(base, overlay), folder, stem)
 
 
-def render_tropomi(base: Image.Image, scale: float) -> None:
-    """Mean of daily Sentinel-5P TROPOMI swaths for 1–16 June 2024."""
-    acc = None
-    weight = None
-    for day in range(1, 17):
-        when = f"2024-06-{day:02d}"
-        print("TROPOMI", when)
-        im = np.asarray(gibs_png("TROPOMI_L2_Nitrogen_Dioxide_Tropospheric_Column", when, 3072, 1536)).astype(np.float32)
-        alpha = im[:, :, 3:4] / 255.0
-        rgb = im[:, :, :3] * alpha
-        acc = rgb if acc is None else acc + rgb
-        weight = alpha if weight is None else weight + alpha
-    mean = np.zeros_like(acc)
-    mask = weight[..., 0] > 0.02
-    mean[mask] = acc[mask] / weight[mask]
-    alpha = np.clip(weight * 255.0, 0, 255)
-    rgba = np.dstack([mean, alpha]).astype(np.uint8)
-    overlay = reproject_rgba(Image.fromarray(rgba, "RGBA"), scale)
-    save_pair(composite_on_base(base, overlay), "maps", "nitrogen-dioxide-no2")
+def country_edges(countries: list[dict], half_w: float, half_h: float) -> Image.Image:
+    """Coastline and country outline, transparent everywhere else."""
+    cache = RAW / "country-edges.png"
+    if cache.exists():
+        im = Image.open(cache).convert("RGBA")
+        if im.size == (DETAIL_W, DETAIL_H):
+            return im
+    fig = plt.figure(figsize=(DETAIL_W / 100, DETAIL_H / 100), dpi=100)
+    fig.patch.set_alpha(0)
+    ax = fig.add_axes([0, 0, 1, 1])
+    ax.set_xlim(-half_w, half_w)
+    ax.set_ylim(-half_h, half_h)
+    ax.set_aspect("equal")
+    ax.axis("off")
+    ax.set_facecolor((0, 0, 0, 0))
+    polys = [poly for country in countries for poly in country["polygons"]]
+    ax.add_collection(
+        PolyCollection(
+            polys,
+            facecolors=(0, 0, 0, 0),
+            edgecolors=(0.22, 0.20, 0.18, 0.9),
+            linewidths=1.15,
+            antialiased=True,
+        )
+    )
+    buf = io.BytesIO()
+    fig.savefig(buf, format="png", dpi=100, transparent=True)
+    plt.close(fig)
+    im = Image.open(buf).convert("RGBA")
+    if im.size != (DETAIL_W, DETAIL_H):
+        im = im.resize((DETAIL_W, DETAIL_H), Image.Resampling.LANCZOS)
+    arr = np.array(im)
+    arr[~equal_earth_inside(), 3] = 0
+    im = Image.fromarray(arr, "RGBA")
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    im.save(cache, "PNG")
+    return im
+
+
+def _temis_month(path: Path) -> np.ndarray:
+    """North-up grid of a TEMIS monthly file, in 10^15 molecules/cm². Fill and negatives are NaN."""
+    import gzip
+
+    lines = gzip.open(path, "rt").read().splitlines()
+    lat_idx = [i for i, line in enumerate(lines) if line.startswith("lat=")]
+    if len(lat_idx) != 1440:
+        raise SystemExit(f"{path.name}: expected 1440 latitudes, got {len(lat_idx)}")
+    rows = []
+    for i, start in enumerate(lat_idx):
+        end = lat_idx[i + 1] if i + 1 < len(lat_idx) else len(lines)
+        blob = "".join(lines[start + 1 : end]).encode("ascii")
+        if len(blob) != 2880 * 4:
+            raise SystemExit(f"{path.name}: latitude row {i} has {len(blob)} bytes")
+        rows.append(np.char.strip(np.frombuffer(blob, dtype="S4")).astype(np.int16))
+    # File order is south to north. Units in the file are 10^13 molecules/cm².
+    south_up = np.vstack(rows).astype(np.float32)
+    south_up[south_up < 0] = np.nan
+    return south_up[::-1] * 0.01
+
+
+def render_no2() -> None:
+    """Annual mean tropospheric NO₂ for 2024 from the KNMI/TEMIS monthly grids.
+
+    Daily swaths leave stripes. The monthly means are already gap-filled, and the
+    twelve months of 2024 are averaged with equal weight. Values below zero and the
+    TEMIS fill (−999) are dropped. The colour is a log scale from 1×10¹⁵ to 1.2×10¹⁶
+    molecules/cm² so clean air stays the base map and the urban columns read as orange
+    to deep red. Country outlines are drawn on top.
+    """
+    import urllib.request
+
+    folder = RAW / "no2"
+    folder.mkdir(parents=True, exist_ok=True)
+    months = []
+    for month in range(1, 13):
+        name = f"no2_2024{month:02d}.asc.gz"
+        path = folder / name
+        if not path.exists():
+            url = f"https://d1qb6yzwaaq4he.cloudfront.net/tropomi/no2/2024/{month:02d}/{name}"
+            print("download", url)
+            req = urllib.request.Request(url, headers={"User-Agent": "FixPlanetMapBot/1.0"})
+            path.write_bytes(urllib.request.urlopen(req, timeout=180).read())
+        months.append(_temis_month(path))
+        print(name, "finite", float(np.isfinite(months[-1]).mean()))
+    stack = np.stack(months, axis=0)
+    count = np.isfinite(stack).sum(axis=0)
+    total = np.nansum(stack, axis=0)
+    field = np.divide(total, count, out=np.full(count.shape, np.nan, np.float32), where=count > 0)
+    finite = field[np.isfinite(field)]
+    print(
+        "no2 annual",
+        "coverage",
+        float(np.isfinite(field).mean()),
+        "p50",
+        float(np.percentile(finite, 50)),
+        "p99",
+        float(np.percentile(finite, 99)),
+        "max",
+        float(finite.max()),
+    )
+    # 10^15 molecules/cm². Background ocean sits near 0.2 and stays unpainted.
+    vmin, vmax = 1.0, 12.0
+    # Skip the pale-yellow end of YlOrRd so a moderate column still reads on beige land.
+    hot = LinearSegmentedColormap.from_list("no2hot", plt.get_cmap("YlOrRd")(np.linspace(0.32, 1.0, 256)))
+    plt.colormaps.register(hot, name="no2hot", force=True)
+    norm = LogNorm(vmin, vmax)
+    rgba = np.zeros(field.shape + (4,), dtype=np.uint8)
+    show = np.isfinite(field) & (field >= vmin * 0.75)
+    sample = np.clip(norm(np.clip(field[show], vmin, vmax)), 0, 1)
+    rgba[show, :3] = (hot(sample)[:, :3] * 255).astype(np.uint8)
+    fade = np.clip((field[show] - vmin * 0.75) / (vmin * 0.25), 0, 1)
+    rgba[show, 3] = (50 + 185 * fade).astype(np.uint8)
+    scale, half_w, half_h = projection_limits()
+    countries = load_countries()
+    base = base_map(countries, half_w, half_h, tuple(int(c) for c in OCEAN), tuple(int(c) for c in LAND))
+    painted = composite_on_base(base, reproject_rgba(Image.fromarray(rgba, "RGBA"), scale))
+    outlined = Image.alpha_composite(painted.convert("RGBA"), country_edges(countries, half_w, half_h)).convert("RGB")
+    save_pair(add_colorbar(outlined, vmin * 1e15, vmax * 1e15, "no2hot", True), "maps", "nitrogen-dioxide-no2")
 
 
 def render_gibs(scale: float, countries, half_w, half_h) -> None:
@@ -570,7 +670,6 @@ def render_gibs(scale: float, countries, half_w, half_h) -> None:
     ]
     for layer, when, folder, stem, width in layers:
         render_gibs_layer(base, scale, layer, when, folder, stem, width)
-    render_tropomi(base, scale)
 
 
 def render_woa(scale: float, countries, half_w, half_h) -> None:
@@ -670,6 +769,8 @@ def main() -> None:
         render_minerals(scale, countries, half_w, half_h)
     if "gibs" in which:
         render_gibs(scale, countries, half_w, half_h)
+    if "no2" in which:
+        render_no2()
 
 
 if __name__ == "__main__":

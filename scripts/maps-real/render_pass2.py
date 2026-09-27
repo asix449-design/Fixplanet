@@ -161,7 +161,15 @@ def render_ice() -> None:
     print("ice", north.size, south.size)
 
 
-def share_grid(counts: np.ndarray, pixels_per_cell: float, cmap_name: str, folder: str, stem: str, vmax_q=0.98):
+def share_grid(
+    counts: np.ndarray,
+    pixels_per_cell: float,
+    cmap_name: str,
+    folder: str,
+    stem: str,
+    vmax_q=0.98,
+    preview_fn=None,
+):
     share = counts.astype(np.float32) / pixels_per_cell
     positive = share[share > 0]
     if positive.size < 10:
@@ -172,8 +180,42 @@ def share_grid(counts: np.ndarray, pixels_per_cell: float, cmap_name: str, folde
     rgba = colorize(np.where(share > 0, share, np.nan), norm, plt.get_cmap(cmap_name))
     scale, base = countries_and_base(tuple(int(c) for c in OCEAN), tuple(int(c) for c in LAND))
     im = paint_equal_earth(Image.fromarray(rgba, "RGBA"), scale, base, 0, vmax, cmap_name)
-    save_pair(im, folder, stem)
+    preview = preview_fn(im) if preview_fn else None
+    save_pair(im, folder, stem, preview=preview)
     print(stem, "vmax", vmax, "positive cells", int(positive.size))
+
+
+def thicken_mangrove_preview(im: Image.Image, radius: int = 10) -> Image.Image:
+    """Dilate mangrove presence for the card only. The detail plate is left unchanged."""
+    arr = np.array(im.convert("RGB"))
+    land = np.array([214, 206, 192], dtype=np.int16)
+    ocean = np.array([232, 238, 242], dtype=np.int16)
+    page = np.array(PAGE_BG, dtype=np.int16)
+    delta = arr.astype(np.int16)
+    presence = (
+        (np.abs(delta - land).sum(2) > 28)
+        & (np.abs(delta - ocean).sum(2) > 28)
+        & (np.abs(delta - page).sum(2) > 40)
+    )
+    x0 = (DETAIL_W - 2200) // 2
+    y0 = DETAIL_H - 250
+    presence[y0 - 130 : y0 + 130, x0 - 60 : x0 + 2260] = False
+    grown = presence
+    for _ in range(radius):
+        nxt = grown.copy()
+        nxt[1:, :] |= grown[:-1, :]
+        nxt[:-1, :] |= grown[1:, :]
+        nxt[:, 1:] |= grown[:, :-1]
+        nxt[:, :-1] |= grown[:, 1:]
+        nxt[1:, 1:] |= grown[:-1, :-1]
+        nxt[:-1, :-1] |= grown[1:, 1:]
+        nxt[1:, :-1] |= grown[:-1, 1:]
+        nxt[:-1, 1:] |= grown[1:, :-1]
+        grown = nxt
+    extra = grown & ~presence
+    extra[y0 - 130 : y0 + 130, x0 - 60 : x0 + 2260] = False
+    arr[extra] = (14, 104, 62)
+    return Image.fromarray(arr, "RGB")
 
 
 def render_ohc() -> None:
@@ -236,7 +278,15 @@ def render_hansen() -> None:
 def render_gmw() -> None:
     counts = np.load(RAW / "gmw_v3_2020_0p02.npy")
     # GMW v3 tiles are 4500 pixels per degree.
-    share_grid(counts, (0.02 / (1 / 4500)) ** 2, "BuGn", "maps", "mangrove-extent", 0.99)
+    share_grid(
+        counts,
+        (0.02 / (1 / 4500)) ** 2,
+        "BuGn",
+        "maps",
+        "mangrove-extent",
+        0.99,
+        preview_fn=thicken_mangrove_preview,
+    )
 
 
 def render_ifl() -> None:
