@@ -131,6 +131,30 @@ const credits: Record<string, Record<Locale, string>> = {
     pl: 'Mapa: Fix Planet na podstawie bazowego ryzyka powodzi rzecznych WRI Aqueduct 4.0, 2023. Liczba to wynik wskaźnika od 0 do 5. CC BY 4.0. Granice: Natural Earth.',
     lv: 'Karte: Fix Planet no WRI Aqueduct 4.0 bāzes upju plūdu riska, 2023. Skaitlis ir rādītāja vērtējums no 0 līdz 5. CC BY 4.0. Robežas: Natural Earth.',
   },
+  'planted-forests': {
+    en: 'Map: Fix Planet from Lesiv and co-authors, global forest management, 2015, 100 m classes. Colour is the share of each 0.02° cell classed as planted forest (rotation longer than 15 years) or short-rotation timber plantation. Oil palm is a separate class and is not included. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по данным Lesiv и соавторов о лесоуправлении, 2015, классы 100 м. Цвет — доля ячейки 0,02°, отнесённая к посаженному лесу (оборот дольше 15 лет) или к короткоцикловой древесной плантации. Масличная пальма — отдельный класс и сюда не входит. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie danych Lesiv i współautorów o gospodarce leśnej, 2015, klasy 100 m. Kolor to udział komórki 0,02° zaliczonej do lasu sadzonego (okres rotacji dłuższy niż 15 lat) albo do krótkocyklicznej plantacji drzewnej. Palma olejowa to osobna klasa i nie wchodzi do tej warstwy. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Lesiv un līdzautoru meža apsaimniekošanas datiem, 2015, 100 m klases. Krāsa ir 0,02° šūnas daļa, kas klasificēta kā stādīts mežs (rotācijas periods ilgāks par 15 gadiem) vai īscikla koksnes plantācija. Eļļas palma ir atsevišķa klase un šeit nav iekļauta. CC BY 4.0. Robežas: Natural Earth.',
+  },
+  'forest-carbon-stock': {
+    en: 'Map: Fix Planet from FAO Global Forest Resources Assessment 2025 country tables. The number is living-biomass carbon in 2025: aboveground plus belowground, in million tonnes. Soil, litter and dead wood are not in this plate. Countries missing either pool stay grey. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по страновым таблицам FAO Global Forest Resources Assessment 2025. Число — углерод живой биомассы в 2025 году: надземный плюс подземный, в миллионах тонн. Почва, подстилка и мёртвая древесина на эту плиту не нанесены. Страны без одного из двух пулов остаются серыми. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie tabel krajowych FAO Global Forest Resources Assessment 2025. Liczba to węgiel żywej biomasy w 2025 roku: nadziemny plus podziemny, w milionach ton. Gleba, ściółka i martwe drewno nie są na tej płycie. Kraje bez jednej z dwóch pul zostają szare. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no FAO Global Forest Resources Assessment 2025 valstu tabulām. Skaitlis ir dzīvās biomasas ogleklis 2025. gadā: virszemes plus pazemes, miljonos tonnu. Augsne, nobiras un mirusī koksne šajā platē nav. Valstis, kurām trūkst viena no diviem baseiniem, paliek pelēkas. Robežas: Natural Earth.',
+  },
+  'tree-cover': {
+    en: 'Map: Fix Planet from ESA WorldCover 10 m 2021 v200. Colour is the share of each 0.02° cell in class 10 (tree cover). A 10 m pixel is that land-cover class, not a canopy-density percent. Mangroves are class 95 and are not included. CC BY 4.0. Contains modified Copernicus Sentinel data (2021). Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по ESA WorldCover 10 м, 2021, версия v200. Цвет — доля ячейки 0,02° в классе 10 (древесный покров). Пиксель 10 м — этот класс земного покрова, а не процент сомкнутости полога. Мангры — класс 95 и сюда не входят. CC BY 4.0. Содержит изменённые данные Copernicus Sentinel (2021). Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie ESA WorldCover 10 m, 2021, wersja v200. Kolor to udział komórki 0,02° w klasie 10 (pokrycie drzewami). Piksel 10 m to ta klasa pokrycia terenu, a nie procent zwarcia koron. Namorzyny to klasa 95 i nie wchodzą do tej warstwy. CC BY 4.0. Zawiera zmodyfikowane dane Copernicus Sentinel (2021). Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no ESA WorldCover 10 m, 2021, versija v200. Krāsa ir 0,02° šūnas daļa 10. klasē (koku segums). 10 m pikselis ir šī zemes seguma klase, nevis vainagu blīvuma procents. Mangrovju meži ir 95. klase un šeit nav iekļauti. CC BY 4.0. Satur pārveidotus Copernicus Sentinel (2021) datus. Robežas: Natural Earth.',
+  },
+  peatlands: {
+    en: 'Map: Fix Planet from PEATMAP (Xu and co-authors, 2018). Colour marks a 0.02° cell that a mapped peat polygon touches. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по PEATMAP (Xu и соавторы, 2018). Цвет отмечает ячейку 0,02°, которой касается полигон торфа. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie PEATMAP (Xu i współautorzy, 2018). Kolor oznacza komórkę 0,02°, której dotyka poligon torfu. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no PEATMAP (Xu un līdzautori, 2018). Krāsa atzīmē 0,02° šūnu, kurai pieskaras kūdras poligons. CC BY 4.0. Robežas: Natural Earth.',
+  },
   'intact-forest-landscapes': {
     en: 'Map: Fix Planet from Intact Forest Landscapes, 2020 extent (IFL Mapping Team). CC BY 4.0. Boundaries: Natural Earth.',
     ru: 'Карта: Fix Planet по Intact Forest Landscapes, распространение 2020 года (IFL Mapping Team). CC BY 4.0. Границы: Natural Earth.',

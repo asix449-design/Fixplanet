@@ -33,10 +33,10 @@ export const forestAtlasSectionLabels = {
 
 /** Hub lede. PL/LV follow the pack’s meaning; EN/RU say the same thing. */
 export const forestAtlasHubLede: Record<Locale, string> = {
-  en: 'FAO figures, satellite greenness, reconstructions, and outlooks — plus canopy height, aboveground biomass density, burned area, and FAO ecological zones. Each layer names its publisher and what the layer measures (and what it does not).',
-  ru: 'Цифры FAO, спутниковая зелень, реконструкции и перспективы — а также высота полога, плотность надземной биомассы, площадь гарей и экологические зоны FAO. У каждого слоя указаны издатель и то, что слой измеряет (и чего не измеряет).',
-  pl: 'Liczby FAO, zieleń z satelity, rekonstrukcje i perspektywy — oraz wysokość koron, gęstość biomasy nadziemnej, areał spalenisk i strefy ekologiczne FAO. Przy każdej warstwie podany jest wydawca i to, co warstwa mierzy (i czego nie).',
-  lv: 'FAO skaitļi, satelītu zaļums, rekonstrukcijas un nākotnes skati — kā arī vainagu augstums, virszemes biomasas blīvums, izdegušās platības un FAO ekoloģiskās zonas. Katram slānim norādīts izdevējs un tas, ko slānis mēra (un ko ne).',
+  en: 'FAO figures, satellite greenness, reconstructions, and outlooks — plus planted forests, forest carbon stock, tree cover, peatlands, canopy height, aboveground biomass density, burned area, and FAO ecological zones. Each layer names its publisher and what the layer measures (and what it does not).',
+  ru: 'Цифры FAO, спутниковая зелень, реконструкции и перспективы — а также посаженные леса, запас углерода в лесах, древесный покров, торфяники, высота полога, плотность надземной биомассы, площадь гарей и экологические зоны FAO. У каждого слоя указаны издатель и то, что слой измеряет (и чего не измеряет).',
+  pl: 'Liczby FAO, zieleń z satelity, rekonstrukcje i perspektywy — oraz lasy sadzone, zapas węgla w lasach, pokrycie drzewami, torfowiska, wysokość koron, gęstość biomasy nadziemnej, areał spalenisk i strefy ekologiczne FAO. Przy każdej warstwie podany jest wydawca i to, co warstwa mierzy (i czego nie).',
+  lv: 'FAO skaitļi, satelītu zaļums, rekonstrukcijas un nākotnes skati — kā arī stādītie meži, meža oglekļa krājums, koku segums, kūdrāji, vainagu augstums, virszemes biomasas blīvums, izdegušās platības un FAO ekoloģiskās zonas. Katram slānim norādīts izdevējs un tas, ko slānis mēra (un ko ne).',
 };
 
 const chrome: Record<Locale, ForestAtlasChrome> = {
@@ -107,6 +107,46 @@ const en: Record<ForestAtlasSlug, ForestAtlasCopy> = {
     howToRead:
       'GEZ is a reporting frame (tropical rainforest, boreal coniferous, temperate oceanic, and other classes), not a yearly loss map and not a species-range atlas. It places FRA tables and national forest statistics in climatic context. The FAO catalog dataset and the GEZ PDF describe the classes; the FRA site describes the assessment.',
   },
+  'planted-forests': {
+    title: 'Planted forests',
+    meta: 'Lesiv 2015 · planted share · FRA ~312 Mha',
+    blurb:
+      'Where the 2015 forest-management map marks planted forest and short-rotation timber plantation, beside the FAO total of about 312 million hectares.',
+    what: 'The plate is the Lesiv et al. (2022) global forest-management raster for 2015, 100 m classes, counted as the share of each 0.02° cell in planted forest (rotation longer than 15 years) or short-rotation timber plantation. Oil palm is a separate class in that raster and is not drawn here. FAO’s Global Forest Resources Assessment 2025 still reports planted forests at about 312 million hectares, roughly 8% of total forest area; that hectare total is a national land-use statistic, not the colour on this plate. WRI’s Spatial Database of Planted Trees remains an optional secondary reference.',
+    why: 'Planted area can rise while primary forest falls. A planted stand is not the same ecosystem as an old naturally regenerating forest, so it helps to see planted area alongside primary forest and canopy data.',
+    howToRead:
+      'Colour is the share of the cell in those two planted classes. Empty land is not planted forest in this classification. The pattern is for 2015 and is not a substitute for the FRA hectare total. Do not add the oil-palm class into FAO forest area without checking definitions.',
+  },
+  'forest-carbon-stock': {
+    title: 'Forest carbon stock',
+    meta: 'FAO FRA 2025 · living biomass · million tonnes',
+    blurb:
+      'Country totals of living-biomass carbon in 2025 — aboveground plus belowground — from FAO’s forest assessment, beside the five-pool global total.',
+    what: 'The plate is a country choropleth of living-biomass carbon from the FAO Global Forest Resources Assessment 2025 tables: aboveground plus belowground, year 2025, in million tonnes. Countries that did not report both pools stay grey. The same assessment estimates total forest carbon, all five pools, at about 714 gigatonnes (roughly 172 t C per hectare): about 46% in soil, 44% in living biomass, and the rest in litter and dead wood. Soil, litter and dead wood are not drawn, because far fewer countries report them.',
+    why: 'A national carbon-stock total answers a different question from a mapped aboveground biomass density in tonnes per hectare. The 714 Gt C figure comes from FAO’s pool-by-pool accounting, which includes soil, litter and dead wood as well as trees.',
+    howToRead:
+      'The number on the scale is million tonnes of living-biomass carbon in 2025, not tonnes per hectare and not the five-pool total. Grey land has no paired aboveground and belowground report. Soil is the largest pool in the global 714 Gt C figure and is absent from this plate.',
+  },
+  'tree-cover': {
+    title: 'Tree cover',
+    meta: 'ESA WorldCover 2021 · class 10 · 10 m',
+    blurb:
+      'Where the 2021 WorldCover map assigns the tree-cover class — the share of each cell, a land-cover class rather than a canopy-density percent or a map of yearly loss.',
+    what: 'The plate is ESA WorldCover 10 m 2021 v200 (CC BY 4.0). Colour is the share of 10 m pixels in each 0.02° cell labelled class 10, tree cover. In that legend a pixel is tree cover when trees are the mapped class and cover at least 10% of it. Plantations, including oil palm, are inside class 10. Mangroves are class 95 and are not drawn. The product maps land seen by Sentinel-2 and stops near 82.75°N; Antarctica is outside it.',
+    why: 'A land-cover class answers where the map calls the pixel trees. Annual tree-cover loss answers where canopy disappeared. This layer is the 2021 class, counted as a share of the cell.',
+    howToRead:
+      'The number on the scale is the share of the 0.02° cell in class 10. Empty land was classed as something else. A high share can include plantations. Grey land is outside the WorldCover land mask. Use a loss product when the question is where canopy was removed.',
+  },
+  peatlands: {
+    title: 'Peatlands',
+    meta: 'PEATMAP · Xu et al. 2018 · peat extent',
+    blurb:
+      'Where PEATMAP records peat — a global extent of organic soils, not a carbon-density grid and not a forest-area layer.',
+    what: 'The plate is PEATMAP (Xu et al. 2018, University of Leeds, CC BY 4.0): published peat polygons, drawn wherever a polygon touches a 0.02° cell. The UNEP Global Peatlands Assessment 2022 remains the status report on condition, carbon and pressures; it is not the grid drawn here. FAO’s Peatlands pages and the Greifswald Mire Centre database are further context.',
+    why: 'Peatlands cover only a few percent of the land surface but hold a large share of soil carbon. Drained or burned peat releases carbon that forests and climate accounts must treat carefully. FAO’s forest assessment finds that soil is the largest forest carbon pool, and peatlands hold much of that soil carbon.',
+    howToRead:
+      'A coloured cell is touched by a PEATMAP peat polygon. It is presence, not tonnes of carbon and not forest area. Not all peatlands are forested, and not all forest soils are peat. Use the UNEP assessment for global status and a national peat map when the question is a single country.',
+  },
 };
 
 const ru: Record<ForestAtlasSlug, ForestAtlasCopy> = {
@@ -141,6 +181,38 @@ const ru: Record<ForestAtlasSlug, ForestAtlasCopy> = {
       'Глобальные экологические зоны FAO для оценки лесных ресурсов — климатико-экологическая рамка лесных земель, не потеря покрова и не реконструкция биомов.',
     detailShort:
       'GEZ (второе издание / 2010) — классы для FRA. Данные и документация опубликованы в каталоге FAO, в PDF ap861e, в Open Knowledge и на сайте FRA. GEZ задаёт климатико-экологическую рамку для статистики лесов; её классы отличаются от реконструкций биомов и карт состояния лесов.',
+  },
+  'planted-forests': {
+    title: 'Посаженные леса',
+    meta: 'Lesiv 2015 · доля посаженных · FRA ~312 млн га',
+    blurb:
+      'Где карта лесоуправления 2015 года отмечает посаженный лес и короткоцикловую древесную плантацию, рядом с оценкой ФАО около 312 млн га.',
+    detailShort:
+      'Плита — доля пикселей 100 м классов «посаженный лес» (оборот дольше 15 лет) и «короткоцикловая древесная плантация» в ячейке 0,02° по карте Lesiv и соавторы (2022) за 2015 год. Масличная пальма — отдельный класс и в эту долю не входит. По FRA 2025 посаженные леса занимают около 312 млн га, примерно 8% лесной площади: это национальная статистика землепользования, а не цвет на плите. Площадь посадок может расти, пока сокращается первичный лес.',
+  },
+  'forest-carbon-stock': {
+    title: 'Запас углерода в лесах',
+    meta: 'FAO FRA 2025 · живая биомасса · млн тонн',
+    blurb:
+      'Страновые суммы углерода живой биомассы за 2025 год — надземный плюс подземный — по оценке лесов ФАО, рядом с общим итогом по пяти пулам.',
+    detailShort:
+      'Плита — сумма надземного и подземного углерода живой биомассы по странам за 2025 год, в миллионах тонн, по таблицам FRA 2025. Страна без одного из этих двух пулов остаётся серой. Почва, подстилка и мёртвая древесина на рисунок не нанесены. Общий запас по всем пяти пулам — около 714 гигатонн углерода: около 46% в почве и 44% в живой биомассе. Это не карта плотности биомассы в тоннах на гектар.',
+  },
+  'tree-cover': {
+    title: 'Древесный покров',
+    meta: 'ESA WorldCover 2021 · класс 10 · 10 м',
+    blurb:
+      'Где карта WorldCover за 2021 год ставит класс древесного покрова — доля ячейки, класс земного покрова, а не процент сомкнутости полога и не карта ежегодных потерь.',
+    detailShort:
+      'Плита — ESA WorldCover 10 м, 2021, версия v200 (CC BY 4.0): доля пикселей 10 м класса 10 (древесный покров) в ячейке 0,02°. В этой легенде пиксель относится к древесному покрову, когда деревья — назначенный класс и закрывают не меньше 10% пикселя. Плантации, включая масличную пальму, входят в класс 10. Мангры — класс 95 и на плиту не нанесены. Продукт покрывает сушу, видимую Sentinel-2, и обрывается около 82,75° с. ш.; Антарктида в него не входит. Это не процент сомкнутости полога и не годовая потеря покрова.',
+  },
+  peatlands: {
+    title: 'Торфяники',
+    meta: 'PEATMAP · Xu и соавторы, 2018 · распространение торфа',
+    blurb:
+      'Где PEATMAP отмечает торф — глобальное распространение органических почв, не сетка плотности углерода и не слой площади леса.',
+    detailShort:
+      'Плита — PEATMAP (Xu и соавторы, 2018): ячейка 0,02° закрашена, если её касается полигон торфа. Это присутствие торфа, а не тонны углерода и не площадь леса. Глобальная оценка торфяников ЮНЕП 2022 года остаётся обзором состояния, углерода и нагрузок, а не этим рисунком. Не все торфяники лесные, и не все лесные почвы — торф.',
   },
 };
 
@@ -177,6 +249,38 @@ const pl: Record<ForestAtlasSlug, ForestAtlasCopy> = {
     detailShort:
       'GEZ (drugie wydanie / 2010) — klasy dla FRA. Dane i dokumentacja są publikowane w katalogu FAO, w PDF ap861e, w Open Knowledge i na stronie FRA. GEZ tworzy klimatyczno-ekologiczne ramy dla statystyk leśnych; jej klasy różnią się od rekonstrukcji biomów oraz warstw stanu lasów.',
   },
+  'planted-forests': {
+    title: 'Lasy sadzone',
+    meta: 'Lesiv 2015 · udział lasów sadzonych · FRA ~312 mln ha',
+    blurb:
+      'Gdzie mapa gospodarki leśnej z 2015 roku oznacza las sadzony i krótkocykliczną plantację drzewną, obok sumy FAO około 312 mln ha.',
+    detailShort:
+      'Płyta to udział pikseli 100 m klas „las sadzony” (okres rotacji dłuższy niż 15 lat) i „krótkocykliczna plantacja drzewna” w komórce 0,02° według mapy Lesiv i współautorzy (2022) za 2015 rok. Palma olejowa to osobna klasa i nie wchodzi do tego udziału. Według FRA 2025 lasy sadzone zajmują około 312 mln ha, mniej więcej 8% powierzchni leśnej: to krajowa statystyka użytkowania ziemi, a nie kolor na płycie. Powierzchnia nasadzeń może rosnąć, gdy kurczy się las pierwotny.',
+  },
+  'forest-carbon-stock': {
+    title: 'Zapas węgla w lasach',
+    meta: 'FAO FRA 2025 · żywa biomasa · mln ton',
+    blurb:
+      'Krajowe sumy węgla żywej biomasy w 2025 roku — nadziemnej i podziemnej — według oceny lasów FAO, obok globalnej sumy pięciu pul.',
+    detailShort:
+      'Płyta to suma nadziemnego i podziemnego węgla żywej biomasy według krajów za 2025 rok, w milionach ton, z tabel FRA 2025. Kraj bez jednej z tych dwóch pul zostaje szary. Gleba, ściółka i martwe drewno nie są narysowane. Całkowity zapas we wszystkich pięciu pulach to około 714 gigaton węgla: około 46% w glebie i 44% w żywej biomasie. To nie jest mapa gęstości biomasy w tonach na hektar.',
+  },
+  'tree-cover': {
+    title: 'Pokrycie drzewami',
+    meta: 'ESA WorldCover 2021 · klasa 10 · 10 m',
+    blurb:
+      'Gdzie mapa WorldCover z 2021 roku nadaje klasę pokrycia drzewami — udział komórki, klasa pokrycia terenu, a nie procent zwarcia koron i nie mapa corocznych strat.',
+    detailShort:
+      'Płyta to ESA WorldCover 10 m, 2021, wersja v200 (CC BY 4.0): udział pikseli 10 m klasy 10 (pokrycie drzewami) w komórce 0,02°. W tej legendzie piksel jest pokryciem drzewami, gdy drzewa są przypisaną klasą i zajmują co najmniej 10% piksela. Plantacje, w tym palma olejowa, wchodzą do klasy 10. Namorzyny to klasa 95 i nie są narysowane. Produkt obejmuje ląd widziany przez Sentinel-2 i urywa się około 82,75° szerokości północnej; Antarktyda jest poza nim. To nie jest procent zwarcia koron i nie jest coroczna strata pokrycia.',
+  },
+  peatlands: {
+    title: 'Torfowiska',
+    meta: 'PEATMAP · Xu i współautorzy, 2018 · zasięg torfu',
+    blurb:
+      'Gdzie PEATMAP zapisuje torf — globalny zasięg gleb organicznych, nie siatka gęstości węgla i nie warstwa powierzchni lasu.',
+    detailShort:
+      'Płyta to PEATMAP (Xu i współautorzy, 2018): komórka 0,02° jest zamalowana, gdy dotyka jej poligon torfu. To obecność torfu, a nie tony węgla i nie powierzchnia lasu. Globalna Ocena Torfowisk UNEP 2022 zostaje przeglądem stanu, węgla i presji, a nie tym rysunkiem. Nie wszystkie torfowiska są leśne i nie wszystkie gleby leśne to torf.',
+  },
 };
 
 const lv: Record<ForestAtlasSlug, ForestAtlasCopy> = {
@@ -211,6 +315,38 @@ const lv: Record<ForestAtlasSlug, ForestAtlasCopy> = {
       'FAO globālās ekoloģiskās zonas meža resursu novērtējumam — klimatiski ekoloģiskais meža zemju ietvars, ne seguma zudums un ne biomu rekonstrukcija.',
     detailShort:
       'GEZ (otrais izdevums / 2010) — klases FRA vajadzībām. Dati un dokumentācija ir publicēti FAO katalogā, PDF ap861e, Open Knowledge un FRA vietnē. GEZ veido klimatiski ekoloģisku ietvaru mežu statistikai; tās klases atšķiras no biomu rekonstrukcijām un mežu stāvokļa slāņiem.',
+  },
+  'planted-forests': {
+    title: 'Stādītie meži',
+    meta: 'Lesiv 2015 · stādīto daļa · FRA ~312 milj. ha',
+    blurb:
+      'Kur 2015. gada meža apsaimniekošanas karte atzīmē stādītu mežu un īscikla koksnes plantāciju, līdzās FAO kopsummai aptuveni 312 milj. ha.',
+    detailShort:
+      'Plate ir 100 m pikseļu daļa klasēs «stādīts mežs» (rotācijas periods ilgāks par 15 gadiem) un «īscikla koksnes plantācija» 0,02° šūnā pēc Lesiv un līdzautoru (2022) kartes 2015. gadam. Eļļas palma ir atsevišķa klase un šajā daļā nav. Pēc FRA 2025 stādītie meži aizņem aptuveni 312 milj. ha, apmēram 8% meža platības: tā ir valstu zemes lietojuma statistika, nevis krāsa uz plates. Stādījumu platība var pieaugt, kamēr sarūk pirmreizējais mežs.',
+  },
+  'forest-carbon-stock': {
+    title: 'Meža oglekļa krājums',
+    meta: 'FAO FRA 2025 · dzīvā biomasa · milj. tonnu',
+    blurb:
+      'Valstu dzīvās biomasas oglekļa summas 2025. gadā — virszemes plus pazemes — pēc FAO meža novērtējuma, līdzās piecu baseinu kopsummai.',
+    detailShort:
+      'Plate ir virszemes un pazemes dzīvās biomasas oglekļa summa pa valstīm 2025. gadā, miljonos tonnu, no FRA 2025 tabulām. Valsts bez viena no šiem diviem baseiniem paliek pelēka. Augsne, nobiras un mirusī koksne nav uzzīmētas. Kopējais krājums visos piecos baseinos ir aptuveni 714 gigatonnas oglekļa: aptuveni 46% augsnē un 44% dzīvajā biomasā. Tā nav biomasas blīvuma karte tonnās uz hektāru.',
+  },
+  'tree-cover': {
+    title: 'Koku segums',
+    meta: 'ESA WorldCover 2021 · 10. klase · 10 m',
+    blurb:
+      'Kur 2021. gada WorldCover karte piešķir koku seguma klasi — šūnas daļa, zemes seguma klase, nevis vainagu blīvuma procents un nevis ikgadējo zudumu karte.',
+    detailShort:
+      'Plate ir ESA WorldCover 10 m, 2021, versija v200 (CC BY 4.0): 10 m pikseļu daļa 10. klasē (koku segums) 0,02° šūnā. Šajā leģendā pikselis ir koku segums, kad koki ir piešķirtā klase un aizņem vismaz 10% pikseļa. Plantācijas, tostarp eļļas palma, ir 10. klasē. Mangrovju meži ir 95. klase un nav uzzīmēti. Produkts aptver zemi, ko redz Sentinel-2, un apraujas aptuveni 82,75° ziemeļu platuma; Antarktīda tajā nav. Tā nav vainagu blīvuma procentu karte un nav ikgadējs seguma zudums.',
+  },
+  peatlands: {
+    title: 'Kūdrāji',
+    meta: 'PEATMAP · Xu un līdzautori, 2018 · kūdras izplatība',
+    blurb:
+      'Kur PEATMAP atzīmē kūdru — organisko augšņu globālā izplatība, ne oglekļa blīvuma režģis un ne meža platības slānis.',
+    detailShort:
+      'Plate ir PEATMAP (Xu un līdzautori, 2018): 0,02° šūna ir iekrāsota, ja tai pieskaras kūdras poligons. Tā ir kūdras klātbūtne, ne oglekļa tonnas un ne meža platība. UNEP Globālais kūdrāju novērtējums 2022 paliek stāvokļa, oglekļa un slodžu pārskats, nevis šis zīmējums. Ne visi kūdrāji ir mežaini, un ne visas meža augsnes ir kūdra.',
   },
 };
 

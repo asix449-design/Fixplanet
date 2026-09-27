@@ -15,9 +15,10 @@ python3 scripts/maps-real/render.py minerals
 python3 scripts/maps-real/aggregate_tiles.py gmw hansen
 python3 scripts/maps-real/render_pass2.py sea-level heat ice ohc ph hansen gmw burned
 python3 scripts/maps-real/render_vectors.py gez aqueduct ifl
+python3 scripts/maps-real/render_forest_pack.py lesiv carbon peat render
 ```
 
-`render_pass2.py` and `render_vectors.py` also need `rasterio`. Raw downloads stay in `scripts/maps-real/raw/`.
+`render_pass2.py`, `render_vectors.py`, and `render_forest_pack.py` also need `rasterio`. The forest pack reads PEATMAP shapefiles with `fiona`. Raw downloads stay in `scripts/maps-real/raw/`.
 
 ## Still schematic, and why
 
@@ -60,6 +61,10 @@ Downloads are stored in `scripts/maps-real/raw/` and are listed in `.gitignore`.
 | `groundwater-whymap` | WRI Aqueduct 4.0 baseline groundwater table decline score, 0–5. The page slug is unchanged; the plate is not WHYMAP | same Aqueduct 4.0 zip | CC BY 4.0 |
 | `flood-hazard-aqueduct` | WRI Aqueduct 4.0 baseline riverine flood risk score, 0–5. Not an inundation-depth raster | same Aqueduct 4.0 zip | CC BY 4.0 |
 | `intact-forest-landscapes` | Intact Forest Landscapes 2020 extent | https://intactforests.org/shp/IFL_2020.zip | CC BY 4.0 (IFL Mapping Team) |
+| `planted-forests` | Lesiv et al. 2022 forest management, 2015. Share of 100 m pixels in class 31 (planted, rotation > 15 years) or 32 (short-rotation timber plantation) on a 0.02° grid. Class 40 oil palm is excluded | https://zenodo.org/records/5879022 | CC BY 4.0 |
+| `forest-carbon-stock` | FAO FRA 2025 country tables, living-biomass carbon in 2025 (aboveground + belowground), million tonnes. Log choropleth. Soil, litter and dead wood are not drawn | https://fra-data.fao.org/ | FAO FRA country statistics |
+| `peatlands` | PEATMAP peat polygons (Xu et al. 2018). A 0.02° cell is marked when a polygon touches it | https://doi.org/10.5518/252 | CC BY 4.0 |
+| `tree-cover` | ESA WorldCover 10 m 2021 v200. Share of 10 m pixels in class 10 (tree cover) on a 0.02° grid. Class 95 mangroves are excluded | https://doi.org/10.5281/zenodo.7254221 | CC BY 4.0. Contains modified Copernicus Sentinel data (2021) |
 | `dissolved-oxygen` | NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° climatology 1965–2022. The map is the minimum of the objectively analyzed field between 100 m and 1000 m. | https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DATA/oxygen/netcdf/all/1.00/woa23_all_o00_01.nc | Public domain (NOAA). Cite Garcia et al., World Ocean Atlas 2023 Volume 3, NOAA Atlas NESDIS 91. |
 | `mineral-resources` | USGS Mineral Resources Data System deposit locations | https://mrdata.usgs.gov/mrds/mrds-csv.zip | Public domain (USGS) |
 

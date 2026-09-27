@@ -1,3 +1,4 @@
+import type { ForestAtlasSlug } from './forest-atlas';
 import type { HubIconName } from './hub';
 
 export const forestPanelKeys = [
@@ -48,6 +49,8 @@ export type ForestStatMeta = {
   vintage: string;
   sourceShort: string;
   sourceUrl: string;
+  /** Atlas page for this figure, when the hub already quotes it. */
+  atlasSlug?: ForestAtlasSlug;
 };
 
 export type ForestFrameCopy = {
@@ -318,6 +321,7 @@ export const forestStats: ForestStatMeta[] = [
     vintage: 'FRA 2025',
     sourceShort: 'FAO FRA 2025',
     sourceUrl: faoFra2025Url,
+    atlasSlug: 'planted-forests',
   },
   {
     id: 'carbonStock',
@@ -326,6 +330,7 @@ export const forestStats: ForestStatMeta[] = [
     vintage: 'FRA 2025',
     sourceShort: 'FAO FRA 2025',
     sourceUrl: faoFra2025Url,
+    atlasSlug: 'forest-carbon-stock',
   },
   {
     id: 'deforestationSince1990',

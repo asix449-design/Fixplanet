@@ -4,6 +4,7 @@ import ForestRelated from '../components/ForestRelated.astro';
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { forestAtlasPath } from '../data/forest-atlas';
 import {
   faoFra2025Url,
   forestBackdrop,
@@ -97,7 +98,17 @@ const pageTitle = activePanel
                       {stat.value}
                       <span>{page.units[stat.unitKey]}</span>
                     </p>
-                    <h2>{stat.label}</h2>
+                    <h2>
+                      {
+                        stat.atlasSlug ? (
+                          <a href={localizePath(forestAtlasPath(stat.atlasSlug), locale)}>
+                            {stat.label}
+                          </a>
+                        ) : (
+                          stat.label
+                        )
+                      }
+                    </h2>
                     <p class="forests-hero-source">
                       {stat.sourceShort} · {stat.vintage}
                     </p>
@@ -317,7 +328,17 @@ const pageTitle = activePanel
                   {stat.value}
                   <span>{page.units[stat.unitKey]}</span>
                 </p>
-                <h3>{stat.label}</h3>
+                <h3>
+                  {
+                    stat.atlasSlug ? (
+                      <a href={localizePath(forestAtlasPath(stat.atlasSlug), locale)}>
+                        {stat.label}
+                      </a>
+                    ) : (
+                      stat.label
+                    )
+                  }
+                </h3>
                 <p>{stat.text}</p>
                 <p class="wildlife-sources">
                   {stat.sourceShort} · {stat.vintage}
