@@ -13,6 +13,8 @@ export type ForestAtlasSlug = (typeof forestAtlasSlugs)[number];
 export type ForestAtlasMeta = {
   slug: ForestAtlasSlug;
   preview: string;
+  /** 7200×3600 frame when the layer is drawn from the source data. */
+  detail?: string;
   sourceOrg: string;
   /** Grid “Source:” link text. First URL in `sources` is the href. */
   sourceLabel: string;
@@ -28,7 +30,8 @@ export const forestAtlasLandCredit =
 export const forestAtlasMeta: ForestAtlasMeta[] = [
   {
     slug: 'canopy-height',
-    preview: 'canopy-height.svg',
+    preview: 'canopy-height.jpg',
+    detail: 'detail/canopy-height.webp',
     sourceOrg: 'NASA GEDI / ORNL DAAC',
     sourceLabel: 'NASA GEDI L3 / ORNL DAAC',
     sourceUrl:
@@ -58,7 +61,8 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'aboveground-biomass',
-    preview: 'aboveground-biomass.svg',
+    preview: 'aboveground-biomass.jpg',
+    detail: 'detail/aboveground-biomass.webp',
     sourceOrg: 'NASA GEDI / ORNL DAAC',
     sourceLabel: 'NASA GEDI L4B / ORNL DAAC',
     sourceUrl:

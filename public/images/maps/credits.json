@@ -89,12 +89,12 @@
   },
   {
     "file": "military-expenditure-sipri.jpg",
-    "title": "Fix Planet overview of military spending level",
-    "source": "Fix Planet schematic on BlankMap-World. SIPRI yearbook and Milex artwork are not copied.",
+    "title": "Military expenditure, SIPRI, 2024",
+    "source": "Fix Planet map from the SIPRI Military Expenditure Database, 2024, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.sipri.org/databases/milex",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "One story only: spending level, not share of GDP. Darker blue marks larger-spender bands. Most countries stay unclassified. Not SIPRI Milex figures. milex.sipri.org is not used."
+    "license": "Attribute SIPRI. OWID republication is CC BY. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of 2024 military expenditure in US dollars. Numeric scale only."
   },
   {
     "file": "conflict-barometer-hiik.jpg",
@@ -179,39 +179,39 @@
   },
   {
     "file": "consumption-co2-emissions.jpg",
-    "title": "Fix Planet overview of consumption-based CO₂",
-    "source": "Fix Planet schematic on BlankMap-World. Global Carbon Project / Our World in Data artwork is not copied.",
+    "title": "Consumption-based CO₂, Global Carbon Project, 2023",
+    "source": "Fix Planet map from Global Carbon Project consumption-based CO₂, 2023, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map",
-    "license": "Map geometry public domain; overlay is Fix Planet. GCP / OWID data are CC BY with attribution.",
-    "kind": "fix-planet-schematic",
-    "note": "Slate blue marks a higher consumption-footprint orientation. Unlisted countries stay unclassed. Not GCP figures, not an OWID export, and not territorial CO₂."
+    "license": "CC BY (Global Carbon Project / Our World in Data). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of the 2023 country values. Numeric scale only; units are on the page."
   },
   {
     "file": "nitrogen-dioxide-no2.jpg",
-    "title": "Fix Planet overview of tropospheric NO₂",
-    "source": "Fix Planet schematic on BlankMap-World. ESA and S5P-PAL marketing stills are not copied.",
+    "title": "Tropospheric nitrogen dioxide, Sentinel-5P TROPOMI, June 2024",
+    "source": "Fix Planet map from Copernicus Sentinel-5P TROPOMI tropospheric NO₂, mean of 1–16 June 2024, NASA GIBS. Boundaries: Natural Earth 1:10m.",
     "url": "https://maps.s5p-pal.com/no2-tropospheric/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Amber columns mark well-known combustion and shipping corridors. Not TROPOMI retrievals and not a PM2.5 choropleth."
+    "license": "Copernicus Sentinel data (ESA) via NASA GIBS. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "NASA colour scale. No legend text in the image."
   },
   {
     "file": "mismanaged-plastic-waste.jpg",
-    "title": "Fix Planet overview of mismanaged plastic waste",
-    "source": "Fix Planet schematic on BlankMap-World. Our World in Data artwork is not copied.",
+    "title": "Mismanaged plastic waste, Meijer and co-authors, 2019",
+    "source": "Fix Planet map from Meijer et al. 2021 mismanaged plastic waste for 2019, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://ourworldindata.org/grapher/plastic-waste-mismanaged",
-    "license": "Map geometry public domain; overlay is Fix Planet. OWID republishes Meijer et al. 2021 under CC BY.",
-    "kind": "fix-planet-schematic",
-    "note": "Amber marks a larger mismanaged-mass orientation. Unlisted countries stay unclassed. Not Meijer tonnages and not a beach photograph. Paper text is on PMC."
+    "license": "CC BY. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of the 2019 country values. Numeric scale only; units are on the page."
   },
   {
     "file": "methane-emissions.jpg",
-    "title": "Fix Planet overview of methane emissions",
-    "source": "Fix Planet schematic on BlankMap-World. EDGAR and Our World in Data artwork is not copied.",
+    "title": "Methane emissions, EDGAR, 2024",
+    "source": "Fix Planet map from EDGAR methane emissions including land use, 2024, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://ourworldindata.org/grapher/methane-emissions?tab=map",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Ochre marks a larger methane-inventory orientation. Unlisted countries stay unclassed. Not EDGAR grid values, not a flare photograph, and not a CO₂ map."
+    "license": "CC BY (EDGAR / European Commission JRC; Our World in Data). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of the 2024 country values. Numeric scale only; units are on the page."
   },
   {
     "file": "oil-gas-reserves.jpg",
@@ -224,21 +224,21 @@
   },
   {
     "file": "mineral-resources.jpg",
-    "title": "Fix Planet overview of well-known mineral districts",
-    "source": "Fix Planet schematic on BlankMap-World, themed from USGS Mineral Resources Program / MRDATA",
+    "title": "Mineral deposit locations, USGS MRDS",
+    "source": "Fix Planet map of USGS Mineral Resources Data System deposit locations. Boundaries: Natural Earth 1:10m.",
     "url": "https://mrdata.usgs.gov/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Colored points mark well-known gold, copper, iron, lithium, and rare-earth districts. Not reserve tonnages."
+    "license": "Public domain (USGS). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Every MRDS record with coordinates. Coverage is denser in the United States because that is the source database."
   },
   {
     "file": "forest-cover-loss.jpg",
-    "title": "Fix Planet overview of tree-cover loss frontiers",
-    "source": "Fix Planet schematic on BlankMap-World, themed from Hansen / Global Forest Watch",
+    "title": "Tree-cover loss, Hansen Global Forest Change, 2001–2024",
+    "source": "Fix Planet map from Hansen Global Forest Change / Global Forest Watch tree-cover loss, summed 2001–2024, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.globalforestwatch.org/map/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Magenta patches mark well-known loss frontiers (Amazon arc, Congo edge, Sundaland, Mekong, boreal fire belts). Not Hansen annual pixels."
+    "license": "CC BY (Hansen / UMD / Global Forest Watch; Our World in Data). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Country totals, not 30 m loss pixels. Equal Earth choropleth. Numeric scale only; units are hectares."
   },
   {
     "file": "protected-areas.jpg",
@@ -593,12 +593,12 @@
   },
   {
     "file": "mangrove-extent.jpg",
-    "title": "Fix Planet overview of mangrove coasts",
-    "source": "Fix Planet schematic on BlankMap-World, themed from Global Mangrove Watch",
+    "title": "Mangrove forest distribution, 2000",
+    "source": "Fix Planet map from the NASA GIBS mangrove forest distribution for 2000 (Giri and co-authors). Boundaries: Natural Earth 1:10m.",
     "url": "https://www.globalmangrovewatch.org/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Teal fringe marks known tropical mangrove coasts. Not a GMW raster and not inland tree-cover loss."
+    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Year-2000 mangrove distribution served by NASA GIBS, not the Global Mangrove Watch annual raster."
   },
   {
     "file": "primary-humid-tropical-forests.jpg",

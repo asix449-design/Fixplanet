@@ -194,40 +194,40 @@
     "note": "Cooler, lower-pH basins distinguished from higher-pH water. Not an SST plate and not NOAA marketing art."
   },
   {
-    "file": "dissolved-oxygen.svg",
-    "title": "Open-ocean dissolved oxygen / OMZ schematic",
-    "source": "Fix Planet overview after NOAA NCEI World Ocean Atlas 2023",
+    "file": "dissolved-oxygen.jpg",
+    "title": "Dissolved oxygen minimum, 100–1000 m, World Ocean Atlas 2023",
+    "source": "Fix Planet map from NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° field, minimum between 100 m and 1000 m, 1965–2022. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
-    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Low-oxygen tongues in the eastern tropical Pacific, eastern Atlantic, and Arabian Sea. Not the coastal dead-zone pins on Pollution."
+    "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is micromoles per kilogram. No unit words in the image."
   },
   {
-    "file": "sea-ice-extent.svg",
-    "title": "Arctic and Antarctic sea-ice extent schematic",
-    "source": "Fix Planet overview after NSIDC Sea Ice Index / Sea Ice Today",
+    "file": "sea-ice-extent.jpg",
+    "title": "Sea-ice concentration, NSIDC AMSR2, 15 March 2024",
+    "source": "Fix Planet map from NSIDC AMSR2 sea-ice concentration, 12 km, 15 March 2024, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
     "url": "https://nsidc.org/sea-ice-today",
-    "license": "Fix Planet schematic",
-    "kind": "schematic",
-    "note": "Ice edge against a dashed 1981–2010 median outline. Not SST and not land ice. Not an NSIDC plate."
+    "license": "Public domain (NASA / NSIDC). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Concentration field for one day near the Arctic maximum. Not the 1981–2010 median contour."
   },
   {
-    "file": "sea-level.svg",
-    "title": "Global mean sea-level time-series schematic",
-    "source": "Fix Planet overview after NASA Sea Level Change Portal",
+    "file": "sea-level.jpg",
+    "title": "Sea-surface height anomalies, NASA JPL MEaSUREs, 15 June 2018",
+    "source": "Fix Planet map from NASA JPL MEaSUREs gridded sea-surface height anomalies, 15 June 2018, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
     "url": "https://sealevel.nasa.gov/",
-    "license": "Fix Planet schematic",
-    "kind": "schematic",
-    "note": "Altimetry-era rise since about 1993, without a plotted rate. Not the NASA series, not climate.nasa.gov/vital-signs/sea-level (404), and not AVISO."
+    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Regional sea-surface height anomaly, not the global-mean time series."
   },
   {
-    "file": "marine-heatwaves.svg",
-    "title": "Marine heatwave regions schematic",
-    "source": "Fix Planet schematic after NOAA Coral Reef Watch and NOAA Physical Sciences Laboratory",
+    "file": "marine-heatwaves.jpg",
+    "title": "Sea-surface temperature anomalies, NASA GHRSST MUR, 15 August 2024",
+    "source": "Fix Planet map from NASA GHRSST MUR L4 sea-surface temperature anomalies, 15 August 2024, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.coralreefwatch.noaa.gov/product/marine_heatwave/",
-    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Discrete warm-event patches. Separate from average sea-surface temperature. No agency logo."
+    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Satellite temperature anomaly. Not the NOAA Coral Reef Watch categorical marine-heatwave grid."
   },
   {
     "file": "ocean-heat-content.svg",

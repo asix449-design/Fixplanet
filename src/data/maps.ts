@@ -54,7 +54,9 @@ export type MapMeta = {
   openMapUrl: string;
   /** Hosted preview in /public/images/maps/ */
   preview: string;
-  previewKind: 'photo' | 'outline' | 'schematic';
+  previewKind: 'photo' | 'outline' | 'schematic' | 'data';
+  /** 7200×3600 frame. `preview` is the 1600×800 card derivative. */
+  detail?: string;
   /** Optional grid meta line. Defaults to sourceShort · year. */
   cardMeta?: string;
   /** Optional clickable citations. First row is the grid Source link. */
@@ -173,7 +175,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.sipri.org/databases/milex',
     openMapUrl: 'https://www.sipri.org/databases/milex',
     preview: 'military-expenditure-sipri.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/military-expenditure-sipri.webp',
+    previewKind: 'data',
     sources: [
       {
         label: 'SIPRI — Military Expenditure Database',
@@ -357,7 +360,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
     openMapUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
     preview: 'consumption-co2-emissions.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/consumption-co2-emissions.webp',
+    previewKind: 'data',
     cardMeta: 'Global Carbon Project · OWID · trade-adjusted',
     sources: [
       {
@@ -387,7 +391,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
     openMapUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
     preview: 'nitrogen-dioxide-no2.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/nitrogen-dioxide-no2.webp',
+    previewKind: 'data',
     cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
     sources: [
       {
@@ -421,7 +426,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
     openMapUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
     preview: 'mismanaged-plastic-waste.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/mismanaged-plastic-waste.webp',
+    previewKind: 'data',
     cardMeta: 'OWID · Meijer et al. 2021',
     sources: [
       {
@@ -455,7 +461,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
     openMapUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
     preview: 'methane-emissions.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/methane-emissions.webp',
+    previewKind: 'data',
     cardMeta: 'EDGAR JRC · OWID · CH₄',
     sources: [
       {
@@ -508,7 +515,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.usgs.gov/programs/mineral-resources-program',
     openMapUrl: 'https://mrdata.usgs.gov/',
     preview: 'mineral-resources.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/mineral-resources.webp',
+    previewKind: 'data',
   },
   {
     slug: 'world-countries',
@@ -607,7 +615,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.globalforestwatch.org/',
     openMapUrl: 'https://www.globalforestwatch.org/map/',
     preview: 'forest-cover-loss.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/forest-cover-loss.webp',
+    previewKind: 'data',
   },
   {
     slug: 'protected-areas',
@@ -658,7 +667,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.globalmangrovewatch.org/',
     openMapUrl: 'https://www.globalmangrovewatch.org/',
     preview: 'mangrove-extent.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/mangrove-extent.webp',
+    previewKind: 'data',
     sources: [
       {
         label: 'Global Mangrove Watch — map platform',

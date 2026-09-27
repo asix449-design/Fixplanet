@@ -17,6 +17,8 @@ export type OceanAtlasSlug = (typeof oceanAtlasSlugs)[number];
 export type OceanAtlasMeta = {
   slug: OceanAtlasSlug;
   preview: string;
+  /** 7200×3600 frame when the layer is drawn from the source data. */
+  detail?: string;
   sourceOrg: string;
   /** Grid “Source:” link text. First URL in `sources` is the href. */
   sourceLabel: string;
@@ -80,7 +82,8 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'dissolved-oxygen',
-    preview: 'dissolved-oxygen.svg',
+    preview: 'dissolved-oxygen.jpg',
+    detail: 'detail/dissolved-oxygen.webp',
     sourceOrg: 'NOAA NCEI — World Ocean Atlas 2023',
     sourceLabel: 'NOAA NCEI — World Ocean Atlas 2023 (dissolved oxygen)',
     sourceUrl: 'https://www.ncei.noaa.gov/products/world-ocean-atlas',
@@ -128,7 +131,8 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'sea-ice-extent',
-    preview: 'sea-ice-extent.svg',
+    preview: 'sea-ice-extent.jpg',
+    detail: 'detail/sea-ice-extent.webp',
     sourceOrg: 'NSIDC — Sea Ice Index / Sea Ice Today',
     sourceLabel: 'NSIDC — Sea Ice Index / Sea Ice Today',
     sourceUrl: 'https://nsidc.org/sea-ice-today',
@@ -158,7 +162,8 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'sea-level',
-    preview: 'sea-level.svg',
+    preview: 'sea-level.jpg',
+    detail: 'detail/sea-level.webp',
     sourceOrg: 'NASA Sea Level Change Portal',
     sourceLabel: 'NASA Sea Level Change Portal',
     sourceUrl: 'https://sealevel.nasa.gov/',
@@ -203,7 +208,8 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'marine-heatwaves',
-    preview: 'marine-heatwaves.svg',
+    preview: 'marine-heatwaves.jpg',
+    detail: 'detail/marine-heatwaves.webp',
     sourceOrg: 'NOAA Coral Reef Watch / NOAA Physical Sciences Laboratory',
     sourceLabel: 'NOAA Coral Reef Watch — Marine Heatwave',
     sourceUrl: 'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',

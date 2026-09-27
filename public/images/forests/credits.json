@@ -136,22 +136,22 @@
     "note": "Long-view reconstruction used in the trend strip. Map face is ~2017."
   },
   {
-    "file": "canopy-height.svg",
-    "title": "Mean canopy height schematic",
-    "source": "Schematic after NASA GEDI L3 / ORNL DAAC",
+    "file": "canopy-height.jpg",
+    "title": "Mean canopy height from NASA GEDI L3",
+    "source": "Fix Planet map from NASA GEDI L3 mean RH100 canopy height, April 2019–March 2023, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-gedi-l3-landsurface-metrics-v2-1952-2",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Taller tropical and boreal stands, shorter drylands. Coverage fades outside about ±52° latitude. Not a tree-cover loss map."
+    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "NASA colour scale for mean canopy height. No legend text in the image."
   },
   {
-    "file": "aboveground-biomass.svg",
-    "title": "Aboveground biomass density schematic",
-    "source": "Schematic after NASA GEDI L4B / ORNL DAAC",
+    "file": "aboveground-biomass.jpg",
+    "title": "Aboveground biomass density from NASA GEDI L4B",
+    "source": "Fix Planet map from NASA GEDI L4B mean aboveground biomass density, April 2019–March 2023, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.earthdata.nasa.gov/data/catalog/ornl-cloud-gedi-l4b-gridded-biomass-v2-1-2299-2.1",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Density in tonnes per hectare: denser moist tropics, sparser drylands. Not a national carbon-stock total."
+    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "NASA colour scale for aboveground biomass density. No legend text in the image."
   },
   {
     "file": "burned-area.svg",
