@@ -18,6 +18,7 @@ import {
   localizePath,
   resolveLocale,
 } from '../i18n';
+import { realMapCredit } from '../i18n/real-map-credits';
 
 interface Props {
   slug: ForestAtlasSlug;
@@ -32,6 +33,10 @@ if (!map) {
   throw new Error(`Unknown forests atlas slug: ${Astro.props.slug}`);
 }
 const preview = forestAtlasPreviewSrc(map.preview);
+const credit = realMapCredit(locale, map.slug);
+const art = map.detail ? forestAtlasPreviewSrc(map.detail) : preview;
+const artWidth = map.detail ? 7200 : 1600;
+const artHeight = map.detail ? 3600 : 800;
 const backdropSrc = forestFrameSrc(forestBackdrop.file);
 ---
 
@@ -59,10 +64,18 @@ const backdropSrc = forestFrameSrc(forestBackdrop.file);
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel">
         <figure class="map-detail-art forest-map-art">
-          <img src={preview} alt={map.blurb} width="1600" height="800" />
+          <img src={art} alt={map.blurb} width={artWidth} height={artHeight} />
           <figcaption>
-            {map.sourceOrg}. {chrome.schematic}
-            {map.usesCoastline ? <><br />{forestAtlasLandCredit}</> : null}
+            {
+              credit ? (
+                credit
+              ) : (
+                <>
+                  {map.sourceOrg}. {chrome.schematic}
+                  {map.usesCoastline ? <><br />{forestAtlasLandCredit}</> : null}
+                </>
+              )
+            }
           </figcaption>
         </figure>
         <div class="prose map-detail-copy forest-frame-copy">

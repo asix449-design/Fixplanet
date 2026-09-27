@@ -17,6 +17,8 @@ export type OceanAtlasSlug = (typeof oceanAtlasSlugs)[number];
 export type OceanAtlasMeta = {
   slug: OceanAtlasSlug;
   preview: string;
+  /** 7200×3600 frame when the layer is drawn from the source data. */
+  detail?: string;
   sourceOrg: string;
   /** Grid “Source:” link text. First URL in `sources` is the href. */
   sourceLabel: string;
@@ -32,12 +34,17 @@ export const oceanAtlasLandCredit =
 export const oceanAtlasMeta: OceanAtlasMeta[] = [
   {
     slug: 'ocean-acidification',
-    preview: 'ocean-acidification.svg',
-    sourceOrg: 'NOAA Ocean Acidification Program / PMEL Carbon Program',
-    sourceLabel: 'NOAA Ocean Acidification Program / PMEL Carbon Program',
-    sourceUrl: 'https://oceanacidification.noaa.gov/',
+    preview: 'ocean-acidification.jpg',
+    detail: 'detail/ocean-acidification.webp',
+    sourceOrg: 'OceanSODA-ETHZ / NOAA NCEI OCADS',
+    sourceLabel: 'OceanSODA-ETHZ',
+    sourceUrl: 'https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html',
     usesCoastline: true,
     sources: [
+      cite(
+        'NCEI OCADS — OceanSODA-ETHZ v2025 (accession 0220059)',
+        'https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html',
+      ),
       cite('NOAA Ocean Acidification Program — hub', 'https://oceanacidification.noaa.gov/'),
       cite(
         'NOAA OAP — What is ocean acidification?',
@@ -80,9 +87,10 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'dissolved-oxygen',
-    preview: 'dissolved-oxygen.svg',
+    preview: 'dissolved-oxygen.jpg',
+    detail: 'detail/dissolved-oxygen.webp',
     sourceOrg: 'NOAA NCEI — World Ocean Atlas 2023',
-    sourceLabel: 'NOAA NCEI — World Ocean Atlas 2023 (dissolved oxygen)',
+    sourceLabel: 'NOAA WOA23',
     sourceUrl: 'https://www.ncei.noaa.gov/products/world-ocean-atlas',
     usesCoastline: true,
     sources: [
@@ -128,10 +136,11 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'sea-ice-extent',
-    preview: 'sea-ice-extent.svg',
-    sourceOrg: 'NSIDC — Sea Ice Index / Sea Ice Today',
-    sourceLabel: 'NSIDC — Sea Ice Index / Sea Ice Today',
-    sourceUrl: 'https://nsidc.org/sea-ice-today',
+    preview: 'sea-ice-extent.jpg',
+    detail: 'detail/sea-ice-extent.webp',
+    sourceOrg: 'NSIDC Sea Ice Index G02135',
+    sourceLabel: 'NSIDC G02135',
+    sourceUrl: 'https://noaadata.apps.nsidc.org/NOAA/G02135/',
     usesCoastline: false,
     sources: [
       cite('NSIDC — Sea Ice Today', 'https://nsidc.org/sea-ice-today'),
@@ -158,12 +167,17 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'sea-level',
-    preview: 'sea-level.svg',
-    sourceOrg: 'NASA Sea Level Change Portal',
-    sourceLabel: 'NASA Sea Level Change Portal',
-    sourceUrl: 'https://sealevel.nasa.gov/',
+    preview: 'sea-level.jpg',
+    detail: 'detail/sea-level.webp',
+    sourceOrg: 'NOAA Laboratory for Satellite Altimetry',
+    sourceLabel: 'NOAA LSA',
+    sourceUrl: 'https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/',
     usesCoastline: false,
     sources: [
+      cite(
+        'NOAA LSA — Sea Level Rise maps',
+        'https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/',
+      ),
       cite('NASA Sea Level Change Portal — hub', 'https://sealevel.nasa.gov/'),
       cite(
         'NASA — Global Mean Sea Level (vital signs)',
@@ -196,19 +210,24 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
         'https://marine.copernicus.eu/ocean-climate-portal',
       ),
       cite(
-        'IPCC AR6 WG1 report (Numbers vintage for 3.7 mm/yr)',
+        'IPCC AR6 WG1 report (global mean, about 3.7 mm/yr, 2006–2018)',
         'https://www.ipcc.ch/report/ar6/wg1/',
       ),
     ],
   },
   {
     slug: 'marine-heatwaves',
-    preview: 'marine-heatwaves.svg',
-    sourceOrg: 'NOAA Coral Reef Watch / NOAA Physical Sciences Laboratory',
-    sourceLabel: 'NOAA Coral Reef Watch — Marine Heatwave',
-    sourceUrl: 'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
+    preview: 'marine-heatwaves.jpg',
+    detail: 'detail/marine-heatwaves.webp',
+    sourceOrg: 'NOAA Coral Reef Watch',
+    sourceLabel: 'NOAA CRW',
+    sourceUrl: 'https://coralreefwatch.noaa.gov/product/5km/',
     usesCoastline: true,
     sources: [
+      cite(
+        'NOAA Coral Reef Watch — 5 km sea-surface temperature products',
+        'https://coralreefwatch.noaa.gov/product/5km/',
+      ),
       cite(
         'NOAA Coral Reef Watch — Marine Heatwave product',
         'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
@@ -230,9 +249,10 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
   },
   {
     slug: 'ocean-heat-content',
-    preview: 'ocean-heat-content.svg',
-    sourceOrg: 'NOAA NCEI / NASA',
-    sourceLabel: 'NOAA NCEI — Ocean Heat Content',
+    preview: 'ocean-heat-content.jpg',
+    detail: 'detail/ocean-heat-content.webp',
+    sourceOrg: 'NOAA NCEI',
+    sourceLabel: 'NOAA NCEI',
     sourceUrl: 'https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level',
     usesCoastline: false,
     sources: [
@@ -261,7 +281,7 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'coral-reefs',
     preview: 'coral-reefs.svg',
     sourceOrg: 'GCRMN / ICRI / NOAA Coral Reef Watch',
-    sourceLabel: 'GCRMN — Status of Coral Reefs 2020',
+    sourceLabel: 'GCRMN',
     sourceUrl: 'https://gcrmn.net/2020-report/',
     usesCoastline: true,
     sources: [
@@ -298,7 +318,7 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'marine-fisheries',
     preview: 'marine-fisheries.svg',
     sourceOrg: 'FAO',
-    sourceLabel: 'FAO — State of World Fisheries and Aquaculture (SOFIA)',
+    sourceLabel: 'FAO SOFIA',
     sourceUrl: 'https://www.fao.org/publications/sofia/en',
     usesCoastline: false,
     sources: [

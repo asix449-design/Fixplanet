@@ -1,6 +1,7 @@
 ---
 import { oceanAtlasPath, oceanAtlasPreviewSrc } from '../data/ocean-atlas';
 import { getMapsPage, getOceansPage, localizePath, resolveLocale } from '../i18n';
+import { hasRealMap } from '../i18n/real-map-credits';
 import type { OceanAtlasEntry } from '../i18n/ocean-atlas';
 
 interface Props {
@@ -19,7 +20,7 @@ const preview = oceanAtlasPreviewSrc(map.preview);
   <a class="map-card" href={href}>
     <div class="card-art map-card-art">
       <img src={preview} alt={map.blurb} width="1600" height="800" loading="lazy" />
-      <span class="map-schematic-badge">{maps.schematicBadge}</span>
+      {hasRealMap(map.slug) ? null : <span class="map-schematic-badge">{maps.schematicBadge}</span>}
     </div>
     <div class="card-body">
       <h3>{map.title}</h3>

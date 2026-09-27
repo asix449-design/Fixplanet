@@ -185,58 +185,58 @@
     "note": "2008 compilation of coastal hypoxic sites. Not this year's Gulf of Mexico forecast."
   },
   {
-    "file": "ocean-acidification.svg",
-    "title": "Surface-ocean pH schematic",
-    "source": "Fix Planet overview after NOAA Ocean Acidification Program / PMEL Carbon Program",
-    "url": "https://oceanacidification.noaa.gov/",
-    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Cooler, lower-pH basins distinguished from higher-pH water. Not an SST plate and not NOAA marketing art."
+    "file": "ocean-acidification.jpg",
+    "title": "Change in surface pH, OceanSODA-ETHZ v2025",
+    "source": "Fix Planet map from OceanSODA-ETHZ v2025. Colour is the change in surface pH (total scale) from the 1985–1989 mean to the 2020–2024 mean. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html",
+    "license": "NOAA NCEI OCADS / OceanSODA-ETHZ. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Negative numbers are a decline in pH. Not a sea-surface temperature map."
   },
   {
-    "file": "dissolved-oxygen.svg",
-    "title": "Open-ocean dissolved oxygen / OMZ schematic",
-    "source": "Fix Planet overview after NOAA NCEI World Ocean Atlas 2023",
+    "file": "dissolved-oxygen.jpg",
+    "title": "Dissolved oxygen minimum, 100–1000 m, World Ocean Atlas 2023",
+    "source": "Fix Planet map from NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° field, minimum between 100 m and 1000 m, 1965–2022. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
-    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Low-oxygen tongues in the eastern tropical Pacific, eastern Atlantic, and Arabian Sea. Not the coastal dead-zone pins on Pollution."
+    "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is micromoles per kilogram. No unit words in the image."
   },
   {
-    "file": "sea-ice-extent.svg",
-    "title": "Arctic and Antarctic sea-ice extent schematic",
-    "source": "Fix Planet overview after NSIDC Sea Ice Index / Sea Ice Today",
-    "url": "https://nsidc.org/sea-ice-today",
-    "license": "Fix Planet schematic",
-    "kind": "schematic",
-    "note": "Ice edge against a dashed 1981–2010 median outline. Not SST and not land ice. Not an NSIDC plate."
+    "file": "sea-ice-extent.jpg",
+    "title": "Sea-ice concentration, NSIDC Sea Ice Index, Arctic March 2026 and Antarctic September 2025",
+    "source": "Fix Planet map from NSIDC Sea Ice Index G02135 v4 monthly concentration GeoTIFFs. Arctic March 2026 and Antarctic September 2025, polar stereographic.",
+    "url": "https://noaadata.apps.nsidc.org/NOAA/G02135/",
+    "license": "Public domain (NSIDC / NOAA).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is percent concentration. Land is the NSIDC mask. No place names."
   },
   {
-    "file": "sea-level.svg",
-    "title": "Global mean sea-level time-series schematic",
-    "source": "Fix Planet overview after NASA Sea Level Change Portal",
-    "url": "https://sealevel.nasa.gov/",
-    "license": "Fix Planet schematic",
-    "kind": "schematic",
-    "note": "Altimetry-era rise since about 1993, without a plotted rate. Not the NASA series, not climate.nasa.gov/vital-signs/sea-level (404), and not AVISO."
+    "file": "sea-level.jpg",
+    "title": "Sea-level trend, NOAA Laboratory for Satellite Altimetry, 1992.96–2025.10",
+    "source": "Fix Planet map from the NOAA LSA regional sea-level trend grid (TOPEX, Jason-1/2/3, Sentinel-6MF). Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/",
+    "license": "NOAA Laboratory for Satellite Altimetry. Acknowledge: Altimetry data are provided by NOAA Laboratory for Satellite Altimetry. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is millimetres per year. Diverging colours centred on zero."
   },
   {
-    "file": "marine-heatwaves.svg",
-    "title": "Marine heatwave regions schematic",
-    "source": "Fix Planet schematic after NOAA Coral Reef Watch and NOAA Physical Sciences Laboratory",
-    "url": "https://www.coralreefwatch.noaa.gov/product/marine_heatwave/",
-    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Discrete warm-event patches. Separate from average sea-surface temperature. No agency logo."
+    "file": "marine-heatwaves.jpg",
+    "title": "Coral Reef Watch 5 km SST anomaly, 25 September 2026",
+    "source": "Fix Planet map from NOAA Coral Reef Watch operational 5 km sea-surface temperature anomaly, 25 September 2026. Boundaries: Natural Earth 1:10m.",
+    "url": "https://coralreefwatch.noaa.gov/product/5km/index.php",
+    "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is degrees Celsius. Diverging palette, not a rainbow scale."
   },
   {
-    "file": "ocean-heat-content.svg",
-    "title": "Ocean heat content time-series schematic",
-    "source": "Fix Planet schematic after NOAA NCEI and NASA",
-    "url": "https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level",
-    "license": "Fix Planet schematic",
-    "kind": "schematic",
-    "note": "Rising heat stored in the 0–700 m and 0–2000 m layers. Not a sea-surface temperature map and not an agency logo."
+    "file": "ocean-heat-content.jpg",
+    "title": "Ocean heat content anomaly, 0–700 m, 2025",
+    "source": "Fix Planet map from NOAA NCEI yearly ocean heat content anomaly for 0–700 m, 2025. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.ncei.noaa.gov/access/global-ocean-heat-content/",
+    "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is 10^18 joules in each 1° cell. Not sea-surface temperature."
   },
   {
     "file": "coral-reefs.svg",
