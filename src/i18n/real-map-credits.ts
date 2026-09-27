@@ -143,6 +143,12 @@ const credits: Record<string, Record<Locale, string>> = {
     pl: 'Mapa: Fix Planet na podstawie tabel krajowych FAO Global Forest Resources Assessment 2025. Liczba to węgiel żywej biomasy w 2025 roku: nadziemny plus podziemny, w milionach ton. Gleba, ściółka i martwe drewno nie są na tej płycie. Kraje bez jednej z dwóch pul zostają szare. Granice: Natural Earth.',
     lv: 'Karte: Fix Planet no FAO Global Forest Resources Assessment 2025 valstu tabulām. Skaitlis ir dzīvās biomasas ogleklis 2025. gadā: virszemes plus pazemes, miljonos tonnu. Augsne, nobiras un mirusī koksne šajā platē nav. Valstis, kurām trūkst viena no diviem baseiniem, paliek pelēkas. Robežas: Natural Earth.',
   },
+  'tree-cover': {
+    en: 'Map: Fix Planet from ESA WorldCover 10 m 2021 v200. Colour is the share of each 0.02° cell in class 10 (tree cover). A 10 m pixel is that land-cover class, not a canopy-density percent. Mangroves are class 95 and are not included. CC BY 4.0. Contains modified Copernicus Sentinel data (2021). Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по ESA WorldCover 10 м, 2021, версия v200. Цвет — доля ячейки 0,02° в классе 10 (древесный покров). Пиксель 10 м — этот класс земного покрова, а не процент сомкнутости полога. Мангры — класс 95 и сюда не входят. CC BY 4.0. Содержит изменённые данные Copernicus Sentinel (2021). Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie ESA WorldCover 10 m, 2021, wersja v200. Kolor to udział komórki 0,02° w klasie 10 (pokrycie drzewami). Piksel 10 m to ta klasa pokrycia terenu, a nie procent zwarcia koron. Namorzyny to klasa 95 i nie wchodzą do tej warstwy. CC BY 4.0. Zawiera zmodyfikowane dane Copernicus Sentinel (2021). Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no ESA WorldCover 10 m, 2021, versija v200. Krāsa ir 0,02° šūnas daļa 10. klasē (koku segums). 10 m pikselis ir šī zemes seguma klase, nevis vainagu blīvuma procents. Mangrovju meži ir 95. klase un šeit nav iekļauti. CC BY 4.0. Satur pārveidotus Copernicus Sentinel (2021) datus. Robežas: Natural Earth.',
+  },
   peatlands: {
     en: 'Map: Fix Planet from PEATMAP (Xu and co-authors, 2018). Colour marks a 0.02° cell that a mapped peat polygon touches. CC BY 4.0. Boundaries: Natural Earth.',
     ru: 'Карта: Fix Planet по PEATMAP (Xu и соавторы, 2018). Цвет отмечает ячейку 0,02°, которой касается полигон торфа. CC BY 4.0. Границы: Natural Earth.',

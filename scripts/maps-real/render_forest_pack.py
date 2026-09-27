@@ -3,12 +3,12 @@
 
     python3 scripts/maps-real/render_forest_pack.py lesiv
     python3 scripts/maps-real/render_forest_pack.py carbon peat
+    python3 scripts/maps-real/render_forest_pack.py worldcover
     python3 scripts/maps-real/render_forest_pack.py render
 
 Raw downloads stay in scripts/maps-real/raw/ and are gitignored.
-Tree cover (MOD44B) is not rendered here: the Collection 6.1 granules
-redirect to an Earthdata login, and no public mosaic of that product
-was available.
+Tree cover is the share of ESA WorldCover 2021 v200 class 10 (10 m)
+on the 0.02° grid. Tiles are read from the public AWS bucket and not kept.
 """
 
 from __future__ import annotations
@@ -16,7 +16,10 @@ from __future__ import annotations
 import csv
 import io
 import json
+import os
 import sys
+import tempfile
+import urllib.parse
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -64,6 +67,12 @@ NE_ZIPS = {
     "ne_10m_lakes.zip": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_lakes.zip",
     "ne_10m_land.zip": "https://naciscdn.org/naturalearth/10m/physical/ne_10m_land.zip",
 }
+WC_LIST = "https://esa-worldcover.s3.eu-central-1.amazonaws.com/"
+WC_PREFIX = "v200/2021/map/"
+WC_BASE = WC_LIST + WC_PREFIX
+TREE_CLASS = 10
+# Map pixel is 1/12000 degree. 0.02° is exactly 240 pixels on a side.
+WC_BIN = 240
 
 
 def fetch(url: str, dest: Path) -> None:
@@ -265,6 +274,166 @@ def aggregate_peat() -> None:
     print("peat cells", int(burned.sum()), flush=True)
 
 
+def list_worldcover_maps() -> list[str]:
+    import xml.etree.ElementTree as ET
+
+    ns = {"s3": "http://s3.amazonaws.com/doc/2006-03-01/"}
+    keys: list[str] = []
+    token = None
+    while True:
+        params = {"list-type": "2", "prefix": WC_PREFIX, "max-keys": "1000"}
+        if token:
+            params["continuation-token"] = token
+        url = WC_LIST + "?" + urllib.parse.urlencode(params)
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=120) as response:
+            root = ET.fromstring(response.read())
+        for node in root.findall("s3:Contents", ns):
+            key = node.findtext("s3:Key", default="", namespaces=ns)
+            if key.endswith("_Map.tif"):
+                keys.append(key)
+        truncated = (root.findtext("s3:IsTruncated", default="false", namespaces=ns) or "").lower() == "true"
+        if not truncated:
+            break
+        token = root.findtext("s3:NextContinuationToken", default=None, namespaces=ns)
+        if not token:
+            break
+    if len(keys) < 2000:
+        raise SystemExit(f"WorldCover map listing looks short: {len(keys)} tiles")
+    return keys
+
+
+def count_worldcover_tile(key: str) -> tuple[int, int, np.ndarray, int]:
+    """Download one 3° COG, count class-10 pixels in each 0.02° cell, delete the file."""
+    import time
+    import urllib.error
+
+    last: Exception | None = None
+    for attempt in range(4):
+        try:
+            return _count_worldcover_tile_once(key)
+        except (TimeoutError, urllib.error.URLError, ConnectionError, OSError) as exc:
+            last = exc
+            time.sleep(3 * (attempt + 1))
+    if last is not None:
+        raise last
+    raise RuntimeError(key)
+
+
+def _count_worldcover_tile_once(key: str) -> tuple[int, int, np.ndarray, int]:
+    import rasterio
+    from rasterio.windows import Window
+
+    name = Path(key).name
+    url = WC_BASE + name
+    fd, tmp_name = tempfile.mkstemp(suffix=".tif")
+    os.close(fd)
+    dest = Path(tmp_name)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=300) as response, dest.open("wb") as handle:
+            while True:
+                block = response.read(1 << 20)
+                if not block:
+                    break
+                handle.write(block)
+        with rasterio.Env(GDAL_CACHEMAX=32):
+            with rasterio.open(dest) as src:
+                left, _bottom, _right, top = src.bounds
+                yi0 = int(np.floor((90.0 - top) / RES + 1e-6))
+                xi0 = int(np.floor((left + 180.0) / RES + 1e-6))
+                if abs((90.0 - yi0 * RES) - top) > 1e-4 or abs((-180.0 + xi0 * RES) - left) > 1e-4:
+                    raise RuntimeError(f"{name} is not aligned to the 0.02° grid ({left}, {top})")
+                if src.width % WC_BIN or src.height % WC_BIN:
+                    raise RuntimeError(f"{name} size {src.width}x{src.height} is not a multiple of {WC_BIN}")
+                nlat = src.height // WC_BIN
+                nlon = src.width // WC_BIN
+                counts = np.zeros((nlat, nlon), dtype=np.uint32)
+                step = WC_BIN * 10
+                for y0 in range(0, src.height, step):
+                    height = min(step, src.height - y0)
+                    block = src.read(1, window=Window(0, y0, src.width, height))
+                    rows = height // WC_BIN
+                    binned = (block == TREE_CLASS).reshape(rows, WC_BIN, nlon, WC_BIN).sum(axis=(1, 3))
+                    counts[y0 // WC_BIN : y0 // WC_BIN + rows] = binned
+        return yi0, xi0, counts, int(counts.sum())
+    finally:
+        dest.unlink(missing_ok=True)
+
+
+def _save_worldcover_ckpt(total: np.ndarray, done: set[str]) -> None:
+    """One file so a resume cannot add a tile twice."""
+    tmp = RAW / "worldcover_tree_ckpt_tmp"
+    np.savez(tmp, grid=total, done=np.array(sorted(done)))
+    os.replace(Path(str(tmp) + ".npz"), RAW / "worldcover_tree_ckpt.npz")
+
+
+def _load_worldcover_ckpt() -> tuple[np.ndarray, set[str]] | None:
+    path = RAW / "worldcover_tree_ckpt.npz"
+    if not path.exists():
+        return None
+    bundle = np.load(path, allow_pickle=False)
+    done = set(bundle["done"].astype(str).tolist())
+    return bundle["grid"], done
+
+
+def aggregate_worldcover() -> None:
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+
+    keys = list_worldcover_maps()
+    loaded = _load_worldcover_ckpt()
+    if loaded is None:
+        total = np.zeros((NLAT, NLON), dtype=np.uint32)
+        done: set[str] = set()
+    else:
+        total, done = loaded
+        print("resume", len(done), "of", len(keys), flush=True)
+    pending = [key for key in keys if Path(key).name not in done]
+    print("worldcover tiles", len(keys), "pending", len(pending), flush=True)
+    if not pending and (RAW / "worldcover_tree_0p02.npy").exists():
+        print("worldcover already aggregated", flush=True)
+        return
+    finished = 0
+    with ProcessPoolExecutor(max_workers=4) as pool:
+        futures = {pool.submit(count_worldcover_tile, key): key for key in pending}
+        for future in as_completed(futures):
+            key = futures[future]
+            name = Path(key).name
+            yi0, xi0, counts, tile_trees = future.result()
+            y1, x1 = yi0 + counts.shape[0], xi0 + counts.shape[1]
+            if yi0 >= 0 and xi0 >= 0 and y1 <= NLAT and x1 <= NLON:
+                total[yi0:y1, xi0:x1] += counts
+            else:
+                raise RuntimeError(f"{name} falls outside the global grid ({yi0}, {xi0}, {counts.shape})")
+            done.add(name)
+            finished += 1
+            if finished % 50 == 0 or finished == len(pending):
+                _save_worldcover_ckpt(total, done)
+                print(f"{len(done)}/{len(keys)} {name} tile_trees {tile_trees}", flush=True)
+    np.save(RAW / "worldcover_tree_0p02.npy", total)
+    meta = {
+        "tiles": len(keys),
+        "tree_pixels": int(total.sum()),
+        "pixel_deg": 1 / 12000,
+        "pixels_per_cell": WC_BIN * WC_BIN,
+        "class": TREE_CLASS,
+        "product": "ESA WorldCover 10 m 2021 v200",
+    }
+    (RAW / "worldcover_tree_meta.json").write_text(json.dumps(meta, indent=2))
+    print("worldcover cells", int((total > 0).sum()), "trees", meta["tree_pixels"], flush=True)
+
+
+def render_tree() -> None:
+    ensure_water()
+    counts = np.load(RAW / "worldcover_tree_0p02.npy")
+    meta = json.loads((RAW / "worldcover_tree_meta.json").read_text())
+    water = inland_water_mask(counts.shape[0], counts.shape[1])
+    counts = np.array(counts, copy=True)
+    counts[water] = 0
+    share_grid(counts, float(meta["pixels_per_cell"]), "Greens", "forests", "tree-cover", 0.98)
+    print("tree meta", meta["tree_pixels"], "per cell", meta["pixels_per_cell"], flush=True)
+
+
 def render_peat() -> None:
     ensure_water()
     grid = np.load(RAW / "peatmap_0p02.npy").astype(np.float32)
@@ -285,6 +454,8 @@ def main() -> None:
         render_carbon()
     if "peat" in which and "render" not in which:
         aggregate_peat()
+    if "worldcover" in which and "render" not in which:
+        aggregate_worldcover()
     if "render" in which:
         if (RAW / "lesiv_planted_0p02.npy").exists():
             render_planted()
@@ -293,6 +464,11 @@ def main() -> None:
         else:
             aggregate_peat()
             render_peat()
+        if (RAW / "worldcover_tree_0p02.npy").exists() and (RAW / "worldcover_tree_meta.json").exists():
+            render_tree()
+        elif "worldcover" in which:
+            aggregate_worldcover()
+            render_tree()
         render_carbon()
 
 

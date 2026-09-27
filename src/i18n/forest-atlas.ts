@@ -33,7 +33,7 @@ export const forestAtlasSectionLabels = {
 
 /** Hub lede. PL/LV follow the pack’s meaning; EN/RU say the same thing. */
 export const forestAtlasHubLede: Record<Locale, string> = {
-  en: 'FAO figures, satellite greenness, reconstructions, and outlooks — plus planted forests, forest carbon stock, percent tree cover, peatlands, canopy height, aboveground biomass density, burned area, and FAO ecological zones. Each layer names its publisher and what the layer measures (and what it does not).',
+  en: 'FAO figures, satellite greenness, reconstructions, and outlooks — plus planted forests, forest carbon stock, tree cover, peatlands, canopy height, aboveground biomass density, burned area, and FAO ecological zones. Each layer names its publisher and what the layer measures (and what it does not).',
   ru: 'Цифры FAO, спутниковая зелень, реконструкции и перспективы — а также посаженные леса, запас углерода в лесах, древесный покров, торфяники, высота полога, плотность надземной биомассы, площадь гарей и экологические зоны FAO. У каждого слоя указаны издатель и то, что слой измеряет (и чего не измеряет).',
   pl: 'Liczby FAO, zieleń z satelity, rekonstrukcje i perspektywy — oraz lasy sadzone, zapas węgla w lasach, pokrycie drzewami, torfowiska, wysokość koron, gęstość biomasy nadziemnej, areał spalenisk i strefy ekologiczne FAO. Przy każdej warstwie podany jest wydawca i to, co warstwa mierzy (i czego nie).',
   lv: 'FAO skaitļi, satelītu zaļums, rekonstrukcijas un nākotnes skati — kā arī stādītie meži, meža oglekļa krājums, koku segums, kūdrāji, vainagu augstums, virszemes biomasas blīvums, izdegušās platības un FAO ekoloģiskās zonas. Katram slānim norādīts izdevējs un tas, ko slānis mēra (un ko ne).',
@@ -129,13 +129,13 @@ const en: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'tree-cover': {
     title: 'Tree cover',
-    meta: 'NASA MODIS MOD44B · percent tree cover · ~250 m',
+    meta: 'ESA WorldCover 2021 · class 10 · 10 m',
     blurb:
-      'How much of each landscape is covered by tree canopy, as a continuous percent — the standing cover layer, not a map of yearly loss.',
-    what: 'NASA’s MODIS Vegetation Continuous Fields product (MOD44B, Collection 6.1) maps percent tree cover, percent non-tree vegetation, and percent bare ground each year at about 250 m resolution. The Earthdata catalog entry and the MOD44B user guide describe the product. For related canopy-change context, the GLAD / Hansen Global Forest Change viewer and download pages show tree-cover and loss layers used widely in research — useful companions, not substitutes for the VCF percent field.',
-    why: 'Annual tree-cover loss shows where canopy disappeared. Percent tree cover shows how much canopy is there. Both matter, and they answer different questions.',
+      'Where the 2021 WorldCover map assigns the tree-cover class — the share of each cell, a land-cover class rather than a canopy-density percent or a map of yearly loss.',
+    what: 'The plate is ESA WorldCover 10 m 2021 v200 (CC BY 4.0). Colour is the share of 10 m pixels in each 0.02° cell labelled class 10, tree cover. In that legend a pixel is tree cover when trees are the mapped class and cover at least 10% of it. Plantations, including oil palm, are inside class 10. Mangroves are class 95 and are not drawn. The product maps land seen by Sentinel-2 and stops near 82.75°N; Antarctica is outside it.',
+    why: 'A land-cover class answers where the map calls the pixel trees. Annual tree-cover loss answers where canopy disappeared. This layer is the 2021 class, counted as a share of the cell.',
     howToRead:
-      'VCF percent tree cover is a continuous fraction inside each pixel, not a binary forest/non-forest mask and not FAO land-use forest area. Dense canopy can score high even in mosaics that FRA would class differently. Use MOD44B for standing cover; use loss products when the question is where canopy was removed.',
+      'The number on the scale is the share of the 0.02° cell in class 10. Empty land was classed as something else. A high share can include plantations. Grey land is outside the WorldCover land mask. Use a loss product when the question is where canopy was removed.',
   },
   peatlands: {
     title: 'Peatlands',
@@ -200,11 +200,11 @@ const ru: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'tree-cover': {
     title: 'Древесный покров',
-    meta: 'NASA MODIS MOD44B · доля покрова · ~250 м',
+    meta: 'ESA WorldCover 2021 · класс 10 · 10 м',
     blurb:
-      'Какая доля ландшафта закрыта древесным пологом — непрерывная процентная оценка, а не карта ежегодных потерь.',
+      'Где карта WorldCover за 2021 год ставит класс древесного покрова — доля ячейки, класс земного покрова, а не процент сомкнутости полога и не карта ежегодных потерь.',
     detailShort:
-      'Продукт NASA MODIS «непрерывные поля растительности» (MOD44B, коллекция 6.1) ежегодно картирует процент древесного покрова, недревесной растительности и открытого грунта с разрешением около 250 м. Описание есть в каталоге Earthdata и в руководстве пользователя MOD44B. Годовая потеря покрова показывает, где полог исчез; процент покрова показывает, сколько полога есть сейчас. Это непрерывная доля в пикселе, а не бинарная маска «лес / не лес» и не площадь леса по определению ФАО.',
+      'Плита — ESA WorldCover 10 м, 2021, версия v200 (CC BY 4.0): доля пикселей 10 м класса 10 (древесный покров) в ячейке 0,02°. В этой легенде пиксель относится к древесному покрову, когда деревья — назначенный класс и закрывают не меньше 10% пикселя. Плантации, включая масличную пальму, входят в класс 10. Мангры — класс 95 и на плиту не нанесены. Продукт покрывает сушу, видимую Sentinel-2, и обрывается около 82,75° с. ш.; Антарктида в него не входит. Это не процент сомкнутости полога и не годовая потеря покрова.',
   },
   peatlands: {
     title: 'Торфяники',
@@ -267,11 +267,11 @@ const pl: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'tree-cover': {
     title: 'Pokrycie drzewami',
-    meta: 'NASA MODIS MOD44B · procent pokrycia · ~250 m',
+    meta: 'ESA WorldCover 2021 · klasa 10 · 10 m',
     blurb:
-      'Jaka część krajobrazu jest pokryta koronami drzew — ciągła miara procentowa, a nie mapa corocznych strat.',
+      'Gdzie mapa WorldCover z 2021 roku nadaje klasę pokrycia drzewami — udział komórki, klasa pokrycia terenu, a nie procent zwarcia koron i nie mapa corocznych strat.',
     detailShort:
-      'Produkt NASA MODIS ciągłych pól roślinności (MOD44B, kolekcja 6.1) co roku mapuje procent pokrycia drzewami, roślinnością niedrzewną i gołą glebą w rozdzielczości około 250 m. Opis jest w katalogu Earthdata i w przewodniku użytkownika MOD44B. Coroczna strata pokrycia pokazuje, gdzie korony zniknęły; procent pokrycia pokazuje, ile koron jest teraz. To ciągła frakcja w pikselu, a nie binarna maska „las / nie-las” i nie powierzchnia lasu w sensie FAO.',
+      'Płyta to ESA WorldCover 10 m, 2021, wersja v200 (CC BY 4.0): udział pikseli 10 m klasy 10 (pokrycie drzewami) w komórce 0,02°. W tej legendzie piksel jest pokryciem drzewami, gdy drzewa są przypisaną klasą i zajmują co najmniej 10% piksela. Plantacje, w tym palma olejowa, wchodzą do klasy 10. Namorzyny to klasa 95 i nie są narysowane. Produkt obejmuje ląd widziany przez Sentinel-2 i urywa się około 82,75° szerokości północnej; Antarktyda jest poza nim. To nie jest procent zwarcia koron i nie jest coroczna strata pokrycia.',
   },
   peatlands: {
     title: 'Torfowiska',
@@ -334,11 +334,11 @@ const lv: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'tree-cover': {
     title: 'Koku segums',
-    meta: 'NASA MODIS MOD44B · seguma procenti · ~250 m',
+    meta: 'ESA WorldCover 2021 · 10. klase · 10 m',
     blurb:
-      'Cik lielu ainavas daļu aizņem koku vainagi — nepārtraukts procentuālais rādītājs, nevis ikgadējo zudumu karte.',
+      'Kur 2021. gada WorldCover karte piešķir koku seguma klasi — šūnas daļa, zemes seguma klase, nevis vainagu blīvuma procents un nevis ikgadējo zudumu karte.',
     detailShort:
-      'NASA MODIS nepārtraukto veģetācijas lauku produkts (MOD44B, kolekcija 6.1) katru gadu kartē koku seguma, citu veģetācijas un kailās augsnes procentus aptuveni 250 m izšķirtspējā. Apraksts ir Earthdata katalogā un MOD44B lietotāja ceļvedī. Ikgadējais seguma zudums rāda, kur vainagi pazuduši; seguma procenti rāda, cik vainagu ir tagad. Tā ir nepārtraukta frakcija pikselī, nevis bināra maska «mežs / nav mežs» un nevis FAO izpratnes meža platība.',
+      'Plate ir ESA WorldCover 10 m, 2021, versija v200 (CC BY 4.0): 10 m pikseļu daļa 10. klasē (koku segums) 0,02° šūnā. Šajā leģendā pikselis ir koku segums, kad koki ir piešķirtā klase un aizņem vismaz 10% pikseļa. Plantācijas, tostarp eļļas palma, ir 10. klasē. Mangrovju meži ir 95. klase un nav uzzīmēti. Produkts aptver zemi, ko redz Sentinel-2, un apraujas aptuveni 82,75° ziemeļu platuma; Antarktīda tajā nav. Tā nav vainagu blīvuma procentu karte un nav ikgadējs seguma zudums.',
   },
   peatlands: {
     title: 'Kūdrāji',

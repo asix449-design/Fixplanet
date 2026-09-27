@@ -190,13 +190,13 @@
     "note": "Log scale of million tonnes. Countries missing either pool stay grey. No legend text in the image."
   },
   {
-    "file": "tree-cover.svg",
-    "title": "Percent tree cover schematic",
-    "source": "Schematic after NASA MODIS MOD44B Vegetation Continuous Fields",
-    "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Continuous percent tree cover. Darker green is a higher cover fraction."
+    "file": "tree-cover.jpg",
+    "title": "Share of ESA WorldCover 2021 class 10, tree cover",
+    "source": "Fix Planet map from ESA WorldCover 10 m 2021 v200. Share of 10 m pixels in class 10 on a 0.02° grid. Mangroves (class 95) are not included. Boundaries: Natural Earth 1:10m.",
+    "url": "https://doi.org/10.5281/zenodo.7254221",
+    "license": "CC BY 4.0 (ESA WorldCover). Contains modified Copernicus Sentinel data (2021). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Colour is the share of each cell in class 10. No legend text in the image."
   },
   {
     "file": "peatlands.jpg",

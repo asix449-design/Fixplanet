@@ -230,27 +230,32 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'tree-cover',
-    preview: 'tree-cover.svg',
-    sourceOrg: 'NASA LP DAAC / MODIS VCF',
-    sourceLabel: 'NASA MODIS MOD44B',
-    sourceUrl: 'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061',
+    preview: 'tree-cover.jpg',
+    detail: 'detail/tree-cover.webp',
+    sourceOrg: 'ESA WorldCover',
+    sourceLabel: 'ESA WorldCover 2021',
+    sourceUrl: 'https://doi.org/10.5281/zenodo.7254221',
     usesCoastline: true,
     sources: [
       cite(
-        'Earthdata — MOD44B Vegetation Continuous Fields v061',
+        'Zanaga et al. 2022 — ESA WorldCover 10 m 2021 v200 (CC BY 4.0)',
+        'https://doi.org/10.5281/zenodo.7254221',
+      ),
+      cite(
+        'ESA WorldCover — data access',
+        'https://esa-worldcover.org/en/data-access',
+      ),
+      cite(
+        'ESA WorldCover — Product User Manual v2.0 (PDF)',
+        'https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/docs/WorldCover_PUM_V2.0.pdf',
+      ),
+      cite(
+        'AWS Open Data — ESA WorldCover',
+        'https://registry.opendata.aws/esa-worldcover/',
+      ),
+      cite(
+        'Earthdata — MOD44B Vegetation Continuous Fields v061 (related dataset)',
         'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061',
-      ),
-      cite(
-        'LP DAAC — MOD44B User Guide (PDF)',
-        'https://lpdaac.usgs.gov/documents/1494/MOD44B_User_Guide_V61.pdf',
-      ),
-      cite(
-        'GLAD — Global Forest Change viewer (optional secondary)',
-        'https://glad.earthengine.app/view/global-forest-change',
-      ),
-      cite(
-        'Hansen / GFC download (optional secondary)',
-        'https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html',
       ),
     ],
   },
