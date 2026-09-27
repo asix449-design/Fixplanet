@@ -172,22 +172,22 @@
     "note": "Zone classes are drawn as distinct colours. No class names are written on the image."
   },
   {
-    "file": "planted-forests.svg",
-    "title": "Planted forests schematic",
-    "source": "Schematic after FAO FRA 2025 and Lesiv et al. 2022",
-    "url": "https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Regular blocks mark planted and plantation stands beside naturally regenerating forest."
+    "file": "planted-forests.jpg",
+    "title": "Share of planted forest and short-rotation plantation, 2015",
+    "source": "Fix Planet map from Lesiv et al. 2022 global forest management, 100 m classes 31 and 32, share on a 0.02° grid. Oil palm (class 40) is not included. Boundaries: Natural Earth 1:10m.",
+    "url": "https://zenodo.org/records/5879022",
+    "license": "CC BY 4.0 (Lesiv et al.). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Colour is the share of each cell. No legend text in the image."
   },
   {
-    "file": "forest-carbon-stock.svg",
-    "title": "Forest carbon stock schematic",
-    "source": "Schematic after FAO FRA 2025 carbon-stock pools",
-    "url": "https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Soil, living biomass, and litter with dead wood. Pool shares follow the FRA 2025 total."
+    "file": "forest-carbon-stock.jpg",
+    "title": "Living-biomass forest carbon, FAO FRA 2025",
+    "source": "Fix Planet map from FAO FRA 2025 country tables. Aboveground plus belowground carbon, 2025, million tonnes. Boundaries: Natural Earth 1:10m.",
+    "url": "https://fra-data.fao.org/",
+    "license": "FAO Forest Resources Assessment country statistics. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Log scale of million tonnes. Countries missing either pool stay grey. No legend text in the image."
   },
   {
     "file": "tree-cover.svg",
@@ -199,12 +199,12 @@
     "note": "Continuous percent tree cover. Darker green is a higher cover fraction."
   },
   {
-    "file": "peatlands.svg",
-    "title": "Peatlands schematic",
-    "source": "Schematic after UNEP Global Peatlands Assessment 2022",
-    "url": "https://www.unep.org/resources/global-peatlands-assessment-2022",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "High-latitude peat belts and tropical peat on organic soils."
+    "file": "peatlands.jpg",
+    "title": "PEATMAP peat extent",
+    "source": "Fix Planet map from PEATMAP (Xu et al. 2018). A 0.02° cell is marked when a peat polygon touches it. Boundaries: Natural Earth 1:10m.",
+    "url": "https://doi.org/10.5518/252",
+    "license": "CC BY 4.0 (Xu et al. / University of Leeds). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Presence only. No legend text in the image. Not the UNEP GPA 2022 status grid."
   }
 ]

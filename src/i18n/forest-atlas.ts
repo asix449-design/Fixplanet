@@ -109,23 +109,23 @@ const en: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'planted-forests': {
     title: 'Planted forests',
-    meta: 'FAO FRA 2025 · ~312 Mha · planted & plantation',
+    meta: 'Lesiv 2015 · planted share · FRA ~312 Mha',
     blurb:
-      'How much of the world’s forest was established by planting, and where mapped forest-management products separate planted stands from naturally regenerating forest.',
-    what: 'FAO’s Global Forest Resources Assessment 2025 reports that planted forests cover about 312 million hectares — roughly 8% of total forest area — and distinguishes plantation forests from other planted forests. For a spatial view, Lesiv et al. (2022) published a global forest-management map at 100 m for 2015 that includes planted forest and short-rotation plantation classes. WRI’s Spatial Database of Planted Trees (SDPT) is an optional secondary layer that separates planted forests from tree crops on monitoring platforms.',
+      'Where the 2015 forest-management map marks planted forest and short-rotation timber plantation, beside the FAO total of about 312 million hectares.',
+    what: 'The plate is the Lesiv et al. (2022) global forest-management raster for 2015, 100 m classes, counted as the share of each 0.02° cell in planted forest (rotation longer than 15 years) or short-rotation timber plantation. Oil palm is a separate class in that raster and is not drawn here. FAO’s Global Forest Resources Assessment 2025 still reports planted forests at about 312 million hectares, roughly 8% of total forest area; that hectare total is a national land-use statistic, not the colour on this plate. WRI’s Spatial Database of Planted Trees remains an optional secondary reference.',
     why: 'Planted area can rise while primary forest falls. A planted stand is not the same ecosystem as an old naturally regenerating forest, so it helps to see planted area alongside primary forest and canopy data.',
     howToRead:
-      'FRA planted-forest area is a land-use statistic from national reports. The Lesiv map is a remote-sensing classification of management classes for 2015 — useful for pattern, not a substitute for the FRA hectare total. Plantation crops such as oil palm are treated separately in that map and should not be added into FAO forest area without checking definitions.',
+      'Colour is the share of the cell in those two planted classes. Empty land is not planted forest in this classification. The pattern is for 2015 and is not a substitute for the FRA hectare total. Do not add the oil-palm class into FAO forest area without checking definitions.',
   },
   'forest-carbon-stock': {
     title: 'Forest carbon stock',
-    meta: 'FAO FRA 2025 · ~714 Gt C · five pools',
+    meta: 'FAO FRA 2025 · living biomass · million tonnes',
     blurb:
-      'How much carbon forests hold across living biomass, dead wood, litter and soil, as reported in FAO’s global forest assessment.',
-    what: 'FAO’s Global Forest Resources Assessment 2025 estimates total forest carbon stock at about 714 gigatonnes of carbon (roughly 172 t C per hectare). About 46% of that stock is in soil, 44% in living biomass, and the rest in litter and dead wood. The FRA report and FAO’s FRA-2025 hub publish the pool tables and regional breakdowns; the newsroom release summarises the headline figure.',
+      'Country totals of living-biomass carbon in 2025 — aboveground plus belowground — from FAO’s forest assessment, beside the five-pool global total.',
+    what: 'The plate is a country choropleth of living-biomass carbon from the FAO Global Forest Resources Assessment 2025 tables: aboveground plus belowground, year 2025, in million tonnes. Countries that did not report both pools stay grey. The same assessment estimates total forest carbon, all five pools, at about 714 gigatonnes (roughly 172 t C per hectare): about 46% in soil, 44% in living biomass, and the rest in litter and dead wood. Soil, litter and dead wood are not drawn, because far fewer countries report them.',
     why: 'A national carbon-stock total answers a different question from a mapped aboveground biomass density in tonnes per hectare. The 714 Gt C figure comes from FAO’s pool-by-pool accounting, which includes soil, litter and dead wood as well as trees.',
     howToRead:
-      'FRA carbon stock is built from country reports under shared pool definitions. It is not the same as satellite aboveground biomass density products, and it is not limited to tree stems — soil is the largest single pool in the 2025 total. The FRA 2025 tables give pool shares and regional totals, which are the right basis for any comparison with map layers.',
+      'The number on the scale is million tonnes of living-biomass carbon in 2025, not tonnes per hectare and not the five-pool total. Grey land has no paired aboveground and belowground report. Soil is the largest pool in the global 714 Gt C figure and is absent from this plate.',
   },
   'tree-cover': {
     title: 'Tree cover',
@@ -139,13 +139,13 @@ const en: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   peatlands: {
     title: 'Peatlands',
-    meta: 'UNEP GPA 2022 · organic soils · carbon-dense wetlands',
+    meta: 'PEATMAP · Xu et al. 2018 · peat extent',
     blurb:
-      'Where waterlogged organic soils store vast amounts of carbon in a small share of the land — peatland extent and status from the global assessment.',
-    what: 'The UNEP Global Peatlands Assessment 2022 (The State of the World’s Peatlands) is the main global status report on peatland extent, condition, carbon and pressures. UNEP’s assessment page and the full report PDF set out the evidence; a short press summary is also available. FAO’s Peatlands programme pages and the Greifswald Mire Centre Global Peatland Database add agency and mapping context.',
+      'Where PEATMAP records peat — a global extent of organic soils, not a carbon-density grid and not a forest-area layer.',
+    what: 'The plate is PEATMAP (Xu et al. 2018, University of Leeds, CC BY 4.0): published peat polygons, drawn wherever a polygon touches a 0.02° cell. The UNEP Global Peatlands Assessment 2022 remains the status report on condition, carbon and pressures; it is not the grid drawn here. FAO’s Peatlands pages and the Greifswald Mire Centre database are further context.',
     why: 'Peatlands cover only a few percent of the land surface but hold a large share of soil carbon. Drained or burned peat releases carbon that forests and climate accounts must treat carefully. FAO’s forest assessment finds that soil is the largest forest carbon pool, and peatlands hold much of that soil carbon.',
     howToRead:
-      'The assessment combines mapped peatland extent with regional status. Not all peatlands are forested, and not all forest soils are peat — peatland figures describe organic-soil ecosystems and their carbon, not forest area. Use UNEP GPA for global status; use national peat maps when the question is a single country.',
+      'A coloured cell is touched by a PEATMAP peat polygon. It is presence, not tonnes of carbon and not forest area. Not all peatlands are forested, and not all forest soils are peat. Use the UNEP assessment for global status and a national peat map when the question is a single country.',
   },
 };
 
@@ -184,19 +184,19 @@ const ru: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'planted-forests': {
     title: 'Посаженные леса',
-    meta: 'FAO FRA 2025 · ~312 млн га · посадки и плантации',
+    meta: 'Lesiv 2015 · доля посаженных · FRA ~312 млн га',
     blurb:
-      'Какая доля мировых лесов создана посадкой и где карты лесоуправления отделяют посаженные насаждения от естественно возобновляющихся лесов.',
+      'Где карта лесоуправления 2015 года отмечает посаженный лес и короткоцикловую древесную плантацию, рядом с оценкой ФАО около 312 млн га.',
     detailShort:
-      'По оценке Глобальной оценки лесных ресурсов ФАО 2025 года (FRA 2025), посаженные леса занимают около 312 млн га — примерно 8% всей лесной площади; в докладе различают плантационные и прочие посаженные леса. Пространственную картину даёт карта лесоуправления Lesiv и соавторы (2022) с разрешением 100 м на 2015 год, где есть классы посаженного леса и короткоцикловых плантаций. Площадь посадок может расти, пока сокращается первичный лес: посаженный древостой — не та же экосистема, что старый естественно возобновляющийся лес.',
+      'Плита — доля пикселей 100 м классов «посаженный лес» (оборот дольше 15 лет) и «короткоцикловая древесная плантация» в ячейке 0,02° по карте Lesiv и соавторы (2022) за 2015 год. Масличная пальма — отдельный класс и в эту долю не входит. По FRA 2025 посаженные леса занимают около 312 млн га, примерно 8% лесной площади: это национальная статистика землепользования, а не цвет на плите. Площадь посадок может расти, пока сокращается первичный лес.',
   },
   'forest-carbon-stock': {
     title: 'Запас углерода в лесах',
-    meta: 'FAO FRA 2025 · ~714 Гт C · пять пулов',
+    meta: 'FAO FRA 2025 · живая биомасса · млн тонн',
     blurb:
-      'Сколько углерода удерживают леса в живой биомассе, мёртвой древесине, подстилке и почве — по данным глобальной оценки лесных ресурсов ФАО.',
+      'Страновые суммы углерода живой биомассы за 2025 год — надземный плюс подземный — по оценке лесов ФАО, рядом с общим итогом по пяти пулам.',
     detailShort:
-      'По FRA 2025 общий запас углерода в лесах составляет около 714 гигатонн углерода (примерно 172 т C/га). Около 46% этого запаса приходится на почву, 44% — на живую биомассу, остальное — на подстилку и мёртвую древесину. Это национальный учёт по пулам, а не карта плотности надземной биомассы в тоннах на гектар: цифра 714 Гт C включает почву, подстилку и мёртвую древесину, а не только деревья.',
+      'Плита — сумма надземного и подземного углерода живой биомассы по странам за 2025 год, в миллионах тонн, по таблицам FRA 2025. Страна без одного из этих двух пулов остаётся серой. Почва, подстилка и мёртвая древесина на рисунок не нанесены. Общий запас по всем пяти пулам — около 714 гигатонн углерода: около 46% в почве и 44% в живой биомассе. Это не карта плотности биомассы в тоннах на гектар.',
   },
   'tree-cover': {
     title: 'Древесный покров',
@@ -208,11 +208,11 @@ const ru: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   peatlands: {
     title: 'Торфяники',
-    meta: 'UNEP GPA 2022 · органические почвы · углеродоёмкие водно-болотные системы',
+    meta: 'PEATMAP · Xu и соавторы, 2018 · распространение торфа',
     blurb:
-      'Где переувлажнённые органические почвы хранят огромные запасы углерода на малой доле суши — площадь и состояние торфяников по глобальной оценке.',
+      'Где PEATMAP отмечает торф — глобальное распространение органических почв, не сетка плотности углерода и не слой площади леса.',
     detailShort:
-      'Глобальная оценка торфяников ЮНЕП 2022 года («Состояние торфяников мира») — главный обзор площади, состояния, углерода и нагрузок на торфяники. Дополняют её страницы программы ФАО по торфяникам и Всемирная база данных торфяников Грайфсвальдского центра болот. Торфяники занимают лишь несколько процентов суши, но удерживают большую долю почвенного углерода; не все торфяники лесные, и не все лесные почвы — торф.',
+      'Плита — PEATMAP (Xu и соавторы, 2018): ячейка 0,02° закрашена, если её касается полигон торфа. Это присутствие торфа, а не тонны углерода и не площадь леса. Глобальная оценка торфяников ЮНЕП 2022 года остаётся обзором состояния, углерода и нагрузок, а не этим рисунком. Не все торфяники лесные, и не все лесные почвы — торф.',
   },
 };
 
@@ -251,19 +251,19 @@ const pl: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'planted-forests': {
     title: 'Lasy sadzone',
-    meta: 'FAO FRA 2025 · ~312 mln ha · nasadzenia i plantacje',
+    meta: 'Lesiv 2015 · udział lasów sadzonych · FRA ~312 mln ha',
     blurb:
-      'Jaką część światowych lasów założono przez sadzenie i gdzie mapy gospodarki leśnej odróżniają drzewostany sadzone od lasów odnawiających się naturalnie.',
+      'Gdzie mapa gospodarki leśnej z 2015 roku oznacza las sadzony i krótkocykliczną plantację drzewną, obok sumy FAO około 312 mln ha.',
     detailShort:
-      'Według Globalnej Oceny Zasobów Leśnych FAO 2025 (FRA 2025) lasy sadzone zajmują około 312 mln ha — mniej więcej 8% całkowitej powierzchni leśnej; raport rozróżnia lasy plantacyjne i inne lasy sadzone. Widok przestrzenny daje mapa gospodarki leśnej Lesiv i współautorzy (2022) w rozdzielczości 100 m dla 2015 roku, z klasami lasu sadzonego i krótkocyklicznych plantacji. Powierzchnia nasadzeń może rosnąć, gdy kurczy się las pierwotny: drzewostan sadzony to nie ten sam ekosystem co stary las odnawiający się naturalnie.',
+      'Płyta to udział pikseli 100 m klas „las sadzony” (okres rotacji dłuższy niż 15 lat) i „krótkocykliczna plantacja drzewna” w komórce 0,02° według mapy Lesiv i współautorzy (2022) za 2015 rok. Palma olejowa to osobna klasa i nie wchodzi do tego udziału. Według FRA 2025 lasy sadzone zajmują około 312 mln ha, mniej więcej 8% powierzchni leśnej: to krajowa statystyka użytkowania ziemi, a nie kolor na płycie. Powierzchnia nasadzeń może rosnąć, gdy kurczy się las pierwotny.',
   },
   'forest-carbon-stock': {
     title: 'Zapas węgla w lasach',
-    meta: 'FAO FRA 2025 · ~714 Gt C · pięć pul',
+    meta: 'FAO FRA 2025 · żywa biomasa · mln ton',
     blurb:
-      'Ile węgla lasy magazynują w żywej biomasie, martwym drewnie, ściółce i glebie — według globalnej oceny zasobów leśnych FAO.',
+      'Krajowe sumy węgla żywej biomasy w 2025 roku — nadziemnej i podziemnej — według oceny lasów FAO, obok globalnej sumy pięciu pul.',
     detailShort:
-      'Według FRA 2025 całkowity zapas węgla w lasach wynosi około 714 gigaton węgla (ok. 172 t C/ha). Około 46% tego zapasu jest w glebie, 44% w żywej biomasie, a reszta w ściółce i martwym drewnie. To krajowa księgowość pul, a nie mapa gęstości biomasy nadziemnej w tonach na hektar: liczba 714 Gt C obejmuje glebę, ściółkę i martwe drewno, a nie tylko drzewa.',
+      'Płyta to suma nadziemnego i podziemnego węgla żywej biomasy według krajów za 2025 rok, w milionach ton, z tabel FRA 2025. Kraj bez jednej z tych dwóch pul zostaje szary. Gleba, ściółka i martwe drewno nie są narysowane. Całkowity zapas we wszystkich pięciu pulach to około 714 gigaton węgla: około 46% w glebie i 44% w żywej biomasie. To nie jest mapa gęstości biomasy w tonach na hektar.',
   },
   'tree-cover': {
     title: 'Pokrycie drzewami',
@@ -275,11 +275,11 @@ const pl: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   peatlands: {
     title: 'Torfowiska',
-    meta: 'UNEP GPA 2022 · gleby organiczne · węglowe mokradła',
+    meta: 'PEATMAP · Xu i współautorzy, 2018 · zasięg torfu',
     blurb:
-      'Gdzie podmokłe gleby organiczne magazynują ogromne ilości węgla na małym ułamku lądu — zasięg i stan torfowisk według globalnej oceny.',
+      'Gdzie PEATMAP zapisuje torf — globalny zasięg gleb organicznych, nie siatka gęstości węgla i nie warstwa powierzchni lasu.',
     detailShort:
-      'Globalna Ocena Torfowisk UNEP 2022 („Stan torfowisk świata”) to główny przegląd zasięgu, stanu, węgla i presji na torfowiska. Uzupełniają ją strony programu FAO ds. torfowisk oraz Światowa baza torfowisk Centrum Greifswald. Torfowiska zajmują tylko kilka procent lądu, ale trzymają dużą część węgla glebowego; nie wszystkie torfowiska są leśne i nie wszystkie gleby leśne to torf.',
+      'Płyta to PEATMAP (Xu i współautorzy, 2018): komórka 0,02° jest zamalowana, gdy dotyka jej poligon torfu. To obecność torfu, a nie tony węgla i nie powierzchnia lasu. Globalna Ocena Torfowisk UNEP 2022 zostaje przeglądem stanu, węgla i presji, a nie tym rysunkiem. Nie wszystkie torfowiska są leśne i nie wszystkie gleby leśne to torf.',
   },
 };
 
@@ -318,19 +318,19 @@ const lv: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'planted-forests': {
     title: 'Stādītie meži',
-    meta: 'FAO FRA 2025 · ~312 milj. ha · stādījumi un plantācijas',
+    meta: 'Lesiv 2015 · stādīto daļa · FRA ~312 milj. ha',
     blurb:
-      'Cik liela daļa pasaules mežu izveidota, stādot, un kur meža apsaimniekošanas kartes atdala stādītas audzes no dabiski atjaunojošiem mežiem.',
+      'Kur 2015. gada meža apsaimniekošanas karte atzīmē stādītu mežu un īscikla koksnes plantāciju, līdzās FAO kopsummai aptuveni 312 milj. ha.',
     detailShort:
-      'Pēc FAO Globālā meža resursu novērtējuma 2025 (FRA 2025) stādītie meži aizņem aptuveni 312 milj. ha — apmēram 8% no kopējās meža platības; ziņojumā nošķir plantāciju mežus un citus stādītos mežus. Telpisku skatu dod Lesiv un līdzautori (2022) meža apsaimniekošanas karte ar 100 m izšķirtspēju 2015. gadam, kurā ir stādīta meža un īscikla plantāciju klases. Stādījumu platība var pieaugt, kamēr sarūk pirmreizējais mežs: stādīta audze nav tā pati ekosistēma, kas vecs dabiski atjaunojošs mežs.',
+      'Plate ir 100 m pikseļu daļa klasēs «stādīts mežs» (rotācijas periods ilgāks par 15 gadiem) un «īscikla koksnes plantācija» 0,02° šūnā pēc Lesiv un līdzautoru (2022) kartes 2015. gadam. Eļļas palma ir atsevišķa klase un šajā daļā nav. Pēc FRA 2025 stādītie meži aizņem aptuveni 312 milj. ha, apmēram 8% meža platības: tā ir valstu zemes lietojuma statistika, nevis krāsa uz plates. Stādījumu platība var pieaugt, kamēr sarūk pirmreizējais mežs.',
   },
   'forest-carbon-stock': {
     title: 'Meža oglekļa krājums',
-    meta: 'FAO FRA 2025 · ~714 Gt C · pieci baseini',
+    meta: 'FAO FRA 2025 · dzīvā biomasa · milj. tonnu',
     blurb:
-      'Cik daudz oglekļa meži uzkrāj dzīvajā biomasā, mirušajā koksnē, nobirās un augsnē — pēc FAO globālā meža resursu novērtējuma.',
+      'Valstu dzīvās biomasas oglekļa summas 2025. gadā — virszemes plus pazemes — pēc FAO meža novērtējuma, līdzās piecu baseinu kopsummai.',
     detailShort:
-      'Pēc FRA 2025 kopējais meža oglekļa krājums ir aptuveni 714 gigatonnas oglekļa (apmēram 172 t C/ha). Aptuveni 46% no šā krājuma ir augsnē, 44% — dzīvajā biomasā, pārējais — nobirās un mirušajā koksnē. Tā ir valstu uzskaite pa baseiniem, nevis virszemes biomasas blīvuma karte tonnās uz hektāru: skaitlis 714 Gt C ietver augsni, nobiras un mirušo koksni, nevis tikai kokus.',
+      'Plate ir virszemes un pazemes dzīvās biomasas oglekļa summa pa valstīm 2025. gadā, miljonos tonnu, no FRA 2025 tabulām. Valsts bez viena no šiem diviem baseiniem paliek pelēka. Augsne, nobiras un mirusī koksne nav uzzīmētas. Kopējais krājums visos piecos baseinos ir aptuveni 714 gigatonnas oglekļa: aptuveni 46% augsnē un 44% dzīvajā biomasā. Tā nav biomasas blīvuma karte tonnās uz hektāru.',
   },
   'tree-cover': {
     title: 'Koku segums',
@@ -342,11 +342,11 @@ const lv: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   peatlands: {
     title: 'Kūdrāji',
-    meta: 'UNEP GPA 2022 · organiskās augsnes · oglekļa bagāti mitrāji',
+    meta: 'PEATMAP · Xu un līdzautori, 2018 · kūdras izplatība',
     blurb:
-      'Kur pārmitrās organiskās augsnes uzkrāj milzīgu oglekļa daudzumu nelielā sauszemes daļā — kūdrāju izplatība un stāvoklis pēc globālā novērtējuma.',
+      'Kur PEATMAP atzīmē kūdru — organisko augšņu globālā izplatība, ne oglekļa blīvuma režģis un ne meža platības slānis.',
     detailShort:
-      'UNEP Globālais kūdrāju novērtējums 2022 («Pasaules kūdrāju stāvoklis») ir galvenais pārskats par kūdrāju platību, stāvokli, oglekli un slodzēm. To papildina FAO kūdrāju programmas lapas un Greifswald purvu centra pasaules kūdrāju datubāze. Kūdrāji aizņem tikai dažus procentus sauszemes, bet uzkrāj lielu daļu augsnes oglekļa; ne visi kūdrāji ir mežaini, un ne visas meža augsnes ir kūdra.',
+      'Plate ir PEATMAP (Xu un līdzautori, 2018): 0,02° šūna ir iekrāsota, ja tai pieskaras kūdras poligons. Tā ir kūdras klātbūtne, ne oglekļa tonnas un ne meža platība. UNEP Globālais kūdrāju novērtējums 2022 paliek stāvokļa, oglekļa un slodžu pārskats, nevis šis zīmējums. Ne visi kūdrāji ir mežaini, un ne visas meža augsnes ir kūdra.',
   },
 };
 

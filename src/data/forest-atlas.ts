@@ -156,10 +156,11 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'planted-forests',
-    preview: 'planted-forests.svg',
-    sourceOrg: 'FAO / Lesiv et al.',
-    sourceLabel: 'FAO FRA 2025 / Lesiv 2022',
-    sourceUrl: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+    preview: 'planted-forests.jpg',
+    detail: 'detail/planted-forests.webp',
+    sourceOrg: 'Lesiv et al.',
+    sourceLabel: 'Lesiv 2022',
+    sourceUrl: 'https://www.nature.com/articles/s41597-022-01332-3',
     usesCoastline: true,
     sources: [
       cite(
@@ -183,6 +184,10 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
         'https://www.nature.com/articles/s41597-022-01332-3',
       ),
       cite(
+        'Zenodo — Lesiv et al. 2022 forest-management raster (CC BY 4.0)',
+        'https://zenodo.org/records/5879022',
+      ),
+      cite(
         'WRI — Spatial Database of Planted Trees (SDPT) PDF (optional secondary)',
         'https://files.wri.org/s3fs-public/spatial-database-planted-trees.pdf',
       ),
@@ -190,7 +195,8 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'forest-carbon-stock',
-    preview: 'forest-carbon-stock.svg',
+    preview: 'forest-carbon-stock.jpg',
+    detail: 'detail/forest-carbon-stock.webp',
     sourceOrg: 'FAO FRA',
     sourceLabel: 'FAO FRA 2025',
     sourceUrl: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
@@ -211,6 +217,10 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
       cite(
         'FAO newsroom — FRA 2025 release (714 Gt C)',
         'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+      ),
+      cite(
+        'FAO — FRA Platform (country carbon tables)',
+        'https://fra-data.fao.org/',
       ),
       cite(
         'FAO — Forest Resources Assessment home',
@@ -246,12 +256,21 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'peatlands',
-    preview: 'peatlands.svg',
-    sourceOrg: 'UNEP / Global Peatlands Initiative',
-    sourceLabel: 'UNEP GPA 2022',
-    sourceUrl: 'https://www.unep.org/resources/global-peatlands-assessment-2022',
+    preview: 'peatlands.jpg',
+    detail: 'detail/peatlands.webp',
+    sourceOrg: 'Xu et al. / University of Leeds',
+    sourceLabel: 'PEATMAP',
+    sourceUrl: 'https://doi.org/10.5518/252',
     usesCoastline: true,
     sources: [
+      cite(
+        'PEATMAP — Xu et al. 2018 (University of Leeds, CC BY 4.0)',
+        'https://doi.org/10.5518/252',
+      ),
+      cite(
+        'Xu et al. 2018 — Catena (PEATMAP paper)',
+        'https://doi.org/10.1016/j.catena.2017.09.010',
+      ),
       cite(
         'UNEP — Global Peatlands Assessment 2022',
         'https://www.unep.org/resources/global-peatlands-assessment-2022',
