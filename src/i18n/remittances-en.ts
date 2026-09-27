@@ -1,0 +1,145 @@
+import type { RemittanceCopy } from './remittances';
+
+export const enRemittances: RemittanceCopy = {
+  layer: 'Remittances',
+  title: 'Remittances',
+  cards: {
+    'remittances-global-flows': {
+      tag: 'Flows · Low and middle income',
+      title: 'Remittances to developing countries',
+      hook: 'Low- and middle-income countries received an estimated $656 billion in officially recorded remittances in 2023, and World Bank authors put the 2024 total near $685 billion — still larger than foreign direct investment and official development assistance combined.',
+      figure: '656',
+      unit: 'billion US dollars, 2023',
+      rows: [
+        { label: '2023', figure: '$656 billion (+0.7%)' },
+        { label: '2024 estimate', figure: 'about $685 billion (+5.8%)' },
+      ],
+      sections: [
+        {
+          heading: 'What the number is',
+          body: 'Officially recorded money migrants send home to low- and middle-income countries. The World Bank’s Migration and Development Brief 40 (June 2024) puts the 2023 total at about $656 billion (+0.7% after the strong post-pandemic years). An 18 December 2024 PeopleMove update by the same research team estimates about $685 billion for 2024 (+5.8%). Informal channels mean the true total is larger.',
+        },
+        {
+          heading: 'Why it matters',
+          body: 'For many countries these flows are the largest stable source of external finance — often bigger than foreign direct investment or aid. They support household consumption, education, health, and current-account buffers when other capital flows swing.',
+        },
+        {
+          heading: 'How to read it',
+          body: 'These are estimates of the money sent during each calendar year. Regional growth is uneven; Brief 40 and the December 2024 update publish the regional tables behind the headline.',
+        },
+      ],
+      plate: 'The bars are the low- and middle-income total for 2017–2023 from Migration and Development Brief 40, in billions of US dollars. The 2023 bar is 656. The 2024 estimate of about $685 billion in the text is a later update and is not a bar on this chart.',
+    },
+    'remittances-top-recipients': {
+      tag: 'Recipients · 2024 estimates',
+      title: 'Where remittances arrive',
+      hook: 'Five countries were expected to receive the largest remittance inflows in 2024: India ~$129B, Mexico ~$68B, China ~$48B, the Philippines ~$40B, and Pakistan ~$33B.',
+      figure: '138',
+      unit: 'billion US dollars, India on the 2024 map',
+      rows: [
+        { label: 'India, 2024 estimate', figure: '~$129 billion' },
+        { label: 'Mexico, 2024 estimate', figure: '~$68 billion' },
+        { label: 'China, 2024 estimate', figure: '~$48 billion' },
+        { label: 'Philippines, 2024 estimate', figure: '~$40 billion' },
+        { label: 'Pakistan, 2024 estimate', figure: '~$33 billion' },
+      ],
+      sections: [
+        {
+          heading: 'What the list is',
+          body: 'Estimated 2024 inflows in US dollars to the largest receiving countries among low- and middle-income economies, from the World Bank PeopleMove update of 18 December 2024. Brief 40’s 2023 ranking was the same five names in the same order (India $120B · Mexico $66B · China $50B · Philippines $39B · Pakistan $27B).',
+        },
+        {
+          heading: 'Why it matters',
+          body: 'Large absolute receipts shape national foreign-exchange markets and household incomes in the biggest origin–destination systems — especially India–Gulf/OECD, Mexico–United States, and the Philippines’ long-standing overseas-worker corridors.',
+        },
+        {
+          heading: 'How to read it',
+          body: 'Ranking by dollar volume shows where the most money arrives; dependence on remittances is measured as a share of GDP. China can rank high in dollars while remittances are a small share of its GDP; a small island economy can sit far down this list and still be highly dependent.',
+        },
+      ],
+      plate: 'The map is not that list. It shows personal remittances received, in current US dollars, from the World Bank’s World Development Indicators for 2024, the latest year with a broad set of economies (160). On the map the largest amounts are India (about $138 billion), Mexico (about $68 billion), the Philippines (about $40 billion), France (about $39 billion), and Pakistan (about $35 billion). China is about $25 billion. High-income countries are included. Land without a 2024 figure stays grey. These totals follow balance-of-payments rules and are not the estimates in the list above.',
+    },
+    'remittances-gdp-share': {
+      tag: 'Dependence · 2024 estimates',
+      title: 'Remittances as a share of GDP',
+      hook: 'In smaller economies remittances can dwarf other finance: Tajikistan ~45% of GDP, Tonga ~38%, then Nicaragua, Lebanon, and Samoa around 26–27% in the 2024 estimates.',
+      figure: '47',
+      unit: 'percent of GDP, Tajikistan on the 2024 map',
+      rows: [
+        { label: 'Tajikistan, 2024 estimate', figure: '~45% of GDP' },
+        { label: 'Tonga, 2024 estimate', figure: '~38% of GDP' },
+        { label: 'Nicaragua, Lebanon, and Samoa, 2024 estimates', figure: 'about 26–27% of GDP' },
+      ],
+      sections: [
+        {
+          heading: 'What the list is',
+          body: 'Estimated remittance inflows as a percentage of GDP for the most dependent countries in the 2024 PeopleMove update. Brief 40’s 2023 dependence list was similar in spirit (Tonga 41% · Tajikistan 39% · Lebanon 31% · Samoa 28% · Nicaragua 27%).',
+        },
+        {
+          heading: 'Why it matters',
+          body: 'Where remittances are a double-digit share of GDP they finance current-account gaps, household consumption, and often fiscal stability more than foreign direct investment or aid. Shocks to host-country labour markets or to corridors then transmit quickly into domestic demand.',
+        },
+        {
+          heading: 'How to read it',
+          body: 'Share of GDP answers a different question from absolute US$ volume. India can lead the world in dollars and still show a modest GDP share; Tonga or Tajikistan can sit outside the top five by dollar volume and still be among the most remittance-dependent economies on Earth.',
+        },
+      ],
+      plate: 'The map is not that list. It shows personal remittances received as a percentage of GDP from the World Bank’s World Development Indicators for 2024 (160 economies). The highest shares on the map are Tajikistan (about 47%), Tonga (about 39%), Nicaragua (about 27%), Nepal (about 26%), and Honduras (about 26%). Samoa is about 24%. Lebanon has no 2024 figure, so it stays grey. India is about 3.7% of GDP on this map. These shares are not the estimates in the list above.',
+    },
+    'remittances-sending-cost': {
+      tag: 'Prices · RPW',
+      title: 'Cost of sending money home',
+      hook: 'Sending remittances still costs about 6.4% of the amount on a global average — more than double the Sustainable Development Goal (SDG) target of 3% — and the World Bank’s Remittance Prices Worldwide website, updated 18 August 2025, shows about 6.36%.',
+      figure: '6.4',
+      unit: 'percent, global average, late 2023',
+      rows: [
+        { label: 'Global average, fourth quarter 2023', figure: '6.4%' },
+        { label: 'Remittance Prices Worldwide, 18 August 2025', figure: 'about 6.36%' },
+        { label: 'Sustainable Development Goal target', figure: '3%' },
+      ],
+      sections: [
+        {
+          heading: 'What the number is',
+          body: 'The World Bank Remittance Prices Worldwide (RPW) database tracks the cost of sending a typical small transfer (often benchmarked at $200) across hundreds of country corridors. Brief 40 reported a global average of 6.4% in the fourth quarter of 2023 (up from 6.2% a year earlier). The RPW website, last updated 18 August 2025, highlights a global average near 6.36% across 367 corridors (48 sending / 105 receiving countries).',
+        },
+        {
+          heading: 'Why it matters',
+          body: 'Every percentage point of fee is money that does not reach households. Digital channels are usually cheaper than non-digital ones; Sub-Saharan corridors have often been among the most expensive. The SDG 10 target is to bring the global average to 3% by 2030 — current averages remain well above that line.',
+        },
+        {
+          heading: 'How to read it',
+          body: 'A global average hides corridor extremes: some corridors cost several times the average. RPW measures the price of a transfer; on the RPW website readers can compare costs corridor by corridor.',
+        },
+      ],
+      plate: 'The map is not that global average. It shows the average cost of sending remittances to each country, as a percentage of the amount, from the World Bank’s World Development Indicators for 2023, the latest year in that series (92 countries with a positive figure). There is no world total in this series. The highest costs on the map include Cuba (about 20%), Angola (about 13%), and Sierra Leone (about 10%). Land without a positive 2023 figure stays grey. The global averages in the text are from Remittance Prices Worldwide and Brief 40, not from this map.',
+    },
+    'remittances-wdi-series': {
+      tag: 'Data · WDI',
+      title: 'Personal remittances in World Development Indicators',
+      hook: 'After the World Bank’s KNOMAD series of Migration and Development Briefs ended in 2024, its World Development Indicators continue to publish country time series for personal remittances received and paid in US dollars, and for remittances received as a share of GDP.',
+      figure: '857',
+      unit: 'billion US dollars received, world, 2024',
+      rows: [
+        { label: 'Received, world, 2024', figure: 'about $857 billion' },
+        { label: 'Paid, world, 2024', figure: 'about $619 billion' },
+        { label: 'Received line', figure: '1970–2024' },
+        { label: 'Paid line', figure: '1966–2024' },
+      ],
+      sections: [
+        {
+          heading: 'What it is',
+          body: 'Three World Development Indicators series: personal remittances received (current US$), personal remittances received (% of GDP), and personal remittances paid (current US$). Readers can explore them country by country on the World Bank’s open-data indicator pages and in the World Development Indicators database on DataBank, which keep updating after the Migration and Development Brief series closed.',
+        },
+        {
+          heading: 'Why it matters',
+          body: 'Readers who want long country time series alongside the latest global headline need a series that keeps updating. WDI remains the World Bank’s standard country table for personal remittances.',
+        },
+        {
+          heading: 'How to read it',
+          body: 'WDI personal remittances follow balance-of-payments rules, so annual totals can differ from the World Bank’s headline estimate of flows to low- and middle-income countries. Each indicator page offers country charts, a world map and downloadable data.',
+        },
+      ],
+      plate: 'The lines are world totals of personal remittances from the World Bank’s World Development Indicators, in billions of current US dollars. The orange line is money received, 1970–2024, ending near $857 billion. The blue line is money paid, 1966–2024, ending near $619 billion. 2024 is the latest year with a broad set of economies. A partial 2025 is not drawn. These world totals are not the low- and middle-income estimate on the flows card.',
+    },
+  },
+};

@@ -93,3 +93,4 @@ export {
   getMigrationPage,
   migrationShelfKeys,
 } from './migration';
+export { getRemittance, getRemittances } from './remittances';
