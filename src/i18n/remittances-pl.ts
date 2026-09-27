@@ -16,10 +16,20 @@ export const plRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'To roczny przepływ pieniędzy wysyłanych przez migrantów do krajów o niskim i średnim dochodzie. Według raportu Banku Światowego Migration and Development Brief 40 („Migracja i rozwój”, nr 40; czerwiec 2024) w 2023 r. było to 656 mld USD (+0,7%). Według aktualizacji na blogu Banku Światowego PeopleMove z 18 grudnia 2024 r. — około 685 mld USD w 2024 r. (+5,8%). Ze względu na kanały nieformalne rzeczywista suma jest większa.',
+          heading: 'Czym jest ta liczba',
+          body: 'Pieniądze wysyłane przez migrantów do domu, do krajów o niskim i średnim dochodzie, odnotowane w oficjalnych statystykach. Według raportu Banku Światowego Migration and Development Brief 40 („Migracja i rozwój”, nr 40; czerwiec 2024 r.) w 2023 r. było to około 656 mld USD (+0,7% po silnych latach odbicia po pandemii). Aktualizacja tego samego zespołu badawczego na blogu PeopleMove z 18 grudnia 2024 r. szacuje sumę za 2024 r. na około 685 mld USD (+5,8%). Ze względu na kanały nieformalne rzeczywista suma jest większa.',
+        },
+        {
+          heading: 'Dlaczego to ważne',
+          body: 'Dla wielu krajów te przepływy są największym stabilnym źródłem finansowania zewnętrznego — często większym niż bezpośrednie inwestycje zagraniczne czy pomoc. Wspierają konsumpcję gospodarstw domowych, edukację i zdrowie, a gdy inne przepływy kapitału się wahają, stanowią bufor dla rachunku obrotów bieżących.',
+        },
+        {
+          heading: 'Jak to czytać',
+          body: 'To szacunki pieniędzy wysłanych w każdym roku kalendarzowym. Wzrost w poszczególnych regionach jest nierówny; tabele regionalne, na których opiera się łączna liczba, publikują raport Brief 40 i aktualizacja z grudnia 2024 r.',
         },
       ],
-      plate: 'Słupki to suma dla krajów o niskim i średnim dochodzie za lata 2017–2023 z raportu Migration and Development Brief 40 („Migracja i rozwój”, nr 40), w miliardach USD. Słupek za 2023 r. to 656. Szacunek na 2024 r. około 685 mld USD w tekście jest późniejszą aktualizacją i nie ma osobnego słupka.',
+      plate:
+        'Wykres: przekazy pieniężne do krajów o niskim i średnim dochodzie, 2017–2023, Bank Światowy, „Migracja i rozwój”, nr 40 (Migration and Development Brief 40). Liczba to miliardy USD.',
     },
     'remittances-top-recipients': {
       tag: 'Odbiorcy · szacunek na 2024',
@@ -36,10 +46,20 @@ export const plRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'Szacunki wolumenu na 2024 r. (blog Banku Światowego PeopleMove, 18 grudnia 2024 r.). W raporcie Brief 40 za 2023 r. jest tych samych pięć krajów w tej samej kolejności. Duże wpływy w dolarach i wysoki udział w PKB to dwie różne miary.',
+          heading: 'Czym jest ta lista',
+          body: 'Szacowane wpływy w 2024 r., w dolarach amerykańskich, do największych krajów odbiorców wśród gospodarek o niskim i średnim dochodzie, według aktualizacji Banku Światowego na blogu PeopleMove z 18 grudnia 2024 r. W rankingu raportu Brief 40 za 2023 r. było tych samych pięć krajów w tej samej kolejności (Indie 120 mld USD · Meksyk 66 mld USD · Chiny 50 mld USD · Filipiny 39 mld USD · Pakistan 27 mld USD).',
+        },
+        {
+          heading: 'Dlaczego to ważne',
+          body: 'Duże kwoty wpływów kształtują krajowe rynki walutowe i dochody gospodarstw domowych w największych układach kraj pochodzenia – kraj docelowy: zwłaszcza Indie – państwa Zatoki Perskiej i OECD, Meksyk – Stany Zjednoczone oraz długoletnie korytarze filipińskich pracowników za granicą.',
+        },
+        {
+          heading: 'Jak to czytać',
+          body: 'Ranking według kwoty w dolarach pokazuje, dokąd trafia najwięcej pieniędzy; zależność od przekazów mierzy się udziałem w PKB. Chiny mogą zajmować wysokie miejsce pod względem dolarów, choć przekazy stanowią niewielką część ich PKB; mała gospodarka wyspiarska może być daleko w dole listy i mimo to silnie zależeć od przekazów.',
         },
       ],
-      plate: 'Mapa nie jest tą listą. Pokazuje przekazy osobiste otrzymane, w bieżących USD, z bazy Banku Światowego „Wskaźniki rozwoju świata” za 2024 r. — ostatni rok z szerokim zestawem gospodarek (160). Największe kwoty na mapie: Indie (około 138 mld USD), Meksyk (około 68 mld), Filipiny (około 40 mld), Francja (około 39 mld) i Pakistan (około 35 mld). Chiny — około 25 mld. Uwzględnione są też kraje o wysokim dochodzie. Ląd bez liczby za 2024 r. zostaje szary. Te sumy liczone są według zasad bilansu płatniczego i nie są szacunkami z listy powyżej.',
+      plate:
+        'Mapa: przekazy osobiste otrzymane, 2024, Bank Światowy, World Development Indicators („Wskaźniki rozwoju świata”). Liczby te są liczone według definicji bilansu płatniczego i różnią się od szacunków na liście.',
     },
     'remittances-gdp-share': {
       tag: 'Zależność · szacunek na 2024',
@@ -54,10 +74,20 @@ export const plRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'Udział w PKB i łączna kwota w USD odpowiadają na różne pytania. Indie mogą prowadzić pod względem kwoty w dolarach przy skromnym udziale w PKB; Tonga lub Tadżykistan mogą być poza top 5 pod względem dolarów i nadal należeć do gospodarek najbardziej zależnych od przekazów.',
+          heading: 'Czym jest ta lista',
+          body: 'Szacowane wpływy z przekazów jako procent PKB dla krajów najbardziej od nich zależnych, według aktualizacji PeopleMove za 2024 r. Lista raportu Brief 40 za 2023 r. była podobna (Tonga 41% · Tadżykistan 39% · Liban 31% · Samoa 28% · Nikaragua 27%).',
+        },
+        {
+          heading: 'Dlaczego to ważne',
+          body: 'Tam, gdzie przekazy stanowią dwucyfrowy odsetek PKB, finansują deficyt na rachunku obrotów bieżących, konsumpcję gospodarstw domowych, a często także stabilność finansów publicznych — w większym stopniu niż bezpośrednie inwestycje zagraniczne czy pomoc. Wstrząsy na rynkach pracy krajów przyjmujących lub w korytarzach przekazów szybko przenoszą się wtedy na popyt wewnętrzny.',
+        },
+        {
+          heading: 'Jak to czytać',
+          body: 'Udział w PKB i łączna kwota w USD odpowiadają na różne pytania. Indie mogą prowadzić na świecie pod względem dolarów przy skromnym udziale w PKB; Tonga czy Tadżykistan mogą być poza pierwszą piątką pod względem kwoty w dolarach i nadal należeć do gospodarek na Ziemi najbardziej zależnych od przekazów.',
         },
       ],
-      plate: 'Mapa nie jest tą listą. Pokazuje przekazy osobiste otrzymane jako udział w PKB z bazy Banku Światowego „Wskaźniki rozwoju świata” za 2024 r. (160 gospodarek). Najwyższe udziały na mapie: Tadżykistan (około 47%), Tonga (około 39%), Nikaragua (około 27%), Nepal (około 26%) i Honduras (około 26%). Samoa — około 24%. Liban nie ma liczby za 2024 r., więc zostaje szary. Indie na tej mapie to około 3,7% PKB. Te udziały nie są szacunkami z listy powyżej.',
+      plate:
+        'Mapa: przekazy osobiste otrzymane jako udział w PKB, 2024, Bank Światowy, World Development Indicators („Wskaźniki rozwoju świata”). Liczby te są liczone według definicji bilansu płatniczego i różnią się od szacunków na liście.',
     },
     'remittances-sending-cost': {
       tag: 'Ceny · RPW',
@@ -72,10 +102,20 @@ export const plRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'RPW śledzi cenę typowego małego przekazu (często 200 USD) w setkach korytarzy. Według raportu Brief 40 w IV kwartale 2023 r.: 6,4%. Serwis RPW, zaktualizowany 18 sierpnia 2025 r.: około 6,36% w 367 korytarzach. Kanały cyfrowe są zwykle tańsze; cel nr 10 Celów Zrównoważonego Rozwoju zakłada 3% do 2030 r.',
+          heading: 'Czym jest ta liczba',
+          body: 'Baza danych Banku Światowego Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”, RPW) śledzi koszt wysłania typowego małego przekazu (często przyjmuje się kwotę wzorcową 200 USD) w setkach korytarzy między krajami. Raport Brief 40 podał średnią światową 6,4% w IV kwartale 2023 r. (wobec 6,2% rok wcześniej). Serwis RPW, ostatnio zaktualizowany 18 sierpnia 2025 r., podaje średnią światową około 6,36% w 367 korytarzach (48 krajów wysyłających i 105 odbierających).',
+        },
+        {
+          heading: 'Dlaczego to ważne',
+          body: 'Każdy punkt procentowy opłaty zmniejsza kwotę, która trafia do rodzin. Kanały cyfrowe są zwykle tańsze od niecyfrowych; korytarze do Afryki Subsaharyjskiej często należały do najdroższych. Cel nr 10 Celów Zrównoważonego Rozwoju zakłada obniżenie średniej światowej do 3% do 2030 r.; obecne średnie pozostają wyraźnie powyżej tego poziomu.',
+        },
+        {
+          heading: 'Jak to czytać',
+          body: 'Średnia światowa ukrywa skrajności poszczególnych korytarzy: w niektórych przekaz kosztuje kilka razy więcej niż średnio. RPW mierzy cenę przekazu; w serwisie RPW można porównać koszty korytarz po korytarzu.',
         },
       ],
-      plate: 'Mapa nie jest tą średnią światową. Pokazuje średni koszt wysłania przekazu do danego kraju, jako procent kwoty, z bazy Banku Światowego „Wskaźniki rozwoju świata” za 2023 r. — ostatni rok tego szeregu (92 kraje z dodatnią liczbą). W tym szeregu nie ma sumy światowej. Wśród najwyższych kosztów na mapie są Kuba (około 20%), Angola (około 13%) i Sierra Leone (około 10%). Ląd bez dodatniej liczby za 2023 r. zostaje szary. Średnie światowe w tekście pochodzą z serwisu „Ceny przekazów pieniężnych na świecie” i z raportu Brief 40, a nie z tej mapy.',
+      plate:
+        'Mapa: średni koszt wysłania przekazów pieniężnych do kraju, 2023, Bank Światowy, World Development Indicators („Wskaźniki rozwoju świata”). Liczby te różnią się od średnich światowych w tekście.',
     },
     'remittances-wdi-series': {
       tag: 'Dane · WDI',
@@ -91,10 +131,20 @@ export const plRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'Trzy szeregi WDI — przekazy osobiste otrzymane (w bieżących USD), otrzymane (% PKB) i wysłane (w bieżących USD) — są aktualizowane także po zakończeniu serii Migration and Development Brief. Przekazy osobiste w WDI liczone są według zasad bilansu płatniczego, więc roczne sumy mogą różnić się od szacunku Banku Światowego dla przepływów do krajów o niskim i średnim dochodzie. Strony wskaźników w serwisie otwartych danych Banku Światowego oferują wykresy dla krajów, mapę świata i dane do pobrania.',
+          heading: 'Czym to jest',
+          body: 'Trzy szeregi World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane (w bieżących USD), przekazy osobiste otrzymane (% PKB) i przekazy osobiste wysłane (w bieżących USD). Można je przeglądać kraj po kraju na stronach wskaźników w serwisie otwartych danych Banku Światowego oraz w bazie World Development Indicators na platformie DataBank; dane są aktualizowane także po zakończeniu serii Migration and Development Brief.',
+        },
+        {
+          heading: 'Dlaczego to ważne',
+          body: 'Czytelnicy, którzy obok najnowszej liczby światowej chcą mieć długie krajowe szeregi czasowe, potrzebują szeregu, który jest wciąż aktualizowany. WDI pozostaje standardową tabelą krajową Banku Światowego dla przekazów osobistych.',
+        },
+        {
+          heading: 'Jak to czytać',
+          body: 'Przekazy osobiste w WDI liczone są według zasad bilansu płatniczego, więc roczne sumy mogą różnić się od głównego szacunku Banku Światowego dla przepływów do krajów o niskim i średnim dochodzie. Strona każdego wskaźnika oferuje wykresy dla krajów, mapę świata i dane do pobrania.',
         },
       ],
-      plate: 'Linie to sumy światowe przekazów osobistych z bazy Banku Światowego „Wskaźniki rozwoju świata”, w miliardach bieżących USD. Pomarańczowa linia to przekazy otrzymane, 1970–2024, na końcu około 857 mld USD. Niebieska linia to przekazy wysłane, 1966–2024, na końcu około 619 mld USD. 2024 jest ostatnim rokiem z szerokim zestawem gospodarek. Niepełny 2025 nie jest narysowany. Te sumy światowe nie są szacunkiem dla krajów o niskim i średnim dochodzie na karcie przepływów.',
+      plate:
+        'Wykres: sumy światowe przekazów osobistych otrzymanych, 1970–2024, i wysłanych, 1966–2024, Bank Światowy, World Development Indicators („Wskaźniki rozwoju świata”). Liczby te są liczone według definicji bilansu płatniczego.',
     },
   },
 };

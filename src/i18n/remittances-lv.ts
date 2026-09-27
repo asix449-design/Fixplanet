@@ -16,10 +16,20 @@ export const lvRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'Tā ir gada naudas plūsma, ko migranti sūta mājās uz zemu un vidēju ienākumu valstīm. Pasaules Bankas ziņojumā Migration and Development Brief 40 („Migrācija un attīstība”, 40. izdevums; 2024. gada jūnijs): 656 mljrd. USD 2023. gadā (+0,7%). Pasaules Bankas emuāra PeopleMove atjauninājumā 2024. gada 18. decembrī: ap 685 mljrd. USD 2024. gadā (+5,8%). Neformālo kanālu dēļ patiesā summa ir lielāka.',
+          heading: 'Kas ir šis skaitlis',
+          body: 'Oficiāli uzskaitītā nauda, ko migranti sūta mājās uz zemu un vidēju ienākumu valstīm. Pasaules Bankas ziņojumā Migration and Development Brief 40 („Migrācija un attīstība”, 40. izdevums; 2024. gada jūnijs) 2023. gada kopsumma ir aptuveni 656 mljrd. USD (+0,7% pēc spēcīgajiem pēcpandēmijas gadiem). Tās pašas pētnieku komandas atjauninājumā emuārā PeopleMove 2024. gada 18. decembrī 2024. gadam novērtēti aptuveni 685 mljrd. USD (+5,8%). Neformālo kanālu dēļ patiesā summa ir lielāka.',
+        },
+        {
+          heading: 'Kāpēc tas ir svarīgi',
+          body: 'Daudzām valstīm šīs plūsmas ir lielākais stabilais ārējā finansējuma avots — bieži lielāks par ārvalstu tiešajām investīcijām vai palīdzību. Tās uztur mājsaimniecību patēriņu, izglītību un veselību, un, kad citas kapitāla plūsmas svārstās, tās kalpo kā rezerve maksājumu bilances tekošajam kontam.',
+        },
+        {
+          heading: 'Kā to lasīt',
+          body: 'Tie ir novērtējumi par katrā kalendārajā gadā nosūtīto naudu. Pieaugums reģionos ir nevienmērīgs; reģionālās tabulas, uz kurām balstās kopsumma, publicētas ziņojumā Brief 40 un 2024. gada decembra atjauninājumā.',
         },
       ],
-      plate: 'Stabiņi ir zemu un vidēju ienākumu valstu kopsumma 2017.–2023. gadam no ziņojuma Migration and Development Brief 40 („Migrācija un attīstība”, 40. izdevums), miljardos USD. 2023. gada stabiņš ir 656. Tekstā minētais 2024. gada novērtējums ap 685 mljrd. USD ir vēlāks atjauninājums, un atsevišķa stabiņa tam nav.',
+      plate:
+        'Grafiks: naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2017–2023, Pasaules Banka, „Migrācija un attīstība”, 40. izdevums (Migration and Development Brief 40). Skaitlis ir miljardi USD.',
     },
     'remittances-top-recipients': {
       tag: 'Saņēmēji · 2024. gada novērtējums',
@@ -36,10 +46,20 @@ export const lvRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: '2024. gada apjoma novērtējums (Pasaules Bankas emuārs PeopleMove, 2024. gada 18. decembris). Ziņojumā Brief 40 par 2023. gadu — tās pašas piecas valstis tajā pašā secībā. Liela summa dolāros un liela IKP daļa ir divi dažādi rādītāji.',
+          heading: 'Kas ir šis saraksts',
+          body: 'Novērtētās 2024. gada ieplūdes ASV dolāros lielākajās saņēmējvalstīs starp zemu un vidēju ienākumu ekonomikām, pēc Pasaules Bankas emuāra PeopleMove 2024. gada 18. decembra atjauninājuma. Ziņojuma Brief 40 2023. gada reitingā bija tās pašas piecas valstis tajā pašā secībā (Indija 120 mljrd. USD · Meksika 66 mljrd. USD · Ķīna 50 mljrd. USD · Filipīnas 39 mljrd. USD · Pakistāna 27 mljrd. USD).',
+        },
+        {
+          heading: 'Kāpēc tas ir svarīgi',
+          body: 'Lielas saņemtās summas ietekmē valstu valūtas tirgus un mājsaimniecību ienākumus lielākajās izcelsmes un galamērķa valstu sistēmās — īpaši Indija – Persijas līča valstis un ESAO, Meksika – ASV un Filipīnu ilggadējie ārzemēs strādājošo koridori.',
+        },
+        {
+          heading: 'Kā to lasīt',
+          body: 'Reitings pēc summas dolāros rāda, kur nonāk visvairāk naudas; atkarību no pārvedumiem mēra kā IKP daļu. Ķīna var ieņemt augstu vietu dolāru ziņā, lai gan pārvedumi veido nelielu tās IKP daļu; neliela salu ekonomika var atrasties tālu saraksta lejasdaļā un tomēr būt ļoti atkarīga no pārvedumiem.',
         },
       ],
-      plate: 'Karte nav šis saraksts. Tā rāda saņemtos personīgos pārvedumus faktiskajās cenās, USD, no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji” 2024. gadā — pēdējais gads ar plašu ekonomiku kopu (160). Lielākās summas kartē: Indija (ap 138 mljrd. USD), Meksika (ap 68), Filipīnas (ap 40), Francija (ap 39) un Pakistāna (ap 35). Ķīna — ap 25. Iekļautas arī augstu ienākumu valstis. Zeme bez 2024. gada skaitļa paliek pelēka. Šīs summas uzskaita pēc maksājumu bilances noteikumiem, un tās nav saraksta novērtējumi.',
+      plate:
+        'Karte: saņemtie personīgie pārvedumi, 2024, Pasaules Banka, World Development Indicators („Pasaules attīstības rādītāji”). Šie skaitļi balstīti uz maksājumu bilances definīcijām un atšķiras no novērtējumiem sarakstā.',
     },
     'remittances-gdp-share': {
       tag: 'Atkarība · 2024. gada novērtējums',
@@ -54,10 +74,20 @@ export const lvRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'IKP daļa un absolūtais apjoms dolāros atbild uz dažādiem jautājumiem. Indija var būt pirmā dolāru ziņā ar nelielu IKP daļu; Tonga vai Tadžikistāna var būt ārpus dolāru top 5 un tomēr būt starp ekonomikām, kas visvairāk atkarīgas no pārvedumiem.',
+          heading: 'Kas ir šis saraksts',
+          body: 'Novērtētās pārvedumu ieplūdes procentos no IKP valstīm, kas no tiem visvairāk atkarīgas, pēc PeopleMove 2024. gada atjauninājuma. Ziņojuma Brief 40 2023. gada saraksts bija līdzīgs (Tonga 41% · Tadžikistāna 39% · Libāna 31% · Samoa 28% · Nikaragva 27%).',
+        },
+        {
+          heading: 'Kāpēc tas ir svarīgi',
+          body: 'Kur pārvedumi veido divciparu IKP daļu, tie finansē tekošā konta deficītu, mājsaimniecību patēriņu un bieži arī fiskālo stabilitāti vairāk nekā ārvalstu tiešās investīcijas vai palīdzība. Tāpēc satricinājumi uzņēmējvalstu darba tirgos vai pārvedumu koridoros ātri atsaucas uz iekšzemes pieprasījumu.',
+        },
+        {
+          heading: 'Kā to lasīt',
+          body: 'IKP daļa un absolūtais apjoms ASV dolāros atbild uz dažādiem jautājumiem. Indija var būt pasaulē pirmā dolāru ziņā un tomēr uzrādīt nelielu IKP daļu; Tonga vai Tadžikistāna var atrasties ārpus pirmā piecinieka pēc summas dolāros un tomēr būt starp pasaules ekonomikām, kas visvairāk atkarīgas no pārvedumiem.',
         },
       ],
-      plate: 'Karte nav šis saraksts. Tā rāda saņemtos personīgos pārvedumus kā IKP daļu no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji” 2024. gadā (160 ekonomikas). Augstākās daļas kartē: Tadžikistāna (ap 47%), Tonga (ap 39%), Nikaragva (ap 27%), Nepāla (ap 26%) un Hondurasa (ap 26%). Samoa — ap 24%. Libānai nav 2024. gada skaitļa, tāpēc tā paliek pelēka. Indija šajā kartē ir ap 3,7% no IKP. Šīs daļas nav saraksta novērtējumi.',
+      plate:
+        'Karte: saņemtie personīgie pārvedumi kā IKP daļa, 2024, Pasaules Banka, World Development Indicators („Pasaules attīstības rādītāji”). Šie skaitļi balstīti uz maksājumu bilances definīcijām un atšķiras no novērtējumiem sarakstā.',
     },
     'remittances-sending-cost': {
       tag: 'Cenas · RPW',
@@ -72,10 +102,20 @@ export const lvRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'RPW izseko tipiska neliela pārveduma (bieži 200 USD) cenu simtiem koridoru. Pēc ziņojuma Brief 40 datiem 2023. gada 4. ceturksnī — 6,4%. RPW vietne, atjaunināta 2025. gada 18. augustā: ap 6,36% 367 koridoros. Digitālie kanāli parasti ir lētāki; 10. ilgtspējīgas attīstības mērķis paredz 3% līdz 2030. gadam.',
+          heading: 'Kas ir šis skaitlis',
+          body: 'Pasaules Bankas datubāze Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”, RPW) izseko tipiska neliela pārveduma nosūtīšanas izmaksas (bieži par etalonu ņem 200 USD) simtiem koridoru starp valstīm. Ziņojums Brief 40 norādīja pasaules vidējo 6,4% 2023. gada 4. ceturksnī (gadu iepriekš — 6,2%). RPW vietne, pēdējo reizi atjaunināta 2025. gada 18. augustā, uzrāda pasaules vidējo ap 6,36% 367 koridoros (48 sūtītājvalstis un 105 saņēmējvalstis).',
+        },
+        {
+          heading: 'Kāpēc tas ir svarīgi',
+          body: 'Katrs komisijas procentpunkts samazina summu, kas nonāk līdz ģimenēm. Digitālie kanāli parasti ir lētāki par nedigitālajiem; koridori uz Subsahāras Āfriku bieži bijuši starp dārgākajiem. 10. ilgtspējīgas attīstības mērķa (IAM 10) uzdevums ir līdz 2030. gadam samazināt pasaules vidējo līdz 3%; pašreizējie vidējie rādītāji joprojām ir krietni virs šīs robežas.',
+        },
+        {
+          heading: 'Kā to lasīt',
+          body: 'Pasaules vidējais slēpj atsevišķu koridoru galējības: dažos no tiem pārvedums maksā vairākas reizes vairāk par vidējo. RPW mēra pārveduma cenu; RPW vietnē lasītāji var salīdzināt izmaksas pa koridoriem.',
         },
       ],
-      plate: 'Karte nav šis pasaules vidējais. Tā rāda vidējās izmaksas, sūtot pārvedumu uz katru valsti, procentos no summas, no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji” 2023. gadā — pēdējais gads šajā rindā (92 valstis ar pozitīvu skaitli). Šajā rindā nav pasaules kopsummas. Augstāko izmaksu starpā kartē ir Kuba (ap 20%), Angola (ap 13%) un Sjerraleone (ap 10%). Zeme bez pozitīva 2023. gada skaitļa paliek pelēka. Teksta pasaules vidējie ir no vietnes „Naudas pārvedumu cenas pasaulē” un no ziņojuma Brief 40, nevis no šīs kartes.',
+      plate:
+        'Karte: vidējās izmaksas, sūtot naudas pārvedumus uz valsti, 2023, Pasaules Banka, World Development Indicators („Pasaules attīstības rādītāji”). Šie skaitļi atšķiras no pasaules vidējiem tekstā.',
     },
     'remittances-wdi-series': {
       tag: 'Dati · WDI',
@@ -91,10 +131,20 @@ export const lvRemittances: RemittanceCopy = {
       ],
       sections: [
         {
-          body: 'Trīs WDI rindas — saņemtie personīgie pārvedumi (faktiskajās cenās, USD), saņemtie (% no IKP) un nosūtītie (faktiskajās cenās, USD) — turpina atjaunoties arī pēc Migration and Development Brief sērijas beigām. WDI personīgos pārvedumus uzskaita pēc maksājumu bilances noteikumiem, tāpēc gada summas var atšķirties no Pasaules Bankas novērtējuma par plūsmām uz zemu un vidēju ienākumu valstīm. Pasaules Bankas atvērto datu rādītāju lapās pieejami valstu grafiki, pasaules karte un lejupielādējami dati.',
+          heading: 'Kas tas ir',
+          body: 'Trīs World Development Indicators („Pasaules attīstības rādītāji”) rindas: saņemtie personīgie pārvedumi (faktiskajās cenās, USD), saņemtie personīgie pārvedumi (% no IKP) un nosūtītie personīgie pārvedumi (faktiskajās cenās, USD). Tās var aplūkot pa valstīm Pasaules Bankas atvērto datu rādītāju lapās un datubāzē World Development Indicators platformā DataBank; dati turpina atjaunoties arī pēc Migration and Development Brief sērijas beigām.',
+        },
+        {
+          heading: 'Kāpēc tas ir svarīgi',
+          body: 'Lasītājiem, kuri blakus jaunākajam pasaules kopskaitlim vēlas redzēt garas valstu laika rindas, vajadzīga rinda, kas turpina atjaunoties. WDI joprojām ir Pasaules Bankas standarta valstu tabula par personīgajiem pārvedumiem.',
+        },
+        {
+          heading: 'Kā to lasīt',
+          body: 'WDI personīgos pārvedumus uzskaita pēc maksājumu bilances noteikumiem, tāpēc gada summas var atšķirties no Pasaules Bankas galvenā novērtējuma par plūsmām uz zemu un vidēju ienākumu valstīm. Katra rādītāja lapā ir valstu grafiki, pasaules karte un lejupielādējami dati.',
         },
       ],
-      plate: 'Līnijas ir personīgo pārvedumu pasaules kopsummas no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji”, miljardos faktisko USD. Oranžā līnija ir saņemtie pārvedumi, 1970–2024, beigās ap 857 mljrd. USD. Zilā līnija ir nosūtītie, 1966–2024, beigās ap 619 mljrd. USD. 2024. gads ir pēdējais ar plašu ekonomiku kopu. Nepilns 2025. gads nav uzzīmēts. Šīs pasaules kopsummas nav zemu un vidēju ienākumu valstu novērtējums plūsmu kartītē.',
+      plate:
+        'Grafiks: personīgo pārvedumu pasaules kopsummas, saņemtie 1970–2024 un nosūtītie 1966–2024, Pasaules Banka, World Development Indicators („Pasaules attīstības rādītāji”). Šie skaitļi balstīti uz maksājumu bilances definīcijām.',
     },
   },
 };

@@ -1,5 +1,5 @@
 import type { RemittanceId, RemittanceMeta } from '../data/remittances';
-import { remittanceMeta } from '../data/remittances';
+import { remittanceMeta, remittanceSourcesFor } from '../data/remittances';
 import type { Locale } from './config';
 import { enRemittances } from './remittances-en';
 import { lvRemittances } from './remittances-lv';
@@ -48,6 +48,7 @@ export function getRemittances(locale: Locale): RemittanceShelf {
     cards: remittanceMeta.map((meta) => ({
       ...meta,
       ...fields.cards[meta.id],
+      sources: remittanceSourcesFor(locale, meta.sourceKeys),
     })),
   };
 }
@@ -56,5 +57,5 @@ export function getRemittance(locale: Locale, id: RemittanceId): RemittanceCard 
   const fields = copy[locale].cards[id];
   const meta = remittanceMeta.find((item) => item.id === id);
   if (!meta || !fields) throw new Error(`Unknown remittance card: ${id}`);
-  return { ...meta, ...fields };
+  return { ...meta, ...fields, sources: remittanceSourcesFor(locale, meta.sourceKeys) };
 }
