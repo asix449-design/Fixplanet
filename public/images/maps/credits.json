@@ -89,12 +89,12 @@
   },
   {
     "file": "military-expenditure-sipri.jpg",
-    "title": "Fix Planet overview of military spending level",
-    "source": "Fix Planet schematic on BlankMap-World. SIPRI yearbook and Milex artwork are not copied.",
+    "title": "Military expenditure, SIPRI, 2024",
+    "source": "Fix Planet map from the SIPRI Military Expenditure Database, 2024, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.sipri.org/databases/milex",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "One story only: spending level, not share of GDP. Darker blue marks larger-spender bands. Most countries stay unclassified. Not SIPRI Milex figures. milex.sipri.org is not used."
+    "license": "Attribute SIPRI. OWID republication is CC BY. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of 2024 military expenditure in US dollars. Numeric scale only."
   },
   {
     "file": "conflict-barometer-hiik.jpg",
@@ -179,39 +179,39 @@
   },
   {
     "file": "consumption-co2-emissions.jpg",
-    "title": "Fix Planet overview of consumption-based CO₂",
-    "source": "Fix Planet schematic on BlankMap-World. Global Carbon Project / Our World in Data artwork is not copied.",
+    "title": "Consumption-based CO₂, Global Carbon Project, 2023",
+    "source": "Fix Planet map from Global Carbon Project consumption-based CO₂, 2023, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map",
-    "license": "Map geometry public domain; overlay is Fix Planet. GCP / OWID data are CC BY with attribution.",
-    "kind": "fix-planet-schematic",
-    "note": "Slate blue marks a higher consumption-footprint orientation. Unlisted countries stay unclassed. Not GCP figures, not an OWID export, and not territorial CO₂."
+    "license": "CC BY (Global Carbon Project / Our World in Data). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of the 2023 country values. Numeric scale only; units are on the page."
   },
   {
     "file": "nitrogen-dioxide-no2.jpg",
-    "title": "Fix Planet overview of tropospheric NO₂",
-    "source": "Fix Planet schematic on BlankMap-World. ESA and S5P-PAL marketing stills are not copied.",
-    "url": "https://maps.s5p-pal.com/no2-tropospheric/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Amber columns mark well-known combustion and shipping corridors. Not TROPOMI retrievals and not a PM2.5 choropleth."
+    "title": "Tropospheric nitrogen dioxide, Sentinel-5P TROPOMI, annual mean 2024",
+    "source": "Fix Planet map from Copernicus Sentinel-5P TROPOMI tropospheric NO₂, annual mean of the 2024 KNMI/TEMIS monthly grids. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.temis.nl/airpollution/no2col/no2month_tropomi.php",
+    "license": "Copernicus Sentinel data (ESA), processed by KNMI/TEMIS. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Log scale from 1×10¹⁵ molecules/cm². Country outlines drawn on the base map. No legend text in the image."
   },
   {
     "file": "mismanaged-plastic-waste.jpg",
-    "title": "Fix Planet overview of mismanaged plastic waste",
-    "source": "Fix Planet schematic on BlankMap-World. Our World in Data artwork is not copied.",
+    "title": "Mismanaged plastic waste, Meijer and co-authors, 2019",
+    "source": "Fix Planet map from Meijer et al. 2021 mismanaged plastic waste for 2019, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://ourworldindata.org/grapher/plastic-waste-mismanaged",
-    "license": "Map geometry public domain; overlay is Fix Planet. OWID republishes Meijer et al. 2021 under CC BY.",
-    "kind": "fix-planet-schematic",
-    "note": "Amber marks a larger mismanaged-mass orientation. Unlisted countries stay unclassed. Not Meijer tonnages and not a beach photograph. Paper text is on PMC."
+    "license": "CC BY. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of the 2019 country values. Numeric scale only; units are on the page."
   },
   {
     "file": "methane-emissions.jpg",
-    "title": "Fix Planet overview of methane emissions",
-    "source": "Fix Planet schematic on BlankMap-World. EDGAR and Our World in Data artwork is not copied.",
+    "title": "Methane emissions, EDGAR, 2024",
+    "source": "Fix Planet map from EDGAR methane emissions including land use, 2024, via Our World in Data. Boundaries: Natural Earth 1:10m.",
     "url": "https://ourworldindata.org/grapher/methane-emissions?tab=map",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Ochre marks a larger methane-inventory orientation. Unlisted countries stay unclassed. Not EDGAR grid values, not a flare photograph, and not a CO₂ map."
+    "license": "CC BY (EDGAR / European Commission JRC; Our World in Data). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Equal Earth choropleth of the 2024 country values. Numeric scale only; units are on the page."
   },
   {
     "file": "oil-gas-reserves.jpg",
@@ -224,21 +224,21 @@
   },
   {
     "file": "mineral-resources.jpg",
-    "title": "Fix Planet overview of well-known mineral districts",
-    "source": "Fix Planet schematic on BlankMap-World, themed from USGS Mineral Resources Program / MRDATA",
+    "title": "Mineral deposit locations, USGS MRDS",
+    "source": "Fix Planet map of USGS Mineral Resources Data System deposit locations. Boundaries: Natural Earth 1:10m.",
     "url": "https://mrdata.usgs.gov/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Colored points mark well-known gold, copper, iron, lithium, and rare-earth districts. Not reserve tonnages."
+    "license": "Public domain (USGS). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Every MRDS record with coordinates. Coverage is denser in the United States because that is the source database."
   },
   {
     "file": "forest-cover-loss.jpg",
-    "title": "Fix Planet overview of tree-cover loss frontiers",
-    "source": "Fix Planet schematic on BlankMap-World, themed from Hansen / Global Forest Watch",
-    "url": "https://www.globalforestwatch.org/map/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Magenta patches mark well-known loss frontiers (Amazon arc, Congo edge, Sundaland, Mekong, boreal fire belts). Not Hansen annual pixels."
+    "title": "Share of 30 m pixels with tree-cover loss, Hansen GFC 2001–2024",
+    "source": "Fix Planet map from Hansen Global Forest Change v1.12 lossyear tiles, share of 30 m pixels lost 2001–2024 on a 0.02° grid. Boundaries: Natural Earth 1:10m.",
+    "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/",
+    "license": "CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is the share of pixels in each 0.02° cell. No unit words in the image."
   },
   {
     "file": "protected-areas.jpg",
@@ -251,12 +251,12 @@
   },
   {
     "file": "water-stress.jpg",
-    "title": "Fix Planet overview of arid vs water-rich regions",
-    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct",
-    "url": "https://www.wri.org/applications/aqueduct/water-risk-atlas/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Country bands show well-known arid vs water-rich regions, not Aqueduct basin scores. Open the Water Risk Atlas for the model."
+    "title": "Aqueduct 4.0 baseline water stress score",
+    "source": "Fix Planet map from WRI Aqueduct 4.0 baseline annual water-stress scores, 2023. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+    "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is the Aqueduct score from 0 to 5. Cite Kuzma et al. 2023."
   },
   {
     "file": "population-density.jpg",
@@ -548,12 +548,12 @@
   },
   {
     "file": "groundwater-whymap.jpg",
-    "title": "Fix Planet overview of WHYMAP aquifer environments",
-    "source": "Fix Planet schematic on BlankMap-World, themed from BGR / UNESCO WHYMAP Groundwater Resources of the World",
-    "url": "https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Blue sedimentary basins / green complex folded-faulted / brown local-shallow. Not BGR’s official map, not Aqueduct stress, not a well log."
+    "title": "Aqueduct 4.0 baseline groundwater table decline score",
+    "source": "Fix Planet map from WRI Aqueduct 4.0 baseline groundwater table decline scores, 2023. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+    "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Score 0–5. Grey land has no decline score. Not the WHYMAP aquifer-environment map."
   },
   {
     "file": "global-lakes-hydrolakes.jpg",
@@ -575,30 +575,30 @@
   },
   {
     "file": "flood-hazard-aqueduct.jpg",
-    "title": "Fix Planet overview of Aqueduct Floods hazard",
-    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct Floods",
-    "url": "https://www.wri.org/data/aqueduct-floods",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Riverine corridors and coastal inundation patches. Not WRI’s official Floods graphic and not a second baseline water-stress choropleth."
+    "title": "Aqueduct 4.0 baseline riverine flood risk score",
+    "source": "Fix Planet map from WRI Aqueduct 4.0 baseline riverine flood risk scores, 2023. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+    "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Score 0–5 for riverine flood risk. Not an Aqueduct Floods inundation-depth raster."
   },
   {
     "file": "intact-forest-landscapes.jpg",
-    "title": "Fix Planet overview of intact forest landscape blocks",
-    "source": "Fix Planet schematic on BlankMap-World, themed from the IFL Mapping Team (Potapov et al.)",
-    "url": "https://intactforests.org/data.ifl.html",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Bright blocks mark large wilderness-scale forest regions (Amazon, Congo, boreal, New Guinea). Not IFL polygons and not Hansen annual loss pixels."
+    "title": "Intact Forest Landscapes, 2020",
+    "source": "Fix Planet map from the IFL Mapping Team 2020 extent. Boundaries: Natural Earth 1:10m.",
+    "url": "https://intactforests.org/shp/IFL_2020.zip",
+    "license": "CC BY 4.0 (IFL Mapping Team). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "2020 polygons. Later IFL updates through 2025 are not this plate."
   },
   {
     "file": "mangrove-extent.jpg",
-    "title": "Fix Planet overview of mangrove coasts",
-    "source": "Fix Planet schematic on BlankMap-World, themed from Global Mangrove Watch",
-    "url": "https://www.globalmangrovewatch.org/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Teal fringe marks known tropical mangrove coasts. Not a GMW raster and not inland tree-cover loss."
+    "title": "Global Mangrove Watch v3 extent, 2020",
+    "source": "Fix Planet map from Global Mangrove Watch v3 2020 GeoTIFF tiles, share of mangrove pixels on a 0.02° grid. Boundaries: Natural Earth 1:10m.",
+    "url": "https://zenodo.org/records/6894273",
+    "license": "CC BY 4.0 (Bunting et al. / Global Mangrove Watch). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "2020 extent from GMW v3, not the later v4 annual series."
   },
   {
     "file": "primary-humid-tropical-forests.jpg",

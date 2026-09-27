@@ -89,13 +89,13 @@ const en: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'burned-area': {
     title: 'Burned area',
-    meta: 'MODIS MCD64A1 · FIRMS · burned area and active fire',
+    meta: 'MODIS MCD64CMQ · 2023 · share of each 0.25° cell',
     blurb:
-      'Where fire has burned the land surface — MODIS burned-area mapping plus FIRMS active-fire context, not tree-cover loss alone and not prescribed-fire policy.',
-    what: 'MODIS MCD64A1 (Collection 6.1) is NASA’s global monthly burned-area product (LP DAAC / LAADS). FIRMS (Fire Information for Resource Management System) is the near-real-time active-fire service (a map and an Earthdata learn page). Together they show where fire has burned and where it is active. Further reading includes the GFED (Global Fire Emissions Database) site and data page, and the Earth Observatory MOD14A1 fire map.',
+      'Where fire burned in 2023 — the MODIS MCD64 annual burned fraction on a 0.25° grid, not tree-cover loss and not a FIRMS hotspot map.',
+    what: 'MODIS MCD64A1 (Collection 6.1) is NASA’s global monthly burned-area product. This plate uses the University of Maryland MCD64CMQ climate-modeling grid of that product: monthly burned area in hectares on a 0.25° grid, summed for 2023 and divided by the area of each cell. FIRMS is a separate near-real-time active-fire service and is not drawn here. Further reading includes the GFED site and the Earth Observatory MOD14A1 fire map.',
     why: 'Annual tree-cover loss can include fire but is not a dedicated burned-area product. Prescribed fire is a management practice, not a global burned-area map. This layer answers where fire burned.',
     howToRead:
-      'Burned-area products map fire scars and the date of burn. FIRMS active-fire detections are near-real-time hotspot points — related, but not the same layer. Agricultural burning, savanna fire, and forest wildfire all appear; quality-assurance and confidence fields in the product documentation explain how to read them. The LP DAAC MCD64A1 page, the LAADS product page, and the FIRMS map and learn pages describe the layers. GFED is further reading on emissions.',
+      'The colour is the share of each 0.25° cell that burned in 2023. Ocean and land the product left unmapped stay grey. A few cells that burned more than their own area are drawn as 1. FIRMS hotspot points are a different layer. Agricultural burning, savanna fire, and forest wildfire all appear. The LP DAAC MCD64A1 page describes the source product.',
   },
   'ecological-zones': {
     title: 'Ecological zones',
@@ -168,11 +168,11 @@ const ru: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'burned-area': {
     title: 'Площадь гарей',
-    meta: 'MODIS MCD64A1 · FIRMS · гари / активные пожары',
+    meta: 'MODIS MCD64CMQ · 2023 · доля ячейки 0,25°',
     blurb:
-      'Где огонь выжег поверхность — картирование гарей MODIS плюс контекст FIRMS, не одна лишь потеря древесного покрова и не политика контролируемых палов.',
+      'Где огонь выжег поверхность в 2023 году — годовая доля гарей MODIS MCD64 на сетке 0,25°, не потеря древесного покрова и не карта очагов FIRMS.',
     detailShort:
-      'MCD64A1 — глобальный месячный продукт гарей; FIRMS — почти реальное время активных очагов. Продукт гарей показывает следы и даты пожаров, а FIRMS — активные очаги почти в реальном времени; это связанные, но разные слои.',
+      'Плита — сумма месячных гарей MCD64CMQ (коллекция 6.1) за 2023 год, делённая на площадь ячейки 0,25°. FIRMS — отдельный слой активных очагов и здесь не нарисован.',
   },
   'ecological-zones': {
     title: 'Экологические зоны',
@@ -235,11 +235,11 @@ const pl: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'burned-area': {
     title: 'Areał spalenisk',
-    meta: 'MODIS MCD64A1 · FIRMS · spaleniska / aktywne pożary',
+    meta: 'MODIS MCD64CMQ · 2023 · udział komórki 0,25°',
     blurb:
-      'Gdzie ogień spalił powierzchnię — mapowanie spalenisk MODIS plus kontekst FIRMS, nie sama utrata pokrywy drzewnej i nie polityka wypaleń kontrolowanych.',
+      'Gdzie ogień spalił powierzchnię w 2023 roku — roczny udział spalenisk MODIS MCD64 na siatce 0,25°, nie sama utrata pokrywy drzewnej i nie mapa ognisk FIRMS.',
     detailShort:
-      'MCD64A1 — globalny miesięczny produkt spalenisk; FIRMS — aktywne ogniska niemal w czasie rzeczywistym. Produkt spalenisk pokazuje ślady i daty pożarów, a FIRMS — aktywne ogniska; to powiązane, lecz różne warstwy.',
+      'Płyta to suma miesięcznych spalenisk MCD64CMQ (kolekcja 6.1) z 2023 roku podzielona przez powierzchnię komórki 0,25°. FIRMS to osobna warstwa aktywnych ognisk i nie jest tu narysowana.',
   },
   'ecological-zones': {
     title: 'Strefy ekologiczne',
@@ -302,11 +302,11 @@ const lv: Record<ForestAtlasSlug, ForestAtlasCopy> = {
   },
   'burned-area': {
     title: 'Izdegušās platības',
-    meta: 'MODIS MCD64A1 · FIRMS · izdegumi / aktīvie ugunsgrēki',
+    meta: 'MODIS MCD64CMQ · 2023 · 0,25° šūnas daļa',
     blurb:
-      'Kur uguns nodedzinājusi virsmu — MODIS izdegumu kartēšana plus FIRMS konteksts, ne tikai koku seguma zudums un ne kontrolētās dedzināšanas politika.',
+      'Kur uguns 2023. gadā nodedzinājusi virsmu — MODIS MCD64 gada izdegumu daļa uz 0,25° režģa, ne tikai koku seguma zudums un ne FIRMS perēkļu karte.',
     detailShort:
-      'MCD64A1 — globāls mēneša izdegumu produkts; FIRMS — gandrīz reāllaika aktīvie perēkļi. Izdegumu produkts rāda uguns pēdas un datumus, bet FIRMS — aktīvos perēkļus; tie ir saistīti, taču atšķirīgi slāņi.',
+      'Plate ir MCD64CMQ (6.1 kolekcija) 2023. gada mēneša izdegumu summa, dalīta ar 0,25° šūnas platību. FIRMS ir atsevišķs aktīvo perēkļu slānis, un tas šeit nav uzzīmēts.',
   },
   'ecological-zones': {
     title: 'Ekoloģiskās zonas',
