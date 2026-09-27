@@ -152,7 +152,7 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     slug: 'planted-forests',
     preview: 'planted-forests.svg',
     sourceOrg: 'FAO / Lesiv et al.',
-    sourceLabel: 'FAO FRA 2025 — planted forests',
+    sourceLabel: 'FAO FRA 2025 / Lesiv 2022',
     sourceUrl: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
     usesCoastline: true,
     sources: [
@@ -186,7 +186,7 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     slug: 'forest-carbon-stock',
     preview: 'forest-carbon-stock.svg',
     sourceOrg: 'FAO FRA',
-    sourceLabel: 'FAO FRA 2025 — forest carbon stock',
+    sourceLabel: 'FAO FRA 2025',
     sourceUrl: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
     usesCoastline: true,
     sources: [
@@ -216,7 +216,7 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     slug: 'tree-cover',
     preview: 'tree-cover.svg',
     sourceOrg: 'NASA LP DAAC / MODIS VCF',
-    sourceLabel: 'NASA MODIS MOD44B — percent tree cover',
+    sourceLabel: 'NASA MODIS MOD44B',
     sourceUrl: 'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061',
     usesCoastline: true,
     sources: [
@@ -242,7 +242,7 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     slug: 'peatlands',
     preview: 'peatlands.svg',
     sourceOrg: 'UNEP / Global Peatlands Initiative',
-    sourceLabel: 'UNEP — Global Peatlands Assessment 2022',
+    sourceLabel: 'UNEP GPA 2022',
     sourceUrl: 'https://www.unep.org/resources/global-peatlands-assessment-2022',
     usesCoastline: true,
     sources: [
