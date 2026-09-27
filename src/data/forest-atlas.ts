@@ -1,11 +1,15 @@
 import { cite, type PrimarySource } from './sources';
 
-/** Forests atlas thematic layers: height, biomass density, burned area, ecological zones. */
+/** Forests atlas thematic layers. */
 export const forestAtlasSlugs = [
   'canopy-height',
   'aboveground-biomass',
   'burned-area',
   'ecological-zones',
+  'planted-forests',
+  'forest-carbon-stock',
+  'tree-cover',
+  'peatlands',
 ] as const;
 
 export type ForestAtlasSlug = (typeof forestAtlasSlugs)[number];
@@ -141,6 +145,124 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
       cite(
         'FAO — Forest Resources Assessment hub',
         'https://www.fao.org/forest-resources-assessment/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'planted-forests',
+    preview: 'planted-forests.svg',
+    sourceOrg: 'FAO / Lesiv et al.',
+    sourceLabel: 'FAO FRA 2025 — planted forests',
+    sourceUrl: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+    usesCoastline: true,
+    sources: [
+      cite(
+        'FAO — Global Forest Resources Assessment 2025 (hub)',
+        'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+      ),
+      cite(
+        'FAO — FRA 2025 full PDF (cd6709en)',
+        'https://www.fao.org/3/cd6709en/cd6709en.pdf',
+      ),
+      cite(
+        'FAO — FRA 2025 HTML report',
+        'https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/cd6709en.html',
+      ),
+      cite(
+        'FAO newsroom — FRA 2025 release (planted 312 Mha)',
+        'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+      ),
+      cite(
+        'Lesiv et al. 2022 — Global forest management data (Scientific Data)',
+        'https://www.nature.com/articles/s41597-022-01332-3',
+      ),
+      cite(
+        'WRI — Spatial Database of Planted Trees (SDPT) PDF (optional secondary)',
+        'https://files.wri.org/s3fs-public/spatial-database-planted-trees.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'forest-carbon-stock',
+    preview: 'forest-carbon-stock.svg',
+    sourceOrg: 'FAO FRA',
+    sourceLabel: 'FAO FRA 2025 — forest carbon stock',
+    sourceUrl: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+    usesCoastline: true,
+    sources: [
+      cite(
+        'FAO — Global Forest Resources Assessment 2025 (hub)',
+        'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+      ),
+      cite(
+        'FAO — FRA 2025 full PDF (cd6709en)',
+        'https://www.fao.org/3/cd6709en/cd6709en.pdf',
+      ),
+      cite(
+        'FAO — FRA 2025 HTML report',
+        'https://openknowledge.fao.org/server/api/core/bitstreams/2dee6e93-1988-4659-aa89-30dd20b43b15/content/cd6709en.html',
+      ),
+      cite(
+        'FAO newsroom — FRA 2025 release (714 Gt C)',
+        'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+      ),
+      cite(
+        'FAO — Forest Resources Assessment home',
+        'https://www.fao.org/forest-resources-assessment/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'tree-cover',
+    preview: 'tree-cover.svg',
+    sourceOrg: 'NASA LP DAAC / MODIS VCF',
+    sourceLabel: 'NASA MODIS MOD44B — percent tree cover',
+    sourceUrl: 'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061',
+    usesCoastline: true,
+    sources: [
+      cite(
+        'Earthdata — MOD44B Vegetation Continuous Fields v061',
+        'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061',
+      ),
+      cite(
+        'LP DAAC — MOD44B User Guide (PDF)',
+        'https://lpdaac.usgs.gov/documents/1494/MOD44B_User_Guide_V61.pdf',
+      ),
+      cite(
+        'GLAD — Global Forest Change viewer (optional secondary)',
+        'https://glad.earthengine.app/view/global-forest-change',
+      ),
+      cite(
+        'Hansen / GFC download (optional secondary)',
+        'https://storage.googleapis.com/earthenginepartners-hansen/GFC-2023-v1.11/download.html',
+      ),
+    ],
+  },
+  {
+    slug: 'peatlands',
+    preview: 'peatlands.svg',
+    sourceOrg: 'UNEP / Global Peatlands Initiative',
+    sourceLabel: 'UNEP — Global Peatlands Assessment 2022',
+    sourceUrl: 'https://www.unep.org/resources/global-peatlands-assessment-2022',
+    usesCoastline: true,
+    sources: [
+      cite(
+        'UNEP — Global Peatlands Assessment 2022',
+        'https://www.unep.org/resources/global-peatlands-assessment-2022',
+      ),
+      cite(
+        'UNEP — GPA 2022 full report PDF (wedocs bitstream)',
+        'https://wedocs.unep.org/bitstreams/a8e29acd-26e2-4b12-b2a8-2c44a414e5b7/download',
+      ),
+      cite(
+        'UNEP press — peatlands as a climate solution (optional secondary)',
+        'https://www.unep.org/news-and-stories/press-release/global-assessment-reveals-huge-potential-peatlands-climate-solution',
+      ),
+      cite('FAO — Peatlands home', 'https://www.fao.org/peatlands/en/'),
+      cite('FAO — Peatlands overview', 'https://www.fao.org/peatlands/overview/en'),
+      cite(
+        'Greifswald Mire Centre — Global Peatland Database (optional secondary)',
+        'https://www.greifswaldmoor.de/global-peatland-database-en.html',
       ),
     ],
   },

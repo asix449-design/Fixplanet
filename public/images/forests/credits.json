@@ -170,5 +170,41 @@
     "license": "Original schematic; coastline Natural Earth 110m land, public domain",
     "kind": "schematic",
     "note": "Climatic-ecological bands for forest statistics: tropical, subtropical, temperate, boreal, and polar."
+  },
+  {
+    "file": "planted-forests.svg",
+    "title": "Planted forests schematic",
+    "source": "Schematic after FAO FRA 2025 and Lesiv et al. 2022",
+    "url": "https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Regular blocks mark planted and plantation stands beside naturally regenerating forest."
+  },
+  {
+    "file": "forest-carbon-stock.svg",
+    "title": "Forest carbon stock schematic",
+    "source": "Schematic after FAO FRA 2025 carbon-stock pools",
+    "url": "https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Soil, living biomass, and litter with dead wood. Pool shares follow the FRA 2025 total."
+  },
+  {
+    "file": "tree-cover.svg",
+    "title": "Percent tree cover schematic",
+    "source": "Schematic after NASA MODIS MOD44B Vegetation Continuous Fields",
+    "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod44b-061",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "Continuous percent tree cover. Darker green is a higher cover fraction."
+  },
+  {
+    "file": "peatlands.svg",
+    "title": "Peatlands schematic",
+    "source": "Schematic after UNEP Global Peatlands Assessment 2022",
+    "url": "https://www.unep.org/resources/global-peatlands-assessment-2022",
+    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
+    "kind": "schematic",
+    "note": "High-latitude peat belts and tropical peat on organic soils."
   }
 ]

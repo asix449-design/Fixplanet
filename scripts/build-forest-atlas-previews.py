@@ -287,6 +287,175 @@ def zones(land: str) -> str:
     )
 
 
+def square(lon: float, lat: float, deg: float) -> str:
+    x, y = xy(lon, lat)
+    s = deg / 360.0 * W
+    return f'<rect x="{x - s / 2:.1f}" y="{y - s / 2:.1f}" width="{s:.1f}" height="{s:.1f}"/>'
+
+
+def plantation(lon: float, lat: float, cols: int, rows: int, step: float = 1.7) -> str:
+    parts = []
+    for row in range(rows):
+        for col in range(cols):
+            parts.append(square(lon + col * step, lat - row * step * 0.72, 1.05))
+    return "\n".join(parts)
+
+
+def chip_legend(chips: list[tuple[str, str]]) -> str:
+    parts = [
+        f'<rect x="0" y="708" width="{W}" height="92" fill="#07141c"/>',
+        f'<g font-family="ui-sans-serif, system-ui, sans-serif" font-size="20" fill="{INK}">',
+    ]
+    x = 48
+    for color, label in chips:
+        parts.append(
+            f'<rect x="{x}" y="742" width="22" height="16" rx="3" fill="{color}" stroke="{INK}" stroke-opacity="0.45"/>'
+        )
+        parts.append(f'<text x="{x + 30}" y="757">{label}</text>')
+        x += 48 + len(label) * 11
+    parts.append("</g>")
+    return "\n".join(parts)
+
+
+def planted(land: str) -> str:
+    natural, blocks = "#1b5e3b", "#e4d27a"
+    body = "\n".join(
+        [
+            f'<g fill="{natural}" fill-opacity="0.9">',
+            ellipse(-62, -4, 28, 16),
+            ellipse(22, 1, 16, 12),
+            ellipse(112, 0, 22, 10),
+            ellipse(-100, 54, 34, 8),
+            ellipse(90, 56, 42, 7),
+            ellipse(24, -8, 10, 8),
+            "</g>",
+            f'<g fill="{blocks}" fill-opacity="0.95">',
+            plantation(-86, 33, 4, 3),
+            plantation(-52, -28, 4, 2),
+            plantation(-8, 41, 3, 2),
+            plantation(10, 60, 3, 2),
+            plantation(112, 27, 5, 3),
+            plantation(78, 14, 3, 2),
+            plantation(104, -2, 3, 2),
+            plantation(146, -36, 3, 2),
+            plantation(172, -42, 2, 2),
+            plantation(-72, -38, 2, 3),
+            plantation(26, -32, 2, 2),
+            "</g>",
+        ]
+    )
+    return frame(
+        "Planted forests — schematic",
+        "Planted and plantation stands as regular blocks beside naturally regenerating forest.",
+        body,
+        land,
+        chip_legend([(natural, "Regenerating"), (blocks, "Planted")]),
+    )
+
+
+def carbon(land: str) -> str:
+    soil, biomass_c, litter = "#6e4b32", "#1f6b45", "#c4b49a"
+    body = "\n".join(
+        [
+            f'<g fill="{soil}" fill-opacity="0.88">',
+            ellipse(-100, 56, 40, 10),
+            ellipse(80, 58, 50, 8),
+            ellipse(-140, 62, 22, 6),
+            ellipse(140, 60, 18, 6),
+            ellipse(24, 62, 16, 5),
+            "</g>",
+            f'<g fill="{biomass_c}" fill-opacity="0.9">',
+            ellipse(-62, -4, 28, 16),
+            ellipse(22, 1, 16, 11),
+            ellipse(114, -1, 22, 10),
+            "</g>",
+            f'<g fill="{litter}" fill-opacity="0.7">',
+            ellipse(18, 22, 20, 8),
+            ellipse(-90, 42, 16, 6),
+            ellipse(70, 40, 18, 6),
+            "</g>",
+        ]
+    )
+    return frame(
+        "Forest carbon stock — schematic",
+        "Forest carbon pools: soil, living biomass, and litter with dead wood. A stock schematic, after FAO FRA pool shares.",
+        body,
+        land,
+        chip_legend(
+            [
+                (soil, "Soil ~46%"),
+                (biomass_c, "Living biomass ~44%"),
+                (litter, "Litter and dead wood"),
+            ]
+        ),
+    )
+
+
+def cover(land: str) -> str:
+    deep, mid, pale = "#0e3b24", "#3f7a45", "#d5d2a4"
+    body = "\n".join(
+        [
+            f'<g fill="{deep}" fill-opacity="0.92">',
+            ellipse(-62, -4, 30, 18),
+            ellipse(22, 1, 18, 13),
+            ellipse(112, 0, 26, 12),
+            ellipse(-105, 55, 38, 9),
+            ellipse(88, 57, 48, 8),
+            "</g>",
+            f'<g fill="{mid}" fill-opacity="0.8">',
+            ellipse(-90, 42, 22, 8),
+            ellipse(10, 48, 20, 7),
+            ellipse(115, 32, 18, 8),
+            ellipse(-80, 32, 14, 8),
+            ellipse(135, 48, 16, 6),
+            "</g>",
+            f'<g fill="{pale}" fill-opacity="0.55">',
+            ellipse(20, 22, 26, 12),
+            ellipse(-110, 22, 14, 16),
+            ellipse(70, 28, 22, 10),
+            ellipse(134, -24, 20, 12),
+            ellipse(-20, 36, 12, 8),
+            "</g>",
+        ]
+    )
+    return frame(
+        "Tree cover — schematic",
+        "Percent tree cover as a continuous field. Darker green is a higher cover fraction.",
+        body,
+        land,
+        legend_bar("0%", "100%", pale, deep),
+    )
+
+
+def peat(land: str) -> str:
+    north, tropical = "#6b3a4a", "#a56a3a"
+    body = "\n".join(
+        [
+            f'<g fill="{north}" fill-opacity="0.9">',
+            ellipse(-100, 58, 36, 7),
+            ellipse(-140, 64, 18, 5),
+            ellipse(20, 63, 22, 5),
+            ellipse(70, 62, 34, 6),
+            ellipse(120, 64, 22, 5),
+            ellipse(-155, 62, 12, 4),
+            "</g>",
+            f'<g fill="{tropical}" fill-opacity="0.92">',
+            ellipse(112, -1, 12, 5),
+            ellipse(22, 0, 8, 5),
+            ellipse(-62, -3, 9, 5),
+            ellipse(102, 2, 6, 3),
+            "</g>",
+        ]
+    )
+    return frame(
+        "Peatlands — schematic",
+        "Peatland extent: high-latitude organic soils and tropical peat.",
+        body,
+        land,
+        chip_legend([(north, "High latitude"), (tropical, "Tropical peat")]),
+    )
+
+
 def main() -> None:
     geo = ensure_land()
     land = land_path(geo)
@@ -296,6 +465,10 @@ def main() -> None:
         "aboveground-biomass.svg": biomass(land),
         "burned-area.svg": burned(land),
         "ecological-zones.svg": zones(land),
+        "planted-forests.svg": planted(land),
+        "forest-carbon-stock.svg": carbon(land),
+        "tree-cover.svg": cover(land),
+        "peatlands.svg": peat(land),
     }
     for name, svg in files.items():
         (OUT / name).write_text(svg)
