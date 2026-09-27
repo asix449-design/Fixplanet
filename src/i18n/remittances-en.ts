@@ -25,7 +25,7 @@ export const enRemittances: RemittanceCopy = {
         },
         {
           heading: 'How to read it',
-          body: 'These are estimates of the money sent during each calendar year. Regional growth is uneven; Brief 40 and the December 2024 update publish the regional tables behind the headline.',
+          body: 'These are estimates of the money sent during each calendar year. Regional growth is uneven; Migration and Development Brief 40 and the December 2024 update publish the regional tables behind the headline.',
         },
       ],
       plate: 'Chart: low- and middle-income remittances, 2017–2023, World Bank Migration and Development Brief 40. The number is billions of US dollars.',
@@ -46,7 +46,7 @@ export const enRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'What the list is',
-          body: 'Estimated 2024 inflows in US dollars to the largest receiving countries among low- and middle-income economies, from the World Bank PeopleMove update of 18 December 2024. Brief 40’s 2023 ranking was the same five names in the same order (India $120B · Mexico $66B · China $50B · Philippines $39B · Pakistan $27B).',
+          body: 'Estimated 2024 inflows in US dollars to the largest receiving countries among low- and middle-income economies, from the World Bank PeopleMove update of 18 December 2024. Migration and Development Brief 40’s 2023 ranking was the same five names in the same order (India $120B · Mexico $66B · China $50B · Philippines $39B · Pakistan $27B).',
         },
         {
           heading: 'Why it matters',
@@ -73,7 +73,7 @@ export const enRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'What the list is',
-          body: 'Estimated remittance inflows as a percentage of GDP for the most dependent countries in the 2024 PeopleMove update. Brief 40’s 2023 dependence list was similar in spirit (Tonga 41% · Tajikistan 39% · Lebanon 31% · Samoa 28% · Nicaragua 27%).',
+          body: 'Estimated remittance inflows as a percentage of GDP for the most dependent countries in the 2024 PeopleMove update. Migration and Development Brief 40’s 2023 dependence list was similar in spirit (Tonga 41% · Tajikistan 39% · Lebanon 31% · Samoa 28% · Nicaragua 27%).',
         },
         {
           heading: 'Why it matters',
@@ -100,7 +100,7 @@ export const enRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'What the number is',
-          body: 'The World Bank Remittance Prices Worldwide (RPW) database tracks the cost of sending a typical small transfer (often benchmarked at $200) across hundreds of country corridors. Brief 40 reported a global average of 6.4% in the fourth quarter of 2023 (up from 6.2% a year earlier). The RPW website, last updated 18 August 2025, highlights a global average near 6.36% across 367 corridors (48 sending / 105 receiving countries).',
+          body: 'The World Bank Remittance Prices Worldwide (RPW) database tracks the cost of sending a typical small transfer (often benchmarked at $200) across hundreds of country corridors. Migration and Development Brief 40 reported a global average of 6.4% in the fourth quarter of 2023 (up from 6.2% a year earlier). The Remittance Prices Worldwide website, last updated 18 August 2025, highlights a global average near 6.36% across 367 corridors (48 sending / 105 receiving countries).',
         },
         {
           heading: 'Why it matters',
@@ -108,7 +108,7 @@ export const enRemittances: RemittanceCopy = {
         },
         {
           heading: 'How to read it',
-          body: 'A global average hides corridor extremes: some corridors cost several times the average. RPW measures the price of a transfer; on the RPW website readers can compare costs corridor by corridor.',
+          body: 'A global average hides corridor extremes: some corridors cost several times the average. Remittance Prices Worldwide measures the price of a transfer; on its website readers can compare costs corridor by corridor.',
         },
       ],
       plate: 'Map: average cost of sending remittances to a country, 2023, World Bank World Development Indicators. These figures differ from the global averages in the text.',
@@ -116,7 +116,7 @@ export const enRemittances: RemittanceCopy = {
     'remittances-wdi-series': {
       tag: 'Data · WDI',
       title: 'Personal remittances in World Development Indicators',
-      hook: 'After the World Bank’s KNOMAD series of Migration and Development Briefs ended in 2024, its World Development Indicators continue to publish country time series for personal remittances received and paid in US dollars, and for remittances received as a share of GDP.',
+      hook: 'After the brief series from the World Bank’s global partnership on migration and development ended in 2024, World Development Indicators continue to publish country time series for personal remittances received and paid in US dollars, and for remittances received as a share of GDP.',
       figure: '857',
       unit: 'billion US dollars received, world, 2024',
       rows: [

@@ -17,7 +17,7 @@ export const lvRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Kas ir šis skaitlis',
-          body: 'Oficiāli uzskaitītā nauda, ko migranti sūta mājās uz zemu un vidēju ienākumu valstīm. Pasaules Bankas ziņojumā Migration and Development Brief 40 („Migrācija un attīstība”, 40. izdevums; 2024. gada jūnijs) 2023. gada kopsumma ir aptuveni 656 mljrd. USD (+0,7% pēc spēcīgajiem pēcpandēmijas gadiem). Tās pašas pētnieku komandas atjauninājumā emuārā PeopleMove 2024. gada 18. decembrī 2024. gadam novērtēti aptuveni 685 mljrd. USD (+5,8%). Neformālo kanālu dēļ patiesā summa ir lielāka.',
+          body: 'Oficiāli uzskaitītā nauda, ko migranti sūta mājās uz zemu un vidēju ienākumu valstīm. Pasaules Bankas ziņojumā „Migrācija un attīstība”, 40. izdevumā (2024. gada jūnijs) 2023. gada kopsumma ir aptuveni 656 mljrd. USD (+0,7% pēc spēcīgajiem pēcpandēmijas gadiem). Tās pašas pētnieku komandas atjauninājumā emuārā PeopleMove 2024. gada 18. decembrī 2024. gadam novērtēti aptuveni 685 mljrd. USD (+5,8%). Neformālo kanālu dēļ patiesā summa ir lielāka.',
         },
         {
           heading: 'Kāpēc tas ir svarīgi',
@@ -25,11 +25,11 @@ export const lvRemittances: RemittanceCopy = {
         },
         {
           heading: 'Kā to lasīt',
-          body: 'Tie ir novērtējumi par katrā kalendārajā gadā nosūtīto naudu. Pieaugums reģionos ir nevienmērīgs; reģionālās tabulas, uz kurām balstās kopsumma, publicētas ziņojumā Brief 40 un 2024. gada decembra atjauninājumā.',
+          body: 'Tie ir novērtējumi par katrā kalendārajā gadā nosūtīto naudu. Pieaugums reģionos ir nevienmērīgs; reģionālās tabulas, uz kurām balstās kopsumma, publicētas Pasaules Bankas ziņojumā „Migrācija un attīstība”, 40. izdevumā, un 2024. gada decembra atjauninājumā.',
         },
       ],
       plate:
-        'Grafiks: naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2017–2023, Pasaules Banka, „Migrācija un attīstība”, 40. izdevums (Migration and Development Brief 40). Skaitlis ir miljardi USD.',
+        'Grafiks: naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2017–2023, Pasaules Banka, „Migrācija un attīstība”, 40. izdevums. Skaitlis ir miljardi USD.',
     },
     'remittances-top-recipients': {
       tag: 'Saņēmēji · 2024. gada novērtējums',
@@ -47,7 +47,7 @@ export const lvRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Kas ir šis saraksts',
-          body: 'Novērtētās 2024. gada ieplūdes ASV dolāros lielākajās saņēmējvalstīs starp zemu un vidēju ienākumu ekonomikām, pēc Pasaules Bankas emuāra PeopleMove 2024. gada 18. decembra atjauninājuma. Ziņojuma Brief 40 2023. gada reitingā bija tās pašas piecas valstis tajā pašā secībā (Indija 120 mljrd. USD · Meksika 66 mljrd. USD · Ķīna 50 mljrd. USD · Filipīnas 39 mljrd. USD · Pakistāna 27 mljrd. USD).',
+          body: 'Novērtētās 2024. gada ieplūdes ASV dolāros lielākajās saņēmējvalstīs starp zemu un vidēju ienākumu ekonomikām, pēc Pasaules Bankas emuāra PeopleMove 2024. gada 18. decembra atjauninājuma. Pasaules Bankas ziņojuma „Migrācija un attīstība”, 40. izdevuma, 2023. gada reitingā bija tās pašas piecas valstis tajā pašā secībā (Indija 120 mljrd. USD · Meksika 66 mljrd. USD · Ķīna 50 mljrd. USD · Filipīnas 39 mljrd. USD · Pakistāna 27 mljrd. USD).',
         },
         {
           heading: 'Kāpēc tas ir svarīgi',
@@ -75,7 +75,7 @@ export const lvRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Kas ir šis saraksts',
-          body: 'Novērtētās pārvedumu ieplūdes procentos no IKP valstīm, kas no tiem visvairāk atkarīgas, pēc PeopleMove 2024. gada atjauninājuma. Ziņojuma Brief 40 2023. gada saraksts bija līdzīgs (Tonga 41% · Tadžikistāna 39% · Libāna 31% · Samoa 28% · Nikaragva 27%).',
+          body: 'Novērtētās pārvedumu ieplūdes procentos no IKP valstīm, kas no tiem visvairāk atkarīgas, pēc PeopleMove 2024. gada atjauninājuma. Pasaules Bankas ziņojuma „Migrācija un attīstība”, 40. izdevuma, 2023. gada saraksts bija līdzīgs (Tonga 41% · Tadžikistāna 39% · Libāna 31% · Samoa 28% · Nikaragva 27%).',
         },
         {
           heading: 'Kāpēc tas ir svarīgi',
@@ -92,7 +92,7 @@ export const lvRemittances: RemittanceCopy = {
     'remittances-sending-cost': {
       tag: 'Cenas · RPW',
       title: 'Naudas nosūtīšanas izmaksas',
-      hook: 'Pārvedumu nosūtīšana joprojām izmaksā vidēji ap 6,4% no summas — vairāk nekā divreiz virs 3% mērķa, kas noteikts ilgtspējīgas attīstības mērķos (IAM); Pasaules Bankas vietne Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”, RPW), atjaunināta 2025. gada 18. augustā, rāda ap 6,36%.',
+      hook: 'Pārvedumu nosūtīšana joprojām izmaksā vidēji ap 6,4% no summas — vairāk nekā divreiz virs 3% mērķa, kas noteikts ilgtspējīgas attīstības mērķos (IAM); Pasaules Bankas datubāze par naudas pārvedumu cenām, atjaunināta 2025. gada 18. augustā, rāda ap 6,36%.',
       figure: '6,4',
       unit: 'procenti, pasaules vidējais, 2023. gada beigas',
       rows: [
@@ -103,7 +103,7 @@ export const lvRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Kas ir šis skaitlis',
-          body: 'Pasaules Bankas datubāze Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”, RPW) izseko tipiska neliela pārveduma nosūtīšanas izmaksas (bieži par etalonu ņem 200 USD) simtiem koridoru starp valstīm. Ziņojums Brief 40 norādīja pasaules vidējo 6,4% 2023. gada 4. ceturksnī (gadu iepriekš — 6,2%). RPW vietne, pēdējo reizi atjaunināta 2025. gada 18. augustā, uzrāda pasaules vidējo ap 6,36% 367 koridoros (48 sūtītājvalstis un 105 saņēmējvalstis).',
+          body: 'Pasaules Bankas datubāze par naudas pārvedumu cenām izseko tipiska neliela pārveduma nosūtīšanas izmaksas (bieži par etalonu ņem 200 USD) simtiem koridoru starp valstīm. Pasaules Bankas ziņojums „Migrācija un attīstība”, 40. izdevums, norādīja pasaules vidējo 6,4% 2023. gada 4. ceturksnī (gadu iepriekš — 6,2%). Šī datubāze, pēdējo reizi atjaunināta 2025. gada 18. augustā, uzrāda pasaules vidējo ap 6,36% 367 koridoros (48 sūtītājvalstis un 105 saņēmējvalstis).',
         },
         {
           heading: 'Kāpēc tas ir svarīgi',
@@ -111,7 +111,7 @@ export const lvRemittances: RemittanceCopy = {
         },
         {
           heading: 'Kā to lasīt',
-          body: 'Pasaules vidējais slēpj atsevišķu koridoru galējības: dažos no tiem pārvedums maksā vairākas reizes vairāk par vidējo. RPW mēra pārveduma cenu; RPW vietnē lasītāji var salīdzināt izmaksas pa koridoriem.',
+          body: 'Pasaules vidējais slēpj atsevišķu koridoru galējības: dažos no tiem pārvedums maksā vairākas reizes vairāk par vidējo. Šī datubāze mēra pārveduma cenu; tās vietnē lasītāji var salīdzināt izmaksas pa koridoriem.',
         },
       ],
       plate:
@@ -120,7 +120,7 @@ export const lvRemittances: RemittanceCopy = {
     'remittances-wdi-series': {
       tag: 'Dati · WDI',
       title: 'Personīgie pārvedumi datubāzē World Development Indicators',
-      hook: 'Pēc KNOMAD ziņojumu sērijas par migrāciju un attīstību beigām 2024. gadā Pasaules Banka joprojām publicē datubāzē World Development Indicators („Pasaules attīstības rādītāji”) valstu laika rindas par personīgajiem pārvedumiem — saņemtajiem un nosūtītajiem — USD, bet saņemtajiem arī kā IKP daļu.',
+      hook: 'Pēc Pasaules Bankas globālās partnerības migrācijas un attīstības jomā ziņojumu sērijas beigām 2024. gadā Pasaules Banka joprojām publicē datubāzē World Development Indicators („Pasaules attīstības rādītāji”) valstu laika rindas par personīgajiem pārvedumiem — saņemtajiem un nosūtītajiem — USD, bet saņemtajiem arī kā IKP daļu.',
       figure: '857',
       unit: 'mljrd. USD saņemti, pasaule, 2024',
       rows: [

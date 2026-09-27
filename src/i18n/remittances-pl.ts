@@ -17,7 +17,7 @@ export const plRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Czym jest ta liczba',
-          body: 'Pieniądze wysyłane przez migrantów do domu, do krajów o niskim i średnim dochodzie, odnotowane w oficjalnych statystykach. Według raportu Banku Światowego Migration and Development Brief 40 („Migracja i rozwój”, nr 40; czerwiec 2024 r.) w 2023 r. było to około 656 mld USD (+0,7% po silnych latach odbicia po pandemii). Aktualizacja tego samego zespołu badawczego na blogu PeopleMove z 18 grudnia 2024 r. szacuje sumę za 2024 r. na około 685 mld USD (+5,8%). Ze względu na kanały nieformalne rzeczywista suma jest większa.',
+          body: 'Pieniądze wysyłane przez migrantów do domu, do krajów o niskim i średnim dochodzie, odnotowane w oficjalnych statystykach. Według raportu Banku Światowego „Migracja i rozwój”, nr 40 (czerwiec 2024 r.) w 2023 r. było to około 656 mld USD (+0,7% po silnych latach odbicia po pandemii). Aktualizacja tego samego zespołu badawczego na blogu PeopleMove z 18 grudnia 2024 r. szacuje sumę za 2024 r. na około 685 mld USD (+5,8%). Ze względu na kanały nieformalne rzeczywista suma jest większa.',
         },
         {
           heading: 'Dlaczego to ważne',
@@ -25,11 +25,11 @@ export const plRemittances: RemittanceCopy = {
         },
         {
           heading: 'Jak to czytać',
-          body: 'To szacunki pieniędzy wysłanych w każdym roku kalendarzowym. Wzrost w poszczególnych regionach jest nierówny; tabele regionalne, na których opiera się łączna liczba, publikują raport Brief 40 i aktualizacja z grudnia 2024 r.',
+          body: 'To szacunki pieniędzy wysłanych w każdym roku kalendarzowym. Wzrost w poszczególnych regionach jest nierówny; tabele regionalne, na których opiera się łączna liczba, publikują raport Banku Światowego „Migracja i rozwój”, nr 40, i aktualizacja z grudnia 2024 r.',
         },
       ],
       plate:
-        'Wykres: przekazy pieniężne do krajów o niskim i średnim dochodzie, 2017–2023, Bank Światowy, „Migracja i rozwój”, nr 40 (Migration and Development Brief 40). Liczba to miliardy USD.',
+        'Wykres: przekazy pieniężne do krajów o niskim i średnim dochodzie, 2017–2023, Bank Światowy, „Migracja i rozwój”, nr 40. Liczba to miliardy USD.',
     },
     'remittances-top-recipients': {
       tag: 'Odbiorcy · szacunek na 2024',
@@ -47,7 +47,7 @@ export const plRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Czym jest ta lista',
-          body: 'Szacowane wpływy w 2024 r., w dolarach amerykańskich, do największych krajów odbiorców wśród gospodarek o niskim i średnim dochodzie, według aktualizacji Banku Światowego na blogu PeopleMove z 18 grudnia 2024 r. W rankingu raportu Brief 40 za 2023 r. było tych samych pięć krajów w tej samej kolejności (Indie 120 mld USD · Meksyk 66 mld USD · Chiny 50 mld USD · Filipiny 39 mld USD · Pakistan 27 mld USD).',
+          body: 'Szacowane wpływy w 2024 r., w dolarach amerykańskich, do największych krajów odbiorców wśród gospodarek o niskim i średnim dochodzie, według aktualizacji Banku Światowego na blogu PeopleMove z 18 grudnia 2024 r. W rankingu raportu Banku Światowego „Migracja i rozwój”, nr 40, za 2023 r. było tych samych pięć krajów w tej samej kolejności (Indie 120 mld USD · Meksyk 66 mld USD · Chiny 50 mld USD · Filipiny 39 mld USD · Pakistan 27 mld USD).',
         },
         {
           heading: 'Dlaczego to ważne',
@@ -75,7 +75,7 @@ export const plRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Czym jest ta lista',
-          body: 'Szacowane wpływy z przekazów jako procent PKB dla krajów najbardziej od nich zależnych, według aktualizacji PeopleMove za 2024 r. Lista raportu Brief 40 za 2023 r. była podobna (Tonga 41% · Tadżykistan 39% · Liban 31% · Samoa 28% · Nikaragua 27%).',
+          body: 'Szacowane wpływy z przekazów jako procent PKB dla krajów najbardziej od nich zależnych, według aktualizacji PeopleMove za 2024 r. Lista raportu Banku Światowego „Migracja i rozwój”, nr 40, za 2023 r. była podobna (Tonga 41% · Tadżykistan 39% · Liban 31% · Samoa 28% · Nikaragua 27%).',
         },
         {
           heading: 'Dlaczego to ważne',
@@ -92,7 +92,7 @@ export const plRemittances: RemittanceCopy = {
     'remittances-sending-cost': {
       tag: 'Ceny · RPW',
       title: 'Koszt wysyłania pieniędzy do domu',
-      hook: 'Wysyłka przekazu nadal kosztuje średnio na świecie około 6,4% kwoty — ponad dwa razy więcej niż wynoszący 3% cel w ramach Celów Zrównoważonego Rozwoju; serwis Banku Światowego Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”, RPW), zaktualizowany 18 sierpnia 2025, podaje około 6,36%.',
+      hook: 'Wysyłka przekazu nadal kosztuje średnio na świecie około 6,4% kwoty — ponad dwa razy więcej niż wynoszący 3% cel w ramach Celów Zrównoważonego Rozwoju; baza Banku Światowego o cenach przekazów pieniężnych, zaktualizowana 18 sierpnia 2025 r., podaje około 6,36%.',
       figure: '6,4',
       unit: 'procent, średnia światowa, koniec 2023',
       rows: [
@@ -103,7 +103,7 @@ export const plRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Czym jest ta liczba',
-          body: 'Baza danych Banku Światowego Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”, RPW) śledzi koszt wysłania typowego małego przekazu (często przyjmuje się kwotę wzorcową 200 USD) w setkach korytarzy między krajami. Raport Brief 40 podał średnią światową 6,4% w IV kwartale 2023 r. (wobec 6,2% rok wcześniej). Serwis RPW, ostatnio zaktualizowany 18 sierpnia 2025 r., podaje średnią światową około 6,36% w 367 korytarzach (48 krajów wysyłających i 105 odbierających).',
+          body: 'Baza Banku Światowego o cenach przekazów pieniężnych śledzi koszt wysłania typowego małego przekazu (często przyjmuje się kwotę wzorcową 200 USD) w setkach korytarzy między krajami. Raport Banku Światowego „Migracja i rozwój”, nr 40, podał średnią światową 6,4% w IV kwartale 2023 r. (wobec 6,2% rok wcześniej). Ta baza, ostatnio zaktualizowana 18 sierpnia 2025 r., podaje średnią światową około 6,36% w 367 korytarzach (48 krajów wysyłających i 105 odbierających).',
         },
         {
           heading: 'Dlaczego to ważne',
@@ -111,7 +111,7 @@ export const plRemittances: RemittanceCopy = {
         },
         {
           heading: 'Jak to czytać',
-          body: 'Średnia światowa ukrywa skrajności poszczególnych korytarzy: w niektórych przekaz kosztuje kilka razy więcej niż średnio. RPW mierzy cenę przekazu; w serwisie RPW można porównać koszty korytarz po korytarzu.',
+          body: 'Średnia światowa ukrywa skrajności poszczególnych korytarzy: w niektórych przekaz kosztuje kilka razy więcej niż średnio. Ta baza mierzy cenę przekazu; w jej serwisie można porównać koszty korytarz po korytarzu.',
         },
       ],
       plate:
@@ -120,7 +120,7 @@ export const plRemittances: RemittanceCopy = {
     'remittances-wdi-series': {
       tag: 'Dane · WDI',
       title: 'Przekazy osobiste w World Development Indicators',
-      hook: 'Po zakończeniu serii raportów KNOMAD o migracji i rozwoju w 2024 r. Bank Światowy nadal publikuje w bazie World Development Indicators („Wskaźniki rozwoju świata”) krajowe szeregi czasowe przekazów osobistych — otrzymanych i wysłanych — w USD, a otrzymanych także jako udział w PKB.',
+      hook: 'Po zakończeniu serii raportów globalnego partnerstwa Banku Światowego na rzecz migracji i rozwoju w 2024 r. Bank Światowy nadal publikuje w bazie World Development Indicators („Wskaźniki rozwoju świata”) krajowe szeregi czasowe przekazów osobistych — otrzymanych i wysłanych — w USD, a otrzymanych także jako udział w PKB.',
       figure: '857',
       unit: 'mld USD otrzymane, świat, 2024',
       rows: [
