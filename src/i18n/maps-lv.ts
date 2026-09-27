@@ -645,37 +645,37 @@ export const lv: Record<string, MapCopy> = {
   },
   'cities-and-towns': {
     title: 'Pilsētas un pilsētciemati',
-    cardMeta: 'GHS-SMOD R2023A · 2030. gada epoha · 0,02° tīkls',
-    hook: 'Pilsētu centri, pilsētciemati un lauku zeme GHSL apdzīvojuma tīklā 2030. gadam.',
+    cardMeta: 'GHS-SMOD R2023A · 2020. gada epoha · 0,02° tīkls',
+    hook: 'Pilsētu centri, pilsētciemati un lauku zeme GHSL apdzīvojuma tīklā 2020. gadam.',
     description:
-      'Plate ir GHS-SMOD R2023A 2030. gada epoha, Global Human Settlement Layer apdzīvojuma klasifikācija. 30 loka sekunžu klases ir saskaitītas ar vairākumu 0,02° šūnā. Sarkans ir pilsētas centrs (30. klase). Oranžs ir pilsētciemats vai pusblīvs sakopojums (21., 22. un 23. klase). Olīvzaļš ir lauku šūnas (11., 12. un 13. klase). Lielākā daļa sauszemes platības ir lauku klase.',
+      'Plate ir GHS-SMOD R2023A 2020. gada epoha, Global Human Settlement Layer apdzīvojuma klasifikācija: pēdējā šī izdevuma epoha, kas veidota no satelītu novērojumiem. 30 loka sekunžu klases ir saskaitītas ar vairākumu 0,02° šūnā. Sarkans ir pilsētas centrs (30. klase). Oranžs ir pilsētciemats vai pusblīvs sakopojums (21., 22. un 23. klase). Olīvzaļš ir lauku šūnas (11., 12. un 13. klase). Lielākā daļa sauszemes platības ir lauku klase.',
     whyOnShelf:
       'Tīkls rāda zemes apdzīvojuma klasi un ir zīmēts vienādi katrā valstī. Tas nav valsts pilsētu iedzīvotāju procents un nav cilvēku skaits.',
     howToRead:
       'Sarkans apzīmē pilsētu centrus, oranžs pilsētciematus un pusblīvas vietas, olīvzaļš lauku šūnas. Skaitļu skalas nav: trīs krāsas ir šīs klašu grupas. Ūdens apdzīvojuma tīklā un Natural Earth ezeri paliek nekrāsoti.',
     caveats:
-      '30. klase ir pilsētas centrs GHSL klasifikācijā, nevis katra vieta, ko valsts sauc par pilsētu. 2030. gada epoha ir R2023A izdevuma pēdējais solis un ietver tā prognozi. Plate nerāda, cik cilvēku dzīvo katrā klasē.',
+      '30. klase ir pilsētas centrs GHSL klasifikācijā, nevis katra vieta, ko valsts sauc par pilsētu. Atsevišķi: 2025. un 2030. gada epohas tajā pašā izdevumā ir modeļa prognozes, un tās nav šī karte. Plate nerāda, cik cilvēku dzīvo katrā klasē.',
     licenseNote:
-      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-SMOD R2023A, 2030. gada epoha, CC BY 4.0. Klases saskaitītas 0,02° tīklā. Robežas: Natural Earth.',
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-SMOD R2023A, 2020. gada epoha, CC BY 4.0. Klases saskaitītas 0,02° tīklā. Robežas: Natural Earth.',
     imageAlt:
-      'Equal Earth karte ar GHSL apdzīvojuma klasēm 2030. gadam: sarkani pilsētu centri, oranži pilsētciemati, olīvzaļa lauku zeme',
+      'Equal Earth karte ar GHSL apdzīvojuma klasēm 2020. gadam: sarkani pilsētu centri, oranži pilsētciemati, olīvzaļa lauku zeme',
   },
   'built-up-surface': {
     title: 'Apbūvētā virsma',
-    cardMeta: 'GHS-BUILT-S R2023A · 2030. gada epoha · šūnas procents',
-    hook: 'Cik lielu daļu no katras šūnas veido apbūvētā virsma 2030. gada GHSL tīklā.',
+    cardMeta: 'GHS-BUILT-S R2023A · 2020. gada epoha · šūnas procents',
+    hook: 'Cik lielu daļu no katras šūnas veido apbūvētā virsma 2020. gada GHSL tīklā.',
     description:
-      'Plate summē GHS-BUILT-S R2023A apbūvēto virsmu 2030. gada epohai. Kvadrātmetri no 30 loka sekunžu tīkla ir saskaitīti katrā 0,02° šūnā un dalīti ar šīs šūnas laukumu. Krāsa ir šis procents logaritmiskā skalā no 0,1 līdz aptuveni 24. Šūnas zem 0,1 procenta paliek zemes krāsā. Skalas augša ir 99,5. procentile šūnām, kurās ir kaut kāda apbūve.',
+      'Plate summē GHS-BUILT-S R2023A apbūvēto virsmu 2020. gada epohai, pēdējai šī izdevuma epohai, kas veidota no satelītu novērojumiem. Kvadrātmetri no 30 loka sekunžu tīkla ir saskaitīti katrā 0,02° šūnā un dalīti ar šīs šūnas laukumu. Krāsa ir šis procents logaritmiskā skalā no 0,1 līdz aptuveni 24. Šūnas zem 0,1 procenta paliek zemes krāsā. Skalas augša ir 99,5. procentile šūnām, kurās ir kaut kāda apbūve.',
     whyOnShelf:
       'Apbūvētā virsma ir zeme zem ēkām. Tas nav cilvēku skaits un nav gaismas, kas redzamas naktī.',
     howToRead:
       'No dzeltena uz tumši sarkanu šūnas daļa ir lielāka. Skaitlis skalā ir 0,02° šūnas procents. Šūna var pārsniegt 0,1 procentu ar blīvu kvartālu vai ar retāku apbūvi.',
     caveats:
-      'Vērtība ir apbūvētā virsma, dalīta ar šūnas laukumu, nevis stāvu platība torņos un ne juridiskā pilsētas robeža. Okeāns un ezeri nav krāsoti. 2030. gada epoha ir R2023A izdevuma pēdējais solis un ietver tā prognozi.',
+      'Vērtība ir apbūvētā virsma, dalīta ar šūnas laukumu, nevis stāvu platība torņos un ne juridiskā pilsētas robeža. Okeāns un ezeri nav krāsoti. Atsevišķi: 2025. un 2030. gada epohas tajā pašā izdevumā ir modeļa prognozes, un tās nav šī karte.',
     licenseNote:
-      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-BUILT-S R2023A, 2030. gada epoha, CC BY 4.0. Apkopots 0,02° tīklā. Robežas: Natural Earth.',
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-BUILT-S R2023A, 2020. gada epoha, CC BY 4.0. Apkopots 0,02° tīklā. Robežas: Natural Earth.',
     imageAlt:
-      'Equal Earth karte ar apbūvētās virsmas procentu katrā 0,02° šūnā 2030. gadā, no dzeltena uz sarkanu, ar skaitļu skalu',
+      'Equal Earth karte ar apbūvētās virsmas procentu katrā 0,02° šūnā 2020. gadā, no dzeltena uz sarkanu, ar skaitļu skalu',
   },
   'population-growth': {
     title: 'Iedzīvotāju skaita pieaugums',

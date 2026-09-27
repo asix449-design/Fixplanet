@@ -806,7 +806,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'cities-and-towns',
     category: 'population',
-    year: '2030',
+    year: '2020',
     sourceShort: 'GHS-SMOD R2023A',
     sourceOrg: 'European Commission JRC GHSL',
     sourceUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
@@ -814,11 +814,11 @@ export const mapMeta: MapMeta[] = [
     preview: 'cities-and-towns.jpg',
     detail: 'detail/cities-and-towns.webp',
     previewKind: 'data',
-    cardMeta: 'GHS-SMOD R2023A · 2030 epoch · 0.02° grid',
+    cardMeta: 'GHS-SMOD R2023A · 2020 epoch · 0.02° grid',
     gridSourceLabel: 'GHS-SMOD R2023A',
     sources: [
       {
-        label: 'European Commission JRC — GHSL GHS-SMOD R2023A',
+        label: 'European Commission JRC — GHSL GHS-SMOD R2023A, 2020 epoch',
         url: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
       },
       {
@@ -834,7 +834,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'built-up-surface',
     category: 'population',
-    year: '2030',
+    year: '2020',
     sourceShort: 'GHS-BUILT-S R2023A',
     sourceOrg: 'European Commission JRC GHSL',
     sourceUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
@@ -842,11 +842,11 @@ export const mapMeta: MapMeta[] = [
     preview: 'built-up-surface.jpg',
     detail: 'detail/built-up-surface.webp',
     previewKind: 'data',
-    cardMeta: 'GHS-BUILT-S R2023A · 2030 epoch · percent of cell',
+    cardMeta: 'GHS-BUILT-S R2023A · 2020 epoch · percent of cell',
     gridSourceLabel: 'GHS-BUILT-S R2023A',
     sources: [
       {
-        label: 'European Commission JRC — GHSL GHS-BUILT-S R2023A',
+        label: 'European Commission JRC — GHSL GHS-BUILT-S R2023A, 2020 epoch',
         url: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
       },
       {

@@ -150,16 +150,16 @@ const credits: Record<string, Record<Locale, string>> = {
     lv: 'Karte: Fix Planet no ANO World Population Prospects 2024, vidējais variants, 2024. gada iedzīvotāju skaita pieauguma temps. Skaitlis ir procenti gadā, skala ar centru nullē. Robežas: Natural Earth 1:50m.',
   },
   'cities-and-towns': {
-    en: 'Map: Fix Planet from the European Commission GHSL GHS-SMOD R2023A, 2030 epoch. Red is an urban centre (class 30), orange is a town or semi-dense cluster (classes 21 to 23), olive is rural (classes 11 to 13), counted on a 0.02° grid. CC BY 4.0. Boundaries: Natural Earth.',
-    ru: 'Карта: Fix Planet по данным GHSL GHS-SMOD R2023A Еврокомиссии, эпоха 2030 года. Красный — городской центр (класс 30), оранжевый — посёлок или полуплотное скопление (классы 21–23), оливковый — сельские ячейки (классы 11–13), на сетке 0,02°. CC BY 4.0. Границы: Natural Earth.',
-    pl: 'Mapa: Fix Planet na podstawie GHSL GHS-SMOD R2023A Komisji Europejskiej, epoka 2030. Czerwień to ośrodek miejski (klasa 30), pomarańcz to miasteczko lub skupisko półgęste (klasy 21–23), oliwkowy to komórki wiejskie (klasy 11–13), na siatce 0,02°. CC BY 4.0. Granice: Natural Earth.',
-    lv: 'Karte: Fix Planet no Eiropas Komisijas GHSL GHS-SMOD R2023A, 2030. gada epoha. Sarkans ir pilsētas centrs (30. klase), oranžs ir pilsētciemats vai pusblīvs sakopojums (21.–23. klase), olīvzaļš ir lauku šūnas (11.–13. klase), 0,02° tīklā. CC BY 4.0. Robežas: Natural Earth.',
+    en: 'Map: Fix Planet from the European Commission GHSL GHS-SMOD R2023A, 2020 epoch. Red is an urban centre (class 30), orange is a town or semi-dense cluster (classes 21 to 23), olive is rural (classes 11 to 13), counted on a 0.02° grid. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по данным GHSL GHS-SMOD R2023A Еврокомиссии, эпоха 2020 года. Красный — городской центр (класс 30), оранжевый — посёлок или полуплотное скопление (классы 21–23), оливковый — сельские ячейки (классы 11–13), на сетке 0,02°. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie GHSL GHS-SMOD R2023A Komisji Europejskiej, epoka 2020. Czerwień to ośrodek miejski (klasa 30), pomarańcz to miasteczko lub skupisko półgęste (klasy 21–23), oliwkowy to komórki wiejskie (klasy 11–13), na siatce 0,02°. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Eiropas Komisijas GHSL GHS-SMOD R2023A, 2020. gada epoha. Sarkans ir pilsētas centrs (30. klase), oranžs ir pilsētciemats vai pusblīvs sakopojums (21.–23. klase), olīvzaļš ir lauku šūnas (11.–13. klase), 0,02° tīklā. CC BY 4.0. Robežas: Natural Earth.',
   },
   'built-up-surface': {
-    en: 'Map: Fix Planet from the European Commission GHSL GHS-BUILT-S R2023A, 2030 epoch. The number is the percent of each 0.02° cell that is built-up surface, on a log scale from 0.1. CC BY 4.0. Boundaries: Natural Earth.',
-    ru: 'Карта: Fix Planet по данным GHSL GHS-BUILT-S R2023A Еврокомиссии, эпоха 2030 года. Число — процент застроенной поверхности в каждой ячейке 0,02°, логарифмическая шкала от 0,1. CC BY 4.0. Границы: Natural Earth.',
-    pl: 'Mapa: Fix Planet na podstawie GHSL GHS-BUILT-S R2023A Komisji Europejskiej, epoka 2030. Liczba to procent powierzchni zabudowanej w każdej komórce 0,02°, skala logarytmiczna od 0,1. CC BY 4.0. Granice: Natural Earth.',
-    lv: 'Karte: Fix Planet no Eiropas Komisijas GHSL GHS-BUILT-S R2023A, 2030. gada epoha. Skaitlis ir apbūvētās virsmas procents katrā 0,02° šūnā, logaritmiskā skala no 0,1. CC BY 4.0. Robežas: Natural Earth.',
+    en: 'Map: Fix Planet from the European Commission GHSL GHS-BUILT-S R2023A, 2020 epoch. The number is the percent of each 0.02° cell that is built-up surface, on a log scale from 0.1. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по данным GHSL GHS-BUILT-S R2023A Еврокомиссии, эпоха 2020 года. Число — процент застроенной поверхности в каждой ячейке 0,02°, логарифмическая шкала от 0,1. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie GHSL GHS-BUILT-S R2023A Komisji Europejskiej, epoka 2020. Liczba to procent powierzchni zabudowanej w każdej komórce 0,02°, skala logarytmiczna od 0,1. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Eiropas Komisijas GHSL GHS-BUILT-S R2023A, 2020. gada epoha. Skaitlis ir apbūvētās virsmas procents katrā 0,02° šūnā, logaritmiskā skala no 0,1. CC BY 4.0. Robežas: Natural Earth.',
   },
 };
 

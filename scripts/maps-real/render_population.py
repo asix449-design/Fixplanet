@@ -2,7 +2,8 @@
 """Population plates from UN WPP 2024 and GHSL R2023A.
 
 Country choropleths use Natural Earth 1:50m. Settlement grids are the
-2030 epoch of GHS-SMOD and GHS-BUILT-S (30 arc-second), counted onto a
+2020 epoch of GHS-SMOD and GHS-BUILT-S (30 arc-second), the latest
+satellite-based epoch in R2023A, counted onto a
 0.02° grid. Detail frames are 7200×3600 Equal Earth. Previews are
 1600×800. No words are drawn; numeric colour bars only.
 
@@ -49,8 +50,8 @@ from render_pass2 import colorize
 
 NE_50 = RAW / "ne_50m_admin_0_countries.geojson"
 WPP = RAW / "WPP2024_Demographic_Indicators_Medium.csv.gz"
-SMOD_TIF = RAW / "GHS_SMOD_E2030_GLOBE_R2023A_4326_30ss_V2_0.tif"
-BUILT_TIF = RAW / "GHS_BUILT_S_E2030_GLOBE_R2023A_4326_30ss_V1_0.tif"
+SMOD_TIF = RAW / "GHS_SMOD_E2020_GLOBE_R2023A_4326_30ss_V2_0.tif"
+BUILT_TIF = RAW / "GHS_BUILT_S_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif"
 RES = 0.02
 NLAT = int(180 / RES)
 NLON = int(360 / RES)

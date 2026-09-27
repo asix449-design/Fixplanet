@@ -629,16 +629,16 @@
   },
   {
     "file": "cities-and-towns.jpg",
-    "title": "GHSL GHS-SMOD R2023A settlement classes, 2030 epoch",
+    "title": "GHSL GHS-SMOD R2023A settlement classes, 2020 epoch",
     "source": "European Commission JRC, GHSL GHS-SMOD R2023A, 30 arc-second classes aggregated by majority to 0.02°",
     "url": "https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php",
     "license": "CC BY 4.0 (European Commission). Boundaries: Natural Earth",
     "kind": "data",
-    "note": "Red urban centre (30), orange towns (21–23), olive rural (11–13). No numeric bar. The 2030 epoch includes the R2023A projection."
+    "note": "Red urban centre (30), orange towns (21–23), olive rural (11–13). No numeric bar. 2020 is the latest satellite-based epoch in R2023A. The 2025 and 2030 epochs are model projections and are not this plate."
   },
   {
     "file": "built-up-surface.jpg",
-    "title": "GHSL GHS-BUILT-S R2023A built-up surface, 2030 epoch",
+    "title": "GHSL GHS-BUILT-S R2023A built-up surface, 2020 epoch",
     "source": "European Commission JRC, GHSL GHS-BUILT-S R2023A, 30 arc-second built-up square metres summed to 0.02°",
     "url": "https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php",
     "license": "CC BY 4.0 (European Commission). Boundaries: Natural Earth",

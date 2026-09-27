@@ -645,37 +645,37 @@ export const pl: Record<string, MapCopy> = {
   },
   'cities-and-towns': {
     title: 'Miasta i miasteczka',
-    cardMeta: 'GHS-SMOD R2023A · epoka 2030 · siatka 0,02°',
-    hook: 'Ośrodki miejskie, miasteczka i ląd wiejski na siatce osadnictwa GHSL dla 2030 r.',
+    cardMeta: 'GHS-SMOD R2023A · epoka 2020 · siatka 0,02°',
+    hook: 'Ośrodki miejskie, miasteczka i ląd wiejski na siatce osadnictwa GHSL dla 2020 r.',
     description:
-      'Plansza to epoka 2030 warstwy GHS-SMOD R2023A, klasyfikacji osadnictwa Global Human Settlement Layer. Klasy siatki 30 sekund kątowych są liczone większością do komórki 0,02°. Czerwień to ośrodek miejski (klasa 30). Pomarańcz to miasteczko lub skupisko półgęste (klasy 21, 22 i 23). Oliwkowy to komórki wiejskie (klasy 11, 12 i 13). Większość powierzchni lądu to klasa wiejska.',
+      'Plansza to epoka 2020 warstwy GHS-SMOD R2023A, klasyfikacji osadnictwa Global Human Settlement Layer: ostatni krok tego wydania oparty na obserwacjach satelitarnych. Klasy siatki 30 sekund kątowych są liczone większością do komórki 0,02°. Czerwień to ośrodek miejski (klasa 30). Pomarańcz to miasteczko lub skupisko półgęste (klasy 21, 22 i 23). Oliwkowy to komórki wiejskie (klasy 11, 12 i 13). Większość powierzchni lądu to klasa wiejska.',
     whyOnShelf:
       'Siatka pokazuje klasę osadnictwa lądu i jest rysowana tak samo w każdym kraju. To nie krajowy odsetek ludności miejskiej i nie liczba ludzi.',
     howToRead:
       'Czerwień oznacza ośrodki miejskie, pomarańcz miasteczka i obszary półgęste, oliwkowy komórki wiejskie. Nie ma skali liczbowej: trzy kolory to te grupy klas. Woda w siatce osadnictwa i jeziora Natural Earth zostają niezamalowane.',
     caveats:
-      'Klasa 30 to ośrodek miejski w klasyfikacji GHSL, a nie każde miejsce, które kraj nazywa miastem. Epoka 2030 jest ostatnim krokiem wydania R2023A i obejmuje jego projekcję. Plansza nie pokazuje, ilu ludzi mieszka w każdej klasie.',
+      'Klasa 30 to ośrodek miejski w klasyfikacji GHSL, a nie każde miejsce, które kraj nazywa miastem. Osobno: epoki 2025 i 2030 w tym samym wydaniu są projekcją modelu i nie są tą mapą. Plansza nie pokazuje, ilu ludzi mieszka w każdej klasie.',
     licenseNote:
-      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-SMOD R2023A, epoka 2030, CC BY 4.0. Klasy policzone na siatce 0,02°. Granice: Natural Earth.',
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-SMOD R2023A, epoka 2020, CC BY 4.0. Klasy policzone na siatce 0,02°. Granice: Natural Earth.',
     imageAlt:
-      'Mapa Equal Earth klas osadnictwa GHSL na 2030 r.: czerwone ośrodki miejskie, pomarańczowe miasteczka, oliwkowy ląd wiejski',
+      'Mapa Equal Earth klas osadnictwa GHSL na 2020 r.: czerwone ośrodki miejskie, pomarańczowe miasteczka, oliwkowy ląd wiejski',
   },
   'built-up-surface': {
     title: 'Powierzchnia zabudowana',
-    cardMeta: 'GHS-BUILT-S R2023A · epoka 2030 · procent komórki',
-    hook: 'Jaką część każdej komórki stanowi powierzchnia zabudowana na siatce GHSL z 2030 r.',
+    cardMeta: 'GHS-BUILT-S R2023A · epoka 2020 · procent komórki',
+    hook: 'Jaką część każdej komórki stanowi powierzchnia zabudowana na siatce GHSL z 2020 r.',
     description:
-      'Plansza sumuje powierzchnię zabudowaną GHS-BUILT-S R2023A dla epoki 2030. Metry kwadratowe z siatki 30 sekund kątowych są dodawane w każdej komórce 0,02° i dzielone przez pole tej komórki. Kolor to ten procent, na skali logarytmicznej od 0,1 do około 24. Komórki poniżej 0,1 procenta zostają kolorem lądu. Góra skali to 99,5. percentyl komórek, w których jest jakakolwiek zabudowa.',
+      'Plansza sumuje powierzchnię zabudowaną GHS-BUILT-S R2023A dla epoki 2020, ostatniego kroku tego wydania opartego na obserwacjach satelitarnych. Metry kwadratowe z siatki 30 sekund kątowych są dodawane w każdej komórce 0,02° i dzielone przez pole tej komórki. Kolor to ten procent, na skali logarytmicznej od 0,1 do około 24. Komórki poniżej 0,1 procenta zostają kolorem lądu. Góra skali to 99,5. percentyl komórek, w których jest jakakolwiek zabudowa.',
     whyOnShelf:
       'Powierzchnia zabudowana to grunt pod budynkami. To nie liczba ludzi i nie światła widoczne w nocy.',
     howToRead:
       'Od żółci do głębokiej czerwieni udział komórki jest większy. Liczba na skali to procent komórki 0,02°. Komórka może przekroczyć 0,1 procenta gęstą dzielnicą albo rzadszą zabudową.',
     caveats:
-      'Wartość to powierzchnia zabudowana podzielona przez pole komórki, a nie powierzchnia pięter w wieżowcach i nie prawna granica miasta. Ocean i jeziora nie są kolorowane. Epoka 2030 jest ostatnim krokiem wydania R2023A i obejmuje jego projekcję.',
+      'Wartość to powierzchnia zabudowana podzielona przez pole komórki, a nie powierzchnia pięter w wieżowcach i nie prawna granica miasta. Ocean i jeziora nie są kolorowane. Osobno: epoki 2025 i 2030 w tym samym wydaniu są projekcją modelu i nie są tą mapą.',
     licenseNote:
-      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-BUILT-S R2023A, epoka 2030, CC BY 4.0. Złożone w siatkę 0,02°. Granice: Natural Earth.',
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-BUILT-S R2023A, epoka 2020, CC BY 4.0. Złożone w siatkę 0,02°. Granice: Natural Earth.',
     imageAlt:
-      'Mapa Equal Earth procentu powierzchni zabudowanej w komórce 0,02° w 2030 r., od żółci do czerwieni, ze skalą liczb',
+      'Mapa Equal Earth procentu powierzchni zabudowanej w komórce 0,02° w 2020 r., od żółci do czerwieni, ze skalą liczb',
   },
   'population-growth': {
     title: 'Wzrost ludności',

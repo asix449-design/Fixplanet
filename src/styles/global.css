@@ -1598,6 +1598,15 @@ a.wildlife-card:hover {
   background: rgba(10, 10, 10, 0.88);
 }
 
+/* The catalog background above shares specificity with the global active
+   rule and was winning, leaving black type on a near-black pill. */
+.maps-catalog .filter-btn:hover,
+.maps-catalog .filter-btn.is-active {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: var(--black);
+}
+
 .map-card {
   display: flex;
   flex-direction: column;
