@@ -4,6 +4,7 @@ import MapCard from '../components/MapCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { mapPreviewSrc, type MapEntry } from '../data/maps';
 import { getMapsPage, getRelatedMaps, localizePath, resolveLocale } from '../i18n';
+import { realMapCredit } from '../i18n/real-map-credits';
 
 interface Props {
   map: MapEntry;
@@ -14,6 +15,10 @@ const page = getMapsPage(locale);
 const { map } = Astro.props;
 const related = getRelatedMaps(locale, map.slug);
 const preview = mapPreviewSrc(map.preview);
+const credit = realMapCredit(locale, map.slug);
+const art = map.detail ? mapPreviewSrc(map.detail) : preview;
+const artWidth = map.detail ? 7200 : 1600;
+const artHeight = map.detail ? 3600 : 800;
 const title = `${map.title} — Fix Planet`;
 ---
 
@@ -37,9 +42,11 @@ const title = `${map.title} — Fix Planet`;
     <div class="wrap">
       <div class="map-detail">
         <figure class="map-detail-art">
-          <img src={preview} alt={map.imageAlt} width="1600" height="800" />
+          <img src={art} alt={map.imageAlt} width={artWidth} height={artHeight} />
           {
-            map.previewKind === 'schematic' ? (
+            credit ? (
+              <figcaption>{credit}</figcaption>
+            ) : map.previewKind === 'schematic' ? (
               <figcaption>{page.schematicNote}</figcaption>
             ) : (
               <figcaption>

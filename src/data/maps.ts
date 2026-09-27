@@ -54,7 +54,9 @@ export type MapMeta = {
   openMapUrl: string;
   /** Hosted preview in /public/images/maps/ */
   preview: string;
-  previewKind: 'photo' | 'outline' | 'schematic';
+  previewKind: 'photo' | 'outline' | 'schematic' | 'data';
+  /** 7200×3600 frame. `preview` is the 1600×800 card derivative. */
+  detail?: string;
   /** Optional grid meta line. Defaults to sourceShort · year. */
   cardMeta?: string;
   /**
@@ -178,7 +180,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.sipri.org/databases/milex',
     openMapUrl: 'https://www.sipri.org/databases/milex',
     preview: 'military-expenditure-sipri.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/military-expenditure-sipri.webp',
+    previewKind: 'data',
     sources: [
       {
         label: 'SIPRI — Military Expenditure Database',
@@ -362,7 +365,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
     openMapUrl: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
     preview: 'consumption-co2-emissions.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/consumption-co2-emissions.webp',
+    previewKind: 'data',
     cardMeta: 'Global Carbon Project · OWID · trade-adjusted',
     sources: [
       {
@@ -386,22 +390,23 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'nitrogen-dioxide-no2',
     category: 'pollution',
-    year: 'multi-day average',
+    year: '2024',
     sourceShort: 'Sentinel-5P',
-    sourceOrg: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
-    sourceUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
-    openMapUrl: 'https://maps.s5p-pal.com/no2-tropospheric/',
+    sourceOrg: 'KNMI / TEMIS, from Copernicus Sentinel-5P TROPOMI',
+    sourceUrl: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
+    openMapUrl: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
     preview: 'nitrogen-dioxide-no2.jpg',
-    previewKind: 'schematic',
-    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    detail: 'detail/nitrogen-dioxide-no2.webp',
+    previewKind: 'data',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · 2024 annual mean',
     sources: [
       {
-        label: 'Copernicus Sentinel-5P / TROPOMI (S5P-PAL)',
-        url: 'https://maps.s5p-pal.com/no2-tropospheric/',
+        label: 'KNMI / TEMIS — monthly mean tropospheric NO₂ from TROPOMI',
+        url: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
       },
       {
-        label: 'S5P-PAL — Total Column NO₂',
-        url: 'https://maps.s5p-pal.com/no2/',
+        label: 'S5P-PAL — tropospheric NO₂ (living portal, not this annual mean)',
+        url: 'https://maps.s5p-pal.com/no2-tropospheric/',
       },
       {
         label: 'ESA — Sentinel-5P mission',
@@ -426,7 +431,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
     openMapUrl: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
     preview: 'mismanaged-plastic-waste.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/mismanaged-plastic-waste.webp',
+    previewKind: 'data',
     cardMeta: 'OWID · Meijer et al. 2021',
     sources: [
       {
@@ -460,7 +466,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
     openMapUrl: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
     preview: 'methane-emissions.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/methane-emissions.webp',
+    previewKind: 'data',
     cardMeta: 'EDGAR JRC · OWID · CH₄',
     sources: [
       {
@@ -513,7 +520,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.usgs.gov/programs/mineral-resources-program',
     openMapUrl: 'https://mrdata.usgs.gov/',
     preview: 'mineral-resources.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/mineral-resources.webp',
+    previewKind: 'data',
   },
   {
     slug: 'world-countries',
@@ -606,13 +614,14 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'forest-cover-loss',
     category: 'forests',
-    year: '2001–2023',
-    sourceShort: 'Hansen / GFW',
+    year: '2001–2024',
+    sourceShort: 'Hansen GFC',
     sourceOrg: 'Hansen / University of Maryland; Global Forest Watch; NASA',
     sourceUrl: 'https://www.globalforestwatch.org/',
     openMapUrl: 'https://www.globalforestwatch.org/map/',
     preview: 'forest-cover-loss.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/forest-cover-loss.webp',
+    previewKind: 'data',
   },
   {
     slug: 'protected-areas',
@@ -628,16 +637,17 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'intact-forest-landscapes',
     category: 'forests',
-    year: '2000–2025',
+    year: '2020',
     sourceShort: 'IFL',
     sourceOrg: 'Intact Forest Landscapes Mapping Team (UMD GLAD and partners)',
     sourceUrl: 'https://intactforests.org/data.ifl.html',
     openMapUrl: 'https://intactforests.org/data.ifl.html',
     preview: 'intact-forest-landscapes.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/intact-forest-landscapes.webp',
+    previewKind: 'data',
     sources: [
       {
-        label: 'Intact Forest Landscapes — data download (IFL 2000–2025)',
+        label: 'Intact Forest Landscapes — data download (this plate is 2020)',
         url: 'https://intactforests.org/data.ifl.html',
       },
       {
@@ -657,14 +667,19 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'mangrove-extent',
     category: 'forests',
-    year: '1985–2025',
-    sourceShort: 'GMW',
+    year: '2020',
+    sourceShort: 'GMW v3',
     sourceOrg: 'Global Mangrove Watch (JAXA, Aberystwyth University, and partners)',
     sourceUrl: 'https://www.globalmangrovewatch.org/',
     openMapUrl: 'https://www.globalmangrovewatch.org/',
     preview: 'mangrove-extent.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/mangrove-extent.webp',
+    previewKind: 'data',
     sources: [
+      {
+        label: 'Zenodo — Global Mangrove Watch v3, 2020',
+        url: 'https://zenodo.org/records/6894273',
+      },
       {
         label: 'Global Mangrove Watch — map platform',
         url: 'https://www.globalmangrovewatch.org/',
@@ -738,7 +753,8 @@ export const mapMeta: MapMeta[] = [
     sourceUrl: 'https://www.wri.org/aqueduct',
     openMapUrl: 'https://www.wri.org/applications/aqueduct/water-risk-atlas/',
     preview: 'water-stress.jpg',
-    previewKind: 'schematic',
+    detail: 'detail/water-stress.webp',
+    previewKind: 'data',
   },
   {
     slug: 'population-density',
@@ -944,27 +960,26 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'groundwater-whymap',
     category: 'water',
-    year: '2008',
-    sourceShort: 'BGR / UNESCO · WHYMAP',
-    sourceOrg: 'BGR / UNESCO — WHYMAP Groundwater Resources of the World',
-    sourceUrl: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
-    openMapUrl: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
+    year: '2023',
+    sourceShort: 'WRI Aqueduct 4.0',
+    sourceOrg: 'World Resources Institute, Aqueduct 4.0 groundwater table decline',
+    sourceUrl: 'https://www.wri.org/data/aqueduct-global-maps-40-data',
+    openMapUrl: 'https://www.wri.org/applications/aqueduct/water-risk-atlas/',
     preview: 'groundwater-whymap.jpg',
-    previewKind: 'schematic',
-    cardMeta: 'BGR / UNESCO · WHYMAP · Groundwater Resources of the World',
+    detail: 'detail/groundwater-whymap.webp',
+    previewKind: 'data',
     sources: [
       {
-        label: 'BGR / UNESCO — WHYMAP Groundwater Resources of the World',
-        url: 'https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html',
-      },
-      { label: 'WHYMAP hub', url: 'https://www.whymap.org/' },
-      {
-        label: 'WHYMAP GWR shapefile (BGR download)',
-        url: 'https://download.bgr.de/bgr/grundwasser/whymap/shp/WHYMAP_GWR_v1.zip',
+        label: 'WRI Aqueduct 4.0',
+        url: 'https://www.wri.org/data/aqueduct-global-maps-40-data',
       },
       {
-        label: 'Richts et al. 2011 (WHYMAP chapter, Springer)',
-        url: 'https://doi.org/10.1007/978-90-481-3426-7_10',
+        label: 'Aqueduct Water Risk Atlas',
+        url: 'https://www.wri.org/applications/aqueduct/water-risk-atlas/',
+      },
+      {
+        label: 'Kuzma et al. 2023, Aqueduct 4.0 technical note',
+        url: 'https://doi.org/10.46830/writn.23.00061',
       },
     ],
   },
@@ -1028,15 +1043,19 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'flood-hazard-aqueduct',
     category: 'water',
-    year: '2020',
-    sourceShort: 'WRI · Aqueduct Floods',
-    sourceOrg: 'World Resources Institute, Aqueduct Floods',
-    sourceUrl: 'https://www.wri.org/data/aqueduct-floods',
-    openMapUrl: 'https://www.wri.org/applications/aqueduct/floods/',
+    year: '2023',
+    sourceShort: 'WRI Aqueduct 4.0',
+    sourceOrg: 'World Resources Institute, Aqueduct 4.0 riverine flood risk',
+    sourceUrl: 'https://www.wri.org/data/aqueduct-global-maps-40-data',
+    openMapUrl: 'https://www.wri.org/applications/aqueduct/water-risk-atlas/',
     preview: 'flood-hazard-aqueduct.jpg',
-    previewKind: 'schematic',
-    cardMeta: 'WRI · Aqueduct Floods · riverine & coastal',
+    detail: 'detail/flood-hazard-aqueduct.webp',
+    previewKind: 'data',
     sources: [
+      {
+        label: 'WRI Aqueduct 4.0',
+        url: 'https://www.wri.org/data/aqueduct-global-maps-40-data',
+      },
       {
         label: 'WRI — Aqueduct Floods',
         url: 'https://www.wri.org/data/aqueduct-floods',

@@ -210,16 +210,16 @@ export const pl: Record<string, MapCopy> = {
   },
   'nitrogen-dioxide-no2': {
     title: 'Dwutlenek azotu (NO₂)',
-    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · S5P-PAL',
+    cardMeta: 'Copernicus Sentinel-5P · TROPOMI · średnia 2024',
     hook: 'Satelitarna kolumna dwutlenku azotu nad miastami, przemysłem i żeglugą — zanieczyszczenie ze spalania, nie to samo co masa PM2.5.',
     description:
-      'NO₂ z TROPOMI / Sentinel-5P na portalu S5P-PAL (średnia ruchoma). Inny obiekt niż żywa mapa PM2.5.',
+      'Troposferyczny NO₂ z TROPOMI / Sentinel-5P. Płyta to średnia roczna 2024: średnia dwunastu miesięcznych siatek KNMI/TEMIS. Inny obiekt niż żywa mapa PM2.5.',
     whyOnShelf: 'Inny obiekt niż żywa mapa PM2.5. Zanieczyszczenie ze spalania, nie masa cząstek.',
     howToRead:
-      'Chmury zasłaniają powierzchnię; jasna kolumna ≠ roczny limit. Otwierać tropospheric NO₂; podgląd — przegląd Fix Planet.',
+      'Kolor to skala logarytmiczna kolumny za 2024 rok. Czyste tło zostaje mapą bazową; pomarańcz i głęboka czerwień to ogniska miejskie i przemysłowe. To nie roczny limit i nie mapa PM2.5.',
     caveats: 'Chmury zasłaniają powierzchnię. Jasna kolumna ≠ roczny limit. To nie mapa PM2.5.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet, nie kadr marketingowy ESA ani S5P-PAL. Atrybucja: Copernicus Sentinel-5P / TROPOMI.',
+      'Podgląd to przegląd Fix Planet średniej rocznej kolumny NO₂ za 2024, nie kadr marketingowy ESA ani TEMIS. Atrybucja: Copernicus Sentinel-5P / TROPOMI i KNMI/TEMIS.',
     imageAlt:
       'Przegląd Fix Planet: bursztynowe kolumny dwutlenku azotu nad miastami, przemysłem i żeglugą — nie choropleth PM2.5 i nie kadr ESA',
   },
@@ -300,13 +300,13 @@ export const pl: Record<string, MapCopy> = {
     description:
       'Hansen i zespół z University of Maryland mapują roczną utratę pokrywy drzewnej z Landsata. Global Forest Watch (WRI) serwuje warstwę. Obserwacje NASA stoją za tymi samymi satelitami. Utrata to zmiana korony, nie automatycznie zamiana lasu pierwotnego.',
     howToRead:
-      'Różowe albo czerwone piksele to korona zniknięta w danym roku. Plantacje, pożar i wiatrołom też liczą się jako utrata. „Przyrost” jest wolniejszy i łatwiej go przeoczyć. Zbliżaj; suma kraju chowa frontier.',
+      'Kolor to udział pikseli 30 m w komórce, w której pokrywa drzewna zniknęła od 2001 do 2024 roku. Plantacje, pożar i wiatrołom też liczą się jako utrata. Suma kraju chowa granicę wyrębu. Warstwę interaktywną serwuje Global Forest Watch.',
     caveats:
-      'Pokrywa drzewna ≠ las pierwotny. Część utraty to legalny wyrąb. Część „nienaruszonego” lasu jest już zdegradowana. GFW dokumentuje definicje. Hostujemy fizyczny podgląd Ziemi, nie przekolorowany zestaw kafelków Hansena.',
+      'Pokrywa drzewna to nie las pierwotny. Część utraty to legalny wyrąb. Część nienaruszonego lasu jest już zdegradowana. Global Forest Watch dokumentuje definicje.',
     licenseNote:
-      'Dane Hansen / GFW zwykle są dostępne na CC BY 4.0 z cytatem. Interaktywną warstwę utraty otwórz na mapie GFW.',
+      'Hansen Global Forest Change jest na licencji CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). Mapa liczy piksele lossyear od 2001 do 2024 roku na siatce 0,02°. Warstwę interaktywną otwórz na mapie GFW.',
     imageAlt:
-      'Ciemnozielona mapa świata z magenta plamami znanych frontów utraty pokrywy drzewnej w Amazonii, Kongu, Azji Południowo-Wschodniej i pasach borealnych',
+      'Mapa świata udziału pikseli z utratą pokrywy drzewnej od 2001 do 2024 roku: ciemniej tam, gdzie utracono większą część komórki',
   },
   'protected-areas': {
     title: 'Obszary chronione',
@@ -513,18 +513,20 @@ export const pl: Record<string, MapCopy> = {
       'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project — pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
   },
   'groundwater-whymap': {
-    title: 'Zasoby wód podziemnych (WHYMAP)',
-    hook: 'Globalne środowiska hydrogeologiczne i potencjał zasilania z WHYMAP — mapa bazowa wód podziemnych, nie stres Aqueduct i nie krajowe rachunki FAO.',
+    title: 'Spadek zwierciadła wód podziemnych',
+    hook: 'Gdzie Aqueduct 4.0 ocenia opadanie zwierciadła wód podziemnych — wynik ryzyka zlewni, nie mapa warstw wodonośnych WHYMAP i nie dziennik studni.',
     description:
-      'Mapa Groundwater Resources of the World (BGR + UNESCO). Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres). Kolory = typy środowisk i zasilanie, nie ranking krajów.',
-    whyOnShelf: 'Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres).',
-    howToRead: 'Kolory = typy środowisk i zasilanie, nie ranking krajów.',
+      'WRI Aqueduct 4.0 podaje bazowy wskaźnik spadku zwierciadła wód podziemnych dla podzlewni, w skali od 0 do 5. To modelowany spadek, nie mapa środowisk WHYMAP i nie wynik stresu wodnego z sąsiedniej karty.',
+    whyOnShelf:
+      'Stres wodny porównuje popyt z zasobem. Ta karta to osobny wskaźnik Aqueduct o opadaniu zwierciadła.',
+    howToRead:
+      'Kolor to wynik Aqueduct od 0 do 5. Szary ląd nie ma wyniku w warstwie bazowej. Wysoki wynik to modelowany spadek, nie zmierzona studnia.',
     caveats:
-      'Kolory = typy środowisk i zasilanie, nie ranking krajów. Nie AQUASTAT i nie Aqueduct. Nie IGRAC GGIS.',
+      'Wiele zlewni nie ma wyniku: szary to brak danych, nie „brak wody”. To model, nie mapa WHYMAP i nie IGRAC GGIS.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet rodzin środowisk hydrogeologicznych WHYMAP (niebieskie baseny osadowe / zielone złożone / brązowe lokalne-płytkie), nie oficjalna mapa BGR i nie choropleth stresu Aqueduct. PDF i shapefile są na stronie WHYMAP. Cytujcie BGR i UNESCO / WHYMAP.',
+      'Aqueduct 4.0 jest na licencji CC BY 4.0 (World Resources Institute). Mapa to bazowy wynik spadku zwierciadła. Cytujcie Kuzma et al. 2023. To nie jest mapa WHYMAP.',
     imageAlt:
-      'Mapa świata z niebieskimi plamami basenów osadowych, zielonymi pasami fałdowymi i brązowymi lokalnymi płytkimi warstwami wodonośnymi — schemat hydrogeologii, nie stres wodny',
+      'Mapa świata wyników Aqueduct 4.0 dla spadku zwierciadła wód podziemnych: ciemniej tam, gdzie model pokazuje spadek, szaro tam, gdzie wyniku brak',
   },
   'global-lakes-hydrolakes': {
     title: 'Globalne jeziora (HydroLAKES)',
@@ -554,46 +556,47 @@ export const pl: Record<string, MapCopy> = {
       'Mapa świata z turkusową wodą otwartą, zielonymi bagnami, brązowym torfem i złotą wodą okresową — klasy mokradeł, nie brzegi jezior',
   },
   'flood-hazard-aqueduct': {
-    title: 'Zagrożenie powodziowe (Aqueduct Floods)',
-    hook: 'Modelowane zagrożenie i ekspozycja powodzi rzecznych i przybrzeżnych — ryzyko zalania, nie ten sam bazowy stres wodny co na karcie Water stress.',
+    title: 'Ryzyko powodzi rzecznych',
+    hook: 'Bazowe ryzyko powodzi rzecznych Aqueduct 4.0 — wynik od 0 do 5, nie stres wodny i nie mapa głębokości zalania.',
     description:
-      'Osobne narzędzie WRI od Water Risk Atlas. Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
-    whyOnShelf: 'Osobne narzędzie WRI od Water Risk Atlas.',
-    howToRead: 'Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
+      'Mapa to bazowy wynik ryzyka powodzi rzecznych WRI Aqueduct 4.0 dla podzlewni, od 0 do 5. To wynik modelu, nie głębokość wody. Narzędzie Aqueduct Floods publikuje głębokość zalania według okresu powrotu dla rzek i wybrzeża; tych rastrów tu nie ma.',
+    whyOnShelf: 'Stres wodny porównuje popyt z odpływem. Ta karta to osobny wynik Aqueduct dla ryzyka powodzi rzecznych.',
+    howToRead:
+      'Kolor to wynik od 0 do 5. Wyższy wynik to wyższe modelowane ryzyko powodzi rzecznej, nie głębokość wody i nie prognoza, że miasto zaleje jutro.',
     caveats:
-      'Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze. Nie bazowy stres wodny Aqueduct Water Risk Atlas.',
+      'Wynik jest modelem. To nie głębokość zalania i nie wynik stresu wodnego. Mapy głębokości i ryzyko przybrzeżne zostają w Aqueduct Floods.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet rejonów zalania rzecznego i przybrzeżnego, nie oficjalna grafika WRI Floods i nie drugi choropleth bazowego stresu wodnego. Dane Aqueduct zwykle są CC BY z przypisaniem WRI. Interaktywne mapy są w narzędziu Aqueduct Floods.',
+      'Aqueduct 4.0 jest na licencji CC BY 4.0 (World Resources Institute). Mapa to bazowy wynik ryzyka powodzi rzecznych, nie raster głębokości Aqueduct Floods i nie wynik stresu wodnego. Cytujcie Kuzma et al. 2023.',
     imageAlt:
-      'Mapa świata ze średnioniebieskimi korytarzami powodzi rzecznymi i jasnym cyjanem plam przybrzeżnych — zagrożenie powodziowe, nie bazowy stres wodny',
+      'Mapa świata wyników ryzyka powodzi rzecznych Aqueduct 4.0: ciemniej tam, gdzie wynik jest wyższy',
   },
   'intact-forest-landscapes': {
     title: 'Nienaruszone krajobrazy leśne (IFL)',
-    hook: 'Poligony Potapov / IFL Mapping Team (aktualizacje 2000–2025) — integralność dzikiej mozaiki leśnej, nie roczne piksele Hansena i nie granice parków.',
+    hook: 'Nienaruszone krajobrazy leśne w 2020 roku — dzika mozaika leśna zespołu IFL, nie roczne piksele Hansena i nie granice parków.',
     description:
-      'Nienaruszone krajobrazy leśne (IFL) to duże mozaiki lasu i powiązanych ekosystemów bez wykrytej przemysłowej infrastruktury. Zespół IFL (UMD GLAD i partnerzy) publikuje zasięgi globalne na lata 2000, 2013, 2016, 2020 i 2025 na CC BY 4.0. Metoda: Potapov et al., Science Advances 2017; aktualny zasięg to warstwa 2025. To nie FAO land use i nie WDPA.',
+      'Nienaruszone krajobrazy leśne (IFL) to duże mozaiki lasu bez wykrytej przemysłowej infrastruktury. Ta płyta to zasięg 2020 roku od zespołu IFL (UMD GLAD i partnerzy), CC BY 4.0. Ten sam zespół publikuje też lata 2000, 2013, 2016 i 2025. Metoda: Potapov et al., Science Advances 2017.',
     howToRead:
-      'Kolorowa łatka to poligon IFL w roku mapy — nie plantacja i nie granica parku. Ubytek między latami to fragmentacja albo przemysłowe wejście w dawny IFL; może różnić się od sum utraty koron Hansena.',
+      'Zielona łatka to poligon IFL w warstwie 2020 — nie plantacja i nie granica parku. Różnica między opublikowanymi latami to fragmentacja albo przemysłowe wejście; może różnić się od sum utraty koron Hansena.',
     caveats:
       'IFL to klasa dzikiej mozaiki o minimalnej wielkości (około 500 km² bez wykrytej infrastruktury przemysłowej), nie cały las pierwotny i nie zapas węgla. Las może być pierwotny i nadal nie być IFL, jeśli drogi albo zręby go tną. Granice przesuwają się między latami aktualizacji. Drobne albo podokapowe użytkowanie satelita może pominąć.',
     licenseNote:
-      'GeoPackage są na intactforests.org. Opcjonalna przeglądarka to mapa IFL Greenpeace. Archiwum 2000–2025 jest na Zenodo. Otwarty tekst metody to Potapov et al. 2017 w PMC. Podgląd to schemat Fix Planet dużych dzikich bloków, nie poligony IFL.',
+      'Mapa to zasięg Intact Forest Landscapes z 2020 roku (IFL Mapping Team, CC BY 4.0). Późniejsze aktualizacje sięgają 2025 roku; ta płyta to warstwa 2020. Cytujcie zespół IFL i Potapov et al. 2017. Pliki są na intactforests.org i w Zenodo.',
     imageAlt:
       'Ciemna mapa świata z jasnozielonymi blokami dzikiego lasu w Amazonii, Kotlinie Konga, borealnej Kanadzie i Syberii oraz na Nowej Gwinei — nienaruszone krajobrazy, nie roczne piksele utraty koron',
   },
   'mangrove-extent': {
     title: 'Zasięg namorzyn',
-    hook: 'Global Mangrove Watch — roczny zasięg namorzyn (seria v4.1 do 2025) — las pływowy, nie śródlądowy Hansen i nie parki WDPA.',
+    hook: 'Global Mangrove Watch, wersja 3, zasięg 2020 — las pływowy, nie śródlądowy Hansen i nie parki WDPA.',
     description:
-      'Global Mangrove Watch (GMW) mapuje szacowany zasięg lasów namorzynowych i jego zmianę. Wersja 4.1 to szereg roczny od 1985 do 2025 (JAXA Kyoto & Carbon, Aberystwyth University i partnerzy). Platforma pokazuje zasięg, zmianę netto i alerty; rastry i wektory są na Zenodo i w JAXA. To nie rafy i nie obszary chronione.',
+      'Mapa to zasięg Global Mangrove Watch wersji 3 na rok 2020: udział pikseli namorzynu na siatce 0,02° (Bunting et al., CC BY 4.0). Późniejsze wersje, w tym roczny szereg v4.1 od 1985 do 2025, publikują JAXA i Zenodo. Ta płyta to zasięg v3 z 2020 roku, nie ten późniejszy szereg.',
     howToRead:
-      'Piksel namorzynu to las pływowy klasyfikatora GMW w danym roku — nie rafa koralowa, nie mapa solnisk i nie status ochrony. Porównuj lata w GMW; nie mieszaj z sumami Hansena.',
+      'Ciemniejsza zieleń to większy udział pikseli namorzynu w 2020 roku. To las pływowy klasyfikatora GMW, nie rafa, nie solnisko i nie status ochrony. Nie mieszaj tego zasięgu z sumami Hansena.',
     caveats:
       'Mapy namorzyn słabiej radzą sobie na mulistych krawędziach, stawach akwakultury i rzadkiej frędzli. Zmiana roczna to nie to samo co prawne wylesienie. Węgiel i gatunki to osobne produkty tej samej platformy. Dokładność zależy od kraju i zmętnienia. Nasadzenia odtworzeniowe mogą spóźniać się w klasyfikatorze. Alerty to przesiew, potem lokalny obraz.',
     licenseNote:
-      'Warstw GMW używają krajowe panele i projekty wybrzeża. Stos v4.1 do GIS opisuje JAXA. Podgląd to schemat Fix Planet znanych wybrzeży namorzynowych, nie raster GMW. Mapa jest na globalmangrovewatch.org.',
+      'Mapa to Global Mangrove Watch wersji 3, zasięg 2020 (CC BY 4.0; Bunting et al.). Późniejsze wersje GMW istnieją; ta płyta to v3 na rok 2020. Żywa platforma jest na globalmangrovewatch.org.',
     imageAlt:
-      'Mapa świata z turkusową frędzlą lasu pływowego wzdłuż tropikalnych wybrzeży — zasięg namorzyn, nie śródlądowa utrata koron',
+      'Mapa świata zasięgu namorzyn Global Mangrove Watch v3 w 2020 roku: ciemnozielona frędzla wzdłuż tropikalnych wybrzeży',
   },
   'primary-humid-tropical-forests': {
     title: 'Pierwotne wilgotne lasy tropikalne',

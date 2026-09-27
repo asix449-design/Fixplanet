@@ -13,6 +13,8 @@ export type ForestAtlasSlug = (typeof forestAtlasSlugs)[number];
 export type ForestAtlasMeta = {
   slug: ForestAtlasSlug;
   preview: string;
+  /** 7200×3600 frame when the layer is drawn from the source data. */
+  detail?: string;
   sourceOrg: string;
   /** Grid “Source:” link text. First URL in `sources` is the href. */
   sourceLabel: string;
@@ -28,7 +30,8 @@ export const forestAtlasLandCredit =
 export const forestAtlasMeta: ForestAtlasMeta[] = [
   {
     slug: 'canopy-height',
-    preview: 'canopy-height.svg',
+    preview: 'canopy-height.jpg',
+    detail: 'detail/canopy-height.webp',
     sourceOrg: 'NASA GEDI / ORNL DAAC',
     sourceLabel: 'NASA GEDI L3 / ORNL DAAC',
     sourceUrl:
@@ -58,7 +61,8 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'aboveground-biomass',
-    preview: 'aboveground-biomass.svg',
+    preview: 'aboveground-biomass.jpg',
+    detail: 'detail/aboveground-biomass.webp',
     sourceOrg: 'NASA GEDI / ORNL DAAC',
     sourceLabel: 'NASA GEDI L4B / ORNL DAAC',
     sourceUrl:
@@ -82,10 +86,11 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'burned-area',
-    preview: 'burned-area.svg',
-    sourceOrg: 'NASA LP DAAC / FIRMS',
-    sourceLabel: 'NASA MODIS MCD64A1 / FIRMS',
-    sourceUrl: 'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd64a1-061',
+    preview: 'burned-area.jpg',
+    detail: 'detail/burned-area.webp',
+    sourceOrg: 'NASA MODIS MCD64A1',
+    sourceLabel: 'MODIS MCD64CMQ',
+    sourceUrl: 'https://lpdaac.usgs.gov/products/mcd64a1v061/',
     usesCoastline: true,
     sources: [
       cite(
@@ -116,9 +121,10 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'ecological-zones',
-    preview: 'ecological-zones.svg',
+    preview: 'ecological-zones.jpg',
+    detail: 'detail/ecological-zones.webp',
     sourceOrg: 'FAO / FRA',
-    sourceLabel: 'FAO Global Ecological Zones / FRA',
+    sourceLabel: 'FAO GEZ 2010',
     sourceUrl: 'https://data.apps.fao.org/catalog/dataset/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b',
     usesCoastline: true,
     sources: [

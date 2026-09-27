@@ -17,6 +17,7 @@ import {
   oceanAtlasSectionLabels,
   resolveLocale,
 } from '../i18n';
+import { realMapCredit } from '../i18n/real-map-credits';
 
 interface Props {
   slug: OceanAtlasSlug;
@@ -30,6 +31,10 @@ if (!map) {
   throw new Error(`Unknown oceans atlas slug: ${Astro.props.slug}`);
 }
 const preview = oceanAtlasPreviewSrc(map.preview);
+const credit = realMapCredit(locale, map.slug);
+const art = map.detail ? oceanAtlasPreviewSrc(map.detail) : preview;
+const artWidth = map.detail ? 7200 : 1600;
+const artHeight = map.detail ? 3600 : 800;
 const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
 ---
 
@@ -57,10 +62,18 @@ const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
         <figure class="map-detail-art forest-map-art">
-          <img src={preview} alt={map.blurb} width="1600" height="800" />
+          <img src={art} alt={map.blurb} width={artWidth} height={artHeight} />
           <figcaption>
-            {map.sourceOrg}. {maps.schematicNote}
-            {map.usesCoastline ? <><br />{oceanAtlasLandCredit}</> : null}
+            {
+              credit ? (
+                credit
+              ) : (
+                <>
+                  {map.sourceOrg}. {maps.schematicNote}
+                  {map.usesCoastline ? <><br />{oceanAtlasLandCredit}</> : null}
+                </>
+              )
+            }
           </figcaption>
         </figure>
         <div class="prose map-detail-copy forest-frame-copy">
