@@ -1025,30 +1025,35 @@ def methane_emissions() -> None:
     )
 
 
+def _shade_countries(groups: dict[str, list[str]], ocean: str, land: str, ant: str, stroke: str, dest: str) -> None:
+    """Country shading only. No legend and no footer — these previews are reused in every locale."""
+    css = f"""
+    .oceanxx {{ fill: {ocean} !important; stroke: none !important; }}
+    .landxx {{ fill: {land} !important; stroke: {stroke} !important; stroke-width: 0.28 !important; }}
+    .antxx {{ fill: {ant} !important; }}
+    .circlexx, .subxx, .noxx, .unxx {{ opacity: 0 !important; }}
+    {css_fills(groups)}
+    """
+    save_jpg(render_svg_image(css, ""), dest)
+
+
 def world_population() -> None:
-    """Log-scale orientation of country totals. Not WPP figures and not density."""
+    """Log-scale orientation of country totals. Shading only."""
     highest = "in cn".split()
     high = "us id pk ng br bd".split()
     mid = "ru mx jp et ph eg cd vn ir tr de".split()
-    conflicts_schematic(
+    _shade_countries(
         {"#0b3a5b": highest, "#1f6aa5": high, "#7eb0d4": mid},
         ocean="#d5e4ee",
         land="#e7e2d8",
         ant="#f4f7f8",
         stroke="#8a938c",
         dest="world-population.jpg",
-        swatches=[
-            ((11, 58, 91), "Highest band"),
-            ((31, 106, 165), "High band"),
-            ((126, 176, 212), "Mid band"),
-            ((231, 226, 216), "Not classed here"),
-        ],
-        credit="Fix Planet overview · country population · log-scale bands · not WPP figures · not density · UN WPP 2024 / OWID",
     )
 
 
 def cities_and_towns() -> None:
-    """DegURBA world shares (cities / towns / rural). Not a national % urban choropleth."""
+    """DegURBA world shares as an unlabeled color bar. Not a national % urban choropleth."""
     css = """
     .oceanxx { fill: #d5e3ea !important; stroke: none !important; }
     .landxx { fill: #e7e0d4 !important; stroke: #8a8174 !important; stroke-width: 0.28 !important; }
@@ -1057,33 +1062,22 @@ def cities_and_towns() -> None:
     """
     im = render_svg_image(css, "")
     draw = ImageDraw.Draw(im)
-    font = load_font(18)
-    x0, y0, bar_h, total_w = 48, 688, 32, 1080
+    x0, y0, bar_h, total_w = 48, 720, 36, 1080
     segments = [
-        (0.45, (31, 78, 121), "45%"),
-        (0.36, (168, 124, 58), "36%"),
-        (0.19, (90, 122, 90), "19%"),
+        (0.45, (31, 78, 121)),
+        (0.36, (168, 124, 58)),
+        (0.19, (90, 122, 90)),
     ]
     x = x0
-    for frac, color, label in segments:
+    for frac, color in segments:
         w = int(total_w * frac)
         draw.rectangle((x, y0, x + w - 2, y0 + bar_h), fill=color)
-        draw.text((x + 10, y0 + 6), label, fill=(255, 255, 255), font=font)
         x += w
-    im = legend_bar(
-        im,
-        [
-            ((31, 78, 121), "Cities"),
-            ((168, 124, 58), "Towns"),
-            ((90, 122, 90), "Rural"),
-        ],
-        "Fix Planet overview · DegURBA cities / towns / rural · not night lights · UN WUP 2025",
-    )
     save_jpg(im, "cities-and-towns.jpg")
 
 
 def built_up_surface() -> None:
-    """GHSL-style built-up intensity. Not night lights and not a density rainbow."""
+    """GHSL-style built-up intensity. Shading only."""
     css = """
     .oceanxx { fill: #c5d5df !important; stroke: none !important; }
     .landxx { fill: #e6dcc8 !important; stroke: #8d8270 !important; stroke-width: 0.28 !important; }
@@ -1106,34 +1100,23 @@ def built_up_surface() -> None:
         (1280, 620, 16, 10, field, 0.45),
         (780, 760, 14, 10, field, 0.4),
     ]
-    render_svg(
-        css,
-        ellipses(blobs),
-        "built-up-surface.jpg",
-        "Fix Planet overview · built-up surface · not night lights · not density · EC GHSL R2023A",
-    )
+    save_jpg(render_svg_image(css, ellipses(blobs)), "built-up-surface.jpg")
 
 
 def population_growth() -> None:
-    """Diverging growth-rate orientation. Named rapid-growth countries plus a slow band."""
+    """Diverging growth-rate orientation. Shading only."""
     # Rapid through 2054, named in WPP 2024: Angola, CAR, DRC, Niger, Somalia.
     # Slow band is an orientation of places the same revision treats as already peaked
     # (China, Germany, Japan, Russian Federation) — not the full list of 63.
     fast = "ao cf cd ne so".split()
     slow = "cn de jp ru".split()
-    conflicts_schematic(
+    _shade_countries(
         {"#b6402a": fast, "#3d6b8c": slow},
         ocean="#d7e0e6",
         land="#e6e2d8",
         ant="#f4f1ea",
         stroke="#8a8474",
         dest="population-growth.jpg",
-        swatches=[
-            ((182, 64, 42), "Faster growth"),
-            ((61, 107, 140), "Slower change"),
-            ((230, 226, 216), "Not classed here"),
-        ],
-        credit="Fix Planet overview · annual growth rate · not WPP rates · UN WPP 2024 / OWID",
     )
 
 

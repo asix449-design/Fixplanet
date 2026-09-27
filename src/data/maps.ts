@@ -769,29 +769,28 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
     cardMeta: 'UN WPP 2024 · ~8.2 billion (2024) · country totals',
     sources: [
-      { label: 'UN WPP 2024', url: 'https://population.un.org/wpp/' },
+      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
       {
-        label: 'UN DESA PD WPP 2024',
+        label: 'UN DESA — World Population Prospects 2024',
         url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
       },
       {
-        label: 'DESA Publications WPP 2024',
+        label: 'UN DESA — WPP 2024: Summary of Results',
         url: 'https://desapublications.un.org/publications/world-population-prospects-2024-summary-results',
       },
       {
-        label: 'DESA Publications 20847',
-        url: 'https://desapublications.un.org/file/20847/download',
-      },
-      {
-        label: 'UN DESA PD key_messages_wpp_2024',
+        label: 'UN DESA — WPP 2024: Key messages',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/key_messages_wpp_2024_20240709.pdf',
       },
       {
-        label: 'UN DESA PD wpp-2024_09_07_24',
+        label: 'UN DESA — WPP 2024 press release',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp-2024_press-release_final_09_07_24.pdf',
       },
-      { label: 'OWID /population', url: 'https://ourworldindata.org/grapher/population' },
-      { label: 'OWID /population-growth', url: 'https://ourworldindata.org/population-growth' },
+      { label: 'Our World in Data — Population', url: 'https://ourworldindata.org/grapher/population' },
+      {
+        label: 'Our World in Data — Population growth',
+        url: 'https://ourworldindata.org/population-growth',
+      },
     ],
   },
   {
@@ -806,31 +805,30 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
     cardMeta: 'UN WUP 2025 · DegURBA · cities ~45%',
     sources: [
-      { label: 'UN WUP 2025', url: 'https://population.un.org/wup/' },
-      { label: 'UN WUP /downloads', url: 'https://population.un.org/wup/downloads' },
+      { label: 'UN DESA — World Urbanization Prospects', url: 'https://population.un.org/wup/' },
       {
-        label: 'UN DESA PD WUP 2025',
+        label: 'UN DESA — World Urbanization Prospects datasets',
+        url: 'https://population.un.org/wup/downloads',
+      },
+      {
+        label: 'UN DESA — World Urbanization Prospects 2025',
         url: 'https://www.un.org/development/desa/pd/world-urbanization-prospects-2025',
       },
       {
-        label: 'DESA Publications WUP 2025',
+        label: 'UN DESA — WUP 2025: Summary of Results',
         url: 'https://desapublications.un.org/publications/world-urbanization-prospects-2025-summary-results',
       },
       {
-        label: 'UN DESA PD wup2025_summary_of_results',
-        url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2025_wup2025_summary_of_results.pdf',
-      },
-      {
-        label: 'UN DESA PD key_messages_wup_2025',
+        label: 'UN DESA — WUP 2025: Key messages',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_key_messages_wup_2025.pdf',
       },
       {
-        label: 'UN DESA PD press_release_wup25',
+        label: 'UN DESA — WUP 2025 press release',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2025_press_release_wup25.pdf',
       },
-      { label: 'OWID /urbanization', url: 'https://ourworldindata.org/urbanization' },
+      { label: 'Our World in Data — Urbanization', url: 'https://ourworldindata.org/urbanization' },
       {
-        label: 'OWID /share-of-population-urban',
+        label: 'Our World in Data — Urban population share',
         url: 'https://ourworldindata.org/grapher/share-of-population-urban',
       },
     ],
@@ -848,27 +846,27 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'EC GHSL · GHS-BUILT-S R2023A · 1975–2030',
     sources: [
       {
-        label: 'EC GHSL R2023A',
+        label: 'European Commission JRC — Global Human Settlement Layer',
         url: 'https://human-settlement.emergency.copernicus.eu/',
       },
       {
-        label: 'EC GHSL ghs_buS2023',
+        label: 'European Commission JRC — GHSL GHS-BUILT-S R2023A',
         url: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
       },
       {
-        label: 'EC GHSL /datasets',
+        label: 'European Commission JRC — GHSL datasets',
         url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
       },
       {
-        label: 'EC GHSL ghs_pop2023',
+        label: 'European Commission JRC — GHSL GHS-POP R2023A',
         url: 'https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php',
       },
       {
-        label: 'UN DESA PD wup2025_summary_of_results',
+        label: 'UN DESA — WUP 2025: Summary of Results',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2025_wup2025_summary_of_results.pdf',
       },
       {
-        label: 'UN DESA PD key_messages_wup_2025',
+        label: 'UN DESA — WUP 2025: Key messages',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_key_messages_wup_2025.pdf',
       },
     ],
@@ -885,26 +883,29 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
     cardMeta: 'UN WPP 2024 · annual growth rate · country',
     sources: [
-      { label: 'UN WPP 2024', url: 'https://population.un.org/wpp/' },
+      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
       {
-        label: 'UN DESA PD WPP 2024',
+        label: 'UN DESA — World Population Prospects 2024',
         url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
       },
       {
-        label: 'UN DESA PD key_messages_wpp_2024',
+        label: 'UN DESA — WPP 2024: Key messages',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/key_messages_wpp_2024_20240709.pdf',
       },
       {
-        label: 'UN DESA PD wpp-2024_09_07_24',
+        label: 'UN DESA — WPP 2024 press release',
         url: 'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp-2024_press-release_final_09_07_24.pdf',
       },
       {
-        label: 'OWID /population-growth-rates',
+        label: 'Our World in Data — Population growth rate',
         url: 'https://ourworldindata.org/grapher/population-growth-rates',
       },
-      { label: 'OWID /population-growth', url: 'https://ourworldindata.org/population-growth' },
       {
-        label: 'OWID /population-and-demography',
+        label: 'Our World in Data — Population growth',
+        url: 'https://ourworldindata.org/population-growth',
+      },
+      {
+        label: 'Our World in Data — Population and demography',
         url: 'https://ourworldindata.org/explorers/population-and-demography',
       },
     ],
