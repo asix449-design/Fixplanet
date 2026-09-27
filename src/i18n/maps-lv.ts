@@ -299,13 +299,13 @@ export const lv: Record<string, MapCopy> = {
     description:
       'Hansens un kolēģi Merilendas universitātē kartē ikgadējo koku seguma zudumu no Landsat. Global Forest Watch (WRI) pasniedz slāni. NASA novērojumi stāv aiz tiem pašiem satelītiem. Zudums ir vainaga maiņa, ne automātiski primārā meža pārvēršana.',
     howToRead:
-      'Rozā vai sarkanie pikseļi ir vainags, kas izzudis tajā gadā. Plantācijas, uguns un vējgāzes arī skaitās zudums. „Pieaugums” ir lēnāks un to vieglāk palaist garām. Pietuvini; valsts kopsumma slēpj pierobežu.',
+      'Krāsa ir to 30 m pikseļu daļa šūnā, kur koku segums izzuda no 2001. līdz 2024. gadam. Plantācijas, uguns un vējgāzes arī skaitās zudums. Valsts kopsumma slēpj izciršanas robežu. Interaktīvo slāni pasniedz Global Forest Watch.',
     caveats:
-      'Koku segums ≠ primārais mežs. Daļa zuduma ir likumīga cirte. Daļa neskarta meža jau ir degradēta. GFW dokumentē definīcijas. Mēs rādām fizisku Zemes priekšskatu, ne pārkrāsotu Hansena flīžu kopu.',
+      'Koku segums nav primārais mežs. Daļa zuduma ir likumīga cirte. Daļa neskarta meža jau ir degradēta. Global Forest Watch dokumentē definīcijas.',
     licenseNote:
-      'Hansen / GFW dati parasti pieejami ar CC BY 4.0 un atsauci. Interaktīvo zuduma slāni atver GFW kartē.',
+      'Hansen Global Forest Change ir CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). Karte skaita lossyear pikseļus no 2001. līdz 2024. gadam uz 0,02° režģa. Interaktīvo slāni atver GFW kartē.',
     imageAlt:
-      'Tumši zaļa pasaules karte ar magenta plankumiem zināmos koku seguma zuduma frontēs Amazones, Kongo, Dienvidaustrumāzijas un boreālajās joslās',
+      'Pasaules karte ar koku seguma zuduma pikseļu daļu no 2001. līdz 2024. gadam: tumšāk tur, kur zaudēta lielāka šūnas daļa',
   },
   'protected-areas': {
     title: 'Aizsargājamās teritorijas',
@@ -556,46 +556,47 @@ export const lv: Record<string, MapCopy> = {
       'Pasaules karte ar tirkīza atklātu ūdeni, zaļiem purviem, brūnu kūdru un zeltainu periodisku ūdeni — mitrāju klases, ne ezeru krasti',
   },
   'flood-hazard-aqueduct': {
-    title: 'Plūdu risks (Aqueduct Floods)',
+    title: 'Upju plūdu risks',
     hook: 'Aqueduct 4.0 bāzes upju plūdu risks — vērtējums no 0 līdz 5, ne ūdens stresa karte un ne applūšanas dziļuma karte.',
     description:
-      'Atsevišķs WRI rīks no Water Risk Atlas. Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
-    whyOnShelf: 'Atsevišķs WRI rīks no Water Risk Atlas.',
-    howToRead: 'Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
+      'Karte ir WRI Aqueduct 4.0 bāzes upju plūdu riska vērtējums apakšbaseinos, no 0 līdz 5. Tas ir modeļa vērtējums, ne ūdens dziļums. Rīks Aqueduct Floods publicē applūšanas dziļumu pēc atkārtošanās perioda upēm un piekrastei; šie rastri šeit nav uzzīmēti.',
+    whyOnShelf: 'Ūdens stress salīdzina pieprasījumu ar noteci. Šī kartīte ir atsevišķs Aqueduct vērtējums upju plūdu riskam.',
+    howToRead:
+      'Krāsa ir vērtējums no 0 līdz 5. Augstāks vērtējums ir augstāks modelētais upju plūdu risks, ne ūdens dziļums un ne prognoze, ka pilsēta applūdīs rīt.',
     caveats:
-      'Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra. Ne Aqueduct Water Risk Atlas bāzes ūdens stress.',
+      'Vērtējums ir modelis. Tā nav applūšanas dziļuma karte un ne ūdens stresa vērtējums. Dziļuma kartes un piekrastes risks paliek Aqueduct Floods.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats par upju un piekrastes applūšanas apvidiem, ne WRI Floods oficiālā grafika un ne otrs bāzes ūdens stresa horoplēts. Aqueduct dati parasti ir CC BY ar atsauci uz WRI. Interaktīvās kartes ir Aqueduct Floods rīkā.',
+      'Aqueduct 4.0 ir CC BY 4.0 (World Resources Institute). Karte ir bāzes upju plūdu riska vērtējums, ne Aqueduct Floods dziļuma rastrs un ne ūdens stresa vērtējums. Citējiet Kuzma et al. 2023.',
     imageAlt:
-      'Pasaules karte ar vidēji ziliem upju plūdu koridoriem un spilgti ciāna piekrastes plankumiem — plūdu risks, ne bāzes ūdens stress',
+      'Pasaules karte ar Aqueduct 4.0 upju plūdu riska vērtējumiem: tumšāk tur, kur vērtējums ir augstāks',
   },
   'intact-forest-landscapes': {
     title: 'Neskartie meža ainavu kompleksi (IFL)',
-    hook: 'Potapov / IFL Mapping Team poligoni (2000.–2025. atjauninājumi) — savvaļas meža mozaīkas veselums, nevis Hansen ikgadējie pikseļi un nevis parku robežas.',
+    hook: 'Neskartie meža ainavu kompleksi 2020. gadā — IFL komandas savvaļas meža mozaīka, nevis Hansen ikgadējie pikseļi un nevis parku robežas.',
     description:
-      'Neskartie meža ainavu kompleksi (IFL) ir lielas meža un saistīto ekosistēmu mozaīkas bez attālināti konstatētas rūpnieciskas darbības. IFL komanda (UMD GLAD un partneri) publicē globālos apjomus 2000., 2013., 2016., 2020. un 2025. gadam ar CC BY 4.0. Metode: Potapov et al., Science Advances 2017; pašreizējam apjomam izmanto 2025. slāni. Tas nav FAO land use un nav WDPA.',
+      'Neskartie meža ainavu kompleksi (IFL) ir lielas meža mozaīkas bez konstatētas rūpnieciskas infrastruktūras. Šī plate ir 2020. gada izplatība no IFL komandas (UMD GLAD un partneri), CC BY 4.0. Tā pati komanda publicē arī 2000., 2013., 2016. un 2025. gadu. Metode: Potapov et al., Science Advances 2017.',
     howToRead:
-      'Krāsains laukums ir IFL poligons kartes gadā — ne plantācija un ne parka robeža. Zudums starp gadiem ir fragmentācija vai rūpnieciska ielaušanās bijušajā IFL; tas var atšķirties no Hansen vainagu zuduma kopsummām.',
+      'Zaļš laukums ir IFL poligons 2020. gada slānī — ne plantācija un ne parka robeža. Starpība starp publicētajiem gadiem ir fragmentācija vai rūpnieciska ielaušanās; tā var atšķirties no Hansen vainagu zuduma kopsummām.',
     caveats:
       'IFL ir minimāla izmēra savvaļas klase (apmēram 500 km² mozaīka bez konstatētas rūpnieciskas infrastruktūras), ne visi primārie meži un ne oglekļa krājums. Mežs var būt primārs un tomēr neiekļūt IFL, ja to sašķeļ ceļi vai izcirtumi. Robežas pārvietojas starp atjauninājumu gadiem. Sīku vai vainaga apakšēju izmantošanu satelīts var nepamanīt.',
     licenseNote:
-      'GeoPackage ir intactforests.org. Tīmekļa skatītājs ir Greenpeace IFL karte. 2000.–2025. arhīvs ir Zenodo. Atvērtais metodes teksts ir Potapov et al. 2017 PMC. Priekšskats ir Fix Planet lielu savvaļas bloku shēma, ne IFL poligoni.',
+      'Karte ir Intact Forest Landscapes 2020. gada izplatība (IFL Mapping Team, CC BY 4.0). Vēlāki atjauninājumi sniedzas līdz 2025. gadam; šī plate ir 2020. gada slānis. Citējiet IFL komandu un Potapov et al. 2017. Faili ir intactforests.org un Zenodo.',
     imageAlt:
       'Tumša pasaules karte ar spilgti zaļiem savvaļas meža blokiem Amazōnijā, Kongo baseinā, boreālajā Kanādā un Sibīrijā un Jaungvinejā — neskartas ainavas, ne ikgadējie vainagu zuduma pikseļi',
   },
   'mangrove-extent': {
     title: 'Mangrovju platība',
-    hook: 'Global Mangrove Watch — ikgadējā mangrovju platība (v4.1 sērija līdz 2025) — paisuma mežs, nevis iekšzemes Hansen un nevis WDPA parki.',
+    hook: 'Global Mangrove Watch, 3. versija, 2020. gada platība — paisuma mežs, nevis iekšzemes Hansen un nevis WDPA parki.',
     description:
-      'Global Mangrove Watch (GMW) kartē aplēsto mangrovju mežu platību un tās izmaiņas. Versija 4.1 ir ikgadēja rinda no 1985. līdz 2025. gadam (JAXA Kyoto & Carbon, Aberystwyth University un partneri). Platforma rāda platību, neto izmaiņu un brīdinājumus; rastri un vektori ir Zenodo un JAXA. Tas nav koraļļi un nav aizsargājamās teritorijas.',
+      'Karte ir Global Mangrove Watch 3. versijas 2020. gada izplatība: mangrovju pikseļu daļa uz 0,02° režģa (Bunting et al., CC BY 4.0). Vēlākās versijas, tostarp v4.1 gada rinda no 1985. līdz 2025. gadam, publicē JAXA un Zenodo. Šī plate ir 2020. gada v3 izplatība, ne šī vēlākā rinda.',
     howToRead:
-      'Mangrovju pikselis ir GMW klasifikatora paisuma mežs tajā gadā — ne koraļļu rifs, ne sāls purva karte un ne aizsardzības statuss. Salīdzini gadus GMW ietvaros; nesajauc ar Hansen kopsummām.',
+      'Tumšāks zaļš ir lielāka mangrovju pikseļu daļa 2020. gadā. Tas ir GMW klasifikatora paisuma mežs, ne koraļļu rifs, ne sāls purvs un ne aizsardzības statuss. Nejaukt šo platību ar Hansen kopsummām.',
     caveats:
       'Mangrovju kartes vājāk darbojas dubļainās malās, akvakultūras dīķos un retā apmalē. Ikgadējā izmaiņa nav tas pats, kas likumīga meža izciršana. Ogleklis un sugas ir atsevišķi produkti tajā pašā platformā. Precizitāte atšķiras pa valstīm un duļķainību. Atjaunošanas stādījumi klasifikatorā var kavēties. Brīdinājumi ir atlase, tad vietējais attēls.',
     licenseNote:
-      'GMW slāņus lieto nacionālie paneļi un piekrastes projekti. v4.1 steku ĢIS lejupielādei apraksta JAXA. Priekšskats ir Fix Planet zināmo mangrovju piekrastes shēma, ne GMW rastrs. Karte ir globalmangrovewatch.org.',
+      'Karte ir Global Mangrove Watch 3. versija, 2020. gada izplatība (CC BY 4.0; Bunting et al.). Vēlākas GMW versijas pastāv; šī plate ir v3 2020. gadam. Dzīvā platforma ir globalmangrovewatch.org.',
     imageAlt:
-      'Pasaules karte ar tirkīza paisuma meža apmali gar tropu piekrastēm — mangrovju platība, ne iekšzemes vainagu zudums',
+      'Pasaules karte ar Global Mangrove Watch v3 mangrovju izplatību 2020. gadā: tumši zaļa apmale gar tropu piekrastēm',
   },
   'primary-humid-tropical-forests': {
     title: 'Primārie mitrie tropu meži',

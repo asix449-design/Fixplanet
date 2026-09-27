@@ -700,9 +700,9 @@ const en: Record<string, MapCopy> = {
     description:
       'Hansen and colleagues at the University of Maryland map annual tree-cover loss from Landsat. Global Forest Watch (World Resources Institute) serves the layer. NASA Earth observations sit behind the same satellites. Loss is a change in canopy, not automatically a conversion of primary forest.',
     howToRead:
-      'Pink or red loss pixels are canopy gone that year. Plantations, fire, and storm blowdown count as loss. “Gain” is slower and easier to miss. Zoom in; a country total hides the frontier.',
+      'The colour is the share of 30 m pixels in each cell that lost tree cover from 2001 to 2024. Plantations, fire, and storm damage count as loss. A country total hides the frontier. Global Forest Watch serves the interactive layer.',
     caveats:
-      'Tree cover ≠ primary forest. Some loss is legal harvest. Some intact forest is already degraded. GFW documents the definitions. The preview is a Fix Planet overview of well-known loss frontiers, not a recolored Hansen tile set.',
+      'Tree cover is not primary forest. Some loss is legal harvest. Some intact forest is already degraded. Global Forest Watch documents the definitions.',
     licenseNote:
       'Hansen Global Forest Change is CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). The map counts 30 m lossyear pixels from 2001 to 2024 on a 0.02° grid. Open the GFW map for the interactive layer.',
     imageAlt:
@@ -732,7 +732,7 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Models smooth local rights, illegal wells, and seasonal pulses. Political control of rivers is not in the hydrology alone. A red basin is not a prophecy of war.',
     licenseNote:
-      'Aqueduct 4.0 is CC BY 4.0 (World Resources Institute). The map is the baseline water-stress score for sub-basins. Cite Kuzma et al. 2023. Open the Water Risk Atlas for the interactive basins.',
+      'Aqueduct 4.0 is CC BY 4.0 (World Resources Institute). The map is the baseline water-stress score for sub-basins, from 0 to 5. Cite Kuzma et al. 2023. Open the Water Risk Atlas for the interactive basins.',
     imageAlt:
       'World map of Aqueduct 4.0 baseline water stress scores, from low scores in pale yellow to high scores in red across dry and heavily used basins',
   },
@@ -933,16 +933,16 @@ const en: Record<string, MapCopy> = {
       'World map with teal open-water, green marsh, brown peat, and gold intermittent-water patches — wetland classes, not lake shorelines',
   },
   'flood-hazard-aqueduct': {
-    title: 'Flood hazard (Aqueduct Floods)',
+    title: 'Riverine flood risk',
     hook: 'Baseline riverine flood risk from Aqueduct 4.0 — a 0–5 basin score, not the water-stress score and not an inundation-depth map.',
     description:
-      'WRI Aqueduct Floods maps riverine and coastal flood risks under a baseline and future projections (2030 / 2050 / 2080), with hazard maps of inundation depth by return period and tools for exposure and dike cost–benefit. Built with Deltares, VU Amsterdam IVM, Utrecht University, and PBL, released ~2020. Separate from the Aqueduct Water Risk Atlas used on the live Water stress card.',
+      'The map is the WRI Aqueduct 4.0 baseline riverine flood risk score for sub-basins, from 0 to 5. It is a modelled risk score. Aqueduct Floods, a related WRI tool built with Deltares, VU Amsterdam, Utrecht University, and PBL, publishes inundation depth by return period for riverine and coastal floods. Those depth rasters are not this plate.',
     whyOnShelf:
-      'The Water stress card already notes that Aqueduct models related risks including flood — but the shelf has no flood card. This fills that hole without replacing baseline stress, basins, or AQUASTAT.',
+      'Water stress compares demand with supply. This card is the separate Aqueduct score for riverine flood risk. It does not replace basins or AQUASTAT.',
     howToRead:
-      'Hazard layers are modelled inundation depths, often without existing flood protection in the hazard rasters — so a deep cell is not “this city will flood tomorrow.” Coastal vs riverine are different mechanisms; do not merge them into one “all water bad” story. Open the Aqueduct Floods tool and hazard-maps dataset pages; cite WRI.',
+      'The colour is the 0–5 score. A higher score is higher modelled riverine flood risk, not a water depth and not a forecast that a city floods tomorrow. Coastal inundation depth is a different product in Aqueduct Floods.',
     caveats:
-      'Hazard rasters often omit existing flood protection — a deep cell is not “this city will flood tomorrow.” Coastal and riverine are different mechanisms. This card is not the Aqueduct Water Risk Atlas baseline-stress layer.',
+      'The score is a model. It is not an inundation depth and not the baseline water-stress score. Aqueduct Floods keeps the depth maps and the coastal layers.',
     licenseNote:
       'Aqueduct 4.0 is CC BY 4.0 (World Resources Institute). The map is the baseline riverine flood risk score (0–5), not an inundation-depth raster from Aqueduct Floods and not the water-stress score. Cite Kuzma et al. 2023.',
     imageAlt:
@@ -950,11 +950,11 @@ const en: Record<string, MapCopy> = {
   },
   'intact-forest-landscapes': {
     title: 'Intact Forest Landscapes',
-    hook: 'Potapov / IFL Mapping Team polygons for wilderness-scale forest mosaics (2000–2025 updates) — intactness, not Hansen annual loss pixels and not park boundaries.',
+    hook: 'Intact Forest Landscapes in 2020 — wilderness-scale forest mosaics from the IFL Mapping Team, not Hansen annual loss pixels and not park boundaries.',
     description:
-      'Intact Forest Landscapes (IFL) map seamless mosaics of forest and associated natural ecosystems with no remotely detected industrial human activity, large enough to sustain wide-ranging species. The IFL Mapping Team (UMD GLAD and partners) publishes global extents for 2000, 2013, 2016, 2020, and 2025 under CC BY 4.0. Cite Potapov et al., Science Advances 2017, for the method; use the 2025 layer for current extent.',
+      'Intact Forest Landscapes (IFL) map seamless mosaics of forest and associated natural ecosystems with no remotely detected industrial human activity, large enough to sustain wide-ranging species. This plate is the 2020 extent from the IFL Mapping Team (UMD GLAD and partners), published under CC BY 4.0. The same team also publishes 2000, 2013, 2016, and 2025. Cite Potapov et al., Science Advances 2017, for the method.',
     howToRead:
-      'A coloured patch is an IFL polygon at the map year — not FAO forest land use, not a plantation, and not a protected-area boundary. Loss between years is fragmentation or industrial intrusion into a former IFL, which can differ from Hansen tree-cover loss area totals.',
+      'A green patch is an IFL polygon in the 2020 layer — not FAO forest land use, not a plantation, and not a protected-area boundary. Change between published years is fragmentation or industrial intrusion, which can differ from Hansen tree-cover loss totals.',
     caveats:
       'IFL is a minimum-size wilderness class (at least about 500 km² mosaic with no detected industrial infrastructure), not all primary forest and not a carbon stock. A forest can be primary yet fail IFL if roads or clearings fragment it. Boundaries move when new disturbance appears between update years. Detection depends on satellite evidence of infrastructure and clearing. Small-scale or under-canopy uses can be missed.',
     licenseNote:
@@ -966,9 +966,9 @@ const en: Record<string, MapCopy> = {
     title: 'Mangrove extent',
     hook: 'Global Mangrove Watch version 3 extent for 2020 — tidal forest shoreline, not inland Hansen loss and not WDPA parks.',
     description:
-      'Global Mangrove Watch (GMW) maps estimated global mangrove forest extent and change. Version 4.1 provides an annual time series from 1985 through 2025 (JAXA Kyoto & Carbon, Aberystwyth University, and partners). The public platform shows habitat extent, net change, and alerts. Zenodo and JAXA host downloadable rasters and vectors.',
+      'The map is Global Mangrove Watch version 3 extent for 2020: the share of mangrove pixels on a 0.02° grid (Bunting et al., CC BY 4.0). Later versions, including the v4.1 annual series from 1985 through 2025, are published by JAXA and on Zenodo. This plate is the 2020 v3 extent, not that later time series. The public platform shows habitat extent, net change, and alerts.',
     howToRead:
-      'A mangrove pixel is tidal forest in the GMW classifier for that year — not a coral reef, not a salt-marsh class map, and not a protected-area designation. Compare years for shoreline loss or gain. Do not mix GMW extent with Hansen tree-cover totals into one deforestation rate.',
+      'Darker green is a higher share of mangrove pixels in 2020. It is tidal forest in the GMW classifier, not a coral reef, not a salt marsh, and not a protected area. Do not mix this extent with Hansen tree-cover totals.',
     caveats:
       'Mangrove maps struggle at muddy edges, aquaculture ponds, and sparse fringes. Annual change is not the same as legal deforestation. Carbon and species layers are separate products on the same platform. Accuracy varies by country and turbidity. Restoration plantings may lag in the classifier. Treat alerts as screening, then check local imagery.',
     licenseNote:

@@ -609,8 +609,8 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'forest-cover-loss',
     category: 'forests',
-    year: '2001–2023',
-    sourceShort: 'Hansen / GFW',
+    year: '2001–2024',
+    sourceShort: 'Hansen GFC',
     sourceOrg: 'Hansen / University of Maryland; Global Forest Watch; NASA',
     sourceUrl: 'https://www.globalforestwatch.org/',
     openMapUrl: 'https://www.globalforestwatch.org/map/',
@@ -642,7 +642,7 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'data',
     sources: [
       {
-        label: 'Intact Forest Landscapes — data download (IFL 2000–2025)',
+        label: 'Intact Forest Landscapes — data download (this plate is 2020)',
         url: 'https://intactforests.org/data.ifl.html',
       },
       {
@@ -671,6 +671,10 @@ export const mapMeta: MapMeta[] = [
     detail: 'detail/mangrove-extent.webp',
     previewKind: 'data',
     sources: [
+      {
+        label: 'Zenodo — Global Mangrove Watch v3, 2020',
+        url: 'https://zenodo.org/records/6894273',
+      },
       {
         label: 'Global Mangrove Watch — map platform',
         url: 'https://www.globalmangrovewatch.org/',

@@ -138,9 +138,9 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'sea-ice-extent',
     preview: 'sea-ice-extent.jpg',
     detail: 'detail/sea-ice-extent.webp',
-    sourceOrg: 'NSIDC — Sea Ice Index / Sea Ice Today',
+    sourceOrg: 'NSIDC Sea Ice Index G02135',
     sourceLabel: 'NSIDC G02135',
-    sourceUrl: 'https://nsidc.org/sea-ice-today',
+    sourceUrl: 'https://noaadata.apps.nsidc.org/NOAA/G02135/',
     usesCoastline: false,
     sources: [
       cite('NSIDC — Sea Ice Today', 'https://nsidc.org/sea-ice-today'),
@@ -169,11 +169,15 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'sea-level',
     preview: 'sea-level.jpg',
     detail: 'detail/sea-level.webp',
-    sourceOrg: 'NASA Sea Level Change Portal',
+    sourceOrg: 'NOAA Laboratory for Satellite Altimetry',
     sourceLabel: 'NOAA LSA',
-    sourceUrl: 'https://sealevel.nasa.gov/',
+    sourceUrl: 'https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/',
     usesCoastline: false,
     sources: [
+      cite(
+        'NOAA LSA — Sea Level Rise maps',
+        'https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/',
+      ),
       cite('NASA Sea Level Change Portal — hub', 'https://sealevel.nasa.gov/'),
       cite(
         'NASA — Global Mean Sea Level (vital signs)',
@@ -206,7 +210,7 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
         'https://marine.copernicus.eu/ocean-climate-portal',
       ),
       cite(
-        'IPCC AR6 WG1 report (Numbers vintage for 3.7 mm/yr)',
+        'IPCC AR6 WG1 report (global mean, about 3.7 mm/yr, 2006–2018)',
         'https://www.ipcc.ch/report/ar6/wg1/',
       ),
     ],
@@ -215,11 +219,15 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'marine-heatwaves',
     preview: 'marine-heatwaves.jpg',
     detail: 'detail/marine-heatwaves.webp',
-    sourceOrg: 'NOAA Coral Reef Watch / NOAA Physical Sciences Laboratory',
+    sourceOrg: 'NOAA Coral Reef Watch',
     sourceLabel: 'NOAA CRW',
-    sourceUrl: 'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
+    sourceUrl: 'https://coralreefwatch.noaa.gov/product/5km/',
     usesCoastline: true,
     sources: [
+      cite(
+        'NOAA Coral Reef Watch — 5 km sea-surface temperature products',
+        'https://coralreefwatch.noaa.gov/product/5km/',
+      ),
       cite(
         'NOAA Coral Reef Watch — Marine Heatwave product',
         'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
@@ -243,7 +251,7 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'ocean-heat-content',
     preview: 'ocean-heat-content.jpg',
     detail: 'detail/ocean-heat-content.webp',
-    sourceOrg: 'NOAA NCEI / NASA',
+    sourceOrg: 'NOAA NCEI',
     sourceLabel: 'NOAA NCEI',
     sourceUrl: 'https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level',
     usesCoastline: false,
