@@ -57,7 +57,12 @@ export type MapMeta = {
   previewKind: 'photo' | 'outline' | 'schematic';
   /** Optional grid meta line. Defaults to sourceShort · year. */
   cardMeta?: string;
-  /** Optional clickable citations. First row is the grid Source link. */
+  /**
+   * Grid Source line when it must stay a product code. The detail Sources
+   * list still uses `sources`. When omitted, the first citation label is used.
+   */
+  gridSourceLabel?: string;
+  /** Optional clickable citations. First row is the grid Source link unless `gridSourceLabel` is set. */
   sources?: PrimarySource[];
 };
 
@@ -768,6 +773,7 @@ export const mapMeta: MapMeta[] = [
     preview: 'world-population.jpg',
     previewKind: 'schematic',
     cardMeta: 'UN WPP 2024 · ~8.2 billion (2024) · country totals',
+    gridSourceLabel: 'UN WPP 2024',
     sources: [
       { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
       {
@@ -804,6 +810,7 @@ export const mapMeta: MapMeta[] = [
     preview: 'cities-and-towns.jpg',
     previewKind: 'schematic',
     cardMeta: 'UN WUP 2025 · DegURBA · cities ~45%',
+    gridSourceLabel: 'UN WUP 2025',
     sources: [
       { label: 'UN DESA — World Urbanization Prospects', url: 'https://population.un.org/wup/' },
       {
@@ -844,6 +851,7 @@ export const mapMeta: MapMeta[] = [
     preview: 'built-up-surface.jpg',
     previewKind: 'schematic',
     cardMeta: 'EC GHSL · GHS-BUILT-S R2023A · 1975–2030',
+    gridSourceLabel: 'EC GHSL R2023A',
     sources: [
       {
         label: 'European Commission JRC — Global Human Settlement Layer',
@@ -882,6 +890,7 @@ export const mapMeta: MapMeta[] = [
     preview: 'population-growth.jpg',
     previewKind: 'schematic',
     cardMeta: 'UN WPP 2024 · annual growth rate · country',
+    gridSourceLabel: 'UN WPP 2024',
     sources: [
       { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
       {
