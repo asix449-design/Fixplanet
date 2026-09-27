@@ -48,6 +48,8 @@ OCEAN_SAT = np.array([12, 32, 44], dtype=np.uint8)
 LAND = np.array([214, 206, 192], dtype=np.uint8)
 NODATA = np.array([186, 180, 168], dtype=np.uint8)
 EDGE = (90, 84, 74, 180)
+# Matches .map-card-art and .map-detail-art img in global.css.
+PAGE_BG = (10, 22, 32)
 
 # Natural Earth codes that differ from the ISO3 used by OWID / UN series.
 ISO_ALIAS = {
@@ -139,8 +141,91 @@ def fig_image(fig) -> Image.Image:
     return im
 
 
+_GLOBE_INSIDE: np.ndarray | None = None
+
+
+def equal_earth_inside() -> np.ndarray:
+    """Pixel mask for the Equal Earth globe. Corners of the 2:1 canvas are outside it.
+
+    Inverse EPSG:8857 still returns finite lat/lon past the ±180° meridian, so a
+    bounds check on latitude is not enough to keep rasters inside the outline.
+    """
+    global _GLOBE_INSIDE
+    if _GLOBE_INSIDE is not None:
+        return _GLOBE_INSIDE
+    scale, _, _ = projection_limits()
+    fwd = Transformer.from_crs("EPSG:4326", "EPSG:8857", always_xy=True)
+    lats = np.linspace(-90.0, 90.0, 3601)
+    edge_x, edge_y = fwd.transform(np.full(lats.shape, 180.0), lats)
+    y_pix = DETAIL_H / 2.0 - edge_y * scale
+    half = np.abs(np.asarray(edge_x, dtype=np.float64)) * scale
+    order = np.argsort(y_pix)
+    y_sorted = np.asarray(y_pix, dtype=np.float64)[order]
+    half_sorted = half[order]
+    finite = np.isfinite(y_sorted) & np.isfinite(half_sorted)
+    y_sorted = y_sorted[finite]
+    half_sorted = half_sorted[finite]
+    rows = np.arange(DETAIL_H, dtype=np.float64) + 0.5
+    half_row = np.interp(rows, y_sorted, half_sorted, left=0.0, right=0.0)
+    cols = np.abs(np.arange(DETAIL_W, dtype=np.float64) + 0.5 - DETAIL_W / 2.0)
+    _GLOBE_INSIDE = cols[None, :] <= (half_row[:, None] + 0.5)
+    return _GLOBE_INSIDE
+
+
+def inland_water_mask(height: int, width: int) -> np.ndarray:
+    """North-up mask of inland water: Natural Earth lakes plus the Caspian hole in the land polygon.
+
+    The Caspian is a hole in ne_10m_land, not a feature in ne_10m_lakes. The Black Sea
+    stays out of this mask because it opens to the ocean.
+    """
+    cache = RAW / f"inland-water-{height}x{width}.npy"
+    if cache.exists():
+        return np.load(cache)
+    import fiona
+    from rasterio.features import rasterize
+    from rasterio.transform import from_bounds
+    from shapely.geometry import shape
+
+    shapes: list = []
+    with fiona.open(RAW / "ne_10m_lakes" / "ne_10m_lakes.shp") as src:
+        shapes.extend(feat["geometry"] for feat in src if feat["geometry"])
+    with fiona.open(RAW / "ne_10m_land" / "ne_10m_land.shp") as src:
+        for feat in src:
+            geom = shape(feat["geometry"])
+            polys = geom.geoms if geom.geom_type == "MultiPolygon" else [geom]
+            for poly in polys:
+                for ring in poly.interiors:
+                    shapes.append({"type": "Polygon", "coordinates": [list(ring.coords)]})
+    burned = rasterize(
+        [(geom, 1) for geom in shapes],
+        out_shape=(height, width),
+        transform=from_bounds(-180, -90, 180, 90, width, height),
+        fill=0,
+        dtype="uint8",
+    )
+    mask = burned.astype(bool)
+    np.save(cache, mask)
+    return mask
+
+
+def mask_inland_water(field: np.ndarray) -> np.ndarray:
+    """Drop inland-water cells from a north-up equirectangular grid."""
+    masked = np.array(field, copy=True)
+    masked[inland_water_mask(masked.shape[0], masked.shape[1])] = np.nan
+    return masked
+
+
+def clip_to_globe(im: Image.Image) -> Image.Image:
+    """Paint every pixel outside the Equal Earth outline with the page background."""
+    arr = np.array(im.convert("RGB"))
+    if arr.shape[0] != DETAIL_H or arr.shape[1] != DETAIL_W:
+        return im
+    arr[~equal_earth_inside()] = PAGE_BG
+    return Image.fromarray(arr, "RGB")
+
+
 def base_map(countries: list[dict], half_w: float, half_h: float, ocean, land) -> Image.Image:
-    cache = RAW / f"base-{ocean[0]}-{land[0]}.png"
+    cache = RAW / f"base-globe-{ocean[0]}-{ocean[1]}-{ocean[2]}-{land[0]}.png"
     if cache.exists():
         im = Image.open(cache).convert("RGB")
         if im.size == (DETAIL_W, DETAIL_H):
@@ -154,7 +239,7 @@ def base_map(countries: list[dict], half_w: float, half_h: float, ocean, land) -
         antialiased=False,
     )
     ax.add_collection(coll)
-    im = fig_image(fig)
+    im = clip_to_globe(fig_image(fig))
     cache.parent.mkdir(parents=True, exist_ok=True)
     im.save(cache, "PNG")
     return im
@@ -292,7 +377,7 @@ def choropleth(
             antialiased=False,
         )
     )
-    im = add_colorbar(fig_image(fig), vmin, vmax, cmap_name, log)
+    im = add_colorbar(clip_to_globe(fig_image(fig)), vmin, vmax, cmap_name, log)
     save_pair(im, folder, stem)
     return {"matched_countries": matched, "vmin": vmin, "vmax": vmax, "log": log}
 
@@ -362,15 +447,6 @@ def render_choropleths(countries, half_w, half_h) -> list[dict]:
             "year",
             "Blues",
         ),
-        (
-            "maps",
-            "forest-cover-loss",
-            RAW / "tree-cover-loss.csv",
-            "Total",
-            2024,
-            "sum",
-            "inferno",
-        ),
     ]
     reports = []
     for folder, stem, path, column, year, aggregate, cmap_name in jobs:
@@ -411,17 +487,19 @@ def reproject_rgba(src: Image.Image, scale: float) -> Image.Image:
         lon = np.asarray(lon)
         lat = np.asarray(lat)
         valid = np.isfinite(lon) & np.isfinite(lat) & (lat >= -90) & (lat <= 90)
+        valid &= equal_earth_inside()[r0:r1]
         sx = (lon + 180.0) / 360.0 * sw - 0.5
         sy = (90.0 - lat) / 180.0 * sh - 0.5
         x0 = np.floor(sx).astype(np.int32)
         y0 = np.floor(sy).astype(np.int32)
         x1 = x0 + 1
         y1 = y0 + 1
-        valid &= (x0 >= 0) & (y0 >= 0) & (x1 < sw) & (y1 < sh)
+        # Longitude wraps at the antimeridian; latitude does not.
+        valid &= (y0 >= 0) & (y1 < sh)
         wx = (sx - x0).astype(np.float32)
         wy = (sy - y0).astype(np.float32)
-        x0c = np.clip(x0, 0, sw - 1)
-        x1c = np.clip(x1, 0, sw - 1)
+        x0c = np.mod(x0, sw)
+        x1c = np.mod(x1, sw)
         y0c = np.clip(y0, 0, sh - 1)
         y1c = np.clip(y1, 0, sh - 1)
         Ia = arr[y0c, x0c].astype(np.float32)
@@ -489,10 +567,6 @@ def render_gibs(scale: float, countries, half_w, half_h) -> None:
     layers = [
         ("GEDI_ISS_L3_Canopy_Height_Mean_RH100_201904-202303", None, "forests", "canopy-height", 4096),
         ("GEDI_ISS_L4B_Aboveground_Biomass_Density_Mean_201904-202303", None, "forests", "aboveground-biomass", 4096),
-        ("AMSRU2_Sea_Ice_Concentration_12km", "2024-03-15", "oceans", "sea-ice-extent", 4096),
-        ("JPL_MEaSUREs_L4_Sea_Surface_Height_Anomalies", "2019-12-26", "oceans", "sea-level", 4096),
-        ("GHRSST_L4_MUR_Sea_Surface_Temperature_Anomalies", "2024-08-15", "oceans", "marine-heatwaves", 4096),
-        ("Mangrove_Forest_Distribution_2000", None, "maps", "mangrove-extent", 4096),
     ]
     for layer, when, folder, stem, width in layers:
         render_gibs_layer(base, scale, layer, when, folder, stem, width)
@@ -526,14 +600,15 @@ def render_woa(scale: float, countries, half_w, half_h) -> None:
     vmax = float(np.quantile(finite, 0.98))
     norm = Normalize(vmin, vmax)
     cmap = plt.get_cmap("viridis_r")
+    # Build a north-up image, then punch out inland water (Caspian and lakes).
+    if lat[0] < lat[-1]:
+        omz = omz[::-1]
+    omz = mask_inland_water(omz)
     rgba = np.zeros(omz.shape + (4,), dtype=np.uint8)
     good = np.isfinite(omz)
     cols = cmap(norm(np.clip(omz, vmin, vmax)))
     rgba[good, :3] = (cols[good, :3] * 255).astype(np.uint8)
     rgba[good, 3] = 255
-    # lat increases or decreases? Sample by building a north-up image.
-    if lat[0] < lat[-1]:
-        rgba = rgba[::-1]
     src = Image.fromarray(rgba, "RGBA").resize((3600, 1800), Image.Resampling.NEAREST)
     base = base_map(countries, half_w, half_h, tuple(int(c) for c in OCEAN_SAT), tuple(int(c) for c in LAND))
     overlay = reproject_rgba(src, scale)
@@ -577,7 +652,7 @@ def render_minerals(scale: float, countries, half_w, half_h) -> None:
         )
     )
     ax.scatter(xs, ys, s=28, c="#9a3412", alpha=0.35, linewidths=0, rasterized=True)
-    save_pair(fig_image(fig), "maps", "mineral-resources")
+    save_pair(clip_to_globe(fig_image(fig)), "maps", "mineral-resources")
 
 
 def main() -> None:

@@ -25,11 +25,13 @@ from render import (
     LAND,
     OCEAN,
     OCEAN_SAT,
+    PAGE_BG,
     RAW,
     add_colorbar,
     base_map,
     composite_on_base,
     load_countries,
+    mask_inland_water,
     projection_limits,
     reproject_rgba,
     save_pair,
@@ -86,6 +88,7 @@ def render_sea_level() -> None:
     col = np.rint((lon + 179.75) / 0.5).astype(np.int32)
     ok = (row >= 0) & (row < 360) & (col >= 0) & (col < 720)
     grid[row[ok], col[ok]] = val[ok]
+    grid = mask_inland_water(grid)
     vmin, vmax, center = -6.0, 8.0, 0.0
     norm = TwoSlopeNorm(vmin=vmin, vcenter=center, vmax=vmax)
     rgba = colorize(grid, norm, plt.get_cmap("RdBu_r"))
@@ -105,6 +108,7 @@ def render_heat() -> None:
         mask = handle["mask"][0]
     field = raw.astype(np.float32) * 0.01
     field[(raw == -32768) | (mask == 1)] = np.nan
+    field = mask_inland_water(field)
     # North-up already: latitude runs from +90 toward -90.
     vmin, vmax, center = -2.0, 4.0, 0.0
     norm = TwoSlopeNorm(vmin=vmin, vcenter=center, vmax=vmax)
@@ -135,7 +139,7 @@ def render_ice_panel(path: Path) -> Image.Image:
 def render_ice() -> None:
     north = render_ice_panel(RAW / "N_202603_concentration_v4.0.tif")
     south = render_ice_panel(RAW / "S_202509_concentration_v4.0.tif")
-    canvas = Image.new("RGB", (DETAIL_W, DETAIL_H), (7, 16, 32))
+    canvas = Image.new("RGB", (DETAIL_W, DETAIL_H), PAGE_BG)
     margin = 120
 
     def place(im: Image.Image, slot: int) -> None:
@@ -184,6 +188,7 @@ def render_ohc() -> None:
     field[np.abs(field - fill) < 1e20] = np.nan
     if lat[0] < lat[-1]:
         field = field[::-1]
+    field = mask_inland_water(field)
     finite = field[np.isfinite(field)]
     # Symmetric diverging range around the recent anomaly field.
     span = float(np.quantile(np.abs(finite), 0.98))
@@ -211,6 +216,7 @@ def render_ph() -> None:
     delta = after - before
     if lat[0] < lat[-1]:
         delta = delta[::-1]
+    delta = mask_inland_water(delta)
     finite = delta[np.isfinite(delta)]
     vmin, vmax, center = -0.12, 0.02, 0.0
     norm = TwoSlopeNorm(vmin=vmin, vcenter=center, vmax=vmax)

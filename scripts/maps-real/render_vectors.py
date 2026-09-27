@@ -19,7 +19,7 @@ from rasterio.features import rasterize
 from rasterio.transform import from_bounds
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from render import LAND, OCEAN, RAW, composite_on_base, reproject_rgba, save_pair
+from render import LAND, OCEAN, RAW, composite_on_base, mask_inland_water, reproject_rgba, save_pair
 from render_pass2 import colorize, countries_and_base, paint_equal_earth
 
 GDB = (
@@ -56,6 +56,7 @@ def burn_score(field: str, res: float = 0.1) -> np.ndarray:
 
 
 def paint_score(grid: np.ndarray, folder: str, stem: str, cmap: str) -> None:
+    grid = mask_inland_water(grid)
     norm = Normalize(0, 5)
     rgba = colorize(grid, norm, plt.get_cmap(cmap))
     scale, base = countries_and_base(tuple(int(c) for c in OCEAN), tuple(int(c) for c in LAND))
