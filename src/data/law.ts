@@ -329,6 +329,153 @@ export const lawMeta: LawMeta[] = [
     ],
   },
   {
+    slug: 'convention-on-biological-diversity',
+    category: 'ecology',
+    status: 'existing',
+    year: '1992',
+    image: img(
+      'convention-on-biological-diversity.jpg',
+      'Vyacheslav Argenberg',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Taman_Negara,_Malaysia,_Primary_tropical_rainforest.jpg',
+    ),
+    sources: [
+      {
+        label: 'Convention on Biological Diversity — text of the Convention',
+        url: 'https://www.cbd.int/convention/text',
+      },
+      {
+        label: 'Convention on Biological Diversity — English text (PDF)',
+        url: 'https://www.cbd.int/doc/legal/cbd-en.pdf',
+      },
+      {
+        label: 'Convention on Biological Diversity — convention page',
+        url: 'https://www.cbd.int/convention/',
+      },
+      {
+        label: 'Convention on Biological Diversity — secretariat',
+        url: 'https://www.cbd.int/',
+      },
+    ],
+  },
+  {
+    slug: 'kunming-montreal-gbf',
+    category: 'ecology',
+    status: 'existing',
+    year: '2022',
+    image: img(
+      'kunming-montreal-gbf.jpg',
+      'Jerry Reid, U.S. Fish and Wildlife Service',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Coral_Reef.jpg',
+    ),
+    sources: [
+      {
+        label: 'Convention on Biological Diversity — Kunming-Montreal Global Biodiversity Framework',
+        url: 'https://www.cbd.int/gbf',
+      },
+      {
+        label: 'Convention on Biological Diversity — Decision 15/4 (English PDF)',
+        url: 'https://www.cbd.int/doc/decisions/cop-15/cop-15-dec-04-en.pdf',
+      },
+      {
+        label: 'Convention on Biological Diversity — 2030 targets',
+        url: 'https://www.cbd.int/gbf/targets',
+      },
+      {
+        label:
+          'Convention on Biological Diversity — text adopted at the 15th Conference of the Parties',
+        url: 'https://www.cbd.int/article/cop15-final-text-kunming-montreal-gbf-221222',
+      },
+    ],
+  },
+  {
+    slug: 'ramsar-convention',
+    category: 'ecology',
+    status: 'existing',
+    year: '1971',
+    image: img(
+      'ramsar-convention.jpg',
+      'Jonathan D. Mallory, Bureau of Land Management',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Waterfowl_at_the_Pariette_Wetlands_(53658929539).jpg',
+    ),
+    sources: [
+      {
+        label: 'UNESCO — Convention on Wetlands (depositary)',
+        url: 'https://www.unesco.org/en/legal-affairs/convention-wetlands-international-importance-especially-waterfowl-habitat',
+      },
+      {
+        label: 'UN Treaty Series — Ramsar Convention, English text (Volume 996, I-14583)',
+        url: 'https://treaties.un.org/doc/Publication/UNTS/Volume%20996/volume-996-I-14583-English.pdf',
+      },
+      {
+        label: 'UN Treaty Collection — Ramsar Convention',
+        url: 'https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280104c20',
+      },
+      {
+        label: 'InforMEA — Ramsar Convention',
+        url: 'https://www.informea.org/en/treaties/ramsar',
+      },
+    ],
+  },
+  {
+    slug: 'aarhus-convention',
+    category: 'ecology',
+    status: 'existing',
+    year: '1998',
+    image: img(
+      'aarhus-convention.jpg',
+      'City of Toronto',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Toronto_City_Hall_Council_Chamber_(30461915762).jpg',
+    ),
+    sources: [
+      {
+        label: 'UN Treaty Collection — Aarhus Convention (XXVII-13)',
+        url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-13&chapter=27&clang=_en',
+      },
+      {
+        label: 'UN Treaty Collection — Aarhus Convention text (No. 37770)',
+        url: 'https://treaties.un.org/doc/Treaties/1998/06/19980625%2008-35%20AM/37770-En.pdf',
+      },
+      {
+        label: 'InforMEA — Aarhus Convention',
+        url: 'https://www.informea.org/en/treaties/aarhus-convention',
+      },
+    ],
+  },
+  {
+    slug: 'bbnj-agreement',
+    category: 'ecology',
+    status: 'existing',
+    year: '2023',
+    image: img(
+      'bbnj-agreement.jpg',
+      'Samson Ng',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:North_Atlantic_Ocean.jpg',
+    ),
+    sources: [
+      {
+        label: 'United Nations — Agreement on biodiversity beyond national jurisdiction',
+        url: 'https://www.un.org/bbnjagreement/en',
+      },
+      {
+        label: 'United Nations — Agreement on biodiversity beyond national jurisdiction, English text',
+        url: 'https://www.un.org/bbnjagreement/sites/default/files/2024-08/Text%20of%20the%20Agreement%20in%20English.pdf',
+      },
+      {
+        label: 'UN Treaty Collection — Agreement on biodiversity beyond national jurisdiction (XXI-10)',
+        url: 'https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXI-10&chapter=21&clang=_en',
+      },
+      {
+        label: 'International Maritime Organization — the high seas biodiversity agreement enters into force',
+        url: 'https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-welcomes-entry-into-force-bbnj.aspx',
+      },
+    ],
+  },
+  {
     slug: 'un-plastics-treaty',
     category: 'ecology',
     status: 'pending',
