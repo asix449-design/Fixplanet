@@ -628,70 +628,70 @@ export const lv: Record<string, MapCopy> = {
   },
   'world-population': {
     title: 'Pasaules iedzīvotāju skaits',
-    cardMeta: 'ANO WPP 2024 · ~8,2 miljardi (2024) · valstu summas',
-    hook: 'Cik cilvēku dzīvo katrā valstī un cik liels ir pasaules iedzīvotāju skaits — pēc Apvienoto Nāciju Organizācijas oficiālajām aplēsēm un prognozēm.',
+    cardMeta: 'ANO WPP 2024 · 8,16 miljardi (2024. gada 1. jūlijs)',
+    hook: 'Cik cilvēku dzīvo katrā valstī 2024. gada 1. jūlijā, pēc ANO vidējā varianta aplēsēm.',
     description:
-      'World Population Prospects 2024 (ANO DESA) sniedz oficiālas iedzīvotāju skaita aplēses un prognozes 237 valstīm vai teritorijām. 2024. gadā pasaulē ir aptuveni 8,2 miljardi cilvēku; vidējā scenārijā pasaules iedzīvotāju skaits sasniegs maksimumu ap 10,3 miljardiem 2080. gadu vidū un līdz 2100. gadam samazināsies līdz aptuveni 10,2 miljardiem. Valstu datus var aplūkot ANO WPP portālā un Our World in Data kartē, kas veidota pēc tās pašas sērijas.',
+      'Katra valsts ir krāsota pēc iedzīvotāju skaita 2024. gada 1. jūlijā ANO World Population Prospects 2024 vidējā variantā. Tās pašas tabulas pasaules kopskaits ir 8,16 miljardi. Lielākā valsts kopsumma ir Indijai, tad Ķīnai. Krāsa ir cilvēku skaita logaritmiskā skala: no aptuveni 16 tūkstošiem (zīmēto valstu 5. procentile) līdz 1,45 miljardiem Indijā.',
     whyOnShelf:
-      'Valstu summas rāda, cik cilvēku dzīvo katrā valstī, vienā kopējā ANO rindā. Pārtikas, enerģijas, veselības un klimata plānošana sākas ar šiem skaitļiem.',
+      'Viens ANO pārskatījums liek katras valsts kopsummu uz vienu datumu. Krāsa ir cilvēku skaits, nevis skaits uz kvadrātkilometru un ne nakts gaismas.',
     howToRead:
-      'WPP skaitļi ir demogrāfiskas aplēses un prognozes veselām valstīm, nevis neapstrādāti tautas skaitīšanas rezultāti. Dažādu WPP pārskatījumu skaitļus nevar salīdzināt tieši; skaitļi šeit ir no 2024. gada pārskatījuma. Maksimuma laiks un 2100. gada kopskaits ir atkarīgi no scenārija; virsraksta skaitļi ir vidējais variants.',
+      'Tumšāks brūns ir lielāka valsts kopsumma. Skalā ir cilvēku skaits, logaritmiski. Pelēka zeme ir daudzstūris bez 2024. gada rindas. Ezeri un Kaspijas jūra paliek ūdens.',
     caveats:
-      'Dažādu WPP pārskatījumu skaitļus nevar salīdzināt tieši. Maksimuma laiks un 2100. gada kopskaits ir atkarīgi no scenārija; virsraksta skaitļi ņem 2024. gada pārskatījuma vidējo variantu.',
+      'Valsts kopsumma nav blīvuma režģis. Franču Gviāna, Gvadelupa, Martinika, Majota, Reinjona, Gibraltārs, Bonaire, Sinteistatiusa un Saba, kā arī Tokelau ir tabulā, bet šajā Natural Earth 1:50m krasta līnijā tiem nav atsevišķa daudzstūra. 8,16 miljardi ir tabulas rindas „pasaule” kopskaits, nevis krāsoto valstu summa.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats par valstu iedzīvotāju skaitu pēc World Population Prospects 2024 un Our World in Data kartes. Atsauce: ANO DESA / Our World in Data.',
+      'ANO DESA, World Population Prospects 2024, demogrāfiskie rādītāji, vidējais variants, iedzīvotāju skaits 2024. gada 1. jūlijā. Robežas: Natural Earth 1:50m, publiskais īpašums.',
     imageAlt:
-      'Fix Planet pārskats: valstu iedzīvotāju skaita karte, ne blīvuma režģis un ne nakts gaismas',
+      'Equal Earth karte ar ANO WPP 2024 valstu iedzīvotāju skaitu 2024. gada 1. jūlijā: tumšāks brūns ir lielāka kopsumma, ar skaitļu skalu',
   },
   'cities-and-towns': {
     title: 'Pilsētas un pilsētciemati',
-    cardMeta: 'ANO WUP 2025 · DegURBA · pilsētas ~45%',
-    hook: 'Kur cilvēki dzīvo apdzīvojuma kontinuumā — pilsētās, pilsētciematos un lauku teritorijās — pēc ANO saskaņotās urbanizācijas pakāpes.',
+    cardMeta: 'GHS-SMOD R2023A · 2030. gada epoha · 0,02° tīkls',
+    hook: 'Pilsētu centri, pilsētciemati un lauku zeme GHSL apdzīvojuma tīklā 2030. gadam.',
     description:
-      'ANO World Urbanization Prospects 2025 pirmo reizi pilnībā balstās uz urbanizācijas pakāpes klasifikāciju (DegURBA): visām valstīm salīdzināmu dalījumu pilsētās, pilsētciematos un lauku zonās. 2025. gadā pilsētās dzīvo aptuveni 45% no pasaules 8,2 miljardiem iedzīvotāju (1950. gadā — 20%), pilsētciematos — aptuveni 36%, laukos — aptuveni 19%. Valstu «pilsētu» definīcijas dod citas daļas, tāpēc valstu salīdzināšanai piemērotāka ir vienotā WUP 2025 sērija.',
+      'Plate ir GHS-SMOD R2023A 2030. gada epoha, Global Human Settlement Layer apdzīvojuma klasifikācija. 30 loka sekunžu klases ir saskaitītas ar vairākumu 0,02° šūnā. Sarkans ir pilsētas centrs (30. klase). Oranžs ir pilsētciemats vai pusblīvs sakopojums (21., 22. un 23. klase). Olīvzaļš ir lauku šūnas (11., 12. un 13. klase). Lielākā daļa sauszemes platības ir lauku klase.',
     whyOnShelf:
-      'Valstu «pilsētu» apzīmējumi lieto dažādus sliekšņus, tāpēc vienkārša pilsētu iedzīvotāju daļas karte var nenovērtēt, cik cilvēku jau dzīvo blīvās apmetnēs. DegURBA ļauj salīdzināt pilsētas un pilsētciematus starp valstīm un rāda, ka pilsētciematos joprojām dzīvo vairāk nekā trešdaļa cilvēku.',
+      'Tīkls rāda zemes apdzīvojuma klasi un ir zīmēts vienādi katrā valstī. Tas nav valsts pilsētu iedzīvotāju procents un nav cilvēku skaits.',
     howToRead:
-      '«Pilsēta» šeit ir DegURBA klase, nevis katra vieta, ko valsts sauc par pilsētu. Valstu definīciju summa dod aptuveni 58% «pilsētu» iedzīvotāju 2025. gadā — krietni zem 81%, kas dzīvo pilsētās un pilsētciematos pēc DegURBA, jo daudzi DegURBA pilsētciemati valstu statistikā ir ierakstīti kā lauki. Viena definīcija visām valstīm padara WUP 2025 sēriju salīdzināmāku.',
+      'Sarkans apzīmē pilsētu centrus, oranžs pilsētciematus un pusblīvas vietas, olīvzaļš lauku šūnas. Skaitļu skalas nav: trīs krāsas ir šīs klašu grupas. Ūdens apdzīvojuma tīklā un Natural Earth ezeri paliek nekrāsoti.',
     caveats:
-      'DegURBA klase «pilsēta» nav katra vieta ar pilsētas nosaukumu valsts statistikā. Valsts «pilsētu» iedzīvotāju daļa un pilsētu kopā ar pilsētciematiem daļa pēc DegURBA ir dažādi lielumi.',
+      '30. klase ir pilsētas centrs GHSL klasifikācijā, nevis katra vieta, ko valsts sauc par pilsētu. 2030. gada epoha ir R2023A izdevuma pēdējais solis un ietver tā prognozi. Plate nerāda, cik cilvēku dzīvo katrā klasē.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats par urbanizācijas pakāpes skalu (pilsētas, pilsētciemati, lauku teritorijas) pēc World Urbanization Prospects 2025. Atsauce: ANO DESA.',
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-SMOD R2023A, 2030. gada epoha, CC BY 4.0. Klases saskaitītas 0,02° tīklā. Robežas: Natural Earth.',
     imageAlt:
-      'Fix Planet pārskats: urbanizācijas pakāpes skala — pilsētas, pilsētciemati un lauku teritorijas, ne nakts gaismas',
+      'Equal Earth karte ar GHSL apdzīvojuma klasēm 2030. gadam: sarkani pilsētu centri, oranži pilsētciemati, olīvzaļa lauku zeme',
   },
   'built-up-surface': {
     title: 'Apbūvētā virsma',
-    cardMeta: 'EK GHSL · GHS-BUILT-S R2023A · 1975–2030',
-    hook: 'Cik liela daļa sauszemes ir klāta ar ēkām un citu apbūvi — apdzīvojuma fiziskā pēda.',
+    cardMeta: 'GHS-BUILT-S R2023A · 2030. gada epoha · šūnas procents',
+    hook: 'Cik lielu daļu no katras šūnas veido apbūvētā virsma 2030. gada GHSL tīklā.',
     description:
-      'Eiropas Komisijas Global Human Settlement Layer (GHSL) publicē GHS-BUILT-S (R2023A) — globālu apbūvētās virsmas režģi, kas izveidots pēc Sentinel-2 un Landsat satelītattēliem periodam 1975–2030. Pēc WUP 2025 datiem no 1975. līdz 2025. gadam apbūvētā platība auga gandrīz divreiz ātrāk nekā iedzīvotāju skaits, un apbūvētā platība uz vienu cilvēku pieauga no aptuveni 43 līdz 63 m². Slānis rāda, cik daudz zemes aizņem ēkas; to var aplūkot GHSL vietnē.',
+      'Plate summē GHS-BUILT-S R2023A apbūvēto virsmu 2030. gada epohai. Kvadrātmetri no 30 loka sekunžu tīkla ir saskaitīti katrā 0,02° šūnā un dalīti ar šīs šūnas laukumu. Krāsa ir šis procents logaritmiskā skalā no 0,1 līdz aptuveni 24. Šūnas zem 0,1 procenta paliek zemes krāsā. Skalas augša ir 99,5. procentile šūnām, kurās ir kaut kāda apbūve.',
     whyOnShelf:
-      'Apbūvētā virsma rāda, cik daudz zemes ēkas patiesi aizņem. Tā ir pēda, kas konkurē ar tīrumiem un ekosistēmām. Pēc WUP 2025 aplēses aptuveni 60% zemes, kas kopš 1970. gada pārvērsta pilsētu lietojumā, agrāk bija ražīga aramzeme.',
+      'Apbūvētā virsma ir zeme zem ēkām. Tas nav cilvēku skaits un nav gaismas, kas redzamas naktī.',
     howToRead:
-      'GHS-BUILT-S mēra fizisko virsmu, ko klāj ēkas, neatkarīgi no juridiskajām pilsētas robežām un no tā, cik cilvēku tur dzīvo. Blīvi augstceltņu kvartāli var izmitināt daudzus cilvēkus uz nelielas pēdas; izkliedēta zema apbūve dara pretēji. Slānis tāpēc mēra, cik daudz zemes apbūve aizņem.',
+      'No dzeltena uz tumši sarkanu šūnas daļa ir lielāka. Skaitlis skalā ir 0,02° šūnas procents. Šūna var pārsniegt 0,1 procentu ar blīvu kvartālu vai ar retāku apbūvi.',
     caveats:
-      'Slānis mēra zemi zem ēkām, ne cilvēku skaitu un ne nakts gaismas. Blīvs augstceltņu kvartāls un izkliedēta zema apbūve aizņem atšķirīgu zemi pie atšķirīga iedzīvotāju skaita.',
+      'Vērtība ir apbūvētā virsma, dalīta ar šūnas laukumu, nevis stāvu platība torņos un ne juridiskā pilsētas robeža. Okeāns un ezeri nav krāsoti. 2030. gada epoha ir R2023A izdevuma pēdējais solis un ietver tā prognozi.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats par apbūvēto virsmu pēc GHS-BUILT-S (R2023A). Atsauce: Eiropas Komisija / GHSL.',
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-BUILT-S R2023A, 2030. gada epoha, CC BY 4.0. Apkopots 0,02° tīklā. Robežas: Natural Earth.',
     imageAlt:
-      'Fix Planet pārskats: apbūvētās virsmas intensitāte, ne nakts gaismas un ne iedzīvotāju blīvuma karte',
+      'Equal Earth karte ar apbūvētās virsmas procentu katrā 0,02° šūnā 2030. gadā, no dzeltena uz sarkanu, ar skaitļu skalu',
   },
   'population-growth': {
     title: 'Iedzīvotāju skaita pieaugums',
-    cardMeta: 'ANO WPP 2024 · gada pieauguma temps · valstis',
-    hook: 'Cik ātri mainās katras valsts iedzīvotāju skaits — gada pieauguma vai samazinājuma temps.',
+    cardMeta: 'ANO WPP 2024 · 2024. gada temps · procents gadā',
+    hook: 'Katras valsts iedzīvotāju skaita gada izmaiņu temps 2024. gadā, no tā paša ANO vidējā varianta.',
     description:
-      'ANO World Population Prospects 2024 rāda iedzīvotāju skaita izmaiņas pa valstīm. Pasaules iedzīvotāju skaits joprojām aug no 8,2 miljardiem (2024) virzienā uz maksimumu 2080. gadu vidū, taču 63 valstīs vai teritorijās iedzīvotāju skaits jau sasniedzis maksimumu, un vēl 48 valstīs vai teritorijās maksimums gaidāms 2025.–2054. gadā. Gada pieauguma temps ir neto izmaiņa, kurā apvienota dzimstība, mirstība un migrācija, tāpēc tas atšķiras no fertilitātes rādītāja.',
+      'Katra valsts ir krāsota pēc 2024. gada iedzīvotāju skaita pieauguma tempa ANO World Population Prospects 2024 vidējā variantā, procentos gadā. Skala iet no aptuveni −1,7 līdz 3,4 un ir centrēta uz nulli. No zīmētajām valstīm 60 temps ir negatīvs. Temps virs 3 procentiem šajā tabulā ir arī Angolai (3,0), Kongo Demokrātiskajai Republikai (3,2), Nigērai (3,3), Centrālāfrikas Republikai (3,4) un Somālijai (3,4).',
     whyOnShelf:
-      'Liela valsts var augt lēni, bet mazāka — dubultoties vienas paaudzes laikā. Pieauguma tempi rāda, kur koncentrējas nākamo desmitgažu pieaugums vai samazinājums. WPP 2024 norāda ļoti strauju pieaugumu līdz 2054. gadam tādās vietās kā Angola, Centrālāfrikas Republika, Kongo Demokrātiskā Republika, Nigēra un Somālija.',
+      'Liels iedzīvotāju skaits var mainīties lēni. Šajā tabulā Ķīnas 2024. gada temps ir −0,2 procenti, bet vairākām mazākām valstīm tas ir virs 3 procentiem. Plate rāda tempu, nevis cilvēku skaitu.',
     howToRead:
-      'Gada pieauguma temps apvieno dzimstību, mirstību un migrāciju vienā neto izmaiņā, tāpēc tas atšķiras no fertilitātes rādītāja paša. Kopā ar iedzīvotāju skaitu tempi atbild gan uz jautājumu „cik”, gan uz jautājumu „cik ātri”.',
+      'Zils ir iedzīvotāju skaita samazinājums, bālais vidus ir tuvu nullei, sarkans ir pieaugums. Skalā ir procenti gadā. Temps apvieno dzimstību, mirstību un migrāciju. Tas nav fertilitāte pati par sevi.',
     caveats:
-      'Gada pieauguma temps ir neto izmaiņa no dzimstības, mirstības un migrācijas. Tas atšķiras no fertilitātes rādītāja paša un no paša iedzīvotāju skaita.',
+      'Skalas gali ir zīmēto valstu 2. un 98. procentile, tāpēc dažas ātrākas un lēnākas teritorijas dala galu krāsas. Tās pašas mazās teritorijas, kuru nav iedzīvotāju skaita platē, nav arī šeit. Šī nav karte gadam, kurā iedzīvotāju skaits sasniedza maksimumu.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats par gada iedzīvotāju skaita pieauguma tempu pēc World Population Prospects 2024 un Our World in Data kartes. Atsauce: ANO DESA / Our World in Data.',
+      'ANO DESA, World Population Prospects 2024, demogrāfiskie rādītāji, vidējais variants, 2024. gada iedzīvotāju skaita pieauguma temps. Robežas: Natural Earth 1:50m, publiskais īpašums.',
     imageAlt:
-      'Fix Planet pārskats: gada iedzīvotāju skaita pieauguma vai samazinājuma karte pa valstīm, ne absolūtā skaita karte',
+      'Equal Earth karte ar ANO 2024. gada iedzīvotāju skaita pieauguma tempu: zils ir samazinājums, sarkans ir pieaugums, ar skaitļu skalu',
   },
 };

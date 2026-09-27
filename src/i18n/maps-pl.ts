@@ -628,70 +628,70 @@ export const pl: Record<string, MapCopy> = {
   },
   'world-population': {
     title: 'Ludność świata',
-    cardMeta: 'ONZ WPP 2024 · ~8,2 mld (2024) · sumy krajowe',
-    hook: 'Ilu ludzi mieszka w każdym kraju i jaka jest światowa liczba ludności — według oficjalnych szacunków i projekcji ONZ.',
+    cardMeta: 'ONZ WPP 2024 · 8,16 mld (1 lipca 2024)',
+    hook: 'Ilu ludzi mieszka w każdym kraju 1 lipca 2024 r., według średniego wariantu szacunków ONZ.',
     description:
-      'World Population Prospects 2024 (DESA ONZ) to oficjalne szacunki i projekcje liczby ludności dla 237 krajów lub obszarów. W 2024 r. ludność świata wynosi około 8,2 mld; w wariancie średnim ma osiągnąć szczyt około 10,3 mld w połowie lat 2080., a następnie spaść do około 10,2 mld w 2100 r. Dane krajowe można przeglądać w portalu WPP ONZ oraz na mapie Our World in Data, opartej na tej samej serii.',
+      'Każdy kraj ma kolor według liczby ludności 1 lipca 2024 r. w średnim wariancie World Population Prospects 2024 (DESA ONZ). Suma światowa w tej samej tabeli to 8,16 mld. Największa suma krajowa przypada Indiom, potem Chinom. Kolor to skala logarytmiczna liczby ludzi: od około 16 tysięcy (5. percentyl narysowanych krajów) do 1,45 mld w Indiach.',
     whyOnShelf:
-      'Sumy krajowe pokazują, ilu ludzi mieszka w każdym kraju, w jednym wspólnym szeregu ONZ. Planowanie żywności, energii, zdrowia i klimatu zaczyna się od tych liczb.',
+      'Jedna rewizja ONZ stawia sumę każdego kraju na tę samą datę. Kolor to ilu ludzi, a nie ilu na kilometr kwadratowy i nie światła nocne.',
     howToRead:
-      'Liczby WPP to szacunki i projekcje demograficzne dla całych krajów, a nie surowe wyniki spisu. Liczb z różnych rewizji WPP nie da się porównywać wprost; liczby tutaj pochodzą z rewizji 2024. Termin szczytu i suma na 2100 r. zależą od scenariusza; liczby nagłówkowe to wariant średni.',
+      'Ciemniejszy brąz to większa suma krajowa. Na skali jest liczba ludzi, logarytmicznie. Szary ląd nie ma wiersza za 2024 r. dopasowanego do tego wielokąta. Jeziora i Morze Kaspijskie zostają wodą.',
     caveats:
-      'Liczb z różnych rewizji WPP nie da się porównywać wprost. Termin szczytu i suma na 2100 r. zależą od scenariusza; liczby nagłówkowe biorą wariant średni rewizji 2024.',
+      'Suma krajowa to nie siatka gęstości. Gujana Francuska, Gwadelupa, Martynika, Majotta, Reunion, Gibraltar, Bonaire, Sint Eustatius i Saba oraz Tokelau są w tabeli, ale na tej linii brzegowej Natural Earth 1:50m nie mają osobnego wielokąta. 8,16 mld to wiersz „świat” w tabeli, a nie suma pokolorowanych krajów.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet sum ludności krajów według World Population Prospects 2024 i mapy Our World in Data. Atrybucja: DESA ONZ / Our World in Data.',
+      'DESA ONZ, World Population Prospects 2024, wskaźniki demograficzne, wariant średni, ludność 1 lipca 2024 r. Granice: Natural Earth 1:50m, domena publiczna.',
     imageAlt:
-      'Przegląd Fix Planet: mapa sum ludności według krajów, nie siatka gęstości i nie światła nocne',
+      'Mapa Equal Earth liczby ludności krajów 1 lipca 2024 r. według WPP 2024: ciemniejszy brąz to większa suma, ze skalą liczb',
   },
   'cities-and-towns': {
     title: 'Miasta i miasteczka',
-    cardMeta: 'ONZ WUP 2025 · DegURBA · miasta ~45%',
-    hook: 'Gdzie mieszkają ludzie w kontinuum osadnictwa — miasta, miasteczka i obszary wiejskie — według zharmonizowanej klasyfikacji stopnia urbanizacji ONZ (DegURBA).',
+    cardMeta: 'GHS-SMOD R2023A · epoka 2030 · siatka 0,02°',
+    hook: 'Ośrodki miejskie, miasteczka i ląd wiejski na siatce osadnictwa GHSL dla 2030 r.',
     description:
-      'World Urbanization Prospects 2025 (ONZ) po raz pierwszy w pełni opiera się na klasyfikacji stopnia urbanizacji (DegURBA): porównywalnym dla wszystkich krajów podziale na miasta, miasteczka i obszary wiejskie. W 2025 r. w miastach mieszka około 45% z 8,2 mld ludzi na świecie (w 1950 r. — 20%), w miasteczkach około 36%, na wsi około 19%. Krajowe definicje „ludności miejskiej” dają inne udziały, dlatego jednolita seria WUP 2025 lepiej nadaje się do porównań między krajami.',
+      'Plansza to epoka 2030 warstwy GHS-SMOD R2023A, klasyfikacji osadnictwa Global Human Settlement Layer. Klasy siatki 30 sekund kątowych są liczone większością do komórki 0,02°. Czerwień to ośrodek miejski (klasa 30). Pomarańcz to miasteczko lub skupisko półgęste (klasy 21, 22 i 23). Oliwkowy to komórki wiejskie (klasy 11, 12 i 13). Większość powierzchni lądu to klasa wiejska.',
     whyOnShelf:
-      'Krajowe etykiety „miejskie” stosują różne progi, więc prosta mapa odsetka ludności miejskiej może zaniżać, ilu ludzi już mieszka w gęstych osadach. DegURBA czyni miasta i miasteczka porównywalnymi między krajami i pokazuje, że w miasteczkach wciąż mieszka ponad jedna trzecia ludzi.',
+      'Siatka pokazuje klasę osadnictwa lądu i jest rysowana tak samo w każdym kraju. To nie krajowy odsetek ludności miejskiej i nie liczba ludzi.',
     howToRead:
-      '„Miasto” oznacza tu klasę DegURBA, a nie każde miejsce, które kraj nazywa miejskim. Zsumowanie definicji krajowych daje około 58% ludności „miejskiej” w 2025 r. — wyraźnie poniżej 81% mieszkających w miastach i miasteczkach według DegURBA, bo wiele miasteczek DegURBA jest w statystyce krajowej zapisanych jako wieś. Jedna definicja dla wszystkich krajów czyni serię WUP 2025 bardziej porównywalną.',
+      'Czerwień oznacza ośrodki miejskie, pomarańcz miasteczka i obszary półgęste, oliwkowy komórki wiejskie. Nie ma skali liczbowej: trzy kolory to te grupy klas. Woda w siatce osadnictwa i jeziora Natural Earth zostają niezamalowane.',
     caveats:
-      'Klasa DegURBA „miasto” to nie każde miejsce, które kraj nazywa miejskim. Krajowy udział ludności miejskiej i udział miast wraz z miasteczkami według DegURBA to różne wielkości.',
+      'Klasa 30 to ośrodek miejski w klasyfikacji GHSL, a nie każde miejsce, które kraj nazywa miastem. Epoka 2030 jest ostatnim krokiem wydania R2023A i obejmuje jego projekcję. Plansza nie pokazuje, ilu ludzi mieszka w każdej klasie.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet skali stopnia urbanizacji (miasta, miasteczka, obszary wiejskie) według World Urbanization Prospects 2025. Atrybucja: DESA ONZ.',
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-SMOD R2023A, epoka 2030, CC BY 4.0. Klasy policzone na siatce 0,02°. Granice: Natural Earth.',
     imageAlt:
-      'Przegląd Fix Planet: skala stopnia urbanizacji — miasta, miasteczka i obszary wiejskie, nie światła nocne',
+      'Mapa Equal Earth klas osadnictwa GHSL na 2030 r.: czerwone ośrodki miejskie, pomarańczowe miasteczka, oliwkowy ląd wiejski',
   },
   'built-up-surface': {
     title: 'Powierzchnia zabudowana',
-    cardMeta: 'KE GHSL · GHS-BUILT-S R2023A · 1975–2030',
-    hook: 'Jaką część lądu pokrywają budynki i inna zabudowa — fizyczny ślad osadnictwa.',
+    cardMeta: 'GHS-BUILT-S R2023A · epoka 2030 · procent komórki',
+    hook: 'Jaką część każdej komórki stanowi powierzchnia zabudowana na siatce GHSL z 2030 r.',
     description:
-      'Global Human Settlement Layer (GHSL) Komisji Europejskiej publikuje GHS-BUILT-S (R2023A) — globalną siatkę powierzchni zabudowanej opracowaną na podstawie zdjęć satelitarnych Sentinel-2 i Landsat dla lat 1975–2030. Według WUP 2025 w latach 1975–2025 obszar zabudowany rósł niemal dwa razy szybciej niż liczba ludności, a powierzchnia zabudowana na osobę wzrosła z około 43 do 63 m². Warstwa pokazuje, ile ziemi zajmują budynki; można ją przeglądać na stronie GHSL.',
+      'Plansza sumuje powierzchnię zabudowaną GHS-BUILT-S R2023A dla epoki 2030. Metry kwadratowe z siatki 30 sekund kątowych są dodawane w każdej komórce 0,02° i dzielone przez pole tej komórki. Kolor to ten procent, na skali logarytmicznej od 0,1 do około 24. Komórki poniżej 0,1 procenta zostają kolorem lądu. Góra skali to 99,5. percentyl komórek, w których jest jakakolwiek zabudowa.',
     whyOnShelf:
-      'Powierzchnia zabudowana pokazuje, ile ziemi naprawdę zajmują budynki. To ślad, który konkuruje z polami i ekosystemami. Według WUP 2025 około 60% ziemi przekształconej w użytkowanie miejskie od 1970 r. wcześniej było produktywnym polem uprawnym.',
+      'Powierzchnia zabudowana to grunt pod budynkami. To nie liczba ludzi i nie światła widoczne w nocy.',
     howToRead:
-      'GHS-BUILT-S mierzy fizyczną powierzchnię zajętą przez budynki, niezależnie od prawnych granic miasta i od tego, ilu ludzi tam mieszka. Gęste dzielnice wysokiej zabudowy mogą pomieścić wielu ludzi na skromnym śladzie; rozproszona niska zabudowa robi odwrotnie. Warstwa mierzy więc, ile ziemi zabiera zabudowa.',
+      'Od żółci do głębokiej czerwieni udział komórki jest większy. Liczba na skali to procent komórki 0,02°. Komórka może przekroczyć 0,1 procenta gęstą dzielnicą albo rzadszą zabudową.',
     caveats:
-      'Warstwa mierzy ziemię pod budynkami, nie liczbę ludzi i nie światła nocne. Gęsta wysoka zabudowa i rozproszona niska zabudowa zajmują różną ziemię przy różnej liczbie mieszkańców.',
+      'Wartość to powierzchnia zabudowana podzielona przez pole komórki, a nie powierzchnia pięter w wieżowcach i nie prawna granica miasta. Ocean i jeziora nie są kolorowane. Epoka 2030 jest ostatnim krokiem wydania R2023A i obejmuje jego projekcję.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet powierzchni zabudowanej według GHS-BUILT-S (R2023A). Atrybucja: Komisja Europejska / GHSL.',
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-BUILT-S R2023A, epoka 2030, CC BY 4.0. Złożone w siatkę 0,02°. Granice: Natural Earth.',
     imageAlt:
-      'Przegląd Fix Planet: natężenie powierzchni zabudowanej, nie światła nocne i nie mapa gęstości zaludnienia',
+      'Mapa Equal Earth procentu powierzchni zabudowanej w komórce 0,02° w 2030 r., od żółci do czerwieni, ze skalą liczb',
   },
   'population-growth': {
     title: 'Wzrost ludności',
-    cardMeta: 'ONZ WPP 2024 · roczne tempo wzrostu · kraje',
-    hook: 'Jak szybko zmienia się ludność każdego kraju — roczne tempo wzrostu lub spadku.',
+    cardMeta: 'ONZ WPP 2024 · tempo 2024 · procent rocznie',
+    hook: 'Roczne tempo zmiany ludności każdego kraju w 2024 r., z tego samego średniego wariantu ONZ.',
     description:
-      'World Population Prospects 2024 (ONZ) pokazuje zmiany liczby ludności według krajów. Ludność świata nadal rośnie od 8,2 mld (2024) ku szczytowi w połowie lat 2080., ale w 63 krajach lub obszarach liczba ludności już osiągnęła szczyt, a w kolejnych 48 szczyt jest spodziewany w latach 2025–2054. Roczne tempo wzrostu to zmiana netto uwzględniająca urodzenia, zgony i migracje, dlatego różni się od samej dzietności.',
+      'Każdy kraj ma kolor według tempa wzrostu ludności w 2024 r. w średnim wariancie World Population Prospects 2024, w procentach na rok. Skala biegnie od około −1,7 do 3,4 i jest wyśrodkowana na zerze. Spośród narysowanych krajów 60 ma tempo ujemne. Tempo powyżej 3 procent w tej tabeli mają między innymi Angola (3,0), Demokratyczna Republika Konga (3,2), Niger (3,3), Republika Środkowoafrykańska (3,4) i Somalia (3,4).',
     whyOnShelf:
-      'Duży kraj może rosnąć powoli, a mniejszy podwoić się w ciągu pokolenia. Tempa wzrostu pokazują, gdzie skupiają się najbliższe dekady przyrostu albo spadku. WPP 2024 wskazuje bardzo szybki wzrost do 2054 r. w takich miejscach jak Angola, Republika Środkowoafrykańska, Demokratyczna Republika Konga, Niger i Somalia.',
+      'Duża liczba ludności może zmieniać się powoli. W tej tabeli tempo Chin w 2024 r. wynosi −0,2 procenta, a kilka mniejszych krajów jest powyżej 3 procent. Plansza pokazuje tempo, a nie liczbę ludzi.',
     howToRead:
-      'Roczne tempo wzrostu łączy urodzenia, zgony i migracje w jedną zmianę netto, dlatego różni się od samej dzietności. Razem z liczbą ludności tempa odpowiadają i na pytanie „ilu”, i na pytanie „jak szybko”.',
+      'Niebieski to spadek ludności, blady środek jest blisko zera, czerwień to wzrost. Na skali są procenty na rok. Tempo łączy urodzenia, zgony i migracje. To nie sama dzietność.',
     caveats:
-      'Roczne tempo to zmiana netto z urodzeń, zgonów i migracji. Różni się od samej dzietności i od samej liczby ludności.',
+      'Końce skali to 2. i 98. percentyl narysowanych krajów, więc kilka szybszych i wolniejszych obszarów dzieli skrajne kolory. Te same małe obszary, których nie ma na planszy ludności, nie ma i tutaj. To nie jest mapa roku, w którym ludność osiągnęła szczyt.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet rocznego tempa wzrostu ludności według World Population Prospects 2024 i mapy Our World in Data. Atrybucja: DESA ONZ / Our World in Data.',
+      'DESA ONZ, World Population Prospects 2024, wskaźniki demograficzne, wariant średni, tempo wzrostu ludności w 2024 r. Granice: Natural Earth 1:50m, domena publiczna.',
     imageAlt:
-      'Przegląd Fix Planet: mapa rocznego tempa wzrostu lub spadku ludności według krajów, nie mapa samej liczby ludności',
+      'Mapa Equal Earth tempa wzrostu ludności ONZ w 2024 r.: niebieski to spadek, czerwień to wzrost, ze skalą liczb',
   },
 };

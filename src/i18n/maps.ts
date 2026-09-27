@@ -766,67 +766,67 @@ const en: Record<string, MapCopy> = {
   },
   'world-population': {
     title: 'World population',
-    hook: 'How many people live in each country and how large the world total is, from the United Nations’ official population estimates and projections.',
+    hook: 'How many people live in each country on 1 July 2024, from the UN medium-variant estimates.',
     description:
-      'The United Nations World Population Prospects 2024 (UN DESA Population Division) is the official set of population estimates and projections for 237 countries or areas. In 2024 the world total is about 8.2 billion people; under the medium scenario the global population is projected to peak around 10.3 billion in the mid-2080s and ease to about 10.2 billion by 2100. The WPP hub, Summary of Results, key-messages brief, and press release publish the headline figures; Our World in Data’s population map is a convenient public choropleth built from the same UN series.',
+      'Each country is coloured by its population on 1 July 2024 in the UN World Population Prospects 2024 medium variant. The same table’s world total is 8.16 billion. India is the largest country total, then China. The colour is a log scale of people, from about 16 thousand (the 5th percentile of the countries drawn) to India’s 1.45 billion.',
     whyOnShelf:
-      'Country totals show how many people live in each country, measured in one shared UN series. Planning for food, energy, health and climate starts from these numbers.',
+      'One UN revision puts every country total on the same date. The colour is how many people, not how many per square kilometre and not lights at night.',
     howToRead:
-      'WPP figures are demographic estimates and projections for whole countries rather than raw census counts. Figures from different WPP revisions are not directly comparable; the numbers here come from the 2024 revision. Peak timing and the 2100 total depend on the scenario; the headline figures use the medium variant.',
+      'Darker brown is a larger country total. The bar is people, on a log scale. Grey land has no 2024 row matched to that polygon. Lakes and the Caspian are left as water.',
     caveats:
-      'Figures from different WPP revisions are not directly comparable. Peak timing and the 2100 total depend on the scenario. The headline figures use the medium variant of the 2024 revision.',
+      'A country total is not a density grid. French Guiana, Guadeloupe, Martinique, Mayotte, Réunion, Gibraltar, Bonaire, Sint Eustatius and Saba, and Tokelau are in the table but are not separate polygons on this Natural Earth 1:50m coastline. The 8.16 billion is the table’s World row, not a sum of the coloured countries.',
     licenseNote:
-      'The preview is a Fix Planet overview of country population totals after UN World Population Prospects 2024 and the Our World in Data population map. Attribute UN DESA Population Division / Our World in Data. Open the WPP pages and the OWID map for the current figures.',
+      'UN DESA Population Division, World Population Prospects 2024, demographic indicators, medium variant, population on 1 July 2024. Boundaries: Natural Earth 1:50m, public domain.',
     imageAlt:
-      'Fix Planet overview choropleth of country population totals, darkest where the largest populations live — not a density grid and not night lights',
+      'Equal Earth choropleth of UN WPP 2024 country population on 1 July 2024, darker brown for larger totals, with a numeric colour bar',
   },
   'cities-and-towns': {
     title: 'Cities and towns',
-    hook: 'Where people live along the settlement continuum — cities, towns and rural areas — under the United Nations’ harmonised Degree of Urbanization.',
+    hook: 'Urban centres, towns and rural land in the GHSL settlement grid for 2030.',
     description:
-      'World Urbanization Prospects 2025 (UN DESA Population Division) is the first WUP revision to fully integrate the Degree of Urbanization (DegURBA): a comparable split of every country’s land into cities, towns and rural areas using gridded population and built-up data. In 2025, cities hold about 45% of the world’s 8.2 billion people (more than double the 20% city share in 1950), towns about 36%, and rural areas about 19%. The report covers 237 countries or areas and more than 12,000 cities of 50,000+ inhabitants; Jakarta is the largest city (~42 million), ahead of Dhaka and Tokyo. Readers can explore the figures on the WUP hub and in the Summary of Results, the key-messages brief and the press release.',
+      'The plate is the 2030 epoch of GHS-SMOD R2023A, the Global Human Settlement Layer settlement classification. The 30 arc-second classes are counted by majority onto a 0.02° grid. Red is an urban centre (class 30). Orange is a town or semi-dense cluster (classes 21, 22 and 23). Olive is rural (classes 11, 12 and 13). Most of the land area is the rural class.',
     whyOnShelf:
-      'National “urban” labels use different thresholds, so a simple % urban map can understate how many people already live in dense settlements. DegURBA makes cities and towns comparable across countries and shows that towns still house more than a third of humanity.',
+      'The grid is the settlement class of the land, drawn the same way in every country. It is not a national percent-urban figure and not a count of people.',
     howToRead:
-      '“City” here is a DegURBA class, not every place a country calls urban. Aggregating national definitions yields about 58% “urban” in 2025 — well below the 81% living in cities plus towns under DegURBA, because many DegURBA towns are coded rural in national statistics. Because it applies one definition everywhere, the UN WUP 2025 series gives the more comparable picture across countries.',
+      'Red marks urban centres, orange marks towns and semi-dense areas, and olive marks rural cells. There is no numeric bar: the three colours are those class groups. Water in the settlement grid, and Natural Earth lakes, stay uncoloured.',
     caveats:
-      'A DegURBA city is not every place a country calls urban. National urban shares and the DegURBA cities-plus-towns share are different quantities.',
+      'Class 30 is an urban centre in the GHSL classification, not every place a country calls a city. The 2030 epoch is the last step of R2023A and includes its projection. The plate does not show how many people live in each class.',
     licenseNote:
-      'The preview is a Fix Planet overview of the Degree of Urbanization continuum — cities, towns, and rural areas — after UN World Urbanization Prospects 2025. Attribute UN DESA. Open the WUP pages for the current figures.',
+      'European Commission Joint Research Centre, GHSL GHS-SMOD R2023A, 2030 epoch, CC BY 4.0. Classes counted on a 0.02° grid. Boundaries: Natural Earth.',
     imageAlt:
-      'Fix Planet overview of the Degree of Urbanization: cities, towns, and rural areas as shares of world population — not night lights',
+      'Equal Earth map of GHSL settlement classes for 2030: red urban centres, orange towns, olive rural land',
   },
   'built-up-surface': {
     title: 'Built-up surface',
-    hook: 'How much of the land surface is covered by buildings and other built structures — the physical footprint of settlement.',
+    hook: 'How much of each cell is built-up surface in the 2030 GHSL grid.',
     description:
-      'The European Commission’s Global Human Settlement Layer publishes GHS-BUILT-S (R2023A): a global built-up surface grid derived from Sentinel-2 composites and Landsat, with a multitemporal series from 1975 to 2030. Readers can explore the layer on the GHSL homepage, the BUILT-S product page and the datasets catalogue. UN WUP 2025 notes that between 1975 and 2025 global built-up area grew almost twice as fast as population, raising built-up area per person from about 43 to 63 m².',
+      'The plate sums GHS-BUILT-S R2023A built-up surface for the 2030 epoch. Square metres from the 30 arc-second grid are added inside each 0.02° cell and divided by the area of that cell. The colour is that percent, on a log scale from 0.1 to about 24. Cells under 0.1 percent stay the base land colour. The top of the bar is the 99.5th percentile of cells that have any built-up surface.',
     whyOnShelf:
-      'Built-up surface shows how much land buildings actually occupy. It is the footprint that competes with farmland and ecosystems — WUP 2025 estimates that about 60% of land converted to urban use since 1970 was previously productive farmland.',
+      'Built-up surface is the ground covered by buildings. It is not the number of people and not the lights seen at night.',
     howToRead:
-      'GHS-BUILT-S measures the physical surface covered by buildings, regardless of legal city limits or how many people live there. Dense high-rise districts can house many people on a modest footprint; sprawling low-rise areas do the opposite. The layer is therefore a measure of land take.',
+      'Yellow to deep red is a larger share of the cell. The number on the bar is percent of the 0.02° cell. A cell can pass 0.1 percent with a dense district or with a thinner scatter of buildings.',
     caveats:
-      'GHS-BUILT-S measures the physical surface covered by buildings, not how many people live there and not night-time lights. Dense high-rise districts and sprawling low-rise areas can cover very different amounts of land.',
+      'The value is built-up surface divided by the area of the cell, not floor space stacked in towers and not a legal city boundary. Ocean and lakes are not coloured. The 2030 epoch is the last step of R2023A and includes its projection.',
     licenseNote:
-      'The preview is a Fix Planet overview of built-up surface intensity after the European Commission Global Human Settlement Layer GHS-BUILT-S R2023A. Attribute the European Commission / GHSL. Open the GHSL product page for the layer.',
+      'European Commission Joint Research Centre, GHSL GHS-BUILT-S R2023A, 2030 epoch, CC BY 4.0. Aggregated to a 0.02° grid. Boundaries: Natural Earth.',
     imageAlt:
-      'Fix Planet overview of built-up surface intensity as a continuous field — not night lights and not a population-density map',
+      'Equal Earth map of the percent of each 0.02° cell that is built-up surface in 2030, yellow to red, with a numeric colour bar',
   },
   'population-growth': {
     title: 'Population growth',
-    hook: 'How fast each country’s population is changing — the annual rate of growth or decline.',
+    hook: 'The 2024 annual rate of population change in each country, from the same UN medium variant.',
     description:
-      'UN World Population Prospects 2024 publishes country-level population change over time. Globally the total is still rising from 8.2 billion (2024) toward a projected mid-2080s peak, but 63 countries or areas have already peaked in size, and another 48 are projected to peak between 2025 and 2054. Our World in Data’s population growth rate map is a clear public choropleth of annual rates drawn from the UN series; the Population & Demography Data Explorer lets readers switch between related indicators.',
+      'Each country is coloured by its 2024 population growth rate in the UN World Population Prospects 2024 medium variant, in percent per year. The scale runs from about −1.7 to 3.4 and is centered at zero. Of the countries drawn, 60 have a negative rate. Rates above 3 percent in this table include Angola (3.0), the Democratic Republic of the Congo (3.2), Niger (3.3), the Central African Republic (3.4) and Somalia (3.4).',
     whyOnShelf:
-      'A large country can grow slowly while a smaller one doubles in a generation. Growth rates show where the next decades of increase or decline are concentrated — WPP 2024 flags very rapid growth through 2054 in places such as Angola, the Central African Republic, the Democratic Republic of the Congo, Niger and Somalia.',
+      'A large population can change slowly. In this table China’s 2024 rate is −0.2 percent, while several smaller countries are above 3 percent. The plate is the rate, not the number of people.',
     howToRead:
-      'Annual growth rates combine births, deaths and migration into one net change, so they differ from fertility rates alone. Together with total population figures, growth rates answer both “how many” and “how fast.”',
+      'Blue is a falling population, the pale middle is near zero, and red is growth. The bar is percent per year. The rate combines births, deaths and migration. It is not fertility alone.',
     caveats:
-      'Annual growth rates combine births, deaths, and migration into one net change. They differ from fertility rates alone and from total population.',
+      'The ends of the scale are the 2nd and 98th percentiles of the countries drawn, so a few faster and slower areas share the end colours. The same small areas missing from the population plate are missing here. This is not a map of the year a population reached its peak.',
     licenseNote:
-      'The preview is a Fix Planet overview of annual population growth rates after UN World Population Prospects 2024 and the Our World in Data growth-rate map. Attribute UN DESA / Our World in Data. Open the OWID map for the current rates.',
+      'UN DESA Population Division, World Population Prospects 2024, demographic indicators, medium variant, 2024 population growth rate. Boundaries: Natural Earth 1:50m, public domain.',
     imageAlt:
-      'Fix Planet overview choropleth of annual population growth rates, with faster and slower countries in a diverging palette — not absolute population totals',
+      'Equal Earth choropleth of the 2024 UN population growth rate, blue for decline and red for growth, with a numeric colour bar',
   },
   'global-river-basins': {
     title: 'Global river basins',

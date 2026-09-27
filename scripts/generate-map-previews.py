@@ -1121,11 +1121,10 @@ def population_growth() -> None:
 
 
 def population_cards() -> None:
-    OUT.mkdir(parents=True, exist_ok=True)
-    world_population()
-    cities_and_towns()
-    built_up_surface()
-    population_growth()
+    raise SystemExit(
+        "Population plates are drawn from UN WPP 2024 and GHSL R2023A. "
+        "Run: python3 scripts/maps-real/render_population.py"
+    )
 
 
 def pollution_cards() -> None:
