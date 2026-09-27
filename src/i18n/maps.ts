@@ -764,6 +764,70 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'NASA 2012 night-lights map of Earth: city lights on dark land and black oceans, no borders or labels',
   },
+  'world-population': {
+    title: 'World population',
+    hook: 'How many people live in each country and how large the world total is, from the United Nations’ official population estimates and projections.',
+    description:
+      'The United Nations World Population Prospects 2024 (UN DESA Population Division) is the official set of population estimates and projections for 237 countries or areas. In 2024 the world total is about 8.2 billion people; under the medium scenario the global population is projected to peak around 10.3 billion in the mid-2080s and ease to about 10.2 billion by 2100. The WPP hub, Summary of Results, key-messages brief, and press release publish the headline figures; Our World in Data’s population map is a convenient public choropleth built from the same UN series.',
+    whyOnShelf:
+      'Country totals show how many people live in each country, measured in one shared UN series. Planning for food, energy, health and climate starts from these numbers.',
+    howToRead:
+      'WPP figures are demographic estimates and projections for whole countries rather than raw census counts. Figures from different WPP revisions are not directly comparable; the numbers here come from the 2024 revision. Peak timing and the 2100 total depend on the scenario; the headline figures use the medium variant.',
+    caveats:
+      'Figures from different WPP revisions are not directly comparable. Peak timing and the 2100 total depend on the scenario. The headline figures use the medium variant of the 2024 revision.',
+    licenseNote:
+      'The preview is a Fix Planet overview of country population totals after UN World Population Prospects 2024 and the Our World in Data population map. Attribute UN DESA Population Division / Our World in Data. Open the WPP pages and the OWID map for the current figures.',
+    imageAlt:
+      'Fix Planet overview choropleth of country population totals, darkest where the largest populations live — not a density grid and not night lights',
+  },
+  'cities-and-towns': {
+    title: 'Cities and towns',
+    hook: 'Where people live along the settlement continuum — cities, towns and rural areas — under the United Nations’ harmonised Degree of Urbanization.',
+    description:
+      'World Urbanization Prospects 2025 (UN DESA Population Division) is the first WUP revision to fully integrate the Degree of Urbanization (DegURBA): a comparable split of every country’s land into cities, towns and rural areas using gridded population and built-up data. In 2025, cities hold about 45% of the world’s 8.2 billion people (more than double the 20% city share in 1950), towns about 36%, and rural areas about 19%. The report covers 237 countries or areas and more than 12,000 cities of 50,000+ inhabitants; Jakarta is the largest city (~42 million), ahead of Dhaka and Tokyo. Readers can explore the figures on the WUP hub and in the Summary of Results, the key-messages brief and the press release.',
+    whyOnShelf:
+      'National “urban” labels use different thresholds, so a simple % urban map can understate how many people already live in dense settlements. DegURBA makes cities and towns comparable across countries and shows that towns still house more than a third of humanity.',
+    howToRead:
+      '“City” here is a DegURBA class, not every place a country calls urban. Aggregating national definitions yields about 58% “urban” in 2025 — well below the 81% living in cities plus towns under DegURBA, because many DegURBA towns are coded rural in national statistics. Because it applies one definition everywhere, the UN WUP 2025 series gives the more comparable picture across countries.',
+    caveats:
+      'A DegURBA city is not every place a country calls urban. National urban shares and the DegURBA cities-plus-towns share are different quantities.',
+    licenseNote:
+      'The preview is a Fix Planet overview of the Degree of Urbanization continuum — cities, towns, and rural areas — after UN World Urbanization Prospects 2025. Attribute UN DESA. Open the WUP pages for the current figures.',
+    imageAlt:
+      'Fix Planet overview of the Degree of Urbanization: cities, towns, and rural areas as shares of world population — not night lights',
+  },
+  'built-up-surface': {
+    title: 'Built-up surface',
+    hook: 'How much of the land surface is covered by buildings and other built structures — the physical footprint of settlement.',
+    description:
+      'The European Commission’s Global Human Settlement Layer publishes GHS-BUILT-S (R2023A): a global built-up surface grid derived from Sentinel-2 composites and Landsat, with a multitemporal series from 1975 to 2030. Readers can explore the layer on the GHSL homepage, the BUILT-S product page and the datasets catalogue. UN WUP 2025 notes that between 1975 and 2025 global built-up area grew almost twice as fast as population, raising built-up area per person from about 43 to 63 m².',
+    whyOnShelf:
+      'Built-up surface shows how much land buildings actually occupy. It is the footprint that competes with farmland and ecosystems — WUP 2025 estimates that about 60% of land converted to urban use since 1970 was previously productive farmland.',
+    howToRead:
+      'GHS-BUILT-S measures the physical surface covered by buildings, regardless of legal city limits or how many people live there. Dense high-rise districts can house many people on a modest footprint; sprawling low-rise areas do the opposite. The layer is therefore a measure of land take.',
+    caveats:
+      'GHS-BUILT-S measures the physical surface covered by buildings, not how many people live there and not night-time lights. Dense high-rise districts and sprawling low-rise areas can cover very different amounts of land.',
+    licenseNote:
+      'The preview is a Fix Planet overview of built-up surface intensity after the European Commission Global Human Settlement Layer GHS-BUILT-S R2023A. Attribute the European Commission / GHSL. Open the GHSL product page for the layer.',
+    imageAlt:
+      'Fix Planet overview of built-up surface intensity as a continuous field — not night lights and not a population-density map',
+  },
+  'population-growth': {
+    title: 'Population growth',
+    hook: 'How fast each country’s population is changing — the annual rate of growth or decline.',
+    description:
+      'UN World Population Prospects 2024 publishes country-level population change over time. Globally the total is still rising from 8.2 billion (2024) toward a projected mid-2080s peak, but 63 countries or areas have already peaked in size, and another 48 are projected to peak between 2025 and 2054. Our World in Data’s population growth rate map is a clear public choropleth of annual rates drawn from the UN series; the Population & Demography Data Explorer lets readers switch between related indicators.',
+    whyOnShelf:
+      'A large country can grow slowly while a smaller one doubles in a generation. Growth rates show where the next decades of increase or decline are concentrated — WPP 2024 flags very rapid growth through 2054 in places such as Angola, the Central African Republic, the Democratic Republic of the Congo, Niger and Somalia.',
+    howToRead:
+      'Annual growth rates combine births, deaths and migration into one net change, so they differ from fertility rates alone. Together with total population figures, growth rates answer both “how many” and “how fast.”',
+    caveats:
+      'Annual growth rates combine births, deaths, and migration into one net change. They differ from fertility rates alone and from total population.',
+    licenseNote:
+      'The preview is a Fix Planet overview of annual population growth rates after UN World Population Prospects 2024 and the Our World in Data growth-rate map. Attribute UN DESA / Our World in Data. Open the OWID map for the current rates.',
+    imageAlt:
+      'Fix Planet overview choropleth of annual population growth rates, with faster and slower countries in a diverging palette — not absolute population totals',
+  },
   'global-river-basins': {
     title: 'Global river basins',
     hook: 'Nested sub-basin polygons for the whole planet (Pfafstetter levels) — a hydrographic base map, not a stress index.',
@@ -1077,6 +1141,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'pollution') {
     // Six Pollution cards would otherwise be sliced to three. List every
     // Pollution sibling so PM2.5 and territorial CO₂ reach the rest of the shelf.
+    return same;
+  }
+  if (current.category === 'population') {
+    // Six Population cards would otherwise be sliced to three. List every
+    // Population sibling so density and night lights reach the four new cards.
     return same;
   }
   return [...same, ...rest].slice(0, limit);

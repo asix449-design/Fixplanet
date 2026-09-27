@@ -623,4 +623,72 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las — nie data utraty koron',
   },
+  'world-population': {
+    title: 'Ludność świata',
+    cardMeta: 'ONZ WPP 2024 · ~8,2 mld (2024) · sumy krajowe',
+    hook: 'Ilu ludzi mieszka w każdym kraju i jaka jest światowa liczba ludności — według oficjalnych szacunków i projekcji ONZ.',
+    description:
+      'World Population Prospects 2024 (DESA ONZ) to oficjalne szacunki i projekcje liczby ludności dla 237 krajów lub obszarów. W 2024 r. ludność świata wynosi około 8,2 mld; w wariancie średnim ma osiągnąć szczyt około 10,3 mld w połowie lat 2080., a następnie spaść do około 10,2 mld w 2100 r. Dane krajowe można przeglądać w portalu WPP ONZ oraz na mapie Our World in Data, opartej na tej samej serii.',
+    whyOnShelf:
+      'Sumy krajowe pokazują, ilu ludzi mieszka w każdym kraju, w jednym wspólnym szeregu ONZ. Planowanie żywności, energii, zdrowia i klimatu zaczyna się od tych liczb.',
+    howToRead:
+      'Liczby WPP to szacunki i projekcje demograficzne dla całych krajów, a nie surowe wyniki spisu. Liczb z różnych rewizji WPP nie da się porównywać wprost; liczby tutaj pochodzą z rewizji 2024. Termin szczytu i suma na 2100 r. zależą od scenariusza; liczby nagłówkowe to wariant średni.',
+    caveats:
+      'Liczb z różnych rewizji WPP nie da się porównywać wprost. Termin szczytu i suma na 2100 r. zależą od scenariusza; liczby nagłówkowe biorą wariant średni rewizji 2024.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet sum ludności krajów według World Population Prospects 2024 i mapy Our World in Data. Atrybucja: DESA ONZ / Our World in Data.',
+    imageAlt:
+      'Przegląd Fix Planet: mapa sum ludności według krajów, nie siatka gęstości i nie światła nocne',
+  },
+  'cities-and-towns': {
+    title: 'Miasta i miasteczka',
+    cardMeta: 'ONZ WUP 2025 · DegURBA · miasta ~45%',
+    hook: 'Gdzie mieszkają ludzie w kontinuum osadnictwa — miasta, miasteczka i obszary wiejskie — według zharmonizowanej klasyfikacji stopnia urbanizacji ONZ (DegURBA).',
+    description:
+      'World Urbanization Prospects 2025 (ONZ) po raz pierwszy w pełni opiera się na klasyfikacji stopnia urbanizacji (DegURBA): porównywalnym dla wszystkich krajów podziale na miasta, miasteczka i obszary wiejskie. W 2025 r. w miastach mieszka około 45% z 8,2 mld ludzi na świecie (w 1950 r. — 20%), w miasteczkach około 36%, na wsi około 19%. Krajowe definicje „ludności miejskiej” dają inne udziały, dlatego jednolita seria WUP 2025 lepiej nadaje się do porównań między krajami.',
+    whyOnShelf:
+      'Krajowe etykiety „miejskie” stosują różne progi, więc prosta mapa odsetka ludności miejskiej może zaniżać, ilu ludzi już mieszka w gęstych osadach. DegURBA czyni miasta i miasteczka porównywalnymi między krajami i pokazuje, że w miasteczkach wciąż mieszka ponad jedna trzecia ludzi.',
+    howToRead:
+      '„Miasto” oznacza tu klasę DegURBA, a nie każde miejsce, które kraj nazywa miejskim. Zsumowanie definicji krajowych daje około 58% ludności „miejskiej” w 2025 r. — wyraźnie poniżej 81% mieszkających w miastach i miasteczkach według DegURBA, bo wiele miasteczek DegURBA jest w statystyce krajowej zapisanych jako wieś. Jedna definicja dla wszystkich krajów czyni serię WUP 2025 bardziej porównywalną.',
+    caveats:
+      'Klasa DegURBA „miasto” to nie każde miejsce, które kraj nazywa miejskim. Krajowy udział ludności miejskiej i udział miast wraz z miasteczkami według DegURBA to różne wielkości.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet skali stopnia urbanizacji (miasta, miasteczka, obszary wiejskie) według World Urbanization Prospects 2025. Atrybucja: DESA ONZ.',
+    imageAlt:
+      'Przegląd Fix Planet: skala stopnia urbanizacji — miasta, miasteczka i obszary wiejskie, nie światła nocne',
+  },
+  'built-up-surface': {
+    title: 'Powierzchnia zabudowana',
+    cardMeta: 'KE GHSL · GHS-BUILT-S R2023A · 1975–2030',
+    hook: 'Jaką część lądu pokrywają budynki i inna zabudowa — fizyczny ślad osadnictwa.',
+    description:
+      'Global Human Settlement Layer (GHSL) Komisji Europejskiej publikuje GHS-BUILT-S (R2023A) — globalną siatkę powierzchni zabudowanej opracowaną na podstawie zdjęć satelitarnych Sentinel-2 i Landsat dla lat 1975–2030. Według WUP 2025 w latach 1975–2025 obszar zabudowany rósł niemal dwa razy szybciej niż liczba ludności, a powierzchnia zabudowana na osobę wzrosła z około 43 do 63 m². Warstwa pokazuje, ile ziemi zajmują budynki; można ją przeglądać na stronie GHSL.',
+    whyOnShelf:
+      'Powierzchnia zabudowana pokazuje, ile ziemi naprawdę zajmują budynki. To ślad, który konkuruje z polami i ekosystemami. Według WUP 2025 około 60% ziemi przekształconej w użytkowanie miejskie od 1970 r. wcześniej było produktywnym polem uprawnym.',
+    howToRead:
+      'GHS-BUILT-S mierzy fizyczną powierzchnię zajętą przez budynki, niezależnie od prawnych granic miasta i od tego, ilu ludzi tam mieszka. Gęste dzielnice wysokiej zabudowy mogą pomieścić wielu ludzi na skromnym śladzie; rozproszona niska zabudowa robi odwrotnie. Warstwa mierzy więc, ile ziemi zabiera zabudowa.',
+    caveats:
+      'Warstwa mierzy ziemię pod budynkami, nie liczbę ludzi i nie światła nocne. Gęsta wysoka zabudowa i rozproszona niska zabudowa zajmują różną ziemię przy różnej liczbie mieszkańców.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet powierzchni zabudowanej według GHS-BUILT-S (R2023A). Atrybucja: Komisja Europejska / GHSL.',
+    imageAlt:
+      'Przegląd Fix Planet: natężenie powierzchni zabudowanej, nie światła nocne i nie mapa gęstości zaludnienia',
+  },
+  'population-growth': {
+    title: 'Wzrost ludności',
+    cardMeta: 'ONZ WPP 2024 · roczne tempo wzrostu · kraje',
+    hook: 'Jak szybko zmienia się ludność każdego kraju — roczne tempo wzrostu lub spadku.',
+    description:
+      'World Population Prospects 2024 (ONZ) pokazuje zmiany liczby ludności według krajów. Ludność świata nadal rośnie od 8,2 mld (2024) ku szczytowi w połowie lat 2080., ale w 63 krajach lub obszarach liczba ludności już osiągnęła szczyt, a w kolejnych 48 szczyt jest spodziewany w latach 2025–2054. Roczne tempo wzrostu to zmiana netto uwzględniająca urodzenia, zgony i migracje, dlatego różni się od samej dzietności.',
+    whyOnShelf:
+      'Duży kraj może rosnąć powoli, a mniejszy podwoić się w ciągu pokolenia. Tempa wzrostu pokazują, gdzie skupiają się najbliższe dekady przyrostu albo spadku. WPP 2024 wskazuje bardzo szybki wzrost do 2054 r. w takich miejscach jak Angola, Republika Środkowoafrykańska, Demokratyczna Republika Konga, Niger i Somalia.',
+    howToRead:
+      'Roczne tempo wzrostu łączy urodzenia, zgony i migracje w jedną zmianę netto, dlatego różni się od samej dzietności. Razem z liczbą ludności tempa odpowiadają i na pytanie „ilu”, i na pytanie „jak szybko”.',
+    caveats:
+      'Roczne tempo to zmiana netto z urodzeń, zgonów i migracji. Różni się od samej dzietności i od samej liczby ludności.',
+    licenseNote:
+      'Podgląd to przegląd Fix Planet rocznego tempa wzrostu ludności według World Population Prospects 2024 i mapy Our World in Data. Atrybucja: DESA ONZ / Our World in Data.',
+    imageAlt:
+      'Przegląd Fix Planet: mapa rocznego tempa wzrostu lub spadku ludności według krajów, nie mapa samej liczby ludności',
+  },
 };
