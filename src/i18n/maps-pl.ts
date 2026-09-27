@@ -513,18 +513,20 @@ export const pl: Record<string, MapCopy> = {
       'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project — pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
   },
   'groundwater-whymap': {
-    title: 'Zasoby wód podziemnych (WHYMAP)',
-    hook: 'Globalne środowiska hydrogeologiczne i potencjał zasilania z WHYMAP — mapa bazowa wód podziemnych, nie stres Aqueduct i nie krajowe rachunki FAO.',
+    title: 'Spadek zwierciadła wód podziemnych',
+    hook: 'Gdzie Aqueduct 4.0 ocenia opadanie zwierciadła wód podziemnych — wynik ryzyka zlewni, nie mapa warstw wodonośnych WHYMAP i nie dziennik studni.',
     description:
-      'Mapa Groundwater Resources of the World (BGR + UNESCO). Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres). Kolory = typy środowisk i zasilanie, nie ranking krajów.',
-    whyOnShelf: 'Inny obiekt niż AQUASTAT (rachunki krajów) i Aqueduct (stres).',
-    howToRead: 'Kolory = typy środowisk i zasilanie, nie ranking krajów.',
+      'WRI Aqueduct 4.0 podaje bazowy wskaźnik spadku zwierciadła wód podziemnych dla podzlewni, w skali od 0 do 5. To modelowany spadek, nie mapa środowisk WHYMAP i nie wynik stresu wodnego z sąsiedniej karty.',
+    whyOnShelf:
+      'Stres wodny porównuje popyt z zasobem. Ta karta to osobny wskaźnik Aqueduct o opadaniu zwierciadła.',
+    howToRead:
+      'Kolor to wynik Aqueduct od 0 do 5. Szary ląd nie ma wyniku w warstwie bazowej. Wysoki wynik to modelowany spadek, nie zmierzona studnia.',
     caveats:
-      'Kolory = typy środowisk i zasilanie, nie ranking krajów. Nie AQUASTAT i nie Aqueduct. Nie IGRAC GGIS.',
+      'Wiele zlewni nie ma wyniku: szary to brak danych, nie „brak wody”. To model, nie mapa WHYMAP i nie IGRAC GGIS.',
     licenseNote:
-      'Podgląd to przegląd Fix Planet rodzin środowisk hydrogeologicznych WHYMAP (niebieskie baseny osadowe / zielone złożone / brązowe lokalne-płytkie), nie oficjalna mapa BGR i nie choropleth stresu Aqueduct. PDF i shapefile są na stronie WHYMAP. Cytujcie BGR i UNESCO / WHYMAP.',
+      'Aqueduct 4.0 jest na licencji CC BY 4.0 (World Resources Institute). Mapa to bazowy wynik spadku zwierciadła. Cytujcie Kuzma et al. 2023. To nie jest mapa WHYMAP.',
     imageAlt:
-      'Mapa świata z niebieskimi plamami basenów osadowych, zielonymi pasami fałdowymi i brązowymi lokalnymi płytkimi warstwami wodonośnymi — schemat hydrogeologii, nie stres wodny',
+      'Mapa świata wyników Aqueduct 4.0 dla spadku zwierciadła wód podziemnych: ciemniej tam, gdzie model pokazuje spadek, szaro tam, gdzie wyniku brak',
   },
   'global-lakes-hydrolakes': {
     title: 'Globalne jeziora (HydroLAKES)',
@@ -555,7 +557,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'flood-hazard-aqueduct': {
     title: 'Zagrożenie powodziowe (Aqueduct Floods)',
-    hook: 'Modelowane zagrożenie i ekspozycja powodzi rzecznych i przybrzeżnych — ryzyko zalania, nie ten sam bazowy stres wodny co na karcie Water stress.',
+    hook: 'Bazowe ryzyko powodzi rzecznych Aqueduct 4.0 — wynik od 0 do 5, nie stres wodny i nie mapa głębokości zalania.',
     description:
       'Osobne narzędzie WRI od Water Risk Atlas. Warstwy hazardu często bez istniejącej ochrony — nie prognoza „jutro zaleje”. Rzeka ≠ morze.',
     whyOnShelf: 'Osobne narzędzie WRI od Water Risk Atlas.',

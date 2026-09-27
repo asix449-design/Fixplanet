@@ -185,13 +185,13 @@
     "note": "2008 compilation of coastal hypoxic sites. Not this year's Gulf of Mexico forecast."
   },
   {
-    "file": "ocean-acidification.svg",
-    "title": "Surface-ocean pH schematic",
-    "source": "Fix Planet overview after NOAA Ocean Acidification Program / PMEL Carbon Program",
-    "url": "https://oceanacidification.noaa.gov/",
-    "license": "Fix Planet schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Cooler, lower-pH basins distinguished from higher-pH water. Not an SST plate and not NOAA marketing art."
+    "file": "ocean-acidification.jpg",
+    "title": "Change in surface pH, OceanSODA-ETHZ v2025",
+    "source": "Fix Planet map from OceanSODA-ETHZ v2025. Colour is the change in surface pH (total scale) from the 1985–1989 mean to the 2020–2024 mean. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html",
+    "license": "NOAA NCEI OCADS / OceanSODA-ETHZ. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Negative numbers are a decline in pH. Not a sea-surface temperature map."
   },
   {
     "file": "dissolved-oxygen.jpg",
@@ -204,39 +204,39 @@
   },
   {
     "file": "sea-ice-extent.jpg",
-    "title": "Sea-ice concentration, NSIDC AMSR2, 15 March 2024",
-    "source": "Fix Planet map from NSIDC AMSR2 sea-ice concentration, 12 km, 15 March 2024, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
-    "url": "https://nsidc.org/sea-ice-today",
-    "license": "Public domain (NASA / NSIDC). Boundaries public domain (Natural Earth).",
+    "title": "Sea-ice concentration, NSIDC Sea Ice Index, Arctic March 2026 and Antarctic September 2025",
+    "source": "Fix Planet map from NSIDC Sea Ice Index G02135 v4 monthly concentration GeoTIFFs. Arctic March 2026 and Antarctic September 2025, polar stereographic.",
+    "url": "https://noaadata.apps.nsidc.org/NOAA/G02135/",
+    "license": "Public domain (NSIDC / NOAA).",
     "kind": "rendered-from-source",
-    "note": "Concentration field for one day near the Arctic maximum. Not the 1981–2010 median contour."
+    "note": "Numeric scale is percent concentration. Land is the NSIDC mask. No place names."
   },
   {
     "file": "sea-level.jpg",
-    "title": "Sea-surface height anomalies, NASA JPL MEaSUREs, 15 June 2018",
-    "source": "Fix Planet map from NASA JPL MEaSUREs gridded sea-surface height anomalies, 15 June 2018, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
-    "url": "https://sealevel.nasa.gov/",
-    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "title": "Sea-level trend, NOAA Laboratory for Satellite Altimetry, 1992.96–2025.10",
+    "source": "Fix Planet map from the NOAA LSA regional sea-level trend grid (TOPEX, Jason-1/2/3, Sentinel-6MF). Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/",
+    "license": "NOAA Laboratory for Satellite Altimetry. Acknowledge: Altimetry data are provided by NOAA Laboratory for Satellite Altimetry. Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "Regional sea-surface height anomaly, not the global-mean time series."
+    "note": "Numeric scale is millimetres per year. Diverging colours centred on zero."
   },
   {
     "file": "marine-heatwaves.jpg",
-    "title": "Sea-surface temperature anomalies, NASA GHRSST MUR, 15 August 2024",
-    "source": "Fix Planet map from NASA GHRSST MUR L4 sea-surface temperature anomalies, 15 August 2024, via NASA GIBS. Boundaries: Natural Earth 1:10m.",
-    "url": "https://www.coralreefwatch.noaa.gov/product/marine_heatwave/",
-    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "title": "Coral Reef Watch 5 km SST anomaly, 25 September 2026",
+    "source": "Fix Planet map from NOAA Coral Reef Watch operational 5 km sea-surface temperature anomaly, 25 September 2026. Boundaries: Natural Earth 1:10m.",
+    "url": "https://coralreefwatch.noaa.gov/product/5km/index.php",
+    "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "Satellite temperature anomaly. Not the NOAA Coral Reef Watch categorical marine-heatwave grid."
+    "note": "Numeric scale is degrees Celsius. Diverging palette, not a rainbow scale."
   },
   {
-    "file": "ocean-heat-content.svg",
-    "title": "Ocean heat content time-series schematic",
-    "source": "Fix Planet schematic after NOAA NCEI and NASA",
-    "url": "https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level",
-    "license": "Fix Planet schematic",
-    "kind": "schematic",
-    "note": "Rising heat stored in the 0–700 m and 0–2000 m layers. Not a sea-surface temperature map and not an agency logo."
+    "file": "ocean-heat-content.jpg",
+    "title": "Ocean heat content anomaly, 0–700 m, 2025",
+    "source": "Fix Planet map from NOAA NCEI yearly ocean heat content anomaly for 0–700 m, 2025. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.ncei.noaa.gov/access/global-ocean-heat-content/",
+    "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is 10^18 joules in each 1° cell. Not sea-surface temperature."
   },
   {
     "file": "coral-reefs.svg",

@@ -148,9 +148,9 @@ const ru: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     title: 'Уровень моря',
     meta: 'NASA Sea Level Change Portal · спутниковая альтиметрия',
     blurb:
-      'Средний глобальный уровень моря по альтиметрии — дверь к карте и ряду для скорости подъёма из Numbers, не один день мареографа.',
+      'Средний глобальный уровень моря по альтиметрии — дверь к карте и ряду для скорости подъёма из раздела «Цифры», не один день мареографа.',
     detailShort:
-      'Портал NASA Sea Level Change — GMSL с ~1993, Explorer и проекции IPCC AR6. Numbers уже даёт ~3.7 мм/год (2006–2018). Старый climate.nasa.gov/vital-signs/sea-level/ — 404; AVISO в проверке не ответил — вторично Copernicus Marine. Не SST и не Solutions.',
+      'Портал NASA Sea Level Change — GMSL с ~1993, Explorer и проекции IPCC AR6. Раздел «Цифры» уже даёт ~3.7 мм/год (2006–2018). Старый climate.nasa.gov/vital-signs/sea-level/ — 404; AVISO в проверке не ответил — вторично Copernicus Marine. Не SST и не «Решения».',
   },
   'marine-heatwaves': {
     title: 'Морские волны тепла',
@@ -214,9 +214,9 @@ const pl: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     title: 'Poziom morza',
     meta: 'NASA Sea Level Change Portal · altimetria satelitarna',
     blurb:
-      'Globalny średni poziom morza z altimetrów — drzwi do mapy i szeregu dla tempa wzrostu z Numbers, nie jeden dzień mareografu.',
+      'Globalny średni poziom morza z altimetrów — drzwi do mapy i szeregu dla tempa wzrostu z działu Liczby, nie jeden dzień mareografu.',
     detailShort:
-      'Portal NASA Sea Level Change — GMSL od ~1993, Explorer i projekcje IPCC AR6. Numbers już podaje ~3,7 mm/rok. Stary climate.nasa.gov/vital-signs/sea-level/ — 404; AVISO bez odpowiedzi — wtórnie Copernicus Marine. Nie SST i nie Solutions.',
+      'Portal NASA Sea Level Change — GMSL od ~1993, Explorer i projekcje IPCC AR6. Dział Liczby już podaje ~3,7 mm/rok. Stary climate.nasa.gov/vital-signs/sea-level/ — 404; AVISO bez odpowiedzi — wtórnie Copernicus Marine. Nie SST i nie «Rozwiązania».',
   },
   'marine-heatwaves': {
     title: 'Morskie fale upałów',
@@ -279,9 +279,9 @@ const lv: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     title: 'Jūras līmenis',
     meta: 'NASA Sea Level Change Portal · satelītu altimetrija',
     blurb:
-      'Globālais vidējais jūras līmenis no altimetriem — karte un laika rinda Numbers minētajam kāpuma tempam, ne viena mareogrāfa diena.',
+      'Globālais vidējais jūras līmenis no altimetriem — karte un laika rinda sadaļā Skaitļi minētajam kāpuma tempam, ne viena mareogrāfa diena.',
     detailShort:
-      'NASA Sea Level Change portāls — GMSL kopš ~1993, Explorer un IPCC AR6 projekcijas. Numbers jau rāda ~3,7 mm/gadā. Vecais climate.nasa.gov/vital-signs/sea-level/ — 404; AVISO neatbildēja — sekundāri Copernicus Marine. Ne SST un ne Solutions.',
+      'NASA Sea Level Change portāls — GMSL kopš ~1993, Explorer un IPCC AR6 projekcijas. Sadaļa Skaitļi jau rāda ~3,7 mm/gadā. Vecais climate.nasa.gov/vital-signs/sea-level/ — 404; AVISO neatbildēja — sekundāri Copernicus Marine. Ne SST un ne «Risinājumi».',
   },
   'marine-heatwaves': {
     title: 'Jūras siltuma viļņi',

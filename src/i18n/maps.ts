@@ -704,9 +704,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Tree cover ≠ primary forest. Some loss is legal harvest. Some intact forest is already degraded. GFW documents the definitions. The preview is a Fix Planet overview of well-known loss frontiers, not a recolored Hansen tile set.',
     licenseNote:
-      'Hansen / GFW data are typically available under CC BY 4.0 with citation. The preview is a Fix Planet schematic of known frontiers. Open the GFW map for the interactive loss layer.',
+      'Hansen Global Forest Change is CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). The map counts 30 m lossyear pixels from 2001 to 2024 on a 0.02° grid. Open the GFW map for the interactive layer.',
     imageAlt:
-      'Dark green world map with magenta patches over well-known tree-cover loss frontiers in the Amazon, Congo basin, Southeast Asia, and boreal belts',
+      'World map of the share of 30 m pixels with tree-cover loss from 2001 to 2024, darker where more of the cell was lost',
   },
   'protected-areas': {
     title: 'Protected areas',
@@ -732,9 +732,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Models smooth local rights, illegal wells, and seasonal pulses. Political control of rivers is not in the hydrology alone. A red basin is not a prophecy of war.',
     licenseNote:
-      'Aqueduct data are typically CC BY with attribution to WRI. The preview is a Fix Planet overview of arid versus water-rich regions, not Aqueduct basin scores. Open the Water Risk Atlas for the interactive basins.',
+      'Aqueduct 4.0 is CC BY 4.0 (World Resources Institute). The map is the baseline water-stress score for sub-basins. Cite Kuzma et al. 2023. Open the Water Risk Atlas for the interactive basins.',
     imageAlt:
-      'World map colored from teal water-rich regions to red arid belts across North Africa, the Middle East, and other drylands',
+      'World map of Aqueduct 4.0 baseline water stress scores, from low scores in pale yellow to high scores in red across dry and heavily used basins',
   },
   'population-density': {
     title: 'Population density',
@@ -885,20 +885,20 @@ const en: Record<string, MapCopy> = {
       'Schematic catalogue map of endangered-language locations in Endangered Languages Project colors — vitality pins, not the UNESCO 2010 Atlas and not a second Glottolog',
   },
   'groundwater-whymap': {
-    title: 'Groundwater resources (WHYMAP)',
-    hook: 'Global aquifer environments and recharge potential from WHYMAP — a hydrogeology base map, not Aqueduct stress and not FAO national water accounts.',
+    title: 'Groundwater table decline',
+    hook: 'Where Aqueduct 4.0 scores a falling groundwater table — a basin risk score, not a WHYMAP aquifer map and not a well log.',
     description:
-      'The World-wide Hydrogeological Mapping and Assessment Programme (WHYMAP), led by Germany’s BGR with UNESCO, publishes the Groundwater Resources of the World map (1:25M / 1:40M). It classifies continental groundwater environments (large sedimentary basins, complex folded/faulted regions, local and shallow aquifers) and shades them by modelled recharge, with overlays for salinity, heavy abstraction, and selected groundwater-dependent wetlands.',
+      'WRI Aqueduct 4.0 publishes a baseline groundwater table decline indicator for sub-basins, scored from 0 to 5. The score summarizes modelled decline of the water table. It is not the BGR/UNESCO WHYMAP map of aquifer environments, and it is not the baseline water-stress score on the neighbouring card.',
     whyOnShelf:
-      'Live AQUASTAT is national water accounts; Aqueduct is demand-vs-supply stress; HydroBASINS is surface drainage. This card is the missing groundwater layer the AQUASTAT detail already pointed at (“IGRAC is a different product”). WHYMAP is the public global hydrogeology atlas for that gap.',
+      'Water stress compares demand with supply. This card is the separate Aqueduct indicator for falling groundwater tables. WHYMAP remains the public hydrogeology atlas; it is not the layer drawn here.',
     howToRead:
-      'Blue / green / brown families are hydrogeological environments, not country rankings and not water-war forecasts. Darker shades mean higher modelled recharge (WaterGAP, ~1961–1990), not “infinite wells.” Salinity hatching and over-abstraction marks are regional warnings, not court findings. Open the WHYMAP download page for PDF / shapefile / viewer; do not invent a live well-depth dashboard.',
+      'The colour is the Aqueduct score from 0 to 5. Grey land has no decline score in the baseline layer. A high score is a modelled decline, not a measured well depth and not a forecast that a city runs dry.',
     caveats:
-      'A thumbnail is hydrogeology cartography, not a well log and not IGRAC GGIS. Blue / green / brown families are environments, not a ranking of countries. Do not read darker recharge as infinite wells or as a water-war forecast.',
+      'Many basins have no decline score, so grey is missing data, not “no groundwater.” The indicator is a model. It is not the WHYMAP hydrogeology map and not IGRAC GGIS.',
     licenseNote:
-      'The preview is a Fix Planet schematic of WHYMAP aquifer-environment families (blue sedimentary basins / green complex / brown local-shallow), not BGR’s official map and not an Aqueduct stress choropleth. Open the WHYMAP Groundwater Resources of the World page for the PDF, shapefile, and viewer. Cite BGR and UNESCO / WHYMAP.',
+      'Aqueduct 4.0 is CC BY 4.0 (World Resources Institute). The map is the baseline groundwater table decline score. Cite Kuzma et al. 2023. This plate is not the WHYMAP Groundwater Resources of the World map.',
     imageAlt:
-      'World map with blue sedimentary-basin patches, green folded-complex belts, and brown local-shallow aquifers — a hydrogeology schematic, not water-stress',
+      'World map of Aqueduct 4.0 groundwater table decline scores, darker where the modelled water table is falling, grey where the baseline layer has no score',
   },
   'global-lakes-hydrolakes': {
     title: 'Global lakes (HydroLAKES)',
@@ -934,7 +934,7 @@ const en: Record<string, MapCopy> = {
   },
   'flood-hazard-aqueduct': {
     title: 'Flood hazard (Aqueduct Floods)',
-    hook: 'Modelled riverine and coastal flood hazard and exposure — inundation risk, not the same as baseline water-stress on the Water stress card.',
+    hook: 'Baseline riverine flood risk from Aqueduct 4.0 — a 0–5 basin score, not the water-stress score and not an inundation-depth map.',
     description:
       'WRI Aqueduct Floods maps riverine and coastal flood risks under a baseline and future projections (2030 / 2050 / 2080), with hazard maps of inundation depth by return period and tools for exposure and dike cost–benefit. Built with Deltares, VU Amsterdam IVM, Utrecht University, and PBL, released ~2020. Separate from the Aqueduct Water Risk Atlas used on the live Water stress card.',
     whyOnShelf:
@@ -944,9 +944,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Hazard rasters often omit existing flood protection — a deep cell is not “this city will flood tomorrow.” Coastal and riverine are different mechanisms. This card is not the Aqueduct Water Risk Atlas baseline-stress layer.',
     licenseNote:
-      'The preview is a Fix Planet schematic of riverine and coastal inundation districts, not WRI’s official Floods graphic and not a second baseline water-stress choropleth. Aqueduct data are typically CC BY with attribution to WRI. Open the Aqueduct Floods tool for the interactive maps.',
+      'Aqueduct 4.0 is CC BY 4.0 (World Resources Institute). The map is the baseline riverine flood risk score (0–5), not an inundation-depth raster from Aqueduct Floods and not the water-stress score. Cite Kuzma et al. 2023.',
     imageAlt:
-      'World map with medium-blue riverine flood corridors and bright cyan coastal inundation patches — flood hazard, not baseline water stress',
+      'World map of Aqueduct 4.0 riverine flood risk scores, darker blue where the baseline score is higher',
   },
   'intact-forest-landscapes': {
     title: 'Intact Forest Landscapes',
@@ -958,13 +958,13 @@ const en: Record<string, MapCopy> = {
     caveats:
       'IFL is a minimum-size wilderness class (at least about 500 km² mosaic with no detected industrial infrastructure), not all primary forest and not a carbon stock. A forest can be primary yet fail IFL if roads or clearings fragment it. Boundaries move when new disturbance appears between update years. Detection depends on satellite evidence of infrastructure and clearing. Small-scale or under-canopy uses can be missed.',
     licenseNote:
-      'Download GeoPackages from intactforests.org. An optional web viewer is the Greenpeace IFL map. Zenodo holds the 2000–2025 archive. The open method text is Potapov et al. 2017 on PMC. The preview is a Fix Planet schematic of large wilderness blocks, not the IFL polygons. Cite the IFL Mapping Team and Potapov et al.',
+      'The map is the 2020 Intact Forest Landscapes extent from the IFL Mapping Team (CC BY 4.0). Later updates exist through 2025; this plate is the 2020 layer. Cite the IFL Mapping Team and Potapov et al. 2017.',
     imageAlt:
-      'Dark world map with bright green wilderness blocks over the Amazon, the Congo basin, boreal Canada and Siberia, and New Guinea — intact forest landscapes, not annual canopy-loss pixels',
+      'World map of Intact Forest Landscapes in 2020: green blocks over the Amazon, the Congo basin, boreal Canada and Siberia, and New Guinea',
   },
   'mangrove-extent': {
     title: 'Mangrove extent',
-    hook: 'Global Mangrove Watch annual extent (v4.1 series through 2025) — tidal forest shoreline, not inland Hansen loss and not WDPA parks.',
+    hook: 'Global Mangrove Watch version 3 extent for 2020 — tidal forest shoreline, not inland Hansen loss and not WDPA parks.',
     description:
       'Global Mangrove Watch (GMW) maps estimated global mangrove forest extent and change. Version 4.1 provides an annual time series from 1985 through 2025 (JAXA Kyoto & Carbon, Aberystwyth University, and partners). The public platform shows habitat extent, net change, and alerts. Zenodo and JAXA host downloadable rasters and vectors.',
     howToRead:
@@ -972,9 +972,9 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Mangrove maps struggle at muddy edges, aquaculture ponds, and sparse fringes. Annual change is not the same as legal deforestation. Carbon and species layers are separate products on the same platform. Accuracy varies by country and turbidity. Restoration plantings may lag in the classifier. Treat alerts as screening, then check local imagery.',
     licenseNote:
-      'National dashboards and coast projects use GMW layers. JAXA documents the v4.1 stack for GIS download. The preview is a Fix Planet schematic of known mangrove coasts, not a GMW raster. Open globalmangrovewatch.org for the map platform.',
+      'The map is Global Mangrove Watch version 3, 2020 extent (CC BY 4.0; Bunting et al.). Later GMW versions exist; this plate is v3 for 2020. Open globalmangrovewatch.org for the living platform.',
     imageAlt:
-      'World map with a teal fringe of tidal forest along tropical coasts — mangrove extent, not inland tree-cover loss',
+      'World map of Global Mangrove Watch v3 mangrove extent in 2020, a dark-green fringe along tropical coasts',
   },
   'primary-humid-tropical-forests': {
     title: 'Primary humid tropical forests',

@@ -183,7 +183,14 @@ def numeric_label(value: float) -> str:
     return sign + f"{av:.2f}".rstrip("0").rstrip(".")
 
 
-def add_colorbar(im: Image.Image, vmin: float, vmax: float, cmap_name: str, log: bool) -> Image.Image:
+def add_colorbar(
+    im: Image.Image,
+    vmin: float,
+    vmax: float,
+    cmap_name: str,
+    log: bool,
+    vcenter: float | None = None,
+) -> Image.Image:
     """Horizontal numeric scale. No unit words."""
     im = im.convert("RGB")
     draw = ImageDraw.Draw(im, "RGBA")
@@ -197,7 +204,12 @@ def add_colorbar(im: Image.Image, vmin: float, vmax: float, cmap_name: str, log:
     bar = Image.fromarray(np.repeat(colors[None, :, :], bar_h, axis=0), "RGB")
     im.paste(bar, (x0, y0))
     draw = ImageDraw.Draw(im, "RGBA")
-    norm = LogNorm(vmin, vmax) if log else Normalize(vmin, vmax)
+    if vcenter is not None:
+        from matplotlib.colors import TwoSlopeNorm
+
+        norm = TwoSlopeNorm(vmin=vmin, vcenter=vcenter, vmax=vmax)
+    else:
+        norm = LogNorm(vmin, vmax) if log else Normalize(vmin, vmax)
     ticks = np.geomspace(vmin, vmax, 5) if log else np.linspace(vmin, vmax, 5)
     face = font(72)
     for tick in ticks:

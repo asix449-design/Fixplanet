@@ -513,18 +513,20 @@ export const lv: Record<string, MapCopy> = {
       'Shēmatiska apdraudēto valodu kataloga karte Endangered Languages Project krāsās — vitalitātes punkti, ne UNESCO 2010 atlants un ne otrs Glottolog',
   },
   'groundwater-whymap': {
-    title: 'Pazemes ūdens resursi (WHYMAP)',
-    hook: 'Globālas hidroģeoloģiskās vides un uztures potenciāls no WHYMAP — pazemes ūdeņu pamatkarte, ne Aqueduct stress un ne FAO valstu konti.',
+    title: 'Gruntsūdens līmeņa pazemināšanās',
+    hook: 'Kur Aqueduct 4.0 vērtē krītošu gruntsūdens līmeni — baseina riska vērtējums, ne WHYMAP ūdensnesēju karte un ne akas žurnāls.',
     description:
-      'Groundwater Resources of the World karte (BGR + UNESCO). Cits objekts nekā AQUASTAT un Aqueduct. Krāsas = vides tipi un uzture, ne valstu rangs.',
-    whyOnShelf: 'Cits objekts nekā AQUASTAT un Aqueduct.',
-    howToRead: 'Krāsas = vides tipi un uzture, ne valstu rangs.',
+      'WRI Aqueduct 4.0 publicē bāzes rādītāju gruntsūdens līmeņa pazemināšanai apakšbaseinos, vērtējumā no 0 līdz 5. Tas ir modelēts kritums, ne WHYMAP vides karte un ne ūdens stresa vērtējums blakus kartē.',
+    whyOnShelf:
+      'Ūdens stress salīdzina pieprasījumu ar pieejamo ūdeni. Šī karte ir atsevišķs Aqueduct rādītājs par krītošu gruntsūdens līmeni.',
+    howToRead:
+      'Krāsa ir Aqueduct vērtējums no 0 līdz 5. Pelēka zeme nozīmē, ka bāzes slānī vērtējuma nav. Augsts vērtējums ir modelēts kritums, ne izmērīta aka.',
     caveats:
-      'Krāsas = vides tipi un uzture, ne valstu rangs. Ne AQUASTAT un ne Aqueduct. Ne IGRAC GGIS.',
+      'Daudziem baseiniem vērtējuma nav: pelēks ir iztrūkums, ne „ūdens nav”. Tas ir modelis, ne WHYMAP karte un ne IGRAC GGIS.',
     licenseNote:
-      'Priekšskats ir Fix Planet pārskats par WHYMAP hidroģeoloģisko vides saimēm (zili nogulumu baseini / zaļi sarežģīti / brūni vietēji-seklie), ne BGR oficiālā karte un ne Aqueduct stresa horoplēts. PDF un shapefile ir WHYMAP lapā. Citējiet BGR un UNESCO / WHYMAP.',
+      'Aqueduct 4.0 ir CC BY 4.0 (World Resources Institute). Karte ir bāzes gruntsūdens līmeņa pazemināšanās vērtējums. Citējiet Kuzma et al. 2023. Šī nav WHYMAP karte.',
     imageAlt:
-      'Pasaules karte ar ziliem nogulumu baseinu plankumiem, zaļām locījumu joslām un brūniem vietējiem seklajiem ūdensnesējiem — hidroģeoloģijas shēma, ne ūdens stress',
+      'Pasaules karte ar Aqueduct 4.0 gruntsūdens līmeņa pazemināšanās vērtējumiem: tumšāk tur, kur modelis rāda kritumu, pelēki tur, kur vērtējuma nav',
   },
   'global-lakes-hydrolakes': {
     title: 'Globālie ezeri (HydroLAKES)',
@@ -555,7 +557,7 @@ export const lv: Record<string, MapCopy> = {
   },
   'flood-hazard-aqueduct': {
     title: 'Plūdu risks (Aqueduct Floods)',
-    hook: 'Modelēts upju un piekrastes plūdu risks un ekspozīcija — applūšanas risks, ne tas pats bāzes ūdens stress kā Water stress kartītē.',
+    hook: 'Aqueduct 4.0 bāzes upju plūdu risks — vērtējums no 0 līdz 5, ne ūdens stresa karte un ne applūšanas dziļuma karte.',
     description:
       'Atsevišķs WRI rīks no Water Risk Atlas. Bīstamības slāņi bieži bez esošās aizsardzības — ne prognoze «rīt applūdīs». Upe ≠ jūra.',
     whyOnShelf: 'Atsevišķs WRI rīks no Water Risk Atlas.',

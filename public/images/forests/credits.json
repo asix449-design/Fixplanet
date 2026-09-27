@@ -154,21 +154,21 @@
     "note": "NASA colour scale for aboveground biomass density. No legend text in the image."
   },
   {
-    "file": "burned-area.svg",
-    "title": "Burned-area schematic",
-    "source": "Schematic after NASA LP DAAC MCD64A1 / FIRMS",
-    "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd64a1-061",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Fire-scar footprints. Scars are burned area, not live hotspot points alone."
+    "file": "burned-area.jpg",
+    "title": "MODIS MCD64 annual burned fraction, 2023",
+    "source": "Fix Planet map from MODIS MCD64CMQ Collection 6.1 monthly burned area, summed for 2023 and divided by 0.25° cell area. University of Maryland fuoco distribution of MCD64A1. Boundaries: Natural Earth 1:10m.",
+    "url": "https://lpdaac.usgs.gov/products/mcd64a1v061/",
+    "license": "NASA MODIS MCD64A1, public distribution via the University of Maryland. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Colour is the share of each cell burned in 2023. The scale saturates at 1. No legend text in the image."
   },
   {
-    "file": "ecological-zones.svg",
-    "title": "Global ecological zones schematic",
-    "source": "Schematic after FAO Global Ecological Zones 2010 / FRA",
+    "file": "ecological-zones.jpg",
+    "title": "FAO Global Ecological Zones, 2010",
+    "source": "Fix Planet map from the FAO GEZ 2010 shapefile. Boundaries: Natural Earth 1:10m.",
     "url": "https://data.apps.fao.org/catalog/dataset/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b",
-    "license": "Original schematic; coastline Natural Earth 110m land, public domain",
-    "kind": "schematic",
-    "note": "Climatic-ecological bands for forest statistics: tropical, subtropical, temperate, boreal, and polar."
+    "license": "FAO Global Ecological Zones. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Zone classes are drawn as distinct colours. No class names are written on the image."
   }
 ]

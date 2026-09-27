@@ -233,12 +233,12 @@
   },
   {
     "file": "forest-cover-loss.jpg",
-    "title": "Tree-cover loss, Hansen Global Forest Change, 2001–2024",
-    "source": "Fix Planet map from Hansen Global Forest Change / Global Forest Watch tree-cover loss, summed 2001–2024, via Our World in Data. Boundaries: Natural Earth 1:10m.",
-    "url": "https://www.globalforestwatch.org/map/",
-    "license": "CC BY (Hansen / UMD / Global Forest Watch; Our World in Data). Boundaries public domain (Natural Earth).",
+    "title": "Share of 30 m pixels with tree-cover loss, Hansen GFC 2001–2024",
+    "source": "Fix Planet map from Hansen Global Forest Change v1.12 lossyear tiles, share of 30 m pixels lost 2001–2024 on a 0.02° grid. Boundaries: Natural Earth 1:10m.",
+    "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/",
+    "license": "CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "Country totals, not 30 m loss pixels. Equal Earth choropleth. Numeric scale only; units are hectares."
+    "note": "Numeric scale is the share of pixels in each 0.02° cell. No unit words in the image."
   },
   {
     "file": "protected-areas.jpg",
@@ -251,12 +251,12 @@
   },
   {
     "file": "water-stress.jpg",
-    "title": "Fix Planet overview of arid vs water-rich regions",
-    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct",
-    "url": "https://www.wri.org/applications/aqueduct/water-risk-atlas/",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Country bands show well-known arid vs water-rich regions, not Aqueduct basin scores. Open the Water Risk Atlas for the model."
+    "title": "Aqueduct 4.0 baseline water stress score",
+    "source": "Fix Planet map from WRI Aqueduct 4.0 baseline annual water-stress scores, 2023. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+    "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Numeric scale is the Aqueduct score from 0 to 5. Cite Kuzma et al. 2023."
   },
   {
     "file": "population-density.jpg",
@@ -548,12 +548,12 @@
   },
   {
     "file": "groundwater-whymap.jpg",
-    "title": "Fix Planet overview of WHYMAP aquifer environments",
-    "source": "Fix Planet schematic on BlankMap-World, themed from BGR / UNESCO WHYMAP Groundwater Resources of the World",
-    "url": "https://www.whymap.org/whymap/EN/Maps_Data/Gwr/gwr_node_en.html",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Blue sedimentary basins / green complex folded-faulted / brown local-shallow. Not BGR’s official map, not Aqueduct stress, not a well log."
+    "title": "Aqueduct 4.0 baseline groundwater table decline score",
+    "source": "Fix Planet map from WRI Aqueduct 4.0 baseline groundwater table decline scores, 2023. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+    "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Score 0–5. Grey land has no decline score. Not the WHYMAP aquifer-environment map."
   },
   {
     "file": "global-lakes-hydrolakes.jpg",
@@ -575,30 +575,30 @@
   },
   {
     "file": "flood-hazard-aqueduct.jpg",
-    "title": "Fix Planet overview of Aqueduct Floods hazard",
-    "source": "Fix Planet schematic on BlankMap-World, themed from WRI Aqueduct Floods",
-    "url": "https://www.wri.org/data/aqueduct-floods",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Riverine corridors and coastal inundation patches. Not WRI’s official Floods graphic and not a second baseline water-stress choropleth."
+    "title": "Aqueduct 4.0 baseline riverine flood risk score",
+    "source": "Fix Planet map from WRI Aqueduct 4.0 baseline riverine flood risk scores, 2023. Boundaries: Natural Earth 1:10m.",
+    "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+    "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Score 0–5 for riverine flood risk. Not an Aqueduct Floods inundation-depth raster."
   },
   {
     "file": "intact-forest-landscapes.jpg",
-    "title": "Fix Planet overview of intact forest landscape blocks",
-    "source": "Fix Planet schematic on BlankMap-World, themed from the IFL Mapping Team (Potapov et al.)",
-    "url": "https://intactforests.org/data.ifl.html",
-    "license": "Map geometry public domain; overlay is Fix Planet",
-    "kind": "fix-planet-schematic",
-    "note": "Bright blocks mark large wilderness-scale forest regions (Amazon, Congo, boreal, New Guinea). Not IFL polygons and not Hansen annual loss pixels."
+    "title": "Intact Forest Landscapes, 2020",
+    "source": "Fix Planet map from the IFL Mapping Team 2020 extent. Boundaries: Natural Earth 1:10m.",
+    "url": "https://intactforests.org/shp/IFL_2020.zip",
+    "license": "CC BY 4.0 (IFL Mapping Team). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "2020 polygons. Later IFL updates through 2025 are not this plate."
   },
   {
     "file": "mangrove-extent.jpg",
-    "title": "Mangrove forest distribution, 2000",
-    "source": "Fix Planet map from the NASA GIBS mangrove forest distribution for 2000 (Giri and co-authors). Boundaries: Natural Earth 1:10m.",
-    "url": "https://www.globalmangrovewatch.org/",
-    "license": "Public domain (NASA). Boundaries public domain (Natural Earth).",
+    "title": "Global Mangrove Watch v3 extent, 2020",
+    "source": "Fix Planet map from Global Mangrove Watch v3 2020 GeoTIFF tiles, share of mangrove pixels on a 0.02° grid. Boundaries: Natural Earth 1:10m.",
+    "url": "https://zenodo.org/records/6894273",
+    "license": "CC BY 4.0 (Bunting et al. / Global Mangrove Watch). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "Year-2000 mangrove distribution served by NASA GIBS, not the Global Mangrove Watch annual raster."
+    "note": "2020 extent from GMW v3, not the later v4 annual series."
   },
   {
     "file": "primary-humid-tropical-forests.jpg",

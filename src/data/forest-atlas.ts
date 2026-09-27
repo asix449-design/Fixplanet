@@ -86,10 +86,11 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'burned-area',
-    preview: 'burned-area.svg',
-    sourceOrg: 'NASA LP DAAC / FIRMS',
-    sourceLabel: 'NASA MODIS MCD64A1 / FIRMS',
-    sourceUrl: 'https://www.earthdata.nasa.gov/data/catalog/lpcloud-mcd64a1-061',
+    preview: 'burned-area.jpg',
+    detail: 'detail/burned-area.webp',
+    sourceOrg: 'NASA MODIS MCD64A1',
+    sourceLabel: 'MODIS MCD64CMQ',
+    sourceUrl: 'https://lpdaac.usgs.gov/products/mcd64a1v061/',
     usesCoastline: true,
     sources: [
       cite(
@@ -120,9 +121,10 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
   },
   {
     slug: 'ecological-zones',
-    preview: 'ecological-zones.svg',
+    preview: 'ecological-zones.jpg',
+    detail: 'detail/ecological-zones.webp',
     sourceOrg: 'FAO / FRA',
-    sourceLabel: 'FAO Global Ecological Zones / FRA',
+    sourceLabel: 'FAO GEZ 2010',
     sourceUrl: 'https://data.apps.fao.org/catalog/dataset/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b',
     usesCoastline: true,
     sources: [

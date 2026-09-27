@@ -12,7 +12,20 @@ python3 scripts/maps-real/render.py choropleth
 python3 scripts/maps-real/render.py gibs
 python3 scripts/maps-real/render.py woa
 python3 scripts/maps-real/render.py minerals
+python3 scripts/maps-real/aggregate_tiles.py gmw hansen
+python3 scripts/maps-real/render_pass2.py sea-level heat ice ohc ph hansen gmw burned
+python3 scripts/maps-real/render_vectors.py gez aqueduct ifl
 ```
+
+`render_pass2.py` and `render_vectors.py` also need `rasterio`. Raw downloads stay in `scripts/maps-real/raw/`.
+
+## Still schematic, and why
+
+- Primary humid tropical forests, forest landscape integrity, HydroLAKES, and GLWD: the public pages did not offer a direct file this run could fetch (GLAD has no bare raster link; HydroSHEDS returned 403; the FLII site did not serve a raster).
+- Coral reefs and marine fisheries: no open reef polygon or stock-status grid with a licence that clearly allows this site to draw it was retrieved. Allen Coral Atlas and UNEP-WCMC were not available as a simple open download here.
+- Languages (UNESCO Atlas and the Endangered Languages Project): Glottolog coordinates are a different classification. The card text is the UNESCO degree framework and says it is not a Glottolog map, so the schematic stays.
+- Global Peace Index and the Fragile States Index: the publishers’ score tables are not released under a licence that clearly allows a redistributed choropleth. They stay schematic.
+- ACLED and the Heidelberg Conflict Barometer: no open download that can stand in for those datasets. They stay schematic. No other conflict dataset was substituted under their names.
 
 Install once:
 
@@ -31,14 +44,22 @@ Downloads are stored in `scripts/maps-real/raw/` and are listed in `.gitignore`.
 | `methane-emissions` | EDGAR methane emissions including land use, 2024, via Our World in Data | https://ourworldindata.org/grapher/methane-emissions.csv | CC BY (EDGAR / European Commission JRC; Our World in Data) |
 | `mismanaged-plastic-waste` | Meijer et al. 2021 mismanaged plastic waste, year 2019, via Our World in Data | https://ourworldindata.org/grapher/plastic-waste-mismanaged.csv | CC BY |
 | `military-expenditure-sipri` | SIPRI Military Expenditure Database, 2024, via Our World in Data | https://ourworldindata.org/grapher/military-spending-sipri.csv | SIPRI terms; OWID republication is CC BY. Attribute SIPRI. |
-| `forest-cover-loss` | Hansen Global Forest Change / Global Forest Watch tree-cover loss, summed 2001–2024, via Our World in Data | https://ourworldindata.org/grapher/tree-cover-loss.csv | CC BY (Hansen / UMD / Global Forest Watch; Our World in Data) |
+| `forest-cover-loss` | Hansen Global Forest Change v1.12 lossyear, share of 30 m pixels lost 2001–2024 on a 0.02° grid | https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/ | CC BY 4.0 (Hansen / UMD / Google / USGS / NASA) |
 | `nitrogen-dioxide-no2` | Copernicus Sentinel-5P TROPOMI tropospheric NO₂, mean of 1–16 June 2024, NASA GIBS | https://gibs.earthdata.nasa.gov/ (layer `TROPOMI_L2_Nitrogen_Dioxide_Tropospheric_Column`) | Copernicus Sentinel data (ESA), accessed through NASA GIBS |
 | `canopy-height` | NASA GEDI L3 mean RH100 canopy height, April 2019–March 2023, NASA GIBS | layer `GEDI_ISS_L3_Canopy_Height_Mean_RH100_201904-202303` | Public domain (NASA) |
 | `aboveground-biomass` | NASA GEDI L4B mean aboveground biomass density, April 2019–March 2023, NASA GIBS | layer `GEDI_ISS_L4B_Aboveground_Biomass_Density_Mean_201904-202303` | Public domain (NASA) |
-| `sea-ice-extent` | NSIDC AMSR2 sea-ice concentration, 12 km, 15 March 2024, NASA GIBS | layer `AMSRU2_Sea_Ice_Concentration_12km` | Public domain (NASA / NSIDC) |
-| `sea-level` | NASA JPL MEaSUREs gridded sea-surface height anomalies v1812, 15 June 2018 | layer `JPL_MEaSUREs_L4_Sea_Surface_Height_Anomalies` | Public domain (NASA) |
-| `marine-heatwaves` | NASA GHRSST MUR L4 sea-surface temperature anomalies, 15 August 2024 | layer `GHRSST_L4_MUR_Sea_Surface_Temperature_Anomalies` | Public domain (NASA) |
-| `mangrove-extent` | Mangrove forest distribution, 2000, NASA GIBS | layer `Mangrove_Forest_Distribution_2000` | Public domain (NASA visualization of the Giri et al. mangrove map) |
+| `sea-ice-extent` | NSIDC Sea Ice Index G02135 v4 monthly concentration. Arctic March 2026 and Antarctic September 2025, side by side in polar stereographic | https://noaadata.apps.nsidc.org/NOAA/G02135/ | Public domain (NSIDC / NOAA) |
+| `sea-level` | NOAA Laboratory for Satellite Altimetry regional sea-level trend, 1992.96–2025.10, millimetres per year | https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/slr/slr_map_ref.txt | NOAA LSA. Acknowledge: “Altimetry data are provided by NOAA Laboratory for Satellite Altimetry.” |
+| `marine-heatwaves` | NOAA Coral Reef Watch 5 km sea-surface temperature anomaly, 25 September 2026 | https://www.star.nesdis.noaa.gov/pub/sod/mecb/crw/data/5km/v3.1_op/nc/v1.0/daily/ssta/2026/ | Public domain (NOAA) |
+| `mangrove-extent` | Global Mangrove Watch v3, 2020 extent, share of ~25 m pixels on a 0.02° grid | https://zenodo.org/records/6894273 | CC BY 4.0 |
+| `ocean-heat-content` | NOAA NCEI yearly ocean heat content anomaly, 0–700 m, 2025, 10¹⁸ joules per 1° cell | https://www.ncei.noaa.gov/data/oceans/woa/DATA_ANALYSIS/3M_HEAT_CONTENT/NETCDF/heat_content/heat_content_anomaly_0-700_yearly.nc | Public domain (NOAA) |
+| `ocean-acidification` | OceanSODA-ETHZ v2025 surface pH change, 1985–1989 mean to 2020–2024 mean | https://www.ncei.noaa.gov/data/oceans/ncei/ocads/data/0220059/ | NOAA NCEI OCADS / OceanSODA-ETHZ |
+| `burned-area` | MODIS MCD64CMQ Collection 6.1, 2023 annual burned fraction (sum of monthly burned area ÷ 0.25° cell area). Public SFTP `fuoco.geog.umd.edu`, user `fire` (password in the MCD64 user guide) | `data/MODIS/C61/MCD64CMQ/` | NASA MODIS / University of Maryland distribution |
+| `ecological-zones` | FAO Global Ecological Zones 2010 shapefile | https://storage.googleapis.com/fao-maps-catalog-data/uuid/2fb209d0-fd34-4e5e-a3d8-a13c241eb61b/resources/gez2010.zip | FAO |
+| `water-stress` | WRI Aqueduct 4.0 baseline water stress score, 0–5 | https://files.wri.org/aqueduct/aqueduct-4-0-water-risk-data.zip | CC BY 4.0. Cite Kuzma et al. 2023 |
+| `groundwater-whymap` | WRI Aqueduct 4.0 baseline groundwater table decline score, 0–5. The page slug is unchanged; the plate is not WHYMAP | same Aqueduct 4.0 zip | CC BY 4.0 |
+| `flood-hazard-aqueduct` | WRI Aqueduct 4.0 baseline riverine flood risk score, 0–5. Not an inundation-depth raster | same Aqueduct 4.0 zip | CC BY 4.0 |
+| `intact-forest-landscapes` | Intact Forest Landscapes 2020 extent | https://intactforests.org/shp/IFL_2020.zip | CC BY 4.0 (IFL Mapping Team) |
 | `dissolved-oxygen` | NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° climatology 1965–2022. The map is the minimum of the objectively analyzed field between 100 m and 1000 m. | https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DATA/oxygen/netcdf/all/1.00/woa23_all_o00_01.nc | Public domain (NOAA). Cite Garcia et al., World Ocean Atlas 2023 Volume 3, NOAA Atlas NESDIS 91. |
 | `mineral-resources` | USGS Mineral Resources Data System deposit locations | https://mrdata.usgs.gov/mrds/mrds-csv.zip | Public domain (USGS) |
 
