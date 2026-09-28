@@ -41,11 +41,17 @@ const sourceLabel = solution.sourceLabel ?? primary?.label;
 const cardHref = encyclopediaHref ?? primary?.url ?? href;
 const cardRel = encyclopediaHref ? undefined : primary ? 'noopener noreferrer' : undefined;
 const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;
+const plate =
+  solution.slug === 'low-emission-zones'
+    ? 'map'
+    : solution.slug === 'congestion-charging' || solution.slug === 'electric-buses'
+      ? 'chart'
+      : undefined;
 ---
 
 <article class="solution-card-wrap" data-tag={solution.tag} id={solution.slug} hidden={hidden}>
   <a class="solution-card" href={cardHref} rel={cardRel}>
-    <div class="card-art">
+    <div class:list={['card-art', plate && 'card-art-plate']} data-plate={plate}>
       <img
         src={photo}
         alt={solution.imageAlt}

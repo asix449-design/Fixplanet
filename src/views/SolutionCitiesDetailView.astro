@@ -21,6 +21,12 @@ const title = `${item.title} — Fix Planet`;
 const image = citiesEncyclopediaImageSrc(item.image);
 const citiesHref = localizePath('/solutions/cities', locale);
 const legendColors = citiesLegendColors[item.slug] ?? [];
+const plate =
+  item.slug === 'low-emission-zones'
+    ? 'map'
+    : item.slug === 'congestion-charging' || item.slug === 'electric-buses'
+      ? 'chart'
+      : 'photo';
 ---
 
 <BaseLayout
@@ -65,7 +71,7 @@ const legendColors = citiesLegendColors[item.slug] ?? [];
 
   <section class="section">
     <div class="wrap wildlife-detail">
-      <figure class="wildlife-detail-art">
+      <figure class="wildlife-detail-art cities-detail-plate" data-plate={plate}>
         <img src={image} alt={item.imageAlt} width="1600" height="1200" />
         <figcaption>
           <p>{item.caption}</p>
