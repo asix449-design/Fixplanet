@@ -1,5 +1,6 @@
 import type { SpeciesCopy } from '../data/wildlife';
 import type { Locale } from './config';
+import { domesticatesEn } from './wildlife-domesticates';
 import { packLv } from './wildlife-pack-lv';
 import { packPl } from './wildlife-pack-pl';
 import { packRu } from './wildlife-pack-ru';
@@ -268,7 +269,7 @@ export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
     },
     sheep: {
       commonName: 'Sheep',
-      hook: 'The small-ruminant card on this shelf — wool, milk, and meat. No separate goat.',
+      hook: 'Sheep are grazing animals raised mainly for wool, meat, milk and hides, in breeds adapted to places from the cold, wet highlands of northern Europe to the dry lands of Africa, Asia and Australasia.',
       imageAlt: 'A domestic sheep standing in grass, facing the camera',
       what: 'The sheep (Ovis aries) is a domestic small ruminant kept for wool, meat, and milk. This shelf has one small-ruminant card. It does not add a goat.',
       range:
@@ -345,6 +346,7 @@ export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
       humanRole: 'We keep camels, llamas, and alpacas as working and fibre animals of dry and mountain lands.',
       sources: 'FAO International Year of Camelids 2024.',
     },
+    ...domesticatesEn,
   },
   ru: packRu,
   pl: packPl,

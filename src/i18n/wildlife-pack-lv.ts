@@ -1,4 +1,5 @@
 import type { SpeciesCopy } from '../data/wildlife';
+import { domesticatesLv } from './wildlife-domesticates';
 
 export const packLv: Record<string, SpeciesCopy> = {
   'european-bison': {
@@ -260,7 +261,7 @@ export const packLv: Record<string, SpeciesCopy> = {
   },
   sheep: {
     commonName: 'Aita',
-    hook: 'Šī plaukta sīko atgremotāju kartīte — vilna, piens un gaļa. Atsevišķas kazas nav.',
+    hook: 'Aitas ir ganību dzīvnieki, ko audzē galvenokārt vilnai, gaļai, pienam un ādām, un to šķirnes ir pielāgotas vietām no aukstajām, mitrajām Ziemeļeiropas augstienēm līdz sausajiem Āfrikas, Āzijas un Australāzijas apgabaliem.',
     imageAlt: 'Mājas aita zālē, pret kameru',
     what: 'Aita (Ovis aries) ir pieradināts sīkais atgremotājs, ko tur vilnas, gaļas un piena dēļ. Šajā plauktā ir viena sīko atgremotāju kartīte. Kazas nav.',
     range:
@@ -336,4 +337,5 @@ export const packLv: Record<string, SpeciesCopy> = {
     humanRole: 'Mēs turam kamieļus, lamas un alpakas kā darba un šķiedras dzīvniekus sausās un kalnu zemēs.',
     sources: 'FAO Starptautiskais kamieļu gads 2024.',
   },
+  ...domesticatesLv,
 };

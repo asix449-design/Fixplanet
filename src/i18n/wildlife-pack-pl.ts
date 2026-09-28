@@ -1,4 +1,5 @@
 import type { SpeciesCopy } from '../data/wildlife';
+import { domesticatesPl } from './wildlife-domesticates';
 
 export const packPl: Record<string, SpeciesCopy> = {
   'european-bison': {
@@ -260,7 +261,7 @@ export const packPl: Record<string, SpeciesCopy> = {
   },
   sheep: {
     commonName: 'Owca',
-    hook: 'Karta małego przeżuwacza na tej półce — wełna, mleko i mięso. Osobnej kozy nie ma.',
+    hook: 'Owce to zwierzęta pastwiskowe hodowane głównie dla wełny, mięsa, mleka i skór, w rasach przystosowanych do miejsc od zimnych, wilgotnych wyżyn północnej Europy po suche tereny Afryki, Azji i Australazji.',
     imageAlt: 'Owca domowa w trawie, twarzą do kamery',
     what: 'Owca (Ovis aries) to udomowiony mały przeżuwacz trzymany dla wełny, mięsa i mleka. Na półce jest jedna karta małego przeżuwacza. Kozy nie dodajemy.',
     range:
@@ -336,4 +337,5 @@ export const packPl: Record<string, SpeciesCopy> = {
     humanRole: 'Trzymamy wielbłądy, lamy i alpaki jako zwierzęta robocze i wełniste suchych i górskich ziem.',
     sources: 'Międzynarodowy Rok Wielbłądowatych FAO 2024.',
   },
+  ...domesticatesPl,
 };

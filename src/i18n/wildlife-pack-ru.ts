@@ -1,4 +1,5 @@
 import type { SpeciesCopy } from '../data/wildlife';
+import { domesticatesRu } from './wildlife-domesticates';
 
 export const packRu: Record<string, SpeciesCopy> = {
   'european-bison': {
@@ -260,7 +261,7 @@ export const packRu: Record<string, SpeciesCopy> = {
   },
   sheep: {
     commonName: 'Овца',
-    hook: 'Карточка мелкого рогатого скота на этой полке — шерсть, молоко и мясо. Отдельной козы нет.',
+    hook: 'Овцы пасутся на пастбищах и разводятся прежде всего ради шерсти, мяса, молока и шкур, а их породы приспособлены к самым разным местам, от холодных и влажных нагорий Северной Европы до засушливых земель Африки, Азии и Австралазии.',
     imageAlt: 'Домашняя овца в траве смотрит в камеру',
     what: 'Овца (Ovis aries) — домашний мелкий жвачный, которого держат ради шерсти, мяса и молока. На полке одна карточка мелкого рогатого скота. Козы нет.',
     range:
@@ -336,4 +337,5 @@ export const packRu: Record<string, SpeciesCopy> = {
     humanRole: 'Мы держим верблюдов, лам и альпак как рабочих и шёрстных животных сухих и горных земель.',
     sources: 'Международный год верблюдовых ФАО, 2024.',
   },
+  ...domesticatesRu,
 };

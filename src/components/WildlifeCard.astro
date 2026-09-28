@@ -14,7 +14,9 @@ const href = localizePath(`/wildlife/${species.slug}`, locale);
 const iucnLabel = species.iucn ? ui.wildlifePage.iucn[species.iucn] : undefined;
 const emphasizeIucn =
   species.iucn === 'EW' || species.functionallyExtinct === true;
-const primary = wildlifePrimarySource(species.primarySources);
+const primary =
+  species.gridSource ??
+  wildlifePrimarySource(species.sourcesList ?? species.primarySources);
 ---
 
 <article
@@ -46,6 +48,7 @@ const primary = wildlifePrimarySource(species.primarySources);
             </span>
           )
         }
+        {species.tag ? <span class="tag">{species.tag}</span> : null}
         {
           species.functionallyExtinct ? (
             <span class="tag status-extinct">{ui.wildlifePage.functionallyExtinct}</span>

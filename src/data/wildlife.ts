@@ -50,6 +50,10 @@ export type ImageCredit = {
   credit: string;
   license: string;
   sourceUrl: string;
+  width?: number;
+  height?: number;
+  /** Detail page shows the whole frame. Hub thumbnails stay cover-cropped. */
+  fit?: 'natural';
 };
 
 export type SpeciesMeta = {
@@ -75,6 +79,18 @@ export type SpeciesCopy = {
   when: string;
   humanRole: string;
   sources: string;
+  /** Shelf badge beside the status pill. */
+  tag?: string;
+  /** Visible figure caption. Alt text stays in imageAlt. */
+  caption?: string;
+  /** Localized credit line. The license code is linked separately. */
+  photoCredit?: string;
+  /** Localized license link text. Falls back to image.license. */
+  licenseLabel?: string;
+  /** Grid source line under the card. */
+  gridSource?: PrimarySource;
+  /** Numbered detail-page sources. Replaces the shared English list. */
+  sourcesList?: PrimarySource[];
 };
 
 export type Species = SpeciesMeta & SpeciesCopy;
@@ -91,8 +107,17 @@ function commons(
   credit: string,
   license: string,
   sourceUrl: string,
+  size?: { width: number; height: number },
 ): ImageCredit {
-  return { file, credit, license, sourceUrl };
+  return {
+    file,
+    credit,
+    license,
+    sourceUrl,
+    ...(size
+      ? { width: size.width, height: size.height, fit: 'natural' as const }
+      : {}),
+  };
 }
 
 function iucnList(scientificName: string, url: string): PrimarySource {
@@ -1482,6 +1507,124 @@ export const speciesMeta: SpeciesMeta[] = [
       cite(
         'FAO — International Year of Camelids 2024',
         'https://www.fao.org/camelids-2024/en',
+      ),
+    ],
+  },
+  {
+    slug: 'goat',
+    scientificName: 'Capra hircus',
+    status: 'domesticates',
+    image: commons(
+      'goat.jpg',
+      'Mostafameraji / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Goat_%D8%A8%D8%B2_10.jpg',
+      { width: 1600, height: 1200 },
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems, Goats',
+        'https://www.fao.org/livestock-systems/global-distributions/goats/en/',
+      ),
+      cite(
+        'Saeid Naderi et al.: The goat domestication process inferred from large-scale mitochondrial DNA analysis of wild and domestic individuals, Proceedings of the National Academy of Sciences, 2008 (full text in PubMed Central)',
+        'https://pmc.ncbi.nlm.nih.gov/articles/PMC2584717/',
+      ),
+      cite(
+        'FAO: Domestic Animal Diversity Information System (DAD-IS)',
+        'https://www.fao.org/dad-is/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'cat',
+    scientificName: 'Felis catus',
+    status: 'domesticates',
+    image: commons(
+      'cat.jpg',
+      'Alvesgaspar / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg',
+      { width: 1198, height: 1600 },
+    ),
+    primarySources: [
+      cite(
+        'Claudio Ottoni et al.: The palaeogenetics of cat dispersal in the ancient world, Nature Ecology & Evolution, 2017',
+        'https://www.nature.com/articles/s41559-017-0139',
+      ),
+      cite(
+        'Carlos A. Driscoll et al.: The Near Eastern Origin of Cat Domestication, Science, 2007 (full text in PubMed Central)',
+        'https://pmc.ncbi.nlm.nih.gov/articles/PMC5612713/',
+      ),
+    ],
+  },
+  {
+    slug: 'donkey',
+    scientificName: 'Equus asinus',
+    status: 'domesticates',
+    image: commons(
+      'donkey.jpg',
+      'Adrian Pingstone / Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Donkey_in_Clovelly,_North_Devon,_England.jpg',
+      { width: 750, height: 536 },
+    ),
+    primarySources: [
+      cite(
+        'Evelyn T. Todd et al.: The genomic history and global expansion of domestic donkeys, Science, 2022 (bibliographic record, LMU Munich)',
+        'https://epub.ub.uni-muenchen.de/110811/',
+      ),
+      cite(
+        'Changfa Wang et al.: Donkey genomes provide new insights into domestication and selection for coat color, Nature Communications, 2020 (full text in PubMed Central)',
+        'https://pmc.ncbi.nlm.nih.gov/articles/PMC7723042/',
+      ),
+      cite(
+        'Brooke: Data on working animals',
+        'https://www.thebrooke.org/our-work/data-working-equids',
+      ),
+    ],
+  },
+  {
+    slug: 'duck',
+    scientificName: 'Anas platyrhynchos domesticus',
+    status: 'domesticates',
+    image: commons(
+      'duck.jpg',
+      'Jakub Hałun / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Ducks_in_the_paddy_fields,_Ubud,_Bali,_20220823_1016_0341.jpg',
+      { width: 1600, height: 1068 },
+    ),
+    primarySources: [
+      cite(
+        'FAO Livestock Systems, Ducks',
+        'https://www.fao.org/livestock-systems/global-distributions/ducks/en/',
+      ),
+      cite(
+        'FAO: Domestic Animal Diversity Information System (DAD-IS)',
+        'https://www.fao.org/dad-is/en/',
+      ),
+    ],
+  },
+  {
+    slug: 'rabbit',
+    scientificName: 'Oryctolagus cuniculus domesticus',
+    status: 'domesticates',
+    image: commons(
+      'rabbit.jpg',
+      'Paul Korecky / Wikimedia Commons',
+      'CC BY-SA 2.0',
+      'https://commons.wikimedia.org/wiki/File:2017-03-30_AT_Wien_22_Donaustadt,_Blumeng%C3%A4rten_Hirschstetten,_Oryctolagus_cuniculus_f._domesticus_%2851677002276%29.jpg',
+      { width: 1600, height: 1065 },
+    ),
+    primarySources: [
+      cite(
+        'FAO: The Rabbit: Husbandry, health and production (1997)',
+        'https://www.fao.org/4/t1690e/t1690e.pdf',
+      ),
+      cite(
+        'FAO: Domestic Animal Diversity Information System (DAD-IS)',
+        'https://www.fao.org/dad-is/en/',
       ),
     ],
   },
