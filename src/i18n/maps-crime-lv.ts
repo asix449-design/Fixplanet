@@ -16,11 +16,11 @@ export const lv: Record<string, MapCopy> = {
   'prison-population-rate': {
     title: 'Ieslodzījuma līmenis',
     cardMeta: '“Pasaules cietumu pārskata” dati, ieslodzītie uz 100 000 cilvēku.',
-    hook: 'Cik cilvēku katrā valstī atrodas cietumā uz katriem 100 000 iedzīvotāju, ieskaitot apcietinātos pirms tiesas, pēc datubāzes “Pasaules cietumu pārskats” (World Prison Brief).',
+    hook: 'Cik cilvēku katrā valstī atrodas cietumā uz katriem 100 000 iedzīvotāju, ieskaitot apcietinātos pirms tiesas, pēc datubāzes “Pasaules cietumu pārskats”.',
     description:
-      '“Pasaules cietumu pārskats” (World Prison Brief) ir bezmaksas tiešsaistes datubāze par pasaules ieslodzījuma sistēmām. To uztur Noziedzības un tieslietu politikas pētniecības institūts (ICPR) Birkbeck koledžā, Londonas Universitātē. Datubāze sarindo valstis pēc ieslodzījuma līmeņa: visu ieslodzīto skaita, ieskaitot apcietinātos pirms tiesas, uz 100 000 iedzīvotāju. Bezpeļņas statistikas vietne Our World in Data (“Mūsu pasaule datos”) šo pašu datu rindu rāda pasaules kartē (dati par 1993.–2026. gadu).',
+      '“Pasaules cietumu pārskats” ir bezmaksas tiešsaistes datubāze par pasaules ieslodzījuma sistēmām. To uztur Noziedzības un tieslietu politikas pētniecības institūts Birkbeck koledžā, Londonas Universitātē. Datubāze sarindo valstis pēc ieslodzījuma līmeņa: visu ieslodzīto skaita, ieskaitot apcietinātos pirms tiesas, uz 100 000 iedzīvotāju. Bezpeļņas statistikas vietne Our World in Data (“Mūsu pasaule datos”) šo pašu datu rindu rāda pasaules kartē (dati par 1993.–2026. gadu).',
     whyOnShelf:
-      'Rādītājs parāda, cik plaši valsts izmanto brīvības atņemšanu. Sarakstā, kurā ir 224 ieslodzījuma sistēmas, augstākais līmenis ir Salvadorā: 1659 uz 100 000 cilvēku, tālāk seko Kuba (794), Turkmenistāna (aptuveni 576) un ASV (542).',
+      'Rādītājs parāda, cik plaši valsts izmanto brīvības atņemšanu. Sarakstā, kurā ir 224 ieslodzījuma sistēmas, augstākais līmenis ir Salvadorā: 1659 uz 100 000 cilvēku, tālāk seko Kuba (794), Turkmenistāna (aptuveni 576) un Amerikas Savienotās Valstis (542).',
     howToRead:
       'Dati galvenokārt nāk no valdībām un citiem oficiāliem avotiem, un valstu lapas tiek atjauninātas katru mēnesi, tāpēc jaunākais gads katrai valstij ir atšķirīgs. Līmeni ietekmē sodu likumi, pirmstiesas apcietinājuma prakse un tiesu kapacitāte, kā arī noziedzības līmenis. Jo tumšāka krāsa kartē, jo vairāk ieslodzīto uz 100 000 cilvēku; ja 2026. gada datu nav, parādīts tuvākais gads laikā no 2018. līdz 2025. gadam.',
     caveats:
@@ -80,20 +80,20 @@ export const lv: Record<string, MapCopy> = {
   'drug-trafficking-flows': {
     title: 'Narkotiku kontrabandas plūsmas',
     cardMeta:
-      'ANO Narkotiku un noziedzības biroja “Pasaules narkotiku ziņojums” 2026, maršrutu kartes pēc ziņotajiem narkotiku izņemšanas gadījumiem.',
-    hook: 'Galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi starp pasaules reģioniem ANO Narkotiku un noziedzības biroja kartēs, kas sastādītas pēc 2021.–2024. gadā ziņotajiem izņemšanas gadījumiem.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja “Pasaules narkotiku ziņojums” 2026, maršrutu kartes pēc ziņotajiem narkotiku izņemšanas gadījumiem.',
+    hook: 'Galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi starp pasaules reģioniem Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja kartēs, kas sastādītas pēc 2021.–2024. gadā ziņotajiem izņemšanas gadījumiem.',
     description:
-      'ANO Narkotiku un noziedzības biroja (UNODC) “Pasaules narkotiku ziņojumam” 2026 (World Drug Report) ir statistiskais pielikums ar trim pasaules kartēm, kurās parādītas galvenās metamfetamīna, kokaīna un heroīna kontrabandas plūsmas. Katra karte apkopo narkotiku izņemšanas gadījumus, par kuriem ziņots 2021.–2024. gadā. Papildu kartes rāda galvenās izbraukšanas vai tranzīta valstis un galvenās galamērķa valstis katrai narkotikai, bet pielikuma tabulās ir dati par audzēšanu, ražošanu, izņemšanu, cenām un tīrību.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja “Pasaules narkotiku ziņojumam” 2026 ir statistiskais pielikums ar trim pasaules kartēm, kurās parādītas galvenās metamfetamīna, kokaīna un heroīna kontrabandas plūsmas. Katra karte apkopo narkotiku izņemšanas gadījumus, par kuriem ziņots 2021.–2024. gadā. Papildu kartes rāda galvenās izbraukšanas vai tranzīta valstis un galvenās galamērķa valstis katrai narkotikai, bet pielikuma tabulās ir dati par audzēšanu, ražošanu, izņemšanu, cenām un tīrību.',
     whyOnShelf:
-      'Kartes rāda, kā narkotikas ceļo no ražošanas reģioniem caur tranzīta mezgliem uz patēriņa tirgiem. Piemērs ir Eiropa: Eiropas Savienības Narkotiku aģentūra (EUDA) ziņo, ka ES valstis 2024. gadā izņēma 330 tonnas kokaīna pēc rekordlielajām 419 tonnām 2023. gadā; visvairāk izņēma Spānija (124 tonnas) un Francija (53,5 tonnas).',
+      'Kartes rāda, kā narkotikas ceļo no ražošanas reģioniem caur tranzīta mezgliem uz patēriņa tirgiem. Piemērs ir Eiropa: Eiropas Savienības Narkotiku aģentūra ziņo, ka Eiropas Savienības valstis 2024. gadā izņēma 330 tonnas kokaīna pēc rekordlielajām 419 tonnām 2023. gadā; visvairāk izņēma Spānija (124 tonnas) un Francija (53,5 tonnas).',
     howToRead:
-      'Katra maršruta platums atbilst kopējam tajā izņemto narkotiku daudzumam skalā no ļoti zema līdz ļoti augstam. Maršruti balstās uz ziņām, ko ANO dalībvalstis sniedz ikgadējās anketās, ziņojumos par atsevišķiem izņemšanas gadījumiem un citos oficiālos dokumentos. Bultiņas rāda kontrabandas virzienu: maršruts sākas tur, no kurienes sūtījums izbrauca vai kur tas pēdējo reizi manīts, un beidzas tur, kur to patērē vai uz kurieni tas dodas tālāk, tāpēc bultiņas sākums var atrasties citā valstī nekā narkotikas ražošanas vieta. UNODC maršrutus raksturo kā aptuvenus; mazāki blakus maršruti var būt izlaisti.',
+      'Katra maršruta platums atbilst kopējam tajā izņemto narkotiku daudzumam skalā no ļoti zema līdz ļoti augstam. Maršruti balstās uz ziņām, ko Apvienoto Nāciju Organizācijas dalībvalstis sniedz ikgadējās anketās, ziņojumos par atsevišķiem izņemšanas gadījumiem un citos oficiālos dokumentos. Bultiņas rāda kontrabandas virzienu: maršruts sākas tur, no kurienes sūtījums izbrauca vai kur tas pēdējo reizi manīts, un beidzas tur, kur to patērē vai uz kurieni tas dodas tālāk, tāpēc bultiņas sākums var atrasties citā valstī nekā narkotikas ražošanas vieta. Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs maršrutus raksturo kā aptuvenus; mazāki blakus maršruti var būt izlaisti.',
     caveats:
-      'Izņemšanas gadījumi ir atkarīgi no tā, kur un cik aktīvi meklē tiesībsargājošās iestādes, tāpēc stingri kontrolēti maršruti var izskatīties lielāki. Ilustrācija aptver 27 ES valstis, Norvēģiju un Turciju; UNODC kartes aptver visu pasauli.',
+      'Izņemšanas gadījumi ir atkarīgi no tā, kur un cik aktīvi meklē tiesībsargājošās iestādes, tāpēc stingri kontrolēti maršruti var izskatīties lielāki. Ilustrācija aptver 27 Eiropas Savienības valstis, Norvēģiju un Turciju; Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja kartes aptver visu pasauli.',
     licenseNote: realMapCredit('lv', 'drug-trafficking-flows') ?? '',
     imageAlt:
       'Kolonnas ar izņemto kokaīnu no 2014. līdz 2024. gadam, astoņas krāsu joslas un gadi, bez valstu nosaukumiem attēlā',
-    caption: 'Izņemtais kokaīns 27 ES valstīs, Norvēģijā un Turcijā 2014.–2024. gadā, tonnās, pa valstīm.',
+    caption: 'Izņemtais kokaīns 27 Eiropas Savienības valstīs, Norvēģijā un Turcijā 2014.–2024. gadā, tonnās, pa valstīm.',
     figureTitle: 'Izņemtais kokaīns Eiropā, 2014.–2024.',
     sectionHeads: heads,
     legend: [
@@ -112,7 +112,7 @@ export const lv: Record<string, MapCopy> = {
       },
     ],
     gridSource: cite(
-      'ANO Narkotiku un noziedzības birojs, “Pasaules narkotiku ziņojuma” 2026 statistiskais pielikums',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, “Pasaules narkotiku ziņojuma” 2026 statistiskais pielikums',
       'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
     ),
     sources: [
@@ -154,9 +154,9 @@ export const lv: Record<string, MapCopy> = {
     title: 'Mūsdienu verdzība',
     cardMeta:
       'Walk Free “Globālais verdzības indekss” 2023 un Starptautiskās Darba organizācijas, Walk Free un Starptautiskās Migrācijas organizācijas globālās aplēses par 2021. gadu.',
-    hook: 'Mūsdienu verdzības, proti, piespiedu darba un piespiedu laulību, aplēstā izplatība 160 valstīs pēc organizācijas Walk Free “Globālā verdzības indeksa” (Global Slavery Index), kas balstās uz globālajām aplēsēm: aptuveni 50 miljoni cilvēku mūsdienu verdzībā 2021. gadā.',
+    hook: 'Mūsdienu verdzības, proti, piespiedu darba un piespiedu laulību, aplēstā izplatība 160 valstīs pēc organizācijas Walk Free “Globālā verdzības indeksa”, kas balstās uz globālajām aplēsēm: aptuveni 50 miljoni cilvēku mūsdienu verdzībā 2021. gadā.',
     description:
-      'Starptautiskā cilvēktiesību organizācija Walk Free publicē “Globālo verdzības indeksu”. Tā 2023. gada izdevums aplēš, cik cilvēku dzīvo mūsdienu verdzībā 160 valstīs, izmantojot reprezentatīvas mājsaimniecību aptaujas un katras valsts ievainojamības statistisko modeli. Indekss balstās uz Starptautiskās Darba organizācijas (SDO), Walk Free un Starptautiskās Migrācijas organizācijas (IOM) “Mūsdienu verdzības globālajām aplēsēm”: 2021. gadā jebkurā dienā mūsdienu verdzībā bija aptuveni 50 miljoni cilvēku (49,6 miljoni), no tiem aptuveni 28 miljoni piespiedu darbā un 22 miljoni piespiedu laulībā, par aptuveni 10 miljoniem vairāk nekā 2016. gada aplēsēs.',
+      'Starptautiskā cilvēktiesību organizācija Walk Free publicē “Globālo verdzības indeksu”. Tā 2023. gada izdevums aplēš, cik cilvēku dzīvo mūsdienu verdzībā 160 valstīs, izmantojot reprezentatīvas mājsaimniecību aptaujas un katras valsts ievainojamības statistisko modeli. Indekss balstās uz Starptautiskās Darba organizācijas, Walk Free un Starptautiskās Migrācijas organizācijas “Mūsdienu verdzības globālajām aplēsēm”: 2021. gadā jebkurā dienā mūsdienu verdzībā bija aptuveni 50 miljoni cilvēku (49,6 miljoni), no tiem aptuveni 28 miljoni piespiedu darbā un 22 miljoni piespiedu laulībā, par aptuveni 10 miljoniem vairāk nekā 2016. gada aplēsēs.',
     whyOnShelf:
       'Aplēses ietver arī cilvēkus, kuri policijas un tiesu statistikā neparādās. Indekss augstāko izplatību konstatē Ziemeļkorejā (104,6 uz 1000 cilvēkiem), Eritrejā (90,3) un Mauritānijā (32,0), bet stingrāko valdību rīcību Apvienotajā Karalistē, Austrālijā un Nīderlandē. Pa reģioniem globālās aplēses rāda augstāko izplatību arābu valstīs (10,1 uz 1000 cilvēkiem) un lielāko cilvēku skaitu Āzijas un Klusā okeāna reģionā (29,3 miljoni).',
     howToRead:
@@ -260,23 +260,23 @@ export const lv: Record<string, MapCopy> = {
     cardMeta: 'Bāzeles naudas atmazgāšanas riska indekss 2025, publiskais izdevums, 177 jurisdikcijas.',
     hook: 'Riska vērtējumi no 0 līdz 10, kas rāda, cik lielā mērā valsts ir pakļauta naudas atmazgāšanai un saistītiem finanšu noziegumiem un cik labi tā spēj tiem pretoties, pēc Bāzeles Pārvaldības institūta vērtējuma.',
     description:
-      'Bāzeles naudas atmazgāšanas riska indekss (Basel AML Index, kur AML nozīmē cīņu pret naudas atmazgāšanu) ir neatkarīgs reitings, ko kopš 2012. gada uztur Starptautiskais aktīvu atgūšanas centrs pie Bāzeles Pārvaldības institūta (Basel Institute on Governance). Tā 14. publiskais izdevums, kas iznāca 2025. gada decembrī, vērtē 177 valstis un jurisdikcijas skalā no 0 līdz 10, kur 10 nozīmē augstāko risku. Vērtējums apvieno 17 rādītājus no publiski pieejamiem avotiem piecās jomās: noteikumu kvalitāte pret naudas atmazgāšanu, terorisma finansēšanu un masu iznīcināšanas ieroču finansēšanu; korupcija un krāpšana; finanšu pārredzamība un standarti; valsts pārredzamība un atbildība; tiesiskie un politiskie riski.',
+      'Bāzeles naudas atmazgāšanas novēršanas indekss ir neatkarīgs reitings, ko kopš 2012. gada uztur Starptautiskais aktīvu atgūšanas centrs pie Bāzeles Pārvaldības institūta. Tā 14. publiskais izdevums, kas iznāca 2025. gada decembrī, vērtē 177 valstis un jurisdikcijas skalā no 0 līdz 10, kur 10 nozīmē augstāko risku. Vērtējums apvieno 17 rādītājus no publiski pieejamiem avotiem piecās jomās: noteikumu kvalitāte pret naudas atmazgāšanu, terorisma finansēšanu un masu iznīcināšanas ieroču finansēšanu; korupcija un krāpšana; finanšu pārredzamība un standarti; valsts pārredzamība un atbildība; tiesiskie un politiskie riski.',
     whyOnShelf:
       'Bāzeles institūts naudas atmazgāšanu saista ar tādiem noziegumiem kā korupcija, krāpšana, vides noziegumi un narkotiku tirdzniecība. 2025. gadā augstākie riska vērtējumi ir Mjanmai (8,18), Haiti (8,12) un Kongo Demokrātiskajai Republikai (7,63), zemākie Somijai (3,03), Islandei (3,04) un Sanmarīno (3,08). Pasaules vidējais vērtējums nedaudz samazinājās no 5,30 līdz 5,28; vairāk nekā puse jurisdikciju uzlaboja rezultātu, bet 43% tas pasliktinājās.',
     howToRead:
-      'Augstāks vērtējums nozīmē lielāku novērtēto ievainojamību un vājāku spēju pretoties naudas atmazgāšanai. Vērtējums ir salikts riska novērtējums, kas balstīts uz citu organizāciju datiem; vislielākais svars (35%) ir Finanšu darījumu darba grupas (FATF), starpvaldību institūcijas, kas nosaka pasaules standartus šajā jomā, novērtējumiem. Reitingā iekļautas tikai jurisdikcijas ar pietiekamiem datiem. Ilustrācijas kartē parādīta 81 jurisdikcija, ko ASV Valsts departaments nosaucis par galvenajām naudas atmazgāšanas jurisdikcijām 2024. gadā; departamenta ziņojums ir viens no indeksa publiskajiem avotiem.',
+      'Augstāks vērtējums nozīmē lielāku novērtēto ievainojamību un vājāku spēju pretoties naudas atmazgāšanai. Vērtējums ir salikts riska novērtējums, kas balstīts uz citu organizāciju datiem; vislielākais svars (35%) ir Finanšu darījumu darba grupas, starpvaldību institūcijas, kas nosaka pasaules standartus šajā jomā, novērtējumiem. Reitingā iekļautas tikai jurisdikcijas ar pietiekamiem datiem. Ilustrācijas kartē parādīta 81 jurisdikcija, ko Amerikas Savienoto Valstu Valsts departaments nosaucis par galvenajām naudas atmazgāšanas jurisdikcijām 2024. gadā; departamenta ziņojums ir viens no indeksa publiskajiem avotiem.',
     caveats:
-      'Datu vākšana 2025. gada izdevumam noslēdzās 2025. gada 10. novembrī. Krievija ir izslēgta no publiskā izdevuma saistībā ar tās dalības apturēšanu FATF. Atsevišķs ekspertu izdevums, ko atjaunina reizi ceturksnī, aptver 203 jurisdikcijas un sniedz vērtējumu katram rādītājam. ASV saraksts iezīmē valstis, kuru finanšu iestādes apgroza ievērojamas summas no starptautiskās narkotiku tirdzniecības, un sankcijas tam nav piesaistītas.',
+      'Datu vākšana 2025. gada izdevumam noslēdzās 2025. gada 10. novembrī. Krievija ir izslēgta no publiskā izdevuma saistībā ar tās dalības apturēšanu Finanšu darījumu darba grupā. Atsevišķs ekspertu izdevums, ko atjaunina reizi ceturksnī, aptver 203 jurisdikcijas un sniedz vērtējumu katram rādītājam. Amerikas Savienoto Valstu saraksts iezīmē valstis, kuru finanšu iestādes apgroza ievērojamas summas no starptautiskās narkotiku tirdzniecības, un sankcijas tam nav piesaistītas.',
     licenseNote: realMapCredit('lv', 'basel-aml-index') ?? '',
     imageAlt:
-      'Pasaules karte: ASV Valsts departamenta 2024. gada galvenās naudas atmazgāšanas jurisdikcijas violetā krāsā, pārējās valstis bēšas, mazas teritorijas kā punkti',
+      'Pasaules karte: Amerikas Savienoto Valstu Valsts departamenta 2024. gada galvenās naudas atmazgāšanas jurisdikcijas violetā krāsā, pārējās valstis bēšas, mazas teritorijas kā punkti',
     caption:
-      '81 jurisdikcija, ko ASV Valsts departaments nosaucis par galvenajām naudas atmazgāšanas jurisdikcijām 2024. gadā. Šī karte rāda ASV Valsts departamenta sarakstu, nevis Bāzeles naudas atmazgāšanas riska indeksa vērtējumus.',
-    figureTitle: 'Galvenās naudas atmazgāšanas jurisdikcijas, ko nosaucis ASV Valsts departaments, 2024',
+      '81 jurisdikcija, ko Amerikas Savienoto Valstu Valsts departaments nosaucis par galvenajām naudas atmazgāšanas jurisdikcijām 2024. gadā. Šī karte rāda Amerikas Savienoto Valstu Valsts departamenta sarakstu, nevis Bāzeles naudas atmazgāšanas novēršanas indeksa vērtējumus.',
+    figureTitle: 'Galvenās naudas atmazgāšanas jurisdikcijas, ko nosaucis Amerikas Savienoto Valstu Valsts departaments, 2024',
     sectionHeads: heads,
     legend: [
       {
-        title: 'ASV Valsts departamenta saraksts 2024. gadam. Mazas teritorijas attēlotas kā punkti.',
+        title: 'Amerikas Savienoto Valstu Valsts departamenta saraksts 2024. gadam. Mazas teritorijas attēlotas kā punkti.',
         items: [
           { swatch: '#6c2c5a', label: 'Nosaukta galvenā naudas atmazgāšanas jurisdikcija' },
           { swatch: '#e7e2d8', label: 'Nav šajā sarakstā' },
@@ -320,14 +320,14 @@ export const lv: Record<string, MapCopy> = {
   },
   'rule-of-law-index': {
     title: 'Tiesiskuma indekss',
-    cardMeta: 'World Justice Project (Pasaules tiesiskuma projekts), Tiesiskuma indekss 2025, 143 valstis un jurisdikcijas.',
-    hook: 'Kā iedzīvotāji un juristi 143 valstīs vērtē varas ierobežojumus, korupciju, valdības atklātību, pamattiesības, kārtību un drošību, regulējuma izpildi, kā arī civilo un krimināltiesību sistēmu; vērtējumi no 0 līdz 1 pēc World Justice Project datiem.',
+    cardMeta: 'Pasaules tiesiskuma projekts, Tiesiskuma indekss 2025, 143 valstis un jurisdikcijas.',
+    hook: 'Kā iedzīvotāji un juristi 143 valstīs vērtē varas ierobežojumus, korupciju, valdības atklātību, pamattiesības, kārtību un drošību, regulējuma izpildi, kā arī civilo un krimināltiesību sistēmu; vērtējumi no 0 līdz 1 pēc Pasaules tiesiskuma projekta datiem.',
     description:
-      'Bezpeļņas organizācija World Justice Project (Pasaules tiesiskuma projekts) kopš 2009. gada katru gadu publicē Tiesiskuma indeksu. 2025. gada izdevums aptver 143 valstis un jurisdikcijas, kurās dzīvo 95% pasaules iedzīvotāju, un balstās uz vairāk nekā 215 000 mājsaimniecību aptaujām un 4100 praktizējošu juristu un ekspertu aptaujām. Valstis saņem vērtējumu no 0 līdz 1, kur 1 nozīmē vispilnīgāko tiesiskuma ievērošanu, astoņos faktoros: valdības pilnvaru ierobežojumi, korupcijas neesamība, atklāta pārvaldība, pamattiesības, kārtība un drošība, regulējuma izpilde, civilā justīcija un krimināljustīcija.',
+      'Bezpeļņas organizācija Pasaules tiesiskuma projekts kopš 2009. gada katru gadu publicē Tiesiskuma indeksu. 2025. gada izdevums aptver 143 valstis un jurisdikcijas, kurās dzīvo 95% pasaules iedzīvotāju, un balstās uz vairāk nekā 215 000 mājsaimniecību aptaujām un 4100 praktizējošu juristu un ekspertu aptaujām. Valstis saņem vērtējumu no 0 līdz 1, kur 1 nozīmē vispilnīgāko tiesiskuma ievērošanu, astoņos faktoros: valdības pilnvaru ierobežojumi, korupcijas neesamība, atklāta pārvaldība, pamattiesības, kārtība un drošība, regulējuma izpilde, civilā justīcija un krimināljustīcija.',
     whyOnShelf:
       'Indekss mēra, kā tiesiskums izpaužas ikdienas dzīvē, no drošības un tiesām līdz ierēdņu kontrolei. 2025. gadā tiesiskums pasliktinājās 68% valstu, salīdzinot ar 57% gadu iepriekš; tas ir astotais gads pēc kārtas, kad pasliktinājumu ir vairāk nekā uzlabojumu. Visaugstāk ierindotas Dānija, Norvēģija, Somija, Zviedrija un Jaunzēlande; viszemāk Venecuēla, Afganistāna, Kambodža, Haiti un Nikaragva. Katara indeksā iekļauta pirmo reizi.',
     howToRead:
-      'Katrs vērtējums apkopo attiecīgās valsts iedzīvotāju un juristu atbildes. Kritums nozīmē, ka valsts vērtējums no 2024. līdz 2025. gadam samazinājās; valstis ar kritumu vidēji zaudēja 1,07% vērtējuma, bet valstis ar uzlabojumu ieguva 0,52%. Faktoru vērtējumi un valstu profili pieejami indeksa vietnē. Ilustrācijas karte izmanto atsevišķu atvērtu datu kopu, Pasaules Bankas “Pasaules pārvaldības rādītājus” (Worldwide Governance Indicators): tiesiskuma vērtējumu no 0 līdz 100 par 215 ekonomikām 2025. gadā, kas aprēķināts no 35 starptautiskiem avotiem, tostarp mājsaimniecību un uzņēmumu aptaujām un ekspertu vērtējumiem.',
+      'Katrs vērtējums apkopo attiecīgās valsts iedzīvotāju un juristu atbildes. Kritums nozīmē, ka valsts vērtējums no 2024. līdz 2025. gadam samazinājās; valstis ar kritumu vidēji zaudēja 1,07% vērtējuma, bet valstis ar uzlabojumu ieguva 0,52%. Faktoru vērtējumi un valstu profili pieejami indeksa vietnē. Ilustrācijas karte izmanto atsevišķu atvērtu datu kopu, Pasaules Bankas “Pasaules pārvaldības rādītājus”: tiesiskuma vērtējumu no 0 līdz 100 par 215 ekonomikām 2025. gadā, kas aprēķināts no 35 starptautiskiem avotiem, tostarp mājsaimniecību un uzņēmumu aptaujām un ekspertu vērtējumiem.',
     caveats:
       'Dažiem rādītājiem dati pieejami tikai daļai no 143 valstīm. Pasaules Bankas vērtējums kartē atspoguļo uztveri par līgumu izpildi, īpašuma tiesībām, policijas un tiesu darbu, kā arī noziegumu un vardarbības iespējamību; tam ir sava skala un savs reitings.',
     licenseNote: realMapCredit('lv', 'rule-of-law-index') ?? '',

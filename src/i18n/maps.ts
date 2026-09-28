@@ -454,7 +454,8 @@ const en: Record<string, MapCopy> = {
   },
   'homicide-rates': {
     title: 'Intentional homicide rates',
-    hook: 'UNODC comparable rates of intentional homicide — one violent-crime measure, not “all crime.”',
+    cardMeta: 'UN Office on Drugs and Crime and Our World in Data, 2019–2023.',
+    hook: 'Comparable rates of intentional homicide from the UN Office on Drugs and Crime, one measure of violent crime.',
     description:
       'The UN Office on Drugs and Crime compiles intentional homicide statistics from criminal-justice and public-health sources. Our World in Data turns the comparable series into a map and chart. Homicide is more consistently defined than robbery or “crime” in general.',
     howToRead:
@@ -468,7 +469,8 @@ const en: Record<string, MapCopy> = {
   },
   'organized-crime-index': {
     title: 'Global Organized Crime Index',
-    hook: 'Country scores for criminal markets, criminal actors, and resilience — an expert-assessment heatmap of organized crime, not a second intentional-homicide layer.',
+    cardMeta: 'Global Initiative against Transnational Organized Crime, Index 2025, assessment year 2024.',
+    hook: 'Country scores for criminal markets, criminal actors, and resilience: an expert-assessment heatmap of organized crime.',
     description:
       'The Global Initiative against Transnational Organized Crime (GI-TOC) rates 193 UN member states on criminality — criminal markets and criminal actors — and on resilience. The public tool is ocindex.net. The 2025 edition is the third; its assessment year is 2024. This card is a doorway to that expert composite, not a police-recorded crime rate and not a second UNODC homicide map.',
     whyOnShelf:
@@ -484,7 +486,8 @@ const en: Record<string, MapCopy> = {
   },
   'corruption-perceptions-index': {
     title: 'Corruption Perceptions Index',
-    hook: 'Perceived public-sector corruption (0–100) from expert and business surveys — governance risk, not street-crime volume and not homicide.',
+    cardMeta: 'Transparency International, Corruption Perceptions Index 2025.',
+    hook: 'Perceived public-sector corruption on a scale from 0 to 100, from expert and business surveys: a measure of governance risk.',
     description:
       'Transparency International’s Corruption Perceptions Index (CPI) 2025 ranks countries on perceived public-sector corruption. The scale runs from 0 (highly corrupt) to 100 (very clean), combining expert and business surveys. Our World in Data republishes the series as an open map. This is a governance-risk composite, not a count of bribery cases and not a violent-crime rate.',
     whyOnShelf:
@@ -500,7 +503,8 @@ const en: Record<string, MapCopy> = {
   },
   'trafficking-in-persons': {
     title: 'Trafficking in persons',
-    hook: 'Detected trafficking victims and patterns from UNODC’s Global Report on Trafficking in Persons — exploitation and coercion, not a homicide rate and not the GI-TOC markets composite alone.',
+    cardMeta: 'UN Office on Drugs and Crime, Global Report on Trafficking in Persons, 2024.',
+    hook: 'Detected victims of trafficking in persons, and the patterns in the UN Office on Drugs and Crime Global Report on Trafficking in Persons: exploitation and coercion.',
     description:
       'UNODC’s Global Report on Trafficking in Persons (GLOTIP) 2024 is the eighth edition under the UN Convention against Transnational Organized Crime Trafficking in Persons Protocol and the 2010 Global Plan of Action. It reports detected victims, forms of exploitation, and patterns. This card points to that victim-detection reporting — not a complete census of trafficking.',
     whyOnShelf:
