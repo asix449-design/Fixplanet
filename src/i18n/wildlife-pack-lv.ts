@@ -235,107 +235,229 @@ export const packLv: Record<string, SpeciesCopy> = {
   },
   cattle: {
     commonName: 'Liellopi',
-    hook: 'Pasaules galvenais gaļas un piena liellops — taurīnie un zebu, ko tur cilvēki, ne izmirušais tauts.',
+    hook: 'Pasaules galvenie gaļas un piena liellopi: taurīnie un zebu, ko cilvēki tur piena, gaļas, ādu un vilkšanas dēļ.',
     imageAlt: 'Herefordas liellopi ganībās',
-    what: 'Liellopi ir pieradināti liellopi, ko tur piena, gaļas, ādu un vilkšanas dēļ. Dzīvie liellopi pieder taurīnajai (Bos taurus) un zebu (Bos indicus) līnijām. Tie nav izmirušais tauts (Bos primigenius) izmirušo plauktā un nav Āfrikas savannas bifeļi.',
+    photoCredit:
+      'Foto: Keith Weller, Amerikas Savienoto Valstu Lauksaimniecības departaments, Vikikrātuve (Wikimedia Commons)',
+    licenseLabel: 'sabiedriskais īpašums',
+    gridSource: {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, liellopi',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/cattle/en/',
+    },
+    what: 'Liellopi ir pieradināti liellopi, ko tur piena, gaļas, ādu un vilkšanas dēļ. Dzīvie liellopi pieder taurīnajai (Bos taurus) un zebu (Bos indicus) līnijām. Cilvēki tos izveidoja no tauta holocēnā.',
     range:
-      'Visos apdzīvotajos kontinentos. Blīvums seko ganībām, barībai un piena tirgiem. FAO kartē liellopu globālo izplatību kā mājlopus, ne kā savvaļas sugu.',
+      'Visos apdzīvotajos kontinentos. Blīvums seko ganībām, barībai un piena tirgiem. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē liellopu globālo izplatību kā mājlopus.',
     story:
-      'Cilvēki pieradināja liellopus no tauta holocēnā un veda ganāmpulkus līdz ar tīrumiem un tirdzniecību. Šodien tas ir pārvaldīta pārtikas sistēma: šķirnes, nobarošanas laukumi un ganu ganāmpulki. Savvaļas radinieki un tauts ir citas kartītes.',
-    when: 'Dzīvs pieradinājums, ko uztur cilvēki. Nav IUCN savvaļas sugas vērtējums.',
+      'Cilvēki pieradināja liellopus no tauta holocēnā un veda ganāmpulkus līdz ar tīrumiem un tirdzniecību. Šodien tas ir pārvaldīta pārtikas sistēma: šķirnes, nobarošanas laukumi un ganu ganāmpulki.',
+    when: 'Dzīvs pieradinājums, ko cilvēki uztur visā pasaulē.',
     humanRole: 'Mēs izveidojām dzīvnieku, izplatījām to un vedam ganāmpulkus, kas baro lielu daļu pasaules.',
-    sources: 'FAO Livestock Systems — liellopi.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, liellopi (Livestock Systems: Cattle)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/cattle/en/',
+      },
+    ],
   },
   chicken: {
     commonName: 'Vista',
-    hook: 'Visvairāk sastopamais mājlops — bankivas džungļu vista, kļuvusi par pasaules noklusējuma putnu fermā.',
+    hook: 'Visvairāk sastopamais mājlops: bankivas džungļu vista, kas kļuvusi par fermu pamatputnu pasaulē.',
     imageAlt: 'Mājas vista stāv sausā zālē',
-    what: 'Vista (Gallus gallus domesticus) ir bankivas džungļu vistas pieradinātā forma. Tā ir visvairāk sastopamais mājlops: dzīvu vistu ir vairāk nekā jebkura cita fermas putna vai zīdītāja. Šī kartīte ir par turēto putnu, ne par savvaļas Gallus.',
+    photoCredit: 'Foto: Susulyka, Vikikrātuve (Wikimedia Commons), licence',
+    gridSource: {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, vistas',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/chickens/en/',
+    },
+    what: 'Vista (Gallus gallus domesticus) ir bankivas džungļu vistas pieradinātā forma. Tā ir visvairāk sastopamais mājlops: dzīvu vistu ir vairāk nekā jebkura cita fermas putna vai zīdītāja. Cilvēki šo putnu tur gaļai un olām.',
     range:
-      'Sētas, šķūņi un rūpniecības mājas visos apdzīvotajos kontinentos. FAO kartē vistu globālo izplatību kā mājlopus.',
+      'Sētas, šķūņi un rūpniecības mājas visos apdzīvotajos kontinentos. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē vistu globālo izplatību kā mājlopus.',
     story:
-      'Pieradināšana Āzijā deva putnu, ko var vest. Rūpnieciskā selekcija pēc tam izveidoja gaļas un olu līnijas ar īsu, blīvu mūžu. Ciematu bari paliek. Savvaļas džungļu vista ir cits, daudz mazāks stāsts.',
+      'Pieradināšana Āzijā deva putnu, ko var vest. Rūpnieciskā selekcija pēc tam izveidoja gaļas un olu līnijas ar īsu, blīvu mūžu. Ciematu bari paliek līdzās rūpniecības mājām.',
     when: 'Dzīvs pieradinājums un visvairāk sastopamais fermas dzīvnieks.',
-    humanRole: 'Mēs selekcionējām, izmitinājām un skaitām tās kā pārtikas sistēmu — ne kā savvaļu.',
-    sources: 'FAO Livestock Systems — vistas.',
+    humanRole: 'Mēs selekcionējām, izmitinājām un skaitām tās kā gaļas un olu pārtikas sistēmu.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, vistas (Livestock Systems: Chickens)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/chickens/en/',
+      },
+    ],
   },
   sheep: {
     commonName: 'Aita',
     hook: 'Aitas ir ganību dzīvnieki, ko audzē galvenokārt vilnai, gaļai, pienam un ādām, un to šķirnes ir pielāgotas vietām no aukstajām, mitrajām Ziemeļeiropas augstienēm līdz sausajiem Āfrikas, Āzijas un Australāzijas apgabaliem.',
     imageAlt: 'Mājas aita zālē, pret kameru',
-    what: 'Aita (Ovis aries) ir pieradināts sīkais atgremotājs, ko tur vilnas, gaļas un piena dēļ. Šajā plauktā ir viena sīko atgremotāju kartīte. Kazas nav.',
+    photoCredit: 'Foto: T.Voekler, Vikikrātuve (Wikimedia Commons), licence',
+    gridSource: {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, aitas',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/sheep/en/',
+    },
+    what: 'Aita (Ovis aries) ir pieradināts sīkais atgremotājs, ko tur vilnas, gaļas un piena dēļ.',
     range:
-      'Ganības no sausas stepes līdz mitriem mērenajiem pauguriem un barības sistēmas blakus. FAO kartē aitu globālo izplatību kā mājlopus.',
+      'Ganības no sausas stepes līdz mitriem mērenajiem pauguriem un barības sistēmas blakus. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē aitu globālo izplatību kā mājlopus.',
     story:
-      'Cilvēki pieradināja aitu neolīta Tuvajos Austrumos un veda to pāri kontinentiem. Šķirnes tagad der vilnai, pienam vai gaļai. Savvaļas mufloni un citi Ovis nav šī kartīte.',
-    when: 'Dzīvs pieradinājums. Šī ir turētā aita, ne savvaļas kaza.',
+      'Cilvēki pieradināja aitu neolīta Tuvajos Austrumos un veda to pāri kontinentiem. Šķirnes tagad der vilnai, pienam vai gaļai.',
+    when: 'Dzīvs pieradinājums, ko audzē vilnai, gaļai un pienam.',
     humanRole: 'Mēs selekcionējām un pārvietojām tās kā šķiedru un ēdienu; ainava, ko tās nogana, ir mūsu.',
-    sources: 'FAO Livestock Systems — aitas.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, aitas (Livestock Systems: Sheep)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/sheep/en/',
+      },
+    ],
   },
   pig: {
     commonName: 'Cūka',
-    hook: 'Turētā cūka — Sus domesticus — atsevišķi no izdzīvojušo plaukta mežacūkas.',
+    hook: 'Mājas cūka, Sus domesticus, ko audzē gaļai fermās no ciematu kūtiņām līdz rūpniecības mājām.',
     imageAlt: 'Mājas cūka fermas pagalmā, rozā un smaga',
-    what: 'Cūka (Sus domesticus) ir mājas cūka, ko tur gaļas dēļ. Tā ir cita kartīte nekā izdzīvojušo plaukta mežacūka (Sus scrofa). Savvaļā palaistas cūkas ir pārvaldības problēma daudzās valstīs; tās nav šis mājlopu ieraksts.',
+    photoCredit: 'Foto: Gzen92, Vikikrātuve (Wikimedia Commons), licence',
+    gridSource: {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, cūkas',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/pigs/en/',
+    },
+    what: 'Cūka (Sus domesticus) ir mājas cūka, ko tur gaļas dēļ. Cilvēki to pieradināja no mežacūkas vairāk nekā vienreiz, un šodien lielākā daļa gaļas cūku ir komerciālas līnijas. Ciematu cūkas un vietējās šķirnes paliek. Izlaistie un aizbēgušie dzīvnieki ir izveidojuši savvaļas populācijas daudzās valstīs.',
     range:
-      'Fermās visā pasaulē — no ciematu kūtiņām līdz rūpniecības mājām. FAO kartē cūku globālo izplatību kā mājlopus.',
+      'Fermās visā pasaulē, no ciematu kūtiņām līdz rūpniecības mājām. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē cūku globālo izplatību kā mājlopus.',
     story:
-      'Cūkas pieradināja no mežacūkas vairāk nekā vienreiz. Šodien lielākā daļa gaļas cūku ir komerciālas līnijas. Ciematu cūkas un vietējās šķirnes paliek. Savvaļas priekštečam ir savs plaukts.',
-    when: 'Dzīvs pieradinājums. Nav otra mežacūkas kartīte.',
-    humanRole: 'Mēs tās turam kā ēdienu; mēs arī izveidojām savvaļas populācijas tur, kur tās izlaida vai tās aizbēga.',
-    sources: 'FAO Livestock Systems — cūkas.',
+      'Cūkas pieradināja no mežacūkas vairāk nekā vienreiz. Šodien lielākā daļa gaļas cūku ir komerciālas līnijas. Ciematu cūkas un vietējās šķirnes paliek, un izlaistie vai aizbēgušie dzīvnieki ir izveidojuši savvaļas populācijas daudzās valstīs.',
+    when: 'Dzīvs pieradinājums, ko audzē gaļai.',
+    humanRole:
+      'Mēs tās turam kā ēdienu, un izlaistie vai aizbēgušie dzīvnieki ir izveidojuši savvaļas populācijas daudzās valstīs.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, cūkas (Livestock Systems: Pigs)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/pigs/en/',
+      },
+    ],
   },
   'water-buffalo': {
     commonName: 'Ūdensbifelis',
     hook: 'Ap 15 procentiem pasaules piena — un Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.',
     imageAlt: 'Mājas ūdensbifeļa bullis pie Mehsānas, Gudžarātā, Indijā',
-    what: 'Ūdensbifelis (Bubalus bubalis) ir pieradinātais Āzijas bifelis, ko tur piena, gaļas un vilkšanas dēļ. FAO rēķina bifeļus ap 15 procentiem pasaules piena; Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena. Tas nav Āfrikas savannas bifelis (Syncerus caffer).',
+    photoCredit: 'Foto: Yann Forget, Vikikrātuve (Wikimedia Commons), licence',
+    gridSource: {
+      label: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: bifeļu piens',
+      url: 'https://www.fao.org/dairy-production-products/dairy/buffaloes/en',
+    },
+    what: 'Ūdensbifelis (Bubalus bubalis) ir pieradinātais Āzijas bifelis, ko tur piena, gaļas un vilkšanas dēļ. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rēķina bifeļus ap 15 procentiem pasaules piena; Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.',
     range:
-      'Dienvidu un Dienvidaustrumu Āzija tur lielāko daļu ganāmpulka; mazākas populācijas ir Vidusjūrā, Kaukāzā, Dienvidamerikā un tālāk. FAO kartē bifeļus kā mājlopus.',
+      'Dienvidu un Dienvidaustrumu Āzija tur lielāko daļu ganāmpulka; mazākas populācijas ir Vidusjūrā, Kaukāzā, Dienvidamerikā un tālāk. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē bifeļus kā mājlopus.',
     story:
-      'Cilvēki pieradināja Āzijas bifeli un uzcēla ap to rīsa un piena sistēmas. Upju un purvu tipi atšķiras. Savvaļas Āzijas bifelis (Bubalus arnee) ir apdraudēts radinieks, ne šis turētais dzīvnieks un ne Āfrikas liellops.',
+      'Cilvēki pieradināja Āzijas bifeli un uzcēla ap to rīsa un piena sistēmas. Upju un purvu tipi atšķiras ar pienu, vilkšanu un mitrājiem, kuros tie dzīvo.',
     when: 'Dzīvs pieradinājums un nozīmīga piena suga Dienvidāzijā.',
-    humanRole: 'Mēs turam bifeļus kā piena un darba dzīvniekus. Kartīte ir par turēto sugu.',
-    sources: 'FAO lapa par bifeļu pienu; FAO Livestock Systems — bifeli.',
+    humanRole:
+      'Mēs turam bifeļus kā piena un darba dzīvniekus Dienvidāzijā un mazākos ganāmpulkos citur.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: bifeļu piens (Buffalo milk)',
+        url: 'https://www.fao.org/dairy-production-products/dairy/buffaloes/en',
+      },
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, bifeļi (Livestock Systems: Buffaloes)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/',
+      },
+    ],
   },
   horse: {
     commonName: 'Zirgs',
-    hook: 'Mājas zirgi izplatījās no Rietumeirāzijas stepēm — Librado et al., Nature 2021, ne vecāka „ap 4000 p.m.ē.” līnija.',
+    hook: 'Mājas zirgi izplatījās no Rietumeirāzijas stepēm ap 2200.–2000. gadu p.m.ē., kā 2021. gadā žurnālā Nature parādīja Librado un kolēģi.',
     imageAlt: 'Balts Kamargas zirgs zālē',
-    what: 'Zirgs (Equus ferus caballus) ir mājas zirgs, uz kura jā, ko iejūdz un ko tur. Librado un kolēģu senās DNS darbs (Nature, 2021) liek mūsdienu mājas līnijas (DOM2) rašanos un izplatību Rietumeirāzijas stepēs, ar paplašināšanos ap 2200–2000 p.m.ē. — ne vecāko FAO stila datumu ap 4000 p.m.ē. un ne agrākos Botajas zirgus Kazahstānā, citu līniju.',
+    photoCredit: 'Foto: TwoWings, Vikikrātuve (Wikimedia Commons)',
+    licenseLabel: 'sabiedriskais īpašums',
+    gridSource: {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, zirgi',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/horses/en/',
+    },
+    what: 'Zirgs (Equus ferus caballus) ir mājas zirgs, uz kura jā, ko iejūdz un ko tur. Librado un kolēģu darbs ar seno ģenētisko materiālu (žurnāls Nature, 2021) liek mūsdienu mājas līnijas rašanos un izplatību Rietumeirāzijas stepēs, ar paplašināšanos ap 2200.–2000. gadu p.m.ē. Botajas zirgi Kazahstānā pieder citai līnijai.',
     range:
-      'Tiek turēti visā pasaulē. FAO kartē zirgus kā mājlopus. Savvaļas zirgi un izmirušais tarpāns ir citi stāsti; šī kartīte ir par turēto dzīvnieku.',
+      'Tos tur visā pasaulē. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē zirgus kā mājlopus. Darba, sporta un savvaļā palaistie bari dzīvo visos apdzīvotajos kontinentos.',
     story:
-      'DOM2 zirgi nomainīja agrākās līnijas, izplatoties kopā ar cilvēkiem. Šis datums ir ģenētisks rezultāts, ne mīts par pirmo jātnieku 4000 p.m.ē. Darba, sporta un savvaļā palaistie bari visi nāk no šīs turētās līnijas.',
-    when: 'Dzīvs pieradinājums. Mūsdienu līnija: Rietumeirāzijas stepes, ~2200–2000 p.m.ē. (Librado et al. 2021).',
-    humanRole: 'Mēs selekcionējām un pārvietojām tos kā transportu un darbu; dzīvās līnijas datums ir 2021. gada raksts, ne folklora.',
-    sources: 'FAO Livestock Systems — zirgi; Librado et al., Nature, 2021 (doi:10.1038/s41586-021-04018-9).',
+      'Mūsdienu mājas līnija nomainīja agrākās līnijas, izplatoties kopā ar cilvēkiem. Šis datums ir 2021. gada pētījuma ģenētisks rezultāts. Darba, sporta un savvaļā palaistie bari nāk no šīs turētās līnijas.',
+    when: 'Dzīvs pieradinājums. Mūsdienu līnija: Rietumeirāzijas stepes, ap 2200.–2000. gadu p.m.ē. (Librado u.c., 2021).',
+    humanRole:
+      'Mēs selekcionējām un pārvietojām tos kā transportu un darbu. Dzīvās līnijas datums nāk no 2021. gada ģenētiskā pētījuma.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, zirgi (Livestock Systems: Horses)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/horses/en/',
+      },
+      {
+        label:
+          'Librado u.c., žurnāls Nature, 2021 — Rietumeirāzijas steppju mājas zirgi (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)',
+        url: 'https://doi.org/10.1038/s41586-021-04018-9',
+      },
+    ],
   },
   dog: {
     commonName: 'Suns',
-    hook: 'Pirmais pieradinātais dzīvnieks — atšķirīgs no šodienas vilkiem, ar vismaz piecām līnijām ap 11 tūkstošiem gadu.',
-    imageAlt: 'Divi melni labradoru retrīveri ar siksnām sausā zālē — skaidri suņi, ne vilki',
-    what: 'Suns (Canis familiaris) ir pirmais dzīvnieks, ko cilvēki pieradināja. Bergström un kolēģi (Science, 2020) rāda, ka suņi jau bija ģenētiski atšķirīgi no šodienas vilkiem un ka ap 11 tūkstošiem gadu pastāvēja vismaz piecas suņu līnijas. Tā nav otra pelēkā vilka kartīte.',
-    range:
-      'Tur, kur dzīvo cilvēki. Ciematu suņi, darba līnijas un šķirnes ir viena mājas suga. Pelēkais vilks (Canis lupus) paliek savvaļas suņu dzimtas dzīvnieks izdzīvojušo plauktā.',
+    hook: 'Pirmais pieradinātais dzīvnieks, jau ģenētiski atšķirīgs no šodienas vilkiem, ar vismaz piecām līnijām ap 11 tūkstošiem gadu.',
+    imageAlt: 'Divi melni labradoru retrīveri ar siksnām sausā zālē',
+    photoCredit: 'Foto: Marco Ponepal, Vikikrātuve (Wikimedia Commons), licence',
+    gridSource: {
+      label:
+        'Bergström u.c., Science, 2020 — aizvēsturisko suņu izcelsme, pilns teksts PubMed Central',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/',
+    },
+    what: 'Suns (Canis familiaris) ir pirmais dzīvnieks, ko cilvēki pieradināja. Bergström un kolēģi (žurnāls Science, 2020) rāda, ka suņi jau bija ģenētiski atšķirīgi no šodienas vilkiem un ka ap 11 tūkstošiem gadu pastāvēja vismaz piecas suņu līnijas.',
+    range: 'Tur, kur dzīvo cilvēki. Ciematu suņi, darba līnijas un šķirnes ir viena mājas suga.',
     story:
-      'Suņi iegāja cilvēku nometnēs vēlajā pleistocēnā. Agrīnajā holocēnā tie jau bija līniju kopa, ne nesenš šodienas vilka atzars. Vēlākā selekcija izveidoja mūsdienu tipus. Aizliegtais Nature raksts šeit nav avots; avots ir Science 2020.',
-    when: 'Vecākais pieradinājums. Atšķirīgs no šodienas vilkiem holocēnā; ≥5 līnijas ap ~11 ka (Bergström et al. 2020).',
-    humanRole: 'Mēs izveidojām pirmo turēto dzīvnieku — pavadoni, mednieku un sargu — ne otru vilka ierakstu.',
-    sources: 'Bergström et al., Science, 2020 (PMC7116352; doi:10.1126/science.aba9572).',
+      'Suņi iegāja cilvēku nometnēs vēlajā pleistocēnā. Agrīnajā holocēnā tie jau bija līniju kopa, ģenētiski atšķirīga no šodienas vilkiem. Vēlākā selekcija izveidoja mūsdienu tipus.',
+    when: 'Vecākais pieradinājums. Atšķirīgs no šodienas vilkiem holocēnā; vismaz piecas līnijas ap 11 tūkstošiem gadu (Bergström u.c., 2020).',
+    humanRole: 'Mēs izveidojām pirmo turēto dzīvnieku: pavadoni, mednieku un sargu.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Bergström u.c.: aizvēsturisko suņu izcelsme (Origins and genetic legacy of prehistoric dogs), žurnāls Science, 2020, pilns teksts PubMed Central',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/',
+      },
+      {
+        label: 'Bergström u.c., žurnāls Science, 2020 (doi:10.1126/science.aba9572)',
+        url: 'https://doi.org/10.1126/science.aba9572',
+      },
+    ],
   },
   camelids: {
     commonName: 'Kamieļi',
-    hook: 'Viena kartīte kamielim, lamai un alpaka — FAO Starptautiskais kamieļu gads 2024, ne četras flīzes.',
-    imageAlt: 'Dromedārs profilā — kamieļu dzimtas pārstāvis, ko tur cilvēki',
-    what: 'Kamieļi šeit nozīmē tos, ko tur cilvēki: dromedārs un baktriāniskais kamielis (Camelus), lama (Lama glama) un alpaka (Vicugna pacos). FAO 2024. gadu nosauca par Starptautisko kamieļu gadu. Tā ir viena kartīte, ne kamielis plus lama plus alpaka plus vikunja.',
+    hook: 'Cilvēki tur dromedārus, divkupru kamieļus, lamas un alpakas transportam, šķiedrai, pienam un gaļai, un Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija 2024. gadu nosauca par Starptautisko kamieļu gadu.',
+    imageAlt: 'Dromedārs profilā',
+    photoCredit: 'Foto: Hans Hillewaert, Vikikrātuve (Wikimedia Commons), licence',
+    gridSource: {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Starptautiskais kamieļu gads, 2024',
+      url: 'https://www.fao.org/camelids-2024/en',
+    },
+    what: 'Kamieļi, ko tur cilvēki, ir dromedārs un divkupru kamielis (Camelus), lama (Lama glama) un alpaka (Vicugna pacos). Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija 2024. gadu nosauca par Starptautisko kamieļu gadu.',
     range:
-      'Kamieļi sausajā Āzijā un Āfrikā (un tagad Austrālijā); lamas un alpakas Andos, ar izveduma ganāmpulkiem citur. Savvaļas vikunjas un gvanako ir radinieki, ne papildu flīzes šajā plauktā.',
+      'Kamieļi dzīvo sausajā Āzijā un Āfrikā, un tagad arī Austrālijā. Lamas un alpakas dzīvo Andos, un izveduma ganāmpulki ir arī citur.',
     story:
-      'Cilvēki pieradināja Vecās pasaules kamieļus un Andu kamieļus kā nastu, šķiedras, piena un gaļas dzīvniekus sausās un augstās zemēs. FAO 2024. gada gads lūdza valdības šos ganāmpulkus uzskatīt par pārtikas un kultūras sistēmu, ne ziņkārību. Viena enciklopēdijas kartīte pietiek.',
-    when: 'Dzīvi pieradinājumi. FAO Starptautiskais kamieļu gads, 2024.',
+      'Cilvēki pieradināja Vecās pasaules kamieļus un Andu kamieļus kā nastu, šķiedras, piena un gaļas dzīvniekus sausās un augstās zemēs. 2024. gada Starptautiskais kamieļu gads lūdza valdības šos ganāmpulkus uzskatīt par pārtikas un kultūras sistēmu.',
+    when: 'Dzīvi pieradinājumi. Starptautiskais kamieļu gads bija 2024. gadā.',
     humanRole: 'Mēs turam kamieļus, lamas un alpakas kā darba un šķiedras dzīvniekus sausās un kalnu zemēs.',
-    sources: 'FAO Starptautiskais kamieļu gads 2024.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Starptautiskais kamieļu gads, 2024 (International Year of Camelids 2024)',
+        url: 'https://www.fao.org/camelids-2024/en',
+      },
+    ],
   },
   ...domesticatesLv,
 };

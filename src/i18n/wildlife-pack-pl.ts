@@ -235,107 +235,229 @@ export const packPl: Record<string, SpeciesCopy> = {
   },
   cattle: {
     commonName: 'Bydło',
-    hook: 'Główny wołowy mięsa i mleka świata — bydło taurynowe i zebu, które trzymają ludzie, nie wymarły tur.',
+    hook: 'Główne bydło mięsne i mleczne świata: bydło taurynowe i zebu, które ludzie trzymają dla mleka, mięsa, skór i uciągu.',
     imageAlt: 'Bydło herefordzkie na pastwisku',
-    what: 'Bydło to udomowione wołowate trzymane dla mleka, mięsa, skór i uciągu. Żywe bydło należy do linii taurynowej (Bos taurus) i zebu (Bos indicus). To nie wymarły tur (Bos primigenius) z półki wymarłych i nie bawół sawannowy Afryki.',
+    photoCredit:
+      'Zdjęcie: Keith Weller, Departament Rolnictwa Stanów Zjednoczonych, Wikimedia Commons',
+    licenseLabel: 'domena publiczna',
+    gridSource: {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, bydło',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/cattle/en/',
+    },
+    what: 'Bydło to udomowione wołowate trzymane dla mleka, mięsa, skór i uciągu. Żywe bydło należy do linii taurynowej (Bos taurus) i zebu (Bos indicus). Ludzie wyhodowali je z tura (Bos primigenius) w holocenie.',
     range:
-      'Na wszystkich zamieszkanych kontynentach. Zagęszczenie idzie za pastwiskiem, paszą i rynkiem mleka. FAO mapuje globalny rozkład bydła jako inwentarza, nie jako dzikiego gatunku.',
+      'Na wszystkich zamieszkanych kontynentach. Zagęszczenie idzie za pastwiskiem, paszą i rynkiem mleka. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład bydła jako inwentarza.',
     story:
-      'Ludzie udomowili bydło od tura w holocenie i poprowadzili stada z uprawą i handlem. Dziś to zarządzany system żywności: rasy, opasy i stada pasterskie. Dzikie krewniaki i tur to inne karty.',
-    when: 'Żywy udomowiony gatunek, utrzymywany przez ludzi. Nie ocena IUCN dzikiego gatunku.',
+      'Ludzie udomowili bydło od tura w holocenie i poprowadzili stada z uprawą i handlem. Dziś to zarządzany system żywności: rasy, opasy i stada pasterskie.',
+    when: 'Żywy udomowiony gatunek, utrzymywany przez ludzi na świecie.',
     humanRole: 'Zrobiliśmy zwierzę, roznieśliśmy je i prowadzimy stada, które karmią dużą część świata.',
-    sources: 'FAO Livestock Systems — bydło.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, bydło (Livestock Systems: Cattle)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/cattle/en/',
+      },
+    ],
   },
   chicken: {
     commonName: 'Kura',
-    hook: 'Najliczniejszy inwentarz domowy — kur bankiwa zamieniony w domyślną farmę świata.',
+    hook: 'Najliczniejszy inwentarz domowy: kur bankiwa, który stał się podstawowym ptakiem ferm na świecie.',
     imageAlt: 'Kura domowa stoi w suchej trawie',
-    what: 'Kura (Gallus gallus domesticus) to udomowiona forma kura bankiwa. Jest najliczniejszym inwentarzem: żywych kur jest więcej niż jakiegokolwiek innego ptaka czy ssaka hodowlanego. Ta karta dotyczy ptaka trzymanego, nie dzikiego Gallus.',
+    photoCredit: 'Zdjęcie: Susulyka, Wikimedia Commons, licencja',
+    gridSource: {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, kury',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/chickens/en/',
+    },
+    what: 'Kura (Gallus gallus domesticus) to udomowiona forma kura bankiwa. Jest najliczniejszym inwentarzem: żywych kur jest więcej niż jakiegokolwiek innego ptaka czy ssaka hodowlanego. Ludzie trzymają tego ptaka dla mięsa i jaj.',
     range:
-      'Podwórka, stodoły i hale przemysłowe na wszystkich zamieszkanych kontynentach. FAO mapuje globalny rozkład kur jako inwentarza.',
+      'Podwórka, stodoły i hale przemysłowe na wszystkich zamieszkanych kontynentach. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład kur jako inwentarza.',
     story:
-      'Udomowienie w Azji dało ptaka, którego można wozić. Przemysłowa hodowla zrobiła potem linie mięsne i nieśne o krótkim, gęstym życiu. Stada wiejskie zostają. Dzikie kury bankiwa to inna, dużo mniejsza historia.',
+      'Udomowienie w Azji dało ptaka, którego można wozić. Przemysłowa hodowla zrobiła potem linie mięsne i nieśne o krótkim, gęstym życiu. Stada wiejskie zostają obok hal przemysłowych.',
     when: 'Żywy udomowiony gatunek i najliczniejsze zwierzę gospodarskie.',
-    humanRole: 'Wyhodowaliśmy, zamknęliśmy i liczymy je jako system żywności — nie jako dziką przyrodę.',
-    sources: 'FAO Livestock Systems — kury.',
+    humanRole: 'Wyhodowaliśmy, zamknęliśmy i liczymy je jako system żywności z mięsa i jaj.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, kury (Livestock Systems: Chickens)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/chickens/en/',
+      },
+    ],
   },
   sheep: {
     commonName: 'Owca',
     hook: 'Owce to zwierzęta pastwiskowe hodowane głównie dla wełny, mięsa, mleka i skór, w rasach przystosowanych do miejsc od zimnych, wilgotnych wyżyn północnej Europy po suche tereny Afryki, Azji i Australazji.',
     imageAlt: 'Owca domowa w trawie, twarzą do kamery',
-    what: 'Owca (Ovis aries) to udomowiony mały przeżuwacz trzymany dla wełny, mięsa i mleka. Na półce jest jedna karta małego przeżuwacza. Kozy nie dodajemy.',
+    photoCredit: 'Zdjęcie: T.Voekler, Wikimedia Commons, licencja',
+    gridSource: {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, owce',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/sheep/en/',
+    },
+    what: 'Owca (Ovis aries) to udomowiony mały przeżuwacz trzymany dla wełny, mięsa i mleka.',
     range:
-      'Pastwiska od suchego stepu po wilgotne wzgórza umiarkowane i systemy paszowe obok. FAO mapuje globalny rozkład owiec jako inwentarza.',
+      'Pastwiska od suchego stepu po wilgotne wzgórza umiarkowane i systemy paszowe obok. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład owiec jako inwentarza.',
     story:
-      'Ludzie udomowili owcę w neolitycznym Bliskim Wschodzie i przeprowadzili ją przez kontynenty. Rasy teraz służą wełnie, mleku albo mięsu. Dzikie muflony i inne Ovis to nie ta karta.',
-    when: 'Żywy udomowiony gatunek. To owca trzymana, nie dziki koziorożec.',
+      'Ludzie udomowili owcę w neolitycznym Bliskim Wschodzie i przeprowadzili ją przez kontynenty. Rasy teraz służą wełnie, mleku albo mięsu.',
+    when: 'Żywy udomowiony gatunek, hodowany dla wełny, mięsa i mleka.',
     humanRole: 'Wyhodowaliśmy i przemieściliśmy je jako włókno i jedzenie; krajobraz, który spasają, jest nasz.',
-    sources: 'FAO Livestock Systems — owce.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, owce (Livestock Systems: Sheep)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/sheep/en/',
+      },
+    ],
   },
   pig: {
     commonName: 'Świnia',
-    hook: 'Świnia trzymana — Sus domesticus — osobno od dzika na półce Przetrwałe.',
+    hook: 'Świnia domowa, Sus domesticus, hodowana dla mięsa na fermach od wiejskich chlewów po hale przemysłowe.',
     imageAlt: 'Świnia domowa na podwórzu fermy, różowa i ciężka',
-    what: 'Świnia (Sus domesticus) to świnia domowa trzymana dla mięsa. To inna karta niż dzik (Sus scrofa) na półce Przetrwałe. Zdziczałe świnie są problemem zarządzania w wielu krajach; to nie ten wpis inwentarza.',
+    photoCredit: 'Zdjęcie: Gzen92, Wikimedia Commons, licencja',
+    gridSource: {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, świnie',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/pigs/en/',
+    },
+    what: 'Świnia (Sus domesticus) to świnia domowa trzymana dla mięsa. Ludzie udomowili ją z dzika więcej niż raz, a dziś większość świń mięsnych to linie komercyjne. Świnie wiejskie i rasy lokalne zostają. Zwierzęta wypuszczone i zbiegłe utworzyły populacje zdziczałe w wielu krajach.',
     range:
-      'Fermy na świecie — od wiejskich chlewów po hale przemysłowe. FAO mapuje globalny rozkład świń jako inwentarza.',
+      'Fermy na świecie, od wiejskich chlewów po hale przemysłowe. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład świń jako inwentarza.',
     story:
-      'Świnie udomawiano z dzika więcej niż raz. Dziś większość świń mięsnych to linie komercyjne. Świnie wiejskie i rasy lokalne zostają. Dzikie przodki mają własną półkę.',
-    when: 'Żywy udomowiony gatunek. Nie druga karta dzika.',
-    humanRole: 'Trzymamy je jako jedzenie; stworzyliśmy też populacje zdziczałe tam, gdzie je wypuszczono albo uciekły.',
-    sources: 'FAO Livestock Systems — świnie.',
+      'Świnie udomawiano z dzika więcej niż raz. Dziś większość świń mięsnych to linie komercyjne. Świnie wiejskie i rasy lokalne zostają, a zwierzęta wypuszczone i zbiegłe utworzyły populacje zdziczałe w wielu krajach.',
+    when: 'Żywy udomowiony gatunek, hodowany dla mięsa.',
+    humanRole:
+      'Trzymamy je jako jedzenie, a zwierzęta wypuszczone i zbiegłe utworzyły populacje zdziczałe w wielu krajach.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, świnie (Livestock Systems: Pigs)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/pigs/en/',
+      },
+    ],
   },
   'water-buffalo': {
     commonName: 'Bawół wodny',
     hook: 'Około 15 procent światowego mleka — a w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.',
     imageAlt: 'Domowy byk bawoli koło Mehsany, Gujarat, Indie',
-    what: 'Bawół wodny (Bubalus bubalis) to udomowiony bawół azjatycki, trzymany dla mleka, mięsa i uciągu. FAO liczy bawoły na około 15 procent światowego mleka; w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego. To nie bawół sawannowy Afryki (Syncerus caffer).',
+    photoCredit: 'Zdjęcie: Yann Forget, Wikimedia Commons, licencja',
+    gridSource: {
+      label: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: mleko bawole',
+      url: 'https://www.fao.org/dairy-production-products/dairy/buffaloes/en',
+    },
+    what: 'Bawół wodny (Bubalus bubalis) to udomowiony bawół azjatycki, trzymany dla mleka, mięsa i uciągu. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa liczy bawoły na około 15 procent światowego mleka; w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.',
     range:
-      'Południowa i południowo-wschodnia Azja trzyma większość stada; mniejsze populacje są w śródziemnomorzu, na Kaukazie, w Ameryce Południowej i dalej. FAO mapuje bawoły jako inwentarz.',
+      'Południowa i południowo-wschodnia Azja trzyma większość stada; mniejsze populacje są w basenie Morza Śródziemnego, na Kaukazie, w Ameryce Południowej i dalej. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje bawoły jako inwentarz.',
     story:
-      'Ludzie udomowili bawoła azjatyckiego i zbudowali wokół niego systemy ryżu i mleka. Typy rzeczne i bagienne się różnią. Dzikie bawoły azjatyckie (Bubalus arnee) to zagrożony krewny, nie to trzymane zwierzę i nie wołowate Afryki.',
+      'Ludzie udomowili bawoła azjatyckiego i zbudowali wokół niego systemy ryżu i mleka. Typy rzeczne i bagienne różnią się mlekiem, uciągiem i mokradłami, w których żyją.',
     when: 'Żywy udomowiony gatunek i ważny gatunek mleczny Azji Południowej.',
-    humanRole: 'Trzymamy bawoły jako zwierzęta mleczne i pociągowe. Karta dotyczy gatunku trzymanego.',
-    sources: 'Strona FAO o mleku bawolim; FAO Livestock Systems — bawoły.',
+    humanRole:
+      'Trzymamy bawoły jako zwierzęta mleczne i pociągowe w Azji Południowej i w mniejszych stadach gdzie indziej.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: mleko bawole (Buffalo milk)',
+        url: 'https://www.fao.org/dairy-production-products/dairy/buffaloes/en',
+      },
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, bawoły (Livestock Systems: Buffaloes)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/',
+      },
+    ],
   },
   horse: {
     commonName: 'Koń',
-    hook: 'Konie domowe rozeszły się z stepów zachodniej Eurazji — Librado et al., Nature 2021, nie starsza linia „ok. 4000 p.n.e.”.',
+    hook: 'Konie domowe rozeszły się ze stepów zachodniej Eurazji około 2200–2000 p.n.e., jak pokazali Librado i współpracownicy w czasopiśmie Nature w 2021 roku.',
     imageAlt: 'Biały koń kamargijski w trawie',
-    what: 'Koń (Equus ferus caballus) to koń domowy, na którym jeżdżą, którego zaprzęgają i którego trzymają. Praca nad dawnym DNA Librado i współpracowników (Nature, 2021) kładzie powstanie i rozprzestrzenienie współczesnej linii domowej (DOM2) na stepy zachodniej Eurazji, z ekspansją około 2200–2000 p.n.e. — nie starszą datę w stylu FAO około 4000 p.n.e. i nie wcześniejsze konie Botai w Kazachstanie, inną linię.',
+    photoCredit: 'Zdjęcie: TwoWings, Wikimedia Commons',
+    licenseLabel: 'domena publiczna',
+    gridSource: {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, konie',
+      url: 'https://www.fao.org/livestock-systems/global-distributions/horses/en/',
+    },
+    what: 'Koń (Equus ferus caballus) to koń domowy, na którym jeżdżą, którego zaprzęgają i którego trzymają. Praca nad dawnym materiałem genetycznym Librado i współpracowników (czasopismo Nature, 2021) kładzie powstanie i rozprzestrzenienie współczesnej linii domowej na stepy zachodniej Eurazji, z ekspansją około 2200–2000 p.n.e. Konie z Botai w Kazachstanie należą do innej linii.',
     range:
-      'Trzymane na świecie. FAO mapuje konie jako inwentarz. Dzikie konie i wymarły tarpan to inne historie; ta karta dotyczy zwierzęcia trzymanego.',
+      'Trzymane na świecie. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje konie jako inwentarz. Stada robocze, sportowe i zdziczałe żyją na wszystkich zamieszkanych kontynentach.',
     story:
-      'Konie DOM2 zastąpiły wcześniejsze linie, rozchodząc się z ludźmi. Ta data to wynik genetyczny, nie mit pierwszego jeźdźca w 4000 p.n.e. Stada robocze, sportowe i zdziczałe wszystkie pochodzą z tej trzymanej linii.',
-    when: 'Żywy udomowiony gatunek. Współczesna linia: stepy zachodniej Eurazji, ~2200–2000 p.n.e. (Librado et al. 2021).',
-    humanRole: 'Wyhodowaliśmy i przemieściliśmy je jako transport i pracę; data żywej linii to artykuł z 2021, nie folklor.',
-    sources: 'FAO Livestock Systems — konie; Librado et al., Nature, 2021 (doi:10.1038/s41586-021-04018-9).',
+      'Współczesna linia domowa zastąpiła wcześniejsze linie, rozchodząc się z ludźmi. Ta data to wynik genetyczny badania z 2021 roku. Stada robocze, sportowe i zdziczałe pochodzą z tej trzymanej linii.',
+    when: 'Żywy udomowiony gatunek. Współczesna linia: stepy zachodniej Eurazji, około 2200–2000 p.n.e. (Librado i in., 2021).',
+    humanRole:
+      'Wyhodowaliśmy i przemieściliśmy je jako transport i pracę. Data żywej linii pochodzi z badania genetycznego z 2021 roku.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, konie (Livestock Systems: Horses)',
+        url: 'https://www.fao.org/livestock-systems/global-distributions/horses/en/',
+      },
+      {
+        label:
+          'Librado i in., czasopismo Nature, 2021 — konie stepów zachodniej Eurazji (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)',
+        url: 'https://doi.org/10.1038/s41586-021-04018-9',
+      },
+    ],
   },
   dog: {
     commonName: 'Pies',
-    hook: 'Pierwsze zwierzę udomowione — odrębne od dzisiejszych wilków, z co najmniej pięcioma liniami około 11 tysięcy lat temu.',
-    imageAlt: 'Dwa czarne labradory z obrożami w suchej trawie — wyraźnie psy, nie wilki',
-    what: 'Pies (Canis familiaris) to pierwsze zwierzę, które ludzie udomowili. Bergström i współpracownicy (Science, 2020) pokazują, że psy były już genetycznie odrębne od dzisiejszych wilków i że około 11 tysięcy lat temu istniało co najmniej pięć linii psów. To nie druga karta wilka szarego.',
-    range:
-      'Tam, gdzie żyją ludzie. Psy wioskowe, linie użytkowe i rasowe to jeden gatunek domowy. Wilk szary (Canis lupus) zostaje dzikim psowatym na półce Przetrwałe.',
+    hook: 'Pierwsze zwierzę udomowione, już genetycznie odrębne od dzisiejszych wilków, z co najmniej pięcioma liniami około 11 tysięcy lat temu.',
+    imageAlt: 'Dwa czarne labradory z obrożami w suchej trawie',
+    photoCredit: 'Zdjęcie: Marco Ponepal, Wikimedia Commons, licencja',
+    gridSource: {
+      label:
+        'Bergström i in., Science, 2020 — pochodzenie prehistorycznych psów, pełny tekst w PubMed Central',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/',
+    },
+    what: 'Pies (Canis familiaris) to pierwsze zwierzę, które ludzie udomowili. Bergström i współpracownicy (czasopismo Science, 2020) pokazują, że psy były już genetycznie odrębne od dzisiejszych wilków i że około 11 tysięcy lat temu istniało co najmniej pięć linii psów.',
+    range: 'Tam, gdzie żyją ludzie. Psy wioskowe, linie użytkowe i rasowe to jeden gatunek domowy.',
     story:
-      'Psy weszły do obozowisk w późnym plejstocenie. We wczesnym holocenie były już zestawem linii, nie niedawnym odgałęzieniem dzisiejszych wilków. Późniejsza hodowla zrobiła współczesne typy. Zakazany artykuł Nature nie jest tu źródłem; źródłem jest Science 2020.',
-    when: 'Najstarszy udomowiony gatunek. Odrębny od dzisiejszych wilków w holocenie; ≥5 linii ok. 11 ka (Bergström et al. 2020).',
-    humanRole: 'Zrobiliśmy pierwsze trzymane zwierzę — towarzysza, myśliwego i stróża — nie drugi wpis wilka.',
-    sources: 'Bergström et al., Science, 2020 (PMC7116352; doi:10.1126/science.aba9572).',
+      'Psy weszły do obozowisk w późnym plejstocenie. We wczesnym holocenie były już zestawem linii, genetycznie odrębnym od dzisiejszych wilków. Późniejsza hodowla zrobiła współczesne typy.',
+    when: 'Najstarszy udomowiony gatunek. Odrębny od dzisiejszych wilków w holocenie; co najmniej pięć linii około 11 tysięcy lat temu (Bergström i in., 2020).',
+    humanRole: 'Zrobiliśmy pierwsze trzymane zwierzę: towarzysza, myśliwego i stróża.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Bergström i in.: pochodzenie prehistorycznych psów (Origins and genetic legacy of prehistoric dogs), czasopismo Science, 2020, pełny tekst w PubMed Central',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/',
+      },
+      {
+        label: 'Bergström i in., czasopismo Science, 2020 (doi:10.1126/science.aba9572)',
+        url: 'https://doi.org/10.1126/science.aba9572',
+      },
+    ],
   },
   camelids: {
     commonName: 'Wielbłądowate',
-    hook: 'Jedna karta na wielbłąda, lamę i alpakę — Międzynarodowy Rok Wielbłądowatych FAO 2024, nie cztery płytki.',
-    imageAlt: 'Dromader z profilu — przedstawiciel wielbłądowatych, które trzymają ludzie',
-    what: 'Wielbłądowate oznaczają tu te, które trzymają ludzie: dromader i baktrian (Camelus), lama (Lama glama) i alpaka (Vicugna pacos). FAO ogłosiła 2024 Międzynarodowym Rokiem Wielbłądowatych. To jedna karta, nie wielbłąd plus lama plus alpaka plus wikunia.',
+    hook: 'Ludzie trzymają dromadery, baktriany, lamy i alpaki do transportu, włókna, mleka i mięsa, a Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa ogłosiła rok 2024 Międzynarodowym Rokiem Wielbłądowatych.',
+    imageAlt: 'Dromader z profilu',
+    photoCredit: 'Zdjęcie: Hans Hillewaert, Wikimedia Commons, licencja',
+    gridSource: {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Międzynarodowy Rok Wielbłądowatych, 2024',
+      url: 'https://www.fao.org/camelids-2024/en',
+    },
+    what: 'Wielbłądowate, które trzymają ludzie, to dromader i baktrian (Camelus), lama (Lama glama) i alpaka (Vicugna pacos). Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa ogłosiła rok 2024 Międzynarodowym Rokiem Wielbłądowatych.',
     range:
-      'Wielbłądy w suchej Azji i Afryce (i teraz w Australii); lamy i alpaki w Andach, ze stadami eksportowymi gdzie indziej. Dzikie wikunie i gwanako to krewniacy, nie dodatkowe płytki na tej półce.',
+      'Wielbłądy żyją w suchej Azji i Afryce, a teraz także w Australii. Lamy i alpaki żyją w Andach, a stada eksportowe żyją także gdzie indziej.',
     story:
-      'Ludzie udomowili wielbłądy Starego Świata i andyjskie wielbłądowate jako juczne, wełniste, mleczne i mięsne zwierzęta suchych i wysokich krajów. Rok FAO 2024 prosił rządy, by traktować te stada jako system żywności i kultury, nie ciekawostkę. Jedna karta encyklopedyczna wystarczy.',
-    when: 'Żywe udomowione gatunki. Międzynarodowy Rok Wielbłądowatych FAO, 2024.',
+      'Ludzie udomowili wielbłądy Starego Świata i andyjskie wielbłądowate jako juczne, wełniste, mleczne i mięsne zwierzęta suchych i wysokich krajów. Międzynarodowy Rok Wielbłądowatych w 2024 roku prosił rządy, by traktować te stada jako system żywności i kultury.',
+    when: 'Żywe udomowione gatunki. Międzynarodowy Rok Wielbłądowatych przypadł na 2024 rok.',
     humanRole: 'Trzymamy wielbłądy, lamy i alpaki jako zwierzęta robocze i wełniste suchych i górskich ziem.',
-    sources: 'Międzynarodowy Rok Wielbłądowatych FAO 2024.',
+    sources: '',
+    sourcesList: [
+      {
+        label:
+          'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Międzynarodowy Rok Wielbłądowatych, 2024 (International Year of Camelids 2024)',
+        url: 'https://www.fao.org/camelids-2024/en',
+      },
+    ],
   },
   ...domesticatesPl,
 };

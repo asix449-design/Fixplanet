@@ -68,29 +68,16 @@ const licenseLabel = species.licenseLabel ?? species.image.license;
             species.photoCredit ? (
               <p>
                 {species.photoCredit}{' '}
-                (
-                <a href={species.image.sourceUrl} rel="noopener noreferrer">
-                  {licenseLabel}
-                </a>
-                )
+                (<a href={species.image.sourceUrl} rel="noopener noreferrer">{licenseLabel}</a>)
               </p>
+            ) : species.image.sourceUrl ? (
+              <>
+                {ui.wildlifePage.imageCredit}: {species.image.credit}{' '}
+                (<a href={species.image.sourceUrl} rel="noopener noreferrer">{species.image.license}</a>)
+              </>
             ) : (
               <>
-                {ui.wildlifePage.imageCredit}: {species.image.credit}
-                {
-                  species.image.sourceUrl ? (
-                    <>
-                      {' '}
-                      (
-                      <a href={species.image.sourceUrl} rel="noopener noreferrer">
-                        {species.image.license}
-                      </a>
-                      )
-                    </>
-                  ) : (
-                    <> ({species.image.license})</>
-                  )
-                }
+                {ui.wildlifePage.imageCredit}: {species.image.credit} ({species.image.license})
               </>
             )
           }
