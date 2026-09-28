@@ -6,6 +6,10 @@ import {
   forestEncyclopediaPath,
 } from '../data/solutions-forests';
 import {
+  isCitiesEncyclopediaSlug,
+  citiesEncyclopediaPath,
+} from '../data/solutions-cities';
+import {
   isWaterEncyclopediaSlug,
   waterEncyclopediaPath,
 } from '../data/solutions-water';
@@ -30,7 +34,10 @@ const encyclopediaHref = isWaterEncyclopediaSlug(solution.slug)
   ? localizePath(waterEncyclopediaPath(solution.slug), locale)
   : isForestEncyclopediaSlug(solution.slug)
     ? localizePath(forestEncyclopediaPath(solution.slug), locale)
-    : undefined;
+    : isCitiesEncyclopediaSlug(solution.slug)
+      ? localizePath(citiesEncyclopediaPath(solution.slug), locale)
+      : undefined;
+const sourceLabel = solution.sourceLabel ?? primary?.label;
 const cardHref = encyclopediaHref ?? primary?.url ?? href;
 const cardRel = encyclopediaHref ? undefined : primary ? 'noopener noreferrer' : undefined;
 const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;
@@ -49,7 +56,9 @@ const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;
     <div class="card-body">
       <span class="tag">{ui.solutionsPage.tags[solution.tag]}</span>
       <h3>{solution.fixTitle}</h3>
-      <p class="problem-title">{solution.problemTitle}</p>
+      {solution.problemTitle !== solution.problem && (
+        <p class="problem-title">{solution.problemTitle}</p>
+      )}
       <dl class="pf">
         <div>
           <dt>{ui.solutionsPage.problem}</dt>
@@ -67,7 +76,7 @@ const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;
     primary && (
       <p class="innovation-card-source">
         <a href={primary.url} rel="noopener noreferrer">
-          {ui.solutionsPage.primarySource}: {primary.label}
+          {ui.solutionsPage.primarySource}: {sourceLabel}
         </a>
       </p>
     )

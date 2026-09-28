@@ -12,6 +12,7 @@ import {
   type TagKey,
 } from '../data/solutions';
 import { isForestEncyclopediaSlug, forestEncyclopediaPath } from '../data/solutions-forests';
+import { isCitiesEncyclopediaSlug, citiesEncyclopediaPath } from '../data/solutions-cities';
 import { isWaterEncyclopediaSlug, waterEncyclopediaPath } from '../data/solutions-water';
 import { getSolutions, getUi, localizePath, resolveLocale } from '../i18n';
 
@@ -109,7 +110,9 @@ const pageTitle = hub
                     ? localizePath(waterEncyclopediaPath(solution.slug), locale)
                     : isForestEncyclopediaSlug(solution.slug)
                       ? localizePath(forestEncyclopediaPath(solution.slug), locale)
-                      : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
+                      : isCitiesEncyclopediaSlug(solution.slug)
+                        ? localizePath(citiesEncyclopediaPath(solution.slug), locale)
+                        : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
                 }
               />
             ))}

@@ -53,6 +53,8 @@ export type SolutionCopy = {
   problem: string;
   fix: string;
   imageAlt: string;
+  /** Shelf source line when the shared English label should not be shown. */
+  sourceLabel?: string;
 };
 
 export type Solution = SolutionMeta & SolutionCopy;
@@ -72,6 +74,8 @@ export type Solution = SolutionMeta & SolutionCopy;
  * `/solutions/{tag}` and `/solutions/all`. Water encyclopedia articles
  * live at `/solutions/water/{slug}` — the shelf stays `/solutions/water`.
  * Forests encyclopedia articles live at `/solutions/forests/{slug}`.
+ * Cities mobility articles live at `/solutions/cities/{slug}`. Other Cities
+ * cards stay hub-only and keep their off-site source link.
  * Oceans stays hub-only: cards link to the primary source. Do not add
  * `/solutions/oceans/{slug}` until every oceans slug has a detail page.
  */
@@ -582,6 +586,56 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'European Commission — energy renovation of buildings',
         'https://energy.ec.europa.eu/topics/energy-efficiency/energy-performance-buildings/energy-performance-buildings-directive/energy-renovation-buildings_en',
+      ),
+    ],
+  },
+  {
+    slug: 'bus-rapid-transit',
+    tag: 'cities',
+    sources: [
+      cite(
+        'ITDP, The BRT Standard',
+        'https://itdp.org/publication/the-brt-standard/',
+      ),
+    ],
+  },
+  {
+    slug: 'walking-and-cycling-networks',
+    tag: 'cities',
+    sources: [
+      cite(
+        'OECD / ITF, Improving the Quality of Walking and Cycling in Cities',
+        'https://www.oecd.org/en/publications/improving-the-quality-of-walking-and-cycling-in-cities_cdeb3fe8-en.html',
+      ),
+    ],
+  },
+  {
+    slug: 'congestion-charging',
+    tag: 'cities',
+    sources: [
+      cite(
+        'World Bank, Urban and Interurban Road Pricing',
+        'https://documents1.worldbank.org/curated/en/099031724120560318/pdf/P1766281e0163d01218640121bea8238a86.pdf',
+      ),
+    ],
+  },
+  {
+    slug: 'low-emission-zones',
+    tag: 'cities',
+    sources: [
+      cite(
+        'ICCT, Low-emission zones',
+        'https://theicct.org/lez-a-catalyst-for-improving-transit-infrastructure-in-cities-jul24/',
+      ),
+    ],
+  },
+  {
+    slug: 'electric-buses',
+    tag: 'cities',
+    sources: [
+      cite(
+        'IEA, Global EV Outlook 2026',
+        'https://www.iea.org/reports/global-ev-outlook-2026/trends-in-other-ev-modes',
       ),
     ],
   },
