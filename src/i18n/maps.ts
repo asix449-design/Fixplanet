@@ -7,6 +7,7 @@ import {
   type MapEntry,
 } from '../data/maps';
 import type { Locale } from './config';
+import { crimeCopy } from './maps-crime-pack';
 import { lv as lvEntries } from './maps-lv';
 import { pl as plEntries } from './maps-pl';
 import { ru as ruEntries } from './maps-ru';
@@ -60,7 +61,7 @@ const pageEn: MapsPage = {
       'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity — each card names the publisher and what the measure is (and is not).',
     ethnic: 'Language families as public cartography, not a census.',
     crime:
-      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
+      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not). Also here: how many people each country holds in prison, the main routes of cocaine, heroin and methamphetamine trafficking, estimates of modern slavery, money-laundering risk scores and rule-of-law rankings.',
     pollution: 'Air, waste, and emissions with a named source.',
     subsurface: 'Oil, gas, and minerals — fossil fuel and fossil gold.',
     political:
@@ -130,7 +131,7 @@ const pageRu: MapsPage = {
       'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов — у каждой карточки издатель и что именно измеряется (и чего нет).',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime:
-      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
+      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет). Здесь также: сколько людей содержится в тюрьмах каждой страны, основные маршруты контрабанды кокаина, героина и метамфетамина, оценки масштабов современного рабства, баллы риска отмывания денег и рейтинги верховенства права.',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
     subsurface: 'Нефть, газ и ископаемые — топливо и золото недр.',
     political:
@@ -200,7 +201,7 @@ const pagePl: MapsPage = {
       'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów — na każdej karcie wydawca oraz to, co miara obejmuje (i czego nie).',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime:
-      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
+      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest). Znajdziesz tu także: ile osób przebywa w więzieniach w poszczególnych krajach, główne szlaki przemytu kokainy, heroiny i metamfetaminy, szacunki skali współczesnego niewolnictwa, oceny ryzyka prania pieniędzy oraz rankingi praworządności.',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
     subsurface: 'Ropa, gaz i minerały — paliwo kopalne i kopalne złoto.',
     political:
@@ -270,7 +271,7 @@ const pageLv: MapsPage = {
       'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko ne).',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime:
-      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
+      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē). Šeit arī: cik cilvēku katrā valstī atrodas cietumā, galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi, mūsdienu verdzības apmēra aplēses, naudas atmazgāšanas riska vērtējumi un tiesiskuma reitingi.',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
     subsurface: 'Nafta, gāze un izrakteņi — fosilā degviela un fosilais zelts.',
     political:
@@ -1007,10 +1008,10 @@ const en: Record<string, MapCopy> = {
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
-  en,
-  ru: ruEntries,
-  pl: plEntries,
-  lv: lvEntries,
+  en: { ...en, ...crimeCopy.en },
+  ru: { ...ruEntries, ...crimeCopy.ru },
+  pl: { ...plEntries, ...crimeCopy.pl },
+  lv: { ...lvEntries, ...crimeCopy.lv },
 };
 
 export function getMapsPage(locale: Locale): MapsPage {
@@ -1072,6 +1073,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'water') {
     // Seven Water cards would otherwise be sliced to three. List every
     // Water sibling on each Water detail page.
+    return same;
+  }
+  if (current.category === 'crime') {
+    // Nine Crime cards. List every Crime sibling so the original four
+    // reach the five new cards, and each new card reaches the shelf.
     return same;
   }
   if (current.category === 'pollution') {

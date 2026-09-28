@@ -155,6 +155,36 @@ const credits: Record<string, Record<Locale, string>> = {
     pl: 'Mapa: Fix Planet na podstawie PEATMAP (Xu i współautorzy, 2018). Kolor oznacza komórkę 0,02°, której dotyka poligon torfu. CC BY 4.0. Granice: Natural Earth.',
     lv: 'Karte: Fix Planet no PEATMAP (Xu un līdzautori, 2018). Krāsa atzīmē 0,02° šūnu, kurai pieskaras kūdras poligons. CC BY 4.0. Robežas: Natural Earth.',
   },
+  'prison-population-rate': {
+    en: 'Chart: Our World in Data, CC BY 4.0. Data: Institute for Crime & Justice Policy Research, World Prison Brief (2026); population from various sources (2024), with minor processing by Our World in Data. The map was cropped from the Our World in Data chart.',
+    ru: 'График: Our World in Data («Наш мир в данных»), лицензия CC BY 4.0. Данные: Институт исследований преступности и политики в сфере правосудия, «Всемирная сводка о тюрьмах» (2026); численность населения по различным источникам (2024), с небольшой обработкой Our World in Data. Карта обрезана из графика Our World in Data.',
+    pl: 'Wykres: Our World in Data („Nasz świat w danych”), licencja CC BY 4.0. Dane: Instytut Badań nad Przestępczością i Polityką Wymiaru Sprawiedliwości, „Światowy przegląd więziennictwa” (2026); ludność według różnych źródeł (2024), z niewielkim opracowaniem Our World in Data. Mapa została przycięta z wykresu Our World in Data.',
+    lv: 'Grafiks: Our World in Data (“Mūsu pasaule datos”), licence CC BY 4.0. Dati: Noziedzības un tieslietu politikas pētniecības institūts, “Pasaules cietumu pārskats” (2026); iedzīvotāju skaits no dažādiem avotiem (2024), ar nelielu Our World in Data apstrādi. Karte ir izgriezta no Our World in Data grafika.',
+  },
+  'drug-trafficking-flows': {
+    en: 'Chart: Fix Planet, drawn from European Union Drugs Agency (EUDA) data, European Drug Report 2026, table EDR26-Cocaine-6. Reuse permitted with acknowledgement (compatible with CC BY 4.0).',
+    ru: 'График: Fix Planet по данным Агентства Европейского союза по наркотикам (EUDA), «Европейский доклад о наркотиках» 2026 года, таблица EDR26-Cocaine-6. Повторное использование разрешено с указанием источника (совместимо с CC BY 4.0).',
+    pl: 'Wykres: Fix Planet na podstawie danych Agencji Unii Europejskiej ds. Narkotyków (EUDA), „Europejski raport narkotykowy” 2026, tabela EDR26-Cocaine-6. Ponowne wykorzystanie dozwolone z podaniem źródła (zgodne z CC BY 4.0).',
+    lv: 'Grafiks: Fix Planet pēc Eiropas Savienības Narkotiku aģentūras (EUDA) datiem, “Eiropas narkotiku ziņojums” 2026, tabula EDR26-Cocaine-6. Atkārtota izmantošana atļauta, norādot avotu (saderīga ar CC BY 4.0).',
+  },
+  'modern-slavery': {
+    en: 'Chart: Figure 1 of Global Estimates of Modern Slavery: Forced Labour and Forced Marriage (2022), © ILO, Walk Free and IOM, CC BY 4.0. This is an adaptation of an original work by the ILO, Walk Free and IOM. Responsibility for the views and opinions expressed in the adaptation rests solely with the author or authors of the adaptation and are not endorsed by the ILO, Walk Free or IOM.',
+    ru: 'График: рисунок 1 из доклада «Глобальные оценки современного рабства: принудительный труд и принудительные браки» (Global Estimates of Modern Slavery, 2022), © МОТ, Walk Free и МОМ, лицензия CC BY 4.0. This is an adaptation of an original work by the ILO, Walk Free and IOM. Responsibility for the views and opinions expressed in the adaptation rests solely with the author or authors of the adaptation and are not endorsed by the ILO, Walk Free or IOM. This translation was not created by the ILO, Walk Free or IOM and should not be considered an official ILO, Walk Free or IOM translation. The ILO, Walk Free and IOM are not responsible for the content or accuracy of this translation.',
+    pl: 'Wykres: rysunek 1 z raportu „Globalne szacunki współczesnego niewolnictwa: praca przymusowa i małżeństwa przymusowe” (Global Estimates of Modern Slavery, 2022), © MOP, Walk Free i IOM, licencja CC BY 4.0. This is an adaptation of an original work by the ILO, Walk Free and IOM. Responsibility for the views and opinions expressed in the adaptation rests solely with the author or authors of the adaptation and are not endorsed by the ILO, Walk Free or IOM. This translation was not created by the ILO, Walk Free or IOM and should not be considered an official ILO, Walk Free or IOM translation. The ILO, Walk Free and IOM are not responsible for the content or accuracy of this translation.',
+    lv: 'Grafiks: 1. attēls no ziņojuma “Mūsdienu verdzības globālās aplēses: piespiedu darbs un piespiedu laulības” (Global Estimates of Modern Slavery, 2022), © SDO, Walk Free un IOM, licence CC BY 4.0. This is an adaptation of an original work by the ILO, Walk Free and IOM. Responsibility for the views and opinions expressed in the adaptation rests solely with the author or authors of the adaptation and are not endorsed by the ILO, Walk Free or IOM. This translation was not created by the ILO, Walk Free or IOM and should not be considered an official ILO, Walk Free or IOM translation. The ILO, Walk Free and IOM are not responsible for the content or accuracy of this translation.',
+  },
+  'basel-aml-index': {
+    en: 'Map: Fix Planet, drawn from the US Department of State, International Narcotics Control Strategy Report 2025, Volume 2: Money Laundering (public domain).',
+    ru: 'Карта: Fix Planet по данным Государственного департамента США, «Доклад о международной стратегии контроля над наркотиками» 2025 года (International Narcotics Control Strategy Report), том 2: отмывание денег (общественное достояние).',
+    pl: 'Mapa: Fix Planet na podstawie danych Departamentu Stanu USA, „Raport o międzynarodowej strategii kontroli narkotyków” 2025 (International Narcotics Control Strategy Report), tom 2: pranie pieniędzy (domena publiczna).',
+    lv: 'Karte: Fix Planet pēc ASV Valsts departamenta datiem, “Starptautiskās narkotiku kontroles stratēģijas ziņojums” 2025 (International Narcotics Control Strategy Report), 2. sējums: naudas atmazgāšana (publiskais īpašums).',
+  },
+  'rule-of-law-index': {
+    en: 'Map: Fix Planet, drawn from World Bank, Worldwide Governance Indicators, 2026 update (CC BY 4.0).',
+    ru: 'Карта: Fix Planet по данным Всемирного банка, «Всемирные показатели качества государственного управления» (Worldwide Governance Indicators), обновление 2026 года (CC BY 4.0).',
+    pl: 'Mapa: Fix Planet na podstawie danych Banku Światowego, „Światowe wskaźniki jakości rządzenia” (Worldwide Governance Indicators), aktualizacja 2026 (CC BY 4.0).',
+    lv: 'Karte: Fix Planet pēc Pasaules Bankas datiem, “Pasaules pārvaldības rādītāji” (Worldwide Governance Indicators), 2026. gada atjauninājums (CC BY 4.0).',
+  },
   'intact-forest-landscapes': {
     en: 'Map: Fix Planet from Intact Forest Landscapes, 2020 extent (IFL Mapping Team). CC BY 4.0. Boundaries: Natural Earth.',
     ru: 'Карта: Fix Planet по Intact Forest Landscapes, распространение 2020 года (IFL Mapping Team). CC BY 4.0. Границы: Natural Earth.',
