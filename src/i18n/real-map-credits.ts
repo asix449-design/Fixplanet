@@ -155,6 +155,30 @@ const credits: Record<string, Record<Locale, string>> = {
     pl: 'Mapa: Fix Planet na podstawie PEATMAP (Xu i współautorzy, 2018). Kolor oznacza komórkę 0,02°, której dotyka poligon torfu. CC BY 4.0. Granice: Natural Earth.',
     lv: 'Karte: Fix Planet no PEATMAP (Xu un līdzautori, 2018). Krāsa atzīmē 0,02° šūnu, kurai pieskaras kūdras poligons. CC BY 4.0. Robežas: Natural Earth.',
   },
+  'homicide-rates': {
+    en: 'United Nations Office on Drugs and Crime; Our World in Data. 2019–2023.',
+    ru: 'Управление ООН по наркотикам и преступности; Our World in Data. 2019–2023.',
+    pl: 'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości; Our World in Data. 2019–2023.',
+    lv: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs; Our World in Data. 2019.–2023. gads.',
+  },
+  'organized-crime-index': {
+    en: 'Global Initiative against Transnational Organized Crime (GI-TOC). Index 2025 (covers 2024).',
+    ru: 'Глобальная инициатива против транснациональной организованной преступности. Индекс 2025 года, оценка за 2024 год.',
+    pl: 'Globalna inicjatywa przeciwko transnarodowej przestępczości zorganizowanej. Indeks 2025, ocena za 2024.',
+    lv: 'Globālā iniciatīva pret transnacionālo organizēto noziedzību. 2025. gada indekss, novērtējums par 2024. gadu.',
+  },
+  'corruption-perceptions-index': {
+    en: 'Transparency International; Our World in Data. CPI 2025.',
+    ru: 'Transparency International; Our World in Data. Индекс 2025 года.',
+    pl: 'Transparency International; Our World in Data. Indeks 2025.',
+    lv: 'Transparency International; Our World in Data. 2025. gada indekss.',
+  },
+  'trafficking-in-persons': {
+    en: 'United Nations Office on Drugs and Crime — Global Report on Trafficking in Persons. 2024 report.',
+    ru: 'Управление ООН по наркотикам и преступности, Глобальный доклад о торговле людьми. Доклад 2024 года.',
+    pl: 'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości, Globalny raport o handlu ludźmi. Raport 2024.',
+    lv: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, Globālais ziņojums par cilvēku tirdzniecību. 2024. gada ziņojums.',
+  },
   'prison-population-rate': {
     en: 'Chart: Our World in Data, CC BY 4.0. Data: Institute for Crime & Justice Policy Research, World Prison Brief (2026); population from various sources (2024), with minor processing by Our World in Data. The map was cropped from the Our World in Data chart.',
     ru: 'График: Our World in Data («Наш мир в данных»), лицензия Creative Commons с указанием авторства 4.0. Данные: Институт исследований преступности и политики в сфере правосудия, «Всемирная сводка о тюрьмах» (2026); численность населения по различным источникам (2024), с небольшой обработкой Our World in Data. Карта обрезана из графика Our World in Data.',
