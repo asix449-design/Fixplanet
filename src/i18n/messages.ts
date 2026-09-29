@@ -129,7 +129,8 @@ const en = {
         'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
       forests: 'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working.',
       waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
-      cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
+      cities:
+        'Cooler roofs, permeable streets, trees, and shared heat networks. Also here: how people move and the air they breathe, from bus rapid transit, walking and cycling networks and congestion charging to low-emission zones and electric buses.',
       materials: 'Cement, metals, timber, and recycled building materials already cutting embodied carbon.',
       oceans:
         'Catching plastic, restoring shores, fishing with less bycatch — plus protected areas, ship rules, and water-column farms.',
@@ -460,7 +461,8 @@ const ru: typeof en = {
         'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
       forests: 'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство.',
       waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
-      cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
+      cities:
+        'Холодные крыши, проницаемые улицы, деревья и общие теплосети. Здесь же рассказано, как люди передвигаются по городу и каким воздухом дышат: скоростной автобусный транспорт, сети для пешеходов и велосипедистов, плата за въезд в перегруженные зоны, зоны низких выбросов и электробусы.',
       materials: 'Цемент, металлы, древесина и вторичные стройматериалы — уже снижают встроенный углерод.',
       oceans:
         'Перехват пластика, восстановление берегов и лов с меньшим приловом — плюс охраняемые районы, правила для судов и фермы в толще воды.',
@@ -794,7 +796,8 @@ const pl: typeof en = {
         'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
       forests: 'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna.',
       waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
-      cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
+      cities:
+        'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła. Znajdziesz tu też to, jak ludzie poruszają się po mieście i czym oddychają: szybki transport autobusowy, sieci piesze i rowerowe, opłaty kongestyjne, strefy niskiej emisji i autobusy elektryczne.',
       materials: 'Cement, metale, drewno i wtórne materiały budowlane — już tną wbudowany węgiel.',
       oceans:
         'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem — oraz obszary chronione, reguły dla statków i hodowle w toni.',
@@ -1128,7 +1131,8 @@ const lv: typeof en = {
         'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
       forests: 'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse.',
       waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
-      cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
+      cities:
+        'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli. Šeit arī par to, kā cilvēki pārvietojas pa pilsētu un kādu gaisu elpo: ātrais autobusu transports, gājēju un riteņbraucēju tīkli, maksa par iebraukšanu sastrēgumu zonās, zemas emisijas zonas un elektroautobusi.',
       materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli — jau samazina ietverto oglekli.',
       oceans:
         'Plastmasas uztveršana, krastu atjaunošana un zveja ar mazāku piezveju — plus aizsargājamās teritorijas, kuģu noteikumi un audzes ūdens stabā.',

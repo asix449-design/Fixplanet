@@ -477,6 +477,27 @@ a.solution-card:hover {
   object-position: center;
 }
 
+/* Chart and map thumbnails: the whole plate inside a 4:3 frame. Photos stay cover. */
+.card-art.card-art-plate {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  background: #f7f4ee;
+}
+
+.card-art.card-art-plate[data-plate='map'] {
+  background: #d5e3ee;
+}
+
+.card-art.card-art-plate img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+}
+
 .card-body {
   padding: 1.15rem 1.2rem 1.25rem;
   display: flex;
@@ -1420,13 +1441,23 @@ a.wildlife-card:hover {
 }
 
 /* Photos that must show the whole frame, at the file's own aspect. */
-.wildlife-detail-art.wildlife-detail-natural img {
+.wildlife-detail-art.wildlife-detail-natural img,
+/* Cities detail plates: show the whole figure at the image's own ratio. */
+.wildlife-detail-art.cities-detail-plate img {
   height: auto;
   max-width: 100%;
   aspect-ratio: auto;
   object-fit: contain;
   object-position: center;
   display: block;
+}
+
+.wildlife-detail-art.cities-detail-plate[data-plate='chart'] img {
+  background: #f7f4ee;
+}
+
+.wildlife-detail-art.cities-detail-plate[data-plate='map'] img {
+  background: #d5e3ee;
 }
 
 .wildlife-detail-art figcaption {
@@ -1650,6 +1681,11 @@ a.map-card:hover {
   object-position: center;
 }
 
+.map-card-art-contain img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .map-schematic-badge {
   position: absolute;
   left: 0.7rem;
@@ -1713,6 +1749,55 @@ a.map-card:hover {
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.45;
+}
+
+.map-detail-art figcaption p {
+  margin: 0 0 0.35rem;
+}
+
+.map-figure-title {
+  margin: 0 0 0.65rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.map-figure-legend {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.map-figure-legend-title {
+  margin: 0 0 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.map-figure-legend ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+}
+
+.map-figure-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.map-swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  flex: none;
+  border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .map-detail-copy {
@@ -4610,6 +4695,27 @@ a.map-card:hover {
   background: rgba(0, 0, 0, 0.38);
   border: 1px solid rgba(192, 255, 0, 0.2);
   border-radius: var(--radius);
+}
+
+.today-mig-remit-art {
+  display: block;
+  margin: -0.85rem -0.95rem 0.65rem;
+}
+
+.today-mig-remit-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.today-mig-remit-credit {
+  margin-top: 0;
+}
+
+.today-mig-idp-card h4 a,
+.today-mig-layer-panel h3 a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .today-mig-idp-tag {
