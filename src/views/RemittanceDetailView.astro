@@ -1,0 +1,93 @@
+---
+import CitedSourceList from '../components/CitedSourceList.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { remittanceIds, remittanceSrc, type RemittanceId } from '../data/remittances';
+import { getMigrationPage, getRemittance, getRemittances, localizePath, resolveLocale } from '../i18n';
+import { realMapCredit } from '../i18n/real-map-credits';
+
+interface Props {
+  slug: RemittanceId;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const shelf = getRemittances(locale);
+const card = getRemittance(locale, Astro.props.slug);
+const credit = realMapCredit(locale, card.id);
+const art = remittanceSrc(card.detail);
+const others = remittanceIds.filter((id) => id !== card.id);
+---
+
+<BaseLayout
+  title={`${card.title} — ${page.title} — Fix Planet`}
+  description={card.hook}
+  image={remittanceSrc(card.preview)}
+  theme="migration-detail"
+>
+  <ShelfHeader
+    backHref={localizePath('/migration#remittances', locale)}
+    backLabel={page.back}
+    title={card.title}
+    lede={card.hook}
+  >
+    <p class="shelf-page-source">{card.tag}</p>
+  </ShelfHeader>
+
+  <section class="section section-hub-follow">
+    <div class="wrap">
+      <div class="wildlife-map-panel">
+        <figure class="map-detail-art">
+          <img src={art} alt={card.plate} width="7200" height="3600" />
+          {credit && <figcaption>{credit}</figcaption>}
+        </figure>
+        <div class="prose map-detail-copy">
+          <p class="today-mig-idp-figure">
+            <strong>{card.figure}</strong>
+            <span>{card.unit}</span>
+          </p>
+          <dl class="today-mig-idp-splits">
+            {
+              card.rows.map((row) => (
+                <div>
+                  <dt>{row.label}</dt>
+                  <dd>{row.figure}</dd>
+                </div>
+              ))
+            }
+          </dl>
+          {
+            card.sections.map((section) => (
+              <>
+                {section.heading && <h2>{section.heading}</h2>}
+                <p>{section.body}</p>
+              </>
+            ))
+          }
+          <p>{card.plate}</p>
+          <CitedSourceList heading={page.sourcesLabel} sources={card.sources} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="remittance-related">
+    <div class="wrap">
+      <h2 id="remittance-related">{shelf.title}</h2>
+      <ul class="today-mig-layer-list">
+        {
+          others.map((id) => {
+            const item = getRemittance(locale, id);
+            return (
+              <li>
+                <a href={localizePath(`/migration/${id}`, locale)}>
+                  <strong>{item.title}</strong>
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

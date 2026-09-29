@@ -4594,6 +4594,27 @@ a.map-card:hover {
   border-radius: var(--radius);
 }
 
+.today-mig-remit-art {
+  display: block;
+  margin: -0.85rem -0.95rem 0.65rem;
+}
+
+.today-mig-remit-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.today-mig-remit-credit {
+  margin-top: 0;
+}
+
+.today-mig-idp-card h4 a,
+.today-mig-layer-panel h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .today-mig-idp-tag {
   margin: 0 0 0.35rem;
   color: var(--lime);

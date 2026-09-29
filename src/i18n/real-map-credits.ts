@@ -161,6 +161,36 @@ const credits: Record<string, Record<Locale, string>> = {
     pl: 'Mapa: Fix Planet na podstawie Intact Forest Landscapes, zasięg 2020 (IFL Mapping Team). CC BY 4.0. Granice: Natural Earth.',
     lv: 'Karte: Fix Planet no Intact Forest Landscapes, 2020. gada izplatība (IFL Mapping Team). CC BY 4.0. Robežas: Natural Earth.',
   },
+  'remittances-global-flows': {
+    en: 'Chart: Fix Planet from World Bank Migration and Development Brief 40, Table 1.1, low- and middle-income countries, 2017–2023. The number is billions of US dollars. CC BY 3.0 IGO. This is an adaptation of an original work by The World Bank. Views and opinions expressed in the adaptation are the sole responsibility of the author or authors of the adaptation and are not endorsed by The World Bank.',
+    ru: 'График: Fix Planet по докладу Всемирного банка «Миграция и развитие», выпуск 40, таблица 1.1, страны с низким и средним уровнем дохода, 2017–2023. Число — млрд долл. CC BY 3.0 IGO. Это адаптация оригинальной работы Всемирного банка. Взгляды и мнения, выраженные в адаптации, являются исключительной ответственностью автора адаптации и не одобрены Всемирным банком. Этот перевод создан не Всемирным банком и не должен считаться официальным переводом Всемирного банка. Всемирный банк не несёт ответственности за содержание или ошибки этого перевода.',
+    pl: 'Wykres: Fix Planet na podstawie raportu Banku Światowego „Migracja i rozwój”, nr 40, tabela 1.1, kraje o niskim i średnim dochodzie, 2017–2023. Liczba to miliardy USD. CC BY 3.0 IGO. To jest adaptacja oryginalnej pracy Banku Światowego. Poglądy i opinie wyrażone w adaptacji są wyłączną odpowiedzialnością autora lub autorów adaptacji i nie są popierane przez Bank Światowy. To tłumaczenie nie zostało przygotowane przez Bank Światowy i nie powinno być uznawane za oficjalne tłumaczenie Banku Światowego. Bank Światowy nie ponosi odpowiedzialności za treść ani błędy tego tłumaczenia.',
+    lv: 'Grafiks: Fix Planet no Pasaules Bankas ziņojuma „Migrācija un attīstība”, 40. izdevuma, 1.1. tabula, zemu un vidēju ienākumu valstis, 2017–2023. Skaitlis ir miljardi USD. CC BY 3.0 IGO. Šī ir Pasaules Bankas oriģināldarba adaptācija. Adaptācijā paustie viedokļi un vērtējumi ir tikai adaptācijas autora vai autoru atbildība, un Pasaules Banka tos neatbalsta. Šo tulkojumu nav sagatavojusi Pasaules Banka, un to nevajag uzskatīt par Pasaules Bankas oficiālu tulkojumu. Pasaules Banka neatbild par šī tulkojuma saturu vai kļūdām.',
+  },
+  'remittances-top-recipients': {
+    en: 'Map: Fix Planet from World Bank World Development Indicators, personal remittances received, current US dollars, 2024. The colour bar is US dollars per year on a logarithmic scale. Land without a 2024 figure stays grey. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по базе Всемирного банка «Показатели мирового развития», личные переводы, полученные, в текущих долларах США, 2024. Числа на шкале — доллары США в год, логарифмическая шкала. Суша без цифры за 2024 год остаётся серой. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie bazy Banku Światowego „Wskaźniki rozwoju świata”, przekazy osobiste otrzymane, w bieżących USD, 2024. Liczby na skali to dolary amerykańskie rocznie, skala logarytmiczna. Ląd bez liczby za 2024 r. zostaje szary. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji”, saņemtie personīgie pārvedumi, faktiskajās cenās, USD, 2024. Skaitļi skalā ir ASV dolāri gadā, logaritmiskā skala. Zeme bez 2024. gada skaitļa paliek pelēka. CC BY 4.0. Robežas: Natural Earth.',
+  },
+  'remittances-gdp-share': {
+    en: 'Map: Fix Planet from World Bank World Development Indicators, personal remittances received as a percentage of GDP, 2024. The colour bar is percent of GDP on a logarithmic scale. Land without a 2024 figure stays grey. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по базе Всемирного банка «Показатели мирового развития», личные полученные переводы как доля ВВП, 2024. Числа на шкале — проценты ВВП, логарифмическая шкала. Суша без цифры за 2024 год остаётся серой. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie bazy Banku Światowego „Wskaźniki rozwoju świata”, przekazy osobiste otrzymane jako udział w PKB, 2024. Liczby na skali to procent PKB, skala logarytmiczna. Ląd bez liczby za 2024 r. zostaje szary. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji”, saņemtie personīgie pārvedumi kā IKP daļa, 2024. Skaitļi skalā ir procenti no IKP, logaritmiskā skala. Zeme bez 2024. gada skaitļa paliek pelēka. CC BY 4.0. Robežas: Natural Earth.',
+  },
+  'remittances-sending-cost': {
+    en: 'Map: Fix Planet from World Bank World Development Indicators, average cost of sending remittances to a country, as a percentage of the amount, 2023. The colour bar is percent on a logarithmic scale. Land without a positive 2023 figure stays grey. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по базе Всемирного банка «Показатели мирового развития», средняя стоимость отправки перевода в страну, в процентах от суммы, 2023. Числа на шкале — проценты, логарифмическая шкала. Суша без положительной цифры за 2023 год остаётся серой. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie bazy Banku Światowego „Wskaźniki rozwoju świata”, średni koszt wysłania przekazu do kraju, jako procent kwoty, 2023. Liczby na skali to procent, skala logarytmiczna. Ląd bez dodatniej liczby za 2023 r. zostaje szary. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji”, vidējās izmaksas, sūtot pārvedumu uz valsti, procentos no summas, 2023. Skaitļi skalā ir procenti, logaritmiskā skala. Zeme bez pozitīva 2023. gada skaitļa paliek pelēka. CC BY 4.0. Robežas: Natural Earth.',
+  },
+  'remittances-wdi-series': {
+    en: 'Chart: Fix Planet from World Bank World Development Indicators, world totals of personal remittances. The number is billions of current US dollars. The orange line is received, 1970–2024. The blue line is paid, 1966–2024. CC BY 4.0.',
+    ru: 'График: Fix Planet по базе Всемирного банка «Показатели мирового развития», мировые итоги личных переводов. Число — млрд долл. Оранжевая линия — полученные, 1970–2024. Синяя линия — отправленные, 1966–2024. CC BY 4.0.',
+    pl: 'Wykres: Fix Planet na podstawie bazy Banku Światowego „Wskaźniki rozwoju świata”, sumy światowe przekazów osobistych. Liczba to miliardy bieżących USD. Pomarańczowa linia to otrzymane, 1970–2024. Niebieska linia to wysłane, 1966–2024. CC BY 4.0.',
+    lv: 'Grafiks: Fix Planet no Pasaules Bankas datubāzes „Pasaules attīstības rādītāji”, personīgo pārvedumu pasaules kopsummas. Skaitlis ir miljardi faktisko USD. Oranžā līnija ir saņemtie, 1970–2024. Zilā līnija ir nosūtītie, 1966–2024. CC BY 4.0.',
+  },
 };
 
 export function realMapCredit(locale: Locale, slug: string): string | undefined {
