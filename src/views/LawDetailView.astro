@@ -7,7 +7,7 @@ import {
   lawSectionSrc,
   type LawEntry,
 } from '../data/law';
-import { getLawPage, localizePath, resolveLocale } from '../i18n';
+import { getLawPage, getRelatedLaws, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
   item: LawEntry;
@@ -20,6 +20,10 @@ const title = `${item.title} — Fix Planet`;
 const image = lawImageSrc(item.image);
 const categoryHref = localizePath(lawCategoryPath(item.category), locale);
 const birdsHref = localizePath(lawDetailPath('birds-directive'), locale);
+const related = getRelatedLaws(locale, item.slug);
+const naturalFigure = Boolean(item.image.width && item.image.height);
+const ideaBanner = item.category === 'ai' ? page.aiIdeaBanner : page.ideaBanner;
+const pendingBanner = item.category === 'ai' ? page.aiPendingBanner : page.pendingBanner;
 
 /** Longest first so inflected forms win over a shorter stem. */
 const birdsPhrases = [
@@ -89,21 +93,50 @@ function linkedPlain(value: string): string {
   <section class="section">
     <div class="wrap wildlife-detail">
       <figure class="wildlife-detail-art">
-        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+        <img
+          class:list={{ 'law-figure-natural': naturalFigure }}
+          src={image}
+          alt={item.imageAlt}
+          width={item.image.width ?? 1280}
+          height={item.image.height ?? 960}
+        />
         <figcaption>
-          {page.imageCredit}: {item.image.credit}
           {
-            item.image.sourceUrl ? (
+            item.figureCredit ? (
               <>
-                {' '}
-                (
-                <a href={item.image.sourceUrl} rel="noopener noreferrer">
-                  {item.image.license}
-                </a>
-                )
+                {item.caption ? <span class="law-figure-caption">{item.caption}</span> : null}
+                <span class="law-figure-credit">
+                  {item.figureCredit}
+                  {item.figureLicense ? (
+                    item.figureLicenseUrl ? (
+                      <>
+                        {' '}
+                        <a href={item.figureLicenseUrl} rel="noopener noreferrer">
+                          {item.figureLicense}
+                        </a>
+                      </>
+                    ) : (
+                      <> {item.figureLicense}</>
+                    )
+                  ) : null}
+                </span>
               </>
             ) : (
-              <> ({item.image.license})</>
+              <>
+                {page.imageCredit}: {item.image.credit}
+                {item.image.sourceUrl ? (
+                  <>
+                    {' '}
+                    (
+                    <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                      {item.image.license}
+                    </a>
+                    )
+                  </>
+                ) : (
+                  <> ({item.image.license})</>
+                )}
+              </>
             )
           }
         </figcaption>
@@ -111,9 +144,9 @@ function linkedPlain(value: string): string {
       <div class="prose wildlife-prose law-prose">
         {
           item.status === 'ideas' ? (
-            <p class="law-banner law-banner-idea">{page.ideaBanner}</p>
+            <p class="law-banner law-banner-idea">{ideaBanner}</p>
           ) : item.status === 'pending' ? (
-            <p class="law-banner law-banner-pending">{page.pendingBanner}</p>
+            <p class="law-banner law-banner-pending">{pendingBanner}</p>
           ) : null
         }
         <div class="meta-row">
@@ -143,7 +176,7 @@ function linkedPlain(value: string): string {
         <p class="wildlife-sources">{item.sourcesNote}</p>
         <ul class="law-source-list">
           {
-            item.sources.map((source) => (
+            (item.sources ?? []).map((source) => (
               <li>
                 <a href={source.url} rel="noopener noreferrer">
                   {source.label}
@@ -152,6 +185,20 @@ function linkedPlain(value: string): string {
             ))
           }
         </ul>
+        {
+          related.length > 0 ? (
+            <>
+              <h2>{page.related}</h2>
+              <ul class="law-related">
+                {related.map((entry) => (
+                  <li>
+                    <a href={localizePath(lawDetailPath(entry.slug), locale)}>{entry.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : null
+        }
       </div>
     </div>
   </section>

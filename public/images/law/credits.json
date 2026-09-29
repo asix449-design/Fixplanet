@@ -159,6 +159,46 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_the_Lady_of_Justice,_Old_Bailey_-_geograph.org.uk_-_5417053.jpg"
   },
   {
+    "slug": "coe-ai-framework-convention",
+    "file": "coe-ai-framework-convention-preview.jpg",
+    "commonsTitle": "Council of Europe Palais de l'Europe aerial view.JPG",
+    "artist": "Council of Europe",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Council_of_Europe_Palais_de_l%27Europe_aerial_view.JPG"
+  },
+  {
+    "slug": "unesco-ai-ethics",
+    "file": "unesco-ai-ethics-preview.jpg",
+    "commonsTitle": "Architecture, Paris - UNESCO - PHOTO0000002781 0001.tiff",
+    "artist": "Dominique Roger, UNESCO",
+    "license": "CC BY-SA 3.0 IGO",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Architecture,_Paris_-_UNESCO_-_PHOTO0000002781_0001.tiff"
+  },
+  {
+    "slug": "oecd-ai-principles",
+    "file": "oecd-ai-principles-preview.jpg",
+    "commonsTitle": "Château de la Muette, Paris 19 March 2019 002.jpg",
+    "artist": "mySociety",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_la_Muette,_Paris_19_March_2019_002.jpg"
+  },
+  {
+    "slug": "nist-ai-rmf",
+    "file": "nist-ai-rmf-preview.jpg",
+    "commonsTitle": "NIST Gaithersburg Newton Apple Tree Dsc 9822-hdr-edit processed 16x9 web.jpg",
+    "artist": "Stoughton, U.S. National Institute of Standards and Technology",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NIST_Gaithersburg_Newton_Apple_Tree_Dsc_9822-hdr-edit_processed_16x9_web.jpg"
+  },
+  {
+    "slug": "uk-ai-regulation",
+    "file": "uk-ai-regulation-preview.jpg",
+    "commonsTitle": "Whitehall from London Eye 2014.jpg",
+    "artist": "Janine and Jim Eden",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitehall_from_London_Eye_2014.jpg"
+  },
+  {
     "slug": "cites",
     "file": "cites.jpg",
     "commonsTitle": "African Elephant (Loxodonta africana) big tusker coming to drink.jpg",

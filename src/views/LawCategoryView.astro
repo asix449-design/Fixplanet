@@ -60,7 +60,7 @@ const items = getLawsByCategory(locale, category);
                 >
                   {page.status[status]}
                 </a>
-                <p>{page.statusLeads[status]}</p>
+                <p>{category === 'ai' ? page.aiStatusLeads[status] : page.statusLeads[status]}</p>
               </div>
             </div>
             {shelf.length === 0 ? (

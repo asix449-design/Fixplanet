@@ -72,6 +72,7 @@ export {
   getLawBySlug,
   getLawPage,
   getLaws,
+  getRelatedLaws,
   getLawsByCategory,
   getLawsByShelf,
   lawCategoryKeys,

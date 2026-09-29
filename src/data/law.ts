@@ -19,6 +19,8 @@ export type ImageCredit = {
   credit: string;
   license: string;
   sourceUrl: string;
+  width?: number;
+  height?: number;
 };
 
 export type LawSource = {
@@ -39,6 +41,13 @@ export type LawCopy = {
   title: string;
   hook: string;
   imageAlt: string;
+  /** Visible caption. When set, the detail figure uses natural aspect. */
+  caption?: string;
+  /** Localized credit sentence before the licence phrase. */
+  figureCredit?: string;
+  /** Licence phrase, linked when figureLicenseUrl is set. */
+  figureLicense?: string;
+  figureLicenseUrl?: string;
   jurisdiction: string;
   officialName: string;
   citation: string;
@@ -48,6 +57,8 @@ export type LawCopy = {
   effects: string;
   caveats: string;
   sourcesNote: string;
+  /** Localized source titles. Falls back to the shared English labels. */
+  sources?: LawSource[];
 };
 
 export type LawEntry = LawMeta & LawCopy;
@@ -57,8 +68,10 @@ function img(
   credit: string,
   license: string,
   sourceUrl: string,
+  width?: number,
+  height?: number,
 ): ImageCredit {
-  return { file, credit, license, sourceUrl };
+  return { file, credit, license, sourceUrl, width, height };
 }
 
 /**
@@ -540,15 +553,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'EUR-Lex — Regulation (EU) 2024/1689 (AI Act)',
+        label: 'EUR-Lex: Regulation (EU) 2024/1689 (Artificial Intelligence Act)',
         url: 'https://eur-lex.europa.eu/eli/reg/2024/1689/oj',
       },
       {
-        label: 'European Commission — AI Act overview',
+        label: 'European Commission: Artificial Intelligence Act overview',
         url: 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai',
       },
       {
-        label: 'Commission — AI Act enforcement timeline (updated 2026)',
+        label: 'European Commission: Artificial Intelligence Act enforcement timeline (updated 2026)',
         url: 'https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act',
       },
     ],
@@ -566,15 +579,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Korea Law Translation Center — Framework Act on AI (Act No. 20676)',
+        label: 'Korea Law Translation Center: Framework Act on Artificial Intelligence (Act No. 20676)',
         url: 'https://elaw.klri.re.kr/eng_service/lawView.do?hseq=73499&lang=ENG',
       },
       {
-        label: 'Korean statutes portal — English text',
+        label: 'Korean statutes portal: English text of the Framework Act',
         url: 'https://www.law.go.kr/LSW/lsInfoP.do?chrClsCd=010203&lsiSeq=268543&urlMode=engLsInfoR&viewCls=engLsInfoR',
       },
       {
-        label: 'MSIT — AI Basic Act comes into force (22 January 2026)',
+        label: 'Ministry of Science and Information and Communication Technology: entry into force (22 January 2026)',
         url: 'https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&pageIndex=&bbsSeqNo=42&nttSeqNo=1214&searchOpt=ALL&searchTxt=',
       },
     ],
@@ -592,11 +605,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Cyberspace Administration of China — Interim Measures (13 July 2023)',
+        label: 'Cyberspace Administration of China: Interim Measures (13 July 2023)',
         url: 'https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm',
       },
       {
-        label: 'Future of Privacy Forum — comparison of draft and final Measures',
+        label: 'Future of Privacy Forum: comparison of the draft and the final Measures',
         url: 'https://fpf.org/blog/chinas-interim-measures-for-the-management-of-generative-ai-services-a-comparison-between-the-final-and-draft-versions-of-the-text/',
       },
     ],
@@ -614,15 +627,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'California Legislature — SB 53 bill status (chaptered 29 September 2025)',
+        label: 'California Legislature: Senate Bill 53 status (chaptered 29 September 2025)',
         url: 'https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB53',
       },
       {
-        label: 'California Legislature — SB 53 text',
+        label: 'California Legislature: Senate Bill 53 text',
         url: 'https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53',
       },
       {
-        label: 'Office of the Governor — signing statement, 29 September 2025',
+        label: 'Office of the Governor: signing statement, 29 September 2025',
         url: 'https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/',
       },
     ],
@@ -640,11 +653,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Parliament of Canada — LEGISinfo C-36 (45-1)',
+        label: 'Parliament of Canada: bill information for C-36 (45th Parliament, 1st session)',
         url: 'https://www.parl.ca/LegisInfo/en/bill/45-1/C-36',
       },
       {
-        label: 'House of Commons — first-reading text',
+        label: 'House of Commons: first-reading text of Bill C-36',
         url: 'https://www.parl.ca/DocumentViewer/en/45-1/bill/C-36/first-reading',
       },
     ],
@@ -662,16 +675,180 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'European Parliament Legislative Observatory — 2022/0303(COD) (withdrawn)',
+        label: 'European Parliament Legislative Observatory: procedure 2022/0303 (withdrawn)',
         url: 'https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?lang=en&reference=2022/0303(COD)',
       },
       {
-        label: 'Commission proposal COM(2022) 496 (historical)',
+        label: 'European Commission proposal of 2022, document 496 (historical)',
         url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496',
       },
       {
-        label: 'EUR-Lex — Product Liability Directive (EU) 2024/2853 (a different, enacted instrument)',
+        label: 'EUR-Lex: Product Liability Directive (EU) 2024/2853 (enacted product-liability instrument)',
         url: 'https://eur-lex.europa.eu/eli/dir/2024/2853/oj',
+      },
+    ],
+  },
+  {
+    slug: 'coe-ai-framework-convention',
+    category: 'ai',
+    status: 'pending',
+    year: '2024',
+    image: img(
+      'coe-ai-framework-convention-preview.jpg',
+      'Council of Europe',
+      'CC BY 3.0',
+      'https://commons.wikimedia.org/wiki/File:Council_of_Europe_Palais_de_l%27Europe_aerial_view.JPG',
+      1520,
+      855,
+    ),
+    sources: [
+      {
+        label: 'Council of Europe: The Framework Convention on Artificial Intelligence',
+        url: 'https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence',
+      },
+      {
+        label:
+          'Council of Europe: Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law (Treaty Series No. 225)',
+        url: 'https://rm.coe.int/1680afae3c',
+      },
+      {
+        label: 'Council of Europe Treaty Office: Chart of signatures and ratifications of Treaty 225',
+        url: 'https://www.coe.int/en/web/conventions/full-list?module=signatures-by-treaty&treatynum=225',
+      },
+      {
+        label:
+          'Council of Europe: European Union ratifies the Framework Convention on Artificial Intelligence',
+        url: 'https://www.coe.int/en/web/artificial-intelligence/-/european-union-ratifies-the-council-of-europe-framework-convention-on-artificial-intelligence',
+      },
+      {
+        label: 'Wikimedia Commons: Council of Europe Palais de l\'Europe aerial view (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Council_of_Europe_Palais_de_l%27Europe_aerial_view.JPG',
+      },
+    ],
+  },
+  {
+    slug: 'unesco-ai-ethics',
+    category: 'ai',
+    status: 'existing',
+    year: '2021',
+    image: img(
+      'unesco-ai-ethics-preview.jpg',
+      'Dominique Roger, UNESCO',
+      'CC BY-SA 3.0 IGO',
+      'https://commons.wikimedia.org/wiki/File:Architecture,_Paris_-_UNESCO_-_PHOTO0000002781_0001.tiff',
+      1864,
+      1423,
+    ),
+    sources: [
+      {
+        label:
+          'UNESCO: Ethics of Artificial Intelligence (Recommendation on the Ethics of Artificial Intelligence)',
+        url: 'https://www.unesco.org/en/artificial-intelligence/recommendation-ethics',
+      },
+      {
+        label: 'UNESCO Digital Library: Recommendation on the Ethics of Artificial Intelligence',
+        url: 'https://unesdoc.unesco.org/ark:/48223/pf0000381137',
+      },
+      {
+        label: 'Wikimedia Commons: Architecture, Paris - UNESCO - PHOTO0000002781 0001 (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Architecture,_Paris_-_UNESCO_-_PHOTO0000002781_0001.tiff',
+      },
+    ],
+  },
+  {
+    slug: 'oecd-ai-principles',
+    category: 'ai',
+    status: 'existing',
+    year: '2019',
+    image: img(
+      'oecd-ai-principles-preview.jpg',
+      'mySociety',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_la_Muette,_Paris_19_March_2019_002.jpg',
+      1920,
+      1280,
+    ),
+    sources: [
+      {
+        label:
+          'OECD Legal Instruments: Recommendation of the Council on Artificial Intelligence (OECD/LEGAL/0449)',
+        url: 'https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449',
+      },
+      {
+        label: 'OECD.AI Policy Observatory: AI Principles Overview',
+        url: 'https://oecd.ai/en/ai-principles',
+      },
+      {
+        label: 'Wikimedia Commons: Château de la Muette, Paris 19 March 2019 002 (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_la_Muette,_Paris_19_March_2019_002.jpg',
+      },
+    ],
+  },
+  {
+    slug: 'nist-ai-rmf',
+    category: 'ai',
+    status: 'existing',
+    year: '2023',
+    image: img(
+      'nist-ai-rmf-preview.jpg',
+      'Stoughton, U.S. National Institute of Standards and Technology',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:NIST_Gaithersburg_Newton_Apple_Tree_Dsc_9822-hdr-edit_processed_16x9_web.jpg',
+      1920,
+      1080,
+    ),
+    sources: [
+      {
+        label: 'U.S. National Institute of Standards and Technology: AI Risk Management Framework',
+        url: 'https://www.nist.gov/itl/ai-risk-management-framework',
+      },
+      {
+        label:
+          'U.S. National Institute of Standards and Technology: Artificial Intelligence Risk Management Framework, version 1.0 (NIST AI 100-1)',
+        url: 'https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf',
+      },
+      {
+        label:
+          'U.S. National Institute of Standards and Technology: Generative Artificial Intelligence Profile (NIST AI 600-1)',
+        url: 'https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf',
+      },
+      {
+        label: 'Wikimedia Commons: NIST Gaithersburg Newton Apple Tree (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:NIST_Gaithersburg_Newton_Apple_Tree_Dsc_9822-hdr-edit_processed_16x9_web.jpg',
+      },
+    ],
+  },
+  {
+    slug: 'uk-ai-regulation',
+    category: 'ai',
+    status: 'existing',
+    year: '2023',
+    image: img(
+      'uk-ai-regulation-preview.jpg',
+      'Janine and Jim Eden',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Whitehall_from_London_Eye_2014.jpg',
+      1920,
+      1440,
+    ),
+    sources: [
+      {
+        label:
+          'GOV.UK, Department for Science, Innovation and Technology and Office for Artificial Intelligence: AI regulation: a pro-innovation approach',
+        url: 'https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach',
+      },
+      {
+        label: 'GOV.UK: A pro-innovation approach to AI regulation (web-ready PDF)',
+        url: 'https://assets.publishing.service.gov.uk/media/64cb71a547915a00142a91c4/a-pro-innovation-approach-to-ai-regulation-amended-web-ready.pdf',
+      },
+      {
+        label:
+          'GOV.UK, Department for Science, Innovation and Technology: A pro-innovation approach to AI regulation: government response',
+        url: 'https://www.gov.uk/government/consultations/ai-regulation-a-pro-innovation-approach-policy-proposals/outcome/a-pro-innovation-approach-to-ai-regulation-government-response',
+      },
+      {
+        label: 'Wikimedia Commons: Whitehall from London Eye 2014 (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Whitehall_from_London_Eye_2014.jpg',
       },
     ],
   },
