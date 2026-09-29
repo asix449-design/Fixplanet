@@ -39,7 +39,7 @@ const href = localizePath(lawDetailPath(item.slug), locale);
       <h3>{item.title}</h3>
       <p class="scientific-name">{item.citation}</p>
       <p class="wildlife-hook">{item.hook}</p>
-      <span class="card-cta">{page.cardCta}</span>
+      <span class="card-cta">{item.category === 'ai' ? page.aiCardCta : page.cardCta}</span>
     </div>
   </a>
 </article>

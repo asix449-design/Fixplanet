@@ -311,102 +311,183 @@ export const lv: Record<string, LawCopy> = {
       'Stop Ecocide juridiskās definīcijas lapa; SKT Asamblejas Grozījumu darba grupas ziņojums (ICC-ASP-24-26); Romas statūta teksts spēkā esošajā redakcijā.',
   },
   'eu-ai-act': {
-    title: 'ES mākslīgā intelekta akts',
-    hook: 'Pirmais horizontālais ES likums, kas kārto MI sistēmas pēc riska. Augsta riska pienākumus vēlāk pārcēla; daļu caurredzamības noteikumu — nē.',
-    imageAlt: 'Eiropas Parlamenta hemicikls Strasbūrā, kur pieņēma MI aktu',
+    title: 'Eiropas Savienības mākslīgā intelekta akts',
+    hook: 'Pirmais horizontālais Eiropas Savienības likums, kas kārto mākslīgā intelekta sistēmas pēc riska. Augsta riska pienākumus vēlāk pārcēla; daļa caurredzamības noteikumu saglabāja sākotnējo datumu.',
+    imageAlt: 'Eiropas Parlamenta hemicikls Strasbūrā, kur pieņēma mākslīgā intelekta aktu',
     jurisdiction: 'Eiropas Savienība',
-    officialName: 'Artificial Intelligence Act',
+    officialName: 'Mākslīgā intelekta akts',
     citation:
-      'Regulation (EU) 2024/1689 of 13 June 2024 laying down harmonised rules on artificial intelligence',
+      'Eiropas Savienības regula 2024/1689 (2024. gada 13. jūnijs) par saskaņotiem noteikumiem mākslīgā intelekta jomā',
     yearStatus:
-      'Spēkā kopš 2024. gada 1. augusta. Piemērošana pakāpeniska. Regulation (EU) 2026/1744 (Digital Omnibus on AI, spēkā kopš 2026. gada 27. jūlija) pārcēla dažus augsta riska datumus; Aktu neatcēla.',
-    what: 'Akts aizliedz dažas prakses, uzliek smagus pienākumus uzskaitītām augsta riska sistēmām (III pielikuma lietošanas gadījumi: nodarbinātība, kredīts, biometrija un kritiskā infrastruktūra; I pielikuma produktu drošības MI) un nosaka caurredzamības noteikumus noteiktām sistēmām un vispārēja lietojuma MI modeļiem. Tas ir produkta un riska likums, ne rūpniecības uzslavas plāns.',
-    where: 'Tieši piemērojams ES dalībvalstīs, ar ekstrateritoriāliem āķiem piegādātājiem, kas laiž sistēmas Savienības tirgū vai kuru izvadi tur lieto. Nacionālās iestādes un ES MI birojs dala izpildi.',
-    effects: 'Iecerētie efekti: turēt aizliegtos lietojumus ārpus tirgus, piespiest dokumentāciju un cilvēka uzraudzības konstrukciju augsta riska sistēmām un padarīt daļu ģeneratīvā izvada atpazīstamu. Tie ir konstrukcijas mērķi. Šī lapa neizdomā 2026. gada kaitējuma samazināšanas statistiku.',
-    caveats: 'Fāzēšana ir svarīga. Pēc 2026. gada omnibusa III pielikuma augsta riska noteikumi piemērojas no 2027. gada 2. decembra un I pielikuma ar produktiem saistītie noteikumi no 2028. gada 2. augusta, kamēr 50. panta caurredzamības pienākumi piemērojās no 2026. gada 2. augusta. „MI akts ir aizkavēts” ir virsraksts, ne viss grafiks. Definīcijas un pielikumu sarakstus tiesās.',
+      'Spēkā kopš 2024. gada 1. augusta. Piemērošana pakāpeniska. Eiropas Savienības regula 2026/1744, apkopotais akts par digitālajiem noteikumiem mākslīgā intelekta jomā, spēkā kopš 2026. gada 27. jūlija, pārcēla dažus augsta riska datumus un atstāja pašu aktu spēkā.',
+    what: 'Akts aizliedz dažas prakses, uzliek smagus pienākumus uzskaitītām augsta riska sistēmām (trešā pielikuma lietošanas gadījumi: nodarbinātība, kredīts, biometrija un kritiskā infrastruktūra; pirmā pielikuma produktu drošības mākslīgais intelekts) un nosaka caurredzamības noteikumus noteiktām sistēmām un vispārēja lietojuma modeļiem. Tas ir produkta un riska likums sistēmām, ko laiž tirgū.',
+    where: 'Tieši piemērojams Eiropas Savienības dalībvalstīs. Noteikumi aptver arī piegādātājus, kas laiž sistēmas Savienības tirgū vai kuru izvadi tur lieto. Nacionālās iestādes un Eiropas Savienības mākslīgā intelekta birojs dala izpildi.',
+    effects: 'Iecerētie efekti: turēt aizliegtos lietojumus ārpus tirgus, prasīt dokumentāciju un cilvēka uzraudzības konstrukciju augsta riska sistēmām un padarīt daļu ģeneratīvā izvada atpazīstamu. Tie ir konstrukcijas mērķi. Izmērīti kaitējuma samazināšanas skaitļi pieder vēlākiem oficiāliem izvērtējumiem.',
+    caveats: 'Termiņiem ir nozīme. Pēc 2026. gada apkopotā akta trešā pielikuma augsta riska noteikumi, tas ir, uzskaitītie lietošanas gadījumi, piemērojas no 2027. gada 2. decembra, un pirmā pielikuma ar produktiem saistītie noteikumi no 2028. gada 2. augusta, kamēr 50. panta caurredzamības pienākumi piemērojās no 2026. gada 2. augusta. Virsraksts par akta atlikšanu aptver tikai daļu no šī grafika. Definīcijas un pielikumu saraksti nonāks tiesās.',
     sourcesNote:
-      'EUR-Lex 2024/1689; Komisijas regulatīvā ietvara lapa; Komisijas izpildes grafika lapa (2026. gada atjauninājums).',
+      'Oficiālais regulas 2024/1689 teksts; Eiropas Komisijas lapa par regulatīvo ietvaru; Komisijas piemērošanas grafika lapa, 2026. gada atjauninājums.',
+    sources: [
+      {
+        label: 'Eiropas Savienības regulas 2024/1689 oficiālais teksts (Regulation (EU) 2024/1689)',
+        url: 'https://eur-lex.europa.eu/eli/reg/2024/1689/oj',
+      },
+      {
+        label: 'Eiropas Komisija: mākslīgā intelekta akta pārskats (AI Act overview)',
+        url: 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai',
+      },
+      {
+        label: 'Eiropas Komisija: akta piemērošanas grafiks (AI Act enforcement timeline)',
+        url: 'https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act',
+      },
+    ],
   },
   'korea-ai-basic-act': {
-    title: 'Korejas MI ietvara likums',
-    hook: 'Nacionāls MI statūts spēkā no 2026. gada janvāra, ar paziņotu žēlastības periodu daudzām soda naudām.',
+    title: 'Korejas Republikas mākslīgā intelekta ietvara likums',
+    hook: 'Nacionāls mākslīgā intelekta likums spēkā no 2026. gada janvāra, ar paziņotu atvieglojuma periodu daudzām soda naudām.',
     imageAlt: 'Korejas Republikas Nacionālās asamblejas ēka Seulā',
     jurisdiction: 'Korejas Republika',
-    officialName:
-      'Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust',
-    citation: 'Act No. 20676, 21 January 2025 (as later amended); commonly called the AI Basic Act',
+    officialName: 'Pamatlikums par mākslīgā intelekta attīstību un uzticības pamata veidošanu',
+    citation:
+      'Likums Nr. 20676 (2025. gada 21. janvāris), ar vēlākiem grozījumiem; parasti to sauc par mākslīgā intelekta pamatlikumu',
     yearStatus: 'Pieņemts 2024. gada decembrī. Izdots 2025. gada 21. janvārī. Spēkā no 2026. gada 22. janvāra, ar izpildes dekrētu.',
-    what: 'Likums ir ietvars: nacionālā stratēģija un infrastruktūra plus pienākumi, kas paredzēti drošam, uzticamam MI. Augstas ietekmes sistēmām ir papildu caurredzamības un riska pārvaldības gaidas. Tas nav ES III pielikuma saraksta kopija, un maksimālā administratīvā soda nauda ministrijas materiālos ir pieticīga blakus ES apgrozījuma sodiem.',
-    where: 'Dienvidkoreja. Ārvalstu piegādātājus, kas sasniedz norādītos korejiešu lietotāju vai ieņēmumu sliekšņus, var ievilkt; aktuālo testu pārbaudi statūtā un dekrētā, ne emuāra kopsavilkumā.',
-    effects: 'Iecerētie efekti: tiesisks pamats MI pārvaldībai un augstas ietekmes caurredzamībai. Zinātnes un IKT ministrija paziņoja vismaz viena gada žēlastības periodu no 2026. gada 22. janvāra, kura laikā daudzas soda naudas un faktu noskaidrošanas izmeklēšanas atliktu, izņemot smaga kaitējuma gadījumus. Pienākumi žēlastības periodā nav tas pats, kas „likums ir izslēgts”.',
-    caveats: 'Ietvara likums plus žēlastības periods nav pabeigts izpildes reģistrs. Dekrētu un vadlīnijas aktīvi kalibrē. Nesauc to par „pasaules vienīgo MI likumu” — ES Akts ir vecāks kā visaptverošs režīms.',
+    what: 'Likums nosaka ietvaru: nacionālā stratēģija un infrastruktūra, kā arī pienākumi drošam un uzticamam mākslīgajam intelektam. Augstas ietekmes sistēmām ir papildu caurredzamības un riska pārvaldības prasības. Augstas ietekmes saraksts ir Korejas pašu saraksts. Maksimālā administratīvā soda nauda ministrijas materiālos ir pieticīga blakus Eiropas Savienības sodiem, ko rēķina no apgrozījuma.',
+    where: 'Korejas Republika. Ārvalstu piegādātājus, kas sasniedz norādītos korejiešu lietotāju vai ieņēmumu sliekšņus, noteikumi var aptvert. Aktuālais kritērijs ir ierakstīts likumā un dekrētā.',
+    effects: 'Iecerētie efekti: tiesisks pamats mākslīgā intelekta pārvaldībai un augstas ietekmes caurredzamībai. Zinātnes un informācijas un komunikācijas tehnoloģiju ministrija paziņoja vismaz viena gada atvieglojuma periodu no 2026. gada 22. janvāra: šajā laikā atliek daudzas soda naudas un faktu noskaidrošanas izmeklēšanas, bet smaga kaitējuma gadījumi paliek darbā. Pienākumi atvieglojuma periodā turpinās.',
+    caveats: 'Ietvara likums kopā ar atvieglojuma periodu dod agrīnu izpildes pierakstu. Dekrētu un vadlīnijas turpina precizēt. Eiropas Savienības mākslīgā intelekta akts ir vecāks kā visaptverošs režīms, un šis likums ir Korejas pašu ietvars.',
     sourcesNote:
-      'Korean Law Information Center angļu teksts; KLRI angļu skatītājs; MSIT angļu paziņojums par stāšanos spēkā.',
+      'Korejas tiesību tulkošanas centra teksts; Korejas likumdošanas pētījumu institūta skatījums; Zinātnes un informācijas un komunikācijas tehnoloģiju ministrijas paziņojums par stāšanos spēkā.',
+    sources: [
+      {
+        label:
+          'Korejas tiesību tulkošanas centrs: mākslīgā intelekta pamatlikums, likums Nr. 20676 (Framework Act on Artificial Intelligence)',
+        url: 'https://elaw.klri.re.kr/eng_service/lawView.do?hseq=73499&lang=ENG',
+      },
+      {
+        label: 'Korejas likumu portāls: pamatlikuma teksts (Korean statutes portal)',
+        url: 'https://www.law.go.kr/LSW/lsInfoP.do?chrClsCd=010203&lsiSeq=268543&urlMode=engLsInfoR&viewCls=engLsInfoR',
+      },
+      {
+        label:
+          'Zinātnes un informācijas un komunikācijas tehnoloģiju ministrija: likuma stāšanās spēkā 2026. gada 22. janvārī (entry into force)',
+        url: 'https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&pageIndex=&bbsSeqNo=42&nttSeqNo=1214&searchOpt=ALL&searchTxt=',
+      },
+    ],
   },
   'china-generative-ai': {
-    title: 'Ķīnas pagaidu pasākumi ģeneratīvajam MI',
-    hook: 'Saistoši noteikumi publiskiem ģeneratīvā MI pakalpojumiem Ķīnā — iesniegumi, saturs un apmācības datu pienākumi, ne vispārējs MI kodekss.',
-    imageAlt: 'Datu centra serveru rindas — lielo ģeneratīvo modeļu industriālā vide, ne nosaukta ķīniešu laboratorija',
+    title: 'Ķīnas pagaidu pasākumi ģeneratīvajam mākslīgajam intelektam',
+    hook: 'Saistoši noteikumi publiskiem ģeneratīvā mākslīgā intelekta pakalpojumiem Ķīnā: iesniegumi, saturs un apmācības datu pienākumi šiem publiskajiem pakalpojumiem.',
+    imageAlt: 'Datu centra serveru rindas, lielo ģeneratīvo modeļu industriālā vide',
     jurisdiction: 'Ķīnas Tautas Republika',
-    officialName: 'Interim Measures for the Management of Generative Artificial Intelligence Services',
+    officialName: 'Pagaidu pasākumi ģeneratīvā mākslīgā intelekta pakalpojumu pārvaldībai',
     citation:
-      'Cyberspace Administration of China and six other departments; published 13 July 2023; effective 15 August 2023',
-    yearStatus: 'Spēkā kopš 2023. gada 15. augusta. Pagaidu resoru noteikumi, ne Viskīnas tautas pārstāvju kongresa statūts.',
-    what: 'Pasākumi attiecas uz ģeneratīviem pakalpojumiem, kas Ķīnā publikai dod tekstu, attēlus, audio vai video. Piegādātājiem jālieto likumīgi apmācības dati, jāaizsargā personas informācija, jāpārvalda nelikumīgs saturs, jāmarķē ģenerētais materiāls un jāiziet drošības novērtējumi un algoritmu iesniegumi tur, kur noteikumi to prasa. Ārzemju pakalpojumus, kas mērķēti uz ķīniešu publiku, var bloķēt.',
+      'Ķīnas kibertelpas pārvalde un seši citi resori; publicēti 2023. gada 13. jūlijā; spēkā no 2023. gada 15. augusta',
+    yearStatus:
+      'Spēkā kopš 2023. gada 15. augusta. Ķīnas kibertelpas pārvaldes un sešu citu resoru pagaidu noteikumi.',
+    what: 'Pasākumi attiecas uz ģeneratīviem pakalpojumiem, kas Ķīnā publikai dod tekstu, attēlus, skaņu vai video. Piegādātājiem jālieto likumīgi apmācības dati, jāaizsargā personas informācija, jāpārvalda nelikumīgs saturs, jāmarķē ģenerētais materiāls un jāiziet drošības novērtējumi un algoritmu iesniegumi tur, kur noteikumi to prasa. Ārzemju pakalpojumus, kas mērķēti uz ķīniešu publiku, var bloķēt.',
     where: 'Ķīnas kontinentālā daļa, publiskiem ģeneratīviem pakalpojumiem. Iekšējie pētniecības rīki, ko nepiedāvā publikai, pēc teksta paliek ārpus pamata tvēruma.',
-    effects: 'Iecerētie efekti: iesniegumu un satura režīms ģeneratīviem modeļiem, ko lieto publika, un papīra pēda regulatoriem. CAC publicējis iesniegto pakalpojumu partijas. Šī lapa neuztver iesniegumu skaitu kā drošības pierādījumu.',
-    caveats: 'Tie ir pagaidu pasākumi zem jau esošajiem kiber, datu un personas informācijas likumiem. Tie nav ES stila riska līmeņu akts, kas sedz katru MI sistēmu. Satura noteikumi atspoguļo ķīniešu politiskās un cenzūras tiesības — tas ir svarīgi, ja godīgi salīdzini „MI drošības” režīmus.',
+    effects: 'Iecerētie efekti: iesniegumu un satura režīms ģeneratīviem modeļiem, ko lieto publika, un papīra pēdas regulatoriem. Ķīnas kibertelpas pārvalde ir publicējusi iesniegto pakalpojumu partijas. Šīs partijas ir reģistrācijas ieraksts.',
+    caveats: 'Tie ir pagaidu pasākumi jau esošo kiber, datu un personas informācijas likumu ietvaros. Tie nosaka iesniegšanas, satura, marķēšanas un novērtēšanas pienākumus publiskiem ģeneratīviem pakalpojumiem. Satura noteikumi atspoguļo Ķīnas politiskās tiesības un cenzūras noteikumus, kas ir svarīgi, salīdzinot mākslīgā intelekta drošības režīmus.',
     sourcesNote:
-      'Oficiālā CAC Pasākumu publikācija; FPF angļu salīdzinājums starp projektu un galīgo tekstu.',
+      'Ķīnas kibertelpas pārvaldes oficiālā pasākumu publikācija; projekta un galīgā teksta salīdzinājums, ko sagatavojis Privātuma nākotnes forums.',
+    sources: [
+      {
+        label: 'Ķīnas kibertelpas pārvalde: pagaidu pasākumi, 2023. gada 13. jūlijs (Interim Measures)',
+        url: 'https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm',
+      },
+      {
+        label:
+          'Privātuma nākotnes forums: projekta un galīgā teksta salīdzinājums (Future of Privacy Forum comparison)',
+        url: 'https://fpf.org/blog/chinas-interim-measures-for-the-management-of-generative-ai-services-a-comparison-between-the-final-and-draft-versions-of-the-text/',
+      },
+    ],
   },
   'california-sb-53': {
-    title: 'Kalifornijas frontier-MI caurredzamības likums',
-    hook: 'Štata statūts lielākajiem modeļu izstrādātājiem: publicēt drošības ietvaru un ziņot par nopietniem incidentiem. Ne vetoētais SB 1047.',
+    title: 'Kalifornijas likums par progresīvu mākslīgā intelekta sistēmu caurredzamību',
+    hook: 'Štata likums lielākajiem modeļu izstrādātājiem: publicēt drošības ietvaru un ziņot par nopietniem incidentiem. 2024. gada Senāta likumprojektu Nr. 1047 gubernators apturēja ar veto.',
     imageAlt: 'Kalifornijas štata Kapitolijs Sakramento',
     jurisdiction: 'Kalifornija, Amerikas Savienotās Valstis',
-    officialName: 'Transparency in Frontier Artificial Intelligence Act (TFAIA)',
+    officialName: 'Likums par progresīva mākslīgā intelekta caurredzamību',
     citation:
-      'Senate Bill 53 (Wiener), Chapter 138, Statutes of 2025; Cal. Bus. & Prof. Code §§ 22757.10 et seq.',
+      'Senāta likumprojekts Nr. 53 (Vīners), 138. nodaļa, 2025. gada likumu krājums; Kalifornijas uzņēmējdarbības un profesiju kodeksa sadaļas 22757.10 un turpmākās',
     yearStatus:
-      'Parakstīts 2025. gada 29. septembrī. Galvenie frontier-izstrādātāju pienākumi no 2026. gada 1. janvāra. SB 1047 (2024) tika vetoēts un nav likums.',
-    what: 'SB 53 prasa lieliem „frontier” modeļu izstrādātājiem publicēt drošības ietvaru, izvērtēt katastrofāla riska apgalvojumus statūta nozīmē, ziņot par kritiskiem drošības incidentiem un aizsargāt norādītos trauksmes cēlējus. Tas ir caurredzamības un ziņošanas likums, ne licencēšanas režīms un ne apmācības aizliegums.',
-    where: 'Kalifornijas tiesības. Mērķē uz lieliem izstrādātājiem, kas iziet statūta skaitļošanas un ieņēmumu testus. Tas nav ASV federāls MI akts.',
-    effects: 'Iecerētie efekti: publiski drošības ietvara dokumenti un kanāls incidentu ziņojumiem valstij. 2026. gadā pārāk agri oficiālai izvērtēšanai, vai šie iesniegumi mazināja kaitējumu.',
-    caveats: 'Sliekšņi atstāj lielāko daļu izstrādātāju ārpusē. Publicēts ietvars nav pierādīta kontrole. Cīņas par federālo preemptiju ir dzīvs ASV politiskais risks. Nesajauc to ar SB 1047, kas nekad nekļuva par likumu.',
+      'Parakstīts 2025. gada 29. septembrī. Galvenie pienākumi lielākajiem izstrādātājiem no 2026. gada 1. janvāra. 2024. gada Senāta likumprojektu Nr. 1047 gubernators apturēja ar veto.',
+    what: 'Senāta likumprojekts Nr. 53 prasa lieliem progresīvu modeļu izstrādātājiem, likumā tos sauc par robežmodeļiem, publicēt drošības ietvaru, izvērtēt katastrofāla riska apgalvojumus likuma nozīmē, ziņot par kritiskiem drošības incidentiem un aizsargāt norādītos trauksmes cēlējus. Tas ir caurredzamības un ziņošanas likums.',
+    where: 'Kalifornijas tiesības. Tas vērsts uz lieliem izstrādātājiem, kas iztur likumā noteiktos skaitļošanas un ieņēmumu sliekšņus. Pienākumus nosaka štata likums.',
+    effects: 'Iecerētie efekti: publiski drošības ietvara dokumenti un kanāls incidentu ziņojumiem štatam. 2026. gadā oficiāls izvērtējums par to, vai šie iesniegumi mazināja kaitējumu, vēl ir priekšā.',
+    caveats: 'Sliekšņi atstāj lielāko daļu izstrādātāju ārpus likuma. Publicēts ietvars ir izstrādātāja kontroles publiska atklāšana. Strīdi par to, vai federālās tiesības izstums štata likumu, paliek dzīvs politisks jautājums Amerikas Savienotajās Valstīs. 2024. gada Senāta likumprojektu Nr. 1047 gubernators apturēja ar veto; spēkā esošais likums ir Senāta likumprojekts Nr. 53.',
     sourcesNote:
-      'Kalifornijas likumdevēja likumprojekta statuss un teksts; gubernatora 2025. gada 29. septembra parakstīšanas paziņojums.',
+      'Kalifornijas likumdevēja likumprojekta statuss un teksts; gubernatora kancelejas 2025. gada 29. septembra parakstīšanas paziņojums.',
+    sources: [
+      {
+        label: 'Kalifornijas likumdevējs: Senāta likumprojekta Nr. 53 statuss (Senate Bill 53 status)',
+        url: 'https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB53',
+      },
+      {
+        label: 'Kalifornijas likumdevējs: Senāta likumprojekta Nr. 53 teksts (Senate Bill 53 text)',
+        url: 'https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53',
+      },
+      {
+        label: 'Gubernatora kanceleja: 2025. gada 29. septembra parakstīšanas paziņojums (signing statement)',
+        url: 'https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/',
+      },
+    ],
   },
   'canada-c-36': {
-    title: 'Kanādas likumprojekts C-36 — automatizēti lēmumi privātuma reformā',
-    hook: 'Dzīvs privātuma likumprojekts ar automatizētu lēmumu pienākumiem. Tas nav AIDA, un tas vēl nav likums.',
-    imageAlt: 'Parlamenta kalna Centre Block Otavā',
+    title: 'Kanādas likumprojekts C-36: automatizēti lēmumi privātuma reformā',
+    hook: 'Dzīvs privātuma likumprojekts ar automatizētu lēmumu pienākumiem. Tas ir atsevišķs teksts no Mākslīgā intelekta un datu likuma, un pagaidām tas ir pirmajā lasījumā.',
+    imageAlt: 'Parlamenta kalna centrālā ēka Otavā',
     jurisdiction: 'Kanāda (federālais līmenis)',
-    officialName: 'Protecting Privacy and Consumer Data Act (proposed, as Part of Bill C-36)',
+    officialName: 'Privātuma un patērētāju datu aizsardzības likums (ierosina likumprojekta C-36 ietvaros)',
     citation:
-      'Bill C-36, 45th Parliament, 1st session — An Act to enact the Protecting Privacy and Consumer Data Act, to amend PIPEDA, and to make related amendments',
+      'Likumprojekts C-36, 45. parlaments, 1. sesija: likums par Privātuma un patērētāju datu aizsardzības likuma pieņemšanu, par grozījumiem Personas informācijas aizsardzības un elektronisko dokumentu likumā un par saistītiem grozījumiem',
     yearStatus:
-      'Iesniegts 2026. gada 15. jūnijā (pirmais lasījums). Nav pieņemts. AIDA, C-27 3. daļa, nomira, kad parlamentu prorogēja 2025. gada janvārī, un netika iesniegta no jauna.',
-    what: 'C-36 galvenokārt ir privātā sektora privātuma pārrakstīšana. Tas definē „automatizētu lēmumu sistēmu” un prasītu skaidrojumu pēc pieprasījuma, kad šāda sistēma dara prognozi, ieteikumu vai lēmumu ar juridisku vai līdzīgi būtisku ietekmi — plus iespēju rakstiski vērsties pie cilvēka, kas to var pārskatīt. Tas ir šaurāk nekā horizontāls MI akts.',
-    where: 'Piemērotos, ja pieņemtu, federālajam privātā sektora privātumam Kanādā. Iesniegtajā veidā tas neradītu atsevišķu augsta riska MI licencēšanas shēmu.',
-    effects: 'Iecerētie efekti: caurredzamība un cilvēka pārskatīšanas ceļš būtiskiem automatizētiem lēmumiem. Pieņemtu C-36 iznākumu, ko mērīt, nav.',
-    caveats: 'Pirmais lasījums ir likumprojekta sākums, ne statūts. Komitejas teksts var mainīties vai nomirt. Neliec AIDA kā izskatīšanā — tas likumprojekts ir pazudis. Neapraksti C-36 kā „Kanādas MI aktu”.',
-    sourcesNote: 'LEGISinfo C-36; pirmā lasījuma teksts parl.ca.',
+      'Iesniegts 2026. gada 15. jūnijā, pirmais lasījums. Paliek parlamenta priekšā. Mākslīgā intelekta un datu likums, likumprojekta C-27 trešā daļa, beidzās, kad parlamenta darbu pārtrauca 2025. gada janvārī, un kopš tā laika darba kārtībā nav atgriezts.',
+    what: 'Likumprojekts C-36 galvenokārt pārraksta privātā sektora privātuma noteikumus. Tas definē automatizētu lēmumu sistēmu un prasītu skaidrojumu pēc pieprasījuma, kad šāda sistēma sniedz prognozi, ieteikumu vai lēmumu ar juridisku vai līdzīgi būtisku ietekmi, kā arī iespēju rakstiski vērsties pie cilvēka, kas to var pārskatīt. Pienākumi, kas saistīti ar mākslīgo intelektu, šajā tekstā ir skaidrojums un cilvēka pārskats.',
+    where: 'Ja to pieņemtu, tas attiektos uz federālo privātā sektora privātumu Kanādā. Iesniegtajā redakcijā automatizētie pienākumi ir skaidrojums un cilvēka pārskats.',
+    effects: 'Iecerētie efekti: caurredzamība un cilvēka pārskatīšanas ceļš būtiskiem automatizētiem lēmumiem. Pieņemtu likumprojekta C-36 iznākumu, ko mērīt, pagaidām nav.',
+    caveats: 'Pirmais lasījums atver likumprojekta ceļu. Komitejas teksts var mainīties vai palikt bez pieņemšanas. Mākslīgā intelekta un datu likums beidzās līdz ar parlamenta darba pārtraukumu 2025. gada janvārī. Likumprojekts C-36 ir privātuma likumprojekts, kas nes automatizētu lēmumu pienākumus.',
+    sourcesNote: 'Kanādas parlamenta lapa ar ziņām par likumprojektu C-36; pirmā lasījuma teksts.',
+    sources: [
+      {
+        label: 'Kanādas parlaments: ziņas par likumprojektu C-36 (Bill C-36, 45th Parliament)',
+        url: 'https://www.parl.ca/LegisInfo/en/bill/45-1/C-36',
+      },
+      {
+        label: 'Pārpalāta: likumprojekta C-36 pirmā lasījuma teksts (first reading)',
+        url: 'https://www.parl.ca/DocumentViewer/en/45-1/bill/C-36/first-reading',
+      },
+    ],
   },
   'ai-civil-liability': {
-    title: 'Atsevišķs MI civiltiesiskās atbildības likums',
-    hook: 'ES vienu uzrakstīja un atsauca. Ideja — vieglāks pierādījums, kad MI sistēma nodara kaitējumu — joprojām ir noderīga kā ideja.',
-    imageAlt: 'Taisnības statuja, parastā civiltiesisko prasību emblēma — ne nosaukta lietas fotogrāfija',
-    jurisdiction: 'Ideja (ES priekšlikums atsaukts; problēma paliek)',
-    officialName: 'Proposed Artificial Intelligence Liability Directive (never adopted)',
-    citation: 'COM(2022) 496; procedure 2022/0303(COD); withdrawn by the Commission (2025)',
+    title: 'Atsevišķs mākslīgā intelekta civiltiesiskās atbildības likums',
+    hook: 'Eiropas Savienība sagatavoja projektu un to atsauca. Ideja atvieglot pierādīšanu, kad mākslīgā intelekta sistēma nodara kaitējumu, paliek lietderīga kā priekšlikums.',
+    imageAlt: 'Taisnības statuja, parastā civiltiesisko prasību emblēma',
+    jurisdiction: 'Ideja (Eiropas Savienības priekšlikums atsaukts; uzdevums paliek)',
+    officialName: 'Ierosinātā direktīva par atbildību par mākslīgo intelektu (atsaukta pirms pieņemšanas)',
+    citation:
+      'Eiropas Komisijas 2022. gada priekšlikums, dokuments 496; parastā likumdošanas procedūra 2022/0303; Komisija atsaukusi 2025. gadā',
     yearStatus:
-      'Ideja. Ierosināta 2022. gada 28. septembrī. Atsaukta 2025. gadā (Legislative Observatory: atsaukta 2025. gada 6. oktobrī). Nav likums.',
-    what: 'Atsauktā direktīva būtu pielāgojusi vainas balstītos nacionālos deliktu noteikumus: pierādījumu atklāšanu par augsta riska MI un dažos gadījumos cēloņsakarības prezumpciju, lai cietušajiem nevajadzētu pašiem atšifrēt modeli. Tā bija domāta blakus MI aktam, ne tā vietā.',
-    where: 'Nekur. Vainas balstītas MI prasības ES tagad iet caur nacionālajām deliktu tiesībām. Cits instruments — pārskatītā Produktu atbildības direktīva (EU) 2024/2853 — uzskata programmatūru, tostarp MI, par „produktu” stingrajai produktu atbildībai un jātransponē līdz 2026. gada 9. decembrim. Tā Direktīva ir pieņemta. Šī kartīte nav tā Direktīva.',
-    effects: 'Iecerētais idejas efekts: padarīt kompensāciju reālu, kad melnā kaste nodara kaitējumu. AILD judikatūras nav, jo AILD nav.',
-    caveats: 'Neliec MI atbildības direktīvu pie izskatāmajiem. Nesaki, ka ES „nav MI atbildības noteikumu” — produktu atbildību pārraksta, lai iekļautu programmatūru. Šī kartīte ir tāpēc, lai atsauktā ideja būtu marķēta, ne klusi uzskatīta par dzīvu likumu.',
+      'Priekšlikums. Iesniegts 2022. gada 28. septembrī. Atsaukts 2025. gadā (Eiropas Parlamenta likumdošanas lieta: atsaukts 2025. gada 6. oktobrī).',
+    what: 'Atsauktā direktīva būtu pielāgojusi vainā balstītos nacionālos deliktu noteikumus: pierādījumu atklāšanu par augsta riska mākslīgo intelektu un dažos gadījumos cēloņsakarības prezumpciju, lai cietušajiem būtu ceļš caur pierādījumiem. Tekstu rakstīja kā kaimiņu mākslīgā intelekta aktam prasībām, kas balstītas vainā.',
+    where: 'Prasības par mākslīgā intelekta nodarītu kaitējumu, kas balstītas vainā, Eiropas Savienībā iet caur nacionālajām deliktu tiesībām. Cits instruments, pārskatītā Produktu atbildības direktīva 2024/2853, programmatūru, tostarp mākslīgo intelektu, uzskata par produktu stingrajai produktu atbildībai, un tā jāpārņem nacionālajās tiesībās līdz 2026. gada 9. decembrim. Šī direktīva ir pieņemta. Atsauktais priekšlikums un pieņemtā produktu direktīva ir atsevišķi akti.',
+    effects: 'Iecerētais priekšlikuma efekts: padarīt kompensāciju reālu, kad necaurredzama sistēma nodara kaitējumu. Pēc atsaukuma tiesām nav judikatūras saskaņā ar direktīvu par atbildību par mākslīgo intelektu.',
+    caveats: 'Direktīvu par atbildību par mākslīgo intelektu atsauca 2025. gada 6. oktobrī. Produktu atbildības noteikumus pārraksta tā, lai tie aptvertu programmatūru. Atsauktais teksts paliek priekšlikums.',
     sourcesNote:
-      'EP Legislative Observatory fiche 2022/0303(COD); COM(2022) 496; EUR-Lex par Direktīvu 2024/2853 kā pieņemto kaimiņu.',
+      'Eiropas Parlamenta likumdošanas lieta 2022/0303; Komisijas 2022. gada priekšlikums; direktīvas 2024/2853 teksts, pieņemtais produktu atbildības akts.',
+    sources: [
+      {
+        label: 'Eiropas Parlamenta likumdošanas lieta 2022/0303 (procedure 2022/0303, withdrawn)',
+        url: 'https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?lang=en&reference=2022/0303(COD)',
+      },
+      {
+        label: 'Eiropas Komisijas 2022. gada priekšlikums, dokuments 496 (COM(2022) 496)',
+        url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496',
+      },
+      {
+        label: 'Produktu atbildības direktīva 2024/2853 (Directive (EU) 2024/2853)',
+        url: 'https://eur-lex.europa.eu/eli/dir/2024/2853/oj',
+      },
+    ],
   },
   cites: {
     title: 'CITES',

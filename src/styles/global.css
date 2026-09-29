@@ -1419,6 +1419,13 @@ a.wildlife-card:hover {
   border: 1px solid rgba(192, 255, 0, 0.16);
 }
 
+.theme-law-detail .wildlife-detail-art img.law-figure-natural {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #14110c;
+}
+
 .wildlife-detail-art figcaption {
   margin-top: 0.7rem;
   color: var(--muted);
@@ -3877,6 +3884,24 @@ a.map-card:hover {
 }
 
 .law-source-list a {
+  color: var(--lime);
+}
+
+.law-figure-caption,
+.law-figure-credit {
+  display: block;
+}
+
+.law-figure-credit {
+  margin-top: 0.35rem;
+}
+
+.law-related {
+  margin: 0.2rem 0 0.6rem;
+  padding-left: 1.15rem;
+}
+
+.law-related a {
   color: var(--lime);
 }
 

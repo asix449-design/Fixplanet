@@ -315,101 +315,182 @@ export const pl: Record<string, LawCopy> = {
   },
   'eu-ai-act': {
     title: 'Unijny akt o sztucznej inteligencji',
-    hook: 'Pierwsze horyzontalne prawo UE, które sortuje systemy SI według ryzyka. Obowiązki wysokiego ryzyka później przesunięto; część reguł przejrzystości — nie.',
-    imageAlt: 'Hemicycle Parlamentu Europejskiego w Strasburgu, gdzie przyjęto Akt o SI',
+    hook: 'Pierwsze przekrojowe prawo Unii Europejskiej, które porządkuje systemy sztucznej inteligencji według ryzyka. Obowiązki wysokiego ryzyka później przesunięto w czasie; część reguł przejrzystości zachowała pierwotną datę.',
+    imageAlt: 'Hemicycle Parlamentu Europejskiego w Strasburgu, gdzie przyjęto akt o sztucznej inteligencji',
     jurisdiction: 'Unia Europejska',
-    officialName: 'Artificial Intelligence Act',
+    officialName: 'Akt o sztucznej inteligencji',
     citation:
-      'Regulation (EU) 2024/1689 of 13 June 2024 laying down harmonised rules on artificial intelligence',
+      'Rozporządzenie Unii Europejskiej 2024/1689 z 13 czerwca 2024 r. w sprawie zharmonizowanych przepisów dotyczących sztucznej inteligencji',
     yearStatus:
-      'W mocy od 1 sierpnia 2024. Stosowanie etapowe. Regulation (EU) 2026/1744 (Digital Omnibus on AI, w mocy od 27 lipca 2026) przesunął część dat wysokiego ryzyka; Aktu nie uchylił.',
-    what: 'Akt zakazuje niektórych praktyk, nakłada ciężkie obowiązki na wymienione systemy wysokiego ryzyka (przypadki użycia z załącznika III: zatrudnienie, kredyt, biometria i infrastruktura krytyczna; SI bezpieczeństwa produktu z załącznika I) oraz ustala reguły przejrzystości dla określonych systemów i modeli ogólnego przeznaczenia. To prawo produktu i ryzyka, nie przemysłowy plan-agitka.',
-    where: 'Bezpośrednio stosowane w państwach członkowskich UE, z hakami eksterytorialnymi dla dostawców, którzy wprowadzają systemy na rynek Unii albo których wynik tam się używa. Organy krajowe i Unijne Biuro SI dzielą egzekwowanie.',
-    effects: 'Zamierzone skutki: trzymać zakazane zastosowania z dala od rynku, wymusić dokumentację i projekt z nadzorem człowieka dla systemów wysokiego ryzyka oraz uczynić część wyjścia generatywnego rozpoznawalnym. To cele konstrukcyjne. Ta strona nie wymyśla statystyki redukcji szkód za 2026.',
-    caveats: 'Fazy mają znaczenie. Po omnibusie 2026 reguły wysokiego ryzyka z załącznika III stosują się od 2 grudnia 2027, a reguły produktowe z załącznika I od 2 sierpnia 2028, podczas gdy obowiązki przejrzystości z artykułu 50 stosowały się od 2 sierpnia 2026. „Akt o SI jest opóźniony” to nagłówek, nie cały harmonogram. Definicje i listy załączników będą procesowane.',
+      'W mocy od 1 sierpnia 2024 r. Stosowanie etapowe. Rozporządzenie Unii Europejskiej 2026/1744, zbiorczy akt o przepisach cyfrowych w dziedzinie sztucznej inteligencji, w mocy od 27 lipca 2026 r., przesunął część dat wysokiego ryzyka i pozostawił sam akt w mocy.',
+    what: 'Akt zakazuje niektórych praktyk, nakłada ciężkie obowiązki na wymienione systemy wysokiego ryzyka (przypadki z załącznika trzeciego: zatrudnienie, kredyt, biometria i infrastruktura krytyczna; sztuczna inteligencja w bezpieczeństwie produktu z załącznika pierwszego) oraz ustala reguły przejrzystości dla określonych systemów i modeli ogólnego przeznaczenia. To prawo produktu i ryzyka dla systemów wprowadzanych na rynek.',
+    where: 'Stosowane bezpośrednio w państwach członkowskich Unii Europejskiej. Przepisy obejmują też dostawców, którzy wprowadzają systemy na rynek Unii albo których wynik tam się używa. Organy krajowe i unijne biuro do spraw sztucznej inteligencji dzielą egzekwowanie.',
+    effects: 'Zamierzone skutki: trzymać zakazane zastosowania z dala od rynku, wymusić dokumentację i projekt z nadzorem człowieka dla systemów wysokiego ryzyka oraz uczynić część wyjścia generatywnego rozpoznawalnym. To cele konstrukcyjne. Zmierzone liczby redukcji szkód należą do późniejszych oficjalnych ocen.',
+    caveats: 'Fazy mają znaczenie. Po akcie zbiorczym z 2026 r. reguły wysokiego ryzyka z załącznika trzeciego, czyli wymienione przypadki użycia, stosują się od 2 grudnia 2027 r., a reguły produktowe z załącznika pierwszego od 2 sierpnia 2028 r., podczas gdy obowiązki przejrzystości z artykułu 50 stosowały się od 2 sierpnia 2026 r. Nagłówek o opóźnieniu aktu obejmuje tylko część tego harmonogramu. Definicje i listy załączników będą przedmiotem postępowań.',
     sourcesNote:
-      'EUR-Lex 2024/1689; strona Komisji o ramie regulacyjnej; strona Komisji o harmonogramie egzekwowania (aktualizacja 2026).',
+      'Oficjalny tekst rozporządzenia 2024/1689; strona Komisji Europejskiej o ramie regulacyjnej; strona Komisji o harmonogramie stosowania, aktualizacja 2026 r.',
+    sources: [
+      {
+        label: 'Oficjalny tekst rozporządzenia Unii Europejskiej 2024/1689 (Regulation (EU) 2024/1689)',
+        url: 'https://eur-lex.europa.eu/eli/reg/2024/1689/oj',
+      },
+      {
+        label: 'Komisja Europejska: przegląd aktu o sztucznej inteligencji (AI Act overview)',
+        url: 'https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai',
+      },
+      {
+        label: 'Komisja Europejska: harmonogram stosowania aktu (AI Act enforcement timeline)',
+        url: 'https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act',
+      },
+    ],
   },
   'korea-ai-basic-act': {
-    title: 'Koreańska ustawa ramowa o SI',
-    hook: 'Krajowy statut o SI w mocy od stycznia 2026, z zadeklarowanym okresem ulgi wobec wielu kar.',
+    title: 'Koreańska ustawa ramowa o sztucznej inteligencji',
+    hook: 'Krajowa ustawa o sztucznej inteligencji w mocy od stycznia 2026 r., z zapowiedzianym okresem ulgi wobec wielu kar.',
     imageAlt: 'Budynek Zgromadzenia Narodowego Republiki Korei w Seulu',
     jurisdiction: 'Republika Korei',
-    officialName:
-      'Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust',
-    citation: 'Act No. 20676, 21 January 2025 (as later amended); commonly called the AI Basic Act',
-    yearStatus: 'Uchwalona w grudniu 2024. Stanowiona 21 stycznia 2025. W mocy od 22 stycznia 2026, z dekretem wykonawczym.',
-    what: 'Ustawa jest ramą: strategia i infrastruktura krajowa plus obowiązki mające wspierać bezpieczną, wiarygodną SI. Systemy wysokiego oddziaływania dostają dodatkowe oczekiwania przejrzystości i zarządzania ryzykiem. To nie kopia unijnej listy z załącznika III, a maksymalna kara administracyjna w materiałach ministerstwa jest skromna obok unijnych kar od obrotu.',
-    where: 'Korea Południowa. Zagranicznych dostawców, którzy spełniają podane progi koreańskich użytkowników albo przychodów, można wciągnąć; aktualny test sprawdzaj w statucie i dekrecie, nie w streszczeniu bloga.',
-    effects: 'Zamierzone skutki: podstawa prawna zarządzania SI i przejrzystości wysokiego oddziaływania. Ministerstwo Nauki i ICT ogłosiło okres ulgi co najmniej roku od 22 stycznia 2026, w którym wiele kar i postępowań ustalających fakty będzie odkładanych, poza przypadkami poważnej szkody. Obowiązki w okresie ulgi to nie to samo co „ustawa jest wyłączona”.',
-    caveats: 'Ustawa ramowa plus okres ulgi to nie skończony rejestr egzekwowania. Dekret i wytyczne są w aktywnej kalibracji. Nie nazywaj tego „jedyną na świecie ustawą o SI” — Akt UE jest starszy jako reżim kompleksowy.',
+    officialName: 'Ustawa ramowa o rozwoju sztucznej inteligencji i tworzeniu podstaw zaufania',
+    citation:
+      'Ustawa nr 20676 z 21 stycznia 2025 r., z późniejszymi zmianami; zwykle nazywana podstawową ustawą o sztucznej inteligencji',
+    yearStatus: 'Uchwalona w grudniu 2024 r. Ogłoszona 21 stycznia 2025 r. W mocy od 22 stycznia 2026 r., z dekretem wykonawczym.',
+    what: 'Ustawa wyznacza ramę: krajowa strategia i infrastruktura oraz obowiązki na rzecz bezpiecznej, godnej zaufania sztucznej inteligencji. Systemy wysokiego oddziaływania dostają dodatkowe wymagania przejrzystości i zarządzania ryzykiem. Wykaz wysokiego oddziaływania jest koreański. Maksymalna kara administracyjna w materiałach ministerstwa jest skromna obok kar Unii Europejskiej liczonych od obrotu.',
+    where: 'Republika Korei. Dostawców zagranicznych, którzy spełniają podane progi koreańskich użytkowników albo przychodów, przepisy mogą objąć. Aktualne kryterium jest zapisane w ustawie i w dekrecie.',
+    effects: 'Zamierzone skutki: podstawa prawna zarządzania sztuczną inteligencją i przejrzystości systemów wysokiego oddziaływania. Ministerstwo Nauki oraz Technologii Informacyjnych i Komunikacyjnych ogłosiło okres ulgi co najmniej roku od 22 stycznia 2026 r.: na ten czas odkłada się wiele kar i postępowań ustalających fakty, a przypadki poważnej szkody pozostają w toku. Obowiązki w okresie ulgi trwają.',
+    caveats: 'Ustawa ramowa wraz z okresem ulgi daje wczesny zapis egzekwowania. Dekret i wytyczne nadal się doprecyzowuje. Akt Unii Europejskiej o sztucznej inteligencji jest starszy jako reżim całościowy, a ta ustawa jest własną koreańską ramą.',
     sourcesNote:
-      'Angielski tekst Korean Law Information Center; angielski podgląd KLRI; angielski komunikat MSIT o wejściu w życie.',
+      'Tekst Centrum Tłumaczeń Prawa Koreańskiego; podgląd Koreańskiego Instytutu Badań Legislacyjnych; komunikat Ministerstwa Nauki oraz Technologii Informacyjnych i Komunikacyjnych o wejściu w życie.',
+    sources: [
+      {
+        label:
+          'Centrum Tłumaczeń Prawa Koreańskiego: ustawa ramowa o sztucznej inteligencji, ustawa nr 20676 (Framework Act on Artificial Intelligence)',
+        url: 'https://elaw.klri.re.kr/eng_service/lawView.do?hseq=73499&lang=ENG',
+      },
+      {
+        label: 'Portal ustaw koreańskich: tekst ustawy ramowej (Korean statutes portal)',
+        url: 'https://www.law.go.kr/LSW/lsInfoP.do?chrClsCd=010203&lsiSeq=268543&urlMode=engLsInfoR&viewCls=engLsInfoR',
+      },
+      {
+        label:
+          'Ministerstwo Nauki oraz Technologii Informacyjnych i Komunikacyjnych: wejście ustawy w życie 22 stycznia 2026 r. (entry into force)',
+        url: 'https://www.msit.go.kr/eng/bbs/view.do?sCode=eng&mId=4&mPid=2&pageIndex=&bbsSeqNo=42&nttSeqNo=1214&searchOpt=ALL&searchTxt=',
+      },
+    ],
   },
   'china-generative-ai': {
-    title: 'Chińskie środki tymczasowe wobec SI generatywnej',
-    hook: 'Wiążące reguły dla publicznych usług SI generatywnej w Chinach — zgłoszenia, treść i obowiązki wobec danych treningowych, nie ogólny kodeks SI.',
-    imageAlt: 'Rzędy serwerów w centrum danych — przemysłowe tło dużych modeli generatywnych, nie nazwane chińskie laboratorium',
+    title: 'Chińskie środki tymczasowe wobec generatywnej sztucznej inteligencji',
+    hook: 'Wiążące reguły dla publicznych usług generatywnej sztucznej inteligencji w Chinach: zgłoszenia, treść i obowiązki wobec danych treningowych tych usług publicznych.',
+    imageAlt: 'Rzędy serwerów w centrum danych, przemysłowe tło dużych modeli generatywnych',
     jurisdiction: 'Chińska Republika Ludowa',
-    officialName: 'Interim Measures for the Management of Generative Artificial Intelligence Services',
+    officialName: 'Środki tymczasowe w sprawie zarządzania usługami generatywnej sztucznej inteligencji',
     citation:
-      'Cyberspace Administration of China and six other departments; published 13 July 2023; effective 15 August 2023',
-    yearStatus: 'W mocy od 15 sierpnia 2023. Tymczasowe reguły resortowe, nie statut Ogólnochińskiego Zgromadzenia Przedstawicieli Ludowych.',
-    what: 'Środki dotyczą usług generatywnych, które dostarczają publiczności w Chinach tekst, obrazy, dźwięk albo wideo. Dostawcy muszą używać legalnych danych treningowych, chronić informacje osobowe, zarządzać nielegalną treścią, oznaczać materiał wygenerowany oraz — tam gdzie reguły tego wymagają — przechodzić oceny bezpieczeństwa i zgłoszenia algorytmów. Usługi zagraniczne skierowane do chińskiej publiczności można blokować.',
+      'Administracja Cyberprzestrzeni Chin i sześć innych resortów; opublikowane 13 lipca 2023 r.; w mocy od 15 sierpnia 2023 r.',
+    yearStatus:
+      'W mocy od 15 sierpnia 2023 r. Tymczasowe reguły Administracji Cyberprzestrzeni Chin i sześciu innych resortów.',
+    what: 'Środki dotyczą usług generatywnych, które dostarczają publiczności w Chinach tekst, obrazy, dźwięk albo wideo. Dostawcy muszą używać legalnych danych treningowych, chronić informacje osobowe, zarządzać nielegalną treścią, oznaczać materiał wygenerowany oraz, tam gdzie reguły tego wymagają, przechodzić oceny bezpieczeństwa i zgłoszenia algorytmów. Usługi zagraniczne skierowane do chińskiej publiczności można blokować.',
     where: 'Chiny kontynentalne, dla publicznych usług generatywnych. Wewnętrzne narzędzia badawcze, których nie oferuje się publiczności, według tekstu zostają poza głównym zakresem.',
-    effects: 'Zamierzone skutki: reżim zgłoszeń i treści dla modeli generatywnych używanych przez publiczność oraz papierowy ślad dla regulatorów. CAC publikował partie zgłoszonych usług. Ta strona nie traktuje liczby zgłoszeń jako dowodu bezpieczeństwa.',
-    caveats: 'To środki tymczasowe na bazie istniejących ustaw o cyberprzestrzeni, danych i informacjach osobowych. To nie unijny akt warstw ryzyka obejmujący każdy system SI. Reguły treści odzwierciedlają chińskie prawo polityczne i cenzury — istotne, jeśli porównujesz reżimy „bezpieczeństwa SI” uczciwie.',
+    effects: 'Zamierzone skutki: reżim zgłoszeń i treści dla modeli generatywnych używanych przez publiczność oraz papierowy ślad dla regulatorów. Administracja Cyberprzestrzeni Chin publikowała partie zgłoszonych usług. Te partie są zapisem rejestracji.',
+    caveats: 'To środki tymczasowe na bazie istniejących ustaw o cyberprzestrzeni, danych i informacjach osobowych. Wyznaczają obowiązki zgłoszenia, treści, oznaczania i oceny dla publicznych usług generatywnych. Reguły treści odzwierciedlają chińskie prawo polityczne i przepisy o cenzurze, co ma znaczenie przy porównywaniu reżimów bezpieczeństwa sztucznej inteligencji.',
     sourcesNote:
-      'Oficjalna publikacja Środków CAC; angielskie porównanie projektu i tekstu końcowego FPF.',
+      'Oficjalna publikacja środków Administracji Cyberprzestrzeni Chin; porównanie projektu i tekstu końcowego przygotowane przez Forum Przyszłości Prywatności.',
+    sources: [
+      {
+        label: 'Administracja Cyberprzestrzeni Chin: środki tymczasowe z 13 lipca 2023 r. (Interim Measures)',
+        url: 'https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm',
+      },
+      {
+        label:
+          'Forum Przyszłości Prywatności: porównanie projektu i tekstu końcowego (Future of Privacy Forum comparison)',
+        url: 'https://fpf.org/blog/chinas-interim-measures-for-the-management-of-generative-ai-services-a-comparison-between-the-final-and-draft-versions-of-the-text/',
+      },
+    ],
   },
   'california-sb-53': {
-    title: 'Kalifornijska ustawa o przejrzystości frontier-SI',
-    hook: 'Ustawa stanowa dla największych deweloperów modeli: opublikować ramę bezpieczeństwa i zgłaszać poważne incydenty. Nie zawetowana SB 1047.',
+    title: 'Kalifornijska ustawa o przejrzystości zaawansowanych systemów sztucznej inteligencji',
+    hook: 'Ustawa stanowa dla największych twórców modeli: opublikować ramę bezpieczeństwa i zgłaszać poważne incydenty. Projekt senacki nr 1047 z 2024 r. został zawetowany.',
     imageAlt: 'Kapitol stanu Kalifornia w Sacramento',
     jurisdiction: 'Kalifornia, Stany Zjednoczone',
-    officialName: 'Transparency in Frontier Artificial Intelligence Act (TFAIA)',
+    officialName: 'Ustawa o przejrzystości zaawansowanej sztucznej inteligencji',
     citation:
-      'Senate Bill 53 (Wiener), Chapter 138, Statutes of 2025; Cal. Bus. & Prof. Code §§ 22757.10 et seq.',
+      'Projekt senacki nr 53 (Wiener), rozdział 138, Zbiór ustaw z 2025 r.; Kodeks działalności gospodarczej i zawodów Kalifornii, paragrafy 22757.10 i następne',
     yearStatus:
-      'Podpisana 29 września 2025. Główne obowiązki deweloperów frontier od 1 stycznia 2026. SB 1047 (2024) została zawetowana i nie jest prawem.',
-    what: 'SB 53 wymaga od dużych deweloperów modeli „frontier”, by publikowali ramę bezpieczeństwa, oceniali twierdzenia o ryzyku katastroficznym w sensie statutu, zgłaszali krytyczne incydenty bezpieczeństwa i chronili wskazanych sygnalistów. To ustawa o przejrzystości i raportowaniu, nie reżim licencyjny i nie zakaz trenowania.',
-    where: 'Prawo Kalifornii. Celuje w dużych deweloperów, którzy spełniają statutowe testy mocy obliczeniowej i przychodów. To nie federalny akt USA o SI.',
-    effects: 'Zamierzone skutki: publiczne dokumenty ram bezpieczeństwa i kanał zgłoszeń incydentów do stanu. Zbyt wcześnie, na 2026, na oficjalną ocenę, czy te zgłoszenia zmniejszyły szkodę.',
-    caveats: 'Progi zostawiają większość deweloperów na zewnątrz. Opublikowana rama to nie sprawdzona kontrola. Spory o federalną preempcję to żywe ryzyko polityczne w USA. Nie myl tego z SB 1047, która nigdy nie stała się prawem.',
+      'Podpisana 29 września 2025 r. Główne obowiązki największych twórców od 1 stycznia 2026 r. Projekt senacki nr 1047 z 2024 r. gubernator zawetował.',
+    what: 'Projekt senacki nr 53 wymaga od dużych twórców modeli zaawansowanych, w ustawie nazwanych granicznymi, publikowania ramy bezpieczeństwa, oceny twierdzeń o ryzyku katastroficznym w sensie ustawy, zgłaszania krytycznych incydentów bezpieczeństwa i ochrony wskazanych sygnalistów. To ustawa o przejrzystości i sprawozdawczości.',
+    where: 'Prawo Kalifornii. Jest skierowana do dużych twórców, którzy spełniają ustawowe progi mocy obliczeniowej i przychodów. Obowiązki wynikają z prawa stanowego.',
+    effects: 'Zamierzone skutki: publiczne dokumenty ram bezpieczeństwa i kanał zgłoszeń incydentów do stanu. W 2026 r. oficjalna ocena tego, czy te zgłoszenia zmniejszyły szkodę, jest jeszcze przed nami.',
+    caveats: 'Progi zostawiają większość twórców poza ustawą. Opublikowana rama jest publicznym ujawnieniem środków twórcy. Spory o to, czy prawo federalne wyprze ustawę stanową, pozostają żywą kwestią polityczną w Stanach Zjednoczonych. Projekt senacki nr 1047 z 2024 r. gubernator zawetował; obowiązującą ustawą jest projekt senacki nr 53.',
     sourcesNote:
-      'Status i tekst ustawy Legislatury Kalifornii; komunikat gubernatora o podpisaniu 29 września 2025.',
+      'Status i tekst projektu Legislatury Kalifornii; komunikat kancelarii gubernatora o podpisaniu 29 września 2025 r.',
+    sources: [
+      {
+        label: 'Legislatura Kalifornii: status projektu senackiego nr 53 (Senate Bill 53 status)',
+        url: 'https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB53',
+      },
+      {
+        label: 'Legislatura Kalifornii: tekst projektu senackiego nr 53 (Senate Bill 53 text)',
+        url: 'https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53',
+      },
+      {
+        label: 'Kancelaria gubernatora: komunikat o podpisaniu 29 września 2025 r. (signing statement)',
+        url: 'https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/',
+      },
+    ],
   },
   'canada-c-36': {
-    title: 'Kanadyjski projekt C-36 — decyzje zautomatyzowane w reformie prywatności',
-    hook: 'Żywy projekt o prywatności z obowiązkami wobec decyzji zautomatyzowanych. To nie AIDA i to jeszcze nie prawo.',
-    imageAlt: 'Gmach Centre Block Wzgórza Parlamentarnego w Ottawie',
+    title: 'Kanadyjski projekt C-36: decyzje zautomatyzowane w reformie prywatności',
+    hook: 'Żywy projekt o prywatności z obowiązkami wobec decyzji zautomatyzowanych. To odrębny tekst od ustawy o sztucznej inteligencji i danych, i na razie jest po pierwszym czytaniu.',
+    imageAlt: 'Gmach centralny Wzgórza Parlamentarnego w Ottawie',
     jurisdiction: 'Kanada (szczebel federalny)',
-    officialName: 'Protecting Privacy and Consumer Data Act (proposed, as Part of Bill C-36)',
+    officialName: 'Ustawa o ochronie prywatności i danych konsumentów (proponowana w ramach projektu C-36)',
     citation:
-      'Bill C-36, 45th Parliament, 1st session — An Act to enact the Protecting Privacy and Consumer Data Act, to amend PIPEDA, and to make related amendments',
+      'Projekt C-36, 45. parlament, 1. sesja: ustawa o uchwaleniu Ustawy o ochronie prywatności i danych konsumentów, o zmianie Ustawy o ochronie informacji osobistych i dokumentach elektronicznych oraz o zmianach powiązanych',
     yearStatus:
-      'Wniesiony 15 czerwca 2026 (pierwsze czytanie). Nie uchwalony. AIDA, część 3 projektu C-27, umarła, gdy parlament prorogowano w styczniu 2025, i nie została wniesiona ponownie.',
-    what: 'C-36 to głównie przepisanie prywatności sektora prywatnego. Definiuje „system decyzji zautomatyzowanych” i wymagałoby wyjaśnienia, na wniosek, gdy taki system robi predykcję, rekomendację albo decyzję o skutku prawnym albo podobnie istotnym — plus szansę pisemnych przedstawień człowiekowi, który może to przejrzeć. To węższe niż horyzontalny Akt o SI.',
-    where: 'Obowiązywałoby, gdyby uchwalono, federalną prywatność sektora prywatnego w Kanadzie. W złożonej wersji nie tworzyłoby osobnego schematu licencji SI wysokiego ryzyka.',
-    effects: 'Zamierzone skutki: przejrzystość i ścieżka przeglądu ludzkiego dla istotnych decyzji zautomatyzowanych. Nie ma uchwalonych skutków C-36 do zmierzenia.',
-    caveats: 'Pierwsze czytanie to początek projektu, nie statut. Tekst w komisji może się zmienić albo umrzeć. Nie wkładaj AIDA jako rozpatrywanej — ten projekt zniknął. Nie opisuj C-36 jako „kanadyjskiego Aktu o SI”.',
-    sourcesNote: 'LEGISinfo C-36; tekst pierwszego czytania na parl.ca.',
+      'Wniesiony 15 czerwca 2026 r., pierwsze czytanie. Pozostaje przed parlamentem. Ustawa o sztucznej inteligencji i danych, część 3 projektu C-27, zakończyła się, gdy pracę parlamentu przerwano w styczniu 2025 r., i od tamtej pory nie wróciła do porządku obrad.',
+    what: 'Projekt C-36 głównie przepisuje zasady prywatności sektora prywatnego. Definiuje zautomatyzowany system decyzji i wymagałby wyjaśnienia, na wniosek, gdy taki system wydaje prognozę, rekomendację albo decyzję o skutku prawnym albo podobnie istotnym, a także możliwości pisemnych przedstawień człowiekowi, który może to przejrzeć. Obowiązki związane ze sztuczną inteligencją w tym tekście sprowadzają się do wyjaśnienia i przeglądu przez człowieka.',
+    where: 'Po uchwaleniu obejmowałby federalną prywatność sektora prywatnego w Kanadzie. W złożonej wersji obowiązki zautomatyzowane polegają na wyjaśnieniu i przeglądzie przez człowieka.',
+    effects: 'Zamierzone skutki: przejrzystość i ścieżka przeglądu ludzkiego dla istotnych decyzji zautomatyzowanych. Uchwalonych skutków projektu C-36, które dałoby się zmierzyć, na razie nie ma.',
+    caveats: 'Pierwsze czytanie otwiera drogę projektu. Tekst w komisji może się zmienić albo pozostać bez uchwalenia. Ustawa o sztucznej inteligencji i danych zakończyła się wraz z przerwaniem pracy parlamentu w styczniu 2025 r. Projekt C-36 jest projektem o prywatności, który niesie obowiązki wobec decyzji zautomatyzowanych.',
+    sourcesNote: 'Strona informacji o projekcie C-36 na witrynie parlamentu Kanady; tekst pierwszego czytania.',
+    sources: [
+      {
+        label: 'Parlament Kanady: informacje o projekcie C-36 (Bill C-36, 45th Parliament)',
+        url: 'https://www.parl.ca/LegisInfo/en/bill/45-1/C-36',
+      },
+      {
+        label: 'Izba Gmin: tekst pierwszego czytania projektu C-36 (first reading)',
+        url: 'https://www.parl.ca/DocumentViewer/en/45-1/bill/C-36/first-reading',
+      },
+    ],
   },
   'ai-civil-liability': {
-    title: 'Osobna ustawa o odpowiedzialności cywilnej za SI',
-    hook: 'UE jedną napisała i wycofała. Idea — łatwiejszy dowód, gdy system SI wyrządza szkodę — wciąż jest warta nazwania jako idea.',
-    imageAlt: 'Posąg Sprawiedliwości, zwykły emblemat roszczeń cywilnych — nie zdjęcie nazwanej sprawy',
-    jurisdiction: 'Idea (unijny wniosek wycofany; problem zostaje)',
-    officialName: 'Proposed Artificial Intelligence Liability Directive (never adopted)',
-    citation: 'COM(2022) 496; procedure 2022/0303(COD); withdrawn by the Commission (2025)',
+    title: 'Osobna ustawa o odpowiedzialności cywilnej za sztuczną inteligencję',
+    hook: 'Unia Europejska przygotowała projekt i go wycofała. Pomysł, by ułatwić dowód, gdy system sztucznej inteligencji wyrządza szkodę, pozostaje użyteczny jako propozycja.',
+    imageAlt: 'Posąg Sprawiedliwości, zwykły emblemat roszczeń cywilnych',
+    jurisdiction: 'Pomysł (wniosek Unii Europejskiej wycofany; zadanie zostaje)',
+    officialName: 'Proponowana dyrektywa o odpowiedzialności za sztuczną inteligencję (wycofana przed przyjęciem)',
+    citation:
+      'Wniosek Komisji Europejskiej z 2022 r., dokument 496; zwykła procedura ustawodawcza 2022/0303; wycofany przez Komisję w 2025 r.',
     yearStatus:
-      'Idea. Zaproponowana 28 września 2022. Wycofana w 2025 (Legislative Observatory: wycofana 6 października 2025). Nie prawo.',
-    what: 'Wycofana dyrektywa dostosowałaby krajowe reguły deliktów oparte na winie: ujawnienie dowodów o SI wysokiego ryzyka i w części przypadków domniemanie przyczynowości, by poszkodowani nie musieli sami odtwarzać modelu. Miała siedzieć obok Aktu o SI, nie go zastępować.',
-    where: 'Nigdzie. Roszczenia o SI oparte na winie w UE idą teraz przez krajowe prawo deliktowe. Inny instrument — znowelizowana dyrektywa o odpowiedzialności za produkt (EU) 2024/2853 — traktuje oprogramowanie, w tym SI, jako „produkt” dla ścisłej odpowiedzialności produktowej i musi być transponowana do 9 grudnia 2026. Ta dyrektywa jest uchwalona. Ta karta nie jest tamtą dyrektywą.',
-    effects: 'Zamierzony skutek idei: uczynić odszkodowanie realnym, gdy czarna skrzynka wyrządza szkodę. Orzecznictwa AILD nie ma, bo AILD nie ma.',
-    caveats: 'Nie wpisuj dyrektywy o odpowiedzialności za SI jako rozpatrywanej. Nie mów, że UE „nie ma reguł odpowiedzialności za SI” — odpowiedzialność produktową przepisuje się, by objąć oprogramowanie. Ta karta istnieje, by wycofaną ideę oznaczyć, nie cicho traktować jako żywe prawo.',
+      'Propozycja. Złożona 28 września 2022 r. Wycofana w 2025 r. (dossier legislacyjne Parlamentu Europejskiego: wycofanie 6 października 2025 r.).',
+    what: 'Wycofana dyrektywa dostosowałaby krajowe reguły deliktów oparte na winie: ujawnienie dowodów o sztucznej inteligencji wysokiego ryzyka i w części przypadków domniemanie przyczynowości, aby poszkodowani mieli drogę przez dowody. Tekst pisano jako sąsiedni wobec aktu o sztucznej inteligencji dla roszczeń opartych na winie.',
+    where: 'Roszczenia o szkodę wyrządzoną przez sztuczną inteligencję, oparte na winie, w Unii Europejskiej idą przez krajowe prawo deliktowe. Inny instrument, zmieniona dyrektywa o odpowiedzialności za produkt 2024/2853, traktuje oprogramowanie, w tym sztuczną inteligencję, jako produkt dla ścisłej odpowiedzialności za produkt i ma być przeniesiona do prawa krajowego do 9 grudnia 2026 r. Ta dyrektywa jest uchwalona. Wycofany wniosek i uchwalona dyrektywa o produkcie są odrębnymi aktami.',
+    effects: 'Zamierzony skutek propozycji: uczynić odszkodowanie realnym, gdy nieprzejrzysty system wyrządza szkodę. Po wycofaniu sądy nie mają orzecznictwa na podstawie dyrektywy o odpowiedzialności za sztuczną inteligencję.',
+    caveats: 'Dyrektywę o odpowiedzialności za sztuczną inteligencję wycofano 6 października 2025 r. Przepisy o odpowiedzialności za produkt przepisuje się tak, aby objęły oprogramowanie. Wycofany tekst pozostaje propozycją.',
     sourcesNote:
-      'Fiche EP Legislative Observatory 2022/0303(COD); COM(2022) 496; EUR-Lex dla Dyrektywy 2024/2853 jako uchwalonego sąsiada.',
+      'Dossier legislacyjne Parlamentu Europejskiego 2022/0303; wniosek Komisji z 2022 r.; tekst dyrektywy 2024/2853, uchwalony akt o odpowiedzialności za produkt.',
+    sources: [
+      {
+        label: 'Dossier legislacyjne Parlamentu Europejskiego 2022/0303 (procedure 2022/0303, withdrawn)',
+        url: 'https://oeil.secure.europarl.europa.eu/oeil/popups/ficheprocedure.do?lang=en&reference=2022/0303(COD)',
+      },
+      {
+        label: 'Wniosek Komisji Europejskiej z 2022 r., dokument 496 (COM(2022) 496)',
+        url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52022PC0496',
+      },
+      {
+        label: 'Dyrektywa o odpowiedzialności za produkt 2024/2853 (Directive (EU) 2024/2853)',
+        url: 'https://eur-lex.europa.eu/eli/dir/2024/2853/oj',
+      },
+    ],
   },
   cites: {
     title: 'CITES',
