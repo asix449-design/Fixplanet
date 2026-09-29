@@ -1,9 +1,9 @@
-import type { ForestEncyclopediaCopy, ForestEncyclopediaSlug } from '../data/solutions-forests';
+import type { ForestEncyclopediaCopy } from '../data/solutions-forests';
 
-export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
+export const pl: Record<string, ForestEncyclopediaCopy> = {
   'sustainable-forestry': {
     title: 'Zrównoważone leśnictwo',
-    hook: 'Wolno rosnące drewno wciąż ciągnie wyrąb do starych lasów. Zagospodarowane uprawy i krajowe inwentaryzacje już dają dużą część drewna przemysłowego — to nie dziki las pod inną nazwą.',
+    hook: 'Wolno rosnące drewno wciąż ciągnie wyrąb do starych lasów. Zagospodarowane uprawy i krajowe inwentaryzacje już dają dużą część drewna przemysłowego.',
     imageAlt: 'Mglista droga leśna ze stosami kłód i rzędami drzew plantacyjnych',
     what: [
       'Zrównoważona gospodarka leśna to dawna praktyka hodowania, mierzenia i pozyskiwania drewna tak, by las nadal dawał surowiec i inne usługi. Przegląd FAO traktuje to jako zarządzanie, które utrzymuje zdolność lasu — nie hasło i nie zakaz wycinki. Wolno rosnące drewno wciąż ciągnie wyrąb do starych lasów, gdy rynek chce desek i masy. Szybko rosnące gatunki sadzone i planowany wyrąb już zagospodarowanych lasów to zwykła odpowiedź przemysłowa.',
@@ -25,8 +25,8 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'assisted-natural-regeneration': {
     title: 'Wspomagane odnawianie naturalne',
-    hook: 'Po wycince i uprawie suche krajobrazy często zostają gołe, bo odrośla są spasane albo palone, zanim staną się drzewami. Wspomagane odnawianie naturalne chroni to, co już jest w glebie — to nie ciężarówka z szkółki.',
-    imageAlt: 'Drzewa Faidherbia albida z pierzastą zieloną koroną wśród suchej złotej trawy',
+    hook: 'Po wycince i uprawie suche krajobrazy często zostają gołe, bo odrośla są spasane albo palone, zanim staną się drzewami. Wspomagane odnawianie naturalne chroni to, co już jest w glebie.',
+    imageAlt: 'Drzewa ciernia zimowego (Faidherbia albida) z pierzastą zieloną koroną wśród suchej złotej trawy',
     what: [
       'Wspomagane odnawianie naturalne (ANR) to celowa ochrona i pielęgnacja drzew, które już próbują wrócić — z korzeni, pniaków i nasion — zamiast sadzenia nowego drzewostanu ze szkółki. Podręcznik FAO o ANR traktuje to jako metodę odtwarzania: trzymać ogień i bydło z dala od nalotu, uwalniać go od chwastów i konkurencyjnych pędów i pozwolić istniejącemu zasobowi stać się lasem. Po wycince i uprawie suche krajobrazy często zostają gołe, bo te odrośla są spasane albo palone. Przywiezione sadzonki potem padają w tym samym upale.',
       'Odnawianie naturalne zarządzane przez rolnika (FMNR) to polowa wersja tego samego pomysłu. Chomba i współpracownicy w Frontiers in Forests and Global Change w 2020 r. definiują FMNR jako ochronę i zarządzanie naturalnie odnawiającymi się roślinami drzewiastymi na ziemi rolnej — wybór, przycinanie i osłonę pędów z karpy albo nasienia. Odróżniają to od ANR na ziemi leśnej albo porzuconej i od dolesiania. Ta strona obejmuje tę rodzinę: chronić żywy zasób; nie zaczynać od pustej ciężarówki.',
@@ -47,7 +47,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'fire-smart-forestry': {
     title: 'Ogień przepisany',
-    hook: 'Wiek gaszenia każdego ognia zostawił gęste paliwo w wielu lasach umiarkowanych. Przepisane wypalenia i trzebieże wracają częsty, niski ogień według pisemnego planu — to nie licencja klimatyczna na wyrąb.',
+    hook: 'Wiek gaszenia każdego ognia zostawił gęste paliwo w wielu lasach umiarkowanych. Przepisane wypalenia i trzebieże wracają częsty, niski ogień według pisemnego planu.',
     imageAlt:
       'Strażacy leśni w ubraniach ochronnych patrzą, jak niski ogień przepisany idzie przez drzewostan iglasty',
     what: [
@@ -69,7 +69,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'shade-agroforestry': {
     title: 'Kawa i kakao w cieniu',
-    hook: 'Kawa i kakao na pełnym słońcu zastępują okap lasu i tną siedlisko ptaków. Systemy cienia Smithsonian Bird Friendly trzymają roboczy piętro drzew nad uprawą — to nie druga karta agroleśnictwa w ogóle.',
+    hook: 'Kawa i kakao na pełnym słońcu zastępują okap lasu i tną siedlisko ptaków. Systemy cienia Smithsonian Bird Friendly trzymają roboczy piętro drzew nad uprawą.',
     imageAlt: 'Krzewy kawy rosnące pod wysokim okapem drzew cienia na tradycyjnej plantacji',
     what: [
       'Kawa i kakao w cieniu to uprawy pod okapem drzew, nie na otwartej plantacji pełnego słońca. Bloki pełnego słońca zastępują strukturę lasu, tną siedlisko ptaków wędrownych i osiadłych i często potrzebują więcej nawozu i nawadniania. Tradycyjne i certyfikowane systemy cienia zostawiają kawę albo kakao jako uprawę pieniężną i drzewa jako dach. Ta strona jest o tej praktyce „okap nad towarem”. To nie szersza rodzina FAO upraw alejkowych, silwopastorażu i ogrodów przydomowych — to karta Agroleśnictwo na tej półce.',
@@ -90,7 +90,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   agroforestry: {
     title: 'Agroleśnictwo',
-    hook: 'Wycinanie drzew z upraw i pastwisk zostawia glebę, cień i paszę cieńszymi. FAO traktuje agroleśnictwo jako drzewa świadomie łączone z uprawami i zwierzętami — szerszą rodzinę niż kawa cieniowana.',
+    hook: 'Wycinanie drzew z upraw i pastwisk zostawia glebę, cień i paszę cieńszymi. FAO traktuje agroleśnictwo jako drzewa świadomie łączone z uprawami i zwierzętami.',
     imageAlt:
       'Widok z lotu ptaka: uprawy alejkowe i rzędy młodych drzew na farmie Savanna Institute nad rzeką Wisconsin',
     what: [
@@ -112,7 +112,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   windbreaks: {
     title: 'Wiatrochrony / pasy wiatrochronne',
-    hook: 'Otwarte pola biorą cały wiatr: gleba wywiewa, śnieg zawiewa, zwierzęta spalają paszę. Krajowe Centrum Agroleśnictwa USDA traktuje wiatrochrony jako zaprojektowane nasadzenia liniowe — infrastrukturę rolną, nie plantację węglową.',
+    hook: 'Otwarte pola biorą cały wiatr: gleba wywiewa, śnieg zawiewa, zwierzęta spalają paszę. Krajowe Centrum Agroleśnictwa USDA traktuje wiatrochrony jako zaprojektowane nasadzenia liniowe.',
     imageAlt: 'Dwa młode rzędy drzew na palikach tworzące wiatrochron na zielonym polu w Illinois',
     what: [
       'Wiatrochrony — zwane też shelterbelts — to liniowe nasadzenia drzew i krzewów ułożone, by spowolnić wiatr i robić pokrewne prace rolne: ochrona pola, schronienie dla zwierząt, żywe płoty śnieżne, osłona zagrody. Strona wiatrochronów Krajowego Centrum Agroleśnictwa USDA to definicja tej encyklopedii. Otwarte pola i podwórza biorą cały wiatr. Gleba wywiewa, śnieg zawiewa na drogi, zwierzęta w zimnie spalają więcej paszy. Zaprojektowany pas drzew to zwykła odpowiedź Środkowego Zachodu i Wielkich Równin.',
@@ -133,7 +133,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'reduced-impact-logging': {
     title: 'Pozyskanie o zmniejszonym wpływie',
-    hook: 'Zwykły zbiór tropikalny często niszczy pozostały drzewostan nieplanowanymi szlakami zrywkowymi i drzewami zawieszonymi. Pozyskanie o zmniejszonym wpływie to planowany wyrąb i zrywka — nie zakaz wycinki i nie to samo, co zostawienie starego lasu nietkniętego.',
+    hook: 'Zwykły zbiór tropikalny często niszczy pozostały drzewostan nieplanowanymi szlakami zrywkowymi i drzewami zawieszonymi. Pozyskanie o zmniejszonym wpływie to planowany wyrąb i zrywka.',
     imageAlt: 'Żółta ładowarka niesie kłodę w obozie pozyskania w dystrykcie Tawau, Sabah, las w tle',
     what: [
       'Pozyskanie o zmniejszonym wpływie (RIL) to wyrąb zaplanowany i wykonany tak, by szkody w pozostałym lesie były mniejsze: zmapować drzewa towarowe, rozłożyć drogi i szlaki zrywkowe, ścinać w wybranym kierunku i trzymać maszyny na planowanych szlakach. Artykuł Dennisa Dykstry dla FAO o pojęciach i kwestiach traktuje RIL jako zastosowanie znanej inżynierii pozyskania — inwentaryzacja, nadzór, kierunkowy wyrąb, cięcie lian tam, gdzie korony są związane — przeniesione do lasów tropikalnych, gdzie na hektarze stoi tylko kilka drzew handlowych. Zwykły zbiór tropikalny często oznacza źle zaplanowane szlaki, drzewa zawieszone w lianach i uszkodzenie następnego plonu. Pozostały drzewostan i gleba płacą pierwsze.',
@@ -154,7 +154,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'riparian-forest-restoration': {
     title: 'Odtwarzanie lasów nadrzecznych',
-    hook: 'Gdy drzewa nad ciekiem są wycinane, brzegi erodują, składniki spływają, letnia woda się grzeje. Climate Hubs USDA i podręcznik Służby Leśnej o odtwarzaniu nadrzecznym traktują naprawę jako pokrywę na brzegu — lokalną pracę przy cieku, nie hasło zlewni.',
+    hook: 'Gdy drzewa nad ciekiem są wycinane, brzegi erodują, składniki spływają, letnia woda się grzeje. Climate Hubs USDA i podręcznik Służby Leśnej o odtwarzaniu nadrzecznym traktują naprawę jako pokrywę na brzegu.',
     imageAlt: 'Widok z lotu ptaka: zadrzewiony bufor nadrzeczny wzdłuż wijącego się cieku wśród pól w hrabstwie Story, Iowa',
     what: [
       'Odtwarzanie lasu nadrzecznego to praca wracania pokrywy drzewiastej i innej roślinnej na ziemię przy cieku, rzece albo mokrym rowie, żeby brzeg trzymał, woda była w cieniu, a koryto miało korzenie i drewno. Climate Hubs USDA opisują lasy w strefach nadrzecznych jako zmniejszające erozję, buforujące wezbrania, łagodzące temperaturę, tnące parowanie i dające korytarze. Gdy te drzewa wycina się pod pola albo działki, brzegi erodują, składniki spływają, letnia woda się grzeje. Ryby i koryto tracą cień i korzenie, które trzymały krawędź.',
@@ -175,7 +175,7 @@ export const pl: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'community-forestry': {
     title: 'Leśnictwo wspólnotowe',
-    hook: 'Gdy prawa użytkowania siedzą tylko w dalekim urzędzie, okoliczne gospodarstwa nie mają powodu strzec lasu, którego nie mogą legalnie używać. Ustawa leśna Nepalu z 1993 r. i system CFUG to sourced model tej karty — nie kopia Meksyku albo Tanzanii.',
+    hook: 'Gdy prawa użytkowania siedzą tylko w dalekim urzędzie, okoliczne gospodarstwa nie mają powodu strzec lasu, którego nie mogą legalnie używać. Ustawa leśna Nepalu z 1993 r. i grupy użytkowników lasów wspólnotowych są modelem opisanym tutaj.',
     imageAlt: 'Wysokie sosny i drzewa liściaste na trawiastym stoku lasu wspólnotowego Badikhel, Lalitpur, Nepal',
     what: [
       'Leśnictwo wspólnotowe to zarządzanie lasem, w którym lokalni ludzie mają uznane prawa użytkować i dbać o określony las według reguł, które pomagają ustalać, zamiast by państwo było jedynym legalnym gospodarzem. Starsza notatka FAO o leśnictwie wspólnotowym traktuje to przesunięcie praw i obowiązków jako rdzeń pomysłu. Gdy prawa użytkowania siedzą tylko w dalekim urzędzie, okoliczne gospodarstwa nie mają powodu strzec lasu, którego nie mogą legalnie używać. Dalej idzie nielegalny wyrąb i słaba opieka. Tytuł grupy użytkowników to odwrotny układ: ludzie przy drzewach mogą brać to, na co pozwalają reguły, i mają chronić resztę.',

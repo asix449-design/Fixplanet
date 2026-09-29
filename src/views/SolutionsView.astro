@@ -90,7 +90,7 @@ const pageTitle = hub
     ) : (
       <ShelfHeader
         backHref={localizePath('/solutions', locale)}
-        backLabel={ui.solutionsPage.back}
+        backLabel={activeTag === 'forests' ? ui.solutionsPage.backPlain : ui.solutionsPage.back}
         title={shelfTitle}
         lede={activeTag ? ui.solutionsPage.tileLeads[activeTag] : undefined}
       />
@@ -106,12 +106,20 @@ const pageTitle = hub
               <SolutionCard
                 solution={solution}
                 href={
-                  isWaterEncyclopediaSlug(solution.slug)
-                    ? localizePath(waterEncyclopediaPath(solution.slug), locale)
-                    : isForestEncyclopediaSlug(solution.slug)
-                      ? localizePath(forestEncyclopediaPath(solution.slug), locale)
-                      : isCitiesEncyclopediaSlug(solution.slug)
-                        ? localizePath(citiesEncyclopediaPath(solution.slug), locale)
+                  solution.tag === 'water' && isWaterEncyclopediaSlug(solution.detailSlug ?? solution.slug)
+                    ? localizePath(waterEncyclopediaPath(solution.detailSlug ?? solution.slug), locale)
+                    : solution.tag === 'forests' &&
+                        isForestEncyclopediaSlug(solution.detailSlug ?? solution.slug)
+                      ? localizePath(
+                          forestEncyclopediaPath(solution.detailSlug ?? solution.slug),
+                          locale,
+                        )
+                      : solution.tag === 'cities' &&
+                          isCitiesEncyclopediaSlug(solution.detailSlug ?? solution.slug)
+                        ? localizePath(
+                            citiesEncyclopediaPath(solution.detailSlug ?? solution.slug),
+                            locale,
+                          )
                         : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
                 }
               />

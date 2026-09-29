@@ -1,9 +1,9 @@
-import type { ForestEncyclopediaCopy, ForestEncyclopediaSlug } from '../data/solutions-forests';
+import type { ForestEncyclopediaCopy } from '../data/solutions-forests';
 
-export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
+export const en: Record<string, ForestEncyclopediaCopy> = {
   'sustainable-forestry': {
     title: 'Sustainable forestry',
-    hook: 'Slow-growing timber still pulls logging into old forests. Managed planted stands and national inventories already supply a large share of industrial wood — they are not a wild forest by another name.',
+    hook: 'Slow-growing timber still pulls logging into old forests. Managed planted stands and national inventories already supply a large share of industrial wood.',
     imageAlt: 'Misty forestry track with stacked logs and rows of plantation trees',
     what: [
       'Sustainable forest management is the long practice of growing, measuring, and harvesting wood so a forest keeps producing timber and other services. FAO’s overview treats it as management that maintains the forest’s capacity — not a slogan and not a ban on cutting. Slow-growing timber still pulls logging into old forests when markets want boards and pulp. Fast-growing planted species and planned harvest of existing managed forests are the ordinary industrial answer.',
@@ -25,8 +25,8 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'assisted-natural-regeneration': {
     title: 'Assisted natural regeneration',
-    hook: 'After cutting and cropping, dry landscapes often stay bare because sprouts are grazed or burned before they can become trees. Assisted natural regeneration protects what is already in the soil — it is not a nursery truck.',
-    imageAlt: 'Faidherbia albida trees with feathery green canopy standing in dry golden grass',
+    hook: 'After cutting and cropping, dry landscapes often stay bare because sprouts are grazed or burned before they can become trees. Assisted natural regeneration protects what is already in the soil.',
+    imageAlt: 'Winterthorn trees (Faidherbia albida) with a feathery green canopy standing in dry golden grass',
     what: [
       'Assisted natural regeneration (ANR) is the deliberate protection and tending of trees that are already trying to return — from roots, stumps, and seed — instead of planting a new stand from a nursery. FAO’s ANR manual treats it as a restoration method: keep fire and livestock off the recruits, release them from weeds and competing sprouts, and let the existing stock become a woodland. After cutting and cropping, dry landscapes often stay bare because those sprouts are grazed or burned before they can become trees. Trucking in seedlings then fails in the same heat.',
       'Farmer-managed natural regeneration (FMNR) is the farm version of the same idea. Chomba and colleagues, writing in Frontiers in Forests and Global Change in 2020, define FMNR as farmers protecting and managing naturally regenerating woody plants on agricultural land — selecting, pruning, and shielding shoots from rootstock or seed. They distinguish it from ANR on forest or abandoned land and from enrichment planting. This page covers that family: protect living stock; do not start from an empty truck.',
@@ -47,7 +47,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'fire-smart-forestry': {
     title: 'Prescribed fire',
-    hook: 'A century of putting out every fire left dense fuel in many temperate forests. Prescribed burns and thinning restore frequent, low-intensity fire under a written plan — they are not a climate licence to log.',
+    hook: 'A century of putting out every fire left dense fuel in many temperate forests. Prescribed burns and thinning restore frequent, low-intensity fire under a written plan.',
     imageAlt:
       'Wildland firefighters in protective gear watching a low prescribed burn move through a conifer stand',
     what: [
@@ -69,7 +69,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'shade-agroforestry': {
     title: 'Shade coffee and cocoa',
-    hook: 'Full-sun coffee and cocoa replace forest canopy and cut bird habitat. Smithsonian Bird Friendly shade systems keep a working tree layer over the crop — they are not a second card for agroforestry in general.',
+    hook: 'Full-sun coffee and cocoa replace forest canopy and cut bird habitat. Smithsonian Bird Friendly shade systems keep a working tree layer over the crop.',
     imageAlt: 'Coffee shrubs growing under a tall shade-tree canopy in a traditional plantation',
     what: [
       'Shade coffee and shade cocoa are crops grown under a tree canopy instead of in an open, full-sun plantation. Full-sun blocks replace forest structure, cut habitat for migratory and resident birds, and often need more fertilizer and irrigation. Traditional and certified shade systems keep coffee or cocoa as the cash crop and keep trees as the roof. This page is that canopy-over-commodity practice. It is not the wider FAO family of alley cropping, silvopasture, and homegardens — that is the Agroforestry card on this shelf.',
@@ -90,7 +90,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   agroforestry: {
     title: 'Agroforestry',
-    hook: 'Clearing trees from cropland and pasture leaves soil, shade, and fodder thinner. FAO treats agroforestry as trees deliberately combined with crops and livestock — a wider family than shade coffee.',
+    hook: 'Clearing trees from cropland and pasture leaves soil, shade, and fodder thinner. FAO treats agroforestry as trees deliberately combined with crops and livestock.',
     imageAlt:
       'Aerial view of alley-cropping plots and young tree rows on a Savanna Institute farm beside the Wisconsin River',
     what: [
@@ -112,7 +112,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   windbreaks: {
     title: 'Windbreaks / shelterbelts',
-    hook: 'Open fields take the full force of wind: soil blows, snow drifts, livestock burn feed. USDA’s National Agroforestry Center treats windbreaks as designed linear plantings — farm infrastructure, not a carbon plantation.',
+    hook: 'Open fields take the full force of wind: soil blows, snow drifts, livestock burn feed. USDA’s National Agroforestry Center treats windbreaks as designed linear plantings.',
     imageAlt: 'Two young rows of staked trees forming a windbreak across a green Illinois field',
     what: [
       'Windbreaks — also called shelterbelts — are linear plantings of trees and shrubs laid out to slow the wind and to do related farm jobs: field protection, livestock shelter, living snow fences, farmstead screening. The USDA National Agroforestry Center’s windbreaks page is the definition this encyclopedia uses. Open fields and yards take the full force of wind. Soil blows, snow drifts onto roads, and animals burn more feed in cold weather. A designed belt of trees is the ordinary Midwestern and Great Plains answer.',
@@ -133,7 +133,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'reduced-impact-logging': {
     title: 'Reduced-impact logging',
-    hook: 'Conventional tropical harvest often wrecks the residual stand with unplanned skid trails and hung trees. Reduced-impact logging is planned felling and extraction — not a ban on logging and not the same as leaving an old forest uncut.',
+    hook: 'Conventional tropical harvest often wrecks the residual stand with unplanned skid trails and hung trees. Reduced-impact logging is planned felling and extraction.',
     imageAlt: 'A yellow loader carrying a log at a timber camp in Tawau District, Sabah, with forest behind',
     what: [
       'Reduced-impact logging (RIL) is timber harvesting planned and carried out so damage to the remaining forest is kept down: map the crop trees, lay out roads and skid trails, fell in a chosen direction, and keep machines on the planned trails. Dennis Dykstra’s FAO paper on concepts and issues treats RIL as the application of known harvesting engineering — inventory, supervision, directional felling, vine cutting where crowns are tied — transferred into tropical forests where only a few commercial trees stand on a hectare. Conventional tropical harvest often means poorly planned skid trails, trees hung in climbers, and damage to the next crop. The residual stand and the soil pay first.',
@@ -154,7 +154,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'riparian-forest-restoration': {
     title: 'Riparian forest restoration',
-    hook: 'When streamside trees are cleared, banks erode, nutrients wash in, and summer water warms. USDA Climate Hubs and the Forest Service riparian handbook treat the fix as cover on the bank — local stream work, not a watershed slogan.',
+    hook: 'When streamside trees are cleared, banks erode, nutrients wash in, and summer water warms. USDA Climate Hubs and the Forest Service riparian handbook treat the fix as cover on the bank.',
     imageAlt: 'Aerial view of a wooded riparian buffer along a winding creek through farmland in Story County, Iowa',
     what: [
       'Riparian forest restoration is the work of putting woody and other vegetative cover back on the land beside a stream, river, or wet drainage so the bank holds, the water is shaded, and the channel has roots and wood. USDA Climate Hubs describe forests in riparian areas as reducing erosion, buffering high flows, moderating temperature, cutting evaporation, and providing corridors. When those trees are cleared for fields or lots, banks erode, nutrients wash in, and summer water warms. Fish and the channel lose the shade and roots that held the edge.',
@@ -175,7 +175,7 @@ export const en: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'community-forestry': {
     title: 'Community forestry',
-    hook: 'When use rights sit only with a distant office, nearby households have little reason to guard a forest they cannot legally use. Nepal’s Forest Act 1993 and the CFUG system are the sourced model on this card — not a copy of Mexico or Tanzania.',
+    hook: 'When use rights sit only with a distant office, nearby households have little reason to guard a forest they cannot legally use. Nepal’s Forest Act 1993 and community forest user groups are the model described here.',
     imageAlt: 'Tall pines and broadleaf trees on a grassy slope in Badikhel community forest, Lalitpur, Nepal',
     what: [
       'Community forestry is forest management in which local people hold recognised rights to use and care for a defined woodland, under rules they help set, instead of the state being the only legal manager. FAO’s older community-forestry note treats that shift of rights and responsibilities as the core idea. When use rights sit only with a distant office, nearby households have little reason to guard a forest they cannot legally use. Illegal cutting and weak upkeep follow. A user-group title is the opposite arrangement: the people next to the trees can harvest what the rules allow and are expected to protect the rest.',

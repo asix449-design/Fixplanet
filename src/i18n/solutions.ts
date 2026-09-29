@@ -1,6 +1,7 @@
 import { solutionMeta, type Solution, type SolutionCopy } from '../data/solutions';
 import type { Locale } from './config';
 import { getCitiesGrid } from './solutions-cities';
+import { getForestGrid } from './solutions-forests';
 import { pack2 } from './solutions-pack2';
 
 const en: Record<string, SolutionCopy> = {
@@ -22,8 +23,9 @@ const en: Record<string, SolutionCopy> = {
     problemTitle: 'Deforestation',
     fixTitle: 'Sustainable forestry',
     problem: 'Slow-growing timber drives logging of old forests.',
-    fix: 'Fast-growing plantation species and sustainable forestry for building wood — pressure off wild forests.',
+    fix: 'Fast-growing plantation species and measured harvests already supply building wood from managed stands.',
     imageAlt: 'Misty forestry track with stacked logs and rows of plantation trees',
+    sourceLabel: 'FAO',
   },
   'anaerobic-digesters': {
     problemTitle: 'Food waste & methane',
@@ -83,15 +85,17 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Assisted natural regeneration',
     problem:
       'After cutting and cropping, dry landscapes often stay bare because sprouts are grazed or burned before they can become trees. Trucking in seedlings then fails in the same heat.',
-    fix: 'Assisted natural regeneration protects living stumps and roots so trees return from what is already in the soil. Farmer-managed natural regeneration in the Sahel — especially Faidherbia parklands in Niger and neighboring countries — has brought farm trees back at landscape scale. It still needs local rights, grazing control, and time; it is not a nursery dropping saplings from a truck.',
-    imageAlt: 'Faidherbia albida trees with feathery green canopy standing in dry golden grass',
+    fix: 'Assisted natural regeneration protects living stumps and roots so trees return from what is already in the soil. Farmer-managed natural regeneration in the Sahel, especially winterthorn (Faidherbia albida) parklands in Niger and neighboring countries, has brought farm trees back at landscape scale. It still needs local rights, grazing control, and time.',
+    imageAlt: 'Winterthorn trees (Faidherbia albida) with a feathery green canopy standing in dry golden grass',
+    sourceLabel: 'FAO',
   },
   'fire-smart-forestry': {
     problemTitle: 'High-severity wildfire',
     fixTitle: 'Prescribed fire',
     problem:
       'A century of putting out every fire left dense fuel in many temperate forests. When weather is extreme, those stands burn hotter and kill trees that used to survive lighter fire.',
-    fix: 'Prescribed burns and thinning that restore frequent, low-intensity fire are used by forest services and Indigenous practitioners in the western United States, Australia, and parts of Europe. They reduce fuel under the right weather. They do not stop every megafire in a heatwave, and poorly planned burns can escape. Treat them as landscape maintenance, not a climate offset.',
+    fix: 'Prescribed burns and thinning restore frequent, low-intensity fire. Forest services and Indigenous practitioners use them in the western United States, Australia, and parts of Europe, when the weather is right, to reduce fuel. Treat them as landscape maintenance.',
+    sourceLabel: 'National Wildfire Coordinating Group',
     imageAlt:
       'Wildland firefighters in protective gear watching a low prescribed burn move through a conifer stand',
   },
@@ -100,7 +104,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Shade coffee and cocoa',
     problem:
       'Full-sun coffee and cocoa plantations replace forest canopy, cut bird habitat, and often need more fertilizer and irrigation. Demand still drives new clearing at forest edges.',
-    fix: 'Traditional and certified shade systems grow coffee or cocoa under a tree canopy that holds soil, birds, and some forest structure. They are ordinary agriculture in parts of Latin America and West Africa. Shade does not automatically stop deforestation if prices push the frontier, and certification is only as honest as the audit.',
+    fix: 'Traditional and certified shade systems grow coffee or cocoa under a tree canopy that holds soil, birds, and some forest structure. They are ordinary agriculture in parts of Latin America and West Africa. Prices at the forest edge and the care of the audit still shape what that canopy protects.',
+    sourceLabel: 'Smithsonian',
     imageAlt: 'Coffee shrubs growing under a tall shade-tree canopy in a traditional plantation',
   },
   'pet-bottle-recycling': {
@@ -288,7 +293,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Agroforestry',
     problem:
       'Clearing trees from cropland and pasture leaves soil, shade, and fodder thinner. Farms then lean harder on fertilizer, irrigation, and feed brought from elsewhere.',
-    fix: 'Agroforestry puts trees back with crops and livestock — alley cropping, silvopasture, homegardens, and related systems. FAO treats three main types and highlights examples such as the Amazonian Chakra in Ecuador. Shade coffee and cocoa are a separate card. Trees need rights, time, and design; a row of seedlings is not a forest offset.',
+    fix: 'Agroforestry puts trees back with crops and livestock: alley cropping, silvopasture, homegardens, and related systems. The Food and Agriculture Organization of the United Nations treats three main types and highlights examples such as the Amazonian Chakra in Ecuador. Trees need rights, time, and design.',
+    sourceLabel: 'FAO',
     imageAlt: 'Aerial view of alley-cropping plots and young tree rows on a Savanna Institute farm beside the Wisconsin River',
   },
   windbreaks: {
@@ -296,7 +302,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Windbreaks / shelterbelts',
     problem:
       'Open fields and yards take the full force of wind. Soil blows, snow drifts onto roads, and animals burn more feed in cold weather.',
-    fix: 'USDA’s National Agroforestry Center describes windbreaks — also called shelterbelts — as linear plantings of trees and shrubs laid out for a purpose: field protection, livestock shelter, living snow fences, or farmstead screening. Height, density, gaps, and orientation decide what they do. They are farm infrastructure, not a carbon plantation, and they fail if they are not maintained.',
+    fix: 'The U.S. Department of Agriculture National Agroforestry Center describes windbreaks, also called shelterbelts, as linear plantings of trees and shrubs laid out for a purpose: field protection, livestock shelter, living snow fences, or farmstead screening. Height, density, gaps, and orientation decide what they do. They are farm infrastructure, and they need maintenance.',
+    sourceLabel: 'National Agroforestry Center',
     imageAlt: 'Two young rows of staked trees forming a windbreak across a green Illinois field',
   },
   'reduced-impact-logging': {
@@ -304,7 +311,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Reduced-impact logging',
     problem:
       'Conventional tropical harvest often means poorly planned skid trails, felled trees hung in climbers, and damage to the trees left behind. The next crop and the soil pay first.',
-    fix: 'Reduced-impact logging (RIL) is planned harvesting: pre-harvest mapping, directional felling, and controlled skid trails. FAO case work traces early systems in Sarawak and later trials in Suriname, Guyana, Cameroon, and elsewhere. Research found lower damage and, in some cases, lower cost, but many firms still do not change practice. RIL is not a ban on logging and it is not the same as leaving an old forest uncut.',
+    fix: 'Reduced-impact logging is planned harvesting: pre-harvest mapping, directional felling, and controlled skid trails. Food and Agriculture Organization case work traces early systems in Sarawak and later trials in Suriname, Guyana, Cameroon, and elsewhere. Research found lower damage and, in some cases, lower cost, but many firms still do not change practice.',
+    sourceLabel: 'FAO',
     imageAlt: 'A yellow loader carrying a log at a timber camp in Tawau District, Sabah, with forest behind',
   },
   'riparian-forest-restoration': {
@@ -312,7 +320,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Riparian forest restoration',
     problem:
       'When streamside trees are cleared for fields or lots, banks erode, nutrients wash in, and summer water warms. Fish and the channel lose the shade and roots that held the edge.',
-    fix: 'USDA Climate Hubs describe maintaining or restoring forest and other cover in riparian zones: mixed plantings, no-harvest or limited-harvest buffers, and bank stabilization. The aim is shade, woody debris, and soil held by roots. It is local stream work. A planted strip does not restore a whole watershed if the uplands stay bare.',
+    fix: 'The U.S. Department of Agriculture Climate Hubs describe maintaining or restoring forest and other cover in riparian zones: mixed plantings, no-harvest or limited-harvest buffers, and bank stabilization. The aim is shade, woody debris, and soil held by roots. It is local work along the bank.',
+    sourceLabel: 'Climate Hubs',
     imageAlt: 'Aerial view of a wooded riparian buffer along a winding creek through farmland in Story County, Iowa',
   },
   'community-forestry': {
@@ -320,7 +329,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Community forestry',
     problem:
       'When use rights sit only with a distant office, nearby households have little reason to guard a forest they cannot legally use. Illegal cutting and weak upkeep follow.',
-    fix: 'Nepal’s community forestry gives Community Forest User Groups local management rights. FAO and the Federation of Community Forestry Users Nepal (FECOFUN) treat the model as a widely cited example of people-centered forest governance. It still needs accountable groups, markets that do not strip the stand, and space for women and Indigenous users. A user-group title is not automatic conservation.',
+    fix: 'Nepal’s community forestry gives community forest user groups local management rights. The Food and Agriculture Organization of the United Nations and the Federation of Community Forestry Users Nepal treat the model as a widely cited example of people-centered forest governance. It still needs accountable groups, markets that leave the stand standing, and space for women and Indigenous users.',
+    sourceLabel: 'Community forestry users, Nepal',
     imageAlt: 'Tall pines and broadleaf trees on a grassy slope in Badikhel community forest, Lalitpur, Nepal',
   },
   'mrf-optical-sorting': {
@@ -400,8 +410,9 @@ const ru: Record<string, SolutionCopy> = {
     problemTitle: 'Вырубка лесов',
     fixTitle: 'Устойчивое лесное хозяйство',
     problem: 'Медленно растущая древесина подталкивает к рубке старых лесов.',
-    fix: 'Быстрорастущие плантационные породы и устойчивое лесное хозяйство для стройматериалов — нагрузка с диких лесов снимается.',
+    fix: 'Быстрорастущие плантационные породы и учтённые рубки уже дают строительную древесину из управляемых древостоев.',
     imageAlt: 'Туманная лесная дорога со штабелями брёвен и рядами плантационных деревьев',
+    sourceLabel: 'ФАО',
   },
   'anaerobic-digesters': {
     problemTitle: 'Пищевые отходы и метан',
@@ -461,15 +472,17 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Поддерживаемое естественное возобновление',
     problem:
       'После рубки и пашни сухие ландшафты часто остаются голыми: поросль съедают или выжигают, пока она не стала деревом. Привозные саженцы потом гибнут в том же зное.',
-    fix: 'Поддерживаемое естественное возобновление бережёт живые пни и корни, чтобы деревья вернулись из того, что уже есть в почве. Фермерское возобновление в Сахеле — особенно парки Faidherbia в Нигере и соседних странах — вернуло полевые деревья на ландшафтном масштабе. Нужны местные права, контроль выпаса и время; это не питомник, сгружающий саженцы с грузовика.',
-    imageAlt: 'Деревья Faidherbia albida с перистой зелёной кроной среди сухой золотистой травы',
+    fix: 'Поддерживаемое естественное возобновление бережёт живые пни и корни, чтобы деревья вернулись из того, что уже есть в почве. Фермерское возобновление в Сахеле, особенно парки зимнего тёрна (Faidherbia albida) в Нигере и соседних странах, вернуло полевые деревья на ландшафтном масштабе. Нужны местные права, контроль выпаса и время.',
+    imageAlt: 'Деревья зимнего тёрна (Faidherbia albida) с перистой зелёной кроной среди сухой золотистой травы',
+    sourceLabel: 'ФАО',
   },
   'fire-smart-forestry': {
     problemTitle: 'Катастрофические верховые пожары',
     fixTitle: 'Плановые отжиги',
     problem:
       'Век тушения каждого огня оставил в многих лесах густое топливо. В экстремальную погоду эти древостои горят жарче и убивают деревья, которые раньше переживали лёгкий пал.',
-    fix: 'Плановые палы и прореживание, которые возвращают частый низовой огонь, применяют лесные службы и коренные практики на западе США, в Австралии и части Европы. При верной погоде топливо уменьшается. Это не останавливает каждый мегапожар в волне жары, а плохо спланированный пал может уйти. Это уход за ландшафтом, а не климатический офсет.',
+    fix: 'Плановые палы и прореживание возвращают частый низовой огонь. Лесные службы и практики коренных народов применяют их на западе Соединённых Штатов, в Австралии и части Европы, когда погода подходит, чтобы уменьшить топливо. Это уход за ландшафтом.',
+    sourceLabel: 'Национальная группа координации лесных пожаров',
     imageAlt:
       'Пожарные в защитной форме следят за низким плановым отжигом в хвойном лесу',
   },
@@ -478,7 +491,8 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Теневые кофе и какао',
     problem:
       'Плантации кофе и какао на полном солнце сменяют лесной полог, режут птичьи местообитания и часто требуют больше удобрений и полива. Спрос всё ещё двигает вырубку по кромке леса.',
-    fix: 'Традиционные и сертифицированные теневые системы растят кофе или какао под пологом деревьев, который держит почву, птиц и часть лесной структуры. Это обычное хозяйство в частях Латинской Америки и Западной Африки. Тень сама по себе не останавливает обезлесение, если цена толкает фронтир, а сертификация честна лишь настолько, насколько честен аудит.',
+    fix: 'Традиционные и сертифицированные теневые системы растят кофе или какао под пологом деревьев, который держит почву, птиц и часть лесной структуры. Это обычное хозяйство в частях Латинской Америки и Западной Африки. Цены у кромки леса и тщательность проверки по-прежнему определяют, что этот полог сохраняет.',
+    sourceLabel: 'Смитсоновский институт',
     imageAlt: 'Кофейные кусты под высоким теневым пологом на традиционной плантации',
   },
   'pet-bottle-recycling': {
@@ -666,7 +680,8 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Агролесоводство',
     problem:
       'Сведение деревьев с пашни и пастбища оставляет почву, тень и корм тоньше. Хозяйства тогда сильнее зависят от удобрений, полива и привозного корма.',
-    fix: 'Агролесоводство возвращает деревья к культурам и скоту — аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. ФАО выделяет три основных типа и приводит примеры вроде амазонской чакры в Эквадоре. Теневые кофе и какао — отдельная карточка. Деревьям нужны права, время и проект; ряд саженцев — не лесной офсет.',
+    fix: 'Агролесоводство возвращает деревья к культурам и скоту: аллейные посадки, сильвопастбища, приусадебные сады и родственные системы. Продовольственная и сельскохозяйственная организация Объединённых Наций выделяет три основных типа и приводит примеры вроде амазонской чакры в Эквадоре. Деревьям нужны права, время и проект.',
+    sourceLabel: 'ФАО',
     imageAlt: 'Вид сверху: аллейные посадки и ряды молодых деревьев на ферме Savanna Institute у реки Висконсин'
   },
   windbreaks: {
@@ -674,15 +689,17 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Ветрозащитные полосы / лесополосы',
     problem:
       'Открытые поля и дворы принимают весь ветер. Почва улетает, снег метёт на дороги, животные в холод тратят больше корма.',
-    fix: 'Национальный центр агролесоводства USDA описывает ветрозащитные полосы — их же называют shelterbelts — как линейные посадки деревьев и кустарников под задачу: защита поля, укрытие скота, живые снегозадержатели или экран усадьбы. Высота, плотность, разрывы и ориентация решают, что полоса делает. Это фермерская инфраструктура, а не углеродная плантация, и без ухода она не работает.',
-    imageAlt: 'Два молодых ряда деревьев на кольях — ветрозащитная полоса на зелёном поле в Иллинойсе'
+    fix: 'Национальный центр агролесоводства Министерства сельского хозяйства США описывает ветрозащитные полосы, их же называют лесополосами, как линейные посадки деревьев и кустарников под задачу: защита поля, укрытие скота, живые снегозадержатели или экран усадьбы. Высота, плотность, разрывы и ориентация решают, что полоса делает. Это фермерская инфраструктура, и ей нужен уход.',
+    sourceLabel: 'Национальный центр агролесоводства',
+    imageAlt: 'Два молодых ряда деревьев на кольях, ветрозащитная полоса на зелёном поле в Иллинойсе'
   },
   'reduced-impact-logging': {
     problemTitle: 'Рубка, которая ломает оставшийся древостой',
     fixTitle: 'Рубка с пониженным воздействием',
     problem:
       'Обычная тропическая заготовка часто значит плохо спланированные трелёвочные волоки, деревья, зависшие в лианах, и порчу оставленных стволов. Следующий урожай и почва платят первыми.',
-    fix: 'Рубка с пониженным воздействием (RIL) — это плановая заготовка: картирование до рубки, направленная валка и контролируемые волоки. Обзоры ФАО ведут ранние системы к Сараваку и более поздние опыты — к Суринаму, Гайане, Камеруну и другим местам. Исследования находили меньший ущерб и иногда меньшую стоимость, но многие фирмы практику не меняют. RIL — не запрет рубки и не то же самое, что оставить старый лес нетронутым.',
+    fix: 'Рубка с пониженным воздействием это плановая заготовка: картирование до рубки, направленная валка и контролируемые волоки. Обзоры Продовольственной и сельскохозяйственной организации Объединённых Наций ведут ранние системы к Сараваку, а более поздние опыты к Суринаму, Гайане, Камеруну и другим местам. Исследования находили меньший ущерб и иногда меньшую стоимость, но многие фирмы практику не меняют.',
+    sourceLabel: 'ФАО',
     imageAlt: 'Жёлтый погрузчик несёт бревно в лесозаготовительном лагере округа Тавау, Сабах, лес позади'
   },
   'riparian-forest-restoration': {
@@ -690,15 +707,17 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Восстановление прирусловых лесов',
     problem:
       'Когда прирусловые деревья сводят под поля или участки, берега размываются, питательные вещества смываются, летняя вода греется. Рыба и русло теряют тень и корни, которые держали кромку.',
-    fix: 'Климатические хабы USDA описывают сохранение или восстановление леса и другой растительности в прирусловых зонах: смешанные посадки, буферы без рубки или с ограниченной рубкой, укрепление берега. Цель — тень, древесный валеж и почва на корнях. Это местная работа у ручья. Посаженная полоса не восстанавливает весь водосбор, если верховья остаются голыми.',
+    fix: 'Климатические центры Министерства сельского хозяйства США описывают сохранение или восстановление леса и другой растительности в прирусловых зонах: смешанные посадки, буферы без рубки или с ограниченной рубкой, укрепление берега. Цель: тень, древесный валеж и почва на корнях. Это местная работа у ручья.',
+    sourceLabel: 'Климатические центры',
     imageAlt: 'Вид сверху: древесный прирусловый буфер вдоль извилистого ручья среди полей в округе Стори, Айова'
   },
   'community-forestry': {
     problemTitle: 'Леса, которыми управляют далеко от живущих в них людей',
     fixTitle: 'Общинное лесное хозяйство',
     problem:
-      'Когда права пользования сидят только в далёкой канцелярии, соседние хозяйства мало берегут лес, которым нельзя законно пользоваться. Дальше — нелегальная рубка и слабый уход.',
-    fix: 'Общинное лесное хозяйство Непала передаёт местные права группам пользователей общинных лесов. ФАО и Федерация пользователей общинных лесов Непала (FECOFUN) считают модель широко цитируемым примером лесного управления «от людей». Нужны подотчётные группы, рынки, которые не оголяют древостой, и место для женщин и коренных пользователей. Титул группы сам по себе не есть охрана.',
+      'Когда права пользования сидят только в далёкой канцелярии, соседние хозяйства мало берегут лес, которым нельзя законно пользоваться. Дальше идёт нелегальная рубка и слабый уход.',
+    fix: 'Общинное лесное хозяйство Непала передаёт местные права группам пользователей общинных лесов. Продовольственная и сельскохозяйственная организация Объединённых Наций и Федерация пользователей общинных лесов Непала считают модель широко цитируемым примером лесного управления с участием людей. Нужны подотчётные группы, рынки, которые оставляют древостой на корню, и место для женщин и коренных пользователей.',
+    sourceLabel: 'Федерация пользователей общинных лесов Непала',
     imageAlt: 'Высокие сосны и лиственные деревья на травянистом склоне общинного леса Бадикхел, Лалитпур, Непал'
   },
   'mrf-optical-sorting': {
@@ -778,8 +797,9 @@ const pl: Record<string, SolutionCopy> = {
     problemTitle: 'Wylesianie',
     fixTitle: 'Zrównoważona gospodarka leśna',
     problem: 'Wolno rosnące drewno pcha do wycinki starych lasów.',
-    fix: 'Szybko rosnące gatunki plantacyjne i zrównoważona gospodarka leśna na drewno budowlane — mniej presji na lasy naturalne.',
+    fix: 'Szybko rosnące gatunki plantacyjne i policzone cięcia już dostarczają drewno budowlane z zagospodarowanych drzewostanów.',
     imageAlt: 'Zamglona leśna droga ze stosami kłód i rzędami drzew plantacyjnych',
+    sourceLabel: 'FAO',
   },
   'anaerobic-digesters': {
     problemTitle: 'Odpady spożywcze i metan',
@@ -839,15 +859,17 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Wspomagana regeneracja naturalna',
     problem:
       'Po wycince i uprawie suche krajobrazy często zostają gołe: odrosty zgryzają lub palą, zanim staną się drzewami. Przywożone sadzonki giną potem w tym samym upale.',
-    fix: 'Wspomagana regeneracja naturalna chroni żywe pniaki i korzenie, żeby drzewa wróciły z tego, co już jest w glebie. Regeneracja prowadzona przez rolników w Sahelu — zwłaszcza parki Faidherbia w Nigrze i krajach sąsiednich — przywróciła drzewa polne w skali krajobrazu. Nadal potrzeba lokalnych praw, kontroli wypasu i czasu; to nie szkółka zrzucająca sadzonki z ciężarówki.',
-    imageAlt: 'Drzewa Faidherbia albida z pierzastą zieloną koroną wśród suchej złotej trawy',
+    fix: 'Wspomagana regeneracja naturalna chroni żywe pniaki i korzenie, żeby drzewa wróciły z tego, co już jest w glebie. Regeneracja prowadzona przez rolników w Sahelu, zwłaszcza parki ciernia zimowego (Faidherbia albida) w Nigrze i krajach sąsiednich, przywróciła drzewa polne w skali krajobrazu. Nadal potrzeba lokalnych praw, kontroli wypasu i czasu.',
+    imageAlt: 'Drzewa ciernia zimowego (Faidherbia albida) z pierzastą zieloną koroną wśród suchej złotej trawy',
+    sourceLabel: 'FAO',
   },
   'fire-smart-forestry': {
     problemTitle: 'Pożary o wysokiej intensywności',
     fixTitle: 'Wypalanie kontrolowane',
     problem:
       'Wiek gaszenia każdego ognia zostawił w wielu lasach gęste paliwo. Przy ekstremalnej pogodzie te drzewostany palą się goręcej i zabijają drzewa, które wcześniej przeżywały łagodniejszy ogień.',
-    fix: 'Kontrolowane wypalanie i trzebież, które przywracają częsty, niski ogień, stosują służby leśne i praktyki rdzenne na zachodzie USA, w Australii i części Europy. Przy właściwej pogodzie paliwo maleje. Nie zatrzymują każdego megapożaru w fali upałów, a źle zaplanowany wypał może uciec. To utrzymanie krajobrazu, nie offset klimatyczny.',
+    fix: 'Kontrolowane wypalanie i trzebież przywracają częsty, niski ogień. Służby leśne i praktyki ludów rdzennych stosują je na zachodzie Stanów Zjednoczonych, w Australii i części Europy, gdy pogoda jest odpowiednia, żeby zmniejszyć paliwo. To utrzymanie krajobrazu.',
+    sourceLabel: 'Krajowa grupa koordynacji pożarów terenowych',
     imageAlt:
       'Strażacy leśni w odzieży ochronnej obserwują niski kontrolowany wypał w drzewostanie iglastym',
   },
@@ -856,7 +878,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Cień w kawie i kakao',
     problem:
       'Plantacje kawy i kakao w pełnym słońcu zastępują koronę lasu, tną siedliska ptaków i często potrzebują więcej nawozu i nawadniania. Popyt wciąż pcha nową wycinkę na krawędzi lasu.',
-    fix: 'Tradycyjne i certyfikowane systemy cienia uprawiają kawę lub kakao pod koroną drzew, która trzyma glebę, ptaki i część struktury lasu. To zwykłe rolnictwo w częściach Ameryki Łacińskiej i Afryki Zachodniej. Cień sam z siebie nie zatrzymuje wylesiania, jeśli cena pcha frontier, a certyfikat jest tak uczciwy, jak audyt.',
+    fix: 'Tradycyjne i certyfikowane systemy cienia uprawiają kawę lub kakao pod koroną drzew, która trzyma glebę, ptaki i część struktury lasu. To zwykłe rolnictwo w częściach Ameryki Łacińskiej i Afryki Zachodniej. Ceny na skraju lasu i staranność audytu wciąż kształtują to, co ta korona chroni.',
+    sourceLabel: 'Instytut Smithsona',
     imageAlt: 'Krzewy kawowca pod wysoką koroną drzew cieniujących na tradycyjnej plantacji',
   },
   'pet-bottle-recycling': {
@@ -1044,7 +1067,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Agroleśnictwo',
     problem:
       'Wycinka drzew z upraw i pastwisk zostawia glebę, cień i paszę cieńszymi. Gospodarstwa wtedy mocniej opierają się na nawozie, nawadnianiu i paszy z zewnątrz.',
-    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt — uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. FAO wyróżnia trzy główne typy i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Cień w kawie i kakao to osobna karta. Drzewa potrzebują praw, czasu i projektu; rząd sadzonek to nie offset leśny.',
+    fix: 'Agroleśnictwo wraca drzewa do upraw i zwierząt: uprawy alejkowe, silwopastoraż, ogrody przydomowe i pokrewne systemy. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa wyróżnia trzy główne typy i wskazuje przykłady takie jak amazońska chakra w Ekwadorze. Drzewa potrzebują praw, czasu i projektu.',
+    sourceLabel: 'FAO',
     imageAlt: 'Widok z lotu ptaka: uprawy alejkowe i rzędy młodych drzew na farmie Savanna Institute nad rzeką Wisconsin'
   },
   windbreaks: {
@@ -1052,7 +1076,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Wiatrochrony / pasy wiatrochronne',
     problem:
       'Otwarte pola i podwórza biorą cały wiatr. Gleba wywiewa, śnieg zawiewa na drogi, a zwierzęta w zimnie spalają więcej paszy.',
-    fix: 'Krajowe Centrum Agroleśnictwa USDA opisuje wiatrochrony — zwane też shelterbelts — jako liniowe nasadzenia drzew i krzewów pod zadanie: ochrona pola, schronienie dla zwierząt, żywe płoty śnieżne albo osłona zagrody. Wysokość, zagęszczenie, luki i orientacja decydują, co pas robi. To infrastruktura rolna, nie plantacja węglowa, i bez utrzymania nie działa.',
+    fix: 'Krajowe Centrum Agroleśnictwa Departamentu Rolnictwa Stanów Zjednoczonych opisuje wiatrochrony, zwane też pasami ochronnymi, jako liniowe nasadzenia drzew i krzewów pod zadanie: ochrona pola, schronienie dla zwierząt, żywe płoty śnieżne albo osłona zagrody. Wysokość, zagęszczenie, luki i orientacja decydują, co pas robi. To infrastruktura rolna, i potrzebuje utrzymania.',
+    sourceLabel: 'Krajowe Centrum Agroleśnictwa',
     imageAlt: 'Dwa młode rzędy drzew na palikach tworzące wiatrochron na zielonym polu w Illinois'
   },
   'reduced-impact-logging': {
@@ -1060,7 +1085,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Pozyskanie o zmniejszonym wpływie',
     problem:
       'Zwykły zbiór tropikalny często oznacza źle zaplanowane szlaki zrywkowe, drzewa zawieszone w lianach i uszkodzenie pozostawionych pni. Następny plon i gleba płacą pierwsze.',
-    fix: 'Pozyskanie o zmniejszonym wpływie (RIL) to planowany wyrąb: mapowanie przed zbiorem, kierunkowy wyrąb i kontrolowane szlaki. Prace FAO prowadzą wczesne systemy do Sarawaku, a późniejsze próby do Surinamu, Gujany, Kamerunu i innych miejsc. Badania znajdowały mniejsze szkody i czasem niższy koszt, ale wiele firm praktyki nie zmienia. RIL to nie zakaz wycinki i nie to samo, co zostawienie starego lasu nietkniętego.',
+    fix: 'Pozyskanie o zmniejszonym wpływie to planowany wyrąb: mapowanie przed zbiorem, kierunkowy wyrąb i kontrolowane szlaki. Prace Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa prowadzą wczesne systemy do Sarawaku, a późniejsze próby do Surinamu, Gujany, Kamerunu i innych miejsc. Badania znajdowały mniejsze szkody i czasem niższy koszt, ale wiele firm praktyki nie zmienia.',
+    sourceLabel: 'FAO',
     imageAlt: 'Żółta ładowarka niesie kłodę w obozie pozyskania w dystrykcie Tawau, Sabah, las w tle'
   },
   'riparian-forest-restoration': {
@@ -1068,7 +1094,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Odtwarzanie lasów nadrzecznych',
     problem:
       'Gdy drzewa nad ciekiem wycinane są pod pola albo działki, brzegi erodują, składniki spływają, a letnia woda się grzeje. Ryby i koryto tracą cień i korzenie, które trzymały krawędź.',
-    fix: 'Climate Hubs USDA opisują utrzymanie albo odtworzenie lasu i innej pokrywy w strefach nadrzecznych: mieszane nasadzenia, bufory bez wyrębu albo z ograniczonym wyrębem, umocnienie brzegu. Cel to cień, rumosz drzewny i gleba na korzeniach. To lokalna praca przy cieku. Posadzony pas nie odtwarza całej zlewni, jeśli górne tereny zostają gołe.',
+    fix: 'Centra klimatyczne Departamentu Rolnictwa Stanów Zjednoczonych opisują utrzymanie albo odtworzenie lasu i innej pokrywy w strefach nadrzecznych: mieszane nasadzenia, bufory bez wyrębu albo z ograniczonym wyrębem, umocnienie brzegu. Cel to cień, rumosz drzewny i gleba na korzeniach. To lokalna praca przy cieku.',
+    sourceLabel: 'Centra klimatyczne',
     imageAlt: 'Widok z lotu ptaka: zadrzewiony bufor nadrzeczny wzdłuż wijącego się cieku wśród pól w hrabstwie Story, Iowa'
   },
   'community-forestry': {
@@ -1076,7 +1103,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Leśnictwo wspólnotowe',
     problem:
       'Gdy prawa użytkowania siedzą tylko w dalekim urzędzie, okoliczne gospodarstwa nie mają powodu strzec lasu, którego nie mogą legalnie używać. Dalej idzie nielegalny wyrąb i słaba opieka.',
-    fix: 'Leśnictwo wspólnotowe Nepalu daje grupom użytkowników lasów wspólnotowych lokalne prawa zarządzania. FAO i Federacja Użytkowników Lasów Wspólnotowych Nepalu (FECOFUN) traktują model jako szeroko cytowany przykład leśnego zarządzania od ludzi. Nadal potrzeba rozliczalnych grup, rynków, które nie ogołacają drzewostanu, i miejsca dla kobiet oraz użytkowników rdzennych. Tytuł grupy sam z siebie nie jest ochroną.',
+    fix: 'Leśnictwo wspólnotowe Nepalu daje grupom użytkowników lasów wspólnotowych lokalne prawa zarządzania. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa i Federacja Użytkowników Lasów Wspólnotowych Nepalu traktują model jako szeroko cytowany przykład leśnego zarządzania z udziałem ludzi. Nadal potrzeba rozliczalnych grup, rynków, które zostawiają drzewostan na pniu, i miejsca dla kobiet oraz użytkowników rdzennych.',
+    sourceLabel: 'Federacja użytkowników lasów wspólnotowych Nepalu',
     imageAlt: 'Wysokie sosny i drzewa liściaste na trawiastym stoku lasu wspólnotowego Badikhel, Lalitpur, Nepal'
   },
   'mrf-optical-sorting': {
@@ -1156,8 +1184,9 @@ const lv: Record<string, SolutionCopy> = {
     problemTitle: 'Mežu izciršana',
     fixTitle: 'Ilgtspējīga mežsaimniecība',
     problem: 'Lēni augoša koksne mudina cirst vecos mežus.',
-    fix: 'Ātraudzīgas plantāciju sugas un ilgtspējīga mežsaimniecība būvkoksnei — mazāks spiediens uz savvaļas mežiem.',
+    fix: 'Ātraudzīgas plantāciju sugas un uzskaitīta ciršana jau dod būvkoksni no apsaimniekotām audzēm.',
     imageAlt: 'Miglaina meža ceļa josla ar sakrautiem baļķiem un plantāciju koku rindām',
+    sourceLabel: 'FAO',
   },
   'anaerobic-digesters': {
     problemTitle: 'Pārtikas atkritumi un metāns',
@@ -1217,15 +1246,17 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Atbalstīta dabiskā atjaunošanās',
     problem:
       'Pēc ciršanas un tīrumiem sausas ainavas bieži paliek kailas: atvases noganā vai nodedzina, pirms tās kļūst par kokiem. Atvestie stādi pēc tam iet bojā tajā pašā karstumā.',
-    fix: 'Atbalstīta dabiskā atjaunošanās sargā dzīvus celmus un saknes, lai koki atgrieztos no tā, kas jau ir augsnē. Zemnieku vadīta atjaunošanās Sahelā — īpaši Faidherbia parkveida kokaudzes Nigērā un kaimiņvalstīs — ir atgriezusi lauku kokus ainavas mērogā. Joprojām vajag vietējās tiesības, ganību kontroli un laiku; tas nav kokaudzētava, kas izkrauj stādus no kravas auto.',
-    imageAlt: 'Faidherbia albida koki ar spalvainu zaļu vainagu sausā zeltainā zālē',
+    fix: 'Atbalstīta dabiskā atjaunošanās sargā dzīvus celmus un saknes, lai koki atgrieztos no tā, kas jau ir augsnē. Zemnieku vadīta atjaunošanās Sahelā, īpaši ziemas ērkšķa (Faidherbia albida) parkveida kokaudzes Nigērā un kaimiņvalstīs, ir atgriezusi lauku kokus ainavas mērogā. Joprojām vajag vietējās tiesības, ganību kontroli un laiku.',
+    imageAlt: 'Ziemas ērkšķa (Faidherbia albida) koki ar spalvainu zaļu vainagu sausā zeltainā zālē',
+    sourceLabel: 'FAO',
   },
   'fire-smart-forestry': {
     problemTitle: 'Augstas intensitātes meža ugunsgrēki',
     fixTitle: 'Plānotā dedzināšana',
     problem:
       'Gadsimts, kad dzēsa katru uguni, daudzos mežos atstāja biezu degvielu. Ekstremālā laikā šīs audzes deg karstāk un nogalina kokus, kas agrāk pārdzīvoja vieglāku uguni.',
-    fix: 'Plānotos ugunsgrēkus un retināšanu, kas atjauno biežu, zemu uguni, lieto meža dienesti un pirmiedzīvotāju prakses ASV rietumos, Austrālijā un daļā Eiropas. Pareizā laikā degviela samazinās. Tie neaptur katru megaugunsgrēku karstuma vilnī, un slikti plānots uguns var aiziet. Tā ir ainavas kopšana, nevis klimata ofsets.',
+    fix: 'Plānotie ugunsgrēki un retināšana atjauno biežu, zemu uguni. Meža dienesti un pirmiedzīvotāju prakses tos lieto Amerikas Savienoto Valstu rietumos, Austrālijā un daļā Eiropas, kad laikapstākļi ir piemēroti, lai samazinātu degvielu. Tā ir ainavas kopšana.',
+    sourceLabel: 'Nacionālā savvaļas ugunsgrēku koordinācijas grupa',
     imageAlt:
       'Meža ugunsdzēsēji aizsargtērpos vēro zemu plānoto uguni skuju audzē',
   },
@@ -1234,7 +1265,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Ēnas kafija un kakao',
     problem:
       'Kafijas un kakao plantācijas pilnā saulē nomaina meža vainagu, griež putnu dzīvotnes un bieži prasa vairāk mēslojuma un laistīšanas. Pieprasījums joprojām dzen jaunu ciršanu meža malā.',
-    fix: 'Tradicionālās un sertificētās ēnas sistēmas audzē kafiju vai kakao zem koku vainaga, kas tur augsni, putnus un daļu meža struktūras. Tā ir parasta lauksaimniecība daļā Latīņamerikas un Rietumāfrikas. Ēna pati par sevi neaptur mežu izciršanu, ja cena dzen frontieri, un sertifikāts ir tik godīgs, cik audits.',
+    fix: 'Tradicionālās un sertificētās ēnas sistēmas audzē kafiju vai kakao zem koku vainaga, kas tur augsni, putnus un daļu meža struktūras. Tā ir parasta lauksaimniecība daļā Latīņamerikas un Rietumāfrikas. Cenas meža malā un audita rūpība joprojām nosaka, ko šis vainags sargā.',
+    sourceLabel: 'Smitsona institūts',
     imageAlt: 'Kafijas krūmi zem augsta ēnas koku vainaga tradicionālā plantācijā',
   },
   'pet-bottle-recycling': {
@@ -1422,7 +1454,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Agromežsaimniecība',
     problem:
       'Koku ciršana no tīrumiem un ganībām atstāj augsni, ēnu un barību plānāku. Saimniecības tad vairāk balstās uz mēslojumu, laistīšanu un ievesto barību.',
-    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem — aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. FAO izšķir trīs galvenos tipus un izceļ piemērus kā Amazones čakru Ekvadorā. Ēnas kafija un kakao ir atsevišķa karte. Kokiem vajag tiesības, laiku un projektu; stādu rinda nav meža ofsets.',
+    fix: 'Agromežsaimniecība atgriež kokus pie kultūrām un lopiem: aleju sējumi, silvopastūra, mājas dārzi un radniecīgas sistēmas. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija izšķir trīs galvenos tipus un izceļ piemērus kā Amazones čakru Ekvadorā. Kokiem vajag tiesības, laiku un projektu.',
+    sourceLabel: 'FAO',
     imageAlt: 'Skats no gaisa: aleju sējumi un jaunu koku rindas Savanna Institute saimniecībā pie Viskonsinas upes'
   },
   windbreaks: {
@@ -1430,7 +1463,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Vējainas / aizsargjoslas',
     problem:
       'Atklāti lauki un sētas ņem visu vēju. Augsne aizpūšas, sniegs sanes uz ceļiem, un dzīvnieki aukstumā tērē vairāk barības.',
-    fix: 'ASV Nacionālais agromežsaimniecības centrs apraksta vējainas — sauktas arī par shelterbelts — kā lineāras koku un krūmu stādījumu joslas kādam mērķim: lauka aizsardzība, lopu pajumte, dzīvie sniega žogi vai sētas ekrāns. Augstums, blīvums, spraugas un orientācija izlemj, ko josla dara. Tā ir saimniecības infrastruktūra, ne oglekļa plantācija, un bez kopšanas tā nestrādā.',
+    fix: 'ASV Lauksaimniecības departamenta Nacionālais agromežsaimniecības centrs apraksta vējainas, sauktas arī par aizsargjoslām, kā lineāras koku un krūmu stādījumu joslas kādam mērķim: lauka aizsardzība, lopu pajumte, dzīvie sniega žogi vai sētas ekrāns. Augstums, blīvums, spraugas un orientācija izlemj, ko josla dara. Tā ir saimniecības infrastruktūra, un tai vajag kopšanu.',
+    sourceLabel: 'Nacionālais agromežsaimniecības centrs',
     imageAlt: 'Divas jaunas koku rindas uz mietiem veido vējainu zaļā Illinoisa laukā'
   },
   'reduced-impact-logging': {
@@ -1438,7 +1472,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Samazinātas ietekmes ciršana',
     problem:
       'Parastā tropiskā izstrāde bieži nozīmē slikti plānotus pievešanas ceļus, vītnēs iekārtus kokus un bojājumus atstātajiem stumbriem. Nākamā raža un augsne maksā pirmās.',
-    fix: 'Samazinātas ietekmes ciršana (RIL) ir plānota izstrāde: kartēšana pirms ciršanas, virziena gāšana un kontrolēti pievešanas ceļi. FAO gadījumi ved agrīnās sistēmas uz Saravaku un vēlākos izmēģinājumus uz Surinamu, Gajānu, Kamerūnu un citām vietām. Pētījumi atrada mazāku kaitējumu un dažkārt zemākas izmaksas, bet daudzas firmas praksi nemaina. RIL nav ciršanas aizliegums un nav tas pats, kas atstāt veco mežu necirstu.',
+    fix: 'Samazinātas ietekmes ciršana ir plānota izstrāde: kartēšana pirms ciršanas, virziena gāšana un kontrolēti pievešanas ceļi. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas piemēri ved agrīnās sistēmas uz Saravaku un vēlākos izmēģinājumus uz Surinamu, Gajānu, Kamerūnu un citām vietām. Pētījumi atrada mazāku kaitējumu un dažkārt zemākas izmaksas, bet daudzas firmas praksi nemaina.',
+    sourceLabel: 'FAO',
     imageAlt: 'Dzeltens iekrāvējs nes baļķi kokmateriālu nometnē Tawau apgabalā, Sabahā, mežs fonā'
   },
   'riparian-forest-restoration': {
@@ -1446,7 +1481,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Piekrastes mežu atjaunošana',
     problem:
       'Kad pie strauta kokus cērt tīrumiem vai gabaliem, krasti erodē, barības vielas noskalojas un vasaras ūdens sasilst. Zivis un gultne zaudē ēnu un saknes, kas turēja malu.',
-    fix: 'ASV Klimata centri apraksta meža un cita seguma uzturēšanu vai atjaunošanu piekrastes joslās: jaukti stādījumi, buferi bez ciršanas vai ar ierobežotu ciršanu, krasta nostiprināšana. Mērķis ir ēna, koksnes sagāzumi un augsne uz saknēm. Tas ir vietējs darbs pie strauta. Iestādīta josla neatjauno visu sateci, ja augštece paliek kaila.',
+    fix: 'ASV Lauksaimniecības departamenta klimata centri apraksta meža un cita seguma uzturēšanu vai atjaunošanu piekrastes joslās: jaukti stādījumi, buferi bez ciršanas vai ar ierobežotu ciršanu, krasta nostiprināšana. Mērķis ir ēna, koksnes sagāzumi un augsne uz saknēm. Tas ir vietējs darbs pie strauta.',
+    sourceLabel: 'Klimata centri',
     imageAlt: 'Skats no gaisa: kokains piekrastes buferis gar līkumotu strautu starp laukiem Storijas apgabalā, Aiovā'
   },
   'community-forestry': {
@@ -1454,7 +1490,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Kopienu mežsaimniecība',
     problem:
       'Kad lietošanas tiesības sēž tikai tālā kantorī, tuvējām saimniecībām ir maz iemesla sargāt mežu, ko nedrīkst likumīgi lietot. Tālāk nāk nelikumīga ciršana un vāja kopšana.',
-    fix: 'Nepālas kopienu mežsaimniecība dod Kopienu meža lietotāju grupām vietējas pārvaldības tiesības. FAO un Nepālas Kopienu meža lietotāju federācija (FECOFUN) uzskata modeli par plaši citētu cilvēku centrētas meža pārvaldības piemēru. Joprojām vajag atbildīgas grupas, tirgus, kas nenoplicina audzi, un vietu sievietēm un pirmiedzīvotāju lietotājiem. Grupas tituls pats par sevi nav aizsardzība.',
+    fix: 'Nepālas kopienu mežsaimniecība dod kopienu meža lietotāju grupām vietējas pārvaldības tiesības. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija un Nepālas Kopienu meža lietotāju federācija uzskata modeli par plaši citētu meža pārvaldības piemēru, kurā piedalās cilvēki. Joprojām vajag atbildīgas grupas, tirgus, kas atstāj audzi uz celma, un vietu sievietēm un pirmiedzīvotāju lietotājiem.',
+    sourceLabel: 'Nepālas kopienu meža lietotāju federācija',
     imageAlt: 'Augstas priedes un lapu koki zālainā nogāzē Badikhel kopienas mežā, Lalitpurā, Nepālā'
   },
   'mrf-optical-sorting': {
@@ -1523,8 +1560,12 @@ const copy: Record<Locale, Record<string, SolutionCopy>> = {
 };
 
 export function getSolutions(locale: Locale): Solution[] {
+  const forestGrid = getForestGrid(locale);
   return solutionMeta.map((meta) => {
-    const fields = copy[locale][meta.slug] ?? copy.en[meta.slug];
+    const shared = copy[locale][meta.slug] ?? copy.en[meta.slug];
+    const forestKey = meta.detailSlug ?? meta.slug;
+    const fromForest = meta.tag === 'forests' ? forestGrid[forestKey] : undefined;
+    const fields = fromForest ?? shared;
     return { ...meta, ...fields };
   });
 }
