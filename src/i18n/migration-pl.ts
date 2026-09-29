@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migracja',
   hubLead: [
     'Migracja to ruch z przyczyną. Lądolody otwierają i zamykają mosty lądowe. Sezony przesuwają deszcz, trawę, owady i plankton. Wybrzeża, góry i pustynie są barierami, dopóki nimi nie są. Ludzie później dokładają ogrodzenia, światła, sieci, armie i cieplejszy klimat na te starsze zegary.',
-    'Dziś jest na tej stronie: współczesna mapa międzynarodowa — migracja netto i zasób migrantów, tak podpisane. Osobna warstwa to ludzie przesiedleni wewnątrz własnego kraju (IDMC). Warstwa obozów pokazuje nazwane miejsca, a nie światowy stan uchodźców; ten stan jest w warstwie „Uchodźcy (UNHCR)”. Pieniądze, które migranci wysyłają do domu, opisuje sekcja „Przekazy pieniężne”. Poniżej dwie półki. Migracje ludzi to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Migracje zwierząt to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
+    'Globus powyżej pokazuje przymusowe przesiedlenia: przyczyny i kierunki. Pod nim jest współczesna mapa międzynarodowa: migracja netto i zasób migrantów, tak podpisane. Osobna warstwa to ludzie przesiedleni wewnątrz własnego kraju (IDMC). Warstwa obozów pokazuje nazwane miejsca, a nie światowy stan uchodźców; ten stan jest w warstwie „Uchodźcy (UNHCR)”. Pieniądze, które migranci wysyłają do domu, opisuje sekcja „Przekazy pieniężne”. Poniżej dwie półki. Migracje ludzi to głęboka historia Homo sapiens i wędrówek ludów, w tym Attyli. Migracje zwierząt to żywe ruchy masowe: gnu, przesunięcia arealów motyli, arktyczne szlaki. Daty to zakresy z nazwanych źródeł, nie wymyślone ślady.',
   ],
   chooseShelf: 'Wybierz półkę',
   filterAria: 'Działy migracji',

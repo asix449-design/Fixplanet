@@ -34,6 +34,14 @@ export {
 export { getBorderHistoryFrames, getBorderHistoryPage } from './border-history';
 export { getLiveHazardsPage } from './live-hazards';
 export {
+  DISPLACEMENT_SOURCE_IDS,
+  DISPLACEMENT_SOURCES_PATH,
+  displacementLicenceKind,
+  getDisplacementPage,
+  type DisplacementPage,
+  type DisplacementSourceId,
+} from './displacement';
+export {
   getReligionContinentLabels,
   getReligionHistoryFrames,
   getReligionHistoryPage,

@@ -1,0 +1,220 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  DISPLACEMENT_SOURCE_IDS,
+  displacementLicenceKind,
+  getDisplacementPage,
+  localizePath,
+  resolveLocale,
+} from '../i18n';
+import pack from '../../public/data/migration-crises.json';
+
+const locale = resolveLocale(Astro.currentLocale);
+const copy = getDisplacementPage(locale);
+const backHref = localizePath('/migration', locale);
+
+const credits = pack.credits.templates;
+const deeds = pack.credits.licence_deed_links;
+const unhcrCredit = credits.unhcr_api[locale] || credits.unhcr_api.en;
+const idmcCredit = credits.idmc_hdx[locale] || credits.idmc_hdx.en;
+const byDeed = deeds.cc_by_4_0[locale] || deeds.cc_by_4_0.en;
+const igoDeed = deeds.cc_by_3_0_igo[locale] || deeds.cc_by_3_0_igo.en;
+
+function linkify(text: string) {
+  const match = text.match(/https:\/\/\S+/);
+  if (!match || match.index == null) return { before: text, url: '', after: '' };
+  const url = match[0];
+  return {
+    before: text.slice(0, match.index),
+    url,
+    after: text.slice(match.index + url.length),
+  };
+}
+
+const unhcrParts = linkify(unhcrCredit);
+const idmcParts = linkify(idmcCredit);
+
+const sources = DISPLACEMENT_SOURCE_IDS.map((id) => {
+  const row = pack.sources[id];
+  const kind = displacementLicenceKind(id);
+  return {
+    id,
+    heading:
+      locale === 'en' ? row.name : `${copy.sourceNames[id]} (${row.name})`,
+    url: row.url,
+    kind,
+  };
+});
+
+function licenceText(kind: 'by' | 'igo' | 'page') {
+  if (kind === 'igo') return copy.licenceIgo;
+  if (kind === 'page') return copy.licencePage;
+  return copy.licenceBy;
+}
+
+function pill(kind: 'by' | 'igo' | 'page') {
+  if (kind === 'igo') return copy.pillIgo;
+  if (kind === 'by') return copy.pillBy;
+  return '';
+}
+---
+
+<BaseLayout title={`${copy.sourcesTitle} — Fix Planet`} description={copy.sourcesLead} theme="migration">
+  <article class="dg-sources">
+    <div class="wrap">
+      <p><a class="dg-back" href={backHref}>{copy.title}</a></p>
+      <h1>{copy.sourcesTitle}</h1>
+      <p class="dg-sources-lead">{copy.sourcesLead}</p>
+
+      <h2>{copy.defTitle}</h2>
+      {
+        copy.defs.map((item) => (
+          <section>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+          </section>
+        ))
+      }
+
+      <h2>{copy.creditsTitle}</h2>
+      <p>{copy.creditsLead}</p>
+      <ul class="dg-credit-list">
+        <li>
+          <p>
+            {unhcrParts.before}
+            {
+              unhcrParts.url && (
+                <a href={unhcrParts.url} rel="noopener noreferrer">{unhcrParts.url}</a>
+              )
+            }
+            {unhcrParts.after}
+          </p>
+          <p>
+            <span class="dg-pill">{copy.pillBy}</span>
+            <a href={byDeed} rel="noopener noreferrer">{copy.deedLabel}</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            {idmcParts.before}
+            {
+              idmcParts.url && (
+                <a href={idmcParts.url} rel="noopener noreferrer">{idmcParts.url}</a>
+              )
+            }
+            {idmcParts.after}
+          </p>
+          <p>
+            <span class="dg-pill">{copy.pillIgo}</span>
+            <a href={igoDeed} rel="noopener noreferrer">{copy.deedLabel}</a>
+          </p>
+        </li>
+        <li>
+          <p>{copy.osmCredit}</p>
+          <p>
+            <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer">OpenStreetMap</a>
+            {' · '}
+            <a href="https://opendatacommons.org/licenses/odbl/" rel="noopener noreferrer">{copy.licenceOdbl}</a>
+          </p>
+        </li>
+      </ul>
+
+      <h2>{copy.listTitle}</h2>
+      <ol class="dg-source-list">
+        {
+          sources.map((item) => (
+            <li>
+              <p>{item.heading}</p>
+              <p>
+                {pill(item.kind) && <span class="dg-pill">{pill(item.kind)}</span>}
+                {licenceText(item.kind)}
+              </p>
+              <p>
+                <a href={item.url} rel="noopener noreferrer">{copy.openSource}</a>
+              </p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .dg-sources {
+    position: relative;
+    z-index: 1;
+    padding: 1.4rem 0 3rem;
+    background: #050505;
+  }
+
+  .dg-sources h1,
+  .dg-sources h2,
+  .dg-sources h3 {
+    color: var(--cream);
+    font-weight: 650;
+  }
+
+  .dg-sources h1 {
+    margin: 0.35rem 0 0.6rem;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+  }
+
+  .dg-sources h2 {
+    margin: 1.8rem 0 0.6rem;
+    font-size: 1.25rem;
+  }
+
+  .dg-sources h3 {
+    margin: 1rem 0 0.25rem;
+    font-size: 1rem;
+  }
+
+  .dg-sources p,
+  .dg-sources li {
+    color: #d5d5cc;
+    max-width: 46rem;
+    line-height: 1.5;
+  }
+
+  .dg-sources a {
+    color: var(--lime);
+  }
+
+  .dg-back {
+    text-decoration: none;
+  }
+
+  .dg-sources-lead {
+    margin-top: 0;
+  }
+
+  .dg-credit-list,
+  .dg-source-list {
+    margin: 0.4rem 0 0;
+    padding: 0;
+  }
+
+  .dg-credit-list {
+    list-style: none;
+  }
+
+  .dg-credit-list li,
+  .dg-source-list li {
+    margin: 0 0 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.16);
+  }
+
+  .dg-pill {
+    display: inline-block;
+    margin-right: 0.45rem;
+    padding: 0.08rem 0.35rem;
+    border-radius: 4px;
+    background: var(--lime);
+    color: #041000;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+</style>

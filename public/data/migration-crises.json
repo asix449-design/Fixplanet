@@ -1,0 +1,2686 @@
+{
+ "meta": {
+  "title": "Fix Planet Migration tab: forced-displacement crises data package",
+  "generated": "2026-09-29",
+  "generated_by": "Grok Bot executor for Aigars Abramovics",
+  "data_cutoff": "UNHCR and IDMC year-end 2025 (published June and May 2026); OCHA and IOM figures dated September 2026",
+  "coordinates": "WGS84 decimal degrees, rounded to 2 places. cause_point marks the place named in its label. Every to_point is an approximate country-centre (or capital for very large countries) for drawing arrows, marked approximate=true; geocoded with OpenStreetMap Nominatim search results on 2026-09-29 (ODbL attribution: OpenStreetMap contributors, if the coordinates are shown as map data).",
+  "count_rule": "count = the figure shown for the group named in \"group\"; for cross_border flows it is refugees + asylum-seekers (+ other people in need of international protection where the group says so); \"breakdown\" shows the parts. \"others of concern\" are excluded. Never add stocks and movements.",
+  "flow_kinds": {
+   "cross_border": "people outside their country, year-end stock, draw arrow",
+   "internal_stock": "people displaced inside the country at year end, no arrow (marker at country centre)",
+   "internal_new_displacements": "movements during a period (not people), no arrow",
+   "needs_estimate": "not a displacement count"
+  },
+  "caption_check": "python3 /workspace/agent-tools/migration_figcheck.py /workspace/fixplanet-migration-crises-data-2026-09-29.json"
+ },
+ "cause_types": {
+  "conflict": {
+   "en": "Conflict and violence",
+   "ru": "Конфликт и насилие",
+   "pl": "Konflikt i przemoc",
+   "lv": "Konflikts un vardarbība"
+  },
+  "natural-disaster": {
+   "en": "Natural disaster",
+   "ru": "Стихийное бедствие",
+   "pl": "Klęska żywiołowa",
+   "lv": "Dabas katastrofa"
+  },
+  "climate-drought": {
+   "en": "Climate and drought",
+   "ru": "Климат и засуха",
+   "pl": "Klimat i susza",
+   "lv": "Klimats un sausums"
+  },
+  "unclassified": {
+   "en": "Other or not yet classified",
+   "ru": "Иная или ещё не определённая причина",
+   "pl": "Inna lub jeszcze nieokreślona przyczyna",
+   "lv": "Cits vai vēl nenoteikts cēlonis"
+  }
+ },
+ "credits": {
+  "templates": {
+   "unhcr_api": {
+    "en": "Source: UNHCR Refugee Population Statistics Database, United Nations High Commissioner for Refugees, year-end 2025. Licence: Creative Commons Attribution 4.0 International. Terms: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "ru": "Источник: UNHCR Refugee Population Statistics Database, Управление Верховного комиссара Организации Объединённых Наций по делам беженцев, данные на конец 2025 года. Лицензия: Creative Commons «Attribution» («С указанием авторства») 4.0 Международная. Условия: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "pl": "Źródło: UNHCR Refugee Population Statistics Database, Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców, dane na koniec 2025 roku. Licencja: Creative Commons Uznanie autorstwa 4.0 Międzynarodowa. Warunki: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "lv": "Avots: UNHCR Refugee Population Statistics Database, Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs, dati par 2025. gada beigām. Licence: Creative Commons Attiecinājums 4.0 Starptautiskā. Noteikumi: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets"
+   },
+   "unrwa_api": {
+    "en": "Source: UNHCR Refugee Population Statistics Database (UNRWA registration data), United Nations Relief and Works Agency for Palestine Refugees in the Near East, 2025. Licence: Creative Commons Attribution 4.0 International. Terms: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "ru": "Источник: UNHCR Refugee Population Statistics Database (регистрационные данные Ближневосточного агентства Организации Объединённых Наций для помощи палестинским беженцам и организации работ), 2025 год. Лицензия: Creative Commons «Attribution» («С указанием авторства») 4.0 Международная. Условия: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "pl": "Źródło: UNHCR Refugee Population Statistics Database (dane rejestracyjne Agencji Narodów Zjednoczonych ds. Pomocy Uchodźcom Palestyńskim na Bliskim Wschodzie), 2025 rok. Licencja: Creative Commons Uznanie autorstwa 4.0 Międzynarodowa. Warunki: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+    "lv": "Avots: UNHCR Refugee Population Statistics Database (Apvienoto Nāciju Palīdzības un darba aģentūras Palestīnas bēgļiem Tuvajos Austrumos reģistrācijas dati), 2025. gads. Licence: Creative Commons Attiecinājums 4.0 Starptautiskā. Noteikumi: https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets"
+   },
+   "idmc_hdx": {
+    "en": "Source: Internal Displacement Monitoring Centre, Internal Displacements (New Displacements) - IDPs, via the Humanitarian Data Exchange, data to 31 December 2025. Licence: Creative Commons Attribution 3.0 IGO (CC BY-IGO).",
+    "ru": "Источник: Центр мониторинга внутренних перемещений, набор данных «Internal Displacements (New Displacements) - IDPs», через Гуманитарный обменный портал данных, данные по 31 декабря 2025 года. Лицензия: Creative Commons «Attribution» («С указанием авторства») 3.0 для межправительственных организаций (CC BY-IGO).",
+    "pl": "Źródło: Centrum Monitorowania Wewnętrznych Przesiedleń, zbiór „Internal Displacements (New Displacements) - IDPs”, za pośrednictwem Humanitarian Data Exchange, dane do 31 grudnia 2025 roku. Licencja: Creative Commons Uznanie autorstwa 3.0 dla organizacji międzyrządowych (CC BY-IGO).",
+    "lv": "Avots: Iekšējās pārvietošanas uzraudzības centrs, datu kopa „Internal Displacements (New Displacements) - IDPs”, izmantojot Humanitāro datu apmaiņas platformu, dati līdz 2025. gada 31. decembrim. Licence: Creative Commons Attiecinājums 3.0 starpvaldību organizācijām (CC BY-IGO)."
+   },
+   "ocha_opt": {
+    "en": "Source: United Nations Office for the Coordination of Humanitarian Affairs, occupied Palestinian territory, situation report of 23 to 25 September 2026. Terms: personal, non-commercial use; permission needed for redistribution (UNVERIFIED for this use).",
+    "ru": "Источник: Управление Организации Объединённых Наций по координации гуманитарных вопросов, оккупированная палестинская территория, доклад от 23 и 25 сентября 2026 года. Условия: личное некоммерческое использование, для распространения нужно разрешение (для данного использования не подтверждено).",
+    "pl": "Źródło: Biuro Narodów Zjednoczonych do spraw Koordynacji Pomocy Humanitarnej, okupowane terytorium palestyńskie, raport z 23 i 25 września 2026 roku. Warunki: użytek osobisty, niekomercyjny, rozpowszechnianie wymaga zgody (dla tego zastosowania niepotwierdzone).",
+    "lv": "Avots: Apvienoto Nāciju Organizācijas Humānās palīdzības koordinācijas birojs, okupētā Palestīnas teritorija, ziņojums no 2026. gada 23. un 25. septembra. Noteikumi: personīgai, nekomerciālai lietošanai, izplatīšanai nepieciešama atļauja (šai lietošanai nav apstiprināts)."
+   },
+   "iom_dtm_sudan": {
+    "en": "Source: International Organization for Migration, Displacement Tracking Matrix, Sudan Displacement and Return Snapshot, Update 9, 20 September 2026. Terms: UNVERIFIED, obtain permission before public use.",
+    "ru": "Источник: Международная организация по миграции, Матрица отслеживания перемещений, обзор перемещений и возвращений в Судане, выпуск 9, 20 сентября 2026 года. Условия: не подтверждены, перед публикацией нужно получить разрешение.",
+    "pl": "Źródło: Międzynarodowa Organizacja do spraw Migracji, Displacement Tracking Matrix, przegląd przesiedleń i powrotów w Sudanie, wydanie 9, 20 września 2026 roku. Warunki: niepotwierdzone, przed publikacją należy uzyskać zgodę.",
+    "lv": "Avots: Starptautiskā Migrācijas organizācija, pārvietošanas izsekošanas matrica, Sudānas pārvietošanas un atgriešanās pārskats, 9. izdevums, 2026. gada 20. septembris. Noteikumi: nav apstiprināti, pirms publicēšanas jāiegūst atļauja."
+   }
+  },
+  "licence_deed_links": {
+   "cc_by_4_0": {
+    "en": "https://creativecommons.org/licenses/by/4.0/",
+    "ru": "https://creativecommons.org/licenses/by/4.0/deed.ru",
+    "pl": "https://creativecommons.org/licenses/by/4.0/deed.pl",
+    "lv": "https://creativecommons.org/licenses/by/4.0/deed.lv"
+   },
+   "cc_by_3_0_igo": {
+    "en": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "ru": "https://creativecommons.org/licenses/by/3.0/igo/deed.ru",
+    "pl": "https://creativecommons.org/licenses/by/3.0/igo/deed.pl",
+    "lv": "https://creativecommons.org/licenses/by/3.0/igo/deed.lv"
+   }
+  }
+ },
+ "sources": {
+  "unhcr_api": {
+   "id": "unhcr_api",
+   "name": "UNHCR Refugee Data Finder API (Refugee Population Statistics Database)",
+   "publisher": "United Nations High Commissioner for Refugees",
+   "url": "https://api.unhcr.org/population/v1/population/?limit=1&year=2025&coo=SUD&coa=CHD",
+   "match": "1330950",
+   "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0), with supplemental UNHCR Terms of Use for Datasets",
+   "licence_url": "https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+   "credit_required": "UNHCR Refugee Population Statistics Database",
+   "credit_basis": "Item 3 of the UNHCR Terms of Use for Datasets (fetched 2026-09-29): attribution 'in the following format: UNHCR Refugee Population Statistics Database'. Item 4: link must also give the URL of the Terms of Use for Datasets. Item 5: do not imply UNHCR endorsement. Item 7: UNHCR name and emblem are protected; no logo use.",
+   "note": "Year-end 2025 data (published June 2026). Some datasets are third-party (item 6); UNRWA figures come through this API's /unrwa/ endpoint.",
+   "credit_key": "unhcr_api"
+  },
+  "unhcr_gt": {
+   "id": "unhcr_gt",
+   "name": "UNHCR Global Trends (web page, dated 11 June 2026)",
+   "publisher": "United Nations High Commissioner for Refugees",
+   "url": "https://www.unhcr.org/global-trends",
+   "match": "Global Trends",
+   "licence": "Website content: all rights reserved except as allowed by the UNHCR website Terms of Use (copyright page prohibits reproduction without written permission). Only the statistics dataset carries CC BY 4.0.",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR Global Trends 2026 (cite; do not copy text)",
+   "credit_basis": "No credit template found; treat as citation of a fact only.",
+   "note": "Used only to cross-check headline numbers (returns, Palestine refugees under UNRWA mandate).",
+   "credit_key": null
+  },
+  "unhcr_web_sudan": {
+   "id": "unhcr_web_sudan",
+   "name": "UNHCR Sudan emergency page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/sudan-emergency",
+   "match": "15 April 2023",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_syria": {
+   "id": "unhcr_web_syria",
+   "name": "UNHCR Syria emergency page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/syria-emergency",
+   "match": "13 years",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_syria_country": {
+   "id": "unhcr_web_syria_country",
+   "name": "UNHCR Syrian Arab Republic country page",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/where-we-work/countries/syrian-arab-republic",
+   "match": "14 years",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_ukraine": {
+   "id": "unhcr_web_ukraine",
+   "name": "UNHCR Ukraine emergency page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/ukraine-emergency",
+   "match": "February 2022",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_afghanistan": {
+   "id": "unhcr_web_afghanistan",
+   "name": "UNHCR Afghanistan emergency page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/afghanistan-emergency",
+   "match": "decades of conflict",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_rohingya": {
+   "id": "unhcr_web_rohingya",
+   "name": "UNHCR Rohingya emergency page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/rohingya-emergency",
+   "match": "750,000",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_venezuela": {
+   "id": "unhcr_web_venezuela",
+   "name": "UNHCR Venezuela situation page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/venezuela-situation",
+   "match": "7.9 million",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "Government figures, not UNHCR counts.",
+   "credit_key": null
+  },
+  "unhcr_web_southsudan": {
+   "id": "unhcr_web_southsudan",
+   "name": "UNHCR South Sudan emergency page (updated December 2025)",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/emergencies/south-sudan-emergency",
+   "match": "Since 2013",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_yemen": {
+   "id": "unhcr_web_yemen",
+   "name": "UNHCR Yemen country page",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/where-we-work/countries/yemen",
+   "match": "Marib",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_web_somalia": {
+   "id": "unhcr_web_somalia",
+   "name": "UNHCR Somalia country page",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/where-we-work/countries/somalia",
+   "match": "550,000",
+   "licence": "UNHCR website terms (not CC BY)",
+   "licence_url": "https://www.unhcr.org/contact-us/copyright",
+   "credit_required": "UNHCR",
+   "credit_basis": "citation only",
+   "note": "",
+   "credit_key": null
+  },
+  "unhcr_methodology": {
+   "id": "unhcr_methodology",
+   "name": "UNHCR Refugee Statistics methodology page",
+   "publisher": "UNHCR",
+   "url": "https://www.unhcr.org/refugee-statistics/methodology",
+   "match": "Creative Commons Attribution 4.0",
+   "licence": "states CC BY 4.0 for the datasets",
+   "licence_url": "https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+   "credit_required": "UNHCR Refugee Population Statistics Database",
+   "credit_basis": "",
+   "note": "Definitions and licence statement.",
+   "credit_key": null
+  },
+  "unrwa_api": {
+   "id": "unrwa_api",
+   "name": "UNRWA registered Palestine refugees, via UNHCR API /unrwa/ endpoint",
+   "publisher": "United Nations Relief and Works Agency for Palestine Refugees in the Near East (data carried by UNHCR API)",
+   "url": "https://api.unhcr.org/population/v1/unrwa/?limit=50&year=2025&coa_all=true",
+   "match": "2484580",
+   "licence": "Served under the UNHCR dataset terms (CC BY 4.0); third-party clause 6 may apply",
+   "licence_url": "https://www.unhcr.org/what-we-do/data-and-publications/data-and-statistics/terms-use-datasets",
+   "credit_required": "UNHCR Refugee Population Statistics Database (UNRWA data)",
+   "credit_basis": "Clause 6: some datasets are provided by third parties; check with UNHCR if UNRWA-specific terms apply.",
+   "note": "Registered refugees, not displaced persons.",
+   "credit_key": "unrwa_api"
+  },
+  "idmc_hdx": {
+   "id": "idmc_hdx",
+   "name": "IDMC Internal Displacements (New Displacements) - IDPs, on HDX",
+   "publisher": "Internal Displacement Monitoring Centre",
+   "url": "https://data.humdata.org/dataset/idmc-internal-displacements-new-displacements-idps",
+   "match": "Internal Displacements (New Displacements)",
+   "licence": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO), version 3.0 IGO",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0/igo/legalcode",
+   "credit_required": "Internal Displacement Monitoring Centre (IDMC), Internal Displacements (New Displacements) - IDPs, via the Humanitarian Data Exchange, CC BY-IGO",
+   "credit_basis": "IGO 3.0 legal code s.4(b) (fetched): keep copyright notices, give the attribution the licensor indicates, the title, the URI, and for an adaptation a credit identifying the use; no implied endorsement. HDX shows source 'IDMC'. No IDMC-specific credit template found; wording is a suggestion.",
+   "note": "CSV https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv (modified 2026-05-24 per HDX metadata; dataset range 2009-2025).",
+   "credit_key": "idmc_hdx"
+  },
+  "idmc_hdx_pak": {
+   "id": "idmc_hdx_pak",
+   "name": "IDMC Pakistan disaster displacements, on HDX",
+   "publisher": "IDMC",
+   "url": "https://data.humdata.org/dataset/idmc-idp-data-pak",
+   "match": "Pakistan",
+   "licence": "CC BY-IGO",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0/igo/legalcode",
+   "credit_required": "Internal Displacement Monitoring Centre (IDMC), Pakistan - Internal Displacements (New Displacements), via the Humanitarian Data Exchange, CC BY-IGO",
+   "credit_basis": "as idmc_hdx",
+   "note": "Disaster CSV https://data.humdata.org/dataset/6ed9e42e-4eb0-4f92-b4a0-f37a639e710e/resource/38c22e9d-5d75-44b6-a9ee-01dfb2198273/download/internal-displacements-new-displacements-associated-with-disasters_pak.csv (per-event rows; national total computed by summing Flood rows).",
+   "credit_key": "idmc_hdx"
+  },
+  "idmc_hdx_som": {
+   "id": "idmc_hdx_som",
+   "name": "IDMC Somalia disaster displacements, on HDX",
+   "publisher": "IDMC",
+   "url": "https://data.humdata.org/dataset/idmc-idp-data-som",
+   "match": "Somalia",
+   "licence": "CC BY-IGO",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0/igo/legalcode",
+   "credit_required": "Internal Displacement Monitoring Centre (IDMC), Somalia - Internal Displacements (New Displacements), via the Humanitarian Data Exchange, CC BY-IGO",
+   "credit_basis": "as idmc_hdx",
+   "note": "Disaster CSV https://data.humdata.org/dataset/c67f8253-b5c5-4f6c-ba34-9af41331d1f2/resource/fbcfcd16-6997-4212-ad1b-a2f7355624aa/download/internal-displacements-new-displacements-associated-with-disasters_som.csv",
+   "credit_key": "idmc_hdx"
+  },
+  "idmc_hdx_eth": {
+   "id": "idmc_hdx_eth",
+   "name": "IDMC Ethiopia disaster displacements, on HDX",
+   "publisher": "IDMC",
+   "url": "https://data.humdata.org/dataset/idmc-idp-data-eth",
+   "match": "Ethiopia",
+   "licence": "CC BY-IGO",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0/igo/legalcode",
+   "credit_required": "Internal Displacement Monitoring Centre (IDMC), Ethiopia - Internal Displacements (New Displacements), via the Humanitarian Data Exchange, CC BY-IGO",
+   "credit_basis": "as idmc_hdx",
+   "note": "Disaster CSV https://data.humdata.org/dataset/4b877793-d974-487e-846a-76e356b7530f/resource/d451cdb9-ee8f-403e-af2f-f1c3371739c6/download/internal-displacements-new-displacements-associated-with-disasters_eth.csv",
+   "credit_key": "idmc_hdx"
+  },
+  "idmc_hdx_ken": {
+   "id": "idmc_hdx_ken",
+   "name": "IDMC Kenya disaster displacements, on HDX",
+   "publisher": "IDMC",
+   "url": "https://data.humdata.org/dataset/idmc-idp-data-ken",
+   "match": "Kenya",
+   "licence": "CC BY-IGO",
+   "licence_url": "https://creativecommons.org/licenses/by/3.0/igo/legalcode",
+   "credit_required": "Internal Displacement Monitoring Centre (IDMC), Kenya - Internal Displacements (New Displacements), via the Humanitarian Data Exchange, CC BY-IGO",
+   "credit_basis": "as idmc_hdx",
+   "note": "Disaster CSV https://data.humdata.org/dataset/e1bd9ccd-416b-4f7c-9b2e-ab775e2543a7/resource/8913ce67-a795-479a-a038-4c70ccf3f645/download/internal-displacements-new-displacements-associated-with-disasters_ken.csv",
+   "credit_key": "idmc_hdx"
+  },
+  "idmc_grid": {
+   "id": "idmc_grid",
+   "name": "IDMC Global Report on Internal Displacement 2026 (GRID 2026, published 12 May 2026)",
+   "publisher": "IDMC",
+   "url": "https://www.internal-displacement.org/global-report/grid2026/",
+   "match": "Global Report on Internal Displacement",
+   "licence": "UNVERIFIED for the report text (no licence or copyright text found in the fetched PDF or pages); the HDX data files are CC BY-IGO",
+   "licence_url": "https://www.internal-displacement.org/publications/2026-global-report-on-internal-displacement-grid/",
+   "credit_required": "Internal Displacement Monitoring Centre (IDMC), Global Report on Internal Displacement 2026 (cite only)",
+   "credit_basis": "No template found.",
+   "note": "PDF https://api.internal-displacement.org/sites/default/files/2026-05/IDMC-GRID-2026-Global-Report-on-Internal-Displacement.pdf (200, 51 pages). Used for dates and context only.",
+   "credit_key": null
+  },
+  "ocha_opt_snapshot": {
+   "id": "ocha_opt_snapshot",
+   "name": "OCHA oPt Gaza Reported Impact Snapshot, 23 September 2026 (PDF)",
+   "publisher": "United Nations Office for the Coordination of Humanitarian Affairs, occupied Palestinian territory",
+   "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf",
+   "match": "%PDF",
+   "licence": "ochaopt.org Terms of use: permission for personal, non-commercial use; no right to resell, redistribute or create derivative works (fetched). NOT an open licence.",
+   "licence_url": "https://www.ochaopt.org/page/terms-use",
+   "credit_required": "United Nations Office for the Coordination of Humanitarian Affairs occupied Palestinian territory, Gaza Reported Impact Snapshot, 23 September 2026 (permission needed)",
+   "credit_basis": "Terms of use page; UN copyright page says news-related material may be used with appropriate credit and notice to the UN.",
+   "note": "Optional add-on only; ask OCHA for permission or use an HDX-licensed OCHA dataset.",
+   "credit_key": "ocha_opt"
+  },
+  "ocha_opt_sitrep": {
+   "id": "ocha_opt_sitrep",
+   "name": "OCHA oPt Humanitarian Situation Report, 25 September 2026",
+   "publisher": "OCHA occupied Palestinian territory",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-25-september-2026",
+   "match": "464,402",
+   "licence": "as ocha_opt_snapshot (non-commercial, no redistribution)",
+   "licence_url": "https://www.ochaopt.org/page/terms-use",
+   "credit_required": "United Nations Office for the Coordination of Humanitarian Affairs occupied Palestinian territory, Humanitarian Situation Report, 25 September 2026 (permission needed)",
+   "credit_basis": "as ocha_opt_snapshot",
+   "note": "",
+   "credit_key": "ocha_opt"
+  },
+  "iom_dtm_sudan": {
+   "id": "iom_dtm_sudan",
+   "name": "IOM DTM Sudan Displacement and Return Snapshot Update 9 (20 September 2026), via ReliefWeb",
+   "publisher": "International Organization for Migration, Displacement Tracking Matrix",
+   "url": "https://reliefweb.int/report/sudan/dtm-sudan-displacement-and-return-snapshot-update-9-20-september-2026",
+   "match": "8,583,274",
+   "licence": "UNVERIFIED. IOM terms pages returned 403 to this box. A search summary (not a fetched page) says DTM material is non-commercial and needs prior written IOM permission for reproduction.",
+   "licence_url": "https://dtm.iom.int/terms-conditions-use-and-privacy-policy-dtm-website-and-information-products",
+   "credit_required": "International Organization for Migration (IOM), September 2026, Displacement Tracking Matrix (DTM), with the URL of the material (format per search summary, unverified)",
+   "credit_basis": "search summary only",
+   "note": "Keep out of public captions until IOM terms are read or permission is given. The direct dtm.iom.int page returned 403.",
+   "credit_key": "iom_dtm_sudan"
+  },
+  "reliefweb_terms": {
+   "id": "reliefweb_terms",
+   "name": "ReliefWeb Terms and Conditions",
+   "publisher": "ReliefWeb / OCHA",
+   "url": "https://reliefweb.int/terms-conditions",
+   "match": "ReliefWeb",
+   "licence": "ReliefWeb hosts content under each Information Provider's terms",
+   "licence_url": "https://reliefweb.int/terms-conditions",
+   "credit_required": "cite original source (IOM)",
+   "credit_basis": "",
+   "note": "",
+   "credit_key": null
+  }
+ },
+ "crises": [
+  {
+   "id": "sudan",
+   "name": "Sudan",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 15.56,
+    "lon": 32.53,
+    "label": "Khartoum, capital of Sudan (marker only; the fetched UNHCR page names no single starting place)"
+   },
+   "start_date": "2023-04-15",
+   "start_date_verified": true,
+   "start_date_note": "UNHCR Sudan emergency page: 'Since the violence broke out on 15 April 2023'.",
+   "start_date_source_id": "unhcr_web_sudan",
+   "status": "Ongoing as of the latest source: UNHCR page (updated December 2025) says the conflict 'has continued unabated'; IOM DTM Update 9 (20 September 2026) still records 8,583,274 internally displaced people and 5,145,165 returnees.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Sudan",
+     "from_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "to_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "group": "internally_displaced",
+     "count": 9139309,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SUD&coa=SUD",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 9116896,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      },
+      {
+       "source_id": "iom_dtm_sudan",
+       "count": 8583274,
+       "as_of": "2026-09-20",
+       "note": "IOM DTM Update 9, published 20 September 2026 (data period not confirmed in fetched text). More recent than UNHCR. Licence unverified, so not used in captions.",
+       "request_url": "https://reliefweb.int/report/sudan/dtm-sudan-displacement-and-return-snapshot-update-9-20-september-2026"
+      },
+      {
+       "source_id": "unhcr_web_sudan",
+       "count": 10100000,
+       "as_of": "2025-12",
+       "note": "UNHCR emergency page \"10.1 million people internally displaced\", updated December 2025, rounded, definition differs from the year-end API figure. Contradicts the API (9,139,309).",
+       "request_url": "https://www.unhcr.org/emergencies/sudan-emergency"
+      }
+     ],
+     "from": "Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Chad",
+     "from_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "to_point": {
+      "lat": 15.61,
+      "lon": 19.02
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 1334595,
+     "breakdown": {
+      "refugees": 1330950,
+      "asylum_seekers": 3645
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SUD&coa=CHD",
+     "from": "Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Egypt",
+     "from_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "to_point": {
+      "lat": 26.25,
+      "lon": 29.27
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 834201,
+     "breakdown": {
+      "refugees": 37684,
+      "asylum_seekers": 796517
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SUD&coa=ARE",
+     "from": "Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Libya",
+     "from_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "to_point": {
+      "lat": 26.82,
+      "lon": 18.12
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 639166,
+     "breakdown": {
+      "refugees": 551727,
+      "asylum_seekers": 87439
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SUD&coa=LBY",
+     "from": "Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "South Sudan",
+     "from_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "to_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 571071,
+     "breakdown": {
+      "refugees": 571066,
+      "asylum_seekers": 5
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SUD&coa=SSD",
+     "from": "Sudan"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 1732551,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    },
+    {
+     "label": "Returnees recorded in Sudan by IOM DTM",
+     "count": 5145165,
+     "as_of": "2026-09-20",
+     "source_id": "iom_dtm_sudan",
+     "request_url": "https://reliefweb.int/report/sudan/dtm-sudan-displacement-and-return-snapshot-update-9-20-september-2026",
+     "note": "Of these 82 percent returned from internal displacement and 18 percent from abroad."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 9,139,309 people displaced inside Sudan. It also counted 1,334,595 refugees and asylum-seekers from Sudan in Chad and 834,201 in Egypt. In 2025, the Internal Displacement Monitoring Centre recorded 1,732,551 displacements in Sudan. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 9 139 309 человек, перемещённых внутри Судана. Оно также насчитало 1 334 595 беженцев и лиц, ищущих убежища из Судана в Чаде и 834 201 в Египте. В 2025 году число случаев перемещения в Судане, зафиксированных Центром мониторинга внутренних перемещений, составило 1 732 551. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 9 139 309 osób przemieszczonych wewnątrz Sudanu. Naliczył też 1 334 595 uchodźców i osób ubiegających się o azyl z Sudanu w Czadzie oraz 834 201 w Egipcie. W 2025 roku liczba przypadków przemieszczenia w Sudanie, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 1 732 551. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 9 139 309 cilvēku, kas pārvietoti Sudānas iekšienē. Birojs uzskaitīja arī 1 334 595 bēgļu un patvēruma meklētāju no Sudānas Čadā un 834 201 Ēģiptē. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Sudānā bija 1 732 551. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "syria",
+   "name": "Syria",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 33.51,
+    "lon": 36.31,
+    "label": "Damascus, capital of Syria (marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "Exact start date NOT stated in fetched sources. UNHCR Syrian Arab Republic page says 'Over the past 14 years, the conflict has forced more than 13 million people from their homes'; UNHCR emergency page says 'more than 13 years of crisis'. UNHCR Syria emergency page: 'An offensive by armed groups on 27 November 2024 led to the overthrow of the former government on 8 December'. UNHCR Syrian Arab Republic page: 'a transitional government now in place following a change of power in Damascus'.",
+   "start_date_source_id": "unhcr_web_syria_country",
+   "status": "Ongoing, in transition: UNHCR (December 2025) reports returns; the UNHCR Global Trends 2026 page reports around 1.3 million Syrians returned from abroad in 2025; the API records 1,964,201 returned IDPs in 2025.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Syria",
+     "from_point": {
+      "lat": 34.64,
+      "lon": 39.05
+     },
+     "to_point": {
+      "lat": 34.64,
+      "lon": 39.05
+     },
+     "group": "internally_displaced",
+     "count": 5542227,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SYR&coa=SYR",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 5963668,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      },
+      {
+       "source_id": "unhcr_web_syria",
+       "count": 6500000,
+       "as_of": "2025-12",
+       "note": "UNHCR emergency page \"6.5 million internally displaced people\", updated December 2025 (rounded). Older than API.",
+       "request_url": "https://www.unhcr.org/emergencies/syria-emergency"
+      }
+     ],
+     "from": "Syria"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Türkiye",
+     "from_point": {
+      "lat": 34.64,
+      "lon": 39.05
+     },
+     "to_point": {
+      "lat": 39.29,
+      "lon": 35.23
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 2347756,
+     "breakdown": {
+      "refugees": 2347756,
+      "asylum_seekers": 0
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SYR&coa=TUR",
+     "from": "Syria"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Germany",
+     "from_point": {
+      "lat": 34.64,
+      "lon": 39.05
+     },
+     "to_point": {
+      "lat": 51.16,
+      "lon": 10.45
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 734158,
+     "breakdown": {
+      "refugees": 668647,
+      "asylum_seekers": 65511
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SYR&coa=GFR",
+     "from": "Syria"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Lebanon",
+     "from_point": {
+      "lat": 34.64,
+      "lon": 39.05
+     },
+     "to_point": {
+      "lat": 33.88,
+      "lon": 35.84
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 532357,
+     "breakdown": {
+      "refugees": 532357,
+      "asylum_seekers": 0,
+      "others_of_concern_excluded_from_count": 2172
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SYR&coa=LEB",
+     "from": "Syria"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Jordan",
+     "from_point": {
+      "lat": 34.64,
+      "lon": 39.05
+     },
+     "to_point": {
+      "lat": 31.17,
+      "lon": 36.94
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 420835,
+     "breakdown": {
+      "refugees": 420835,
+      "asylum_seekers": 0
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SYR&coa=JOR",
+     "from": "Syria"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 531246,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    },
+    {
+     "label": "Returned IDPs during 2025 (UNHCR)",
+     "count": 1964201,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SYR&coa=SYR",
+     "note": ""
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 5,542,227 people displaced inside Syria. It also counted 2,347,756 refugees and asylum-seekers from Syria in Türkiye and 734,158 in Germany. In 2025, the Internal Displacement Monitoring Centre recorded 531,246 displacements in Syria. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 5 542 227 человек, перемещённых внутри Сирии. Оно также насчитало 2 347 756 беженцев и лиц, ищущих убежища из Сирии в Турции и 734 158 в Германии. В 2025 году число случаев перемещения в Сирии, зафиксированных Центром мониторинга внутренних перемещений, составило 531 246. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 5 542 227 osób przemieszczonych wewnątrz Syrii. Naliczył też 2 347 756 uchodźców i osób ubiegających się o azyl z Syrii w Turcji oraz 734 158 w Niemczech. W 2025 roku liczba przypadków przemieszczenia w Syrii, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 531 246. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 5 542 227 cilvēku, kas pārvietoti Sīrijas iekšienē. Birojs uzskaitīja arī 2 347 756 bēgļu un patvēruma meklētāju no Sīrijas Turcijā un 734 158 Vācijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Sīrijā bija 531 246. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "ukraine",
+   "name": "Ukraine",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 50.45,
+    "lon": 30.52,
+    "label": "Kyiv, capital of Ukraine (marker only)"
+   },
+   "start_date": "2022-02",
+   "start_date_verified": true,
+   "start_date_note": "UNHCR Ukraine emergency page: 'since February 2022'. The exact day was not stated in a fetched UNHCR page; month precision only.",
+   "start_date_source_id": "unhcr_web_ukraine",
+   "status": "Ongoing as of the latest source: UNHCR emergency page (updated December 2025) records the war in its fourth year with about 1 million refugees and IDPs having returned.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Ukraine",
+     "from_point": {
+      "lat": 49.49,
+      "lon": 31.27
+     },
+     "to_point": {
+      "lat": 49.49,
+      "lon": 31.27
+     },
+     "group": "internally_displaced",
+     "count": 3712000,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=UKR&coa=UKR",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only. UNHCR also lists 640,380 others of concern in Ukraine (not included).",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 3712000,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      },
+      {
+       "source_id": "unhcr_web_ukraine",
+       "count": 3800000,
+       "as_of": "2025-12",
+       "note": "UNHCR emergency page \"3.8 million people estimated to be displaced inside Ukraine\", updated December 2025 (rounded).",
+       "request_url": "https://www.unhcr.org/emergencies/ukraine-emergency"
+      }
+     ],
+     "from": "Ukraine"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Germany",
+     "from_point": {
+      "lat": 49.49,
+      "lon": 31.27
+     },
+     "to_point": {
+      "lat": 51.16,
+      "lon": 10.45
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 1174908,
+     "breakdown": {
+      "refugees": 1173192,
+      "asylum_seekers": 1716
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=UKR&coa=GFR",
+     "from": "Ukraine"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Poland",
+     "from_point": {
+      "lat": 49.49,
+      "lon": 31.27
+     },
+     "to_point": {
+      "lat": 52.22,
+      "lon": 19.13
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 977492,
+     "breakdown": {
+      "refugees": 972287,
+      "asylum_seekers": 5205
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=UKR&coa=POL",
+     "from": "Ukraine"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Czechia",
+     "from_point": {
+      "lat": 49.49,
+      "lon": 31.27
+     },
+     "to_point": {
+      "lat": 49.74,
+      "lon": 15.34
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 393080,
+     "breakdown": {
+      "refugees": 392955,
+      "asylum_seekers": 125
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=UKR&coa=CZE",
+     "from": "Ukraine"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Russian Federation",
+     "from_point": {
+      "lat": 49.49,
+      "lon": 31.27
+     },
+     "to_point": {
+      "lat": 55.63,
+      "lon": 37.61
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 5737,
+     "breakdown": {
+      "refugees": 5488,
+      "asylum_seekers": 249,
+      "others_of_concern_excluded_from_count": 80000
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=UKR&coa=RUS",
+     "note": "UNHCR shows 5,488 refugees and 249 asylum-seekers plus 80,000 \"others of concern\" for the Russian Federation. The 2022 and 2023 API values for the same pair were 1,275,315 and 1,227,554 refugees; the 2024 value was 6,894. The fetched sources give no reason for the series break; treat the series as not comparable, and show the 80,000 figure separately if shown at all. Figures only.",
+     "from": "Ukraine"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 167869,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 3,712,000 people displaced inside Ukraine. It also counted 1,174,908 refugees and asylum-seekers from Ukraine in Germany and 977,492 in Poland. In 2025, the Internal Displacement Monitoring Centre recorded 167,869 displacements in Ukraine. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 3 712 000 человек, перемещённых внутри Украины. Оно также насчитало 1 174 908 беженцев и лиц, ищущих убежища из Украины в Германии и 977 492 в Польше. В 2025 году число случаев перемещения в Украине, зафиксированных Центром мониторинга внутренних перемещений, составило 167 869. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 3 712 000 osób przemieszczonych wewnątrz Ukrainy. Naliczył też 1 174 908 uchodźców i osób ubiegających się o azyl z Ukrainy w Niemczech oraz 977 492 w Polsce. W 2025 roku liczba przypadków przemieszczenia w Ukrainie, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 167 869. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 3 712 000 cilvēku, kas pārvietoti Ukrainas iekšienē. Birojs uzskaitīja arī 1 174 908 bēgļu un patvēruma meklētāju no Ukrainas Vācijā un 977 492 Polijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Ukrainā bija 167 869. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "afghanistan",
+   "name": "Afghanistan",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 34.53,
+    "lon": 69.19,
+    "label": "Kabul, capital of Afghanistan (marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No single start date in fetched sources. UNHCR: 'Following decades of conflict'; UNHCR Pakistan page refers to 'the events in Afghanistan since 2021'. Disasters (earthquake of 31 August 2025) add to the situation.",
+   "start_date_source_id": "unhcr_web_afghanistan",
+   "status": "Ongoing with large returns: UNHCR Global Trends 2026 reports about 2.9 million Afghans returned in 2025, mostly involuntary; refugees and others in need of international protection fell 36 percent.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Afghanistan",
+     "from_point": {
+      "lat": 33.77,
+      "lon": 66.24
+     },
+     "to_point": {
+      "lat": 33.77,
+      "lon": 66.24
+     },
+     "group": "internally_displaced",
+     "count": 3199023,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=AFG&coa=AFG",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only. Plus 432,219 others of concern (not included). IDMC's own end-2025 stock of conflict IDPs is 4,355,147 (differs by 1.16 million; IDMC GRID 2026 also counts 2.6 million disaster IDPs).",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 4355147,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "Afghanistan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Iran",
+     "from_point": {
+      "lat": 33.77,
+      "lon": 66.24
+     },
+     "to_point": {
+      "lat": 32.65,
+      "lon": 54.56
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 1637839,
+     "breakdown": {
+      "refugees": 758339,
+      "asylum_seekers": 0,
+      "other_people_in_need_of_international_protection": 879500
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=AFG&coa=IRN",
+     "note": "Count = refugees + asylum-seekers + other people in need of international protection. UNHCR Global Trends 2026 gives Iran 1.6 million and Pakistan 1.3 million; Pakistan 1.3 million matches refugees plus other people in need of international protection (1,299,096) without asylum-seekers, so the map figure here (1,418,347) is deliberately higher; state the definition.",
+     "from": "Afghanistan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Pakistan",
+     "from_point": {
+      "lat": 33.77,
+      "lon": 66.24
+     },
+     "to_point": {
+      "lat": 30.33,
+      "lon": 71.25
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 1418347,
+     "breakdown": {
+      "refugees": 1158538,
+      "asylum_seekers": 119251,
+      "other_people_in_need_of_international_protection": 140558,
+      "others_of_concern_excluded_from_count": 566430
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=AFG&coa=PAK",
+     "note": "Count = refugees + asylum-seekers + other people in need of international protection. UNHCR Global Trends 2026 gives Iran 1.6 million and Pakistan 1.3 million; Pakistan 1.3 million matches refugees plus other people in need of international protection (1,299,096) without asylum-seekers, so the map figure here (1,418,347) is deliberately higher; state the definition.",
+     "from": "Afghanistan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Germany",
+     "from_point": {
+      "lat": 33.77,
+      "lon": 66.24
+     },
+     "to_point": {
+      "lat": 51.16,
+      "lon": 10.45
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 331536,
+     "breakdown": {
+      "refugees": 288286,
+      "asylum_seekers": 43250
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=AFG&coa=GFR",
+     "from": "Afghanistan"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 168265,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    },
+    {
+     "label": "Approximate returns to Afghanistan during 2025 (UNHCR Global Trends 2026, rounded)",
+     "count": 2900000,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_gt",
+     "request_url": "https://www.unhcr.org/global-trends",
+     "note": "\"Around 2.9 million Afghans returned\", mostly involuntary per the page."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 3,199,023 people displaced inside Afghanistan. It also counted 1,637,839 refugees, asylum-seekers and other people in need of international protection from Afghanistan in Iran and 1,418,347 in Pakistan. In 2025, the Internal Displacement Monitoring Centre recorded 168,265 displacements in Afghanistan. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 3 199 023 человек, перемещённых внутри Афганистана. Оно также насчитало 1 637 839 беженцев, лиц, ищущих убежища, и других лиц, нуждающихся в международной защите из Афганистана в Иране и 1 418 347 в Пакистане. В 2025 году число случаев перемещения в Афганистане, зафиксированных Центром мониторинга внутренних перемещений, составило 168 265. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 3 199 023 osób przemieszczonych wewnątrz Afganistanu. Naliczył też 1 637 839 uchodźców, osób ubiegających się o azyl i innych osób potrzebujących ochrony międzynarodowej z Afganistanu w Iranie oraz 1 418 347 w Pakistanie. W 2025 roku liczba przypadków przemieszczenia w Afganistanie, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 168 265. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 3 199 023 cilvēku, kas pārvietoti Afganistānas iekšienē. Birojs uzskaitīja arī 1 637 839 bēgļu, patvēruma meklētāju un citu personu, kurām nepieciešama starptautiskā aizsardzība no Afganistānas Irānā un 1 418 347 Pakistānā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Afganistānā bija 168 265. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "dr-congo",
+   "name": "Democratic Republic of the Congo",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": -1.67,
+    "lon": 29.23,
+    "label": "Goma, North Kivu (IDMC GRID 2026: taken by M23 in early 2025; marker for eastern DR Congo)"
+   },
+   "start_date": "2021-11",
+   "start_date_verified": true,
+   "start_date_note": "Current phase only: IDMC GRID 2026 refers to 'the resurgence of M23 in November 2021'. Displacement in the country is older; no earlier start date found in fetched sources.",
+   "start_date_source_id": "idmc_grid",
+   "status": "Ongoing: IDMC GRID 2026 records 9,747,670 conflict displacements (movements) in 2025, a record, with the largest cities Goma taken early in 2025; UNHCR API records 3,582,665 returned IDPs in 2025.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside the Democratic Republic of the Congo",
+     "from_point": {
+      "lat": -2.98,
+      "lon": 23.82
+     },
+     "to_point": {
+      "lat": -2.98,
+      "lon": 23.82
+     },
+     "group": "internally_displaced",
+     "count": 5669479,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COD&coa=COD",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 4275850,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "the Democratic Republic of the Congo"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Uganda",
+     "from_point": {
+      "lat": -2.98,
+      "lon": 23.82
+     },
+     "to_point": {
+      "lat": 1.53,
+      "lon": 32.22
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 649072,
+     "breakdown": {
+      "refugees": 644537,
+      "asylum_seekers": 4535
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COD&coa=UGA",
+     "from": "the Democratic Republic of the Congo"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Burundi",
+     "from_point": {
+      "lat": -2.98,
+      "lon": 23.82
+     },
+     "to_point": {
+      "lat": -3.43,
+      "lon": 29.93
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 111192,
+     "breakdown": {
+      "refugees": 109885,
+      "asylum_seekers": 1307,
+      "others_of_concern_excluded_from_count": 27
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COD&coa=BDI",
+     "from": "the Democratic Republic of the Congo"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Rwanda",
+     "from_point": {
+      "lat": -2.98,
+      "lon": 23.82
+     },
+     "to_point": {
+      "lat": -2.0,
+      "lon": 30.0
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 79391,
+     "breakdown": {
+      "refugees": 64192,
+      "asylum_seekers": 15199,
+      "others_of_concern_excluded_from_count": 4313
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COD&coa=RWA",
+     "from": "the Democratic Republic of the Congo"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Tanzania",
+     "from_point": {
+      "lat": -2.98,
+      "lon": 23.82
+     },
+     "to_point": {
+      "lat": -6.52,
+      "lon": 35.79
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 77036,
+     "breakdown": {
+      "refugees": 39689,
+      "asylum_seekers": 37347,
+      "others_of_concern_excluded_from_count": 10003
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COD&coa=TAN",
+     "from": "the Democratic Republic of the Congo"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 9747670,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    },
+    {
+     "label": "Returned IDPs during 2025 (UNHCR)",
+     "count": 3582665,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COD&coa=COD",
+     "note": "UNHCR Global Trends: nearly 3.6 million IDPs returned. IDMC stock is lower (4,275,850) than UNHCR stock (5,669,479); both shown."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 5,669,479 people displaced inside the Democratic Republic of the Congo. It also counted 649,072 refugees and asylum-seekers from the Democratic Republic of the Congo in Uganda and 111,192 in Burundi. In 2025, the Internal Displacement Monitoring Centre recorded 9,747,670 displacements in the Democratic Republic of the Congo. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 5 669 479 человек, перемещённых внутри Демократической Республики Конго. Оно также насчитало 649 072 беженцев и лиц, ищущих убежища из Демократической Республики Конго в Уганде и 111 192 в Бурунди. В 2025 году число случаев перемещения в Демократической Республике Конго, зафиксированных Центром мониторинга внутренних перемещений, составило 9 747 670. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 5 669 479 osób przemieszczonych wewnątrz Demokratycznej Republiki Konga. Naliczył też 649 072 uchodźców i osób ubiegających się o azyl z Demokratycznej Republiki Konga w Ugandzie oraz 111 192 w Burundi. W 2025 roku liczba przypadków przemieszczenia w Demokratycznej Republice Konga, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 9 747 670. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 5 669 479 cilvēku, kas pārvietoti Kongo Demokrātiskās Republikas iekšienē. Birojs uzskaitīja arī 649 072 bēgļu un patvēruma meklētāju no Kongo Demokrātiskās Republikas Ugandā un 111 192 Burundijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Kongo Demokrātiskajā Republikā bija 9 747 670. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "myanmar-rohingya",
+   "name": "Myanmar (including Rohingya)",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 20.14,
+    "lon": 92.9,
+    "label": "Sittwe, Rakhine State (UNHCR: over 750,000 Rohingya fled Rakhine State in August 2017; city point is a marker)"
+   },
+   "start_date": "2017-08",
+   "start_date_verified": true,
+   "start_date_note": "Rohingya exodus from Rakhine State: August 2017 (UNHCR Rohingya page). Separate surge in the wider conflict 'since October 2023' (UNHCR Myanmar page).",
+   "start_date_source_id": "unhcr_web_rohingya",
+   "status": "Ongoing: UNHCR Myanmar page (updated November 2024) reports the conflict surge since October 2023; API end-2025 records 3,628,840 IDPs; Rohingya registered in Bangladesh over 1,006,000 (UNHCR page, December 2025).",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Myanmar",
+     "from_point": {
+      "lat": 17.18,
+      "lon": 96.0
+     },
+     "to_point": {
+      "lat": 17.18,
+      "lon": 96.0
+     },
+     "group": "internally_displaced",
+     "count": 3628840,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=MYA&coa=MYA",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 3639400,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "Myanmar"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Bangladesh",
+     "from_point": {
+      "lat": 17.18,
+      "lon": 96.0
+     },
+     "to_point": {
+      "lat": 24.48,
+      "lon": 90.29
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 1178036,
+     "breakdown": {
+      "refugees": 1178003,
+      "asylum_seekers": 33
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=MYA&coa=BGD",
+     "note": "Bangladesh count (1,178,003 refugees) is mostly Rohingya per UNHCR page; UNHCR Rohingya page (December 2025) says over 1,006,000 registered Rohingya refugees, a different registration-based figure.",
+     "from": "Myanmar"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Malaysia",
+     "from_point": {
+      "lat": 17.18,
+      "lon": 96.0
+     },
+     "to_point": {
+      "lat": 4.57,
+      "lon": 102.27
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 192481,
+     "breakdown": {
+      "refugees": 140238,
+      "asylum_seekers": 52243
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=MYA&coa=MLS",
+     "from": "Myanmar"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "India",
+     "from_point": {
+      "lat": 17.18,
+      "lon": 96.0
+     },
+     "to_point": {
+      "lat": 22.35,
+      "lon": 78.67
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 87022,
+     "breakdown": {
+      "refugees": 76784,
+      "asylum_seekers": 10238
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=MYA&coa=IND",
+     "from": "Myanmar"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Thailand",
+     "from_point": {
+      "lat": 17.18,
+      "lon": 96.0
+     },
+     "to_point": {
+      "lat": 14.9,
+      "lon": 100.83
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 80411,
+     "breakdown": {
+      "refugees": 80411,
+      "asylum_seekers": 0,
+      "others_of_concern_excluded_from_count": 464
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=MYA&coa=THA",
+     "from": "Myanmar"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 572538,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    },
+    {
+     "label": "Registered Rohingya refugees in Bangladesh (UNHCR page, rounded)",
+     "count": 1006000,
+     "as_of": "2025-12",
+     "source_id": "unhcr_web_rohingya",
+     "request_url": "https://www.unhcr.org/emergencies/rohingya-emergency",
+     "note": "\"Over 1,006,000\"; older and narrower than the API figure."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 3,628,840 people displaced inside Myanmar. It also counted 1,178,036 refugees and asylum-seekers from Myanmar in Bangladesh and 192,481 in Malaysia. In 2025, the Internal Displacement Monitoring Centre recorded 572,538 displacements in Myanmar. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 3 628 840 человек, перемещённых внутри Мьянмы. Оно также насчитало 1 178 036 беженцев и лиц, ищущих убежища из Мьянмы в Бангладеш и 192 481 в Малайзии. В 2025 году число случаев перемещения в Мьянме, зафиксированных Центром мониторинга внутренних перемещений, составило 572 538. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 3 628 840 osób przemieszczonych wewnątrz Mjanmy. Naliczył też 1 178 036 uchodźców i osób ubiegających się o azyl z Mjanmy w Bangladeszu oraz 192 481 w Malezji. W 2025 roku liczba przypadków przemieszczenia w Mjanmie, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 572 538. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 3 628 840 cilvēku, kas pārvietoti Mjanmas iekšienē. Birojs uzskaitīja arī 1 178 036 bēgļu un patvēruma meklētāju no Mjanmas Bangladešā un 192 481 Malaizijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Mjanmā bija 572 538. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "haiti",
+   "name": "Haiti",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 18.55,
+    "lon": -72.34,
+    "label": "Port-au-Prince, capital of Haiti (IDMC GRID 2026: Ouest department, which includes Port-au-Prince, recorded about 20 percent of 2025 displacements; marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No start date in fetched sources. UNHCR Haiti page: 'continuing gang violence, mass displacement'. IDMC series (HDX): 2,128 (2019), 106,089 (2022), 888,684 (2024), 976,969 (2025) new displacements.",
+   "start_date_source_id": "idmc_hdx",
+   "status": "Ongoing as of IDMC GRID 2026: about 977,000 displacements in 2025, a record, and 62 percent of the Americas total.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Haiti",
+     "from_point": {
+      "lat": 19.14,
+      "lon": -72.36
+     },
+     "to_point": {
+      "lat": 19.14,
+      "lon": -72.36
+     },
+     "group": "internally_displaced",
+     "count": 1430903,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=HAI&coa=HAI",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only. UNHCR and IDMC report the same end-2025 stock.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 1430903,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "Haiti"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "United States of America",
+     "from_point": {
+      "lat": 19.14,
+      "lon": -72.36
+     },
+     "to_point": {
+      "lat": 38.9,
+      "lon": -77.04
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 165115,
+     "breakdown": {
+      "refugees": 13996,
+      "asylum_seekers": 151119
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=HAI&coa=USA",
+     "from": "Haiti"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Brazil",
+     "from_point": {
+      "lat": 19.14,
+      "lon": -72.36
+     },
+     "to_point": {
+      "lat": -15.79,
+      "lon": -47.88
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 105874,
+     "breakdown": {
+      "refugees": 105410,
+      "asylum_seekers": 464
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=HAI&coa=BRA",
+     "from": "Haiti"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Mexico",
+     "from_point": {
+      "lat": 19.14,
+      "lon": -72.36
+     },
+     "to_point": {
+      "lat": 23.66,
+      "lon": -102.01
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 62908,
+     "breakdown": {
+      "refugees": 11947,
+      "asylum_seekers": 50961
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=HAI&coa=MEX",
+     "from": "Haiti"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Canada",
+     "from_point": {
+      "lat": 19.14,
+      "lon": -72.36
+     },
+     "to_point": {
+      "lat": 45.42,
+      "lon": -75.69
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 48842,
+     "breakdown": {
+      "refugees": 22027,
+      "asylum_seekers": 26815
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=HAI&coa=CAN",
+     "from": "Haiti"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 976969,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 1,430,903 people displaced inside Haiti. It also counted 165,115 refugees and asylum-seekers from Haiti in the United States of America and 105,874 in Brazil. In 2025, the Internal Displacement Monitoring Centre recorded 976,969 displacements in Haiti. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 1 430 903 человек, перемещённых внутри Гаити. Оно также насчитало 165 115 беженцев и лиц, ищущих убежища из Гаити в Соединённых Штатах Америки и 105 874 в Бразилии. В 2025 году число случаев перемещения на Гаити, зафиксированных Центром мониторинга внутренних перемещений, составило 976 969. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 1 430 903 osób przemieszczonych wewnątrz Haiti. Naliczył też 165 115 uchodźców i osób ubiegających się o azyl z Haiti w Stanach Zjednoczonych oraz 105 874 w Brazylii. W 2025 roku liczba przypadków przemieszczenia w Haiti, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 976 969. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 1 430 903 cilvēku, kas pārvietoti Haiti iekšienē. Birojs uzskaitīja arī 165 115 bēgļu un patvēruma meklētāju no Haiti Amerikas Savienotajās Valstīs un 105 874 Brazīlijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Haiti bija 976 969. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "somalia",
+   "name": "Somalia",
+   "cause_type": "conflict",
+   "cause_type_secondary": [
+    "climate-drought"
+   ],
+   "cause_point": {
+    "lat": 2.03,
+    "lon": 45.34,
+    "label": "Mogadishu, capital of Somalia (marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No start date in fetched sources. UNHCR Somalia page: displacement in 2024 caused by 'continued conflict, political tensions, and climate-related disasters, including floods and drought', 'most new displacements were caused by violence'.",
+   "start_date_source_id": "unhcr_web_somalia",
+   "status": "Ongoing as of the latest source: IDMC end-2025 stock 3,347,408; 213,669 new displacements in 2025.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Somalia",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "group": "internally_displaced",
+     "count": 3347408,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SOM&coa=SOM",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only. Includes people displaced by conflict; drought and flood displacement is shown in the Horn of Africa entry (different measure, do not add).",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 3347408,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "Somalia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Kenya",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 0.28,
+      "lon": 37.52
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 459131,
+     "breakdown": {
+      "refugees": 319471,
+      "asylum_seekers": 139660
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SOM&coa=KEN",
+     "from": "Somalia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Ethiopia",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 10.21,
+      "lon": 38.65
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 361872,
+     "breakdown": {
+      "refugees": 317879,
+      "asylum_seekers": 43993
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SOM&coa=ETH",
+     "from": "Somalia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Uganda",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 1.53,
+      "lon": 32.22
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 49932,
+     "breakdown": {
+      "refugees": 48253,
+      "asylum_seekers": 1679
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SOM&coa=UGA",
+     "from": "Somalia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Yemen",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 16.35,
+      "lon": 47.89
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 40537,
+     "breakdown": {
+      "refugees": 40335,
+      "asylum_seekers": 202
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SOM&coa=YEM",
+     "from": "Somalia"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 213669,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 3,347,408 people displaced inside Somalia. It also counted 459,131 refugees and asylum-seekers from Somalia in Kenya and 361,872 in Ethiopia. In 2025, the Internal Displacement Monitoring Centre recorded 213,669 displacements in Somalia. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 3 347 408 человек, перемещённых внутри Сомали. Оно также насчитало 459 131 беженцев и лиц, ищущих убежища из Сомали в Кении и 361 872 в Эфиопии. В 2025 году число случаев перемещения в Сомали, зафиксированных Центром мониторинга внутренних перемещений, составило 213 669. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 3 347 408 osób przemieszczonych wewnątrz Somalii. Naliczył też 459 131 uchodźców i osób ubiegających się o azyl z Somalii w Kenii oraz 361 872 w Etiopii. W 2025 roku liczba przypadków przemieszczenia w Somalii, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 213 669. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 3 347 408 cilvēku, kas pārvietoti Somālijas iekšienē. Birojs uzskaitīja arī 459 131 bēgļu un patvēruma meklētāju no Somālijas Kenijā un 361 872 Etiopijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Somālijā bija 213 669. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "venezuela",
+   "name": "Venezuela",
+   "cause_type": "unclassified",
+   "cause_type_fallback_for_colour": "conflict",
+   "cause_type_note": "The fetched UNHCR Venezuela page states no cause; UNHCR calls it a situation of people who left \"in search of protection and a better life\". Editor decision needed: neutral colour or nearest type.",
+   "cause_point": {
+    "lat": 10.51,
+    "lon": -66.91,
+    "label": "Caracas, capital of Venezuela (marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No start date on the fetched UNHCR page. UNHCR API series shows Venezuelans abroad recorded mainly from 2017 (asylum-seekers 148,096) and the 'other people in need of international protection' category from 2018 (2,592,947).",
+   "start_date_source_id": "unhcr_web_venezuela",
+   "status": "Outflow 'continues' per UNHCR Venezuela situation page (December 2025), with 'some spontaneous returns'.",
+   "flows": [
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Colombia",
+     "from_point": {
+      "lat": 8.0,
+      "lon": -66.11
+     },
+     "to_point": {
+      "lat": 4.1,
+      "lon": -72.91
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 2828195,
+     "breakdown": {
+      "refugees": 1097,
+      "asylum_seekers": 16320,
+      "other_people_in_need_of_international_protection": 2810778
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=VEN&coa=COL",
+     "from": "Venezuela"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Peru",
+     "from_point": {
+      "lat": 8.0,
+      "lon": -66.11
+     },
+     "to_point": {
+      "lat": -6.87,
+      "lon": -75.05
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 1641305,
+     "breakdown": {
+      "refugees": 4963,
+      "asylum_seekers": 538328,
+      "other_people_in_need_of_international_protection": 1098014
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=VEN&coa=PER",
+     "from": "Venezuela"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Brazil",
+     "from_point": {
+      "lat": 8.0,
+      "lon": -66.11
+     },
+     "to_point": {
+      "lat": -15.79,
+      "lon": -47.88
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 732272,
+     "breakdown": {
+      "refugees": 149501,
+      "asylum_seekers": 33237,
+      "other_people_in_need_of_international_protection": 549534
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=VEN&coa=BRA",
+     "from": "Venezuela"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Chile",
+     "from_point": {
+      "lat": 8.0,
+      "lon": -66.11
+     },
+     "to_point": {
+      "lat": -31.76,
+      "lon": -71.32
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 669408,
+     "breakdown": {
+      "refugees": 121,
+      "asylum_seekers": 6783,
+      "other_people_in_need_of_international_protection": 662504
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=VEN&coa=CHL",
+     "from": "Venezuela"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Ecuador",
+     "from_point": {
+      "lat": 8.0,
+      "lon": -66.11
+     },
+     "to_point": {
+      "lat": -1.34,
+      "lon": -79.37
+     },
+     "group": "refugees_asylum_seekers_and_others_in_need_of_international_protection",
+     "count": 441063,
+     "breakdown": {
+      "refugees": 2908,
+      "asylum_seekers": 5267,
+      "other_people_in_need_of_international_protection": 432888
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=VEN&coa=ECU",
+     "from": "Venezuela"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "Worldwide total from Venezuela: refugees + asylum-seekers + other people in need of international protection",
+     "count": 7640872,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=VEN",
+     "note": "Computed sum of three API fields. Other UNHCR page figure (government data): nearly 7.9 million refugees and migrants, updated December 2025; different definition (includes migrants). Display the API sum for people in protection categories, and show the government figure separately."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 2,828,195 refugees, asylum-seekers and other people in need of international protection from Venezuela in Colombia, 1,641,305 in Peru and 732,272 in Brazil.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 2 828 195 беженцев, лиц, ищущих убежища, и других лиц, нуждающихся в международной защите из Венесуэлы в Колумбии, 1 641 305 в Перу и 732 272 в Бразилии.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 2 828 195 uchodźców, osób ubiegających się o azyl i innych osób potrzebujących ochrony międzynarodowej z Wenezueli w Kolumbii, 1 641 305 w Peru i 732 272 w Brazylii.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 2 828 195 bēgļu, patvēruma meklētāju un citu personu, kurām nepieciešama starptautiskā aizsardzība no Venecuēlas Kolumbijā, 1 641 305 Peru un 732 272 Brazīlijā."
+   }
+  },
+  {
+   "id": "gaza-palestine",
+   "name": "Gaza Strip and the State of Palestine",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 31.51,
+    "lon": 34.46,
+    "label": "Gaza City (marker for the Gaza Strip)"
+   },
+   "start_date": "2023-10",
+   "start_date_verified": false,
+   "start_date_note": "OCHA snapshot: 'injured since October 2023' and fatalities 'on 7 October'. A directly fetched source stating the start date of the current hostilities was not obtained (UNRWA Situation Report 235 returned 403). GRID: ceasefires 19 January 2025 and 10 October 2025, hostilities resumed 18 March 2025.",
+   "start_date_source_id": "ocha_opt_snapshot",
+   "status": "As of 23 September 2026 (OCHA): 1.98 million people (94 percent of the population) need shelter and non-food item assistance; ceasefire agreement announced 10 October 2025 (OCHA text). Return was still impossible for more than two million IDPs at end-2025 (IDMC GRID 2026).",
+   "data_display_recommendation": "Show IDMC year-end 2025 stock and 2025 movements (same source, same date). Show the OCHA 23 September 2026 shelter-need figure as a separate labelled number. No fetched OCHA or UNRWA source gives a total-displaced count for 2026 (one search summary did, unverified, so not used).",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside the State of Palestine",
+     "from_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "to_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "group": "internally_displaced",
+     "count": 2035131,
+     "as_of": "2025-12-31",
+     "source_id": "idmc_hdx",
+     "approximate": true,
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "IDMC row \"State of Palestine\" (Gaza Strip and West Bank together; GRID 2026 text says more than 9,000 people lived in displacement in the West Bank at year end, excluding refugees). GRID: return still impossible for more than two million IDPs. No arrow: no fetched source gives a destination.",
+     "from": "Gaza Strip"
+    },
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside the State of Palestine",
+     "from_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "to_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "group": "new_displacements_movements_during_year",
+     "count": 2755779,
+     "period": "2025-01-01/2025-12-31",
+     "as_of": "2025-12-31",
+     "source_id": "idmc_hdx",
+     "approximate": true,
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Movements, not people. 2024 value was 3,216,584.",
+     "from": "Gaza Strip"
+    },
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside the Gaza Strip",
+     "from_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "to_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "group": "palestine_refugees_under_UNRWA_mandate_internally_displaced",
+     "count": 1400000,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_gt",
+     "approximate": true,
+     "request_url": "https://www.unhcr.org/global-trends",
+     "note": "UNHCR Global Trends 2026: \"Some Palestine refugees under UNRWA’s mandate in Gaza have also been internally displaced in ... 2025 (1.4 million)\". Rounded in source. A subset definition; counted once under UNRWA in the UNHCR global chart. Do not add to the IDMC stock.",
+     "from": "Gaza Strip"
+    },
+    {
+     "kind": "needs_estimate",
+     "draw_arrow": false,
+     "to": "inside the Gaza Strip",
+     "from_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "to_point": {
+      "lat": 31.51,
+      "lon": 34.46
+     },
+     "group": "people_estimated_to_need_shelter_assistance",
+     "count": 1980000,
+     "as_of": "2026-09-23",
+     "source_id": "ocha_opt_snapshot",
+     "approximate": true,
+     "request_url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf",
+     "note": "OCHA: \"1.98 million people (94% of the population) estimated to need shelter and NFI assistance\". This is a need estimate, not a displacement count. Latest dated figure.",
+     "from": "Gaza Strip"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "Registered Palestine refugees in Gaza (UNRWA, via UNHCR API)",
+     "count": 2484580,
+     "as_of": "2025-12-31",
+     "source_id": "unrwa_api",
+     "request_url": "https://api.unhcr.org/population/v1/unrwa/?limit=50&year=2025&coa_all=true",
+     "note": "Registration count, not displacement. Do not present as displaced."
+    },
+    {
+     "label": "Displacement sites at high flood risk (OCHA, people hosted, estimate)",
+     "count": 464402,
+     "as_of": "2026-09-25",
+     "source_id": "ocha_opt_sitrep",
+     "request_url": "https://www.ochaopt.org/content/humanitarian-situation-report-25-september-2026",
+     "note": "451 sites; OCHA snapshot of 23 September gives a wider figure of more than 950,000 people in 989 sites at medium or high risk."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the Internal Displacement Monitoring Centre counted 2,035,131 people living in internal displacement in the State of Palestine, and recorded 2,755,779 displacements during 2025. Repeated moves by the same person are counted each time. On 23 September 2026, the United Nations Office for the Coordination of Humanitarian Affairs estimated that 1.98 million people in the Gaza Strip needed shelter assistance.",
+    "ru": "На конец 2025 года число людей, живущих во внутреннем перемещении в Государстве Палестина, по данным Центра мониторинга внутренних перемещений составило 2 035 131, а число случаев перемещения в течение 2025 года составило 2 755 779. Повторные перемещения одного человека учитываются каждый раз. По оценке Управления Организации Объединённых Наций по координации гуманитарных вопросов, на 23 сентября 2026 года в помощи с жильём нуждались 1,98 миллиона человек в секторе Газа.",
+    "pl": "Na koniec 2025 roku liczba osób żyjących na wewnętrznym przesiedleniu w Państwie Palestyna wyniosła według Centrum Monitorowania Wewnętrznych Przesiedleń 2 035 131, a liczba przypadków przemieszczenia w ciągu 2025 roku wyniosła 2 755 779. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem. Według szacunków Biura Narodów Zjednoczonych do spraw Koordynacji Pomocy Humanitarnej, na dzień 23 września 2026 roku 1,98 miliona osób w Strefie Gazy potrzebowało pomocy w zakresie schronienia.",
+    "lv": "2025. gada beigās cilvēku skaits, kas dzīvo iekšējā pārvietošanā Palestīnas Valstī, pēc Iekšējās pārvietošanas uzraudzības centra datiem bija 2 035 131, un 2025. gadā reģistrēto pārvietošanās gadījumu skaits bija 2 755 779. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi. Pēc Apvienoto Nāciju Organizācijas Humānās palīdzības koordinācijas biroja aplēsēm, 2026. gada 23. septembrī palīdzība mājokļa jomā bija nepieciešama 1,98 miljoniem cilvēku Gazas joslā."
+   }
+  },
+  {
+   "id": "pakistan-floods",
+   "name": "Pakistan floods (2022 and 2025 monsoons)",
+   "cause_type": "natural-disaster",
+   "cause_point": {
+    "lat": 25.5,
+    "lon": 69.0,
+    "label": "Sindh province (IDMC: 7,245,490 flood displacements in the 2022 monsoon); centre point of the province, approximate"
+   },
+   "start_date": "2022-06-14",
+   "start_date_verified": true,
+   "start_date_note": "IDMC event record: monsoon flood 14 June to 30 September 2022. A second event: monsoon 10 July to 1 October 2025 (Sindh) and 23 July to 1 October 2025 (Punjab).",
+   "start_date_source_id": "idmc_hdx_pak",
+   "status": "Recurring: 2025 monsoon floods displaced 3,044,719 (IDMC); 374,911 people from the Punjab event were still displaced at end-2025 (IDMC event row).",
+   "flows": [
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside Pakistan",
+     "from_point": {
+      "lat": 25.5,
+      "lon": 69.0
+     },
+     "to_point": {
+      "lat": 25.5,
+      "lon": 69.0
+     },
+     "approximate": true,
+     "source_id": "idmc_hdx_pak",
+     "request_url": "https://data.humdata.org/dataset/6ed9e42e-4eb0-4f92-b4a0-f37a639e710e/resource/38c22e9d-5d75-44b6-a9ee-01dfb2198273/download/internal-displacements-new-displacements-associated-with-disasters_pak.csv",
+     "group": "new_displacements_movements_caused_by_floods",
+     "count": 8163898,
+     "period": "2022-01-01/2022-12-31",
+     "as_of": "2022-12-31",
+     "note": "Sum of 9 IDMC Flood rows for 2022 (Sindh alone 7,245,490; monsoon event 14 June to 30 September 2022). Movements, not people.",
+     "from": "Pakistan (flood-affected provinces)"
+    },
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside Pakistan",
+     "from_point": {
+      "lat": 25.5,
+      "lon": 69.0
+     },
+     "to_point": {
+      "lat": 25.5,
+      "lon": 69.0
+     },
+     "approximate": true,
+     "source_id": "idmc_hdx_pak",
+     "request_url": "https://data.humdata.org/dataset/6ed9e42e-4eb0-4f92-b4a0-f37a639e710e/resource/38c22e9d-5d75-44b6-a9ee-01dfb2198273/download/internal-displacements-new-displacements-associated-with-disasters_pak.csv",
+     "group": "new_displacements_movements_caused_by_floods",
+     "count": 3044719,
+     "period": "2025-01-01/2025-12-31",
+     "as_of": "2025-12-31",
+     "note": "Sum of 13 IDMC Flood rows for 2025 (Punjab 2,819,767, Sindh 184,011). GRID 2026: Pakistan was 84 percent of South Asia flood movements. Movements, not people.",
+     "from": "Pakistan (flood-affected provinces)"
+    },
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Pakistan",
+     "from_point": {
+      "lat": 31.0,
+      "lon": 72.0
+     },
+     "to_point": {
+      "lat": 31.0,
+      "lon": 72.0
+     },
+     "approximate": true,
+     "source_id": "idmc_hdx_pak",
+     "request_url": "https://data.humdata.org/dataset/6ed9e42e-4eb0-4f92-b4a0-f37a639e710e/resource/38c22e9d-5d75-44b6-a9ee-01dfb2198273/download/internal-displacements-new-displacements-associated-with-disasters_pak.csv",
+     "group": "internally_displaced_by_flood_event_at_year_end",
+     "count": 374911,
+     "as_of": "2025-12-31",
+     "note": "IDMC event row \"Pakistan: Flood [Monsoon] - Punjab - 23/07/2025\", total_displacement field; IDMC GRID 2026 text: \"Nearly 375,000 people were still displaced by the floods at the end of the year\".",
+     "from": "Punjab province, Pakistan"
+    }
+   ],
+   "context_figures": [],
+   "captions": {
+    "en": "In 2022, the Internal Displacement Monitoring Centre recorded 8,163,898 displacements caused by floods in Pakistan, and 3,044,719 in 2025. At the end of 2025, 374,911 people were still displaced by the Punjab floods. Repeated moves by the same person are counted each time.",
+    "ru": "В 2022 году число случаев перемещения из-за наводнений в Пакистане, зафиксированных Центром мониторинга внутренних перемещений, составило 8 163 898, а в 2025 году 3 044 719. На конец 2025 года из-за наводнений в Пенджабе оставались перемещёнными 374 911 человек. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "W 2022 roku liczba przypadków przemieszczenia z powodu powodzi w Pakistanie, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 8 163 898, a w 2025 roku 3 044 719. Na koniec 2025 roku z powodu powodzi w Pendżabie nadal przesiedlonych pozostawało 374 911 osób. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2022. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits plūdu dēļ Pakistānā bija 8 163 898, bet 2025. gadā 3 044 719. 2025. gada beigās Pendžabas plūdu dēļ joprojām bija pārvietoti 374 911 cilvēku. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "yemen",
+   "name": "Yemen",
+   "cause_type": "conflict",
+   "cause_type_secondary": [
+    "natural-disaster"
+   ],
+   "cause_point": {
+    "lat": 15.35,
+    "lon": 44.2,
+    "label": "Sanaa, capital of Yemen (marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No start date in fetched sources. UNHCR Yemen page: 'ongoing conflict', 'years of instability'. IDMC series rises sharply in 2015 (2,174,968 new displacements versus 100,000 in 2014).",
+   "start_date_source_id": "unhcr_web_yemen",
+   "status": "Ongoing as of latest source; UNHCR Yemen page says floods and other climate-induced disasters now account for the majority of new displacements.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Yemen",
+     "from_point": {
+      "lat": 16.35,
+      "lon": 47.89
+     },
+     "to_point": {
+      "lat": 16.35,
+      "lon": 47.89
+     },
+     "group": "internally_displaced",
+     "count": 4795983,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=YEM&coa=YEM",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only. UNHCR and IDMC report the same end-2025 stock. IDMC GRID 2026 states floods and storms caused about 90 percent of Yemen disaster movements in 2025.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 4795983,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "Yemen"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Somalia",
+     "from_point": {
+      "lat": 16.35,
+      "lon": 47.89
+     },
+     "to_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 13496,
+     "breakdown": {
+      "refugees": 13496,
+      "asylum_seekers": 0
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=YEM&coa=SOM",
+     "from": "Yemen"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Netherlands",
+     "from_point": {
+      "lat": 16.35,
+      "lon": 47.89
+     },
+     "to_point": {
+      "lat": 52.24,
+      "lon": 5.63
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 10539,
+     "breakdown": {
+      "refugees": 8709,
+      "asylum_seekers": 1830
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=YEM&coa=NET",
+     "from": "Yemen"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Egypt",
+     "from_point": {
+      "lat": 16.35,
+      "lon": 47.89
+     },
+     "to_point": {
+      "lat": 26.25,
+      "lon": 29.27
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 10324,
+     "breakdown": {
+      "refugees": 158,
+      "asylum_seekers": 10166
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=YEM&coa=ARE",
+     "from": "Yemen"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 56798,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 4,795,983 people displaced inside Yemen. It also counted 13,496 refugees and asylum-seekers from Yemen in Somalia and 10,539 in the Netherlands. In 2025, the Internal Displacement Monitoring Centre recorded 56,798 displacements in Yemen. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 4 795 983 человек, перемещённых внутри Йемена. Оно также насчитало 13 496 беженцев и лиц, ищущих убежища из Йемена в Сомали и 10 539 в Нидерландах. В 2025 году число случаев перемещения в Йемене, зафиксированных Центром мониторинга внутренних перемещений, составило 56 798. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 4 795 983 osób przemieszczonych wewnątrz Jemenu. Naliczył też 13 496 uchodźców i osób ubiegających się o azyl z Jemenu w Somalii oraz 10 539 w Holandii. W 2025 roku liczba przypadków przemieszczenia w Jemenie, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 56 798. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 4 795 983 cilvēku, kas pārvietoti Jemenas iekšienē. Birojs uzskaitīja arī 13 496 bēgļu un patvēruma meklētāju no Jemenas Somālijā un 10 539 Nīderlandē. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Jemenā bija 56 798. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "south-sudan",
+   "name": "South Sudan",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 4.85,
+    "lon": 31.6,
+    "label": "Juba, capital of South Sudan (marker only)"
+   },
+   "start_date": "2013",
+   "start_date_verified": true,
+   "start_date_note": "UNHCR: 'Since 2013, brutal conflict in South Sudan'. Contradiction: IDMC GRID 2026 says the civil war broke out in 2014. Year precision only.",
+   "start_date_source_id": "unhcr_web_southsudan",
+   "status": "Ongoing as of latest source; IDMC GRID 2026 records about 864,000 conflict displacements in 2025, the highest since the war began.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside South Sudan",
+     "from_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "to_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "group": "internally_displaced",
+     "count": 1277527,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SSD&coa=SSD",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 944894,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      },
+      {
+       "source_id": "unhcr_web_southsudan",
+       "count": 818000,
+       "as_of": "2025-12",
+       "note": "UNHCR South Sudan page shows 818,000 in one place and \"1.9 million people are displaced\" inside the country in the text of the same page; not consistent with each other or with the API (1,277,527) and IDMC (944,894). Do not display the web page figures.",
+       "request_url": "https://www.unhcr.org/emergencies/south-sudan-emergency"
+      }
+     ],
+     "from": "South Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Uganda",
+     "from_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "to_point": {
+      "lat": 1.53,
+      "lon": 32.22
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 1033650,
+     "breakdown": {
+      "refugees": 1033579,
+      "asylum_seekers": 71
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SSD&coa=UGA",
+     "from": "South Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Sudan",
+     "from_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "to_point": {
+      "lat": 14.58,
+      "lon": 29.49
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 634954,
+     "breakdown": {
+      "refugees": 634954,
+      "asylum_seekers": 0
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SSD&coa=SUD",
+     "from": "South Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Ethiopia",
+     "from_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "to_point": {
+      "lat": 10.21,
+      "lon": 38.65
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 482817,
+     "breakdown": {
+      "refugees": 422871,
+      "asylum_seekers": 59946
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SSD&coa=ETH",
+     "from": "South Sudan"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Kenya",
+     "from_point": {
+      "lat": 7.87,
+      "lon": 29.67
+     },
+     "to_point": {
+      "lat": 0.28,
+      "lon": 37.52
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 202863,
+     "breakdown": {
+      "refugees": 202772,
+      "asylum_seekers": 91
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=SSD&coa=KEN",
+     "from": "South Sudan"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 863585,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 1,277,527 people displaced inside South Sudan. It also counted 1,033,650 refugees and asylum-seekers from South Sudan in Uganda and 634,954 in Sudan. In 2025, the Internal Displacement Monitoring Centre recorded 863,585 displacements in South Sudan. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 1 277 527 человек, перемещённых внутри Южного Судана. Оно также насчитало 1 033 650 беженцев и лиц, ищущих убежища из Южного Судана в Уганде и 634 954 в Судане. В 2025 году число случаев перемещения в Южном Судане, зафиксированных Центром мониторинга внутренних перемещений, составило 863 585. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 1 277 527 osób przemieszczonych wewnątrz Sudanu Południowego. Naliczył też 1 033 650 uchodźców i osób ubiegających się o azyl z Sudanu Południowego w Ugandzie oraz 634 954 w Sudanie. W 2025 roku liczba przypadków przemieszczenia w Sudanie Południowym, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 863 585. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 1 277 527 cilvēku, kas pārvietoti Dienvidsudānas iekšienē. Birojs uzskaitīja arī 1 033 650 bēgļu un patvēruma meklētāju no Dienvidsudānas Ugandā un 634 954 Sudānā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Dienvidsudānā bija 863 585. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "colombia",
+   "name": "Colombia",
+   "cause_type": "conflict",
+   "cause_point": {
+    "lat": 8.64,
+    "lon": -72.73,
+    "label": "Tibu, Norte de Santander (Catatumbo region; IDMC GRID 2026: largest displacement event in the area in three decades, early 2025; marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No start date in fetched sources. IDMC HDX series shows a conflict-displacement stock of 5,700,000 already in 2013.",
+   "start_date_source_id": "idmc_grid",
+   "status": "Ongoing as of IDMC GRID 2026 (2025): 394,106 new displacements; end-2025 stock 7,210,702.",
+   "flows": [
+    {
+     "kind": "internal_stock",
+     "draw_arrow": false,
+     "to": "inside Colombia",
+     "from_point": {
+      "lat": 4.1,
+      "lon": -72.91
+     },
+     "to_point": {
+      "lat": 4.1,
+      "lon": -72.91
+     },
+     "group": "internally_displaced",
+     "count": 7157716,
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COL&coa=COL",
+     "note": "Internal figure; marker at country centre, no arrow. UNHCR counts conflict and violence only.",
+     "alternatives": [
+      {
+       "source_id": "idmc_hdx",
+       "count": 7210702,
+       "as_of": "2025-12-31",
+       "note": "IDMC end-year stock of people displaced by conflict and violence (the HDX file is conflict only; IDMC counts disaster IDPs separately).",
+       "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv"
+      }
+     ],
+     "from": "Colombia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "United States of America",
+     "from_point": {
+      "lat": 4.1,
+      "lon": -72.91
+     },
+     "to_point": {
+      "lat": 38.9,
+      "lon": -77.04
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 195674,
+     "breakdown": {
+      "refugees": 5460,
+      "asylum_seekers": 190214
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COL&coa=USA",
+     "from": "Colombia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Spain",
+     "from_point": {
+      "lat": 4.1,
+      "lon": -72.91
+     },
+     "to_point": {
+      "lat": 39.33,
+      "lon": -4.84
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 71335,
+     "breakdown": {
+      "refugees": 4990,
+      "asylum_seekers": 66345
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COL&coa=SPA",
+     "from": "Colombia"
+    },
+    {
+     "kind": "cross_border",
+     "draw_arrow": true,
+     "to": "Ecuador",
+     "from_point": {
+      "lat": 4.1,
+      "lon": -72.91
+     },
+     "to_point": {
+      "lat": -1.34,
+      "lon": -79.37
+     },
+     "group": "refugees_and_asylum_seekers",
+     "count": 25413,
+     "breakdown": {
+      "refugees": 22420,
+      "asylum_seekers": 2993
+     },
+     "as_of": "2025-12-31",
+     "source_id": "unhcr_api",
+     "approximate": true,
+     "request_url": "https://api.unhcr.org/population/v1/population/?year=2025&coo=COL&coa=ECU",
+     "from": "Colombia"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "New displacements (movements) during 2025, conflict and violence",
+     "count": 394106,
+     "as_of": "2025-12-31",
+     "period": "2025-01-01/2025-12-31",
+     "source_id": "idmc_hdx",
+     "request_url": "https://data.humdata.org/dataset/459fc96c-f196-44c1-a0a5-1b5a7b3592dd/resource/0fb4e415-abdb-481a-a3c6-8821e79919be/download/internal-displacements-new-displacements-idps.csv",
+     "note": "Counts movements during the year, including repeated moves by the same person. Never add to stock figures."
+    }
+   ],
+   "captions": {
+    "en": "At the end of 2025, the United Nations High Commissioner for Refugees counted 7,157,716 people displaced inside Colombia. It also counted 195,674 refugees and asylum-seekers from Colombia in the United States of America and 71,335 in Spain. In 2025, the Internal Displacement Monitoring Centre recorded 394,106 displacements in Colombia. Repeated moves by the same person are counted each time.",
+    "ru": "На конец 2025 года Управление Верховного комиссара Организации Объединённых Наций по делам беженцев насчитало 7 157 716 человек, перемещённых внутри Колумбии. Оно также насчитало 195 674 беженцев и лиц, ищущих убежища из Колумбии в Соединённых Штатах Америки и 71 335 в Испании. В 2025 году число случаев перемещения в Колумбии, зафиксированных Центром мониторинга внутренних перемещений, составило 394 106. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "Na koniec 2025 roku Wysoki Komisarz Narodów Zjednoczonych do spraw Uchodźców naliczył 7 157 716 osób przemieszczonych wewnątrz Kolumbii. Naliczył też 195 674 uchodźców i osób ubiegających się o azyl z Kolumbii w Stanach Zjednoczonych oraz 71 335 w Hiszpanii. W 2025 roku liczba przypadków przemieszczenia w Kolumbii, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 394 106. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2025. gada beigās Apvienoto Nāciju Organizācijas Augstā komisāra bēgļu jautājumos birojs uzskaitīja 7 157 716 cilvēku, kas pārvietoti Kolumbijas iekšienē. Birojs uzskaitīja arī 195 674 bēgļu un patvēruma meklētāju no Kolumbijas Amerikas Savienotajās Valstīs un 71 335 Spānijā. 2025. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits Kolumbijā bija 394 106. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  },
+  {
+   "id": "horn-of-africa-drought",
+   "name": "Horn of Africa drought (Somalia, Ethiopia, Kenya)",
+   "cause_type": "climate-drought",
+   "cause_point": {
+    "lat": 4.16,
+    "lon": 42.08,
+    "label": "Doolow, Gedo region, Somalia: approximate centre of the Somalia, Ethiopia, Kenya borderlands (marker only)"
+   },
+   "start_date": null,
+   "start_date_verified": false,
+   "start_date_note": "No single start date. IDMC records drought displacement in Somalia in every year 2017 to 2023 and 2025, peaking in 2022 (1,134,143).",
+   "start_date_source_id": "idmc_hdx_som",
+   "status": "Peak 2022 (IDMC). In 2025 IDMC still records 289,897 drought displacements in Somalia.",
+   "flows": [
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside Somalia",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "group": "new_displacements_movements_caused_by_drought",
+     "count": 1134143,
+     "period": "2022-01-01/2022-12-31",
+     "as_of": "2022-12-31",
+     "source_id": "idmc_hdx_som",
+     "approximate": true,
+     "request_url": "https://data.humdata.org/dataset/c67f8253-b5c5-4f6c-ba34-9af41331d1f2/resource/fbcfcd16-6997-4212-ad1b-a2f7355624aa/download/internal-displacements-new-displacements-associated-with-disasters_som.csv",
+     "note": "Movements, not people. IDMC row 'Somalia: Drought - Countrywide - 2022'.",
+     "from": "Somalia"
+    },
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside Ethiopia",
+     "from_point": {
+      "lat": 10.21,
+      "lon": 38.65
+     },
+     "to_point": {
+      "lat": 10.21,
+      "lon": 38.65
+     },
+     "group": "new_displacements_movements_caused_by_drought",
+     "count": 685740,
+     "period": "2022-01-01/2022-12-31",
+     "as_of": "2022-12-31",
+     "source_id": "idmc_hdx_eth",
+     "approximate": true,
+     "request_url": "https://data.humdata.org/dataset/4b877793-d974-487e-846a-76e356b7530f/resource/d451cdb9-ee8f-403e-af2f-f1c3371739c6/download/internal-displacements-new-displacements-associated-with-disasters_eth.csv",
+     "note": "Movements, not people. IDMC row 'Ethiopia: Drought - Countrywide - 01/01/2022'; year-end stock 517,169.",
+     "from": "Ethiopia"
+    },
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside Kenya",
+     "from_point": {
+      "lat": 0.28,
+      "lon": 37.52
+     },
+     "to_point": {
+      "lat": 0.28,
+      "lon": 37.52
+     },
+     "group": "new_displacements_movements_caused_by_drought",
+     "count": 316206,
+     "period": "2022-01-01/2022-12-31",
+     "as_of": "2022-12-31",
+     "source_id": "idmc_hdx_ken",
+     "approximate": true,
+     "request_url": "https://data.humdata.org/dataset/e1bd9ccd-416b-4f7c-9b2e-ab775e2543a7/resource/8913ce67-a795-479a-a038-4c70ccf3f645/download/internal-displacements-new-displacements-associated-with-disasters_ken.csv",
+     "note": "Movements, not people. Sum of Garissa, Isiolo, Marsabit, Turkana and other county rows for 2022.",
+     "from": "Kenya"
+    },
+    {
+     "kind": "internal_new_displacements",
+     "draw_arrow": false,
+     "to": "inside Somalia",
+     "from_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "to_point": {
+      "lat": 8.37,
+      "lon": 49.08
+     },
+     "group": "new_displacements_movements_caused_by_drought",
+     "count": 289897,
+     "period": "2025-01-01/2025-12-31",
+     "as_of": "2025-12-31",
+     "source_id": "idmc_hdx_som",
+     "approximate": true,
+     "request_url": "https://data.humdata.org/dataset/c67f8253-b5c5-4f6c-ba34-9af41331d1f2/resource/fbcfcd16-6997-4212-ad1b-a2f7355624aa/download/internal-displacements-new-displacements-associated-with-disasters_som.csv",
+     "note": "Movements, not people. Sum of 2025 drought rows (for example Sanaag 53,253 and Sool 54,749 in November 2025).",
+     "from": "Somalia"
+    }
+   ],
+   "context_figures": [
+    {
+     "label": "Sum of the three 2022 drought figures (computed)",
+     "count": 2136089,
+     "as_of": "2022-12-31",
+     "source_id": "idmc_hdx_som",
+     "request_url": "https://data.humdata.org/dataset/c67f8253-b5c5-4f6c-ba34-9af41331d1f2/resource/fbcfcd16-6997-4212-ad1b-a2f7355624aa/download/internal-displacements-new-displacements-associated-with-disasters_som.csv",
+     "note": "Computed by adding the three country totals; not an IDMC-published total. Movements, not people."
+    }
+   ],
+   "captions": {
+    "en": "In 2022, the Internal Displacement Monitoring Centre recorded 1,134,143 displacements caused by drought in Somalia, 685,740 in Ethiopia and 316,206 in Kenya. Repeated moves by the same person are counted each time.",
+    "ru": "В 2022 году число случаев перемещения из-за засухи, зафиксированных Центром мониторинга внутренних перемещений, составило 1 134 143 в Сомали, 685 740 в Эфиопии и 316 206 в Кении. Повторные перемещения одного человека учитываются каждый раз.",
+    "pl": "W 2022 roku liczba przypadków przemieszczenia z powodu suszy, odnotowanych przez Centrum Monitorowania Wewnętrznych Przesiedleń, wyniosła 1 134 143 w Somalii, 685 740 w Etiopii i 316 206 w Kenii. Ponowne przemieszczenia tej samej osoby są liczone za każdym razem.",
+    "lv": "2022. gadā Iekšējās pārvietošanas uzraudzības centra reģistrēto pārvietošanās gadījumu skaits sausuma dēļ bija 1 134 143 Somālijā, 685 740 Etiopijā un 316 206 Kenijā. Atkārtotas vienas personas pārvietošanās tiek skaitītas katru reizi."
+   }
+  }
+ ]
+}
