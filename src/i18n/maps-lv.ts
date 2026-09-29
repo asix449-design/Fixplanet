@@ -702,4 +702,72 @@ export const lv: Record<string, MapCopy> = {
     imageAlt:
       'Pasaules karte ar meža integritātes skalu: tumši zaļi attāli masīvi, zelta vidus un oranžs stipri pārveidots mežs — ne vainagu zuduma datums',
   },
+  'world-population': {
+    title: 'Pasaules iedzīvotāju skaits',
+    cardMeta: 'ANO WPP 2024 · 8,16 miljardi (2024. gada 1. jūlijs)',
+    hook: 'Cik cilvēku dzīvo katrā valstī 2024. gada 1. jūlijā, pēc ANO vidējā varianta aplēsēm.',
+    description:
+      'Katra valsts ir krāsota pēc iedzīvotāju skaita 2024. gada 1. jūlijā ANO World Population Prospects 2024 vidējā variantā. Tās pašas tabulas pasaules kopskaits ir 8,16 miljardi. Lielākā valsts kopsumma ir Indijai, tad Ķīnai. Krāsa ir cilvēku skaita logaritmiskā skala: no aptuveni 16 tūkstošiem (zīmēto valstu 5. procentile) līdz 1,45 miljardiem Indijā.',
+    whyOnShelf:
+      'Viens ANO pārskatījums liek katras valsts kopsummu uz vienu datumu. Krāsa ir cilvēku skaits, nevis skaits uz kvadrātkilometru un ne nakts gaismas.',
+    howToRead:
+      'Tumšāks brūns ir lielāka valsts kopsumma. Skalā ir cilvēku skaits, logaritmiski. Pelēka zeme ir daudzstūris bez 2024. gada rindas. Ezeri un Kaspijas jūra paliek ūdens.',
+    caveats:
+      'Valsts kopsumma nav blīvuma režģis. Franču Gviāna, Gvadelupa, Martinika, Majota, Reinjona, Gibraltārs, Bonaire, Sinteistatiusa un Saba, kā arī Tokelau ir tabulā, bet šajā Natural Earth 1:50m krasta līnijā tiem nav atsevišķa daudzstūra. 8,16 miljardi ir tabulas rindas „pasaule” kopskaits, nevis krāsoto valstu summa.',
+    licenseNote:
+      'ANO DESA, World Population Prospects 2024, demogrāfiskie rādītāji, vidējais variants, iedzīvotāju skaits 2024. gada 1. jūlijā. Robežas: Natural Earth 1:50m, publiskais īpašums.',
+    imageAlt:
+      'Equal Earth karte ar ANO WPP 2024 valstu iedzīvotāju skaitu 2024. gada 1. jūlijā: tumšāks brūns ir lielāka kopsumma, ar skaitļu skalu',
+  },
+  'cities-and-towns': {
+    title: 'Pilsētas un pilsētciemati',
+    cardMeta: 'GHS-SMOD R2023A · 2020. gada epoha · 0,02° tīkls',
+    hook: 'Pilsētu centri, pilsētciemati un lauku zeme GHSL apdzīvojuma tīklā 2020. gadam.',
+    description:
+      'Plate ir GHS-SMOD R2023A 2020. gada epoha, Global Human Settlement Layer apdzīvojuma klasifikācija: pēdējā šī izdevuma epoha, kas veidota no satelītu novērojumiem. 30 loka sekunžu klases ir saskaitītas ar vairākumu 0,02° šūnā. Sarkans ir pilsētas centrs (30. klase). Oranžs ir pilsētciemats vai pusblīvs sakopojums (21., 22. un 23. klase). Olīvzaļš ir lauku šūnas (11., 12. un 13. klase). Lielākā daļa sauszemes platības ir lauku klase.',
+    whyOnShelf:
+      'Tīkls rāda zemes apdzīvojuma klasi un ir zīmēts vienādi katrā valstī. Tas nav valsts pilsētu iedzīvotāju procents un nav cilvēku skaits.',
+    howToRead:
+      'Sarkans apzīmē pilsētu centrus, oranžs pilsētciematus un pusblīvas vietas, olīvzaļš lauku šūnas. Skaitļu skalas nav: trīs krāsas ir šīs klašu grupas. Ūdens apdzīvojuma tīklā un Natural Earth ezeri paliek nekrāsoti.',
+    caveats:
+      '30. klase ir pilsētas centrs GHSL klasifikācijā, nevis katra vieta, ko valsts sauc par pilsētu. Atsevišķi: 2025. un 2030. gada epohas tajā pašā izdevumā ir modeļa prognozes, un tās nav šī karte. Plate nerāda, cik cilvēku dzīvo katrā klasē.',
+    licenseNote:
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-SMOD R2023A, 2020. gada epoha, CC BY 4.0. Klases saskaitītas 0,02° tīklā. Robežas: Natural Earth.',
+    imageAlt:
+      'Equal Earth karte ar GHSL apdzīvojuma klasēm 2020. gadam: sarkani pilsētu centri, oranži pilsētciemati, olīvzaļa lauku zeme',
+  },
+  'built-up-surface': {
+    title: 'Apbūvētā virsma',
+    cardMeta: 'GHS-BUILT-S R2023A · 2020. gada epoha · šūnas procents',
+    hook: 'Cik lielu daļu no katras šūnas veido apbūvētā virsma 2020. gada GHSL tīklā.',
+    description:
+      'Plate summē GHS-BUILT-S R2023A apbūvēto virsmu 2020. gada epohai, pēdējai šī izdevuma epohai, kas veidota no satelītu novērojumiem. Kvadrātmetri no 30 loka sekunžu tīkla ir saskaitīti katrā 0,02° šūnā un dalīti ar šīs šūnas laukumu. Krāsa ir šis procents logaritmiskā skalā no 0,1 līdz aptuveni 24. Šūnas zem 0,1 procenta paliek zemes krāsā. Skalas augša ir 99,5. procentile šūnām, kurās ir kaut kāda apbūve.',
+    whyOnShelf:
+      'Apbūvētā virsma ir zeme zem ēkām. Tas nav cilvēku skaits un nav gaismas, kas redzamas naktī.',
+    howToRead:
+      'No dzeltena uz tumši sarkanu šūnas daļa ir lielāka. Skaitlis skalā ir 0,02° šūnas procents. Šūna var pārsniegt 0,1 procentu ar blīvu kvartālu vai ar retāku apbūvi.',
+    caveats:
+      'Vērtība ir apbūvētā virsma, dalīta ar šūnas laukumu, nevis stāvu platība torņos un ne juridiskā pilsētas robeža. Okeāns un ezeri nav krāsoti. Atsevišķi: 2025. un 2030. gada epohas tajā pašā izdevumā ir modeļa prognozes, un tās nav šī karte.',
+    licenseNote:
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-BUILT-S R2023A, 2020. gada epoha, CC BY 4.0. Apkopots 0,02° tīklā. Robežas: Natural Earth.',
+    imageAlt:
+      'Equal Earth karte ar apbūvētās virsmas procentu katrā 0,02° šūnā 2020. gadā, no dzeltena uz sarkanu, ar skaitļu skalu',
+  },
+  'population-growth': {
+    title: 'Iedzīvotāju skaita pieaugums',
+    cardMeta: 'ANO WPP 2024 · 2024. gada temps · procents gadā',
+    hook: 'Katras valsts iedzīvotāju skaita gada izmaiņu temps 2024. gadā, no tā paša ANO vidējā varianta.',
+    description:
+      'Katra valsts ir krāsota pēc 2024. gada iedzīvotāju skaita pieauguma tempa ANO World Population Prospects 2024 vidējā variantā, procentos gadā. Skala iet no aptuveni −1,7 līdz 3,4 un ir centrēta uz nulli. No zīmētajām valstīm 60 temps ir negatīvs. Temps virs 3 procentiem šajā tabulā ir arī Angolai (3,0), Kongo Demokrātiskajai Republikai (3,2), Nigērai (3,3), Centrālāfrikas Republikai (3,4) un Somālijai (3,4).',
+    whyOnShelf:
+      'Liels iedzīvotāju skaits var mainīties lēni. Šajā tabulā Ķīnas 2024. gada temps ir −0,2 procenti, bet vairākām mazākām valstīm tas ir virs 3 procentiem. Plate rāda tempu, nevis cilvēku skaitu.',
+    howToRead:
+      'Zils ir iedzīvotāju skaita samazinājums, bālais vidus ir tuvu nullei, sarkans ir pieaugums. Skalā ir procenti gadā. Temps apvieno dzimstību, mirstību un migrāciju. Tas nav fertilitāte pati par sevi.',
+    caveats:
+      'Skalas gali ir zīmēto valstu 2. un 98. procentile, tāpēc dažas ātrākas un lēnākas teritorijas dala galu krāsas. Tās pašas mazās teritorijas, kuru nav iedzīvotāju skaita platē, nav arī šeit. Šī nav karte gadam, kurā iedzīvotāju skaits sasniedza maksimumu.',
+    licenseNote:
+      'ANO DESA, World Population Prospects 2024, demogrāfiskie rādītāji, vidējais variants, 2024. gada iedzīvotāju skaita pieauguma temps. Robežas: Natural Earth 1:50m, publiskais īpašums.',
+    imageAlt:
+      'Equal Earth karte ar ANO 2024. gada iedzīvotāju skaita pieauguma tempu: zils ir samazinājums, sarkans ir pieaugums, ar skaitļu skalu',
+  },
 };

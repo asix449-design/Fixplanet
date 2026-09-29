@@ -664,6 +664,42 @@
     "note": "Tonnes of lithium content. United States production is the withheld grey. No text in the bitmap."
   },
   {
+    "file": "world-population.jpg",
+    "title": "UN WPP 2024 country population, 1 July 2024",
+    "source": "UN DESA Population Division, World Population Prospects 2024 demographic indicators, medium variant",
+    "url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz",
+    "license": "UN DESA. Boundaries: Natural Earth 1:50m, public domain",
+    "kind": "data",
+    "note": "Log scale of people. Detail is 7200×3600 Equal Earth. Eight small WPP areas have no separate 1:50m polygon."
+  },
+  {
+    "file": "cities-and-towns.jpg",
+    "title": "GHSL GHS-SMOD R2023A settlement classes, 2020 epoch",
+    "source": "European Commission JRC, GHSL GHS-SMOD R2023A, 30 arc-second classes aggregated by majority to 0.02°",
+    "url": "https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php",
+    "license": "CC BY 4.0 (European Commission). Boundaries: Natural Earth",
+    "kind": "data",
+    "note": "Red urban centre (30), orange towns (21–23), olive rural (11–13). No numeric bar. 2020 is the latest satellite-based epoch in R2023A. The 2025 and 2030 epochs are model projections and are not this plate."
+  },
+  {
+    "file": "built-up-surface.jpg",
+    "title": "GHSL GHS-BUILT-S R2023A built-up surface, 2020 epoch",
+    "source": "European Commission JRC, GHSL GHS-BUILT-S R2023A, 30 arc-second built-up square metres summed to 0.02°",
+    "url": "https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php",
+    "license": "CC BY 4.0 (European Commission). Boundaries: Natural Earth",
+    "kind": "data",
+    "note": "Log scale of the percent of each 0.02° cell, from 0.1 to about 24. Cells below 0.1 percent stay the land colour."
+  },
+  {
+    "file": "population-growth.jpg",
+    "title": "UN WPP 2024 population growth rate, 2024",
+    "source": "UN DESA Population Division, World Population Prospects 2024 demographic indicators, medium variant",
+    "url": "https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz",
+    "license": "UN DESA. Boundaries: Natural Earth 1:50m, public domain",
+    "kind": "data",
+    "note": "Percent per year, diverging scale centered at zero, from about −1.7 to 3.4 (2nd and 98th percentiles of the countries drawn)."
+  },
+  {
     "file": "prison-population-rate.jpg",
     "title": "Prison population rate, map area cropped from the Our World in Data chart",
     "source": "Crop of the Our World in Data grapher PNG. Data: Institute for Crime & Justice Policy Research, World Prison Brief.",

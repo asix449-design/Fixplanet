@@ -817,6 +817,70 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'NASA 2012 night-lights map of Earth: city lights on dark land and black oceans, no borders or labels',
   },
+  'world-population': {
+    title: 'World population',
+    hook: 'How many people live in each country on 1 July 2024, from the UN medium-variant estimates.',
+    description:
+      'Each country is coloured by its population on 1 July 2024 in the UN World Population Prospects 2024 medium variant. The same table’s world total is 8.16 billion. India is the largest country total, then China. The colour is a log scale of people, from about 16 thousand (the 5th percentile of the countries drawn) to India’s 1.45 billion.',
+    whyOnShelf:
+      'One UN revision puts every country total on the same date. The colour is how many people, not how many per square kilometre and not lights at night.',
+    howToRead:
+      'Darker brown is a larger country total. The bar is people, on a log scale. Grey land has no 2024 row matched to that polygon. Lakes and the Caspian are left as water.',
+    caveats:
+      'A country total is not a density grid. French Guiana, Guadeloupe, Martinique, Mayotte, Réunion, Gibraltar, Bonaire, Sint Eustatius and Saba, and Tokelau are in the table but are not separate polygons on this Natural Earth 1:50m coastline. The 8.16 billion is the table’s World row, not a sum of the coloured countries.',
+    licenseNote:
+      'UN DESA Population Division, World Population Prospects 2024, demographic indicators, medium variant, population on 1 July 2024. Boundaries: Natural Earth 1:50m, public domain.',
+    imageAlt:
+      'Equal Earth choropleth of UN WPP 2024 country population on 1 July 2024, darker brown for larger totals, with a numeric colour bar',
+  },
+  'cities-and-towns': {
+    title: 'Cities and towns',
+    hook: 'Urban centres, towns and rural land in the GHSL settlement grid for 2020.',
+    description:
+      'The plate is the 2020 epoch of GHS-SMOD R2023A, the Global Human Settlement Layer settlement classification, and the latest epoch in that release built from satellite observations. The 30 arc-second classes are counted by majority onto a 0.02° grid. Red is an urban centre (class 30). Orange is a town or semi-dense cluster (classes 21, 22 and 23). Olive is rural (classes 11, 12 and 13). Most of the land area is the rural class.',
+    whyOnShelf:
+      'The grid is the settlement class of the land, drawn the same way in every country. It is not a national percent-urban figure and not a count of people.',
+    howToRead:
+      'Red marks urban centres, orange marks towns and semi-dense areas, and olive marks rural cells. There is no numeric bar: the three colours are those class groups. Water in the settlement grid, and Natural Earth lakes, stay uncoloured.',
+    caveats:
+      'Class 30 is an urban centre in the GHSL classification, not every place a country calls a city. Aside: the 2025 and 2030 epochs in the same release are model projections, and they are not this map. The plate does not show how many people live in each class.',
+    licenseNote:
+      'European Commission Joint Research Centre, GHSL GHS-SMOD R2023A, 2020 epoch, CC BY 4.0. Classes counted on a 0.02° grid. Boundaries: Natural Earth.',
+    imageAlt:
+      'Equal Earth map of GHSL settlement classes for 2020: red urban centres, orange towns, olive rural land',
+  },
+  'built-up-surface': {
+    title: 'Built-up surface',
+    hook: 'How much of each cell is built-up surface in the 2020 GHSL grid.',
+    description:
+      'The plate sums GHS-BUILT-S R2023A built-up surface for the 2020 epoch, the latest epoch in that release built from satellite observations. Square metres from the 30 arc-second grid are added inside each 0.02° cell and divided by the area of that cell. The colour is that percent, on a log scale from 0.1 to about 24. Cells under 0.1 percent stay the base land colour. The top of the bar is the 99.5th percentile of cells that have any built-up surface.',
+    whyOnShelf:
+      'Built-up surface is the ground covered by buildings. It is not the number of people and not the lights seen at night.',
+    howToRead:
+      'Yellow to deep red is a larger share of the cell. The number on the bar is percent of the 0.02° cell. A cell can pass 0.1 percent with a dense district or with a thinner scatter of buildings.',
+    caveats:
+      'The value is built-up surface divided by the area of the cell, not floor space stacked in towers and not a legal city boundary. Ocean and lakes are not coloured. Aside: the 2025 and 2030 epochs in the same release are model projections, and they are not this map.',
+    licenseNote:
+      'European Commission Joint Research Centre, GHSL GHS-BUILT-S R2023A, 2020 epoch, CC BY 4.0. Aggregated to a 0.02° grid. Boundaries: Natural Earth.',
+    imageAlt:
+      'Equal Earth map of the percent of each 0.02° cell that is built-up surface in 2020, yellow to red, with a numeric colour bar',
+  },
+  'population-growth': {
+    title: 'Population growth',
+    hook: 'The 2024 annual rate of population change in each country, from the same UN medium variant.',
+    description:
+      'Each country is coloured by its 2024 population growth rate in the UN World Population Prospects 2024 medium variant, in percent per year. The scale runs from about −1.7 to 3.4 and is centered at zero. Of the countries drawn, 60 have a negative rate. Rates above 3 percent in this table include Angola (3.0), the Democratic Republic of the Congo (3.2), Niger (3.3), the Central African Republic (3.4) and Somalia (3.4).',
+    whyOnShelf:
+      'A large population can change slowly. In this table China’s 2024 rate is −0.2 percent, while several smaller countries are above 3 percent. The plate is the rate, not the number of people.',
+    howToRead:
+      'Blue is a falling population, the pale middle is near zero, and red is growth. The bar is percent per year. The rate combines births, deaths and migration. It is not fertility alone.',
+    caveats:
+      'The ends of the scale are the 2nd and 98th percentiles of the countries drawn, so a few faster and slower areas share the end colours. The same small areas missing from the population plate are missing here. This is not a map of the year a population reached its peak.',
+    licenseNote:
+      'UN DESA Population Division, World Population Prospects 2024, demographic indicators, medium variant, 2024 population growth rate. Boundaries: Natural Earth 1:50m, public domain.',
+    imageAlt:
+      'Equal Earth choropleth of the 2024 UN population growth rate, blue for decline and red for growth, with a numeric colour bar',
+  },
   'global-river-basins': {
     title: 'Global river basins',
     hook: 'Nested sub-basin polygons for the whole planet (Pfafstetter levels) — a hydrographic base map, not a stress index.',
@@ -1140,6 +1204,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'subsurface') {
     // Seven Subsurface cards. List every sibling so Oil and gas and Mineral
     // deposits reach the five resource cards, and each new card reaches the shelf.
+    return same;
+  }
+  if (current.category === 'population') {
+    // Six Population cards would otherwise be sliced to three. List every
+    // Population sibling so density and night lights reach the four new cards.
     return same;
   }
   return [...same, ...rest].slice(0, limit);

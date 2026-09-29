@@ -1025,6 +1025,108 @@ def methane_emissions() -> None:
     )
 
 
+def _shade_countries(groups: dict[str, list[str]], ocean: str, land: str, ant: str, stroke: str, dest: str) -> None:
+    """Country shading only. No legend and no footer — these previews are reused in every locale."""
+    css = f"""
+    .oceanxx {{ fill: {ocean} !important; stroke: none !important; }}
+    .landxx {{ fill: {land} !important; stroke: {stroke} !important; stroke-width: 0.28 !important; }}
+    .antxx {{ fill: {ant} !important; }}
+    .circlexx, .subxx, .noxx, .unxx {{ opacity: 0 !important; }}
+    {css_fills(groups)}
+    """
+    save_jpg(render_svg_image(css, ""), dest)
+
+
+def world_population() -> None:
+    """Log-scale orientation of country totals. Shading only."""
+    highest = "in cn".split()
+    high = "us id pk ng br bd".split()
+    mid = "ru mx jp et ph eg cd vn ir tr de".split()
+    _shade_countries(
+        {"#0b3a5b": highest, "#1f6aa5": high, "#7eb0d4": mid},
+        ocean="#d5e4ee",
+        land="#e7e2d8",
+        ant="#f4f7f8",
+        stroke="#8a938c",
+        dest="world-population.jpg",
+    )
+
+
+def cities_and_towns() -> None:
+    """DegURBA world shares as an unlabeled color bar. Not a national % urban choropleth."""
+    css = """
+    .oceanxx { fill: #d5e3ea !important; stroke: none !important; }
+    .landxx { fill: #e7e0d4 !important; stroke: #8a8174 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #f4f1ea !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    im = render_svg_image(css, "")
+    draw = ImageDraw.Draw(im)
+    x0, y0, bar_h, total_w = 48, 720, 36, 1080
+    segments = [
+        (0.45, (31, 78, 121)),
+        (0.36, (168, 124, 58)),
+        (0.19, (90, 122, 90)),
+    ]
+    x = x0
+    for frac, color in segments:
+        w = int(total_w * frac)
+        draw.rectangle((x, y0, x + w - 2, y0 + bar_h), fill=color)
+        x += w
+    save_jpg(im, "cities-and-towns.jpg")
+
+
+def built_up_surface() -> None:
+    """GHSL-style built-up intensity. Shading only."""
+    css = """
+    .oceanxx { fill: #c5d5df !important; stroke: none !important; }
+    .landxx { fill: #e6dcc8 !important; stroke: #8d8270 !important; stroke-width: 0.28 !important; }
+    .antxx { fill: #f3f0ea !important; }
+    .circlexx, .subxx, .noxx, .unxx { opacity: 0 !important; }
+    """
+    field = "#8c4a2f"
+    blobs = [
+        (480, 400, 55, 22, field, 0.55),
+        (360, 430, 28, 16, field, 0.4),
+        (1450, 280, 50, 18, field, 0.62),
+        (1500, 310, 28, 14, field, 0.45),
+        (1860, 470, 70, 18, field, 0.72),
+        (2080, 410, 55, 20, field, 0.8),
+        (2160, 400, 16, 12, field, 0.7),
+        (2190, 420, 14, 18, field, 0.65),
+        (2140, 720, 22, 8, field, 0.6),
+        (1505, 460, 10, 22, field, 0.55),
+        (1620, 450, 24, 12, field, 0.4),
+        (1280, 620, 16, 10, field, 0.45),
+        (780, 760, 14, 10, field, 0.4),
+    ]
+    save_jpg(render_svg_image(css, ellipses(blobs)), "built-up-surface.jpg")
+
+
+def population_growth() -> None:
+    """Diverging growth-rate orientation. Shading only."""
+    # Rapid through 2054, named in WPP 2024: Angola, CAR, DRC, Niger, Somalia.
+    # Slow band is an orientation of places the same revision treats as already peaked
+    # (China, Germany, Japan, Russian Federation) — not the full list of 63.
+    fast = "ao cf cd ne so".split()
+    slow = "cn de jp ru".split()
+    _shade_countries(
+        {"#b6402a": fast, "#3d6b8c": slow},
+        ocean="#d7e0e6",
+        land="#e6e2d8",
+        ant="#f4f1ea",
+        stroke="#8a8474",
+        dest="population-growth.jpg",
+    )
+
+
+def population_cards() -> None:
+    raise SystemExit(
+        "Population plates are drawn from UN WPP 2024 and GHSL R2023A. "
+        "Run: python3 scripts/maps-real/render_population.py"
+    )
+
+
 def pollution_cards() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     consumption_co2()
@@ -1054,5 +1156,7 @@ if __name__ == "__main__":
         forests_cards()
     elif sys.argv[1:] == ["pollution"]:
         pollution_cards()
+    elif sys.argv[1:] == ["population"]:
+        population_cards()
     else:
         main()

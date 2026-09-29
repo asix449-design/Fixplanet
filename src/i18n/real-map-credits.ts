@@ -251,6 +251,30 @@ const credits: Record<string, Record<Locale, string>> = {
     pl: 'Mapa: Fix Planet na podstawie Intact Forest Landscapes, zasięg 2020 (IFL Mapping Team). CC BY 4.0. Granice: Natural Earth.',
     lv: 'Karte: Fix Planet no Intact Forest Landscapes, 2020. gada izplatība (IFL Mapping Team). CC BY 4.0. Robežas: Natural Earth.',
   },
+  'world-population': {
+    en: 'Map: Fix Planet from UN World Population Prospects 2024, medium variant, population on 1 July 2024. The number is people, on a log scale. Boundaries: Natural Earth 1:50m.',
+    ru: 'Карта: Fix Planet по данным ООН World Population Prospects 2024, средний вариант, население на 1 июля 2024 года. Число — люди, логарифмическая шкала. Границы: Natural Earth 1:50m.',
+    pl: 'Mapa: Fix Planet na podstawie ONZ World Population Prospects 2024, wariant średni, ludność 1 lipca 2024 r. Liczba to ludzie, skala logarytmiczna. Granice: Natural Earth 1:50m.',
+    lv: 'Karte: Fix Planet no ANO World Population Prospects 2024, vidējais variants, iedzīvotāju skaits 2024. gada 1. jūlijā. Skaitlis ir cilvēki, logaritmiskā skala. Robežas: Natural Earth 1:50m.',
+  },
+  'population-growth': {
+    en: 'Map: Fix Planet from UN World Population Prospects 2024, medium variant, 2024 population growth rate. The number is percent per year, centered at zero. Boundaries: Natural Earth 1:50m.',
+    ru: 'Карта: Fix Planet по данным ООН World Population Prospects 2024, средний вариант, темп роста населения в 2024 году. Число — проценты в год, шкала с центром в нуле. Границы: Natural Earth 1:50m.',
+    pl: 'Mapa: Fix Planet na podstawie ONZ World Population Prospects 2024, wariant średni, tempo wzrostu ludności w 2024 r. Liczba to procenty na rok, skala wyśrodkowana na zerze. Granice: Natural Earth 1:50m.',
+    lv: 'Karte: Fix Planet no ANO World Population Prospects 2024, vidējais variants, 2024. gada iedzīvotāju skaita pieauguma temps. Skaitlis ir procenti gadā, skala ar centru nullē. Robežas: Natural Earth 1:50m.',
+  },
+  'cities-and-towns': {
+    en: 'Map: Fix Planet from the European Commission GHSL GHS-SMOD R2023A, 2020 epoch. Red is an urban centre (class 30), orange is a town or semi-dense cluster (classes 21 to 23), olive is rural (classes 11 to 13), counted on a 0.02° grid. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по данным GHSL GHS-SMOD R2023A Еврокомиссии, эпоха 2020 года. Красный — городской центр (класс 30), оранжевый — посёлок или полуплотное скопление (классы 21–23), оливковый — сельские ячейки (классы 11–13), на сетке 0,02°. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie GHSL GHS-SMOD R2023A Komisji Europejskiej, epoka 2020. Czerwień to ośrodek miejski (klasa 30), pomarańcz to miasteczko lub skupisko półgęste (klasy 21–23), oliwkowy to komórki wiejskie (klasy 11–13), na siatce 0,02°. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Eiropas Komisijas GHSL GHS-SMOD R2023A, 2020. gada epoha. Sarkans ir pilsētas centrs (30. klase), oranžs ir pilsētciemats vai pusblīvs sakopojums (21.–23. klase), olīvzaļš ir lauku šūnas (11.–13. klase), 0,02° tīklā. CC BY 4.0. Robežas: Natural Earth.',
+  },
+  'built-up-surface': {
+    en: 'Map: Fix Planet from the European Commission GHSL GHS-BUILT-S R2023A, 2020 epoch. The number is the percent of each 0.02° cell that is built-up surface, on a log scale from 0.1. CC BY 4.0. Boundaries: Natural Earth.',
+    ru: 'Карта: Fix Planet по данным GHSL GHS-BUILT-S R2023A Еврокомиссии, эпоха 2020 года. Число — процент застроенной поверхности в каждой ячейке 0,02°, логарифмическая шкала от 0,1. CC BY 4.0. Границы: Natural Earth.',
+    pl: 'Mapa: Fix Planet na podstawie GHSL GHS-BUILT-S R2023A Komisji Europejskiej, epoka 2020. Liczba to procent powierzchni zabudowanej w każdej komórce 0,02°, skala logarytmiczna od 0,1. CC BY 4.0. Granice: Natural Earth.',
+    lv: 'Karte: Fix Planet no Eiropas Komisijas GHSL GHS-BUILT-S R2023A, 2020. gada epoha. Skaitlis ir apbūvētās virsmas procents katrā 0,02° šūnā, logaritmiskā skala no 0,1. CC BY 4.0. Robežas: Natural Earth.',
+  },
   'remittances-global-flows': {
     en: 'Chart: Fix Planet from World Bank Migration and Development Brief 40, Table 1.1, low- and middle-income countries, 2017–2023. The number is billions of US dollars. CC BY 3.0 IGO. This is an adaptation of an original work by The World Bank. Views and opinions expressed in the adaptation are the sole responsibility of the author or authors of the adaptation and are not endorsed by The World Bank.',
     ru: 'График: Fix Planet по докладу Всемирного банка «Миграция и развитие», выпуск 40, таблица 1.1, страны с низким и средним уровнем дохода, 2017–2023. Число — млрд долл. CC BY 3.0 IGO. Это адаптация оригинальной работы Всемирного банка. Взгляды и мнения, выраженные в адаптации, являются исключительной ответственностью автора адаптации и не одобрены Всемирным банком. Этот перевод создан не Всемирным банком и не должен считаться официальным переводом Всемирного банка. Всемирный банк не несёт ответственности за содержание или ошибки этого перевода.',

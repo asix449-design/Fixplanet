@@ -62,7 +62,7 @@ const primary = mapPrimarySource(map);
     primary ? (
       <p class="innovation-card-source">
         <a href={primary.url} rel="noopener noreferrer">
-          {page.sourceLabel}: {primary.label}
+          {page.sourceLabel}: {map.gridSourceLabel ?? primary.label}
         </a>
       </p>
     ) : null

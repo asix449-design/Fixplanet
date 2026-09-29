@@ -15,6 +15,7 @@ python3 scripts/maps-real/render.py minerals
 python3 scripts/maps-real/aggregate_tiles.py gmw hansen
 python3 scripts/maps-real/render_pass2.py sea-level heat ice ohc ph hansen gmw burned
 python3 scripts/maps-real/render_vectors.py gez aqueduct ifl
+python3 scripts/maps-real/render_population.py
 python3 scripts/maps-real/render_forest_pack.py lesiv carbon peat render
 python3 scripts/maps-real/render_remittances.py
 ```
@@ -42,6 +43,11 @@ Downloads are stored in `scripts/maps-real/raw/` and are listed in `.gitignore`.
 | Output | Dataset | URL | Licence |
 | --- | --- | --- | --- |
 | Natural Earth 1:10m countries (boundaries for every choropleth and the land underlay) | `ne_10m_admin_0_countries.geojson` | https://github.com/nvkelso/natural-earth-vector | Public domain |
+| Natural Earth 1:50m countries (world population and population growth only) | `ne_50m_admin_0_countries.geojson` | https://github.com/nvkelso/natural-earth-vector | Public domain |
+| `world-population` | UN WPP 2024 medium variant, population on 1 July 2024, people, log scale | https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz | UN DESA |
+| `population-growth` | UN WPP 2024 medium variant, 2024 population growth rate, percent per year, diverging scale centered at zero | same CSV | UN DESA |
+| `cities-and-towns` | GHSL GHS-SMOD R2023A, 2020 epoch (latest satellite-based epoch; 2025 and 2030 are projections and are not drawn), 30 arc-second classes aggregated by majority to 0.02°. Red = urban centre (30), orange = towns (21–23), olive = rural (11–13) | https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2020_GLOBE_R2023A_4326_30ss/V2-0/ | CC BY 4.0 (European Commission JRC) |
+| `built-up-surface` | GHSL GHS-BUILT-S R2023A, 2020 epoch (latest satellite-based epoch; 2025 and 2030 are projections and are not drawn), 30 arc-second built-up square metres summed to 0.02° and drawn as the percent of the cell. Log scale from 0.1 | https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_4326_30ss/V1-0/ | CC BY 4.0 (European Commission JRC) |
 | `consumption-co2-emissions` | Global Carbon Project consumption-based CO₂, 2023, via Our World in Data | https://ourworldindata.org/grapher/consumption-co2-emissions.csv | CC BY (Global Carbon Project / Our World in Data) |
 | `methane-emissions` | EDGAR methane emissions including land use, 2024, via Our World in Data | https://ourworldindata.org/grapher/methane-emissions.csv | CC BY (EDGAR / European Commission JRC; Our World in Data) |
 | `mismanaged-plastic-waste` | Meijer et al. 2021 mismanaged plastic waste, year 2019, via Our World in Data | https://ourworldindata.org/grapher/plastic-waste-mismanaged.csv | CC BY |
