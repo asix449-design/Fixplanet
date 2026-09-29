@@ -8,6 +8,7 @@ import {
 } from '../data/maps';
 import { cite } from '../data/sources';
 import type { Locale } from './config';
+import { crimeCopy } from './maps-crime-pack';
 import { lv as lvEntries } from './maps-lv';
 import { pl as plEntries } from './maps-pl';
 import { ru as ruEntries } from './maps-ru';
@@ -62,7 +63,7 @@ const pageEn: MapsPage = {
       'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity — each card names the publisher and what the measure is (and is not).',
     ethnic: 'Language families as public cartography, not a census.',
     crime:
-      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
+      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not). Also here: how many people each country holds in prison, the main routes of cocaine, heroin and methamphetamine trafficking, estimates of modern slavery, money-laundering risk scores and rule-of-law rankings.',
     pollution: 'Air, waste, and emissions with a named source.',
     subsurface:
       'Oil, gas, and minerals: fossil fuel and fossil gold. Also here: the world’s coal mines and proved coal reserves, the countries that lead in mining and processing critical minerals, and where rare earths and lithium are mined.',
@@ -133,7 +134,7 @@ const pageRu: MapsPage = {
       'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов — у каждой карточки издатель и что именно измеряется (и чего нет).',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime:
-      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
+      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет). Здесь также: сколько людей содержится в тюрьмах каждой страны, основные маршруты контрабанды кокаина, героина и метамфетамина, оценки масштабов современного рабства, баллы риска отмывания денег и рейтинги верховенства права.',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
     subsurface:
       'Нефть, газ и ископаемые: топливо и золото недр. Здесь также: угольные шахты мира и доказанные запасы угля, страны, лидирующие в добыче и переработке критически важных минералов, и места добычи редкоземельных металлов и лития.',
@@ -204,7 +205,7 @@ const pagePl: MapsPage = {
       'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów — na każdej karcie wydawca oraz to, co miara obejmuje (i czego nie).',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime:
-      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
+      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest). Znajdziesz tu także: ile osób przebywa w więzieniach w poszczególnych krajach, główne szlaki przemytu kokainy, heroiny i metamfetaminy, szacunki skali współczesnego niewolnictwa, oceny ryzyka prania pieniędzy oraz rankingi praworządności.',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
     subsurface:
       'Ropa, gaz i minerały: paliwo kopalne i kopalne złoto. Znajdziesz tu także: kopalnie węgla na świecie i udokumentowane zasoby węgla, kraje przodujące w wydobyciu i przetwarzaniu minerałów krytycznych oraz miejsca wydobycia metali ziem rzadkich i litu.',
@@ -275,7 +276,7 @@ const pageLv: MapsPage = {
       'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko ne).',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime:
-      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
+      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē). Šeit arī: cik cilvēku katrā valstī atrodas cietumā, galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi, mūsdienu verdzības apmēra aplēses, naudas atmazgāšanas riska vērtējumi un tiesiskuma reitingi.',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
     subsurface:
       'Nafta, gāze un izrakteņi: fosilā degviela un fosilais zelts. Šeit arī pasaules ogļu raktuves un pierādītās ogļu rezerves, valstis, kas ir vadošās kritiski svarīgo minerālu ieguvē un pārstrādē, un vietas, kur iegūst retzemju metālus un litiju.',
@@ -459,7 +460,8 @@ const en: Record<string, MapCopy> = {
   },
   'homicide-rates': {
     title: 'Intentional homicide rates',
-    hook: 'UNODC comparable rates of intentional homicide — one violent-crime measure, not “all crime.”',
+    cardMeta: 'UN Office on Drugs and Crime and Our World in Data, 2019–2023.',
+    hook: 'Comparable rates of intentional homicide from the UN Office on Drugs and Crime, one measure of violent crime.',
     description:
       'The UN Office on Drugs and Crime compiles intentional homicide statistics from criminal-justice and public-health sources. Our World in Data turns the comparable series into a map and chart. Homicide is more consistently defined than robbery or “crime” in general.',
     howToRead:
@@ -473,7 +475,8 @@ const en: Record<string, MapCopy> = {
   },
   'organized-crime-index': {
     title: 'Global Organized Crime Index',
-    hook: 'Country scores for criminal markets, criminal actors, and resilience — an expert-assessment heatmap of organized crime, not a second intentional-homicide layer.',
+    cardMeta: 'Global Initiative against Transnational Organized Crime, Index 2025, assessment year 2024.',
+    hook: 'Country scores for criminal markets, criminal actors, and resilience: an expert-assessment heatmap of organized crime.',
     description:
       'The Global Initiative against Transnational Organized Crime (GI-TOC) rates 193 UN member states on criminality — criminal markets and criminal actors — and on resilience. The public tool is ocindex.net. The 2025 edition is the third; its assessment year is 2024. This card is a doorway to that expert composite, not a police-recorded crime rate and not a second UNODC homicide map.',
     whyOnShelf:
@@ -489,7 +492,8 @@ const en: Record<string, MapCopy> = {
   },
   'corruption-perceptions-index': {
     title: 'Corruption Perceptions Index',
-    hook: 'Perceived public-sector corruption (0–100) from expert and business surveys — governance risk, not street-crime volume and not homicide.',
+    cardMeta: 'Transparency International, Corruption Perceptions Index 2025.',
+    hook: 'Perceived public-sector corruption on a scale from 0 to 100, from expert and business surveys: a measure of governance risk.',
     description:
       'Transparency International’s Corruption Perceptions Index (CPI) 2025 ranks countries on perceived public-sector corruption. The scale runs from 0 (highly corrupt) to 100 (very clean), combining expert and business surveys. Our World in Data republishes the series as an open map. This is a governance-risk composite, not a count of bribery cases and not a violent-crime rate.',
     whyOnShelf:
@@ -505,7 +509,8 @@ const en: Record<string, MapCopy> = {
   },
   'trafficking-in-persons': {
     title: 'Trafficking in persons',
-    hook: 'Detected trafficking victims and patterns from UNODC’s Global Report on Trafficking in Persons — exploitation and coercion, not a homicide rate and not the GI-TOC markets composite alone.',
+    cardMeta: 'UN Office on Drugs and Crime, Global Report on Trafficking in Persons, 2024.',
+    hook: 'Detected victims of trafficking in persons, and the patterns in the UN Office on Drugs and Crime Global Report on Trafficking in Persons: exploitation and coercion.',
     description:
       'UNODC’s Global Report on Trafficking in Persons (GLOTIP) 2024 is the eighth edition under the UN Convention against Transnational Organized Crime Trafficking in Persons Protocol and the 2010 Global Plan of Action. It reports detected victims, forms of exploitation, and patterns. This card points to that victim-detection reporting — not a complete census of trafficking.',
     whyOnShelf:
@@ -1055,10 +1060,10 @@ const en: Record<string, MapCopy> = {
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
-  en: { ...en, ...subsurfaceCopy.en },
-  ru: { ...ruEntries, ...subsurfaceCopy.ru },
-  pl: { ...plEntries, ...subsurfaceCopy.pl },
-  lv: { ...lvEntries, ...subsurfaceCopy.lv },
+  en: { ...en, ...crimeCopy.en, ...subsurfaceCopy.en },
+  ru: { ...ruEntries, ...crimeCopy.ru, ...subsurfaceCopy.ru },
+  pl: { ...plEntries, ...crimeCopy.pl, ...subsurfaceCopy.pl },
+  lv: { ...lvEntries, ...crimeCopy.lv, ...subsurfaceCopy.lv },
 };
 
 export function getMapsPage(locale: Locale): MapsPage {
@@ -1120,6 +1125,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'water') {
     // Seven Water cards would otherwise be sliced to three. List every
     // Water sibling on each Water detail page.
+    return same;
+  }
+  if (current.category === 'crime') {
+    // Nine Crime cards. List every Crime sibling so the original four
+    // reach the five new cards, and each new card reaches the shelf.
     return same;
   }
   if (current.category === 'pollution') {

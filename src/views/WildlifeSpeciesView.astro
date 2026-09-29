@@ -13,7 +13,12 @@ const ui = getUi(locale);
 const { species } = Astro.props;
 const title = `${species.commonName} — Fix Planet`;
 const image = wildlifeImageSrc(species.image);
-const clickableSources = species.primarySources ?? [];
+const clickableSources = species.sourcesList?.length
+  ? species.sourcesList
+  : (species.primarySources ?? []);
+const artWidth = species.image.width ?? 1280;
+const artHeight = species.image.height ?? 960;
+const licenseLabel = species.licenseLabel ?? species.image.license;
 ---
 
 <BaseLayout title={title} description={species.hook} image={image} theme="wildlife-detail">
@@ -50,22 +55,30 @@ const clickableSources = species.primarySources ?? [];
 
   <section class="section">
     <div class="wrap wildlife-detail">
-      <figure class="wildlife-detail-art">
-        <img src={image} alt={species.imageAlt} width="1280" height="960" />
+      <figure
+        class:list={[
+          'wildlife-detail-art',
+          species.image.fit === 'natural' && 'wildlife-detail-natural',
+        ]}
+      >
+        <img src={image} alt={species.imageAlt} width={artWidth} height={artHeight} />
         <figcaption>
-          {ui.wildlifePage.imageCredit}: {species.image.credit}
+          {species.caption ? <p>{species.caption}</p> : null}
           {
-            species.image.sourceUrl ? (
+            species.photoCredit ? (
+              <p>
+                {species.photoCredit}{' '}
+                (<a href={species.image.sourceUrl} rel="noopener noreferrer">{licenseLabel}</a>)
+              </p>
+            ) : species.image.sourceUrl ? (
               <>
-                {' '}
-                (
-                <a href={species.image.sourceUrl} rel="noopener noreferrer">
-                  {species.image.license}
-                </a>
-                )
+                {ui.wildlifePage.imageCredit}: {species.image.credit}{' '}
+                (<a href={species.image.sourceUrl} rel="noopener noreferrer">{species.image.license}</a>)
               </>
             ) : (
-              <> ({species.image.license})</>
+              <>
+                {ui.wildlifePage.imageCredit}: {species.image.credit} ({species.image.license})
+              </>
             )
           }
         </figcaption>

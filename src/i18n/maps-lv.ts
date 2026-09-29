@@ -105,65 +105,98 @@ export const lv: Record<string, MapCopy> = {
   },
   'homicide-rates': {
     title: 'Tīšu slepkavību rādītāji',
-    hook: 'UNODC salīdzināmi tīšu slepkavību rādītāji — viens vardarbības mērs, ne „visa noziedzība”.',
+    cardMeta: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs un Our World in Data, 2019–2023.',
+    gridSource: {
+      label: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, pētījums par tīšām slepkavībām',
+      url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
+    },
+    hook: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja salīdzināmi tīšu slepkavību rādītāji, viens vardarbības mērs.',
     description:
-      'ANO Narkotiku un noziedzības birojs apkopo tīšu slepkavību statistiku no krimināltiesībām un veselības avotiem. Our World in Data pārvērš salīdzināmo rindu kartē un grafikā. Slepkavību definē vienotāk nekā laupīšanu vai „noziedzību” vispār.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs apkopo tīšu slepkavību statistiku no krimināltiesībām un veselības avotiem. Our World in Data pārvērš salīdzināmo rindu kartē un grafikā. Slepkavību definē vienotāk nekā laupīšanu vai noziedzību vispār.',
     howToRead:
       'Parastā vienība ir tīšas slepkavības uz 100 000 iedzīvotājiem gadā. Augsti rādītāji bieži sakrājas pilsētās vai koridoros, ne vienmērīgi visā valstī. Salīdzini tuvus gadus; uzskaite mainās.',
     caveats:
-      'Nepietiekama reģistrācija, juridiskās definīcijas un iztrūkstoši gadi atšķiras. Konflikta nāves ir cita rinda (sk. UCDP). Nesastādi „bīstamāko valstu” sarakstu no sīktēla. Šeit nezīmējam avotiem neatbilstošu horoplētu.',
+      'Nepietiekama reģistrācija, juridiskās definīcijas un iztrūkstoši gadi atšķiras. Konflikta nāves skaita Upsalas konfliktu datu programma. Sīktēls rāda valstu rādītājus.',
     licenseNote:
-      'UNODC statistikas produktus parasti var lietot ar atsauci. OWID grafiki parasti ir CC BY. Atver viņu karti aktuālajam slānim.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja statistikas produktus parasti var lietot ar atsauci. Our World in Data grafiki parasti ir ar Creative Commons Atsauces licenci. Atver viņu karti aktuālajam slānim.',
     imageAlt:
-      'Our World in Data horoplēts par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
+      'Our World in Data karte par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
+    sources: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs: pētījums par tīšām slepkavībām (Global Study on Homicide)',
+        url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
+      },
+      {
+        label: 'Our World in Data: tīšu slepkavību rādītāji (Homicides)',
+        url: 'https://ourworldindata.org/homicides',
+      },
+    ],
   },
   'organized-crime-index': {
     title: 'Globālais organizētās noziedzības indekss',
-    hook: 'Valstu vērtējumi noziedzīgiem tirgiem, aktoriem un noturībai — ekspertu siltumkarte organizētajai noziedzībai, ne otrs tīšu slepkavību slānis.',
+    cardMeta:
+      'Globālā iniciatīva pret transnacionālo organizēto noziedzību, 2025. gada indekss, novērtējums par 2024. gadu.',
+    gridSource: {
+      label: 'Globālā iniciatīva pret transnacionālo organizēto noziedzību, 2025. gada indekss',
+      url: 'https://ocindex.net/2025/',
+    },
+    hook: 'Valstu vērtējumi noziedzīgiem tirgiem, aktoriem un noturībai: ekspertu siltumkarte organizētajai noziedzībai.',
     description:
-      'Globālā iniciatīva pret transnacionālo organizēto noziedzību (GI-TOC) vērtē 193 ANO dalībvalstis pēc noziedzības — tirgiem un aktoriem — un pēc noturības. Publiskais rīks ir ocindex.net. 2025. gada izdevums ir trešais; novērtējuma gads ir 2024. Šī kartīte ved uz šo ekspertu kompozītu, ne policijas reģistrētu rādītāju un ne otru UNODC slepkavību karti.',
+      'Globālā iniciatīva pret transnacionālo organizēto noziedzību vērtē 193 Apvienoto Nāciju Organizācijas dalībvalstis pēc noziedzības — tirgiem un aktoriem — un pēc noturības. Publiskais rīks ir ocindex.net. 2025. gada izdevums ir trešais; novērtējuma gads ir 2024. Šī kartīte ved uz šo ekspertu kompozītu.',
     whyOnShelf:
-      'Organizētās noziedzības noziedzība un noturība ir cits objekts nekā tīšu slepkavību rādītāji. Nesalieciet šo indeksu slepkavību kartītē un nelasiet tumšu valsti kā augstu slepkavību rādītāju.',
+      'Organizētās noziedzības noziedzība un noturība apraksta tirgus, aktorus un valsts spēju tiem pretoties.',
     howToRead:
-      'Valsts vērtējums ir ekspertu kompozīts, ne policijas reģistrēts rādītājs un ne UNODC slepkavību skaitlis. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē ocindex.net.',
+      'Valsts vērtējums ir ekspertu kompozīts. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē ocindex.net.',
     caveats:
-      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Augsts tirgus vērtējums nav augsts slepkavību rādītājs.',
+      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Tirgus vērtējumu un slepkavību rādītāju skaita atsevišķi.',
     licenseNote:
-      'Foto: Philippe Alès, konteinerkuģis Havrā (CC BY-SA 3.0). Tā nav GI-TOC indeksa siltumkarte — tas slānis ir ocindex.net.',
+      'Foto: Philippe Alès, konteinerkuģis Havrā (Creative Commons Atsauces un tādu pašu nosacījumu licence, 3.0 versija). Indeksa siltumkarte ir ocindex.net.',
     imageAlt:
-      'Konteinerkuģis un celtņi Havrā. Šis ir foto, ne GI-TOC Globālā organizētās noziedzības indeksa siltumkarte.',
+      'Konteinerkuģis un celtņi Havrā. Attēlā ir osta, bet Globālā organizētās noziedzības indeksa siltumkarte ir publicēta atsevišķi.',
   },
   'corruption-perceptions-index': {
     title: 'Korupcijas uztveres indekss',
-    hook: 'Uztvertā publiskā sektora korupcija (0–100) no ekspertu un uzņēmēju aptaujām — pārvaldības risks, ne ielu noziedzības apjoms un ne slepkavības.',
+    cardMeta: 'Transparency International, Korupcijas uztveres indekss 2025.',
+    gridSource: {
+      label: 'Transparency International, Korupcijas uztveres indekss 2025',
+      url: 'https://www.transparency.org/en/cpi/2025',
+    },
+    hook: 'Uztvertā publiskā sektora korupcija skalā no 0 līdz 100, pēc ekspertu un uzņēmēju aptaujām: pārvaldības riska mērs.',
     description:
-      'Transparency International Korupcijas uztveres indekss (CPI) 2025 kārto valstis pēc uztvertās publiskā sektora korupcijas. Skala no 0 (ļoti korumpēts) līdz 100 (ļoti tīrs) apvieno ekspertu un uzņēmēju aptaujas. Our World in Data publicē rindu kā atklātu karti. Tas ir pārvaldības riska kompozīts, ne kukuļlietu skaits un ne vardarbības rādītājs.',
+      'Transparency International Korupcijas uztveres indekss 2025 kārto valstis pēc uztvertās publiskā sektora korupcijas. Skala no 0 (ļoti korumpēts) līdz 100 (ļoti tīrs) apvieno ekspertu un uzņēmēju aptaujas. Our World in Data publicē rindu kā atklātu karti. Tas ir pārvaldības riska kompozīts.',
     whyOnShelf:
-      'Uztvertā publiskā sektora korupcija ir cits sabiedriskā kaitējuma signāls nekā UNODC tīšās slepkavības. Nekad nesakausējiet šo kartīti ar slepkavību slāni.',
+      'Uztvertā publiskā sektora korupcija rāda pārvaldības risku pēc ekspertu un uzņēmēju aptaujām.',
     howToRead:
-      'Vērtējums ir uztveres kompozīts, ne notiesājošu spriedumu skaits un ne ielu noziedzība. Gada etiķete ir CPI izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena–divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir OWID.',
+      'Vērtējums ir uztveres kompozīts. Gada etiķete ir indeksa izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena–divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir Our World in Data.',
     caveats:
-      'Trūkstoša valsts nav «tīra». Mājsaimniecību kukuļu pieredze ir cita rinda. Nelasiet sīktēlu kā «viskorumpētāko» sarakstu. Tas nav slepkavību horoplēts.',
+      'Trūkstoša valsts paliek ārpus reitinga. Mājsaimniecību kukuļu pieredze ir cita rinda. Sīktēls rāda indeksa vērtējumus.',
     licenseNote:
-      'Mēs izvietojam apgrieztu Wikimedia Commons CPI 2025 valstu horoplētu (Cnscrptr un ConnerMiner, CC BY-SA 4.0) pēc Transparency International CPI 2025 datiem. Our World in Data publicē CPI kā atklātu karti (CC BY). Izdevums ir transparency.org/en/cpi/2025.',
+      'Mēs izvietojam apgrieztu Wikimedia Commons 2025. gada valstu karti (Cnscrptr un ConnerMiner, Creative Commons Atsauces un tādu pašu nosacījumu licence, 4.0 versija) pēc Transparency International datiem. Our World in Data publicē indeksu kā atklātu karti (Creative Commons Atsauces licence). Izdevums ir Transparency International 2025. gada lapā.',
     imageAlt:
-      'Pasaules horoplēts pēc Korupcijas uztveres indeksa 2025: vēsāks zaļš tur, kur uztvertā korupcija ir zemāka, siltāks sarkans tur, kur augstāka — ne slepkavību karte',
+      'Pasaules karte pēc Korupcijas uztveres indeksa 2025: vēsāks zaļš tur, kur uztvertā korupcija ir zemāka, siltāks sarkans tur, kur augstāka',
   },
   'trafficking-in-persons': {
     title: 'Cilvēku tirdzniecība',
-    hook: 'Konstatētie cilvēku tirdzniecības upuri un modeļi no UNODC Globālā ziņojuma (GLOTIP) — izmantošana un piespiešana, ne slepkavību rādītājs un ne vien GI-TOC tirgu kompozīts.',
+    cardMeta:
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, Globālais ziņojums par cilvēku tirdzniecību, 2024. gada ziņojums.',
+    gridSource: {
+      label: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, Globālais ziņojums par cilvēku tirdzniecību',
+      url: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
+    },
+    hook: 'Konstatētie cilvēku tirdzniecības upuri un modeļi Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja Globālajā ziņojumā: izmantošana un piespiešana.',
     description:
-      'UNODC Globālais ziņojums par cilvēku tirdzniecību (GLOTIP) 2024 ir astotais izdevums saskaņā ar ANO Konvencijas pret transnacionālo organizēto noziedzību Protokolu par cilvēku tirdzniecību un 2010. gada Globālo rīcības plānu. Tas ziņo par konstatētajiem upuriem, izmantošanas formām un modeļiem. Šī kartīte ved uz šo konstatēšanas pārskatu, ne uz pilnu cilvēku tirdzniecības tautas skaitīšanu.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja Globālais ziņojums par cilvēku tirdzniecību 2024 ir astotais izdevums saskaņā ar Apvienoto Nāciju Organizācijas Konvencijas pret transnacionālo organizēto noziedzību Protokolu par cilvēku tirdzniecību un 2010. gada Globālo rīcības plānu. Tas ziņo par konstatētajiem upuriem, izmantošanas formām un modeļiem. Šī kartīte ved uz šo konstatēšanas pārskatu.',
     whyOnShelf:
-      'Cilvēku tirdzniecība ir atsevišķa ICCS nodarījumu saime. Tā papildina OC indeksa cilvēku tirdzniecības tirgus vērtējumu ar UNODC statistiku par konstatētajiem upuriem. Tas nav slepkavību rādītājs un nav World Drug Report plūsmu karte.',
+      'Cilvēku tirdzniecība ir atsevišķa Starptautiskās noziegumu klasifikācijas statistikas vajadzībām nodarījumu saime. Tā papildina Globālā organizētās noziedzības indeksa cilvēku tirdzniecības tirgus vērtējumu ar Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja statistiku par konstatētajiem upuriem.',
     howToRead:
-      'Skaitļi ir konstatētie upuri — pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Izmantošanas formas (seksuāla izmantošana, piespiedu darbs un citas) nav slepkavību rādītājs. Tabulas ir GLOTIP un UNODC datu portālā.',
+      'Skaitļi ir konstatētie upuri: pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Ziņojums šķir izmantošanas formas, tostarp seksuālu izmantošanu un piespiedu darbu. Tabulas ir ziņojumā un Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja datu portālā.',
     caveats:
       'Konstatēšana nav tautas skaitīšana. Pārrobežu plūsmas ziņojumā ir konstatēti modeļi, ne pilns maršrutu inventārs.',
     licenseNote:
-      'Foto: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Kristus Pestītājs izgaismots zilā pret cilvēku tirdzniecību, 2014. gada 28. jūlijs. Tā nav UNODC GLOTIP figūra.',
+      'Foto: Vladimir Platonow / Agência Brasil (Creative Commons Atsauces licence, 3.0 versija, Brazīlija). Kristus Pestītājs izgaismots zilā pret cilvēku tirdzniecību, 2014. gada 28. jūlijs.',
     imageAlt:
-      'Kristus Pestītājs Riodežaneiro, izgaismots zilā pret cilvēku tirdzniecību. Šis ir foto, ne UNODC GLOTIP ziņojuma figūra.',
+      'Kristus Pestītājs Riodežaneiro, izgaismots zilā pret cilvēku tirdzniecību.',
   },
   'air-quality-pm25': {
     title: 'Sīko daļiņu gaisa piesārņojums (PM2.5)',
