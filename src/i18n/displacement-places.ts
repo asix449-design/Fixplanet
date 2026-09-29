@@ -24,7 +24,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Libya: {
     en: ['Libya', 'Libya', 'Libya'],
     ru: ['Ливия', 'Ливии', 'Ливию'],
-    pl: ['Libia', 'Libii', 'Libię'],
+    pl: ['Libia', 'Libii', 'Libii'],
     lv: ['Lībija', 'Lībijas', 'Lībiju'],
   },
   'South Sudan': {
@@ -36,7 +36,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Syria: {
     en: ['Syria', 'Syria', 'Syria'],
     ru: ['Сирия', 'Сирии', 'Сирию'],
-    pl: ['Syria', 'Syrii', 'Syrię'],
+    pl: ['Syria', 'Syrii', 'Syrii'],
     lv: ['Sīrija', 'Sīrijas', 'Sīriju'],
   },
   Türkiye: {
@@ -66,13 +66,13 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Ukraine: {
     en: ['Ukraine', 'Ukraine', 'Ukraine'],
     ru: ['Украина', 'Украины', 'Украину'],
-    pl: ['Ukraina', 'Ukrainy', 'Ukrainę'],
+    pl: ['Ukraina', 'Ukrainy', 'Ukrainy'],
     lv: ['Ukraina', 'Ukrainas', 'Ukrainu'],
   },
   Poland: {
     en: ['Poland', 'Poland', 'Poland'],
     ru: ['Польша', 'Польши', 'Польшу'],
-    pl: ['Polska', 'Polski', 'Polskę'],
+    pl: ['Polska', 'Polski', 'Polski'],
     lv: ['Polija', 'Polijas', 'Poliju'],
   },
   Czechia: {
@@ -130,7 +130,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Uganda: {
     en: ['Uganda', 'Uganda', 'Uganda'],
     ru: ['Уганда', 'Уганды', 'Уганду'],
-    pl: ['Uganda', 'Ugandy', 'Ugandę'],
+    pl: ['Uganda', 'Ugandy', 'Ugandy'],
     lv: ['Uganda', 'Ugandas', 'Ugandu'],
   },
   Burundi: {
@@ -142,7 +142,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Rwanda: {
     en: ['Rwanda', 'Rwanda', 'Rwanda'],
     ru: ['Руанда', 'Руанды', 'Руанду'],
-    pl: ['Rwanda', 'Rwandy', 'Rwandę'],
+    pl: ['Rwanda', 'Rwandy', 'Rwandy'],
     lv: ['Ruanda', 'Ruandas', 'Ruandu'],
   },
   Tanzania: {
@@ -154,7 +154,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Myanmar: {
     en: ['Myanmar', 'Myanmar', 'Myanmar'],
     ru: ['Мьянма', 'Мьянмы', 'Мьянму'],
-    pl: ['Mjanma', 'Mjanmy', 'Mjanmę'],
+    pl: ['Mjanma', 'Mjanmy', 'Mjanmy'],
     lv: ['Mjanma', 'Mjanmas', 'Mjanmu'],
   },
   Bangladesh: {
@@ -166,7 +166,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Malaysia: {
     en: ['Malaysia', 'Malaysia', 'Malaysia'],
     ru: ['Малайзия', 'Малайзии', 'Малайзию'],
-    pl: ['Malezja', 'Malezji', 'Malezję'],
+    pl: ['Malezja', 'Malezji', 'Malezji'],
     lv: ['Malaizija', 'Malaizijas', 'Malaiziju'],
   },
   India: {
@@ -178,7 +178,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Thailand: {
     en: ['Thailand', 'Thailand', 'Thailand'],
     ru: ['Таиланд', 'Таиланда', 'Таиланд'],
-    pl: ['Tajlandia', 'Tajlandii', 'Tajlandię'],
+    pl: ['Tajlandia', 'Tajlandii', 'Tajlandii'],
     lv: ['Taizeme', 'Taizemes', 'Taizemi'],
   },
   Haiti: {
@@ -196,7 +196,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Brazil: {
     en: ['Brazil', 'Brazil', 'Brazil'],
     ru: ['Бразилия', 'Бразилии', 'Бразилию'],
-    pl: ['Brazylia', 'Brazylii', 'Brazylię'],
+    pl: ['Brazylia', 'Brazylii', 'Brazylii'],
     lv: ['Brazīlija', 'Brazīlijas', 'Brazīliju'],
   },
   Mexico: {
@@ -208,25 +208,25 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Canada: {
     en: ['Canada', 'Canada', 'Canada'],
     ru: ['Канада', 'Канады', 'Канаду'],
-    pl: ['Kanada', 'Kanady', 'Kanadę'],
+    pl: ['Kanada', 'Kanady', 'Kanady'],
     lv: ['Kanāda', 'Kanādas', 'Kanādu'],
   },
   Somalia: {
     en: ['Somalia', 'Somalia', 'Somalia'],
     ru: ['Сомали', 'Сомали', 'Сомали'],
-    pl: ['Somalia', 'Somalii', 'Somalię'],
+    pl: ['Somalia', 'Somalii', 'Somalii'],
     lv: ['Somālija', 'Somālijas', 'Somāliju'],
   },
   Kenya: {
     en: ['Kenya', 'Kenya', 'Kenya'],
     ru: ['Кения', 'Кении', 'Кению'],
-    pl: ['Kenia', 'Kenii', 'Kenię'],
+    pl: ['Kenia', 'Kenii', 'Kenii'],
     lv: ['Kenija', 'Kenijas', 'Keniju'],
   },
   Ethiopia: {
     en: ['Ethiopia', 'Ethiopia', 'Ethiopia'],
     ru: ['Эфиопия', 'Эфиопии', 'Эфиопию'],
-    pl: ['Etiopia', 'Etiopii', 'Etiopię'],
+    pl: ['Etiopia', 'Etiopii', 'Etiopii'],
     lv: ['Etiopija', 'Etiopijas', 'Etiopiju'],
   },
   Yemen: {
@@ -238,13 +238,13 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Venezuela: {
     en: ['Venezuela', 'Venezuela', 'Venezuela'],
     ru: ['Венесуэла', 'Венесуэлы', 'Венесуэлу'],
-    pl: ['Wenezuela', 'Wenezueli', 'Wenezuelę'],
+    pl: ['Wenezuela', 'Wenezueli', 'Wenezueli'],
     lv: ['Venecuēla', 'Venecuēlas', 'Venecuēlu'],
   },
   Colombia: {
     en: ['Colombia', 'Colombia', 'Colombia'],
     ru: ['Колумбия', 'Колумбии', 'Колумбию'],
-    pl: ['Kolumbia', 'Kolumbii', 'Kolumbię'],
+    pl: ['Kolumbia', 'Kolumbii', 'Kolumbii'],
     lv: ['Kolumbija', 'Kolumbijas', 'Kolumbiju'],
   },
   Peru: {
@@ -268,7 +268,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   'Gaza Strip': {
     en: ['Gaza Strip', 'Gaza Strip', 'Gaza Strip'],
     ru: ['сектор Газа', 'сектора Газа', 'сектор Газа'],
-    pl: ['Strefa Gazy', 'Strefy Gazy', 'Strefę Gazy'],
+    pl: ['Strefa Gazy', 'Strefy Gazy', 'Strefy Gazy'],
     lv: ['Gazas josla', 'Gazas joslas', 'Gazas joslu'],
   },
   Netherlands: {
@@ -280,7 +280,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   Spain: {
     en: ['Spain', 'Spain', 'Spain'],
     ru: ['Испания', 'Испании', 'Испанию'],
-    pl: ['Hiszpania', 'Hiszpanii', 'Hiszpanię'],
+    pl: ['Hiszpania', 'Hiszpanii', 'Hiszpanii'],
     lv: ['Spānija', 'Spānijas', 'Spāniju'],
   },
   'Pakistan (flood-affected provinces)': {
@@ -308,7 +308,7 @@ const rows: Record<string, Record<Locale, Trio>> = {
   'Punjab province, Pakistan': {
     en: ['Punjab province, Pakistan', 'Punjab province, Pakistan', 'Punjab province, Pakistan'],
     ru: ['провинция Пенджаб, Пакистан', 'провинции Пенджаб, Пакистан', 'провинцию Пенджаб, Пакистан'],
-    pl: ['prowincja Pendżab, Pakistan', 'prowincji Pendżab, Pakistan', 'prowincję Pendżab, Pakistan'],
+    pl: ['prowincja Pendżab, Pakistan', 'prowincji Pendżab, Pakistan', 'prowincji Pendżab, Pakistan'],
     lv: ['Pendžabas province, Pakistāna', 'Pendžabas provinces, Pakistāna', 'Pendžabas provinci, Pakistānu'],
   },
 };

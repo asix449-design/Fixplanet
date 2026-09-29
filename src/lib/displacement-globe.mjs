@@ -774,10 +774,15 @@ export function mountDisplacementGlobe(root) {
         const key = `${flow.to_point.lat.toFixed(2)},${flow.to_point.lon.toFixed(2)}`;
         const slot = ringBuckets.get(key) || 0;
         ringBuckets.set(key, slot + 1);
-        const shifted =
+        const causeLon = crisis.cause_point.lon;
+        const causeLat = crisis.cause_point.lat;
+        let shifted =
           slot === 0
             ? [flow.to_point.lon, flow.to_point.lat]
             : destination(flow.to_point.lon, flow.to_point.lat, slot * 48, 80 + slot * 36);
+        if (haversineKm(shifted[0], shifted[1], causeLon, causeLat) < 50) {
+          shifted = destination(causeLon, causeLat, 42 + slot * 58, 150);
+        }
         rings.push({
           type: 'Feature',
           id: `ring-${crisis.id}-${flowIndex}`,
@@ -914,7 +919,7 @@ export function mountDisplacementGlobe(root) {
       type: 'circle',
       source: 'dg-causes',
       paint: {
-        'circle-radius': ['case', ['==', ['get', 'active'], 1], 16, 11],
+        'circle-radius': ['case', ['==', ['get', 'active'], 1], 20, 11],
         'circle-color': ['get', 'color'],
         'circle-opacity': ['case', ['==', ['get', 'active'], 1], 0.28, 0.12],
         'circle-blur': 0.4,
@@ -928,10 +933,10 @@ export function mountDisplacementGlobe(root) {
         'circle-radius': [
           'case',
           ['boolean', ['feature-state', 'hover'], false],
-          9,
+          12,
           ['==', ['get', 'active'], 1],
-          8,
-          6.5,
+          11,
+          7,
         ],
         'circle-color': ['get', 'color'],
         'circle-stroke-color': '#140806',
@@ -1155,10 +1160,20 @@ const before = map.getLayer('dg-arrows') ? 'dg-arrows' : undefined;
     map?.resize();
   });
 
+  let lastNarrow = narrowScreen();
+  let resizeLock = false;
   window.addEventListener('resize', () => {
+    if (resizeLock) return;
+    resizeLock = true;
     refreshOutlines();
-    drawFlows();
     map?.resize();
+    const narrow = narrowScreen();
+    if (narrow !== lastNarrow) {
+      lastNarrow = narrow;
+      drawFlows();
+    }
+    positionLabels();
+    resizeLock = false;
   });
 
   try {
