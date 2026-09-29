@@ -1,0 +1,122 @@
+---
+import HazardGlobe from '../components/HazardGlobe.astro';
+import MapShelfNav from '../components/MapShelfNav.astro';
+import { LIVE_HAZARDS_SLUG } from '../data/live-hazards';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getLiveHazardsPage, getMapsPage, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const copy = getLiveHazardsPage(locale);
+const maps = getMapsPage(locale);
+---
+
+<BaseLayout title={copy.metaTitle} description={copy.metaDescription} image="/images/maps/blue-marble.jpg">
+  <header class="maps-hero hz-hero" aria-labelledby="live-world-heading">
+    <div class="maps-hero-media" aria-hidden="true">
+      <img src="/images/maps/blue-marble.jpg" alt="" width="5400" height="2700" />
+    </div>
+    <div class="maps-hero-shade"></div>
+    <div class="wrap maps-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/maps', locale)}>{maps.back}</a>
+      </p>
+      <div class="eyebrow maps-eyebrow">{copy.eyebrow}</div>
+      <h1 id="live-world-heading">{copy.title}</h1>
+      <p>{copy.lead}</p>
+    </div>
+  </header>
+
+  <section class="hz-page">
+    <div class="wrap">
+      <MapShelfNav active={LIVE_HAZARDS_SLUG} />
+    </div>
+    <HazardGlobe />
+    <div class="wrap hz-credits" id="hz-credits">
+      <h2>{copy.creditsTitle}</h2>
+      <p>{copy.creditsLead}</p>
+      <ul class="hz-credit-list">
+        {
+          copy.credits.map((credit) => (
+            <li>
+              <a href={credit.href} rel="noopener noreferrer">{credit.name}</a>
+              <span>
+                {' · '}
+                <a href={credit.licenseHref} rel="noopener noreferrer">{credit.license}</a>
+              </span>
+              <p>{credit.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hz-hero {
+    min-height: 0;
+    padding: 0.75rem 0 0.15rem;
+  }
+
+  .hz-hero h1 {
+    margin-bottom: 0.25rem;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+  }
+
+  .hz-hero :global(.maps-hero-copy > p:first-child) {
+    margin-bottom: 0.25rem;
+  }
+
+  .hz-page {
+    padding: 0 0 2.6rem;
+    background: #050505;
+  }
+
+  .hz-page :global(.maps-filters) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0.15rem 0 0.55rem;
+    padding-top: 0;
+  }
+
+  .hz-credits {
+    padding-top: 0.4rem;
+  }
+
+  .hz-credits h2 {
+    font-size: 1.35rem;
+    color: var(--cream);
+  }
+
+  .hz-credits > p,
+  .hz-credit-list p {
+    color: #d5d5cc;
+    max-width: 46rem;
+  }
+
+  .hz-credit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hz-credit-list li {
+    margin: 0 0 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.16);
+  }
+
+  .hz-credit-list p {
+    margin: 0.35rem 0 0;
+  }
+
+  @media (max-width: 980px) {
+    .hz-hero {
+      padding-top: 0.85rem;
+    }
+
+    .hz-hero p {
+      font-size: 0.98rem;
+    }
+  }
+</style>

@@ -1,0 +1,541 @@
+---
+import { LAYER_COLOR, PANEL_IDS } from '../lib/hazards.mjs';
+import { getLiveHazardsPage, resolveLocale } from '../i18n';
+import 'maplibre-gl/dist/maplibre-gl.css';
+
+const locale = resolveLocale(Astro.currentLocale);
+const copy = getLiveHazardsPage(locale);
+const colors = LAYER_COLOR as Record<string, string>;
+const shortLabel = (text: string) => text.split(':')[0].trim();
+
+interface Props {
+  hero?: boolean;
+}
+
+const { hero = false } = Astro.props;
+---
+
+<div
+  class:list={['hz-board', hero && 'is-hero']}
+  data-hazard-globe
+  data-locale={locale}
+  data-copy={JSON.stringify(copy)}
+  data-ready="false"
+>
+  <button
+    type="button"
+    class="hz-layers-toggle"
+    data-layers-toggle
+    aria-expanded="false"
+    aria-controls="hz-layers"
+  >
+    {copy.showLayers}
+  </button>
+  <section class="hz-panel hz-layers" id="hz-layers" aria-label={copy.layersAria}>
+    <div class="hz-panel-head">
+      <h2>{copy.layersTitle}</h2>
+      <p class="hz-status" data-status>{copy.loading}</p>
+    </div>
+    <div class="hz-layer-list">
+      {
+        PANEL_IDS.map((id) => (
+          <label class="hz-layer">
+            <input type="checkbox" checked={id !== 'fires'} data-layer={id} />
+            <span class="hz-switch" aria-hidden="true"></span>
+            <span class="hz-swatch" style={`--hz:${colors[id]}`} aria-hidden="true"></span>
+            <span class="hz-layer-copy">
+              <span class="hz-layer-name" title={copy.layers[id]}>{shortLabel(copy.layers[id])}</span>
+              <span class="hz-caption" title={copy.captions[id]}>{copy.captions[id]}</span>
+            </span>
+            <span class="hz-side">
+              <span class="hz-live" data-live={id} title={copy.live}>
+                {copy.live}
+              </span>
+              <span class="hz-count" data-count={id}>
+                0
+              </span>
+              <span class="hz-when" data-when={id}></span>
+            </span>
+          </label>
+        ))
+      }
+      <label class="hz-layer">
+        <input type="checkbox" data-raster="droughtEurope" />
+        <span class="hz-switch" aria-hidden="true"></span>
+        <span class="hz-swatch" style="--hz:#e6c15a" aria-hidden="true"></span>
+        <span class="hz-layer-copy">
+          <span class="hz-layer-name">{copy.droughtEurope}</span>
+          <span class="hz-caption">{copy.droughtEuropeCaption}</span>
+        </span>
+        <span class="hz-side">
+          <span class="hz-live">{copy.live}</span>
+        </span>
+      </label>
+    </div>
+    <p class="hz-note" data-raster-note hidden>{copy.rasterNote}</p>
+    <p class="hz-note" data-raster-europe-note hidden>{copy.rasterEuropeNote}</p>
+    <p class="hz-note" data-snapshot-note hidden>{copy.snapshotNote}</p>
+  </section>
+
+  <div class="hz-map" data-map role="region" aria-label={copy.mapLabel}>
+    <p class="hz-map-failed" data-map-failed hidden>{copy.mapFailed}</p>
+  </div>
+
+  <section class="hz-panel hz-feed" aria-label={copy.feedAria}>
+    <div class="hz-panel-head">
+      <h2>{copy.feedTitle}</h2>
+    </div>
+    <p class="hz-feed-empty" data-feed-empty hidden>{copy.feedEmpty}</p>
+    <p class="hz-feed-more" data-feed-more hidden></p>
+    <ol class="hz-feed-list" data-feed></ol>
+  </section>
+</div>
+
+<script>
+  import '../lib/hazard-globe.mjs';
+</script>
+
+<style>
+  .hz-board {
+    display: grid;
+    grid-template-columns: minmax(260px, 340px) minmax(0, 1fr) 300px;
+    scroll-margin-top: calc(var(--header-h) + 8px);
+    gap: 0.7rem;
+    width: min(1480px, calc(100% - 28px));
+    margin: 0 auto 1.2rem;
+    height: calc(100dvh - var(--header-h) - 12px);
+    min-height: 640px;
+  }
+
+  .hz-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    background: rgba(8, 8, 8, 0.94);
+    border: 1px solid rgba(192, 255, 0, 0.28);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .hz-panel-head {
+    padding: 0.85rem 0.9rem 0.45rem;
+  }
+
+  .hz-panel-head h2 {
+    margin: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--lime);
+    font-weight: 700;
+  }
+
+  .hz-status,
+  .hz-note,
+  .hz-feed-empty,
+  .hz-feed-more,
+  .hz-map-failed {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .hz-note,
+  .hz-map-failed {
+    padding: 0 0.9rem 0.8rem;
+  }
+
+  .hz-layer-list {
+    overflow: auto;
+    padding: 0.1rem 0.55rem 0.45rem;
+  }
+
+  .hz-layer {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.28rem 0.12rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.12);
+    cursor: pointer;
+  }
+
+  .hz-layer input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  .hz-switch {
+    width: 34px;
+    height: 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(192, 255, 0, 0.4);
+    background: #1a1a1a;
+    position: relative;
+  }
+
+  .hz-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #8a8a82;
+  }
+
+  .hz-layer input:checked + .hz-switch {
+    background: var(--lime);
+    border-color: var(--lime);
+  }
+
+  .hz-layer input:checked + .hz-switch::after {
+    transform: translateX(14px);
+    background: #111;
+  }
+
+  .hz-layer input:focus-visible + .hz-switch {
+    outline: 2px solid var(--lime);
+    outline-offset: 2px;
+  }
+
+  .hz-swatch {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--hz);
+    box-shadow: 0 0 8px var(--hz);
+  }
+
+  .hz-layer-copy {
+    min-width: 0;
+  }
+
+  .hz-layer-name {
+    display: block;
+    color: var(--cream);
+    font-size: 0.84rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hz-caption {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 0.08rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  .hz-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+  }
+
+  .hz-when {
+    color: var(--muted);
+    font-size: 0.62rem;
+    line-height: 1.15;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .hz-live {
+    background: var(--lime);
+    color: #041000;
+    border-radius: 4px;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.34rem;
+    line-height: 1.2;
+  }
+
+  .hz-count {
+    min-width: 2.2rem;
+    text-align: right;
+    color: var(--cream);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.86rem;
+  }
+
+  .hz-map {
+    position: relative;
+    min-height: 0;
+    height: 100%;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #050505;
+    border: 1px solid rgba(192, 255, 0, 0.28);
+  }
+
+  .hz-map-failed {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+  }
+
+  .hz-feed {
+    min-width: 0;
+  }
+
+  .hz-layers-toggle {
+    display: none;
+  }
+
+  .hz-board.is-hero {
+    width: min(1600px, calc(100% - 16px));
+    height: calc(100dvh - var(--header-h) - 8px);
+    margin-bottom: 0.2rem;
+  }
+
+  .hz-feed-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0.45rem 0.6rem;
+    overflow: auto;
+  }
+
+  .hz-feed-more,
+  .hz-feed-empty {
+    padding: 0 0.9rem;
+  }
+
+  :global(.hz-feed-btn .hz-swatch) {
+    width: 9px;
+    height: 9px;
+    margin-top: 0.35rem;
+    border-radius: 50%;
+    background: var(--hz);
+    box-shadow: 0 0 8px var(--hz);
+  }
+
+  :global(.hz-feed-btn) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.55rem;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    color: inherit;
+    border: 0;
+    border-left: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0.55rem 0.45rem;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  :global(.hz-feed-btn:hover),
+  :global(.hz-feed-btn.is-active) {
+    background: rgba(192, 255, 0, 0.08);
+    border-left-color: var(--lime);
+  }
+
+  :global(.hz-feed-copy) {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  :global(.hz-feed-title) {
+    color: var(--cream);
+    font-size: 0.92rem;
+  }
+
+  :global(.hz-feed-meta) {
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  :global(.hz-map .maplibregl-ctrl-group) {
+    background: #0a0a0a;
+    border: 1px solid rgba(192, 255, 0, 0.35);
+    box-shadow: none;
+  }
+
+  :global(.hz-map .maplibregl-ctrl-group button) {
+    filter: invert(1) hue-rotate(40deg);
+  }
+
+  :global(.hz-map .maplibregl-ctrl-attrib) {
+    background: rgba(0, 0, 0, 0.72);
+    color: #c8c8be;
+    font-size: 0.68rem;
+  }
+
+  :global(.hz-map .maplibregl-ctrl-attrib a) {
+    color: var(--lime);
+  }
+
+  :global(.hz-popup .maplibregl-popup-content) {
+    background: #0a0a0a;
+    color: var(--cream);
+    border: 1px solid rgba(192, 255, 0, 0.5);
+    border-radius: 12px;
+    padding: 0.75rem 0.85rem 0.7rem;
+    box-shadow: var(--shadow);
+  }
+
+  :global(.hz-popup .maplibregl-popup-close-button) {
+    color: var(--lime);
+    font-size: 1.15rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  :global(.hz-popup .maplibregl-popup-anchor-bottom .maplibregl-popup-tip) {
+    border-top-color: #0a0a0a;
+  }
+
+  :global(.hz-popup .maplibregl-popup-anchor-top .maplibregl-popup-tip) {
+    border-bottom-color: #0a0a0a;
+  }
+
+  :global(.hz-kicker),
+  :global(.hz-popup-level),
+  :global(.hz-popup-time),
+  :global(.hz-popup-source) {
+    margin: 0 0 0.35rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  :global(.hz-kicker) {
+    color: var(--lime);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  :global(.hz-popup-title) {
+    margin: 0 0 0.4rem;
+    color: var(--cream);
+    font-size: 1rem;
+  }
+
+  :global(.hz-popup-link) {
+    margin: 0.45rem 0 0;
+  }
+
+  @media (max-width: 980px) {
+    .hz-board {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 12px);
+      height: calc(100dvh - var(--header-h) - 8px);
+      min-height: 0;
+    }
+
+    .hz-layers,
+    .hz-feed {
+      position: relative;
+      z-index: 2;
+      left: auto;
+      right: auto;
+      flex: 0 0 auto;
+      max-height: none;
+      background: rgba(8, 8, 8, 0.94);
+    }
+
+    .hz-layer-list {
+      overflow: visible;
+    }
+
+    .hz-caption,
+    .hz-when {
+      display: none;
+    }
+
+    .hz-layer {
+      padding: 0.16rem 0.08rem;
+    }
+
+    .hz-side {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.28rem;
+    }
+
+    .hz-map {
+      flex: 1 1 auto;
+      min-height: 180px;
+      height: auto;
+    }
+
+    .hz-feed {
+      max-height: 72px;
+    }
+
+    .hz-board.is-hero {
+      height: auto;
+      min-height: 0;
+    }
+
+    .hz-board.is-hero .hz-map {
+      order: 1;
+      flex: 0 0 auto;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      min-height: 0;
+    }
+
+    .hz-board.is-hero .hz-layers-toggle {
+      display: flex;
+      order: 2;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      padding: 0.55rem 0.85rem;
+      border: 1px solid rgba(192, 255, 0, 0.35);
+      border-radius: var(--radius);
+      background: rgba(8, 8, 8, 0.94);
+      color: var(--lime);
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .hz-board.is-hero .hz-layers-toggle::after {
+      content: '';
+      width: 0.45rem;
+      height: 0.45rem;
+      border-right: 2px solid var(--lime);
+      border-bottom: 2px solid var(--lime);
+      transform: rotate(45deg);
+    }
+
+    .hz-board.is-hero.is-layers-open .hz-layers-toggle::after {
+      transform: rotate(225deg);
+      margin-top: 0.3rem;
+    }
+
+    .hz-board.is-hero .hz-layers {
+      order: 3;
+    }
+
+    .hz-board.is-hero:not(.is-layers-open) .hz-layers {
+      display: none;
+    }
+
+    .hz-board.is-hero .hz-feed {
+      order: 4;
+      max-height: 128px;
+    }
+  }
+</style>
