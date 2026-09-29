@@ -59,7 +59,12 @@ export type MapMeta = {
   detail?: string;
   /** Optional grid meta line. Defaults to sourceShort · year. */
   cardMeta?: string;
-  /** Optional clickable citations. First row is the grid Source link. */
+  /**
+   * Grid Source line when it must stay a product code. The detail Sources
+   * list still uses `sources`. When omitted, the first citation label is used.
+   */
+  gridSourceLabel?: string;
+  /** Optional clickable citations. First row is the grid Source link unless `gridSourceLabel` is set. */
   sources?: PrimarySource[];
   /** Show the whole preview in the card frame. */
   fit?: 'contain';
@@ -871,6 +876,112 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://earthobservatory.nasa.gov/features/NightLights',
     preview: 'earth-at-night.jpg',
     previewKind: 'photo',
+  },
+  {
+    slug: 'world-population',
+    category: 'population',
+    year: '2024',
+    sourceShort: 'UN WPP 2024',
+    sourceOrg: 'UN DESA Population Division',
+    sourceUrl: 'https://population.un.org/wpp/',
+    openMapUrl: 'https://population.un.org/wpp/',
+    preview: 'world-population.jpg',
+    detail: 'detail/world-population.webp',
+    previewKind: 'data',
+    cardMeta: 'UN WPP 2024 · 8.16 billion (1 July 2024)',
+    gridSourceLabel: 'UN WPP 2024',
+    sources: [
+      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
+      {
+        label: 'UN DESA — World Population Prospects 2024',
+        url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
+      },
+      {
+        label: 'UN DESA — WPP 2024 demographic indicators, medium variant',
+        url: 'https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz',
+      },
+    ],
+  },
+  {
+    slug: 'cities-and-towns',
+    category: 'population',
+    year: '2020',
+    sourceShort: 'GHS-SMOD R2023A',
+    sourceOrg: 'European Commission JRC GHSL',
+    sourceUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
+    openMapUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
+    preview: 'cities-and-towns.jpg',
+    detail: 'detail/cities-and-towns.webp',
+    previewKind: 'data',
+    cardMeta: 'GHS-SMOD R2023A · 2020 epoch · 0.02° grid',
+    gridSourceLabel: 'GHS-SMOD R2023A',
+    sources: [
+      {
+        label: 'European Commission JRC — GHSL GHS-SMOD R2023A, 2020 epoch',
+        url: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
+      },
+      {
+        label: 'European Commission JRC — Global Human Settlement Layer',
+        url: 'https://human-settlement.emergency.copernicus.eu/',
+      },
+      {
+        label: 'European Commission JRC — GHSL datasets',
+        url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
+      },
+    ],
+  },
+  {
+    slug: 'built-up-surface',
+    category: 'population',
+    year: '2020',
+    sourceShort: 'GHS-BUILT-S R2023A',
+    sourceOrg: 'European Commission JRC GHSL',
+    sourceUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
+    openMapUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
+    preview: 'built-up-surface.jpg',
+    detail: 'detail/built-up-surface.webp',
+    previewKind: 'data',
+    cardMeta: 'GHS-BUILT-S R2023A · 2020 epoch · percent of cell',
+    gridSourceLabel: 'GHS-BUILT-S R2023A',
+    sources: [
+      {
+        label: 'European Commission JRC — GHSL GHS-BUILT-S R2023A, 2020 epoch',
+        url: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
+      },
+      {
+        label: 'European Commission JRC — Global Human Settlement Layer',
+        url: 'https://human-settlement.emergency.copernicus.eu/',
+      },
+      {
+        label: 'European Commission JRC — GHSL datasets',
+        url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
+      },
+    ],
+  },
+  {
+    slug: 'population-growth',
+    category: 'population',
+    year: '2024',
+    sourceShort: 'UN WPP 2024',
+    sourceOrg: 'UN DESA Population Division',
+    sourceUrl: 'https://population.un.org/wpp/',
+    openMapUrl: 'https://population.un.org/wpp/',
+    preview: 'population-growth.jpg',
+    detail: 'detail/population-growth.webp',
+    previewKind: 'data',
+    cardMeta: 'UN WPP 2024 · 2024 rate · percent per year',
+    gridSourceLabel: 'UN WPP 2024',
+    sources: [
+      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
+      {
+        label: 'UN DESA — World Population Prospects 2024',
+        url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
+      },
+      {
+        label: 'UN DESA — WPP 2024 demographic indicators, medium variant',
+        url: 'https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz',
+      },
+    ],
   },
   {
     slug: 'global-river-basins',

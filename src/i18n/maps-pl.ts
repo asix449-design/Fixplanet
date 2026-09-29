@@ -660,4 +660,72 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las — nie data utraty koron',
   },
+  'world-population': {
+    title: 'Ludność świata',
+    cardMeta: 'ONZ WPP 2024 · 8,16 mld (1 lipca 2024)',
+    hook: 'Ilu ludzi mieszka w każdym kraju 1 lipca 2024 r., według średniego wariantu szacunków ONZ.',
+    description:
+      'Każdy kraj ma kolor według liczby ludności 1 lipca 2024 r. w średnim wariancie World Population Prospects 2024 (DESA ONZ). Suma światowa w tej samej tabeli to 8,16 mld. Największa suma krajowa przypada Indiom, potem Chinom. Kolor to skala logarytmiczna liczby ludzi: od około 16 tysięcy (5. percentyl narysowanych krajów) do 1,45 mld w Indiach.',
+    whyOnShelf:
+      'Jedna rewizja ONZ stawia sumę każdego kraju na tę samą datę. Kolor to ilu ludzi, a nie ilu na kilometr kwadratowy i nie światła nocne.',
+    howToRead:
+      'Ciemniejszy brąz to większa suma krajowa. Na skali jest liczba ludzi, logarytmicznie. Szary ląd nie ma wiersza za 2024 r. dopasowanego do tego wielokąta. Jeziora i Morze Kaspijskie zostają wodą.',
+    caveats:
+      'Suma krajowa to nie siatka gęstości. Gujana Francuska, Gwadelupa, Martynika, Majotta, Reunion, Gibraltar, Bonaire, Sint Eustatius i Saba oraz Tokelau są w tabeli, ale na tej linii brzegowej Natural Earth 1:50m nie mają osobnego wielokąta. 8,16 mld to wiersz „świat” w tabeli, a nie suma pokolorowanych krajów.',
+    licenseNote:
+      'DESA ONZ, World Population Prospects 2024, wskaźniki demograficzne, wariant średni, ludność 1 lipca 2024 r. Granice: Natural Earth 1:50m, domena publiczna.',
+    imageAlt:
+      'Mapa Equal Earth liczby ludności krajów 1 lipca 2024 r. według WPP 2024: ciemniejszy brąz to większa suma, ze skalą liczb',
+  },
+  'cities-and-towns': {
+    title: 'Miasta i miasteczka',
+    cardMeta: 'GHS-SMOD R2023A · epoka 2020 · siatka 0,02°',
+    hook: 'Ośrodki miejskie, miasteczka i ląd wiejski na siatce osadnictwa GHSL dla 2020 r.',
+    description:
+      'Plansza to epoka 2020 warstwy GHS-SMOD R2023A, klasyfikacji osadnictwa Global Human Settlement Layer: ostatni krok tego wydania oparty na obserwacjach satelitarnych. Klasy siatki 30 sekund kątowych są liczone większością do komórki 0,02°. Czerwień to ośrodek miejski (klasa 30). Pomarańcz to miasteczko lub skupisko półgęste (klasy 21, 22 i 23). Oliwkowy to komórki wiejskie (klasy 11, 12 i 13). Większość powierzchni lądu to klasa wiejska.',
+    whyOnShelf:
+      'Siatka pokazuje klasę osadnictwa lądu i jest rysowana tak samo w każdym kraju. To nie krajowy odsetek ludności miejskiej i nie liczba ludzi.',
+    howToRead:
+      'Czerwień oznacza ośrodki miejskie, pomarańcz miasteczka i obszary półgęste, oliwkowy komórki wiejskie. Nie ma skali liczbowej: trzy kolory to te grupy klas. Woda w siatce osadnictwa i jeziora Natural Earth zostają niezamalowane.',
+    caveats:
+      'Klasa 30 to ośrodek miejski w klasyfikacji GHSL, a nie każde miejsce, które kraj nazywa miastem. Osobno: epoki 2025 i 2030 w tym samym wydaniu są projekcją modelu i nie są tą mapą. Plansza nie pokazuje, ilu ludzi mieszka w każdej klasie.',
+    licenseNote:
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-SMOD R2023A, epoka 2020, CC BY 4.0. Klasy policzone na siatce 0,02°. Granice: Natural Earth.',
+    imageAlt:
+      'Mapa Equal Earth klas osadnictwa GHSL na 2020 r.: czerwone ośrodki miejskie, pomarańczowe miasteczka, oliwkowy ląd wiejski',
+  },
+  'built-up-surface': {
+    title: 'Powierzchnia zabudowana',
+    cardMeta: 'GHS-BUILT-S R2023A · epoka 2020 · procent komórki',
+    hook: 'Jaką część każdej komórki stanowi powierzchnia zabudowana na siatce GHSL z 2020 r.',
+    description:
+      'Plansza sumuje powierzchnię zabudowaną GHS-BUILT-S R2023A dla epoki 2020, ostatniego kroku tego wydania opartego na obserwacjach satelitarnych. Metry kwadratowe z siatki 30 sekund kątowych są dodawane w każdej komórce 0,02° i dzielone przez pole tej komórki. Kolor to ten procent, na skali logarytmicznej od 0,1 do około 24. Komórki poniżej 0,1 procenta zostają kolorem lądu. Góra skali to 99,5. percentyl komórek, w których jest jakakolwiek zabudowa.',
+    whyOnShelf:
+      'Powierzchnia zabudowana to grunt pod budynkami. To nie liczba ludzi i nie światła widoczne w nocy.',
+    howToRead:
+      'Od żółci do głębokiej czerwieni udział komórki jest większy. Liczba na skali to procent komórki 0,02°. Komórka może przekroczyć 0,1 procenta gęstą dzielnicą albo rzadszą zabudową.',
+    caveats:
+      'Wartość to powierzchnia zabudowana podzielona przez pole komórki, a nie powierzchnia pięter w wieżowcach i nie prawna granica miasta. Ocean i jeziora nie są kolorowane. Osobno: epoki 2025 i 2030 w tym samym wydaniu są projekcją modelu i nie są tą mapą.',
+    licenseNote:
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-BUILT-S R2023A, epoka 2020, CC BY 4.0. Złożone w siatkę 0,02°. Granice: Natural Earth.',
+    imageAlt:
+      'Mapa Equal Earth procentu powierzchni zabudowanej w komórce 0,02° w 2020 r., od żółci do czerwieni, ze skalą liczb',
+  },
+  'population-growth': {
+    title: 'Wzrost ludności',
+    cardMeta: 'ONZ WPP 2024 · tempo 2024 · procent rocznie',
+    hook: 'Roczne tempo zmiany ludności każdego kraju w 2024 r., z tego samego średniego wariantu ONZ.',
+    description:
+      'Każdy kraj ma kolor według tempa wzrostu ludności w 2024 r. w średnim wariancie World Population Prospects 2024, w procentach na rok. Skala biegnie od około −1,7 do 3,4 i jest wyśrodkowana na zerze. Spośród narysowanych krajów 60 ma tempo ujemne. Tempo powyżej 3 procent w tej tabeli mają między innymi Angola (3,0), Demokratyczna Republika Konga (3,2), Niger (3,3), Republika Środkowoafrykańska (3,4) i Somalia (3,4).',
+    whyOnShelf:
+      'Duża liczba ludności może zmieniać się powoli. W tej tabeli tempo Chin w 2024 r. wynosi −0,2 procenta, a kilka mniejszych krajów jest powyżej 3 procent. Plansza pokazuje tempo, a nie liczbę ludzi.',
+    howToRead:
+      'Niebieski to spadek ludności, blady środek jest blisko zera, czerwień to wzrost. Na skali są procenty na rok. Tempo łączy urodzenia, zgony i migracje. To nie sama dzietność.',
+    caveats:
+      'Końce skali to 2. i 98. percentyl narysowanych krajów, więc kilka szybszych i wolniejszych obszarów dzieli skrajne kolory. Te same małe obszary, których nie ma na planszy ludności, nie ma i tutaj. To nie jest mapa roku, w którym ludność osiągnęła szczyt.',
+    licenseNote:
+      'DESA ONZ, World Population Prospects 2024, wskaźniki demograficzne, wariant średni, tempo wzrostu ludności w 2024 r. Granice: Natural Earth 1:50m, domena publiczna.',
+    imageAlt:
+      'Mapa Equal Earth tempa wzrostu ludności ONZ w 2024 r.: niebieski to spadek, czerwień to wzrost, ze skalą liczb',
+  },
 };
