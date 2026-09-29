@@ -403,18 +403,18 @@ export const lv: Record<string, LawCopy> = {
   },
   'california-sb-53': {
     title: 'Kalifornijas likums par progresīvu mākslīgā intelekta sistēmu caurredzamību',
-    hook: 'Štata likums lielākajiem modeļu izstrādātājiem: publicēt drošības ietvaru un ziņot par nopietniem incidentiem. 2024. gada Senāta likumprojektu Nr. 1047 gubernators apturēja ar veto.',
+    hook: 'Štata likums lielākajiem modeļu izstrādātājiem: publicēt drošības ietvaru un ziņot par nopietniem incidentiem. 2024. gada Senāta likumprojektam Nr. 1047 gubernators uzlika veto.',
     imageAlt: 'Kalifornijas štata Kapitolijs Sakramento',
     jurisdiction: 'Kalifornija, Amerikas Savienotās Valstis',
     officialName: 'Likums par progresīva mākslīgā intelekta caurredzamību',
     citation:
       'Senāta likumprojekts Nr. 53 (Vīners), 138. nodaļa, 2025. gada likumu krājums; Kalifornijas uzņēmējdarbības un profesiju kodeksa sadaļas 22757.10 un turpmākās',
     yearStatus:
-      'Parakstīts 2025. gada 29. septembrī. Galvenie pienākumi lielākajiem izstrādātājiem no 2026. gada 1. janvāra. 2024. gada Senāta likumprojektu Nr. 1047 gubernators apturēja ar veto.',
+      'Parakstīts 2025. gada 29. septembrī. Galvenie pienākumi lielākajiem izstrādātājiem no 2026. gada 1. janvāra. 2024. gada Senāta likumprojektam Nr. 1047 gubernators uzlika veto.',
     what: 'Senāta likumprojekts Nr. 53 prasa lieliem progresīvu modeļu izstrādātājiem, likumā tos sauc par robežmodeļiem, publicēt drošības ietvaru, izvērtēt katastrofāla riska apgalvojumus likuma nozīmē, ziņot par kritiskiem drošības incidentiem un aizsargāt norādītos trauksmes cēlējus. Tas ir caurredzamības un ziņošanas likums.',
     where: 'Kalifornijas tiesības. Tas vērsts uz lieliem izstrādātājiem, kas iztur likumā noteiktos skaitļošanas un ieņēmumu sliekšņus. Pienākumus nosaka štata likums.',
     effects: 'Iecerētie efekti: publiski drošības ietvara dokumenti un kanāls incidentu ziņojumiem štatam. 2026. gadā oficiāls izvērtējums par to, vai šie iesniegumi mazināja kaitējumu, vēl ir priekšā.',
-    caveats: 'Sliekšņi atstāj lielāko daļu izstrādātāju ārpus likuma. Publicēts ietvars ir izstrādātāja kontroles publiska atklāšana. Strīdi par to, vai federālās tiesības izstums štata likumu, paliek dzīvs politisks jautājums Amerikas Savienotajās Valstīs. 2024. gada Senāta likumprojektu Nr. 1047 gubernators apturēja ar veto; spēkā esošais likums ir Senāta likumprojekts Nr. 53.',
+    caveats: 'Sliekšņi atstāj lielāko daļu izstrādātāju ārpus likuma. Publicēts ietvars ir izstrādātāja kontroles publiska atklāšana. Strīdi par to, vai federālās tiesības izstums štata likumu, paliek dzīvs politisks jautājums Amerikas Savienotajās Valstīs. 2024. gada Senāta likumprojektam Nr. 1047 gubernators uzlika veto; spēkā esošais likums ir Senāta likumprojekts Nr. 53.',
     sourcesNote:
       'Kalifornijas likumdevēja likumprojekta statuss un teksts; gubernatora kancelejas 2025. gada 29. septembra parakstīšanas paziņojums.',
     sources: [

@@ -406,7 +406,7 @@ export const pl: Record<string, LawCopy> = {
   },
   'california-sb-53': {
     title: 'Kalifornijska ustawa o przejrzystości zaawansowanych systemów sztucznej inteligencji',
-    hook: 'Ustawa stanowa dla największych twórców modeli: opublikować ramę bezpieczeństwa i zgłaszać poważne incydenty. Projekt senacki nr 1047 z 2024 r. został zawetowany.',
+    hook: 'Ustawa stanowa dla największych twórców modeli: opublikować ramę bezpieczeństwa i zgłaszać poważne incydenty. Projekt senacki nr 1047 z 2024 r. gubernator zawetował.',
     imageAlt: 'Kapitol stanu Kalifornia w Sacramento',
     jurisdiction: 'Kalifornia, Stany Zjednoczone',
     officialName: 'Ustawa o przejrzystości zaawansowanej sztucznej inteligencji',
