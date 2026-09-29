@@ -701,5 +701,49 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uruq_Bani_Ma%27arid_Reserve,_Saudi_Arabia_(2025).jpg",
     "artist": "Saudi Press Agency (SPA)",
     "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "goat",
+    "file": "goat.jpg",
+    "commonsTitle": "Goat بز 10.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Goat_%D8%A8%D8%B2_10.jpg",
+    "artist": "Mostafameraji",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "slug": "cat",
+    "file": "cat.jpg",
+    "commonsTitle": "Cat November 2010-1a.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+    "artist": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "slug": "donkey",
+    "file": "donkey.jpg",
+    "commonsTitle": "Donkey in Clovelly, North Devon, England.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donkey_in_Clovelly,_North_Devon,_England.jpg",
+    "artist": "Adrian Pingstone",
+    "license": "Public domain"
+  },
+  {
+    "slug": "duck",
+    "file": "duck.jpg",
+    "commonsTitle": "Ducks in the paddy fields, Ubud, Bali, 20220823 1016 0341.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ducks_in_the_paddy_fields,_Ubud,_Bali,_20220823_1016_0341.jpg",
+    "artist": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "slug": "rabbit",
+    "file": "rabbit.jpg",
+    "commonsTitle": "2017-03-30 AT Wien 22 Donaustadt, Blumengärten Hirschstetten, Oryctolagus cuniculus f. domesticus (51677002276).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-03-30_AT_Wien_22_Donaustadt,_Blumeng%C3%A4rten_Hirschstetten,_Oryctolagus_cuniculus_f._domesticus_%2851677002276%29.jpg",
+    "artist": "Paul Korecky",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
   }
 ]

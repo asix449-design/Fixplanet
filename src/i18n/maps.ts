@@ -7,6 +7,7 @@ import {
   type MapEntry,
 } from '../data/maps';
 import type { Locale } from './config';
+import { crimeCopy } from './maps-crime-pack';
 import { lv as lvEntries } from './maps-lv';
 import { pl as plEntries } from './maps-pl';
 import { ru as ruEntries } from './maps-ru';
@@ -60,7 +61,7 @@ const pageEn: MapsPage = {
       'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity — each card names the publisher and what the measure is (and is not).',
     ethnic: 'Language families as public cartography, not a census.',
     crime:
-      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
+      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not). Also here: how many people each country holds in prison, the main routes of cocaine, heroin and methamphetamine trafficking, estimates of modern slavery, money-laundering risk scores and rule-of-law rankings.',
     pollution: 'Air, waste, and emissions with a named source.',
     subsurface: 'Oil, gas, and minerals — fossil fuel and fossil gold.',
     political:
@@ -130,7 +131,7 @@ const pageRu: MapsPage = {
       'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов — у каждой карточки издатель и что именно измеряется (и чего нет).',
     ethnic: 'Языковые семьи как открытая картография, не перепись.',
     crime:
-      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
+      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет). Здесь также: сколько людей содержится в тюрьмах каждой страны, основные маршруты контрабанды кокаина, героина и метамфетамина, оценки масштабов современного рабства, баллы риска отмывания денег и рейтинги верховенства права.',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
     subsurface: 'Нефть, газ и ископаемые — топливо и золото недр.',
     political:
@@ -200,7 +201,7 @@ const pagePl: MapsPage = {
       'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów — na każdej karcie wydawca oraz to, co miara obejmuje (i czego nie).',
     ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
     crime:
-      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
+      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest). Znajdziesz tu także: ile osób przebywa w więzieniach w poszczególnych krajach, główne szlaki przemytu kokainy, heroiny i metamfetaminy, szacunki skali współczesnego niewolnictwa, oceny ryzyka prania pieniędzy oraz rankingi praworządności.',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
     subsurface: 'Ropa, gaz i minerały — paliwo kopalne i kopalne złoto.',
     political:
@@ -270,7 +271,7 @@ const pageLv: MapsPage = {
       'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko ne).',
     ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
     crime:
-      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
+      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē). Šeit arī: cik cilvēku katrā valstī atrodas cietumā, galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi, mūsdienu verdzības apmēra aplēses, naudas atmazgāšanas riska vērtējumi un tiesiskuma reitingi.',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
     subsurface: 'Nafta, gāze un izrakteņi — fosilā degviela un fosilais zelts.',
     political:
@@ -453,7 +454,8 @@ const en: Record<string, MapCopy> = {
   },
   'homicide-rates': {
     title: 'Intentional homicide rates',
-    hook: 'UNODC comparable rates of intentional homicide — one violent-crime measure, not “all crime.”',
+    cardMeta: 'UN Office on Drugs and Crime and Our World in Data, 2019–2023.',
+    hook: 'Comparable rates of intentional homicide from the UN Office on Drugs and Crime, one measure of violent crime.',
     description:
       'The UN Office on Drugs and Crime compiles intentional homicide statistics from criminal-justice and public-health sources. Our World in Data turns the comparable series into a map and chart. Homicide is more consistently defined than robbery or “crime” in general.',
     howToRead:
@@ -467,7 +469,8 @@ const en: Record<string, MapCopy> = {
   },
   'organized-crime-index': {
     title: 'Global Organized Crime Index',
-    hook: 'Country scores for criminal markets, criminal actors, and resilience — an expert-assessment heatmap of organized crime, not a second intentional-homicide layer.',
+    cardMeta: 'Global Initiative against Transnational Organized Crime, Index 2025, assessment year 2024.',
+    hook: 'Country scores for criminal markets, criminal actors, and resilience: an expert-assessment heatmap of organized crime.',
     description:
       'The Global Initiative against Transnational Organized Crime (GI-TOC) rates 193 UN member states on criminality — criminal markets and criminal actors — and on resilience. The public tool is ocindex.net. The 2025 edition is the third; its assessment year is 2024. This card is a doorway to that expert composite, not a police-recorded crime rate and not a second UNODC homicide map.',
     whyOnShelf:
@@ -483,7 +486,8 @@ const en: Record<string, MapCopy> = {
   },
   'corruption-perceptions-index': {
     title: 'Corruption Perceptions Index',
-    hook: 'Perceived public-sector corruption (0–100) from expert and business surveys — governance risk, not street-crime volume and not homicide.',
+    cardMeta: 'Transparency International, Corruption Perceptions Index 2025.',
+    hook: 'Perceived public-sector corruption on a scale from 0 to 100, from expert and business surveys: a measure of governance risk.',
     description:
       'Transparency International’s Corruption Perceptions Index (CPI) 2025 ranks countries on perceived public-sector corruption. The scale runs from 0 (highly corrupt) to 100 (very clean), combining expert and business surveys. Our World in Data republishes the series as an open map. This is a governance-risk composite, not a count of bribery cases and not a violent-crime rate.',
     whyOnShelf:
@@ -499,7 +503,8 @@ const en: Record<string, MapCopy> = {
   },
   'trafficking-in-persons': {
     title: 'Trafficking in persons',
-    hook: 'Detected trafficking victims and patterns from UNODC’s Global Report on Trafficking in Persons — exploitation and coercion, not a homicide rate and not the GI-TOC markets composite alone.',
+    cardMeta: 'UN Office on Drugs and Crime, Global Report on Trafficking in Persons, 2024.',
+    hook: 'Detected victims of trafficking in persons, and the patterns in the UN Office on Drugs and Crime Global Report on Trafficking in Persons: exploitation and coercion.',
     description:
       'UNODC’s Global Report on Trafficking in Persons (GLOTIP) 2024 is the eighth edition under the UN Convention against Transnational Organized Crime Trafficking in Persons Protocol and the 2010 Global Plan of Action. It reports detected victims, forms of exploitation, and patterns. This card points to that victim-detection reporting — not a complete census of trafficking.',
     whyOnShelf:
@@ -764,6 +769,70 @@ const en: Record<string, MapCopy> = {
     imageAlt:
       'NASA 2012 night-lights map of Earth: city lights on dark land and black oceans, no borders or labels',
   },
+  'world-population': {
+    title: 'World population',
+    hook: 'How many people live in each country on 1 July 2024, from the UN medium-variant estimates.',
+    description:
+      'Each country is coloured by its population on 1 July 2024 in the UN World Population Prospects 2024 medium variant. The same table’s world total is 8.16 billion. India is the largest country total, then China. The colour is a log scale of people, from about 16 thousand (the 5th percentile of the countries drawn) to India’s 1.45 billion.',
+    whyOnShelf:
+      'One UN revision puts every country total on the same date. The colour is how many people, not how many per square kilometre and not lights at night.',
+    howToRead:
+      'Darker brown is a larger country total. The bar is people, on a log scale. Grey land has no 2024 row matched to that polygon. Lakes and the Caspian are left as water.',
+    caveats:
+      'A country total is not a density grid. French Guiana, Guadeloupe, Martinique, Mayotte, Réunion, Gibraltar, Bonaire, Sint Eustatius and Saba, and Tokelau are in the table but are not separate polygons on this Natural Earth 1:50m coastline. The 8.16 billion is the table’s World row, not a sum of the coloured countries.',
+    licenseNote:
+      'UN DESA Population Division, World Population Prospects 2024, demographic indicators, medium variant, population on 1 July 2024. Boundaries: Natural Earth 1:50m, public domain.',
+    imageAlt:
+      'Equal Earth choropleth of UN WPP 2024 country population on 1 July 2024, darker brown for larger totals, with a numeric colour bar',
+  },
+  'cities-and-towns': {
+    title: 'Cities and towns',
+    hook: 'Urban centres, towns and rural land in the GHSL settlement grid for 2020.',
+    description:
+      'The plate is the 2020 epoch of GHS-SMOD R2023A, the Global Human Settlement Layer settlement classification, and the latest epoch in that release built from satellite observations. The 30 arc-second classes are counted by majority onto a 0.02° grid. Red is an urban centre (class 30). Orange is a town or semi-dense cluster (classes 21, 22 and 23). Olive is rural (classes 11, 12 and 13). Most of the land area is the rural class.',
+    whyOnShelf:
+      'The grid is the settlement class of the land, drawn the same way in every country. It is not a national percent-urban figure and not a count of people.',
+    howToRead:
+      'Red marks urban centres, orange marks towns and semi-dense areas, and olive marks rural cells. There is no numeric bar: the three colours are those class groups. Water in the settlement grid, and Natural Earth lakes, stay uncoloured.',
+    caveats:
+      'Class 30 is an urban centre in the GHSL classification, not every place a country calls a city. Aside: the 2025 and 2030 epochs in the same release are model projections, and they are not this map. The plate does not show how many people live in each class.',
+    licenseNote:
+      'European Commission Joint Research Centre, GHSL GHS-SMOD R2023A, 2020 epoch, CC BY 4.0. Classes counted on a 0.02° grid. Boundaries: Natural Earth.',
+    imageAlt:
+      'Equal Earth map of GHSL settlement classes for 2020: red urban centres, orange towns, olive rural land',
+  },
+  'built-up-surface': {
+    title: 'Built-up surface',
+    hook: 'How much of each cell is built-up surface in the 2020 GHSL grid.',
+    description:
+      'The plate sums GHS-BUILT-S R2023A built-up surface for the 2020 epoch, the latest epoch in that release built from satellite observations. Square metres from the 30 arc-second grid are added inside each 0.02° cell and divided by the area of that cell. The colour is that percent, on a log scale from 0.1 to about 24. Cells under 0.1 percent stay the base land colour. The top of the bar is the 99.5th percentile of cells that have any built-up surface.',
+    whyOnShelf:
+      'Built-up surface is the ground covered by buildings. It is not the number of people and not the lights seen at night.',
+    howToRead:
+      'Yellow to deep red is a larger share of the cell. The number on the bar is percent of the 0.02° cell. A cell can pass 0.1 percent with a dense district or with a thinner scatter of buildings.',
+    caveats:
+      'The value is built-up surface divided by the area of the cell, not floor space stacked in towers and not a legal city boundary. Ocean and lakes are not coloured. Aside: the 2025 and 2030 epochs in the same release are model projections, and they are not this map.',
+    licenseNote:
+      'European Commission Joint Research Centre, GHSL GHS-BUILT-S R2023A, 2020 epoch, CC BY 4.0. Aggregated to a 0.02° grid. Boundaries: Natural Earth.',
+    imageAlt:
+      'Equal Earth map of the percent of each 0.02° cell that is built-up surface in 2020, yellow to red, with a numeric colour bar',
+  },
+  'population-growth': {
+    title: 'Population growth',
+    hook: 'The 2024 annual rate of population change in each country, from the same UN medium variant.',
+    description:
+      'Each country is coloured by its 2024 population growth rate in the UN World Population Prospects 2024 medium variant, in percent per year. The scale runs from about −1.7 to 3.4 and is centered at zero. Of the countries drawn, 60 have a negative rate. Rates above 3 percent in this table include Angola (3.0), the Democratic Republic of the Congo (3.2), Niger (3.3), the Central African Republic (3.4) and Somalia (3.4).',
+    whyOnShelf:
+      'A large population can change slowly. In this table China’s 2024 rate is −0.2 percent, while several smaller countries are above 3 percent. The plate is the rate, not the number of people.',
+    howToRead:
+      'Blue is a falling population, the pale middle is near zero, and red is growth. The bar is percent per year. The rate combines births, deaths and migration. It is not fertility alone.',
+    caveats:
+      'The ends of the scale are the 2nd and 98th percentiles of the countries drawn, so a few faster and slower areas share the end colours. The same small areas missing from the population plate are missing here. This is not a map of the year a population reached its peak.',
+    licenseNote:
+      'UN DESA Population Division, World Population Prospects 2024, demographic indicators, medium variant, 2024 population growth rate. Boundaries: Natural Earth 1:50m, public domain.',
+    imageAlt:
+      'Equal Earth choropleth of the 2024 UN population growth rate, blue for decline and red for growth, with a numeric colour bar',
+  },
   'global-river-basins': {
     title: 'Global river basins',
     hook: 'Nested sub-basin polygons for the whole planet (Pfafstetter levels) — a hydrographic base map, not a stress index.',
@@ -1007,10 +1076,10 @@ const en: Record<string, MapCopy> = {
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
-  en,
-  ru: ruEntries,
-  pl: plEntries,
-  lv: lvEntries,
+  en: { ...en, ...crimeCopy.en },
+  ru: { ...ruEntries, ...crimeCopy.ru },
+  pl: { ...plEntries, ...crimeCopy.pl },
+  lv: { ...lvEntries, ...crimeCopy.lv },
 };
 
 export function getMapsPage(locale: Locale): MapsPage {
@@ -1074,9 +1143,19 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
     // Water sibling on each Water detail page.
     return same;
   }
+  if (current.category === 'crime') {
+    // Nine Crime cards. List every Crime sibling so the original four
+    // reach the five new cards, and each new card reaches the shelf.
+    return same;
+  }
   if (current.category === 'pollution') {
     // Six Pollution cards would otherwise be sliced to three. List every
     // Pollution sibling so PM2.5 and territorial CO₂ reach the rest of the shelf.
+    return same;
+  }
+  if (current.category === 'population') {
+    // Six Population cards would otherwise be sliced to three. List every
+    // Population sibling so density and night lights reach the four new cards.
     return same;
   }
   return [...same, ...rest].slice(0, limit);

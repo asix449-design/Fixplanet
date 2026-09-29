@@ -104,65 +104,98 @@ export const lv: Record<string, MapCopy> = {
   },
   'homicide-rates': {
     title: 'Tīšu slepkavību rādītāji',
-    hook: 'UNODC salīdzināmi tīšu slepkavību rādītāji — viens vardarbības mērs, ne „visa noziedzība”.',
+    cardMeta: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs un Our World in Data, 2019–2023.',
+    gridSource: {
+      label: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, pētījums par tīšām slepkavībām',
+      url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
+    },
+    hook: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja salīdzināmi tīšu slepkavību rādītāji, viens vardarbības mērs.',
     description:
-      'ANO Narkotiku un noziedzības birojs apkopo tīšu slepkavību statistiku no krimināltiesībām un veselības avotiem. Our World in Data pārvērš salīdzināmo rindu kartē un grafikā. Slepkavību definē vienotāk nekā laupīšanu vai „noziedzību” vispār.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs apkopo tīšu slepkavību statistiku no krimināltiesībām un veselības avotiem. Our World in Data pārvērš salīdzināmo rindu kartē un grafikā. Slepkavību definē vienotāk nekā laupīšanu vai noziedzību vispār.',
     howToRead:
       'Parastā vienība ir tīšas slepkavības uz 100 000 iedzīvotājiem gadā. Augsti rādītāji bieži sakrājas pilsētās vai koridoros, ne vienmērīgi visā valstī. Salīdzini tuvus gadus; uzskaite mainās.',
     caveats:
-      'Nepietiekama reģistrācija, juridiskās definīcijas un iztrūkstoši gadi atšķiras. Konflikta nāves ir cita rinda (sk. UCDP). Nesastādi „bīstamāko valstu” sarakstu no sīktēla. Šeit nezīmējam avotiem neatbilstošu horoplētu.',
+      'Nepietiekama reģistrācija, juridiskās definīcijas un iztrūkstoši gadi atšķiras. Konflikta nāves skaita Upsalas konfliktu datu programma. Sīktēls rāda valstu rādītājus.',
     licenseNote:
-      'UNODC statistikas produktus parasti var lietot ar atsauci. OWID grafiki parasti ir CC BY. Atver viņu karti aktuālajam slānim.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja statistikas produktus parasti var lietot ar atsauci. Our World in Data grafiki parasti ir ar Creative Commons Atsauces licenci. Atver viņu karti aktuālajam slānim.',
     imageAlt:
-      'Our World in Data horoplēts par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
+      'Our World in Data karte par tīšām slepkavībām: dzeltenoranža zeme, tumšāks sarkans daļā Latīņamerikas un Dienvidāfrikas',
+    sources: [
+      {
+        label:
+          'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs: pētījums par tīšām slepkavībām (Global Study on Homicide)',
+        url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
+      },
+      {
+        label: 'Our World in Data: tīšu slepkavību rādītāji (Homicides)',
+        url: 'https://ourworldindata.org/homicides',
+      },
+    ],
   },
   'organized-crime-index': {
     title: 'Globālais organizētās noziedzības indekss',
-    hook: 'Valstu vērtējumi noziedzīgiem tirgiem, aktoriem un noturībai — ekspertu siltumkarte organizētajai noziedzībai, ne otrs tīšu slepkavību slānis.',
+    cardMeta:
+      'Globālā iniciatīva pret transnacionālo organizēto noziedzību, 2025. gada indekss, novērtējums par 2024. gadu.',
+    gridSource: {
+      label: 'Globālā iniciatīva pret transnacionālo organizēto noziedzību, 2025. gada indekss',
+      url: 'https://ocindex.net/2025/',
+    },
+    hook: 'Valstu vērtējumi noziedzīgiem tirgiem, aktoriem un noturībai: ekspertu siltumkarte organizētajai noziedzībai.',
     description:
-      'Globālā iniciatīva pret transnacionālo organizēto noziedzību (GI-TOC) vērtē 193 ANO dalībvalstis pēc noziedzības — tirgiem un aktoriem — un pēc noturības. Publiskais rīks ir ocindex.net. 2025. gada izdevums ir trešais; novērtējuma gads ir 2024. Šī kartīte ved uz šo ekspertu kompozītu, ne policijas reģistrētu rādītāju un ne otru UNODC slepkavību karti.',
+      'Globālā iniciatīva pret transnacionālo organizēto noziedzību vērtē 193 Apvienoto Nāciju Organizācijas dalībvalstis pēc noziedzības — tirgiem un aktoriem — un pēc noturības. Publiskais rīks ir ocindex.net. 2025. gada izdevums ir trešais; novērtējuma gads ir 2024. Šī kartīte ved uz šo ekspertu kompozītu.',
     whyOnShelf:
-      'Organizētās noziedzības noziedzība un noturība ir cits objekts nekā tīšu slepkavību rādītāji. Nesalieciet šo indeksu slepkavību kartītē un nelasiet tumšu valsti kā augstu slepkavību rādītāju.',
+      'Organizētās noziedzības noziedzība un noturība apraksta tirgus, aktorus un valsts spēju tiem pretoties.',
     howToRead:
-      'Valsts vērtējums ir ekspertu kompozīts, ne policijas reģistrēts rādītājs un ne UNODC slepkavību skaitlis. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē ocindex.net.',
+      'Valsts vērtējums ir ekspertu kompozīts. Tirgi, aktori un noturība ir atsevišķi stabi. Aktuālo slāni atveriet oficiālajā siltumkartē ocindex.net.',
     caveats:
-      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Augsts tirgus vērtējums nav augsts slepkavību rādītājs.',
+      'Tas ir ekspertu vērtējums, ne nodarījumu tautas skaitīšana. Definīcijas un pierādījumu blīvums atšķiras. Tirgus vērtējumu un slepkavību rādītāju skaita atsevišķi.',
     licenseNote:
-      'Foto: Philippe Alès, konteinerkuģis Havrā (CC BY-SA 3.0). Tā nav GI-TOC indeksa siltumkarte — tas slānis ir ocindex.net.',
+      'Foto: Philippe Alès, konteinerkuģis Havrā (Creative Commons Atsauces un tādu pašu nosacījumu licence, 3.0 versija). Indeksa siltumkarte ir ocindex.net.',
     imageAlt:
-      'Konteinerkuģis un celtņi Havrā. Šis ir foto, ne GI-TOC Globālā organizētās noziedzības indeksa siltumkarte.',
+      'Konteinerkuģis un celtņi Havrā. Attēlā ir osta, bet Globālā organizētās noziedzības indeksa siltumkarte ir publicēta atsevišķi.',
   },
   'corruption-perceptions-index': {
     title: 'Korupcijas uztveres indekss',
-    hook: 'Uztvertā publiskā sektora korupcija (0–100) no ekspertu un uzņēmēju aptaujām — pārvaldības risks, ne ielu noziedzības apjoms un ne slepkavības.',
+    cardMeta: 'Transparency International, Korupcijas uztveres indekss 2025.',
+    gridSource: {
+      label: 'Transparency International, Korupcijas uztveres indekss 2025',
+      url: 'https://www.transparency.org/en/cpi/2025',
+    },
+    hook: 'Uztvertā publiskā sektora korupcija skalā no 0 līdz 100, pēc ekspertu un uzņēmēju aptaujām: pārvaldības riska mērs.',
     description:
-      'Transparency International Korupcijas uztveres indekss (CPI) 2025 kārto valstis pēc uztvertās publiskā sektora korupcijas. Skala no 0 (ļoti korumpēts) līdz 100 (ļoti tīrs) apvieno ekspertu un uzņēmēju aptaujas. Our World in Data publicē rindu kā atklātu karti. Tas ir pārvaldības riska kompozīts, ne kukuļlietu skaits un ne vardarbības rādītājs.',
+      'Transparency International Korupcijas uztveres indekss 2025 kārto valstis pēc uztvertās publiskā sektora korupcijas. Skala no 0 (ļoti korumpēts) līdz 100 (ļoti tīrs) apvieno ekspertu un uzņēmēju aptaujas. Our World in Data publicē rindu kā atklātu karti. Tas ir pārvaldības riska kompozīts.',
     whyOnShelf:
-      'Uztvertā publiskā sektora korupcija ir cits sabiedriskā kaitējuma signāls nekā UNODC tīšās slepkavības. Nekad nesakausējiet šo kartīti ar slepkavību slāni.',
+      'Uztvertā publiskā sektora korupcija rāda pārvaldības risku pēc ekspertu un uzņēmēju aptaujām.',
     howToRead:
-      'Vērtējums ir uztveres kompozīts, ne notiesājošu spriedumu skaits un ne ielu noziedzība. Gada etiķete ir CPI izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena–divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir OWID.',
+      'Vērtējums ir uztveres kompozīts. Gada etiķete ir indeksa izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena–divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir Our World in Data.',
     caveats:
-      'Trūkstoša valsts nav «tīra». Mājsaimniecību kukuļu pieredze ir cita rinda. Nelasiet sīktēlu kā «viskorumpētāko» sarakstu. Tas nav slepkavību horoplēts.',
+      'Trūkstoša valsts paliek ārpus reitinga. Mājsaimniecību kukuļu pieredze ir cita rinda. Sīktēls rāda indeksa vērtējumus.',
     licenseNote:
-      'Mēs izvietojam apgrieztu Wikimedia Commons CPI 2025 valstu horoplētu (Cnscrptr un ConnerMiner, CC BY-SA 4.0) pēc Transparency International CPI 2025 datiem. Our World in Data publicē CPI kā atklātu karti (CC BY). Izdevums ir transparency.org/en/cpi/2025.',
+      'Mēs izvietojam apgrieztu Wikimedia Commons 2025. gada valstu karti (Cnscrptr un ConnerMiner, Creative Commons Atsauces un tādu pašu nosacījumu licence, 4.0 versija) pēc Transparency International datiem. Our World in Data publicē indeksu kā atklātu karti (Creative Commons Atsauces licence). Izdevums ir Transparency International 2025. gada lapā.',
     imageAlt:
-      'Pasaules horoplēts pēc Korupcijas uztveres indeksa 2025: vēsāks zaļš tur, kur uztvertā korupcija ir zemāka, siltāks sarkans tur, kur augstāka — ne slepkavību karte',
+      'Pasaules karte pēc Korupcijas uztveres indeksa 2025: vēsāks zaļš tur, kur uztvertā korupcija ir zemāka, siltāks sarkans tur, kur augstāka',
   },
   'trafficking-in-persons': {
     title: 'Cilvēku tirdzniecība',
-    hook: 'Konstatētie cilvēku tirdzniecības upuri un modeļi no UNODC Globālā ziņojuma (GLOTIP) — izmantošana un piespiešana, ne slepkavību rādītājs un ne vien GI-TOC tirgu kompozīts.',
+    cardMeta:
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, Globālais ziņojums par cilvēku tirdzniecību, 2024. gada ziņojums.',
+    gridSource: {
+      label: 'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības birojs, Globālais ziņojums par cilvēku tirdzniecību',
+      url: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
+    },
+    hook: 'Konstatētie cilvēku tirdzniecības upuri un modeļi Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja Globālajā ziņojumā: izmantošana un piespiešana.',
     description:
-      'UNODC Globālais ziņojums par cilvēku tirdzniecību (GLOTIP) 2024 ir astotais izdevums saskaņā ar ANO Konvencijas pret transnacionālo organizēto noziedzību Protokolu par cilvēku tirdzniecību un 2010. gada Globālo rīcības plānu. Tas ziņo par konstatētajiem upuriem, izmantošanas formām un modeļiem. Šī kartīte ved uz šo konstatēšanas pārskatu, ne uz pilnu cilvēku tirdzniecības tautas skaitīšanu.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja Globālais ziņojums par cilvēku tirdzniecību 2024 ir astotais izdevums saskaņā ar Apvienoto Nāciju Organizācijas Konvencijas pret transnacionālo organizēto noziedzību Protokolu par cilvēku tirdzniecību un 2010. gada Globālo rīcības plānu. Tas ziņo par konstatētajiem upuriem, izmantošanas formām un modeļiem. Šī kartīte ved uz šo konstatēšanas pārskatu.',
     whyOnShelf:
-      'Cilvēku tirdzniecība ir atsevišķa ICCS nodarījumu saime. Tā papildina OC indeksa cilvēku tirdzniecības tirgus vērtējumu ar UNODC statistiku par konstatētajiem upuriem. Tas nav slepkavību rādītājs un nav World Drug Report plūsmu karte.',
+      'Cilvēku tirdzniecība ir atsevišķa Starptautiskās noziegumu klasifikācijas statistikas vajadzībām nodarījumu saime. Tā papildina Globālā organizētās noziedzības indeksa cilvēku tirdzniecības tirgus vērtējumu ar Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja statistiku par konstatētajiem upuriem.',
     howToRead:
-      'Skaitļi ir konstatētie upuri — pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Izmantošanas formas (seksuāla izmantošana, piespiedu darbs un citas) nav slepkavību rādītājs. Tabulas ir GLOTIP un UNODC datu portālā.',
+      'Skaitļi ir konstatētie upuri: pārklājums atkarīgs no policijas, definīcijām un piekļuves. Zems skaits var nozīmēt mazāk konstatējumu, ne mazāk upuru. Ziņojums šķir izmantošanas formas, tostarp seksuālu izmantošanu un piespiedu darbu. Tabulas ir ziņojumā un Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja datu portālā.',
     caveats:
       'Konstatēšana nav tautas skaitīšana. Pārrobežu plūsmas ziņojumā ir konstatēti modeļi, ne pilns maršrutu inventārs.',
     licenseNote:
-      'Foto: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Kristus Pestītājs izgaismots zilā pret cilvēku tirdzniecību, 2014. gada 28. jūlijs. Tā nav UNODC GLOTIP figūra.',
+      'Foto: Vladimir Platonow / Agência Brasil (Creative Commons Atsauces licence, 3.0 versija, Brazīlija). Kristus Pestītājs izgaismots zilā pret cilvēku tirdzniecību, 2014. gada 28. jūlijs.',
     imageAlt:
-      'Kristus Pestītājs Riodežaneiro, izgaismots zilā pret cilvēku tirdzniecību. Šis ir foto, ne UNODC GLOTIP ziņojuma figūra.',
+      'Kristus Pestītājs Riodežaneiro, izgaismots zilā pret cilvēku tirdzniecību.',
   },
   'air-quality-pm25': {
     title: 'Sīko daļiņu gaisa piesārņojums (PM2.5)',
@@ -625,5 +658,73 @@ export const lv: Record<string, MapCopy> = {
       'Raksts ir Nature Communications. Rastri ir Forest Landscape Integrity lejupielādes lapā. Priekšskats ir Fix Planet integritātes joslu shēma, ne autoru rastrs. Citē Grantham et al. 2020.',
     imageAlt:
       'Pasaules karte ar meža integritātes skalu: tumši zaļi attāli masīvi, zelta vidus un oranžs stipri pārveidots mežs — ne vainagu zuduma datums',
+  },
+  'world-population': {
+    title: 'Pasaules iedzīvotāju skaits',
+    cardMeta: 'ANO WPP 2024 · 8,16 miljardi (2024. gada 1. jūlijs)',
+    hook: 'Cik cilvēku dzīvo katrā valstī 2024. gada 1. jūlijā, pēc ANO vidējā varianta aplēsēm.',
+    description:
+      'Katra valsts ir krāsota pēc iedzīvotāju skaita 2024. gada 1. jūlijā ANO World Population Prospects 2024 vidējā variantā. Tās pašas tabulas pasaules kopskaits ir 8,16 miljardi. Lielākā valsts kopsumma ir Indijai, tad Ķīnai. Krāsa ir cilvēku skaita logaritmiskā skala: no aptuveni 16 tūkstošiem (zīmēto valstu 5. procentile) līdz 1,45 miljardiem Indijā.',
+    whyOnShelf:
+      'Viens ANO pārskatījums liek katras valsts kopsummu uz vienu datumu. Krāsa ir cilvēku skaits, nevis skaits uz kvadrātkilometru un ne nakts gaismas.',
+    howToRead:
+      'Tumšāks brūns ir lielāka valsts kopsumma. Skalā ir cilvēku skaits, logaritmiski. Pelēka zeme ir daudzstūris bez 2024. gada rindas. Ezeri un Kaspijas jūra paliek ūdens.',
+    caveats:
+      'Valsts kopsumma nav blīvuma režģis. Franču Gviāna, Gvadelupa, Martinika, Majota, Reinjona, Gibraltārs, Bonaire, Sinteistatiusa un Saba, kā arī Tokelau ir tabulā, bet šajā Natural Earth 1:50m krasta līnijā tiem nav atsevišķa daudzstūra. 8,16 miljardi ir tabulas rindas „pasaule” kopskaits, nevis krāsoto valstu summa.',
+    licenseNote:
+      'ANO DESA, World Population Prospects 2024, demogrāfiskie rādītāji, vidējais variants, iedzīvotāju skaits 2024. gada 1. jūlijā. Robežas: Natural Earth 1:50m, publiskais īpašums.',
+    imageAlt:
+      'Equal Earth karte ar ANO WPP 2024 valstu iedzīvotāju skaitu 2024. gada 1. jūlijā: tumšāks brūns ir lielāka kopsumma, ar skaitļu skalu',
+  },
+  'cities-and-towns': {
+    title: 'Pilsētas un pilsētciemati',
+    cardMeta: 'GHS-SMOD R2023A · 2020. gada epoha · 0,02° tīkls',
+    hook: 'Pilsētu centri, pilsētciemati un lauku zeme GHSL apdzīvojuma tīklā 2020. gadam.',
+    description:
+      'Plate ir GHS-SMOD R2023A 2020. gada epoha, Global Human Settlement Layer apdzīvojuma klasifikācija: pēdējā šī izdevuma epoha, kas veidota no satelītu novērojumiem. 30 loka sekunžu klases ir saskaitītas ar vairākumu 0,02° šūnā. Sarkans ir pilsētas centrs (30. klase). Oranžs ir pilsētciemats vai pusblīvs sakopojums (21., 22. un 23. klase). Olīvzaļš ir lauku šūnas (11., 12. un 13. klase). Lielākā daļa sauszemes platības ir lauku klase.',
+    whyOnShelf:
+      'Tīkls rāda zemes apdzīvojuma klasi un ir zīmēts vienādi katrā valstī. Tas nav valsts pilsētu iedzīvotāju procents un nav cilvēku skaits.',
+    howToRead:
+      'Sarkans apzīmē pilsētu centrus, oranžs pilsētciematus un pusblīvas vietas, olīvzaļš lauku šūnas. Skaitļu skalas nav: trīs krāsas ir šīs klašu grupas. Ūdens apdzīvojuma tīklā un Natural Earth ezeri paliek nekrāsoti.',
+    caveats:
+      '30. klase ir pilsētas centrs GHSL klasifikācijā, nevis katra vieta, ko valsts sauc par pilsētu. Atsevišķi: 2025. un 2030. gada epohas tajā pašā izdevumā ir modeļa prognozes, un tās nav šī karte. Plate nerāda, cik cilvēku dzīvo katrā klasē.',
+    licenseNote:
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-SMOD R2023A, 2020. gada epoha, CC BY 4.0. Klases saskaitītas 0,02° tīklā. Robežas: Natural Earth.',
+    imageAlt:
+      'Equal Earth karte ar GHSL apdzīvojuma klasēm 2020. gadam: sarkani pilsētu centri, oranži pilsētciemati, olīvzaļa lauku zeme',
+  },
+  'built-up-surface': {
+    title: 'Apbūvētā virsma',
+    cardMeta: 'GHS-BUILT-S R2023A · 2020. gada epoha · šūnas procents',
+    hook: 'Cik lielu daļu no katras šūnas veido apbūvētā virsma 2020. gada GHSL tīklā.',
+    description:
+      'Plate summē GHS-BUILT-S R2023A apbūvēto virsmu 2020. gada epohai, pēdējai šī izdevuma epohai, kas veidota no satelītu novērojumiem. Kvadrātmetri no 30 loka sekunžu tīkla ir saskaitīti katrā 0,02° šūnā un dalīti ar šīs šūnas laukumu. Krāsa ir šis procents logaritmiskā skalā no 0,1 līdz aptuveni 24. Šūnas zem 0,1 procenta paliek zemes krāsā. Skalas augša ir 99,5. procentile šūnām, kurās ir kaut kāda apbūve.',
+    whyOnShelf:
+      'Apbūvētā virsma ir zeme zem ēkām. Tas nav cilvēku skaits un nav gaismas, kas redzamas naktī.',
+    howToRead:
+      'No dzeltena uz tumši sarkanu šūnas daļa ir lielāka. Skaitlis skalā ir 0,02° šūnas procents. Šūna var pārsniegt 0,1 procentu ar blīvu kvartālu vai ar retāku apbūvi.',
+    caveats:
+      'Vērtība ir apbūvētā virsma, dalīta ar šūnas laukumu, nevis stāvu platība torņos un ne juridiskā pilsētas robeža. Okeāns un ezeri nav krāsoti. Atsevišķi: 2025. un 2030. gada epohas tajā pašā izdevumā ir modeļa prognozes, un tās nav šī karte.',
+    licenseNote:
+      'Eiropas Komisijas Kopīgais pētniecības centrs, GHSL GHS-BUILT-S R2023A, 2020. gada epoha, CC BY 4.0. Apkopots 0,02° tīklā. Robežas: Natural Earth.',
+    imageAlt:
+      'Equal Earth karte ar apbūvētās virsmas procentu katrā 0,02° šūnā 2020. gadā, no dzeltena uz sarkanu, ar skaitļu skalu',
+  },
+  'population-growth': {
+    title: 'Iedzīvotāju skaita pieaugums',
+    cardMeta: 'ANO WPP 2024 · 2024. gada temps · procents gadā',
+    hook: 'Katras valsts iedzīvotāju skaita gada izmaiņu temps 2024. gadā, no tā paša ANO vidējā varianta.',
+    description:
+      'Katra valsts ir krāsota pēc 2024. gada iedzīvotāju skaita pieauguma tempa ANO World Population Prospects 2024 vidējā variantā, procentos gadā. Skala iet no aptuveni −1,7 līdz 3,4 un ir centrēta uz nulli. No zīmētajām valstīm 60 temps ir negatīvs. Temps virs 3 procentiem šajā tabulā ir arī Angolai (3,0), Kongo Demokrātiskajai Republikai (3,2), Nigērai (3,3), Centrālāfrikas Republikai (3,4) un Somālijai (3,4).',
+    whyOnShelf:
+      'Liels iedzīvotāju skaits var mainīties lēni. Šajā tabulā Ķīnas 2024. gada temps ir −0,2 procenti, bet vairākām mazākām valstīm tas ir virs 3 procentiem. Plate rāda tempu, nevis cilvēku skaitu.',
+    howToRead:
+      'Zils ir iedzīvotāju skaita samazinājums, bālais vidus ir tuvu nullei, sarkans ir pieaugums. Skalā ir procenti gadā. Temps apvieno dzimstību, mirstību un migrāciju. Tas nav fertilitāte pati par sevi.',
+    caveats:
+      'Skalas gali ir zīmēto valstu 2. un 98. procentile, tāpēc dažas ātrākas un lēnākas teritorijas dala galu krāsas. Tās pašas mazās teritorijas, kuru nav iedzīvotāju skaita platē, nav arī šeit. Šī nav karte gadam, kurā iedzīvotāju skaits sasniedza maksimumu.',
+    licenseNote:
+      'ANO DESA, World Population Prospects 2024, demogrāfiskie rādītāji, vidējais variants, 2024. gada iedzīvotāju skaita pieauguma temps. Robežas: Natural Earth 1:50m, publiskais īpašums.',
+    imageAlt:
+      'Equal Earth karte ar ANO 2024. gada iedzīvotāju skaita pieauguma tempu: zils ir samazinājums, sarkans ir pieaugums, ar skaitļu skalu',
   },
 };

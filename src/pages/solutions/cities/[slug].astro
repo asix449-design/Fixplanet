@@ -1,0 +1,15 @@
+---
+import { citiesEncyclopediaSlugs, isCitiesEncyclopediaSlug } from '../../../data/solutions-cities';
+import { getCitiesEncyclopediaBySlug, resolveLocale } from '../../../i18n';
+import SolutionCitiesDetailView from '../../../views/SolutionCitiesDetailView.astro';
+
+export function getStaticPaths() {
+  return citiesEncyclopediaSlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && isCitiesEncyclopediaSlug(slug) ? getCitiesEncyclopediaBySlug(locale, slug) : undefined;
+---
+
+{item && <SolutionCitiesDetailView item={item} />}

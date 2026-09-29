@@ -59,8 +59,19 @@ export type MapMeta = {
   detail?: string;
   /** Optional grid meta line. Defaults to sourceShort · year. */
   cardMeta?: string;
-  /** Optional clickable citations. First row is the grid Source link. */
+  /**
+   * Grid Source line when it must stay a product code. The detail Sources
+   * list still uses `sources`. When omitted, the first citation label is used.
+   */
+  gridSourceLabel?: string;
+  /** Optional clickable citations. First row is the grid Source link unless `gridSourceLabel` is set. */
   sources?: PrimarySource[];
+  /** Show the whole preview in the card frame. */
+  fit?: 'contain';
+  /** Matches the bitmap background so a contained thumbnail has no second frame. */
+  frameColor?: string;
+  previewWidth?: number;
+  previewHeight?: number;
 };
 
 export type MapCopy = {
@@ -75,6 +86,17 @@ export type MapCopy = {
   whyOnShelf?: string;
   /** Locale override of the grid meta line. English stays on MapMeta.cardMeta. */
   cardMeta?: string;
+  /** Figure caption under the detail image. */
+  caption?: string;
+  /** Localized title rendered in HTML, never baked into the bitmap. */
+  figureTitle?: string;
+  legend?: { title?: string; items: { swatch: string; label: string }[] }[];
+  /** Detail-page headings when this card does not use the shelf defaults. */
+  sectionHeads?: { what: string; why: string; how: string; limits: string };
+  /** Localized grid Source line. Non-localized sourceShort stays a short code. */
+  gridSource?: PrimarySource;
+  /** Locale override of the detail-page source titles. */
+  sources?: PrimarySource[];
 };
 
 export type MapEntry = MapMeta & MapCopy;
@@ -328,6 +350,88 @@ export const mapMeta: MapMeta[] = [
       },
       { label: 'UNODC data portal', url: 'https://data.unodc.org/' },
     ],
+  },
+  {
+    slug: 'prison-population-rate',
+    category: 'crime',
+    year: '2026',
+    sourceShort: 'WPB',
+    sourceOrg: 'Institute for Crime & Justice Policy Research, World Prison Brief',
+    sourceUrl: 'https://www.prisonstudies.org/highest-to-lowest/prison_population_rate',
+    openMapUrl: 'https://ourworldindata.org/grapher/prison-population-rate',
+    preview: 'prison-population-rate.jpg',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#ffffff',
+    previewWidth: 812,
+    previewHeight: 408,
+    cardMeta: 'World Prison Brief data, prisoners per 100,000 people.',
+  },
+  {
+    slug: 'drug-trafficking-flows',
+    category: 'crime',
+    year: '2026',
+    sourceShort: 'UNODC',
+    sourceOrg: 'United Nations Office on Drugs and Crime',
+    sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
+    openMapUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
+    preview: 'drug-trafficking-flows.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#f7f4ee',
+    previewWidth: 1600,
+    previewHeight: 900,
+    cardMeta:
+      'UN Office on Drugs and Crime, World Drug Report 2026, route maps based on reported seizures.',
+  },
+  {
+    slug: 'modern-slavery',
+    category: 'crime',
+    year: '2021',
+    sourceShort: 'Walk Free',
+    sourceOrg: 'Walk Free; International Labour Organization; International Organization for Migration',
+    sourceUrl: 'https://www.walkfree.org/global-slavery-index/',
+    openMapUrl: 'https://www.walkfree.org/global-slavery-index/map/',
+    preview: 'modern-slavery.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#f7f4ee',
+    previewWidth: 1600,
+    previewHeight: 1180,
+    cardMeta:
+      'Walk Free Global Slavery Index 2023 and the 2021 global estimates by the International Labour Organization, Walk Free and the International Organization for Migration.',
+  },
+  {
+    slug: 'basel-aml-index',
+    category: 'crime',
+    year: '2025',
+    sourceShort: 'Basel',
+    sourceOrg: 'Basel Institute on Governance',
+    sourceUrl: 'https://index.baselgovernance.org/',
+    openMapUrl: 'https://index.baselgovernance.org/',
+    preview: 'basel-aml-index.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#d5e2ea',
+    previewWidth: 1800,
+    previewHeight: 920,
+    cardMeta: 'Basel Anti-Money Laundering (AML) Index 2025, Public Edition, 177 jurisdictions.',
+  },
+  {
+    slug: 'rule-of-law-index',
+    category: 'crime',
+    year: '2025',
+    sourceShort: 'WJP',
+    sourceOrg: 'World Justice Project',
+    sourceUrl: 'https://worldjusticeproject.org/news/wjp-rule-law-index-2025-global-press-release',
+    openMapUrl: 'https://worldjusticeproject.org/index/',
+    preview: 'rule-of-law-index.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#d5e2ea',
+    previewWidth: 1800,
+    previewHeight: 920,
+    cardMeta: 'World Justice Project, Rule of Law Index 2025, 143 countries and jurisdictions.',
   },
   {
     slug: 'air-quality-pm25',
@@ -774,6 +878,112 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'photo',
   },
   {
+    slug: 'world-population',
+    category: 'population',
+    year: '2024',
+    sourceShort: 'UN WPP 2024',
+    sourceOrg: 'UN DESA Population Division',
+    sourceUrl: 'https://population.un.org/wpp/',
+    openMapUrl: 'https://population.un.org/wpp/',
+    preview: 'world-population.jpg',
+    detail: 'detail/world-population.webp',
+    previewKind: 'data',
+    cardMeta: 'UN WPP 2024 · 8.16 billion (1 July 2024)',
+    gridSourceLabel: 'UN WPP 2024',
+    sources: [
+      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
+      {
+        label: 'UN DESA — World Population Prospects 2024',
+        url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
+      },
+      {
+        label: 'UN DESA — WPP 2024 demographic indicators, medium variant',
+        url: 'https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz',
+      },
+    ],
+  },
+  {
+    slug: 'cities-and-towns',
+    category: 'population',
+    year: '2020',
+    sourceShort: 'GHS-SMOD R2023A',
+    sourceOrg: 'European Commission JRC GHSL',
+    sourceUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
+    openMapUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
+    preview: 'cities-and-towns.jpg',
+    detail: 'detail/cities-and-towns.webp',
+    previewKind: 'data',
+    cardMeta: 'GHS-SMOD R2023A · 2020 epoch · 0.02° grid',
+    gridSourceLabel: 'GHS-SMOD R2023A',
+    sources: [
+      {
+        label: 'European Commission JRC — GHSL GHS-SMOD R2023A, 2020 epoch',
+        url: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
+      },
+      {
+        label: 'European Commission JRC — Global Human Settlement Layer',
+        url: 'https://human-settlement.emergency.copernicus.eu/',
+      },
+      {
+        label: 'European Commission JRC — GHSL datasets',
+        url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
+      },
+    ],
+  },
+  {
+    slug: 'built-up-surface',
+    category: 'population',
+    year: '2020',
+    sourceShort: 'GHS-BUILT-S R2023A',
+    sourceOrg: 'European Commission JRC GHSL',
+    sourceUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
+    openMapUrl: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
+    preview: 'built-up-surface.jpg',
+    detail: 'detail/built-up-surface.webp',
+    previewKind: 'data',
+    cardMeta: 'GHS-BUILT-S R2023A · 2020 epoch · percent of cell',
+    gridSourceLabel: 'GHS-BUILT-S R2023A',
+    sources: [
+      {
+        label: 'European Commission JRC — GHSL GHS-BUILT-S R2023A, 2020 epoch',
+        url: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
+      },
+      {
+        label: 'European Commission JRC — Global Human Settlement Layer',
+        url: 'https://human-settlement.emergency.copernicus.eu/',
+      },
+      {
+        label: 'European Commission JRC — GHSL datasets',
+        url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
+      },
+    ],
+  },
+  {
+    slug: 'population-growth',
+    category: 'population',
+    year: '2024',
+    sourceShort: 'UN WPP 2024',
+    sourceOrg: 'UN DESA Population Division',
+    sourceUrl: 'https://population.un.org/wpp/',
+    openMapUrl: 'https://population.un.org/wpp/',
+    preview: 'population-growth.jpg',
+    detail: 'detail/population-growth.webp',
+    previewKind: 'data',
+    cardMeta: 'UN WPP 2024 · 2024 rate · percent per year',
+    gridSourceLabel: 'UN WPP 2024',
+    sources: [
+      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
+      {
+        label: 'UN DESA — World Population Prospects 2024',
+        url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
+      },
+      {
+        label: 'UN DESA — WPP 2024 demographic indicators, medium variant',
+        url: 'https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz',
+      },
+    ],
+  },
+  {
     slug: 'global-river-basins',
     category: 'water',
     year: '2013',
@@ -1054,8 +1264,10 @@ export function mapsByCategory(category: MapCategory): MapMeta[] {
   return mapMeta.filter((item) => item.category === category);
 }
 
-export function mapPrimarySource(item: MapMeta): PrimarySource | undefined {
-  return item.sources?.[0];
+export function mapPrimarySource(
+  item: MapMeta & { gridSource?: PrimarySource },
+): PrimarySource | undefined {
+  return item.gridSource ?? item.sources?.[0];
 }
 
 export function mapCategoryPath(category: MapCategory): string {

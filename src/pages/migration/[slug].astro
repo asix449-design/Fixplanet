@@ -5,15 +5,20 @@ import {
   migrationPathRedirects,
   migrationShelfKeys,
 } from '../../data/migration';
+import { isRemittanceId, remittanceIds } from '../../data/remittances';
 import { getMigrationBySlug, localizePath, resolveLocale } from '../../i18n';
 import MigrationDetailView from '../../views/MigrationDetailView.astro';
 import MigrationView from '../../views/MigrationView.astro';
+import RemittanceDetailView from '../../views/RemittanceDetailView.astro';
+import RemittancesView from '../../views/RemittancesView.astro';
 
 export function getStaticPaths() {
   return [
     ...migrationShelfKeys.map((slug) => ({ params: { slug } })),
     ...migrationEntryMeta.map((item) => ({ params: { slug: item.slug } })),
     ...Object.keys(migrationPathRedirects).map((slug) => ({ params: { slug } })),
+    { params: { slug: 'remittances' } },
+    ...remittanceIds.map((slug) => ({ params: { slug } })),
   ];
 }
 
@@ -26,7 +31,11 @@ const item = slug && !isMigrationShelf(slug) ? getMigrationBySlug(locale, slug) 
 ---
 
 {
-  isMigrationShelf(slug) ? (
+  slug === 'remittances' ? (
+    <RemittancesView />
+  ) : isRemittanceId(slug) ? (
+    <RemittanceDetailView slug={slug} />
+  ) : isMigrationShelf(slug) ? (
     <MigrationView shelf={slug} />
   ) : (
     item && <MigrationDetailView item={item} />

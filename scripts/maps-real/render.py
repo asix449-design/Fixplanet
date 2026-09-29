@@ -83,8 +83,8 @@ def projection_limits() -> tuple[float, float, float]:
     return scale, DETAIL_W / (2 * scale), DETAIL_H / (2 * scale)
 
 
-def load_countries() -> list[dict]:
-    geo = json.loads(NE_PATH.read_text())
+def load_countries(path: Path | None = None) -> list[dict]:
+    geo = json.loads((path or NE_PATH).read_text())
     fwd = Transformer.from_crs("EPSG:4326", "EPSG:8857", always_xy=True)
     out = []
     for feature in geo["features"]:

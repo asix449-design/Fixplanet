@@ -105,65 +105,99 @@ export const pl: Record<string, MapCopy> = {
   },
   'homicide-rates': {
     title: 'Wskaźniki umyślnych zabójstw',
-    hook: 'Porównywalne wskaźniki UNODC umyślnych zabójstw — jedna miara przemocy, nie „cała przestępczość”.',
+    cardMeta:
+      'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości oraz Our World in Data, 2019–2023.',
+    gridSource: {
+      label: 'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości, badanie umyślnych zabójstw',
+      url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
+    },
+    hook: 'Porównywalne wskaźniki umyślnych zabójstw Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości, jedna miara przemocy.',
     description:
-      'Biuro NZ ds. Narkotyków i Przestępczości zbiera statystyki umyślnych zabójstw ze źródeł wymiaru sprawiedliwości i zdrowia publicznego. Our World in Data robi z porównywalnego szeregu mapę i wykres. Zabójstwo jest spójniej definiowane niż rozbój czy „przestępczość” w ogóle.',
+      'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości zbiera statystyki umyślnych zabójstw ze źródeł wymiaru sprawiedliwości i zdrowia publicznego. Our World in Data robi z porównywalnego szeregu mapę i wykres. Zabójstwo jest spójniej definiowane niż rozbój czy przestępczość w ogóle.',
     howToRead:
       'Zwykła jednostka to umyślne zabójstwa na 100 000 osób rocznie. Wysokie wskaźniki często skupiają się w miastach lub korytarzach, nie równomiernie w kraju. Porównuj zbliżone lata; ewidencja się zmienia.',
     caveats:
-      'Niedorejestrowanie, definicje prawne i braki lat różnią się. Zgony w konflikcie to inny szereg (zob. UCDP). Nie układaj listy „najgroźniejszych krajów” z miniaturki. Nie rysujemy tu nieźródłowego choroplethu.',
+      'Niedorejestrowanie, definicje prawne i braki lat różnią się. Zgony w konflikcie liczy osobno Uppsalski program danych o konfliktach. Miniatura pokazuje wskaźniki krajów.',
     licenseNote:
-      'Produkty statystyczne UNODC zwykle można używać z przypisaniem. Wykresy OWID zwykle są CC BY. Otwórz ich mapę, żeby zobaczyć aktualną warstwę.',
+      'Produkty statystyczne Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości zwykle można używać z przypisaniem. Wykresy Our World in Data zwykle są na licencji Creative Commons – uznanie autorstwa. Otwórz ich mapę, żeby zobaczyć aktualną warstwę.',
     imageAlt:
-      'Choropleth Our World in Data wskaźników zabójstw: żółto-pomarańczowy ląd, ciemniejsza czerwień w części Ameryki Łacińskiej i południowej Afryki',
+      'Mapa Our World in Data wskaźników zabójstw: żółto-pomarańczowy ląd, ciemniejsza czerwień w części Ameryki Łacińskiej i południowej Afryki',
+    sources: [
+      {
+        label:
+          'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości: badanie umyślnych zabójstw (Global Study on Homicide)',
+        url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
+      },
+      {
+        label: 'Our World in Data: wskaźniki umyślnych zabójstw (Homicides)',
+        url: 'https://ourworldindata.org/homicides',
+      },
+    ],
   },
   'organized-crime-index': {
     title: 'Globalny indeks przestępczości zorganizowanej',
-    hook: 'Oceny krajów dla rynków przestępczych, aktorów i odporności — ekspercka mapa cieplna przestępczości zorganizowanej, nie druga warstwa umyślnych zabójstw.',
+    cardMeta:
+      'Globalna inicjatywa przeciwko transnarodowej przestępczości zorganizowanej, indeks 2025, ocena za 2024.',
+    gridSource: {
+      label: 'Globalna inicjatywa przeciwko transnarodowej przestępczości zorganizowanej, indeks 2025',
+      url: 'https://ocindex.net/2025/',
+    },
+    hook: 'Oceny krajów dla rynków przestępczych, aktorów i odporności: ekspercka mapa cieplna przestępczości zorganizowanej.',
     description:
-      'Global Initiative against Transnational Organized Crime (GI-TOC) ocenia 193 państwa członkowskie ONZ pod względem przestępczości — rynków i aktorów — oraz odporności. Publiczne narzędzie to ocindex.net. Edycja 2025 jest trzecia; rok oceny to 2024. Ta karta prowadzi do tego eksperckiego kompozytu, nie do policyjnego wskaźnika i nie do drugiej mapy zabójstw UNODC.',
+      'Globalna inicjatywa przeciwko transnarodowej przestępczości zorganizowanej ocenia 193 państwa członkowskie Organizacji Narodów Zjednoczonych pod względem przestępczości — rynków i aktorów — oraz odporności. Publiczne narzędzie to ocindex.net. Edycja 2025 jest trzecia; rok oceny to 2024. Ta karta prowadzi do tego eksperckiego kompozytu.',
     whyOnShelf:
-      'Przestępczość zorganizowana i odporność to inny obiekt niż wskaźniki umyślnych zabójstw. Nie włączajcie tego indeksu do karty zabójstw i nie czytajcie ciemnego kraju jako wysokiego wskaźnika zabójstw.',
+      'Przestępczość zorganizowana i odporność opisują rynki, aktorów i zdolność państwa do przeciwdziałania.',
     howToRead:
-      'Wynik kraju to kompozyt ekspercki, nie wskaźnik policyjny i nie liczba zabójstw UNODC. Rynki, aktorzy i odporność to osobne filary. Aktualną warstwę otwórzcie na oficjalnej mapie cieplnej ocindex.net.',
+      'Wynik kraju to kompozyt ekspercki. Rynki, aktorzy i odporność to osobne filary. Aktualną warstwę otwórzcie na oficjalnej mapie cieplnej ocindex.net.',
     caveats:
-      'To ocena ekspercka, nie spis przestępstw. Definicje i gęstość dowodów się różnią. Wysoki wynik rynku to nie wysoki wskaźnik zabójstw.',
+      'To ocena ekspercka, nie spis przestępstw. Definicje i gęstość dowodów się różnią. Wynik rynku i wskaźnik zabójstw liczy się osobno.',
     licenseNote:
-      'Zdjęcie: Philippe Alès, kontenerowiec w Hawrze (CC BY-SA 3.0). To nie mapa cieplna indeksu GI-TOC — ta warstwa jest na ocindex.net.',
+      'Zdjęcie: Philippe Alès, kontenerowiec w Hawrze (licencja Creative Commons – uznanie autorstwa i na tych samych warunkach, wersja 3.0). Mapa cieplna indeksu jest na ocindex.net.',
     imageAlt:
-      'Kontenerowiec i suwnice w Hawrze. To zdjęcie, nie mapa cieplna Globalnego indeksu przestępczości zorganizowanej GI-TOC.',
+      'Kontenerowiec i suwnice w Hawrze. Na zdjęciu jest port, a mapa cieplna Globalnego indeksu przestępczości zorganizowanej jest opublikowana osobno.',
   },
   'corruption-perceptions-index': {
     title: 'Indeks percepcji korupcji',
-    hook: 'Postrzegana korupcja w sektorze publicznym (0–100) z ankiet ekspertów i biznesu — ryzyko rządzenia, nie wolumen przestępczości ulicznej i nie zabójstwa.',
+    cardMeta: 'Transparency International, Indeks percepcji korupcji 2025.',
+    gridSource: {
+      label: 'Transparency International, Indeks percepcji korupcji 2025',
+      url: 'https://www.transparency.org/en/cpi/2025',
+    },
+    hook: 'Postrzegana korupcja w sektorze publicznym w skali od 0 do 100, z ankiet ekspertów i biznesu: miara ryzyka rządzenia.',
     description:
-      'Indeks percepcji korupcji (CPI) 2025 Transparency International porządkuje kraje według postrzeganej korupcji w sektorze publicznym. Skala od 0 (wysoce skorumpowany) do 100 (bardzo czysty) łączy ankiety ekspertów i biznesu. Our World in Data publikuje szereg jako otwartą mapę. To kompozyt ryzyka rządzenia, nie liczba spraw o łapówki i nie wskaźnik przemocy.',
+      'Indeks percepcji korupcji 2025 organizacji Transparency International porządkuje kraje według postrzeganej korupcji w sektorze publicznym. Skala od 0 (wysoce skorumpowany) do 100 (bardzo czysty) łączy ankiety ekspertów i biznesu. Our World in Data publikuje szereg jako otwartą mapę. To kompozyt ryzyka rządzenia.',
     whyOnShelf:
-      'Postrzegana korupcja w sektorze publicznym to inny sygnał szkody publicznej niż umyślne zabójstwa UNODC. Nigdy nie łączcie tej karty z warstwą zabójstw.',
+      'Postrzegana korupcja w sektorze publicznym pokazuje ryzyko rządzenia według ankiet ekspertów i biznesu.',
     howToRead:
-      'Wynik to kompozyt percepcji, nie liczba wyroków i nie przestępczość uliczna. Etykieta roku to rok edycji CPI (tu 2025), niekoniecznie rok kalendarzowy każdej ankiety. Wyżej znaczy czyściej. Porównujcie bliskie edycje; zmiana o jeden–dwa punkty bywa szumem. Oficjalne wyniki są na stronie Transparency International; interaktywna mapa u OWID.',
+      'Wynik to kompozyt percepcji. Etykieta roku to rok edycji indeksu (tu 2025), niekoniecznie rok kalendarzowy każdej ankiety. Wyżej znaczy czyściej. Porównujcie bliskie edycje; zmiana o jeden–dwa punkty bywa szumem. Oficjalne wyniki są na stronie Transparency International; interaktywna mapa jest u Our World in Data.',
     caveats:
-      'Brak kraju nie znaczy „czysty”. Doświadczenie łapówek w gospodarstwach to inny szereg. Nie czytajcie miniatury jako listy „najbardziej skorumpowanych”. To nie choropleth zabójstw.',
+      'Brak kraju oznacza, że pozostaje on poza rankingiem. Doświadczenie łapówek w gospodarstwach to inny szereg. Miniatura pokazuje wyniki indeksu.',
     licenseNote:
-      'Hostujemy przycięty choropleth krajowy CPI 2025 z Wikimedia Commons (Cnscrptr i ConnerMiner, CC BY-SA 4.0) na podstawie danych Transparency International CPI 2025. Our World in Data publikuje CPI jako otwartą mapę (CC BY). Edycja jest na transparency.org/en/cpi/2025.',
+      'Hostujemy przyciętą mapę krajową indeksu 2025 z Wikimedia Commons (Cnscrptr i ConnerMiner, licencja Creative Commons – uznanie autorstwa i na tych samych warunkach, wersja 4.0) na podstawie danych Transparency International. Our World in Data publikuje indeks jako otwartą mapę (licencja Creative Commons – uznanie autorstwa). Edycja jest na stronie Transparency International za 2025 rok.',
     imageAlt:
-      'Choropleth świata według Indeksu percepcji korupcji 2025: chłodniejsza zieleń tam, gdzie postrzegana korupcja jest niższa, cieplejsza czerwień tam, gdzie wyższa — nie mapa zabójstw',
+      'Mapa świata według Indeksu percepcji korupcji 2025: chłodniejsza zieleń tam, gdzie postrzegana korupcja jest niższa, cieplejsza czerwień tam, gdzie wyższa',
   },
   'trafficking-in-persons': {
     title: 'Handel ludźmi',
-    hook: 'Wykryte ofiary handlu ludźmi i wzory z Globalnego raportu UNODC (GLOTIP) — wyzysk i przymus, nie wskaźnik zabójstw i nie sam kompozyt rynków GI-TOC.',
+    cardMeta:
+      'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości, Globalny raport o handlu ludźmi, raport 2024.',
+    gridSource: {
+      label: 'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości, Globalny raport o handlu ludźmi',
+      url: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
+    },
+    hook: 'Wykryte ofiary handlu ludźmi i wzory z Globalnego raportu Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości: wyzysk i przymus.',
     description:
-      'Globalny raport UNODC o handlu ludźmi (GLOTIP) 2024 to ósma edycja na podstawie Protokołu o handlu ludźmi do Konwencji ONZ przeciwko transnarodowej przestępczości zorganizowanej i Globalnego planu działania z 2010 r. Podaje wykryte ofiary, formy wyzysku i wzory. Ta karta prowadzi do tej sprawozdawczości o wykryciu, nie do pełnego spisu handlu ludźmi.',
+      'Globalny raport Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości o handlu ludźmi z 2024 roku to ósma edycja na podstawie Protokołu o handlu ludźmi do Konwencji Narodów Zjednoczonych przeciwko transnarodowej przestępczości zorganizowanej i Globalnego planu działania z 2010 roku. Podaje wykryte ofiary, formy wyzysku i wzory. Ta karta prowadzi do tej sprawozdawczości o wykrytych przypadkach.',
     whyOnShelf:
-      'Handel ludźmi to odrębna rodzina czynów ICCS. Uzupełnia wynik rynku handlu ludźmi w indeksie GI-TOC statystyką UNODC o wykrytych ofiarach. To nie wskaźnik zabójstw i nie mapa przepływów World Drug Report.',
+      'Handel ludźmi to odrębna rodzina czynów Międzynarodowej klasyfikacji przestępstw do celów statystycznych. Uzupełnia wynik rynku handlu ludźmi w Globalnym indeksie przestępczości zorganizowanej statystyką Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości o wykrytych ofiarach.',
     howToRead:
-      'Liczby to wykryte ofiary — pokrycie zależy od policji, definicji i dostępu. Niski wynik może znaczyć mniej wykryć, nie mniej ofiar. Formy wyzysku (seksualny, praca przymusowa i inne) to nie wskaźnik zabójstw. Tabele są w GLOTIP i na portalu danych UNODC.',
+      'Liczby to wykryte ofiary: pokrycie zależy od policji, definicji i dostępu. Niski wynik może znaczyć mniej wykryć, nie mniej ofiar. Raport rozróżnia formy wyzysku, w tym wyzysk seksualny i pracę przymusową. Tabele są w raporcie i na portalu danych Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości.',
     caveats:
       'Wykrycie to nie spis. Przepływy transgraniczne w raporcie to wykryte wzory, nie pełny inwentarz szlaków.',
     licenseNote:
-      'Zdjęcie: Vladimir Platonow / Agência Brasil (CC BY 3.0 BR). Chrystus Odkupiciel podświetlony na niebiesko przeciw handlowi ludźmi, 28 lipca 2014. To nie figura raportu GLOTIP UNODC.',
+      'Zdjęcie: Vladimir Platonow / Agência Brasil (licencja Creative Commons – uznanie autorstwa, wersja 3.0, Brazylia). Chrystus Odkupiciel podświetlony na niebiesko przeciw handlowi ludźmi, 28 lipca 2014.',
     imageAlt:
-      'Chrystus Odkupiciel w Rio de Janeiro podświetlony na niebiesko przeciw handlowi ludźmi. To zdjęcie, nie figura raportu GLOTIP UNODC.',
+      'Chrystus Odkupiciel w Rio de Janeiro podświetlony na niebiesko przeciw handlowi ludźmi.',
   },
   'air-quality-pm25': {
     title: 'Zanieczyszczenie pyłem PM2.5',
@@ -625,5 +659,73 @@ export const pl: Record<string, MapCopy> = {
       'Artykuł jest w Nature Communications. Rastry są na stronie pobierania Forest Landscape Integrity. Podgląd to schemat Fix Planet pasm integralności, nie raster autorów. Cytuj Grantham et al. 2020.',
     imageAlt:
       'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las — nie data utraty koron',
+  },
+  'world-population': {
+    title: 'Ludność świata',
+    cardMeta: 'ONZ WPP 2024 · 8,16 mld (1 lipca 2024)',
+    hook: 'Ilu ludzi mieszka w każdym kraju 1 lipca 2024 r., według średniego wariantu szacunków ONZ.',
+    description:
+      'Każdy kraj ma kolor według liczby ludności 1 lipca 2024 r. w średnim wariancie World Population Prospects 2024 (DESA ONZ). Suma światowa w tej samej tabeli to 8,16 mld. Największa suma krajowa przypada Indiom, potem Chinom. Kolor to skala logarytmiczna liczby ludzi: od około 16 tysięcy (5. percentyl narysowanych krajów) do 1,45 mld w Indiach.',
+    whyOnShelf:
+      'Jedna rewizja ONZ stawia sumę każdego kraju na tę samą datę. Kolor to ilu ludzi, a nie ilu na kilometr kwadratowy i nie światła nocne.',
+    howToRead:
+      'Ciemniejszy brąz to większa suma krajowa. Na skali jest liczba ludzi, logarytmicznie. Szary ląd nie ma wiersza za 2024 r. dopasowanego do tego wielokąta. Jeziora i Morze Kaspijskie zostają wodą.',
+    caveats:
+      'Suma krajowa to nie siatka gęstości. Gujana Francuska, Gwadelupa, Martynika, Majotta, Reunion, Gibraltar, Bonaire, Sint Eustatius i Saba oraz Tokelau są w tabeli, ale na tej linii brzegowej Natural Earth 1:50m nie mają osobnego wielokąta. 8,16 mld to wiersz „świat” w tabeli, a nie suma pokolorowanych krajów.',
+    licenseNote:
+      'DESA ONZ, World Population Prospects 2024, wskaźniki demograficzne, wariant średni, ludność 1 lipca 2024 r. Granice: Natural Earth 1:50m, domena publiczna.',
+    imageAlt:
+      'Mapa Equal Earth liczby ludności krajów 1 lipca 2024 r. według WPP 2024: ciemniejszy brąz to większa suma, ze skalą liczb',
+  },
+  'cities-and-towns': {
+    title: 'Miasta i miasteczka',
+    cardMeta: 'GHS-SMOD R2023A · epoka 2020 · siatka 0,02°',
+    hook: 'Ośrodki miejskie, miasteczka i ląd wiejski na siatce osadnictwa GHSL dla 2020 r.',
+    description:
+      'Plansza to epoka 2020 warstwy GHS-SMOD R2023A, klasyfikacji osadnictwa Global Human Settlement Layer: ostatni krok tego wydania oparty na obserwacjach satelitarnych. Klasy siatki 30 sekund kątowych są liczone większością do komórki 0,02°. Czerwień to ośrodek miejski (klasa 30). Pomarańcz to miasteczko lub skupisko półgęste (klasy 21, 22 i 23). Oliwkowy to komórki wiejskie (klasy 11, 12 i 13). Większość powierzchni lądu to klasa wiejska.',
+    whyOnShelf:
+      'Siatka pokazuje klasę osadnictwa lądu i jest rysowana tak samo w każdym kraju. To nie krajowy odsetek ludności miejskiej i nie liczba ludzi.',
+    howToRead:
+      'Czerwień oznacza ośrodki miejskie, pomarańcz miasteczka i obszary półgęste, oliwkowy komórki wiejskie. Nie ma skali liczbowej: trzy kolory to te grupy klas. Woda w siatce osadnictwa i jeziora Natural Earth zostają niezamalowane.',
+    caveats:
+      'Klasa 30 to ośrodek miejski w klasyfikacji GHSL, a nie każde miejsce, które kraj nazywa miastem. Osobno: epoki 2025 i 2030 w tym samym wydaniu są projekcją modelu i nie są tą mapą. Plansza nie pokazuje, ilu ludzi mieszka w każdej klasie.',
+    licenseNote:
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-SMOD R2023A, epoka 2020, CC BY 4.0. Klasy policzone na siatce 0,02°. Granice: Natural Earth.',
+    imageAlt:
+      'Mapa Equal Earth klas osadnictwa GHSL na 2020 r.: czerwone ośrodki miejskie, pomarańczowe miasteczka, oliwkowy ląd wiejski',
+  },
+  'built-up-surface': {
+    title: 'Powierzchnia zabudowana',
+    cardMeta: 'GHS-BUILT-S R2023A · epoka 2020 · procent komórki',
+    hook: 'Jaką część każdej komórki stanowi powierzchnia zabudowana na siatce GHSL z 2020 r.',
+    description:
+      'Plansza sumuje powierzchnię zabudowaną GHS-BUILT-S R2023A dla epoki 2020, ostatniego kroku tego wydania opartego na obserwacjach satelitarnych. Metry kwadratowe z siatki 30 sekund kątowych są dodawane w każdej komórce 0,02° i dzielone przez pole tej komórki. Kolor to ten procent, na skali logarytmicznej od 0,1 do około 24. Komórki poniżej 0,1 procenta zostają kolorem lądu. Góra skali to 99,5. percentyl komórek, w których jest jakakolwiek zabudowa.',
+    whyOnShelf:
+      'Powierzchnia zabudowana to grunt pod budynkami. To nie liczba ludzi i nie światła widoczne w nocy.',
+    howToRead:
+      'Od żółci do głębokiej czerwieni udział komórki jest większy. Liczba na skali to procent komórki 0,02°. Komórka może przekroczyć 0,1 procenta gęstą dzielnicą albo rzadszą zabudową.',
+    caveats:
+      'Wartość to powierzchnia zabudowana podzielona przez pole komórki, a nie powierzchnia pięter w wieżowcach i nie prawna granica miasta. Ocean i jeziora nie są kolorowane. Osobno: epoki 2025 i 2030 w tym samym wydaniu są projekcją modelu i nie są tą mapą.',
+    licenseNote:
+      'Wspólne Centrum Badawcze Komisji Europejskiej, GHSL GHS-BUILT-S R2023A, epoka 2020, CC BY 4.0. Złożone w siatkę 0,02°. Granice: Natural Earth.',
+    imageAlt:
+      'Mapa Equal Earth procentu powierzchni zabudowanej w komórce 0,02° w 2020 r., od żółci do czerwieni, ze skalą liczb',
+  },
+  'population-growth': {
+    title: 'Wzrost ludności',
+    cardMeta: 'ONZ WPP 2024 · tempo 2024 · procent rocznie',
+    hook: 'Roczne tempo zmiany ludności każdego kraju w 2024 r., z tego samego średniego wariantu ONZ.',
+    description:
+      'Każdy kraj ma kolor według tempa wzrostu ludności w 2024 r. w średnim wariancie World Population Prospects 2024, w procentach na rok. Skala biegnie od około −1,7 do 3,4 i jest wyśrodkowana na zerze. Spośród narysowanych krajów 60 ma tempo ujemne. Tempo powyżej 3 procent w tej tabeli mają między innymi Angola (3,0), Demokratyczna Republika Konga (3,2), Niger (3,3), Republika Środkowoafrykańska (3,4) i Somalia (3,4).',
+    whyOnShelf:
+      'Duża liczba ludności może zmieniać się powoli. W tej tabeli tempo Chin w 2024 r. wynosi −0,2 procenta, a kilka mniejszych krajów jest powyżej 3 procent. Plansza pokazuje tempo, a nie liczbę ludzi.',
+    howToRead:
+      'Niebieski to spadek ludności, blady środek jest blisko zera, czerwień to wzrost. Na skali są procenty na rok. Tempo łączy urodzenia, zgony i migracje. To nie sama dzietność.',
+    caveats:
+      'Końce skali to 2. i 98. percentyl narysowanych krajów, więc kilka szybszych i wolniejszych obszarów dzieli skrajne kolory. Te same małe obszary, których nie ma na planszy ludności, nie ma i tutaj. To nie jest mapa roku, w którym ludność osiągnęła szczyt.',
+    licenseNote:
+      'DESA ONZ, World Population Prospects 2024, wskaźniki demograficzne, wariant średni, tempo wzrostu ludności w 2024 r. Granice: Natural Earth 1:50m, domena publiczna.',
+    imageAlt:
+      'Mapa Equal Earth tempa wzrostu ludności ONZ w 2024 r.: niebieski to spadek, czerwień to wzrost, ze skalą liczb',
   },
 };

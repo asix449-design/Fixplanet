@@ -129,7 +129,8 @@ const en = {
         'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
       forests: 'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working.',
       waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
-      cities: 'Cooler roofs, permeable streets, trees, and shared heat networks.',
+      cities:
+        'Cooler roofs, permeable streets, trees, and shared heat networks. Also here: how people move and the air they breathe, from bus rapid transit, walking and cycling networks and congestion charging to low-emission zones and electric buses.',
       materials: 'Cement, metals, timber, and recycled building materials already cutting embodied carbon.',
       oceans:
         'Catching plastic, restoring shores, fishing with less bycatch — plus protected areas, ship rules, and water-column farms.',
@@ -187,8 +188,9 @@ const en = {
     insectsLead:
       'Insects are most of animal life. This shelf is eleven named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.',
     domesticatesLead:
-      'Animals people keep — livestock, companions, and working species. These cards are the kept animals, not their wild relatives (wild boar, aurochs, and gray wolf live on other shelves). FAO’s Domestic Animal Diversity Information System (DAD-IS) tracks breeds worldwide.',
-    dadisSource: 'FAO DAD-IS — domestic animal diversity',
+      'Animals people keep — livestock, companions, and working species. The Food and Agriculture Organization of the United Nations tracks breeds worldwide in its Domestic Animal Diversity Information System. Also here: the goat, kept for meat, milk, hides and hair; the cat, kept as a companion and to control pests; the donkey, which carries loads and people; the duck, raised for meat, eggs and feathers; and the rabbit, raised for meat, fur and wool.',
+    dadisSource:
+      'Food and Agriculture Organization of the United Nations — Domestic Animal Diversity Information System',
     mapTitle: 'Where we went, and when',
     mapAria: 'World map of Homo sapiens dispersal with dated arrival steps',
     mapLead:
@@ -459,7 +461,8 @@ const ru: typeof en = {
         'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
       forests: 'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство.',
       waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
-      cities: 'Холодные крыши, проницаемые улицы, деревья и общие теплосети.',
+      cities:
+        'Холодные крыши, проницаемые улицы, деревья и общие теплосети. Здесь же рассказано, как люди передвигаются по городу и каким воздухом дышат: скоростной автобусный транспорт, сети для пешеходов и велосипедистов, плата за въезд в перегруженные зоны, зоны низких выбросов и электробусы.',
       materials: 'Цемент, металлы, древесина и вторичные стройматериалы — уже снижают встроенный углерод.',
       oceans:
         'Перехват пластика, восстановление берегов и лов с меньшим приловом — плюс охраняемые районы, правила для судов и фермы в толще воды.',
@@ -517,8 +520,9 @@ const ru: typeof en = {
     insectsLead:
       'Насекомые — большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.',
     domesticatesLead:
-      'Животные, которых держат люди: скот, компаньоны и рабочие виды. Эти карточки — о содержащихся животных, не об их диких родственниках (кабан, тур и серый волк живут на других полках). Информационная система ФАО DAD-IS ведёт учёт пород по всему миру.',
-    dadisSource: 'ФАО DAD-IS — разнообразие домашних животных',
+      'Животные, которых держат люди: скот, компаньоны и рабочие виды. Продовольственная и сельскохозяйственная организация ООН ведёт учёт пород по всему миру в информационной системе по разнообразию домашних животных. Здесь также: коза, которую держат ради мяса, молока, шкур и шерсти; кошка, домашний компаньон и защита от вредителей; осёл, который перевозит грузы и людей; утка, которую разводят ради мяса, яиц и пера; и кролик, которого разводят ради мяса, меха и шерсти.',
+    dadisSource:
+      'Продовольственная и сельскохозяйственная организация ООН — информационная система по разнообразию домашних животных',
     mapTitle: 'Куда мы ушли и когда',
     mapAria: 'Карта расселения Homo sapiens с датированными шагами',
     mapLead:
@@ -792,7 +796,8 @@ const pl: typeof en = {
         'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
       forests: 'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna.',
       waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
-      cities: 'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła.',
+      cities:
+        'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła. Znajdziesz tu też to, jak ludzie poruszają się po mieście i czym oddychają: szybki transport autobusowy, sieci piesze i rowerowe, opłaty kongestyjne, strefy niskiej emisji i autobusy elektryczne.',
       materials: 'Cement, metale, drewno i wtórne materiały budowlane — już tną wbudowany węgiel.',
       oceans:
         'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem — oraz obszary chronione, reguły dla statków i hodowle w toni.',
@@ -850,8 +855,9 @@ const pl: typeof en = {
     insectsLead:
       'Owady to większość życia zwierzęcego. Ta półka to jedenaście nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, dwa trzmiele, grabarz, dwa europejskie chrząszcze martwego drewna, ważka wapiennych mokradeł, trzyszcz słonych mokradeł i wetapunga na wyspach bez drapieżników.',
     domesticatesLead:
-      'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Te karty dotyczą zwierząt trzymanych, nie ich dzikich krewnych (dzik, tur i wilk szary są na innych półkach). System FAO DAD-IS śledzi rasy na świecie.',
-    dadisSource: 'FAO DAD-IS — różnorodność zwierząt hodowlanych',
+      'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa śledzi rasy na świecie w Systemie Informacji o Różnorodności Zwierząt Domowych. Znajdziesz tu także kozę, hodowaną dla mięsa, mleka, skór i włosia; kota, domowego towarzysza i obrońcę przed szkodnikami; osła, który nosi ładunki i ludzi; kaczkę, hodowaną dla mięsa, jaj i pierza; oraz królika, hodowanego dla mięsa, futra i wełny.',
+    dadisSource:
+      'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa — System Informacji o Różnorodności Zwierząt Domowych',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi krokami',
     mapLead:
@@ -1125,7 +1131,8 @@ const lv: typeof en = {
         'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
       forests: 'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse.',
       waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
-      cities: 'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli.',
+      cities:
+        'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli. Šeit arī par to, kā cilvēki pārvietojas pa pilsētu un kādu gaisu elpo: ātrais autobusu transports, gājēju un riteņbraucēju tīkli, maksa par iebraukšanu sastrēgumu zonās, zemas emisijas zonas un elektroautobusi.',
       materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli — jau samazina ietverto oglekli.',
       oceans:
         'Plastmasas uztveršana, krastu atjaunošana un zveja ar mazāku piezveju — plus aizsargājamās teritorijas, kuģu noteikumi un audzes ūdens stabā.',
@@ -1183,8 +1190,9 @@ const lv: typeof en = {
     insectsLead:
       'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir vienpadsmit nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, divas kamenes, maitas vabole, divas Eiropas mirušās koksnes vaboles, kaļķaino avoksnāju spāre, sāļo mitrāju smilšvabole un vetapunga plēsēju brīvās salās.',
     domesticatesLead:
-      'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Šīs kartītes ir par turētajiem dzīvniekiem, ne par savvaļas radiniekiem (mežacūka, tauts un pelēkais vilks ir citos plauktos). FAO DAD-IS uzskaita šķirnes pasaulē.',
-    dadisSource: 'FAO DAD-IS — mājlopu daudzveidība',
+      'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija uzskaita šķirnes pasaulē Mājas dzīvnieku daudzveidības informācijas sistēmā. Šeit arī kaza, ko tur gaļai, pienam, ādām un vilnai; kaķis, mājas pavadonis un kaitēkļu apkarotājs; ēzelis, kas nes kravas un cilvēkus; pīle, ko audzē gaļai, olām un spalvām; un trusis, ko audzē gaļai, kažokādām un vilnai.',
+    dadisSource:
+      'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija — Mājas dzīvnieku daudzveidības informācijas sistēma',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem soļiem',
     mapLead:

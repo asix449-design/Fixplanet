@@ -15,7 +15,9 @@ python3 scripts/maps-real/render.py minerals
 python3 scripts/maps-real/aggregate_tiles.py gmw hansen
 python3 scripts/maps-real/render_pass2.py sea-level heat ice ohc ph hansen gmw burned
 python3 scripts/maps-real/render_vectors.py gez aqueduct ifl
+python3 scripts/maps-real/render_population.py
 python3 scripts/maps-real/render_forest_pack.py lesiv carbon peat render
+python3 scripts/maps-real/render_remittances.py
 ```
 
 `render_pass2.py`, `render_vectors.py`, and `render_forest_pack.py` also need `rasterio`. The forest pack reads PEATMAP shapefiles with `fiona`. Raw downloads stay in `scripts/maps-real/raw/`.
@@ -41,6 +43,11 @@ Downloads are stored in `scripts/maps-real/raw/` and are listed in `.gitignore`.
 | Output | Dataset | URL | Licence |
 | --- | --- | --- | --- |
 | Natural Earth 1:10m countries (boundaries for every choropleth and the land underlay) | `ne_10m_admin_0_countries.geojson` | https://github.com/nvkelso/natural-earth-vector | Public domain |
+| Natural Earth 1:50m countries (world population and population growth only) | `ne_50m_admin_0_countries.geojson` | https://github.com/nvkelso/natural-earth-vector | Public domain |
+| `world-population` | UN WPP 2024 medium variant, population on 1 July 2024, people, log scale | https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz | UN DESA |
+| `population-growth` | UN WPP 2024 medium variant, 2024 population growth rate, percent per year, diverging scale centered at zero | same CSV | UN DESA |
+| `cities-and-towns` | GHSL GHS-SMOD R2023A, 2020 epoch (latest satellite-based epoch; 2025 and 2030 are projections and are not drawn), 30 arc-second classes aggregated by majority to 0.02°. Red = urban centre (30), orange = towns (21–23), olive = rural (11–13) | https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_SMOD_GLOBE_R2023A/GHS_SMOD_E2020_GLOBE_R2023A_4326_30ss/V2-0/ | CC BY 4.0 (European Commission JRC) |
+| `built-up-surface` | GHSL GHS-BUILT-S R2023A, 2020 epoch (latest satellite-based epoch; 2025 and 2030 are projections and are not drawn), 30 arc-second built-up square metres summed to 0.02° and drawn as the percent of the cell. Log scale from 0.1 | https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_BUILT_S_GLOBE_R2023A/GHS_BUILT_S_E2020_GLOBE_R2023A_4326_30ss/V1-0/ | CC BY 4.0 (European Commission JRC) |
 | `consumption-co2-emissions` | Global Carbon Project consumption-based CO₂, 2023, via Our World in Data | https://ourworldindata.org/grapher/consumption-co2-emissions.csv | CC BY (Global Carbon Project / Our World in Data) |
 | `methane-emissions` | EDGAR methane emissions including land use, 2024, via Our World in Data | https://ourworldindata.org/grapher/methane-emissions.csv | CC BY (EDGAR / European Commission JRC; Our World in Data) |
 | `mismanaged-plastic-waste` | Meijer et al. 2021 mismanaged plastic waste, year 2019, via Our World in Data | https://ourworldindata.org/grapher/plastic-waste-mismanaged.csv | CC BY |
@@ -66,6 +73,11 @@ Downloads are stored in `scripts/maps-real/raw/` and are listed in `.gitignore`.
 | `peatlands` | PEATMAP peat polygons (Xu et al. 2018). A 0.02° cell is marked when a polygon touches it | https://doi.org/10.5518/252 | CC BY 4.0 |
 | `tree-cover` | ESA WorldCover 10 m 2021 v200. Share of 10 m pixels in class 10 (tree cover) on a 0.02° grid. Class 95 mangroves are excluded | https://doi.org/10.5281/zenodo.7254221 | CC BY 4.0. Contains modified Copernicus Sentinel data (2021) |
 | `dissolved-oxygen` | NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° climatology 1965–2022. The map is the minimum of the objectively analyzed field between 100 m and 1000 m. | https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DATA/oxygen/netcdf/all/1.00/woa23_all_o00_01.nc | Public domain (NOAA). Cite Garcia et al., World Ocean Atlas 2023 Volume 3, NOAA Atlas NESDIS 91. |
+| `remittances-top-recipients` | World Bank World Development Indicators, personal remittances received (current US$), 2024. Log choropleth. 2025 is only partly reported and is not drawn | World Bank API | CC BY 4.0 |
+| `remittances-gdp-share` | World Bank World Development Indicators, personal remittances received as a percentage of GDP, 2024. Log choropleth | World Bank API | CC BY 4.0 |
+| `remittances-sending-cost` | World Bank World Development Indicators, average cost of sending remittances to a country (%), 2023. Positive values only. Log choropleth | World Bank API | CC BY 4.0 |
+| `remittances-global-flows` | Migration and Development Brief 40, Table 1.1, low- and middle-income total, 2017–2023, billions of US dollars. Bars, not a map | World Bank Brief 40 PDF | CC BY 3.0 IGO |
+| `remittances-wdi-series` | World Bank World Development Indicators world totals: personal remittances received 1970–2024 (orange) and paid 1966–2024 (blue), billions of current US dollars | World Bank API | CC BY 4.0 |
 | `mineral-resources` | USGS Mineral Resources Data System deposit locations | https://mrdata.usgs.gov/mrds/mrds-csv.zip | Public domain (USGS) |
 
 GIBS GetMap endpoint:
