@@ -6,10 +6,12 @@ import {
   type MapCopy,
   type MapEntry,
 } from '../data/maps';
+import { cite } from '../data/sources';
 import type { Locale } from './config';
 import { lv as lvEntries } from './maps-lv';
 import { pl as plEntries } from './maps-pl';
 import { ru as ruEntries } from './maps-ru';
+import { subsurfaceCopy } from './maps-subsurface-pack';
 
 export type MapsPage = {
   metaTitle: string;
@@ -62,7 +64,8 @@ const pageEn: MapsPage = {
     crime:
       'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not).',
     pollution: 'Air, waste, and emissions with a named source.',
-    subsurface: 'Oil, gas, and minerals — fossil fuel and fossil gold.',
+    subsurface:
+      'Oil, gas, and minerals: fossil fuel and fossil gold. Also here: the world’s coal mines and proved coal reserves, the countries that lead in mining and processing critical minerals, and where rare earths and lithium are mined.',
     political:
       'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ — each card names the public vector set and what it is not.',
     forests: 'Canopy, loss, and protected areas from named sources.',
@@ -132,7 +135,8 @@ const pageRu: MapsPage = {
     crime:
       'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет).',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
-    subsurface: 'Нефть, газ и ископаемые — топливо и золото недр.',
+    subsurface:
+      'Нефть, газ и ископаемые: топливо и золото недр. Здесь также: угольные шахты мира и доказанные запасы угля, страны, лидирующие в добыче и переработке критически важных минералов, и места добычи редкоземельных металлов и лития.',
     political:
       'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ — на каждой карточке указан открытый векторный набор и что он не измеряет.',
     forests: 'Полог, потери и ООПТ по названным источникам.',
@@ -202,7 +206,8 @@ const pagePl: MapsPage = {
     crime:
       'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest).',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
-    subsurface: 'Ropa, gaz i minerały — paliwo kopalne i kopalne złoto.',
+    subsurface:
+      'Ropa, gaz i minerały: paliwo kopalne i kopalne złoto. Znajdziesz tu także: kopalnie węgla na świecie i udokumentowane zasoby węgla, kraje przodujące w wydobyciu i przetwarzaniu minerałów krytycznych oraz miejsca wydobycia metali ziem rzadkich i litu.',
     political:
       'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ — na każdej karcie nazwany jest otwarty zestaw wektorów i to, czego on nie mierzy.',
     forests: 'Okap, ubytek i obszary chronione z nazwanych źródeł.',
@@ -272,7 +277,8 @@ const pageLv: MapsPage = {
     crime:
       'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē).',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
-    subsurface: 'Nafta, gāze un izrakteņi — fosilā degviela un fosilais zelts.',
+    subsurface:
+      'Nafta, gāze un izrakteņi: fosilā degviela un fosilais zelts. Šeit arī pasaules ogļu raktuves un pierādītās ogļu rezerves, valstis, kas ir vadošās kritiski svarīgo minerālu ieguvē un pārstrādē, un vietas, kur iegūst retzemju metālus un litiju.',
     political:
       'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ — katrā kartītē norādīts atvērtais vektoru komplekts un tas, ko tas nemēra.',
     forests: 'Vainags, zudums un aizsargājamās teritorijas no nosauktiem avotiem.',
@@ -607,31 +613,61 @@ const en: Record<string, MapCopy> = {
   },
   'oil-gas-reserves': {
     title: 'Oil and gas around the world',
-    hook: 'A U.S. government view of petroleum and natural-gas resources and flows — deposits, reserves, and trade.',
+    cardMeta: 'U.S. Energy Information Administration · petroleum and natural gas · 2023–2024',
+    hook: 'Petroleum and natural-gas deposits, reserves, and trade, published by the U.S. Energy Information Administration.',
     description:
-      'The U.S. Energy Information Administration publishes international energy statistics, country analysis, and maps of oil and gas. USGS world petroleum assessments estimate undiscovered technically recoverable resources. Neither is a trading screen.',
+      'The U.S. Energy Information Administration publishes international energy statistics, country analyses, and maps of oil and gas. The U.S. Geological Survey world petroleum assessments estimate undiscovered resources that are technically recoverable. Together the series cover deposits, reserves, and trade.',
     howToRead:
-      'Reserves are amounts judged economic with today’s prices and technology; resources are larger and less certain. A colored basin is not a permission to drill. Pipelines and LNG change who uses whose gas.',
+      'Reserves are the amounts judged economic at today’s prices and with today’s technology. Resources are the larger geologic quantities, with wider uncertainty. A colored basin on this map is an assessed shale-gas area. Pipelines and liquefied natural gas carry gas from the country that produces it to the country that burns it.',
     caveats:
-      'National reserve reports can be political. EIA figures are still among the most transparent public series. We do not list field-by-field barrels here.',
+      'Countries prepare their own reserve reports, and those reports follow each country’s rules as well as the geology. Figures from the U.S. Energy Information Administration are among the most transparent public series. The public tables give national totals and assessed basins.',
     licenseNote:
-      'EIA and USGS works of the U.S. government are generally public domain. The preview is EIA’s public-domain assessed shale-gas basin map. Open EIA’s international pages for current oil and gas maps and tables.',
+      'Works of the U.S. Energy Information Administration and the U.S. Geological Survey are U.S. government works in the public domain. The preview is the Administration’s assessed shale-gas basin map. Current oil and gas maps and tables are on the Administration’s international pages.',
     imageAlt:
-      'EIA world map of assessed shale-gas basins: white and grey countries with maroon and yellow basin polygons',
+      'World map of assessed shale-gas basins from the U.S. Energy Information Administration, with white and grey countries and maroon and yellow basin polygons',
+    gridSource: cite(
+      'U.S. Energy Information Administration, international energy data',
+      'https://www.eia.gov/international/data/world',
+    ),
+    sources: [
+      cite(
+        'U.S. Energy Information Administration: International overview',
+        'https://www.eia.gov/international/overview/world.php',
+      ),
+      cite(
+        'U.S. Energy Information Administration: International energy data',
+        'https://www.eia.gov/international/data/world',
+      ),
+    ],
   },
   'mineral-resources': {
     title: 'Mineral deposits and commodities',
-    hook: 'USGS maps of where metals and industrial minerals are known — gold included — not a treasure map.',
+    cardMeta: 'U.S. Geological Survey · deposits and commodities · 2024',
+    hook: 'Known deposits of metals and industrial minerals, including gold, from the U.S. Geological Survey.',
     description:
-      'The USGS Mineral Resources Program and MRDATA compile deposits, prospects, and commodity summaries (gold, copper, iron, lithium, and others). The Mineral Commodity Summaries are the annual public ledger of production and reserves.',
+      'The U.S. Geological Survey Mineral Resources Program and its Mineral Resources Data System compile deposits, prospects, and commodity summaries for gold, copper, iron, lithium, and other minerals. The Mineral Commodity Summaries are the annual public ledger of production and reserves.',
     howToRead:
-      'A point is a known deposit or district, not a mine you can visit. “Reserve” is an economic quantity; “resource” is geologic. Gold often sits with other metals. Artisanal sites may be missing.',
+      'Each point is a known deposit or mining district in the Mineral Resources Data System. A reserve is the economic quantity. A resource is the geologic quantity. Gold often occurs with other metals. Artisanal workings are often absent from the compiled layer.',
     caveats:
-      'Completeness varies by country and by secrecy. A blank area can mean no survey, not no rock. Environmental harm of extraction is not in the geology layer.',
+      'Completeness varies by country and by how much a government publishes. A blank area is a place with no recorded deposit in this survey. The layer records locations and commodities.',
     licenseNote:
-      'USGS information is generally public domain. The preview is a Fix Planet overview of well-known districts (gold, copper, iron, lithium, rare earths), not a copy of a USGS poster and not reserve tonnages. Open MRDATA for the database.',
+      'U.S. Geological Survey information is in the public domain. The preview is a Fix Planet overview of recorded districts for gold, copper, iron, lithium, and rare earths, drawn from the Mineral Resources Data System.',
     imageAlt:
-      'Tan world map with colored dots for well-known mineral districts: gold, copper, iron, lithium, and rare earths',
+      'Tan world map with colored dots for recorded mineral districts: gold, copper, iron, lithium, and rare earths',
+    gridSource: cite(
+      'U.S. Geological Survey, Mineral Resources Data System',
+      'https://mrdata.usgs.gov/',
+    ),
+    sources: [
+      cite(
+        'U.S. Geological Survey: Mineral Resources Program',
+        'https://www.usgs.gov/programs/mineral-resources-program',
+      ),
+      cite(
+        'U.S. Geological Survey: Mineral Resources Data System',
+        'https://mrdata.usgs.gov/',
+      ),
+    ],
   },
   'world-countries': {
     title: 'World countries and borders',
@@ -1007,10 +1043,10 @@ const en: Record<string, MapCopy> = {
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
-  en,
-  ru: ruEntries,
-  pl: plEntries,
-  lv: lvEntries,
+  en: { ...en, ...subsurfaceCopy.en },
+  ru: { ...ruEntries, ...subsurfaceCopy.ru },
+  pl: { ...plEntries, ...subsurfaceCopy.pl },
+  lv: { ...lvEntries, ...subsurfaceCopy.lv },
 };
 
 export function getMapsPage(locale: Locale): MapsPage {
@@ -1077,6 +1113,11 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'pollution') {
     // Six Pollution cards would otherwise be sliced to three. List every
     // Pollution sibling so PM2.5 and territorial CO₂ reach the rest of the shelf.
+    return same;
+  }
+  if (current.category === 'subsurface') {
+    // Seven Subsurface cards. List every sibling so Oil and gas and Mineral
+    // deposits reach the five resource cards, and each new card reaches the shelf.
     return same;
   }
   return [...same, ...rest].slice(0, limit);

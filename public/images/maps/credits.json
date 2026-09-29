@@ -617,5 +617,50 @@
     "license": "Map geometry public domain; overlay is Fix Planet",
     "kind": "fix-planet-schematic",
     "note": "Deep green, gold, and orange mark high, mid, and low integrity themes. Not the FLII raster and not a canopy-loss date."
+  },
+  {
+    "file": "coal-mines.png",
+    "title": "Coal mines by status, Global Coal Mine Tracker, August 2026",
+    "source": "Fix Planet point map from Global Energy Monitor, Global Coal Mine Tracker, August 2026 release (map data file gcmt-smp_map_2026-08). Boundaries: Natural Earth 1:110m.",
+    "url": "https://globalenergymonitor.org/projects/global-coal-mine-tracker",
+    "license": "CC BY 4.0 (Global Energy Monitor). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Dots by status only. No titles, labels, or legend in the bitmap. Key is HTML."
+  },
+  {
+    "file": "coal-reserves.png",
+    "title": "Proved coal reserves by country, 2023",
+    "source": "Fix Planet shaded map from the Our World in Data coal-reserves series (U.S. Energy Information Administration), latest year 2023. Boundaries: Natural Earth 1:110m.",
+    "url": "https://ourworldindata.org/grapher/fossil-fuels?fuel=coal&metric=reserves&per_capita=total",
+    "license": "CC BY 4.0 (Our World in Data). Underlying EIA data public domain. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Same billion-tonne bins as the Our World in Data chart. No text in the bitmap."
+  },
+  {
+    "file": "critical-mineral-production.png",
+    "title": "Countries mining at least 5% of world output, 2023",
+    "source": "Fix Planet shaded map redrawn from Figure 1 of U.S. Geological Survey Fact Sheet 2025-3038, Global Maps of Critical Mineral Production in 2023. Boundaries: Natural Earth 1:110m.",
+    "url": "https://pubs.usgs.gov/publication/fs20253038",
+    "license": "Public domain (U.S. Geological Survey). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Mining-stage country counts. Bucket totals match the fact-sheet key. No text in the bitmap."
+  },
+  {
+    "file": "rare-earths.png",
+    "title": "Rare-earth mine production by country, 2024",
+    "source": "Fix Planet shaded map from U.S. Geological Survey Mineral Commodity Summaries 2025 data release, MCS2025_World_Data.csv, 2024 mine production. Boundaries: Natural Earth 1:110m.",
+    "url": "https://www.sciencebase.gov/catalog/item/677eaf95d34e760b392c4970",
+    "license": "Public domain (U.S. Geological Survey). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Tonnes of rare-earth oxide equivalent. No text in the bitmap."
+  },
+  {
+    "file": "lithium.png",
+    "title": "Lithium mine production by country, 2024",
+    "source": "Fix Planet shaded map from U.S. Geological Survey Mineral Commodity Summaries 2025 data release, MCS2025_World_Data.csv, 2024 mine production. Boundaries: Natural Earth 1:110m.",
+    "url": "https://www.sciencebase.gov/catalog/item/677eaf95d34e760b392c4970",
+    "license": "Public domain (U.S. Geological Survey). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Tonnes of lithium content. United States production is the withheld grey. No text in the bitmap."
   }
 ]

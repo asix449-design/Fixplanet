@@ -1,4 +1,5 @@
 import type { MapCopy } from '../data/maps';
+import { cite } from '../data/sources';
 
 export const lv: Record<string, MapCopy> = {
   'armed-conflict-events': {
@@ -254,31 +255,61 @@ export const lv: Record<string, MapCopy> = {
   },
   'oil-gas-reserves': {
     title: 'Nafta un gāze pasaulē',
-    hook: 'ASV valdības skats uz naftu un gāzi — atradnes, rezerves un plūsmas, ne biržas ekrāns.',
+    cardMeta: 'Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde · nafta un dabasgāze · 2023–2024',
+    hook: 'Naftas un dabasgāzes atradnes, rezerves un tirdzniecība pēc Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes datiem.',
     description:
-      'ASV Enerģētikas informācijas administrācija publicē starptautisku statistiku, valstu analīzes un naftas un gāzes kartes. USGS pasaules naftas novērtējumi aplēš neatklātos tehniski iegūstamos resursus. Tas nav tirdzniecības terminālis.',
+      'Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde publicē starptautisku statistiku, valstu analīzes un naftas un gāzes kartes. Amerikas Savienoto Valstu Ģeoloģijas dienesta pasaules naftas novērtējumi aplēš neatklātos resursus, ko tehniski var iegūt. Datu rindas aptver atradnes, rezerves un tirdzniecības plūsmas.',
     howToRead:
-      'Rezerves ir apjomi, ko uzskata par ekonomiskiem pie šodienas cenām un tehnoloģijas; resursi ir plašāki un mazāk droši. Iekrāsots baseins nav atļauja urbšanai. Cauruļvadi un SDG maina, kura gāzi kurš lieto.',
+      'Rezerves ir apjomi, ko uzskata par ekonomiskiem pie šodienas cenām un tehnoloģijas. Resursi ir plašāks ģeoloģiskais apjoms ar lielāku nenoteiktību. Iekrāsots kontūrs šajā kartē ir novērtēts slānekļa gāzes baseins. Cauruļvadi un sašķidrinātā dabasgāze ved gāzi no ieguves valsts uz valsti, kas to izmanto.',
     caveats:
-      'Nacionālie rezervju ziņojumi var būt politiski. EIA skaitļi tomēr ir starp caurspīdīgākajām atklātajām rindām. Šeit lauku pa laukam barelus neuzskaitām.',
+      'Valstis pašas sagatavo rezervju ziņojumus, un šie ziņojumi seko valsts noteikumiem līdzās ģeoloģijai. Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes skaitļi ir starp caurspīdīgākajām publiskajām datu rindām. Publiskajās tabulās ir valstu kopsummas un novērtētie baseini.',
     licenseNote:
-      'EIA un USGS ASV valdības darbi parasti ir sabiedriskais īpašums. Aktuālās kartes un tabulas ir EIA starptautiskajās lapās.',
+      'Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes un Amerikas Savienoto Valstu Ģeoloģijas dienesta darbi ir Amerikas Savienoto Valstu valdības darbi publiskajā īpašumā. Priekšskats ir šīs pārvaldes novērtēto slānekļa gāzes baseinu karte. Aktuālās naftas un gāzes kartes un tabulas ir pārvaldes starptautiskajās lapās.',
     imageAlt:
-      'EIA karte ar novērtētiem slānekļa gāzes baseiniem: baltas un pelēkas valstis ar bordo un dzelteniem baseinu daudzstūriem',
+      'Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes karte ar novērtētiem slānekļa gāzes baseiniem: baltas un pelēkas valstis ar bordo un dzelteniem baseinu daudzstūriem',
+    gridSource: cite(
+      'Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde, starptautiskie enerģētikas dati',
+      'https://www.eia.gov/international/data/world',
+    ),
+    sources: [
+      cite(
+        'Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde: starptautiskais pārskats (International overview)',
+        'https://www.eia.gov/international/overview/world.php',
+      ),
+      cite(
+        'Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde: starptautiskie enerģētikas dati (International energy data)',
+        'https://www.eia.gov/international/data/world',
+      ),
+    ],
   },
   'mineral-resources': {
     title: 'Derīgo izrakteņu atradnes',
-    hook: 'USGS kartes par zināmajiem metāliem un rūpnieciskajiem minerāliem, tostarp zeltu — ne dārgumu karte.',
+    cardMeta: 'Amerikas Savienoto Valstu Ģeoloģijas dienests · atradnes un izejvielas · 2024',
+    hook: 'Zināmās metālu un rūpniecisko minerālu atradnes, tostarp zelts, pēc Amerikas Savienoto Valstu Ģeoloģijas dienesta datiem.',
     description:
-      'USGS Minerālresursu programma un MRDATA apkopo atradnes, izpausmes un ikgadējos kopsavilkumus (zelts, varš, dzelzs, litijs un citi). Mineral Commodity Summaries ir atklātais gada reģistrs par ieguvi un rezervēm.',
+      'Amerikas Savienoto Valstu Ģeoloģijas dienesta minerālresursu programma un tās minerālresursu datu sistēma apkopo atradnes, izpausmes un izejvielu kopsavilkumus: zelts, varš, dzelzs, litijs un citi. „Minerālo izejvielu pārskats” ir atklātais gada reģistrs par ieguvi un rezervēm.',
     howToRead:
-      'Punkts ir zināma atradne vai rajons, ne raktuves, kurp braukt. „Rezerve” ir ekonomiska lielums; „resurss” — ģeoloģisks. Zelts bieži ir kopā ar citiem metāliem. Amatniecības vietas var trūkt.',
+      'Katrs punkts ir zināma atradne vai rajons minerālresursu datu sistēmā. Rezerve ir ekonomiska lielums. Resurss ir ģeoloģisks lielums. Zelts bieži ir kopā ar citiem metāliem. Amatniecības ieguves vietas šajā slānī bieži ir izlaistas.',
     caveats:
-      'Pilnība atšķiras pa valstīm un slepenību. Tukšs laukums var nozīmēt „nav uzņēmuma”, ne „nav ieža”. Ieguves kaitējums ģeoloģijas slānī nav redzams.',
+      'Pilnība atšķiras pa valstīm un pēc tā, cik daudz valdība publicē. Tukšs laukums ir vieta, kur šajā pārskatā nav ierakstītas atradnes. Slānis fiksē atrašanās vietu un izejvielu.',
     licenseNote:
-      'USGS informācija parasti ir sabiedriskais īpašums. Atver MRDATA un kopsavilkumus, nevis kopē maksas nozares atlantus.',
+      'Amerikas Savienoto Valstu Ģeoloģijas dienesta informācija ir publiskais īpašums. Priekšskats ir Fix Planet pārskats par zelta, vara, dzelzs, litija un retzemju metālu reģistrētajiem rajoniem pēc minerālresursu datu sistēmas.',
     imageAlt:
-      'Bēša pasaules karte ar krāsainiem punktiem zināmos minerālu rajonos: zelts, varš, dzelzs, litijs un retzemju elementi',
+      'Bēša pasaules karte ar krāsainiem punktiem reģistrētos minerālu rajonos: zelts, varš, dzelzs, litijs un retzemju metāli',
+    gridSource: cite(
+      'Amerikas Savienoto Valstu Ģeoloģijas dienests, minerālresursu datu sistēma',
+      'https://mrdata.usgs.gov/',
+    ),
+    sources: [
+      cite(
+        'Amerikas Savienoto Valstu Ģeoloģijas dienests: minerālresursu programma (Mineral Resources Program)',
+        'https://www.usgs.gov/programs/mineral-resources-program',
+      ),
+      cite(
+        'Amerikas Savienoto Valstu Ģeoloģijas dienests: minerālresursu datu sistēma (Mineral Resources Data System)',
+        'https://mrdata.usgs.gov/',
+      ),
+    ],
   },
   'world-countries': {
     title: 'Pasaules valstis un robežas',
