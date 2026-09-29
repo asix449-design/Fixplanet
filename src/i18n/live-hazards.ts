@@ -28,6 +28,8 @@ export type LiveHazardsPage = {
   back: string;
   layersTitle: string;
   layersAria: string;
+  showLayers: string;
+  hideLayers: string;
   feedTitle: string;
   feedAria: string;
   feedEmpty: string;
@@ -174,6 +176,8 @@ const pageEn: LiveHazardsPage = {
   back: '← Maps',
   layersTitle: 'Layers',
   layersAria: 'Hazard layers',
+  showLayers: 'Show layers',
+  hideLayers: 'Hide layers',
   feedTitle: 'Latest events',
   feedAria: 'Latest hazard events',
   feedEmpty: 'No events in the selected layers.',
@@ -254,6 +258,8 @@ const pageRu: LiveHazardsPage = {
   back: '← Карты',
   layersTitle: 'Слои',
   layersAria: 'Слои опасностей',
+  showLayers: 'Показать слои',
+  hideLayers: 'Скрыть слои',
   feedTitle: 'Последние события',
   feedAria: 'Последние события об опасностях',
   feedEmpty: 'В выбранных слоях нет событий.',
@@ -406,6 +412,8 @@ const pagePl: LiveHazardsPage = {
   back: '← Mapy',
   layersTitle: 'Warstwy',
   layersAria: 'Warstwy zagrożeń',
+  showLayers: 'Pokaż warstwy',
+  hideLayers: 'Ukryj warstwy',
   feedTitle: 'Najnowsze zdarzenia',
   feedAria: 'Najnowsze zdarzenia o zagrożeniach',
   feedEmpty: 'Brak zdarzeń w wybranych warstwach.',
@@ -558,6 +566,8 @@ const pageLv: LiveHazardsPage = {
   back: '← Kartes',
   layersTitle: 'Slāņi',
   layersAria: 'Bīstamības slāņi',
+  showLayers: 'Rādīt slāņus',
+  hideLayers: 'Paslēpt slāņus',
   feedTitle: 'Jaunākie notikumi',
   feedAria: 'Jaunākie bīstamības notikumi',
   feedEmpty: 'Izvēlētajos slāņos nav notikumu.',

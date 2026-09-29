@@ -1,4 +1,5 @@
 ---
+import HazardGlobe from '../components/HazardGlobe.astro';
 import HubTile from '../components/HubTile.astro';
 import MapCard from '../components/MapCard.astro';
 import MapShelfNav from '../components/MapShelfNav.astro';
@@ -77,6 +78,13 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
 
   {
     hub ? (
+      <>
+      <section class="maps-globe-hero" aria-label={live.mapLabel}>
+        <HazardGlobe hero />
+        <p class="maps-globe-link">
+          <a href={`${localizePath(LIVE_HAZARDS_PATH, locale)}#hz-credits`}>{live.creditsTitle}</a>
+        </p>
+      </section>
       <section class="maps-hub-hero" aria-label={page.filterAria}>
         <div class="wrap maps-hub-hero-inner">
           <div class="maps-hub-hero-panel">
@@ -119,6 +127,7 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
           </nav>
         </div>
       </section>
+      </>
     ) : (
       <section class="section maps-catalog">
         <div class="wrap">
@@ -137,3 +146,29 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
     )
   }
 </BaseLayout>
+
+<style>
+  .maps-globe-hero {
+    position: relative;
+    z-index: 1;
+    padding: 0.15rem 0 0.15rem;
+    background: #050505;
+  }
+
+  .maps-globe-link {
+    width: min(1600px, calc(100% - 16px));
+    margin: 0.1rem auto 0.45rem;
+    text-align: right;
+  }
+
+  .maps-globe-link a {
+    color: var(--lime);
+    font-size: 0.82rem;
+    font-weight: 650;
+    text-decoration: none;
+  }
+
+  .maps-globe-link a:hover {
+    text-decoration: underline;
+  }
+</style>

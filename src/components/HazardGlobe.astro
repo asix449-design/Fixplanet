@@ -7,16 +7,31 @@ const locale = resolveLocale(Astro.currentLocale);
 const copy = getLiveHazardsPage(locale);
 const colors = LAYER_COLOR as Record<string, string>;
 const shortLabel = (text: string) => text.split(':')[0].trim();
+
+interface Props {
+  hero?: boolean;
+}
+
+const { hero = false } = Astro.props;
 ---
 
 <div
-  class="hz-board"
+  class:list={['hz-board', hero && 'is-hero']}
   data-hazard-globe
   data-locale={locale}
   data-copy={JSON.stringify(copy)}
   data-ready="false"
 >
-  <section class="hz-panel hz-layers" aria-label={copy.layersAria}>
+  <button
+    type="button"
+    class="hz-layers-toggle"
+    data-layers-toggle
+    aria-expanded="false"
+    aria-controls="hz-layers"
+  >
+    {copy.showLayers}
+  </button>
+  <section class="hz-panel hz-layers" id="hz-layers" aria-label={copy.layersAria}>
     <div class="hz-panel-head">
       <h2>{copy.layersTitle}</h2>
       <p class="hz-status" data-status>{copy.loading}</p>
@@ -276,6 +291,16 @@ const shortLabel = (text: string) => text.split(':')[0].trim();
     min-width: 0;
   }
 
+  .hz-layers-toggle {
+    display: none;
+  }
+
+  .hz-board.is-hero {
+    width: min(1600px, calc(100% - 16px));
+    height: calc(100dvh - var(--header-h) - 8px);
+    margin-bottom: 0.2rem;
+  }
+
   .hz-feed-list {
     list-style: none;
     margin: 0;
@@ -450,6 +475,65 @@ const shortLabel = (text: string) => text.split(':')[0].trim();
 
     .hz-feed {
       max-height: 72px;
+    }
+
+    .hz-board.is-hero {
+      height: auto;
+      min-height: 0;
+    }
+
+    .hz-board.is-hero .hz-map {
+      order: 1;
+      flex: 0 0 auto;
+      height: 58vh;
+      min-height: 280px;
+    }
+
+    .hz-board.is-hero .hz-layers-toggle {
+      display: flex;
+      order: 2;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      padding: 0.55rem 0.85rem;
+      border: 1px solid rgba(192, 255, 0, 0.35);
+      border-radius: var(--radius);
+      background: rgba(8, 8, 8, 0.94);
+      color: var(--lime);
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .hz-board.is-hero .hz-layers-toggle::after {
+      content: '';
+      width: 0.45rem;
+      height: 0.45rem;
+      border-right: 2px solid var(--lime);
+      border-bottom: 2px solid var(--lime);
+      transform: rotate(45deg);
+    }
+
+    .hz-board.is-hero.is-layers-open .hz-layers-toggle::after {
+      transform: rotate(225deg);
+      margin-top: 0.3rem;
+    }
+
+    .hz-board.is-hero .hz-layers {
+      order: 3;
+    }
+
+    .hz-board.is-hero:not(.is-layers-open) .hz-layers {
+      display: none;
+    }
+
+    .hz-board.is-hero .hz-feed {
+      order: 4;
+      max-height: 128px;
     }
   }
 </style>

@@ -494,8 +494,95 @@ export function mountHazardGlobe(root) {
     }
   }
 
+  function siteLime() {
+    const value = getComputedStyle(document.documentElement).getPropertyValue('--lime').trim();
+    return value || '#c0ff00';
+  }
+
+  function setPaint(id, prop, value) {
+    if (!map.getLayer(id)) return;
+    try {
+      map.setPaintProperty(id, prop, value);
+    } catch {
+      /* layer does not use this paint property */
+    }
+  }
+
+  function paintEarth() {
+    const land = '#24301c';
+    const ocean = '#050608';
+    setPaint('background', 'background-color', land);
+    setPaint('water', 'fill-color', ocean);
+    setPaint('waterway', 'line-color', ocean);
+    for (const id of ['landcover_ice_shelf', 'landcover_glacier', 'landuse_residential', 'landuse_park']) {
+      setPaint(id, 'fill-color', land);
+    }
+    for (const id of ['boundary_country_z0-4', 'boundary_country_z5-', 'boundary_state']) {
+      if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', 'none');
+    }
+  }
+
+  let linesToken = 0;
+
+  function addGlobeLines(lime) {
+    const token = ++linesToken;
+    fetch('/data/globe-lines.json')
+      .then(okJson)
+      .then((data) => {
+        if (token !== linesToken || !map.getStyle() || map.getSource('globe-lines')) return;
+        map.addSource('globe-lines', {
+          type: 'geojson',
+          data,
+          attribution: 'Natural Earth',
+        });
+        const before = map.getLayer('fires-cluster') ? 'fires-cluster' : undefined;
+        const addLine = (id, kind, paint) => {
+          map.addLayer(
+            {
+              id,
+              type: 'line',
+              source: 'globe-lines',
+              filter: ['==', ['get', 'kind'], kind],
+              layout: { 'line-cap': 'round', 'line-join': 'round' },
+              paint,
+            },
+            before,
+          );
+        };
+        addLine('coast-glow', 'coast', {
+          'line-color': lime,
+          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 5.2, 3, 7, 6, 9],
+          'line-blur': 3,
+          'line-opacity': 0.48,
+        });
+        addLine('coast-line', 'coast', {
+          'line-color': lime,
+          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 1.35, 3, 1.7, 6, 2.1],
+          'line-blur': 0.15,
+          'line-opacity': 0.95,
+        });
+        addLine('border-glow', 'border', {
+          'line-color': lime,
+          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 3.6, 3, 4.8, 6, 6.5],
+          'line-blur': 2.2,
+          'line-opacity': 0.38,
+        });
+        addLine('border-line', 'border', {
+          'line-color': lime,
+          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 0.95, 3, 1.2, 6, 1.55],
+          'line-blur': 0.1,
+          'line-opacity': 0.9,
+        });
+        root.dataset.outlines = 'true';
+      })
+      .catch(() => {
+        /* coast lines stay on the vector style when this file is missing */
+      });
+  }
+
   function onStyle() {
     styleReady = true;
+    linesToken += 1;
     try {
       map.setProjection({ type: 'globe' });
     } catch {
@@ -507,15 +594,17 @@ export function mountHazardGlobe(root) {
         map.setLayoutProperty(layer.id, 'visibility', 'none');
       }
     }
+    const lime = siteLime();
+    paintEarth();
     try {
       map.setSky({
         'sky-color': '#000000',
-        'horizon-color': '#1c240c',
-        'fog-color': '#050505',
-        'sky-horizon-blend': 0.55,
-        'horizon-fog-blend': 0.72,
-        'fog-ground-blend': 0.88,
-        'atmosphere-blend': 0.85,
+        'horizon-color': '#1a2610',
+        'fog-color': '#050608',
+        'sky-horizon-blend': 0.42,
+        'horizon-fog-blend': 0.5,
+        'fog-ground-blend': 0.38,
+        'atmosphere-blend': 0.62,
       });
     } catch {
       /* sky is optional */
@@ -523,6 +612,7 @@ export function mountHazardGlobe(root) {
     addLayers();
     addStormShapes();
     addDroughtRasters();
+    addGlobeLines(lime);
     const phone = window.matchMedia('(max-width: 980px)').matches;
     map.jumpTo({
       center: [12, 8],
@@ -798,6 +888,14 @@ export function mountHazardGlobe(root) {
       }
       renderFeed();
     });
+  });
+
+  const layersToggle = root.querySelector('[data-layers-toggle]');
+  layersToggle?.addEventListener('click', () => {
+    const open = root.classList.toggle('is-layers-open');
+    layersToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    layersToggle.textContent = open ? ui.hideLayers : ui.showLayers;
+    map?.resize();
   });
 
   const europeInput = root.querySelector('input[data-raster="droughtEurope"]');
