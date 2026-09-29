@@ -617,5 +617,50 @@
     "license": "Map geometry public domain; overlay is Fix Planet",
     "kind": "fix-planet-schematic",
     "note": "Deep green, gold, and orange mark high, mid, and low integrity themes. Not the FLII raster and not a canopy-loss date."
+  },
+  {
+    "file": "prison-population-rate.jpg",
+    "title": "Prison population rate, map area cropped from the Our World in Data chart",
+    "source": "Crop of the Our World in Data grapher PNG. Data: Institute for Crime & Justice Policy Research, World Prison Brief.",
+    "url": "https://ourworldindata.org/grapher/prison-population-rate.png",
+    "license": "CC BY 4.0 (Our World in Data chart). World Prison Brief data credited separately.",
+    "kind": "rendered-from-source",
+    "note": "Title, subtitle, legend and footer removed. Colour key is rebuilt in HTML. Raw ICPR series is not committed."
+  },
+  {
+    "file": "drug-trafficking-flows.png",
+    "title": "Cocaine seized in Europe, 2014 to 2024",
+    "source": "Fix Planet stacked columns from EUDA European Drug Report 2026, table EDR26-Cocaine-6.",
+    "url": "https://www.euda.europa.eu/sites/default/files/data/data-nodes/33313/versions/56/edr2026-cocaine-table-8_en.csv",
+    "license": "EUDA reuse with acknowledgement, compatible with CC BY 4.0.",
+    "kind": "rendered-from-source",
+    "note": "Tonnes by country. Series names are HTML only. UNODC flow maps are linked sources, not this image."
+  },
+  {
+    "file": "modern-slavery.png",
+    "title": "Global Estimates of Modern Slavery 2022, Figure 1 redraw",
+    "source": "Fix Planet redraw of ILO, Walk Free and IOM Figure 1 (2022), plus the 27.6 and 22.0 million split.",
+    "url": "https://www.ilo.org/sites/default/files/2025-09/ILO_GEMS-2022_Report_EN_Web.pdf",
+    "license": "CC BY 4.0 adaptation. No ILO, Walk Free or IOM emblems.",
+    "kind": "rendered-from-source",
+    "note": "Numbers only on the bitmap. Category names are HTML. Walk Free maps are not used."
+  },
+  {
+    "file": "basel-aml-index.png",
+    "title": "Major money-laundering jurisdictions, US State Department, 2024",
+    "source": "Fix Planet map of the 81 jurisdictions in INCSR 2025 Volume 2, pages 14 to 15. Boundaries: Natural Earth 1:50m.",
+    "url": "https://www.state.gov/wp-content/uploads/2025/03/2025-International-Narcotics-Control-Strategy-Volume-2-Accessible.pdf",
+    "license": "Public domain (US Department of State). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "US State Department list, not Basel AML Index scores. Small territories are dots."
+  },
+  {
+    "file": "rule-of-law-index.png",
+    "title": "World Bank Worldwide Governance Indicators, Rule of Law, 2025",
+    "source": "Fix Planet choropleth of WGI 2026 sheet rl, Governance score (0-100), year 2025. Boundaries: Natural Earth 1:50m.",
+    "url": "https://datacatalogfiles.worldbank.org/ddh-published/0038026/DR0095947/WGI%202026%20Governance%20Estimates%20and%20Scores%20%281996-2025%29.xlsx",
+    "license": "CC BY 4.0 (World Bank). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "World Bank score, not a World Justice Project score. No WJP name on the image."
   }
 ]

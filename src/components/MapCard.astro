@@ -20,8 +20,18 @@ const primary = mapPrimarySource(map);
   data-slug={map.slug}
 >
   <a class="map-card" href={href}>
-    <div class="card-art map-card-art">
-      <img src={preview} alt={map.imageAlt} width="640" height="320" loading="lazy" />
+    <div
+      class:list={['card-art', 'map-card-art', map.fit === 'contain' && 'map-card-art-contain']}
+      style={map.frameColor ? `background:${map.frameColor}` : undefined}
+    >
+      <img
+        src={preview}
+        alt={map.imageAlt}
+        width={map.previewWidth ?? 640}
+        height={map.previewHeight ?? 320}
+        loading="lazy"
+        style={map.frameColor ? `background:${map.frameColor}` : undefined}
+      />
       {
         map.previewKind === 'schematic' ? (
           <span class="map-schematic-badge">{page.schematicBadge}</span>

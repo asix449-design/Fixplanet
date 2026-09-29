@@ -1671,6 +1671,11 @@ a.map-card:hover {
   object-position: center;
 }
 
+.map-card-art-contain img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .map-schematic-badge {
   position: absolute;
   left: 0.7rem;
@@ -1734,6 +1739,55 @@ a.map-card:hover {
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.45;
+}
+
+.map-detail-art figcaption p {
+  margin: 0 0 0.35rem;
+}
+
+.map-figure-title {
+  margin: 0 0 0.65rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.map-figure-legend {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.map-figure-legend-title {
+  margin: 0 0 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.map-figure-legend ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+}
+
+.map-figure-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.map-swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  flex: none;
+  border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .map-detail-copy {

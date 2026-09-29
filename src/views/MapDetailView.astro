@@ -17,8 +17,10 @@ const related = getRelatedMaps(locale, map.slug);
 const preview = mapPreviewSrc(map.preview);
 const credit = realMapCredit(locale, map.slug);
 const art = map.detail ? mapPreviewSrc(map.detail) : preview;
-const artWidth = map.detail ? 7200 : 1600;
-const artHeight = map.detail ? 3600 : 800;
+const artWidth = map.detail ? 7200 : (map.previewWidth ?? 1600);
+const artHeight = map.detail ? 3600 : (map.previewHeight ?? 800);
+const heads = map.sectionHeads;
+const frameStyle = map.frameColor ? `background:${map.frameColor}` : undefined;
 const title = `${map.title} — Fix Planet`;
 ---
 
@@ -42,18 +44,45 @@ const title = `${map.title} — Fix Planet`;
     <div class="wrap">
       <div class="map-detail">
         <figure class="map-detail-art">
-          <img src={art} alt={map.imageAlt} width={artWidth} height={artHeight} />
+          {map.figureTitle ? <p class="map-figure-title">{map.figureTitle}</p> : null}
+          <img
+            src={art}
+            alt={map.imageAlt}
+            width={artWidth}
+            height={artHeight}
+            style={frameStyle}
+          />
           {
-            credit ? (
-              <figcaption>{credit}</figcaption>
-            ) : map.previewKind === 'schematic' ? (
-              <figcaption>{page.schematicNote}</figcaption>
-            ) : (
-              <figcaption>
-                {map.sourceOrg}. {map.year}.
-              </figcaption>
-            )
+            map.legend?.length ? (
+              <div class="map-figure-legend">
+                {map.legend.map((group) => (
+                  <div>
+                    {group.title ? <p class="map-figure-legend-title">{group.title}</p> : null}
+                    <ul>
+                      {group.items.map((item) => (
+                        <li>
+                          <span class="map-swatch" style={`background:${item.swatch}`} />
+                          <span>{item.label}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            ) : null
           }
+          <figcaption>
+            {map.caption ? <p class="map-figure-caption">{map.caption}</p> : null}
+            {
+              credit ? (
+                <p>{credit}</p>
+              ) : map.previewKind === 'schematic' ? (
+                page.schematicNote
+              ) : (
+                `${map.sourceOrg}. ${map.year}.`
+              )
+            }
+          </figcaption>
         </figure>
         <div class="prose map-detail-copy">
           <div class="meta-row">
@@ -64,9 +93,9 @@ const title = `${map.title} — Fix Planet`;
           {
             map.whyOnShelf ? (
               <>
-                <h2>{page.whatLabel}</h2>
+                <h2>{heads?.what ?? page.whatLabel}</h2>
                 <p>{map.description}</p>
-                <h2>{page.whyOnShelfLabel}</h2>
+                <h2>{heads?.why ?? page.whyOnShelfLabel}</h2>
                 <p>{map.whyOnShelf}</p>
               </>
             ) : (
@@ -76,9 +105,9 @@ const title = `${map.title} — Fix Planet`;
           {
             map.sources?.length ? (
               <>
-                <h2>{page.howToRead}</h2>
+                <h2>{heads?.how ?? page.howToRead}</h2>
                 <p>{map.howToRead}</p>
-                <h2>{page.caveats}</h2>
+                <h2>{heads?.limits ?? page.caveats}</h2>
                 <p>{map.caveats}</p>
                 <CitedSourceList heading={page.sourcesList} sources={map.sources} />
                 <h2>{page.licenseLabel}</h2>
