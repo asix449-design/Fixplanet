@@ -1,0 +1,36 @@
+---
+import { LIVE_HAZARDS_PATH, LIVE_HAZARDS_SLUG } from '../data/live-hazards';
+import { mapCategoryKeys, mapCategoryPath } from '../data/maps';
+import { getLiveHazardsPage, getMapsPage, localizePath, resolveLocale } from '../i18n';
+
+interface Props {
+  active?: string;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMapsPage(locale);
+const live = getLiveHazardsPage(locale);
+const active = Astro.props.active;
+const tabs = [
+  {
+    key: LIVE_HAZARDS_SLUG,
+    label: live.tab,
+    href: localizePath(LIVE_HAZARDS_PATH, locale),
+  },
+  ...mapCategoryKeys.map((key) => ({
+    key,
+    label: page.categories[key],
+    href: localizePath(mapCategoryPath(key), locale),
+  })),
+];
+---
+
+<nav class="filters maps-filters" aria-label={page.filterAria}>
+  {
+    tabs.map((tab) => (
+      <a class:list={['filter-btn', { 'is-active': tab.key === active }]} href={tab.href}>
+        {tab.label}
+      </a>
+    ))
+  }
+</nav>

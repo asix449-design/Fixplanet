@@ -32,6 +32,7 @@ export {
   mapCategoryKeys,
 } from './maps';
 export { getBorderHistoryFrames, getBorderHistoryPage } from './border-history';
+export { getLiveHazardsPage } from './live-hazards';
 export {
   getReligionContinentLabels,
   getReligionHistoryFrames,

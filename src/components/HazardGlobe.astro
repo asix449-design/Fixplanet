@@ -1,0 +1,381 @@
+---
+import { LAYER_COLOR, LAYER_IDS } from '../lib/hazards.mjs';
+import { getLiveHazardsPage, resolveLocale } from '../i18n';
+import 'maplibre-gl/dist/maplibre-gl.css';
+
+const locale = resolveLocale(Astro.currentLocale);
+const copy = getLiveHazardsPage(locale);
+const colors = LAYER_COLOR as Record<string, string>;
+---
+
+<div
+  class="hz-board"
+  data-hazard-globe
+  data-locale={locale}
+  data-copy={JSON.stringify(copy)}
+  data-ready="false"
+>
+  <section class="hz-panel hz-layers" aria-label={copy.layersAria}>
+    <div class="hz-panel-head">
+      <h2>{copy.layersTitle}</h2>
+      <p class="hz-status" data-status>{copy.loading}</p>
+    </div>
+    <div class="hz-layer-list">
+      {
+        LAYER_IDS.map((id) => (
+          <label class="hz-layer">
+            <input type="checkbox" checked data-layer={id} />
+            <span class="hz-switch" aria-hidden="true"></span>
+            <span class="hz-swatch" style={`--hz:${colors[id]}`} aria-hidden="true"></span>
+            <span class="hz-layer-name">{copy.layers[id]}</span>
+            <span class="hz-live" data-live={id} title={copy.live}>
+              {copy.live}
+            </span>
+            <span class="hz-count" data-count={id}>
+              0
+            </span>
+          </label>
+        ))
+      }
+    </div>
+    <p class="hz-note" data-snapshot-note hidden>{copy.snapshotNote}</p>
+  </section>
+
+  <div class="hz-map" data-map role="region" aria-label={copy.mapLabel}>
+    <p class="hz-map-failed" data-map-failed hidden>{copy.mapFailed}</p>
+  </div>
+
+  <section class="hz-panel hz-feed" aria-label={copy.feedAria}>
+    <div class="hz-panel-head">
+      <h2>{copy.feedTitle}</h2>
+    </div>
+    <p class="hz-feed-empty" data-feed-empty hidden>{copy.feedEmpty}</p>
+    <p class="hz-feed-more" data-feed-more hidden></p>
+    <ol class="hz-feed-list" data-feed></ol>
+  </section>
+</div>
+
+<script>
+  import '../lib/hazard-globe.mjs';
+</script>
+
+<style>
+  .hz-board {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr) 320px;
+    gap: 0.7rem;
+    width: min(1480px, calc(100% - 28px));
+    margin: 0 auto 1.2rem;
+    height: calc(100dvh - 300px);
+    min-height: 520px;
+  }
+
+  .hz-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    background: rgba(8, 8, 8, 0.94);
+    border: 1px solid rgba(192, 255, 0, 0.28);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .hz-panel-head {
+    padding: 0.85rem 0.9rem 0.45rem;
+  }
+
+  .hz-panel-head h2 {
+    margin: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--lime);
+    font-weight: 700;
+  }
+
+  .hz-status,
+  .hz-note,
+  .hz-feed-empty,
+  .hz-feed-more,
+  .hz-map-failed {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .hz-note,
+  .hz-map-failed {
+    padding: 0 0.9rem 0.8rem;
+  }
+
+  .hz-layer-list {
+    overflow: auto;
+    padding: 0.15rem 0.7rem 0.7rem;
+  }
+
+  .hz-layer {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.48rem 0.2rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.12);
+    cursor: pointer;
+  }
+
+  .hz-layer input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  .hz-switch {
+    width: 34px;
+    height: 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(192, 255, 0, 0.4);
+    background: #1a1a1a;
+    position: relative;
+  }
+
+  .hz-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #8a8a82;
+  }
+
+  .hz-layer input:checked + .hz-switch {
+    background: var(--lime);
+    border-color: var(--lime);
+  }
+
+  .hz-layer input:checked + .hz-switch::after {
+    transform: translateX(14px);
+    background: #111;
+  }
+
+  .hz-layer input:focus-visible + .hz-switch {
+    outline: 2px solid var(--lime);
+    outline-offset: 2px;
+  }
+
+  .hz-swatch {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--hz);
+    box-shadow: 0 0 8px var(--hz);
+  }
+
+  .hz-layer-name {
+    color: var(--cream);
+    font-size: 0.92rem;
+  }
+
+  .hz-live {
+    background: var(--lime);
+    color: #041000;
+    border-radius: 4px;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.34rem;
+    line-height: 1.2;
+  }
+
+  .hz-count {
+    min-width: 2.2rem;
+    text-align: right;
+    color: var(--cream);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.86rem;
+  }
+
+  .hz-map {
+    position: relative;
+    min-height: 0;
+    height: 100%;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #050505;
+    border: 1px solid rgba(192, 255, 0, 0.28);
+  }
+
+  .hz-map-failed {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+  }
+
+  .hz-feed {
+    min-width: 0;
+  }
+
+  .hz-feed-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0.45rem 0.6rem;
+    overflow: auto;
+  }
+
+  .hz-feed-more,
+  .hz-feed-empty {
+    padding: 0 0.9rem;
+  }
+
+  :global(.hz-feed-btn .hz-swatch) {
+    width: 9px;
+    height: 9px;
+    margin-top: 0.35rem;
+    border-radius: 50%;
+    background: var(--hz);
+    box-shadow: 0 0 8px var(--hz);
+  }
+
+  :global(.hz-feed-btn) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.55rem;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    color: inherit;
+    border: 0;
+    border-left: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0.55rem 0.45rem;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  :global(.hz-feed-btn:hover),
+  :global(.hz-feed-btn.is-active) {
+    background: rgba(192, 255, 0, 0.08);
+    border-left-color: var(--lime);
+  }
+
+  :global(.hz-feed-copy) {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  :global(.hz-feed-title) {
+    color: var(--cream);
+    font-size: 0.92rem;
+  }
+
+  :global(.hz-feed-meta) {
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  :global(.hz-map .maplibregl-ctrl-group) {
+    background: #0a0a0a;
+    border: 1px solid rgba(192, 255, 0, 0.35);
+    box-shadow: none;
+  }
+
+  :global(.hz-map .maplibregl-ctrl-group button) {
+    filter: invert(1) hue-rotate(40deg);
+  }
+
+  :global(.hz-map .maplibregl-ctrl-attrib) {
+    background: rgba(0, 0, 0, 0.72);
+    color: #c8c8be;
+    font-size: 0.68rem;
+  }
+
+  :global(.hz-map .maplibregl-ctrl-attrib a) {
+    color: var(--lime);
+  }
+
+  :global(.hz-popup .maplibregl-popup-content) {
+    background: #0a0a0a;
+    color: var(--cream);
+    border: 1px solid rgba(192, 255, 0, 0.5);
+    border-radius: 12px;
+    padding: 0.75rem 0.85rem 0.7rem;
+    box-shadow: var(--shadow);
+  }
+
+  :global(.hz-popup .maplibregl-popup-close-button) {
+    color: var(--lime);
+    font-size: 1.15rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  :global(.hz-popup .maplibregl-popup-anchor-bottom .maplibregl-popup-tip) {
+    border-top-color: #0a0a0a;
+  }
+
+  :global(.hz-popup .maplibregl-popup-anchor-top .maplibregl-popup-tip) {
+    border-bottom-color: #0a0a0a;
+  }
+
+  :global(.hz-kicker),
+  :global(.hz-popup-level),
+  :global(.hz-popup-time),
+  :global(.hz-popup-source) {
+    margin: 0 0 0.35rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  :global(.hz-kicker) {
+    color: var(--lime);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  :global(.hz-popup-title) {
+    margin: 0 0 0.4rem;
+    color: var(--cream);
+    font-size: 1rem;
+  }
+
+  :global(.hz-popup-link) {
+    margin: 0.45rem 0 0;
+  }
+
+  @media (max-width: 980px) {
+    .hz-board {
+      display: block;
+      position: relative;
+      width: min(1480px, calc(100% - 16px));
+      height: calc(100dvh - 230px);
+      min-height: 520px;
+    }
+
+    .hz-map {
+      height: 100%;
+    }
+
+    .hz-layers,
+    .hz-feed {
+      position: absolute;
+      z-index: 2;
+      left: 8px;
+      right: 8px;
+      background: rgba(8, 8, 8, 0.9);
+    }
+
+    .hz-layers {
+      top: 8px;
+      max-height: 32%;
+    }
+
+    .hz-feed {
+      bottom: 2.5rem;
+      max-height: 22%;
+    }
+  }
+</style>

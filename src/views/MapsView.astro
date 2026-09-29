@@ -1,17 +1,17 @@
 ---
 import HubTile from '../components/HubTile.astro';
 import MapCard from '../components/MapCard.astro';
+import MapShelfNav from '../components/MapShelfNav.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { LIVE_HAZARDS_PATH } from '../data/live-hazards';
 import {
   isMapCategory,
-  mapCategoryKeys,
-  mapCategoryPath,
   mapHub,
   mapsHubBackdrop,
   mapsHubSrc,
   type MapCategory,
 } from '../data/maps';
-import { getMapsByCategory, getMapsPage, localizePath, resolveLocale } from '../i18n';
+import { getLiveHazardsPage, getMapsByCategory, getMapsPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
   hub?: boolean;
@@ -29,11 +29,7 @@ const activeCategory: MapCategory | undefined = hub
     : undefined;
 
 const maps = activeCategory ? getMapsByCategory(locale, activeCategory) : [];
-const filters = mapCategoryKeys.map((key) => ({
-  key,
-  label: page.categories[key],
-  href: localizePath(mapCategoryPath(key), locale),
-}));
+const live = getLiveHazardsPage(locale);
 const shelfTitle = activeCategory ? page.categories[activeCategory] : page.title;
 const shelfLede = activeCategory ? page.tiles[activeCategory] : page.lead;
 const shelfEyebrow =
@@ -91,22 +87,34 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
             <p class="oceans-hero-credit">{page.photoCredit}</p>
           </div>
           <nav class="hub-grid maps-hub-hero-tiles" aria-label={page.filterAria}>
-            {mapHub.map((item) => (
-              <HubTile
-                href={localizePath(mapCategoryPath(item.key), locale)}
-                icon={item.icon}
-                title={page.categories[item.key]}
-                text={page.tiles[item.key]}
-                lead={item.lead === true}
-                badge={
-                  item.key === 'history-of-borders' || item.key === 'religious'
-                    ? page.centuryBadge
-                    : undefined
-                }
-                badgeTone={
-                  item.key === 'history-of-borders' || item.key === 'religious' ? 'atlas' : 'soon'
-                }
-              />
+            {mapHub.map((item, index) => (
+              <>
+                <HubTile
+                  href={localizePath(`/maps/${item.key}`, locale)}
+                  icon={item.icon}
+                  title={page.categories[item.key]}
+                  text={page.tiles[item.key]}
+                  lead={item.lead === true}
+                  badge={
+                    item.key === 'history-of-borders' || item.key === 'religious'
+                      ? page.centuryBadge
+                      : undefined
+                  }
+                  badgeTone={
+                    item.key === 'history-of-borders' || item.key === 'religious' ? 'atlas' : 'soon'
+                  }
+                />
+                {index === 0 ? (
+                  <HubTile
+                    href={localizePath(LIVE_HAZARDS_PATH, locale)}
+                    icon="alert"
+                    title={live.tab}
+                    text={live.hubText}
+                    badge={live.live}
+                    badgeTone="atlas"
+                  />
+                ) : null}
+              </>
             ))}
           </nav>
         </div>
@@ -114,16 +122,7 @@ const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fi
     ) : (
       <section class="section maps-catalog">
         <div class="wrap">
-          <nav class="filters maps-filters" aria-label={page.filterAria}>
-            {filters.map((filter) => (
-              <a
-                class:list={['filter-btn', { 'is-active': filter.key === activeCategory }]}
-                href={filter.href}
-              >
-                {filter.label}
-              </a>
-            ))}
-          </nav>
+          <MapShelfNav active={activeCategory} />
           {maps.length === 0 ? (
             <p class="wildlife-tab-lead">{page.empty}</p>
           ) : (

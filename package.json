@@ -6,7 +6,8 @@
   "description": "Fix Planet — a living atlas of technologies that repair the planet.",
   "scripts": {
     "dev": "astro dev --host",
-    "build": "astro build",
+    "build": "node scripts/copy-maplibre-worker.mjs && astro build",
+    "fetch:hazards": "node scripts/fetch-hazards.mjs",
     "preview": "astro preview --host",
     "astro": "astro"
   },
@@ -16,6 +17,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.5.1",
     "astro": "^5.13.7",
+    "maplibre-gl": "^6.11.2",
     "three": "^0.170.0"
   }
 }
