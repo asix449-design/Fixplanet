@@ -1,4 +1,5 @@
 import type { MapCopy } from '../data/maps';
+import { cite } from '../data/sources';
 
 export const pl: Record<string, MapCopy> = {
   'armed-conflict-events': {
@@ -289,31 +290,73 @@ export const pl: Record<string, MapCopy> = {
   },
   'oil-gas-reserves': {
     title: 'Ropa i gaz na świecie',
-    hook: 'Amerykański rządowy obraz ropy i gazu — złoża, rezerwy i przepływy, nie ekran giełdowy.',
+    cardMeta: 'Amerykańska Agencja Informacji Energetycznej · ropa i gaz ziemny · 2023–2024',
+    hook: 'Złoża, rezerwy i handel ropą oraz gazem ziemnym według Amerykańskiej Agencji Informacji Energetycznej.',
     description:
-      'Amerykańska Energy Information Administration publikuje międzynarodowe statystyki, analizy krajów i mapy ropy i gazu. Oceny naftowe USGS szacują nieodkryte zasoby technicznie wydobywalne. To nie jest terminal transakcyjny.',
+      'Amerykańska Agencja Informacji Energetycznej publikuje międzynarodowe statystyki, analizy krajów oraz mapy ropy i gazu. Oceny Służby Geologicznej Stanów Zjednoczonych opisują nieodkryte zasoby, które da się wydobyć technicznie. Szeregi obejmują złoża, rezerwy i przepływy handlowe.',
     howToRead:
-      'Rezerwy to ilości uznane za ekonomiczne przy dzisiejszych cenach i technice; zasoby są szersze i mniej pewne. Pokolorowany basen to nie zgoda na wiertnię. Rurociągi i LNG zmieniają, czyj gaz kto spala.',
+      'Rezerwy to ilości uznane za ekonomiczne przy dzisiejszych cenach i technice. Zasoby geologiczne są szersze, a ich szacunek mniej pewny. Kolorowy kontur na tej mapie oznacza oceniony basen gazu łupkowego. Rurociągi i skroplony gaz ziemny prowadzą gaz z kraju wydobycia do kraju, który go zużywa.',
     caveats:
-      'Krajowe raporty rezerw bywają polityczne. Liczby EIA i tak należą do najczytelniejszych publicznych szeregów. Nie wypisujemy tu baryłek pole po polu.',
+      'Kraje same sporządzają raporty o rezerwach, a raporty te idą za krajowymi zasadami obok geologii. Liczby Amerykańskiej Agencji Informacji Energetycznej należą do najbardziej przejrzystych publicznych szeregów. Publiczne tabele podają sumy krajowe i ocenione baseny.',
     licenseNote:
-      'Prace EIA i USGS rządu USA są zwykle w domenie publicznej. Aktualne mapy i tabele są na międzynarodowych stronach EIA.',
+      'Prace Amerykańskiej Agencji Informacji Energetycznej i Służby Geologicznej Stanów Zjednoczonych to dzieła rządu Stanów Zjednoczonych w domenie publicznej. Podgląd to wycinek mapy ocenionych basenów gazu łupkowego tej agencji. Aktualne mapy i tabele ropy i gazu są na jej stronach międzynarodowych.',
     imageAlt:
-      'Mapa EIA ocenionych basenów gazu łupkowego: białe i szare kraje z bordowymi i żółtymi wielokątami basenów',
+      'Mapa świata ocenionych basenów gazu łupkowego Amerykańskiej Agencji Informacji Energetycznej: białe i szare kraje oraz bordowe i żółte wielokąty basenów',
+    caption:
+      'Ocenione baseny gazu łupkowego, wycinek mapy Amerykańskiej Agencji Informacji Energetycznej w domenie publicznej.',
+    legend: [
+      {
+        title: 'Legenda mapy',
+        items: [
+          { swatch: '#97272b', label: 'Ocenione baseny z szacunkiem zasobów' },
+          { swatch: '#fef984', label: 'Ocenione baseny bez szacunku zasobów' },
+          { swatch: '#fdfefe', label: 'Kraje objęte zakresem raportu' },
+        ],
+      },
+    ],
+    gridSource: cite(
+      'Amerykańska Agencja Informacji Energetycznej, międzynarodowe dane energetyczne',
+      'https://www.eia.gov/international/data/world',
+    ),
+    sources: [
+      cite(
+        'Amerykańska Agencja Informacji Energetycznej: przegląd międzynarodowy (International overview)',
+        'https://www.eia.gov/international/overview/world.php',
+      ),
+      cite(
+        'Amerykańska Agencja Informacji Energetycznej: międzynarodowe dane energetyczne (International energy data)',
+        'https://www.eia.gov/international/data/world',
+      ),
+    ],
   },
   'mineral-resources': {
     title: 'Złoża i surowce mineralne',
-    hook: 'Mapy USGS znanych metali i minerałów przemysłowych, w tym złota — nie mapa skarbów.',
+    cardMeta: 'Służba Geologiczna Stanów Zjednoczonych · złoża i surowce · 2024',
+    hook: 'Znane złoża metali i minerałów przemysłowych, w tym złota, według Służby Geologicznej Stanów Zjednoczonych.',
     description:
-      'Program zasobów mineralnych USGS i MRDATA zbierają złoża, przejawy i roczne zestawienia (złoto, miedź, żelazo, lit i inne). Mineral Commodity Summaries to publiczny roczny rejestr produkcji i rezerw.',
+      'Program zasobów mineralnych Służby Geologicznej Stanów Zjednoczonych i jej system danych o zasobach mineralnych zbierają złoża, przejawy i zestawienia surowców: złoto, miedź, żelazo, lit i inne. „Przegląd surowców mineralnych” to publiczny roczny rejestr produkcji i zasobów.',
     howToRead:
-      'Punkt to znane złoże albo okręg, nie kopalnia do zwiedzania. „Rezerwa” to wielkość ekonomiczna; „zasób” — geologiczna. Złoto często leży z innymi metalami. Miejsca rzemieślnicze mogą zniknąć z warstwy.',
+      'Każdy punkt to znane złoże albo okręg w systemie danych o zasobach mineralnych. Rezerwa to wielkość ekonomiczna. Zasób to wielkość geologiczna. Złoto często występuje z innymi metalami. Miejsca wydobycia rzemieślniczego w tej warstwie często są pominięte.',
     caveats:
-      'Kompletność różni się krajem i tajemnicą. Puste miejsce może znaczyć brak zdjęcia, nie brak skały. Szkody wydobycia nie siedzą w warstwie geologii.',
+      'Kompletność różni się krajem i tym, ile państwo publikuje. Puste miejsce to obszar, w którym ten przegląd nie ma zapisanego złoża. Warstwa zapisuje położenie i rodzaj surowca.',
     licenseNote:
-      'Informacje USGS są zwykle w domenie publicznej. Otwórz MRDATA i podsumowania zamiast kopiować płatne atlasy branżowe.',
+      'Informacje Służby Geologicznej Stanów Zjednoczonych są w domenie publicznej. Podgląd to przegląd Fix Planet zapisanych okręgów złota, miedzi, żelaza, litu i metali ziem rzadkich na podstawie systemu danych o zasobach mineralnych.',
     imageAlt:
-      'Beżowa mapa świata z kolorowymi punktami znanych okręgów mineralnych: złoto, miedź, żelazo, lit i ziemie rzadkie',
+      'Beżowa mapa świata z kolorowymi punktami zapisanych okręgów mineralnych: złoto, miedź, żelazo, lit i metale ziem rzadkich',
+    gridSource: cite(
+      'Służba Geologiczna Stanów Zjednoczonych, system danych o zasobach mineralnych',
+      'https://mrdata.usgs.gov/',
+    ),
+    sources: [
+      cite(
+        'Służba Geologiczna Stanów Zjednoczonych: program zasobów mineralnych (Mineral Resources Program)',
+        'https://www.usgs.gov/programs/mineral-resources-program',
+      ),
+      cite(
+        'Służba Geologiczna Stanów Zjednoczonych: system danych o zasobach mineralnych (Mineral Resources Data System)',
+        'https://mrdata.usgs.gov/',
+      ),
+    ],
   },
   'world-countries': {
     title: 'Państwa i granice świata',

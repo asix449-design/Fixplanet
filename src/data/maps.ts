@@ -82,7 +82,7 @@ export type MapCopy = {
   caveats: string;
   licenseNote: string;
   imageAlt: string;
-  /** When set, the detail page uses What / Why on this shelf headings. */
+  /** When set, the detail page uses What / Why headings. */
   whyOnShelf?: string;
   /** Locale override of the grid meta line. English stays on MapMeta.cardMeta. */
   cardMeta?: string;
@@ -609,6 +609,10 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://www.eia.gov/international/data/world',
     preview: 'oil-gas-reserves.jpg',
     previewKind: 'photo',
+    fit: 'contain',
+    frameColor: '#d5effe',
+    previewWidth: 1600,
+    previewHeight: 766,
   },
   {
     slug: 'mineral-resources',
@@ -621,6 +625,96 @@ export const mapMeta: MapMeta[] = [
     preview: 'mineral-resources.jpg',
     detail: 'detail/mineral-resources.webp',
     previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#0a1720',
+    previewWidth: 1600,
+    previewHeight: 800,
+  },
+  {
+    slug: 'coal-mines',
+    category: 'subsurface',
+    year: '2026',
+    sourceShort: 'GEM',
+    sourceOrg: 'Global Energy Monitor',
+    sourceUrl: 'https://globalenergymonitor.org/projects/global-coal-mine-tracker',
+    openMapUrl: 'https://globalenergymonitor.org/projects/global-coal-mine-tracker',
+    preview: 'coal-mines.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#ffffff',
+    previewWidth: 1200,
+    previewHeight: 560,
+    cardMeta: 'Global Energy Monitor · about 7,000 mines · August 2026 release',
+  },
+  {
+    slug: 'coal-reserves',
+    category: 'subsurface',
+    year: '2023',
+    sourceShort: 'EIA',
+    sourceOrg: 'U.S. Energy Information Administration',
+    sourceUrl:
+      'https://ourworldindata.org/grapher/fossil-fuels?fuel=coal&metric=reserves&per_capita=total',
+    openMapUrl:
+      'https://ourworldindata.org/grapher/fossil-fuels?fuel=coal&metric=reserves&per_capita=total',
+    preview: 'coal-reserves.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#ffffff',
+    previewWidth: 1200,
+    previewHeight: 560,
+    cardMeta: 'U.S. Energy Information Administration · proved reserves · 2023',
+  },
+  {
+    slug: 'critical-mineral-production',
+    category: 'subsurface',
+    year: '2023',
+    sourceShort: 'USGS',
+    sourceOrg: 'U.S. Geological Survey',
+    sourceUrl: 'https://pubs.usgs.gov/publication/fs20253038',
+    openMapUrl: 'https://pubs.usgs.gov/publication/fs20253038',
+    preview: 'critical-mineral-production.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#ffffff',
+    previewWidth: 1200,
+    previewHeight: 560,
+    cardMeta: 'U.S. Geological Survey · mining and processing · 2023',
+  },
+  {
+    slug: 'rare-earths',
+    category: 'subsurface',
+    year: '2024',
+    sourceShort: 'USGS',
+    sourceOrg: 'U.S. Geological Survey',
+    sourceUrl:
+      'https://www.usgs.gov/centers/national-minerals-information-center/rare-earths-statistics-and-information',
+    openMapUrl:
+      'https://www.usgs.gov/centers/national-minerals-information-center/rare-earths-statistics-and-information',
+    preview: 'rare-earths.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#ffffff',
+    previewWidth: 1200,
+    previewHeight: 560,
+    cardMeta: 'U.S. Geological Survey · mine production and reserves · 2024',
+  },
+  {
+    slug: 'lithium',
+    category: 'subsurface',
+    year: '2024',
+    sourceShort: 'USGS',
+    sourceOrg: 'U.S. Geological Survey',
+    sourceUrl:
+      'https://www.usgs.gov/centers/national-minerals-information-center/lithium-statistics-and-information',
+    openMapUrl:
+      'https://www.usgs.gov/centers/national-minerals-information-center/lithium-statistics-and-information',
+    preview: 'lithium.png',
+    previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#ffffff',
+    previewWidth: 1200,
+    previewHeight: 560,
+    cardMeta: 'U.S. Geological Survey · mine production and reserves · 2024',
   },
   {
     slug: 'world-countries',
