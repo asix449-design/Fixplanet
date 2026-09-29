@@ -8,9 +8,24 @@ export const USGS_WEEK_URL =
   'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson';
 export const GDACS_URL =
   'https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH';
+
+export function gdacsTypedUrl(eventlist, fromdate, todate) {
+  const url = new URL(GDACS_URL);
+  url.searchParams.set('eventlist', eventlist);
+  url.searchParams.set('alertlevel', 'Green;Orange;Red');
+  url.searchParams.set('fromdate', fromdate);
+  url.searchParams.set('todate', todate);
+  return url.href;
+}
 export const EONET_EVENTS_URL = 'https://eonet.gsfc.nasa.gov/api/v3/events';
+/** Public VIIRS 24h file. No key. No CORS, so only the fetch script reads it. */
 export const FIRMS_URL =
-  'https://firms.modaps.eosdis.nasa.gov/data/active_fire/modis-c6.1/csv/MODIS_C6_1_Global_24h.csv';
+  'https://firms.modaps.eosdis.nasa.gov/data/active_fire/suomi-npp-viirs-c2/csv/SUOMI_VIIRS_C2_Global_24h.csv';
+export const NHC_MAPSERVER =
+  'https://mapservices.weather.noaa.gov/tropical/rest/services/tropical/NHC_tropical_weather/MapServer';
+export const USGS_VOLCANO_URL =
+  'https://volcanoes.usgs.gov/hans-public/api/volcano/getCapElevated';
+export const DROUGHT_WMS = 'https://drought.emergency.copernicus.eu/api/wms';
 
 export const LAYER_IDS = [
   'earthquakes',
@@ -20,6 +35,17 @@ export const LAYER_IDS = [
   'droughts',
   'wildfires',
   'fires',
+];
+
+/** Panel order follows the data pack. `fires` is the satellite hot-spot layer. */
+export const PANEL_IDS = [
+  'earthquakes',
+  'fires',
+  'cyclones',
+  'floods',
+  'volcanoes',
+  'droughts',
+  'wildfires',
 ];
 
 /** Draw order is bottom to top. Earthquakes stay readable above fire dots. */
@@ -55,13 +81,21 @@ export const LAYER_SOURCES = {
 
 /** EONET wildfires older than this are left off the live globe. */
 export const WILDFIRE_MAX_AGE_DAYS = 30;
-/** MODIS confidence is 0-100. Low values are weak detections. */
-export const FIRMS_MIN_CONFIDENCE = 80;
-/** Cap so a heavy fire day cannot bloat the snapshot. */
-export const FIRMS_MAP_CAP = 6000;
-/** Strongest detections listed beside the map. The map still shows the rest. */
+/** VIIRS confidence words kept in the snapshot. */
+export const FIRMS_CONFIDENCE = new Set(['nominal', 'high']);
+/** One kept hot spot per cell of this size, in degrees. */
+export const FIRMS_CELL_DEG = 0.05;
+/** Strongest cells listed beside the map. The map still shows the rest. */
 export const FIRMS_FEED_LIMIT = 30;
 export const FEED_LIMIT = 100;
+
+export function droughtTileUrl(layer) {
+  return (
+    `${DROUGHT_WMS}?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap` +
+    `&LAYERS=${layer}&SRS=EPSG:3857&BBOX={bbox-epsg-3857}` +
+    '&WIDTH=256&HEIGHT=256&STYLE=&FORMAT=image/png&TRANSPARENT=true'
+  );
+}
 
 const GDACS_LAYER = {
   TC: 'cyclones',
@@ -192,6 +226,13 @@ export function parseGdacs(collection, fetchedAt = new Date().toISOString()) {
     const props = feature.properties || {};
     const layer = GDACS_LAYER[props.eventtype];
     if (!layer) continue;
+    if (
+      layer !== 'droughts' &&
+      props.iscurrent != null &&
+      String(props.iscurrent) !== 'true'
+    ) {
+      continue;
+    }
     const point = lonLatFromGeometry(feature.geometry);
     const time = toIso(props.fromdate) || toIso(props.todate) || toIso(props.datemodified);
     if (!point || !time) continue;
@@ -277,55 +318,290 @@ export function parseEonetCategory(events, layer, now = Date.now(), fetchedAt = 
   return { fetchedAt, events: out };
 }
 
-export function parseFirmsCsv(text, fetchedAt = new Date().toISOString()) {
-  const lines = String(text || '')
-    .split(/\r?\n/)
-    .filter((line) => line.trim());
-  if (lines.length < 2) return { fetchedAt, events: [] };
+function snapCell(index) {
+  return Math.round(index * 5) / 100;
+}
+
+/**
+ * Keep nominal and high confidence, one point per 0.05 degree cell,
+ * highest fire radiative power in the cell. Compact [lat, lon, frp].
+ */
+export function thinFirmsCsv(text, fetchedAt = new Date().toISOString()) {
+  const lines = String(text || '').split(/\r?\n/);
+  if (lines.length < 2) return { fetchedAt, count: 0, points: [] };
   const header = lines[0].split(',').map((cell) => cell.trim());
   const index = Object.fromEntries(header.map((name, i) => [name, i]));
-  const need = ['latitude', 'longitude', 'acq_date', 'acq_time', 'confidence', 'frp'];
-  if (need.some((name) => index[name] == null)) return { fetchedAt, events: [] };
+  const need = ['latitude', 'longitude', 'confidence', 'frp'];
+  if (need.some((name) => index[name] == null)) return { fetchedAt, count: 0, points: [] };
 
-  const events = [];
+  const cells = new Map();
   for (let i = 1; i < lines.length; i += 1) {
-    const cols = lines[i].split(',');
-    const confidence = num(cols[index.confidence]);
-    if (confidence == null || confidence < FIRMS_MIN_CONFIDENCE) continue;
+    const line = lines[i];
+    if (!line) continue;
+    const cols = line.split(',');
+    const confidence = String(cols[index.confidence] || '').trim().toLowerCase();
+    if (!FIRMS_CONFIDENCE.has(confidence)) continue;
     const lat = num(cols[index.latitude]);
     const lon = num(cols[index.longitude]);
     if (lat == null || lon == null || lat < -90 || lat > 90 || lon < -180 || lon > 180) continue;
-    const clock = String(cols[index.acq_time] || '').padStart(4, '0');
-    const time = toIso(`${cols[index.acq_date]}T${clock.slice(0, 2)}:${clock.slice(2, 4)}:00Z`);
-    if (!time) continue;
-    const frp = num(cols[index.frp]);
-    events.push({
-      id: `firms-${lat.toFixed(3)}-${lon.toFixed(3)}-${time}`,
+    const frp = num(cols[index.frp]) ?? 0;
+    const latIndex = Math.floor(lat / FIRMS_CELL_DEG);
+    const lonIndex = Math.floor(lon / FIRMS_CELL_DEG);
+    const key = `${latIndex}:${lonIndex}`;
+    const prev = cells.get(key);
+    if (!prev || frp > prev[2] || (frp === prev[2] && confidence === 'high')) {
+      cells.set(key, [snapCell(latIndex), snapCell(lonIndex), frp, confidence === 'high' ? 1 : 0]);
+    }
+  }
+
+  let points = [...cells.values()].map(([lat, lon, frp]) => [
+    lat,
+    lon,
+    Math.round(frp * 10) / 10,
+  ]);
+  let encoded = JSON.stringify(points);
+  if (encoded.length > 700000) {
+    points = points.map(([lat, lon, frp]) => [lat, lon, Math.max(0, Math.round(frp))]);
+    encoded = JSON.stringify(points);
+  }
+  points.sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
+  return { fetchedAt, count: points.length, points, bytes: encoded.length };
+}
+
+/** Map compact fire cells, or an older event list, into globe events. */
+export function fireEvents(layer) {
+  if (!layer) return [];
+  if (Array.isArray(layer.points)) {
+    const time = layer.fetchedAt || new Date(0).toISOString();
+    return layer.points.map((point, index) => ({
+      id: `firms-${index}`,
       layer: 'fires',
       title: '',
+      lat: point[0],
+      lon: point[1],
+      time,
+      frp: point[2],
+      url: 'https://firms.modaps.eosdis.nasa.gov/map/',
+      source: 'FIRMS',
+    }));
+  }
+  return layer.events || [];
+}
+
+const USGS_VOLCANO_ALERT = { RED: 'Red', ORANGE: 'Orange', YELLOW: 'Yellow', GREEN: 'Green' };
+
+export function parseUsgsVolcanoes(rows, fetchedAt = new Date().toISOString()) {
+  const events = [];
+  for (const row of rows || []) {
+    const lat = num(row?.latitude);
+    const lon = num(row?.longitude);
+    if (lat == null || lon == null) continue;
+    const time = toIso(row.sent_date_cap) || fetchedAt;
+    events.push({
+      id: `usgs-volcano-${row.vnum || events.length}`,
+      layer: 'volcanoes',
+      title: String(row.volcano_name_appended || 'USGS').replace(/\s+/g, ' ').trim(),
       lat,
       lon,
       time,
-      frp: frp == null ? undefined : frp,
-      confidence: Math.round(confidence),
-      url: 'https://firms.modaps.eosdis.nasa.gov/map/',
-      source: 'FIRMS',
+      alert: USGS_VOLCANO_ALERT[String(row.color_code || '').toUpperCase()],
+      url: 'https://volcanoes.usgs.gov/vhp/updates.html',
+      source: 'USGS',
     });
   }
-  events.sort((a, b) => (b.frp || 0) - (a.frp || 0));
-  const capped = events.slice(0, FIRMS_MAP_CAP);
-  capped.sort((a, b) => Date.parse(b.time) - Date.parse(a.time));
-  return { fetchedAt, events: capped };
+  events.sort((a, b) => Date.parse(b.time) - Date.parse(a.time));
+  return events;
 }
 
-/** Drop EONET storms whose name is already on a GDACS cyclone. */
+function roundPair(pair) {
+  if (!Array.isArray(pair) || pair.length < 2) return null;
+  const lon = Number(pair[0]);
+  const lat = Number(pair[1]);
+  if (!Number.isFinite(lon) || !Number.isFinite(lat)) return null;
+  return [Math.round(lon * 100) / 100, Math.round(lat * 100) / 100];
+}
+
+function simplifyPositions(coordinates) {
+  const out = [];
+  for (const pair of coordinates || []) {
+    const next = roundPair(pair);
+    if (!next) continue;
+    const prev = out[out.length - 1];
+    if (prev && prev[0] === next[0] && prev[1] === next[1]) continue;
+    out.push(next);
+  }
+  return out;
+}
+
+function simplifyGeometry(geometry) {
+  if (!geometry) return null;
+  if (geometry.type === 'LineString') {
+    const coordinates = simplifyPositions(geometry.coordinates);
+    return coordinates.length > 1 ? { type: 'LineString', coordinates } : null;
+  }
+  if (geometry.type === 'Polygon') {
+    const coordinates = (geometry.coordinates || [])
+      .map((ring) => simplifyPositions(ring))
+      .filter((ring) => ring.length > 3);
+    return coordinates.length ? { type: 'Polygon', coordinates } : null;
+  }
+  if (geometry.type === 'MultiLineString') {
+    const coordinates = (geometry.coordinates || [])
+      .map((line) => simplifyPositions(line))
+      .filter((line) => line.length > 1);
+    return coordinates.length ? { type: 'MultiLineString', coordinates } : null;
+  }
+  if (geometry.type === 'MultiPolygon') {
+    const coordinates = [];
+    for (const polygon of geometry.coordinates || []) {
+      const rings = (polygon || [])
+        .map((ring) => simplifyPositions(ring))
+        .filter((ring) => ring.length > 3);
+      if (rings.length) coordinates.push(rings);
+    }
+    return coordinates.length ? { type: 'MultiPolygon', coordinates } : null;
+  }
+  return null;
+}
+
+export function nhcPlan(listing) {
+  const layers = listing?.layers || [];
+  const pick = (suffix) =>
+    layers
+      .filter((layer) => layer.geometryType && String(layer.name || '').endsWith(suffix))
+      .map((layer) => layer.id);
+  return {
+    points: pick('Forecast Points'),
+    cones: pick('Forecast Cone'),
+    tracks: pick('Forecast Track'),
+    past: pick('Past Track'),
+  };
+}
+
+export function nhcQueryUrl(id) {
+  return `${NHC_MAPSERVER}/${id}/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson`;
+}
+
+export function nhcCountUrl(id) {
+  return `${NHC_MAPSERVER}/${id}/query?where=1%3D1&returnCountOnly=true&f=json`;
+}
+
+function finiteWind(value) {
+  const wind = num(value);
+  if (wind == null || wind <= 0 || wind >= 9999) return undefined;
+  return wind;
+}
+
+export function assembleNhc(groups, fetchedAt = new Date().toISOString()) {
+  const names = new Map();
+  const current = new Map();
+  for (const collection of groups.points || []) {
+    for (const feature of collection?.features || []) {
+      const props = feature.properties || {};
+      const point = pair(feature.geometry?.coordinates);
+      if (!point) continue;
+      const slot = String(props.binnumber || props.stormnum || '');
+      if (props.stormname) names.set(slot, String(props.stormname));
+      const tau = num(props.tau);
+      const prev = current.get(slot);
+      if (prev && tau != null && prev.tau != null && tau >= prev.tau) continue;
+      const time = toIso(props.idp_ingestdate) || fetchedAt;
+      current.set(slot, {
+        tau,
+        event: {
+          id: `nhc-${slot || current.size}`,
+          layer: 'cyclones',
+          title: String(props.stormname || 'NHC'),
+          lat: point.lat,
+          lon: point.lon,
+          time,
+          knots: finiteWind(props.maxwind),
+          url: 'https://www.nhc.noaa.gov/',
+          source: 'NHC',
+        },
+      });
+    }
+  }
+
+  const cones = [];
+  for (const collection of groups.cones || []) {
+    for (const feature of collection?.features || []) {
+      const geometry = simplifyGeometry(feature.geometry);
+      if (!geometry) continue;
+      const props = feature.properties || {};
+      const slot = String(props.binnumber || '');
+      const title = String(props.stormname || names.get(slot) || '');
+      cones.push({
+        type: 'Feature',
+        geometry,
+        properties: {
+          id: `nhc-${slot || cones.length}`,
+          title,
+          time: toIso(props.idp_ingestdate) || fetchedAt,
+        },
+      });
+    }
+  }
+
+  const tracks = [];
+  const pushTracks = (collections, kind) => {
+    for (const collection of collections || []) {
+      for (const feature of collection?.features || []) {
+        const geometry = simplifyGeometry(feature.geometry);
+        if (!geometry) continue;
+        const props = feature.properties || {};
+        const slot = String(props.binnumber || '');
+        tracks.push({
+          type: 'Feature',
+          geometry,
+          properties: {
+            id: `nhc-${slot || tracks.length}`,
+            title: String(props.stormname || names.get(slot) || ''),
+            kind,
+          },
+        });
+      }
+    }
+  };
+  pushTracks(groups.tracks, 'forecast');
+  pushTracks(groups.past, 'past');
+
+  return {
+    fetchedAt,
+    events: [...current.values()].map((item) => item.event),
+    cones: { type: 'FeatureCollection', features: cones },
+    tracks: { type: 'FeatureCollection', features: tracks },
+  };
+}
+
+export async function loadNhcSnapshot(fetchedAt, fetchJson) {
+  const listing = await fetchJson(`${NHC_MAPSERVER}?f=json`);
+  const plan = nhcPlan(listing);
+  const groups = { points: [], cones: [], tracks: [], past: [] };
+  const jobs = [];
+  for (const key of Object.keys(groups)) {
+    for (const id of plan[key]) {
+      jobs.push(
+        fetchJson(nhcCountUrl(id)).then(async (countBody) => {
+          if (!countBody?.count) return;
+          const collection = await fetchJson(nhcQueryUrl(id));
+          if (collection?.features?.length) groups[key].push(collection);
+        }),
+      );
+    }
+  }
+  await Promise.all(jobs);
+  return assembleNhc(groups, fetchedAt);
+}
+
+/** Drop EONET and NHC storms whose name is already on a GDACS cyclone. */
 export function dedupeCyclones(events) {
   const gdacsNames = events
     .filter((event) => event.source === 'GDACS' && event.layer === 'cyclones')
     .map((event) => event.title.toUpperCase());
   return events.filter((event) => {
-    if (event.source !== 'EONET' || event.layer !== 'cyclones') return true;
-    const token = (event.title.split(/\s+/).pop() || '').replace(/[^A-Z]/gi, '').toUpperCase();
+    if (event.layer !== 'cyclones' || (event.source !== 'EONET' && event.source !== 'NHC')) return true;
+    const token = (event.title.split(/\s+/).pop() || '').replace(/[^A-Z0-9]/gi, '').toUpperCase();
     if (token.length < 3) return true;
     return !gdacsNames.some((name) => name.includes(token));
   });

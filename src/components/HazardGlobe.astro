@@ -1,5 +1,5 @@
 ---
-import { LAYER_COLOR, LAYER_IDS } from '../lib/hazards.mjs';
+import { LAYER_COLOR, PANEL_IDS } from '../lib/hazards.mjs';
 import { getLiveHazardsPage, resolveLocale } from '../i18n';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -22,22 +22,42 @@ const colors = LAYER_COLOR as Record<string, string>;
     </div>
     <div class="hz-layer-list">
       {
-        LAYER_IDS.map((id) => (
+        PANEL_IDS.map((id) => (
           <label class="hz-layer">
             <input type="checkbox" checked data-layer={id} />
             <span class="hz-switch" aria-hidden="true"></span>
             <span class="hz-swatch" style={`--hz:${colors[id]}`} aria-hidden="true"></span>
-            <span class="hz-layer-name">{copy.layers[id]}</span>
-            <span class="hz-live" data-live={id} title={copy.live}>
-              {copy.live}
+            <span class="hz-layer-copy">
+              <span class="hz-layer-name">{copy.layers[id]}</span>
+              <span class="hz-caption">{copy.captions[id]}</span>
             </span>
-            <span class="hz-count" data-count={id}>
-              0
+            <span class="hz-side">
+              <span class="hz-live" data-live={id} title={copy.live}>
+                {copy.live}
+              </span>
+              <span class="hz-count" data-count={id}>
+                0
+              </span>
+              <span class="hz-when" data-when={id}></span>
             </span>
           </label>
         ))
       }
+      <label class="hz-layer">
+        <input type="checkbox" data-raster="droughtEurope" />
+        <span class="hz-switch" aria-hidden="true"></span>
+        <span class="hz-swatch" style="--hz:#e6c15a" aria-hidden="true"></span>
+        <span class="hz-layer-copy">
+          <span class="hz-layer-name">{copy.droughtEurope}</span>
+          <span class="hz-caption">{copy.droughtEuropeCaption}</span>
+        </span>
+        <span class="hz-side">
+          <span class="hz-live">{copy.live}</span>
+        </span>
+      </label>
     </div>
+    <p class="hz-note" data-raster-note hidden>{copy.rasterNote}</p>
+    <p class="hz-note" data-raster-europe-note hidden>{copy.rasterEuropeNote}</p>
     <p class="hz-note" data-snapshot-note hidden>{copy.snapshotNote}</p>
   </section>
 
@@ -62,7 +82,8 @@ const colors = LAYER_COLOR as Record<string, string>;
 <style>
   .hz-board {
     display: grid;
-    grid-template-columns: 280px minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(260px, 340px) minmax(0, 1fr) 300px;
+    scroll-margin-top: calc(var(--header-h) + 8px);
     gap: 0.7rem;
     width: min(1480px, calc(100% - 28px));
     margin: 0 auto 1.2rem;
@@ -116,10 +137,10 @@ const colors = LAYER_COLOR as Record<string, string>;
   .hz-layer {
     position: relative;
     display: grid;
-    grid-template-columns: auto auto minmax(0, 1fr) auto auto;
-    align-items: center;
+    grid-template-columns: auto auto minmax(0, 1fr) auto;
+    align-items: start;
     gap: 0.45rem;
-    padding: 0.48rem 0.2rem;
+    padding: 0.55rem 0.2rem;
     border-top: 1px solid rgba(192, 255, 0, 0.12);
     cursor: pointer;
   }
@@ -174,9 +195,37 @@ const colors = LAYER_COLOR as Record<string, string>;
     box-shadow: 0 0 8px var(--hz);
   }
 
+  .hz-layer-copy {
+    min-width: 0;
+  }
+
   .hz-layer-name {
+    display: block;
     color: var(--cream);
-    font-size: 0.92rem;
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .hz-caption {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--muted);
+    font-size: 0.75rem;
+    line-height: 1.35;
+  }
+
+  .hz-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+  }
+
+  .hz-when {
+    color: var(--muted);
+    font-size: 0.68rem;
+    text-align: right;
+    max-width: 7.2rem;
   }
 
   .hz-live {
