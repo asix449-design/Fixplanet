@@ -1,0 +1,58 @@
+---
+import { remittanceSrc } from '../data/remittances';
+import { getMigrationPage, getRemittances, localizePath, resolveLocale } from '../i18n';
+import { realMapCredit } from '../i18n/real-map-credits';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const shelf = getRemittances(locale);
+---
+
+<ul class="today-mig-idp-grid">
+  {
+    shelf.cards.map((card) => {
+      const href = localizePath(`/migration/${card.id}`, locale);
+      const credit = realMapCredit(locale, card.id);
+      return (
+        <li class="today-mig-idp-card" id={card.id}>
+          <a class="today-mig-remit-art" href={href}>
+            <img
+              src={remittanceSrc(card.preview)}
+              alt={card.plate}
+              width="1600"
+              height="800"
+              loading="lazy"
+            />
+          </a>
+          {credit && <p class="wildlife-sources today-mig-remit-credit">{credit}</p>}
+          <p class="today-mig-idp-tag">{card.tag}</p>
+          <h4>
+            <a href={href}>{card.title}</a>
+          </h4>
+          <p class="today-mig-idp-figure">
+            <strong>{card.figure}</strong>
+            <span>{card.unit}</span>
+          </p>
+          <p class="today-mig-idp-hook">{card.hook}</p>
+          <dl class="today-mig-idp-splits">
+            {card.rows.map((row) => (
+              <div>
+                <dt>{row.label}</dt>
+                <dd>{row.figure}</dd>
+              </div>
+            ))}
+          </dl>
+          <p class="today-mig-idp-detail">{card.plate}</p>
+          <p class="innovation-card-source">
+            <a href={card.sourceUrl} rel="noopener noreferrer">
+              {page.primarySource}: {card.sourceLabel}
+            </a>
+          </p>
+          <a class="card-cta" href={href}>
+            {page.cardCta}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>

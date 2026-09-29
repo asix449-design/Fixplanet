@@ -168,6 +168,115 @@ export const lv: Record<string, LawCopy> = {
     sourcesNote:
       'ЗРУ-916 primārais teksts lex.uz (krievu un uzbeku); konsolidētā flora likuma lapa ar 49.¹ pantu; UzDaily angļu piezīme par tā paša likuma izskatīšanu Senātā.',
   },
+  'convention-on-biological-diversity': {
+    title: 'Bioloģiskās daudzveidības konvencija',
+    hook: 'Galvenais Apvienoto Nāciju Organizācijas līgums par bioloģisko daudzveidību. Tam ir trīs mērķi: saglabāt bioloģisko daudzveidību, izmantot to ilgtspējīgi un taisnīgi dalīt labumus no ģenētiskajiem resursiem. Pusēm jāplāno un jāziņo. Tas nav viens pasaules sugu saraksts.',
+    imageAlt:
+      'Pirmatnējs tropu lietusmežs Taman Negara nacionālajā parkā Malaizijā: upe blīvā zaļā vainagā',
+    jurisdiction:
+      'Starptautisks (konvencijas puses; Amerikas Savienotās Valstis to nav ratificējušas)',
+    officialName: 'Konvencija par bioloģisko daudzveidību',
+    citation:
+      'Konvencija par bioloģisko daudzveidību; pieņemta Nairobi 1992. gada 22. maijā; parakstīšanai atvērta Riodežaneiro 1992. gada 5. jūnijā; stājās spēkā 1993. gada 29. decembrī',
+    yearStatus:
+      'Pieņemta Nairobi 1992. gada 22. maijā. Parakstīšanai atvērta Riodežaneiro 1992. gada 5. jūnijā. Stājās spēkā 1993. gada 29. decembrī.',
+    what: 'Ietvara konvencija. Puses apņemas sargāt daudzveidību sugas dzīvotnē un ārpus tās, kolekcijās, izmantot to ilgtspējīgi, novērtēt ietekmi uz vidi un sadarboties. Tā izveido Pušu konferenci, zinātnisku padomdevēju struktūru un ziņošanas ciklu. Zem konvencijas ir divi atsevišķi tās pašas saimes protokoli: Kartahenas protokols par bioloģisko drošību un Nagojas protokols par piekļuvi ģenētiskajiem resursiem un labumu sadali.',
+    where:
+      'Attiecas uz pusēm, kas konvenciju ratificējušas vai tai pievienojušās. Spēkā no 1993. gada 29. decembra. Depozitārijs ir Apvienoto Nāciju Organizācijas ģenerālsekretārs. Pušu saraksts mainās. Aktuālo uzskaiti ved konvencijas sekretariāts un Apvienoto Nāciju Organizācijas Līgumu krājums.',
+    effects:
+      'Iecerētais efekts: ierakstīt bioloģisko daudzveidību saistošās daudzpusējās tiesībās līdzās klimata un ozona līgumiem, virzīt valstu stratēģijas un rīcības plānus un dot vietu vēlākiem protokoliem un Kuņminas–Monreālas ietvaram. Iznākums atkarīgs no valsts pasākumiem. Pats konvencijas teksts neiežogo rezervātu.',
+    caveats:
+      'Konvencija neizsniedz atļaujas savvaļas sugu tirdzniecībai. To dara atsevišķs līgums, Konvencija par starptautisko tirdzniecību ar apdraudētajām savvaļas dzīvnieku un augu sugām. Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars pieņemts kā šīs konvencijas Pušu konferences lēmums. Amerikas Savienotās Valstis konvenciju ir parakstījušas, bet nav to ratificējušas.',
+    sourcesNote:
+      'Konvencijas teksts sekretariāta vietnē; konvencijas teksts angļu valodā; lapa par konvenciju; sekretariāta sākumlapa.',
+  },
+  'kunming-montreal-gbf': {
+    title: 'Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars',
+    hook: 'Pašreizējais pasaules bioloģiskās daudzveidības plāns Bioloģiskās daudzveidības konvencijas ietvaros. Četri mērķi līdz 2050. gadam un divdesmit trīs mērķi līdz 2030. gadam, tostarp plaši citētais nodoms aizsargāt vismaz 30 procentus sauszemes un jūras. To pieņēma kā Pušu konferences lēmumu, nevis kā otru bioloģiskās daudzveidības līgumu.',
+    imageAlt:
+      'Sekla koraļļu rifa Floridā: jūras vēdekļi un sīkas zivis, jūras dzīvība, uz kuru vērsta teritoriju aizsardzība',
+    jurisdiction:
+      'Starptautisks (Bioloģiskās daudzveidības konvencijas puses, kas īsteno lēmumu 15/4)',
+    officialName: 'Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars',
+    citation:
+      'Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars; Bioloģiskās daudzveidības konvencijas 15. pušu konferences lēmums 15/4, pieņemts 2022. gada 19. decembrī Monreālā',
+    yearStatus:
+      'Pieņemts 2022. gada 19. decembrī 15. pušu konferences otrajā daļā Monreālā (lēmums 15/4). Tas ir lēmums konvencijas ietvaros, nevis atsevišķi ratificējams līgums.',
+    what: 'Lēmums 15/4 pieņem Kuņminas–Monreālas globālo bioloģiskās daudzveidības ietvaru kā ceļu, kā šajā desmitgadē īstenot konvenciju. Tajā ir redzējums 2050. gadam: dzīve saskaņā ar dabu, četri mērķi 2050. gadam un 23 rīcības mērķi 2030. gadam. Trešo mērķi par teritoriju aizsardzību bieži īsi raksta kā vismaz 30 procentu sauszemes un jūras aizsardzību. Tās pašas sanāksmes pavadošie lēmumi aptver novērošanu, plānošanu, ziņošanu, pārskatīšanu, finanses un atbalstu valstīm darbā.',
+    where:
+      'Tas darbojas caur konvencijas pušu valsts mērķiem un stratēģijām. Pieņemts Monreālā 2022. gada 19. decembrī kā lēmums 15/4. Tas ir Pušu konferences lēmums Bioloģiskās daudzveidības konvencijas ietvaros, nevis atsevišķi ratificējams līgums. Pirmais kopējā progresa pasaules pārskats ir 17. pušu konferences darba kārtībā, procesā, kas paredzēts 2026. gadam.',
+    effects:
+      'Iecerētais efekts: aizstāt beigušos 2010.–2020. gada mērķus, ko sauc par Aiči mērķiem, ar skaidrāku 2030. gada mērķu kopu, salāgot valstu bioloģiskās daudzveidības plānus un radīt novērošanas un pārskata ciklu. Izpilde atkarīga no valsts tiesībām, naudas un no tā, kuras sauszemes un jūras platības valstis norāda. Pats lēmuma teksts nerada aizsargājamu teritoriju.',
+    caveats:
+      'Ietvars nav atsevišķs līgums un neaizstāj konvencijas tekstu. 30 procentu skaitlis trešajā mērķī ir kopīgs mērķis līdz 2030. gadam, nevis zīme, ka pasaule jau aizsargā 30 procentus sauszemes un jūras. Precīzs mērķu formulējums ir lēmumā 15/4 un konvencijas sekretariāta ietvara lapā.',
+    sourcesNote:
+      'Ietvara lapa konvencijas sekretariātā; lēmums 15/4; 2030. gada mērķu lapa; sekretariāta piezīme par Monreālā pieņemto tekstu.',
+  },
+  'ramsar-convention': {
+    title: 'Ramsāras konvencija',
+    hook: 'Vecākais pasaules mitrāju līgums. Puses iekļauj starptautiskas nozīmes mitrājus publiskā sarakstā un apņemas savā teritorijā mitrājus izmantot saudzīgi. Tas ir vietu saraksts un pienākums par tiem rūpēties, nevis savvaļas tirdzniecības noteikumi.',
+    imageAlt: 'Ūdensputni barojas purvā Pariette mitrājā Jūtā',
+    jurisdiction: 'Starptautisks (līgumslēdzējas puses; depozitārijs ir UNESCO)',
+    officialName:
+      'Konvencija par starptautiskas nozīmes mitrājiem, īpaši kā ūdensputnu dzīvesvietu',
+    citation:
+      'Konvencija par starptautiskas nozīmes mitrājiem, īpaši kā ūdensputnu dzīvesvietu; noslēgta Ramsārā (Irānā) 1971. gada 2. februārī; stājās spēkā 1975. gada 21. decembrī (ar vēlākiem grozījumiem)',
+    yearStatus:
+      'Noslēgta Ramsārā (Irānā) 1971. gada 2. februārī. Stājās spēkā 1975. gada 21. decembrī. Pašreizējais teksts ietver vēlākus grozījumus.',
+    what: 'Katrai pusei jānosaka vismaz viens mitrājs Starptautiskas nozīmes mitrāju sarakstam, jāveicina iekļauto vietu aizsardzība un mitrāji kopumā jāizmanto saudzīgi, lai tie saglabātu savu dabas raksturu. Konvencija kārto sadarbību par kopīgiem mitrājiem un ūdensputniem. Līgumslēdzēju pušu konference vada skaidrojumus. Pašreizējais teksts ietver vēlākus grozījumus: 1982. gada Parīzes protokolu un 1987. gadā Redžainā pieņemtos grozījumus.',
+    where:
+      'Attiecas uz līgumslēdzējām pusēm. Noslēgta Ramsārā 1971. gada 2. februārī. Spēkā no 1975. gada 21. decembra. Depozitārija pienākumi ir UNESCO. Pušu un noteikto vietu saraksti mainās. UNESCO kā depozitārijs un konvencijas paša dokumenti ved aktuālo uzskaiti.',
+    effects:
+      'Iecerētais efekts: turēt starptautiskas nozīmes mitrājus publiskā sarakstā ar aizsardzības pienākumiem un izplatīt saudzīgu izmantošanu kā apsaimniekošanas normu. Iekļaušana sarakstā pati par sevi nav pilna aizsardzība uz vietas. Galveno darbu veic valsts tiesību akti un apsaimniekošanas plāni.',
+    caveats:
+      'Konvencija neaizliedz mitrājus izmantot. Tā lūdz puses izmantot tos saudzīgi un rūpēties par vietām, kuras tās iekļāvušas sarakstā.',
+    sourcesNote:
+      'UNESCO depozitārija lapa; teksts angļu valodā Apvienoto Nāciju Organizācijas Līgumu sērijā; ieraksts Apvienoto Nāciju Organizācijas Līgumu krājumā; ieraksts vides līgumu katalogā.',
+  },
+  'aarhus-convention': {
+    title: 'Orhūsas konvencija',
+    hook: 'Apvienoto Nāciju Organizācijas līgums par vides demokrātiju. Tas dod cilvēkiem tiesības uz vides informāciju, teikšanu atsevišķos lēmumos un pārskatīšanu tiesā vai citā neatkarīgā iestādē. Tās ir tiesības par kārtību, nevis likums par piesārņojuma robežām.',
+    imageAlt: 'Toronto rātsnama domes sēžu zāle, kurā sabiedrība var piedalīties sanāksmēs',
+    jurisdiction:
+      'Starptautisks (Apvienoto Nāciju Organizācijas Eiropas Ekonomikas komisijas reģiona puses; pēc pievienošanās noteikumiem pieejams arī valstīm ārpus reģiona)',
+    officialName:
+      'Konvencija par pieeju informācijai, sabiedrības dalību lēmumu pieņemšanā un pieeju tiesu varai vides jautājumos',
+    citation:
+      'Konvencija par pieeju informācijai, sabiedrības dalību lēmumu pieņemšanā un pieeju tiesu varai vides jautājumos; noslēgta Orhūsā 1998. gada 25. jūnijā; stājās spēkā 2001. gada 30. oktobrī',
+    yearStatus: 'Noslēgta Orhūsā 1998. gada 25. jūnijā. Stājās spēkā 2001. gada 30. oktobrī.',
+    what: 'Trīs daļas. Pirmā: pieeja vides informācijai, kas ir publiskās varas iestādēm. Otrā: sabiedrības dalība lēmumos par konkrētām darbībām un par programmām. Trešā: pieeja tiesai, ja šīs tiesības liedz vai ja pārkāptas vides tiesības. Izpildi uzrauga pušu sanāksme un kārtība, kā pārbauda, vai puses tur solīto. Saistīts akts ir Kijivas protokols par piesārņotāju izplūdes un pārneses reģistriem.',
+    where:
+      'Sarunāta Apvienoto Nāciju Organizācijas Eiropas Ekonomikas komisijas ietvaros. Spēkā no 2001. gada 30. oktobra. Attiecas uz pusēm, kas konvenciju ratificējušas vai tai pievienojušās, tostarp uz dažām valstīm ārpus šā reģiona saskaņā ar konvencijas noteikumiem. Aktuālo pušu sarakstu ved Apvienoto Nāciju Organizācijas Līgumu krājums, ieraksts XXVII-13.',
+    effects:
+      'Iecerētais efekts: padarīt vides lēmumus apstrīdamus un atklātus un sašaurināt informācijas plaisu starp varas iestādēm un cilvēkiem. Cik tas ir spēcīgi, atkarīgs no valsts tiesām, nodevām un no tā, kam ļauj celt lietu. Konvencija nosaka minimumu, kas pusēm jāizpilda valsts tiesībās.',
+    caveats:
+      'Orhūsas konvencija nav pasaules likums par informācijas brīvību. Tā saista tikai savas puses: Apvienoto Nāciju Organizācijas Eiropas Ekonomikas komisijas reģiona valstis, kas tai pievienojušās, un dažas valstis ārpus reģiona. Pušu sarakstu ved Apvienoto Nāciju Organizācijas Līgumu krājums. Latīņamerikā ir savs reģionālais līgums par līdzīgām tiesībām, Eskasū nolīgums.',
+    sourcesNote:
+      'Ieraksts XXVII-13 Apvienoto Nāciju Organizācijas Līgumu krājumā; līguma teksts Nr. 37770; ieraksts vides līgumu katalogā.',
+  },
+  'bbnj-agreement': {
+    title:
+      'Nolīgums par jūras bioloģisko daudzveidību apgabalos ārpus valstu jurisdikcijas (atklātās jūras līgums)',
+    hook: 'Atklātās jūras bioloģiskās daudzveidības nolīgums Apvienoto Nāciju Organizācijas Jūras tiesību konvencijas ietvaros. Tas aptver jūras ģenētiskos resursus, teritoriju aizsardzības instrumentus, tostarp aizsargājamas jūras teritorijas ārpus valstu jurisdikcijas, ietekmes uz vidi novērtējumus un palīdzību valstīm prasmēs un tehnoloģijā. Tas stājās spēkā 2026. gada 17. janvārī.',
+    imageAlt: 'Ziemeļatlantijas atklātie ūdeņi, skatoties no kuģa, ar tālu kuģi pie horizonta',
+    jurisdiction:
+      'Starptautisks (nolīguma puses; Apvienoto Nāciju Organizācijas Jūras tiesību konvencijas ietvarā)',
+    officialName:
+      'Nolīgums saskaņā ar Apvienoto Nāciju Organizācijas Jūras tiesību konvenciju par jūras bioloģiskās daudzveidības saglabāšanu un ilgtspējīgu izmantošanu apgabalos ārpus valstu jurisdikcijas',
+    citation:
+      'Nolīgums saskaņā ar Apvienoto Nāciju Organizācijas Jūras tiesību konvenciju par jūras bioloģiskās daudzveidības saglabāšanu un ilgtspējīgu izmantošanu apgabalos ārpus valstu jurisdikcijas; pieņemts Ņujorkā 2023. gada 19. jūnijā; stājās spēkā 2026. gada 17. janvārī',
+    yearStatus:
+      'Pieņemts 2023. gada 19. jūnijā. Parakstīšanai atvērts 2023. gada 20. septembrī. Stājās spēkā 2026. gada 17. janvārī.',
+    what: 'Juridiski saistošs nolīgums, kas īsteno Apvienoto Nāciju Organizācijas Jūras tiesību konvenciju apgabaliem ārpus valstu jurisdikcijas: atklātajai jūrai un starptautiskajam jūras dibena rajonam. Viena daļa attiecas uz jūras ģenētiskajiem resursiem un labumu sadali no tiem. Cita aptver teritoriju pārvaldības instrumentus, tostarp aizsargājamas jūras teritorijas. Vēl cita attiecas uz ietekmes uz vidi novērtējumu. Vēl cita attiecas uz prasmju stiprināšanu un jūras tehnoloģiju nodošanu. Iestāžu starpā ir Pušu konference un zinātniskās un tehniskās struktūras, ko konferences process ir paredzējis izveidot.',
+    where:
+      'Pieņemts 2023. gada 19. jūnijā un parakstīšanai atvērts 2023. gada 20. septembrī. Stājās spēkā 2026. gada 17. janvārī, tas ir, 120. dienā pēc sešdesmitās ratifikācijas, kā noteic 68. pants. Aktuālo pušu sarakstu ved Apvienoto Nāciju Organizācijas Līgumu krājums, ieraksts XXI-10.',
+    effects:
+      'Iecerētais efekts: aizvērt robu tajā, kā atklātajā jūrā pārvalda bioloģisko daudzveidību, darīt iespējamu okeāna teritoriju aizsardzību ārpus ekskluzīvajām ekonomiskajām zonām, ko kontrolē piekrastes valstis, noteikt gaidas ietekmes uz vidi novērtējumam darbībām, kas skar apgabalus ārpus valstu jurisdikcijas, un dalīt labumus no jūras ģenētiskajiem resursiem. Cik labi tas izdosies, būs atkarīgs no konferences noteikumiem, no finansējuma un no pušu priekšlikumiem par vietām.',
+    caveats:
+      'Nolīgums darbojas Apvienoto Nāciju Organizācijas Jūras tiesību konvencijas ietvaros un to neaizstāj. Piekrastes ūdeņi un ekskluzīvās ekonomiskās zonas tajā neietilpst. Tur piemērojamas Bioloģiskās daudzveidības konvencijas saistības. Nolīgums nosaka tiesisko kārtību aizsargājamo teritoriju izveidei atklātajā jūrā, taču katra teritorija vēl jāierosina un jāapstiprina.',
+    sourcesNote:
+      'Nolīguma lapa Apvienoto Nāciju Organizācijas vietnē; teksts angļu valodā; ieraksts XXI-10 Apvienoto Nāciju Organizācijas Līgumu krājumā; Starptautiskās Jūrniecības organizācijas piezīme par stāšanos spēkā.',
+  },
   'un-plastics-treaty': {
     title: 'ANO plastmasas līgums (INC process)',
     hook: 'Mandāts sarunām par juridiski saistošu plastmasas instrumentu. Saskaņota līguma teksta nav.',

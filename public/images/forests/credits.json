@@ -170,5 +170,41 @@
     "license": "FAO Global Ecological Zones. Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
     "note": "Zone classes are drawn as distinct colours. No class names are written on the image."
+  },
+  {
+    "file": "planted-forests.jpg",
+    "title": "Share of planted forest and short-rotation plantation, 2015",
+    "source": "Fix Planet map from Lesiv et al. 2022 global forest management, 100 m classes 31 and 32, share on a 0.02° grid. Oil palm (class 40) is not included. Boundaries: Natural Earth 1:10m.",
+    "url": "https://zenodo.org/records/5879022",
+    "license": "CC BY 4.0 (Lesiv et al.). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Colour is the share of each cell. No legend text in the image."
+  },
+  {
+    "file": "forest-carbon-stock.jpg",
+    "title": "Living-biomass forest carbon, FAO FRA 2025",
+    "source": "Fix Planet map from FAO FRA 2025 country tables. Aboveground plus belowground carbon, 2025, million tonnes. Boundaries: Natural Earth 1:10m.",
+    "url": "https://fra-data.fao.org/",
+    "license": "FAO Forest Resources Assessment country statistics. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Log scale of million tonnes. Countries missing either pool stay grey. No legend text in the image."
+  },
+  {
+    "file": "tree-cover.jpg",
+    "title": "Share of ESA WorldCover 2021 class 10, tree cover",
+    "source": "Fix Planet map from ESA WorldCover 10 m 2021 v200. Share of 10 m pixels in class 10 on a 0.02° grid. Mangroves (class 95) are not included. Boundaries: Natural Earth 1:10m.",
+    "url": "https://doi.org/10.5281/zenodo.7254221",
+    "license": "CC BY 4.0 (ESA WorldCover). Contains modified Copernicus Sentinel data (2021). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Colour is the share of each cell in class 10. No legend text in the image."
+  },
+  {
+    "file": "peatlands.jpg",
+    "title": "PEATMAP peat extent",
+    "source": "Fix Planet map from PEATMAP (Xu et al. 2018). A 0.02° cell is marked when a peat polygon touches it. Boundaries: Natural Earth 1:10m.",
+    "url": "https://doi.org/10.5518/252",
+    "license": "CC BY 4.0 (Xu et al. / University of Leeds). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Presence only. No legend text in the image. Not the UNEP GPA 2022 status grid."
   }
 ]

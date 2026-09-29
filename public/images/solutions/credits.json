@@ -637,5 +637,47 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMTA_cultured_mussels_(Mytilus_edulis)_in_the_Bay_of_Fundy_Canada.jpg",
     "artist": "ReidGK",
     "license": "Public domain"
+  },
+  {
+    "slug": "bus-rapid-transit",
+    "file": "bus-rapid-transit.jpg",
+    "commonsTitle": "BRT Bus Station in Dar es Salaam 01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BRT_Bus_Station_in_Dar_es_Salaam_01.jpg",
+    "artist": "Grahamcole",
+    "license": "CC BY-SA 4.0",
+    "note": "Posta station, Dar es Salaam bus rapid transit, July 2018."
+  },
+  {
+    "slug": "walking-and-cycling-networks",
+    "file": "walking-and-cycling-networks.jpg",
+    "commonsTitle": "Holmens Kanal Cyclists (15325678721).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holmens_Kanal_Cyclists_(15325678721).jpg",
+    "artist": "Tony Webster",
+    "license": "CC BY 2.0",
+    "note": "Copenhagen, 15 September 2014. Blue cycle crossing at Holmens Kanal."
+  },
+  {
+    "slug": "congestion-charging",
+    "file": "congestion-charging.jpg",
+    "sourceUrl": "https://documents1.worldbank.org/curated/en/099031724120560318/pdf/P1766281e0163d01218640121bea8238a86.pdf",
+    "artist": "Fix Planet chart from World Bank Table 4.7 (Stockholm emissions, pricing trial)",
+    "license": "CC BY 3.0 IGO",
+    "note": "Redrawn from cited percent changes. No World Bank map or photo. Document title: Urban and Interurban Road Pricing: Navigating the Changing Landscape of Mobility Management and Infrastructure Financing (August 2023). Table source line: Hugosson and Sjöberg (2006)."
+  },
+  {
+    "slug": "low-emission-zones",
+    "file": "low-emission-zones.jpg",
+    "sourceUrl": "https://www.eea.europa.eu/en/analysis/publications/europes-air-quality-status-2024",
+    "artist": "Fix Planet map from EEA air-quality e-reporting annual means, Map 4 of Europe’s air quality status 2024",
+    "license": "CC BY 4.0",
+    "note": "Stations with inAQReportYN and DataCovFilterYN yes, annual mean nitrogen dioxide, 2022 and 2023, frame lon -25 to 45, lat 34 to 72. Classes: <=10, >10 to 40, >40 µg/m³. Coastlines: Natural Earth 50m, public domain, not EEA data."
+  },
+  {
+    "slug": "electric-buses",
+    "file": "electric-buses.jpg",
+    "sourceUrl": "https://www.iea.org/data-and-statistics/charts/electric-bus-sales-by-region-2020-2025",
+    "artist": "Fix Planet chart from IEA, Electric bus sales by region, 2020-2025",
+    "license": "CC BY 4.0",
+    "note": "Thousands of buses. Stack bottom to top: China, Europe, United States, India, Latin America, rest of world. Series copied from the IEA chart CSV on the chart page."
   }
 ]
