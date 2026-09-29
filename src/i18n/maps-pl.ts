@@ -265,9 +265,21 @@ export const pl: Record<string, MapCopy> = {
     caveats:
       'Kraje same sporządzają raporty o rezerwach, a raporty te idą za krajowymi zasadami obok geologii. Liczby Amerykańskiej Agencji Informacji Energetycznej należą do najbardziej przejrzystych publicznych szeregów. Publiczne tabele podają sumy krajowe i ocenione baseny.',
     licenseNote:
-      'Prace Amerykańskiej Agencji Informacji Energetycznej i Służby Geologicznej Stanów Zjednoczonych to dzieła rządu Stanów Zjednoczonych w domenie publicznej. Podgląd to mapa ocenionych basenów gazu łupkowego tej agencji. Aktualne mapy i tabele ropy i gazu są na jej stronach międzynarodowych.',
+      'Prace Amerykańskiej Agencji Informacji Energetycznej i Służby Geologicznej Stanów Zjednoczonych to dzieła rządu Stanów Zjednoczonych w domenie publicznej. Podgląd to wycinek mapy ocenionych basenów gazu łupkowego tej agencji. Aktualne mapy i tabele ropy i gazu są na jej stronach międzynarodowych.',
     imageAlt:
       'Mapa świata ocenionych basenów gazu łupkowego Amerykańskiej Agencji Informacji Energetycznej: białe i szare kraje oraz bordowe i żółte wielokąty basenów',
+    caption:
+      'Ocenione baseny gazu łupkowego, wycinek mapy Amerykańskiej Agencji Informacji Energetycznej w domenie publicznej.',
+    legend: [
+      {
+        title: 'Legenda mapy',
+        items: [
+          { swatch: '#97272b', label: 'Ocenione baseny z szacunkiem zasobów' },
+          { swatch: '#fef984', label: 'Ocenione baseny bez szacunku zasobów' },
+          { swatch: '#fdfefe', label: 'Kraje objęte zakresem raportu' },
+        ],
+      },
+    ],
     gridSource: cite(
       'Amerykańska Agencja Informacji Energetycznej, międzynarodowe dane energetyczne',
       'https://www.eia.gov/international/data/world',

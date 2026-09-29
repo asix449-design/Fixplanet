@@ -48,10 +48,10 @@ const credits: Record<string, Record<Locale, string>> = {
     lv: 'Karte: Fix Planet pēc Amerikas Savienoto Valstu Ģeoloģijas dienesta minerālresursu datu sistēmas atrašanās vietām, publiskais īpašums. Robežas: Natural Earth, publiskais domēns.',
   },
   'oil-gas-reserves': {
-    en: 'Map: U.S. Energy Information Administration, assessed shale-gas basins, public domain.',
-    ru: 'Карта: Управление энергетической информации США, оценённые бассейны сланцевого газа, общественное достояние.',
-    pl: 'Mapa: Amerykańska Agencja Informacji Energetycznej, ocenione baseny gazu łupkowego, domena publiczna.',
-    lv: 'Karte: Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde, novērtētie slānekļa gāzes baseini, publiskais īpašums.',
+    en: 'Map: cropped from the U.S. Energy Information Administration public-domain map of assessed shale-gas basins.',
+    ru: 'Карта: фрагмент карты оценённых бассейнов сланцевого газа Управления энергетической информации США, общественное достояние.',
+    pl: 'Mapa: wycinek mapy ocenionych basenów gazu łupkowego Amerykańskiej Agencji Informacji Energetycznej, domena publiczna.',
+    lv: 'Karte: izgriezums no Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes publiskā īpašuma kartes ar novērtētajiem slānekļa gāzes baseiniem.',
   },
   'coal-mines': {
     en: 'Map: Fix Planet, from Global Energy Monitor, Global Coal Mine Tracker, August 2026 release, Creative Commons Attribution 4.0 International licence. Boundaries: Natural Earth, public domain.',

@@ -622,9 +622,21 @@ const en: Record<string, MapCopy> = {
     caveats:
       'Countries prepare their own reserve reports, and those reports follow each country’s rules as well as the geology. Figures from the U.S. Energy Information Administration are among the most transparent public series. The public tables give national totals and assessed basins.',
     licenseNote:
-      'Works of the U.S. Energy Information Administration and the U.S. Geological Survey are U.S. government works in the public domain. The preview is the Administration’s assessed shale-gas basin map. Current oil and gas maps and tables are on the Administration’s international pages.',
+      'Works of the U.S. Energy Information Administration and the U.S. Geological Survey are U.S. government works in the public domain. The preview is cropped from the Administration’s public-domain map of assessed shale-gas basins. Current oil and gas maps and tables are on the Administration’s international pages.',
     imageAlt:
       'World map of assessed shale-gas basins from the U.S. Energy Information Administration, with white and grey countries and maroon and yellow basin polygons',
+    caption:
+      'Assessed shale-gas basins, cropped from a public-domain map of the U.S. Energy Information Administration.',
+    legend: [
+      {
+        title: 'Map key',
+        items: [
+          { swatch: '#97272b', label: 'Assessed basins with a resource estimate' },
+          { swatch: '#fef984', label: 'Assessed basins without a resource estimate' },
+          { swatch: '#fdfefe', label: 'Countries within the scope of the report' },
+        ],
+      },
+    ],
     gridSource: cite(
       'U.S. Energy Information Administration, international energy data',
       'https://www.eia.gov/international/data/world',

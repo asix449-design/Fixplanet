@@ -264,9 +264,21 @@ export const lv: Record<string, MapCopy> = {
     caveats:
       'Valstis pašas sagatavo rezervju ziņojumus, un šie ziņojumi seko valsts noteikumiem līdzās ģeoloģijai. Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes skaitļi ir starp caurspīdīgākajām publiskajām datu rindām. Publiskajās tabulās ir valstu kopsummas un novērtētie baseini.',
     licenseNote:
-      'Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes un Amerikas Savienoto Valstu Ģeoloģijas dienesta darbi ir Amerikas Savienoto Valstu valdības darbi publiskajā īpašumā. Priekšskats ir šīs pārvaldes novērtēto slānekļa gāzes baseinu karte. Aktuālās naftas un gāzes kartes un tabulas ir pārvaldes starptautiskajās lapās.',
+      'Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes un Amerikas Savienoto Valstu Ģeoloģijas dienesta darbi ir Amerikas Savienoto Valstu valdības darbi publiskajā īpašumā. Priekšskats ir izgriezums no šīs pārvaldes kartes ar novērtētajiem slānekļa gāzes baseiniem. Aktuālās naftas un gāzes kartes un tabulas ir pārvaldes starptautiskajās lapās.',
     imageAlt:
       'Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes karte ar novērtētiem slānekļa gāzes baseiniem: baltas un pelēkas valstis ar bordo un dzelteniem baseinu daudzstūriem',
+    caption:
+      'Novērtētie slānekļa gāzes baseini, izgriezums no Amerikas Savienoto Valstu Enerģētikas informācijas pārvaldes kartes publiskajā īpašumā.',
+    legend: [
+      {
+        title: 'Kartes apzīmējumi',
+        items: [
+          { swatch: '#97272b', label: 'Novērtētie baseini ar resursu aplēsi' },
+          { swatch: '#fef984', label: 'Novērtētie baseini bez resursu aplēses' },
+          { swatch: '#fdfefe', label: 'Valstis ziņojuma tvērumā' },
+        ],
+      },
+    ],
     gridSource: cite(
       'Amerikas Savienoto Valstu Enerģētikas informācijas pārvalde, starptautiskie enerģētikas dati',
       'https://www.eia.gov/international/data/world',

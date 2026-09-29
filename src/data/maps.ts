@@ -522,6 +522,10 @@ export const mapMeta: MapMeta[] = [
     openMapUrl: 'https://www.eia.gov/international/data/world',
     preview: 'oil-gas-reserves.jpg',
     previewKind: 'photo',
+    fit: 'contain',
+    frameColor: '#d5effe',
+    previewWidth: 1600,
+    previewHeight: 766,
   },
   {
     slug: 'mineral-resources',
@@ -534,6 +538,10 @@ export const mapMeta: MapMeta[] = [
     preview: 'mineral-resources.jpg',
     detail: 'detail/mineral-resources.webp',
     previewKind: 'data',
+    fit: 'contain',
+    frameColor: '#0a1720',
+    previewWidth: 1600,
+    previewHeight: 800,
   },
   {
     slug: 'coal-mines',
