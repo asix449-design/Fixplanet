@@ -1440,6 +1440,8 @@ a.wildlife-card:hover {
   border: 1px solid rgba(192, 255, 0, 0.16);
 }
 
+/* Photos that must show the whole frame, at the file's own aspect. */
+.wildlife-detail-art.wildlife-detail-natural img,
 /* Cities detail plates: show the whole figure at the image's own ratio. */
 .wildlife-detail-art.cities-detail-plate img {
   height: auto;
@@ -1463,6 +1465,14 @@ a.wildlife-card:hover {
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.45;
+}
+
+.wildlife-detail-art figcaption p {
+  margin: 0 0 0.35rem;
+}
+
+.wildlife-detail-art figcaption p:last-child {
+  margin-bottom: 0;
 }
 
 .wildlife-prose h2 {
