@@ -499,6 +499,47 @@ export function mountHazardGlobe(root) {
     return value || '#c0ff00';
   }
 
+  function narrowScreen() {
+    return window.matchMedia('(max-width: 980px)').matches;
+  }
+
+  function globeCamera() {
+    const narrow = narrowScreen();
+    return {
+      center: [12, 8],
+      zoom: narrow ? 1.12 : 0.82,
+      pitch: narrow ? 12 : 24,
+      bearing: -16,
+    };
+  }
+
+  function outlineStyle() {
+    const lime = siteLime();
+    const narrow = narrowScreen();
+    const dpr = Math.max(1, Math.min(window.devicePixelRatio || 1, 3));
+    if (!narrow) {
+      return {
+        lime,
+        coastGlow: { width: ['interpolate', ['linear'], ['zoom'], 0, 5.2, 3, 7, 6, 9], blur: 3, opacity: 0.48 },
+        coast: { width: ['interpolate', ['linear'], ['zoom'], 0, 1.35, 3, 1.7, 6, 2.1], blur: 0.15, opacity: 0.95 },
+        borderGlow: { width: ['interpolate', ['linear'], ['zoom'], 0, 3.6, 3, 4.8, 6, 6.5], blur: 2.2, opacity: 0.38 },
+        border: { width: ['interpolate', ['linear'], ['zoom'], 0, 0.95, 3, 1.2, 6, 1.55], blur: 0.1, opacity: 0.9 },
+      };
+    }
+    // Line width is CSS pixels. On a small canvas a 1px stroke antialiases
+    // into the land edge and reads gray. A wider opaque core stays #c0ff00.
+    // Blur is also CSS pixels; at a high device pixel ratio the same blur
+    // spreads across more device pixels, so tighten it as the ratio grows.
+    const glowBlur = 0.9 / dpr;
+    return {
+      lime,
+      coastGlow: { width: 6.4, blur: glowBlur, opacity: 0.82 },
+      coast: { width: 3.2, blur: 0, opacity: 1 },
+      borderGlow: { width: 4.8, blur: glowBlur, opacity: 0.72 },
+      border: { width: 2.4, blur: 0, opacity: 1 },
+    };
+  }
+
   function setPaint(id, prop, value) {
     if (!map.getLayer(id)) return;
     try {
@@ -524,7 +565,7 @@ export function mountHazardGlobe(root) {
 
   let linesToken = 0;
 
-  function addGlobeLines(lime) {
+  function addGlobeLines() {
     const token = ++linesToken;
     fetch('/data/globe-lines.json')
       .then(okJson)
@@ -536,7 +577,8 @@ export function mountHazardGlobe(root) {
           attribution: 'Natural Earth',
         });
         const before = map.getLayer('fires-cluster') ? 'fires-cluster' : undefined;
-        const addLine = (id, kind, paint) => {
+        const strokes = outlineStyle();
+        const addLine = (id, kind, stroke) => {
           map.addLayer(
             {
               id,
@@ -544,35 +586,20 @@ export function mountHazardGlobe(root) {
               source: 'globe-lines',
               filter: ['==', ['get', 'kind'], kind],
               layout: { 'line-cap': 'round', 'line-join': 'round' },
-              paint,
+              paint: {
+                'line-color': strokes.lime,
+                'line-width': stroke.width,
+                'line-blur': stroke.blur,
+                'line-opacity': stroke.opacity,
+              },
             },
             before,
           );
         };
-        addLine('coast-glow', 'coast', {
-          'line-color': lime,
-          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 5.2, 3, 7, 6, 9],
-          'line-blur': 3,
-          'line-opacity': 0.48,
-        });
-        addLine('coast-line', 'coast', {
-          'line-color': lime,
-          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 1.35, 3, 1.7, 6, 2.1],
-          'line-blur': 0.15,
-          'line-opacity': 0.95,
-        });
-        addLine('border-glow', 'border', {
-          'line-color': lime,
-          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 3.6, 3, 4.8, 6, 6.5],
-          'line-blur': 2.2,
-          'line-opacity': 0.38,
-        });
-        addLine('border-line', 'border', {
-          'line-color': lime,
-          'line-width': ['interpolate', ['linear'], ['zoom'], 0, 0.95, 3, 1.2, 6, 1.55],
-          'line-blur': 0.1,
-          'line-opacity': 0.9,
-        });
+        addLine('coast-glow', 'coast', strokes.coastGlow);
+        addLine('coast-line', 'coast', strokes.coast);
+        addLine('border-glow', 'border', strokes.borderGlow);
+        addLine('border-line', 'border', strokes.border);
         root.dataset.outlines = 'true';
       })
       .catch(() => {
@@ -594,7 +621,6 @@ export function mountHazardGlobe(root) {
         map.setLayoutProperty(layer.id, 'visibility', 'none');
       }
     }
-    const lime = siteLime();
     paintEarth();
     try {
       map.setSky({
@@ -612,14 +638,8 @@ export function mountHazardGlobe(root) {
     addLayers();
     addStormShapes();
     addDroughtRasters();
-    addGlobeLines(lime);
-    const phone = window.matchMedia('(max-width: 980px)').matches;
-    map.jumpTo({
-      center: [12, 8],
-      zoom: phone ? 0.3 : 0.82,
-      pitch: phone ? 16 : 24,
-      bearing: -16,
-    });
+    addGlobeLines();
+    map.jumpTo(globeCamera());
     map.getCanvas().setAttribute('aria-label', ui.mapLabel);
     syncSources();
     map.resize();
@@ -912,10 +932,7 @@ export function mountHazardGlobe(root) {
     map = new maplibregl.Map({
       container: mapHost,
       style: OPENFREEMAP_STYLE,
-      center: [12, 8],
-      zoom: window.matchMedia('(max-width: 980px)').matches ? 0.3 : 0.82,
-      pitch: window.matchMedia('(max-width: 980px)').matches ? 16 : 24,
-      bearing: -16,
+      ...globeCamera(),
       projection: { type: 'globe' },
       attributionControl: false,
       fadeDuration: 0,

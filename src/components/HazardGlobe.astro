@@ -485,8 +485,10 @@ const { hero = false } = Astro.props;
     .hz-board.is-hero .hz-map {
       order: 1;
       flex: 0 0 auto;
-      height: 58vh;
-      min-height: 280px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      min-height: 0;
     }
 
     .hz-board.is-hero .hz-layers-toggle {
