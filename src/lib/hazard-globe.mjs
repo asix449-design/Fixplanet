@@ -12,7 +12,6 @@ import {
   droughtTileUrl,
   emptySnapshot,
   eonetCategoryUrl,
-  fireEvents,
   gdacsTypedUrl,
   loadNhcSnapshot,
   parseEonetCategory,
@@ -123,7 +122,7 @@ export function mountHazardGlobe(root) {
   const rasterEuropeNote = root.querySelector('[data-raster-europe-note]');
   const mapFailed = root.querySelector('[data-map-failed]');
 
-  const enabled = new Set(LAYER_IDS);
+  const enabled = new Set(LAYER_IDS.filter((id) => id !== 'fires'));
   let snapshot = emptySnapshot();
   let byId = new Map();
   let map = null;
@@ -222,15 +221,20 @@ export function mountHazardGlobe(root) {
       if (!enabled.has(id)) continue;
       const events = snapshot.layers[id]?.events || [];
       if (id === 'fires') {
-        visible.push(
-          ...[...events].sort((a, b) => (b.frp || 0) - (a.frp || 0)).slice(0, FIRMS_FEED_LIMIT),
-        );
+        visible.push(...topFires(FIRMS_FEED_LIMIT));
       } else {
         visible.push(...events);
       }
     }
     visible.sort((a, b) => Date.parse(b.time) - Date.parse(a.time));
-    return { shown: visible.slice(0, FEED_LIMIT), total: visible.length };
+    const shown = visible.slice(0, FEED_LIMIT);
+    const present = new Set(shown.map((event) => event.layer));
+    for (const id of LAYER_IDS) {
+      if (!enabled.has(id) || present.has(id)) continue;
+      const extra = id === 'fires' ? topFires(1)[0] : snapshot.layers[id]?.events?.[0];
+      if (extra) shown.push(extra);
+    }
+    return { shown, total: visible.length };
   }
 
   function renderFeed() {
@@ -281,12 +285,57 @@ export function mountHazardGlobe(root) {
       ${link}`;
   }
 
+  function fireEvent(index) {
+    const point = snapshot.layers.fires?.points?.[index];
+    if (!point) return null;
+    return {
+      id: `firms-${index}`,
+      layer: 'fires',
+      title: '',
+      lat: point[0],
+      lon: point[1],
+      time: snapshot.layers.fires.fetchedAt,
+      frp: point[2],
+      url: 'https://firms.modaps.eosdis.nasa.gov/map/',
+      source: 'FIRMS',
+    };
+  }
+
+  function eventById(id) {
+    if (byId.has(id)) return byId.get(id);
+    if (String(id).startsWith('firms-')) return fireEvent(Number(String(id).slice(6)));
+    return null;
+  }
+
+  function topFires(limit) {
+    const layer = snapshot.layers.fires;
+    const points = layer?.points;
+    if (!points?.length) return (layer?.events || []).slice(0, limit);
+    const ranked = points
+      .map((point, index) => index)
+      .sort((a, b) => (points[b][2] || 0) - (points[a][2] || 0))
+      .slice(0, limit);
+    return ranked.map((index) => fireEvent(index)).filter(Boolean);
+  }
+
+  function fireCollection() {
+    const points = snapshot.layers.fires?.points || [];
+    return {
+      type: 'FeatureCollection',
+      features: points.map((point, index) => ({
+        type: 'Feature',
+        geometry: { type: 'Point', coordinates: [point[1], point[0]] },
+        properties: { id: `firms-${index}`, frp: point[2] || 0 },
+      })),
+    };
+  }
+
   function openEvent(id) {
-    const event = byId.get(id);
+    const event = eventById(id);
     if (!event || !enabled.has(event.layer)) return;
     openId = id;
     if (map && popup) {
-      const zoom = Math.max(map.getZoom(), 3.15);
+      const zoom = Math.max(map.getZoom(), 3.8);
       map.flyTo({
         center: [event.lon, event.lat],
         zoom,
@@ -309,6 +358,10 @@ export function mountHazardGlobe(root) {
 
   function setVisible(id, on) {
     if (!map) return;
+    if (id === 'fires') {
+      for (const layerId of ['fires-cluster', 'fires-dot']) setLayerVisibility(layerId, on);
+      return;
+    }
     for (const suffix of ['-halo', '-dot']) setLayerVisibility(`${id}${suffix}`, on);
     if (id === 'cyclones') {
       for (const extra of ['cyclone-cone', 'cyclone-cone-line', 'cyclone-track', 'cyclone-track-past']) {
@@ -327,7 +380,8 @@ export function mountHazardGlobe(root) {
     for (const id of LAYER_IDS) {
       const source = map.getSource(id);
       if (!source) continue;
-      source.setData(collectionOf(snapshot.layers[id]?.events || []));
+      if (id === 'fires') source.setData(enabled.has('fires') ? fireCollection() : emptyCollection());
+      else source.setData(collectionOf(snapshot.layers[id]?.events || []));
       setVisible(id, enabled.has(id));
     }
     const cones = map.getSource('cyclone-cone');
@@ -338,9 +392,69 @@ export function mountHazardGlobe(root) {
     root.dataset.ready = 'true';
   }
 
+  function addFireLayers() {
+    if (map.getSource('fires')) return;
+    map.addSource('fires', {
+      type: 'geojson',
+      data: emptyCollection(),
+      cluster: true,
+      clusterRadius: 42,
+      clusterMaxZoom: 4,
+    });
+    map.addLayer({
+      id: 'fires-cluster',
+      type: 'circle',
+      source: 'fires',
+      filter: ['has', 'point_count'],
+      paint: {
+        'circle-color': LAYER_COLOR.fires,
+        'circle-opacity': 0.72,
+        'circle-blur': 0.35,
+        'circle-radius': ['step', ['get', 'point_count'], 8, 40, 12, 200, 16, 1000, 22],
+      },
+    });
+    map.addLayer({
+      id: 'fires-dot',
+      type: 'circle',
+      source: 'fires',
+      filter: ['!', ['has', 'point_count']],
+      paint: {
+        'circle-radius': ['interpolate', ['linear'], ['get', 'frp'], 0, 2.4, 20, 4, 100, 7],
+        'circle-color': LAYER_COLOR.fires,
+        'circle-opacity': 0.9,
+        'circle-stroke-width': 0.6,
+        'circle-stroke-color': '#fff4d2',
+      },
+    });
+    map.on('click', 'fires-dot', (event) => {
+      const hit = event.features?.[0]?.properties?.id;
+      if (hit) openEvent(String(hit));
+    });
+    map.on('click', 'fires-cluster', (event) => {
+      const feature = event.features?.[0];
+      const clusterId = feature?.properties?.cluster_id;
+      const source = map.getSource('fires');
+      if (clusterId == null || !source?.getClusterExpansionZoom) return;
+      source.getClusterExpansionZoom(clusterId).then((zoom) => {
+        map.easeTo({
+          center: feature.geometry.coordinates,
+          zoom,
+          duration: reduced ? 0 : 500,
+        });
+      });
+    });
+    map.on('mouseenter', 'fires-dot', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'fires-dot', () => {
+      map.getCanvas().style.cursor = '';
+    });
+  }
+
   function addLayers() {
+    addFireLayers();
     for (const id of DRAW_ORDER) {
-      if (map.getSource(id)) continue;
+      if (id === 'fires' || map.getSource(id)) continue;
       map.addSource(id, { type: 'geojson', data: collectionOf([]) });
       const color = LAYER_COLOR[id];
       const radius = radiusPaint(id);
@@ -409,6 +523,13 @@ export function mountHazardGlobe(root) {
     addLayers();
     addStormShapes();
     addDroughtRasters();
+    const phone = window.matchMedia('(max-width: 980px)').matches;
+    map.jumpTo({
+      center: [12, 8],
+      zoom: phone ? 0.3 : 0.82,
+      pitch: phone ? 16 : 24,
+      bearing: -16,
+    });
     map.getCanvas().setAttribute('aria-label', ui.mapLabel);
     syncSources();
     map.resize();
@@ -421,8 +542,8 @@ export function mountHazardGlobe(root) {
     }
     const fires = snapshot.layers.fires;
     if (Array.isArray(fires?.points)) {
-      fires.events = fireEvents(fires);
-      fires.count = fires.count ?? fires.points.length;
+      fires.count = fires.points.length;
+      fires.events = [];
     }
     if (!snapshot.nhc) {
       snapshot.nhc = {
@@ -620,14 +741,15 @@ export function mountHazardGlobe(root) {
   }
 
   function addDroughtRasters() {
-    const before = map.getLayer('fires-halo') ? 'fires-halo' : undefined;
+    const before = map.getLayer('fires-cluster') ? 'fires-cluster' : undefined;
     const add = (id, layerName, visible) => {
       if (map.getSource(id)) return;
       map.addSource(id, {
         type: 'raster',
         tiles: [droughtTileUrl(layerName)],
-        tileSize: 256,
-        maxzoom: 2,
+        tileSize: 512,
+        minzoom: 2,
+        maxzoom: 5,
         attribution: 'Copernicus Emergency Management Service',
       });
       map.addLayer(
@@ -636,7 +758,11 @@ export function mountHazardGlobe(root) {
           type: 'raster',
           source: id,
           layout: { visibility: visible ? 'visible' : 'none' },
-          paint: { 'raster-opacity': 0.6, 'raster-fade-duration': 0 },
+          paint: {
+            'raster-opacity': 0.4,
+            'raster-resampling': 'linear',
+            'raster-fade-duration': 0,
+          },
         },
         before,
       );
@@ -661,6 +787,10 @@ export function mountHazardGlobe(root) {
       if (input.checked) enabled.add(id);
       else enabled.delete(id);
       setVisible(id, input.checked);
+      if (id === 'fires') {
+        const source = map?.getSource('fires');
+        if (source) source.setData(input.checked ? fireCollection() : emptyCollection());
+      }
       const current = byId.get(openId);
       if (current && !enabled.has(current.layer)) {
         openId = '';
@@ -684,8 +814,10 @@ export function mountHazardGlobe(root) {
     map = new maplibregl.Map({
       container: mapHost,
       style: OPENFREEMAP_STYLE,
-      center: [18, 8],
-      zoom: 1.42,
+      center: [12, 8],
+      zoom: window.matchMedia('(max-width: 980px)').matches ? 0.3 : 0.82,
+      pitch: window.matchMedia('(max-width: 980px)').matches ? 16 : 24,
+      bearing: -16,
       projection: { type: 'globe' },
       attributionControl: false,
       fadeDuration: 0,

@@ -37,15 +37,15 @@ export const LAYER_IDS = [
   'fires',
 ];
 
-/** Panel order follows the data pack. `fires` is the satellite hot-spot layer. */
+/** Panel order. `fires` is the satellite hot-spot layer and stays last. */
 export const PANEL_IDS = [
   'earthquakes',
-  'fires',
   'cyclones',
   'floods',
   'volcanoes',
   'droughts',
   'wildfires',
+  'fires',
 ];
 
 /** Draw order is bottom to top. Earthquakes stay readable above fire dots. */
@@ -93,7 +93,7 @@ export function droughtTileUrl(layer) {
   return (
     `${DROUGHT_WMS}?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap` +
     `&LAYERS=${layer}&SRS=EPSG:3857&BBOX={bbox-epsg-3857}` +
-    '&WIDTH=256&HEIGHT=256&STYLE=&FORMAT=image/png&TRANSPARENT=true'
+    '&WIDTH=512&HEIGHT=512&STYLE=&FORMAT=image/png&TRANSPARENT=true'
   );
 }
 
