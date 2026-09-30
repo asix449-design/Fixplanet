@@ -9,13 +9,15 @@ import { getInnovationsPage, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
   item: Innovation;
+  cta?: string;
 }
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
-const { item } = Astro.props;
+const { item, cta } = Astro.props;
 const href = localizePath(innovationDetailPath(item.slug, item.area), locale);
 const primary = innovationPrimarySource(item.sources);
+const sourceLabel = item.gridSourceLabel ?? primary?.label;
 ---
 
 <article
@@ -42,14 +44,14 @@ const primary = innovationPrimarySource(item.sources);
       </div>
       <h3>{item.title}</h3>
       <p class="wildlife-hook">{item.hook}</p>
-      <span class="card-cta">{page.cardCta}</span>
+      <span class="card-cta">{cta ?? page.cardCta}</span>
     </div>
   </a>
   {
     primary && (
       <p class="innovation-card-source">
         <a href={primary.url} rel="noopener noreferrer">
-          {page.primarySource}: {primary.label}
+          {page.primarySource}: {sourceLabel}
         </a>
       </p>
     )

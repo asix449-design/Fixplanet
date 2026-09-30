@@ -17,10 +17,10 @@ export const packPl: Record<string, InnovationCopy> = {
       'Nota dsm-firmenich o holenderskich farmach (20 000 krów / 18 miesięcy); UE 2022/565; przegląd FDA z maja 2024. Około 30% to liczba dossier.',
   },
   'fervo-geothermal': {
-    title: 'Cape Station — EGS Fervo',
-    hook: 'Utahskie odwierty wzorowane na nafcie, celujące w pierwsze komercyjne megawaty amerykańskiej geotermii wspomaganej — harmonogram 2026, jeszcze nie szablon kraju.',
+    title: 'Cape Station, geotermia wspomagana',
+    hook: 'Odwierty w Utah wzorowane na nafcie celują w pierwsze komercyjne megawaty amerykańskiej geotermii wspomaganej. Harmonogram 2026 jest jeszcze przed pierwszą mocą w sieci.',
     imageAlt:
-      'Elektrownia geotermalna The Geysers w Kalifornii — działające pole pary tej klasy, którą wspomagana geotermia chce kopiować w nowej skale',
+      'Elektrownia geotermalna The Geysers w Kalifornii, działające pole pary tej klasy, którą wspomagana geotermia chce kopiować w nowej skale',
     what: 'Wspomagane systemy geotermalne (EGS) wiercą w gorącą skałę bez naturalnego zbiornika hydrotermalnego, tworzą drogę przepływu i puszczają przez nią wodę. Project Red Fervo Energy w Nevadzie dał prąd w 2023 r. na kontrakt Google. Cape Station koło Milford w Utah — obok terenu DOE FORGE — jest większą kontynuacją. Relacja CNBC z 5 września 2026 r. pisała, że projekt szedł do oddania mocy do sieci w następnym miesiącu i byłby pierwszą komercyjną elektrownią EGS w USA. To zgłoszony harmonogram, nie oddana kilowatogodzina, dopóki zakład nie pracuje.',
     problem:
       'Zwykła geotermia jest rzadka: potrzeba ciepła, wody i przepuszczalności w jednym miejscu. Większość ciepła Ziemi jest w suchej skale. EGS próbuje je otworzyć bez czekania na gejzer. Kupcy centrów danych chcą twardych, niskoemisyjnych megawatów.',
@@ -33,8 +33,8 @@ export const packPl: Record<string, InnovationCopy> = {
       'CNBC o Cape Station (5 wrz 2026) — harmonogram pierwszej komercyjnej EGS w USA, nie potwierdzona data w sieci. Prąd Project Red w 2023 to wcześniejszy fakt.',
   },
   'long-duration-storage': {
-    title: 'Form Energy żelazo–powietrze — Google / Xcel',
-    hook: 'Wniosek 300 MW / 30 GWh żelazo–powietrze dla Minnesoty: ogłoszony jako największa bateria w gigawatogodzinach — wciąż plan, nie podwórze zardzewiałych ogniw.',
+    title: 'Bateria żelazo-powietrze Form Energy z Google i Xcel',
+    hook: 'Projekt na 300 megawatów i 30 gigawatogodzin w Minnesocie ogłoszono jako największą baterię pod względem zmagazynowanej energii. To wciąż plan.',
     imageAlt: 'Kontenerowe moduły baterii sieciowych przy amerykańskim magazynie energii',
     what: 'Bateria żelazo–powietrze Form Energy jest projektowana na około 100 godzin. W lutym 2026 Google i Xcel Energy oświadczyły, że zamierzają zbudować dostawę Form 300 MW / 30 GWh w sieci Xcel na Górnym Środkowym Zachodzie, w pakiecie z 1,4 GW wiatru i 200 MW słońca dla centrum danych w Minnesocie. Xcel nazwał to największym ogłoszonym projektem bateryjnym według pojemności w gigawatogodzinach. Prezes Form powiedział Utility Dive, że pierwsze moduły są spodziewane do końca 2028 r. To umowa i planowany wniosek taryfowy, nie zainstalowane megawaty.',
     problem:
@@ -141,10 +141,9 @@ export const packPl: Record<string, InnovationCopy> = {
       'Oficjalna strona Samsara Eco. Pierwszy zakład to nie cyrkularność skali supermarketu.',
   },
   'quaise-mmwave-drilling': {
-    title: 'Quaise — wiercenie falą milimetrową',
-    hook: 'Girotron w środkowym Teksasie przewiercił w 2025 r. 100 metrów granitu — rekord polowy metody i wciąż daleko od elektrowni.',
-    imageAlt:
-      'Lądowa wiertnia na czerwonej ziemi — naziemny zestaw wokół głębokich otworów, nie zdjęcie teksańskiego girotronu Quaise',
+    title: 'Wiercenie falą milimetrową Quaise',
+    hook: 'Girotron w środkowym Teksasie przewiercił w 2025 roku 100 metrów granitu. To rekord polowy metody, a do elektrowni wciąż daleko.',
+    imageAlt: 'Lądowa wiertnia na czerwonej ziemi, naziemny zestaw wokół głębokich otworów',
     what: 'Quaise Energy próbuje dotrzeć do skały przegrzanej (ok. 400°C) energią fali milimetrowej z girotronu, odparowując granit bez świdra na dnie otworu. Energy Global pisało, że w 2025 r. firma przewierciła 100 metrów na poligonie w środkowym Teksasie — rekord wiercenia falą milimetrową. Przed 2025 system z linii MIT robił w laboratorium tylko otwory centymetrowe. Sto metrów to ułamek głębokości potrzebnej komercyjnej elektrowni przegrzanej. Quaise zapowiada mocniejszy girotron i szkicuje pilotaż na zachodzie USA najwcześniej w 2028 r.',
     problem:
       'Zwykłe świdry źle żyją w twardej, gorącej skale fundamentu. Jeśli nie da się jej tanio wiercić, geotermia przegrzana zostaje mapą niewykorzystanego ciepła.',
@@ -157,10 +156,9 @@ export const packPl: Record<string, InnovationCopy> = {
       'Energy Global 24 lipca 2025: otwór polowy 100 m w Teksasie; w laboratorium były centymetry. Rekord metody to nie elektrownia.',
   },
   'cfs-sparc': {
-    title: 'CFS SPARC — tokamak Q>1',
-    hook: 'Kompaktowy tokamak w Massachusetts jest złożony w około 80%. Q>1 to cel na 2027 — kamień fizyki, nie elektrownia.',
-    imageAlt:
-      'Przekrój makiety tokamaka klasy ITER — rodzina maszyn, do której należy SPARC, nie zdjęcie hali w Devens',
+    title: 'Tokamak SPARC firmy Commonwealth Fusion Systems',
+    hook: 'Kompaktowy tokamak w Massachusetts jest złożony w około 80 procentach. Cel na 2027 rok to zysk plazmy powyżej jedności, kamień milowy fizyki.',
+    imageAlt: 'Przekrój makiety tokamaka z tej samej rodziny co międzynarodowy eksperyment fuzyjny',
     what: 'Commonwealth Fusion Systems składa SPARC, tokamak wysokiego pola w Devens w Massachusetts, by pokazać netto energię fuzyjną (Q>1: moc fuzji większa niż moc grzania plazmy). Sierpniowa nota CFS z 2026 r. pisała, że SPARC jest prawie w 80% gotowy, magnesy wchodzą, systemy pomocnicze już chodzą. Strona SPARC firmy nadal celuje w Q>1 w 2027 r. SPARC nie będzie sprzedawał prądu. Następna elektrownia ARC to projekt sieciowy; CFS mówiła recenzentom DOE o ok. 400 MW netto elektrycznych na początku lat 30. To cele firmy.',
     problem:
       'Fuzja obiecuje gęste, niskoemisyjne ciepło, jeśli zakład potrafi pracować, hodować tryt i żyć pod neutronami. Żaden prywatny ani publiczny tokamak nie wstawił jeszcze komercyjnej mocy do sieci.',
@@ -173,10 +171,9 @@ export const packPl: Record<string, InnovationCopy> = {
       'Blog CFS o postępie SPARC (~80% złożone) i strona SPARC (cel Q>1 2027). Wzmocnienie plazmy to nie elektrownia.',
   },
   'form-energy-ireland': {
-    title: 'Form Energy Irlandia — żelazo–powietrze',
-    hook: 'Projekt 10 MW / 1 GWh w północno-zachodniej Irlandii, uzgodniony w 2026, celowany na 2029 — pierwszy plac Form ogłoszony poza Stanami Zjednoczonymi.',
-    imageAlt:
-      'Kontenerowe szafy baterii przy magazynie sieciowym — klasa placu magazynu długiego, nie zdjęcie płyty w Donegal',
+    title: 'Projekt żelazo-powietrze Form Energy w Irlandii',
+    hook: 'Projekt na 10 megawatów i 1 gigawatogodzinę w północno-zachodniej Irlandii, uzgodniony w 2026 i celowany na 2029, to pierwszy plac Form Energy ogłoszony poza Stanami Zjednoczonymi.',
+    imageAlt: 'Kontenerowe szafy baterii przy magazynie sieciowym, plac tej klasy, której używa się do magazynu długiego',
     what: '17 marca 2026 Form Energy i FuturEnergy Ireland ogłosiły umowę na wdrożenie systemu żelazo–powietrze 10 MW / 1000 MWh (1 GWh) w północno-zachodniej Irlandii — pierwszy ogłoszony projekt międzynarodowy Form, spodziewany w sieci w 2029 r. Relacje nazywają teren Ballynahone Energy Storage w hrabstwie Donegal. Sto godzin przy 10 MW to arytmetyka 1 GWh. To zakontraktowana demonstracja, nie działająca irlandzka bateria.',
     problem:
       'Irlandzka sieć z dużą ilością wiatru zrzuca moc, gdy wyspa nie może jej wziąć albo wywieźć, a potem pali coś innego, gdy wiatr pada na dni. Magazyn wielodniowy to nazwana luka.',

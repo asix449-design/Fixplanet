@@ -17,10 +17,10 @@ export const packLv: Record<string, InnovationCopy> = {
       'dsm-firmenich Nīderlandes fermu piezīme (20 000 govju / 18 mēneši); ES 2022/565; FDA 2024. gada maijs. Ap 30% ir dosjē skaitlis.',
   },
   'fervo-geothermal': {
-    title: 'Cape Station — Fervo EGS',
-    hook: 'Jūtas urbumi naftas stilā, mērķēti uz pirmajiem komerciālajiem ASV pastiprinātās ģeotermijas megavatiem — 2026. gada grafiks, vēl ne valsts šablons.',
+    title: 'Cape Station, pastiprinātā ģeotermija',
+    hook: 'Jūtas urbumi naftas stilā mērķē uz pirmajiem komerciālajiem ASV pastiprinātās ģeotermijas megavatiem. 2026. gada grafiks vēl ir pirms pirmās jaudas tīklā.',
     imageAlt:
-      'The Geysers ģeotermālā stacija Kalifornijā — strādājošs tvaika lauks tādas klases, kādu pastiprinātā ģeotermija grib kopēt jaunā iezī',
+      'The Geysers ģeotermālā stacija Kalifornijā, strādājošs tvaika lauks tādas klases, kādu pastiprinātā ģeotermija grib kopēt jaunā iezī',
     what: 'Pastiprinātās ģeotermālās sistēmas (EGS) urbj karstā iezī bez dabīga hidrotermāla rezervuāra, izveido plūsmas ceļu un dzen cauri ūdeni. Fervo Energy Project Red Nevādā 2023. gadā deva elektrību Google līgumam. Cape Station pie Milfordas Jūtā — blakus DOE FORGE laukumam — ir lielāks turpinājums. CNBC 2026. gada 5. septembra ziņa rakstīja, ka projekts gāja uz jaudas došanu tīklam nākamajā mēnesī un būtu pirmā komerciālā EGS stacija ASV. Tas ir pieteikts grafiks, ne atdota kilovatstunda, kamēr stacija īsti nestrādā.',
     problem:
       'Parastā ģeotermija ir reta: vajag siltumu, ūdeni un caurlaidību vienā vietā. Lielākā daļa Zemes siltuma ir sausā iezī. EGS mēģina to atvērt, negaidot geizeru. Datu centru pircēji grib stingrus, zema oglekļa megavatus.',
@@ -33,8 +33,8 @@ export const packLv: Record<string, InnovationCopy> = {
       'CNBC par Cape Station (2026. g. 5. sept.) — pirmās komerciālās ASV EGS grafiks, ne apstiprināts datums tīklā. Project Red elektrība 2023. gadā ir agrāks fakts.',
   },
   'long-duration-storage': {
-    title: 'Form Energy dzelzs–gaiss — Google / Xcel',
-    hook: '300 MW / 30 GWh dzelzs–gaisa pieteikums Minesotai: izsludināts kā lielākā baterija gigavatstundās — joprojām plāns, ne rūsējošu šūnu pagalms.',
+    title: 'Form Energy dzelzs-gaisa baterija ar Google un Xcel',
+    hook: '300 megavatu un 30 gigavatstundu projekts Minesotai izsludināts kā lielākā baterija pēc uzkrātās enerģijas. Tas joprojām ir plāns.',
     imageAlt: 'Konteineru tīkla bateriju moduļi pie ASV enerģijas krātuves',
     what: 'Form Energy dzelzs–gaisa baterija ir projektēta ap 100 stundām. 2026. gada februārī Google un Xcel Energy teica, ka grasās būvēt Form piegādi 300 MW / 30 GWh Xcel Augšvidusrietumu tīklā paketē ar 1,4 GW vēja un 200 MW saules Minesotas datu centram. Xcel to nosauca par lielāko izsludināto bateriju projektu pēc ietilpības gigavatstundās. Form vadītājs Utility Dive teica, ka pirmos moduļus gaida līdz 2028. gada beigām. Tā ir vienošanās un plānots tarifa pieteikums, ne uzstādīti megavati.',
     problem:
@@ -141,10 +141,9 @@ export const packLv: Record<string, InnovationCopy> = {
       'Samsara Eco oficiālā vietne. Pirmā rūpnīca nav lielveikala mēroga cirkularitāte.',
   },
   'quaise-mmwave-drilling': {
-    title: 'Quaise — milimetru viļņu urbšana',
-    hook: 'Girotrons Centrālajā Teksasā 2025. gadā urba 100 metrus granīta — metodes lauka rekords un joprojām tālu no spēkstacijas.',
-    imageAlt:
-      'Sauszemes urbšanas iekārta uz sarkanas zemes — virszemes komplekts ap dziļiem caurumiem, ne Quaise Teksasas girotrona foto',
+    title: 'Quaise milimetru viļņu urbšana',
+    hook: 'Girotrons Centrālajā Teksasā 2025. gadā urba 100 metrus granīta. Tas ir metodes lauka rekords, un līdz spēkstacijai vēl tālu.',
+    imageAlt: 'Sauszemes urbšanas iekārta uz sarkanas zemes, virszemes komplekts ap dziļiem caurumiem',
     what: 'Quaise Energy mēģina sasniegt pārkarsētu iezi (ap 400 °C) ar milimetru viļņu enerģiju no girotrona, iztvaicējot granītu bez urbja urbuma dibenā. Energy Global rakstīja, ka 2025. gadā uzņēmums urba 100 metrus lauka laukumā Centrālajā Teksasā — rekords milimetru viļņu urbšanai. Pirms 2025. gada MIT līnijas sistēma laboratorijā taisīja tikai centimetru caurumus. Simts metri ir daļa no dziļuma, kāds vajadzīgs komerciālai pārkarsētai stacijai. Quaise sola jaudīgāku girotronu un skicē Rietumu ASV izmēģinājuma staciju jau 2028. gadā.',
     problem:
       'Parastie urbi slikti dzīvo cietā, karstā pamatiezī. Ja to nevar lēti urbt, pārkarsētā ģeotermija paliek neizmantota siltuma karte.',
@@ -157,10 +156,9 @@ export const packLv: Record<string, InnovationCopy> = {
       'Energy Global 2025. g. 24. jūl.: 100 m Teksasas lauka urbums; laboratorijā bija centimetri. Metodes rekords nav spēkstacija.',
   },
   'cfs-sparc': {
-    title: 'CFS SPARC — tokamaks ar Q>1',
-    hook: 'Kompakts tokamaks Masačūsetsā ir samontēts ap 80%. Q>1 ir 2027. gada mērķis — fizikas slieksnis, ne spēkstacija.',
-    imageAlt:
-      'ITER klases tokamaka maketa griezums — mašīnu saime, kurai pieder SPARC, ne Devensas zāles foto',
+    title: 'Commonwealth Fusion Systems tokamaks SPARC',
+    hook: 'Kompakts tokamaks Masačūsetsā ir samontēts ap 80 procentiem. 2027. gada mērķis ir plazmas ieguvums virs viena, fizikas slieksnis.',
+    imageAlt: 'Tokamaka maketa griezums no tās pašas saimes kā starptautiskais kodolsintēzes eksperiments',
     what: 'Commonwealth Fusion Systems montē SPARC, augsta lauka tokamaku Devensā, Masačūsetsā, lai parādītu tīro kodolsintēzes enerģiju (Q>1: sintēzes jauda lielāka par plazmas sildīšanas jaudu). CFS 2026. gada augusta piezīme teica, ka SPARC ir gandrīz 80% gatavs, magnēti iet iekšā, palīgsistēmas jau strādā. Uzņēmuma SPARC lapa joprojām mērķē Q>1 2027. gadā. SPARC nepārdos elektrību. Nākamā stacija ARC ir tīkla projekts; CFS DOE recenzentiem teikusi par ap 400 MW neto elektrības 2030. gadu sākumā. Tie ir uzņēmuma mērķi.',
     problem:
       'Sintēze sola blīvu, zema oglekļa siltumu, ja stacija var strādāt, vairot tritiju un dzīvot zem neitroniem. Ne privāts, ne publisks tokamaks vēl nav licis komerciālu jaudu tīklā.',
@@ -173,10 +171,9 @@ export const packLv: Record<string, InnovationCopy> = {
       'CFS SPARC gaitas blogs (~80% samontēts) un SPARC lapa (Q>1 mērķis 2027). Plazmas ieguvums nav spēkstacija.',
   },
   'form-energy-ireland': {
-    title: 'Form Energy Īrija — dzelzs–gaiss',
-    hook: '10 MW / 1 GWh dzelzs–gaisa projekts Īrijas ziemeļrietumos, saskaņots 2026. gadā, mērķēts uz 2029. — pirmais Form pagalms, kas izsludināts ārpus Amerikas Savienotajām Valstīm.',
-    imageAlt:
-      'Konteineru bateriju skapji pie tīkla krātuves — garā ilguma krātuves pagalma klase, ne Donegolas laukuma foto',
+    title: 'Form Energy dzelzs-gaisa projekts Īrijā',
+    hook: '10 megavatu un 1 gigavatstundas dzelzs-gaisa projekts Īrijas ziemeļrietumos, saskaņots 2026. gadā un mērķēts uz 2029. gadu, ir pirmais Form Energy pagalms, kas izsludināts ārpus Amerikas Savienotajām Valstīm.',
+    imageAlt: 'Konteineru bateriju skapji pie tīkla krātuves, pagalma klase, ko lieto ilgai uzkrāšanai',
     what: '2026. gada 17. martā Form Energy un FuturEnergy Ireland paziņoja vienošanos izvietot 10 MW / 1000 MWh (1 GWh) dzelzs–gaisa sistēmu Īrijas ziemeļrietumos — Form pirmo izsludināto starptautisko projektu, ko gaida tīklā 2029. gadā. Ziņās laukumu sauc Ballynahone Energy Storage Donegolas grāfistē. Simts stundas pie 10 MW ir 1 GWh aritmētika. Tā ir kontraktēta demonstrācija, ne strādājoša īru baterija.',
     problem:
       'Īrijas tīkls ar lielu vēju nomet jaudu, kad sala to nevar paņemt vai izvest, un tad dedzina kaut ko citu, kad vējš krīt dienām. Daudzdienu krātuve ir nosauktais robs.',

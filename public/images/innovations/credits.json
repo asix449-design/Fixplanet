@@ -361,5 +361,45 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_Agricultural_Mosaic_in_Taiwan_(1215103_-_taiwan_agriculture_oli2_20260318).jpg",
     "artist": "NASA Earth Observatory / Michala Garrison",
     "license": "Public domain"
+  },
+  {
+    "slug": "sodium-ion-storage",
+    "file": "sodium-ion-storage.jpg",
+    "commonsTitle": "Desert Sunlight Battery Energy Storage System (52945816430).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desert_Sunlight_Battery_Energy_Storage_System_(52945816430).jpg",
+    "artist": "blmcalifornia (Bureau of Land Management California), photo courtesy of NextEra",
+    "license": "Public domain"
+  },
+  {
+    "slug": "terrapower-natrium",
+    "file": "terrapower-natrium.jpg",
+    "commonsTitle": "View of Fast Flux Test Facility Looking NW.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Fast_Flux_Test_Facility_Looking_NW.jpg",
+    "artist": "U.S. Department of Energy",
+    "license": "Public domain"
+  },
+  {
+    "slug": "floating-offshore-wind",
+    "file": "floating-offshore-wind.jpg",
+    "commonsTitle": "Hywind Wind Farm, off Peterhead - geograph.org.uk - 7226685.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hywind_Wind_Farm,_off_Peterhead_-_geograph.org.uk_-_7226685.jpg",
+    "artist": "Mike Pennington",
+    "license": "CC BY-SA 2.0"
+  },
+  {
+    "slug": "perovskite-tandem",
+    "file": "perovskite-tandem.jpg",
+    "commonsTitle": "Perovskite solar cell.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perovskite_solar_cell.jpg",
+    "artist": "Dennis Schroeder, National Renewable Energy Laboratory",
+    "license": "Public domain"
+  },
+  {
+    "slug": "energy-dome-co2",
+    "file": "energy-dome-co2.jpg",
+    "commonsTitle": "Bonorva - Parco eolico di Campeda (01).JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonorva_-_Parco_eolico_di_Campeda_(01).JPG",
+    "artist": "Gianni Careddu",
+    "license": "CC BY-SA 4.0"
   }
 ]
