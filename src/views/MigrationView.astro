@@ -1,6 +1,7 @@
 ---
 import BirdFlywaysMap from '../components/BirdFlywaysMap.astro';
 import CitedSourceList from '../components/CitedSourceList.astro';
+import DisplacementGlobe from '../components/DisplacementGlobe.astro';
 import HubTile from '../components/HubTile.astro';
 import HumanEraAtlas from '../components/HumanEraAtlas.astro';
 import HumanMapLinkCard from '../components/HumanMapLinkCard.astro';
@@ -21,6 +22,8 @@ import {
 } from '../data/migration';
 import { cartetikaRoundup } from '../data/human-map-links';
 import {
+  DISPLACEMENT_SOURCES_PATH,
+  getDisplacementPage,
   getHumanMapLinks,
   getHumanMigrationEras,
   getMigrationByShelf,
@@ -36,6 +39,7 @@ interface Props {
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getMigrationPage(locale);
+const displacement = getDisplacementPage(locale);
 const hub = Astro.props.hub === true;
 const requested = Astro.props.shelf ?? Astro.url.searchParams.get('shelf');
 const activeShelf: MigrationShelf | undefined = hub
@@ -70,6 +74,13 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
 
   {
     hub ? (
+      <>
+      <section class="mig-displace-hero" aria-label={displacement.mapLabel}>
+        <DisplacementGlobe hero />
+        <p class="mig-displace-link">
+          <a href={localizePath(DISPLACEMENT_SOURCES_PATH, locale)}>{displacement.sourcesLink}</a>
+        </p>
+      </section>
       <section class="section-hub" aria-label={page.filterAria}>
         <div class="wrap home-hub-inner">
           <p class="eyebrow">{page.eyebrow}</p>
@@ -94,6 +105,7 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
           </nav>
         </div>
       </section>
+      </>
     ) : (
       activeShelf && (
         <ShelfHeader
@@ -266,3 +278,29 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
     )
   }
 </BaseLayout>
+
+<style>
+  .mig-displace-hero {
+    position: relative;
+    z-index: 1;
+    padding: 0.15rem 0 0.15rem;
+    background: #050505;
+  }
+
+  .mig-displace-link {
+    width: min(1600px, calc(100% - 16px));
+    margin: 0.1rem auto 0.45rem;
+    text-align: right;
+  }
+
+  .mig-displace-link a {
+    color: var(--lime);
+    font-size: 0.82rem;
+    font-weight: 650;
+    text-decoration: none;
+  }
+
+  .mig-displace-link a:hover {
+    text-decoration: underline;
+  }
+</style>

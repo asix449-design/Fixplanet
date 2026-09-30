@@ -1,0 +1,571 @@
+---
+import { CAUSE_COLOR } from '../lib/displacement-colors.mjs';
+import { getDisplacementPage, resolveLocale } from '../i18n';
+import pack from '../../public/data/migration-crises.json';
+import 'maplibre-gl/dist/maplibre-gl.css';
+
+const locale = resolveLocale(Astro.currentLocale);
+const copy = getDisplacementPage(locale);
+
+interface Props {
+  hero?: boolean;
+}
+
+const { hero = false } = Astro.props;
+
+const causeKeys = ['conflict', 'natural-disaster', 'climate-drought', 'unclassified'] as const;
+---
+
+<div
+  class:list={['dg-board', hero && 'is-hero']}
+  data-displacement-globe
+  data-locale={locale}
+  data-copy={JSON.stringify(copy)}
+  data-ready="false"
+>
+  <button
+    type="button"
+    class="dg-layers-toggle"
+    data-layers-toggle
+    aria-expanded="false"
+    aria-controls="dg-layers"
+  >
+    {copy.showLegend}
+  </button>
+
+  <section class="dg-panel dg-layers" id="dg-layers" aria-label={copy.legendTitle}>
+    <div class="dg-panel-head">
+      <h2 class="dg-title">{copy.title}</h2>
+      <p class="dg-lead">{copy.lead}</p>
+      <p class="dg-status" data-status>{copy.loading}</p>
+    </div>
+    <ul class="dg-cause-list">
+      {
+        causeKeys.map((id) => (
+          <li>
+            <label class="dg-cause">
+              <input type="checkbox" checked data-cause={id} />
+              <span class="dg-switch" aria-hidden="true"></span>
+              <span class="dg-swatch" style={`--dg:${CAUSE_COLOR[id]}`} aria-hidden="true"></span>
+              <span class="dg-cause-name" data-cause-label={id}>
+                {pack.cause_types[id][locale]}
+              </span>
+            </label>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="dg-key">
+      <h3>{copy.thicknessTitle}</h3>
+      <p>{copy.thicknessNote}</p>
+      <div class="dg-samples" aria-hidden="true">
+        <span><i data-sample="min"></i><span data-thick="min"></span></span>
+        <span><i data-sample="mid"></i><span data-thick="mid"></span></span>
+        <span><i data-sample="max"></i><span data-thick="max"></span></span>
+      </div>
+      <h3>{copy.arrowTitle}</h3>
+      <p>{copy.arrowNote}</p>
+      <h3>{copy.ringTitle}</h3>
+      <p>{copy.ringNote}</p>
+    </div>
+  </section>
+
+  <div class="dg-map" data-map role="region" aria-label={copy.mapLabel}>
+    <p class="dg-map-failed" data-map-failed hidden>{copy.mapFailed}</p>
+    <div class="dg-labels" data-labels></div>
+  </div>
+
+  <section class="dg-panel dg-feed" aria-label={copy.crisesTitle}>
+    <div class="dg-panel-head">
+      <h2>{copy.crisesTitle}</h2>
+    </div>
+    <ol class="dg-feed-list" data-feed></ol>
+    <article class="dg-card" data-card aria-live="polite"></article>
+  </section>
+</div>
+
+<script>
+  import '../lib/displacement-globe.mjs';
+</script>
+
+<style>
+  .dg-board {
+    display: grid;
+    grid-template-columns: minmax(240px, 320px) minmax(0, 1fr) minmax(280px, 360px);
+    gap: 0.7rem;
+    width: min(1480px, calc(100% - 28px));
+    margin: 0 auto 1.2rem;
+    height: calc(100dvh - var(--header-h) - 12px);
+    min-height: 640px;
+    scroll-margin-top: calc(var(--header-h) + 8px);
+  }
+
+  .dg-board.is-hero {
+    width: min(1600px, calc(100% - 16px));
+    height: calc(100dvh - var(--header-h) - 8px);
+    margin-bottom: 0.2rem;
+  }
+
+  .dg-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    background: rgba(8, 8, 8, 0.94);
+    border: 1px solid rgba(192, 255, 0, 0.28);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .dg-panel-head {
+    padding: 0.85rem 0.9rem 0.35rem;
+  }
+
+  .dg-panel-head h2,
+  .dg-key h3,
+  .dg-card :global(h3),
+  .dg-card :global(h4) {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .dg-panel-head h2 {
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--lime);
+  }
+
+  .dg-title {
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    line-height: 1.3;
+  }
+
+  .dg-lead,
+  .dg-status,
+  .dg-key p,
+  .dg-map-failed {
+    margin: 0.4rem 0 0;
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  .dg-cause-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.15rem 0.7rem 0.2rem;
+  }
+
+  .dg-cause {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.28rem 0.1rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.12);
+    cursor: pointer;
+    color: var(--cream);
+    font-size: 0.84rem;
+  }
+
+  .dg-cause input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  .dg-switch {
+    width: 34px;
+    height: 20px;
+    border-radius: 999px;
+    border: 1px solid rgba(192, 255, 0, 0.4);
+    background: #1a1a1a;
+    position: relative;
+  }
+
+  .dg-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #8a8a82;
+  }
+
+  .dg-cause input:checked + .dg-switch {
+    background: var(--lime);
+    border-color: var(--lime);
+  }
+
+  .dg-cause input:checked + .dg-switch::after {
+    transform: translateX(14px);
+    background: #111;
+  }
+
+  .dg-cause input:focus-visible + .dg-switch {
+    outline: 2px solid var(--lime);
+    outline-offset: 2px;
+  }
+
+  .dg-swatch {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--dg);
+    box-shadow: 0 0 8px var(--dg);
+  }
+
+  .dg-key {
+    overflow: auto;
+    padding: 0.2rem 0.9rem 0.9rem;
+  }
+
+  .dg-key h3 {
+    margin-top: 0.75rem;
+    color: var(--cream);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .dg-samples {
+    display: grid;
+    gap: 0.35rem;
+    margin-top: 0.45rem;
+  }
+
+  .dg-samples span {
+    display: grid;
+    grid-template-columns: 4.2rem minmax(0, 1fr);
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .dg-samples i {
+    display: block;
+    height: 2px;
+    border-radius: 999px;
+    background: #ffb4a2;
+  }
+
+  .dg-samples span span {
+    color: var(--cream);
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dg-map {
+    position: relative;
+    min-height: 0;
+    height: 100%;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: #050505;
+    border: 1px solid rgba(192, 255, 0, 0.28);
+  }
+
+  .dg-map-failed {
+    position: relative;
+    z-index: 2;
+    padding: 1rem;
+  }
+
+  .dg-labels {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .dg-layers-toggle {
+    display: none;
+  }
+
+  .dg-feed-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0.45rem 0.35rem;
+    overflow: auto;
+    max-height: 34%;
+  }
+
+  .dg-card {
+    overflow: auto;
+    min-height: 0;
+    margin: 0 0.45rem 0.55rem;
+    padding: 0.15rem 0.45rem 0.7rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.16);
+  }
+
+  :global(.dg-feed-btn) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    color: inherit;
+    border: 0;
+    border-left: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0.48rem 0.4rem;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  :global(.dg-feed-btn:hover),
+  :global(.dg-feed-btn.is-active),
+  :global(.dg-feed-btn:focus-visible) {
+    background: rgba(192, 255, 0, 0.08);
+    border-left-color: var(--lime);
+    outline: none;
+  }
+
+  :global(.dg-feed-btn .dg-swatch) {
+    width: 9px;
+    height: 9px;
+    margin-top: 0.35rem;
+    border-radius: 50%;
+    background: var(--dg);
+    box-shadow: 0 0 8px var(--dg);
+  }
+
+  :global(.dg-feed-copy) {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  :global(.dg-feed-name) {
+    color: var(--cream);
+    font-size: 0.9rem;
+  }
+
+  :global(.dg-feed-meta) {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  :global(.dg-card-title) {
+    margin: 0.55rem 0 0.35rem;
+    color: var(--cream);
+    font-size: 1.05rem;
+  }
+
+  :global(.dg-card h4) {
+    margin: 0.8rem 0 0.3rem;
+    color: var(--lime);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  :global(.dg-card-line),
+  :global(.dg-caption),
+  :global(.dg-fig-group),
+  :global(.dg-fig-count),
+  :global(.dg-fig-note),
+  :global(.dg-fig-alt),
+  :global(.dg-parts) {
+    margin: 0.2rem 0 0;
+    color: #d9d9d0;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  :global(.dg-kicker) {
+    margin-right: 0.35rem;
+    color: var(--lime);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  :global(.dg-swatch-inline) {
+    display: inline-block;
+    margin-right: 0.35rem;
+    vertical-align: middle;
+  }
+
+  :global(.dg-caption) {
+    margin-top: 0.55rem;
+  }
+
+  :global(.dg-fig-count) {
+    color: var(--cream);
+    font-variant-numeric: tabular-nums;
+  }
+
+  :global(.dg-fig-note),
+  :global(.dg-fig-alt),
+  :global(.dg-parts) {
+    color: var(--muted);
+    font-size: 0.76rem;
+  }
+
+  :global(.dg-figures),
+  :global(.dg-parts) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  :global(.dg-figures > li) {
+    margin: 0 0 0.7rem;
+    padding-top: 0.45rem;
+    border-top: 1px solid rgba(192, 255, 0, 0.12);
+  }
+
+  :global(.dg-card a) {
+    color: var(--lime);
+  }
+
+  :global(.dg-label) {
+    position: absolute;
+    transform: translate(-50%, -110%);
+    max-width: 8.6rem;
+    padding: 0.18rem 0.32rem;
+    border-radius: 7px;
+    background: rgba(6, 6, 6, 0.92);
+    border: 1px solid rgba(255, 244, 230, 0.45);
+    color: #f7f4ea;
+    font-size: 0.62rem;
+    line-height: 1.25;
+  }
+
+  :global(.dg-label p) {
+    margin: 0;
+  }
+
+  :global(.dg-map .maplibregl-ctrl-group) {
+    background: #0a0a0a;
+    border: 1px solid rgba(192, 255, 0, 0.35);
+    box-shadow: none;
+  }
+
+  :global(.dg-map .maplibregl-ctrl-group button) {
+    filter: invert(1) hue-rotate(40deg);
+  }
+
+  :global(.dg-map .maplibregl-ctrl-attrib) {
+    background: rgba(0, 0, 0, 0.72);
+    color: #c8c8be;
+    font-size: 0.68rem;
+  }
+
+  :global(.dg-map .maplibregl-ctrl-attrib a) {
+    color: var(--lime);
+  }
+
+  @media (max-width: 980px) {
+    .dg-board,
+    .dg-board.is-hero {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 12px);
+      height: auto;
+      min-height: 0;
+    }
+
+    .dg-board.is-hero .dg-map {
+      order: 1;
+      flex: 0 0 auto;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      min-height: 0;
+    }
+
+    .dg-board.is-hero .dg-layers-toggle {
+      display: flex;
+      order: 2;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.55rem 0.85rem;
+      border: 1px solid rgba(192, 255, 0, 0.35);
+      border-radius: var(--radius);
+      background: rgba(8, 8, 8, 0.94);
+      color: var(--lime);
+      font: inherit;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .dg-board.is-hero .dg-layers-toggle::after {
+      content: '';
+      width: 0.45rem;
+      height: 0.45rem;
+      border-right: 2px solid var(--lime);
+      border-bottom: 2px solid var(--lime);
+      transform: rotate(45deg);
+    }
+
+    .dg-board.is-hero.is-layers-open .dg-layers-toggle::after {
+      transform: rotate(225deg);
+      margin-top: 0.3rem;
+    }
+
+    .dg-board.is-hero .dg-layers {
+      order: 3;
+    }
+
+    .dg-board.is-hero:not(.is-layers-open) .dg-layers {
+      display: none;
+    }
+
+    .dg-board.is-hero .dg-feed {
+      order: 4;
+      max-height: none;
+      overflow: visible;
+    }
+
+    .dg-feed-list {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      max-height: none;
+      overflow: visible;
+      gap: 0.15rem;
+    }
+
+    .dg-feed-list :global(.dg-feed-item) {
+      flex: 0 0 auto;
+      width: 100%;
+      min-width: 0;
+    }
+
+    :global(.dg-feed-btn) {
+      height: auto;
+      min-height: 2.75rem;
+    }
+
+    :global(.dg-feed-name),
+    :global(.dg-feed-meta) {
+      white-space: normal;
+      overflow-wrap: break-word;
+    }
+
+    :global(.dg-label) {
+      max-width: 7.2rem;
+      font-size: 0.58rem;
+    }
+
+    .dg-card {
+      max-height: none;
+      position: relative;
+      z-index: 1;
+      background: rgba(8, 8, 8, 0.96);
+    }
+  }
+</style>

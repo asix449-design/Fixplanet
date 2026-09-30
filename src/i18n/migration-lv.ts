@@ -11,7 +11,7 @@ export const page: MigrationPage = {
   title: 'Migrācija',
   hubLead: [
     'Migrācija ir kustība ar iemeslu. Ledāju vaiņagi atver un aizver sauszemes tiltus. Sezonas pārbīda lietu, zāli, kukaiņus un planktonu. Krasti, kalni un tuksneši ir barjeras, līdz nav. Cilvēki vēlāk virsū liek žogus, gaismu, tīklus, armijas un siltāku klimatu — virs šiem vecākiem pulksteņiem.',
-    'Šodien ir šajā lapā: šodienas starptautiskā karte — neto migrācija un migrantu krājums, tā arī parakstīti. Atsevišķs slānis ir cilvēki, kas pārvietoti savas valsts iekšienē (IDMC). Nometņu slānis rāda nosauktas vietas, ne pasaules bēgļu krājumu; šis krājums ir slānī „Bēgļi (UNHCR)”. Naudu, ko migranti sūta mājās, apraksta sadaļa „Naudas pārvedumi”. Zemāk divi plaukti. Cilvēku migrācijas ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Dzīvnieku migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
+    'Globuss augšā rāda piespiedu pārvietošanu: cēloņi un virzieni. Zem tā ir šodienas starptautiskā karte: neto migrācija un migrantu krājums, tā arī parakstīti. Atsevišķs slānis ir cilvēki, kas pārvietoti savas valsts iekšienē (IDMC). Nometņu slānis rāda nosauktas vietas, ne pasaules bēgļu krājumu; šis krājums ir slānī „Bēgļi (UNHCR)”. Naudu, ko migranti sūta mājās, apraksta sadaļa „Naudas pārvedumi”. Zemāk divi plaukti. Cilvēku migrācijas ir Homo sapiens dziļā vēsture un tautu staigāšana, tostarp Atila. Dzīvnieku migrācijas ir dzīvas masu kustības: gnu, tauriņu areālu nobīdes, Arktikas lidojumu ceļi. Datumi ir diapazoni no nosauktiem avotiem, ne izdomātas trases.',
   ],
   chooseShelf: 'Izvēlies plauktu',
   filterAria: 'Migrācijas sadaļas',

@@ -10,7 +10,7 @@ export const page: MigrationPage = {
   title: 'Migration',
   hubLead: [
     'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and, on top of those older natural rhythms, a warmer climate.',
-    'This page opens with today’s international map — net migration and migrant stock, labeled as such. A separate layer covers people displaced inside their own country (IDMC). The camps layer shows named sites, not the world’s refugee stock; that stock is in the Refugees (UNHCR) layer. Money migrants send home is covered under Remittances. Below it, two sections. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
+    'The globe above shows forced displacement: causes and flows. Under it, today’s international map shows net migration and migrant stock, labeled as such. A separate layer covers people displaced inside their own country (IDMC). The camps layer shows named sites, not the world’s refugee stock; that stock is in the Refugees (UNHCR) layer. Money migrants send home is covered under Remittances. Below it, two sections. Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, Arctic flyways. Dates are ranges from named sources, not invented tracks.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
