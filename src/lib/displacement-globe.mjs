@@ -1,5 +1,10 @@
 import * as maplibregl from 'maplibre-gl';
+import crisisVideos from '../data/crisis-videos.json';
 import { causeColor } from './displacement-colors.mjs';
+
+const videosById = new Map(
+  (Array.isArray(crisisVideos) ? crisisVideos : []).map((row) => [row.crisis_id, row]),
+);
 
 const LOCALE_TAG = { en: 'en-GB', ru: 'ru-RU', pl: 'pl-PL', lv: 'lv-LV' };
 const OPENFREEMAP_STYLE = 'https://tiles.openfreemap.org/styles/dark';
@@ -438,9 +443,106 @@ export function mountDisplacementGlobe(root) {
     return node;
   }
 
+  function formatDuration(seconds) {
+    const total = Math.max(0, Math.round(Number(seconds) || 0));
+    const minutes = Math.floor(total / 60);
+    const rest = total % 60;
+    return `${minutes}:${String(rest).padStart(2, '0')}`;
+  }
+
+  function watchScopeText(scope) {
+    if (scope === 'later-floods') return ui.watchScopeLaterFloods;
+    if (scope === 'whole-country') return ui.watchScopeWholeCountry;
+    if (scope === 'somalia') return ui.watchScopeSomalia;
+    return '';
+  }
+
+  function renderWatch(parent, crisis) {
+    const video = videosById.get(crisis.id);
+    if (!video || !video.watch_url) return;
+
+    const section = document.createElement('section');
+    section.className = 'dg-watch';
+    section.dataset.watch = crisis.id;
+
+    const heading = document.createElement('h4');
+    heading.textContent = ui.watchTitle;
+    section.append(heading);
+
+    const stage = document.createElement('div');
+    stage.className = 'dg-watch-stage';
+
+    if (video.embed_allowed && video.embed_url) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'dg-watch-play';
+      button.textContent = ui.watchPlay;
+      const privacy = document.createElement('p');
+      privacy.className = 'dg-watch-privacy';
+      privacy.textContent = ui.watchPrivacy;
+      button.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.className = 'dg-watch-iframe';
+        iframe.title = video.title;
+        iframe.allowFullscreen = true;
+        iframe.setAttribute(
+          'allow',
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen',
+        );
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.src = video.embed_url;
+        stage.classList.add('is-playing');
+        stage.replaceChildren(iframe);
+        privacy.remove();
+      });
+      stage.append(button);
+      section.append(stage, privacy);
+
+      const open = document.createElement('p');
+      open.className = 'dg-watch-open';
+      const link = document.createElement('a');
+      link.href = video.watch_url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = ui.watchOpen;
+      open.append(link);
+      section.append(open);
+    } else {
+      const link = document.createElement('a');
+      link.className = 'dg-watch-play';
+      link.href = video.watch_url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = ui.watchReport;
+      stage.append(link);
+      section.append(stage);
+    }
+
+    addText(section, 'dg-watch-caption', video.title);
+    addText(section, 'dg-watch-meta', video.publisher);
+    addText(section, 'dg-watch-meta', formatAsOf(video.published));
+    addText(
+      section,
+      'dg-watch-meta',
+      fill(ui.watchLength, { duration: formatDuration(video.duration_seconds) }),
+    );
+    const scopeText = watchScopeText(video.scope);
+    if (scopeText) addText(section, 'dg-watch-note', scopeText);
+    if (video.licence === 'cc-by' && video.credit_line) {
+      addText(section, 'dg-watch-credit', video.credit_line);
+    }
+    addText(
+      section,
+      'dg-watch-note',
+      video.spoken_language === 'en' ? ui.watchLanguage : ui.watchChannel,
+    );
+    parent.append(section);
+  }
+
   function renderCard() {
     const crisis = pack.crises.find((item) => item.id === selected) || visibleCrises()[0];
     card.replaceChildren();
+    card.scrollTop = 0;
     if (!crisis) return;
     const title = document.createElement('h3');
     title.className = 'dg-card-title';
@@ -476,6 +578,7 @@ export function mountDisplacementGlobe(root) {
     card.append(started);
 
     addText(card, 'dg-caption', publicCaption(crisis, locale));
+    renderWatch(card, crisis);
 
     const flows = (crisis.flows || []).filter(shownFlow);
     if (flows.length) {

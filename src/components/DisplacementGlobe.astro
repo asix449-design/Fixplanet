@@ -427,6 +427,78 @@ const causeKeys = ['conflict', 'natural-disaster', 'climate-drought', 'unclassif
     color: var(--lime);
   }
 
+  :global(.dg-watch p) {
+    margin: 0.28rem 0 0;
+    overflow-wrap: anywhere;
+  }
+
+  :global(.dg-watch-stage) {
+    margin-top: 0.35rem;
+  }
+
+  :global(.dg-watch-play) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 2.75rem;
+    aspect-ratio: 16 / 9;
+    padding: 0.75rem;
+    border: 1px solid rgba(192, 255, 0, 0.45);
+    border-radius: 8px;
+    background: #121212;
+    color: var(--cream);
+    font: inherit;
+    font-weight: 400;
+    font-size: 0.92rem;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  :global(.dg-card a.dg-watch-play) {
+    color: var(--cream);
+    text-decoration: none;
+  }
+
+  :global(.dg-watch-play:hover),
+  :global(.dg-watch-play:focus-visible) {
+    border-color: var(--lime);
+    color: var(--cream);
+  }
+
+  :global(.dg-watch-stage.is-playing) {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+  }
+
+  :global(.dg-watch-iframe) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  :global(.dg-watch-privacy),
+  :global(.dg-watch-meta),
+  :global(.dg-watch-note),
+  :global(.dg-watch-credit) {
+    color: var(--muted);
+    font-size: 0.76rem;
+    line-height: 1.4;
+  }
+
+  :global(.dg-watch-caption) {
+    margin-top: 0.45rem;
+    color: var(--cream);
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
   :global(.dg-label) {
     position: absolute;
     transform: translate(-50%, -110%);
