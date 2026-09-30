@@ -69,6 +69,21 @@ export type DisplacementPage = {
   termsLabel: string;
   deedLabel: string;
   openSource: string;
+  watchTitle: string;
+  watchPlay: string;
+  watchPrivacy: string;
+  watchOpen: string;
+  watchReport: string;
+  watchLength: string;
+  watchLanguage: string;
+  watchChannel: string;
+  watchScopeLaterFloods: string;
+  watchScopeWholeCountry: string;
+  watchScopeSomalia: string;
+  videosTitle: string;
+  videosLead: string;
+  licenceYoutube: string;
+  licenceCcBy: string;
 };
 
 const groups: Record<Locale, Record<string, string>> = {
@@ -289,6 +304,22 @@ const page: Record<Locale, Omit<DisplacementPage, 'places' | 'inside' | 'crises'
     termsLabel: 'Terms of use for the datasets',
     deedLabel: 'Licence deed',
     openSource: 'Open the source',
+    watchTitle: 'Watch',
+    watchPlay: 'Watch a short video',
+    watchPrivacy: 'YouTube loads when you press this button.',
+    watchOpen: 'Open on YouTube',
+    watchReport: 'Watch report (Al Jazeera)',
+    watchLength: 'Length {duration}',
+    watchLanguage: 'The video is in English and comes from the publisher\'s own channel.',
+    watchChannel: 'It comes from the publisher\'s own channel.',
+    watchScopeLaterFloods: 'This is a later report on floods in Pakistan.',
+    watchScopeWholeCountry: 'The report covers Colombia as a whole.',
+    watchScopeSomalia: 'The report covers Somalia.',
+    videosTitle: 'Videos',
+    videosLead:
+      'Short videos from the crisis cards. Each one is on the publisher\'s own channel.',
+    licenceYoutube: 'Standard YouTube licence',
+    licenceCcBy: 'Creative Commons Attribution',
   },
   ru: {
     title: 'Вынужденное перемещение: причины и направления',
@@ -382,6 +413,22 @@ const page: Record<Locale, Omit<DisplacementPage, 'places' | 'inside' | 'crises'
     termsLabel: 'Условия использования наборов данных',
     deedLabel: 'Текст лицензии',
     openSource: 'Открыть источник',
+    watchTitle: 'Просмотр',
+    watchPlay: 'Смотреть короткое видео',
+    watchPrivacy: 'YouTube загружается после нажатия этой кнопки.',
+    watchOpen: 'Открыть на YouTube',
+    watchReport: 'Смотреть репортаж (Al Jazeera)',
+    watchLength: 'Длительность {duration}',
+    watchLanguage: 'Видео на английском языке. Оно размещено на собственном канале издателя.',
+    watchChannel: 'Видео размещено на собственном канале издателя.',
+    watchScopeLaterFloods: 'Это более поздний репортаж о наводнениях в Пакистане.',
+    watchScopeWholeCountry: 'Репортаж охватывает Колумбию в целом.',
+    watchScopeSomalia: 'Репортаж охватывает Сомали.',
+    videosTitle: 'Видео',
+    videosLead:
+      'Короткие видео из карточек кризисов. Каждое размещено на собственном канале издателя.',
+    licenceYoutube: 'Стандартная лицензия YouTube',
+    licenceCcBy: 'Creative Commons с указанием авторства',
   },
   pl: {
     title: 'Przymusowe przesiedlenia: przyczyny i kierunki',
@@ -475,6 +522,21 @@ const page: Record<Locale, Omit<DisplacementPage, 'places' | 'inside' | 'crises'
     termsLabel: 'Warunki korzystania ze zbiorów danych',
     deedLabel: 'Tekst licencji',
     openSource: 'Otwórz źródło',
+    watchTitle: 'Film',
+    watchPlay: 'Obejrzyj krótki film',
+    watchPrivacy: 'YouTube wczytuje się po naciśnięciu tego przycisku.',
+    watchOpen: 'Otwórz na YouTube',
+    watchReport: 'Obejrzyj reportaż (Al Jazeera)',
+    watchLength: 'Czas trwania {duration}',
+    watchLanguage: 'Film jest po angielsku i pochodzi z własnego kanału wydawcy.',
+    watchChannel: 'Film pochodzi z własnego kanału wydawcy.',
+    watchScopeLaterFloods: 'To późniejszy reportaż o powodziach w Pakistanie.',
+    watchScopeWholeCountry: 'Reportaż obejmuje całą Kolumbię.',
+    watchScopeSomalia: 'Reportaż obejmuje Somalię.',
+    videosTitle: 'Filmy',
+    videosLead: 'Krótkie filmy z kart kryzysów. Każdy film pochodzi z własnego kanału wydawcy.',
+    licenceYoutube: 'Standardowa licencja YouTube',
+    licenceCcBy: 'Creative Commons Uznanie autorstwa',
   },
   lv: {
     title: 'Piespiedu pārvietošana: cēloņi un virzieni',
@@ -567,6 +629,21 @@ const page: Record<Locale, Omit<DisplacementPage, 'places' | 'inside' | 'crises'
     termsLabel: 'Datu kopu lietošanas noteikumi',
     deedLabel: 'Licences teksts',
     openSource: 'Atvērt avotu',
+    watchTitle: 'Video',
+    watchPlay: 'Skatīties īsu video',
+    watchPrivacy: 'YouTube ielādējas pēc šīs pogas nospiešanas.',
+    watchOpen: 'Atvērt vietnē YouTube',
+    watchReport: 'Skatīties reportāžu (Al Jazeera)',
+    watchLength: 'Ilgums {duration}',
+    watchLanguage: 'Video ir angļu valodā un nāk no izdevēja paša kanāla.',
+    watchChannel: 'Video nāk no izdevēja paša kanāla.',
+    watchScopeLaterFloods: 'Šis ir vēlāks ziņojums par plūdiem Pakistānā.',
+    watchScopeWholeCountry: 'Ziņojums aptver visu Kolumbiju.',
+    watchScopeSomalia: 'Ziņojums aptver Somāliju.',
+    videosTitle: 'Video',
+    videosLead: 'Īsi video no krīžu kartītēm. Katrs nāk no izdevēja paša kanāla.',
+    licenceYoutube: 'YouTube standarta licence',
+    licenceCcBy: 'Creative Commons Attiecinājums',
   },
 };
 

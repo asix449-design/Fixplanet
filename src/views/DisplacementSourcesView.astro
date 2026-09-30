@@ -8,10 +8,34 @@ import {
   resolveLocale,
 } from '../i18n';
 import pack from '../../public/data/migration-crises.json';
+import crisisVideos from '../data/crisis-videos.json';
 
 const locale = resolveLocale(Astro.currentLocale);
 const copy = getDisplacementPage(locale);
 const backHref = localizePath('/migration', locale);
+
+const dateTag = { en: 'en-GB', ru: 'ru-RU', pl: 'pl-PL', lv: 'lv-LV' }[locale];
+
+type CrisisVideo = {
+  title: string;
+  publisher: string;
+  watch_url: string;
+  published: string;
+  licence: string;
+};
+
+const videos = (crisisVideos as CrisisVideo[]).map((video) => ({
+  title: video.title,
+  publisher: video.publisher,
+  url: video.watch_url,
+  date: new Intl.DateTimeFormat(dateTag, {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(`${video.published}T00:00:00Z`)),
+  licence: video.licence === 'cc-by' ? copy.licenceCcBy : copy.licenceYoutube,
+}));
 
 const credits = pack.credits.templates;
 const deeds = pack.credits.licence_deed_links;
@@ -136,6 +160,24 @@ function pill(kind: 'by' | 'igo' | 'page') {
           ))
         }
       </ol>
+
+      <h2>{copy.videosTitle}</h2>
+      <p class="dg-sources-lead">{copy.videosLead}</p>
+      <ul class="dg-video-list">
+        {
+          videos.map((video) => (
+            <li>
+              <p>{video.title}</p>
+              <p>{video.publisher}</p>
+              <p>
+                <a href={video.url} rel="noopener noreferrer">{video.url}</a>
+              </p>
+              <p>{video.date}</p>
+              <p>{video.licence}</p>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   </article>
 </BaseLayout>
@@ -190,9 +232,14 @@ function pill(kind: 'by' | 'igo' | 'page') {
   }
 
   .dg-credit-list,
-  .dg-source-list {
+  .dg-source-list,
+  .dg-video-list {
     margin: 0.4rem 0 0;
     padding: 0;
+  }
+
+  .dg-video-list {
+    list-style: none;
   }
 
   .dg-credit-list {
@@ -200,7 +247,8 @@ function pill(kind: 'by' | 'igo' | 'page') {
   }
 
   .dg-credit-list li,
-  .dg-source-list li {
+  .dg-source-list li,
+  .dg-video-list li {
     margin: 0 0 1rem;
     padding-top: 0.8rem;
     border-top: 1px solid rgba(192, 255, 0, 0.16);
