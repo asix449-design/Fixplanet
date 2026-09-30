@@ -6,18 +6,12 @@ import ShelfHeader from '../components/ShelfHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { forestAtlasPath } from '../data/forest-atlas';
 import {
-  faoFra2025Url,
   forestBackdrop,
   forestFrameSrc,
   forestHub,
   forestHubBackdrop,
   forestPanelPath,
-  gfw2024Url,
-  gfw2025Url,
   gfwMapUrl,
-  hansen2013Url,
-  ifl2025Url,
-  crowther2015Url,
   isForestPanel,
   longViewImage,
   type ForestPanel,
@@ -65,7 +59,7 @@ const initialSatellite = satelliteFrames[satelliteFrames.length - 1];
 const scenarioKeys = ['continued', 'slower', 'restore'] as const;
 const workKeys = ['soy', 'indonesia', 'indigenous', 'protected'] as const;
 const pageTitle = activePanel
-  ? `${page.panels[activePanel]} — ${page.title} — Fix Planet`
+  ? `${page.panels[activePanel]} · ${page.title} · Fix Planet`
   : page.metaTitle;
 ---
 
@@ -96,7 +90,7 @@ const pageTitle = activePanel
                   <article class="forests-hero-stat">
                     <p class="forests-hero-value">
                       {stat.value}
-                      <span>{page.units[stat.unitKey]}</span>
+                      <span>{stat.unit ?? page.units[stat.unitKey]}</span>
                     </p>
                     <h2>
                       {
@@ -110,7 +104,7 @@ const pageTitle = activePanel
                       }
                     </h2>
                     <p class="forests-hero-source">
-                      {stat.sourceShort} · {stat.vintage}
+                      <a href={stat.sourceUrl} rel="noopener noreferrer">{stat.sourceLine}</a>
                     </p>
                   </article>
                 ))
@@ -326,7 +320,7 @@ const pageTitle = activePanel
               <article class="forest-stat">
                 <p class="forest-stat-value">
                   {stat.value}
-                  <span>{page.units[stat.unitKey]}</span>
+                  <span>{stat.unit ?? page.units[stat.unitKey]}</span>
                 </p>
                 <h3>
                   {
@@ -341,9 +335,7 @@ const pageTitle = activePanel
                 </h3>
                 <p>{stat.text}</p>
                 <p class="wildlife-sources">
-                  {stat.sourceShort} · {stat.vintage}
-                  <br />
-                  <a href={stat.sourceUrl} rel="noopener noreferrer">{stat.sourceUrl}</a>
+                  <a href={stat.sourceUrl} rel="noopener noreferrer">{stat.sourceLine}</a>
                 </p>
               </article>
             ))
@@ -352,19 +344,17 @@ const pageTitle = activePanel
         <div class="forest-distinguish">
           <h3>{page.distinguishTitle}</h3>
           <p>{page.distinguish}</p>
-          <p class="wildlife-sources">
-            FAO FRA 2025 · <a href={faoFra2025Url} rel="noopener noreferrer">{faoFra2025Url}</a>
-            <br />
-            Hansen et al. 2013 · <a href={hansen2013Url} rel="noopener noreferrer">{hansen2013Url}</a>
-            <br />
-            GFW 2024 · <a href={gfw2024Url} rel="noopener noreferrer">{gfw2024Url}</a>
-            <br />
-            GFW 2025 · <a href={gfw2025Url} rel="noopener noreferrer">{gfw2025Url}</a>
-            <br />
-            Crowther et al. 2015 · <a href={crowther2015Url} rel="noopener noreferrer">{crowther2015Url}</a>
-            <br />
-            Intact Forest Landscapes 2025 · <a href={ifl2025Url} rel="noopener noreferrer">{ifl2025Url}</a>
-          </p>
+          <ul class="law-source-list cited-source-list">
+            {
+              page.numberSources.map((item) => (
+                <li>
+                  <a href={item.url} rel="noopener noreferrer">
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
         </div>
       </div>
     </div>

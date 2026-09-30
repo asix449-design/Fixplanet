@@ -206,5 +206,50 @@
     "license": "CC BY 4.0 (Xu et al. / University of Leeds). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
     "note": "Presence only. No legend text in the image. Not the UNEP GPA 2022 status grid."
+  },
+  {
+    "file": "forest-remaining-preview.jpg",
+    "title": "Old-growth forest, Prince of Wales Island, Tongass National Forest",
+    "source": "Nicholas Thomas, USDA Forest Service Alaska Region, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Old_Growth_Tongass_NRT_Photo_12_(52502991629).jpg",
+    "license": "Public domain (work of a U.S. federal government agency)",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap."
+  },
+  {
+    "file": "primary-forest-preview.jpg",
+    "title": "Old-growth oak, linden and hornbeam forest, Białowieża",
+    "source": "Bouke ten Cate, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Old-growth_Oak-Linden-Hornbeam_forest_-_Bialowieza_forest.tif",
+    "license": "CC BY 4.0",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap."
+  },
+  {
+    "file": "net-forest-loss-preview.jpg",
+    "title": "Forest patches among cleared fields, Mato Grosso",
+    "source": "Pedro Biondi, Agência Brasil, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Mato_Grosso_deforestation_(Pedro_Biondi)_12ago2007.jpg",
+    "license": "CC BY 3.0 Brazil",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap."
+  },
+  {
+    "file": "tropical-primary-loss-preview.jpg",
+    "title": "Cleared land near Porto Velho, Rondônia",
+    "source": "Bruno Kelly, Amazônia Real, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:SOBREVVO_EM_RONDONIA_DIA_07-08-2020_(FOTO_BRUNO_KELLY)_(62)_(50224604772).jpg",
+    "license": "CC BY 2.0",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap."
+  },
+  {
+    "file": "trees-living-preview.jpg",
+    "title": "Amazon forest canopy north of Manaus",
+    "source": "Phil P Harris, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Amazon_Manaus_forest.jpg",
+    "license": "CC BY-SA 2.5",
+    "kind": "hosted-original",
+    "note": "Wide 964 by 415 photograph. No text in the bitmap. Displayed whole."
   }
 ]

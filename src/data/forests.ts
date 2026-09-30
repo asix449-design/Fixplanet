@@ -63,6 +63,10 @@ export type ForestFrameCopy = {
 export type ForestStatCopy = {
   label: string;
   text: string;
+  /** Readable source line. The tile links this text; it does not print the URL. */
+  sourceLine: string;
+  /** Locale unit when the shared unit label would not agree with the number. */
+  unit?: string;
 };
 
 export type ForestFrame = ForestFrameMeta & ForestFrameCopy;
@@ -252,7 +256,10 @@ export const gfw2025Url =
   'https://www.wri.org/news/release-tropical-rainforest-loss-drops-36-2025-fires-threaten-global-progress';
 export const faoFra2025Url =
   'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en';
-export const crowther2015Url = 'https://doi.org/10.1038/nature14967';
+export const faoFra2025HubUrl =
+  'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en';
+export const gfr2025AnalysisUrl = 'https://gfr.wri.org/latest-analysis-deforestation-trends';
+export const crowther2015Url = 'https://www.nature.com/articles/nature14967';
 export const ellis2021Url = 'https://doi.org/10.1073/pnas.2023483118';
 export const hansen2013Url = 'https://doi.org/10.1126/science.1244693';
 export const ifl2025Url = 'https://doi.org/10.5281/zenodo.18011599';
@@ -294,99 +301,109 @@ export const forestStats: ForestStatMeta[] = [
     id: 'remaining',
     value: '4.14',
     unitKey: 'billionHa',
-    vintage: 'FRA 2025',
-    sourceShort: 'FAO FRA 2025',
-    sourceUrl: faoFra2025Url,
+    vintage: '2025',
+    sourceShort: 'FRA 2025',
+    sourceUrl: faoFra2025HubUrl,
+    atlasSlug: 'forest-remaining',
   },
   {
     id: 'landShare',
     value: '32',
     unitKey: 'ofLand',
-    vintage: 'FRA 2025',
-    sourceShort: 'FAO FRA 2025',
-    sourceUrl: faoFra2025Url,
+    vintage: '2025',
+    sourceShort: 'FRA 2025',
+    sourceUrl: faoFra2025HubUrl,
+    atlasSlug: 'forest-remaining',
   },
   {
     id: 'primaryRemaining',
     value: '1.18',
     unitKey: 'billionHa',
-    vintage: 'FRA 2025',
-    sourceShort: 'FAO FRA 2025',
-    sourceUrl: faoFra2025Url,
+    vintage: '2025',
+    sourceShort: 'FRA 2025',
+    sourceUrl: faoFra2025HubUrl,
+    atlasSlug: 'primary-forest',
   },
   {
     id: 'plantedForest',
     value: '312',
     unitKey: 'millionHa',
-    vintage: 'FRA 2025',
-    sourceShort: 'FAO FRA 2025',
-    sourceUrl: faoFra2025Url,
+    vintage: '2025',
+    sourceShort: 'FRA 2025',
+    sourceUrl: faoFra2025HubUrl,
     atlasSlug: 'planted-forests',
   },
   {
     id: 'carbonStock',
     value: '714',
     unitKey: 'gigatonnesC',
-    vintage: 'FRA 2025',
-    sourceShort: 'FAO FRA 2025',
-    sourceUrl: faoFra2025Url,
+    vintage: '2025',
+    sourceShort: 'FRA 2025',
+    sourceUrl: faoFra2025HubUrl,
     atlasSlug: 'forest-carbon-stock',
   },
   {
     id: 'deforestationSince1990',
     value: '489',
     unitKey: 'millionHa',
-    vintage: '1990–2025',
-    sourceShort: 'FAO FRA 2025',
+    vintage: '1990 to 2025',
+    sourceShort: 'FRA 2025',
     sourceUrl: faoFra2025Url,
+    atlasSlug: 'net-forest-loss',
   },
   {
     id: 'netLossRecent',
     value: '4.12',
     unitKey: 'millionHaYear',
-    vintage: '2015–2025',
-    sourceShort: 'FAO FRA 2025',
+    vintage: '2015 to 2025',
+    sourceShort: 'FRA 2025',
     sourceUrl: faoFra2025Url,
+    atlasSlug: 'net-forest-loss',
   },
   {
     id: 'grossDeforestation',
     value: '10.9',
     unitKey: 'millionHaYear',
-    vintage: '2015–2025',
-    sourceShort: 'FAO FRA 2025',
+    vintage: '2015 to 2025',
+    sourceShort: 'FRA 2025',
     sourceUrl: faoFra2025Url,
+    atlasSlug: 'net-forest-loss',
   },
   {
     id: 'tropicalPrimary2024',
     value: '6.7',
     unitKey: 'millionHa',
     vintage: '2024',
-    sourceShort: 'UMD GLAD / GFW',
+    sourceShort: 'WRI 2024',
     sourceUrl: gfw2024Url,
+    atlasSlug: 'tropical-primary-loss',
   },
   {
     id: 'tropicalPrimary2025',
     value: '4.3',
     unitKey: 'millionHa',
     vintage: '2025',
-    sourceShort: 'UMD GLAD / GFW',
-    sourceUrl: gfw2025Url,
+    sourceShort: 'WRI 2025',
+    sourceUrl: gfr2025AnalysisUrl,
+    atlasSlug: 'tropical-primary-loss',
   },
   {
     id: 'treeCount',
     value: '~3.04',
     unitKey: 'trillionTrees',
-    vintage: 'Crowther 2015',
-    sourceShort: 'Crowther et al. 2015',
+    vintage: '2015',
+    sourceShort: 'Nature 2015',
     sourceUrl: crowther2015Url,
+    atlasSlug: 'trees-living',
   },
   {
     id: 'holoceneTrees',
     value: '~46',
     unitKey: 'percent',
-    vintage: 'Crowther 2015',
-    sourceShort: 'Crowther et al. 2015',
+    vintage: '2015',
+    sourceShort: 'Nature 2015',
     sourceUrl: crowther2015Url,
+    atlasSlug: 'trees-living',
   },
   {
     id: 'intactLandscapes',

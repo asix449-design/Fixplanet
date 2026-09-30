@@ -51,6 +51,7 @@ export {
   forestAtlasChrome,
   forestAtlasHubLede,
   forestAtlasSectionLabels,
+  forestAtlasSections,
   getForestAtlas,
   getForestAtlasBySlug,
 } from './forest-atlas';
