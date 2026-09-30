@@ -105,6 +105,7 @@ const en = {
     fix: 'Fix',
     explore: 'Explore solution →',
     read: 'Read →',
+    readPlain: 'Read',
     what: 'What it is',
     how: 'How it works',
     whereRuns: 'Where it already runs',
@@ -114,6 +115,7 @@ const en = {
     imageCredit: 'Image',
     primarySource: 'Source',
     back: '← Solutions',
+    backPlain: 'Solutions',
     tags: {
       water: 'Water',
       forests: 'Forests',
@@ -127,7 +129,8 @@ const en = {
       all: 'Every problem–fix card on one shelf.',
       water:
         'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
-      forests: 'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working.',
+      forests:
+        'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working. Also here: forest certification, payments for reduced deforestation and forest degradation, closer-to-nature forestry, enrichment planting in logged forest, and mass timber for buildings.',
       waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
       cities:
         'Cooler roofs, permeable streets, trees, and shared heat networks. Also here: how people move and the air they breathe, from bus rapid transit, walking and cycling networks and congestion charging to low-emission zones and electric buses.',
@@ -437,6 +440,7 @@ const ru: typeof en = {
     fix: 'Решение',
     explore: 'Подробнее →',
     read: 'Читать →',
+    readPlain: 'Читать',
     what: 'Что это',
     how: 'Как это работает',
     whereRuns: 'Где уже работает',
@@ -446,6 +450,7 @@ const ru: typeof en = {
     imageCredit: 'Изображение',
     primarySource: 'Источник',
     back: '← Решения',
+    backPlain: 'Решения',
     tags: {
       water: 'Вода',
       forests: 'Леса',
@@ -459,7 +464,8 @@ const ru: typeof en = {
       all: 'Все карточки «проблема → решение» на одной полке.',
       water:
         'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
-      forests: 'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство.',
+      forests:
+        'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство. Здесь также: сертификация лесов, платежи за сокращение обезлесения и деградации лесов, приближенное к природе лесопользование, обогащающие посадки в вырубленном лесу и массивная древесина для строительства.',
       waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
       cities:
         'Холодные крыши, проницаемые улицы, деревья и общие теплосети. Здесь же рассказано, как люди передвигаются по городу и каким воздухом дышат: скоростной автобусный транспорт, сети для пешеходов и велосипедистов, плата за въезд в перегруженные зоны, зоны низких выбросов и электробусы.',
@@ -772,6 +778,7 @@ const pl: typeof en = {
     fix: 'Rozwiązanie',
     explore: 'Zobacz rozwiązanie →',
     read: 'Czytaj →',
+    readPlain: 'Czytaj',
     what: 'Czym jest',
     how: 'Jak to działa',
     whereRuns: 'Gdzie już działa',
@@ -781,6 +788,7 @@ const pl: typeof en = {
     imageCredit: 'Zdjęcie',
     primarySource: 'Źródło',
     back: '← Rozwiązania',
+    backPlain: 'Rozwiązania',
     tags: {
       water: 'Woda',
       forests: 'Lasy',
@@ -794,7 +802,8 @@ const pl: typeof en = {
       all: 'Wszystkie karty problem → rozwiązanie na jednej półce.',
       water:
         'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
-      forests: 'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna.',
+      forests:
+        'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna. Znajdziesz tu także: certyfikację lasów, płatności za ograniczanie wylesiania i degradacji lasów, leśnictwo bliższe naturze, nasadzenia wzbogacające w wyciętym lesie oraz drewno konstrukcyjne wielkowymiarowe w budownictwie.',
       waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
       cities:
         'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła. Znajdziesz tu też to, jak ludzie poruszają się po mieście i czym oddychają: szybki transport autobusowy, sieci piesze i rowerowe, opłaty kongestyjne, strefy niskiej emisji i autobusy elektryczne.',
@@ -1107,6 +1116,7 @@ const lv: typeof en = {
     fix: 'Risinājums',
     explore: 'Skatīt risinājumu →',
     read: 'Lasīt →',
+    readPlain: 'Lasīt',
     what: 'Kas tas ir',
     how: 'Kā tas darbojas',
     whereRuns: 'Kur tas jau darbojas',
@@ -1116,6 +1126,7 @@ const lv: typeof en = {
     imageCredit: 'Attēls',
     primarySource: 'Avots',
     back: '← Risinājumi',
+    backPlain: 'Risinājumi',
     tags: {
       water: 'Ūdens',
       forests: 'Meži',
@@ -1129,7 +1140,8 @@ const lv: typeof en = {
       all: 'Visas «problēma → risinājums» kartītes vienā plauktā.',
       water:
         'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
-      forests: 'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse.',
+      forests:
+        'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse. Šeit arī: mežu sertifikācija, maksājumi par mazāku atmežošanu un mežu degradāciju, dabai tuvāka mežsaimniecība, bagātināšanas stādījumi izcirstā mežā un masīvkoks būvniecībai.',
       waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
       cities:
         'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli. Šeit arī par to, kā cilvēki pārvietojas pa pilsētu un kādu gaisu elpo: ātrais autobusu transports, gājēju un riteņbraucēju tīkli, maksa par iebraukšanu sastrēgumu zonās, zemas emisijas zonas un elektroautobusi.',

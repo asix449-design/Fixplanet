@@ -1,9 +1,9 @@
-import type { ForestEncyclopediaCopy, ForestEncyclopediaSlug } from '../data/solutions-forests';
+import type { ForestEncyclopediaCopy } from '../data/solutions-forests';
 
-export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
+export const lv: Record<string, ForestEncyclopediaCopy> = {
   'sustainable-forestry': {
     title: 'Ilgtspējīga mežsaimniecība',
-    hook: 'Lēni augoša koksne joprojām velk ciršanu uz veciem mežiem. Pārvaldīti stādījumi un nacionālās inventarizācijas jau dod lielu daļu rūpnieciskās koksnes — tas nav savvaļas mežs ar citu vārdu.',
+    hook: 'Lēni augoša koksne joprojām velk ciršanu uz veciem mežiem. Pārvaldīti stādījumi un nacionālās inventarizācijas jau dod lielu daļu rūpnieciskās koksnes.',
     imageAlt: 'Miglaina meža ceļa josla ar baļķu kaudzēm un plantāciju koku rindām',
     what: [
       'Ilgtspējīga meža apsaimniekošana ir senā prakse audzēt, mērīt un izstrādāt koksni tā, lai mežs turpinātu dot kokmateriālus un citus pakalpojumus. FAO pārskats to uzskata par apsaimniekošanu, kas uztur meža spēju, — ne saukli un ne ciršanas aizliegumu. Lēni augoša koksne joprojām velk ciršanu uz veciem mežiem, kad tirgum vajag dēļus un masu. Ātri augošas stādītas sugas un plānota jau pārvaldītu mežu izstrāde ir parastā rūpnieciskā atbilde.',
@@ -25,8 +25,8 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'assisted-natural-regeneration': {
     title: 'Atbalstīta dabiskā atjaunošanās',
-    hook: 'Pēc ciršanas un tīruma sausās ainavas bieži paliek kailas, jo atvases apganā vai sadedzina, pirms tās kļūst par kokiem. Atbalstīta dabiskā atjaunošanās sargā to, kas jau ir augsnē — tas nav kokaudzētavas kravas auto.',
-    imageAlt: 'Faidherbia albida koki ar spalvainu zaļu vainagu sausā zeltainā zālē',
+    hook: 'Pēc ciršanas un tīruma sausās ainavas bieži paliek kailas, jo atvases apganā vai sadedzina, pirms tās kļūst par kokiem. Atbalstīta dabiskā atjaunošanās sargā to, kas jau ir augsnē.',
+    imageAlt: 'Ziemas ērkšķa (Faidherbia albida) koki ar spalvainu zaļu vainagu sausā zeltainā zālē',
     what: [
       'Atbalstīta dabiskā atjaunošanās (ANR) ir tīša to koku aizsardzība un kopšana, kas jau mēģina atgriezties no saknēm, celmiem un sēklām, nevis jaunas audzes stādīšana no kokaudzētavas. FAO ANR rokasgrāmata to uzskata par atjaunošanas metodi: turēt uguni un lopus projām no paaugas, atbrīvot to no nezālēm un konkurējošiem dzinumiem un ļaut esošajam krājumam kļūt par mežu. Pēc ciršanas un tīruma sausās ainavas bieži paliek kailas, jo šīs atvases apganā vai sadedzina. Atvestie stādi tad iet bojā tajā pašā karstumā.',
       'Lauksaimnieku vadīta dabiskā atjaunošanās (FMNR) ir tās pašas idejas lauka versija. Čomba un kolēģi 2020. gadā Frontiers in Forests and Global Change definē FMNR kā lauksaimnieku dabiski atjaunojošos koksnes augu aizsardzību un vadību lauksaimniecības zemē — atlasi, apgriešanu un dzinumu aizsardzību no sakneņa vai sēklas. Viņi to atšķir no ANR meža vai pamestā zemē un no bagātināšanas stādīšanas. Šī lapa aptver to saimi: sargāt dzīvo krājumu; nesākt no tukša kravas auto.',
@@ -47,7 +47,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'fire-smart-forestry': {
     title: 'Noteiktais ugunsgrēks',
-    hook: 'Gadsimts, kad dzēsa katru uguni, atstāja biezu degvielu daudzos mērenajos mežos. Noteiktie dedzinājumi un retināšana atgriež biežu, zemu uguni pēc rakstīta plāna — tas nav klimata licence cirst.',
+    hook: 'Gadsimts, kad dzēsa katru uguni, atstāja biezu degvielu daudzos mērenajos mežos. Noteiktie dedzinājumi un retināšana atgriež biežu, zemu uguni pēc rakstīta plāna.',
     imageAlt:
       'Meža ugunsdzēsēji aizsargtērpos skatās, kā zems noteiktais ugunsgrēks iet cauri skuju audzei',
     what: [
@@ -69,7 +69,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'shade-agroforestry': {
     title: 'Ēnas kafija un kakao',
-    hook: 'Pilnas saules kafija un kakao aizstāj meža vainagu un griež putnu dzīvotni. Smithsonian Bird Friendly ēnas sistēmas tur darba koku slāni virs kultūras — tās nav otra karte agromežsaimniecībai vispār.',
+    hook: 'Pilnas saules kafija un kakao aizstāj meža vainagu un griež putnu dzīvotni. Smithsonian Bird Friendly ēnas sistēmas tur darba koku slāni virs kultūras.',
     imageAlt: 'Kafijas krūmi zem augsta ēnas koku vainaga tradicionālā plantācijā',
     what: [
       'Ēnas kafija un ēnas kakao ir kultūras zem koku vainaga, ne atklātā pilnas saules plantācijā. Pilnas saules bloki aizstāj meža struktūru, griež ceļojošo un nometnieku putnu dzīvotni un bieži prasa vairāk mēslojuma un laistīšanas. Tradicionālās un sertificētās ēnas sistēmas atstāj kafiju vai kakao kā naudas kultūru un kokus kā jumtu. Šī lapa ir par to «vainags virs preces» praksi. Tā nav plašākā FAO aleju sējumu, silvopastūras un mājas dārzu saime — tā ir Agromežsaimniecības karte šajā plauktā.',
@@ -90,7 +90,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   agroforestry: {
     title: 'Agromežsaimniecība',
-    hook: 'Koku ciršana no tīrumiem un ganībām atstāj augsni, ēnu un barību plānāku. FAO uzskata agromežsaimniecību par kokiem, kas tīši savienoti ar kultūrām un lopiem, — plašāku saimi nekā ēnas kafija.',
+    hook: 'Koku ciršana no tīrumiem un ganībām atstāj augsni, ēnu un barību plānāku. FAO uzskata agromežsaimniecību par kokiem, kas tīši savienoti ar kultūrām un lopiem.',
     imageAlt:
       'Skats no gaisa: aleju sējumi un jaunu koku rindas Savanna Institute saimniecībā pie Viskonsinas upes',
     what: [
@@ -112,7 +112,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   windbreaks: {
     title: 'Vējainas / aizsargjoslas',
-    hook: 'Atklāti lauki ņem visu vēju: augsne aizpūšas, sniegs sanes, lopi tērē barību. USDA Nacionālais agromežsaimniecības centrs uzskata vējainas par projektētām lineārām stādījumu joslām — saimniecības infrastruktūru, ne oglekļa plantāciju.',
+    hook: 'Atklāti lauki ņem visu vēju: augsne aizpūšas, sniegs sanes, lopi tērē barību. USDA Nacionālais agromežsaimniecības centrs uzskata vējainas par projektētām lineārām stādījumu joslām.',
     imageAlt: 'Divas jaunas koku rindas uz mietiem veido vējainu zaļā Illinoisa laukā',
     what: [
       'Vējainas — sauktas arī par shelterbelts — ir lineāri koku un krūmu stādījumi, lai palēninātu vēju un darītu radniecīgus saimniecības darbus: lauka aizsardzība, lopu pajumte, dzīvie sniega žogi, sētas ekrāns. USDA Nacionālā agromežsaimniecības centra vējainu lapa ir šīs enciklopēdijas definīcija. Atklāti lauki un sētas ņem visu vēju. Augsne aizpūšas, sniegs sanes uz ceļiem, dzīvnieki aukstumā tērē vairāk barības. Projektēta koku josla ir parastā Vidējo Rietumu un Lielo līdzenumu atbilde.',
@@ -133,7 +133,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'reduced-impact-logging': {
     title: 'Samazinātas ietekmes ciršana',
-    hook: 'Parastā tropiskā izstrāde bieži sagrauj atlikušo audzi neplānotiem pievešanas ceļiem un iekārtajiem kokiem. Samazinātas ietekmes ciršana ir plānota gāšana un pievešana — ne ciršanas aizliegums un ne tas pats, kas atstāt veco mežu necirstu.',
+    hook: 'Parastā tropiskā izstrāde bieži sagrauj atlikušo audzi neplānotiem pievešanas ceļiem un iekārtajiem kokiem. Samazinātas ietekmes ciršana ir plānota gāšana un pievešana.',
     imageAlt: 'Dzeltens iekrāvējs nes baļķi kokmateriālu nometnē Tawau apgabalā, Sabahā, mežs fonā',
     what: [
       'Samazinātas ietekmes ciršana (RIL) ir kokmateriālu izstrāde, kas plānota un izpildīta tā, lai kaitējums atlikušajam mežam būtu mazāks: kartēt preču kokus, izkārtot ceļus un pievešanas takas, gāzt izvēlētā virzienā un turēt mašīnas uz plānotajām takām. Denisa Dīkstras FAO raksts par jēdzieniem un jautājumiem uzskata RIL par zināmas izstrādes inženierijas piemērošanu — inventarizācija, uzraudzība, virziena gāšana, vīteņu ciršana tur, kur vainagi ir saistīti — pārnesta uz tropu mežiem, kur hektārā stāv tikai daži preču koki. Parastā tropiskā izstrāde bieži nozīmē slikti plānotas takas, kokus, kas iekārušies vītnēs, un nākamās ražas bojājumus. Atlikusī audze un augsne maksā pirmās.',
@@ -154,7 +154,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'riparian-forest-restoration': {
     title: 'Piekrastes mežu atjaunošana',
-    hook: 'Kad pie strauta kokus cērt, krasti erodē, barības vielas noskalojas, vasaras ūdens sasilst. USDA Klimata centri un Meža dienesta piekrastes atjaunošanas rokasgrāmata uzskata labojumu par segumu uz krasta — vietēju darbu pie strauta, ne sateces saukli.',
+    hook: 'Kad pie strauta kokus cērt, krasti erodē, barības vielas noskalojas, vasaras ūdens sasilst. USDA Klimata centri un Meža dienesta piekrastes atjaunošanas rokasgrāmata uzskata labojumu par segumu uz krasta.',
     imageAlt: 'Skats no gaisa: kokains piekrastes buferis gar līkumotu strautu starp laukiem Storijas apgabalā, Aiovā',
     what: [
       'Piekrastes meža atjaunošana ir darbs atgriezt koksnes un citu veģetatīvo segumu uz zemes pie strauta, upes vai mitras gravas, lai krasts turētos, ūdens būtu ēnā un gultnei būtu saknes un koksne. USDA Klimata centri apraksta mežus piekrastes joslās kā tādus, kas samazina eroziju, buferē augstos caurplūdumus, mērena temperatūru, griež iztvaikošanu un dod koridorus. Kad šos kokus cērt tīrumiem vai gabaliem, krasti erodē, barības vielas noskalojas, vasaras ūdens sasilst. Zivis un gultne zaudē ēnu un saknes, kas turēja malu.',
@@ -175,7 +175,7 @@ export const lv: Record<ForestEncyclopediaSlug, ForestEncyclopediaCopy> = {
   },
   'community-forestry': {
     title: 'Kopienu mežsaimniecība',
-    hook: 'Kad lietošanas tiesības sēž tikai tālā kantorī, tuvējām saimniecībām ir maz iemesla sargāt mežu, ko nedrīkst likumīgi lietot. Nepālas 1993. gada Meža likums un CFUG sistēma ir šīs kartes sourced modelis — ne Meksikas vai Tanzānijas kopija.',
+    hook: 'Kad lietošanas tiesības sēž tikai tālā kantorī, tuvējām saimniecībām ir maz iemesla sargāt mežu, ko nedrīkst likumīgi lietot. Nepālas 1993. gada Meža likums un kopienu meža lietotāju grupas ir šeit aprakstītais modelis.',
     imageAlt: 'Augstas priedes un lapu koki zālainā nogāzē Badikhel kopienas mežā, Lalitpurā, Nepālā',
     what: [
       'Kopienu mežsaimniecība ir meža pārvaldība, kurā vietējiem cilvēkiem ir atzītas tiesības lietot un kopt noteiktu mežu pēc noteikumiem, ko viņi palīdz uzstādīt, nevis lai valsts būtu vienīgais likumīgais saimnieks. FAO vecākā piezīme par kopienu mežu uzskata šo tiesību un pienākumu pārbīdi par idejas kodolu. Kad lietošanas tiesības sēž tikai tālā kantorī, tuvējām saimniecībām ir maz iemesla sargāt mežu, ko nedrīkst likumīgi lietot. Tālāk nāk nelikumīga ciršana un vāja kopšana. Lietotāju grupas tituls ir pretēja iekārta: cilvēki pie kokiem var ņemt to, ko noteikumi atļauj, un viņiem jāaizsargā pārējais.',

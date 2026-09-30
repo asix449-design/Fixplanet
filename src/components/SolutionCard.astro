@@ -28,19 +28,26 @@ const {
   href = localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale),
   hidden = false,
 } = Astro.props;
+const detailSlug = solution.detailSlug ?? solution.slug;
 const photo = `/images/solutions/${solution.slug}.jpg`;
 const primary = solutionPrimarySource(solution.sources);
-const encyclopediaHref = isWaterEncyclopediaSlug(solution.slug)
-  ? localizePath(waterEncyclopediaPath(solution.slug), locale)
-  : isForestEncyclopediaSlug(solution.slug)
-    ? localizePath(forestEncyclopediaPath(solution.slug), locale)
-    : isCitiesEncyclopediaSlug(solution.slug)
-      ? localizePath(citiesEncyclopediaPath(solution.slug), locale)
-      : undefined;
+const encyclopediaHref =
+  solution.tag === 'water' && isWaterEncyclopediaSlug(detailSlug)
+    ? localizePath(waterEncyclopediaPath(detailSlug), locale)
+    : solution.tag === 'forests' && isForestEncyclopediaSlug(detailSlug)
+      ? localizePath(forestEncyclopediaPath(detailSlug), locale)
+      : solution.tag === 'cities' && isCitiesEncyclopediaSlug(detailSlug)
+        ? localizePath(citiesEncyclopediaPath(detailSlug), locale)
+        : undefined;
 const sourceLabel = solution.sourceLabel ?? primary?.label;
 const cardHref = encyclopediaHref ?? primary?.url ?? href;
 const cardRel = encyclopediaHref ? undefined : primary ? 'noopener noreferrer' : undefined;
-const cta = encyclopediaHref ? ui.solutionsPage.read : ui.solutionsPage.explore;
+const cta =
+  solution.tag === 'forests' && isForestEncyclopediaSlug(detailSlug)
+    ? ui.solutionsPage.readPlain
+    : encyclopediaHref
+      ? ui.solutionsPage.read
+      : ui.solutionsPage.explore;
 const plate =
   solution.slug === 'low-emission-zones'
     ? 'map'

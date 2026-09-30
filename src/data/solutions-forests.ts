@@ -12,6 +12,11 @@ export const forestEncyclopediaSlugs = [
   'reduced-impact-logging',
   'riparian-forest-restoration',
   'community-forestry',
+  'forest-certification',
+  'redd-plus',
+  'closer-to-nature-forestry',
+  'enrichment-planting',
+  'mass-timber',
 ] as const;
 
 export type ForestEncyclopediaSlug = (typeof forestEncyclopediaSlugs)[number];
@@ -21,16 +26,30 @@ export type ImageCredit = {
   credit: string;
   license: string;
   sourceUrl: string;
+  licenseUrl?: string;
+  width?: number;
+  height?: number;
+};
+
+export type FigureCreditPart = {
+  text: string;
+  href?: string;
 };
 
 export type ForestEncyclopediaCopy = {
   title: string;
   hook: string;
   imageAlt: string;
+  caption?: string;
+  /** Linked credit line. When set, the detail page uses this instead of image.credit. */
+  figureCredit?: readonly FigureCreditPart[];
   what: string[];
-  how: string[];
-  where: string[];
+  how?: string[];
+  where?: string[];
+  why?: string[];
+  read?: string[];
   limits: string[];
+  sources?: readonly PrimarySource[];
 };
 
 export type ForestEncyclopediaMeta = {
@@ -46,8 +65,9 @@ function img(
   credit: string,
   license: string,
   sourceUrl: string,
+  extra?: Pick<ImageCredit, 'licenseUrl' | 'width' | 'height'>,
 ): ImageCredit {
-  return { file, credit, license, sourceUrl };
+  return { file, credit, license, sourceUrl, ...extra };
 }
 
 /**
@@ -60,26 +80,26 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'sustainable-forestry',
     image: img(
       'sustainable-forestry.jpg',
-      'Fix Planet generated documentary still — plantation track and log stack, not a named concession',
+      'Fix Planet generated documentary still of a plantation track and a log stack',
       'Site asset',
       '',
     ),
     sources: [
       cite(
-        'FAO — Sustainable forest management overview',
+        'FAO, sustainable forest management overview',
         'https://www.fao.org/forestry/sfm/overview/',
       ),
       cite(
-        'FAO — Management of planted forests',
+        'FAO, management of planted forests',
         'https://www.fao.org/sustainable-forest-management-toolbox/modules/management-of-planted-forests/en/',
       ),
       cite(
-        'FAO — Global Forest Resources Assessment 2020 (PDF)',
+        'FAO, Global Forest Resources Assessment 2020 (PDF)',
         'https://www.fao.org/3/ca9825en/ca9825en.pdf',
       ),
-      cite('FAO — Planted forests', 'https://www.fao.org/4/x6896e/x6896e0e.htm'),
+      cite('FAO, planted forests', 'https://www.fao.org/4/x6896e/x6896e0e.htm'),
       cite(
-        'USDA Forest Service — Forest Inventory and Analysis',
+        'U.S. Department of Agriculture Forest Service, Forest Inventory and Analysis',
         'https://research.fs.usda.gov/programs/fia',
       ),
     ],
@@ -88,21 +108,21 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'assisted-natural-regeneration',
     image: img(
       'assisted-natural-regeneration.jpg',
-      'Davidbena — Faidherbia albida in the Elah valley',
+      'Davidbena, winterthorn (Faidherbia albida) in the Elah valley',
       'CC0',
       'https://commons.wikimedia.org/wiki/File:Faidherbia_albida_(Elah_valley).jpg',
     ),
     sources: [
       cite(
-        'FAO — Assisted natural regeneration of forests (PDF)',
+        'FAO, assisted natural regeneration of forests (PDF)',
         'https://www.fao.org/3/ca4191en/CA4191EN.pdf',
       ),
       cite(
-        'Chomba et al., Frontiers in Forests and Global Change 2020 — FMNR review',
+        'Chomba and colleagues, 2020 review of farmer-managed natural regeneration',
         'https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2020.571679/full',
       ),
       cite(
-        'Regreening Africa — Farmer-managed natural regeneration',
+        'Regreening Africa, farmer-managed natural regeneration',
         'https://regreeningafrica.org/approach/farmer-managed-natural-regeneration/',
       ),
     ],
@@ -111,18 +131,21 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'fire-smart-forestry',
     image: img(
       'fire-smart-forestry.jpg',
-      'Forest Service Northern Region — prescribed fire, Lake Como, Bitterroot National Forest',
+      'Forest Service Northern Region, prescribed fire at Lake Como, Bitterroot National Forest',
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Conducting_Prescribed_Fire,_Lake_Como,_Darby_Sula_R.D._Bitterroot_N.F.jpg',
     ),
     sources: [
-      cite('NWCG — PMS 484', 'https://www.nwcg.gov/publications/pms484'),
       cite(
-        'NWCG — Interagency Prescribed Fire Planning and Implementation Procedures Guide, PMS 484 (PDF)',
+        'National Wildfire Coordinating Group, prescribed fire procedures guide',
+        'https://www.nwcg.gov/publications/pms484',
+      ),
+      cite(
+        'National Wildfire Coordinating Group, Interagency Prescribed Fire Planning and Implementation Procedures Guide (PDF)',
         'https://fs-prod-nwcg.s3.us-gov-west-1.amazonaws.com/s3fs-public/publication/pms484.pdf',
       ),
       cite(
-        'USDA Forest Service — GTR-292, restoring composition and structure in dry mixed-conifer forests (PDF)',
+        'U.S. Department of Agriculture Forest Service, general technical report on dry mixed-conifer forests (PDF)',
         'https://www.fs.usda.gov/rm/pubs/rmrs_gtr292.pdf',
       ),
     ],
@@ -131,21 +154,21 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'shade-agroforestry',
     image: img(
       'shade-agroforestry.jpg',
-      'John Blake — canopy of a traditional shade coffee plantation in Guatemala',
+      'John Blake, canopy of a traditional shade coffee plantation in Guatemala',
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Canopy_of_a_traditional_shade_coffee_plantation_in_Guatemala.jpg',
     ),
     sources: [
       cite(
-        'Smithsonian National Zoo — Bird Friendly coffee',
+        'Smithsonian National Zoo, Bird Friendly coffee',
         'https://nationalzoo.si.edu/migratory-birds/bird-friendly-coffee',
       ),
       cite(
-        'Smithsonian Bird Friendly — norms (PDF)',
+        'Smithsonian Bird Friendly, norms (PDF)',
         'https://nationalzoo.si.edu/sites/default/files/documents/bf_norms_english_accessible.pdf',
       ),
       cite(
-        'Smithsonian — Bird Friendly celebrates 25 years',
+        'Smithsonian, Bird Friendly celebrates 25 years',
         'https://www.nationalzoo.si.edu/conservation/news/smithsonian-bird-friendlyr-celebrates-25-years',
       ),
     ],
@@ -154,25 +177,25 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'agroforestry',
     image: img(
       'agroforestry.jpg',
-      'Savannainstitute — alley cropping beside the Wisconsin River, Savanna Institute farm, 2024',
+      'Savanna Institute, alley cropping beside the Wisconsin River, Savanna Institute farm, 2024',
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Agroforestry_alley_cropping_%26_Wisconsin_River,_Savanna_Institute_farm_2024.jpg',
     ),
     sources: [
       cite(
-        'FAO — Agroforestry overview',
+        'FAO, agroforestry overview',
         'https://www.fao.org/agroforestry/about-agroforestry/overview/en',
       ),
       cite(
-        'FAO — Agroforestry FAQs',
+        'FAO, agroforestry FAQs',
         'https://www.fao.org/agroforestry/about-agroforestry/faqs/en',
       ),
       cite(
-        'FAO — The Amazonian Chakra, Napo Province, Ecuador',
+        'FAO, the Amazonian Chakra, Napo Province, Ecuador',
         'https://www.fao.org/agroforestry/activities/faos-work/article-detail/the-amazonian-chakra--a-traditional-agroforestry-system-managed-by-indigenous-communities-in-napo-province--ecuador/en',
       ),
       cite(
-        'FAO SFM toolbox — Agroforestry',
+        'FAO sustainable forest management toolbox, agroforestry',
         'https://www.fao.org/sustainable-forest-management-toolbox/modules/agroforestry/2/en?tabInx=0',
       ),
     ],
@@ -181,21 +204,21 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'windbreaks',
     image: img(
       'windbreaks.jpg',
-      'Savannainstitute — young three-row windbreak in an Illinois field',
+      'Savanna Institute, young three-row windbreak in an Illinois field',
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Young_three-row_windbreak_in_an_Illinois_field.jpg',
     ),
     sources: [
       cite(
-        'USDA National Agroforestry Center — Windbreaks',
+        'U.S. Department of Agriculture National Agroforestry Center, windbreaks',
         'https://research.fs.usda.gov/centers/nac/windbreaks',
       ),
       cite(
-        'USDA NAC — Agroforestry Notes 25: Windbreaks (PDF)',
+        'U.S. Department of Agriculture National Agroforestry Center, windbreak note 25 (PDF)',
         'https://www.fs.usda.gov/nac/assets/documents/agroforestrynotes/an25w01.pdf',
       ),
       cite(
-        'USDA NAC — Agroforestry Notes 36: Windbreaks (PDF)',
+        'U.S. Department of Agriculture National Agroforestry Center, windbreak note 36 (PDF)',
         'https://www.fs.usda.gov/nac/assets/documents/agroforestrynotes/an36w03.pdf',
       ),
     ],
@@ -204,17 +227,17 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'reduced-impact-logging',
     image: img(
       'reduced-impact-logging.jpg',
-      'CEphoto, Uwe Aranas — logging camp, Tawau District, Sabah',
+      'CEphoto, Uwe Aranas, logging camp, Tawau District, Sabah',
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:District-Tawau_Sabah_Logging-Camp-04.jpg',
     ),
     sources: [
       cite(
-        'FAO — Jonkers, reduced-impact logging in Sarawak, Guyana and Cameroon',
+        'FAO, Jonkers on reduced-impact logging in Sarawak, Guyana and Cameroon',
         'https://www.fao.org/4/ac805e/ac805e0n.htm',
       ),
       cite(
-        'FAO — Dykstra, reduced-impact logging: concepts and issues',
+        'FAO, Dykstra on reduced-impact logging, concepts and issues',
         'https://www.fao.org/4/ac805e/ac805e04.htm',
       ),
     ],
@@ -223,21 +246,21 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'riparian-forest-restoration',
     image: img(
       'riparian-forest-restoration.jpg',
-      'USDA — riparian buffer on Bear Creek, Story County, Iowa',
+      'U.S. Department of Agriculture, riparian buffer on Bear Creek, Story County, Iowa',
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Riparian_buffer_on_Bear_Creek_in_Story_County,_Iowa.JPG',
     ),
     sources: [
       cite(
-        'USDA Climate Hubs — Maintain or restore forest and vegetative cover in riparian areas',
+        'U.S. Department of Agriculture Climate Hubs, forest cover in riparian areas',
         'https://www.climatehubs.usda.gov/approach/maintain-or-restore-forest-and-vegetative-cover-riparian-areas',
       ),
       cite(
-        'USDA Climate Hubs — Maintain or restore riparian areas',
+        'U.S. Department of Agriculture Climate Hubs, maintain or restore riparian areas',
         'https://www.climatehubs.usda.gov/approach/maintain-or-restore-riparian-areas-0',
       ),
       cite(
-        'USDA Forest Service — Riparian restoration handbook (PDF)',
+        'U.S. Department of Agriculture Forest Service, riparian restoration handbook (PDF)',
         'https://www.fs.usda.gov/t-d/pubs/pdf/riparian_restoration/lo_res/04231201L.pdf',
       ),
     ],
@@ -246,7 +269,7 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
     slug: 'community-forestry',
     image: img(
       'community-forestry.jpg',
-      'Shadow Ayush — Badikhel community forest, Lalitpur',
+      'Shadow Ayush, Badikhel community forest, Lalitpur',
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Badikhel_community_forest,_Lalitpur.jpg',
     ),
@@ -256,12 +279,112 @@ export const forestEncyclopediaMeta: ForestEncyclopediaMeta[] = [
         'https://faolex.fao.org/docs/pdf/nep4527.pdf',
       ),
       cite(
-        'FAO / FECOFUN — community-based forest management in Nepal (2025)',
+        'FAO and the Federation of Community Forestry Users Nepal, community forestry (2025)',
         'https://www.fao.org/nepal/news/detail/fao-and-fecofun-strengthen-collaboration-for-community-based-forest-management-and-climate-resilience/en',
       ),
       cite(
-        'FAO — Community forestry',
+        'FAO, community forestry',
         'https://www.fao.org/4/XII/0321-C1.htm',
+      ),
+    ],
+  },
+  {
+    slug: 'forest-certification',
+    image: img(
+      'forest-certification.webp',
+      'Geoff Holland, timber stack near Trowupburn, Northumberland',
+      'CC BY-SA 2.0',
+      'https://commons.wikimedia.org/wiki/File:Timber_Stack,_Sinkside_Hill_Near_Trowupburn_-_geograph.org.uk_-_6552952.jpg',
+      {
+        licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/',
+        width: 1280,
+        height: 960,
+      },
+    ),
+    sources: [
+      cite(
+        'Forest Stewardship Council, How the FSC System Works',
+        'https://fsc.org/en/how-the-fsc-system-works',
+      ),
+    ],
+  },
+  {
+    slug: 'redd-plus',
+    image: img(
+      'redd-plus.webp',
+      'Dukeabruzzi, rainforest in Kinabalu Park, Borneo',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Borneo_rainforest.jpg',
+      {
+        licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+        width: 1600,
+        height: 1169,
+      },
+    ),
+    sources: [
+      cite(
+        'Forest Carbon Partnership Facility, About the FCPF',
+        'https://www.forestcarbonpartnership.org/about',
+      ),
+    ],
+  },
+  {
+    slug: 'closer-to-nature-forestry',
+    image: img(
+      'closer-to-nature-forestry.webp',
+      'Michael Fiegle, beech selection forest, Mühlhausen',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Plenterwald_April_2004.jpg',
+      {
+        licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/',
+        width: 1494,
+        height: 1036,
+      },
+    ),
+    sources: [
+      cite(
+        'European Commission, Guidelines on Closer-to-Nature Forest Management',
+        'https://environment.ec.europa.eu/publications/guidelines-closer-nature-forest-management_en',
+      ),
+    ],
+  },
+  {
+    slug: 'enrichment-planting',
+    image: img(
+      'enrichment-planting.webp',
+      'Beverly Moseley, USDA Natural Resources Conservation Service, White Mountain Apache planting',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:White_Mountain_Apache_Arizona-105.jpg',
+      {
+        licenseUrl: 'https://commons.wikimedia.org/wiki/File:White_Mountain_Apache_Arizona-105.jpg',
+        width: 1600,
+        height: 1060,
+      },
+    ),
+    sources: [
+      cite(
+        'FAO, Silviculture in Natural Forests, basic knowledge (PDF)',
+        'https://www.fao.org/sustainable-forest-management/toolbox/modules/silviculture-in-natural-forests/basic-knowledge/en/?type=111',
+      ),
+    ],
+  },
+  {
+    slug: 'mass-timber',
+    image: img(
+      'mass-timber.webp',
+      'RoterRolf, interior built from cross-laminated timber',
+      'CC0 1.0',
+      'https://commons.wikimedia.org/wiki/File:Brettsperrholzkonstruktion.jpg',
+      {
+        licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+        width: 1600,
+        height: 1200,
+      },
+    ),
+    sources: [
+      cite(
+        'U.S. Department of Agriculture Forest Service, Scaling up mass timber',
+        'https://www.fs.usda.gov/about-agency/features/scaling-mass-timber-closing-gaps-fueling-innovation',
       ),
     ],
   },

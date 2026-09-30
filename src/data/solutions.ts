@@ -43,6 +43,12 @@ export type SolutionMeta = {
   slug: string;
   tag: TagKey;
   latest?: boolean;
+  /**
+   * Public detail-page slug when it must differ from the card slug.
+   * The Forests mass-timber article uses this so it does not share an id
+   * or image file with the Materials mass-timber card.
+   */
+  detailSlug?: string;
   /** Official project pages and agency briefs — not image credits. */
   sources?: readonly PrimarySource[];
 };
@@ -152,7 +158,7 @@ export const solutionMeta: SolutionMeta[] = [
     latest: true,
     sources: [
       cite(
-        'FAO — Sustainable forest management overview',
+        'FAO, sustainable forest management overview',
         'https://www.fao.org/forestry/sfm/overview/',
       ),
     ],
@@ -162,7 +168,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'forests',
     sources: [
       cite(
-        'Regreening Africa — FMNR',
+        'Regreening Africa, farmer-managed natural regeneration',
         'https://regreeningafrica.org/approach/farmer-managed-natural-regeneration/',
       ),
     ],
@@ -170,14 +176,19 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'fire-smart-forestry',
     tag: 'forests',
-    sources: [cite('NWCG — PMS 484', 'https://www.nwcg.gov/publications/pms484')],
+    sources: [
+      cite(
+        'National Wildfire Coordinating Group, prescribed fire guide',
+        'https://www.nwcg.gov/publications/pms484',
+      ),
+    ],
   },
   {
     slug: 'shade-agroforestry',
     tag: 'forests',
     sources: [
       cite(
-        'Smithsonian National Zoo — Bird Friendly coffee',
+        'Smithsonian National Zoo, Bird Friendly coffee',
         'https://nationalzoo.si.edu/migratory-birds/bird-friendly-coffee',
       ),
     ],
@@ -464,7 +475,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'forests',
     sources: [
       cite(
-        'FAO — Agroforestry overview',
+        'FAO, agroforestry overview',
         'https://www.fao.org/agroforestry/about-agroforestry/overview/en',
       ),
     ],
@@ -472,19 +483,26 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'windbreaks',
     tag: 'forests',
-    sources: [cite('USDA National Agroforestry Center — windbreaks', 'https://research.fs.usda.gov/centers/nac/windbreaks')],
+    sources: [
+      cite(
+        'U.S. Department of Agriculture National Agroforestry Center, windbreaks',
+        'https://research.fs.usda.gov/centers/nac/windbreaks',
+      ),
+    ],
   },
   {
     slug: 'reduced-impact-logging',
     tag: 'forests',
-    sources: [cite('FAO — reduced-impact logging', 'https://www.fao.org/4/ac805e/ac805e0n.htm')],
+    sources: [
+      cite('FAO, reduced-impact logging', 'https://www.fao.org/4/ac805e/ac805e0n.htm'),
+    ],
   },
   {
     slug: 'riparian-forest-restoration',
     tag: 'forests',
     sources: [
       cite(
-        'USDA Climate Hubs — riparian forest cover',
+        'U.S. Department of Agriculture Climate Hubs, riparian forest cover',
         'https://www.climatehubs.usda.gov/approach/maintain-or-restore-forest-and-vegetative-cover-riparian-areas',
       ),
     ],
@@ -494,8 +512,59 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'forests',
     sources: [
       cite(
-        'FAO / FECOFUN — community forestry in Nepal',
+        'FAO and the Federation of Community Forestry Users Nepal',
         'https://www.fao.org/nepal/news/detail/fao-and-fecofun-strengthen-collaboration-for-community-based-forest-management-and-climate-resilience/en',
+      ),
+    ],
+  },
+  {
+    slug: 'forest-certification',
+    tag: 'forests',
+    sources: [
+      cite(
+        'Forest Stewardship Council, How the FSC System Works',
+        'https://fsc.org/en/how-the-fsc-system-works',
+      ),
+    ],
+  },
+  {
+    slug: 'redd-plus',
+    tag: 'forests',
+    sources: [
+      cite(
+        'World Bank Forest Carbon Partnership Facility, About the FCPF',
+        'https://www.forestcarbonpartnership.org/about',
+      ),
+    ],
+  },
+  {
+    slug: 'closer-to-nature-forestry',
+    tag: 'forests',
+    sources: [
+      cite(
+        'European Commission, Guidelines on Closer-to-Nature Forest Management',
+        'https://environment.ec.europa.eu/publications/guidelines-closer-nature-forest-management_en',
+      ),
+    ],
+  },
+  {
+    slug: 'enrichment-planting',
+    tag: 'forests',
+    sources: [
+      cite(
+        'FAO, Silviculture in Natural Forests',
+        'https://www.fao.org/sustainable-forest-management/toolbox/modules/silviculture-in-natural-forests/basic-knowledge/en/?type=111',
+      ),
+    ],
+  },
+  {
+    slug: 'forest-mass-timber',
+    detailSlug: 'mass-timber',
+    tag: 'forests',
+    sources: [
+      cite(
+        'U.S. Department of Agriculture Forest Service, Scaling up mass timber',
+        'https://www.fs.usda.gov/about-agency/features/scaling-mass-timber-closing-gaps-fueling-innovation',
       ),
     ],
   },

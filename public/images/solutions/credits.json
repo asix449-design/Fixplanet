@@ -679,5 +679,59 @@
     "artist": "Fix Planet chart from IEA, Electric bus sales by region, 2020-2025",
     "license": "CC BY 4.0",
     "note": "Thousands of buses. Stack bottom to top: China, Europe, United States, India, Latin America, rest of world. Series copied from the IEA chart CSV on the chart page."
+  },
+  {
+    "slug": "forest-certification",
+    "file": "forest-certification.jpg",
+    "detail": "forest-certification.webp",
+    "commonsTitle": "Timber Stack, Sinkside Hill Near Trowupburn - geograph.org.uk - 6552952.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timber_Stack,_Sinkside_Hill_Near_Trowupburn_-_geograph.org.uk_-_6552952.jpg",
+    "artist": "Geoff Holland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "note": "Logs stacked on grass near Trowupburn, Northumberland. The caption does not claim the timber is certified. Downscaled to 1280 px wide."
+  },
+  {
+    "slug": "redd-plus",
+    "file": "redd-plus.jpg",
+    "detail": "redd-plus.webp",
+    "commonsTitle": "Borneo rainforest.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borneo_rainforest.jpg",
+    "artist": "Dukeabruzzi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Rainforest in Kinabalu Park, Borneo. Downscaled to 1600 px wide."
+  },
+  {
+    "slug": "closer-to-nature-forestry",
+    "file": "closer-to-nature-forestry.jpg",
+    "detail": "closer-to-nature-forestry.webp",
+    "commonsTitle": "Plenterwald April 2004.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plenterwald_April_2004.jpg",
+    "artist": "Michael Fiegle",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "note": "Beech selection forest, Mühlhausen city forest. Also offered under GFDL 1.2 or later. Width 1494 px."
+  },
+  {
+    "slug": "enrichment-planting",
+    "file": "enrichment-planting.jpg",
+    "detail": "enrichment-planting.webp",
+    "commonsTitle": "White Mountain Apache Arizona-105.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Mountain_Apache_Arizona-105.jpg",
+    "artist": "Beverly Moseley, USDA Natural Resources Conservation Service",
+    "license": "Public domain",
+    "note": "White Mountain Apache Tribe forestry worker planting a ponderosa pine seedling beside a burned stump. Weakest fit for tropical enrichment planting; caption states what the photo shows. Downscaled to 1600 px wide."
+  },
+  {
+    "slug": "forest-mass-timber",
+    "file": "forest-mass-timber.jpg",
+    "detail": "mass-timber.webp",
+    "commonsTitle": "Brettsperrholzkonstruktion.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brettsperrholzkonstruktion.jpg",
+    "artist": "RoterRolf",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "note": "Interior built from cross-laminated timber panels. Downscaled to 1600 px wide."
   }
 ]
