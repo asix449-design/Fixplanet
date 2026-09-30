@@ -395,6 +395,7 @@ export function mountDisplacementGlobe(root) {
     list.replaceChildren();
     for (const crisis of pack.crises) {
       const item = document.createElement('li');
+      item.className = 'dg-feed-item';
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'dg-feed-btn';
@@ -616,7 +617,7 @@ export function mountDisplacementGlobe(root) {
     if (restoreFocus && button instanceof HTMLElement) button.focus({ preventScroll: true });
     revealInList(button);
     drawFlows();
-    if (options.fly) flyTo(id);
+    if (options.fly) flyTo(id, options.instant);
     positionLabels();
   }
 
@@ -655,7 +656,7 @@ export function mountDisplacementGlobe(root) {
     }
   }
 
-  function flyTo(id) {
+  function flyTo(id, instant = false) {
     if (!map || !styleReady) return;
     const crisis = pack.crises.find((item) => item.id === id);
     if (!crisis) return;
@@ -681,11 +682,13 @@ export function mountDisplacementGlobe(root) {
         [maxLon + pad, maxLat + pad],
       ],
       {
-        padding: narrowScreen() ? 28 : 56,
-        maxZoom: narrowScreen() ? 2.6 : 3.15,
-        duration: reduced ? 0 : 900,
+        padding: narrowScreen() ? 36 : 64,
+        maxZoom: narrowScreen() ? 2.4 : 3.05,
+        duration: instant || reduced ? 0 : 800,
       },
     );
+    if (instant || reduced) root.dataset.framed = 'true';
+    else map.once('moveend', () => { root.dataset.framed = 'true'; });
   }
 
   function buildCollections() {
@@ -754,7 +757,8 @@ export function mountDisplacementGlobe(root) {
             geometry: { type: 'Point', coordinates: tip },
           });
           if (active) {
-            const mid = lineCoords[Math.min(lineCoords.length - 1, Math.round(lineCoords.length * (0.46 + (flowIndex % 3) * 0.08)))];
+            const along = [0.32, 0.5, 0.68, 0.42, 0.58][flowIndex % 5];
+            const mid = lineCoords[Math.min(lineCoords.length - 1, Math.round(lineCoords.length * along))];
             labelItems.push({
               crisisId: crisis.id,
               coord: mid,
@@ -946,16 +950,65 @@ export function mountDisplacementGlobe(root) {
     });
   }
 
+  function nudgeLabel(node, dx, dy) {
+    const left = parseFloat(node.style.left) || 0;
+    const top = parseFloat(node.style.top) || 0;
+    node.style.left = `${left + dx}px`;
+    node.style.top = `${top + dy}px`;
+  }
+
+  function separateLabels(nodes) {
+    const gap = 8;
+    for (let pass = 0; pass < 24; pass += 1) {
+      let moved = false;
+      for (let i = 0; i < nodes.length; i += 1) {
+        for (let j = i + 1; j < nodes.length; j += 1) {
+          const a = nodes[i].getBoundingClientRect();
+          const b = nodes[j].getBoundingClientRect();
+          const overlapX = Math.min(a.right, b.right) + gap - Math.max(a.left, b.left);
+          const overlapY = Math.min(a.bottom, b.bottom) + gap - Math.max(a.top, b.top);
+          if (overlapX <= 0 || overlapY <= 0) continue;
+          if (overlapX < overlapY) {
+            const push = overlapX / 2 + 1;
+            const dir = a.left <= b.left ? -1 : 1;
+            nudgeLabel(nodes[i], dir * push, 0);
+            nudgeLabel(nodes[j], -dir * push, 0);
+          } else {
+            const push = overlapY / 2 + 1;
+            const dir = a.top <= b.top ? -1 : 1;
+            nudgeLabel(nodes[i], 0, dir * push);
+            nudgeLabel(nodes[j], 0, -dir * push);
+          }
+          moved = true;
+        }
+      }
+      if (!moved) break;
+    }
+    const host = labels.getBoundingClientRect();
+    for (const node of nodes) {
+      const rect = node.getBoundingClientRect();
+      let dx = 0;
+      let dy = 0;
+      if (rect.left < host.left + 4) dx = host.left + 4 - rect.left;
+      if (rect.right > host.right - 4) dx = host.right - 4 - rect.right;
+      if (rect.top < host.top + 4) dy = host.top + 4 - rect.top;
+      if (rect.bottom > host.bottom - 4) dy = host.bottom - 4 - rect.bottom;
+      if (dx || dy) nudgeLabel(node, dx, dy);
+    }
+  }
+
   function positionLabels() {
     if (!labels) return;
     labels.replaceChildren();
     if (!map || !styleReady) return;
-    for (const item of labelItems) {
-      if (!pointVisible(item.coord)) continue;
+    const nodes = [];
+    labelItems.forEach((item, index) => {
+      if (!pointVisible(item.coord)) return;
       const pos = map.project(item.coord);
       const node = document.createElement('div');
       node.className = 'dg-label';
-      node.style.left = `${pos.x}px`;
+      const side = index % 2 === 0 ? -1 : 1;
+      node.style.left = `${pos.x + side * (narrowScreen() ? 18 : 34)}px`;
       node.style.top = `${pos.y}px`;
       const strong = document.createElement('p');
       strong.textContent = item.text;
@@ -965,7 +1018,9 @@ export function mountDisplacementGlobe(root) {
       date.textContent = item.date;
       node.append(strong, note, date);
       labels.append(node);
-    }
+      nodes.push(node);
+    });
+    separateLabels(nodes);
   }
 
   function pointVisible(coord) {
@@ -1085,9 +1140,9 @@ const before = map.getLayer('dg-arrows') ? 'dg-arrows' : undefined;
     }
     addGlobeLines();
     map.getCanvas().setAttribute('aria-label', ui.mapLabel);
-    drawFlows();
-    if (selected) flyTo(selected);
     map.resize();
+    drawFlows();
+    if (selected) flyTo(selected, true);
   }
 
   function wirePointer() {
@@ -1211,7 +1266,7 @@ const before = map.getLayer('dg-arrows') ? 'dg-arrows' : undefined;
       applyCauseLabels();
       const requested = hashId();
       const initial = pack.crises.some((crisis) => crisis.id === requested) ? requested : 'sudan';
-      select(initial, { fly: true });
+      select(initial, { fly: true, instant: true });
       setStatus('');
       root.dataset.ready = 'true';
     })
