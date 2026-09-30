@@ -59,6 +59,7 @@ export type ForestsPage = {
   works: Record<'soy' | 'indonesia' | 'indigenous' | 'protected', { title: string; text: string }>;
   mapsLink: string;
   mapsLinkCta: string;
+  numberSources: { label: string; url: string }[];
   units: Record<
     'billionHa' | 'millionHa' | 'millionHaYear' | 'percent' | 'ofLand' | 'gigatonnesC' | 'trillionTrees',
     string

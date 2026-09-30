@@ -11,7 +11,7 @@ import {
 import { forestBackdrop, forestFrameSrc } from '../data/forests';
 import {
   forestAtlasChrome,
-  forestAtlasSectionLabels,
+  forestAtlasSections,
   getForestAtlasBySlug,
   getForestsPage,
   getMapsPage,
@@ -35,13 +35,15 @@ if (!map) {
 const preview = forestAtlasPreviewSrc(map.preview);
 const credit = realMapCredit(locale, map.slug);
 const art = map.detail ? forestAtlasPreviewSrc(map.detail) : preview;
-const artWidth = map.detail ? 7200 : 1600;
-const artHeight = map.detail ? 3600 : 800;
+const artWidth = map.imageWidth ?? (map.detail ? 7200 : 1600);
+const artHeight = map.imageHeight ?? (map.detail ? 3600 : 800);
+const sections = forestAtlasSections(locale);
+const imageAlt = map.imageAlt || map.caption || map.title;
 const backdropSrc = forestFrameSrc(forestBackdrop.file);
 ---
 
 <BaseLayout
-  title={`${map.title} — ${forests.title} — Fix Planet`}
+  title={`${map.title} · ${forests.title} · Fix Planet`}
   description={map.blurb}
   image={preview}
   theme="forests"
@@ -63,16 +65,45 @@ const backdropSrc = forestFrameSrc(forestBackdrop.file);
   <section class="section section-hub-follow">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel">
-        <figure class="map-detail-art forest-map-art">
-          <img src={art} alt={map.blurb} width={artWidth} height={artHeight} />
+        <figure
+          class:list={[
+            'map-detail-art',
+            'forest-map-art',
+            map.photo && 'forest-photo-art',
+            map.cardContain && 'forest-photo-native',
+          ]}
+        >
+          <img src={art} alt={imageAlt} width={artWidth} height={artHeight} />
           <figcaption>
             {
-              credit ? (
+              map.caption && map.credit ? (
+                <>
+                  <p>{map.caption}</p>
+                  <p>
+                    {map.credit}
+                    {map.licenseUrl ? (
+                      <>
+                        {' '}
+                        (
+                        <a href={map.licenseUrl} rel="noopener noreferrer">
+                          {map.licenseUrl}
+                        </a>
+                        )
+                      </>
+                    ) : null}
+                  </p>
+                </>
+              ) : credit ? (
                 credit
               ) : (
                 <>
                   {map.sourceOrg}. {chrome.schematic}
-                  {map.usesCoastline ? <><br />{forestAtlasLandCredit}</> : null}
+                  {map.usesCoastline ? (
+                    <>
+                      <br />
+                      {forestAtlasLandCredit}
+                    </>
+                  ) : null}
                 </>
               )
             }
@@ -82,12 +113,18 @@ const backdropSrc = forestFrameSrc(forestBackdrop.file);
           {
             map.what && map.why && map.howToRead ? (
               <>
-                <h2>{forestAtlasSectionLabels.what}</h2>
+                <h2>{sections.what}</h2>
                 <p>{map.what}</p>
-                <h2>{forestAtlasSectionLabels.why}</h2>
+                <h2>{sections.why}</h2>
                 <p>{map.why}</p>
-                <h2>{forestAtlasSectionLabels.how}</h2>
+                <h2>{sections.how}</h2>
                 <p>{map.howToRead}</p>
+                {map.limits ? (
+                  <>
+                    <h2>{sections.limits}</h2>
+                    <p>{map.limits}</p>
+                  </>
+                ) : null}
               </>
             ) : (
               <p>{map.detailShort}</p>
@@ -96,7 +133,7 @@ const backdropSrc = forestFrameSrc(forestBackdrop.file);
           <CitedSourceList heading={maps.sourcesList} sources={map.sources} />
           <p class="oceans-cta-row">
             <a class="btn btn-primary map-open-source" href={map.sourceUrl} rel="noopener noreferrer">
-              {maps.openSource}
+              {chrome.openSource}
             </a>
           </p>
         </div>

@@ -1,7 +1,7 @@
 import type { ForestsPage } from './forests';
 
 export const lv: ForestsPage = {
-  metaTitle: 'Meži — Fix Planet',
+  metaTitle: 'Meži · Fix Planet',
   metaDescription:
     'Meži: kas tie ir, kā satelīts redz vainagu, senāku ainavu rekonstrukcijas un publicēti FAO un Global Forest Watch skaitļi.',
   eyebrow: 'Zemes meži',
@@ -12,10 +12,10 @@ export const lv: ForestsPage = {
   ],
   choosePanel: 'Izvēlies plauktu',
   heroNote:
-    'Skaitļi ar avotiem. FAO mežs ir zemes lietojums; GFW tropu primārais vainags ir cits reģistrs. Tos nesaskaita vienā summā.',
-  heroSources: 'Avoti un definīcijas →',
+    'Skaitļi ar avotiem: meža platība, primārie meži, stādītais mežs, ogleklis, neto zudums, tropu primārā meža zudums un koku skaits.',
+  heroSources: 'Avoti un definīcijas',
   filterAria: 'Mežu sadaļas',
-  back: '← Meži',
+  back: 'Meži',
   tiles: {
     satellite: 'Jūlija vainaga zaļums no kosmosa, 2001–2025.',
     history: 'Leduslaikmeta veģetācija, biomi un zeme pēc cilvēkiem.',
@@ -39,7 +39,7 @@ export const lv: ForestsPage = {
       'Piecas plates: pēdējā ledāja maksimuma veģetācija, biomu karte pie nesenā klimata un Ellis antromi — cilvēku veidoti biomi — 1700., 1900. un 2000. gadam.',
     ],
     numbers: [
-      'Publicēti lielumi, katram nosaukts avots un gads. FAO mežs ir zemes lietojums. Hansen / Global Forest Watch ir 30 metru vainags. Intact Forest Landscapes ir kartēta savvaļas klase. Crowther 2015 ir koku skaits. Tie ir dažādi mērījumi; tos nesaskaita vienā summā.',
+      'Publicēti lielumi, katram nosaukts avots un gads. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija ziņo par mežu kā zemes izmantošanu. Merilendas universitātes laboratorija un Global Forest Watch kartē vainagu ar aptuveni 30 metru soli. Neskartas meža ainavas ir kartēta lielu meža puduru klase. 2015. gada raksts žurnālā Nature novērtē koku skaitu. Katrs skaitlis patur sava izdevēja definīciju.',
     ],
     outlook: [
       'Holocēnā savvaļas mežs saruka: auga tīrumi, ganības un apmetnes. Pēc 2000. gada satelīta rinda ir blīvāka. Tropu primārā meža pārvēršana nav tas pats, kas boreālais ugunsgrēks, un neviens no tiem nav kalendāra datums, kad «meži beigsies».',
@@ -66,11 +66,11 @@ export const lv: ForestsPage = {
     'Zaļš ir vairāk veģetācijas jūlijā. Melns ir ūdens. Bēšs ir sauss vai kails. Salīdzini joslas — Amazoni, Kongo, Sundalendu, taigu — ne vienu pikselīti. Rekonstrukcijām ir savas leģendas: antromi ir cilvēku un zemes lietojuma klases, ne „koku procenti”.',
   caveats:
     'NDVI nav meža platība un nav primārais mežs. Kultūras un mitri gadi arī zaļo. Jūlijs labvēlīgs ziemeļu vasarai, tāpēc starpība gadu no gada šajā izšķirtspējā ir maza. Pēdējais ledāja maksimums ir ap 18 000 gadu sen, senāks un aukstāks nekā 10 000 p.m.ē. Biomu plate ir nesena klimata analogs; vidējā holocēnā Sahara bieži bija zaļāka.',
-  distinguishTitle: 'Boreālais mežs nav tropiskais. Primārais mežs nav plantācija.',
+  distinguishTitle: 'Boreālais mežs, tropu mežs un stādītais mežs',
   distinguish:
-    'Apmēram 45 procenti FAO meža ir tropiski; pārējais galvenokārt boreāls un mērens (FRA 2025). Boreālie zudumi bieži ir uguns, kukaiņi vai ciršana, pēc kuriem mežs FAO zemes lietojuma izpratnē var atgriezties. Tropu primārā zudums parasti ir pārvēršana — vecais mežs neatgriežas kā tā pati ekosistēma, ja to nomaina soja vai eļļas palma. Sekundārais mežs un plantācijas var celt „meža platību”, kamēr primārā krīt: stādītais mežs ir 312 milj. ha (8 procenti FAO meža), ne 1,18 mljrd. ha primārā aizstājējs. FAO neto zudums (4,12 milj. ha/gadā, 2015–2025) atņem pieaugumu no atmežošanas (10,9 milj. ha/gadā); tas nav globāls degradācijas hektārs. Intact Forest Landscapes (1086 milj. ha 2025. gadā) ir cita karte nekā FAO primārais. GFW 2024. (6,7 milj. ha) un 2025. (4,3 milj. ha) skaitļi stāv uz trešo definīciju. Neviens rindas saka „visi meži pazudīs kalendāra datumā”.',
+    'Aptuveni 45 procenti uzrādītā meža ir tropos. Pārējais galvenokārt ir boreāls un mērens mežs, pēc 2025. gada novērtējuma. Boreālie zudumi bieži saistīti ar uguni, kukaiņiem vai ciršanu, un zeme atkal var tikt uzskatīta par mežu zemes izmantošanas izpratnē. Tropu primārā meža zudums parasti ir pārveide: vecā meža vietā nonāk soja vai eļļas palma. Sekundārais mežs un plantācijas var palielināt kopējo meža platību, kamēr primārā meža platība sarūk. Stādītais mežs aizņem 312 miljonus hektāru, 8 procentus kopsummas, līdzās 1,18 miljardiem hektāru primārā meža. Neto zudums 4,12 miljoni hektāru gadā no 2015. līdz 2025. gadam ir mežu izciršana 10,9 miljoni hektāru gadā mīnus paplašināšanās. Neskartas meža ainavas 2025. gadā aizņem 1086 miljonus hektāru savā kartē. Tropu primārā meža zudums bija 6,7 miljoni hektāru 2024. gadā un 4,3 miljoni hektāru 2025. gadā pēc Global Forest Watch datiem.',
   numbersNote:
-    'Nokopēts no citētajām publikācijām, ar gadu. FAO meža platība nav Hansen vainags; IFL nav FAO primārais; Crowther 2015 ir koku skaits, ne hektāri.',
+    'Katrs skaitlis ir pārrakstīts no citētās publikācijas kopā ar šīs publikācijas gadu. Meža platība, vainags un koku skaits nāk no saviem izdevējiem.',
   trendTitle: 'Garais skats, tad gadi, ko var izmērīt',
   trendLead:
     'Ellis 12K grafiks rekonstruē antromus — savvaļas, kultūras un intensīvo zemi — no 10 000 p.m.ē. līdz 2017. Tas nav FAO hektāri. Pēc 2000. satelīta skaitļi ir ciešāki.',
@@ -119,14 +119,46 @@ export const lv: ForestsPage = {
   mapsLink: 'Karšu zālē ir arī Hansen / Global Forest Watch shēma par zināmajām zuduma frontēm.',
   mapsLinkCta: 'Atvērt meža seguma zuduma kartīti →',
   units: {
-    billionHa: 'mljrd. ha',
-    millionHa: 'milj. ha',
-    millionHaYear: 'milj. ha / gadā',
-    percent: '%',
-    ofLand: '% sauszemes',
-    gigatonnesC: 'Gt C',
-    trillionTrees: 'trilj. koku',
+    billionHa: 'miljardi hektāru',
+    millionHa: 'miljoni hektāru',
+    millionHaYear: 'miljoni hektāru gadā',
+    percent: 'procenti',
+    ofLand: 'procenti sauszemes',
+    gigatonnesC: 'gigatonnas oglekļa',
+    trillionTrees: 'triljoni koku',
   },
+  numberSources: [
+    {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025',
+      url: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+    },
+    {
+      label:
+        'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
+      url: 'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+    },
+    {
+      label: 'Hansens un līdzautori, augstas izšķirtspējas globālās meža seguma izmaiņu kartes (2013)',
+      url: 'https://doi.org/10.1126/science.1244693',
+    },
+    {
+      label: 'Pasaules resursu institūts, Pasaules mežu pārskats, meža zudums 2024. gadā',
+      url: 'https://gfr.wri.org/global-tree-cover-loss-data-2024',
+    },
+    {
+      label: 'Pasaules resursu institūts, Pasaules mežu pārskats, tropu mežu zudums 2025. gadā',
+      url: 'https://gfr.wri.org/latest-analysis-deforestation-trends',
+    },
+    {
+      label: 'Nature, «Koku blīvuma kartēšana globālā mērogā» (2015)',
+      url: 'https://www.nature.com/articles/nature14967',
+    },
+    {
+      label: 'Neskarto meža ainavu kartēšanas grupa, 2025',
+      url: 'https://doi.org/10.5281/zenodo.18011599',
+    },
+  ],
   frames: {
     'sat-2001': {
       label: '2001',
@@ -227,56 +259,70 @@ export const lv: ForestsPage = {
   },
   stats: {
     remaining: {
-      label: 'Mežs, kas palicis (FAO)',
-      text: '4,14 mljrd. ha — ap 0,50 ha uz cilvēku. Gandrīz puse šī meža ir tropiska. Zemes lietojuma mežs, ne Hansen vainags.',
+      label: 'Mežs, kas palicis',
+      text: '4,14 miljardi hektāru, ap 0,50 hektāriem uz cilvēku. Gandrīz puse šī meža ir tropos. Skaitlis ir zemes izmantošanas kopsumma no valstu ziņojumiem.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025',
     },
     landShare: {
-      label: 'Sauszemes daļa (FAO)',
-      text: '32 procenti pasaules sauszemes ir FAO mežs 2025. gadā. Tā pati zemes lietojuma klase kā 4,14 mljrd. ha krājums, ne koku seguma procents.',
+      label: 'Sauszemes daļa',
+      text: '32 procenti pasaules sauszemes 2025. gadā ir uzrādīti kā mežs. Tā ir tā pati zemes izmantošanas kopsumma kā 4,14 miljardi hektāru.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025',
     },
     plantedForest: {
-      label: 'Stādītais mežs (FAO)',
-      text: '312 milj. ha — 8 procenti FAO meža 2025. gadā. Plus 120 milj. ha kopš 1990.; pieauguma temps pēdējā desmitgadē palēninājās. Plantācijas un stādījumi, ne primārais mežs.',
+      label: 'Stādītais mežs',
+      text: '312 miljoni hektāru, 8 procenti meža 2025. gadā. Platība ir pieaugusi par 120 miljoniem hektāru kopš 1990. gada, un pieauguma temps pēdējā desmitgadē palēninājās. Skaitlis aptver plantācijas un stādījumus.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025',
     },
     carbonStock: {
-      label: 'Meža oglekļa krājums (FAO)',
-      text: '714 gigatonnas oglekļa visos baseinos (172 t/ha): augsne 46 procenti, dzīvā biomasa 44 procenti, nobiras un sausokņi 10 procenti (FRA 2025).',
+      label: 'Meža oglekļa krājums',
+      text: '714 gigatonnas oglekļa visos baseinos (172 tonnas uz hektāru): augsne 46 procenti, dzīvā biomasa 44 procenti, nobiras un sausokņi 10 procenti.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025',
     },
     deforestationSince1990: {
-      label: 'Atmežošana kopš 1990.',
-      text: '489 milj. ha nocirsti (FAO atmežošana, 1990–2025). Tas ir bruto meža zemes lietojuma zudums, ne neto un ne GFW koku seguma zudums. Temps palēninājās; tas neapstājās.',
+      label: 'Mežu izciršana kopš 1990. gada',
+      text: '489 miljoni hektāru izcirsti no 1990. līdz 2025. gadam. Skaitlis ir bruto meža zemes izmantošanas zudums. Temps palēninājās, un izciršana turpinās.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
     },
     netLossRecent: {
       label: 'Neto meža platības zudums',
-      text: '4,12 milj. ha/gadā 2015.–2025., pret 10,7 milj. ha/gadā 1990.–2000. Neto = atmežošana mīnus pieaugums (ataugšana, stādīšana, cits ieguvums).',
+      text: '4,12 miljoni hektāru gadā no 2015. līdz 2025. gadam, salīdzinot ar 10,7 miljoniem hektāru gadā no 1990. līdz 2000. gadam. Neto izmaiņas ir mežu izciršana mīnus paplašināšanās no atjaunošanās, stādīšanas un cita pieauguma.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
     },
     grossDeforestation: {
-      label: 'Bruto atmežošanas temps',
-      text: '10,9 milj. ha/gadā 2015.–2025., pret 17,6 milj. ha/gadā 1990. gados. Pieaugums arī palēninājās (6,78 milj. ha/gadā pēdējā desmitgadē). Atmežošana ir meža zemes lietojuma maiņa, ne globāls degradācijas hektārs.',
+      label: 'Bruto mežu izciršanas temps',
+      text: '10,9 miljoni hektāru gadā no 2015. līdz 2025. gadam, salīdzinot ar 17,6 miljoniem hektāru gadā no 1990. līdz 2000. gadam. Paplašināšanās arī palēninājās, līdz 6,78 miljoniem hektāru gadā pēdējā desmitgadē. Izciršana nozīmē meža pārveidi citā zemes izmantošanā.',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
     },
     primaryRemaining: {
-      label: 'Primārais mežs (FAO)',
-      text: 'Vismaz 1,18 mljrd. ha (29 procenti uzrādītā meža). Mīnus 110 milj. ha kopš 1990. Nesenais primārais zudums 1,61 milj. ha/gadā (2015–2025), mazāk par pusi no 2000.–2015. tempa. Ietver boreālo primāro, ne tikai lietusmežu.',
+      label: 'Primārie meži',
+      text: 'Vismaz 1,18 miljardi hektāru, 29 procenti uzrādītā meža. Platība ir samazinājusies par 110 miljoniem hektāru kopš 1990. gada. Nesenais primārā meža zudums ir 1,61 miljons hektāru gadā no 2015. līdz 2025. gadam, mazāk par pusi no 2000. līdz 2015. gada tempa. Kopsumma ietver boreālo primāro mežu un lietusmežu.',
+      sourceLine: 'Globālais meža resursu novērtējums 2025, primārie meži',
     },
     tropicalPrimary2024: {
-      label: 'Tropu primārais, 2024',
-      text: '6,7 milj. ha mitro tropu primārā meža — GFW/UMD rekords, uguns, ap 18 futbola laukumiem minūtē. Cita definīcija nekā FAO primārais.',
+      label: 'Tropu primārais mežs, 2024',
+      text: '6,7 miljoni hektāru mitro tropu primārā meža rekordgadā, galvenokārt ugunsgrēku dēļ, ap 18 futbola laukumiem minūtē.',
+      sourceLine: 'Pasaules resursu institūts, Pasaules mežu pārskats, meža zudums 2024. gadā',
     },
     tropicalPrimary2025: {
-      label: 'Tropu primārais, 2025',
-      text: '4,3 milj. ha — par 36 procentiem zem 2024., joprojām ap 46 procentiem virs dekādes iepriekš (WRI / UMD, 2026. gada 29. aprīlis). Globālais koku seguma zudums ap 25,5 milj. ha; 42 procenti uguns.',
+      label: 'Tropu primārais mežs, 2025',
+      text: '4,3 miljoni hektāru, par 36 procentiem mazāk nekā 2024. gadā un joprojām ap 46 procentiem vairāk nekā pirms desmit gadiem. Pasaules resursu institūts to raksturo kā 11 futbola laukumus minūtē. Brazīlija samazināja ar ugunsgrēkiem nesaistīto primārā meža zudumu par 41 procentu salīdzinājumā ar 2024. gadu. Visiem pasaules mežiem koku seguma zudums bija ap 25,5 miljoniem hektāru, un ugunsgrēki izraisīja 42 procentus.',
+      sourceLine: 'Pasaules resursu institūts, Pasaules mežu pārskats, tropu mežu zudums 2025. gadā',
     },
     treeCount: {
-      label: 'Dzīvie koki (aplēse)',
-      text: 'Crowther et al. 2015, Nature: tagad ap 3,04 triljoniem koku. Modelēts stumbru skaits no parauglaukumiem un tālizpētes — ne FAO hektāri un ne vēlāks darbs par sugu skaitu.',
+      label: 'Dzīvie koki',
+      text: '2015. gada raksts žurnālā Nature novērtē koku skaitu ap 3,04 triljoniem. Skaitlis ir modelēts stumbru skaits no parauglaukumiem un attālās izpētes.',
+      sourceLine: 'Nature, «Koku blīvuma kartēšana globālā mērogā» (2015)',
     },
     holoceneTrees: {
-      label: 'Koki kopš lauksaimniecības (aplēse)',
-      text: 'Tas pats Crowther et al. 2015 darbs: aptuveni par 46 procentiem mazāk koku nekā UNEP vēsturiskā seguma projekcija kopš civilizācijas/lauksaimniecības. Tīši rupji; joprojām koku skaits, ne hektāri.',
+      label: 'Koki kopš civilizācijas sākuma',
+      text: 'Tas pats 2015. gada raksts novērtē aptuveni par 46 procentiem mazāk koku nekā cilvēku civilizācijas sākumā.',
+      sourceLine: 'Nature, «Koku blīvuma kartēšana globālā mērogā» (2015)',
     },
     intactLandscapes: {
       label: 'Neskartas meža ainavas',
-      text: '1086 milj. ha 2025. gadā — 8,4 procenti sauszemes bez ledus (Potapov / IFL Mapping Team). Gabali ≥ ~50 000 ha bez rūpnieciskas pēdas. Ne FAO primārais un ne GFW tropu primārais.',
+      text: '1086 miljoni hektāru 2025. gadā, 8,4 procenti sauszemes bez ledus. Gabali ir ap 50 000 hektāru vai lielāki un bez rūpnieciskas pēdas.',
+      sourceLine: 'Neskarto meža ainavu kartēšanas grupa, 2025',
     },
   },
+
 };

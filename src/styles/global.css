@@ -1707,9 +1707,27 @@ a.map-card:hover {
   object-position: center;
 }
 
-.map-card-art-contain img {
+.map-card-art-contain img,
+.card-art.card-art-contain img {
   object-fit: contain;
   object-position: center;
+}
+
+.card-art.card-art-contain {
+  background: #07110c;
+}
+
+.map-detail-art.forest-photo-art img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.map-detail-art.forest-photo-native img {
+  max-width: min(100%, 964px);
 }
 
 .map-schematic-badge {

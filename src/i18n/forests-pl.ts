@@ -1,7 +1,7 @@
 import type { ForestsPage } from './forests';
 
 export const pl: ForestsPage = {
-  metaTitle: 'Lasy — Fix Planet',
+  metaTitle: 'Lasy · Fix Planet',
   metaDescription:
     'Lasy: czym są, jak satelita widzi korony, rekonstrukcje dawnych krajobrazów i opublikowane liczby FAO oraz Global Forest Watch.',
   eyebrow: 'Lasy Ziemi',
@@ -12,10 +12,10 @@ export const pl: ForestsPage = {
   ],
   choosePanel: 'Wybierz półkę',
   heroNote:
-    'Liczby ze źródłami. Las FAO to użytkowanie ziemi; tropikalna korona pierwotna GFW to inny rejestr. Nie dodaje się ich do jednej sumy.',
-  heroSources: 'Źródła i definicje →',
+    'Liczby ze źródłami: powierzchnia lasu, lasy pierwotne, las sadzony, węgiel, strata netto, utrata tropikalnego lasu pierwotnego i liczba drzew.',
+  heroSources: 'Źródła i definicje',
   filterAria: 'Działy Lasów',
-  back: '← Lasy',
+  back: 'Lasy',
   tiles: {
     satellite: 'Lipcowa zieleń koron z kosmosu, 2001–2025.',
     history: 'Roślinność epoki lodowej, biomy i ziemia po ludziach.',
@@ -39,7 +39,7 @@ export const pl: ForestsPage = {
       'Pięć płyt: roślinność ostatniego maksimum lodowcowego, mapa biomów przy niedawnym klimacie oraz antromy Ellis — biomy ukształtowane przez ludzi — dla 1700, 1900 i 2000.',
     ],
     numbers: [
-      'Opublikowane wielkości, każda z nazwanym źródłem i rokiem. Las FAO to użytkowanie ziemi. Hansen / Global Forest Watch to korona w kroku 30 metrów. Intact Forest Landscapes to kartograficzna klasa dzikiej przyrody. Crowther 2015 to liczba drzew. To różne pomiary; nie dodaje się ich do jednej sumy.',
+      'Opublikowane wielkości, każda z nazwanym źródłem i rokiem. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa podaje las jako użytkowanie ziemi. Laboratorium Uniwersytetu Maryland i Global Forest Watch kartują koronę w kroku około 30 metrów. Nienaruszone krajobrazy leśne są kartograficzną klasą dużych połaci lasu. Artykuł z 2015 roku w czasopiśmie Nature szacuje liczbę drzew. Każda liczba zachowuje definicję swojego wydawcy.',
     ],
     outlook: [
       'W holocenie dziki las się skurczył: rosły uprawy, pastwiska i osiedla. Po 2000 roku zapis satelitarny jest ciaśniejszy. Tropikalna zamiana lasu pierwotnego to nie to samo co pożar borealny, i żadne z tego nie jest datą, kiedy „lasy się skończą”.',
@@ -66,11 +66,11 @@ export const pl: ForestsPage = {
     'Zieleń to więcej roślinności w lipcu. Czerń to woda. Beż to sucho albo goło. Porównuj pasma — Amazonię, Kongo, Sundaland, tajgę — nie jeden piksel. Płyty rekonstrukcji mają własne legendy: antromy to klasy ludzi i użytkowania ziemi, nie „procent drzew”.',
   caveats:
     'NDVI to nie powierzchnia lasu i nie las pierwotny. Uprawy i mokre lata też są zielone. Lipiec sprzyja latu na północy, więc różnica rok do roku w tej rozdzielczości jest mała. Ostatnie maksimum lodowcowe to około 18 000 lat temu, starsze i zimniejsze niż 10 000 p.n.e. Płyta biomów to analog niedawnego klimatu; w środkowym holocenie Sahara bywała bardziej zielona.',
-  distinguishTitle: 'Las borealny to nie las tropikalny. Las pierwotny to nie plantacja.',
+  distinguishTitle: 'Las borealny, las tropikalny i las sadzony',
   distinguish:
-    'Około 45 procent lasu FAO jest tropikalne; reszta to głównie borealny i umiarkowany (FRA 2025). Straty borealne to często pożar, owady albo wyrąb, po których las w sensie FAO może wrócić. Tropikalna strata lasu pierwotnego to zwykle konwersja — stary las nie wraca jako ten sam ekosystem, jeśli zastąpi go soja albo palma. Las wtórny i plantacje mogą podnieść „powierzchnię lasu”, gdy pierwotna spada: las sadzony to 312 mln ha (8 procent lasu FAO), nie zamiennik 1,18 mld ha pierwotnego. Strata netto FAO (4,12 mln ha/rok, 2015–2025) odejmuje przyrost od wylesienia (10,9 mln ha/rok); to nie globalny hektar degradacji. Intact Forest Landscapes (1086 mln ha w 2025) to inna mapa niż las pierwotny FAO. Liczby GFW za 2024 (6,7 mln ha) i 2025 (4,3 mln ha) stoją na trzeciej definicji. Żaden szereg nie mówi „wszystkie lasy znikną w kalendarzową datę”.',
+    'Około 45 procent zaraportowanego lasu leży w strefie tropikalnej. Reszta to głównie las borealny i umiarkowany, według oceny z 2025 roku. Straty borealne często biorą się z pożaru, owadów albo wyrębu, a grunt może znów liczyć się jako las w sensie użytkowania ziemi. Tropikalna strata lasu pierwotnego zwykle jest przekształceniem: na miejscu starego lasu staje soja albo olejowiec. Las wtórny i plantacje mogą zwiększać łączną powierzchnię lasu, gdy powierzchnia lasu pierwotnego maleje. Las sadzony zajmuje 312 milionów hektarów, 8 procent sumy, obok 1,18 miliarda hektarów lasu pierwotnego. Strata netto 4,12 miliona hektarów rocznie w latach 2015 do 2025 to wylesienie 10,9 miliona hektarów rocznie minus ekspansja. Nienaruszone krajobrazy leśne obejmują 1086 milionów hektarów w 2025 roku na własnej mapie. Utrata tropikalnego lasu pierwotnego wyniosła 6,7 miliona hektarów w 2024 roku i 4,3 miliona hektarów w 2025 roku w zapisie Global Forest Watch.',
   numbersNote:
-    'Skopiowane z cytowanych publikacji, z rocznikiem. Powierzchnia lasu FAO to nie korona Hansena; IFL to nie las pierwotny FAO; Crowther 2015 to liczba drzew, nie hektary.',
+    'Każda liczba jest przepisana z cytowanej publikacji wraz z rokiem tej publikacji. Powierzchnia lasu, korona i liczba drzew pochodzą od własnych wydawców.',
   trendTitle: 'Długi widok, potem lata, które da się zmierzyć',
   trendLead:
     'Wykres Ellis 12K odtwarza antromy — ziemie dzikie, kulturowe i intensywne — od 10 000 p.n.e. do 2017. To nie hektary FAO. Po 2000 liczby satelitarne są ciaśniejsze.',
@@ -119,14 +119,46 @@ export const pl: ForestsPage = {
   mapsLink: 'W sali Map jest też schemat Hansen / Global Forest Watch znanych frontierów strat.',
   mapsLinkCta: 'Otwórz kartę ubytku pokrywy leśnej →',
   units: {
-    billionHa: 'mld ha',
-    millionHa: 'mln ha',
-    millionHaYear: 'mln ha / rok',
-    percent: '%',
-    ofLand: '% lądu',
-    gigatonnesC: 'Gt C',
-    trillionTrees: 'bln drzew',
+    billionHa: 'miliarda hektarów',
+    millionHa: 'milionów hektarów',
+    millionHaYear: 'miliona hektarów rocznie',
+    percent: 'procent',
+    ofLand: 'procent lądu',
+    gigatonnesC: 'gigaton węgla',
+    trillionTrees: 'biliona drzew',
   },
+  numberSources: [
+    {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, Globalna Ocena Zasobów Leśnych 2025',
+      url: 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+    },
+    {
+      label:
+        'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
+      url: 'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+    },
+    {
+      label: 'Hansen i współpracownicy, globalne mapy zmian pokrywy leśnej o wysokiej rozdzielczości (2013)',
+      url: 'https://doi.org/10.1126/science.1244693',
+    },
+    {
+      label: 'Instytut Zasobów Światowych, Przegląd Lasów Świata, utrata lasu w 2024 roku',
+      url: 'https://gfr.wri.org/global-tree-cover-loss-data-2024',
+    },
+    {
+      label: 'Instytut Zasobów Światowych, Przegląd Lasów Świata, utrata lasów tropikalnych w 2025 roku',
+      url: 'https://gfr.wri.org/latest-analysis-deforestation-trends',
+    },
+    {
+      label: 'Nature, „Mapowanie gęstości drzew w skali globalnej” (2015)',
+      url: 'https://www.nature.com/articles/nature14967',
+    },
+    {
+      label: 'Zespół mapowania nienaruszonych krajobrazów leśnych, 2025',
+      url: 'https://doi.org/10.5281/zenodo.18011599',
+    },
+  ],
   frames: {
     'sat-2001': {
       label: '2001',
@@ -227,56 +259,73 @@ export const pl: ForestsPage = {
   },
   stats: {
     remaining: {
-      label: 'Las, który został (FAO)',
-      text: '4,14 mld ha — ok. 0,50 ha na osobę. Blisko połowa tego lasu jest tropikalna. Las użytkowania ziemi, nie korona Hansen.',
+      label: 'Las, który został',
+      text: '4,14 miliarda hektarów, około 0,50 hektara na osobę. Blisko połowa tego lasu leży w strefie tropikalnej. Liczba jest sumą użytkowania ziemi z raportów krajowych.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, Globalna Ocena Zasobów Leśnych 2025',
     },
     landShare: {
-      label: 'Udział lądu (FAO)',
-      text: '32 procent światowego lądu to las FAO w 2025. Ta sama klasa użytkowania ziemi co zasób 4,14 mld ha, nie procent pokrywy drzewnej.',
+      label: 'Udział lądu',
+      text: '32 procent światowego lądu w 2025 roku jest podane jako las. To ta sama suma użytkowania ziemi co 4,14 miliarda hektarów.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, Globalna Ocena Zasobów Leśnych 2025',
     },
     plantedForest: {
-      label: 'Las sadzony (FAO)',
-      text: '312 mln ha — 8 procent lasu FAO w 2025. Plus 120 mln ha od 1990; tempo wzrostu w ostatniej dekadzie spadło. Plantacje i nasadzenia, nie las pierwotny.',
+      label: 'Las sadzony',
+      unit: 'milionów hektarów',
+      text: '312 milionów hektarów, 8 procent lasu w 2025 roku. Powierzchnia wzrosła o 120 milionów hektarów od 1990 roku, a tempo wzrostu w ostatniej dekadzie spadło. Liczba obejmuje plantacje i nasadzenia.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, Globalna Ocena Zasobów Leśnych 2025',
     },
     carbonStock: {
-      label: 'Zasób węgla w lasach (FAO)',
-      text: '714 gigaton węgla we wszystkich pulach (172 t/ha): gleba 46 procent, żywa biomasa 44 procent, ściółka i martwe drewno 10 procent (FRA 2025).',
+      label: 'Zapas węgla w lasach',
+      text: '714 gigaton węgla we wszystkich pulach (172 tony na hektar): gleba 46 procent, żywa biomasa 44 procent, ściółka i martwe drewno 10 procent.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, Globalna Ocena Zasobów Leśnych 2025',
     },
     deforestationSince1990: {
-      label: 'Wylesienie od 1990',
-      text: '489 mln ha zbitych (wylesienie FAO, 1990–2025). To strata brutto leśnego użytkowania ziemi, nie netto i nie ubytek pokrywy drzewnej GFW. Tempo spadło; nie stanęło.',
+      label: 'Wylesienie od 1990 roku',
+      unit: 'milionów hektarów',
+      text: '489 milionów hektarów wycięto od 1990 do 2025 roku. Liczba jest stratą brutto leśnego użytkowania ziemi. Tempo spadło, a wycinanie trwa.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
     },
     netLossRecent: {
       label: 'Strata netto powierzchni lasu',
-      text: '4,12 mln ha/rok w 2015–2025, wobec 10,7 mln ha/rok w 1990–2000. Netto = wylesienie minus przyrost (odrost, nasadzenia, inny zysk).',
+      text: '4,12 miliona hektarów rocznie w latach 2015 do 2025, wobec 10,7 miliona hektarów rocznie w latach 1990 do 2000. Zmiana netto to wylesienie minus ekspansja z odnowienia, nasadzeń i innego przyrostu.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
     },
     grossDeforestation: {
       label: 'Tempo wylesienia brutto',
-      text: '10,9 mln ha/rok w 2015–2025, wobec 17,6 mln ha/rok w latach 90. Przyrost też zwolnił (6,78 mln ha/rok w ostatniej dekadzie). Wylesienie to zmiana leśnego użytkowania ziemi, nie globalny hektar degradacji.',
+      text: '10,9 miliona hektarów rocznie w latach 2015 do 2025, wobec 17,6 miliona hektarów rocznie w latach 1990 do 2000. Ekspansja też zwolniła, do 6,78 miliona hektarów rocznie w ostatniej dekadzie. Wylesianie oznacza przekształcenie lasu w inny sposób użytkowania gruntów.',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
     },
     primaryRemaining: {
-      label: 'Las pierwotny (FAO)',
-      text: 'Co najmniej 1,18 mld ha (29 procent zaraportowanego lasu). Spadek o 110 mln ha od 1990. Niedawna strata pierwotna: 1,61 mln ha/rok (2015–2025), mniej niż połowa tempa 2000–2015. Obejmuje pierwotny borealny, nie tylko deszczowy.',
+      label: 'Lasy pierwotne',
+      text: 'Co najmniej 1,18 miliarda hektarów, 29 procent zaraportowanego lasu. Powierzchnia spadła o 110 milionów hektarów od 1990 roku. Niedawna strata lasu pierwotnego to 1,61 miliona hektarów rocznie w latach 2015 do 2025, mniej niż połowa tempa z lat 2000 do 2015. Suma obejmuje pierwotny las borealny i las deszczowy.',
+      sourceLine: 'Globalna Ocena Zasobów Leśnych 2025, lasy pierwotne',
     },
     tropicalPrimary2024: {
-      label: 'Tropikalny pierwotny, 2024',
-      text: '6,7 mln ha wilgotnego tropikalnego lasu pierwotnego — rekord GFW/UMD, pożary, ok. 18 boisk na minutę. Inna definicja niż las pierwotny FAO.',
+      label: 'Tropikalny las pierwotny, 2024',
+      text: '6,7 miliona hektarów wilgotnego tropikalnego lasu pierwotnego w rekordowym roku, głównie z powodu pożarów, około 18 boisk na minutę.',
+      sourceLine: 'Instytut Zasobów Światowych, Przegląd Lasów Świata, utrata lasu w 2024 roku',
     },
     tropicalPrimary2025: {
-      label: 'Tropikalny pierwotny, 2025',
-      text: '4,3 mln ha — 36 procent poniżej 2024, wciąż ok. 46 procent powyżej dekady wcześniej (WRI / UMD, 29 kwietnia 2026). Globalny ubytek pokrywy drzewnej ok. 25,5 mln ha; 42 procent pożar.',
+      label: 'Tropikalny las pierwotny, 2025',
+      text: '4,3 miliona hektarów, o 36 procent mniej niż w 2024 roku i wciąż około 46 procent więcej niż dekadę wcześniej. Instytut Zasobów Światowych opisuje to jako 11 boisk piłkarskich na minutę. Brazylia zmniejszyła utratę lasu pierwotnego niezwiązaną z pożarami o 41 procent w porównaniu z 2024 rokiem. Dla wszystkich lasów świata utrata pokrywy drzew wyniosła około 25,5 miliona hektarów, a pożary odpowiadały za 42 procent.',
+      sourceLine: 'Instytut Zasobów Światowych, Przegląd Lasów Świata, utrata lasów tropikalnych w 2025 roku',
     },
     treeCount: {
-      label: 'Żyjące drzewa (szacunek)',
-      text: 'Crowther et al. 2015, Nature: ok. 3,04 bln drzew teraz. Modelowana liczba pni z powierzchni próbnych i teledetekcji — nie hektary FAO i nie późniejsza praca o liczbie gatunków.',
+      label: 'Żyjące drzewa',
+      text: 'Artykuł z 2015 roku w czasopiśmie Nature szacuje liczbę drzew na około 3,04 biliona. Liczba jest modelowaną liczbą pni z powierzchni próbnych i teledetekcji.',
+      sourceLine: 'Nature, „Mapowanie gęstości drzew w skali globalnej” (2015)',
     },
     holoceneTrees: {
-      label: 'Drzewa od rolnictwa (szacunek)',
-      text: 'Ta sama praca Crowther et al. 2015: mniej więcej 46 procent mniej drzew niż projekcja historycznej pokrywy UNEP od cywilizacji/rolnictwa. Celowo grubo; nadal liczba drzew, nie hektary.',
+      label: 'Drzewa od początku cywilizacji',
+      text: 'Ten sam artykuł z 2015 roku szacuje około 46 procent mniej drzew niż na początku ludzkiej cywilizacji.',
+      sourceLine: 'Nature, „Mapowanie gęstości drzew w skali globalnej” (2015)',
     },
     intactLandscapes: {
       label: 'Nienaruszone krajobrazy leśne',
-      text: '1086 mln ha w 2025 — 8,4 procent lądu bez lodu (Potapov / IFL Mapping Team). Płaty ≥ ~50 000 ha bez śladu przemysłowego. Nie las pierwotny FAO i nie tropikalny pierwotny GFW.',
+      unit: 'milionów hektarów',
+      text: '1086 milionów hektarów w 2025 roku, 8,4 procent lądu bez lodu. Płaty mają około 50 000 hektarów albo więcej i nie noszą śladu przemysłowego.',
+      sourceLine: 'Zespół mapowania nienaruszonych krajobrazów leśnych, 2025',
     },
   },
+
 };
