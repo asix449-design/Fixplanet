@@ -30,9 +30,14 @@ const activeArea: InnovationArea | undefined =
   hub || !isInnovationArea(requested ?? undefined) ? undefined : requested;
 
 const items = activeArea ? getInnovationsByArea(locale, activeArea) : getInnovations(locale);
+const energyShelf = activeArea === 'energy';
+const backLabel = energyShelf ? page.back.replace(/^\s*←\s*/, '') : page.back;
+const cardCta = energyShelf ? page.cardCta.replace(/\s*→\s*$/, '') : page.cardCta;
 const shelfTitle = activeArea ? page.areas[activeArea] : page.title;
 const pageTitle = activeArea
-  ? `${page.areas[activeArea]} — ${page.title} — Fix Planet`
+  ? energyShelf
+    ? `${page.areas[activeArea]}: ${page.title}, Fix Planet`
+    : `${page.areas[activeArea]} — ${page.title} — Fix Planet`
   : page.metaTitle;
 const pageDescription = activeArea ? page.areaLeads[activeArea] : page.metaDescription;
 const hubHero = '/images/innovations/innovations-hub-hero.jpg';
@@ -82,7 +87,7 @@ const sectionBg = '/images/innovations/innovations-section-bg.jpg';
     ) : (
       <ShelfHeader
         backHref={localizePath('/innovations', locale)}
-        backLabel={page.back}
+        backLabel={backLabel}
         title={shelfTitle}
         lede={activeArea ? page.areaLeads[activeArea] : page.areaLeads.all}
       />
@@ -98,7 +103,7 @@ const sectionBg = '/images/innovations/innovations-section-bg.jpg';
           ) : (
             <div class="card-grid cols-3" id="innovations-grid">
               {items.map((item) => (
-                <InnovationCard item={item} />
+                <InnovationCard item={item} cta={cardCta} />
               ))}
             </div>
           )}

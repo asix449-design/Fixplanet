@@ -27,6 +27,8 @@ export type ImageCredit = {
   credit: string;
   license: string;
   sourceUrl: string;
+  width?: number;
+  height?: number;
 };
 
 export type InnovationMeta = {
@@ -36,6 +38,8 @@ export type InnovationMeta = {
   image: ImageCredit;
   /** Official project pages, papers, lab releases — not image credits. */
   sources: PrimarySource[];
+  /** Short code on the hub card. Detail pages use `sources`. */
+  gridSourceLabel?: string;
 };
 
 export type InnovationCopy = {
@@ -48,6 +52,16 @@ export type InnovationCopy = {
   players: string;
   risks: string;
   sourcesNote: string;
+  /** Descriptive sentence under the detail figure. */
+  caption?: string;
+  /** Localized credit line. `licenseLabel` inside it is linked. */
+  figureCredit?: string;
+  licenseUrl?: string;
+  licenseLabel?: string;
+  /** Locale-specific detail source titles. Overrides the shared list. */
+  sources?: PrimarySource[];
+  /** When set, the detail page uses What it is / Why it matters / How to read it / Limits. */
+  shape?: 'quad';
 };
 
 export type Innovation = InnovationMeta & InnovationCopy;
@@ -57,8 +71,11 @@ function img(
   credit: string,
   license: string,
   sourceUrl: string,
+  size?: { width: number; height: number },
 ): ImageCredit {
-  return { file, credit, license, sourceUrl };
+  return size
+    ? { file, credit, license, sourceUrl, width: size.width, height: size.height }
+    : { file, credit, license, sourceUrl };
 }
 
 /**
@@ -410,6 +427,7 @@ export const innovationMeta: InnovationMeta[] = [
   },
   {
     slug: 'iter-fusion',
+    gridSourceLabel: 'ITER',
     area: 'energy',
     status: 'research',
     image: img(
@@ -425,6 +443,7 @@ export const innovationMeta: InnovationMeta[] = [
   },
   {
     slug: 'nif-inertial-fusion',
+    gridSourceLabel: 'LLNL',
     area: 'energy',
     status: 'research',
     image: img(
@@ -435,17 +454,18 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'LLNL — Achieving fusion ignition',
+        'Lawrence Livermore National Laboratory: achieving fusion ignition',
         'https://lasers.llnl.gov/science/achieving-fusion-ignition',
       ),
       cite(
-        'U.S. DOE — NIF ignition announcement (13 Dec 2022)',
+        'U.S. Department of Energy: ignition announcement (13 Dec 2022)',
         'https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition',
       ),
     ],
   },
   {
     slug: 'fervo-geothermal',
+    gridSourceLabel: 'CNBC',
     area: 'energy',
     status: 'pilot',
     image: img(
@@ -456,7 +476,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'CNBC — Fervo Cape Station aims to power the data-center boom (5 Sep 2026)',
+        'CNBC: Fervo Cape Station aims to power the data-center boom (5 Sep 2026)',
         'https://www.cnbc.com/2026/09/05/fervo-energys-enhanced-geothermal-project-aims-to-power-data-center-boom.html',
       ),
       cite('Fervo Energy', 'https://fervoenergy.com/'),
@@ -468,6 +488,7 @@ export const innovationMeta: InnovationMeta[] = [
   },
   {
     slug: 'long-duration-storage',
+    gridSourceLabel: 'Utility Dive',
     area: 'energy',
     status: 'pilot',
     image: img(
@@ -478,18 +499,19 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Utility Dive — Form Energy 300 MW / 30 GWh in Google–Xcel agreement',
+        'Utility Dive: Form Energy 300 MW / 30 GWh in the Google and Xcel agreement',
         'https://www.utilitydive.com/news/worlds-largest-grid-battery-part-of-google-xcel-energy-agreement/813793/',
       ),
       cite('Form Energy', 'https://formenergy.com/'),
       cite(
-        'Form Energy — iron-air chemistry',
+        'Form Energy: iron-air chemistry',
         'https://formenergy.com/form-energy-unveils-chemistry-of-multi-day-storage-battery-technology/',
       ),
     ],
   },
   {
     slug: 'quaise-mmwave-drilling',
+    gridSourceLabel: 'Energy Global',
     area: 'energy',
     status: 'research',
     image: img(
@@ -500,7 +522,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Energy Global — Quaise millimetre-wave drilling milestone (24 July 2025)',
+        'Energy Global: Quaise millimetre-wave drilling milestone (24 July 2025)',
         'https://www.energyglobal.com/other-renewables/24072025/quaise-energy-achieves-drilling-milestone-with-millimetre-wave-technology/',
       ),
       cite('Quaise Energy', 'https://www.quaise.energy/'),
@@ -508,6 +530,7 @@ export const innovationMeta: InnovationMeta[] = [
   },
   {
     slug: 'cfs-sparc',
+    gridSourceLabel: 'CFS',
     area: 'energy',
     status: 'research',
     image: img(
@@ -518,14 +541,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'CFS — SPARC progress and DOE milestone approvals',
+        'Commonwealth Fusion Systems: SPARC progress and milestone approvals',
         'https://blog.cfs.energy/sparc-progress-doe-milestone-approvals-reflect-cfs-power-plant-maturity/',
       ),
-      cite('CFS — SPARC', 'https://cfs.energy/technology/sparc/'),
+      cite('Commonwealth Fusion Systems: SPARC', 'https://cfs.energy/technology/sparc/'),
     ],
   },
   {
     slug: 'form-energy-ireland',
+    gridSourceLabel: 'Form Energy',
     area: 'energy',
     status: 'pilot',
     image: img(
@@ -536,13 +560,14 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Form Energy — first iron-air project in Ireland with FuturEnergy Ireland',
+        'Form Energy: first iron-air project in Ireland with FuturEnergy Ireland',
         'https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/',
       ),
     ],
   },
   {
     slug: 'green-hydrogen',
+    gridSourceLabel: 'IEA',
     area: 'energy',
     status: 'pilot',
     image: img(
@@ -553,17 +578,18 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'IEA — Hydrogen',
+        'International Energy Agency: Hydrogen',
         'https://www.iea.org/energy-system/low-emission-fuels/hydrogen',
       ),
       cite(
-        'IEA — Global Hydrogen Review 2024',
+        'International Energy Agency: Global Hydrogen Review 2024',
         'https://www.iea.org/reports/global-hydrogen-review-2024',
       ),
     ],
   },
   {
     slug: 'smr-nuclear',
+    gridSourceLabel: 'WNN',
     area: 'energy',
     status: 'pilot',
     image: img(
@@ -574,18 +600,22 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'World Nuclear News — HTR-PM commercial operation (6 Dec 2023)',
+        'World Nuclear News: high-temperature reactor commercial operation (6 Dec 2023)',
         'https://world-nuclear-news.org/articles/chinese-htr-pm-demo-begins-commercial-operation',
       ),
       cite(
-        'Tsinghua University — HTR-PM Demo',
+        'Tsinghua University: high-temperature reactor demonstration',
         'https://www.tsinghua.edu.cn/en/info/1244/12578.htm',
       ),
-      cite('IAEA — Small modular reactors', 'https://www.iaea.org/topics/small-modular-reactors'),
+      cite(
+        'International Atomic Energy Agency: small modular reactors',
+        'https://www.iaea.org/topics/small-modular-reactors',
+      ),
     ],
   },
   {
     slug: 'space-solar-power',
+    gridSourceLabel: 'Caltech',
     area: 'energy',
     status: 'research',
     image: img(
@@ -596,17 +626,18 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Caltech — SSPD-1 / MAPLE wireless power (2023)',
+        'Caltech: space solar power demonstrator wireless power (2023)',
         'https://www.caltech.edu/about/news/in-a-first-caltechs-space-solar-power-demonstrator-wirelessly-transmits-power-in-space',
       ),
       cite(
-        'ESA — SOLARIS',
+        'European Space Agency: SOLARIS',
         'https://www.esa.int/Enabling_Support/Space_Engineering_Technology/SOLARIS',
       ),
     ],
   },
   {
     slug: 'nano-electrolyzer-catalysts',
+    gridSourceLabel: 'DOE',
     area: 'energy',
     status: 'research',
     image: img(
@@ -617,17 +648,18 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'U.S. DOE — Hydrogen',
+        'U.S. Department of Energy: Hydrogen',
         'https://www.energy.gov/cmei/fuels/hydrogen',
       ),
       cite(
-        'IEA — Electrolysers',
+        'International Energy Agency: Electrolysers',
         'https://www.iea.org/energy-system/low-emission-fuels/electrolysers',
       ),
     ],
   },
   {
     slug: 'perpetual-motion',
+    gridSourceLabel: 'USPTO',
     area: 'energy',
     status: 'myth-busted',
     image: img(
@@ -638,10 +670,174 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'USPTO MPEP §2107 — utility / perpetual motion',
+        'U.S. Patent and Trademark Office: utility and perpetual motion',
         'https://www.uspto.gov/web/offices/pac/mpep/s2107.html',
       ),
-      cite('ITER Organization — real fusion research', 'https://www.iter.org/'),
+      cite('ITER Organization: fusion research', 'https://www.iter.org/'),
+    ],
+  },
+  {
+    slug: 'sodium-ion-storage',
+    gridSourceLabel: 'CATL',
+    area: 'energy',
+    status: 'pilot',
+    image: img(
+      'sodium-ion-storage.jpg',
+      'Bureau of Land Management California, courtesy of NextEra',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Desert_Sunlight_Battery_Energy_Storage_System_(52945816430).jpg',
+      { width: 1280, height: 720 },
+    ),
+    sources: [
+      cite(
+        'Contemporary Amperex Technology Co., Limited: TENER Sodium release (22 June 2026)',
+        'https://www.catl.com/en/news/6861.html',
+      ),
+      cite(
+        'HyperStrong: 60 gigawatt-hour sodium-ion agreement (29 April 2026)',
+        'https://www.hyperstrong.com/en/news/company-news/95',
+      ),
+      cite(
+        'Wikimedia Commons: Desert Sunlight Battery Energy Storage System (photo)',
+        'https://commons.wikimedia.org/wiki/File:Desert_Sunlight_Battery_Energy_Storage_System_(52945816430).jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'terrapower-natrium',
+    gridSourceLabel: 'TerraPower',
+    area: 'energy',
+    status: 'pilot',
+    image: img(
+      'terrapower-natrium.jpg',
+      'U.S. Department of Energy',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:View_of_Fast_Flux_Test_Facility_Looking_NW.jpg',
+      { width: 1280, height: 1012 },
+    ),
+    sources: [
+      cite(
+        'TerraPower: construction permit for the Natrium reactor (4 March 2026)',
+        'https://www.terrapower.com/NRC-Approves-Natrium-Reactor-Construction-Permit',
+      ),
+      cite(
+        'TerraPower: construction start (23 April 2026)',
+        'https://www.terrapower.com/terrapower-commences-construction-on-americas-first-utility-scale-advanced-nuclear-power-plant/',
+      ),
+      cite('TerraPower: Natrium technology', 'https://www.terrapower.com/natrium/'),
+      cite(
+        'Federal Register: Kemmerer Unit 1 construction permit (16 March 2026)',
+        'https://www.govinfo.gov/content/pkg/FR-2026-03-16/html/2026-05067.htm',
+      ),
+      cite(
+        'Wikipedia: Fast Flux Test Facility',
+        'https://en.wikipedia.org/wiki/Fast_Flux_Test_Facility',
+      ),
+      cite(
+        'Wikimedia Commons: View of Fast Flux Test Facility Looking NW (photo)',
+        'https://commons.wikimedia.org/wiki/File:View_of_Fast_Flux_Test_Facility_Looking_NW.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'floating-offshore-wind',
+    gridSourceLabel: 'Chubu Electric',
+    area: 'energy',
+    status: 'deployed',
+    image: img(
+      'floating-offshore-wind.jpg',
+      'Mike Pennington',
+      'CC BY-SA 2.0',
+      'https://commons.wikimedia.org/wiki/File:Hywind_Wind_Farm,_off_Peterhead_-_geograph.org.uk_-_7226685.jpg',
+      { width: 1280, height: 854 },
+    ),
+    sources: [
+      cite(
+        'TODA CORPORATION: Goto offshore wind farm commercial operation (5 January 2026)',
+        'https://www.toda.co.jp/english/investor_relations/pdf/20260105_Notice_01.pdf',
+      ),
+      cite(
+        'Chubu Electric Power: Goto offshore wind farm commercial operation (5 January 2026)',
+        'https://www.chuden.co.jp/english/corporate/releases/pressreleases/1217247_5163.html',
+      ),
+      cite(
+        'U.S. Department of Energy: Floating Offshore Wind Shot (May 2024)',
+        'https://www.energy.gov/sites/default/files/2024-05/DOE-Wind-Floating-Offshore-WindShot-Report-May2024.pdf',
+      ),
+      cite(
+        'Equinor: Hywind Scotland',
+        'https://www.equinor.com/energy/hywind-scotland',
+      ),
+      cite(
+        'Wikimedia Commons: Hywind Wind Farm, off Peterhead (photo)',
+        'https://commons.wikimedia.org/wiki/File:Hywind_Wind_Farm,_off_Peterhead_-_geograph.org.uk_-_7226685.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'perovskite-tandem',
+    gridSourceLabel: 'Oxford PV',
+    area: 'energy',
+    status: 'pilot',
+    image: img(
+      'perovskite-tandem.jpg',
+      'Dennis Schroeder, National Renewable Energy Laboratory',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Perovskite_solar_cell.jpg',
+      { width: 1280, height: 1079 },
+    ),
+    sources: [
+      cite(
+        'Oxford PV: first commercial shipment (5 September 2024)',
+        'https://www.oxfordpv.com/press-releases/oxford-pv-solar-technology-patent',
+      ),
+      cite(
+        'U.S. Department of Energy: Perovskite Solar Cells',
+        'https://www.energy.gov/cmei/systems/perovskite-solar-cells',
+      ),
+      cite(
+        'U.S. Department of Energy: laboratory renaming (1 December 2025)',
+        'https://www.energy.gov/cmei/articles/energy-department-renames-nrel-national-lab-rockies',
+      ),
+      cite(
+        'Wikimedia Commons: Perovskite solar cell (photo)',
+        'https://commons.wikimedia.org/wiki/File:Perovskite_solar_cell.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'energy-dome-co2',
+    gridSourceLabel: 'IEEE Spectrum',
+    area: 'energy',
+    status: 'deployed',
+    image: img(
+      'energy-dome-co2.jpg',
+      'Gianni Careddu',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:Bonorva_-_Parco_eolico_di_Campeda_(01).JPG',
+      { width: 1280, height: 853 },
+    ),
+    sources: [
+      cite(
+        'IEEE Spectrum: carbon dioxide batteries for grid storage (21 December 2025)',
+        'https://spectrum.ieee.org/co2-battery-energy-storage',
+      ),
+      cite(
+        'Energy Dome: carbon dioxide battery',
+        'https://www.energydome.com/co2-battery/',
+      ),
+      cite(
+        'Energy Dome: Ireland project with Google (23 June 2026)',
+        'https://energydome.com/google-and-energy-dome-advance-multi-continent-energy-storage-buildout-with-first-bilateral-project-in-ireland/',
+      ),
+      cite(
+        'Energy Dome: Victoria project with SEC (10 July 2026)',
+        'https://energydome.com/energy-dome-to-deliver-victorias-first-10-hour-battery-in-partnership-with-sec/',
+      ),
+      cite(
+        'Wikimedia Commons: Campeda wind farm (photo)',
+        'https://commons.wikimedia.org/wiki/File:Bonorva_-_Parco_eolico_di_Campeda_(01).JPG',
+      ),
     ],
   },
   {

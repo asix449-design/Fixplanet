@@ -23,10 +23,10 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
         'dsm-firmenich Dutch farm-data note (20,000 cows / 18 months); EU 2022/565; May 2024 FDA review. About 30% is the company/dossier figure.',
     },
     'fervo-geothermal': {
-      title: 'Cape Station — Fervo EGS',
-      hook: 'Utah wells that copy oilfield drilling, aimed at the first U.S. commercial enhanced-geothermal megawatts — on track in 2026, not yet a national template.',
+      title: 'Cape Station enhanced geothermal',
+      hook: 'Wells in Utah copy oilfield drilling and aim at the first commercial enhanced-geothermal megawatts in the United States. A 2026 schedule is still ahead of first power on the grid.',
       imageAlt:
-        'Geothermal plant at The Geysers, California — a working steam field of the kind enhanced geothermal wants to copy in new rock',
+        'Geothermal plant at The Geysers, California, a working steam field of the kind enhanced geothermal wants to copy in new rock',
       what: 'Enhanced geothermal systems (EGS) drill into hot rock that lacks a natural hydrothermal reservoir, then create a flow path and run water through it. Fervo Energy’s Project Red in Nevada made electricity in 2023 for a Google contract. Cape Station near Milford, Utah — next to the DOE FORGE site — is the larger follow-on. A 5 September 2026 CNBC report said the project was on pace to send power to the grid the following month, which would make it the first U.S. EGS plant in commercial operation. That is a reported schedule, not a delivered kilowatt-hour until the plant actually runs.',
       problem:
         'Conventional geothermal is scarce: you need heat, water, and permeability in the same place. Most of the Earth’s heat is in dry rock. EGS tries to unlock that heat without waiting for a geyser. Data-center buyers want firm, low-carbon megawatts.',
@@ -39,8 +39,8 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
         'CNBC Cape Station report (5 Sep 2026) — on track for first commercial U.S. EGS power, not a confirmed online date. Project Red electricity in 2023 is the earlier fact.',
     },
     'long-duration-storage': {
-      title: 'Form Energy iron-air — Google / Xcel',
-      hook: 'A 300 MW / 30 GWh iron-air filing for Minnesota: announced as the largest battery by gigawatt-hours — still a plan, not a yard of rusted cells.',
+      title: 'Form Energy iron-air with Google and Xcel',
+      hook: 'A 300 megawatt, 30 gigawatt-hour iron-air project for Minnesota is announced as the largest battery by stored energy. It is still a plan.',
       imageAlt: 'Containerized grid battery modules at a U.S. energy-storage project',
       what: 'Form Energy’s iron-air battery is designed for about 100 hours. In February 2026 Google and Xcel Energy said they intend to build a 300 MW / 30 GWh Form deployment on Xcel’s Upper Midwest grid as part of a package with 1.4 GW of wind and 200 MW of solar for a Minnesota data center. Xcel called it the largest battery project by gigawatt-hour capacity announced to date. Form’s CEO told Utility Dive the first modules are expected by the end of 2028. That is an agreement and a planned tariff filing, not installed megawatts.',
       problem:
@@ -148,9 +148,8 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
     },
     'quaise-mmwave-drilling': {
       title: 'Quaise millimetre-wave drilling',
-      hook: 'A gyrotron in Central Texas drilled 100 metres of granite in 2025 — a field record for the method, and still far short of a power plant.',
-      imageAlt:
-        'A land drill rig on red earth — the surface kit around deep holes, not a photograph of Quaise’s Texas gyrotron',
+      hook: 'A gyrotron in Central Texas drilled 100 metres of granite in 2025, a field record for the method, and still far short of a power plant.',
+      imageAlt: 'A land drill rig on red earth, the surface kit around deep holes',
       what: 'Quaise Energy is trying to reach superhot rock (about 400°C) with millimetre-wave energy from a gyrotron, ablating granite without a downhole drill bit. Energy Global reported that in 2025 the company drilled to 100 metres at a Central Texas field site — a record for millimetre-wave drilling. Before 2025 the MIT-derived system had only made centimetre-scale holes in the lab. One hundred metres is a fraction of the depth a commercial superhot plant would need. Quaise says a more powerful gyrotron is next and sketches a Western U.S. pilot plant as early as 2028.',
       problem:
         'Conventional bits struggle in hard, hot basement rock. If you cannot drill that rock cheaply, superhot geothermal stays a map of unused heat.',
@@ -162,10 +161,9 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
         'Energy Global 24 July 2025: 100 m Texas field hole; lab work was centimetres. A record for the method is not a power station.',
     },
     'cfs-sparc': {
-      title: 'CFS SPARC — net-energy tokamak',
-      hook: 'A compact tokamak in Massachusetts is about 80 percent assembled. Q>1 is the 2027 target — a physics milestone, not a power station.',
-      imageAlt:
-        'A cutaway tokamak mock-up of the ITER class — the machine family SPARC belongs to, not a photograph of the Devens hall',
+      title: 'Commonwealth Fusion Systems SPARC',
+      hook: 'A compact tokamak in Massachusetts is about 80 percent assembled. The 2027 target is plasma gain above one, a physics milestone.',
+      imageAlt: 'A cutaway tokamak mock-up of the same family as the international fusion experiment',
       what: 'Commonwealth Fusion Systems is assembling SPARC, a high-field tokamak at Devens, Massachusetts, meant to show net fusion energy (Q>1: more fusion power than the heating power into the plasma). CFS’s August 2026 progress note said SPARC was almost 80 percent complete, with magnets going in and support systems already running. The company’s SPARC page still aims at Q>1 in 2027. SPARC will not sell electricity. The follow-on ARC plant is the grid design; CFS has told DOE reviewers it is aiming at about 400 MW net electric in the early 2030s. Those are company targets.',
       problem:
         'Fusion promises dense, low-carbon heat if a plant can run, breed tritium, and survive neutrons. No private or public tokamak has yet put commercial power on a grid.',
@@ -178,10 +176,9 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
         'CFS SPARC progress blog (~80% assembled) and SPARC page (Q>1 target 2027). Plasma gain is not a power station.',
     },
     'form-energy-ireland': {
-      title: 'Form Energy Ireland — iron-air',
-      hook: 'A 10 MW / 1 GWh iron-air project in northwest Ireland, agreed in 2026, aimed at 2029 — the first Form yard announced outside the United States.',
-      imageAlt:
-        'Containerized battery cabinets at a grid-storage site — the yard class of long-duration storage, not a photo of the Donegal pad',
+      title: 'Form Energy iron-air in Ireland',
+      hook: 'A 10 megawatt, 1 gigawatt-hour iron-air project in northwest Ireland, agreed in 2026 and aimed at 2029, is the first Form Energy yard announced outside the United States.',
+      imageAlt: 'Containerized battery cabinets at a grid-storage site used for long-duration storage',
       what: 'On 17 March 2026 Form Energy and FuturEnergy Ireland announced an agreement to deploy a 10 MW / 1,000 MWh (1 GWh) iron-air system in the northwest of Ireland — Form’s first announced international project, anticipated online in 2029. Coverage names the Ballynahone Energy Storage site in County Donegal. One hundred hours at 10 MW is the arithmetic of 1 GWh. This is a contracted demonstration, not a running Irish battery.',
       problem:
         'Ireland’s wind-heavy grid curtails power when the island cannot use or export it, then burns something else when the wind drops for days. Multi-day storage is the stated gap.',

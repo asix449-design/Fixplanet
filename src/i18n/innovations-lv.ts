@@ -124,8 +124,8 @@ export const lv: Record<string, InnovationCopy> = {
       'ES regula 2022/565; dsm-firmenich piezīme par FDA izskatīšanu 2024. gada maijā. Apmēram 30% zarnu metāna piena govīm marķētajā devā ir dosjē skaitlis, ne «klimatneitrāls liellops».',
   },
   'iter-fusion': {
-    title: 'ITER — magnētiskās ieslodzīšanas kodolsintēze',
-    hook: 'Pasaules lielākais tokamaks tiek būvēts Francijā. Tas ir fizikas eksperiments, ne elektrostacija.',
+    title: 'Starptautiskā kodolsintēzes eksperimenta tokamaks',
+    hook: 'Pasaules lielāko tokamaku būvē Francijā kā fizikas eksperimentu.',
     imageAlt: 'ITER būvlaukuma skats no gaisa Cadarache, Francijā, 2018. gadā',
     what: 'ITER ir tokamaks, ko būvē Cadarache, Francijā, un finansē Ķīna, ES, Indija, Japāna, Koreja, Krievija un Amerikas Savienotās Valstis. Mašīna ir projektēta, lai ražotu degošu deitērija–trītija plazmu un pētītu, vai kodolsintēzes ieguvums krietni virs viena ir iespējams reaktoram atbilstošā mērogā. Tā nepārdos elektrību.',
     problem:
@@ -139,9 +139,9 @@ export const lv: Record<string, InnovationCopy> = {
       'ITER vietne un BUJ. 2016. gada pirmās plazmas datums 2025 ir novecojis; vēlākās bāzes līnijas rāda pētniecības darbu 2030. gados.',
   },
   'nif-inertial-fusion': {
-    title: 'NIF — inerciālās kodolsintēzes aizdedze',
-    hook: '2022. gada 5. decembrī lāzera šāviens deva vairāk kodolsintēzes enerģijas, nekā nogādāja mērķim. Ēka joprojām ņem tīkla mēroga jaudu.',
-    imageAlt: 'National Ignition Facility mērķa kamera Lawrence Livermore National Laboratory',
+    title: 'Aizdedze Nacionālajā aizdedzes iekārtā',
+    hook: '2022. gada 5. decembrī lāzera šāviens Nacionālajā aizdedzes iekārtā deva vairāk kodolsintēzes enerģijas, nekā nogādāja mērķim. Ēka joprojām ņem no tīkla lielu jaudu.',
+    imageAlt: 'Nacionālās aizdedzes iekārtas mērķa kamera Lorensa Livermoras nacionālajā laboratorijā',
     what: 'National Ignition Facility Lawrence Livermore National Laboratory izšauj 192 lāzera starus uz sīku kapsulu. 2022. gada 5. decembrī kapsula deva ap 3,15 MJ kodolsintēzes enerģijas pēc tam, kad mērķi sasniedza ap 2,05 MJ — pirmā kontrolētā aizdedze, saukta arī par zinātnisko līdzsvaru uz mērķa. Vēlāki šāvieni to atkārtoja un dažkārt pārsniedza. NIF darbs ir kodolieroču krājuma uzraudzība un zinātne, ne turbīna.',
     problem:
       'Inerciālā kodolsintēzes enerģija (IFE) ir otrs ceļš blakus tokamakiem: daudzas sīkas implozijas sekundē, nevis pastāvīga magnētiskā pudele. Aizdedze parādīja, ka fizika var darboties. Elektrostacijai vajadzētu lētus mērķus, augstu atkārtošanās ātrumu un kontaktligzdas efektivitāti, kādas NIF nav.',
@@ -187,7 +187,7 @@ export const lv: Record<string, InnovationCopy> = {
   'green-hydrogen': {
     title: 'Zaļais ūdeņradis',
     hook: 'Noderīgs tēraudam, amonjakam un kuģiem. Izšķērdīgs kā noklusējuma veids māju apkurei vai automašīnu pārvietošanai.',
-    imageAlt: 'Liela kriogēnā ūdeņraža uzglabāšanas tvertne — tāda rūpnieciskā ūdeņraža aparatūra, kādu jau lieto palaišanas vietās',
+    imageAlt: 'Liela kriogēnā ūdeņraža uzglabāšanas tvertne, tāda rūpnieciskā ūdeņraža aparatūra, kādu jau lieto palaišanas vietās',
     what: '«Zaļais» ūdeņradis ir H₂ no ūdens elektrolīzes, ko dzen zema oglekļa elektrība. Molekula ir īsta un jau lietota naftas pārstrādē un mēslojumā no fosilajiem ceļiem («pelēkais» ūdeņradis). Zaļā etiķete ir par enerģijas avotu, ne jaunu fiziku.',
     problem:
       'Dažām nozarēm vajag molekulu, ne tikai elektronu: amonjaks, tieši reducētais dzelzs un dažas tālo reisu degvielas. Ūdeņradis var uzkrāt enerģiju pāri sezonām. Tas ir slikts veids, kā darīt darbu, ko elektrība var izdarīt tieši.',
@@ -201,8 +201,8 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'smr-nuclear': {
     title: 'Modulārā un progresīvā kodolenerģija',
-    hook: 'Ķīnas HTR-PM iegāja komerciālā darbībā 2023. gada decembrī. Lielākā daļa Rietumu SMR logotipu nav ielējuši pirmo betonu.',
-    imageAlt: 'Darbojoša atomelektrostacija — konteksts modulārajai skaldīšanai, ne konkrēta SMR fotogrāfija',
+    hook: 'Ķīnas augsttemperatūras gāzes dzesētais oļu slāņa demonstrācijas reaktors iegāja komerciālā darbībā 2023. gada decembrī. Lielākā daļa Rietumu mazo modulāro reaktoru projektu vēl ir pirms pirmā betona.',
+    imageAlt: 'Darbojoša atomelektrostacija, rādīta kā konteksts modulārajai skaldīšanai',
     what: 'Mazie modulārie reaktori (SMR) un daži IV paaudzes projekti mērķē uz rūpnīcā būvētiem moduļiem un, dažos gadījumos, jauniem dzesētājiem. Ķīnas HTR-PM Shidaowan — divi 250 MWt oļu slāņa moduļi, kas baro vienu ~210 MWe turbīnu — pabeidza demonstrācijas skrējienu un iegāja komerciālā darbībā 2023. gada decembrī, pirmais komerciālā mēroga modulārais augsttemperatūras gāzes reaktors. ASV NuScale Carbon Free Power Project Aidaho tika atcelts 2023. gada novembrī pēc izmaksu kāpuma, kaut gan konstrukcijai bija NRC apstiprinājums.',
     problem:
       'Skaldīšana jau piegādā blīvu zema oglekļa enerģiju. Jaunās būves Rietumos ir bijušas lēnas un dārgas. Mazāki reaktori sola mazāku kapitāla risku — cerību, kurai jāizdzīvo pirmā šāda veida izmaksas, kas bieži iet pretējā virzienā.',
@@ -217,7 +217,7 @@ export const lv: Record<string, InnovationCopy> = {
   'space-solar-power': {
     title: 'Kosmiskā saules enerģija',
     hook: '2023. gada Caltech demonstrējums no orbītas pārraidīja enerģijas pilīti. Fizika darbojas; ekonomika ir jautājums.',
-    imageAlt: 'Starptautiskās kosmosa stacijas saules masīvi — tuvākais darbojošais radinieks ierosinātajiem enerģijas satelītiem',
+    imageAlt: 'Starptautiskās kosmosa stacijas saules masīvi, tuvākais darbojošais radinieks ierosinātajiem enerģijas satelītiem',
     what: 'Kosmiskā saules enerģija (SBSP) orbītā vāktu saules gaismu un sūtītu enerģiju uz Zemi kā mikroviļņus vai lāzerus. Caltech SSPD-1 startēja 2023. gada janvārī; MAPLE parādīja bezvadu enerģijas pārraidi orbītā — un uztveramu pilīti uz Zemes — 2023. gada martā. Milivati, ne megavati. ESA SOLARIS pētījums un JAXA mikroviļņu darbs ir publiskās pētījumu līnijas. Tā nav elektrostacija.',
     problem:
       'Nakts un laikapstākļi ierobežo sauszemes sauli. Orbīta Sauli redz lielāku laika daļu. Āķis ir palaišanas masa, montāža, stara drošība un katra kilograma izmaksas.',
@@ -231,8 +231,8 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'nano-electrolyzer-catalysts': {
     title: 'Nanostrukturētie elektrolīzeru katalizatori',
-    hook: 'Zaļo ūdeņradi ierobežo irīdijs un enerģija. Nanotehnoloģija mēģina lietot mazāk metāla, ne izgudrot brīvu degvielu.',
-    imageAlt: 'PEM degvielas elementa / elektrolīzera steks — aparatūra, kuras katalizatora slāņus nanotehnoloģija mēģina retināt',
+    hook: 'Zaļo ūdeņradi ierobežo irīdijs un enerģija, ko tērē steki. Nanotehnoloģija ļauj lietot mazāk šī metāla.',
+    imageAlt: 'Protonu apmaiņas membrānas degvielas elementa steks, aparatūra, kuras katalizatora slāņus šis darbs mēģina retināt',
     what: 'Protona apmaiņas membrānas elektrolīzeri lieto platīna grupas metālus, īpaši reto irīdiju skābekļa pusē. Laboratorijas (NREL un daudzas universitātes) audzē nanodaļiņas, serdes–čaumalas kristālus un nanostrukturētus balstus, lai katrs metāla atoms darītu vairāk darba. Dažas zema irīdija vai dārgmetālu nesaturošas receptes darbojas vārglāzēs; retām ir gadu rūpnieciskās stundas.',
     problem:
       'Ja elektrolīze tīrīs tēraudu un amonjaku, stekiem jākļūst lētākiem un mazāk atkarīgiem no sīkā irīdija pasaules. Tā ir materiālu problēma, ne mūžīgā dzinēja problēma.',
@@ -245,9 +245,9 @@ export const lv: Record<string, InnovationCopy> = {
       'ASV DOE ūdeņradis; IEA elektrolīzeru uzskaite. Katalizatora raksts nav gigavatu rūpnīca.',
   },
   'perpetual-motion': {
-    title: 'Mūžīgais dzinējs — kāpēc tas neizdodas',
-    hook: 'Slēgta mašīna nevar darboties mūžīgi vai ražot «brīvu bezgalīgu enerģiju». Tā nav sazvērestība. Tā ir termodinamika.',
-    imageAlt: 'Vēsturisks ūdens skrūves mūžīgā dzinēja shēmas gravējums — slēgts cikls, kas nevar barot pats sevi',
+    title: 'Mūžīgais dzinējs un kāpēc tas neizdodas',
+    hook: 'Slēgta mašīna nevar darboties mūžīgi vai ražot brīvu bezgalīgu enerģiju. Iemesls ir termodinamika.',
+    imageAlt: 'Vēsturisks ūdens skrūves mūžīgā dzinēja shēmas gravējums, slēgts cikls, kas nevar barot pats sevi',
     what: 'Pirmā veida mūžīgie dzinēji apgalvo, ka ražo enerģiju no nekā (tie pārkāpj enerģijas nezūdamību). Otrā veida mašīnas apgalvo, ka siltumu pilnībā pārvērš darbā bez cita efekta (tās pārkāpj otro likumu). Virsvienības ģeneratori, magnētu motori un tiešsaistē pārdotie «brīvās enerģijas» komplekti ir šī saime. Neviens nav izturējis kompetentu, neatkarīgi atkārtotu pārbaudi.',
     problem:
       'Vēlēšanās ir saprotama: blīva, tīra, neierobežota enerģija. Krāpšana ir pārdot riteni, magnētu vai slepenu ķēdi kā šo vēlēšanos. Katrs nopietnais ceļš — kodolsintēze, skaldīšana, ģeotermija, ilgstošā uzkrāšana, kosmiskā saule — joprojām pakļaujas tiem pašiem likumiem.',

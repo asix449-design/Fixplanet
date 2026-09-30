@@ -124,8 +124,8 @@ export const pl: Record<string, InnovationCopy> = {
       'Rozporządzenie UE 2022/565; nota dsm-firmenich o przeglądzie FDA z maja 2024. Około 30% metanu jelitowego u krów mlecznych przy dawce z etykiety to liczba z dossier, nie „klimatycznie neutralna wołowina”.',
   },
   'iter-fusion': {
-    title: 'ITER — fuzja z uwięzieniem magnetycznym',
-    hook: 'Największy tokamak świata buduje się we Francji. To eksperyment fizyczny, nie elektrownia.',
+    title: 'Tokamak międzynarodowego eksperymentu ITER',
+    hook: 'Największy tokamak świata buduje się we Francji jako eksperyment fizyczny.',
     imageAlt: 'Widok z powietrza na plac budowy ITER w Cadarache we Francji, 2018',
     what: 'ITER to tokamak w budowie w Cadarache we Francji, finansowany przez Chiny, UE, Indie, Japonię, Koreę, Rosję i Stany Zjednoczone. Maszyna ma wytworzyć palącą się plazmę deuter–tryt i zbadać, czy zysk fuzyjny wyraźnie powyżej jedności jest możliwy w skali istotnej dla reaktora. Nie będzie sprzedawać prądu.',
     problem:
@@ -139,9 +139,9 @@ export const pl: Record<string, InnovationCopy> = {
       'Strona i FAQ ITER. Data pierwszej plazmy 2025 z linii bazowej 2016 jest nieaktualna; późniejsze plany wskazują na badania w latach 30.',
   },
   'nif-inertial-fusion': {
-    title: 'NIF — zapłon fuzji inercyjnej',
-    hook: '5 grudnia 2022 strzał laserowy dał więcej energii fuzyjnej, niż dostarczył do tarczy. Budynek wciąż bierze z sieci moc elektrowni.',
-    imageAlt: 'Komora tarczy National Ignition Facility w Lawrence Livermore National Laboratory',
+    title: 'Zapłon w Narodowej Instalacji Zapłonu',
+    hook: '5 grudnia 2022 strzał laserowy w Narodowej Instalacji Zapłonu dał więcej energii fuzyjnej, niż dostarczył do tarczy. Budynek wciąż bierze z sieci dużą moc.',
+    imageAlt: 'Komora tarczy Narodowej Instalacji Zapłonu w Narodowym Laboratorium Lawrence Livermore',
     what: 'National Ignition Facility w Lawrence Livermore National Laboratory odpala 192 wiązki laserowe w maleńką kapsułę. 5 grudnia 2022 kapsuła dała około 3,15 MJ energii fuzyjnej po tym, jak do tarczy dotarło około 2,05 MJ — pierwszy kontrolowany zapłon, zwany też naukowym progiem opłacalności na tarczy. Późniejsze strzały powtórzyły i czasem przekroczyły ten wynik. Zadaniem NIF jest nadzór nad arsenałem i nauka, nie turbina.',
     problem:
       'Inercyjna energia fuzyjna (IFE) to druga ścieżka obok tokamaków: wiele maleńkich implozji na sekundę zamiast stałej magnetycznej butli. Zapłon pokazał, że fizyka potrafi zadziałać. Elektrownia potrzebowałaby tanich tarcz, wysokiej częstości powtórzeń i sprawności od gniazdka, której NIF nie ma.',
@@ -187,7 +187,7 @@ export const pl: Record<string, InnovationCopy> = {
   'green-hydrogen': {
     title: 'Zielony wodór',
     hook: 'Przydatny do stali, amoniaku i statków. Marnotrawny jako domyślny sposób na ogrzewanie domów albo ruszanie aut.',
-    imageAlt: 'Duży kriogeniczny zbiornik wodoru — przemysłowy sprzęt wodorowy już używany na stanowiskach startowych',
+    imageAlt: 'Duży kriogeniczny zbiornik wodoru, przemysłowy sprzęt wodorowy już używany na stanowiskach startowych',
     what: '„Zielony” wodór to H₂ z elektrolizy wody zasilanej niskoemisyjnym prądem. Cząsteczka jest prawdziwa i już używana w rafinerii ropy i nawozach ze szlaków kopalnych (wodór „szary”). Etykieta zielona dotyczy źródła prądu, nie nowej fizyki.',
     problem:
       'Część przemysłu potrzebuje cząsteczki, nie samego elektronu: amoniak, bezpośrednio redukowane żelazo i niektóre paliwa dalekiego zasięgu. Wodór może magazynować energię przez sezony. Jest słabym sposobem na robotę, którą prąd potrafi zrobić wprost.',
@@ -201,8 +201,8 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'smr-nuclear': {
     title: 'Modularna i zaawansowana energetyka jądrowa',
-    hook: 'Chiński HTR-PM wszedł do eksploatacji komercyjnej w grudniu 2023. Większość zachodnich logo SMR nie wylała jeszcze pierwszego betonu.',
-    imageAlt: 'Pracująca elektrownia jądrowa — kontekst dla modularnego rozszczepienia, nie zdjęcie konkretnego SMR',
+    hook: 'Chiński wysokotemperaturowy reaktor gazowy ze złożem żwirowym wszedł do eksploatacji komercyjnej w grudniu 2023. Większość zachodnich projektów małych reaktorów modularnych jest jeszcze przed pierwszym betonem.',
+    imageAlt: 'Pracująca elektrownia jądrowa, pokazana jako kontekst dla modularnego rozszczepienia',
     what: 'Małe reaktory modularne (SMR) i niektóre projekty IV generacji celują w moduły z fabryki, a w kilku przypadkach w nowe chłodziwa. Chiński HTR-PM w Shidaowan — dwa moduły ze złożem żwirowym po 250 MWt zasilające jedną turbinę ~210 MWe — skończył bieg demonstracyjny i wszedł do eksploatacji komercyjnej w grudniu 2023, pierwszy modularny wysokotemperaturowy reaktor gazowy w skali komercyjnej. W USA projekt Carbon Free Power Project NuScale w Idaho został odwołany w listopadzie 2023 po wzroście kosztów, mimo że projekt miał zgodę NRC.',
     problem:
       'Rozszczepienie już dostarcza gęstą, niskoemisyjną moc. Nowe budowy na Zachodzie były wolne i drogie. Mniejsze reaktory obiecują mniej kapitału na ryzyku — nadzieję, która musi przeżyć koszty pierwszego egzemplarza, a te często idą w drugą stronę.',
@@ -217,7 +217,7 @@ export const pl: Record<string, InnovationCopy> = {
   'space-solar-power': {
     title: 'Energia słoneczna z kosmosu',
     hook: 'Demo Caltechu z 2023 przesłało strumyczek mocy z orbity. Fizyka działa; ekonomia jest pytaniem.',
-    imageAlt: 'Panele słoneczne Międzynarodowej Stacji Kosmicznej — najbliższy działający kuzyn proponowanych satelitów energetycznych',
+    imageAlt: 'Panele słoneczne Międzynarodowej Stacji Kosmicznej, najbliższy działający kuzyn proponowanych satelitów energetycznych',
     what: 'Kosmiczna energetyka słoneczna (SBSP) zbierałaby światło na orbicie i słała energię na Ziemię jako mikrofale albo lasery. SSPD-1 Caltechu wystartował w styczniu 2023; MAPLE pokazał orbitalny bezprzewodowy transfer mocy — i wykrywalny strumyczek na Ziemi — w marcu 2023. Miliwaty, nie megawaty. Studium SOLARIS ESA i prace mikrofalowe JAXA to publiczne linie badawcze. To nie elektrownia.',
     problem:
       'Noc i pogoda ograniczają solar lądowy. Orbita może widzieć Słońce przez większą część czasu. Haczyk to masa startowa, montaż, bezpieczeństwo wiązki i koszt każdego kilograma.',
@@ -231,8 +231,8 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'nano-electrolyzer-catalysts': {
     title: 'Nanostrukturalne katalizatory elektrolizerów',
-    hook: 'Zielony wodór ogranicza iryd i energia. Nanotechnologia próbuje zużyć mniej metalu, nie wymyślić darmowego paliwa.',
-    imageAlt: 'Stos PEM ogniwa paliwowego / elektrolizera — sprzęt, którego warstwy katalizatora nanotechnologia próbuje ścieńczyć',
+    hook: 'Zielony wodór ograniczają iryd i energia, którą zużywają stosy. Nanotechnologia pozwala zużyć mniej tego metalu.',
+    imageAlt: 'Stos ogniwa paliwowego z membraną do wymiany protonów, sprzęt, którego warstwy katalizatora ta praca próbuje ścieńczyć',
     what: 'Elektrolizery z membraną do wymiany protonów używają metali grupy platyny, zwłaszcza rzadkiego irydu po stronie tlenu. Laboratoria (NREL i wiele uczelni) hodują nanocząstki, kryształy rdzeń-powłoka i nanostrukturalne nośniki, żeby każdy atom metalu robił więcej roboty. Część receptur nisko-irydowych albo bez metali szlachetnych działa w zlewce; niewiele ma za sobą lata godzin przemysłowych.',
     problem:
       'Jeśli elektroliza ma uczynić stal i amoniak czystszymi, stosy muszą potanieć i mniej zależeć od maleńkiego rynku irydu. To problem materiałowy, nie problem perpetuum mobile.',
@@ -245,9 +245,9 @@ export const pl: Record<string, InnovationCopy> = {
       'Wodór DOE (USA); śledzenie elektrolizerów IEA. Artykuł o katalizatorze to nie fabryka gigawatowa.',
   },
   'perpetual-motion': {
-    title: 'Perpetuum mobile — dlaczego zawodzi',
-    hook: 'Zamknięta maszyna nie może chodzić wiecznie ani robić „darmowej nieskończonej energii”. To nie spisek. To termodynamika.',
-    imageAlt: 'Historyczna rycina schematu perpetuum mobile ze ślimakiem wodnym — zamknięty obieg, który nie może się sam karmić',
+    title: 'Perpetuum mobile i dlaczego zawodzi',
+    hook: 'Zamknięta maszyna nie może chodzić wiecznie ani robić darmowej nieskończonej energii. Powodem jest termodynamika.',
+    imageAlt: 'Historyczna rycina schematu perpetuum mobile ze ślimakiem wodnym, zamknięty obieg, który nie może się sam karmić',
     what: 'Maszyny perpetuum mobile pierwszego rodzaju twierdzą, że robią energię z niczego (łamią zachowanie energii). Maszyny drugiego rodzaju twierdzą, że zamieniają ciepło w całości w pracę bez innego skutku (łamią drugą zasadę). Generatory nadjednościowe, silniki magnetyczne i zestawy „darmowej energii” sprzedawane w sieci należą do tej rodziny. Żaden nie przeszedł kompetentnego, niezależnie powtórzonego testu.',
     problem:
       'Życzenie jest zrozumiałe: gęsta, czysta, nieograniczona energia. Oszustwem jest sprzedaż koła, magnesu albo tajnego obwodu jako tego życzenia. Każda poważna ścieżka — fuzja, rozszczepienie, geotermia, magazyn długoczasowy, solar z kosmosu — wciąż słucha tych samych praw.',

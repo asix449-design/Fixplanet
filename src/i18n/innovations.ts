@@ -8,6 +8,7 @@ import {
 } from '../data/innovations';
 import type { Locale } from './config';
 import { en } from './innovations-en';
+import { energyFirm } from './innovations-energy-firm';
 import { pack } from './innovations-pack';
 import { lv as lvEntries } from './innovations-lv';
 import { pl as plEntries } from './innovations-pl';
@@ -30,6 +31,9 @@ export type InnovationsPage = {
   how: string;
   players: string;
   risks: string;
+  why: string;
+  read: string;
+  limits: string;
   sourcesLabel: string;
   primarySource: string;
   imageCredit: string;
@@ -51,7 +55,7 @@ const pageEn: InnovationsPage = {
   chooseArea: 'Choose an area',
   tiles: {
     ecology: 'Carbon, reefs, protein, plastic — living systems and their waste.',
-    energy: 'Fusion, geothermal, storage — and why perpetual motion fails.',
+    energy: 'Fusion, geothermal, storage, and why perpetual motion fails.',
     ai: 'Models for Earth systems, materials, grids, and recycling.',
   },
   all: 'All',
@@ -62,6 +66,9 @@ const pageEn: InnovationsPage = {
   how: 'How it works',
   players: 'Status and players',
   risks: 'Risks and limits',
+  why: 'Why it matters',
+  read: 'How to read it',
+  limits: 'Limits',
   sourcesLabel: 'Sources',
   primarySource: 'Source',
   imageCredit: 'Image',
@@ -78,7 +85,7 @@ const pageEn: InnovationsPage = {
     ecology:
       'Carbon removal, circular enzymes, coral husbandry — and now biodiversity evidence, nature-risk screens, and ocean-colour missions from 2024 on.',
     energy:
-      'Dense energy that still obeys thermodynamics — fusion, geothermal, storage, hydrogen with losses stated, fission, space solar — and why a closed machine cannot run forever.',
+      'Dense energy that still obeys thermodynamics: fusion, geothermal, storage, hydrogen with the losses stated, fission, space solar, and why a closed machine cannot run forever. Also here, all from 2024 or later: sodium-ion grid batteries, TerraPower’s Natrium nuclear plant under construction in Wyoming, commercial floating offshore wind, perovskite-silicon tandem solar modules, and a carbon dioxide battery for long-duration storage that is working in Sardinia.',
     ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, and recycling — plus methane and fire EO, flood AI, and geospatial embeddings from 2024 on. Weather AI still needs the satellites.',
   },
   status: {
@@ -100,7 +107,7 @@ const pageRu: InnovationsPage = {
   chooseArea: 'Выберите область',
   tiles: {
     ecology: 'Углерод, рифы, белок, пластик — живые системы и их отходы.',
-    energy: 'Синтез, геотермия, накопители — и почему вечный двигатель не работает.',
+    energy: 'Синтез, геотермия, накопители и почему вечный двигатель не работает.',
     ai: 'Модели для систем Земли, материалов, сетей и сортировки.',
   },
   all: 'Все',
@@ -111,6 +118,9 @@ const pageRu: InnovationsPage = {
   how: 'Как работает',
   players: 'Статус и участники',
   risks: 'Риски и пределы',
+  why: 'Почему это важно',
+  read: 'Как это читать',
+  limits: 'Ограничения',
   sourcesLabel: 'Источники',
   primarySource: 'Источник',
   imageCredit: 'Изображение',
@@ -127,7 +137,7 @@ const pageRu: InnovationsPage = {
     ecology:
       'Улавливание углерода, ферменты, кораллы — и теперь доказательства биоразнообразия, скрининг рисков для природы и миссии цвета океана с 2024 года.',
     energy:
-      'Плотная энергия в рамках термодинамики — термоядерный синтез, геотермия, накопители, водород с названными потерями, деление ядра, космос — и почему замкнутая машина не может крутиться вечно.',
+      'Плотная энергия в рамках термодинамики: термоядерный синтез, геотермия, накопители, водород с названными потерями, деление ядра, космос, и почему замкнутая машина не может крутиться вечно. Здесь также, всё с 2024 года и позже: натрий-ионные батареи для сетей, ядерная станция Natrium компании TerraPower, которая строится в Вайоминге, коммерческий плавучий морской ветер, тандемные солнечные модули из перовскита и кремния и работающий на Сардинии накопитель длительного хранения на углекислом газе.',
     ai: 'Модели для систем Земли, материалов, сетей, белков и переработки — плюс EO метана и пожаров, ИИ паводков и геоэмбеддинги с 2024. Погодному ИИ по-прежнему нужны спутники.',
   },
   status: {
@@ -149,7 +159,7 @@ const pagePl: InnovationsPage = {
   chooseArea: 'Wybierz dziedzinę',
   tiles: {
     ecology: 'Węgiel, rafy, białko, plastik — żywe systemy i ich odpady.',
-    energy: 'Fuzja, geotermia, magazyny — i dlaczego perpetuum mobile nie działa.',
+    energy: 'Fuzja, geotermia, magazyny i dlaczego perpetuum mobile nie działa.',
     ai: 'Modele dla systemów Ziemi, materiałów, sieci i recyklingu.',
   },
   all: 'Wszystkie',
@@ -160,6 +170,9 @@ const pagePl: InnovationsPage = {
   how: 'Jak działa',
   players: 'Status i gracze',
   risks: 'Ryzyka i granice',
+  why: 'Dlaczego to ważne',
+  read: 'Jak to czytać',
+  limits: 'Ograniczenia',
   sourcesLabel: 'Źródła',
   primarySource: 'Źródło',
   imageCredit: 'Zdjęcie',
@@ -176,7 +189,7 @@ const pagePl: InnovationsPage = {
     ecology:
       'Usuwanie węgla, enzymy, korale — a teraz dowody bioróżnorodności, screening ryzyka dla przyrody i misje koloru oceanu od 2024.',
     energy:
-      'Gęsta energia zgodna z termodynamiką — fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity — oraz dlaczego zamknięta maszyna nie może kręcić się wiecznie.',
+      'Gęsta energia zgodna z termodynamiką: fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity oraz to, dlaczego zamknięta maszyna nie może kręcić się wiecznie. Znajdziesz tu także, wszystko od 2024 roku: sodowo-jonowe baterie dla sieci, elektrownię jądrową Natrium firmy TerraPower budowaną w Wyoming, komercyjną pływającą energetykę wiatrową na morzu, tandemowe moduły słoneczne z perowskitu i krzemu oraz działający na Sardynii magazyn długotrwały na dwutlenku węgla.',
     ai: 'Modele dla systemów Ziemi, materiałów, sieci, białek i recyklingu — plus EO metanu i pożarów, AI powodzi i geo-embeddingi od 2024. AI pogodowe nadal potrzebuje satelitów.',
   },
   status: {
@@ -198,7 +211,7 @@ const pageLv: InnovationsPage = {
   chooseArea: 'Izvēlies jomu',
   tiles: {
     ecology: 'Ogleklis, rifi, olbaltumvielas, plastmasa — dzīvās sistēmas un to atkritumi.',
-    energy: 'Kodolsintēze, ģeotermija, uzkrāšana — un kāpēc mūžīgais dzinējs neizdodas.',
+    energy: 'Kodolsintēze, ģeotermija, uzkrāšana un kāpēc mūžīgais dzinējs neizdodas.',
     ai: 'Modeļi Zemes sistēmām, materiāliem, tīkliem un šķirošanai.',
   },
   all: 'Visas',
@@ -209,6 +222,9 @@ const pageLv: InnovationsPage = {
   how: 'Kā tas darbojas',
   players: 'Statuss un dalībnieki',
   risks: 'Riski un robežas',
+  why: 'Kāpēc tas ir svarīgi',
+  read: 'Kā to lasīt',
+  limits: 'Ierobežojumi',
   sourcesLabel: 'Avoti',
   primarySource: 'Avots',
   imageCredit: 'Attēls',
@@ -225,7 +241,7 @@ const pageLv: InnovationsPage = {
     ecology:
       'Oglekļa uztveršana, enzīmi, koraļļi — un tagad bioloģiskās daudzveidības pierādījumi, dabas riska skrīnings un okeāna krāsas misijas no 2024. gada.',
     energy:
-      'Blīva enerģija termodinamikas ietvaros — kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar nosauktiem zudumiem, skaldīšana, Saule no orbītas — un kāpēc slēgta mašīna nevar griezties mūžīgi.',
+      'Blīva enerģija termodinamikas ietvaros: kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar nosauktiem zudumiem, skaldīšana, Saule no orbītas, un kāpēc slēgta mašīna nevar griezties mūžīgi. Šeit arī, viss no 2024. gada un vēlāk: nātrija-jonu baterijas tīkliem, TerraPower kodolelektrostacija Natrium, kas tiek būvēta Vaiomingā, komerciāls peldošais vēja parks jūrā, perovskīta un silīcija tandēma saules moduļi un Sardīnijā strādājošs ilgstošas uzglabāšanas akumulators uz oglekļa dioksīda bāzes.',
     ai: 'Modeļi Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un pārstrādei — plus metāna un uguns EO, plūdu AI un ģeoembeddingi no 2024. Laikapstākļu AI joprojām vajag satelītus.',
   },
   status: {
@@ -244,10 +260,10 @@ const page: Record<Locale, InnovationsPage> = {
 };
 
 const copy: Record<Locale, Record<string, InnovationCopy>> = {
-  en: { ...en, ...pack.en },
-  ru: { ...ruEntries, ...pack.ru },
-  pl: { ...plEntries, ...pack.pl },
-  lv: { ...lvEntries, ...pack.lv },
+  en: { ...en, ...pack.en, ...energyFirm.en },
+  ru: { ...ruEntries, ...pack.ru, ...energyFirm.ru },
+  pl: { ...plEntries, ...pack.pl, ...energyFirm.pl },
+  lv: { ...lvEntries, ...pack.lv, ...energyFirm.lv },
 };
 
 export function getInnovationsPage(locale: Locale): InnovationsPage {

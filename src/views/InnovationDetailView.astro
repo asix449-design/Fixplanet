@@ -11,8 +11,22 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
 const { item } = Astro.props;
-const title = `${item.title} — Fix Planet`;
+const title =
+  item.area === 'energy' ? `${item.title}, Fix Planet` : `${item.title} — Fix Planet`;
 const image = innovationImageSrc(item.image);
+const backLabel =
+  item.area === 'energy' ? page.back.replace(/^\s*←\s*/, '') : page.back;
+const quad = item.shape === 'quad';
+const licenseHref = item.licenseUrl || item.image.sourceUrl;
+let creditBefore = item.figureCredit ?? '';
+let creditLink = '';
+let creditAfter = '';
+if (item.figureCredit && item.licenseLabel && item.figureCredit.includes(item.licenseLabel)) {
+  const at = item.figureCredit.indexOf(item.licenseLabel);
+  creditBefore = item.figureCredit.slice(0, at);
+  creditLink = item.licenseLabel;
+  creditAfter = item.figureCredit.slice(at + item.licenseLabel.length);
+}
 ---
 
 <BaseLayout
@@ -45,7 +59,7 @@ const image = innovationImageSrc(item.image);
     <div class="wildlife-page-hero-shade innovations-hero-shade"></div>
     <div class="wrap wildlife-page-hero-copy">
       <p>
-        <a class="maps-back" href={localizePath('/innovations', locale)}>{page.back}</a>
+        <a class="maps-back" href={localizePath('/innovations', locale)}>{backLabel}</a>
       </p>
       <div class="eyebrow wildlife-on-dark">{page.areas[item.area]}</div>
       <h1 id="innovation-heading">{item.title}</h1>
@@ -54,22 +68,42 @@ const image = innovationImageSrc(item.image);
 
   <section class="section">
     <div class="wrap wildlife-detail">
-      <figure class="wildlife-detail-art">
-        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+      <figure class:list={['wildlife-detail-art', item.area === 'energy' && 'energy-figure']}>
+        <img
+          src={image}
+          alt={item.imageAlt}
+          width={item.image.width ?? 1280}
+          height={item.image.height ?? 960}
+        />
         <figcaption>
-          {page.imageCredit}: {item.image.credit}
+          {item.caption && <p>{item.caption}</p>}
           {
-            item.image.sourceUrl ? (
-              <>
-                {' '}
-                (
-                <a href={item.image.sourceUrl} rel="noopener noreferrer">
-                  {item.image.license}
-                </a>
-                )
-              </>
+            item.figureCredit ? (
+              <p>
+                {creditBefore}
+                {creditLink ? (
+                  <a href={licenseHref} rel="noopener noreferrer">
+                    {creditLink}
+                  </a>
+                ) : null}
+                {creditAfter}
+              </p>
             ) : (
-              <> ({item.image.license})</>
+              <p>
+                {page.imageCredit}: {item.image.credit}
+                {item.image.sourceUrl ? (
+                  <>
+                    {' '}
+                    (
+                    <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                      {item.image.license}
+                    </a>
+                    )
+                  </>
+                ) : (
+                  <> ({item.image.license})</>
+                )}
+              </p>
             )
           }
         </figcaption>
@@ -81,16 +115,33 @@ const image = innovationImageSrc(item.image);
             {page.status[item.status]}
           </span>
         </div>
-        <h2>{page.what}</h2>
-        <p>{item.what}</p>
-        <h2>{page.problem}</h2>
-        <p>{item.problem}</p>
-        <h2>{page.how}</h2>
-        <p>{item.how}</p>
-        <h2>{page.players}</h2>
-        <p>{item.players}</p>
-        <h2>{page.risks}</h2>
-        <p>{item.risks}</p>
+        {
+          quad ? (
+            <>
+              <h2>{page.what}</h2>
+              <p>{item.what}</p>
+              <h2>{page.why}</h2>
+              <p>{item.problem}</p>
+              <h2>{page.read}</h2>
+              <p>{item.how}</p>
+              <h2>{page.limits}</h2>
+              <p>{item.risks}</p>
+            </>
+          ) : (
+            <>
+              <h2>{page.what}</h2>
+              <p>{item.what}</p>
+              <h2>{page.problem}</h2>
+              <p>{item.problem}</p>
+              <h2>{page.how}</h2>
+              <p>{item.how}</p>
+              <h2>{page.players}</h2>
+              <p>{item.players}</p>
+              <h2>{page.risks}</h2>
+              <p>{item.risks}</p>
+            </>
+          )
+        }
         <CitedSourceList
           heading={page.sourcesLabel}
           note={item.sourcesNote}
