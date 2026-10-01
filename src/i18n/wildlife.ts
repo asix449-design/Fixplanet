@@ -6,6 +6,9 @@ import {
   type WildlifeStatus,
 } from '../data/wildlife';
 import type { Locale } from './config';
+import { birdsEn, birdsRu } from './wildlife-birds';
+import { birdsLv } from './wildlife-birds-lv';
+import { birdsPl } from './wildlife-birds-pl';
 import { lv } from './wildlife-lv';
 import { pl } from './wildlife-pl';
 import { pack } from './wildlife-pack';
@@ -35,7 +38,7 @@ const en: Record<string, SpeciesCopy> = {
   },
   'american-bison': {
     commonName: 'American bison',
-    hook: 'From tens of millions on the Great Plains to a few hundred by the 1880s — then a managed return.',
+    hook: 'From tens of millions on the Great Plains to a few hundred by the 1880s, then a managed return.',
     imageAlt: 'An American bison standing in dry grass',
     what: 'The American bison is a heavy grazing bovine of North American grasslands. IUCN lists it as Near Threatened. Most animals alive today are in commercial herds; conservation herds that are managed as wildlife are much smaller.',
     range: 'Once from northern Mexico through the Great Plains into Canada. Wild or semi-wild herds now occupy scattered parks and reserves; the species no longer moves as a continental migrant.',
@@ -79,7 +82,7 @@ const en: Record<string, SpeciesCopy> = {
   },
   'wild-boar': {
     commonName: 'Wild boar',
-    hook: 'Hunted out of some countries, then returned — and became a farmland boom species.',
+    hook: 'Hunted out of some countries, then returned, and became a farmland boom species.',
     imageAlt: 'A wild boar standing in a snowy woodland',
     what: 'The wild boar is an adaptable omnivorous pig, ancestor of most domestic pigs. IUCN lists it as Least Concern. It roots soil, eats crops, and lives from desert fringe to forest.',
     range: 'Native to Eurasia and North Africa. Exterminated in Britain and parts of Scandinavia, then re-established. Introduced and invasive in the Americas, Australia, and many islands.',
@@ -255,14 +258,16 @@ const en: Record<string, SpeciesCopy> = {
   },
   kakapo: {
     commonName: 'Kākāpō',
-    hook: 'A flightless New Zealand parrot — 325 named birds in 2026, still Critically Endangered.',
+    statusPill: 'Critically Endangered',
+    hook: 'A flightless New Zealand parrot. The official tally in 2026 is 325 named birds, and the species is still critically endangered.',
     imageAlt: 'Sirocco the kākāpō, a moss-green flightless parrot, facing the camera among flax leaves',
-    what: 'The kākāpō is the world’s heaviest parrot, nocturnal and flightless. IUCN lists it as Critically Endangered. New Zealand’s Department of Conservation added 90 independent 2026 chicks on 1 September 2026, taking the official tally from 235 to 325 — a recovery-era high, from 51 birds when the modern programme began in 1995. Every bird is named and tagged. The population is still tiny and island-bound.',
+    what: 'The kākāpō is the world’s heaviest parrot, nocturnal and flightless. The International Union for Conservation of Nature lists it as Critically Endangered. New Zealand’s Department of Conservation added 90 independent 2026 chicks on 1 September 2026, taking the official tally from 235 to 325, a recovery-era high, from 51 birds when the modern programme began in 1995. Every bird is named and tagged. The population is still tiny and island-bound.',
     range: 'Predator-free islands (Whenua Hou, Pukenui, Te Kākahu) plus a fenced mainland trial at Maungatautari. Once widespread on both main islands.',
-    story: 'Māori hunting and, later, cats, stoats, and rats erased the mainland bird. Intensive management — nest minding, supplementary food, genetic pairing — produced the 2026 jump. Islands are filling up. That is a guarded success, not a wild New Zealand restored.',
-    when: 'Critically Endangered now. Counted, managed, and still one bad predator incursion from disaster.',
+    story: 'Māori hunting and, later, cats, stoats, and rats erased the mainland bird. Intensive management, with nest minding, supplementary food, and genetic pairing, produced the 2026 jump. Islands are filling up.',
+    when: 'Critically Endangered now. The birds are counted and managed, and one predator incursion could still undo the work.',
     humanRole: 'Introduced mammals caused the crash; people now keep every remaining bird alive by hand.',
-    sources: 'NZ DOC media release, 1 September 2026 (325); IUCN Red List (Strigops habroptilus, CR).',
+    sources:
+      'New Zealand Department of Conservation media release, 1 September 2026 (325 birds); International Union for Conservation of Nature Red List (Strigops habroptilus, Critically Endangered).',
   },
   axolotl: {
     commonName: 'Axolotl',
@@ -720,7 +725,7 @@ const ru: Record<string, SpeciesCopy> = {
   },
   'american-bison': {
     commonName: 'Американский бизон',
-    hook: 'От десятков миллионов на Великих равнинах до нескольких сотен к 1880-м — и управляемое возвращение.',
+    hook: 'От десятков миллионов на Великих равнинах до нескольких сотен к 1880-м, затем управляемое возвращение.',
     imageAlt: 'Американский бизон стоит в сухой траве',
     what: 'Американский бизон — тяжёлый пастбищный бык североамериканских прерий. МСОП: близкий к уязвимому. Большинство нынешних животных — в товарных стадах; природоохранные стада гораздо меньше.',
     range: 'Когда-то от северной Мексики через Великие равнины до Канады. Сейчас — разрозненные парки и резерваты; континентальных миграций больше нет.',
@@ -764,7 +769,7 @@ const ru: Record<string, SpeciesCopy> = {
   },
   'wild-boar': {
     commonName: 'Кабан',
-    hook: 'В одних странах истреблён, затем вернулся — и стал видом-взрывом на полях.',
+    hook: 'В одних странах истреблён, затем вернулся и стал видом-взрывом на полях.',
     imageAlt: 'Кабан стоит в заснеженном лесу',
     what: 'Кабан — пластичный всеядный свиной, предок большинства домашних свиней. МСОП: вызывающий наименьшие опасения. Рыхлит почву, ест урожай, живёт от опушки пустыни до леса.',
     range: 'Евразия и Северная Африка. Истреблён в Британии и части Скандинавии, затем восстановился. Завезён и стал инвазивным в Америке, Австралии и на многих островах.',
@@ -940,14 +945,16 @@ const ru: Record<string, SpeciesCopy> = {
   },
   kakapo: {
     commonName: 'Какапо',
-    hook: 'Нелетающий попугай Новой Зеландии — 325 именных птиц в 2026 году, всё ещё на грани.',
+    statusPill: 'На грани исчезновения',
+    hook: 'Нелетающий попугай Новой Зеландии. В 2026 году официальный учёт: 325 именных птиц, вид по-прежнему на грани исчезновения.',
     imageAlt: 'Сирокко, мохово-зелёный нелетающий какапо, среди листьев льна',
-    what: 'Какапо — самый тяжёлый попугай мира, ночной и нелетающий. МСОП: на грани исчезновения. 1 сентября 2026 года Министерство охраны природы Новой Зеландии добавило 90 самостоятельных птенцов 2026 года, и официальный итог вырос с 235 до 325 — максимум эпохи восстановления, с 51 птицы в 1995-м. Каждая птица именная и меченая. Популяция всё ещё крошечная и островная.',
+    what: 'Какапо является самым тяжёлым попугаем мира, ночным и нелетающим. Международный союз охраны природы относит его к видам на грани исчезновения. 1 сентября 2026 года Министерство охраны природы Новой Зеландии добавило 90 самостоятельных птенцов 2026 года, и официальный итог вырос с 235 до 325, максимум эпохи восстановления, с 51 птицы в 1995 году. Каждая птица именная и меченая. Популяция всё ещё крошечная и островная.',
     range: 'Острова без хищников (Whenua Hou, Pukenui, Te Kākahu) плюс огороженный материковый опыт на Маунгатаутари. Когда-то оба главных острова.',
-    story: 'Охота маори и затем кошки, горностаи и крысы стёрли материковую птицу. Интенсивный уход — гнёзда, подкормка, генетический подбор пар — дал скачок 2026 года. Острова заполняются. Это охраняемый успех, не возвращённая дикая Новая Зеландия.',
-    when: 'Сейчас на грани. Посчитан, управляем и по-прежнему один занос хищника от беды.',
+    story: 'Охота маори, а затем кошки, горностаи и крысы стёрли материковую птицу. Интенсивный уход, включая охрану гнёзд, подкормку и генетический подбор пар, дал скачок 2026 года. Острова заполняются.',
+    when: 'Сейчас на грани исчезновения. Птицы посчитаны и находятся под управлением, и один занос хищника всё ещё может обернуться бедой.',
     humanRole: 'Завезённые млекопитающие вызвали обвал; теперь люди держат каждую оставшуюся птицу руками.',
-    sources: 'Релиз DOC NZ, 1 сентября 2026 (325); Красный список МСОП (Strigops habroptilus, CR).',
+    sources:
+      'Сообщение Министерства охраны природы Новой Зеландии, 1 сентября 2026 года (325); Красный список Международного союза охраны природы (Strigops habroptilus, на грани исчезновения).',
   },
   axolotl: {
     commonName: 'Аксолотль',
@@ -1381,10 +1388,10 @@ const ru: Record<string, SpeciesCopy> = {
 };
 
 const copy: Record<Locale, Record<string, SpeciesCopy>> = {
-  en: { ...en, ...pack.en },
-  ru: { ...ru, ...pack.ru },
-  pl: { ...pl, ...pack.pl },
-  lv: { ...lv, ...pack.lv },
+  en: { ...en, ...pack.en, ...birdsEn },
+  ru: { ...ru, ...pack.ru, ...birdsRu },
+  pl: { ...pl, ...pack.pl, ...birdsPl },
+  lv: { ...lv, ...pack.lv, ...birdsLv },
 };
 
 export function getWildlifeSpecies(locale: Locale): Species[] {

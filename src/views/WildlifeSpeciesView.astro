@@ -19,6 +19,8 @@ const clickableSources = species.sourcesList?.length
 const artWidth = species.image.width ?? 1280;
 const artHeight = species.image.height ?? 960;
 const licenseLabel = species.licenseLabel ?? species.image.license;
+const heads =
+  species.status === 'birds' ? ui.wildlifePage.birdsHeadings : ui.wildlifePage;
 ---
 
 <BaseLayout title={title} description={species.hook} image={image} theme="wildlife-detail">
@@ -67,8 +69,31 @@ const licenseLabel = species.licenseLabel ?? species.image.license;
           {
             species.photoCredit ? (
               <p>
-                {species.photoCredit}{' '}
-                (<a href={species.image.sourceUrl} rel="noopener noreferrer">{licenseLabel}</a>)
+                {species.photoCredit}
+                {
+                  species.licenseUrl ? (
+                    <>
+                      {' '}
+                      <a href={species.licenseUrl} rel="noopener noreferrer">{licenseLabel}</a>.
+                    </>
+                  ) : species.filePageLabel ? null : (
+                    <>
+                      {' '}
+                      (<a href={species.image.sourceUrl} rel="noopener noreferrer">{licenseLabel}</a>)
+                    </>
+                  )
+                }
+                {
+                  species.filePageLabel ? (
+                    <>
+                      {' '}
+                      {species.filePageLabel}:{' '}
+                      <a href={species.image.sourceUrl} rel="noopener noreferrer">
+                        {species.image.sourceUrl}
+                      </a>
+                    </>
+                  ) : null
+                }
               </p>
             ) : species.image.sourceUrl ? (
               <>
@@ -89,7 +114,9 @@ const licenseLabel = species.licenseLabel ?? species.image.license;
             {ui.wildlifePage.status[species.status]}
           </span>
           {
-            species.iucn ? (
+            species.statusPill ? (
+              <span class="pill">{species.statusPill}</span>
+            ) : species.iucn ? (
               <span class="pill">
                 {ui.wildlifePage.iucnLabel}: {species.iucn} · {ui.wildlifePage.iucn[species.iucn]}
               </span>
@@ -101,15 +128,15 @@ const licenseLabel = species.licenseLabel ?? species.image.license;
             ) : null
           }
         </div>
-        <h2>{ui.wildlifePage.what}</h2>
+        <h2>{heads.what}</h2>
         <p>{species.what}</p>
-        <h2>{ui.wildlifePage.range}</h2>
+        <h2>{heads.range}</h2>
         <p>{species.range}</p>
-        <h2>{ui.wildlifePage.story}</h2>
+        <h2>{heads.story}</h2>
         <p>{species.story}</p>
-        <h2>{ui.wildlifePage.when}</h2>
+        <h2>{heads.when}</h2>
         <p>{species.when}</p>
-        <h2>{ui.wildlifePage.humanRole}</h2>
+        <h2>{heads.humanRole}</h2>
         <p>{species.humanRole}</p>
         {
           clickableSources.length ? (

@@ -45,6 +45,7 @@ const tabLeads = {
   extinct: ui.wildlifePage.extinctLead,
   insects: ui.wildlifePage.insectsLead,
   domesticates: ui.wildlifePage.domesticatesLead,
+  birds: ui.wildlifePage.birdsLead,
 } as const;
 
 const pageTitle = isHumanShelf
@@ -95,6 +96,7 @@ const backdropHeight = hub ? wildlifeHubBackdrop.height : 1024;
                   icon={item.icon}
                   title={ui.wildlifePage[item.key]}
                   text={ui.wildlifePage.tiles[item.key]}
+                  showArrow={false}
                 />
               );
             })}
