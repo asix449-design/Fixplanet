@@ -7,6 +7,7 @@ import {
   type InnovationCopy,
 } from '../data/innovations';
 import type { Locale } from './config';
+import { aiScience } from './innovations-ai-science';
 import { en } from './innovations-en';
 import { energyFirm } from './innovations-energy-firm';
 import { pack } from './innovations-pack';
@@ -86,7 +87,7 @@ const pageEn: InnovationsPage = {
       'Carbon removal, circular enzymes, coral husbandry — and now biodiversity evidence, nature-risk screens, and ocean-colour missions from 2024 on.',
     energy:
       'Dense energy that still obeys thermodynamics: fusion, geothermal, storage, hydrogen with the losses stated, fission, space solar, and why a closed machine cannot run forever. Also here, all from 2024 or later: sodium-ion grid batteries, TerraPower’s Natrium nuclear plant under construction in Wyoming, commercial floating offshore wind, perovskite-silicon tandem solar modules, and a carbon dioxide battery for long-duration storage that is working in Sardinia.',
-    ai: 'Models and machines aimed at Earth systems, materials, grids, proteins, and recycling — plus methane and fire EO, flood AI, and geospatial embeddings from 2024 on. Weather AI still needs the satellites.',
+    ai: 'Five research results where artificial intelligence meets science: a language model that designs proteins, a model that proposes new materials, a hybrid climate model, a simulator for fusion machines, and a controller that keeps a fusion plasma stable. Models and machines aimed at Earth systems, materials, grids, proteins, and recycling, along with methane and fire observation, flood forecasts, and land maps from 2024 on. Weather models depend on satellites.',
   },
   status: {
     research: 'Research',
@@ -138,7 +139,7 @@ const pageRu: InnovationsPage = {
       'Улавливание углерода, ферменты, кораллы — и теперь доказательства биоразнообразия, скрининг рисков для природы и миссии цвета океана с 2024 года.',
     energy:
       'Плотная энергия в рамках термодинамики: термоядерный синтез, геотермия, накопители, водород с названными потерями, деление ядра, космос, и почему замкнутая машина не может крутиться вечно. Здесь также, всё с 2024 года и позже: натрий-ионные батареи для сетей, ядерная станция Natrium компании TerraPower, которая строится в Вайоминге, коммерческий плавучий морской ветер, тандемные солнечные модули из перовскита и кремния и работающий на Сардинии накопитель длительного хранения на углекислом газе.',
-    ai: 'Модели для систем Земли, материалов, сетей, белков и переработки — плюс EO метана и пожаров, ИИ паводков и геоэмбеддинги с 2024. Погодному ИИ по-прежнему нужны спутники.',
+    ai: 'Пять научных результатов, где искусственный интеллект работает на науку: языковая модель, проектирующая белки, модель, предлагающая новые материалы, гибридная климатическая модель, симулятор термоядерных установок и система управления, удерживающая термоядерную плазму в устойчивом состоянии. Модели и машины для систем Земли, материалов, сетей, белков и переработки, вместе с наблюдением метана и пожаров, прогнозами паводков и картами суши с 2024 года. Модели погоды опираются на спутники.',
   },
   status: {
     research: 'Исследование',
@@ -190,7 +191,7 @@ const pagePl: InnovationsPage = {
       'Usuwanie węgla, enzymy, korale — a teraz dowody bioróżnorodności, screening ryzyka dla przyrody i misje koloru oceanu od 2024.',
     energy:
       'Gęsta energia zgodna z termodynamiką: fuzja, geotermia, magazyny, wodór z podanymi stratami, rozszczepienie, słońce z orbity oraz to, dlaczego zamknięta maszyna nie może kręcić się wiecznie. Znajdziesz tu także, wszystko od 2024 roku: sodowo-jonowe baterie dla sieci, elektrownię jądrową Natrium firmy TerraPower budowaną w Wyoming, komercyjną pływającą energetykę wiatrową na morzu, tandemowe moduły słoneczne z perowskitu i krzemu oraz działający na Sardynii magazyn długotrwały na dwutlenku węgla.',
-    ai: 'Modele dla systemów Ziemi, materiałów, sieci, białek i recyklingu — plus EO metanu i pożarów, AI powodzi i geo-embeddingi od 2024. AI pogodowe nadal potrzebuje satelitów.',
+    ai: 'Pięć wyników badań, w których sztuczna inteligencja służy nauce: model językowy projektujący białka, model proponujący nowe materiały, hybrydowy model klimatu, symulator urządzeń fuzyjnych oraz układ sterowania utrzymujący stabilność plazmy fuzyjnej. Modele i maszyny dla systemów Ziemi, materiałów, sieci, białek i recyklingu, wraz z obserwacją metanu i pożarów, prognozami powodzi i mapami lądu od 2024 roku. Modele pogody opierają się na satelitach.',
   },
   status: {
     research: 'Badania',
@@ -242,7 +243,7 @@ const pageLv: InnovationsPage = {
       'Oglekļa uztveršana, enzīmi, koraļļi — un tagad bioloģiskās daudzveidības pierādījumi, dabas riska skrīnings un okeāna krāsas misijas no 2024. gada.',
     energy:
       'Blīva enerģija termodinamikas ietvaros: kodolsintēze, ģeotermija, uzkrāšana, ūdeņradis ar nosauktiem zudumiem, skaldīšana, Saule no orbītas, un kāpēc slēgta mašīna nevar griezties mūžīgi. Šeit arī, viss no 2024. gada un vēlāk: nātrija-jonu baterijas tīkliem, TerraPower kodolelektrostacija Natrium, kas tiek būvēta Vaiomingā, komerciāls peldošais vēja parks jūrā, perovskīta un silīcija tandēma saules moduļi un Sardīnijā strādājošs ilgstošas uzglabāšanas akumulators uz oglekļa dioksīda bāzes.',
-    ai: 'Modeļi Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un pārstrādei — plus metāna un uguns EO, plūdu AI un ģeoembeddingi no 2024. Laikapstākļu AI joprojām vajag satelītus.',
+    ai: 'Pieci pētījumu rezultāti, kuros mākslīgais intelekts kalpo zinātnei: valodas modelis, kas projektē olbaltumvielas, modelis, kas piedāvā jaunus materiālus, hibrīds klimata modelis, kodolsintēzes iekārtu simulators un vadības sistēma, kas uztur kodolsintēzes plazmu stabilu. Modeļi un mašīnas Zemes sistēmām, materiāliem, tīkliem, olbaltumvielām un pārstrādei, kopā ar metāna un uguns novērošanu, plūdu prognozēm un sauszemes kartēm no 2024. gada. Laikapstākļu modeļi balstās uz satelītiem.',
   },
   status: {
     research: 'Pētījums',
@@ -260,10 +261,10 @@ const page: Record<Locale, InnovationsPage> = {
 };
 
 const copy: Record<Locale, Record<string, InnovationCopy>> = {
-  en: { ...en, ...pack.en, ...energyFirm.en },
-  ru: { ...ruEntries, ...pack.ru, ...energyFirm.ru },
-  pl: { ...plEntries, ...pack.pl, ...energyFirm.pl },
-  lv: { ...lvEntries, ...pack.lv, ...energyFirm.lv },
+  en: { ...en, ...pack.en, ...energyFirm.en, ...aiScience.en },
+  ru: { ...ruEntries, ...pack.ru, ...energyFirm.ru, ...aiScience.ru },
+  pl: { ...plEntries, ...pack.pl, ...energyFirm.pl, ...aiScience.pl },
+  lv: { ...lvEntries, ...pack.lv, ...energyFirm.lv, ...aiScience.lv },
 };
 
 export function getInnovationsPage(locale: Locale): InnovationsPage {

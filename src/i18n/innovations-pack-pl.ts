@@ -49,7 +49,7 @@ export const packPl: Record<string, InnovationCopy> = {
   },
   'alphafold-proteins': {
     title: 'AlphaFold 3 w użyciu',
-    hook: 'Model białek i ich partnerów z 2024 r. jest dziś codziennym oprogramowaniem laboratorium — używanym przez miliony badaczy, nie gotowym enzymem klimatycznym.',
+    hook: 'Model białek i ich partnerów z 2024 roku jest dziś codziennym oprogramowaniem laboratorium, używanym przez miliony badaczy. Działający enzym klimatyczny to późniejszy krok laboratoryjny.',
     imageAlt: 'Wstęgowy diagram białka na ciemnym tle — klasa struktur, które te modele przewidują',
     what: 'AlphaFold 2 (DeepMind, Nature, 2021) przewidywał fałdy pojedynczego łańcucha z użyteczną dokładnością; publiczna baza AlphaFold dała setki milionów struktur. AlphaFold 3 i AlphaFold Server wystartowały 8 maja 2024, by przewidywać białka z innymi biomolekułami. Strona AlphaFold DeepMind pisze, że do listopada 2025 narzędzi używało ponad 3 miliony badaczy w ponad 190 krajach. Hassabis i Jumper dostali Nobla z chemii 2024 za tę pracę. To wdrożone oprogramowanie naukowe, nie chatbot i nie fabryka.',
     problem:
