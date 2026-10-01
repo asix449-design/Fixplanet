@@ -1457,10 +1457,23 @@ a.wildlife-card:hover {
   background: #14110c;
 }
 
+/* Waste detail: the grid item must shrink inside a phone viewport. */
+.waste-detail > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.waste-detail figcaption,
+.waste-detail .cited-source-list {
+  overflow-wrap: anywhere;
+}
+
 /* Photos that must show the whole frame, at the file's own aspect. */
 .wildlife-detail-art.wildlife-detail-natural img,
 /* Cities detail plates: show the whole figure at the image's own ratio. */
-.wildlife-detail-art.cities-detail-plate img {
+.wildlife-detail-art.cities-detail-plate img,
+/* Waste detail photos: show the whole frame, including portrait crops. */
+.wildlife-detail-art.waste-detail-plate img {
   height: auto;
   max-width: 100%;
   aspect-ratio: auto;

@@ -733,5 +733,55 @@
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "note": "Interior built from cross-laminated timber panels. Downscaled to 1600 px wide."
+  },
+  {
+    "slug": "deposit-return-systems",
+    "file": "deposit-return-systems.jpg",
+    "commonsTitle": "Krefeld, Germany - Bottle reverse vending machine in Rewe.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Krefeld,_Germany_-_Bottle_reverse_vending_machine_in_Rewe.jpg",
+    "artist": "Alexis Jazz",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "Cropped from the 1920 px version to the machine opening. Credit must say cropped."
+  },
+  {
+    "slug": "extended-producer-responsibility-packaging",
+    "file": "extended-producer-responsibility-packaging.jpg",
+    "commonsTitle": "Contenedores de reciclaje Almería.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Contenedores_de_reciclaje_Almer%C3%ADa.jpg",
+    "artist": "Schumi4ever",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Separate collection containers in Almería. Caption does not claim producer funding. Commons date is a placeholder and is not printed."
+  },
+  {
+    "slug": "e-waste-recycling",
+    "file": "e-waste-recycling.jpg",
+    "commonsTitle": "Electronic junk separation in view of recycling 3.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Electronic_junk_separation_in_view_of_recycling_3.jpg",
+    "artist": "Syced",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "note": "Exhibit at Science Square Tsukuba. Chip markings are microscopic."
+  },
+  {
+    "slug": "lithium-ion-battery-recycling",
+    "file": "lithium-ion-battery-recycling.jpg",
+    "commonsTitle": "Lithium-Ion Battery for BMW i3 - Battery Pack.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lithium-Ion_Battery_for_BMW_i3_-_Battery_Pack.JPG",
+    "artist": "RudolfSimon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "note": "Open pack at Electronica, Munich, November 2012. Small label on the control unit is unreadable."
+  },
+  {
+    "slug": "food-waste-reduction",
+    "file": "food-waste-reduction.jpg",
+    "commonsTitle": "Treasure trove of wasted food.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Treasure_trove_of_wasted_food.JPG",
+    "artist": "Foerster",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "note": "Produce discarded from a hypermarket, July 2013. Packaging labels are blurred."
   }
 ]

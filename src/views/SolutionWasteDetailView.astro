@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  wasteEncyclopediaImageSrc,
+  type WasteEncyclopedia,
+} from '../data/solutions-waste';
+import { getUi, localizePath, resolveLocale } from '../i18n';
+import { wasteDetailHeadings } from '../i18n/solutions-waste';
+
+interface Props {
+  item: WasteEncyclopedia;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const headings = wasteDetailHeadings[locale];
+const { item } = Astro.props;
+const title = `${item.title} — Fix Planet`;
+const image = wasteEncyclopediaImageSrc(item.image);
+const wasteHref = localizePath('/solutions/waste', locale);
+const urlPattern = /(https?:\/\/[^\s)]+)/g;
+---
+
+<BaseLayout
+  title={title}
+  description={item.hook}
+  image={image}
+  theme="solutions-detail"
+>
+  <div class="section-backdrop section-backdrop-subtle" aria-hidden="true">
+    <img
+      src="/images/solutions/solutions-hub-bg.jpg"
+      alt=""
+      width="1280"
+      height="720"
+    />
+    <div class="section-backdrop-scrim solutions-detail-scrim"></div>
+  </div>
+  <header
+    class="wildlife-page-hero wildlife-page-hero-detail solutions-page-hero"
+    aria-labelledby="waste-solution-heading"
+  >
+    <div class="wildlife-page-hero-media solutions-hero-media" aria-hidden="true">
+      <img
+        src="/images/solutions/solutions-hub-bg.jpg"
+        alt=""
+        width="1280"
+        height="720"
+      />
+    </div>
+    <div class="wildlife-page-hero-shade solutions-hero-shade"></div>
+    <div class="wrap wildlife-page-hero-copy">
+      <p>
+        <a class="maps-back" href={localizePath('/solutions', locale)}>{ui.solutionsPage.back}</a>
+        {' · '}
+        <a class="maps-back" href={wasteHref}>{ui.solutionsPage.tags.waste}</a>
+      </p>
+      <div class="eyebrow wildlife-on-dark">{ui.solutionsPage.tags.waste}</div>
+      <h1 id="waste-solution-heading">{item.title}</h1>
+      <p>{item.hook}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap wildlife-detail waste-detail">
+      <figure class="wildlife-detail-art waste-detail-plate">
+        <img
+          src={image}
+          alt={item.imageAlt}
+          width={item.image.width}
+          height={item.image.height}
+        />
+        <figcaption>
+          <p>{item.caption}</p>
+          <p>
+            {
+              item.credit.split(urlPattern).map((part) =>
+                part.startsWith('http') ? (
+                  <a href={part} rel="noopener noreferrer">{part}</a>
+                ) : (
+                  part
+                ),
+              )
+            }
+          </p>
+        </figcaption>
+      </figure>
+      <div class="prose wildlife-prose solutions-prose">
+        <div class="meta-row">
+          <span class="pill">{ui.solutionsPage.tags.waste}</span>
+        </div>
+        <h2>{headings.what}</h2>
+        {item.what.map((para) => <p>{para}</p>)}
+        <h2>{headings.why}</h2>
+        {item.why.map((para) => <p>{para}</p>)}
+        <h2>{headings.read}</h2>
+        {item.read.map((para) => <p>{para}</p>)}
+        <h2>{headings.limits}</h2>
+        {item.limits.map((para) => <p>{para}</p>)}
+        <h2>{ui.solutionsPage.sourcesLabel}</h2>
+        <p class="wildlife-sources">{ui.solutionsPage.sourcesVerify}</p>
+        <ol class="law-source-list cited-source-list">
+          {
+            item.sources.map((source) => (
+              <li>
+                {source.label}
+                {': '}
+                <a href={source.url} rel="noopener noreferrer">
+                  {source.url}
+                </a>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
