@@ -200,6 +200,14 @@ const { name } = Astro.props;
   )
 }
 {
+  name === 'sun' && (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <circle cx="12" cy="12" r="3.4"></circle>
+      <path d="M12 3.2v2.2M12 18.6v2.2M3.2 12h2.2M18.6 12h2.2M5.6 5.6l1.6 1.6M16.8 16.8l1.6 1.6M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6"></path>
+    </svg>
+  )
+}
+{
   name === 'insect' && (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
       <ellipse cx="12" cy="13.2" rx="3.6" ry="5.4"></ellipse>

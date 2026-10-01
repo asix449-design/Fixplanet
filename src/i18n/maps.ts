@@ -8,6 +8,7 @@ import {
 } from '../data/maps';
 import { cite } from '../data/sources';
 import type { Locale } from './config';
+import { climateCopy } from './maps-climate-pack';
 import { crimeCopy } from './maps-crime-pack';
 import { lv as lvEntries } from './maps-lv';
 import { pl as plEntries } from './maps-pl';
@@ -23,6 +24,8 @@ export type MapsPage = {
   filterAria: string;
   chooseCategory: string;
   tiles: Record<MapCategory, string>;
+  /** Shelf-page lede when it should differ from the hub tile blurb. */
+  shelfLedes?: Partial<Record<MapCategory, string>>;
   centuryBadge: string;
   categoryEyebrows: Partial<Record<MapCategory, string>>;
   cardCta: string;
@@ -49,30 +52,35 @@ export type MapsPage = {
 const pageEn: MapsPage = {
   metaTitle: 'Maps — Fix Planet',
   metaDescription:
-    'Public maps of conflict, languages, religion, resources, forests, water, and the political world — each with a named source.',
+    'Public maps of conflict, languages, religion, crime, pollution, resources, forests, water, population, climate, and the political world.',
   eyebrow: 'Map room',
   title: 'Maps',
   lead:
-    'Public maps of conflict, languages, religion, resources, forests, water, and the political world. Each card names who made the map, for which years, and how to read it. History of borders is a century timeline from 1 CE to now. Religions is an early-century schematic shelf plus the AD 600 Christianity process companion.',
+    'Public maps of conflict, languages, religion, crime, pollution, subsurface resources, forests, water, population, climate, and the political world. History of borders is a century timeline from 1 CE to now. Religions is an early-century schematic shelf plus the AD 600 Christianity process companion.',
   filterAria: 'Filter maps by category',
   chooseCategory: 'Choose a shelf',
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
-    religious: 'Pilot schematics for the early centuries CE — not a census.',
+    religious: 'Pilot schematics for the early centuries CE.',
     conflicts:
-      'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity — each card names the publisher and what the measure is (and is not).',
-    ethnic: 'Language families as public cartography, not a census.',
+      'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity.',
+    ethnic: 'Language families as public cartography.',
     crime:
-      'Public maps of violent crime, organized crime, corruption risk, and trafficking — each card names the publisher and what the measure is (and is not). Also here: how many people each country holds in prison, the main routes of cocaine, heroin and methamphetamine trafficking, estimates of modern slavery, money-laundering risk scores and rule-of-law rankings.',
+      'Public maps of violent crime, organized crime, corruption risk, and trafficking. Also here: how many people each country holds in prison, the main routes of cocaine, heroin and methamphetamine trafficking, estimates of modern slavery, money-laundering risk scores and rule-of-law rankings.',
     pollution: 'Air, waste, and emissions with a named source.',
     subsurface:
       'Oil, gas, and minerals: fossil fuel and fossil gold. Also here: the world’s coal mines and proved coal reserves, the countries that lead in mining and processing critical minerals, and where rare earths and lithium are mined.',
     political:
-      'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ — each card names the public vector set and what it is not.',
+      'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ.',
     forests: 'Canopy, loss, and protected areas from named sources.',
-    water:
-      'Rivers, basins, groundwater, lakes, wetlands, flood hazard, and freshwater stress — each card names the publisher and what the measure is (and is not).',
+    water: 'Rivers, basins, groundwater, lakes, wetlands, flood hazard, and freshwater stress.',
+    climate:
+      'Surface temperature, rainfall, drought, outdoor heat stress and snow, from open climate data.',
     population: 'Where people live, at the vintage we can source.',
+  },
+  shelfLedes: {
+    climate:
+      'Open climate maps from public datasets: surface temperature anomalies, precipitation on land, drought, outdoor heat stress and snow cover, each for a recent year or month.',
   },
   centuryBadge: 'Century atlas',
   categoryEyebrows: {
@@ -80,8 +88,9 @@ const pageEn: MapsPage = {
     forests: 'canopy, loss, and parks',
     religious: 'early centuries CE',
     'history-of-borders': '1 CE to now',
+    climate: 'open climate data',
   },
-  cardCta: 'Read the card →',
+  cardCta: 'Read the card',
   openSource: 'Open source map →',
   yearLabel: 'Vintage',
   sourceLabel: 'Source',
@@ -113,6 +122,7 @@ const pageEn: MapsPage = {
     political: 'Political',
     forests: 'Forests',
     water: 'Water',
+    climate: 'Climate',
     population: 'Population',
   },
 };
@@ -120,30 +130,36 @@ const pageEn: MapsPage = {
 const pageRu: MapsPage = {
   metaTitle: 'Карты — Fix Planet',
   metaDescription:
-    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира — у каждой названный источник.',
+    'Открытые карты конфликтов, языков, религий, преступности, загрязнения, ресурсов, лесов, воды, населения, климата и политического мира.',
   eyebrow: 'Картографическая',
   title: 'Карты',
   lead:
-    'Открытые карты конфликтов, языков, религий, ресурсов, лесов, воды и политического мира. На каждой карточке — кто сделал карту, за какие годы и как её читать. «История границ» — лента столетий от 1 года н. э. до сегодня. «Религии» — полка схем ранних веков и компаньон процесса христианства до 600.',
+    'Открытые карты конфликтов, языков, религий, преступности, загрязнения, ресурсов недр, лесов, воды, населения, климата и политического мира. «История границ»: лента столетий от 1 года н. э. до сегодня. «Религии»: полка схем ранних веков и компаньон процесса христианства до 600.',
   filterAria: 'Фильтр карт по теме',
   chooseCategory: 'Выберите полку',
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
-    religious: 'Пилотные схемы ранних веков н. э. — не перепись.',
+    religious: 'Пилотные схемы ранних веков н. э.',
     conflicts:
-      'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов — у каждой карточки издатель и что именно измеряется (и чего нет).',
-    ethnic: 'Языковые семьи как открытая картография, не перепись.',
+      'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов.',
+    ethnic: 'Языковые семьи как открытая картография.',
     crime:
-      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми — на каждой карточке указаны издатель и что именно измеряется (и что нет). Здесь также: сколько людей содержится в тюрьмах каждой страны, основные маршруты контрабанды кокаина, героина и метамфетамина, оценки масштабов современного рабства, баллы риска отмывания денег и рейтинги верховенства права.',
+      'Публичные карты насильственной преступности, организованной преступности, риска коррупции и торговли людьми. Здесь также: сколько людей содержится в тюрьмах каждой страны, основные маршруты контрабанды кокаина, героина и метамфетамина, оценки масштабов современного рабства, баллы риска отмывания денег и рейтинги верховенства права.',
     pollution: 'Воздух, отходы и выбросы с названным источником.',
     subsurface:
       'Нефть, газ и ископаемые: топливо и золото недр. Здесь также: угольные шахты мира и доказанные запасы угля, страны, лидирующие в добыче и переработке критически важных минералов, и места добычи редкоземельных металлов и лития.',
     political:
-      'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ — на каждой карточке указан открытый векторный набор и что он не измеряет.',
+      'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ.',
     forests: 'Полог, потери и ООПТ по названным источникам.',
     water:
-      'Реки, бассейны, подземные воды, озёра, водно-болотные угодья, наводнения и нехватка пресной воды — у каждой карточки издатель и что именно измеряется (и чего нет).',
-    population: 'Где живут люди — на тот год, который можем указать.',
+      'Реки, бассейны, подземные воды, озёра, водно-болотные угодья, наводнения и нехватка пресной воды.',
+    climate:
+      'Температура поверхности, осадки, засуха, тепловой стресс на открытом воздухе и снег по открытым климатическим данным.',
+    population: 'Где живут люди, на тот год, который можем указать.',
+  },
+  shelfLedes: {
+    climate:
+      'Открытые климатические карты по общедоступным данным: аномалии температуры поверхности, осадки на суше, засуха, тепловой стресс на открытом воздухе и снежный покров, каждая за недавний год или месяц.',
   },
   centuryBadge: 'Атлас столетий',
   categoryEyebrows: {
@@ -151,8 +167,9 @@ const pageRu: MapsPage = {
     forests: 'полог, потери и парки',
     religious: 'ранние века н. э.',
     'history-of-borders': 'от 1 н. э. до сейчас',
+    climate: 'открытые климатические данные',
   },
-  cardCta: 'Читать карточку →',
+  cardCta: 'Читать карточку',
   openSource: 'Открыть исходную карту →',
   yearLabel: 'Годы данных',
   sourceLabel: 'Источник',
@@ -184,6 +201,7 @@ const pageRu: MapsPage = {
     political: 'Политические',
     forests: 'Леса',
     water: 'Вода',
+    climate: 'Климат',
     population: 'Население',
   },
 };
@@ -191,30 +209,35 @@ const pageRu: MapsPage = {
 const pagePl: MapsPage = {
   metaTitle: 'Mapy — Fix Planet',
   metaDescription:
-    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego — każda z nazwanym źródłem.',
+    'Publiczne mapy konfliktów, języków, religii, przestępczości, zanieczyszczeń, zasobów, lasów, wody, ludności, klimatu i świata politycznego.',
   eyebrow: 'Mapownia',
   title: 'Mapy',
   lead:
-    'Publiczne mapy konfliktów, języków, religii, zasobów, lasów, wody i świata politycznego. Na każdej karcie: kto zrobił mapę, z których lat i jak ją czytać. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Religie to półka schematów wczesnych wieków oraz towarzysz procesu chrześcijaństwa do 600.',
+    'Publiczne mapy konfliktów, języków, religii, przestępczości, zanieczyszczeń, zasobów podziemnych, lasów, wody, ludności, klimatu i świata politycznego. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Religie to półka schematów wczesnych wieków oraz towarzysz procesu chrześcijaństwa do 600.',
   filterAria: 'Filtruj mapy według kategorii',
   chooseCategory: 'Wybierz półkę',
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
-    religious: 'Schematy pilotażowe wczesnych wieków n.e. — nie spis.',
+    religious: 'Schematy pilotażowe wczesnych wieków n.e.',
     conflicts:
-      'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów — na każdej karcie wydawca oraz to, co miara obejmuje (i czego nie).',
-    ethnic: 'Rodziny językowe jako kartografia publiczna, nie spis.',
+      'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów.',
+    ethnic: 'Rodziny językowe jako kartografia publiczna.',
     crime:
-      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi — na każdej karcie wskazany jest wydawca oraz to, co dana miara jest (i czym nie jest). Znajdziesz tu także: ile osób przebywa w więzieniach w poszczególnych krajach, główne szlaki przemytu kokainy, heroiny i metamfetaminy, szacunki skali współczesnego niewolnictwa, oceny ryzyka prania pieniędzy oraz rankingi praworządności.',
+      'Publiczne mapy przestępczości z użyciem przemocy, przestępczości zorganizowanej, ryzyka korupcji i handlu ludźmi. Znajdziesz tu także: ile osób przebywa w więzieniach w poszczególnych krajach, główne szlaki przemytu kokainy, heroiny i metamfetaminy, szacunki skali współczesnego niewolnictwa, oceny ryzyka prania pieniędzy oraz rankingi praworządności.',
     pollution: 'Powietrze, odpady i emisje z nazwanym źródłem.',
     subsurface:
       'Ropa, gaz i minerały: paliwo kopalne i kopalne złoto. Znajdziesz tu także: kopalnie węgla na świecie i udokumentowane zasoby węgla, kraje przodujące w wydobyciu i przetwarzaniu minerałów krytycznych oraz miejsca wydobycia metali ziem rzadkich i litu.',
     political:
-      'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ — na każdej karcie nazwany jest otwarty zestaw wektorów i to, czego on nie mierzy.',
+      'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ.',
     forests: 'Okap, ubytek i obszary chronione z nazwanych źródeł.',
-    water:
-      'Rzeki, zlewnie, wody podziemne, jeziora, mokradła, zagrożenie powodziowe i presja na wodę słodką — na każdej karcie wydawca i co dana miara jest (i czym nie jest).',
-    population: 'Gdzie mieszkają ludzie — w roczniku, który umiemy podać.',
+    water: 'Rzeki, zlewnie, wody podziemne, jeziora, mokradła, zagrożenie powodziowe i presja na wodę słodką.',
+    climate:
+      'Temperatura powierzchni, opady, susza, stres cieplny na zewnątrz i śnieg z otwartych danych klimatycznych.',
+    population: 'Gdzie mieszkają ludzie, w roczniku, który umiemy podać.',
+  },
+  shelfLedes: {
+    climate:
+      'Otwarte mapy klimatu z publicznych zbiorów danych: anomalie temperatury powierzchni, opady na lądzie, susza, stres cieplny na zewnątrz i pokrywa śnieżna, każda za niedawny rok lub miesiąc.',
   },
   centuryBadge: 'Atlas stuleci',
   categoryEyebrows: {
@@ -222,8 +245,9 @@ const pagePl: MapsPage = {
     forests: 'okap, ubytek i parki',
     religious: 'wczesne wieki n.e.',
     'history-of-borders': 'od 1 n.e. do dziś',
+    climate: 'otwarte dane klimatyczne',
   },
-  cardCta: 'Czytaj kartę →',
+  cardCta: 'Czytaj kartę',
   openSource: 'Otwórz mapę źródłową →',
   yearLabel: 'Rocznik',
   sourceLabel: 'Źródło',
@@ -255,6 +279,7 @@ const pagePl: MapsPage = {
     political: 'Polityczne',
     forests: 'Lasy',
     water: 'Woda',
+    climate: 'Klimat',
     population: 'Ludność',
   },
 };
@@ -262,30 +287,35 @@ const pagePl: MapsPage = {
 const pageLv: MapsPage = {
   metaTitle: 'Kartes — Fix Planet',
   metaDescription:
-    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli — katrai ir nosaukts avots.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, noziedzību, piesārņojumu, resursiem, mežiem, ūdeni, iedzīvotājiem, klimatu un politisko pasauli.',
   eyebrow: 'Karšu zāle',
   title: 'Kartes',
   lead:
-    'Publiskas kartes par konfliktiem, valodām, reliģijām, resursiem, mežiem, ūdeni un politisko pasauli. Katrā kartītē: kas karti veidojis, par kuriem gadiem un kā to lasīt. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģijas ir agrīno gadsimtu shēmu plaukts un kristietības procesa pavadonis līdz 600.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, noziedzību, piesārņojumu, zemes dzīļu resursiem, mežiem, ūdeni, iedzīvotājiem, klimatu un politisko pasauli. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģijas ir agrīno gadsimtu shēmu plaukts un kristietības procesa pavadonis līdz 600.',
   filterAria: 'Filtrēt kartes pēc kategorijas',
   chooseCategory: 'Izvēlies plauktu',
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
-    religious: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem — ne tautas skaitīšana.',
+    religious: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem.',
     conflicts:
-      'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko ne).',
-    ethnic: 'Valodu saimes kā publiska kartogrāfija, ne tautas skaitīšana.',
+      'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte.',
+    ethnic: 'Valodu saimes kā publiska kartogrāfija.',
     crime:
-      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību — katrā kartītē norādīts izdevējs un tas, ko rādītājs mēra (un ko nē). Šeit arī: cik cilvēku katrā valstī atrodas cietumā, galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi, mūsdienu verdzības apmēra aplēses, naudas atmazgāšanas riska vērtējumi un tiesiskuma reitingi.',
+      'Publiskas kartes par vardarbīgo noziedzību, organizēto noziedzību, korupcijas risku un cilvēku tirdzniecību. Šeit arī: cik cilvēku katrā valstī atrodas cietumā, galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi, mūsdienu verdzības apmēra aplēses, naudas atmazgāšanas riska vērtējumi un tiesiskuma reitingi.',
     pollution: 'Gaiss, atkritumi un emisijas ar nosauktu avotu.',
     subsurface:
       'Nafta, gāze un izrakteņi: fosilā degviela un fosilais zelts. Šeit arī pasaules ogļu raktuves un pierādītās ogļu rezerves, valstis, kas ir vadošās kritiski svarīgo minerālu ieguvē un pārstrādē, un vietas, kur iegūst retzemju metālus un litiju.',
     political:
-      'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ — katrā kartītē norādīts atvērtais vektoru komplekts un tas, ko tas nemēra.',
+      'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ.',
     forests: 'Vainags, zudums un aizsargājamās teritorijas no nosauktiem avotiem.',
-    water:
-      'Upes, baseini, pazemes ūdeņi, ezeri, mitrāji, plūdu risks un saldūdens stress — katrā kartītē izdevējs un tas, ko rādītājs mēra (un ko nē).',
-    population: 'Kur dzīvo cilvēki — tajā gadā, ko varam norādīt.',
+    water: 'Upes, baseini, pazemes ūdeņi, ezeri, mitrāji, plūdu risks un saldūdens stress.',
+    climate:
+      'Virsmas temperatūra, nokrišņi, sausums, siltuma stress ārā un sniegs no atvērtiem klimata datiem.',
+    population: 'Kur dzīvo cilvēki, tajā gadā, ko varam norādīt.',
+  },
+  shelfLedes: {
+    climate:
+      'Atvērtas klimata kartes no publiskām datu kopām: virsmas temperatūras anomālijas, nokrišņi uz sauszemes, sausums, siltuma stress ārā un sniega sega, katra par nesenu gadu vai mēnesi.',
   },
   centuryBadge: 'Gadsimtu atlants',
   categoryEyebrows: {
@@ -293,8 +323,9 @@ const pageLv: MapsPage = {
     forests: 'vainags, zudums un parki',
     religious: 'agrīnie gadsimti m.ē.',
     'history-of-borders': 'no 1. m.ē. līdz šodienai',
+    climate: 'atvērti klimata dati',
   },
-  cardCta: 'Lasīt kartīti →',
+  cardCta: 'Lasīt kartīti',
   openSource: 'Atvērt avota karti →',
   yearLabel: 'Datu gadi',
   sourceLabel: 'Avots',
@@ -326,6 +357,7 @@ const pageLv: MapsPage = {
     political: 'Politiskās',
     forests: 'Meži',
     water: 'Ūdens',
+    climate: 'Klimats',
     population: 'Iedzīvotāji',
   },
 };
@@ -1124,10 +1156,10 @@ const en: Record<string, MapCopy> = {
 };
 
 const copy: Record<Locale, Record<string, MapCopy>> = {
-  en: { ...en, ...crimeCopy.en, ...subsurfaceCopy.en },
-  ru: { ...ruEntries, ...crimeCopy.ru, ...subsurfaceCopy.ru },
-  pl: { ...plEntries, ...crimeCopy.pl, ...subsurfaceCopy.pl },
-  lv: { ...lvEntries, ...crimeCopy.lv, ...subsurfaceCopy.lv },
+  en: { ...en, ...crimeCopy.en, ...subsurfaceCopy.en, ...climateCopy.en },
+  ru: { ...ruEntries, ...crimeCopy.ru, ...subsurfaceCopy.ru, ...climateCopy.ru },
+  pl: { ...plEntries, ...crimeCopy.pl, ...subsurfaceCopy.pl, ...climateCopy.pl },
+  lv: { ...lvEntries, ...crimeCopy.lv, ...subsurfaceCopy.lv, ...climateCopy.lv },
 };
 
 export function getMapsPage(locale: Locale): MapsPage {
@@ -1209,6 +1241,10 @@ export function getRelatedMaps(locale: Locale, slug: string, limit = 3): MapEntr
   if (current.category === 'population') {
     // Six Population cards would otherwise be sliced to three. List every
     // Population sibling so density and night lights reach the four new cards.
+    return same;
+  }
+  if (current.category === 'climate') {
+    // Five Climate cards. List every sibling on each Climate detail page.
     return same;
   }
   return [...same, ...rest].slice(0, limit);

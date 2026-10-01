@@ -32,7 +32,9 @@ const activeCategory: MapCategory | undefined = hub
 const maps = activeCategory ? getMapsByCategory(locale, activeCategory) : [];
 const live = getLiveHazardsPage(locale);
 const shelfTitle = activeCategory ? page.categories[activeCategory] : page.title;
-const shelfLede = activeCategory ? page.tiles[activeCategory] : page.lead;
+const shelfLede = activeCategory
+  ? (page.shelfLedes?.[activeCategory] ?? page.tiles[activeCategory])
+  : page.lead;
 const shelfEyebrow =
   (activeCategory && page.categoryEyebrows[activeCategory]) || page.eyebrow;
 const pageTitle = hub ? page.metaTitle : `${shelfTitle} — ${page.title} — Fix Planet`;
