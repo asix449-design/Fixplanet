@@ -1,0 +1,15 @@
+---
+import { isWasteEncyclopediaSlug, wasteEncyclopediaSlugs } from '../../../data/solutions-waste';
+import { getWasteEncyclopediaBySlug, resolveLocale } from '../../../i18n';
+import SolutionWasteDetailView from '../../../views/SolutionWasteDetailView.astro';
+
+export function getStaticPaths() {
+  return wasteEncyclopediaSlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && isWasteEncyclopediaSlug(slug) ? getWasteEncyclopediaBySlug(locale, slug) : undefined;
+---
+
+{item && <SolutionWasteDetailView item={item} />}

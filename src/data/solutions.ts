@@ -82,6 +82,8 @@ export type Solution = SolutionMeta & SolutionCopy;
  * Forests encyclopedia articles live at `/solutions/forests/{slug}`.
  * Cities mobility articles live at `/solutions/cities/{slug}`. Other Cities
  * cards stay hub-only and keep their off-site source link.
+ * Waste policy and stream articles live at `/solutions/waste/{slug}`.
+ * The older Waste cards stay hub-only and keep their off-site source link.
  * Oceans stays hub-only: cards link to the primary source. Do not add
  * `/solutions/oceans/{slug}` until every oceans slug has a detail page.
  */
@@ -196,14 +198,19 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'anaerobic-digesters',
     tag: 'waste',
-    sources: [cite('U.S. EPA — AgSTAR', 'https://www.epa.gov/agstar')],
+    sources: [
+      cite(
+        'United States Environmental Protection Agency, farm digester programme',
+        'https://www.epa.gov/agstar',
+      ),
+    ],
   },
   {
     slug: 'pet-bottle-recycling',
     tag: 'waste',
     sources: [
       cite(
-        'Ellen MacArthur Foundation — Plastics',
+        'Ellen MacArthur Foundation, plastics',
         'https://ellenmacarthurfoundation.org/topics/plastics/overview',
       ),
     ],
@@ -213,7 +220,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'waste',
     sources: [
       cite(
-        'U.S. EPA — Composting wasted food',
+        'United States Environmental Protection Agency, composting wasted food',
         'https://www.epa.gov/sustainable-management-food/reducing-impact-wasted-food-feeding-soil-and-composting',
       ),
     ],
@@ -221,7 +228,12 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'landfill-gas-capture',
     tag: 'waste',
-    sources: [cite('U.S. EPA — LMOP', 'https://www.epa.gov/lmop')],
+    sources: [
+      cite(
+        'United States Environmental Protection Agency, landfill methane outreach',
+        'https://www.epa.gov/lmop',
+      ),
+    ],
   },
   {
     slug: 'cool-roofs',
@@ -571,19 +583,29 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'mrf-optical-sorting',
     tag: 'waste',
-    sources: [cite('US EPA — recycle', 'https://www.epa.gov/recycle')],
+    sources: [
+      cite(
+        'United States Environmental Protection Agency, recycling',
+        'https://www.epa.gov/recycle',
+      ),
+    ],
   },
   {
     slug: 'textile-to-textile-recycling',
     tag: 'waste',
-    sources: [cite('European Commission — textiles strategy', 'https://environment.ec.europa.eu/strategy/textiles-strategy_en')],
+    sources: [
+      cite(
+        'European Commission, textiles strategy',
+        'https://environment.ec.europa.eu/strategy/textiles-strategy_en',
+      ),
+    ],
   },
   {
     slug: 'construction-demolition-recycling',
     tag: 'waste',
     sources: [
       cite(
-        'European Commission — construction and demolition waste',
+        'European Commission, construction and demolition waste',
         'https://environment.ec.europa.eu/topics/waste-and-recycling/construction-and-demolition-waste_en',
       ),
     ],
@@ -593,7 +615,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'waste',
     sources: [
       cite(
-        'FAO — black soldier fly waste processing',
+        'Food and Agriculture Organization, black soldier fly waste processing',
         'https://www.fao.org/newsroom/story/the-harmless-soldier-fighting-mounds-of-harmful-waste/en',
       ),
     ],
@@ -603,7 +625,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'waste',
     sources: [
       cite(
-        'US EPA — energy recovery from waste',
+        'United States Environmental Protection Agency, energy recovery from waste',
         'https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/basic.html',
       ),
     ],
@@ -616,7 +638,62 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'interceptor',
     tag: 'waste',
-    sources: [cite('The Ocean Cleanup — Interceptor', 'https://theoceancleanup.com/faq/what-is-an-interceptor/')],
+    sources: [
+      cite(
+        'The Ocean Cleanup, interceptor',
+        'https://theoceancleanup.com/faq/what-is-an-interceptor/',
+      ),
+    ],
+  },
+  {
+    slug: 'deposit-return-systems',
+    tag: 'waste',
+    sources: [
+      cite(
+        'OECD, Deposit-refund systems',
+        'https://www.oecd.org/en/publications/deposit-refund-systems-and-the-interplay-with-additional-mandatory-extended-producer-responsibility-policies_a80f4b26-en.html',
+      ),
+    ],
+  },
+  {
+    slug: 'extended-producer-responsibility-packaging',
+    tag: 'waste',
+    sources: [
+      cite(
+        'European Commission, Packaging waste',
+        'https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en',
+      ),
+    ],
+  },
+  {
+    slug: 'e-waste-recycling',
+    tag: 'waste',
+    sources: [
+      cite(
+        'ITU, The Global E-waste Monitor 2024',
+        'https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx',
+      ),
+    ],
+  },
+  {
+    slug: 'lithium-ion-battery-recycling',
+    tag: 'waste',
+    sources: [
+      cite(
+        'IEA, Electric vehicle batteries',
+        'https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries',
+      ),
+    ],
+  },
+  {
+    slug: 'food-waste-reduction',
+    tag: 'waste',
+    sources: [
+      cite(
+        'UNEP, Food Waste Index Report 2024',
+        'https://www.unep.org/resources/publication/food-waste-index-report-2024',
+      ),
+    ],
   },
   {
     slug: 'green-roofs',

@@ -131,7 +131,8 @@ const en = {
         'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
       forests:
         'Regeneration, agroforestry, careful logging, and fire-smart practice that keep forests working. Also here: forest certification, payments for reduced deforestation and forest degradation, closer-to-nature forestry, enrichment planting in logged forest, and mass timber for buildings.',
-      waste: 'Sorting, recycling, organics, and energy recovery already running at municipal scale.',
+      waste:
+        'Sorting, recycling, organics, and energy recovery already running at municipal scale. Five ways to reduce waste and recover materials: deposit-return systems for drinks containers, extended producer responsibility for packaging, collection and recycling of electronic waste and lithium-ion batteries, and ways to stop edible food from being thrown away.',
       cities:
         'Cooler roofs, permeable streets, trees, and shared heat networks. Also here: how people move and the air they breathe, from bus rapid transit, walking and cycling networks and congestion charging to low-emission zones and electric buses.',
       materials: 'Cement, metals, timber, and recycled building materials already cutting embodied carbon.',
@@ -479,7 +480,8 @@ const ru: typeof en = {
         'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
       forests:
         'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство. Здесь также: сертификация лесов, платежи за сокращение обезлесения и деградации лесов, приближенное к природе лесопользование, обогащающие посадки в вырубленном лесу и массивная древесина для строительства.',
-      waste: 'Сортировка, переработка, органика и энергия из остаточных отходов.',
+      waste:
+        'Сортировка, переработка, органика и энергия из остаточных отходов. Пять способов сократить отходы и вернуть материалы: системы залога за тару из-под напитков, расширенная ответственность производителей за упаковку, сбор и переработка электронных отходов и литий-ионных аккумуляторов, а также способы сократить выброс съедобной еды.',
       cities:
         'Холодные крыши, проницаемые улицы, деревья и общие теплосети. Здесь же рассказано, как люди передвигаются по городу и каким воздухом дышат: скоростной автобусный транспорт, сети для пешеходов и велосипедистов, плата за въезд в перегруженные зоны, зоны низких выбросов и электробусы.',
       materials: 'Цемент, металлы, древесина и вторичные стройматериалы — уже снижают встроенный углерод.',
@@ -830,7 +832,8 @@ const pl: typeof en = {
         'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
       forests:
         'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna. Znajdziesz tu także: certyfikację lasów, płatności za ograniczanie wylesiania i degradacji lasów, leśnictwo bliższe naturze, nasadzenia wzbogacające w wyciętym lesie oraz drewno konstrukcyjne wielkowymiarowe w budownictwie.',
-      waste: 'Sortowanie, recykling, organika i odzysk energii w skali miasta.',
+      waste:
+        'Sortowanie, recykling, organika i odzysk energii w skali miasta. Pięć sposobów na ograniczenie odpadów i odzysk materiałów: systemy kaucyjne dla opakowań po napojach, rozszerzona odpowiedzialność producenta za opakowania, zbiórka i recykling elektroodpadów oraz akumulatorów litowo-jonowych, a także sposoby ograniczenia marnowania jadalnej żywności.',
       cities:
         'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła. Znajdziesz tu też to, jak ludzie poruszają się po mieście i czym oddychają: szybki transport autobusowy, sieci piesze i rowerowe, opłaty kongestyjne, strefy niskiej emisji i autobusy elektryczne.',
       materials: 'Cement, metale, drewno i wtórne materiały budowlane — już tną wbudowany węgiel.',
@@ -1181,7 +1184,8 @@ const lv: typeof en = {
         'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
       forests:
         'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse. Šeit arī: mežu sertifikācija, maksājumi par mazāku atmežošanu un mežu degradāciju, dabai tuvāka mežsaimniecība, bagātināšanas stādījumi izcirstā mežā un masīvkoks būvniecībai.',
-      waste: 'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā.',
+      waste:
+        'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā. Pieci veidi, kā samazināt atkritumus un atgūt materiālus: depozīta sistēmas dzērienu iepakojumam, ražotāju paplašinātā atbildība par iepakojumu, elektronisko atkritumu un litija jonu akumulatoru savākšana un pārstrāde, kā arī veidi, kā samazināt ēdamas pārtikas izmešanu.',
       cities:
         'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli. Šeit arī par to, kā cilvēki pārvietojas pa pilsētu un kādu gaisu elpo: ātrais autobusu transports, gājēju un riteņbraucēju tīkli, maksa par iebraukšanu sastrēgumu zonās, zemas emisijas zonas un elektroautobusi.',
       materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli — jau samazina ietverto oglekli.',
