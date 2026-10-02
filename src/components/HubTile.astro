@@ -16,6 +16,7 @@ interface Props {
   dataStatus?: string;
   dataFilter?: string;
   dataPanel?: string;
+  showArrow?: boolean;
 }
 
 const {
@@ -33,6 +34,7 @@ const {
   dataStatus,
   dataFilter,
   dataPanel,
+  showArrow = true,
 } = Astro.props;
 
 const isSoon = Boolean(badge && badgeTone === 'soon' && !href);
@@ -69,7 +71,7 @@ const badgeClass = badgeTone === 'atlas' ? 'hub-atlas-badge' : 'hub-soon';
       </div>
       <h2>{title}</h2>
       <p>{text}</p>
-      <span class="hub-arrow" aria-hidden="true">→</span>
+      {showArrow ? <span class="hub-arrow" aria-hidden="true">→</span> : null}
     </a>
   ) : (
     <article class:list={classList} {...dataAttrs}>
