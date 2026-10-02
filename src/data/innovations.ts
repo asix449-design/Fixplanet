@@ -1194,6 +1194,159 @@ export const innovationMeta: InnovationMeta[] = [
       ),
     ],
   },
+  {
+    slug: 'esm3-protein-model',
+    gridSourceLabel: 'Europe PMC',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'esm3-protein-model.jpg',
+      'Mnolf',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Aequorea_victoria.jpg',
+      { width: 1280, height: 960 },
+    ),
+    sources: [
+      cite(
+        'Europe PubMed Central: Simulating 500 million years of evolution with a language model (Science, 16 January 2025)',
+        'https://europepmc.org/article/MED/39818825',
+      ),
+      cite(
+        'EvolutionaryScale: ESM3 announcement (January 2025 update)',
+        'https://www.evolutionaryscale.ai/blog/esm3-release',
+      ),
+      cite(
+        'Hugging Face: ESM3 open model card',
+        'https://huggingface.co/biohub/esm3-sm-open-v1',
+      ),
+      cite(
+        'Nobel Prize: Chemistry 2008 press release',
+        'https://www.nobelprize.org/prizes/chemistry/2008/press-release/',
+      ),
+      cite(
+        'Wikimedia Commons: Aequorea victoria (photo)',
+        'https://commons.wikimedia.org/wiki/File:Aequorea_victoria.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'mattergen',
+    gridSourceLabel: 'Nature',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'mattergen.jpg',
+      'JJ Harrison',
+      'CC BY-SA 2.5',
+      'https://commons.wikimedia.org/wiki/File:Quartz,_Tibet.jpg',
+      { width: 1277, height: 1280 },
+    ),
+    sources: [
+      cite(
+        'Nature: A generative model for inorganic materials design (16 January 2025)',
+        'https://www.nature.com/articles/s41586-025-08628-5',
+      ),
+      cite(
+        'Microsoft Research: MatterGen (16 January 2025)',
+        'https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/',
+      ),
+      cite('GitHub: microsoft/mattergen', 'https://github.com/microsoft/mattergen'),
+      cite(
+        'Wikimedia Commons: Quartz, Tibet (photo)',
+        'https://commons.wikimedia.org/wiki/File:Quartz,_Tibet.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'neuralgcm',
+    gridSourceLabel: 'Nature',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'neuralgcm.jpg',
+      'NASA Earth Observatory, International Space Station Expedition 13 crew',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Top_of_Atmosphere.jpg',
+      { width: 1280, height: 850 },
+    ),
+    sources: [
+      cite(
+        'Nature: Neural general circulation models for weather and climate (22 July 2024)',
+        'https://www.nature.com/articles/s41586-024-07744-y',
+      ),
+      cite(
+        'Google Research: Fast, accurate climate modeling with NeuralGCM (22 July 2024)',
+        'https://research.google/blog/fast-accurate-climate-modeling-with-neuralgcm/',
+      ),
+      cite(
+        'GitHub: neuralgcm/neuralgcm',
+        'https://github.com/google-research/neuralgcm',
+      ),
+      cite(
+        'Wikimedia Commons: Top of Atmosphere (photo)',
+        'https://commons.wikimedia.org/wiki/File:Top_of_Atmosphere.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'torax-fusion-ai',
+    gridSourceLabel: 'DeepMind',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'torax-fusion-ai.jpg',
+      'Kevan',
+      'CC BY 2.0',
+      'https://commons.wikimedia.org/wiki/File:Joint_European_Torus_(6055833306).jpg',
+      { width: 959, height: 1280 },
+    ),
+    sources: [
+      cite(
+        'Google DeepMind: Bringing AI to the next generation of fusion energy (16 October 2025)',
+        'https://deepmind.google/blog/bringing-ai-to-the-next-generation-of-fusion-energy/',
+      ),
+      cite(
+        'Google DeepMind: Accelerating fusion science through learned plasma control',
+        'https://deepmind.google/blog/accelerating-fusion-science-through-learned-plasma-control/',
+      ),
+      cite(
+        'Commonwealth Fusion Systems: AI alliance with Google DeepMind (16 October 2025)',
+        'https://blog.cfs.energy/with-ai-alliance-google-deepmind-and-cfs-take-fusion-to-the-next-level/',
+      ),
+      cite(
+        'Commonwealth Fusion Systems: net fusion energy (28 August 2026)',
+        'https://blog.cfs.energy/why-cfs-is-confident-well-demonstrate-net-fusion-energy-q1/',
+      ),
+      cite('GitHub: google-deepmind/torax', 'https://github.com/google-deepmind/torax'),
+      cite(
+        'Wikimedia Commons: Joint European Torus (photo)',
+        'https://commons.wikimedia.org/wiki/File:Joint_European_Torus_(6055833306).jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'diiid-tearing-ai',
+    gridSourceLabel: 'Nature',
+    area: 'ai',
+    status: 'research',
+    image: img(
+      'diiid-tearing-ai.jpg',
+      'Rswilcox',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:2017_TOCAMAC_Fusion_Chamber_N0689.jpg',
+      { width: 1280, height: 853 },
+    ),
+    sources: [
+      cite(
+        'Nature: Avoiding fusion plasma tearing instability with deep reinforcement learning (21 February 2024)',
+        'https://www.nature.com/articles/s41586-024-07024-9',
+      ),
+      cite(
+        'Wikimedia Commons: DIII-D vacuum vessel (photo)',
+        'https://commons.wikimedia.org/wiki/File:2017_TOCAMAC_Fusion_Chamber_N0689.jpg',
+      ),
+    ],
+  },
 ];
 
 export function isInnovationArea(value: string | undefined): value is InnovationArea {

@@ -401,5 +401,45 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bonorva_-_Parco_eolico_di_Campeda_(01).JPG",
     "artist": "Gianni Careddu",
     "license": "CC BY-SA 4.0"
+  },
+  {
+    "slug": "esm3-protein-model",
+    "file": "esm3-protein-model.jpg",
+    "commonsTitle": "Aequorea victoria.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aequorea_victoria.jpg",
+    "artist": "Mnolf",
+    "license": "CC BY-SA 3.0"
+  },
+  {
+    "slug": "mattergen",
+    "file": "mattergen.jpg",
+    "commonsTitle": "Quartz, Tibet.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartz,_Tibet.jpg",
+    "artist": "JJ Harrison",
+    "license": "CC BY-SA 2.5"
+  },
+  {
+    "slug": "neuralgcm",
+    "file": "neuralgcm.jpg",
+    "commonsTitle": "Top of Atmosphere.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Top_of_Atmosphere.jpg",
+    "artist": "NASA Earth Observatory, International Space Station Expedition 13 crew",
+    "license": "Public domain"
+  },
+  {
+    "slug": "torax-fusion-ai",
+    "file": "torax-fusion-ai.jpg",
+    "commonsTitle": "Joint European Torus (6055833306).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joint_European_Torus_(6055833306).jpg",
+    "artist": "Kevan",
+    "license": "CC BY 2.0"
+  },
+  {
+    "slug": "diiid-tearing-ai",
+    "file": "diiid-tearing-ai.jpg",
+    "commonsTitle": "2017 TOCAMAC Fusion Chamber N0689.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_TOCAMAC_Fusion_Chamber_N0689.jpg",
+    "artist": "Rswilcox",
+    "license": "CC BY-SA 4.0"
   }
 ]

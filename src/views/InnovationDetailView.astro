@@ -11,11 +11,17 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
 const { item } = Astro.props;
-const title =
-  item.area === 'energy' ? `${item.title}, Fix Planet` : `${item.title} — Fix Planet`;
+const plainChrome = item.area === 'energy' || item.area === 'ai';
+const title = plainChrome ? `${item.title}, Fix Planet` : `${item.title} — Fix Planet`;
 const image = innovationImageSrc(item.image);
-const backLabel =
-  item.area === 'energy' ? page.back.replace(/^\s*←\s*/, '') : page.back;
+const backLabel = plainChrome ? page.back.replace(/^\s*←\s*/, '') : page.back;
+const naturalFigure =
+  item.area === 'energy' ||
+  item.slug === 'esm3-protein-model' ||
+  item.slug === 'mattergen' ||
+  item.slug === 'neuralgcm' ||
+  item.slug === 'torax-fusion-ai' ||
+  item.slug === 'diiid-tearing-ai';
 const quad = item.shape === 'quad';
 const licenseHref = item.licenseUrl || item.image.sourceUrl;
 let creditBefore = item.figureCredit ?? '';
@@ -68,7 +74,7 @@ if (item.figureCredit && item.licenseLabel && item.figureCredit.includes(item.li
 
   <section class="section">
     <div class="wrap wildlife-detail">
-      <figure class:list={['wildlife-detail-art', item.area === 'energy' && 'energy-figure']}>
+      <figure class:list={['wildlife-detail-art', naturalFigure && 'energy-figure']}>
         <img
           src={image}
           alt={item.imageAlt}

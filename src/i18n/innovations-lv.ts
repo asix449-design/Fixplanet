@@ -261,7 +261,7 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'graphcast-ai-weather': {
     title: 'MI laikapstākļu modeļi — GraphCast',
-    hook: 'Grafu neironu tīkls tagad konkurē ar klasiskajām vidēja termiņa prognozēm — un joprojām vajag satelītus.',
+    hook: 'Grafu neironu tīkls tagad konkurē ar klasiskajām vidēja termiņa prognozēm un balstās uz satelītu novērojumiem.',
     imageAlt: 'GOES-16 pilna diska Zemes attēls — novērojumi, uz kuriem MI laikapstākļu modeļi mācās un darbojas',
     what: 'GraphCast (Google DeepMind, Science, 2023) ir mašīnmācīšanās modelis, kas prognozē globālos laikapstākļus apmēram desmit dienas uz priekšu no atmosfēras grafa, apmācīts uz ECMWF reanalīzes. FourCastNet (NVIDIA) un Pangu-Weather (Huawei) ir radinieki. Meteoroloģijas dienesti tagad tādus modeļus dzen blakus fizikas kodiem, ne to vietā.',
     problem:
@@ -276,7 +276,7 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'gnome-materials': {
     title: 'GNoME — MI materiāliem',
-    hook: 'Modelis ierosināja simtiem tūkstošu iespējami stabilu kristālu. Ķīmijai tie joprojām jāizgatavo.',
+    hook: 'Modelis ierosināja simtiem tūkstošu kristālu, kas var būt stabili. To izgatavošana ir laboratorijas darbs.',
     imageAlt: 'Kvarca kristāls — tāda sakārtota cietviela, ko materiālu modeļi mēģina izpētīt ātrāk par mēģinājumu un kļūdu',
     what: 'GNoME (Graph Networks for Materials Exploration) no DeepMind ar Berkeley līdzautoriem lietoja grafu tīklus un esošās materiālu datubāzes, lai prognozētu ļoti lielu kopu potenciāli stabilu neorganisko kristālu (2023). Dažas prognozes vēlāk tika sintezētas. Tas ir meklēšanas rīks, ne gatava baterija.',
     problem:
@@ -291,7 +291,7 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'ai-grid-optimization': {
     title: 'MI elektrotīklam',
-    hook: 'Labākas vēja prognozes un dispečeru rīki noskuj rezerves. Tie neaizstāj transformatorus.',
+    hook: 'Labākas vēja prognozes un dispečeru rīki noskuj rezerves. Transformatori un pārējais fiziskais tīkls paliek savā vietā.',
     imageAlt: 'Augstsprieguma pārvades masti — fiziskais tīkls, uz kura sēž optimizācijas programmatūra',
     what: 'Tīkla operatori jau lieto optimizāciju. Mašīnmācīšanās pievieno ātrākas vēja, saules un pieprasījuma prognozes un dažkārt ierosina dispečerēšanu. DeepMind 2019. gadā publicētais rezultāts attiecās uz Google vēja fermām ASV: neironu tīkls prognozēja izlaidi apmēram 36 stundas uz priekšu un cēla šo megavatu vērtību par apmēram 20 procentiem pret saistībām bez laika rāmja. Sarunas ar Britānijas National Grid bija izpēte un nekļuva par ieviestu tīkla produktu. Citi operatori izmēģina līdzīgus rīkus.',
     problem:
@@ -321,7 +321,7 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'amp-recycling-robots': {
     title: 'Reciklēšanas roboti — AMP',
-    hook: 'Kameras un rokas jau lasa kartona kastes un pudeles īstās šķirošanas līnijās. Tie neizdomā tirgu ķīpai.',
+    hook: 'Kameras un rokas jau lasa kartona kastes un pudeles īstās šķirošanas līnijās. Pircējs sašķirotajam materiālam ir atsevišķs jautājums.',
     imageAlt: 'Rūpnieciska robota roka šķiro PET pudeli uz reciklēšanas konveijera',
     what: 'Materiālu atgūšanas iekārtas (MRF) jau sen lieto virpuļstrāvas un optiskos šķirotājus. AMP Robotics un līdzīgi uzņēmumi pievieno datorredzi un robotu rokas, kas lasa konkrētus priekšmetus cilvēka vai labākā ātrumā. Sistēmas ir uzstādītas darbojošās rūpnīcās Amerikas Savienotajās Valstīs un citās valstīs — ieviesta aparatūra, ne koncepta video.',
     problem:
@@ -336,7 +336,7 @@ export const lv: Record<string, InnovationCopy> = {
   },
   'quantum-computing': {
     title: 'Kvantu skaitļošana — ķīmijas cerības',
-    hook: 'Publiskās mašīnas no IBM, Google un IonQ turpina pievienot kubitus. Tās vēl nav projektējušas klimata katalizatoru.',
+    hook: 'Publiskās mašīnas no IBM, Google un IonQ turpina pievienot kubitus. Klimata katalizatora projektēšana ar tām ir vēlāks darbs.',
     imageAlt: 'IBM Q System One klases kvantu dators, kabeļu lustra virs atšķaidīšanas ledusskapja',
     what: 'Kvantu datori lieto superpozīciju un sapīšanos, lai pētītu dažas problēmas, kas uz parastajiem čipiem sliktāk mērogojas — teorijā molekulu elektronu struktūra ir viena. IBM ir publicējis daudzu simtu līdz tūkstoš kubitu supravadošos procesorus (tostarp Condor 2023. gadā) un mazākus, augstākas kvalitātes Heron čipus. Google Willow procesors (2024) ziņoja par kļūdu labošanas progresu. IonQ lieto slazdotos jonus. Tas viss ir pētījumu aparatūra NISQ līdz agrīnajam kļūdu izturīgajam laikmetam.',
     problem:

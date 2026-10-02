@@ -207,7 +207,7 @@ export const en: Record<string, InnovationCopy> = {
   },
   'graphcast-ai-weather': {
     title: 'AI weather models — GraphCast',
-    hook: 'A graph neural net now rivals classical medium-range forecasts — and it still needs the satellites.',
+    hook: 'A graph neural network now rivals classical medium-range forecasts, and it depends on satellite observations.',
     imageAlt: 'GOES-16 full-disk image of Earth — the observations AI weather models train and run on',
     what: 'GraphCast (Google DeepMind, Science, 2023) is a machine-learning model that predicts global weather about ten days ahead from a graph of the atmosphere, trained on ECMWF reanalysis. FourCastNet (NVIDIA) and Pangu-Weather (Huawei) are cousins. Meteorological services now run such models alongside, not instead of, physics codes.',
     problem: 'Weather and seasonal risk drive farms, grids, and disaster response. Faster, cheaper forecasts help — especially where supercomputers are scarce. Climate change still needs physics models of the slow ocean and ice; a 10-day ML forecast is not a 2100 projection.',
@@ -219,7 +219,7 @@ export const en: Record<string, InnovationCopy> = {
   },
   'gnome-materials': {
     title: 'GNoME — AI for materials',
-    hook: 'A model proposed hundreds of thousands of maybe-stable crystals. Chemistry still has to make them.',
+    hook: 'A model proposed hundreds of thousands of crystals that may be stable. Making them is work for the laboratory.',
     imageAlt: 'A quartz crystal — the kind of ordered solid materials models try to explore faster than trial-and-error',
     what: 'GNoME (Graph Networks for Materials Exploration), from DeepMind with Berkeley collaborators, used graph networks and existing materials databases to predict a very large set of potentially stable inorganic crystals (2023). Some predictions were later synthesized. That is a search tool, not a finished battery.',
     problem: 'Better catalysts, electrodes, and membranes are bottlenecked by how slowly humans try recipes. If climate tech needs new solids, faster screening matters — after the wet lab confirms them.',
@@ -231,7 +231,7 @@ export const en: Record<string, InnovationCopy> = {
   },
   'ai-grid-optimization': {
     title: 'AI for the power grid',
-    hook: 'Better wind forecasts and dispatch tools shave reserves. They do not replace transformers.',
+    hook: 'Better wind forecasts and dispatch tools shave reserves. The transformers and the rest of the physical grid stay in place.',
     imageAlt: 'High-voltage transmission pylons — the physical grid that optimization software sits on',
     what: 'Grid operators already use optimization. Machine learning adds faster forecasts of wind, solar, and demand, and sometimes suggests dispatch. DeepMind’s published 2019 result was on Google’s U.S. wind farms: a neural net predicted output about 36 hours ahead and raised the value of those megawatts by about 20 percent versus making no time-based commitments. Talks with Britain’s National Grid were exploratory and did not become a deployed grid product. Other operators trial similar tools.',
     problem: 'Variable renewables need better prediction and faster control or we burn more gas “just in case.” Congestion and inverter-based stability are separate, harder problems.',
@@ -255,7 +255,7 @@ export const en: Record<string, InnovationCopy> = {
   },
   'amp-recycling-robots': {
     title: 'Recycling robots — AMP',
-    hook: 'Cameras and arms already pick cartons and bottles on real sorting lines. They do not invent a market for the bale.',
+    hook: 'Cameras and arms already pick cartons and bottles on real sorting lines. A buyer for the sorted material is a separate question.',
     imageAlt: 'An industrial robot arm sorting a PET bottle on a recycling conveyor',
     what: 'Material-recovery facilities (MRFs) have long used eddy currents and optical sorters. AMP Robotics and similar firms add computer vision and robot arms that pick specific items at human-or-better speed. Systems are installed in operating plants in the United States and other countries — deployed equipment, not a concept video.',
     problem: 'People are expensive and injured on lines; contamination ruins bales; cities want higher recycling rates. A robot that never gets bored can raise purity. It cannot create demand for mixed plastic film.',
@@ -267,7 +267,7 @@ export const en: Record<string, InnovationCopy> = {
   },
   'quantum-computing': {
     title: 'Quantum computing — chemistry hopes',
-    hook: 'Public machines from IBM, Google, and IonQ keep adding qubits. They have not designed a climate catalyst yet.',
+    hook: 'Public machines from IBM, Google, and IonQ keep adding qubits. Designing a climate catalyst with them is later work.',
     imageAlt: 'An IBM Q System One-class quantum computer, the chandelier of cables over a dilution refrigerator',
     what: 'Quantum computers use superposition and entanglement to explore some problems that scale badly on ordinary chips — in theory, the electronic structure of molecules is one. IBM has published multi-hundred- to thousand-qubit superconducting processors (including Condor in 2023) and smaller, higher-quality Heron chips. Google’s Willow processor (2024) reported error-correction progress. IonQ uses trapped ions. All of this is research hardware in the NISQ-to-early-fault-tolerant era.',
     problem: 'Fertilizer, batteries, and carbon chemistry are quantum-mechanical at the atom. If a fault-tolerant machine could simulate a catalyst that does not exist yet, that would matter. We do not have that machine.',
