@@ -92,7 +92,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Организация экономического сотрудничества и развития: системы возвратного залога и их взаимодействие с дополнительными обязательными мерами расширенной ответственности производителей, рабочий документ по окружающей среде № 208, PDF (Organisation for Economic Co-operation and Development (OECD): Deposit-refund systems and the interplay with additional mandatory extended producer responsibility policies, OECD Environment Working Papers No. 208 (PDF))',
+          'Организация экономического сотрудничества и развития: системы возвратного залога и их взаимодействие с дополнительными обязательными мерами расширенной ответственности производителей, рабочий документ по окружающей среде № 208, документ (Organisation for Economic Co-operation and Development (OECD): Deposit-refund systems and the interplay with additional mandatory extended producer responsibility policies, OECD Environment Working Papers No. 208 (PDF))',
         url: src('deposit-return-systems', 1),
       },
       {
@@ -137,7 +137,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Организация экономического сотрудничества и развития: расширенная ответственность производителей, основные выводы (2016, PDF) (Organisation for Economic Co-operation and Development (OECD): Extended Producer Responsibility: Policy Highlights (2016, PDF))',
+          'Организация экономического сотрудничества и развития: расширенная ответственность производителей, основные выводы (2016, документ) (Organisation for Economic Co-operation and Development (OECD): Extended Producer Responsibility: Policy Highlights (2016, PDF))',
         url: src('extended-producer-responsibility-packaging', 3),
       },
     ],
@@ -169,7 +169,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Международный союз электросвязи и Учебный и научно-исследовательский институт Организации Объединённых Наций: Глобальный мониторинг электронных отходов 2024, PDF (International Telecommunication Union (ITU) and United Nations Institute for Training and Research (UNITAR): Global E-waste Monitor 2024 (PDF))',
+          'Международный союз электросвязи и Учебный и научно-исследовательский институт Организации Объединённых Наций: Глобальный мониторинг электронных отходов 2024, документ (International Telecommunication Union (ITU) and United Nations Institute for Training and Research (UNITAR): Global E-waste Monitor 2024 (PDF))',
         url: src('e-waste-recycling', 1),
       },
       {
@@ -245,12 +245,12 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Программа Организации Объединённых Наций по окружающей среде: доклад об Индексе пищевых отходов 2024, PDF (United Nations Environment Programme (UNEP): Food Waste Index Report 2024 (PDF))',
+          'Программа Организации Объединённых Наций по окружающей среде: доклад об Индексе пищевых отходов 2024, документ (United Nations Environment Programme (UNEP): Food Waste Index Report 2024 (PDF))',
         url: src('food-waste-reduction', 1),
       },
       {
         label:
-          'Программа Организации Объединённых Наций по окружающей среде: доклад об Индексе пищевых отходов 2024, ключевые выводы, PDF (United Nations Environment Programme (UNEP): Food Waste Index Report 2024, Key messages (PDF))',
+          'Программа Организации Объединённых Наций по окружающей среде: доклад об Индексе пищевых отходов 2024, ключевые выводы, документ (United Nations Environment Programme (UNEP): Food Waste Index Report 2024, Key messages (PDF))',
         url: src('food-waste-reduction', 2),
       },
       {

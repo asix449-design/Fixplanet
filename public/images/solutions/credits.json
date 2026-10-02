@@ -689,7 +689,7 @@
     "artist": "Geoff Holland",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-    "note": "Logs stacked on grass near Trowupburn, Northumberland. The caption does not claim the timber is certified. Downscaled to 1280 px wide."
+    "note": "Logs stacked on grass near Trowupburn, Northumberland. Downscaled to 1280 px wide."
   },
   {
     "slug": "redd-plus",
@@ -742,7 +742,7 @@
     "artist": "Alexis Jazz",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "note": "Cropped from the 1920 px version to the machine opening. Credit must say cropped."
+    "note": "The photograph is cropped to the reverse-vending machine opening."
   },
   {
     "slug": "extended-producer-responsibility-packaging",
@@ -752,7 +752,7 @@
     "artist": "Schumi4ever",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "note": "Separate collection containers in Almería. Caption does not claim producer funding. Commons date is a placeholder and is not printed."
+    "note": "Separate collection containers in Almería."
   },
   {
     "slug": "e-waste-recycling",
@@ -762,7 +762,7 @@
     "artist": "Syced",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "note": "Exhibit at Science Square Tsukuba. Chip markings are microscopic."
+    "note": "Exhibit of separated electronic parts at Science Square Tsukuba."
   },
   {
     "slug": "lithium-ion-battery-recycling",
@@ -772,7 +772,7 @@
     "artist": "RudolfSimon",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "note": "Open pack at Electronica, Munich, November 2012. Small label on the control unit is unreadable."
+    "note": "Open lithium-ion pack at Electronica, Munich, November 2012."
   },
   {
     "slug": "food-waste-reduction",
@@ -782,6 +782,6 @@
     "artist": "Foerster",
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "note": "Produce discarded from a hypermarket, July 2013. Packaging labels are blurred."
+    "note": "Produce discarded from a hypermarket, July 2013."
   }
 ]

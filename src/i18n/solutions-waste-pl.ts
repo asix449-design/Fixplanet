@@ -93,7 +93,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Organizacja Współpracy Gospodarczej i Rozwoju: systemy kaucyjne i ich współdziałanie z dodatkowymi obowiązkowymi politykami rozszerzonej odpowiedzialności producenta, dokument roboczy o środowisku nr 208, PDF (Organisation for Economic Co-operation and Development (OECD): Deposit-refund systems and the interplay with additional mandatory extended producer responsibility policies, OECD Environment Working Papers No. 208 (PDF))',
+          'Organizacja Współpracy Gospodarczej i Rozwoju: systemy kaucyjne i ich współdziałanie z dodatkowymi obowiązkowymi politykami rozszerzonej odpowiedzialności producenta, dokument roboczy o środowisku nr 208, dokument (Organisation for Economic Co-operation and Development (OECD): Deposit-refund systems and the interplay with additional mandatory extended producer responsibility policies, OECD Environment Working Papers No. 208 (PDF))',
         url: src('deposit-return-systems', 1),
       },
       {
@@ -139,7 +139,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Organizacja Współpracy Gospodarczej i Rozwoju: rozszerzona odpowiedzialność producenta, najważniejsze wnioski (2016, PDF) (Organisation for Economic Co-operation and Development (OECD): Extended Producer Responsibility: Policy Highlights (2016, PDF))',
+          'Organizacja Współpracy Gospodarczej i Rozwoju: rozszerzona odpowiedzialność producenta, najważniejsze wnioski (2016, dokument) (Organisation for Economic Co-operation and Development (OECD): Extended Producer Responsibility: Policy Highlights (2016, PDF))',
         url: src('extended-producer-responsibility-packaging', 3),
       },
     ],
@@ -171,7 +171,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Międzynarodowy Związek Telekomunikacyjny oraz Instytut Narodów Zjednoczonych ds. Szkoleń i Badań: Globalny monitor elektroodpadów 2024, PDF (International Telecommunication Union (ITU) and United Nations Institute for Training and Research (UNITAR): Global E-waste Monitor 2024 (PDF))',
+          'Międzynarodowy Związek Telekomunikacyjny oraz Instytut Narodów Zjednoczonych ds. Szkoleń i Badań: Globalny monitor elektroodpadów 2024, dokument (International Telecommunication Union (ITU) and United Nations Institute for Training and Research (UNITAR): Global E-waste Monitor 2024 (PDF))',
         url: src('e-waste-recycling', 1),
       },
       {
@@ -248,12 +248,12 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Program Narodów Zjednoczonych ds. Środowiska: raport Indeksu marnowania żywności 2024, PDF (United Nations Environment Programme (UNEP): Food Waste Index Report 2024 (PDF))',
+          'Program Narodów Zjednoczonych ds. Środowiska: raport Indeksu marnowania żywności 2024, dokument (United Nations Environment Programme (UNEP): Food Waste Index Report 2024 (PDF))',
         url: src('food-waste-reduction', 1),
       },
       {
         label:
-          'Program Narodów Zjednoczonych ds. Środowiska: raport Indeksu marnowania żywności 2024, kluczowe wnioski, PDF (United Nations Environment Programme (UNEP): Food Waste Index Report 2024, Key messages (PDF))',
+          'Program Narodów Zjednoczonych ds. Środowiska: raport Indeksu marnowania żywności 2024, kluczowe wnioski, dokument (United Nations Environment Programme (UNEP): Food Waste Index Report 2024, Key messages (PDF))',
         url: src('food-waste-reduction', 2),
       },
       {

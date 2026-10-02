@@ -92,7 +92,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Ekonomiskās sadarbības un attīstības organizācija: depozīta atmaksas sistēmas un to mijiedarbība ar papildu obligātajiem ražotāju paplašinātās atbildības pasākumiem, vides darba dokuments Nr. 208, PDF (Organisation for Economic Co-operation and Development (OECD): Deposit-refund systems and the interplay with additional mandatory extended producer responsibility policies, OECD Environment Working Papers No. 208 (PDF))',
+          'Ekonomiskās sadarbības un attīstības organizācija: depozīta atmaksas sistēmas un to mijiedarbība ar papildu obligātajiem ražotāju paplašinātās atbildības pasākumiem, vides darba dokuments Nr. 208, dokuments (Organisation for Economic Co-operation and Development (OECD): Deposit-refund systems and the interplay with additional mandatory extended producer responsibility policies, OECD Environment Working Papers No. 208 (PDF))',
         url: src('deposit-return-systems', 1),
       },
       {
@@ -137,7 +137,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Ekonomiskās sadarbības un attīstības organizācija: ražotāju paplašinātā atbildība, galvenie secinājumi (2016, PDF) (Organisation for Economic Co-operation and Development (OECD): Extended Producer Responsibility: Policy Highlights (2016, PDF))',
+          'Ekonomiskās sadarbības un attīstības organizācija: ražotāju paplašinātā atbildība, galvenie secinājumi (2016, dokuments) (Organisation for Economic Co-operation and Development (OECD): Extended Producer Responsibility: Policy Highlights (2016, PDF))',
         url: src('extended-producer-responsibility-packaging', 3),
       },
     ],
@@ -169,7 +169,7 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Starptautiskā telekomunikāciju savienība un Apvienoto Nāciju Organizācijas Mācību un pētījumu institūts: Globālais elektronisko atkritumu monitors 2024, PDF (International Telecommunication Union (ITU) and United Nations Institute for Training and Research (UNITAR): Global E-waste Monitor 2024 (PDF))',
+          'Starptautiskā telekomunikāciju savienība un Apvienoto Nāciju Organizācijas Mācību un pētījumu institūts: Globālais elektronisko atkritumu monitors 2024, dokuments (International Telecommunication Union (ITU) and United Nations Institute for Training and Research (UNITAR): Global E-waste Monitor 2024 (PDF))',
         url: src('e-waste-recycling', 1),
       },
       {
@@ -245,12 +245,12 @@ export const detail: Record<WasteEncyclopediaSlug, WasteDetailCopy> = {
       },
       {
         label:
-          'Apvienoto Nāciju Organizācijas Vides programma: Pārtikas atkritumu indeksa ziņojums 2024, PDF (United Nations Environment Programme (UNEP): Food Waste Index Report 2024 (PDF))',
+          'Apvienoto Nāciju Organizācijas Vides programma: Pārtikas atkritumu indeksa ziņojums 2024, dokuments (United Nations Environment Programme (UNEP): Food Waste Index Report 2024 (PDF))',
         url: src('food-waste-reduction', 1),
       },
       {
         label:
-          'Apvienoto Nāciju Organizācijas Vides programma: Pārtikas atkritumu indeksa ziņojums 2024, galvenie secinājumi, PDF (United Nations Environment Programme (UNEP): Food Waste Index Report 2024, Key messages (PDF))',
+          'Apvienoto Nāciju Organizācijas Vides programma: Pārtikas atkritumu indeksa ziņojums 2024, galvenie secinājumi, dokuments (United Nations Environment Programme (UNEP): Food Waste Index Report 2024, Key messages (PDF))',
         url: src('food-waste-reduction', 2),
       },
       {
