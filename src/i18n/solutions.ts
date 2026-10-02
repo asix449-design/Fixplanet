@@ -1,6 +1,7 @@
 import { solutionMeta, type Solution, type SolutionCopy } from '../data/solutions';
 import type { Locale } from './config';
 import { getCitiesGrid } from './solutions-cities';
+import { getWasteGrid } from './solutions-waste';
 import { getForestGrid } from './solutions-forests';
 import { pack2 } from './solutions-pack2';
 
@@ -109,19 +110,21 @@ const en: Record<string, SolutionCopy> = {
     imageAlt: 'Coffee shrubs growing under a tall shade-tree canopy in a traditional plantation',
   },
   'pet-bottle-recycling': {
-    problemTitle: 'Single-use PET bottles',
-    fixTitle: 'Bottle-to-bottle PET recycling',
+    problemTitle: 'Single-use plastic drink bottles',
+    fixTitle: 'Bottle-to-bottle recycling',
     problem:
-      'Clear PET bottles are designed for a short life. Most still become landfill, incinerator fuel, or downcycled fiber after one use.',
-    fix: 'Mechanical recycling with deposit-return and “super-clean” washing already turns bottles back into food-grade bottles in the EU and other deposit regions. Collection and sorting decide the result more than the extruder. Colored and mixed plastics still drop out; recycling is not a reason to keep flooding shops with bottles.',
-    imageAlt: 'Stacked bales of compressed PET bottles in the yard of a recycling plant',
+      'Clear plastic drink bottles are designed for a short life. Most still become landfill, incinerator fuel, or downcycled fiber after one use.',
+    fix: 'Mechanical recycling with deposit return and super-clean washing already turns bottles back into food-grade bottles in the European Union and other deposit regions. Collection and sorting decide the result more than the extruder. Colored and mixed plastics still drop out. The number of new bottles on shop shelves still sets how much material comes back.',
+    sourceLabel: 'Ellen MacArthur Foundation, plastics',
+    imageAlt: 'Stacked bales of compressed plastic drink bottles in the yard of a recycling plant',
   },
   'municipal-composting': {
     problemTitle: 'Food and garden waste in landfills',
     fixTitle: 'Municipal organics composting',
     problem:
       'When cities bury food scraps and yard waste, they throw away soil carbon and make landfill methane. Organics are often the heaviest part of household bins.',
-    fix: 'Separate collection plus windrow or in-vessel composting is routine in cities such as San Francisco, Milan, and much of South Korea and the EU. Compost goes to farms and parks. Contamination — plastic, glass — still spoils piles; composting is not a substitute for eating less waste.',
+    fix: 'Separate collection plus open turned piles or enclosed composting vessels is routine in cities such as San Francisco, Milan, and much of South Korea and the European Union. Compost goes to farms and parks. Plastic and glass in the bins still spoil piles. Households that throw away less food send a smaller load to those piles.',
+    sourceLabel: 'United States Environmental Protection Agency, composting wasted food',
     imageAlt: 'A large pile of finished dark compost at a municipal organics facility, with machinery behind it',
   },
   'landfill-gas-capture': {
@@ -129,7 +132,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Landfill gas to energy',
     problem:
       'Old dumps keep making methane for decades after they close. The gas is a strong greenhouse pollutant and a local explosion and odor hazard.',
-    fix: 'Wells and pipes pull landfill gas to a flare or an engine. Sites on the U.S. EPA LMOP list, in the UK, and elsewhere already generate electricity this way. Capture is partial, leaks remain, and the method does not stop waste from arriving. It is a cleanup of dumps we already have — distinct from farm or food digesters.',
+    fix: 'Wells and pipes pull landfill gas to a flare or an engine. Sites on the United States Environmental Protection Agency landfill-methane list, in the United Kingdom, and elsewhere already generate electricity this way. Capture is partial and leaks remain. Waste keeps arriving while the wells run. Farm and food digesters are a separate practice that treats fresh organic waste.',
+    sourceLabel: 'United States Environmental Protection Agency, landfill methane outreach',
     imageAlt: 'Gas-collection pipes and hoses rising through a gray geomembrane cap on a landfill cell',
   },
   'permeable-pavement': {
@@ -335,10 +339,11 @@ const en: Record<string, SolutionCopy> = {
   },
   'mrf-optical-sorting': {
     problemTitle: 'Mixed recyclables that nobody can sell',
-    fixTitle: 'MRF sorting with optics and AI',
+    fixTitle: 'Sorting with optics and cameras',
     problem:
       'Household recycling arrives as a mixed stream. If paper, film, and food stay in the pile, bales are dirty and mills reject them. Manual picking cannot keep up with belt speed.',
-    fix: 'Material recovery facilities use screens, magnets, eddy currents, and optical or near-infrared sorters — increasingly with camera and software aids — to separate containers and fiber. EPA’s recycling guidance is the public face of that system in the United States: collection is only as good as the sort. Optics do not make every plastic recyclable, and they do not fix a city that does not collect.',
+    fix: 'Material recovery facilities use screens, magnets, separators that fling aluminium cans off the belt, and optical sorters that read near-infrared light, increasingly with cameras and software, to separate containers and paper fiber. The United States Environmental Protection Agency recycling page is the public face of that system in the United States. How well a city collects, and which plastics a mill will buy, still set what the machines can separate.',
+    sourceLabel: 'United States Environmental Protection Agency, recycling',
     imageAlt: 'Piles of mixed plastic bottles on the apron of a material recovery facility',
   },
   'textile-to-textile-recycling': {
@@ -346,7 +351,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Textile-to-textile recycling',
     problem:
       'Most discarded clothing is reused as second-hand stock, downcycled into rags and insulation, incinerated, or landfilled. New garments still start from virgin fiber.',
-    fix: 'The EU Strategy for Sustainable and Circular Textiles aims at design, collection, and recycling so that more fiber can become new textiles rather than waste. The Commission notes that almost none of the material in clothing is recycled into new clothing today. Fibre-to-fibre plants exist as early industry, not as the default end of a wardrobe. Collection bins are not the same as a closed loop.',
+    fix: 'The European Union strategy for sustainable and circular textiles aims at design, collection, and recycling so that more fiber can become new textiles. The European Commission notes that almost none of the material in clothing is recycled into new clothing today. Plants that turn old fiber into new textile fiber exist as early industry. A street collection bin gathers clothes. A closed loop also needs a plant that can make new cloth from them.',
+    sourceLabel: 'European Commission, textiles strategy',
     imageAlt: 'An orange street container labeled for textile recovery and recycling beside grey waste bins',
   },
   'construction-demolition-recycling': {
@@ -354,7 +360,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Construction and demolition recycling',
     problem:
       'Concrete, brick, wood, metal, and glass from sites are often the heaviest waste a country moves. Mixed with paint, insulation, or asbestos, the pile is hard to reuse.',
-    fix: 'The European Commission treats construction and demolition waste as a priority stream and says it accounts for more than a third of EU waste. Crushing clean concrete and brick into aggregate, pulling metals, and sorting wood are ordinary where demolition is selective. Recovery rates vary widely between member states. Recycling rubble is not a license to demolish faster.',
+    fix: 'The European Commission treats construction and demolition waste as a priority stream and says it accounts for more than a third of European Union waste. Crushing clean concrete and brick into aggregate, pulling metals, and sorting wood are ordinary where demolition is selective. Recovery rates vary widely between member states. Faster demolition still fills the crushers with more mixed rubble.',
+    sourceLabel: 'European Commission, construction and demolition waste',
     imageAlt: 'A conveyor feeding a pile of crushed concrete aggregate beside a loader',
   },
   'black-soldier-fly': {
@@ -362,7 +369,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Black soldier fly processing',
     problem:
       'City markets throw fruit and vegetable waste into heaps that smell, attract vermin, and go to dumps. Farms nearby still buy imported feed and fertilizer.',
-    fix: 'Larvae of the black soldier fly (Hermetia illucens) eat wet organic waste; dried larvae can be used as animal or fish feed and the leftover frass as a soil amendment. FAO describes a project in Abidjan, Côte d’Ivoire, that breeds the flies and trains farmers to use the products. It is a working bioeconomy method, still local and labor-intensive. It does not replace collection, and it is not a use for plastic or metals.',
+    fix: 'Larvae of the black soldier fly (Hermetia illucens) eat wet organic waste. Dried larvae can be used as animal or fish feed, and the leftover residue can go on soil. The Food and Agriculture Organization describes a project in Abidjan, Côte d’Ivoire, that breeds the flies and trains farmers to use the products. It is a working method, still local and labor-intensive. Someone still has to collect the scraps and bring them to the trays. Plastic and metals need a different line.',
+    sourceLabel: 'Food and Agriculture Organization, black soldier fly waste processing',
     imageAlt: 'Black soldier fly larvae in a white tray among coconut fibre and decaying leaves',
   },
   'waste-to-energy': {
@@ -370,15 +378,17 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Waste-to-energy',
     problem:
       'After recycling and organics are pulled out, cities still have a residual stream. Landfill takes the volume and keeps making methane. Open burning is worse.',
-    fix: 'Municipal waste-to-energy plants burn residual waste and raise steam for electricity or heat. EPA’s basic note on energy recovery from waste describes mass-burn as the common U.S. design, with ash sent to landfill and air controls required under later rules. Plants need a steady residual stream and do not make recycling optional. Emissions and ash remain; this is not a clean substitute for not making the waste.',
+    fix: 'Municipal plants that recover energy from waste burn the residual stream and raise steam for electricity or heat. The United States Environmental Protection Agency note on energy recovery from waste describes direct burning of mixed residual waste as the common United States design, with ash sent to landfill and air controls required under later rules. Plants need a steady residual stream. Recycling and organics sorting still happen before that stream is burned. Emissions and ash remain. Making less waste shrinks what the furnace receives.',
+    sourceLabel: 'United States Environmental Protection Agency, energy recovery from waste',
     imageAlt: 'The Dublin Waste-to-Energy plant: a white hall and twin stacks with a hill behind',
   },
   'ocean-cleanup': {
     problemTitle: 'Legacy plastic already in the ocean',
     fixTitle: 'The Ocean Cleanup',
     problem:
-      'Plastic that has already reached subtropical gyres is no longer a river problem. It fragments into smaller pieces that are harder to collect and easier for wildlife to ingest.',
-    fix: 'The Ocean Cleanup, a Dutch non-profit, tows floating systems in the Great Pacific Garbage Patch and also runs river Interceptors. The organization publishes its own removal totals and a 2040 target; those figures are theirs, not an independent census. Cleanup at sea is slow, weather-limited, and debated for bycatch and scale. It does not replace cutting leakage on land.',
+      'Plastic that has already reached subtropical gyres is a problem of the open ocean. It fragments into smaller pieces that are harder to collect and easier for wildlife to ingest.',
+    fix: 'The Ocean Cleanup, a Dutch non-profit, tows floating systems in the Great Pacific Garbage Patch and also runs river interceptors. The organization publishes its own removal totals and a 2040 target. Those figures come from the organization. Cleanup at sea is slow, weather-limited, and debated because the gear can catch marine life along with plastic, and because of its scale. Cutting leakage on land keeps new plastic from reaching the gyres.',
+    sourceLabel: 'The Ocean Cleanup',
     imageAlt: 'Diagram of The Ocean Cleanup System 001 floating barrier, with labeled sensor and navigation pods',
   },
   interceptor: {
@@ -386,7 +396,8 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Interceptor',
     problem:
       'Most ocean plastic that can still be caught as recognizable litter arrives through rivers after rain. Once it is offshore, collection is harder and more expensive.',
-    fix: 'The Ocean Cleanup’s Interceptor is a family of river systems — Original, Barrier, Tender, Barricade, and Guard — that use booms and, in the Original, solar-powered extraction to lift debris before it reaches the sea. Deployments are site-specific; one design does not fit every river. An Interceptor is a catcher at the mouth, not a substitute for collection upstream or for making less plastic.',
+    fix: 'The Ocean Cleanup interceptor is a family of river systems (Original, Barrier, Tender, Barricade, and Guard) that use booms and, in the Original, solar-powered extraction to lift debris before it reaches the sea. Deployments are site-specific, and each river needs its own fit. The machine catches litter at the mouth. Collection further upstream, and making less plastic, shrink what arrives there.',
+    sourceLabel: 'The Ocean Cleanup, interceptor',
     imageAlt: 'The Ocean Cleanup Interceptor Original in a channel, with a floating boom leading to the catamaran hull',
   },
 };
@@ -417,9 +428,10 @@ const ru: Record<string, SolutionCopy> = {
   'anaerobic-digesters': {
     problemTitle: 'Пищевые отходы и метан',
     fixTitle: 'Анаэробные дигестеры',
-    problem: 'Пищевые отходы на свалках выделяют метан — сильный парниковый газ.',
+    problem: 'Пищевые отходы на свалках выделяют метан, сильный парниковый газ.',
     fix: 'Анаэробные дигестеры превращают отходы в биогаз и удобрение для почвы.',
     imageAlt: 'Вид сверху: три зелёных купола анаэробных реакторов среди полей',
+    sourceLabel: 'Агентство по охране окружающей среды США, программа фермерских реакторов',
   },
   'cool-roofs': {
     problemTitle: 'Городская жара',
@@ -496,27 +508,30 @@ const ru: Record<string, SolutionCopy> = {
     imageAlt: 'Кофейные кусты под высоким теневым пологом на традиционной плантации',
   },
   'pet-bottle-recycling': {
-    problemTitle: 'Одноразовые бутылки из ПЭТ',
-    fixTitle: 'Переработка ПЭТ «бутылка в бутылку»',
+    problemTitle: 'Одноразовые пластиковые бутылки',
+    fixTitle: 'Переработка бутылок в бутылки',
     problem:
-      'Прозрачные ПЭТ-бутылки задуманы на короткую жизнь. Большинство всё ещё уходит на свалку, в печь или в низкосортное волокно после одного использования.',
-    fix: 'Механическая переработка с залоговой тарой и «суперчистой» мойкой уже делает из бутылок снова пищевые бутылки в ЕС и других системах залога. Сбор и сортировка решают больше, чем экструдер. Цветной и смешанный пластик всё равно выпадает; переработка — не повод заливать магазины бутылками.',
-    imageAlt: 'Штабеля спрессованных кип ПЭТ-бутылок во дворе завода переработки',
+      'Прозрачные пластиковые бутылки задуманы на короткую жизнь. Большинство всё ещё уходит на свалку, в печь или в низкосортное волокно после одного использования.',
+    fix: 'Механическая переработка с залоговой тарой и суперчистой мойкой уже делает из бутылок снова пищевые бутылки в Европейском союзе и других системах залога. Сбор и сортировка решают больше, чем экструдер. Цветной и смешанный пластик всё равно выпадает. Число новых бутылок на полках магазинов по-прежнему задаёт, сколько материала вернётся.',
+    imageAlt: 'Штабеля спрессованных кип пластиковых бутылок во дворе завода переработки',
+    sourceLabel: 'Фонд Эллен Макартур, пластик',
   },
   'municipal-composting': {
     problemTitle: 'Пищевые и садовые отходы на свалках',
     fixTitle: 'Городское компостирование органики',
     problem:
       'Когда город закапывает очистки и скошенную траву, он выбрасывает углерод почвы и делает свалочный метан. Органика часто самая тяжёлая часть бытового бака.',
-    fix: 'Раздельный сбор плюс компостирование в валках или закрытых камерах — обычная практика в Сан-Франциско, Милане, большей части Южной Кореи и ЕС. Компост идёт на поля и в парки. Загрязнение — пластик, стекло — всё ещё портит кучи; компост не заменяет меньшее количество пищевых отходов.',
+    fix: 'Раздельный сбор плюс компостирование в открытых валках, которые переворачивают, или в закрытых камерах обычен в Сан-Франциско, Милане, большей части Южной Кореи и Европейского союза. Компост идёт на поля и в парки. Пластик и стекло в баках всё ещё портят кучи. Домохозяйства, которые выбрасывают меньше еды, отправляют на эти кучи меньший груз.',
+    sourceLabel: 'Агентство по охране окружающей среды США, компостирование пищевых отходов',
     imageAlt: 'Большая куча готового тёмного компоста на городском предприятии, техника на заднем плане',
   },
   'landfill-gas-capture': {
     problemTitle: 'Свалочный метан',
     fixTitle: 'Свалочный газ в энергию',
     problem:
-      'Старые свалки десятилетиями после закрытия делают метан. Газ — сильный парниковый загрязнитель и местная взрыво- и запаховая опасность.',
-    fix: 'Скважины и трубы тянут свалочный газ к факелу или двигателю. Площадки списка EPA LMOP в США, объекты в Великобритании и другие уже вырабатывают так электричество. Улов частичный, утечки остаются, и метод не останавливает прибытие отходов. Это зачистка свалок, которые уже есть — не то же самое, что фермеры или пищевые дигестеры.',
+      'Старые свалки десятилетиями после закрытия делают метан. Газ является сильным парниковым загрязнителем и местной взрыво- и запаховой опасностью.',
+    fix: 'Скважины и трубы тянут свалочный газ к факелу или двигателю. Площадки из списка Агентства по охране окружающей среды США по свалочному метану, объекты в Великобритании и другие уже вырабатывают так электричество. Улов частичный, утечки остаются. Отходы продолжают прибывать, пока скважины работают. Фермерские и пищевые реакторы составляют отдельную практику: они обрабатывают свежую органику.',
+    sourceLabel: 'Агентство по охране окружающей среды США, свалочный метан',
     imageAlt: 'Трубы сбора газа, торчащие сквозь серую геомембрану на карте свалки',
   },
   'permeable-pavement': {
@@ -721,11 +736,12 @@ const ru: Record<string, SolutionCopy> = {
     imageAlt: 'Высокие сосны и лиственные деревья на травянистом склоне общинного леса Бадикхел, Лалитпур, Непал'
   },
   'mrf-optical-sorting': {
-    problemTitle: 'Смешанные вторсырьё, которое некому купить',
-    fixTitle: 'Сортировка на МПЗ оптикой и ИИ',
+    problemTitle: 'Смешанное вторсырьё, которое трудно продать',
+    fixTitle: 'Сортировка оптикой и камерами',
     problem:
-      'Бытовая переработка приходит смешанным потоком. Если бумага, плёнка и еда остаются в куче, кипы грязные и заводы их отвергают. Ручной отбор не успевает за лентой.',
-    fix: 'Мусороперерабатывающие заводы используют грохоты, магниты, вихревые токи и оптические или ближние инфракрасные сортировщики — всё чаще с камерами и программами — чтобы отделить тару и макулатуру. Руководство EPA по переработке — публичное лицо этой системы в США: сбор лишь настолько хорош, насколько хороша сортировка. Оптика не делает каждый пластик оборотным и не чинит город, который не собирает.',
+      'Бытовая переработка приходит смешанным потоком. Если бумага, плёнка и еда остаются в куче, кипы грязные и заводы их отвергают. Ручной отбор отстаёт от скорости ленты.',
+    fix: 'Заводы сортировки используют грохоты, магниты, отделители, которые сбрасывают алюминиевые банки с ленты, и оптические сортировщики, которые читают ближний инфракрасный свет, всё чаще с камерами и программами, чтобы отделить тару и бумажное волокно. Страница переработки Агентства по охране окружающей среды США служит публичным лицом этой системы в Соединённых Штатах. То, насколько хорошо город собирает отходы и какой пластик купит завод, по-прежнему задаёт, что машины могут разделить.',
+    sourceLabel: 'Агентство по охране окружающей среды США, переработка',
     imageAlt: 'Кучи смешанных пластиковых бутылок на площадке мусоросортировочного завода'
   },
   'textile-to-textile-recycling': {
@@ -733,7 +749,8 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Переработка текстиля в текстиль',
     problem:
       'Большая часть списанной одежды идёт секонд-хендом, в ветошь и утеплитель, в печь или на свалку. Новые вещи по-прежнему начинают с первичного волокна.',
-    fix: 'Стратегия ЕС по устойчивому и циркулярному текстилю нацелена на дизайн, сбор и переработку, чтобы больше волокна снова становилось текстилем, а не отходом. Комиссия отмечает, что почти ничего из материала одежды сегодня не перерабатывается в новую одежду. Заводы «волокно в волокно» — ранняя промышленность, а не обычный конец гардероба. Контейнер для одежды — не замкнутый цикл.',
+    fix: 'Стратегия Европейского союза по устойчивому и циркулярному текстилю нацелена на дизайн, сбор и переработку, чтобы больше волокна снова становилось текстилем. Европейская комиссия отмечает, что лишь малая доля материала одежды сегодня перерабатывается в новую одежду. Заводы, которые делают из старого волокна новое текстильное волокно, существуют как ранняя промышленность. Уличный контейнер собирает одежду. Замкнутый цикл требует ещё и завода, который делает из неё новую ткань.',
+    sourceLabel: 'Европейская комиссия, стратегия по текстилю',
     imageAlt: 'Оранжевый уличный контейнер для сбора и переработки текстиля рядом с серыми баками'
   },
   'construction-demolition-recycling': {
@@ -741,7 +758,8 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Переработка строительных и сносных отходов',
     problem:
       'Бетон, кирпич, дерево, металл и стекло со строек часто самый тяжёлый поток отходов страны. Смешанные с краской, утеплителем или асбестом, они плохо идут во вторичное использование.',
-    fix: 'Европейская комиссия считает строительные и сносные отходы приоритетным потоком и пишет, что на них приходится больше трети отходов ЕС. Дробление чистого бетона и кирпича в заполнитель, отбор металла и сортировка дерева обычны там, где снос селективный. Доля восстановления сильно разнится между странами. Переработка щебня — не разрешение сносить быстрее.',
+    fix: 'Европейская комиссия считает строительные и сносные отходы приоритетным потоком и пишет, что на них приходится больше трети отходов Европейского союза. Дробление чистого бетона и кирпича в заполнитель, отбор металла и сортировка дерева обычны там, где снос селективный. Доля восстановления сильно разнится между странами. Более быстрый снос по-прежнему наполняет дробилки смешанным щебнем.',
+    sourceLabel: 'Европейская комиссия, строительные и сносные отходы',
     imageAlt: 'Конвейер сыплет дроблёный бетонный заполнитель рядом с погрузчиком'
   },
   'black-soldier-fly': {
@@ -749,7 +767,8 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Переработка органики чёрной львинкой',
     problem:
       'Городские рынки сваливают фруктовые и овощные очистки в кучи, которые пахнут, зовут вредителей и едут на свалку. Соседние хозяйства всё ещё покупают импортный корм и удобрения.',
-    fix: 'Личинки чёрной львинки (Hermetia illucens) едят влажную органику; сушёных личинок можно давать скоту или рыбе, а оставшийся фрасс — в почву. ФАО описывает проект в Абиджане, Кот-д’Ивуар, где мух разводят и учат фермеров пользоваться продуктами. Это работающий метод биоэкономики, всё ещё местный и трудоёмкий. Он не заменяет сбор и не годится для пластика или металла.',
+    fix: 'Личинки чёрной львинки (Hermetia illucens) едят влажную органику. Сушёных личинок можно давать скоту или рыбе, а оставшийся после них остаток можно вносить в почву. Продовольственная и сельскохозяйственная организация описывает проект в Абиджане, Кот-д’Ивуар, где мух разводят и учат фермеров пользоваться продуктами. Это работающий метод, всё ещё местный и трудоёмкий. Кто-то по-прежнему собирает очистки и привозит их к лоткам. Пластик и металл идут на другую линию.',
+    sourceLabel: 'Продовольственная и сельскохозяйственная организация, переработка отходов чёрной львинкой',
     imageAlt: 'Личинки чёрной львинки в белом лотке среди кокосового волокна и прелых листьев'
   },
   'waste-to-energy': {
@@ -757,15 +776,17 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Энергия из отходов',
     problem:
       'После отбора вторсырья и органики у города остаётся хвост. Свалка забирает объём и продолжает делать метан. Открытое сжигание хуже.',
-    fix: 'Муниципальные заводы «отходы в энергию» сжигают остаток и поднимают пар для электричества или тепла. Базовая справка EPA об извлечении энергии из отходов описывает mass-burn как обычную схему США: зола на полигон, газоочистка по поздним нормам. Заводу нужен устойчивый поток хвоста, и он не делает переработку необязательной. Выбросы и зола остаются; это не чистое замещение тому, чтобы отходов было меньше.',
+    fix: 'Муниципальные заводы, которые получают энергию из отходов, сжигают остаточный поток и поднимают пар для электричества или тепла. Справка Агентства по охране окружающей среды США об извлечении энергии из отходов описывает прямое сжигание смешанного остатка как обычную схему Соединённых Штатов: зола идёт на полигон, а очистка газов требуется по поздним нормам. Заводу нужен устойчивый поток остатка. Переработка и отбор органики происходят до того, как этот поток сжигают. Выбросы и зола остаются. Меньшее количество отходов уменьшает то, что получает печь.',
+    sourceLabel: 'Агентство по охране окружающей среды США, энергия из отходов',
     imageAlt: 'Завод Dublin Waste-to-Energy: белый корпус и две трубы, холм на заднем плане'
   },
   'ocean-cleanup': {
     problemTitle: 'Старый пластик, уже оказавшийся в океане',
     fixTitle: 'The Ocean Cleanup',
     problem:
-      'Пластик, который уже дошёл до субтропических круговоротов, больше не речная задача. Он дробится на более мелкие куски, которые труднее собрать и легче проглотить живым существам.',
-    fix: 'The Ocean Cleanup, нидерландская некоммерческая организация, буксирует плавучие системы в Большом тихоокеанском мусорном пятне и ставит речные Interceptor. Организация публикует собственные итоги изъятия и цель к 2040 году; эти цифры её, а не независимая перепись. Очистка в море медленная, зависит от погоды и спорна из-за прилова и масштаба. Она не заменяет сокращение утечки на суше.',
+      'Пластик, который уже дошёл до субтропических круговоротов, стал задачей открытого океана. Он дробится на более мелкие куски, которые труднее собрать и легче проглотить живым существам.',
+    fix: 'The Ocean Cleanup, нидерландская некоммерческая организация, буксирует плавучие системы в Большом тихоокеанском мусорном пятне и ставит речные перехватчики. Организация публикует собственные итоги изъятия и цель к 2040 году. Эти цифры исходят от самой организации. Очистка в море медленная, зависит от погоды и спорна, потому что снасти могут захватывать морских животных вместе с пластиком, и из-за масштаба. Сокращение утечки на суше удерживает новый пластик от круговоротов.',
+    sourceLabel: 'The Ocean Cleanup',
     imageAlt: 'Схема плавучего барьера The Ocean Cleanup System 001 с подписанными датчиками и навигационными модулями'
   },
   interceptor: {
@@ -773,7 +794,8 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Interceptor',
     problem:
       'Большая часть океанского пластика, который ещё можно поймать как узнаваемый мусор, приходит реками после дождя. Когда он уже в море, сбор труднее и дороже.',
-    fix: 'Interceptor компании The Ocean Cleanup — семейство речных систем (Original, Barrier, Tender, Barricade и Guard), которые бонами и, в Original, солнечной выгрузкой поднимают мусор до моря. Постановки привязаны к месту; одна конструкция не подходит каждой реке. Interceptor — ловушка у устья, а не замена сбору выше по течению и не повод делать меньше пластика.',
+    fix: 'Перехватчик компании The Ocean Cleanup представляет собой семейство речных систем (Original, Barrier, Tender, Barricade и Guard), которые бонами и, в варианте Original, солнечной выгрузкой поднимают мусор до моря. Постановки привязаны к месту, и каждой реке нужна своя посадка. Машина ловит мусор у устья. Сбор выше по течению и меньшее производство пластика уменьшают то, что туда прибывает.',
+    sourceLabel: 'The Ocean Cleanup, перехватчик',
     imageAlt: 'Interceptor Original компании The Ocean Cleanup в канале, плавучий бон ведёт к корпусу катамарана'
   },
 };
@@ -807,6 +829,7 @@ const pl: Record<string, SolutionCopy> = {
     problem: 'Żywność na wysypiskach uwalnia metan, silny gaz cieplarniany.',
     fix: 'Fermentatory beztlenowe zamieniają odpady w biogaz i nawóz do gleby.',
     imageAlt: 'Widok z lotu ptaka: trzy zielone kopuły fermentatorów beztlenowych wśród pól',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, program reaktorów rolniczych',
   },
   'cool-roofs': {
     problemTitle: 'Miejski upał',
@@ -883,19 +906,21 @@ const pl: Record<string, SolutionCopy> = {
     imageAlt: 'Krzewy kawowca pod wysoką koroną drzew cieniujących na tradycyjnej plantacji',
   },
   'pet-bottle-recycling': {
-    problemTitle: 'Jednorazowe butelki PET',
-    fixTitle: 'Recykling PET butelka w butelkę',
+    problemTitle: 'Jednorazowe butelki po napojach',
+    fixTitle: 'Recykling butelka w butelkę',
     problem:
-      'Przezroczyste butelki PET są zaprojektowane na krótkie życie. Większość i tak trafia na składowisko, do spalarni albo w włókno gorszej jakości po jednym użyciu.',
-    fix: 'Recykling mechaniczny z kaucją i „super-czystym” myciem już zamienia butelki z powrotem w butelki spożywcze w UE i innych systemach kaucyjnych. Zbiórka i sortowanie decydują bardziej niż wytłaczarka. Kolorowy i mieszany plastik i tak odpada; recykling nie jest powodem, by zalewać sklepy butelkami.',
-    imageAlt: 'Stosy sprasowanych bel butelek PET na placu zakładu recyklingu',
+      'Przezroczyste plastikowe butelki po napojach są zaprojektowane na krótkie życie. Większość i tak trafia na składowisko, do spalarni albo w włókno gorszej jakości po jednym użyciu.',
+    fix: 'Recykling mechaniczny z kaucją i superczystym myciem już zamienia butelki z powrotem w butelki spożywcze w Unii Europejskiej i innych systemach kaucyjnych. Zbiórka i sortowanie decydują bardziej niż wytłaczarka. Kolorowy i mieszany plastik i tak odpada. Liczba nowych butelek na półkach sklepów wciąż ustala, ile materiału wraca.',
+    imageAlt: 'Stosy sprasowanych bel plastikowych butelek na placu zakładu recyklingu',
+    sourceLabel: 'Fundacja Ellen MacArthur, tworzywa sztuczne',
   },
   'municipal-composting': {
     problemTitle: 'Odpady kuchenne i ogrodowe na składowiskach',
     fixTitle: 'Kompostowanie organiki komunalnej',
     problem:
       'Gdy miasto zakopuje resztki jedzenia i skoszoną trawę, wyrzuca węgiel gleby i robi metan składowiskowy. Organika bywa najcięższą częścią pojemnika.',
-    fix: 'Selektywna zbiórka plus kompostowanie w pryzmach lub komorach to codzienność w San Francisco, Mediolanie, dużej części Korei Południowej i UE. Kompost idzie na pola i do parków. Zanieczyszczenie — plastik, szkło — wciąż psuje pryzmy; kompost nie zastępuje mniejszej ilości marnowanej żywności.',
+    fix: 'Selektywna zbiórka plus kompostowanie w otwartych pryzmach, które się przerzuca, albo w zamkniętych komorach to codzienność w San Francisco, Mediolanie, dużej części Korei Południowej i Unii Europejskiej. Kompost idzie na pola i do parków. Plastik i szkło w pojemnikach wciąż psują pryzmy. Gospodarstwa, które wyrzucają mniej jedzenia, wysyłają na te pryzmy mniejszy ładunek.',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, kompostowanie zmarnowanej żywności',
     imageAlt: 'Wielka pryzma gotowego ciemnego kompostu w zakładzie komunalnym, maszyny w tle',
   },
   'landfill-gas-capture': {
@@ -903,7 +928,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Gaz składowiskowy na energię',
     problem:
       'Stare wysypiska produkują metan przez dekady po zamknięciu. Gaz jest silnym zanieczyszczeniem cieplarnianym i lokalnym zagrożeniem wybuchu i odorów.',
-    fix: 'Studnie i rury ciągną gaz składowiskowy do pochodni albo silnika. Obiekty z listy EPA LMOP w USA, w Wielkiej Brytanii i gdzie indziej już tak wytwarzają prąd. Ujęcie jest częściowe, nieszczelności zostają, a metoda nie zatrzymuje przywozu odpadów. To sprzątanie składowisk, które już mamy — coś innego niż fermentatory rolnicze albo spożywcze.',
+    fix: 'Studnie i rury ciągną gaz składowiskowy do pochodni albo silnika. Obiekty z listy metanu składowiskowego Agencji Ochrony Środowiska Stanów Zjednoczonych, w Wielkiej Brytanii i gdzie indziej już tak wytwarzają prąd. Ujęcie jest częściowe, nieszczelności zostają. Odpady wciąż przyjeżdżają, gdy studnie pracują. Fermentatory rolnicze i spożywcze to osobna praktyka: przetwarzają świeżą organikę.',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, metan ze składowisk',
     imageAlt: 'Rury ujęcia gazu wystające przez szarą geomembranę na kwaterze składowiska',
   },
   'permeable-pavement': {
@@ -1108,11 +1134,12 @@ const pl: Record<string, SolutionCopy> = {
     imageAlt: 'Wysokie sosny i drzewa liściaste na trawiastym stoku lasu wspólnotowego Badikhel, Lalitpur, Nepal'
   },
   'mrf-optical-sorting': {
-    problemTitle: 'Mieszane surowce wtórne, których nikt nie kupi',
-    fixTitle: 'Sortowanie w MRF optyką i SI',
+    problemTitle: 'Mieszane surowce wtórne, które trudno sprzedać',
+    fixTitle: 'Sortowanie optyką i kamerami',
     problem:
-      'Recykling domowy przychodzi mieszanym strumieniem. Jeśli papier, folia i jedzenie zostają w pryzmie, bele są brudne i młyny je odrzucają. Ręczny wybór nie nadąża za taśmą.',
-    fix: 'Zakłady odzysku materiałów używają sit, magnesów, prądów wirowych i sorterów optycznych albo bliskiej podczerwieni — coraz częściej z kamerami i oprogramowaniem — żeby oddzielić opakowania i włókno. Poradnik EPA o recyklingu to publiczna twarz tego systemu w USA: zbiórka jest tak dobra, jak sortowanie. Optyka nie czyni każdego plastiku recyklowalnym i nie naprawia miasta, które nie zbiera.',
+      'Recykling domowy przychodzi mieszanym strumieniem. Jeśli papier, folia i jedzenie zostają w pryzmie, bele są brudne i młyny je odrzucają. Ręczny wybór zostaje w tyle za taśmą.',
+    fix: 'Zakłady odzysku materiałów używają sit, magnesów, separatorów, które zrzucają puszki aluminiowe z taśmy, i sorterów optycznych, które czytają światło bliskiej podczerwieni, coraz częściej z kamerami i oprogramowaniem, żeby oddzielić opakowania i włókno papierowe. Strona recyklingu Agencji Ochrony Środowiska Stanów Zjednoczonych jest publiczną twarzą tego systemu w Stanach Zjednoczonych. To, jak dobrze miasto zbiera odpady i jaki plastik kupi młyn, wciąż ustala, co maszyny mogą rozdzielić.',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, recykling',
     imageAlt: 'Pryzmy mieszanych butelek plastikowych na placu zakładu odzysku materiałów'
   },
   'textile-to-textile-recycling': {
@@ -1120,7 +1147,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Recykling tekstyliów w tekstylia',
     problem:
       'Większość odrzuconej odzieży idzie jako second-hand, w szmaty i izolację, do spalarni albo na składowisko. Nowe ubrania wciąż zaczynają od włókna pierwotnego.',
-    fix: 'Strategia UE na rzecz zrównoważonych i cyrkularnych tekstyliów celuje w projekt, zbiórkę i recykling, żeby więcej włókna znów stawało się tekstyliami, a nie odpadem. Komisja zauważa, że prawie nic z materiału odzieży nie jest dziś recyklowane w nową odzież. Zakłady „włókno we włókno” to wczesny przemysł, nie zwykły koniec szafy. Pojemnik na ubrania to nie zamknięta pętla.',
+    fix: 'Strategia Unii Europejskiej na rzecz zrównoważonych i cyrkularnych tekstyliów celuje w projekt, zbiórkę i recykling, żeby więcej włókna znów stawało się tekstyliami. Komisja Europejska zauważa, że tylko niewielka część materiału odzieży jest dziś przetwarzana w nową odzież. Zakłady, które robią z starego włókna nowe włókno tekstylne, istnieją jako wczesny przemysł. Uliczny pojemnik zbiera ubrania. Zamknięta pętla potrzebuje też zakładu, który zrobi z nich nową tkaninę.',
+    sourceLabel: 'Komisja Europejska, strategia dla tekstyliów',
     imageAlt: 'Pomarańczowy uliczny pojemnik na odzysk i recykling tekstyliów obok szarych koszy'
   },
   'construction-demolition-recycling': {
@@ -1128,7 +1156,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Recykling odpadów budowlanych i rozbiórkowych',
     problem:
       'Beton, cegła, drewno, metal i szkło z placów bywają najcięższym strumieniem odpadów kraju. Zmieszane z farbą, izolacją albo azbestem, źle idą do ponownego użytku.',
-    fix: 'Komisja Europejska traktuje odpady budowlane i rozbiórkowe jako strumień priorytetowy i pisze, że stanowią ponad jedną trzecią odpadów UE. Kruszenie czystego betonu i cegły na kruszywo, wyciąganie metali i sortowanie drewna są zwyczajne tam, gdzie rozbiórka jest selektywna. Wskaźniki odzysku bardzo się różnią między państwami. Recykling gruzu nie jest pozwoleniem na szybsze wyburzanie.',
+    fix: 'Komisja Europejska traktuje odpady budowlane i rozbiórkowe jako strumień priorytetowy i pisze, że stanowią ponad jedną trzecią odpadów Unii Europejskiej. Kruszenie czystego betonu i cegły na kruszywo, wyciąganie metali i sortowanie drewna są zwyczajne tam, gdzie rozbiórka jest selektywna. Wskaźniki odzysku bardzo się różnią między państwami. Szybsze wyburzanie wciąż napełnia kruszarki mieszanym gruzem.',
+    sourceLabel: 'Komisja Europejska, odpady budowlane i rozbiórkowe',
     imageAlt: 'Przenośnik sypie pokruszony beton na hałdę obok ładowarki'
   },
   'black-soldier-fly': {
@@ -1136,7 +1165,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Przetwarzanie organiki przez muchę żołnierza',
     problem:
       'Miejskie targi zsypują resztki owoców i warzyw w pryzmy, które śmierdzą, wabią szkodniki i jadą na wysypisko. Okoliczne gospodarstwa wciąż kupują importowaną paszę i nawóz.',
-    fix: 'Larwy czarnej muchy żołnierza (Hermetia illucens) jedzą mokrą organike; suszone larwy mogą iść na paszę dla zwierząt albo ryb, a pozostały frass na glebę. FAO opisuje projekt w Abidżanie na Wybrzeżu Kości Słoniowej, który hoduje muchy i szkoli rolników w użyciu produktów. To działająca metoda biogospodarki, wciąż lokalna i pracochłonna. Nie zastępuje zbiórki i nie nadaje się na plastik ani metal.',
+    fix: 'Larwy czarnej muchy żołnierza (Hermetia illucens) jedzą mokrą organikę. Suszone larwy mogą iść na paszę dla zwierząt albo ryb, a pozostałość po nich na glebę. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa opisuje projekt w Abidżanie na Wybrzeżu Kości Słoniowej, który hoduje muchy i szkoli rolników w użyciu produktów. To działająca metoda, wciąż lokalna i pracochłonna. Ktoś wciąż zbiera resztki i przywozi je do kuwet. Plastik i metal idą inną linią.',
+    sourceLabel: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, przetwarzanie odpadów przez muchę żołnierza',
     imageAlt: 'Larwy czarnej muchy żołnierza w białej kuwecie wśród włókna kokosowego i gnijących liści'
   },
   'waste-to-energy': {
@@ -1144,15 +1174,17 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Energia z odpadów',
     problem:
       'Po wyciągnięciu recyklingu i organiki miasta wciąż mają strumień resztkowy. Składowisko zabiera objętość i dalej robi metan. Otwarte spalanie jest gorsze.',
-    fix: 'Komunalne zakłady waste-to-energy palą odpad resztkowy i podnoszą parę na prąd albo ciepło. Podstawowa nota EPA o odzysku energii z odpadów opisuje mass-burn jako zwykły układ w USA: popiół na składowisko, oczyszczanie spalin według późniejszych reguł. Zakład potrzebuje stałego strumienia resztek i nie czyni recyklingu opcjonalnym. Emisje i popiół zostają; to nie czysta zamiana za to, żeby odpadów było mniej.',
+    fix: 'Komunalne zakłady, które odzyskują energię z odpadów, palą strumień resztkowy i podnoszą parę na prąd albo ciepło. Nota Agencji Ochrony Środowiska Stanów Zjednoczonych o odzysku energii z odpadów opisuje bezpośrednie spalanie zmieszanego odpadu resztkowego jako zwykły układ w Stanach Zjednoczonych: popiół na składowisko, oczyszczanie spalin według późniejszych reguł. Zakład potrzebuje stałego strumienia resztek. Recykling i wyjmowanie organiki dzieją się, zanim ten strumień trafi do pieca. Emisje i popiół zostają. Mniejsza ilość odpadów zmniejsza to, co przyjmuje piec.',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, odzysk energii z odpadów',
     imageAlt: 'Zakład Dublin Waste-to-Energy: biała hala i dwa kominy, wzgórze w tle'
   },
   'ocean-cleanup': {
     problemTitle: 'Stary plastik już w oceanie',
     fixTitle: 'The Ocean Cleanup',
     problem:
-      'Plastik, który już dotarł do subtropikalnych wirów, nie jest już problemem rzecznym. Kruszy się na mniejsze kawałki, które trudniej zebrać i łatwiej połknąć zwierzętom.',
-    fix: 'The Ocean Cleanup, holenderska organizacja non-profit, holuje pływające systemy w Wielkiej Pacyficznej Plamie Śmieci i stawia rzeczne Interceptory. Organizacja publikuje własne sumy wyjęcia i cel na 2040; to jej liczby, nie niezależny spis. Sprzątanie na morzu jest wolne, zależne od pogody i sporne z powodu przyłowu i skali. Nie zastępuje obcinania wycieku na lądzie.',
+      'Plastik, który już dotarł do subtropikalnych wirów, jest problemem otwartego oceanu. Kruszy się na mniejsze kawałki, które trudniej zebrać i łatwiej połknąć zwierzętom.',
+    fix: 'The Ocean Cleanup, holenderska organizacja non-profit, holuje pływające systemy w Wielkiej Pacyficznej Plamie Śmieci i stawia rzeczne łapacze. Organizacja publikuje własne sumy wyjęcia i cel na 2040 rok. Te liczby pochodzą od samej organizacji. Sprzątanie na morzu jest wolne, zależne od pogody i sporne, bo sprzęt może łapać zwierzęta morskie razem z plastikiem, i z powodu skali. Obcinanie wycieku na lądzie zatrzymuje nowy plastik przed wirami.',
+    sourceLabel: 'The Ocean Cleanup',
     imageAlt: 'Schemat pływającej zapory The Ocean Cleanup System 001 z podpisanymi czujnikami i gondolami nawigacyjnymi'
   },
   interceptor: {
@@ -1160,7 +1192,8 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Interceptor',
     problem:
       'Większość oceanicznego plastiku, który da się jeszcze złapać jako rozpoznawalne śmieci, przychodzi rzekami po deszczu. Gdy jest już na morzu, zbiórka jest trudniejsza i droższa.',
-    fix: 'Interceptor The Ocean Cleanup to rodzina systemów rzecznych — Original, Barrier, Tender, Barricade i Guard — które zaporami i, w Original, słonecznym wyciąganiem podnoszą śmieci zanim dotrą do morza. Wdrożenia są miejscowe; jeden projekt nie pasuje do każdej rzeki. Interceptor to łapka u ujścia, nie zamiana zbiórki w górze rzeki ani mniejszej ilości plastiku.',
+    fix: 'Łapacz The Ocean Cleanup to rodzina systemów rzecznych (Original, Barrier, Tender, Barricade i Guard), które zaporami i, w wariancie Original, słonecznym wyciąganiem podnoszą śmieci, zanim dotrą do morza. Wdrożenia są miejscowe, a każda rzeka potrzebuje własnego dopasowania. Maszyna łapie śmieci u ujścia. Zbiórka wyżej na rzece i mniejsza produkcja plastiku zmniejszają to, co tam dociera.',
+    sourceLabel: 'The Ocean Cleanup, łapacz rzeczny',
     imageAlt: 'Interceptor Original The Ocean Cleanup w kanale, pływająca zapora prowadzi do kadłuba katamaranu'
   },
 };
@@ -1191,9 +1224,10 @@ const lv: Record<string, SolutionCopy> = {
   'anaerobic-digesters': {
     problemTitle: 'Pārtikas atkritumi un metāns',
     fixTitle: 'Anaerobās digestācijas iekārtas',
-    problem: 'Poligonā noglabāti pārtikas atkritumi izdala metānu — spēcīgu siltumnīcefekta gāzi.',
+    problem: 'Poligonā noglabāti pārtikas atkritumi izdala metānu, spēcīgu siltumnīcefekta gāzi.',
     fix: 'Anaerobās digestācijas iekārtas pārvērš atkritumus biogāzē un augsnes mēslojumā.',
     imageAlt: 'Skats no gaisa: trīs zaļi anaerobo digestoru kupoli lauksaimniecības zemē',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, lauku reaktoru programma',
   },
   'cool-roofs': {
     problemTitle: 'Pilsētas karstums',
@@ -1270,19 +1304,21 @@ const lv: Record<string, SolutionCopy> = {
     imageAlt: 'Kafijas krūmi zem augsta ēnas koku vainaga tradicionālā plantācijā',
   },
   'pet-bottle-recycling': {
-    problemTitle: 'Vienreizējās PET pudeles',
-    fixTitle: 'PET pārstrāde no pudeles pudelē',
+    problemTitle: 'Vienreizējās dzērienu pudeles',
+    fixTitle: 'Pārstrāde no pudeles pudelē',
     problem:
-      'Caurspīdīgās PET pudeles ir iecerētas īsai dzīvei. Lielākā daļa joprojām kļūst par poligonu, sadedzināšanu vai zemākas kvalitātes šķiedru pēc vienas lietošanas.',
-    fix: 'Mehāniskā pārstrāde ar depozītu un «supertīru» mazgāšanu jau pārvērš pudeles atpakaļ pārtikas pudelēs ES un citās depozīta sistēmās. Vākšana un šķirošana izlemj vairāk nekā ekstrūders. Krāsaina un jaukta plastmasa tik un tā izkrīt; pārstrāde nav iemesls appludināt veikalus ar pudelēm.',
-    imageAlt: 'Saspiestu PET pudeļu ķīpu kaudzes pārstrādes rūpnīcas pagalmā',
+      'Caurspīdīgās plastmasas dzērienu pudeles ir iecerētas īsai dzīvei. Lielākā daļa joprojām kļūst par poligonu, sadedzināšanu vai zemākas kvalitātes šķiedru pēc vienas lietošanas.',
+    fix: 'Mehāniskā pārstrāde ar depozītu un īpaši tīru mazgāšanu jau pārvērš pudeles atpakaļ pārtikas pudelēs Eiropas Savienībā un citās depozīta sistēmās. Vākšana un šķirošana izlemj vairāk nekā ekstrūders. Krāsaina un jaukta plastmasa tik un tā izkrīt. Jauno pudeļu skaits veikalu plauktos joprojām nosaka, cik daudz materiāla atgriežas.',
+    imageAlt: 'Saspiestu plastmasas pudeļu ķīpu kaudzes pārstrādes rūpnīcas pagalmā',
+    sourceLabel: 'Ellen MacArthur fonds, plastmasa',
   },
   'municipal-composting': {
     problemTitle: 'Pārtikas un dārza atkritumi poligonos',
     fixTitle: 'Pašvaldību organikas kompostēšana',
     problem:
       'Kad pilsēta aprok ēdiena atliekas un pļautu zāli, tā izmet augsnes oglekli un dara poligona metānu. Organika bieži ir smagākā mājsaimniecības tvertnes daļa.',
-    fix: 'Dalītā vākšana plus kompostēšana vagās vai kamerās ir ikdiena Sanfrancisko, Milānā, lielā daļā Dienvidkorejas un ES. Komposts iet uz laukiem un parkiem. Piesārņojums — plastmasa, stikls — joprojām sabojā kaudzes; komposts neaizstāj mazāk izmestu ēdienu.',
+    fix: 'Dalītā vākšana plus kompostēšana atvērtās vagās, ko apgroza, vai slēgtās kamerās ir ikdiena Sanfrancisko, Milānā, lielā daļā Dienvidkorejas un Eiropas Savienībā. Komposts iet uz laukiem un parkiem. Plastmasa un stikls tvertnēs joprojām sabojā kaudzes. Mājsaimniecības, kas izmet mazāk ēdiena, sūta uz šīm kaudzēm mazāku kravu.',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, izmestas pārtikas kompostēšana',
     imageAlt: 'Liela gatava tumša komposta kaudze pašvaldības organikas objektā, tehnika fonā',
   },
   'landfill-gas-capture': {
@@ -1290,7 +1326,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Poligona gāze enerģijā',
     problem:
       'Vecie izgāztuves pēc slēgšanas gadu desmitiem dara metānu. Gāze ir spēcīgs siltumnīcas piesārņotājs un vietējs sprādziena un smakas risks.',
-    fix: 'Akas un caurules velk poligona gāzi uz lāpu vai dzinēju. EPA LMOP saraksta objekti ASV, Apvienotajā Karalistē un citur jau tā ražo elektrību. Uztveršana ir daļēja, noplūdes paliek, un metode neaptur atkritumu ierašanos. Tā ir jau esošo izgāztuvju sakopšana — kas cits nekā lauku vai pārtikas digestori.',
+    fix: 'Akas un caurules velk poligona gāzi uz lāpu vai dzinēju. Amerikas Savienoto Valstu Vides aizsardzības aģentūras poligona metāna saraksta objekti, Apvienotā Karaliste un citas vietas jau tā ražo elektrību. Uztveršana ir daļēja, noplūdes paliek. Atkritumi turpina ierasties, kamēr akas darbojas. Lauku un pārtikas reaktori ir atsevišķa prakse: tie apstrādā svaigu organiku.',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, poligona metāns',
     imageAlt: 'Gāzes uztveršanas caurules, kas iznāk caur pelēku ģeomembrānu poligona kartē',
   },
   'permeable-pavement': {
@@ -1495,11 +1532,12 @@ const lv: Record<string, SolutionCopy> = {
     imageAlt: 'Augstas priedes un lapu koki zālainā nogāzē Badikhel kopienas mežā, Lalitpurā, Nepālā'
   },
   'mrf-optical-sorting': {
-    problemTitle: 'Jaukti otrreizējie materiāli, ko neviens nepirks',
-    fixTitle: 'MRF šķirošana ar optiku un MI',
+    problemTitle: 'Jaukti otrreizējie materiāli, kurus grūti pārdot',
+    fixTitle: 'Šķirošana ar optiku un kamerām',
     problem:
-      'Mājsaimniecību pārstrāde atnāk jauktā plūsmā. Ja papīrs, plēve un ēdiens paliek kaudzē, ķīpas ir netīras un rūpnīcas tās noraida. Roku lasīšana netiek līdzi lentai.',
-    fix: 'Materiālu atgūšanas iekārtas lieto sietus, magnētus, virpuļstrāvas un optiskos vai tuvās infrasarkanās šķirotājus — arvien biežāk ar kamerām un programmām — lai atdalītu taru un šķiedru. EPA pārstrādes vadlīnijas ir šīs sistēmas publiskā seja ASV: vākšana ir tik laba, cik šķirošana. Optika nepadara katru plastmasu pārstrādājamu un nelabo pilsētu, kas nevāc.',
+      'Mājsaimniecību pārstrāde atnāk jauktā plūsmā. Ja papīrs, plēve un ēdiens paliek kaudzē, ķīpas ir netīras un rūpnīcas tās noraida. Roku lasīšana atpaliek no lentes.',
+    fix: 'Materiālu atgūšanas iekārtas lieto sietus, magnētus, atdalītājus, kas nomet alumīnija bundžas no lentes, un optiskos šķirotājus, kas lasa tuvo infrasarkano gaismu, arvien biežāk ar kamerām un programmām, lai atdalītu taru un papīra šķiedru. Amerikas Savienoto Valstu Vides aizsardzības aģentūras pārstrādes lapa ir šīs sistēmas publiskā seja Amerikas Savienotajās Valstīs. Tas, cik labi pilsēta vāc atkritumus un kādu plastmasu rūpnīca nopirks, joprojām nosaka, ko mašīnas spēj atdalīt.',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, pārstrāde',
     imageAlt: 'Jauktu plastmasas pudeļu kaudzes materiālu atgūšanas iekārtas laukumā'
   },
   'textile-to-textile-recycling': {
@@ -1507,7 +1545,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Tekstila pārstrāde tekstilā',
     problem:
       'Lielākā daļa noraidīto drēbju iet kā lietotas, lupatās un izolācijā, sadedzināšanā vai poligonā. Jaunas drēbes joprojām sākas no primārās šķiedras.',
-    fix: 'ES ilgtspējīga un aprites tekstila stratēģija mērķē uz dizainu, vākšanu un pārstrādi, lai vairāk šķiedras atkal kļūtu par tekstilu, nevis atkritumiem. Komisija atzīmē, ka gandrīz nekas no apģērba materiāla šodien netiek pārstrādāts jaunā apģērbā. «Šķiedra šķiedrā» rūpnīcas ir agrīna industrija, ne parasts skapja gals. Drēbju konteiners nav slēgts cikls.',
+    fix: 'Eiropas Savienības ilgtspējīga un aprites tekstila stratēģija mērķē uz dizainu, vākšanu un pārstrādi, lai vairāk šķiedras atkal kļūtu par tekstilu. Eiropas Komisija atzīmē, ka tikai neliela daļa apģērba materiāla šodien tiek pārstrādāta jaunā apģērbā. Rūpnīcas, kas no vecās šķiedras taisa jaunu tekstila šķiedru, pastāv kā agrīna industrija. Ielas konteiners savāc drēbes. Slēgtam ciklam vajag arī rūpnīcu, kas no tām taisa jaunu audumu.',
+    sourceLabel: 'Eiropas Komisija, tekstila stratēģija',
     imageAlt: 'Oranžs ielas konteiners tekstila vākšanai un pārstrādei blakus pelēkiem konteineriem'
   },
   'construction-demolition-recycling': {
@@ -1515,7 +1554,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Būvniecības un nojaukšanas atkritumu pārstrāde',
     problem:
       'Betons, ķieģelis, koks, metāls un stikls no būvlaukumiem bieži ir smagākā valsts atkritumu plūsma. Sajaukti ar krāsu, izolāciju vai azbestu, tie slikti iet atkārtotā lietošanā.',
-    fix: 'Eiropas Komisija uzskata būvniecības un nojaukšanas atkritumus par prioritāru plūsmu un raksta, ka tie veido vairāk nekā trešdaļu ES atkritumu. Tīra betona un ķieģeļu smalcināšana pildījumā, metālu izvilkšana un koksnes šķirošana ir parasta tur, kur nojaukšana ir selektīva. Atgūšanas īpatsvars starp dalībvalstīm ļoti atšķiras. Gružu pārstrāde nav atļauja nojaukt ātrāk.',
+    fix: 'Eiropas Komisija uzskata būvniecības un nojaukšanas atkritumus par prioritāru plūsmu un raksta, ka tie veido vairāk nekā trešdaļu Eiropas Savienības atkritumu. Tīra betona un ķieģeļu smalcināšana pildījumā, metālu izvilkšana un koksnes šķirošana ir parasta tur, kur nojaukšana ir selektīva. Atgūšanas īpatsvars starp dalībvalstīm ļoti atšķiras. Ātrāka nojaukšana joprojām piepilda smalcinātājus ar jauktiem gružiem.',
+    sourceLabel: 'Eiropas Komisija, būvniecības un nojaukšanas atkritumi',
     imageAlt: 'Konveijers ber sasmalcinātu betona pildījumu kaudzē blakus iekrāvējam'
   },
   'black-soldier-fly': {
@@ -1523,7 +1563,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Melnā kareivja mušas pārstrāde',
     problem:
       'Pilsētas tirgi berž augļu un dārzeņu atliekas kaudzēs, kas smird, sauc kaitēkļus un brauc uz izgāztuvi. Tuvējās saimniecības joprojām pērk ievesto barību un mēslojumu.',
-    fix: 'Melnā kareivja mušas (Hermetia illucens) kāpuri ēd mitru organiku; kaltētus kāpurus var dot lopiem vai zivīm, un atlikušo frasu — augsnei. FAO apraksta projektu Abidžanā, Kotdivuārā, kur mušas audzē un māca zemniekiem lietot produktus. Tā ir strādājoša bioekonomikas metode, joprojām vietēja un darbietilpīga. Tā neaizstāj vākšanu un neder plastmasai vai metālam.',
+    fix: 'Melnā kareivja mušas (Hermetia illucens) kāpuri ēd mitru organiku. Kaltētus kāpurus var dot lopiem vai zivīm, un atlikumu pēc tiem var dot augsnei. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija apraksta projektu Abidžanā, Kotdivuārā, kur mušas audzē un māca zemniekiem lietot produktus. Tā ir strādājoša metode, joprojām vietēja un darbietilpīga. Kāds joprojām savāc atliekas un atved tās pie traukiem. Plastmasa un metāls iet citā līnijā.',
+    sourceLabel: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, atkritumu pārstrāde ar melno kareivja mušu',
     imageAlt: 'Melnā kareivja mušas kāpuri baltā traukā starp kokosšķiedru un trūdošām lapām'
   },
   'waste-to-energy': {
@@ -1531,15 +1572,17 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Enerģija no atkritumiem',
     problem:
       'Pēc pārstrādes un organikas izņemšanas pilsētām joprojām paliek atlikuma plūsma. Poligons paņem tilpumu un turpina darīt metānu. Atklāta dedzināšana ir sliktāka.',
-    fix: 'Pašvaldību waste-to-energy stacijas dedzina atlikuma atkritumus un ceļ tvaiku elektrībai vai siltumam. EPA pamata piezīme par enerģijas atgūšanu no atkritumiem apraksta mass-burn kā parasto ASV shēmu: pelni uz poligonu, gāzu attīrīšana pēc vēlākiem noteikumiem. Stacijai vajag stabilu atlikuma plūsmu, un tā nepadara pārstrādi izvēles. Emisijas un pelni paliek; tas nav tīrs aizstājējs tam, lai atkritumu būtu mazāk.',
+    fix: 'Pašvaldību stacijas, kas atgūst enerģiju no atkritumiem, dedzina atlikuma plūsmu un ceļ tvaiku elektrībai vai siltumam. Amerikas Savienoto Valstu Vides aizsardzības aģentūras piezīme par enerģijas atgūšanu no atkritumiem apraksta tiešu jauktā atlikuma dedzināšanu kā parasto Amerikas Savienoto Valstu shēmu: pelni uz poligonu, gāzu attīrīšana pēc vēlākiem noteikumiem. Stacijai vajag stabilu atlikuma plūsmu. Pārstrāde un organikas izņemšana notiek, pirms šo plūsmu dedzina. Emisijas un pelni paliek. Mazāks atkritumu daudzums samazina to, ko saņem krāsns.',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, enerģijas atgūšana no atkritumiem',
     imageAlt: 'Dublin Waste-to-Energy stacija: balta hallē un divi skursteņi, kalns fonā'
   },
   'ocean-cleanup': {
     problemTitle: 'Senā plastmasa, kas jau ir okeānā',
     fixTitle: 'The Ocean Cleanup',
     problem:
-      'Plastmasa, kas jau sasniegusi subtropu virpuļus, vairs nav upes uzdevums. Tā sairst sīkākos gabalos, ko grūtāk savākt un vieglāk norīt savvaļai.',
-    fix: 'The Ocean Cleanup, Nīderlandes bezpeļņas organizācija, velk peldošas sistēmas Lielajā Klusā okeāna atkritumu plankumā un arī vada upes Interceptor. Organizācija publicē savus izņemšanas kopsummas un 2040. gada mērķi; tie ir viņu skaitļi, ne neatkarīga skaitīšana. Tīrīšana jūrā ir lēna, atkarīga no laikapstākļiem un strīdīga piezvejas un mēroga dēļ. Tā neaizstāj noplūdes griešanu uz sauszemes.',
+      'Plastmasa, kas jau sasniegusi subtropu virpuļus, ir atklātā okeāna uzdevums. Tā sairst sīkākos gabalos, ko grūtāk savākt un vieglāk norīt savvaļai.',
+    fix: 'The Ocean Cleanup, Nīderlandes bezpeļņas organizācija, velk peldošas sistēmas Lielajā Klusā okeāna atkritumu plankumā un arī vada upju ķērājus. Organizācija publicē savus izņemšanas kopsummas un 2040. gada mērķi. Šie skaitļi nāk no pašas organizācijas. Tīrīšana jūrā ir lēna, atkarīga no laikapstākļiem un strīdīga, jo aprīkojums var noķert jūras dzīvniekus kopā ar plastmasu, un mēroga dēļ. Noplūdes samazināšana uz sauszemes attur jaunu plastmasu no virpuļiem.',
+    sourceLabel: 'The Ocean Cleanup',
     imageAlt: 'The Ocean Cleanup System 001 peldošās barjeras shēma ar parakstītiem sensoriem un navigācijas moduliem'
   },
   interceptor: {
@@ -1547,16 +1590,17 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Interceptor',
     problem:
       'Lielākā daļa okeāna plastmasas, ko vēl var noķert kā atpazīstamus atkritumus, atnāk pa upēm pēc lietus. Kad tā jau ir jūrā, vākšana ir grūtāka un dārgāka.',
-    fix: 'The Ocean Cleanup Interceptor ir upes sistēmu saime — Original, Barrier, Tender, Barricade un Guard —, kas ar bumiem un, Original gadījumā, saules izcelšanu paceļ atkritumus pirms jūras. Izvietošana ir vietai specifiska; viens konstrukcija neder katrai upei. Interceptor ir ķērājs grīvā, nevis augšteces vākšanas vai mazākas plastmasas aizstājējs.',
+    fix: 'The Ocean Cleanup upes ķērājs ir upes sistēmu saime (Original, Barrier, Tender, Barricade un Guard), kas ar bumiem un, Original variantā, saules izcelšanu paceļ atkritumus pirms jūras. Izvietošana ir vietai specifiska, un katrai upei vajag savu piegulumu. Mašīna ķer atkritumus grīvā. Vākšana augstāk pa upi un mazāka plastmasas ražošana samazina to, kas tur nonāk.',
+    sourceLabel: 'The Ocean Cleanup, upes ķērājs',
     imageAlt: 'The Ocean Cleanup Interceptor Original kanālā, peldošs bums ved uz katamarāna korpusu'
   },
 };
 
 const copy: Record<Locale, Record<string, SolutionCopy>> = {
-  en: { ...en, ...pack2.en, ...getCitiesGrid('en') },
-  ru: { ...ru, ...pack2.ru, ...getCitiesGrid('ru') },
-  pl: { ...pl, ...pack2.pl, ...getCitiesGrid('pl') },
-  lv: { ...lv, ...pack2.lv, ...getCitiesGrid('lv') },
+  en: { ...en, ...pack2.en, ...getCitiesGrid('en'), ...getWasteGrid('en') },
+  ru: { ...ru, ...pack2.ru, ...getCitiesGrid('ru'), ...getWasteGrid('ru') },
+  pl: { ...pl, ...pack2.pl, ...getCitiesGrid('pl'), ...getWasteGrid('pl') },
+  lv: { ...lv, ...pack2.lv, ...getCitiesGrid('lv'), ...getWasteGrid('lv') },
 };
 
 export function getSolutions(locale: Locale): Solution[] {

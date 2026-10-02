@@ -17,6 +17,7 @@ export { basedIn, getUi, ui, type Ui } from './messages';
 export { getLatestSolutions, getSolutions } from './solutions';
 export { getWaterEncyclopediaBySlug, getWaterEncyclopediaPages } from './solutions-water';
 export { getCitiesEncyclopediaBySlug, getCitiesEncyclopediaPages } from './solutions-cities';
+export { getWasteEncyclopediaBySlug, getWasteEncyclopediaPages } from './solutions-waste';
 export { getForestEncyclopediaBySlug, getForestEncyclopediaPages } from './solutions-forests';
 export {
   getWildlifeBySlug,

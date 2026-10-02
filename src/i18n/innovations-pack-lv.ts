@@ -49,7 +49,7 @@ export const packLv: Record<string, InnovationCopy> = {
   },
   'alphafold-proteins': {
     title: 'AlphaFold 3 lietošanā',
-    hook: '2024. gada olbaltumvielu un to partneru modelis tagad ir ikdienas laboratorijas programmatūra — to lieto miljoniem pētnieku, tas nav gatavs klimata enzīms.',
+    hook: '2024. gada olbaltumvielu un to partneru modelis tagad ir ikdienas laboratorijas programmatūra, ko lieto miljoniem pētnieku. Darbojošs klimata enzīms ir vēlāks laboratorijas solis.',
     imageAlt: 'Olbaltumvielas lentes diagramma uz tumša lauka — struktūru klase, ko šie modeļi paredz',
     what: 'AlphaFold 2 (DeepMind, Nature, 2021) paredzēja vienas ķēdes locījumus ar derīgu precizitāti; atklātā AlphaFold datubāze deva simtiem miljonu struktūru. AlphaFold 3 un AlphaFold Server startēja 2024. gada 8. maijā, lai paredzētu olbaltumvielas kopā ar citām biomolekulām. DeepMind AlphaFold lapa raksta, ka līdz 2025. gada novembrim rīkus lietoja vairāk nekā 3 miljoni pētnieku vairāk nekā 190 valstīs. Hasabiss un Džampers par šo darbu saņēma 2024. gada Nobela prēmiju ķīmijā. Tā ir ieviesta zinātnes programmatūra, ne čatbots un ne rūpnīca.',
     problem:

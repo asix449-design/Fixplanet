@@ -745,5 +745,48 @@
     "artist": "Paul Korecky",
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  {
+    "slug": "california-condor",
+    "file": "california-condor.jpg",
+    "commonsTitle": "Condor in flight (53189570917).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_in_flight_(53189570917).jpg",
+    "artist": "USFWS Pacific Southwest Region",
+    "license": "Public domain"
+  },
+  {
+    "slug": "whooping-crane",
+    "file": "whooping-crane.jpg",
+    "commonsTitle": "Whooping Crane in flight in Texas.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whooping_Crane_in_flight_in_Texas.jpg",
+    "artist": "John Noll / U.S. Department of Agriculture",
+    "license": "Public domain"
+  },
+  {
+    "slug": "atlantic-puffin",
+    "file": "atlantic-puffin.jpg",
+    "commonsTitle": "Atlantic Puffin Fratercula arctica.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlantic_Puffin_Fratercula_arctica.jpg",
+    "artist": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
+  },
+  {
+    "slug": "african-penguin",
+    "file": "african-penguin.jpg",
+    "commonsTitle": "African penguin colony at Boulders Beach.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_penguin_colony_at_Boulders_Beach.jpg",
+    "artist": "Krigore",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "slug": "wandering-albatross",
+    "file": "wandering-albatross.jpg",
+    "commonsTitle": "Diomedea exulans in flight - SE Tasmania.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diomedea_exulans_in_flight_-_SE_Tasmania.jpg",
+    "artist": "JJ Harrison",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
   }
 ]

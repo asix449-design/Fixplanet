@@ -261,7 +261,7 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'graphcast-ai-weather': {
     title: 'Modele pogodowe SI — GraphCast',
-    hook: 'Grafowa sieć neuronowa dorównuje dziś klasycznym prognozom średnioterminowym — i wciąż potrzebuje satelitów.',
+    hook: 'Grafowa sieć neuronowa dorównuje dziś klasycznym prognozom średnioterminowym i opiera się na obserwacjach satelitarnych.',
     imageAlt: 'Obraz pełnej tarczy Ziemi z GOES-16 — obserwacje, na których trenują i działają modele pogodowe SI',
     what: 'GraphCast (Google DeepMind, Science, 2023) to model uczenia maszynowego, który przewiduje pogodę globalną na około dziesięć dni naprzód z grafu atmosfery, trenowany na reanalizie ECMWF. FourCastNet (NVIDIA) i Pangu-Weather (Huawei) to kuzyni. Służby meteorologiczne uruchamiają dziś takie modele obok kodów fizyki, nie zamiast nich.',
     problem:
@@ -276,7 +276,7 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'gnome-materials': {
     title: 'GNoME — SI do materiałów',
-    hook: 'Model zaproponował setki tysięcy może-stabilnych kryształów. Chemia i tak musi je zrobić.',
+    hook: 'Model zaproponował setki tysięcy kryształów, które mogą być stabilne. Ich wykonanie jest pracą laboratorium.',
     imageAlt: 'Kryształ kwarcu — rodzaj uporządkowanego ciała stałego, który modele materiałów próbują badać szybciej niż metodą prób i błędów',
     what: 'GNoME (Graph Networks for Materials Exploration), z DeepMind ze współpracownikami z Berkeley, użył sieci grafowych i istniejących baz materiałów, by przewidzieć bardzo duży zbiór potencjalnie stabilnych kryształów nieorganicznych (2023). Część predykcji później zsyntetyzowano. To narzędzie przeszukiwania, nie gotowa bateria.',
     problem:
@@ -291,7 +291,7 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'ai-grid-optimization': {
     title: 'SI dla sieci elektroenergetycznej',
-    hook: 'Lepsze prognozy wiatru i narzędzia dyspozycji ścinają rezerwy. Nie zastępują transformatorów.',
+    hook: 'Lepsze prognozy wiatru i narzędzia dyspozycji ścinają rezerwy. Transformatory i reszta fizycznej sieci zostają na miejscu.',
     imageAlt: 'Słupy przesyłowe wysokiego napięcia — fizyczna sieć, na której siedzi oprogramowanie optymalizacji',
     what: 'Operatorzy sieci już używają optymalizacji. Uczenie maszynowe dokłada szybsze prognozy wiatru, słońca i popytu, a czasem sugeruje dyspozycję. Opublikowany w 2019 wynik DeepMind dotyczył farm wiatrowych Google w USA: sieć neuronowa przewidywała moc na około 36 godzin naprzód i podniosła wartość tych megawatów o około 20 procent wobec zobowiązań bez ram czasowych. Rozmowy z brytyjskim National Grid były rozpoznaniem i nie stały się wdrożonym produktem sieciowym. Inni operatorzy próbują podobnych narzędzi.',
     problem:
@@ -321,7 +321,7 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'amp-recycling-robots': {
     title: 'Roboty recyklingowe — AMP',
-    hook: 'Kamery i ramiona już zbierają kartony i butelki na prawdziwych liniach sortowniczych. Nie wymyślają rynku na belę.',
+    hook: 'Kamery i ramiona już zbierają kartony i butelki na prawdziwych liniach sortowniczych. Nabywca posortowanego materiału to osobne pytanie.',
     imageAlt: 'Przemysłowe ramię robota sortujące butelkę PET na taśmie recyklingowej',
     what: 'Sortownie odpadów (MRF) od dawna używają prądów wirowych i sorterów optycznych. AMP Robotics i podobne firmy dokładają widzenie komputerowe i ramiona robotów, które zbierają konkretne przedmioty z prędkością ludzką albo lepszą. Systemy stoją w działających zakładach w Stanach Zjednoczonych i innych krajach — wdrożony sprzęt, nie film koncepcyjny.',
     problem:
@@ -336,7 +336,7 @@ export const pl: Record<string, InnovationCopy> = {
   },
   'quantum-computing': {
     title: 'Komputery kwantowe — nadzieje chemii',
-    hook: 'Publiczne maszyny IBM, Google i IonQ dokładają kubity. Nie zaprojektowały jeszcze katalizatora klimatycznego.',
+    hook: 'Publiczne maszyny IBM, Google i IonQ dokładają kubity. Zaprojektowanie katalizatora klimatycznego na nich jest późniejszą pracą.',
     imageAlt: 'Komputer kwantowy klasy IBM Q System One — żyrandol kabli nad chłodziarką rozcieńczalnikową',
     what: 'Komputery kwantowe używają superpozycji i splątania, by badać niektóre problemy, które na zwykłych chipach skalują się źle — w teorii struktura elektronowa cząsteczek jest jedną z nich. IBM opublikował procesory nadprzewodzące od kilkuset do tysiąca kubitów (w tym Condor w 2023) i mniejsze, wyższej jakości chipy Heron. Procesor Willow Google (2024) zgłosił postęp w korekcji błędów. IonQ używa uwięzionych jonów. Wszystko to jest sprzętem badawczym w erze NISQ do wczesnej odporności na błędy.',
     problem:
