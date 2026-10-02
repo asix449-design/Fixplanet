@@ -331,7 +331,7 @@ export const enToday: TodayShelfCopy = {
     },
     'eastern-mediterranean': {
       name: 'Eastern Mediterranean',
-      note: '69,400 detections in 2024 (+14%). In 2025 the route fell overall; the Libya–Crete corridor more than tripled.',
+      note: '69,400 detections in 2024 (+14%). In 2025 the route fell overall; the corridor from Libya to Crete more than tripled.',
     },
     'western-africa': {
       name: 'Western Africa (Canary Islands)',

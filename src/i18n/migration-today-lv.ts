@@ -65,7 +65,7 @@ export const lvToday: TodayShelfCopy = {
   idpDefinition:
     'IDMC skaita cilvēkus, kas spiesti pamest mājas konflikta, vardarbības vai katastrofu dēļ un nav šķērsojuši starptautisku robežu. Tas nav UN DESA starptautiskais migrant stock, ne Frontex konstatējumi un ne UNHCR nometņu headcount. Kustības gada laikā (jaunas vai atkārtotas) nav tas pats, kas krājums gada beigās; viens cilvēks var pārvietoties vairāk nekā vienreiz.',
   idpHonesty:
-    'GRID 2026 aptver 2025. kalendāra gadu (ziņojums publicēts 2026. gada 12. maijā). Krājums ir cilvēki, kas gada beigās joprojām dzīvo iekšējā pārvietošanā. Gada skaitļi ir saskaitītas kustības. Tas pats cilvēks var pārvietoties vairāk nekā vienu reizi, tāpēc 32,3 milj. skaita kustības.',
+    'Globālais ziņojums par iekšējo pārvietošanu 2026 aptver 2025. kalendāra gadu (ziņojums publicēts 2026. gada 12. maijā). Krājums ir cilvēki, kas gada beigās joprojām dzīvo iekšējā pārvietošanā. Gada skaitļi ir saskaitītas kustības. Tas pats cilvēks var pārvietoties vairāk nekā vienu reizi, tāpēc 32,3 milj. skaita kustības.',
   idpNoChoropleth:
     'Nosauktās krīzes zemāk ir piezīmes ar avotu, ne pasaules karte, kas krāsota pēc skaita. IDMC pārklājums ir nepilnīgs; lapa nezīmē globālu koroplētu un ne «izrāviena bultiņu» slāni no šīm summām.',
   idpMillion: 'milj.',
@@ -325,7 +325,7 @@ export const lvToday: TodayShelfCopy = {
     },
     'eastern-mediterranean': {
       name: 'Austrumu Vidusjūra',
-      note: '69 400 konstatējumu 2024. gadā (+14%). 2025. gadā maršruts kopumā kritās; Lībija–Krēta koridors pieauga vairāk nekā trīskārt.',
+      note: '69 400 konstatējumu 2024. gadā (+14%). 2025. gadā maršruts kopumā kritās; koridors no Lībijas uz Krētu pieauga vairāk nekā trīskārt.',
     },
     'western-africa': {
       name: 'Rietumāfrika (Kanāriju salas)',
