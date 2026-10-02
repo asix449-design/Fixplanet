@@ -65,7 +65,7 @@ export const enToday: TodayShelfCopy = {
   idpDefinition:
     'IDMC counts people forced from home by conflict, violence, or disasters who have not crossed an international border. This is not UN DESA international migrant stock, not a Frontex detection count, and not a UNHCR camp headcount. Movements during the year (new or repeated) are not the same as year-end stock, and the same person can move more than once.',
   idpHonesty:
-    'GRID 2026 covers calendar 2025 (report published 12 May 2026). Stock is people still living in internal displacement at year-end. Annual figures are counted movements, not unique people. Do not caption 32.3 million as 32.3 million unique people.',
+    'GRID 2026 covers calendar 2025 (report published 12 May 2026). Stock is people still living in internal displacement at year-end. Annual figures are counted movements. The same person can move more than once, so 32.3 million counts movements.',
   idpNoChoropleth:
     'Named crises below are sourced notes, not a colour-by-count world map. IDMC coverage is incomplete; this page does not invent a global choropleth or a “breakthrough” arrow layer from these totals.',
   idpMillion: 'million',
@@ -92,7 +92,7 @@ export const enToday: TodayShelfCopy = {
       title: 'Conflict and violence displacements',
       hook: 'Conflict and violence triggered a record 32.3 million internal displacements across 48 countries and territories in 2025 — about 60% above 2024, and more than disasters for the first time in IDMC’s series.',
       detail: [
-        'Counted movements during the year (new or repeated). The same person can move more than once. Do not caption this as “32.3 million unique people.”',
+        'Counted movements during the year (new or repeated). The same person can move more than once, so 32.3 million counts movements.',
         'GRID 2026 notes displacement was highly concentrated: Iran and the DRC each accounted for around a third of the global conflict-displacement total. International armed conflicts accounted for about 46% of conflict displacements; the number of countries with displacement linked to international conflicts rose from 6 in 2024 to 13 in 2025.',
         'Urban fighting around places such as El Fasher, Goma, and Tehran is named in the executive summary as feeding large, often repeated movements. Sudan remained the largest IDP-hosting crisis (about 9.1 million people living in displacement in Sudan at year-end).',
       ],
@@ -331,7 +331,7 @@ export const enToday: TodayShelfCopy = {
     },
     'eastern-mediterranean': {
       name: 'Eastern Mediterranean',
-      note: '69,400 detections in 2024 (+14%). In 2025 the route fell overall; the Libya–Crete corridor more than tripled. Do not read as all of Africa → Europe.',
+      note: '69,400 detections in 2024 (+14%). In 2025 the route fell overall; the Libya–Crete corridor more than tripled.',
     },
     'western-africa': {
       name: 'Western Africa (Canary Islands)',

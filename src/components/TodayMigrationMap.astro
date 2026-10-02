@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import CitedSourceList from './CitedSourceList.astro';
+import MissingMigrantCards from './MissingMigrantCards.astro';
 import RemittanceCards from './RemittanceCards.astro';
 import {
   corridorsForRegion,
@@ -16,13 +17,15 @@ import {
   type TodayRegionId,
 } from '../data/migration-today';
 import type { TodayRefugeeCardId } from '../i18n/migration';
-import { getMigrationPage, getRemittances, localizePath, resolveLocale } from '../i18n';
+import { getMigrationPage, getMissingMigrants, getRemittances, localizePath, resolveLocale } from '../i18n';
 
 const locale = resolveLocale(Astro.currentLocale);
 const page = getMigrationPage(locale);
 const ui = page.today;
 const remittances = getRemittances(locale);
 const remittancesHref = localizePath('/migration/remittances', locale);
+const missingMigrants = getMissingMigrants(locale);
+const missingMigrantsHref = localizePath('/migration/missing-migrants', locale);
 const numberLocale = locale === 'en' ? 'en-GB' : locale;
 
 const svgPath = path.join(process.cwd(), 'public/images/maps/world-countries.svg');
@@ -315,6 +318,9 @@ const interArrows = todayDataset.corridors
     <button type="button" class="today-mig-layer is-on" data-today-layer="remittances" aria-pressed="true">
       {remittances.layer}
     </button>
+    <button type="button" class="today-mig-layer is-on" data-today-layer="missing" aria-pressed="true">
+      {missingMigrants.layer}
+    </button>
   </div>
 
   <div class="today-mig-layout">
@@ -602,6 +608,14 @@ const interArrows = todayDataset.corridors
     <p class="oceans-source-note">{ui.refugeesNoChoropleth}</p>
   </section>
 
+  <section class="today-mig-layer-panel" id="missing-migrants" data-today-missing-list>
+    <h3>
+      <a href={missingMigrantsHref}>{missingMigrants.title}</a>
+    </h3>
+    <p class="dispersal-lead">{missingMigrants.lede}</p>
+    <MissingMigrantCards />
+  </section>
+
   <section class="today-mig-layer-panel" id="remittances" data-today-remittances-list>
     <h3>
       <a href={remittancesHref}>{remittances.title}</a>
@@ -656,6 +670,7 @@ const interArrows = todayDataset.corridors
     const idpList = root.querySelector('[data-today-idp-list]');
     const refugeesList = root.querySelector('[data-today-refugees-list]');
     const remittancesList = root.querySelector('[data-today-remittances-list]');
+    const missingList = root.querySelector('[data-today-missing-list]');
     const layerButtons = root.querySelectorAll('[data-today-layer]');
     const campButtons = root.querySelectorAll('[data-today-camp]');
     const routeButtons = root.querySelectorAll('[data-today-route]');
@@ -837,6 +852,9 @@ const interArrows = todayDataset.corridors
       }
       if (name === 'remittances') {
         if (remittancesList) remittancesList.hidden = !on;
+      }
+      if (name === 'missing') {
+        if (missingList) missingList.hidden = !on;
       }
     }
 

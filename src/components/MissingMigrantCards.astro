@@ -1,0 +1,44 @@
+---
+import { linkifyUrls, missingMigrantChartSize, missingMigrantSrc } from '../data/missing-migrants';
+import { getMigrationPage, getMissingMigrants, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const shelf = getMissingMigrants(locale);
+---
+
+<ul class="today-mig-idp-grid">
+  {
+    shelf.cards.map((card) => {
+      const href = localizePath(`/migration/${card.id}`, locale);
+      return (
+        <li class="today-mig-idp-card" id={card.id}>
+          <a class="today-mig-remit-art" href={href}>
+            <img
+              src={missingMigrantSrc(card.file)}
+              alt={card.caption}
+              width={missingMigrantChartSize.width}
+              height={missingMigrantChartSize.height}
+              loading="lazy"
+            />
+          </a>
+          <p class="today-mig-idp-detail">{card.caption}</p>
+          <p class="wildlife-sources today-mig-remit-credit" set:html={linkifyUrls(card.credit)} />
+          <p class="today-mig-idp-tag">{card.meta}</p>
+          <h4>
+            <a href={href}>{card.title}</a>
+          </h4>
+          <p class="today-mig-idp-hook">{card.blurb}</p>
+          <p class="innovation-card-source">
+            <a href={card.hubSourceUrl} rel="noopener noreferrer">
+              {card.hubSourceCode}
+            </a>
+          </p>
+          <a class="card-cta" href={href}>
+            {page.cardCta}
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
