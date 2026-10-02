@@ -1,7 +1,8 @@
+import { oceanBlueMeta } from './ocean-blue';
 import { cite, type PrimarySource } from './sources';
 
 /** Oceans atlas thematic maps. Not Solutions→Oceans. */
-export const oceanAtlasSlugs = [
+export const oceanAtlasCoreSlugs = [
   'ocean-acidification',
   'dissolved-oxygen',
   'sea-ice-extent',
@@ -12,6 +13,18 @@ export const oceanAtlasSlugs = [
   'marine-fisheries',
 ] as const;
 
+export const oceanAtlasSlugs = [
+  ...oceanAtlasCoreSlugs,
+  'mangroves',
+  'seagrass-meadows',
+  'salt-marshes',
+  'kelp-forests',
+  'blue-carbon',
+] as const;
+
+/** Related strips on the original atlas cards. Blue-ecosystem cards stay off this list. */
+export const oceanAtlasRelatedSlugs = oceanAtlasCoreSlugs;
+
 export type OceanAtlasSlug = (typeof oceanAtlasSlugs)[number];
 
 export type OceanAtlasMeta = {
@@ -19,6 +32,8 @@ export type OceanAtlasMeta = {
   preview: string;
   /** 7200×3600 frame when the layer is drawn from the source data. */
   detail?: string;
+  /** Hub tile frame. 16:9 plates use the file’s own ratio. */
+  plate?: '16x9';
   sourceOrg: string;
   /** Grid “Source:” link text. First URL in `sources` is the href. */
   sourceLabel: string;
@@ -335,6 +350,7 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
       ),
     ],
   },
+  ...oceanBlueMeta,
 ];
 
 export const oceanAtlasPreviewSrc = (file: string) => `/images/oceans/${file}`;

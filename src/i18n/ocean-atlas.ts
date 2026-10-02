@@ -3,7 +3,9 @@ import {
   type OceanAtlasMeta,
   type OceanAtlasSlug,
 } from '../data/ocean-atlas';
+import type { PrimarySource } from '../data/sources';
 import type { Locale } from './config';
+import { oceanBlueCopy, oceanBlueLede } from './ocean-blue';
 
 export type OceanAtlasCopy = {
   title: string;
@@ -14,6 +16,11 @@ export type OceanAtlasCopy = {
   /** Reader heading for `why`. Falls back to the shared atlas label. */
   whyHeading?: string;
   howToRead?: string;
+  limits?: string;
+  caption?: string;
+  credit?: string;
+  /** Localized numbered sources. Overrides the English list on the meta. */
+  sources?: PrimarySource[];
   detailShort?: string;
 };
 
@@ -26,11 +33,8 @@ export const oceanAtlasSectionLabels = {
   how: 'How to read it',
 } as const;
 
-/** Optional hub lede (pack section E). EN and RU are not given there. */
-export const oceanAtlasHubLede: Partial<Record<Locale, string>> = {
-  pl: 'Prądy, zasolenie, temperatura powierzchni, zanieczyszczenia — oraz chemia pH, tlen otwartego oceanu, lód morski i poziom morza. Na każdej karcie wydawca i to, co warstwa mierzy (i czego nie).',
-  lv: 'Straumes, sāļums, virsmas temperatūra, piesārņojums — kā arī pH ķīmija, atklātā okeāna skābeklis, jūras ledus un jūras līmenis. Katrā kartītē izdevējs un tas, ko slānis mēra (un ko ne).',
-};
+/** Oceans hub lede above the atlas grid, in all four languages. */
+export const oceanAtlasHubLede: Record<Locale, string> = oceanBlueLede;
 
 const en: Record<OceanAtlasSlug, OceanAtlasCopy> = {
   'ocean-acidification': {
@@ -117,6 +121,7 @@ const en: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     howToRead:
       'FAO’s stock-status shares cover assessed marine stocks only. SOFIA defines the categories and the year each figure refers to, so check the current report for the latest figures. Catch statistics from FishStat are useful context, but they measure something different from the overfished share.',
   },
+  ...oceanBlueCopy.en,
 };
 
 const ru: Record<OceanAtlasSlug, OceanAtlasCopy> = {
@@ -183,6 +188,7 @@ const ru: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     detailShort:
       'Доклад ФАО «Состояние мирового рыболовства и аквакультуры» (SOFIA) — главная глобальная оценка рыболовства и аквакультуры. 35,5 процента оценённых морских промысловых запасов классифицированы как переловленные (обзор ФАО 2025; состояние на 2021). Доклады доступны на сайте ФАО и в репозитории Open Knowledge, а база FishStat дополняет их статистикой уловов. Избирательные орудия лова и морские охраняемые районы — это способы решения проблемы, а данные ФАО показывают состояние самих запасов.',
   },
+  ...oceanBlueCopy.ru,
 };
 
 const pl: Record<OceanAtlasSlug, OceanAtlasCopy> = {
@@ -248,6 +254,7 @@ const pl: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     detailShort:
       'Raport FAO The State of World Fisheries and Aquaculture (SOFIA) to najważniejsza globalna ocena rybołówstwa i akwakultury. 35,5 procent ocenionych stad rybołówstwa morskiego sklasyfikowano jako przełowione (przegląd FAO 2025; stan 2021). Raporty są dostępne na stronie FAO i w repozytorium Open Knowledge, a baza FishStat uzupełnia je statystykami połowów. Selektywne narzędzia połowowe i morskie obszary chronione to sposoby rozwiązywania problemu, a dane FAO pokazują stan samych stad.',
   },
+  ...oceanBlueCopy.pl,
 };
 
 const lv: Record<OceanAtlasSlug, OceanAtlasCopy> = {
@@ -314,6 +321,7 @@ const lv: Record<OceanAtlasSlug, OceanAtlasCopy> = {
     detailShort:
       'FAO ziņojums The State of World Fisheries and Aquaculture (SOFIA) ir galvenais globālais zvejniecības un akvakultūras novērtējums. 35,5 procenti vērtēto jūras zvejas krājumu klasificēti kā pārzvejoti (FAO 2025. gada pārskats; stāvoklis 2021). Ziņojumi pieejami FAO tīmekļvietnē un krātuvē Open Knowledge, bet datubāze FishStat tos papildina ar nozvejas statistiku. Selektīvi zvejas rīki un jūras aizsargājamās teritorijas ir problēmas risināšanas veidi, bet FAO dati parāda pašu krājumu stāvokli.',
   },
+  ...oceanBlueCopy.lv,
 };
 
 const copy: Record<Locale, Record<OceanAtlasSlug, OceanAtlasCopy>> = { en, ru, pl, lv };

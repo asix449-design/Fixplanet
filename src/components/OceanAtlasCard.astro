@@ -14,13 +14,20 @@ const maps = getMapsPage(locale);
 const { map } = Astro.props;
 const href = localizePath(oceanAtlasPath(map.slug), locale);
 const preview = oceanAtlasPreviewSrc(map.preview);
+const wide = map.plate === '16x9';
 ---
 
 <article class="map-card-wrap innovation-card-wrap" data-slug={map.slug}>
   <a class="map-card" href={href}>
-    <div class="card-art map-card-art">
-      <img src={preview} alt={map.blurb} width="1600" height="800" loading="lazy" />
-      {hasRealMap(map.slug) ? null : <span class="map-schematic-badge">{maps.schematicBadge}</span>}
+    <div class:list={['card-art', 'map-card-art', { 'map-card-art-16': wide }]}>
+      <img
+        src={preview}
+        alt={map.blurb}
+        width={wide ? 1920 : 1600}
+        height={wide ? 1080 : 800}
+        loading="lazy"
+      />
+      {hasRealMap(map.slug) || map.credit ? null : <span class="map-schematic-badge">{maps.schematicBadge}</span>}
     </div>
     <div class="card-body">
       <h3>{map.title}</h3>
