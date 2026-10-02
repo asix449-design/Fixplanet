@@ -1357,6 +1357,11 @@ a.wildlife-card:hover {
   color: var(--lime);
 }
 
+.status-birds {
+  background: rgba(140, 190, 255, 0.16);
+  color: #d4e6ff;
+}
+
 .status-research {
   background: rgba(192, 255, 0, 0.1);
   color: var(--lime);

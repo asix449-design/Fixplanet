@@ -144,10 +144,10 @@ const en = {
   wildlifePage: {
     metaTitle: 'Wildlife — Fix Planet',
     metaDescription:
-      'An encyclopedia of how animal populations changed after modern humans spread: surviving, endangered, and extinct species, plus a Homo sapiens shelf on origin, migration, and the large-mammal genera that vanished after first arrival.',
+      'An encyclopedia of animal populations: species still here, species under threat, species already gone, insects, domesticates, and birds, plus a page on our own species.',
     eyebrow: 'Encyclopedia',
     title: 'Wildlife',
-    lead: 'Where our species arose, where we went, and how the largest animals changed after we arrived as a new predator.',
+    lead: 'Living and lost animals: species still here, species under threat, species already gone, insects, the animals people keep, and birds, plus a page on our own species.',
     heroEyebrow: 'Our species',
     appearedLabel: 'Appeared',
     appeared:
@@ -171,20 +171,23 @@ const en = {
     'homo-sapiens': 'Homo sapiens',
     insects: 'Insects',
     domesticates: 'Domesticates',
+    birds: 'Birds',
     journeyCta: 'Migration · Humans →',
     journeyNote:
       'The journey — routes, dates, and drivers — is told under Migration. This shelf keeps the species frame: origin, numbers, and what vanished after first arrival.',
     tiles: {
       surviving: 'Still here, with ranges or numbers that shifted after people spread.',
-      endangered: 'Threatened now, mainly because of people.',
-      extinct: 'Gone. Most entries are clearly human-caused.',
+      endangered: 'Species whose numbers are now low enough that they may disappear.',
+      extinct: 'Species with no living animals left.',
       'homo-sapiens':
-        'Origin in Africa, numbers today, and the large-mammal genera that vanished after first arrival. The route itself is under Migration.',
+        'Origin in Africa, numbers today, and the large mammals that vanished after people first arrived.',
       insects: 'The six-legged majority: bees, beetles, and the rest of insect life.',
       domesticates: 'Animals people keep: livestock, companions, and working species.',
+      birds:
+        'Living birds of coasts, skies and recovery programmes, from condors and cranes to penguins, puffins and albatrosses.',
     },
     survivingLead:
-      'Still here, with ranges or numbers that shifted after people spread — hunting, farms, later recovery, or boom. The dates differ by continent.',
+      'Still here, with ranges or numbers that shifted after people spread: hunting, farms, later recovery, or a boom. The dates differ by continent.',
     endangeredLead:
       'Threatened now, mainly because of people: habitat loss, hunting, bycatch, and a climate we have changed.',
     extinctLead:
@@ -193,6 +196,15 @@ const en = {
       'Insects are most of animal life. This shelf is eleven named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.',
     domesticatesLead:
       'Animals people keep — livestock, companions, and working species. The Food and Agriculture Organization of the United Nations tracks breeds worldwide in its Domestic Animal Diversity Information System. Also here: the goat, kept for meat, milk, hides and hair; the cat, kept as a companion and to control pests; the donkey, which carries loads and people; the duck, raised for meat, eggs and feathers; and the rabbit, raised for meat, fur and wool.',
+    birdsLead:
+      'Five living birds and what has happened to their numbers: the California condor and the whooping crane of North America, the Atlantic puffin of the cold North Atlantic, the African penguin of the coasts of southern Africa and the wandering albatross of the Southern Ocean.',
+    birdsHeadings: {
+      what: 'What it is',
+      range: 'Range',
+      story: 'What happened',
+      when: 'Status today',
+      humanRole: 'Human role',
+    },
     dadisSource:
       'Food and Agriculture Organization of the United Nations — Domestic Animal Diversity Information System',
     mapTitle: 'Where we went, and when',
@@ -221,8 +233,8 @@ const en = {
       'Arrival ranges, not exact years. Africa’s lower loss is the usual reading: animals there co-evolved with hominins. Continent percentages after Barnosky 2008 (and summaries such as Our World in Data; see also Andermann et al. 2020); Australia’s early site Madjedbebe, Clarkson et al. 2017. Human arrival fits the Late Quaternary pattern better than climate alone (Sandom et al. 2014); some species, including woolly mammoth, still need both.',
     mapBaseCredit:
       'Base land: NASA Blue Marble Next Generation (December 2004, public domain) — cloud-free physical Earth, not a political map.',
-    cardCta: 'Read entry →',
-    back: '← Wildlife',
+    cardCta: 'Read entry',
+    back: 'Wildlife',
     what: 'What it is',
     range: 'Range',
     story: 'What happened',
@@ -249,6 +261,7 @@ const en = {
       extinct: 'Extinct',
       insects: 'Insects',
       domesticates: 'Domesticates',
+      birds: 'Birds',
     },
   },
   about: {
@@ -480,10 +493,10 @@ const ru: typeof en = {
   wildlifePage: {
     metaTitle: 'Природа — Fix Planet',
     metaDescription:
-      'Энциклопедия того, как изменились популяции животных после расселения современного человека: выжившие, находящиеся под угрозой и вымершие виды, плюс полка Homo sapiens — происхождение, расселение и роды крупных млекопитающих, исчезнувшие после первого прихода.',
+      'Энциклопедия популяций животных: виды, которые ещё здесь, виды под угрозой, виды, которых уже нет, насекомые, доместикаты и птицы, а также страница о нашем собственном виде.',
     eyebrow: 'Энциклопедия',
     title: 'Природа',
-    lead: 'Где возник наш вид, куда мы ушли и как изменились самые крупные животные после того, как мы пришли как новый хищник.',
+    lead: 'Живые и исчезнувшие животные: виды, которые ещё здесь, виды под угрозой, виды, которых уже нет, насекомые, животные, которых держат люди, и птицы, а также страница о нашем собственном виде.',
     heroEyebrow: 'Наш вид',
     appearedLabel: 'Появился',
     appeared:
@@ -507,20 +520,23 @@ const ru: typeof en = {
     'homo-sapiens': 'Homo sapiens',
     insects: 'Насекомые',
     domesticates: 'Доместикаты',
+    birds: 'Птицы',
     journeyCta: 'Миграция · Люди →',
     journeyNote:
       'Путь — маршруты, даты и причины — рассказан в разделе «Миграция». Эта полка остаётся рамкой вида: происхождение, численность и то, что исчезло после первого прихода.',
     tiles: {
       surviving: 'Всё ещё здесь: ареал или численность сдвинулись после расселения людей.',
-      endangered: 'Под угрозой сейчас — главным образом из-за людей.',
-      extinct: 'Исчезли. Большинство карточек — явно по вине людей.',
+      endangered: 'Виды, чья численность сейчас так мала, что они могут исчезнуть.',
+      extinct: 'Виды, у которых не осталось живых животных.',
       'homo-sapiens':
-        'Происхождение в Африке, численность сегодня и роды крупных млекопитающих, исчезнувшие после первого прихода. Сам путь — в разделе «Миграция».',
+        'Происхождение в Африке, численность сегодня и крупные млекопитающие, исчезнувшие после первого прихода людей.',
       insects: 'Шестиногие: пчёлы, жуки и остальная насекомая жизнь.',
       domesticates: 'Животные, которых держат люди: скот, компаньоны и рабочие виды.',
+      birds:
+        'Живые птицы побережий, неба и программ восстановления: от кондоров и журавлей до пингвинов, тупиков и альбатросов.',
     },
     survivingLead:
-      'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей — охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
+      'Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей: охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.',
     endangeredLead:
       'Под угрозой сейчас, главным образом из-за людей: потеря мест, охота, прилов и климат, который мы изменили.',
     extinctLead:
@@ -529,6 +545,15 @@ const ru: typeof en = {
       'Насекомые — большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.',
     domesticatesLead:
       'Животные, которых держат люди: скот, компаньоны и рабочие виды. Продовольственная и сельскохозяйственная организация ООН ведёт учёт пород по всему миру в информационной системе по разнообразию домашних животных. Здесь также: коза, которую держат ради мяса, молока, шкур и шерсти; кошка, домашний компаньон и защита от вредителей; осёл, который перевозит грузы и людей; утка, которую разводят ради мяса, яиц и пера; и кролик, которого разводят ради мяса, меха и шерсти.',
+    birdsLead:
+      'Пять живых птиц и то, что происходит с их численностью: калифорнийский кондор и американский журавль Северной Америки, атлантический тупик холодной северной Атлантики, африканский пингвин побережий юга Африки и странствующий альбатрос Южного океана.',
+    birdsHeadings: {
+      what: 'Что это',
+      range: 'Ареал',
+      story: 'Что произошло',
+      when: 'Статус сегодня',
+      humanRole: 'Роль человека',
+    },
     dadisSource:
       'Продовольственная и сельскохозяйственная организация ООН — информационная система по разнообразию домашних животных',
     mapTitle: 'Куда мы ушли и когда',
@@ -557,8 +582,8 @@ const ru: typeof en = {
       'Диапазоны прихода, не точные годы. Более низкая африканская потеря — обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам — по Barnosky 2008 (и сводкам вроде Our World in Data; см. также Andermann et al. 2020); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
     mapBaseCredit:
       'Основа суши: NASA Blue Marble Next Generation (декабрь 2004, общественное достояние) — безоблачная физическая Земля, не политическая карта.',
-    cardCta: 'Читать карточку →',
-    back: '← Природа',
+    cardCta: 'Читать карточку',
+    back: 'Природа',
     what: 'Что это',
     range: 'Ареал',
     story: 'Что произошло',
@@ -585,6 +610,7 @@ const ru: typeof en = {
       extinct: 'Вымерший',
       insects: 'Насекомые',
       domesticates: 'Доместикаты',
+      birds: 'Птицы',
     },
   },
   about: {
@@ -819,10 +845,10 @@ const pl: typeof en = {
   wildlifePage: {
     metaTitle: 'Przyroda — Fix Planet',
     metaDescription:
-      'Encyklopedia tego, jak zmieniły się populacje zwierząt po rozprzestrzenieniu się współczesnego człowieka: gatunki, które przetrwały, zagrożone i wymarłe, plus półka Homo sapiens — pochodzenie, migracja i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu.',
+      'Encyklopedia populacji zwierząt: gatunki, które wciąż tu są, gatunki zagrożone, gatunki, których już nie ma, owady, zwierzęta udomowione i ptaki, a także strona o naszym własnym gatunku.',
     eyebrow: 'Encyklopedia',
     title: 'Przyroda',
-    lead: 'Gdzie powstał nasz gatunek, dokąd poszedł i jak zmieniły się największe zwierzęta, gdy przyszliśmy jako nowy drapieżnik.',
+    lead: 'Żywe i utracone zwierzęta: gatunki, które wciąż tu są, gatunki zagrożone, gatunki, których już nie ma, owady, zwierzęta trzymane przez ludzi i ptaki, a także strona o naszym własnym gatunku.',
     heroEyebrow: 'Nasz gatunek',
     appearedLabel: 'Pojawił się',
     appeared:
@@ -846,20 +872,23 @@ const pl: typeof en = {
     'homo-sapiens': 'Homo sapiens',
     insects: 'Owady',
     domesticates: 'Udomowione',
+    birds: 'Ptaki',
     journeyCta: 'Migracja · Ludzie →',
     journeyNote:
       'Droga — trasy, daty i przyczyny — jest w dziale Migracja. Ta półka zostaje ramą gatunku: pochodzenie, liczebność i to, co zniknęło po pierwszym przybyciu.',
     tiles: {
       surviving: 'Wciąż tu są: zasięg lub liczebność przesunęły się po rozprzestrzenieniu ludzi.',
-      endangered: 'Zagrożone teraz — głównie przez ludzi.',
-      extinct: 'Zniknęły. Większość kart ma jasną przyczynę ludzką.',
+      endangered: 'Gatunki, których liczebność jest dziś tak niska, że mogą zniknąć.',
+      extinct: 'Gatunki, po których nie zostało żadnych żywych zwierząt.',
       'homo-sapiens':
-        'Pochodzenie w Afryce, liczebność dziś i rodzaje dużych ssaków, które zniknęły po pierwszym przybyciu. Sama droga jest w dziale Migracja.',
+        'Pochodzenie w Afryce, liczebność dziś i duże ssaki, które zniknęły po pierwszym przybyciu ludzi.',
       insects: 'Sześcionogie: pszczoły, chrząszcze i reszta owadziego życia.',
       domesticates: 'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe.',
+      birds:
+        'Żywe ptaki wybrzeży, nieba i programów odbudowy: od kondorów i żurawi po pingwiny, maskonury i albatrosy.',
     },
     survivingLead:
-      'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi — polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
+      'Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi: polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.',
     endangeredLead:
       'Zagrożone teraz, głównie przez ludzi: utrata siedlisk, polowania, przyłów i klimat, który zmieniliśmy.',
     extinctLead:
@@ -868,6 +897,15 @@ const pl: typeof en = {
       'Owady to większość życia zwierzęcego. Ta półka to jedenaście nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, dwa trzmiele, grabarz, dwa europejskie chrząszcze martwego drewna, ważka wapiennych mokradeł, trzyszcz słonych mokradeł i wetapunga na wyspach bez drapieżników.',
     domesticatesLead:
       'Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa śledzi rasy na świecie w Systemie Informacji o Różnorodności Zwierząt Domowych. Znajdziesz tu także kozę, hodowaną dla mięsa, mleka, skór i włosia; kota, domowego towarzysza i obrońcę przed szkodnikami; osła, który nosi ładunki i ludzi; kaczkę, hodowaną dla mięsa, jaj i pierza; oraz królika, hodowanego dla mięsa, futra i wełny.',
+    birdsLead:
+      'Pięć żywych ptaków i to, co dzieje się z ich liczebnością: kondor kalifornijski i żuraw krzykliwy z Ameryki Północnej, maskonur zwyczajny z zimnego północnego Atlantyku, pingwin przylądkowy z wybrzeży południa Afryki i albatros wędrowny z Oceanu Południowego.',
+    birdsHeadings: {
+      what: 'Czym to jest',
+      range: 'Zasięg',
+      story: 'Co się stało',
+      when: 'Stan obecny',
+      humanRole: 'Rola człowieka',
+    },
     dadisSource:
       'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa — System Informacji o Różnorodności Zwierząt Domowych',
     mapTitle: 'Dokąd poszliśmy i kiedy',
@@ -896,8 +934,8 @@ const pl: typeof en = {
       'Zakresy przybycia, nie dokładne lata. Niższa strata Afryki to zwykły odczyt: zwierzęta ewoluowały tam obok homininów. Odsetki kontynentów za Barnosky 2008 (i streszczenia jak Our World in Data; zob. też Andermann et al. 2020); wczesne stanowisko Madjedbebe, Clarkson et al. 2017. Przybycie ludzi lepiej tłumaczy późnoczwartorzędowy wzór niż sam klimat (Sandom et al. 2014); niektóre gatunki, w tym mamut włochaty, wciąż wymagają obu.',
     mapBaseCredit:
       'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
-    cardCta: 'Czytaj hasło →',
-    back: '← Przyroda',
+    cardCta: 'Czytaj hasło',
+    back: 'Przyroda',
     what: 'Czym jest',
     range: 'Zasięg',
     story: 'Co się stało',
@@ -924,6 +962,7 @@ const pl: typeof en = {
       extinct: 'Wymarły',
       insects: 'Owady',
       domesticates: 'Udomowione',
+      birds: 'Ptaki',
     },
   },
   about: {
@@ -1158,10 +1197,10 @@ const lv: typeof en = {
   wildlifePage: {
     metaTitle: 'Savvaļa — Fix Planet',
     metaDescription:
-      'Enciklopēdija par to, kā dzīvnieku populācijas mainījās pēc mūsdienu cilvēka izplatīšanās: izdzīvojušās, apdraudētās un izmirstās sugas, plus Homo sapiens plaukts — izcelsme, migrācija un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās.',
+      'Enciklopēdija par dzīvnieku populācijām: sugas, kas joprojām ir šeit, apdraudētas sugas, sugas, kuru vairs nav, kukaiņi, pieradinātie dzīvnieki un putni, kā arī lapa par mūsu pašu sugu.',
     eyebrow: 'Enciklopēdija',
     title: 'Savvaļa',
-    lead: 'Kur radās mūsu suga, kur gāja un kā mainījās lielākie dzīvnieki pēc tam, kad ienācām kā jauns plēsējs.',
+    lead: 'Dzīvie un zudušie dzīvnieki: sugas, kas joprojām ir šeit, apdraudētas sugas, sugas, kuru vairs nav, kukaiņi, dzīvnieki, ko tur cilvēki, un putni, kā arī lapa par mūsu pašu sugu.',
     heroEyebrow: 'Mūsu suga',
     appearedLabel: 'Parādījās',
     appeared:
@@ -1185,20 +1224,23 @@ const lv: typeof en = {
     'homo-sapiens': 'Homo sapiens',
     insects: 'Kukaiņi',
     domesticates: 'Pieradinātie',
+    birds: 'Putni',
     journeyCta: 'Migrācija · Cilvēki →',
     journeyNote:
       'Ceļš — maršruti, datumi un iemesli — ir sadaļā Migrācija. Šis plaukts paliek sugas rāmis: izcelsme, skaits un tas, kas izzuda pēc pirmās ierašanās.',
     tiles: {
       surviving: 'Joprojām šeit: areāls vai skaits pārbīdījās pēc cilvēku izplatīšanās.',
-      endangered: 'Apdraudēti tagad — galvenokārt cilvēku dēļ.',
-      extinct: 'Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas.',
+      endangered: 'Sugas, kuru skaits tagad ir tik mazs, ka tās var izzust.',
+      extinct: 'Sugas, kurām vairs nav neviena dzīva dzīvnieka.',
       'homo-sapiens':
-        'Izcelsme Āfrikā, skaits šodien un lielo zīdītāju ģintis, kas izzuda pēc pirmās ierašanās. Pats ceļš ir sadaļā Migrācija.',
+        'Izcelsme Āfrikā, skaits šodien un lielie zīdītāji, kas izzuda pēc cilvēku pirmās ierašanās.',
       insects: 'Seškāji: bites, vaboles un pārējā kukaiņu dzīve.',
       domesticates: 'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas.',
+      birds:
+        'Dzīvie piekrastes, debesu un atjaunošanas programmu putni: no kondoriem un dzērvēm līdz pingvīniem, luņiem un albatrosiem.',
     },
     survivingLead:
-      'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās — medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',
+      'Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās: medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.',
     endangeredLead:
       'Apdraudēti tagad, galvenokārt cilvēku dēļ: dzīvotņu zudums, medības, piezveja un klimats, ko esam mainījuši.',
     extinctLead:
@@ -1207,6 +1249,15 @@ const lv: typeof en = {
       'Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir vienpadsmit nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, divas kamenes, maitas vabole, divas Eiropas mirušās koksnes vaboles, kaļķaino avoksnāju spāre, sāļo mitrāju smilšvabole un vetapunga plēsēju brīvās salās.',
     domesticatesLead:
       'Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija uzskaita šķirnes pasaulē Mājas dzīvnieku daudzveidības informācijas sistēmā. Šeit arī kaza, ko tur gaļai, pienam, ādām un vilnai; kaķis, mājas pavadonis un kaitēkļu apkarotājs; ēzelis, kas nes kravas un cilvēkus; pīle, ko audzē gaļai, olām un spalvām; un trusis, ko audzē gaļai, kažokādām un vilnai.',
+    birdsLead:
+      'Pieci dzīvi putni un tas, kas notiek ar to skaitu: Kalifornijas kondors un amerikāņu dzērve Ziemeļamerikā, Atlantijas lunis aukstajā Atlantijas okeāna ziemeļu daļā, Āfrikas pingvīns Āfrikas dienvidu piekrastē un klejojošais albatross Dienvidu okeānā.',
+    birdsHeadings: {
+      what: 'Kas tas ir',
+      range: 'Izplatība',
+      story: 'Kas notika',
+      when: 'Pašreizējais stāvoklis',
+      humanRole: 'Cilvēka loma',
+    },
     dadisSource:
       'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija — Mājas dzīvnieku daudzveidības informācijas sistēma',
     mapTitle: 'Kur gājām un kad',
@@ -1235,8 +1286,8 @@ const lv: typeof en = {
       'Ierašanās diapazoni, ne precīzi gadi. Āfrikas mazāko zudumu parasti skaidro ar to, ka dzīvnieki tur evolūcijā jau bija līdzās hominīniem. Kontinentu procenti pēc Barnosky 2008 (un kopsavilkumiem kā Our World in Data; skat. arī Andermann et al. 2020); Austrālijas agrā vieta Madjedbebe, Clarkson et al. 2017. Cilvēku ierašanās vēlo kvartāru labāk izskaidro nekā klimats viens (Sandom et al. 2014); dažām sugām, tostarp vilnainajam mamutam, joprojām vajag abus.',
     mapBaseCredit:
       'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums) — bez mākoņiem fiziskā Zeme, ne politiskā karte.',
-    cardCta: 'Lasīt šķirkli →',
-    back: '← Savvaļa',
+    cardCta: 'Lasīt šķirkli',
+    back: 'Savvaļa',
     what: 'Kas tas ir',
     range: 'Areāls',
     story: 'Kas notika',
@@ -1263,6 +1314,7 @@ const lv: typeof en = {
       extinct: 'Izmiris',
       insects: 'Kukaiņi',
       domesticates: 'Pieradinātie',
+      birds: 'Putni',
     },
   },
   about: {
