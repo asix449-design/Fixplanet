@@ -155,7 +155,7 @@ export const lawEcologyChemicalsRu: Record<string, LawCopy> = {
     sourcesNote: 'Сборник договоров Организации Объединённых Наций, депозитарное уведомление о Тринидаде и Тобаго, аэрофотоснимок 1974 года и условия использования японского министерства.',
     sources: sources([
       ['Сборник договоров Организации Объединённых Наций: Минаматская конвенция о ртути (глава XXVII, № 17) (United Nations Treaty Collection: Minamata Convention on Mercury)', 'https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-17&src=TREATY'],
-      ['Депозитарное уведомление Организации Объединённых Наций C.N.260.2026.TREATIES-XXVII.17 (присоединение Тринидада и Тобаго, 26 июня 2026 года) (United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17, Trinidad and Tobago accession, 26 June 2026)', 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf'],
+      ['Депозитарное уведомление Организации Объединённых Наций (присоединение Тринидада и Тобаго, 26 июня 2026 года) (United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17, Trinidad and Tobago accession, 26 June 2026)', 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf'],
       ['Викисклад: Залив Минамата, 1974 год, аэрофотоснимок (Minamata Bay 1974)', 'https://commons.wikimedia.org/wiki/File:Minamata_Bay_1974.jpg'],
       ['Министерство земли, инфраструктуры, транспорта и туризма Японии: условия использования Веб-картографической системы земельной информации, на японском языке (Terms of use of the Land Information Web Mapping System, in Japanese)', 'https://nlftp.mlit.go.jp/ksj/other/agreement_05.html'],
     ]),
@@ -276,7 +276,7 @@ export const lawEcologyChemicalsPl: Record<string, LawCopy> = {
     sourcesNote: 'Zbiór Traktatów Organizacji Narodów Zjednoczonych, notyfikacja depozytariusza o Trynidadzie i Tobago, zdjęcie lotnicze z 1974 r. oraz warunki korzystania japońskiego ministerstwa.',
     sources: sources([
       ['Zbiór Traktatów Organizacji Narodów Zjednoczonych: Konwencja z Minamaty w sprawie rtęci (rozdział XXVII, nr 17) (United Nations Treaty Collection: Minamata Convention on Mercury)', 'https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-17&src=TREATY'],
-      ['Notyfikacja depozytariusza Organizacji Narodów Zjednoczonych C.N.260.2026.TREATIES-XXVII.17 (przystąpienie Trynidadu i Tobago, 26 czerwca 2026 r.) (United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17, Trinidad and Tobago accession, 26 June 2026)', 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf'],
+      ['Notyfikacja depozytariusza Organizacji Narodów Zjednoczonych (przystąpienie Trynidadu i Tobago, 26 czerwca 2026 r.) (United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17, Trinidad and Tobago accession, 26 June 2026)', 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf'],
       ['Wikimedia Commons: Zatoka Minamata 1974, zdjęcie lotnicze (Minamata Bay 1974)', 'https://commons.wikimedia.org/wiki/File:Minamata_Bay_1974.jpg'],
       ['Ministerstwo Ziemi, Infrastruktury, Transportu i Turystyki Japonii: warunki korzystania z Internetowego Systemu Map Informacji o Terenie, po japońsku (Terms of use of the Land Information Web Mapping System, in Japanese)', 'https://nlftp.mlit.go.jp/ksj/other/agreement_05.html'],
     ]),
@@ -397,7 +397,7 @@ export const lawEcologyChemicalsLv: Record<string, LawCopy> = {
     sourcesNote: 'Apvienoto Nāciju Līgumu krājums, depozitāra paziņojums par Trinidadu un Tobāgo, 1974. gada aerofoto un Japānas ministrijas lietošanas noteikumi.',
     sources: sources([
       ['Apvienoto Nāciju Līgumu krājums: Minamatas konvencija par dzīvsudrabu (XXVII nodaļa, Nr. 17) (United Nations Treaty Collection: Minamata Convention on Mercury)', 'https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-17&src=TREATY'],
-      ['Apvienoto Nāciju depozitāra paziņojums C.N.260.2026.TREATIES-XXVII.17 (Trinidadas un Tobāgo pievienošanās, 2026. gada 26. jūnijs) (United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17, Trinidad and Tobago accession, 26 June 2026)', 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf'],
+      ['Apvienoto Nāciju depozitāra paziņojums (Trinidadas un Tobāgo pievienošanās, 2026. gada 26. jūnijs) (United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17, Trinidad and Tobago accession, 26 June 2026)', 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf'],
       ['Wikimedia Commons: Minamatas līcis 1974. gadā, aerofoto (Minamata Bay 1974)', 'https://commons.wikimedia.org/wiki/File:Minamata_Bay_1974.jpg'],
       ['Japānas Zemes, infrastruktūras, transporta un tūrisma ministrija: Zemes informācijas tīmekļa kartēšanas sistēmas lietošanas noteikumi japāņu valodā (Terms of use of the Land Information Web Mapping System, in Japanese)', 'https://nlftp.mlit.go.jp/ksj/other/agreement_05.html'],
     ]),
