@@ -60,7 +60,10 @@ const items = getLawsByCategory(locale, category);
                 >
                   {page.status[status]}
                 </a>
-                <p>{category === 'ai' ? page.aiStatusLeads[status] : page.statusLeads[status]}</p>
+                <p>
+                  {/* Animals keeps its shelf lines. Ecology uses the cleaned lines, as the AI shelf does. */}
+                  {category === 'animals' ? page.statusLeads[status] : page.aiStatusLeads[status]}
+                </p>
               </div>
             </div>
             {shelf.length === 0 ? (

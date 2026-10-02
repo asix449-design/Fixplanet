@@ -489,6 +489,165 @@ export const lawMeta: LawMeta[] = [
     ],
   },
   {
+    slug: 'minamata-convention',
+    category: 'ecology',
+    status: 'existing',
+    year: '2013',
+    image: img(
+      'minamata-convention-preview.jpg',
+      'Ministry of Land, Infrastructure, Transport and Tourism of Japan',
+      'Ministry terms of use (compatible with CC BY 4.0)',
+      'https://commons.wikimedia.org/wiki/File:Minamata_Bay_1974.jpg',
+      1920,
+      1080,
+    ),
+    sources: [
+      {
+        label:
+          'United Nations Treaty Collection: Minamata Convention on Mercury (Chapter XXVII, No. 17)',
+        url: 'https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-17&src=TREATY',
+      },
+      {
+        label:
+          'United Nations depositary notification C.N.260.2026.TREATIES-XXVII.17 (Trinidad and Tobago accession, 26 June 2026)',
+        url: 'https://treaties.un.org/doc/Publication/CN/2026/CN.260.2026-Eng.pdf',
+      },
+      {
+        label: 'Wikimedia Commons: Minamata Bay 1974 (aerial photograph)',
+        url: 'https://commons.wikimedia.org/wiki/File:Minamata_Bay_1974.jpg',
+      },
+      {
+        label:
+          'Ministry of Land, Infrastructure, Transport and Tourism of Japan: terms of use of the Land Information Web Mapping System (in Japanese)',
+        url: 'https://nlftp.mlit.go.jp/ksj/other/agreement_05.html',
+      },
+    ],
+  },
+  {
+    slug: 'basel-convention',
+    category: 'ecology',
+    status: 'existing',
+    year: '1989',
+    image: img(
+      'basel-convention-preview.jpg',
+      'Taxiarchos228',
+      'Free Art License 1.3',
+      'https://commons.wikimedia.org/wiki/File:Basel_-_Sonnenuntergang_am_Rheinufer.jpg',
+      1920,
+      1080,
+    ),
+    sources: [
+      {
+        label:
+          'United Nations Treaty Collection: Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and their Disposal (Chapter XXVII, No. 3)',
+        url: 'https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-3&chapter=27&clang=_en',
+      },
+      {
+        label: 'Secretariat of the Basel Convention: Overview',
+        url: 'https://www.basel.int/TheConvention/Overview/tabid/1271/Default.aspx',
+      },
+      {
+        label: 'Secretariat of the Basel Convention: Ban Amendment',
+        url: 'https://www.basel.int/Implementation/LegalMatters/BanAmendment/tabid/1484/Default.aspx',
+      },
+      {
+        label: 'Secretariat of the Basel Convention: Plastic waste amendments',
+        url: 'https://www.basel.int/Implementation/Plasticwaste/Amendments/Overview/tabid/8426/Default.aspx',
+      },
+      {
+        label: 'Wikimedia Commons: Basel - Sonnenuntergang am Rheinufer (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Basel_-_Sonnenuntergang_am_Rheinufer.jpg',
+      },
+    ],
+  },
+  {
+    slug: 'stockholm-convention',
+    category: 'ecology',
+    status: 'existing',
+    year: '2001',
+    image: img(
+      'stockholm-convention-preview.jpg',
+      'Kim Hansen',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Stockholm_city_hall_2008-07-15-1_filtered.jpg',
+      1920,
+      1080,
+    ),
+    sources: [
+      {
+        label:
+          'United Nations Treaty Collection: Stockholm Convention on Persistent Organic Pollutants (Chapter XXVII, No. 15)',
+        url: 'https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-15&src=TREATY',
+      },
+      {
+        label: 'Secretariat of the Stockholm Convention: Overview',
+        url: 'https://www.pops.int/TheConvention/Overview/tabid/3351/Default.aspx',
+      },
+      {
+        label: 'Wikimedia Commons: Stockholm city hall 2008-07-15-1 filtered (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Stockholm_city_hall_2008-07-15-1_filtered.jpg',
+      },
+    ],
+  },
+  {
+    slug: 'rotterdam-convention',
+    category: 'ecology',
+    status: 'existing',
+    year: '1998',
+    image: img(
+      'rotterdam-convention-preview.jpg',
+      'Olivier Cleynen',
+      'CC BY 4.0',
+      'https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_the_port_of_Rotterdam_in_2017_(1).jpg',
+      1920,
+      1080,
+    ),
+    sources: [
+      {
+        label: 'Secretariat of the Rotterdam Convention: Overview',
+        url: 'https://www.pic.int/TheConvention/Overview',
+      },
+      {
+        label: 'United Nations Treaty Collection: Rotterdam Convention (Chapter XXVII, No. 14)',
+        url: 'https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-14&src=TREATY',
+      },
+      {
+        label:
+          'Wikimedia Commons: Aerial photograph of the port of Rotterdam in 2017 (1) (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_the_port_of_Rotterdam_in_2017_(1).jpg',
+      },
+    ],
+  },
+  {
+    slug: 'escazu-agreement',
+    category: 'ecology',
+    status: 'existing',
+    year: '2018',
+    image: img(
+      'escazu-agreement-preview.jpg',
+      'Warko2006',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:CEPAL_building.jpg',
+      1920,
+      1080,
+    ),
+    sources: [
+      {
+        label:
+          'Economic Commission for Latin America and the Caribbean: Regional Agreement on Access to Information, Public Participation and Justice in Environmental Matters in Latin America and the Caribbean (Escazú Agreement)',
+        url: 'https://www.cepal.org/en/escazuagreement',
+      },
+      {
+        label: 'United Nations Treaty Collection: Escazú Agreement (Chapter XXVII, No. 18)',
+        url: 'https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-18&chapter=27&clang=_en',
+      },
+      {
+        label: 'Wikimedia Commons: CEPAL building (photo)',
+        url: 'https://commons.wikimedia.org/wiki/File:CEPAL_building.jpg',
+      },
+    ],
+  },
+  {
     slug: 'un-plastics-treaty',
     category: 'ecology',
     status: 'pending',
