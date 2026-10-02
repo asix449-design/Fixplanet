@@ -10,6 +10,12 @@ import {
 } from '../data/law';
 import type { Locale } from './config';
 import { lawAiPackEn, lawAiPackLv, lawAiPackPl, lawAiPackRu } from './law-ai-pack';
+import {
+  lawEcologyChemicalsEn,
+  lawEcologyChemicalsLv,
+  lawEcologyChemicalsPl,
+  lawEcologyChemicalsRu,
+} from './law-ecology-chemicals-pack';
 import { en } from './law-en';
 import { lv as lvEntries } from './law-lv';
 import { pl as plEntries } from './law-pl';
@@ -111,7 +117,7 @@ const pageEn: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Climate, pollution, forest, land, and circular-economy instruments. Restoration and clean-air statutes sit next to a plastics negotiation that is still not a treaty.',
+      'Climate, pollution, forest, land, and circular-economy instruments. Restoration and clean-air statutes sit beside the plastics negotiation. Also here: the global mercury treaty; the hazardous wastes trade rules; the persistent organic pollutants treaty; the prior informed consent procedure for certain hazardous chemicals and pesticides in trade; and the Latin American and Caribbean regional agreement on environmental information, participation and justice.',
     ai: 'Safety, risk management, transparency, and liability for high-risk and frontier systems. A withdrawn liability text is labeled as an idea. Also here: the Council of Europe’s treaty on artificial intelligence, human rights, democracy and the rule of law; the ethics recommendation of the United Nations Educational, Scientific and Cultural Organization (UNESCO); the AI principles of the Organisation for Economic Co-operation and Development (OECD); the AI Risk Management Framework of the U.S. National Institute of Standards and Technology; and the United Kingdom’s approach of regulating AI through its existing regulators.',
     animals:
       'Wildlife trade, endangered-species listing, habitat networks, a live U.S. corridor bill, and one clearly labeled idea about intentional companion-animal cruelty. Habitat and species law first; the companion-animal card is an idea, not a statute.',
@@ -196,7 +202,7 @@ const pageRu: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Климат, загрязнение, леса, земля и циркулярная экономика. Рядом с законами о восстановлении и чистом воздухе — переговоры о пластике, которые ещё не договор.',
+      'Климат, загрязнение, леса, земля и циркулярная экономика. Рядом с законами о восстановлении и чистом воздухе идут переговоры о пластике. Здесь также: глобальный договор о ртути; правила международной перевозки опасных отходов; договор о стойких органических загрязнителях; процедура предварительного обоснованного согласия для отдельных опасных химических веществ и пестицидов в торговле; региональное соглашение Латинской Америки и Карибского бассейна об экологической информации, участии и правосудии.',
     ai: 'Безопасность, риск, прозрачность и ответственность для высокорисковых и передовых систем. Отозванный текст об ответственности помечен как идея. Здесь также: договор Совета Европы об искусственном интеллекте, правах человека, демократии и верховенстве права; рекомендация по этике Организации Объединённых Наций по вопросам образования, науки и культуры (ЮНЕСКО); принципы искусственного интеллекта Организации экономического сотрудничества и развития (ОЭСР); рамочная программа управления рисками искусственного интеллекта Национального института стандартов и технологий США; и британский подход, при котором искусственный интеллект регулируют уже существующие надзорные органы.',
     animals:
       'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете умышленной жестокости к животному-компаньону. Сначала право видов и местообитаний; карточка о компаньонах — идея, не статут.',
@@ -281,7 +287,7 @@ const pagePl: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Klimat, zanieczyszczenia, lasy, ziemia i obieg zamknięty. Obok ustaw o restytucji i czystym powietrzu — negocjacje o plastiku, które nie są jeszcze traktatem.',
+      'Klimat, zanieczyszczenia, lasy, ziemia i obieg zamknięty. Obok ustaw o restytucji i czystym powietrzu trwają negocjacje o plastiku. Znajdziesz tu także: globalny traktat o rtęci; reguły handlu odpadami niebezpiecznymi; traktat o trwałych zanieczyszczeniach organicznych; procedurę uprzedniej zgody po uzyskaniu informacji dla niektórych niebezpiecznych chemikaliów i pestycydów w handlu; regionalne porozumienie Ameryki Łacińskiej i Karaibów w sprawie informacji, udziału i sprawiedliwości w sprawach środowiska.',
     ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność systemów wysokiego ryzyka i granicznych. Wycofany tekst o odpowiedzialności jest ideą. Znajdziesz tu także: traktat Rady Europy o sztucznej inteligencji, prawach człowieka, demokracji i praworządności; zalecenie w sprawie etyki Organizacji Narodów Zjednoczonych do spraw Oświaty, Nauki i Kultury; zasady dotyczące sztucznej inteligencji Organizacji Współpracy Gospodarczej i Rozwoju; ramy zarządzania ryzykiem sztucznej inteligencji Narodowego Instytutu Standaryzacji i Technologii Stanów Zjednoczonych; oraz brytyjskie podejście, w którym sztuczną inteligencję regulują istniejące organy nadzoru.',
     animals:
       'Handel dzikimi gatunkami, listy zagrożonych, sieci siedlisk, żywy amerykański projekt o korytarzach i jedna jasno oznaczona idea o parytecie umyślnego znęcania się nad zwierzęciem towarzyszącym. Najpierw prawo gatunków i siedlisk; karta o zwierzętach towarzyszących jest ideą, nie statutem.',
@@ -366,7 +372,7 @@ const pageLv: LawPage = {
   },
   categoryLeads: {
     ecology:
-      'Klimats, piesārņojums, meži, zeme un aprites ekonomika. Blakus atjaunošanas un tīrā gaisa statūtiem — plastmasas sarunas, kas vēl nav līgums.',
+      'Klimats, piesārņojums, meži, zeme un aprites ekonomika. Blakus atjaunošanas un tīrā gaisa statūtiem turpinās plastmasas sarunas. Šeit arī: globālais dzīvsudraba līgums; bīstamo atkritumu starptautiskās pārvadāšanas noteikumi; noturīgo organisko piesārņotāju līgums; iepriekšējas informētas piekrišanas procedūra noteiktām bīstamām ķīmiskām vielām un pesticīdiem tirdzniecībā; Latīņamerikas un Karību reģiona nolīgums par vides informāciju, līdzdalību un tiesiskumu.',
     ai: 'Drošība, risks, caurredzamība un atbildība augsta riska un robežsistēmām. Atsaukts atbildības teksts ir ideja. Šeit arī: Eiropas Padomes līgums par mākslīgo intelektu, cilvēktiesībām, demokrātiju un tiesiskumu; Apvienoto Nāciju Izglītības, zinātnes un kultūras organizācijas ieteikums par ētiku; Ekonomiskās sadarbības un attīstības organizācijas mākslīgā intelekta principi; Amerikas Savienoto Valstu Nacionālā standartu un tehnoloģiju institūta mākslīgā intelekta risku pārvaldības ietvars; un Apvienotās Karalistes pieeja, kurā mākslīgo intelektu regulē esošās uzraudzības iestādes.',
     animals:
       'Savvaļas tirdzniecība, apdraudēto saraksti, dzīvotņu tīkli, dzīvs ASV koridoru likumprojekts un viena skaidri marķēta ideja par tīšas cietsirdības pret kompanjondzīvnieku paritāti. Vispirms sugu un dzīvotņu tiesības; kompanjonu kartīte ir ideja, ne statūts.',
@@ -406,10 +412,10 @@ const page: Record<Locale, LawPage> = {
 };
 
 const copy: Record<Locale, Record<string, LawCopy>> = {
-  en: { ...en, ...lawAiPackEn },
-  ru: { ...ruEntries, ...lawAiPackRu },
-  pl: { ...plEntries, ...lawAiPackPl },
-  lv: { ...lvEntries, ...lawAiPackLv },
+  en: { ...en, ...lawAiPackEn, ...lawEcologyChemicalsEn },
+  ru: { ...ruEntries, ...lawAiPackRu, ...lawEcologyChemicalsRu },
+  pl: { ...plEntries, ...lawAiPackPl, ...lawEcologyChemicalsPl },
+  lv: { ...lvEntries, ...lawAiPackLv, ...lawEcologyChemicalsLv },
 };
 
 const aiLiveSlugs = [

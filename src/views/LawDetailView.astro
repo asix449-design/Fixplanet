@@ -22,8 +22,9 @@ const categoryHref = localizePath(lawCategoryPath(item.category), locale);
 const birdsHref = localizePath(lawDetailPath('birds-directive'), locale);
 const related = getRelatedLaws(locale, item.slug);
 const naturalFigure = Boolean(item.image.width && item.image.height);
-const ideaBanner = item.category === 'ai' ? page.aiIdeaBanner : page.ideaBanner;
-const pendingBanner = item.category === 'ai' ? page.aiPendingBanner : page.pendingBanner;
+const cleanedShelf = item.category === 'ai' || item.category === 'ecology';
+const ideaBanner = cleanedShelf ? page.aiIdeaBanner : page.ideaBanner;
+const pendingBanner = cleanedShelf ? page.aiPendingBanner : page.pendingBanner;
 
 /** Longest first so inflected forms win over a shorter stem. */
 const birdsPhrases = [

@@ -333,5 +333,45 @@
     "artist": "Samson Ng",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Atlantic_Ocean.jpg"
+  },
+  {
+    "slug": "minamata-convention",
+    "file": "minamata-convention-preview.jpg",
+    "commonsTitle": "Minamata Bay 1974.jpg",
+    "artist": "Ministry of Land, Infrastructure, Transport and Tourism of Japan (National Land Image Information, Color Aerial Photographs), 1974",
+    "license": "Ministry terms of use for the Land Information Web Mapping System, compatible with CC BY 4.0; cropped by Fix Planet",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minamata_Bay_1974.jpg"
+  },
+  {
+    "slug": "basel-convention",
+    "file": "basel-convention-preview.jpg",
+    "commonsTitle": "Basel - Sonnenuntergang am Rheinufer.jpg",
+    "artist": "Taxiarchos228",
+    "license": "Free Art License 1.3; cropped by Fix Planet",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basel_-_Sonnenuntergang_am_Rheinufer.jpg"
+  },
+  {
+    "slug": "stockholm-convention",
+    "file": "stockholm-convention-preview.jpg",
+    "commonsTitle": "Stockholm city hall 2008-07-15-1 filtered.jpg",
+    "artist": "Kim Hansen",
+    "license": "CC BY-SA 3.0; cropped by Fix Planet",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stockholm_city_hall_2008-07-15-1_filtered.jpg"
+  },
+  {
+    "slug": "rotterdam-convention",
+    "file": "rotterdam-convention-preview.jpg",
+    "commonsTitle": "Aerial photograph of the port of Rotterdam in 2017 (1).jpg",
+    "artist": "Olivier Cleynen",
+    "license": "CC BY 4.0; cropped by Fix Planet",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_the_port_of_Rotterdam_in_2017_(1).jpg"
+  },
+  {
+    "slug": "escazu-agreement",
+    "file": "escazu-agreement-preview.jpg",
+    "commonsTitle": "CEPAL building.jpg",
+    "artist": "Warko2006",
+    "license": "CC BY-SA 3.0; cropped by Fix Planet",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CEPAL_building.jpg"
   }
 ]
