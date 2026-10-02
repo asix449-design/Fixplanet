@@ -227,7 +227,7 @@ export const ru: Record<string, MapCopy> = {
         'https://climate.copernicus.eu/global-climate-highlights-2025',
       ),
       cite(
-        'Служба по изменению климата «Коперник»: основные климатические показатели мира за 2025 год, полный доклад, PDF (Global Climate Highlights 2025, full report)',
+        'Служба по изменению климата «Коперник»: полный доклад (Global Climate Highlights 2025, full report, PDF)',
         'https://climate.copernicus.eu/sites/default/files/custom-uploads/GCH-2025/GCH2025-full-report.pdf',
       ),
       cite(
@@ -284,7 +284,7 @@ export const ru: Record<string, MapCopy> = {
         'https://nsidc.org/data/mod10cm/versions/61',
       ),
       cite(
-        'Национальный центр данных по снегу и льду: руководство пользователя, PDF (MODIS/Terra Snow Cover Monthly L3 Global 0.05Deg CMG, Version 61, User Guide)',
+        'Национальный центр данных по снегу и льду: руководство пользователя (MODIS/Terra Snow Cover Monthly L3 Global 0.05Deg CMG, Version 61, User Guide, PDF)',
         'https://nsidc.org/sites/default/files/mod10cm-v061-userguide_0.pdf',
       ),
       cite(

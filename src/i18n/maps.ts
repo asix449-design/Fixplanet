@@ -56,12 +56,12 @@ const pageEn: MapsPage = {
   eyebrow: 'Map room',
   title: 'Maps',
   lead:
-    'Public maps of conflict, languages, religion, crime, pollution, subsurface resources, forests, water, population, climate, and the political world. History of borders is a century timeline from 1 CE to now. Religions is an early-century schematic shelf plus the AD 600 Christianity process companion.',
+    'Public maps of conflict, languages, religion, crime, pollution, subsurface resources, forests, water, population, climate, and the political world. History of borders is a century timeline from 1 CE to now. Religions covers early-century schematics and the AD 600 Christianity process companion.',
   filterAria: 'Filter maps by category',
   chooseCategory: 'Choose a shelf',
   tiles: {
     'history-of-borders': 'Century frames from 1 CE to now.',
-    religious: 'Pilot schematics for the early centuries CE.',
+    religious: 'Pilot schematics for the early centuries CE — not a census.',
     conflicts:
       'Armed events, battle deaths, peacefulness, state fragility, military spending, and conflict intensity.',
     ethnic: 'Language families as public cartography.',
@@ -71,7 +71,7 @@ const pageEn: MapsPage = {
     subsurface:
       'Oil, gas, and minerals: fossil fuel and fossil gold. Also here: the world’s coal mines and proved coal reserves, the countries that lead in mining and processing critical minerals, and where rare earths and lithium are mined.',
     political:
-      'States, first-order provinces, disputed land polygons, land boundary lines, and maritime EEZ.',
+      'States, first-order provinces, disputed land polygons, land boundary lines, and maritime exclusive economic zones.',
     forests: 'Canopy, loss, and protected areas from named sources.',
     water: 'Rivers, basins, groundwater, lakes, wetlands, flood hazard, and freshwater stress.',
     climate:
@@ -90,7 +90,7 @@ const pageEn: MapsPage = {
     'history-of-borders': '1 CE to now',
     climate: 'open climate data',
   },
-  cardCta: 'Read the card',
+  cardCta: 'Read the card →',
   openSource: 'Open source map →',
   yearLabel: 'Vintage',
   sourceLabel: 'Source',
@@ -134,12 +134,12 @@ const pageRu: MapsPage = {
   eyebrow: 'Картографическая',
   title: 'Карты',
   lead:
-    'Открытые карты конфликтов, языков, религий, преступности, загрязнения, ресурсов недр, лесов, воды, населения, климата и политического мира. «История границ»: лента столетий от 1 года н. э. до сегодня. «Религии»: полка схем ранних веков и компаньон процесса христианства до 600.',
+    'Открытые карты конфликтов, языков, религий, преступности, загрязнения, ресурсов недр, лесов, воды, населения, климата и политического мира. «История границ»: лента столетий от 1 года н. э. до сегодня. «Религии»: схемы ранних веков и компаньон процесса христианства до 600.',
   filterAria: 'Фильтр карт по теме',
   chooseCategory: 'Выберите полку',
   tiles: {
     'history-of-borders': 'Кадры по столетиям от 1 года н. э. до сейчас.',
-    religious: 'Пилотные схемы ранних веков н. э.',
+    religious: 'Пилотные схемы ранних веков н. э. — не перепись.',
     conflicts:
       'События насилия, гибель в бою, миролюбие, хрупкость государств, военные расходы и интенсивность конфликтов.',
     ethnic: 'Языковые семьи как открытая картография.',
@@ -149,7 +149,7 @@ const pageRu: MapsPage = {
     subsurface:
       'Нефть, газ и ископаемые: топливо и золото недр. Здесь также: угольные шахты мира и доказанные запасы угля, страны, лидирующие в добыче и переработке критически важных минералов, и места добычи редкоземельных металлов и лития.',
     political:
-      'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и морские ИЭЗ.',
+      'Государства, провинции первого порядка, спорные сухопутные полигоны, линии сухопутных границ и исключительная экономическая зона.',
     forests: 'Полог, потери и ООПТ по названным источникам.',
     water:
       'Реки, бассейны, подземные воды, озёра, водно-болотные угодья, наводнения и нехватка пресной воды.',
@@ -169,7 +169,7 @@ const pageRu: MapsPage = {
     'history-of-borders': 'от 1 н. э. до сейчас',
     climate: 'открытые климатические данные',
   },
-  cardCta: 'Читать карточку',
+  cardCta: 'Читать карточку →',
   openSource: 'Открыть исходную карту →',
   yearLabel: 'Годы данных',
   sourceLabel: 'Источник',
@@ -213,12 +213,12 @@ const pagePl: MapsPage = {
   eyebrow: 'Mapownia',
   title: 'Mapy',
   lead:
-    'Publiczne mapy konfliktów, języków, religii, przestępczości, zanieczyszczeń, zasobów podziemnych, lasów, wody, ludności, klimatu i świata politycznego. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Religie to półka schematów wczesnych wieków oraz towarzysz procesu chrześcijaństwa do 600.',
+    'Publiczne mapy konfliktów, języków, religii, przestępczości, zanieczyszczeń, zasobów podziemnych, lasów, wody, ludności, klimatu i świata politycznego. Historia granic to oś czasu stuleci od 1 n.e. do dziś. Religie obejmują schematy wczesnych wieków oraz towarzysza procesu chrześcijaństwa do 600.',
   filterAria: 'Filtruj mapy według kategorii',
   chooseCategory: 'Wybierz półkę',
   tiles: {
     'history-of-borders': 'Klatki stuleci od 1 n.e. do dziś.',
-    religious: 'Schematy pilotażowe wczesnych wieków n.e.',
+    religious: 'Schematy pilotażowe wczesnych wieków n.e. — nie spis.',
     conflicts:
       'Zbrojne zdarzenia, ofiary bojowe, pokojowość, kruchość państw, wydatki wojskowe i intensywność konfliktów.',
     ethnic: 'Rodziny językowe jako kartografia publiczna.',
@@ -228,7 +228,7 @@ const pagePl: MapsPage = {
     subsurface:
       'Ropa, gaz i minerały: paliwo kopalne i kopalne złoto. Znajdziesz tu także: kopalnie węgla na świecie i udokumentowane zasoby węgla, kraje przodujące w wydobyciu i przetwarzaniu minerałów krytycznych oraz miejsca wydobycia metali ziem rzadkich i litu.',
     political:
-      'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i morskie EEZ.',
+      'Państwa, prowincje pierwszego rzędu, sporne poligony lądowe, linie granic lądowych i wyłączna strefa ekonomiczna.',
     forests: 'Okap, ubytek i obszary chronione z nazwanych źródeł.',
     water: 'Rzeki, zlewnie, wody podziemne, jeziora, mokradła, zagrożenie powodziowe i presja na wodę słodką.',
     climate:
@@ -247,7 +247,7 @@ const pagePl: MapsPage = {
     'history-of-borders': 'od 1 n.e. do dziś',
     climate: 'otwarte dane klimatyczne',
   },
-  cardCta: 'Czytaj kartę',
+  cardCta: 'Czytaj kartę →',
   openSource: 'Otwórz mapę źródłową →',
   yearLabel: 'Rocznik',
   sourceLabel: 'Źródło',
@@ -291,12 +291,12 @@ const pageLv: MapsPage = {
   eyebrow: 'Karšu zāle',
   title: 'Kartes',
   lead:
-    'Publiskas kartes par konfliktiem, valodām, reliģijām, noziedzību, piesārņojumu, zemes dzīļu resursiem, mežiem, ūdeni, iedzīvotājiem, klimatu un politisko pasauli. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģijas ir agrīno gadsimtu shēmu plaukts un kristietības procesa pavadonis līdz 600.',
+    'Publiskas kartes par konfliktiem, valodām, reliģijām, noziedzību, piesārņojumu, zemes dzīļu resursiem, mežiem, ūdeni, iedzīvotājiem, klimatu un politisko pasauli. Robežu vēsture ir gadsimtu laika līnija no 1. m.ē. līdz šodienai. Reliģijas aptver agrīno gadsimtu shēmas un kristietības procesa pavadoni līdz 600.',
   filterAria: 'Filtrēt kartes pēc kategorijas',
   chooseCategory: 'Izvēlies plauktu',
   tiles: {
     'history-of-borders': 'Gadsimtu kadri no 1. m.ē. līdz šodienai.',
-    religious: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem.',
+    religious: 'Pilotshēmas agrīnajiem m.ē. gadsimtiem — ne tautas skaitīšana.',
     conflicts:
       'Bruņoti notikumi, kaujas zaudējumi, miera rādītāji, valstu trauslums, militārie izdevumi un konfliktu intensitāte.',
     ethnic: 'Valodu saimes kā publiska kartogrāfija.',
@@ -306,7 +306,7 @@ const pageLv: MapsPage = {
     subsurface:
       'Nafta, gāze un izrakteņi: fosilā degviela un fosilais zelts. Šeit arī pasaules ogļu raktuves un pierādītās ogļu rezerves, valstis, kas ir vadošās kritiski svarīgo minerālu ieguvē un pārstrādē, un vietas, kur iegūst retzemju metālus un litiju.',
     political:
-      'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un jūras IEZ.',
+      'Valstis, pirmās kārtas provinces, strīdīgie sauszemes poligoni, sauszemes robežlīnijas un ekskluzīvā ekonomiskā zona.',
     forests: 'Vainags, zudums un aizsargājamās teritorijas no nosauktiem avotiem.',
     water: 'Upes, baseini, pazemes ūdeņi, ezeri, mitrāji, plūdu risks un saldūdens stress.',
     climate:
@@ -325,7 +325,7 @@ const pageLv: MapsPage = {
     'history-of-borders': 'no 1. m.ē. līdz šodienai',
     climate: 'atvērti klimata dati',
   },
-  cardCta: 'Lasīt kartīti',
+  cardCta: 'Lasīt kartīti →',
   openSource: 'Atvērt avota karti →',
   yearLabel: 'Datu gadi',
   sourceLabel: 'Avots',

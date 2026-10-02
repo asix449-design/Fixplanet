@@ -227,7 +227,7 @@ export const lv: Record<string, MapCopy> = {
         'https://climate.copernicus.eu/global-climate-highlights-2025',
       ),
       cite(
-        'Copernicus klimata pārmaiņu dienests: pasaules klimata galvenie rādītāji 2025. gadā, pilns ziņojums, PDF (Global Climate Highlights 2025, full report)',
+        'Copernicus klimata pārmaiņu dienests: pilns ziņojums (Global Climate Highlights 2025, full report, PDF)',
         'https://climate.copernicus.eu/sites/default/files/custom-uploads/GCH-2025/GCH2025-full-report.pdf',
       ),
       cite(
@@ -284,7 +284,7 @@ export const lv: Record<string, MapCopy> = {
         'https://nsidc.org/data/mod10cm/versions/61',
       ),
       cite(
-        'Nacionālais sniega un ledus datu centrs: lietotāja rokasgrāmata, PDF (MODIS/Terra Snow Cover Monthly L3 Global 0.05Deg CMG, Version 61, User Guide)',
+        'Nacionālais sniega un ledus datu centrs: lietotāja rokasgrāmata (MODIS/Terra Snow Cover Monthly L3 Global 0.05Deg CMG, Version 61, User Guide, PDF)',
         'https://nsidc.org/sites/default/files/mod10cm-v061-userguide_0.pdf',
       ),
       cite(
