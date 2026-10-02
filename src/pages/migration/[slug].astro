@@ -5,10 +5,17 @@ import {
   migrationPathRedirects,
   migrationShelfKeys,
 } from '../../data/migration';
+import {
+  isMissingMigrantId,
+  missingMigrantIds,
+  missingMigrantsShelfSlug,
+} from '../../data/missing-migrants';
 import { isRemittanceId, remittanceIds } from '../../data/remittances';
 import { getMigrationBySlug, localizePath, resolveLocale } from '../../i18n';
 import MigrationDetailView from '../../views/MigrationDetailView.astro';
 import MigrationView from '../../views/MigrationView.astro';
+import MissingMigrantDetailView from '../../views/MissingMigrantDetailView.astro';
+import MissingMigrantsView from '../../views/MissingMigrantsView.astro';
 import RemittanceDetailView from '../../views/RemittanceDetailView.astro';
 import RemittancesView from '../../views/RemittancesView.astro';
 
@@ -19,6 +26,8 @@ export function getStaticPaths() {
     ...Object.keys(migrationPathRedirects).map((slug) => ({ params: { slug } })),
     { params: { slug: 'remittances' } },
     ...remittanceIds.map((slug) => ({ params: { slug } })),
+    { params: { slug: missingMigrantsShelfSlug } },
+    ...missingMigrantIds.map((slug) => ({ params: { slug } })),
   ];
 }
 
@@ -35,6 +44,10 @@ const item = slug && !isMigrationShelf(slug) ? getMigrationBySlug(locale, slug) 
     <RemittancesView />
   ) : isRemittanceId(slug) ? (
     <RemittanceDetailView slug={slug} />
+  ) : slug === missingMigrantsShelfSlug ? (
+    <MissingMigrantsView />
+  ) : isMissingMigrantId(slug) ? (
+    <MissingMigrantDetailView slug={slug} />
   ) : isMigrationShelf(slug) ? (
     <MigrationView shelf={slug} />
   ) : (

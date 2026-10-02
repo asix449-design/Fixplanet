@@ -9,6 +9,7 @@ export const wildlifeStatusKeys = [
   'extinct',
   'insects',
   'domesticates',
+  'birds',
 ] as const;
 
 export type WildlifeStatus = (typeof wildlifeStatusKeys)[number];
@@ -27,6 +28,7 @@ export const wildlifeHub = [
   { key: 'homo-sapiens', icon: 'human' },
   { key: 'insects', icon: 'insect' },
   { key: 'domesticates', icon: 'horse' },
+  { key: 'birds', icon: 'bird' },
 ] as const satisfies ReadonlyArray<{
   key: WildlifeHubKey;
   icon: HubIconName;
@@ -91,6 +93,12 @@ export type SpeciesCopy = {
   gridSource?: PrimarySource;
   /** Numbered detail-page sources. Replaces the shared English list. */
   sourcesList?: PrimarySource[];
+  /** Status word on the detail pill, in place of an IUCN code. */
+  statusPill?: string;
+  /** Licence deed URL when the credit names a Creative Commons licence. */
+  licenseUrl?: string;
+  /** Label before the linked file page, when the credit uses the pack layout. */
+  filePageLabel?: string;
 };
 
 export type Species = SpeciesMeta & SpeciesCopy;
@@ -1627,6 +1635,66 @@ export const speciesMeta: SpeciesMeta[] = [
         'https://www.fao.org/dad-is/en/',
       ),
     ],
+  },
+  {
+    slug: 'california-condor',
+    scientificName: 'Gymnogyps californianus',
+    status: 'birds',
+    image: commons(
+      'california-condor.jpg',
+      'U.S. Fish and Wildlife Service, Pacific Southwest Region / Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Condor_in_flight_%2853189570917%29.jpg',
+      { width: 1280, height: 772 },
+    ),
+  },
+  {
+    slug: 'whooping-crane',
+    scientificName: 'Grus americana',
+    status: 'birds',
+    image: commons(
+      'whooping-crane.jpg',
+      'John Noll, U.S. Department of Agriculture / Wikimedia Commons',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Whooping_Crane_in_flight_in_Texas.jpg',
+      { width: 1280, height: 854 },
+    ),
+  },
+  {
+    slug: 'atlantic-puffin',
+    scientificName: 'Fratercula arctica',
+    status: 'birds',
+    image: commons(
+      'atlantic-puffin.jpg',
+      'Andreas Trepte / Wikimedia Commons',
+      'CC BY-SA 2.5',
+      'https://commons.wikimedia.org/wiki/File:Atlantic_Puffin_Fratercula_arctica.jpg',
+      { width: 1280, height: 914 },
+    ),
+  },
+  {
+    slug: 'african-penguin',
+    scientificName: 'Spheniscus demersus',
+    status: 'birds',
+    image: commons(
+      'african-penguin.jpg',
+      'Krigore / Wikimedia Commons',
+      'CC BY-SA 4.0',
+      'https://commons.wikimedia.org/wiki/File:African_penguin_colony_at_Boulders_Beach.jpg',
+      { width: 1280, height: 958 },
+    ),
+  },
+  {
+    slug: 'wandering-albatross',
+    scientificName: 'Diomedea exulans',
+    status: 'birds',
+    image: commons(
+      'wandering-albatross.jpg',
+      'JJ Harrison / Wikimedia Commons',
+      'CC BY-SA 3.0',
+      'https://commons.wikimedia.org/wiki/File:Diomedea_exulans_in_flight_-_SE_Tasmania.jpg',
+      { width: 1280, height: 781 },
+    ),
   },
 ];
 

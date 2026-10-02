@@ -55,7 +55,7 @@ export const pack: Record<Locale, Record<string, InnovationCopy>> = {
     },
     'alphafold-proteins': {
       title: 'AlphaFold 3 in use',
-      hook: 'A 2024 model of proteins and their partners is now everyday lab software — used by millions of researchers, not a finished climate enzyme.',
+      hook: 'A 2024 model of proteins and their partners is now everyday laboratory software, used by millions of researchers. A working climate enzyme is a later laboratory step.',
       imageAlt: 'A protein ribbon diagram on a dark field — the class of structure these models predict',
       what: 'AlphaFold 2 (DeepMind, Nature, 2021) predicted single-chain folds at useful accuracy; the public AlphaFold Database put hundreds of millions of structures in reach. AlphaFold 3 and AlphaFold Server launched on 8 May 2024 to predict proteins with other biomolecules. DeepMind’s AlphaFold page says that by November 2025 the tools were used by over 3 million researchers in over 190 countries. Hassabis and Jumper shared the 2024 Nobel Prize in Chemistry for the work. This is deployed science software, not a chatbot and not a factory.',
       problem:

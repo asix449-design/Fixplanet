@@ -30,12 +30,12 @@ const activeArea: InnovationArea | undefined =
   hub || !isInnovationArea(requested ?? undefined) ? undefined : requested;
 
 const items = activeArea ? getInnovationsByArea(locale, activeArea) : getInnovations(locale);
-const energyShelf = activeArea === 'energy';
-const backLabel = energyShelf ? page.back.replace(/^\s*←\s*/, '') : page.back;
-const cardCta = energyShelf ? page.cardCta.replace(/\s*→\s*$/, '') : page.cardCta;
+const plainShelf = activeArea === 'energy' || activeArea === 'ai';
+const backLabel = plainShelf ? page.back.replace(/^\s*←\s*/, '') : page.back;
+const cardCta = plainShelf ? page.cardCta.replace(/\s*→\s*$/, '') : page.cardCta;
 const shelfTitle = activeArea ? page.areas[activeArea] : page.title;
 const pageTitle = activeArea
-  ? energyShelf
+  ? plainShelf
     ? `${page.areas[activeArea]}: ${page.title}, Fix Planet`
     : `${page.areas[activeArea]} — ${page.title} — Fix Planet`
   : page.metaTitle;

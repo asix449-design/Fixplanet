@@ -743,5 +743,50 @@
     "license": "CC BY 4.0 (World Bank). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
     "note": "World Bank score, not a World Justice Project score. No WJP name on the image."
+  },
+  {
+    "file": "surface-temperature-anomalies-preview.png",
+    "title": "Surface temperature anomaly in 2025, 2 by 2 degree grid",
+    "source": "Fix Planet map from the Goddard Institute for Space Studies surface temperature analysis (monthly 2 by 2 degree grid, 1200 kilometre smoothing), as distributed by the NOAA Physical Sciences Laboratory. Boundaries: Natural Earth 1:110m.",
+    "url": "https://data.giss.nasa.gov/gistemp/",
+    "license": "NASA-led data, Creative Commons Zero practice, citation requested. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "2025 mean of the 12 monthly anomaly grids. No title, label, legend or logo in the bitmap. Key is HTML. Copy quotes published figures only."
+  },
+  {
+    "file": "land-precipitation-preview.png",
+    "title": "Total precipitation on land in 2024, 0.5 degree grid",
+    "source": "Fix Planet map from the Global Precipitation Climatology Centre monthly analysis at the Deutscher Wetterdienst, Analysis Monthly version 2025, 0.5 degree, 2024 sum of 12 months. Boundaries: Natural Earth 1:110m.",
+    "url": "https://www.dwd.de/EN/ourservices/gpcc/gpcc.html",
+    "license": "Product users are kindly asked to refer to the Global Precipitation Climatology Centre and to quote the citation (https://doi.org/10.5676/DWD_GPCC/MONTHLY_V2025_050). Terms of use: https://www.dwd.de/EN/ourservices/gpcc/editorial/userterms_gpcc.html. Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Land cells with all 12 months valid. Ocean and incomplete cells stay light grey-blue. No text in the bitmap."
+  },
+  {
+    "file": "drought-spei-preview.png",
+    "title": "Drought index, 12-month scale, December 2024",
+    "source": "Fix Planet map from the Spanish National Research Council global 0.5 degree drought index database, 12-month scale, December 2024. Boundaries: Natural Earth 1:110m.",
+    "url": "https://spei.csic.es/database.html",
+    "license": "Open Database Licence 1.0 (database); Database Contents Licence (contents). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Land in the dataset extent. No text in the bitmap. The database ends in December 2024."
+  },
+  {
+    "file": "heat-stress-utci-preview.png",
+    "title": "Change in days with strong outdoor heat stress, 2025",
+    "source": "Published figure raster from Copernicus Global Climate Highlights 2025, recoloured onto a plain ocean fill and turned north-up. Not a recalculation from the gridded dataset.",
+    "url": "https://climate.copernicus.eu/global-climate-highlights-2025",
+    "license": "Contains modified Copernicus Climate Change Service information 2026. Neither the European Commission nor the European Centre for Medium-Range Weather Forecasts is responsible for any use of the information.",
+    "kind": "rendered-from-source",
+    "note": "Published report figure, not an original calculation. Antarctica blank. No text in the bitmap. Key is HTML."
+  },
+  {
+    "file": "land-snow-cover-preview.png",
+    "title": "Average snow cover on land, March 2026",
+    "source": "Fix Planet map from the National Snow and Ice Data Center Terra monthly snow cover product, version 61, March 2026, 0.05 degree values averaged in 4 by 4 blocks. Boundaries: Natural Earth 1:110m.",
+    "url": "https://nsidc.org/data/mod10cm/versions/61",
+    "license": "Licensed as Creative Commons Zero (CC0) (https://creativecommons.org/publicdomain/zero/1.0/). Citation required: Hall, D. K. and Riggs, G. A. (2021) (https://doi.org/10.5067/MODIS/MOD10CM.061). Boundaries public domain (Natural Earth).",
+    "kind": "rendered-from-source",
+    "note": "Latitudes about 60 degrees south to 85 degrees north. Antarctica is left off. No text in the bitmap."
   }
 ]

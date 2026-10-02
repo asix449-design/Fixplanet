@@ -40,18 +40,19 @@ export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
     },
     'bald-eagle': {
       commonName: 'Bald eagle',
-      hook: 'Down to 417 known nesting pairs in the lower 48 U.S. states in 1963; after the DDT ban and Endangered Species Act work, USFWS counted about 316,700 individuals and 71,467 occupied nests in 2018–2019.',
+      statusPill: 'Least Concern',
+      hook: 'Down to 417 known nesting pairs in the lower 48 U.S. states in 1963. After the ban on dichlorodiphenyltrichloroethane and work under the Endangered Species Act, the U.S. Fish and Wildlife Service counted about 316,700 individuals and 71,467 occupied nests in the survey for 2018 to 2019.',
       imageAlt: 'An adult bald eagle in flight over water, white head and tail showing',
-      what: 'North America’s fish eagle and U.S. national symbol — the only eagle native solely to this continent. Adults show the white head and tail; younger birds stay mottled brown for years.',
+      what: 'North America’s fish eagle and the national symbol of the United States. It is the only eagle native solely to this continent. Adults show the white head and tail. Younger birds stay mottled brown for years.',
       range:
-        'North America. The headline figures are the lower-48 recovery story. Alaska was never ESA-listed the same way.',
+        'North America. The published recovery counts are for the lower 48 states.',
       story:
-        'Shooting and DDT thinned eggshells until the bird nearly vanished from the contiguous United States. Legal protection, nest-site work, and the 1972 U.S. DDT ban reversed the crash. Delisted from the ESA in 2007; still protected under the Bald and Golden Eagle Protection Act and the Migratory Bird Treaty Act.',
-      when: 'USFWS: 417 known nesting pairs in the lower 48 U.S. states in 1963 → 9,789 pairs at the 2007 delisting → about 316,700 individuals and 71,467 occupied nests (2018–2019 data). IUCN: Least Concern.',
+        'Shooting and dichlorodiphenyltrichloroethane thinned eggshells until the bird nearly vanished from the contiguous United States. Legal protection, nest-site work, and the 1972 United States ban on that insecticide reversed the crash. The species was removed from the Endangered Species Act list in 2007. It remains protected under the Bald and Golden Eagle Protection Act and the Migratory Bird Treaty Act.',
+      when: 'The U.S. Fish and Wildlife Service recorded 417 known nesting pairs in the lower 48 U.S. states in 1963, then 9,789 pairs at the 2007 delisting, then about 316,700 individuals and 71,467 occupied nests in the 2018 to 2019 data. The International Union for Conservation of Nature lists the species as Least Concern.',
       humanRole:
-        'Shooting and DDT caused the crash. The 1972 DDT ban, Endangered Species Act work, and nest-site protection reversed it.',
+        'Shooting and dichlorodiphenyltrichloroethane caused the crash. The 1972 ban on that insecticide, Endangered Species Act work, and nest-site protection reversed it.',
       sources:
-        'USFWS bald eagle species page; USFWS Bald Eagle Population Size: 2020 Update; Federal Register delisting rule, 2007.',
+        'U.S. Fish and Wildlife Service bald eagle species page; U.S. Fish and Wildlife Service Bald Eagle Population Size: 2020 Update; Federal Register delisting rule, 2007.',
     },
     'white-rhinoceros': {
       commonName: 'White rhinoceros',

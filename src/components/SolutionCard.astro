@@ -13,6 +13,10 @@ import {
   isWaterEncyclopediaSlug,
   waterEncyclopediaPath,
 } from '../data/solutions-water';
+import {
+  isWasteEncyclopediaSlug,
+  wasteEncyclopediaPath,
+} from '../data/solutions-waste';
 import { getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -38,7 +42,9 @@ const encyclopediaHref =
       ? localizePath(forestEncyclopediaPath(detailSlug), locale)
       : solution.tag === 'cities' && isCitiesEncyclopediaSlug(detailSlug)
         ? localizePath(citiesEncyclopediaPath(detailSlug), locale)
-        : undefined;
+        : solution.tag === 'waste' && isWasteEncyclopediaSlug(detailSlug)
+          ? localizePath(wasteEncyclopediaPath(detailSlug), locale)
+          : undefined;
 const sourceLabel = solution.sourceLabel ?? primary?.label;
 const cardHref = encyclopediaHref ?? primary?.url ?? href;
 const cardRel = encyclopediaHref ? undefined : primary ? 'noopener noreferrer' : undefined;

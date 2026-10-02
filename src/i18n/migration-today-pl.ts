@@ -65,7 +65,7 @@ export const plToday: TodayShelfCopy = {
   idpDefinition:
     'IDMC liczy ludzi zmuszonych do opuszczenia domu przez konflikt, przemoc lub katastrofy, którzy nie przekroczyli granicy międzynarodowej. To nie międzynarodowy migrant stock UN DESA, nie wykrycia Frontexu i nie headcount obozów UNHCR. Ruchy w ciągu roku (nowe lub powtórne) to nie to samo co stan na koniec roku; ta sama osoba może się przesunąć więcej niż raz.',
   idpHonesty:
-    'GRID 2026 obejmuje rok kalendarzowy 2025 (raport opublikowany 12 maja 2026). Stan to ludzie, którzy nadal żyją w wewnętrznym przesiedleniu na koniec roku. Liczby roczne to policzone ruchy, nie unikalne osoby. Nie podpisuj 32,3 mln jako 32,3 mln unikalnych ludzi.',
+    'Globalny raport o przesiedleniach wewnętrznych 2026 obejmuje rok kalendarzowy 2025 (raport opublikowany 12 maja 2026). Stan to ludzie, którzy nadal żyją w wewnętrznym przesiedleniu na koniec roku. Liczby roczne to policzone ruchy. Ta sama osoba może ruszyć się więcej niż raz, więc 32,3 mln liczy ruchy.',
   idpNoChoropleth:
     'Nazwane kryzysy poniżej to notatki ze źródłem, nie mapa świata kolorowana liczbą. Pokrycie IDMC jest niepełne; strona nie rysuje globalnego choroplethu ani warstwy «strzałki przełomu» z tych sum.',
   idpMillion: 'mln',
@@ -325,7 +325,7 @@ export const plToday: TodayShelfCopy = {
     },
     'eastern-mediterranean': {
       name: 'Wschodni Śródziemnomorski',
-      note: '69 400 wykryć w 2024 (+14%). W 2025 trasa spadła ogółem; korytarz Libia–Kreta wzrósł ponad trzykrotnie. Nie czytaj jako całej Afryki → Europy.',
+      note: '69 400 wykryć w 2024 (+14%). W 2025 trasa spadła ogółem; korytarz z Libii na Kretę wzrósł ponad trzykrotnie.',
     },
     'western-africa': {
       name: 'Afryka Zachodnia (Wyspy Kanaryjskie)',
