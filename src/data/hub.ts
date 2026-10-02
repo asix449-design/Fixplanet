@@ -21,4 +21,6 @@ export type HubIconName =
   | 'migrate'
   | 'horse'
   | 'today'
-  | 'insect';
+  | 'insect'
+  | 'sun'
+  | 'bird';
