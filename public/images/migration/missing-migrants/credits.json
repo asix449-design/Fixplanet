@@ -1,0 +1,42 @@
+[
+  {
+    "file": "mmp-global-annual-2014-2025.png",
+    "series": "All regions, deaths and disappearances, 2014 to 2025",
+    "credit": "Chart by Fix Planet from Missing Migrants Project data of the International Organization for Migration, via the Humanitarian Data Exchange",
+    "license": "CC BY-IGO 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "sourceUrl": "https://data.humdata.org/dataset/missing-migrants-project-data"
+  },
+  {
+    "file": "mmp-mediterranean-annual-2014-2025.png",
+    "series": "Mediterranean, deaths and disappearances, 2014 to 2025",
+    "credit": "Chart by Fix Planet from Missing Migrants Project data of the International Organization for Migration, via the Humanitarian Data Exchange",
+    "license": "CC BY-IGO 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "sourceUrl": "https://data.humdata.org/dataset/missing-migrants-project-data"
+  },
+  {
+    "file": "mmp-atlantic-canaries-annual-2014-2025.png",
+    "series": "Western Africa / Atlantic route to the Canary Islands, 2014 to 2025",
+    "credit": "Chart by Fix Planet from Missing Migrants Project data of the International Organization for Migration, via the Humanitarian Data Exchange",
+    "license": "CC BY-IGO 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "sourceUrl": "https://data.humdata.org/dataset/missing-migrants-project-data"
+  },
+  {
+    "file": "mmp-asia-annual-2014-2025.png",
+    "series": "Southern, South-eastern, Eastern and Western Asia combined, 2014 to 2025",
+    "credit": "Chart by Fix Planet from Missing Migrants Project data of the International Organization for Migration, via the Humanitarian Data Exchange",
+    "license": "CC BY-IGO 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "sourceUrl": "https://data.humdata.org/dataset/missing-migrants-project-data"
+  },
+  {
+    "file": "mmp-americas-annual-2014-2025.png",
+    "series": "North America, Central America, South America and the Caribbean combined, 2014 to 2025",
+    "credit": "Chart by Fix Planet from Missing Migrants Project data of the International Organization for Migration, via the Humanitarian Data Exchange",
+    "license": "CC BY-IGO 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "sourceUrl": "https://data.humdata.org/dataset/missing-migrants-project-data"
+  }
+]

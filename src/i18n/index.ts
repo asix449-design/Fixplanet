@@ -107,3 +107,4 @@ export {
   migrationShelfKeys,
 } from './migration';
 export { getRemittance, getRemittances } from './remittances';
+export { getMissingMigrant, getMissingMigrants } from './missing-migrants';

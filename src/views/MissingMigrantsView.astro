@@ -1,0 +1,30 @@
+---
+import MissingMigrantCards from '../components/MissingMigrantCards.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { hubBackdrop } from '../data/migration';
+import { getMigrationPage, getMissingMigrants, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const shelf = getMissingMigrants(locale);
+---
+
+<BaseLayout
+  title={`${shelf.title}, ${page.title}, Fix Planet`}
+  description={shelf.lede}
+  image={hubBackdrop.file}
+  theme="migration"
+>
+  <ShelfHeader
+    backHref={localizePath('/migration', locale)}
+    backLabel={page.back}
+    title={shelf.title}
+    lede={shelf.lede}
+  />
+  <section class="section section-hub-follow" id="missing-migrants">
+    <div class="wrap">
+      <MissingMigrantCards />
+    </div>
+  </section>
+</BaseLayout>
