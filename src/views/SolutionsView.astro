@@ -14,6 +14,7 @@ import {
 import { isForestEncyclopediaSlug, forestEncyclopediaPath } from '../data/solutions-forests';
 import { isCitiesEncyclopediaSlug, citiesEncyclopediaPath } from '../data/solutions-cities';
 import { isWaterEncyclopediaSlug, waterEncyclopediaPath } from '../data/solutions-water';
+import { isWasteEncyclopediaSlug, wasteEncyclopediaPath } from '../data/solutions-waste';
 import { getSolutions, getUi, localizePath, resolveLocale } from '../i18n';
 
 interface Props {
@@ -120,7 +121,13 @@ const pageTitle = hub
                             citiesEncyclopediaPath(solution.detailSlug ?? solution.slug),
                             locale,
                           )
-                        : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
+                        : solution.tag === 'waste' &&
+                            isWasteEncyclopediaSlug(solution.detailSlug ?? solution.slug)
+                          ? localizePath(
+                              wasteEncyclopediaPath(solution.detailSlug ?? solution.slug),
+                              locale,
+                            )
+                          : localizePath(`/solutions/${solution.tag}#${solution.slug}`, locale)
                 }
               />
             ))}
