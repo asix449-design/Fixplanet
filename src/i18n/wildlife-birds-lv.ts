@@ -64,7 +64,7 @@ export const birdsLv: Record<string, SpeciesCopy> = {
         condorProgram,
       ),
       cite(
-        'ASV Zivju un savvaļas dzīvnieku dienests: Kalifornijas kondora atjaunošanas programmas 2025. gada populācijas statuss, PDF (U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status)',
+        'ASV Zivju un savvaļas dzīvnieku dienests: Kalifornijas kondora atjaunošanas programmas 2025. gada populācijas statuss, dokuments (U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status)',
         condorPdf,
       ),
     ],
@@ -104,7 +104,7 @@ export const birdsLv: Record<string, SpeciesCopy> = {
         cranePress,
       ),
       cite(
-        'ASV Zivju un savvaļas dzīvnieku dienests un Kanādas Vides un klimata pārmaiņu ministrija: amerikāņu dzērves stāvoklis, no 2024. gada ligzdošanas sezonas līdz 2025. gada pavasara migrācijai, PDF, 2026. gada februāris (U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration)',
+        'ASV Zivju un savvaļas dzīvnieku dienests un Kanādas Vides un klimata pārmaiņu ministrija: amerikāņu dzērves stāvoklis, no 2024. gada ligzdošanas sezonas līdz 2025. gada pavasara migrācijai, dokuments, 2026. gada februāris (U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration)',
         cranePdf,
       ),
     ],
@@ -140,7 +140,7 @@ export const birdsLv: Record<string, SpeciesCopy> = {
         puffinNews,
       ),
       cite(
-        'Afrikas-Eirāzijas gājīgo ūdensputnu aizsardzības nolīgums: Atlantijas luņa aizsardzības vadlīnijas, PDF, 2022. gada maijs (Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin)',
+        'Afrikas-Eirāzijas gājīgo ūdensputnu aizsardzības nolīgums: Atlantijas luņa aizsardzības vadlīnijas, dokuments, 2022. gada maijs (Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin)',
         puffinPdf,
       ),
     ],
@@ -218,7 +218,7 @@ export const birdsLv: Record<string, SpeciesCopy> = {
     sources: '',
     sourcesList: [
       cite(
-        'Albatrosu un trulīšu aizsardzības nolīgums: klejojošā albatrosa sugas novērtējums, Diomedea exulans, PDF (Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment)',
+        'Albatrosu un trulīšu aizsardzības nolīgums: klejojošā albatrosa sugas novērtējums, Diomedea exulans, dokuments (Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment)',
         albatrossPdf,
       ),
       cite(

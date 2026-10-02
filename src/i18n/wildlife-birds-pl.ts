@@ -50,7 +50,7 @@ export const birdsPl: Record<string, SpeciesCopy> = {
     ),
     what: 'Kondor kalifornijski (Gymnogyps californianus) jest największym ptakiem lądowym Ameryki Północnej. Ma rozpiętość skrzydeł około 2,9 m (9,5 stopy), a dorosły ptak mierzy od 0,9 do 1,1 m (od 3 do 3,5 stopy) wysokości i waży od 8 do 11 kg (od 17 do 25 funtów). Kondory żywią się padliną, na przykład zwłokami jeleni, krów, wielorybów i fok, a znajdują ją wzrokiem albo podążając za innymi padlinożercami.',
     range:
-      'Swobodnie latające kondory żyją w czterech rejonach: w Arizonie i Utah, w Kalifornii, na północnym zachodzie Stanów Zjednoczonych nad Pacyfikiem oraz w meksykańskiej Dolnej Kalifornii. Spośród 392 dzikich ptaków na koniec 2025 roku 98 żyło w Arizonie i Utah, 216 w Kalifornii, 25 na północnym zachodzie nad Pacyfikiem i 53 w Dolnej Kalifornii. Grupa z północnego zachodu ma status eksperymentalnej. Kondory nocują na dużych drzewach, martwych pniach, skalnych występach i klifach, a gniazdują w jaskiniach i na półkach stromych skalistych stoków albo w dziuplach i złamanych wierzchołkach starych drzew iglastych. Żerują nad otwartymi łąkami, podgórzem z dębowymi sawannami i plażami przy nadbrzeżnych górach i potrafią przelecieć do 400 km (250 mil) dziennie.',
+      'Swobodnie latające kondory żyją w czterech rejonach: w Arizonie i Utah, w Kalifornii, na północnym zachodzie Stanów Zjednoczonych nad Pacyfikiem oraz w meksykańskiej Dolnej Kalifornii. Spośród 392 dzikich ptaków na koniec 2025 roku 98 żyło w Arizonie i Utah, 216 w Kalifornii, 25 na północnym zachodzie nad Pacyfikiem i 53 w Dolnej Kalifornii. Grupa z północnego zachodu ma status eksperymentalnej. Kondory nocują na dużych drzewach, martwych pniach, skalnych występach i klifach, a gniazdują w jaskiniach i na występach stromych skalistych stoków albo w dziuplach i złamanych wierzchołkach starych drzew iglastych. Żerują nad otwartymi łąkami, podgórzem z dębowymi sawannami i plażami przy nadbrzeżnych górach i potrafią przelecieć do 400 km (250 mil) dziennie.',
     story:
       'W 1982 roku na całym świecie przeżyły tylko 23 kondory, a do 1987 roku wszystkie dzikie kondory przeniesiono do programu rozrodu w niewoli. Rząd federalny wpisał gatunek na listę zagrożonych w 1967 roku. Od 1992 roku Służba Ochrony Ryb i Dzikiej Przyrody Stanów Zjednoczonych wypuszcza na wolność kondory wyhodowane w niewoli. W 2004 roku w naturze po raz pierwszy z powodzeniem wykluło się pisklę, a w 2008 roku po raz pierwszy na wolności latało więcej kondorów, niż żyło w niewoli. Ołów z zużytej amunicji pozostaje główną przyczyną śmierci ptaków w naturze: od 1992 do 2025 roku potwierdzono śmierć z powodu zatrucia ołowiem 161 swobodnie latających kondorów.',
     when: 'Na 31 grudnia 2025 roku na świecie żyło 607 kondorów (rok wcześniej 570): 392 w naturze i 215 w niewoli. Plan odbudowy z 1996 roku wyznacza cel w postaci dwóch dzikich, geograficznie oddzielonych, samowystarczalnych populacji, każdej z co najmniej 150 ptaków i 15 par lęgowych, oraz trzeciej populacji utrzymywanej w niewoli.',
@@ -67,7 +67,7 @@ export const birdsPl: Record<string, SpeciesCopy> = {
         condorProgram,
       ),
       cite(
-        'Służba Ochrony Ryb i Dzikiej Przyrody Stanów Zjednoczonych: roczny status populacji Programu odbudowy kondora kalifornijskiego za 2025 rok, PDF (U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status)',
+        'Służba Ochrony Ryb i Dzikiej Przyrody Stanów Zjednoczonych: roczny status populacji Programu odbudowy kondora kalifornijskiego za 2025 rok, dokument (U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status)',
         condorPdf,
       ),
     ],
@@ -107,7 +107,7 @@ export const birdsPl: Record<string, SpeciesCopy> = {
         cranePress,
       ),
       cite(
-        'Służba Ochrony Ryb i Dzikiej Przyrody Stanów Zjednoczonych i Ministerstwo Środowiska i Zmian Klimatu Kanady: stan żurawia krzykliwego, od sezonu lęgowego 2024 do wiosennej wędrówki 2025, PDF, luty 2026 (U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration)',
+        'Służba Ochrony Ryb i Dzikiej Przyrody Stanów Zjednoczonych i Ministerstwo Środowiska i Zmian Klimatu Kanady: stan żurawia krzykliwego, od sezonu lęgowego 2024 do wiosennej wędrówki 2025, dokument, luty 2026 (U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration)',
         cranePdf,
       ),
     ],
@@ -143,7 +143,7 @@ export const birdsPl: Record<string, SpeciesCopy> = {
         puffinNews,
       ),
       cite(
-        'Porozumienie o ochronie afrykańsko-eurazjatyckich wędrownych ptaków wodnych: wytyczne ochrony maskonura zwyczajnego, PDF, maj 2022 roku (Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin)',
+        'Porozumienie o ochronie afrykańsko-eurazjatyckich wędrownych ptaków wodnych: wytyczne ochrony maskonura zwyczajnego, dokument, maj 2022 roku (Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin)',
         puffinPdf,
       ),
     ],
@@ -221,7 +221,7 @@ export const birdsPl: Record<string, SpeciesCopy> = {
     sources: '',
     sourcesList: [
       cite(
-        'Porozumienie w sprawie ochrony albatrosów i petreli: ocena gatunku albatros wędrowny, Diomedea exulans, PDF (Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment)',
+        'Porozumienie w sprawie ochrony albatrosów i petreli: ocena gatunku albatros wędrowny, Diomedea exulans, dokument (Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment)',
         albatrossPdf,
       ),
       cite(

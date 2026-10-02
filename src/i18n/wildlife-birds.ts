@@ -266,7 +266,7 @@ export const birdsRu: Record<string, SpeciesCopy> = {
         condorProgram,
       ),
       cite(
-        'Служба охраны рыбных ресурсов и диких животных США: ежегодный статус популяции Программы восстановления калифорнийского кондора за 2025 год, PDF (U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status)',
+        'Служба охраны рыбных ресурсов и диких животных США: ежегодный статус популяции Программы восстановления калифорнийского кондора за 2025 год, документ (U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status)',
         condorPdf,
       ),
     ],
@@ -306,7 +306,7 @@ export const birdsRu: Record<string, SpeciesCopy> = {
         cranePress,
       ),
       cite(
-        'Служба охраны рыбных ресурсов и диких животных США и Министерство окружающей среды и изменения климата Канады: состояние американского журавля, от гнездового сезона 2024 года до весенней миграции 2025 года, PDF, февраль 2026 (U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration)',
+        'Служба охраны рыбных ресурсов и диких животных США и Министерство окружающей среды и изменения климата Канады: состояние американского журавля, от гнездового сезона 2024 года до весенней миграции 2025 года, документ, февраль 2026 (U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration)',
         cranePdf,
       ),
     ],
@@ -342,7 +342,7 @@ export const birdsRu: Record<string, SpeciesCopy> = {
         puffinNews,
       ),
       cite(
-        'Соглашение по сохранению афро-евразийских мигрирующих водно-болотных птиц: руководство по сохранению атлантического тупика, PDF, май 2022 года (Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin)',
+        'Соглашение по сохранению афро-евразийских мигрирующих водно-болотных птиц: руководство по сохранению атлантического тупика, документ, май 2022 года (Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin)',
         puffinPdf,
       ),
     ],
@@ -420,7 +420,7 @@ export const birdsRu: Record<string, SpeciesCopy> = {
     sources: '',
     sourcesList: [
       cite(
-        'Соглашение о сохранении альбатросов и буревестников: оценка вида «странствующий альбатрос», Diomedea exulans, PDF (Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment)',
+        'Соглашение о сохранении альбатросов и буревестников: оценка вида «странствующий альбатрос», Diomedea exulans, документ (Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment)',
         albatrossPdf,
       ),
       cite(
