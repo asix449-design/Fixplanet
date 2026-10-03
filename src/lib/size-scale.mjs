@@ -2,6 +2,7 @@ const BEHIND = 5;
 const HEIGHT_FRAC = 0.9;
 const WIDTH_FRAC_WITH_BEHIND = 0.64;
 const WIDTH_FRAC_ALONE = 0.88;
+const MIN_BEHIND_PX = 48;
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
@@ -109,11 +110,30 @@ function mount(root) {
     if (frontLeft + frontW > plotW - 8) frontLeft = Math.max(8, plotW - frontW - 8);
     const room = Math.max(0, frontLeft - 4);
     const step = behindCount > 0 ? Math.min(plotW * 0.105, 96, room / behindCount) : 0;
+    const frontH = meta[front].vbH * meta[front].mPerUnit * px;
+    const frontLonger = Math.max(frontW, frontH);
     const boxes = new Map();
     for (let i = first; i <= front; i += 1) {
       const animal = meta[i];
-      const w = animal.vbW * animal.mPerUnit * px;
-      const h = animal.vbH * animal.mPerUnit * px;
+      let w = animal.vbW * animal.mPerUnit * px;
+      let h = animal.vbH * animal.mPerUnit * px;
+      if (i < front) {
+        const longer = Math.max(w, h);
+        const cap = Math.min(MIN_BEHIND_PX, frontLonger * 0.5);
+        if (longer > 0 && longer < cap) {
+          const boost = cap / longer;
+          w *= boost;
+          h *= boost;
+        }
+        const groundFracNow = animal.groundY / animal.vbH;
+        const above = groundFracNow * h;
+        const maxAbove = plotH * 0.62;
+        if (above > maxAbove && above > 0) {
+          const shrink = maxAbove / above;
+          w *= shrink;
+          h *= shrink;
+        }
+      }
       const groundFrac = animal.groundY / animal.vbH;
       boxes.set(i, {
         left: frontLeft - (front - i) * step,

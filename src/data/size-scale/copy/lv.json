@@ -92,6 +92,96 @@
         "Savvaļas daba tiešsaistē: staltbriedis (Wildlife Online: Red deer). https://www.wildlifeonline.me.uk/animals/species/red-deer",
         "Vikipēdija: staltbriedis (Wikipedia: Red deer). https://en.wikipedia.org/wiki/Red_deer"
       ]
+    },
+    "brown-bear": {
+      "name": "Brūnais lācis",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 1,2 m, no deguna līdz astes galam 1,8 m",
+      "sources": [
+        "Amerikas Savienoto Valstu Nacionālo parku dienests, lāči: brūnie lāči (National Park Service, Bears: Brown Bears). https://www.nps.gov/subjects/bears/brown-bears.htm",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: brūnais lācis (University of Michigan Museum of Zoology, Animal Diversity Web: Ursus arctos, brown bear). https://animaldiversity.org/accounts/Ursus_arctos/",
+        "Starptautiskā lāču pētniecības un pārvaldības asociācija: brūnais lācis (International Association for Bear Research and Management: Ursus arctos, Brown bear). https://www.bearbiology.org/the-eight-bear-species/ursus-arctos-brown-bear/"
+      ]
+    },
+    "lion": {
+      "name": "Lauva",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 1,2 m, no deguna līdz astes galam 2,7 m",
+      "sources": [
+        "Smitsona institūta Nacionālais zooloģiskais dārzs un Dabas aizsardzības bioloģijas institūts: lauva (Smithsonian's National Zoo and Conservation Biology Institute: Lion). https://nationalzoo.si.edu/animals/lion",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: lauva (University of Michigan Museum of Zoology, Animal Diversity Web: Panthera leo, lion). https://animaldiversity.org/accounts/Panthera_leo/",
+        "Āfrikas savvaļas dabas fonds: lauva (African Wildlife Foundation: Lion). https://www.awf.org/wildlife-conservation/lion",
+        "Krīgera parka ceļvedis: lauva, Āfrikas lauva (Kruger Park Guide: Lion, Leo Panthera, African Lion). https://www.krugerpark.co.za/africa_lion.html",
+        "Sandjego zoodārzs, dzīvnieki un augi: lauva (San Diego Zoo Animals and Plants: Lion). https://animals.sandiegozoo.org/animals/lion",
+        "National Geographic: Āfrikas lauva, fakti un fotogrāfijas (National Geographic: African lion, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/african-lion"
+      ]
+    },
+    "american-bison": {
+      "name": "Amerikas bizons",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 1,7 m, no deguna līdz astes galam 3,1 m",
+      "sources": [
+        "Amerikas Savienoto Valstu Nacionālo parku dienests, Teodora Rūzvelta nacionālais parks: bizons (National Park Service, Theodore Roosevelt National Park: Bison / Buffalo). https://www.nps.gov/thro/learn/nature/bison-buffalo.htm",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: Amerikas bizons (University of Michigan Museum of Zoology, Animal Diversity Web: Bison bison, American bison). https://animaldiversity.org/accounts/Bison_bison/",
+        "Smitsona institūta Nacionālais zooloģiskais dārzs un Dabas aizsardzības bioloģijas institūts: Amerikas bizons (Smithsonian's National Zoo and Conservation Biology Institute: American bison). https://nationalzoo.si.edu/animals/american-bison",
+        "National Geographic: Amerikas bizons (National Geographic: American Bison). https://www.nationalgeographic.com/animals/mammals/facts/american-bison",
+        "Nebraskas Linkolnas universitāte, Lielo līdzenumu enciklopēdija: bizons (University of Nebraska-Lincoln, Encyclopedia of the Great Plains: Bison). https://plainshumanities.unl.edu/encyclopedia/doc/egp.pe.010.html"
+      ]
+    },
+    "european-bison": {
+      "name": "Eiropas bizons (zubr)",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 1,8 m, no deguna līdz astes galam apmēram 3,2 m",
+      "sources": [
+        "Visaptverošs zubra aizsardzības projekts, par zubriem: izmēru un ķermeņa masas atšķirības (Comprehensive European Bison Conservation Project, wisent.org, About Bison: Differences in body size and mass). https://wisent.org/ozubrach/roznice-wymiarow-masy-ciala/",
+        "Tūlins un līdzautori meža biedrībai Skogssällskapet: priekšizpēte par zubra atgriešanu Zviedrijā (Thulin et al. for Skogssallskapet: Feasibility study on reintroducing the wisent, European bison in Sweden). https://www.skogssallskapet.se/download/18.4fe06bf519b2be09250cbeae/1767096849492/Bilaga%202%2029._Thulin_et_al__2023__-_feasability_study_231219_eng.pdf",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: zubrs (University of Michigan Museum of Zoology, Animal Diversity Web: Bison bonasus, European bison). https://animaldiversity.org/accounts/Bison_bonasus/",
+        "Pilnais nagaiņu ceļvedis: zubrs (Ultimate Ungulate: European bison, Wisent). https://www.ultimateungulate.com/Artiodactyla/Bison_bonasus.html",
+        "Viena Zeme: varenā zubra atgriešana ar vietējo kopienu palīdzību (One Earth: Rewilding the mighty European bison with the help of local communities). https://www.oneearth.org/species-of-the-week-european-bison/"
+      ]
+    },
+    "white-rhinoceros": {
+      "name": "Baltais degunradzis",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 1,7 m, no deguna līdz astes galam 4,3 m",
+      "sources": [
+        "Starptautiskais degunradžu aizsardzības fonds: baltais degunradzis (International Rhino Foundation: White Rhino). https://rhinos.org/about-rhinos/rhino-species/white-rhino/",
+        "Starptautiskā organizācija „Glābsim degunradzi”: baltais degunradzis (Save the Rhino International: White Rhino). https://www.savetherhino.org/rhino-info/rhino-species/white-rhinos/",
+        "Toronto zoodārzs: baltais degunradzis (Toronto Zoo: White rhinoceros). https://www.torontozoo.com/animals/White%20rhinoceros",
+        "Krīgera parka ceļvedis: baltais degunradzis (Kruger Park Guide: White Rhino, Ceratotherium Simum). https://www.krugerpark.co.za/africa_white_rhino.html",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: baltais degunradzis (University of Michigan Museum of Zoology, Animal Diversity Web: Ceratotherium simum, white rhinoceros). https://animaldiversity.org/accounts/Ceratotherium_simum/",
+        "National Geographic: baltais degunradzis (National Geographic: White Rhinoceros). https://www.nationalgeographic.com/animals/mammals/facts/white-rhinoceros"
+      ]
+    },
+    "african-savanna-elephant": {
+      "name": "Āfrikas savannas zilonis",
+      "height_label": "Augstums skaustā",
+      "length_label": "No galvas līdz astes galam (snuķis nokarājies)",
+      "caption": "Augstums skaustā 3,1 m, no galvas līdz astes galam (snuķis nokarājies) apmēram 5,7 m",
+      "sources": [
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: Āfrikas savannas zilonis (University of Michigan Museum of Zoology, Animal Diversity Web: Loxodonta africana, African bush elephant). https://animaldiversity.org/accounts/Loxodonta_africana/",
+        "Sandjego zoodārza informatīvās lapas bibliotēkas ceļvedī: Āfrikas ziloņu fiziskās īpašības (San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, African Elephants). https://ielc.libguides.com/sdzg/factsheets/african_elephant/characteristics",
+        "National Geographic: Āfrikas zilonis, fakti un fotogrāfijas (National Geographic: African elephant, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Dzīvnieku lietas: Āfrikas zilonis (The Animal Files: African Elephant). https://www.theanimalfiles.com/mammals/elephants/african_elephant.html",
+        "Izmēru vietne: Āfrikas savannas zilonis, izmēri un zīmējumi (Dimensions.com: African Bush Elephant, Loxodonta africana Dimensions and Drawings). https://www.dimensions.com/element/african-bush-elephant-loxodonta-africana",
+        "National Geographic bērniem: Āfrikas zilonis (National Geographic Kids: African Elephant). https://kids.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Ziloņu ceļvedis: ziloņa snuķis, uzbūve, funkcijas un interesanti fakti (Elephant Guide: The Elephant Trunk, Anatomy, Functions and Fascinating Facts). https://elephantguide.com/what-is-the-elephant-trunk-and-what-does-it-do-for-an-elephant/"
+      ]
+    },
+    "humpback-whale": {
+      "name": "Kuprainais valis",
+      "height_label": "Ķermeņa augstums",
+      "length_label": "No purna līdz astes galam",
+      "caption": "Ķermeņa augstums apmēram 3,3 m, no purna līdz astes galam 16,2 m",
+      "sources": [
+        "National Geographic: kuprainais valis, fakti un fotogrāfijas (National Geographic: Humpback whale, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
+        "Teksasas Tehniskā universitāte, Teksasas zīdītāji: sugas apraksts, kuprainais valis (Texas Tech University, Mammals of Texas: Species account of the Humpback Whale). https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
     }
   }
 }

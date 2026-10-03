@@ -1,0 +1,252 @@
+{
+  "pack": "B",
+  "generated": "2026-10-03",
+  "position_total": 14,
+  "rows": [
+    {
+      "slug": "brown-bear",
+      "order": 1,
+      "position_of_14": 6,
+      "height_m": 1.2,
+      "width_m": 1.8,
+      "height_range_m": [
+        0.9,
+        1.52
+      ],
+      "width_range_m": [
+        1.06,
+        3.01
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 121.0,
+      "mean_width_cm": 181.8,
+      "scale_m": 1.8,
+      "sort_key_m": 1.818,
+      "scale_basis": "width",
+      "silhouette_file": "brown-bear.svg",
+      "credit": "Silhouette: Kai Caspar, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1474.8,
+        "viewBox_h": 1070.6,
+        "ground_y": 1070.1,
+        "shoulder_y": 0.0
+      }
+    },
+    {
+      "slug": "lion",
+      "order": 2,
+      "position_of_14": 9,
+      "height_m": 1.2,
+      "width_m": 2.7,
+      "height_range_m": [
+        1.0,
+        1.2
+      ],
+      "width_range_m": [
+        2.0,
+        3.55
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 116.2,
+      "mean_width_cm": 273.7,
+      "scale_m": 2.7,
+      "sort_key_m": 2.737,
+      "scale_basis": "width",
+      "silhouette_file": "lion.svg",
+      "credit": "Silhouette: Lisa Nicvert, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1535.6,
+        "viewBox_h": 937.8,
+        "ground_y": 937.4,
+        "shoulder_y": 190.9
+      }
+    },
+    {
+      "slug": "american-bison",
+      "order": 3,
+      "position_of_14": 10,
+      "height_m": 1.7,
+      "width_m": 3.1,
+      "height_range_m": [
+        1.52,
+        1.98
+      ],
+      "width_range_m": [
+        2.13,
+        4.1
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 171.0,
+      "mean_width_cm": 311.1,
+      "scale_m": 3.1,
+      "sort_key_m": 3.111,
+      "scale_basis": "width",
+      "silhouette_file": "american-bison.svg",
+      "credit": "Silhouette: Tracy Heath, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1535.8,
+        "viewBox_h": 914.7,
+        "ground_y": 914.2,
+        "shoulder_y": 0.0
+      }
+    },
+    {
+      "slug": "european-bison",
+      "order": 4,
+      "position_of_14": 11,
+      "height_m": 1.8,
+      "width_m": 3.2,
+      "height_range_m": [
+        1.34,
+        1.95
+      ],
+      "width_range_m": [
+        2.0,
+        3.8
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "estimate",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 175.3,
+      "mean_width_cm": 322.8,
+      "scale_m": 3.2,
+      "sort_key_m": 3.228,
+      "scale_basis": "width",
+      "silhouette_file": "european-bison.svg",
+      "credit": "Silhouette: Steven Traver, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1535.8,
+        "viewBox_h": 973.6,
+        "ground_y": 973.2,
+        "shoulder_y": 18.5
+      }
+    },
+    {
+      "slug": "white-rhinoceros",
+      "order": 5,
+      "position_of_14": 12,
+      "height_m": 1.7,
+      "width_m": 4.3,
+      "height_range_m": [
+        1.5,
+        1.86
+      ],
+      "width_range_m": [
+        3.86,
+        4.89
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 170.8,
+      "mean_width_cm": 430.2,
+      "scale_m": 4.3,
+      "sort_key_m": 4.302,
+      "scale_basis": "width",
+      "silhouette_file": "white-rhinoceros.svg",
+      "credit": "Silhouette: Christophe Mallet, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1535.8,
+        "viewBox_h": 655.3,
+        "ground_y": 655.0,
+        "shoulder_y": 0.0
+      }
+    },
+    {
+      "slug": "african-savanna-elephant",
+      "order": 6,
+      "position_of_14": 13,
+      "height_m": 3.1,
+      "width_m": 5.7,
+      "height_range_m": [
+        2.2,
+        4.0
+      ],
+      "width_range_m": [
+        4.0,
+        7.5
+      ],
+      "bases": {
+        "height": "shoulder height, standing",
+        "width": "head (trunk tip hanging relaxed) to tail tip, natural side view; trunk hangs, it is not stretched out"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "estimate",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 314.4,
+      "mean_width_cm": 566.7,
+      "scale_m": 5.7,
+      "sort_key_m": 5.667,
+      "scale_basis": "width",
+      "silhouette_file": "african-savanna-elephant.svg",
+      "credit": "Silhouette: Steven Traver, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1535.4,
+        "viewBox_h": 989.1,
+        "ground_y": 988.6,
+        "shoulder_y": 27.7
+      }
+    },
+    {
+      "slug": "humpback-whale",
+      "order": 7,
+      "position_of_14": 14,
+      "height_m": 3.3,
+      "width_m": 16.2,
+      "height_range_m": [
+        2.7,
+        3.7
+      ],
+      "width_range_m": [
+        14.63,
+        19.05
+      ],
+      "bases": {
+        "height": "side-view body depth, top of back to underside at mid-body, fins and flukes excluded",
+        "width": "snout tip to tail fluke tip along the long axis"
+      },
+      "confidence_height": "estimate",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 328.5,
+      "mean_width_cm": 1617.0,
+      "scale_m": 16.2,
+      "sort_key_m": 16.17,
+      "scale_basis": "width",
+      "silhouette_file": "humpback-whale.svg",
+      "credit": "Silhouette: T. Michael Keesey, PhyloPic, Public Domain Mark 1.0",
+      "svg": {
+        "viewBox_w": 1536.0,
+        "viewBox_h": 408.7,
+        "ground_y": 363.3,
+        "shoulder_y": 18.0
+      }
+    }
+  ]
+}

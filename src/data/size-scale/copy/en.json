@@ -92,6 +92,96 @@
         "Wildlife Online: Red deer. https://www.wildlifeonline.me.uk/animals/species/red-deer",
         "Wikipedia: Red deer. https://en.wikipedia.org/wiki/Red_deer"
       ]
+    },
+    "brown-bear": {
+      "name": "Brown bear",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 1.2 m, nose to tail tip 1.8 m",
+      "sources": [
+        "National Park Service, Bears: Brown Bears. https://www.nps.gov/subjects/bears/brown-bears.htm",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Ursus arctos (brown bear). https://animaldiversity.org/accounts/Ursus_arctos/",
+        "International Association for Bear Research and Management: Ursus arctos (Brown bear). https://www.bearbiology.org/the-eight-bear-species/ursus-arctos-brown-bear/"
+      ]
+    },
+    "lion": {
+      "name": "Lion",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 1.2 m, nose to tail tip 2.7 m",
+      "sources": [
+        "Smithsonian's National Zoo and Conservation Biology Institute: Lion. https://nationalzoo.si.edu/animals/lion",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Panthera leo (lion). https://animaldiversity.org/accounts/Panthera_leo/",
+        "African Wildlife Foundation: Lion. https://www.awf.org/wildlife-conservation/lion",
+        "Kruger Park Guide: Lion, Leo Panthera, African Lion. https://www.krugerpark.co.za/africa_lion.html",
+        "San Diego Zoo Animals and Plants: Lion. https://animals.sandiegozoo.org/animals/lion",
+        "National Geographic: African lion, facts and photos. https://www.nationalgeographic.com/animals/mammals/facts/african-lion"
+      ]
+    },
+    "american-bison": {
+      "name": "American bison",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 1.7 m, nose to tail tip 3.1 m",
+      "sources": [
+        "National Park Service, Theodore Roosevelt National Park: Bison / Buffalo. https://www.nps.gov/thro/learn/nature/bison-buffalo.htm",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Bison bison (American bison). https://animaldiversity.org/accounts/Bison_bison/",
+        "Smithsonian's National Zoo and Conservation Biology Institute: American bison. https://nationalzoo.si.edu/animals/american-bison",
+        "National Geographic: American Bison. https://www.nationalgeographic.com/animals/mammals/facts/american-bison",
+        "University of Nebraska-Lincoln, Encyclopedia of the Great Plains: Bison. https://plainshumanities.unl.edu/encyclopedia/doc/egp.pe.010.html"
+      ]
+    },
+    "european-bison": {
+      "name": "European bison",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 1.8 m, nose to tail tip about 3.2 m",
+      "sources": [
+        "Comprehensive European Bison Conservation Project (wisent.org), About Bison: Differences in body size and mass. https://wisent.org/ozubrach/roznice-wymiarow-masy-ciala/",
+        "Thulin et al. for Skogssallskapet: Feasibility study on reintroducing the wisent (European bison) in Sweden. https://www.skogssallskapet.se/download/18.4fe06bf519b2be09250cbeae/1767096849492/Bilaga%202%2029._Thulin_et_al__2023__-_feasability_study_231219_eng.pdf",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Bison bonasus (European bison). https://animaldiversity.org/accounts/Bison_bonasus/",
+        "Ultimate Ungulate: European bison, Wisent. https://www.ultimateungulate.com/Artiodactyla/Bison_bonasus.html",
+        "One Earth: Rewilding the mighty European bison with the help of local communities. https://www.oneearth.org/species-of-the-week-european-bison/"
+      ]
+    },
+    "white-rhinoceros": {
+      "name": "White rhinoceros",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 1.7 m, nose to tail tip 4.3 m",
+      "sources": [
+        "International Rhino Foundation: White Rhino. https://rhinos.org/about-rhinos/rhino-species/white-rhino/",
+        "Save the Rhino International: White Rhino. https://www.savetherhino.org/rhino-info/rhino-species/white-rhinos/",
+        "Toronto Zoo: White rhinoceros. https://www.torontozoo.com/animals/White%20rhinoceros",
+        "Kruger Park Guide: White Rhino, Ceratotherium Simum. https://www.krugerpark.co.za/africa_white_rhino.html",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Ceratotherium simum (white rhinoceros). https://animaldiversity.org/accounts/Ceratotherium_simum/",
+        "National Geographic: White Rhinoceros. https://www.nationalgeographic.com/animals/mammals/facts/white-rhinoceros"
+      ]
+    },
+    "african-savanna-elephant": {
+      "name": "African savanna elephant",
+      "height_label": "Shoulder height",
+      "length_label": "Head to tail tip (trunk hanging)",
+      "caption": "Shoulder height 3.1 m, head to tail tip (trunk hanging) about 5.7 m",
+      "sources": [
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Loxodonta africana (African bush elephant). https://animaldiversity.org/accounts/Loxodonta_africana/",
+        "San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, African Elephants. https://ielc.libguides.com/sdzg/factsheets/african_elephant/characteristics",
+        "National Geographic: African elephant, facts and photos. https://www.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "The Animal Files: African Elephant. https://www.theanimalfiles.com/mammals/elephants/african_elephant.html",
+        "Dimensions.com: African Bush Elephant (Loxodonta africana) Dimensions and Drawings. https://www.dimensions.com/element/african-bush-elephant-loxodonta-africana",
+        "National Geographic Kids: African Elephant. https://kids.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Elephant Guide: The Elephant Trunk, Anatomy, Functions and Fascinating Facts. https://elephantguide.com/what-is-the-elephant-trunk-and-what-does-it-do-for-an-elephant/"
+      ]
+    },
+    "humpback-whale": {
+      "name": "Humpback whale",
+      "height_label": "Body depth",
+      "length_label": "Snout to tail tip",
+      "caption": "Body depth about 3.3 m, snout to tail tip 16.2 m",
+      "sources": [
+        "National Geographic: Humpback whale, facts and photos. https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
+        "Texas Tech University, Mammals of Texas: Species account of the Humpback Whale. https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
     }
   }
 }

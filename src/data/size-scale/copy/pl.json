@@ -92,6 +92,96 @@
         "Dzika przyroda online: jeleń szlachetny (Wildlife Online: Red deer). https://www.wildlifeonline.me.uk/animals/species/red-deer",
         "Wikipedia: jeleń szlachetny (Wikipedia: Red deer). https://en.wikipedia.org/wiki/Red_deer"
       ]
+    },
+    "brown-bear": {
+      "name": "Niedźwiedź brunatny",
+      "height_label": "Wysokość w kłębie",
+      "length_label": "Od nosa do końca ogona",
+      "caption": "Wysokość w kłębie 1,2 m, od nosa do końca ogona 1,8 m",
+      "sources": [
+        "Amerykańska Służba Parków Narodowych, niedźwiedzie: niedźwiedzie brunatne (National Park Service, Bears: Brown Bears). https://www.nps.gov/subjects/bears/brown-bears.htm",
+        "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: niedźwiedź brunatny (University of Michigan Museum of Zoology, Animal Diversity Web: Ursus arctos, brown bear). https://animaldiversity.org/accounts/Ursus_arctos/",
+        "Międzynarodowe Stowarzyszenie Badań nad Niedźwiedziami i Gospodarowania ich Populacjami: niedźwiedź brunatny (International Association for Bear Research and Management: Ursus arctos, Brown bear). https://www.bearbiology.org/the-eight-bear-species/ursus-arctos-brown-bear/"
+      ]
+    },
+    "lion": {
+      "name": "Lew",
+      "height_label": "Wysokość w kłębie",
+      "length_label": "Od nosa do końca ogona",
+      "caption": "Wysokość w kłębie 1,2 m, od nosa do końca ogona 2,7 m",
+      "sources": [
+        "Narodowe Zoo i Instytut Biologii Ochrony Przyrody Smithsona: lew (Smithsonian's National Zoo and Conservation Biology Institute: Lion). https://nationalzoo.si.edu/animals/lion",
+        "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: lew (University of Michigan Museum of Zoology, Animal Diversity Web: Panthera leo, lion). https://animaldiversity.org/accounts/Panthera_leo/",
+        "Afrykańska Fundacja Dzikiej Przyrody: lew (African Wildlife Foundation: Lion). https://www.awf.org/wildlife-conservation/lion",
+        "Przewodnik po Parku Krugera: lew, lew afrykański (Kruger Park Guide: Lion, Leo Panthera, African Lion). https://www.krugerpark.co.za/africa_lion.html",
+        "Zoo w San Diego, zwierzęta i rośliny: lew (San Diego Zoo Animals and Plants: Lion). https://animals.sandiegozoo.org/animals/lion",
+        "National Geographic: lew afrykański, fakty i zdjęcia (National Geographic: African lion, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/african-lion"
+      ]
+    },
+    "american-bison": {
+      "name": "Bizon amerykański",
+      "height_label": "Wysokość w kłębie",
+      "length_label": "Od nosa do końca ogona",
+      "caption": "Wysokość w kłębie 1,7 m, od nosa do końca ogona 3,1 m",
+      "sources": [
+        "Amerykańska Służba Parków Narodowych, Park Narodowy imienia Theodore’a Roosevelta: bizon (National Park Service, Theodore Roosevelt National Park: Bison / Buffalo). https://www.nps.gov/thro/learn/nature/bison-buffalo.htm",
+        "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: bizon amerykański (University of Michigan Museum of Zoology, Animal Diversity Web: Bison bison, American bison). https://animaldiversity.org/accounts/Bison_bison/",
+        "Narodowe Zoo i Instytut Biologii Ochrony Przyrody Smithsona: bizon amerykański (Smithsonian's National Zoo and Conservation Biology Institute: American bison). https://nationalzoo.si.edu/animals/american-bison",
+        "National Geographic: bizon amerykański (National Geographic: American Bison). https://www.nationalgeographic.com/animals/mammals/facts/american-bison",
+        "Uniwersytet Nebraski w Lincoln, encyklopedia Wielkich Równin: bizon (University of Nebraska-Lincoln, Encyclopedia of the Great Plains: Bison). https://plainshumanities.unl.edu/encyclopedia/doc/egp.pe.010.html"
+      ]
+    },
+    "european-bison": {
+      "name": "Żubr",
+      "height_label": "Wysokość w kłębie",
+      "length_label": "Od nosa do końca ogona",
+      "caption": "Wysokość w kłębie 1,8 m, od nosa do końca ogona około 3,2 m",
+      "sources": [
+        "Kompleksowy projekt ochrony żubra, o żubrach: różnice wymiarów i masy ciała (Comprehensive European Bison Conservation Project, wisent.org, About Bison: Differences in body size and mass). https://wisent.org/ozubrach/roznice-wymiarow-masy-ciala/",
+        "Thulin i współautorzy dla towarzystwa leśnego Skogssällskapet: studium wykonalności powrotu żubra do Szwecji (Thulin et al. for Skogssallskapet: Feasibility study on reintroducing the wisent, European bison in Sweden). https://www.skogssallskapet.se/download/18.4fe06bf519b2be09250cbeae/1767096849492/Bilaga%202%2029._Thulin_et_al__2023__-_feasability_study_231219_eng.pdf",
+        "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: żubr (University of Michigan Museum of Zoology, Animal Diversity Web: Bison bonasus, European bison). https://animaldiversity.org/accounts/Bison_bonasus/",
+        "Pełny przewodnik po kopytnych: żubr (Ultimate Ungulate: European bison, Wisent). https://www.ultimateungulate.com/Artiodactyla/Bison_bonasus.html",
+        "Jedna Ziemia: powrót potężnego żubra z pomocą lokalnych społeczności (One Earth: Rewilding the mighty European bison with the help of local communities). https://www.oneearth.org/species-of-the-week-european-bison/"
+      ]
+    },
+    "white-rhinoceros": {
+      "name": "Nosorożec biały",
+      "height_label": "Wysokość w kłębie",
+      "length_label": "Od nosa do końca ogona",
+      "caption": "Wysokość w kłębie 1,7 m, od nosa do końca ogona 4,3 m",
+      "sources": [
+        "Międzynarodowa Fundacja Ochrony Nosorożców: nosorożec biały (International Rhino Foundation: White Rhino). https://rhinos.org/about-rhinos/rhino-species/white-rhino/",
+        "Międzynarodowa organizacja „Uratuj nosorożca”: nosorożec biały (Save the Rhino International: White Rhino). https://www.savetherhino.org/rhino-info/rhino-species/white-rhinos/",
+        "Zoo w Toronto: nosorożec biały (Toronto Zoo: White rhinoceros). https://www.torontozoo.com/animals/White%20rhinoceros",
+        "Przewodnik po Parku Krugera: nosorożec biały (Kruger Park Guide: White Rhino, Ceratotherium Simum). https://www.krugerpark.co.za/africa_white_rhino.html",
+        "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: nosorożec biały (University of Michigan Museum of Zoology, Animal Diversity Web: Ceratotherium simum, white rhinoceros). https://animaldiversity.org/accounts/Ceratotherium_simum/",
+        "National Geographic: nosorożec biały (National Geographic: White Rhinoceros). https://www.nationalgeographic.com/animals/mammals/facts/white-rhinoceros"
+      ]
+    },
+    "african-savanna-elephant": {
+      "name": "Słoń afrykański sawannowy",
+      "height_label": "Wysokość w kłębie",
+      "length_label": "Od głowy do końca ogona (trąba opuszczona)",
+      "caption": "Wysokość w kłębie 3,1 m, od głowy do końca ogona (trąba opuszczona) około 5,7 m",
+      "sources": [
+        "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: słoń afrykański sawannowy (University of Michigan Museum of Zoology, Animal Diversity Web: Loxodonta africana, African bush elephant). https://animaldiversity.org/accounts/Loxodonta_africana/",
+        "Karty informacyjne zoo w San Diego w przewodniku bibliotecznym: cechy fizyczne słoni afrykańskich (San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, African Elephants). https://ielc.libguides.com/sdzg/factsheets/african_elephant/characteristics",
+        "National Geographic: słoń afrykański, fakty i zdjęcia (National Geographic: African elephant, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Akta zwierząt: słoń afrykański (The Animal Files: African Elephant). https://www.theanimalfiles.com/mammals/elephants/african_elephant.html",
+        "Serwis z wymiarami: słoń afrykański sawannowy, wymiary i rysunki (Dimensions.com: African Bush Elephant, Loxodonta africana Dimensions and Drawings). https://www.dimensions.com/element/african-bush-elephant-loxodonta-africana",
+        "National Geographic dla dzieci: słoń afrykański (National Geographic Kids: African Elephant). https://kids.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Przewodnik po słoniach: trąba słonia, budowa, funkcje i ciekawostki (Elephant Guide: The Elephant Trunk, Anatomy, Functions and Fascinating Facts). https://elephantguide.com/what-is-the-elephant-trunk-and-what-does-it-do-for-an-elephant/"
+      ]
+    },
+    "humpback-whale": {
+      "name": "Długopłetwiec",
+      "height_label": "Wysokość ciała",
+      "length_label": "Od pyska do końca ogona",
+      "caption": "Wysokość ciała około 3,3 m, od pyska do końca ogona 16,2 m",
+      "sources": [
+        "National Geographic: długopłetwiec, fakty i zdjęcia (National Geographic: Humpback whale, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
+        "Uniwersytet Techniczny w Teksasie, ssaki Teksasu: opis gatunku, długopłetwiec (Texas Tech University, Mammals of Texas: Species account of the Humpback Whale). https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
     }
   }
 }
