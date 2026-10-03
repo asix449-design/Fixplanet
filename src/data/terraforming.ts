@@ -26,6 +26,10 @@ export type ImageCredit = {
   credit: string;
   license: string;
   sourceUrl: string;
+  licenseUrl?: string;
+  width?: number;
+  height?: number;
+  fit?: 'natural';
 };
 
 export type GeoSource = {
@@ -53,6 +57,10 @@ export type GeoCopy = {
   outcome: string;
   lessons: string;
   sourcesNote: string;
+  caption?: string;
+  photoCredit?: string;
+  gridSource?: GeoSource;
+  sources?: GeoSource[];
 };
 
 export type GeoProject = GeoMeta & GeoCopy;
@@ -62,8 +70,9 @@ function img(
   credit: string,
   license: string,
   sourceUrl: string,
+  extra?: Pick<ImageCredit, 'licenseUrl' | 'width' | 'height' | 'fit'>,
 ): ImageCredit {
-  return { file, credit, license, sourceUrl };
+  return { file, credit, license, sourceUrl, ...extra };
 }
 
 /**
@@ -404,6 +413,162 @@ export const geoMeta: GeoMeta[] = [
       {
         label: 'ICARDA — Watershed restoration in Badia areas of Jordan',
         url: 'https://icarda.org/research/projects/watershed-restoration-badia-areas-jordan',
+      },
+    ],
+  },
+  {
+    slug: "algeria-green-dam",
+    shelf: 'desert',
+    status: "partial",
+    years: "1970",
+    image: img(
+      "algeria-green-dam.jpg",
+      "رمزي زودة",
+      "CC BY-SA 3.0",
+      "https://commons.wikimedia.org/wiki/File:Barrage_vert_Merouana.jpg",
+      {
+        licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+        width: 1400,
+        height: 788,
+      },
+    ),
+    sources: [
+      {
+        label: "Sahara and Sahel Observatory (2008), The Great Green Wall Initiative of the Sahara and the Sahel, introductory note, section on the Green Dam experience in Algeria",
+        url: "https://www.oss-online.org/sites/default/files/2022-11/OSS-Muraille-verteNI3_En.pdf",
+      },
+      {
+        label: "Nedjma Rahmani, Ministry of Agriculture, Rural Development and Fisheries of Algeria (2017), Climate change adaptation strategy: the experience of the Green Dam in Algeria, Forêt méditerranéenne (original title in French: Stratégie d’adaptation au changement climatique : l’expérience du Barrage vert en Algérie)",
+        url: "https://www.foret-mediterraneenne.org/upload/biblio/FORET_MED_2017_3_299-302.pdf",
+      },
+      {
+        label: "Khaouani, Hirche and Salamani (2019), Ecological dynamics of the Green Dam by remote sensing: the case of Moudjbara (Djelfa, central Algeria), International Journal of Sciences and Research",
+        url: "https://www.crstra.dz/telechargement/publications/internationales/2019/khaouani.pdf",
+      },
+    ],
+  },
+  {
+    slug: "pakistan-ten-billion-tree-tsunami",
+    shelf: 'desert',
+    status: "ongoing",
+    years: "2014",
+    image: img(
+      "pakistan-ten-billion-tree-tsunami.jpg",
+      "Najafali05",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:Pinus_roxburghii,_Murree_hill_station,_Pakistan.jpg",
+      {
+        licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+        width: 1400,
+        height: 1050,
+      },
+    ),
+    sources: [
+      {
+        label: "Ministry of Climate Change and Environmental Coordination of Pakistan, home page, entry Green Pakistan Upscaling Programme Phase-1",
+        url: "https://mocc.gov.pk/",
+      },
+      {
+        label: "United Nations Convention to Combat Desertification (2022), Pakistan National Report 2022",
+        url: "https://www.unccd.int/sites/default/files/national-reports/2022/PAK/UNCCD%20National%20Report%202022%20PAK.pdf",
+      },
+      {
+        label: "International Union for Conservation of Nature, project page: Third Party Monitoring of Ten Billion Tree Tsunami Programme (TBTTP) by Consortium of IUCN, FAO and WWF",
+        url: "https://iucn.org/our-work/projects/third-party-monitoring-ten-billion-tree-tsunami-programme-tbttp-consortium-iucn",
+      },
+      {
+        label: "International Union for Conservation of Nature (22 September 2020), IUCN, FAO and WWF Pakistan join hands with Ministry of Climate Change to Monitor the Largest Afforestation Programme in Pakistan",
+        url: "https://iucn.org/news/pakistan/202009/iucn-fao-and-wwf-pakistan-join-hands-ministry-climate-change-monitor-largest-afforestation-programme-pakistan",
+      },
+    ],
+  },
+  {
+    slug: "ethiopia-green-legacy",
+    shelf: 'desert',
+    status: "ongoing",
+    years: "2019",
+    image: img(
+      "ethiopia-green-legacy.jpg",
+      "Cunningchrisw",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:Ethiopia_nursery_.jpg",
+      {
+        licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+        width: 1400,
+        height: 1050,
+      },
+    ),
+    sources: [
+      {
+        label: "IDEASS, The Green Legacy Campaign in Ethiopia: setting a new world record of tree seedlings planted (briefing note)",
+        url: "https://www.ideassonline.org/public/pdf/EthiopiaGreenLegacy-ENG.pdf",
+      },
+      {
+        label: "International Organization for Migration, published on ReliefWeb (2 August 2019), Ethiopia IOM Participates in Planting of World Record-breaking 353 Million Trees in One Day",
+        url: "https://reliefweb.int/report/ethiopia/ethiopia-iom-participates-planting-world-record-breaking-353-million-trees-one-day",
+      },
+      {
+        label: "British Broadcasting Corporation, BBC Reality Check (20 December 2019), Did Ethiopia plant four billion trees this year?",
+        url: "https://www.bbc.co.uk/news/world-africa-50813726",
+      },
+      {
+        label: "Ethiopian News Agency (26 December 2023), About 85 Percent of Last Year’s 7.5 Billion Seedlings Survived",
+        url: "https://www.ena.et/web/eng/w/eng_3779338",
+      },
+    ],
+  },
+  {
+    slug: "kubuqi-desert-restoration",
+    shelf: 'desert',
+    status: "partial",
+    years: "1988",
+    image: img(
+      "kubuqi-desert-restoration.jpg",
+      "Popolon",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:Kubuqi.dunes_et_stupa.jpg",
+      {
+        licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+        width: 1400,
+        height: 927,
+      },
+    ),
+    sources: [
+      {
+        label: "United Nations Environment Programme (2015), Review of the Kubuqi Ecological Restoration Project: A Desert Green Economy Pilot Initiative, held in the catalogue of the United Nations Convention to Combat Desertification",
+        url: "https://catalogue.unccd.int/1132_Review_Kubuqi_ecological_restoration_2015.pdf",
+      },
+      {
+        label: "United Nations Convention to Combat Desertification (18 September 2025), From desertification to recovery: Lessons from the Kubuqi Forum",
+        url: "https://www.unccd.int/news-stories/stories/desertification-recovery-lessons-kubuqi-forum",
+      },
+    ],
+  },
+  {
+    slug: "india-green-india-mission",
+    shelf: 'desert',
+    status: "partial",
+    years: "2011",
+    image: img(
+      "india-green-india-mission.jpg",
+      "LRBurdak",
+      "CC BY-SA 3.0",
+      "https://commons.wikimedia.org/wiki/File:GreeningdesertTharIndia.jpg",
+      {
+        licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+        width: 862,
+        height: 592,
+        fit: 'natural',
+      },
+    ),
+    sources: [
+      {
+        label: "Ministry of Environment, Forest and Climate Change, Annual Report 2023-24, section 7.9 National Mission for a Green India",
+        url: "https://moef.gov.in/uploads/2023/05/Annual-Report-English-2023-24.pdf",
+      },
+      {
+        label: "Ministry of Environment, Forest and Climate Change, National Mission for a Green India, Mission Document (revised)",
+        url: "https://moef.gov.in/uploads/2017/08/Revised%20Mission%20Document.pdf",
       },
     ],
   },

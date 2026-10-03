@@ -174,5 +174,50 @@
     "artist": "NASA ICE / James Yungel",
     "license": "CC BY 2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thwaites_Glacier_Tongue.jpg"
+  },
+  {
+    "slug": "algeria-green-dam",
+    "file": "algeria-green-dam.jpg",
+    "commonsTitle": "Barrage vert Merouana.jpg",
+    "artist": "رمزي زودة",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barrage_vert_Merouana.jpg"
+  },
+  {
+    "slug": "pakistan-ten-billion-tree-tsunami",
+    "file": "pakistan-ten-billion-tree-tsunami.jpg",
+    "commonsTitle": "Pinus roxburghii, Murree hill station, Pakistan.jpg",
+    "artist": "Najafali05",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_roxburghii,_Murree_hill_station,_Pakistan.jpg"
+  },
+  {
+    "slug": "ethiopia-green-legacy",
+    "file": "ethiopia-green-legacy.jpg",
+    "commonsTitle": "Ethiopia nursery .jpg",
+    "artist": "Cunningchrisw",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ethiopia_nursery_.jpg"
+  },
+  {
+    "slug": "kubuqi-desert-restoration",
+    "file": "kubuqi-desert-restoration.jpg",
+    "commonsTitle": "Kubuqi.dunes et stupa.jpg",
+    "artist": "Popolon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kubuqi.dunes_et_stupa.jpg"
+  },
+  {
+    "slug": "india-green-india-mission",
+    "file": "india-green-india-mission.jpg",
+    "commonsTitle": "GreeningdesertTharIndia.jpg",
+    "artist": "LRBurdak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GreeningdesertTharIndia.jpg"
   }
 ]
