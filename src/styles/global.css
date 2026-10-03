@@ -4963,11 +4963,14 @@ a.map-card:hover {
 }
 
 .size-scale-chart {
+  touch-action: pan-y;
+}
+
+.size-scale-plot-row {
   display: grid;
-  grid-template-columns: auto 2.7rem minmax(0, 1fr);
+  grid-template-columns: 2.7rem minmax(0, 1fr);
   column-gap: 0.4rem;
   align-items: start;
-  touch-action: pan-y;
 }
 
 .size-scale-y-title,
@@ -4979,13 +4982,10 @@ a.map-card:hover {
 }
 
 .size-scale-y-title {
-  height: var(--plot-h);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
   gap: 0.45rem;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  margin: 0 0 0.4rem 3.1rem;
 }
 
 .size-scale-unit {

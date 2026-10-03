@@ -192,6 +192,10 @@ function mount(root) {
         tailPx = Math.max(tailPx, box.h - (animal.groundY / animal.vbH) * box.h);
         return;
       }
+      if (t >= 1) {
+        el.classList.remove('is-on', 'is-front');
+        return;
+      }
       applyBox(el, start.boxes.get(i), 1 - t, false);
       const box = start.boxes.get(i);
       tailPx = Math.max(tailPx, (1 - animal.groundY / animal.vbH) * box.h);
