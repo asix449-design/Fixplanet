@@ -35,6 +35,15 @@ export const grid: Record<MaterialsEncyclopediaSlug, SolutionCopy> = {
     "imageAlt": "Stack of plasterboard sheets on a wooden pallet in a warehouse.",
     "sourceLabel": "Eurogypsum, Circularity"
   }
+,
+  "structural-steel-reuse": {
+    "problemTitle": "Structural steel from demolition that is usually recycled by remelting",
+    "fixTitle": "Structural steel reuse",
+    "problem": "Structural steel from demolition that is usually recycled by remelting",
+    "fix": "Steel members taken from buildings, such as beams and columns, and installed again in new structures. The Steel Construction Institute states that currently around 70 percent of steel scrap in the United Kingdom is exported for recycling.",
+    "imageAlt": "Steel beams salvaged from a deconstruction project in Boulder, Colorado, United States, stored for reuse.",
+    "sourceLabel": "Steel Construction Institute, structural steel reuse"
+  }
 };
 
 export const detail: Record<MaterialsEncyclopediaSlug, MaterialsDetailCopy> = {
@@ -155,6 +164,40 @@ export const detail: Record<MaterialsEncyclopediaSlug, MaterialsDetailCopy> = {
       {
         "label": "Environment Agency, GOV.UK: Recycled gypsum from waste plasterboard: quality protocol",
         "url": "https://www.gov.uk/government/publications/recycled-gypsum-from-waste-plasterboard-quality-protocol/recycled-gypsum-from-waste-plasterboard-quality-protocol"
+      }
+    ]
+  }
+,
+  "structural-steel-reuse": {
+    "title": "Structural steel reuse",
+    "hook": "Steel members taken from buildings, such as beams and columns, and installed again in new structures. The Steel Construction Institute states that currently around 70 percent of steel scrap in the United Kingdom is exported for recycling.",
+    "imageAlt": "Steel beams salvaged from a deconstruction project in Boulder, Colorado, United States, stored for reuse.",
+    "caption": "Steel beams salvaged from a deconstruction project in Boulder, Colorado, United States, stored for reuse.",
+    "credit": "Photo: Ian Hill, United States Department of Energy, via Wikimedia Commons, cropped, public domain (work of the United States government; licence notice: https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE). File page: https://commons.wikimedia.org/wiki/File:SlatedForReuse_Hill_Iron_and_Steel_%2854264735079%29.jpg",
+    "what": [
+      "Structural steel reuse means taking steel sections from a building that is being taken down, checking them, and installing them again as beams, columns or other members of a new structure. The Steel Construction Institute describes structural steel sections as inherently reusable and describes reuse as an alternative to the current common practice of recycling steel by remelting. Its 2019 publication, Structural steel reuse: assessment, testing and design principles, recommends data collection, inspection and testing so that reclaimed structural steelwork can be reused with confidence."
+    ],
+    "why": [
+      "The Steel Construction Institute states that reuse makes good environmental sense, saving both resources and carbon emissions, and keeps more economic activity in the United Kingdom, because currently around 70 percent of steel scrap there is exported for recycling. It reports an average price difference of 313 pounds sterling per tonne between new steel sections and scrap sections from 2000 to 2016 and calls it the profit opportunity for reuse before the additional costs of deconstruction, testing and certification, storage and refabrication are taken into account. A 2025 guidance report of the Joint Research Centre of the European Commission states that in the construction industry the reuse of components is a key strategy for reducing carbon dioxide emissions, and that steel structures are particularly suitable for reuse because of their high degree of prefabrication and the limited degradation they typically undergo during dismantling."
+    ],
+    "read": [
+      "The 2019 publication recommends that steelwork is reclaimed in groups of members of the same form, size and original function from the same source structure, so that testing one or more representative members establishes certain properties for the whole group. Its scope covers steelwork erected after 1970 and excludes steel from structures that experienced fatigue, as in bridges, significant strains, significant loss of section by corrosion, or fire. The only modification it recommends for structural design is to verify buckling resistance with a partial factor of 1.15 times the standard factor. The seller of the reclaimed stock declares the material properties when the steel is sold. The Institute page gives as an example a warehouse and office building deconstructed and relocated on a trading estate in Slough in 2015, and states that the reuse of simple structures such as portal frames is relatively common in the agricultural and industrial building sectors."
+    ],
+    "limits": [
+      "Consultations with the steel construction supply chain ranked the barriers to reuse in descending order of importance: availability of reclaimed sections in the desired size, volume and location; quality, traceability and certification; additional cost; supply chain integration; additional time in construction programmes. The Institute concludes that under current economic and legislative conditions in the United Kingdom the economic case for widespread reuse is marginal and that mainstream reuse is viable only in small-scale and niche markets and in certain projects. The 70 percent export share is given as a current figure on an Institute page that is undated and cites research papers of 2017, so the present share may differ. The price difference of 313 pounds sterling per tonne refers to the United Kingdom and to the years 2000 to 2016. The 2019 publication was funded by Cleveland Steel and Tubes Ltd. The 2025 report of the Joint Research Centre is cited from its published abstract."
+    ],
+    "sources": [
+      {
+        "label": "Steel Construction Institute: REDUCE and PROGRESS, structural steel reuse",
+        "url": "https://steel-sci.com/reduce-and-progress.html"
+      },
+      {
+        "label": "Steel Construction Institute: Structural steel reuse: assessment, testing and design principles, SCI P427 (PDF)",
+        "url": "https://www.steel-sci.com/assets/downloads/steel-reuse-event-8th-october-2019/SCI_P427.pdf"
+      },
+      {
+        "label": "Joint Research Centre, Eurocodes: Guidance on establishing European rules for the design of reclaimed steel components for reuse",
+        "url": "https://eurocodes.jrc.ec.europa.eu/publications/guidance-establishing-european-rules-design-reclaimed-steel-components-reuse"
       }
     ]
   }

@@ -37,6 +37,15 @@ export const grid: Record<MaterialsEncyclopediaSlug, SolutionCopy> = {
     "imageAlt": "Ģipškartona plākšņu kaudze uz koka paletes noliktavā.",
     "sourceLabel": "Eurogypsum: cirkularitāte"
   }
+,
+  "structural-steel-reuse": {
+    "problemTitle": "Konstrukciju tērauds no nojaukšanas, ko parasti pārstrādā ar pārkausēšanu",
+    "fixTitle": "Konstrukciju tērauda atkārtota izmantošana",
+    "problem": "Konstrukciju tērauds no nojaukšanas, ko parasti pārstrādā ar pārkausēšanu",
+    "fix": "Tērauda elementi, kas noņemti no ēkām, piemēram, sijas un kolonnas, tiek atkal uzstādīti jaunās konstrukcijās. Tērauda būvniecības institūts norāda, ka pašlaik apmēram 70 procenti tērauda lūžņu Apvienotajā Karalistē tiek eksportēti pārstrādei.",
+    "imageAlt": "Tērauda sijas, kas atgūtas demontāžas projektā Boulderā, Kolorādo, Amerikas Savienotajās Valstīs, uzglabātas atkārtotai izmantošanai.",
+    "sourceLabel": "Tērauda būvniecības institūts, konstrukciju tērauda atkārtota izmantošana"
+  }
 };
 
 export const detail: Record<MaterialsEncyclopediaSlug, MaterialsDetailCopy> = {
@@ -128,4 +137,29 @@ export const detail: Record<MaterialsEncyclopediaSlug, MaterialsDetailCopy> = {
       },
     ],
   },
+  "structural-steel-reuse": {
+    title: "Konstrukciju tērauda atkārtota izmantošana",
+    hook: "Tērauda elementi, kas noņemti no ēkām, piemēram, sijas un kolonnas, tiek atkal uzstādīti jaunās konstrukcijās. Tērauda būvniecības institūts norāda, ka pašlaik apmēram 70 procenti tērauda lūžņu Apvienotajā Karalistē tiek eksportēti pārstrādei.",
+    imageAlt: "Tērauda sijas, kas atgūtas demontāžas projektā Boulderā, Kolorādo, Amerikas Savienotajās Valstīs, uzglabātas atkārtotai izmantošanai.",
+    caption: "Tērauda sijas, kas atgūtas demontāžas projektā Boulderā, Kolorādo, Amerikas Savienotajās Valstīs, uzglabātas atkārtotai izmantošanai.",
+    credit: "Foto: Ian Hill, Amerikas Savienoto Valstu Enerģētikas departaments, caur Vikikrātuvi, apgriezts, sabiedrisks īpašums (Amerikas Savienoto Valstu valdības darbs; licences paziņojums: https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE). Faila lapa: https://commons.wikimedia.org/wiki/File:SlatedForReuse_Hill_Iron_and_Steel_%2854264735079%29.jpg",
+    what: ["Konstrukciju tērauda atkārtota izmantošana nozīmē noņemt tērauda profilus no ēkas, kuru nojauc, tos pārbaudīt un atkal uzstādīt kā sijas, kolonnas vai citus jaunas konstrukcijas elementus. Tērauda būvniecības institūts apraksta tērauda profilus kā pēc būtības atkārtoti izmantojamus un atkārtotu izmantošanu raksturo kā alternatīvu pašreizējai izplatītajai tērauda pārstrādes praksei ar pārkausēšanu. Tā 2019. gada publikācija „Konstrukciju tērauda atkārtota izmantošana: novērtējums, pārbaudes un projektēšanas principi” iesaka datu vākšanu, apskati un pārbaudes, lai atgūtās tērauda konstrukcijas varētu izmantot droši."],
+    why: ["Tērauda būvniecības institūts norāda, ka atkārtota izmantošana ir saprātīga no vides viedokļa, jo ietaupa gan resursus, gan oglekļa emisijas, un patur vairāk saimnieciskās aktivitātes Apvienotajā Karalistē, jo pašlaik apmēram 70 procenti tās tērauda lūžņu tiek eksportēti pārstrādei. Institūts min vidējo cenu starpību starp jauniem tērauda profiliem un lūžņu profiliem no 2000. līdz 2016. gadam, 313 sterliņu mārciņas par tonnu, un sauc to par peļņas iespēju atkārtotai izmantošanai, pirms ir ņemtas vērā papildu izmaksas par demontāžu, pārbaudēm un sertifikāciju, uzglabāšanu un atkārtotu izgatavošanu. Eiropas Komisijas Kopīgā pētniecības centra 2025. gada vadlīniju ziņojumā teikts, ka būvniecības nozarē elementu atkārtota izmantošana ir galvenā stratēģija oglekļa dioksīda emisiju samazināšanai un ka tērauda konstrukcijas ir īpaši piemērotas atkārtotai izmantošanai augstās rūpnieciskās gatavības un demontāžas laikā parasti neliela nolietojuma dēļ."],
+    read: ["2019. gada publikācija iesaka tēraudu atgūt grupās pa elementiem ar vienādu formu, izmēru un sākotnējo funkciju no vienas izcelsmes konstrukcijas, lai viena vai vairāku reprezentatīvu elementu pārbaude ļautu noteikt dažas visas grupas īpašības. Tās tvērums aptver tērauda konstrukcijas, kas uzceltas pēc 1970. gada, un izslēdz tēraudu no konstrukcijām, kas piedzīvojušas nogurumu, piemēram, tiltiem, būtiskas deformācijas, būtisku šķērsgriezuma zudumu korozijas dēļ vai ugunsgrēku. Vienīgā ieteiktā izmaiņa projektēšanā ir stabilitātes zuduma pārbaude ar daļējo koeficientu, kas vienāds ar 1,15 no parastā. Atgūtā tērauda krājuma pārdevējs materiāla īpašības deklarē pārdošanas brīdī. Institūta lapa kā piemēru min noliktavas un biroja ēku, kas 2015. gadā demontēta un pārvietota uz tirdzniecības un rūpniecības teritoriju Slough, un norāda, ka vienkāršu konstrukciju, piemēram, portālrāmju, atkārtota izmantošana ir samērā izplatīta lauksaimniecības un rūpniecības ēkās."],
+    limits: ["Apspriedes ar tērauda būvniecības piegādes ķēdi sakārtoja atkārtotas izmantošanas šķēršļus pēc svarīguma dilstošā secībā: atgūto profilu pieejamība vajadzīgajā izmērā, apjomā un vietā; kvalitāte, izsekojamība un sertifikācija; papildu izmaksas; piegādes ķēdes integrācija; papildu laiks būvniecības grafikos. Institūts secina, ka pašreizējos Apvienotās Karalistes ekonomiskajos un tiesiskajos apstākļos plašas atkārtotas izmantošanas ekonomiskais pamatojums ir minimāls un ka vispārēja atkārtota izmantošana ir dzīvotspējīga tikai nelielos nišas tirgos un atsevišķos projektos. Eksportēto lūžņu daļu, 70 procentus, Institūta lapa norāda kā pašreizēju; lapā datuma trūkst, un tā atsaucas uz 2017. gada darbiem, tāpēc šodienas daļa var atšķirties. Cenu starpība 313 sterliņu mārciņas par tonnu attiecas uz Apvienoto Karalisti un laika posmu no 2000. līdz 2016. gadam. 2019. gada publikāciju finansēja Cleveland Steel and Tubes Ltd. Kopīgā pētniecības centra 2025. gada ziņojums minēts pēc tā publicētā kopsavilkuma."],
+    sources: [
+      {
+        label: "Tērauda būvniecības institūts: REDUCE un PROGRESS, konstrukciju tērauda atkārtota izmantošana (Steel Construction Institute: REDUCE and PROGRESS, structural steel reuse)",
+        url: src("structural-steel-reuse", 0),
+      },
+      {
+        label: "Tērauda būvniecības institūts: Konstrukciju tērauda atkārtota izmantošana: novērtējums, pārbaudes un projektēšanas principi, SCI P427, PDF (Steel Construction Institute: Structural steel reuse: assessment, testing and design principles, SCI P427 (PDF))",
+        url: src("structural-steel-reuse", 1),
+      },
+      {
+        label: "Kopīgais pētniecības centrs, Eirokodi: vadlīnijas Eiropas noteikumu izveidei atgūtu tērauda elementu projektēšanai atkārtotai izmantošanai (Joint Research Centre, Eurocodes: Guidance on establishing European rules for the design of reclaimed steel components for reuse)",
+        url: src("structural-steel-reuse", 2),
+      },
+    ],
+  }
 };

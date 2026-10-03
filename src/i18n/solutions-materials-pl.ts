@@ -37,6 +37,15 @@ export const grid: Record<MaterialsEncyclopediaSlug, SolutionCopy> = {
     "imageAlt": "Stos płyt gipsowo-kartonowych na drewnianej palecie w magazynie.",
     "sourceLabel": "Eurogypsum: cyrkularność"
   }
+,
+  "structural-steel-reuse": {
+    "problemTitle": "Stal konstrukcyjna z rozbiórki, którą zwykle poddaje się recyklingowi przez przetop",
+    "fixTitle": "Ponowne użycie stali konstrukcyjnej",
+    "problem": "Stal konstrukcyjna z rozbiórki, którą zwykle poddaje się recyklingowi przez przetop",
+    "fix": "Elementy stalowe zdjęte z budynków, takie jak belki i słupy, są ponownie montowane w nowych konstrukcjach. Instytut Budownictwa Stalowego podaje, że obecnie około 70 procent złomu stalowego w Zjednoczonym Królestwie jest eksportowane do recyklingu.",
+    "imageAlt": "Belki stalowe odzyskane przy dekonstrukcji w Boulder w stanie Kolorado, Stany Zjednoczone, składowane do ponownego użycia.",
+    "sourceLabel": "Instytut Budownictwa Stalowego, ponowne użycie stali konstrukcyjnej"
+  }
 };
 
 export const detail: Record<MaterialsEncyclopediaSlug, MaterialsDetailCopy> = {
@@ -128,4 +137,29 @@ export const detail: Record<MaterialsEncyclopediaSlug, MaterialsDetailCopy> = {
       },
     ],
   },
+  "structural-steel-reuse": {
+    title: "Ponowne użycie stali konstrukcyjnej",
+    hook: "Elementy stalowe zdjęte z budynków, takie jak belki i słupy, są ponownie montowane w nowych konstrukcjach. Instytut Budownictwa Stalowego podaje, że obecnie około 70 procent złomu stalowego w Zjednoczonym Królestwie jest eksportowane do recyklingu.",
+    imageAlt: "Belki stalowe odzyskane przy dekonstrukcji w Boulder w stanie Kolorado, Stany Zjednoczone, składowane do ponownego użycia.",
+    caption: "Belki stalowe odzyskane przy dekonstrukcji w Boulder w stanie Kolorado, Stany Zjednoczone, składowane do ponownego użycia.",
+    credit: "Zdjęcie: Ian Hill, Departament Energii Stanów Zjednoczonych, za pośrednictwem Wikimedia Commons, przycięte, domena publiczna (praca rządu Stanów Zjednoczonych; informacja o licencji: https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE). Strona pliku: https://commons.wikimedia.org/wiki/File:SlatedForReuse_Hill_Iron_and_Steel_%2854264735079%29.jpg",
+    what: ["Ponowne użycie stali konstrukcyjnej oznacza zdjęcie kształtowników stalowych z budynku w trakcie rozbiórki, ich sprawdzenie i ponowny montaż jako belek, słupów lub innych elementów nowej konstrukcji. Instytut Budownictwa Stalowego uznaje kształtowniki stalowe za z natury nadające się do ponownego użycia i opisuje ponowne użycie jako alternatywę dla obecnej powszechnej praktyki recyklingu stali przez przetop. Jego publikacja z 2019 roku „Ponowne użycie stali konstrukcyjnej: ocena, badania i zasady projektowania” zaleca zbieranie danych, oględziny i badania, aby odzyskane konstrukcje stalowe można było stosować z pewnością."],
+    why: ["Instytut Budownictwa Stalowego stwierdza, że ponowne użycie ma sens środowiskowy, ponieważ oszczędza zarówno zasoby, jak i emisje węgla, oraz zatrzymuje więcej aktywności gospodarczej w Zjednoczonym Królestwie, gdyż obecnie około 70 procent tamtejszego złomu stalowego jest eksportowane do recyklingu. Podaje średnią różnicę cen między nowymi kształtownikami stalowymi a kształtownikami ze złomu w latach od 2000 do 2016, równą 313 funtom szterlingów za tonę, i nazywa ją szansą na zysk z ponownego użycia przed uwzględnieniem dodatkowych kosztów rozbiórki, badań i certyfikacji, składowania i ponownej obróbki. Raport z wytycznymi Wspólnego Centrum Badawczego Komisji Europejskiej z 2025 roku stwierdza, że w budownictwie ponowne użycie elementów jest kluczową strategią ograniczania emisji dwutlenku węgla oraz że konstrukcje stalowe szczególnie nadają się do ponownego użycia dzięki wysokiemu stopniowi prefabrykacji i ograniczonej degradacji, jakiej zwykle doznają podczas demontażu."],
+    read: ["Publikacja z 2019 roku zaleca odzyskiwanie stali w grupach elementów o tej samej formie, rozmiarze i pierwotnej funkcji, pochodzących z tej samej konstrukcji źródłowej, aby badanie jednego lub kilku reprezentatywnych elementów pozwalało określić pewne właściwości całej grupy. Jej zakres obejmuje stal wzniesioną po 1970 roku i wyklucza stal z konstrukcji, które doznały zmęczenia, na przykład z mostów, znacznych odkształceń, znacznej utraty przekroju przez korozję lub pożaru. Jedyną zalecaną modyfikacją w projektowaniu jest sprawdzanie nośności na wyboczenie ze współczynnikiem częściowym równym 1,15 wartości zwykłej. Sprzedawca odzyskanego zapasu stali deklaruje właściwości materiału przy sprzedaży. Strona Instytutu podaje jako przykład budynek magazynowo-biurowy rozebrany i przeniesiony na teren przemysłowo-handlowy w Slough w 2015 roku oraz stwierdza, że ponowne użycie prostych konstrukcji, takich jak ramy portalowe, jest stosunkowo częste w budynkach rolniczych i przemysłowych."],
+    limits: ["Konsultacje z łańcuchem dostaw budownictwa stalowego uszeregowały bariery ponownego użycia według malejącej ważności: dostępność odzyskanych profili w odpowiednim rozmiarze, ilości i miejscu; jakość, identyfikowalność i certyfikacja; dodatkowy koszt; integracja łańcucha dostaw; dodatkowy czas w harmonogramach budowy. Instytut wnioskuje, że w obecnych warunkach ekonomicznych i prawnych Zjednoczonego Królestwa uzasadnienie ekonomiczne powszechnego ponownego użycia jest marginalne, a powszechne ponowne użycie jest opłacalne tylko na małych rynkach niszowych i w wybranych projektach. Udział eksportowanego złomu, 70 procent, strona Instytutu podaje jako bieżący; strona jest niedatowana i powołuje się na prace z 2017 roku, więc dzisiejszy udział może być inny. Różnica cen 313 funtów szterlingów za tonę dotyczy Zjednoczonego Królestwa i lat od 2000 do 2016. Publikację z 2019 roku sfinansowała firma Cleveland Steel and Tubes Ltd. Raport Wspólnego Centrum Badawczego z 2025 roku przytoczono na podstawie jego opublikowanego streszczenia."],
+    sources: [
+      {
+        label: "Instytut Budownictwa Stalowego: REDUCE i PROGRESS, ponowne użycie stali konstrukcyjnej (Steel Construction Institute: REDUCE and PROGRESS, structural steel reuse)",
+        url: src("structural-steel-reuse", 0),
+      },
+      {
+        label: "Instytut Budownictwa Stalowego: Ponowne użycie stali konstrukcyjnej: ocena, badania i zasady projektowania, SCI P427, PDF (Steel Construction Institute: Structural steel reuse: assessment, testing and design principles, SCI P427 (PDF))",
+        url: src("structural-steel-reuse", 1),
+      },
+      {
+        label: "Wspólne Centrum Badawcze, Eurokody: wytyczne dotyczące ustanowienia europejskich zasad projektowania odzyskanych elementów stalowych do ponownego użycia (Joint Research Centre, Eurocodes: Guidance on establishing European rules for the design of reclaimed steel components for reuse)",
+        url: src("structural-steel-reuse", 2),
+      },
+    ],
+  }
 };

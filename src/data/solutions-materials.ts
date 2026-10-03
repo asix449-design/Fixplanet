@@ -6,15 +6,16 @@ import type { PrimarySource } from './sources';
  * copy in the four `solutions-materials-*.ts` files, a `solutionMeta` row,
  * and `public/images/solutions/{slug}.jpg`.
  *
- * `structural-steel-reuse` is not in this list. It waits for revised copy
- * that cites the Steel Construction Institute and the Joint Research Centre
- * only. Do not add the Cleveland Steel and Tubes life-cycle figures.
+ * Structural steel reuse cites the Steel Construction Institute and the
+ * Joint Research Centre. Do not add the Cleveland Steel and Tubes
+ * life-cycle report or its figures.
  */
 export const materialsEncyclopediaSlugs = [
   'wood-fibre-insulation',
   'cellulose-insulation',
   'engineered-bamboo',
   'recycled-gypsum',
+  'structural-steel-reuse',
 ] as const;
 
 export type MaterialsEncyclopediaSlug = (typeof materialsEncyclopediaSlugs)[number];
@@ -107,6 +108,17 @@ export const materialsEncyclopediaMeta: {
       'CC BY 4.0',
       by,
       'https://commons.wikimedia.org/wiki/File:Stapel_Gipskartonplatten.jpg',
+    ),
+  },
+  {
+    slug: 'structural-steel-reuse',
+    image: img(
+      'structural-steel-reuse.jpg',
+      1280,
+      960,
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE',
+      'https://commons.wikimedia.org/wiki/File:SlatedForReuse_Hill_Iron_and_Steel_%2854264735079%29.jpg',
     ),
   },
 ];

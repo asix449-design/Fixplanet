@@ -823,5 +823,15 @@
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
     "note": "Plasterboard stack. Right side cropped from the delivered 1280 px frame to 1000 px to remove factory edge print, JPEG quality 80."
+  },
+  {
+    "slug": "structural-steel-reuse",
+    "file": "structural-steel-reuse.jpg",
+    "commonsTitle": "SlatedForReuse Hill Iron and Steel (54264735079).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SlatedForReuse_Hill_Iron_and_Steel_%2854264735079%29.jpg",
+    "artist": "Ian Hill, U.S. Department of Energy",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE",
+    "note": "Steel members set aside for reuse in Boulder, Colorado. Delivered crop kept. Light gamma 0.85 brighten (mean luminance about 35 to 44). JPEG quality 80, 1280 px wide."
   }
 ]

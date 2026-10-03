@@ -922,6 +922,16 @@ export const solutionMeta: SolutionMeta[] = [
     ],
   },
   {
+    slug: 'structural-steel-reuse',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Steel Construction Institute, structural steel reuse',
+        'https://steel-sci.com/reduce-and-progress.html',
+      ),
+    ],
+  },
+  {
     slug: 'seagrass-restoration',
     tag: 'oceans',
     sources: [
