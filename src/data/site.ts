@@ -4,7 +4,6 @@ export const site = {
   url: 'https://fixplanet.org',
   twitter: 'https://x.com/asix_449',
   twitterHandle: '@asix_449',
-  bookAmazon: 'https://amzn.eu/d/0dZtkBPQ',
 };
 
 /**
@@ -15,13 +14,7 @@ export const site = {
 export const donateCheckoutUrl =
   'https://buy.stripe.com/00w3cnbA548A5Za7PKffy00';
 
-/**
- * Temporarily hide Book from header, home hub, and footer while New World is
- * being edited. `/book` routes and About copy stay live. Flip to true to restore.
- */
-export const SHOW_BOOK_NAV = false;
-
-const allNav = [
+export const nav = [
   { href: '/solutions', key: 'solutions' },
   { href: '/innovations', key: 'innovations' },
   { href: '/terraforming', key: 'terraforming' },
@@ -31,13 +24,8 @@ const allNav = [
   { href: '/migration', key: 'migration' },
   { href: '/forests', key: 'forests' },
   { href: '/oceans', key: 'oceans' },
-  { href: '/book', key: 'book' },
   { href: '/about', key: 'about' },
 ] as const;
-
-export const nav = allNav.filter(
-  (item) => SHOW_BOOK_NAV || item.key !== 'book',
-);
 
 export const features = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
@@ -46,7 +34,7 @@ export const features = [
   { href: '/wildlife', key: 'wildlife', icon: 'paw' },
 ] as const;
 
-/** Founder-supplied Home tile art. Book stays unmapped while hidden from nav. */
+/** Founder-supplied Home tile art. */
 export const homeTileArt = {
   solutions: '/images/home-tiles/solutions.jpg',
   innovations: '/images/home-tiles/innovations.jpg',
@@ -61,7 +49,7 @@ export const homeTileArt = {
 } as const;
 
 /** Primary Home hub tiles — one entry per main nav destination. */
-const allHomeHub = [
+export const homeHub = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
   { href: '/innovations', key: 'innovations', icon: 'circuit' },
   { href: '/terraforming', key: 'terraforming', icon: 'terrain' },
@@ -71,10 +59,5 @@ const allHomeHub = [
   { href: '/migration', key: 'migration', icon: 'migrate' },
   { href: '/forests', key: 'forests', icon: 'trees' },
   { href: '/oceans', key: 'oceans', icon: 'wave' },
-  { href: '/book', key: 'book', icon: 'book' },
   { href: '/about', key: 'about', icon: 'compass' },
 ] as const;
-
-export const homeHub = allHomeHub.filter(
-  (item) => SHOW_BOOK_NAV || item.key !== 'book',
-);

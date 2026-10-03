@@ -5,6 +5,7 @@ export default defineConfig({
   site: 'https://fixplanet.org',
   integrations: [
     sitemap({
+      filter: (page) => !/\/book\/?$/.test(new URL(page).pathname),
       i18n: {
         defaultLocale: 'en',
         locales: {
@@ -16,6 +17,12 @@ export default defineConfig({
       },
     }),
   ],
+  redirects: {
+    '/book': '/',
+    '/ru/book': '/ru/',
+    '/pl/book': '/pl/',
+    '/lv/book': '/lv/',
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ru', 'pl', 'lv'],

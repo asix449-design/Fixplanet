@@ -86,3 +86,11 @@
 /ru/migration/remittances-wdi-series /ru/migration/remittances 301
 /pl/migration/remittances-wdi-series /pl/migration/remittances 301
 /lv/migration/remittances-wdi-series /lv/migration/remittances 301
+/book / 301
+/book/ / 301
+/ru/book /ru/ 301
+/ru/book/ /ru/ 301
+/pl/book /pl/ 301
+/pl/book/ /pl/ 301
+/lv/book /lv/ 301
+/lv/book/ /lv/ 301
