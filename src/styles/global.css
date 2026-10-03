@@ -4203,6 +4203,45 @@ a.map-card:hover {
   border-left-color: #d48a3c;
 }
 
+/* Low-resolution photos stay at their own pixel size inside the card frame. */
+.card-art.geo-card-natural {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #07110c;
+}
+
+.card-art.geo-card-natural img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.theme-terraforming-detail .wildlife-detail-art.geo-detail-natural img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.theme-terraforming-detail .wildlife-detail-art figcaption,
+.theme-terraforming-detail .geo-prose {
+  overflow-wrap: anywhere;
+}
+
+.theme-terraforming-detail ol.geo-sources {
+  list-style: decimal;
+  margin: 0.4rem 0 0;
+  padding-left: 1.4rem;
+}
+
+.theme-terraforming-detail ol.geo-sources a {
+  color: var(--lime);
+}
+
 .geo-card-research {
   border-left-style: dashed;
   border-left-color: #7ec8d4;
