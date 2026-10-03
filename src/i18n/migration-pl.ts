@@ -34,6 +34,21 @@ export const page: MigrationPage = {
     humans: 'Migracje ludzi',
     'great-migrations': 'Migracje zwierząt',
   },
+  entrances: {
+    aria: 'Powiązane strony',
+    refugees: {
+      title: 'Uchodźcy i wykrycia na granicy',
+      text: 'Pięć dużych obozów na 31 sierpnia 2026 roku, pięć kart trendów z 2025 roku oraz wykrycia na zewnętrznych granicach Unii Europejskiej w 2024 i 2025 roku.',
+    },
+    remittances: {
+      title: 'Przekazy pieniężne',
+      text: 'Pieniądze, które migranci wysyłają do domu: przepływy światowe, najwięksi odbiorcy, udział w gospodarce kraju i koszt wysłania.',
+    },
+    missing: {
+      title: 'Zaginieni migranci',
+      text: 'Zgony i zaginięcia na szlakach migracyjnych w projekcie zaginionych migrantów.',
+    },
+  },
   shelves: {
     humans: 'Ludzie',
     'great-migrations': 'Wielkie migracje',
@@ -228,7 +243,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arktyczne ptaki wędrowne',
     hook: 'Rybitwy, sokoły wędrowne, siewkowce, gęsi: arktyczne lato to puls pokarmu, a zima jest gdzie indziej.',
     imageAlt: 'Rybitwy popielate nad zimnym północnym brzegiem — znak wysokiej szerokości, nie nazwana kolonia',
-    what: 'To karta klasy, nie druga encyklopedia rybitwy popielatej i nie trzecia strona „szlaków po lodzie”. Wiele ptaków lęgowych na arktycznej i subarktycznej tundrze odlatuje, gdy gasną światło i owady. Rybitwy popielate lecą od bieguna do bieguna (Egevang et al. 2010). Sokoły wędrowne idą za ofiarą wzdłuż wybrzeży i szlaków. Siewkowce stagingują na nielicznych mulistych płyciznach. Gęsi idą za trawą i odwilżą. BirdLife i CMS opisują rodziny szlaków; syntezą regionalną jest CAFF. Sezonowa migracja istniała już w zlodowaceniu (modele na dziesiątki tysięcy lat). Po lodzie zmieniła się geografia: lęgi ścisnęły się na południe, zwłaszcza w Ameryce Północnej pod tarczą laurentyjską, potem holocen znów otworzył arktyczne lato. Thorup et al. (PNAS, 2021) hindcastują afro-palearktyczną pętlę gąsiorka przez 120 000 lat: sezonowa migracja prawdopodobnie trwała w zlodowaceniu, często wewnątrz Afryki; odpowiednie europejskie siedliska letnie znów się rozszerzyły po LGM. To modelowany przykład klasy, nie druga encyklopedia ptasich szlaków.',
+    what: 'Wiele ptaków lęgowych na arktycznej i subarktycznej tundrze odlatuje, gdy gasną światło i owady. Rybitwy popielate lecą od bieguna do bieguna (Egevang et al. 2010). Sokoły wędrowne idą za ofiarą wzdłuż wybrzeży i szlaków. Siewkowce stagingują na nielicznych mulistych płyciznach. Gęsi idą za trawą i odwilżą. BirdLife i CMS opisują rodziny szlaków; syntezą regionalną jest CAFF. Sezonowa migracja istniała już w zlodowaceniu (modele na dziesiątki tysięcy lat). Po lodzie zmieniła się geografia: lęgi ścisnęły się na południe, zwłaszcza w Ameryce Północnej pod tarczą laurentyjską, potem holocen znów otworzył arktyczne lato. Thorup et al. (PNAS, 2021) hindcastują afro-palearktyczną pętlę gąsiorka przez 120 000 lat: sezonowa migracja prawdopodobnie trwała w zlodowaceniu, często wewnątrz Afryki; odpowiednie europejskie siedliska letnie znów się rozszerzyły po LGM. To modelowany przykład klasy.',
     route:
       'Lęgi w długim arktycznym dniu; zimowiska na umiarkowanych albo tropikalnych mokradłach, wybrzeżach albo — u rybitw — przy antarktycznym lodzie paku. Szlaki wschodnioatlantycki, wschodnioazjatycko-australazjatycki, Missisipi i pacyficzno-amerykański niosą lęgowce arktyczne. Gu et al. (Nature, 2021) śledzili euroazjatyckie arktyczne sokoły wędrowne na pięciu współczesnych szlakach i wiążą je z przesunięciem lęgowisk od LGM do holocenu. Model gąsiorka Thorupa to afro-palearktyczny odpowiednik: pętla przetrwała zlodowacenie, przesuwając szerokość lęgową, nie wymyślając migracji od zera. Linie to obwiednie, nie GPS każdego stada. Przelot szlamnika Alaska–Nowa Zelandia to pacyficzne skrócenie, nie średnia.',
     drivers:
@@ -236,9 +251,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'Na północ wiosną półkuli północnej, na południe po lęgach. U niektórych populacji przylot przyspieszył, gdy wiosny się ocieplają — fenologia, nie nowy szlak. Rekordowe kilometry to nazwane prace telemetryczne.',
     pressure:
-      'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. CAFF i BirdLife traktują migrantów arktycznych jako wspólny problem szlaków, nie muzeum jednego gatunku. Karta rybitwy popielatej zostaje pod starym głębokim adresem, jeśli chcesz samą pracę o 70 000 km.',
+      'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. CAFF i BirdLife traktują migrantów arktycznych jako wspólny problem szlaków, nie muzeum jednego gatunku.',
     sourcesNote:
-      'Egevang et al. 2010 o rybitwach; Gu et al. 2021 o złożeniu szlaków sokoła wędrownego po lodzie; Thorup et al. 2021 o pętli gąsiorka przez 120 000 lat; szlaki BirdLife; CAFF; CMS. Karta nie wymyśla spisu wszystkich arktycznych migrantów ani drugiej encyklopedii ptasich szlaków.',
+      'Egevang et al. 2010 o rybitwach; Gu et al. 2021 o złożeniu szlaków sokoła wędrownego po lodzie; Thorup et al. 2021 o pętli gąsiorka przez 120 000 lat; szlaki BirdLife; CAFF; CMS.',
   },
   'hunnic-invasion': {
     title: 'Hunicka presja na Rzym',

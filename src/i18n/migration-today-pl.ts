@@ -1,147 +1,112 @@
 import type { TodayShelfCopy } from './migration';
 
 export const plToday: TodayShelfCopy = {
-  mapTitle: 'Migracja netto, 2023',
-  mapAria:
-    'Czarna mapa świata z limonkowymi konturami państw i tabliczkami sześciu głównych regionów ONZ z migracją netto za 2023',
-  lead:
-    'Tabliczki pokazują migrację netto za rok kalendarzowy 2023 — imigranci minus emigranci — dla sześciu głównych regionów UN M49. To reszta, nie spis kto przyjechał i kto wyjechał. Kliknij tabliczkę: kto już tam mieszka według zasobu migrantów 2024 oraz kilka udokumentowanych korytarzy.',
-  honesty:
-    'Nie wymyślamy rocznych przyjazdów i wyjazdów. Pełnej światowej macierzy przepływów nie ma. Uczciwa liczba „w kontra wy” to migracja netto (ONZ, World Population Prospects 2024, szacunki za 2023). Listy skąd ludzie to zasób: osoby urodzone gdzie indziej, które mieszkały w regionie 1 lipca 2024 (UN DESA, International Migrant Stock 2024). Zasób to nie „przyjechali w tym roku”. Strzałki są schematem nazwanych korytarzy, nie narysowanymi wolumenami.',
-  tabletHint: 'Otwórz region ONZ. Na tabliczkach jest migracja netto, nie przyjazdy.',
-  netLabel: 'Migracja netto, UN WPP 2024',
-  netUnitMillion: 'mln osób, 2023',
-  netUnitPeople: 'osób, 2023',
-  stockLabel: 'Zasób migrantów międzynarodowych, środek 2024',
-  stockUnitMillion: 'mln mieszkańców urodzonych za granicą albo w innym kraju regionu',
-  originsTitle: 'Kto tam mieszka, według regionu urodzenia',
-  originsHint:
-    'Zasób migrantów, środek 2024. Oznaczenie „ok.” powtarza sformułowanie IOM. Reszta to inne regiony i nieznane pochodzenie — luki nie uzupełniamy.',
-  corridorsTitle: 'Udokumentowane korytarze',
-  corridorsNote:
-    'Pary krajów to korytarze zasobu (IOM World Migration Report 2026, za UN DESA 2025). To suma lat ruchu, nie przepływy 2023 i nie skala strzałek.',
-  close: 'Zamknij',
-  openTablet: 'Pokaż pochodzenie i korytarze dla',
-  million: 'mln',
-  approx: 'ok.',
-  intraCaption:
-    'Często dominuje migracja wewnątrzregionalna. W 2024 r. 74% międzynarodowych migrantów urodzonych w Europie mieszkało w innym kraju europejskim; 64% urodzonych w Afryce Subsaharyjskiej — w tym regionie; 45% wszystkich międzynarodowych migrantów — w regionie urodzenia. Korytarz Afryka → Europa jest prawdziwy. To nie główna historia świata.',
-  remainderNote: 'Inne regiony i nieznane pochodzenie nie są wymienione — opublikowany podział nie zamyka 100%.',
-  stockNotFlow: 'Zasób, nie przyjazdy tego roku',
-  arrowLegend: 'Schematyczny korytarz — nie wolumen',
-  mapCredit:
-    'Kontury lądu: Wikimedia Commons BlankMap-World (domena publiczna), przestylizowane na limonkę na czerni. Granice to kompromis kartograficzny, nie rozstrzygnięcie prawne. To nie choropleth ludności.',
-  emptyPanel: 'Wybierz tabliczkę. Mapa nie stawia Afryki → Europy jako głównego ruchu świata.',
-  layersLabel: 'Warstwy mapy',
-  layerCamps: 'Obozy dla uchodźców',
-  layerDetections: 'Wykrycia na granicach UE',
-  layerIdp: 'Wewnętrzne przesiedlenie',
-  layerRefugees: 'Uchodźcy (UNHCR)',
-  campsTitle: 'Największe obozy i osiedla UNHCR',
-  campsLead:
-    'Nazwane ośrodki UNHCR z opublikowaną liczbą i datą. To ludzie już mieszkający w obozie lub osiedlu — nie migracja netto z 2023 r. i nie „przybysze z tego roku”.',
-  campsHonesty:
-    'Liczby to dane operacyjne na datę w każdym wierszu. Lista jest wyselekcjonowana, nie pełny spis wszystkich ośrodków świata. Kliknij znacznik, żeby zobaczyć źródło.',
-  campsUnrwa:
-    'UNRWA prowadzi osobny rejestr uchodźców palestyńskich. Liczba w obozie to nie ten rejestr. Dane z Gazy po 2023 r. są niestabilne; ta mapa nie miesza UNHCR i UNRWA w jeden ranking.',
-  campOpen: 'Otwórz obóz lub osiedle',
-  campAsOf: 'Liczba na dzień',
-  campPeople: 'osób',
-  detectionsTitle: 'Wykrycia na granicach zewnętrznych UE (Frontex)',
-  detectionsLead:
-    'Wykrycia nieregularnych przekroczeń granic zewnętrznych Unii Europejskiej. Ta sama osoba może być policzona więcej niż raz. To nie jest liczba ludzi i nie jest światowa mapa „przełamań”.',
-  detectionsHonesty:
-    'Wstępne dane Frontexu. 2024: nieco ponad 239 000 wykryć (−38% wobec 2023). 2025: prawie 178 000 (−26%), najniżej od 2021. Znaczniki tras mają rok źródła; tam gdzie Frontex podał tylko kierunek zmiany, nie ma wymyślonej liczby.',
-  detectionsMetric: 'Wykrycia, nie unikalne osoby',
-  detectionsNoGlobal:
-    'Nie ma porównywalnego światowego szeregu „przełamań granicy”. Afryka → Europa nie jest rysowana jako główna historia świata.',
-  detectionsChange: 'wobec poprzedniego roku',
-  detectionsOpen: 'Otwórz notatkę o trasie UE',
-  detectionsNationalities: 'Najczęściej wykrywane obywatelstwa w 2025 r.: Bangladesz, Egipt, Afganistan — to nie teza o tym, kto „przyjeżdża najczęściej” na świecie.',
-  noHeadcount: 'Bez wymyślonej liczby',
-  idpTitle: 'Wewnętrzne przesiedlenie (IDMC)',
+  approx: 'około',
+  idpTitle: 'Przesiedlenia wewnętrzne',
   idpLead:
-    'Ponad 62,2 mln wewnętrznych przesiedleń w 2025 (−6% vs 2024): 32,3 mln z konfliktu i przemocy (rekord) oraz 29,9 mln z katastrof. Konflikt po raz pierwszy wyprzedził katastrofy; w 42 krajach wystąpiły oba.',
+    'Centrum Monitorowania Przesiedleń Wewnętrznych odnotowało ponad 62,2 miliona przesiedleń wewnętrznych w 2025 roku, o 6 procent mniej niż w 2024 roku: 32,3 miliona z powodu konfliktów i przemocy, rekord, oraz 29,9 miliona z powodu katastrof. Po raz pierwszy w tym szeregu konflikty przewyższyły katastrofy. W 42 krajach wystąpiły oba powody.',
   idpDefinition:
-    'IDMC liczy ludzi zmuszonych do opuszczenia domu przez konflikt, przemoc lub katastrofy, którzy nie przekroczyli granicy międzynarodowej. To nie międzynarodowy migrant stock UN DESA, nie wykrycia Frontexu i nie headcount obozów UNHCR. Ruchy w ciągu roku (nowe lub powtórne) to nie to samo co stan na koniec roku; ta sama osoba może się przesunąć więcej niż raz.',
+    'Centrum liczy osoby zmuszone do opuszczenia domu przez konflikt, przemoc lub katastrofy, które pozostają w swoim kraju. Przemieszczenie w ciągu roku może być pierwsze albo powtórne. Stan na koniec roku to liczba osób, które 31 grudnia nadal żyją w przesiedleniu wewnętrznym.',
   idpHonesty:
-    'Globalny raport o przesiedleniach wewnętrznych 2026 obejmuje rok kalendarzowy 2025 (raport opublikowany 12 maja 2026). Stan to ludzie, którzy nadal żyją w wewnętrznym przesiedleniu na koniec roku. Liczby roczne to policzone ruchy. Ta sama osoba może ruszyć się więcej niż raz, więc 32,3 mln liczy ruchy.',
-  idpNoChoropleth:
-    'Nazwane kryzysy poniżej to notatki ze źródłem, nie mapa świata kolorowana liczbą. Pokrycie IDMC jest niepełne; strona nie rysuje globalnego choroplethu ani warstwy «strzałki przełomu» z tych sum.',
+    'Globalny raport o przesiedleniach wewnętrznych 2026 obejmuje rok kalendarzowy 2025. Raport ukazał się 12 maja 2026 roku. Stan to osoby, które na koniec roku nadal żyją w przesiedleniu wewnętrznym. Roczne liczby liczą przemieszczenia. Ta sama osoba może ruszyć się więcej niż raz, więc 32,3 miliona liczy przemieszczenia.',
+  idpNotes: 'Nazwane kryzysy to krótkie notatki z liczbą i źródłem z tego samego raportu.',
   idpMillion: 'mln',
-  idpMovementsUnit: 'ruchów, 2025',
-  idpStockUnit: 'osób, koniec 2025',
-  idpConflictLabel: 'Konflikt i przemoc',
+  idpMovementsUnit: 'przemieszczeń w 2025 roku',
+  idpStockUnit: 'osób na koniec 2025 roku',
+  idpConflictLabel: 'Konflikty i przemoc',
   idpDisasterLabel: 'Katastrofy',
   idpCountriesLabel: 'krajów i terytoriów',
-  idpBothLabel: 'krajów z oboma czynnikami',
-  idpCrisesTitle: 'Nazwane kryzysy — notatki ze źródłem, nie mapa',
+  idpBothLabel: 'krajów z oboma powodami',
+  idpCrisesTitle: 'Nazwane kryzysy',
+  idpSourceSummary:
+    'Centrum Monitorowania Przesiedleń Wewnętrznych, skrót Globalnego raportu o przesiedleniach wewnętrznych 2026 (12 maja 2026)',
+  idpSourcePdf: 'Globalny raport o przesiedleniach wewnętrznych 2026, pełny tekst',
+  idpSourceHub: 'Centrum Monitorowania Przesiedleń Wewnętrznych, dane o przesiedleniach',
   idpCards: {
     'idp-stock-2025': {
-      tag: 'Stan · koniec 2025',
-      title: 'Ludzie w wewnętrznym przesiedleniu',
-      hook: 'Ponad 82,2 mln ludzi żyło w wewnętrznym przesiedleniu w 104 krajach i terytoriach na koniec 2025 — pierwszy od dekady lekki spadek, liczby wciąż blisko rekordu.',
+      tag: 'Stan, koniec 2025',
+      title: 'Osoby żyjące w przesiedleniu wewnętrznym',
+      hook: 'Ponad 82,2 miliona osób żyło w przesiedleniu wewnętrznym w 104 krajach i terytoriach na koniec 2025 roku. To pierwszy lekki spadek na świecie od dekady, wciąż blisko rekordowych poziomów.',
       detail: [
-        'Stan IDMC: ludzie zmuszeni do opuszczenia domu przez konflikt, przemoc lub katastrofy, którzy nie przekroczyli granicy międzynarodowej. Ponad 68,6 mln — konflikt/przemoc; prawie 13,6 mln — katastrofy (na 31 grudnia 2025). To nie międzynarodowy migrant stock i nie headcount obozów UNHCR.',
+        'Liczba na koniec roku: osoby zmuszone do ucieczki z domu przez konflikt, przemoc lub katastrofy, które pozostają w swoim kraju.',
+        'Z tego stanu ponad 68,6 miliona zostało przesiedlonych przez konflikt i przemoc (54 kraje i terytoria), a prawie 13,6 miliona przez katastrofy (82 kraje i terytoria), według stanu na 31 grudnia 2025 roku.',
+        'Raport z 2026 roku wiąże większą część niewielkiego światowego spadku z powrotami w częściach Sudanu, Demokratycznej Republiki Konga i Syrii. Mówi też, że powrót staje się trwałym rozwiązaniem, gdy na miejscu są bezpieczeństwo i usługi. Aktualne dane na koniec roku miało mniej niż jedna czwarta krajów, w których żyją osoby przesiedlone przez konflikt.',
       ],
     },
     'idp-conflict-displacements-2025': {
-      tag: 'Ruchy · 2025',
-      title: 'Przesiedlenia z powodu konfliktu i przemocy',
-      hook: 'Konflikt i przemoc wywołały rekordowe 32,3 mln wewnętrznych przesiedleń w 48 krajach w 2025 — około 60% powyżej 2024 i po raz pierwszy więcej niż katastrofy.',
+      tag: 'Przemieszczenia, 2025',
+      title: 'Przesiedlenia z powodu konfliktów i przemocy',
+      hook: 'Konflikty i przemoc wywołały rekordowe 32,3 miliona przesiedleń wewnętrznych w 48 krajach i terytoriach w 2025 roku, około 60 procent powyżej 2024 roku i powyżej katastrof po raz pierwszy w tym szeregu.',
       detail: [
-        'To ruchy w ciągu roku (nowe lub powtórne), nie unikalne osoby. Iran i DRC — około jednej trzeciej światowego wyniku każdy. Międzynarodowe konflikty zbrojne — około 46%. W Sudanie pod koniec roku w wewnętrznym przesiedleniu pozostawało około 9,1 mln ludzi.',
+        'Policzone przemieszczenia w ciągu roku, pierwsze albo powtórne. Ta sama osoba może ruszyć się więcej niż raz, więc 32,3 miliona liczy przemieszczenia.',
+        'Raport mówi o silnej koncentracji. Na Iran i Demokratyczną Republikę Konga przypadło po około jednej trzeciej światowej sumy przesiedleń konfliktowych. Konflikty zbrojne o zasięgu międzynarodowym dały około 46 procent przesiedleń konfliktowych. Liczba krajów z przesiedleniem związanym z konfliktami międzynarodowymi wzrosła z 6 w 2024 roku do 13 w 2025 roku.',
+        'Skrót raportu wymienia walki miejskie wokół Al-Fasziru, Gomy i Teheranu jako źródło dużych, często powtarzanych ruchów. Sudan pozostał największym kryzysem osób żyjących w przesiedleniu wewnętrznym, około 9,1 miliona osób w Sudanie na koniec roku.',
       ],
     },
     'idp-disaster-displacements-2025': {
-      tag: 'Ruchy · 2025',
+      tag: 'Przemieszczenia, 2025',
       title: 'Przesiedlenia z powodu katastrof',
-      hook: 'Katastrofy wywołały 29,9 mln wewnętrznych przesiedleń w 140 krajach w 2025 — o 35% poniżej szczytu 2024, wciąż około 13% powyżej średniej dekady.',
+      hook: 'Katastrofy wywołały 29,9 miliona przesiedleń wewnętrznych w 140 krajach i terytoriach w 2025 roku, 35 procent poniżej szczytu z 2024 roku i około 13 procent powyżej średniej z dekady.',
       detail: [
-        'Burze ~17,9 mln; powodzie <7,9 mln; pożary >694 tys.; geofizyka ~2,5 mln. Na Filipiny przypadło około 10,7 mln przesiedleń katastroficznych (~36% światowego disaster-wyniku). To nie mapa «migrantów klimatycznych» i nie międzynarodowy net migration.',
+        'Burze: około 17,9 miliona przemieszczeń, około 60 procent przesiedleń katastrofalnych, drugi najwyższy roczny wynik burz w tym szeregu. Powodzie: poniżej 7,9 miliona, 31 procent poniżej średniej z dekady. Pożary: ponad 694 000 przemieszczeń, drugi wynik w dekadzie. Zagrożenia geofizyczne: około 2,5 miliona, w tym duże ewakuacje przed silnymi trzęsieniami ziemi.',
+        'Same Filipiny dały około 10,7 miliona przesiedleń katastrofalnych w 2025 roku, około 36 procent światowej sumy katastrof w podsumowaniu map raportu. Liczba obejmuje ruchy i ewakuacje związane z zagrożeniami pogodowymi.',
+        'Te liczby liczą przemieszczenia wewnątrz krajów w 2025 roku.',
       ],
     },
     'idp-movements-2025-overview': {
-      tag: 'Przegląd · 2025',
-      title: 'Wewnętrzne przesiedlenia w 2025',
-      hook: 'Ponad 62,2 mln wewnętrznych przesiedleń w 2025 (−6% vs 2024): 32,3 mln z konfliktu i przemocy (rekord) oraz 29,9 mln z katastrof. Konflikt po raz pierwszy wyprzedził katastrofy; w 42 krajach wystąpiły oba.',
+      tag: 'Przegląd, 2025',
+      title: 'Przesiedlenia wewnętrzne w 2025 roku',
+      hook: 'Centrum odnotowało ponad 62,2 miliona przesiedleń wewnętrznych w 2025 roku, o 6 procent mniej niż w 2024 roku: 32,3 miliona z powodu konfliktów i przemocy, rekord, oraz 29,9 miliona z powodu katastrof. Po raz pierwszy konflikty przewyższyły katastrofy. W 42 krajach wystąpiły oba powody.',
       detail: [
-        'Kafelek wprowadzający warstwy. Raz: ruchy ≠ stan ≠ migracja transgraniczna. Szczegóły A–C. Nie rysować globalnej «strzałki przełomu» z tych sum.',
+        'Przemieszczenia w ciągu roku stoją obok stanu na koniec roku na kartach powyżej. Karty stanu, konfliktów i katastrof podają podziały.',
       ],
     },
   },
-  refugeesTitle: 'Uchodźcy pod mandatem UNHCR',
+  idpCrisisCopy: {
+    'sudan-stock': {
+      place: 'Sudan',
+      note: 'Największy kryzys osób żyjących w przesiedleniu wewnętrznym na koniec 2025 roku. Około 9,1 miliona osób nadal żyło w przesiedleniu wewnętrznym w Sudanie. Liczba jest stanem na koniec roku.',
+    },
+    'philippines-disaster-2025': {
+      place: 'Filipiny',
+      note: 'Około 10,7 miliona przesiedleń katastrofalnych w 2025 roku, około 36 procent światowej sumy katastrof w podsumowaniu map raportu. Liczba obejmuje ruchy i ewakuacje związane z zagrożeniami pogodowymi w ciągu roku.',
+    },
+  },
+  refugeesTitle: 'Uchodźcy pod mandatem urzędu wysokiego komisarza',
   refugeesLead:
-    'Ludzie, którzy uciekli przez granicę międzynarodową i pozostają pod mandatem UNHCR. Global Trends 2025, opublikowany 11 czerwca 2026, szacuje ten stan na koniec 2025 roku na 35,6 mln — około 3% mniej niż rok wcześniej, wciąż blisko rekordu.',
+    'Osoby, które uciekły przez granicę międzynarodową i pozostają pod mandatem Urzędu Wysokiego Komisarza Narodów Zjednoczonych do spraw Uchodźców. Raport o trendach światowych za 2025 rok, opublikowany 11 czerwca 2026 roku, podaje ten stan na 35,6 miliona na koniec 2025 roku, około 3 procent mniej niż rok wcześniej, wciąż blisko rekordowych poziomów.',
   refugeesDefinition:
-    'Osoba przekroczyła granicę międzynarodową, a UNHCR liczy ją jako uchodźcę, osobę w sytuacji zbliżonej do statusu uchodźcy albo inną osobę potrzebującą ochrony międzynarodowej. To nie liczba nazwanych obozów UNHCR, nie wewnętrzne przesiedlenie według IDMC, nie uchodźcy palestyńscy pod mandatem UNRWA, nie stan migrantów międzynarodowych UN DESA i nie wykrycia Frontexu. Osoby ubiegające się o azyl, które wciąż czekają na decyzję, liczy się osobno.',
+    'Osoby, które przekroczyły granicę międzynarodową i które urząd liczy jako uchodźców, osoby w sytuacji zbliżonej do statusu uchodźcy albo inne osoby potrzebujące ochrony międzynarodowej, na 31 grudnia 2025 roku. Osoby czekające na decyzję w sprawie azylu są wymienione obok tego stanu.',
   refugeesHonesty:
-    'Global Trends 2025 obejmuje rok kalendarzowy 2025. Stan to ludność na 31 grudnia 2025. Powroty to ruchy w ciągu tego roku. Listy poniżej są wybrane z raportu i z otwartej bazy wskaźników UNHCR, a nie pełnym spisem krajów na tej stronie.',
-  refugeesNoChoropleth:
-    'Nie ma mapy świata kolorowanej liczbą. Szeregi krajów przyjmujących i krajów pochodzenia to krótkie listy ze źródłami, nie wymyślone kształty państw. Nazwane obozy zostają na warstwie obozów.',
+    'Raport o trendach światowych za 2025 rok obejmuje rok kalendarzowy 2025. Stan to ludność na 31 grudnia 2025 roku. Powroty to ruchy w tamtym roku. Listy poniżej pochodzą z raportu i z wyszukiwarki danych o uchodźcach.',
+  refugeesSourceTrends: 'Urząd Wysokiego Komisarza Narodów Zjednoczonych do spraw Uchodźców, trendy światowe',
+  refugeesSourcePdf: 'Raport o trendach światowych za 2025 rok (czerwiec 2026)',
+  refugeesSourceFinder: 'Wyszukiwarka danych o uchodźcach',
+  refugeesSourcePress: 'Komunikat urzędu, 11 czerwca 2026',
+  refugeesSourceHosting: 'Wskaźniki przyjmowania uchodźców',
   refugeesCards: {
     'refugees-unhcr-stock-2025': {
-      tag: 'Stan · koniec 2025',
-      title: 'Uchodźcy pod mandatem UNHCR',
-      hook: '35,6 mln osób było na koniec 2025 roku uchodźcami, osobami w sytuacji zbliżonej do statusu uchodźcy albo innymi osobami potrzebującymi ochrony międzynarodowej pod mandatem UNHCR — około 3% mniej niż rok wcześniej, wciąż blisko rekordu.',
+      tag: 'Stan, koniec 2025',
+      title: 'Uchodźcy pod mandatem urzędu',
+      hook: '35,6 miliona osób było uchodźcami, osobami w sytuacji zbliżonej do statusu uchodźcy albo innymi osobami potrzebującymi ochrony międzynarodowej pod mandatem urzędu na koniec 2025 roku, około 3 procent mniej niż rok wcześniej, wciąż blisko rekordowych poziomów.',
       figure: '35,6',
       unit: 'mln osób, koniec 2025',
       rows: [
-        { label: 'Uchodźcy, w tym sytuacja zbliżona', figure: '28,5 mln' },
+        { label: 'Uchodźcy, w tym sytuacje zbliżone', figure: '28,5 mln' },
         { label: 'Inne osoby potrzebujące ochrony międzynarodowej', figure: '7,2 mln' },
-        { label: 'Uchodźcy palestyńscy pod mandatem UNRWA (osobno)', figure: 'około 6 mln' },
-        { label: 'Osoby ubiegające się o azyl, czekają na decyzję (osobno)', figure: 'prawie 9 mln' },
+        { label: 'Uchodźcy palestyńscy agencji bliskowschodniej', figure: 'około 6 mln' },
+        { label: 'Osoby czekające na decyzję w sprawie azylu', figure: 'prawie 9 mln' },
       ],
       detail: [
-        'Stan UNHCR na koniec roku: ludzie, którzy uciekli przez granicę międzynarodową i potrzebują ochrony międzynarodowej pod jego mandatem. Około 28,5 mln to uchodźcy, wliczając osoby w sytuacji zbliżonej do statusu uchodźcy. 7,2 mln to inne osoby potrzebujące ochrony międzynarodowej. To nie liczba ludzi w obozach, nie wewnętrzne przesiedlenie według IDMC, nie stan migrantów międzynarodowych UN DESA i nie wykrycia Frontexu.',
-        'Około 6 mln uchodźców palestyńskich pod mandatem UNRWA stoi obok tej liczby, a nie w jej środku. Razem z UNRWA szersze spojrzenie na uchodźców daje około 41,6 mln. Prawie 9 mln osób ubiegających się o azyl na koniec 2025 roku wciąż czekało na decyzję — liczy się je osobno.',
-        'Global Trends 2025 wiąże spadek głównie z powrotami w dużych sytuacjach, zwłaszcza do Afganistanu, Syrii i Sudanu, i zaznacza, że wiele powrotów odbyło się pod presją, do kruchych warunków.',
+        'Stan na koniec roku: osoby, które uciekły przez granicę międzynarodową i potrzebują ochrony międzynarodowej pod mandatem urzędu. Obejmuje około 28,5 miliona uchodźców, w tym osoby w sytuacji zbliżonej, oraz 7,2 miliona innych osób potrzebujących ochrony międzynarodowej.',
+        'Około 6 milionów uchodźców palestyńskich Agencji Narodów Zjednoczonych dla Pomocy Uchodźcom Palestyńskim na Bliskim Wschodzie stoi obok tej liczby. Razem szerszy obraz uchodźców daje około 41,6 miliona. Prawie 9 milionów osób ubiegających się o azyl na koniec 2025 roku nadal czekało na decyzję.',
+        'Raport wiąże spadek głównie z powrotami w dużych sytuacjach, zwłaszcza do Afganistanu, Syrii i Sudanu, i odnotowuje, że wiele powrotów odbyło się pod presją, do kruchych warunków.',
       ],
     },
     'refugees-top-hosts-2025': {
-      tag: 'Kraje przyjmujące · koniec 2025',
-      title: 'Gdzie żyją uchodźcy',
-      hook: 'Pięć krajów przyjmowało około jednej trzeciej uchodźców i innych osób potrzebujących ochrony międzynarodowej w zakresie UNHCR na koniec 2025: Kolumbia 2,8 mln, Niemcy 2,7 mln, Turcja 2,4 mln, Uganda 1,9 mln, Iran 1,7 mln.',
+      tag: 'Kraje przyjmujące, koniec 2025',
+      title: 'Gdzie przyjmowani są uchodźcy',
+      hook: 'Pięć krajów przyjmowało około jednej trzeciej uchodźców i innych osób potrzebujących ochrony międzynarodowej w tym zakresie na koniec 2025 roku: Kolumbia 2,8 miliona, Niemcy 2,7 miliona, Turcja 2,4 miliona, Uganda 1,9 miliona, Iran 1,7 miliona.',
       figure: '1/3',
       unit: 'w pięciu krajach przyjmujących, koniec 2025',
       rows: [
@@ -152,15 +117,15 @@ export const plToday: TodayShelfCopy = {
         { label: 'Iran', figure: '1,7 mln' },
       ],
       detail: [
-        'Stany krajów przyjmujących na koniec 2025 roku według Global Trends i otwartej bazy wskaźników UNHCR: uchodźcy, osoby w sytuacji zbliżonej i inne osoby potrzebujące ochrony międzynarodowej. To nie ranking wielkości obozów i nie lista tego, kto przyjął najwięcej przyjazdów w tym roku.',
-        'Liczba Kolumbii w dużej mierze opiera się na Wenezuelczykach ze statusem ochrony. Niemcy i Turcja to kraje o wysokim i wyższym średnim dochodzie, z różnymi ścieżkami prawnymi. Uganda i Iran to duzi sąsiedzi krajów pochodzenia. Kraje o niskim i średnim dochodzie nadal przyjmują 68% tej ludności. Kraje najsłabiej rozwinięte — 26% (około 9,4 mln).',
-        'Nazwane obozy UNHCR, w tym Cox’s Bazar i Dadaab, zostają na warstwie obozów. Duży kraj przyjmujący może mieć niewiele dużych obozów. Większość uchodźców na świecie nie mieszka w obozach.',
+        'Stany krajów przyjmujących na koniec 2025 roku z raportu o trendach światowych i wyszukiwarki danych o uchodźcach: uchodźcy, osoby w sytuacji zbliżonej i inne osoby potrzebujące ochrony międzynarodowej.',
+        'Liczba Kolumbii w dużej mierze składa się z Wenezuelczyków ze statusem ochrony. Niemcy i Turcja to kraje o wysokim i wyższym średnim dochodzie, z różnymi ścieżkami prawnymi. Uganda i Iran to duże sąsiednie kraje przyjmujące. Kraje o niskim i średnim dochodzie przyjmują 68 procent tej ludności. Kraje najsłabiej rozwinięte przyjmują 26 procent, około 9,4 miliona osób.',
+        'Koks Badźar i Dadaab są na liście obozów na tej stronie. Duży kraj przyjmujący może mieć niewiele dużych obozów. Większość uchodźców na świecie mieszka poza obozami.',
       ],
     },
     'refugees-top-origins-2025': {
-      tag: 'Kraje pochodzenia · koniec 2025',
+      tag: 'Pochodzenie, koniec 2025',
       title: 'Skąd pochodzą uchodźcy',
-      hook: 'Około dwóch trzecich uchodźców i innych osób potrzebujących ochrony międzynarodowej w zakresie UNHCR pochodziło na koniec 2025 z zaledwie pięciu krajów: Wenezuela 6,5 mln, Ukraina 5,2 mln, Syria 4,9 mln, Afganistan 3,7 mln, Sudan 2,8 mln.',
+      hook: 'Około dwóch trzecich uchodźców i innych osób potrzebujących ochrony międzynarodowej w tym zakresie pochodziło z pięciu krajów na koniec 2025 roku: Wenezuela 6,5 miliona, Ukraina 5,2 miliona, Syria 4,9 miliona, Afganistan 3,7 miliona, Sudan 2,8 miliona.',
       figure: '2/3',
       unit: 'z pięciu krajów pochodzenia, koniec 2025',
       rows: [
@@ -171,15 +136,15 @@ export const plToday: TodayShelfCopy = {
         { label: 'Sudan', figure: '2,8 mln' },
       ],
       detail: [
-        'Stany według kraju pochodzenia dla tej samej ludności UNHCR co lista krajów przyjmujących. Gdy do tych pięciu dodać Sudan Południowy, z sześciu krajów pochodzi ponad 70%.',
-        'Syryjski stan spadł do końca 2025 roku do około 4,9 mln po dużych powrotach. Afgański — do około 3,7 mln. Liczby ukraińskie pozostają wysokie: ochrona tymczasowa i pokrewne statusy wchodzą w ten zakres. Wenezuelczycy pozostają największą grupą pochodzenia wśród innych osób potrzebujących ochrony międzynarodowej w obu Amerykach.',
-        'Około 5,4 mln osób zostało zmuszonych do ucieczki przez granicę w ciągu 2025 roku. To ruch w danym roku, a nie ten stan.',
+        'Stany według kraju pochodzenia dla tej samej ludności co lista krajów przyjmujących. Ponad 70 procent pochodzi z sześciu krajów, gdy do tych pięciu dodać Sudan Południowy.',
+        'Liczba uchodźców syryjskich spadła do około 4,9 miliona na koniec 2025 roku po dużych powrotach. Liczby afgańskie spadły do około 3,7 miliona. Liczby ukraińskie pozostają wysokie dzięki ochronie tymczasowej i pokrewnym statusom w tym zakresie. Wenezuelczycy pozostają największą grupą pochodzenia wśród innych osób potrzebujących ochrony międzynarodowej w obu Amerykach.',
+        'Około 5,4 miliona osób zostało zmuszonych do ucieczki przez granicę w 2025 roku. Ten przepływ jest liczony obok tego stanu.',
       ],
     },
     'refugees-neighbouring-hosts-2025': {
-      tag: 'Układ · koniec 2025',
-      title: 'Większość uchodźców zostaje blisko',
-      hook: '65% uchodźców i innych osób potrzebujących ochrony międzynarodowej mieszkało na koniec 2025 w krajach sąsiadujących z krajem pochodzenia. 68% przyjmowały kraje o niskim i średnim dochodzie.',
+      tag: 'Wzór, koniec 2025',
+      title: 'Większość uchodźców zostaje w pobliżu',
+      hook: '65 procent uchodźców i innych osób potrzebujących ochrony międzynarodowej mieszkało w krajach sąsiadujących z krajem pochodzenia na koniec 2025 roku. 68 procent przyjmowały kraje o niskim i średnim dochodzie.',
       figure: '65%',
       unit: 'w krajach sąsiednich, koniec 2025',
       rows: [
@@ -188,156 +153,116 @@ export const plToday: TodayShelfCopy = {
         { label: 'Sytuacje przewlekłe, pięć lat lub dłużej', figure: 'około 70%' },
       ],
       detail: [
-        'Te udziały odpowiadają na pytanie, gdzie znajduje się stan, a nie który szlak Unii Europejskiej jest najbardziej obciążony. Wykrycia Frontexu pozostają osobnym liczeniem nieuregulowanych przekroczeń na granicach zewnętrznych UE.',
-        'Około 70% uchodźców w tym zakresie było w sytuacjach przewlekłych — pięć lat lub dłużej bez bliskiego trwałego rozwiązania. Global Trends 2025 liczy około 24,9 mln osób w nieco ponad 1 300 takich sytuacjach w krajach o niskim i średnim dochodzie.',
-        'Przyjmowanie u sąsiadów i w krajach o niższym dochodzie to trwały układ w szeregach UNHCR. Z tych udziałów nie wynika, że główną historią uchodźców świata jest droga z Afryki do Europy.',
+        'Te udziały opisują, gdzie znajduje się stan. Wykrycia na granicach zewnętrznych Unii Europejskiej są w części o granicy na tej stronie.',
+        'Około 70 procent uchodźców w tym zakresie było w sytuacjach przewlekłych, pięć lat lub dłużej bez natychmiastowego trwałego rozwiązania. Raport liczy około 24,9 miliona osób w nieco ponad 1 300 takich sytuacjach w krajach o niskim i średnim dochodzie.',
+        'Przyjmowanie w krajach sąsiednich i w krajach o niższym dochodzie jest trwałym wzorem tego szeregu.',
       ],
     },
     'refugees-returns-2025': {
-      tag: 'Powroty · 2025',
-      title: 'Powroty uchodźców w 2025',
-      hook: 'Prawie 4,4 mln uchodźców wróciło do krajów pochodzenia w 2025 roku — jeden z najwyższych lat powrotów w szeregu. Ponad 90% wróciło do zaledwie trzech krajów: Afganistanu (około 1,9 mln), Syrii (około 1,3 mln) i Sudanu (około 651 500).',
+      tag: 'Powroty, 2025',
+      title: 'Powroty uchodźców w 2025 roku',
+      hook: 'Prawie 4,4 miliona uchodźców wróciło do krajów pochodzenia w 2025 roku, jeden z najwyższych lat powrotów w tym szeregu. Ponad 90 procent wróciło do trzech krajów: Afganistanu (około 1,9 miliona), Syrii (około 1,3 miliona) i Sudanu (około 651 500).',
       figure: '4,4',
-      unit: 'mln powrotów, 2025',
+      unit: 'mln powrotów w 2025 roku',
       rows: [
         { label: 'Afganistan', figure: 'około 1,9 mln' },
         { label: 'Syria', figure: 'około 1,3 mln' },
         { label: 'Sudan', figure: 'około 651 500' },
       ],
       detail: [
-        'Powroty uchodźców w roku kalendarzowym 2025 według Global Trends. UNHCR ostrzega, że wiele powrotów odbyło się w trudnych warunkach, do miejsc, gdzie utrzymuje się zagrożenie i słabe usługi. Powrót sam w sobie nie jest trwałym rozwiązaniem.',
-        'Powroty osób przesiedlonych wewnątrz własnego kraju to inny szereg i zostają na warstwie wewnętrznego przesiedlenia. Przyjazdy w ramach przesiedlenia i programów sponsorskich spadły o ponad połowę, do około 81 800 w 2025 roku.',
-        'Skala powrotów wzrosła. Bezpieczeństwo i ponowne urządzenie się na miejscu często nie dorównywały tej liczbie.',
+        'Powroty uchodźców w roku kalendarzowym 2025 według raportu o trendach światowych. Urząd ostrzega, że wiele powrotów odbyło się w niesprzyjających okolicznościach, do obszarów, gdzie trwają zagrożenie i słabe usługi. Powrót liczy się jako ruch w ciągu roku.',
+        'Powroty osób przesiedlonych wewnątrz własnego kraju są w części o przesiedleniach wewnętrznych na stronie migracji. Przyjazdy w ramach przesiedlenia i sponsoringu spadły o ponad połowę, do około 81 800 w 2025 roku.',
+        'Skala powrotów wzrosła. Bezpieczeństwo i ponowne zakorzenienie często zostawały w tyle za tym nagłówkiem.',
       ],
     },
   },
-  idpCrisisCopy: {
-    'sudan-stock': {
-      place: 'Sudan',
-      note: 'Największy kryzys pod względem ludzi w wewnętrznym przesiedleniu na koniec 2025. Około 9,1 mln ludzi nadal żyło w wewnętrznym przesiedleniu w Sudanie. To stan na koniec roku, nie ruchy 2025 i nie headcount obozów UNHCR.',
-    },
-    'philippines-disaster-2025': {
-      place: 'Filipiny',
-      note: 'Około 10,7 mln przesiedleń katastroficznych w 2025 — około 36% światowego disaster-wyniku w podsumowaniu mapy GRID. Głównie ruch i ewakuacje z zagrożeń pogodowych, nie światowa mapa «migrantów klimatycznych».',
-    },
-  },
-  regions: {
-    africa: {
-      name: 'Afryka',
-      shortName: 'Afryka',
-      caption:
-        'Afryka miała w 2023 r. odpływ netto. Większość międzynarodowych migrantów urodzonych w Afryce nadal mieszka w innym kraju afrykańskim — około 25 milionów w 2024 r., więcej niż 11 milionów w Europie. Największe korytarze, które IOM nazywa na kontynencie, to wewnątrzafrykańskie drogi pracy i przesiedleń, nie Morze Śródziemne.',
-      originsIntro:
-        'Z 29,2 mln międzynarodowych migrantów mieszkających w Afryce w połowie 2024 r. IOM (UN DESA) liczy około 25 mln urodzonych gdzie indziej w Afryce. Urodzonych poza Afryką jest niewielu: około 1,3 mln z Azji i około 583 tys. z Europy.',
-      corridorsIntro:
-        'Największe nazwane korytarze afrykańskie: Burkina Faso → Côte d’Ivoire (praca), Sudan Południowy → Sudan, Sudan → Czad, Sudan Południowy → Uganda (przesiedlenia). Zasób pozaregionalny obejmuje Egipt → Arabię Saudyjską oraz Afrykę Północną → Francję / Hiszpanię. Te ostatnie są prawdziwe; nie są afrykańską średnią.',
-    },
-    asia: {
-      name: 'Azja',
-      shortName: 'Azja',
-      caption:
-        'Azja miała w 2023 r. największy regionalny odpływ netto. To nie znaczy „Azja pustoszeje ku Europie”. Około 74 mln międzynarodowych migrantów urodzonych w Azji mieszkało w 2024 r. w innym kraju azjatyckim — praca w Zatoce, praca w Azji Południowo-Wschodniej i długie korytarze przesiedleń jak Afganistan → Iran i Syria → Turcja.',
-      originsIntro:
-        'W połowie 2024 r. w Azji mieszkało 92,2 mln międzynarodowych migrantów. IOM liczy około 74 mln z nich jako urodzonych w Azji, około 6,7 mln w Afryce i około 5 mln w Europie (w tym Europejczyków w Azji Środkowej po rozpadzie ZSRR).',
-      corridorsIntro:
-        'Największy korytarz międzyregionalny IMS 2024 w szerszej grupie Azja–Azja Zachodnia to Azja Środkowa i Południowa → Afryka Północna i Azja Zachodnia (20 mln) — praca w Zatoce, nie Europa. Zasób krajowy: Afganistan → Iran około 3,7 mln; Syria → Turcja około 3,6 mln.',
-    },
-    europe: {
-      name: 'Europa',
-      shortName: 'Europa',
-      caption:
-        'Europa była w 2023 r. odbiorcą netto. Prawie połowa z 94 mln międzynarodowych migrantów mieszkających w Europie w 2024 r. urodziła się w Europie (około 45 mln), w tym Ukraińcy przesiedleni od 2022 r. Urodzeni w Azji (20 mln) są liczniejsi niż urodzeni w Afryce (około 10,6 mln).',
-      originsIntro:
-        'Zasób docelowy, środek 2024: około 45 mln urodzonych w Europie, 20 mln w Azji, około 10,6 mln w Afryce, około 6 mln w Ameryce Łacińskiej i na Karaibach. Reszta to Ameryka Północna, Oceania i nieznane pochodzenie. IOM dodaje, że 74% wszystkich migrantów urodzonych w Europie mieszka w innym kraju europejskim.',
-      corridorsIntro:
-        'Połowa największych europejskich korytarzy krajowych IOM jest wewnątrzregionalna; kilka kończy się w Niemczech. Ukraina → Niemcy wzrosła z około 270 tys. mieszkańców w 2020 r. do ponad 1,4 mln w 2024 r. Ludność urodzona w Rosji w byłych państwach radzieckich to zasób powstały, gdy w 1991 r. przesunęły się granice — nie fala 2023.',
-    },
-    'latin-america-caribbean': {
-      name: 'Ameryka Łacińska i Karaiby',
-      shortName: 'Am. Łac. i Karaiby',
-      caption:
-        'Region miał w 2023 r. odpływ netto. Zasób pozaregionalny jest duży: 27 mln osób urodzonych w Ameryce Łacińskiej i na Karaibach mieszkało w 2024 r. w Ameryce Północnej, około 6 mln w Europie. Wewnątrz regionu około 14 mln międzynarodowych migrantów to ruch wewnątrzregionalny — sporo z niedawnego wzrostu to przesiedlenia z Wenezueli do Kolumbii, Peru i sąsiadów.',
-      originsIntro:
-        'W połowie 2024 r. w regionie mieszkało 17,5 mln międzynarodowych migrantów. IOM liczy około 14 mln urodzonych gdzie indziej w regionie, około 1,3 mln w Ameryce Północnej i około 1,2 mln w Europie.',
-      corridorsIntro:
-        'Meksyk → Stany Zjednoczone, około 11 mln mieszkańców w 2024 r., to największy korytarz krajowy świata (spadek z szczytu 2015 blisko 12 mln). Osiem z dziesięciu największych korytarzy krajowych regionu kończy się w USA. Dwa wyjątki wewnątrzregionalne, które wymienia IOM, to Wenezuela → Kolumbia i Wenezuela → Peru.',
-    },
-    'northern-america': {
-      name: 'Ameryka Północna',
-      shortName: 'Am. Północna',
-      caption:
-        'Ameryka Północna (Stany Zjednoczone, Kanada i kilka terytoriów północnoatlantyckich — nie Meksyk) miała w 2023 r. największy regionalny napływ netto. W żywym zasobie prowadzą osoby urodzone w Ameryce Łacińskiej i na Karaibach (27 mln) oraz w Azji (około 20 mln), potem Europa (około 6,6 mln) i Afryka (około 2,7 mln).',
-      originsIntro:
-        'W połowie 2024 r. w Ameryce Północnej mieszkało 61,2 mln międzynarodowych migrantów. 27 mln z Ameryki Łacińskiej i Karaibów to największy korytarz międzyregionalny w kluczowych faktach IMS 2024. Ruch Kanada–USA istnieje; IOM nie czyni go główną opowieścią.',
-      corridorsIntro:
-        'Meksyk → Stany Zjednoczone pozostaje największą parą krajów. Urodzeni w Azji mieszkańcy Ameryki Północnej to około 20 mln. To zasoby wielu dekad, nie lista przyjazdów z 2023 r.',
-    },
-    oceania: {
-      name: 'Oceania',
-      shortName: 'Oceania',
-      caption:
-        'Oceania była w 2023 r. niewielkim odbiorcą netto. Międzynarodowi migranci to 21% mieszkańców — najwyższy udział regionalny — niemal wszyscy w Australii i Nowej Zelandii. IOM liczy ponad 8,6 mln migrantów spoza regionu; urodzeni w Azji to około 5 mln, w Europie około 2,5 mln.',
-      originsIntro:
-        'W połowie 2024 r. w Oceanii mieszkało 9,9 mln międzynarodowych migrantów. Suma spoza regionu to około 8,6 mln. Zasób wewnątrz Oceanii to reszta, w tym Nowa Zelandia → Australia.',
-      corridorsIntro:
-        'Pięć największych korytarzy IOM z udziałem Oceanii kończy się w Australii: Wielka Brytania (około 1 mln), Indie (około 876 tys.), Chiny (około 656 tys.), potem Nowa Zelandia (około 588 tys.). Ten ostatni jest wewnątrzregionalny.',
-    },
-  },
-  originNames: {
-    africa: 'Afryka',
-    asia: 'Azja',
-    europe: 'Europa',
-    'latin-america-caribbean': 'Ameryka Łacińska i Karaiby',
-    'northern-america': 'Ameryka Północna',
-    oceania: 'Oceania',
-  },
+  campsTitle: 'Największe obozy i osiedla',
+  campsLead:
+    'Pięć nazwanych osiedli z opublikowaną liczbą mieszkańców. Data na każdej karcie jest datą tej liczby: 31 sierpnia 2026 roku.',
+  campsHonesty:
+    'Rozmiary to liczby operacyjne na datę karty. Lista obejmuje te pięć dużych nazwanych osiedli.',
+  campsRegister:
+    'Agencja Narodów Zjednoczonych dla Pomocy Uchodźcom Palestyńskim na Bliskim Wschodzie prowadzi własny rejestr uchodźców palestyńskich. Pięć osiedli poniżej korzysta z opublikowanych liczb dla tych nazwanych miejsc.',
+  campAsOf: 'Liczba na dzień',
+  campPeople: 'osób',
   campCopy: {
     'coxs-bazar': {
-      name: 'Obozy Cox’s Bazar',
+      name: 'Obozy Koks Badźar',
       country: 'Bangladesz',
-      note: 'Rząd Bangladeszu / UNHCR: 33 obozy w dystrykcie Cox’s Bazar, w tym Kutupalong. Uchodźcy Rohingya z Mjanmy. Dalsze 33 514 osób na Bhasan Char nie wchodzi w ten znacznik.',
+      note: 'Rząd Bangladeszu i urząd do spraw uchodźców: 33 obozy w dystrykcie Koks Badźar, w tym Kutupalong. Uchodźcy rohingja z Mjanmy. Dalsze 33 514 osób na Bhasan Czar jest opublikowane jako osobna liczba.',
+      source: 'Dane o ludności Bangladeszu, 31 sierpnia 2026',
     },
     dadaab: {
       name: 'Dadaab',
       country: 'Kenia',
-      note: 'Kompleks obozów Dadaab we wschodniej Kenii. Pakiet statystyk Kenii na 31 sierpnia 2026 (rząd / UNHCR). Kompleks, nie jedno miasto namiotów.',
+      note: 'Zespół obozów Dadaab we wschodniej Kenii, z pakietu statystycznego Kenii na 31 sierpnia 2026 roku. Kilka obozów w jednej operacji.',
+      source: 'Pakiet statystyczny Kenii, 31 sierpnia 2026',
     },
     'kakuma-kalobeyei': {
       name: 'Kakuma i Kalobeyei',
       country: 'Kenia',
-      note: 'Kakuma 234 542, Kalobeyei 86 547 i Eldoret 2 573, zgrupowane jako jedna operacja obszaru Kakumy w pakiecie statystyk Kenii, 31 sierpnia 2026.',
+      note: 'Kakuma 234 542, Kalobeyei 86 547 i Eldoret 2 573, zebrane jako jedna operacja obszaru Kakumy w pakiecie statystycznym Kenii, 31 sierpnia 2026 roku.',
+      source: 'Pakiet statystyczny Kenii, 31 sierpnia 2026',
     },
     bidibidi: {
       name: 'Bidibidi',
       country: 'Uganda',
-      note: 'Osiedle Bidibidi, dystrykt Yumbe. Główny kontyngent to przesiedleni z Sudanu Południowego. Osiedle, nie obóz z murem.',
+      note: 'Osiedle Bidibidi, dystrykt Yumbe. Większość mieszkańców została przesiedlona z Sudanu Południowego.',
+      source: 'Dane o osiedlach Ugandy, 31 sierpnia 2026',
     },
     zaatari: {
       name: 'Zaatari',
       country: 'Jordania',
-      note: 'Obóz Zaatari. Główny kontyngent to przesiedleni z Syrii. Dane ludności UNHCR dla Jordanii, 31 sierpnia 2026.',
+      note: 'Obóz Zaatari. Większość mieszkańców została przesiedlona z Syrii. Dane o ludności Jordanii, 31 sierpnia 2026 roku.',
+      source: 'Dane o ludności Jordanii, 31 sierpnia 2026',
+    },
+  },
+  detectionsTitle: 'Wykrycia na granicach Unii Europejskiej, 2024 i 2025',
+  detectionsLead:
+    'Wykrycia nieuregulowanych przekroczeń granic zewnętrznych Unii Europejskiej, opublikowane przez Europejską Agencję Straży Granicznej i Przybrzeżnej. Te same komunikaty nazywają pięć szlaków.',
+  detectionsHonesty:
+    '2024: nieco ponad 239 000 wykryć, 38 procent poniżej 2023 roku. 2025: prawie 178 000 wykryć, 26 procent poniżej 2024 roku, najmniej od 2021 roku. Tam, gdzie szlak ma opublikowaną liczbę, wiersz pokazuje tę liczbę.',
+  detectionsMetric:
+    'Wykrycie zapisuje przekroczenie. Ta sama osoba może zostać zapisana więcej niż raz, w różnych miejscach.',
+  detectionsChange: 'W porównaniu z poprzednim rokiem',
+  detectionsLower: 'mniej',
+  detectionsHigher: 'więcej',
+  detectionsPeople: 'wykryć',
+  detectionsRoutesTitle: 'Szlaki',
+  detectionsNationalities:
+    'W 2025 roku najczęściej wykrywano obywateli Bangladeszu, Egiptu i Afganistanu.',
+  detectionsSource2024:
+    'Europejska Agencja Straży Granicznej i Przybrzeżnej, nieuregulowane przekroczenia granicy do Unii Europejskiej w 2024 roku',
+  detectionsSource2025:
+    'Europejska Agencja Straży Granicznej i Przybrzeżnej, nieuregulowane przekroczenia granicy w 2025 roku',
+  yearCopy: {
+    '2024': {
+      note: 'Nieco ponad 239 000 wykryć, 38 procent poniżej 2023 roku. Najmniej od 2021 roku w chwili publikacji danych za 2024 rok.',
+    },
+    '2025': {
+      note: 'Prawie 178 000 wykryć, 26 procent poniżej 2024 roku. Najmniej od 2021 roku i poniżej połowy sumy z 2023 roku.',
     },
   },
   routeCopy: {
     'central-mediterranean': {
-      name: 'Centralny Śródziemnomorski',
-      note: 'Około 67 000 wykryć w 2024 (−59% wobec 2023), druga trasa UE w tamtym roku. W 2025 Frontex nadal nazywał ją najruchliwszą, zbliżoną do 2024. Wyjazdy z Libii to wskazany czynnik w stronę Włoch. Nie liczba unikalnych osób.',
+      name: 'Środkowy obszar Morza Śródziemnego',
+      note: 'Około 67 000 wykryć w 2024 roku, 59 procent poniżej 2023 roku, drugie miejsce wśród szlaków Unii Europejskiej w tamtym roku. W 2025 roku agencja nadal nazywała ten szlak najbardziej obciążonym, mniej więcej na poziomie 2024 roku. Wyjazdy z Libii pozostają nazwanym czynnikiem w drodze do Włoch.',
     },
     'eastern-mediterranean': {
-      name: 'Wschodni Śródziemnomorski',
-      note: '69 400 wykryć w 2024 (+14%). W 2025 trasa spadła ogółem; korytarz z Libii na Kretę wzrósł ponad trzykrotnie.',
+      name: 'Wschodni obszar Morza Śródziemnego',
+      note: '69 400 wykryć w 2024 roku, 14 procent powyżej 2023 roku. W 2025 roku szlak ogólnie spadł. Korytarz z Libii na Kretę wzrósł ponad trzykrotnie.',
     },
     'western-africa': {
-      name: 'Afryka Zachodnia (Wyspy Kanaryjskie)',
-      note: 'Prawie 47 000 przyjazdów na Wyspy Kanaryjskie w 2024 — najwyżej od początku ewidencji Frontexu w 2009. W 2025 wykrycia na tej trasie spadły o około dwie trzecie (Mauretania, Maroko, Senegal).',
+      name: 'Afryka Zachodnia, Wyspy Kanaryjskie',
+      note: 'Prawie 47 000 przybyć na Wyspy Kanaryjskie w 2024 roku, najwięcej od początku rejestrów agencji w 2009 roku. W 2025 roku wykrycia na tym szlaku spadły o około dwie trzecie, z Mauretanii, Maroka i Senegalu.',
     },
     'western-mediterranean': {
-      name: 'Zachodni Śródziemnomorski',
-      note: 'Frontex zgłasza wzrost w 2025, głównie z Algierii. Na znaczniku nie ma wymyślonej liczby za 2025.',
+      name: 'Zachodni obszar Morza Śródziemnego',
+      note: 'Agencja podaje wzrost w 2025 roku, głównie z Algierii.',
     },
     'western-balkans': {
       name: 'Bałkany Zachodnie',
-      note: 'Wykrycia spadły o 78% w 2024 i znów w 2025. Frontex nie powtórzył liczby za 2025, którą można by podać bez wymysłu.',
+      note: 'Wykrycia spadły o 78 procent w 2024 roku i spadły ponownie w 2025 roku.',
     },
   },
 };

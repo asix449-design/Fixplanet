@@ -34,6 +34,21 @@ export const page: MigrationPage = {
     humans: 'Cilvēku migrācijas',
     'great-migrations': 'Dzīvnieku migrācijas',
   },
+  entrances: {
+    aria: 'Saistītās lapas',
+    refugees: {
+      title: 'Bēgļi un robežu atklājumi',
+      text: 'Piecas lielas nometnes 2026. gada 31. augustā, piecas 2025. gada tendenču kartītes un atklājumi Eiropas Savienības ārējās robežās 2024. un 2025. gadā.',
+    },
+    remittances: {
+      title: 'Naudas pārvedumi',
+      text: 'Nauda, ko migranti sūta mājās: pasaules plūsmas, lielākie saņēmēji, daļa valsts ekonomikā un nosūtīšanas izmaksas.',
+    },
+    missing: {
+      title: 'Pazudušie migranti',
+      text: 'Bojāejas un pazušanas migrācijas ceļos pēc pazudušo migrantu projekta.',
+    },
+  },
   shelves: {
     humans: 'Cilvēki',
     'great-migrations': 'Lielās migrācijas',
@@ -228,7 +243,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arktikas gājputni',
     hook: 'Zīriņi, lielie piekūni, tārtiņveidīgie, zosis: Arktikas vasara ir barības impulss, un ziema ir citur.',
     imageAlt: 'Polārie zīriņi virs auksta ziemeļu krasta — zīme augsto platuma grādu putnu migrācijai, ne nosaukta kolonija',
-    what: 'Šī ir klases kartīte, ne otra polārā zīriņa enciklopēdija un ne trešā «ceļu pēc ledus» lapa. Daudzi putni, kas ligzdo Arktikas un subarktiskajā tundrā, aiziet, kad gaisma un kukaiņi beidzas. Polārie zīriņi iet no pola līdz polam (Egevang et al. 2010). Lielie piekūni seko medījumam gar krastiem un lidojumu ceļiem. Tārtiņveidīgie apstājas dažos dūņu līdzenumos. Zosis seko zālei un atkusnim. BirdLife un CMS apraksta lidojumu ceļu ģimenes; CAFF ir reģionālais kopsavilkums. Sezonālā migrācija jau bija leduslaikmetā (modeļi uz desmitiem tūkstošu gadu). Pēc ledus mainījās ģeogrāfija: ligzdošana saspiesties uz dienvidiem, īpaši Ziemeļamerikā zem Laurentiā vaiņaga, tad holocēns atkal atvēra Arktikas vasaru. Thorup et al. (PNAS, 2021) hindkastē sarkanmuguras čakstes afro-palearktisko cilpu 120 000 gadu: sezonālā migrācija, visticamāk, turējās leduslaikmetā, bieži Āfrikas iekšienē; piemērotā Eiropas vasaras dzīvotne pēc LGM atkal izpletās. Tas ir modelēts klases piemērs, ne otra putnu ceļu enciklopēdija.',
+    what: 'Daudzi putni, kas ligzdo Arktikas un subarktiskajā tundrā, aiziet, kad gaisma un kukaiņi beidzas. Polārie zīriņi iet no pola līdz polam (Egevang et al. 2010). Lielie piekūni seko medījumam gar krastiem un lidojumu ceļiem. Tārtiņveidīgie apstājas dažos dūņu līdzenumos. Zosis seko zālei un atkusnim. BirdLife un CMS apraksta lidojumu ceļu ģimenes; CAFF ir reģionālais kopsavilkums. Sezonālā migrācija jau bija leduslaikmetā (modeļi uz desmitiem tūkstošu gadu). Pēc ledus mainījās ģeogrāfija: ligzdošana saspiesties uz dienvidiem, īpaši Ziemeļamerikā zem Laurentiā vaiņaga, tad holocēns atkal atvēra Arktikas vasaru. Thorup et al. (PNAS, 2021) hindkastē sarkanmuguras čakstes afro-palearktisko cilpu 120 000 gadu: sezonālā migrācija, visticamāk, turējās leduslaikmetā, bieži Āfrikas iekšienē; piemērotā Eiropas vasaras dzīvotne pēc LGM atkal izpletās. Tas ir modelēts klases piemērs.',
     route:
       'Ligzdošana garajā Arktikas dienā; ziemošanas vietas mērenajos vai tropiskajos mitrājos, krastos vai — zīriņiem — pie Antarktīdas pakledus. Austrumatlantijas, Austrumāzijas–Australāzijas, Misisipi un Klusā okeāna Amerikas ceļi nes Arktikas ligzdotājus. Gu et al. (Nature, 2021) izsekoja Eirāzijas Arktikas lielos piekūnus piecos mūsdienu ceļos un saista tos ar ligzdošanas vietu nobīdi no LGM uz holocēnu. Thorupa čakstes modelis ir afro-palearktiskais pretstats: cilpa pārdzīvoja apledojumu, pārbīdot ligzdošanas platumu, neizgudrojot migrāciju no jauna. Līnijas ir apvalki, ne katra bara GPS. Kuitalas Aļaska–Jaunzēlande ir Klusā okeāna saīsinājums, ne vidējais.',
     drivers:
@@ -236,9 +251,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'Uz ziemeļiem ziemeļu pavasarī, uz dienvidiem pēc ligzdošanas. Dažām populācijām ierašanās ir pārbīdījusies agrāk, kad pavasari silst, — fenoloģija, ne jauns lidojumu ceļš. Rekordu kilometri ir nosaukti izsekošanas raksti.',
     pressure:
-      'Klimats kustinā ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. CAFF un BirdLife Arktikas migrantus uzskata par kopīgu lidojumu ceļu uzdevumu, ne vienas sugas muzeju. Polārā zīriņa lapa paliek vecajā dziļajā adresē, ja vajag tikai 70 000 km rakstu.',
+      'Klimats kustinā ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. CAFF un BirdLife Arktikas migrantus uzskata par kopīgu lidojumu ceļu uzdevumu, ne vienas sugas muzeju.',
     sourcesNote:
-      'Egevang et al. 2010 par zīriņiem; Gu et al. 2021 par lielā piekūna ceļu salikšanu pēc ledus; Thorup et al. 2021 par čakstes cilpu 120 000 gadu; BirdLife; CAFF; CMS. Kartīte neizdomā visu Arktikas migrantu skaitīšanu un neatver otru putnu ceļu enciklopēdiju.',
+      'Egevang et al. 2010 par zīriņiem; Gu et al. 2021 par lielā piekūna ceļu salikšanu pēc ledus; Thorup et al. 2021 par čakstes cilpu 120 000 gadu; BirdLife; CAFF; CMS.',
   },
   'hunnic-invasion': {
     title: 'Huņu spiediens uz Romu',

@@ -31,7 +31,7 @@ const idpFigures: Record<
 > = {
   'idp-movements-2025-overview': {
     figure: millionFigure(idp.movements2025.total),
-    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    unit: `${ui.idpMillion}, ${ui.idpMovementsUnit}`,
     splits: [
       { label: ui.idpConflictLabel, figure: `${millionFigure(idp.movements2025.conflict)} ${ui.idpMillion}` },
       { label: ui.idpDisasterLabel, figure: `${millionFigure(idp.movements2025.disaster)} ${ui.idpMillion}` },
@@ -43,7 +43,7 @@ const idpFigures: Record<
   },
   'idp-stock-2025': {
     figure: millionFigure(idp.stockEnd2025.figure),
-    unit: `${ui.idpMillion} · ${ui.idpStockUnit}`,
+    unit: `${ui.idpMillion}, ${ui.idpStockUnit}`,
     splits: [
       { label: ui.idpConflictLabel, figure: `${millionFigure(idp.stockEnd2025.conflictStock)} ${ui.idpMillion}` },
       { label: ui.idpDisasterLabel, figure: `${millionFigure(idp.stockEnd2025.disasterStock)} ${ui.idpMillion}` },
@@ -55,7 +55,7 @@ const idpFigures: Record<
   },
   'idp-conflict-displacements-2025': {
     figure: millionFigure(idp.movements2025.conflict),
-    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    unit: `${ui.idpMillion}, ${ui.idpMovementsUnit}`,
     splits: [
       {
         label: ui.idpCountriesLabel,
@@ -65,7 +65,7 @@ const idpFigures: Record<
   },
   'idp-disaster-displacements-2025': {
     figure: millionFigure(idp.movements2025.disaster),
-    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    unit: `${ui.idpMillion}, ${ui.idpMovementsUnit}`,
     splits: [
       {
         label: ui.idpCountriesLabel,
@@ -92,9 +92,9 @@ const idpCrises = idp.crises.map((crisis) => {
 });
 
 const sources = [
-  cite(idp.sourceSummaryLabel, idp.sourceSummaryUrl),
-  cite(idp.sourcePdfLabel, idp.sourcePdfUrl),
-  cite(idp.sourceHubLabel, idp.sourceHubUrl),
+  cite(ui.idpSourceSummary, idp.sourceSummaryUrl),
+  cite(ui.idpSourcePdf, idp.sourcePdfUrl),
+  cite(ui.idpSourceHub, idp.sourceHubUrl),
 ];
 ---
 
@@ -111,7 +111,7 @@ const sources = [
               <p class="today-mig-idp-tag">{card.tag}</p>
               <h4>{card.title}</h4>
               <p class="today-mig-idp-figure">
-                <strong>{card.figure}</strong>
+                <span class="today-mig-idp-num">{card.figure}</span>
                 <span>{card.unit}</span>
               </p>
               <p class="today-mig-idp-hook">{card.hook}</p>
@@ -136,8 +136,8 @@ const sources = [
           idpCrises.map((crisis) => (
             <li>
               <p>
-                <strong>{crisis.place}</strong>
-                <strong>{crisis.figure}</strong>
+                <span>{crisis.place}</span>
+                <span class="today-mig-idp-num">{crisis.figure}</span>
               </p>
               <p>{crisis.note}</p>
             </li>
@@ -145,7 +145,7 @@ const sources = [
         }
       </ul>
       <p class="oceans-source-note">{ui.idpHonesty}</p>
-      <p class="oceans-source-note">{ui.idpNoChoropleth}</p>
+      <p class="oceans-source-note">{ui.idpNotes}</p>
       <CitedSourceList heading={page.sourcesLabel} sources={sources} />
     </div>
   </div>

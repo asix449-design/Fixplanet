@@ -34,6 +34,21 @@ export const page: MigrationPage = {
     humans: 'Human migrations',
     'great-migrations': 'Animal migrations',
   },
+  entrances: {
+    aria: 'Related pages',
+    refugees: {
+      title: 'Refugees and border detections',
+      text: 'Five large camps on 31 August 2026, five cards from the 2025 refugee trends, and European Union border detections for 2024 and 2025.',
+    },
+    remittances: {
+      title: 'Remittances',
+      text: 'Money migrants send home: global flows, the largest recipients, the share of a country’s economy, and the cost of sending.',
+    },
+    missing: {
+      title: 'Missing migrants',
+      text: 'Deaths and disappearances on migration routes, recorded by the Missing Migrants Project.',
+    },
+  },
   shelves: {
     humans: 'Humans',
     'great-migrations': 'Great migrations',
@@ -403,7 +418,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arctic migratory birds',
     hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a short feast of food, and winter is spent elsewhere.',
     imageAlt: 'Arctic terns flying over a cold northern coast — a stand-in for high-latitude bird migration, not a named colony',
-    what: 'This is a class card, not a second Arctic tern encyclopedia and not a third “routes after ice” page. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again. Thorup et al. (PNAS, 2021) hindcast the red-backed shrike’s Afro-Palearctic loop for 120,000 years: seasonal migration likely persisted through the glacial, often inside Africa; suitable European summer habitat expanded again after the LGM. That is a modeled class example, not a second bird-routes encyclopedia.',
+    what: 'Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again. Thorup et al. (PNAS, 2021) hindcast the red-backed shrike’s Afro-Palearctic loop for 120,000 years: seasonal migration likely persisted through the glacial, often inside Africa; suitable European summer habitat expanded again after the LGM. That is a modeled class example.',
     route:
       'Breeding in the long Arctic day; non-breeding grounds in temperate or tropical wetlands, coasts, or — for terns — Antarctic pack ice. East Atlantic, East Asian–Australasian, Mississippi, and Pacific Americas flyways all carry Arctic breeders. Gu et al. (Nature, 2021) tracked Eurasian Arctic peregrines on five modern flyways and argue those routes formed as breeding grounds shifted through the Last Glacial Maximum into the Holocene. Thorup’s shrike model is the Afro-Palearctic counterpart: a loop that survived glaciation by shifting breeding latitude, not by inventing migration from scratch. The lines are envelopes, not GPS of every flock. A godwit’s Alaska–New Zealand crossing is a Pacific shortcut, not the average.',
     drivers:
@@ -411,9 +426,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'North in the northern spring, south after breeding. Arrival has shifted earlier in some populations as springs warm — phenology, not a new flyway. Treat headline kilometre records as named tracking papers.',
     pressure:
-      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife treat Arctic migrants as a shared flyway problem, not a single-species museum piece. The Arctic tern species page stays on the old deep URL if you want the 70,000 km paper alone.',
+      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife treat Arctic migrants as a shared flyway problem, not a single-species museum piece.',
     sourcesNote:
-      'Egevang et al. 2010 for terns; Gu et al. 2021 for peregrine flyway assembly after the ice; Thorup et al. 2021 for the red-backed shrike loop across 120,000 years; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS. This card does not invent a headcount of every Arctic migrant or a second bird-routes encyclopedia.',
+      'Egevang et al. 2010 for terns; Gu et al. 2021 for peregrine flyway assembly after the ice; Thorup et al. 2021 for the red-backed shrike loop across 120,000 years; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS.',
   },
   'hunnic-invasion': {
     title: 'Hunnic pressure on Rome',

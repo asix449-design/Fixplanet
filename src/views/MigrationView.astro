@@ -96,6 +96,26 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
               ))
             }
           </nav>
+          <nav class="hub-grid hub-grid-3 migration-hub-tiles migration-hub-more" aria-label={page.entrances.aria}>
+            <HubTile
+              href={localizePath('/migration/refugees', locale)}
+              icon="alert"
+              title={page.entrances.refugees.title}
+              text={page.entrances.refugees.text}
+            />
+            <HubTile
+              href={localizePath('/migration/remittances', locale)}
+              icon="globe"
+              title={page.entrances.remittances.title}
+              text={page.entrances.remittances.text}
+            />
+            <HubTile
+              href={localizePath('/migration/missing-migrants', locale)}
+              icon="compass"
+              title={page.entrances.missing.title}
+              text={page.entrances.missing.text}
+            />
+          </nav>
         </div>
       </section>
       </>

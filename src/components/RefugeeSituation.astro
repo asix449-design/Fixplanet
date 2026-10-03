@@ -1,0 +1,213 @@
+---
+import CitedSourceList from './CitedSourceList.astro';
+import { cite } from '../data/sources';
+import {
+  formatAsOf,
+  formatPeopleCount,
+  refugeeSourceUrls,
+  todayDataset,
+} from '../data/migration-today';
+import { getMigrationPage, resolveLocale } from '../i18n';
+import type { TodayRefugeeCardId } from '../i18n/migration';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const ui = page.today;
+const numberLocale = locale === 'en' ? 'en-GB' : locale;
+
+const cardOrder: TodayRefugeeCardId[] = [
+  'refugees-unhcr-stock-2025',
+  'refugees-top-hosts-2025',
+  'refugees-top-origins-2025',
+  'refugees-neighbouring-hosts-2025',
+  'refugees-returns-2025',
+];
+
+const refugeeSources = [
+  cite(ui.refugeesSourceTrends, refugeeSourceUrls.trends),
+  cite(ui.refugeesSourcePdf, refugeeSourceUrls.pdf),
+  cite(ui.refugeesSourceFinder, refugeeSourceUrls.finder),
+  cite(ui.refugeesSourcePress, refugeeSourceUrls.press),
+  cite(ui.refugeesSourceHosting, refugeeSourceUrls.hosting),
+];
+
+const camps = todayDataset.camps.sites.map((site) => {
+  const copy = ui.campCopy[site.id];
+  return {
+    id: site.id,
+    name: copy.name,
+    country: copy.country,
+    note: copy.note,
+    source: copy.source,
+    sourceUrl: site.sourceUrl,
+    figure: formatPeopleCount(site.population, numberLocale),
+    date: formatAsOf(site.asOf, numberLocale),
+  };
+});
+
+const seenCampUrls = new Set<string>();
+const campSources = camps.flatMap((camp) => {
+  if (seenCampUrls.has(camp.sourceUrl)) return [];
+  seenCampUrls.add(camp.sourceUrl);
+  return [cite(camp.source, camp.sourceUrl)];
+});
+
+function changeLabel(change: number): string {
+  const pct = Math.round(Math.abs(change) * 100);
+  const word = change < 0 ? ui.detectionsLower : ui.detectionsHigher;
+  return `${pct.toLocaleString(numberLocale)}% ${word}`;
+}
+
+const border = todayDataset.borderDetections;
+const years = border.years.map((year) => ({
+  year: year.year,
+  figure: `${year.approx ? `${ui.approx} ` : ''}${formatPeopleCount(year.total, numberLocale)}`,
+  change: changeLabel(year.changeVsPrev),
+  note: ui.yearCopy[year.year].note,
+}));
+
+const routes = border.routes.map((route) => {
+  const copy = ui.routeCopy[route.id];
+  const figure =
+    route.detections == null
+      ? String(route.year)
+      : `${route.approx ? `${ui.approx} ` : ''}${formatPeopleCount(route.detections, numberLocale)}`;
+  return { id: route.id, name: copy.name, note: copy.note, figure };
+});
+
+const detectionSources = [
+  cite(ui.detectionsSource2024, border.source2024Url),
+  cite(ui.detectionsSource2025, border.source2025Url),
+];
+---
+
+<section class="section section-hub-follow" aria-labelledby="refugees-heading">
+  <div class="wrap">
+    <div class="today-mig-layer-panel">
+      <h2 id="refugees-heading">{ui.refugeesTitle}</h2>
+      <p>{ui.refugeesLead}</p>
+      <p class="today-mig-stock-tag">{ui.refugeesDefinition}</p>
+      <ul class="today-mig-idp-grid">
+        {
+          cardOrder.map((id) => {
+            const card = ui.refugeesCards[id];
+            return (
+              <li class="today-mig-idp-card" id={id}>
+                <p class="today-mig-idp-tag">{card.tag}</p>
+                <h3>{card.title}</h3>
+                <p class="today-mig-idp-figure">
+                  <span class="today-mig-idp-num">{card.figure}</span>
+                  <span>{card.unit}</span>
+                </p>
+                <p class="today-mig-idp-hook">{card.hook}</p>
+                <dl class="today-mig-idp-splits">
+                  {card.rows.map((row) => (
+                    <div>
+                      <dt>{row.label}</dt>
+                      <dd>{row.figure}</dd>
+                    </div>
+                  ))}
+                </dl>
+                {card.detail.map((para) => (
+                  <p class="today-mig-idp-detail">{para}</p>
+                ))}
+              </li>
+            );
+          })
+        }
+      </ul>
+      <p class="oceans-source-note">{ui.refugeesHonesty}</p>
+      <CitedSourceList heading={page.sourcesLabel} sources={refugeeSources} />
+    </div>
+
+    <div class="today-mig-layer-panel">
+      <h2 id="camps-heading">{ui.campsTitle}</h2>
+      <p>{ui.campsLead}</p>
+      <p class="today-mig-stock-tag">{ui.campsRegister}</p>
+      <ul class="today-mig-idp-grid">
+        {
+          camps.map((camp) => (
+            <li class="today-mig-idp-card" id={camp.id}>
+              <p class="today-mig-idp-tag">{camp.country}</p>
+              <h3>{camp.name}</h3>
+              <p class="today-mig-idp-figure">
+                <span class="today-mig-idp-num">{camp.figure}</span>
+                <span>{ui.campPeople}</span>
+              </p>
+              <p class="today-mig-idp-hook">
+                {ui.campAsOf} {camp.date}
+              </p>
+              <p class="today-mig-idp-detail">{camp.note}</p>
+              <p class="today-mig-idp-detail">
+                <a href={camp.sourceUrl} rel="noopener noreferrer">
+                  {camp.source}
+                </a>
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="oceans-source-note">{ui.campsHonesty}</p>
+      <CitedSourceList heading={page.sourcesLabel} sources={campSources} />
+    </div>
+
+    <div class="today-mig-layer-panel">
+      <h2 id="detections-heading">{ui.detectionsTitle}</h2>
+      <p>{ui.detectionsLead}</p>
+      <p class="today-mig-stock-tag">{ui.detectionsMetric}</p>
+      <ul class="today-mig-idp-grid">
+        {
+          years.map((year) => (
+            <li class="today-mig-idp-card" id={`detections-${year.year}`}>
+              <p class="today-mig-idp-tag">{ui.detectionsPeople}</p>
+              <h3>{year.year}</h3>
+              <p class="today-mig-idp-figure">
+                <span class="today-mig-idp-num">{year.figure}</span>
+                <span>{ui.detectionsPeople}</span>
+              </p>
+              <dl class="today-mig-idp-splits">
+                <div>
+                  <dt>{ui.detectionsChange}</dt>
+                  <dd>{year.change}</dd>
+                </div>
+              </dl>
+              <p class="today-mig-idp-detail">{year.note}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <h3 class="today-mig-idp-crises-title">{ui.detectionsRoutesTitle}</h3>
+      <ul class="today-mig-layer-list">
+        {
+          routes.map((route) => (
+            <li id={route.id}>
+              <p>
+                <span>{route.name}</span>
+                <span class="today-mig-idp-num">{route.figure}</span>
+              </p>
+              <p>{route.note}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="oceans-source-note">{ui.detectionsNationalities}</p>
+      <p class="oceans-source-note">{ui.detectionsHonesty}</p>
+      <CitedSourceList heading={page.sourcesLabel} sources={detectionSources} />
+    </div>
+  </div>
+</section>
+
+<style>
+  #refugees-heading,
+  #camps-heading,
+  #detections-heading {
+    margin: 0 0 0.45rem;
+    color: var(--cream);
+  }
+
+  h3 {
+    margin: 0 0 0.45rem;
+    color: var(--cream);
+    font-size: 1.05rem;
+  }
+</style>
