@@ -1,6 +1,7 @@
 import { solutionMeta, type Solution, type SolutionCopy } from '../data/solutions';
 import type { Locale } from './config';
 import { getCitiesGrid } from './solutions-cities';
+import { getMaterialsGrid } from './solutions-materials';
 import { getWasteGrid } from './solutions-waste';
 import { getForestGrid } from './solutions-forests';
 import { pack2 } from './solutions-pack2';
@@ -1597,10 +1598,10 @@ const lv: Record<string, SolutionCopy> = {
 };
 
 const copy: Record<Locale, Record<string, SolutionCopy>> = {
-  en: { ...en, ...pack2.en, ...getCitiesGrid('en'), ...getWasteGrid('en') },
-  ru: { ...ru, ...pack2.ru, ...getCitiesGrid('ru'), ...getWasteGrid('ru') },
-  pl: { ...pl, ...pack2.pl, ...getCitiesGrid('pl'), ...getWasteGrid('pl') },
-  lv: { ...lv, ...pack2.lv, ...getCitiesGrid('lv'), ...getWasteGrid('lv') },
+  en: { ...en, ...pack2.en, ...getCitiesGrid('en'), ...getWasteGrid('en'), ...getMaterialsGrid('en') },
+  ru: { ...ru, ...pack2.ru, ...getCitiesGrid('ru'), ...getWasteGrid('ru'), ...getMaterialsGrid('ru') },
+  pl: { ...pl, ...pack2.pl, ...getCitiesGrid('pl'), ...getWasteGrid('pl'), ...getMaterialsGrid('pl') },
+  lv: { ...lv, ...pack2.lv, ...getCitiesGrid('lv'), ...getWasteGrid('lv'), ...getMaterialsGrid('lv') },
 };
 
 export function getSolutions(locale: Locale): Solution[] {

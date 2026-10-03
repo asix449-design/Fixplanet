@@ -1,0 +1,15 @@
+---
+import { isMaterialsEncyclopediaSlug, materialsEncyclopediaSlugs } from '../../../data/solutions-materials';
+import { getMaterialsEncyclopediaBySlug, resolveLocale } from '../../../i18n';
+import SolutionMaterialsDetailView from '../../../views/SolutionMaterialsDetailView.astro';
+
+export function getStaticPaths() {
+  return materialsEncyclopediaSlugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && isMaterialsEncyclopediaSlug(slug) ? getMaterialsEncyclopediaBySlug(locale, slug) : undefined;
+---
+
+{item && <SolutionMaterialsDetailView item={item} />}

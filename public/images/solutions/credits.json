@@ -783,5 +783,45 @@
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "note": "Produce discarded from a hypermarket, July 2013."
+  },
+  {
+    "slug": "wood-fibre-insulation",
+    "file": "wood-fibre-insulation.jpg",
+    "commonsTitle": "Fassadendämmung mit Pavatex-Holzfaserdämmplatten, Sockelplatten zur Befestigung von Balkonen, Am Bach 23, Lotschen, 99444 Blankenhain, Thüringen.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fassadend%C3%A4mmung_mit_Pavatex-Holzfaserd%C3%A4mmplatten,_Sockelplatten_zur_Befestigung_von_Balkonen,_Am_Bach_23,_Lotschen,_99444_Blankenhain,_Th%C3%BCringen.jpg",
+    "artist": "Kai Kemmann",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Wood fibre boards on a facade in Lotschen, Blankenhain. Resized to 1280 px wide, JPEG quality 80."
+  },
+  {
+    "slug": "cellulose-insulation",
+    "file": "cellulose-insulation.jpg",
+    "commonsTitle": "Paper insulation.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paper_insulation.jpg",
+    "artist": "Riisipuuro",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "note": "Blown cellulose in stud cavities. Resized to 1280 px wide, JPEG quality 80."
+  },
+  {
+    "slug": "engineered-bamboo",
+    "file": "engineered-bamboo.jpg",
+    "commonsTitle": "Strand-woven Bamboo Flooring.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Strand-woven_Bamboo_Flooring.jpg",
+    "artist": "Pazzo4562",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Strand-woven bamboo flooring. Resized to 1280 px wide, JPEG quality 80."
+  },
+  {
+    "slug": "recycled-gypsum",
+    "file": "recycled-gypsum.jpg",
+    "commonsTitle": "Stapel Gipskartonplatten.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stapel_Gipskartonplatten.jpg",
+    "artist": "RossKur",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "Plasterboard stack. Right side cropped from the delivered 1280 px frame to 1000 px to remove factory edge print, JPEG quality 80."
   }
 ]

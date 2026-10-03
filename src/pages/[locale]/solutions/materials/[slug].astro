@@ -1,0 +1,17 @@
+---
+import { isMaterialsEncyclopediaSlug, materialsEncyclopediaSlugs } from '../../../../data/solutions-materials';
+import { getMaterialsEncyclopediaBySlug, otherLocales, resolveLocale } from '../../../../i18n';
+import SolutionMaterialsDetailView from '../../../../views/SolutionMaterialsDetailView.astro';
+
+export function getStaticPaths() {
+  return otherLocales.flatMap((locale) =>
+    materialsEncyclopediaSlugs.map((slug) => ({ params: { locale, slug } })),
+  );
+}
+
+const { slug } = Astro.params;
+const locale = resolveLocale(Astro.currentLocale);
+const item = slug && isMaterialsEncyclopediaSlug(slug) ? getMaterialsEncyclopediaBySlug(locale, slug) : undefined;
+---
+
+{item && <SolutionMaterialsDetailView item={item} />}
