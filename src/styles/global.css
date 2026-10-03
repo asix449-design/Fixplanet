@@ -5204,6 +5204,7 @@ a.map-card:hover {
   margin: 0 0 0.55rem;
   color: #d9d9d0;
   font-size: 0.92rem;
+  overflow-wrap: break-word;
 }
 
 .size-scale-open {

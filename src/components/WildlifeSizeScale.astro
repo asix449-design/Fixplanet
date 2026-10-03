@@ -8,7 +8,7 @@ const scale = getSizeScale(locale, ui.wildlifePage.sourcesLabel);
 const first = scale.animals[0];
 const configJson = JSON.stringify(scale.clientAnimals).replace(/</g, '\\u003c');
 const initialPosition = scale.positionPattern.replaceAll('{n}', '1');
-const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${first.heightText}. ${first.lengthLabel} ${first.lengthText}. ${first.caption}`;
+const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${first.heightText}. ${first.lengthLabel} ${first.lengthText}.`;
 
 const licenceTokens = [
   'CC BY-SA 4.0',
@@ -135,6 +135,13 @@ const firstCredit = splitCredit(first.credit, first.licenceHref);
               first.credit
             )
           }
+          {
+            first.filePageHref ? (
+              <>
+                {' '}<a href={first.filePageHref} rel="noopener noreferrer">{first.filePageLabel}</a>
+              </>
+            ) : null
+          }
         </p>
         <p class="size-scale-open">
           <a data-open href={first.href}>{scale.openPage}</a>
@@ -189,7 +196,16 @@ const firstCredit = splitCredit(first.credit, first.licenceHref);
               <p>{animal.heightLabel} {animal.heightText}</p>
               <p>{animal.lengthLabel} {animal.lengthText}</p>
               <p>{animal.caption}</p>
-              <p>{animal.credit}</p>
+              <p>
+                {animal.credit}
+                {
+                  animal.filePageHref ? (
+                    <>
+                      {' '}<a href={animal.filePageHref} rel="noopener noreferrer">{animal.filePageLabel}</a>
+                    </>
+                  ) : null
+                }
+              </p>
               <p><a href={animal.href}>{scale.openPage}</a></p>
             </li>
           ))

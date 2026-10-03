@@ -6,10 +6,10 @@
     "unit_short": "m",
     "unit_word": "metri",
     "open_page": "Atvērt lapu",
-    "position": "{n} no 14",
+    "position": "{n} no {total}",
     "hint": "Velciet ar pirkstu vai spiediet bulttaustiņus",
     "section_title": "Izmēru skala",
-    "section_lead": "Katrs dzīvnieks redzams pilnā izmērā, bet mazākie ir siluetu veidā aiz tā."
+    "section_lead": "Katrs dzīvnieks ir parādīts pilnos izmēros, mazākie dzīvnieki ir aiz tā."
   },
   "animals": {
     "bald-eagle": {

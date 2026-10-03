@@ -100,6 +100,20 @@ const oryxDrawing: Record<Locale, string> = {
   lv: 'Fix Planet oriģinālais zīmējums',
 };
 
+const changeNote: Record<Locale, string> = {
+  en: 'Background removed',
+  ru: 'Фон удалён',
+  pl: 'Usunięto tło',
+  lv: 'Fons noņemts',
+};
+
+const filePageLabel: Record<Locale, string> = {
+  en: 'file on Wikimedia Commons',
+  ru: 'файл на Wikimedia Commons',
+  pl: 'plik w Wikimedia Commons',
+  lv: 'fails Wikimedia Commons',
+};
+
 type PhotoFile = {
   png: string;
   webp: string;
@@ -107,6 +121,8 @@ type PhotoFile = {
   pxH: number;
   credits: Record<Locale, string>;
   licenceHref: string;
+  filePage?: string;
+  changed?: boolean;
 };
 
 type PhotoCatalog = { images: Record<string, PhotoFile> };
@@ -314,6 +330,8 @@ export type SizeScaleAnimal = {
   credit: string;
   silhouetteCredit: string;
   licenceHref: string;
+  filePageHref: string;
+  filePageLabel: string;
   href: string;
   heightLabel: string;
   lengthLabel: string;
@@ -361,7 +379,7 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
   for (const key of sharedKeys) {
     if (!shared[key]) throw new Error(`Size scale label ${key} is missing for ${locale}`);
   }
-  if (!shared.position.includes('{n}') || !shared.position.includes('14')) {
+  if (!shared.position.includes('{n}') || !shared.position.includes('{total}')) {
     throw new Error(`Size scale position label is missing its placeholders for ${locale}`);
   }
   const animals: SizeScaleAnimal[] = geometry.map((item) => {
@@ -395,13 +413,20 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
     const silhouetteCredit = localizeSilhouette(item.credit, locale);
     const photoCredit = item.photoFile?.credits[locale] ?? '';
     const licenceHref = item.photoFile?.licenceHref ?? '';
+    const filePage = photoCredit ? (item.photoFile?.filePage ?? '') : '';
+    const changed = Boolean(photoCredit && item.photoFile?.changed);
+    const credit = photoCredit
+      ? (changed ? `${photoCredit}. ${changeNote[locale]}` : photoCredit)
+      : silhouetteCredit;
     return {
       slug: item.row.slug,
       name: copy.name,
       caption: copy.caption,
-      credit: photoCredit || silhouetteCredit,
+      credit,
       silhouetteCredit,
       licenceHref: photoCredit ? licenceHref : '',
+      filePageHref: filePage,
+      filePageLabel: filePage ? filePageLabel[locale] : '',
       href: localizePath(`/wildlife/${item.row.slug}`, locale),
       heightLabel: copy.height_label,
       lengthLabel: copy.length_label,
@@ -416,7 +441,7 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
     };
   });
 
-  const positionPattern = shared.position.replaceAll('14', String(SIZE_SCALE_TOTAL));
+  const positionPattern = shared.position.replaceAll('{total}', String(SIZE_SCALE_TOTAL));
   const view: SizeScaleView = {
     total: SIZE_SCALE_TOTAL,
     title: shared.section_title,

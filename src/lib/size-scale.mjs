@@ -313,7 +313,7 @@ function mount(root) {
   }
 
   function announcement(animal, position) {
-    return `${animal.name}, ${position}. ${animal.heightLabel} ${animal.heightText}. ${animal.lengthLabel} ${animal.lengthText}. ${animal.caption}`;
+    return `${animal.name}, ${position}. ${animal.heightLabel} ${animal.heightText}. ${animal.lengthLabel} ${animal.lengthText}.`;
   }
 
   function fillSources(animal) {
@@ -333,13 +333,24 @@ function mount(root) {
     }
   }
 
+  function appendFilePage(animal, failed) {
+    if (failed || !animal.filePageHref || !animal.filePageLabel) return;
+    creditEl.append(document.createTextNode(' '));
+    const fileLink = document.createElement('a');
+    fileLink.href = animal.filePageHref;
+    fileLink.rel = 'noopener noreferrer';
+    fileLink.textContent = animal.filePageLabel;
+    creditEl.append(fileLink);
+  }
+
   function fillCredit(animal) {
     const failed = animal.photo && animal.photoOn === false;
     const text = failed ? animal.silhouetteCredit : animal.credit;
     const href = failed ? '' : animal.licenceHref;
     creditEl.replaceChildren();
     if (!href) {
-      creditEl.textContent = text;
+      creditEl.append(document.createTextNode(text));
+      appendFilePage(animal, failed);
       return;
     }
     let token = '';
@@ -353,7 +364,8 @@ function mount(root) {
       }
     }
     if (at < 0) {
-      creditEl.textContent = text;
+      creditEl.append(document.createTextNode(text));
+      appendFilePage(animal, failed);
       return;
     }
     creditEl.append(document.createTextNode(text.slice(0, at)));
@@ -363,6 +375,7 @@ function mount(root) {
     link.textContent = token;
     creditEl.append(link);
     creditEl.append(document.createTextNode(text.slice(at + token.length)));
+    appendFilePage(animal, failed);
   }
 
   function syncText() {
@@ -493,17 +506,20 @@ function mount(root) {
     goTo(index + (delta > 0 ? 1 : -1));
   }, { passive: false });
 
+  function failPhoto(el, i) {
+    if (meta[i].photoOn === false) return;
+    meta[i].photoOn = false;
+    el.classList.add('photo-failed');
+    if (index === i) fillCredit(meta[i]);
+    if (token === 0) render(index, index, 1);
+  }
+
   animals.forEach((el, i) => {
     const img = el.querySelector('[data-photo] img');
     if (!img || !meta[i].photo) return;
     meta[i].photoOn = true;
-    img.addEventListener('error', () => {
-      if (meta[i].photoOn === false) return;
-      meta[i].photoOn = false;
-      el.classList.add('photo-failed');
-      if (index === i) fillCredit(meta[i]);
-      if (token === 0) render(index, index, 1);
-    });
+    img.addEventListener('error', () => failPhoto(el, i));
+    if (img.complete && img.naturalWidth === 0) failPhoto(el, i);
   });
 
   const observer = new ResizeObserver(() => {

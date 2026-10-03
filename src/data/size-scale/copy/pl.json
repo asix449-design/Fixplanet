@@ -6,10 +6,10 @@
     "unit_short": "m",
     "unit_word": "metrów",
     "open_page": "Otwórz stronę",
-    "position": "{n} z 14",
+    "position": "{n} z {total}",
     "hint": "Przesuń palcem lub naciśnij klawisze strzałek",
     "section_title": "Skala wielkości",
-    "section_lead": "Każde zwierzę widać w pełnej wielkości, a mniejsze jako sylwetki za nim."
+    "section_lead": "Każde zwierzę jest pokazane w pełnym rozmiarze, mniejsze zwierzęta stoją za nim."
   },
   "animals": {
     "bald-eagle": {

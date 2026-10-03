@@ -6,10 +6,10 @@
     "unit_short": "m",
     "unit_word": "metres",
     "open_page": "Open the page",
-    "position": "{n} of 14",
+    "position": "{n} of {total}",
     "hint": "Swipe or press the arrow keys",
     "section_title": "Size scale",
-    "section_lead": "Each animal is shown at full size, with the smaller ones as silhouettes behind it."
+    "section_lead": "Each animal is shown at full size, with the smaller animals behind it."
   },
   "animals": {
     "bald-eagle": {

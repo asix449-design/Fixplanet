@@ -11,7 +11,8 @@
         "pl": "Zdjęcie: GlacierNPS, domena publiczna",
         "lv": "Foto: GlacierNPS, publiskais īpašums"
       },
-      "licenceHref": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
+      "licenceHref": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Bald_Eagle_(51859038267).jpg"
     },
     "iberian-lynx": {
       "png": "/images/wildlife/size-scale/iberian-lynx.png",
@@ -63,7 +64,9 @@
         "pl": "Zdjęcie: Joyki, licencja Uznanie autorstwa 3.0 (CC BY 3.0)",
         "lv": "Foto: Joyki, licence «Ar autora norādi» 3.0 (CC BY 3.0)"
       },
-      "licenceHref": "https://creativecommons.org/licenses/by/3.0"
+      "licenceHref": "https://creativecommons.org/licenses/by/3.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Wolf_(233601219).jpeg",
+      "changed": true
     },
     "arabian-oryx": {
       "png": "/images/wildlife/size-scale/arabian-oryx.png",
@@ -76,7 +79,9 @@
         "pl": "Zdjęcie: Zoozkyn, licencja Uznanie autorstwa na tych samych warunkach 4.0 (CC BY-SA 4.0)",
         "lv": "Foto: Zoozkyn, licence «Ar autora norādi, tādos pašos noteikumos» 4.0 (CC BY-SA 4.0)"
       },
-      "licenceHref": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenceHref": "https://creativecommons.org/licenses/by-sa/4.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:The_Arabian_Oryx_or_White_Oryx.jpg",
+      "changed": true
     },
     "red-deer": {
       "png": "/images/wildlife/size-scale/red-deer.png",
@@ -89,7 +94,9 @@
         "pl": "Zdjęcie: Gareth James, licencja Uznanie autorstwa na tych samych warunkach 2.0 (CC BY-SA 2.0)",
         "lv": "Foto: Gareth James, licence «Ar autora norādi, tādos pašos noteikumos» 2.0 (CC BY-SA 2.0)"
       },
-      "licenceHref": "https://creativecommons.org/licenses/by-sa/2.0"
+      "licenceHref": "https://creativecommons.org/licenses/by-sa/2.0",
+      "filePage": "https://commons.wikimedia.org/wiki/File:Red_deer_stag_in_Margam_Park_-_geograph.org.uk_-_3793422.jpg",
+      "changed": true
     }
   }
 }
