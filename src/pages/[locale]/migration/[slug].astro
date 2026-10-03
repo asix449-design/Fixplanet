@@ -17,6 +17,7 @@ import MigrationView from '../../../views/MigrationView.astro';
 import MissingMigrantDetailView from '../../../views/MissingMigrantDetailView.astro';
 import MissingMigrantsView from '../../../views/MissingMigrantsView.astro';
 import RemittanceDetailView from '../../../views/RemittanceDetailView.astro';
+import RefugeesView from '../../../views/RefugeesView.astro';
 import RemittancesView from '../../../views/RemittancesView.astro';
 
 export function getStaticPaths() {
@@ -25,6 +26,7 @@ export function getStaticPaths() {
     ...migrationEntryMeta.map((item) => ({ params: { locale, slug: item.slug } })),
     ...Object.keys(migrationPathRedirects).map((slug) => ({ params: { locale, slug } })),
     { params: { locale, slug: 'remittances' } },
+    { params: { locale, slug: 'refugees' } },
     ...remittanceIds.map((slug) => ({ params: { locale, slug } })),
     { params: { locale, slug: missingMigrantsShelfSlug } },
     ...missingMigrantIds.map((slug) => ({ params: { locale, slug } })),
@@ -42,6 +44,8 @@ const item = slug && !isMigrationShelf(slug) ? getMigrationBySlug(locale, slug) 
 {
   slug === 'remittances' ? (
     <RemittancesView />
+  ) : slug === 'refugees' ? (
+    <RefugeesView />
   ) : isRemittanceId(slug) ? (
     <RemittanceDetailView slug={slug} />
   ) : slug === missingMigrantsShelfSlug ? (

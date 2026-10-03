@@ -1,16 +1,14 @@
 ---
-import BirdFlywaysMap from '../components/BirdFlywaysMap.astro';
 import CitedSourceList from '../components/CitedSourceList.astro';
 import DisplacementGlobe from '../components/DisplacementGlobe.astro';
 import HubTile from '../components/HubTile.astro';
 import HumanEraAtlas from '../components/HumanEraAtlas.astro';
 import HumanMapLinkCard from '../components/HumanMapLinkCard.astro';
+import InternalDisplacement from '../components/InternalDisplacement.astro';
 import MigrationCard from '../components/MigrationCard.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
-import TodayMigrationMap from '../components/TodayMigrationMap.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
-  flywaySources,
   hubBackdrop,
   humanHeroImage,
   humanSources,
@@ -48,8 +46,6 @@ const activeShelf: MigrationShelf | undefined = hub
     ? requested
     : 'humans';
 
-const birdEntries = activeShelf === 'birds' ? getMigrationByShelf(locale, 'birds') : [];
-const animalEntries = activeShelf === 'animals' ? getMigrationByShelf(locale, 'animals') : [];
 const greatEntries =
   activeShelf === 'great-migrations' ? getMigrationByShelf(locale, 'great-migrations') : [];
 const humans = page.humans;
@@ -88,9 +84,6 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
           <div class="encyc-lede migration-hub-lede">
             {page.hubLead.map((para) => <p>{para}</p>)}
           </div>
-          <article class="migration-today-card wildlife-map-panel today-mig-wrap">
-            <TodayMigrationMap />
-          </article>
           <nav class="hub-grid hub-grid-2 migration-hub-tiles" aria-label={page.chooseShelf}>
             {
               migrationHub.map((item) => (
@@ -102,6 +95,26 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
                 />
               ))
             }
+          </nav>
+          <nav class="hub-grid hub-grid-3 migration-hub-tiles migration-hub-more" aria-label={page.entrances.aria}>
+            <HubTile
+              href={localizePath('/migration/refugees', locale)}
+              icon="alert"
+              title={page.entrances.refugees.title}
+              text={page.entrances.refugees.text}
+            />
+            <HubTile
+              href={localizePath('/migration/remittances', locale)}
+              icon="globe"
+              title={page.entrances.remittances.title}
+              text={page.entrances.remittances.text}
+            />
+            <HubTile
+              href={localizePath('/migration/missing-migrants', locale)}
+              icon="compass"
+              title={page.entrances.missing.title}
+              text={page.entrances.missing.text}
+            />
           </nav>
         </div>
       </section>
@@ -118,17 +131,7 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
     )
   }
 
-  {
-    activeShelf === 'today' && (
-      <section class="section section-hub-follow" aria-labelledby="today-map-heading">
-        <div class="wrap">
-          <div class="wildlife-map-panel today-mig-wrap">
-            <TodayMigrationMap />
-          </div>
-        </div>
-      </section>
-    )
-  }
+  {hub && <InternalDisplacement />}
 
   {
     activeShelf === 'humans' && (
@@ -240,43 +243,6 @@ const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDe
     )
   }
 
-  {
-    activeShelf === 'birds' && (
-      <>
-        <section class="section section-hub-follow" aria-labelledby="flyways-heading">
-          <div class="wrap">
-            <div class="wildlife-map-panel">
-              <BirdFlywaysMap />
-            </div>
-            <CitedSourceList heading={page.sourcesLabel} sources={flywaySources} />
-          </div>
-        </section>
-        <section class="section" id="migration-list">
-          <div class="wrap wildlife-list-panel">
-            <div class="card-grid cols-3">
-              {birdEntries.map((item) => (
-                <MigrationCard item={item} />
-              ))}
-            </div>
-          </div>
-        </section>
-      </>
-    )
-  }
-
-  {
-    activeShelf === 'animals' && (
-      <section class="section section-hub-follow" id="migration-list">
-        <div class="wrap wildlife-list-panel">
-          <div class="card-grid cols-3">
-            {animalEntries.map((item) => (
-              <MigrationCard item={item} />
-            ))}
-          </div>
-        </div>
-      </section>
-    )
-  }
 </BaseLayout>
 
 <style>

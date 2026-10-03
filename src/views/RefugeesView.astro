@@ -1,0 +1,26 @@
+---
+import RefugeeSituation from '../components/RefugeeSituation.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { hubBackdrop } from '../data/migration';
+import { getMigrationPage, localizePath, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const title = page.entrances.refugees.title;
+---
+
+<BaseLayout
+  title={`${title}, ${page.title}, Fix Planet`}
+  description={page.today.refugeesLead}
+  image={hubBackdrop.file}
+  theme="migration"
+>
+  <ShelfHeader
+    backHref={localizePath('/migration', locale)}
+    backLabel={page.back}
+    title={title}
+    lede={page.entrances.refugees.text}
+  />
+  <RefugeeSituation />
+</BaseLayout>

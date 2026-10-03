@@ -117,34 +117,5 @@ export const plRemittances: RemittanceCopy = {
       plate:
         'Mapa: średni koszt wysłania przekazów pieniężnych do kraju, 2023, Bank Światowy, World Development Indicators („Wskaźniki rozwoju świata”). Liczby te różnią się od średnich światowych w tekście.',
     },
-    'remittances-wdi-series': {
-      tag: 'Dane · WDI',
-      title: 'Przekazy osobiste w World Development Indicators',
-      hook: 'Po zakończeniu serii raportów globalnego partnerstwa Banku Światowego na rzecz migracji i rozwoju w 2024 r. Bank Światowy nadal publikuje w bazie World Development Indicators („Wskaźniki rozwoju świata”) krajowe szeregi czasowe przekazów osobistych — otrzymanych i wysłanych — w USD, a otrzymanych także jako udział w PKB.',
-      figure: '857',
-      unit: 'mld USD otrzymane, świat, 2024',
-      rows: [
-        { label: 'Otrzymane, świat, 2024', figure: 'około 857 mld USD' },
-        { label: 'Wysłane, świat, 2024', figure: 'około 619 mld USD' },
-        { label: 'Linia otrzymanych', figure: '1970–2024' },
-        { label: 'Linia wysłanych', figure: '1966–2024' },
-      ],
-      sections: [
-        {
-          heading: 'Czym to jest',
-          body: 'Trzy szeregi World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane (w bieżących USD), przekazy osobiste otrzymane (% PKB) i przekazy osobiste wysłane (w bieżących USD). Można je przeglądać kraj po kraju na stronach wskaźników w serwisie otwartych danych Banku Światowego oraz w bazie World Development Indicators na platformie DataBank; dane są aktualizowane także po zakończeniu serii Migration and Development Brief.',
-        },
-        {
-          heading: 'Dlaczego to ważne',
-          body: 'Czytelnicy, którzy obok najnowszej liczby światowej chcą mieć długie krajowe szeregi czasowe, potrzebują szeregu, który jest wciąż aktualizowany. WDI pozostaje standardową tabelą krajową Banku Światowego dla przekazów osobistych.',
-        },
-        {
-          heading: 'Jak to czytać',
-          body: 'Przekazy osobiste w WDI liczone są według zasad bilansu płatniczego, więc roczne sumy mogą różnić się od głównego szacunku Banku Światowego dla przepływów do krajów o niskim i średnim dochodzie. Strona każdego wskaźnika oferuje wykresy dla krajów, mapę świata i dane do pobrania.',
-        },
-      ],
-      plate:
-        'Wykres: sumy światowe przekazów osobistych otrzymanych, 1970–2024, i wysłanych, 1966–2024, Bank Światowy, World Development Indicators („Wskaźniki rozwoju świata”). Liczby te są liczone według definicji bilansu płatniczego.',
-    },
   },
 };

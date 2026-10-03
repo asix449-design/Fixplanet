@@ -11,7 +11,6 @@ import {
   type HumanMapLinkId,
   type HumanMapLinkMeta,
 } from '../data/human-map-links';
-import type { TodayRegionId } from '../data/migration-today';
 import {
   humanEventMeta,
   type HumanEventCoverage,
@@ -111,6 +110,12 @@ export type MigrationPage = {
     humans: string;
     'great-migrations': string;
   };
+  entrances: {
+    aria: string;
+    refugees: { title: string; text: string };
+    remittances: { title: string; text: string };
+    missing: { title: string; text: string };
+  };
   shelves: Record<MigrationShelf, string>;
   shelfLeads: Record<MigrationShelf, string>;
   humans: {
@@ -149,30 +154,7 @@ export type MigrationPage = {
     eventAtlas: HumanEventAtlasCopy;
     sections: HumanSection[];
   };
-  birds: {
-    flywaysTitle: string;
-    flywaysAria: string;
-    flywaysLead: string;
-    flywaysHonesty: string;
-    flywaysLegend: string;
-    flywayEastAtlantic: string;
-    flywayMississippi: string;
-    flywayPacificAmericas: string;
-    flywayEaaf: string;
-    flywayCentralAsian: string;
-    flywayAfricanEurasian: string;
-    flywaysSources: string;
-    flywaysBaseCredit: string;
-  };
   today: TodayShelfCopy;
-};
-
-export type TodayRegionCopy = {
-  name: string;
-  shortName: string;
-  caption: string;
-  originsIntro: string;
-  corridorsIntro: string;
 };
 
 export type TodayRefugeeCardId =
@@ -192,63 +174,27 @@ export type TodayRefugeeCardCopy = {
   detail: string[];
 };
 
+export type TodayCampId =
+  | 'coxs-bazar'
+  | 'dadaab'
+  | 'kakuma-kalobeyei'
+  | 'bidibidi'
+  | 'zaatari';
+
+export type TodayRouteId =
+  | 'central-mediterranean'
+  | 'eastern-mediterranean'
+  | 'western-africa'
+  | 'western-mediterranean'
+  | 'western-balkans';
+
 export type TodayShelfCopy = {
-  mapTitle: string;
-  mapAria: string;
-  lead: string;
-  honesty: string;
-  tabletHint: string;
-  netLabel: string;
-  netUnitMillion: string;
-  netUnitPeople: string;
-  stockLabel: string;
-  stockUnitMillion: string;
-  originsTitle: string;
-  originsHint: string;
-  corridorsTitle: string;
-  corridorsNote: string;
-  close: string;
-  openTablet: string;
-  million: string;
   approx: string;
-  intraCaption: string;
-  remainderNote: string;
-  stockNotFlow: string;
-  arrowLegend: string;
-  mapCredit: string;
-  emptyPanel: string;
-  layersLabel: string;
-  layerCamps: string;
-  layerDetections: string;
-  layerIdp: string;
-  layerRefugees: string;
-  refugeesTitle: string;
-  refugeesLead: string;
-  refugeesDefinition: string;
-  refugeesHonesty: string;
-  refugeesNoChoropleth: string;
-  refugeesCards: Record<TodayRefugeeCardId, TodayRefugeeCardCopy>;
-  campsTitle: string;
-  campsLead: string;
-  campsHonesty: string;
-  campsUnrwa: string;
-  campOpen: string;
-  campAsOf: string;
-  campPeople: string;
-  detectionsTitle: string;
-  detectionsLead: string;
-  detectionsHonesty: string;
-  detectionsMetric: string;
-  detectionsNoGlobal: string;
-  detectionsChange: string;
-  detectionsOpen: string;
-  detectionsNationalities: string;
-  noHeadcount: string;
   idpTitle: string;
   idpLead: string;
   idpDefinition: string;
   idpHonesty: string;
-  idpNoChoropleth: string;
+  idpNotes: string;
   idpMillion: string;
   idpMovementsUnit: string;
   idpStockUnit: string;
@@ -257,6 +203,9 @@ export type TodayShelfCopy = {
   idpCountriesLabel: string;
   idpBothLabel: string;
   idpCrisesTitle: string;
+  idpSourceSummary: string;
+  idpSourcePdf: string;
+  idpSourceHub: string;
   idpCards: Record<
     | 'idp-stock-2025'
     | 'idp-conflict-displacements-2025'
@@ -265,12 +214,38 @@ export type TodayShelfCopy = {
     { tag: string; title: string; hook: string; detail: string[] }
   >;
   idpCrisisCopy: Record<string, { place: string; note: string }>;
-  regions: Record<TodayRegionId, TodayRegionCopy>;
-  originNames: Record<TodayRegionId, string>;
-  campCopy: Record<string, { name: string; country: string; note: string }>;
-  routeCopy: Record<string, { name: string; note: string }>;
-  corridorCopy?: Record<string, { from: string; to: string; note: string }>;
-  yearCopy?: Record<string, { note: string }>;
+  refugeesTitle: string;
+  refugeesLead: string;
+  refugeesDefinition: string;
+  refugeesHonesty: string;
+  refugeesSourceTrends: string;
+  refugeesSourcePdf: string;
+  refugeesSourceFinder: string;
+  refugeesSourcePress: string;
+  refugeesSourceHosting: string;
+  refugeesCards: Record<TodayRefugeeCardId, TodayRefugeeCardCopy>;
+  campsTitle: string;
+  campsLead: string;
+  campsHonesty: string;
+  campsRegister: string;
+  campAsOf: string;
+  campPeople: string;
+  campCopy: Record<TodayCampId, { name: string; country: string; note: string; source: string }>;
+  detectionsTitle: string;
+  detectionsLead: string;
+  detectionsHonesty: string;
+  detectionsMetric: string;
+  detectionsChange: string;
+  detectionsLower: string;
+  detectionsHigher: string;
+  detectionsPeople: string;
+  detectionsUncounted: string;
+  detectionsRoutesTitle: string;
+  detectionsNationalities: string;
+  detectionsSource2024: string;
+  detectionsSource2025: string;
+  yearCopy: Record<'2024' | '2025', { note: string }>;
+  routeCopy: Record<TodayRouteId, { name: string; note: string }>;
 };
 
 const pages: Record<Locale, MigrationPage> = { en, ru, pl, lv };
@@ -295,7 +270,7 @@ export function getMigrationEntries(locale: Locale): MigrationEntry[] {
 
 export function getMigrationByShelf(
   locale: Locale,
-  shelf: Exclude<MigrationShelf, 'humans' | 'today'>,
+  shelf: Exclude<MigrationShelf, 'humans'>,
 ): MigrationEntry[] {
   return getMigrationEntries(locale).filter((item) => item.shelf === shelf);
 }

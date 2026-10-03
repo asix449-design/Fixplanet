@@ -1,131 +1,52 @@
-import { cite, type PrimarySource } from './sources';
 import todayJson from '../../public/data/migration-today.json';
 
-export const todayRegionIds = [
-  'africa',
-  'asia',
-  'europe',
-  'latin-america-caribbean',
-  'northern-america',
-  'oceania',
-] as const;
+export type TodayCampId =
+  | 'coxs-bazar'
+  | 'dadaab'
+  | 'kakuma-kalobeyei'
+  | 'bidibidi'
+  | 'zaatari';
 
-export type TodayRegionId = (typeof todayRegionIds)[number];
+export type TodayRouteId =
+  | 'central-mediterranean'
+  | 'eastern-mediterranean'
+  | 'western-africa'
+  | 'western-mediterranean'
+  | 'western-balkans';
 
-export type TodayOriginRow = {
-  id: TodayRegionId | string;
-  value: number;
-  approx: boolean;
+export type TodayCamp = {
+  id: TodayCampId;
+  population: number;
+  asOf: string;
+  sourceUrl: string;
 };
 
-export type TodayCorridor = {
-  id: string;
-  from: string;
-  to: string;
-  fromRegion: TodayRegionId;
-  toRegion: TodayRegionId;
-  stock: number | null;
+export type TodayDetectionYear = {
+  year: 2024 | 2025;
+  total: number;
   approx: boolean;
+  changeVsPrev: number;
+};
+
+export type TodayDetectionRoute = {
+  id: TodayRouteId;
   year: number;
-  kind: 'intra-regional' | 'inter-regional';
-  note: string;
+  detections: number | null;
+  approx: boolean;
 };
-
-export type TodayDataset = {
-  title: string;
-  committed: string;
-  notes: string[];
-  netMigration: {
-    year: number;
-    unit: string;
-    indicator: string;
-    sourceId: string;
-    sourceLabel: string;
-    sourceUrl: string;
-    citation: string;
-    geography: string;
-    estimateNote: string;
-    worldNet: number;
-    regions: Record<TodayRegionId, number>;
-  };
-  migrantStock: {
-    year: number;
-    asOf: string;
-    unit: string;
-    sourceId: string;
-    sourceLabel: string;
-    sourceUrl: string;
-    citation: string;
-    world: number;
-    regions: Record<
-      TodayRegionId,
-      { destination: number; origins: TodayOriginRow[] }
-    >;
-  };
-  intraRegional: {
-    sourceId: string;
-    note: string;
-    europeBornLivingInEurope: number;
-    oceaniaBornLivingInOceania: number;
-    subSaharanAfricaBornLivingInRegion: number;
-    worldwideLivingInRegionOfBirth: number;
-  };
-  corridors: TodayCorridor[];
-  camps: {
-    committed: string;
-    agency: string;
-    unit: string;
-    rankingNote: string;
-    unrwaNote: string;
-    sites: TodayCamp[];
-  };
-  borderDetections: {
-    committed: string;
-    agency: string;
-    geography: string;
-    metric: string;
-    globalNote: string;
-    source2024Url: string;
-    source2025Url: string;
-    methodologyNote: string;
-    years: TodayDetectionYear[];
-    topNationalities2025: string[];
-    routes: TodayDetectionRoute[];
-  };
-  internalDisplacement: TodayInternalDisplacement;
-};
-
-export type TodayIdpCardId =
-  | 'idp-stock-2025'
-  | 'idp-conflict-displacements-2025'
-  | 'idp-disaster-displacements-2025'
-  | 'idp-movements-2025-overview';
 
 export type TodayIdpCrisis = {
   id: string;
-  kind: 'stock' | 'disaster-movements';
-  place: string;
   figure: number;
   approx: boolean;
-  asOf?: string;
-  shareOfDisaster?: number;
 };
 
 export type TodayInternalDisplacement = {
-  committed: string;
-  agency: string;
-  report: string;
-  published: string;
-  coversYear: number;
   sourceSummaryUrl: string;
-  sourceSummaryLabel: string;
   sourcePdfUrl: string;
-  sourcePdfLabel: string;
   sourceHubUrl: string;
-  sourceHubLabel: string;
   stockEnd2025: {
     figure: number;
-    asOf: string;
     conflictStock: number;
     disasterStock: number;
     countries: number;
@@ -139,193 +60,75 @@ export type TodayInternalDisplacement = {
     conflictCountries: number;
     disasterCountries: number;
     bothCountries: number;
-    changeVsPrev: number;
-    conflictChangeVsPrev: number;
-    disasterChangeVsPrev: number;
-    disasterVsDecadeAvg: number;
   };
   crises: TodayIdpCrisis[];
 };
 
-export type TodayCamp = {
-  id: string;
-  name: string;
-  country: string;
-  region: TodayRegionId;
-  population: number;
-  populationMax?: number;
-  approx: boolean;
-  asOf: string;
-  agency: string;
-  sourceUrl: string;
-  sourceLabel: string;
-  note: string;
-  left: number;
-  top: number;
-};
-
-export type TodayDetectionYear = {
-  year: number;
-  total: number;
-  approx: boolean;
-  changeVsPrev: number;
-  note: string;
-};
-
-export type TodayDetectionRoute = {
-  id: string;
-  name: string;
-  year: number;
-  detections: number | null;
-  approx: boolean;
-  left: number;
-  top: number;
-  note: string;
+export type TodayDataset = {
+  camps: { sites: TodayCamp[] };
+  borderDetections: {
+    source2024Url: string;
+    source2025Url: string;
+    years: TodayDetectionYear[];
+    routes: TodayDetectionRoute[];
+  };
+  internalDisplacement: TodayInternalDisplacement;
 };
 
 export const todayDataset = todayJson as TodayDataset;
 
-/** Overlay positions on the BlankMap-World frame (percent of map box). */
-export const todayTabletLayout: Record<
-  TodayRegionId,
-  { left: number; top: number }
-> = {
-  'northern-america': { left: 18, top: 28 },
-  europe: { left: 49, top: 22 },
-  asia: { left: 70, top: 32 },
-  africa: { left: 49, top: 52 },
-  'latin-america-caribbean': { left: 26, top: 62 },
-  oceania: { left: 86, top: 68 },
-};
-
-/** Schematic arrow endpoints, percent of the map box. Not volumes. */
-export const todayRegionAnchors: Record<
-  TodayRegionId,
-  { x: number; y: number }
-> = {
-  'northern-america': { x: 20, y: 34 },
-  europe: { x: 51, y: 30 },
-  asia: { x: 72, y: 38 },
-  africa: { x: 51, y: 56 },
-  'latin-america-caribbean': { x: 28, y: 64 },
-  oceania: { x: 86, y: 70 },
-};
-
-export const todaySources: PrimarySource[] = [
-  cite(
-    'United Nations, World Population Prospects 2024 — net number of migrants, 2023 estimates',
-    'https://population.un.org/wpp/',
-  ),
-  cite(
-    'United Nations, International Migrant Stock 2024: Key facts and figures (UN DESA/POP/2024/DC/NO. 13)',
-    'https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2025_intlmigstock_2024_key_facts_and_figures_advance-unedited.pdf',
-  ),
-  cite(
-    'IOM World Migration Report 2026, chapter 3 — regional migrant stock and corridors (citing UN DESA 2025)',
-    'https://worldmigrationreport.iom.int/what-we-do/world-migration-report-2026/chapter-3/africa',
-  ),
-  cite(
-    'UN M49 geographic regions used for the tablets',
-    'https://unstats.un.org/unsd/methodology/m49/',
-  ),
-  cite(
-    'UNHCR Operational Data Portal — Bangladesh (Cox’s Bazar, 31 August 2026)',
-    'https://data.unhcr.org/en/country/bgd',
-  ),
-  cite(
-    'Joint Government of Bangladesh - UNHCR Population Dashboard as of August 2026',
-    'https://data.unhcr.org/en/documents/details/123986',
-  ),
-  cite(
-    'Joint Government of Bangladesh - UNHCR Population Dashboard, Bhasan Char, as of August 2026',
-    'https://data.unhcr.org/en/documents/details/123990',
-  ),
-  cite(
-    'UNHCR / DRS Kenya Statistics Infographics — August 2026 (Dadaab 429,352; Kakuma area 323,662, as of 31 August 2026)',
-    'https://data.unhcr.org/en/documents/details/124047',
-  ),
-  cite(
-    'UNHCR Uganda — Bidibidi 210,568, 31 August 2026',
-    'https://data.unhcr.org/en/documents/details/123935',
-  ),
-  cite(
-    'UNHCR Jordan — Zaatari 45,364, August 2026',
-    'https://data.unhcr.org/en/documents/details/123941',
-  ),
-  cite(
-    'Frontex — irregular border crossings into the EU, 2024 (detections, not unique people)',
-    'https://www.frontex.europa.eu/media-centre/news/news-release/irregular-border-crossings-into-eu-drop-sharply-in-2024-oqpweX',
-  ),
-  cite(
-    'Frontex — irregular border crossings, 2025 (detections, not unique people)',
-    'https://www.frontex.europa.eu/media-centre/news/news-release/frontex-irregular-border-crossings-down-26-in-2025-europe-must-stay-prepared-lyKpVb',
-  ),
-  cite(
-    'IDMC — Summary, GRID 2026 (12 May 2026)',
-    'https://www.internal-displacement.org/publications/summary-global-report-on-internal-displacement-2026/',
-  ),
-  cite(
-    'IDMC — GRID 2026 full PDF',
-    'https://api.internal-displacement.org/sites/default/files/publications/documents/IDMC-GRID-2026-Global-Report-on-Internal-Displacement.pdf',
-  ),
-  cite(
-    'IDMC displacement data hub',
-    'https://www.internal-displacement.org/database/displacement-data/',
-  ),
-  cite(
-    'UNHCR — Global Trends',
-    'https://www.unhcr.org/global-trends',
-  ),
-  cite(
-    'UNHCR — Global Trends 2025 (PDF, June 2026)',
-    'https://www.unhcr.org/sites/default/files/2026-06/global-trends-report-2025.pdf',
-  ),
-  cite(
-    'UNHCR — Refugee Data Finder',
-    'https://www.unhcr.org/refugee-statistics',
-  ),
-  cite(
-    'UNHCR — press release, 11 June 2026',
+export const refugeeSourceUrls = {
+  trends: 'https://www.unhcr.org/global-trends',
+  pdf: 'https://www.unhcr.org/sites/default/files/2026-06/global-trends-report-2025.pdf',
+  finder: 'https://www.unhcr.org/refugee-statistics',
+  press:
     'https://www.unhcr.org/news/press-releases/7-10-refugees-living-long-term-displacement-unhcr-chief-calls-renewed-push',
-  ),
-  cite(
-    'UNHCR — Refugee hosting metrics',
+  hosting:
     'https://www.unhcr.org/refugee-statistics/insights/explainers/refugee-hosting-metrics.html',
-  ),
-];
-
-export function isTodayRegion(value: string | undefined): value is TodayRegionId {
-  return !!value && (todayRegionIds as readonly string[]).includes(value);
-}
-
-export function corridorsForRegion(region: TodayRegionId): TodayCorridor[] {
-  return todayDataset.corridors.filter(
-    (row) => row.fromRegion === region || row.toRegion === region,
-  );
-}
-
-export function formatSignedCount(value: number, locale: string): string {
-  const abs = Math.abs(value);
-  const sign = value > 0 ? '+' : value < 0 ? '−' : '';
-  if (abs >= 1_000_000) {
-    const millions = abs / 1_000_000;
-    const digits = millions >= 10 ? 1 : 2;
-    return `${sign}${millions.toLocaleString(locale, {
-      minimumFractionDigits: digits,
-      maximumFractionDigits: digits,
-    })}`;
-  }
-  return `${sign}${abs.toLocaleString(locale)}`;
-}
+} as const;
 
 export function formatStockCount(value: number, locale: string): string {
   if (value >= 1_000_000) {
     const millions = value / 1_000_000;
-    const digits = millions >= 10 ? 1 : millions >= 1 ? 1 : 2;
+    const digits = millions >= 10 ? 1 : 1;
     return millions.toLocaleString(locale, {
       minimumFractionDigits: digits,
       maximumFractionDigits: digits,
     });
   }
   return value.toLocaleString(locale);
+}
+
+export function formatPeopleCount(value: number, locale: string): string {
+  return value.toLocaleString(locale);
+}
+
+const lvMonthLocative: Record<string, string> = {
+  janvāris: 'janvārī',
+  februāris: 'februārī',
+  marts: 'martā',
+  aprīlis: 'aprīlī',
+  maijs: 'maijā',
+  jūnijs: 'jūnijā',
+  jūlijs: 'jūlijā',
+  augusts: 'augustā',
+  septembris: 'septembrī',
+  oktobris: 'oktobrī',
+  novembris: 'novembrī',
+  decembris: 'decembrī',
+};
+
+export function formatAsOf(iso: string, locale: string): string {
+  const [year, month, day] = iso.split('-').map(Number);
+  const formatted = new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(locale, {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+  if (locale !== 'lv') return formatted;
+  return formatted.replace(
+    /\b(janvāris|februāris|marts|aprīlis|maijs|jūnijs|jūlijs|augusts|septembris|oktobris|novembris|decembris)\b/,
+    (monthName) => lvMonthLocative[monthName] ?? monthName,
+  );
 }
