@@ -1,6 +1,6 @@
 ---
 import OceanAtlasCard from './OceanAtlasCard.astro';
-import type { OceanAtlasSlug } from '../data/ocean-atlas';
+import { oceanAtlasRelatedSlugs, type OceanAtlasSlug } from '../data/ocean-atlas';
 import { oceanFrameSrc, oceanPanelKeys, oceanPanelPath, type OceanPanel } from '../data/oceans';
 import { getMapsPage, getOceanAtlas, getOceansPage, localizePath, resolveLocale } from '../i18n';
 
@@ -12,7 +12,10 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const oceans = getOceansPage(locale);
 const maps = getMapsPage(locale);
-const atlas = getOceanAtlas(locale).filter((item) => item.slug !== Astro.props.currentAtlas);
+const relatedSlugs = new Set<string>(oceanAtlasRelatedSlugs);
+const atlas = getOceanAtlas(locale).filter(
+  (item) => relatedSlugs.has(item.slug) && item.slug !== Astro.props.currentAtlas,
+);
 const panels = oceanPanelKeys.filter((key) => key !== Astro.props.currentPanel);
 
 const panelPreview: Partial<Record<OceanPanel, string>> = {

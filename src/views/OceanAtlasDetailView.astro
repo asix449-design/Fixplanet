@@ -17,6 +17,7 @@ import {
   oceanAtlasSectionLabels,
   resolveLocale,
 } from '../i18n';
+import { oceanBlueSectionLabels } from '../i18n/ocean-blue';
 import { realMapCredit } from '../i18n/real-map-credits';
 
 interface Props {
@@ -30,16 +31,23 @@ const map = getOceanAtlasBySlug(locale, Astro.props.slug);
 if (!map) {
   throw new Error(`Unknown oceans atlas slug: ${Astro.props.slug}`);
 }
+const rich = Boolean(map.caption && map.credit && map.limits && map.what && map.why && map.howToRead);
+const headings = oceanBlueSectionLabels[locale];
 const preview = oceanAtlasPreviewSrc(map.preview);
 const credit = realMapCredit(locale, map.slug);
 const art = map.detail ? oceanAtlasPreviewSrc(map.detail) : preview;
-const artWidth = map.detail ? 7200 : 1600;
-const artHeight = map.detail ? 3600 : 800;
+const artWidth = map.detail ? 7200 : rich ? 1920 : 1600;
+const artHeight = map.detail ? 3600 : rich ? 1080 : 800;
 const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
+const pageTitle = rich
+  ? `${map.title}, ${oceans.title}, Fix Planet`
+  : `${map.title} — ${oceans.title} — Fix Planet`;
+const urlPattern = /(https?:\/\/[^\s)]+)/g;
+const creditParts = map.credit ? map.credit.split(urlPattern) : [];
 ---
 
 <BaseLayout
-  title={`${map.title} — ${oceans.title} — Fix Planet`}
+  title={pageTitle}
   description={map.blurb}
   image={preview}
   theme="oceans"
@@ -61,11 +69,24 @@ const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
   <section class="section section-hub-follow">
     <div class="wrap">
       <div class="wildlife-map-panel forests-panel oceans-panel">
-        <figure class="map-detail-art forest-map-art">
-          <img src={art} alt={map.blurb} width={artWidth} height={artHeight} />
+        <figure class:list={['map-detail-art', 'forest-map-art', { 'ocean-blue-figure': rich }]}>
+          <img src={art} alt={rich && map.caption ? map.caption : map.blurb} width={artWidth} height={artHeight} />
           <figcaption>
             {
-              credit ? (
+              rich ? (
+                <>
+                  <p>{map.caption}</p>
+                  <p>
+                    {creditParts.map((part) =>
+                      part.startsWith('http') ? (
+                        <a href={part} rel="noopener noreferrer">{part}</a>
+                      ) : (
+                        part
+                      ),
+                    )}
+                  </p>
+                </>
+              ) : credit ? (
                 credit
               ) : (
                 <>
@@ -78,7 +99,28 @@ const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
         </figure>
         <div class="prose map-detail-copy forest-frame-copy">
           {
-            map.what && map.why && map.howToRead ? (
+            rich ? (
+              <>
+                <h2>{headings.what}</h2>
+                <p>{map.what}</p>
+                <h2>{headings.why}</h2>
+                <p>{map.why}</p>
+                <h2>{headings.how}</h2>
+                <p>{map.howToRead}</p>
+                <h2>{headings.limits}</h2>
+                <p>{map.limits}</p>
+                <h2>{maps.sourcesList}</h2>
+                <ol class="law-source-list cited-source-list ocean-blue-sources">
+                  {map.sources.map((source) => (
+                    <li>
+                      {source.label}
+                      {': '}
+                      <a href={source.url} rel="noopener noreferrer">{source.url}</a>
+                    </li>
+                  ))}
+                </ol>
+              </>
+            ) : map.what && map.why && map.howToRead ? (
               <>
                 <h2>{oceanAtlasSectionLabels.what}</h2>
                 <p>{map.what}</p>
@@ -86,21 +128,29 @@ const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
                 <p>{map.why}</p>
                 <h2>{oceanAtlasSectionLabels.how}</h2>
                 <p>{map.howToRead}</p>
+                <CitedSourceList heading={maps.sourcesList} sources={map.sources} />
+                <p class="oceans-cta-row">
+                  <a class="btn btn-primary map-open-source" href={map.sourceUrl} rel="noopener noreferrer">
+                    {maps.openSource}
+                  </a>
+                </p>
               </>
             ) : (
-              <p>{map.detailShort}</p>
+              <>
+                <p>{map.detailShort}</p>
+                <CitedSourceList heading={maps.sourcesList} sources={map.sources} />
+                <p class="oceans-cta-row">
+                  <a class="btn btn-primary map-open-source" href={map.sourceUrl} rel="noopener noreferrer">
+                    {maps.openSource}
+                  </a>
+                </p>
+              </>
             )
           }
-          <CitedSourceList heading={maps.sourcesList} sources={map.sources} />
-          <p class="oceans-cta-row">
-            <a class="btn btn-primary map-open-source" href={map.sourceUrl} rel="noopener noreferrer">
-              {maps.openSource}
-            </a>
-          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <OceanRelated currentAtlas={map.slug} />
+  {rich ? null : <OceanRelated currentAtlas={map.slug} />}
 </BaseLayout>
