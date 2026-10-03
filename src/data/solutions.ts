@@ -84,6 +84,8 @@ export type Solution = SolutionMeta & SolutionCopy;
  * cards stay hub-only and keep their off-site source link.
  * Waste policy and stream articles live at `/solutions/waste/{slug}`.
  * The older Waste cards stay hub-only and keep their off-site source link.
+ * Materials encyclopedia articles live at `/solutions/materials/{slug}`.
+ * The older Materials cards stay hub-only and keep their off-site source link.
  * Oceans stays hub-only: cards link to the primary source. Do not add
  * `/solutions/oceans/{slug}` until every oceans slug has a detail page.
  */
@@ -876,6 +878,56 @@ export const solutionMeta: SolutionMeta[] = [
       cite(
         'USGS — Recycling statistics and information',
         'https://www.usgs.gov/centers/national-minerals-information-center/recycling-statistics-and-information',
+      ),
+    ],
+  },
+  {
+    slug: 'wood-fibre-insulation',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Intertek, factory-made wood fibre insulation standard',
+        'https://www.intertek.com/building/standards/en-13171/',
+      ),
+    ],
+  },
+  {
+    slug: 'cellulose-insulation',
+    tag: 'materials',
+    sources: [
+      cite(
+        'United States Environmental Protection Agency, Comprehensive Procurement Guidelines for Construction Products',
+        'https://www.epa.gov/smm/comprehensive-procurement-guidelines-construction-products',
+      ),
+    ],
+  },
+  {
+    slug: 'engineered-bamboo',
+    tag: 'materials',
+    sources: [
+      cite(
+        'International Bamboo and Rattan Organization, structural glued laminated bamboo',
+        'https://www.inbar.int/defining-the-future-of-structural-glued-laminated-bamboo/',
+      ),
+    ],
+  },
+  {
+    slug: 'recycled-gypsum',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Eurogypsum, Circularity',
+        'https://eurogypsum.org/circularity-2923/',
+      ),
+    ],
+  },
+  {
+    slug: 'structural-steel-reuse',
+    tag: 'materials',
+    sources: [
+      cite(
+        'Steel Construction Institute, structural steel reuse',
+        'https://steel-sci.com/reduce-and-progress.html',
       ),
     ],
   },

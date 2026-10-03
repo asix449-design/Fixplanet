@@ -18,6 +18,7 @@ export { getLatestSolutions, getSolutions } from './solutions';
 export { getWaterEncyclopediaBySlug, getWaterEncyclopediaPages } from './solutions-water';
 export { getCitiesEncyclopediaBySlug, getCitiesEncyclopediaPages } from './solutions-cities';
 export { getWasteEncyclopediaBySlug, getWasteEncyclopediaPages } from './solutions-waste';
+export { getMaterialsEncyclopediaBySlug, getMaterialsEncyclopediaPages } from './solutions-materials';
 export { getForestEncyclopediaBySlug, getForestEncyclopediaPages } from './solutions-forests';
 export {
   getWildlifeBySlug,
