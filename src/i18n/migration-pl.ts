@@ -251,7 +251,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'Na północ wiosną półkuli północnej, na południe po lęgach. U niektórych populacji przylot przyspieszył, gdy wiosny się ocieplają — fenologia, nie nowy szlak. Rekordowe kilometry to nazwane prace telemetryczne.',
     pressure:
-      'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. CAFF i BirdLife traktują migrantów arktycznych jako wspólny problem szlaków.',
+      'Klimat przesuwa krawędź lodu, daty odwilży i ofiary. Rekultywacja Morza Żółtego i innych przystanków zabiera stacje paliw. Polowania, niepokój i rybołówstwo dokładają lokalne straty. Grupa robocza Rady Arktycznej do ochrony arktycznej flory i fauny i międzynarodowa organizacja ochrony ptaków traktują migrantów arktycznych jako wspólny problem szlaków.',
     sourcesNote:
       'Egevang et al. 2010 o rybitwach; Gu et al. 2021 o złożeniu szlaków sokoła wędrownego po lodzie; Thorup et al. 2021 o pętli gąsiorka przez 120 000 lat; szlaki BirdLife; CAFF; CMS.',
   },
