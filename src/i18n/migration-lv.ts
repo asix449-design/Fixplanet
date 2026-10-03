@@ -251,7 +251,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'Uz ziemeļiem ziemeļu pavasarī, uz dienvidiem pēc ligzdošanas. Dažām populācijām ierašanās ir pārbīdījusies agrāk, kad pavasari silst, — fenoloģija, ne jauns lidojumu ceļš. Rekordu kilometri ir nosaukti izsekošanas raksti.',
     pressure:
-      'Klimats kustinā ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. Arktikas padomes darba grupa Arktikas floras un faunas saglabāšanai un Starptautiskā putnu aizsardzības organizācija Arktikas migrantus uzskata par kopīgu lidojumu ceļu uzdevumu.',
+      'Klimats kustina ledus malu, atkušņa datumus un medījumu. Dzeltenās jūras un citu pieturvietu nosusināšana noņem degvielas stacijas. Medības, traucējums un zveja pievieno vietējus zudumus. Arktikas padomes darba grupa Arktikas floras un faunas saglabāšanai un Starptautiskā putnu aizsardzības organizācija kopā aizsargā Arktikas migrantus to ceļā.',
     sourcesNote:
       'Egevang et al. 2010 par zīriņiem; Gu et al. 2021 par lielā piekūna ceļu salikšanu pēc ledus; Thorup et al. 2021 par čakstes cilpu 120 000 gadu; BirdLife; CAFF; CMS.',
   },

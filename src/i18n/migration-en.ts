@@ -426,7 +426,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'North in the northern spring, south after breeding. Arrival has shifted earlier in some populations as springs warm — phenology, not a new flyway. Treat headline kilometre records as named tracking papers.',
     pressure:
-      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife treat Arctic migrants as a shared flyway problem.',
+      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife together protect Arctic migrants along their routes.',
     sourcesNote:
       'Egevang et al. 2010 for terns; Gu et al. 2021 for peregrine flyway assembly after the ice; Thorup et al. 2021 for the red-backed shrike loop across 120,000 years; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS.',
   },
