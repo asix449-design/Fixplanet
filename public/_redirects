@@ -34,3 +34,11 @@
 /ru/migration/hunnic-invasion /ru/migration/humans 301
 /pl/migration/hunnic-invasion /pl/migration/humans 301
 /lv/migration/hunnic-invasion /lv/migration/humans 301
+/book / 301
+/book/ / 301
+/ru/book /ru/ 301
+/ru/book/ /ru/ 301
+/pl/book /pl/ 301
+/pl/book/ /pl/ 301
+/lv/book /lv/ 301
+/lv/book/ /lv/ 301

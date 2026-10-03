@@ -36,7 +36,6 @@ const en = {
     migration: 'Migration',
     forests: 'Forests',
     oceans: 'Oceans',
-    book: 'Book',
     about: 'About',
     donate: 'Donate',
   },
@@ -61,7 +60,6 @@ const en = {
       migration: 'Human dispersal, historic mass movements, bird flyways, and mammal migrations — with the drivers on each card.',
       forests: 'What a forest is, how the canopy is mapped, and sourced numbers.',
       oceans: 'Currents, salinity, temperature, and pollution — sourced maps of the living ocean.',
-      book: 'New World — what is broken, and what we can still fix.',
       about: 'The project and the curator behind Fix Planet.',
     },
   },
@@ -274,36 +272,14 @@ const en = {
     p1: 'Fix Planet collects how those systems work and which technologies, laws, and habits already change them. Each card points to a named source.',
     p2Before: 'We pair each problem with a technology or approach that already works — then point to proof. The project is curated by ',
     p2After: ', an investor and writer focused on green technology and a livable future.',
-    p3Before: 'The longer argument lives in the ',
-    p3Book: 'Book',
-    p3Mid: '. Day-to-day ideas also appear on X as ',
+    p3Before: 'Day-to-day ideas also appear on X as ',
     p3After: '.',
     curator: 'Curator',
     curatorBlurb: 'Investor and writer focused on green technology and a livable future.',
     follow: 'Follow {handle} →',
-    readBook: 'Read New World →',
     supportCta: 'Support Fix Planet →',
     supportNote:
       'Opens a Stripe checkout in a new tab. Support for the atlas — not a tax-deductible charity donation.',
-  },
-  book: {
-    metaTitle: 'New World — Fix Planet',
-    metaDescription:
-      'New World by Aigars Abramovics: a clear look at what’s broken on our planet — and what we can still fix.',
-    eyebrow: 'The book',
-    title: 'New World',
-    by: 'By Aigars Abramovics',
-    coverAlt:
-      'Front cover of New World: Earth in flames under the title NEW WORLD and the H.G. Wells quote Our true nationality is mankind',
-    lead: 'A clear look at what’s broken on our planet — and what we can still fix: technologies, laws, and the choices that scale.',
-    status: 'Status: Available',
-    inside: 'Inside',
-    bullets: [
-      'Pressures on water, forests, climate, and wildlife',
-      'Technologies already in use, not slogans',
-      'Ideas for rules and habits that protect nature',
-    ],
-    buy: 'Buy on Amazon →',
   },
   stubs: {
     maps: {
@@ -341,13 +317,12 @@ const en = {
     status:
       'The button opens a Stripe checkout in a new tab. This is support for Fix Planet, not a tax-deductible charitable donation.',
     cta: 'Support Fix Planet',
-    thanks: 'Thank you. Sharing the atlas and the book also helps.',
+    thanks: 'Thank you. Sharing the atlas also helps.',
   },
   footer: {
     blurb:
       'An atlas of the living planet, and of technologies and rules that can still repair it.',
     explore: 'Explore',
-    theBook: 'The book',
     comingSoon: 'Coming soon',
   },
   notFound: {
@@ -385,7 +360,6 @@ const ru: typeof en = {
     migration: 'Миграция',
     forests: 'Леса',
     oceans: 'Океаны',
-    book: 'Книга',
     about: 'О проекте',
     donate: 'Поддержать',
   },
@@ -410,7 +384,6 @@ const ru: typeof en = {
       migration: 'Расселение человека, исторические массовые движения, пролётные пути птиц и миграции млекопитающих — с факторами на каждой карточке.',
       forests: 'Что такое лес, как видят крону спутники, цифры с источниками.',
       oceans: 'Течения, солёность, температура и загрязнение — карты живого океана с источниками.',
-      book: 'New World — что сломано и что мы ещё можем исправить.',
       about: 'Проект и куратор Fix Planet.',
     },
   },
@@ -625,37 +598,15 @@ const ru: typeof en = {
       'Каждую проблему мы связываем с технологией или подходом, которые уже работают, — и указываем на доказательства. Проект ведёт ',
     p2After:
       ', инвестор и автор, который занимается зелёными технологиями и будущим, в котором можно жить.',
-    p3Before: 'Развёрнутый аргумент — в разделе ',
-    p3Book: 'Книга',
-    p3Mid: '. Повседневные идеи также появляются в X как ',
+    p3Before: 'Повседневные идеи также появляются в X как ',
     p3After: '.',
     curator: 'Куратор',
     curatorBlurb:
       'Инвестор и автор, который занимается зелёными технологиями и будущим, в котором можно жить.',
     follow: 'Подписаться на {handle} →',
-    readBook: 'Читать New World →',
     supportCta: 'Поддержать Fix Planet →',
     supportNote:
       'Открывает оплату Stripe в новой вкладке. Поддержка атласа — не благотворительный взнос с налоговым вычетом.',
-  },
-  book: {
-    metaTitle: 'New World — Fix Planet',
-    metaDescription:
-      'New World Aigars Abramovics: ясный взгляд на то, что сломано на нашей планете, — и что мы ещё можем исправить.',
-    eyebrow: 'Книга',
-    title: 'New World',
-    by: 'Автор: Aigars Abramovics',
-    coverAlt:
-      'Обложка New World: Земля в огне под названием NEW WORLD и цитатой Г. Дж. Уэллса Our true nationality is mankind',
-    lead: 'Ясный взгляд на то, что сломано на нашей планете, — и что мы ещё можем исправить: технологии, законы и решения, которые масштабируются.',
-    status: 'Статус: в продаже',
-    inside: 'Содержание',
-    bullets: [
-      'Давление на воду, леса, климат и дикую природу',
-      'Технологии, которые уже используют, а не лозунги',
-      'Идеи правил и привычек, которые защищают природу',
-    ],
-    buy: 'Купить на Amazon →',
   },
   stubs: {
     maps: {
@@ -693,13 +644,12 @@ const ru: typeof en = {
     status:
       'Кнопка открывает оплату Stripe в новой вкладке. Это поддержка Fix Planet, не благотворительный взнос с налоговым вычетом.',
     cta: 'Поддержать Fix Planet',
-    thanks: 'Спасибо. Помогает и то, что вы делитесь атласом и книгой.',
+    thanks: 'Спасибо. Помогает и то, что вы делитесь атласом.',
   },
   footer: {
     blurb:
       'Атлас живой планеты и технологий и правил, которые ещё могут её чинить.',
     explore: 'Разделы',
-    theBook: 'Книга',
     comingSoon: 'Скоро',
   },
   notFound: {
@@ -737,7 +687,6 @@ const pl: typeof en = {
     migration: 'Migracja',
     forests: 'Lasy',
     oceans: 'Oceany',
-    book: 'Książka',
     about: 'O projekcie',
     donate: 'Wesprzyj',
   },
@@ -762,7 +711,6 @@ const pl: typeof en = {
       migration: 'Rozprzestrzenianie ludzi, historyczne ruchy masowe, szlaki ptaków i migracje ssaków — z czynnikami na każdej karcie.',
       forests: 'Czym jest las, jak satelita widzi korony, liczby ze źródłami.',
       oceans: 'Prądy, zasolenie, temperatura i zanieczyszczenie — mapy żywego oceanu ze źródłami.',
-      book: 'New World — co jest zepsute i co wciąż możemy naprawić.',
       about: 'Projekt i kurator Fix Planet.',
     },
   },
@@ -977,37 +925,15 @@ const pl: typeof en = {
       'Każdy problem łączymy z technologią lub podejściem, które już działa — i wskazujemy dowody. Projekt prowadzi ',
     p2After:
       ', inwestor i autor skupiony na zielonych technologiach i przyszłości, w której da się żyć.',
-    p3Before: 'Szerszy argument jest w ',
-    p3Book: 'Książce',
-    p3Mid: '. Codzienne idee pojawiają się też na X jako ',
+    p3Before: 'Codzienne idee pojawiają się też na X jako ',
     p3After: '.',
     curator: 'Kurator',
     curatorBlurb:
       'Inwestor i autor skupiony na zielonych technologiach i przyszłości, w której da się żyć.',
     follow: 'Obserwuj {handle} →',
-    readBook: 'Czytaj New World →',
     supportCta: 'Wesprzyj Fix Planet →',
     supportNote:
       'Otwiera kasę Stripe w nowej karcie. Wsparcie atlasu — nie darowizna charytatywna z odliczeniem podatkowym.',
-  },
-  book: {
-    metaTitle: 'New World — Fix Planet',
-    metaDescription:
-      'New World Aigarsa Abramovicsa: jasne spojrzenie na to, co na naszej planecie jest zepsute — i co wciąż możemy naprawić.',
-    eyebrow: 'Książka',
-    title: 'New World',
-    by: 'Autor: Aigars Abramovics',
-    coverAlt:
-      'Okładka New World: Ziemia w płomieniach pod tytułem NEW WORLD i cytatem H.G. Wellsa Our true nationality is mankind',
-    lead: 'Jasne spojrzenie na to, co na naszej planecie jest zepsute — i co wciąż możemy naprawić: technologie, prawo i wybory, które da się skalować.',
-    status: 'Status: dostępna',
-    inside: 'W środku',
-    bullets: [
-      'Presja na wodę, lasy, klimat i przyrodę',
-      'Technologie już w użyciu, nie hasła',
-      'Idee reguł i nawyków, które chronią naturę',
-    ],
-    buy: 'Kup na Amazon →',
   },
   stubs: {
     maps: {
@@ -1045,13 +971,12 @@ const pl: typeof en = {
     status:
       'Przycisk otwiera kasę Stripe w nowej karcie. To wsparcie Fix Planet, nie darowizna charytatywna z odliczeniem podatkowym.',
     cta: 'Wesprzyj Fix Planet',
-    thanks: 'Dziękujemy. Udostępnianie atlasu i książki też pomaga.',
+    thanks: 'Dziękujemy. Udostępnianie atlasu też pomaga.',
   },
   footer: {
     blurb:
       'Atlas żywej planety oraz technologii i reguł, które jeszcze mogą ją naprawić.',
     explore: 'Przeglądaj',
-    theBook: 'Książka',
     comingSoon: 'Wkrótce',
   },
   notFound: {
@@ -1089,7 +1014,6 @@ const lv: typeof en = {
     migration: 'Migrācija',
     forests: 'Meži',
     oceans: 'Okeāni',
-    book: 'Grāmata',
     about: 'Par projektu',
     donate: 'Atbalstīt',
   },
@@ -1114,7 +1038,6 @@ const lv: typeof en = {
       migration: 'Cilvēku izplatība, vēsturiskas masu kustības, putnu lidojumu ceļi un zīdītāju migrācijas — ar dzinējspēkiem katrā kartītē.',
       forests: 'Kas ir mežs, kā satelīts redz vainagu, skaitļi ar avotiem.',
       oceans: 'Straumes, sāļums, temperatūra un piesārņojums — dzīvā okeāna kartes ar avotiem.',
-      book: 'New World — kas ir salūzis un ko vēl varam salabot.',
       about: 'Projekts un Fix Planet kurators.',
     },
   },
@@ -1329,37 +1252,15 @@ const lv: typeof en = {
       'Katrai problēmai mēs pievienojam tehnoloģiju vai pieeju, kas jau darbojas, — un norādām uz pierādījumiem. Projektu vada ',
     p2After:
       ', investors un autors, kura uzmanības centrā ir zaļās tehnoloģijas un nākotne, kurā var dzīvot.',
-    p3Before: 'Plašākais arguments ir ',
-    p3Book: 'Grāmatā',
-    p3Mid: '. Ikdienas idejas parādās arī X kā ',
+    p3Before: 'Ikdienas idejas parādās arī X kā ',
     p3After: '.',
     curator: 'Kurators',
     curatorBlurb:
       'Investors un autors, kura uzmanības centrā ir zaļās tehnoloģijas un nākotne, kurā var dzīvot.',
     follow: 'Sekot {handle} →',
-    readBook: 'Lasīt New World →',
     supportCta: 'Atbalstīt Fix Planet →',
     supportNote:
       'Atver Stripe kasi jaunā cilnē. Atbalsts atlantam — ne labdarības ziedojums ar nodokļu atvieglojumu.',
-  },
-  book: {
-    metaTitle: 'New World — Fix Planet',
-    metaDescription:
-      'New World, Aigars Abramovics: skaidrs skats uz to, kas uz mūsu planētas ir salūzis, — un ko mēs vēl varam salabot.',
-    eyebrow: 'Grāmata',
-    title: 'New World',
-    by: 'Autors: Aigars Abramovics',
-    coverAlt:
-      'New World vāks: Zeme liesmās zem nosaukuma NEW WORLD un H. G. Velsa citāta Our true nationality is mankind',
-    lead: 'Skaidrs skats uz to, kas uz mūsu planētas ir salūzis, — un ko mēs vēl varam salabot: tehnoloģijas, likumi un izvēles, kas mērogojas.',
-    status: 'Statuss: pieejama',
-    inside: 'Iekšā',
-    bullets: [
-      'Spiediens uz ūdeni, mežiem, klimatu un savvaļas dabu',
-      'Tehnoloģijas, ko jau lieto, ne saukļi',
-      'Idejas noteikumiem un ieradumiem, kas sargā dabu',
-    ],
-    buy: 'Pirkt Amazon →',
   },
   stubs: {
     maps: {
@@ -1397,13 +1298,12 @@ const lv: typeof en = {
     status:
       'Poga atver Stripe kasi jaunā cilnē. Tas ir atbalsts Fix Planet, ne labdarības ziedojums ar nodokļu atvieglojumu.',
     cta: 'Atbalstīt Fix Planet',
-    thanks: 'Paldies. Palīdz arī dalīšanās ar atlantu un grāmatu.',
+    thanks: 'Paldies. Palīdz arī dalīšanās ar atlantu.',
   },
   footer: {
     blurb:
       'Dzīvās planētas atlants un tehnoloģijas un noteikumi, kas to vēl var labot.',
     explore: 'Sadaļas',
-    theBook: 'Grāmata',
     comingSoon: 'Drīzumā',
   },
   notFound: {
