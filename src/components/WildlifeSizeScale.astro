@@ -9,6 +9,29 @@ const first = scale.animals[0];
 const configJson = JSON.stringify(scale.clientAnimals).replace(/</g, '\\u003c');
 const initialPosition = scale.positionPattern.replaceAll('{n}', '1');
 const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${first.heightText}. ${first.lengthLabel} ${first.lengthText}. ${first.caption}`;
+
+const licenceTokens = [
+  'CC BY-SA 4.0',
+  'CC BY-SA 2.0',
+  'CC BY 3.0',
+  'public domain',
+  'общественное достояние',
+  'domena publiczna',
+  'publiskais īpašums',
+];
+
+function splitCredit(text: string, href: string): { before: string; token: string; after: string } {
+  if (!href) return { before: text, token: '', after: '' };
+  for (const token of licenceTokens) {
+    const at = text.lastIndexOf(token);
+    if (at >= 0) {
+      return { before: text.slice(0, at), token, after: text.slice(at + token.length) };
+    }
+  }
+  return { before: text, token: '', after: '' };
+}
+
+const firstCredit = splitCredit(first.credit, first.licenceHref);
 ---
 
 <section
@@ -46,7 +69,10 @@ const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${f
               {
                 scale.animals.map((animal, index) => (
                   <a
-                    class:list={['size-scale-animal', { 'is-front': index === 0 }]}
+                    class:list={[
+                      'size-scale-animal',
+                      { 'is-front': index === 0, 'has-photo': Boolean(animal.photo) },
+                    ]}
                     href={animal.href}
                     data-animal
                     data-slug={animal.slug}
@@ -54,6 +80,21 @@ const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${f
                     draggable="false"
                   >
                     <Fragment set:html={animal.svg} />
+                    {
+                      animal.photo ? (
+                        <picture class="size-scale-photo size-scale-drawn" data-photo>
+                          <source srcset={animal.photo.webp} type="image/webp" />
+                          <img
+                            src={animal.photo.png}
+                            alt=""
+                            width={animal.photo.vbW}
+                            height={animal.photo.vbH}
+                            loading={index === 0 ? 'eager' : 'lazy'}
+                            decoding="async"
+                          />
+                        </picture>
+                      ) : null
+                    }
                   </a>
                 ))
               }
@@ -84,7 +125,17 @@ const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${f
           </div>
         </dl>
         <p class="size-scale-caption" data-caption>{first.caption}</p>
-        <p class="size-scale-credit" data-credit>{first.credit}</p>
+        <p class="size-scale-credit" data-credit>
+          {
+            firstCredit.token ? (
+              <>
+                {firstCredit.before}<a href={first.licenceHref} rel="noopener noreferrer">{firstCredit.token}</a>{firstCredit.after}
+              </>
+            ) : (
+              first.credit
+            )
+          }
+        </p>
         <p class="size-scale-open">
           <a data-open href={first.href}>{scale.openPage}</a>
         </p>

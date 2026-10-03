@@ -1,5 +1,8 @@
 import type { SpeciesCopy } from '../data/wildlife';
+import { cite } from '../data/sources';
 import { domesticatesLv } from './wildlife-domesticates';
+
+const censusPdf = 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf';
 
 export const packLv: Record<string, SpeciesCopy> = {
   'european-bison': {
@@ -457,6 +460,41 @@ export const packLv: Record<string, SpeciesCopy> = {
           'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Starptautiskais kamieļu gads, 2024 (International Year of Camelids 2024)',
         url: 'https://www.fao.org/camelids-2024/en',
       },
+    ],
+  },
+  'iberian-lynx': {
+    commonName: 'Ibērijas lūsis',
+    hook: '2002. gadā palika tikai 94 Ibērijas lūši, un tas bija visvairāk apdraudētais kaķis uz Zemes. 2025. gada skaitīšanā Spānijā un Portugālē saskaitīja 2663 lūšus.',
+    imageAlt: 'Ibērijas lūsis profilā: pušķi uz ausīm, spalvu apkakle gar vaigiem un īsa aste ar melnu galu',
+    caption: 'Fix Planet ilustrācija',
+    gridSource: cite('Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija: Ibērijas lūša skaitīšana, Spānija un Portugāle, 2025, dokuments (Censo de lince ibérico, España y Portugal, 2025)', censusPdf),
+    what:
+      'Ibērijas lūsis (Lynx pardinus) ir vidēja izmēra savvaļas kaķis ar plankumainu iedzeltenu kažoku, pušķiem uz ausīm, spalvu apkakli gar vaigiem un īsu asti ar melnu galu. Pieaugušam dzīvniekam skausta augstums ir apmēram 0,5 m, garums no deguna līdz astes galam apmēram 0,9 m un svars aptuveni no 6 līdz 16 kg. Tas dzīvo tikai Ibērijas pussalā un ir atkarīgs no savvaļas truša, sava galvenā medījuma.',
+    range:
+      '2025. gadā lūši dzīvoja 26 atsevišķās vietās Spānijā un Portugālē, un 18 no tām konstatēta vairošanās. Spānijā saskaitīja 2269 lūšus, Portugālē 394. Pašā Spānijā Kastīlijā-Lamančā dzīvoja 1051, Andalūzijā 885 un Estremadūrā 302, mazāk Mursijā, Kastīlijā un Leonā un Madridē. Galvenais sugas patvērums ir Sierra Morena kalni, kur saskaitīja 1145. Pēc Andalūzijas valdības datiem lūšu skaits Andalūzijā pieauga no 457 lūšiem 2019. gadā līdz 885 lūšiem 2025. gadā. Teritorija, kurā lūsis sastopams, ir palielinājusies no 449 kvadrātkilometriem 2005. gadā līdz vismaz 3320 kvadrātkilometriem 2022. gadā.',
+    story:
+      'Divdesmitajā gadsimtā Ibērijas lūša skaits kritās četru iemeslu dēļ: tika iznīcināts Vidusjūras mežs, divas jaunas vīrusu slimības strauji samazināja savvaļas trušu skaitu, cilvēki vajāja lūsi kā kaitēkli, un daudzi dzīvnieki gāja bojā uz ceļiem vai noslīka akās. Līdz 2002. gadam saglabājās tikai divas grupas, viena Doñanas apkaimē un otra Sierra Morena kalnos, kopā 94 lūši. Tolaik sugu atzina par visvairāk apdraudēto kaķi uz Zemes, un Starptautiskā dabas aizsardzības savienība tai piešķīra kategoriju „kritiski apdraudēts”. Spānija, Portugāle un Eiropas Savienība sāka ilgu glābšanas darbu. Zemes īpašnieki piekrita saimniekot tā, lai trušu kļūtu vairāk, audzēšanas centros Spānijā un Portugālē audzēja lūšus, un kopš 2010. gada vairāk nekā 400 dzīvnieku izlaida vietās, kur suga bija izzudusi. Portugāle savu izlaišanu sāka 2014. gadā. Lūšu skaits 2020. gadā pārsniedza 1000, bet 2023. gadā 2000.',
+    when:
+      '2024. gada jūnijā Starptautiskā dabas aizsardzības savienība pārcēla Ibērijas lūsi no kategorijas „apdraudēts” uz kategoriju „ievainojams”. Agrāk suga bija kategorijā „kritiski apdraudēts” no 2002. līdz 2008. gadam un kategorijā „apdraudēts” 2015. gadā. Skaitīšana, ko 2026. gada jūnijā publicēja Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija, 2025. gadā saskaitīja 2663 lūšus, bet 2024. gadā to bija 2401 un 2021. gadā 1365. Starp tiem 1711 bija pieauguši un gandrīz pieauguši dzīvnieki un 952 mazuļi, bet 542 mātītes vairojās vai turēja savas teritorijas. Ministrija šos skaitļus uzskata par minimāliem.',
+    humanRole:
+      'Cilvēki vispirms noveda lūsi līdz izzušanas robežai, bet pēc tam palīdzēja tam atgūties. Līgumi ar zemes īpašniekiem uzlaboja dzīvotni un palielināja trušu skaitu, lūšus audzēja centros Spānijā un Portugālē un izlaida jaunās teritorijās, bet gar ceļiem uzbūvēja pazemes ejas un žogus. Ceļi joprojām ir lielākās briesmas: 2025. gadā 212 no 273 reģistrētajiem lūšu nāves gadījumiem notika uz ceļiem. Starp citiem apdraudējumiem Starptautiskā dabas aizsardzības savienība min jaunus trušu vīrusu slimību uzliesmojumus, slimības no mājas kaķiem, malumedniecību un klimata izraisītas dzīvotnes pārmaiņas.',
+    sources: '',
+    sourcesList: [
+      cite('Starptautiskās dabas aizsardzības savienības Sarkanais saraksts: Ibērijas lūsis (IUCN Red List of Threatened Species: Lynx pardinus, Rodríguez 2024)', 'https://www.iucnredlist.org/species/12520/218695618'),
+      cite('Starptautiskā dabas aizsardzības savienība: Ibērijas lūsis atgūstas, pateicoties dabas aizsardzībai, preses relīze 2024. gada 20. jūnijā (Iberian lynx rebounding thanks to conservation action)', 'https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list'),
+      cite('Starptautiskās dabas aizsardzības savienības Sugu izdzīvošanas komisijas Kaķu speciālistu grupa: Ziņas par kaķiem, 17. speciālais izdevums, Ibērijas lūsis, ikoniskas sugas glābšana, 2024 (Cat News Special Issue 17, The Iberian lynx, rescue of an iconic species)', 'https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf'),
+      cite('Starptautiskās dabas aizsardzības savienības Sugu izdzīvošanas komisijas Kaķu speciālistu grupa: dzīvās sugas, Ibērijas lūsis (Living Species, Iberian lynx)', 'https://www.catsg.org/living-species-iberianlynx'),
+      cite('Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija: Ibērijas lūša skaitīšana, Spānija un Portugāle, 2025, dokuments (Censo de lince ibérico, España y Portugal, 2025)', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf'),
+      cite('Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija caur Bioloģiskās daudzveidības fondu: Ibērijas lūšu skaits sasniedza 2663 īpatņus 2025. gadā, preses relīze 2026. gada 5. jūnijā (The Iberian lynx population reached 2,663 specimens in 2025)', 'https://fundacion-biodiversidad.es/en/notas_de_prensa_mite/the-iberian-lynx-population-reached-2663-specimens-in-2025/'),
+      cite('Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija: Spānijas sauszemes sugu uzskaite, Ibērijas lūsis, sugas lapa, dokuments (Inventario Español de Especies Terrestres, Lynx pardinus)', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf'),
+      cite('Eiropas Savienības dabas aizsardzības projekts: ziņojums plašai sabiedrībai, 2018, dokuments (LIFE Iberlince, Layman report 2018)', 'https://www.iberlince.eu/files/images/docs/layman_eng.pdf'),
+      cite('Eiropas Savienības dabas aizsardzības projekts: vēsture (LIFE Iberlince, History)', 'https://www.iberlince.eu/index_php/eng/project'),
+      cite('Eiropas Savienības dabas aizsardzības projekts: Ibērijas lūsis, ekoloģija (LIFE Iberlince, Iberian lynx, Ecology)', 'https://www.iberlince.eu/index_php/eng/lynx/ecology'),
+      cite('Eiropas Klimata, infrastruktūras un vides izpildaģentūra: Kaķa atgriešanās, Ibērijas lūšu skaits 20 gados pieaudzis desmitkārt, 2021. gada 20. jūlijs (The comeback cat: Iberian lynx numbers up tenfold in 20 years)', 'https://cinea.ec.europa.eu/news-events/news/comeback-cat-iberian-lynx-numbers-tenfold-20-years-2021-07-20_en'),
+      cite('Eiropas Komisijas dabas un klimata programmas datubāze: projekts Ibērijas lūša saglabāšanai un atgriešanai Andalūzijā (LIFE06 NAT/E/000209, Conservation and reintroduction of the Iberian lynx in Andalucia)', 'https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE06-NAT-E-000209/conservation-and-reintroduction-of-the-iberian-lynx-in-andalucia'),
+      cite('Andalūzijas valdība (Junta de Andalucía): Andalūzijas Sierra Morena joprojām ir galvenais Ibērijas lūša kodols pussalā, 2026. gada 3. septembris (La Sierra Morena andaluza se mantiene como el principal núcleo de lince ibérico de la Península)', 'https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/la-sierra-morena-andaluza-se-mantiene-como-el-principal-n%C3%BAcleo-de-lince-ib%C3%A9rico-de-la-pen%C3%ADnsula/20151'),
+      cite('Portugāles Dabas un mežu aizsardzības institūts (ICNF): Ibērijas lūsis, jaunumi (Lince-ibérico, Novidades)', 'https://areasprotegidas.icnf.pt/lince/index.php/noticias/novidades'),
+      cite('Mičiganas Universitātes Zooloģijas muzejs, tīmekļa rokasgrāmata par dzīvnieku daudzveidību: Ibērijas lūsis (Lynx pardinus, Spanish lynx)', 'https://animaldiversity.org/accounts/Lynx_pardinus/'),
     ],
   },
   ...domesticatesLv,

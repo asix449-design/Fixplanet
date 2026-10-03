@@ -1,0 +1,95 @@
+{
+  "images": {
+    "bald-eagle": {
+      "png": "/images/wildlife/size-scale/bald-eagle.png",
+      "webp": "/images/wildlife/size-scale/bald-eagle.webp",
+      "pxW": 589,
+      "pxH": 889,
+      "credits": {
+        "en": "Photo: GlacierNPS, public domain",
+        "ru": "Фото: Служба национальных парков США (GlacierNPS), общественное достояние",
+        "pl": "Zdjęcie: GlacierNPS, domena publiczna",
+        "lv": "Foto: GlacierNPS, publiskais īpašums"
+      },
+      "licenceHref": "https://commons.wikimedia.org/wiki/Template:PD-USGov-NPS"
+    },
+    "iberian-lynx": {
+      "png": "/images/wildlife/size-scale/iberian-lynx.png",
+      "webp": "/images/wildlife/size-scale/iberian-lynx.webp",
+      "pxW": 799,
+      "pxH": 613,
+      "credits": {
+        "en": "Fix Planet illustration",
+        "ru": "Иллюстрация Fix Planet",
+        "pl": "Ilustracja Fix Planet",
+        "lv": "Fix Planet ilustrācija"
+      },
+      "licenceHref": ""
+    },
+    "north-american-beaver": {
+      "png": "/images/wildlife/size-scale/north-american-beaver.png",
+      "webp": "/images/wildlife/size-scale/north-american-beaver.webp",
+      "pxW": 1001,
+      "pxH": 413,
+      "credits": {
+        "en": "Fix Planet illustration",
+        "ru": "Иллюстрация Fix Planet",
+        "pl": "Ilustracja Fix Planet",
+        "lv": "Fix Planet ilustrācija"
+      },
+      "licenceHref": ""
+    },
+    "wild-boar": {
+      "png": "/images/wildlife/size-scale/wild-boar.png",
+      "webp": "/images/wildlife/size-scale/wild-boar.webp",
+      "pxW": 909,
+      "pxH": 508,
+      "credits": {
+        "en": "Fix Planet illustration",
+        "ru": "Иллюстрация Fix Planet",
+        "pl": "Ilustracja Fix Planet",
+        "lv": "Fix Planet ilustrācija"
+      },
+      "licenceHref": ""
+    },
+    "gray-wolf": {
+      "png": "/images/wildlife/size-scale/gray-wolf.png",
+      "webp": "/images/wildlife/size-scale/gray-wolf.webp",
+      "pxW": 1594,
+      "pxH": 906,
+      "credits": {
+        "en": "Photo: Joyki, CC BY 3.0",
+        "ru": "Фото: Джойки (Joyki), лицензия «Атрибуция» 3.0 (CC BY 3.0)",
+        "pl": "Zdjęcie: Joyki, licencja Uznanie autorstwa 3.0 (CC BY 3.0)",
+        "lv": "Foto: Joyki, licence «Ar autora norādi» 3.0 (CC BY 3.0)"
+      },
+      "licenceHref": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "arabian-oryx": {
+      "png": "/images/wildlife/size-scale/arabian-oryx.png",
+      "webp": "/images/wildlife/size-scale/arabian-oryx.webp",
+      "pxW": 1158,
+      "pxH": 891,
+      "credits": {
+        "en": "Photo: Zoozkyn, CC BY-SA 4.0",
+        "ru": "Фото: Зоозкин (Zoozkyn), лицензия «Атрибуция, на тех же условиях» 4.0 (CC BY-SA 4.0)",
+        "pl": "Zdjęcie: Zoozkyn, licencja Uznanie autorstwa na tych samych warunkach 4.0 (CC BY-SA 4.0)",
+        "lv": "Foto: Zoozkyn, licence «Ar autora norādi, tādos pašos noteikumos» 4.0 (CC BY-SA 4.0)"
+      },
+      "licenceHref": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "red-deer": {
+      "png": "/images/wildlife/size-scale/red-deer.png",
+      "webp": "/images/wildlife/size-scale/red-deer.webp",
+      "pxW": 1028,
+      "pxH": 833,
+      "credits": {
+        "en": "Photo: Gareth James, CC BY-SA 2.0",
+        "ru": "Фото: Гарет Джеймс (Gareth James), лицензия «Атрибуция, на тех же условиях» 2.0 (CC BY-SA 2.0)",
+        "pl": "Zdjęcie: Gareth James, licencja Uznanie autorstwa na tych samych warunkach 2.0 (CC BY-SA 2.0)",
+        "lv": "Foto: Gareth James, licence «Ar autora norādi, tādos pašos noteikumos» 2.0 (CC BY-SA 2.0)"
+      },
+      "licenceHref": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  }
+}

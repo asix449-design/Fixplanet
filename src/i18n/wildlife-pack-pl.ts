@@ -1,5 +1,8 @@
 import type { SpeciesCopy } from '../data/wildlife';
+import { cite } from '../data/sources';
 import { domesticatesPl } from './wildlife-domesticates';
+
+const censusPdf = 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf';
 
 export const packPl: Record<string, SpeciesCopy> = {
   'european-bison': {
@@ -457,6 +460,41 @@ export const packPl: Record<string, SpeciesCopy> = {
           'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Międzynarodowy Rok Wielbłądowatych, 2024 (International Year of Camelids 2024)',
         url: 'https://www.fao.org/camelids-2024/en',
       },
+    ],
+  },
+  'iberian-lynx': {
+    commonName: 'Ryś iberyjski',
+    hook: 'W 2002 roku zostały tylko 94 rysie iberyjskie, co czyniło je najbardziej zagrożonym kotem na Ziemi. Spis z 2025 roku naliczył 2663 rysie w Hiszpanii i Portugalii.',
+    imageAlt: 'Ryś iberyjski z profilu: pędzelki na uszach, kołnierz sierści na policzkach i krótki ogon z czarnym końcem',
+    caption: 'Ilustracja Fix Planet',
+    gridSource: cite('Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego: spis rysia iberyjskiego, Hiszpania i Portugalia, 2025, dokument (Censo de lince ibérico, España y Portugal, 2025)', censusPdf),
+    what:
+      'Ryś iberyjski (Lynx pardinus) jest średniej wielkości dzikim kotem o cętkowanym, rdzawożółtym futrze, pędzelkach na uszach, kołnierzu sierści wzdłuż policzków i krótkim ogonie z czarnym końcem. Dorosłe zwierzę ma w kłębie około 0,5 m, od nosa do końca ogona około 0,9 m i waży mniej więcej od 6 do 16 kg. Żyje tylko na Półwyspie Iberyjskim i zależy od dzikiego królika, swojej głównej zdobyczy.',
+    range:
+      'W 2025 roku rysie żyły w 26 oddzielnych obszarach Hiszpanii i Portugalii, a w 18 z nich stwierdzono rozmnażanie. W Hiszpanii naliczono 2269 rysi, w Portugalii 394. W samej Hiszpanii w Kastylii-La Manchy żyło 1051, w Andaluzji 885 i w Estremadurze 302, mniej w Murcji, Kastylii i León oraz Madrycie. Główną ostoją gatunku są góry Sierra Morena, gdzie naliczono 1145. Według rządu Andaluzji liczba rysi w Andaluzji wzrosła z 457 w 2019 roku do 885 w 2025 roku. Obszar, na którym występuje ryś, powiększył się z 449 kilometrów kwadratowych w 2005 roku do co najmniej 3320 w 2022 roku.',
+    story:
+      'W dwudziestym wieku liczba rysi iberyjskich spadała z czterech powodów: niszczono śródziemnomorski las, dwie nowe choroby wirusowe gwałtownie zmniejszyły liczbę dzikich królików, ludzie prześladowali rysia jako szkodnika, a wiele zwierząt ginęło na drogach lub topiło się w studniach. W 2002 roku przetrwały tylko dwie grupy, jedna w okolicy Doñany i jedna w górach Sierra Morena, razem 94 rysie. Uznano wtedy gatunek za najbardziej zagrożonego kota na Ziemi, a Międzynarodowa Unia Ochrony Przyrody nadała mu kategorię krytycznie zagrożonego. Hiszpania, Portugalia i Unia Europejska rozpoczęły długą akcję ratunkową. Właściciele ziemscy zgodzili się gospodarować tak, by przybywało królików, ośrodki hodowlane w Hiszpanii i Portugalii odchowywały rysie, a od 2010 roku ponad 400 zwierząt wypuszczono tam, gdzie gatunek zniknął. Portugalia zaczęła własne wypuszczenia w 2014 roku. Liczba rysi przekroczyła 1000 w 2020 roku i 2000 w 2023 roku.',
+    when:
+      'W czerwcu 2024 roku Międzynarodowa Unia Ochrony Przyrody przeniosła rysia iberyjskiego z kategorii zagrożonego do kategorii narażonego. Wcześniej gatunek miał kategorię krytycznie zagrożonego od 2002 do 2008 roku i zagrożonego w 2015 roku. Spis opublikowany w czerwcu 2026 roku przez hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego naliczył w 2025 roku 2663 rysie, wobec 2401 w 2024 roku i 1365 w 2021 roku. Wśród nich 1711 było dorosłych i prawie dorosłych, a 952 młode, przy czym 542 samice rozmnażały się lub miały własne terytoria. Ministerstwo uważa te liczby za minimum.',
+    humanRole:
+      'Ludzie najpierw doprowadzili rysia na skraj wymarcia, a potem pomogli mu wrócić. Umowy z właścicielami ziemi poprawiły środowisko i zwiększyły liczbę królików, rysie hodowano w ośrodkach w Hiszpanii i Portugalii i wypuszczano na nowych terenach, a wzdłuż dróg zbudowano przejścia pod jezdnią i ogrodzenia. Drogi pozostają największym zagrożeniem: w 2025 roku 212 z 273 odnotowanych śmierci rysi nastąpiło na drogach. Do innych zagrożeń Międzynarodowa Unia Ochrony Przyrody zalicza nowe wybuchy chorób wirusowych królików, choroby przenoszone przez koty domowe, kłusownictwo i związane z klimatem zmiany środowiska.',
+    sources: '',
+    sourcesList: [
+      cite('Czerwona lista gatunków zagrożonych Międzynarodowej Unii Ochrony Przyrody: ryś iberyjski (IUCN Red List of Threatened Species: Lynx pardinus, Rodríguez 2024)', 'https://www.iucnredlist.org/species/12520/218695618'),
+      cite('Międzynarodowa Unia Ochrony Przyrody: Ryś iberyjski odradza się dzięki ochronie przyrody, komunikat prasowy z 20 czerwca 2024 (Iberian lynx rebounding thanks to conservation action)', 'https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list'),
+      cite('Grupa Specjalistów ds. Kotowatych Komisji Przetrwania Gatunków Międzynarodowej Unii Ochrony Przyrody: Wiadomości o kotowatych, wydanie specjalne 17, Ryś iberyjski, ratowanie symbolicznego gatunku, 2024 (Cat News Special Issue 17, The Iberian lynx, rescue of an iconic species)', 'https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf'),
+      cite('Grupa Specjalistów ds. Kotowatych Komisji Przetrwania Gatunków Międzynarodowej Unii Ochrony Przyrody: żyjące gatunki, ryś iberyjski (Living Species, Iberian lynx)', 'https://www.catsg.org/living-species-iberianlynx'),
+      cite('Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego: spis rysia iberyjskiego, Hiszpania i Portugalia, 2025, dokument (Censo de lince ibérico, España y Portugal, 2025)', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf'),
+      cite('Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego za pośrednictwem Fundacji Bioróżnorodności: populacja rysia iberyjskiego osiągnęła 2663 osobniki w 2025 roku, komunikat prasowy z 5 czerwca 2026 (The Iberian lynx population reached 2,663 specimens in 2025)', 'https://fundacion-biodiversidad.es/en/notas_de_prensa_mite/the-iberian-lynx-population-reached-2663-specimens-in-2025/'),
+      cite('Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego: Hiszpański spis gatunków lądowych, ryś iberyjski, karta gatunku, dokument (Inventario Español de Especies Terrestres, Lynx pardinus)', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf'),
+      cite('Projekt Unii Europejskiej na rzecz ochrony przyrody: raport dla szerokiej publiczności, 2018, dokument (LIFE Iberlince, Layman report 2018)', 'https://www.iberlince.eu/files/images/docs/layman_eng.pdf'),
+      cite('Projekt Unii Europejskiej na rzecz ochrony przyrody: historia (LIFE Iberlince, History)', 'https://www.iberlince.eu/index_php/eng/project'),
+      cite('Projekt Unii Europejskiej na rzecz ochrony przyrody: ryś iberyjski, ekologia (LIFE Iberlince, Iberian lynx, Ecology)', 'https://www.iberlince.eu/index_php/eng/lynx/ecology'),
+      cite('Europejska Agencja Wykonawcza ds. Klimatu, Infrastruktury i Środowiska: Powrót kota, liczba rysi iberyjskich wzrosła dziesięciokrotnie w 20 lat, 20 lipca 2021 (The comeback cat: Iberian lynx numbers up tenfold in 20 years)', 'https://cinea.ec.europa.eu/news-events/news/comeback-cat-iberian-lynx-numbers-tenfold-20-years-2021-07-20_en'),
+      cite('Baza danych programu Komisji Europejskiej na rzecz przyrody i klimatu: projekt ochrony i reintrodukcji rysia iberyjskiego w Andaluzji (LIFE06 NAT/E/000209, Conservation and reintroduction of the Iberian lynx in Andalucia)', 'https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE06-NAT-E-000209/conservation-and-reintroduction-of-the-iberian-lynx-in-andalucia'),
+      cite('Rząd Andaluzji (Junta de Andalucía): Andaluzyjska Sierra Morena pozostaje głównym ośrodkiem rysia iberyjskiego na półwyspie, 3 września 2026 (La Sierra Morena andaluza se mantiene como el principal núcleo de lince ibérico de la Península)', 'https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/la-sierra-morena-andaluza-se-mantiene-como-el-principal-n%C3%BAcleo-de-lince-ib%C3%A9rico-de-la-pen%C3%ADnsula/20151'),
+      cite('Portugalski Instytut Ochrony Przyrody i Lasów (ICNF): ryś iberyjski, aktualności (Lince-ibérico, Novidades)', 'https://areasprotegidas.icnf.pt/lince/index.php/noticias/novidades'),
+      cite('Muzeum Zoologiczne Uniwersytetu Michigan, internetowy przewodnik po różnorodności zwierząt: ryś iberyjski (Lynx pardinus, Spanish lynx)', 'https://animaldiversity.org/accounts/Lynx_pardinus/'),
     ],
   },
   ...domesticatesPl,

@@ -86,6 +86,35 @@ const aboutWord: Record<Locale, string> = {
   lv: 'apmēram',
 };
 
+const silhouetteLead: Record<Locale, string> = {
+  en: 'Silhouette:',
+  ru: 'Силуэт:',
+  pl: 'Sylwetka:',
+  lv: 'Siluets:',
+};
+
+const oryxDrawing: Record<Locale, string> = {
+  en: 'original Fix Planet drawing',
+  ru: 'оригинальный рисунок Fix Planet',
+  pl: 'oryginalny rysunek Fix Planet',
+  lv: 'Fix Planet oriģinālais zīmējums',
+};
+
+type PhotoFile = {
+  png: string;
+  webp: string;
+  pxW: number;
+  pxH: number;
+  credits: Record<Locale, string>;
+  licenceHref: string;
+};
+
+type PhotoCatalog = { images: Record<string, PhotoFile> };
+
+const photoCatalog = JSON.parse(
+  readFileSync(path.join(process.cwd(), 'src/data/size-scale/photos.json'), 'utf8'),
+) as PhotoCatalog;
+
 const controls: Record<Locale, { prev: string; next: string }> = {
   en: { prev: 'Previous', next: 'Next' },
   ru: { prev: 'Назад', next: 'Дальше' },
@@ -128,7 +157,7 @@ function readSvg(fileName: string): { raw: string; html: string; basis: ScaleBas
   }
   const html = raw
     .replace(/\sdata-scale-basis="[^"]*"/, '')
-    .replace('<svg ', '<svg class="size-scale-svg" ');
+    .replace('<svg ', '<svg class="size-scale-svg size-scale-drawn" ');
   return { raw, html, basis, viewBox, groundY, shoulderY };
 }
 
@@ -146,6 +175,33 @@ function splitSource(line: string): { href: string; label: string } {
 
 function nearly(a: number, b: number): boolean {
   return Math.abs(a - b) <= 0.2;
+}
+
+function localizeSilhouette(credit: string, locale: Locale): string {
+  const body = credit.startsWith('Silhouette:') ? credit.slice('Silhouette:'.length) : ` ${credit}`;
+  return `${silhouetteLead[locale]}${body}`.replace('original Fix Planet drawing', oryxDrawing[locale]);
+}
+
+type Geom = {
+  vbW: number;
+  vbH: number;
+  groundY: number;
+  mPerUnit: number;
+  drawnLenM: number;
+  drawnAboveM: number;
+  tailM: number;
+};
+
+function geomFrom(vbW: number, vbH: number, groundY: number, mPerUnit: number): Geom {
+  return {
+    vbW,
+    vbH,
+    groundY,
+    mPerUnit,
+    drawnLenM: vbW * mPerUnit,
+    drawnAboveM: groundY * mPerUnit,
+    tailM: Math.max(0, vbH - groundY) * mPerUnit,
+  };
 }
 
 const rows = Object.keys(packModules)
@@ -206,16 +262,21 @@ const geometry = rows.map((row) => {
   if (credit !== row.credit) {
     throw new Error(`Credit line mismatch for ${row.slug}`);
   }
+  const photoFile = photoCatalog.images[row.slug];
+  const photo = photoFile
+    ? geomFrom(
+        photoFile.pxW,
+        photoFile.pxH,
+        photoFile.pxH,
+        row.scale_basis === 'height' ? row.height_m / photoFile.pxH : row.width_m / photoFile.pxW,
+      )
+    : null;
   return {
     row,
     html: svg.html,
-    vbW,
-    vbH,
-    groundY: svg.groundY,
-    mPerUnit,
-    drawnLenM: vbW * mPerUnit,
-    drawnAboveM: svg.groundY * mPerUnit,
-    tailM: (vbH - svg.groundY) * mPerUnit,
+    sil: geomFrom(vbW, vbH, svg.groundY, mPerUnit),
+    photo,
+    photoFile: photoFile ?? null,
     credit,
   };
 });
@@ -239,11 +300,20 @@ for (const key of Object.keys(copyModules).sort()) {
 
 export type SizeScaleSource = { href: string; label: string };
 
+export type SizeScaleGeom = Geom & { tailM: number };
+
+export type SizeScalePhoto = SizeScaleGeom & {
+  png: string;
+  webp: string;
+};
+
 export type SizeScaleAnimal = {
   slug: string;
   name: string;
   caption: string;
   credit: string;
+  silhouetteCredit: string;
+  licenceHref: string;
   href: string;
   heightLabel: string;
   lengthLabel: string;
@@ -251,13 +321,8 @@ export type SizeScaleAnimal = {
   lengthText: string;
   sources: SizeScaleSource[];
   svg: string;
-  vbW: number;
-  vbH: number;
-  groundY: number;
-  mPerUnit: number;
-  drawnLenM: number;
-  drawnAboveM: number;
-  tailM: number;
+  photo: SizeScalePhoto | null;
+  sil: SizeScaleGeom;
 };
 
 export type SizeScaleView = {
@@ -327,11 +392,16 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
     ) {
       throw new Error(`Caption figures differ for ${locale} ${item.row.slug}`);
     }
+    const silhouetteCredit = localizeSilhouette(item.credit, locale);
+    const photoCredit = item.photoFile?.credits[locale] ?? '';
+    const licenceHref = item.photoFile?.licenceHref ?? '';
     return {
       slug: item.row.slug,
       name: copy.name,
       caption: copy.caption,
-      credit: item.credit,
+      credit: photoCredit || silhouetteCredit,
+      silhouetteCredit,
+      licenceHref: photoCredit ? licenceHref : '',
       href: localizePath(`/wildlife/${item.row.slug}`, locale),
       heightLabel: copy.height_label,
       lengthLabel: copy.length_label,
@@ -339,13 +409,10 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
       lengthText,
       sources: copy.sources.map(splitSource),
       svg: item.html,
-      vbW: item.vbW,
-      vbH: item.vbH,
-      groundY: item.groundY,
-      mPerUnit: item.mPerUnit,
-      drawnLenM: item.drawnLenM,
-      drawnAboveM: item.drawnAboveM,
-      tailM: item.tailM,
+      photo: item.photo && item.photoFile
+        ? { ...item.photo, png: item.photoFile.png, webp: item.photoFile.webp }
+        : null,
+      sil: item.sil,
     };
   });
 

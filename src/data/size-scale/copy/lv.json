@@ -35,18 +35,6 @@
         "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: Amerikas bebrs (University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis, American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
       ]
     },
-    "european-beaver": {
-      "name": "Eirāzijas bebrs",
-      "height_label": "Augstums skaustā",
-      "length_label": "No deguna līdz astes galam",
-      "caption": "Augstums skaustā apmēram 0,4 m, no deguna līdz astes galam 1,2 m",
-      "sources": [
-        "Lielbritānijas Zīdītāju biedrība: Eirāzijas bebrs (The Mammal Society: Eurasian Beaver). https://mammal.org.uk/british-mammals/eurasian-beaver",
-        "Tautas fonds apdraudētām sugām: Eirāzijas bebrs, fakti un skaitļi (People's Trust for Endangered Species: Eurasian beaver, facts and figures). https://ptes.org/get-informed/facts-figures/eurasian-beaver/",
-        "Bebru pārvaldība: fakti par bebriem (Beaver Management: Beaver Facts). https://beavermanagement.org/facts/",
-        "Smitsona institūta Nacionālais zooloģiskais dārzs un Dabas aizsardzības bioloģijas institūts: bebrs (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver"
-      ]
-    },
     "wild-boar": {
       "name": "Mežacūka",
       "height_label": "Augstums skaustā",
@@ -181,6 +169,19 @@
       "sources": [
         "National Geographic: kuprainais valis, fakti un fotogrāfijas (National Geographic: Humpback whale, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
         "Teksasas Tehniskā universitāte, Teksasas zīdītāji: sugas apraksts, kuprainais valis (Texas Tech University, Mammals of Texas: Species account of the Humpback Whale). https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
+    },
+    "iberian-lynx": {
+      "name": "Ibērijas lūsis",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā apmēram 0,5 m, no deguna līdz astes galam 0,9 m",
+      "sources": [
+        "Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija, Spānijas sauszemes sugu uzskaite: Ibērijas lūsis, sugas lapa (Inventario Español de Especies Terrestres: Lynx pardinus). https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf",
+        "Starptautiskās dabas aizsardzības savienības Sugu izdzīvošanas komisijas Kaķu speciālistu grupa: dzīvās sugas, Ibērijas lūsis (Living Species, Iberian lynx). https://www.catsg.org/living-species-iberianlynx",
+        "Eiropas Savienības dabas aizsardzības projekts: Ibērijas lūsis, ekoloģija (LIFE Iberlince: Iberian lynx, Ecology). https://www.iberlince.eu/index_php/eng/lynx/ecology",
+        "Starptautiskā apdraudēto kaķu aizsardzības biedrība, Kanāda: Ibērijas lūsis (International Society for Endangered Cats, ISEC Canada: Iberian Lynx). https://wildcatconservation.org/wild-cats/eurasia/iberian-lynx/",
+        "Starptautiskais dzīvnieku labklājības fonds: lūsis, fakti, draudi un aizsardzība (International Fund for Animal Welfare: Lynx, Facts, Threats, and Conservation). https://www.ifaw.org/animals/lynx"
       ]
     }
   }

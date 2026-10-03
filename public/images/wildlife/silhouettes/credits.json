@@ -37,23 +37,6 @@
       "credit_line": "Silhouette: Margot Michaud, PhyloPic, CC0 1.0"
     },
     {
-      "slug": "european-beaver",
-      "file": "european-beaver.svg",
-      "source": "PhyloPic",
-      "uuid": "0b9b783b-b537-4fa6-b387-a9ca2d3f7a12",
-      "title": "Castor fiber",
-      "contributor": "Steven Traver",
-      "attribution_field": "Steven Traver",
-      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "licence": "CC0 1.0",
-      "page": "https://www.phylopic.org/images/0b9b783b-b537-4fa6-b387-a9ca2d3f7a12",
-      "vector": "https://images.phylopic.org/images/0b9b783b-b537-4fa6-b387-a9ca2d3f7a12/vector.svg",
-      "phylopic_build": 558,
-      "retrieved": "2026-10-03",
-      "flipped_horizontally": true,
-      "credit_line": "Silhouette: Steven Traver, PhyloPic, CC0 1.0"
-    },
-    {
       "slug": "wild-boar",
       "file": "wild-boar.svg",
       "source": "PhyloPic",
@@ -237,6 +220,22 @@
       "flipped_horizontally": true,
       "simplified_outline": false,
       "credit_line": "Silhouette: T. Michael Keesey, PhyloPic, Public Domain Mark 1.0"
+    },
+    {
+      "slug": "iberian-lynx",
+      "file": "iberian-lynx.svg",
+      "source": "PhyloPic",
+      "uuid": "20442a12-596d-4987-a668-509c19a155da",
+      "title": "Lynx pardinus",
+      "contributor": "Margot Michaud",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licence": "CC0 1.0",
+      "page": "https://www.phylopic.org/images/20442a12-596d-4987-a668-509c19a155da",
+      "vector": "https://images.phylopic.org/images/20442a12-596d-4987-a668-509c19a155da/vector.svg",
+      "phylopic_build": 558,
+      "retrieved": "2026-10-03",
+      "flipped_horizontally": true,
+      "credit_line": "Silhouette: Margot Michaud, PhyloPic, CC0 1.0"
     }
   ]
 }

@@ -72,40 +72,6 @@
       }
     },
     {
-      "slug": "european-beaver",
-      "order": 3,
-      "height_m": 0.4,
-      "width_m": 1.2,
-      "height_range_m": [
-        0.3,
-        0.5
-      ],
-      "width_range_m": [
-        1.02,
-        1.34
-      ],
-      "bases": {
-        "height": "shoulder (withers) height, standing",
-        "width": "nose tip to tail tip, natural side view, tail included"
-      },
-      "confidence_height": "estimate",
-      "confidence_width": "range_midpoint",
-      "ui_label_for_width_m": "Length",
-      "mean_height_cm": 39,
-      "mean_width_cm": 117.1,
-      "scale_m": 1.2,
-      "sort_key_m": 1.171,
-      "scale_basis": "width",
-      "silhouette_file": "european-beaver.svg",
-      "credit": "Silhouette: Steven Traver, PhyloPic, CC0 1.0",
-      "svg": {
-        "viewBox_w": 1534,
-        "viewBox_h": 477.6,
-        "ground_y": 446.4,
-        "shoulder_y": 22.2
-      }
-    },
-    {
       "slug": "wild-boar",
       "order": 4,
       "height_m": 0.8,
@@ -239,6 +205,41 @@
         "viewBox_h": 1535.3,
         "ground_y": 1534.5,
         "shoulder_y": 724.7
+      }
+    },
+    {
+      "slug": "iberian-lynx",
+      "order": 1,
+      "position_of_14": 2,
+      "height_m": 0.5,
+      "width_m": 0.9,
+      "height_range_m": [
+        0.36,
+        0.7
+      ],
+      "width_range_m": [
+        0.76,
+        1.08
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included (head-body plus tail)"
+      },
+      "confidence_height": "estimate",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 51.8,
+      "mean_width_cm": 90.8,
+      "scale_m": 0.9,
+      "sort_key_m": 0.908,
+      "scale_basis": "width",
+      "silhouette_file": "iberian-lynx.svg",
+      "credit": "Silhouette: Margot Michaud, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1536.0,
+        "viewBox_h": 1205.0,
+        "ground_y": 1171.0,
+        "shoulder_y": 363.8
       }
     }
   ]

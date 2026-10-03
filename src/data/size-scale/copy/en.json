@@ -35,18 +35,6 @@
         "University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis (American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
       ]
     },
-    "european-beaver": {
-      "name": "Eurasian beaver",
-      "height_label": "Shoulder height",
-      "length_label": "Nose to tail tip",
-      "caption": "Shoulder height about 0.4 m, nose to tail tip 1.2 m",
-      "sources": [
-        "The Mammal Society: Eurasian Beaver. https://mammal.org.uk/british-mammals/eurasian-beaver",
-        "People's Trust for Endangered Species: Eurasian beaver, facts and figures. https://ptes.org/get-informed/facts-figures/eurasian-beaver/",
-        "Beaver Management: Beaver Facts. https://beavermanagement.org/facts/",
-        "Smithsonian's National Zoo and Conservation Biology Institute, Beaver. https://nationalzoo.si.edu/animals/beaver"
-      ]
-    },
     "wild-boar": {
       "name": "Wild boar",
       "height_label": "Shoulder height",
@@ -181,6 +169,19 @@
       "sources": [
         "National Geographic: Humpback whale, facts and photos. https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
         "Texas Tech University, Mammals of Texas: Species account of the Humpback Whale. https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
+    },
+    "iberian-lynx": {
+      "name": "Iberian lynx",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height about 0.5 m, nose to tail tip 0.9 m",
+      "sources": [
+        "Spanish Ministry for the Ecological Transition and the Demographic Challenge, Spanish Inventory of Terrestrial Species: Lynx pardinus (species sheet). https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf",
+        "IUCN Species Survival Commission Cat Specialist Group: Living Species, Iberian lynx. https://www.catsg.org/living-species-iberianlynx",
+        "LIFE Iberlince: Iberian lynx, Ecology. https://www.iberlince.eu/index_php/eng/lynx/ecology",
+        "International Society for Endangered Cats (ISEC) Canada: Iberian Lynx. https://wildcatconservation.org/wild-cats/eurasia/iberian-lynx/",
+        "International Fund for Animal Welfare: Lynx, Facts, Threats, and Conservation. https://www.ifaw.org/animals/lynx"
       ]
     }
   }

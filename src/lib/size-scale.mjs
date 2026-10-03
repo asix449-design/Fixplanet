@@ -3,6 +3,16 @@ const HEIGHT_FRAC = 0.9;
 const WIDTH_FRAC_WITH_BEHIND = 0.64;
 const WIDTH_FRAC_ALONE = 0.88;
 const MIN_BEHIND_PX = 48;
+const BEHIND_FADE = [1, 0.8, 0.65, 0.5, 0.38, 0.28];
+const LICENCE_TOKENS = [
+  'CC BY-SA 4.0',
+  'CC BY-SA 2.0',
+  'CC BY 3.0',
+  'public domain',
+  'общественное достояние',
+  'domena publiczna',
+  'publiskais īpašums',
+];
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
@@ -81,6 +91,20 @@ function mount(root) {
   let syncing = false;
   let booted = false;
 
+  root.classList.add('is-enhanced');
+
+  function drawn(i) {
+    const animal = meta[i];
+    if (animal.photo && animal.photoOn !== false) return animal.photo;
+    return animal.sil;
+  }
+
+  function fadeFor(front, i) {
+    const distance = front - i;
+    if (distance < 0 || distance >= BEHIND_FADE.length) return 0;
+    return BEHIND_FADE[distance];
+  }
+
   function measure() {
     plotW = plot.clientWidth;
     plotH = plot.clientHeight;
@@ -90,19 +114,20 @@ function mount(root) {
     const first = Math.max(0, front - BEHIND);
     let tallest = 0;
     for (let i = first; i <= front; i += 1) {
-      tallest = Math.max(tallest, meta[i].drawnAboveM);
+      tallest = Math.max(tallest, drawn(i).drawnAboveM);
     }
     const behind = front - first;
     const widthFrac = behind > 0 ? WIDTH_FRAC_WITH_BEHIND : WIDTH_FRAC_ALONE;
     const byHeight = (plotH * HEIGHT_FRAC) / tallest;
-    const byLength = (plotW * widthFrac) / meta[front].drawnLenM;
+    const byLength = (plotW * widthFrac) / drawn(front).drawnLenM;
     return Math.min(byHeight, byLength);
   }
 
   function frameFor(front) {
     const px = scaleFor(front);
     const first = Math.max(0, front - BEHIND);
-    const frontW = meta[front].drawnLenM * px;
+    const frontGeom = drawn(front);
+    const frontW = frontGeom.drawnLenM * px;
     const behindCount = front - first;
     let frontLeft = behindCount === 0
       ? Math.max(8, (plotW - frontW) / 2)
@@ -110,11 +135,11 @@ function mount(root) {
     if (frontLeft + frontW > plotW - 8) frontLeft = Math.max(8, plotW - frontW - 8);
     const room = Math.max(0, frontLeft - 4);
     const step = behindCount > 0 ? Math.min(plotW * 0.105, 96, room / behindCount) : 0;
-    const frontH = meta[front].vbH * meta[front].mPerUnit * px;
+    const frontH = frontGeom.vbH * frontGeom.mPerUnit * px;
     const frontLonger = Math.max(frontW, frontH);
     const boxes = new Map();
     for (let i = first; i <= front; i += 1) {
-      const animal = meta[i];
+      const animal = drawn(i);
       let w = animal.vbW * animal.mPerUnit * px;
       let h = animal.vbH * animal.mPerUnit * px;
       if (i < front) {
@@ -164,7 +189,12 @@ function mount(root) {
     el.style.top = `${box.top}px`;
     el.style.inlineSize = `${box.w}px`;
     el.style.blockSize = `${box.h}px`;
-    el.style.opacity = String(opacity);
+    el.style.opacity = '1';
+    el.querySelectorAll('.size-scale-drawn').forEach((node) => {
+      node.style.opacity = String(opacity);
+    });
+    const img = el.querySelector('img');
+    if (img && img.loading === 'lazy') img.loading = 'eager';
   }
 
   function render(from, to, p) {
@@ -176,19 +206,32 @@ function mount(root) {
     let tailPx = 0;
 
     animals.forEach((el, i) => {
-      const animal = meta[i];
+      const geom = drawn(i);
+      const groundFrac = geom.groundY / geom.vbH;
       const inStart = start.boxes.has(i);
       const inEnd = end.boxes.has(i);
+      const leavingFront = i === from && from > to && inStart;
       el.style.zIndex = String(i + 2);
+      if (leavingFront) {
+        if (t >= 1) {
+          el.classList.remove('is-on', 'is-front');
+          return;
+        }
+        const g = lerp(1, 0.2, t);
+        const box = growBox(start.boxes.get(i), groundFrac, g);
+        applyBox(el, box, lerp(1, 0, t), false);
+        tailPx = Math.max(tailPx, (1 - groundFrac) * box.h);
+        return;
+      }
       if (i > to || (!inStart && !inEnd)) {
         el.classList.remove('is-on', 'is-front');
         return;
       }
       if (inEnd && i === to && to > from) {
         const g = lerp(0.2, 1, t);
-        const box = growBox(end.boxes.get(i), animal.groundY / animal.vbH, g);
+        const box = growBox(end.boxes.get(i), groundFrac, g);
         applyBox(el, box, t, true);
-        tailPx = Math.max(tailPx, (1 - animal.groundY / animal.vbH) * box.h);
+        tailPx = Math.max(tailPx, (1 - groundFrac) * box.h);
         return;
       }
       if (inStart && inEnd) {
@@ -196,29 +239,28 @@ function mount(root) {
         const b = end.boxes.get(i);
         const h = lerpLog(a.h, b.h, t);
         const w = lerpLog(a.w, b.w, t);
-        const groundFrac = animal.groundY / animal.vbH;
         applyBox(el, {
           left: lerp(a.left, b.left, t),
           top: plotH - groundFrac * h,
           w,
           h,
-        }, 1, i === to);
+        }, lerp(fadeFor(from, i), fadeFor(to, i), t), i === to);
         tailPx = Math.max(tailPx, (1 - groundFrac) * h);
         return;
       }
       if (inEnd) {
-        applyBox(el, end.boxes.get(i), t, i === to);
         const box = end.boxes.get(i);
-        tailPx = Math.max(tailPx, box.h - (animal.groundY / animal.vbH) * box.h);
+        applyBox(el, box, lerp(0, fadeFor(to, i), t), i === to);
+        tailPx = Math.max(tailPx, box.h - groundFrac * box.h);
         return;
       }
       if (t >= 1) {
         el.classList.remove('is-on', 'is-front');
         return;
       }
-      applyBox(el, start.boxes.get(i), 1 - t, false);
+      applyBox(el, start.boxes.get(i), lerp(fadeFor(from, i), 0, t), false);
       const box = start.boxes.get(i);
-      tailPx = Math.max(tailPx, (1 - animal.groundY / animal.vbH) * box.h);
+      tailPx = Math.max(tailPx, (1 - groundFrac) * box.h);
     });
 
     const px = lerpLog(start.px, end.px, t);
@@ -291,12 +333,44 @@ function mount(root) {
     }
   }
 
+  function fillCredit(animal) {
+    const failed = animal.photo && animal.photoOn === false;
+    const text = failed ? animal.silhouetteCredit : animal.credit;
+    const href = failed ? '' : animal.licenceHref;
+    creditEl.replaceChildren();
+    if (!href) {
+      creditEl.textContent = text;
+      return;
+    }
+    let token = '';
+    let at = -1;
+    for (const candidate of LICENCE_TOKENS) {
+      const found = text.lastIndexOf(candidate);
+      if (found >= 0) {
+        token = candidate;
+        at = found;
+        break;
+      }
+    }
+    if (at < 0) {
+      creditEl.textContent = text;
+      return;
+    }
+    creditEl.append(document.createTextNode(text.slice(0, at)));
+    const link = document.createElement('a');
+    link.href = href;
+    link.rel = 'noopener noreferrer';
+    link.textContent = token;
+    creditEl.append(link);
+    creditEl.append(document.createTextNode(text.slice(at + token.length)));
+  }
+
   function syncText() {
     const animal = meta[index];
     const position = positionText(index + 1);
     nameEl.textContent = animal.name;
     captionEl.textContent = animal.caption;
-    creditEl.textContent = animal.credit;
+    fillCredit(animal);
     hLabel.textContent = animal.heightLabel;
     lLabel.textContent = animal.lengthLabel;
     hValue.textContent = animal.heightText;
@@ -418,6 +492,19 @@ function mount(root) {
     wheelLock = now + 340;
     goTo(index + (delta > 0 ? 1 : -1));
   }, { passive: false });
+
+  animals.forEach((el, i) => {
+    const img = el.querySelector('[data-photo] img');
+    if (!img || !meta[i].photo) return;
+    meta[i].photoOn = true;
+    img.addEventListener('error', () => {
+      if (meta[i].photoOn === false) return;
+      meta[i].photoOn = false;
+      el.classList.add('photo-failed');
+      if (index === i) fillCredit(meta[i]);
+      if (token === 0) render(index, index, 1);
+    });
+  });
 
   const observer = new ResizeObserver(() => {
     if (token !== 0) return;

@@ -9,7 +9,7 @@
     "position": "{n} из 14",
     "hint": "Листайте или нажимайте клавиши со стрелками",
     "section_title": "Шкала размеров",
-    "section_lead": "Каждое животное показано в натуральную величину, а более мелкие стоят силуэтами позади него."
+    "section_lead": "Каждое животное показано в полный размер, а более мелкие видны силуэтами позади него."
   },
   "animals": {
     "bald-eagle": {
@@ -33,18 +33,6 @@
         "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: бобр (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver",
         "Инфоплиз, Колумбийская энциклопедия: бобр (Infoplease, Columbia Encyclopedia: Beaver). https://www.infoplease.com/encyclopedia/ecology/animals/vertebrates/beaver",
         "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: американский бобр (University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis, American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
-      ]
-    },
-    "european-beaver": {
-      "name": "Обыкновенный бобр",
-      "height_label": "Высота в холке",
-      "length_label": "От носа до кончика хвоста",
-      "caption": "Высота в холке около 0,4 м, от носа до кончика хвоста 1,2 м",
-      "sources": [
-        "Общество млекопитающих Великобритании: обыкновенный бобр (The Mammal Society: Eurasian Beaver). https://mammal.org.uk/british-mammals/eurasian-beaver",
-        "Народный фонд исчезающих видов: обыкновенный бобр, факты и цифры (People's Trust for Endangered Species: Eurasian beaver, facts and figures). https://ptes.org/get-informed/facts-figures/eurasian-beaver/",
-        "Управление бобрами: факты о бобрах (Beaver Management: Beaver Facts). https://beavermanagement.org/facts/",
-        "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: бобр (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver"
       ]
     },
     "wild-boar": {
@@ -181,6 +169,19 @@
       "sources": [
         "Нэшнл Географик: горбатый кит, факты и фотографии (National Geographic: Humpback whale, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
         "Технический университет Техаса, млекопитающие Техаса: описание вида, горбатый кит (Texas Tech University, Mammals of Texas: Species account of the Humpback Whale). https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
+    },
+    "iberian-lynx": {
+      "name": "Пиренейская рысь",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке около 0,5 м, от носа до кончика хвоста 0,9 м",
+      "sources": [
+        "Министерство экологического перехода и демографического вызова Испании, Испанская опись наземных видов: пиренейская рысь, карточка вида (Inventario Español de Especies Terrestres: Lynx pardinus). https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf",
+        "Группа специалистов по кошачьим Комиссии по выживанию видов Международного союза охраны природы: живые виды, пиренейская рысь (Living Species, Iberian lynx). https://www.catsg.org/living-species-iberianlynx",
+        "Проект Европейского союза по охране природы: пиренейская рысь, экология (LIFE Iberlince: Iberian lynx, Ecology). https://www.iberlince.eu/index_php/eng/lynx/ecology",
+        "Международное общество охраны исчезающих кошачьих, Канада: пиренейская рысь (International Society for Endangered Cats, ISEC Canada: Iberian Lynx). https://wildcatconservation.org/wild-cats/eurasia/iberian-lynx/",
+        "Международный фонд защиты животных: рысь, факты, угрозы и охрана (International Fund for Animal Welfare: Lynx, Facts, Threats, and Conservation). https://www.ifaw.org/animals/lynx"
       ]
     }
   }

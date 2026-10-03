@@ -1,9 +1,12 @@
 import type { SpeciesCopy } from '../data/wildlife';
+import { cite } from '../data/sources';
 import type { Locale } from './config';
 import { domesticatesEn } from './wildlife-domesticates';
 import { packLv } from './wildlife-pack-lv';
 import { packPl } from './wildlife-pack-pl';
 import { packRu } from './wildlife-pack-ru';
+
+const censusPdf = 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf';
 
 /** Insects + domesticates shelves (founder pack, 11 Sep). */
 export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
@@ -348,6 +351,41 @@ export const pack: Record<Locale, Record<string, SpeciesCopy>> = {
       when: 'Living domesticates. The International Year of Camelids was 2024.',
       humanRole: 'We keep camels, llamas, and alpacas as working and fibre animals of dry and mountain lands.',
       sources: 'Food and Agriculture Organization of the United Nations, International Year of Camelids 2024.',
+    },
+    'iberian-lynx': {
+      commonName: 'Iberian lynx',
+      hook: 'Only 94 Iberian lynx were left in 2002, which made it the most endangered cat on Earth. The 2025 census counted 2,663 in Spain and Portugal.',
+      imageAlt: 'An Iberian lynx in profile, with tufted ears, a ruff of fur on the cheeks and a short tail with a black tip',
+      caption: 'Fix Planet illustration',
+      gridSource: cite('Spanish Ministry for the Ecological Transition and the Demographic Challenge: Iberian lynx census, Spain and Portugal, 2025 (PDF)', censusPdf),
+      what:
+        'The Iberian lynx (Lynx pardinus) is a medium-sized wild cat with a spotted tawny coat, tufted ears, a ruff of fur along the cheeks and a short tail with a black tip. An adult stands about 0.5 m at the shoulder, measures about 0.9 m from nose to tail tip and weighs roughly 6 to 16 kg. It lives only in the Iberian Peninsula and depends on the wild rabbit, its main prey.',
+      range:
+        'In 2025 the lynx lived in 26 separate areas of Spain and Portugal, and breeding was recorded in 18 of them. Spain held 2,269 animals and Portugal 394. Inside Spain, Castilla-La Mancha had 1,051, Andalusia 885 and Extremadura 302, with smaller numbers in Murcia, Castilla y León and Madrid. The Sierra Morena mountains are the main stronghold, with 1,145. The regional government of Andalusia counts its lynx up from 457 in 2019 to 885 in 2025. The area where the lynx occurs has grown from 449 square kilometres in 2005 to at least 3,320 in 2022.',
+      story:
+        'During the twentieth century the Iberian lynx declined for four reasons: its Mediterranean forest was destroyed, two new viral diseases sharply reduced the number of wild rabbits, people hunted it as vermin, and many animals died on roads or drowned in wells. By 2002 only two groups were left, one around Doñana and one in the Sierra Morena mountains, with 94 lynx in total. The species was then recognised as the most endangered cat on Earth, and the International Union for Conservation of Nature rated it Critically Endangered. Spain, Portugal and the European Union began a long rescue. Landowners agreed to manage land so that rabbits could increase, breeding centres in Spain and Portugal raised lynx, and since 2010 more than 400 animals have been released into places where the species had disappeared. Portugal began its own releases in 2014. The total passed 1,000 in 2020 and 2,000 in 2023.',
+      when:
+        'In June 2024 the International Union for Conservation of Nature moved the Iberian lynx from Endangered to Vulnerable. Before that it was rated Critically Endangered from 2002 to 2008 and Endangered in 2015. The census published in June 2026 by the Spanish Ministry for the Ecological Transition and the Demographic Challenge counted 2,663 lynx in 2025, against 2,401 in 2024 and 1,365 in 2021. Of these, 1,711 were adults and subadults and 952 were cubs, and 542 females were breeding or holding territories. The ministry treats these figures as a minimum.',
+      humanRole:
+        'People first pushed the lynx to the brink, then helped it back. Agreements with landowners improved habitat and increased rabbit numbers, lynx were bred in centres in Spain and Portugal and released in new areas, and underpasses and fences were built along roads. Roads remain the greatest danger: in 2025, 212 of the 273 recorded lynx deaths happened on roads. The International Union for Conservation of Nature also names new rabbit virus outbreaks, diseases from domestic cats, poaching and climate-related changes to habitat as threats.',
+      sources: '',
+      sourcesList: [
+        cite('IUCN Red List of Threatened Species: Lynx pardinus (Rodríguez 2024)', 'https://www.iucnredlist.org/species/12520/218695618'),
+        cite('International Union for Conservation of Nature: Iberian lynx rebounding thanks to conservation action (press release, 20 June 2024)', 'https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list'),
+        cite('IUCN Species Survival Commission Cat Specialist Group: Cat News Special Issue 17, The Iberian lynx, rescue of an iconic species (2024)', 'https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf'),
+        cite('IUCN Species Survival Commission Cat Specialist Group: Living Species, Iberian lynx', 'https://www.catsg.org/living-species-iberianlynx'),
+        cite('Spanish Ministry for the Ecological Transition and the Demographic Challenge: Iberian lynx census, Spain and Portugal, 2025 (PDF)', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf'),
+        cite('Spanish Ministry for the Ecological Transition and the Demographic Challenge, via Fundación Biodiversidad: The Iberian lynx population reached 2,663 specimens in 2025 (press release, 5 June 2026)', 'https://fundacion-biodiversidad.es/en/notas_de_prensa_mite/the-iberian-lynx-population-reached-2663-specimens-in-2025/'),
+        cite('Spanish Ministry for the Ecological Transition and the Demographic Challenge: Spanish Inventory of Terrestrial Species, Lynx pardinus (species sheet, PDF)', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf'),
+        cite('LIFE Iberlince: Layman report 2018 (PDF)', 'https://www.iberlince.eu/files/images/docs/layman_eng.pdf'),
+        cite('LIFE Iberlince: History', 'https://www.iberlince.eu/index_php/eng/project'),
+        cite('LIFE Iberlince: Iberian lynx, Ecology', 'https://www.iberlince.eu/index_php/eng/lynx/ecology'),
+        cite('European Climate, Infrastructure and Environment Executive Agency: The comeback cat, Iberian lynx numbers up tenfold in 20 years (20 July 2021)', 'https://cinea.ec.europa.eu/news-events/news/comeback-cat-iberian-lynx-numbers-tenfold-20-years-2021-07-20_en'),
+        cite('European Commission LIFE database: LIFE06 NAT/E/000209, Conservation and reintroduction of the Iberian lynx in Andalucia', 'https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE06-NAT-E-000209/conservation-and-reintroduction-of-the-iberian-lynx-in-andalucia'),
+        cite('Regional Government of Andalusia (Junta de Andalucía): La Sierra Morena andaluza se mantiene como el principal núcleo de lince ibérico de la Península (3 September 2026)', 'https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/la-sierra-morena-andaluza-se-mantiene-como-el-principal-n%C3%BAcleo-de-lince-ib%C3%A9rico-de-la-pen%C3%ADnsula/20151'),
+        cite('Institute for Nature Conservation and Forests (ICNF), Portugal: Lince-ibérico, Novidades', 'https://areasprotegidas.icnf.pt/lince/index.php/noticias/novidades'),
+        cite('University of Michigan Museum of Zoology, Animal Diversity Web: Lynx pardinus (Spanish lynx)', 'https://animaldiversity.org/accounts/Lynx_pardinus/'),
+      ],
     },
     ...domesticatesEn,
   },
