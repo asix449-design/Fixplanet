@@ -8,10 +8,12 @@ const LICENCE_TOKENS = [
   'CC BY-SA 4.0',
   'CC BY-SA 2.0',
   'CC BY 3.0',
+  'CC BY 2.0',
   'public domain',
   'общественное достояние',
   'domena publiczna',
   'publiskais īpašums',
+  'CC0 1.0',
 ];
 
 function clamp(value, min, max) {
@@ -343,14 +345,9 @@ function mount(root) {
     creditEl.append(fileLink);
   }
 
-  function fillCredit(animal) {
-    const failed = animal.photo && animal.photoOn === false;
-    const text = failed ? animal.silhouetteCredit : animal.credit;
-    const href = failed ? '' : animal.licenceHref;
-    creditEl.replaceChildren();
+  function appendCreditText(text, href) {
     if (!href) {
       creditEl.append(document.createTextNode(text));
-      appendFilePage(animal, failed);
       return;
     }
     let token = '';
@@ -365,7 +362,6 @@ function mount(root) {
     }
     if (at < 0) {
       creditEl.append(document.createTextNode(text));
-      appendFilePage(animal, failed);
       return;
     }
     creditEl.append(document.createTextNode(text.slice(0, at)));
@@ -375,7 +371,21 @@ function mount(root) {
     link.textContent = token;
     creditEl.append(link);
     creditEl.append(document.createTextNode(text.slice(at + token.length)));
+  }
+
+  function fillCredit(animal) {
+    const failed = animal.photo && animal.photoOn === false;
+    const text = failed ? animal.silhouetteCredit : animal.credit;
+    const href = failed ? '' : animal.licenceHref;
+    const changes = failed ? '' : (animal.changes || '');
+    creditEl.replaceChildren();
+    appendCreditText(text, href);
     appendFilePage(animal, failed);
+    if (!changes) return;
+    const line = document.createElement('span');
+    line.className = 'size-scale-changes';
+    line.textContent = changes;
+    creditEl.append(line);
   }
 
   function syncText() {

@@ -123,6 +123,8 @@ type PhotoFile = {
   licenceHref: string;
   filePage?: string;
   changed?: boolean;
+  /** Exact public changes line. Omitted when the photo was not adapted. */
+  changes?: Partial<Record<Locale, string>>;
 };
 
 type PhotoCatalog = { images: Record<string, PhotoFile> };
@@ -139,6 +141,56 @@ const controls: Record<Locale, { prev: string; next: string }> = {
 };
 
 const locales: Locale[] = ['en', 'ru', 'pl', 'lv'];
+
+const illustrationLine: Record<Locale, string> = {
+  en: 'Fix Planet illustration',
+  ru: 'Иллюстрация Fix Planet',
+  pl: 'Ilustracja Fix Planet',
+  lv: 'Fix Planet ilustrācija',
+};
+
+function lettersAreLatin(text: string): boolean {
+  for (const ch of text) {
+    if (/\p{L}/u.test(ch) && !/\p{Script=Latin}/u.test(ch)) return false;
+  }
+  return true;
+}
+
+/** Skip parentheses when the licence is empty. A real licence keeps the text as written. */
+function withoutEmptyLicence(text: string, keepParentheses: boolean): string {
+  if (keepParentheses) return text;
+  return text.replace(/\s*\(\s*\)/g, '').trim();
+}
+
+for (const [slug, photo] of Object.entries(photoCatalog.images)) {
+  if (!photo.licenceHref) {
+    for (const locale of locales) {
+      if (photo.credits[locale] !== illustrationLine[locale]) {
+        throw new Error(`Illustration credit must be the single Fix Planet line for ${locale} ${slug}`);
+      }
+    }
+    if (photo.filePage) throw new Error(`Illustration must not link a file page: ${slug}`);
+    if (photo.changed || photo.changes) {
+      throw new Error(`Illustration must not carry a licence or a changes line: ${slug}`);
+    }
+  } else if (!photo.filePage) {
+    throw new Error(`Photo is missing a Commons file page: ${slug}`);
+  }
+  if (photo.changes) {
+    for (const locale of locales) {
+      if (!photo.changes[locale]?.trim()) {
+        throw new Error(`Missing changes line for ${locale} ${slug}`);
+      }
+    }
+  }
+  for (const locale of ['pl', 'lv'] as const) {
+    for (const chunk of [photo.credits[locale], photo.changes?.[locale] ?? '']) {
+      if (chunk && !lettersAreLatin(chunk)) {
+        throw new Error(`Non-Latin letter in ${locale} photo text for ${slug}`);
+      }
+    }
+  }
+}
 
 function silhouetteDirectory(): string {
   const fromCwd = path.join(process.cwd(), 'public/images/wildlife/silhouettes');
@@ -332,6 +384,7 @@ export type SizeScaleAnimal = {
   licenceHref: string;
   filePageHref: string;
   filePageLabel: string;
+  changes: string;
   href: string;
   heightLabel: string;
   lengthLabel: string;
@@ -414,10 +467,14 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
     const photoCredit = item.photoFile?.credits[locale] ?? '';
     const licenceHref = item.photoFile?.licenceHref ?? '';
     const filePage = photoCredit ? (item.photoFile?.filePage ?? '') : '';
-    const changed = Boolean(photoCredit && item.photoFile?.changed);
-    const credit = photoCredit
-      ? (changed ? `${photoCredit}. ${changeNote[locale]}` : photoCredit)
-      : silhouetteCredit;
+    const exactChanges = photoCredit ? (item.photoFile?.changes?.[locale]?.trim() ?? '') : '';
+    const changed = Boolean(photoCredit && item.photoFile?.changed && !exactChanges);
+    const credit = withoutEmptyLicence(
+      photoCredit
+        ? (changed ? `${photoCredit}. ${changeNote[locale]}` : photoCredit)
+        : silhouetteCredit,
+      !photoCredit || Boolean(licenceHref),
+    );
     return {
       slug: item.row.slug,
       name: copy.name,
@@ -427,6 +484,7 @@ function buildLocale(locale: Locale, sourcesLabel: string): SizeScaleView {
       licenceHref: photoCredit ? licenceHref : '',
       filePageHref: filePage,
       filePageLabel: filePage ? filePageLabel[locale] : '',
+      changes: exactChanges,
       href: localizePath(`/wildlife/${item.row.slug}`, locale),
       heightLabel: copy.height_label,
       lengthLabel: copy.length_label,
