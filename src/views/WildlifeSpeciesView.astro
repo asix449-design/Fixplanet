@@ -76,7 +76,7 @@ const heads =
                       {' '}
                       <a href={species.licenseUrl} rel="noopener noreferrer">{licenseLabel}</a>.
                     </>
-                  ) : species.filePageLabel ? null : (
+                  ) : species.filePageLabel || !licenseLabel || !species.image.sourceUrl ? null : (
                     <>
                       {' '}
                       (<a href={species.image.sourceUrl} rel="noopener noreferrer">{licenseLabel}</a>)
@@ -84,7 +84,7 @@ const heads =
                   )
                 }
                 {
-                  species.filePageLabel ? (
+                  species.filePageLabel && species.image.sourceUrl ? (
                     <>
                       {' '}
                       {species.filePageLabel}:{' '}
@@ -97,13 +97,22 @@ const heads =
               </p>
             ) : species.image.sourceUrl ? (
               <>
-                {ui.wildlifePage.imageCredit}: {species.image.credit}{' '}
-                (<a href={species.image.sourceUrl} rel="noopener noreferrer">{species.image.license}</a>)
+                {ui.wildlifePage.imageCredit}: {species.image.credit}
+                {
+                  licenseLabel ? (
+                    <>
+                      {' '}
+                      (<a href={species.image.sourceUrl} rel="noopener noreferrer">{licenseLabel}</a>)
+                    </>
+                  ) : null
+                }
               </>
-            ) : (
+            ) : licenseLabel ? (
               <>
-                {ui.wildlifePage.imageCredit}: {species.image.credit} ({species.image.license})
+                {ui.wildlifePage.imageCredit}: {species.image.credit} ({licenseLabel})
               </>
+            ) : species.caption ? null : (
+              species.image.credit
             )
           }
         </figcaption>

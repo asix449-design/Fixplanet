@@ -1,0 +1,246 @@
+{
+  "pack": "A",
+  "generated": "2026-10-03",
+  "position_total": 14,
+  "rows": [
+    {
+      "slug": "bald-eagle",
+      "order": 1,
+      "height_m": 0.8,
+      "width_m": 0.9,
+      "height_range_m": [
+        0.7,
+        0.91
+      ],
+      "width_range_m": [
+        0.71,
+        0.96
+      ],
+      "bases": {
+        "height": "standing, head-top to feet",
+        "width": "bill tip to tail tip, natural side view"
+      },
+      "confidence_height": "estimate",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 81.9,
+      "mean_width_cm": 85,
+      "scale_m": 0.9,
+      "sort_key_m": 0.85,
+      "scale_basis": "height",
+      "silhouette_file": "bald-eagle.svg",
+      "credit": "Silhouette: T. Michael Keesey, PhyloPic, Public Domain Mark 1.0",
+      "svg": {
+        "viewBox_w": 696.4,
+        "viewBox_h": 1535.1,
+        "ground_y": 1239.6,
+        "shoulder_y": 0
+      }
+    },
+    {
+      "slug": "north-american-beaver",
+      "order": 2,
+      "height_m": 0.4,
+      "width_m": 1.1,
+      "height_range_m": [
+        0.3,
+        0.5
+      ],
+      "width_range_m": [
+        0.9,
+        1.2
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 39,
+      "mean_width_cm": 106.3,
+      "scale_m": 1.1,
+      "sort_key_m": 1.063,
+      "scale_basis": "width",
+      "silhouette_file": "north-american-beaver.svg",
+      "credit": "Silhouette: Margot Michaud, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1536,
+        "viewBox_h": 684.1,
+        "ground_y": 649.6,
+        "shoulder_y": 147.8
+      }
+    },
+    {
+      "slug": "wild-boar",
+      "order": 4,
+      "height_m": 0.8,
+      "width_m": 1.7,
+      "height_range_m": [
+        0.55,
+        1.1
+      ],
+      "width_range_m": [
+        1.05,
+        2.4
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 83.8,
+      "mean_width_cm": 165.2,
+      "scale_m": 1.7,
+      "sort_key_m": 1.653,
+      "scale_basis": "width",
+      "silhouette_file": "wild-boar.svg",
+      "credit": "Silhouette: Steven Traver, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1535,
+        "viewBox_h": 831.8,
+        "ground_y": 831.4,
+        "shoulder_y": 6.2
+      }
+    },
+    {
+      "slug": "gray-wolf",
+      "order": 5,
+      "height_m": 0.8,
+      "width_m": 1.7,
+      "height_range_m": [
+        0.6,
+        0.91
+      ],
+      "width_range_m": [
+        1.35,
+        2.16
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 75.8,
+      "mean_width_cm": 171.6,
+      "scale_m": 1.7,
+      "sort_key_m": 1.716,
+      "scale_basis": "width",
+      "silhouette_file": "gray-wolf.svg",
+      "credit": "Silhouette: François-Louis PELISSIER, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1536,
+        "viewBox_h": 923,
+        "ground_y": 922.5,
+        "shoulder_y": 127.8
+      }
+    },
+    {
+      "slug": "arabian-oryx",
+      "order": 6,
+      "height_m": 0.9,
+      "width_m": 2.1,
+      "height_range_m": [
+        0.8,
+        1.02
+      ],
+      "width_range_m": [
+        1.85,
+        2.37
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "estimate",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 91.2,
+      "mean_width_cm": 211.8,
+      "scale_m": 2.1,
+      "sort_key_m": 2.118,
+      "scale_basis": "width",
+      "silhouette_file": "arabian-oryx.svg",
+      "credit": "Silhouette: original Fix Planet drawing",
+      "svg": {
+        "viewBox_w": 1941.9,
+        "viewBox_h": 1421.2,
+        "ground_y": 1421.2,
+        "shoulder_y": 503.8
+      }
+    },
+    {
+      "slug": "red-deer",
+      "order": 7,
+      "height_m": 1.1,
+      "width_m": 2.2,
+      "height_range_m": [
+        0.95,
+        1.37
+      ],
+      "width_range_m": [
+        1.7,
+        2.69
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included"
+      },
+      "confidence_height": "range_midpoint",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 114.9,
+      "mean_width_cm": 217.8,
+      "scale_m": 2.2,
+      "sort_key_m": 2.178,
+      "scale_basis": "width",
+      "silhouette_file": "red-deer.svg",
+      "credit": "Silhouette: Ferran Sayol, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1508.8,
+        "viewBox_h": 1535.3,
+        "ground_y": 1534.5,
+        "shoulder_y": 724.7
+      }
+    },
+    {
+      "slug": "iberian-lynx",
+      "order": 1,
+      "position_of_14": 2,
+      "height_m": 0.5,
+      "width_m": 0.9,
+      "height_range_m": [
+        0.36,
+        0.7
+      ],
+      "width_range_m": [
+        0.76,
+        1.08
+      ],
+      "bases": {
+        "height": "shoulder (withers) height, standing",
+        "width": "nose tip to tail tip, natural side view, tail included (head-body plus tail)"
+      },
+      "confidence_height": "estimate",
+      "confidence_width": "range_midpoint",
+      "ui_label_for_width_m": "Length",
+      "mean_height_cm": 51.8,
+      "mean_width_cm": 90.8,
+      "scale_m": 0.9,
+      "sort_key_m": 0.908,
+      "scale_basis": "width",
+      "silhouette_file": "iberian-lynx.svg",
+      "credit": "Silhouette: Margot Michaud, PhyloPic, CC0 1.0",
+      "svg": {
+        "viewBox_w": 1536.0,
+        "viewBox_h": 1205.0,
+        "ground_y": 1171.0,
+        "shoulder_y": 363.8
+      }
+    }
+  ]
+}

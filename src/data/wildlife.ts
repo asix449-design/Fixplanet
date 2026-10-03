@@ -449,6 +449,26 @@ export const speciesMeta: SpeciesMeta[] = [
     ],
   },
   {
+    slug: 'iberian-lynx',
+    scientificName: 'Lynx pardinus',
+    status: 'surviving',
+    iucn: 'VU',
+    image: commons(
+      'iberian-lynx.webp',
+      'Fix Planet illustration',
+      '',
+      '',
+      { width: 799, height: 613 },
+    ),
+    primarySources: [
+      cite('IUCN Red List, Lynx pardinus', 'https://www.iucnredlist.org/species/12520/218695618'),
+      cite('IUCN: Iberian lynx rebounding thanks to conservation action (2024)', 'https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list'),
+      cite('IUCN SSC Cat Specialist Group: Cat News Special Issue 17, The Iberian lynx (2024)', 'https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf'),
+      cite('Spanish Ministry for the Ecological Transition: Iberian lynx census 2025', 'https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf'),
+      cite('LIFE Iberlince: History', 'https://www.iberlince.eu/index_php/eng/project'),
+    ],
+  },
+  {
     slug: 'vaquita',
     scientificName: 'Phocoena sinus',
     status: 'endangered',

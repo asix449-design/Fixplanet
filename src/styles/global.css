@@ -4938,6 +4938,364 @@ a.map-card:hover {
   box-shadow: var(--shadow);
 }
 
+/* Surviving size scale */
+.size-scale-section {
+  --plot-h: clamp(230px, 64vw, 300px);
+  position: relative;
+  z-index: 1;
+  padding-top: 0.85rem;
+  padding-bottom: 0.2rem;
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+.size-scale-panel h2 {
+  margin-bottom: 0.35rem;
+}
+
+.size-scale-lead {
+  max-width: 42rem;
+  margin: 0 0 1rem;
+  color: #e4eee6;
+}
+
+.size-scale-figure {
+  margin: 0;
+}
+
+.size-scale-chart {
+  touch-action: pan-y;
+}
+
+.size-scale-plot-row {
+  display: grid;
+  grid-template-columns: 2.7rem minmax(0, 1fr);
+  column-gap: 0.4rem;
+  align-items: start;
+}
+
+.size-scale-y-title,
+.size-scale-x-title {
+  margin: 0;
+  color: #f4f4f0;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.size-scale-y-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0 0 0.4rem 3.1rem;
+}
+
+.size-scale-unit {
+  color: #d9d9d0;
+}
+
+.size-scale-y-ticks {
+  position: relative;
+  height: var(--plot-h);
+}
+
+.size-scale-board {
+  min-width: 0;
+  background: #070707;
+  border: 1px solid rgba(192, 255, 0, 0.22);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.size-scale-plot {
+  position: relative;
+  height: var(--plot-h);
+}
+
+.size-scale-grid,
+.size-scale-animals {
+  position: absolute;
+  inset: 0;
+}
+
+.size-scale-grid-h,
+.size-scale-grid-v {
+  position: absolute;
+  background: rgba(244, 244, 240, 0.14);
+  pointer-events: none;
+}
+
+.size-scale-grid-h {
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.size-scale-grid-v {
+  top: 0;
+  bottom: 0;
+  width: 1px;
+}
+
+.size-scale-baseline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #f4f4f0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.size-scale-animal {
+  display: none;
+  color: #c8c8be;
+  text-decoration: none;
+}
+
+.size-scale-stage:not(.is-ready) .size-scale-animal.is-front {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: min(78%, 420px);
+  height: 92%;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+.size-scale-stage.is-ready .size-scale-animal.is-on {
+  display: block;
+  position: absolute;
+}
+
+.size-scale-stage.is-ready .size-scale-animal.is-front {
+  color: var(--lime);
+}
+
+.size-scale-svg {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  overflow: visible;
+}
+
+.size-scale-animal.has-photo:not(.photo-failed) .size-scale-svg {
+  display: none;
+}
+
+.size-scale-photo {
+  display: none;
+  margin: 0;
+}
+
+.size-scale-animal.has-photo:not(.photo-failed) .size-scale-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.size-scale-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.size-scale-stage:not(.is-ready) .size-scale-animal.is-front .size-scale-svg,
+.size-scale-stage:not(.is-ready) .size-scale-animal.is-front .size-scale-photo,
+.size-scale-stage:not(.is-ready) .size-scale-animal.is-front .size-scale-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.size-scale-stage:not(.is-ready) .size-scale-animal.is-front .size-scale-photo img {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.size-scale-stage:not(.is-enhanced) .size-scale-nav,
+.size-scale-stage:not(.is-enhanced) .size-scale-range,
+.size-scale-stage:not(.is-enhanced) .size-scale-hint {
+  display: none;
+}
+
+.size-scale-tailgap {
+  min-height: 16px;
+}
+
+.size-scale-xticks {
+  position: relative;
+  height: 1.2rem;
+}
+
+.size-scale-tick {
+  position: absolute;
+  color: #d9d9d0;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.size-scale-tick-y {
+  right: 0.15rem;
+  transform: translateY(-50%);
+}
+
+.size-scale-tick-x {
+  top: 0.2rem;
+  transform: translateX(-50%);
+}
+
+.size-scale-tick-x:first-child {
+  transform: none;
+}
+
+.size-scale-x-title {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.1rem 0 0.55rem;
+}
+
+.size-scale-caption-block {
+  margin-top: 0.95rem;
+}
+
+.size-scale-position {
+  margin: 0;
+  color: #d9d9d0;
+  font-variant-numeric: tabular-nums;
+}
+
+.size-scale-name {
+  margin: 0.12rem 0 0.45rem;
+  font-size: 1.45rem;
+}
+
+.size-scale-measures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.size-scale-measures div {
+  margin: 0;
+}
+
+.size-scale-measures dt {
+  margin: 0;
+  color: #c2c2b8;
+  font-size: 0.82rem;
+}
+
+.size-scale-measures dd {
+  margin: 0.12rem 0 0;
+  font-size: 1.12rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.size-scale-caption {
+  margin: 0 0 0.45rem;
+}
+
+.size-scale-credit {
+  margin: 0 0 0.55rem;
+  color: #d9d9d0;
+  font-size: 0.92rem;
+  overflow-wrap: break-word;
+}
+
+.size-scale-open {
+  margin: 0 0 0.35rem;
+}
+
+.size-scale-sources {
+  margin-top: 0.2rem;
+}
+
+.size-scale-sources summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--lime);
+}
+
+.size-scale-sources ul {
+  margin: 0.2rem 0 0.4rem;
+  padding-left: 1.15rem;
+}
+
+.size-scale-sources li {
+  margin: 0 0 0.45rem;
+  font-size: 0.92rem;
+}
+
+.size-scale-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.85rem;
+}
+
+.size-scale-btn {
+  min-height: 44px;
+  min-width: 7.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--lime);
+  background: transparent;
+  color: var(--lime);
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.size-scale-btn:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.size-scale-range {
+  width: 100%;
+  margin: 0.7rem 0 0;
+  accent-color: var(--lime);
+}
+
+.size-scale-hint {
+  margin: 0.45rem 0 0;
+  color: #d0d0c6;
+  font-size: 0.92rem;
+}
+
+.size-scale-fallback {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.size-scale-fallback li {
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 800px) {
+  .size-scale-section {
+    --plot-h: 440px;
+  }
+}
+
+@media (max-width: 640px) {
+  .size-scale-measures {
+    grid-template-columns: 1fr;
+  }
+
+  .size-scale-btn {
+    flex: 1 1 8rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -3,6 +3,7 @@ import HubTile from '../components/HubTile.astro';
 import HumanDispersalMap from '../components/HumanDispersalMap.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import WildlifeCard from '../components/WildlifeCard.astro';
+import WildlifeSizeScale from '../components/WildlifeSizeScale.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   humanHeroImage,
@@ -177,6 +178,8 @@ const backdropHeight = hub ? wildlifeHubBackdrop.height : 1024;
       </>
     )
   }
+
+  {activeStatus === 'surviving' && <WildlifeSizeScale />}
 
   {
     activeStatus && (

@@ -1,0 +1,188 @@
+{
+  "lang": "ru",
+  "shared": {
+    "height": "Высота",
+    "length": "Длина",
+    "unit_short": "м",
+    "unit_word": "метров",
+    "open_page": "Открыть страницу",
+    "position": "{n} из {total}",
+    "hint": "Листайте или нажимайте клавиши со стрелками",
+    "section_title": "Шкала размеров",
+    "section_lead": "Каждое животное показано в полный размер, меньшие животные стоят позади."
+  },
+  "animals": {
+    "bald-eagle": {
+      "name": "Белоголовый орлан",
+      "height_label": "Высота стоя",
+      "length_label": "От клюва до кончика хвоста",
+      "caption": "Высота стоя около 0,8 м, от клюва до кончика хвоста 0,9 м",
+      "sources": [
+        "Национальное общество Одюбона, полевой определитель: белоголовый орлан (National Audubon Society, Audubon Field Guide: Bald Eagle). https://www.audubon.org/field-guide/bird/bald-eagle",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: белоголовый орлан (University of Michigan Museum of Zoology, Animal Diversity Web: Haliaeetus leucocephalus, bald eagle). https://animaldiversity.org/accounts/Haliaeetus_leucocephalus/",
+        "Национальная федерация дикой природы США, справочник о диких животных: белоголовый орлан (National Wildlife Federation, Wildlife Guide: Bald Eagle). https://www.nwf.org/Educational-Resources/Wildlife-Guide/Birds/Bald-Eagle",
+        "Инженерный корпус армии Соединённых Штатов, округ Рок-Айленд: «Белоголовый орлан», учебное пособие с заданиями (US Army Corps of Engineers, Rock Island District: The Bald Eagle, An Educational Activity Guide). https://www.mvr.usace.army.mil/Portals/48/docs/Recreation/ODM/pdf/Bald%20Eagle%20Activity%20Guide.pdf"
+      ]
+    },
+    "north-american-beaver": {
+      "name": "Канадский бобр",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,4 м, от носа до кончика хвоста 1,1 м",
+      "sources": [
+        "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: бобр (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver",
+        "Инфоплиз, Колумбийская энциклопедия: бобр (Infoplease, Columbia Encyclopedia: Beaver). https://www.infoplease.com/encyclopedia/ecology/animals/vertebrates/beaver",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: американский бобр (University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis, American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
+      ]
+    },
+    "wild-boar": {
+      "name": "Кабан",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,8 м, от носа до кончика хвоста 1,7 м",
+      "sources": [
+        "Группа специалистов по диким свиньям Международного союза охраны природы: кабан, подробный профиль (IUCN SSC Wild Pig Specialist Group: Eurasian Wild Boar, detailed profile). https://www.iucn-wpsg.org/eurasian-wild-boar-detailed",
+        "Дикая природа онлайн: кабан (Wildlife Online: Wild boar). https://www.wildlifeonline.me.uk/animals/species/wild-boar",
+        "Общество млекопитающих Великобритании: кабан (The Mammal Society: Wild boar). https://mammal.org.uk/british-mammals/wild-boar"
+      ]
+    },
+    "gray-wolf": {
+      "name": "Серый волк",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,8 м, от носа до кончика хвоста 1,7 м",
+      "sources": [
+        "Международный центр волка: частые вопросы о волках (International Wolf Center: Wolf FAQs). https://wolf.org/wolf-info/basic-wolf-info/wolf-faqs/",
+        "Справочные листы зоопарка Сан-Диего в библиотечном путеводителе: физические особенности серого волка (San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, Gray Wolf). https://ielc.libguides.com/sdzg/factsheets/graywolf/characteristics-page",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: серый волк (University of Michigan Museum of Zoology, Animal Diversity Web: Canis lupus, gray wolf). https://animaldiversity.org/accounts/Canis_lupus/"
+      ]
+    },
+    "arabian-oryx": {
+      "name": "Аравийский орикс",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,9 м, от носа до кончика хвоста около 2,1 м",
+      "sources": [
+        "Зоопарк Марвелл: аравийский орикс (Marwell Zoo: Arabian Oryx). https://www.marwell.org.uk/animals/arabian-oryx/",
+        "Справочник размеров: аравийский орикс, размеры и чертежи (Dimensions.com: Arabian Oryx Dimensions and Drawings). https://www.dimensions.com/element/arabian-oryx-oryx-leucoryx",
+        "Полный справочник по копытным: аравийский орикс (Ultimate Ungulate: Arabian oryx). https://www.ultimateungulate.com/Artiodactyla/Oryx_leucoryx.html",
+        "Электронная природа Катара: аравийский орикс, или белый орикс (Qatar e-Nature: Arabian Oryx, White Oryx). https://www.enature.qa/specie/arabian-oryx-white-oryx/",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: аравийский орикс (University of Michigan Museum of Zoology, Animal Diversity Web: Oryx leucoryx, Arabian oryx). https://animaldiversity.org/accounts/Oryx_leucoryx/"
+      ]
+    },
+    "red-deer": {
+      "name": "Благородный олень",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,1 м, от носа до кончика хвоста 2,2 м",
+      "sources": [
+        "Британское общество оленей: благородный олень (British Deer Society: Red Deer). https://bds.org.uk/information-advice/about-deer/deer-species/red-deer/",
+        "Дикая природа онлайн: благородный олень (Wildlife Online: Red deer). https://www.wildlifeonline.me.uk/animals/species/red-deer",
+        "Википедия: благородный олень (Wikipedia: Red deer). https://en.wikipedia.org/wiki/Red_deer"
+      ]
+    },
+    "brown-bear": {
+      "name": "Бурый медведь",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,2 м, от носа до кончика хвоста 1,8 м",
+      "sources": [
+        "Служба национальных парков США, медведи: бурые медведи (National Park Service, Bears: Brown Bears). https://www.nps.gov/subjects/bears/brown-bears.htm",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: бурый медведь (University of Michigan Museum of Zoology, Animal Diversity Web: Ursus arctos, brown bear). https://animaldiversity.org/accounts/Ursus_arctos/",
+        "Международная ассоциация по изучению медведей и управлению их популяциями: бурый медведь (International Association for Bear Research and Management: Ursus arctos, Brown bear). https://www.bearbiology.org/the-eight-bear-species/ursus-arctos-brown-bear/"
+      ]
+    },
+    "lion": {
+      "name": "Лев",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,2 м, от носа до кончика хвоста 2,7 м",
+      "sources": [
+        "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: лев (Smithsonian's National Zoo and Conservation Biology Institute: Lion). https://nationalzoo.si.edu/animals/lion",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: лев (University of Michigan Museum of Zoology, Animal Diversity Web: Panthera leo, lion). https://animaldiversity.org/accounts/Panthera_leo/",
+        "Африканский фонд дикой природы: лев (African Wildlife Foundation: Lion). https://www.awf.org/wildlife-conservation/lion",
+        "Путеводитель по парку Крюгера: лев, африканский лев (Kruger Park Guide: Lion, Leo Panthera, African Lion). https://www.krugerpark.co.za/africa_lion.html",
+        "Зоопарк Сан-Диего, животные и растения: лев (San Diego Zoo Animals and Plants: Lion). https://animals.sandiegozoo.org/animals/lion",
+        "Нэшнл Географик: африканский лев, факты и фотографии (National Geographic: African lion, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/african-lion"
+      ]
+    },
+    "american-bison": {
+      "name": "Американский бизон",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,7 м, от носа до кончика хвоста 3,1 м",
+      "sources": [
+        "Служба национальных парков США, национальный парк Теодора Рузвельта: бизон (National Park Service, Theodore Roosevelt National Park: Bison / Buffalo). https://www.nps.gov/thro/learn/nature/bison-buffalo.htm",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: американский бизон (University of Michigan Museum of Zoology, Animal Diversity Web: Bison bison, American bison). https://animaldiversity.org/accounts/Bison_bison/",
+        "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: американский бизон (Smithsonian's National Zoo and Conservation Biology Institute: American bison). https://nationalzoo.si.edu/animals/american-bison",
+        "Нэшнл Географик: американский бизон (National Geographic: American Bison). https://www.nationalgeographic.com/animals/mammals/facts/american-bison",
+        "Университет Небраски в Линкольне, энциклопедия Великих равнин: бизон (University of Nebraska-Lincoln, Encyclopedia of the Great Plains: Bison). https://plainshumanities.unl.edu/encyclopedia/doc/egp.pe.010.html"
+      ]
+    },
+    "european-bison": {
+      "name": "Зубр",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,8 м, от носа до кончика хвоста около 3,2 м",
+      "sources": [
+        "Комплексный проект по защите зубра, о зубрах: различия в размерах и массе тела (Comprehensive European Bison Conservation Project, wisent.org, About Bison: Differences in body size and mass). https://wisent.org/ozubrach/roznice-wymiarow-masy-ciala/",
+        "Тулин и соавторы для лесного общества Скугссельскапет: предварительное исследование о возвращении зубра в Швецию (Thulin et al. for Skogssallskapet: Feasibility study on reintroducing the wisent, European bison in Sweden). https://www.skogssallskapet.se/download/18.4fe06bf519b2be09250cbeae/1767096849492/Bilaga%202%2029._Thulin_et_al__2023__-_feasability_study_231219_eng.pdf",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: зубр (University of Michigan Museum of Zoology, Animal Diversity Web: Bison bonasus, European bison). https://animaldiversity.org/accounts/Bison_bonasus/",
+        "Полный справочник по копытным: зубр (Ultimate Ungulate: European bison, Wisent). https://www.ultimateungulate.com/Artiodactyla/Bison_bonasus.html",
+        "Одна Земля: возвращение могучего зубра с помощью местных сообществ (One Earth: Rewilding the mighty European bison with the help of local communities). https://www.oneearth.org/species-of-the-week-european-bison/"
+      ]
+    },
+    "white-rhinoceros": {
+      "name": "Белый носорог",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,7 м, от носа до кончика хвоста 4,3 м",
+      "sources": [
+        "Международный фонд защиты носорогов: белый носорог (International Rhino Foundation: White Rhino). https://rhinos.org/about-rhinos/rhino-species/white-rhino/",
+        "Международная организация «Спасём носорога»: белый носорог (Save the Rhino International: White Rhino). https://www.savetherhino.org/rhino-info/rhino-species/white-rhinos/",
+        "Зоопарк Торонто: белый носорог (Toronto Zoo: White rhinoceros). https://www.torontozoo.com/animals/White%20rhinoceros",
+        "Путеводитель по парку Крюгера: белый носорог (Kruger Park Guide: White Rhino, Ceratotherium Simum). https://www.krugerpark.co.za/africa_white_rhino.html",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: белый носорог (University of Michigan Museum of Zoology, Animal Diversity Web: Ceratotherium simum, white rhinoceros). https://animaldiversity.org/accounts/Ceratotherium_simum/",
+        "Нэшнл Географик: белый носорог (National Geographic: White Rhinoceros). https://www.nationalgeographic.com/animals/mammals/facts/white-rhinoceros"
+      ]
+    },
+    "african-savanna-elephant": {
+      "name": "Саванный слон",
+      "height_label": "Высота в холке",
+      "length_label": "От головы до кончика хвоста (хобот опущен)",
+      "caption": "Высота в холке 3,1 м, от головы до кончика хвоста (хобот опущен) около 5,7 м",
+      "sources": [
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: африканский саванный слон (University of Michigan Museum of Zoology, Animal Diversity Web: Loxodonta africana, African bush elephant). https://animaldiversity.org/accounts/Loxodonta_africana/",
+        "Справочные листы зоопарка Сан-Диего в библиотечном путеводителе: физические особенности африканских слонов (San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, African Elephants). https://ielc.libguides.com/sdzg/factsheets/african_elephant/characteristics",
+        "Нэшнл Географик: африканский слон, факты и фотографии (National Geographic: African elephant, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Досье животных: африканский слон (The Animal Files: African Elephant). https://www.theanimalfiles.com/mammals/elephants/african_elephant.html",
+        "Справочник размеров: африканский саванный слон, размеры и чертежи (Dimensions.com: African Bush Elephant, Loxodonta africana Dimensions and Drawings). https://www.dimensions.com/element/african-bush-elephant-loxodonta-africana",
+        "Нэшнл Географик для детей: африканский слон (National Geographic Kids: African Elephant). https://kids.nationalgeographic.com/animals/mammals/facts/african-elephant",
+        "Путеводитель по слонам: хобот слона, строение, функции и интересные факты (Elephant Guide: The Elephant Trunk, Anatomy, Functions and Fascinating Facts). https://elephantguide.com/what-is-the-elephant-trunk-and-what-does-it-do-for-an-elephant/"
+      ]
+    },
+    "humpback-whale": {
+      "name": "Горбатый кит",
+      "height_label": "Высота тела",
+      "length_label": "От морды до кончика хвоста",
+      "caption": "Высота тела около 3,3 м, от морды до кончика хвоста 16,2 м",
+      "sources": [
+        "Нэшнл Географик: горбатый кит, факты и фотографии (National Geographic: Humpback whale, facts and photos). https://www.nationalgeographic.com/animals/mammals/facts/humpback-whale",
+        "Технический университет Техаса, млекопитающие Техаса: описание вида, горбатый кит (Texas Tech University, Mammals of Texas: Species account of the Humpback Whale). https://www.depts.ttu.edu/nsrl/mammals-of-texas-online-edition/Accounts_Cetacea/Megaptera_novaeangliae.php"
+      ]
+    },
+    "iberian-lynx": {
+      "name": "Пиренейская рысь",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке около 0,5 м, от носа до кончика хвоста 0,9 м",
+      "sources": [
+        "Министерство экологического перехода и демографического вызова Испании, Испанская опись наземных видов: пиренейская рысь, карточка вида (Inventario Español de Especies Terrestres: Lynx pardinus). https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf",
+        "Группа специалистов по кошачьим Комиссии по выживанию видов Международного союза охраны природы: живые виды, пиренейская рысь (Living Species, Iberian lynx). https://www.catsg.org/living-species-iberianlynx",
+        "Проект Европейского союза по охране природы: пиренейская рысь, экология (LIFE Iberlince: Iberian lynx, Ecology). https://www.iberlince.eu/index_php/eng/lynx/ecology",
+        "Международное общество охраны исчезающих кошачьих, Канада: пиренейская рысь (International Society for Endangered Cats, ISEC Canada: Iberian Lynx). https://wildcatconservation.org/wild-cats/eurasia/iberian-lynx/",
+        "Международный фонд защиты животных: рысь, факты, угрозы и охрана (International Fund for Animal Welfare: Lynx, Facts, Threats, and Conservation). https://www.ifaw.org/animals/lynx"
+      ]
+    }
+  }
+}
