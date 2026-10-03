@@ -6,7 +6,6 @@ export const remittanceIds = [
   'remittances-top-recipients',
   'remittances-gdp-share',
   'remittances-sending-cost',
-  'remittances-wdi-series',
 ] as const;
 
 export type RemittanceId = (typeof remittanceIds)[number];
@@ -22,11 +21,7 @@ export const remittanceSourceKeys = [
   'reliefWeb',
   'wdiReceived',
   'wdiGdp',
-  'wdiPaid',
   'wdiCost',
-  'dataBank',
-  'knomadBrief',
-  'laborMobility',
   'pricesWorldwide',
   'pricesIssue50',
 ] as const;
@@ -44,11 +39,7 @@ export const remittanceSourceUrls: Record<RemittanceSourceKey, string> = {
     'https://reliefweb.int/report/world/remittances-slowed-2023-expected-grow-faster-2024-migration-and-development-brief-40-june-2024-enarru',
   wdiReceived: 'https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT',
   wdiGdp: 'https://data.worldbank.org/indicator/BX.TRF.PWKR.DT.GD.ZS',
-  wdiPaid: 'https://data.worldbank.org/indicator/BM.TRF.PWKR.CD.DT',
   wdiCost: 'https://data.worldbank.org/indicator/SI.RMT.COST.IB.ZS',
-  dataBank: 'https://databank.worldbank.org/source/world-development-indicators',
-  knomadBrief: 'https://www.worldbank.org/en/brief/2024/09/18/remittances-knomad',
-  laborMobility: 'https://www.worldbank.org/ext/en/topic/social-protection/migration',
   pricesWorldwide: 'https://remittanceprices.worldbank.org/',
   pricesIssue50:
     'https://remittanceprices.worldbank.org/sites/default/files/rpw_main_report_and_annex_q224.pdf',
@@ -67,11 +58,7 @@ export const remittanceSourceLabels: Record<Locale, Record<RemittanceSourceKey, 
       'World Bank — World Development Indicators, personal remittances received (current US dollars)',
     wdiGdp:
       'World Bank — World Development Indicators, personal remittances received as a share of GDP',
-    wdiPaid: 'World Bank — World Development Indicators, personal remittances paid (current US dollars)',
     wdiCost: 'World Bank — World Development Indicators, average cost of sending remittances to a country',
-    dataBank: 'World Bank DataBank — World Development Indicators',
-    knomadBrief: 'World Bank — Remittances (KNOMAD programme, 2013–2024)',
-    laborMobility: 'World Bank Group — Migration and Labor Mobility',
     pricesWorldwide: 'World Bank — Remittance Prices Worldwide',
     pricesIssue50: 'World Bank — Remittance Prices Worldwide, Issue 50 (June 2024)',
   },
@@ -88,15 +75,8 @@ export const remittanceSourceLabels: Record<Locale, Record<RemittanceSourceKey, 
       'Всемирный банк — World Development Indicators («Показатели мирового развития»): личные переводы полученные (в текущих долларах США)',
     wdiGdp:
       'Всемирный банк — World Development Indicators («Показатели мирового развития»): личные полученные переводы как доля ВВП',
-    wdiPaid:
-      'Всемирный банк — World Development Indicators («Показатели мирового развития»): личные переводы отправленные (в текущих долларах США)',
     wdiCost:
       'Всемирный банк — World Development Indicators («Показатели мирового развития»): средняя стоимость отправки денежных переводов в страну',
-    dataBank:
-      'Всемирный банк, DataBank — база World Development Indicators («Показатели мирового развития»)',
-    knomadBrief: 'Всемирный банк — денежные переводы (программа KNOMAD, 2013–2024)',
-    laborMobility:
-      'Группа Всемирного банка — «Миграция и трудовая мобильность» (Migration and Labor Mobility)',
     pricesWorldwide:
       'Всемирный банк — Remittance Prices Worldwide («Цены на денежные переводы в мире»)',
     pricesIssue50:
@@ -115,15 +95,8 @@ export const remittanceSourceLabels: Record<Locale, Record<RemittanceSourceKey, 
       'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane (w bieżących USD)',
     wdiGdp:
       'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane jako udział w PKB',
-    wdiPaid:
-      'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste wysłane (w bieżących USD)',
     wdiCost:
       'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): średni koszt wysłania przekazów pieniężnych do kraju',
-    dataBank:
-      'Bank Światowy, DataBank — baza World Development Indicators („Wskaźniki rozwoju świata”)',
-    knomadBrief: 'Bank Światowy — przekazy pieniężne (program KNOMAD, 2013–2024)',
-    laborMobility:
-      'Grupa Banku Światowego — „Migracja i mobilność siły roboczej” (Migration and Labor Mobility)',
     pricesWorldwide:
       'Bank Światowy — Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”)',
     pricesIssue50:
@@ -142,15 +115,8 @@ export const remittanceSourceLabels: Record<Locale, Record<RemittanceSourceKey, 
       'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): saņemtie personīgie pārvedumi (faktiskajās cenās, USD)',
     wdiGdp:
       'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): saņemtie personīgie pārvedumi kā IKP daļa',
-    wdiPaid:
-      'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): nosūtītie personīgie pārvedumi (faktiskajās cenās, USD)',
     wdiCost:
       'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): vidējās izmaksas, sūtot naudas pārvedumus uz valsti',
-    dataBank:
-      'Pasaules Banka, DataBank — datubāze World Development Indicators („Pasaules attīstības rādītāji”)',
-    knomadBrief: 'Pasaules Banka — naudas pārvedumi (programma KNOMAD, 2013–2024)',
-    laborMobility:
-      'Pasaules Bankas grupa — „Migrācija un darbaspēka mobilitāte” (Migration and Labor Mobility)',
     pricesWorldwide:
       'Pasaules Banka — Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”)',
     pricesIssue50:
@@ -219,22 +185,6 @@ export const remittanceMeta: RemittanceMeta[] = [
       'pricesIssue50',
       'brief40',
       'pressRelease',
-    ]),
-  },
-  {
-    id: 'remittances-wdi-series',
-    preview: 'remittances-wdi-series.jpg',
-    detail: 'detail/remittances-wdi-series.webp',
-    sourceLabel: 'WDI',
-    sourceUrl: remittanceSourceUrls.wdiReceived,
-    sourceKeys: ['wdiReceived', 'wdiGdp', 'wdiPaid', 'dataBank', 'knomadBrief', 'laborMobility'],
-    sources: remittanceSourcesFor('en', [
-      'wdiReceived',
-      'wdiGdp',
-      'wdiPaid',
-      'dataBank',
-      'knomadBrief',
-      'laborMobility',
     ]),
   },
 ];

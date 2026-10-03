@@ -10,7 +10,6 @@ export const page: MigrationPage = {
   title: 'Migration',
   hubLead: [
     'Migration is movement with a reason. Ice sheets open and close land bridges. Seasons shift rain, grass, insects, and plankton. Coasts, mountains, and deserts are barriers until they are not. People later add fences, lights, nets, armies, and, on top of those older natural rhythms, a warmer climate.',
-    'The globe above shows forced displacement: causes and flows. Under it, the international map shows 2023 net migration and the stock of people born abroad. Layers open named refugee camps, refugees under the mandate of the Office of the United Nations High Commissioner for Refugees, detections at the external borders of the European Union, internal displacement, remittances, and deaths and disappearances recorded by the Missing Migrants Project. Further down, Human migrations is the deep-history event atlas, including the Migration Period. Animal migrations are living mass movements: rain-following herds, butterfly range shifts, and Arctic flyways. Dates are ranges from named sources.',
   ],
   chooseShelf: 'Choose a shelf',
   filterAria: 'Migration sections',
@@ -26,37 +25,39 @@ export const page: MigrationPage = {
   pressure: 'What is changing',
   wildlifeLink: 'Wildlife species page →',
   tiles: {
-    today:
-      'Net migration by UN region for 2023, and who already lives where — stock, not this year’s arrivals.',
     humans:
       'Event maps first: Out of Africa, Sahul, farming, Bantu, Austronesian, the Migration Period, the slave trade. Named movements, not a year-by-year census.',
     'great-migrations':
       'Living mass movements and ice-age range shifts: Serengeti wildebeest, butterflies, Arctic birds, plus the mammoth steppe, Beringia, and the Holocene return.',
-    birds: 'Flyways, seasons, and species that still cross hemispheres for food and breeding.',
-    animals: 'Wildebeest, caribou, whales, bats — curated mammal migrations and their drivers.',
   },
   hubTitles: {
     humans: 'Human migrations',
     'great-migrations': 'Animal migrations',
   },
+  entrances: {
+    aria: 'Related pages',
+    refugees: {
+      title: 'Refugees and border detections',
+      text: 'Five large camps on 31 August 2026, five cards from the 2025 refugee trends, and European Union border detections for 2024 and 2025.',
+    },
+    remittances: {
+      title: 'Remittances',
+      text: 'Money migrants send home: global flows, the largest recipients, the share of a country’s economy, and the cost of sending.',
+    },
+    missing: {
+      title: 'Missing migrants',
+      text: 'Deaths and disappearances on migration routes, recorded by the Missing Migrants Project.',
+    },
+  },
   shelves: {
-    today: 'Today',
     humans: 'Humans',
     'great-migrations': 'Great migrations',
-    birds: 'Birds',
-    animals: 'Animals',
   },
   shelfLeads: {
-    today:
-      'A current-day map of international migration. Tablets are UN major-region net migration for 2023 (World Population Prospects 2024) — not invented arrivals and departures. Toggle refugees under UNHCR’s mandate, named camps, EU border detections (Frontex), and internal displacement (IDMC) as separate layers. The camps layer shows named sites, not the world’s refugee stock; that stock is in the Refugees (UNHCR) layer. Intra-regional movement often dominates; Africa → Europe is not drawn as the world’s main story.',
     humans:
       'Maps first: a timeline of major documented human-migration events, then a small figure and the encyclopedia. Homo sapiens arose in Africa about 300,000 years ago. Each card names when, where, and why — climate, ice, farming, war, trade, empire, slavery — only where scholarship supports it. This is not a map of everyone every fifty years. Attila and the Migration Period stay here; living movements live on Great migrations.',
     'great-migrations':
       'Living mass movements and climate-era range shifts — not Out of Africa and not a second Attila page. The Migration Period stays on Humans. Cards here name a driver, a season or a documented shift, and a source.',
-    birds:
-      'Seasonal bird migration is a food-and-breeding machine. Most long-distance species breed at higher latitudes in the long-day summer, then fly toward winter food. BirdLife and CMS describe families of flyways — schematic corridors, not GPS tracks of every flock.',
-    animals:
-      'Mammal migrations are fewer, heavier, and easier to break with a fence. Rain follows grass; ice and insects push caribou; whales follow krill and calves need warm shallows. Each card names a driver and a pressure.',
   },
   humans: {
     heroEyebrow: 'Our species',
@@ -342,25 +343,6 @@ export const page: MigrationPage = {
       },
     ],
   },
-  birds: {
-    flywaysTitle: 'Major flyway families',
-    flywaysAria: 'Schematic world map of major bird flyway families',
-    flywaysLead:
-      'BirdLife and the Convention on Migratory Species describe several flyway families linking breeding and non-breeding grounds. The lines below are a teaching schematic on NASA Blue Marble — not satellite tracks, not every species, and not political borders.',
-    flywaysHonesty:
-      'Schematic. Real flocks follow coasts, wetlands, and thermals inside these envelopes. A godwit’s Alaska–New Zealand crossing is a Pacific shortcut, not the East Asian–Australasian average.',
-    flywaysLegend: 'Named flyway families',
-    flywayEastAtlantic: 'East Atlantic',
-    flywayMississippi: 'Mississippi / Americas',
-    flywayPacificAmericas: 'Pacific Americas',
-    flywayEaaf: 'East Asian–Australasian',
-    flywayCentralAsian: 'Central Asian',
-    flywayAfricanEurasian: 'East African–West Asian',
-    flywaysSources:
-      'BirdLife International flyways programme; CMS. Envelope names vary slightly by author (Boere & Stroud compilations). This plate does not invent a seventh “world flyway.”',
-    flywaysBaseCredit:
-      'Base land: NASA Blue Marble Next Generation (December 2004, public domain).',
-  },
   today: enToday,
 };
 
@@ -436,7 +418,7 @@ export const entries: Record<string, MigrationEntryCopy> = {
     title: 'Arctic migratory birds',
     hook: 'Terns, peregrines, shorebirds, geese: the Arctic summer is a short feast of food, and winter is spent elsewhere.',
     imageAlt: 'Arctic terns flying over a cold northern coast — a stand-in for high-latitude bird migration, not a named colony',
-    what: 'This is a class card, not a second Arctic tern encyclopedia and not a third “routes after ice” page. Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again. Thorup et al. (PNAS, 2021) hindcast the red-backed shrike’s Afro-Palearctic loop for 120,000 years: seasonal migration likely persisted through the glacial, often inside Africa; suitable European summer habitat expanded again after the LGM. That is a modeled class example, not a second bird-routes encyclopedia.',
+    what: 'Many birds that breed on Arctic and sub-Arctic tundra leave when the light and insects fail. Arctic terns run pole-to-pole (Egevang et al. 2010). Peregrine falcons follow prey along coasts and flyways. Shorebirds (godwits, knots, sandpipers) stage on a few mudflats. Geese follow grass and thaw. BirdLife and CMS describe the flyway families; CAFF’s Arctic Biodiversity Assessment is the regional synthesis. Seasonal migration already existed in the glacial (models run tens of thousands of years). What changed after the ice was geography: breeding compressed south, especially in North America under the Laurentide sheet, then the Holocene opened the Arctic summer again. Thorup et al. (PNAS, 2021) hindcast the red-backed shrike’s Afro-Palearctic loop for 120,000 years: seasonal migration likely persisted through the glacial, often inside Africa; suitable European summer habitat expanded again after the last glacial maximum. That is a modeled class example.',
     route:
       'Breeding in the long Arctic day; non-breeding grounds in temperate or tropical wetlands, coasts, or — for terns — Antarctic pack ice. East Atlantic, East Asian–Australasian, Mississippi, and Pacific Americas flyways all carry Arctic breeders. Gu et al. (Nature, 2021) tracked Eurasian Arctic peregrines on five modern flyways and argue those routes formed as breeding grounds shifted through the Last Glacial Maximum into the Holocene. Thorup’s shrike model is the Afro-Palearctic counterpart: a loop that survived glaciation by shifting breeding latitude, not by inventing migration from scratch. The lines are envelopes, not GPS of every flock. A godwit’s Alaska–New Zealand crossing is a Pacific shortcut, not the average.',
     drivers:
@@ -444,9 +426,9 @@ export const entries: Record<string, MigrationEntryCopy> = {
     timing:
       'North in the northern spring, south after breeding. Arrival has shifted earlier in some populations as springs warm — phenology, not a new flyway. Treat headline kilometre records as named tracking papers.',
     pressure:
-      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife treat Arctic migrants as a shared flyway problem, not a single-species museum piece. The Arctic tern species page stays on the old deep URL if you want the 70,000 km paper alone.',
+      'Climate is moving ice edges, thaw dates, and prey. Reclamation of Yellow Sea and other staging flats removes fuel depots. Hunting, disturbance, and fisheries add local losses. CAFF and BirdLife together protect Arctic migrants along their routes.',
     sourcesNote:
-      'Egevang et al. 2010 for terns; Gu et al. 2021 for peregrine flyway assembly after the ice; Thorup et al. 2021 for the red-backed shrike loop across 120,000 years; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS. This card does not invent a headcount of every Arctic migrant or a second bird-routes encyclopedia.',
+      'Egevang et al. 2010 for terns; Gu et al. 2021 for peregrine flyway assembly after the ice; Thorup et al. 2021 for the red-backed shrike loop across 120,000 years; BirdLife flyways; CAFF Arctic Biodiversity Assessment; CMS.',
   },
   'hunnic-invasion': {
     title: 'Hunnic pressure on Rome',
@@ -465,102 +447,6 @@ export const entries: Record<string, MigrationEntryCopy> = {
     sourcesNote:
       'Ammianus 31 is the primary narrative for 376. Heather 1995 is the standard political-military reading. Hakenbeck & Büntgen 2022 is the climate paper for the 430s–450s raids — labeled as such. The photograph is a 2006 museum copy of a cauldron type, not an excavated original.',
   },
-  'arctic-tern': {
-    title: 'Arctic tern',
-    hook: 'The longest regular commute on Earth: polar summer to polar summer, following light and food.',
-    imageAlt: 'An Arctic tern hovering over tundra on Amsterdamøya, Svalbard',
-    what: 'The Arctic tern breeds in the Arctic and sub-Arctic and spends the opposite season in Antarctic waters. It is a small tern, IUCN Least Concern, famous because geolocators showed a round trip on the order of 70,000 kilometres — not because it is rare.',
-    route:
-      'Greenland and other North Atlantic breeders tracked by Egevang et al. (2010) left breeding colonies, paused in the North Atlantic, crossed to the West African coast or continued, and reached Antarctic pack ice before returning. Pacific populations run a parallel pole-to-pole pattern. The path is a figure of food patches, not a straight meridian.',
-    drivers:
-      'The driver is seasonal production. High-latitude summers offer long days and abundant small fish and invertebrates; polar winters do not. Following summer around the globe is a food strategy. Wind and ocean fronts steer the cheap route. This is not escape from ice ages in the human sense — it is an annual photoperiod and forage clock.',
-    timing:
-      'Breeding in the northern summer; Antarctic waters in the southern summer. Egevang et al. estimated about 70,900 km for Greenland birds. Later tracking of other populations has produced still longer totals. Treat “the longest migration” as a class of very long pelagic loops, not one sacred number.',
-    pressure:
-      'Climate is shifting the ice edge and the timing of prey. Coastal development and disturbance at colonies, and fisheries that remove forage fish, matter more than a fence. The species is still widespread. The commute is not a museum piece.',
-    sourcesNote:
-      'Distance from Egevang et al., PNAS, 2010. IUCN Least Concern. Later papers lengthen some tracks; they do not invent a different species story.',
-  },
-  'bar-tailed-godwit': {
-    title: 'Bar-tailed godwit',
-    hook: 'Alaska to New Zealand without landing: a gut shrunk for fuel, and a Yellow Sea that still has to be there on the way back.',
-    imageAlt: 'A bar-tailed godwit standing in shallow water',
-    what: 'The bar-tailed godwit is a large shorebird. The subspecies baueri breeds in Alaska and winters in New Zealand and eastern Australia. IUCN lists the species Near Threatened because several populations are falling, especially where East Asian mudflats have been reclaimed.',
-    route:
-      'Gill et al. (2009) and Battley et al. (2012) documented southbound non-stop flights from Alaska to New Zealand — Battley’s birds averaged 11,680 km in 9.4 days, without feeding. Northbound, many birds stage on the Yellow Sea. That is a different, stopover-dependent leg, not another non-stop ocean crossing.',
-    drivers:
-      'Breeding is timed to the brief Arctic insect and tundra-food summer. Wintering grounds in the south offer intertidal food when Alaska is frozen. The non-stop southbound leg is possible because the birds shrink digestive organs and load fat — a physiological bet on a clear Pacific. The return depends on intact Yellow Sea tidal flats: food, not willpower.',
-    timing:
-      'Southbound in the northern autumn; northbound in the northern spring, with a Yellow Sea stop for baueri. Treat headline “longest non-stop” figures as tracked individuals in named papers, not a species average every year.',
-    pressure:
-      'Reclamation of Yellow Sea mudflats (Saemangeum and others) removed staging habitat. That is a human barrier in the flyway sense: the birds can still fly, but the fuel depot is smaller. Hunting and disturbance add local losses. Climate shifts Arctic breeding windows relative to thaw.',
-    sourcesNote:
-      'Gill 2009 and Battley 2012 are the primary tracking papers cited here. IUCN Near Threatened for the species as a whole.',
-  },
-  'barn-swallow': {
-    title: 'Barn swallow',
-    hook: 'The ordinary miracle: a small insect-eater that still knits Palearctic summers to African winters.',
-    imageAlt: 'A barn swallow perched on a dry stem',
-    what: 'The barn swallow is one of the most widespread swallows, IUCN Least Concern. European and northern Asian birds are long-distance migrants; some tropical populations move less. It is here as the familiar flyway bird, not an extreme-distance record.',
-    route:
-      'Western Palearctic breeders funnel through the Mediterranean and the Sahara toward southern African non-breeding areas; eastern birds use Asian routes. The Sahara is a barrier of heat and emptiness, crossed on a schedule, not a wall that ends the journey. Americas populations of the same species have their own north–south system.',
-    drivers:
-      'Aerial insects peak with temperate summers. African non-breeding grounds keep insects available when Europe is cold. Nesting on barns and bridges is a human-built bonus, not the original driver — caves and cliffs came first. Weather on crossing days kills more birds than a lack of “instinct.”',
-    timing:
-      'North in the northern spring, south in autumn. Arrival dates have shifted earlier in parts of Europe as springs warm — a phenology change, not a new flyway.',
-    pressure:
-      'Agricultural intensification reduces insect prey. Drought on African non-breeding grounds and storms on Sahara crossings add mortality. The species remains common; common is not the same as uncountable forever.',
-    sourcesNote:
-      'IUCN Least Concern; BirdLife factsheet for range and flyway family. This card does not invent a single GPS track for “the swallow.”',
-  },
-  'white-stork': {
-    title: 'White stork',
-    hook: 'A soaring migrant that treats the Mediterranean as a problem: water has no thermals, so the birds go around.',
-    imageAlt: 'A white stork in flight carrying a GPS transmitter',
-    what: 'The white stork is a large soaring wader of wetlands and farmland, IUCN Least Concern after a twentieth-century crash and later recovery in parts of Europe. It is a flagship of the African–Eurasian flyway system.',
-    route:
-      'Most western birds cross at the Strait of Gibraltar; eastern birds use the Bosporus and the Levant — two narrow land bridges around a sea that does not offer rising air. They then follow the African Rift and savannas. A growing share of western storks now winters in southern Europe on landfills. That is a shortened migration, not a new species.',
-    drivers:
-      'Storks need thermals, so they are land-bridge migrants. Breeding is timed to European springs and the burst of amphibians, insects, and small vertebrates. Non-breeding food in Africa is seasonal wetlands and grassland. Rubbish dumps later became an energy subsidy that lets some birds skip the Sahara.',
-    timing:
-      'South after the northern breeding season; north in spring. Juveniles may take different routes from adults. Transmitters (as in the photograph) are how this is known — not folklore about babies.',
-    pressure:
-      'Power lines, wetland drainage, and drought along the African route. Landfill wintering in Iberia is a real behavioural shift with mixed consequences (easy calories, dirty ones). The species recovered in Europe under protection and nest platforms; that is management, not a guarantee for African stages.',
-    sourcesNote:
-      'IUCN Least Concern; BirdLife factsheet. AEWA covers many of the wetlands these birds use. The landfill wintering is reported in the tracking literature; it is not invented here.',
-  },
-  'amur-falcon': {
-    title: 'Amur falcon',
-    hook: 'A small falcon from the Russian Far East that crosses India and the Arabian Sea to spend the northern winter in southern Africa.',
-    imageAlt: 'An Amur falcon in flight against a pale sky',
-    what: 'The Amur falcon breeds in East Asia (Russian Far East, northern China, adjacent regions) and winters in southern Africa. IUCN Least Concern. Among raptors it is one of the longest-distance regular migrants.',
-    route:
-      'Birds leave East Asia, stage in northeastern India (Nagaland became famous for both a massacre and a conservation reversal), then cross the Indian Ocean / Arabian Sea toward East and southern Africa. The ocean crossing is a real water barrier, not a soaring land-bridge hop like the stork’s Gibraltar.',
-    drivers:
-      'Breeding follows the East Asian summer pulse of insects (especially flying termites and other swarmers). African non-breeding grounds offer a second summer of the same prey class. The route is a food corridor with a dangerous sea in the middle, not a climate-refugee story.',
-    timing:
-      'Southbound in the northern autumn, with a concentrated passage through northeast India; northbound in the northern spring. Dates are seasonal windows, not a single calendar day.',
-    pressure:
-      'The Nagaland harvest of roosting birds was large enough to make international news; local protection then turned the same roosts into a watching economy. That is human pressure reversed in one bottleneck, not a global all-clear. Habitat change and pesticides on both ends of the flyway remain ordinary threats.',
-    sourcesNote:
-      'IUCN Least Concern; CMS notes on the Nagaland turnaround. This card does not invent a kilometre record; “among the longest raptor migrations” is the honest class.',
-  },
-  'bar-headed-goose': {
-    title: 'Bar-headed goose',
-    hook: 'A goose that crosses the Himalaya because the breeding lakes lie north of the wall, and the wintering wetlands lie south of it.',
-    imageAlt: 'A bar-headed goose standing in shallow water',
-    what: 'The bar-headed goose breeds on high Central Asian plateaus and winters in South Asia. IUCN Least Concern. Hawkes et al. (2011) showed birds flying over the Himalayan ridges rather than only threading the lowest valleys.',
-    route:
-      'North of the Himalaya in the breeding season (Tibetan Plateau and adjacent lakes); south to the Indian subcontinent in winter. The mountain range is the barrier. The birds go over it on a schedule, using winds and a physiology tuned to thin air — not a tunnel through the range.',
-    drivers:
-      'Breeding on predator-poor, food-rich plateau wetlands in summer; winter food on the Indian plains when the plateau freezes. The Himalaya is geography, not a season. Oxygen and wind are the immediate physical drivers of how, not why, they cross.',
-    timing:
-      'Southbound in autumn, northbound in spring, timed to thaw and freeze on the plateau. Exact ridge-crossing altitudes vary by individual and weather; the PNAS work is the named source, not a folklore “over Everest every time.”',
-    pressure:
-      'Wetland loss on the wintering grounds, hunting, and power infrastructure. Climate change shifts snow and lake ice on the breeding plateau. The species is not globally rare; the crossing still depends on wetlands on both sides of the wall.',
-    sourcesNote:
-      'Hawkes et al., PNAS, 2011, is the physiology-and-flight paper cited here. IUCN Least Concern.',
-  },
   wildebeest: {
     title: 'Blue wildebeest',
     hook: 'Rain draws the map: more than a million animals still follow fresh grass across the Serengeti–Mara.',
@@ -576,85 +462,5 @@ export const entries: Record<string, MigrationEntryCopy> = {
       'Fences, farms, and roads can cut a loop that only works if the plains remain connected. Drought years already kill calves. The Serengeti–Mara system is still large; the same species elsewhere has been reduced to resident fragments. That contrast is the conservation point.',
     sourcesNote:
       'UNESCO Serengeti listing; Holdo et al. 2009 for the rainfall–grass mechanism; IUCN Least Concern for the species. Herd size is on the order of a million-plus in this ecosystem and is counted, not guessed here as a slogan.',
-  },
-  caribou: {
-    title: 'Caribou / reindeer',
-    hook: 'The same species: tundra herds that still walk hundreds of kilometres between calving grounds and winter woods.',
-    imageAlt: 'A reindeer walking across bare northern ground',
-    what: 'Rangifer tarandus is caribou in North America and reindeer in Eurasia. IUCN lists the species Vulnerable because many wild herds have fallen, even while some domestic reindeer remain numerous. The photograph is a Fennoscandian animal; the ecology below covers the wild migratory herds, including Alaska–Yukon’s Porcupine herd.',
-    route:
-      'Tundra-calving herds move north or onto peninsulas for insect relief and nutritious new forage in summer, then south or into boreal forest and taiga for winter lichens and shelter. Joly et al. (2019) documented some of the longest terrestrial migrations on the continent. Routes are traditional and also plastic when ice, snow, or development blocks them.',
-    drivers:
-      'Calving grounds are chosen for forage and, often, fewer predators. Summer insects (warble flies, mosquitoes) can push animals onto windy coasts. Winter food is lichen under snow — a climate and snow-crust problem as much as a distance problem. This is a seasonal Arctic clock, with ice and snow as the barriers.',
-    timing:
-      'Northward toward calving in spring; summer movements for insects and food; southward in autumn. Ice-road and migration timing can collide with industry calendars.',
-    pressure:
-      'Industrial footprints, roads, and proposed oil development on calving grounds (the Arctic Refuge coastal plain is the U.S. political flashpoint for the Porcupine herd). Climate changes snow crust, icing events, and insect seasons. IUCN Vulnerable is the species-level warning; some herds are stable or recovering, others are not.',
-    sourcesNote:
-      'IUCN Vulnerable; Joly et al. 2019 for long-distance movements; USFWS Porcupine herd pages. Domestic reindeer herding is a parallel human story, not substituted here for wild migration.',
-  },
-  'humpback-whale': {
-    title: 'Humpback whale',
-    hook: 'Feed in the cold, calve in the warm: a pole-to-tropics commute in every ocean basin that still has the prey.',
-    imageAlt: 'A humpback whale diving, showing its black-and-white tail flukes',
-    what: 'The humpback is a long-finned baleen whale. IUCN listed it Least Concern in 2018 after several ocean-basin recoveries from industrial whaling. Some stocks remain small. Wildlife keeps the species card; this page is the migration.',
-    route:
-      'In each ocean, many populations feed at high latitudes in summer and swim to tropical or subtropical breeding grounds in winter — for example, North Pacific feeding areas to Hawaii or Mexico, or Southern Ocean feeding to the Great Barrier Reef and other tropical coasts. Not every individual migrates every year. Equator crossings differ by population; do not draw one global racetrack.',
-    drivers:
-      'Polar and subpolar summers produce dense krill and small fish. Calves have less fat and benefit from warmer, quieter waters with fewer predators. Mating is tied to those breeding grounds. The driver is a food/breeding split across latitude, not a flyway of thermals.',
-    timing:
-      'Feeding in the high-latitude summer; breeding in the low-latitude winter of that hemisphere. Southern and northern hemisphere populations are on opposite calendars.',
-    pressure:
-      'Entanglement in fishing gear, ship strikes, noise, and a changing krill map as oceans warm. Commercial whaling is no longer the main global driver; recovery is real in several stocks and incomplete in others. See Wildlife for the conservation frame.',
-    sourcesNote:
-      'IUCN 2018 Least Concern; NOAA Fisheries species profile for U.S. stocks and the feeding/breeding pattern. This is not a count of every basin’s animals.',
-  },
-  'gray-whale': {
-    title: 'Gray whale',
-    hook: 'Among the longest mammal commutes still running: Arctic feeding to Mexican lagoons, along one populated coast.',
-    imageAlt: 'A gray whale spyhopping, lifting its head above the water',
-    what: 'The gray whale is a baleen whale of the North Pacific. The Eastern North Pacific stock is the one whose migration is watched from the American west coast; the Western stock is far smaller and Endangered in IUCN’s assessment of that population. The species overall is Least Concern.',
-    route:
-      'Eastern Pacific whales feed in the Bering and Chukchi seas in summer, then follow the North American coast to wintering lagoons in Baja California. NOAA describes a round trip on the order of 15,000–20,000 km. The path is coastal, which is why people see it — and why ships and nets sit on the same line.',
-    drivers:
-      'Arctic benthic amphipods and other seafloor prey are a summer resource. Calves are born in warm, shallow lagoons. Ice cover historically set when the north opened. This is a food/breeding latitudinal split with a coastal constraint, not an open-ocean wander like some humpback legs.',
-    timing:
-      'Southbound in the northern autumn and winter; northbound in spring, cows with calves later than the first wave. Ice and prey in the Arctic can delay or starve a year — unusual mortality events have been documented when that system fails.',
-    pressure:
-      'Ship strikes and entanglement on a busy coast; disturbance in lagoons; Arctic warming that rearranges prey and ice. The eastern stock recovered from whaling; that recovery is not a shield against a food-web shift in the Bering Sea.',
-    sourcesNote:
-      'NOAA Fisheries gray whale profile for the Eastern North Pacific route and distance class; IUCN for status, including the western stock’s separate danger.',
-  },
-  'mexican-free-tailed-bat': {
-    title: 'Mexican free-tailed bat',
-    hook: 'Tens of millions leave Texas caves at dusk for insects — and many of the same animals also commute seasonally toward Mexico.',
-    imageAlt: 'A column of Mexican free-tailed bats pouring out of Bracken Bat Cave at dusk',
-    what: 'Tadarida brasiliensis is a small, fast insectivorous bat of the Americas, IUCN Least Concern. Bracken Cave in Texas holds the largest known colony — on the order of 15 million animals in season, managed by Bat Conservation International. The photograph is an evening emergence, the daily pulse; the migration is the seasonal shift of many (not all) temperate colonies.',
-    route:
-      'Some populations are resident. Many temperate North American colonies move toward Mexico and the southern U.S. for winter. The flyway is a broad night sky, not a coastal mudflat. Maternity roosts in the south-central U.S. concentrate females in summer.',
-    drivers:
-      'Aerial insects. Summer maternity roosts sit where nights yield enough moths and beetles to raise pups. Winter insect lows push some bats south. The daily column at Bracken is a local harvest of insects over farmland — a vertical commute on top of the seasonal one.',
-    timing:
-      'Evening emergence is nightly in season. Seasonal movement is between summer maternity roosts and wintering areas, timed to insect phenology. Not every individual migrates.',
-    pressure:
-      'Cave disturbance, pesticides that remove prey, and turbines that sit in night flyways. White-nose syndrome has been a catastrophe for other North American bats; this species’ story is still mainly habitat, insects, and collision. Guano historically made the caves an industrial resource; protection reversed that at Bracken.',
-    sourcesNote:
-      'IUCN Least Concern; Bat Conservation International on Bracken Cave. Colony size is an order-of-magnitude managed estimate, not a census of every bat in the Americas.',
-  },
-  'straw-coloured-fruit-bat': {
-    title: 'Straw-coloured fruit bat',
-    hook: 'Africa’s mass fruit-bat gathering: millions converge on a tiny Zambian swamp forest when the trees fruit.',
-    imageAlt: 'A straw-coloured fruit bat hanging from a branch',
-    what: 'Eidolon helvum is a large African fruit bat, IUCN Near Threatened. Kasanka National Park in Zambia hosts one of the densest mammal aggregations on Earth each southern-hemisphere spring — on the order of several million bats in a few hectares of mushitu swamp forest — then the animals disperse.',
-    route:
-      'Richter & Cumming (2008) satellite-tagged bats and showed long-distance movements across Central Africa, not a single two-point commute. Kasanka is a seasonal node where fruiting trees concentrate animals that otherwise range over rainforest and savanna mosaics. Treat it as a gathering on a resource pulse, with long transits between roosts.',
-    drivers:
-      'Fruit. Trees fruit in space and time; the bats track that phenology. Kasanka’s swamp forest offers a brief, dense crop. This is a resource-tracking migration, closer to wildebeest-and-grass than to an Arctic photoperiod. Water and roost trees are the local constraints.',
-    timing:
-      'Peak at Kasanka is typically October–December. The rest of the year the same animals are elsewhere in a wide African range. Do not freeze the species as “the Kasanka bat.”',
-    pressure:
-      'Hunting for bushmeat, tree loss at roosts, and a Near Threatened listing that already flags decline in parts of the range. The Kasanka spectacle can look infinite from a hide and still sit inside a falling regional population. Habitat outside the park is the rest of the route.',
-    sourcesNote:
-      'Richter & Cumming 2008 for satellite tracks; IUCN Near Threatened. Kasanka numbers are famous and still estimates of a dense roost, not a continent-wide census.',
   },
 };

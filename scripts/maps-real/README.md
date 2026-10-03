@@ -77,7 +77,6 @@ Downloads are stored in `scripts/maps-real/raw/` and are listed in `.gitignore`.
 | `remittances-gdp-share` | World Bank World Development Indicators, personal remittances received as a percentage of GDP, 2024. Log choropleth | World Bank API | CC BY 4.0 |
 | `remittances-sending-cost` | World Bank World Development Indicators, average cost of sending remittances to a country (%), 2023. Positive values only. Log choropleth | World Bank API | CC BY 4.0 |
 | `remittances-global-flows` | Migration and Development Brief 40, Table 1.1, low- and middle-income total, 2017–2023, billions of US dollars. Bars, not a map | World Bank Brief 40 PDF | CC BY 3.0 IGO |
-| `remittances-wdi-series` | World Bank World Development Indicators world totals: personal remittances received 1970–2024 (orange) and paid 1966–2024 (blue), billions of current US dollars | World Bank API | CC BY 4.0 |
 | `mineral-resources` | USGS Mineral Resources Data System deposit locations | https://mrdata.usgs.gov/mrds/mrds-csv.zip | Public domain (USGS) |
 
 GIBS GetMap endpoint:

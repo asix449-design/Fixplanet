@@ -113,33 +113,5 @@ export const enRemittances: RemittanceCopy = {
       ],
       plate: 'Map: average cost of sending remittances to a country, 2023, World Bank World Development Indicators. These figures differ from the global averages in the text.',
     },
-    'remittances-wdi-series': {
-      tag: 'Data · WDI',
-      title: 'Personal remittances in World Development Indicators',
-      hook: 'After the brief series from the World Bank’s global partnership on migration and development ended in 2024, World Development Indicators continue to publish country time series for personal remittances received and paid in US dollars, and for remittances received as a share of GDP.',
-      figure: '857',
-      unit: 'billion US dollars received, world, 2024',
-      rows: [
-        { label: 'Received, world, 2024', figure: 'about $857 billion' },
-        { label: 'Paid, world, 2024', figure: 'about $619 billion' },
-        { label: 'Received line', figure: '1970–2024' },
-        { label: 'Paid line', figure: '1966–2024' },
-      ],
-      sections: [
-        {
-          heading: 'What it is',
-          body: 'Three World Development Indicators series: personal remittances received (current US$), personal remittances received (% of GDP), and personal remittances paid (current US$). Readers can explore them country by country on the World Bank’s open-data indicator pages and in the World Development Indicators database on DataBank, which keep updating after the Migration and Development Brief series closed.',
-        },
-        {
-          heading: 'Why it matters',
-          body: 'Readers who want long country time series alongside the latest global headline need a series that keeps updating. WDI remains the World Bank’s standard country table for personal remittances.',
-        },
-        {
-          heading: 'How to read it',
-          body: 'WDI personal remittances follow balance-of-payments rules, so annual totals can differ from the World Bank’s headline estimate of flows to low- and middle-income countries. Each indicator page offers country charts, a world map and downloadable data.',
-        },
-      ],
-      plate: 'Chart: world totals of personal remittances received, 1970–2024, and paid, 1966–2024, World Bank World Development Indicators. These figures follow balance-of-payments definitions.',
-    },
   },
 };
