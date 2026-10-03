@@ -1,53 +1,5 @@
 [
   {
-    "slug": "arctic-tern",
-    "file": "arctic-tern.jpg",
-    "commonsTitle": "Arctic tern (Sterna paradisaea) attacking, Amsterdam island, Svalbard.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arctic_tern_(Sterna_paradisaea)_attacking,_Amsterdam_island,_Svalbard.jpg",
-    "artist": "AWeith",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "slug": "bar-tailed-godwit",
-    "file": "bar-tailed-godwit.jpg",
-    "commonsTitle": "Bar-tailed Godwit.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bar-tailed_Godwit.jpg",
-    "artist": "Andreas Trepte",
-    "license": "CC BY-SA 2.5"
-  },
-  {
-    "slug": "barn-swallow",
-    "file": "barn-swallow.jpg",
-    "commonsTitle": "Hirundo rustica Ormoz.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hirundo_rustica_Ormoz.jpg",
-    "artist": "Yerpo",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "slug": "white-stork",
-    "file": "white-stork.jpg",
-    "commonsTitle": "White stork (Ciconia ciconia) in flight with transmitter.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_stork_(Ciconia_ciconia)_in_flight_with_transmitter.jpg",
-    "artist": "Charles J. Sharp",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "slug": "amur-falcon",
-    "file": "amur-falcon.jpg",
-    "commonsTitle": "Falco amurensis in flight.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Falco_amurensis_in_flight.jpg",
-    "artist": "Touhid biplob",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "slug": "bar-headed-goose",
-    "file": "bar-headed-goose.jpg",
-    "commonsTitle": "Bar-headed Goose.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bar-headed_Goose.jpg",
-    "artist": "Ron Knight",
-    "license": "CC BY 2.0"
-  },
-  {
     "slug": "wildebeest",
     "file": "wildebeest.jpg",
     "commonsTitle": "Blue wildebeest (Connochaetes taurinus taurinus) female and calf.jpg",
@@ -56,51 +8,11 @@
     "license": "CC BY-SA 4.0"
   },
   {
-    "slug": "caribou",
-    "file": "caribou.jpg",
-    "commonsTitle": "20070818-0001-strolling reindeer.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20070818-0001-strolling_reindeer.jpg",
-    "artist": "Alexandre Buisse",
-    "license": "CC BY-SA 3.0"
-  },
-  {
-    "slug": "humpback-whale",
-    "file": "humpback-whale.jpg",
-    "commonsTitle": "Humpback stellwagen edit.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_stellwagen_edit.jpg",
-    "artist": "Whit Welles",
-    "license": "CC BY 3.0"
-  },
-  {
-    "slug": "gray-whale",
-    "file": "gray-whale.jpg",
-    "commonsTitle": "Gray Whale Spyhopping courtesy of Marc Webber USFWS.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_Whale_Spyhopping_courtesy_of_Marc_Webber_USFWS.jpg",
-    "artist": "Marc Webber / U.S. Fish and Wildlife Service",
-    "license": "Public domain"
-  },
-  {
-    "slug": "mexican-free-tailed-bat",
-    "file": "mexican-free-tailed-bat.jpg",
-    "commonsTitle": "Mexican free-tailed bats exiting Bracken Bat Cave (8006833815).jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mexican_free-tailed_bats_exiting_Bracken_Bat_Cave_(8006833815).jpg",
-    "artist": "U.S. Fish and Wildlife Service Headquarters",
-    "license": "Public domain"
-  },
-  {
-    "slug": "straw-coloured-fruit-bat",
-    "file": "straw-coloured-fruit-bat.jpg",
-    "commonsTitle": "Eidolon helvum 283616286.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eidolon_helvum_283616286.jpg",
-    "artist": "Jan Vršovský",
-    "license": "CC BY-SA 4.0"
-  },
-  {
     "slug": "homo-sapiens",
     "file": "homo-sapiens.png",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated naturalistic figure — not a portrait of a named person",
+    "artist": "Fix Planet generated naturalistic figure \u2014 not a portrait of a named person",
     "license": "Site asset"
   },
   {
@@ -108,7 +20,7 @@
     "file": "medieval-commoner.png",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated medieval commoner — simply dressed peasant, not a king and not a portrait of a named person",
+    "artist": "Fix Planet generated medieval commoner \u2014 simply dressed peasant, not a king and not a portrait of a named person",
     "license": "Site asset"
   },
   {
@@ -116,7 +28,7 @@
     "file": "mammoth-steppe-collapse.jpg",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated naturalistic mammoth-steppe dusk — not a named bone bed",
+    "artist": "Fix Planet generated naturalistic mammoth-steppe dusk \u2014 not a named bone bed",
     "license": "Site asset"
   },
   {
@@ -124,7 +36,7 @@
     "file": "beringian-land-bridge.jpg",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated naturalistic Beringian plain — not a dated crossing",
+    "artist": "Fix Planet generated naturalistic Beringian plain \u2014 not a dated crossing",
     "license": "Site asset"
   },
   {
@@ -132,7 +44,7 @@
     "file": "postglacial-colonization.jpg",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated naturalistic early-Holocene woodland edge — not a named pollen site",
+    "artist": "Fix Planet generated naturalistic early-Holocene woodland edge \u2014 not a named pollen site",
     "license": "Site asset"
   },
   {
@@ -140,7 +52,7 @@
     "file": "butterfly-range-shifts.jpg",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated naturalistic painted lady on a wildflower — not a named field site",
+    "artist": "Fix Planet generated naturalistic painted lady on a wildflower \u2014 not a named field site",
     "license": "Site asset"
   },
   {
@@ -148,7 +60,7 @@
     "file": "arctic-migratory-birds.jpg",
     "commonsTitle": "",
     "sourceUrl": "",
-    "artist": "Fix Planet generated naturalistic Arctic terns over a northern coast — not a named colony",
+    "artist": "Fix Planet generated naturalistic Arctic terns over a northern coast \u2014 not a named colony",
     "license": "Site asset"
   },
   {
@@ -156,7 +68,7 @@
     "file": "hunnic-cauldron.jpg",
     "commonsTitle": "Hunnic cauldron (2023-03-07) 02.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hunnic_cauldron_(2023-03-07)_02.jpg",
-    "artist": "Vyacheslav Kirillin — museum copy (2006) of a Hunnic cauldron type, Kazan Kremlin",
+    "artist": "Vyacheslav Kirillin \u2014 museum copy (2006) of a Hunnic cauldron type, Kazan Kremlin",
     "license": "CC BY-SA 4.0"
   }
 ]

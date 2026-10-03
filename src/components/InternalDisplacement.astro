@@ -1,0 +1,159 @@
+---
+import CitedSourceList from './CitedSourceList.astro';
+import { cite } from '../data/sources';
+import {
+  formatStockCount,
+  todayDataset,
+  type TodayIdpCardId,
+} from '../data/migration-today';
+import { getMigrationPage, resolveLocale } from '../i18n';
+
+const locale = resolveLocale(Astro.currentLocale);
+const page = getMigrationPage(locale);
+const ui = page.today;
+const numberLocale = locale === 'en' ? 'en-GB' : locale;
+const idp = todayDataset.internalDisplacement;
+
+function millionFigure(value: number): string {
+  return formatStockCount(value, numberLocale);
+}
+
+const idpCardOrder: TodayIdpCardId[] = [
+  'idp-movements-2025-overview',
+  'idp-stock-2025',
+  'idp-conflict-displacements-2025',
+  'idp-disaster-displacements-2025',
+];
+
+const idpFigures: Record<
+  TodayIdpCardId,
+  { figure: string; unit: string; splits: { label: string; figure: string }[] }
+> = {
+  'idp-movements-2025-overview': {
+    figure: millionFigure(idp.movements2025.total),
+    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    splits: [
+      { label: ui.idpConflictLabel, figure: `${millionFigure(idp.movements2025.conflict)} ${ui.idpMillion}` },
+      { label: ui.idpDisasterLabel, figure: `${millionFigure(idp.movements2025.disaster)} ${ui.idpMillion}` },
+      {
+        label: ui.idpBothLabel,
+        figure: idp.movements2025.bothCountries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+  'idp-stock-2025': {
+    figure: millionFigure(idp.stockEnd2025.figure),
+    unit: `${ui.idpMillion} · ${ui.idpStockUnit}`,
+    splits: [
+      { label: ui.idpConflictLabel, figure: `${millionFigure(idp.stockEnd2025.conflictStock)} ${ui.idpMillion}` },
+      { label: ui.idpDisasterLabel, figure: `${millionFigure(idp.stockEnd2025.disasterStock)} ${ui.idpMillion}` },
+      {
+        label: ui.idpCountriesLabel,
+        figure: idp.stockEnd2025.countries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+  'idp-conflict-displacements-2025': {
+    figure: millionFigure(idp.movements2025.conflict),
+    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    splits: [
+      {
+        label: ui.idpCountriesLabel,
+        figure: idp.movements2025.conflictCountries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+  'idp-disaster-displacements-2025': {
+    figure: millionFigure(idp.movements2025.disaster),
+    unit: `${ui.idpMillion} · ${ui.idpMovementsUnit}`,
+    splits: [
+      {
+        label: ui.idpCountriesLabel,
+        figure: idp.movements2025.disasterCountries.toLocaleString(numberLocale),
+      },
+    ],
+  },
+};
+
+const idpCards = idpCardOrder.map((id) => ({
+  id,
+  ...ui.idpCards[id],
+  ...idpFigures[id],
+}));
+
+const idpCrises = idp.crises.map((crisis) => {
+  const copy = ui.idpCrisisCopy[crisis.id];
+  return {
+    id: crisis.id,
+    place: copy?.place ?? crisis.place,
+    note: copy?.note ?? '',
+    figure: `${crisis.approx ? `${ui.approx} ` : ''}${millionFigure(crisis.figure)} ${ui.idpMillion}`,
+  };
+});
+
+const sources = [
+  cite(idp.sourceSummaryLabel, idp.sourceSummaryUrl),
+  cite(idp.sourcePdfLabel, idp.sourcePdfUrl),
+  cite(idp.sourceHubLabel, idp.sourceHubUrl),
+];
+---
+
+<section class="section" aria-labelledby="idp-heading">
+  <div class="wrap">
+    <div class="today-mig-layer-panel">
+      <h2 id="idp-heading">{ui.idpTitle}</h2>
+      <p>{ui.idpLead}</p>
+      <p class="today-mig-stock-tag">{ui.idpDefinition}</p>
+      <ul class="today-mig-idp-grid">
+        {
+          idpCards.map((card) => (
+            <li class="today-mig-idp-card" id={card.id}>
+              <p class="today-mig-idp-tag">{card.tag}</p>
+              <h4>{card.title}</h4>
+              <p class="today-mig-idp-figure">
+                <strong>{card.figure}</strong>
+                <span>{card.unit}</span>
+              </p>
+              <p class="today-mig-idp-hook">{card.hook}</p>
+              <dl class="today-mig-idp-splits">
+                {card.splits.map((row) => (
+                  <div>
+                    <dt>{row.label}</dt>
+                    <dd>{row.figure}</dd>
+                  </div>
+                ))}
+              </dl>
+              {card.detail.map((para) => (
+                <p class="today-mig-idp-detail">{para}</p>
+              ))}
+            </li>
+          ))
+        }
+      </ul>
+      <h3 class="today-mig-idp-crises-title">{ui.idpCrisesTitle}</h3>
+      <ul class="today-mig-layer-list">
+        {
+          idpCrises.map((crisis) => (
+            <li>
+              <p>
+                <strong>{crisis.place}</strong>
+                <strong>{crisis.figure}</strong>
+              </p>
+              <p>{crisis.note}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="oceans-source-note">{ui.idpHonesty}</p>
+      <p class="oceans-source-note">{ui.idpNoChoropleth}</p>
+      <CitedSourceList heading={page.sourcesLabel} sources={sources} />
+    </div>
+  </div>
+</section>
+
+<style>
+  #idp-heading {
+    margin: 0 0 0.45rem;
+    color: var(--cream);
+  }
+</style>

@@ -117,34 +117,5 @@ export const lvRemittances: RemittanceCopy = {
       plate:
         'Karte: vidējās izmaksas, sūtot naudas pārvedumus uz valsti, 2023, Pasaules Banka, World Development Indicators („Pasaules attīstības rādītāji”). Šie skaitļi atšķiras no pasaules vidējiem tekstā.',
     },
-    'remittances-wdi-series': {
-      tag: 'Dati · WDI',
-      title: 'Personīgie pārvedumi datubāzē World Development Indicators',
-      hook: 'Pēc Pasaules Bankas globālās partnerības migrācijas un attīstības jomā ziņojumu sērijas beigām 2024. gadā Pasaules Banka joprojām publicē datubāzē World Development Indicators („Pasaules attīstības rādītāji”) valstu laika rindas par personīgajiem pārvedumiem — saņemtajiem un nosūtītajiem — USD, bet saņemtajiem arī kā IKP daļu.',
-      figure: '857',
-      unit: 'mljrd. USD saņemti, pasaule, 2024',
-      rows: [
-        { label: 'Saņemti, pasaule, 2024', figure: 'ap 857 mljrd. USD' },
-        { label: 'Nosūtīti, pasaule, 2024', figure: 'ap 619 mljrd. USD' },
-        { label: 'Saņemto līnija', figure: '1970–2024' },
-        { label: 'Nosūtīto līnija', figure: '1966–2024' },
-      ],
-      sections: [
-        {
-          heading: 'Kas tas ir',
-          body: 'Trīs World Development Indicators („Pasaules attīstības rādītāji”) rindas: saņemtie personīgie pārvedumi (faktiskajās cenās, USD), saņemtie personīgie pārvedumi (% no IKP) un nosūtītie personīgie pārvedumi (faktiskajās cenās, USD). Tās var aplūkot pa valstīm Pasaules Bankas atvērto datu rādītāju lapās un datubāzē World Development Indicators platformā DataBank; dati turpina atjaunoties arī pēc Migration and Development Brief sērijas beigām.',
-        },
-        {
-          heading: 'Kāpēc tas ir svarīgi',
-          body: 'Lasītājiem, kuri blakus jaunākajam pasaules kopskaitlim vēlas redzēt garas valstu laika rindas, vajadzīga rinda, kas turpina atjaunoties. WDI joprojām ir Pasaules Bankas standarta valstu tabula par personīgajiem pārvedumiem.',
-        },
-        {
-          heading: 'Kā to lasīt',
-          body: 'WDI personīgos pārvedumus uzskaita pēc maksājumu bilances noteikumiem, tāpēc gada summas var atšķirties no Pasaules Bankas galvenā novērtējuma par plūsmām uz zemu un vidēju ienākumu valstīm. Katra rādītāja lapā ir valstu grafiki, pasaules karte un lejupielādējami dati.',
-        },
-      ],
-      plate:
-        'Grafiks: personīgo pārvedumu pasaules kopsummas, saņemtie 1970–2024 un nosūtītie 1966–2024, Pasaules Banka, World Development Indicators („Pasaules attīstības rādītāji”). Šie skaitļi balstīti uz maksājumu bilances definīcijām.',
-    },
   },
 };

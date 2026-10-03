@@ -4,8 +4,7 @@
 Choropleths use World Bank World Development Indicators (CC BY 4.0),
 joined to Natural Earth countries. The flow bars are the low- and
 middle-income row of Migration and Development Brief 40, Table 1.1
-(CC BY 3.0 IGO), 2017–2023 only. The world lines are WDI personal
-remittances received and paid.
+(CC BY 3.0 IGO), 2017–2023 only.
 
 2024 is the latest year with a broad country set. 2025 is published
 for some economies and for the world aggregate, but country coverage
@@ -92,19 +91,6 @@ def coverage(rows: list[dict], real: set[str]) -> dict[str, int]:
     return counts
 
 
-def world_series(rows: list[dict], last_year: int) -> list[tuple[int, float]]:
-    points = []
-    for row in rows:
-        if row.get("value") is None:
-            continue
-        year = int(row["date"])
-        if year > last_year:
-            continue
-        points.append((year, float(row["value"])))
-    points.sort()
-    return points
-
-
 def chart_canvas() -> Image.Image:
     """Light plate, same 7200×3600 frame as the maps. Not a globe."""
     return Image.new("RGB", (maps.DETAIL_W, maps.DETAIL_H), tuple(int(c) for c in maps.OCEAN))
@@ -151,39 +137,6 @@ def render_flow_bars() -> None:
     maps.save_pair(im, FOLDER, "remittances-global-flows")
 
 
-def render_world_lines(received: list[tuple[int, float]], paid: list[tuple[int, float]]) -> None:
-    im = chart_canvas()
-    draw = ImageDraw.Draw(im, "RGBA")
-    left, right = 780, maps.DETAIL_W - 360
-    top, bottom = 380, maps.DETAIL_H - 480
-    vmax = 900e9
-    xmin, xmax = 1966, 2024
-
-    def xy(year: int, value: float) -> tuple[float, float]:
-        x = left + (year - xmin) / (xmax - xmin) * (right - left)
-        y = bottom - (value / vmax) * (bottom - top)
-        return x, y
-
-    small = maps.font(92)
-    for tick in (0, 200, 400, 600, 800):
-        y = bottom - (tick / 900) * (bottom - top)
-        draw.line((left - 16, y, right, y), fill=(90, 98, 104, 90), width=3)
-        draw_ticks(draw, [(left - 200, y, maps.numeric_label(tick))], small)
-    for year in (1970, 1980, 1990, 2000, 2010, 2020, 2024):
-        x, _ = xy(year, 0)
-        draw.line((x, bottom, x, bottom + 18), fill=(36, 42, 48, 200), width=4)
-        draw_ticks(draw, [(x, bottom + 90, str(year))], small)
-
-    def stroke(points: list[tuple[int, float]], colour: tuple[int, int, int], width: int) -> None:
-        coords = [xy(year, value) for year, value in points]
-        draw.line(coords, fill=colour + (255,), width=width, joint="curve")
-
-    # Orange: received. Blue: paid. The caption names the colours.
-    stroke(paid, (36, 92, 158), 18)
-    stroke(received, (214, 96, 24), 26)
-    maps.save_pair(im, FOLDER, "remittances-wdi-series")
-
-
 def main() -> None:
     real = load_real_iso3()
     received_rows = load_indicator(RAW / "wdi-received.json")
@@ -212,24 +165,6 @@ def main() -> None:
         print(stem, stats)
 
     render_flow_bars()
-    received_line = [
-        (year, value)
-        for year, value in world_series(load_indicator(RAW / "wld-received.json"), 2024)
-        if year >= 1970
-    ]
-    paid_line = world_series(load_indicator(RAW / "wld-paid.json"), 2024)
-    render_world_lines(received_line, paid_line)
-    print(
-        "lines",
-        "received",
-        received_line[0][0],
-        received_line[-1][0],
-        round(received_line[-1][1] / 1e9, 1),
-        "paid",
-        paid_line[0][0],
-        paid_line[-1][0],
-        round(paid_line[-1][1] / 1e9, 1),
-    )
     (RAW / "remittances-render.json").write_text(json.dumps(reports, indent=2))
 
 

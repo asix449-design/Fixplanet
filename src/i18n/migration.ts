@@ -149,21 +149,6 @@ export type MigrationPage = {
     eventAtlas: HumanEventAtlasCopy;
     sections: HumanSection[];
   };
-  birds: {
-    flywaysTitle: string;
-    flywaysAria: string;
-    flywaysLead: string;
-    flywaysHonesty: string;
-    flywaysLegend: string;
-    flywayEastAtlantic: string;
-    flywayMississippi: string;
-    flywayPacificAmericas: string;
-    flywayEaaf: string;
-    flywayCentralAsian: string;
-    flywayAfricanEurasian: string;
-    flywaysSources: string;
-    flywaysBaseCredit: string;
-  };
   today: TodayShelfCopy;
 };
 
@@ -295,7 +280,7 @@ export function getMigrationEntries(locale: Locale): MigrationEntry[] {
 
 export function getMigrationByShelf(
   locale: Locale,
-  shelf: Exclude<MigrationShelf, 'humans' | 'today'>,
+  shelf: Exclude<MigrationShelf, 'humans'>,
 ): MigrationEntry[] {
   return getMigrationEntries(locale).filter((item) => item.shelf === shelf);
 }
