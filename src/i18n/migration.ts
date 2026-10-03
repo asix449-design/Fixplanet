@@ -239,6 +239,7 @@ export type TodayShelfCopy = {
   detectionsLower: string;
   detectionsHigher: string;
   detectionsPeople: string;
+  detectionsUncounted: string;
   detectionsRoutesTitle: string;
   detectionsNationalities: string;
   detectionsSource2024: string;

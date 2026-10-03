@@ -229,6 +229,7 @@ export const enToday: TodayShelfCopy = {
   detectionsLower: 'lower',
   detectionsHigher: 'higher',
   detectionsPeople: 'detections',
+  detectionsUncounted: 'No separate count is published for this route.',
   detectionsRoutesTitle: 'Routes',
   detectionsNationalities:
     'The nationalities detected most often in 2025 were Bangladeshi, Egyptian, and Afghan.',

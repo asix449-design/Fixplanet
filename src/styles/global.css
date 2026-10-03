@@ -4613,6 +4613,8 @@ a.map-card:hover {
 .today-mig-layer-list > li > p:first-child .today-mig-idp-num {
   color: var(--lime);
   margin: 0;
+  flex: 0 1 16rem;
+  text-align: right;
 }
 
 

@@ -103,12 +103,32 @@ export function formatPeopleCount(value: number, locale: string): string {
   return value.toLocaleString(locale);
 }
 
+const lvMonthLocative: Record<string, string> = {
+  janvāris: 'janvārī',
+  februāris: 'februārī',
+  marts: 'martā',
+  aprīlis: 'aprīlī',
+  maijs: 'maijā',
+  jūnijs: 'jūnijā',
+  jūlijs: 'jūlijā',
+  augusts: 'augustā',
+  septembris: 'septembrī',
+  oktobris: 'oktobrī',
+  novembris: 'novembrī',
+  decembris: 'decembrī',
+};
+
 export function formatAsOf(iso: string, locale: string): string {
   const [year, month, day] = iso.split('-').map(Number);
-  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(locale, {
+  const formatted = new Date(Date.UTC(year, month - 1, day)).toLocaleDateString(locale, {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
     timeZone: 'UTC',
   });
+  if (locale !== 'lv') return formatted;
+  return formatted.replace(
+    /\b(janvāris|februāris|marts|aprīlis|maijs|jūnijs|jūlijs|augusts|septembris|oktobris|novembris|decembris)\b/,
+    (monthName) => lvMonthLocative[monthName] ?? monthName,
+  );
 }

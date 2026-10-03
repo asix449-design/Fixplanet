@@ -48,8 +48,8 @@ export const plToday: TodayShelfCopy = {
       title: 'Przesiedlenia z powodu katastrof',
       hook: 'Katastrofy wywołały 29,9 miliona przesiedleń wewnętrznych w 140 krajach i terytoriach w 2025 roku, 35 procent poniżej szczytu z 2024 roku i około 13 procent powyżej średniej z dekady.',
       detail: [
-        'Burze: około 17,9 miliona przemieszczeń, około 60 procent przesiedleń katastrofalnych, drugi najwyższy roczny wynik burz w tym szeregu. Powodzie: poniżej 7,9 miliona, 31 procent poniżej średniej z dekady. Pożary: ponad 694 000 przemieszczeń, drugi wynik w dekadzie. Zagrożenia geofizyczne: około 2,5 miliona, w tym duże ewakuacje przed silnymi trzęsieniami ziemi.',
-        'Same Filipiny dały około 10,7 miliona przesiedleń katastrofalnych w 2025 roku, około 36 procent światowej sumy katastrof w podsumowaniu map raportu. Liczba obejmuje ruchy i ewakuacje związane z zagrożeniami pogodowymi.',
+        'Burze: około 17,9 miliona przemieszczeń, około 60 procent przesiedleń spowodowanych katastrofami, drugi najwyższy roczny wynik burz w tym szeregu. Powodzie: poniżej 7,9 miliona, 31 procent poniżej średniej z dekady. Pożary: ponad 694 000 przemieszczeń, drugi wynik w dekadzie. Zagrożenia geofizyczne: około 2,5 miliona, w tym duże ewakuacje przed silnymi trzęsieniami ziemi.',
+        'Same Filipiny dały około 10,7 miliona przesiedleń spowodowanych katastrofami w 2025 roku, około 36 procent światowej sumy katastrof w podsumowaniu map raportu. Liczba obejmuje ruchy i ewakuacje związane z zagrożeniami pogodowymi.',
         'Te liczby liczą przemieszczenia wewnątrz krajów w 2025 roku.',
       ],
     },
@@ -69,7 +69,7 @@ export const plToday: TodayShelfCopy = {
     },
     'philippines-disaster-2025': {
       place: 'Filipiny',
-      note: 'Około 10,7 miliona przesiedleń katastrofalnych w 2025 roku, około 36 procent światowej sumy katastrof w podsumowaniu map raportu. Liczba obejmuje ruchy i ewakuacje związane z zagrożeniami pogodowymi w ciągu roku.',
+      note: 'Około 10,7 miliona przesiedleń spowodowanych katastrofami w 2025 roku, około 36 procent światowej sumy katastrof w podsumowaniu map raportu. Liczba obejmuje ruchy i ewakuacje związane z zagrożeniami pogodowymi w ciągu roku.',
     },
   },
   refugeesTitle: 'Uchodźcy pod mandatem urzędu wysokiego komisarza',
@@ -228,6 +228,7 @@ export const plToday: TodayShelfCopy = {
   detectionsLower: 'mniej',
   detectionsHigher: 'więcej',
   detectionsPeople: 'wykryć',
+  detectionsUncounted: 'Osobnej liczby dla tego szlaku nie opublikowano.',
   detectionsRoutesTitle: 'Szlaki',
   detectionsNationalities:
     'W 2025 roku najczęściej wykrywano obywateli Bangladeszu, Egiptu i Afganistanu.',

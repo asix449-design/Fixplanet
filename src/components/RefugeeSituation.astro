@@ -70,7 +70,7 @@ const routes = border.routes.map((route) => {
   const copy = ui.routeCopy[route.id];
   const figure =
     route.detections == null
-      ? String(route.year)
+      ? ui.detectionsUncounted
       : `${route.approx ? `${ui.approx} ` : ''}${formatPeopleCount(route.detections, numberLocale)}`;
   return { id: route.id, name: copy.name, note: copy.note, figure };
 });

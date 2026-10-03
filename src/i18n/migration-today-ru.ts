@@ -228,6 +228,7 @@ export const ruToday: TodayShelfCopy = {
   detectionsLower: 'ниже',
   detectionsHigher: 'выше',
   detectionsPeople: 'обнаружений',
+  detectionsUncounted: 'Отдельный счёт по этому маршруту не опубликован.',
   detectionsRoutesTitle: 'Маршруты',
   detectionsNationalities:
     'В 2025 году чаще всего обнаруживали граждан Бангладеш, Египта и Афганистана.',

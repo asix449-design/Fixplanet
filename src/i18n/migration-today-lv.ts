@@ -36,7 +36,7 @@ export const lvToday: TodayShelfCopy = {
     'idp-conflict-displacements-2025': {
       tag: 'Pārvietošanās, 2025',
       title: 'Pārvietošanās konfliktu un vardarbības dēļ',
-      hook: 'Konflikti un vardarbība 2025. gadā izraisīja rekordlielas 32,3 miljonus iekšējo pārvietošanos 48 valstīs un teritorijās, apmēram par 60 procentiem vairāk nekā 2024. gadā un pirmo reizi šajā rindā vairāk nekā katastrofas.',
+      hook: 'Konflikti un vardarbība 2025. gadā izraisīja rekordlielus 32,3 miljonus iekšējo pārvietošanos 48 valstīs un teritorijās, apmēram par 60 procentiem vairāk nekā 2024. gadā un pirmo reizi šajā rindā vairāk nekā katastrofas.',
       detail: [
         'Gada laikā saskaitītās pārvietošanās, pirmās vai atkārtotās. Viens cilvēks var pārvietoties vairāk nekā vienu reizi, tāpēc 32,3 miljoni skaita pārvietošanās.',
         'Ziņojums runā par lielu koncentrāciju. Uz Irānu un Kongo Demokrātisko Republiku katru attiecās apmēram trešdaļa pasaules konflikta pārvietošanās kopsummas. Starptautiski bruņoti konflikti deva apmēram 46 procentus konflikta pārvietošanās. Valstu skaits ar pārvietošanos, kas saistīta ar starptautiskiem konfliktiem, pieauga no 6 2024. gadā līdz 13 2025. gadā.',
@@ -228,6 +228,7 @@ export const lvToday: TodayShelfCopy = {
   detectionsLower: 'zemāk',
   detectionsHigher: 'augstāk',
   detectionsPeople: 'atklājumi',
+  detectionsUncounted: 'Šim maršrutam atsevišķs skaits nav publicēts.',
   detectionsRoutesTitle: 'Maršruti',
   detectionsNationalities:
     '2025. gadā visbiežāk atklāja Bangladešas, Ēģiptes un Afganistānas valstspiederīgos.',
