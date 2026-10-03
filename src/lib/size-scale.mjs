@@ -1,0 +1,408 @@
+const BEHIND = 5;
+const HEIGHT_FRAC = 0.9;
+const WIDTH_FRAC_WITH_BEHIND = 0.64;
+const WIDTH_FRAC_ALONE = 0.88;
+
+function clamp(value, min, max) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function lerp(a, b, t) {
+  return a + (b - a) * t;
+}
+
+function lerpLog(a, b, t) {
+  if (!(a > 0) || !(b > 0)) return lerp(a, b, t);
+  return Math.exp(lerp(Math.log(a), Math.log(b), t));
+}
+
+function ease(t) {
+  return t < 0.5 ? 2 * t * t : 1 - ((-2 * t + 2) ** 2) / 2;
+}
+
+function prefersReducedMotion() {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function tickStep(span) {
+  if (!(span > 0)) return 1;
+  const target = span / 4;
+  const mag = 10 ** Math.floor(Math.log10(target));
+  const n = target / mag;
+  const nice = n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10;
+  return nice * mag;
+}
+
+function formatTick(value, comma) {
+  const rounded = Math.round(value * 1000) / 1000;
+  let text = Number.isInteger(rounded) ? String(rounded) : String(Math.round(rounded * 10) / 10);
+  if (text.endsWith('.0')) text = text.slice(0, -2);
+  if (comma) text = text.replace('.', ',');
+  return text;
+}
+
+function mount(root) {
+  if (root.dataset.ready === '1') return;
+  root.dataset.ready = '1';
+
+  const configNode = root.querySelector('[data-size-config]');
+  const animals = [...root.querySelectorAll('[data-animal]')];
+  const meta = JSON.parse(configNode.textContent);
+  if (meta.length !== animals.length || meta.length === 0) return;
+
+  const chart = root.querySelector('[data-chart]');
+  const plot = root.querySelector('[data-plot]');
+  const grid = root.querySelector('[data-grid]');
+  const yTicks = root.querySelector('[data-yticks]');
+  const xTicks = root.querySelector('[data-xticks]');
+  const tailGap = root.querySelector('[data-tailgap]');
+  const nameEl = root.querySelector('[data-name]');
+  const captionEl = root.querySelector('[data-caption]');
+  const creditEl = root.querySelector('[data-credit]');
+  const hLabel = root.querySelector('[data-h-label]');
+  const lLabel = root.querySelector('[data-l-label]');
+  const hValue = root.querySelector('[data-h-value]');
+  const lValue = root.querySelector('[data-l-value]');
+  const positionEl = root.querySelector('[data-position]');
+  const openEl = root.querySelector('[data-open]');
+  const sourcesEl = root.querySelector('[data-sources]');
+  const live = root.querySelector('[data-live]');
+  const prev = root.querySelector('[data-dir="-1"]');
+  const next = root.querySelector('[data-dir="1"]');
+  const range = root.querySelector('[data-range]');
+  const comma = root.dataset.comma === '1';
+  const positionPattern = root.dataset.position || '{n}';
+
+  let plotW = 0;
+  let plotH = 0;
+  let index = 0;
+  let token = 0;
+  let syncing = false;
+  let booted = false;
+
+  function measure() {
+    plotW = plot.clientWidth;
+    plotH = plot.clientHeight;
+  }
+
+  function scaleFor(front) {
+    const first = Math.max(0, front - BEHIND);
+    let tallest = 0;
+    for (let i = first; i <= front; i += 1) {
+      tallest = Math.max(tallest, meta[i].drawnAboveM);
+    }
+    const behind = front - first;
+    const widthFrac = behind > 0 ? WIDTH_FRAC_WITH_BEHIND : WIDTH_FRAC_ALONE;
+    const byHeight = (plotH * HEIGHT_FRAC) / tallest;
+    const byLength = (plotW * widthFrac) / meta[front].drawnLenM;
+    return Math.min(byHeight, byLength);
+  }
+
+  function frameFor(front) {
+    const px = scaleFor(front);
+    const first = Math.max(0, front - BEHIND);
+    const frontW = meta[front].drawnLenM * px;
+    const behindCount = front - first;
+    let frontLeft = behindCount === 0
+      ? Math.max(8, (plotW - frontW) / 2)
+      : Math.max(8, plotW - frontW - 10);
+    if (frontLeft + frontW > plotW - 8) frontLeft = Math.max(8, plotW - frontW - 8);
+    const room = Math.max(0, frontLeft - 4);
+    const step = behindCount > 0 ? Math.min(plotW * 0.105, 96, room / behindCount) : 0;
+    const boxes = new Map();
+    for (let i = first; i <= front; i += 1) {
+      const animal = meta[i];
+      const w = animal.vbW * animal.mPerUnit * px;
+      const h = animal.vbH * animal.mPerUnit * px;
+      const groundFrac = animal.groundY / animal.vbH;
+      boxes.set(i, {
+        left: frontLeft - (front - i) * step,
+        top: plotH - groundFrac * h,
+        w,
+        h,
+        groundFrac,
+      });
+    }
+    return { px, boxes };
+  }
+
+  function growBox(box, groundFrac, g) {
+    const w = box.w * g;
+    const h = box.h * g;
+    return {
+      left: box.left + (box.w - w),
+      top: plotH - groundFrac * h,
+      w,
+      h,
+    };
+  }
+
+  function applyBox(el, box, opacity, front) {
+    el.classList.add('is-on');
+    el.classList.toggle('is-front', front);
+    el.style.left = `${box.left}px`;
+    el.style.top = `${box.top}px`;
+    el.style.inlineSize = `${box.w}px`;
+    el.style.blockSize = `${box.h}px`;
+    el.style.opacity = String(opacity);
+  }
+
+  function render(from, to, p) {
+    measure();
+    if (!(plotW > 0) || !(plotH > 0)) return;
+    const t = prefersReducedMotion() ? 1 : ease(p);
+    const start = frameFor(from);
+    const end = frameFor(to);
+    let tailPx = 0;
+
+    animals.forEach((el, i) => {
+      const animal = meta[i];
+      const inStart = start.boxes.has(i);
+      const inEnd = end.boxes.has(i);
+      el.style.zIndex = String(i + 2);
+      if (i > to || (!inStart && !inEnd)) {
+        el.classList.remove('is-on', 'is-front');
+        return;
+      }
+      if (inEnd && i === to && to > from) {
+        const g = lerp(0.2, 1, t);
+        const box = growBox(end.boxes.get(i), animal.groundY / animal.vbH, g);
+        applyBox(el, box, t, true);
+        tailPx = Math.max(tailPx, (1 - animal.groundY / animal.vbH) * box.h);
+        return;
+      }
+      if (inStart && inEnd) {
+        const a = start.boxes.get(i);
+        const b = end.boxes.get(i);
+        const h = lerpLog(a.h, b.h, t);
+        const w = lerpLog(a.w, b.w, t);
+        const groundFrac = animal.groundY / animal.vbH;
+        applyBox(el, {
+          left: lerp(a.left, b.left, t),
+          top: plotH - groundFrac * h,
+          w,
+          h,
+        }, 1, i === to);
+        tailPx = Math.max(tailPx, (1 - groundFrac) * h);
+        return;
+      }
+      if (inEnd) {
+        applyBox(el, end.boxes.get(i), t, i === to);
+        const box = end.boxes.get(i);
+        tailPx = Math.max(tailPx, box.h - (animal.groundY / animal.vbH) * box.h);
+        return;
+      }
+      applyBox(el, start.boxes.get(i), 1 - t, false);
+      const box = start.boxes.get(i);
+      tailPx = Math.max(tailPx, (1 - animal.groundY / animal.vbH) * box.h);
+    });
+
+    const px = lerpLog(start.px, end.px, t);
+    drawAxis(px, tailPx);
+    root.classList.add('is-ready');
+  }
+
+  function drawAxis(px, tailPx) {
+    tailGap.style.blockSize = `${Math.max(18, Math.ceil(tailPx + 6))}px`;
+    const ySpan = plotH / px;
+    const xSpan = plotW / px;
+    const yStep = tickStep(ySpan);
+    const xStep = tickStep(xSpan);
+    grid.replaceChildren();
+    yTicks.replaceChildren();
+    xTicks.replaceChildren();
+
+    for (let value = 0; value <= ySpan + yStep * 0.01; value += yStep) {
+      const y = plotH - value * px;
+      if (y < -2 || y > plotH + 2) continue;
+      const line = document.createElement('span');
+      line.className = 'size-scale-grid-h';
+      line.style.top = `${y}px`;
+      grid.append(line);
+      const label = document.createElement('span');
+      label.className = 'size-scale-tick size-scale-tick-y';
+      label.style.top = `${y}px`;
+      label.textContent = formatTick(value, comma);
+      yTicks.append(label);
+    }
+
+    for (let value = 0; value <= xSpan + xStep * 0.01; value += xStep) {
+      const x = value * px;
+      if (x < 0 || x > plotW + 1) continue;
+      const line = document.createElement('span');
+      line.className = 'size-scale-grid-v';
+      line.style.left = `${x}px`;
+      grid.append(line);
+      if (x > plotW - 14 && value !== 0) continue;
+      const label = document.createElement('span');
+      label.className = 'size-scale-tick size-scale-tick-x';
+      label.style.left = `${x}px`;
+      label.textContent = formatTick(value, comma);
+      xTicks.append(label);
+    }
+  }
+
+  function positionText(n) {
+    return positionPattern.replaceAll('{n}', String(n));
+  }
+
+  function announcement(animal, position) {
+    return `${animal.name}, ${position}. ${animal.heightLabel} ${animal.heightText}. ${animal.lengthLabel} ${animal.lengthText}. ${animal.caption}`;
+  }
+
+  function fillSources(animal) {
+    sourcesEl.replaceChildren();
+    for (const source of animal.sources) {
+      const item = document.createElement('li');
+      if (source.href) {
+        const link = document.createElement('a');
+        link.href = source.href;
+        link.rel = 'noopener noreferrer';
+        link.textContent = source.label;
+        item.append(link);
+      } else {
+        item.textContent = source.label;
+      }
+      sourcesEl.append(item);
+    }
+  }
+
+  function syncText() {
+    const animal = meta[index];
+    const position = positionText(index + 1);
+    nameEl.textContent = animal.name;
+    captionEl.textContent = animal.caption;
+    creditEl.textContent = animal.credit;
+    hLabel.textContent = animal.heightLabel;
+    lLabel.textContent = animal.lengthLabel;
+    hValue.textContent = animal.heightText;
+    lValue.textContent = animal.lengthText;
+    positionEl.textContent = position;
+    openEl.href = animal.href;
+    fillSources(animal);
+    prev.disabled = index === 0;
+    next.disabled = index === meta.length - 1;
+    syncing = true;
+    range.value = String(index);
+    syncing = false;
+    const text = announcement(animal, position);
+    range.setAttribute('aria-valuetext', text);
+    root.dataset.index = String(index);
+    if (!booted) {
+      booted = true;
+      if (live.textContent !== text) live.textContent = text;
+      return;
+    }
+    live.textContent = text;
+  }
+
+  function goTo(nextIndex) {
+    const dest = clamp(nextIndex, 0, meta.length - 1);
+    if (dest === index && token === 0) return;
+    const from = index;
+    index = dest;
+    const id = ++token;
+    syncText();
+    if (prefersReducedMotion() || from === dest) {
+      render(dest, dest, 1);
+      token = 0;
+      return;
+    }
+    const started = performance.now();
+    const duration = 460;
+    const step = (now) => {
+      if (id !== token) return;
+      const p = Math.min(1, (now - started) / duration);
+      render(from, dest, p);
+      if (p < 1) requestAnimationFrame(step);
+      else token = 0;
+    };
+    requestAnimationFrame(step);
+  }
+
+  prev.addEventListener('click', () => goTo(index - 1));
+  next.addEventListener('click', () => goTo(index + 1));
+  range.addEventListener('input', () => {
+    if (syncing) return;
+    goTo(Number(range.value));
+  });
+
+  root.addEventListener('keydown', (event) => {
+    if (event.altKey || event.metaKey || event.ctrlKey) return;
+    const tag = event.target.closest('a, summary, textarea');
+    if (tag) return;
+    const onRange = event.target === range;
+    let dest = null;
+    if (event.key === 'ArrowRight' || event.key === 'ArrowDown') dest = index + 1;
+    else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') dest = index - 1;
+    else if (event.key === 'Home') dest = 0;
+    else if (event.key === 'End') dest = meta.length - 1;
+    else if (event.key === 'PageDown') dest = index + 5;
+    else if (event.key === 'PageUp') dest = index - 5;
+    if (dest === null) return;
+    if (onRange && (event.key === 'ArrowRight' || event.key === 'ArrowLeft' || event.key === 'ArrowUp' || event.key === 'ArrowDown')) {
+      return;
+    }
+    event.preventDefault();
+    goTo(dest);
+  });
+
+  let startX = 0;
+  let startY = 0;
+  let tracking = false;
+  let swiped = false;
+
+  chart.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0) return;
+    tracking = true;
+    swiped = false;
+    startX = event.clientX;
+    startY = event.clientY;
+  });
+  chart.addEventListener('pointermove', (event) => {
+    if (!tracking) return;
+    if (Math.abs(event.clientX - startX) > 12) swiped = true;
+  });
+  chart.addEventListener('pointerup', (event) => {
+    if (!tracking) return;
+    tracking = false;
+    const dx = event.clientX - startX;
+    const dy = event.clientY - startY;
+    if (swiped && Math.abs(dx) > 46 && Math.abs(dx) > Math.abs(dy) * 1.15) {
+      goTo(index + (dx < 0 ? 1 : -1));
+    }
+  });
+  chart.addEventListener('pointercancel', () => {
+    tracking = false;
+  });
+  chart.addEventListener('click', (event) => {
+    if (!swiped) return;
+    event.preventDefault();
+    event.stopPropagation();
+    swiped = false;
+  }, true);
+
+  let wheelLock = 0;
+  chart.addEventListener('wheel', (event) => {
+    const horizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY) || event.shiftKey;
+    if (!horizontal) return;
+    event.preventDefault();
+    const delta = Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY;
+    if (Math.abs(delta) < 6) return;
+    const now = performance.now();
+    if (now < wheelLock) return;
+    wheelLock = now + 340;
+    goTo(index + (delta > 0 ? 1 : -1));
+  }, { passive: false });
+
+  const observer = new ResizeObserver(() => {
+    if (token !== 0) return;
+    render(index, index, 1);
+  });
+  observer.observe(plot);
+
+  render(0, 0, 1);
+  syncText();
+}
+
+document.querySelectorAll('[data-size-scale]').forEach(mount);

@@ -1,0 +1,97 @@
+{
+  "lang": "en",
+  "shared": {
+    "height": "Height",
+    "length": "Length",
+    "unit_short": "m",
+    "unit_word": "metres",
+    "open_page": "Open the page",
+    "position": "{n} of 14",
+    "hint": "Swipe or press the arrow keys",
+    "section_title": "Size scale",
+    "section_lead": "Each animal is shown at full size, with the smaller ones as silhouettes behind it."
+  },
+  "animals": {
+    "bald-eagle": {
+      "name": "Bald eagle",
+      "height_label": "Standing height",
+      "length_label": "Bill to tail tip",
+      "caption": "Standing height about 0.8 m, bill to tail tip 0.9 m",
+      "sources": [
+        "National Audubon Society, Audubon Field Guide: Bald Eagle. https://www.audubon.org/field-guide/bird/bald-eagle",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Haliaeetus leucocephalus (bald eagle). https://animaldiversity.org/accounts/Haliaeetus_leucocephalus/",
+        "National Wildlife Federation, Wildlife Guide: Bald Eagle. https://www.nwf.org/Educational-Resources/Wildlife-Guide/Birds/Bald-Eagle",
+        "US Army Corps of Engineers, Rock Island District: The Bald Eagle, An Educational Activity Guide. https://www.mvr.usace.army.mil/Portals/48/docs/Recreation/ODM/pdf/Bald%20Eagle%20Activity%20Guide.pdf"
+      ]
+    },
+    "north-american-beaver": {
+      "name": "North American beaver",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 0.4 m, nose to tail tip 1.1 m",
+      "sources": [
+        "Smithsonian's National Zoo and Conservation Biology Institute, Beaver. https://nationalzoo.si.edu/animals/beaver",
+        "Infoplease, Columbia Encyclopedia: Beaver. https://www.infoplease.com/encyclopedia/ecology/animals/vertebrates/beaver",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis (American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
+      ]
+    },
+    "european-beaver": {
+      "name": "Eurasian beaver",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height about 0.4 m, nose to tail tip 1.2 m",
+      "sources": [
+        "The Mammal Society: Eurasian Beaver. https://mammal.org.uk/british-mammals/eurasian-beaver",
+        "People's Trust for Endangered Species: Eurasian beaver, facts and figures. https://ptes.org/get-informed/facts-figures/eurasian-beaver/",
+        "Beaver Management: Beaver Facts. https://beavermanagement.org/facts/",
+        "Smithsonian's National Zoo and Conservation Biology Institute, Beaver. https://nationalzoo.si.edu/animals/beaver"
+      ]
+    },
+    "wild-boar": {
+      "name": "Wild boar",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 0.8 m, nose to tail tip 1.7 m",
+      "sources": [
+        "IUCN SSC Wild Pig Specialist Group: Eurasian Wild Boar, detailed profile. https://www.iucn-wpsg.org/eurasian-wild-boar-detailed",
+        "Wildlife Online: Wild boar. https://www.wildlifeonline.me.uk/animals/species/wild-boar",
+        "The Mammal Society: Wild boar. https://mammal.org.uk/british-mammals/wild-boar"
+      ]
+    },
+    "gray-wolf": {
+      "name": "Gray wolf",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 0.8 m, nose to tail tip 1.7 m",
+      "sources": [
+        "International Wolf Center: Wolf FAQs. https://wolf.org/wolf-info/basic-wolf-info/wolf-faqs/",
+        "San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, Gray Wolf. https://ielc.libguides.com/sdzg/factsheets/graywolf/characteristics-page",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Canis lupus (gray wolf). https://animaldiversity.org/accounts/Canis_lupus/"
+      ]
+    },
+    "arabian-oryx": {
+      "name": "Arabian oryx",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 0.9 m, nose to tail tip about 2.1 m",
+      "sources": [
+        "Marwell Zoo: Arabian Oryx. https://www.marwell.org.uk/animals/arabian-oryx/",
+        "Dimensions.com: Arabian Oryx Dimensions and Drawings. https://www.dimensions.com/element/arabian-oryx-oryx-leucoryx",
+        "Ultimate Ungulate: Arabian oryx. https://www.ultimateungulate.com/Artiodactyla/Oryx_leucoryx.html",
+        "Qatar e-Nature: Arabian Oryx, White Oryx. https://www.enature.qa/specie/arabian-oryx-white-oryx/",
+        "University of Michigan Museum of Zoology, Animal Diversity Web: Oryx leucoryx (Arabian oryx). https://animaldiversity.org/accounts/Oryx_leucoryx/"
+      ]
+    },
+    "red-deer": {
+      "name": "Red deer",
+      "height_label": "Shoulder height",
+      "length_label": "Nose to tail tip",
+      "caption": "Shoulder height 1.1 m, nose to tail tip 2.2 m",
+      "sources": [
+        "British Deer Society: Red Deer. https://bds.org.uk/information-advice/about-deer/deer-species/red-deer/",
+        "Wildlife Online: Red deer. https://www.wildlifeonline.me.uk/animals/species/red-deer",
+        "Wikipedia: Red deer. https://en.wikipedia.org/wiki/Red_deer"
+      ]
+    }
+  }
+}

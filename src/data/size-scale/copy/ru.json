@@ -1,0 +1,97 @@
+{
+  "lang": "ru",
+  "shared": {
+    "height": "Высота",
+    "length": "Длина",
+    "unit_short": "м",
+    "unit_word": "метров",
+    "open_page": "Открыть страницу",
+    "position": "{n} из 14",
+    "hint": "Листайте или нажимайте клавиши со стрелками",
+    "section_title": "Шкала размеров",
+    "section_lead": "Каждое животное показано в натуральную величину, а более мелкие стоят силуэтами позади него."
+  },
+  "animals": {
+    "bald-eagle": {
+      "name": "Белоголовый орлан",
+      "height_label": "Высота стоя",
+      "length_label": "От клюва до кончика хвоста",
+      "caption": "Высота стоя около 0,8 м, от клюва до кончика хвоста 0,9 м",
+      "sources": [
+        "Национальное общество Одюбона, полевой определитель: белоголовый орлан (National Audubon Society, Audubon Field Guide: Bald Eagle). https://www.audubon.org/field-guide/bird/bald-eagle",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: белоголовый орлан (University of Michigan Museum of Zoology, Animal Diversity Web: Haliaeetus leucocephalus, bald eagle). https://animaldiversity.org/accounts/Haliaeetus_leucocephalus/",
+        "Национальная федерация дикой природы США, справочник о диких животных: белоголовый орлан (National Wildlife Federation, Wildlife Guide: Bald Eagle). https://www.nwf.org/Educational-Resources/Wildlife-Guide/Birds/Bald-Eagle",
+        "Инженерный корпус армии Соединённых Штатов, округ Рок-Айленд: «Белоголовый орлан», учебное пособие с заданиями (US Army Corps of Engineers, Rock Island District: The Bald Eagle, An Educational Activity Guide). https://www.mvr.usace.army.mil/Portals/48/docs/Recreation/ODM/pdf/Bald%20Eagle%20Activity%20Guide.pdf"
+      ]
+    },
+    "north-american-beaver": {
+      "name": "Канадский бобр",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,4 м, от носа до кончика хвоста 1,1 м",
+      "sources": [
+        "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: бобр (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver",
+        "Инфоплиз, Колумбийская энциклопедия: бобр (Infoplease, Columbia Encyclopedia: Beaver). https://www.infoplease.com/encyclopedia/ecology/animals/vertebrates/beaver",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: американский бобр (University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis, American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
+      ]
+    },
+    "european-beaver": {
+      "name": "Обыкновенный бобр",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке около 0,4 м, от носа до кончика хвоста 1,2 м",
+      "sources": [
+        "Общество млекопитающих Великобритании: обыкновенный бобр (The Mammal Society: Eurasian Beaver). https://mammal.org.uk/british-mammals/eurasian-beaver",
+        "Народный фонд исчезающих видов: обыкновенный бобр, факты и цифры (People's Trust for Endangered Species: Eurasian beaver, facts and figures). https://ptes.org/get-informed/facts-figures/eurasian-beaver/",
+        "Управление бобрами: факты о бобрах (Beaver Management: Beaver Facts). https://beavermanagement.org/facts/",
+        "Национальный зоопарк и институт биологии охраны природы Смитсоновского института: бобр (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver"
+      ]
+    },
+    "wild-boar": {
+      "name": "Кабан",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,8 м, от носа до кончика хвоста 1,7 м",
+      "sources": [
+        "Группа специалистов по диким свиньям Международного союза охраны природы: кабан, подробный профиль (IUCN SSC Wild Pig Specialist Group: Eurasian Wild Boar, detailed profile). https://www.iucn-wpsg.org/eurasian-wild-boar-detailed",
+        "Дикая природа онлайн: кабан (Wildlife Online: Wild boar). https://www.wildlifeonline.me.uk/animals/species/wild-boar",
+        "Общество млекопитающих Великобритании: кабан (The Mammal Society: Wild boar). https://mammal.org.uk/british-mammals/wild-boar"
+      ]
+    },
+    "gray-wolf": {
+      "name": "Серый волк",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,8 м, от носа до кончика хвоста 1,7 м",
+      "sources": [
+        "Международный центр волка: частые вопросы о волках (International Wolf Center: Wolf FAQs). https://wolf.org/wolf-info/basic-wolf-info/wolf-faqs/",
+        "Справочные листы зоопарка Сан-Диего в библиотечном путеводителе: физические особенности серого волка (San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, Gray Wolf). https://ielc.libguides.com/sdzg/factsheets/graywolf/characteristics-page",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: серый волк (University of Michigan Museum of Zoology, Animal Diversity Web: Canis lupus, gray wolf). https://animaldiversity.org/accounts/Canis_lupus/"
+      ]
+    },
+    "arabian-oryx": {
+      "name": "Аравийский орикс",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 0,9 м, от носа до кончика хвоста около 2,1 м",
+      "sources": [
+        "Зоопарк Марвелл: аравийский орикс (Marwell Zoo: Arabian Oryx). https://www.marwell.org.uk/animals/arabian-oryx/",
+        "Справочник размеров: аравийский орикс, размеры и чертежи (Dimensions.com: Arabian Oryx Dimensions and Drawings). https://www.dimensions.com/element/arabian-oryx-oryx-leucoryx",
+        "Полный справочник по копытным: аравийский орикс (Ultimate Ungulate: Arabian oryx). https://www.ultimateungulate.com/Artiodactyla/Oryx_leucoryx.html",
+        "Электронная природа Катара: аравийский орикс, или белый орикс (Qatar e-Nature: Arabian Oryx, White Oryx). https://www.enature.qa/specie/arabian-oryx-white-oryx/",
+        "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: аравийский орикс (University of Michigan Museum of Zoology, Animal Diversity Web: Oryx leucoryx, Arabian oryx). https://animaldiversity.org/accounts/Oryx_leucoryx/"
+      ]
+    },
+    "red-deer": {
+      "name": "Благородный олень",
+      "height_label": "Высота в холке",
+      "length_label": "От носа до кончика хвоста",
+      "caption": "Высота в холке 1,1 м, от носа до кончика хвоста 2,2 м",
+      "sources": [
+        "Британское общество оленей: благородный олень (British Deer Society: Red Deer). https://bds.org.uk/information-advice/about-deer/deer-species/red-deer/",
+        "Дикая природа онлайн: благородный олень (Wildlife Online: Red deer). https://www.wildlifeonline.me.uk/animals/species/red-deer",
+        "Википедия: благородный олень (Wikipedia: Red deer). https://en.wikipedia.org/wiki/Red_deer"
+      ]
+    }
+  }
+}

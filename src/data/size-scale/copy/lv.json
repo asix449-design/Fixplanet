@@ -1,0 +1,97 @@
+{
+  "lang": "lv",
+  "shared": {
+    "height": "Augstums",
+    "length": "Garums",
+    "unit_short": "m",
+    "unit_word": "metri",
+    "open_page": "Atvērt lapu",
+    "position": "{n} no 14",
+    "hint": "Velciet ar pirkstu vai spiediet bulttaustiņus",
+    "section_title": "Izmēru skala",
+    "section_lead": "Katrs dzīvnieks redzams pilnā izmērā, bet mazākie ir siluetu veidā aiz tā."
+  },
+  "animals": {
+    "bald-eagle": {
+      "name": "Baltgalvas ērglis",
+      "height_label": "Augstums stāvus",
+      "length_label": "No knābja līdz astes galam",
+      "caption": "Augstums stāvus apmēram 0,8 m, no knābja līdz astes galam 0,9 m",
+      "sources": [
+        "Nacionālā Audubona biedrība, lauka noteicējs: baltgalvas ērglis (National Audubon Society, Audubon Field Guide: Bald Eagle). https://www.audubon.org/field-guide/bird/bald-eagle",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: baltgalvas ērglis (University of Michigan Museum of Zoology, Animal Diversity Web: Haliaeetus leucocephalus, bald eagle). https://animaldiversity.org/accounts/Haliaeetus_leucocephalus/",
+        "Nacionālā savvaļas dabas federācija Amerikas Savienotajās Valstīs, savvaļas dzīvnieku ceļvedis: baltgalvas ērglis (National Wildlife Federation, Wildlife Guide: Bald Eagle). https://www.nwf.org/Educational-Resources/Wildlife-Guide/Birds/Bald-Eagle",
+        "Amerikas Savienoto Valstu Armijas inženieru korpuss, Rokailendas apgabals: «Baltgalvas ērglis», izglītojošs uzdevumu ceļvedis (US Army Corps of Engineers, Rock Island District: The Bald Eagle, An Educational Activity Guide). https://www.mvr.usace.army.mil/Portals/48/docs/Recreation/ODM/pdf/Bald%20Eagle%20Activity%20Guide.pdf"
+      ]
+    },
+    "north-american-beaver": {
+      "name": "Ziemeļamerikas bebrs",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 0,4 m, no deguna līdz astes galam 1,1 m",
+      "sources": [
+        "Smitsona institūta Nacionālais zooloģiskais dārzs un Dabas aizsardzības bioloģijas institūts: bebrs (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver",
+        "Infoplease, Kolumbijas enciklopēdija: bebrs (Infoplease, Columbia Encyclopedia: Beaver). https://www.infoplease.com/encyclopedia/ecology/animals/vertebrates/beaver",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: Amerikas bebrs (University of Michigan Museum of Zoology, Animal Diversity Web: Castor canadensis, American beaver). https://animaldiversity.org/accounts/Castor_canadensis/"
+      ]
+    },
+    "european-beaver": {
+      "name": "Eirāzijas bebrs",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā apmēram 0,4 m, no deguna līdz astes galam 1,2 m",
+      "sources": [
+        "Lielbritānijas Zīdītāju biedrība: Eirāzijas bebrs (The Mammal Society: Eurasian Beaver). https://mammal.org.uk/british-mammals/eurasian-beaver",
+        "Tautas fonds apdraudētām sugām: Eirāzijas bebrs, fakti un skaitļi (People's Trust for Endangered Species: Eurasian beaver, facts and figures). https://ptes.org/get-informed/facts-figures/eurasian-beaver/",
+        "Bebru pārvaldība: fakti par bebriem (Beaver Management: Beaver Facts). https://beavermanagement.org/facts/",
+        "Smitsona institūta Nacionālais zooloģiskais dārzs un Dabas aizsardzības bioloģijas institūts: bebrs (Smithsonian's National Zoo and Conservation Biology Institute, Beaver). https://nationalzoo.si.edu/animals/beaver"
+      ]
+    },
+    "wild-boar": {
+      "name": "Mežacūka",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 0,8 m, no deguna līdz astes galam 1,7 m",
+      "sources": [
+        "Starptautiskās Dabas aizsardzības savienības Savvaļas cūku speciālistu grupa: mežacūka, sīks apraksts (IUCN SSC Wild Pig Specialist Group: Eurasian Wild Boar, detailed profile). https://www.iucn-wpsg.org/eurasian-wild-boar-detailed",
+        "Savvaļas daba tiešsaistē: mežacūka (Wildlife Online: Wild boar). https://www.wildlifeonline.me.uk/animals/species/wild-boar",
+        "Lielbritānijas Zīdītāju biedrība: mežacūka (The Mammal Society: Wild boar). https://mammal.org.uk/british-mammals/wild-boar"
+      ]
+    },
+    "gray-wolf": {
+      "name": "Pelēkais vilks",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 0,8 m, no deguna līdz astes galam 1,7 m",
+      "sources": [
+        "Starptautiskais vilku centrs: biežāk uzdotie jautājumi par vilkiem (International Wolf Center: Wolf FAQs). https://wolf.org/wolf-info/basic-wolf-info/wolf-faqs/",
+        "Sandjego zoodārza informatīvās lapas bibliotēkas ceļvedī: pelēkā vilka fiziskās īpašības (San Diego Zoo Global fact sheets via IELC library guide: Physical Characteristics, Gray Wolf). https://ielc.libguides.com/sdzg/factsheets/graywolf/characteristics-page",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: pelēkais vilks (University of Michigan Museum of Zoology, Animal Diversity Web: Canis lupus, gray wolf). https://animaldiversity.org/accounts/Canis_lupus/"
+      ]
+    },
+    "arabian-oryx": {
+      "name": "Arābijas orikss",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 0,9 m, no deguna līdz astes galam apmēram 2,1 m",
+      "sources": [
+        "Marvellas zooloģiskais dārzs: Arābijas orikss (Marwell Zoo: Arabian Oryx). https://www.marwell.org.uk/animals/arabian-oryx/",
+        "Izmēru vietne: Arābijas orikss, izmēri un zīmējumi (Dimensions.com: Arabian Oryx Dimensions and Drawings). https://www.dimensions.com/element/arabian-oryx-oryx-leucoryx",
+        "Pilnais nagaiņu ceļvedis: Arābijas orikss (Ultimate Ungulate: Arabian oryx). https://www.ultimateungulate.com/Artiodactyla/Oryx_leucoryx.html",
+        "Kataras elektroniskā daba: Arābijas orikss, baltais orikss (Qatar e-Nature: Arabian Oryx, White Oryx). https://www.enature.qa/specie/arabian-oryx-white-oryx/",
+        "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: Arābijas orikss (University of Michigan Museum of Zoology, Animal Diversity Web: Oryx leucoryx, Arabian oryx). https://animaldiversity.org/accounts/Oryx_leucoryx/"
+      ]
+    },
+    "red-deer": {
+      "name": "Staltbriedis",
+      "height_label": "Augstums skaustā",
+      "length_label": "No deguna līdz astes galam",
+      "caption": "Augstums skaustā 1,1 m, no deguna līdz astes galam 2,2 m",
+      "sources": [
+        "Britu briežu biedrība: staltbriedis (British Deer Society: Red Deer). https://bds.org.uk/information-advice/about-deer/deer-species/red-deer/",
+        "Savvaļas daba tiešsaistē: staltbriedis (Wildlife Online: Red deer). https://www.wildlifeonline.me.uk/animals/species/red-deer",
+        "Vikipēdija: staltbriedis (Wikipedia: Red deer). https://en.wikipedia.org/wiki/Red_deer"
+      ]
+    }
+  }
+}

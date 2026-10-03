@@ -1,0 +1,151 @@
+---
+import { getUi, resolveLocale } from '../i18n';
+import { getSizeScale } from '../data/size-scale';
+
+const locale = resolveLocale(Astro.currentLocale);
+const ui = getUi(locale);
+const scale = getSizeScale(locale, ui.wildlifePage.sourcesLabel);
+const first = scale.animals[0];
+const configJson = JSON.stringify(scale.clientAnimals).replace(/</g, '\\u003c');
+const initialPosition = scale.positionPattern.replaceAll('{n}', '1');
+const initialLive = `${first.name}, ${initialPosition}. ${first.heightLabel} ${first.heightText}. ${first.lengthLabel} ${first.lengthText}. ${first.caption}`;
+---
+
+<section
+  class="section section-hub-follow size-scale-section size-scale-stage"
+  id="size-scale"
+  aria-labelledby="size-scale-heading"
+  data-size-scale
+  data-comma={locale === 'en' ? '0' : '1'}
+  data-position={scale.positionPattern}
+  data-index="0"
+>
+  <div class="wrap wildlife-list-panel size-scale-panel">
+    <h2 id="size-scale-heading">{scale.title}</h2>
+    <p class="size-scale-lead">{scale.lead}</p>
+
+    <figure class="size-scale-figure">
+      <div
+        class="size-scale-chart"
+        data-chart
+        tabindex="0"
+        role="group"
+        aria-labelledby="size-scale-heading"
+        aria-describedby="size-scale-hint"
+      >
+        <p class="size-scale-y-title">
+          <span>{scale.height}</span>
+          <span class="size-scale-unit">{scale.unit}</span>
+        </p>
+        <div class="size-scale-y-ticks" data-yticks></div>
+        <div class="size-scale-board">
+          <div class="size-scale-plot" data-plot>
+            <div class="size-scale-grid" data-grid></div>
+            <div class="size-scale-animals" data-animals>
+              {
+                scale.animals.map((animal, index) => (
+                  <a
+                    class:list={['size-scale-animal', { 'is-front': index === 0 }]}
+                    href={animal.href}
+                    data-animal
+                    data-slug={animal.slug}
+                    aria-label={animal.name}
+                    draggable="false"
+                  >
+                    <Fragment set:html={animal.svg} />
+                  </a>
+                ))
+              }
+            </div>
+            <div class="size-scale-baseline"></div>
+          </div>
+          <div class="size-scale-tailgap" data-tailgap></div>
+          <div class="size-scale-xticks" data-xticks></div>
+          <p class="size-scale-x-title">
+            <span>{scale.length}</span>
+            <span class="size-scale-unit">{scale.unit}</span>
+          </p>
+        </div>
+      </div>
+
+      <figcaption class="size-scale-caption-block">
+        <p class="size-scale-position" data-position>{initialPosition}</p>
+        <h3 class="size-scale-name" id="size-scale-name" data-name>{first.name}</h3>
+        <dl class="size-scale-measures">
+          <div>
+            <dt data-h-label>{first.heightLabel}</dt>
+            <dd data-h-value>{first.heightText}</dd>
+          </div>
+          <div>
+            <dt data-l-label>{first.lengthLabel}</dt>
+            <dd data-l-value>{first.lengthText}</dd>
+          </div>
+        </dl>
+        <p class="size-scale-caption" data-caption>{first.caption}</p>
+        <p class="size-scale-credit" data-credit>{first.credit}</p>
+        <p class="size-scale-open">
+          <a data-open href={first.href}>{scale.openPage}</a>
+        </p>
+        <details class="size-scale-sources">
+          <summary>{scale.sourcesLabel}</summary>
+          <ul data-sources>
+            {
+              first.sources.map((source) => (
+                <li>
+                  {source.href ? (
+                    <a href={source.href} rel="noopener noreferrer">{source.label}</a>
+                  ) : (
+                    source.label
+                  )}
+                </li>
+              ))
+            }
+          </ul>
+        </details>
+      </figcaption>
+    </figure>
+
+    <div class="size-scale-nav">
+      <button class="size-scale-btn" type="button" data-dir="-1" disabled>{scale.prev}</button>
+      <button class="size-scale-btn" type="button" data-dir="1">{scale.next}</button>
+    </div>
+    <label class="visually-hidden" for="size-scale-range">{scale.title}</label>
+    <input
+      id="size-scale-range"
+      class="size-scale-range"
+      type="range"
+      min="0"
+      max={scale.total - 1}
+      value="0"
+      step="1"
+      data-range
+      aria-valuetext={initialLive}
+    />
+    <p class="size-scale-hint" id="size-scale-hint">{scale.hint}</p>
+    <p class="visually-hidden" aria-live="polite" data-live>{initialLive}</p>
+
+    <script type="application/json" is:inline data-size-config set:html={configJson}></script>
+
+    <noscript>
+      <ol class="size-scale-fallback">
+        {
+          scale.animals.map((animal, index) => (
+            <li>
+              <p>{scale.positionPattern.replaceAll('{n}', String(index + 1))}</p>
+              <p>{animal.name}</p>
+              <p>{animal.heightLabel} {animal.heightText}</p>
+              <p>{animal.lengthLabel} {animal.lengthText}</p>
+              <p>{animal.caption}</p>
+              <p>{animal.credit}</p>
+              <p><a href={animal.href}>{scale.openPage}</a></p>
+            </li>
+          ))
+        }
+      </ol>
+    </noscript>
+  </div>
+</section>
+
+<script>
+  import '../lib/size-scale.mjs';
+</script>
