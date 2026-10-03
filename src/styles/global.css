@@ -5241,6 +5241,11 @@ a.map-card:hover {
   overflow-wrap: break-word;
 }
 
+.size-scale-changes {
+  display: block;
+  margin-top: 0.2rem;
+}
+
 .size-scale-open {
   margin: 0 0 0.35rem;
 }

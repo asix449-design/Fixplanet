@@ -97,6 +97,113 @@
       "licenceHref": "https://creativecommons.org/licenses/by-sa/2.0",
       "filePage": "https://commons.wikimedia.org/wiki/File:Red_deer_stag_in_Margam_Park_-_geograph.org.uk_-_3793422.jpg",
       "changed": true
+    },
+    "brown-bear": {
+      "png": "/images/wildlife/size-scale/brown-bear.png",
+      "webp": "/images/wildlife/size-scale/brown-bear.webp",
+      "pxW": 1247,
+      "pxH": 825,
+      "credits": {
+        "en": "Photo: lwolfartist, CC BY 2.0",
+        "ru": "Фото: Лвулфартист (lwolfartist), лицензия «Атрибуция» 2.0 (CC BY 2.0)",
+        "pl": "Zdjęcie: lwolfartist, licencja Uznanie autorstwa 2.0 (CC BY 2.0)",
+        "lv": "Foto: lwolfartist, licence «Ar autora norādi» 2.0 (CC BY 2.0)"
+      },
+      "licenceHref": "https://creativecommons.org/licenses/by/2.0",
+      "changes": {
+        "en": "Background removed from the original photo. Image mirrored.",
+        "ru": "Фон удалён с оригинального фото. Изображение отражено по горизонтали.",
+        "pl": "Tło usunięto z oryginalnego zdjęcia. Obraz odbito lustrzanie.",
+        "lv": "Fons noņemts no oriģinālās fotogrāfijas. Attēls apgriezts spoguļattēlā."
+      },
+      "filePage": "https://commons.wikimedia.org/wiki/File:Ursus_arctos_horribilis_-_3.jpg"
+    },
+    "lion": {
+      "png": "/images/wildlife/size-scale/lion.png",
+      "webp": "/images/wildlife/size-scale/lion.webp",
+      "pxW": 1498,
+      "pxH": 680,
+      "credits": {
+        "en": "Photo: flightlog, CC BY 2.0",
+        "ru": "Фото: Флайтлог (flightlog), лицензия «Атрибуция» 2.0 (CC BY 2.0)",
+        "pl": "Zdjęcie: flightlog, licencja Uznanie autorstwa 2.0 (CC BY 2.0)",
+        "lv": "Foto: flightlog, licence «Ar autora norādi» 2.0 (CC BY 2.0)"
+      },
+      "licenceHref": "https://creativecommons.org/licenses/by/2.0",
+      "changes": {
+        "en": "Background removed from the original photo.",
+        "ru": "Фон удалён с оригинального фото.",
+        "pl": "Tło usunięto z oryginalnego zdjęcia.",
+        "lv": "Fons noņemts no oriģinālās fotogrāfijas."
+      },
+      "filePage": "https://commons.wikimedia.org/wiki/File:Lions_of_Masai_Mara_17.jpg"
+    },
+    "american-bison": {
+      "png": "/images/wildlife/size-scale/american-bison.png",
+      "webp": "/images/wildlife/size-scale/american-bison.webp",
+      "pxW": 1594,
+      "pxH": 926,
+      "credits": {
+        "en": "Photo: Graham Morazán, CC0 1.0",
+        "ru": "Фото: Грэм Моразан (Graham Morazán), общественное достояние (CC0 1.0)",
+        "pl": "Zdjęcie: Graham Morazán, domena publiczna (CC0 1.0)",
+        "lv": "Foto: Graham Morazán, publiskais īpašums (CC0 1.0)"
+      },
+      "licenceHref": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "filePage": "https://commons.wikimedia.org/wiki/File:American_Bison_In_Yellowstone_National_Park.jpg"
+    },
+    "european-bison": {
+      "png": "/images/wildlife/size-scale/european-bison.png",
+      "webp": "/images/wildlife/size-scale/european-bison.webp",
+      "pxW": 756,
+      "pxH": 486,
+      "credits": {
+        "en": "Fix Planet illustration",
+        "ru": "Иллюстрация Fix Planet",
+        "pl": "Ilustracja Fix Planet",
+        "lv": "Fix Planet ilustrācija"
+      },
+      "licenceHref": ""
+    },
+    "white-rhinoceros": {
+      "png": "/images/wildlife/size-scale/white-rhinoceros.png",
+      "webp": "/images/wildlife/size-scale/white-rhinoceros.webp",
+      "pxW": 1076,
+      "pxH": 453,
+      "credits": {
+        "en": "Fix Planet illustration",
+        "ru": "Иллюстрация Fix Planet",
+        "pl": "Ilustracja Fix Planet",
+        "lv": "Fix Planet ilustrācija"
+      },
+      "licenceHref": ""
+    },
+    "african-savanna-elephant": {
+      "png": "/images/wildlife/size-scale/african-savanna-elephant.png",
+      "webp": "/images/wildlife/size-scale/african-savanna-elephant.webp",
+      "pxW": 1377,
+      "pxH": 753,
+      "credits": {
+        "en": "Photo: Hobbyfotowiki, CC0 1.0",
+        "ru": "Фото: Хоббифотовики (Hobbyfotowiki), общественное достояние (CC0 1.0)",
+        "pl": "Zdjęcie: Hobbyfotowiki, domena publiczna (CC0 1.0)",
+        "lv": "Foto: Hobbyfotowiki, publiskais īpašums (CC0 1.0)"
+      },
+      "licenceHref": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "filePage": "https://commons.wikimedia.org/wiki/File:African_bush_elephant_(Loxodonta_africana),_Masai_Mara.jpg"
+    },
+    "humpback-whale": {
+      "png": "/images/wildlife/size-scale/humpback-whale.png",
+      "webp": "/images/wildlife/size-scale/humpback-whale.webp",
+      "pxW": 1129,
+      "pxH": 359,
+      "credits": {
+        "en": "Fix Planet illustration",
+        "ru": "Иллюстрация Fix Planet",
+        "pl": "Ilustracja Fix Planet",
+        "lv": "Fix Planet ilustrācija"
+      },
+      "licenceHref": ""
     }
   }
 }

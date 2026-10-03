@@ -14,10 +14,12 @@ const licenceTokens = [
   'CC BY-SA 4.0',
   'CC BY-SA 2.0',
   'CC BY 3.0',
+  'CC BY 2.0',
   'public domain',
   'общественное достояние',
   'domena publiczna',
   'publiskais īpašums',
+  'CC0 1.0',
 ];
 
 function splitCredit(text: string, href: string): { before: string; token: string; after: string } {
@@ -142,6 +144,7 @@ const firstCredit = splitCredit(first.credit, first.licenceHref);
               </>
             ) : null
           }
+          {first.changes ? <span class="size-scale-changes">{first.changes}</span> : null}
         </p>
         <p class="size-scale-open">
           <a data-open href={first.href}>{scale.openPage}</a>
@@ -205,6 +208,7 @@ const firstCredit = splitCredit(first.credit, first.licenceHref);
                     </>
                   ) : null
                 }
+                {animal.changes ? <span class="size-scale-changes">{animal.changes}</span> : null}
               </p>
               <p><a href={animal.href}>{scale.openPage}</a></p>
             </li>
