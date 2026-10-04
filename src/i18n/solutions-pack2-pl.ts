@@ -4,13 +4,14 @@ export const pack2Pl: Record<string, SolutionCopy> = {
   'green-roofs': {
     problemTitle: 'Gołe dachy, które zrzucają ciepło i deszcz',
     fixTitle: 'Zielone dachy',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, zielone dachy',
     problem:
       'Zwykły dach zrzuca deszcz do kanalizacji i nagrzewa się na słońcu. W gęstym mieście to dodaje spływu i upału, gdy na ulicy nie ma już gleby.',
     fix: 'Dach z roślinnością trzyma podłoże i rośliny nad membraną hydroizolacyjną. GSA wymienia ponad 80 budynków federalnych z zielonymi dachami — około 2,2 mln stóp kwadratowych — w tym kwaterę główną Straży Przybrzeżnej USA w Waszyngtonie (557 000 stóp kw.). GSA pisze, że taki dach może żyć dwa–trzy razy dłużej niż goła membrana, obniża wyspę ciepła i dodaje izolacji. Nadal potrzebuje nośności, drenażu i pielęgnacji. Mata z rozchodnika to nie park i nie zastępuje drzew ani kanalizacji.',
     imageAlt: 'Widok z góry: dach z roślinnością i okrągłymi ścieżkami na białym budynku wśród wieżowców Chicago',
   },
   'rain-gardens-bioswales': {
-    problemTitle: 'Ulice, na których deszcz staje się brudną bliską powodzią',
+    problemTitle: 'Ulice, na których deszcz staje się brudną powodzią',
     fixTitle: 'Ogrody deszczowe i bioswale',
     problem:
       'Gdy działki i drogi są uszczelnione, deszcz uderza w twarde powierzchnie i pędzi do rur, niosąc olej, osad i składniki odżywcze. Kanalizacja się przelewa; cieki skaczą.',

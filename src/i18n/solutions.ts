@@ -538,6 +538,7 @@ const ru: Record<string, SolutionCopy> = {
   'permeable-pavement': {
     problemTitle: 'Городской сток и паводки',
     fixTitle: 'Проницаемое покрытие',
+    sourceLabel: 'Агентство по охране окружающей среды Соединённых Штатов, виды зелёной инфраструктуры',
     problem:
       'Города запечатывают почву асфальтом. Дождь становится грязным паводком, который перегружает коллекторы и реки вместо того, чтобы впитаться.',
     fix: 'Пористый асфальт, проницаемый бетон и штучная брусчатка пускают воду в щебёночный резервуар под улицей. Это стандартный набор ливневой «зелёной» инфраструктуры в муниципальных программах США, немецких городах и китайских «губчатых городах». Без подметания они забиваются, и это не дамба: они срезают сток на тех участках, где уложены.',
@@ -936,6 +937,7 @@ const pl: Record<string, SolutionCopy> = {
   'permeable-pavement': {
     problemTitle: 'Miejski spływ i powodzie',
     fixTitle: 'Nawierzchnia przepuszczalna',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, rodzaje zielonej infrastruktury',
     problem:
       'Miasta pieczętują glebę asfaltem. Deszcz staje się brudną powodzią, która przeciąża kanalizację i rzeki zamiast wsiąkać.',
     fix: 'Porowaty asfalt, przepuszczalny beton i ażurowa kostka puszczają wodę do żwirowego zbiornika pod ulicą. To standardowy zestaw zielonej infrastruktury deszczowej w programach amerykańskich, niemieckich miastach i chińskich „miastach gąbkach”. Bez zamiatania się zapychają i nie są wałem; obcinają spływ na działkach i ulicach, na których leżą.',
@@ -1334,6 +1336,7 @@ const lv: Record<string, SolutionCopy> = {
   'permeable-pavement': {
     problemTitle: 'Pilsētas notece un plūdi',
     fixTitle: 'Caurlaidīgs segums',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, zaļās infrastruktūras veidi',
     problem:
       'Pilsētas aizzīmogo augsni ar asfaltu. Lietus kļūst par netīru plūdu, kas pārslogo kanalizāciju un upes, nevis iesūcas.',
     fix: 'Porains asfalts, caurlaidīgs betons un caurlaidīgie bruģakmeņi laiž ūdeni akmens rezervuārā zem ielas. Tas ir standarta zaļās lietus infrastruktūras komplekts ASV pašvaldību programmās, Vācijas pilsētās un Ķīnas «sūkļa pilsētās». Bez slaucīšanas tie aizsērē, un tie nav dambis; tie nogriež noteci tur, kur ir ieklāti.',

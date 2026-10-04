@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   citiesEncyclopediaImageSrc,
   citiesLegendColors,
+  citiesPhotoSlugs,
   type CitiesEncyclopedia,
 } from '../data/solutions-cities';
 import { getUi, localizePath, resolveLocale } from '../i18n';
@@ -17,8 +18,44 @@ const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const headings = citiesDetailHeadings[locale];
 const { item } = Astro.props;
-const title = `${item.title} — Fix Planet`;
+const photoDoorway = (citiesPhotoSlugs as readonly string[]).includes(item.slug);
+const title = photoDoorway
+  ? `${item.title}, ${ui.solutionsPage.tags.cities}, ${ui.solutionsPage.title}, Fix Planet`
+  : `${item.title} — Fix Planet`;
 const image = citiesEncyclopediaImageSrc(item.image);
+const imageWidth = item.image.width ?? 1600;
+const imageHeight = item.image.height ?? 1200;
+
+type CreditBit = { text: string; href?: string };
+
+function creditBits(): CreditBit[] {
+  const credit = item.credit;
+  const needles: { text: string; href: string }[] = [];
+  const code = `(${item.image.license})`;
+  if (item.image.license && credit.includes(code) && item.image.licenseUrl) {
+    needles.push({ text: code, href: item.image.licenseUrl });
+  }
+  for (const name of ['Wikimedia Commons', 'Викисклад']) {
+    if (credit.includes(name) && item.image.sourceUrl) {
+      needles.push({ text: name, href: item.image.sourceUrl });
+    }
+  }
+  const found = needles
+    .map((needle) => ({ ...needle, index: credit.indexOf(needle.text) }))
+    .filter((needle) => needle.index >= 0)
+    .sort((a, b) => a.index - b.index);
+  if (found.length === 0) return [{ text: credit }];
+  const bits: CreditBit[] = [];
+  let cursor = 0;
+  for (const needle of found) {
+    if (needle.index < cursor) continue;
+    if (needle.index > cursor) bits.push({ text: credit.slice(cursor, needle.index) });
+    bits.push({ text: needle.text, href: needle.href });
+    cursor = needle.index + needle.text.length;
+  }
+  if (cursor < credit.length) bits.push({ text: credit.slice(cursor) });
+  return bits;
+}
 const citiesHref = localizePath('/solutions/cities', locale);
 const legendColors = citiesLegendColors[item.slug] ?? [];
 const plate =
@@ -72,7 +109,7 @@ const plate =
   <section class="section">
     <div class="wrap wildlife-detail">
       <figure class="wildlife-detail-art cities-detail-plate" data-plate={plate}>
-        <img src={image} alt={item.imageAlt} width="1600" height="1200" />
+        <img src={image} alt={item.imageAlt} width={imageWidth} height={imageHeight} />
         <figcaption>
           <p>{item.caption}</p>
           {
@@ -100,14 +137,30 @@ const plate =
               </ol>
             )
           }
-          <p>
-            {item.credit}{' '}
-            (
-            <a href={item.image.sourceUrl || item.image.licenseUrl} rel="noopener noreferrer">
-              {item.image.license}
-            </a>
+          {
+            photoDoorway ? (
+              <p>
+                {creditBits().map((bit) =>
+                  bit.href ? (
+                    <a href={bit.href} rel="noopener noreferrer">
+                      {bit.text}
+                    </a>
+                  ) : (
+                    bit.text
+                  ),
+                )}
+              </p>
+            ) : (
+              <p>
+                {item.credit}{' '}
+                (
+                <a href={item.image.sourceUrl || item.image.licenseUrl} rel="noopener noreferrer">
+                  {item.image.license}
+                </a>
+                )
+              </p>
             )
-          </p>
+          }
         </figcaption>
       </figure>
       <div class="prose wildlife-prose solutions-prose">
@@ -122,11 +175,31 @@ const plate =
         {item.read.map((para) => <p>{para}</p>)}
         <h2>{headings.limits}</h2>
         {item.limits.map((para) => <p>{para}</p>)}
-        <CitedSourceList
-          heading={ui.solutionsPage.sourcesLabel}
-          note={ui.solutionsPage.sourcesVerify}
-          sources={item.sources}
-        />
+        {
+          photoDoorway ? (
+            <>
+              <h2>{ui.solutionsPage.sourcesLabel}</h2>
+              <p class="wildlife-sources">{ui.solutionsPage.sourcesVerify}</p>
+              <ol class="law-source-list cited-source-list">
+                {item.sources.map((source) => (
+                  <li>
+                    {source.label}
+                    {': '}
+                    <a href={source.url} rel="noopener noreferrer">
+                      {source.url}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </>
+          ) : (
+            <CitedSourceList
+              heading={ui.solutionsPage.sourcesLabel}
+              note={ui.solutionsPage.sourcesVerify}
+              sources={item.sources}
+            />
+          )
+        }
         {
           item.findZone && (
             <p>

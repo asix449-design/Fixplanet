@@ -4,6 +4,7 @@ export const pack2Lv: Record<string, SolutionCopy> = {
   'green-roofs': {
     problemTitle: 'Kaili jumti, kas novelk siltumu un lietu',
     fixTitle: 'Zaļie jumti',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, zaļie jumti',
     problem:
       'Parasts jumts novelk lietu kanalizācijā un sakarst saulē. Blīvā pilsētā tas dod lieku noteci un karstumu, kad ielā vairs nav augsnes.',
     fix: 'Stādīts jumts tur substrātu un augus virs hidroizolācijas. GSA uzskaita vairāk nekā 80 federālas ēkas ar zaļajiem jumtiem — ap 2,2 miljoniem kvadrātpēdu — tostarp ASV Krasta apsardzes štābu Vašingtonā (557 000 kv. pēdas). GSA saka, ka stādīts jumts var kalpot divas–trīs reizes ilgāk par kailu membrānu, mazina siltuma salu un pievieno izolāciju. Joprojām vajag nestspēju, drenāžu un kopšanu. Seduma paklājs nav parks un neaizstāj ielas kokus vai kolektorus.',
