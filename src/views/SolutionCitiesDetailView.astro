@@ -34,6 +34,21 @@ function creditBits(): CreditBit[] {
   const code = `(${item.image.license})`;
   if (item.image.license && credit.includes(code) && item.image.licenseUrl) {
     needles.push({ text: code, href: item.image.licenseUrl });
+  } else if (item.image.licenseUrl) {
+    const version = item.image.license.match(/(\d+\.\d+)/)?.[1];
+    if (version) {
+      const phrases = [
+        `«Атрибуция, на тех же условиях» ${version}`,
+        `Uznanie autorstwa na tych samych warunkach ${version}`,
+        `«Ar autora norādi, tādos pašos noteikumos» ${version}`,
+      ];
+      for (const phrase of phrases) {
+        if (credit.includes(phrase)) {
+          needles.push({ text: phrase, href: item.image.licenseUrl });
+          break;
+        }
+      }
+    }
   }
   for (const name of ['Wikimedia Commons', 'Викисклад']) {
     if (credit.includes(name) && item.image.sourceUrl) {
