@@ -68,7 +68,7 @@ export const lv: ForestsPage = {
     'NDVI nav meža platība un nav primārais mežs. Kultūras un mitri gadi arī zaļo. Jūlijs labvēlīgs ziemeļu vasarai, tāpēc starpība gadu no gada šajā izšķirtspējā ir maza. Pēdējais ledāja maksimums ir ap 18 000 gadu sen, senāks un aukstāks nekā 10 000 p.m.ē. Biomu plate ir nesena klimata analogs; vidējā holocēnā Sahara bieži bija zaļāka.',
   distinguishTitle: 'Boreālais mežs, tropu mežs un stādītais mežs',
   distinguish:
-    'Aptuveni 45 procenti uzrādītā meža ir tropos. Pārējais galvenokārt ir boreāls un mērens mežs, pēc 2025. gada novērtējuma. Boreālie zudumi bieži saistīti ar uguni, kukaiņiem vai ciršanu, un zeme atkal var tikt uzskatīta par mežu zemes izmantošanas izpratnē. Tropu primārā meža zudums parasti ir pārveide: vecā meža vietā nonāk soja vai eļļas palma. Sekundārais mežs un plantācijas var palielināt kopējo meža platību, kamēr primārā meža platība sarūk. Stādītais mežs aizņem 312 miljonus hektāru, 8 procentus kopsummas, līdzās 1,18 miljardiem hektāru primārā meža. Neto zudums 4,12 miljoni hektāru gadā no 2015. līdz 2025. gadam ir mežu izciršana 10,9 miljoni hektāru gadā mīnus paplašināšanās. Neskartas meža ainavas 2025. gadā aizņem 1086 miljonus hektāru savā kartē. Tropu primārā meža zudums bija 6,7 miljoni hektāru 2024. gadā un 4,3 miljoni hektāru 2025. gadā pēc Global Forest Watch datiem.',
+    'Aptuveni 45 procenti uzrādītā meža ir tropos. Pārējais galvenokārt ir boreāls un mērens mežs, pēc 2025. gada novērtējuma. Boreālie zudumi bieži saistīti ar uguni, kukaiņiem vai ciršanu, un zeme atkal var tikt uzskatīta par mežu zemes izmantošanas izpratnē. Tropu primārā meža zudums parasti ir pārveide: vecā meža vietā nonāk soja vai eļļas palma. Sekundārais mežs un plantācijas var palielināt kopējo meža platību, kamēr primārā meža platība sarūk. Stādītais mežs aizņem 312 miljonus hektāru, 8 procentus kopsummas, līdzās 1,18 miljardiem hektāru primārā meža. Neto zudums 4,12 miljoni hektāru gadā no 2015. līdz 2025. gadam ir mežu izciršana 10,9 miljoni hektāru gadā mīnus paplašināšanās. Neskartas meža ainavas 2025. gadā aizņem 1 086 miljonus hektāru savā kartē. Tropu primārā meža zudums bija 6,7 miljoni hektāru 2024. gadā un 4,3 miljoni hektāru 2025. gadā pēc pasaules mežu novatēšanas pakalpojuma datiem.',
   numbersNote:
     'Katrs skaitlis ir pārrakstīts no citētās publikācijas kopā ar šīs publikācijas gadu. Meža platība, vainags un koku skaits nāk no saviem izdevējiem.',
   trendTitle: 'Garais skats, tad gadi, ko var izmērīt',
@@ -281,7 +281,7 @@ export const lv: ForestsPage = {
     deforestationSince1990: {
       label: 'Mežu izciršana kopš 1990. gada',
       text: '489 miljoni hektāru izcirsti no 1990. līdz 2025. gadam. Skaitlis ir bruto meža zemes izmantošanas zudums. Temps palēninājās, un izciršana turpinās.',
-      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025, galvenais ziņojums',
     },
     netLossRecent: {
       label: 'Neto meža platības zudums',
@@ -289,6 +289,7 @@ export const lv: ForestsPage = {
       sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
     },
     grossDeforestation: {
+      value: '10,9',
       label: 'Bruto mežu izciršanas temps',
       text: '10,9 miljoni hektāru gadā no 2015. līdz 2025. gadam, salīdzinot ar 17,6 miljoniem hektāru gadā no 1990. līdz 2000. gadam. Paplašināšanās arī palēninājās, līdz 6,78 miljoniem hektāru gadā pēdējā desmitgadē. Izciršana nozīmē meža pārveidi citā zemes izmantošanā.',
       sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
@@ -299,6 +300,7 @@ export const lv: ForestsPage = {
       sourceLine: 'Globālais meža resursu novērtējums 2025, primārie meži',
     },
     tropicalPrimary2024: {
+      value: '6,7',
       label: 'Tropu primārais mežs, 2024',
       text: '6,7 miljoni hektāru mitro tropu primārā meža rekordgadā, galvenokārt ugunsgrēku dēļ, ap 18 futbola laukumiem minūtē.',
       sourceLine: 'Pasaules resursu institūts, Pasaules mežu pārskats, meža zudums 2024. gadā',
@@ -316,11 +318,12 @@ export const lv: ForestsPage = {
     holoceneTrees: {
       label: 'Koki kopš civilizācijas sākuma',
       text: 'Tas pats 2015. gada raksts novērtē aptuveni par 46 procentiem mazāk koku nekā cilvēku civilizācijas sākumā.',
-      sourceLine: 'Nature, «Koku blīvuma kartēšana globālā mērogā» (2015)',
+      sourceLine: 'Žurnāls «Neičers», «Koku blīvuma kartēšana globālā mērogā» (2015)',
     },
     intactLandscapes: {
+      value: '1 086',
       label: 'Neskartas meža ainavas',
-      text: '1086 miljoni hektāru 2025. gadā, 8,4 procenti sauszemes bez ledus. Gabali ir ap 50 000 hektāru vai lielāki un bez rūpnieciskas pēdas.',
+      text: '1 086 miljoni hektāru 2025. gadā, 8,4 procenti sauszemes bez ledus. Gabali ir ap 50 000 hektāru vai lielāki un bez rūpnieciskas pēdas.',
       sourceLine: 'Neskarto meža ainavu kartēšanas grupa, 2025',
     },
   },

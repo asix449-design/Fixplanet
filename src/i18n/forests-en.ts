@@ -286,7 +286,7 @@ export const en: ForestsPage = {
       label: 'Deforestation since 1990',
       text: '489 million hectares cleared from 1990 to 2025. The figure is the gross loss of forest land use. The rate slowed, and clearing continues.',
       sourceLine:
-        'Food and Agriculture Organization of the United Nations, news release on the 2025 forest assessment',
+        'Food and Agriculture Organization of the United Nations, Global Forest Resources Assessment 2025, main report',
     },
     netLossRecent: {
       label: 'Net forest-area loss',
