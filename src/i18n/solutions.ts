@@ -40,7 +40,7 @@ const en: Record<string, SolutionCopy> = {
     problemTitle: 'Urban heat',
     fixTitle: 'Cool roofs',
     problem: 'Dark roofs and asphalt trap heat and spike energy use.',
-    fix: 'Cool roofs and reflective coatings lower temperatures and cut AC demand.',
+    fix: 'Cool roofs and reflective coatings lower temperatures and cut air conditioning demand.',
     imageAlt: 'Urban rooftops coated in reflective white cool-roof material',
   },
   'lower-clinker-cement': {
@@ -141,8 +141,8 @@ const en: Record<string, SolutionCopy> = {
     problemTitle: 'Urban runoff and floods',
     fixTitle: 'Permeable pavement',
     problem:
-      'Cities seal soil with asphalt. Rain becomes a dirty flood that overloads sewers and rivers instead of soaking in.',
-    fix: 'Porous asphalt, pervious concrete, and interlocking pavers let water into a stone reservoir below the street. They are standard green-stormwater kit in U.S. municipal programs, German cities, and China’s sponge-city projects. They clog without sweeping, and they are not a levee; they shave runoff on the lots and streets where they are laid.',
+      'Cities seal soil with asphalt. Rain becomes a dirty flood that overloads sewers and rivers.',
+    fix: 'Porous asphalt, pervious concrete, and interlocking pavers let water into a stone reservoir below the street. They are standard green stormwater kit in United States municipal programs, German cities, and China’s sponge city projects. They clog without sweeping. They shave runoff on the lots and streets where they are laid.',
     imageAlt: 'Interlocking permeable pavers beside a sunken rain garden in a public park',
   },
   'urban-tree-canopy': {
@@ -150,7 +150,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Urban tree canopy',
     problem:
       'Hard surfaces and missing shade make neighborhoods hotter than the countryside around them, especially where past planning left few trees.',
-    fix: 'Street and park trees, planted and measured as canopy cover, cool air and pavement on the blocks that have them. Cities such as New York and Melbourne run named canopy programs and track cover. Trees need water, space, and years. A “million trees” slogan without survival counts is landscaping, not climate infrastructure.',
+    fix: 'Street and park trees, planted and measured as canopy cover, cool air and pavement on the blocks that have them. Cities such as New York and Melbourne run named canopy programs and track cover. Trees need water, space, and years.',
     imageAlt: 'A residential street fully shaded by a dense interlocking canopy of mature trees',
   },
   'district-heating': {
@@ -437,6 +437,7 @@ const ru: Record<string, SolutionCopy> = {
   'cool-roofs': {
     problemTitle: 'Городская жара',
     fixTitle: 'Холодные крыши',
+    sourceLabel: 'Агентство по охране окружающей среды Соединённых Штатов, холодные крыши',
     problem: 'Тёмные крыши и асфальт удерживают тепло и резко повышают расход энергии.',
     fix: 'Холодные крыши и светоотражающие покрытия снижают температуру и потребность в кондиционерах.',
     imageAlt: 'Городские крыши, покрытые белым светоотражающим материалом',
@@ -540,16 +541,17 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Проницаемое покрытие',
     sourceLabel: 'Агентство по охране окружающей среды Соединённых Штатов, виды зелёной инфраструктуры',
     problem:
-      'Города запечатывают почву асфальтом. Дождь становится грязным паводком, который перегружает коллекторы и реки вместо того, чтобы впитаться.',
-    fix: 'Пористый асфальт, проницаемый бетон и штучная брусчатка пускают воду в щебёночный резервуар под улицей. Это стандартный набор ливневой «зелёной» инфраструктуры в муниципальных программах США, немецких городах и китайских «губчатых городах». Без подметания они забиваются, и это не дамба: они срезают сток на тех участках, где уложены.',
+      'Города запечатывают почву асфальтом. Дождь становится грязным паводком, который перегружает коллекторы и реки.',
+    fix: 'Пористый асфальт, проницаемый бетон и штучная брусчатка пускают воду в щебёночный резервуар под улицей. Это стандартный набор ливневой «зелёной» инфраструктуры в муниципальных программах Соединённых Штатов, немецких городах и китайских «губчатых городах». Без подметания они забиваются. Они срезают сток на тех участках, где уложены.',
     imageAlt: 'Проницаемая брусчатка рядом с заглублённым дождевым садом в общественном парке',
   },
   'urban-tree-canopy': {
     problemTitle: 'Горячие голые улицы',
     fixTitle: 'Городской древесный полог',
+    sourceLabel: 'Агентство по охране окружающей среды Соединённых Штатов, деревья и растительность',
     problem:
-      'Твёрдые поверхности и отсутствие тени делают кварталы жарче окрестной сельской местности — особенно там, где планировка оставила мало деревьев.',
-    fix: 'Уличные и парковые деревья, которые сажают и считают как долю полога, охлаждают воздух и мостовую на тех кварталах, где они есть. Нью-Йорк и Мельбурн ведут именные программы полога и следят за покрытием. Деревьям нужны вода, место и годы. Слоган «миллион деревьев» без учёта приживаемости — озеленение, а не климатическая инфраструктура.',
+      'Твёрдые поверхности и отсутствие тени делают кварталы жарче окрестной сельской местности, особенно там, где планировка оставила мало деревьев.',
+    fix: 'Уличные и парковые деревья, которые сажают и считают как долю полога, охлаждают воздух и мостовую на тех кварталах, где они есть. Нью-Йорк и Мельбурн ведут именные программы полога и следят за покрытием. Деревьям нужны вода, место и годы.',
     imageAlt: 'Жилая улица, полностью закрытая сомкнутым пологом зрелых деревьев',
   },
   'district-heating': {
@@ -836,6 +838,7 @@ const pl: Record<string, SolutionCopy> = {
   'cool-roofs': {
     problemTitle: 'Miejski upał',
     fixTitle: 'Chłodne dachy',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, chłodne dachy',
     problem: 'Ciemne dachy i asfalt zatrzymują ciepło i windują zużycie energii.',
     fix: 'Chłodne dachy i powłoki odbijające obniżają temperaturę i ograniczają klimatyzację.',
     imageAlt: 'Miejskie dachy pokryte białą, odbijającą powłoką',
@@ -939,16 +942,17 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Nawierzchnia przepuszczalna',
     sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, rodzaje zielonej infrastruktury',
     problem:
-      'Miasta pieczętują glebę asfaltem. Deszcz staje się brudną powodzią, która przeciąża kanalizację i rzeki zamiast wsiąkać.',
-    fix: 'Porowaty asfalt, przepuszczalny beton i ażurowa kostka puszczają wodę do żwirowego zbiornika pod ulicą. To standardowy zestaw zielonej infrastruktury deszczowej w programach amerykańskich, niemieckich miastach i chińskich „miastach gąbkach”. Bez zamiatania się zapychają i nie są wałem; obcinają spływ na działkach i ulicach, na których leżą.',
+      'Miasta pieczętują glebę asfaltem. Deszcz staje się brudną powodzią, która przeciąża kanalizację i rzeki.',
+    fix: 'Porowaty asfalt, przepuszczalny beton i ażurowa kostka puszczają wodę do żwirowego zbiornika pod ulicą. To standardowy zestaw zielonej infrastruktury deszczowej w programach amerykańskich, niemieckich miastach i chińskich „miastach gąbkach”. Bez zamiatania się zapychają. Obcinają spływ na działkach i ulicach, na których leżą.',
     imageAlt: 'Przepuszczalna kostka obok zagłębionego ogrodu deszczowego w parku publicznym',
   },
   'urban-tree-canopy': {
     problemTitle: 'Gorące, nagie ulice',
     fixTitle: 'Miejski parasol drzew',
+    sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, drzewa i roślinność',
     problem:
-      'Twarde powierzchnie i brak cienia robią dzielnice gorętszymi niż okolica — zwłaszcza tam, gdzie dawne planowanie zostawiło mało drzew.',
-    fix: 'Drzewa uliczne i parkowe, sadzone i mierzone jako udział korony, chłodzą powietrze i nawierzchnię na kwartałach, które je mają. Nowy Jork i Melbourne prowadzą nazwane programy korony i śledzą pokrycie. Drzewa potrzebują wody, miejsca i lat. Slogan „milion drzew” bez liczenia przeżycia to zieleń, nie infrastruktura klimatyczna.',
+      'Twarde powierzchnie i brak cienia robią dzielnice gorętszymi niż okolica, zwłaszcza tam, gdzie dawne planowanie zostawiło mało drzew.',
+    fix: 'Drzewa uliczne i parkowe, sadzone i mierzone jako udział korony, chłodzą powietrze i nawierzchnię na kwartałach, które je mają. Nowy Jork i Melbourne prowadzą nazwane programy korony i śledzą pokrycie. Drzewa potrzebują wody, miejsca i lat.',
     imageAlt: 'Ulica mieszkaniowa całkowicie zacieniona przez gęstą, splatającą się koronę dojrzałych drzew',
   },
   'district-heating': {
@@ -1235,6 +1239,7 @@ const lv: Record<string, SolutionCopy> = {
   'cool-roofs': {
     problemTitle: 'Pilsētas karstums',
     fixTitle: 'Vēsie jumti',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, vēsie jumti',
     problem: 'Tumši jumti un asfalts uzkrāj siltumu un strauji palielina enerģijas patēriņu.',
     fix: 'Vēsie jumti un atstarojoši pārklājumi pazemina temperatūru un samazina gaisa kondicionēšanas slodzi.',
     imageAlt: 'Pilsētas jumti, pārklāti ar baltu, atstarojošu materiālu',
@@ -1338,16 +1343,17 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Caurlaidīgs segums',
     sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, zaļās infrastruktūras veidi',
     problem:
-      'Pilsētas aizzīmogo augsni ar asfaltu. Lietus kļūst par netīru plūdu, kas pārslogo kanalizāciju un upes, nevis iesūcas.',
-    fix: 'Porains asfalts, caurlaidīgs betons un caurlaidīgie bruģakmeņi laiž ūdeni akmens rezervuārā zem ielas. Tas ir standarta zaļās lietus infrastruktūras komplekts ASV pašvaldību programmās, Vācijas pilsētās un Ķīnas «sūkļa pilsētās». Bez slaucīšanas tie aizsērē, un tie nav dambis; tie nogriež noteci tur, kur ir ieklāti.',
+      'Pilsētas aizzīmogo augsni ar asfaltu. Lietus kļūst par netīru plūdu, kas pārslogo kanalizāciju un upes.',
+    fix: 'Porains asfalts, caurlaidīgs betons un caurlaidīgie bruģakmeņi laiž ūdeni akmens rezervuārā zem ielas. Tas ir standarta zaļās lietus infrastruktūras komplekts Amerikas Savienoto Valstu pašvaldību programmās, Vācijas pilsētās un Ķīnas «sūkļa pilsētās». Bez slaucīšanas tie aizsērē. Tie nogriež noteci tur, kur ir ieklāti.',
     imageAlt: 'Caurlaidīgi bruģakmeņi blakus iedziļinātam lietus dārzam publiskā parkā',
   },
   'urban-tree-canopy': {
     problemTitle: 'Karstas, kailas ielas',
     fixTitle: 'Pilsētas koku vainags',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, koki un augi',
     problem:
-      'Cietās virsmas un trūkstošā ēna padara kvartālus karstākus par apkārtējiem laukiem — īpaši tur, kur plānošana atstāja maz koku.',
-    fix: 'Ielu un parka koki, ko stāda un mēra kā vainaga daļu, dzesē gaisu un segumu tajos kvartālos, kur tie ir. Ņujorka un Melburna vada nosauktas vainaga programmas un seko pārklājumam. Kokiem vajag ūdeni, vietu un gadus. Sauklis «miljons koku» bez izdzīvošanas skaita ir apstādījumi, nevis klimata infrastruktūra.',
+      'Cietās virsmas un trūkstošā ēna padara kvartālus karstākus par apkārtējiem laukiem, īpaši tur, kur plānošana atstāja maz koku.',
+    fix: 'Ielu un parka koki, ko stāda un mēra kā vainaga daļu, dzesē gaisu un segumu tajos kvartālos, kur tie ir. Ņujorka un Melburna vada nosauktas vainaga programmas un seko pārklājumam. Kokiem vajag ūdeni, vietu un gadus.',
     imageAlt: 'Dzīvojamā iela, ko pilnībā noēno blīvs, savijies pieaugušu koku vainags',
   },
   'district-heating': {

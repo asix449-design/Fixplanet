@@ -4,10 +4,10 @@ export const pack2Lv: Record<string, SolutionCopy> = {
   'green-roofs': {
     problemTitle: 'Kaili jumti, kas novelk siltumu un lietu',
     fixTitle: 'Zaļie jumti',
-    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, zaļie jumti',
+    sourceLabel: 'Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija, stādīto jumtu piemēri',
     problem:
       'Parasts jumts novelk lietu kanalizācijā un sakarst saulē. Blīvā pilsētā tas dod lieku noteci un karstumu, kad ielā vairs nav augsnes.',
-    fix: 'Stādīts jumts tur substrātu un augus virs hidroizolācijas. GSA uzskaita vairāk nekā 80 federālas ēkas ar zaļajiem jumtiem — ap 2,2 miljoniem kvadrātpēdu — tostarp ASV Krasta apsardzes štābu Vašingtonā (557 000 kv. pēdas). GSA saka, ka stādīts jumts var kalpot divas–trīs reizes ilgāk par kailu membrānu, mazina siltuma salu un pievieno izolāciju. Joprojām vajag nestspēju, drenāžu un kopšanu. Seduma paklājs nav parks un neaizstāj ielas kokus vai kolektorus.',
+    fix: 'Stādīts jumts tur substrātu un augus virs hidroizolācijas. Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija uzskaita vairāk nekā 80 federālas ēkas ar zaļajiem jumtiem, kopā aptuveni 20 hektāru, tostarp Amerikas Savienoto Valstu Krasta apsardzes štābu Vašingtonā ar aptuveni 5,2 hektāriem. Administrācija saka, ka stādīts jumts var kalpot divas vai trīs reizes ilgāk par kailu membrānu, mazina siltuma salu un pievieno izolāciju. Joprojām vajag nestspēju, drenāžu un kopšanu.',
     imageAlt: 'Skats no gaisa: stādīts jumts ar apļveida takām uz baltas ēkas starp Čikāgas debesskrāpjiem',
   },
   'rain-gardens-bioswales': {
@@ -15,7 +15,8 @@ export const pack2Lv: Record<string, SolutionCopy> = {
     fixTitle: 'Lietusdārzi un biosvāles',
     problem:
       'Kad zemes gabali un ceļi ir noslēgti, lietus sit pret cietām virsmām un skrien caurulēs, nesdams eļļu, nogulsnes un barības vielas. Kolektori pārplūst; strauti lec.',
-    fix: 'EPA uzskata lietusdārzus un biosvāles par zaļās infrastruktūras veidiem. Lietusdārzs ir sekls, apstādīts iedobums, kas savāc noteci no jumtiem un ielām un filtrē to caur augsni, smiltīm vai granti. Biosvāle ir lineārs, apaudzis kanāls, kas palēnina un attīra ūdeni gaitā — noderīgs gar ceļiem. Tie nav dambji. Lielai vētrai joprojām vajag pārliešanu kolektorā. Bez projekta un kopšanas tie aizsērē vai noslīcina augus.',
+    sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, zaļās infrastruktūras veidi',
+    fix: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra uzskata lietusdārzus un biosvāles par zaļās infrastruktūras veidiem. Lietusdārzs ir sekls, apstādīts iedobums, kas savāc noteci no jumtiem un ielām un filtrē to caur augsni, smiltīm vai granti. Biosvāle ir lineārs, apaudzis kanāls, kas palēnina un attīra ūdeni gaitā, noderīgs gar ceļiem. Lielai vētrai joprojām vajag pārliešanu kolektorā. Bez projekta un kopšanas tie aizsērē vai noslīcina augus.',
     imageAlt: 'Ielas biosvāle un apmales paplašinājums ar izgriezumiem, kas uztver noteci pie novietotām automašīnām',
   },
   'cool-pavements': {

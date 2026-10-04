@@ -242,7 +242,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Cool roofs',
+        'United States Environmental Protection Agency, cool roofs',
         'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
       ),
     ],
@@ -262,7 +262,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Trees and vegetation',
+        'United States Environmental Protection Agency, trees and vegetation',
         'https://www.epa.gov/heatislands/benefits-trees-and-vegetation',
       ),
     ],
@@ -702,15 +702,20 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'United States Environmental Protection Agency, green roofs',
-        'https://www.epa.gov/heatislands/using-green-roofs-reduce-heat-islands',
+        'United States General Services Administration, planted roof case studies',
+        'https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/water/planted-roof/case-studies',
       ),
     ],
   },
   {
     slug: 'rain-gardens-bioswales',
     tag: 'cities',
-    sources: [cite('US EPA — types of green infrastructure', 'https://www.epa.gov/green-infrastructure/types-green-infrastructure')],
+    sources: [
+      cite(
+        'United States Environmental Protection Agency, types of green infrastructure',
+        'https://www.epa.gov/green-infrastructure/types-green-infrastructure',
+      ),
+    ],
   },
   {
     slug: 'cool-pavements',
