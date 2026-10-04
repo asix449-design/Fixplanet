@@ -833,5 +833,55 @@
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-DOE",
     "note": "Steel members set aside for reuse in Boulder, Colorado. Delivered crop kept. Light gamma 0.85 brighten (mean luminance about 35 to 44). JPEG quality 80, 1280 px wide."
+  },
+  {
+    "slug": "cool-roofs-preview",
+    "file": "cool-roofs-preview.jpg",
+    "commonsTitle": "Bermuda roof.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bermuda_roof.jpg",
+    "artist": "Acroterion",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "note": "White stepped roofs on the coast of Bermuda, May 1994. Detail photo for the cool roofs doorway. Long side 1280 px."
+  },
+  {
+    "slug": "green-roofs-preview",
+    "file": "green-roofs-preview.jpg",
+    "commonsTitle": "20080708 Chicago City Hall Green Roof.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20080708_Chicago_City_Hall_Green_Roof.JPG",
+    "artist": "TonyTheTiger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "note": "Aerial view of the planted roof of Chicago City Hall, 8 July 2008. Detail photo for the green roofs doorway. Long side 1280 px."
+  },
+  {
+    "slug": "permeable-pavement-preview",
+    "file": "permeable-pavement-preview.jpg",
+    "commonsTitle": "Demonstration experiment of the permeable paving (2012.10.07).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demonstration_experiment_of_the_permeable_paving_(2012.10.07).jpg",
+    "artist": "Lombroso",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "note": "Water poured onto a slab of porous paving, 7 October 2012. Detail photo for the permeable pavement doorway. Long side 1280 px."
+  },
+  {
+    "slug": "urban-tree-canopy-preview",
+    "file": "urban-tree-canopy-preview.jpg",
+    "commonsTitle": "Unter den Linden Berlin.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unter_den_Linden_Berlin.jpg",
+    "artist": "Jochen Sievert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "note": "Autumn trees along Unter den Linden in Berlin, with a historic monument beside the road. Detail photo for the urban tree canopy doorway. Weak fit: the monument dominates the frame. Long side 1280 px."
+  },
+  {
+    "slug": "rain-gardens-bioswales-preview",
+    "file": "rain-gardens-bioswales-preview.jpg",
+    "commonsTitle": "Bioswale.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bioswale.jpg",
+    "artist": "Duk (English Wikipedia)",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bioswale.jpg",
+    "note": "Two bioswales beside houses, the near one still under construction. Detail photo for the rain gardens and bioswales doorway. Long side 1280 px."
   }
 ]
