@@ -74,6 +74,7 @@ export {
   getOceanStats,
   getOceansPage,
 } from './oceans';
+export { getEconomyPage, type EconomyPage } from './economy';
 export {
   getOceanAtlas,
   getOceanAtlasBySlug,

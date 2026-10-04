@@ -1,0 +1,245 @@
+---
+import HubTile from '../components/HubTile.astro';
+import ShelfHeader from '../components/ShelfHeader.astro';
+import {
+  economyCreditReady,
+  economyFigureLive,
+  economyFigures,
+  economySources,
+  economySourcesForTab,
+  economyTabPath,
+  economyTabs,
+  liveEconomyTabs,
+  type EconomyTabSlug,
+} from '../data/economy';
+import { getEconomyPage, resolveLocale } from '../i18n';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+interface Props {
+  slug: EconomyTabSlug;
+}
+
+interface CreditPart {
+  text: string;
+  href?: string;
+}
+
+const { slug } = Astro.props;
+const locale = resolveLocale(Astro.currentLocale);
+const page = getEconomyPage(locale);
+const tab = economyTabs.find((item) => item.slug === slug);
+if (!tab) {
+  throw new Error(`Unknown economy tab: ${slug}`);
+}
+
+const copy = page.tabs[slug];
+const isHub = slug === 'overview';
+const title = slug === 'overview' ? page.meta.title : page.tabs[slug].metaTitle;
+const description = slug === 'overview' ? page.meta.description : page.tabs[slug].metaDescription;
+const updates = 'updates' in copy ? copy.updates : undefined;
+const privacy = slug === 'companies' ? page.tabs.companies.privacy : undefined;
+const methods =
+  slug === 'sources'
+    ? [page.tabs.sources.method1, page.tabs.sources.method2, page.tabs.sources.method3]
+    : [];
+const liveFigureIds = tab.figures.filter((id) => economyFigureLive(economyFigures[id]));
+const sourceIds = economySourcesForTab(tab);
+const tabs = liveEconomyTabs();
+const hubTiles = tabs.filter((item) => item.slug !== 'overview');
+
+function tileText(tabSlug: EconomyTabSlug): string {
+  if (tabSlug === 'overview') return '';
+  return page.tabs[tabSlug].tile;
+}
+
+function creditParts(credit: string, links: Record<string, string> | undefined): CreditPart[] {
+  if (!links) return [{ text: credit }];
+  const keys = Object.keys(links).sort((a, b) => b.length - a.length);
+  const parts: CreditPart[] = [];
+  let rest = credit;
+  while (rest.length > 0) {
+    let earliest = -1;
+    let matched = '';
+    for (const key of keys) {
+      const at = rest.indexOf(key);
+      if (at !== -1 && (earliest === -1 || at < earliest)) {
+        earliest = at;
+        matched = key;
+      }
+    }
+    if (earliest === -1 || !matched) {
+      parts.push({ text: rest });
+      break;
+    }
+    if (earliest > 0) parts.push({ text: rest.slice(0, earliest) });
+    parts.push({ text: matched, href: links[matched] });
+    rest = rest.slice(earliest + matched.length);
+  }
+  return parts;
+}
+---
+
+<BaseLayout title={title} description={description}>
+  {
+    isHub ? (
+      <header class="shelf-page">
+        <div class="wrap">
+          <p class="eyebrow">{page.hub.kicker}</p>
+          <h1>{page.hub.title}</h1>
+          <p class="shelf-page-lede">{page.hub.lede}</p>
+        </div>
+      </header>
+    ) : (
+      <ShelfHeader
+        backHref={economyTabPath('overview', locale)}
+        backLabel={page.back}
+        title={copy.title}
+        lede={copy.lede}
+      >
+        {privacy && <p class="shelf-page-lede">{privacy}</p>}
+      </ShelfHeader>
+    )
+  }
+
+  <div class="economy-main">
+    <div class="wrap">
+      <nav class="economy-tabs" aria-label={page.hub.tabsAria}>
+        {
+          tabs.map((item) => (
+            <a
+              href={economyTabPath(item.slug, locale)}
+              aria-current={item.slug === slug ? 'page' : undefined}
+            >
+              {page.tabs[item.slug].name}
+            </a>
+          ))
+        }
+      </nav>
+
+      {isHub && (
+        <>
+          <h2>{page.tabs.overview.title}</h2>
+          <p>{page.tabs.overview.lede}</p>
+        </>
+      )}
+
+      {
+        updates && (
+          <p>
+            <span class="pill">{page.labels.updates}</span> {updates}
+          </p>
+        )
+      }
+
+      {
+        methods.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))
+      }
+
+      {
+        liveFigureIds.length > 0 && (
+          <div class="forest-stat-grid">
+            {liveFigureIds.map((id) => {
+              const fig = economyFigures[id];
+              const figCopy = page.figures[id];
+              const sourceCopy = page.sources[fig.source];
+              return (
+                <article class="wildlife-copy-card">
+                  <h3>{figCopy.title}</h3>
+                  <p>
+                    <strong>{page.labels.shows}:</strong> {figCopy.shows}
+                  </p>
+                  <p>
+                    <strong>{page.labels.planet}:</strong> {figCopy.planet}
+                  </p>
+                  <p>
+                    <strong>{page.labels.caveat}:</strong> {figCopy.caveat}
+                  </p>
+                  <p class="wildlife-sources">
+                    <strong>{page.labels.source}:</strong>{' '}
+                    <a href={fig.url} rel="noopener noreferrer">
+                      {sourceCopy.name}
+                    </a>
+                  </p>
+                </article>
+              );
+            })}
+          </div>
+        )
+      }
+
+      {
+        sourceIds.length > 0 && (
+          <section>
+            <h2>{page.labels.sources}</h2>
+            <div class="economy-stack">
+              {sourceIds.map((id) => {
+                const meta = economySources[id];
+                const sourceCopy = page.sources[id];
+                const parts = economyCreditReady(meta.credit)
+                  ? creditParts(meta.credit, meta.creditLinks)
+                  : [];
+                return (
+                  <article class="forest-stat">
+                    <h3>
+                      <a href={meta.url} rel="noopener noreferrer">
+                        {sourceCopy.name}
+                      </a>
+                    </h3>
+                    <p>
+                      <strong>{page.labels.licence}:</strong>{' '}
+                      {meta.licenceUrl ? (
+                        <a href={meta.licenceUrl} rel="noopener noreferrer">
+                          {sourceCopy.licence}
+                        </a>
+                      ) : (
+                        sourceCopy.licence
+                      )}
+                    </p>
+                    {parts.length > 0 && (
+                      <p>
+                        <strong>{page.labels.credit}:</strong>{' '}
+                        {parts.map((part) =>
+                          part.href ? (
+                            <a href={part.href} rel="noopener noreferrer">
+                              {part.text}
+                            </a>
+                          ) : (
+                            part.text
+                          ),
+                        )}
+                      </p>
+                    )}
+                    <p class="wildlife-sources">{sourceCopy.note}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        isHub && hubTiles.length > 0 && (
+          <div class="hub-grid">
+            {hubTiles.map((item) => (
+              <HubTile
+                href={economyTabPath(item.slug, locale)}
+                icon={item.icon}
+                title={page.tabs[item.slug].name}
+                text={tileText(item.slug)}
+              />
+            ))}
+          </div>
+        )
+      }
+
+      <aside class="wildlife-copy-card economy-disclaimer">
+        <h2>{page.disclaimer.title}</h2>
+        <p>{page.disclaimer.body}</p>
+        <p>{page.disclaimer.nonCommercial}</p>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>

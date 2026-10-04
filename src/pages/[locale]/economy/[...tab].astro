@@ -1,0 +1,28 @@
+---
+import { isEconomyTab, liveEconomyTabs } from '../../../data/economy';
+import { otherLocales } from '../../../i18n';
+import EconomyView from '../../../views/EconomyView.astro';
+
+export function getStaticPaths() {
+  const tabs = liveEconomyTabs();
+  return otherLocales.flatMap((locale) =>
+    tabs.map((tab) => ({
+      params: {
+        locale,
+        tab: tab.slug === 'overview' ? undefined : tab.slug,
+      },
+    })),
+  );
+}
+
+const raw = Astro.params.tab;
+const slug = raw == null || raw === '' ? 'overview' : raw;
+if (typeof raw === 'string' && raw === 'overview') {
+  throw new Error('The /economy/overview path must not be built');
+}
+if (!isEconomyTab(slug)) {
+  throw new Error(`Unexpected economy tab: ${String(raw)}`);
+}
+---
+
+<EconomyView slug={slug} />
