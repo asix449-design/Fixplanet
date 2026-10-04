@@ -306,9 +306,9 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
   "urban-tree-canopy": {
     title: "Miejski parasol drzew",
     hook: "Drzewa i inna roślinność chłodzą miejskie powietrze cieniem i parowaniem, i przegląd 308 badań wykazał, że lasy miejskie były średnio o 1,6 °C chłodniejsze niż obszary miejskie bez zieleni.",
-    imageAlt: "Drzewa w jesiennych barwach wzdłuż bulwaru Unter den Linden w Berlinie, przy drodze stoi zabytkowy pomnik.",
-    caption: "Drzewa w jesiennych barwach wzdłuż bulwaru Unter den Linden w Berlinie, przy drodze stoi zabytkowy pomnik.",
-    credit: "Zdjęcie: Jochen Sievert, za pośrednictwem Wikimedia Commons, licencja Uznanie autorstwa na tych samych warunkach 4.0.",
+    imageAlt: "Ulica wybrukowana cegłą w Savannah w stanie Georgia, w Stanach Zjednoczonych, gdzie duże drzewa schodzą się koronami nad drogą i rzucają plamisty cień na jezdnię oraz zaparkowane samochody po obu stronach.",
+    caption: "Ulica wybrukowana cegłą w Savannah w stanie Georgia, gdzie duże drzewa schodzą się nad drogą.",
+    credit: "Zdjęcie: Michael Stokes, za pośrednictwem Wikimedia Commons, licencja Uznanie autorstwa 2.0.",
     what: ["Drzewa i roślinność, taka jak krzewy, krzewinki i wysokie trawy, obniżają temperaturę powierzchni i powietrza cieniem i ewapotranspiracją. W ewapotranspiracji rośliny pobierają wodę korzeniami i odparowują ją liśćmi, co zużywa ciepło z powietrza. Chłodzenie pochodzi też z otaczającej gleby i z deszczu zatrzymanego na liściach. Agencja Ochrony Środowiska Stanów Zjednoczonych przedstawia drzewa i roślinność jako prosty i skuteczny sposób ograniczania wysp ciepła."],
     why: ["Drzewa zacieniające budynki zmniejszają zapotrzebowanie na klimatyzację, i parki miejskie i leśnictwo mogą zmniejszać zapotrzebowanie pobliskich budynków na energię o 10 procent. Wysoka i gęsta roślinność przydrożna może zmniejszać zanieczyszczenia po zawietrznej stronie o około 30 procent. Drzewa miejskie mogą ograniczać spływ wód opadowych, pochłaniając od 15 do 27 procent rocznych opadów. Pokrywa drzew wiąże się też z mniejszą liczbą zgonów z powodu upału: według jednej analizy wzrost pokrycia drzewami o 10 procent oznaczałby około 50 zgonów mniej rocznie w Salt Lake City w stanie Utah i 3 800 mniej w Nowym Jorku."],
     read: ["Ochłodzenie o 1,6 °C jest średnią z 308 badań. Agencja podaje, że części miast z mniejszą ilością roślinności są gorętsze, i w jednym badaniu mieszkało w nich więcej osób o niższych dochodach. Agencja zalicza poprawę równości do korzyści z drzew i roślinności."],

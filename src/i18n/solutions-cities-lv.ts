@@ -313,9 +313,9 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
   "urban-tree-canopy": {
     title: "Pilsētas koku vainags",
     hook: "Koki un citi augi dzesē pilsētas gaisu ar ēnu un iztvaikošanu, un 308 pētījumu apskats parādīja, ka pilsētu meži vidēji bija par 1,6 °C vēsāki nekā pilsētas teritorijas bez zaļuma.",
-    imageAlt: "Koki rudens krāsās gar bulvāri Unter den Linden Berlīnē, ceļa malā redzams vēsturisks piemineklis.",
-    caption: "Koki rudens krāsās gar bulvāri Unter den Linden Berlīnē, ceļa malā redzams vēsturisks piemineklis.",
-    credit: "Foto: Jochen Sievert, ar Wikimedia Commons starpniecību, licence «Ar autora norādi, tādos pašos noteikumos» 4.0.",
+    imageAlt: "Ar ķieģeļiem bruģēta iela Savannā, Džordžijas štatā, Amerikas Savienotajās Valstīs, kur lieli koki sakļaujas vainagiem virs ceļa un met raibu ēnu uz ceļa un abās pusēs novietotajām automašīnām.",
+    caption: "Ar ķieģeļiem bruģēta iela Savannā, Džordžijas štatā, kur lieli koki sakļaujas virs ceļa.",
+    credit: "Foto: Michael Stokes, ar Wikimedia Commons starpniecību, licence «Ar autora norādi» 2.0.",
     what: ["Koki un augi, piemēram, krūmi, krūmāji un augsti zāļaugi, pazemina virsmu un gaisa temperatūru ar ēnu un evapotranspirāciju. Evapotranspirācijā augi uzņem ūdeni ar saknēm un iztvaicē to ar lapām, un tas patērē gaisa siltumu. Dzesēšana nāk arī no apkārtējās augsnes un lapās aizturētā lietus. Amerikas Savienoto Valstu Vides aizsardzības aģentūra norāda koku un augu kā vienkāršu un efektīvu veidu, kā mazināt siltuma salas."],
     why: ["Koki, kas apēno ēkas, samazina gaisa kondicionēšanas vajadzību, un pilsētas parki un mežsaimniecība var samazināt tuvumā esošo ēku enerģijas pieprasījumu par 10 procentiem. Augsta un blīva ceļmalas veģetācija var mazināt piesārņojumu pa vējam par aptuveni 30 procentiem. Pilsētas koki var samazināt lietus ūdens noteci, uzņemot no 15 līdz 27 procentiem gada nokrišņu. Koku sega saistīta arī ar mazāku ar karstumu saistīto nāves gadījumu skaitu: pēc vienas analīzes koku segas pieaugums par 10 procentiem nozīmētu aptuveni 50 nāves gadījumus gadā mazāk Soltleiksitijā Jūtas štatā un 3 800 mazāk Ņujorkā."],
     read: ["Atdzišana par 1,6 °C ir vidējais rādītājs 308 pētījumos. Aģentūra ziņo, ka pilsētu daļas ar mazāku veģetāciju ir karstākas un ka vienā pētījumā šajās daļās dzīvoja vairāk iedzīvotāju ar zemākiem ienākumiem. Aģentūra uzskaita taisnīguma uzlabošanu starp koku un augu ieguvumiem."],

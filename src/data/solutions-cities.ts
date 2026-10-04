@@ -161,11 +161,11 @@ export const citiesEncyclopediaMeta: { slug: CitiesEncyclopediaSlug; image: Citi
     slug: 'urban-tree-canopy',
     image: img(
       'urban-tree-canopy-preview.jpg',
-      'CC BY-SA 4.0',
-      'https://creativecommons.org/licenses/by-sa/4.0/',
-      'https://commons.wikimedia.org/wiki/File:Unter_den_Linden_Berlin.jpg',
+      'CC BY 2.0',
+      'https://creativecommons.org/licenses/by/2.0/',
+      'https://commons.wikimedia.org/wiki/File:Tree_shaded_brick_street_in_Savannah_Georgia_USA,_Feb_2018.jpg',
       1280,
-      883,
+      851,
     ),
   },
   {

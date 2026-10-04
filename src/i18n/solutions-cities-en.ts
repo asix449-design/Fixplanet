@@ -304,9 +304,9 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
   "urban-tree-canopy": {
     title: "Urban tree canopy",
     hook: "Trees and other vegetation cool city air with shade and evaporation, and a review of 308 studies found that urban forests were on average 1.6 °C cooler than urban areas without green cover.",
-    imageAlt: "Trees in autumn colours along the boulevard Unter den Linden in Berlin, with a historic monument beside the road.",
-    caption: "Trees in autumn colours along the boulevard Unter den Linden in Berlin, with a historic monument beside the road.",
-    credit: "Photo: Jochen Sievert, via Wikimedia Commons, licence Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).",
+    imageAlt: "A street paved with bricks in Savannah, Georgia, in the United States, where large trees meet overhead and cast dappled shade over the road and the parked cars along both sides.",
+    caption: "A street paved with bricks in Savannah, Georgia, where large trees meet over the road.",
+    credit: "Photo: Michael Stokes, via Wikimedia Commons, licence Creative Commons Attribution 2.0 (CC BY 2.0).",
     what: ["Trees and vegetation such as bushes, shrubs and tall grasses lower surface and air temperatures by providing shade and by evapotranspiration. In evapotranspiration, plants absorb water through their roots and evaporate it through their leaves, which uses heat from the air. The cooling also comes from the surrounding soil and from rainfall caught on leaves. The United States Environmental Protection Agency presents trees and vegetation as a simple and effective way to reduce heat islands."],
     why: ["Trees that shade buildings reduce the demand for air conditioning, and urban parks and forestry can reduce the energy demand of nearby buildings by 10 percent. Tall, dense roadside vegetation can lessen downwind pollutants by approximately 30 percent. Urban trees can reduce stormwater runoff by absorbing 15 to 27 percent of annual rainfall. Tree cover is also linked to fewer heat-related deaths: one analysis estimates that a 10 percent increase in tree cover would mean about 50 fewer deaths a year in Salt Lake City, Utah, and 3,800 fewer in New York City."],
     read: ["The cooling of 1.6 °C is an average over 308 studies. The agency reports that parts of cities with less vegetation have hotter temperatures, and that one study found these parts home to more residents with lower incomes. The agency lists improved equity among the benefits of trees and vegetation."],
