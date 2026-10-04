@@ -142,9 +142,7 @@ const plate =
               <p>
                 {creditBits().map((bit) =>
                   bit.href ? (
-                    <a href={bit.href} rel="noopener noreferrer">
-                      {bit.text}
-                    </a>
+                    <a href={bit.href} rel="noopener noreferrer">{bit.text}</a>
                   ) : (
                     bit.text
                   ),
@@ -182,13 +180,7 @@ const plate =
               <p class="wildlife-sources">{ui.solutionsPage.sourcesVerify}</p>
               <ol class="law-source-list cited-source-list">
                 {item.sources.map((source) => (
-                  <li>
-                    {source.label}
-                    {': '}
-                    <a href={source.url} rel="noopener noreferrer">
-                      {source.url}
-                    </a>
-                  </li>
+                  <li>{source.label}: <a href={source.url} rel="noopener noreferrer">{source.url}</a></li>
                 ))}
               </ol>
             </>
