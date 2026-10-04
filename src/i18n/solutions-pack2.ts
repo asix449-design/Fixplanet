@@ -12,7 +12,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Green roofs',
       problem:
         'Conventional roofs dump rain into sewers and bake in the sun. In a dense city that adds runoff and heat when there is no soil left at street level.',
-      fix: 'A planted roof holds growing medium and vegetation over a waterproof membrane. The United States General Services Administration lists more than 80 federal buildings with green roofs, about 20 hectares in total, including the United States Coast Guard headquarters in Washington, about 5.2 hectares. The administration says a planted roof can last two or three times longer than a bare membrane, cut heat island load, and add insulation. It still needs a sound structure, drainage, and upkeep.',
+      fix: 'A planted roof holds growing medium and vegetation over a waterproof membrane. The United States General Services Administration lists more than 80 federal buildings with green roofs, about 20 hectares in total, including the United States Coast Guard headquarters in Washington, about 5.2 hectares. The administration says a planted roof can last two or three times longer than a bare membrane, lessen the extra heat that gathers in a city, and add insulation. It still needs a sound structure, drainage, and upkeep.',
       imageAlt: 'Aerial view of a planted roof with circular paths on a white downtown building among Chicago high-rises',
     },
     'rain-gardens-bioswales': {

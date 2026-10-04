@@ -7,7 +7,7 @@ export const pack2Lv: Record<string, SolutionCopy> = {
     sourceLabel: 'Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija, stādīto jumtu piemēri',
     problem:
       'Parasts jumts novelk lietu kanalizācijā un sakarst saulē. Blīvā pilsētā tas dod lieku noteci un karstumu, kad ielā vairs nav augsnes.',
-    fix: 'Stādīts jumts tur substrātu un augus virs hidroizolācijas. Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija uzskaita vairāk nekā 80 federālas ēkas ar zaļajiem jumtiem, kopā aptuveni 20 hektāru, tostarp Amerikas Savienoto Valstu Krasta apsardzes štābu Vašingtonā ar aptuveni 5,2 hektāriem. Administrācija saka, ka stādīts jumts var kalpot divas vai trīs reizes ilgāk par kailu membrānu, mazina siltuma salu un pievieno izolāciju. Joprojām vajag nestspēju, drenāžu un kopšanu.',
+    fix: 'Stādīts jumts tur substrātu un augus virs hidroizolācijas. Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija uzskaita vairāk nekā 80 federālas ēkas ar zaļajiem jumtiem, kopā aptuveni 20 hektāru, tostarp Amerikas Savienoto Valstu Krasta apsardzes štābu Vašingtonā ar aptuveni 5,2 hektāriem. Administrācija saka, ka stādīts jumts var kalpot divas vai trīs reizes ilgāk par kailu membrānu, mazina lieko siltumu, kas krājas pilsētā, un pievieno izolāciju. Joprojām vajag nestspēju, drenāžu un kopšanu.',
     imageAlt: 'Skats no gaisa: stādīts jumts ar apļveida takām uz baltas ēkas starp Čikāgas debesskrāpjiem',
   },
   'rain-gardens-bioswales': {

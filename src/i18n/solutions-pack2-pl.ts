@@ -7,7 +7,7 @@ export const pack2Pl: Record<string, SolutionCopy> = {
     sourceLabel: 'Administracja Służb Ogólnych Stanów Zjednoczonych, przykłady dachów z roślinnością',
     problem:
       'Zwykły dach zrzuca deszcz do kanalizacji i nagrzewa się na słońcu. W gęstym mieście to dodaje spływu i upału, gdy na ulicy nie ma już gleby.',
-    fix: 'Dach z roślinnością trzyma podłoże i rośliny nad membraną hydroizolacyjną. Administracja Służb Ogólnych Stanów Zjednoczonych wymienia ponad 80 budynków federalnych z zielonymi dachami o łącznej powierzchni około 20 hektarów, w tym siedzibę Straży Przybrzeżnej Stanów Zjednoczonych w Waszyngtonie o powierzchni około 5,2 hektara. Administracja pisze, że taki dach może żyć dwa lub trzy razy dłużej niż goła membrana, obniża wyspę ciepła i dodaje izolacji. Nadal potrzebuje nośności, drenażu i pielęgnacji.',
+    fix: 'Dach z roślinnością trzyma podłoże i rośliny nad membraną hydroizolacyjną. Administracja Służb Ogólnych Stanów Zjednoczonych wymienia ponad 80 budynków federalnych z zielonymi dachami o łącznej powierzchni około 20 hektarów, w tym siedzibę Straży Przybrzeżnej Stanów Zjednoczonych w Waszyngtonie o powierzchni około 5,2 hektara. Administracja pisze, że taki dach może żyć dwa lub trzy razy dłużej niż goła membrana, zmniejsza dodatkowe ciepło, które zbiera się w mieście, i dodaje izolacji. Nadal potrzebuje nośności, drenażu i pielęgnacji.',
     imageAlt: 'Widok z góry: dach z roślinnością i okrągłymi ścieżkami na białym budynku wśród wieżowców Chicago',
   },
   'rain-gardens-bioswales': {

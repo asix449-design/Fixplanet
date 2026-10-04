@@ -142,7 +142,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Permeable pavement',
     problem:
       'Cities seal soil with asphalt. Rain becomes a dirty flood that overloads sewers and rivers.',
-    fix: 'Porous asphalt, pervious concrete, and interlocking pavers let water into a stone reservoir below the street. They are standard green stormwater kit in United States municipal programs, German cities, and China’s sponge city projects. They clog without sweeping. They shave runoff on the lots and streets where they are laid.',
+    fix: 'Porous asphalt, pervious concrete, and interlocking pavers let water into a stone reservoir below the street. United States municipal programs, German cities, and China’s sponge city projects already use them for rain. They clog without sweeping. They reduce the rain that runs off the lots and streets where they are laid.',
     imageAlt: 'Interlocking permeable pavers beside a sunken rain garden in a public park',
   },
   'urban-tree-canopy': {
@@ -542,7 +542,7 @@ const ru: Record<string, SolutionCopy> = {
     sourceLabel: 'Агентство по охране окружающей среды Соединённых Штатов, виды зелёной инфраструктуры',
     problem:
       'Города запечатывают почву асфальтом. Дождь становится грязным паводком, который перегружает коллекторы и реки.',
-    fix: 'Пористый асфальт, проницаемый бетон и штучная брусчатка пускают воду в щебёночный резервуар под улицей. Это стандартный набор ливневой «зелёной» инфраструктуры в муниципальных программах Соединённых Штатов, немецких городах и китайских «губчатых городах». Без подметания они забиваются. Они срезают сток на тех участках, где уложены.',
+    fix: 'Пористый асфальт, проницаемый бетон и штучная брусчатка пускают воду в щебёночный резервуар под улицей. Муниципальные программы Соединённых Штатов, немецкие города и китайские «губчатые города» уже применяют их для дождя. Без подметания они забиваются. Они уменьшают дождевую воду, которая стекает с участков и улиц, где они уложены.',
     imageAlt: 'Проницаемая брусчатка рядом с заглублённым дождевым садом в общественном парке',
   },
   'urban-tree-canopy': {
@@ -943,7 +943,7 @@ const pl: Record<string, SolutionCopy> = {
     sourceLabel: 'Agencja Ochrony Środowiska Stanów Zjednoczonych, rodzaje zielonej infrastruktury',
     problem:
       'Miasta pieczętują glebę asfaltem. Deszcz staje się brudną powodzią, która przeciąża kanalizację i rzeki.',
-    fix: 'Porowaty asfalt, przepuszczalny beton i ażurowa kostka puszczają wodę do żwirowego zbiornika pod ulicą. To standardowy zestaw zielonej infrastruktury deszczowej w programach amerykańskich, niemieckich miastach i chińskich „miastach gąbkach”. Bez zamiatania się zapychają. Obcinają spływ na działkach i ulicach, na których leżą.',
+    fix: 'Porowaty asfalt, przepuszczalny beton i ażurowa kostka puszczają wodę do żwirowego zbiornika pod ulicą. Programy amerykańskie, niemieckie miasta i chińskie „miasta gąbki” już stosują je do deszczu. Bez zamiatania się zapychają. Zmniejszają deszcz, który spływa z działek i ulic, na których leżą.',
     imageAlt: 'Przepuszczalna kostka obok zagłębionego ogrodu deszczowego w parku publicznym',
   },
   'urban-tree-canopy': {
@@ -1344,7 +1344,7 @@ const lv: Record<string, SolutionCopy> = {
     sourceLabel: 'Amerikas Savienoto Valstu Vides aizsardzības aģentūra, zaļās infrastruktūras veidi',
     problem:
       'Pilsētas aizzīmogo augsni ar asfaltu. Lietus kļūst par netīru plūdu, kas pārslogo kanalizāciju un upes.',
-    fix: 'Porains asfalts, caurlaidīgs betons un caurlaidīgie bruģakmeņi laiž ūdeni akmens rezervuārā zem ielas. Tas ir standarta zaļās lietus infrastruktūras komplekts Amerikas Savienoto Valstu pašvaldību programmās, Vācijas pilsētās un Ķīnas «sūkļa pilsētās». Bez slaucīšanas tie aizsērē. Tie nogriež noteci tur, kur ir ieklāti.',
+    fix: 'Porains asfalts, caurlaidīgs betons un caurlaidīgie bruģakmeņi laiž ūdeni akmens rezervuārā zem ielas. Amerikas Savienoto Valstu pašvaldību programmas, Vācijas pilsētas un Ķīnas «sūkļa pilsētas» tos jau izmanto lietus ūdenim. Bez slaucīšanas tie aizsērē. Tie samazina lietus ūdeni, kas notek tur, kur tie ir ieklāti.',
     imageAlt: 'Caurlaidīgi bruģakmeņi blakus iedziļinātam lietus dārzam publiskā parkā',
   },
   'urban-tree-canopy': {
