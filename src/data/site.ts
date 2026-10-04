@@ -1,3 +1,5 @@
+import { economyTabLive, overviewTab } from './economy';
+
 export const site = {
   name: 'Fix Planet',
   domain: 'fixplanet.org',
@@ -14,7 +16,7 @@ export const site = {
 export const donateCheckoutUrl =
   'https://buy.stripe.com/00w3cnbA548A5Za7PKffy00';
 
-export const nav = [
+export const navAll = [
   { href: '/solutions', key: 'solutions' },
   { href: '/innovations', key: 'innovations' },
   { href: '/terraforming', key: 'terraforming' },
@@ -24,8 +26,13 @@ export const nav = [
   { href: '/migration', key: 'migration' },
   { href: '/forests', key: 'forests' },
   { href: '/oceans', key: 'oceans' },
+  { href: '/economy', key: 'economy' },
   { href: '/about', key: 'about' },
 ] as const;
+
+export const nav = navAll.filter(function (i) {
+  return i.key !== 'economy' || economyTabLive(overviewTab);
+});
 
 export const features = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
@@ -49,7 +56,7 @@ export const homeTileArt = {
 } as const;
 
 /** Primary Home hub tiles — one entry per main nav destination. */
-export const homeHub = [
+export const homeHubAll = [
   { href: '/solutions', key: 'solutions', icon: 'leaf' },
   { href: '/innovations', key: 'innovations', icon: 'circuit' },
   { href: '/terraforming', key: 'terraforming', icon: 'terrain' },
@@ -59,5 +66,10 @@ export const homeHub = [
   { href: '/migration', key: 'migration', icon: 'migrate' },
   { href: '/forests', key: 'forests', icon: 'trees' },
   { href: '/oceans', key: 'oceans', icon: 'wave' },
+  { href: '/economy', key: 'economy', icon: 'bolt' },
   { href: '/about', key: 'about', icon: 'compass' },
 ] as const;
+
+export const homeHub = homeHubAll.filter(function (i) {
+  return i.key !== 'economy' || economyTabLive(overviewTab);
+});
