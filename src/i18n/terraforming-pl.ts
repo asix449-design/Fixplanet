@@ -1,4 +1,5 @@
 import type { GeoCopy } from '../data/terraforming';
+import { desertPackPl } from './terraforming-desert-pack';
 
 export const pl: Record<string, GeoCopy> = {
   'bradfield-scheme': {
@@ -348,4 +349,5 @@ export const pl: Record<string, GeoCopy> = {
     sourcesNote:
       'Glacial Climate Intervention: A Research Vision (2024, PDF przez AWI EPIC); przegląd Moore et al. 2024 w Climatic Change; NOAA CSL SRM SoS.',
   },
+  ...desertPackPl,
 };
