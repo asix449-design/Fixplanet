@@ -65,6 +65,8 @@ export type ForestStatCopy = {
   text: string;
   /** Readable source line. The tile links this text; it does not print the URL. */
   sourceLine: string;
+  /** Locale headline when the shared figure uses another decimal mark or wording. */
+  value?: string;
   /** Locale unit when the shared unit label would not agree with the number. */
   unit?: string;
 };
@@ -400,7 +402,7 @@ export const forestStats: ForestStatMeta[] = [
   },
   {
     id: 'holoceneTrees',
-    value: '~46',
+    value: '46',
     unitKey: 'percent',
     vintage: '2015',
     sourceShort: 'Nature 2015',

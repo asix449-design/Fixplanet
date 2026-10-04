@@ -281,7 +281,7 @@ export const lv: ForestsPage = {
     deforestationSince1990: {
       label: 'Mežu izciršana kopš 1990. gada',
       text: '489 miljoni hektāru izcirsti no 1990. līdz 2025. gadam. Skaitlis ir bruto meža zemes izmantošanas zudums. Temps palēninājās, un izciršana turpinās.',
-      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
+      sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, Globālais meža resursu novērtējums 2025, galvenais ziņojums',
     },
     netLossRecent: {
       label: 'Neto meža platības zudums',
@@ -289,6 +289,7 @@ export const lv: ForestsPage = {
       sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
     },
     grossDeforestation: {
+      value: '10,9',
       label: 'Bruto mežu izciršanas temps',
       text: '10,9 miljoni hektāru gadā no 2015. līdz 2025. gadam, salīdzinot ar 17,6 miljoniem hektāru gadā no 1990. līdz 2000. gadam. Paplašināšanās arī palēninājās, līdz 6,78 miljoniem hektāru gadā pēdējā desmitgadē. Izciršana nozīmē meža pārveidi citā zemes izmantošanā.',
       sourceLine: 'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija, ziņu izlaidums par meža novērtējumu 2025',
@@ -299,6 +300,7 @@ export const lv: ForestsPage = {
       sourceLine: 'Globālais meža resursu novērtējums 2025, primārie meži',
     },
     tropicalPrimary2024: {
+      value: '6,7',
       label: 'Tropu primārais mežs, 2024',
       text: '6,7 miljoni hektāru mitro tropu primārā meža rekordgadā, galvenokārt ugunsgrēku dēļ, ap 18 futbola laukumiem minūtē.',
       sourceLine: 'Pasaules resursu institūts, Pasaules mežu pārskats, meža zudums 2024. gadā',
@@ -316,7 +318,7 @@ export const lv: ForestsPage = {
     holoceneTrees: {
       label: 'Koki kopš civilizācijas sākuma',
       text: 'Tas pats 2015. gada raksts novērtē aptuveni par 46 procentiem mazāk koku nekā cilvēku civilizācijas sākumā.',
-      sourceLine: 'Nature, «Koku blīvuma kartēšana globālā mērogā» (2015)',
+      sourceLine: 'Žurnāls «Neičers», «Koku blīvuma kartēšana globālā mērogā» (2015)',
     },
     intactLandscapes: {
       label: 'Neskartas meža ainavas',

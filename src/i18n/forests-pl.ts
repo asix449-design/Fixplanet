@@ -283,7 +283,7 @@ export const pl: ForestsPage = {
       label: 'Wylesienie od 1990 roku',
       unit: 'milionów hektarów',
       text: '489 milionów hektarów wycięto od 1990 do 2025 roku. Liczba jest stratą brutto leśnego użytkowania ziemi. Tempo spadło, a wycinanie trwa.',
-      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
+      sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, Globalna Ocena Zasobów Leśnych 2025, raport główny',
     },
     netLossRecent: {
       label: 'Strata netto powierzchni lasu',
@@ -291,6 +291,7 @@ export const pl: ForestsPage = {
       sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
     },
     grossDeforestation: {
+      value: '10,9',
       label: 'Tempo wylesienia brutto',
       text: '10,9 miliona hektarów rocznie w latach 2015 do 2025, wobec 17,6 miliona hektarów rocznie w latach 1990 do 2000. Ekspansja też zwolniła, do 6,78 miliona hektarów rocznie w ostatniej dekadzie. Wylesianie oznacza przekształcenie lasu w inny sposób użytkowania gruntów.',
       sourceLine: 'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, komunikat o ocenie lasów 2025',
@@ -301,6 +302,7 @@ export const pl: ForestsPage = {
       sourceLine: 'Globalna Ocena Zasobów Leśnych 2025, lasy pierwotne',
     },
     tropicalPrimary2024: {
+      value: '6,7',
       label: 'Tropikalny las pierwotny, 2024',
       text: '6,7 miliona hektarów wilgotnego tropikalnego lasu pierwotnego w rekordowym roku, głównie z powodu pożarów, około 18 boisk na minutę.',
       sourceLine: 'Instytut Zasobów Światowych, Przegląd Lasów Świata, utrata lasu w 2024 roku',
@@ -318,7 +320,7 @@ export const pl: ForestsPage = {
     holoceneTrees: {
       label: 'Drzewa od początku cywilizacji',
       text: 'Ten sam artykuł z 2015 roku szacuje około 46 procent mniej drzew niż na początku ludzkiej cywilizacji.',
-      sourceLine: 'Nature, „Mapowanie gęstości drzew w skali globalnej” (2015)',
+      sourceLine: 'Czasopismo „Nejczur”, „Mapowanie gęstości drzew w skali globalnej” (2015)',
     },
     intactLandscapes: {
       label: 'Nienaruszone krajobrazy leśne',

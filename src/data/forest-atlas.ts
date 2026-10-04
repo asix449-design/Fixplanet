@@ -598,12 +598,12 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     imageHeight: 857,
     sourceOrg: 'Scott Darbey',
     sourceLabel:
-      'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, 2000-2025, key findings (2025)',
+      'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, from 2000 to 2025, key findings (2025)',
     sourceUrl: 'https://intactforests.org/world.map.html',
     usesCoastline: false,
     sources: [
       cite(
-        'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, 2000-2025, key findings (2025)',
+        'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, from 2000 to 2025, key findings (2025)',
         'https://intactforests.org/world.map.html',
       ),
       cite(
