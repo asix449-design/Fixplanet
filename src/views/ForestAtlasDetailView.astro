@@ -92,6 +92,14 @@ const backdropSrc = forestFrameSrc(forestBackdrop.file);
                       </>
                     ) : null}
                   </p>
+                  {map.imagePageUrl && map.imagePageUrl !== map.licenseUrl ? (
+                    <p>
+                      {chrome.imagePage}{' '}
+                      <a href={map.imagePageUrl} rel="noopener noreferrer">
+                        {map.imagePageUrl}
+                      </a>
+                    </p>
+                  ) : null}
                 </>
               ) : credit ? (
                 credit

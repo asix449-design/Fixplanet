@@ -256,6 +256,8 @@ export const gfw2025Url =
   'https://www.wri.org/news/release-tropical-rainforest-loss-drops-36-2025-fires-threaten-global-progress';
 export const faoFra2025Url =
   'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en';
+/** Main report PDF. The 489 million hectare total is stated here, not in the news release. */
+export const faoFra2025PdfUrl = 'https://www.fao.org/3/cd6709en/cd6709en.pdf';
 export const faoFra2025HubUrl =
   'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en';
 export const gfr2025AnalysisUrl = 'https://gfr.wri.org/latest-analysis-deforestation-trends';
@@ -348,8 +350,8 @@ export const forestStats: ForestStatMeta[] = [
     unitKey: 'millionHa',
     vintage: '1990 to 2025',
     sourceShort: 'FRA 2025',
-    sourceUrl: faoFra2025Url,
-    atlasSlug: 'net-forest-loss',
+    sourceUrl: faoFra2025PdfUrl,
+    atlasSlug: 'deforestation-since-1990',
   },
   {
     id: 'netLossRecent',
@@ -367,7 +369,7 @@ export const forestStats: ForestStatMeta[] = [
     vintage: '2015 to 2025',
     sourceShort: 'FRA 2025',
     sourceUrl: faoFra2025Url,
-    atlasSlug: 'net-forest-loss',
+    atlasSlug: 'gross-deforestation',
   },
   {
     id: 'tropicalPrimary2024',
@@ -376,7 +378,7 @@ export const forestStats: ForestStatMeta[] = [
     vintage: '2024',
     sourceShort: 'WRI 2024',
     sourceUrl: gfw2024Url,
-    atlasSlug: 'tropical-primary-loss',
+    atlasSlug: 'tropical-primary-loss-2024',
   },
   {
     id: 'tropicalPrimary2025',
@@ -403,7 +405,7 @@ export const forestStats: ForestStatMeta[] = [
     vintage: '2015',
     sourceShort: 'Nature 2015',
     sourceUrl: crowther2015Url,
-    atlasSlug: 'trees-living',
+    atlasSlug: 'trees-since-civilization',
   },
   {
     id: 'intactLandscapes',
@@ -412,6 +414,7 @@ export const forestStats: ForestStatMeta[] = [
     vintage: '2025',
     sourceShort: 'Potapov / IFL 2025',
     sourceUrl: ifl2025Url,
+    atlasSlug: 'intact-forest-landscapes',
   },
 ];
 

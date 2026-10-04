@@ -24,6 +24,8 @@ export type ForestAtlasCopy = {
   sourceLabel?: string;
   /** Localized numbered sources. Falls back to the English meta list. */
   sources?: PrimarySource[];
+  /** Commons file page. Shown when it is not already the licence link. */
+  imagePageUrl?: string;
 };
 
 export type ForestAtlasEntry = ForestAtlasMeta & ForestAtlasCopy;
@@ -34,6 +36,7 @@ export type ForestAtlasChrome = {
   openSource: string;
   schematic: string;
   layersAria: string;
+  imagePage: string;
 };
 
 /** Section headings. Map plates in RU, PL and LV still use the short detail only. */
@@ -85,6 +88,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Open the source',
     schematic: 'Schematic after the named source. Open the source for the current layer.',
     layersAria: 'Forest measurements',
+    imagePage: 'Image page',
   },
   ru: {
     badge: 'Схема',
@@ -92,6 +96,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Открыть источник',
     schematic: 'Схема по названному источнику. Актуальный слой есть в источнике.',
     layersAria: 'Измерения лесов',
+    imagePage: 'Страница изображения',
   },
   pl: {
     badge: 'Schemat',
@@ -99,6 +104,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Otwórz źródło',
     schematic: 'Schemat według nazwanego źródła. Aktualna warstwa jest w źródle.',
     layersAria: 'Pomiary lasów',
+    imagePage: 'Strona obrazu',
   },
   lv: {
     badge: 'Shēma',
@@ -106,6 +112,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Atvērt avotu',
     schematic: 'Shēma pēc nosauktā avota. Aktuālais slānis ir avotā.',
     layersAria: 'Meža mērījumi',
+    imagePage: 'Attēla lapa',
   },
 };
 

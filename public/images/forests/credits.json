@@ -251,5 +251,54 @@
     "license": "CC BY-SA 2.5",
     "kind": "hosted-original",
     "note": "Wide 964 by 415 photograph. No text in the bitmap. Displayed whole."
+  },
+  {
+    "file": "deforestation-since-1990-preview.jpg",
+    "title": "Cleared and burned forest land near Apuí, Amazonas, August 2020",
+    "source": "Bruno Kelly, Amazônia Real, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Desmatamento_e_Queimdas_2020_(50223713453).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap. Illustration of cleared forest, dated August 2020."
+  },
+  {
+    "file": "gross-deforestation-preview.jpg",
+    "title": "Clear-cut surrounded by dense forest, North Cascades",
+    "source": "National Park Service of the United States, North Cascades NPS Complex Museum Collection, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Clearcut_surrounded_by_dense_forest_(9cd273c3-31c3-4c11-9c15-20833afe5e7f).tif",
+    "license": "Public domain (work of a United States federal agency)",
+    "kind": "hosted-original",
+    "note": "Black and white photograph. No text in the bitmap. Portrait frame, 1037 by 1280. Shows a cleared patch, not a rate."
+  },
+  {
+    "file": "tropical-primary-loss-2024-preview.jpg",
+    "title": "Aerial fire and clearing near Jacundá National Forest, Rondônia, August 2020",
+    "source": "Bruno Kelly, Amazônia Real, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:SOBREVVO_EM_RONDONIA_DIA_07-08-2020_(FOTO_BRUNO_KELLY)_(11)_(50224610152).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap. 2020 photograph used with a 2024 figure. The caption states the year."
+  },
+  {
+    "file": "trees-since-civilization-preview.jpg",
+    "title": "Khao Sok primary tropical rainforest, southern Thailand, 2011",
+    "source": "Vyacheslav Argenberg, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Khao_Sok_primary_tropical_rainforest,_southern_Thailand.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap."
+  },
+  {
+    "file": "intact-forest-landscapes-preview.jpg",
+    "title": "Mossy stream in a temperate rainforest, 2013",
+    "source": "Scott Darbey, via Wikimedia Commons",
+    "url": "https://commons.wikimedia.org/wiki/File:Temperate_rainforest_(9470596601).jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "kind": "hosted-original",
+    "note": "Photograph only. No text in the bitmap. One stream frame. It cannot show a 50,000 hectare landscape."
   }
 ]
