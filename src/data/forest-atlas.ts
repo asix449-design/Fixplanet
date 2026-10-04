@@ -548,7 +548,7 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     photo: true,
     imageWidth: 1280,
     imageHeight: 853,
-    sourceOrg: 'Bruno Kelly, Amazônia Real',
+    sourceOrg: 'Biodiego88',
     sourceLabel:
       'World Resources Institute, Global Forest Review: How much forest was lost in 2024? (21 May 2025)',
     sourceUrl: 'https://gfr.wri.org/global-tree-cover-loss-data-2024',
@@ -595,8 +595,8 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
     preview: 'intact-forest-landscapes-preview.jpg',
     photo: true,
     imageWidth: 1280,
-    imageHeight: 857,
-    sourceOrg: 'Scott Darbey',
+    imageHeight: 786,
+    sourceOrg: 'lubasi',
     sourceLabel:
       'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, from 2000 to 2025, key findings (2025)',
     sourceUrl: 'https://intactforests.org/world.map.html',
