@@ -5,6 +5,7 @@ import {
   type CitiesDetailCopy,
   type CitiesEncyclopedia,
   type CitiesEncyclopediaSlug,
+  type CitiesMobilitySlug,
 } from '../data/solutions-cities';
 import type { SolutionCopy } from '../data/solutions';
 import type { Locale } from './config';
@@ -13,7 +14,7 @@ import { detail as lvDetail, grid as lvGrid } from './solutions-cities-lv';
 import { detail as plDetail, grid as plGrid } from './solutions-cities-pl';
 import { detail as ruDetail, grid as ruGrid } from './solutions-cities-ru';
 
-const gridCopy: Record<Locale, Record<CitiesEncyclopediaSlug, SolutionCopy>> = {
+const gridCopy: Record<Locale, Record<CitiesMobilitySlug, SolutionCopy>> = {
   en: enGrid,
   ru: ruGrid,
   pl: plGrid,

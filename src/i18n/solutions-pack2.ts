@@ -12,7 +12,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Green roofs',
       problem:
         'Conventional roofs dump rain into sewers and bake in the sun. In a dense city that adds runoff and heat when there is no soil left at street level.',
-      fix: 'A planted roof holds growing medium and vegetation over a waterproof membrane. GSA lists more than 80 federal buildings with green roofs — about 2.2 million square feet — including the U.S. Coast Guard Headquarters in Washington, DC (557,000 square feet). GSA says a planted roof can last two or three times longer than a bare membrane, cut heat-island load, and add insulation. It still needs a sound structure, drainage, and upkeep. A sedum mat is not a park, and it does not replace street trees or sewers.',
+      fix: 'A planted roof holds growing medium and vegetation over a waterproof membrane. The United States General Services Administration lists more than 80 federal buildings with green roofs, about 20 hectares in total, including the United States Coast Guard headquarters in Washington, about 5.2 hectares. The administration says a planted roof can last two or three times longer than a bare membrane, lessen the extra heat that gathers in a city, and add insulation. It still needs a sound structure, drainage, and upkeep.',
       imageAlt: 'Aerial view of a planted roof with circular paths on a white downtown building among Chicago high-rises',
     },
     'rain-gardens-bioswales': {
@@ -20,7 +20,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Rain gardens and bioswales',
       problem:
         'When lots and roads are sealed, rain hits hard surfaces and races into pipes, carrying oil, sediment, and nutrients. Sewers overflow; streams spike.',
-      fix: 'EPA treats rain gardens and bioswales as types of green infrastructure. A rain garden is a shallow planted basin that collects roof and street runoff and filters it through soil, sand, or gravel. A bioswale is a linear vegetated channel that slows and treats water as it moves — useful along roads. They are not levees. Large storms still need overflow to a drain. They clog or drown plants if they are not designed and maintained.',
+      fix: 'The United States Environmental Protection Agency treats rain gardens and bioswales as types of green infrastructure. A rain garden is a shallow planted basin that collects roof and street runoff and filters it through soil, sand, or gravel. A bioswale is a linear vegetated channel that slows and treats water as it moves, useful along roads. Large storms still need overflow to a drain. They clog or drown plants if they are not designed and maintained.',
       imageAlt: 'A planted street bioswale and curb extension with cutouts catching runoff beside parked cars',
     },
     'cool-pavements': {
