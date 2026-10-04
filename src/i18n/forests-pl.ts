@@ -68,7 +68,7 @@ export const pl: ForestsPage = {
     'NDVI to nie powierzchnia lasu i nie las pierwotny. Uprawy i mokre lata też są zielone. Lipiec sprzyja latu na północy, więc różnica rok do roku w tej rozdzielczości jest mała. Ostatnie maksimum lodowcowe to około 18 000 lat temu, starsze i zimniejsze niż 10 000 p.n.e. Płyta biomów to analog niedawnego klimatu; w środkowym holocenie Sahara bywała bardziej zielona.',
   distinguishTitle: 'Las borealny, las tropikalny i las sadzony',
   distinguish:
-    'Około 45 procent zaraportowanego lasu leży w strefie tropikalnej. Reszta to głównie las borealny i umiarkowany, według oceny z 2025 roku. Straty borealne często biorą się z pożaru, owadów albo wyrębu, a grunt może znów liczyć się jako las w sensie użytkowania ziemi. Tropikalna strata lasu pierwotnego zwykle jest przekształceniem: na miejscu starego lasu staje soja albo olejowiec. Las wtórny i plantacje mogą zwiększać łączną powierzchnię lasu, gdy powierzchnia lasu pierwotnego maleje. Las sadzony zajmuje 312 milionów hektarów, 8 procent sumy, obok 1,18 miliarda hektarów lasu pierwotnego. Strata netto 4,12 miliona hektarów rocznie w latach 2015 do 2025 to wylesienie 10,9 miliona hektarów rocznie minus ekspansja. Nienaruszone krajobrazy leśne obejmują 1086 milionów hektarów w 2025 roku na własnej mapie. Utrata tropikalnego lasu pierwotnego wyniosła 6,7 miliona hektarów w 2024 roku i 4,3 miliona hektarów w 2025 roku w zapisie Global Forest Watch.',
+    'Około 45 procent zaraportowanego lasu leży w strefie tropikalnej. Reszta to głównie las borealny i umiarkowany, według oceny z 2025 roku. Straty borealne często biorą się z pożaru, owadów albo wyrębu, a grunt może znów liczyć się jako las w sensie użytkowania ziemi. Tropikalna strata lasu pierwotnego zwykle jest przekształceniem: na miejscu starego lasu staje soja albo olejowiec. Las wtórny i plantacje mogą zwiększać łączną powierzchnię lasu, gdy powierzchnia lasu pierwotnego maleje. Las sadzony zajmuje 312 milionów hektarów, 8 procent sumy, obok 1,18 miliarda hektarów lasu pierwotnego. Strata netto 4,12 miliona hektarów rocznie w latach 2015 do 2025 to wylesienie 10,9 miliona hektarów rocznie minus ekspansja. Nienaruszone krajobrazy leśne obejmują 1 086 milionów hektarów w 2025 roku na własnej mapie. Utrata tropikalnego lasu pierwotnego wyniosła 6,7 miliona hektarów w 2024 roku i 4,3 miliona hektarów w 2025 roku w zapisie Global Forest Watch.',
   numbersNote:
     'Każda liczba jest przepisana z cytowanej publikacji wraz z rokiem tej publikacji. Powierzchnia lasu, korona i liczba drzew pochodzą od własnych wydawców.',
   trendTitle: 'Długi widok, potem lata, które da się zmierzyć',
@@ -323,9 +323,10 @@ export const pl: ForestsPage = {
       sourceLine: 'Czasopismo „Nejczur”, „Mapowanie gęstości drzew w skali globalnej” (2015)',
     },
     intactLandscapes: {
+      value: '1 086',
       label: 'Nienaruszone krajobrazy leśne',
       unit: 'milionów hektarów',
-      text: '1086 milionów hektarów w 2025 roku, 8,4 procent lądu bez lodu. Płaty mają około 50 000 hektarów albo więcej i nie noszą śladu przemysłowego.',
+      text: '1 086 milionów hektarów w 2025 roku, 8,4 procent lądu bez lodu. Płaty mają około 50 000 hektarów albo więcej i nie noszą śladu przemysłowego.',
       sourceLine: 'Zespół mapowania nienaruszonych krajobrazów leśnych, 2025',
     },
   },
