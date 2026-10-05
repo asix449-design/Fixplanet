@@ -8,6 +8,9 @@
     "dev": "astro dev --host",
     "build": "node scripts/copy-maplibre-worker.mjs && astro build",
     "fetch:hazards": "node scripts/fetch-hazards.mjs",
+    "fetch:economy": "node scripts/fetch-economy.mjs",
+    "check:economy": "node scripts/check-economy.mjs",
+    "test:economy": "node --test scripts/economy/economy.test.mjs",
     "preview": "astro preview --host",
     "astro": "astro"
   },

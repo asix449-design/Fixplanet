@@ -19,6 +19,13 @@ export const en = {
     credit: "Credit line",
     licence: "Licence",
     updates: "Updates",
+    updatedAt: "Last updated: {date}, {time} UTC",
+    latestReading: "Latest reading: {date}",
+    publishedOn: "Published by the source: {date}",
+    staleNotice: "Updates are late. The newest figures are from {date}.",
+    sourceLineChanged: "Data sources: {list}. {updated}. We rounded values for display; nothing else was changed.",
+    sourceLineUnmodified: "Data sources: {list}. {updated}. The figures are shown as published, without changes.",
+    computed: "Computed by Fix Planet from {source}",
   },
   disclaimer: {
     title: "Not investment advice",
@@ -216,7 +223,7 @@ export const en = {
     wb_pink: {
       name: "World Bank: Commodity Markets, Pink Sheet monthly prices",
       licence: "Creative Commons Attribution 4.0 licence (CC BY 4.0)",
-      note: "We converted units and rounded values; these are changes to the source data.",
+      note: "We selected five series from the Pink Sheet and rounded values for display; these are changes to the source data. The World Bank does not endorse this adaptation.",
     },
     eurostat: {
       name: "Eurostat: Electricity prices for household consumers, bi-annual data",

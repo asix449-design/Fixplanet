@@ -19,6 +19,13 @@ export const lv = {
     credit: "Obligātā avota norāde",
     licence: "Licence",
     updates: "Atjaunināšana",
+    updatedAt: "Pēdējais atjauninājums: {date}, {time} pēc pasaules laika",
+    latestReading: "Jaunākais rādījums: {date}",
+    publishedOn: "Publicēšanas datums avotā: {date}",
+    staleNotice: "Atjauninājums kavējas. Jaunākie dati ir no {date}.",
+    sourceLineChanged: "Datu avoti: {list}. {updated}. Mēs iztulkojām nosaukumus un noapaļojām vērtības attēlošanai, citu izmaiņu nav.",
+    sourceLineUnmodified: "Datu avoti: {list}. {updated}. Vērtības parādītas tā, kā tās publicējis avots, bez izmaiņām.",
+    computed: "Aprēķinājusi Fix Planet komanda, izmantojot avota datus: {source}",
   },
   disclaimer: {
     title: "Tas nav ieguldījumu padoms",
@@ -216,7 +223,7 @@ export const lv = {
     wb_pink: {
       name: "Pasaules Banka: Izejvielu tirgi, mēneša cenas",
       licence: "Attiecinājums 4.0 Starptautisks",
-      note: "Mēs pārrēķinājām mērvienības un noapaļojām vērtības; tās ir izmaiņas avota datos.",
+      note: "Mēs izvēlējāmies piecas laikrindas, iztulkojām to nosaukumus un noapaļojām vērtības attēlošanai; tās ir izmaiņas avota datos. Pasaules Banka neatbalsta šo adaptāciju.",
     },
     eurostat: {
       name: "Eurostat: Elektrības cenas mājsaimniecību patērētājiem, pusgada dati",

@@ -19,6 +19,13 @@ export const pl = {
     credit: "Wymagane oznaczenie źródła",
     licence: "Licencja",
     updates: "Aktualizacja",
+    updatedAt: "Ostatnia aktualizacja: {date}, {time} czasu uniwersalnego",
+    latestReading: "Najnowszy odczyt: {date}",
+    publishedOn: "Data publikacji w źródle: {date}",
+    staleNotice: "Aktualizacja się opóźnia. Najnowsze dane pochodzą z {date}.",
+    sourceLineChanged: "Źródła danych: {list}. {updated}. Przetłumaczyliśmy nazwy i zaokrągliliśmy wartości do wyświetlenia, innych zmian nie wprowadzono.",
+    sourceLineUnmodified: "Źródła danych: {list}. {updated}. Wartości są pokazane tak, jak opublikowało je źródło, bez zmian.",
+    computed: "Obliczone przez zespół Fix Planet na podstawie danych źródła: {source}",
   },
   disclaimer: {
     title: "To nie jest porada inwestycyjna",
@@ -216,7 +223,7 @@ export const pl = {
     wb_pink: {
       name: "Bank Światowy: Rynki surowców, ceny miesięczne",
       licence: "Uznanie autorstwa 4.0 Międzynarodowa",
-      note: "Przeliczyliśmy jednostki i zaokrągliliśmy wartości; to zmiany w danych źródłowych.",
+      note: "Wybraliśmy pięć szeregów danych, przetłumaczyliśmy ich nazwy i zaokrągliliśmy wartości do wyświetlenia; to zmiany w danych źródłowych. Bank Światowy nie popiera tej adaptacji.",
     },
     eurostat: {
       name: "Eurostat: Ceny prądu dla odbiorców domowych, dane półroczne",
