@@ -1,0 +1,81 @@
+name: Refresh economy data
+
+on:
+  schedule:
+    # Daily at 06:40 UTC. Updates public/data/economy on main.
+    # The ECB publishes its reference rates around 16:00 Central European Time,
+    # and the World Bank Pink Sheet comes out on the second business day of the
+    # month, so a morning run picks both up within a day of publication.
+    - cron: '40 6 * * *'
+  workflow_dispatch:
+    inputs:
+      accept_revisions:
+        description: 'Accept changed history in a source (set only after reading a failed run)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Own group, so a slow economy run never queues behind refresh-hazards
+# and the later crypto refresh (economy-refresh-crypto) never waits for this one.
+concurrency:
+  group: economy-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch the economy sources
+        id: fetch
+        # A failed source must not stop the check and the commit of the other
+        # source, and a failed source keeps its previous good JSON in place.
+        continue-on-error: true
+        env:
+          ECONOMY_ACCEPT_REVISIONS: ${{ inputs.accept_revisions && '1' || '0' }}
+        run: node scripts/fetch-economy.mjs
+
+      - name: Check the data files
+        id: check
+        # Exit code 0: all good. 3: a source failed or is stale, files are still
+        # valid. 2: a file is damaged or the check crashed. Any other code (for
+        # example 1 from Node itself) is an unknown failure. Only 0 and 3 lead to a commit.
+        run: |
+          code=0
+          node scripts/check-economy.mjs || code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Commit public/data/economy when data changed
+        # No push trigger on this workflow, and the default GITHUB_TOKEN
+        # does not start a new workflow run, so this commit cannot loop it.
+        if: steps.check.outputs.code == '0' || steps.check.outputs.code == '3'
+        run: |
+          git add -A public/data/economy
+          if git diff --cached --quiet; then
+            echo "No change in public/data/economy"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh public/data/economy"
+          # refresh-hazards.yml pushes to main every hour, so rebase and retry.
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: Fail the run when a source or the data need attention
+        # A red run sends the default GitHub notification email. No issue is opened,
+        # the same as refresh-hazards.yml.
+        if: steps.fetch.outcome == 'failure' || steps.check.outputs.code != '0'
+        run: |
+          echo "::error::The economy refresh needs attention. Read the Fetch and Check steps above and public/data/economy/manifest.json."
+          exit 1
