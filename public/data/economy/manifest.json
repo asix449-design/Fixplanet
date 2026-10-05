@@ -1,0 +1,149 @@
+{
+  "schema": "fixplanet.economy.manifest/1",
+  "datasets": {
+    "wb_pink": {
+      "file": "pink-sheet.json",
+      "title": "World Bank Commodity Price Data (The Pink Sheet), monthly prices in nominal US dollars",
+      "frequency": "monthly",
+      "staleAfterDays": 45,
+      "source": {
+        "organisation": "World Bank",
+        "name": "Commodity Price Data (The Pink Sheet)",
+        "page": "https://www.worldbank.org/en/research/commodity-markets",
+        "termsUrls": ["https://datacatalog.worldbank.org/public-licenses", "https://datacatalog.worldbank.org/search/dataset/0038238/commodity-prices-history-and-projections", "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"],
+        "downloadUrl": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx"
+      },
+      "licence": {
+        "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "terms": "CC BY 4.0 with the World Bank additional terms: give credit, indicate changes (translations included), do not imply endorsement by the World Bank and do not use its logo."
+      },
+      "attribution": {
+        "credit": "World Bank Commodity Markets (Pink Sheet), CC BY 4.0",
+        "edition": "October 2026"
+      },
+      "modified": true,
+      "changes": ["Five series are taken from the sheet Monthly Prices: Crude oil, Brent; Natural gas, US; Natural gas, Europe; Liquefied natural gas, Japan; Coal, Australian. All other series are left out.", "Month labels such as 2026M09 are written as 2026-09, and the values of each series are listed from the first month of the file.", "Cells the workbook marks as missing are stored as null.", "Values are the numbers in the workbook, in the units the workbook gives. Nothing is rounded or converted in the data file; rounding for display is done on the page."],
+      "publisherDate": "2026-10-02",
+      "dataAsOf": "2026-09",
+      "retrievedAt": "2026-10-05T04:18:35.781Z",
+      "status": "ok",
+      "consecutiveFailures": 0,
+      "lastError": null,
+      "lastFailureAt": null,
+      "checksums": {
+        "algorithm": "sha256",
+        "output": "1b0c07f3e1604335c3b1e7a29da68d93fd86a199fa10e1017818b663c8937686",
+        "outputBytes": 24843,
+        "source": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+        "sourceBytes": 586099
+      },
+      "series": [
+        {
+          "id": "brent",
+          "name": "Crude oil, Brent",
+          "unit": "$/bbl",
+          "first": "1960-01",
+          "last": "2026-09",
+          "count": 801
+        },
+        {
+          "id": "gas_us",
+          "name": "Natural gas, US",
+          "unit": "$/mmbtu",
+          "first": "1960-01",
+          "last": "2026-09",
+          "count": 801
+        },
+        {
+          "id": "gas_europe",
+          "name": "Natural gas, Europe",
+          "unit": "$/mmbtu",
+          "first": "1960-01",
+          "last": "2026-09",
+          "count": 801
+        },
+        {
+          "id": "lng_japan",
+          "name": "Liquefied natural gas, Japan",
+          "unit": "$/mmbtu",
+          "first": "1977-01",
+          "last": "2026-09",
+          "count": 597
+        },
+        {
+          "id": "coal_australia",
+          "name": "Coal, Australian",
+          "unit": "$/mt",
+          "first": "1970-01",
+          "last": "2026-09",
+          "count": 681
+        }
+      ]
+    },
+    "ecb": {
+      "file": "ecb-fx.json",
+      "title": "Euro foreign exchange reference rates",
+      "frequency": "daily",
+      "staleAfterDays": 7,
+      "source": {
+        "organisation": "European Central Bank",
+        "name": "Euro foreign exchange reference rates (ECB Data Portal dataflow EXR)",
+        "page": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+        "termsUrls": ["https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html", "https://data.ecb.europa.eu/help/api/data"],
+        "downloadUrl": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+GBP+PLN.EUR.SP00.A?lastNObservations=260&format=csvdata"
+      },
+      "licence": {
+        "name": "ECB reuse policy for statistics of the European System of Central Banks",
+        "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+        "terms": "Free reuse on the condition that the source is quoted (\"Source: ECB statistics.\") and the statistics, metadata included, are not modified. The reference rates are published for information only."
+      },
+      "attribution": {
+        "credit": "Source: ECB statistics.",
+        "edition": null
+      },
+      "modified": false,
+      "changes": ["Layout only: the dates are listed once and each currency has one list of values in the same order.", "Values, decimals and series titles are as published by the ECB. Nothing is rounded, converted or computed. Rates computed by Fix Planet (cross rates, for example) never go into this file."],
+      "publisherDate": "2026-10-02",
+      "dataAsOf": "2026-10-02",
+      "retrievedAt": "2026-10-05T04:18:35.781Z",
+      "status": "ok",
+      "consecutiveFailures": 0,
+      "lastError": null,
+      "lastFailureAt": null,
+      "checksums": {
+        "algorithm": "sha256",
+        "output": "82f4348d7b57c58dc56216902faec272571d06f4c58a4bb9355b62cd0083c464",
+        "outputBytes": 10701,
+        "source": "d9f6b0d5e6c5e458fdaf9ab7d1b1458e0960b5d5356cf3899287a11c96e6a0cc",
+        "sourceBytes": 166735
+      },
+      "series": [
+        {
+          "id": "USD",
+          "name": "US dollar/Euro ECB reference exchange rate",
+          "unit": "USD",
+          "first": "2025-09-26",
+          "last": "2026-10-02",
+          "count": 260
+        },
+        {
+          "id": "GBP",
+          "name": "Pound sterling/Euro ECB reference exchange rate",
+          "unit": "GBP",
+          "first": "2025-09-26",
+          "last": "2026-10-02",
+          "count": 260
+        },
+        {
+          "id": "PLN",
+          "name": "Polish zloty/Euro ECB reference exchange rate",
+          "unit": "PLN",
+          "first": "2025-09-26",
+          "last": "2026-10-02",
+          "count": 260
+        }
+      ]
+    }
+  }
+}

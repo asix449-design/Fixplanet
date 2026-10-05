@@ -14,5 +14,21 @@
     "url": "https://www.naturalearthdata.com/",
     "license": "Public domain (Natural Earth)",
     "note": "Line segments on the unit sphere. Rebuild with scripts/build-wire-globe.py."
+  },
+  {
+    "file": "economy/pink-sheet.json",
+    "title": "World Bank Commodity Price Data (The Pink Sheet), monthly prices in nominal US dollars: Brent crude oil, natural gas (US, Europe), liquefied natural gas (Japan), Australian coal",
+    "source": "World Bank Commodity Markets (Pink Sheet), CC BY 4.0",
+    "url": "https://www.worldbank.org/en/research/commodity-markets",
+    "license": "CC BY 4.0 with the World Bank additional terms for datasets (https://datacatalog.worldbank.org/public-licenses)",
+    "note": "Refreshed daily by .github/workflows/economy-refresh.yml; the file changes when the World Bank publishes a new edition (second business day of the month). Five of the workbook series, values exactly as published, no unit conversion. These are changes to the source data (selection, month labels written as 2026-09, missing cells stored as null). The World Bank does not endorse this adaptation. Series names are translated on the site by the Fix Planet team. The workbook names third-party providers of the underlying prices on its Description sheet. Provenance, checksums and attribution text: economy/manifest.json."
+  },
+  {
+    "file": "economy/ecb-fx.json",
+    "title": "Euro foreign exchange reference rates: US dollar, pound sterling, Polish zloty per one euro, daily",
+    "source": "Source: ECB statistics.",
+    "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "license": "ECB reuse policy: free reuse when the source is quoted and the statistics are not modified (https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html)",
+    "note": "Refreshed daily by .github/workflows/economy-refresh.yml from the ECB Data Portal. Rates are stored exactly as published, with the ECB decimals, and are never rounded, converted or combined into other rates. Provenance and checksums: economy/manifest.json."
   }
 ]
