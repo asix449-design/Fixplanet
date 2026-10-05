@@ -122,6 +122,22 @@ p:last-child {
   min-height: var(--header-h);
 }
 
+/* 11 top-level items (Economy preview) fit on one line from 1320px.
+   Below that, the existing burger menu is used. The row may grow past
+   the 1120px column so the longest labels are not pushed off-screen. */
+@media (min-width: 1320px) {
+  .site-header .header-inner {
+    width: max-content;
+    max-width: calc(100% - 40px);
+    min-width: min(var(--max), calc(100% - 40px));
+    gap: 0.8rem;
+  }
+
+  .site-header .nav {
+    gap: 0.7rem;
+  }
+}
+
 .logo {
   display: inline-flex;
   align-items: center;
@@ -923,7 +939,7 @@ a.solution-card:hover {
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1319px) {
   .logo-lockup {
     height: 36px;
   }
@@ -987,7 +1003,9 @@ a.solution-card:hover {
     padding: 0.7rem 0;
     border-bottom: 1px solid var(--line);
   }
+}
 
+@media (max-width: 1140px) {
   .about-grid,
   .book-layout,
   .footer-grid,
