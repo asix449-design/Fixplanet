@@ -1,0 +1,49 @@
+---
+interface Row {
+  label: string;
+  value: string;
+}
+
+interface Props {
+  title: string;
+  value?: string;
+  rows?: Row[];
+  unit: string;
+  dateLine: string;
+  planet: string;
+  caveat: string;
+  caveatLabel: string;
+  sourceLabel: string;
+  sourceName: string;
+  sourceUrl: string;
+}
+
+const { title, value, rows, unit, dateLine, planet, caveat, caveatLabel, sourceLabel, sourceName, sourceUrl } = Astro.props;
+---
+
+<article class="forest-stat economy-tile">
+  <h3>{title}</h3>
+  {value && <p class="forest-stat-value">{value}</p>}
+  <p class="economy-tile-unit">{unit}</p>
+  {
+    rows && (
+      <dl class="economy-rates">
+        {rows.map((row) => (
+          <div>
+            <dt>{row.label}</dt>
+            <dd>{row.value}</dd>
+          </div>
+        ))}
+      </dl>
+    )
+  }
+  <p class="economy-tile-date">{dateLine}</p>
+  <p>{planet}</p>
+  <details class="economy-tile-caveat">
+    <summary>{caveatLabel}</summary>
+    <p>{caveat}</p>
+  </details>
+  <p class="economy-tile-source">
+    {sourceLabel}: <a href={sourceUrl} rel="noopener noreferrer">{sourceName}</a>
+  </p>
+</article>
