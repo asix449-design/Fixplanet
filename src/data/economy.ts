@@ -3,12 +3,14 @@ import { localizePath, type Locale } from '../i18n/config';
 /**
  * Economy routes, sources and figure cards.
  * Nothing is published unless PUBLIC_ECONOMY_PREVIEW is "true".
- * economyReleasedPr stays 0 until a later data release raises it.
+ * economyReleasedPr is the last data PR whose tabs and figures are complete.
+ * While economyVisible is tied to the preview switch it changes nothing: a preview build shows every tab,
+ * a production build shows none. It decides what goes public only once economyVisible is switched on on its own.
  */
 
 export const economyVisible = import.meta.env.PUBLIC_ECONOMY_PREVIEW === 'true';
 
-export const economyReleasedPr = 0;
+export const economyReleasedPr = 3;
 
 const economyPreview = import.meta.env.PUBLIC_ECONOMY_PREVIEW === 'true';
 
@@ -39,6 +41,7 @@ export type EconomySourceId =
 export type EconomyFigureId =
   | 'o_oil'
   | 'o_gas'
+  | 'o_coal'
   | 'o_euro'
   | 'o_crypto'
   | 'o_storm'
@@ -93,6 +96,8 @@ export interface EconomyFigure {
   kind: EconomyFigureKind;
   cadence: EconomyCadence;
   dataPr: number;
+  seriesKey?: string;
+  seriesKeys?: string[];
 }
 
 export const economyTabs: EconomyTab[] = [
@@ -102,8 +107,8 @@ export const economyTabs: EconomyTab[] = [
     route: "/economy",
     icon: "grid",
     livePr: 3,
-    figures: ["o_oil", "o_gas", "o_euro", "o_crypto", "o_storm"],
-    sources: ["eia", "gie", "ecb", "coingecko", "noaa"],
+    figures: ["o_oil", "o_gas", "o_coal", "o_euro"],
+    sources: ["wb_pink", "ecb"],
   },
   {
     slug: "energy",
@@ -111,8 +116,8 @@ export const economyTabs: EconomyTab[] = [
     route: "/economy/energy",
     icon: "bolt",
     livePr: 3,
-    figures: ["e_oil5y", "e_brent_long", "e_gas_regions", "e_coal"],
-    sources: ["eia", "wb_pink"],
+    figures: ["e_brent_long", "e_gas_regions", "e_coal"],
+    sources: ["wb_pink"],
   },
   {
     slug: "power-gas-europe",
@@ -155,7 +160,7 @@ export const economyTabs: EconomyTab[] = [
     key: "crypto",
     route: "/economy/crypto",
     icon: "bolt",
-    livePr: 3,
+    livePr: 6,
     figures: ["k_coins", "k_euro"],
     sources: ["coingecko", "ecb"],
   },
@@ -190,7 +195,7 @@ export const economySources: Record<EconomySourceId, EconomySource> = {
     terms: ["https://datacatalog.worldbank.org/public-licenses", "https://creativecommons.org/licenses/by/4.0/", "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets"],
     credit: "World Bank Commodity Markets (Pink Sheet), CC BY 4.0",
     cadence: "monthly",
-    modify: "state changes (units converted, values rounded)",
+    modify: "state changes (series selected, names translated)",
     licenceUrl: "https://creativecommons.org/licenses/by/4.0/",
     creditLinks: {
       "CC BY 4.0": "https://creativecommons.org/licenses/by/4.0/",
@@ -258,38 +263,11 @@ export const economySources: Record<EconomySourceId, EconomySource> = {
 };
 
 export const economyFigures: Record<EconomyFigureId, EconomyFigure> = {
-  o_oil: {
-    tab: "overview",
-    source: "eia",
-    url: "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-    kind: "number",
-    cadence: "daily",
-    dataPr: 3,
-  },
-  o_gas: {
-    tab: "overview",
-    source: "gie",
-    url: "https://agsi.gie.eu/",
-    kind: "number",
-    cadence: "daily",
-    dataPr: 3,
-  },
-  o_euro: {
-    tab: "overview",
-    source: "ecb",
-    url: "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
-    kind: "table",
-    cadence: "daily",
-    dataPr: 3,
-  },
-  o_crypto: {
-    tab: "overview",
-    source: "coingecko",
-    url: "https://www.coingecko.com/",
-    kind: "table",
-    cadence: "crypto-3x",
-    dataPr: 3,
-  },
+  o_oil: { tab: "overview", source: "wb_pink", url: "https://www.worldbank.org/en/research/commodity-markets", kind: "number", cadence: "monthly", dataPr: 3, seriesKey: "brent" },
+  o_gas: { tab: "overview", source: "wb_pink", url: "https://www.worldbank.org/en/research/commodity-markets", kind: "number", cadence: "monthly", dataPr: 3, seriesKey: "gas_europe" },
+  o_coal: { tab: "overview", source: "wb_pink", url: "https://www.worldbank.org/en/research/commodity-markets", kind: "number", cadence: "monthly", dataPr: 3, seriesKey: "coal_australia" },
+  o_euro: { tab: "overview", source: "ecb", url: "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html", kind: "table", cadence: "daily", dataPr: 3, seriesKeys: ["USD", "GBP", "PLN"] },
+  o_crypto: { tab: "overview", source: "coingecko", url: "https://www.coingecko.com/", kind: "table", cadence: "crypto-3x", dataPr: 6 },
   o_storm: {
     tab: "overview",
     source: "noaa",
@@ -298,38 +276,10 @@ export const economyFigures: Record<EconomyFigureId, EconomyFigure> = {
     cadence: "static",
     dataPr: 5,
   },
-  e_oil5y: {
-    tab: "energy",
-    source: "eia",
-    url: "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm",
-    kind: "line",
-    cadence: "daily",
-    dataPr: 3,
-  },
-  e_brent_long: {
-    tab: "energy",
-    source: "wb_pink",
-    url: "https://www.worldbank.org/en/research/commodity-markets",
-    kind: "line",
-    cadence: "monthly",
-    dataPr: 3,
-  },
-  e_gas_regions: {
-    tab: "energy",
-    source: "wb_pink",
-    url: "https://www.worldbank.org/en/research/commodity-markets",
-    kind: "line",
-    cadence: "monthly",
-    dataPr: 3,
-  },
-  e_coal: {
-    tab: "energy",
-    source: "wb_pink",
-    url: "https://www.worldbank.org/en/research/commodity-markets",
-    kind: "line",
-    cadence: "monthly",
-    dataPr: 3,
-  },
+  e_oil5y: { tab: "energy", source: "eia", url: "https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm", kind: "line", cadence: "daily", dataPr: 6 },
+  e_brent_long: { tab: "energy", source: "wb_pink", url: "https://www.worldbank.org/en/research/commodity-markets", kind: "line", cadence: "monthly", dataPr: 3, seriesKey: "brent" },
+  e_gas_regions: { tab: "energy", source: "wb_pink", url: "https://www.worldbank.org/en/research/commodity-markets", kind: "line", cadence: "monthly", dataPr: 3, seriesKeys: ["gas_us", "gas_europe", "lng_japan"] },
+  e_coal: { tab: "energy", source: "wb_pink", url: "https://www.worldbank.org/en/research/commodity-markets", kind: "line", cadence: "monthly", dataPr: 3, seriesKey: "coal_australia" },
   p_household: {
     tab: "power-gas-europe",
     source: "eurostat",
@@ -378,14 +328,7 @@ export const economyFigures: Record<EconomyFigureId, EconomyFigure> = {
     cadence: "live-delayed",
     dataPr: 7,
   },
-  k_coins: {
-    tab: "crypto",
-    source: "coingecko",
-    url: "https://www.coingecko.com/",
-    kind: "table",
-    cadence: "crypto-3x",
-    dataPr: 3,
-  },
+  k_coins: { tab: "crypto", source: "coingecko", url: "https://www.coingecko.com/", kind: "table", cadence: "crypto-3x", dataPr: 6 },
   k_euro: {
     tab: "crypto",
     source: "ecb",

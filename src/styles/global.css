@@ -5048,7 +5048,6 @@ a.map-card:hover {
   border-radius: 999px;
   padding: 0.4rem 0.85rem;
   font-size: 0.9rem;
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -5067,4 +5066,187 @@ a.map-card:hover {
 
 .economy-disclaimer {
   margin-top: 2rem;
+}
+
+.economy-board,
+.economy-charts {
+  display: grid;
+  gap: 1.2rem;
+  margin: 1.2rem 0 1rem;
+}
+
+.economy-board {
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.economy-tile p,
+.economy-chart p {
+  margin: 0 0 0.55rem;
+}
+
+.economy-tile-unit,
+.economy-tile-date,
+.economy-tile-source,
+.economy-chart figcaption,
+.economy-cell-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.economy-rates {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 0.6rem;
+}
+
+.economy-rates div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.economy-rates dd {
+  margin: 0;
+  color: var(--lime);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.economy-tile-caveat,
+.economy-chart-table {
+  margin: 0 0 0.6rem;
+}
+
+.economy-tile-caveat summary,
+.economy-chart-table summary {
+  cursor: pointer;
+}
+
+.economy-chart {
+  margin: 0;
+}
+
+.economy-chart-plot {
+  position: relative;
+  margin: 0 0 0.6rem;
+  padding: 1.3rem 0 0;
+}
+
+.economy-chart-plot svg {
+  display: block;
+  width: 100%;
+  height: clamp(160px, 30vw, 260px);
+}
+
+.economy-chart-top,
+.economy-chart-zero {
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.economy-chart-top {
+  top: 0;
+}
+
+.economy-chart-zero {
+  bottom: 1.6rem;
+}
+
+.economy-chart-years {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.economy-chart-base {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.economy-line {
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.economy-line-1 {
+  stroke: var(--lime);
+  background: var(--lime);
+}
+
+.economy-line-2 {
+  stroke: var(--flare);
+  background: var(--flare);
+}
+
+.economy-line-3 {
+  stroke: var(--cream);
+  background: var(--cream);
+}
+
+.economy-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.economy-swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.2rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.economy-chart table {
+  width: 100%;
+  margin: 0 0 0.6rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.economy-chart th,
+.economy-chart td {
+  padding: 0.25rem 0.4rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.economy-cell-date {
+  display: block;
+}
+
+.economy-estimate {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.economy-not-advice,
+.economy-stale {
+  font-size: 0.9rem;
+}
+
+.economy-stale {
+  color: var(--flare);
+}
+
+.economy-label {
+  color: var(--muted);
+}
+
+.economy-pill {
+  background: rgba(192, 255, 0, 0.12);
+  color: var(--lime);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.82rem;
 }
