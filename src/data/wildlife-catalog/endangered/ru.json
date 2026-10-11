@@ -24,7 +24,21 @@
       "when": "Как тигр — исчезающий; амурская популяция — малый охраняемый остаток.",
       "humanRole": "Здесь тигра довели охотой до края; частичный отскок объясняется охраной, а не пустой тайгой.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Panthera tigris, EN, 2022); российские и китайские учёты (оценки)."
+      "sourcesNote": "Красный список МСОП (Panthera tigris, EN, 2022); российские и китайские учёты (оценки).",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "От носа до кончика хвоста",
+        "sources": [
+          {
+            "label": "Книга рекордов Гиннесса: самая крупная дикая кошка (Guinness World Records: Largest wild cat)",
+            "url": "https://www.guinnessworldrecords.com/world-records/102489-largest-wild-cat"
+          },
+          {
+            "label": "Зоопарк Тама, Токийское зоологическое общество: тигр, амурский тигр (Tama Zoological Park, Tokyo Zoological Park Society: Tiger, Amur tiger)",
+            "url": "https://www.tokyo-zoo.net/en/tama/encyclopedia/amur-tiger/index.html"
+          }
+        ]
+      }
     },
     "sumatran-orangutan": {
       "commonName": "Суматранский орангутан",
@@ -48,7 +62,26 @@
       "when": "Сейчас на грани исчезновения. Западный подвид уже исчез.",
       "humanRole": "Торговля рогом — главный фактор; потеря мест обитания добавляет давление.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Diceros bicornis, CR); IRF State of the Rhino 2025 (оценка на конец 2024)."
+      "sourcesNote": "Красный список МСОП (Diceros bicornis, CR); IRF State of the Rhino 2025 (оценка на конец 2024).",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "От носа до кончика хвоста",
+        "credit": "Фото: Карелй (Karelj), общественное достояние",
+        "sources": [
+          {
+            "label": "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: чёрный носорог (University of Michigan Museum of Zoology, Animal Diversity Web: Diceros bicornis, black rhinoceros)",
+            "url": "https://animaldiversity.org/accounts/Diceros_bicornis/"
+          },
+          {
+            "label": "Международный фонд защиты носорогов: чёрный носорог (International Rhino Foundation: Black Rhino)",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/black-rhino/"
+          },
+          {
+            "label": "Международная организация «Спасём носорогов»: чёрные носороги (Save the Rhino International: Black rhinos)",
+            "url": "https://www.savetherhino.org/rhino-info/rhino-species/black-rhinos/"
+          }
+        ]
+      }
     },
     "african-forest-elephant": {
       "commonName": "Лесной слон",
@@ -132,7 +165,27 @@
       "when": "Сейчас на грани, в пределах нескольких десятков.",
       "humanRole": "Рог и превращение леса. Оставшихся держат заборы, патрули и управляемое размножение.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47)."
+      "sourcesNote": "Красный список МСОП (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47).",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "От носа до кончика хвоста",
+        "credit": "Фото: Николаитан (nicolaitan), лицензия «Атрибуция, на тех же условиях» 2.0",
+        "changes": "Фон удалён с оригинального фото. Изображение отражено зеркально.",
+        "sources": [
+          {
+            "label": "Википедия: суматранский носорог (Wikipedia: Sumatran rhinoceros)",
+            "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros"
+          },
+          {
+            "label": "Международный фонд защиты носорогов: суматранский носорог (International Rhino Foundation: Sumatran Rhino)",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/"
+          },
+          {
+            "label": "Справочник млекопитающих мира, описание вида (Зенодо): суматранский носорог (Handbook of the Mammals of the World, species account (Zenodo): Dicerorhinus sumatrensis)",
+            "url": "https://zenodo.org/records/5720750"
+          }
+        ]
+      }
     },
     "saola": {
       "commonName": "Саола",
@@ -205,7 +258,27 @@
       "when": "Сейчас на грани. Дикие плюс выпущенные — от силы нижние сотни.",
       "humanRole": "Охота на машинах, затем добывающая инфраструктура в последнем ареале.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Addax nasomaculatus, CR, 2016); годовой отчёт Sahara Conservation 2024; мониторинг Noé в Тин-Тумма."
+      "sourcesNote": "Красный список МСОП (Addax nasomaculatus, CR, 2016); годовой отчёт Sahara Conservation 2024; мониторинг Noé в Тин-Тумма.",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "От носа до кончика хвоста",
+        "credit": "Фото: Руфус46 (Rufus46), лицензия «Атрибуция, на тех же условиях» 3.0",
+        "changes": "Фон удалён с оригинального фото.",
+        "sources": [
+          {
+            "label": "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: аддакс (University of Michigan Museum of Zoology, Animal Diversity Web: Addax nasomaculatus, addax)",
+            "url": "https://animaldiversity.org/accounts/Addax_nasomaculatus/"
+          },
+          {
+            "label": "Википедия: аддакс (Wikipedia: Addax)",
+            "url": "https://en.wikipedia.org/wiki/Addax"
+          },
+          {
+            "label": "Досье животных: аддакс (The Animal Files: Addax)",
+            "url": "https://www.theanimalfiles.com/mammals/hoofed_mammals/addax.html"
+          }
+        ]
+      }
     },
     "cao-vit-gibbon": {
       "commonName": "Гиббон каовит",
@@ -313,7 +386,21 @@
       "when": "Сейчас на грани. Нижние сотни, мало матерей.",
       "humanRole": "Исторический промысел, затем снасти и корпуса на ките, который кормится и рожает у судоходных путей.",
       "sources": [],
-      "sourcesNote": "Linden, 2025, NOAA TM NMFS-NE-338 (384 на начало 2024); карточка NARWC 2025; Красный список МСОП (Eubalaena glacialis, CR)."
+      "sourcesNote": "Linden, 2025, NOAA TM NMFS-NE-338 (384 на начало 2024); карточка NARWC 2025; Красный список МСОП (Eubalaena glacialis, CR).",
+      "scale": {
+        "heightLabel": "Высота тела",
+        "lengthLabel": "От морды до кончика хвоста",
+        "sources": [
+          {
+            "label": "Фортьюн и соавторы, Журнал маммалогии, том 93, номер 5, 2012: рост и быстрое раннее развитие североатлантических гладких китов (Fortune et al., Journal of Mammalogy 93(5), 2012: Growth and rapid early development of North Atlantic right whales, Eubalaena glacialis)",
+            "url": "https://www.zoology.ubc.ca/~consort/pdfs/Fortune%20et%20al%202012.pdf"
+          },
+          {
+            "label": "Миллер и соавторы, журнал «Прогресс морской экологии», том 459, 2012: изменения формы тела гладких китов в связи с размножением, упитанностью и ростом (Miller et al., Marine Ecology Progress Series 459, 2012: Body shape changes in right whales Eubalaena glacialis and E. australis)",
+            "url": "https://repository.up.ac.za/bitstreams/57493b5f-0fba-48eb-a3c5-5c0b4356efe9/download"
+          }
+        ]
+      }
     }
   }
 }

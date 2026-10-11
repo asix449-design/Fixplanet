@@ -1,5 +1,5 @@
 import { CardMeta, LOCALES, Registry } from '../../src/lib/wildlife-catalog/schema.mjs';
-import { formatMeasure, splitGroup } from '../../src/lib/wildlife-catalog/format.mjs';
+import { composeScaleCaption, formatMeasure, splitGroup } from '../../src/lib/wildlife-catalog/format.mjs';
 import { compilePatterns, scanText } from '../../src/lib/wildlife-catalog/c17.mjs';
 import { c16Issues, checkDuplicateSlugs, checkLabelPlaceholders } from '../../src/lib/wildlife-catalog/checks.mjs';
 import { s14Names } from '../../src/lib/wildlife-catalog/refine.mjs';
@@ -164,7 +164,16 @@ export function runSelfTests(catalog, live) {
   const mammothOk = { size: { length: { basis: 'body length without the trunk and tusks' } }, scale: { show: true, basis: 'height' } };
   const method = rules.measureMethods.proboscideanBodyLength;
   assert(method.scaleBasisRequired === 'height', 'C19 requires height');
+  assert(method.bodyType === 'proboscidean', 'proboscidean bodyType');
   assert(mammothOk.scale.basis === method.scaleBasisRequired, 'height scaling satisfies C19');
+  const headBody = rules.measureMethods.headBodyLength;
+  assert(headBody.scaleBasisRequired === 'height', 'head-and-body length scales by height');
+  assert(headBody.lengthLabel.en === 'Body length without the tail', 'EN body length label');
+  assert(headBody.lengthLabel.ru === 'Длина тела без хвоста', 'RU body length label');
+  assert(headBody.lengthLabel.pl === 'Długość ciała bez ogona', 'PL body length label');
+  assert(headBody.lengthLabel.lv === 'Ķermeņa garums bez astes', 'LV body length label');
+  const cap = composeScaleCaption('Shoulder height', formatMeasure(1.03, 'en', NF), 'Nose to tail tip', formatMeasure(3, 'en', NF), undefined);
+  assert(cap === 'Shoulder height 1.0 m, Nose to tail tip 3.0 m', 'caption is composed at display time');
 
   if (live) {
     let cards = 0;

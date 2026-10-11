@@ -3,7 +3,7 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { LOCALES } from './schema.mjs';
 import { compilePatterns, scanText } from './c17.mjs';
-import { formatMeasure, numberMultiset, sameMultiset } from './format.mjs';
+import { composeScaleCaption, formatMeasure, measureMetres, numberMultiset, sameMultiset } from './format.mjs';
 
 const PROSE = ['commonName', 'hook', 'imageAlt', 'what', 'range', 'story', 'when', 'humanRole', 'badgeText', 'statusPill', 'breedName'];
 const CJK = /\p{Script=Han}/u;
@@ -104,7 +104,7 @@ function publicStrings(card, copy) {
     add('scale.heightLabel', copy.scale.heightLabel, 'scale');
     add('scale.lengthLabel', copy.scale.lengthLabel, 'scale');
     add('scale.captionExtra', copy.scale.captionExtra, 'scale');
-    add('scale.credit', copy.scale.credit, 'scale');
+    add('scale.credit', copy.scale.credit, 'source');
     add('scale.changes', copy.scale.changes, 'scale');
     for (const [i, src] of (copy.scale.sources || []).entries()) add(`scale.sources.${i}.label`, src.label, 'source');
   }
@@ -413,7 +413,7 @@ function checkImage(findings, card, rules, repoRoot) {
     }
   }
   if (card.scale?.image?.webp) {
-    const cut = path.join(repoRoot, card.scale.image.webp.replace(/^\//, ''));
+    const cut = path.join(repoRoot, 'public', card.scale.image.webp.replace(/^\//, ''));
     if (!fs.existsSync(cut)) push(findings, { rule: 'C7', slug: card.slug, locale: '*', field: 'scale.image.webp', message: 'cutout missing' });
     else {
       const size = imageSize(cut);
@@ -482,15 +482,27 @@ function checkC18(findings, card, shelf, shelves) {
   }
 }
 
+function bodyLengthMethods(rules) {
+  return Object.values(rules.measureMethods || {}).filter((method) => method && method.basis && method.lengthLabel);
+}
+
+function methodApplies(lengthBasis, method) {
+  const basis = String(lengthBasis || '').toLowerCase();
+  const needle = String(method.basis || '').toLowerCase();
+  if (!basis || !needle) return false;
+  if (basis.includes(needle)) return true;
+  return needle.includes('trunk') && basis.includes('without the trunk and tusks');
+}
+
 function checkC19(findings, card, rules) {
-  const method = rules.measureMethods?.proboscideanBodyLength;
-  if (!method) return;
-  const basis = (card.size?.length?.basis || '').toLowerCase();
-  const uses = basis.includes('without the trunk and tusks') || basis.includes(method.basis.toLowerCase());
-  if (!uses || !card.scale || card.scale.show !== true) return;
-  const required = method.scaleBasisRequired || 'height';
-  if (card.scale.basis !== required) {
-    push(findings, { rule: 'C19', slug: card.slug, locale: '*', field: 'scale.basis', message: `body-length measure requires scale.basis ${required}` });
+  if (!card.scale || card.scale.show !== true) return;
+  const lengthBasis = card.size?.length?.basis || '';
+  for (const method of bodyLengthMethods(rules)) {
+    if (!methodApplies(lengthBasis, method)) continue;
+    const required = method.scaleBasisRequired || 'height';
+    if (card.scale.basis !== required) {
+      push(findings, { rule: 'C19', slug: card.slug, locale: '*', field: 'scale.basis', message: `body-length measure requires scale.basis ${required}` });
+    }
   }
 }
 
@@ -531,23 +543,24 @@ function checkC15(findings, card) {
 
 function checkC6(findings, card, copy, loc, rules) {
   if (!copy.scale || !card.size) return;
-  const horizontal = 'length';
-  const height = card.size.height?.mean ?? card.size.height?.value;
-  const length = card.size[horizontal]?.mean ?? card.size[horizontal]?.value;
-  const caption = [copy.scale.heightLabel, copy.scale.lengthLabel, copy.scale.captionExtra].filter(Boolean).join(' ');
+  const height = measureMetres(card.size.height);
+  const length = measureMetres(card.size.length);
+  const fmtH = height ? formatMeasure(height, loc, rules.numberFormat) : null;
+  const fmtL = length ? formatMeasure(length, loc, rules.numberFormat) : null;
+  const caption = composeScaleCaption(copy.scale.heightLabel, fmtH, copy.scale.lengthLabel, fmtL, copy.scale.captionExtra);
   if (height) {
-    const shown = formatMeasure(height, loc, rules.numberFormat);
+    const shown = fmtH;
     if (shown == null) push(findings, { rule: 'C6', slug: card.slug, locale: loc, field: 'scale', message: 'height displays as 0' });
     else if (caption && !caption.includes(shown)) push(findings, { rule: 'C6', slug: card.slug, locale: loc, field: 'scale', message: `caption missing ${shown}` });
   }
   if (length) {
-    const shown = formatMeasure(length, loc, rules.numberFormat);
+    const shown = fmtL;
     if (shown == null) push(findings, { rule: 'C6', slug: card.slug, locale: loc, field: 'scale', message: 'length displays as 0' });
     else if (caption && !caption.includes(shown)) push(findings, { rule: 'C6', slug: card.slug, locale: loc, field: 'scale', message: `caption missing ${shown}` });
   }
-  const basis = (card.size.length?.basis || '').toLowerCase();
-  const method = rules.measureMethods?.proboscideanBodyLength;
-  if (method && (basis.includes(method.basis.toLowerCase()) || basis.includes('without the trunk and tusks'))) {
+  const lengthBasis = card.size.length?.basis || '';
+  for (const method of bodyLengthMethods(rules)) {
+    if (!methodApplies(lengthBasis, method)) continue;
     const label = method.lengthLabel?.[loc];
     if (!label || !caption.toLowerCase().includes(label.toLowerCase())) {
       push(findings, { rule: 'C6', slug: card.slug, locale: loc, field: 'scale.lengthLabel', message: 'caption must spell the body-length label' });
