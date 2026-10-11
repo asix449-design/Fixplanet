@@ -25,9 +25,7 @@ const page = getPrivacyPage(locale);
                   typeof part === 'string' ? (
                     part
                   ) : part.href.startsWith('http') ? (
-                    <a href={part.href} rel="noopener noreferrer">
-                      {part.text}
-                    </a>
+                    <a href={part.href} rel="noopener noreferrer">{part.text}</a>
                   ) : (
                     <a href={part.href}>{part.text}</a>
                   ),
