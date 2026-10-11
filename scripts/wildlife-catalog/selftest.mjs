@@ -1,7 +1,7 @@
 import { CardMeta, LOCALES, Registry } from '../../src/lib/wildlife-catalog/schema.mjs';
 import { formatMeasure, splitGroup } from '../../src/lib/wildlife-catalog/format.mjs';
 import { compilePatterns, scanText } from '../../src/lib/wildlife-catalog/c17.mjs';
-import { c16Issues, checkLabelPlaceholders } from '../../src/lib/wildlife-catalog/checks.mjs';
+import { c16Issues, checkDuplicateSlugs, checkLabelPlaceholders } from '../../src/lib/wildlife-catalog/checks.mjs';
 import { s14Names } from '../../src/lib/wildlife-catalog/refine.mjs';
 import { toSpecies } from '../../src/lib/wildlife-catalog/adapter.mjs';
 
@@ -34,6 +34,19 @@ export function runSelfTests(catalog, live) {
     assert(hit.length === 1 && hit[0].rule === 'C20', `placeholder label must fail: ${JSON.stringify(sample)}`);
   }
   assert(checkLabelPlaceholders({ hub: { labels: { en: { name: 'Wildlife' } } }, shelves: [] }).length === 0, 'real hub label passes');
+  const dupShelves = {
+    surviving: { meta: { shelf: 'surviving', cards: [{ slug: 'gray-wolf' }] } },
+    extinct: { meta: { shelf: 'extinct', cards: [{ slug: 'gray-wolf' }] } },
+  };
+  const dup = checkDuplicateSlugs(dupShelves);
+  assert(dup.length === 1 && dup[0].rule === 'C21' && dup[0].slug === 'gray-wolf', 'duplicate slug across shelf files fails');
+  assert(checkDuplicateSlugs({
+    surviving: { meta: { shelf: 'surviving', cards: [{ slug: 'gray-wolf' }, { slug: 'gray-wolf' }] } },
+  }).length === 1, 'duplicate slug inside one shelf file fails');
+  assert(checkDuplicateSlugs({
+    surviving: { meta: { shelf: 'surviving', cards: [{ slug: 'gray-wolf' }] } },
+    extinct: { meta: { shelf: 'extinct', cards: [{ slug: 'dodo' }] } },
+  }).length === 0, 'distinct slugs across shelf files pass');
 
   const base = {
     value: 0.7, unit: 'm', basis: 'bill tip to tail tip', confidence: 'single_source', approx: false, kind: 'measured',
@@ -74,7 +87,10 @@ export function runSelfTests(catalog, live) {
   assert(formatMeasure(1.14, 'ru', NF) === '1,1 м', 'RU decimal comma');
   assert(formatMeasure(0.67, 'pl', NF) === '67 cm', 'PL centimetres');
 
-  const mega = catalog.legacyShelves.extinct.copy.lv.cards.megatherium;
+  const cardShelves = Object.values(catalog.fileShelves).some((shelf) => shelf.meta.cards.length)
+    ? catalog.fileShelves
+    : catalog.legacyShelves;
+  const mega = cardShelves.extinct.copy.lv.cards.megatherium;
   assert(mega, 'LV megatherium is in the adapted catalogue');
   const fixes = [
     { field: 'commonName', old: 'slinkis', new: 'sliņķis', count: 1 },
@@ -156,7 +172,7 @@ export function runSelfTests(catalog, live) {
       for (const original of live[loc]) {
         let card;
         let copy;
-        for (const shelf of Object.values(catalog.legacyShelves)) {
+        for (const shelf of Object.values(cardShelves)) {
           const found = shelf.meta.cards.find((c) => c.slug === original.slug);
           if (found) { card = found; copy = shelf.copy[loc].cards[original.slug]; break; }
         }

@@ -18,7 +18,7 @@
     "slug": "african-forest-elephant",
     "file": "african-forest-elephant.jpg",
     "commonsTitle": "African Forest Elephant.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27%C3%A9l%C3%A9phant_de_for%C3%AAt_d%27Afrique_(Loxodonta_cyclotis).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Forest_Elephant.jpg",
     "artist": "VIGNA christian",
     "license": "CC BY-SA 4.0"
   },
@@ -100,7 +100,7 @@
     "commonsTitle": "Bramble-cay-melomys.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg",
     "artist": "Ian Bell, EHP, State of Queensland",
-    "license": "CC BY 3.0 au"
+    "license": "CC BY 3.0 AU"
   },
   {
     "slug": "brown-bear",
@@ -229,6 +229,13 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg",
     "artist": "Pseudopanax at English Wikipedia",
     "license": "Public domain"
+  },
+  {
+    "slug": "iberian-lynx",
+    "file": "iberian-lynx.webp",
+    "artist": "Fix Planet illustration",
+    "license": "",
+    "sourceUrl": ""
   },
   {
     "slug": "humpback-whale",
@@ -750,7 +757,7 @@
     "slug": "california-condor",
     "file": "california-condor.jpg",
     "commonsTitle": "Condor in flight (53189570917).jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_in_flight_(53189570917).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_in_flight_%2853189570917%29.jpg",
     "artist": "USFWS Pacific Southwest Region",
     "license": "Public domain"
   },

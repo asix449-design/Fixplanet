@@ -1,4 +1,905 @@
 {
   "shelf": "endangered",
-  "cards": []
+  "cards": [
+    {
+      "slug": "vaquita",
+      "scientificName": "Phocoena sinus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Cetacea"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/17028/214541137"
+      },
+      "flags": {},
+      "image": {
+        "file": "vaquita.jpg",
+        "kind": "photo",
+        "credit": "Paula Olson / NOAA (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Phocoena sinus",
+          "url": "https://www.iucnredlist.org/species/17028/214541137"
+        },
+        {
+          "label": "IUCN Cetacean Specialist Group",
+          "url": "https://iucn-csg.org/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "amur-tiger",
+      "scientificName": "Panthera tigris altaica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15955/214862019"
+      },
+      "flags": {},
+      "image": {
+        "file": "amur-tiger.jpg",
+        "kind": "photo",
+        "credit": "Brocken Inaglory / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siberian_Tiger_sf.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Panthera tigris",
+          "url": "https://www.iucnredlist.org/species/15955/214862019"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "sumatran-orangutan",
+      "scientificName": "Pongo abelii",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Primates"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/121097935/259045437"
+      },
+      "flags": {},
+      "image": {
+        "file": "sumatran-orangutan.jpg",
+        "kind": "photo",
+        "credit": "Calistemon / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumatran_Orangutan_(Pongo_abelii)_at_Perth_Zoo,_October_2024_18.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Pongo abelii",
+          "url": "https://www.iucnredlist.org/species/121097935/259045437"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "black-rhino",
+      "scientificName": "Diceros bicornis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/6557/152728945"
+      },
+      "flags": {},
+      "image": {
+        "file": "black-rhino.jpg",
+        "kind": "photo",
+        "credit": "Jonathunder / Wikimedia Commons",
+        "license": "GFDL 1.2",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Diceros bicornis",
+          "url": "https://www.iucnredlist.org/species/6557/152728945"
+        },
+        {
+          "label": "International Rhino Foundation",
+          "url": "https://rhinos.org/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "african-forest-elephant",
+      "scientificName": "Loxodonta cyclotis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Proboscidea"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/181007989/204404464"
+      },
+      "flags": {},
+      "image": {
+        "file": "african-forest-elephant.jpg",
+        "kind": "photo",
+        "credit": "Christian Vigna / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Forest_Elephant.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Loxodonta cyclotis",
+          "url": "https://www.iucnredlist.org/species/181007989/204404464"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "mountain-gorilla",
+      "scientificName": "Gorilla beringei beringei",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Primates"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/39999/17989719"
+      },
+      "flags": {},
+      "image": {
+        "file": "mountain-gorilla.jpg",
+        "kind": "photo",
+        "credit": "Charles J. Sharp / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Gorilla beringei beringei",
+          "url": "https://www.iucnredlist.org/species/39999/17989719"
+        },
+        {
+          "label": "International Gorilla Conservation Programme",
+          "url": "https://igcp.org/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "amur-leopard",
+      "scientificName": "Panthera pardus orientalis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15957/5333757"
+      },
+      "flags": {},
+      "image": {
+        "file": "amur-leopard.jpg",
+        "kind": "photo",
+        "credit": "Derek Ramsey / Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amur_Leopard_Panthera_pardus_orientalis_Facing_Forward_1761px.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Panthera pardus orientalis",
+          "url": "https://www.iucnredlist.org/species/15957/5333757"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "hawksbill-turtle",
+      "scientificName": "Eretmochelys imbricata",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "reptile",
+      "taxon": {
+        "class": "Testudines"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/8005/12881238"
+      },
+      "flags": {},
+      "image": {
+        "file": "hawksbill-turtle.jpg",
+        "kind": "photo",
+        "credit": "U.S. Fish and Wildlife Service (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Eretmochelys imbricata",
+          "url": "https://www.iucnredlist.org/species/8005/12881238"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "northern-white-rhinoceros",
+      "scientificName": "Ceratotherium simum cottoni",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {
+        "functionallyExtinct": true
+      },
+      "image": {
+        "file": "northern-white-rhinoceros.jpg",
+        "kind": "photo",
+        "credit": "Sheep81 / Wikimedia Commons (Angalifu, San Diego Zoo)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northern_White_Rhinoceros_Angalifu.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "javan-rhinoceros",
+      "scientificName": "Rhinoceros sondaicus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/19495/18493900"
+      },
+      "flags": {},
+      "image": {
+        "file": "javan-rhinoceros.jpg",
+        "kind": "photo",
+        "credit": "T. Dixon / Zoological Society of London (historical photograph, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhinoceros_sondaicus_in_London_Zoo.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Rhinoceros sondaicus",
+          "url": "https://www.iucnredlist.org/species/19495/18493900"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "sumatran-rhinoceros",
+      "scientificName": "Dicerorhinus sumatrensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/6553/18493355"
+      },
+      "flags": {},
+      "image": {
+        "file": "sumatran-rhinoceros.jpg",
+        "kind": "photo",
+        "credit": "Willem v Strien / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumatran_Rhinoceros_Way_Kambas_2008.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Dicerorhinus sumatrensis",
+          "url": "https://www.iucnredlist.org/species/6553/18493355"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "saola",
+      "scientificName": "Pseudoryx nghetinhensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/18597/166485696"
+      },
+      "flags": {},
+      "image": {
+        "file": "saola.png",
+        "kind": "photo",
+        "credit": "Silviculture / Vietnamese Wikipedia (Wikimedia Commons)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pseudoryx_nghetinhensis.PNG"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Pseudoryx nghetinhensis",
+          "url": "https://www.iucnredlist.org/species/18597/166485696"
+        },
+        {
+          "label": "IUCN SSC Saola Working Group",
+          "url": "https://iucn.org/our-union/commissions/group/iucn-ssc-saola-working-group"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "yangtze-giant-softshell-turtle",
+      "scientificName": "Rafetus swinhoei",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "reptile",
+      "taxon": {
+        "class": "Testudines"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "yangtze-giant-softshell-turtle.jpg",
+        "kind": "photo",
+        "credit": "Phuongcacanh / Vietnamese Wikipedia (Wikimedia Commons)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%B9a_%C4%90%E1%BB%93ng_M%C3%B4.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "kakapo",
+      "scientificName": "Strigops habroptilus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Psittaciformes"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22685245/129751169"
+      },
+      "flags": {},
+      "image": {
+        "file": "kakapo.jpg",
+        "kind": "photo",
+        "credit": "Department of Conservation / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "New Zealand Department of Conservation — Kākāpō",
+          "url": "https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/"
+        },
+        {
+          "label": "IUCN Red List — Strigops habroptilus",
+          "url": "https://www.iucnredlist.org/species/22685245/129751169"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "axolotl",
+      "scientificName": "Ambystoma mexicanum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "amphibian",
+      "taxon": {
+        "class": "Amphibia",
+        "order": "Caudata"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/1095/53947343"
+      },
+      "flags": {},
+      "image": {
+        "file": "axolotl.jpg",
+        "kind": "photo",
+        "credit": "Stan Shebs / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_1.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Ambystoma mexicanum",
+          "url": "https://www.iucnredlist.org/species/1095/53947343"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "chinese-giant-salamander",
+      "scientificName": "Andrias davidianus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "amphibian",
+      "taxon": {
+        "class": "Amphibia",
+        "order": "Caudata"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "chinese-giant-salamander.jpg",
+        "kind": "photo",
+        "credit": "Petr Hamerník / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "addax",
+      "scientificName": "Addax nasomaculatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "addax.jpg",
+        "kind": "photo",
+        "credit": "Dezidor / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Addax_nasomaculatus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "cao-vit-gibbon",
+      "scientificName": "Nomascus nasutus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Primates"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "cao-vit-gibbon.jpg",
+        "kind": "photo",
+        "credit": "Laura Flamme / MNHN holotype (Wikimedia Commons)",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nomascus_nasutus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "devils-hole-pupfish",
+      "scientificName": "Cyprinodon diabolis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "fish",
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "devils-hole-pupfish.jpg",
+        "kind": "photo",
+        "credit": "Olin Feuerbacher / U.S. National Park Service (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Devils_Hole_pupfish_(NPS).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "chinese-pangolin",
+      "scientificName": "Manis pentadactyla",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Pholidota"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "chinese-pangolin.jpg",
+        "kind": "photo",
+        "credit": "Claire H. / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manis_pentadactyla.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "sunda-pangolin",
+      "scientificName": "Manis javanica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Pholidota"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "sunda-pangolin.jpg",
+        "kind": "photo",
+        "credit": "Ari hidayat99 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manis_javanica.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "philippine-pangolin",
+      "scientificName": "Manis culionensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Pholidota"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "philippine-pangolin.jpg",
+        "kind": "photo",
+        "credit": "Rodine Teodoro / Philippine Postal Corporation (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Philippine_pangolin_2015_stamp_of_the_Philippines.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "indian-pangolin",
+      "scientificName": "Manis crassicaudata",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Pholidota"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "indian-pangolin.jpg",
+        "kind": "photo",
+        "credit": "Dushy Ranetunge / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scaly_ant_eater_by_Dushy_Ranetunge_2.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "sumatran-tiger",
+      "scientificName": "Panthera tigris sumatrae",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "sumatran-tiger.jpg",
+        "kind": "photo",
+        "credit": "CrazyPhunk / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panthera_tigris_sumatrae.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "rices-whale",
+      "scientificName": "Balaenoptera ricei",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Cetacea"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "rices-whale.jpg",
+        "kind": "photo",
+        "credit": "NOAA (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice%27s_whale_close_to_surface.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "north-atlantic-right-whale",
+      "scientificName": "Eubalaena glacialis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Cetacea"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "north-atlantic-right-whale.jpg",
+        "kind": "photo",
+        "credit": "NOAA (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eubalaena_glacialis_with_calf.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    }
+  ]
 }

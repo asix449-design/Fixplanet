@@ -1,5 +1,358 @@
 {
   "locale": "lv",
   "shelf": "domesticates",
-  "cards": {}
+  "cards": {
+    "cattle": {
+      "commonName": "Liellopi",
+      "hook": "Pasaules galvenie gaļas un piena liellopi: taurīnie un zebu, ko cilvēki tur piena, gaļas, ādu un vilkšanas dēļ.",
+      "imageAlt": "Herefordas liellopi ganībās",
+      "what": "Liellopi ir pieradināti liellopi, ko tur piena, gaļas, ādu un vilkšanas dēļ. Dzīvie liellopi pieder taurīnajai (Bos taurus) un zebu (Bos indicus) līnijām. Cilvēki tos izveidoja no tauta holocēnā.",
+      "range": "Visos apdzīvotajos kontinentos. Blīvums seko ganībām, barībai un piena tirgiem. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē liellopu globālo izplatību kā mājlopus.",
+      "story": "Cilvēki pieradināja liellopus no tauta holocēnā un veda ganāmpulkus līdz ar tīrumiem un tirdzniecību. Šodien tas ir pārvaldīta pārtikas sistēma: šķirnes, nobarošanas laukumi un ganu ganāmpulki.",
+      "when": "Dzīvs pieradinājums, ko cilvēki uztur visā pasaulē.",
+      "humanRole": "Mēs izveidojām dzīvnieku, izplatījām to un vedam ganāmpulkus, kas baro lielu daļu pasaules.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, liellopi (Livestock Systems: Cattle)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/cattle/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, liellopi",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/cattle/en/"
+      },
+      "image": {
+        "credit": "Foto: Keith Weller, Amerikas Savienoto Valstu Lauksaimniecības departaments, Vikikrātuve (Wikimedia Commons)",
+        "licenseLabel": "sabiedriskais īpašums"
+      }
+    },
+    "chicken": {
+      "commonName": "Vista",
+      "hook": "Visvairāk sastopamais mājlops: bankivas džungļu vista, kas kļuvusi par fermu pamatputnu pasaulē.",
+      "imageAlt": "Mājas vista stāv sausā zālē",
+      "what": "Vista (Gallus gallus domesticus) ir bankivas džungļu vistas pieradinātā forma. Tā ir visvairāk sastopamais mājlops: dzīvu vistu ir vairāk nekā jebkura cita fermas putna vai zīdītāja. Cilvēki šo putnu tur gaļai un olām.",
+      "range": "Sētas, šķūņi un rūpniecības mājas visos apdzīvotajos kontinentos. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē vistu globālo izplatību kā mājlopus.",
+      "story": "Pieradināšana Āzijā deva putnu, ko var vest. Rūpnieciskā selekcija pēc tam izveidoja gaļas un olu līnijas ar īsu, blīvu mūžu. Ciematu bari paliek līdzās rūpniecības mājām.",
+      "when": "Dzīvs pieradinājums un visvairāk sastopamais fermas dzīvnieks.",
+      "humanRole": "Mēs selekcionējām, izmitinājām un skaitām tās kā gaļas un olu pārtikas sistēmu.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, vistas (Livestock Systems: Chickens)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/chickens/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, vistas",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/chickens/en/"
+      },
+      "image": {
+        "credit": "Foto: Susulyka, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "sheep": {
+      "commonName": "Aita",
+      "hook": "Aitas ir ganību dzīvnieki, ko audzē galvenokārt vilnai, gaļai, pienam un ādām, un to šķirnes ir pielāgotas vietām no aukstajām, mitrajām Ziemeļeiropas augstienēm līdz sausajiem Āfrikas, Āzijas un Australāzijas apgabaliem.",
+      "imageAlt": "Mājas aita zālē, pret kameru",
+      "what": "Aita (Ovis aries) ir pieradināts sīkais atgremotājs, ko tur vilnas, gaļas un piena dēļ.",
+      "range": "Ganības no sausas stepes līdz mitriem mērenajiem pauguriem un barības sistēmas blakus. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē aitu globālo izplatību kā mājlopus.",
+      "story": "Cilvēki pieradināja aitu neolīta Tuvajos Austrumos un veda to pāri kontinentiem. Šķirnes tagad der vilnai, pienam vai gaļai.",
+      "when": "Dzīvs pieradinājums, ko audzē vilnai, gaļai un pienam.",
+      "humanRole": "Mēs selekcionējām un pārvietojām tās kā šķiedru un ēdienu; ainava, ko tās nogana, ir mūsu.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, aitas (Livestock Systems: Sheep)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/sheep/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, aitas",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/sheep/en/"
+      },
+      "image": {
+        "credit": "Foto: T.Voekler, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "pig": {
+      "commonName": "Cūka",
+      "hook": "Mājas cūka, Sus domesticus, ko audzē gaļai fermās no ciematu kūtiņām līdz rūpniecības mājām.",
+      "imageAlt": "Mājas cūka fermas pagalmā, rozā un smaga",
+      "what": "Cūka (Sus domesticus) ir mājas cūka, ko tur gaļas dēļ. Cilvēki to pieradināja no mežacūkas vairāk nekā vienreiz, un šodien lielākā daļa gaļas cūku ir komerciālas līnijas. Ciematu cūkas un vietējās šķirnes paliek. Izlaistie un aizbēgušie dzīvnieki ir izveidojuši savvaļas populācijas daudzās valstīs.",
+      "range": "Fermās visā pasaulē, no ciematu kūtiņām līdz rūpniecības mājām. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē cūku globālo izplatību kā mājlopus.",
+      "story": "Cūkas pieradināja no mežacūkas vairāk nekā vienreiz. Šodien lielākā daļa gaļas cūku ir komerciālas līnijas. Ciematu cūkas un vietējās šķirnes paliek, un izlaistie vai aizbēgušie dzīvnieki ir izveidojuši savvaļas populācijas daudzās valstīs.",
+      "when": "Dzīvs pieradinājums, ko audzē gaļai.",
+      "humanRole": "Mēs tās turam kā ēdienu, un izlaistie vai aizbēgušie dzīvnieki ir izveidojuši savvaļas populācijas daudzās valstīs.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, cūkas (Livestock Systems: Pigs)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/pigs/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, cūkas",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/pigs/en/"
+      },
+      "image": {
+        "credit": "Foto: Gzen92, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "water-buffalo": {
+      "commonName": "Ūdensbifelis",
+      "hook": "Ap 15 procentiem pasaules piena — un Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.",
+      "imageAlt": "Mājas ūdensbifeļa bullis pie Mehsānas, Gudžarātā, Indijā",
+      "what": "Ūdensbifelis (Bubalus bubalis) ir pieradinātais Āzijas bifelis, ko tur piena, gaļas un vilkšanas dēļ. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rēķina bifeļus ap 15 procentiem pasaules piena; Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.",
+      "range": "Dienvidu un Dienvidaustrumu Āzija tur lielāko daļu ganāmpulka; mazākas populācijas ir Vidusjūrā, Kaukāzā, Dienvidamerikā un tālāk. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē bifeļus kā mājlopus.",
+      "story": "Cilvēki pieradināja Āzijas bifeli un uzcēla ap to rīsa un piena sistēmas. Upju un purvu tipi atšķiras ar pienu, vilkšanu un mitrājiem, kuros tie dzīvo.",
+      "when": "Dzīvs pieradinājums un nozīmīga piena suga Dienvidāzijā.",
+      "humanRole": "Mēs turam bifeļus kā piena un darba dzīvniekus Dienvidāzijā un mazākos ganāmpulkos citur.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: bifeļu piens (Buffalo milk)",
+          "url": "https://www.fao.org/dairy-production-products/dairy/buffaloes/en"
+        },
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, bifeļi (Livestock Systems: Buffaloes)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: bifeļu piens",
+        "url": "https://www.fao.org/dairy-production-products/dairy/buffaloes/en"
+      },
+      "image": {
+        "credit": "Foto: Yann Forget, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "horse": {
+      "commonName": "Zirgs",
+      "hook": "Mājas zirgi izplatījās no Rietumeirāzijas stepēm ap 2200.–2000. gadu p.m.ē., kā 2021. gadā žurnālā Nature parādīja Librado un kolēģi.",
+      "imageAlt": "Balts Kamargas zirgs zālē",
+      "what": "Zirgs (Equus ferus caballus) ir mājas zirgs, uz kura jā, ko iejūdz un ko tur. Librado un kolēģu darbs ar seno ģenētisko materiālu (žurnāls Nature, 2021) liek mūsdienu mājas līnijas rašanos un izplatību Rietumeirāzijas stepēs, ar paplašināšanos ap 2200.–2000. gadu p.m.ē. Botajas zirgi Kazahstānā pieder citai līnijai.",
+      "range": "Tos tur visā pasaulē. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē zirgus kā mājlopus. Darba, sporta un savvaļā palaistie bari dzīvo visos apdzīvotajos kontinentos.",
+      "story": "Mūsdienu mājas līnija nomainīja agrākās līnijas, izplatoties kopā ar cilvēkiem. Šis datums ir 2021. gada pētījuma ģenētisks rezultāts. Darba, sporta un savvaļā palaistie bari nāk no šīs turētās līnijas.",
+      "when": "Dzīvs pieradinājums. Mūsdienu līnija: Rietumeirāzijas stepes, ap 2200.–2000. gadu p.m.ē. (Librado u.c., 2021).",
+      "humanRole": "Mēs selekcionējām un pārvietojām tos kā transportu un darbu. Dzīvās līnijas datums nāk no 2021. gada ģenētiskā pētījuma.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, zirgi (Livestock Systems: Horses)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
+        },
+        {
+          "label": "Librado u.c., žurnāls Nature, 2021 — Rietumeirāzijas steppju mājas zirgi (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)",
+          "url": "https://doi.org/10.1038/s41586-021-04018-9"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, zirgi",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
+      },
+      "image": {
+        "credit": "Foto: TwoWings, Vikikrātuve (Wikimedia Commons)",
+        "licenseLabel": "sabiedriskais īpašums"
+      }
+    },
+    "dog": {
+      "commonName": "Suns",
+      "hook": "Pirmais pieradinātais dzīvnieks, jau ģenētiski atšķirīgs no šodienas vilkiem, ar vismaz piecām līnijām ap 11 tūkstošiem gadu.",
+      "imageAlt": "Divi melni labradoru retrīveri ar siksnām sausā zālē",
+      "what": "Suns (Canis familiaris) ir pirmais dzīvnieks, ko cilvēki pieradināja. Bergström un kolēģi (žurnāls Science, 2020) rāda, ka suņi jau bija ģenētiski atšķirīgi no šodienas vilkiem un ka ap 11 tūkstošiem gadu pastāvēja vismaz piecas suņu līnijas.",
+      "range": "Tur, kur dzīvo cilvēki. Ciematu suņi, darba līnijas un šķirnes ir viena mājas suga.",
+      "story": "Suņi iegāja cilvēku nometnēs vēlajā pleistocēnā. Agrīnajā holocēnā tie jau bija līniju kopa, ģenētiski atšķirīga no šodienas vilkiem. Vēlākā selekcija izveidoja mūsdienu tipus.",
+      "when": "Vecākais pieradinājums. Atšķirīgs no šodienas vilkiem holocēnā; vismaz piecas līnijas ap 11 tūkstošiem gadu (Bergström u.c., 2020).",
+      "humanRole": "Mēs izveidojām pirmo turēto dzīvnieku: pavadoni, mednieku un sargu.",
+      "sources": [
+        {
+          "label": "Bergström u.c.: aizvēsturisko suņu izcelsme (Origins and genetic legacy of prehistoric dogs), žurnāls Science, 2020, pilns teksts PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
+        },
+        {
+          "label": "Bergström u.c., žurnāls Science, 2020 (doi:10.1126/science.aba9572)",
+          "url": "https://doi.org/10.1126/science.aba9572"
+        }
+      ],
+      "gridSource": {
+        "label": "Bergström u.c., Science, 2020 — aizvēsturisko suņu izcelsme, pilns teksts PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
+      },
+      "image": {
+        "credit": "Foto: Marco Ponepal, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "camelids": {
+      "commonName": "Kamieļi",
+      "hook": "Cilvēki tur dromedārus, divkupru kamieļus, lamas un alpakas transportam, šķiedrai, pienam un gaļai, un Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija 2024. gadu nosauca par Starptautisko kamieļu gadu.",
+      "imageAlt": "Dromedārs profilā",
+      "what": "Kamieļi, ko tur cilvēki, ir dromedārs un divkupru kamielis (Camelus), lama (Lama glama) un alpaka (Vicugna pacos). Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija 2024. gadu nosauca par Starptautisko kamieļu gadu.",
+      "range": "Kamieļi dzīvo sausajā Āzijā un Āfrikā, un tagad arī Austrālijā. Lamas un alpakas dzīvo Andos, un izveduma ganāmpulki ir arī citur.",
+      "story": "Cilvēki pieradināja Vecās pasaules kamieļus un Andu kamieļus kā nastu, šķiedras, piena un gaļas dzīvniekus sausās un augstās zemēs. 2024. gada Starptautiskais kamieļu gads lūdza valdības šos ganāmpulkus uzskatīt par pārtikas un kultūras sistēmu.",
+      "when": "Dzīvi pieradinājumi. Starptautiskais kamieļu gads bija 2024. gadā.",
+      "humanRole": "Mēs turam kamieļus, lamas un alpakas kā darba un šķiedras dzīvniekus sausās un kalnu zemēs.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Starptautiskais kamieļu gads, 2024 (International Year of Camelids 2024)",
+          "url": "https://www.fao.org/camelids-2024/en"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Starptautiskais kamieļu gads, 2024",
+        "url": "https://www.fao.org/camelids-2024/en"
+      },
+      "image": {
+        "credit": "Foto: Hans Hillewaert, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "goat": {
+      "commonName": "Kaza",
+      "hook": "Sīkais atgremotājs, kas barojas galvenokārt ar krūmu zariem un lapām; kazas tur gaļai, pienam, ādām un vilnai sīksaimniecībās, ganu ganāmpulkos un specializētās piena fermās.",
+      "imageAlt": "Brūna mājas kaza ar garām, nokarenām ausīm.",
+      "what": "Mājas kaza (Capra hircus; Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija lieto nosaukumu Capra aegagrus hircus) ir sīkais atgremotājs, ko cilvēki tur galvenokārt gaļai, pienam, ādām un vilnai. Kazas galvenokārt ēd krūmus un ļoti dažādus augus, un tas ļāvis tām pielāgoties daudzām atšķirīgām vidēm.",
+      "range": "Kazas ir plaši izplatītas, un tās audzē ļoti dažādās saimniekošanas sistēmās visā pasaulē. Lielākā daļa dzīvo jauktās sīksaimniecībās. Kazas ir arī svarīga ganu ganāmpulku daļa, un mērenajā joslā vērtīgus dzīvniekus tur specializētai piena ražošanai. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija publicē pasaules kartes ar kazu skaitu uz kvadrātkilometru 2010., 2015. un 2020. gadā.",
+      "story": "Kazas bija starp pirmajiem nagaiņiem, ko pieradināja cilvēki. Arheoloģiskie dati kazu pieradināšanas sākumu datē aptuveni pirms 10 500 gadiem Eifratas augštecē Anatolijas dienvidaustrumos. Pētījums par 473 savvaļas bezoāra kazām, mājas kazas savvaļas senčiem (Naderi un kolēģi, žurnāls Proceedings of the National Academy of Sciences, 2008), atklāja, ka gandrīz visas mūsdienu mājas kazas, visticamāk, cēlušās no pieradināšanas centra Anatolijas austrumos, kas, iespējams, aptvēra arī Zagrosa kalnu ziemeļu un centrālo daļu.",
+      "when": "Dzīvs mājas dzīvnieks, ko audzē visā pasaulē. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas Mājas dzīvnieku daudzveidības informācijas sistēma uzskaita mājlopu šķirnes un to izmiršanas risku; tajā ir dati par aptuveni 8800 šķirnēm no 38 sugām.",
+      "humanRole": "Cilvēki tur kazas pienam, gaļai, ādām un vilnai ģimenes saimniecībās, klejojošu lopkopju ganāmpulkos un piena fermās.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija (FAO): lopkopības sistēmas, kazas (Livestock Systems: Goats)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/goats/en/"
+        },
+        {
+          "label": "Saīds Naderi u.c.: kazu pieradināšanas process pēc plaša savvaļas un mājas dzīvnieku mitohondriālās DNS pētījuma (The goat domestication process inferred from large-scale mitochondrial DNA analysis of wild and domestic individuals), žurnāls Proceedings of the National Academy of Sciences, 2008, pilns teksts PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584717/"
+        },
+        {
+          "label": "FAO: Mājas dzīvnieku daudzveidības informācijas sistēma (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, kazas",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/goats/en/"
+      },
+      "badgeText": "Lopkopība · sīkais atgremotājs",
+      "image": {
+        "caption": "Brūna mājas kaza ar garām, nokarenām ausīm.",
+        "credit": "Foto: Mostafameraji, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "cat": {
+      "commonName": "Kaķis",
+      "hook": "Mājas pavadonis un kaitēkļu ķērājs, Tuvo Austrumu meža kaķa pēcnācējs; tā saikne ar cilvēkiem sākās pirms vairāk nekā 9000 gadiem pie pirmo zemkopju graudu krātuvēm.",
+      "imageAlt": "Jauns svītrains kaķis Portugālē.",
+      "what": "Mājas kaķis (Felis catus) dzīvo mājās un saimniecībās kā pavadonis un kaitēkļu apkarotājs. Tas cēlies no Tuvo Austrumu meža kaķa (Felis silvestris lybica).",
+      "range": "Cilvēki kaķus aizveduši uz visu pasauli, un mājas kaķis, iespējams, ir daudzskaitlīgākais mājdzīvnieks pasaulē. Mājas kaķi, saimniecību kaķi, šķirnes kaķi un brīvi dzīvojoši pilsētu kaķi cēlušies no tiem pašiem Tuvo Austrumu senčiem.",
+      "story": "Ģenētisks pētījums par 979 mājas kaķiem un meža kaķiem (Driskols un kolēģi, žurnāls Science, 2007) atklāja, ka kaķi pieradināti Tuvajos Austrumos, visticamāk, līdz ar zemkopju ciemu attīstību Auglīgajā pusmēnesī, un ka tie cēlušies vismaz no pieciem dibinātājiem. Senais ģenētiskais materiāls (Ottoni un kolēģi, žurnāls Nature Ecology & Evolution, 2017) rāda, ka mājas kaķa genofondu veidojušas gan Tuvo Austrumu, gan Ēģiptes meža kaķu populācijas: izplatīšanās sākās neolītā Tuvajos Austrumos un paātrinājās klasiskajā laikmetā, kad Ēģiptes kaķi pa jūras un sauszemes tirdzniecības ceļiem izplatījās visā Vecajā pasaulē. Viens kažoka krāsas variants kļuva biežs tikai pēc viduslaikiem, un tas liecina, ka cilvēki mērķtiecīgi selekcionēt kaķus pēc izskata sāka vēlāk nekā lielāko daļu citu mājdzīvnieku.",
+      "when": "Dzīvs mājas dzīvnieks, ko visā pasaulē tur kā pavadoni.",
+      "humanRole": "Meža kaķi, visticamāk, sāka dzīvot cilvēku tuvumā, medīdami grauzējus pirmo zemkopju graudu krātuvēs. Vēlāk cilvēki veda kaķus ar kuģiem un pa tirdzniecības ceļiem pa visu Veco pasauli.",
+      "sources": [
+        {
+          "label": "Klaudio Ottoni u.c.: kaķu izplatīšanās paleoģenētika senajā pasaulē (The palaeogenetics of cat dispersal in the ancient world), žurnāls Nature Ecology & Evolution, 2017",
+          "url": "https://www.nature.com/articles/s41559-017-0139"
+        },
+        {
+          "label": "Karloss A. Driskols u.c.: kaķu pieradināšanas Tuvo Austrumu izcelsme (The Near Eastern Origin of Cat Domestication), žurnāls Science, 2007, pilns teksts PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5612713/"
+        }
+      ],
+      "gridSource": {
+        "label": "Ottoni u.c., žurnāls Nature Ecology & Evolution, 2017",
+        "url": "https://www.nature.com/articles/s41559-017-0139"
+      },
+      "badgeText": "Pavadonis · Tuvie Austrumi",
+      "image": {
+        "caption": "Jauns svītrains kaķis Portugālē.",
+        "credit": "Foto: Alvesgaspar, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "donkey": {
+      "commonName": "Ēzelis",
+      "hook": "Nastu nesējs, kas pieradināts Āfrikā ap 5000. gadu p.m.ē.; 99% pasaules ēzeļu dzīvo valstīs ar zemiem un vidējiem ienākumiem.",
+      "imageAlt": "Ēzelis ganās Klovelijā, Devonas grāfistē, Anglijā.",
+      "what": "Mājas ēzelis (Equus asinus) ir darba dzīvnieks, kas lielos attālumos nes kravas un cilvēkus, īpaši pussausos un kalnainos apvidos. Tas joprojām ir svarīgs atbalsts daudzām ģimenēm valstīs ar zemiem un vidējiem ienākumiem.",
+      "range": "Labdarības organizācija Brooke, kas palīdz darba zirgiem, ēzeļiem un mūļiem, lēš, ka pasaulē ir aptuveni 116 miljoni zirgu dzimtas dzīvnieku (ēzeļu, zirgu un mūļu), no tiem aptuveni 36 miljoni 38 valstīs ar zemākajiem ienākumiem, un norāda, ka 99% pasaules ēzeļu dzīvo valstīs ar zemiem un vidējiem ienākumiem. Daudzās valstīs trūkst precīzu datu par dzīvnieku skaitu: no 36 valstīm, kuru pēdējās skaitīšanas Brooke izvērtēja, 22 iepriekšējos 10 gados zirgu dzimtas dzīvniekus nebija skaitījušas.",
+      "story": "Pētījums par 207 mūsdienu un 31 senā ēzeļa, kā arī 15 savvaļas zirgu dzimtas dzīvnieku genomiem (Toda un kolēģi, žurnāls Science, 2022) atbalsta vienu pieradināšanu Āfrikā ap 5000. gadu p.m.ē., pēc kuras ēzeļi izplatījās Āfrikā un Eirāzijā. Agrāks pētījums par 126 mājas ēzeļiem un septiņiem savvaļas ēzeļiem (Vans un kolēģi, žurnāls Nature Communications, 2020) arī norāda uz Āfriku. Tas atklāja zemu Y hromosomas ģenētisko daudzveidību, kas, visticamāk, atspoguļo cilvēku vadītu vairošanu, un parādīja, ka mājas ēzeļu neatšķaidītā melnā vai kaštanbrūnā krāsa, visticamāk, nostiprinājās pieradināšanas laikā.",
+      "when": "Dzīvs mājas dzīvnieks un darba dzīvnieks. Ēzeļu šķirnes uzskaita Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas Mājas dzīvnieku daudzveidības informācijas sistēma. Brooke aicina valdības darba ēzeļus, zirgus un mūļus klasificēt kā mājlopus, lai tos uzskaitītu valstu lopu skaitīšanā.",
+      "humanRole": "Ēzeļi tūkstošiem gadu nesuši preces lielos attālumos un joprojām palīdz daudzām kopienām nopelnīt iztiku.",
+      "sources": [
+        {
+          "label": "Evelina T. Toda u.c.: mājas ēzeļu genomiskā vēsture un globālā izplatība (The genomic history and global expansion of domestic donkeys), žurnāls Science, 2022, Minhenes Universitātes bibliogrāfiskais ieraksts (DOI: 10.1126/science.abo3503)",
+          "url": "https://epub.ub.uni-muenchen.de/110811/"
+        },
+        {
+          "label": "Čanfa Vans u.c.: ēzeļu genomi dod jaunu ieskatu pieradināšanā un selekcijā pēc kažoka krāsas (Donkey genomes provide new insights into domestication and selection for coat color), žurnāls Nature Communications, 2020, pilns teksts PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7723042/"
+        },
+        {
+          "label": "Brooke, labdarības organizācija: dati par darba dzīvniekiem (Data on working animals)",
+          "url": "https://www.thebrooke.org/our-work/data-working-equids"
+        }
+      ],
+      "gridSource": {
+        "label": "Toda u.c., žurnāls Science, 2022",
+        "url": "https://epub.ub.uni-muenchen.de/110811/"
+      },
+      "badgeText": "Darba dzīvnieks · Āfrika",
+      "image": {
+        "caption": "Ēzelis ganās Klovelijā, Devonas grāfistē, Anglijā.",
+        "credit": "Foto: Adrian Pingstone, Vikikrātuve (Wikimedia Commons)",
+        "licenseLabel": "sabiedriskais īpašums"
+      }
+    },
+    "duck": {
+      "commonName": "Pīle",
+      "hook": "Mājas pīles, kuru lielākā daļa cēlusies no meža pīlēm, ko pirmoreiz pieradināja Dienvidaustrumāzijā vismaz pirms 4000 gadiem; tās audzē gaļai, olām un spalvām vietās, kur ir daudz ūdens.",
+      "imageAlt": "Mājas pīles rīsu laukos pie Ubudas Bali salā, Indonēzijā.",
+      "what": "Mājas pīles audzē gaļai, olām un spalvām. Saskaņā ar Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija datiem lielākā daļa audzēto pīļu cēlusies no meža pīles (Anas platyrhynchos). Šķirnes ļoti atšķiras atkarībā no vietas un no tā, vai tās izveidotas gaļai, olām, spalvām vai vairākiem mērķiem vienlaikus.",
+      "range": "Visvairāk pīļu ir tur, kur ir daudz ūdens. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija norāda, ka īpaši daudz to ir Bangladešā, Ķīnā un Dienvidaustrumāzijā; pīles ir iecienītas arī Ēģiptē, Nigērijā un lielā daļā Eiropas, īpaši Francijas rietumos. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija publicē pasaules kartes ar pīļu skaitu uz kvadrātkilometru 2010. un 2015. gadā.",
+      "story": "Cilvēki pirmoreiz pieradināja no meža pīles cēlušās pīles Dienvidaustrumāzijā vismaz pirms 4000 gadiem. Mūsdienās tās audzē ļoti dažādās saimniecībās: no dažiem putniem jauktā saimniecībā līdz milzīgiem bariem, ko ar kravas automašīnām ved uz rīsu laukiem, lai putni pēc ražas novākšanas laukus iztīrītu.",
+      "when": "Dzīvs mājas dzīvnieks. Pīļu šķirnes uzskaita Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas Mājas dzīvnieku daudzveidības informācijas sistēma.",
+      "humanRole": "Zemnieki tur pīles dīķos un jauktās saimniecībās, bet rīsa audzēšanas apvidos bari barojas laukos pēc ražas novākšanas.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija (FAO): lopkopības sistēmas, pīles (Livestock Systems: Ducks)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/ducks/en/"
+        },
+        {
+          "label": "FAO: Mājas dzīvnieku daudzveidības informācijas sistēma (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: lopkopības sistēmas, pīles",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/ducks/en/"
+      },
+      "badgeText": "Putnkopība · Dienvidaustrumāzija",
+      "image": {
+        "caption": "Mājas pīles rīsu laukos pie Ubudas Bali salā, Indonēzijā.",
+        "credit": "Foto: Jakub Hałun, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    },
+    "rabbit": {
+      "commonName": "Trusis",
+      "hook": "Pieradināts līdz vēlajiem viduslaikiem no Dienvideiropas un Ziemeļāfrikas savvaļas truša; mūsdienās trušus audzē gaļai, kažokādām un vilnai fermās un piemājas saimniecībās.",
+      "imageAlt": "Melns mājas trusis uz salmiem Hiršštetenes ziedu dārzos Vīnē, Austrijā.",
+      "what": "Mājas trusi (Oryctolagus cuniculus) audzē gaļai, ādiņām kažokādām un, angoras trušu gadījumā, vilnai. Tas cēlies no Dienvideiropas un Ziemeļāfrikas savvaļas truša.",
+      "range": "Trušu turēšana būros izplatījās visos Rietumeiropas laukos un pilsētu priekšpilsētās, un Eiropas koloniālā ekspansija aizveda trušus uz daudzām valstīm, kur tie iepriekš bija nezināmi, piemēram, uz Austrāliju un Jaunzēlandi. Mūsdienās truši sastopami gandrīz jebkurā klimatā. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rokasgrāmata par truškopību raksturo piemājas trušu audzētavas kā labi piemērotas sīkzemniekiem neatkarīgi no tā, vai viņiem pieder zeme.",
+      "story": "Saskaņā ar Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rokasgrāmatu “Trusis: turēšana, veselība un ražošana” (1997) savvaļas trusi, domājams, atklāja feniķieši, kas ap 1000. gadu p.m.ē. sasniedza Spānijas krastus. Romiešu rakstnieks Varons (116.–27. g. p.m.ē.) ieteica turēt trušus leporārijos, ar akmens mūri ieskautos aplokos vai parkos, kopā ar zaķiem un citiem savvaļas dzīvniekiem medībām; truši toreiz vēl bija savvaļas dzīvnieki. Sešpadsmitajā gadsimtā jau bija zināmas vairākas šķirnes, un tā ir pirmā kontrolētas selekcijas pazīme, tāpēc pieradināšanu attiecina uz vēlajiem viduslaikiem; visticamāk, to galvenokārt paveica mūki.",
+      "when": "Dzīvs mājas dzīvnieks. Trušu šķirnes uzskaita Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas Mājas dzīvnieku daudzveidības informācijas sistēma.",
+      "humanRole": "Rupjā barība ir svarīga truša barības daļa, tāpēc truši tieši nekonkurē ar cilvēkiem par pārtiku, un efektīvās sistēmās tie 20% apēsto olbaltumvielu pārvērš ēdamā gaļā. Tāpēc tie noder lauku ģimenēm, kurām vajag vairāk dzīvnieku olbaltumvielu.",
+      "sources": [
+        {
+          "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija (FAO): “Trusis: turēšana, veselība un ražošana” (The Rabbit: Husbandry, health and production), sērija “Dzīvnieku ražošana un veselība” Nr. 21, jaunā pārskatītā versija, 1997, PDF",
+          "url": "https://www.fao.org/4/t1690e/t1690e.pdf"
+        },
+        {
+          "label": "FAO: Mājas dzīvnieku daudzveidības informācijas sistēma (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: “Trusis: turēšana, veselība un ražošana”, 1997",
+        "url": "https://www.fao.org/4/t1690e/t1690e.pdf"
+      },
+      "badgeText": "Sīklopi · Eiropa",
+      "image": {
+        "caption": "Melns mājas trusis uz salmiem Hiršštetenes ziedu dārzos Vīnē, Austrijā.",
+        "credit": "Foto: Paul Korecky, Vikikrātuve (Wikimedia Commons), licence"
+      }
+    }
+  }
 }
