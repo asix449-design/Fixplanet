@@ -1,4 +1,4 @@
-import type { CitiesDetailCopy, CitiesEncyclopediaSlug } from '../data/solutions-cities';
+import type { CitiesDetailCopy, CitiesEncyclopediaSlug, CitiesMobilitySlug } from '../data/solutions-cities';
 import type { SolutionCopy } from '../data/solutions';
 
 const brtPdf =
@@ -8,7 +8,7 @@ const walkPdf =
 const roadPdf =
   'https://documents1.worldbank.org/curated/en/099031724120560318/pdf/P1766281e0163d01218640121bea8238a86.pdf';
 
-export const grid: Record<CitiesEncyclopediaSlug, SolutionCopy> = {
+export const grid: Record<CitiesMobilitySlug, SolutionCopy> = {
   'bus-rapid-transit': {
     problemTitle: 'Autobusi stāv tajos pašos sastrēgumos kā auto',
     fixTitle: 'Ātrais autobusu transports',
@@ -244,6 +244,115 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
       {
         label: 'Starptautiskā enerģētikas aģentūra: „Pasaules elektrotransportlīdzekļu pārskats 2026”',
         url: 'https://www.iea.org/reports/global-ev-outlook-2026',
+      },
+    ],
+  },
+  "cool-roofs": {
+    title: "Vēsie jumti",
+    hook: "Vēsais jumts atstaro vairāk saules siltuma nekā parasts jumts, tāpēc ēka zem tā paliek vēsāka un gaisa kondicionēšanai tērē mazāk enerģijas, ziņo Amerikas Savienoto Valstu Vides aizsardzības aģentūra.",
+    imageAlt: "Balti pakāpjveida jumti mājai Bermudu salu krastā, fotografēti 1994. gada maijā.",
+    caption: "Balti pakāpjveida jumti mājai Bermudu salu krastā, fotografēti 1994. gada maijā.",
+    credit: "Foto: Acroterion, ar Wikimedia Commons starpniecību, licence «Ar autora norādi, tādos pašos noteikumos» 3.0.",
+    what: ["Vēsais jumts uzsūc un ēkai nodod mazāk saules siltuma nekā parasts jumts. Galvenā tā īpašība, augsts saules gaismas atstarošanas koeficients jeb albedo, parāda, cik lielu gaismas daļu jumts sūta atpakaļ. Palīdz arī augsta siltuma izstarošana, tas ir, spēja atdot to siltumu, ko jumts tomēr uzsūcis, īpaši siltā un saulainā klimatā. Materiāli vēsajiem jumtiem pastāv gan plakaniem, gan slīpiem jumtiem, piemēram, atstarojošas membrānas, gaiši pārklājumi, dakstiņi un šindeļi."],
+    why: ["Dzīvojamās ēkās bez gaisa kondicionēšanas vēsie jumti var pazemināt augstāko temperatūru telpās par 1,2 līdz 3,3 °C. Dzīvojamās ēkās ar gaisa kondicionēšanu vēsais jumts var samazināt maksimālo dzesēšanas pieprasījumu par 11 līdz 27 procentiem. Vēsie jumti pazemina arī temperatūru ārpus ēkām, kas mīkstina pilsētas siltuma salas efektu. Viens pētījums Apvienotajā Karalistē parādīja, ka vēsie jumti visā pilsētā varētu kompensēt 18 procentus ar karstumu saistīto nāves gadījumu, ko izraisa siltuma salas efekts."],
+    read: ["Diapazons no 1,2 līdz 3,3 °C attiecas uz dzīvojamām ēkām bez gaisa kondicionēšanas, un diapazons no 11 līdz 27 procentiem uz dzīvojamām ēkām ar gaisa kondicionēšanu. Vietējie noteikumi un stimuli veicina to izmantošanu. Amerikas Savienotajās Valstīs prasības vēsajiem jumtiem ietilpst būvniecības un enerģijas standartos vai noteikumos vismaz 13 pilsētās un apgabalos, septiņos štatos un Kolumbijas apgabalā saskaņā ar Vēso jumtu vērtēšanas padomes informāciju, kas atjaunināta 2022. gadā."],
+    limits: ["Tā kā vēsie jumti atstaro saules gaismu, aukstā klimatā tie ziemā var palielināt enerģijas patēriņu apkurei. Aģentūra raksturo šo efektu kā parasti kompensētu ar ietaupījumu vasaras dzesēšanā, un zemā ziemas saule un īsās dienas to samazina vēl vairāk. Vēsajiem jumtiem var būt vajadzīga periodiska tīrīšana, lai atstarošana paliktu augsta, īpaši plakanajiem jumtiem. Ēku īpašnieki gūst vislielāko labumu, ja vienlaikus uzlabo arī siltumizolāciju un gaisa blīvumu."],
+    sources: [
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Vēso jumtu izmantošana pilsētu siltuma salu mazināšanai",
+        url: "https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands",
+      },
+    ],
+  },
+  "green-roofs": {
+    title: "Zaļie jumti",
+    hook: "Zaļais jumts ir dzīvu augu slānis uz jumta, un Amerikas Savienoto Valstu Vides aizsardzības aģentūra ziņo, ka tā virsma var būt aptuveni par 31 °C vēsāka nekā parasta jumta virsma.",
+    imageAlt: "Čikāgas pilsētas domes apzaļumotais jumts Amerikas Savienotajās Valstīs, skats no augšas, fotografēts 2008. gada 8. jūlijā.",
+    caption: "Čikāgas pilsētas domes apzaļumotais jumts Amerikas Savienotajās Valstīs, skats no augšas, fotografēts 2008. gada 8. jūlijā.",
+    credit: "Foto: TonyTheTiger, ar Wikimedia Commons starpniecību, licence «Ar autora norādi, tādos pašos noteikumos» 3.0.",
+    what: ["Zaļais jumts jeb jumta dārzs ir augu slānis, kas audzēts uz jumta. Tas atrodas uz hidroizolācijas barjeras ar drenāžas slāni un augšņu slāni. Ekstensīvajiem zaļajiem jumtiem aug izturīgi augi 5 līdz 10 centimetru dziļā augsnes slānī, tie ir viegli un pēc iesakņošanās prasa maz kopšanas. Intensīvie zaļie jumti ir sarežģītāki, var atgādināt parku ar kokiem un prasa stiprāku konstrukciju un kopšanu. Zaļais jumts kalpo arī kā ēkas siltuma buferis: siltā laikā to atvēsina, aukstā laikā silda."],
+    why: ["Zaļie jumti dod ēnu, atņem siltumu gaisam un pazemina jumta virsmas un apkārtējā gaisa temperatūru. Zaļā jumta virsma var būt aptuveni par 31 °C vēsāka nekā parastam jumtam, un tuvumā esošais gaiss līdz pat par 11 °C vēsāks. Salīdzinājumā ar parastajiem jumtiem zaļie var samazināt ēkas dzesēšanas slodzi par 70 procentiem un pazemināt gaisa temperatūru telpās par 15 °C. Tie arī samazina un palēnina lietus ūdens noteci, pēc aģentūras datiem par 60 līdz 100 procentiem."],
+    read: ["Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija uzskaita vairāk nekā 80 ēku ar zaļajiem jumtiem, kopā aptuveni 20 hektāru. Tajos ietilpst Amerikas Savienoto Valstu Krasta apsardzes štāba jumts Vašingtonā ar aptuveni 5,2 hektāriem stādīta jumta, kas pēc administrācijas domām paildzinās hidroizolācijas membrānas mūžu divas vai trīs reizes. Notekas diapazons ir atkarīgs no nokrišņu rakstura, un zaļais jumts aiztur vairāk ūdens nelielā lietū nekā spēcīgā lietusgāzē."],
+    limits: ["Zaļie jumti sākumā bieži maksā vairāk nekā parastie un prasa konstrukciju, kas var izturēt to svaru, drenāžas slāni un regulāru kopšanu, piemēram, laistīšanu, ravēšanu un atkārtotu stādīšanu. Daļu izmaksu īpašnieki var segt ar zemākiem enerģijas izdevumiem, zemākiem lietus ūdens maksājumiem un ilgāku jumta mūžu. Ēku skaits un platības attiecas uz Amerikas Savienoto Valstu federālās valdības ēkām."],
+    sources: [
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļo jumtu izmantošana pilsētu siltuma salu mazināšanai",
+        url: "https://www.epa.gov/heatislands/using-green-roofs-reduce-heat-islands",
+      },
+      {
+        label: "Amerikas Savienoto Valstu Vispārējo pakalpojumu administrācija: Stādīto jumtu piemēri",
+        url: "https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/water/planted-roof/case-studies",
+      },
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Labākā lietus ūdens apsaimniekošanas prakse: zaļie jumti, 2021. gada decembris",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-green-roofs.pdf",
+      },
+    ],
+  },
+  "permeable-pavement": {
+    title: "Caurlaidīgs segums",
+    hook: "Caurlaidīgs segums laiž lietu cauri virsmai augsnes un grants slāņos zem tās, un Amerikas Savienoto Valstu Vides aizsardzības aģentūra to iekļauj zaļās infrastruktūras veidos.",
+    imageAlt: "Demonstrācija, kurā ūdens, uzliets uz porainā seguma plāksnes, iesūcas tai cauri, fotografēts 2012. gada 7. oktobrī.",
+    caption: "Demonstrācija, kurā ūdens, uzliets uz porainā seguma plāksnes, iesūcas tai cauri, fotografēts 2012. gada 7. oktobrī.",
+    credit: "Foto: Lombroso, ar Wikimedia Commons starpniecību, licence «Ar autora norādi, tādos pašos noteikumos» 3.0.",
+    what: ["Caurlaidīgie segumi uzkrāj vai uzsūc lietus ūdeni tur, kur tas nokritis. Virskārta var būt caurlaidīgs betons, porains asfalts vai caurlaidīgi betona bruģakmeņi ar sakabi. Lietus ūdens iesūcas virsmā un uzkrājas drupināta akmens un augsnes slāņos zemāk. Pēc tam ūdens vai nu iesūcas zemē, vai aizplūst pa drenu. Porains asfalts un caurlaidīgs betons ir parastā asfalta un betona varianti ar mazāk smalku daļiņu, un starp bruģakmeņiem atstāj nelielas šuves, kas aizpildītas ar sīkām drumslām."],
+    why: ["Caurlaidīgie segumi parasti var aizstāt tradicionālo segumu vietējās ielās, ietvēs, piebraucamajos ceļos, autostāvvietās un velosipēdu celiņos. Uzņemot lietu uz vietas, tie samazina ūdens uzkrāšanos uz seguma un vietējos applūdumus un var mazināt vajadzību pēc parastajām drenāžas caurulēm un baseiniem. Ziemā tiem parasti vajag mazāk ceļu sāls vai atkausēšanas līdzekļu, jo ātra ūdens novadīšana no virsmas samazina sasalstošas peļķes un melno ledu. Pareizi izbūvēts caurlaidīgais segums var kalpot no 20 līdz 40 gadiem."],
+    read: ["Aģentūra raksturo caurlaidīgo segumu kā lietus ūdens kontroles līdzekli: virskārta, caur kuru ūdens iet, un drupināta akmens rezervuārs, kurā tas uzkrājas. Ja vietas slīpums pārsniedz 2 procentus, pamatnei zem seguma var būt vajadzīga terasēšana, lai lietus ūdens neplūstu cauri seguma konstrukcijai. Porainam asfaltam un caurlaidīgam betonam ir nedaudz raupjāka virsma nekā parastajiem, un tie dod transportlīdzekļiem un gājējiem labāku saķeri."],
+    limits: ["Galvenā uzturēšanas problēma ir aizsērēšana ar smalkām daļiņām, jo tā samazina ātrumu, ar kādu ūdens iet cauri segumam. Periodiska smalko nogulumu novākšana no virsmas saglabā seguma caurlaidību, un vietas ar lielu nogulumu slodzi labāk apiet. Caurlaidīgie segumi ir vājāki par parasto asfaltu un var būt nepiemēroti ceļiem ar lielu un ātru satiksmi, ārkārtīgām slodzēm un vietām, kur apiet ar bīstamām vielām vai iespējamas noplūdes. Norādījumi apraksta praksi Amerikas Savienotajās Valstīs."],
+    sources: [
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļās infrastruktūras veidi",
+        url: "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+      },
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Labākā lietus ūdens apsaimniekošanas prakse: caurlaidīgie segumi, 2021. gada decembris",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-permeable-pavements.pdf",
+      },
+    ],
+  },
+  "urban-tree-canopy": {
+    title: "Pilsētas koku vainags",
+    hook: "Koki un citi augi dzesē pilsētas gaisu ar ēnu un iztvaikošanu, un 308 pētījumu apskats parādīja, ka pilsētu meži vidēji bija par 1,6 °C vēsāki nekā pilsētas teritorijas bez zaļuma.",
+    imageAlt: "Ar ķieģeļiem bruģēta iela Savannā, Džordžijas štatā, Amerikas Savienotajās Valstīs, kur lieli koki sakļaujas vainagiem virs ceļa un met raibu ēnu uz ceļa un abās pusēs novietotajām automašīnām.",
+    caption: "Ar ķieģeļiem bruģēta iela Savannā, Džordžijas štatā, kur lieli koki sakļaujas virs ceļa.",
+    credit: "Foto: Michael Stokes, ar Wikimedia Commons starpniecību, licence «Ar autora norādi» 2.0.",
+    what: ["Koki un augi, piemēram, krūmi, krūmāji un augsti zāļaugi, pazemina virsmu un gaisa temperatūru ar ēnu un evapotranspirāciju. Evapotranspirācijā augi uzņem ūdeni ar saknēm un iztvaicē to ar lapām, un tas patērē gaisa siltumu. Dzesēšana nāk arī no apkārtējās augsnes un lapās aizturētā lietus. Amerikas Savienoto Valstu Vides aizsardzības aģentūra norāda koku un augu kā vienkāršu un efektīvu veidu, kā mazināt siltuma salas."],
+    why: ["Koki, kas apēno ēkas, samazina gaisa kondicionēšanas vajadzību, un pilsētas parki un mežsaimniecība var samazināt tuvumā esošo ēku enerģijas pieprasījumu par 10 procentiem. Augsta un blīva ceļmalas veģetācija var mazināt piesārņojumu pa vējam par aptuveni 30 procentiem. Pilsētas koki var samazināt lietus ūdens noteci, uzņemot no 15 līdz 27 procentiem gada nokrišņu. Koku sega saistīta arī ar mazāku ar karstumu saistīto nāves gadījumu skaitu: pēc vienas analīzes koku segas pieaugums par 10 procentiem nozīmētu aptuveni 50 nāves gadījumus gadā mazāk Soltleiksitijā Jūtas štatā un 3 800 mazāk Ņujorkā."],
+    read: ["Atdzišana par 1,6 °C ir vidējais rādītājs 308 pētījumos. Aģentūra ziņo, ka pilsētu daļas ar mazāku veģetāciju ir karstākas un ka vienā pētījumā šajās daļās dzīvoja vairāk iedzīvotāju ar zemākiem ienākumiem. Aģentūra uzskaita taisnīguma uzlabošanu starp koku un augu ieguvumiem."],
+    limits: ["Mazāka nāves gadījumu skaita aplēses nāk no vienas modelēšanas analīzes par Amerikas Savienoto Valstu pilsētām, tās ir Soltleiksitija un Ņujorka. Lielākā daļa procentu aģentūras formulēti kā tas, ko koki un augi var panākt, piemēram, «var samazināt» vai «aptuveni», tāpēc tie rāda iespējamo efekta apmēru."],
+    sources: [
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Koku un augu ieguvumi",
+        url: "https://www.epa.gov/heatislands/benefits-trees-and-vegetation",
+      },
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Koku un augāja izmantošana pilsētu siltuma salu mazināšanai",
+        url: "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+      },
+    ],
+  },
+  "rain-gardens-bioswales": {
+    title: "Lietusdārzi un biosvāles",
+    hook: "Lietusdārzi un biosvāles ir apstādīti iedobumi un kanāli, kas uzņem noteci no ielām un jumtiem un filtrē to caur augsni, un Amerikas Savienoto Valstu Vides aizsardzības aģentūra tos iekļauj zaļās infrastruktūras veidos.",
+    imageAlt: "Divas biosvāles pie mājām, tuvākā vēl tiek būvēta, tālākā jau ir ieaugusi.",
+    caption: "Divas biosvāles pie mājām, tuvākā vēl tiek būvēta, tālākā jau ir ieaugusi.",
+    credit: "Foto: Duk (angļu Vikipēdija), ar Wikimedia Commons starpniecību, publiskais īpašums.",
+    what: ["Bioretencijas zona ir projektēts iedobums, kas savāc lietus ūdeni no jumtiem, ietvēm un ielām. Ūdens tajā uz īsu laiku uzkrājas un tad iesūcas zemē vai aizplūst pa drenu. Lietusdārzs ir mazāks, seklāks un mazāk sarežģīts variants: apstādīts iedobums, kas savāc lietus ūdens noteci un filtrē to caur augsnes, smilts vai grants maisījumu. Biosvāles ir atvērti kanāli, kuros augi vai mulča palēnina, filtrē un attīra lietus ūdeni, kamēr tas plūst pa seklu kanālu vai tranšeju."],
+    why: ["Lietusdārzi filtrē lietus ūdeni, samazina maksimālās plūsmas lejup esošajos kanalizācijas tīklos un novērš piesārņojumu ar filtrēšanu un augu uzņemšanu. Tie der nelielām vietām blīvā pilsētas apbūvē un ietilpst autostāvvietu salās, gar ceļiem un krustojumos. Svāles ir lineāras, tāpēc labi piemērotas lietus ūdens attīrīšanai no šosejām un dzīvojamo rajonu ielām."],
+    read: ["Bioretencijas zonai parasti vajadzīga platība, kas vienāda ar 5 līdz 10 procentiem no cietā seguma platības, no kuras ūdens uz to plūst. Lietusdārzi filtrē ūdeni no nelielām un vidējām lietusgāzēm, un lielāku lietusgāžu ūdeni parasti novada garām tiem uz lielāku būvi vai lietus kanalizāciju, paredzot pārplūdes ierīci pārāk lielām plūsmām. Svāles vislabāk darbojas uz lēzeniem nogāzēm no 1 līdz 2 procentiem, jo uz stāvākām nogāzēm ūdens paātrinās un izraisa eroziju."],
+    limits: ["Lietusdārza augšējie augsnes slāņi laika gaitā var aizsērēt tur, kur nogulumu ir pārāk daudz. Bioretencija prasa apstādījumu kopšanu, piemēram, ieplūdes vietu pārbaudi pēc sezonas pirmā lietus, atkritumu savākšanu un filtra materiāla augšējā slāņa nomaiņu, ja ūdens stāv ilgāk par 48 stundām. Svālēm vajadzīga samērā liela caurlaidīgas virsmas platība, tāpēc tās var būt slikti piemērotas blīvai pilsētas apbūvei. Norādījumi apraksta praksi Amerikas Savienotajās Valstīs."],
+    sources: [
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļās infrastruktūras veidi",
+        url: "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+      },
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Labākā lietus ūdens apsaimniekošanas prakse: bioretencija (lietusdārzi), 2021. gada decembris",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-bioretention-rain-gardens.pdf",
+      },
+      {
+        label: "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Labākā lietus ūdens apsaimniekošanas prakse: zālaini grāvji, 2021. gada decembris",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-grassed-swales.pdf",
       },
     ],
   },

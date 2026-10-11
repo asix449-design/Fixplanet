@@ -1,4 +1,4 @@
-import type { CitiesDetailCopy, CitiesEncyclopediaSlug } from '../data/solutions-cities';
+import type { CitiesDetailCopy, CitiesEncyclopediaSlug, CitiesMobilitySlug } from '../data/solutions-cities';
 import type { SolutionCopy } from '../data/solutions';
 
 const brtPdf =
@@ -8,7 +8,7 @@ const walkPdf =
 const roadPdf =
   'https://documents1.worldbank.org/curated/en/099031724120560318/pdf/P1766281e0163d01218640121bea8238a86.pdf';
 
-export const grid: Record<CitiesEncyclopediaSlug, SolutionCopy> = {
+export const grid: Record<CitiesMobilitySlug, SolutionCopy> = {
   'bus-rapid-transit': {
     problemTitle: 'Autobusy stoją w tych samych korkach co samochody',
     fixTitle: 'Szybki transport autobusowy',
@@ -237,6 +237,115 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
       {
         label: 'Międzynarodowa Agencja Energetyczna: „Globalne perspektywy pojazdów elektrycznych 2026”',
         url: 'https://www.iea.org/reports/global-ev-outlook-2026',
+      },
+    ],
+  },
+  "cool-roofs": {
+    title: "Chłodne dachy",
+    hook: "Chłodny dach odbija więcej ciepła słonecznego niż zwykły, więc budynek pod nim pozostaje chłodniejszy i zużywa mniej energii na klimatyzację, podaje Agencja Ochrony Środowiska Stanów Zjednoczonych.",
+    imageAlt: "Białe schodkowe dachy domu na wybrzeżu Bermudów, zdjęcie z maja 1994 roku.",
+    caption: "Białe schodkowe dachy domu na wybrzeżu Bermudów, zdjęcie z maja 1994 roku.",
+    credit: "Zdjęcie: Acroterion, za pośrednictwem Wikimedia Commons, licencja Uznanie autorstwa na tych samych warunkach 3.0.",
+    what: ["Chłodny dach pochłania i przekazuje budynkowi mniej ciepła słonecznego niż zwykły dach. Najważniejsza jego cecha, wysoki współczynnik odbicia światła słonecznego, czyli albedo, pokazuje, jaką część światła dach odsyła z powrotem. Pomaga też wysoka emisyjność cieplna, czyli zdolność oddawania ciepła, które dach pochłonął, zwłaszcza w ciepłym i słonecznym klimacie. Materiały na chłodne dachy istnieją dla dachów płaskich i spadzistych, na przykład membrany odbijające, jasne powłoki, dachówki i gonty."],
+    why: ["W budynkach mieszkalnych bez klimatyzacji chłodne dachy mogą obniżać najwyższą temperaturę wewnątrz o 1,2 do 3,3 °C. W budynkach mieszkalnych z klimatyzacją chłodny dach może zmniejszać szczytowe zapotrzebowanie na chłodzenie o 11 do 27 procent. Chłodne dachy obniżają też temperaturę na zewnątrz budynków, co łagodzi efekt miejskiej wyspy ciepła. Jedno badanie w Wielkiej Brytanii wykazało, że chłodne dachy w całym mieście mogłyby zrównoważyć 18 procent zgonów z powodu upału związanych z efektem wyspy ciepła."],
+    read: ["Zakres od 1,2 do 3,3 °C dotyczy budynków mieszkalnych bez klimatyzacji, i zakres od 11 do 27 procent budynków mieszkalnych z klimatyzacją. Lokalne przepisy i zachęty promują ich stosowanie. W Stanach Zjednoczonych wymogi dotyczące chłodnych dachów wchodzą w skład standardów budowlanych i energetycznych lub uchwał w co najmniej 13 miastach i hrabstwach, siedmiu stanach i Dystrykcie Kolumbii, według informacji Rady ds. Oceny Chłodnych Dachów zaktualizowanych w 2022 roku."],
+    limits: ["Ponieważ chłodne dachy odbijają światło słoneczne, w zimnym klimacie mogą zwiększać zużycie energii na ogrzewanie zimą. Agencja opisuje ten efekt jako zwykle równoważony oszczędnościami na letnim chłodzeniu, i niskie zimowe słońce i krótkie dni zmniejszają go jeszcze bardziej. Chłodne dachy mogą wymagać okresowego czyszczenia, by utrzymać wysoki współczynnik odbicia, szczególnie na dachach płaskich. Właściciele budynków zyskują najwięcej, gdy poprawiają też izolację i szczelność powietrzną."],
+    sources: [
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Wykorzystanie chłodnych dachów do ograniczania miejskich wysp ciepła",
+        url: "https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands",
+      },
+    ],
+  },
+  "green-roofs": {
+    title: "Zielone dachy",
+    hook: "Zielony dach to warstwa żywych roślin na dachu, i Agencja Ochrony Środowiska Stanów Zjednoczonych podaje, że jego powierzchnia może być o około 31 °C chłodniejsza niż zwykłego dachu.",
+    imageAlt: "Zielony dach ratusza w Chicago w Stanach Zjednoczonych, widok z góry, zdjęcie z 8 lipca 2008 roku.",
+    caption: "Zielony dach ratusza w Chicago w Stanach Zjednoczonych, widok z góry, zdjęcie z 8 lipca 2008 roku.",
+    credit: "Zdjęcie: TonyTheTiger, za pośrednictwem Wikimedia Commons, licencja Uznanie autorstwa na tych samych warunkach 3.0.",
+    what: ["Zielony dach, czyli ogród na dachu, to warstwa roślinności uprawiana na dachu. Leży na barierze hydroizolacyjnej z warstwą drenażową i podłożem. Na dachach ekstensywnych rosną odporne rośliny w podłożu o głębokości od 5 do 10 centymetrów, dachy te są lekkie i po ukorzenieniu wymagają niewiele opieki. Dachy intensywne są bardziej złożone, mogą przypominać park z drzewami i wymagają mocniejszej konstrukcji oraz opieki. Zielony dach działa też jak bufor cieplny budynku: chłodzi go w ciepłą pogodę i ociepla w zimną."],
+    why: ["Zielone dachy dają cień, odbierają ciepło z powietrza i obniżają temperaturę powierzchni dachu oraz otaczającego powietrza. Powierzchnia zielonego dachu może być o około 31 °C chłodniejsza niż zwykłego dachu, i pobliskie powietrze nawet o 11 °C chłodniejsze. W porównaniu ze zwykłymi dachami zielone mogą zmniejszać obciążenie chłodnicze budynku o 70 procent i obniżać temperaturę powietrza w pomieszczeniach o 15 °C. Zmniejszają też i spowalniają spływ wód opadowych, według agencji o 60 do 100 procent."],
+    read: ["Administracja Służb Ogólnych Stanów Zjednoczonych zlicza ponad 80 budynków z zielonymi dachami o łącznej powierzchni około 20 hektarów. Wśród nich dach siedziby Straży Przybrzeżnej Stanów Zjednoczonych w Waszyngtonie, z około 5,2 hektara dachu z roślinnością, który według administracji ma wydłużyć życie membrany hydroizolacyjnej dwa lub trzy razy. Zakres spływu zależy od wzorców opadów, i zielony dach zatrzymuje więcej wody przy niewielkim deszczu niż przy ulewie."],
+    limits: ["Zielone dachy często kosztują na początku więcej niż zwykłe i wymagają konstrukcji zdolnej udźwignąć ich ciężar, warstwy drenażowej i regularnej opieki, takiej jak nawadnianie, odchwaszczanie i dosadzanie roślin. Część kosztów właściciele mogą odzyskać dzięki niższym rachunkom za energię, niższym opłatom za wody opadowe i dłuższemu życiu dachu. Liczby budynków i powierzchnie dotyczą budynków rządu federalnego Stanów Zjednoczonych."],
+    sources: [
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Wykorzystanie zielonych dachów do ograniczania miejskich wysp ciepła",
+        url: "https://www.epa.gov/heatislands/using-green-roofs-reduce-heat-islands",
+      },
+      {
+        label: "Administracja Służb Ogólnych Stanów Zjednoczonych: Przykłady dachów z roślinnością",
+        url: "https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/water/planted-roof/case-studies",
+      },
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Najlepsza praktyka zarządzania wodami opadowymi: zielone dachy, grudzień 2021",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-green-roofs.pdf",
+      },
+    ],
+  },
+  "permeable-pavement": {
+    title: "Nawierzchnia przepuszczalna",
+    hook: "Nawierzchnia przepuszczalna przepuszcza deszcz przez powierzchnię do warstw gruntu i żwiru pod spodem, i Agencja Ochrony Środowiska Stanów Zjednoczonych zalicza ją do rodzajów zielonej infrastruktury.",
+    imageAlt: "Pokaz, w którym woda wylana na płytę porowatej nawierzchni przesiąka przez nią, zdjęcie z 7 października 2012 roku.",
+    caption: "Pokaz, w którym woda wylana na płytę porowatej nawierzchni przesiąka przez nią, zdjęcie z 7 października 2012 roku.",
+    credit: "Zdjęcie: Lombroso, za pośrednictwem Wikimedia Commons, licencja Uznanie autorstwa na tych samych warunkach 3.0.",
+    what: ["Nawierzchnie przepuszczalne magazynują lub wsiąkają wodę deszczową tam, gdzie spadła. Warstwą wierzchnią może być beton przepuszczalny, asfalt porowaty lub przepuszczalna betonowa kostka zazębiająca się. Woda opadowa wsiąka na powierzchni i gromadzi się w warstwach tłucznia i gruntu poniżej. Następnie woda albo wsiąka w ziemię, albo odpływa przez drenaż. Asfalt porowaty i beton przepuszczalny to odmiany zwykłego asfaltu i betonu z mniejszą ilością drobnych cząstek, i między kostkami zostawia się małe szczeliny wypełnione drobnym kruszywem."],
+    why: ["Nawierzchnie przepuszczalne mogą na ogół zastępować tradycyjną nawierzchnię na drogach lokalnych, chodnikach, podjazdach, parkingach i ścieżkach rowerowych. Przyjmując deszcz na miejscu, zmniejszają stawanie wody na nawierzchni i lokalne podtopienia oraz mogą ograniczać potrzebę stosowania zwykłych rur drenażowych i zbiorników. Zimą zazwyczaj potrzebują mniej soli drogowej i środków odladzających, ponieważ szybkie odprowadzanie wody z powierzchni zmniejsza zamarzające kałuże i gołoledź. Przy właściwym wykonaniu nawierzchnia przepuszczalna może służyć od 20 do 40 lat."],
+    read: ["Agencja opisuje nawierzchnię przepuszczalną jako środek kontroli wód opadowych: warstwa wierzchnia, przez którą przechodzi woda, i zbiornik z tłucznia, w którym jest ona magazynowana. Gdy spadek terenu przekracza 2 procent, podbudowa pod nawierzchnią może wymagać tarasowania, aby zapobiec przepływowi wody opadowej przez konstrukcję nawierzchni. Asfalt porowaty i beton przepuszczalny mają nieco bardziej szorstką powierzchnię niż zwykłe i dają pojazdom oraz pieszym lepszą przyczepność."],
+    limits: ["Głównym problemem utrzymania jest zatykanie drobnymi cząstkami, ponieważ obniża ono szybkość, z jaką woda przechodzi przez nawierzchnię. Okresowe usuwanie drobnych osadów z powierzchni utrzymuje przepuszczalność nawierzchni, i miejsc z dużym ładunkiem osadów lepiej unikać. Nawierzchnie przepuszczalne są słabsze od zwykłego asfaltu i mogą być nieodpowiednie dla dróg o dużym i szybkim ruchu, ekstremalnych obciążeń oraz miejsc, w których obchodzi się z substancjami niebezpiecznymi lub możliwe są wycieki. Wytyczne opisują praktykę w Stanach Zjednoczonych."],
+    sources: [
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Rodzaje zielonej infrastruktury",
+        url: "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+      },
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Najlepsza praktyka zarządzania wodami opadowymi: nawierzchnie przepuszczalne, grudzień 2021",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-permeable-pavements.pdf",
+      },
+    ],
+  },
+  "urban-tree-canopy": {
+    title: "Miejski parasol drzew",
+    hook: "Drzewa i inna roślinność chłodzą miejskie powietrze cieniem i parowaniem, i przegląd 308 badań wykazał, że lasy miejskie były średnio o 1,6 °C chłodniejsze niż obszary miejskie bez zieleni.",
+    imageAlt: "Ulica wybrukowana cegłą w Savannah w stanie Georgia, w Stanach Zjednoczonych, gdzie duże drzewa schodzą się koronami nad drogą i rzucają plamisty cień na jezdnię oraz zaparkowane samochody po obu stronach.",
+    caption: "Ulica wybrukowana cegłą w Savannah w stanie Georgia, gdzie duże drzewa schodzą się nad drogą.",
+    credit: "Zdjęcie: Michael Stokes, za pośrednictwem Wikimedia Commons, licencja Uznanie autorstwa 2.0.",
+    what: ["Drzewa i roślinność, taka jak krzewy, krzewinki i wysokie trawy, obniżają temperaturę powierzchni i powietrza cieniem i ewapotranspiracją. W ewapotranspiracji rośliny pobierają wodę korzeniami i odparowują ją liśćmi, co zużywa ciepło z powietrza. Chłodzenie pochodzi też z otaczającej gleby i z deszczu zatrzymanego na liściach. Agencja Ochrony Środowiska Stanów Zjednoczonych przedstawia drzewa i roślinność jako prosty i skuteczny sposób ograniczania wysp ciepła."],
+    why: ["Drzewa zacieniające budynki zmniejszają zapotrzebowanie na klimatyzację, i parki miejskie i leśnictwo mogą zmniejszać zapotrzebowanie pobliskich budynków na energię o 10 procent. Wysoka i gęsta roślinność przydrożna może zmniejszać zanieczyszczenia po zawietrznej stronie o około 30 procent. Drzewa miejskie mogą ograniczać spływ wód opadowych, pochłaniając od 15 do 27 procent rocznych opadów. Pokrywa drzew wiąże się też z mniejszą liczbą zgonów z powodu upału: według jednej analizy wzrost pokrycia drzewami o 10 procent oznaczałby około 50 zgonów mniej rocznie w Salt Lake City w stanie Utah i 3 800 mniej w Nowym Jorku."],
+    read: ["Ochłodzenie o 1,6 °C jest średnią z 308 badań. Agencja podaje, że części miast z mniejszą ilością roślinności są gorętsze, i w jednym badaniu mieszkało w nich więcej osób o niższych dochodach. Agencja zalicza poprawę równości do korzyści z drzew i roślinności."],
+    limits: ["Szacunki mniejszej liczby zgonów pochodzą z jednej analizy modelowej dla miast w Stanach Zjednoczonych, czyli Salt Lake City i Nowy Jork. Większość procentów agencja sformułowała jako to, co drzewa i roślinność mogą osiągnąć, na przykład „może zmniejszać” lub „około”, więc pokazują one możliwą wielkość efektu."],
+    sources: [
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Korzyści z drzew i roślinności",
+        url: "https://www.epa.gov/heatislands/benefits-trees-and-vegetation",
+      },
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Wykorzystanie drzew i roślinności do ograniczania miejskich wysp ciepła",
+        url: "https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands",
+      },
+    ],
+  },
+  "rain-gardens-bioswales": {
+    title: "Ogrody deszczowe i bioswale",
+    hook: "Ogrody deszczowe i bioswale to obsadzone niecki i kanały, które przyjmują spływ z ulic i dachów i filtrują go przez glebę, i Agencja Ochrony Środowiska Stanów Zjednoczonych zalicza je do rodzajów zielonej infrastruktury.",
+    imageAlt: "Dwa bioswale obok domów, bliższy jeszcze w budowie, dalszy już zadomowiony.",
+    caption: "Dwa bioswale obok domów, bliższy jeszcze w budowie, dalszy już zadomowiony.",
+    credit: "Zdjęcie: Duk (angielska Wikipedia), za pośrednictwem Wikimedia Commons, domena publiczna.",
+    what: ["Obszar bioretencji to zaprojektowane zagłębienie, które zbiera wodę deszczową z dachów, chodników i ulic. Woda stoi w nim krótko, po czym wsiąka w ziemię lub odpływa przez drenaż. Ogród deszczowy to mniejsza, płytsza i mniej rozbudowana odmiana: obsadzone zagłębienie, które zbiera spływ wód opadowych i filtruje go przez mieszaninę gleby, piasku lub żwiru. Bioswale to otwarte kanały, w których roślinność lub ściółka spowalnia, filtruje i oczyszcza wodę opadową, gdy płynie płytkim kanałem lub rowem."],
+    why: ["Ogrody deszczowe filtrują wody opadowe, zmniejszają szczytowe przepływy w sieciach kanalizacyjnych poniżej i usuwają zanieczyszczenia przez filtrację i pobieranie przez rośliny. Pasują do małych terenów w gęstej zabudowie miejskiej i mieszczą się na wyspach parkingowych, wzdłuż dróg i na skrzyżowaniach. Rowy są liniowe, więc dobrze nadają się do oczyszczania wód opadowych z autostrad i dróg osiedlowych."],
+    read: ["Obszar bioretencji zwykle potrzebuje powierzchni równej od 5 do 10 procent powierzchni utwardzonej, z której spływa do niego woda. Ogrody deszczowe filtrują wodę z małych i średnich deszczy, i wodę z większych zwykle kieruje się obok nich do większego urządzenia lub do kanalizacji deszczowej, przewidując przelew dla zbyt dużych przepływów. Rowy działają najlepiej na łagodnych spadkach od 1 do 2 procent, ponieważ na stromszych woda przyspiesza i powoduje erozję."],
+    limits: ["Wierzchnie warstwy gleby w ogrodzie deszczowym mogą z czasem się zatykać tam, gdzie jest zbyt dużo osadów. Bioretencja wymaga pielęgnacji roślin, na przykład kontroli wlotów po pierwszym deszczu sezonu, usuwania śmieci i wymiany górnej warstwy materiału filtrującego, jeśli woda stoi dłużej niż 48 godzin. Rowy potrzebują stosunkowo dużej powierzchni przepuszczalnej, więc mogą być słabo dopasowane do gęstej zabudowy miejskiej. Wytyczne opisują praktykę w Stanach Zjednoczonych."],
+    sources: [
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Rodzaje zielonej infrastruktury",
+        url: "https://www.epa.gov/green-infrastructure/types-green-infrastructure",
+      },
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Najlepsza praktyka zarządzania wodami opadowymi: bioretencja (ogrody deszczowe), grudzień 2021",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-bioretention-rain-gardens.pdf",
+      },
+      {
+        label: "Agencja Ochrony Środowiska Stanów Zjednoczonych: Najlepsza praktyka zarządzania wodami opadowymi: rowy trawiaste, grudzień 2021",
+        url: "https://www.epa.gov/system/files/documents/2021-11/bmp-grassed-swales.pdf",
       },
     ],
   },

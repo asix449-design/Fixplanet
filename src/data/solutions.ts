@@ -242,7 +242,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Cool roofs',
+        'United States Environmental Protection Agency, cool roofs',
         'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
       ),
     ],
@@ -252,8 +252,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Permeable pavement',
-        'https://www.epa.gov/soakuptherain/soak-rain-permeable-pavement',
+        'United States Environmental Protection Agency, types of green infrastructure',
+        'https://www.epa.gov/green-infrastructure/types-green-infrastructure',
       ),
     ],
   },
@@ -262,8 +262,8 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Trees and vegetation',
-        'https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands',
+        'United States Environmental Protection Agency, trees and vegetation',
+        'https://www.epa.gov/heatislands/benefits-trees-and-vegetation',
       ),
     ],
   },
@@ -702,7 +702,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'GSA — planted roof case studies',
+        'United States General Services Administration, planted roof case studies',
         'https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/water/planted-roof/case-studies',
       ),
     ],
@@ -710,7 +710,12 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'rain-gardens-bioswales',
     tag: 'cities',
-    sources: [cite('US EPA — types of green infrastructure', 'https://www.epa.gov/green-infrastructure/types-green-infrastructure')],
+    sources: [
+      cite(
+        'United States Environmental Protection Agency, types of green infrastructure',
+        'https://www.epa.gov/green-infrastructure/types-green-infrastructure',
+      ),
+    ],
   },
   {
     slug: 'cool-pavements',

@@ -1,6 +1,6 @@
 import type { PrimarySource } from './sources';
 
-export const citiesEncyclopediaSlugs = [
+export const citiesMobilitySlugs = [
   'bus-rapid-transit',
   'walking-and-cycling-networks',
   'congestion-charging',
@@ -8,6 +8,21 @@ export const citiesEncyclopediaSlugs = [
   'electric-buses',
 ] as const;
 
+export const citiesPhotoSlugs = [
+  'cool-roofs',
+  'green-roofs',
+  'permeable-pavement',
+  'urban-tree-canopy',
+  'rain-gardens-bioswales',
+] as const;
+
+export const citiesEncyclopediaSlugs = [
+  ...citiesMobilitySlugs,
+  ...citiesPhotoSlugs,
+] as const;
+
+export type CitiesMobilitySlug = (typeof citiesMobilitySlugs)[number];
+export type CitiesPhotoSlug = (typeof citiesPhotoSlugs)[number];
 export type CitiesEncyclopediaSlug = (typeof citiesEncyclopediaSlugs)[number];
 
 export type CitiesImage = {
@@ -15,6 +30,8 @@ export type CitiesImage = {
   license: string;
   licenseUrl: string;
   sourceUrl: string;
+  width?: number;
+  height?: number;
 };
 
 export type CitiesDetailCopy = {
@@ -50,8 +67,15 @@ export const citiesLegendColors: Partial<Record<CitiesEncyclopediaSlug, readonly
   'electric-buses': ['#0b3a5b', '#1a7a6d', '#c47b2b', '#8c3a4b', '#3d6b9a', '#6b5b4b'],
 };
 
-function img(file: string, license: string, licenseUrl: string, sourceUrl: string): CitiesImage {
-  return { file, license, licenseUrl, sourceUrl };
+function img(
+  file: string,
+  license: string,
+  licenseUrl: string,
+  sourceUrl: string,
+  width?: number,
+  height?: number,
+): CitiesImage {
+  return { file, license, licenseUrl, sourceUrl, width, height };
 }
 
 export const citiesEncyclopediaMeta: { slug: CitiesEncyclopediaSlug; image: CitiesImage }[] = [
@@ -98,6 +122,61 @@ export const citiesEncyclopediaMeta: { slug: CitiesEncyclopediaSlug; image: Citi
       'CC BY 4.0',
       'https://creativecommons.org/licenses/by/4.0/',
       'https://www.iea.org/data-and-statistics/charts/electric-bus-sales-by-region-2020-2025',
+    ),
+  },
+  {
+    slug: 'cool-roofs',
+    image: img(
+      'cool-roofs-preview.jpg',
+      'CC BY-SA 3.0',
+      'https://creativecommons.org/licenses/by-sa/3.0/',
+      'https://commons.wikimedia.org/wiki/File:Bermuda_roof.jpg',
+      1280,
+      804,
+    ),
+  },
+  {
+    slug: 'green-roofs',
+    image: img(
+      'green-roofs-preview.jpg',
+      'CC BY-SA 3.0',
+      'https://creativecommons.org/licenses/by-sa/3.0/',
+      'https://commons.wikimedia.org/wiki/File:20080708_Chicago_City_Hall_Green_Roof.JPG',
+      1280,
+      960,
+    ),
+  },
+  {
+    slug: 'permeable-pavement',
+    image: img(
+      'permeable-pavement-preview.jpg',
+      'CC BY-SA 3.0',
+      'https://creativecommons.org/licenses/by-sa/3.0/',
+      'https://commons.wikimedia.org/wiki/File:Demonstration_experiment_of_the_permeable_paving_(2012.10.07).jpg',
+      1280,
+      960,
+    ),
+  },
+  {
+    slug: 'urban-tree-canopy',
+    image: img(
+      'urban-tree-canopy-preview.jpg',
+      'CC BY 2.0',
+      'https://creativecommons.org/licenses/by/2.0/',
+      'https://commons.wikimedia.org/wiki/File:Tree_shaded_brick_street_in_Savannah_Georgia_USA,_Feb_2018.jpg',
+      1280,
+      851,
+    ),
+  },
+  {
+    slug: 'rain-gardens-bioswales',
+    image: img(
+      'rain-gardens-bioswales-preview.jpg',
+      'Public domain',
+      'https://commons.wikimedia.org/wiki/File:Bioswale.jpg',
+      'https://commons.wikimedia.org/wiki/File:Bioswale.jpg',
+      1280,
+      751,
     ),
   },
 ];
