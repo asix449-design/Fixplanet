@@ -93,7 +93,8 @@ export function getForestStats(locale: Locale): ForestStat[] {
   const fallback = page.en.stats;
   return forestStats.map((meta) => {
     const fields = copy[meta.id] ?? fallback[meta.id];
-    return { ...meta, ...fields };
+    const { value: localeValue, ...rest } = fields;
+    return { ...meta, ...rest, value: localeValue ?? meta.value };
   });
 }
 

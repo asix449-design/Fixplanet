@@ -19,6 +19,11 @@ export const forestNumberSlugs = [
   'net-forest-loss',
   'tropical-primary-loss',
   'trees-living',
+  'deforestation-since-1990',
+  'gross-deforestation',
+  'tropical-primary-loss-2024',
+  'trees-since-civilization',
+  'intact-forest-landscapes',
 ] as const;
 
 export const forestAtlasSlugs = [...forestAtlasMapSlugs, ...forestNumberSlugs] as const;
@@ -481,6 +486,133 @@ export const forestAtlasMeta: ForestAtlasMeta[] = [
       cite(
         'Wikimedia Commons: Amazon Manaus forest (photo)',
         'https://commons.wikimedia.org/wiki/File:Amazon_Manaus_forest.jpg',
+      ),
+    ],
+  },
+  {
+    slug: 'deforestation-since-1990',
+    preview: 'deforestation-since-1990-preview.jpg',
+    photo: true,
+    imageWidth: 1280,
+    imageHeight: 853,
+    sourceOrg: 'Bruno Kelly, Amazônia Real',
+    sourceLabel:
+      'Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, main report (2025)',
+    sourceUrl: 'https://www.fao.org/3/cd6709en/cd6709en.pdf',
+    usesCoastline: false,
+    sources: [
+      cite(
+        'Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)',
+        'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+      ),
+      cite(
+        'Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, main report (2025)',
+        'https://www.fao.org/3/cd6709en/cd6709en.pdf',
+      ),
+      cite(
+        'Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, assessment page (2025)',
+        'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+      ),
+    ],
+  },
+  {
+    slug: 'gross-deforestation',
+    preview: 'gross-deforestation-preview.jpg',
+    photo: true,
+    imageWidth: 1037,
+    imageHeight: 1280,
+    sourceOrg: 'National Park Service of the United States',
+    sourceLabel:
+      'Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)',
+    sourceUrl:
+      'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+    usesCoastline: false,
+    sources: [
+      cite(
+        'Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)',
+        'https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en',
+      ),
+      cite(
+        'Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, main report (2025)',
+        'https://www.fao.org/3/cd6709en/cd6709en.pdf',
+      ),
+      cite(
+        'Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, assessment page (2025)',
+        'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en',
+      ),
+    ],
+  },
+  {
+    slug: 'tropical-primary-loss-2024',
+    preview: 'tropical-primary-loss-2024-preview.jpg',
+    photo: true,
+    imageWidth: 1280,
+    imageHeight: 853,
+    sourceOrg: 'Biodiego88',
+    sourceLabel:
+      'World Resources Institute, Global Forest Review: How much forest was lost in 2024? (21 May 2025)',
+    sourceUrl: 'https://gfr.wri.org/global-tree-cover-loss-data-2024',
+    usesCoastline: false,
+    sources: [
+      cite(
+        'World Resources Institute: RELEASE: Global Forest Loss Shatters Records in 2024, Fueled by Massive Fires (21 May 2025)',
+        'https://www.wri.org/news/release-global-forest-loss-shatters-records-2024-fueled-massive-fires',
+      ),
+      cite(
+        'World Resources Institute, Global Forest Review: How much forest was lost in 2024? (21 May 2025)',
+        'https://gfr.wri.org/global-tree-cover-loss-data-2024',
+      ),
+    ],
+  },
+  {
+    slug: 'trees-since-civilization',
+    preview: 'trees-since-civilization-preview.jpg',
+    photo: true,
+    imageWidth: 1280,
+    imageHeight: 853,
+    sourceOrg: 'Vyacheslav Argenberg',
+    sourceLabel:
+      'Nature: Mapping tree density at a global scale, T. W. Crowther and others (2 September 2015)',
+    sourceUrl: 'https://www.nature.com/articles/nature14967',
+    usesCoastline: false,
+    sources: [
+      cite(
+        'Nature: Mapping tree density at a global scale, T. W. Crowther and others (2 September 2015)',
+        'https://www.nature.com/articles/nature14967',
+      ),
+      cite(
+        'Scientific Data: Spatially-explicit models of global tree density, H. B. Glick and others (16 August 2016)',
+        'https://www.nature.com/articles/sdata201669',
+      ),
+      cite(
+        'Yale University EliScholar: Global tree density map, dataset (2015)',
+        'https://elischolar.library.yale.edu/yale_fes_data/1/',
+      ),
+    ],
+  },
+  {
+    slug: 'intact-forest-landscapes',
+    preview: 'intact-forest-landscapes-preview.jpg',
+    photo: true,
+    imageWidth: 1280,
+    imageHeight: 786,
+    sourceOrg: 'lubasi',
+    sourceLabel:
+      'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, from 2000 to 2025, key findings (2025)',
+    sourceUrl: 'https://intactforests.org/world.map.html',
+    usesCoastline: false,
+    sources: [
+      cite(
+        'Intact Forest Landscapes mapping team: World’s Intact Forest Landscapes, from 2000 to 2025, key findings (2025)',
+        'https://intactforests.org/world.map.html',
+      ),
+      cite(
+        'Intact Forest Landscapes mapping team: Intact Forest Landscapes concept and definition (2025)',
+        'https://intactforests.org/concept.html',
+      ),
+      cite(
+        'Intact Forest Landscapes mapping team: Intact Forest Landscapes data download (2025)',
+        'https://intactforests.org/data.ifl.html',
       ),
     ],
   },
