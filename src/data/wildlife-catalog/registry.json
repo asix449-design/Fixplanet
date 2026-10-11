@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "hub": {
+    "labels": {
+      "en": {
+        "name": "Wildlife"
+      },
+      "ru": {
+        "name": "Природа"
+      },
+      "pl": {
+        "name": "Przyroda"
+      },
+      "lv": {
+        "name": "Savvaļa"
+      }
+    }
+  },
+  "scaleLabels": {
+    "en": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "subgroup": "{group} {i}",
+      "subgroupLong": "{group}, part {i}"
+    },
+    "ru": {
+      "small": "Мелкие",
+      "medium": "Средние",
+      "large": "Крупные",
+      "subgroup": "{group} {i}",
+      "subgroupLong": "{group}, часть {i}"
+    },
+    "pl": {
+      "small": "Małe",
+      "medium": "Średnie",
+      "large": "Duże",
+      "subgroup": "{group} {i}",
+      "subgroupLong": "{group}, część {i}"
+    },
+    "lv": {
+      "small": "Mazie",
+      "medium": "Vidējie",
+      "large": "Lielie",
+      "subgroup": "{group} {i}",
+      "subgroupLong": "{group}, {i}. daļa"
+    }
+  },
+  "options": {
+    "breeds": "variants",
+    "flagsOnExtinct": [
+      "EW",
+      "PE"
+    ]
+  },
+  "shelves": [
+    {
+      "id": "surviving",
+      "kind": "status",
+      "order": 1,
+      "icon": "paw",
+      "statusRequired": true,
+      "cssStatus": "surviving",
+      "labels": {
+        "en": {
+          "name": "Surviving",
+          "status": "Surviving",
+          "tile": "Still here, with ranges or numbers that shifted after people spread.",
+          "lead": "Still here, with ranges or numbers that shifted after people spread: hunting, farms, later recovery, or a boom. The dates differ by continent.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Выжившие",
+          "status": "Выживший",
+          "tile": "Всё ещё здесь: ареал или численность сдвинулись после расселения людей.",
+          "lead": "Всё ещё здесь, с ареалом или численностью, которые сдвинулись после расселения людей: охота, пашня, позднее восстановление или вспышка. Даты на континентах разные.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Przetrwałe",
+          "status": "Przetrwały",
+          "tile": "Wciąż tu są: zasięg lub liczebność przesunęły się po rozprzestrzenieniu ludzi.",
+          "lead": "Wciąż tu są, z zasięgiem lub liczebnością, które przesunęły się po rozprzestrzenieniu ludzi: polowania, uprawa, późniejsza odbudowa albo wzrost. Daty różnią się kontynentami.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Izdzīvojušie",
+          "status": "Izdzīvojis",
+          "tile": "Joprojām šeit: areāls vai skaits pārbīdījās pēc cilvēku izplatīšanās.",
+          "lead": "Joprojām šeit, ar areālu vai skaitu, kas pārbīdījās pēc cilvēku izplatīšanās: medības, tīrumi, vēlāka atjaunošanās vai uzplaukums. Datumi pa kontinentiem atšķiras.",
+          "back": "Savvaļa"
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "m",
+        "decimals": 1,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 1.2
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 2
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      }
+    },
+    {
+      "id": "endangered",
+      "kind": "status",
+      "order": 2,
+      "icon": "alert",
+      "statusRequired": true,
+      "cssStatus": "endangered",
+      "labels": {
+        "en": {
+          "name": "Endangered",
+          "status": "Endangered",
+          "tile": "Species whose numbers are now low enough that they may disappear.",
+          "lead": "Threatened now, mainly because of people: habitat loss, hunting, bycatch, and a climate we have changed.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Под угрозой",
+          "status": "Под угрозой",
+          "tile": "Виды, чья численность сейчас так мала, что они могут исчезнуть.",
+          "lead": "Под угрозой сейчас, главным образом из-за людей: потеря мест, охота, прилов и климат, который мы изменили.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Zagrożone",
+          "status": "Zagrożony",
+          "tile": "Gatunki, których liczebność jest dziś tak niska, że mogą zniknąć.",
+          "lead": "Zagrożone teraz, głównie przez ludzi: utrata siedlisk, polowania, przyłów i klimat, który zmieniliśmy.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Apdraudētie",
+          "status": "Apdraudēts",
+          "tile": "Sugas, kuru skaits tagad ir tik mazs, ka tās var izzust.",
+          "lead": "Apdraudēti tagad, galvenokārt cilvēku dēļ: dzīvotņu zudums, medības, piezveja un klimats, ko esam mainījuši.",
+          "back": "Savvaļa"
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "m",
+        "decimals": 1,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 0.6
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 2
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      }
+    },
+    {
+      "id": "extinct",
+      "kind": "status",
+      "order": 3,
+      "icon": "gone",
+      "statusRequired": true,
+      "cssStatus": "extinct",
+      "labels": {
+        "en": {
+          "name": "Extinct",
+          "status": "Extinct",
+          "tile": "Species with no living animals left.",
+          "lead": "Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Вымершие",
+          "status": "Вымерший",
+          "tile": "Виды, у которых не осталось живых животных.",
+          "lead": "Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Wymarłe",
+          "status": "Wymarły",
+          "tile": "Gatunki, po których nie zostało żadnych żywych zwierząt.",
+          "lead": "Zniknęły. Większość kart ma jasną przyczynę ludzką. Przy kilku przedstawicielach megafauny późnego plejstocenu klimat jest drugim, uczciwie nazwanym czynnikiem.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Izmirušie",
+          "status": "Izmiris",
+          "tile": "Sugas, kurām vairs nav neviena dzīva dzīvnieka.",
+          "lead": "Izzuduši. Lielākā daļa karšu ir skaidri cilvēku izraisītas. Dažiem vēlā pleistocēna megafaunas pārstāvjiem klimats ir otrs, godīgi nosaukts cēlonis.",
+          "back": "Savvaļa"
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "m",
+        "decimals": 1,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 0.4
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 1.5
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      }
+    },
+    {
+      "id": "homo-sapiens",
+      "kind": "feature",
+      "order": 4,
+      "icon": "human",
+      "cards": false,
+      "labels": {
+        "en": {
+          "name": "Homo sapiens",
+          "status": "Homo sapiens",
+          "tile": "Origin in Africa, numbers today, and the large mammals that vanished after people first arrived.",
+          "lead": "The journey — routes, dates, and drivers — is told under Migration. This shelf keeps the species frame: origin, numbers, and what vanished after first arrival.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Homo sapiens",
+          "status": "Homo sapiens",
+          "tile": "Происхождение в Африке, численность сегодня и крупные млекопитающие, исчезнувшие после первого прихода людей.",
+          "lead": "Путь — маршруты, даты и причины — рассказан в разделе «Миграция». Эта полка остаётся рамкой вида: происхождение, численность и то, что исчезло после первого прихода.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Homo sapiens",
+          "status": "Homo sapiens",
+          "tile": "Pochodzenie w Afryce, liczebność dziś i duże ssaki, które zniknęły po pierwszym przybyciu ludzi.",
+          "lead": "Droga — trasy, daty i przyczyny — jest w dziale Migracja. Ta półka zostaje ramą gatunku: pochodzenie, liczebność i to, co zniknęło po pierwszym przybyciu.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Homo sapiens",
+          "status": "Homo sapiens",
+          "tile": "Izcelsme Āfrikā, skaits šodien un lielie zīdītāji, kas izzuda pēc cilvēku pirmās ierašanās.",
+          "lead": "Ceļš — maršruti, datumi un iemesli — ir sadaļā Migrācija. Šis plaukts paliek sugas rāmis: izcelsme, skaits un tas, kas izzuda pēc pirmās ierašanās.",
+          "back": "Savvaļa"
+        }
+      }
+    },
+    {
+      "id": "insects",
+      "kind": "group",
+      "order": 5,
+      "icon": "insect",
+      "cssStatus": "insects",
+      "match": {
+        "groups": [
+          "insect"
+        ]
+      },
+      "labels": {
+        "en": {
+          "name": "Insects",
+          "status": "Insects",
+          "tile": "The six-legged majority: bees, beetles, and the rest of insect life.",
+          "lead": "Insects are most of animal life. This shelf is eleven named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Насекомые",
+          "status": "Насекомые",
+          "tile": "Шестиногие: пчёлы, жуки и остальная насекомая жизнь.",
+          "lead": "Насекомые — большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Owady",
+          "status": "Owady",
+          "tile": "Sześcionogie: pszczoły, chrząszcze i reszta owadziego życia.",
+          "lead": "Owady to większość życia zwierzęcego. Ta półka to jedenaście nazwanych przypadków: straszyk uznany kiedyś za wymarły, największy motyl świata, wędrowiec, którego status zmienił model, dwa trzmiele, grabarz, dwa europejskie chrząszcze martwego drewna, ważka wapiennych mokradeł, trzyszcz słonych mokradeł i wetapunga na wyspach bez drapieżników.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Kukaiņi",
+          "status": "Kukaiņi",
+          "tile": "Seškāji: bites, vaboles un pārējā kukaiņu dzīve.",
+          "lead": "Kukaiņi ir lielākā daļa dzīvnieku dzīves. Šis plaukts ir vienpadsmit nosaukti gadījumi: kociņš, ko jau uzskatīja par izmirstu, pasaulē lielākais tauriņš, migrents, kura statusu mainīja modelis, divas kamenes, maitas vabole, divas Eiropas mirušās koksnes vaboles, kaļķaino avoksnāju spāre, sāļo mitrāju smilšvabole un vetapunga plēsēju brīvās salās.",
+          "back": "Savvaļa"
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "mm",
+        "decimals": 0,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 0.03
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 0.08
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      }
+    },
+    {
+      "id": "domesticates",
+      "kind": "group",
+      "order": 6,
+      "icon": "horse",
+      "cssStatus": "domesticates",
+      "statusDisplay": "none",
+      "match": {
+        "domesticated": true
+      },
+      "labels": {
+        "en": {
+          "name": "Domesticates",
+          "status": "Domesticates",
+          "tile": "Animals people keep: livestock, companions, and working species.",
+          "lead": "Animals people keep — livestock, companions, and working species. The Food and Agriculture Organization of the United Nations tracks breeds worldwide in its Domestic Animal Diversity Information System. Also here: the goat, kept for meat, milk, hides and hair; the cat, kept as a companion and to control pests; the donkey, which carries loads and people; the duck, raised for meat, eggs and feathers; and the rabbit, raised for meat, fur and wool.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Доместикаты",
+          "status": "Доместикаты",
+          "tile": "Животные, которых держат люди: скот, компаньоны и рабочие виды.",
+          "lead": "Животные, которых держат люди: скот, компаньоны и рабочие виды. Продовольственная и сельскохозяйственная организация ООН ведёт учёт пород по всему миру в информационной системе по разнообразию домашних животных. Здесь также: коза, которую держат ради мяса, молока, шкур и шерсти; кошка, домашний компаньон и защита от вредителей; осёл, который перевозит грузы и людей; утка, которую разводят ради мяса, яиц и пера; и кролик, которого разводят ради мяса, меха и шерсти.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Udomowione",
+          "status": "Udomowione",
+          "tile": "Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe.",
+          "lead": "Zwierzęta, które trzymają ludzie: inwentarz, towarzysze i gatunki użytkowe. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa śledzi rasy na świecie w Systemie Informacji o Różnorodności Zwierząt Domowych. Znajdziesz tu także kozę, hodowaną dla mięsa, mleka, skór i włosia; kota, domowego towarzysza i obrońcę przed szkodnikami; osła, który nosi ładunki i ludzi; kaczkę, hodowaną dla mięsa, jaj i pierza; oraz królika, hodowanego dla mięsa, futra i wełny.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Pieradinātie",
+          "status": "Pieradinātie",
+          "tile": "Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas.",
+          "lead": "Dzīvnieki, ko tur cilvēki: mājlopi, pavadoņi un darba sugas. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija uzskaita šķirnes pasaulē Mājas dzīvnieku daudzveidības informācijas sistēmā. Šeit arī kaza, ko tur gaļai, pienam, ādām un vilnai; kaķis, mājas pavadonis un kaitēkļu apkarotājs; ēzelis, kas nes kravas un cilvēkus; pīle, ko audzē gaļai, olām un spalvām; un trusis, ko audzē gaļai, kažokādām un vilnai.",
+          "back": "Savvaļa"
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "m",
+        "decimals": 1,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 0.6
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 1.3
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      },
+      "shelfSource": {
+        "url": "https://www.fao.org/dad-is/en/",
+        "label": {
+          "en": "Food and Agriculture Organization of the United Nations — Domestic Animal Diversity Information System",
+          "ru": "Продовольственная и сельскохозяйственная организация ООН — информационная система по разнообразию домашних животных",
+          "pl": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa — System Informacji o Różnorodności Zwierząt Domowych",
+          "lv": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija — Mājas dzīvnieku daudzveidības informācijas sistēma"
+        }
+      }
+    },
+    {
+      "id": "birds",
+      "kind": "group",
+      "order": 7,
+      "icon": "bird",
+      "cssStatus": "birds",
+      "headings": "birds",
+      "match": {
+        "groups": [
+          "bird"
+        ]
+      },
+      "labels": {
+        "en": {
+          "name": "Birds",
+          "status": "Birds",
+          "tile": "Living birds of coasts, skies and recovery programmes, from condors and cranes to penguins, puffins and albatrosses.",
+          "lead": "Five living birds and what has happened to their numbers: the California condor and the whooping crane of North America, the Atlantic puffin of the cold North Atlantic, the African penguin of the coasts of southern Africa and the wandering albatross of the Southern Ocean.",
+          "back": "Wildlife"
+        },
+        "ru": {
+          "name": "Птицы",
+          "status": "Птицы",
+          "tile": "Живые птицы побережий, неба и программ восстановления: от кондоров и журавлей до пингвинов, тупиков и альбатросов.",
+          "lead": "Пять живых птиц и то, что происходит с их численностью: калифорнийский кондор и американский журавль Северной Америки, атлантический тупик холодной северной Атлантики, африканский пингвин побережий юга Африки и странствующий альбатрос Южного океана.",
+          "back": "Природа"
+        },
+        "pl": {
+          "name": "Ptaki",
+          "status": "Ptaki",
+          "tile": "Żywe ptaki wybrzeży, nieba i programów odbudowy: od kondorów i żurawi po pingwiny, maskonury i albatrosy.",
+          "lead": "Pięć żywych ptaków i to, co dzieje się z ich liczebnością: kondor kalifornijski i żuraw krzykliwy z Ameryki Północnej, maskonur zwyczajny z zimnego północnego Atlantyku, pingwin przylądkowy z wybrzeży południa Afryki i albatros wędrowny z Oceanu Południowego.",
+          "back": "Przyroda"
+        },
+        "lv": {
+          "name": "Putni",
+          "status": "Putni",
+          "tile": "Dzīvie piekrastes, debesu un atjaunošanas programmu putni: no kondoriem un dzērvēm līdz pingvīniem, luņiem un albatrosiem.",
+          "lead": "Pieci dzīvi putni un tas, kas notiek ar to skaitu: Kalifornijas kondors un amerikāņu dzērve Ziemeļamerikā, Atlantijas lunis aukstajā Atlantijas okeāna ziemeļu daļā, Āfrikas pingvīns Āfrikas dienvidu piekrastē un klejojošais albatross Dienvidu okeānā.",
+          "back": "Savvaļa"
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "m",
+        "decimals": 1,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 0.6
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 1
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      }
+    },
+    {
+      "id": "prehistoric",
+      "kind": "status",
+      "order": 8,
+      "icon": "gone",
+      "enabled": false,
+      "mergeInto": "extinct",
+      "labels": {
+        "en": {
+          "name": "...",
+          "status": "...",
+          "tile": "...",
+          "lead": "..."
+        },
+        "ru": {
+          "name": "...",
+          "status": "...",
+          "tile": "...",
+          "lead": "..."
+        },
+        "pl": {
+          "name": "...",
+          "status": "...",
+          "tile": "...",
+          "lead": "..."
+        },
+        "lv": {
+          "name": "...",
+          "status": "...",
+          "tile": "...",
+          "lead": "..."
+        }
+      },
+      "scale": {
+        "enabled": true,
+        "unit": "m",
+        "decimals": 1,
+        "horizontal": "length",
+        "groups": [
+          {
+            "id": "small",
+            "maxSortKey": 2.5
+          },
+          {
+            "id": "medium",
+            "maxSortKey": 9
+          },
+          {
+            "id": "large"
+          }
+        ],
+        "maxPerGroup": 20,
+        "split": "auto"
+      }
+    }
+  ]
+}

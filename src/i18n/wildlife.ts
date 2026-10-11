@@ -1394,6 +1394,9 @@ const copy: Record<Locale, Record<string, SpeciesCopy>> = {
   lv: { ...lv, ...pack.lv, ...birdsLv },
 };
 
+/** Raw per-locale copy. The catalogue loader uses this so a missing locale is visible; pages still use the English fallback in getWildlifeSpecies. */
+export const wildlifeCopy = copy;
+
 export function getWildlifeSpecies(locale: Locale): Species[] {
   return speciesMeta.map((meta) => {
     const fields = copy[locale][meta.slug] ?? copy.en[meta.slug];

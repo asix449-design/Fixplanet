@@ -6,7 +6,8 @@
   "description": "Fix Planet — a living atlas of technologies that repair the planet.",
   "scripts": {
     "dev": "astro dev --host",
-    "build": "node scripts/copy-maplibre-worker.mjs && astro build",
+    "build": "node scripts/wildlife-catalog/check.mjs && node scripts/copy-maplibre-worker.mjs && astro build",
+    "check:wildlife": "node scripts/wildlife-catalog/check.mjs",
     "fetch:hazards": "node scripts/fetch-hazards.mjs",
     "fetch:economy": "node scripts/fetch-economy.mjs",
     "check:economy": "node scripts/check-economy.mjs",
