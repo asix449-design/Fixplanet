@@ -6,11 +6,12 @@ import { localizePath, type Locale } from '../i18n/config';
  * economyReleasedPr stays 0 until a later data release raises it.
  */
 
-export const economyVisible = import.meta.env.PUBLIC_ECONOMY_PREVIEW === 'true';
+// closed preview branch, never merge
+export const economyVisible = true;
 
 export const economyReleasedPr = 0;
 
-const economyPreview = import.meta.env.PUBLIC_ECONOMY_PREVIEW === 'true';
+const economyPreview = true;
 
 export type EconomyTabSlug =
   | 'overview'
