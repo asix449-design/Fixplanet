@@ -1,4 +1,845 @@
 {
   "shelf": "extinct",
-  "cards": []
+  "cards": [
+    {
+      "slug": "spixs-macaw",
+      "scientificName": "Cyanopsitta spixii",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Psittaciformes"
+      },
+      "iucn": {
+        "category": "EW",
+        "scope": "global"
+      },
+      "flags": {
+        "extinctInWild": true
+      },
+      "image": {
+        "file": "spixs-macaw.jpg",
+        "kind": "photo",
+        "credit": "Evan Centanni / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spix%27s_Macaw_(Cyanopsitta_spixii)_at_Jurong_Bird_Park_in_Singapore.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "woolly-mammoth",
+      "scientificName": "Mammuthus primigenius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Proboscidea"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "woolly-mammoth.jpg",
+        "kind": "photo",
+        "credit": "Flying Puffin / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woolly_mammoth.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "dodo",
+      "scientificName": "Raphus cucullatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "dodo.jpg",
+        "kind": "photo",
+        "credit": "BazzaDaRambler / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oxford_Dodo_display.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "passenger-pigeon",
+      "scientificName": "Ectopistes migratorius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "passenger-pigeon.jpg",
+        "kind": "photo",
+        "credit": "James St. John / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ectopistes_migratorius_(passenger_pigeon).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "thylacine",
+      "scientificName": "Thylacinus cynocephalus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Dasyuromorphia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "thylacine.jpg",
+        "kind": "photo",
+        "credit": "E.J. Keller (historical photograph, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacinus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "stellers-sea-cow",
+      "scientificName": "Hydrodamalis gigas",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Sirenia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "stellers-sea-cow.jpg",
+        "kind": "photo",
+        "credit": "Historical natural-history plate / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Extanstellersseacowea.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "aurochs",
+      "scientificName": "Bos primigenius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "aurochs.jpg",
+        "kind": "photo",
+        "credit": "Jaap Rouwenhorst / DFoidl / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurochs_reconstruction.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "great-auk",
+      "scientificName": "Pinguinus impennis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Charadriiformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "great-auk.jpg",
+        "kind": "photo",
+        "credit": "J. G. Wood (public-domain engraving, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinguinus_impennis.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "caribbean-monk-seal",
+      "scientificName": "Neomonachus tropicalis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "caribbean-monk-seal.jpg",
+        "kind": "photo",
+        "credit": "Historical engraving / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monachus_tropicalis.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "quagga",
+      "scientificName": "Equus quagga quagga",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "quagga.jpg",
+        "kind": "photo",
+        "credit": "Frederick York, c. 1870 (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quagga_photo.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "western-black-rhinoceros",
+      "scientificName": "Diceros bicornis longipes",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "western-black-rhinoceros.jpg",
+        "kind": "photo",
+        "credit": "Senckenberg Museum (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_longipes.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "baiji",
+      "scientificName": "Lipotes vexillifer",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Cetacea"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {
+        "possiblyExtinct": true
+      },
+      "image": {
+        "file": "baiji.png",
+        "kind": "photo",
+        "credit": "Alessio Marrucci / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lipotes_vexillifer.png"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "moa",
+      "scientificName": "Dinornis robustus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "moa.jpg",
+        "kind": "photo",
+        "credit": "Daniel Louis Mundy, 1867 (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinornis_robustus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "irish-elk",
+      "scientificName": "Megaloceros giganteus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "irish-elk.jpg",
+        "kind": "photo",
+        "credit": "Postdlf / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_Elk.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "smilodon",
+      "scientificName": "Smilodon fatalis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "smilodon.jpg",
+        "kind": "photo",
+        "credit": "John Cummings / Natural History Museum, London (Wikimedia Commons)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saber-toothed_cat_(Smilodon_fatalis)_reconstruction,_Natural_History_Museum,_London,_Mammals_Gallery.JPG"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "megatherium",
+      "scientificName": "Megatherium americanum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Pilosa"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "megatherium.jpg",
+        "kind": "photo",
+        "credit": "Ballista / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Megatherium_americanum_Skeleton_NHM.JPG"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "thylacoleo",
+      "scientificName": "Thylacoleo carnifex",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Diprotodontia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "thylacoleo.jpg",
+        "kind": "photo",
+        "credit": "David Hocking / Museums Victoria (Wikimedia Commons)",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacoleo_carnifex_skull.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "diprotodon",
+      "scientificName": "Diprotodon optatum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Diprotodontia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "diprotodon.jpg",
+        "kind": "photo",
+        "credit": "Nobu Tamura / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diprotodon_optatum.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "haast-eagle",
+      "scientificName": "Hieraaetus moorei",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Accipitriformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "haast-eagle.jpg",
+        "kind": "photo",
+        "credit": "John Megahan / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Haasts_eagle_attacking_New_Zealand_moa.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "elephant-bird",
+      "scientificName": "Aepyornis maximus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Struthioniformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "elephant-bird.jpg",
+        "kind": "photo",
+        "credit": "Monnier (historical museum photograph, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aepyornis_maximus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "carolina-parakeet",
+      "scientificName": "Conuropsis carolinensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Psittaciformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "carolina-parakeet.jpg",
+        "kind": "photo",
+        "credit": "James St. John / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conuropsis_carolinensis_(Carolina_parakeet).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "falkland-islands-wolf",
+      "scientificName": "Dusicyon australis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "falkland-islands-wolf.jpg",
+        "kind": "photo",
+        "credit": "Kane Fleury / MothmanNZ / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Falkland_Island_wolf,_Dusicyon_australis_OMNZVT2369_!1pub_(cropped).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bluebuck",
+      "scientificName": "Hippotragus leucophaeus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "bluebuck.jpg",
+        "kind": "photo",
+        "credit": "Sandstein / Naturhistorisches Museum Wien (Wikimedia Commons)",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippotragus_leucophaeus,_Naturhistorisches_Museum_Wien.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "pyrenean-ibex",
+      "scientificName": "Capra pyrenaica pyrenaica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "pyrenean-ibex.jpg",
+        "kind": "photo",
+        "credit": "Roger Culos / MHNT (Wikimedia Commons)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "japanese-sea-lion",
+      "scientificName": "Zalophus japonicus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "japanese-sea-lion.jpg",
+        "kind": "photo",
+        "credit": "Unknown photographer, Takeshima, June 1934 (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_lion_in_Takeshima,_Japan_(June_1934).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "kauai-oo",
+      "scientificName": "Moho braccatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Passeriformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "kauai-oo.jpg",
+        "kind": "photo",
+        "credit": "Hiart / Bishop Museum, Honolulu (Wikimedia Commons)",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moho_braccatus_Cassin,_Bishop_Museum,_Honolulu.JPG"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bramble-cay-melomys",
+      "scientificName": "Melomys rubicola",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Rodentia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "bramble-cay-melomys.jpg",
+        "kind": "photo",
+        "credit": "Ian Bell, Queensland Department of Environment and Heritage Protection (Wikimedia Commons)",
+        "license": "CC BY 3.0 AU",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    }
+  ]
 }

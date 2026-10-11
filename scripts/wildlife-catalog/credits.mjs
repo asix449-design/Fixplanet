@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Regenerates public/images/wildlife/credits.json rows from catalogue meta.
- * PR 1a keeps the shelf folders empty, so this does not rewrite the legacy file.
- * PR 1b runs it after the 97 cards move into meta.json.
+ * Rewrites artist to the card credit. C9 only requires file, license, and sourceUrl
+ * to match meta.json, so run this when that artist rewrite is intended.
  */
 import fs from 'node:fs';
 import path from 'node:path';

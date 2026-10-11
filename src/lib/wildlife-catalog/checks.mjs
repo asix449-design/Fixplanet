@@ -132,6 +132,7 @@ export function checkCatalogue({ registry, rules, fileShelves, legacyShelves, re
   const allShelves = { ...fileShelves, ...legacyShelves };
 
   findings.push(...checkLabelPlaceholders(registry));
+  findings.push(...checkDuplicateSlugs(fileShelves));
 
   for (const shelf of registry.shelves) {
     for (const loc of LOCALES) {
@@ -166,6 +167,33 @@ export function checkCatalogue({ registry, rules, fileShelves, legacyShelves, re
 }
 
 const PLACEHOLDER_LABELS = new Set(['...', '…', 'tbd']);
+
+/**
+ * Fail when the same slug appears twice in one shelf file or across shelf files.
+ * Shelf folders are the catalogue; legacy adaptation is not part of this scan.
+ */
+export function checkDuplicateSlugs(fileShelves) {
+  const findings = [];
+  const seen = new Map();
+  for (const [dir, shelf] of Object.entries(fileShelves || {})) {
+    const shelfId = shelf.meta?.shelf || dir;
+    for (const card of shelf.meta?.cards || []) {
+      const prev = seen.get(card.slug);
+      if (prev) {
+        push(findings, {
+          rule: 'C21',
+          slug: card.slug,
+          locale: '*',
+          field: 'slug',
+          message: `duplicate slug in ${prev} and ${shelfId}`,
+        });
+      } else {
+        seen.set(card.slug, shelfId);
+      }
+    }
+  }
+  return findings;
+}
 
 /**
  * Fail when any registry label is a placeholder or blank.

@@ -10,8 +10,7 @@ const IUCN_ASSESSMENT = /^https:\/\/www\.iucnredlist\.org\/species\/\d+\/\d+$/;
 
 /**
  * Map one current speciesMeta row plus its four locale copies into CardMeta + CardCopy.
- * Rank stays `species` here; the group/rank lookup table ships with migrate-legacy (PR 1b).
- * Group comes from legacy-groups.json (GBIF class).
+ * Rank stays `species`. Group, class, and order come from legacy-groups.json (GBIF).
  */
 export function adaptLegacyCard(meta, copyByLoc, groupInfo) {
   const flags = {};
@@ -38,6 +37,9 @@ export function adaptLegacyCard(meta, copyByLoc, groupInfo) {
   if (meta.image.fit) image.fit = meta.image.fit;
   if (licenseUrl) image.licenseUrl = licenseUrl;
 
+  const taxon = {};
+  if (groupInfo.class) taxon.class = groupInfo.class;
+  if (groupInfo.order) taxon.order = groupInfo.order;
   const card = {
     slug: meta.slug,
     scientificName: meta.scientificName,
@@ -46,6 +48,7 @@ export function adaptLegacyCard(meta, copyByLoc, groupInfo) {
     primaryShelf: meta.status,
     tags: [],
     group: groupInfo.group,
+    ...(taxon.class ? { taxon } : {}),
     flags,
     ...(iucn ? { iucn } : {}),
     image,
@@ -118,8 +121,7 @@ export function adaptLegacyCatalogue(metaList, copyByLocale, groups) {
 }
 
 /**
- * CardMeta + one locale's CardCopy -> the Species shape pages render today.
- * PR 1a does not switch pages onto this view; PR 1b will.
+ * CardMeta + one locale's CardCopy -> the Species shape pages render.
  */
 export function toSpecies(card, copy) {
   let iucn = card.iucn?.category;

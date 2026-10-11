@@ -1,4 +1,662 @@
 {
   "shelf": "surviving",
-  "cards": []
+  "cards": [
+    {
+      "slug": "gray-wolf",
+      "scientificName": "Canis lupus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/3746/226161232"
+      },
+      "flags": {},
+      "image": {
+        "file": "gray-wolf.jpg",
+        "kind": "photo",
+        "credit": "Brendan J. O’Reilly / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_Wolf.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Canis lupus",
+          "url": "https://www.iucnredlist.org/species/3746/226161232"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service — gray wolf",
+          "url": "https://www.fws.gov/species/gray-wolf-canis-lupus"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "brown-bear",
+      "scientificName": "Ursus arctos",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/41688/121229971"
+      },
+      "flags": {},
+      "image": {
+        "file": "brown-bear.jpg",
+        "kind": "photo",
+        "credit": "Malene Thyssen / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_bear_(Ursus_arctos_arctos)_running.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Ursus arctos",
+          "url": "https://www.iucnredlist.org/species/41688/121229971"
+        },
+        {
+          "label": "Large Carnivore Initiative for Europe — brown bear",
+          "url": "https://www.lcie.org/Large-carnivores/Brown-bear"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "american-bison",
+      "scientificName": "Bison bison",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/2815/123789863"
+      },
+      "flags": {},
+      "image": {
+        "file": "american-bison.jpg",
+        "kind": "photo",
+        "credit": "Jack Dykinga / USDA (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Bison bison",
+          "url": "https://www.iucnredlist.org/species/2815/123789863"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service — American bison",
+          "url": "https://www.fws.gov/species/american-bison-bison-bison"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "african-savanna-elephant",
+      "scientificName": "Loxodonta africana",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Proboscidea"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/181008073/223031019"
+      },
+      "flags": {},
+      "image": {
+        "file": "african-savanna-elephant.jpg",
+        "kind": "photo",
+        "credit": "Muhammad Mahdi Karim / Wikimedia Commons",
+        "license": "GFDL 1.2",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Bush_Elephant.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Loxodonta africana",
+          "url": "https://www.iucnredlist.org/species/181008073/223031019"
+        },
+        {
+          "label": "IUCN SSC African Elephant Specialist Group",
+          "url": "https://iucn.org/our-union/commissions/group/iucn-ssc-african-elephant-specialist-group"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "lion",
+      "scientificName": "Panthera leo",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "VU",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15951/259030422"
+      },
+      "flags": {},
+      "image": {
+        "file": "lion.jpg",
+        "kind": "photo",
+        "credit": "Kevin Pluck / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion_waiting_in_Namibia.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Panthera leo",
+          "url": "https://www.iucnredlist.org/species/15951/259030422"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "red-deer",
+      "scientificName": "Cervus elaphus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/55997072/142404453"
+      },
+      "flags": {},
+      "image": {
+        "file": "red-deer.jpg",
+        "kind": "photo",
+        "credit": "Luc Viatour / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_1.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Cervus elaphus",
+          "url": "https://www.iucnredlist.org/species/55997072/142404453"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "wild-boar",
+      "scientificName": "Sus scrofa",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/41775/44141833"
+      },
+      "flags": {},
+      "image": {
+        "file": "wild-boar.jpg",
+        "kind": "photo",
+        "credit": "Joshua Lutz / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sus_scrofa_scrofa.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Sus scrofa",
+          "url": "https://www.iucnredlist.org/species/41775/44141833"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "european-beaver",
+      "scientificName": "Castor fiber",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Rodentia"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/4007/197499749"
+      },
+      "flags": {},
+      "image": {
+        "file": "european-beaver.jpg",
+        "kind": "photo",
+        "credit": "Bouke ten Cate / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bever_-_Eurasian_beaver_-_Castor_fiber_6.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Castor fiber",
+          "url": "https://www.iucnredlist.org/species/4007/197499749"
+        },
+        {
+          "label": "IUCN SSC Beaver Specialist Group",
+          "url": "https://www.iucn.org/our-union/commissions/group/iucn-ssc-beaver-specialist-group"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "humpback-whale",
+      "scientificName": "Megaptera novaeangliae",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Cetacea"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/13006/50362794"
+      },
+      "flags": {},
+      "image": {
+        "file": "humpback-whale.jpg",
+        "kind": "photo",
+        "credit": "Whit Welles / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_stellwagen_edit.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Megaptera novaeangliae",
+          "url": "https://www.iucnredlist.org/species/13006/50362794"
+        },
+        {
+          "label": "NOAA Fisheries — humpback whale",
+          "url": "https://www.fisheries.noaa.gov/species/humpback-whale"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "european-bison",
+      "scientificName": "Bison bonasus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/2814/45156279"
+      },
+      "flags": {},
+      "image": {
+        "file": "european-bison.jpg",
+        "kind": "photo",
+        "credit": "Charles J. Sharp / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_bison_(Bison_bonasus)_male_Bia%C5%82owieza.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Bison bonasus",
+          "url": "https://www.iucnredlist.org/species/2814/45156279"
+        },
+        {
+          "label": "IUCN news — European bison recovering (10 Dec 2020)",
+          "url": "https://www.iucn.org/news/species/202012/european-bison-recovering-31-species-declared-extinct-iucn-red-list"
+        },
+        {
+          "label": "Oryx — range-wide conservation action plan for the European bison",
+          "url": "https://www.cambridge.org/core/journals/oryx/article/rangewide-conservation-action-plan-for-the-european-bison/6AC6945EF32219F45721A8443EC94141"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "north-american-beaver",
+      "scientificName": "Castor canadensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Rodentia"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/4003/10308287"
+      },
+      "flags": {},
+      "image": {
+        "file": "north-american-beaver.jpg",
+        "kind": "photo",
+        "credit": "Glacier National Park / U.S. National Park Service (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaver_-_Castor_canadensis_(51361589026).jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Castor canadensis",
+          "url": "https://www.iucnredlist.org/species/4003/10308287"
+        },
+        {
+          "label": "Animal Diversity Web — Castor canadensis",
+          "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
+        },
+        {
+          "label": "USDA Forest Service Region 2 — North American beaver assessment",
+          "url": "https://westernbeavers.org/wp-content/uploads/2024/02/6.-North-American-Beaver-Castor-canadensis-for-USDA-Forest-Service-stelprdb5181919.pdf"
+        },
+        {
+          "label": "Stanford Report — beaver rebound (11 Aug 2025)",
+          "url": "https://news.stanford.edu/stories/2025/08/beavers-climate-resilient-watersheds-biodiversity-research"
+        },
+        {
+          "label": "Communications Earth & Environment (2025)",
+          "url": "https://doi.org/10.1038/s43247-025-02572-y"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bald-eagle",
+      "scientificName": "Haliaeetus leucocephalus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Accipitriformes"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "bald-eagle.jpg",
+        "kind": "photo",
+        "credit": "Andy Morffew / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bald_eagle_in_Alaska_2016-3.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "USFWS — bald eagle",
+          "url": "https://www.fws.gov/species/bald-eagle-haliaeetus-leucocephalus"
+        },
+        {
+          "label": "USFWS — Bald Eagle Population Size: 2020 Update",
+          "url": "https://www.fws.gov/sites/default/files/documents/2020-bald-eagle-population-size-report.pdf"
+        },
+        {
+          "label": "Federal Register — bald eagle delisting (2007)",
+          "url": "https://www.fws.gov/sites/default/files/federal_register_document/07-4302.pdf"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "white-rhinoceros",
+      "scientificName": "Ceratotherium simum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/4185/45813880"
+      },
+      "flags": {},
+      "image": {
+        "file": "white-rhinoceros.jpg",
+        "kind": "photo",
+        "credit": "Charles J. Sharp / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_rhinoceros_(Ceratotherium_simum)_with_calf_Kruger.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Ceratotherium simum",
+          "url": "https://www.iucnredlist.org/species/4185/45813880"
+        },
+        {
+          "label": "IUCN press release — African rhino status (7 Aug 2025)",
+          "url": "https://iucn.org/press-release/202508/poaching-african-rhinos-down-drought-and-other-threats-drive-losses-globally"
+        },
+        {
+          "label": "International Rhino Foundation — white rhino",
+          "url": "https://rhinos.org/about-rhinos/rhino-species/white-rhino/"
+        },
+        {
+          "label": "Pachyderm — AfRSG chair report",
+          "url": "https://pachydermjournal.org/index.php/pachyderm/article/view/1311"
+        },
+        {
+          "label": "South Africa — biodiversity management plan for the white rhinoceros",
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201512/39469gen1191.pdf"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "arabian-oryx",
+      "scientificName": "Oryx leucoryx",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "VU",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15569/50191626"
+      },
+      "flags": {},
+      "image": {
+        "file": "arabian-oryx.jpg",
+        "kind": "photo",
+        "credit": "Saudi Press Agency / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uruq_Bani_Ma%27arid_Reserve,_Saudi_Arabia_(2025).jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Oryx leucoryx",
+          "url": "https://www.iucnredlist.org/species/15569/50191626"
+        },
+        {
+          "label": "IUCN — A grain of hope in the desert (Arabian oryx, 2011)",
+          "url": "https://iucn.org/content/a-grain-hope-desert"
+        },
+        {
+          "label": "IUCN SSC Antelope Specialist Group — Arabian oryx",
+          "url": "https://antelopesg.org/arabian-oryx/"
+        },
+        {
+          "label": "Royal Society Open Science — Oman oryx genetics (2021)",
+          "url": "https://royalsocietypublishing.org/doi/10.1098/rsos.210558"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "iberian-lynx",
+      "scientificName": "Lynx pardinus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "VU",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/12520/218695618"
+      },
+      "flags": {},
+      "image": {
+        "file": "iberian-lynx.webp",
+        "kind": "illustration",
+        "credit": "Fix Planet illustration",
+        "license": "",
+        "sourceUrl": "",
+        "width": 799,
+        "height": 613,
+        "fit": "natural"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List, Lynx pardinus",
+          "url": "https://www.iucnredlist.org/species/12520/218695618"
+        },
+        {
+          "label": "IUCN: Iberian lynx rebounding thanks to conservation action (2024)",
+          "url": "https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list"
+        },
+        {
+          "label": "IUCN SSC Cat Specialist Group: Cat News Special Issue 17, The Iberian lynx (2024)",
+          "url": "https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf"
+        },
+        {
+          "label": "Spanish Ministry for the Ecological Transition: Iberian lynx census 2025",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+        },
+        {
+          "label": "LIFE Iberlince: History",
+          "url": "https://www.iberlince.eu/index_php/eng/project"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    }
+  ]
 }

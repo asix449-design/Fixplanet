@@ -1,4 +1,476 @@
 {
   "shelf": "domesticates",
-  "cards": []
+  "cards": [
+    {
+      "slug": "cattle",
+      "scientificName": "Bos taurus / Bos indicus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "cattle.jpg",
+        "kind": "photo",
+        "credit": "Keith Weller / USDA (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hereford_cattle.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems — cattle",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/cattle/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "chicken",
+      "scientificName": "Gallus gallus domesticus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Galliformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "chicken.jpg",
+        "kind": "photo",
+        "credit": "Susulyka / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gallus_gallus_domesticus.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems — chickens",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/chickens/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "sheep",
+      "scientificName": "Ovis aries",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "sheep.jpg",
+        "kind": "photo",
+        "credit": "T.Voekler / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ovis_aries.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems — sheep",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/sheep/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "pig",
+      "scientificName": "Sus domesticus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "pig.jpg",
+        "kind": "photo",
+        "credit": "Gzen92 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cochon_domestique_(Sus_scrofa_domesticus)_(3).jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems — pigs",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/pigs/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "water-buffalo",
+      "scientificName": "Bubalus bubalis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "water-buffalo.jpg",
+        "kind": "photo",
+        "credit": "Yann Forget / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Water_buffalo_bull,_near_Mehsana,_Gujarat,_India,_4.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO — buffalo milk",
+          "url": "https://www.fao.org/dairy-production-products/dairy/buffaloes/en"
+        },
+        {
+          "label": "FAO Livestock Systems — buffaloes",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "horse",
+      "scientificName": "Equus ferus caballus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "horse.jpg",
+        "kind": "photo",
+        "credit": "TwoWings / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camargue_horse.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems — horses",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
+        },
+        {
+          "label": "Librado et al., Nature, 2021 — Western Eurasian steppe horses",
+          "url": "https://doi.org/10.1038/s41586-021-04018-9"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "dog",
+      "scientificName": "Canis familiaris",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "flags": {},
+      "image": {
+        "file": "dog.jpg",
+        "kind": "photo",
+        "credit": "Marco Ponepal / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Labrador_Retriever.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "Bergström et al., Science, 2020 — origins of prehistoric dogs (PMC)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
+        },
+        {
+          "label": "Bergström et al., Science, 2020 (doi)",
+          "url": "https://doi.org/10.1126/science.aba9572"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "camelids",
+      "scientificName": "Camelus / Lama / Vicugna",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "camelids.jpg",
+        "kind": "photo",
+        "credit": "Hans Hillewaert / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "FAO — International Year of Camelids 2024",
+          "url": "https://www.fao.org/camelids-2024/en"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "goat",
+      "scientificName": "Capra hircus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "goat.jpg",
+        "kind": "photo",
+        "credit": "Mostafameraji / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Goat_%D8%A8%D8%B2_10.jpg",
+        "width": 1600,
+        "height": 1200,
+        "fit": "natural"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems, Goats",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/goats/en/"
+        },
+        {
+          "label": "Saeid Naderi et al.: The goat domestication process inferred from large-scale mitochondrial DNA analysis of wild and domestic individuals, Proceedings of the National Academy of Sciences, 2008 (full text in PubMed Central)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584717/"
+        },
+        {
+          "label": "FAO: Domestic Animal Diversity Information System (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "cat",
+      "scientificName": "Felis catus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "flags": {},
+      "image": {
+        "file": "cat.jpg",
+        "kind": "photo",
+        "credit": "Alvesgaspar / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+        "width": 1198,
+        "height": 1600,
+        "fit": "natural"
+      },
+      "primarySources": [
+        {
+          "label": "Claudio Ottoni et al.: The palaeogenetics of cat dispersal in the ancient world, Nature Ecology & Evolution, 2017",
+          "url": "https://www.nature.com/articles/s41559-017-0139"
+        },
+        {
+          "label": "Carlos A. Driscoll et al.: The Near Eastern Origin of Cat Domestication, Science, 2007 (full text in PubMed Central)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5612713/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "donkey",
+      "scientificName": "Equus asinus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "flags": {},
+      "image": {
+        "file": "donkey.jpg",
+        "kind": "photo",
+        "credit": "Adrian Pingstone / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donkey_in_Clovelly,_North_Devon,_England.jpg",
+        "width": 750,
+        "height": 536,
+        "fit": "natural"
+      },
+      "primarySources": [
+        {
+          "label": "Evelyn T. Todd et al.: The genomic history and global expansion of domestic donkeys, Science, 2022 (bibliographic record, LMU Munich)",
+          "url": "https://epub.ub.uni-muenchen.de/110811/"
+        },
+        {
+          "label": "Changfa Wang et al.: Donkey genomes provide new insights into domestication and selection for coat color, Nature Communications, 2020 (full text in PubMed Central)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7723042/"
+        },
+        {
+          "label": "Brooke: Data on working animals",
+          "url": "https://www.thebrooke.org/our-work/data-working-equids"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "duck",
+      "scientificName": "Anas platyrhynchos domesticus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Anseriformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "duck.jpg",
+        "kind": "photo",
+        "credit": "Jakub Hałun / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ducks_in_the_paddy_fields,_Ubud,_Bali,_20220823_1016_0341.jpg",
+        "width": 1600,
+        "height": 1068,
+        "fit": "natural"
+      },
+      "primarySources": [
+        {
+          "label": "FAO Livestock Systems, Ducks",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/ducks/en/"
+        },
+        {
+          "label": "FAO: Domestic Animal Diversity Information System (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "rabbit",
+      "scientificName": "Oryctolagus cuniculus domesticus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "domesticates",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Lagomorpha"
+      },
+      "flags": {},
+      "image": {
+        "file": "rabbit.jpg",
+        "kind": "photo",
+        "credit": "Paul Korecky / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-03-30_AT_Wien_22_Donaustadt,_Blumeng%C3%A4rten_Hirschstetten,_Oryctolagus_cuniculus_f._domesticus_%2851677002276%29.jpg",
+        "width": 1600,
+        "height": 1065,
+        "fit": "natural"
+      },
+      "primarySources": [
+        {
+          "label": "FAO: The Rabbit: Husbandry, health and production (1997)",
+          "url": "https://www.fao.org/4/t1690e/t1690e.pdf"
+        },
+        {
+          "label": "FAO: Domestic Animal Diversity Information System (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    }
+  ]
 }

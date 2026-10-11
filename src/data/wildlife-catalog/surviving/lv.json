@@ -1,5 +1,253 @@
 {
   "locale": "lv",
   "shelf": "surviving",
-  "cards": {}
+  "cards": {
+    "gray-wolf": {
+      "commonName": "Pelēkais vilks",
+      "hook": "Joprojām plaši izplatīts tālajos ziemeļos, kaut izzudis no lielas Eiropas un ASV daļas.",
+      "imageAlt": "Pelēkais vilks stāv sniegā un skatās pret kameru",
+      "what": "Pelēkais vilks ir liels barā dzīvojošs suņu dzimtas plēsējs un suņa savvaļas senčs. Bari medī nagaiņus un sīkāku medījumu. IUCN suga ir vismazāk apdraudēto statusā, jo lielas populācijas paliek Kanādā, Krievijā un Centrālāzijā.",
+      "range": "Vēsturiski lielākā daļa Ziemeļu puslodes. Šodien balsti ir boreālā un stepes Āzija, Kanāda un Aļaska, ar atjaunojošiem fragmentiem Eiropā un dažām reintrodukcijām ASV un Meksikā.",
+      "story": "Pēdējos gadsimtos vilkus šāva, indēja un ķēra kā mājlopu ienaidniekus. Līdz 20. gadsimta sākumam tie izzuda no lielākās Rietumeiropas daļas un gandrīz visiem ASV kontinenta štatiem. Aizsardzība un reintrodukcija (Jeloustonā, Ziemeļu Klinšu kalnos, daļā Eiropas) dažas populācijas atgrieza. Holocēna aina — vilki mērenajos mežos un līdzenumos — atjaunota tikai daļēji.",
+      "when": "Joprojām šeit. Areāls un skaits strauji saruka vajāšanas dēļ, tad vietām auga, kad medības ierobežoja.",
+      "humanRole": "Mērķtiecīga iznīcināšana un dzīvotņu zudums izņēma vilku no apdzīvotām ainavām; vēlāk likums un izlaišana dažas atgrieza.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Canis lupus, LC); atjaunošanas pārskati Eiropā un Ziemeļamerikā."
+    },
+    "brown-bear": {
+      "commonName": "Brūnais lācis",
+      "hook": "Holarktisks izdzīvotājs, kura Eiropas areāls tagad ir kalnu un mežu atlieku izklaidus.",
+      "imageAlt": "Brūnais lācis skrien pa sūnu zemi",
+      "what": "Brūnais lācis ir visplašāk izplatītais lācis — no lašu upēm līdz sausiem kalniem. IUCN: vismazāk apdraudēts. Eirāzijas brūnais, grizlijs un kodiaks ir viena suga.",
+      "range": "Reiz Eiropa, ziemeļu Āzija un Ziemeļamerikas rietumi. Lielas populācijas paliek Krievijā, Skandināvijā, Karpatos, Balkānos, Aļaskā un Kanādas rietumos. Lielākā daļa Rietumu un Centrāleiropas savus lāčus zaudēja.",
+      "story": "Medības un zemieņu mežu izciršana izspieda lāci kalnos un tālajā taigā. Alpēs un Pirenejos turas vai tiek pastiprinātas nelielas grupas. Suga pasaulē nav reta, bet holocēna karte nav šodienas karte.",
+      "when": "Joprojām šeit. Vietēji izmiris lielā daļā mērenās Eiropas; stabils vai augošs tur, kur cilvēki to pieļauj.",
+      "humanRole": "Medības un tīrumi izņēma lāci no apdzīvotās Eiropas; atlikušās populācijas dzīvo, kamēr cilvēki to pieļauj.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Ursus arctos, LC); Eiropas lielo plēsēju pārskati."
+    },
+    "american-bison": {
+      "commonName": "Amerikas bizons",
+      "hook": "No desmitiem miljonu Lielajos līdzenumos līdz dažiem simtiem 1880. gados — tad pārvaldīta atgriešanās.",
+      "imageAlt": "Amerikas bizons stāv sausā zālē",
+      "what": "Amerikas bizons ir smags Ziemeļamerikas prēriju atgremotājs. IUCN: tuvu apdraudējumam. Lielākā daļa šodienas dzīvnieku ir komerciālos ganāmpulkos; aizsardzības ganāmpulki ir daudz mazāki.",
+      "range": "Reiz no ziemeļu Meksikas caur Lielajiem līdzenumiem līdz Kanādai. Tagad izklaidus parki un rezervāti; suga vairs nav kontinentāls migrētājs.",
+      "story": "Pirmiedzīvotāju tautas medīja bizonu tūkstošiem gadu, nesalaužot sugu. 19. gadsimta tirgus medības, dzelzceļi un ASV politika prēriju populāciju no desmitiem miljonu vērtējuma samazināja līdz dažiem simtiem ap 1880. gadu. Rančo un parku ganāmpulki pēc tam skaitu atjaunoja. Dzīvnieks izdzīvoja; brīvā ekoloģija — nē.",
+      "when": "Joprojām šeit, galvenokārt kā pārvaldīts dzīvnieks. IUCN: tuvu apdraudējumam.",
+      "humanRole": "Rūpnieciskas medības un apdzīvošana to gandrīz izdzēsa; vēlāk rančo un rezervāti saglabāja atlieku.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Bison bison, NT); vēsturiskie prēriju bizona vērtējumi (kārtas lielums)."
+    },
+    "african-savanna-elephant": {
+      "commonName": "Āfrikas savannas zilonis",
+      "hook": "Joprojām lielākais sauszemes dzīvnieks — kopš 2021. gada apdraudēts pēc ziloņkaula un dzīvotņu zuduma.",
+      "imageAlt": "Āfrikas savannas zilonis iet cauri sausam krūmājam",
+      "what": "Āfrikas savannas zilonis ir viena no divām dzīvajām Āfrikas ziloņu sugām. 2021. gadā IUCN to novērtēja atsevišķi no meža ziloņa un piešķīra apdraudētās statusu. Tas veido savannu, laužot kokus un atverot ūdeni.",
+      "range": "Lielākie bari ir Āfrikas austrumos un dienvidos. Rietumos un daudzās bijušajās savannās suga izzudusi vai palikusi fragmentos.",
+      "story": "Ziloņkaulu ņēma gadsimtiem; 20. gadsimta beigu rūpnieciskā malumedniecība plus saimniecības un žogi sašaurināja areālu. IUCN 2021. gada vērtējums: kritums par vairāk nekā 60% trijās paaudzēs. Dienvidāfrikas parki joprojām tur lielus barus. Tā ir izdzīvošana, nevis holocēna izplatība.",
+      "when": "Joprojām šeit un apdraudēts. Skaits un areāls ir daļa no holocēna ainas.",
+      "humanRole": "Ziloņkaula tirgus un apdzīvotības paplašināšanās ir galvenie nesenie spiedieni; abi turpinās.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Loxodonta africana, EN, 2021); IUCN Āfrikas ziloņu speciālistu grupa."
+    },
+    "lion": {
+      "commonName": "Lauva",
+      "hook": "Izzudusi Eiropā un gandrīz visā Āzijā; izdzīvo Āfrikas fragmentos un vienā Indijas mežā.",
+      "imageAlt": "Lauvu tēviņš guļ sausā Namībijas zālē",
+      "what": "Lauva ir sociāls lielais kaķis atklātos mežos un savannās. IUCN: ievainojama. Publicētie savvaļas skaita minējumi bieži ir ap 20–25 tūkstošiem; skaitlis ir neskaidrs, reģionālie uzskaiti atšķiras.",
+      "range": "Vēsturiski no Dienvideiropas un dienvidrietumu Āzijas gandrīz visā Āfrikā. Šodien gandrīz visas savvaļas lauvas dzīvo fragmentos uz dienvidiem no Sahāras. Āzijas lauva palikusi tikai Girā Indijā (ap 600–700 pēc nesenajiem Gudžarātas uzskaitījumiem).",
+      "story": "Pēdējos tūkstošgades, īpaši pēdējos divos gadsimtos, medību zemes kļuva par ganībām un lauvas šāva kā draudus. Eiropas leduslaikmeta lauva sen izzudusi; tai sekoja holocēna lauva Ziemeļāfrikā un Tuvajos Austrumos. Palicis sašaurināts Āfrikas kodols un Gira.",
+      "when": "Joprojām šeit, ievainojama, uz daudz mazākas kartes nekā pēc pēdējā leduslaikmeta.",
+      "humanRole": "Dzīvotņu pārvēršana, medījuma izsīkums un nogalināšana mājlopu dēļ sašaurināja areālu.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Panthera leo, VU); Gudžarātas Āzijas lauvas uzskaites."
+    },
+    "red-deer": {
+      "commonName": "Staltbriedis",
+      "hook": "Eiropas leduslaikmeta izdzīvotājs, tagad parasts tur, kur mežsaimniecība un medības to tā tur.",
+      "imageAlt": "Staltbrieža briedis ar lieliem ragiem meža laucē",
+      "what": "Staltbriedis ir liels Eirāzijas briedis. IUCN: vismazāk apdraudēts. Ziemeļamerikas vāpitī jeb elk (Cervus canadensis) ir tuva suga ar līdzīgu medību, izciršanas un vēlākas atjaunošanas stāstu parkos.",
+      "range": "Eiropa un rietumu Āzija, daudz salu un kalnu populāciju. Blīvumu tagad nosaka medību likumi un mežsaimniecība, nevis leduslaikmeta stepes.",
+      "story": "Cilvēki staltbriežus medījuši kopš vēlā pleistocēna. Mežu izciršana tos izņēma no daļas zemieņu; citur parki un mūsdienu mežsaimniecība deva augstu vietējo blīvumu. Dažas salu pasugas ir retas. Suga kopumā nav apdraudēta — tās ģeogrāfija ir antropogēna.",
+      "when": "Joprojām šeit un lielā daļā Eiropas skaitliski bagāts pārvaldībā.",
+      "humanRole": "Medības un izciršana dažas populācijas samazināja; medību saimniecība citas palielināja.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Cervus elaphus, LC)."
+    },
+    "wild-boar": {
+      "commonName": "Mežacūka",
+      "hook": "Dažās zemēs iznīcināta, tad atgriezusies — un kļuvusi par lauksaimniecības buma sugu.",
+      "imageAlt": "Mežacūka stāv sniegotā mežā",
+      "what": "Mežacūka ir pielāgoties spējīgs visēdājs cūku dzimtas dzīvnieks, lielākās daļas mājas cūku senčs. IUCN: vismazāk apdraudēta. Raka augsni, ēd ražu, dzīvo no tuksneša malas līdz mežam.",
+      "range": "Eirāzija un Ziemeļāfrika. Iznīcināta Britānijā un daļā Skandināvijas, tad atjaunota. Ieviesa un kļuva invazīva Amerikā, Austrālijā un daudzās salās.",
+      "story": "Tūkstošiem gadu mežacūku medīja un mežu pārvērta tīrumos. Dažos reģionos tas to izdzēsa. Pēdējā gadsimtā maigākas ziemas, kukurūza un mazāk vilku ļāva Eiropas skaitam uzplaukt. Citur izlaišana medībām radīja savvaļas problēmas. Izdzīvošana šeit nav retums — tā ir pārkārtota ekoloģija.",
+      "when": "Joprojām šeit; vietām izzudusi, tad pārmērīgi daudz — atkarībā no ainavas, ko cilvēki uzcēla.",
+      "humanRole": "Mēs to samazinājām, atgriezām un tad pabarojām ar ražu un tukšu plēsēju nišu.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Sus scrofa, LC); Eiropas skaita tendenču pārskati."
+    },
+    "european-beaver": {
+      "commonName": "Eirāzijas bebrs",
+      "hook": "Novests līdz dažām patversmēm, tad ar reintrodukciju atgriezts Eiropā.",
+      "imageAlt": "Eirāzijas bebrs sēž dīķa malā",
+      "what": "Eirāzijas bebrs ir liels nakts grauzējs, kas dambē strautus un gāž kokus. IUCN: vismazāk apdraudēts pēc ilga sabrukuma un pārvaldītas atjaunošanas. Tā nav Ziemeļamerikas bebra suga (Castor canadensis).",
+      "range": "Reiz no Britānijas līdz Ķīnai gar upēm un mitrājiem. 20. gadsimta sākumā palika daži tūkstoši izklaidus Eiropas un Āzijas perēkļos. Reintrodukcija to atgrieza lielā daļā Eiropas.",
+      "story": "Kažokāda, bebriņu dziedzeru sekrēts un gaļa gandrīz beidza sugu Eiropā. Aizsardzība un izlaišana no 20. gadsimta vidus skaitu atjaunoja. Agrā holocēna bebrs bija bezledus upju inženieris; šodienas bieži ir reintrodukcija nosusinātā ainavā.",
+      "when": "Joprojām šeit un Eiropā pieaug pēc gandrīz pilnīgas izzušanas.",
+      "humanRole": "Pārmērīgas kažokādu medības to gandrīz beidza; vēlāk politika to atgrieza.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Castor fiber, LC); Eiropas reintrodukciju kopsavilkumi."
+    },
+    "humpback-whale": {
+      "commonName": "Kuprainais valis",
+      "hook": "Rūpnieciskā vaļu medība noņēma vairāk nekā 90% lielākajai daļai baru; daudzi pēc tam atguvās.",
+      "imageAlt": "Kuprainais valis nirst, redzamas melnbaltās astes lāpstiņas",
+      "what": "Kuprainais valis ir garspuru baleenvalis, kas migrē starp polārajiem barošanās laukiem un tropisko vairošanos. IUCN 2018. gadā piešķīra vismazāk apdraudētā statusu pēc atjaunošanās vairākos okeāna baseinos. Daži reģionālie bari paliek mazi, tostarp Arābu jūrā.",
+      "range": "Visi okeāni. Vairošanās un barošanās vietas ir tradicionālas; suga ir kosmopolītiska kā migrētājs, nevis kā katras krasta iemītnieks.",
+      "story": "19. un 20. gadsimta komerciālā vaļu medība līdz 1960. gadiem lielāko daļu populāciju nogrieza par vairāk nekā 90%. Starptautiskais moratorijs (IWC, 1982, pakāpeniski) ļāva daudziem bariem augt. Kuģu triecieni un tīkli joprojām nogalina.",
+      "when": "Joprojām šeit. Globāli LC; atjaunošanās ir īsta un nepilnīga.",
+      "humanRole": "Rūpnieciskā medība izraisīja sabrukumu; medību aizliegums, nevis dzīvotnes maiņa, ļāva atlecēt.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Megaptera novaeangliae, LC, 2018); IWC vaļu medību vēsture."
+    },
+    "european-bison": {
+      "commonName": "Eiropas bizons (zubr)",
+      "hook": "Iznīcināts savvaļā 20. gadsimta sākumā, pēc tam atjaunots — brīvi dzīvojošie ganāmpulki pieauga no aptuveni 1800 dzīvniekiem 2003. gadā līdz 6244 47 apakšpopulācijās līdz 2019. gadam; IUCN pārcēla no Vulnerable uz Near Threatened.",
+      "imageAlt": "Eiropas bizona bullis stāv rudens mežā",
+      "what": "Eiropas lielākais sauszemes zīdītājs — savvaļas radinieks Amerikas bizonam, cita suga. Līnijas glābtas zoodārzos, pēc tam izlaistas mežos no 1950. gadiem.",
+      "range": "Eiropa. Līdz 2019. gadam brīvi dzīvojošie dzīvnieki atkal bija mežos, 47 apakšpopulācijās. Tikai aptuveni astoņi ganāmpulki ir pietiekami lieli ilgtermiņa ģenētiskai dzīvotspējai; vairums ganāmpulku paliek mazi un pārsvarā izolēti.",
+      "story": "Tā ir pārvaldīta atgriešanās pēc tam, kad cilvēki iztukšoja areālu: vairošana nebrīvē, reintrodukcijas un pastāvīga ganāmpulku pārvaldība. Joprojām atkarīgs no aizsardzības (mazi, izolēti ganāmpulki), ne neapdraudēts bums kā mežacūkai — bet atkal ainavā.",
+      "when": "IUCN (2020. gada novērtējums): brīvi dzīvojošā populācija ~1800 (2003) → 6244 (2019) 47 ganāmpulkos. Statuss: Near Threatened, pārcelts no Vulnerable. Vēlāka Oryx piezīme minēja aptuveni 6800 brīvi dzīvojošus līdz 2020. gadam, kamēr plānošana turpinājās.",
+      "humanRole": "Cilvēki nošāva pēdējos savvaļas dzīvniekus. Vairošana nebrīvē, izlaišana mežos no 1950. gadiem un pastāvīga ganāmpulku pārvaldība atgrieza brīvi dzīvojošos ganāmpulkus.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Bison bonasus, Near Threatened, 2020); IUCN ziņa, 2020. gada 10. dec.; Oryx piezīme par areāla mēroga rīcības plānu."
+    },
+    "north-american-beaver": {
+      "commonName": "Ziemeļamerikas bebrs",
+      "hook": "Ap 1900. gadu gandrīz izdzēsts lielā daļā areāla filca cepurēm; regulēta medniecība un reintrodukcijas atjaunoja kontinentālu atslēgas sugu — IUCN: Least Concern, mūsdienu novērtējumi bieži ~10–15 milj.",
+      "imageAlt": "Ziemeļamerikas bebrs sēž uz baļķa dīķa malā",
+      "what": "Jaunās pasaules dambju būvētājs — tā pati ģimene kā dzīvais Eiropas bebrs, cita suga. Pārveido upītes par mitrājiem, kas tur ūdeni, uzkrāj oglekli dīķos un baro citu dzīvnieku.",
+      "range": "Atkal kontinentāla atslēgas suga tur, kur palikusi dzīvotne, pēc gandrīz pilnīgas izdzēšanas lielā daļā areāla. Nejauc ar Castor fiber.",
+      "story": "Cilvēki medībās to noveda līdz vietējai izzušanai kažokādas dēļ, pēc tam atveda atpakaļ. Kur daudz — konflikts ar lauksaimniecību un ceļu caurtekām. Klasisks izdzīvojušo stāsts „vēl šeit, tad bums”, ne Endangered retums.",
+      "when": "Ap 1900. gadu bebri bija gandrīz pazuduši no daudzām sākotnējām dzīvotnēm. USDA Forest Service 2. reģiona novērtējums: ieguves noteikumi, mitrāju aizsardzība, pārvietošana un dabiska izplatīšanās atjaunoja populācijas tur, kur dzīvotne palika. Mūsdienu kopsummas bieži vērtē desmitos miljonu (bieži ~10–15 milj.). Stanford kopsavilkums par nesenu kartēšanu min kritumu no aptuveniem pirmskoloniālajiem minējumiem 60–400 milj. līdz aptuveni 10–15 milj. šodien — vēsturisko griestu uzskatīt par nenoteiktu; virziens (sabrukums → atkal miljoni) ir stingrs. IUCN: Least Concern.",
+      "humanRole": "Kažokādu tirdzniecība filca cepurēm to gandrīz izdzēsa. Regulēta medniecība un gadsimta vidus reintrodukcijas to atjaunoja.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Castor canadensis, Least Concern); Animal Diversity Web; USDA Forest Service 2. reģiona novērtējums; Stanford Report, 2025. gada 11. aug.; Communications Earth & Environment (doi:10.1038/s43247-025-02572-y)."
+    },
+    "bald-eagle": {
+      "commonName": "Baltgalvas ērglis",
+      "hook": "1963. gadā ASV apakšējos 48 štatos palika 417 zināmu ligzdošanas pāru; pēc DDT aizlieguma un ESA darba USFWS saskaitīja aptuveni 316 700 indivīdu un 71 467 aizņemtas ligzdas 2018.–2019. gadā.",
+      "imageAlt": "Pieaudzis baltgalvas ērglis lidojumā virs ūdens: balta galva un aste",
+      "what": "Ziemeļamerikas zivju ērglis un ASV nacionālais simbols — vienīgais ērglis, kas dzimts tikai šim kontinentam. Pieaugušajiem ir balta galva un aste; jaunāki putni gadiem paliek raibi brūni.",
+      "range": "Ziemeļamerika. Galvenie atjaunošanas skaitļi ir apakšējo 48 štatu stāsts. Aļasku ESA tāpat neiekļāva.",
+      "story": "Šaušana un DDT plānināja olu čaumalas, līdz putns gandrīz pazuda no ASV blakus štatiem. Likuma aizsardzība, darbs pie ligzdām un DDT aizliegums ASV 1972. gadā apgrieza krahu. Noņemts no ESA 2007. gadā; joprojām aizsargāts ar Baltgalvas un zelta ērgļa aizsardzības likumu un gājputnu līguma likumu.",
+      "when": "USFWS: 417 zināmi ligzdošanas pāri apakšējos 48 štatos 1963. gadā → 9789 pāri 2007. gada izņemšanā no saraksta → aptuveni 316 700 indivīdu un 71 467 aizņemtas ligzdas (2018.–2019. gada dati). IUCN: Least Concern.",
+      "humanRole": "Šaušana un DDT izraisīja krahu. 1972. gada DDT aizliegums, ESA darbs un ligzdu aizsardzība to apgrieza.",
+      "sources": [],
+      "sourcesNote": "USFWS sugas lapa; USFWS Bald Eagle Population Size: 2020 Update; izņemšanas noteikums, Federal Register, 2007."
+    },
+    "white-rhinoceros": {
+      "commonName": "Baltais degunradzis",
+      "hook": "Dienvidu baltos degunradžus pirms gadsimta novadīja līdz vienam patvērumam Dienvidāfrikā; IUCN/TRAFFIC 2024. gada beigās novērtē Āfrikas baltos aptuveni 15 752 — Near Threatened, joprojām galvenais dzīvais krājums.",
+      "imageAlt": "Dienvidu baltais degunradzis ar mazuli ganībās; redzama platā kvadrātveida lūpa",
+      "what": "Platiņā degunradža zālēdājs savannā. Divas pasugas: dienvidu (atjaunošana) un ziemeļu (funkcionāli izmirusi savvaļā — jau Endangered plauktā). Gandrīz visi dzīvie baltie degunradži ir dienvidu pasuga (C. s. simum).",
+      "range": "Āfrikas savanna. Dienvidu baltos pirms gadsimta novadīja līdz vienam patvērumam Dienvidāfrikā. Ziemeļu pasuga nav šīs kartītes varonis.",
+      "story": "Aizsardzība un pārvietošana no Hluhluwe–iMfolozi atjaunoja dienvidu skaitu no niecīga atlikuma līdz desmitiem tūkstošu. Tā ir izdzīvojušo atgriešanās. Tas nav tas pats stāsts kā kritiski apdraudētajiem melnajam, Javas vai Sumatras degunradzim, un tā nav ziemeļu baltā atlieka.",
+      "when": "IUCN paziņojums presei (2025. gada 7. aug., atsaukdamies uz AfRSG/TRAFFIC CITES ziņojumu): 15 752 baltie degunradži Āfrikā 2024. gada beigās (mīnus 11,2% pret 2023 — sausums, uzskaite un pārvaldības satricinājumi pēc agrākiem pieaugumiem). IRF kopsavilkumi joprojām tur garo loku: „mazāk nekā 100 1900. gadu sākumā → desmitiem tūkstošu”. IUCN Sarkanais saraksts: Near Threatened.",
+      "humanRole": "Medības noveda dienvidu pasugu līdz vienam patvērumam. Aizsardzība un pārvietošana atjaunoja dzīvo krājumu.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Ceratotherium simum, Near Threatened); IUCN paziņojums presei, 2025. gada 7. aug.; International Rhino Foundation; AfRSG priekšsēdētāja ziņojums Pachyderm; Dienvidāfrikas bioloģiskās daudzveidības pārvaldības plāns."
+    },
+    "arabian-oryx": {
+      "commonName": "Arābijas orikss",
+      "hook": "1970. gadu sākumā atzīts par izzudušu savvaļā, pēc tam atgriezts no zoodārziem; līdz IUCN 2016. gada novērtējumam savvaļā atkal aptuveni 1220 (850 pieaugušie) — pirmā suga, kas atgriezās no Extinct in the Wild uz Vulnerable.",
+      "imageAlt": "Arābijas orikss tuksneša krūmājā Uruk Bani Maaridas rezervātā Saūda Arābijā",
+      "what": "Balta tuksneša antilope ar gariem, gandrīz taisniem ragiem — mazākais Oryx, dzimts Arābijas pussalas tuksnešiem un stepēm.",
+      "range": "Arābijas pussalas tuksneši un stepes. Izlaišanas no 1980. gada atgrieza dzīvniekus Omānā, Saūda Arābijā, Izraēlā, AAE, Jordānijā un radniecīgās vietās.",
+      "story": "Motorizēta medniecība iztukšoja ganāmpulkus. Vairošana nebrīvē un izlaišanas no 1980. gada atgrieza dzīvniekus no zoodārziem. Joprojām apdraudēta (dzīvotne, nelikumīgas medības, mazi savvaļas kopējie) — bet dokumentēta atgriešanās no Extinct in the Wild, ne CR bez atjaunošanas ceļa.",
+      "when": "1970. gadu sākumā atzīts par izzudušu savvaļā. IUCN SSC Antelope Specialist Group faktu lapa (2016. gada novērtējums): aptuveni 1220 savvaļā (850 pieaugušie) un 6000–7000 nebrīvē. Statuss: Vulnerable — pirmā suga, kas atgriezās no Extinct in the Wild uz Vulnerable. IUCN ziņa (2011) fiksēja soli uz leju no augstākas apdraudējuma kategorijas. Royal Society Open Science (2021) aplūko Omānas reintrodukcijas ģenētiku.",
+      "humanRole": "Motorizēta medniecība iztukšoja pēdējos savvaļas ganāmpulkus. Vairošana nebrīvē un izlaišanas no 1980. gada sugu atgrieza.",
+      "sources": [],
+      "sourcesNote": "IUCN Sarkanais saraksts (Oryx leucoryx, Vulnerable); IUCN, „A grain of hope in the desert” (2011); IUCN SSC Antelope Specialist Group faktu lapa; Royal Society Open Science, 2021."
+    },
+    "iberian-lynx": {
+      "commonName": "Ibērijas lūsis",
+      "hook": "2002. gadā palika tikai 94 Ibērijas lūši, un tas bija visvairāk apdraudētais kaķis uz Zemes. 2025. gada skaitīšanā Spānijā un Portugālē saskaitīja 2663 lūšus.",
+      "imageAlt": "Ibērijas lūsis profilā: pušķi uz ausīm, spalvu apkakle gar vaigiem un īsa aste ar melnu galu",
+      "what": "Ibērijas lūsis (Lynx pardinus) ir vidēja izmēra savvaļas kaķis ar plankumainu iedzeltenu kažoku, pušķiem uz ausīm, spalvu apkakli gar vaigiem un īsu asti ar melnu galu. Pieaugušam dzīvniekam skausta augstums ir apmēram 0,5 m, garums no deguna līdz astes galam apmēram 0,9 m un svars aptuveni no 6 līdz 16 kg. Tas dzīvo tikai Ibērijas pussalā un ir atkarīgs no savvaļas truša, sava galvenā medījuma.",
+      "range": "2025. gadā lūši dzīvoja 26 atsevišķās vietās Spānijā un Portugālē, un 18 no tām konstatēta vairošanās. Spānijā saskaitīja 2269 lūšus, Portugālē 394. Pašā Spānijā Kastīlijā-Lamančā dzīvoja 1051, Andalūzijā 885 un Estremadūrā 302, mazāk Mursijā, Kastīlijā un Leonā un Madridē. Galvenais sugas patvērums ir Sierra Morena kalni, kur saskaitīja 1145. Pēc Andalūzijas valdības datiem lūšu skaits Andalūzijā pieauga no 457 lūšiem 2019. gadā līdz 885 lūšiem 2025. gadā. Teritorija, kurā lūsis sastopams, ir palielinājusies no 449 kvadrātkilometriem 2005. gadā līdz vismaz 3320 kvadrātkilometriem 2022. gadā.",
+      "story": "Divdesmitajā gadsimtā Ibērijas lūša skaits kritās četru iemeslu dēļ: tika iznīcināts Vidusjūras mežs, divas jaunas vīrusu slimības strauji samazināja savvaļas trušu skaitu, cilvēki vajāja lūsi kā kaitēkli, un daudzi dzīvnieki gāja bojā uz ceļiem vai noslīka akās. Līdz 2002. gadam saglabājās tikai divas grupas, viena Doñanas apkaimē un otra Sierra Morena kalnos, kopā 94 lūši. Tolaik sugu atzina par visvairāk apdraudēto kaķi uz Zemes, un Starptautiskā dabas aizsardzības savienība tai piešķīra kategoriju „kritiski apdraudēts”. Spānija, Portugāle un Eiropas Savienība sāka ilgu glābšanas darbu. Zemes īpašnieki piekrita saimniekot tā, lai trušu kļūtu vairāk, audzēšanas centros Spānijā un Portugālē audzēja lūšus, un kopš 2010. gada vairāk nekā 400 dzīvnieku izlaida vietās, kur suga bija izzudusi. Portugāle savu izlaišanu sāka 2014. gadā. Lūšu skaits 2020. gadā pārsniedza 1000, bet 2023. gadā 2000.",
+      "when": "2024. gada jūnijā Starptautiskā dabas aizsardzības savienība pārcēla Ibērijas lūsi no kategorijas „apdraudēts” uz kategoriju „ievainojams”. Agrāk suga bija kategorijā „kritiski apdraudēts” no 2002. līdz 2008. gadam un kategorijā „apdraudēts” 2015. gadā. Skaitīšana, ko 2026. gada jūnijā publicēja Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija, 2025. gadā saskaitīja 2663 lūšus, bet 2024. gadā to bija 2401 un 2021. gadā 1365. Starp tiem 1711 bija pieauguši un gandrīz pieauguši dzīvnieki un 952 mazuļi, bet 542 mātītes vairojās vai turēja savas teritorijas. Ministrija šos skaitļus uzskata par minimāliem.",
+      "humanRole": "Cilvēki vispirms noveda lūsi līdz izzušanas robežai, bet pēc tam palīdzēja tam atgūties. Līgumi ar zemes īpašniekiem uzlaboja dzīvotni un palielināja trušu skaitu, lūšus audzēja centros Spānijā un Portugālē un izlaida jaunās teritorijās, bet gar ceļiem uzbūvēja pazemes ejas un žogus. Ceļi joprojām ir lielākās briesmas: 2025. gadā 212 no 273 reģistrētajiem lūšu nāves gadījumiem notika uz ceļiem. Starp citiem apdraudējumiem Starptautiskā dabas aizsardzības savienība min jaunus trušu vīrusu slimību uzliesmojumus, slimības no mājas kaķiem, malumedniecību un klimata izraisītas dzīvotnes pārmaiņas.",
+      "sources": [
+        {
+          "label": "Starptautiskās dabas aizsardzības savienības Sarkanais saraksts: Ibērijas lūsis (IUCN Red List of Threatened Species: Lynx pardinus, Rodríguez 2024)",
+          "url": "https://www.iucnredlist.org/species/12520/218695618"
+        },
+        {
+          "label": "Starptautiskā dabas aizsardzības savienība: Ibērijas lūsis atgūstas, pateicoties dabas aizsardzībai, preses relīze 2024. gada 20. jūnijā (Iberian lynx rebounding thanks to conservation action)",
+          "url": "https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list"
+        },
+        {
+          "label": "Starptautiskās dabas aizsardzības savienības Sugu izdzīvošanas komisijas Kaķu speciālistu grupa: Ziņas par kaķiem, 17. speciālais izdevums, Ibērijas lūsis, ikoniskas sugas glābšana, 2024 (Cat News Special Issue 17, The Iberian lynx, rescue of an iconic species)",
+          "url": "https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf"
+        },
+        {
+          "label": "Starptautiskās dabas aizsardzības savienības Sugu izdzīvošanas komisijas Kaķu speciālistu grupa: dzīvās sugas, Ibērijas lūsis (Living Species, Iberian lynx)",
+          "url": "https://www.catsg.org/living-species-iberianlynx"
+        },
+        {
+          "label": "Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija: Ibērijas lūša skaitīšana, Spānija un Portugāle, 2025, dokuments (Censo de lince ibérico, España y Portugal, 2025)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+        },
+        {
+          "label": "Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija caur Bioloģiskās daudzveidības fondu: Ibērijas lūšu skaits sasniedza 2663 īpatņus 2025. gadā, preses relīze 2026. gada 5. jūnijā (The Iberian lynx population reached 2,663 specimens in 2025)",
+          "url": "https://fundacion-biodiversidad.es/en/notas_de_prensa_mite/the-iberian-lynx-population-reached-2663-specimens-in-2025/"
+        },
+        {
+          "label": "Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija: Spānijas sauszemes sugu uzskaite, Ibērijas lūsis, sugas lapa, dokuments (Inventario Español de Especies Terrestres, Lynx pardinus)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf"
+        },
+        {
+          "label": "Eiropas Savienības dabas aizsardzības projekts: ziņojums plašai sabiedrībai, 2018, dokuments (LIFE Iberlince, Layman report 2018)",
+          "url": "https://www.iberlince.eu/files/images/docs/layman_eng.pdf"
+        },
+        {
+          "label": "Eiropas Savienības dabas aizsardzības projekts: vēsture (LIFE Iberlince, History)",
+          "url": "https://www.iberlince.eu/index_php/eng/project"
+        },
+        {
+          "label": "Eiropas Savienības dabas aizsardzības projekts: Ibērijas lūsis, ekoloģija (LIFE Iberlince, Iberian lynx, Ecology)",
+          "url": "https://www.iberlince.eu/index_php/eng/lynx/ecology"
+        },
+        {
+          "label": "Eiropas Klimata, infrastruktūras un vides izpildaģentūra: Kaķa atgriešanās, Ibērijas lūšu skaits 20 gados pieaudzis desmitkārt, 2021. gada 20. jūlijs (The comeback cat: Iberian lynx numbers up tenfold in 20 years)",
+          "url": "https://cinea.ec.europa.eu/news-events/news/comeback-cat-iberian-lynx-numbers-tenfold-20-years-2021-07-20_en"
+        },
+        {
+          "label": "Eiropas Komisijas dabas un klimata programmas datubāze: projekts Ibērijas lūša saglabāšanai un atgriešanai Andalūzijā (LIFE06 NAT/E/000209, Conservation and reintroduction of the Iberian lynx in Andalucia)",
+          "url": "https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE06-NAT-E-000209/conservation-and-reintroduction-of-the-iberian-lynx-in-andalucia"
+        },
+        {
+          "label": "Andalūzijas valdība (Junta de Andalucía): Andalūzijas Sierra Morena joprojām ir galvenais Ibērijas lūša kodols pussalā, 2026. gada 3. septembris (La Sierra Morena andaluza se mantiene como el principal núcleo de lince ibérico de la Península)",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/la-sierra-morena-andaluza-se-mantiene-como-el-principal-n%C3%BAcleo-de-lince-ib%C3%A9rico-de-la-pen%C3%ADnsula/20151"
+        },
+        {
+          "label": "Portugāles Dabas un mežu aizsardzības institūts (ICNF): Ibērijas lūsis, jaunumi (Lince-ibérico, Novidades)",
+          "url": "https://areasprotegidas.icnf.pt/lince/index.php/noticias/novidades"
+        },
+        {
+          "label": "Mičiganas Universitātes Zooloģijas muzejs, tīmekļa rokasgrāmata par dzīvnieku daudzveidību: Ibērijas lūsis (Lynx pardinus, Spanish lynx)",
+          "url": "https://animaldiversity.org/accounts/Lynx_pardinus/"
+        }
+      ],
+      "gridSource": {
+        "label": "Spānijas Ekoloģiskās pārejas un demogrāfiskās problēmas ministrija: Ibērijas lūša skaitīšana, Spānija un Portugāle, 2025, dokuments (Censo de lince ibérico, España y Portugal, 2025)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+      },
+      "image": {
+        "caption": "Fix Planet ilustrācija"
+      }
+    }
+  }
 }

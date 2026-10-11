@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
- * Wildlife catalogue checker (C1–C19 and S1–S15).
+ * Wildlife catalogue checker (C1–C21 and S1–S15).
  *
  *   node scripts/wildlife-catalog/check.mjs [--json report.json] [--shelf <id>] [--write-baseline] [--no-baseline]
  *
- * The 97 current cards stay in speciesMeta. This script adapts them into the
- * catalogue model, parses them with the same zod schemas as the loader, and
- * subtracts legacy-baseline.json. The baseline may only shrink once it is on main.
+ * The migrated cards live in the per-shelf JSON files. The checker parses them
+ * with the same zod schemas as the loader and subtracts legacy-baseline.json.
+ * The baseline may only shrink. C21 fails when a slug is repeated across shelf files.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -78,19 +78,19 @@ try {
 await server.close();
 
 const shelfFilter = option('--shelf');
-const legacyShelves = shelfFilter
-  ? Object.fromEntries(Object.entries(catalog.legacyShelves).filter(([id]) => id === shelfFilter))
-  : catalog.legacyShelves;
+const fileShelves = shelfFilter
+  ? Object.fromEntries(Object.entries(catalog.fileShelves).filter(([id]) => id === shelfFilter))
+  : catalog.fileShelves;
 
 const findings = [
   ...checkCatalogue({
     registry: catalog.registry,
     rules: catalog.rules,
-    fileShelves: catalog.fileShelves,
-    legacyShelves,
+    fileShelves,
+    legacyShelves: {},
     repoRoot,
   }),
-  ...checkCredits(catalog.fileShelves, repoRoot),
+  ...checkCredits(fileShelves, repoRoot),
 ];
 
 if (flag('--write-baseline')) {
@@ -112,7 +112,7 @@ try {
   selfTestError = error instanceof Error ? error.message : String(error);
 }
 
-const cards = catalog.legacyCards;
+const cards = catalog.cardCount;
 const locales = LOCALES.length;
 const failCount = result.fail.length + result.stale.length + grew.length + (selfTestError ? 1 : 0);
 const byRule = (rows) => {
