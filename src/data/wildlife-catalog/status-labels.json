@@ -1,0 +1,830 @@
+{
+ "_note": "Draft of src/data/wildlife-catalog/status-labels.json (spec 2.11), v3.3. Card labels and system names by Bob, 2026-10-08 (/workspace/nature-catalog-iucn-labels-2026-10-08.json and .md). Each label: { text, sourceUrl, needsNativeReview? }; each locale also has a primary sourceUrl and its source list. needsNativeReview: true = wording not verbatim in a source (checker WARN, not FAIL; a native speaker confirms before the first card that uses it ships). null = still a placeholder (scope phrases, OSPAR region phrase, NatureServe and US ESA value names: Bob's bonus value maps are only in the .md, not in the JSON, so they are not merged). Size-group labels live in the registry scaleLabels (copied here for reference). extinctionPeriod and noIucnBefore1500 implement Boss Bot ruling (a) part 2; their RU / PL / LV wording is Jimmy's and needs native review. REVIEW 2026-10-08 (Bob): corrected copy of Jimmy's v3.3 draft, see nature-catalog-status-labels-reviewed-2026-10-08.changelog.md. New optional Label key 'verified' (string, names the confirming source) needs one line in schema.mjs Label: verified: z.string().optional(). needsNativeReview kept true wherever only lv.wikipedia or Bob's judgement supports the wording; no native speaker has reviewed any of it.",
+ "version": "2026-10-08",
+ "en": {
+  "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-2nd.pdf",
+  "sources": [
+   {
+    "title": "IUCN Red List Categories and Criteria, Version 3.1, Second edition (2012)",
+    "url": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-2nd.pdf",
+    "quote": "EXTINCT IN THE WILD (EW) ... NEAR THREATENED (NT) ... LEAST CONCERN (LC) ... DATA DEFICIENT (DD) ... NOT EVALUATED (NE)"
+   }
+  ],
+  "iucnCategory": {
+   "card": {
+    "text": "IUCN Red List category",
+    "sourceUrl": "https://www.iucnredlist.org/resources/categories-and-criteria"
+   },
+   "short": {
+    "text": "IUCN",
+    "sourceUrl": "https://www.iucnredlist.org/resources/categories-and-criteria"
+   },
+   "full": {
+    "text": "IUCN Red List category",
+    "sourceUrl": "https://www.iucn.org/"
+   },
+   "orgName": {
+    "text": "International Union for Conservation of Nature",
+    "sourceUrl": "https://www.iucn.org/"
+   }
+  },
+  "assessor": {
+   "iucn": "IUCN",
+   "natureServe": "NatureServe",
+   "usEsa": "US Endangered Species Act",
+   "ospar": "OSPAR Convention"
+  },
+  "otherSystem": {
+   "card": {
+    "text": "Other assessment",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-2nd.pdf",
+    "note": "descriptive label (Bob)"
+   }
+  },
+  "notEvaluated": {
+   "card": {
+    "text": "Not evaluated by IUCN",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-2nd.pdf",
+    "note": "descriptive label (Bob); category name NE is in rules.json"
+   },
+   "detail": {
+    "text": "Not evaluated: no conservation assessment has been published",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-2nd.pdf",
+    "note": "descriptive copy (Bob)"
+   }
+  },
+  "systems": {
+   "natureServe": {
+    "name": {
+     "text": "NatureServe",
+     "sourceUrl": "https://www.natureserve.org/",
+     "note": "proper name in every language, not a status code"
+    },
+    "intro": {
+     "text": "Assessed by NatureServe, a North American conservation network",
+     "sourceUrl": "https://www.natureserve.org/"
+    }
+   },
+   "usEsa": {
+    "name": {
+     "text": "US Endangered Species Act",
+     "sourceUrl": "https://www.fws.gov/law/endangered-species-act",
+     "verified": "US FWS ECOSphere 'Endangered Species Act Status Codes' page"
+    },
+    "intro": {
+     "text": "Listed under the US Endangered Species Act",
+     "sourceUrl": "https://www.fws.gov/law/endangered-species-act"
+    }
+   },
+   "ospar": {
+    "name": {
+     "text": "OSPAR Convention",
+     "sourceUrl": "https://www.ospar.org/convention"
+    },
+    "full": {
+     "text": "Convention for the Protection of the Marine Environment of the North-East Atlantic",
+     "sourceUrl": "https://www.ospar.org/convention",
+     "verified": "EUR-Lex Council Decision 98/249/EC (EN)"
+    },
+    "intro": {
+     "text": "Listed by the OSPAR Convention as threatened or declining",
+     "sourceUrl": "https://www.ospar.org/work-areas/bdc/species-habitats/list-of-threatened-declining-species-habitats"
+    }
+   }
+  },
+  "ospar": {
+   "threatenedDeclining": "Listed by the OSPAR Convention as threatened or declining",
+   "regions": null
+  },
+  "scope": {
+   "global": null,
+   "europe": null,
+   "mediterranean": null,
+   "national": null
+  },
+  "natureServe": {
+   "G1": null,
+   "G2": null,
+   "G3": null,
+   "G4": null,
+   "G5": null,
+   "GH": null,
+   "GX": null,
+   "T": null
+  },
+  "usEsa": {
+   "LE": null,
+   "LT": null,
+   "PE": null,
+   "PT": null,
+   "C": null,
+   "XE": null,
+   "XN": null
+  },
+  "sizeGroups": {
+   "small": "Small",
+   "medium": "Medium",
+   "large": "Large",
+   "subgroup": "{group} {i}",
+   "subgroupLong": "{group}, part {i}"
+  },
+  "extinctionPeriod": {
+   "extinct": {
+    "text": "Extinction: about {n} {years} ago",
+    "sourceUrl": null,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod"
+   },
+   "extinctRange": {
+    "text": "Extinction: about {from} to {to} {years} ago",
+    "sourceUrl": null,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod"
+   },
+   "lastRecord": {
+    "text": "Last record: about {n} {years} ago",
+    "sourceUrl": null,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod"
+   },
+   "lastRecordRange": {
+    "text": "Last record: about {from} to {to} {years} ago",
+    "sourceUrl": null,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod"
+   },
+   "years": {
+    "one": "year",
+    "other": "years"
+   },
+   "yearsPluralRule": "Intl.PluralRules(locale) category of the last number",
+   "needsNativeReview": false
+  },
+  "noIucnBefore1500": {
+   "text": "The IUCN Red List records extinctions since 1500 AD, so a species that died out earlier has no Red List category.",
+   "sourceUrl": "https://nc.iucnredlist.org/redlist/content/attachment_files/RedListGuidelines.pdf",
+   "quote": "Assessments of the following taxa may NOT be included on the IUCN Red List ... Taxa known to have gone Extinct before 1500 CE (Guidelines for Using the IUCN Red List Categories and Criteria, Version 16, March 2024, section 2.1.1); also iucnredlist.org/resources/summary-statistics: Combining the total numbers of EX and EW species gives the total number of actual extinctions recorded (since 1500 AD)",
+   "verified": "IUCN Red List Guidelines v16 (2024) s. 2.1.1 + iucnredlist.org summary statistics"
+  }
+ },
+ "ru": {
+  "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+  "sources": [
+   {
+    "title": "IUCN Red List categories and criteria, version 3.1 (Russian version), IUCN 2001",
+    "url": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+    "landing": "https://portals.iucn.org/library/node/9641",
+    "official": true,
+    "quote": "Таксон является “Исчезающим”; “НАХОДЯЩИЕСЯ НА ГРАНИ ПОЛНОГО ИСЧЕЗНОВЕНИЯ”; “ВЫЗЫВАЮЩИЕ НАИМЕНЬШИЕ ОПАСЕНИЯ”; “НЕДОСТАТОК ДАННЫХ”; “НЕОЦЕНЕННЫЕ”"
+   },
+   {
+    "title": "Википедия: Охранный статус",
+    "url": "https://ru.wikipedia.org/wiki/Охранный_статус",
+    "quote": "«Находящиеся на грани исчезновения» ... «Исчезающие» ... «Находящиеся в состоянии, близком к угрожаемому» ... «Неоценённые»"
+   },
+   {
+    "title": "Википедия: Шаблон:Охранный статус (навигационная таблица)",
+    "url": "https://ru.wikipedia.org/wiki/Шаблон:Охранный_статус",
+    "quote": "Вымирающие (EN); Близкие к уязвимому положению (NT); Угроза для которых не оценивалась (NE)"
+   },
+   {
+    "title": "Википедия: Красная книга России (категории по приказу Минприроды № 161 от 24.03.2020)",
+    "url": "https://ru.wikipedia.org/wiki/Красная_книга_России",
+    "quote": "КР ... Находящиеся под критической угрозой исчезновения (CR); И ... Исчезающие (EN); НД ... Недостаточно данных (DD)"
+   },
+   {
+    "title": "Википедия: Международный союз охраны природы",
+    "url": "https://ru.wikipedia.org/wiki/Международный_союз_охраны_природы",
+    "quote": "Международный союз охраны природы, МСОП"
+   },
+   {
+    "title": "Википедия: Красная книга (раздел о США)",
+    "url": "https://ru.wikipedia.org/wiki/Красная_книга",
+    "quote": "её заменяет Закон «Об исчезающих видах», принятый в 1973 году"
+   },
+   {
+    "title": "Википедия: Микропластик",
+    "url": "https://ru.wikipedia.org/wiki/Микропластик",
+    "quote": "Конвенция о защите морской среды Северо-Восточной Атлантики ... Конвенции ОСПАР"
+   },
+   {
+    "title": "Википедия: NatureServe",
+    "url": "https://ru.wikipedia.org/wiki/NatureServe",
+    "quote": "NatureServe ... некоммерческая организация"
+   }
+  ],
+  "iucnCategory": {
+   "card": {
+    "text": "Категория МСОП",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+    "verified": "official IUCN Russian translation (2001): 'Красного списка МСОП'"
+   },
+   "short": {
+    "text": "МСОП",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+    "verified": "official IUCN Russian translation (2001): 'Красного списка МСОП'"
+   },
+   "full": {
+    "text": "Категория Красного списка Международного союза охраны природы",
+    "sourceUrl": "https://ru.wikipedia.org/wiki/Международный_союз_охраны_природы",
+    "note": "'Красного списка МСОП' verified in the official IUCN Russian translation; the spelled-out name 'Международный союз охраны природы' is from ru.wikipedia (not in that PDF)"
+   },
+   "orgName": {
+    "text": "Международный союз охраны природы",
+    "sourceUrl": "https://ru.wikipedia.org/wiki/Международный_союз_охраны_природы"
+   }
+  },
+  "assessor": {
+   "iucn": "МСОП",
+   "natureServe": "NatureServe",
+   "usEsa": "Закон США об исчезающих видах",
+   "ospar": "Конвенция ОСПАР"
+  },
+  "otherSystem": {
+   "card": {
+    "text": "Другая оценка",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+    "note": "descriptive label (Bob) | review 2026-10-08: own wording (Bob), grammar checked, no source for the phrasing",
+    "needsNativeReview": true
+   }
+  },
+  "notEvaluated": {
+   "card": {
+    "text": "Оценка МСОП не проводилась",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+    "note": "descriptive label (Bob); category name NE is in rules.json | review 2026-10-08: own wording (Bob), grammar checked, no source for the phrasing",
+    "needsNativeReview": true
+   },
+   "detail": {
+    "text": "Оценка МСОП не проводилась: опубликованной оценки охранного статуса нет",
+    "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+    "note": "descriptive copy (Bob) | review 2026-10-08: own wording (Bob), grammar checked, no source for the phrasing",
+    "needsNativeReview": true
+   }
+  },
+  "systems": {
+   "natureServe": {
+    "name": {
+     "text": "NatureServe",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/NatureServe",
+     "note": "proper name in every language, not a status code"
+    },
+    "intro": {
+     "text": "Оценка NatureServe, североамериканской природоохранной организации",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/NatureServe",
+     "needsNativeReview": true,
+     "note": "review 2026-10-08: own wording (Bob), grammar checked, no source for the phrasing"
+    }
+   },
+   "usEsa": {
+    "name": {
+     "text": "Закон США об исчезающих видах",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/Красная_книга",
+     "note": "ru.wikipedia verbatim ('Закон «Об исчезающих видах»', 'Закону об исчезающих видах 1973 года'); wiki source, not official"
+    },
+    "intro": {
+     "text": "Статус по Закону США об исчезающих видах",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/Красная_книга"
+    }
+   },
+   "ospar": {
+    "name": {
+     "text": "Конвенция ОСПАР",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/Микропластик"
+    },
+    "full": {
+     "text": "Конвенция о защите морской среды Северо-Восточной Атлантики",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/Микропластик",
+     "note": "ru.wikipedia (Микропластик) link text; Russia is not a party, no official Russian text found"
+    },
+    "intro": {
+     "text": "В списке угрожаемых или сокращающихся видов Конвенции ОСПАР",
+     "sourceUrl": "https://ru.wikipedia.org/wiki/Микропластик",
+     "needsNativeReview": true,
+     "note": "descriptive rendering of 'OSPAR List of Threatened and/or Declining Species and Habitats', not an official translation | review 2026-10-08: 'угрожаемых' matches the official IUCN Russian translation's term for 'threatened' (‘близком к угрожаемому’); Russia is not an OSPAR party, so no official Russian list name exists. Kept, needsNativeReview true."
+    }
+   }
+  },
+  "ospar": {
+   "threatenedDeclining": "В списке угрожаемых или сокращающихся видов Конвенции ОСПАР",
+   "regions": null
+  },
+  "scope": {
+   "global": null,
+   "europe": null,
+   "mediterranean": null,
+   "national": null
+  },
+  "natureServe": {
+   "G1": null,
+   "G2": null,
+   "G3": null,
+   "G4": null,
+   "G5": null,
+   "GH": null,
+   "GX": null,
+   "T": null
+  },
+  "usEsa": {
+   "LE": null,
+   "LT": null,
+   "PE": null,
+   "PT": null,
+   "C": null,
+   "XE": null,
+   "XN": null
+  },
+  "sizeGroups": {
+   "small": "Мелкие",
+   "medium": "Средние",
+   "large": "Крупные",
+   "subgroup": "{group} {i}",
+   "subgroupLong": "{group}, часть {i}",
+   "impliedNoun": "животные"
+  },
+  "extinctionPeriod": {
+   "extinct": {
+    "text": "Время вымирания: около {n} {years} назад",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (около / от / до take the genitive: около 1 года, 2 лет, 21 года, 14 000 лет, 1,5 года); wording is own judgement, 'время вымирания' attested in ru.wikipedia; needsNativeReview stays true"
+   },
+   "extinctRange": {
+    "text": "Время вымирания: примерно от {from} до {to} {years} назад",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (около / от / до take the genitive: около 1 года, 2 лет, 21 года, 14 000 лет, 1,5 года); wording is own judgement, 'время вымирания' attested in ru.wikipedia; needsNativeReview stays true"
+   },
+   "lastRecord": {
+    "text": "Самые поздние находки: около {n} {years} назад",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (около / от / до take the genitive: около 1 года, 2 лет, 21 года, 14 000 лет, 1,5 года); wording is own judgement, 'время вымирания' attested in ru.wikipedia; needsNativeReview stays true"
+   },
+   "lastRecordRange": {
+    "text": "Самые поздние находки: примерно от {from} до {to} {years} назад",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (около / от / до take the genitive: около 1 года, 2 лет, 21 года, 14 000 лет, 1,5 года); wording is own judgement, 'время вымирания' attested in ru.wikipedia; needsNativeReview stays true"
+   },
+   "years": {
+    "one": "года",
+    "few": "лет",
+    "many": "лет",
+    "other": "года"
+   },
+   "yearsPluralRule": "Intl.PluralRules(locale) category of the last number",
+   "needsNativeReview": true
+  },
+  "noIucnBefore1500": {
+   "text": "Красный список МСОП учитывает вымирания начиная с 1500 года, поэтому у вида, исчезнувшего раньше, категории Красного списка нет.",
+   "sourceUrl": "https://nc.iucnredlist.org/redlist/content/attachment_files/RedListGuidelines.pdf",
+   "quote": "Assessments of the following taxa may NOT be included on the IUCN Red List ... Taxa known to have gone Extinct before 1500 CE (Guidelines for Using the IUCN Red List Categories and Criteria, Version 16, March 2024, section 2.1.1)",
+   "needsNativeReview": true,
+   "note": "review 2026-10-08: fact verified (IUCN Guidelines v16 s. 2.1.1; summary statistics). 'Красный список МСОП' verified in the official IUCN Russian translation. Sentence wording is own judgement: needsNativeReview stays true. Text unchanged."
+  }
+ },
+ "pl": {
+  "sourceUrl": "https://panel.iop.krakow.pl/uploads/wydawnictwa_artykuly/3b904a0bd23e641f69c8f40be35324ccd670ad69.pdf",
+  "sources": [
+   {
+    "title": "Głowaciński Z. i in., Czerwona lista kręgowców Polski, wersja uaktualniona, Chrońmy Przyrodę Ojczystą 78/2/2022 (IOP PAN)",
+    "url": "https://panel.iop.krakow.pl/uploads/wydawnictwa_artykuly/3b904a0bd23e641f69c8f40be35324ccd670ad69.pdf",
+    "official": true,
+    "quote": "CR ... krytycznie zagrożony; EN ... zagrożony; VU ... narażony; NT ... gatunek bliski zagrożenia; LC ... gatunek najmniejszej troski; DD ... dane brakujące, niewystarczające"
+   },
+   {
+    "title": "Wikipedia: Czerwona księga gatunków zagrożonych",
+    "url": "https://pl.wikipedia.org/wiki/Czerwona_księga_gatunków_zagrożonych",
+    "quote": "wymarłe na wolności (extinct in the wild); krytycznie zagrożone; NE (not evaluated) gatunki niepoddane jeszcze ocenie"
+   },
+   {
+    "title": "Wikipedia: Status ochronny",
+    "url": "https://pl.wikipedia.org/wiki/Status_ochronny",
+    "quote": "brak danych (DD); nie oszacowano (NE)"
+   },
+   {
+    "title": "Wikipedia: Szablon:Takson infobox",
+    "url": "https://pl.wikipedia.org/wiki/Szablon:Takson_infobox",
+    "quote": "Kategoria zagrożenia (CKGZ); narażony na wyginięcie; najmniejszej troski; brak danych"
+   },
+   {
+    "title": "Polska czerwona księga zwierząt. Bezkręgowce, IOP PAN (2004), Przyjęte kategorie zagrożeń",
+    "url": "https://www.iop.krakow.pl/pckz/default2b15.html?je=pl&nazwa=katz",
+    "quote": "gatunki skrajnie zagrożone; gatunki bardzo wysokiego ryzyka, silnie zagrożone"
+   },
+   {
+    "title": "Polski Komitet Krajowy IUCN",
+    "url": "https://iucn.org.pl/",
+    "quote": "Polski Komitet Krajowy Międzynarodowej Unii Ochrony Przyrody (IUCN)"
+   },
+   {
+    "title": "Wikipedia: Endangered Species Act",
+    "url": "https://pl.wikipedia.org/wiki/Endangered_Species_Act",
+    "quote": "amerykańska ustawa o zagrożonych gatunkach z 1973 r."
+   },
+   {
+    "title": "EUR-Lex: Konwencja OSPAR (streszczenie) i decyzja 98/249/WE",
+    "url": "https://eur-lex.europa.eu/PL/legal-content/summary/ospar-convention.html",
+    "quote": "Konwencja OSPAR; Konwencji o ochronie środowiska morskiego obszaru Północno-Wschodniego Atlantyku"
+   }
+  ],
+  "iucnCategory": {
+   "card": {
+    "text": "Kategoria zagrożenia",
+    "sourceUrl": "https://pl.wikipedia.org/wiki/Szablon:Takson_infobox",
+    "note": "pl.wikipedia taxobox heading 'Kategoria zagrożenia (CKGZ)' (wiki, verbatim)"
+   },
+   "short": {
+    "text": "Czerwona lista",
+    "sourceUrl": "https://iucn.org.pl/2023/02/powstaje-nowa-polska-czerwona-lista/",
+    "verified": "Polish National Committee of IUCN: 'na wzór globalnej Czerwonej listy'"
+   },
+   "full": {
+    "text": "Kategoria zagrożenia według Międzynarodowej Unii Ochrony Przyrody",
+    "sourceUrl": "https://iucn.org.pl/",
+    "needsNativeReview": true,
+    "note": "review 2026-10-08: own wording (Bob) built from verified terms, grammar checked; no source for the phrasing"
+   },
+   "orgName": {
+    "text": "Międzynarodowa Unia Ochrony Przyrody",
+    "sourceUrl": "https://iucn.org.pl/",
+    "verified": "Polish National Committee of IUCN (iucn.org.pl): 'Polski Komitet Krajowy Międzynarodowej Unii Ochrony Przyrody'"
+   }
+  },
+  "assessor": {
+   "iucn": "Czerwona lista",
+   "natureServe": "NatureServe",
+   "usEsa": "amerykańska ustawa o zagrożonych gatunkach",
+   "ospar": "Konwencja OSPAR"
+  },
+  "otherSystem": {
+   "card": {
+    "text": "Inna ocena",
+    "sourceUrl": "https://panel.iop.krakow.pl/uploads/wydawnictwa_artykuly/3b904a0bd23e641f69c8f40be35324ccd670ad69.pdf",
+    "note": "descriptive label (Bob) | review 2026-10-08: own wording (Bob) built from verified terms, grammar checked; no source for the phrasing",
+    "needsNativeReview": true
+   }
+  },
+  "notEvaluated": {
+   "card": {
+    "text": "Brak oceny zagrożenia",
+    "sourceUrl": "https://panel.iop.krakow.pl/uploads/wydawnictwa_artykuly/3b904a0bd23e641f69c8f40be35324ccd670ad69.pdf",
+    "note": "descriptive label (Bob); category name NE is in rules.json | review 2026-10-08: own wording (Bob) built from verified terms, grammar checked; no source for the phrasing",
+    "needsNativeReview": true
+   },
+   "detail": {
+    "text": "Brak oceny zagrożenia: nie opublikowano jeszcze oceny tego gatunku",
+    "sourceUrl": "https://panel.iop.krakow.pl/uploads/wydawnictwa_artykuly/3b904a0bd23e641f69c8f40be35324ccd670ad69.pdf",
+    "note": "descriptive copy (Bob) | review 2026-10-08: own wording (Bob) built from verified terms, grammar checked; no source for the phrasing",
+    "needsNativeReview": true
+   }
+  },
+  "systems": {
+   "natureServe": {
+    "name": {
+     "text": "NatureServe",
+     "sourceUrl": "https://www.natureserve.org/",
+     "note": "proper name in every language, not a status code"
+    },
+    "intro": {
+     "text": "Ocena NatureServe, północnoamerykańskiej organizacji ochrony przyrody",
+     "sourceUrl": "https://www.natureserve.org/",
+     "needsNativeReview": true,
+     "note": "descriptive phrase, not a term | review 2026-10-08: grammar checked (apposition in the genitive agrees with the indeclinable name); descriptor is own wording; kept, needsNativeReview true"
+    }
+   },
+   "usEsa": {
+    "name": {
+     "text": "amerykańska ustawa o zagrożonych gatunkach",
+     "sourceUrl": "https://pl.wikipedia.org/wiki/Endangered_Species_Act",
+     "note": "pl.wikipedia verbatim ('amerykańska ustawa o zagrożonych gatunkach z 1973 r.'); wiki source, not official"
+    },
+    "intro": {
+     "text": "Status według amerykańskiej ustawy o zagrożonych gatunkach",
+     "sourceUrl": "https://pl.wikipedia.org/wiki/Endangered_Species_Act"
+    }
+   },
+   "ospar": {
+    "name": {
+     "text": "Konwencja OSPAR",
+     "sourceUrl": "https://eur-lex.europa.eu/PL/legal-content/summary/ospar-convention.html",
+     "verified": "EUR-Lex summary 'Konwencja OSPAR'"
+    },
+    "full": {
+     "text": "Konwencja o ochronie środowiska morskiego obszaru Północno-Wschodniego Atlantyku",
+     "sourceUrl": "https://eur-lex.europa.eu/PL/legal-content/summary/ospar-convention.html",
+     "verified": "EUR-Lex Council Decision 98/249/WE (PL)"
+    },
+    "intro": {
+     "text": "Na liście gatunków zagrożonych lub zanikających Konwencji OSPAR",
+     "sourceUrl": "https://eur-lex.europa.eu/PL/legal-content/summary/ospar-convention.html",
+     "needsNativeReview": true,
+     "note": "descriptive rendering of 'OSPAR List of Threatened and/or Declining Species and Habitats', not an official translation | review 2026-10-08: 'zanikających' is consistent with IOP PAN wording for decline ('tempo zanikania (w sensie ubytku liczebności i/lub areału)'); no official Polish name of the OSPAR list found (Poland is not a party). Kept, needsNativeReview true."
+    }
+   }
+  },
+  "ospar": {
+   "threatenedDeclining": "Na liście gatunków zagrożonych lub zanikających Konwencji OSPAR",
+   "regions": null
+  },
+  "scope": {
+   "global": null,
+   "europe": null,
+   "mediterranean": null,
+   "national": null
+  },
+  "natureServe": {
+   "G1": null,
+   "G2": null,
+   "G3": null,
+   "G4": null,
+   "G5": null,
+   "GH": null,
+   "GX": null,
+   "T": null
+  },
+  "usEsa": {
+   "LE": null,
+   "LT": null,
+   "PE": null,
+   "PT": null,
+   "C": null,
+   "XE": null,
+   "XN": null
+  },
+  "sizeGroups": {
+   "small": "Małe",
+   "medium": "Średnie",
+   "large": "Duże",
+   "subgroup": "{group} {i}",
+   "subgroupLong": "{group}, część {i}",
+   "impliedNoun": "zwierzęta"
+  },
+  "extinctionPeriod": {
+   "extinct": {
+    "text": "Wymarcie: około {n} {years} temu",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (około takes the genitive: około 1 roku, 2 lat, 21 lat, 14 000 lat, 1,5 roku); wording is own judgement; needsNativeReview stays true"
+   },
+   "extinctRange": {
+    "text": "Wymarcie: od około {from} do {to} {years} temu",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (około takes the genitive: około 1 roku, 2 lat, 21 lat, 14 000 lat, 1,5 roku); wording is own judgement; needsNativeReview stays true"
+   },
+   "lastRecord": {
+    "text": "Najmłodsze znaleziska: około {n} {years} temu",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (około takes the genitive: około 1 roku, 2 lat, 21 lat, 14 000 lat, 1,5 roku); wording is own judgement; needsNativeReview stays true"
+   },
+   "lastRecordRange": {
+    "text": "Najmłodsze znaleziska: od około {from} do {to} {years} temu",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (około takes the genitive: około 1 roku, 2 lat, 21 lat, 14 000 lat, 1,5 roku); wording is own judgement; needsNativeReview stays true"
+   },
+   "years": {
+    "one": "roku",
+    "few": "lat",
+    "many": "lat",
+    "other": "roku"
+   },
+   "yearsPluralRule": "Intl.PluralRules(locale) category of the last number",
+   "needsNativeReview": true
+  },
+  "noIucnBefore1500": {
+   "text": "Czerwona lista Międzynarodowej Unii Ochrony Przyrody obejmuje wymarcia od 1500 roku, dlatego gatunek, który wymarł wcześniej, nie ma kategorii zagrożenia.",
+   "sourceUrl": "https://nc.iucnredlist.org/redlist/content/attachment_files/RedListGuidelines.pdf",
+   "quote": "Assessments of the following taxa may NOT be included on the IUCN Red List ... Taxa known to have gone Extinct before 1500 CE (Guidelines for Using the IUCN Red List Categories and Criteria, Version 16, March 2024, section 2.1.1)",
+   "needsNativeReview": true,
+   "note": "review 2026-10-08: fact verified (IUCN Guidelines v16 s. 2.1.1; summary statistics). Organisation name verified (iucn.org.pl). Grammar and agreement correct; sentence wording is own judgement, needsNativeReview stays true. Text unchanged."
+  }
+ },
+ "lv": {
+  "sourceUrl": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/",
+  "sources": [
+   {
+    "title": "Latvijas Sarkanā grāmata, 3. izdevums (2025), Biežāk lietotie termini (LU Bioloģijas institūts, Dabas aizsardzības pārvalde, LIFE FOR SPECIES)",
+    "url": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/",
+    "official": true,
+    "quote": "CR (Critically Endangered) kritiski apdraudēta suga; EN (Endangered) stipri apdraudēta suga; VU (Vulnerable) jutīga suga; NT (Near Threatened) gandrīz apdraudēta suga; LC (Least Concern) nav apdraudēta suga"
+   },
+   {
+    "title": "Latvijas Sarkanā grāmata: sugas lapa Baltijas pogainais ronis",
+    "url": "https://sarkanagramata.lu.lv/suga/baltijas-pogainais-ronis/",
+    "quote": "Stipri apdraudēta (EN) Baltijas pogainais ronis; Kategorija globāli"
+   },
+   {
+    "title": "Latvijas Sarkanā grāmata: sākumlapa",
+    "url": "https://sarkanagramata.lu.lv/",
+    "quote": "Trūkst datu (DD); Jutīga (VU); Stipri apdraudēta (EN)"
+   },
+   {
+    "title": "Vikipēdija: Aizsardzības statuss",
+    "url": "https://lv.wikipedia.org/wiki/Aizsardzības_statuss",
+    "quote": "izmiris (EX); izmiris savvaļā (EW); nepilnīga informācija (DD); nav novērtēts (NE); vai suga ir izmirusi"
+   },
+   {
+    "title": "Vikipēdija: Latvijas Sarkanā grāmata",
+    "url": "https://lv.wikipedia.org/wiki/Latvijas_Sarkanā_grāmata",
+    "quote": "kritiski apdraudētās sugas (CR); stipri apdraudētās sugas (EN); jutīgās sugas (VU)"
+   },
+   {
+    "title": "Vikipēdija: Sarkanā grāmata",
+    "url": "https://lv.wikipedia.org/wiki/Sarkanā_grāmata",
+    "quote": "sugas apdraudētības kategorija jeb statuss"
+   },
+   {
+    "title": "Vikipēdija: Starptautiskā Dabas aizsardzības savienība",
+    "url": "https://lv.wikipedia.org/wiki/Starptautiskā_Dabas_aizsardzības_savienība",
+    "quote": "Starptautiskā dabas un dabas resursu aizsardzības savienība (bieži saukta par IUCN"
+   },
+   {
+    "title": "Vikipēdija: Ziemeļjūra",
+    "url": "https://lv.wikipedia.org/wiki/Ziemeļjūra",
+    "quote": "tika izveidota OSPAR konvencija"
+   },
+   {
+    "title": "EUR-Lex: OSPAR Konvencija (kopsavilkums) un lēmums 98/249/EK",
+    "url": "https://eur-lex.europa.eu/LV/legal-content/summary/ospar-convention.html",
+    "quote": "Konvencijas par Ziemeļaustrumatlantijas jūras vides aizsardzību"
+   }
+  ],
+  "iucnCategory": {
+   "card": {
+    "text": "Apdraudētības kategorija",
+    "sourceUrl": "https://lv.wikipedia.org/wiki/Sarkanā_grāmata",
+    "needsNativeReview": true,
+    "note": "review 2026-10-08: 'apdraudētības kategorija' is verbatim only on lv.wikipedia (Sarkanā grāmata); the Latvian Red Book has 'apdraudētības statusu' and 'Kategorija globāli'. Grammatical; flagged because lv.wiki-only"
+   },
+   "short": {
+    "text": "Sarkanais saraksts",
+    "sourceUrl": "https://sarkanagramata.lu.lv/sarkana-gramata/",
+    "verified": "Latvian Red Book 2025 (sarkanagramata.lu.lv/sarkana-gramata/): 'Apdraudēto sugu jeb Sarkanie saraksti'"
+   },
+   "full": {
+    "text": "Starptautiskās dabas aizsardzības savienības apdraudētības kategorija",
+    "sourceUrl": "https://lv.wikipedia.org/wiki/Starptautiskā_Dabas_aizsardzības_savienība",
+    "needsNativeReview": true,
+    "note": "review 2026-10-08: built from lv.wikipedia name + 'apdraudētība' (Latvian Red Book: 'lai novērtētu apdraudētības statusu'); no verbatim source"
+   },
+   "orgName": {
+    "text": "Starptautiskā dabas aizsardzības savienība",
+    "sourceUrl": "https://lv.wikipedia.org/wiki/Starptautiskā_Dabas_aizsardzības_savienība",
+    "needsNativeReview": true,
+    "note": "review 2026-10-08: short form is lv.wikipedia only. The verified official form is the Latvian Red Book's 'Starptautiskā dabas un dabas resursu aizsardzības savienība' (sarkanagramata.lu.lv, Biežāk lietotie termini), which reflects IUCN's pre-2008 name; use it if a verified form is required"
+   }
+  },
+  "assessor": {
+   "iucn": "Sarkanais saraksts",
+   "natureServe": "NatureServe",
+   "usEsa": "ASV Apdraudēto sugu likums",
+   "ospar": "OSPAR konvencija"
+  },
+  "otherSystem": {
+   "card": {
+    "text": "Cits novērtējums",
+    "sourceUrl": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/",
+    "note": "descriptive label (Bob) | review 2026-10-08: own wording (Bob); 'apdraudētība', 'novērtēt' are Latvian Red Book words, phrasing not sourced; no Latvian native speaker available",
+    "needsNativeReview": true
+   }
+  },
+  "notEvaluated": {
+   "card": {
+    "text": "Apdraudētība nav novērtēta",
+    "sourceUrl": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/",
+    "note": "descriptive label (Bob); category name NE is in rules.json | review 2026-10-08: own wording (Bob); 'apdraudētība', 'novērtēt' are Latvian Red Book words, phrasing not sourced; no Latvian native speaker available",
+    "needsNativeReview": true
+   },
+   "detail": {
+    "text": "Apdraudētība nav novērtēta: šīs sugas novērtējums vēl nav publicēts",
+    "sourceUrl": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/",
+    "note": "descriptive copy (Bob) | review 2026-10-08: own wording (Bob); 'apdraudētība', 'novērtēt' are Latvian Red Book words, phrasing not sourced; no Latvian native speaker available",
+    "needsNativeReview": true
+   }
+  },
+  "systems": {
+   "natureServe": {
+    "name": {
+     "text": "NatureServe",
+     "sourceUrl": "https://www.natureserve.org/",
+     "note": "proper name in every language, not a status code"
+    },
+    "intro": {
+     "text": "Ziemeļamerikas dabas aizsardzības organizācijas NatureServe novērtējums",
+     "sourceUrl": "https://www.natureserve.org/",
+     "needsNativeReview": true,
+     "note": "descriptive phrase, not a term | review 2026-10-08: own wording; needsNativeReview stays true"
+    }
+   },
+   "usEsa": {
+    "name": {
+     "text": "ASV Apdraudēto sugu likums",
+     "sourceUrl": null,
+     "needsNativeReview": true,
+     "note": "no Latvian source found (lv.wikipedia only cites the English title) | review 2026-10-08: searched again; the only Latvian hits ('Apdraudēto sugu likums', 'Likums par apdraudētajām sugām') are machine-translated content sites, not reliable. Kept as a proposal, needsNativeReview true"
+    },
+    "intro": {
+     "text": "Statuss saskaņā ar ASV Apdraudēto sugu likumu",
+     "sourceUrl": null,
+     "needsNativeReview": true,
+     "note": "uses the unverified LV name"
+    }
+   },
+   "ospar": {
+    "name": {
+     "text": "OSPAR konvencija",
+     "sourceUrl": "https://eur-lex.europa.eu/LV/legal-content/summary/ospar-convention.html",
+     "verified": "EUR-Lex summary 'OSPAR Konvencija' and lv.wikipedia Ziemeļjūra 'OSPAR konvencija'"
+    },
+    "full": {
+     "text": "Konvencija par Ziemeļaustrumatlantijas jūras vides aizsardzību",
+     "sourceUrl": "https://eur-lex.europa.eu/LV/legal-content/summary/ospar-convention.html",
+     "verified": "EUR-Lex Council Decision 98/249/EK (LV)"
+    },
+    "intro": {
+     "text": "OSPAR konvencijas apdraudēto vai sarūkošo sugu sarakstā",
+     "sourceUrl": "https://eur-lex.europa.eu/LV/legal-content/summary/ospar-convention.html",
+     "needsNativeReview": true,
+     "note": "descriptive rendering of 'OSPAR List of Threatened and/or Declining Species and Habitats', not an official translation | review 2026-10-08: 'sarūkošās' verified as a Latvian Red Book term for declining species; the list name itself is not an official translation (Latvia is not an OSPAR party); needsNativeReview stays true"
+    }
+   }
+  },
+  "ospar": {
+   "threatenedDeclining": "OSPAR konvencijas apdraudēto vai sarūkošo sugu sarakstā",
+   "regions": null
+  },
+  "scope": {
+   "global": null,
+   "europe": null,
+   "mediterranean": null,
+   "national": null
+  },
+  "natureServe": {
+   "G1": null,
+   "G2": null,
+   "G3": null,
+   "G4": null,
+   "G5": null,
+   "GH": null,
+   "GX": null,
+   "T": null
+  },
+  "usEsa": {
+   "LE": null,
+   "LT": null,
+   "PE": null,
+   "PT": null,
+   "C": null,
+   "XE": null,
+   "XN": null
+  },
+  "sizeGroups": {
+   "small": "Mazie",
+   "medium": "Vidējie",
+   "large": "Lielie",
+   "subgroup": "{group} {i}",
+   "subgroupLong": "{group}, {i}. daļa",
+   "impliedNoun": "dzīvnieki"
+  },
+  "extinctionPeriod": {
+   "extinct": {
+    "text": "Izmiršana: pirms apmēram {n} {years}",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (pirms + genitive singular after numbers ending in 1 except 11, dative plural otherwise: pirms 1 gada, 21 gada, 2 gadiem, 11 gadiem, 14 000 gadiem; 'pirms 14 000 gadu' is also correct Latvian). Own judgement, no Latvian native speaker available; needsNativeReview stays true"
+   },
+   "extinctRange": {
+    "text": "Izmiršana: pirms apmēram {from} līdz {to} {years}",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (pirms + genitive singular after numbers ending in 1 except 11, dative plural otherwise: pirms 1 gada, 21 gada, 2 gadiem, 11 gadiem, 14 000 gadiem; 'pirms 14 000 gadu' is also correct Latvian). Own judgement, no Latvian native speaker available; needsNativeReview stays true"
+   },
+   "lastRecord": {
+    "text": "Vēlākie atradumi: pirms apmēram {n} {years}",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (pirms + genitive singular after numbers ending in 1 except 11, dative plural otherwise: pirms 1 gada, 21 gada, 2 gadiem, 11 gadiem, 14 000 gadiem; 'pirms 14 000 gadu' is also correct Latvian). Own judgement, no Latvian native speaker available; needsNativeReview stays true"
+   },
+   "lastRecordRange": {
+    "text": "Vēlākie atradumi: pirms apmēram {from} līdz {to} {years}",
+    "sourceUrl": null,
+    "needsNativeReview": true,
+    "note": "composed template (Jimmy); figures and the period come from the card meta extinctionPeriod | review 2026-10-08: grammar checked (pirms + genitive singular after numbers ending in 1 except 11, dative plural otherwise: pirms 1 gada, 21 gada, 2 gadiem, 11 gadiem, 14 000 gadiem; 'pirms 14 000 gadu' is also correct Latvian). Own judgement, no Latvian native speaker available; needsNativeReview stays true"
+   },
+   "years": {
+    "zero": "gadiem",
+    "one": "gada",
+    "other": "gadiem"
+   },
+   "yearsPluralRule": "Intl.PluralRules(locale) category of the last number",
+   "needsNativeReview": true
+  },
+  "noIucnBefore1500": {
+   "text": "Starptautiskās dabas aizsardzības savienības Sarkanajā sarakstā ir iekļautas tikai sugas, kas izmirušas kopš 1500. gada, tāpēc sugai, kas izmira agrāk, apdraudētības kategorijas nav.",
+   "sourceUrl": "https://nc.iucnredlist.org/redlist/content/attachment_files/RedListGuidelines.pdf",
+   "quote": "Assessments of the following taxa may NOT be included on the IUCN Red List ... Taxa known to have gone Extinct before 1500 CE (Guidelines for Using the IUCN Red List Categories and Criteria, Version 16, March 2024, section 2.1.1)",
+   "needsNativeReview": true,
+   "note": "review 2026-10-08: fact verified (IUCN Guidelines v16 s. 2.1.1; summary statistics). Wording is own judgement, no Latvian native speaker available: needsNativeReview stays true."
+  }
+ }
+}
