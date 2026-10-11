@@ -440,6 +440,358 @@
       "humanRole": "Klimatyczna utrata maleńkiego wyspowego siedliska — nie polowania. Mały zasięg uczynił cios klimatyczny śmiertelnym.",
       "sources": [],
       "sourcesNote": "Czerwona lista IUCN (Melomys rubicola, EX); raport GBRMPA/Queensland 2016; analizy Woinarskiego i Wallera."
+    },
+    "huia": {
+      "commonName": "Kurobród różnodzioby",
+      "hook": "Leśny ptak z Nowej Zelandii, u którego samiec i samica mieli zupełnie różne dzioby.",
+      "imageAlt": "Dawna barwna plansza z samcem i samicą kurobroda różnodziobego, czarnymi ptakami z pomarańczowymi koralami i białymi końcami ogona",
+      "what": "Kurobród różnodzioby (Heteralocha acutirostris) był dużym czarnym ptakiem z koralami z Wyspy Północnej Nowej Zelandii. Samiec miał krótki, mocny dziób, a samica długi i zakrzywiony. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Lasy południowej części Wyspy Północnej w Nowej Zelandii.",
+      "story": "Maorysi cenili jej pióra z białymi końcami, noszone tylko przez ludzi wysokiego rodu. Po przybyciu Europejczyków kolekcjonerzy i muzea kupowali skórki i pióra, a zawleczone szczury, koty i gronostaje niszczyły ptaki.",
+      "when": "Ostatnia uznana obserwacja w 1907 roku.",
+      "humanRole": "Wytępiły ją zawleczone drapieżniki, a w mniejszym stopniu polowania dla skórek i piór.",
+      "sources": [
+        {
+          "label": "Serwis «Ptaki Nowej Zelandii online»: Huja (New Zealand Birds Online: Huia)",
+          "url": "https://www.nzbirdsonline.org.nz/species/huia"
+        },
+        {
+          "label": "Wikipedia: Huja (Wikipedia: Huia)",
+          "url": "https://en.wikipedia.org/wiki/Huia"
+        }
+      ]
+    },
+    "laughing-owl": {
+      "commonName": "Sowica białolica",
+      "hook": "Nowozelandzka sowa nazwana tak od donośnego głosu, porównywanego do ludzkiego śmiechu.",
+      "imageAlt": "Stara fotografia żywej sowicy białolicej wśród paproci",
+      "what": "Sowica białolica (Sceloglaux albifacies) była dużą sową żyjącą tylko w Nowej Zelandii. Polowała głównie na ziemi, łowiąc owady, jaszczurki, ptaki, a później zawleczone szczury. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek wymarły.",
+      "range": "Otwarte, skaliste tereny Wyspy Południowej i Wyspy Stewart w Nowej Zelandii.",
+      "story": "Gdy przybyli Europejczycy, była jeszcze pospolita, lecz do 1880 roku stała się rzadka. Kolekcjonerzy zabrali wiele ptaków i jaj, rolnictwo zmieniło krajobraz, a gronostaje i koty sprowadzone przeciw królikom polowały na sowy.",
+      "when": "Ostatniego pewnego ptaka znaleziono martwego w 1914 roku.",
+      "humanRole": "Wytępiły ją zbieractwo okazów, zmiany w użytkowaniu ziemi oraz zawleczone koty i gronostaje.",
+      "sources": [
+        {
+          "label": "Wikipedia: Sowa śmieszka (Wikipedia: Laughing owl)",
+          "url": "https://en.wikipedia.org/wiki/Laughing_owl"
+        }
+      ]
+    },
+    "rodrigues-solitaire": {
+      "commonName": "Dront samotny",
+      "hook": "Wysoki, nielotny krewny dronta, który walczył kostnymi guzami na skrzydłach.",
+      "imageAlt": "Dawna rycina: dront samotny stoi przy drzewie z owocami",
+      "what": "Dront samotny (Pezophaps solitaria) był dużym nielotnym gołębiem z wyspy Rodrigues na Oceanie Indyjskim, bliskim krewnym dronta dodo. Samce były znacznie większe od samic. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Rodrigues, mała wyspa na wschód od Mauritiusa.",
+      "story": "Francuski podróżnik François Leguat opisał go około 1690 roku, także to, jak ptaki broniły terytorium guzami na skrzydłach. Osadnicy i żeglarze jedli te ptaki, a zawleczone koty i świnie zjadały jaja i pisklęta.",
+      "when": "Wymarł do końca osiemnastego wieku.",
+      "humanRole": "Wytępili go ludzie oraz zwierzęta, które przywieźli na wyspę.",
+      "sources": [
+        {
+          "label": "Wikipedia: Dront samotny (Wikipedia: Rodrigues solitaire)",
+          "url": "https://en.wikipedia.org/wiki/Rodrigues_solitaire"
+        }
+      ]
+    },
+    "cuban-macaw": {
+      "commonName": "Ara trójbarwna",
+      "hook": "Mała czerwono pomarańczowo żółta ara, która żyła tylko na Kubie.",
+      "imageAlt": "Akwarela z około 1800 roku przedstawiająca arę trójbarwną, czerwoną papugę z żółtymi i niebieskimi piórami",
+      "what": "Ara trójbarwna (Ara tricolor) była jedną z najmniejszych ar: czerwona głowa, pomarańczowy spód ciała i niebieskie skrzydła. Żyła na Kubie i na Wyspie Młodości. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek wymarły.",
+      "range": "Kuba i Wyspa Młodości, zwłaszcza bagniste niziny, takie jak bagna Zapata.",
+      "story": "Polowali na nią i handlowali nią rdzenni mieszkańcy, a później Europejczycy. Polowania dla mięsa, handel ptakami i wycinka lasów sprawiły, że do połowy dziewiętnastego wieku stała się rzadka.",
+      "when": "Ostatnie pewne relacje z około 1850 roku na Kubie i z 1864 roku na Wyspie Młodości.",
+      "humanRole": "Wytępiły ją polowania, handel ptakami i niszczenie lasów.",
+      "sources": [
+        {
+          "label": "Wikipedia: Ara kubańska (Wikipedia: Cuban macaw)",
+          "url": "https://en.wikipedia.org/wiki/Cuban_macaw"
+        }
+      ]
+    },
+    "red-rail": {
+      "commonName": "Chruścielowiec rdzawy",
+      "hook": "Nielotny rdzawy ptak z Mauritiusa, którego żeglarze łapali, machając czerwoną szmatką.",
+      "imageAlt": "Dawna barwna plansza z chruścielowcem rdzawym, rdzawobrązowym nielotnym ptakiem o długim zakrzywionym dziobie",
+      "what": "Chruścielowiec rdzawy (Aphanapteryx bonasia) był nielotnym chruścielem wielkości kury, o rdzawobrązowych, przypominających sierść piórach i długim, zakrzywionym dziobie. Żył tylko na Mauritiusie. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Mauritius na Oceanie Indyjskim.",
+      "story": "Podróżnicy pisali, że ptaki zwabiały czerwone przedmioty i łatwo było je złapać. Żeglarze i osadnicy jedli je, a zawleczone szczury, koty i świnie dokończyły dzieła.",
+      "when": "Ostatnia wzmianka z 1693 roku, wymarł około 1700 roku.",
+      "humanRole": "Wytępiły go polowania ludzi i zawleczone zwierzęta.",
+      "sources": [
+        {
+          "label": "Wikipedia: Chruściel maurytyjski (Wikipedia: Red rail)",
+          "url": "https://en.wikipedia.org/wiki/Red_rail"
+        }
+      ]
+    },
+    "hawaii-mamo": {
+      "commonName": "Hawajka żółtorzytna",
+      "hook": "Czarno złota hawajka, której pióra pokrywały płaszcze hawajskich królów.",
+      "imageAlt": "Wypchana hawajka żółtorzytna w muzeum, czarny ptak z żółtymi plamami i długim zakrzywionym dziobem",
+      "what": "Hawajka żółtorzytna (Drepanis pacifica) była czarnym ptakiem z grupy hawajek, z jaskrawożółtymi piórami na kuprze i udach oraz długim, zakrzywionym dziobem do picia nektaru. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek wymarły.",
+      "range": "Lasy wyspy Hawaiʻi.",
+      "story": "Hawajscy ptasznicy brali jej żółte pióra na królewskie płaszcze, często wypuszczając ptaki. Później dobiły ją polowania kolekcjonerów ze strzelbami, wycinka lasów, komary przenoszące ptasie choroby i zawleczone mangusty.",
+      "when": "Ostatnia potwierdzona obserwacja w 1898 roku.",
+      "humanRole": "Wytępiły ją utrata lasów, zawleczone komary i drapieżniki oraz masowe polowania dla piór.",
+      "sources": [
+        {
+          "label": "Wikipedia: Mamo hawajska (Wikipedia: Hawaii mamo)",
+          "url": "https://en.wikipedia.org/wiki/Hawaii_mamo"
+        }
+      ]
+    },
+    "toolache-wallaby": {
+      "commonName": "Macropus greyi",
+      "hook": "Być może najzgrabniejsza i najszybsza z walabii, która zniknęła w ciągu 85 lat od przybycia Europejczyków.",
+      "imageAlt": "Dawna barwna plansza Johna Goulda z dwiema smukłymi szarymi walabiami o prążkowanych ogonach",
+      "what": "Macropus greyi była smukłą szarą walabią z prążkowanym ogonem z południowo wschodniej Australii. Słynęła z szybkości i prześcigała psy. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek wymarły.",
+      "range": "Trawiaste równiny i bagna na południowym wschodzie Australii Południowej i południowym zachodzie Wiktorii.",
+      "story": "Osadnicy osuszyli bagna i zaorali jej łąki, polowali na nią dla sportu i futra oraz sprowadzili lisa rudego. Próba ratunku około 1920 roku zakończyła się źle i większość schwytanych ostatnich zwierząt zginęła.",
+      "when": "Ostatnie obserwacje na wolności w 1924 roku, ostatnie zwierzę w niewoli padło w 1939 roku.",
+      "humanRole": "Wytępiły ją niszczenie siedlisk, polowania dla sportu i futra oraz zawleczone lisy.",
+      "sources": [
+        {
+          "label": "Wikipedia: Walabia Greya (Wikipedia: Toolache wallaby)",
+          "url": "https://en.wikipedia.org/wiki/Toolache_wallaby"
+        }
+      ]
+    },
+    "chinese-paddlefish": {
+      "commonName": "Wiosłonos chiński",
+      "hook": "Jedna z największych ryb słodkowodnych świata, z długim pyskiem w kształcie miecza.",
+      "imageAlt": "Zakonserwowany wiosłonos chiński w muzeum, długa szara ryba ze spiczastym pyskiem",
+      "what": "Wiosłonos chiński (Psephurus gladius) był olbrzymią rybą rzeki Jangcy, która mogła mieć ponad 3 metry długości. Długim pyskiem wyczuwał zdobycz w mętnej wodzie. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Dorzecza Jangcy i Huang He w Chinach.",
+      "story": "Zapora Gezhouba zbudowana w 1981 roku odcięła rybę od tarlisk w górze rzeki. Przełowienie już wcześniej zmniejszyło liczebność, a ostatnią żywą rybę widziano w 2003 roku.",
+      "when": "Ostatni raz widziany żywy w 2003 roku, uznany za wymarłego w 2022 roku.",
+      "humanRole": "Wytępiły go zapora, która zablokowała wędrówkę na tarło, oraz przełowienie.",
+      "sources": [
+        {
+          "label": "Wikipedia: Wiosłonos chiński (Wikipedia: Chinese paddlefish)",
+          "url": "https://en.wikipedia.org/wiki/Chinese_paddlefish"
+        }
+      ]
+    },
+    "atitlan-grebe": {
+      "commonName": "Perkozek gwatemalski",
+      "hook": "Duży, prawie nielotny perkoz, który żył na jednym wulkanicznym jeziorze w Gwatemali.",
+      "imageAlt": "Wypchany perkozek gwatemalski w muzeum, ciemnobrązowy ptak nurkujący z grubym jasnym dziobem",
+      "what": "Perkozek gwatemalski (Podilymbus gigas) był dużym nurkującym ptakiem o bardzo krótkich skrzydłach, żyjącym tylko na jeziorze Atitlán. Miejscowi nazywali go poc. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Jezioro Atitlán w górach Gwatemali.",
+      "story": "W 1958 i 1960 roku do jeziora wpuszczono bassy dla wędkarzy. Zjadały młode perkozy oraz kraby i ryby, którymi żywiły się ptaki, a wycinanie trzcin, zabudowa brzegów i trzęsienie ziemi, które obniżyło poziom jeziora, dokończyły dzieła.",
+      "when": "Ostatnie dwa ptaki widziano w 1989 roku.",
+      "humanRole": "Wytępiły go ryby wpuszczone dla wędkarzy, wycinanie trzcin i zabudowa brzegów.",
+      "sources": [
+        {
+          "label": "Wikipedia: Perkoz olbrzymi (Wikipedia: Atitlán grebe)",
+          "url": "https://en.wikipedia.org/wiki/Atitl%C3%A1n_grebe"
+        }
+      ]
+    },
+    "choiseul-pigeon": {
+      "commonName": "Korończyk",
+      "hook": "Czubaty gołąb naziemny z Wysp Salomona, znany tylko z sześciu ptaków i jednego jaja.",
+      "imageAlt": "Dawna barwna plansza z korończykiem, niebieskoszarym gołębiem z wachlarzowatym czubem",
+      "what": "Korończyk (Microgoura meeki) żył na ziemi i miał płaski, wachlarzowaty niebieski czub. Znamy go tylko z sześciu ptaków i jednego jaja zebranych w 1904 roku. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Wyspa Choiseul na Wyspach Salomona.",
+      "story": "Miejscowi pamiętali go jako smacznego ptaka nocującego nisko nad ziemią. Polowały na niego koty sprowadzone na wyspę, bo wcześniej nigdy nie spotkał drapieżnego ssaka.",
+      "when": "Ostatnia potwierdzona obserwacja w 1904 roku.",
+      "humanRole": "Wytępiły go koty sprowadzone przez ludzi.",
+      "sources": [
+        {
+          "label": "Wikipedia: Gołąb czubaty z Choiseul (Wikipedia: Choiseul pigeon)",
+          "url": "https://en.wikipedia.org/wiki/Choiseul_pigeon"
+        }
+      ]
+    },
+    "lord-howe-swamphen": {
+      "commonName": "Modrzyk mały",
+      "hook": "Biały, nielotny krewny takahe, znany tylko z dwóch skórek muzealnych.",
+      "imageAlt": "Wypchany modrzyk mały w muzeum, biały ptak z grubym czerwonym dziobem",
+      "what": "Modrzyk mały (Porphyrio albus) z wyspy Lord Howe był krępym, nielotnym ptakiem o niemal białym upierzeniu i masywnym czerwonym dziobie. Zachowały się tylko dwie skórki, w Liverpoolu i Wiedniu. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Wyspa Lord Howe na Morzu Tasmana na wschód od Australii.",
+      "story": "Załogi pierwszych statków, które odwiedziły wyspę w 1788 roku, uznały ptaki za ufne i łatwe do zabicia. Wielorybnicy i łowcy fok zawijający po żywność prawdopodobnie wybili je, zanim w 1834 roku przybyli osadnicy.",
+      "when": "Prawdopodobnie zniknął przed 1834 rokiem.",
+      "humanRole": "Wytępiły go prawdopodobnie polowania żeglarzy odwiedzających wyspę.",
+      "sources": [
+        {
+          "label": "Wikipedia: Modrzyk biały (Wikipedia: White swamphen)",
+          "url": "https://en.wikipedia.org/wiki/White_swamphen"
+        }
+      ]
+    },
+    "alaotra-grebe": {
+      "commonName": "Perkozek długodzioby",
+      "hook": "Mały ptak nurkujący z jednego jeziora na Madagaskarze, zgubiony przez sieci i zawleczone ryby.",
+      "imageAlt": "Zdjęcie wypchanego perkozka długodziobego, małego brązowego ptaka nurkującego o rdzawej twarzy",
+      "what": "Perkozek długodzioby (Tachybaptus rufolavatus) był małym perkozem o krótkich skrzydłach, który rzadko latał daleko. Żył niemal wyłącznie na jeziorze Alaotra. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Jezioro Alaotra i pobliskie jeziora w środkowo wschodnim Madagaskarze.",
+      "story": "Pola i poletka ryżowe zajęły bagna wokół jeziora. W nylonowych sieciach skrzelowych topiły się nurkujące ptaki, zjadała je drapieżna ryba wpuszczona do jeziora, a perkozek, pospolity krewniak,, który się tam pojawił, krzyżował się z ostatnimi ptakami.",
+      "when": "Ostatnia potwierdzona obserwacja w 1985 roku, uznany za wymarłego w 2010 roku.",
+      "humanRole": "Wytępiły go niszczenie bagien, sieci rybackie i zawleczona ryba.",
+      "sources": [
+        {
+          "label": "Wikipedia: Perkozek madagaskarski (Wikipedia: Alaotra grebe)",
+          "url": "https://en.wikipedia.org/wiki/Alaotra_grebe"
+        }
+      ]
+    },
+    "pig-footed-bandicoot": {
+      "commonName": "Bandik świnionogi",
+      "hook": "Mały torbacz australijskiej pustyni o stopach podobnych do maleńkich kopyt.",
+      "imageAlt": "Dawna barwna plansza z dwoma małymi długouchymi torbaczami na cienkich nogach",
+      "what": "Bandik świnionogi (Chaeropus ecaudatus) był małym, długonogim torbaczem z wnętrza południowej Australii. Na przednich łapach miał dwa sprawne palce, podobne do świńskich kopytek. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Suche zarośla i trawiaste równiny we wnętrzu południowej Australii.",
+      "story": "Aborygeni z pustyni dobrze go znali, a ich wspomnienia pomogły naukowcom poznać jego zwyczaje. Osadnicy przywieźli owce i bydło, które zjadały i deptały jego kryjówki, oraz lisy i koty, które na niego polowały.",
+      "when": "Według doniesień zniknął z ostatniej ostoi do 1901 roku.",
+      "humanRole": "Wytępiły go zawleczone lisy i koty oraz szkody wyrządzone przez sprowadzony inwentarz.",
+      "sources": [
+        {
+          "label": "Wikipedia: Bandik świnionogi (Wikipedia: Southern pig-footed bandicoot)",
+          "url": "https://en.wikipedia.org/wiki/Southern_pig-footed_bandicoot"
+        },
+        {
+          "label": "Wikipedia: Bandik świnionogi (Wikipedia: Southern pig-footed bandicoot)",
+          "url": "https://en.wikipedia.org/wiki/Southern%20pig-footed%20bandicoot"
+        }
+      ]
+    },
+    "broad-faced-potoroo": {
+      "commonName": "Kanguroszczur szerokolicy",
+      "hook": "Mały kanguroszczur z południowo-zachodniej Australii, znany tylko z kilku okazów.",
+      "imageAlt": "Dawna kolorowa plansza: dwa małe szarobrązowe kanguroszczury o krótkich szerokich pyszczkach",
+      "what": "Kanguroszczur szerokolicy (Potorous platyops) był małym skaczącym torbaczem długości około 30 centymetrów bez ogona, o krótkim, szerokim pyszczku. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Nadmorskie okręgi południowo-zachodniej Australii.",
+      "story": "Zbieracze schwytali tylko kilka zwierząt około 1840 i 1870 roku, więc o jego życiu nie wiemy prawie nic. Autorzy piszący wkrótce po jego zniknięciu wiązali upadek ze zmianą pożarów buszu i z kotami sprowadzonymi przez osadników.",
+      "when": "Ostatni raz złowiony żywy w 1875 roku.",
+      "humanRole": "Jego upadek wiąże się ze zmianą pożarów buszu i z zawleczonymi kotami.",
+      "sources": [
+        {
+          "label": "Wikipedia: Kanguroszczur szerokolicy (Wikipedia: Broad-faced potoroo)",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced_potoroo"
+        },
+        {
+          "label": "Wikipedia: Kanguroszczur szerokolicy (Wikipedia: Broad-faced potoroo)",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced%20potoroo"
+        }
+      ]
+    },
+    "new-zealand-grayling": {
+      "commonName": "Prototroctes oxyrhynchus",
+      "hook": "Rzeczna ryba Nowej Zelandii, którą Maorysi łowili niegdyś całymi koszami.",
+      "imageAlt": "Dawny rysunek smukłej srebrzystej ryby widzianej z boku",
+      "what": "Ta ryba (Prototroctes oxyrhynchus) była smukła i srebrzysta, miała od 30 do 45 centymetrów długości i spędzała część życia w rzekach, a część w morzu. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek wymarły.",
+      "range": "Rzeki i strumienie w całej Nowej Zelandii.",
+      "story": "Maorysi łowili ją masowo w plecione kosze ustawiane w rzekach. Po przybyciu Europejczyków wycinka lasów zamuliła rzeki, połowy wzrosły, a od około 1860 roku wypuszczano pstrągi potokowe i tęczowe.",
+      "when": "Ostatnia obserwacja w 1929 roku.",
+      "humanRole": "Wytępiły ją zawleczone pstrągi, które ją zjadały i zabierały jej pokarm, a także połowy i zniszczone rzeki.",
+      "sources": [
+        {
+          "label": "Wikipedia: Prototroctes oxyrhynchus (Wikipedia: New Zealand grayling)",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_grayling"
+        },
+        {
+          "label": "Wikipedia: Prototroctes oxyrhynchus (Wikipedia: New Zealand grayling)",
+          "url": "https://en.wikipedia.org/wiki/New%20Zealand%20grayling"
+        }
+      ]
+    },
+    "rocky-mountain-locust": {
+      "commonName": "Melanoplus spretus",
+      "hook": "Jej roje zaciemniały kiedyś niebo Ameryki Północnej, a potem zniknęła w ciągu kilku dziesięcioleci.",
+      "imageAlt": "Dawna rycina konika o długich skrzydłach, widzianego z boku",
+      "what": "Ta szarańcza (Melanoplus spretus) żyła na zachodzie Ameryki Północnej i tworzyła jedne z największych rojów owadów, jakie kiedykolwiek opisano. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek wymarły.",
+      "range": "Doliny rzek w Górach Skalistych, skąd roje rozlatywały się po Wielkich Równinach Stanów Zjednoczonych i Kanady.",
+      "story": "W latach od 1873 do 1877 jej roje niszczyły uprawy na Wielkich Równinach. Owady rozmnażały się w kilku osłoniętych dolinach rzek, a gdy osadnicy zaorali, nawodnili i wypasali te doliny, jaja w glebie zginęły.",
+      "when": "Ostatni okaz zebrany w 1904 roku.",
+      "humanRole": "Orka, nawadnianie i deptanie przez bydło w dolinach lęgowych zniszczyły jej jaja.",
+      "sources": [
+        {
+          "label": "Wikipedia: Melanoplus spretus (Wikipedia: Rocky Mountain locust)",
+          "url": "https://en.wikipedia.org/wiki/Rocky_Mountain_locust"
+        },
+        {
+          "label": "Wikipedia: Melanoplus spretus (Wikipedia: Rocky Mountain locust)",
+          "url": "https://en.wikipedia.org/wiki/Rocky%20Mountain%20locust"
+        }
+      ]
+    },
+    "mauritius-blue-pigeon": {
+      "commonName": "Koralczyk maurytyjski",
+      "hook": "Niebiesko-biało-czerwony gołąb z Mauritiusa, tak ufny, że łapano go rękami.",
+      "imageAlt": "Okaz muzealny ciemnoniebieskiego gołębia z białą głową i szyją oraz czerwonym ogonem",
+      "what": "Koralczyk maurytyjski (Alectroenas nitidissimus) był krępym gołębiem długości około 30 centymetrów, ciemnoniebieskim, z srebrzystobiałą głową i szyją oraz czerwonym ogonem i twarzą. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Lasy Mauritiusa na Oceanie Indyjskim.",
+      "story": "Osadnicy uważali go za ufnego i smacznego. Za rządów francuskich wycięto prawie wszystkie nizinne lasy, a sprowadzone na wyspę makaki plądrowały gniazda leśnych ptaków.",
+      "when": "Ostatni okaz zastrzelony w 1826 roku; prawdopodobnie zniknął do około 1830 roku.",
+      "humanRole": "Wytępiły go wycinka lasów, polowania i zawleczone makaki.",
+      "sources": [
+        {
+          "label": "Wikipedia: Koralczyk maurytyjski (Wikipedia: Mauritius blue pigeon)",
+          "url": "https://en.wikipedia.org/wiki/Mauritius_blue_pigeon"
+        },
+        {
+          "label": "Wikipedia: Koralczyk maurytyjski (Wikipedia: Mauritius blue pigeon)",
+          "url": "https://en.wikipedia.org/wiki/Mauritius%20blue%20pigeon"
+        }
+      ]
+    },
+    "palaeopropithecus": {
+      "commonName": "Palaeopropithecus ingens",
+      "hook": "Olbrzymi lemur leniwcowaty z Madagaskaru, który zwisał z gałęzi grzbietem w dół jak leniwiec.",
+      "imageAlt": "Rekonstrukcja dużego kudłatego lemura zwisającego z gałęzi na długich ramionach i hakowatych stopach",
+      "what": "Ten lemur (Palaeopropithecus ingens) był dużym mieszkańcem Madagaskaru ważącym kilkadziesiąt kilogramów, który poruszał się powoli i zwisał pod gałęziami na długich ramionach oraz hakowatych dłoniach i stopach. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek wymarły.",
+      "range": "Lasy południowo-zachodniego Madagaskaru.",
+      "story": "Ludzie dotarli na Madagaskar około dwóch tysięcy lat temu. Kości tego lemura ze śladami rozbioru dowodzą, że na niego polowano i go jedzono, a powolność, dzienny tryb życia i wolne rozmnażanie czyniły go łatwym łupem.",
+      "when": "Być może zaledwie około czterystu lat temu.",
+      "humanRole": "Jego wymarcie przypisuje się polowaniom ludzi, którym sprzyjały jego powolność i wolne rozmnażanie.",
+      "sources": [
+        {
+          "label": "Wikipedia: Palaeopropithecus ingens (Wikipedia: Palaeopropithecus)",
+          "url": "https://en.wikipedia.org/wiki/Palaeopropithecus"
+        }
+      ]
+    },
+    "american-mastodon": {
+      "commonName": "Mastodont amerykański",
+      "hook": "Kudłaty leśny krewny słoni, na którego polowali ludzie pierwszych kultur Ameryki.",
+      "imageAlt": "Dawny kolorowy obraz: mastodont z długimi ciosami idzie przez las",
+      "what": "Mastodont amerykański (Mammut americanum) był krewnym słoni o długim, niskim ciele, krótkich nogach i długich zakrzywionych ciosach, który zgryzał drzewa i krzewy. Międzynarodowa Unia Ochrony Przyrody nie nadaje temu gatunkowi kategorii, bo jej Czerwona Księga obejmuje wymarcia od 1500 roku.",
+      "range": "Lasy i mokradła w całej Ameryce Północnej, od Alaski po Meksyk.",
+      "story": "Ludzie dotarli do Ameryki Północnej pod koniec ostatniej epoki lodowej. Kości mastodontów ze śladami cięć i kamiennymi narzędziami pokazują, że pierwsi Amerykanie, w tym ludzie kultury Clovis, na nie polowali, a klimat zmieniał się wtedy szybko.",
+      "when": "Wymarł około 13 800 do 11 400 lat temu.",
+      "humanRole": "Jego wymarcie wiąże się z polowaniami pierwszych Amerykanów obok zmiany klimatu pod koniec epoki lodowej.",
+      "sources": [
+        {
+          "label": "Wikipedia: Mastodont amerykański (Wikipedia: Mastodon)",
+          "url": "https://en.wikipedia.org/wiki/Mastodon"
+        },
+        {
+          "label": "Faith i Surovell, 2009, Materiały Narodowej Akademii Nauk Stanów Zjednoczonych: Mastodont amerykański (Faith and Surovell 2009, Proceedings of the National Academy of Sciences)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791611/"
+        }
+      ]
+    },
+    "cave-bear": {
+      "commonName": "Niedźwiedź jaskiniowy",
+      "hook": "Ogromny, głównie roślinożerny niedźwiedź, który zimował w jaskiniach Europy.",
+      "imageAlt": "Zmontowany szkielet niedźwiedzia jaskiniowego w jaskini, widok z przodu i z boku",
+      "what": "Niedźwiedź jaskiniowy (Ursus spelaeus) był dużym niedźwiedziem Europy, większym od większości niedźwiedzi brunatnych, który jadł głównie rośliny i zimował w jaskiniach. Międzynarodowa Unia Ochrony Przyrody nie nadaje temu gatunkowi kategorii, bo jej Czerwona Księga obejmuje wymarcia od 1500 roku.",
+      "range": "Europa od Hiszpanii po Ural, głównie pagórkowate okolice z jaskiniami.",
+      "story": "Tysiące szkieletów niedźwiedzi jaskiniowych wypełniają niektóre europejskie jaskinie, w których zwierzęta umierały podczas snu zimowego. Neandertalczycy, a później ludzie współcześni również szukali jaskiń do zamieszkania i robili narzędzia z niedźwiedzich kości.",
+      "when": "Wymarł około 24 000 lat temu.",
+      "humanRole": "Uważa się, że polowania i rywalizacja z ludźmi o jaskinie odegrały główną rolę w jego wymarciu.",
+      "sources": [
+        {
+          "label": "Wikipedia: Niedźwiedź jaskiniowy (Wikipedia: Cave bear)",
+          "url": "https://en.wikipedia.org/wiki/Cave_bear"
+        },
+        {
+          "label": "Wikipedia: Niedźwiedź jaskiniowy (Wikipedia: Cave bear)",
+          "url": "https://en.wikipedia.org/wiki/Cave%20bear"
+        }
+      ]
     }
   }
 }

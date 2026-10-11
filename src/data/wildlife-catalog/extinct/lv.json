@@ -440,6 +440,358 @@
       "humanRole": "Klimatisks sīkas salas dzīvotnes zudums — ne medības. Mazais areāls padarīja klimata triecienu nāvējošu.",
       "sources": [],
       "sourcesNote": "IUCN Sarkanais saraksts (Melomys rubicola, EX); GBRMPA/Kvīnslendas 2016. gada ziņojums; Woinarski un Waller analīzes."
+    },
+    "huia": {
+      "commonName": "Heteralocha acutirostris",
+      "hook": "Jaunzēlandes meža putns, kura tēviņam un mātītei bija pilnīgi atšķirīgi knābji.",
+      "imageAlt": "Sena krāsaina tabula ar tēviņu un mātīti, melniem putniem ar oranžiem auskariem un balti galotnētām astēm",
+      "what": "Heteralocha acutirostris bija liels melns putns ar auskariem no Jaunzēlandes Ziemeļu salas. Tēviņam knābis bija īss un spēcīgs, mātītei garš un izliekts. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Jaunzēlandes Ziemeļu salas dienvidu meži.",
+      "story": "Maori augstu vērtēja tās balti galotnētās spalvas, ko nēsāja tikai augstas kārtas ļaudis. Pēc eiropiešu ierašanās kolekcionāri un muzeji pirka ādas un spalvas, bet ievestās žurkas, kaķi un sermuļi postīja putnus.",
+      "when": "Pēdējais atzītais novērojums 1907. gadā.",
+      "humanRole": "To izskauda ievestie plēsēji un mazākā mērā medības ādu un spalvu dēļ.",
+      "sources": [
+        {
+          "label": "Vietne «Jaunzēlandes putni tiešsaistē»: Huija (New Zealand Birds Online: Huia)",
+          "url": "https://www.nzbirdsonline.org.nz/species/huia"
+        },
+        {
+          "label": "Vikipēdija: Huija (Wikipedia: Huia)",
+          "url": "https://en.wikipedia.org/wiki/Huia"
+        }
+      ]
+    },
+    "laughing-owl": {
+      "commonName": "Sceloglaux albifacies",
+      "hook": "Jaunzēlandes pūce, kas nosaukta pēc skaļā sauciena, kuru salīdzināja ar cilvēka smieklus.",
+      "imageAlt": "Sena fotogrāfija: dzīva pūce starp papardēm",
+      "what": "Sceloglaux albifacies bija liela pūce, kas dzīvoja tikai Jaunzēlandē. Tā medīja galvenokārt uz zemes, ķerot kukaiņus, ķirzakas, putnus un vēlāk ievestās žurkas. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Dienvidu salas un Stjuarta salas atklātie, akmeņainie apvidi Jaunzēlandē.",
+      "story": "Kad ieradās eiropieši, tā vēl bija bieži sastopama, bet līdz 1880. gadam kļuva reta. Kolekcionāri paņēma daudz putnu un olu, saimniecība pārveidoja ainavu, bet sermuļi un kaķi, kas ievesti trušu ierobežošanai, medīja pūces.",
+      "when": "Pēdējo droši zināmo putnu atrada beigtu 1914. gadā.",
+      "humanRole": "To izskauda eksemplāru vākšana, zemes izmantošanas pārmaiņas un ievestie kaķi un sermuļi.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Smejošā pūce (Wikipedia: Laughing owl)",
+          "url": "https://en.wikipedia.org/wiki/Laughing_owl"
+        }
+      ]
+    },
+    "rodrigues-solitaire": {
+      "commonName": "Pezophaps solitaria",
+      "hook": "Augsts, nelidojošs dronta radinieks, kas cīnījās ar kaulainiem izaugumiem uz spārniem.",
+      "imageAlt": "Sena gravīra: liels nelidojošs putns stāv pie koka ar augļiem",
+      "what": "Pezophaps solitaria bija liels nelidojošs balodis no Rodrigesas salas Indijas okeānā, tuvs dodo radinieks. Tēviņi bija daudz lielāki par mātītēm. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Rodrigesa, neliela sala uz austrumiem no Maurīcijas.",
+      "story": "Franču ceļotājs Fransuā Legā to aprakstīja 1690. gados, arī to, kā putni aizstāvēja savu teritoriju ar izaugumiem uz spārniem. Ieceļotāji un jūrnieki šos putnus ēda, bet ievestie kaķi un cūkas apēda olas un cāļus.",
+      "when": "Izmira līdz astoņpadsmitā gadsimta beigām.",
+      "humanRole": "To izskauda cilvēki un dzīvnieki, ko viņi atveda uz salu.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Rodrigesas dronts (Wikipedia: Rodrigues solitaire)",
+          "url": "https://en.wikipedia.org/wiki/Rodrigues_solitaire"
+        }
+      ]
+    },
+    "cuban-macaw": {
+      "commonName": "Ara tricolor",
+      "hook": "Neliels sarkani oranži dzeltens ara, kas dzīvoja tikai Kubā.",
+      "imageAlt": "Akvarelis no apmēram 1800. gada ar sarkanu papagaili ar dzeltenām un zilām spalvām",
+      "what": "Ara tricolor bija viens no mazākajiem ariem: sarkana galva, oranža apakšpuse un zili spārni. Tas dzīvoja Kubā un Hubentudas salā. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Kuba un Hubentudas sala, īpaši purvainas zemienes, piemēram, Sapatas purvs.",
+      "story": "To medīja un ar to tirgojās vietējie iedzīvotāji, vēlāk arī eiropieši. Medības gaļas dēļ, putnu tirdzniecība un mežu izciršana līdz deviņpadsmitā gadsimta vidum padarīja to retu.",
+      "when": "Pēdējās ticamās ziņas: 1850. gadi Kubā un 1864. gads Hubentudas salā.",
+      "humanRole": "To izskauda medības, putnu tirdzniecība un mežu iznīcināšana.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Kubas ara (Wikipedia: Cuban macaw)",
+          "url": "https://en.wikipedia.org/wiki/Cuban_macaw"
+        }
+      ]
+    },
+    "red-rail": {
+      "commonName": "Aphanapteryx bonasia",
+      "hook": "Nelidojošs sarkanīgs Maurīcijas putns, ko jūrnieki ķēra, vicinot sarkanu lupatu.",
+      "imageAlt": "Sena krāsaina tabula ar sarkanbrūnu nelidojošu putnu ar garu, izliektu knābi",
+      "what": "Aphanapteryx bonasia bija nelidojošs dumbrcālis vistas lielumā, ar sarkanbrūnām, matiem līdzīgām spalvām un garu, izliektu knābi. Tas dzīvoja tikai Maurīcijā. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Maurīcija Indijas okeānā.",
+      "story": "Ceļotāji rakstīja, ka putnus pievilināja sarkani priekšmeti un tos bija viegli noķert. Jūrnieki un ieceļotāji tos ēda, bet ievestās žurkas, kaķi un cūkas pabeidza iesākto.",
+      "when": "Pēdējo reizi minēts 1693. gadā, izmira ap 1700. gadu.",
+      "humanRole": "To izskauda cilvēku medības un ievestie dzīvnieki.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Maurīcijas sarkanais dumbrcālis (Wikipedia: Red rail)",
+          "url": "https://en.wikipedia.org/wiki/Red_rail"
+        }
+      ]
+    },
+    "hawaii-mamo": {
+      "commonName": "Drepanis pacifica",
+      "hook": "Melni zeltains Havaju putns, kura spalvas klāja Havaju karaļu apmetņus.",
+      "imageAlt": "Izbāznis muzejā: melns putns ar dzelteniem laukumiem un garu, izliektu knābi",
+      "what": "Drepanis pacifica bija melns Havaju putns ar spilgti dzeltenām spalvām uz muguras lejasdaļas un augšstilbiem un garu, izliektu knābi nektāra dzeršanai. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Havaju salas meži.",
+      "story": "Havaju putnu ķērāji ņēma tās dzeltenās spalvas karaļu apmetņiem un bieži putnus palaida vaļā. Vēlāk to iznīcināja kolekcionāru medības ar bisēm, mežu izciršana, odi, kas pārnēsā putnu slimības, un ievestie mangusti.",
+      "when": "Pēdējais apstiprinātais novērojums 1898. gadā.",
+      "humanRole": "To izskauda mežu zudums, ievestie odi un plēsēji un pastiprinātas medības spalvu dēļ.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Havaju mamo (Wikipedia: Hawaii mamo)",
+          "url": "https://en.wikipedia.org/wiki/Hawaii_mamo"
+        }
+      ]
+    },
+    "toolache-wallaby": {
+      "commonName": "Macropus greyi",
+      "hook": "Iespējams, graciozākā un ātrākā no visām valabijām, kas izzuda 85 gadu laikā pēc eiropiešu ierašanās.",
+      "imageAlt": "Sena Džona Gulda krāsaina tabula ar divām slaidām pelēkām valabijām ar svītrainām astēm",
+      "what": "Macropus greyi bija slaida pelēka valabija ar svītrainu asti no Austrālijas dienvidaustrumiem. Tā bija slavena ar ātrumu un apsteidza suņus. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Dienvidaustrālijas dienvidaustrumu un Viktorijas dienvidrietumu zālāju līdzenumi un purvi.",
+      "story": "Ieceļotāji nosusināja purvus un uzara tās zālājus, medīja to izklaidei un kažokādas dēļ un ieveda rudo lapsu. Glābšanas mēģinājums 1920. gados beidzās slikti, un lielākā daļa noķerto pēdējo dzīvnieku gāja bojā.",
+      "when": "Pēdējie novērojumi savvaļā 1924. gadā, pēdējais dzīvnieks nebrīvē nobeidzās 1939. gadā.",
+      "humanRole": "To izskauda dzīvotņu iznīcināšana, medības izklaidei un kažokādas dēļ un ievestās lapsas.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Greja valabija (Wikipedia: Toolache wallaby)",
+          "url": "https://en.wikipedia.org/wiki/Toolache_wallaby"
+        }
+      ]
+    },
+    "chinese-paddlefish": {
+      "commonName": "Psephurus gladius",
+      "hook": "Viena no pasaules lielākajām saldūdens zivīm ar garu, zobenveidīgu purnu.",
+      "imageAlt": "Konservēta zivs muzejā: gara, pelēka zivs ar smailu purnu",
+      "what": "Psephurus gladius bija milzu zivs no Jandzi upes, kas varēja izaugt garāka par 3 metriem. Ar garo purnu tā sajuta medījumu duļķainā ūdenī. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Jandzi un Huanhe upju baseini Ķīnā.",
+      "story": "Gedžoubas aizsprosts, kas uzcelts 1981. gadā, nošķīra zivis no nārsta vietām augštecē. Pārzveja jau bija samazinājusi to skaitu, un pēdējo dzīvo zivi redzēja 2003. gadā.",
+      "when": "Pēdējo reizi redzēts dzīvs 2003. gadā, atzīts par izmirušu 2022. gadā.",
+      "humanRole": "To izskauda aizsprosts, kas aizšķērsoja ceļu uz nārstu, un pārzveja.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Ķīnas airdegunis (Wikipedia: Chinese paddlefish)",
+          "url": "https://en.wikipedia.org/wiki/Chinese_paddlefish"
+        }
+      ]
+    },
+    "atitlan-grebe": {
+      "commonName": "Podilymbus gigas",
+      "hook": "Liels, gandrīz nelidojošs dūkuris, kas dzīvoja vienā vulkāniskā ezerā Gvatemalā.",
+      "imageAlt": "Izbāznis muzejā: tumši brūns nirējputns ar resnu, gaišu knābi",
+      "what": "Podilymbus gigas bija liels nirējputns ar ļoti īsiem spārniem, kas dzīvoja tikai Atitlanas ezerā. Vietējie to sauca par poku. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Atitlanas ezers Gvatemalas kalnienē.",
+      "story": "1958. un 1960. gadā ezerā sporta makšķerēšanai ielaida asarveidīgās zivis. Tās ēda dūkuru mazuļus un krabjus un zivis, ar ko putni pārtika, bet niedru pļaušana, krastu apbūve un zemestrīce, kas pazemināja ezera līmeni, pabeidza iesākto.",
+      "when": "Pēdējos divus putnus redzēja 1989. gadā.",
+      "humanRole": "To izskauda makšķerēšanai ielaistās zivis, niedru pļaušana un krastu apbūve.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Atitlanas dūkuris (Wikipedia: Atitlán grebe)",
+          "url": "https://en.wikipedia.org/wiki/Atitl%C3%A1n_grebe"
+        }
+      ]
+    },
+    "choiseul-pigeon": {
+      "commonName": "Microgoura meeki",
+      "hook": "Cekulains zemes balodis no Zālamana salām, zināms tikai pēc sešiem putniem un vienas olas.",
+      "imageAlt": "Sena krāsaina tabula ar zilganpelēku balodi ar vēdekļveida cekulu",
+      "what": "Microgoura meeki dzīvoja uz zemes, un tam bija plakans, vēdeklim līdzīgs zils cekuls. Tas zināms tikai pēc sešiem putniem un vienas olas, kas savākti 1904. gadā. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Šuazelas sala Zālamana salās.",
+      "story": "Vietējie iedzīvotāji to atcerējās kā garšīgu putnu, kas nakšņoja zemu virs zemes. To medīja uz salu ievestie kaķi, jo agrāk tas nekad nebija sastapis plēsīgu zīdītāju.",
+      "when": "Pēdējais apstiprinātais novērojums 1904. gadā.",
+      "humanRole": "To izskauda cilvēku ievestie kaķi.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Šuazelas cekulainais balodis (Wikipedia: Choiseul pigeon)",
+          "url": "https://en.wikipedia.org/wiki/Choiseul_pigeon"
+        }
+      ]
+    },
+    "lord-howe-swamphen": {
+      "commonName": "Porphyrio albus",
+      "hook": "Balts, nelidojošs takahē radinieks, zināms tikai pēc divām muzeja ādām.",
+      "imageAlt": "Izbāznis muzejā: balts putns ar resnu, sarkanu knābi",
+      "what": "Porphyrio albus bija drukns, nelidojošs putns ar gandrīz baltām spalvām un masīvu sarkanu knābi. Saglabājušās tikai divas ādas, Liverpūlē un Vīnē. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Lorda Hava sala Tasmana jūrā uz austrumiem no Austrālijas.",
+      "story": "Pirmo kuģu apkalpes, kas apmeklēja salu 1788. gadā, atrada putnus lētticīgus un viegli nogalināmus. Vaļu un roņu mednieki, kas piestāja pēc pārtikas, tos droši vien izskauda vēl pirms ieceļotāju ierašanās 1834. gadā.",
+      "when": "Droši vien izzuda pirms 1834. gada.",
+      "humanRole": "To droši vien izskauda salā piestājušo jūrnieku medības.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Lorda Hava baltā sultānvistiņa (Wikipedia: White swamphen)",
+          "url": "https://en.wikipedia.org/wiki/White_swamphen"
+        }
+      ]
+    },
+    "alaotra-grebe": {
+      "commonName": "Tachybaptus rufolavatus",
+      "hook": "Mazs nirējputns no viena Madagaskaras ezera, ko iznīcināja zvejas tīkli un ievestas zivis.",
+      "imageAlt": "Izbāžņa foto: mazs brūns nirējputns ar rūsganu seju",
+      "what": "Tachybaptus rufolavatus bija mazs dūkuris ar īsiem spārniem, kas reti lidoja tālu. Tas dzīvoja gandrīz tikai Alaotras ezerā. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Alaotras ezers un tuvējie ezeri Madagaskaras centrālajā austrumu daļā.",
+      "story": "Lauki un rīsu laukumi aizņēma purvus ap ezeru. Neilona žaunu tīklos noslīka nirējputni, tos ēda ezerā ielaista plēsīga zivs, bet atnākušais mazais dūkuris krustojās ar pēdējiem putniem.",
+      "when": "Pēdējais apstiprinātais novērojums 1985. gadā, atzīts par izmirušu 2010. gadā.",
+      "humanRole": "To izskauda purvu iznīcināšana, zvejas tīkli un ievesta zivs.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Alaotras dūkuris (Wikipedia: Alaotra grebe)",
+          "url": "https://en.wikipedia.org/wiki/Alaotra_grebe"
+        }
+      ]
+    },
+    "pig-footed-bandicoot": {
+      "commonName": "Chaeropus ecaudatus",
+      "hook": "Mazs Austrālijas tuksneša somainis ar kājām, kas atgādināja sīkus nagus.",
+      "imageAlt": "Sena krāsaina tabula ar diviem maziem garausainiem somaiņiem uz tievām kājām",
+      "what": "Šis somainis (Chaeropus ecaudatus) bija mazs, garkājains dzīvnieks no Austrālijas dienvidu iekšzemes. Priekškājām bija divi strādājoši pirksti, kas atgādināja cūkas nagus. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Sausi krūmāji un zālāji Austrālijas dienvidu iekšzemē.",
+      "story": "Tuksneša aborigēni to labi pazina, un viņu atmiņas palīdzēja zinātniekiem uzzināt, kā tas dzīvoja. Ieceļotāji atveda aitas un liellopus, kas apēda un izmīdīja tā slēptuves, kā arī lapsas un kaķus, kas to medīja.",
+      "when": "Ziņots, ka līdz 1901. gadam tas izzuda no pēdējās patvēruma vietas.",
+      "humanRole": "To iznīcināja ievestās lapsas un kaķi un ievesto mājlopu nodarītie postījumi.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Chaeropus ecaudatus (Wikipedia: Southern pig-footed bandicoot)",
+          "url": "https://en.wikipedia.org/wiki/Southern_pig-footed_bandicoot"
+        },
+        {
+          "label": "Vikipēdija: Chaeropus ecaudatus (Wikipedia: Southern pig-footed bandicoot)",
+          "url": "https://en.wikipedia.org/wiki/Southern%20pig-footed%20bandicoot"
+        }
+      ]
+    },
+    "broad-faced-potoroo": {
+      "commonName": "Potorous platyops",
+      "hook": "Mazs žurkķengurs no Austrālijas dienvidrietumiem, zināms tikai pēc dažiem eksemplāriem.",
+      "imageAlt": "Sena krāsaina litogrāfija: divi mazi pelēkbrūni žurkķenguri ar īsiem, platiem purniem",
+      "what": "Šis žurkķengurs (Potorous platyops) bija mazs lēkājošs somainis, apmēram 30 centimetrus garš bez astes, ar īsu, platu purnu. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Austrālijas dienvidrietumu piekrastes apgabali.",
+      "story": "Kolekcionāri ieguva tikai dažus dzīvniekus 1840. un 1870. gados, tāpēc par tā dzīvi gandrīz nekas nav zināms. Autori, kas rakstīja drīz pēc tā izzušanas, tā panīkumu saistīja ar mainītu ugunsgrēku režīmu un ieceļotāju atvestajiem kaķiem.",
+      "when": "Pēdējo reizi dzīvs noķerts 1875. gadā.",
+      "humanRole": "Tā panīkumu saista ar mainītu krūmāju ugunsgrēku režīmu un ievestajiem kaķiem.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Potorous platyops (Wikipedia: Broad-faced potoroo)",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced_potoroo"
+        },
+        {
+          "label": "Vikipēdija: Potorous platyops (Wikipedia: Broad-faced potoroo)",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced%20potoroo"
+        }
+      ]
+    },
+    "new-zealand-grayling": {
+      "commonName": "Prototroctes oxyrhynchus",
+      "hook": "Jaunzēlandes upju zivs, ko maori kādreiz zvejoja veseliem groziem.",
+      "imageAlt": "Sens zīmējums ar slaidu, sudrabainu zivi no sāniem",
+      "what": "Šī zivs (Prototroctes oxyrhynchus) bija slaida un sudrabaina, 30 līdz 45 centimetrus gara, un daļu dzīves pavadīja upēs, daļu jūrā. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Upes un strauti visā Jaunzēlandē.",
+      "story": "Maori to zvejoja lielos daudzumos ar pītiem groziem, kas bija novietoti upēs. Pēc eiropiešu ierašanās mežu izciršana padarīja upes duļķainas, zveja pieauga, un no 1860. gadiem upēs laida strauta foreles un varavīksnes foreles.",
+      "when": "Pēdējais novērojums 1929. gadā.",
+      "humanRole": "To iznīcināja ievestās foreles, kas to ēda un atņēma barību, kā arī zveja un sabojātas upes.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Prototroctes oxyrhynchus (Wikipedia: New Zealand grayling)",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_grayling"
+        },
+        {
+          "label": "Vikipēdija: Prototroctes oxyrhynchus (Wikipedia: New Zealand grayling)",
+          "url": "https://en.wikipedia.org/wiki/New%20Zealand%20grayling"
+        }
+      ]
+    },
+    "rocky-mountain-locust": {
+      "commonName": "Melanoplus spretus",
+      "hook": "Tās bari kādreiz aptumšoja Ziemeļamerikas debesis, bet tad dažu gadu desmitu laikā tā izzuda.",
+      "imageAlt": "Sena gravīra ar sienāzi ar gariem spārniem no sāniem",
+      "what": "Šie siseņi (Melanoplus spretus) dzīvoja Ziemeļamerikas rietumos un veidoja dažus no lielākajiem kukaiņu bariem, kādi jebkad aprakstīti. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Klinšu kalnu upju ielejas, no kurienes bari izplatījās pa Amerikas Savienoto Valstu un Kanādas Lielajiem līdzenumiem.",
+      "story": "No 1873. līdz 1877. gadam tās bari postīja sējumus Lielajos līdzenumos. Kukaiņi vairojās dažās aizsargātās upju ielejās, un, kad ieceļotāji šīs ielejas uzara, apūdeņoja un noganīja, augsnē esošās olas gāja bojā.",
+      "when": "Pēdējais eksemplārs savākts 1904. gadā.",
+      "humanRole": "Aršana, apūdeņošana un lopu mīdīšana vairošanās ielejās iznīcināja tās olas.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Melanoplus spretus (Wikipedia: Rocky Mountain locust)",
+          "url": "https://en.wikipedia.org/wiki/Rocky_Mountain_locust"
+        },
+        {
+          "label": "Vikipēdija: Melanoplus spretus (Wikipedia: Rocky Mountain locust)",
+          "url": "https://en.wikipedia.org/wiki/Rocky%20Mountain%20locust"
+        }
+      ]
+    },
+    "mauritius-blue-pigeon": {
+      "commonName": "Alectroenas nitidissimus",
+      "hook": "Zils, balts un sarkans Maurīcijas balodis, tik lēnprātīgs, ka to ķēra ar rokām.",
+      "imageAlt": "Muzeja eksemplārs: tumši zils balodis ar baltu galvu un kaklu un sarkanu asti",
+      "what": "Šis balodis (Alectroenas nitidissimus) bija drukns, apmēram 30 centimetrus garš, tumši zils, ar sudrabaini baltu galvu un kaklu un sarkanu asti un seju. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Maurīcijas meži Indijas okeānā.",
+      "story": "Ieceļotāji to uzskatīja par lēnprātīgu un garšīgu. Francijas valdīšanas laikā gandrīz visi līdzenumu meži tika izcirsti, un salā ievestie makaki postīja meža putnus.",
+      "when": "Pēdējais eksemplārs nošauts 1826. gadā; iespējams, izzuda līdz 1830. gadiem.",
+      "humanRole": "To iznīcināja mežu izciršana, medības un ievestie makaki.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Alectroenas nitidissimus (Wikipedia: Mauritius blue pigeon)",
+          "url": "https://en.wikipedia.org/wiki/Mauritius_blue_pigeon"
+        },
+        {
+          "label": "Vikipēdija: Alectroenas nitidissimus (Wikipedia: Mauritius blue pigeon)",
+          "url": "https://en.wikipedia.org/wiki/Mauritius%20blue%20pigeon"
+        }
+      ]
+    },
+    "palaeopropithecus": {
+      "commonName": "Palaeopropithecus ingens",
+      "hook": "Milzu sliņķveida lemurs no Madagaskaras, kas karājās zaros ar muguru uz leju kā sliņķis.",
+      "imageAlt": "Rekonstrukcija: liels, pinkains lemurs karājas zarā uz garām rokām un āķveida pēdām",
+      "what": "Šis lemurs (Palaeopropithecus ingens) bija liels Madagaskaras dzīvnieks, vairākus desmitus kilogramu smags, kas pārvietojās lēni un karājās zem zariem uz garām rokām un āķveida plaukstām un pēdām. Starptautiskā dabas aizsardzības savienība to uzskata par izmirušu sugu.",
+      "range": "Madagaskaras dienvidrietumu meži.",
+      "story": "Cilvēki sasniedza Madagaskaru apmēram pirms diviem tūkstošiem gadu. Šī lemura kauli ar sadalīšanas pēdām liecina, ka to medīja un ēda, un lēnās kustības, dienas dzīvesveids un lēnā vairošanās padarīja to par vieglu laupījumu.",
+      "when": "Iespējams, tikai apmēram pirms četrsimt gadiem.",
+      "humanRole": "Tā izmiršanā vaino cilvēku medības, ko atviegloja tā lēnums un lēnā vairošanās.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Palaeopropithecus ingens (Wikipedia: Palaeopropithecus)",
+          "url": "https://en.wikipedia.org/wiki/Palaeopropithecus"
+        }
+      ]
+    },
+    "american-mastodon": {
+      "commonName": "Mammut americanum",
+      "hook": "Pinkains ziloņu meža radinieks, ko medīja pirmo Amerikas kultūru cilvēki.",
+      "imageAlt": "Sena krāsaina glezna: mastodonts ar gariem ilkņiem iet caur mežu",
+      "what": "Šis mastodonts (Mammut americanum) bija ziloņu radinieks ar garu, zemu ķermeni, īsām kājām un gariem, izliektiem ilkņiem, kas ēda koku un krūmu zarus. Starptautiskā dabas aizsardzības savienība šai sugai kategoriju nepiešķir, jo tās Sarkanā grāmata aptver izmiršanu kopš 1500. gada.",
+      "range": "Meži un purvāji visā Ziemeļamerikā, no Aļaskas līdz Meksikai.",
+      "story": "Cilvēki sasniedza Ziemeļameriku pēdējā ledus laikmeta beigās. Mastodontu kauli ar iegriezumiem un akmens rīkiem rāda, ka pirmie amerikāņi, arī Klovisas kultūras ļaudis, tos medīja, bet klimats tobrīd arī strauji mainījās.",
+      "when": "Izmira apmēram pirms 13 800 līdz 11 400 gadiem.",
+      "humanRole": "Tā izmiršanu saista ar pirmo amerikāņu medībām līdztekus klimata pārmaiņām ledus laikmeta beigās.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Mammut americanum (Wikipedia: Mastodon)",
+          "url": "https://en.wikipedia.org/wiki/Mastodon"
+        },
+        {
+          "label": "Feita un Surovels, 2009, Amerikas Savienoto Valstu Nacionālās zinātņu akadēmijas raksti: Mammut americanum (Faith and Surovell 2009, Proceedings of the National Academy of Sciences)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791611/"
+        }
+      ]
+    },
+    "cave-bear": {
+      "commonName": "Eiropas alu lācis",
+      "hook": "Milzīgs, galvenokārt augēdājs lācis, kas ziemoja Eiropas alās.",
+      "imageAlt": "Alā samontēts alu lāča skelets, skats no priekšas un sāniem",
+      "what": "Eiropas alu lācis (Ursus spelaeus) bija liels Eiropas lācis, lielāks par vairumu brūno lāču, kas ēda galvenokārt augus un ziemoja alās. Starptautiskā dabas aizsardzības savienība šai sugai kategoriju nepiešķir, jo tās Sarkanā grāmata aptver izmiršanu kopš 1500. gada.",
+      "range": "Eiropa no Spānijas līdz Urāliem, galvenokārt pauguraini apvidi ar alām.",
+      "story": "Tūkstošiem alu lāču skeletu pilda dažas Eiropas alas, kur dzīvnieki nomira ziemas miega laikā. Neandertālieši un vēlāk mūsdienu cilvēki arī meklēja alas mājoklim un no lāču kauliem darināja rīkus.",
+      "when": "Izmira apmēram pirms 24 000 gadiem.",
+      "humanRole": "Uzskata, ka medībām un sāncensībai ar cilvēkiem par alām bija galvenā loma tā izmiršanā.",
+      "sources": [
+        {
+          "label": "Vikipēdija: Eiropas alu lācis (Wikipedia: Cave bear)",
+          "url": "https://en.wikipedia.org/wiki/Cave_bear"
+        },
+        {
+          "label": "Vikipēdija: Eiropas alu lācis (Wikipedia: Cave bear)",
+          "url": "https://en.wikipedia.org/wiki/Cave%20bear"
+        }
+      ]
     }
   }
 }

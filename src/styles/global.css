@@ -770,6 +770,11 @@ a.solution-card:hover {
   font-weight: 700;
 }
 
+.pill.wildlife-scope-label,
+.tag.wildlife-scope-label {
+  font-weight: 400;
+}
+
 .inside-list {
   list-style: none;
   padding: 0;

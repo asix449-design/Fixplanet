@@ -64,6 +64,8 @@ export type SpeciesMeta = {
   status: WildlifeStatus;
   /** Omit when the pack has no global IUCN assessment (ESA-listed insects; livestock). */
   iucn?: IucnKey;
+  /** IUCN assessment scope, such as `global`. Pages use it to show the scope label. */
+  iucnScope?: string;
   /** Extra card label when IUCN CR still overstates a wild breeding population. */
   functionallyExtinct?: boolean;
   image: ImageCredit;

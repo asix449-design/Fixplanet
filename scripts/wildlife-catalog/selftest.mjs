@@ -12,7 +12,7 @@ function assert(ok, message) {
 const lab = () => Object.fromEntries(LOCALES.map((l) => [l, { name: 'x', status: 'x', tile: 'x', lead: 'x' }]));
 
 /**
- * Schema and rule fixtures ported from the v3.4 prototype, plus a round trip of the live 97 cards.
+ * Schema and rule fixtures ported from the v3.4 prototype, plus a round trip of the live catalogue cards.
  * Candidate CSVs are not in this repo; the C16 branches are exercised with inline cards.
  */
 export function runSelfTests(catalog, live) {
@@ -198,6 +198,7 @@ export function runSelfTests(catalog, live) {
         cards += 1;
       }
     }
-    assert(cards === 97 * 4, `round trip covered ${cards} locale cards`);
+    const catalogueCards = Object.values(cardShelves).reduce((sum, shelf) => sum + shelf.meta.cards.length, 0);
+    assert(cards === catalogueCards * LOCALES.length, `round trip covered ${cards} locale cards`);
   }
 }

@@ -440,6 +440,358 @@
       "humanRole": "Climate-driven loss of a tiny island habitat — not hunting. The small range made the climate impact fatal.",
       "sources": [],
       "sourcesNote": "IUCN Red List (Melomys rubicola, EX); GBRMPA/Queensland 2016 report; Woinarski and Waller analyses of climate-driven extinction."
+    },
+    "huia": {
+      "commonName": "Huia",
+      "hook": "A New Zealand forest bird whose male and female had completely different bills.",
+      "imageAlt": "Old colour plate of a male and a female huia, black birds with orange wattles and white tipped tails",
+      "what": "The huia (Heteralocha acutirostris) was a large black wattlebird of the North Island of New Zealand. The male had a short, strong bill and the female a long, curved one. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Forests of the southern North Island of New Zealand.",
+      "story": "Māori prized its white tipped tail feathers, worn only by people of high rank. After European settlement, collectors and museums bought skins and feathers, while introduced rats, cats and stoats raided the birds.",
+      "when": "Last accepted sighting in 1907.",
+      "humanRole": "Introduced predators and, to a lesser degree, hunting for skins and feathers drove it to extinction.",
+      "sources": [
+        {
+          "label": "New Zealand Birds Online: Huia",
+          "url": "https://www.nzbirdsonline.org.nz/species/huia"
+        },
+        {
+          "label": "Wikipedia: Huia",
+          "url": "https://en.wikipedia.org/wiki/Huia"
+        }
+      ]
+    },
+    "laughing-owl": {
+      "commonName": "Laughing owl",
+      "hook": "A New Zealand owl named for its loud call, often compared to a person laughing.",
+      "imageAlt": "Old black and white photograph of a live laughing owl perched among ferns",
+      "what": "The laughing owl (Sceloglaux albifacies) was a large owl found only in New Zealand. It hunted mostly on the ground, catching insects, lizards, birds and later introduced rats. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Open rocky country of the South Island and Stewart Island, New Zealand.",
+      "story": "It was still common when Europeans arrived, but grew rare by 1880. Collectors took many birds and eggs, farming changed the land, and stoats and cats brought in to control rabbits preyed on the owls.",
+      "when": "Last confirmed bird found dead in 1914.",
+      "humanRole": "Collecting, changes in land use and introduced cats and stoats drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Laughing owl",
+          "url": "https://en.wikipedia.org/wiki/Laughing_owl"
+        }
+      ]
+    },
+    "rodrigues-solitaire": {
+      "commonName": "Rodrigues solitaire",
+      "hook": "A tall, flightless cousin of the dodo that fought with bony knobs on its wings.",
+      "imageAlt": "Old black and white engraving of a Rodrigues solitaire standing beside a fruiting tree",
+      "what": "The Rodrigues solitaire (Pezophaps solitaria) was a large flightless pigeon from the island of Rodrigues in the Indian Ocean, a close relative of the dodo. Males were much larger than females. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Rodrigues, a small island east of Mauritius.",
+      "story": "The French traveller François Leguat described it in the 1690s, including how the birds defended their territory with knobs on their wings. Settlers and sailors ate it, and introduced cats and pigs took eggs and chicks.",
+      "when": "Extinct by the late eighteenth century.",
+      "humanRole": "Hunting by people and by animals they brought to the island wiped it out.",
+      "sources": [
+        {
+          "label": "Wikipedia: Rodrigues solitaire",
+          "url": "https://en.wikipedia.org/wiki/Rodrigues_solitaire"
+        }
+      ]
+    },
+    "cuban-macaw": {
+      "commonName": "Cuban macaw",
+      "hook": "A small red, orange and yellow macaw that lived only in Cuba.",
+      "imageAlt": "Watercolour from about 1800 of a Cuban macaw, a red parrot with yellow and blue feathers",
+      "what": "The Cuban macaw (Ara tricolor) was one of the smallest macaws, with a red head, orange underside and blue wings. It lived on Cuba and the Isle of Youth. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Cuba and the Isle of Youth, especially swampy lowlands such as the Zapata Swamp.",
+      "story": "It was hunted and traded by Native Americans and later by Europeans. Hunting for food and the pet trade, together with forest clearing, made it rare by the middle of the nineteenth century.",
+      "when": "Last reliable records in the 1850s on Cuba and 1864 on the Isle of Youth.",
+      "humanRole": "Hunting, the bird trade and destruction of its forests drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Cuban macaw",
+          "url": "https://en.wikipedia.org/wiki/Cuban_macaw"
+        }
+      ]
+    },
+    "red-rail": {
+      "commonName": "Red rail",
+      "hook": "A flightless reddish bird of Mauritius that sailors could catch by waving a red cloth.",
+      "imageAlt": "Old colour plate of a red rail, a reddish brown flightless bird with a long curved bill",
+      "what": "The red rail (Aphanapteryx bonasia) was a flightless rail about the size of a chicken, with reddish brown, hair like feathers and a long, curved bill. It lived only on Mauritius. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Mauritius, in the Indian Ocean.",
+      "story": "Visitors wrote that the birds were attracted to red objects and could be caught easily. Sailors and settlers ate them, and the rats, cats and pigs they brought took the rest.",
+      "when": "Last mentioned in 1693, extinct around 1700.",
+      "humanRole": "Hunting by people and introduced animals drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Red rail",
+          "url": "https://en.wikipedia.org/wiki/Red_rail"
+        }
+      ]
+    },
+    "hawaii-mamo": {
+      "commonName": "Hawaiʻi mamo",
+      "hook": "A black and gold honeycreeper whose feathers covered the cloaks of Hawaiian kings.",
+      "imageAlt": "Mounted Hawaiʻi mamo in a museum, a black bird with yellow patches and a long curved bill",
+      "what": "The Hawaiʻi mamo (Drepanis pacifica) was a black honeycreeper with bright yellow feathers on the rump and thighs and a long, curved bill for drinking nectar. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Forests of the island of Hawaiʻi.",
+      "story": "Hawaiian bird catchers took its yellow feathers for royal cloaks, often releasing the birds. Later, shotgun hunting by collectors, forest clearing, mosquitoes carrying bird diseases and introduced mongooses finished it.",
+      "when": "Last confirmed sighting in 1898.",
+      "humanRole": "Loss of forest, introduced mosquitoes and predators, and heavy hunting for feathers drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Hawaii mamo",
+          "url": "https://en.wikipedia.org/wiki/Hawaii_mamo"
+        }
+      ]
+    },
+    "toolache-wallaby": {
+      "commonName": "Toolache wallaby",
+      "hook": "Possibly the most graceful and fastest of all wallabies, gone within 85 years of European settlement.",
+      "imageAlt": "Old colour plate by John Gould of two toolache wallabies, slender grey kangaroos with banded tails",
+      "what": "The toolache wallaby (Macropus greyi) was a slender grey wallaby with a banded tail from southeastern Australia. It was famous for its speed and could outrun dogs. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Grassy plains and swamps of southeastern South Australia and southwestern Victoria.",
+      "story": "Settlers drained the swamps and cleared its grasslands, hunted it for sport and for its fur, and brought in the red fox. A rescue attempt in the 1920s went wrong, and most of the last captured animals died.",
+      "when": "Last wild sightings in 1924, last captive animal died in 1939.",
+      "humanRole": "Habitat clearing, hunting for sport and fur, and introduced foxes drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Toolache wallaby",
+          "url": "https://en.wikipedia.org/wiki/Toolache_wallaby"
+        }
+      ]
+    },
+    "chinese-paddlefish": {
+      "commonName": "Chinese paddlefish",
+      "hook": "One of the largest freshwater fish in the world, with a long sword shaped snout.",
+      "imageAlt": "Preserved Chinese paddlefish in a museum, a long grey fish with a pointed snout",
+      "what": "The Chinese paddlefish (Psephurus gladius) was a giant fish of the Yangtze River that could grow longer than 3 metres. It used its long snout to sense prey in murky water. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "The Yangtze and Yellow River basins in China.",
+      "story": "The Gezhouba Dam, built in 1981, cut the fish off from its spawning grounds upstream. Overfishing had already reduced the population, and the last live fish was seen in 2003.",
+      "when": "Last seen alive in 2003; declared extinct in 2022.",
+      "humanRole": "A dam that blocked its migration, together with overfishing, drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Chinese paddlefish",
+          "url": "https://en.wikipedia.org/wiki/Chinese_paddlefish"
+        }
+      ]
+    },
+    "atitlan-grebe": {
+      "commonName": "Atitlán grebe",
+      "hook": "A large, almost flightless grebe that lived on a single volcanic lake in Guatemala.",
+      "imageAlt": "Mounted Atitlán grebe in a museum, a dark brown diving bird with a thick pale bill",
+      "what": "The Atitlán grebe (Podilymbus gigas) was a large diving bird with very short wings, found only on Lake Atitlán. Local people called it the poc. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Lake Atitlán, in the highlands of Guatemala.",
+      "story": "Black bass were released into the lake for sport fishing in 1958 and 1960. They ate the young grebes and the crabs and fish the birds lived on, while reed cutting, building on the shore and an earthquake that lowered the lake took the rest.",
+      "when": "The last two birds were seen in 1989.",
+      "humanRole": "Fish introduced for angling, reed cutting and shore development drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Atitlán grebe",
+          "url": "https://en.wikipedia.org/wiki/Atitl%C3%A1n_grebe"
+        }
+      ]
+    },
+    "choiseul-pigeon": {
+      "commonName": "Choiseul pigeon",
+      "hook": "A crested ground pigeon from the Solomon Islands known only from six birds and one egg.",
+      "imageAlt": "Old colour plate of a Choiseul pigeon, a blue grey pigeon with a fan shaped crest",
+      "what": "The Choiseul pigeon (Microgoura meeki) was a ground living pigeon with a flat, fan like blue crest. It is known only from the six birds and one egg collected in 1904. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Choiseul Island, in the Solomon Islands.",
+      "story": "Local people remembered it as a tasty bird that roosted near the ground. Cats brought to the island hunted it, since it had never met a meat eating mammal before.",
+      "when": "Last confirmed sighting in 1904.",
+      "humanRole": "Cats introduced by people drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Choiseul pigeon",
+          "url": "https://en.wikipedia.org/wiki/Choiseul_pigeon"
+        }
+      ]
+    },
+    "lord-howe-swamphen": {
+      "commonName": "Lord Howe swamphen",
+      "hook": "A white, flightless relative of the takahē known from just two museum skins.",
+      "imageAlt": "Mounted Lord Howe swamphen in a museum, a white bird with a thick red bill",
+      "what": "The Lord Howe swamphen (Porphyrio albus), also called the white swamphen, was a stocky, flightless bird with mostly white feathers and a heavy red bill. Only two skins survive, in Liverpool and Vienna. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Lord Howe Island, in the Tasman Sea east of Australia.",
+      "story": "Crews of the first ships to visit the island in 1788 found the birds tame and easy to kill. Whalers and sealers who stopped for food probably hunted them out before settlers arrived in 1834.",
+      "when": "Probably gone before 1834.",
+      "humanRole": "Hunting by visiting sailors probably drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: White swamphen",
+          "url": "https://en.wikipedia.org/wiki/White_swamphen"
+        }
+      ]
+    },
+    "alaotra-grebe": {
+      "commonName": "Alaotra grebe",
+      "hook": "A small diving bird of one lake in Madagascar, lost to fishing nets and introduced fish.",
+      "imageAlt": "Photo of a mounted Alaotra grebe, a small brown diving bird with a rusty face",
+      "what": "The Alaotra grebe (Tachybaptus rufolavatus) was a small grebe with short wings that rarely flew far. It lived almost only on Lake Alaotra. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Lake Alaotra and nearby lakes in central eastern Madagascar.",
+      "story": "Farming and rice fields took over the marshes around the lake. Nylon gill nets drowned diving birds, and a predatory fish released into the lake ate them, while the common little grebe that moved in bred with the last survivors.",
+      "when": "Last confirmed sighting in 1985; declared extinct in 2010.",
+      "humanRole": "Destruction of its marshes, fishing nets and an introduced fish drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Alaotra grebe",
+          "url": "https://en.wikipedia.org/wiki/Alaotra_grebe"
+        }
+      ]
+    },
+    "pig-footed-bandicoot": {
+      "commonName": "Pig footed bandicoot",
+      "hook": "A small marsupial of the Australian desert with feet like tiny hooves.",
+      "imageAlt": "Old colour plate of two small long eared marsupials with thin legs",
+      "what": "The pig footed bandicoot (Chaeropus ecaudatus) was a small, long legged marsupial of inland southern Australia. Its front feet had two working toes that looked like the hooves of a pig. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Dry shrublands and grasslands of inland southern Australia.",
+      "story": "Aboriginal people of the desert knew it well, and their memories helped scientists learn how it lived. Settlers brought sheep and cattle that ate and trampled its shelter, and foxes and cats that hunted it.",
+      "when": "Reported gone from its last refuge by 1901.",
+      "humanRole": "Introduced foxes and cats and the damage done by introduced livestock drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Southern pig-footed bandicoot",
+          "url": "https://en.wikipedia.org/wiki/Southern_pig-footed_bandicoot"
+        },
+        {
+          "label": "Wikipedia: Southern pig-footed bandicoot",
+          "url": "https://en.wikipedia.org/wiki/Southern%20pig-footed%20bandicoot"
+        }
+      ]
+    },
+    "broad-faced-potoroo": {
+      "commonName": "Broad faced potoroo",
+      "hook": "A small rat kangaroo of south western Australia, known from only a handful of specimens.",
+      "imageAlt": "Old colour plate of two small grey brown rat kangaroos with short broad faces",
+      "what": "The broad faced potoroo (Potorous platyops) was a small hopping marsupial, about 30 centimetres long without its tail, with a short, wide face. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Coastal districts of south western Australia.",
+      "story": "Collectors took only a few animals in the 1840s and the 1870s, and almost nothing is known of how it lived. Writers soon after its loss linked its decline to changed fire patterns and to cats brought by settlers.",
+      "when": "Last caught alive in 1875.",
+      "humanRole": "Changed bushfire patterns and introduced cats are linked to its decline.",
+      "sources": [
+        {
+          "label": "Wikipedia: Broad-faced potoroo",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced_potoroo"
+        },
+        {
+          "label": "Wikipedia: Broad-faced potoroo",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced%20potoroo"
+        }
+      ]
+    },
+    "new-zealand-grayling": {
+      "commonName": "New Zealand grayling",
+      "hook": "A river fish of New Zealand that Māori once caught by the basketful.",
+      "imageAlt": "Old drawing of a slender silvery fish seen from the side",
+      "what": "The New Zealand grayling (Prototroctes oxyrhynchus) was a slender silvery fish, 30 to 45 centimetres long, that spent part of its life in rivers and part at sea. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Rivers and streams across New Zealand.",
+      "story": "Māori caught it in great numbers with woven basket traps set in rivers. After European settlement, forest clearing muddied the rivers, fishing increased, and brown and rainbow trout were released from the 1860s.",
+      "when": "Last sighting in 1929.",
+      "humanRole": "Introduced trout, which ate it and took its food, together with fishing and damaged rivers, wiped it out.",
+      "sources": [
+        {
+          "label": "Wikipedia: New Zealand grayling",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_grayling"
+        },
+        {
+          "label": "Wikipedia: New Zealand grayling",
+          "url": "https://en.wikipedia.org/wiki/New%20Zealand%20grayling"
+        }
+      ]
+    },
+    "rocky-mountain-locust": {
+      "commonName": "Rocky Mountain locust",
+      "hook": "Its swarms once darkened the North American sky, and then it vanished within a few decades.",
+      "imageAlt": "Old engraving of a grasshopper with long wings, seen from the side",
+      "what": "The Rocky Mountain locust (Melanoplus spretus) was a grasshopper of western North America that formed some of the largest insect swarms ever recorded. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "River valleys of the Rocky Mountains, from where swarms spread across the Great Plains of the United States and Canada.",
+      "story": "Between 1873 and 1877 its swarms ate crops across the Great Plains. The insects bred in a few sheltered river valleys, and when settlers ploughed, watered and grazed those valleys, the eggs in the soil were destroyed.",
+      "when": "Last specimen collected in 1904.",
+      "humanRole": "Ploughing, irrigation and trampling by livestock in its breeding valleys destroyed its eggs.",
+      "sources": [
+        {
+          "label": "Wikipedia: Rocky Mountain locust",
+          "url": "https://en.wikipedia.org/wiki/Rocky_Mountain_locust"
+        },
+        {
+          "label": "Wikipedia: Rocky Mountain locust",
+          "url": "https://en.wikipedia.org/wiki/Rocky%20Mountain%20locust"
+        }
+      ]
+    },
+    "mauritius-blue-pigeon": {
+      "commonName": "Mauritius blue pigeon",
+      "hook": "A blue, white and red pigeon of Mauritius, tame enough to be caught by hand.",
+      "imageAlt": "Museum specimen of a dark blue pigeon with a white head and neck and a red tail",
+      "what": "The Mauritius blue pigeon (Alectroenas nitidissimus) was a stout pigeon about 30 centimetres long, dark blue with a silvery white head and neck and a red tail and face. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Forests of Mauritius in the Indian Ocean.",
+      "story": "Settlers found it tame and good to eat. During French rule the lowland forests were almost all cut down, and macaques brought to the island raided the forest birds.",
+      "when": "Last specimen shot in 1826; probably gone by the 1830s.",
+      "humanRole": "Forest clearing, hunting and introduced macaques drove it to extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Mauritius blue pigeon",
+          "url": "https://en.wikipedia.org/wiki/Mauritius_blue_pigeon"
+        },
+        {
+          "label": "Wikipedia: Mauritius blue pigeon",
+          "url": "https://en.wikipedia.org/wiki/Mauritius%20blue%20pigeon"
+        }
+      ]
+    },
+    "palaeopropithecus": {
+      "commonName": "Palaeopropithecus",
+      "hook": "A giant sloth lemur of Madagascar that hung upside down from branches like a sloth.",
+      "imageAlt": "Life restoration of a large shaggy lemur hanging from a branch by its long arms and hooked feet",
+      "what": "Palaeopropithecus ingens was a large lemur of Madagascar, weighing several tens of kilograms, that moved slowly and hung below branches by long arms and hooked hands and feet. The International Union for Conservation of Nature lists it as Extinct.",
+      "range": "Forests of south western Madagascar.",
+      "story": "People reached Madagascar about two thousand years ago. Bones of this lemur with butchery marks show it was hunted and eaten, and its slow movement, daytime habits and slow breeding made it an easy target.",
+      "when": "Possibly as recent as about four hundred years ago.",
+      "humanRole": "Hunting by people, helped by its slow movement and slow breeding, is blamed for its extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Palaeopropithecus",
+          "url": "https://en.wikipedia.org/wiki/Palaeopropithecus"
+        }
+      ]
+    },
+    "american-mastodon": {
+      "commonName": "American mastodon",
+      "hook": "A shaggy forest relative of elephants that people of the first American cultures hunted.",
+      "imageAlt": "Old colour painting of a mastodon with long tusks walking through a forest",
+      "what": "The American mastodon (Mammut americanum) was an elephant relative with a long, low body, short legs and long curved tusks, that browsed on trees and shrubs. The International Union for Conservation of Nature gives it no category, because its Red List covers extinctions since the year 1500.",
+      "range": "Forests and wetlands across North America, from Alaska to Mexico.",
+      "story": "People reached North America near the end of the last ice age. Mastodon bones with cut marks and stone tools show that the first Americans, including people of the Clovis culture, hunted them, while the climate was also changing fast.",
+      "when": "Extinct about 13,800 to 11,400 years ago.",
+      "humanRole": "Hunting by the first Americans, alongside the changing climate at the end of the ice age, is linked to its extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Mastodon",
+          "url": "https://en.wikipedia.org/wiki/Mastodon"
+        },
+        {
+          "label": "Faith and Surovell 2009, Proceedings of the National Academy of Sciences",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791611/"
+        }
+      ]
+    },
+    "cave-bear": {
+      "commonName": "Cave bear",
+      "hook": "A huge, mostly plant eating bear that slept through the winter in Europe’s caves.",
+      "imageAlt": "Mounted cave bear skeleton in a cave, seen from the front and side",
+      "what": "The cave bear (Ursus spelaeus) was a large bear of Europe, bigger than most brown bears, that ate mainly plants and spent its winters in caves. The International Union for Conservation of Nature gives it no category, because its Red List covers extinctions since the year 1500.",
+      "range": "Europe, from Spain to the Urals, mostly in hilly country with caves.",
+      "story": "Thousands of cave bear skeletons fill some European caves where the bears died in their winter sleep. Neanderthals and later modern humans also sought out caves to live in, and they used bear bones as tools.",
+      "when": "Extinct about 24,000 years ago.",
+      "humanRole": "Hunting and competition with people for caves are thought to have played a major part in its extinction.",
+      "sources": [
+        {
+          "label": "Wikipedia: Cave bear",
+          "url": "https://en.wikipedia.org/wiki/Cave_bear"
+        },
+        {
+          "label": "Wikipedia: Cave bear",
+          "url": "https://en.wikipedia.org/wiki/Cave%20bear"
+        }
+      ]
     }
   }
 }
