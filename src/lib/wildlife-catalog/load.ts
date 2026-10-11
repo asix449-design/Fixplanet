@@ -17,9 +17,23 @@ type ShelfBundle = {
   copy: Record<string, ReturnType<typeof CopyFile.parse>>;
 };
 
+type RawShelves = ReturnType<typeof readShelfFiles>;
+
 export type WildlifeCatalog = ReturnType<typeof loadWildlifeCatalog>;
 
 let cached: WildlifeCatalog | undefined;
+let rawCache: { groups: { cards: Record<string, unknown> }; shelves: RawShelves } | undefined;
+
+/** Shelf JSON as stored. Pages use this; the checker validates the same files with zod. */
+function rawCatalogue() {
+  if (!rawCache) {
+    rawCache = {
+      groups: readJson('legacy-groups.json'),
+      shelves: readShelfFiles(),
+    };
+  }
+  return rawCache;
+}
 
 /**
  * Reads registry.json and the per-shelf catalogue. The 97 migrated cards live in
@@ -61,12 +75,13 @@ export function loadWildlifeCatalog() {
 
 /** Species slugs in the historical speciesMeta order (legacy-groups.json key order). */
 export function wildlifeCardSlugs(): string[] {
-  const catalog = loadWildlifeCatalog();
+  const { groups, shelves } = rawCatalogue();
   const present = new Set<string>();
-  for (const shelf of Object.values(catalog.fileShelves)) {
-    for (const card of shelf.meta.cards) present.add(card.slug);
+  for (const shelf of Object.values(shelves)) {
+    const cards = (shelf.meta as { cards?: { slug: string }[] }).cards || [];
+    for (const card of cards) present.add(card.slug);
   }
-  const ordered = Object.keys(catalog.groups.cards).filter((slug) => present.has(slug));
+  const ordered = Object.keys(groups.cards).filter((slug) => present.has(slug));
   for (const slug of present) {
     if (!ordered.includes(slug)) ordered.push(slug);
   }
@@ -75,15 +90,18 @@ export function wildlifeCardSlugs(): string[] {
 
 /**
  * Page view of the catalogue. Missing locale copy falls back to English,
- * matching the previous speciesMeta reader.
+ * matching the previous speciesMeta reader. Does not re-run the zod checks;
+ * `npm run check:wildlife` already parsed these files.
  */
 export function speciesFromCatalog(locale: string) {
-  const catalog = loadWildlifeCatalog();
+  const { shelves } = rawCatalogue();
   const bySlug = new Map<string, ReturnType<typeof toSpecies>>();
-  for (const shelf of Object.values(catalog.fileShelves)) {
-    for (const card of shelf.meta.cards) {
-      const copy = shelf.copy[locale]?.cards?.[card.slug] ?? shelf.copy.en?.cards?.[card.slug];
-      if (copy) bySlug.set(card.slug, toSpecies(card, copy));
+  for (const shelf of Object.values(shelves)) {
+    const meta = shelf.meta as { cards: Parameters<typeof toSpecies>[0][] };
+    const copy = shelf.copy as Record<string, { cards?: Record<string, Parameters<typeof toSpecies>[1]> }>;
+    for (const card of meta.cards) {
+      const fields = copy[locale]?.cards?.[card.slug] ?? copy.en?.cards?.[card.slug];
+      if (fields) bySlug.set(card.slug, toSpecies(card, fields));
     }
   }
   return wildlifeCardSlugs().flatMap((slug) => {
