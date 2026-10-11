@@ -97,7 +97,7 @@
    "regions": null
   },
   "scope": {
-   "global": null,
+   "global": "global assessment",
    "europe": null,
    "mediterranean": null,
    "national": null
@@ -306,7 +306,7 @@
    "regions": null
   },
   "scope": {
-   "global": null,
+   "global": "глобальная оценка",
    "europe": null,
    "mediterranean": null,
    "national": null
@@ -525,7 +525,7 @@
    "regions": null
   },
   "scope": {
-   "global": null,
+   "global": "ocena globalna",
    "europe": null,
    "mediterranean": null,
    "national": null
@@ -754,7 +754,7 @@
    "regions": null
   },
   "scope": {
-   "global": null,
+   "global": "globālais novērtējums",
    "europe": null,
    "mediterranean": null,
    "national": null

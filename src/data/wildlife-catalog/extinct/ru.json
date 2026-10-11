@@ -24,7 +24,34 @@
       "when": "Вымер. Материк: конец плейстоцена. Последние островные группы: середина голоцена, около 4000 лет назад.",
       "humanRole": "Охота — широко цитируемый вклад наряду с климатической потерей мест, а не доказанная единственная причина.",
       "sources": [],
-      "sourcesNote": "Датированные находки с острова Врангеля (Вартанян и более поздние работы по древней ДНК); обзоры вымирания мегафауны."
+      "sourcesNote": "Датированные находки с острова Врангеля (Вартанян и более поздние работы по древней ДНК); обзоры вымирания мегафауны.",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "Длина тела без хобота и бивней",
+        "captionExtra": "Последние шерстистые мамонты жили на острове Врангеля в Северном Ледовитом океане ещё около 4000 лет назад.",
+        "sources": [
+          {
+            "label": "Википедия: шерстистый мамонт (Wikipedia: Woolly mammoth)",
+            "url": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+          },
+          {
+            "label": "Справочник размеров: шерстистый мамонт, размеры и чертежи (Dimensions.com: Woolly Mammoth, Mammuthus primigenius, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius"
+          },
+          {
+            "label": "Журнал «Каррент байолоджи», Палкопулу и соавторы, 2015: полные геномы показывают признаки сокращения численности и генетического упадка шерстистого мамонта (Current Biology, Palkopoulou and others 2015: Complete genomes reveal signatures of demographic and genetic declines in the woolly mammoth)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4439331/"
+          },
+          {
+            "label": "Блог «Зоология четвероногих», Даррен Нэйш, 2025: введение в шерстистого мамонта (Tetrapod Zoology, Darren Naish 2025: A Woolly Mammoth Primer)",
+            "url": "https://tetzoo.com/blog/2025/11/5/a-woolly-mammoth-primer"
+          },
+          {
+            "label": "Журнал «Природные ресурсы Арктики и Субарктики», Боескоров, 2021: размеры тела шерстистого мамонта второй половины позднего плейстоцена севера Восточной Сибири (Arctic and Subarctic Natural Resources, Boeskorov 2021: Body size of the woolly mammoth Mammuthus primigenius of the second half of the Late Pleistocene in the north of Eastern Siberia)",
+            "url": "https://cyberleninka.ru/article/n/razmery-tela-sherstistogo-mamonta-mammuthus-primigenius-blumenbach-vtoroy-poloviny-pozdnego-pleystotsena-severa-vostochnoy-sibiri"
+          }
+        ]
+      }
     },
     "dodo": {
       "commonName": "Дронт",
@@ -36,7 +63,30 @@
       "when": "Вымер к концу XVII века на острове, который люди лишь недавно заселили постоянно.",
       "humanRole": "Охота плюс завезённые звери на острове без прежних наземных хищников.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Raphus cucullatus, EX); обзоры последних встреч (Roberts & Solow и позже)."
+      "sourcesNote": "Красный список МСОП (Raphus cucullatus, EX); обзоры последних встреч (Roberts & Solow и позже).",
+      "scale": {
+        "heightLabel": "Высота стоя",
+        "lengthLabel": "От клюва до кончика хвоста",
+        "captionExtra": "Последний раз дронта достоверно видели на Маврикии в 1662 году, а к 1690 году вид, вероятно, исчез.",
+        "sources": [
+          {
+            "label": "Википедия: маврикийский дронт (Wikipedia: Dodo)",
+            "url": "https://en.wikipedia.org/wiki/Dodo"
+          },
+          {
+            "label": "Музей естествознания, Лондон: дронт, настоящие факты о символе вымирания (Natural History Museum, London: The dodo bird, the real facts about this icon of extinction)",
+            "url": "https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html"
+          },
+          {
+            "label": "Блог «Зоология четвероногих», Даррен Нэйш: дронт при жизни (Tetrapod Zoology, Darren Naish: The Dodo in Life)",
+            "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life"
+          },
+          {
+            "label": "Журнал «Нейчер», Робертс и Солоу, 2003: когда вымер дронт? (Nature, Roberts and Solow 2003: When did the dodo become extinct?)",
+            "url": "https://www.nature.com/articles/426245a"
+          }
+        ]
+      }
     },
     "passenger-pigeon": {
       "commonName": "Странствующий голубь",
@@ -60,7 +110,26 @@
       "when": "Вымер. Смерть последнего вольерного: 7 сентября 1936.",
       "humanRole": "Государственная премия и преследование как мнимого истребителя овец на уже изменённом острове.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Thylacinus cynocephalus, EX); запись зоопарка Бомарис, 1936."
+      "sourcesNote": "Красный список МСОП (Thylacinus cynocephalus, EX); запись зоопарка Бомарис, 1936.",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "От носа до кончика хвоста",
+        "captionExtra": "Последний известный тилацин умер в зоопарке Хобарта на Тасмании в 1936 году, а в 1982 году вид признали вымершим.",
+        "sources": [
+          {
+            "label": "Википедия: сумчатый волк (Wikipedia: Thylacine)",
+            "url": "https://en.wikipedia.org/wiki/Thylacine"
+          },
+          {
+            "label": "«Фауна Австралии», Диксон, 1989: семейство сумчатых волков (Fauna of Australia, Dixon 1989: Thylacinidae)",
+            "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf"
+          },
+          {
+            "label": "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: сумчатый волк (University of Michigan Museum of Zoology, Animal Diversity Web: Thylacinus cynocephalus, Tasmanian wolf)",
+            "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/"
+          }
+        ]
+      }
     },
     "stellers-sea-cow": {
       "commonName": "Стеллерова корова",
@@ -72,7 +141,34 @@
       "when": "Вымерла в 1768 году — одно из самых быстрых зафиксированных истреблений крупного млекопитающего.",
       "humanRole": "Прямая охота пушных команд после 1741 года добила вид, уже запертый на островах.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Hydrodamalis gigas, EX); описание Стеллера 1741; дата последней добычи 1768."
+      "sourcesNote": "Красный список МСОП (Hydrodamalis gigas, EX); описание Стеллера 1741; дата последней добычи 1768.",
+      "scale": {
+        "heightLabel": "Высота тела",
+        "lengthLabel": "От морды до кончика хвоста",
+        "captionExtra": "Её открыли в 1741 году, а к 1768 году полностью истребили.",
+        "sources": [
+          {
+            "label": "Справочник размеров: стеллерова корова, размеры и чертежи (Dimensions.com: Steller's Sea Cow, Hydrodamalis gigas, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas"
+          },
+          {
+            "label": "Википедия: стеллерова корова (Wikipedia: Steller's sea cow)",
+            "url": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow"
+          },
+          {
+            "label": "Музей зоологии Мичиганского университета, веб-справочник о разнообразии животных: стеллерова корова (University of Michigan Museum of Zoology, Animal Diversity Web: Hydrodamalis gigas, Steller's sea cow)",
+            "url": "https://animaldiversity.org/accounts/Hydrodamalis_gigas/"
+          },
+          {
+            "label": "Журнал «Байолоджи леттерс», Терви и Рисли, 2006: моделирование вымирания стеллеровой коровы (Biology Letters, Turvey and Risley 2006: Modelling the extinction of Steller's sea cow)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1617197/"
+          },
+          {
+            "label": "Музей естествознания, Лондон: стеллерова корова, первое в истории вымирание морского млекопитающего по вине человека (Natural History Museum, London: Steller's sea cow, the first historical extinction of marine mammal at human hands)",
+            "url": "https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html"
+          }
+        ]
+      }
     },
     "aurochs": {
       "commonName": "Тур",
@@ -84,7 +180,26 @@
       "when": "Вымер в 1627 году, пуща Якторов, Польша.",
       "humanRole": "Охота и земледелие стерли дикую форму; доместикация оставила лишь генетическое эхо.",
       "sources": [],
-      "sourcesNote": "Красный список МСОП (Bos primigenius, EX); польская запись о смерти 1627 года в Якторове."
+      "sourcesNote": "Красный список МСОП (Bos primigenius, EX); польская запись о смерти 1627 года в Якторове.",
+      "scale": {
+        "heightLabel": "Высота в холке",
+        "lengthLabel": "От носа до кончика хвоста",
+        "captionExtra": "Последняя известная особь тура, самка, пала в Якторовской пуще в Польше в 1627 году.",
+        "sources": [
+          {
+            "label": "Сайт о вымерших животных: тур (The Extinctions: The Aurochs)",
+            "url": "https://www.theextinctions.com/articles-1/ns0atubs8qd60o16itraa69zhw7e0w"
+          },
+          {
+            "label": "Справочник размеров: тур, размеры и чертежи (Dimensions.com: Auroch, Bos primigenius, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/auroch-bos-primigenius"
+          },
+          {
+            "label": "Википедия: тур (Wikipedia: Aurochs)",
+            "url": "https://en.wikipedia.org/wiki/Aurochs"
+          }
+        ]
+      }
     },
     "great-auk": {
       "commonName": "Бескрылая гагарка",

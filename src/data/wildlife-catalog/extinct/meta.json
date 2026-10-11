@@ -51,6 +51,121 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 2.9875,
+          "unit": "m",
+          "mean": 2.9875,
+          "range": [
+            2.6,
+            3.4
+          ],
+          "basis": "shoulder height of adult males (from skeletons)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ma-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+              "title": "Woolly mammoth - Wikipedia",
+              "use": "counted",
+              "range": [
+                280,
+                315
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ma-dim-h",
+              "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius",
+              "title": "Woolly Mammoth (Mammuthus primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "counted",
+              "range": [
+                260,
+                340
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 3.97,
+          "unit": "m",
+          "mean": 3.97,
+          "basis": "body length without the trunk and tusks (published skeletal shoulder height to length proportion of adult bulls, Boeskorov 2021)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "derived",
+          "derivation": {
+            "method": "body-proportion",
+            "from": "height",
+            "ratio": 0.7525,
+            "note": "Boeskorov 2021: adult East Siberian woolly mammoth bulls, skeletal shoulder height over skeletal length from the rostrum to the tail base, mean 0.7525 (index M = 75.25, n = 7, Tables 1 and 2); 298.75 / 0.7525 = 397 cm (Boeskorov 2021)"
+          },
+          "sources": [
+            {
+              "id": "ma-dim-l",
+              "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius",
+              "title": "Woolly Mammoth (Mammuthus primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "support",
+              "range": [
+                280,
+                380
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ma-bo-l",
+              "url": "https://cyberleninka.ru/article/n/razmery-tela-sherstistogo-mamonta-mammuthus-primigenius-blumenbach-vtoroy-poloviny-pozdnego-pleystotsena-severa-vostochnoy-sibiri",
+              "title": "Размеры тела шерстистого мамонта Mammuthus primigenius (Blumenbach) второй половины позднего плейстоцена севера Восточной Сибири",
+              "use": "derived",
+              "value": 397,
+              "unit": "cm"
+            },
+            {
+              "id": "ma-bo-pdf",
+              "url": "https://resar.elpub.ru/jour/article/download/171/136",
+              "title": "Boeskorov 2021, Arctic and Subarctic Natural Resources 26(1), journal PDF",
+              "use": "support",
+              "value": 381,
+              "unit": "cm"
+            },
+            {
+              "id": "ma-tz-l",
+              "url": "https://tetzoo.com/blog/2025/11/5/a-woolly-mammoth-primer",
+              "title": "A Woolly Mammoth Primer — Tetrapod Zoology",
+              "use": "support",
+              "value": 395,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "height",
+        "sortKey": 3.97,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/woolly-mammoth.webp",
+          "png": null,
+          "pxW": 1019,
+          "pxH": 556,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "woolly-mammoth.jpg",
         "kind": "photo",
@@ -82,6 +197,104 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 0.6743,
+          "unit": "m",
+          "mean": 0.6743,
+          "range": [
+            0.62,
+            0.75
+          ],
+          "basis": "standing height, top of the head to the soles of the feet, standing upright (adult, from subfossil skeletons)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "do-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Dodo",
+              "title": "Dodo - Wikipedia",
+              "use": "counted",
+              "range": [
+                62.6,
+                75
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "do-nhm-h",
+              "url": "https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html",
+              "title": "The dodo bird: The real facts about this icon of extinction / Natural History Museum",
+              "use": "counted",
+              "value": 70,
+              "unit": "cm"
+            },
+            {
+              "id": "do-tz-h",
+              "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life",
+              "title": "The Dodo in Life , Tetrapod Zoology",
+              "use": "counted",
+              "range": [
+                62,
+                65
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "do-ox-h",
+              "url": "https://oumnh.ox.ac.uk/oxford-dodo-0",
+              "title": "The Oxford Dodo / Oxford University Museum of Natural History",
+              "use": "support",
+              "value": 100,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 0.7,
+          "unit": "m",
+          "mean": 0.7,
+          "basis": "bill tip to tail tip along the body (single estimate, Tetrapod Zoology)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "do-tz-l",
+              "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life",
+              "title": "The Dodo in Life , Tetrapod Zoology",
+              "use": "estimate",
+              "value": 70,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "height",
+        "sortKey": 0.7,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/dodo.webp",
+          "png": null,
+          "pxW": 584,
+          "pxH": 634,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "dodo.jpg",
         "kind": "photo",
@@ -144,6 +357,133 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 0.58,
+          "unit": "m",
+          "mean": 0.58,
+          "range": [
+            0.56,
+            0.6
+          ],
+          "basis": "shoulder height (museum specimens and records)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "th-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Thylacine",
+              "title": "Thylacine - Wikipedia",
+              "use": "counted",
+              "value": 60,
+              "unit": "cm"
+            },
+            {
+              "id": "th-dx-h",
+              "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf",
+              "title": "(PDF)",
+              "use": "counted",
+              "value": 56,
+              "unit": "cm"
+            },
+            {
+              "id": "th-adw-h",
+              "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/",
+              "title": "Thylacinus cynocephalus (Tasmanian wolf) / INFORMATION / Animal Diversity Web",
+              "use": "support",
+              "range": [
+                35,
+                60
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 1.6005,
+          "unit": "m",
+          "mean": 1.6005,
+          "range": [
+            1.182,
+            1.95
+          ],
+          "basis": "nose to tail tip (head and body plus tail)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "th-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Thylacine",
+              "title": "Thylacine - Wikipedia",
+              "use": "counted",
+              "range": [
+                150,
+                195
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "th-adw-l",
+              "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/",
+              "title": "Thylacinus cynocephalus (Tasmanian wolf) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "range": [
+                123,
+                195
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "th-dx-l",
+              "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf",
+              "title": "(PDF)",
+              "use": "counted",
+              "range": [
+                118.2,
+                179.1
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "th-dx-t",
+              "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf",
+              "title": "(PDF)",
+              "use": "support",
+              "range": [
+                33.1,
+                61
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 1.6005,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/thylacine.webp",
+          "png": null,
+          "pxW": 1027,
+          "pxH": 428,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "thylacine.jpg",
         "kind": "photo",
@@ -175,6 +515,111 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 2.125,
+          "unit": "m",
+          "mean": 2.125,
+          "range": [
+            2,
+            2.25
+          ],
+          "basis": "body depth, top of the back to the belly (single source)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sc-dim-h",
+              "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas",
+              "title": "Steller's Sea Cow (Hydrodamalis gigas) Dimensions & Drawings / Dimensions.com",
+              "use": "estimate",
+              "range": [
+                200,
+                225
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 8.1667,
+          "unit": "m",
+          "mean": 8.1667,
+          "range": [
+            7.5,
+            9.1
+          ],
+          "basis": "snout to tail tip (Steller's measurements and later estimates)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sc-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow",
+              "title": "Steller's sea cow - Wikipedia",
+              "use": "counted",
+              "range": [
+                800,
+                900
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sc-dim-l",
+              "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas",
+              "title": "Steller's Sea Cow (Hydrodamalis gigas) Dimensions & Drawings / Dimensions.com",
+              "use": "counted",
+              "range": [
+                790,
+                910
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sc-adw-l",
+              "url": "https://animaldiversity.org/accounts/Hydrodamalis_gigas/",
+              "title": "Hydrodamalis gigas (Steller's sea cow) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "value": 750,
+              "unit": "cm"
+            },
+            {
+              "id": "sc-nhm-l",
+              "url": "https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html",
+              "title": "Steller's sea cow: the first historical extinction of marine mammal at human hands / Natural History Museum",
+              "use": "support",
+              "value": 1000,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 8.1667,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/stellers-sea-cow.webp",
+          "png": null,
+          "pxW": 1046,
+          "pxH": 310,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "stellers-sea-cow.jpg",
         "kind": "photo",
@@ -206,6 +651,103 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 1.675,
+          "unit": "m",
+          "mean": 1.675,
+          "range": [
+            1.5,
+            1.8
+          ],
+          "basis": "withers height of bulls (from skeletons)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "au-te-h",
+              "url": "https://www.theextinctions.com/articles-1/ns0atubs8qd60o16itraa69zhw7e0w",
+              "title": "The Aurochs , The Extinctions",
+              "use": "counted",
+              "range": [
+                160,
+                180
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "au-dim-h",
+              "url": "https://www.dimensions.com/element/auroch-bos-primigenius",
+              "title": "Auroch (Bos primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "counted",
+              "range": [
+                150,
+                180
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "au-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Aurochs",
+              "title": "Aurochs - Wikipedia",
+              "use": "support",
+              "value": 180,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 2.96,
+          "unit": "m",
+          "mean": 2.96,
+          "range": [
+            2.67,
+            3.25
+          ],
+          "basis": "nose to tail tip (single source, basis not stated)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "au-dim-l",
+              "url": "https://www.dimensions.com/element/auroch-bos-primigenius",
+              "title": "Auroch (Bos primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "estimate",
+              "range": [
+                267,
+                325
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 2.96,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/aurochs.webp",
+          "png": null,
+          "pxW": 887,
+          "pxH": 536,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "aurochs.jpg",
         "kind": "photo",

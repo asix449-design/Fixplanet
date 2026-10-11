@@ -24,7 +24,34 @@
       "when": "Wymarły. Ląd: koniec plejstocenu. Ostatnie wyspowe grupy: środek holocenu, ok. 4000 lat temu.",
       "humanRole": "Polowania są szeroko cytowaną przyczyną współtowarzyszącą utracie siedlisk przez klimat — nie udowodnioną przyczyną jedyną.",
       "sources": [],
-      "sourcesNote": "Datowane szczątki z Wrangla (Wartanjan i późniejsze prace nad dawnym DNA); przeglądy wymierania megafauny."
+      "sourcesNote": "Datowane szczątki z Wrangla (Wartanjan i późniejsze prace nad dawnym DNA); przeglądy wymierania megafauny.",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Długość ciała bez trąby i ciosów",
+        "captionExtra": "Ostatnie mamuty włochate żyły na Wyspie Wrangla na Oceanie Arktycznym jeszcze około 4000 lat temu.",
+        "sources": [
+          {
+            "label": "Wikipedia: mamut włochaty (Wikipedia: Woolly mammoth)",
+            "url": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+          },
+          {
+            "label": "Katalog wymiarów: mamut włochaty, wymiary i rysunki (Dimensions.com: Woolly Mammoth, Mammuthus primigenius, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius"
+          },
+          {
+            "label": "Czasopismo Current Biology, Palkopoulou i współautorzy 2015: pełne genomy ujawniają oznaki spadku liczebności i zubożenia genetycznego mamuta włochatego (Current Biology, Palkopoulou and others 2015: Complete genomes reveal signatures of demographic and genetic declines in the woolly mammoth)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4439331/"
+          },
+          {
+            "label": "Blog Zoologia czworonogów, Darren Naish 2025: wprowadzenie do mamuta włochatego (Tetrapod Zoology, Darren Naish 2025: A Woolly Mammoth Primer)",
+            "url": "https://tetzoo.com/blog/2025/11/5/a-woolly-mammoth-primer"
+          },
+          {
+            "label": "Czasopismo Zasoby naturalne Arktyki i Subarktyki, Boeskorow 2021: rozmiary ciała mamuta włochatego z drugiej połowy późnego plejstocenu na północy Syberii Wschodniej (Arctic and Subarctic Natural Resources, Boeskorov 2021: Body size of the woolly mammoth Mammuthus primigenius of the second half of the Late Pleistocene in the north of Eastern Siberia)",
+            "url": "https://cyberleninka.ru/article/n/razmery-tela-sherstistogo-mamonta-mammuthus-primigenius-blumenbach-vtoroy-poloviny-pozdnego-pleystotsena-severa-vostochnoy-sibiri"
+          }
+        ]
+      }
     },
     "dodo": {
       "commonName": "Dodo",
@@ -36,7 +63,30 @@
       "when": "Wymarły pod koniec XVII wieku na wyspie, którą ludzie dopiero niedawno zasiedlili na stałe.",
       "humanRole": "Polowania plus ssaki zawleczone na wyspę bez wcześniejszych lądowych drapieżników.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Raphus cucullatus, EX); przeglądy dat ostatnich obserwacji."
+      "sourcesNote": "Czerwona lista IUCN (Raphus cucullatus, EX); przeglądy dat ostatnich obserwacji.",
+      "scale": {
+        "heightLabel": "Wysokość na stojąco",
+        "lengthLabel": "Od dzioba do końca ogona",
+        "captionExtra": "Ostatnią pewną obserwację na Mauritiusie odnotowano w 1662 roku, a do 1690 roku gatunek prawdopodobnie wymarł.",
+        "sources": [
+          {
+            "label": "Wikipedia: dront dodo (Wikipedia: Dodo)",
+            "url": "https://en.wikipedia.org/wiki/Dodo"
+          },
+          {
+            "label": "Muzeum Historii Naturalnej w Londynie: dodo, prawdziwe fakty o symbolu wymierania (Natural History Museum, London: The dodo bird, the real facts about this icon of extinction)",
+            "url": "https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html"
+          },
+          {
+            "label": "Blog „Zoologia czworonogów”, Darren Naish: dodo za życia (Tetrapod Zoology, Darren Naish: The Dodo in Life)",
+            "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life"
+          },
+          {
+            "label": "Czasopismo Nature, Roberts i Solow 2003: kiedy wymarł dodo? (Nature, Roberts and Solow 2003: When did the dodo become extinct?)",
+            "url": "https://www.nature.com/articles/426245a"
+          }
+        ]
+      }
     },
     "passenger-pigeon": {
       "commonName": "Gołąb wędrowny",
@@ -60,7 +110,26 @@
       "when": "Wymarły. Śmierć ostatniego w niewoli: 7 września 1936.",
       "humanRole": "Państwowa premia i prześladowanie jako rzekomego zabójcy owiec na już zmienionej wyspie.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Thylacinus cynocephalus, EX); zapis zoo Beaumaris, 1936."
+      "sourcesNote": "Czerwona lista IUCN (Thylacinus cynocephalus, EX); zapis zoo Beaumaris, 1936.",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Od nosa do końca ogona",
+        "captionExtra": "Ostatni znany wilkowór zmarł w zoo w Hobart na Tasmanii w 1936 roku, a w 1982 roku gatunek uznano za wymarły.",
+        "sources": [
+          {
+            "label": "Wikipedia: wilkowór tasmański (Wikipedia: Thylacine)",
+            "url": "https://en.wikipedia.org/wiki/Thylacine"
+          },
+          {
+            "label": "„Fauna Australii”, Dixon 1989: rodzina wilkoworowatych (Fauna of Australia, Dixon 1989: Thylacinidae)",
+            "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf"
+          },
+          {
+            "label": "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: wilkowór tasmański (University of Michigan Museum of Zoology, Animal Diversity Web: Thylacinus cynocephalus, Tasmanian wolf)",
+            "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/"
+          }
+        ]
+      }
     },
     "stellers-sea-cow": {
       "commonName": "Krowa morska Stellera",
@@ -72,7 +141,34 @@
       "when": "Wymarła w 1768 — jedno z najszybszych zapisanych wytępień dużego ssaka.",
       "humanRole": "Bezpośrednie polowania ekip futrzanych po 1741 skończyły gatunek już zamknięty na wyspach.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Hydrodamalis gigas, EX); opis Stellera z 1741; data ostatniego zabicia 1768."
+      "sourcesNote": "Czerwona lista IUCN (Hydrodamalis gigas, EX); opis Stellera z 1741; data ostatniego zabicia 1768.",
+      "scale": {
+        "heightLabel": "Wysokość ciała",
+        "lengthLabel": "Od pyska do końca ogona",
+        "captionExtra": "Odkryto ją w 1741 roku, a do 1768 roku została całkowicie wytępiona.",
+        "sources": [
+          {
+            "label": "Katalog wymiarów: krowa morska Stellera, wymiary i rysunki (Dimensions.com: Steller's Sea Cow, Hydrodamalis gigas, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas"
+          },
+          {
+            "label": "Wikipedia: krowa morska Stellera (Wikipedia: Steller's sea cow)",
+            "url": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow"
+          },
+          {
+            "label": "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: krowa morska Stellera (University of Michigan Museum of Zoology, Animal Diversity Web: Hydrodamalis gigas, Steller's sea cow)",
+            "url": "https://animaldiversity.org/accounts/Hydrodamalis_gigas/"
+          },
+          {
+            "label": "Czasopismo Biology Letters, Turvey i Risley 2006: modelowanie wymierania krowy morskiej Stellera (Biology Letters, Turvey and Risley 2006: Modelling the extinction of Steller's sea cow)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1617197/"
+          },
+          {
+            "label": "Muzeum Historii Naturalnej w Londynie: krowa morska Stellera, pierwsze w historii wymarcie ssaka morskiego z rąk człowieka (Natural History Museum, London: Steller's sea cow, the first historical extinction of marine mammal at human hands)",
+            "url": "https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html"
+          }
+        ]
+      }
     },
     "aurochs": {
       "commonName": "Tur",
@@ -84,7 +180,26 @@
       "when": "Wymarły, 1627, Puszcza Jaktorowska, Polska.",
       "humanRole": "Polowania i rolnictwo starły formę dziką; udomowienie zostawiło tylko genetyczne echo.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Bos primigenius, EX); polski zapis śmierci z 1627 w Jaktorowie."
+      "sourcesNote": "Czerwona lista IUCN (Bos primigenius, EX); polski zapis śmierci z 1627 w Jaktorowie.",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Od nosa do końca ogona",
+        "captionExtra": "Ostatnia znana krowa tura padła w Puszczy Jaktorowskiej w 1627 roku.",
+        "sources": [
+          {
+            "label": "Serwis o wymarłych zwierzętach: tur (The Extinctions: The Aurochs)",
+            "url": "https://www.theextinctions.com/articles-1/ns0atubs8qd60o16itraa69zhw7e0w"
+          },
+          {
+            "label": "Katalog wymiarów: tur, wymiary i rysunki (Dimensions.com: Auroch, Bos primigenius, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/auroch-bos-primigenius"
+          },
+          {
+            "label": "Wikipedia: tur leśny (Wikipedia: Aurochs)",
+            "url": "https://en.wikipedia.org/wiki/Aurochs"
+          }
+        ]
+      }
     },
     "great-auk": {
       "commonName": "Alka olbrzymia",
