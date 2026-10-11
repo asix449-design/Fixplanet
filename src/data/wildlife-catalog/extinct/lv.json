@@ -24,7 +24,34 @@
       "when": "Izmiris. Kontinents: pleistocēna beigas. Pēdējās salu grupas: holocēna vidus, ap 4000 gadiem.",
       "humanRole": "Medības ir plaši citēts līdzcēlonis līdzās klimata dzīvotņu zudumam — ne pierādīts vienīgais cēlonis.",
       "sources": [],
-      "sourcesNote": "Datētās Vrangeļa atliekas (Vartaņans un vēlākie senās DNS darbi); megafaunas izzušanas pārskati."
+      "sourcesNote": "Datētās Vrangeļa atliekas (Vartaņans un vēlākie senās DNS darbi); megafaunas izzušanas pārskati.",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "Ķermeņa garums bez snuķa un ilkņiem",
+        "captionExtra": "Pēdējie vilnainie mamuti Vrangeļa salā Ziemeļu Ledus okeānā dzīvoja vēl apmēram pirms 4000 gadiem.",
+        "sources": [
+          {
+            "label": "Vikipēdija: vilnainais mamuts (Wikipedia: Woolly mammoth)",
+            "url": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+          },
+          {
+            "label": "Izmēru katalogs: vilnainais mamuts, izmēri un rasējumi (Dimensions.com: Woolly Mammoth, Mammuthus primigenius, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius"
+          },
+          {
+            "label": "Žurnāls Current Biology, Palkopulu un līdzautori, 2015: pilni genomi atklāj vilnainā mamuta skaita un ģenētiskās daudzveidības samazināšanās pazīmes (Current Biology, Palkopoulou and others 2015: Complete genomes reveal signatures of demographic and genetic declines in the woolly mammoth)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4439331/"
+          },
+          {
+            "label": "Emuārs Tetrapodu zooloģija, Darrens Neišs, 2025: ievads par vilnaino mamutu (Tetrapod Zoology, Darren Naish 2025: A Woolly Mammoth Primer)",
+            "url": "https://tetzoo.com/blog/2025/11/5/a-woolly-mammoth-primer"
+          },
+          {
+            "label": "Žurnāls Arktikas un Subarktikas dabas resursi, Boeskorovs, 2021: vilnainā mamuta ķermeņa izmēri vēlā pleistocēna otrajā pusē Austrumsibīrijas ziemeļos (Arctic and Subarctic Natural Resources, Boeskorov 2021: Body size of the woolly mammoth Mammuthus primigenius of the second half of the Late Pleistocene in the north of Eastern Siberia)",
+            "url": "https://cyberleninka.ru/article/n/razmery-tela-sherstistogo-mamonta-mammuthus-primigenius-blumenbach-vtoroy-poloviny-pozdnego-pleystotsena-severa-vostochnoy-sibiri"
+          }
+        ]
+      }
     },
     "dodo": {
       "commonName": "Dodo",
@@ -36,7 +63,30 @@
       "when": "Izmiris līdz 17. gadsimta beigām salā, ko cilvēki tikai nesen bija pastāvīgi apdzīvojuši.",
       "humanRole": "Medības plus ievestie zīdītāji salā bez iepriekšējiem sauszemes plēsējiem.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Raphus cucullatus, EX); pēdējo sastapšanu pārskati."
+      "sourcesNote": "IUCN Sarkanais saraksts (Raphus cucullatus, EX); pēdējo sastapšanu pārskati.",
+      "scale": {
+        "heightLabel": "Augstums stāvus",
+        "lengthLabel": "No knābja līdz astes galam",
+        "captionExtra": "Pēdējo reizi dodo droši novēroja Maurīcijā 1662. gadā, un līdz 1690. gadam suga, visticamāk, bija izmirusi.",
+        "sources": [
+          {
+            "label": "Vikipēdija: dodo (Wikipedia: Dodo)",
+            "url": "https://en.wikipedia.org/wiki/Dodo"
+          },
+          {
+            "label": "Londonas Dabas vēstures muzejs: dodo, patiesie fakti par izmiršanas simbolu (Natural History Museum, London: The dodo bird, the real facts about this icon of extinction)",
+            "url": "https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html"
+          },
+          {
+            "label": "Emuārs „Četrkājaino zooloģija”, Darens Neišs: dodo dzīvē (Tetrapod Zoology, Darren Naish: The Dodo in Life)",
+            "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life"
+          },
+          {
+            "label": "Žurnāls Nature, Robertss un Solovs, 2003: kad izmira dodo? (Nature, Roberts and Solow 2003: When did the dodo become extinct?)",
+            "url": "https://www.nature.com/articles/426245a"
+          }
+        ]
+      }
     },
     "passenger-pigeon": {
       "commonName": "Ceļotājbalodis",
@@ -60,7 +110,26 @@
       "when": "Izmiris. Pēdējā nebrīves nāve: 1936. gada 7. septembris.",
       "humanRole": "Valsts prēmija un vajāšana kā it kā aitu slepkava jau pārveidotā salā.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Thylacinus cynocephalus, EX); Beaumaris zoodārza ieraksts, 1936."
+      "sourcesNote": "IUCN Sarkanais saraksts (Thylacinus cynocephalus, EX); Beaumaris zoodārza ieraksts, 1936.",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "No deguna līdz astes galam",
+        "captionExtra": "Pēdējais zināmais tilacīns nomira Hobārtas zoodārzā Tasmānijā 1936. gadā, bet 1982. gadā sugu atzina par izmirušu.",
+        "sources": [
+          {
+            "label": "Vikipēdija: tilacīns (Wikipedia: Thylacine)",
+            "url": "https://en.wikipedia.org/wiki/Thylacine"
+          },
+          {
+            "label": "„Austrālijas fauna”, Diksons, 1989: vilksomaiņu dzimta (Fauna of Australia, Dixon 1989: Thylacinidae)",
+            "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf"
+          },
+          {
+            "label": "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: tilacīns (University of Michigan Museum of Zoology, Animal Diversity Web: Thylacinus cynocephalus, Tasmanian wolf)",
+            "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/"
+          }
+        ]
+      }
     },
     "stellers-sea-cow": {
       "commonName": "Stellera jūrasgovs",
@@ -72,7 +141,34 @@
       "when": "Izmirusi 1768. gadā — viena no ātrākajām reģistrētajām liela zīdītāja iznīcināšanām.",
       "humanRole": "Tiešas kažokādu brigāžu medības pēc 1741. gada beidza sugu, kas jau bija ieslēgta salās.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Hydrodamalis gigas, EX); Stellera 1741. gada apraksts; pēdējās nogalināšanas datums 1768."
+      "sourcesNote": "IUCN Sarkanais saraksts (Hydrodamalis gigas, EX); Stellera 1741. gada apraksts; pēdējās nogalināšanas datums 1768.",
+      "scale": {
+        "heightLabel": "Ķermeņa augstums",
+        "lengthLabel": "No purna līdz astes galam",
+        "captionExtra": "To atklāja 1741. gadā, un līdz 1768. gadam to pilnībā iznīdēja.",
+        "sources": [
+          {
+            "label": "Izmēru katalogs: Stellera jūrasgovs, izmēri un rasējumi (Dimensions.com: Steller's Sea Cow, Hydrodamalis gigas, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas"
+          },
+          {
+            "label": "Vikipēdija: Stellera jūrasgovs (Wikipedia: Steller's sea cow)",
+            "url": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow"
+          },
+          {
+            "label": "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: Stellera jūrasgovs (University of Michigan Museum of Zoology, Animal Diversity Web: Hydrodamalis gigas, Steller's sea cow)",
+            "url": "https://animaldiversity.org/accounts/Hydrodamalis_gigas/"
+          },
+          {
+            "label": "Žurnāls Biology Letters, Tērvijs un Rislijs, 2006: Stellera jūrasgovs izmiršanas modelēšana (Biology Letters, Turvey and Risley 2006: Modelling the extinction of Steller's sea cow)",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1617197/"
+          },
+          {
+            "label": "Londonas Dabas vēstures muzejs: Stellera jūrasgovs, pirmā vēsturē zināmā jūras zīdītāja izmiršana cilvēka dēļ (Natural History Museum, London: Steller's sea cow, the first historical extinction of marine mammal at human hands)",
+            "url": "https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html"
+          }
+        ]
+      }
     },
     "aurochs": {
       "commonName": "Taurs",
@@ -84,7 +180,26 @@
       "when": "Izmiris 1627. gadā, Jaktorovas mežs, Polija.",
       "humanRole": "Medības un lauksaimniecība izdzēsa savvaļas formu; pieradināšana atstāja tikai ģenētisku atbalsi.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Bos primigenius, EX); Polijas ieraksts par 1627. gada nāvi Jaktorovā."
+      "sourcesNote": "IUCN Sarkanais saraksts (Bos primigenius, EX); Polijas ieraksts par 1627. gada nāvi Jaktorovā.",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "No deguna līdz astes galam",
+        "captionExtra": "Pēdējais zināmais taurs, govs, nobeidzās Jaktorovas mežā Polijā 1627. gadā.",
+        "sources": [
+          {
+            "label": "Vietne par izmirušiem dzīvniekiem: taurs (The Extinctions: The Aurochs)",
+            "url": "https://www.theextinctions.com/articles-1/ns0atubs8qd60o16itraa69zhw7e0w"
+          },
+          {
+            "label": "Izmēru katalogs: taurs, izmēri un rasējumi (Dimensions.com: Auroch, Bos primigenius, Dimensions and Drawings)",
+            "url": "https://www.dimensions.com/element/auroch-bos-primigenius"
+          },
+          {
+            "label": "Vikipēdija: taurs (Wikipedia: Aurochs)",
+            "url": "https://en.wikipedia.org/wiki/Aurochs"
+          }
+        ]
+      }
     },
     "great-auk": {
       "commonName": "Lielā alka",
@@ -183,10 +298,10 @@
       "sourcesNote": "Rančo La Brea hronoloģija; Ziemeļamerikas megafaunas izzušanas pārskati (Barnosky, Koch u. c.)."
     },
     "megatherium": {
-      "commonName": "Milzu slinkis",
-      "hook": "Ziloņa lieluma Dienvidamerikas slinkis; kauli ar griezuma pēdām rāda, ka cilvēki to medīja.",
+      "commonName": "Milzu sliņķis",
+      "hook": "Ziloņa lieluma Dienvidamerikas sliņķis; kauli ar griezuma pēdām rāda, ka cilvēki to medīja.",
       "imageAlt": "Megatherium americanum skelets dabas vēstures muzejā",
-      "what": "Megatherium americanum bija milzu sauszemes slinkis Dienvidamerikas pleistocēnā: augstāks par cilvēku stāvus un vairāku tonnu smags. Suga ir izmirsta. Tas nebija koku slinkis; tas ganījās un plūca krūmus.",
+      "what": "Megatherium americanum bija milzu sauszemes sliņķis Dienvidamerikas pleistocēnā: augstāks par cilvēku stāvus un vairāku tonnu smags. Suga ir izmirsta. Tas nebija koku sliņķis; tas ganījās un plūca krūmus.",
       "range": "Mērenā Dienvidamerika, īpaši pampa un kaimiņu apgabali Argentīnā un Urugvajā.",
       "story": "Suga izzuda ap pleistocēna–holocēna robežu. Campo Laborde Argentīnā kauli ar iegriezumiem datēti ap 12 600 kalendārajiem gadiem (Politis un vēlāka pārdatošana) — tiešs pierādījums, ka cilvēki dzīvnieku sadalīja. Klimats arī mainījās. Amerikas impulss ir lielo zīdītāju ģinšu zudums pēc pirmās cilvēku ierašanās, ne visas faunas iznīcināšana.",
       "when": "Izmira ap 12–10 tūkstošiem gadu; medīts vēlajā pleistocēnā.",

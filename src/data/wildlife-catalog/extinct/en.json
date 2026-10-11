@@ -24,7 +24,34 @@
       "when": "Extinct. Mainland: end-Pleistocene. Last island holdouts: mid-Holocene, about 4,000 years ago.",
       "humanRole": "Hunting is a widely cited contributing cause alongside climate-driven habitat loss — not a proven sole cause.",
       "sources": [],
-      "sourcesNote": "Dated Wrangel remains (Vartanyan and later ancient-DNA studies); reviews of Late Pleistocene megafauna extinction."
+      "sourcesNote": "Dated Wrangel remains (Vartanyan and later ancient-DNA studies); reviews of Late Pleistocene megafauna extinction.",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Body length without the trunk and tusks",
+        "captionExtra": "The last woolly mammoths lived on Wrangel Island in the Arctic Ocean until about 4,000 years ago.",
+        "sources": [
+          {
+            "label": "Wikipedia: Woolly mammoth",
+            "url": "https://en.wikipedia.org/wiki/Woolly_mammoth"
+          },
+          {
+            "label": "Dimensions.com: Woolly mammoth, Mammuthus primigenius, dimensions and drawings",
+            "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius"
+          },
+          {
+            "label": "Current Biology, Palkopoulou and others 2015: Complete genomes reveal signatures of demographic and genetic declines in the woolly mammoth",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4439331/"
+          },
+          {
+            "label": "Tetrapod Zoology, Darren Naish 2025: A Woolly Mammoth Primer",
+            "url": "https://tetzoo.com/blog/2025/11/5/a-woolly-mammoth-primer"
+          },
+          {
+            "label": "Arctic and Subarctic Natural Resources, Boeskorov 2021: Body size of the woolly mammoth Mammuthus primigenius of the second half of the Late Pleistocene in the north of Eastern Siberia (in Russian)",
+            "url": "https://cyberleninka.ru/article/n/razmery-tela-sherstistogo-mamonta-mammuthus-primigenius-blumenbach-vtoroy-poloviny-pozdnego-pleystotsena-severa-vostochnoy-sibiri"
+          }
+        ]
+      }
     },
     "dodo": {
       "commonName": "Dodo",
@@ -36,7 +63,30 @@
       "when": "Extinct by the late seventeenth century, on an island people had only recently occupied year-round.",
       "humanRole": "Hunting plus introduced mammals on an island with no prior land predators.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Raphus cucullatus, EX); Roberts & Solow and later reviews of last-sighting dates."
+      "sourcesNote": "IUCN Red List (Raphus cucullatus, EX); Roberts & Solow and later reviews of last-sighting dates.",
+      "scale": {
+        "heightLabel": "Standing height",
+        "lengthLabel": "Bill to tail tip",
+        "captionExtra": "The last confirmed sighting on Mauritius was in 1662, and the species was probably gone by 1690.",
+        "sources": [
+          {
+            "label": "Wikipedia: Dodo",
+            "url": "https://en.wikipedia.org/wiki/Dodo"
+          },
+          {
+            "label": "Natural History Museum, London: The dodo bird, the real facts about this icon of extinction",
+            "url": "https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html"
+          },
+          {
+            "label": "Tetrapod Zoology, Darren Naish: The Dodo in Life",
+            "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life"
+          },
+          {
+            "label": "Nature, Roberts and Solow 2003: When did the dodo become extinct?",
+            "url": "https://www.nature.com/articles/426245a"
+          }
+        ]
+      }
     },
     "passenger-pigeon": {
       "commonName": "Passenger pigeon",
@@ -60,7 +110,26 @@
       "when": "Extinct. Last captive death: 7 September 1936.",
       "humanRole": "A state bounty and persecution as a supposed sheep killer, on an island already altered by settlement.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Thylacinus cynocephalus, EX); Beaumaris Zoo record, 1936."
+      "sourcesNote": "IUCN Red List (Thylacinus cynocephalus, EX); Beaumaris Zoo record, 1936.",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Nose to tail tip",
+        "captionExtra": "The last known thylacine died at Hobart Zoo in Tasmania in 1936, and the species was declared extinct in 1982.",
+        "sources": [
+          {
+            "label": "Wikipedia: Thylacine",
+            "url": "https://en.wikipedia.org/wiki/Thylacine"
+          },
+          {
+            "label": "Fauna of Australia, Dixon 1989: Thylacinidae",
+            "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf"
+          },
+          {
+            "label": "University of Michigan Museum of Zoology, Animal Diversity Web: Thylacinus cynocephalus (Tasmanian wolf)",
+            "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/"
+          }
+        ]
+      }
     },
     "stellers-sea-cow": {
       "commonName": "Steller’s sea cow",
@@ -72,7 +141,34 @@
       "when": "Extinct, 1768 — one of the fastest recorded wipeouts of a large mammal.",
       "humanRole": "Direct hunting by fur crews after 1741 finished a species already confined to islands.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Hydrodamalis gigas, EX); Steller’s 1741 account; 1768 last-kill date in later compilations."
+      "sourcesNote": "IUCN Red List (Hydrodamalis gigas, EX); Steller’s 1741 account; 1768 last-kill date in later compilations.",
+      "scale": {
+        "heightLabel": "Body depth",
+        "lengthLabel": "Snout to tail tip",
+        "captionExtra": "It was discovered in 1741 and hunted to extinction by 1768.",
+        "sources": [
+          {
+            "label": "Dimensions.com: Steller's sea cow, Hydrodamalis gigas, dimensions and drawings",
+            "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas"
+          },
+          {
+            "label": "Wikipedia: Steller's sea cow",
+            "url": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow"
+          },
+          {
+            "label": "University of Michigan Museum of Zoology, Animal Diversity Web: Hydrodamalis gigas (Steller's sea cow)",
+            "url": "https://animaldiversity.org/accounts/Hydrodamalis_gigas/"
+          },
+          {
+            "label": "Biology Letters, Turvey and Risley 2006: Modelling the extinction of Steller's sea cow",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1617197/"
+          },
+          {
+            "label": "Natural History Museum, London: Steller's sea cow, the first historical extinction of a marine mammal at human hands",
+            "url": "https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html"
+          }
+        ]
+      }
     },
     "aurochs": {
       "commonName": "Aurochs",
@@ -84,7 +180,26 @@
       "when": "Extinct, 1627, Jaktorów Forest, Poland.",
       "humanRole": "Hunting and agriculture erased the wild form; domestication kept only a genetic echo.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Bos primigenius, EX); Polish historical record of the 1627 Jaktorów death."
+      "sourcesNote": "IUCN Red List (Bos primigenius, EX); Polish historical record of the 1627 Jaktorów death.",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Nose to tail tip",
+        "captionExtra": "The last known aurochs, a cow, died in the Jaktorów forest in Poland in 1627.",
+        "sources": [
+          {
+            "label": "The Extinctions: The Aurochs",
+            "url": "https://www.theextinctions.com/articles-1/ns0atubs8qd60o16itraa69zhw7e0w"
+          },
+          {
+            "label": "Dimensions.com: Auroch, Bos primigenius, dimensions and drawings",
+            "url": "https://www.dimensions.com/element/auroch-bos-primigenius"
+          },
+          {
+            "label": "Wikipedia: Aurochs",
+            "url": "https://en.wikipedia.org/wiki/Aurochs"
+          }
+        ]
+      }
     },
     "great-auk": {
       "commonName": "Great auk",
