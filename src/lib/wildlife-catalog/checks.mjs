@@ -131,6 +131,8 @@ export function checkCatalogue({ registry, rules, fileShelves, legacyShelves, re
   const chars = rules.bannedChars || [];
   const allShelves = { ...fileShelves, ...legacyShelves };
 
+  findings.push(...checkLabelPlaceholders(registry));
+
   for (const shelf of registry.shelves) {
     for (const loc of LOCALES) {
       const labels = shelf.labels[loc];
@@ -160,6 +162,47 @@ export function checkCatalogue({ registry, rules, fileShelves, legacyShelves, re
   }
 
   checkRemovedSlugs(findings, allShelves, repoRoot);
+  return findings;
+}
+
+const PLACEHOLDER_LABELS = new Set(['...', '…', 'tbd']);
+
+/**
+ * Fail when any registry label is a placeholder or blank.
+ * Covers hub.labels, scaleLabels, shelf labels, and shelfSource.label.
+ */
+export function checkLabelPlaceholders(registry) {
+  const findings = [];
+  const scan = (text, slug, locale, field) => {
+    if (typeof text !== 'string') return;
+    const trimmed = text.trim();
+    if (trimmed === '' || PLACEHOLDER_LABELS.has(trimmed.toLowerCase())) {
+      push(findings, {
+        rule: 'C20',
+        slug,
+        locale,
+        field,
+        message: `placeholder label ${JSON.stringify(text)}`,
+      });
+    }
+  };
+  const walk = (node, slug, locale, field) => {
+    if (typeof node === 'string') {
+      scan(node, slug, locale, field);
+      return;
+    }
+    if (!node || typeof node !== 'object') return;
+    for (const [key, value] of Object.entries(node)) {
+      const loc = key === 'en' || key === 'ru' || key === 'pl' || key === 'lv' ? key : locale;
+      walk(value, slug, loc, `${field}.${key}`);
+    }
+  };
+  if (registry.hub?.labels) walk(registry.hub.labels, 'hub', '*', 'hub.labels');
+  if (registry.scaleLabels) walk(registry.scaleLabels, '*', '*', 'scaleLabels');
+  for (const shelf of registry.shelves || []) {
+    if (shelf.labels) walk(shelf.labels, shelf.id, '*', 'labels');
+    if (shelf.shelfSource?.label) walk(shelf.shelfSource.label, shelf.id, '*', 'shelfSource.label');
+  }
   return findings;
 }
 

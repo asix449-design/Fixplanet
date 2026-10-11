@@ -465,61 +465,6 @@
         "maxPerGroup": 20,
         "split": "auto"
       }
-    },
-    {
-      "id": "prehistoric",
-      "kind": "status",
-      "order": 8,
-      "icon": "gone",
-      "enabled": false,
-      "mergeInto": "extinct",
-      "labels": {
-        "en": {
-          "name": "...",
-          "status": "...",
-          "tile": "...",
-          "lead": "..."
-        },
-        "ru": {
-          "name": "...",
-          "status": "...",
-          "tile": "...",
-          "lead": "..."
-        },
-        "pl": {
-          "name": "...",
-          "status": "...",
-          "tile": "...",
-          "lead": "..."
-        },
-        "lv": {
-          "name": "...",
-          "status": "...",
-          "tile": "...",
-          "lead": "..."
-        }
-      },
-      "scale": {
-        "enabled": true,
-        "unit": "m",
-        "decimals": 1,
-        "horizontal": "length",
-        "groups": [
-          {
-            "id": "small",
-            "maxSortKey": 2.5
-          },
-          {
-            "id": "medium",
-            "maxSortKey": 9
-          },
-          {
-            "id": "large"
-          }
-        ],
-        "maxPerGroup": 20,
-        "split": "auto"
-      }
     }
   ]
 }

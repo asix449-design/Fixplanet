@@ -27,6 +27,9 @@ export function refineCatalog({ registry, fileShelves, legacyShelves = {}, rules
   for (const shelf of registry.shelves) {
     if (orders.has(shelf.order)) fail(findings, 'S10', `duplicate shelf order ${shelf.order}`, { field: shelf.id });
     orders.set(shelf.order, shelf.id);
+    if (shelf.id === 'prehistoric') {
+      fail(findings, 'S10', 'there is no prehistoric shelf', { slug: shelf.id, field: 'id' });
+    }
     if (shelf.mergeInto) {
       const target = shelfById(registry, shelf.mergeInto);
       if (!target || !target.enabled || target.cards === false) {
@@ -86,8 +89,8 @@ export function refineCatalog({ registry, fileShelves, legacyShelves = {}, rules
         if (extinctFlag && card.primaryShelf !== 'extinct') {
           fail(findings, 'S6', `${card.slug} EW/PE card must be primary extinct`, { slug: card.slug, field: 'primaryShelf' });
         }
-        if (card.era && card.primaryShelf !== 'prehistoric' && !tags.includes('prehistoric')) {
-          fail(findings, 'S12', `${card.slug} era only on prehistoric`, { slug: card.slug, field: 'era' });
+        if (card.era || card.primaryShelf === 'prehistoric' || tags.includes('prehistoric')) {
+          fail(findings, 'S12', `${card.slug} there is no prehistoric shelf`, { slug: card.slug, field: 'era' });
         }
         if (card.rank === 'breed' && !card.parentSpecies) {
           fail(findings, 'S5', `${card.slug} breed needs parentSpecies`, { slug: card.slug, field: 'parentSpecies' });

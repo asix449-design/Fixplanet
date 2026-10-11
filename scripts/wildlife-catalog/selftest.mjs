@@ -1,7 +1,7 @@
 import { CardMeta, LOCALES, Registry } from '../../src/lib/wildlife-catalog/schema.mjs';
 import { formatMeasure, splitGroup } from '../../src/lib/wildlife-catalog/format.mjs';
 import { compilePatterns, scanText } from '../../src/lib/wildlife-catalog/c17.mjs';
-import { c16Issues } from '../../src/lib/wildlife-catalog/checks.mjs';
+import { c16Issues, checkLabelPlaceholders } from '../../src/lib/wildlife-catalog/checks.mjs';
 import { s14Names } from '../../src/lib/wildlife-catalog/refine.mjs';
 import { toSpecies } from '../../src/lib/wildlife-catalog/adapter.mjs';
 
@@ -22,18 +22,26 @@ export function runSelfTests(catalog, live) {
     hub: { labels: { en: { name: 'Wildlife' }, ru: { name: 'Природа' }, pl: { name: 'Przyroda' }, lv: { name: 'Savvaļa' } } },
     scaleLabels: Object.fromEntries(LOCALES.map((l) => [l, { small: 'S', medium: 'M', large: 'L', subgroup: '{group} {i}' }])),
     options: { breeds: 'variants', flagsOnExtinct: ['EW', 'PE'] },
-    shelves: [{ id: 'prehistoric', kind: 'status', order: 8, icon: 'gone', enabled: false, labels: lab() }],
+    shelves: [{ id: 'archived', kind: 'status', order: 8, icon: 'gone', enabled: false, labels: lab() }],
   };
   assert(!Registry.safeParse(reg).success, 'disabled card shelf without mergeInto must fail');
   reg.shelves[0].mergeInto = 'extinct';
   assert(Registry.safeParse(reg).success, 'disabled shelf with mergeInto must parse');
+  assert(!Registry.safeParse({ ...reg, shelves: [{ ...reg.shelves[0], id: 'prehistoric', mergeInto: 'extinct' }] }).success, 'prehistoric shelf is rejected');
+  assert(!registry.shelves.some((s) => s.id === 'prehistoric'), 'live registry has no prehistoric shelf');
+  for (const sample of ['...', '…', 'TBD', 'tbd', '   ']) {
+    const hit = checkLabelPlaceholders({ hub: { labels: { en: { name: sample } } }, shelves: [] });
+    assert(hit.length === 1 && hit[0].rule === 'C20', `placeholder label must fail: ${JSON.stringify(sample)}`);
+  }
+  assert(checkLabelPlaceholders({ hub: { labels: { en: { name: 'Wildlife' } } }, shelves: [] }).length === 0, 'real hub label passes');
 
   const base = {
     value: 0.7, unit: 'm', basis: 'bill tip to tail tip', confidence: 'single_source', approx: false, kind: 'measured',
     sources: [{ id: 'a', url: 'https://example.org/x', title: 't', use: 'estimate', value: 70, unit: 'cm' }],
     suppliedBy: 'bob', checked: '2026-10-06',
   };
-  const SV = CardMeta.shape.size.unwrap().shape.length.unwrap();
+  const cardShape = CardMeta.innerType().shape;
+  const SV = cardShape.size.unwrap().shape.length.unwrap();
   assert(!SV.safeParse(base).success, 'single_source must be approx');
   assert(SV.safeParse({ ...base, approx: true }).success, 'approx single_source must parse');
   const derived = {
@@ -86,7 +94,7 @@ export function runSelfTests(catalog, live) {
   try { applyFix(lvMega, fixes[0]); } catch { reapplied = true; }
   assert(reapplied, 'card.fix refuses to reapply');
 
-  const IU = CardMeta.shape.iucn.unwrap();
+  const IU = cardShape.iucn.unwrap();
   const dodo = { category: 'EX', verifiedVia: 'gbif', checkedAt: '2026-10-08', iucnTaxonId: '22690059', assessedYear: 2024, assessmentUrl: 'https://www.iucnredlist.org/species/22690059/261916273' };
   assert(IU.safeParse(dodo).success, 'verified IUCN parses');
   assert(!IU.safeParse({ ...dodo, verifiedVia: 'wikipedia' }).success, 'wikipedia is not a verification source');
@@ -101,7 +109,7 @@ export function runSelfTests(catalog, live) {
   assert(IU.safeParse(ne).success && IU.parse(ne).scope === 'global', 'NE evidence parses');
   assert(!IU.safeParse({ ...ne, evidence: undefined }).success, 'NE without evidence is rejected');
 
-  const OS = CardMeta.shape.otherStatus.unwrap();
+  const OS = cardShape.otherStatus.unwrap();
   const ospar = {
     system: 'OSPAR', value: 'Threatened and/or declining', regions: ['II', 'III'],
     recordUrl: 'https://www.ospar.org/work-areas/bdc/species-habitats/list-of-threatened-declining-species-habitats/invertebrates/flat-oyster',

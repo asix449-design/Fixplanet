@@ -60,7 +60,7 @@ export const Registry = z.object({
     flagsOnExtinct: z.array(z.enum(['EW', 'PE'])),
   }).strict(),
   shelves: z.array(Shelf).min(1),
-}).strict();
+}).strict().refine((r) => !r.shelves.some((s) => s.id === 'prehistoric'), 'there is no prehistoric shelf');
 
 /* ---------- size ---------- */
 const LenUnit = z.enum(['mm', 'm']);
@@ -184,12 +184,6 @@ export const CardMeta = z.object({
     humanLink: z.object({ kind: z.enum(['role', 'coexistence']), sourceUrl: https, quote: z.string().min(1) }).strict(),
   }).strict().refine((e) => (e.yearsAgo != null) !== (e.yearsAgoRange != null), 'extinctionPeriod needs yearsAgo or yearsAgoRange')
     .refine((e) => !e.yearsAgoRange || e.yearsAgoRange[0] > e.yearsAgoRange[1], 'yearsAgoRange is [older, younger]').optional(),
-  era: z.object({
-    period: z.string(), epoch: z.string().optional(),
-    ageMa: z.object({ from: z.number().positive(), to: z.number().nonnegative() }).strict()
-      .refine((a) => a.from > a.to, 'ageMa.from must be older than ageMa.to'),
-    approx: z.boolean(),
-  }).strict().optional(),
   range: z.object({
     realm: z.array(z.enum(['terrestrial', 'freshwater', 'marine'])).min(1),
     current: Geo.default({}),
@@ -248,7 +242,8 @@ export const CardMeta = z.object({
     migratedFrom: z.literal('speciesMeta').optional(),
     suppliedBy: z.array(z.string()).default([]),
   }).strict(),
-}).strict();
+}).strict().refine((c) => c.era == null && c.primaryShelf !== 'prehistoric' && !(c.tags || []).includes('prehistoric'),
+  'there is no prehistoric shelf');
 
 /* ---------- rules.json: IUCN category names (v3.2) ---------- */
 const IUCN_CODES = ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE'];
