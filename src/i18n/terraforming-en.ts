@@ -1,4 +1,5 @@
 import type { GeoCopy } from '../data/terraforming';
+import { desertPackEn } from './terraforming-desert-pack';
 
 export const en: Record<string, GeoCopy> = {
   'bradfield-scheme': {
@@ -358,4 +359,5 @@ export const en: Record<string, GeoCopy> = {
     sourcesNote:
       'Glacial Climate Intervention: A Research Vision (2024 PDF via AWI EPIC); Moore et al. 2024 Climatic Change survey of high-latitude interventions (journal page and DOI); NOAA CSL SRM State of the Science fact sheet for the SRM ≠ ice-sheet-engineering distinction.',
   },
+  ...desertPackEn,
 };

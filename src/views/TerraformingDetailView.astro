@@ -18,6 +18,10 @@ const { item } = Astro.props;
 const title = `${item.title} — Fix Planet`;
 const image = geoImageSrc(item.image);
 const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
+const natural = item.image.fit === 'natural';
+const artWidth = item.image.width ?? 1280;
+const artHeight = item.image.height ?? 960;
+const numberedSources = Boolean(item.photoCredit);
 ---
 
 <BaseLayout
@@ -52,22 +56,57 @@ const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
 
   <section class="section">
     <div class="wrap wildlife-detail">
-      <figure class="wildlife-detail-art">
-        <img src={image} alt={item.imageAlt} width="1280" height="960" />
+      <figure class:list={['wildlife-detail-art', natural && 'geo-detail-natural']}>
+        <img
+          src={image}
+          alt={item.imageAlt}
+          width={artWidth}
+          height={artHeight}
+          style={natural ? `max-width:min(100%, ${artWidth}px)` : undefined}
+        />
         <figcaption>
-          {page.imageCredit}: {item.image.credit}
           {
-            item.image.sourceUrl ? (
+            item.photoCredit ? (
               <>
-                {' '}
-                (
-                <a href={item.image.sourceUrl} rel="noopener noreferrer">
-                  {item.image.license}
-                </a>
-                )
+                {item.caption ? <p>{item.caption}</p> : null}
+                <p>{item.photoCredit}</p>
+                {
+                  item.image.licenseUrl ? (
+                    <p>
+                      <a href={item.image.licenseUrl} rel="noopener noreferrer">
+                        {item.image.licenseUrl}
+                      </a>
+                    </p>
+                  ) : null
+                }
+                {
+                  item.image.sourceUrl ? (
+                    <p>
+                      <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                        {item.image.sourceUrl}
+                      </a>
+                    </p>
+                  ) : null
+                }
               </>
             ) : (
-              <> ({item.image.license})</>
+              <>
+                {page.imageCredit}: {item.image.credit}
+                {
+                  item.image.sourceUrl ? (
+                    <>
+                      {' '}
+                      (
+                      <a href={item.image.sourceUrl} rel="noopener noreferrer">
+                        {item.image.license}
+                      </a>
+                      )
+                    </>
+                  ) : (
+                    <> ({item.image.license})</>
+                  )
+                }
+              </>
             )
           }
         </figcaption>
@@ -101,18 +140,34 @@ const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
         <h2>{page.lessons}</h2>
         <p>{item.lessons}</p>
         <h2>{page.sourcesLabel}</h2>
-        <p class="wildlife-sources">{item.sourcesNote}</p>
-        <ul class="law-source-list">
-          {
-            item.sources.map((source) => (
-              <li>
-                <a href={source.url} rel="noopener noreferrer">
-                  {source.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
+        {item.sourcesNote ? <p class="wildlife-sources">{item.sourcesNote}</p> : null}
+        {
+          numberedSources ? (
+            <ol class="law-source-list geo-sources">
+              {
+                item.sources.map((source) => (
+                  <li>
+                    <a href={source.url} rel="noopener noreferrer">
+                      {source.label}
+                    </a>
+                  </li>
+                ))
+              }
+            </ol>
+          ) : (
+            <ul class="law-source-list">
+              {
+                item.sources.map((source) => (
+                  <li>
+                    <a href={source.url} rel="noopener noreferrer">
+                      {source.label}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          )
+        }
       </div>
     </div>
   </section>

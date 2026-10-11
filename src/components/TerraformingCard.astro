@@ -11,7 +11,9 @@ const locale = resolveLocale(Astro.currentLocale);
 const page = getGeoPage(locale);
 const { item } = Astro.props;
 const href = localizePath(geoDetailPath(item.slug), locale);
-const primary = item.shelf === 'desert' ? geoPrimarySource(item.sources) : undefined;
+const primary =
+  item.shelf === 'desert' ? (item.gridSource ?? geoPrimarySource(item.sources)) : undefined;
+const natural = item.image.fit === 'natural';
 ---
 
 <article
@@ -20,12 +22,12 @@ const primary = item.shelf === 'desert' ? geoPrimarySource(item.sources) : undef
   data-slug={item.slug}
 >
   <a class:list={['wildlife-card', 'geo-card', `geo-card-${item.status}`]} href={href}>
-    <div class="card-art">
+    <div class:list={['card-art', natural && 'geo-card-natural']}>
       <img
         src={geoImageSrc(item.image)}
         alt={item.imageAlt}
-        width="640"
-        height="400"
+        width={item.image.width ?? 640}
+        height={item.image.height ?? 400}
         loading="lazy"
       />
     </div>

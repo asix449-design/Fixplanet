@@ -69,7 +69,7 @@ const pageEn: GeoPage = {
   back: '← Terraforming',
   plan: 'The plan',
   construction: 'Construction / status',
-  outcome: 'What went wrong — or only partly worked',
+  outcome: 'What went wrong or only partly worked',
   lessons: 'Lessons',
   sourcesLabel: 'Sources',
   primarySource: 'Source',
@@ -90,7 +90,7 @@ const pageEn: GeoPage = {
     water:
       'Canals, pumps, fossil aquifers, and inland-sea dreams. Some pipes exist. Few of the climates they promised do.',
     desert:
-      'Shelterbelts and green walls. Surviving cover and water cost matter more than seedlings in a press release.',
+      'Shelterbelts, national planting drives and desert basin projects. Surviving cover and water use decide whether a green belt lasts.',
     climate:
       'Research and a few outdoor trials. Not deployed planetary engineering, and not a substitute for cutting emissions.',
   },
@@ -129,7 +129,7 @@ const pageRu: GeoPage = {
   back: '← Терраформинг',
   plan: 'Замысел',
   construction: 'Строительство / статус',
-  outcome: 'Что пошло не так — или сработало лишь частично',
+  outcome: 'Что пошло не так или сработало лишь частично',
   lessons: 'Уроки',
   sourcesLabel: 'Источники',
   primarySource: 'Источник',
@@ -150,7 +150,7 @@ const pageRu: GeoPage = {
     water:
       'Каналы, насосы, ископаемые водоносные горизонты и мечты о внутренних морях. Трубы иногда есть. Обещанного климата — почти нет.',
     desert:
-      'Лесополосы и зелёные стены. Живой покров и цена воды значат больше, чем саженцы в пресс-релизе.',
+      'Лесополосы, национальные кампании посадок и проекты в пустынных бассейнах. Прижившийся покров и расход воды решают, устоит ли зелёный пояс.',
     climate:
       'Исследования и несколько полевых опытов. Не развёрнутая инженерия планеты и не замена сокращению выбросов.',
   },
@@ -189,7 +189,7 @@ const pagePl: GeoPage = {
   back: '← Terraformowanie',
   plan: 'Plan',
   construction: 'Budowa / status',
-  outcome: 'Co poszło nie tak — albo zadziałało tylko częściowo',
+  outcome: 'Co poszło nie tak albo zadziałało tylko częściowo',
   lessons: 'Wnioski',
   sourcesLabel: 'Źródła',
   primarySource: 'Źródło',
@@ -210,7 +210,7 @@ const pagePl: GeoPage = {
     water:
       'Kanały, pompy, kopalne wodonośne i sny o morzach w głębi lądu. Rury czasem stoją. Klimat, który obiecywano — rzadko.',
     desert:
-      'Pasy wiatrochronne i zielone mury. Przetrwała pokrywa i koszt wody znaczą więcej niż sadzonki z komunikatu.',
+      'Pasy wiatrochronne, krajowe kampanie sadzenia i projekty w pustynnych dorzeczach. O trwałości zielonego pasa decydują przetrwała roślinność i zużycie wody.',
     climate:
       'Badania i kilka prób w terenie. Nie wdrożona inżynieria planety i nie substytut cięcia emisji.',
   },
@@ -249,7 +249,7 @@ const pageLv: GeoPage = {
   back: '← Terraformēšana',
   plan: 'Plāns',
   construction: 'Būvniecība / statuss',
-  outcome: 'Kas nogāja greizi — vai izdevās tikai daļēji',
+  outcome: 'Kas nogāja greizi vai izdevās tikai daļēji',
   lessons: 'Mācības',
   sourcesLabel: 'Avoti',
   primarySource: 'Avots',
@@ -270,7 +270,7 @@ const pageLv: GeoPage = {
     water:
       'Kanāli, sūkņi, fosilie ūdensnesēji un sapņi par iekšzemes jūrām. Caurules reizēm ir. Solītais klimats — reti.',
     desert:
-      'Vējiaizsargjoslas un zaļās sienas. Izdzīvojušais segums un ūdens cena nozīmē vairāk nekā stādi paziņojumā.',
+      'Vēja aizsargjoslas, valsts stādīšanas kampaņas un tuksneša baseinu projekti. Zaļās joslas ilgmūžību nosaka izdzīvojušais augu segums un ūdens patēriņš.',
     climate:
       'Pētījumi un daži lauka mēģinājumi. Ne ieviesta planētas inženierija un ne emisiju samazināšanas aizstājējs.',
   },
