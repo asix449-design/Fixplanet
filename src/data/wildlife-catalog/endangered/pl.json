@@ -24,7 +24,21 @@
       "when": "Zagrożony jako tygrys; populacja amurska to mała, strzeżona resztka.",
       "humanRole": "Upolowaliśmy tu tygrysa na skraj; częściowe odbicie tłumaczy ochrona, nie pusta puszcza.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Panthera tigris, EN, 2022); rosyjskie i chińskie spisy (szacunki)."
+      "sourcesNote": "Czerwona lista IUCN (Panthera tigris, EN, 2022); rosyjskie i chińskie spisy (szacunki).",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Od nosa do końca ogona",
+        "sources": [
+          {
+            "label": "Księga rekordów Guinnessa: największy dziki kot (Guinness World Records: Largest wild cat)",
+            "url": "https://www.guinnessworldrecords.com/world-records/102489-largest-wild-cat"
+          },
+          {
+            "label": "Park Zoologiczny Tama, Tokijskie Towarzystwo Zoologiczne: tygrys, tygrys amurski (Tama Zoological Park, Tokyo Zoological Park Society: Tiger, Amur tiger)",
+            "url": "https://www.tokyo-zoo.net/en/tama/encyclopedia/amur-tiger/index.html"
+          }
+        ]
+      }
     },
     "sumatran-orangutan": {
       "commonName": "Orangutan sumatrzański",
@@ -48,7 +62,26 @@
       "when": "Krytycznie zagrożony teraz. Podgatunek zachodni już zniknął.",
       "humanRole": "Handel rogiem jest głównym motorem; utrata siedlisk dodaje presję.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Diceros bicornis, CR); IRF State of the Rhino 2025 (szacunek na koniec 2024)."
+      "sourcesNote": "Czerwona lista IUCN (Diceros bicornis, CR); IRF State of the Rhino 2025 (szacunek na koniec 2024).",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Od nosa do końca ogona",
+        "credit": "Zdjęcie: Karelj, domena publiczna",
+        "sources": [
+          {
+            "label": "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: nosorożec czarny (University of Michigan Museum of Zoology, Animal Diversity Web: Diceros bicornis, black rhinoceros)",
+            "url": "https://animaldiversity.org/accounts/Diceros_bicornis/"
+          },
+          {
+            "label": "Międzynarodowa Fundacja Ochrony Nosorożców: nosorożec czarny (International Rhino Foundation: Black Rhino)",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/black-rhino/"
+          },
+          {
+            "label": "Międzynarodowa organizacja Ratujmy Nosorożce: nosorożce czarne (Save the Rhino International: Black rhinos)",
+            "url": "https://www.savetherhino.org/rhino-info/rhino-species/black-rhinos/"
+          }
+        ]
+      }
     },
     "african-forest-elephant": {
       "commonName": "Słoń afrykański leśny",
@@ -132,7 +165,27 @@
       "when": "Krytycznie zagrożony teraz, w niskich dziesiątkach.",
       "humanRole": "Rogi i zamiana lasu. Pozostałe zwierzęta trwają dzięki ogrodzeniom, patrolom i zarządzanemu rozrodowi.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47)."
+      "sourcesNote": "Czerwona lista IUCN (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47).",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Od nosa do końca ogona",
+        "credit": "Zdjęcie: nicolaitan, licencja Uznanie autorstwa na tych samych warunkach 2.0",
+        "changes": "Tło usunięto z oryginalnego zdjęcia. Zastosowano odbicie lustrzane.",
+        "sources": [
+          {
+            "label": "Wikipedia: nosorożec sumatrzański (Wikipedia: Sumatran rhinoceros)",
+            "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros"
+          },
+          {
+            "label": "Międzynarodowa Fundacja Ochrony Nosorożców: nosorożec sumatrzański (International Rhino Foundation: Sumatran Rhino)",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/"
+          },
+          {
+            "label": "Podręcznik ssaków świata, opis gatunku (Zenodo): nosorożec sumatrzański (Handbook of the Mammals of the World, species account (Zenodo): Dicerorhinus sumatrensis)",
+            "url": "https://zenodo.org/records/5720750"
+          }
+        ]
+      }
     },
     "saola": {
       "commonName": "Saola",
@@ -204,7 +257,27 @@
       "when": "Krytycznie zagrożony teraz. Dzikie plus reintrodukowane zwierzęta zostają w niskich setkach najwyżej.",
       "humanRole": "Polowania z pojazdów, potem infrastruktura wydobywcza w ostatnim zasięgu.",
       "sources": [],
-      "sourcesNote": "Czerwona lista IUCN (Addax nasomaculatus, CR, 2016); raport roczny Sahara Conservation 2024; monitoring Noé w Tin Toumma."
+      "sourcesNote": "Czerwona lista IUCN (Addax nasomaculatus, CR, 2016); raport roczny Sahara Conservation 2024; monitoring Noé w Tin Toumma.",
+      "scale": {
+        "heightLabel": "Wysokość w kłębie",
+        "lengthLabel": "Od nosa do końca ogona",
+        "credit": "Zdjęcie: Rufus46, licencja Uznanie autorstwa na tych samych warunkach 3.0",
+        "changes": "Tło usunięto z oryginalnego zdjęcia.",
+        "sources": [
+          {
+            "label": "Muzeum Zoologii Uniwersytetu Michigan, internetowy katalog różnorodności zwierząt: addaks (University of Michigan Museum of Zoology, Animal Diversity Web: Addax nasomaculatus, addax)",
+            "url": "https://animaldiversity.org/accounts/Addax_nasomaculatus/"
+          },
+          {
+            "label": "Wikipedia: addaks (Wikipedia: Addax)",
+            "url": "https://en.wikipedia.org/wiki/Addax"
+          },
+          {
+            "label": "Akta zwierząt: addaks (The Animal Files: Addax)",
+            "url": "https://www.theanimalfiles.com/mammals/hoofed_mammals/addax.html"
+          }
+        ]
+      }
     },
     "cao-vit-gibbon": {
       "commonName": "Gibon cao vit",
@@ -303,16 +376,30 @@
       "sourcesNote": "Ocena stada NOAA płetwala Rice’a (51, spisy 2017–18); Czerwona lista IUCN (Balaenoptera ricei, CR); opis Rosel et al. 2021."
     },
     "north-atlantic-right-whale": {
-      "commonName": "Płetwal biszkocki",
+      "commonName": "Waleń biskajski",
       "hook": "Wieloryb Północnego Atlantyku niegdyś bity do skraju — szacunek NOAA z 2024 to 384, wciąż krytycznie zagrożony.",
-      "imageAlt": "Płetwal biszkocki i cielę na powierzchni",
-      "what": "Płetwal biszkocki to krępy fiszbinowiec z kalozami na głowie. IUCN: krytycznie zagrożony. NOAA i North Atlantic Right Whale Consortium, modelem markowania–ponownego schwytania Pace/Linden, oszacowali 384 wieloryby (+10/−9) żywe na początek 2024. Około 70 to rozrodczo aktywne samice. To lekki wzrost po krachu końca lat 2010., nie odzyskany ocean.",
+      "imageAlt": "Waleń biskajski i cielę na powierzchni",
+      "what": "Waleń biskajski to krępy fiszbinowiec z kalozami na głowie. IUCN: krytycznie zagrożony. NOAA i North Atlantic Right Whale Consortium, modelem markowania–ponownego schwytania Pace/Linden, oszacowali 384 wieloryby (+10/−9) żywe na początek 2024. Około 70 to rozrodczo aktywne samice. To lekki wzrost po krachu końca lat 2010., nie odzyskany ocean.",
       "range": "Rozród u południowo-wschodnich Stanów Zjednoczonych; żer w Zatoce Maine, Zatoce Świętego Wawrzyńca i przesuwających się północnych żerowiskach. Historycznie obie strony Północnego Atlantyku; wschodnie stado jest praktycznie znikłe.",
       "story": "Wielorybnictwo baskijskie, potem jankeskie, usunęło łatwe przybrzeżne zwierzęta. Dziś zabójcami są splątanie w sprzęt połowowy i zderzenia ze statkami. Nietypowe zdarzenie śmiertelności trwa od 2017. Jedenaście cieląt zapisano w 2025, w dół z 20 w 2024.",
       "when": "Krytycznie zagrożony teraz. Niskie setki, mało matek.",
       "humanRole": "Historyczne wielorybnictwo, potem liny i kadłuby przy wielorybie, który żeruje i rodzi koło szlaków żeglugowych.",
       "sources": [],
-      "sourcesNote": "Linden 2025, NOAA TM NMFS-NE-338 (384 na początek 2024); karta raportu NARWC 2025; Czerwona lista IUCN (Eubalaena glacialis, CR)."
+      "sourcesNote": "Linden 2025, NOAA TM NMFS-NE-338 (384 na początek 2024); karta raportu NARWC 2025; Czerwona lista IUCN (Eubalaena glacialis, CR).",
+      "scale": {
+        "heightLabel": "Wysokość ciała",
+        "lengthLabel": "Od pyska do końca ogona",
+        "sources": [
+          {
+            "label": "Fortune i współautorzy, czasopismo o ssakach, tom 93, numer 5, 2012: wzrost i szybki wczesny rozwój waleni biskajskich (Fortune et al., Journal of Mammalogy 93(5), 2012: Growth and rapid early development of North Atlantic right whales, Eubalaena glacialis)",
+            "url": "https://www.zoology.ubc.ca/~consort/pdfs/Fortune%20et%20al%202012.pdf"
+          },
+          {
+            "label": "Miller i współautorzy, czasopismo Marine Ecology Progress Series, tom 459, 2012: zmiany kształtu ciała waleni biskajskich i południowych w zależności od rozrodu, kondycji i wzrostu (Miller et al., Marine Ecology Progress Series 459, 2012: Body shape changes in right whales Eubalaena glacialis and E. australis)",
+            "url": "https://repository.up.ac.za/bitstreams/57493b5f-0fba-48eb-a3c5-5c0b4356efe9/download"
+          }
+        ]
+      }
     }
   }
 }

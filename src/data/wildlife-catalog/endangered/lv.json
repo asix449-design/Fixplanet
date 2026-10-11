@@ -24,7 +24,21 @@
       "when": "Kā tīģeris — apdraudēts; Amūras populācija ir maza, sargāta atlieka.",
       "humanRole": "Šeit tīģeri nomedīja līdz malai; daļējo atelpu skaidro aizsardzība, nevis tukša taiga.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Panthera tigris, EN, 2022); Krievijas un Ķīnas uzskaites (vērtējumi)."
+      "sourcesNote": "IUCN Sarkanais saraksts (Panthera tigris, EN, 2022); Krievijas un Ķīnas uzskaites (vērtējumi).",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "No deguna līdz astes galam",
+        "sources": [
+          {
+            "label": "Ginesa rekordu grāmata: lielākais savvaļas kaķis (Guinness World Records: Largest wild cat)",
+            "url": "https://www.guinnessworldrecords.com/world-records/102489-largest-wild-cat"
+          },
+          {
+            "label": "Tamas zooloģiskais parks, Tokijas zooloģijas biedrība: tīģeris, Amūras tīģeris (Tama Zoological Park, Tokyo Zoological Park Society: Tiger, Amur tiger)",
+            "url": "https://www.tokyo-zoo.net/en/tama/encyclopedia/amur-tiger/index.html"
+          }
+        ]
+      }
     },
     "sumatran-orangutan": {
       "commonName": "Sumatras orangutans",
@@ -48,7 +62,26 @@
       "when": "Tagad kritiski apdraudēts. Rietumu pasuga jau izzudusi.",
       "humanRole": "Raga tirdzniecība ir galvenais dzinējs; dzīvotņu zudums pievieno spiedienu.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Diceros bicornis, CR); IRF State of the Rhino 2025 (vērtējums 2024. gada beigās)."
+      "sourcesNote": "IUCN Sarkanais saraksts (Diceros bicornis, CR); IRF State of the Rhino 2025 (vērtējums 2024. gada beigās).",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "No deguna līdz astes galam",
+        "credit": "Foto: Karelj, publiskais īpašums",
+        "sources": [
+          {
+            "label": "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: melnais degunradzis (University of Michigan Museum of Zoology, Animal Diversity Web: Diceros bicornis, black rhinoceros)",
+            "url": "https://animaldiversity.org/accounts/Diceros_bicornis/"
+          },
+          {
+            "label": "Starptautiskais degunradžu aizsardzības fonds: melnais degunradzis (International Rhino Foundation: Black Rhino)",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/black-rhino/"
+          },
+          {
+            "label": "Starptautiskā organizācija «Glābsim degunradžus»: melnie degunradži (Save the Rhino International: Black rhinos)",
+            "url": "https://www.savetherhino.org/rhino-info/rhino-species/black-rhinos/"
+          }
+        ]
+      }
     },
     "african-forest-elephant": {
       "commonName": "Āfrikas meža zilonis",
@@ -132,7 +165,27 @@
       "when": "Tagad kritiski apdraudēts, zemajos desmitos.",
       "humanRole": "Ragi un meža pārvēršana. Atlikušie dzīvnieki pastāv žogu, patruļu un pārvaldītas vairošanās dēļ.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47)."
+      "sourcesNote": "IUCN Sarkanais saraksts (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47).",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "No deguna līdz astes galam",
+        "credit": "Foto: nicolaitan, licence «Ar autora norādi, tādos pašos noteikumos» 2.0",
+        "changes": "Fons noņemts no oriģinālās fotogrāfijas. Attēls apgriezts spoguļveidā.",
+        "sources": [
+          {
+            "label": "Vikipēdija: Sumatras degunradzis (Wikipedia: Sumatran rhinoceros)",
+            "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros"
+          },
+          {
+            "label": "Starptautiskais degunradžu aizsardzības fonds: Sumatras degunradzis (International Rhino Foundation: Sumatran Rhino)",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/"
+          },
+          {
+            "label": "Pasaules zīdītāju rokasgrāmata, sugas apraksts (Zenodo): Sumatras degunradzis (Handbook of the Mammals of the World, species account (Zenodo): Dicerorhinus sumatrensis)",
+            "url": "https://zenodo.org/records/5720750"
+          }
+        ]
+      }
     },
     "saola": {
       "commonName": "Saola",
@@ -204,7 +257,27 @@
       "when": "Tagad kritiski apdraudēts. Savvaļas plus reintroducētie dzīvnieki paliek zemajos simtos visvairāk.",
       "humanRole": "Medības ar transportlīdzekļiem, tad ieguves infrastruktūra pēdējā areālā.",
       "sources": [],
-      "sourcesNote": "IUCN Sarkanais saraksts (Addax nasomaculatus, CR, 2016); Sahara Conservation 2024. gada pārskats; Noé Tintummas monitorings."
+      "sourcesNote": "IUCN Sarkanais saraksts (Addax nasomaculatus, CR, 2016); Sahara Conservation 2024. gada pārskats; Noé Tintummas monitorings.",
+      "scale": {
+        "heightLabel": "Augstums skaustā",
+        "lengthLabel": "No deguna līdz astes galam",
+        "credit": "Foto: Rufus46, licence «Ar autora norādi, tādos pašos noteikumos» 3.0",
+        "changes": "Fons noņemts no oriģinālās fotogrāfijas.",
+        "sources": [
+          {
+            "label": "Mičiganas universitātes Zooloģijas muzejs, tīmekļa katalogs par dzīvnieku daudzveidību: addakss (University of Michigan Museum of Zoology, Animal Diversity Web: Addax nasomaculatus, addax)",
+            "url": "https://animaldiversity.org/accounts/Addax_nasomaculatus/"
+          },
+          {
+            "label": "Vikipēdija: addakss (Wikipedia: Addax)",
+            "url": "https://en.wikipedia.org/wiki/Addax"
+          },
+          {
+            "label": "Dzīvnieku lietas: addakss (The Animal Files: Addax)",
+            "url": "https://www.theanimalfiles.com/mammals/hoofed_mammals/addax.html"
+          }
+        ]
+      }
     },
     "cao-vit-gibbon": {
       "commonName": "Cao Vita gibons",
@@ -312,7 +385,21 @@
       "when": "Tagad kritiski apdraudēts. Zemie simti, maz māšu.",
       "humanRole": "Vēsturiskā vaļu medība, tad virves un korpusi valim, kas barojas un vairojas pie kuģu ceļiem.",
       "sources": [],
-      "sourcesNote": "Linden 2025, NOAA TM NMFS-NE-338 (384 2024. gada sākumā); NARWC 2025. gada ziņojuma karte; IUCN Sarkanais saraksts (Eubalaena glacialis, CR)."
+      "sourcesNote": "Linden 2025, NOAA TM NMFS-NE-338 (384 2024. gada sākumā); NARWC 2025. gada ziņojuma karte; IUCN Sarkanais saraksts (Eubalaena glacialis, CR).",
+      "scale": {
+        "heightLabel": "Ķermeņa augstums",
+        "lengthLabel": "No purna līdz astes galam",
+        "sources": [
+          {
+            "label": "Fortjūns un līdzautori, Zīdītājdzīvnieku zinātnes žurnāls, 93. sējums, 5. numurs, 2012: Ziemeļatlantijas gludo valu augšana un straujā agrīnā attīstība (Fortune et al., Journal of Mammalogy 93(5), 2012: Growth and rapid early development of North Atlantic right whales, Eubalaena glacialis)",
+            "url": "https://www.zoology.ubc.ca/~consort/pdfs/Fortune%20et%20al%202012.pdf"
+          },
+          {
+            "label": "Millere un līdzautori, žurnāls Marine Ecology Progress Series, 459. sējums, 2012: gludo valu ķermeņa formas izmaiņas saistībā ar vairošanos, barošanās stāvokli un augšanu (Miller et al., Marine Ecology Progress Series 459, 2012: Body shape changes in right whales Eubalaena glacialis and E. australis)",
+            "url": "https://repository.up.ac.za/bitstreams/57493b5f-0fba-48eb-a3c5-5c0b4356efe9/download"
+          }
+        ]
+      }
     }
   }
 }

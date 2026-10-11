@@ -91,3 +91,22 @@ export function sameMultiset(a, b) {
   for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
   return true;
 }
+
+/** Stored SizeValue to metres. `m` is already metres; `mm` is converted. */
+export function measureMetres(metric) {
+  if (!metric) return null;
+  const n = metric.mean ?? metric.value;
+  if (!(typeof n === 'number') || !(n > 0)) return null;
+  if (metric.unit === 'mm') return n / 1000;
+  return n;
+}
+
+/**
+ * Caption assembled at display time. The numbers are not stored on the card.
+ * Shape: "{heightLabel} {heightText}, {lengthLabel} {lengthText} {captionExtra}".
+ */
+export function composeScaleCaption(heightLabel, heightText, lengthLabel, lengthText, captionExtra) {
+  return [`${heightLabel} ${heightText ?? ''},`, `${lengthLabel} ${lengthText ?? ''}`, captionExtra]
+    .filter(Boolean)
+    .join(' ');
+}

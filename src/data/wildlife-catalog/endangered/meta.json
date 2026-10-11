@@ -60,6 +60,103 @@
         "assessmentUrl": "https://www.iucnredlist.org/species/15955/214862019"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 1.03,
+          "unit": "m",
+          "mean": 1.03,
+          "range": [
+            0.99,
+            1.07
+          ],
+          "basis": "shoulder height, standing",
+          "confidence": "range_midpoint",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "at-gwr-h",
+              "url": "https://www.guinnessworldrecords.com/world-records/102489-largest-wild-cat",
+              "title": "Largest wild cat / Guinness World Records",
+              "use": "counted",
+              "range": [
+                99,
+                107
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "at-ru-h",
+              "url": "https://amur-tiger.ru/en/about-tiger",
+              "title": "Who is the Amur tiger?",
+              "use": "excluded",
+              "value": 120,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        },
+        "length": {
+          "value": 3,
+          "unit": "m",
+          "mean": 3,
+          "range": [
+            2.7,
+            3.3
+          ],
+          "basis": "nose to tail tip along the long axis",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "at-gwr-l",
+              "url": "https://www.guinnessworldrecords.com/world-records/102489-largest-wild-cat",
+              "title": "Largest wild cat / Guinness World Records",
+              "use": "counted",
+              "range": [
+                270,
+                330
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "at-tz-l",
+              "url": "https://www.tokyo-zoo.net/en/tama/encyclopedia/amur-tiger/index.html",
+              "title": "Tiger",
+              "use": "counted",
+              "range": [
+                270,
+                330
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 3,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/amur-tiger.webp",
+          "png": null,
+          "pxW": 1200,
+          "pxH": 443,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "amur-tiger.jpg",
         "kind": "photo",
@@ -134,6 +231,125 @@
         "assessmentUrl": "https://www.iucnredlist.org/species/6557/152728945"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 1.5833,
+          "unit": "m",
+          "mean": 1.5833,
+          "range": [
+            1.4,
+            1.8
+          ],
+          "basis": "shoulder height, standing",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "br-adw-h",
+              "url": "https://animaldiversity.org/accounts/Diceros_bicornis/",
+              "title": "Diceros bicornis (black rhinoceros) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "range": [
+                140,
+                180
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "br-irf-h",
+              "url": "https://rhinos.org/about-rhinos/rhino-species/black-rhino/",
+              "title": "Black Rhino / International Rhino FoundationInternational Rhino Foundation",
+              "use": "counted",
+              "range": [
+                140,
+                170
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "br-str-h",
+              "url": "https://www.savetherhino.org/rhino-info/rhino-species/black-rhinos/",
+              "title": "Black Rhino / Species / Save the Rhino International",
+              "use": "counted",
+              "value": 160,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        },
+        "length": {
+          "value": 4.0875,
+          "unit": "m",
+          "mean": 4.0875,
+          "range": [
+            3.7,
+            4.5
+          ],
+          "basis": "nose to tail tip along the long axis",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "br-adw-l",
+              "url": "https://animaldiversity.org/accounts/Diceros_bicornis/",
+              "title": "Diceros bicornis (black rhinoceros) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "range": [
+                370,
+                445
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "br-irf-l",
+              "url": "https://rhinos.org/about-rhinos/rhino-species/black-rhino/",
+              "title": "Black Rhino / International Rhino FoundationInternational Rhino Foundation",
+              "use": "counted",
+              "range": [
+                370,
+                450
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "br-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Black_rhinoceros",
+              "title": "Black rhinoceros - Wikipedia",
+              "use": "excluded",
+              "range": [
+                280,
+                375
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 4.0875,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/black-rhino.webp",
+          "png": null,
+          "pxW": 1200,
+          "pxH": 542,
+          "kind": "photo",
+          "author": "Karelj",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_Dvur_zoo_1.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_Dvur_zoo_1.jpg",
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "black-rhino.jpg",
         "kind": "photo",
@@ -396,6 +612,128 @@
         "assessmentUrl": "https://www.iucnredlist.org/species/6553/18493355"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 1.2617,
+          "unit": "m",
+          "mean": 1.2617,
+          "range": [
+            1,
+            1.5
+          ],
+          "basis": "shoulder height, standing",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sr-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros",
+              "title": "Sumatran rhinoceros - Wikipedia",
+              "use": "counted",
+              "range": [
+                112,
+                145
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sr-irf-h",
+              "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/",
+              "title": "Sumatran Rhino / International Rhino FoundationInternational Rhino Foundation",
+              "use": "counted",
+              "range": [
+                100,
+                150
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sr-hmw-h",
+              "url": "https://zenodo.org/records/5720750",
+              "title": "Dicerorhinus sumatrensis",
+              "use": "counted",
+              "range": [
+                100,
+                150
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        },
+        "length": {
+          "value": 3.295,
+          "unit": "m",
+          "mean": 3.295,
+          "range": [
+            2.71,
+            3.88
+          ],
+          "basis": "nose to tail tip along the long axis",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sr-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros",
+              "title": "Sumatran rhinoceros - Wikipedia",
+              "use": "counted",
+              "range": [
+                271,
+                388
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sr-hmw-l",
+              "url": "https://zenodo.org/records/5720750",
+              "title": "Dicerorhinus sumatrensis",
+              "use": "counted",
+              "range": [
+                271,
+                388
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sr-irf-l",
+              "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/",
+              "title": "Sumatran Rhino / International Rhino FoundationInternational Rhino Foundation",
+              "use": "excluded",
+              "range": [
+                200,
+                300
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 3.295,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/sumatran-rhinoceros.webp",
+          "png": null,
+          "pxW": 1200,
+          "pxH": 545,
+          "kind": "photo",
+          "author": "nicolaitan",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumatran_Rhinoceros_-_Rapunzel.jpg",
+          "changed": true
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "sumatran-rhinoceros.jpg",
         "kind": "photo",
@@ -612,6 +950,128 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 1.05,
+          "unit": "m",
+          "mean": 1.05,
+          "range": [
+            0.95,
+            1.15
+          ],
+          "basis": "shoulder (withers) height, standing",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ad-adw-h",
+              "url": "https://animaldiversity.org/accounts/Addax_nasomaculatus/",
+              "title": "Addax nasomaculatus (addax) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "range": [
+                95,
+                115
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ad-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Addax",
+              "title": "Addax - Wikipedia",
+              "use": "counted",
+              "range": [
+                95,
+                115
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ad-nz-h",
+              "url": "https://nationalzoo.si.edu/animals/addax",
+              "title": "Addax / Smithsonian's National Zoo and Conservation Biology Institute",
+              "use": "excluded",
+              "range": [
+                85,
+                95
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        },
+        "length": {
+          "value": 1.9,
+          "unit": "m",
+          "mean": 1.9,
+          "range": [
+            1.75,
+            2.05
+          ],
+          "basis": "nose to tail tip along the long axis",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ad-adw-l",
+              "url": "https://animaldiversity.org/accounts/Addax_nasomaculatus/",
+              "title": "Addax nasomaculatus (addax) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "range": [
+                175,
+                205
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ad-taf-l",
+              "url": "https://www.theanimalfiles.com/mammals/hoofed_mammals/addax.html",
+              "title": "Addax: The Animal Files",
+              "use": "counted",
+              "range": [
+                175,
+                205
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ad-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Addax",
+              "title": "Addax - Wikipedia",
+              "use": "excluded",
+              "range": [
+                145,
+                165
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 1.9,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/addax.webp",
+          "png": null,
+          "pxW": 1200,
+          "pxH": 1027,
+          "kind": "photo",
+          "author": "Rufus46",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mendesantilope_Addax_nasomaculatus_Tiergarten-Nuernberg-6.jpg",
+          "changed": true
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "addax.jpg",
         "kind": "photo",
@@ -887,6 +1347,89 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 2.8,
+          "unit": "m",
+          "mean": 2.8,
+          "basis": "body depth lying on its side: diameter of the body at the flippers of adult females, calculated in the source from the axillary girth (girth divided by pi, circular cross-section)",
+          "confidence": "single_source",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "rw-miller-d",
+              "url": "https://repository.up.ac.za/bitstreams/57493b5f-0fba-48eb-a3c5-5c0b4356efe9/download",
+              "title": "Body shape changes associated with reproductive status, nutritive condition and growth in right whales Eubalaena glacialis and E. australis",
+              "use": "counted",
+              "value": 280,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        },
+        "length": {
+          "value": 13.6,
+          "unit": "m",
+          "mean": 13.6,
+          "basis": "snout tip to tail fluke tip along the long axis",
+          "confidence": "single_source",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "rw-fortune",
+              "url": "https://www.zoology.ubc.ca/~consort/pdfs/Fortune%20et%20al%202012.pdf",
+              "title": "Fortune et al., Journal of Mammalogy 93(5), 2012: Growth and rapid early development of North Atlantic right whales (Eubalaena glacialis)",
+              "use": "counted",
+              "value": 1360,
+              "unit": "cm"
+            },
+            {
+              "id": "rw-noaa",
+              "url": "https://www.fisheries.noaa.gov/species/north-atlantic-right-whale",
+              "title": "North Atlantic Right Whale / NOAA Fisheries",
+              "use": "excluded",
+              "value": 1585,
+              "unit": "cm"
+            },
+            {
+              "id": "rw-wp",
+              "url": "https://en.wikipedia.org/wiki/North_Atlantic_right_whale",
+              "title": "North Atlantic right whale - Wikipedia",
+              "use": "excluded",
+              "range": [
+                1300,
+                1800
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-04"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 13.6,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/north-atlantic-right-whale.webp",
+          "png": null,
+          "pxW": 1102,
+          "pxH": 287,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "north-atlantic-right-whale.jpg",
         "kind": "photo",

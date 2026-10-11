@@ -652,6 +652,7 @@
       "primarySource": "Boeskorov 2021, Arctic and Subarctic Natural Resources 26(1), DOI 10.31242/2618-9712-2021-26-1-4",
       "support": "Naish 2025, Tetrapod Zoology (blog)",
       "kitBodyType": "proboscidean_body_length (config/rules.yaml; checker length rule rump_forehead)",
+      "bodyType": "proboscidean",
       "mammothNote": "Boeskorov 2021: length rostrum to tail base; skeletal shoulder-height / length index mean 0.7525 (adult East Siberian bulls, n=7); card length from height/0.7525.",
       "scaleBasisRequired": "height",
       "lengthLabel": {
@@ -659,6 +660,20 @@
         "ru": "Длина тела без хобота и бивней",
         "pl": "Długość ciała bez trąby i ciosów",
         "lv": "Ķermeņa garums bez snuķa un ilkņiem"
+      }
+    },
+    "headBodyLength": {
+      "_note": "Body length with the tail excluded. lengthLabel is the single source for caption spelling (C6). Animals measured this way scale by height.",
+      "appliesTo": "mammals whose length is taken from the nose to the base of the tail",
+      "basis": "body length without the tail",
+      "definition": "Straight-line length from the tip of the nose to the base of the tail. The tail is excluded. The chart scales this measure by shoulder height.",
+      "primarySource": "Standard mammalogical head-and-body length, tail excluded.",
+      "scaleBasisRequired": "height",
+      "lengthLabel": {
+        "en": "Body length without the tail",
+        "ru": "Длина тела без хвоста",
+        "pl": "Długość ciała bez ogona",
+        "lv": "Ķermeņa garums bez astes"
       }
     }
   }

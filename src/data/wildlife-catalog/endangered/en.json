@@ -24,7 +24,21 @@
       "when": "Endangered as a tiger; the Amur population is a small, guarded remnant.",
       "humanRole": "We hunted the tiger to the edge here; protection, not empty wilderness, explains the partial rebound.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Panthera tigris, Endangered, 2022); Russian and Chinese range-wide counts (estimates)."
+      "sourcesNote": "IUCN Red List (Panthera tigris, Endangered, 2022); Russian and Chinese range-wide counts (estimates).",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Nose to tail tip",
+        "sources": [
+          {
+            "label": "Guinness World Records: Largest wild cat",
+            "url": "https://www.guinnessworldrecords.com/world-records/102489-largest-wild-cat"
+          },
+          {
+            "label": "Tama Zoological Park, Tokyo Zoological Park Society: Tiger (Amur tiger)",
+            "url": "https://www.tokyo-zoo.net/en/tama/encyclopedia/amur-tiger/index.html"
+          }
+        ]
+      }
     },
     "sumatran-orangutan": {
       "commonName": "Sumatran orangutan",
@@ -48,7 +62,26 @@
       "when": "Critically Endangered now. The western subspecies is already gone.",
       "humanRole": "The horn trade is the main driver; habitat loss adds pressure.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Diceros bicornis, CR); IRF State of the Rhino 2025 (end-2024 estimate)."
+      "sourcesNote": "IUCN Red List (Diceros bicornis, CR); IRF State of the Rhino 2025 (end-2024 estimate).",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Nose to tail tip",
+        "credit": "Photo: Karelj, public domain",
+        "sources": [
+          {
+            "label": "University of Michigan Museum of Zoology, Animal Diversity Web: Diceros bicornis (black rhinoceros)",
+            "url": "https://animaldiversity.org/accounts/Diceros_bicornis/"
+          },
+          {
+            "label": "International Rhino Foundation: Black Rhino",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/black-rhino/"
+          },
+          {
+            "label": "Save the Rhino International: Black rhinos",
+            "url": "https://www.savetherhino.org/rhino-info/rhino-species/black-rhinos/"
+          }
+        ]
+      }
     },
     "african-forest-elephant": {
       "commonName": "African forest elephant",
@@ -132,7 +165,27 @@
       "when": "Critically Endangered now, in the low tens.",
       "humanRole": "Horns and forest conversion. Remaining animals persist because of fences, patrols, and managed breeding.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47)."
+      "sourcesNote": "IUCN Red List (Dicerorhinus sumatrensis, CR); IRF State of the Rhino 2025 (34–47).",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Nose to tail tip",
+        "credit": "Photo: nicolaitan, CC BY-SA 2.0",
+        "changes": "Background removed from the original photo. Image mirrored.",
+        "sources": [
+          {
+            "label": "Wikipedia: Sumatran rhinoceros",
+            "url": "https://en.wikipedia.org/wiki/Sumatran_rhinoceros"
+          },
+          {
+            "label": "International Rhino Foundation: Sumatran Rhino",
+            "url": "https://rhinos.org/about-rhinos/rhino-species/sumatran-rhino/"
+          },
+          {
+            "label": "Handbook of the Mammals of the World, species account (Zenodo): Dicerorhinus sumatrensis",
+            "url": "https://zenodo.org/records/5720750"
+          }
+        ]
+      }
     },
     "saola": {
       "commonName": "Saola",
@@ -205,7 +258,27 @@
       "when": "Critically Endangered now. Wild plus reintroduced animals remain in the low hundreds at most.",
       "humanRole": "Hunting with vehicles, then extraction infrastructure in the last range.",
       "sources": [],
-      "sourcesNote": "IUCN Red List (Addax nasomaculatus, CR, 2016); Sahara Conservation 2024 annual report; Noé Tin Toumma monitoring."
+      "sourcesNote": "IUCN Red List (Addax nasomaculatus, CR, 2016); Sahara Conservation 2024 annual report; Noé Tin Toumma monitoring.",
+      "scale": {
+        "heightLabel": "Shoulder height",
+        "lengthLabel": "Nose to tail tip",
+        "credit": "Photo: Rufus46, CC BY-SA 3.0",
+        "changes": "Background removed from the original photo.",
+        "sources": [
+          {
+            "label": "University of Michigan Museum of Zoology, Animal Diversity Web: Addax nasomaculatus (addax)",
+            "url": "https://animaldiversity.org/accounts/Addax_nasomaculatus/"
+          },
+          {
+            "label": "Wikipedia: Addax",
+            "url": "https://en.wikipedia.org/wiki/Addax"
+          },
+          {
+            "label": "The Animal Files: Addax",
+            "url": "https://www.theanimalfiles.com/mammals/hoofed_mammals/addax.html"
+          }
+        ]
+      }
     },
     "cao-vit-gibbon": {
       "commonName": "Cao Vit gibbon",
@@ -313,7 +386,21 @@
       "when": "Critically Endangered now. Low hundreds, few mothers.",
       "humanRole": "Historical whaling, then ropes and hulls on a whale that feeds and calves near shipping lanes.",
       "sources": [],
-      "sourcesNote": "Linden 2025, NOAA TM NMFS-NE-338 (384 at start of 2024); NARWC 2025 report card; IUCN Red List (Eubalaena glacialis, CR)."
+      "sourcesNote": "Linden 2025, NOAA TM NMFS-NE-338 (384 at start of 2024); NARWC 2025 report card; IUCN Red List (Eubalaena glacialis, CR).",
+      "scale": {
+        "heightLabel": "Body depth",
+        "lengthLabel": "Snout to tail tip",
+        "sources": [
+          {
+            "label": "Fortune et al., Journal of Mammalogy 93(5), 2012: Growth and rapid early development of North Atlantic right whales (Eubalaena glacialis)",
+            "url": "https://www.zoology.ubc.ca/~consort/pdfs/Fortune%20et%20al%202012.pdf"
+          },
+          {
+            "label": "Miller et al., Marine Ecology Progress Series 459, 2012: Body shape changes in right whales Eubalaena glacialis and E. australis",
+            "url": "https://repository.up.ac.za/bitstreams/57493b5f-0fba-48eb-a3c5-5c0b4356efe9/download"
+          }
+        ]
+      }
     }
   }
 }

@@ -291,6 +291,7 @@ export const MeasureMethod = z.object({
   primarySource: z.string().min(1),
   support: z.string().optional(),
   kitBodyType: z.string().optional(),
+  bodyType: z.string().min(1).optional(),                 // short body class, e.g. proboscidean; not a caption
   mammothNote: z.string().optional(),
   scaleBasisRequired: z.enum(['height', 'length']).optional(),  // v3.3.3: body-length methods require height scaling (C19)
   lengthLabel: perLocale(z.string().min(1)),
@@ -298,6 +299,7 @@ export const MeasureMethod = z.object({
 
 export const MeasureMethods = z.object({
   proboscideanBodyLength: MeasureMethod,
+  headBodyLength: MeasureMethod,
 }).strict().passthrough();   // allow future method keys; Registry must NOT gain methodLabels (single source = lengthLabel here)
 
 /* ---------- status-labels.json (v3.3, 2.11) ---------- */

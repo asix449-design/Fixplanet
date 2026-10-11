@@ -3,7 +3,9 @@ import HubTile from '../components/HubTile.astro';
 import HumanDispersalMap from '../components/HumanDispersalMap.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import WildlifeCard from '../components/WildlifeCard.astro';
+import CatalogSizeScale from '../components/CatalogSizeScale.astro';
 import WildlifeSizeScale from '../components/WildlifeSizeScale.astro';
+import { hasCatalogScale } from '../data/catalog-size-scale';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   humanHeroImage,
@@ -40,6 +42,8 @@ const activeStatus: WildlifeStatus | undefined =
 const isHumanShelf = activeShelf === 'homo-sapiens';
 
 const species = activeStatus ? getWildlifeByStatus(locale, activeStatus) : [];
+const catalogScale =
+  activeStatus === 'endangered' || activeStatus === 'extinct' ? hasCatalogScale(activeStatus) : false;
 const tabLeads = {
   surviving: ui.wildlifePage.survivingLead,
   endangered: ui.wildlifePage.endangeredLead,
@@ -180,6 +184,7 @@ const backdropHeight = hub ? wildlifeHubBackdrop.height : 1024;
   }
 
   {activeStatus === 'surviving' && <WildlifeSizeScale />}
+  {catalogScale && activeStatus && <CatalogSizeScale shelf={activeStatus} />}
 
   {
     activeStatus && (
