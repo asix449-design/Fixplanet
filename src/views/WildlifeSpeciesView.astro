@@ -132,12 +132,7 @@ const heads =
                 {ui.wildlifePage.iucnLabel}: {species.iucn} · {ui.wildlifePage.iucn[species.iucn]}
               </span>
             ) : null
-          }
-          {
-            scopeLabel ? (
-              <span class="pill wildlife-scope-label">{scopeLabel}</span>
-            ) : null
-          }
+          }{scopeLabel ? <span class="pill" style="font-weight: 400">{scopeLabel}</span> : null}
           {
             species.functionallyExtinct ? (
               <span class="pill status-extinct">{ui.wildlifePage.functionallyExtinct}</span>

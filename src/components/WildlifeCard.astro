@@ -43,7 +43,7 @@ const primary =
             <>
               <span class:list={['tag', `status-${species.status}`]}>{species.iucn}</span>
               <span class:list={['tag', `status-${species.status}`]}>{iucnLabel}</span>
-              {scopeLabel ? <span class="tag wildlife-scope-label">{scopeLabel}</span> : null}
+              {scopeLabel ? <span class="tag" style="font-weight: 400">{scopeLabel}</span> : null}
             </>
           ) : (
             <span class:list={['tag', `status-${species.status}`]}>
