@@ -16,15 +16,17 @@
     },
     "amur-tiger": {
       "commonName": "Tygrys amurski",
+      "nameSource": "https://pl.wikipedia.org/wiki/Tygrys_syberyjski",
       "hook": "Najbardziej północny tygrys — kilkaset zwierząt na rosyjskim Dalekim Wschodzie i w północno-wschodnich Chinach.",
       "imageAlt": "Tygrys amurski idzie przez ośnieżony las",
-      "what": "Tygrys amurski, czyli syberyjski, to północny podgatunek Panthera tigris. IUCN ocenia gatunek tygrysa jako zagrożony (2022). Amurskie zwierzęta żyją w mieszanym lesie umiarkowanym i biorą jelenie, dziki, czasem większą zdobycz.",
+      "what": "Tygrys amurski, czyli syberyjski, to północny podgatunek Panthera tigris. Międzynarodowa Unia Ochrony Przyrody ocenia tygrysa jako cały gatunek. IUCN ocenia gatunek tygrysa jako zagrożony (2022). Amurskie zwierzęta żyją w mieszanym lesie umiarkowanym i biorą jelenie, dziki, czasem większą zdobycz.",
       "range": "Południowo-zachodnie Nadmorskie i Chabarowski w Rosji oraz odbudowująca się obecność w północno-wschodnich Chinach. Podgatunek sięgał kiedyś Półwyspu Koreańskiego i szerzej Mandżurii.",
       "story": "Polowania i utrata lasu starły tygrysa z większości północno-wschodniej Azji. Ochrona rosyjska i chińska oraz odbudowa zdobyczy podniosły liczebność z kilkudziesięciu w połowie XX wieku do kilkuset w spisach lat 2010–2020 (publikowane liczby się różnią; często ok. 500–750). Drogi, kłusownictwo i cienka baza pokarmowa wciąż ograniczają.",
       "when": "Zagrożony jako tygrys; populacja amurska to mała, strzeżona resztka.",
       "humanRole": "Upolowaliśmy tu tygrysa na skraj; częściowe odbicie tłumaczy ochrona, nie pusta puszcza.",
       "sources": [],
       "sourcesNote": "Czerwona lista IUCN (Panthera tigris, EN, 2022); rosyjskie i chińskie spisy (szacunki).",
+      "statusPill": "Panthera tigris, Zagrożony",
       "scale": {
         "heightLabel": "Wysokość w kłębie",
         "lengthLabel": "Od nosa do końca ogona",
@@ -54,6 +56,7 @@
     },
     "black-rhino": {
       "commonName": "Nosorożec czarny",
+      "nameSource": "https://pl.wikipedia.org/wiki/Nosoro%C5%BCec_czarny",
       "hook": "Kłusownictwo rogu ścięło gatunek do kilku tysięcy; częściowa odbudowa wciąż zostawia go krytycznie zagrożonym.",
       "imageAlt": "Nosorożec czarny stoi na otwartej sawannie",
       "what": "Nosorożec czarny to afrykański przeglądacz z chwytną górną wargą. IUCN: krytycznie zagrożony. Podgatunek zachodni wymarł (osobna karta). Pozostałe zwierzęta są we wschodniej i południowej Afryce, często w ogrodzonych konserwach.",
@@ -157,6 +160,7 @@
     },
     "sumatran-rhinoceros": {
       "commonName": "Nosorożec sumatrzański",
+      "nameSource": "https://pl.wikipedia.org/wiki/Nosoro%C5%BCec_sumatrza%C5%84ski",
       "hook": "Najmniejszy, najwłochatszy żyjący nosorożec — IRF szacuje 34–47 na wolności, nie wygodne „poniżej 80”.",
       "imageAlt": "Nosorożec sumatrzański wygląda spośród gęstych liści lasu deszczowego",
       "what": "Nosorożec sumatrzański to jedyny żyjący dwurożny nosorożec azjatycki i najwłochatszy. IUCN: krytycznie zagrożony. Liczby International Rhino Foundation z 2025, niezmienione od 2022, szacują 34–47 zwierząt na wolności plus garść w Sanktuarium Nosorożca Sumatrzańskiego w Way Kambas. Izolowane kieszenie lasu często trzymają zwierzęta, które nigdy nie spotkają partnera.",
@@ -221,7 +225,8 @@
       "when": "Krytycznie zagrożony teraz. Policzone, zarządzane i wciąż jedno złe wtargnięcie drapieżnika od katastrofy.",
       "humanRole": "Zawleczone ssaki spowodowały krach; ludzie teraz trzymają przy życiu każdego pozostałego ptaka ręcznie.",
       "sources": [],
-      "sourcesNote": "Komunikat NZ DOC, 1 września 2026 (325); Czerwona lista IUCN (Strigops habroptilus, CR)."
+      "sourcesNote": "Komunikat Departamentu Ochrony Przyrody Nowej Zelandii, 1 września 2026 (325); Czerwona lista Międzynarodowej Unii Ochrony Przyrody (Strigops habroptilus, krytycznie zagrożony).",
+      "statusPill": "Krytycznie zagrożony"
     },
     "axolotl": {
       "commonName": "Aksolotl",
@@ -249,6 +254,7 @@
     },
     "addax": {
       "commonName": "Addaks",
+      "nameSource": "https://pl.wikipedia.org/wiki/Adaks_pustynny",
       "hook": "Saharyjska antylopa o spiralnych rogach — dziesiątki w ostatniej dzikiej pustyni plus reintrodukcja w Czadzie.",
       "imageAlt": "Addaks z długimi korkociągowymi rogami i ciemną plamą na czole stoi na suchej ziemi",
       "what": "Addaks to jedyny gatunek w swoim rodzaju, biała pustynna antylopa, która potrafi żyć bez wolnej wody. IUCN uznał go za krytycznie zagrożonego w 2016, gdy sądzono, że zostało mniej niż 100 dzikich zwierząt, głównie w Tin Toumma w Nigrze. Patrole wielbłądów Noé w 2023 wciąż znajdowały tam tylko małe grupy. Badanie Sahara Conservation z października 2024 reintrodukowanej populacji w Czadzie oszacowało ok. 100 po surowym padnięciu w porze suchej. Stada w niewoli są duże; to nie saharyjska resztka.",
@@ -377,6 +383,7 @@
     },
     "north-atlantic-right-whale": {
       "commonName": "Waleń biskajski",
+      "nameSource": "https://pl.wikipedia.org/wiki/Wale%C5%84_biskajski",
       "hook": "Wieloryb Północnego Atlantyku niegdyś bity do skraju — szacunek NOAA z 2024 to 384, wciąż krytycznie zagrożony.",
       "imageAlt": "Waleń biskajski i cielę na powierzchni",
       "what": "Waleń biskajski to krępy fiszbinowiec z kalozami na głowie. IUCN: krytycznie zagrożony. NOAA i North Atlantic Right Whale Consortium, modelem markowania–ponownego schwytania Pace/Linden, oszacowali 384 wieloryby (+10/−9) żywe na początek 2024. Około 70 to rozrodczo aktywne samice. To lekki wzrost po krachu końca lat 2010., nie odzyskany ocean.",

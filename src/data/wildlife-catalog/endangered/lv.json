@@ -16,15 +16,17 @@
     },
     "amur-tiger": {
       "commonName": "Amūras tīģeris",
+      "nameSource": "https://lv.wikipedia.org/wiki/Am%C5%ABras_t%C4%AB%C4%A3eris",
       "hook": "Ziemeļīgākais tīģeris — daži simti dzīvnieku Krievijas Tālajos Austrumos un Ķīnas ziemeļaustrumos.",
       "imageAlt": "Amūras tīģeris iet pa sniegotu mežu",
-      "what": "Amūras jeb Sibīrijas tīģeris ir Panthera tigris ziemeļu pasuga. IUCN tīģera sugu vērtē kā apdraudētu (2022). Amūras dzīvnieki dzīvo mērenā jauktā mežā un ņem briežus, mežacūkas, reizēm lielāku medījumu.",
+      "what": "Amūras jeb Sibīrijas tīģeris ir Panthera tigris ziemeļu pasuga. Starptautiskā dabas aizsardzības savienība vērtē tīģeri kā sugu kopumā. IUCN tīģera sugu vērtē kā apdraudētu (2022). Amūras dzīvnieki dzīvo mērenā jauktā mežā un ņem briežus, mežacūkas, reizēm lielāku medījumu.",
       "range": "Piejūras novada dienvidrietumi un Habarovskas novads Krievijā, plus atjaunojoša klātbūtne Ķīnas ziemeļaustrumos. Pasuga reiz sniedzās Korejas pussalā un plašāk Mandžūrijā.",
       "story": "Medības un mežu zudums tīģeri izdzēsa no lielākās ziemeļaustrumu Āzijas daļas. Krievijas un Ķīnas aizsardzība plus medījuma atjaunošanās pacēla skaitu no dažiem desmitiem 20. gadsimta vidū līdz vairākiem simtiem 2010.–2020. gadu uzskaitēs (publicētie skaitļi atšķiras; bieži ap 500–750). Ceļi, malumedniecība un plāna barības bāze joprojām ierobežo.",
       "when": "Kā tīģeris — apdraudēts; Amūras populācija ir maza, sargāta atlieka.",
       "humanRole": "Šeit tīģeri nomedīja līdz malai; daļējo atelpu skaidro aizsardzība, nevis tukša taiga.",
       "sources": [],
       "sourcesNote": "IUCN Sarkanais saraksts (Panthera tigris, EN, 2022); Krievijas un Ķīnas uzskaites (vērtējumi).",
+      "statusPill": "Panthera tigris, Stipri apdraudēta",
       "scale": {
         "heightLabel": "Augstums skaustā",
         "lengthLabel": "No deguna līdz astes galam",
@@ -54,6 +56,7 @@
     },
     "black-rhino": {
       "commonName": "Melnais degunradzis",
+      "nameSource": "https://lv.wikipedia.org/wiki/Melnais_degunradzis",
       "hook": "Raga malumedniecība sugu nogrieza līdz dažiem tūkstošiem; daļēja atjaunošanās to joprojām atstāj kritiski apdraudētu.",
       "imageAlt": "Melnais degunradzis stāv atklātā savannā",
       "what": "Melnais degunradzis ir Āfrikas lapu ēdājs ar tveramu augšlūpu. IUCN: kritiski apdraudēts. Rietumu pasuga ir izmirusi (atsevišķa karte). Atlikušie dzīvnieki ir Āfrikas austrumos un dienvidos, bieži nožogotos rezervātos.",
@@ -157,6 +160,7 @@
     },
     "sumatran-rhinoceros": {
       "commonName": "Sumatras degunradzis",
+      "nameSource": "https://lv.wikipedia.org/wiki/Sumatras_degunradzis",
       "hook": "Mazākais, matainākais dzīvais degunradzis — IRF lēš 34–47 savvaļā, ne ērtu „zem 80”.",
       "imageAlt": "Sumatras degunradzis skatās ārā no bieziem lietusmeža lapotnes",
       "what": "Sumatras degunradzis ir vienīgais dzīvais divradžu Āzijas degunradzis un matainākais. IUCN: kritiski apdraudēts. International Rhino Foundation 2025. gada skaitļi, nemainīti kopš 2022., lēš 34–47 dzīvniekus savvaļā plus saujiņu Sumatras degunradžu svētnīcā Vejkambasā. Izolētas meža kabatas bieži tur dzīvniekus, kas nekad nesatiek pāri.",
@@ -221,7 +225,8 @@
       "when": "Tagad kritiski apdraudēts. Saskaitīts, pārvaldīts un joprojām vienas sliktas plēsēja iebrukuma attālumā no katastrofas.",
       "humanRole": "Ieviesie zīdītāji izraisīja sabrukumu; cilvēki tagad katru atlikušo putnu tur dzīvu ar rokām.",
       "sources": [],
-      "sourcesNote": "NZ DOC paziņojums presei, 2026. gada 1. septembris (325); IUCN Sarkanais saraksts (Strigops habroptilus, CR)."
+      "sourcesNote": "Jaunzēlandes Dabas aizsardzības departamenta paziņojums presei, 2026. gada 1. septembris (325); Starptautiskās dabas aizsardzības savienības Sarkanais saraksts (Strigops habroptilus, kritiski apdraudēta suga).",
+      "statusPill": "Kritiski apdraudēta"
     },
     "axolotl": {
       "commonName": "Aksolotls",
@@ -248,7 +253,7 @@
       "sourcesNote": "IUCN Sarkanais saraksts (Andrias davidianus, CR; A. sligoi, CR); Turvey et al. 2018; Yan et al. 2018; ZSL Ķīnas milzu salamandras rīcības plāns."
     },
     "addax": {
-      "commonName": "Addakss",
+      "commonName": "Addax nasomaculatus",
       "hook": "Spirālragu Sahāras antilope — desmiti pēdējā savvaļas tuksnesī plus reintrodukcija Čadā.",
       "imageAlt": "Addakss ar gariem korķviļķa ragiem un tumšu pieres plankumu stāv sausā zemē",
       "what": "Addakss ir vienīgā suga savā ģintī, balta tuksneša antilope, kas var dzīvot bez brīva ūdens. IUCN to 2016. gadā atzina par kritiski apdraudētu, kad tika uzskatīts, ka palikuši mazāk nekā 100 savvaļas dzīvnieki, galvenokārt Nigēras Tintummā. Noé kamieļu patruļas 2023. gadā tur joprojām atrada tikai mazas grupas. Sahara Conservation 2024. gada oktobra uzskaite reintroducētajai Čadas populācijai lēsa ap 100 pēc bargas sausās sezonas mirstības. Nebrīves bari ir lieli; tie nav Sahāras atlieka.",
@@ -376,7 +381,7 @@
       "sourcesNote": "NOAA Raisa vaļa krājuma vērtējums (51, 2017.–18. gada uzskaites); IUCN Sarkanais saraksts (Balaenoptera ricei, CR); Rosel et al. 2021. gada apraksts."
     },
     "north-atlantic-right-whale": {
-      "commonName": "Ziemeļatlantijas gludais valis",
+      "commonName": "Eubalaena glacialis",
       "hook": "Ziemeļatlantijas valis, reiz medīts līdz malai — NOAA 2024. gada vērtējums ir 384, joprojām kritiski apdraudēts.",
       "imageAlt": "Ziemeļatlantijas gludais valis un mazulis pie virsmas",
       "what": "Ziemeļatlantijas gludais valis ir resns baleenvalis ar kaloziem uz galvas. IUCN: kritiski apdraudēts. NOAA un Ziemeļatlantijas gludo vaļu konsorcijs, izmantojot Pace/Linden ķeršanas–atkārtotas ķeršanas modeli, lēsa 384 vaļus (+10/−9) dzīvus 2024. gada sākumā. Ap 70 ir vairojoši aktīvas mātītes. Tas ir neliels pieaugums pēc 2010. gadu beigu sabrukuma, ne atgūts okeāns.",

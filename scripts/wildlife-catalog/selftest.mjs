@@ -104,10 +104,9 @@ export function runSelfTests(catalog, live) {
     return v.replaceAll(f.old, f.new);
   };
   let lvMega = { ...mega };
-  // The shelf already uses the approved spelling. Restore the earlier text so the fix is still counted.
-  if (mega.commonName.includes('sliņķis')) {
-    for (const key of ['commonName', 'hook', 'what']) lvMega[key] = lvMega[key].replaceAll('sliņķis', 'slinkis');
-  }
+  // The vernacular title may already be the scientific name. The spelling fix is still counted on a restored title.
+  if (!lvMega.commonName.includes('sliņķis')) lvMega.commonName = 'Milzu sliņķis';
+  for (const key of ['commonName', 'hook', 'what']) lvMega[key] = lvMega[key].replaceAll('sliņķis', 'slinkis');
   for (const f of fixes) lvMega = { ...lvMega, [f.field]: applyFix(lvMega, f) };
   assert(lvMega.commonName.includes('sliņķis'), 'card.fix renames LV megatherium');
   let reapplied = false;

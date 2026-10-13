@@ -52,7 +52,7 @@ const heads =
         >
       </p>
       <div class="eyebrow wildlife-on-dark">{ui.wildlifePage.status[species.status]}</div>
-      <h1 id="species-heading">{species.commonName}</h1>
+      <h1 id="species-heading">{species.commonName === species.scientificName ? <em>{species.commonName}</em> : species.commonName}</h1>
       <p class="scientific-kicker"><em>{species.scientificName}</em></p>
     </div>
   </header>

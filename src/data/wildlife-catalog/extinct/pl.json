@@ -16,6 +16,7 @@
     },
     "woolly-mammoth": {
       "commonName": "Mamut włochaty",
+      "nameSource": "https://pl.wikipedia.org/wiki/Mamut_w%C5%82ochaty",
       "hook": "Późnoplejstoceński olbrzym północy — w zakończeniu mieszczą się i klimat, i ludzie.",
       "imageAlt": "Muzealna rekonstrukcja mamuta włochatego w skali 1:1",
       "what": "Mamut włochaty był słoniem zimnego stepu o długiej sierści i wygiętych ciosach. Jest wymarły. Najbliższy żyjący krewny to słoń azjatycki. Starożytne DNA i datowane kości dają jaśniejszą chronologię niż u większości ssaków epoki lodowej.",
@@ -55,6 +56,7 @@
     },
     "dodo": {
       "commonName": "Dodo",
+      "nameSource": "https://pl.wikipedia.org/wiki/Dront_dodo",
       "hook": "Nielotny gołąb Mauritiusa, znikły w około stulecie stałego osadnictwa europejskiego.",
       "imageAlt": "Oksfordzka gablota: szkielet dodo i pierzasta rekonstrukcja",
       "what": "Dodo był dużym nielotnym gołębiem endemicznym Mauritiusa. IUCN: wymarły. Nie zachowało się kompletne spreparowane ciało; wiedza pochodzi z kości, nielicznych reliktów i przekazów XVII wieku.",
@@ -102,6 +104,7 @@
     },
     "thylacine": {
       "commonName": "Wilkowór tasmański",
+      "nameSource": "https://pl.wikipedia.org/wiki/Wilkow%C3%B3r_tasma%C5%84ski",
       "hook": "Pręgowany torbacz drapieżny Tasmanii — ostatnie zwierzę w niewoli zmarło w 1936.",
       "imageAlt": "Historyczne zdjęcie dwóch wilkoworów w kamiennej zagrodzie",
       "what": "Wilkowór, czyli tygrys tasmański, był torbaczem drapieżnym wielkości psa, o sztywnym ogonie i ciemnych pręgach. IUCN: wymarły. To nie wielki kot.",
@@ -132,7 +135,8 @@
       }
     },
     "stellers-sea-cow": {
-      "commonName": "Krowa morska Stellera",
+      "commonName": "Syrena morska",
+      "nameSource": "https://pl.wikipedia.org/wiki/Syrena_morska",
       "hook": "Opisana w 1741; wytępiona do 1768 — około 27 lat po tym, jak Europejczycy ją zastali.",
       "imageAlt": "XIX-wieczna ilustracja naukowa krowy morskiej Stellera z profilu",
       "what": "Krowa morska Stellera była ogromną, powolną syreną — krewną diugoni i manatów — pasącą się na kelpie. IUCN: wymarła. Georg Wilhelm Steller opisał ją w wyprawie Beringa w 1741.",
@@ -172,6 +176,7 @@
     },
     "aurochs": {
       "commonName": "Tur",
+      "nameSource": "https://pl.wikipedia.org/wiki/Tur_le%C5%9Bny",
       "hook": "Dziki przodek bydła; ostatnie zapisane zwierzę padło w Polsce w 1627.",
       "imageAlt": "Rekonstrukcja czarnego tura z rogami zagiętymi do przodu",
       "what": "Tur był dużym dzikim wołem i głównym przodkiem bydła domowego. IUCN: wymarły. Jego geny trwają w krowach; dzika forma nie.",
@@ -229,7 +234,7 @@
       "commonName": "Kwagga",
       "hook": "Południowoafrykański podgatunek zebry wybity w naturze; ostatnia klacz w niewoli padła w 1883.",
       "imageAlt": "XIX-wieczna fotografia klaczy kwaggi w londyńskim zoo",
-      "what": "Kwagga była podgatunkiem zebry stepowej: brązowa z tyłu, pręgowana na głowie i szyi. IUCN traktuje Equus quagga jako LC, a podgatunek kwaggi jako wymarły. Znamy ją ze skór, czaszek i kilku zdjęć jednej klaczy.",
+      "what": "Kwagga była podgatunkiem zebry stepowej: brązowa z tyłu, pręgowana na głowie i szyi. Międzynarodowa Unia Ochrony Przyrody ocenia gatunek jako całość (Equus quagga) jako Bliski zagrożenia; podgatunek kwaggi jest wymarły. Znamy ją ze skór, czaszek i kilku zdjęć jednej klaczy.",
       "range": "Karoo i południowy Highveld RPA. Nie sięgała dalej na północ niż inne zebry stepowe.",
       "story": "Polowania osadników na mięso i skóry oraz zamiana pastwisk na owce i bydło usunęły dziką populację w latach 60. i 70. XIX wieku. Ostatnia klacz w niewoli padła 12 sierpnia 1883 w Artis w Amsterdamie. Późniejszy projekt hodowlany używa zebr stepowych do naśladowania umaszczenia; historycznego podgatunku nie wskrzesza.",
       "when": "Wymarła na wolności pod koniec lat 70. XIX w.; śmierć ostatniej w niewoli 12 sierpnia 1883.",
@@ -382,7 +387,8 @@
       "sourcesNote": "Czerwona lista IUCN (Dusicyon australis, EX); relacja Darwina z 1834; zapis ostatniego zabicia 1876."
     },
     "bluebuck": {
-      "commonName": "Antylopa błękitna",
+      "commonName": "Antylopowiec modry",
+      "nameSource": "https://pl.wikipedia.org/wiki/Antylopowiec_modry",
       "hook": "Pierwszy duży afrykański ssak wytępiony w czasach historycznych — zniknął z Przylądka około 1800.",
       "imageAlt": "Wypchana antylopa błękitna, szarobrązowa, z długimi żebrowanymi rogami, w muzeum",
       "what": "Antylopa błękitna, blaubok (Hippotragus leucophaeus), była krewną antylopy końskiej i czarnej, ograniczoną do południowo-zachodniego Przylądka. IUCN: wymarła. Niebieskawy połysk sierści dał nazwę; zachowało się niewiele skór.",

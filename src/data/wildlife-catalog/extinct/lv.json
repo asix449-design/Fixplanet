@@ -15,7 +15,11 @@
       "sourcesNote": "IUCN / BirdLife (Cyanopsitta spixii, EW); Vercillo et al. 2024 (Diversity) par Kurasā izlaišanu; 2025. gada prese par cirkovīrusa krīzi."
     },
     "woolly-mammoth": {
-      "commonName": "Vilnainais mamuts",
+      "commonName": "Mamuts",
+      "nameSource": {
+        "kind": "editorial",
+        "by": "owner, a native Latvian speaker"
+      },
       "hook": "Vēlā pleistocēna ziemeļu milzis — finālā pieder gan klimats, gan cilvēki.",
       "imageAlt": "Vilnainā mamuta dabiska lieluma muzeja rekonstrukcija",
       "what": "Vilnainais mamuts bija aukstās stepes zilonis ar gariem matiem un izliektiem ilkņiem. Tas ir izmiris. Tuvākais dzīvais radinieks ir Āzijas zilonis. Senā DNS un datētie kauli dod skaidrāku hronoloģiju nekā lielākajai daļai leduslaikmeta zīdītāju.",
@@ -55,6 +59,7 @@
     },
     "dodo": {
       "commonName": "Dodo",
+      "nameSource": "https://lv.wikipedia.org/wiki/Dodo",
       "hook": "Maurīcijas nelidojošais balodis, izzudis apmēram gadsimta laikā pēc pastāvīgas eiropiešu apmešanās.",
       "imageAlt": "Oksfordas vitrīna ar dodo skeletu un spalvainu rekonstrukciju",
       "what": "Dodo bija liels nelidojošs balodis, Maurīcijas endēms. IUCN: izmiris. Pilnīga izbāzta īpatņa nav; zināšanas nāk no kauliem, nedaudzām relikvijām un 17. gadsimta liecībām.",
@@ -101,7 +106,8 @@
       "sourcesNote": "IUCN Sarkanais saraksts (Ectopistes migratorius, EX); Sinsinati zoodārza ieraksts par Martu; Šorgera un vēlākie vērtējumi."
     },
     "thylacine": {
-      "commonName": "Tilacīns",
+      "commonName": "Tasmanijas vilks",
+      "nameSource": "https://lv.wikipedia.org/wiki/Tasmanijas_vilks",
       "hook": "Tasmānijas svītrotais somainais plēsējs — pēdējais nebrīves dzīvnieks nomira 1936. gadā.",
       "imageAlt": "Vēsturisks foto: divi tilacīni akmens aplokā",
       "what": "Tilacīns jeb Tasmānijas tīģeris bija suņa lieluma somainais plēsējs ar stīvu asti un tumšām svītrām. IUCN: izmiris. Tas nav lielais kaķis.",
@@ -133,6 +139,7 @@
     },
     "stellers-sea-cow": {
       "commonName": "Stellera jūrasgovs",
+      "nameSource": "https://lv.wikipedia.org/wiki/Stellera_j%C5%ABrasgovs",
       "hook": "Aprakstīta 1741. gadā; izmedīta līdz 1768. — ap 27 gadiem pēc eiropiešu sastapšanas.",
       "imageAlt": "19. gadsimta zinātniskā ilustrācija: Stellera jūrasgovs sānskatā",
       "what": "Stellera jūrasgovs bija milzīga, lēna sirēna — diugoņu un lamantīnu radiniece —, kas ganījās brūnaļģēs. IUCN: izmirsta. Georgs Vilhelms Stellers to aprakstīja Beringa 1741. gada ekspedīcijā.",
@@ -172,6 +179,7 @@
     },
     "aurochs": {
       "commonName": "Taurs",
+      "nameSource": "https://lv.wikipedia.org/wiki/Taurs",
       "hook": "Mājlopu savvaļas senčs; pēdējais dokumentētais dzīvnieks nomira Polijā 1627. gadā.",
       "imageAlt": "Melna taura rekonstrukcija ar uz priekšu liektiem ragiem",
       "what": "Taurs bija liels savvaļas liellops un galvenais mājas liellopu senčs. IUCN: izmiris. Tā gēni dzīvo govīs; savvaļas formas nav.",
@@ -229,7 +237,7 @@
       "commonName": "Kvaga",
       "hook": "Dienvidāfrikas zebras pasuga, izšauta savvaļā; pēdējā nebrīves ķēve nomira 1883. gadā.",
       "imageAlt": "19. gadsimta foto: kvagas ķēve Londonas zoodārzā",
-      "what": "Kvaga bija savannas zebras pasuga: pakaļdaļa brūna, svītras uz galvas un kakla. IUCN Equus quagga uzskata par LC, bet kvagas pasugu — par izmirušu. To pazīst pēc ādām, galvaskausiem un dažiem vienas ķēves foto.",
+      "what": "Kvaga bija savannas zebras pasuga: pakaļdaļa brūna, svītras uz galvas un kakla. Starptautiskā dabas aizsardzības savienība sugu kopumā (Equus quagga) vērtē šādi: Gandrīz apdraudēta. Kvagas pasuga ir izmirusi. To pazīst pēc ādām, galvaskausiem un dažiem vienas ķēves foto.",
       "range": "Dienvidāfrikas Karū un dienvidu Haivelda. Tālāk uz ziemeļiem par citām savannas zebrām tā nesniedzās.",
       "story": "Kolonistu medības gaļai un ādām un ganību pārvēršana aitām un liellopiem savvaļas populāciju izņēma 1860.–1870. gados. Pēdējā nebrīves ķēve nomira 1883. gada 12. augustā Artisā Amsterdamā. Vēlākais vairošanas projekts izmanto savannas zebras, lai atdarinātu kažoku; vēsturisko pasugu tas neaugšāmcel.",
       "when": "Savvaļā izmira līdz 1870. gadu beigām; pēdējā nebrīves nāve 1883. gada 12. augustā.",
@@ -298,7 +306,7 @@
       "sourcesNote": "Rančo La Brea hronoloģija; Ziemeļamerikas megafaunas izzušanas pārskati (Barnosky, Koch u. c.)."
     },
     "megatherium": {
-      "commonName": "Milzu sliņķis",
+      "commonName": "Megatherium americanum",
       "hook": "Ziloņa lieluma Dienvidamerikas sliņķis; kauli ar griezuma pēdām rāda, ka cilvēki to medīja.",
       "imageAlt": "Megatherium americanum skelets dabas vēstures muzejā",
       "what": "Megatherium americanum bija milzu sauszemes sliņķis Dienvidamerikas pleistocēnā: augstāks par cilvēku stāvus un vairāku tonnu smags. Suga ir izmirsta. Tas nebija koku sliņķis; tas ganījās un plūca krūmus.",
@@ -334,7 +342,7 @@
       "sourcesNote": "Roberts et al. 2001; vēlākās diprotodona un Austrālijas megafaunas hronoloģijas."
     },
     "haast-eagle": {
-      "commonName": "Hāsta ērglis",
+      "commonName": "Hieraaetus moorei",
       "hook": "Lielākais zināmais ērglis; medīja moa, tad izzuda, kad cilvēki atņēma tā upuri.",
       "imageAlt": "Ilustrācija: Hāsta ērglis sit milzu moa Jaunzēlandes ainavā",
       "what": "Hāsta ērglis (Hieraaetus moorei, agrāk Harpagornis) bija lielākais zināmais ērglis, varbūt 10–15 kg, ar nagiem, kas veidoti moa nogalināšanai. Suga ir izmirsta. Senā DNS to saista ar maziem austrālāzijas Hieraaetus: gigantisms ir sekundārs.",
@@ -382,7 +390,7 @@
       "sourcesNote": "IUCN Sarkanais saraksts (Dusicyon australis, EX); Darvina 1834. gada stāsts; 1876. gada pēdējās nogalināšanas ieraksts."
     },
     "bluebuck": {
-      "commonName": "Zilā antilope",
+      "commonName": "Hippotragus leucophaeus",
       "hook": "Pirmais lielais Āfrikas zīdītājs, iznīcināts vēsturiskajā laikā — izzuda no Kāpas ap 1800. gadu.",
       "imageAlt": "Zilās antilopes izbāznis muzejā: pelēkbrūna antilope ar gariem rievotiem ragiem",
       "what": "Zilā antilope jeb blauboks (Hippotragus leucophaeus) bija radiniece zirgu un melnajai antilopei, ierobežota uz Kāpas dienvidrietumiem. IUCN: izmirsta. Zilganais kažoka spīdums deva vārdu; saglabājušās dažas ādas.",
@@ -394,7 +402,7 @@
       "sourcesNote": "IUCN Sarkanais saraksts (Hippotragus leucophaeus, EX); Lihtenšteins un vēlāki vēsturiskie apkopojumi; Dienvidāfrikas zīdītāju vērtējumi."
     },
     "pyrenean-ibex": {
-      "commonName": "Pireneju kaza",
+      "commonName": "Capra pyrenaica pyrenaica",
       "hook": "Ibērijas kazas Pireneju pasuga; pēdējā savvaļas mātīte nomira 2000. gadā. 2003. gada klons nodzīvoja minūtes.",
       "imageAlt": "Pireneju kazas izbāznis profilā uz balta fona",
       "what": "Pireneju kaza jeb bukardo (Capra pyrenaica pyrenaica) bija Ibērijas kazas pasuga. IUCN pasugu vērtē kā izmirstu. Citas pasugas joprojām dzīvo Spānijā. Tā nav Alpu kaza (Capra ibex).",

@@ -58,7 +58,7 @@ const primary =
           ) : null
         }
       </div>
-      <h3>{species.commonName}</h3>
+      <h3>{species.commonName === species.scientificName ? <em>{species.commonName}</em> : species.commonName}</h3>
       <p class="scientific-name"><em>{species.scientificName}</em></p>
       <p class="wildlife-hook">{species.hook}</p>
       <span class="card-cta">{ui.wildlifePage.cardCta}</span>

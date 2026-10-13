@@ -148,7 +148,7 @@ function liveText(animal: CatalogScaleAnimal, position: string): string {
 
                   <figcaption class="size-scale-caption-block">
                     <p class="size-scale-position" data-position>{initialPosition}</p>
-                    <h3 class="size-scale-name" data-name>{first.name}</h3>
+                    <h3 class="size-scale-name" data-name>{first.nameItalic ? <em>{first.name}</em> : first.name}</h3>
                     <dl class="size-scale-measures">
                       <div>
                         <dt data-h-label>{first.heightLabel}</dt>
@@ -235,7 +235,7 @@ function liveText(animal: CatalogScaleAnimal, position: string): string {
                     group.animals.map((animal, index) => (
                       <li>
                         <p>{group.positionPattern.replaceAll('{n}', String(index + 1))}</p>
-                        <p>{animal.name}</p>
+                        <p>{animal.nameItalic ? <em>{animal.name}</em> : animal.name}</p>
                         <p>{animal.heightLabel} {animal.heightText}</p>
                         <p>{animal.lengthLabel} {animal.lengthText}</p>
                         <p>{animal.caption}</p>

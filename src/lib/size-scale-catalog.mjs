@@ -392,7 +392,14 @@ function mount(root) {
   function syncText() {
     const animal = meta[index];
     const position = positionText(index + 1);
-    nameEl.textContent = animal.name;
+    nameEl.replaceChildren();
+    if (animal.nameItalic) {
+      const em = document.createElement('em');
+      em.textContent = animal.name;
+      nameEl.append(em);
+    } else {
+      nameEl.textContent = animal.name;
+    }
     captionEl.textContent = animal.caption;
     fillCredit(animal);
     hLabel.textContent = animal.heightLabel;
