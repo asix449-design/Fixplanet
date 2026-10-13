@@ -3,6 +3,7 @@ import CitedSourceList from '../components/CitedSourceList.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { wildlifeImageSrc, type Species } from '../data/wildlife';
 import { getUi, localizePath, resolveLocale } from '../i18n';
+import { globalScopeLabel } from '../lib/wildlife-catalog/scope-label';
 
 interface Props {
   species: Species;
@@ -11,6 +12,7 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const { species } = Astro.props;
+const scopeLabel = globalScopeLabel(locale, species.iucnScope);
 const title = `${species.commonName} — Fix Planet`;
 const image = wildlifeImageSrc(species.image);
 const clickableSources = species.sourcesList?.length
@@ -130,7 +132,7 @@ const heads =
                 {ui.wildlifePage.iucnLabel}: {species.iucn} · {ui.wildlifePage.iucn[species.iucn]}
               </span>
             ) : null
-          }
+          }{scopeLabel ? <span class="pill" style="font-weight: 400">{scopeLabel}</span> : null}
           {
             species.functionallyExtinct ? (
               <span class="pill status-extinct">{ui.wildlifePage.functionallyExtinct}</span>

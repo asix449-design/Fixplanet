@@ -152,6 +152,7 @@ export function toSpecies(card, copy) {
     sources: copy.sourcesNote || '',
   };
   if (iucn) species.iucn = iucn;
+  if (card.iucn) species.iucnScope = card.iucn.scope || 'global';
   if (card.flags?.functionallyExtinct) species.functionallyExtinct = true;
   if (card.primarySources?.length) species.primarySources = card.primarySources.map((p) => ({ label: p.label, url: p.url }));
   if (copy.badgeText) species.tag = copy.badgeText;

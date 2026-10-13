@@ -2,6 +2,7 @@
 import type { Species } from '../data/wildlife';
 import { wildlifeImageSrc, wildlifePrimarySource } from '../data/wildlife';
 import { getUi, localizePath, resolveLocale } from '../i18n';
+import { globalScopeLabel } from '../lib/wildlife-catalog/scope-label';
 
 interface Props {
   species: Species;
@@ -12,6 +13,7 @@ const ui = getUi(locale);
 const { species } = Astro.props;
 const href = localizePath(`/wildlife/${species.slug}`, locale);
 const iucnLabel = species.iucn ? ui.wildlifePage.iucn[species.iucn] : undefined;
+const scopeLabel = globalScopeLabel(locale, species.iucnScope);
 const emphasizeIucn =
   species.iucn === 'EW' || species.functionallyExtinct === true;
 const primary =
@@ -41,6 +43,7 @@ const primary =
             <>
               <span class:list={['tag', `status-${species.status}`]}>{species.iucn}</span>
               <span class:list={['tag', `status-${species.status}`]}>{iucnLabel}</span>
+              {scopeLabel ? <span class="tag" style="font-weight: 400">{scopeLabel}</span> : null}
             </>
           ) : (
             <span class:list={['tag', `status-${species.status}`]}>
