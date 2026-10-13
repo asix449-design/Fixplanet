@@ -15,7 +15,11 @@
       "sourcesNote": "IUCN / BirdLife (Cyanopsitta spixii, EW); Vercillo et al. 2024 (Diversity) par Kurasā izlaišanu; 2025. gada prese par cirkovīrusa krīzi."
     },
     "woolly-mammoth": {
-      "commonName": "Mammuthus primigenius",
+      "commonName": "Mamuts",
+      "nameSource": {
+        "kind": "editorial",
+        "by": "owner, a native Latvian speaker"
+      },
       "hook": "Vēlā pleistocēna ziemeļu milzis — finālā pieder gan klimats, gan cilvēki.",
       "imageAlt": "Vilnainā mamuta dabiska lieluma muzeja rekonstrukcija",
       "what": "Vilnainais mamuts bija aukstās stepes zilonis ar gariem matiem un izliektiem ilkņiem. Tas ir izmiris. Tuvākais dzīvais radinieks ir Āzijas zilonis. Senā DNS un datētie kauli dod skaidrāku hronoloģiju nekā lielākajai daļai leduslaikmeta zīdītāju.",
