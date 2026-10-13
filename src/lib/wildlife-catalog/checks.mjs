@@ -28,6 +28,62 @@ function originalIucn(card) {
   return card.iucn.category;
 }
 
+/**
+ * One identity for a source link: percent-decoding, lowercase scheme and host,
+ * http and https together, no fragment, no trailing slash. On Wikipedia, a
+ * space and an underscore in the path are the same title.
+ */
+export function normalizeSourceUrl(raw) {
+  const text = String(raw ?? '').trim();
+  let parsed;
+  try {
+    parsed = new URL(text);
+  } catch {
+    return text;
+  }
+  const scheme = parsed.protocol === 'http:' || parsed.protocol === 'https:' ? 'https:' : parsed.protocol;
+  const host = parsed.hostname.toLowerCase();
+  let path = parsed.pathname;
+  try {
+    path = decodeURIComponent(path);
+  } catch {
+    path = path.replace(/%20/gi, ' ');
+  }
+  if (path.length > 1) path = path.replace(/\/+$/, '');
+  if (host === 'wikipedia.org' || host.endsWith('.wikipedia.org')) path = path.replace(/ /g, '_');
+  let query = '';
+  if (parsed.search.length > 1) {
+    const body = parsed.search.slice(1);
+    try {
+      query = `?${decodeURIComponent(body)}`;
+    } catch {
+      query = parsed.search;
+    }
+  }
+  return `${scheme}//${host}${path}${query}`;
+}
+
+/** Normalized URLs that occur more than once in one source list. */
+export function duplicateSourceUrls(urls) {
+  const seen = new Map();
+  const dups = [];
+  for (const url of urls || []) {
+    if (!url) continue;
+    const key = normalizeSourceUrl(url);
+    const n = seen.get(key) || 0;
+    if (n === 1) dups.push(key);
+    seen.set(key, n + 1);
+  }
+  return dups;
+}
+
+function checkDuplicateSourceUrls(findings, slug, loc, field, sources) {
+  const urls = (sources || []).map((src) => src?.url).filter(Boolean);
+  for (const key of duplicateSourceUrls(urls)) {
+    push(findings, { rule: 'C22', slug, locale: loc, field, message: `duplicate source URL ${key}` });
+  }
+}
+
 /** Header read for png, jpeg, and webp. No image dependency. */
 export function imageSize(file) {
   const buf = fs.readFileSync(file);
@@ -285,6 +341,7 @@ function checkCard(findings, card, shelf, ctx) {
     if (n) push(findings, { rule: 'C1', slug: card.slug, locale: '*', field: 'primarySources.label', count: n, message: 'banned character in primary source label' });
     checkUrl(findings, card.slug, '*', 'primarySources.url', src.url);
   }
+  checkDuplicateSourceUrls(findings, card.slug, '*', 'primarySources', card.primarySources);
   checkImage(findings, card, rules, repoRoot);
   checkC16(findings, card, shelves);
   checkC18(findings, card, shelf, shelves);
@@ -314,6 +371,8 @@ function checkCard(findings, card, shelf, ctx) {
     const urls = (copy.sources || []).map((s) => s.url).sort();
     urlSets[loc] = urls.join('\n');
     for (const src of copy.sources || []) checkUrl(findings, card.slug, loc, 'sources.url', src.url);
+    checkDuplicateSourceUrls(findings, card.slug, loc, 'sources', copy.sources);
+    if (copy.scale?.sources) checkDuplicateSourceUrls(findings, card.slug, loc, 'scale.sources', copy.scale.sources);
     if (copy.gridSource) checkUrl(findings, card.slug, loc, 'gridSource.url', copy.gridSource.url);
     checkC6(findings, card, copy, loc, rules);
   }

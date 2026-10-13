@@ -1,7 +1,7 @@
 import { CardMeta, LOCALES, Registry } from '../../src/lib/wildlife-catalog/schema.mjs';
 import { composeScaleCaption, formatMeasure, splitGroup } from '../../src/lib/wildlife-catalog/format.mjs';
 import { compilePatterns, scanText } from '../../src/lib/wildlife-catalog/c17.mjs';
-import { c16Issues, checkDuplicateSlugs, checkLabelPlaceholders } from '../../src/lib/wildlife-catalog/checks.mjs';
+import { c16Issues, checkDuplicateSlugs, checkLabelPlaceholders, duplicateSourceUrls, normalizeSourceUrl } from '../../src/lib/wildlife-catalog/checks.mjs';
 import { s14Names } from '../../src/lib/wildlife-catalog/refine.mjs';
 import { toSpecies } from '../../src/lib/wildlife-catalog/adapter.mjs';
 
@@ -160,7 +160,21 @@ export function runSelfTests(catalog, live) {
 
   const s14 = s14Names(rules);
   assert(s14.filter((x) => x.level === 'fail').length === 0, 'S14 names are filled');
-  assert(s14.filter((x) => x.level === 'warn').length === 3, 'S14 warns only LV EX/EW/NE');
+  const expectedReview = [];
+  for (const loc of LOCALES) {
+    const pending = new Set(rules.iucnCategoryNames[loc]?.needsNativeReview || []);
+    for (const cat of ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE']) {
+      if (pending.has(cat)) expectedReview.push(`${loc}:${cat}`);
+    }
+  }
+  const warned = s14.filter((x) => x.level === 'warn').map((x) => `${x.loc}:${x.cat}`);
+  assert(JSON.stringify(warned) === JSON.stringify(expectedReview), `S14 warnings follow needsNativeReview (${warned.join(', ')})`);
+  assert(!expectedReview.includes('lv:EX'), 'LV EX category name is reviewed');
+  const wiki = 'https://en.wikipedia.org/wiki/Cave_bear';
+  assert(normalizeSourceUrl('http://EN.WIKIPEDIA.ORG/wiki/Cave%20bear#History/') === normalizeSourceUrl(wiki), 'wiki space, case, scheme, slash, and fragment match');
+  assert(duplicateSourceUrls([wiki, 'https://en.wikipedia.org/wiki/Cave%20bear']).length === 1, 'duplicate wiki urls are caught');
+  assert(duplicateSourceUrls(['https://example.org/a_b', 'https://example.org/a%20b']).length === 0, 'non-wiki space and underscore stay distinct');
+  assert(duplicateSourceUrls(['https://example.org/a', 'https://example.org/b']).length === 0, 'distinct urls pass');
   assert(!('methodLabels' in registry), 'registry has no methodLabels');
   assert(registry.shelves.find((s) => s.id === 'domesticates').statusDisplay === 'none', 'domesticates hide the status pill');
   assert(registry.options.breeds === 'variants', 'breeds are variants');

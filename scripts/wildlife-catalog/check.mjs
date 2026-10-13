@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 /**
- * Wildlife catalogue checker (C1–C21 and S1–S15).
+ * Wildlife catalogue checker (C1–C22 and S1–S15).
  *
  *   node scripts/wildlife-catalog/check.mjs [--json report.json] [--shelf <id>] [--write-baseline] [--no-baseline]
  *
  * The migrated cards live in the per-shelf JSON files. The checker parses them
  * with the same zod schemas as the loader and subtracts legacy-baseline.json.
  * The baseline may only shrink. C21 fails when a slug is repeated across shelf files.
+ * C22 fails when one source list names the same URL twice after normalization.
  */
 import fs from 'node:fs';
 import path from 'node:path';

@@ -232,11 +232,10 @@
         "NE": "https://lv.wikipedia.org/wiki/Aizsardzības_statuss"
       },
       "needsNativeReview": [
-        "EX",
         "EW",
         "NE"
       ],
-      "note": "IUCN has no official Latvian translation. CR..LC: Latvian Red Book, 3rd edition 2025 (University of Latvia Institute of Biology, Nature Conservation Agency). DD \"Trūkst datu\" is the Red Book card label. The Red Book has no EX, EW or NE: these come from lv.wikipedia only (\"izmiris\", \"izmiris savvaļā\", \"nav novērtēts\") and were put in the feminine to agree with \"suga\" (Izmirusi, Izmirusi savvaļā, Nav novērtēta): native check needed."
+      "note": "IUCN has no official Latvian translation. CR..LC: Latvian Red Book, 3rd edition 2025 (University of Latvia Institute of Biology, Nature Conservation Agency). DD \"Trūkst datu\" is the Red Book card label. The Red Book has no EX, EW or NE: these come from lv.wikipedia only (\"izmiris\", \"izmiris savvaļā\", \"nav novērtēts\") and were put in the feminine to agree with \"suga\" (Izmirusi, Izmirusi savvaļā, Nav novērtēta). The owner reviewed the EX card form with the Extinct library cards, so EX is no longer listed for native review. EW and NE still need that check."
     }
   },
   "otherStatusValues": {
