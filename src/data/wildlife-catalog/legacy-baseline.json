@@ -754,15 +754,6 @@
     },
     {
       "slug": "amur-tiger",
-      "locale": "ru",
-      "field": "render.detailIucnPill",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy detail-page IUCN pill shows the Latin code; renderer switches to localized words in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "amur-tiger",
       "locale": "pl",
       "field": "sourcesNote",
       "rule": "C17",
@@ -772,30 +763,12 @@
     },
     {
       "slug": "amur-tiger",
-      "locale": "pl",
-      "field": "render.detailIucnPill",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy detail-page IUCN pill shows the Latin code; renderer switches to localized words in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "amur-tiger",
       "locale": "lv",
       "field": "sourcesNote",
       "rule": "C17",
       "pattern": "iucn",
       "count": 1,
       "reason": "legacy text with IUCN code (EN); translate to the category name in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "amur-tiger",
-      "locale": "lv",
-      "field": "render.detailIucnPill",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy detail-page IUCN pill shows the Latin code; renderer switches to localized words in the RU / PL / LV cleanup"
     },
     {
       "slug": "sumatran-orangutan",
@@ -1465,42 +1438,6 @@
     },
     {
       "slug": "yangtze-giant-softshell-turtle",
-      "locale": "lv",
-      "field": "render.detailIucnPill",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy detail-page IUCN pill shows the Latin code; renderer switches to localized words in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "kakapo",
-      "locale": "pl",
-      "field": "sourcesNote",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy text with IUCN code (CR); translate to the category name in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "kakapo",
-      "locale": "pl",
-      "field": "render.detailIucnPill",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy detail-page IUCN pill shows the Latin code; renderer switches to localized words in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "kakapo",
-      "locale": "lv",
-      "field": "sourcesNote",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy text with IUCN code (CR); translate to the category name in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "kakapo",
       "locale": "lv",
       "field": "render.detailIucnPill",
       "rule": "C17",
@@ -2825,15 +2762,6 @@
     {
       "slug": "quagga",
       "locale": "ru",
-      "field": "what",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy text with IUCN code (LC); translate to the category name in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "quagga",
-      "locale": "ru",
       "field": "render.detailIucnPill",
       "rule": "C17",
       "pattern": "iucn",
@@ -2843,29 +2771,11 @@
     {
       "slug": "quagga",
       "locale": "pl",
-      "field": "what",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy text with IUCN code (LC); translate to the category name in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "quagga",
-      "locale": "pl",
       "field": "render.detailIucnPill",
       "rule": "C17",
       "pattern": "iucn",
       "count": 1,
       "reason": "legacy detail-page IUCN pill shows the Latin code; renderer switches to localized words in the RU / PL / LV cleanup"
-    },
-    {
-      "slug": "quagga",
-      "locale": "lv",
-      "field": "what",
-      "rule": "C17",
-      "pattern": "iucn",
-      "count": 1,
-      "reason": "legacy text with IUCN code (LC); translate to the category name in the RU / PL / LV cleanup"
     },
     {
       "slug": "quagga",
@@ -8495,14 +8405,6 @@
     },
     {
       "slug": "quagga",
-      "locale": "lv",
-      "field": "what",
-      "rule": "C1",
-      "count": 1,
-      "reason": "legacy text uses a dash or other banned character; removed in the per-shelf copy cleanup"
-    },
-    {
-      "slug": "quagga",
       "locale": "pl",
       "field": "humanRole",
       "rule": "C1",
@@ -8523,14 +8425,6 @@
       "field": "story",
       "rule": "C1",
       "count": 1,
-      "reason": "legacy text uses a dash or other banned character; removed in the per-shelf copy cleanup"
-    },
-    {
-      "slug": "quagga",
-      "locale": "ru",
-      "field": "what",
-      "rule": "C1",
-      "count": 2,
       "reason": "legacy text uses a dash or other banned character; removed in the per-shelf copy cleanup"
     },
     {
@@ -11737,14 +11631,6 @@
       "slug": "quagga",
       "locale": "ru",
       "field": "imageAlt",
-      "rule": "C3",
-      "count": 1,
-      "reason": "legacy RU / PL / LV script mix; removed in the per-shelf copy cleanup"
-    },
-    {
-      "slug": "quagga",
-      "locale": "ru",
-      "field": "what",
       "rule": "C3",
       "count": 1,
       "reason": "legacy RU / PL / LV script mix; removed in the per-shelf copy cleanup"

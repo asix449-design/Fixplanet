@@ -54,6 +54,7 @@ export type CatalogScaleGeom = {
 export type CatalogScaleAnimal = {
   slug: string;
   name: string;
+  nameItalic?: boolean;
   caption: string;
   credit: string;
   licenceHref: string;
@@ -93,6 +94,7 @@ export type CatalogScaleView = {
 
 type ShelfCard = {
   slug: string;
+  scientificName?: string;
   size?: {
     height?: { value?: number; mean?: number; unit?: string };
     length?: { value?: number; mean?: number; unit?: string; basis?: string };
@@ -265,6 +267,7 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
         animal: {
           slug: card.slug,
           name: copy.commonName,
+          nameItalic: copy.commonName === card.scientificName,
           caption: composeScaleCaption(copy.scale.heightLabel, heightText, copy.scale.lengthLabel, lengthText, copy.scale.captionExtra),
           credit,
           licenceHref: image.licenseUrl || '',

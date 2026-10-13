@@ -341,7 +341,9 @@ const ScaleCopy = z.object({
 }).strict();
 
 export const CardCopy = z.object({
-  commonName: z.string().min(1), hook: z.string().min(1), imageAlt: z.string().min(1),
+  commonName: z.string().min(1),
+  nameSource: https.optional(),
+  hook: z.string().min(1), imageAlt: z.string().min(1),
   what: z.string().min(1), range: z.string().min(1), story: z.string().min(1),
   when: z.string().min(1), humanRole: z.string().min(1),
   sources: z.array(Link).default([]),

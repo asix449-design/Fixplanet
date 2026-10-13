@@ -57,6 +57,9 @@
       "iucn": {
         "category": "EN",
         "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-13",
+        "iucnTaxonId": "15955",
         "assessmentUrl": "https://www.iucnredlist.org/species/15955/214862019"
       },
       "flags": {},
