@@ -1,0 +1,173 @@
+---
+import type { Locale } from '../i18n/config';
+import { formatExact, formatMonth, monthAt, pinkSeries, storedDecimals } from '../lib/economyData';
+
+interface Props {
+  title: string;
+  shows: string;
+  planet: string;
+  caveat: string;
+  unit: string;
+  series: { key: string; label: string }[];
+  locale: Locale;
+  labels: {
+    caveat: string;
+    source: string;
+    latestReading: string;
+    lowest: string;
+    highest: string;
+    month: string;
+    table: string;
+    estimate: string;
+  };
+  sourceName: string;
+  sourceUrl: string;
+}
+
+const { title, shows, planet, caveat, unit, series, locale, labels, sourceName, sourceUrl } = Astro.props;
+
+/** The workbook marks the two newest monthly averages of Japanese liquefied gas as estimates (see the note in pink-sheet.json). */
+const ESTIMATED_TAIL: Record<string, number> = { lng_japan: 2 };
+const W = 800;
+const H = 240;
+
+const data = series.map((item) => ({ ...item, ...pinkSeries(item.key) }));
+const start = data[0].start;
+const firstIndex = (values: (number | null)[]) => values.findIndex((v) => v != null);
+const lastIndex = (values: (number | null)[]) => {
+  for (let i = values.length - 1; i >= 0; i--) if (values[i] != null) return i;
+  return -1;
+};
+const from = Math.min(...data.map((s) => firstIndex(s.values)));
+const to = Math.max(...data.map((s) => lastIndex(s.values)));
+const top = Math.max(...data.flatMap((s) => s.values.filter((v): v is number => v != null)));
+const fmt = (v: number) => formatExact(v, storedDecimals(v), locale);
+
+function path(values: (number | null)[]): string {
+  const step = W / Math.max(1, to - from);
+  let d = '';
+  let pen = false;
+  for (let i = from; i <= to; i++) {
+    const v = values[i];
+    if (v == null) {
+      pen = false;
+      continue;
+    }
+    const x = ((i - from) * step).toFixed(1);
+    const y = (H - (v / top) * H).toFixed(1);
+    d += `${pen ? 'L' : 'M'}${x} ${y}`;
+    pen = true;
+  }
+  return d;
+}
+
+function extreme(values: (number | null)[], pick: (a: number, b: number) => boolean) {
+  let at = -1;
+  for (let i = 0; i < values.length; i++) {
+    const v = values[i];
+    if (v != null && (at < 0 || pick(v, values[at] as number))) at = i;
+  }
+  return { value: fmt(values[at] as number), month: formatMonth(monthAt(start, at), locale) };
+}
+
+const lines = data.map((s) => path(s.values));
+const ranges = data.map((s) => ({ label: s.label, low: extreme(s.values, (a, b) => a < b), high: extreme(s.values, (a, b) => a > b) }));
+const firstYear = monthAt(start, from).slice(0, 4);
+const lastYear = monthAt(start, to).slice(0, 4);
+const reading = labels.latestReading.replace('{date}', formatMonth(monthAt(start, to), locale));
+const recent = Array.from({ length: 12 }, (_, k) => to - k).filter((i) => i >= 0);
+const estimated = (s: (typeof data)[number], i: number) => {
+  const tail = ESTIMATED_TAIL[s.key] ?? 0;
+  const last = lastIndex(s.values);
+  return tail > 0 && i <= last && i > last - tail;
+};
+---
+
+<figure class="forest-stat economy-chart">
+  <h3>{title}</h3>
+  <p class="economy-tile-unit">{unit}</p>
+  <div class="economy-chart-plot">
+    <span class="economy-chart-top">{fmt(top)}</span>
+    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" role="img" aria-label={shows}>
+      <line class="economy-chart-base" x1="0" y1={H} x2={W} y2={H} vector-effect="non-scaling-stroke" />
+      {lines.map((d, i) => <path class={`economy-line economy-line-${i + 1}`} d={d} vector-effect="non-scaling-stroke" />)}
+    </svg>
+    <span class="economy-chart-zero">{fmt(0)}</span>
+    <p class="economy-chart-years"><span>{firstYear}</span><span>{lastYear}</span></p>
+  </div>
+  {
+    data.length > 1 && (
+      <ul class="economy-legend">
+        {data.map((s, i) => (
+          <li>
+            <span class={`economy-swatch economy-line-${i + 1}`} aria-hidden="true" />
+            {s.label}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <figcaption>{shows}</figcaption>
+  <p class="economy-tile-date">{reading}</p>
+  <table class="economy-chart-range">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">{labels.lowest}</th>
+        <th scope="col">{labels.highest}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        ranges.map((r) => (
+          <tr>
+            <th scope="row">{r.label}</th>
+            <td>
+              {r.low.value} <span class="economy-cell-date">{r.low.month}</span>
+            </td>
+            <td>
+              {r.high.value} <span class="economy-cell-date">{r.high.month}</span>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <p>{planet}</p>
+  <details class="economy-tile-caveat">
+    <summary>{labels.caveat}</summary>
+    <p>{caveat}</p>
+  </details>
+  <details class="economy-chart-table">
+    <summary>{labels.table}</summary>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">{labels.month}</th>
+          {data.map((s) => <th scope="col">{s.label}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          recent.map((i) => (
+            <tr>
+              <th scope="row">{formatMonth(monthAt(start, i), locale)}</th>
+              {data.map((s) => {
+                const v = s.values[i];
+                return (
+                  <td>
+                    {v == null ? '' : fmt(v)}
+                    {v != null && estimated(s, i) && <span class="economy-estimate">{labels.estimate}</span>}
+                  </td>
+                );
+              })}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </details>
+  <p class="economy-tile-source">
+    {labels.source}: <a href={sourceUrl} rel="noopener noreferrer">{sourceName}</a>
+  </p>
+</figure>

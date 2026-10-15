@@ -1,4 +1,6 @@
 ---
+import EconomyEnergyChart from '../components/EconomyEnergyChart.astro';
+import EconomyLiveTile from '../components/EconomyLiveTile.astro';
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import {
@@ -10,9 +12,11 @@ import {
   economyTabPath,
   economyTabs,
   liveEconomyTabs,
+  type EconomySourceId,
   type EconomyTabSlug,
 } from '../data/economy';
 import { getEconomyPage, resolveLocale } from '../i18n';
+import { ecbRate, economyStaleSince, formatDay, formatExact, formatMonth, pinkSeries, storedDecimals } from '../lib/economyData';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 interface Props {
@@ -46,6 +50,95 @@ const liveFigureIds = tab.figures.filter((id) => economyFigureLive(economyFigure
 const sourceIds = economySourcesForTab(tab);
 const tabs = liveEconomyTabs();
 const hubTiles = tabs.filter((item) => item.slug !== 'overview');
+
+/* Overview and Energy are number boards. Data is read only here, inside the page render, so a production build
+   (no Economy pages) never touches the data files. */
+const boardTab = slug === 'overview' || slug === 'energy';
+const SERIES_UNIT: Record<string, keyof typeof page.units> = {
+  brent: 'usd_bbl',
+  gas_us: 'usd_mmbtu',
+  gas_europe: 'usd_mmbtu',
+  lng_japan: 'usd_mmbtu',
+  coal_australia: 'usd_mt',
+};
+
+function fill(template: string, key: string, value: string): string {
+  const mark = `{${key}}`;
+  return template.replace(`${mark}.`, value.endsWith('.') ? value : `${value}.`).replace(mark, value);
+}
+
+function organisation(id: EconomySourceId): string {
+  return page.sources[id].name.split(':')[0];
+}
+
+function seriesName(key: string): string {
+  return page.series[key as keyof typeof page.series];
+}
+
+const tiles =
+  slug === 'overview'
+    ? liveFigureIds.map((id) => {
+        const fig = economyFigures[id];
+        const figCopy = page.figures[id];
+        const base = {
+          title: figCopy.title,
+          planet: figCopy.planet,
+          caveat: figCopy.caveat,
+          caveatLabel: page.labels.caveat,
+          sourceLabel: page.labels.source,
+          sourceName: organisation(fig.source),
+          sourceUrl: fig.url,
+        };
+        if (fig.source === 'ecb' && fig.seriesKeys) {
+          const rates = fig.seriesKeys.map((code) => ({ code, ...ecbRate(code) }));
+          return {
+            ...base,
+            unit: page.units.per_euro,
+            rows: rates.map((r) => ({ label: seriesName(r.code), value: formatExact(r.value, r.decimals, locale) })),
+            dateLine: fill(page.labels.latestReading, 'date', formatDay(rates[0].date, locale)),
+          };
+        }
+        if (fig.source === 'wb_pink' && fig.seriesKey) {
+          const s = pinkSeries(fig.seriesKey);
+          return {
+            ...base,
+            value: formatExact(s.latest, storedDecimals(s.latest), locale),
+            unit: page.units[SERIES_UNIT[fig.seriesKey]],
+            dateLine: fill(page.labels.latestReading, 'date', formatMonth(s.month, locale)),
+          };
+        }
+        throw new Error(`Overview figure ${id} has no data binding`);
+      })
+    : [];
+
+const charts =
+  slug === 'energy'
+    ? liveFigureIds.map((id) => {
+        const fig = economyFigures[id];
+        const keys = fig.seriesKeys ?? (fig.seriesKey ? [fig.seriesKey] : []);
+        if (keys.length === 0) throw new Error(`Energy figure ${id} has no data binding`);
+        return { id, fig, keys };
+      })
+    : [];
+
+const staleNotices = boardTab
+  ? sourceIds.flatMap((id) => {
+      if (id !== 'wb_pink' && id !== 'ecb') return [];
+      const since = economyStaleSince(id);
+      if (!since) return [];
+      return [fill(page.labels.staleNotice, 'date', id === 'ecb' ? formatDay(since, locale) : formatMonth(since, locale))];
+    })
+  : [];
+
+const sourceLines: Partial<Record<EconomySourceId, string>> = {};
+if (boardTab && sourceIds.includes('wb_pink')) {
+  const published = fill(page.labels.publishedOn, 'date', formatDay(pinkSeries('brent').publisherDate, locale));
+  sourceLines.wb_pink = fill(fill(page.labels.sourceLineChanged, 'list', page.sources.wb_pink.name), 'updated', published);
+}
+if (boardTab && sourceIds.includes('ecb')) {
+  const published = fill(page.labels.publishedOn, 'date', formatDay(ecbRate('USD').date, locale));
+  sourceLines.ecb = fill(fill(page.labels.sourceLineUnmodified, 'list', page.sources.ecb.name), 'updated', published);
+}
 
 function tileText(tabSlug: EconomyTabSlug): string {
   if (tabSlug === 'overview') return '';
@@ -124,9 +217,9 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
       )}
 
       {
-        updates && (
+        !boardTab && updates && (
           <p>
-            <span class="pill">{page.labels.updates}</span> {updates}
+            <span class="economy-pill">{page.labels.updates}</span> {updates}
           </p>
         )
       }
@@ -137,8 +230,57 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
         ))
       }
 
+      {staleNotices.map((notice) => <p class="economy-stale">{notice}</p>)}
+
       {
-        liveFigureIds.length > 0 && (
+        tiles.length > 0 && (
+          <div class="economy-board">
+            {tiles.map((tile) => (
+              <EconomyLiveTile {...tile} />
+            ))}
+          </div>
+        )
+      }
+
+      {
+        charts.length > 0 && (
+          <div class="economy-charts">
+            {charts.map(({ id, fig, keys }) => (
+              <EconomyEnergyChart
+                title={page.figures[id].title}
+                shows={page.figures[id].shows}
+                planet={page.figures[id].planet}
+                caveat={page.figures[id].caveat}
+                unit={page.units[SERIES_UNIT[keys[0]]]}
+                series={keys.map((key) => ({ key, label: seriesName(key) }))}
+                locale={locale}
+                labels={page.labels}
+                sourceName={organisation(fig.source)}
+                sourceUrl={fig.url}
+              />
+            ))}
+          </div>
+        )
+      }
+
+      {
+        boardTab && (
+          <p class="economy-not-advice">
+            <a href="#economy-disclaimer">{page.labels.notAdvice}</a>
+          </p>
+        )
+      }
+
+      {
+        boardTab && updates && (
+          <p>
+            <span class="economy-pill">{page.labels.updates}</span> {updates}
+          </p>
+        )
+      }
+
+      {
+        !boardTab && liveFigureIds.length > 0 && (
           <div class="forest-stat-grid">
             {liveFigureIds.map((id) => {
               const fig = economyFigures[id];
@@ -148,16 +290,16 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
                 <article class="wildlife-copy-card">
                   <h3>{figCopy.title}</h3>
                   <p>
-                    <strong>{page.labels.shows}:</strong> {figCopy.shows}
+                    <span class="economy-label">{page.labels.shows}:</span> {figCopy.shows}
                   </p>
                   <p>
-                    <strong>{page.labels.planet}:</strong> {figCopy.planet}
+                    <span class="economy-label">{page.labels.planet}:</span> {figCopy.planet}
                   </p>
                   <p>
-                    <strong>{page.labels.caveat}:</strong> {figCopy.caveat}
+                    <span class="economy-label">{page.labels.caveat}:</span> {figCopy.caveat}
                   </p>
                   <p class="wildlife-sources">
-                    <strong>{page.labels.source}:</strong>{' '}
+                    <span class="economy-label">{page.labels.source}:</span>{' '}
                     <a href={fig.url} rel="noopener noreferrer">
                       {sourceCopy.name}
                     </a>
@@ -188,7 +330,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
                       </a>
                     </h3>
                     <p>
-                      <strong>{page.labels.licence}:</strong>{' '}
+                      <span class="economy-label">{page.labels.licence}:</span>{' '}
                       {meta.licenceUrl ? (
                         <a href={meta.licenceUrl} rel="noopener noreferrer">
                           {sourceCopy.licence}
@@ -199,7 +341,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
                     </p>
                     {parts.length > 0 && (
                       <p>
-                        <strong>{page.labels.credit}:</strong>{' '}
+                        <span class="economy-label">{page.labels.credit}:</span>{' '}
                         {parts.map((part) =>
                           part.href ? (
                             <a href={part.href} rel="noopener noreferrer">
@@ -212,6 +354,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
                       </p>
                     )}
                     <p class="wildlife-sources">{sourceCopy.note}</p>
+                    {sourceLines[id] && <p class="wildlife-sources">{sourceLines[id]}</p>}
                   </article>
                 );
               })}
@@ -235,7 +378,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
         )
       }
 
-      <aside class="wildlife-copy-card economy-disclaimer">
+      <aside id="economy-disclaimer" class="wildlife-copy-card economy-disclaimer">
         <h2>{page.disclaimer.title}</h2>
         <p>{page.disclaimer.body}</p>
         <p>{page.disclaimer.nonCommercial}</p>
