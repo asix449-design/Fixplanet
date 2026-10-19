@@ -704,6 +704,47 @@ test('downsample: at most 120 points, and the first, last, min and max stay', ()
   assert.equal((line.match(/M/g) || []).length, 2);
 });
 
+function monthlyFixture(count = 4, end = '2026-09') {
+  const header = 'KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,DECIMALS,TITLE,TITLE_COMPL,UNIT';
+  const specs = [
+    ['USD', 1.1, 4, 'US dollar/Euro'],
+    ['GBP', 0.85, 5, 'Pound sterling/Euro'],
+    ['PLN', 4.3, 4, 'Polish zloty/Euro'],
+  ];
+  const endIndex = Number(end.slice(0, 4)) * 12 + Number(end.slice(5, 7)) - 1;
+  const lines = [header];
+  for (const [code, base, decimals, title] of specs) {
+    for (let i = 0; i < count; i += 1) {
+      const index = endIndex - (count - 1 - i);
+      const month = `${Math.floor(index / 12)}-${String((index % 12) + 1).padStart(2, '0')}`;
+      const value = (base + i * 0.01).toFixed(decimals);
+      lines.push(`EXR.M.${code}.EUR.SP00.A,M,${code},EUR,SP00,A,${month},${value},A,${decimals},${title} ECB reference exchange rate,"x",${code}`);
+    }
+  }
+  return lines.join('\n');
+}
+
+const MONTHLY_TEST = { ...ecb.MONTHLY_CONFIG, minimumMonths: 3 };
+
+test('ecb monthly: averages become a dataset and refuse gaps and jumps', () => {
+  const dataset = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture()), MONTHLY_TEST);
+  assert.equal(dataset.kind, 'monthly-rates');
+  assert.equal(dataset.id, 'ecb_monthly');
+  assert.equal(dataset.dataAsOf, '2026-09');
+  assert.equal(dataset.publisherDate, '2026-10-01');
+  assert.equal(dataset.series[0].key, 'EXR.M.USD.EUR.SP00.A');
+  assert.equal(dataset.series[1].decimals, 5);
+  ecb.validateMonthlyDataset(dataset, null, { now: NOW }, MONTHLY_TEST);
+  const long = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture(12)), MONTHLY_TEST);
+  long.retrievedAt = '2026-10-05T06:40:00.000Z';
+  assert.deepEqual(validateSchema(long, SCHEMAS.monthlyRates), []);
+  const jumped = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture().replace('4.3300', '5.2000')), MONTHLY_TEST);
+  rejects(() => ecb.validateMonthlyDataset(jumped, null, { now: NOW }, MONTHLY_TEST), /jump from/);
+  const gapped = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture().replaceAll('2026-08', '2026-10')), MONTHLY_TEST);
+  rejects(() => ecb.validateMonthlyDataset(gapped, null, { now: NOW }, MONTHLY_TEST), /gap of/);
+  rejects(() => ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture().replace('2026-07', '2026-07-01')), MONTHLY_TEST), /Bad month/);
+});
+
 test('windows: the stored Pink Sheet uses the same cuts', async () => {
   const pinkFile = JSON.parse(await readFile(path.join(here, '../../public/data/economy/pink-sheet.json'), 'utf8'));
   const brent = pinkFile.series.find((item) => item.id === 'brent');

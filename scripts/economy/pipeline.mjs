@@ -107,6 +107,55 @@ export const SOURCES = [
       }));
     },
   },
+  {
+    id: ecb.MONTHLY_CONFIG.id,
+    file: ecb.MONTHLY_CONFIG.file,
+    schemaName: 'monthlyRates',
+    module: {
+      fetchDataset: (context) => ecb.fetchMonthlyDataset(context),
+      validateDataset: (dataset, previous, options) => ecb.validateMonthlyDataset(dataset, previous, options),
+      ageInDays: (dataset, now) => ecb.monthlyAgeInDays(dataset, now),
+    },
+    entryStatic() {
+      return {
+        file: ecb.MONTHLY_CONFIG.file,
+        title: 'Euro foreign exchange reference rates, monthly averages',
+        frequency: 'monthly',
+        staleAfterDays: ecb.MONTHLY_CONFIG.staleAfterDays,
+        source: {
+          organisation: 'European Central Bank',
+          name: 'Euro foreign exchange reference rates, monthly (ECB Data Portal dataflow EXR)',
+          page: ecb.PAGE_URL,
+          termsUrls: [
+            'https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html',
+            'https://data.ecb.europa.eu/help/api/data',
+          ],
+        },
+        licence: {
+          name: 'ECB reuse policy for statistics of the European System of Central Banks',
+          url: 'https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html',
+          terms:
+            'Free reuse on the condition that the source is quoted ("Source: ECB statistics.") and the statistics, metadata included, are not modified. The reference rates are published for information only.',
+        },
+        attribution: { credit: 'Source: ECB statistics.', edition: null },
+        modified: false,
+        changes: [
+          'Layout only: the months are listed once and each currency has one list of values in the same order.',
+          'Each value is the number the ECB data API returns for that month. The API gives the unrounded average, which can have more digits than the DECIMALS field on the series. The page shows the number of decimals the ECB publishes. Nothing is converted, and Fix Planet adds no rate of its own.',
+        ],
+      };
+    },
+    summarize(dataset) {
+      return dataset.series.map((item) => ({
+        id: item.id,
+        name: item.name,
+        unit: item.unit,
+        first: dataset.months[0],
+        last: dataset.months[dataset.months.length - 1],
+        count: item.values.length,
+      }));
+    },
+  },
 ];
 
 /** The stored data without the retrieval time, so a quiet day makes no change. */
