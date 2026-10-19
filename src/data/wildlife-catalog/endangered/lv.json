@@ -405,6 +405,318 @@
           }
         ]
       }
+    },
+    "asian-elephant": {
+      "commonName": "Āzijas zilonis",
+      "hook": "Lielākais Āzijas sauszemes dzīvnieks, meža milzis ar nelielām ausīm un kupolveida galvu.",
+      "imageAlt": "Āzijas ziloņa tēviņš ar gariem baltiem ilkņiem iet cauri zaļam pamežam",
+      "what": "Āzijas zilonis (Elephas maximus) ir lielākais sauszemes dzīvnieks Āzijā. Tam ir mazākas ausis nekā Āfrikas ziloņiem, galva ar diviem izciļņiem un viens pirkstveida izaugums snuķa galā, un ilkņi parasti ir tikai tēviņiem. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Dienvidāzijas un Dienvidaustrumāzijas meži un zālāji no Indijas un Šrilankas līdz Borneo un Sumatrai.",
+      "story": "Cilvēki Āzijas ziloņus pieradina un strādā ar tiem jau kopš senatnes, un daudzi joprojām dzīvo pie tempļiem, nometnēs un mežizstrādē. Savvaļas ganāmpulkiem vajag plašus mežus, bet lauki, ceļi un pilsētas tos sadala arvien mazākos gabalos.",
+      "when": "Tagad stipri apdraudēts, savvaļas ganāmpulki palikuši izkaisītos mežos.",
+      "humanRole": "To apdraud mežu izciršana un sadrumstalošana, konflikti ar zemniekiem un malumedniecība ziloņkaula dēļ.",
+      "sources": [
+        {
+          "label": "Vidžajanto un līdzautori, 2021, žurnāls Biodiversitas: Sumatras ziloņu ķermeņa izmēri (Wijayanto et al. 2021, Biodiversitas 22(7): body measurements of Sumatran elephants)",
+          "url": "https://smujo.id/biodiv/article/download/8437/4926/44067"
+        },
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Āzijas zilonis (Animal Diversity Web: Elephas maximus)",
+          "url": "https://animaldiversity.org/accounts/Elephas_maximus/"
+        },
+        {
+          "label": "Vikipēdija: Āzijas zilonis (Wikipedia: Asian elephant)",
+          "url": "https://en.wikipedia.org/wiki/Asian_elephant"
+        }
+      ]
+    },
+    "african-wild-dog": {
+      "commonName": "Hiēnsuns",
+      "hook": "Garkājains, raibs Āfrikas savannas mednieks, kas dzīvo un medī baros.",
+      "imageAlt": "Hiēnsuns ar raibu kažoku un baltu astes galu skrien pa smiltīm",
+      "what": "Hiēnsuns (Lycaon pictus) ir slaids, garkājains Āfrikas savvaļas suns ar lielām, apaļām ausīm un kažoku melnos, brūnos, dzeltenos un baltos plankumos, katram dzīvniekam savā rakstā. Katrai kājai ir četri pirksti. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Āfrikas savannas, zālāji un gaiši meži uz dienvidiem no Sahāras, tagad izkaisītos apgabalos, galvenokārt austrumos un dienvidos.",
+      "story": "Hiēnsuņi dzīvo baros, kuros vairojas viens pāris, bet kucēnus baro viss bars. Bari klejo pa milzīgām platībām, tāpēc bieži iziet ārpus aizsargājamām teritorijām un sastop cilvēkus, mājlopus un ceļus.",
+      "when": "Tagad stipri apdraudēts, izzudis lielākajā daļā sava agrākā areāla.",
+      "humanRole": "To apdraud dzīvotņu sarukšana un sadrumstalošana, lopkopju veikta nogalināšana, bojāeja uz ceļiem un mājas suņu pārnēsātas slimības.",
+      "sources": [
+        {
+          "label": "Organizācija African Wild Dog Conservancy: fakti par hiēnsuni (African Wild Dog Conservancy: Facts)",
+          "url": "https://www.awdconservancy.org/facts.html"
+        },
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Hiēnsuns (Animal Diversity Web: Lycaon pictus)",
+          "url": "https://animaldiversity.org/accounts/Lycaon_pictus/"
+        },
+        {
+          "label": "Vikipēdija: Hiēnsuns (Wikipedia: African wild dog)",
+          "url": "https://en.wikipedia.org/wiki/African_wild_dog"
+        }
+      ]
+    },
+    "ethiopian-wolf": {
+      "commonName": "Etiopijas vilks",
+      "hook": "Slaids, sarkanīgs Etiopijas kalnienes plēsējs, kas medī grauzējus atklātās kalnu pļavās.",
+      "imageAlt": "Etiopijas vilks ar sarkanīgu kažoku un baltu kaklu iet starp zemiem sudrabotiem krūmiņiem",
+      "what": "Etiopijas vilks (Canis simensis) ir slaids, garkājains plēsējs ar sarkanīgu kažoku, baltu kaklu un krūtīm un garu, šauru purnu. Tas dzīvo tikai Etiopijas kalnos un barojas galvenokārt ar grauzējiem. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Etiopijas kalnienes augstkalnu zālāji un tīreļi.",
+      "story": "Etiopijas vilki dzīvo ģimenes baros kopīgā teritorijā, bet grauzējus parasti medī vieni. Izdzīvojušie dzīvo mazās, viena no otras nošķirtās kalnu grupās.",
+      "when": "Tagad stipri apdraudēts, saglabājies dažos kalnu masīvos.",
+      "humanRole": "To apdraud trakumsērga un suņu mēris, ko pārnēsā mājas suņi, kā arī lauki un ganības augstkalnu zālājos.",
+      "sources": [
+        {
+          "label": "Lielbritānijas vilku aizsardzības fonds: Etiopijas vilks (UK Wolf Conservation Trust: The Ethiopian Wolf)",
+          "url": "https://ukwct.org.uk/files/ethiopian.pdf"
+        },
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Etiopijas vilks (Animal Diversity Web: Canis simensis)",
+          "url": "https://animaldiversity.org/accounts/Canis_simensis/"
+        },
+        {
+          "label": "Vikipēdija: Etiopijas vilks (Wikipedia: Ethiopian wolf)",
+          "url": "https://en.wikipedia.org/wiki/Ethiopian_wolf"
+        }
+      ]
+    },
+    "malayan-tapir": {
+      "commonName": "Āzijas tapirs",
+      "hook": "Melnbalts meža milzis ar īsu snuķīti un baltu laukumu pār muguru.",
+      "imageAlt": "Āzijas tapirs ar melnu priekšpusi, baltu vidu un melnām pakaļkājām iet pa smiltīm",
+      "what": "Āzijas tapirs (Tapirus indicus) ir lielākais no tapiriem, smags augēdājs ar īsu, lokanu snuķīti, ko veido deguns un augšlūpa. Pieaugušie ir melni priekšā un aizmugurē ar platu baltu laukumu vidū, bet mazuļi ir brūni ar gaišām svītrām un plankumiem. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Mjanmas, Taizemes, Malaizijas un Sumatras tropu meži.",
+      "story": "Tas dzīvo viens un barojas naktī ar lapām, dzinumiem un augļiem, bieži pie ūdens. Spilgtais raksts tumšajā mežā izpludina tā apveidus.",
+      "when": "Tagad stipri apdraudēts, jo tā meži sarūk.",
+      "humanRole": "To apdraud līdzenumu mežu izciršana plantācijām un laukiem, medības un bojāeja uz ceļiem.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Āzijas tapirs (Animal Diversity Web: Tapirus indicus)",
+          "url": "https://animaldiversity.org/accounts/Tapirus_indicus/"
+        },
+        {
+          "label": "Vikipēdija: Āzijas tapirs (Wikipedia: Malayan tapir)",
+          "url": "https://en.wikipedia.org/wiki/Malayan_tapir"
+        }
+      ]
+    },
+    "bairds-tapir": {
+      "commonName": "Centrālamerikas tapirs",
+      "hook": "Lielākais vietējais tropiskās Amerikas sauszemes zīdītājs, bikls augēdājs ar īsu snuķīti.",
+      "imageAlt": "Centrālamerikas tapira mātīte ar svītrainu mazuli stāv pie meža takas malas",
+      "what": "Centrālamerikas tapirs (Tapirus bairdii) ir smags, tumši brūns augēdājs ar īsu, gaļīgu snuķīti, ausīm ar baltu apmali un gaišām lūpām. Mazuļi piedzimst ar gaišām svītrām un plankumiem. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Lietus meži, mākoņu meži un purvi no Meksikas dienvidiem caur Centrālameriku līdz Panamai.",
+      "story": "Tas ēd lapas, zarus un augļus un ar mēsliem izplata daudzu meža augu sēklas. Mātīte dzemdē mazuli pēc ilgas grūsnības.",
+      "when": "Tagad stipri apdraudēts, un tā skaits joprojām samazinās.",
+      "humanRole": "To apdraud mežu izciršana laukiem un ganībām, medības un bojāeja uz ceļiem.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Centrālamerikas tapirs (Animal Diversity Web: Tapirus bairdii)",
+          "url": "https://animaldiversity.org/accounts/Tapirus_bairdii/"
+        },
+        {
+          "label": "Vikipēdija: Centrālamerikas tapirs (Wikipedia: Baird's tapir)",
+          "url": "https://en.wikipedia.org/wiki/Baird%27s_tapir"
+        }
+      ]
+    },
+    "okapi": {
+      "commonName": "Okapi",
+      "hook": "Bikls žirafes radinieks no meža ar zebrai līdzīgām svītrām uz kājām.",
+      "imageAlt": "Okapi ar tumši brūnu ķermeni un svītrainām baltām kājām stāv zālē",
+      "what": "Okapi (Okapia johnstoni) ir žirafes tuvākais dzīvais radinieks, meža dzīvnieks ar samtainu, tumši sarkanbrūnu kažoku, balti brūni svītrainām kājām un garu, tumšu mēli. Tēviņiem ir īsi, ar ādu klāti radziņi. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Kongo Demokrātiskās Republikas ziemeļaustrumu biezie lietus meži un vairs nekur citur.",
+      "story": "Eiropas zinātnieki par okapi uzzināja tikai pagājušajā gadsimtā. Tas dzīvo viens, ēd lapas saulainās meža laucēs, un savvaļā to ir ļoti grūti ieraudzīt.",
+      "when": "Tagad stipri apdraudēts, un tā skaits joprojām samazinās.",
+      "humanRole": "To apdraud medības gaļas un ādu dēļ, derīgo izrakteņu ieguve, mežizstrāde un bruņoti konflikti.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Okapi (San Diego Zoo Wildlife Alliance Library: Okapi fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/okapi/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Okapi (Wikipedia: Okapi)",
+          "url": "https://en.wikipedia.org/wiki/Okapi"
+        }
+      ]
+    },
+    "grevys-zebra": {
+      "commonName": "Tuksneša zebra",
+      "hook": "Lielākais zirgu dzimtas savvaļas pārstāvis ar šaurām svītrām, baltu vēderu un apaļām ausīm.",
+      "imageAlt": "Tuksneša zebra ar šaurām melnbaltām svītrām un lielām apaļām ausīm stāv sausos krūmos",
+      "what": "Tuksneša zebra (Equus grevyi) ir lielākā no dzīvajām zebrām un lielākais zirgu dzimtas savvaļas pārstāvis. Tai ir šauras, cieši novietotas svītras, balts vēders un lielas, noapaļotas ausis. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Kenijas ziemeļu un Etiopijas dienvidu sausie zālāji un krūmāji.",
+      "story": "Atšķirībā no citām zebrām tā nedzīvo pastāvīgās ģimenes grupās. Tēviņi sargā teritorijas pie ūdens un ganībām, bet ķēves ar kumeļiem pārvietojas starp tām.",
+      "when": "Tagad stipri apdraudēta, palicis daudz mazāk nekā agrāk.",
+      "humanRole": "To apdraud ganību un ūdens zudums mājlopu dēļ, sausums un agrākās medības ādu dēļ.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Tuksneša zebra (San Diego Zoo Wildlife Alliance Library: Grévy's zebra fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/grevyszebra/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Tuksneša zebra (Wikipedia: Grévy's zebra)",
+          "url": "https://en.wikipedia.org/wiki/Gr%C3%A9vy%27s_zebra"
+        }
+      ]
+    },
+    "pygmy-hippopotamus": {
+      "commonName": "Pundurnīlzirgs",
+      "hook": "Mazs, bikls Rietumāfrikas mežu nīlzirgs, kas dienā slēpjas purvos.",
+      "imageAlt": "Pundurnīlzirgs ar spīdīgu tumšu ādu stāv uz zemes",
+      "what": "Pundurnīlzirgs (Choeropsis liberiensis) ir mazs meža nīlzirgs ar spīdīgu tumšu ādu, mazu galvu un garākām kājām nekā tā lielajam radiniekam. Tā āda izdala sarkanīgu šķidrumu, kas to sargā no saules. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Rietumāfrikas līdzenumu meži un purvi, galvenokārt Libērijā, mazākas grupas Sjerraleonē, Gvinejā un Kotdivuārā.",
+      "story": "Tas dzīvo viens vai pa pāriem, dienā atpūšas ūdenī vai mitrās ieplakās, bet naktī iznāk baroties ar lapām, papardēm un nokritušiem augļiem gar meža takām.",
+      "when": "Tagad stipri apdraudēts, savvaļā to redz reti.",
+      "humanRole": "To apdraud mežizstrāde, derīgo izrakteņu ieguve, lauksaimniecība tā mežos un medības gaļas dēļ.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Pundurnīlzirgs (Animal Diversity Web: Choeropsis liberiensis)",
+          "url": "https://animaldiversity.org/accounts/Hexaprotodon_liberiensis/"
+        },
+        {
+          "label": "Vikipēdija: Pundurnīlzirgs (Wikipedia: Pygmy hippopotamus)",
+          "url": "https://en.wikipedia.org/wiki/Pygmy_hippopotamus"
+        }
+      ]
+    },
+    "red-panda": {
+      "commonName": "Sarkanā panda",
+      "hook": "Rūsgans kokos kāpējs no Himalaju mežiem ar kuplu, gredzenotu asti.",
+      "imageAlt": "Sarkanā panda ar rūsganu kažoku un gredzenotu asti uz zara",
+      "what": "Sarkanā panda (Ailurus fulgens) ir kaķa lieluma kokos dzīvojošs zīdītājs ar rūsgani sarkanu kažoku, baltu purniņu ar sarkanīgām svītrām zem acīm un garu, gredzenotu asti. Neraugoties uz nosaukumu, tā nav tuva lielās pandas radiniece. Tā barojas galvenokārt ar bambusa lapām. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Kalnu meži ar bambusu Nepālā, Indijā, Butānā, Mjanmā un Ķīnas dienvidrietumos.",
+      "story": "Gandrīz visu dzīvi tā pavada kokos, bet aukstumā guļ saritinājusies un ietinusies astē. Bambuss dod maz enerģijas, tāpēc tā pārvietojas lēni un lielāko dienas daļu atpūšas.",
+      "when": "Tagad stipri apdraudēta, jo tās meži sarūk un sadalās.",
+      "humanRole": "To apdraud mežu zudums un sadrumstalošana, malumedniecība un ķeršana mājdzīvnieku tirdzniecībai.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Sarkanā panda (San Diego Zoo Wildlife Alliance Library: Red panda fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/redpanda/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Sarkanā panda (Wikipedia: Red panda)",
+          "url": "https://en.wikipedia.org/wiki/Red_panda"
+        }
+      ]
+    },
+    "bonobo": {
+      "commonName": "Bonobo",
+      "hook": "Slaids cilvēkpērtiķis no Kongo mežiem, viens no diviem cilvēka tuvākajiem dzīvajiem radiniekiem.",
+      "imageAlt": "Bonobo ar garu melnu spalvu starp zaļām lapām",
+      "what": "Bonobo (Pan paniscus) ir cilvēkpērtiķis ar melnu seju, garu, smalku melnu spalvu un garām kājām, slaidāks par parasto šimpanzi. Kopā ar šimpanzi tas ir cilvēka tuvākais dzīvais radinieks. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Līdzenumu lietus meži uz dienvidiem no Kongo upes Kongo Demokrātiskajā Republikā un vairs nekur citur.",
+      "story": "Bonobo dzīvo lielās grupās, kurās daudz nosaka mātītes, un spriedzi bieži mazina ar draudzīgiem pieskārieniem. Pētnieki redzējuši, kā tie ēd noteiktas lapas, kas tiem palīdz pret zarnu parazītiem.",
+      "when": "Tagad stipri apdraudēts, un tā skaits joprojām samazinās.",
+      "humanRole": "To apdraud medības gaļas dēļ, mežu izciršana un kari tā izplatības apgabalā.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Bonobo (San Diego Zoo Wildlife Alliance Library: Bonobo fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/bonobo/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Bonobo (Wikipedia: Bonobo)",
+          "url": "https://en.wikipedia.org/wiki/Bonobo"
+        }
+      ]
+    },
+    "tasmanian-devil": {
+      "commonName": "Tasmanijas velns",
+      "hook": "Lielākais dzīvais plēsīgais somainis, drukns melns Tasmānijas maitēdājs ar spēcīgu kodienu.",
+      "imageAlt": "Tasmanijas velns ar melnu kažoku un baltu plankumu uz krūtīm",
+      "what": "Tasmanijas velns (Sarcophilus harrisii) ir drukns somainis ar melnu kažoku, neliela suņa lielumā, bieži ar baltiem plankumiem uz krūtīm un krustiem. Masīvā galva un spēcīgie žokļi ļauj tam sakost kaulus. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Meži, mežaudzes un lauksaimniecības zemes visā Tasmānijas salā Austrālijā.",
+      "story": "Velni medī mazus dzīvniekus, bet biežāk ēd maitu, un pie vienas maltītes var trokšņaini sapulcēties vairāki. Austrālijas kontinentā tie izzuda sen un saglabājās tikai Tasmānijā.",
+      "when": "Tagad stipri apdraudēts pēc straujas samazināšanās pēdējās desmitgadēs.",
+      "humanRole": "Lipīgs sejas audzējs nogalinājis lielāko daļu velnu, un bojāeja uz ceļiem un krūmāju zudums zaudējumus palielina.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Tasmanijas velns (San Diego Zoo Wildlife Alliance Library: Tasmanian devil fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/tasmaniandevil/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Tasmanijas velns (Wikipedia: Tasmanian devil)",
+          "url": "https://en.wikipedia.org/wiki/Tasmanian_devil"
+        }
+      ]
+    },
+    "gharial": {
+      "commonName": "Gangas gaviāls",
+      "hook": "Zivēdājs krokodils no Indijas upēm ar ārkārtīgi garu un tievu purnu.",
+      "imageAlt": "Gangas gaviāla tēviņš ar garu, šauru purnu un izaugumu tā galā",
+      "what": "Gangas gaviāls (Gavialis gangeticus) ir viens no garākajiem krokodiliem ar ļoti garu, šauru purnu un asiem zobiem zivju ķeršanai. Pieaugušiem tēviņiem purna galā izaug apaļš izaugums. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «kritiski apdraudēta suga».",
+      "range": "Lielas, smilšainas upes Indijas ziemeļos un Nepālā, piemēram, Čambala un Girva.",
+      "story": "Gaviāli reti iznāk no ūdens, izņemot lai sasildītos un dētu olas smilšu sēkļos, jo to kājas ir pārāk vājas sauszemei. Izaugums uz tēviņa purna palīdz tam riesta laikā dūkt un laist burbuļus.",
+      "when": "Tagad kritiski apdraudēts, saglabājies dažos upju posmos.",
+      "humanRole": "To apdraud aizsprosti, smilts ieguve, noslīkšana zvejas tīklos un ligzdošanai derīgo smilšu sēkļu zudums.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Gangas gaviāls (San Diego Zoo Wildlife Alliance Library: Gharial fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/gharial/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Gangas gaviāls (Wikipedia: Gharial)",
+          "url": "https://en.wikipedia.org/wiki/Gharial"
+        }
+      ]
+    },
+    "komodo-dragon": {
+      "commonName": "Komodo varāns",
+      "hook": "Lielākā dzīvā ķirzaka, smags mednieks dažās nelielās Indonēzijas salās.",
+      "imageAlt": "Komodo varāns ar raupjām pelēkbrūnām zvīņām uz zemes",
+      "what": "Komodo varāns (Varanus komodoensis) ir lielākā no dzīvajām ķirzakām, smags varāns ar raupjām zvīņām, spēcīgām kājām un garu, muskuļotu asti. Mazuļi ir zaļi ar dzeltenām un melnām joslām, bet pieaugušie ir blāvi brūni līdz pelēcīgi sarkani. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Komodo, Rinčas, Floresas un dažu tuvējo Indonēzijas salu sausie zālāji un meži.",
+      "story": "Komodo varāni uzglūn briežiem, cūkām un bifeļiem un ēd arī maitu, ko saož no tālienes. Mazuļi agrā vecumā dzīvo kokos, prom no pieaugušajiem.",
+      "when": "Tagad stipri apdraudēts, tikai dažās salās.",
+      "humanRole": "To apdraud dzīvotņu zudums Floresā, malumedniecība uz tā laupījumu un jūras līmeņa celšanās klimata sasilšanas dēļ.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Komodo varāns (San Diego Zoo Wildlife Alliance Library: Komodo dragon fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/komododragon/characteristics"
+        },
+        {
+          "label": "Vikipēdija: Komodo varāns (Wikipedia: Komodo dragon)",
+          "url": "https://en.wikipedia.org/wiki/Komodo_dragon"
+        }
+      ]
+    },
+    "philippine-eagle": {
+      "commonName": "Pithecophaga jefferyi",
+      "hook": "Viens no lielākajiem un spēcīgākajiem ērgļiem, cekulains Filipīnu mežu mednieks.",
+      "imageAlt": "Liels ērglis ar izspūrušu cekulu, gaišām krūtīm un āķveida knābi",
+      "what": "Šis ērglis (Pithecophaga jefferyi) ir viens no lielākajiem ērgļiem pasaulē ar izspūrušu cekulu, brūnu muguru, baltu apakšpusi un augstu, izliektu zilganpelēku knābi. Tas medī vecos lietus mežos pērtiķus un citus dzīvniekus un ir Filipīnu nacionālais putns. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «kritiski apdraudēta suga».",
+      "range": "Filipīnu Mindanao, Lusonas, Samaras un Leites salu vecie lietus meži.",
+      "story": "Pāris audzina cāli lēni un baro to daudzus mēnešus, tāpēc skaits pieaug ļoti lēni. Katram pārim vajag lielu veca meža platību, lai atrastu pietiekami daudz laupījuma.",
+      "when": "Tagad kritiski apdraudēts, palicis ļoti maz pāru.",
+      "humanRole": "To apdraud līdzenumu lietus mežu izciršana, šaušana un ķeršana slazdos.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Pithecophaga jefferyi (Animal Diversity Web: Pithecophaga jefferyi)",
+          "url": "https://animaldiversity.org/accounts/Pithecophaga_jefferyi/"
+        },
+        {
+          "label": "Vikipēdija: Pithecophaga jefferyi (Wikipedia: Philippine eagle)",
+          "url": "https://en.wikipedia.org/wiki/Philippine_eagle"
+        }
+      ]
+    },
+    "great-indian-bustard": {
+      "commonName": "Ardeotis nigriceps",
+      "hook": "Viens no smagākajiem putniem, kas spēj lidot, garkājains Indijas zālāju putns.",
+      "imageAlt": "Liels putns ar garu baltu kaklu, melnu cepurīti un brūnu muguru sausā zālē",
+      "what": "Šis putns (Ardeotis nigriceps) ir liels, garkājains zemes putns ar baltu kaklu, melnu cepurīti uz galvas un brūnu muguru. Tas ir apmēram metru augsts un pieder pie smagākajiem putniem, kas spēj lidot. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «kritiski apdraudēta suga».",
+      "range": "Indijas rietumu un centrālās daļas sausie zālāji un pustuksneši, galvenokārt Radžastānā.",
+      "story": "Tēviņi uzpūš rīkles maisu un izdod dobjas, dunošas skaņas, lai pievilinātu mātītes. Smagie un lidojumā neveiklie putni bieži ietriecas elektrolīnijās, kas tagad šķērso to zālājus.",
+      "when": "Tagad kritiski apdraudēts, palikuši ļoti maz putnu.",
+      "humanRole": "Līdz iznīcības robežai to novedušas sadursmes ar elektrolīnijām, zālāju pārvēršana laukos un agrākās medības.",
+      "sources": [
+        {
+          "label": "Starptautiskā dabas aizsardzības savienība: Lielie putni zaudē pārapdzīvotā pasaulē (International Union for Conservation of Nature: Big birds lose out in a crowded world)",
+          "url": "https://iucn.org/content/big-birds-lose-out-a-crowded-world"
+        },
+        {
+          "label": "Vikipēdija: Ardeotis nigriceps (Wikipedia: Great Indian bustard)",
+          "url": "https://en.wikipedia.org/wiki/Great_Indian_bustard"
+        }
+      ]
     }
   }
 }

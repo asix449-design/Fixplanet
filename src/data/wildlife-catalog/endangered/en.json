@@ -402,6 +402,318 @@
           }
         ]
       }
+    },
+    "asian-elephant": {
+      "commonName": "Asian elephant",
+      "hook": "The largest land animal of Asia, a forest giant with small ears and a domed head.",
+      "imageAlt": "An Asian elephant bull with long white tusks walking through green undergrowth",
+      "what": "The Asian elephant (Elephas maximus) is the largest land animal in Asia. It has smaller ears than African elephants, a head with two domes and one finger like tip on its trunk, and usually only males carry tusks. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Forests and grasslands of South and Southeast Asia, from India and Sri Lanka to Borneo and Sumatra.",
+      "story": "People have tamed and worked with Asian elephants since ancient times, and many still live at temples, in camps and in timber work. Wild herds need large forests, which farms, roads and towns cut into ever smaller pieces.",
+      "when": "Endangered now, with wild herds left in scattered forests.",
+      "humanRole": "Loss and breakup of its forests, conflict with farmers and poaching for ivory threaten it.",
+      "sources": [
+        {
+          "label": "Wijayanto et al. 2021, Biodiversitas 22(7): body measurements of Sumatran elephants",
+          "url": "https://smujo.id/biodiv/article/download/8437/4926/44067"
+        },
+        {
+          "label": "Animal Diversity Web: Elephas maximus",
+          "url": "https://animaldiversity.org/accounts/Elephas_maximus/"
+        },
+        {
+          "label": "Wikipedia: Asian elephant",
+          "url": "https://en.wikipedia.org/wiki/Asian_elephant"
+        }
+      ]
+    },
+    "african-wild-dog": {
+      "commonName": "African wild dog",
+      "hook": "A long legged painted hunter of the African savanna that lives and hunts in packs.",
+      "imageAlt": "An African wild dog with a blotched coat and white tipped tail trotting across sand",
+      "what": "The African wild dog (Lycaon pictus) is a lean, long legged wild dog of Africa with large round ears and a coat blotched in black, brown, yellow and white, different on every animal. It has four toes on each foot. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Savannas, grasslands and open woodlands of Africa south of the Sahara, now in scattered areas, mostly in the east and south.",
+      "story": "Wild dogs live in packs led by one breeding pair, and the whole pack helps to feed the pups. Packs roam over huge areas, so they often leave protected parks and meet people, livestock and roads.",
+      "when": "Endangered now, gone from most of its former range.",
+      "humanRole": "Shrinking and divided habitat, killing by farmers, road deaths and diseases caught from domestic dogs threaten it.",
+      "sources": [
+        {
+          "label": "African Wild Dog Conservancy: Facts",
+          "url": "https://www.awdconservancy.org/facts.html"
+        },
+        {
+          "label": "Animal Diversity Web: Lycaon pictus",
+          "url": "https://animaldiversity.org/accounts/Lycaon_pictus/"
+        },
+        {
+          "label": "Wikipedia: African wild dog",
+          "url": "https://en.wikipedia.org/wiki/African_wild_dog"
+        }
+      ]
+    },
+    "ethiopian-wolf": {
+      "commonName": "Ethiopian wolf",
+      "hook": "A slender red wolf of the Ethiopian highlands that hunts rodents on open moorland.",
+      "imageAlt": "An Ethiopian wolf with a red coat and white throat walking among low silvery shrubs",
+      "what": "The Ethiopian wolf (Canis simensis) is a slender, long legged wild dog with a reddish coat, a white throat and chest and a long narrow muzzle. It lives only in the mountains of Ethiopia and feeds mostly on rodents. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "High mountain grasslands and moors of the Ethiopian highlands.",
+      "story": "Ethiopian wolves live in family packs that share a territory, but each wolf usually hunts rodents alone. The wolves that remain live in small mountain groups cut off from each other.",
+      "when": "Endangered now, in a handful of mountain ranges.",
+      "humanRole": "Rabies and distemper caught from domestic dogs, and farming and grazing on its high grasslands threaten it.",
+      "sources": [
+        {
+          "label": "UK Wolf Conservation Trust: The Ethiopian Wolf",
+          "url": "https://ukwct.org.uk/files/ethiopian.pdf"
+        },
+        {
+          "label": "Animal Diversity Web: Canis simensis",
+          "url": "https://animaldiversity.org/accounts/Canis_simensis/"
+        },
+        {
+          "label": "Wikipedia: Ethiopian wolf",
+          "url": "https://en.wikipedia.org/wiki/Ethiopian_wolf"
+        }
+      ]
+    },
+    "malayan-tapir": {
+      "commonName": "Malayan tapir",
+      "hook": "A black and white forest giant with a short trunk and a white saddle across its back.",
+      "imageAlt": "A Malayan tapir with a black front, white middle and black hind legs walking on sandy ground",
+      "what": "The Malayan tapir (Tapirus indicus) is the largest of the tapirs, a heavy plant eater with a short, flexible trunk formed by the nose and upper lip. Adults are black at the front and back with a broad white saddle, while the young are brown with pale stripes and spots. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Tropical forests of Myanmar, Thailand, Malaysia and Sumatra.",
+      "story": "It lives alone and feeds at night on leaves, shoots and fruit, often near water. Its bold pattern breaks up its outline in the dark forest.",
+      "when": "Endangered now, as its forests shrink.",
+      "humanRole": "Clearing of lowland forest for plantations and farms, hunting and road deaths threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Tapirus indicus",
+          "url": "https://animaldiversity.org/accounts/Tapirus_indicus/"
+        },
+        {
+          "label": "Wikipedia: Malayan tapir",
+          "url": "https://en.wikipedia.org/wiki/Malayan_tapir"
+        }
+      ]
+    },
+    "bairds-tapir": {
+      "commonName": "Baird's tapir",
+      "hook": "The largest native land mammal of tropical America, a shy plant eater with a short trunk.",
+      "imageAlt": "A Baird's tapir mother and her striped young standing at the edge of a forest path",
+      "what": "Baird's tapir (Tapirus bairdii) is a heavy, dark brown plant eater with a short, fleshy trunk, white edged ears and pale lips. Its young are born with light stripes and spots. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Rainforests, cloud forests and swamps from southern Mexico through Central America to Panama.",
+      "story": "It feeds on leaves, twigs and fruit and spreads the seeds of many forest plants in its dung. Females give birth to their young after a long pregnancy.",
+      "when": "Endangered now, and its numbers keep falling.",
+      "humanRole": "Forest clearing for farms and cattle, hunting and road deaths threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Tapirus bairdii",
+          "url": "https://animaldiversity.org/accounts/Tapirus_bairdii/"
+        },
+        {
+          "label": "Wikipedia: Baird's tapir",
+          "url": "https://en.wikipedia.org/wiki/Baird%27s_tapir"
+        }
+      ]
+    },
+    "okapi": {
+      "commonName": "Okapi",
+      "hook": "A shy forest relative of the giraffe with zebra like stripes on its legs.",
+      "imageAlt": "An okapi with a dark brown body and striped white legs standing on grass",
+      "what": "The okapi (Okapia johnstoni) is the closest living relative of the giraffe, a forest animal with a velvety dark reddish brown coat, white and brown striped legs and a long dark tongue. Males have short horns covered in skin. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Dense rainforests of the northeast of the Democratic Republic of the Congo, and nowhere else.",
+      "story": "Scientists in Europe learned of the okapi only in the last century. It lives alone, browses on leaves in sunny gaps of the forest and is very hard to see in the wild.",
+      "when": "Endangered now, and still falling in number.",
+      "humanRole": "Hunting for meat and skins, mining, logging and armed conflict in its forests threaten it.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Okapi fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/okapi/characteristics"
+        },
+        {
+          "label": "Wikipedia: Okapi",
+          "url": "https://en.wikipedia.org/wiki/Okapi"
+        }
+      ]
+    },
+    "grevys-zebra": {
+      "commonName": "Grévy's zebra",
+      "hook": "The largest wild member of the horse family, with narrow stripes, a white belly and round ears.",
+      "imageAlt": "A Grevy's zebra with narrow black and white stripes and large round ears standing in dry bush",
+      "what": "Grévy's zebra (Equus grevyi) is the largest living zebra and the largest wild member of the horse family. Its stripes are narrow and close together, its belly is white and its ears are large and rounded. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Dry grasslands and bush of northern Kenya and southern Ethiopia.",
+      "story": "Unlike other zebras, it does not live in fixed family groups. Males guard territories around water and grazing, and mares with foals move between them.",
+      "when": "Endangered now, with far fewer left than in the past.",
+      "humanRole": "Loss of grazing and water to livestock, droughts and past hunting for its skin threaten it.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Grévy's zebra fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/grevyszebra/characteristics"
+        },
+        {
+          "label": "Wikipedia: Grévy's zebra",
+          "url": "https://en.wikipedia.org/wiki/Gr%C3%A9vy%27s_zebra"
+        }
+      ]
+    },
+    "pygmy-hippopotamus": {
+      "commonName": "Pygmy hippopotamus",
+      "hook": "A small, shy hippo of West African forests that hides in swamps by day.",
+      "imageAlt": "A pygmy hippopotamus with shiny dark skin standing on the ground",
+      "what": "The pygmy hippopotamus (Choeropsis liberiensis) is a small forest hippo with glossy dark skin, a small head and longer legs than its big relative. Its skin gives off a reddish fluid that protects it from the sun. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Lowland forests and swamps of West Africa, mostly in Liberia, with smaller groups in Sierra Leone, Guinea and Côte d'Ivoire.",
+      "story": "It lives alone or in pairs, rests in water or wet hollows by day and comes out at night to feed on leaves, ferns and fallen fruit along forest paths.",
+      "when": "Endangered now, and rarely seen in the wild.",
+      "humanRole": "Logging, mining, farming in its forests and hunting for bushmeat threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Choeropsis liberiensis",
+          "url": "https://animaldiversity.org/accounts/Hexaprotodon_liberiensis/"
+        },
+        {
+          "label": "Wikipedia: Pygmy hippopotamus",
+          "url": "https://en.wikipedia.org/wiki/Pygmy_hippopotamus"
+        }
+      ]
+    },
+    "red-panda": {
+      "commonName": "Red panda",
+      "hook": "A rusty red tree climber of Himalayan forests with a ringed bushy tail.",
+      "imageAlt": "A red panda with rusty fur and a ringed tail on a branch",
+      "what": "The red panda (Ailurus fulgens) is a cat sized tree dwelling mammal with rusty red fur, a white face with reddish tear marks and a long ringed tail. In spite of its name it is no close relative of the giant panda. It feeds mostly on bamboo leaves. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Mountain forests with bamboo in Nepal, India, Bhutan, Myanmar and southwestern China.",
+      "story": "It spends most of its life in trees and in cold weather sleeps curled up with its tail wrapped round its body. Bamboo gives little energy, so it moves slowly and rests for much of the day.",
+      "when": "Endangered now, as its forests shrink and split.",
+      "humanRole": "Forest loss and breakup, poaching and capture for the pet trade threaten it.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Red panda fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/redpanda/characteristics"
+        },
+        {
+          "label": "Wikipedia: Red panda",
+          "url": "https://en.wikipedia.org/wiki/Red_panda"
+        }
+      ]
+    },
+    "bonobo": {
+      "commonName": "Bonobo",
+      "hook": "A slender great ape of the Congo forests and one of the two closest living relatives of humans.",
+      "imageAlt": "A bonobo with long black hair among green leaves",
+      "what": "The bonobo (Pan paniscus) is a great ape with a black face, long fine black hair and long legs, slimmer in build than the common chimpanzee. Together with the chimpanzee it is the closest living relative of humans. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Lowland rainforests south of the Congo River in the Democratic Republic of the Congo, and nowhere else.",
+      "story": "Bonobos live in large groups in which females hold much of the power, and they often ease tension with friendly contact. Researchers have seen them eat certain leaves that help them against gut parasites.",
+      "when": "Endangered now and still declining.",
+      "humanRole": "Hunting for bushmeat, forest clearing and war in its range threaten it.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Bonobo fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/bonobo/characteristics"
+        },
+        {
+          "label": "Wikipedia: Bonobo",
+          "url": "https://en.wikipedia.org/wiki/Bonobo"
+        }
+      ]
+    },
+    "tasmanian-devil": {
+      "commonName": "Tasmanian devil",
+      "hook": "The largest living meat eating marsupial, a stocky black scavenger of Tasmania with a powerful bite.",
+      "imageAlt": "A Tasmanian devil with black fur and a white chest mark",
+      "what": "The Tasmanian devil (Sarcophilus harrisii) is a stocky, black furred marsupial the size of a small dog, often with white marks on the chest and rump. Its massive head and strong jaws let it crush bones. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Forests, woodlands and farmland across the island of Tasmania, Australia.",
+      "story": "Devils hunt small animals but mostly feed on carcasses, and several may gather noisily at one meal. They vanished from mainland Australia long ago and survived only on Tasmania.",
+      "when": "Endangered now, after a fast decline in recent decades.",
+      "humanRole": "A contagious facial cancer has killed most devils, and road deaths and the loss of bushland add to the toll.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Tasmanian devil fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/tasmaniandevil/characteristics"
+        },
+        {
+          "label": "Wikipedia: Tasmanian devil",
+          "url": "https://en.wikipedia.org/wiki/Tasmanian_devil"
+        }
+      ]
+    },
+    "gharial": {
+      "commonName": "Gharial",
+      "hook": "A fish eating crocodilian of Indian rivers with an extremely long, thin snout.",
+      "imageAlt": "A male gharial with a long narrow snout and a knob on its tip",
+      "what": "The gharial (Gavialis gangeticus) is one of the longest crocodilians, with a very long, narrow snout lined with sharp teeth for catching fish. Adult males grow a rounded knob on the tip of the snout. The International Union for Conservation of Nature lists it as Critically Endangered.",
+      "range": "Large, sandy rivers of northern India and Nepal, such as the Chambal and the Girwa.",
+      "story": "Gharials rarely leave the water except to bask and nest on sandbanks, because their legs are too weak to carry them well on land. The knob on the male's snout helps it make buzzing sounds and bubbles during courtship.",
+      "when": "Critically Endangered now, in a few stretches of river.",
+      "humanRole": "Dams, sand mining, drowning in fishing nets and the loss of nesting sandbanks threaten it.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Gharial fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/gharial/characteristics"
+        },
+        {
+          "label": "Wikipedia: Gharial",
+          "url": "https://en.wikipedia.org/wiki/Gharial"
+        }
+      ]
+    },
+    "komodo-dragon": {
+      "commonName": "Komodo dragon",
+      "hook": "The largest living lizard, a heavy hunter of a few small Indonesian islands.",
+      "imageAlt": "A Komodo dragon with rough grey brown scales on the ground",
+      "what": "The Komodo dragon (Varanus komodoensis) is the largest living lizard, a heavy monitor with rough scales, strong legs and a long muscular tail. Young dragons are green with yellow and black bands, and adults are dull brown to greyish red. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Dry grasslands and forests of Komodo, Rinca, Flores and a few nearby islands in Indonesia.",
+      "story": "Komodo dragons ambush deer, pigs and water buffalo and also eat carrion, which they can smell from far away. The young spend their early life in trees, out of reach of the adults.",
+      "when": "Endangered now, on only a handful of islands.",
+      "humanRole": "Loss of habitat on Flores, poaching of its prey and rising seas from a warming climate threaten it.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Komodo dragon fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/komododragon/characteristics"
+        },
+        {
+          "label": "Wikipedia: Komodo dragon",
+          "url": "https://en.wikipedia.org/wiki/Komodo_dragon"
+        }
+      ]
+    },
+    "philippine-eagle": {
+      "commonName": "Philippine eagle",
+      "hook": "One of the largest and most powerful eagles, a crested forest hunter of the Philippines.",
+      "imageAlt": "A Philippine eagle with a shaggy crest, pale chest and hooked bill",
+      "what": "The Philippine eagle (Pithecophaga jefferyi) is one of the largest eagles in the world, with a shaggy crest, a brown back, a white underside and a deep, arched blue grey bill. It hunts in old rainforest, taking flying lemurs, monkeys and other animals, and it is the national bird of the Philippines. The International Union for Conservation of Nature lists it as Critically Endangered.",
+      "range": "Old rainforests of Mindanao, Luzon, Samar and Leyte in the Philippines.",
+      "story": "A pair raises its chick slowly and feeds it for many months, so numbers grow very slowly. Each pair needs a large area of old forest to find enough prey.",
+      "when": "Critically Endangered now, with very few pairs left.",
+      "humanRole": "Clearing of lowland rainforest, shooting and trapping threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Pithecophaga jefferyi",
+          "url": "https://animaldiversity.org/accounts/Pithecophaga_jefferyi/"
+        },
+        {
+          "label": "Wikipedia: Philippine eagle",
+          "url": "https://en.wikipedia.org/wiki/Philippine_eagle"
+        }
+      ]
+    },
+    "great-indian-bustard": {
+      "commonName": "Great Indian bustard",
+      "hook": "One of the heaviest flying birds, a tall grassland bustard of India.",
+      "imageAlt": "A great Indian bustard with a long white neck, black crown and brown back in dry grass",
+      "what": "The great Indian bustard (Ardeotis nigriceps) is a large, long legged ground bird with a white neck, a black cap and a brown back. It stands about a metre tall and is among the heaviest birds that can fly. The International Union for Conservation of Nature lists it as Critically Endangered.",
+      "range": "Dry grasslands and semi desert of western and central India, mostly in Rajasthan.",
+      "story": "Males puff up a throat pouch and give deep booming calls to attract females. Heavy and slow to turn in the air, bustards often fly into the power lines that now cross their grasslands.",
+      "when": "Critically Endangered now, with only a small number of birds left.",
+      "humanRole": "Collisions with power lines, the loss of grasslands to farms and past hunting have brought it to the edge.",
+      "sources": [
+        {
+          "label": "International Union for Conservation of Nature: Big birds lose out in a crowded world",
+          "url": "https://iucn.org/content/big-birds-lose-out-a-crowded-world"
+        },
+        {
+          "label": "Wikipedia: Great Indian bustard",
+          "url": "https://en.wikipedia.org/wiki/Great_Indian_bustard"
+        }
+      ]
     }
   }
 }

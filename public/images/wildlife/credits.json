@@ -935,5 +935,110 @@
     "artist": "Ra'ike / Wikimedia Commons",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teufelsh%C3%B6hle-H%C3%B6hlenb%C3%A4r-Dreiviertelprofil.jpg"
+  },
+  {
+    "slug": "asian-elephant",
+    "file": "asian-elephant.webp",
+    "artist": "Yathin S Krishnappa / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elephas_maximus_(Bandipur).jpg"
+  },
+  {
+    "slug": "african-wild-dog",
+    "file": "african-wild-dog.webp",
+    "artist": "AfricanConservation / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Wild_Dog_at_Working_with_Wildlife.jpg"
+  },
+  {
+    "slug": "ethiopian-wolf",
+    "file": "ethiopian-wolf.webp",
+    "artist": "Charles J. Sharp / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii).jpg"
+  },
+  {
+    "slug": "malayan-tapir",
+    "file": "malayan-tapir.webp",
+    "artist": "Rufus46 / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schabrackentapir_Tapirus_indicus_Tiergarten-Nuernberg-1.jpg"
+  },
+  {
+    "slug": "bairds-tapir",
+    "file": "bairds-tapir.webp",
+    "artist": "Rhododendrites / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baird%27s_tapir_mother_with_baby_(92151).jpg"
+  },
+  {
+    "slug": "okapi",
+    "file": "okapi.webp",
+    "artist": "Daniel Jolivet / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg"
+  },
+  {
+    "slug": "grevys-zebra",
+    "file": "grevys-zebra.webp",
+    "artist": "Jesse Hull / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equus_grevyi_in_Samburu.jpg"
+  },
+  {
+    "slug": "pygmy-hippopotamus",
+    "file": "pygmy-hippopotamus.webp",
+    "artist": "Bardrock / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG"
+  },
+  {
+    "slug": "red-panda",
+    "file": "red-panda.webp",
+    "artist": "Sunuwargr / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg"
+  },
+  {
+    "slug": "bonobo",
+    "file": "bonobo.webp",
+    "artist": "DBeaune / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Les_bonobos_utilisent_certaines_feuilles_aux_vertus_pharmacologique_contre_leurs_parasites_intestinaux.jpg"
+  },
+  {
+    "slug": "tasmanian-devil",
+    "file": "tasmanian-devil.webp",
+    "artist": "JJ Harrison / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg"
+  },
+  {
+    "slug": "gharial",
+    "file": "gharial.webp",
+    "artist": "Charles J. Sharp / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gharial_(Gavialis_gangeticus)_male.jpg"
+  },
+  {
+    "slug": "komodo-dragon",
+    "file": "komodo-dragon.webp",
+    "artist": "James Jolokia / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg"
+  },
+  {
+    "slug": "philippine-eagle",
+    "file": "philippine-eagle.webp",
+    "artist": "Olympus Gene Tibubos / Wikimedia Commons",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PH_Eagle_PamarayegIII.jpg"
+  },
+  {
+    "slug": "great-indian-bustard",
+    "file": "great-indian-bustard.webp",
+    "artist": "Original: SVKMBFLY; this edit: MPF / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ardeotis_nigriceps,_Desert_National_Park,_Rajasthan,_India_1.jpg"
   }
 ]

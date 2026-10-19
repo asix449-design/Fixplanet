@@ -1446,6 +1446,1407 @@
         "migratedFrom": "speciesMeta",
         "suppliedBy": []
       }
+    },
+    {
+      "slug": "asian-elephant",
+      "scientificName": "Elephas maximus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Proboscidea",
+        "family": "Elephantidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/7140/45818198",
+        "iucnTaxonId": "7140"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "IN",
+            "LK",
+            "NP",
+            "BD",
+            "BT",
+            "MM",
+            "TH",
+            "KH",
+            "LA",
+            "VN",
+            "CN",
+            "MY",
+            "ID"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.7485,
+          "unit": "m",
+          "mean": 2.7485,
+          "confidence": "single_source",
+          "basis": "body length without the trunk and tusks",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "em-wijayanto-bl",
+              "url": "https://smujo.id/biodiv/article/download/8437/4926/44067",
+              "title": "Wijayanto et al. 2021, Biodiversitas 22(7), Sumatran elephants, 53 adults",
+              "use": "counted",
+              "unit": "cm",
+              "value": 274.85
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "asian-elephant.webp",
+        "kind": "photo",
+        "credit": "Yathin S Krishnappa / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elephas_maximus_(Bandipur).jpg",
+        "width": 737,
+        "height": 491,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wijayanto et al. 2021, Biodiversitas 22(7): body measurements of Sumatran elephants",
+          "url": "https://smujo.id/biodiv/article/download/8437/4926/44067"
+        },
+        {
+          "label": "Animal Diversity Web: Elephas maximus",
+          "url": "https://animaldiversity.org/accounts/Elephas_maximus/"
+        },
+        {
+          "label": "Wikipedia: Asian elephant",
+          "url": "https://en.wikipedia.org/wiki/Asian_elephant"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "african-wild-dog",
+      "scientificName": "Lycaon pictus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/12436/221299510",
+        "iucnTaxonId": "12436"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.995,
+          "unit": "m",
+          "mean": 0.995,
+          "range": [
+            0.76,
+            1.23
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "lp-awdc-hb",
+              "url": "https://www.awdconservancy.org/facts.html",
+              "title": "African Wild Dog Conservancy: Facts",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                76,
+                123
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "african-wild-dog.webp",
+        "kind": "photo",
+        "credit": "AfricanConservation / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Wild_Dog_at_Working_with_Wildlife.jpg",
+        "width": 1020,
+        "height": 574,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "African Wild Dog Conservancy: Facts",
+          "url": "https://www.awdconservancy.org/facts.html"
+        },
+        {
+          "label": "Animal Diversity Web: Lycaon pictus",
+          "url": "https://animaldiversity.org/accounts/Lycaon_pictus/"
+        },
+        {
+          "label": "Wikipedia: African wild dog",
+          "url": "https://en.wikipedia.org/wiki/African_wild_dog"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "ethiopian-wolf",
+      "scientificName": "Canis simensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/3748/10051312",
+        "iucnTaxonId": "3748"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "ET"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.92,
+          "unit": "m",
+          "mean": 0.92,
+          "range": [
+            0.84,
+            1
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "cs-ukwct-hb",
+              "url": "https://ukwct.org.uk/files/ethiopian.pdf",
+              "title": "UK Wolf Conservation Trust: The Ethiopian Wolf",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                84,
+                100
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "ethiopian-wolf.webp",
+        "kind": "photo",
+        "credit": "Charles J. Sharp / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii).jpg",
+        "width": 867,
+        "height": 578,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "UK Wolf Conservation Trust: The Ethiopian Wolf",
+          "url": "https://ukwct.org.uk/files/ethiopian.pdf"
+        },
+        {
+          "label": "Animal Diversity Web: Canis simensis",
+          "url": "https://animaldiversity.org/accounts/Canis_simensis/"
+        },
+        {
+          "label": "Wikipedia: Ethiopian wolf",
+          "url": "https://en.wikipedia.org/wiki/Ethiopian_wolf"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "malayan-tapir",
+      "scientificName": "Tapirus indicus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Tapiridae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/21472/45173636",
+        "iucnTaxonId": "21472"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "MM",
+            "TH",
+            "MY",
+            "ID"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.15,
+          "unit": "m",
+          "mean": 2.15,
+          "range": [
+            1.8,
+            2.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length as given by the source (the tail is a short stub)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ti-adw-l",
+              "url": "https://animaldiversity.org/accounts/Tapirus_indicus/",
+              "title": "Animal Diversity Web: Tapirus indicus",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                1.8,
+                2.5
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "malayan-tapir.webp",
+        "kind": "photo",
+        "credit": "Rufus46 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schabrackentapir_Tapirus_indicus_Tiergarten-Nuernberg-1.jpg",
+        "width": 1020,
+        "height": 710,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Tapirus indicus",
+          "url": "https://animaldiversity.org/accounts/Tapirus_indicus/"
+        },
+        {
+          "label": "Wikipedia: Malayan tapir",
+          "url": "https://en.wikipedia.org/wiki/Malayan_tapir"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bairds-tapir",
+      "scientificName": "Tapirus bairdii",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Tapiridae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/21471/45173340",
+        "iucnTaxonId": "21471"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "MX",
+            "GT",
+            "BZ",
+            "HN",
+            "NI",
+            "CR",
+            "PA"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.15,
+          "unit": "m",
+          "mean": 2.15,
+          "range": [
+            1.8,
+            2.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "tb-adw-hb",
+              "url": "https://animaldiversity.org/accounts/Tapirus_bairdii/",
+              "title": "Animal Diversity Web: Tapirus bairdii",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                180,
+                250
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "bairds-tapir.webp",
+        "kind": "photo",
+        "credit": "Rhododendrites / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baird%27s_tapir_mother_with_baby_(92151).jpg",
+        "width": 626,
+        "height": 443,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Tapirus bairdii",
+          "url": "https://animaldiversity.org/accounts/Tapirus_bairdii/"
+        },
+        {
+          "label": "Wikipedia: Baird's tapir",
+          "url": "https://en.wikipedia.org/wiki/Baird%27s_tapir"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "okapi",
+      "scientificName": "Okapia johnstoni",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Giraffidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15188/51140517",
+        "iucnTaxonId": "15188"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "CD"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.5,
+          "unit": "m",
+          "mean": 2.5,
+          "confidence": "single_source",
+          "basis": "body length, average of both sexes as given by the source",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "oj-sdzg-l",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/okapi/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Okapi fact sheet",
+              "use": "counted",
+              "unit": "m",
+              "value": 2.5
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "okapi.webp",
+        "kind": "photo",
+        "credit": "Daniel Jolivet / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saint-Aignan_(Loir-et-Cher)._Okapi.jpg",
+        "width": 626,
+        "height": 418,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Okapi fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/okapi/characteristics"
+        },
+        {
+          "label": "Wikipedia: Okapi",
+          "url": "https://en.wikipedia.org/wiki/Okapi"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "grevys-zebra",
+      "scientificName": "Equus grevyi",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Equidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/7950/89624491",
+        "iucnTaxonId": "7950"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "KE",
+            "ET"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.75,
+          "unit": "m",
+          "mean": 2.75,
+          "range": [
+            2.5,
+            3
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "eg-sdzg-hb",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/grevyszebra/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Grevy's zebra fact sheet",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                2.5,
+                3
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "grevys-zebra.webp",
+        "kind": "photo",
+        "credit": "Jesse Hull / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equus_grevyi_in_Samburu.jpg",
+        "width": 737,
+        "height": 658,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Grévy's zebra fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/grevyszebra/characteristics"
+        },
+        {
+          "label": "Wikipedia: Grévy's zebra",
+          "url": "https://en.wikipedia.org/wiki/Gr%C3%A9vy%27s_zebra"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "pygmy-hippopotamus",
+      "scientificName": "Choeropsis liberiensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Hippopotamidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/10032/18567171",
+        "iucnTaxonId": "10032"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial",
+          "freshwater"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "LR",
+            "SL",
+            "GN",
+            "CI"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 1.625,
+          "unit": "m",
+          "mean": 1.625,
+          "range": [
+            1.5,
+            1.75
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "cl-adw-l",
+              "url": "https://animaldiversity.org/accounts/Hexaprotodon_liberiensis/",
+              "title": "Animal Diversity Web: Hexaprotodon liberiensis",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                1.5,
+                1.75
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "pygmy-hippopotamus.webp",
+        "kind": "photo",
+        "credit": "Bardrock / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hexaprotodon_liberiensis_in_Edinburgh_Zoo.JPG",
+        "width": 737,
+        "height": 491,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Choeropsis liberiensis",
+          "url": "https://animaldiversity.org/accounts/Hexaprotodon_liberiensis/"
+        },
+        {
+          "label": "Wikipedia: Pygmy hippopotamus",
+          "url": "https://en.wikipedia.org/wiki/Pygmy_hippopotamus"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "red-panda",
+      "scientificName": "Ailurus fulgens",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ailuridae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/714/110023718",
+        "iucnTaxonId": "714"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "NP",
+            "IN",
+            "BT",
+            "MM",
+            "CN"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.62,
+          "unit": "m",
+          "mean": 0.62,
+          "range": [
+            0.51,
+            0.73
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "af-sdzg-hb",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/redpanda/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Red panda fact sheet",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                51,
+                73
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "red-panda.webp",
+        "kind": "photo",
+        "credit": "Sunuwargr / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Panda,_Gentle_Tree-Dweller_of_the_Himalayas.jpg",
+        "width": 1020,
+        "height": 680,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Red panda fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/redpanda/characteristics"
+        },
+        {
+          "label": "Wikipedia: Red panda",
+          "url": "https://en.wikipedia.org/wiki/Red_panda"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bonobo",
+      "scientificName": "Pan paniscus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15932/102331567",
+        "iucnTaxonId": "15932"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "CD"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.75,
+          "unit": "m",
+          "mean": 0.75,
+          "range": [
+            0.7,
+            0.8
+          ],
+          "confidence": "range_midpoint",
+          "basis": "whole body length as given by the source",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "pp-sdzg-l",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/bonobo/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Bonobo fact sheet",
+              "use": "counted",
+              "unit": "mm",
+              "range": [
+                700,
+                800
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "bonobo.webp",
+        "kind": "photo",
+        "credit": "DBeaune / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Les_bonobos_utilisent_certaines_feuilles_aux_vertus_pharmacologique_contre_leurs_parasites_intestinaux.jpg",
+        "width": 648,
+        "height": 867,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Bonobo fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/bonobo/characteristics"
+        },
+        {
+          "label": "Wikipedia: Bonobo",
+          "url": "https://en.wikipedia.org/wiki/Bonobo"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "tasmanian-devil",
+      "scientificName": "Sarcophilus harrisii",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Dasyuromorphia",
+        "family": "Dasyuridae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/40540/10331066",
+        "iucnTaxonId": "40540"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "AU"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.611,
+          "unit": "m",
+          "mean": 0.611,
+          "range": [
+            0.57,
+            0.652
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sh-sdzg-hb",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/tasmaniandevil/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Tasmanian devil fact sheet (males 652 mm, females 570 mm)",
+              "use": "counted",
+              "unit": "mm",
+              "range": [
+                570,
+                652
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "tasmanian-devil.webp",
+        "kind": "photo",
+        "credit": "JJ Harrison / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg",
+        "width": 867,
+        "height": 566,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Tasmanian devil fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/tasmaniandevil/characteristics"
+        },
+        {
+          "label": "Wikipedia: Tasmanian devil",
+          "url": "https://en.wikipedia.org/wiki/Tasmanian_devil"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "gharial",
+      "scientificName": "Gavialis gangeticus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "reptile",
+      "taxon": {
+        "class": "Crocodylia",
+        "family": "Gavialidae"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/8966/149227430",
+        "iucnTaxonId": "8966"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "freshwater"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "IN",
+            "NP"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 4,
+          "unit": "m",
+          "mean": 4,
+          "range": [
+            3.5,
+            4.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length of adults, snout tip to tail tip (females 3.5 to 4 m, males 4 to 4.5 m)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "gg-sdzg-l",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/gharial/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Gharial fact sheet",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                3.5,
+                4.5
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "gharial.webp",
+        "kind": "photo",
+        "credit": "Charles J. Sharp / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gharial_(Gavialis_gangeticus)_male.jpg",
+        "width": 1020,
+        "height": 680,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Gharial fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/gharial/characteristics"
+        },
+        {
+          "label": "Wikipedia: Gharial",
+          "url": "https://en.wikipedia.org/wiki/Gharial"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "komodo-dragon",
+      "scientificName": "Varanus komodoensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [],
+      "group": "reptile",
+      "taxon": {
+        "class": "Squamata",
+        "family": "Varanidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22884/123633058",
+        "iucnTaxonId": "22884"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "ID"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.5,
+          "unit": "m",
+          "mean": 2.5,
+          "range": [
+            2,
+            3
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length of adults, snout tip to tail tip (females 2 to 2.5 m, males 3 m)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "vk-sdzg-l",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/komododragon/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Komodo dragon fact sheet",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                2,
+                3
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "komodo-dragon.webp",
+        "kind": "photo",
+        "credit": "James Jolokia / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg",
+        "width": 737,
+        "height": 526,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Komodo dragon fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/komododragon/characteristics"
+        },
+        {
+          "label": "Wikipedia: Komodo dragon",
+          "url": "https://en.wikipedia.org/wiki/Komodo_dragon"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "philippine-eagle",
+      "scientificName": "Pithecophaga jefferyi",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [
+        "birds"
+      ],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22696012/273773083",
+        "iucnTaxonId": "22696012"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "PH"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.95,
+          "unit": "m",
+          "mean": 0.95,
+          "range": [
+            0.9,
+            1
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length, bill tip to tail tip",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "pj-adw-l",
+              "url": "https://animaldiversity.org/accounts/Pithecophaga_jefferyi/",
+              "title": "Animal Diversity Web: Pithecophaga jefferyi",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                90,
+                100
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "philippine-eagle.webp",
+        "kind": "photo",
+        "credit": "Olympus Gene Tibubos / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PH_Eagle_PamarayegIII.jpg",
+        "width": 578,
+        "height": 867,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Pithecophaga jefferyi",
+          "url": "https://animaldiversity.org/accounts/Pithecophaga_jefferyi/"
+        },
+        {
+          "label": "Wikipedia: Philippine eagle",
+          "url": "https://en.wikipedia.org/wiki/Philippine_eagle"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "great-indian-bustard",
+      "scientificName": "Ardeotis nigriceps",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "endangered",
+      "tags": [
+        "birds"
+      ],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Otidiformes",
+        "family": "Otididae"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-19",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22691932/134188105",
+        "iucnTaxonId": "22691932"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "IN"
+          ]
+        }
+      },
+      "size": {
+        "height": {
+          "value": 1,
+          "unit": "m",
+          "mean": 1,
+          "confidence": "single_source",
+          "basis": "standing height",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "an-iucn-h",
+              "url": "https://iucn.org/content/big-birds-lose-out-a-crowded-world",
+              "title": "International Union for Conservation of Nature: Big birds lose out in a crowded world",
+              "use": "counted",
+              "unit": "m",
+              "value": 1
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-19"
+        }
+      },
+      "image": {
+        "file": "great-indian-bustard.webp",
+        "kind": "photo",
+        "credit": "Original: SVKMBFLY; this edit: MPF / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ardeotis_nigriceps,_Desert_National_Park,_Rajasthan,_India_1.jpg",
+        "width": 816,
+        "height": 1020,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "International Union for Conservation of Nature: Big birds lose out in a crowded world",
+          "url": "https://iucn.org/content/big-birds-lose-out-a-crowded-world"
+        },
+        {
+          "label": "Wikipedia: Great Indian bustard",
+          "url": "https://en.wikipedia.org/wiki/Great_Indian_bustard"
+        }
+      ],
+      "provenance": {
+        "batch": "endangered-02",
+        "added": "2026-10-19",
+        "suppliedBy": []
+      }
     }
   ]
 }
