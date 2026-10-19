@@ -2984,6 +2984,12 @@ a.map-card:hover {
   margin-top: 1.3rem;
 }
 
+/* Long Commons and GeoJSON URLs in the source line must wrap inside 360px. */
+.borders-timeline .wildlife-sources a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .borders-heading-row {
   display: flex;
   flex-wrap: wrap;
