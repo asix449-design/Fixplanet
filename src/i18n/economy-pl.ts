@@ -140,7 +140,7 @@ export const pl = {
       tile: "Każde źródło, jego licencja i to, co zmieniliśmy.",
       title: "Źródła i metodologia",
       lede: "Skąd pochodzi każda liczba, na jakich zasadach można jej używać i co zmieniliśmy.",
-      updates: "Ceny kryptowalut odświeżamy trzy razy na dobę. Pozostałe źródła aktualizujemy, gdy ich wydawca opublikuje nowe dane, w ciągu doby od publikacji.",
+      updates: "Źródła aktualizujemy, gdy ich wydawca opublikuje nowe dane, w ciągu doby od publikacji.",
       method1: "Dane bierzemy prosto z każdego źródła i nie dodajemy własnych szacunków.",
       method2: "Każde źródło publikuje dane według własnego harmonogramu, a my sprawdzamy nowe dane raz dziennie.",
       method3: "Zmiany na kafelkach obliczamy sami z opublikowanych wartości.",

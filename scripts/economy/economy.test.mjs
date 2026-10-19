@@ -776,6 +776,15 @@ test('companies: the server template does not name TradingView', async () => {
   assert.match(await readFile(path.join(here, '../../src/scripts/economyQuotes.ts'), 'utf8'), /s3\.tradingview\.com/);
 });
 
+test('publication: economy is public and crypto stays off', async () => {
+  const source = await readFile(path.join(here, '../../src/data/economy.ts'), 'utf8');
+  assert.equal(source.includes('PUBLIC_ECONOMY_PREVIEW'), false);
+  assert.match(source, /export const economyVisible = true/);
+  assert.match(source, /tab\.slug !== 'crypto'/);
+  assert.match(source, /fig\.source !== 'coingecko'/);
+  assert.match(source, /id !== 'coingecko'/);
+});
+
 test('run: a manifest left behind by a killed job is repaired by the next run', async () => {
   await withTempDir(async (dir) => {
     await run(dir, network());

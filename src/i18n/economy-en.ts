@@ -140,7 +140,7 @@ export const en = {
       tile: "Every source, its licence, and what we changed.",
       title: "Sources and methodology",
       lede: "Where every figure comes from, its licence, and what we changed.",
-      updates: "Crypto prices are refreshed three times a day. Every other source is updated when its publisher releases new data, within a day of publication.",
+      updates: "Every source is updated when its publisher releases new data, within a day of publication.",
       method1: "We read each source directly and add no estimates of our own.",
       method2: "Each source publishes on its own schedule, and we check for new data once a day.",
       method3: "Changes on the tiles are worked out by us from the published values.",
