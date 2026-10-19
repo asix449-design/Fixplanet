@@ -65,4 +65,4 @@ Neviens šajā gadā nesaka «mēs dzīvojam globalizācijas slieksnī». Viņi 
 - 1519-1521: Kortess un acteku beigas;
 - 1522: Magelāna kuģis apbrauks zemi.
 
-1500. Gads, kad Brazīlija iekrīt Eiropas burtnīcā gandrīz nejauši, un Vedroša pierādīja, ka Maskava jau nav Viļņas jaunākais brālis. Okeāns kļuva par ceļu. Sauszeme starp Smoļensku un Brjansku, arī.
+1500. gadā Brazīlija iekrīt Eiropas burtnīcā gandrīz nejauši, un Vedroša pierāda, ka Maskava jau nav Viļņas jaunākais brālis. Okeāns kļuva par ceļu. Sauszeme starp Smoļensku un Brjansku, arī.

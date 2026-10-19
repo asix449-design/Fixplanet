@@ -67,6 +67,6 @@ Co będzie potem:
 - 313: edykt mediolański, chrześcijaństwo dozwolone;
 - 324-330: nowy Rzym nad Bosforem;
 - 376-378: Goci przekraczają Dunaj, Adrianopol;
-- 316-lata 420. Jin traci północ Chin.
+- W latach 316-420 Jin traci północ Chin.
 
-Rok 300. Ostatni rok, gdy można na serio wyobrazić sobie pogańskie imperium jako normę na zawsze. Norma już inna: wielu władców, wielu bogów, i jeden z kultów zaraz przestanie być zakazany. Dioklecjan tego nie planował. Historia rzadko pyta planisty.
+Rok 300 jest ostatnim rokiem, gdy można na serio wyobrazić sobie pogańskie imperium jako normę na zawsze. Norma już inna: wielu władców, wielu bogów, i jeden z kultów zaraz przestanie być zakazany. Dioklecjan tego nie planował. Historia rzadko pyta planisty.

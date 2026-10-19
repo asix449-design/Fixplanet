@@ -39,4 +39,4 @@ New nodes are already visible: Wessex gathers the English, Kiev gathers the Rus,
 
 In eleven years Rollo will get Normandy. In seven years the Tang will fall. In sixty-two years Otto will beat the Magyars. In a century: the Baptism of Rus and already another world.
 
-900 is the year when the old roofs leak and the new ones still have no tiles. You can live. Quietly, no.
+900 is the year when the old roofs leak and the new ones still have no tiles. You can live. It is not quiet.

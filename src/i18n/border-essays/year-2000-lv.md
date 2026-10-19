@@ -64,4 +64,4 @@ Kas būs tālāk:
 - 2004: ES paplašināšanās; Beslana;
 - 2008: pasaules finanšu krīze.
 
-2000. Gads ar uguņošanu un karājošu caurumiņu biļetenā. Tūkstošgadi sāka svinēt. Īstais XXI gadsimts daudziem sāksies 2001. gada 11. septembrī.
+2000. gadā ir uguņošana un karājošs caurumiņš biļetenā. Tūkstošgadi sāka svinēt. Īstais XXI gadsimts daudziem sāksies 2001. gada 11. septembrī.

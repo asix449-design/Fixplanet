@@ -5,7 +5,7 @@ Boże Narodzenie, które potem przywiążą do tego punktu, najpewniej wydarzył
 ### Rzym i Morze Śródziemne
 Rzymem rządzi **Oktawian August**. Republika na papierze jeszcze żyje: senat obraduje, konsulowie są wybierani. W praktyce jeden człowiek trzyma armię, prowincje i prawo powiedzieć „nie”. Wojny domowe się skończyły. Nazywają to pokojem Augusta: *Pax Romana*. Dla mieszkańca Italii pokój naprawdę jest cichszy niż za Cezara i Antoniusza. Dla mieszkańca podbitej Galii lub Judei pokój wygląda jak podatki, garnizon i cudze prawo.
 
-Imperium pierścieniem wokół morza: Hiszpania, Galia, Italia, Grecja, Azja Mniejsza, Syria, Egipt, Afryka. Ren i Dunaj: niemal kres. Brytanii jeszcze nie brano na serio (to Klaudiusz, za czterdzieści lat). Za Renem: Germanie. Niedawno, w 9 r. p.n.e. i wokół, Rzymianie pchali się do Germanii. Osiem lat po „pierwszym roku”, w Lesie Teutoburskim, padną trzy legiony. W roku 1. to jeszcze się nie stało. Wydaje się, że orły idą dokąd chcą.
+Imperium pierścieniem wokół morza: Hiszpania, Galia, Italia, Grecja, Azja Mniejsza, Syria, Egipt, Afryka. Ren i Dunaj są niemal kresem. Brytanii jeszcze nie brano na serio (to Klaudiusz, za czterdzieści lat). Za Renem: Germanie. Niedawno, w 9 r. p.n.e. i wokół, Rzymianie pchali się do Germanii. Osiem lat po „pierwszym roku”, w Lesie Teutoburskim, padną trzy legiony. W roku 1. to jeszcze się nie stało. Wydaje się, że orły idą dokąd chcą.
 
 W Rzymie piszą. Tytus Liwiusz ciągnie swoją ogromną historię Miasta. Owidiusz pisze lekkie i niebezpieczne wiersze. Wkrótce August ześle go nad Morze Czarne. Wergiliusz już nie żyje, ale „Eneida” stała się szkolną książką imperium: Rzym jakby wyznaczony przez bogów.
 
@@ -50,8 +50,8 @@ Co będzie potem:
 - rok 9: Teutoburg, Rzym na zawsze odstąpi od głębokiej Germanii;
 - około roku 14: śmierć Augusta, cesarz Tyberiusz;
 - lata 9-23: Wang Mang i krach jego reform;
-- lata 30. Egzekucja Jezusa w Judei, o której Rzym dowie się znacznie później jako o „sekcie”;
+- W latach 30. następuje egzekucja Jezusa w Judei, o której Rzym dowie się znacznie później jako o „sekcie”;
 - rok 70: zburzenie Świątyni;
 - rok 220: koniec Han.
 
-Rok 1. Cisza na szczycie dwóch imperiów. Rzym i Han jeszcze nie podejrzewają, jak są podobne: jedni i drudzy uważają się za cywilizację, a resztę: za skraj. Między nimi jedwab. Na jedwabiu potem napiszą nową erę. W samym tym roku atrament jeszcze liczy od założenia Miasta i od wstąpienia cesarza Pinga.
+W roku 1 na szczycie dwóch imperiów jest cisza. Rzym i Han jeszcze nie podejrzewają, jak są podobne: jedni i drudzy uważają się za cywilizację, a resztę tylko skrajem. Między nimi jedwab. Na jedwabiu potem napiszą nową erę. W samym tym roku atrament jeszcze liczy od założenia Miasta i od wstąpienia cesarza Pinga.

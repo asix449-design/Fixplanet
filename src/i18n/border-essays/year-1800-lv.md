@@ -74,4 +74,4 @@ Kas būs tālāk:
 - 1812: gājiens uz Krieviju;
 - 1815: Vaterlo.
 
-1800. Gads, kad XIX gadsimts pēc kalendāra jau sācies, bet pēc sajūtas vēl nav. Vēl var iedomāties, ka pēc Marengo nāks ilgs miers. Nenāks.
+1800. gadā XIX gadsimts pēc kalendāra jau ir sācies, bet pēc sajūtas vēl nav. Vēl var iedomāties, ka pēc Marengo nāks ilgs miers. Nenāks.

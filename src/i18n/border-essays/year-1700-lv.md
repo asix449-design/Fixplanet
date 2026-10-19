@@ -70,4 +70,4 @@ Luijs XIV vēl «saules karalis», bet Franciju drīz izmocīs karš par Spānij
 - 1714: Spānijas kara beigas, britu tronī Hanoveri;
 - 1721: Nīštates miers, Krievija pasludina sevi par impēriju.
 
-1700. Pēdējais gads, kad varēja izlikties, ka Baltija uz mūžu zviedru, un Maskava uz mūžu tālu no Eiropas. Pēc Narvas Pēteris šo izlikšanos ienīda. Kārlis nolēma, ka uzvarējis. Abi kļūdījās termiņos.
+1700. gadā vēl varēja izlikties, ka Baltija uz mūžu ir zviedru, un Maskava uz mūžu tālu no Eiropas. Pēc Narvas Pēteris šo izlikšanos ienīda. Kārlis nolēma, ka uzvarējis. Abi kļūdījās termiņos.

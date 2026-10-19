@@ -65,4 +65,4 @@ Kas būs tālāk:
 - 1905: revolūcija Krievijā;
 - 1914: Pirmais pasaules karš.
 
-1900. Gads, kad XIX gadsimts iekārtoja sev atvadu uguņošanu un nepamanīja, ka dakts jau gruzd.
+1900. gadā XIX gadsimts iekārtoja sev atvadu uguņošanu un nepamanīja, ka dakts jau gruzd.

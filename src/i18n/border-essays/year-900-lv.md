@@ -39,4 +39,4 @@ Jaunie mezgli jau redzami: Veseksa savāc anglus, Kijeva savāc Krievzemi, Sām�
 
 Pēc vienpadsmit gadiem Rolons dabūs Normandiju. Pēc septiņiem gadiem kritīs Tan. Pēc sešdesmit diviem Oto sakāvs madjarus. Pēc gadsimta: Krievzemes kristīšana un jau cita pasaule.
 
-900. Gads, kad vecie jumti tek, un jaunajiem vēl nav dakstiņu. Dzīvot var. Mierīgi: nē.
+900. gadā vecie jumti tek, un jaunajiem vēl nav dakstiņu. Dzīvot var. Mierīgi gan nē.

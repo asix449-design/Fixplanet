@@ -39,4 +39,4 @@ Nowe węzły już widać: Wessex zbiera Anglików, Kijów zbiera Ruś, Samanidzi
 
 Za jedenaście lat Rollon dostanie Normandię. Za siedem lat padnie Tang. Za sześćdziesiąt dwa lata Otton pobije Madziarów. Za wiek: Chrzest Rusi i już inny świat.
 
-900: rok, gdy stare dachy ciekną, a nowe jeszcze bez dachówek. Żyć można. Spokojnie, nie.
+900: rok, gdy stare dachy ciekną, a nowe jeszcze bez dachówek. Żyć można. Spokojnie nie jest.

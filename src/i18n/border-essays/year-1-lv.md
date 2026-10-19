@@ -5,7 +5,7 @@ Ziemassvētki, kurus pēc tam piesies pie šī punkta, visticamāk notika dažus
 ### Roma un Vidusjūra
 Romu valda **Oktaviāns Augusts**. Republika uz papīra vēl dzīvo: senāts sēž, konsulus ievēl. Patiesībā viens cilvēks tur armiju, provinces un tiesības teikt „nē”. Pilsoņu kari beigušies. To sauc par Augusta mieru: *Pax Romana*. Itālijas iedzīvotājam miers tiešām ir klusāks nekā Cēzara un Antonija laikā. Iekarotās Gallijas vai Jūdejas iedzīvotājam miers izskatās kā nodokļi, garnizons un sveša likums.
 
-Impērija gredzenā ap jūru: Spānija, Gallija, Itālija, Grieķija, Mazāzija, Sīrija, Ēģipte, Āfrika. Reina un Donava: gandrīz mala. Britāniju vēl nav ņēmuši nopietni (to Klaudijs, pēc četrdesmit gadiem). Aiz Reinas: ģermāņi. Nesen, 9. gadā p.m.ē. un ap to, romieši spiedās Ģermānijā. Astoņus gadus pēc „pirmā gada” Teitoburgas mežā kritīs trīs leģioni. 1. gadā tas vēl nav noticis. Šķiet, ka ērgļi iet, kur grib.
+Impērija gredzenā ap jūru: Spānija, Gallija, Itālija, Grieķija, Mazāzija, Sīrija, Ēģipte, Āfrika. Reina un Donava ir gandrīz mala. Britāniju vēl nav ņēmuši nopietni (to Klaudijs, pēc četrdesmit gadiem). Aiz Reinas: ģermāņi. Nesen, 9. gadā p.m.ē. un ap to, romieši spiedās Ģermānijā. Astoņus gadus pēc „pirmā gada” Teitoburgas mežā kritīs trīs leģioni. 1. gadā tas vēl nav noticis. Šķiet, ka ērgļi iet, kur grib.
 
 Romā raksta. Tits Līvijs velk savu milzīgo Pilsētas vēsturi. Ovīdijs raksta vieglus un bīstamus dzejoļus. Drīz Augusts viņu izsūtīs uz Melno jūru. Vergīlijs jau miris, bet „Eneīda” kļuvusi par impērijas skolas grāmatu: Roma it kā dievu iecelta.
 
@@ -54,4 +54,4 @@ Kas nāks pēc tam:
 - 70. gads: Tempļa iznīcināšana;
 - 220. gads: Haņu beigas.
 
-1. gads: klusums divu impēriju virsotnē. Roma un Haņi vēl nenojauš, cik līdzīgi tie ir: abi uzskata sevi par civilizāciju, bet pārējo: par malu. Starp tiem zīds. Uz zīda pēc tam uzrakstīs jaunu ēru. Pašā šajā gadā tinte vēl skaita no Pilsētas dibināšanas un no imperatora Pina kāpšanas tronī.
+1. gadā divu impēriju virsotnē ir klusums. Roma un Haņi vēl nenojauš, cik līdzīgi tie ir: abi uzskata sevi par civilizāciju, bet pārējo tikai malā. Starp tiem zīds. Uz zīda pēc tam uzrakstīs jaunu ēru. Pašā šajā gadā tinte vēl skaita no Pilsētas dibināšanas un no imperatora Pina kāpšanas tronī.

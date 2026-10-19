@@ -39,4 +39,4 @@ Vidusjūra vairs nav «romiešu ezers». Dienvidu krasts runā arābu valodā. D
 
 Pēc vienpadsmit gadiem arābi Spānijā. Pēc astoņpadsmit: otrais lielais Konstantinopoles aplenkums. Pēc trīsdesmit diviem: Puatjē. Pēc piecdesmit Omeijadus nomainīs Abāsīdi, galvaspilsēta aizbrauks uz Bagdādi.
 
-700. Brīdis, kad islāma kalifāts jau ir impērija, Bizantija vairs nav vecā tipa superspēks, un Ķīna atkal virsotnē. VII gadsimta karte aizvērās. Atveras VIII.
+700. gadā islāma kalifāts jau ir impērija, Bizantija vairs nav vecā tipa superspēks, un Ķīna atkal ir virsotnē. VII gadsimta karte aizvērās. Atveras VIII.

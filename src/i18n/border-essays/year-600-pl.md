@@ -38,4 +38,4 @@ Chiny dopiero co znów stały się imperium. Bizancjum i Persja jeszcze dwa supe
 
 Za dwa lata zabiją Maurycjusza: zacznie się ostatnia wielka wojna rzymsko-perska. Za dziesięć lat Mahomet usłyszy pierwsze objawienie. Za dwadzieścia Sui zmieni Tang. Ku 650. kalifat będzie od Egiptu do Iranu.
 
-Rok 600. jeszcze można opisać językiem późnej starożytności. 650. Już nie. To ostatni „spokojny” kadr, zanim Śródziemnomorze i Bliski Wschód staną się nie do poznania.
+W roku 600 jeszcze można opisać językiem późnej starożytności. W 650 roku już nie. To ostatni „spokojny” kadr, zanim Śródziemnomorze i Bliski Wschód staną się nie do poznania.

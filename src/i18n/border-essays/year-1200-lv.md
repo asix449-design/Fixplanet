@@ -64,4 +64,4 @@ Kas būs tālāk:
 - 1237-1240: Batijs Krievzemē;
 - 1258: Bagdāde.
 
-1200. Pēdējais mierīgais gads, kad varēja izlikties, ka pasaule sastāv no ierastiem kaimiņiem. Stepe jau sapulcējusies. Pāvests jau aizsūtījis sludinātājus. Kuģi jau pasūtīti.
+1200. gadā vēl varēja izlikties, ka pasaule sastāv no ierastiem kaimiņiem. Stepe jau sapulcējusies. Pāvests jau aizsūtījis sludinātājus. Kuģi jau pasūtīti.

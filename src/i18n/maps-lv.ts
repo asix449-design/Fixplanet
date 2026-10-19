@@ -168,7 +168,7 @@ export const lv: Record<string, MapCopy> = {
     whyOnShelf:
       'Uztvertā publiskā sektora korupcija rāda pārvaldības risku pēc ekspertu un uzņēmēju aptaujām.',
     howToRead:
-      'Vērtējums ir uztveres kompozīts. Gada etiķete ir indeksa izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena-divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir Our World in Data.',
+      'Vērtējums ir uztveres kompozīts. Gada etiķete ir indeksa izdevuma gads (šeit 2025), ne obligāti katras aptaujas kalendārais gads. Augstāk nozīmē tīrāk. Salīdziniet tuvus izdevumus; viena vai divu punktu maiņa bieži ir troksnis. Oficiālie vērtējumi ir Transparency International lapā; interaktīvā karte ir Our World in Data.',
     caveats:
       'Trūkstoša valsts paliek ārpus reitinga. Mājsaimniecību kukuļu pieredze ir cita rinda. Sīktēls rāda indeksa vērtējumus.',
     licenseNote:

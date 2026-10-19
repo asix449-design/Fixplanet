@@ -93,7 +93,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
           'Unmapped gray. Australia and the Pacific are not filled as religions on this plate.',
       },
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps. Optional museum companion: Élisée Reclus, L’Homme et la Terre (1905), public domain.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. Optional museum companion: Élisée Reclus, L’Homme et la Terre (1905), public domain.',
     },
     100: {
       title: '100 CE: Trajan still pagan',
@@ -112,7 +112,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Still unmapped gray.',
       },
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence.',
     },
     200: {
       title: '200 CE: official pagan, denser Christian cities',
@@ -131,7 +131,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Unmapped gray.',
       },
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence.',
     },
     300: {
       title: '300 CE: eve of Constantine, majority pagan',
@@ -150,7 +150,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Unmapped gray.',
       },
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
     },
     400: {
       title: '400 CE: post-Theodosius, not all Europe Christian',
@@ -169,7 +169,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Still unmapped gray.',
       },
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
     },
     500: {
       title: '500 CE: former Roman world, rural pagan still showing',
@@ -200,7 +200,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence.',
     },
     600: {
       title: '600 CE: stronger Christian belt, Iran still Zoroastrian',
@@ -231,7 +231,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. Process companion: Christianity spread to AD 600 (CC BY-SA 3.0).',
     },
     700: {
       title: '700 CE: first wide Islamic Umayyad belt',
@@ -268,7 +268,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence.',
     },
     800: {
       title: '800 CE: Abbasid belt, stronger Frankish west',
@@ -305,7 +305,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence.',
     },
     900: {
       title: '900 CE: Abbasid successors, Christian Europe still open north',
@@ -342,14 +342,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: André Ourednik et al., historical-basemaps (GPL-3.0); source: github.com/aourednik/historical-basemaps.',
+        'Religion fills © Fix Planet (schematic reconstruction, not a census). Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence.',
     },
     1000: {
       title: '1000 CE: schematic reconstruction',
       caption:
-        'Around 1000 CE a wide **Islamic** belt still holds Maghreb-Libya-Egypt-Near East, Arabia, Iran, Central Asia, and Sind; al-Andalus stays, with a light Sahel edge. Christian Europe pushes further north and east, Saxon / Polish / Kievan fringe, still not solid Scandinavia or the Baltic. India Hindu; Buddhist corridors and the Chinese imperial layer hold the East. Americas unmapped.',
+        'Around 1000 CE a wide **Islamic** belt still holds the Maghreb, Libya, Egypt and the Near East, Arabia, Iran, Central Asia, and Sind; al-Andalus stays, with a light Sahel edge. Christian Europe pushes further north and east, Saxon / Polish / Kievan fringe, still not solid Scandinavia or the Baltic. India Hindu; Buddhist corridors and the Chinese imperial layer hold the East. Americas unmapped.',
       imageAlt:
-        'Schematic world religion map for 1000 CE: wide Islamic Maghreb-Libya-Egypt-Near East belt, Christian Europe expanding north and east, Americas unmapped',
+        'Schematic world religion map for 1000 CE: wide Islamic Maghreb, Libya, Egypt and the Near East belt, Christian Europe expanding north and east, Americas unmapped',
       honestyPills: [
         'Schematic reconstruction',
         'Not a census',
@@ -363,7 +363,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Near East belt through Arabia into Iran, Central Asia, and Sind; al-Andalus held; light Sahel / West Africa trade edge. Thin Zoroastrian remnant hatch; Manichaean minority hatch smaller where shown.',
+          text: 'Islamic Maghreb, Libya, Egypt and the Near East belt through Arabia into Iran, Central Asia, and Sind; al-Andalus held; light Sahel / West Africa trade edge. Thin Zoroastrian remnant hatch; Manichaean minority hatch smaller where shown.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -371,7 +371,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Libya-Egypt in the Islamic belt; light Sahel trade edge; Aksum/Nubia Christian edge; south of the Sahara = coarse African traditional wash.',
+          text: 'the Maghreb, Libya and Egypt in the Islamic belt; light Sahel trade edge; Aksum/Nubia Christian edge; south of the Sahara = coarse African traditional wash.',
         },
         {
           heading: 'Americas / Oceania',
@@ -379,7 +379,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
     },
     1100: {
       title: '1100 CE: schematic reconstruction',
@@ -396,11 +396,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Europe / Mediterranean',
-          text: 'Fuller Christian Rhineland / Germany, Bohemia-Poland fringe, Balkans / Byzantine, Italy; schematic Crusader Levant foothold. Iberia still Islamic. Far north residual and Baltic / Finnic pockets = local traditions. Jewish spots.',
+          text: 'Fuller Christian Rhineland / Germany, Bohemia and Poland fringe, Balkans / Byzantine, Italy; schematic Crusader Levant foothold. Iberia still Islamic. Far north residual and Baltic / Finnic pockets = local traditions. Jewish spots.',
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Levant-Arabia-Near East-Persia-Central Asia fringe; al-Andalus held; Sahel edge. Thin Zoroastrian remnant hatch only.',
+          text: 'Islamic Maghreb, Libya, Egypt, the Levant, Arabia, the Near East, Persia and Central Asia fringe; al-Andalus held; Sahel edge. Thin Zoroastrian remnant hatch only.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -408,7 +408,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Libya-Egypt Islamic; Sahel trade edge; Aksum/Nubia Christian edge; Sahel-south = African traditional wash.',
+          text: 'the Maghreb, Libya and Egypt Islamic; Sahel trade edge; Aksum/Nubia Christian edge; Sahel-south = African traditional wash.',
         },
         {
           heading: 'Americas / Oceania',
@@ -416,12 +416,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
     1200: {
       title: '1200 CE: schematic reconstruction',
       caption:
-        'Around 1200 CE (Mongol eve) the same major **Islamic** belt: Maghreb-Libya-Egypt-Near East-Iran-Central Asia, al-Andalus, Indus edge and Sahel edge, no invented new empire wash. Christianity a bit further into the Baltics and Scandinavia; still not all Europe solid. India Hindu; Buddhism and the Chinese imperial layer hold the East. Americas unmapped.',
+        'Around 1200 CE (Mongol eve) the same major **Islamic** belt: the Maghreb, Libya, Egypt, the Near East, Iran and Central Asia, al-Andalus, Indus edge and Sahel edge, no invented new empire wash. Christianity a bit further into the Baltics and Scandinavia; still not all Europe solid. India Hindu; Buddhism and the Chinese imperial layer hold the East. Americas unmapped.',
       imageAlt:
         'Schematic world religion map for 1200 CE: major Islamic belt, Christian Baltics and Scandinavia fringe, Americas unmapped',
       honestyPills: [
@@ -437,7 +437,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Same major Islamic belt as 1100, plus Indus / Multan hold and a slight Sahel trade edge: Maghreb-Libya-Egypt-Near East-Persia-Central Asia; al-Andalus. Thin Zoroastrian remnant hatch only.',
+          text: 'Same major Islamic belt as 1100, plus Indus / Multan hold and a slight Sahel trade edge: the Maghreb, Libya, Egypt, the Near East, Persia and Central Asia; al-Andalus. Thin Zoroastrian remnant hatch only.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -445,7 +445,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Libya-Egypt Islamic; slight Sahel trade edge; Aksum/Nubia Christian edge; Sahel-south = African traditional wash.',
+          text: 'the Maghreb, Libya and Egypt Islamic; slight Sahel trade edge; Aksum/Nubia Christian edge; Sahel-south = African traditional wash.',
         },
         {
           heading: 'Americas / Oceania',
@@ -453,12 +453,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
     },
     1300: {
       title: '1300 CE: schematic reconstruction',
       caption:
-        'Around 1300 CE the **Islamic** belt is Mamluk Egypt and Syria, Maghreb and Libya, an Anatolia fringe (early Ottoman), a Granada pocket in Iberia, plus Near East-Arabia-Iran-Central Asia and a Delhi fringe. Christian Europe is nearly solid in the west and center; the Balkans stay Christian. India Hindu; Buddhist corridors and the Chinese layer hold the East. In the Americas, local traditions: rising Mesoamerica (Aztec) and the Andes, plus other indigenous zones.',
+        'Around 1300 CE the **Islamic** belt is Mamluk Egypt and Syria, Maghreb and Libya, an Anatolia fringe (early Ottoman), a Granada pocket in Iberia, plus the Near East, Arabia, Iran and Central Asia and a Delhi fringe. Christian Europe is nearly solid in the west and center; the Balkans stay Christian. India Hindu; Buddhist corridors and the Chinese layer hold the East. In the Americas, local traditions: rising Mesoamerica (Aztec) and the Andes, plus other indigenous zones.',
       imageAlt:
         'Schematic world religion map for 1300 CE: Mamluk Islamic belt, Anatolia fringe, Granada pocket, Americas indigenous fill',
       honestyPills: packCHonesty.en,
@@ -469,7 +469,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Mamluk Islamic Egypt-Syria / Levant; Maghreb-Libya; Arabia-Near East-Iran-Central Asia; Anatolia Islamic fringe (early Ottoman); Delhi / Indus fringe. Thin Zoroastrian remnant hatch only where marked.',
+          text: 'Mamluk Islamic Egypt and Syria / Levant; the Maghreb and Libya; Arabia, the Near East, Iran and Central Asia; Anatolia Islamic fringe (early Ottoman); Delhi / Indus fringe. Thin Zoroastrian remnant hatch only where marked.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -477,7 +477,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Libya-Egypt in the Islamic belt; light Sahel trade edge; Christian Ethiopia/Nubia edge where shown; south of the Sahara = coarse African traditional wash.',
+          text: 'the Maghreb, Libya and Egypt in the Islamic belt; light Sahel trade edge; Christian Ethiopia/Nubia edge where shown; south of the Sahara = coarse African traditional wash.',
         },
         {
           heading: 'Americas / Oceania',
@@ -485,12 +485,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
     },
     1400: {
       title: '1400 CE: schematic reconstruction',
       caption:
-        'By 1400 CE the **Islamic** belt is wider: Mamluk Egypt-Syria-Levant, Maghreb-Libya, the Timur zone (Central Asia / Iran / Near East), Anatolia already majority Islamic (Ottoman), Granada pocket still held. Christian Europe fuller; the Balkans still mostly Christian demographically. India Hindu; Buddhism and the Chinese layer hold the East. In the Americas, strong local cores: Aztec Mesoamerica and the Inca Andes, plus other indigenous zones.',
+        'By 1400 CE the **Islamic** belt is wider: Mamluk Egypt, Syria and the Levant, the Maghreb and Libya, the Timur zone (Central Asia / Iran / Near East), Anatolia already majority Islamic (Ottoman), Granada pocket still held. Christian Europe fuller; the Balkans still mostly Christian demographically. India Hindu; Buddhism and the Chinese layer hold the East. In the Americas, strong local cores: Aztec Mesoamerica and the Inca Andes, plus other indigenous zones.',
       imageAlt:
         'Schematic world religion map for 1400 CE: wider Islamic belt, Ottoman Anatolia, Granada pocket, Aztec and Inca cores',
       honestyPills: packCHonesty.en,
@@ -501,7 +501,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Levant-Arabia plus Timur-zone wash fuller into Iran and Central Asia; Anatolia majority Islamic (Ottoman). Granada pocket remains in Iberia. Thin Zoroastrian remnant hatch only.',
+          text: 'Islamic Maghreb, Libya, Egypt, the Levant and Arabia plus Timur-zone wash fuller into Iran and Central Asia; Anatolia majority Islamic (Ottoman). Granada pocket remains in Iberia. Thin Zoroastrian remnant hatch only.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -509,7 +509,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Libya-Egypt Islamic; Sahel trade edge; Christian Ethiopia/Nubia edge where shown; Sahel-south = African traditional wash.',
+          text: 'the Maghreb, Libya and Egypt Islamic; Sahel trade edge; Christian Ethiopia/Nubia edge where shown; Sahel-south = African traditional wash.',
         },
         {
           heading: 'Americas / Oceania',
@@ -517,12 +517,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
     },
     1500: {
       title: '1500 CE: schematic reconstruction',
       caption:
-        'Around 1500 CE **no Granada**: all Iberia Christian. The **Islamic** belt is Maghreb-Libya-Egypt-Levant-Arabia-Iran-Central Asia, and Anatolia roughly Muslim Ottoman (Constantinople 1453). The Balkans sit under Ottoman rule but the population is still mostly Christian, no solid Islamic wash across Southeast Europe. India Hindu; Buddhism and the Chinese layer hold the East. In the Americas, Aztec and Inca local-tradition cores remain; a light early Christian colonial edge appears in the Caribbean and on the Mexican coast.',
+        'Around 1500 CE **no Granada**: all Iberia Christian. The **Islamic** belt is the Maghreb, Libya, Egypt, the Levant, Arabia, Iran and Central Asia, and Anatolia roughly Muslim Ottoman (Constantinople 1453). The Balkans sit under Ottoman rule but the population is still mostly Christian, no solid Islamic wash across Southeast Europe. India Hindu; Buddhism and the Chinese layer hold the East. In the Americas, Aztec and Inca local-tradition cores remain; a light early Christian colonial edge appears in the Caribbean and on the Mexican coast.',
       imageAlt:
         'Schematic world religion map for 1500 CE: no Granada, Ottoman Anatolia, Balkans Christian, Aztec and Inca cores, light colonial edge',
       honestyPills: packCHonesty.en,
@@ -533,7 +533,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Levant-Arabia-Near East-Persia-Central Asia; Anatolia majority Muslim (Ottoman heartland after 1453). No Iberia / Granada fill. Thin Zoroastrian remnant hatch only.',
+          text: 'Islamic Maghreb, Libya, Egypt, the Levant, Arabia, the Near East, Persia and Central Asia; Anatolia majority Muslim (Ottoman heartland after 1453). No Iberia / Granada fill. Thin Zoroastrian remnant hatch only.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -541,7 +541,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Libya-Egypt Islamic; Sahel trade edge; Christian Ethiopia/Nubia edge where shown; Sahel-south = African traditional wash.',
+          text: 'the Maghreb, Libya and Egypt Islamic; Sahel trade edge; Christian Ethiopia/Nubia edge where shown; Sahel-south = African traditional wash.',
         },
         {
           heading: 'Americas / Oceania',
@@ -549,7 +549,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean-Mexico Christian edge.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia roughly Muslim; Balkans Christian) plus Aztec and Inca Americas with an early Christian edge in the Caribbean and Mexico.',
     },
     1600: {
       title: '1600 CE: schematic reconstruction',
@@ -565,7 +565,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Levant-Arabia-Near East-Persia-Central Asia; Anatolia Islamic (Ottoman heartland). Sahel and Swahili coasts in the Islamic belt. Thin Zoroastrian remnant hatch only where marked.',
+          text: 'Islamic Maghreb, Libya, Egypt, the Levant, Arabia, the Near East, Persia and Central Asia; Anatolia Islamic (Ottoman heartland). Sahel and Swahili coasts in the Islamic belt. Thin Zoroastrian remnant hatch only where marked.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -573,7 +573,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Maghreb-Egypt-Sahel-Swahili in the Islamic belt. South of the Sahara mostly African traditional. Christian pockets only: Ethiopia, Kongo, and Portuguese coasts. No Madagascar Christian fill.',
+          text: 'the Maghreb, Egypt, Sahel and Swahili in the Islamic belt. South of the Sahara mostly African traditional. Christian pockets only: Ethiopia, Kongo, and Portuguese coasts. No Madagascar Christian fill.',
         },
         {
           heading: 'Americas / Oceania',
@@ -581,7 +581,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Ottoman Anatolia Islamic; Balkans demographically Christian; Americas Christianizing (inland residual + colonial edge); Africa Christian pockets only.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: Ottoman Anatolia Islamic; Balkans demographically Christian; Americas Christianizing (inland residual and a colonial edge); Africa Christian pockets only.',
     },
     1700: {
       title: '1700 CE: schematic reconstruction',
@@ -597,7 +597,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Levant-Arabia-Near East-Persia-Central Asia; Anatolia Islamic (Ottoman). Sahel and Swahili coasts in the Islamic belt. Thin Zoroastrian remnant hatch only.',
+          text: 'Islamic Maghreb, Libya, Egypt, the Levant, Arabia, the Near East, Persia and Central Asia; Anatolia Islamic (Ottoman). Sahel and Swahili coasts in the Islamic belt. Thin Zoroastrian remnant hatch only.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -605,7 +605,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Same Christian pockets as 1600 (Ethiopia, Kongo, Portuguese coasts) plus the Cape Colony (from 1652). Maghreb-Egypt-Sahel-Swahili Islamic. South of the Sahara mostly African traditional. No Madagascar Christian.',
+          text: 'Same Christian pockets as 1600 (Ethiopia, Kongo, Portuguese coasts) plus the Cape Colony (from 1652). the Maghreb, Egypt, Sahel and Swahili Islamic. South of the Sahara mostly African traditional. No Madagascar Christian.',
         },
         {
           heading: 'Americas / Oceania',
@@ -613,7 +613,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Americas Christianizing; Orthodox Russia + Lutheran Scandinavia; Cape Colony from 1652; Australia Aboriginal.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: Americas Christianizing; Orthodox Russia and Lutheran Scandinavia; Cape Colony from 1652; Australia Aboriginal.',
     },
     1800: {
       title: '1800 CE: schematic reconstruction',
@@ -629,7 +629,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Southwest Asia / North Africa / Iran',
-          text: 'Islamic Maghreb-Libya-Egypt-Levant-Arabia-Near East-Persia-Central Asia; Anatolia Islamic (Ottoman). Sahel and Swahili coasts in the Islamic belt. Tiny Coptic residual in Egypt where marked. Thin Zoroastrian remnant hatch only.',
+          text: 'Islamic Maghreb, Libya, Egypt, the Levant, Arabia, the Near East, Persia and Central Asia; Anatolia Islamic (Ottoman). Sahel and Swahili coasts in the Islamic belt. Tiny Coptic residual in Egypt where marked. Thin Zoroastrian remnant hatch only.',
         },
         {
           heading: 'South / Central / East Asia',
@@ -637,7 +637,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Africa',
-          text: 'Still Christian pockets only: Ethiopia, Kongo, Angola/Mozambique, Cape; tiny Freetown and a Coptic residual. Maghreb-Egypt-Sahel-Swahili Islamic. South of the Sahara mostly African traditional. No Madagascar Christian.',
+          text: 'Still Christian pockets only: Ethiopia, Kongo, Angola/Mozambique, Cape; tiny Freetown and a Coptic residual. the Maghreb, Egypt, Sahel and Swahili Islamic. South of the Sahara mostly African traditional. No Madagascar Christian.',
         },
         {
           heading: 'Americas / Oceania',
@@ -645,7 +645,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Napoleonic / independence-eve Americas; Orthodoxy to the Pacific; Africa pockets; NSW speck 1788.',
+        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical Basemaps, André Ourednik, GPL-3.0 licence. 3. Land mask: Natural Earth 110m. 4. Orientation only: Napoleonic and independence-eve Americas; Orthodoxy to the Pacific; African pockets; a New South Wales speck from 1788.',
     },
   },
   ru: {
@@ -666,7 +666,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Серый: без заливки. Австралию и Тихий океан на этом листе религиями не заливаем.',
       },
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps. Музейный компаньон: Элизе Реклю, L’Homme et la Terre (1905), общественное достояние.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0. Музейный компаньон: Элизе Реклю, L’Homme et la Terre (1905), общественное достояние.',
     },
     100: {
       title: '100 н. э.: Траян всё ещё язычник',
@@ -685,7 +685,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'По-прежнему серый: без заливки.',
       },
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0.',
     },
     200: {
       title: '200 н. э.: официально языческий Рим, гуще христианские города',
@@ -704,7 +704,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Серый: без заливки.',
       },
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0.',
     },
     300: {
       title: '300 н. э.: канун Константина, большинство языческое',
@@ -723,7 +723,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Серый: без заливки.',
       },
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
     },
     400: {
       title: '400 н. э.: после Феодосия, не вся Европа христианская',
@@ -742,7 +742,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'По-прежнему серый: без заливки.',
       },
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
     },
     500: {
       title: '500 н. э.: бывший римский мир, сельское язычество ещё видно',
@@ -773,7 +773,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0.',
     },
     600: {
       title: '600 н. э.: сильнее христианский пояс, Иран зороастрийский',
@@ -804,7 +804,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0. Компаньон процесса: распространение христианства до 600 (CC BY-SA 3.0).',
     },
     700: {
       title: '700 н. э.: впервые широкий исламский пояс Омейядов',
@@ -841,12 +841,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0.',
     },
     800: {
       title: '800 н. э.: аббасидский пояс, сильнее франкский запад',
       caption:
-        'К 800 н. э. исламский пояс уже **аббасидский**: то же Средиземноморье-Иран, чуть полнее на востоке; аль-Андалус и Магриб на месте. На западе сильнее франкское / каролингское христианство; Скандинавия и славянский восток всё ещё местные. Индия индуистская; буддизм и китайский имперский слой держат Восток. Америка не нанесена.',
+        'К 800 н. э. исламский пояс уже **аббасидский**: то же Средиземноморье и Иран, чуть полнее на востоке; аль-Андалус и Магриб на месте. На западе сильнее франкское / каролингское христианство; Скандинавия и славянский восток всё ещё местные. Индия индуистская; буддизм и китайский имперский слой держат Восток. Америка не нанесена.',
       imageAlt:
         'Схематическая карта религий на 800 год н. э.: аббасидский исламский пояс полнее на востоке, сильнее франкское каролингское христианство на западе, индуистская Индия, Америка без заливки',
       honestyPills: [
@@ -862,7 +862,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Иран',
-          text: 'Аббасидский исламский пояс: то же Средиземноморье-Иран, чуть полнее на востоке. Тонкая зороастрийская штриховка-остаток в Иране. Аль-Андалус и Магриб на месте.',
+          text: 'Аббасидский исламский пояс: то же Средиземноморье и Иран, чуть полнее на востоке. Тонкая зороастрийская штриховка-остаток в Иране. Аль-Андалус и Магриб на месте.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -878,7 +878,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0.',
     },
     900: {
       title: '900 н. э.: преемники аббасидов, христианская Европа не сплошь на севере',
@@ -915,14 +915,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: André Ourednik et al., historical-basemaps (GPL-3.0); исходники: github.com/aourednik/historical-basemaps.',
+        'Полигоны религий © Fix Planet (схематическая реконструкция, не перепись). Подложка: Historical Basemaps, André Ourednik, лицензия GPL-3.0.',
     },
     1000: {
       title: '1000 н. э.: схематическая реконструкция',
       caption:
-        'Около 1000 н. э. широкий **исламский** пояс всё ещё держит Магриб-Ливию-Египет-Ближний Восток, Аравию, Иран, Центральную Азию и Синд; аль-Андалус на месте, лёгкий сахельский край. Христианская Европа шире на север и восток, саксонский / польский / киевский край, но не сплошь Скандинавия и Балтика. Индия индуистская; буддийские коридоры и китайский имперский слой на Востоке. Америка не нанесена.',
+        'Около 1000 н. э. широкий **исламский** пояс всё ещё держит Магриб, Ливию, Египет и Ближний Восток, Аравию, Иран, Центральную Азию и Синд; аль-Андалус на месте, лёгкий сахельский край. Христианская Европа шире на север и восток, саксонский / польский / киевский край, но не сплошь Скандинавия и Балтика. Индия индуистская; буддийские коридоры и китайский имперский слой на Востоке. Америка не нанесена.',
       imageAlt:
-        'Схематическая карта религий на 1000 год н. э.: широкий исламский пояс Магриб-Ливия-Египет-Ближний Восток, христианская Европа шире на север и восток, Америка без заливки',
+        'Схематическая карта религий на 1000 год н. э.: широкий исламский пояс Магриб, Ливия, Египет и Ближний Восток, христианская Европа шире на север и восток, Америка без заливки',
       honestyPills: [
         'Схематическая реконструкция',
         'Не перепись',
@@ -936,7 +936,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский пояс Магриб-Ливия-Египет-Ближний Восток через Аравию в Иран, Центральную Азию и Синд; аль-Андалус держится; лёгкий сахельский / западноафриканский торговый край. Тонкая зороастрийская штриховка-остаток; манихейская меньшинственная штриховка меньше где видно.',
+          text: 'Исламский пояс Магриб, Ливия, Египет и Ближний Восток через Аравию в Иран, Центральную Азию и Синд; аль-Андалус держится; лёгкий сахельский / западноафриканский торговый край. Тонкая зороастрийская штриховка-остаток; манихейская меньшинственная штриховка меньше где видно.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -944,7 +944,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Ливия-Египет в исламском поясе; лёгкий сахельский торговый край; Аксум/Нубия, христианский край; к югу от Сахары, грубый африканский традиционный смыв.',
+          text: 'Магриб, Ливия и Египет в исламском поясе; лёгкий сахельский торговый край; Аксум/Нубия, христианский край; к югу от Сахары, грубый африканский традиционный смыв.',
         },
         {
           heading: 'Америка / Океания',
@@ -952,7 +952,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: средневековые обзоры религий Афроевразии.',
     },
     1100: {
       title: '1100 н. э.: схематическая реконструкция',
@@ -969,11 +969,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Европа / Средиземноморье',
-          text: 'Полнее христианский Рейнланд / Германия, край Богемии-Польши, Балканы / Византия, Италия; схематический крестоносный край в Леванте. Иберия всё ещё исламская. Дальний северный остаток и балтийско-финские очаги, местные традиции. Иудейские пятна.',
+          text: 'Полнее христианский Рейнланд / Германия, край Богемии и Польши, Балканы / Византия, Италия; схематический крестоносный край в Леванте. Иберия всё ещё исламская. Дальний северный остаток и балтийско-финские очаги, местные традиции. Иудейские пятна.',
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский Магриб-Ливия-Египет-Левант-Аравия-Ближний Восток-Персия-край Центральной Азии; аль-Андалус держится; сахельский край. Только тонкая зороастрийская штриховка-остаток.',
+          text: 'Исламский Магриб, Ливия, Египет, Левант, Аравия, Ближний Восток, Персия и край Центральной Азии; аль-Андалус держится; сахельский край. Только тонкая зороастрийская штриховка-остаток.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -981,7 +981,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Ливия-Египет исламские; сахельский торговый край; Аксум/Нубия, христианский край; Сахель и юг, африканский традиционный смыв.',
+          text: 'Магриб, Ливия и Египет исламские; сахельский торговый край; Аксум/Нубия, христианский край; Сахель и юг, африканский традиционный смыв.',
         },
         {
           heading: 'Америка / Океания',
@@ -989,12 +989,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: обзоры религий Афроевразии высокого средневековья.',
     },
     1200: {
       title: '1200 н. э.: схематическая реконструкция',
       caption:
-        'Около 1200 н. э. (канун монгольской эпохи) тот же крупный **исламский** пояс: Магриб-Ливия-Египет-Ближний Восток-Иран-Центральная Азия, аль-Андалус, край Инда и сахельский край; без выдуманной новой империи. Христианство чуть дальше в Балтику и Скандинавию, всё ещё не сплошь Европа. Индия индуистская; буддизм и китайский имперский слой на Востоке. Америка не нанесена.',
+        'Около 1200 н. э. (канун монгольской эпохи) тот же крупный **исламский** пояс: Магриб, Ливия, Египет, Ближний Восток, Иран и Центральная Азия, аль-Андалус, край Инда и сахельский край; без выдуманной новой империи. Христианство чуть дальше в Балтику и Скандинавию, всё ещё не сплошь Европа. Индия индуистская; буддизм и китайский имперский слой на Востоке. Америка не нанесена.',
       imageAlt:
         'Схематическая карта религий на 1200 год н. э.: крупный исламский пояс, христианский край Балтики и Скандинавии, Америка без заливки',
       honestyPills: [
@@ -1010,7 +1010,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Тот же крупный исламский пояс, что в 1100, плюс край Инда / Мултана и чуть сахельский торговый край: Магриб-Ливия-Египет-Ближний Восток-Персия-Центральная Азия; аль-Андалус. Только тонкая зороастрийская штриховка-остаток.',
+          text: 'Тот же крупный исламский пояс, что в 1100, плюс край Инда / Мултана и чуть сахельский торговый край: Магриб, Ливия, Египет, Ближний Восток, Персия и Центральная Азия; аль-Андалус. Только тонкая зороастрийская штриховка-остаток.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1018,7 +1018,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Ливия-Египет исламские; чуть сахельский торговый край; Аксум/Нубия, христианский край; Сахель и юг, африканский традиционный смыв.',
+          text: 'Магриб, Ливия и Египет исламские; чуть сахельский торговый край; Аксум/Нубия, христианский край; Сахель и юг, африканский традиционный смыв.',
         },
         {
           heading: 'Америка / Океания',
@@ -1026,12 +1026,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: обзоры религий Афроевразии высокого средневековья.',
     },
     1300: {
       title: '1300 н. э.: схематическая реконструкция',
       caption:
-        'Около 1300 н. э. **исламский** пояс: мамлюкский Египет и Сирия, Магриб и Ливия, край Анатолии (ранние османы), анклав Гранады в Иберии, плюс Ближний Восток-Аравия-Иран-Центральная Азия и край Дели. Христианская Европа почти сплошная на Западе и в центре; Балканы христианские. Индия индуистская; буддийские коридоры и китайский слой на Востоке. В Америке, местные традиции: поднимающаяся Мезоамерика (ацтеки) и Анды, плюс другие коренные зоны.',
+        'Около 1300 н. э. **исламский** пояс: мамлюкский Египет и Сирия, Магриб и Ливия, край Анатолии (ранние османы), анклав Гранады в Иберии, плюс Ближний Восток, Аравия, Иран и Центральная Азия и край Дели. Христианская Европа почти сплошная на Западе и в центре; Балканы христианские. Индия индуистская; буддийские коридоры и китайский слой на Востоке. В Америке, местные традиции: поднимающаяся Мезоамерика (ацтеки) и Анды, плюс другие коренные зоны.',
       imageAlt:
         'Схематическая карта религий на 1300 год н. э.: мамлюкский исламский пояс, край Анатолии, анклав Гранады, Америка: местные традиции',
       honestyPills: packCHonesty.ru,
@@ -1042,7 +1042,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Мамлюкский исламский Египет-Сирия / Левант; Магриб-Ливия; Аравия-Ближний Восток-Иран-Центральная Азия; исламский край Анатолии (ранние османы); край Дели / Инда. Только тонкая зороастрийская штриховка-остаток где отмечено.',
+          text: 'Мамлюкский исламский Египет и Сирия / Левант; Магриб и Ливия; Аравия, Ближний Восток, Иран и Центральная Азия; исламский край Анатолии (ранние османы); край Дели / Инда. Только тонкая зороастрийская штриховка-остаток где отмечено.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1050,7 +1050,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Ливия-Египет в исламском поясе; лёгкий сахельский торговый край; христианский край Эфиопии/Нубии где видно; к югу от Сахары, грубый африканский традиционный смыв.',
+          text: 'Магриб, Ливия и Египет в исламском поясе; лёгкий сахельский торговый край; христианский край Эфиопии/Нубии где видно; к югу от Сахары, грубый африканский традиционный смыв.',
         },
         {
           heading: 'Америка / Океания',
@@ -1058,12 +1058,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: позднесредневековые обзоры Афроевразии (мамлюки, ранний османский край, Гранада) и коренная Америка (поднимающаяся ацтекская Мезоамерика и Анды).',
     },
     1400: {
       title: '1400 н. э.: схематическая реконструкция',
       caption:
-        'К 1400 н. э. **исламский** пояс шире: мамлюкский Египет-Сирия-Левант, Магриб-Ливия, зона Тимура (Центральная Азия / Иран / Ближний Восток), Анатолия уже в основном исламская (османы), анклав Гранады ещё на месте. Христианская Европа полнее; Балканы демографически всё ещё в основном христианские. Индия индуистская; буддизм и китайский слой на Востоке. В Америке, сильные местные ядра: ацтекская Мезоамерика и империя инков в Андах, плюс другие коренные зоны.',
+        'К 1400 н. э. **исламский** пояс шире: мамлюкский Египет, Сирия и Левант, Магриб и Ливия, зона Тимура (Центральная Азия / Иран / Ближний Восток), Анатолия уже в основном исламская (османы), анклав Гранады ещё на месте. Христианская Европа полнее; Балканы демографически всё ещё в основном христианские. Индия индуистская; буддизм и китайский слой на Востоке. В Америке, сильные местные ядра: ацтекская Мезоамерика и империя инков в Андах, плюс другие коренные зоны.',
       imageAlt:
         'Схематическая карта религий на 1400 год н. э.: шире исламский пояс, османская Анатолия, анклав Гранады, ядра ацтеков и инков',
       honestyPills: packCHonesty.ru,
@@ -1074,7 +1074,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский Магриб-Ливия-Египет-Левант-Аравия плюс тимуровская заливка полнее в Иран и Центральную Азию; Анатолия в основном исламская (османы). Карман Гранады в Иберии остаётся. Только тонкая зороастрийская штриховка-остаток.',
+          text: 'Исламский Магриб, Ливия, Египет, Левант и Аравия плюс тимуровская заливка полнее в Иран и Центральную Азию; Анатолия в основном исламская (османы). Карман Гранады в Иберии остаётся. Только тонкая зороастрийская штриховка-остаток.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1082,7 +1082,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Ливия-Египет исламские; сахельский торговый край; христианский край Эфиопии/Нубии где видно; Сахель и юг, африканский традиционный смыв.',
+          text: 'Магриб, Ливия и Египет исламские; сахельский торговый край; христианский край Эфиопии/Нубии где видно; Сахель и юг, африканский традиционный смыв.',
         },
         {
           heading: 'Америка / Океания',
@@ -1090,12 +1090,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: позднесредневековые обзоры Афроевразии (Тимур; Анатолия уже в основном османская; Гранада; Балканы христианские) и ацтекская Мезоамерика с инкскими Андами.',
     },
     1500: {
       title: '1500 н. э.: схематическая реконструкция',
       caption:
-        'Около 1500 н. э. **Гранады уже нет**: вся Иберия христианская. **Исламский** пояс: Магриб-Ливия-Египет-Левант-Аравия-Иран-Центральная Азия и Анатолия примерно мусульманская (османы; Константинополь 1453). Балканы под османским правлением, но население всё ещё в основном христианское, без сплошной исламской заливки Юго-Восточной Европы. Индия индуистская; буддизм и китайский слой на Востоке. В Америке: ацтекские и инкские ядра местных традиций; лёгкий ранний христианский колониальный край на Карибах и побережье Мексики.',
+        'Около 1500 н. э. **Гранады уже нет**: вся Иберия христианская. **Исламский** пояс: Магриб, Ливия, Египет, Левант, Аравия, Иран и Центральная Азия и Анатолия примерно мусульманская (османы; Константинополь 1453). Балканы под османским правлением, но население всё ещё в основном христианское, без сплошной исламской заливки Юго-Восточной Европы. Индия индуистская; буддизм и китайский слой на Востоке. В Америке: ацтекские и инкские ядра местных традиций; лёгкий ранний христианский колониальный край на Карибах и побережье Мексики.',
       imageAlt:
         'Схематическая карта религий на 1500 год н. э.: без Гранады, османская Анатолия, христианские Балканы, ядра ацтеков и инков, лёгкий колониальный край',
       honestyPills: packCHonesty.ru,
@@ -1106,7 +1106,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский Магриб-Ливия-Египет-Левант-Аравия-Ближний Восток-Персия-Центральная Азия; Анатолия в основном мусульманская (османы после 1453). Без заливки Иберии / Гранады. Только тонкая зороастрийская штриховка-остаток.',
+          text: 'Исламский Магриб, Ливия, Египет, Левант, Аравия, Ближний Восток, Персия и Центральная Азия; Анатолия в основном мусульманская (османы после 1453). Без заливки Иберии / Гранады. Только тонкая зороастрийская штриховка-остаток.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1114,7 +1114,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Ливия-Египет исламские; сахельский торговый край; христианский край Эфиопии/Нубии где видно; Сахель и юг, африканский традиционный смыв.',
+          text: 'Магриб, Ливия и Египет исламские; сахельский торговый край; христианский край Эфиопии/Нубии где видно; Сахель и юг, африканский традиционный смыв.',
         },
         {
           heading: 'Америка / Океания',
@@ -1122,7 +1122,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean-Mexico Christian edge.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: раннемодерные обзоры Афроевразии (Гранады уже нет; османская Анатолия примерно мусульманская; Балканы христианские) и ацтекско-инкская Америка с ранним христианским краем на Карибах и в Мексике.',
     },
     1600: {
       title: '1600 н. э.: схематическая реконструкция',
@@ -1138,7 +1138,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский Магриб-Ливия-Египет-Левант-Аравия-Ближний Восток-Персия-Центральная Азия; Анатолия исламская (османы). Сахель и суахилийский берег в исламском поясе. Только тонкая зороастрийская штриховка-остаток где отмечено.',
+          text: 'Исламский Магриб, Ливия, Египет, Левант, Аравия, Ближний Восток, Персия и Центральная Азия; Анатолия исламская (османы). Сахель и суахилийский берег в исламском поясе. Только тонкая зороастрийская штриховка-остаток где отмечено.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1146,7 +1146,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Магриб-Египет-Сахель-суахилийский берег в исламском поясе. Южнее Сахары в основном африканские традиции. Христианские анклавы только: Эфиопия, Конго и португальские берега. Мадагаскар не христианский.',
+          text: 'Магриб, Египет, Сахель и суахилийский берег в исламском поясе. Южнее Сахары в основном африканские традиции. Христианские анклавы только: Эфиопия, Конго и португальские берега. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
@@ -1154,7 +1154,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Ottoman Anatolia Islamic; Balkans demographically Christian; Americas Christianizing (inland residual + colonial edge); Africa Christian pockets only.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: османская Анатолия исламская; Балканы демографически христианские; Америка христианизируется (внутренний остаток и колониальный край); в Африке только христианские анклавы.',
     },
     1700: {
       title: '1700 н. э.: схематическая реконструкция',
@@ -1170,7 +1170,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский Магриб-Ливия-Египет-Левант-Аравия-Ближний Восток-Персия-Центральная Азия; Анатолия исламская (османы). Сахель и суахилийский берег в исламском поясе. Только тонкая зороастрийская штриховка-остаток.',
+          text: 'Исламский Магриб, Ливия, Египет, Левант, Аравия, Ближний Восток, Персия и Центральная Азия; Анатолия исламская (османы). Сахель и суахилийский берег в исламском поясе. Только тонкая зороастрийская штриховка-остаток.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1178,7 +1178,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Те же христианские анклавы, что в 1600 (Эфиопия, Конго, португальские берега), плюс Капская колония (с 1652). Магриб-Египет-Сахель-суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
+          text: 'Те же христианские анклавы, что в 1600 (Эфиопия, Конго, португальские берега), плюс Капская колония (с 1652). Магриб, Египет, Сахель и суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
@@ -1186,7 +1186,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Americas Christianizing; Orthodox Russia + Lutheran Scandinavia; Cape Colony from 1652; Australia Aboriginal.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: Америка христианизируется; православная Россия и лютеранская Скандинавия; Капская колония с 1652 года; Австралия с традициями аборигенов.',
     },
     1800: {
       title: '1800 н. э.: схематическая реконструкция',
@@ -1202,7 +1202,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Юго-Западная Азия / Северная Африка / Иран',
-          text: 'Исламский Магриб-Ливия-Египет-Левант-Аравия-Ближний Восток-Персия-Центральная Азия; Анатолия исламская (османы). Сахель и суахилийский берег в исламском поясе. Крошечный коптский остаток в Египте где отмечено. Только тонкая зороастрийская штриховка-остаток.',
+          text: 'Исламский Магриб, Ливия, Египет, Левант, Аравия, Ближний Восток, Персия и Центральная Азия; Анатолия исламская (османы). Сахель и суахилийский берег в исламском поясе. Крошечный коптский остаток в Египте где отмечено. Только тонкая зороастрийская штриховка-остаток.',
         },
         {
           heading: 'Южная / Центральная / Восточная Азия',
@@ -1210,7 +1210,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Африка',
-          text: 'Всё ещё только анклавы: Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток. Магриб-Египет-Сахель-суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
+          text: 'Всё ещё только анклавы: Эфиопия, Конго, Ангола/Мозамбик, Кап; крошечный Фритаун и коптский остаток. Магриб, Египет, Сахель и суахилийский берег исламские. Южнее Сахары в основном африканские традиции. Мадагаскар не христианский.',
         },
         {
           heading: 'Америка / Океания',
@@ -1218,7 +1218,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Napoleonic / independence-eve Americas; Orthodoxy to the Pacific; Africa pockets; NSW speck 1788.',
+        '1. Заливки религий: схематическая реконструкция Fix Planet (не перепись). 2. Historical Basemaps, André Ourednik, лицензия GPL-3.0. 3. Маска суши: Natural Earth 110m. 4. Только ориентир: Америка наполеоновской эпохи и кануна независимости; православие до Тихого океана; африканские анклавы; крошечный Новый Южный Уэльс с 1788 года.',
     },
   },
   pl: {
@@ -1239,7 +1239,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Szary: bez wypełnienia. Australii i Pacyfiku nie zalewamy tu jako religii.',
       },
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps. Towarzysz muzealny: Élisée Reclus, L’Homme et la Terre (1905), domena publiczna.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0. Towarzysz muzealny: Élisée Reclus, L’Homme et la Terre (1905), domena publiczna.',
     },
     100: {
       title: '100 n.e.: Trajan wciąż pogański',
@@ -1258,7 +1258,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Nadal szary: bez wypełnienia.',
       },
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0.',
     },
     200: {
       title: '200 n.e.: oficjalnie pogański, gęstsze miasta chrześcijańskie',
@@ -1277,7 +1277,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Szary: bez wypełnienia.',
       },
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0.',
     },
     300: {
       title: '300 n.e.: przeddzień Konstantyna, większość pogańska',
@@ -1296,7 +1296,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Szary: bez wypełnienia.',
       },
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
     },
     400: {
       title: '400 n.e.: po Teodozjuszu, nie cała Europa chrześcijańska',
@@ -1315,7 +1315,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Nadal szary: bez wypełnienia.',
       },
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
     },
     500: {
       title: '500 n.e.: dawny świat rzymski, wiejskie pogaństwo wciąż widoczne',
@@ -1346,7 +1346,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0.',
     },
     600: {
       title: '600 n.e.: silniejszy pas chrześcijański, Iran zoroastryjski',
@@ -1377,7 +1377,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0. Towarzysz procesu: rozprzestrzenianie chrześcijaństwa do 600 (CC BY-SA 3.0).',
     },
     700: {
       title: '700 n.e.: pierwszy szeroki pas islamu Umajjadów',
@@ -1414,7 +1414,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0.',
     },
     800: {
       title: '800 n.e.: pas abbasydzki, silniejszy zachód frankijski',
@@ -1451,7 +1451,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0.',
     },
     900: {
       title: '900 n.e.: następcy Abbasydów, chrześcijańska Europa wciąż nie jednolita na północy',
@@ -1488,14 +1488,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: André Ourednik et al., historical-basemaps (GPL-3.0); źródło: github.com/aourednik/historical-basemaps.',
+        'Wielokąty religii © Fix Planet (rekonstrukcja schematyczna, nie spis). Podkład: Historical Basemaps, André Ourednik, licencja GPL-3.0.',
     },
     1000: {
       title: '1000 n.e.: rekonstrukcja schematyczna',
       caption:
-        'Około 1000 n.e. szeroki pas **islamu** nadal trzyma Maghreb-Libię-Egipt-Bliski Wschód, Arabię, Iran, Azję Środkową i Sind; al-Andalus na miejscu, lekka krawędź sahelska. Chrześcijańska Europa szersza na północ i wschód, krawędź saska / polska / kijowska, wciąż nie jednolita Skandynawia ani Bałtyk. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa cesarska na Wschodzie. Ameryki nie naniesione.',
+        'Około 1000 n.e. szeroki pas **islamu** nadal trzyma Maghreb, Libię, Egipt i Bliski Wschód, Arabię, Iran, Azję Środkową i Sind; al-Andalus na miejscu, lekka krawędź sahelska. Chrześcijańska Europa szersza na północ i wschód, krawędź saska / polska / kijowska, wciąż nie jednolita Skandynawia ani Bałtyk. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa cesarska na Wschodzie. Ameryki nie naniesione.',
       imageAlt:
-        'Schematyczna mapa religii na rok 1000 n.e.: szeroki pas islamu Maghreb-Libia-Egipt-Bliski Wschód, chrześcijańska Europa szersza na północ i wschód, Ameryki bez wypełnienia',
+        'Schematyczna mapa religii na rok 1000 n.e.: szeroki pas islamu Maghreb, Libia, Egipt i Bliski Wschód, chrześcijańska Europa szersza na północ i wschód, Ameryki bez wypełnienia',
       honestyPills: [
         'Rekonstrukcja schematyczna',
         'Nie spis',
@@ -1509,7 +1509,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski pas Maghreb-Libia-Egipt-Bliski Wschód przez Arabię do Iranu, Azji Środkowej i Sind; al-Andalus trzymany; lekka krawędź sahelska / zachodnioafrykańskiego handlu. Cienkie kreskowanie zoroastryjskiego pozostałości; manichejska kreska mniejszościowa mniejsza tam, gdzie widać.',
+          text: 'Islamski pas Maghreb, Libia, Egipt i Bliski Wschód przez Arabię do Iranu, Azji Środkowej i Sind; al-Andalus trzymany; lekka krawędź sahelska / zachodnioafrykańskiego handlu. Cienkie kreskowanie zoroastryjskiego pozostałości; manichejska kreska mniejszościowa mniejsza tam, gdzie widać.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1517,7 +1517,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Libia-Egipt w pasie islamskim; lekka krawędź handlowa Sahelu; Aksum/Nubia, krawędź chrześcijańska; na południe od Sahary, gruby afrykański zmyw tradycyjny.',
+          text: 'Maghreb, Libia i Egipt w pasie islamskim; lekka krawędź handlowa Sahelu; Aksum/Nubia, krawędź chrześcijańska; na południe od Sahary, gruby afrykański zmyw tradycyjny.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1525,7 +1525,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: średniowieczne przeglądy religii Afroeurazji.',
     },
     1100: {
       title: '1100 n.e.: rekonstrukcja schematyczna',
@@ -1542,11 +1542,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Europa / Śródziemnomorze',
-          text: 'Pełniejszy chrześcijański Nadrenia / Niemcy, krawędź Czech-Polski, Bałkany / Bizancjum, Włochy; schematyczna krawędź krzyżowców w Lewancie. Iberia nadal islamska. Daleki północny pozostałość i ogniska bałtycko-fińskie, tradycje lokalne. Plamy żydowskie.',
+          text: 'Pełniejszy chrześcijański Nadrenia / Niemcy, krawędź Czech i Polski, Bałkany / Bizancjum, Włochy; schematyczna krawędź krzyżowców w Lewancie. Iberia nadal islamska. Daleki północny pozostałość i ogniska bałtycko-fińskie, tradycje lokalne. Plamy żydowskie.',
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb-Libia-Egipt-Lewant-Arabia-Bliski Wschód-Persja-krawędź Azji Środkowej; al-Andalus trzymany; krawędź Sahelu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Islamski Maghreb, Libia, Egipt, Lewant, Arabia, Bliski Wschód, Persja i krawędź Azji Środkowej; al-Andalus trzymany; krawędź Sahelu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1554,7 +1554,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Libia-Egipt islamskie; krawędź handlowa Sahelu; Aksum/Nubia, krawędź chrześcijańska; Sahel i południe, afrykański zmyw tradycyjny.',
+          text: 'Maghreb, Libia i Egipt islamskie; krawędź handlowa Sahelu; Aksum/Nubia, krawędź chrześcijańska; Sahel i południe, afrykański zmyw tradycyjny.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1562,12 +1562,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: przeglądy religii Afroeurazji pełnego średniowiecza.',
     },
     1200: {
       title: '1200 n.e.: rekonstrukcja schematyczna',
       caption:
-        'Około 1200 n.e. (przededniu ery mongolskiej) ten sam wielki pas **islamu**: Maghreb-Libia-Egipt-Bliski Wschód-Iran-Azja Środkowa, al-Andalus, krawędź Indusu i Sahelu, bez wymyślonego nowego imperium. Chrześcijaństwo nieco dalej w Bałtyk i Skandynawię; wciąż nie cała Europa. Indie hinduistyczne; buddyzm i chińska warstwa cesarska na Wschodzie. Ameryki nie naniesione.',
+        'Około 1200 n.e. (przededniu ery mongolskiej) ten sam wielki pas **islamu**: Maghreb, Libia, Egipt, Bliski Wschód, Iran i Azja Środkowa, al-Andalus, krawędź Indusu i Sahelu, bez wymyślonego nowego imperium. Chrześcijaństwo nieco dalej w Bałtyk i Skandynawię; wciąż nie cała Europa. Indie hinduistyczne; buddyzm i chińska warstwa cesarska na Wschodzie. Ameryki nie naniesione.',
       imageAlt:
         'Schematyczna mapa religii na rok 1200 n.e.: wielki pas islamu, chrześcijańska krawędź Bałtyku i Skandynawii, Ameryki bez wypełnienia',
       honestyPills: [
@@ -1583,7 +1583,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Ten sam wielki pas islamski co w 1100, plus krawędź Indusu / Multanu i lekka krawędź handlowa Sahelu: Maghreb-Libia-Egipt-Bliski Wschód-Persja-Azja Środkowa; al-Andalus. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Ten sam wielki pas islamski co w 1100, plus krawędź Indusu / Multanu i lekka krawędź handlowa Sahelu: Maghreb, Libia, Egipt, Bliski Wschód, Persja i Azja Środkowa; al-Andalus. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1591,7 +1591,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Libia-Egipt islamskie; lekka krawędź handlowa Sahelu; Aksum/Nubia, krawędź chrześcijańska; Sahel i południe, afrykański zmyw tradycyjny.',
+          text: 'Maghreb, Libia i Egipt islamskie; lekka krawędź handlowa Sahelu; Aksum/Nubia, krawędź chrześcijańska; Sahel i południe, afrykański zmyw tradycyjny.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1599,12 +1599,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: przeglądy religii Afroeurazji pełnego średniowiecza.',
     },
     1300: {
       title: '1300 n.e.: rekonstrukcja schematyczna',
       caption:
-        'Około 1300 n.e. pas **islamu**: mamelucki Egipt i Syria, Maghreb i Libia, krawędź Anatolii (wcześni Osmanowie), enklawa Granady w Iberii, plus Bliski Wschód-Arabia-Iran-Azja Środkowa i krawędź Delhi. Chrześcijańska Europa niemal jednolita na zachodzie i w centrum; Bałkany chrześcijańskie. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa na Wschodzie. W Amerykach, tradycje lokalne: rosnąca Mezoameryka (Aztekowie) i Andy, plus inne strefy rdzenne.',
+        'Około 1300 n.e. pas **islamu**: mamelucki Egipt i Syria, Maghreb i Libia, krawędź Anatolii (wcześni Osmanowie), enklawa Granady w Iberii, plus Bliski Wschód, Arabia, Iran i Azja Środkowa i krawędź Delhi. Chrześcijańska Europa niemal jednolita na zachodzie i w centrum; Bałkany chrześcijańskie. Indie hinduistyczne; korytarze buddyjskie i chińska warstwa na Wschodzie. W Amerykach, tradycje lokalne: rosnąca Mezoameryka (Aztekowie) i Andy, plus inne strefy rdzenne.',
       imageAlt:
         'Schematyczna mapa religii na rok 1300 n.e.: mamelucki pas islamu, krawędź Anatolii, enklawa Granady, Ameryki: tradycje lokalne',
       honestyPills: packCHonesty.pl,
@@ -1615,7 +1615,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Mamelucki islamski Egipt-Syria / Lewant; Maghreb-Libia; Arabia-Bliski Wschód-Iran-Azja Środkowa; islamska krawędź Anatolii (wcześni Osmanowie); krawędź Delhi / Indusu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości tam, gdzie zaznaczono.',
+          text: 'Mamelucki islamski Egipt i Syria / Lewant; Maghreb i Libia; Arabia, Bliski Wschód, Iran i Azja Środkowa; islamska krawędź Anatolii (wcześni Osmanowie); krawędź Delhi / Indusu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości tam, gdzie zaznaczono.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1623,7 +1623,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Libia-Egipt w pasie islamskim; lekka krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; na południe od Sahary, gruby afrykański zmyw tradycyjny.',
+          text: 'Maghreb, Libia i Egipt w pasie islamskim; lekka krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; na południe od Sahary, gruby afrykański zmyw tradycyjny.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1631,12 +1631,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: późnośredniowieczne przeglądy Afroeurazji (Mamelucy, wczesny skraj osmański, Granada) oraz rdzenne Ameryki (rosnąca aztecka Mezoameryka i Andy).',
     },
     1400: {
       title: '1400 n.e.: rekonstrukcja schematyczna',
       caption:
-        'Do 1400 n.e. pas **islamu** szerszy: mamelucki Egipt-Syria-Lewant, Maghreb-Libia, strefa Timura (Azja Środkowa / Iran / Bliski Wschód), Anatolia już w większości islamska (Osmanowie), enklawa Granady nadal na miejscu. Chrześcijańska Europa pełniejsza; Bałkany demograficznie wciąż w większości chrześcijańskie. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach, silne lokalne jądra: aztecka Mezoameryka i Andy inkaskie, plus inne strefy rdzenne.',
+        'Do 1400 n.e. pas **islamu** szerszy: mamelucki Egipt, Syria i Lewant, Maghreb i Libia, strefa Timura (Azja Środkowa / Iran / Bliski Wschód), Anatolia już w większości islamska (Osmanowie), enklawa Granady nadal na miejscu. Chrześcijańska Europa pełniejsza; Bałkany demograficznie wciąż w większości chrześcijańskie. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach, silne lokalne jądra: aztecka Mezoameryka i Andy inkaskie, plus inne strefy rdzenne.',
       imageAlt:
         'Schematyczna mapa religii na rok 1400 n.e.: szerszy pas islamu, osmańska Anatolia, enklawa Granady, jądra Azteków i Inków',
       honestyPills: packCHonesty.pl,
@@ -1647,7 +1647,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb-Libia-Egipt-Lewant-Arabia plus plama strefy Timura pełniejsza ku Iranowi i Azji Środkowej; Anatolia w większości islamska (Osmanowie). Kieszeń Granady w Iberii pozostaje. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Islamski Maghreb, Libia, Egipt, Lewant i Arabia plus plama strefy Timura pełniejsza ku Iranowi i Azji Środkowej; Anatolia w większości islamska (Osmanowie). Kieszeń Granady w Iberii pozostaje. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1655,7 +1655,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Libia-Egipt islamskie; krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; Sahel i południe: afrykański zmyw tradycyjny.',
+          text: 'Maghreb, Libia i Egipt islamskie; krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; Sahel i południe: afrykański zmyw tradycyjny.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1663,12 +1663,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: późnośredniowieczne przeglądy Afroeurazji (Timur; Anatolia już w większości osmańska; Granada; Bałkany chrześcijańskie) oraz aztecka Mezoameryka i inkaskie Andy.',
     },
     1500: {
       title: '1500 n.e.: rekonstrukcja schematyczna',
       caption:
-        'Około 1500 n.e. **Granady już nie ma**: cała Iberia chrześcijańska. Pas **islamu**: Maghreb-Libia-Egipt-Lewant-Arabia-Iran-Azja Środkowa oraz Anatolia w przybliżeniu muzułmańska osmańska (Konstantynopol 1453). Bałkany pod panowaniem osmańskim, ale ludność wciąż w większości chrześcijańska, bez jednolitej plamy islamskiej w Europie Południowo-Wschodniej. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach: lokalne jądra azteckie i inkaskie; lekka wczesna chrześcijańska krawędź kolonialna na Karaibach i wybrzeżu Meksyku.',
+        'Około 1500 n.e. **Granady już nie ma**: cała Iberia chrześcijańska. Pas **islamu**: Maghreb, Libia, Egipt, Lewant, Arabia, Iran i Azja Środkowa oraz Anatolia w przybliżeniu muzułmańska osmańska (Konstantynopol 1453). Bałkany pod panowaniem osmańskim, ale ludność wciąż w większości chrześcijańska, bez jednolitej plamy islamskiej w Europie Południowo-Wschodniej. Indie hinduistyczne; buddyzm i chińska warstwa na Wschodzie. W Amerykach: lokalne jądra azteckie i inkaskie; lekka wczesna chrześcijańska krawędź kolonialna na Karaibach i wybrzeżu Meksyku.',
       imageAlt:
         'Schematyczna mapa religii na rok 1500 n.e.: bez Granady, osmańska Anatolia, chrześcijańskie Bałkany, jądra Azteków i Inków, lekka krawędź kolonialna',
       honestyPills: packCHonesty.pl,
@@ -1679,7 +1679,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb-Libia-Egipt-Lewant-Arabia-Bliski Wschód-Persja-Azja Środkowa; Anatolia w większości muzułmańska (Osmanowie po 1453). Bez wypełnienia Iberii / Granady. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Islamski Maghreb, Libia, Egipt, Lewant, Arabia, Bliski Wschód, Persja i Azja Środkowa; Anatolia w większości muzułmańska (Osmanowie po 1453). Bez wypełnienia Iberii / Granady. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1687,7 +1687,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Libia-Egipt islamskie; krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; Sahel i południe: afrykański zmyw tradycyjny.',
+          text: 'Maghreb, Libia i Egipt islamskie; krawędź handlowa Sahelu; chrześcijańska krawędź Etiopii/Nubii tam, gdzie widać; Sahel i południe: afrykański zmyw tradycyjny.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1695,7 +1695,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean-Mexico Christian edge.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: wczesnonowożytne przeglądy Afroeurazji (bez Granady; osmańska Anatolia w przybliżeniu muzułmańska; Bałkany chrześcijańskie) oraz aztecko-inkaskie Ameryki z wczesną chrześcijańską krawędzią na Karaibach i w Meksyku.',
     },
     1600: {
       title: '1600 n.e.: rekonstrukcja schematyczna',
@@ -1711,7 +1711,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb-Libia-Egipt-Lewant-Arabia-Bliski Wschód-Persja-Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości tam, gdzie zaznaczono.',
+          text: 'Islamski Maghreb, Libia, Egipt, Lewant, Arabia, Bliski Wschód, Persja i Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości tam, gdzie zaznaczono.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1719,7 +1719,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Maghreb-Egipt-Sahel-wybrzeże suahili w pasie islamu. Na południe od Sahary przeważnie tradycje afrykańskie. Enklawy chrześcijańskie tylko: Etiopia, Kongo i portugalskie wybrzeża. Madagaskar nie chrześcijański.',
+          text: 'Maghreb, Egipt, Sahel i wybrzeże suahili w pasie islamu. Na południe od Sahary przeważnie tradycje afrykańskie. Enklawy chrześcijańskie tylko: Etiopia, Kongo i portugalskie wybrzeża. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1727,7 +1727,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Ottoman Anatolia Islamic; Balkans demographically Christian; Americas Christianizing (inland residual + colonial edge); Africa Christian pockets only.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: osmańska Anatolia islamska; Bałkany demograficznie chrześcijańskie; Ameryki się chrystianizują (wnętrze z pozostałością i krawędź kolonialna); w Afryce tylko chrześcijańskie enklawy.',
     },
     1700: {
       title: '1700 n.e.: rekonstrukcja schematyczna',
@@ -1743,7 +1743,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb-Libia-Egipt-Lewant-Arabia-Bliski Wschód-Persja-Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Islamski Maghreb, Libia, Egipt, Lewant, Arabia, Bliski Wschód, Persja i Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1751,7 +1751,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Te same enklawy chrześcijańskie co w 1600 (Etiopia, Kongo, portugalskie wybrzeża) plus Kolonia Przylądkowa (od 1652). Maghreb-Egipt-Sahel-wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
+          text: 'Te same enklawy chrześcijańskie co w 1600 (Etiopia, Kongo, portugalskie wybrzeża) plus Kolonia Przylądkowa (od 1652). Maghreb, Egipt, Sahel i wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1759,7 +1759,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Americas Christianizing; Orthodox Russia + Lutheran Scandinavia; Cape Colony from 1652; Australia Aboriginal.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: Ameryki się chrystianizują; prawosławna Rosja i luterańska Skandynawia; Kolonia Przylądkowa od 1652; Australia z tradycjami Aborygenów.',
     },
     1800: {
       title: '1800 n.e.: rekonstrukcja schematyczna',
@@ -1775,7 +1775,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Azja Południowo-Zachodnia / Afryka Północna / Iran',
-          text: 'Islamski Maghreb-Libia-Egipt-Lewant-Arabia-Bliski Wschód-Persja-Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Maleńka koptyjska pozostałość w Egipcie tam, gdzie zaznaczono. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
+          text: 'Islamski Maghreb, Libia, Egipt, Lewant, Arabia, Bliski Wschód, Persja i Azja Środkowa; Anatolia islamska (Osmanowie). Sahel i wybrzeże suahili w pasie islamu. Maleńka koptyjska pozostałość w Egipcie tam, gdzie zaznaczono. Tylko cienkie kreskowanie zoroastryjskiego pozostałości.',
         },
         {
           heading: 'Azja Południowa / Środkowa / Wschodnia',
@@ -1783,7 +1783,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Afryka',
-          text: 'Nadal tylko enklawy: Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość. Maghreb-Egipt-Sahel-wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
+          text: 'Nadal tylko enklawy: Etiopia, Kongo, Angola/Mozambik, Przylądek; maleńki Freetown i koptyjska pozostałość. Maghreb, Egipt, Sahel i wybrzeże suahili islamskie. Na południe od Sahary przeważnie tradycje afrykańskie. Madagaskar nie chrześcijański.',
         },
         {
           heading: 'Ameryki / Oceania',
@@ -1791,7 +1791,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Napoleonic / independence-eve Americas; Orthodoxy to the Pacific; Africa pockets; NSW speck 1788.',
+        '1. Wypełnienia religii: schematyczna rekonstrukcja Fix Planet (nie spis). 2. Historical Basemaps, André Ourednik, licencja GPL-3.0. 3. Maska lądu: Natural Earth 110m. 4. Tylko orientacja: Ameryki epoki napoleońskiej i przedednia niepodległości; prawosławie aż po Pacyfik; afrykańskie enklawy; maleńka Nowa Południowa Walia od 1788.',
     },
   },
   lv: {
@@ -1812,7 +1812,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Pelēks: bez aizpildes. Austrāliju un Kluso okeānu šajā plāksnē kā reliģijas neaizpildām.',
       },
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps. Muzeja pavadonis: Élisée Reclus, L’Homme et la Terre (1905), sabiedriskais īpašums.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0. Muzeja pavadonis: Élisée Reclus, L’Homme et la Terre (1905), sabiedriskais īpašums.',
     },
     100: {
       title: '100. m.ē. Trajāns joprojām pagāns',
@@ -1831,7 +1831,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Joprojām pelēks: bez aizpildes.',
       },
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0.',
     },
     200: {
       title: '200. m.ē. Oficiāli pagāniska, blīvākas kristiešu pilsētas',
@@ -1850,7 +1850,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Pelēks: bez aizpildes.',
       },
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0.',
     },
     300: {
       title: '300. m.ē. Konstantīna priekšvakarā, vairākums pagānisks',
@@ -1869,7 +1869,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Pelēks: bez aizpildes.',
       },
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
     },
     400: {
       title: '400. m.ē. Pēc Teodosija, ne visa Eiropa kristīga',
@@ -1888,7 +1888,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         oceania: 'Joprojām pelēks: bez aizpildes.',
       },
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
     },
     500: {
       title: '500. m.ē. Bijusī romiešu pasaule, lauku pagānisms joprojām redzams',
@@ -1919,7 +1919,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0.',
     },
     600: {
       title: '600. m.ē. Stiprāka kristiešu josla, Irāna zoroastriska',
@@ -1950,7 +1950,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0. Procesa pavadonis: kristietības izplatība līdz 600. (CC BY-SA 3.0).',
     },
     700: {
       title: '700. g. m.ē. Pirmo reizi plata islāma Omeijadu josla',
@@ -1987,12 +1987,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0.',
     },
     800: {
       title: '800. g. m.ē. Abasīdu josla, spēcīgāki franku rietumi',
       caption:
-        'Līdz 800. g. m.ē. islāma josla jau ir **abasīdu**: tā pati Vidusjūras-Irānas aizpilde, austrumos nedaudz pilnāka; al-Andalusa un Magriba joprojām uz plāksnes. Rietumos spēcīgāka franku / karolingiskā kristietība; Skandināvija un slāvu austrumi vēl vietējie. Indija hinduistu; budisms un ķīniešu imperiālais slānis tur Austrumus. Amerika nav kartēta.',
+        'Līdz 800. g. m.ē. islāma josla jau ir **abasīdu**: tā pati Vidusjūras un Irānas aizpilde, austrumos nedaudz pilnāka; al-Andalusa un Magriba joprojām uz plāksnes. Rietumos spēcīgāka franku / karolingiskā kristietība; Skandināvija un slāvu austrumi vēl vietējie. Indija hinduistu; budisms un ķīniešu imperiālais slānis tur Austrumus. Amerika nav kartēta.',
       imageAlt:
         'Shēmatiska reliģiju karte 800. gadam m.ē.: abasīdu islāma josla pilnāka austrumos, spēcīgāka franku karolingiskā kristietība rietumos, hinduistu Indija, Amerika bez aizpildes',
       honestyPills: [
@@ -2008,7 +2008,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Irāna',
-          text: 'Abasīdu islāma josla: tā pati Vidusjūras-Irānas aizpilde, austrumos nedaudz pilnāka. Plāns zoroastriskais palieku šrafējums Irānā. Al-Andalusa un Magriba joprojām uz plāksnes.',
+          text: 'Abasīdu islāma josla: tā pati Vidusjūras un Irānas aizpilde, austrumos nedaudz pilnāka. Plāns zoroastriskais palieku šrafējums Irānā. Al-Andalusa un Magriba joprojām uz plāksnes.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2024,7 +2024,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0.',
     },
     900: {
       title: '900. g. m.ē. Abasīdu pēcteči, kristīgā Eiropa joprojām ne vienlaidus ziemeļos',
@@ -2061,14 +2061,14 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: André Ourednik et al., historical-basemaps (GPL-3.0); avots: github.com/aourednik/historical-basemaps.',
+        'Reliģiju daudzstūri © Fix Planet (shēmatiska rekonstrukcija, ne tautas skaitīšana). Apakšslānis: Historical Basemaps, André Ourednik, licence GPL-3.0.',
     },
     1000: {
       title: '1000. g. m.ē. Shēmatiska rekonstrukcija',
       caption:
-        'Ap 1000. g. m.ē. plata **islāma** josla joprojām tur Magribu-Lībiju-Ēģipti-Tuvos Austrumus, Arābiju, Irānu, Centrālāziju un Sindu; al-Andalusa vietā, viegla sahēlas mala. Kristīgā Eiropa platāka uz ziemeļiem un austrumiem, sakšu / poļu / Kijivas mala, joprojām ne vienlaidus Skandināvija vai Baltija. Indija hinduistu; budistu koridori un ķīniešu imperiālais slānis Austrumos. Amerika nav kartēta.',
+        'Ap 1000. g. m.ē. plata **islāma** josla joprojām tur Magribu, Lībiju, Ēģipti un Tuvos Austrumus, Arābiju, Irānu, Centrālāziju un Sindu; al-Andalusa vietā, viegla sahēlas mala. Kristīgā Eiropa platāka uz ziemeļiem un austrumiem, sakšu / poļu / Kijivas mala, joprojām ne vienlaidus Skandināvija vai Baltija. Indija hinduistu; budistu koridori un ķīniešu imperiālais slānis Austrumos. Amerika nav kartēta.',
       imageAlt:
-        'Shēmatiska reliģiju karte 1000. gadam m.ē.: plata islāma Magribas-Lībijas-Ēģiptes-Tuvo Austrumu josla, kristīgā Eiropa platāka uz ziemeļiem un austrumiem, Amerika bez aizpildes',
+        'Shēmatiska reliģiju karte 1000. gadam m.ē.: plata islāma Magribas, Lībijas, Ēģiptes un Tuvo Austrumu josla, kristīgā Eiropa platāka uz ziemeļiem un austrumiem, Amerika bez aizpildes',
       honestyPills: [
         'Shēmatiska rekonstrukcija',
         'Ne tautas skaitīšana',
@@ -2082,7 +2082,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magribas-Lībijas-Ēģiptes-Tuvo Austrumu josla caur Arābiju uz Irānu, Centrālāziju un Sindu; al-Andalusa turas; viegla sahēlas / Rietumāfrikas tirdzniecības mala. Plāns zoroastrisma atlikuma šrafējums; maniheisma minoritātes šrafējums mazāks, kur redzams.',
+          text: 'Islāma Magribas, Lībijas, Ēģiptes un Tuvo Austrumu josla caur Arābiju uz Irānu, Centrālāziju un Sindu; al-Andalusa turas; viegla sahēlas / Rietumāfrikas tirdzniecības mala. Plāns zoroastrisma atlikuma šrafējums; maniheisma minoritātes šrafējums mazāks, kur redzams.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2090,7 +2090,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Lībija-Ēģipte islāma joslā; viegla sahēlas tirdzniecības mala; Aksūma/Nūbija, kristīgā mala; uz dienvidiem no Sahāras, rupja āfrikāņu tradicionālā josla.',
+          text: 'Magriba, Lībija un Ēģipte islāma joslā; viegla sahēlas tirdzniecības mala; Aksūma/Nūbija, kristīgā mala; uz dienvidiem no Sahāras, rupja āfrikāņu tradicionālā josla.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2098,7 +2098,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: medieval Afro-Eurasian religion surveys.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: viduslaiku Afroeirāzijas reliģiju apskati.',
     },
     1100: {
       title: '1100. g. m.ē. Shēmatiska rekonstrukcija',
@@ -2115,11 +2115,11 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
       continentBlocks: [
         {
           heading: 'Eiropa / Vidusjūra',
-          text: 'Pilnāks kristīgais Reinzeme / Vācija, Bohēmijas-Polijas mala, Balkāni / Bizantija, Itālija; shēmatiska krustnešu mala Levantā. Ibērija joprojām islāmiska. Tālā ziemeļu atlikums un Baltijas / somu perēkļi, vietējās tradīcijas. Jūdu plankumi.',
+          text: 'Pilnāks kristīgais Reinzeme / Vācija, Bohēmijas un Polijas mala, Balkāni / Bizantija, Itālija; shēmatiska krustnešu mala Levantā. Ibērija joprojām islāmiska. Tālā ziemeļu atlikums un Baltijas / somu perēkļi, vietējās tradīcijas. Jūdu plankumi.',
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba-Lībija-Ēģipte-Levanta-Arābija-Tuvie Austrumi-Persija-Centrālāzijas mala; al-Andalusa turas; sahēlas mala. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba, Lībija, Ēģipte, Levanta, Arābija, Tuvie Austrumi, Persija un Centrālāzijas mala; al-Andalusa turas; sahēlas mala. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2127,7 +2127,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Lībija-Ēģipte islāmiskas; sahēlas tirdzniecības mala; Aksūma/Nūbija, kristīgā mala; Sahēla un dienvidi, āfrikāņu tradicionālā josla.',
+          text: 'Magriba, Lībija un Ēģipte islāmiskas; sahēlas tirdzniecības mala; Aksūma/Nūbija, kristīgā mala; Sahēla un dienvidi, āfrikāņu tradicionālā josla.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2135,12 +2135,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: augsto viduslaiku Afroeirāzijas reliģiju apskati.',
     },
     1200: {
       title: '1200. g. m.ē. Shēmatiska rekonstrukcija',
       caption:
-        'Ap 1200. g. m.ē. (mongolu laikmeta priekšvakarā) tā pati lielā **islāma** josla: Magriba-Lībija-Ēģipte-Tuvie Austrumi-Irāna-Centrālāzija, al-Andalusa, Indas un sahēlas mala, bez izdomātas jaunas impērijas. Kristietība nedaudz tālāk Baltijā un Skandināvijā; joprojām ne visa Eiropa. Indija hinduistu; budisms un ķīniešu imperiālais slānis Austrumos. Amerika nav kartēta.',
+        'Ap 1200. g. m.ē. (mongolu laikmeta priekšvakarā) tā pati lielā **islāma** josla: Magriba, Lībija, Ēģipte, Tuvie Austrumi, Irāna un Centrālāzija, al-Andalusa, Indas un sahēlas mala, bez izdomātas jaunas impērijas. Kristietība nedaudz tālāk Baltijā un Skandināvijā; joprojām ne visa Eiropa. Indija hinduistu; budisms un ķīniešu imperiālais slānis Austrumos. Amerika nav kartēta.',
       imageAlt:
         'Shēmatiska reliģiju karte 1200. gadam m.ē.: lielā islāma josla, kristīgā Baltijas un Skandināvijas mala, Amerika bez aizpildes',
       honestyPills: [
@@ -2156,7 +2156,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Tā pati lielā islāma josla kā 1100. gadā, plus Indas / Multānas mala un viegla sahēlas tirdzniecības mala: Magriba-Lībija-Ēģipte-Tuvie Austrumi-Persija-Centrālāzija; al-Andalusa. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Tā pati lielā islāma josla kā 1100. gadā, plus Indas / Multānas mala un viegla sahēlas tirdzniecības mala: Magriba, Lībija, Ēģipte, Tuvie Austrumi, Persija un Centrālāzija; al-Andalusa. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2164,7 +2164,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Lībija-Ēģipte islāmiskas; viegla sahēlas tirdzniecības mala; Aksūma/Nūbija, kristīgā mala; Sahēla un dienvidi, āfrikāņu tradicionālā josla.',
+          text: 'Magriba, Lībija un Ēģipte islāmiskas; viegla sahēlas tirdzniecības mala; Aksūma/Nūbija, kristīgā mala; Sahēla un dienvidi, āfrikāņu tradicionālā josla.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2172,12 +2172,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: high-medieval Afro-Eurasian religion surveys.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: augsto viduslaiku Afroeirāzijas reliģiju apskati.',
     },
     1300: {
       title: '1300. g. m.ē. Shēmatiska rekonstrukcija',
       caption:
-        'Ap 1300. g. m.ē. **islāma** josla: mameluku Ēģipte un Sīrija, Magriba un Lībija, Anatolijas mala (agrie osmaņi), Granadas anklāvs Ibērijā, plus Tuvie Austrumi-Arābija-Irāna-Centrālāzija un Deli mala. Kristīgā Eiropa gandrīz vienlaidus rietumos un centrā; Balkāni kristīgi. Indija hinduistu; budistu koridori un ķīniešu slānis Austrumos. Amerikā, vietējās tradīcijas: augošā Mezoamerika (acteki) un Andi, plus citas indīgēnās zonas.',
+        'Ap 1300. g. m.ē. **islāma** josla: mameluku Ēģipte un Sīrija, Magriba un Lībija, Anatolijas mala (agrie osmaņi), Granadas anklāvs Ibērijā, plus Tuvie Austrumi, Arābija, Irāna un Centrālāzija un Deli mala. Kristīgā Eiropa gandrīz vienlaidus rietumos un centrā; Balkāni kristīgi. Indija hinduistu; budistu koridori un ķīniešu slānis Austrumos. Amerikā, vietējās tradīcijas: augošā Mezoamerika (acteki) un Andi, plus citas indīgēnās zonas.',
       imageAlt:
         'Shēmatiska reliģiju karte 1300. gadam m.ē.: mameluku islāma josla, Anatolijas mala, Granadas anklāvs, Amerika: vietējās tradīcijas',
       honestyPills: packCHonesty.lv,
@@ -2188,7 +2188,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Mameluku islāma Ēģipte-Sīrija / Levanta; Magriba-Lībija; Arābija-Tuvie Austrumi-Irāna-Centrālāzija; Anatolijas islāma mala (agrie osmaņi); Deli / Indas mala. Tikai plāns zoroastrisma atlikuma šrafējums, kur atzīmēts.',
+          text: 'Mameluku islāma Ēģipte un Sīrija / Levanta; Magriba un Lībija; Arābija, Tuvie Austrumi, Irāna un Centrālāzija; Anatolijas islāma mala (agrie osmaņi); Deli / Indas mala. Tikai plāns zoroastrisma atlikuma šrafējums, kur atzīmēts.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2196,7 +2196,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Lībija-Ēģipte islāma joslā; viegla sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; uz dienvidiem no Sahāras, rupja āfrikāņu tradicionālā josla.',
+          text: 'Magriba, Lībija un Ēģipte islāma joslā; viegla sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; uz dienvidiem no Sahāras, rupja āfrikāņu tradicionālā josla.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2204,12 +2204,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Mamluk / early Ottoman fringe / Granada) plus indigenous Americas (Aztec-rising Mesoamerica / Andes).',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: vēlo viduslaiku Afroeirāzijas apskati (mameluki, agrā osmaņu mala, Granada) un pamatiedzīvotāju Amerika (augoša acteku Mezoamerika un Andi).',
     },
     1400: {
       title: '1400. g. m.ē. Shēmatiska rekonstrukcija',
       caption:
-        'Līdz 1400. g. m.ē. **islāma** josla platāka: mameluku Ēģipte-Sīrija-Levanta, Magriba-Lībija, Timura zona (Centrālāzija / Irāna / Tuvie Austrumi), Anatolija jau pārsvarā islāmiska (osmaņi), Granadas anklāvs vēl vietā. Kristīgā Eiropa pilnāka; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā, spēcīgi vietējie kodoli: acteku Mezoamerika un Inku Andi, plus citas indīģēnās zonas.',
+        'Līdz 1400. g. m.ē. **islāma** josla platāka: mameluku Ēģipte, Sīrija un Levanta, Magriba un Lībija, Timura zona (Centrālāzija / Irāna / Tuvie Austrumi), Anatolija jau pārsvarā islāmiska (osmaņi), Granadas anklāvs vēl vietā. Kristīgā Eiropa pilnāka; Balkāni demogrāfiski joprojām pārsvarā kristīgi. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā, spēcīgi vietējie kodoli: acteku Mezoamerika un Inku Andi, plus citas indīģēnās zonas.',
       imageAlt:
         'Shēmatiska reliģiju karte 1400. gadam m.ē.: platāka islāma josla, osmaņu Anatolija, Granadas anklāvs, acteku un Inku kodoli',
       honestyPills: packCHonesty.lv,
@@ -2220,7 +2220,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba-Lībija-Ēģipte-Levanta-Arābija plus Timura zonas aizpilde pilnāka uz Irānu un Centrālāziju; Anatolija pārsvarā islāmiska (osmaņi). Granadas anklāvs Ibērijā paliek. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba, Lībija, Ēģipte, Levanta un Arābija plus Timura zonas aizpilde pilnāka uz Irānu un Centrālāziju; Anatolija pārsvarā islāmiska (osmaņi). Granadas anklāvs Ibērijā paliek. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2228,7 +2228,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Lībija-Ēģipte islāmiskas; sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; Sahēla un dienvidi: āfrikāņu tradicionālā josla.',
+          text: 'Magriba, Lībija un Ēģipte islāmiskas; sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; Sahēla un dienvidi: āfrikāņu tradicionālā josla.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2236,12 +2236,12 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: late-medieval Afro-Eurasian surveys (Timur; Ottoman Anatolia majority; Granada; Balkans Christian) plus Aztec Mesoamerica / Inca Andes.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: vēlo viduslaiku Afroeirāzijas apskati (Timurs; Anatolija jau pārsvarā osmaņu; Granada; Balkāni kristīgi) un acteku Mezoamerika ar inku Andiem.',
     },
     1500: {
       title: '1500. g. m.ē. Shēmatiska rekonstrukcija',
       caption:
-        'Ap 1500. g. m.ē. **Granadas vairs nav**: visa Ibērija kristīga. **Islāma** josla: Magriba-Lībija-Ēģipte-Levanta-Arābija-Irāna-Centrālāzija un Anatolija aptuveni musulmaņu osmaņu (Konstantinopole 1453). Balkāni osmaņu varā, bet iedzīvotāji joprojām pārsvarā kristīgi, bez vienlaidus islāma aizpildes Dienvidaustrumeiropā. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā: acteku un Inku vietējo tradīciju kodoli; viegla agrā kristīgā koloniālā mala Karību jūrā un Meksikas piekrastē.',
+        'Ap 1500. g. m.ē. **Granadas vairs nav**: visa Ibērija kristīga. **Islāma** josla: Magriba, Lībija, Ēģipte, Levanta, Arābija, Irāna un Centrālāzija un Anatolija aptuveni musulmaņu osmaņu (Konstantinopole 1453). Balkāni osmaņu varā, bet iedzīvotāji joprojām pārsvarā kristīgi, bez vienlaidus islāma aizpildes Dienvidaustrumeiropā. Indija hinduistu; budisms un ķīniešu slānis Austrumos. Amerikā: acteku un Inku vietējo tradīciju kodoli; viegla agrā kristīgā koloniālā mala Karību jūrā un Meksikas piekrastē.',
       imageAlt:
         'Shēmatiska reliģiju karte 1500. gadam m.ē.: bez Granadas, osmaņu Anatolija, kristīgie Balkāni, acteku un Inku kodoli, viegla koloniālā mala',
       honestyPills: packCHonesty.lv,
@@ -2252,7 +2252,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba-Lībija-Ēģipte-Levanta-Arābija-Tuvie Austrumi-Persija-Centrālāzija; Anatolija pārsvarā musulmaņu (osmaņi pēc 1453). Bez Ibērijas / Granadas aizpildes. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba, Lībija, Ēģipte, Levanta, Arābija, Tuvie Austrumi, Persija un Centrālāzija; Anatolija pārsvarā musulmaņu (osmaņi pēc 1453). Bez Ibērijas / Granadas aizpildes. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2260,7 +2260,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Lībija-Ēģipte islāmiskas; sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; Sahēla un dienvidi: āfrikāņu tradicionālā josla.',
+          text: 'Magriba, Lībija un Ēģipte islāmiskas; sahēlas tirdzniecības mala; Etiopijas/Nūbijas kristīgā mala, kur redzama; Sahēla un dienvidi: āfrikāņu tradicionālā josla.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2268,7 +2268,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: early-modern Afro-Eurasian surveys (no Granada; Ottoman Anatolia ~Muslim; Balkans Christian) plus Aztec/Inca Americas with early Caribbean-Mexico Christian edge.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: agro jauno laiku Afroeirāzijas apskati (Granadas vairs nav; osmaņu Anatolija aptuveni musulmaņu; Balkāni kristīgi) un acteku un inku Amerika ar agru kristīgu malu Karību jūrā un Meksikā.',
     },
     1600: {
       title: '1600. g. m.ē. Shēmatiska rekonstrukcija',
@@ -2284,7 +2284,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba-Lībija-Ēģipte-Levanta-Arābija-Tuvie Austrumi-Persija-Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Tikai plāns zoroastrisma atlikuma šrafējums, kur atzīmēts.',
+          text: 'Islāma Magriba, Lībija, Ēģipte, Levanta, Arābija, Tuvie Austrumi, Persija un Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Tikai plāns zoroastrisma atlikuma šrafējums, kur atzīmēts.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2292,7 +2292,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Magriba-Ēģipte-Sahēla-svahili piekraste islāma joslā. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Kristīgie anklāvi tikai: Etiopija, Kongo un portugāļu piekrastes. Madagaskara nav kristīga.',
+          text: 'Magriba, Ēģipte, Sahēla un svahili piekraste islāma joslā. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Kristīgie anklāvi tikai: Etiopija, Kongo un portugāļu piekrastes. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2300,7 +2300,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Ottoman Anatolia Islamic; Balkans demographically Christian; Americas Christianizing (inland residual + colonial edge); Africa Christian pockets only.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: osmaņu Anatolija islāmiska; Balkāni demogrāfiski kristīgi; Amerika kristianizējas (iekšzemes atlikums un koloniāla mala); Āfrikā tikai kristīgi anklāvi.',
     },
     1700: {
       title: '1700. g. m.ē. Shēmatiska rekonstrukcija',
@@ -2316,7 +2316,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba-Lībija-Ēģipte-Levanta-Arābija-Tuvie Austrumi-Persija-Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba, Lībija, Ēģipte, Levanta, Arābija, Tuvie Austrumi, Persija un Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2324,7 +2324,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Tie paši kristīgie anklāvi kā 1600. gadā (Etiopija, Kongo, portugāļu piekrastes) plus Kapas kolonija (no 1652). Magriba-Ēģipte-Sahēla-svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
+          text: 'Tie paši kristīgie anklāvi kā 1600. gadā (Etiopija, Kongo, portugāļu piekrastes) plus Kapas kolonija (no 1652). Magriba, Ēģipte, Sahēla un svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2332,7 +2332,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Americas Christianizing; Orthodox Russia + Lutheran Scandinavia; Cape Colony from 1652; Australia Aboriginal.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: Amerika kristianizējas; pareizticīgā Krievija un luterāņu Skandināvija; Kapas kolonija no 1652. gada; Austrālija ar aborigēnu tradīcijām.',
     },
     1800: {
       title: '1800. g. m.ē. Shēmatiska rekonstrukcija',
@@ -2348,7 +2348,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Dienvidrietumāzija / Ziemeļāfrika / Irāna',
-          text: 'Islāma Magriba-Lībija-Ēģipte-Levanta-Arābija-Tuvie Austrumi-Persija-Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Sīkais koptu atlikums Ēģiptē, kur atzīmēts. Tikai plāns zoroastrisma atlikuma šrafējums.',
+          text: 'Islāma Magriba, Lībija, Ēģipte, Levanta, Arābija, Tuvie Austrumi, Persija un Centrālāzija; Anatolija islāmiska (osmaņi). Sahēla un svahili piekraste islāma joslā. Sīkais koptu atlikums Ēģiptē, kur atzīmēts. Tikai plāns zoroastrisma atlikuma šrafējums.',
         },
         {
           heading: 'Dienvidu / Centrālā / Austrumāzija',
@@ -2356,7 +2356,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
         {
           heading: 'Āfrika',
-          text: 'Joprojām tikai anklāvi: Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums. Magriba-Ēģipte-Sahēla-svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
+          text: 'Joprojām tikai anklāvi: Etiopija, Kongo, Angola/Mozambika, Kapa; sīkā Frītauna un koptu atlikums. Magriba, Ēģipte, Sahēla un svahili piekraste islāmiskas. Uz dienvidiem no Sahāras pārsvarā āfrikāņu tradīcijas. Madagaskara nav kristīga.',
         },
         {
           heading: 'Amerika / Okeānija',
@@ -2364,7 +2364,7 @@ export const religionPilotCopy: Record<Locale, Record<number, ReligionPilotFrame
         },
       ],
       sources:
-        '1. Religion fills: Fix Planet schematic reconstruction (not a census). 2. Historical basemap underlay: GPL-3.0 (Sources / License only). 3. Land mask: Natural Earth 110m. 4. Orientation only: Napoleonic / independence-eve Americas; Orthodoxy to the Pacific; Africa pockets; NSW speck 1788.',
+        '1. Reliģiju aizpildes: Fix Planet shēmatiska rekonstrukcija (ne tautas skaitīšana). 2. Historical Basemaps, André Ourednik, licence GPL-3.0. 3. Sauszemes maska: Natural Earth 110m. 4. Tikai orientācija: Napoleona laikmeta un neatkarības priekšvakara Amerika; pareizticība līdz Klusajam okeānam; Āfrikas anklāvi; sīkā Jaunā Dienvidvelsa no 1788. gada.',
     },
   },
 };

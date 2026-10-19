@@ -104,7 +104,7 @@ const pageEn: ReligionHistoryPage = {
   companionReclus: 'Museum companion: Reclus 1905 Old-World plate (public domain)',
   companionChristianity600: 'Also: Christianity spread → 600 (process)',
   laterUnpublished: 'Later centuries keep their earlier source plates.',
-  correspondingSource: 'github.com/aourednik/historical-basemaps',
+  correspondingSource: 'Historical Basemaps, André Ourednik',
 };
 
 const pageRu: ReligionHistoryPage = {
@@ -157,7 +157,7 @@ const pageRu: ReligionHistoryPage = {
   companionReclus: 'Музейный компаньон: лист Реклю 1905 года о Старом Свете (общественное достояние)',
   companionChristianity600: 'Также: распространение христианства → 600 (процесс)',
   laterUnpublished: 'Более поздние века сохраняют свои прежние исходные листы.',
-  correspondingSource: 'github.com/aourednik/historical-basemaps',
+  correspondingSource: 'Historical Basemaps, André Ourednik',
 };
 
 const pagePl: ReligionHistoryPage = {
@@ -210,7 +210,7 @@ const pagePl: ReligionHistoryPage = {
   companionReclus: 'Towarzysz muzealny: tablica Reclusa z 1905 o Starym Świecie (domena publiczna)',
   companionChristianity600: 'Także: rozprzestrzenianie chrześcijaństwa → 600 (proces)',
   laterUnpublished: 'Późniejsze wieki zachowują wcześniejsze płyty źródłowe.',
-  correspondingSource: 'github.com/aourednik/historical-basemaps',
+  correspondingSource: 'Historical Basemaps, André Ourednik',
 };
 
 const pageLv: ReligionHistoryPage = {
@@ -263,7 +263,7 @@ const pageLv: ReligionHistoryPage = {
   companionReclus: 'Muzeja pavadonis: Reclus 1905. gada Vecās pasaules plāksne (sabiedriskais īpašums)',
   companionChristianity600: 'Arī: kristietības izplatība → 600. (process)',
   laterUnpublished: 'Vēlākie gadsimti saglabā iepriekšējās avota plāksnes.',
-  correspondingSource: 'github.com/aourednik/historical-basemaps',
+  correspondingSource: 'Historical Basemaps, André Ourednik',
 };
 
 const captionsEn: Record<number, ReligionFrameCopy> = {
@@ -664,7 +664,7 @@ const captionsPl: Record<number, ReligionFrameCopy> = {
     imageAlt: 'Tablica religii Atlas of World Maps armii USA z 1943 użyta dla kroku 2000',
   },
   2020: {
-    title: 'Lata 2020. Regiony religii większości',
+    title: 'Lata 2020, regiony religii większości',
     caption:
       'Domenowa mapa regionów większości TheGreenEditor (nie kartografia Pew). Kolor kraju to etykieta większości, nie miara praktyki. Mniejszości i tak tam mieszkają. Szacunki składu Pew 2010-2050 to nazwane źródło statystyczne na karcie poniżej.',
     imageAlt: 'Domenowa mapa świata regionów religii większości dla kroku współczesnego',
@@ -840,6 +840,13 @@ const schematicOrg: Record<Locale, string> = {
   lv: 'Fix Planet shēmatiska rekonstrukcija',
 };
 
+const schematicLicense: Record<Locale, string> = {
+  en: 'Schematic religion fills © Fix Planet. Historical Basemaps, André Ourednik, GPL-3.0 licence',
+  ru: 'Схематические заливки религий © Fix Planet. Historical Basemaps, André Ourednik, лицензия GPL-3.0',
+  pl: 'Schematyczne wypełnienia religii © Fix Planet. Historical Basemaps, André Ourednik, licencja GPL-3.0',
+  lv: 'Shēmatiskas reliģiju aizpildes © Fix Planet. Historical Basemaps, André Ourednik, licence GPL-3.0',
+};
+
 export function getReligionHistoryFrames(locale: Locale): ReligionFrame[] {
   const published = new Set<number>(RELIGION_PUBLISHED_YEARS);
   return religionHistoryFrames
@@ -853,6 +860,7 @@ export function getReligionHistoryFrames(locale: Locale): ReligionFrame[] {
           ? {
               sourceYear: schematicDated[locale](meta.year),
               sourceOrg: schematicOrg[locale],
+              license: schematicLicense[locale],
             }
           : {};
       return { ...meta, ...copy, ...localized };

@@ -27,7 +27,7 @@ The Mesopotamian border is forever hot. Captive Romans build Persian cities. Cap
 ### China
 The Three Kingdoms ended in 280: Jin united the map. By 300 unity is already rotting. The emperor is weak, the princes strong. Soon the "War of the Eight Princes", civil war of family against family. Nomadic peoples press the northern borders. Some of them are already inside the empire: settled as federates, serve and wait their hour.
 
-In a few years northern China will start being carved up by "barbarian" kingdoms. Jin will flee south, beyond the Yangtze. North-South split for a long time. In 300 you can still not see this if you sit in Luoyang and trust the decrees.
+In a few years northern China will start being carved up by "barbarian" kingdoms. Jin will flee south, beyond the Yangtze. The north and the south stay split for a long time. In 300 you can still not see this if you sit in Luoyang and trust the decrees.
 
 Paper, official exams, scholarly disputes: culture has not died. The state is ill.
 

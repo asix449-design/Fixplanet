@@ -60,4 +60,4 @@ Kas būs tālāk:
 - 1204: krustneši sadragās Konstantinopoli;
 - 1206: Čingishans.
 
-1100. Gads ar kroni Betlēmē un bultu angļu mežā. Svētais un nejaušais notiek vienā kalendārā. Tā strādā viduslaiki.
+1100. gadā Betlēmē ir kronis un angļu mežā bulta. Svētais un nejaušais notiek vienā kalendārā. Tā strādā viduslaiki.

@@ -38,4 +38,4 @@ China has just become an empire again. Byzantium and Persia are still two super-
 
 In two years they will kill Maurice: the last great Roman-Persian war begins. In ten years Muhammad will hear the first revelation. In twenty Sui will give way to Tang. By 650 the caliphate will run from Egypt to Iran.
 
-Year 600 can still be described in the language of late antiquity. Year 650: no longer. This is the last "calm" frame before the Mediterranean and Near East become unrecognizable.
+Year 600 can still be described in the language of late antiquity. In 650 it no longer can. This is the last "calm" frame before the Mediterranean and Near East become unrecognizable.

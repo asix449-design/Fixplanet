@@ -350,21 +350,21 @@
   },
   {
     "file": "borders/y1100.png",
-    "title": "World in 1100 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1100.geojson",
+    "title": "World in 1100 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1100.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1100. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1200 sheet, not an engraving, not © Fix Planet geometry."
+    "note": "History of borders, exact year 1100. Reconstructed by Fix Planet from an open basemap (fills and large polity labels). Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. This is not the OER 1200 sheet and not an engraving. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y1300.png",
-    "title": "World in 1300 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1300.geojson",
+    "title": "World in 1300 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1300.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1300. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1200 sheet, not an engraving, not © Fix Planet geometry."
+    "note": "History of borders, exact year 1300. Reconstructed by Fix Planet from an open basemap (fills and large polity labels). Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. This is not the OER 1200 sheet and not an engraving. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y1200.jpg",
@@ -377,21 +377,21 @@
   },
   {
     "file": "borders/y1400.png",
-    "title": "World in 1400 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1400.geojson",
+    "title": "World in 1400 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1400.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1400. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. The source still names China Great Khanate (Yuan-era blob); Ming from 1368 is not invented by splitting the polygon. Not © Fix Planet geometry."
+    "note": "History of borders, exact year 1400. Reconstructed by Fix Planet from an open basemap (fills and large polity labels). Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. The source still names China the Great Khanate, a Yuan-era shape; Ming from 1368 is not invented by splitting that shape. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y1500.png",
-    "title": "World in 1500 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1500.geojson",
+    "title": "World in 1500 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1500.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1500. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. No Spain after 1492: Iberian footholds are missing and not drawn. Not world_1492. Not © Fix Planet geometry."
+    "note": "History of borders, exact year 1500. Reconstructed by Fix Planet from an open basemap (fills and large polity labels). Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. There is no Spain after 1492: Iberian footholds are missing and are not drawn. This is not the 1492 sheet. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y1648.png",
@@ -404,30 +404,30 @@
   },
   {
     "file": "borders/y1700.png",
-    "title": "World in 1700 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1700.geojson",
+    "title": "World in 1700 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1700.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1700. Reconstructed by Fix Planet from aourednik GPL GeoJSON (fills + large Russia / Qing / Safavid / Mughal labels). Not a copy of the Reddit MapPorn plate. Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not © Fix Planet geometry."
+    "note": "History of borders, exact year 1700. Reconstructed by Fix Planet from an open basemap, with large labels for Russia, the Qing, the Safavids and the Mughals. This is not a copy of the Reddit MapPorn plate. Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y1800.png",
-    "title": "World in 1800 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1800.geojson",
+    "title": "World in 1800 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1800.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1800. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the 1815 Congress of Vienna sheet, not © Fix Planet geometry."
+    "note": "History of borders, exact year 1800. Reconstructed by Fix Planet from an open basemap (fills and large polity labels). Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. This is not the 1815 Congress of Vienna sheet. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y1900.png",
-    "title": "World in 1900 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al., geojson/world_1900.geojson",
+    "title": "World in 1900 CE (Fix Planet schematic reconstruction)",
+    "source": "Historical Basemaps, André Ourednik, GPL-3.0 licence",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1900.geojson",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0 licence",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1900. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. Not the OER 1914 sheet, not © Fix Planet geometry."
+    "note": "History of borders, exact year 1900. Reconstructed by Fix Planet from an open basemap (fills and large polity labels). Modern Natural Earth coastlines; the borders are schematic and still in progress. Basemap: Historical Basemaps, André Ourednik, GPL-3.0 licence. This is not the OER 1914 sheet. The geometry is not © Fix Planet."
   },
   {
     "file": "borders/y2000.png",

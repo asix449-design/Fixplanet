@@ -65,4 +65,4 @@ Co będzie potem:
 - 552: w Japonii oficjalnie przyjmują buddyzm;
 - 581-589: Sui znów skleja Chiny.
 
-Rok 500. Cichy z wyglądu rok między upadkiem Zachodu a próbą Wschodu wszystko zwrócić. W Rawennie jeszcze można uwierzyć, że Rzym trwa cudzymi rękami. W Konstantynopolu już liczą, ile to będzie kosztować. Cena okaże się wyższa, niż się wydaje.
+Rok 500 jest cichym z wyglądu rokiem między upadkiem Zachodu a próbą Wschodu, by wszystko zwrócić. W Rawennie jeszcze można uwierzyć, że Rzym trwa cudzymi rękami. W Konstantynopolu już liczą, ile to będzie kosztować. Cena okaże się wyższa, niż się wydaje.

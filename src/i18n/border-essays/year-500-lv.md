@@ -65,4 +65,4 @@ Kas nāks pēc tam:
 - 552: Japānā oficiāli pieņem budismu;
 - 581-589: Sui atkal salīmē Ķīnu.
 
-500. No ārpuses kluss gads starp Rietumu kritumu un Austrumu mēģinājumu visu atgūt. Ravennā vēl var noticēt, ka Roma turpinās svešām rokām. Konstantinopolē jau skaita, cik tas maksās. Cena izrādīsies augstāka, nekā šķiet.
+500. gadā no ārpuses ir kluss laiks starp Rietumu kritumu un Austrumu mēģinājumu visu atgūt. Ravennā vēl var noticēt, ka Roma turpinās svešām rokām. Konstantinopolē jau skaita, cik tas maksās. Cena izrādīsies augstāka, nekā šķiet.

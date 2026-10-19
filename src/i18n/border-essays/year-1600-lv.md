@@ -51,4 +51,4 @@ Tirgotāju kompānija no karalienes saņem tiesības vest lietas kā maza valsts
 - 1605: Godunova nāve, pilnā Juku laika sākums;
 - 1618: Trīsdesmitgadu karš Eiropā.
 
-1600. Gads hartai uz okeānu, ugunskuram uz romiešu laukuma un sešām stundām japāņu aiza. Kurš uzvarēja lauku: uzdeva sauszemes noteikumus. Kurš izrakstīja papīru uz garšvielām: uzdeva jūras noteikumus.
+1600. gadā ir harta uz okeānu, ugunskurs uz romiešu laukuma un sešas stundas japāņu aiza. Kurš uzvarēja lauku: uzdeva sauszemes noteikumus. Kurš izrakstīja papīru uz garšvielām: uzdeva jūras noteikumus.

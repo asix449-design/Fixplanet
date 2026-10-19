@@ -65,4 +65,4 @@ Eiropa aizņemta ar sevi: divi pāvesti, divas dinastijas, viens bezgalīgs kar�
 - 1415: Azenkūra un portugāļu Seuta;
 - 1453: Konstantinopoles krišana.
 
-1400. Pēdējais lielais gads, kad cilvēks no stepes ar vienu karagājienu varēja ielikt pauzē gan turkus, gan ēģiptiešu sultānus, gan svešu Ķīnu plānos. Pēc viņa tāda mēroga impēriju no viena segla vairs nesalīmēt. Paliks valstis ar kanceleju, lielgabalu un floti. Timurs to nedzīvos. 1400. gadā viņš vēl ir seglā.
+1400. gadā cilvēks no stepes ar vienu karagājienu vēl varēja ielikt pauzē gan turkus, gan ēģiptiešu sultānus, gan svešu Ķīnu plānos. Pēc viņa tāda mēroga impēriju no viena segla vairs nesalīmēt. Paliks valstis ar kanceleju, lielgabalu un floti. Timurs to nedzīvos. 1400. gadā viņš vēl ir seglā.

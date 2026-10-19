@@ -27,7 +27,7 @@ Imperium Kuszańskie na styku Indii, Azji Środkowej i dróg do Chin, właśnie 
 ### Chiny
 Dynastia **Wschodnia Han**. Dwór w Luoyangu. Na papierze: ciąg dalszy dawnego imperium. W praktyce eunuchowie, klany cesarzowych, generałowie.
 
-Do 184. jeszcze można udawać, że centrum trzyma Państwo Środka. W 184. Powstanie **Żółtych Turbanów**. Religia, głód, „niebo odmówiło Han”. Imperium formalnie nie zjedzą od razu, ale kręgosłup złamany. Ku 200. kraj już w rękach dowódców polowych. Wkrótce „trójkrólestwo”: Wei, Shu, Wu. Romans o tym napiszą za tysiąc lat. Krew: teraz.
+Do 184. jeszcze można udawać, że centrum trzyma Państwo Środka. W 184 roku wybuchło powstanie **Żółtych Turbanów**. Religia, głód, „niebo odmówiło Han”. Imperium formalnie nie zjedzą od razu, ale kręgosłup złamany. Ku 200. kraj już w rękach dowódców polowych. Wkrótce „trójkrólestwo”: Wei, Shu, Wu. Romans o tym napiszą za tysiąc lat. Krew: teraz.
 
 Na północy step. Xiongnu już nie ta siła, co za Zachodniej Han, ale granica żywa. Jedwab wciąż idzie na zachód. Papier i tusz: chiński byt, nie cud.
 
@@ -62,4 +62,4 @@ Co będzie potem, już w III wieku:
 - 220: oficjalny koniec Han;
 - 284: Dioklecjan zacznie sklejać Rzym na nowo, już jako inną maszynę.
 
-II wiek zapamiętują po kolene Trajana, wale Hadriana i książeczce Marka Aureliusza. Warto pamiętać też dżumę, i Kommodusa, i Żółte Turbany. Tynk był świetny. Mur pod nim, nie.
+II wiek zapamiętują po kolene Trajana, wale Hadriana i książeczce Marka Aureliusza. Warto pamiętać też dżumę, i Kommodusa, i Żółte Turbany. Tynk był świetny. Mur pod nim nie wytrzyma.

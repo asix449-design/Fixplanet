@@ -71,4 +71,4 @@ What comes right after:
 - 451: battle of the Catalaunian Fields with Attila;
 - 476: in the West there will be no emperor of its own.
 
-Year 400: the last round year when in the West you can still say "we are Rome" and almost believe it. Constantinople's walls will stand. Rome's: will not.
+Year 400 is the last round year when in the West you can still say "we are Rome" and almost believe it. Constantinople's walls will stand. Rome's walls will not.

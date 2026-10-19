@@ -47,7 +47,7 @@ W Azji Środkowej uzbecki chan Muhammad Szajbani bierze Bucharę i Samarkandę. 
 **Japonia** w rozdrobnieniu, do zjednoczenia Tokugawy sto lat.
 
 ### Ameryka, na razie bez słowa «kolonia»
-Aztekowie w Meksyku na szczycie: Tenochtitlán, ogromne miasto na wodzie. Inkowie w Andach trzymają imperium od gór do brzegu. Ani jedni, ani drudzy nie wiedzą, że za dwadzieścia-trzydzieści lat przyjdą ludzie z końmi, ospą i żądzą złota. Cortés wyląduje w 1519. Na razie 1500 dla nich: zwykły rok wojen i daniny.
+Aztekowie w Meksyku na szczycie: Tenochtitlán, ogromne miasto na wodzie. Inkowie w Andach trzymają imperium od gór do brzegu. Ani jedni, ani drudzy nie wiedzą, że za dwadzieścia do trzydziestu lat przyjdą ludzie z końmi, ospą i żądzą złota. Cortés wyląduje w 1519. Na razie 1500 dla nich: zwykły rok wojen i daniny.
 
 Karaiby już płoną zarazą i niewolnictwem: Kolumb i jego spadkobiercy urządzili na wyspach łamanie świata. Ląd stały jeszcze prawie nietknięty.
 

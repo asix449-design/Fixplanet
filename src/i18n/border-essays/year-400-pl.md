@@ -1,6 +1,6 @@
 Rok **400**. Rzymowi od założenia więcej niż tysiąc lat. Na mapie imperium wciąż od Brytanii do Egiptu. W życiu to już dwa kraje. Na Zachodzie cesarz Honoriusz, na Wschodzie: Arkadiusz. Obaj synowie Teodozjusza. Ojciec umarł w 395. i oddał państwo dwóm młodym dziedzicom.
 
-Chrześcijaństwo od 380. Oficjalna religia. Pogańskie świątynie zamykają ukazami. Ktoś ze starych rodów jeszcze czci dawnych bogów w domu. Na placach to już nie główna wiara państwa.
+Od 380 roku chrześcijaństwo jest oficjalną religią. Pogańskie świątynie zamykają ukazami. Ktoś ze starych rodów jeszcze czci dawnych bogów w domu. Na placach to już nie główna wiara państwa.
 
 Goci mieszkają nie za granicą, lecz wewnątrz imperium: na Bałkanach i w rzymskiej armii. Do wzięcia Rzymu przez Alaryka zostało dziesięć lat.
 
@@ -71,4 +71,4 @@ Co będzie zaraz potem:
 - 451: bitwa na Polach Katalaunijskich z Attylą;
 - 476: na Zachodzie nie zostanie własnego cesarza.
 
-Rok 400. Ostatni okrągły rok, gdy na Zachodzie jeszcze można powiedzieć „my Rzym” i niemal w to uwierzyć. Mury Konstantynopola wytrzymają. Rzymskie, nie.
+Rok 400 jest ostatnim okrągłym rokiem, gdy na Zachodzie jeszcze można powiedzieć „my Rzym” i niemal w to uwierzyć. Mury Konstantynopola wytrzymają. Rzymskie mury nie wytrzymają.

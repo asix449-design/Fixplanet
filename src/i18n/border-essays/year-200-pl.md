@@ -2,7 +2,7 @@ Rok **200**: to już nie spokojne antyczne południe jak w 100. Imperia jeszcze 
 
 ### Europa i Rzym
 - Cesarz: **Septymiusz Sewer**. Afrykańczyk z Leptis Magna, żołnierz, który wygrał wojnę domową po zabójstwie Kommodusa. Dynastia Sewerów: władza opiera się na armii, senat już dekoracja.
-- Właśnie odgrzmiały partyjskie wyprawy. W 198. Rzymianie znów wzięli Ktezyfon. Sewer uczynił północną Mezopotamię prowincją. Hatry tak i nie wziął: twierdza się oparła.
+- Właśnie odgrzmiały partyjskie wyprawy. W 198 roku Rzymianie znów wzięli Ktezyfon. Sewer uczynił północną Mezopotamię prowincją. Hatry tak i nie wziął: twierdza się oparła.
 - W samym 200. jeździ po Syrii, Palestynie i Arabii. Patrzy, co zostało po wojnach i dżumie. Numidię zabiera prokonsulowi Afryki i robi z niej prowincję cesarską, kontrola bliżej tronu.
 - Po dżumie antonińskiej (od 165. i falami dalej) ludzi mniej, legiony trudniej kompletować, ceny skaczą. „Dobrych cesarzy” koniec. Przed nami synowie Sewera: Karakalla i Geta, i to nie będzie bajka.
 - Chrześcijan już widać. Sewer w Judei jakoby zakazuje nowych nawróceń na judaizm i chrześcijaństwo. Kult Mitry wśród żołnierzy popularny nie mniej.
@@ -43,4 +43,4 @@ Rzym właśnie znów pobił Partię i robi minę, że wszystko pod kontrolą. Ch
 
 Za 20 lat nie będzie Han. Za 25: Partii. Rzym wytrzyma dłużej, ale już nie jak w wieku Trajana: dalej będą cesarze-żołnierze, kryzysy i nowi Persowie na wschodzie.
 
-Rok 200. Cichy na zewnątrz, bardzo głośny wewnątrz.
+W roku 200 na zewnątrz jest cicho, a wewnątrz bardzo głośno.

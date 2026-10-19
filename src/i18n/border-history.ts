@@ -366,9 +366,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1100: Baldwin is crowned in Bethlehem; in England an arrow kills William Rufus; in Rus a congress at Uvetichi; in China Huizong takes the throne.',
     essay: year1100En,
-    imageAlt: 'Schematic world political reconstruction for 1100 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1100',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1200: {
@@ -386,9 +386,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1300: the papal jubilee in Rome; Philip the Fair already squeezes the church; Osman bites the Byzantine edge; the Mongol Empire is still huge, but already in shards.',
     essay: year1300En,
-    imageAlt: 'Schematic world political reconstruction for 1300 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1300',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1400: {
@@ -396,9 +396,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1400: Timur drives into Syria; in Europe two popes and the Hundred Years\' War; Vasily I\'s Moscow between the Horde and Lithuania; in China Zhu Di fights for the Ming throne.',
     essay: year1400En,
-    imageAlt: 'Schematic world political reconstruction for 1400 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1400',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1500: {
@@ -406,9 +406,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1500: Cabral "finds" Brazil on the way to India; Ivan III beats Lithuania at Vedrosha; in Italy the French and the dukes cut each other over cities; the Reformation is not yet here.',
     essay: year1500En,
-    imageAlt: 'Schematic world political reconstruction for 1500 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1500',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1600: {
@@ -423,9 +423,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1700: the Great Northern War begins; at Narva the Swedes beat the Russians; the last Spanish Habsburg dies, Europe prepares to divide an empire; Peter is already aimed at the Baltic.',
     essay: year1700En,
-    imageAlt: 'Schematic world political reconstruction for 1700 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1700',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1800: {
@@ -433,9 +433,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1800: Napoleon is still consul: Marengo almost lost and won in a single day; the US capital moves to Washington; Paul I quarrels with his allies and leans toward Bonaparte.',
     essay: year1800En,
-    imageAlt: 'Schematic world political reconstruction for 1800 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1800',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1900: {
@@ -443,9 +443,9 @@ const captionsEn: Record<number, BorderFrameCopy> = {
     caption:
       'Year 1900: “Boxers” in China and the siege of the legations; eight powers take Beijing; in South Africa the Anglo-Boer War; in Paris the Métro and a zeppelin, for Planck, the quantum.',
     essay: year1900En,
-    imageAlt: 'Schematic world political reconstruction for 1900 from aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematic political map of the world in 1900',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   2000: {
@@ -546,9 +546,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1100: Балдуина коронуют в Вифлееме; в Англии стрела убивает Вильгельма Рыжего; на Руси съезд в Уветичах; в Китае на престол садится Хуэй-цзун.',
     essay: year1100Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1100 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1100 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1200: {
@@ -566,9 +566,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1300: папский юбилей в Риме; Филипп Красивый уже давит церковь; Осман кусает византийский край; Монгольская империя ещё огромная, но уже осколки.',
     essay: year1300Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1300 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1300 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1400: {
@@ -576,9 +576,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1400: Тимур прёт на Сирию; в Европе два папы и Столетняя война; Москва Василия I между Ордой и Литвой; в Китае Чжу Ди бьётся за престол Мин.',
     essay: year1400Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1400 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1400 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1500: {
@@ -586,9 +586,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1500: Кабрал «находит» Бразилию по пути в Индию; Иван III бьёт Литву на Ведроши; в Италии французы и герцоги режутся за города; Реформации ещё нет.',
     essay: year1500Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1500 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1500 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1600: {
@@ -603,9 +603,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1700: начинается Северная война; под Нарвой шведы бьют русских; умирает последний испанский Габсбург, Европа готовится делить империю; Пётр уже нацелен на Балтику.',
     essay: year1700Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1700 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1700 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1800: {
@@ -613,9 +613,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1800: Наполеон ещё консул: Маренго почти проигран и выигран в один день; столица США переезжает в Вашингтон; Павел I ссорится с союзниками и тянется к Бонапарту.',
     essay: year1800Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1800 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1800 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1900: {
@@ -623,9 +623,9 @@ const captionsRu: Record<number, BorderFrameCopy> = {
     caption:
       'Год 1900: «боксёры» в Китае и осада посольств; восемь держав берут Пекин; в Южной Африке англо-бурская война; в Париже метро и цеппелин, у Планка, квант.',
     essay: year1900Ru,
-    imageAlt: 'Схематическая политическая реконструкция мира на 1900 год по GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Схематическая политическая карта мира на 1900 год',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   2000: {
@@ -726,9 +726,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1100: Baldwina koronują w Betlejem; w Anglii strzała zabija Wilhelma Rudego; na Rusi zjazd w Uwieticzach; w Chinach na tron wstępuje Huizong.',
     essay: year1100Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1100 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1100',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1200: {
@@ -746,9 +746,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1300: papieski jubileusz w Rzymie; Filip Piękny już ugniata kościół; Osman gryzie bizantyński skraj; Imperium Mongolskie jeszcze ogromne, ale już odłamki.',
     essay: year1300Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1300 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1300',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1400: {
@@ -756,9 +756,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1400: Timur pcha się na Syrię; w Europie dwóch papieży i wojna stuletnia; Moskwa Wasyla I między Ordą a Litwą; w Chinach Zhu Di bije się o tron Mingów.',
     essay: year1400Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1400 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1400',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1500: {
@@ -766,9 +766,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1500: Cabral «znajduje» Brazylię w drodze do Indii; Iwan III bije Litwę nad Wiedroszą; we Włoszech Francuzi i książęta tną się o miasta; Reformacji jeszcze nie ma.',
     essay: year1500Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1500 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1500',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1600: {
@@ -783,9 +783,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1700: zaczyna się wojna północna; pod Narwą Szwedzi biją Rosjan; umiera ostatni hiszpański Habsburg, Europa szykuje się dzielić imperium; Piotr już wycelowany w Bałtyk.',
     essay: year1700Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1700 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1700',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1800: {
@@ -793,9 +793,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1800: Napoleon wciąż konsul: Marengo prawie przegrane i wygrane w jeden dzień; stolica USA przenosi się do Waszyngtonu; Paweł I kłóci się z sojusznikami i ciągnie ku Bonaparteemu.',
     essay: year1800Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1800 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1800',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1900: {
@@ -803,9 +803,9 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     caption:
       'Rok 1900: „bokserzy” w Chinach i oblężenie poselstw; osiem mocarstw bierze Pekin; w Afryce Południowej wojna burska; w Paryżu metro i zeppelin, u Plancka, kwant.',
     essay: year1900Pl,
-    imageAlt: 'Schematyczna rekonstrukcja polityczna świata na rok 1900 z GeoJSON aourednik',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Schematyczna polityczna mapa świata na rok 1900',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   2000: {
@@ -816,7 +816,7 @@ const captionsPl: Record<number, BorderFrameCopy> = {
     imageAlt: 'Współczesne wypełnienia państw jako najbliższy arkusz atlasu dla kroku 2000',
   },
   2020: {
-    title: 'Lata 2020. Współczesne kontury',
+    title: 'Lata 2020, współczesne kontury',
     caption:
       'Poligony państw w domenie publicznej (BlankMap-World / Natural Earth), pokolorowane w tym samym języku atlasu: płowa ziemia, miękkie morze. Współczesna podstawa w małej skali, nie żywy serwis granic. Sporne linie narysowano jednym sposobem, żeby mapę w ogóle dało się narysować.',
     imageAlt: 'Współczesna mapa państw w domenie publicznej z kolorami regionów w stylu atlasu',
@@ -906,9 +906,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1100: Baldvinu kronē Betlēmē; Anglijā bulta nogalina Vilhelmu Sarkano; Krievzemē sapulce Uvetičos; Ķīnā tronī kāpj Hueidzuns.',
     essay: year1100Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1100. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1100. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1200: {
@@ -926,9 +926,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1300: pāvesta jubileja Romā; Filips Skaistais jau spiež baznīcu; Osmans kož bizantiešu malu; Mongoļu impērija vēl milzīga, bet jau lauskas.',
     essay: year1300Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1300. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1300. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1400: {
@@ -936,9 +936,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1400: Timurs spiežas uz Sīriju; Eiropā divi pāvesti un Simtgadu karš; Vasilija I Maskava starp Ordu un Lietuvu; Ķīnā Džu Di cīnās par Minu troni.',
     essay: year1400Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1400. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1400. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1500: {
@@ -946,9 +946,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1500: Kabrals «atrod» Brazīliju ceļā uz Indiju; Ivans III sit Lietuvu pie Vedrošas; Itālijā franči un hercogi griežas par pilsētām; Reformācijas vēl nav.',
     essay: year1500Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1500. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1500. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1600: {
@@ -963,9 +963,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1700: sākas Ziemeļu karš; pie Narvas zviedri sit krievus; mirst pēdējais spāņu Habsburgs, Eiropa gatavojas dalīt impēriju; Pēteris jau mērķēts uz Baltiju.',
     essay: year1700Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1700. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1700. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1800: {
@@ -973,9 +973,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1800: Napoleons vēl konsuls: Marengo gandrīz zaudēta un uzvarēta vienā dienā; ASV galvaspilsēta pārcelās uz Vašingtonu; Pāvils I strīdas ar sabiedrotajiem un tiecas pie Bonaparta.',
     essay: year1800Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1800. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1800. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   1900: {
@@ -983,9 +983,9 @@ const captionsLv: Record<number, BorderFrameCopy> = {
     caption:
       'Gads 1900: «bokseri» Ķīnā un sūtniecību aplenkums; astoņas lielvalstis ņem Pekinu; Dienvidāfrikā angļu-būru karš; Parīzē metro un cepelīns, Plankam, kvants.',
     essay: year1900Lv,
-    imageAlt: 'Shēmātiska politiskā rekonstrukcija pasaulei 1900. gadā no aourednik GeoJSON',
-    sourceShort: 'Ourednik',
-    sourceOrg: 'Historical basemaps © André Ourednik et al.',
+    imageAlt: 'Shēmātiska politiskā pasaules karte 1900. gadā',
+    sourceShort: 'André Ourednik',
+    sourceOrg: 'Historical Basemaps, André Ourednik',
     license: 'GPL-3.0',
   },
   2000: {

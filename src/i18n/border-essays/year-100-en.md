@@ -62,4 +62,4 @@ What follows, already in the 3rd century:
 - 220: official end of Han;
 - 284: Diocletian will begin to glue Rome back together, already as a different machine.
 
-The 2nd century is remembered for Trajan's Column, Hadrian's Wall, and Marcus Aurelius's little book. Worth remembering also the plague, and Commodus, and the Yellow Turbans. The plaster was excellent. The wall under it, not.
+The 2nd century is remembered for Trajan's Column, Hadrian's Wall, and Marcus Aurelius's little book. Worth remembering also the plague, and Commodus, and the Yellow Turbans. The plaster was excellent. The wall under it will not hold.

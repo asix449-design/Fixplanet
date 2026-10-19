@@ -69,4 +69,4 @@ Kas nāks pēc tam:
 - 376-378: goti šķērso Donavu, Adrianopole;
 - 316.-420. gadi: Dzjiņ zaudē Ķīnas ziemeļus.
 
-300. Pēdējais gads, kad nopietni var iedomāties pagānu impēriju kā normu uz visiem laikiem. Norma jau cita: daudz valdnieku, daudz dievu, un viens no kultiem tūlīt pārstās būt aizliegts. Diokletiāns to neplānoja. Vēsture reti jautā plānotājam.
+300. gadā vēl nopietni var iedomāties pagānu impēriju kā normu uz visiem laikiem. Norma jau cita: daudz valdnieku, daudz dievu, un viens no kultiem tūlīt pārstās būt aizliegts. Diokletiāns to neplānoja. Vēsture reti jautā plānotājam.

@@ -38,4 +38,4 @@
 
 Pēc diviem gadiem nogalinās Maurīciju: sāksies pēdējais lielais romiešu-persiešu karš. Pēc desmit gadiem Muhameds dzirdēs pirmo atklāsmi. Pēc divdesmit Sui nomainīs Tani. Līdz 650. kalifāts būs no Ēģiptes līdz Irānai.
 
-600. vēl var aprakstīt vēlīnās antīkās valodā. 650. Vairs nē. Tas ir pēdējais „mierīgais” kadrs pirms Vidusjūra un Tuvie Austrumi kļūst nepazīstami.
+600. gadā vēl var aprakstīt vēlīnās antīkās valodā. 650. gadā vairs nē. Tas ir pēdējais „mierīgais” kadrs pirms Vidusjūra un Tuvie Austrumi kļūst nepazīstami.

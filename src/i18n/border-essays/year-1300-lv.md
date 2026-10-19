@@ -64,4 +64,4 @@ Kas būs tālāk:
 - 1368: Min izdzen mongoļus no Ķīnas;
 - 1453: osmaņi ieņem Konstantinopoli.
 
-1300. Gads, kad viduslaiki vēl stāv pilnā tērpā un jau dzirdams, kā sprakšķ šuves. Svētceļotājs Romā domā, ka aizstāvējis dvēseli. Karalis Parīzē domā, ka aizstāvējis kasi. Osmans domā par blakus ieleju. Visi trīs ir taisnībā uz savu īso termiņu.
+1300. gadā viduslaiki vēl stāv pilnā tērpā un jau dzirdams, kā sprakšķ šuves. Svētceļotājs Romā domā, ka aizstāvējis dvēseli. Karalis Parīzē domā, ka aizstāvējis kasi. Osmans domā par blakus ieleju. Visi trīs ir taisnībā uz savu īso termiņu.
