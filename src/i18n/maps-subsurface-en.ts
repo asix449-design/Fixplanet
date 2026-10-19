@@ -73,7 +73,7 @@ export const en: Record<string, MapCopy> = {
     cardMeta: 'U.S. Energy Information Administration · proved reserves · 2023',
     hook: 'How much coal each country reports as proved reserves, the coal that known deposits can yield at today’s prices and with today’s technology.',
     description:
-      'The U.S. Energy Information Administration, the statistics agency of the United States Department of Energy, publishes international energy data, including each country’s proved coal reserves in tonnes. Our World in Data republishes the series for 2008–2023, last updated on 30 June 2026. Proved reserves are the quantities that geological and engineering information shows can be recovered in the future from known deposits under existing economic and operating conditions.',
+      'The U.S. Energy Information Administration, the statistics agency of the United States Department of Energy, publishes international energy data, including each country’s proved coal reserves in tonnes. Our World in Data republishes the series for 2008-2023, last updated on 30 June 2026. Proved reserves are the quantities that geological and engineering information shows can be recovered in the future from known deposits under existing economic and operating conditions.',
     whyOnShelf:
       'Reserves show how much coal a country could still mine and burn. In 2023 the largest proved reserves were in the United States (about 248 billion tonnes), Russia (about 162 billion), China (about 157 billion), Australia (about 150 billion) and India (about 128 billion). Together these five held about 72% of the world total of about 1,166 billion tonnes.',
     howToRead:
@@ -155,7 +155,7 @@ export const en: Record<string, MapCopy> = {
     ),
     sources: [
       cite(
-        'U.S. Geological Survey: Global Maps of Critical Mineral Production in 2023, Fact Sheet 2025–3038, August 2025',
+        'U.S. Geological Survey: Global Maps of Critical Mineral Production in 2023, Fact Sheet 2025-3038, August 2025',
         'https://pubs.usgs.gov/publication/fs20253038',
       ),
       cite(

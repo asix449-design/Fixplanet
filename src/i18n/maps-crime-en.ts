@@ -122,15 +122,15 @@ export const en: Record<string, MapCopy> = {
         'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
       ),
       cite(
-        'UNODC: Main cocaine trafficking flows as described in reported seizures, 2021–2024 (map)',
+        'UNODC: Main cocaine trafficking flows as described in reported seizures, 2021-2024 (map)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/04_Main_cocaine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'UNODC: Main heroin trafficking flows as described in reported seizures, 2021–2024 (map)',
+        'UNODC: Main heroin trafficking flows as described in reported seizures, 2021-2024 (map)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/07_Main_heroin_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'UNODC: Main methamphetamine trafficking flows as described in reported seizures, 2021–2024 (map)',
+        'UNODC: Main methamphetamine trafficking flows as described in reported seizures, 2021-2024 (map)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/01_Main_methamphetamine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
@@ -142,7 +142,7 @@ export const en: Record<string, MapCopy> = {
         'https://www.euda.europa.eu/publications/european-drug-report/2026/cocaine_en',
       ),
       cite(
-        'EUDA: Trends in the quantities of cocaine seizures, tonnes, 2014–2024',
+        'EUDA: Trends in the quantities of cocaine seizures, tonnes, 2014-2024',
         'https://www.euda.europa.eu/sites/default/files/data/data-nodes/33313/versions/56/edr2026-cocaine-table-8_en.csv',
       ),
     ],
@@ -360,7 +360,7 @@ export const en: Record<string, MapCopy> = {
         'https://datacatalog.worldbank.org/search/dataset/0038026/worldwide-governance-indicators',
       ),
       cite(
-        'World Bank: WGI 2026 Governance Estimates and Scores, 1996–2025',
+        'World Bank: WGI 2026 Governance Estimates and Scores, 1996-2025',
         'https://datacatalogfiles.worldbank.org/ddh-published/0038026/DR0095947/WGI%202026%20Governance%20Estimates%20and%20Scores%20%281996-2025%29.xlsx',
       ),
     ],

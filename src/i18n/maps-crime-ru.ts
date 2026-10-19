@@ -81,9 +81,9 @@ export const ru: Record<string, MapCopy> = {
     title: 'Потоки наркотрафика',
     cardMeta:
       '«Всемирный доклад о наркотиках» 2026 года Управления ООН по наркотикам и преступности, карты маршрутов по данным об изъятиях.',
-    hook: 'Основные маршруты контрабанды кокаина, героина и метамфетамина между регионами мира на картах Управления ООН по наркотикам и преступности, составленных по данным об изъятиях за 2021–2024 годы.',
+    hook: 'Основные маршруты контрабанды кокаина, героина и метамфетамина между регионами мира на картах Управления ООН по наркотикам и преступности, составленных по данным об изъятиях за 2021-2024 годы.',
     description:
-      '«Всемирный доклад о наркотиках» 2026 года Управления ООН по наркотикам и преступности сопровождается статистическим приложением, в котором есть три карты мира с основными потоками контрабанды метамфетамина, кокаина и героина. Каждая карта обобщает изъятия наркотиков, о которых сообщалось за 2021–2024 годы. Дополнительные карты показывают основные страны отправления или транзита и основные страны назначения для каждого наркотика, а таблицы приложения охватывают выращивание, производство, изъятия, цены и чистоту.',
+      '«Всемирный доклад о наркотиках» 2026 года Управления ООН по наркотикам и преступности сопровождается статистическим приложением, в котором есть три карты мира с основными потоками контрабанды метамфетамина, кокаина и героина. Каждая карта обобщает изъятия наркотиков, о которых сообщалось за 2021-2024 годы. Дополнительные карты показывают основные страны отправления или транзита и основные страны назначения для каждого наркотика, а таблицы приложения охватывают выращивание, производство, изъятия, цены и чистоту.',
     whyOnShelf:
       'Карты показывают, как наркотики перемещаются из регионов производства через транзитные узлы к рынкам потребления. Пример Европы: по данным Всемирного агентства ЕС по наркотикам, страны ЕС изъяли 330 тонн кокаина в 2024 году после рекордных 419 тонн в 2023 году; больше всего изъяли Испания (124 тонны) и Франция (53,5 тонны).',
     howToRead:
@@ -93,8 +93,8 @@ export const ru: Record<string, MapCopy> = {
     licenseNote: realMapCredit('ru', 'drug-trafficking-flows') ?? '',
     imageAlt:
       'Столбцы изъятого кокаина с 2014 по 2024 год, восемь цветных полос и годы, без названий стран на изображении',
-    caption: 'Изъятия кокаина в 27 странах ЕС, Норвегии и Турции в 2014–2024 годах, в тоннах, по странам.',
-    figureTitle: 'Изъятый кокаин в Европе, 2014–2024',
+    caption: 'Изъятия кокаина в 27 странах ЕС, Норвегии и Турции в 2014-2024 годах, в тоннах, по странам.',
+    figureTitle: 'Изъятый кокаин в Европе, 2014-2024',
     sectionHeads: heads,
     legend: [
       {
@@ -125,15 +125,15 @@ export const ru: Record<string, MapCopy> = {
         'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
       ),
       cite(
-        'УНП ООН: основные потоки контрабанды кокаина по данным об изъятиях, 2021–2024, карта в PDF (Main cocaine trafficking flows as described in reported seizures)',
+        'УНП ООН: основные потоки контрабанды кокаина по данным об изъятиях, 2021-2024, карта в PDF (Main cocaine trafficking flows as described in reported seizures)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/04_Main_cocaine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'УНП ООН: основные потоки контрабанды героина по данным об изъятиях, 2021–2024, карта в PDF (Main heroin trafficking flows)',
+        'УНП ООН: основные потоки контрабанды героина по данным об изъятиях, 2021-2024, карта в PDF (Main heroin trafficking flows)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/07_Main_heroin_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'УНП ООН: основные потоки контрабанды метамфетамина по данным об изъятиях, 2021–2024, карта в PDF (Main methamphetamine trafficking flows)',
+        'УНП ООН: основные потоки контрабанды метамфетамина по данным об изъятиях, 2021-2024, карта в PDF (Main methamphetamine trafficking flows)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/01_Main_methamphetamine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
@@ -145,7 +145,7 @@ export const ru: Record<string, MapCopy> = {
         'https://www.euda.europa.eu/publications/european-drug-report/2026/cocaine_en',
       ),
       cite(
-        'EUDA: динамика объёмов изъятий кокаина в тоннах, 2014–2024 (таблица EDR26-Cocaine-6, CSV)',
+        'EUDA: динамика объёмов изъятий кокаина в тоннах, 2014-2024 (таблица EDR26-Cocaine-6, CSV)',
         'https://www.euda.europa.eu/sites/default/files/data/data-nodes/33313/versions/56/edr2026-cocaine-table-8_en.csv',
       ),
     ],
@@ -383,7 +383,7 @@ export const ru: Record<string, MapCopy> = {
         'https://datacatalog.worldbank.org/search/dataset/0038026/worldwide-governance-indicators',
       ),
       cite(
-        'Всемирный банк: оценки и баллы качества управления, 1996–2025, файл Excel (WGI 2026 Governance Estimates and Scores)',
+        'Всемирный банк: оценки и баллы качества управления, 1996-2025, файл Excel (WGI 2026 Governance Estimates and Scores)',
         'https://datacatalogfiles.worldbank.org/ddh-published/0038026/DR0095947/WGI%202026%20Governance%20Estimates%20and%20Scores%20%281996-2025%29.xlsx',
       ),
     ],

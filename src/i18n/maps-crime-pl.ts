@@ -18,11 +18,11 @@ export const pl: Record<string, MapCopy> = {
     cardMeta: 'Dane Światowego przeglądu więziennictwa, liczba więźniów na 100 000 osób.',
     hook: 'Ile osób przebywa w więzieniach w poszczególnych krajach na każde 100 000 mieszkańców, łącznie z tymczasowo aresztowanymi, według bazy „Światowy przegląd więziennictwa”.',
     description:
-      '„Światowy przegląd więziennictwa” to bezpłatna internetowa baza danych o systemach więziennych na świecie, prowadzona przez Instytut Badań nad Przestępczością i Polityką Wymiaru Sprawiedliwości przy Birkbeck, Uniwersytet Londyński. Baza szereguje kraje według wskaźnika populacji więziennej: liczby wszystkich osób przebywających w więzieniach, w tym tymczasowo aresztowanych, na 100 000 mieszkańców. Niekomercyjny serwis statystyczny Our World in Data („Nasz świat w danych”) pokazuje ten sam szereg na mapie świata (dane z lat 1993–2026).',
+      '„Światowy przegląd więziennictwa” to bezpłatna internetowa baza danych o systemach więziennych na świecie, prowadzona przez Instytut Badań nad Przestępczością i Polityką Wymiaru Sprawiedliwości przy Birkbeck, Uniwersytet Londyński. Baza szereguje kraje według wskaźnika populacji więziennej: liczby wszystkich osób przebywających w więzieniach, w tym tymczasowo aresztowanych, na 100 000 mieszkańców. Niekomercyjny serwis statystyczny Our World in Data („Nasz świat w danych”) pokazuje ten sam szereg na mapie świata (dane z lat 1993-2026).',
     whyOnShelf:
       'Wskaźnik pokazuje, jak często państwo sięga po karę więzienia. Na liście 224 systemów więziennych najwyższy wskaźnik ma Salwador: 1659 na 100 000 osób, a dalej Kuba (794), Turkmenistan (około 576) i Stany Zjednoczone (542).',
     howToRead:
-      'Dane pochodzą głównie od rządów i innych źródeł oficjalnych, a strony krajów są aktualizowane co miesiąc, więc najnowszy rok różni się w zależności od kraju. Na wskaźnik wpływają przepisy o karach, stosowanie aresztu tymczasowego i przepustowość sądów, a także poziom przestępczości. Im ciemniejszy kolor na mapie, tym więcej więźniów na 100 000 osób; gdy brakuje danych za 2026 rok, pokazano najbliższy rok z okresu 2018–2025.',
+      'Dane pochodzą głównie od rządów i innych źródeł oficjalnych, a strony krajów są aktualizowane co miesiąc, więc najnowszy rok różni się w zależności od kraju. Na wskaźnik wpływają przepisy o karach, stosowanie aresztu tymczasowego i przepustowość sądów, a także poziom przestępczości. Im ciemniejszy kolor na mapie, tym więcej więźniów na 100 000 osób; gdy brakuje danych za 2026 rok, pokazano najbliższy rok z okresu 2018-2025.',
     caveats:
       'Odsetek tymczasowo aresztowanych, kobiet i cudzoziemców wśród więźniów oraz zapełnienie więzień „Światowy przegląd więziennictwa” publikuje jako osobne listy; mapa pokazuje tylko wskaźnik ogólny. Kraje różnie definiują, kogo liczy się jako więźnia.',
     licenseNote: realMapCredit('pl', 'prison-population-rate') ?? '',
@@ -81,9 +81,9 @@ export const pl: Record<string, MapCopy> = {
     title: 'Szlaki przemytu narkotyków',
     cardMeta:
       '„Światowy raport narkotykowy” 2026 Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości, mapy szlaków na podstawie zgłoszonych przechwyceń.',
-    hook: 'Główne szlaki przemytu kokainy, heroiny i metamfetaminy między regionami świata na mapach Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości, opracowanych na podstawie przechwyceń zgłoszonych za lata 2021–2024.',
+    hook: 'Główne szlaki przemytu kokainy, heroiny i metamfetaminy między regionami świata na mapach Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości, opracowanych na podstawie przechwyceń zgłoszonych za lata 2021-2024.',
     description:
-      '„Światowy raport narkotykowy” 2026 Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości ma aneks statystyczny z trzema mapami świata, które pokazują główne przepływy metamfetaminy, kokainy i heroiny. Każda mapa podsumowuje przechwycenia narkotyków zgłoszone za lata 2021–2024. Dodatkowe mapy pokazują główne kraje wyjazdu lub tranzytu oraz główne kraje docelowe dla każdego narkotyku, a tabele aneksu obejmują uprawy, produkcję, przechwycenia, ceny i czystość.',
+      '„Światowy raport narkotykowy” 2026 Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości ma aneks statystyczny z trzema mapami świata, które pokazują główne przepływy metamfetaminy, kokainy i heroiny. Każda mapa podsumowuje przechwycenia narkotyków zgłoszone za lata 2021-2024. Dodatkowe mapy pokazują główne kraje wyjazdu lub tranzytu oraz główne kraje docelowe dla każdego narkotyku, a tabele aneksu obejmują uprawy, produkcję, przechwycenia, ceny i czystość.',
     whyOnShelf:
       'Mapy pokazują, jak narkotyki wędrują z regionów produkcji przez węzły tranzytowe na rynki zbytu. Przykładem jest Europa: według Agencji Unii Europejskiej ds. Narkotyków państwa Unii Europejskiej przechwyciły w 2024 roku 330 ton kokainy, po rekordowych 419 tonach w 2023 roku; najwięcej zgłosiły Hiszpania (124 tony) i Francja (53,5 tony).',
     howToRead:
@@ -94,8 +94,8 @@ export const pl: Record<string, MapCopy> = {
     imageAlt:
       'Kolumny przechwyconej kokainy od 2014 do 2024, osiem kolorowych pasów i lata, bez nazw krajów na obrazie',
     caption:
-      'Kokaina przechwycona w 27 państwach Unii Europejskiej, Norwegii i Turcji w latach 2014–2024, w tonach, według krajów.',
-    figureTitle: 'Kokaina przechwycona w Europie, 2014–2024',
+      'Kokaina przechwycona w 27 państwach Unii Europejskiej, Norwegii i Turcji w latach 2014-2024, w tonach, według krajów.',
+    figureTitle: 'Kokaina przechwycona w Europie, 2014-2024',
     sectionHeads: heads,
     legend: [
       {
@@ -126,15 +126,15 @@ export const pl: Record<string, MapCopy> = {
         'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
       ),
       cite(
-        'UNODC: główne szlaki przemytu kokainy według zgłoszonych przechwyceń, 2021–2024, mapa PDF (Main cocaine trafficking flows as described in reported seizures)',
+        'UNODC: główne szlaki przemytu kokainy według zgłoszonych przechwyceń, 2021-2024, mapa PDF (Main cocaine trafficking flows as described in reported seizures)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/04_Main_cocaine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'UNODC: główne szlaki przemytu heroiny według zgłoszonych przechwyceń, 2021–2024, mapa PDF (Main heroin trafficking flows)',
+        'UNODC: główne szlaki przemytu heroiny według zgłoszonych przechwyceń, 2021-2024, mapa PDF (Main heroin trafficking flows)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/07_Main_heroin_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'UNODC: główne szlaki przemytu metamfetaminy według zgłoszonych przechwyceń, 2021–2024, mapa PDF (Main methamphetamine trafficking flows)',
+        'UNODC: główne szlaki przemytu metamfetaminy według zgłoszonych przechwyceń, 2021-2024, mapa PDF (Main methamphetamine trafficking flows)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/01_Main_methamphetamine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
@@ -146,7 +146,7 @@ export const pl: Record<string, MapCopy> = {
         'https://www.euda.europa.eu/publications/european-drug-report/2026/cocaine_en',
       ),
       cite(
-        'EUDA: trendy w ilości przechwyconej kokainy w tonach, 2014–2024 (tabela EDR26-Cocaine-6, CSV)',
+        'EUDA: trendy w ilości przechwyconej kokainy w tonach, 2014-2024 (tabela EDR26-Cocaine-6, CSV)',
         'https://www.euda.europa.eu/sites/default/files/data/data-nodes/33313/versions/56/edr2026-cocaine-table-8_en.csv',
       ),
     ],
@@ -382,7 +382,7 @@ export const pl: Record<string, MapCopy> = {
         'https://datacatalog.worldbank.org/search/dataset/0038026/worldwide-governance-indicators',
       ),
       cite(
-        'Bank Światowy: szacunki i wyniki jakości rządzenia, 1996–2025, plik Excel (WGI 2026 Governance Estimates and Scores)',
+        'Bank Światowy: szacunki i wyniki jakości rządzenia, 1996-2025, plik Excel (WGI 2026 Governance Estimates and Scores)',
         'https://datacatalogfiles.worldbank.org/ddh-published/0038026/DR0095947/WGI%202026%20Governance%20Estimates%20and%20Scores%20%281996-2025%29.xlsx',
       ),
     ],

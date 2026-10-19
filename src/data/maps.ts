@@ -116,7 +116,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'armed-conflict-events',
     category: 'conflicts',
-    year: '2024–2025',
+    year: '2024-2025',
     sourceShort: 'ACLED',
     sourceOrg: 'Armed Conflict Location & Event Data Project (ACLED)',
     sourceUrl: 'https://acleddata.com/',
@@ -127,7 +127,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'battle-related-deaths',
     category: 'conflicts',
-    year: '1989–2024',
+    year: '1989-2024',
     sourceShort: 'UCDP / OWID',
     sourceOrg: 'Uppsala Conflict Data Program; Our World in Data',
     sourceUrl: 'https://ucdp.uu.se/',
@@ -147,20 +147,20 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
     sources: [
       {
-        label: 'Institute for Economics & Peace / Vision of Humanity — Global Peace Index',
+        label: 'Institute for Economics & Peace / Vision of Humanity: Global Peace Index',
         url: 'https://www.visionofhumanity.org/maps/global-peace-index/',
       },
-      { label: 'Vision of Humanity — maps hub', url: 'https://www.visionofhumanity.org/maps/' },
+      { label: 'Vision of Humanity, maps hub', url: 'https://www.visionofhumanity.org/maps/' },
       {
-        label: 'Global Peace Index 2026 — full report (PDF)',
+        label: 'Global Peace Index 2026: full report (PDF)',
         url: 'https://www.visionofhumanity.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Report.pdf',
       },
       {
-        label: 'Global Peace Index 2026 — briefing (PDF)',
+        label: 'Global Peace Index 2026: briefing (PDF)',
         url: 'https://www.visionofhumanity.org/wp-content/uploads/2026/06/Global-Peace-Index-2026-Briefing-web.pdf',
       },
       {
-        label: 'Institute for Economics & Peace — GPI programme',
+        label: 'Institute for Economics & Peace: GPI programme',
         url: 'https://www.economicsandpeace.org/global-peace-index/',
       },
       { label: 'IEP hub', url: 'https://www.economicsandpeace.org/' },
@@ -178,15 +178,15 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
     sources: [
       {
-        label: 'Fund for Peace — Fragile States Index',
+        label: 'Fund for Peace: Fragile States Index',
         url: 'https://fragilestatesindex.org/',
       },
-      { label: 'FSI — global data', url: 'https://fragilestatesindex.org/global-data/' },
-      { label: 'FSI — analytics heat map', url: 'https://fragilestatesindex.org/analytics/fsi-heat-map/' },
-      { label: 'FSI — methodology', url: 'https://fragilestatesindex.org/methodology/' },
-      { label: 'FSI — indicators', url: 'https://fragilestatesindex.org/indicators/' },
-      { label: 'FSI — Excel / data download', url: 'https://fragilestatesindex.org/excel/' },
-      { label: 'Fund for Peace — FSI overview', url: 'https://fundforpeace.org/fsi/' },
+      { label: 'FSI, global data', url: 'https://fragilestatesindex.org/global-data/' },
+      { label: 'FSI, analytics heat map', url: 'https://fragilestatesindex.org/analytics/fsi-heat-map/' },
+      { label: 'FSI, methodology', url: 'https://fragilestatesindex.org/methodology/' },
+      { label: 'FSI, indicators', url: 'https://fragilestatesindex.org/indicators/' },
+      { label: 'FSI, Excel / data download', url: 'https://fragilestatesindex.org/excel/' },
+      { label: 'Fund for Peace: FSI overview', url: 'https://fundforpeace.org/fsi/' },
       { label: 'Fund for Peace hub', url: 'https://fundforpeace.org/' },
     ],
   },
@@ -203,23 +203,23 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'data',
     sources: [
       {
-        label: 'SIPRI — Military Expenditure Database',
+        label: 'SIPRI: Military Expenditure Database',
         url: 'https://www.sipri.org/databases/milex',
       },
       {
-        label: 'SIPRI — Trends in world military expenditure, 2024 (fact sheet page)',
+        label: 'SIPRI: Trends in world military expenditure, 2024 (fact sheet page)',
         url: 'https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024',
       },
       {
-        label: 'SIPRI — Milex 2024 fact sheet (PDF)',
+        label: 'SIPRI: Milex 2024 fact sheet (PDF)',
         url: 'https://www.sipri.org/sites/default/files/2025-04/2504_fs_milex_2024.pdf',
       },
       {
-        label: 'SIPRI — press release (Apr 2025 spending surge)',
+        label: 'SIPRI: press release (Apr 2025 spending surge)',
         url: 'https://www.sipri.org/media/press-release/2025/unprecedented-rise-global-military-expenditure-european-and-middle-east-spending-surges',
       },
       {
-        label: 'SIPRI — military expenditure research',
+        label: 'SIPRI: military expenditure research',
         url: 'https://www.sipri.org/research/armament-and-disarmament/arms-and-military-expenditure/military-expenditure',
       },
       { label: 'SIPRI hub', url: 'https://www.sipri.org/' },
@@ -237,15 +237,15 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'schematic',
     sources: [
       {
-        label: 'HIIK — Conflict Barometer',
+        label: 'HIIK: Conflict Barometer',
         url: 'https://hiik.de/en/conflict-barometer/',
       },
       {
-        label: 'HIIK — Conflict Barometer current version (EN)',
+        label: 'HIIK: Conflict Barometer current version (EN)',
         url: 'https://hiik.de/en/conflict-barometer/current-version/',
       },
       {
-        label: 'HIIK — previous editions / PDFs',
+        label: 'HIIK: previous editions / PDFs',
         url: 'https://hiik.de/conflict-barometer/bisherige-ausgaben/',
       },
       {
@@ -256,9 +256,9 @@ export const mapMeta: MapMeta[] = [
         label: 'Conflict Barometer 2024 (PDF)',
         url: 'https://hiik.de/wp-content/uploads/2026/05/coba-2024.pdf',
       },
-      { label: 'HIIK — static maps', url: 'https://hiik.de/daten-karten/statische-karten/' },
-      { label: 'HIIK — datasets', url: 'https://hiik.de/daten-karten/datensaetze/' },
-      { label: 'HIIK — methodology (EN)', url: 'https://hiik.de/hiik/methodik/?lang=en' },
+      { label: 'HIIK, static maps', url: 'https://hiik.de/daten-karten/statische-karten/' },
+      { label: 'HIIK, datasets', url: 'https://hiik.de/daten-karten/datensaetze/' },
+      { label: 'HIIK, methodology (EN)', url: 'https://hiik.de/hiik/methodik/?lang=en' },
       { label: 'HIIK hub', url: 'https://hiik.de/' },
     ],
   },
@@ -276,7 +276,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'world-religions',
     category: 'religious',
-    year: '2010–2020',
+    year: '2010-2020',
     sourceShort: 'Pew Research',
     sourceOrg: 'Pew Research Center',
     sourceUrl: 'https://www.pewresearch.org/religion/',
@@ -288,7 +288,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'homicide-rates',
     category: 'crime',
-    year: '2019–2023',
+    year: '2019-2023',
     sourceShort: 'UNODC / OWID',
     sourceOrg: 'United Nations Office on Drugs and Crime; Our World in Data',
     sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
@@ -325,10 +325,10 @@ export const mapMeta: MapMeta[] = [
     sources: [
       { label: 'Corruption Perceptions Index 2025', url: 'https://www.transparency.org/en/cpi/2025' },
       {
-        label: 'Our World in Data — CPI open map',
+        label: 'Our World in Data: CPI open map',
         url: 'https://ourworldindata.org/grapher/ti-corruption-perception-index',
       },
-      { label: 'Our World in Data — Corruption', url: 'https://ourworldindata.org/corruption' },
+      { label: 'Our World in Data, Corruption', url: 'https://ourworldindata.org/corruption' },
     ],
   },
   {
@@ -336,7 +336,7 @@ export const mapMeta: MapMeta[] = [
     category: 'crime',
     year: '2024 report',
     sourceShort: 'UNODC GLOTIP',
-    sourceOrg: 'United Nations Office on Drugs and Crime — Global Report on Trafficking in Persons',
+    sourceOrg: 'United Nations Office on Drugs and Crime: Global Report on Trafficking in Persons',
     sourceUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
     openMapUrl: 'https://www.unodc.org/unodc/en/data-and-analysis/glotip.html',
     preview: 'trafficking-in-persons.jpg',
@@ -438,7 +438,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'air-quality-pm25',
     category: 'pollution',
-    year: '2019–2022',
+    year: '2019-2022',
     sourceShort: 'WHO / OWID',
     sourceOrg: 'World Health Organization; Our World in Data; NASA Earth observations',
     sourceUrl: 'https://www.who.int/data/gho/data/themes/air-pollution',
@@ -471,15 +471,15 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'Global Carbon Project · OWID · trade-adjusted',
     sources: [
       {
-        label: 'Global Carbon Project / Our World in Data — consumption-based CO₂',
+        label: 'Global Carbon Project / Our World in Data, consumption-based CO₂',
         url: 'https://ourworldindata.org/grapher/consumption-co2-emissions?tab=map',
       },
       {
-        label: 'OWID — Consumption-based CO₂ emissions',
+        label: 'OWID: Consumption-based CO₂ emissions',
         url: 'https://ourworldindata.org/grapher/consumption-co2-emissions',
       },
       {
-        label: 'OWID — explainer: consumption-based CO₂',
+        label: 'OWID, explainer: consumption-based CO₂',
         url: 'https://ourworldindata.org/consumption-based-co2',
       },
       {
@@ -502,15 +502,15 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'Copernicus Sentinel-5P · TROPOMI · 2024 annual mean',
     sources: [
       {
-        label: 'KNMI / TEMIS — monthly mean tropospheric NO₂ from TROPOMI',
+        label: 'KNMI / TEMIS: monthly mean tropospheric NO₂ from TROPOMI',
         url: 'https://www.temis.nl/airpollution/no2col/no2month_tropomi.php',
       },
       {
-        label: 'S5P-PAL — tropospheric NO₂ (living portal, not this annual mean)',
+        label: 'S5P-PAL: tropospheric NO₂ (living portal, not this annual mean)',
         url: 'https://maps.s5p-pal.com/no2-tropospheric/',
       },
       {
-        label: 'ESA — Sentinel-5P mission',
+        label: 'ESA: Sentinel-5P mission',
         url: 'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P',
       },
       {
@@ -541,19 +541,19 @@ export const mapMeta: MapMeta[] = [
         url: 'https://ourworldindata.org/grapher/plastic-waste-mismanaged',
       },
       {
-        label: 'OWID — Share of plastic waste that is mismanaged',
+        label: 'OWID: Share of plastic waste that is mismanaged',
         url: 'https://ourworldindata.org/grapher/share-of-plastic-waste-that-is-mismanaged',
       },
       {
-        label: 'OWID — Plastic waste emitted to the ocean',
+        label: 'OWID: Plastic waste emitted to the ocean',
         url: 'https://ourworldindata.org/grapher/plastic-waste-emitted-to-the-ocean',
       },
       {
-        label: 'OWID — Plastic pollution topic',
+        label: 'OWID: Plastic pollution topic',
         url: 'https://ourworldindata.org/plastic-pollution',
       },
       {
-        label: 'Meijer et al. 2021 — PMC full text',
+        label: 'Meijer et al. 2021: PMC full text',
         url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7880581/',
       },
     ],
@@ -572,15 +572,15 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'EDGAR JRC · OWID · CH₄',
     sources: [
       {
-        label: 'EDGAR (JRC) / Our World in Data — methane emissions',
+        label: 'EDGAR (JRC) / Our World in Data, methane emissions',
         url: 'https://ourworldindata.org/grapher/methane-emissions?tab=map',
       },
       {
-        label: 'OWID — Methane emissions',
+        label: 'OWID: Methane emissions',
         url: 'https://ourworldindata.org/grapher/methane-emissions',
       },
       {
-        label: 'EDGAR — emissions data and maps',
+        label: 'EDGAR: emissions data and maps',
         url: 'https://edgar.jrc.ec.europa.eu/emissions_data_and_maps',
       },
       {
@@ -592,11 +592,11 @@ export const mapMeta: MapMeta[] = [
         url: 'https://edgar.jrc.ec.europa.eu/',
       },
       {
-        label: 'UNEP IMEO — Eye on Methane',
+        label: 'UNEP IMEO: Eye on Methane',
         url: 'https://methanedata.unep.org/',
       },
       {
-        label: 'IEA — Global Methane Tracker 2025',
+        label: 'IEA: Global Methane Tracker 2025',
         url: 'https://www.iea.org/reports/global-methane-tracker-2025',
       },
     ],
@@ -604,7 +604,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'oil-gas-reserves',
     category: 'subsurface',
-    year: '2023–2024',
+    year: '2023-2024',
     sourceShort: 'EIA',
     sourceOrg: 'U.S. Energy Information Administration',
     sourceUrl: 'https://www.eia.gov/international/overview/world.php',
@@ -743,7 +743,7 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'outline',
     sources: [
       {
-        label: 'Natural Earth 10m Admin 1 – States, provinces',
+        label: 'Natural Earth 10m Admin 1: States, provinces',
         url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/',
       },
       {
@@ -766,7 +766,7 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'outline',
     sources: [
       {
-        label: 'Natural Earth 10m Admin 0 – Breakaway, disputed areas',
+        label: 'Natural Earth 10m Admin 0: Breakaway, disputed areas',
         url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/',
       },
       {
@@ -797,7 +797,7 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'outline',
     sources: [
       {
-        label: 'Natural Earth 10m Admin 0 – Boundary lines',
+        label: 'Natural Earth 10m Admin 0: Boundary lines',
         url: 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/',
       },
       {
@@ -809,7 +809,7 @@ export const mapMeta: MapMeta[] = [
   {
     slug: 'forest-cover-loss',
     category: 'forests',
-    year: '2001–2024',
+    year: '2001-2024',
     sourceShort: 'Hansen GFC',
     sourceOrg: 'Hansen / University of Maryland; Global Forest Watch; NASA',
     sourceUrl: 'https://www.globalforestwatch.org/',
@@ -842,15 +842,15 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'data',
     sources: [
       {
-        label: 'Intact Forest Landscapes — data download (this plate is 2020)',
+        label: 'Intact Forest Landscapes: data download (this plate is 2020)',
         url: 'https://intactforests.org/data.ifl.html',
       },
       {
-        label: 'Zenodo — Intact Forest Landscapes Extent and Change, 2000–2025',
+        label: 'Zenodo: Intact Forest Landscapes Extent and Change, 2000-2025',
         url: 'https://zenodo.org/records/18011599',
       },
       {
-        label: 'Greenpeace — World Intact Forest Landscapes map viewer',
+        label: 'Greenpeace: World Intact Forest Landscapes map viewer',
         url: 'https://maps.greenpeace.org/maps/gpint/world-ifl/',
       },
       {
@@ -872,23 +872,23 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'data',
     sources: [
       {
-        label: 'Zenodo — Global Mangrove Watch v3, 2020',
+        label: 'Zenodo: Global Mangrove Watch v3, 2020',
         url: 'https://zenodo.org/records/6894273',
       },
       {
-        label: 'Global Mangrove Watch — map platform',
+        label: 'Global Mangrove Watch: map platform',
         url: 'https://www.globalmangrovewatch.org/',
       },
       {
-        label: 'JAXA EORC — Global Mangrove Watch dataset (v4.1)',
+        label: 'JAXA EORC: Global Mangrove Watch dataset (v4.1)',
         url: 'https://www.eorc.jaxa.jp/ALOS/en/dataset/gmw_e.htm',
       },
       {
-        label: 'Zenodo — Global Mangrove Watch timeseries v4.1.12',
+        label: 'Zenodo: Global Mangrove Watch timeseries v4.1.12',
         url: 'https://zenodo.org/records/21346457',
       },
       {
-        label: 'Mangrove Alliance — GMW 4.1 launch note',
+        label: 'Mangrove Alliance: GMW 4.1 launch note',
         url: 'https://www.mangrovealliance.org/news/global-mangrove-watch-4-launch',
       },
     ],
@@ -898,18 +898,18 @@ export const mapMeta: MapMeta[] = [
     category: 'forests',
     year: '2001',
     sourceShort: 'UMD GLAD',
-    sourceOrg: 'University of Maryland GLAD — Primary Humid Tropical Forests',
+    sourceOrg: 'University of Maryland GLAD: Primary Humid Tropical Forests',
     sourceUrl: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
     openMapUrl: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
     preview: 'primary-humid-tropical-forests.jpg',
     previewKind: 'schematic',
     sources: [
       {
-        label: 'GLAD UMD — Primary Humid Tropical Forests dataset',
+        label: 'GLAD UMD: Primary Humid Tropical Forests dataset',
         url: 'https://glad.umd.edu/dataset/primary-forest-humid-tropics',
       },
       {
-        label: 'Google Earth Engine catalog — UMD/GLAD Primary Humid Tropical Forests v1',
+        label: 'Google Earth Engine catalog: UMD/GLAD Primary Humid Tropical Forests v1',
         url: 'https://developers.google.com/earth-engine/datasets/catalog/UMD_GLAD_PRIMARY_HUMID_TROPICAL_FORESTS_v1',
       },
     ],
@@ -919,18 +919,18 @@ export const mapMeta: MapMeta[] = [
     category: 'forests',
     year: '~2019',
     sourceShort: 'FLII',
-    sourceOrg: 'Grantham et al., Nature Communications 2020 — Forest Landscape Integrity Index',
+    sourceOrg: 'Grantham et al., Nature Communications 2020: Forest Landscape Integrity Index',
     sourceUrl: 'https://www.nature.com/articles/s41467-020-19493-3',
     openMapUrl: 'https://www.nature.com/articles/s41467-020-19493-3',
     preview: 'forest-landscape-integrity.jpg',
     previewKind: 'schematic',
     sources: [
       {
-        label: 'Grantham et al. 2020 — Nature Communications (FLII paper)',
+        label: 'Grantham et al. 2020: Nature Communications (FLII paper)',
         url: 'https://www.nature.com/articles/s41467-020-19493-3',
       },
       {
-        label: 'Forest Landscape Integrity — download data',
+        label: 'Forest Landscape Integrity: download data',
         url: 'https://www.forestlandscapeintegrity.com/download-data',
       },
       {
@@ -987,13 +987,13 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'UN WPP 2024 · 8.16 billion (1 July 2024)',
     gridSourceLabel: 'UN WPP 2024',
     sources: [
-      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
+      { label: 'UN DESA, World Population Prospects', url: 'https://population.un.org/wpp/' },
       {
-        label: 'UN DESA — World Population Prospects 2024',
+        label: 'UN DESA: World Population Prospects 2024',
         url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
       },
       {
-        label: 'UN DESA — WPP 2024 demographic indicators, medium variant',
+        label: 'UN DESA: WPP 2024 demographic indicators, medium variant',
         url: 'https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz',
       },
     ],
@@ -1013,15 +1013,15 @@ export const mapMeta: MapMeta[] = [
     gridSourceLabel: 'GHS-SMOD R2023A',
     sources: [
       {
-        label: 'European Commission JRC — GHSL GHS-SMOD R2023A, 2020 epoch',
+        label: 'European Commission JRC: GHSL GHS-SMOD R2023A, 2020 epoch',
         url: 'https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php',
       },
       {
-        label: 'European Commission JRC — Global Human Settlement Layer',
+        label: 'European Commission JRC: Global Human Settlement Layer',
         url: 'https://human-settlement.emergency.copernicus.eu/',
       },
       {
-        label: 'European Commission JRC — GHSL datasets',
+        label: 'European Commission JRC: GHSL datasets',
         url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
       },
     ],
@@ -1041,15 +1041,15 @@ export const mapMeta: MapMeta[] = [
     gridSourceLabel: 'GHS-BUILT-S R2023A',
     sources: [
       {
-        label: 'European Commission JRC — GHSL GHS-BUILT-S R2023A, 2020 epoch',
+        label: 'European Commission JRC: GHSL GHS-BUILT-S R2023A, 2020 epoch',
         url: 'https://human-settlement.emergency.copernicus.eu/ghs_buS2023.php',
       },
       {
-        label: 'European Commission JRC — Global Human Settlement Layer',
+        label: 'European Commission JRC: Global Human Settlement Layer',
         url: 'https://human-settlement.emergency.copernicus.eu/',
       },
       {
-        label: 'European Commission JRC — GHSL datasets',
+        label: 'European Commission JRC: GHSL datasets',
         url: 'https://human-settlement.emergency.copernicus.eu/datasets.php',
       },
     ],
@@ -1068,13 +1068,13 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'UN WPP 2024 · 2024 rate · percent per year',
     gridSourceLabel: 'UN WPP 2024',
     sources: [
-      { label: 'UN DESA — World Population Prospects', url: 'https://population.un.org/wpp/' },
+      { label: 'UN DESA, World Population Prospects', url: 'https://population.un.org/wpp/' },
       {
-        label: 'UN DESA — World Population Prospects 2024',
+        label: 'UN DESA: World Population Prospects 2024',
         url: 'https://www.un.org/development/desa/pd/world-population-prospects-2024',
       },
       {
-        label: 'UN DESA — WPP 2024 demographic indicators, medium variant',
+        label: 'UN DESA: WPP 2024 demographic indicators, medium variant',
         url: 'https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Demographic_Indicators_Medium.csv.gz',
       },
     ],
@@ -1084,7 +1084,7 @@ export const mapMeta: MapMeta[] = [
     category: 'water',
     year: '2013',
     sourceShort: 'HydroBASINS',
-    sourceOrg: 'HydroSHEDS — HydroBASINS',
+    sourceOrg: 'HydroSHEDS: HydroBASINS',
     sourceUrl: 'https://www.hydrosheds.org/products/hydrobasins',
     openMapUrl: 'https://www.hydrosheds.org/products/hydrobasins',
     preview: 'global-river-basins.jpg',
@@ -1132,7 +1132,7 @@ export const mapMeta: MapMeta[] = [
     category: 'water',
     year: '2016',
     sourceShort: 'HydroSHEDS · HydroLAKES',
-    sourceOrg: 'HydroSHEDS — HydroLAKES',
+    sourceOrg: 'HydroSHEDS: HydroLAKES',
     sourceUrl: 'https://www.hydrosheds.org/products/hydrolakes',
     openMapUrl: 'https://www.hydrosheds.org/products/hydrolakes',
     preview: 'global-lakes-hydrolakes.jpg',
@@ -1140,16 +1140,16 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'HydroSHEDS · HydroLAKES · Messager et al. 2016',
     sources: [
       {
-        label: 'HydroSHEDS — HydroLAKES',
+        label: 'HydroSHEDS: HydroLAKES',
         url: 'https://www.hydrosheds.org/products/hydrolakes',
       },
       {
-        label: 'Messager et al. 2016 — Nature Communications',
+        label: 'Messager et al. 2016: Nature Communications',
         url: 'https://doi.org/10.1038/ncomms13603',
       },
       { label: 'HydroSHEDS hub', url: 'https://www.hydrosheds.org/' },
       {
-        label: 'HydroSHEDS — HydroBASINS (live sibling)',
+        label: 'HydroSHEDS: HydroBASINS (live sibling)',
         url: 'https://www.hydrosheds.org/products/hydrobasins',
       },
     ],
@@ -1159,7 +1159,7 @@ export const mapMeta: MapMeta[] = [
     category: 'water',
     year: '2025',
     sourceShort: 'HydroSHEDS · GLWD v2',
-    sourceOrg: 'HydroSHEDS — GLWD v2',
+    sourceOrg: 'HydroSHEDS: GLWD v2',
     sourceUrl: 'https://www.hydrosheds.org/products/glwd',
     openMapUrl: 'https://www.hydrosheds.org/products/glwd',
     preview: 'lakes-wetlands-glwd.jpg',
@@ -1167,15 +1167,15 @@ export const mapMeta: MapMeta[] = [
     cardMeta: 'HydroSHEDS · GLWD v2 · Lehner et al. 2025',
     sources: [
       {
-        label: 'HydroSHEDS — GLWD v2',
+        label: 'HydroSHEDS: GLWD v2',
         url: 'https://www.hydrosheds.org/products/glwd',
       },
       {
-        label: 'Lehner et al. 2025 — ESSD (GLWD v2 paper)',
+        label: 'Lehner et al. 2025: ESSD (GLWD v2 paper)',
         url: 'https://doi.org/10.5194/essd-17-2277-2025',
       },
       {
-        label: 'WWF — GLWD overview (v1 context / legacy levels)',
+        label: 'WWF: GLWD overview (v1 context / legacy levels)',
         url: 'https://www.worldwildlife.org/our-work/science/global-lakes-and-wetlands-database/',
       },
       {
@@ -1201,11 +1201,11 @@ export const mapMeta: MapMeta[] = [
         url: 'https://www.wri.org/data/aqueduct-global-maps-40-data',
       },
       {
-        label: 'WRI — Aqueduct Floods',
+        label: 'WRI: Aqueduct Floods',
         url: 'https://www.wri.org/data/aqueduct-floods',
       },
       {
-        label: 'WRI — Aqueduct Floods Hazard Maps',
+        label: 'WRI: Aqueduct Floods Hazard Maps',
         url: 'https://www.wri.org/data/aqueduct-floods-hazard-maps',
       },
       {
@@ -1213,7 +1213,7 @@ export const mapMeta: MapMeta[] = [
         url: 'https://www.wri.org/applications/aqueduct/floods/',
       },
       {
-        label: 'WRI Data Explorer — hazard maps dataset',
+        label: 'WRI Data Explorer: hazard maps dataset',
         url: 'https://datasets.wri.org/datasets/aqueduct-floods-hazard-maps',
       },
       {
@@ -1227,7 +1227,7 @@ export const mapMeta: MapMeta[] = [
     category: 'political',
     year: '2023',
     sourceShort: 'Marine Regions',
-    sourceOrg: 'Marine Regions — EEZ (Flanders Marine Institute)',
+    sourceOrg: 'Marine Regions: EEZ (Flanders Marine Institute)',
     sourceUrl: 'https://www.marineregions.org/eez.php',
     openMapUrl: 'https://www.marineregions.org/eez.php',
     preview: 'exclusive-economic-zones.jpg',
@@ -1238,7 +1238,7 @@ export const mapMeta: MapMeta[] = [
     category: 'ethnic',
     year: '2026',
     sourceShort: 'Ethnologue',
-    sourceOrg: 'Ethnologue — How many languages (SIL International)',
+    sourceOrg: 'Ethnologue: How many languages (SIL International)',
     sourceUrl: 'https://www.ethnologue.com/insights/how-many-languages/',
     openMapUrl: 'https://www.ethnologue.com/insights/how-many-languages/',
     preview: 'living-languages-count.jpg',
@@ -1249,14 +1249,14 @@ export const mapMeta: MapMeta[] = [
     category: 'ethnic',
     year: '2010',
     sourceShort: 'UNESCO · Atlas of the World’s Languages in Danger',
-    sourceOrg: 'UNESCO — Atlas of the World’s Languages in Danger (Moseley ed. 2010)',
+    sourceOrg: 'UNESCO: Atlas of the World’s Languages in Danger (Moseley ed. 2010)',
     sourceUrl: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
     openMapUrl: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
     preview: 'endangered-languages-unesco.jpg',
     previewKind: 'schematic',
     sources: [
       {
-        label: 'UNESCO — Atlas of the World’s Languages in Danger',
+        label: 'UNESCO: Atlas of the World’s Languages in Danger',
         url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026',
       },
       {
@@ -1264,7 +1264,7 @@ export const mapMeta: MapMeta[] = [
         url: 'https://unesdoc.unesco.org/ark:/48223/pf0000187026.locale=en',
       },
       {
-        label: 'Ethnologue — How many languages are endangered?',
+        label: 'Ethnologue: How many languages are endangered?',
         url: 'https://www.ethnologue.com/insights/how-many-languages-endangered/',
       },
     ],
@@ -1281,9 +1281,9 @@ export const mapMeta: MapMeta[] = [
     previewKind: 'outline',
     sources: [
       { label: 'WALS Online (Max Planck EVA)', url: 'https://wals.info/' },
-      { label: 'WALS Online — Features index', url: 'https://wals.info/feature' },
+      { label: 'WALS Online, Features index', url: 'https://wals.info/feature' },
       {
-        label: 'WALS Online — Consonant Inventories (feature 1A)',
+        label: 'WALS Online: Consonant Inventories (feature 1A)',
         url: 'https://wals.info/feature/1A',
       },
       { label: 'CLDF dataset mirror (GitHub)', url: 'https://github.com/cldf-datasets/wals' },
@@ -1299,20 +1299,20 @@ export const mapMeta: MapMeta[] = [
     category: 'ethnic',
     year: 'Atlas of the World’s Languages digitization',
     sourceShort: 'Scientific Data · 2025',
-    sourceOrg: 'Ranacher et al., Scientific Data 2025 — language areas from Asher & Moseley',
+    sourceOrg: 'Ranacher et al., Scientific Data 2025: language areas from Asher & Moseley',
     sourceUrl: 'https://www.nature.com/articles/s41597-025-05828-6',
     openMapUrl: 'https://www.nature.com/articles/s41597-025-05828-6',
     preview: 'language-areas-asher-moseley.jpg',
     previewKind: 'outline',
     sources: [
       {
-        label: 'Ranacher et al., Scientific Data 2025 — language areas from Asher & Moseley',
+        label: 'Ranacher et al., Scientific Data 2025: language areas from Asher & Moseley',
         url: 'https://www.nature.com/articles/s41597-025-05828-6',
       },
       { label: 'Same via doi.org', url: 'https://doi.org/10.1038/s41597-025-05828-6' },
       { label: 'PMC full text', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12373819/' },
       {
-        label: 'GitHub — Glottography/asher2007world (polygons + Glottocodes)',
+        label: 'GitHub: Glottography/asher2007world (polygons + Glottocodes)',
         url: 'https://github.com/glottography/asher2007world',
       },
       { label: 'Glottolog', url: 'https://glottolog.org/' },
@@ -1331,11 +1331,11 @@ export const mapMeta: MapMeta[] = [
     sources: [
       { label: 'Endangered Languages Project', url: 'https://www.endangeredlanguages.com/' },
       {
-        label: 'Endangered Languages Project — About',
+        label: 'Endangered Languages Project: About',
         url: 'https://www.endangeredlanguages.com/about/',
       },
       {
-        label: 'Ethnologue — How many languages are endangered?',
+        label: 'Ethnologue: How many languages are endangered?',
         url: 'https://www.ethnologue.com/insights/how-many-languages-endangered/',
       },
       {
