@@ -7,7 +7,7 @@ export const lvRemittances: RemittanceCopy = {
     'remittances-global-flows': {
       tag: 'Plūsmas · Zemu un vidēju ienākumu valstis · 2023 un 2024. gada novērtējums',
       title: 'Naudas pārvedumi uz jaunattīstības valstīm',
-      hook: 'Zemu un vidēju ienākumu valstis 2023. gadā saņēma aptuveni 656 mljrd. USD oficiāli uzskaitītu pārvedumu; Pasaules Bankas autoru 2024. gada novērtējums ir ap 685 mljrd. USD — joprojām vairāk nekā ārvalstu tiešās investīcijas un oficiālā attīstības palīdzība kopā.',
+      hook: 'Zemu un vidēju ienākumu valstis 2023. gadā saņēma aptuveni 656 mljrd. USD oficiāli uzskaitītu pārvedumu; Pasaules Bankas autoru 2024. gada novērtējums ir ap 685 mljrd. USD: joprojām vairāk nekā ārvalstu tiešās investīcijas un oficiālā attīstības palīdzība kopā.',
       figure: '656',
       unit: 'mljrd. USD, 2023',
       rows: [
@@ -21,7 +21,7 @@ export const lvRemittances: RemittanceCopy = {
         },
         {
           heading: 'Kāpēc tas ir svarīgi',
-          body: 'Daudzām valstīm šīs plūsmas ir lielākais stabilais ārējā finansējuma avots — bieži lielāks par ārvalstu tiešajām investīcijām vai palīdzību. Tās uztur mājsaimniecību patēriņu, izglītību un veselību, un, kad citas kapitāla plūsmas svārstās, tās kalpo kā rezerve maksājumu bilances tekošajam kontam.',
+          body: 'Daudzām valstīm šīs plūsmas ir lielākais stabilais ārējā finansējuma avots: bieži lielāks par ārvalstu tiešajām investīcijām vai palīdzību. Tās uztur mājsaimniecību patēriņu, izglītību un veselību, un, kad citas kapitāla plūsmas svārstās, tās kalpo kā rezerve maksājumu bilances tekošajam kontam.',
         },
         {
           heading: 'Kā to lasīt',
@@ -29,7 +29,7 @@ export const lvRemittances: RemittanceCopy = {
         },
       ],
       plate:
-        'Grafiks: naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2017–2023, Pasaules Banka, „Migrācija un attīstība”, 40. izdevums. Skaitlis ir miljardi USD.',
+        'Grafiks: naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2017-2023, Pasaules Banka, „Migrācija un attīstība”, 40. izdevums. Skaitlis ir miljardi USD.',
     },
     'remittances-top-recipients': {
       tag: 'Saņēmēji · 2024. gada novērtējums',
@@ -51,7 +51,7 @@ export const lvRemittances: RemittanceCopy = {
         },
         {
           heading: 'Kāpēc tas ir svarīgi',
-          body: 'Lielas saņemtās summas ietekmē valstu valūtas tirgus un mājsaimniecību ienākumus lielākajās izcelsmes un galamērķa valstu sistēmās — īpaši Indija – Persijas līča valstis un ESAO, Meksika – ASV un Filipīnu ilggadējie ārzemēs strādājošo koridori.',
+          body: 'Lielas saņemtās summas ietekmē valstu valūtas tirgus un mājsaimniecību ienākumus lielākajās izcelsmes un galamērķa valstu sistēmās: īpaši Indija - Persijas līča valstis un ESAO, Meksika - ASV un Filipīnu ilggadējie ārzemēs strādājošo koridori.',
         },
         {
           heading: 'Kā to lasīt',
@@ -64,13 +64,13 @@ export const lvRemittances: RemittanceCopy = {
     'remittances-gdp-share': {
       tag: 'Atkarība · 2024. gada novērtējums',
       title: 'Pārvedumi kā IKP daļa',
-      hook: 'Mazākās ekonomikās pārvedumi var pārsniegt citu finansējumu: Tadžikistāna ~45% no IKP, Tonga ~38%, tālāk Nikaragva, Libāna un Samoa ap 26–27% 2024. gada novērtējumā.',
+      hook: 'Mazākās ekonomikās pārvedumi var pārsniegt citu finansējumu: Tadžikistāna ~45% no IKP, Tonga ~38%, tālāk Nikaragva, Libāna un Samoa ap 26-27% 2024. gada novērtējumā.',
       figure: '47',
       unit: 'procenti no IKP, Tadžikistāna 2024. gada kartē',
       rows: [
         { label: 'Tadžikistāna, 2024. gada novērtējums', figure: '~45% no IKP' },
         { label: 'Tonga, 2024. gada novērtējums', figure: '~38% no IKP' },
-        { label: 'Nikaragva, Libāna un Samoa, 2024. gada novērtējums', figure: 'ap 26–27% no IKP' },
+        { label: 'Nikaragva, Libāna un Samoa, 2024. gada novērtējums', figure: 'ap 26-27% no IKP' },
       ],
       sections: [
         {
@@ -92,7 +92,7 @@ export const lvRemittances: RemittanceCopy = {
     'remittances-sending-cost': {
       tag: 'Cenas · RPW',
       title: 'Naudas nosūtīšanas izmaksas',
-      hook: 'Pārvedumu nosūtīšana joprojām izmaksā vidēji ap 6,4% no summas — vairāk nekā divreiz virs 3% mērķa, kas noteikts ilgtspējīgas attīstības mērķos (IAM); Pasaules Bankas datubāze par naudas pārvedumu cenām, atjaunināta 2025. gada 18. augustā, rāda ap 6,36%.',
+      hook: 'Pārvedumu nosūtīšana joprojām izmaksā vidēji ap 6,4% no summas: vairāk nekā divreiz virs 3% mērķa, kas noteikts ilgtspējīgas attīstības mērķos (IAM); Pasaules Bankas datubāze par naudas pārvedumu cenām, atjaunināta 2025. gada 18. augustā, rāda ap 6,36%.',
       figure: '6,4',
       unit: 'procenti, pasaules vidējais, 2023. gada beigas',
       rows: [
@@ -103,7 +103,7 @@ export const lvRemittances: RemittanceCopy = {
       sections: [
         {
           heading: 'Kas ir šis skaitlis',
-          body: 'Pasaules Bankas datubāze par naudas pārvedumu cenām izseko tipiska neliela pārveduma nosūtīšanas izmaksas (bieži par etalonu ņem 200 USD) simtiem koridoru starp valstīm. Pasaules Bankas ziņojums „Migrācija un attīstība”, 40. izdevums, norādīja pasaules vidējo 6,4% 2023. gada 4. ceturksnī (gadu iepriekš — 6,2%). Šī datubāze, pēdējo reizi atjaunināta 2025. gada 18. augustā, uzrāda pasaules vidējo ap 6,36% 367 koridoros (48 sūtītājvalstis un 105 saņēmējvalstis).',
+          body: 'Pasaules Bankas datubāze par naudas pārvedumu cenām izseko tipiska neliela pārveduma nosūtīšanas izmaksas (bieži par etalonu ņem 200 USD) simtiem koridoru starp valstīm. Pasaules Bankas ziņojums „Migrācija un attīstība”, 40. izdevums, norādīja pasaules vidējo 6,4% 2023. gada 4. ceturksnī (gadu iepriekš: 6,2%). Šī datubāze, pēdējo reizi atjaunināta 2025. gada 18. augustā, uzrāda pasaules vidējo ap 6,36% 367 koridoros (48 sūtītājvalstis un 105 saņēmējvalstis).',
         },
         {
           heading: 'Kāpēc tas ir svarīgi',

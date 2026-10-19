@@ -17,7 +17,7 @@ export type PrivacyPage = {
 
 const pages: Record<Locale, PrivacyPage> = {
   "en": {
-    "metaTitle": "Privacy — Fix Planet",
+    "metaTitle": "Privacy: Fix Planet",
     "metaDescription": "Fix Planet has no accounts, forms, comments or newsletter. It sets no advertising or tracking cookies. To show you the pages, some services see your device's IP address: Cloudflare, which hosts the site, Google, which supplies the fonts, and on map pages the map and data services listed below. Content from other services, such as videos, loads only after you press its button.",
     "title": "Privacy",
     "updated": "Last updated: 11 October 2026",
@@ -190,7 +190,7 @@ const pages: Record<Locale, PrivacyPage> = {
     ]
   },
   "ru": {
-    "metaTitle": "Конфиденциальность — Fix Planet",
+    "metaTitle": "Конфиденциальность: Fix Planet",
     "metaDescription": "На Fix Planet нет учётных записей, форм, комментариев и рассылки. Сайт не ставит рекламных и отслеживающих файлов куки. Чтобы показать страницы, некоторые службы видят сетевой адрес вашего устройства: Cloudflare, где размещён сайт, Google, который отдаёт шрифты, а на страницах с картами ещё картографические службы и источники данных, перечисленные ниже. Материалы других сервисов, например видео, загружаются только после нажатия на их кнопку.",
     "title": "Конфиденциальность",
     "updated": "Последнее обновление: 11 октября 2026 года",
@@ -363,7 +363,7 @@ const pages: Record<Locale, PrivacyPage> = {
     ]
   },
   "pl": {
-    "metaTitle": "Prywatność — Fix Planet",
+    "metaTitle": "Prywatność: Fix Planet",
     "metaDescription": "Fix Planet nie ma kont, formularzy, komentarzy ani biuletynu. Strona nie zapisuje reklamowych ani śledzących ciasteczek. Aby pokazać strony, niektóre usługi widzą adres sieciowy Twojego urządzenia: Cloudflare, na którego serwerach działa strona, Google, który dostarcza czcionki, a na stronach z mapami także wymienione niżej usługi map i źródła danych. Treści z innych serwisów, na przykład filmy, wczytują się dopiero po naciśnięciu ich przycisku.",
     "title": "Prywatność",
     "updated": "Ostatnia aktualizacja: 11 października 2026",
@@ -536,7 +536,7 @@ const pages: Record<Locale, PrivacyPage> = {
     ]
   },
   "lv": {
-    "metaTitle": "Privātums — Fix Planet",
+    "metaTitle": "Privātums: Fix Planet",
     "metaDescription": "Fix Planet nav kontu, veidlapu, komentāru un jaunumu vēstules. Vietne neizmanto reklāmas vai izsekošanas sīkdatnes. Lai parādītu lapas, dažiem pakalpojumiem ir redzama jūsu ierīces tīkla adrese: Cloudflare, kura tīklā vietne izvietota, Google, kas piegādā fontus, un lapās ar kartēm arī tālāk minētie karšu pakalpojumi un datu avoti. Citu pakalpojumu saturs, piemēram, video, ielādējas tikai pēc tā pogas nospiešanas.",
     "title": "Privātums",
     "updated": "Pēdējo reizi atjaunināts: 2026. gada 11. oktobrī",

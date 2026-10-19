@@ -48,79 +48,79 @@ export const remittanceSourceUrls: Record<RemittanceSourceKey, string> = {
 /** Readable source titles. English titles stay in parentheses where the translation keeps them. */
 export const remittanceSourceLabels: Record<Locale, Record<RemittanceSourceKey, string>> = {
   en: {
-    brief40: 'World Bank — Migration and Development Brief 40 (June 2024)',
+    brief40: 'World Bank: Migration and Development Brief 40 (June 2024)',
     pressRelease:
-      'World Bank — press release, 26 June 2024: Remittances Slowed in 2023, Expected to Grow Faster in 2024',
+      'World Bank: press release, 26 June 2024: Remittances Slowed in 2023, Expected to Grow Faster in 2024',
     peopleMove:
-      'World Bank PeopleMove — remittance flows to low- and middle-income countries, 18 December 2024',
-    reliefWeb: 'ReliefWeb — Migration and Development Brief 40 (June 2024)',
+      'World Bank PeopleMove: remittance flows to low- and middle-income countries, 18 December 2024',
+    reliefWeb: 'ReliefWeb: Migration and Development Brief 40 (June 2024)',
     wdiReceived:
-      'World Bank — World Development Indicators, personal remittances received (current US dollars)',
+      'World Bank: World Development Indicators, personal remittances received (current US dollars)',
     wdiGdp:
-      'World Bank — World Development Indicators, personal remittances received as a share of GDP',
-    wdiCost: 'World Bank — World Development Indicators, average cost of sending remittances to a country',
-    pricesWorldwide: 'World Bank — Remittance Prices Worldwide',
-    pricesIssue50: 'World Bank — Remittance Prices Worldwide, Issue 50 (June 2024)',
+      'World Bank: World Development Indicators, personal remittances received as a share of GDP',
+    wdiCost: 'World Bank: World Development Indicators, average cost of sending remittances to a country',
+    pricesWorldwide: 'World Bank: Remittance Prices Worldwide',
+    pricesIssue50: 'World Bank: Remittance Prices Worldwide, Issue 50 (June 2024)',
   },
   ru: {
     brief40:
-      'Всемирный банк — «Миграция и развитие», выпуск 40 (Migration and Development Brief 40), июнь 2024 г.',
+      'Всемирный банк: «Миграция и развитие», выпуск 40 (Migration and Development Brief 40), июнь 2024 г.',
     pressRelease:
-      'Всемирный банк — пресс-релиз от 26 июня 2024 г.: «Рост денежных переводов замедлился в 2023 году, в 2024 году ожидается ускорение» (Remittances Slowed in 2023, Expected to Grow Faster in 2024)',
+      'Всемирный банк: пресс-релиз от 26 июня 2024 г.: «Рост денежных переводов замедлился в 2023 году, в 2024 году ожидается ускорение» (Remittances Slowed in 2023, Expected to Grow Faster in 2024)',
     peopleMove:
-      'Блог Всемирного банка PeopleMove — денежные переводы в страны с низким и средним уровнем дохода, 18 декабря 2024 г.',
+      'Блог Всемирного банка PeopleMove: денежные переводы в страны с низким и средним уровнем дохода, 18 декабря 2024 г.',
     reliefWeb:
-      'ReliefWeb — доклад Всемирного банка «Миграция и развитие», выпуск 40 (Migration and Development Brief 40), июнь 2024 г.',
+      'ReliefWeb: доклад Всемирного банка «Миграция и развитие», выпуск 40 (Migration and Development Brief 40), июнь 2024 г.',
     wdiReceived:
-      'Всемирный банк — World Development Indicators («Показатели мирового развития»): личные переводы полученные (в текущих долларах США)',
+      'Всемирный банк: World Development Indicators («Показатели мирового развития»): личные переводы полученные (в текущих долларах США)',
     wdiGdp:
-      'Всемирный банк — World Development Indicators («Показатели мирового развития»): личные полученные переводы как доля ВВП',
+      'Всемирный банк: World Development Indicators («Показатели мирового развития»): личные полученные переводы как доля ВВП',
     wdiCost:
-      'Всемирный банк — World Development Indicators («Показатели мирового развития»): средняя стоимость отправки денежных переводов в страну',
+      'Всемирный банк: World Development Indicators («Показатели мирового развития»): средняя стоимость отправки денежных переводов в страну',
     pricesWorldwide:
-      'Всемирный банк — Remittance Prices Worldwide («Цены на денежные переводы в мире»)',
+      'Всемирный банк: Remittance Prices Worldwide («Цены на денежные переводы в мире»)',
     pricesIssue50:
-      'Всемирный банк — Remittance Prices Worldwide («Цены на денежные переводы в мире»), выпуск 50, июнь 2024 г.',
+      'Всемирный банк: Remittance Prices Worldwide («Цены на денежные переводы в мире»), выпуск 50, июнь 2024 г.',
   },
   pl: {
     brief40:
-      'Bank Światowy — „Migracja i rozwój”, nr 40 (Migration and Development Brief 40), czerwiec 2024 r.',
+      'Bank Światowy: „Migracja i rozwój”, nr 40 (Migration and Development Brief 40), czerwiec 2024 r.',
     pressRelease:
-      'Bank Światowy — komunikat prasowy z 26 czerwca 2024 r.: „Przekazy pieniężne zwolniły w 2023 r., w 2024 r. oczekiwany szybszy wzrost” (Remittances Slowed in 2023, Expected to Grow Faster in 2024)',
+      'Bank Światowy: komunikat prasowy z 26 czerwca 2024 r.: „Przekazy pieniężne zwolniły w 2023 r., w 2024 r. oczekiwany szybszy wzrost” (Remittances Slowed in 2023, Expected to Grow Faster in 2024)',
     peopleMove:
-      'Blog Banku Światowego PeopleMove — przekazy pieniężne do krajów o niskim i średnim dochodzie, 18 grudnia 2024 r.',
+      'Blog Banku Światowego PeopleMove: przekazy pieniężne do krajów o niskim i średnim dochodzie, 18 grudnia 2024 r.',
     reliefWeb:
-      'ReliefWeb — raport Banku Światowego „Migracja i rozwój”, nr 40 (Migration and Development Brief 40), czerwiec 2024 r.',
+      'ReliefWeb: raport Banku Światowego „Migracja i rozwój”, nr 40 (Migration and Development Brief 40), czerwiec 2024 r.',
     wdiReceived:
-      'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane (w bieżących USD)',
+      'Bank Światowy: World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane (w bieżących USD)',
     wdiGdp:
-      'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane jako udział w PKB',
+      'Bank Światowy: World Development Indicators („Wskaźniki rozwoju świata”): przekazy osobiste otrzymane jako udział w PKB',
     wdiCost:
-      'Bank Światowy — World Development Indicators („Wskaźniki rozwoju świata”): średni koszt wysłania przekazów pieniężnych do kraju',
+      'Bank Światowy: World Development Indicators („Wskaźniki rozwoju świata”): średni koszt wysłania przekazów pieniężnych do kraju',
     pricesWorldwide:
-      'Bank Światowy — Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”)',
+      'Bank Światowy: Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”)',
     pricesIssue50:
-      'Bank Światowy — Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”), nr 50, czerwiec 2024 r.',
+      'Bank Światowy: Remittance Prices Worldwide („Ceny przekazów pieniężnych na świecie”), nr 50, czerwiec 2024 r.',
   },
   lv: {
     brief40:
-      'Pasaules Banka — „Migrācija un attīstība”, 40. izdevums (Migration and Development Brief 40), 2024. gada jūnijs',
+      'Pasaules Banka: „Migrācija un attīstība”, 40. izdevums (Migration and Development Brief 40), 2024. gada jūnijs',
     pressRelease:
-      'Pasaules Banka — preses relīze, 2024. gada 26. jūnijs: „Naudas pārvedumu pieaugums 2023. gadā palēninājās, 2024. gadā gaidāms straujāks kāpums” (Remittances Slowed in 2023, Expected to Grow Faster in 2024)',
+      'Pasaules Banka: preses relīze, 2024. gada 26. jūnijs: „Naudas pārvedumu pieaugums 2023. gadā palēninājās, 2024. gadā gaidāms straujāks kāpums” (Remittances Slowed in 2023, Expected to Grow Faster in 2024)',
     peopleMove:
-      'Pasaules Bankas emuārs PeopleMove — naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2024. gada 18. decembris',
+      'Pasaules Bankas emuārs PeopleMove: naudas pārvedumi uz zemu un vidēju ienākumu valstīm, 2024. gada 18. decembris',
     reliefWeb:
-      'ReliefWeb — Pasaules Bankas ziņojums „Migrācija un attīstība”, 40. izdevums (Migration and Development Brief 40), 2024. gada jūnijs',
+      'ReliefWeb: Pasaules Bankas ziņojums „Migrācija un attīstība”, 40. izdevums (Migration and Development Brief 40), 2024. gada jūnijs',
     wdiReceived:
-      'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): saņemtie personīgie pārvedumi (faktiskajās cenās, USD)',
+      'Pasaules Banka: World Development Indicators („Pasaules attīstības rādītāji”): saņemtie personīgie pārvedumi (faktiskajās cenās, USD)',
     wdiGdp:
-      'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): saņemtie personīgie pārvedumi kā IKP daļa',
+      'Pasaules Banka: World Development Indicators („Pasaules attīstības rādītāji”): saņemtie personīgie pārvedumi kā IKP daļa',
     wdiCost:
-      'Pasaules Banka — World Development Indicators („Pasaules attīstības rādītāji”): vidējās izmaksas, sūtot naudas pārvedumus uz valsti',
+      'Pasaules Banka: World Development Indicators („Pasaules attīstības rādītāji”): vidējās izmaksas, sūtot naudas pārvedumus uz valsti',
     pricesWorldwide:
-      'Pasaules Banka — Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”)',
+      'Pasaules Banka: Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”)',
     pricesIssue50:
-      'Pasaules Banka — Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”), 50. izdevums, 2024. gada jūnijs',
+      'Pasaules Banka: Remittance Prices Worldwide („Naudas pārvedumu cenas pasaulē”), 50. izdevums, 2024. gada jūnijs',
   },
 };
 

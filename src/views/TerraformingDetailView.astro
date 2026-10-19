@@ -15,7 +15,7 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const page = getGeoPage(locale);
 const { item } = Astro.props;
-const title = `${item.title} — Fix Planet`;
+const title = `${item.title}: Fix Planet`;
 const image = geoImageSrc(item.image);
 const shelfHref = localizePath(geoShelfPath(item.shelf), locale);
 ---

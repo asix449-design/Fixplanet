@@ -208,12 +208,12 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
     hook: grid['electric-buses'].fix,
     imageAlt: grid['electric-buses'].imageAlt,
     caption:
-      'Sprzedaż autobusów elektrycznych według regionów w latach 2020–2025. Chiny wciąż sprzedają najwięcej, ale ich udział w słupku maleje, bo inne regiony rosną szybciej. Segmenty od dołu to Chiny, Europa, Stany Zjednoczone, Indie, Ameryka Łacińska i reszta świata. W 2025 r. jest to 40,1, 12,5, 1,8, 4,3, 3,1 i 6,1 tysiąca autobusów (razem 67,9 tysiąca). Udział Chin w słupku wynosi 86,3 procent w 2020 r. i 59,1 procent w 2025 r. Skala pionowa to tysiące autobusów.',
+      'Sprzedaż autobusów elektrycznych według regionów w latach 2020-2025. Chiny wciąż sprzedają najwięcej, ale ich udział w słupku maleje, bo inne regiony rosną szybciej. Segmenty od dołu to Chiny, Europa, Stany Zjednoczone, Indie, Ameryka Łacińska i reszta świata. W 2025 r. jest to 40,1, 12,5, 1,8, 4,3, 3,1 i 6,1 tysiąca autobusów (razem 67,9 tysiąca). Udział Chin w słupku wynosi 86,3 procent w 2020 r. i 59,1 procent w 2025 r. Skala pionowa to tysiące autobusów.',
     credit:
-      'Wykres przerysowany z danych Międzynarodowej Agencji Energetycznej (2026), „Sprzedaż autobusów elektrycznych według regionów, 2020–2025”. Kolorowy klucz na tej stronie jest adaptacją tamtego wykresu.',
+      'Wykres przerysowany z danych Międzynarodowej Agencji Energetycznej (2026), „Sprzedaż autobusów elektrycznych według regionów, 2020-2025”. Kolorowy klucz na tej stronie jest adaptacją tamtego wykresu.',
     legend: ['Chiny', 'Europa', 'Stany Zjednoczone', 'Indie', 'Ameryka Łacińska', 'Reszta świata'],
     what: [
-      'Autobusy elektryczne jeżdżą na bateriach ładowanych z sieci, głównie w zajezdniach. Według raportu Międzynarodowej Agencji Energetycznej „Globalne perspektywy pojazdów elektrycznych 2026” w 2025 r. modele bateryjne stanowiły 98% autobusów elektrycznych sprzedanych na świecie. Średni zasięg bateryjnych modeli osiągnął 360 km, co wystarcza autobusom miejskim, które zwykle pokonują 150–300 km dziennie.',
+      'Autobusy elektryczne jeżdżą na bateriach ładowanych z sieci, głównie w zajezdniach. Według raportu Międzynarodowej Agencji Energetycznej „Globalne perspektywy pojazdów elektrycznych 2026” w 2025 r. modele bateryjne stanowiły 98% autobusów elektrycznych sprzedanych na świecie. Średni zasięg bateryjnych modeli osiągnął 360 km, co wystarcza autobusom miejskim, które zwykle pokonują 150-300 km dziennie.',
     ],
     why: [
       'Autobusy miejskie cały dzień jeżdżą tymi samymi zatłoczonymi trasami, więc zastąpienie silników diesla usuwa spaliny dokładnie tam, gdzie wiele osób czeka i chodzi. W 2025 r. sprzedaż sięgnęła prawie 70 tys., o 12% więcej niż w 2024 r. Na Chiny przypadło około 60% z nich, wobec prawie 100% w 2018 r., a niemal wszystkie nowe autobusy miejskie sprzedawane w tym kraju są elektryczne. W Europie sprzedano ponad 12 tys. autobusów elektrycznych, a w Unii Europejskiej modele bateryjne miały ponad 55% sprzedaży nowych autobusów miejskich. Santiago w Chile ma dziś największą flotę autobusów elektrycznych wśród miast poza Chinami.',

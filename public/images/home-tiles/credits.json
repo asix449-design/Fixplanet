@@ -1,7 +1,7 @@
 [
   {
     "file": "solutions.jpg",
-    "title": "Home tile — Solutions",
+    "title": "Home tile: Solutions",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -9,7 +9,7 @@
   },
   {
     "file": "innovations.jpg",
-    "title": "Home tile — Innovations",
+    "title": "Home tile: Innovations",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -17,7 +17,7 @@
   },
   {
     "file": "terraforming.jpg",
-    "title": "Home tile — Terraforming",
+    "title": "Home tile: Terraforming",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -25,7 +25,7 @@
   },
   {
     "file": "maps.jpg",
-    "title": "Home tile — Maps",
+    "title": "Home tile: Maps",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -33,7 +33,7 @@
   },
   {
     "file": "law.jpg",
-    "title": "Home tile — Law",
+    "title": "Home tile: Law",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -41,7 +41,7 @@
   },
   {
     "file": "nature.jpg",
-    "title": "Home tile — Nature / Wildlife",
+    "title": "Home tile: Nature / Wildlife",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -49,7 +49,7 @@
   },
   {
     "file": "migration.jpg",
-    "title": "Home tile — Migration",
+    "title": "Home tile: Migration",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -57,7 +57,7 @@
   },
   {
     "file": "forest.jpg",
-    "title": "Home tile — Forests (original filename)",
+    "title": "Home tile: Forests (original filename)",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -65,7 +65,7 @@
   },
   {
     "file": "forests.jpg",
-    "title": "Home tile — Forests",
+    "title": "Home tile: Forests",
     "source": "Founder-supplied JPEG (copy of forest.jpg; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -73,7 +73,7 @@
   },
   {
     "file": "ocean.jpg",
-    "title": "Home tile — Oceans (original filename)",
+    "title": "Home tile: Oceans (original filename)",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -81,7 +81,7 @@
   },
   {
     "file": "oceans.jpg",
-    "title": "Home tile — Oceans",
+    "title": "Home tile: Oceans",
     "source": "Founder-supplied JPEG (copy of ocean.jpg; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",
@@ -89,7 +89,7 @@
   },
   {
     "file": "about.jpg",
-    "title": "Home tile — About",
+    "title": "Home tile: About",
     "source": "Founder-supplied JPEG (moved from repo root; not regenerated)",
     "license": "Site theme asset",
     "kind": "hosted-original",

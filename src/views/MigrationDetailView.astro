@@ -11,7 +11,7 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const page = getMigrationPage(locale);
 const { item } = Astro.props;
-const title = `${item.title} — Fix Planet`;
+const title = `${item.title}: Fix Planet`;
 const image = migrationImageSrc(item.image);
 const backHref = localizePath(`/migration/${item.shelf}`, locale);
 ---

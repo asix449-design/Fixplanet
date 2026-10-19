@@ -3,7 +3,7 @@ import type { LawCopy } from '../data/law';
 export const pl: Record<string, LawCopy> = {
   'paris-agreement': {
     title: 'Porozumienie paryskie',
-    hook: 'Główny obowiązujący traktat klimatyczny. Wiąże strony NDC i celem „znacznie poniżej 2°C / dążyć do 1,5°C” — nie globalnym sufitem emisji wpisanym w tekst.',
+    hook: 'Główny obowiązujący traktat klimatyczny. Wiąże strony NDC i celem „znacznie poniżej 2°C / dążyć do 1,5°C”: nie globalnym sufitem emisji wpisanym w tekst.',
     imageAlt:
       'François Hollande, Laurent Fabius i Ban Ki-moon klaszczą na scenie COP21 po przyjęciu Porozumienia paryskiego',
     jurisdiction: 'Ramowa konwencja ONZ w sprawie zmian klimatu (strony)',
@@ -12,37 +12,37 @@ export const pl: Record<string, LawCopy> = {
       'Porozumienie paryskie w ramach UNFCCC; przyjęte 12 grudnia 2015 (COP21); weszło w życie 4 listopada 2016',
     yearStatus: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016.',
     what: 'Prawnie wiążący traktat przy UNFCCC: NDC, sprawozdawczość, globalne podsumowanie; cele temperaturowe, adaptacja, finanse, pochłaniacze (w tym lasy).',
-    where: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016. Lista stron — depozytariusz ONZ / UNFCCC.',
+    where: 'Przyjęte w Paryżu 12.12.2015; w mocy od 04.11.2016. Lista stron: depozytariusz ONZ / UNFCCC.',
     effects:
-      'Zamierzony skutek: zebrać krajowe plany klimatyczne w jedną architekturę traktatową, pięcioletni cykl ambicji i wpisać 1,5°C w prawo wielostronne. Wyniki zależą od treści NDC i wdrożenia krajowego — traktat sam nie zamyka elektrowni.',
+      'Zamierzony skutek: zebrać krajowe plany klimatyczne w jedną architekturę traktatową, pięcioletni cykl ambicji i wpisać 1,5°C w prawo wielostronne. Wyniki zależą od treści NDC i wdrożenia krajowego: traktat sam nie zamyka elektrowni.',
     caveats:
       'Treść NDC ustalają same państwa; traktat sam nie zamyka elektrowni. Nie mylić z Protokołem z Kioto.',
     sourcesNote: 'Te same trzy URL: strona UNFCCC; angielski PDF porozumienia; depozytariusz ONZ.',
   },
   'montreal-protocol': {
     title: 'Protokół montrealski w sprawie substancji zubożających warstwę ozonową',
-    hook: 'Traktat ozonowy, który realnie uciął produkcję i handel ODS. Kigali później dodało HFC dla klimatu — ta sama maszyna Montrealu, nie drugi UNFCCC.',
+    hook: 'Traktat ozonowy, który realnie uciął produkcję i handel ODS. Kigali później dodało HFC dla klimatu: ta sama maszyna Montrealu, nie drugi UNFCCC.',
     imageAlt:
-      'Wizualizacja NASA niskiego ozonu nad Antarktydą — dziura ozonowa, którą Protokół montrealski miał odwrócić',
+      'Wizualizacja NASA niskiego ozonu nad Antarktydą: dziura ozonowa, którą Protokół montrealski miał odwrócić',
     jurisdiction: 'Strony Protokołu montrealskiego (sekretariat ozonowy UNEP)',
     officialName: 'Protokół montrealski w sprawie substancji zubożających warstwę ozonową',
     citation:
       'Protokół montrealski (1987, ze zmianami); poprawka z Kigali 15 października 2016; kontrola HFC od 1 stycznia 2019 dla stron, u których poprawka weszła w życie',
     yearStatus:
       'Protokół z 1987. Kigali w mocy od 01.01.2019 po progach ratyfikacji.',
-    what: 'Harmonogramy redukcji ODS, ograniczenia handlu, sprawozdawczość, Fundusz wielostronny; Kigali — stopniowe obniżanie HFC.',
+    what: 'Harmonogramy redukcji ODS, ograniczenia handlu, sprawozdawczość, Fundusz wielostronny; Kigali: stopniowe obniżanie HFC.',
     where: 'Niemal powszechne uczestnictwo; Kigali w mocy od 01.01.2019 po progach ratyfikacji.',
     effects:
-      'Udokumentowany sukces protokołu to harmonogramy wycofywania ODS i metryki odbudowy warstwy ozonowej (oceny sekretariatu / WMO–UNEP, nie marketing). Zamierzony skutek klimatyczny Kigali to uniknięte ocieplenie od HFC; dostawa idzie według krajowych harmonogramów obniżania.',
+      'Udokumentowany sukces protokołu to harmonogramy wycofywania ODS i metryki odbudowy warstwy ozonowej (oceny sekretariatu / WMO-UNEP, nie marketing). Zamierzony skutek klimatyczny Kigali to uniknięte ocieplenie od HFC; dostawa idzie według krajowych harmonogramów obniżania.',
     caveats:
       'Sukces ozonu ≠ kontrola CO₂/metanu (to Paryż/UNFCCC). Nie podpisywać karty jako „główny traktat klimatyczny”.',
-    sourcesNote: 'Te same trzy URL: sekretariat ozonowy — protokół i poprawki; depozytariusz ONZ — Kigali.',
+    sourcesNote: 'Te same trzy URL: sekretariat ozonowy: protokół i poprawki; depozytariusz ONZ: Kigali.',
   },
   'eu-deforestation-regulation': {
     title: 'Rozporządzenie UE o produktach wolnych od wylesiania (EUDR)',
     hook: 'Reguła rynku UE: wymienione towary muszą być wolne od wylesiania i legalne. Uchwalone 2023; główne obowiązki od końca 2026 / połowy 2027 według wielkości operatora. To nie unijny traktat leśny ONZ.',
     imageAlt:
-      'Plantacja palmy olejowej wokół pozostałego fragmentu lasu deszczowego na Borneo — krawędź towaru i lasu, którą obejmuje unijna reguła',
+      'Plantacja palmy olejowej wokół pozostałego fragmentu lasu deszczowego na Borneo: krawędź towaru i lasu, którą obejmuje unijna reguła',
     jurisdiction: 'Unia Europejska',
     officialName: 'Rozporządzenie w sprawie produktów niezwiązanych z wylesianiem',
     citation: 'Rozporządzenie (UE) 2023/1115 z 31 maja 2023 r. w sprawie produktów niezwiązanych z wylesianiem',
@@ -52,62 +52,62 @@ export const pl: Record<string, LawCopy> = {
     where:
       'Rozporządzenie w mocy; stosowanie dużych/średnich od 30.12.2026, mikro/małych od 30.06.2027 (z zastrzeżeniami dla byłych EUTR). Nie wrzucać do «pod rozwagą».',
     effects:
-      'Cele statutowe: ograniczyć wylesianie/degradację napędzane popytem UE oraz związane emisje i utratę bioróżnorodności. Szacunki cięcia emisji z oceny skutków Komisji — zamierzone/modelowane, nie zmierzone wyniki 2026.',
+      'Cele statutowe: ograniczyć wylesianie/degradację napędzane popytem UE oraz związane emisje i utratę bioróżnorodności. Szacunki cięcia emisji z oceny skutków Komisji: zamierzone/modelowane, nie zmierzone wyniki 2026.',
     caveats: 'Wyciek na inne rynki; odroczenie ≠ «już blokuje wszystko dziś».',
-    sourcesNote: 'Te same dwa URL: EUR-Lex — Rozporządzenie (UE) 2023/1115; strona Komisji o produktach wolnych od wylesiania.',
+    sourcesNote: 'Te same dwa URL: EUR-Lex: Rozporządzenie (UE) 2023/1115; strona Komisji o produktach wolnych od wylesiania.',
   },
   'eu-ets': {
     title: 'Unijny system handlu uprawnieniami do emisji (EU ETS)',
-    hook: 'Unijny cap-and-trade dla dużych emitentów. Kurczący się pułap uprawnień, aukcje i rezerwa stabilności rynku — nie domowy podatek węglowy i nie samo Porozumienie paryskie.',
+    hook: 'Unijny cap-and-trade dla dużych emitentów. Kurczący się pułap uprawnień, aukcje i rezerwa stabilności rynku: nie domowy podatek węglowy i nie samo Porozumienie paryskie.',
     imageAlt:
-      'Elektrownia lignitowa Niederaussem w Niemczech — duży stacjonarny emitent takiego typu, jaki obejmuje EU ETS',
+      'Elektrownia lignitowa Niederaussem w Niemczech: duży stacjonarny emitent takiego typu, jaki obejmuje EU ETS',
     jurisdiction: 'Unia Europejska',
     officialName: 'Unijny system handlu uprawnieniami do emisji',
     citation:
       'Dyrektywa 2003/87/WE (ze zmianami) ustanawiająca system handlu uprawnieniami do emisji gazów cieplarnianych',
-    yearStatus: 'Obowiązuje w UE; rdzeń — Dyrektywa 2003/87/WE ze zmianami.',
+    yearStatus: 'Obowiązuje w UE; rdzeń: Dyrektywa 2003/87/WE ze zmianami.',
     what: 'Rynek uprawnień dla objętych instalacji (i lotnictwa / dalszych sektorów według nowelizacji); zwrot uprawnień wobec zweryfikowanych emisji.',
-    where: 'Obowiązuje w UE; rdzeń — Dyrektywa 2003/87/WE ze zmianami.',
+    where: 'Obowiązuje w UE; rdzeń: Dyrektywa 2003/87/WE ze zmianami.',
     effects:
-      'Zamierzony skutek: dać cenę objętym emisjom GHG i ciąć je pod kurczącym się pułapem. Udokumentowane wyniki systemu — w raportach EEA/Komisji o ETS; tony stamtąd, nie z głowy.',
-    caveats: 'Nie cała gospodarka; nie Paryż i nie EUDR. Tony — tylko z raportów EEA/Komisji.',
-    sourcesNote: 'Te same trzy URL: hub Komisji o EU ETS; strona „What is the EU ETS”; EUR-Lex — Dyrektywa 2003/87/WE.',
+      'Zamierzony skutek: dać cenę objętym emisjom GHG i ciąć je pod kurczącym się pułapem. Udokumentowane wyniki systemu: w raportach EEA/Komisji o ETS; tony stamtąd, nie z głowy.',
+    caveats: 'Nie cała gospodarka; nie Paryż i nie EUDR. Tony: tylko z raportów EEA/Komisji.',
+    sourcesNote: 'Te same trzy URL: hub Komisji o EU ETS; strona „What is the EU ETS”; EUR-Lex: Dyrektywa 2003/87/WE.',
   },
   'nature-restoration': {
     title: 'Unijne prawo odbudowy przyrody',
-    hook: 'Wiążące rozporządzenie o restytucji — nie dokument strategiczny. Projekty planów krajowych miały być do 1 września 2026; Komisja je ocenia.',
+    hook: 'Wiążące rozporządzenie o restytucji: nie dokument strategiczny. Projekty planów krajowych miały być do 1 września 2026; Komisja je ocenia.',
     imageAlt:
-      'Torfowisko z otwartą wodą i niską roślinnością — typ siedliska mokradłowego, który obejmują unijne cele odbudowy',
+      'Torfowisko z otwartą wodą i niską roślinnością: typ siedliska mokradłowego, który obejmują unijne cele odbudowy',
     jurisdiction: 'Unia Europejska',
     officialName: 'Nature Restoration Regulation',
     citation:
       'Regulation (EU) 2024/1991 of the European Parliament and of the Council of 24 June 2024 on nature restoration',
     yearStatus: 'Przyjęte 24 czerwca 2024. W mocy od 18 sierpnia 2024.',
-    what: 'Rozporządzenie nakłada unijne obowiązki odbudowy. Państwa członkowskie mają wspólnie wprowadzić środki odbudowy na co najmniej 20 procentach lądowych i morskich obszarów UE do 2030 oraz na wszystkich ekosystemach wymagających odbudowy do 2050. Dodaje terminy dla typów siedlisk z załącznika I dyrektywy siedliskowej, torfowisk, rzek, zieleni miejskiej, ekosystemów rolnych, lasów i siedlisk morskich — obok, nie zamiast, dyrektyw ptasiej i siedliskowej.',
+    what: 'Rozporządzenie nakłada unijne obowiązki odbudowy. Państwa członkowskie mają wspólnie wprowadzić środki odbudowy na co najmniej 20 procentach lądowych i morskich obszarów UE do 2030 oraz na wszystkich ekosystemach wymagających odbudowy do 2050. Dodaje terminy dla typów siedlisk z załącznika I dyrektywy siedliskowej, torfowisk, rzek, zieleni miejskiej, ekosystemów rolnych, lasów i siedlisk morskich: obok, nie zamiast, dyrektyw ptasiej i siedliskowej.',
     where: 'Obowiązuje bezpośrednio w każdym państwie członkowskim UE. Każde miało przesłać Komisji projekt krajowego planu odbudowy do 1 września 2026. Komisja i Europejska Agencja Środowiska oceniają projekty; plany ostateczne następują po uwagach Komisji. Implementing Regulation (EU) 2025/912 ustalił jednolity format planu.',
-    effects: 'Zamierzony skutek to odwrócić spadek ekosystemów, magazynować więcej węgla w glebach i mokradłach oraz zmniejszyć część ryzyka katastrof i bezpieczeństwa wodnego. To cele statutowe, nie zmierzone wyniki 2024–2026. Prawo jest zbyt nowe na skończoną ocenę hektarów faktycznie przywróconych na jego podstawie.',
+    effects: 'Zamierzony skutek to odwrócić spadek ekosystemów, magazynować więcej węgla w glebach i mokradłach oraz zmniejszyć część ryzyka katastrof i bezpieczeństwa wodnego. To cele statutowe, nie zmierzone wyniki 2024-2026. Prawo jest zbyt nowe na skończoną ocenę hektarów faktycznie przywróconych na jego podstawie.',
     caveats: 'Rozporządzenie to nie odtworzone torfowisko. Wykonanie siedzi w planach krajowych, budżetach i sporach o użytkowanie ziemi. Tekst był politycznie sporny. Nie uchyla reguł Natura 2000 i sam z siebie nie zatrzymuje przekształceń poza terenami odbudowy.',
     sourcesNote:
       'Tekst źródłowy na EUR-Lex; strony Komisji o prawie i o wejściu w życie (18 sierpnia 2024); nota Komisji, że projekty planów miały być do 1 września 2026.',
   },
   'clean-air-act': {
     title: 'Amerykańska ustawa o czystym powietrzu',
-    hook: 'Główny amerykański statut o zanieczyszczeniu powietrza. Zwykle cytowane źródło to własne recenzowane studia kosztów i korzyści EPA — nie hasło.',
+    hook: 'Główny amerykański statut o zanieczyszczeniu powietrza. Zwykle cytowane źródło to własne recenzowane studia kosztów i korzyści EPA: nie hasło.',
     imageAlt: 'Zachodnia fasada Kapitolu Stanów Zjednoczonych, gdzie Kongres pisze i nowelizuje ustawy federalne',
     jurisdiction: 'Stany Zjednoczone',
     officialName: 'Clean Air Act',
     citation: '42 U.S.C. § 7401 et seq. (1970; major amendments 1977 and 1990)',
     yearStatus: 'Uchwalona w 1970. Nadal w mocy, z późniejszymi nowelizacjami.',
-    what: 'Ustawa wymaga krajowych norm jakości powietrza atmosferycznego, stanowych planów wdrożenia, pozwoleń dla nowych i zmienianych źródeł, kontroli źródeł mobilnych oraz — po 1990 — programu pułapu i handlu kwaśnymi deszczami i ostrzejszych reguł toksycznych. To statut o zanieczyszczeniu, nie kompleksowe prawo klimatyczne, choć na nim oparto niektóre reguły gazów cieplarnianych.',
+    what: 'Ustawa wymaga krajowych norm jakości powietrza atmosferycznego, stanowych planów wdrożenia, pozwoleń dla nowych i zmienianych źródeł, kontroli źródeł mobilnych oraz: po 1990: programu pułapu i handlu kwaśnymi deszczami i ostrzejszych reguł toksycznych. To statut o zanieczyszczeniu, nie kompleksowe prawo klimatyczne, choć na nim oparto niektóre reguły gazów cieplarnianych.',
     where: 'Federalne prawo USA, wdrażane przez EPA i stany. Nie obowiązuje poza jurysdykcją USA.',
     effects: 'Drugie studium prospektywne EPA (2011), wymagane przez sekcję 812 nowelizacji z 1990, oszacowało, że te nowelizacje zapobiegną około 230 000 przedwczesnych zgonów w roku 2020 i że centralny szacunek korzyści przekroczy koszty ponad 30 do 1. To wyniki modelu wobec linii bazowej bez nowelizacji, nie spis nazwanych osób.',
     caveats: 'Korzyści są szacowane, nie obserwowane jeden do jednego. Niektóre obszary wciąż nie spełniają norm. Procesy i cykle polityczne zmieniają reguły. Nie traktuj ustawy jako skończonego instrumentu klimatycznego ani jako dowodu, że każdy lokalny basen powietrza jest czysty.',
     sourcesNote:
-      'Przegląd Clean Air Act EPA; EPA “Benefits and Costs of the Clean Air Act 1990–2020, the Second Prospective Study”; rozdział 85 Kodeksu USA.',
+      'Przegląd Clean Air Act EPA; EPA “Benefits and Costs of the Clean Air Act 1990-2020, the Second Prospective Study”; rozdział 85 Kodeksu USA.',
   },
   'single-use-plastics': {
     title: 'Unijna dyrektywa w sprawie tworzyw jednorazowych',
-    hook: 'Prawdziwy zakaz produktów i reguła cięcia konsumpcji dla wymienionego zestawu wyrobów — nie globalny pułap produkcji polimerów.',
+    hook: 'Prawdziwy zakaz produktów i reguła cięcia konsumpcji dla wymienionego zestawu wyrobów: nie globalny pułap produkcji polimerów.',
     imageAlt: 'Zebrane butelki PET, rodzaj opakowań jednorazowych, które dyrektywa obejmuje tylko częściowo',
     jurisdiction: 'Unia Europejska',
     officialName: 'Single-Use Plastics Directive',
@@ -116,59 +116,59 @@ export const pl: Record<string, LawCopy> = {
     yearStatus: 'W mocy od 2 lipca 2019. Państwa członkowskie miały transponować główne ograniczenia rynkowe do 3 lipca 2021.',
     what: 'Dyrektywa zakazuje wprowadzania na rynek UE niektórych wymienionych jednorazowych wyrobów z tworzyw (w tym patyczków higienicznych, sztućców, talerzy, słomek, mieszadełek i tworzyw oksydegradowalnych). Wymaga też ograniczenia konsumpcji części kubków i pojemników na żywność, reguł rozszerzonej odpowiedzialności producenta, oznakowania i celów selektywnej zbiórki butelek z tworzyw.',
     where: 'Państwa członkowskie UE, przez krajowe ustawy transponujące. Akt stwierdza znaczenie dla EOG. To nie traktat ONZ i nie wiąże państw spoza UE.',
-    effects: 'Zamierzony skutek to ograniczyć wycieki morskie i inne do środowiska z produktów, które dominują w części europejskich liczników śmieci plażowych. To uzasadnienie samej dyrektywy. Nie odczytuj z tej strony konkretnego globalnego spadku tonażu po 2021 — wdrożenia krajowe i substytucja się różnią, a ten katalog nie wymyśla jednego procentu.',
+    effects: 'Zamierzony skutek to ograniczyć wycieki morskie i inne do środowiska z produktów, które dominują w części europejskich liczników śmieci plażowych. To uzasadnienie samej dyrektywy. Nie odczytuj z tej strony konkretnego globalnego spadku tonażu po 2021: wdrożenia krajowe i substytucja się różnią, a ten katalog nie wymyśla jednego procentu.',
     caveats: 'Zakaz wymienionych wyrobów to nie pułap produkcji polimerów. Zamienniki (inne tworzywa, papier albo materiały „bio”) mogą przesunąć problem. Jakość transpozycji bywa różna. Reguły opakowań zaktualizowały później kolejne akty UE, w tym rozporządzenie opakowaniowe z 2025, które nowelizuje tę dyrektywę.',
     sourcesNote: 'Oficjalny tekst EUR-Lex; strona tematyczna Komisji o tworzywach jednorazowych.',
   },
   'costa-rica-pes': {
-    title: 'Kostaryka — płatność za usługi środowiskowe',
+    title: 'Kostaryka: płatność za usługi środowiskowe',
     hook: 'Leśna ustawa z 1996, która płaci właścicielom za stojący las. To jeden instrument, nie jedyna przyczyna powrotu koron.',
-    imageAlt: 'Las mglisty Monteverde w Kostaryce — rodzaj pokrycia, które program PSA płaci chronić',
+    imageAlt: 'Las mglisty Monteverde w Kostaryce: rodzaj pokrycia, które program PSA płaci chronić',
     jurisdiction: 'Kostaryka',
     officialName: 'Pago por Servicios Ambientales (PSA), under the Forestry Law',
     citation: 'Forestry Law No. 7575 (1996); PSA administered by FONAFIFO',
     yearStatus: 'Ustawa 7575 przyjęta w 1996. Program PSA działa od końca lat 90. i nadal jest otwarty na kontrakty.',
     what: 'Leśna ustawa Kostaryki dała podstawę prawną, by płacić prywatnym właścicielom za cztery nazwane usługi środowiskowe: łagodzenie gazów cieplarnianych, ochronę wody, bioróżnorodność i piękno krajobrazu. FONAFIFO, krajowy fundusz finansowania leśnictwa, prowadzi kontrakty na ochronę lasu, zalesianie, naturalną regenerację i agroleśnictwo. Podatek paliwowy jest statutowym źródłem finansowania opisanym przez FONAFIFO.',
     where: 'Kostaryka, na kwalifikowanych gruntach prywatnych i niektórych innych, które wchodzą w kontrakt PSA. To prawo krajowe, nie traktat regionalny.',
-    effects: 'Zamierzony skutek to sprawić, by stojący las był wart pieniędzy. UNFCCC i FONAFIFO przedstawiają PSA jako mechanizm, który płaci za ochronę i zalesianie. Późniejsza odbudowa pokrycia leśnego w Kostaryce miała kilka przyczyn — w tym wcześniejsze załamanie ekstensywnej hodowli bydła — więc ta strona nie przypisuje PSA samej ani sumy hektarów, ani procentu odbudowy.',
+    effects: 'Zamierzony skutek to sprawić, by stojący las był wart pieniędzy. UNFCCC i FONAFIFO przedstawiają PSA jako mechanizm, który płaci za ochronę i zalesianie. Późniejsza odbudowa pokrycia leśnego w Kostaryce miała kilka przyczyn: w tym wcześniejsze załamanie ekstensywnej hodowli bydła: więc ta strona nie przypisuje PSA samej ani sumy hektarów, ani procentu odbudowy.',
     caveats: 'Płatności zależą od budżetu i od tego, kto umie przejść wniosek. Program może faworyzować grunty z tytułem. To nie zakaz wszelkiego wylesiania i nie model, który kopiuje się na każdy kraj bez bazy podatkowej i katastru.',
     sourcesNote: 'Strona PSA FONAFIFO; opracowanie UNFCCC Momentum for Change; rekord FAOLEX ustawy 7575.',
   },
   'turkmenistan-two-trees': {
-    title: 'Turkmenistan — dwa drzewa rocznie',
+    title: 'Turkmenistan: dwa drzewa rocznie',
     hook: 'Dekret prezydencki z 1992, nie statut Tadżykistanu i nie „trzy drzewa”. Zdanie o dwóch drzewach to język obywatelskiego obowiązku; artykuły operacyjne organizują kampanie.',
     imageAlt:
-      'Zadrzewiona aleja w Aszchabadzie — zieleń miejska tego rodzaju, którą dekret z 1992 próbuje organizować, nie zdjęcie tamtego miesiąca sadzenia',
+      'Zadrzewiona aleja w Aszchabadzie: zieleń miejska tego rodzaju, którą dekret z 1992 próbuje organizować, nie zdjęcie tamtego miesiąca sadzenia',
     jurisdiction: 'Turkmenistan',
     officialName: 'On the development of horticulture and greening in Turkmenistan',
     citation:
       'Постановление Президента Туркменистана «О развитии садоводства и озеленении в Туркменистане», 9 November 1992',
     yearStatus:
       'Dekret prezydencki (постановление), 9 listopada 1992. FAOLEX/UNEP LEAP podają wejście w życie z urzędową publikacją; nie dają osobnego numeru dekretu.',
-    what: 'Preambuła stanowi, że obowiązkiem każdego obywatela Turkmenistanu jest sadzić dwa drzewa rocznie — jedno na cześć nowo narodzonego obywatela, drugie w pamięci zmarłego. Artykuły operacyjne ogłaszają potem jesienne i wiosenne miesiące sadzenia, nakazują hyakimom welajatów, Aszchabadu i etrapów organizować masowe nasadzenia (w tym wzdłuż nazwanych dróg) oraz wymagają, by ministerstwo odpowiedzialne za gospodarkę przyrodą dostarczało materiał sadzeniowy. To prezydenckie постановление, nie ustawa Medżlisu i nie kodeks karny dla osób, które nie posadzą drzewa.',
+    what: 'Preambuła stanowi, że obowiązkiem każdego obywatela Turkmenistanu jest sadzić dwa drzewa rocznie: jedno na cześć nowo narodzonego obywatela, drugie w pamięci zmarłego. Artykuły operacyjne ogłaszają potem jesienne i wiosenne miesiące sadzenia, nakazują hyakimom welajatów, Aszchabadu i etrapów organizować masowe nasadzenia (w tym wzdłuż nazwanych dróg) oraz wymagają, by ministerstwo odpowiedzialne za gospodarkę przyrodą dostarczało materiał sadzeniowy. To prezydenckie постановление, nie ustawa Medżlisu i nie kodeks karny dla osób, które nie posadzą drzewa.',
     where: 'Turkmenistan. Późniejsze państwowe kampanie sadzenia (na przykład dekrety o parkach Kopet-Dag z 1998 albo późniejsze działania narodowego programu leśnego) to osobne akty. Ta karta dotyczy tylko tekstu z 1992.',
     effects: 'Zamierzone skutki: ożywić ogrodnictwo i zorganizować sezonowe masowe sadzenie z publiczną dostawą sadzonek. Ta strona nie wymyśla wskaźników wykonania, przeżywalności ani sumy hektarów przypisanej dekretowi z 1992.',
-    caveats: 'Język obywatelskiego obowiązku w preambule to nie to samo co indywidualnie ścigany limit. FAOLEX zaznacza, że numer referencyjny jest niedostępny. Nie przemianowuj tego na „posadź trzy drzewa”, na tadżycką osobistą kwotę ani na filipiński projekt o maturze — to inne albo niezweryfikowane historie.',
+    caveats: 'Język obywatelskiego obowiązku w preambule to nie to samo co indywidualnie ścigany limit. FAOLEX zaznacza, że numer referencyjny jest niedostępny. Nie przemianowuj tego na „posadź trzy drzewa”, na tadżycką osobistą kwotę ani na filipiński projekt o maturze: to inne albo niezweryfikowane historie.',
     sourcesNote:
       'Pierwotny tekst rosyjski na FAOLEX (tuk80588.pdf); abstrakt katalogowy UNEP LEAP tego samego dekretu.',
   },
   'uzbekistan-compensatory-planting': {
-    title: 'Uzbekistan — 100 sadzonek za nielegalny wyrąb',
-    hook: 'Ustawa z 2024: co najmniej sto sadzonek po nielegalnym wycięciu cennego drzewa poza funduszem leśnym. Kara i obowiązek pielęgnacji — nie roczna kwota obywatelska.',
+    title: 'Uzbekistan: 100 sadzonek za nielegalny wyrąb',
+    hook: 'Ustawa z 2024: co najmniej sto sadzonek po nielegalnym wycięciu cennego drzewa poza funduszem leśnym. Kara i obowiązek pielęgnacji: nie roczna kwota obywatelska.',
     imageAlt:
-      'Kwitnące morele na ulicy Taszkentu — drzewa miejskie tego rodzaju, które chroni nowelizacja ustawy o świecie roślinnym, nie zdjęcie konkretnej sprawy',
+      'Kwitnące morele na ulicy Taszkentu: drzewa miejskie tego rodzaju, które chroni nowelizacja ustawy o świecie roślinnym, nie zdjęcie konkretnej sprawy',
     jurisdiction: 'Uzbekistan',
     officialName: 'O ochronie i użytkowaniu świata roślinnego (z nowelizacją)',
     citation:
       'Ustawa Republiki Uzbekistanu nr ЗРУ-916 / O‘RQ-916 z 29 lutego 2024, wstawiająca art. 49¹ do ustawy „O ochronie i użytkowaniu świata roślinnego” (nr 543-I z 26 grudnia 1997, w redakcji ЗРУ-409 z 21 września 2016)',
     yearStatus:
-      'Izba Ustawodawcza 21 listopada 2023; Senat 20 grudnia 2023; podpis 29 lutego 2024. Publikacja urzędowa 1 marca 2024 (krajowa baza nr 03/24/916/0167). Art. 49¹ od publikacji. Art. 49² o sankcjach finansowych — po trzech miesiącach.',
-    what: 'Art. 49¹, wstawiony przez ЗРУ-916, stanowi: jeśli cenne gatunki drzew lub krzewów poza państwowym funduszem leśnym zostaną nielegalnie wycięte lub zniszczone, sprawca musi na decyzję organu Ministerstwa Ekologii, Ochrony Środowiska i Zmian Klimatu posadzić na własny koszt co najmniej sto sadzonek o wartości nie niższej niż wycięte — za każde takie drzewo lub krzew. Sadzenie jest w miejscu wyrębu; gdy brakuje ziemi, reszta idzie w inne miejsce tej samej jednostki administracyjno-terytorialnej. Pielęgnacja trwa trzy lata. Art. 49² dodaje grzywny 100–300 bazowych jednostek rozliczeniowych dla osób prawnych. Ta sama ustawa podniosła też część kar w kodeksie wykroczeń administracyjnych. To obowiązek kompensacyjny po wykroczeniu, nie roczna kwota sadzenia dla każdego obywatela.',
+      'Izba Ustawodawcza 21 listopada 2023; Senat 20 grudnia 2023; podpis 29 lutego 2024. Publikacja urzędowa 1 marca 2024 (krajowa baza nr 03/24/916/0167). Art. 49¹ od publikacji. Art. 49² o sankcjach finansowych: po trzech miesiącach.',
+    what: 'Art. 49¹, wstawiony przez ЗРУ-916, stanowi: jeśli cenne gatunki drzew lub krzewów poza państwowym funduszem leśnym zostaną nielegalnie wycięte lub zniszczone, sprawca musi na decyzję organu Ministerstwa Ekologii, Ochrony Środowiska i Zmian Klimatu posadzić na własny koszt co najmniej sto sadzonek o wartości nie niższej niż wycięte: za każde takie drzewo lub krzew. Sadzenie jest w miejscu wyrębu; gdy brakuje ziemi, reszta idzie w inne miejsce tej samej jednostki administracyjno-terytorialnej. Pielęgnacja trwa trzy lata. Art. 49² dodaje grzywny 100-300 bazowych jednostek rozliczeniowych dla osób prawnych. Ta sama ustawa podniosła też część kar w kodeksie wykroczeń administracyjnych. To obowiązek kompensacyjny po wykroczeniu, nie roczna kwota sadzenia dla każdego obywatela.',
     where: 'Uzbekistan, dla cennych drzew i krzewów poza państwowym funduszem leśnym. Sam akt nie przepisuje reguł funduszu leśnego. Ogólnokrajowy projekt „Yashil Makon”, wymieniony w preambule ЗРУ-916, to osobny program.',
     effects:
       'Zamierzone skutki, jak pisze sama nowelizacja: odstraszać nielegalny wyrąb, podnieść odpowiedzialność i ujednolicić praktykę. Ta strona nie wymyśla liczby sadzonek posadzonych na podstawie art. 49¹ ani wskaźnika przeżywalności.',
     caveats:
-      '„Co najmniej sto” dotyczy nielegalnego wyrębu lub zniszczenia wymienionych cennych drzew poza funduszem leśnym — nie każdego drzewa w kraju i nie jako coroczny obowiązek obywatelski. Nie łącz tego z turkmenskim dekretem z 1992 o dwóch drzewach, z tadżycką osobistą kwotą (w katalogu nie ma zweryfikowanego takiego statutu) ani z filipińskim projektem o maturze. Szczegóły wartości, gatunków, miejsca i terminów może ustalić Gabinet Ministrów; to już nie ten artykuł.',
+      '„Co najmniej sto” dotyczy nielegalnego wyrębu lub zniszczenia wymienionych cennych drzew poza funduszem leśnym: nie każdego drzewa w kraju i nie jako coroczny obowiązek obywatelski. Nie łącz tego z turkmenskim dekretem z 1992 o dwóch drzewach, z tadżycką osobistą kwotą (w katalogu nie ma zweryfikowanego takiego statutu) ani z filipińskim projektem o maturze. Szczegóły wartości, gatunków, miejsca i terminów może ustalić Gabinet Ministrów; to już nie ten artykuł.',
     sourcesNote:
       'Pierwotny tekst ЗРУ-916 na lex.uz (rosyjski i uzbecki); skonsolidowana strona ustawy o świecie roślinnym z art. 49¹; angielska notatka UzDaily o rozpatrzeniu tej samej ustawy w Senacie.',
   },
@@ -209,7 +209,7 @@ export const pl: Record<string, LawCopy> = {
     where:
       'Działa przez krajowe cele i strategie stron konwencji. Przyjęta w Montrealu 19 grudnia 2022 jako decyzja 15/4. To decyzja Konferencji Stron przy Konwencji o różnorodności biologicznej, nie osobno ratyfikowany traktat. Pierwszy światowy przegląd wspólnego postępu jest w porządku obrad siedemnastej Konferencji Stron, w procesie na 2026 rok.',
     effects:
-      'Zamierzony skutek: zastąpić wygasłe cele z Aichi na lata 2010–2020 jaśniejszym zestawem celów na 2030 rok, zestawić krajowe plany różnorodności biologicznej i stworzyć cykl obserwacji i przeglądu. Wykonanie zależy od prawa krajowego, pieniędzy i od tego, które obszary lądu i morza państwa wskażą. Sam tekst decyzji nie tworzy obszaru chronionego.',
+      'Zamierzony skutek: zastąpić wygasłe cele z Aichi na lata 2010-2020 jaśniejszym zestawem celów na 2030 rok, zestawić krajowe plany różnorodności biologicznej i stworzyć cykl obserwacji i przeglądu. Wykonanie zależy od prawa krajowego, pieniędzy i od tego, które obszary lądu i morza państwa wskażą. Sam tekst decyzji nie tworzy obszaru chronionego.',
     caveats:
       'Ramy nie są osobnym traktatem i nie zastępują tekstu konwencji. Liczba 30 procent w zadaniu 3 to wspólny cel na 2030 rok, a nie znak, że świat już objął ochroną 30 procent lądu i morza. Dokładne brzmienie celów i zadań jest w decyzji 15/4 i na stronie ram w sekretariacie konwencji.',
     sourcesNote:
@@ -298,8 +298,8 @@ export const pl: Record<string, LawCopy> = {
   },
   'rome-statute-ecocide': {
     title: 'Ekobójstwo jako zbrodnia Statutu Rzymskiego',
-    hook: 'Proponowana piąta zbrodnia MTK. Nie ma jej w Statucie. Niektóre kraje napisały krajowe przestępstwa ekobójstwa — to nie to samo.',
-    imageAlt: 'Budynek Międzynarodowego Trybunału Karnego w Hadze — sąd, którego Statut ta idea chciałaby nowelizować',
+    hook: 'Proponowana piąta zbrodnia MTK. Nie ma jej w Statucie. Niektóre kraje napisały krajowe przestępstwa ekobójstwa: to nie to samo.',
+    imageAlt: 'Budynek Międzynarodowego Trybunału Karnego w Hadze: sąd, którego Statut ta idea chciałaby nowelizować',
     jurisdiction: 'Wniosek do Zgromadzenia Państw-Stron Międzynarodowego Trybunału Karnego',
     officialName: 'Proposed amendment to add “ecocide” as a crime under the Rome Statute',
     citation:
@@ -309,7 +309,7 @@ export const pl: Record<string, LawCopy> = {
     what: 'Panel z 2021 zdefiniował ekobójstwo, w projekcie, jako bezprawne albo lekkomyślne czyny popełnione ze świadomością istotnego prawdopodobieństwa poważnej i przy tym rozległej albo długotrwałej szkody środowiskowej. Idea: dodać to jako piątą zbrodnię obok ludobójstwa, zbrodni przeciwko ludzkości, zbrodni wojennych i agresji. Nowelizacja Statutu Rzymskiego wymaga dużej większości państw-stron, potem ratyfikacji.',
     where: 'Nigdzie jako prawo MTK. Osobne zbrodnie krajowe (na przykład belgijskie przestępstwo ekobójstwa z 2024 albo późniejsze statuty krajowe) obowiązują tylko w tych państwach. Nie tworzą jurysdykcji MTK.',
     effects: 'Zamierzony skutek: osobista odpowiedzialność karna za najcięższe zniszczenie środowiska i sygnał odstraszający. Nie ma orzecznictwa MTK o samodzielnym zarzucie ekobójstwa, bo zbrodni nie ma w Statucie.',
-    caveats: 'Ta karta jest ideą, nie statutem w mocy w Trybunale. Kampanijna definicja to nie przyjęty artykuł. Krajowe ustawy o ekobójstwie warto śledzić — i nie są tą propozycją.',
+    caveats: 'Ta karta jest ideą, nie statutem w mocy w Trybunale. Kampanijna definicja to nie przyjęty artykuł. Krajowe ustawy o ekobójstwie warto śledzić, i nie są tą propozycją.',
     sourcesNote:
       'Strona definicji prawnej Stop Ecocide; raport Grupy Roboczej Zgromadzenia MTK ds. poprawek (ICC-ASP-24-26); tekst Statutu Rzymskiego w mocy.',
   },
@@ -495,7 +495,7 @@ export const pl: Record<string, LawCopy> = {
   cites: {
     title: 'CITES',
     hook: 'Globalna konwencja o handlu dzikimi gatunkami. Reguluje wymienione gatunki w handlu. To nie prawo siedlisk.',
-    imageAlt: 'Słonie afrykańskie — takson od dawna wiązany z listami załączników CITES i kontrolą kości słoniowej',
+    imageAlt: 'Słonie afrykańskie: takson od dawna wiązany z listami załączników CITES i kontrolą kości słoniowej',
     jurisdiction: 'Międzynarodowa (173+ stron; aktualna lista na cites.org)',
     officialName: 'Convention on International Trade in Endangered Species of Wild Fauna and Flora',
     citation: 'Signed 3 March 1973, Washington, D.C.; entered into force 1 July 1975',
@@ -508,7 +508,7 @@ export const pl: Record<string, LawCopy> = {
   },
   'endangered-species-act': {
     title: 'Amerykańska ustawa o gatunkach zagrożonych',
-    hook: 'Rdzenny amerykański statut o gatunkach z listy i ich siedlisku krytycznym — wpisy, zakazy „take” i obowiązki agencji federalnych.',
+    hook: 'Rdzenny amerykański statut o gatunkach z listy i ich siedlisku krytycznym: wpisy, zakazy „take” i obowiązki agencji federalnych.',
     imageAlt: 'Bielik amerykański, gatunek niegdyś wpisany na listę ESA i później zdjęty po udokumentowanej odbudowie',
     jurisdiction: 'Stany Zjednoczone',
     officialName: 'Endangered Species Act of 1973',
@@ -523,7 +523,7 @@ export const pl: Record<string, LawCopy> = {
   'habitats-directive': {
     title: 'Unijna dyrektywa siedliskowa',
     hook: 'Prawny kręgosłup Natura 2000 na lądzie i na morzu, razem z dyrektywą ptasią.',
-    imageAlt: 'Puszcza Białowieska po unijnej stronie granicy polskiej — typ siedliska, który dyrektywa ma utrzymać',
+    imageAlt: 'Puszcza Białowieska po unijnej stronie granicy polskiej: typ siedliska, który dyrektywa ma utrzymać',
     jurisdiction: 'Unia Europejska',
     officialName: 'Habitats Directive',
     citation: 'Council Directive 92/43/EEC of 21 May 1992 on the conservation of natural habitats and of wild fauna and flora',
@@ -538,22 +538,22 @@ export const pl: Record<string, LawCopy> = {
     title: 'Kenijska ustawa o ochronie i zarządzaniu dziką przyrodą',
     hook: 'Obowiązujący kenijski statut o dzikiej przyrodzie: publiczna własność zwierzyny, parki i konserwaty oraz schemat kar za zabijanie i handel.',
     imageAlt:
-      'Słonie sawannowe w Parku Narodowym Amboseli w Kenii — dzika przyroda, którą ustawa z 2013 ma zarządzać, nie zdjęcie nazwanego procesu',
+      'Słonie sawannowe w Parku Narodowym Amboseli w Kenii: dzika przyroda, którą ustawa z 2013 ma zarządzać, nie zdjęcie nazwanego procesu',
     jurisdiction: 'Kenia',
     officialName: 'Wildlife Conservation and Management Act',
     citation: 'Act No. 47 of 2013, now Cap. 376; assented 24 December 2013, commenced 10 January 2014',
     yearStatus: 'W mocy od 10 stycznia 2014, z późniejszymi nowelizacjami.',
     what: 'Ustawa powierza dziką przyrodę ludowi Kenii, trzymaną w zaufaniu przez państwo. Określa Kenya Wildlife Service, parki narodowe i rezerwaty, konserwaty wspólnotowe i prywatne, listy gatunków oraz przestępstwa zabijania, chwytania albo handlu wbrew ustawie. To statut ochrony i zarządzania, z językiem zrównoważonego użytkowania, nie importowana ustawa kampanii o zwierzętach hodowlanych.',
     where: 'Kenia, w tym obszary chronione i dzika przyroda na innym gruncie, jak stanowi ustawa.',
-    effects: 'Zamierzone skutki: nowoczesna rama prawna po starszej ustawie z 1976, przestrzeń dla konserwatów i mocniejsze pisane kary za kłusownictwo i handel. Skutki w terenie nadal zależą od egzekwowania, umów ze wspólnotami oraz handlu kością i mięsem bushmeat. Ta strona nie wymyśla krajowego procentu odbudowy słoni za 2013–2026.',
-    caveats: 'Konflikt człowiek–dzika przyroda i spory o odszkodowania są wbudowane w kenijską politykę dzikiej przyrody. Statut to nie strażnik. Międzynarodowe reguły handlu nadal idą przez przepisy wdrażające CITES.',
+    effects: 'Zamierzone skutki: nowoczesna rama prawna po starszej ustawie z 1976, przestrzeń dla konserwatów i mocniejsze pisane kary za kłusownictwo i handel. Skutki w terenie nadal zależą od egzekwowania, umów ze wspólnotami oraz handlu kością i mięsem bushmeat. Ta strona nie wymyśla krajowego procentu odbudowy słoni za 2013-2026.',
+    caveats: 'Konflikt człowiek-dzika przyroda i spory o odszkodowania są wbudowane w kenijską politykę dzikiej przyrody. Statut to nie strażnik. Międzynarodowe reguły handlu nadal idą przez przepisy wdrażające CITES.',
     sourcesNote: 'Oficjalny tekst Kenya Law (Cap. 376); rekord FAOLEX Act No. 47 of 2013.',
   },
   'cms-bonn-convention': {
-    title: 'CMS — konwencja z Bonn',
-    hook: 'Traktat ONZ dla zwierząt migrujących przez granice. Załącznik I — ścisła ochrona; Załącznik II — umowy państw areału. To nie CITES i nie krajowa ustawa siedliskowa.',
+    title: 'CMS: konwencja z Bonn',
+    hook: 'Traktat ONZ dla zwierząt migrujących przez granice. Załącznik I: ścisła ochrona; Załącznik II: umowy państw areału. To nie CITES i nie krajowa ustawa siedliskowa.',
     imageAlt:
-      'Gnu w ruchu przez trawę Serengeti — transgraniczna migracja tego rodzaju, który konwencja z Bonn każe uzgadniać państwom areału',
+      'Gnu w ruchu przez trawę Serengeti: transgraniczna migracja tego rodzaju, który konwencja z Bonn każe uzgadniać państwom areału',
     jurisdiction: 'Międzynarodowy (Strony konwencji)',
     officialName: 'Konwencja o ochronie wędrownych gatunków dzikich zwierząt',
     citation:
@@ -569,9 +569,9 @@ export const pl: Record<string, LawCopy> = {
   },
   'birds-directive': {
     title: 'Dyrektywa ptasia UE',
-    hook: 'Pierwsza unijna dyrektywa przyrodnicza. Chroni wszystkie naturalnie występujące dzikie ptaki i napędza OSO w Natura 2000 — para z dyrektywą siedliskową.',
+    hook: 'Pierwsza unijna dyrektywa przyrodnicza. Chroni wszystkie naturalnie występujące dzikie ptaki i napędza OSO w Natura 2000: para z dyrektywą siedliskową.',
     imageAlt:
-      'Bielik nad wodą w Svolvær w Norwegii — dziki europejski ptak tego rodzaju, którego dyrektywa ptasia każe chronić państwom członkowskim',
+      'Bielik nad wodą w Svolvær w Norwegii: dziki europejski ptak tego rodzaju, którego dyrektywa ptasia każe chronić państwom członkowskim',
     jurisdiction: 'Unia Europejska',
     officialName: 'Dyrektywa 2009/147/WE w sprawie ochrony dzikiego ptactwa',
     citation:
@@ -587,9 +587,9 @@ export const pl: Record<string, LawCopy> = {
   },
   'bern-convention': {
     title: 'Konwencja berneńska',
-    hook: 'Traktat Rady Europy o dzikiej przyrodzie i siedliskach. Listy gatunków ściśle chronionych i Komitet Stały — instrument paneuropejski, nie tożsamy z dyrektywami UE o ptakach i siedliskach.',
+    hook: 'Traktat Rady Europy o dzikiej przyrodzie i siedliskach. Listy gatunków ściśle chronionych i Komitet Stały: instrument paneuropejski, nie tożsamy z dyrektywami UE o ptakach i siedliskach.',
     imageAlt:
-      'Koziorożec alpejski na wysokogórskiej łące w Alpach Szwajcarskich — europejska dzika przyroda tego rodzaju, który konwencja berneńska obejmuje ochroną',
+      'Koziorożec alpejski na wysokogórskiej łące w Alpach Szwajcarskich: europejska dzika przyroda tego rodzaju, który konwencja berneńska obejmuje ochroną',
     jurisdiction: 'Rada Europy (Strony; otwarta też dla spoza RE według reguł traktatu)',
     officialName: 'Konwencja o ochronie europejskiej przyrody dzikiej i siedlisk naturalnych',
     citation:
@@ -605,7 +605,7 @@ export const pl: Record<string, LawCopy> = {
   'marine-mammal-protection-act': {
     title: 'Amerykańska ustawa o ochronie ssaków morskich (MMPA)',
     hook: 'Federalna ustawa USA zasadniczo zakazująca pozyskania ssaków morskich w wodach USA i przez osoby USA. Szersza niż samo wpisanie na listę ESA.',
-    imageAlt: 'Długopłetwiec i cielę pod wodą — ssaki morskie objęte amerykańskim moratorium na pozyskanie',
+    imageAlt: 'Długopłetwiec i cielę pod wodą: ssaki morskie objęte amerykańskim moratorium na pozyskanie',
     jurisdiction: 'Stany Zjednoczone',
     officialName: 'Marine Mammal Protection Act of 1972',
     citation: 'Marine Mammal Protection Act of 1972, 16 U.S.C. § 1361 et seq. (ze zmianami)',
@@ -613,19 +613,19 @@ export const pl: Record<string, LawCopy> = {
     what: 'Moratorium na „take” i import z wyjątkami; oceny stad; role NOAA, FWS i MMC.',
     where: 'Federalne prawo USA od 1972; nowelizacje między innymi w 1992 i 1994.',
     effects:
-      'Zamierzony skutek: zatrzymać uszczuplanie stad ssaków morskich jako składników ekosystemu, wymagać wykazania, że pozyskanie nie zaszkodzi stadu, i wspierać reakcję na wyrzucenia na brzeg. Status stad różni się między gatunkami — ustawa jest ramą, nie świadectwem odbudowy.',
+      'Zamierzony skutek: zatrzymać uszczuplanie stad ssaków morskich jako składników ekosystemu, wymagać wykazania, że pozyskanie nie zaszkodzi stadu, i wspierać reakcję na wyrzucenia na brzeg. Status stad różni się między gatunkami: ustawa jest ramą, nie świadectwem odbudowy.',
     caveats: 'To nie ESA: gatunek może podlegać obu aktom. Nie CITES ani sama konwencja wielorybnicza.',
     sourcesNote:
       'Strony NOAA Fisheries, FWS i Marine Mammal Commission; tekst scalony w GovInfo.',
   },
   'lacey-act': {
     title: 'Ustawa Laceya (Lacey Act)',
-    hook: 'Amerykańska ustawa, która czyni federalnym przestępstwem handel dziką przyrodą, rybami lub roślinami pozyskanymi z naruszeniem prawa USA, stanu lub obcego państwa — wzmacniacz obok CITES, nie druga lista CITES.',
+    hook: 'Amerykańska ustawa, która czyni federalnym przestępstwem handel dziką przyrodą, rybami lub roślinami pozyskanymi z naruszeniem prawa USA, stanu lub obcego państwa: wzmacniacz obok CITES, nie druga lista CITES.',
     imageAlt:
-      'Ułożona skonfiskowana kość słoniowa w magazynie przed zniszczeniem — nielegalny produkt dzikiej przyrody tego rodzaju, który ustawa Laceya ma nie wpuszczać do handlu USA',
+      'Ułożona skonfiskowana kość słoniowa w magazynie przed zniszczeniem: nielegalny produkt dzikiej przyrody tego rodzaju, który ustawa Laceya ma nie wpuszczać do handlu USA',
     jurisdiction: 'Stany Zjednoczone',
     officialName: 'Lacey Act',
-    citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (od 1900; nowelizacje handlu dziką przyrodą m.in. 1981)',
+    citation: 'Lacey Act, 16 U.S.C. §§ 3371-3378 (od 1900; nowelizacje handlu dziką przyrodą m.in. 1981)',
     yearStatus: 'Od 1900. Nowelizacje handlu dziką przyrodą, między innymi w 1981. Nadal w mocy.',
     what: 'Zakaz handlu przy naruszeniu prawa bazowego; fałszywe oznakowanie przesyłek. Ustawa rolna z 2008 roku rozszerzyła ustawę na rośliny i produkty z drewna.',
     where: 'Federalne prawo USA od 1900; nowelizacje między innymi w 1981.',
@@ -637,13 +637,13 @@ export const pl: Record<string, LawCopy> = {
   'wildlife-corridors-act': {
     title: 'Amerykański projekt o korytarzach dzikiej przyrody (2026)',
     hook: 'Projekt Izby o mapowaniu i finansowaniu spójności siedlisk. Wniesiony. Nie uchwalony.',
-    imageAlt: 'Porośnięty przejazd dla zwierząt — rodzaj przejścia, które projekty o korytarzach próbują legalizować i finansować',
+    imageAlt: 'Porośnięty przejazd dla zwierząt: rodzaj przejścia, które projekty o korytarzach próbują legalizować i finansować',
     jurisdiction: 'Stany Zjednoczone (proponowany projekt federalny)',
     officialName: 'Wildlife Corridors and Habitat Connectivity Conservation Act of 2026',
     citation: 'H.R. 8438, 119th Congress; introduced 22 April 2026 by Rep. Donald S. Beyer and cosponsors',
     yearStatus:
       'Rozpatrywany. Wniesiony i skierowany do komisji Izby: Zasobów Naturalnych, Rolnictwa, Transportu i Infrastruktury oraz Sił Zbrojnych. Nie uchwalony; nie podpisany.',
-    what: 'Wniesiony tekst poleciłby federalnej nauce mapowanie korytarzy, poprawił współpracę na federalnej ziemi i wodzie oraz stworzył program grantów na pracę korytarzową na gruncie niefederalnym — w tym zadeklarowaną rezerwę środków na szlaki migracji dużej zwierzyny. Autoryzacje we wniesionym tekście to propozycje, nie przyznane dolary.',
+    what: 'Wniesiony tekst poleciłby federalnej nauce mapowanie korytarzy, poprawił współpracę na federalnej ziemi i wodzie oraz stworzył program grantów na pracę korytarzową na gruncie niefederalnym: w tym zadeklarowaną rezerwę środków na szlaki migracji dużej zwierzyny. Autoryzacje we wniesionym tekście to propozycje, nie przyznane dolary.',
     where: 'Obowiązywałyby, gdyby uchwalono, jako federalne prawo USA. Do tego czasu nie obowiązuje nigdzie.',
     effects: 'Zamierzony skutek: traktować spójność jako przedmiot ochrony z mapą i pozycją budżetową. Nie ma uchwalonej ustawy korytarzowej 2026 do oceny.',
     caveats: 'Skierowanie do komisji to nie głosowanie na sali. Poprzednie projekty korytarzowe we wcześniejszych Kongresach też nie stały się prawem. Nie opisuj przejazdów już zbudowanych przez stany albo Parks Canada tak, jakby ten projekt je zbudował.',
@@ -652,15 +652,15 @@ export const pl: Record<string, LawCopy> = {
   'recovering-americas-wildlife': {
     title: 'Ustawa o odbudowie dzikiej przyrody Ameryki',
     hook: 'Powracająca propozycja finansowania gatunków stanowych i plemiennych o największej potrzebie ochrony. Izba raz ją uchwaliła. Nigdy nie stała się prawem.',
-    imageAlt: 'Bizony amerykańskie na otwartym pastwisku — odbudowana ikona, nie twierdzenie, że RAWA sfinansowała to stado',
+    imageAlt: 'Bizony amerykańskie na otwartym pastwisku: odbudowana ikona, nie twierdzenie, że RAWA sfinansowała to stado',
     jurisdiction: 'Stany Zjednoczone (powracająca propozycja)',
     officialName: 'Recovering America’s Wildlife Act (various bill numbers)',
     citation:
-      'e.g. H.R. 2773, 117th Congress (passed House 14 June 2022, 231–190; died in the Senate); later reintroductions including S.1149, 118th Congress',
+      'e.g. H.R. 2773, 117th Congress (passed House 14 June 2022, 231-190; died in the Senate); later reintroductions including S.1149, 118th Congress',
     yearStatus:
       'Idea / powracający nieuchwalony projekt. Nie w mocy. Na 2026 pozostawała kampanią i ćwiczeniem redakcyjnym, nie podpisanym statutem. Każdy nowy Kongres sprawdzaj na congress.gov, zanim potraktujesz świeży numer jako żywy.',
-    what: 'Wersje kierowałyby duże, dedykowane sumy — rzędu miliarda dolarów rocznie w tekście uchwalonym przez Izbę w 2022 — do stanowych agencji ryb i zwierzyny oraz plemion, by wdrażać State Wildlife Action Plans i odbudowywać gatunki zanim będą potrzebowały awaryjnego wpisu ESA. To konstrukcja finansowania, nie nowy statut o listach.',
-    where: 'Nigdzie jako prawo. Gdyby uchwalono, byłaby federalną architekturą dotacji USA związaną z kontami w stylu Pittman–Robertson.',
+    what: 'Wersje kierowałyby duże, dedykowane sumy: rzędu miliarda dolarów rocznie w tekście uchwalonym przez Izbę w 2022: do stanowych agencji ryb i zwierzyny oraz plemion, by wdrażać State Wildlife Action Plans i odbudowywać gatunki zanim będą potrzebowały awaryjnego wpisu ESA. To konstrukcja finansowania, nie nowy statut o listach.',
+    where: 'Nigdzie jako prawo. Gdyby uchwalono, byłaby federalną architekturą dotacji USA związaną z kontami w stylu Pittman-Robertson.',
     effects: 'Zamierzony skutek: finansować ochronę z wyprzedzeniem, by mniej gatunków trafiało na ESA. Zwolennicy wciąż publikują tę tezę. Nie ma rejestru wydatków RAWA, bo nie ma RAWA.',
     caveats: 'Ta karta jest ideą, choć tekst raz przeszedł jedną izbę. Głosowanie Izby to nie ustawa. Nie kładź RAWA na półkę Obowiązujących. Nie wymyślaj numeru ustawy publicznej z 2026.',
     sourcesNote:
@@ -670,20 +670,20 @@ export const pl: Record<string, LawCopy> = {
     title: 'Parytet umyślnego znęcania się nad zwierzęciem towarzyszącym',
     hook: 'Proponowana reguła: umyślne bicie, tortury albo sadystyczna krzywda psu albo kotu towarzyszącemu byłyby sądzone na tej samej skali karnej co odpowiadające przestępstwo przeciwko człowiekowi. Wypadki i zwierzęta zabite na drodze są poza zakresem. Żadne państwo tego nie uchwaliło. Ta karta jest ideą.',
     imageAlt:
-      'Pręgowany kot na kamiennym murze i złoty pies za nim w Mosteiros na Azorach — zwierzęta towarzyszące, nie zdjęcie nazwanej sprawy',
+      'Pręgowany kot na kamiennym murze i złoty pies za nim w Mosteiros na Azorach: zwierzęta towarzyszące, nie zdjęcie nazwanej sprawy',
     jurisdiction: 'Idea (brak uchwalającej jurysdykcji)',
     officialName: 'Proposed intentional companion-animal cruelty-parity rule (not a filed statute)',
     citation:
       'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
     yearStatus:
       'Idea / propozycja. Nie uchwalona. Nie rozpatrywana w nazwanym parlamencie. Żadna jurysdykcja nie zapisała pełnej równoważności pobicia albo zabójstwa człowieka za umyślne znęcanie się nad zwierzęciem towarzyszącym.',
-    what: 'Idea to reguła skali karnej tylko dla umyślnej przemocy. Umyślne bicie, tortury albo inna sadystyczna krzywda psu albo kotu towarzyszącemu siedziałaby na tej samej drabinie przestępstw co odpowiadające przestępstwo przeciwko człowiekowi — pobicie, tortury albo ciężki uszczerbek na zdrowiu; a jeśli umyślny czyn zabija — analog zabójstwa. To nie osobny niski zarzut znęcania się nad zwierzętami. To propozycja moralna i redakcyjna, nie tekst przyjęty przez jakikolwiek parlament. Szkoda przypadkowa jest poza ideą: potrącenie kota, psa albo szopa na drodze nie ma być traktowane jak zabójstwo człowieka w ruchu drogowym. Zwykłe kontratypy, które już istnieją w prawie karnym — stan wyższej konieczności, legalna eutanazja weterynaryjna, obrona konieczna — i tak trzeba by dopisać. Ta karta ich nie pisze.',
+    what: 'Idea to reguła skali karnej tylko dla umyślnej przemocy. Umyślne bicie, tortury albo inna sadystyczna krzywda psu albo kotu towarzyszącemu siedziałaby na tej samej drabinie przestępstw co odpowiadające przestępstwo przeciwko człowiekowi: pobicie, tortury albo ciężki uszczerbek na zdrowiu; a jeśli umyślny czyn zabija: analog zabójstwa. To nie osobny niski zarzut znęcania się nad zwierzętami. To propozycja moralna i redakcyjna, nie tekst przyjęty przez jakikolwiek parlament. Szkoda przypadkowa jest poza ideą: potrącenie kota, psa albo szopa na drodze nie ma być traktowane jak zabójstwo człowieka w ruchu drogowym. Zwykłe kontratypy, które już istnieją w prawie karnym: stan wyższej konieczności, legalna eutanazja weterynaryjna, obrona konieczna, i tak trzeba by dopisać. Ta karta ich nie pisze.',
     where:
       'Nigdzie jako prawo. W wielu krajach umyślne znęcanie się nad zwierzęciem towarzyszącym już może być zbrodnią albo innym poważnym przestępstwem na podstawie ustaw o znęcaniu się nad zwierzętami. Te czyny siedzą w rozdziałach o ochronie zwierząt albo przestępstwach szczególnych. To nie tytuł o pobiciu albo zabójstwie człowieka, a górne kary są zwykle dużo niższe niż skala przemocy wobec człowieka. Kodeksy cywilne, które nazywają zwierzęta istotami czującymi albo „nie rzeczami”, zmieniają język własności. Nie przepisują artykułu o pobiciu albo morderstwie.',
     effects:
       'Tylko zamierzony skutek: silniejsze odstraszenie od umyślnego znęcania się nad zwierzętami towarzyszącymi i publiczny sygnał, że nie są zużywalną własnością. Nie ma statystyk skutku, bo nie ma statutu.',
     caveats:
-      'Nie twierdź, że jakiekolwiek państwo ratyfikowało albo uchwaliło pełną równoważność pobicia albo zabójstwa człowieka za znęcanie się nad pupilami. Ten katalog nie znalazł żadnego. Nie czytaj tej karty jako obejmującej wypadki: zwierzę zabite na drodze nie jest w zakresie i nie jest zrównane z zabiciem człowieka w ruchu. Trzech rzeczywistych sąsiadów łatwo pomylić z tą ideą — i nie są nią. Po pierwsze, karne ustawy o znęcaniu się nad zwierzętami już karzą część umyślnej przemocy — na przykład amerykańska Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, do siedmiu lat za określony „animal crushing”. To zbrodnia znęcania, nie pobicie i nie morderstwo człowieka. Po drugie, cywilne reformy statusu uznają zwierzęta za czujące albo za „nie rzeczy”: portugalska Lei n.º 8/2017 wstawiła do kodeksu cywilnego art. 201.º-B („os animais são seres vivos dotados de sensibilidade”); niemiecki BGB § 90a („Tiere sind keine Sachen”) nadal stosuje przepisy o rzeczach, dopóki ustawa szczególna nie powie inaczej. Zmiana statusu to nie parytet skali przemocy. Po trzecie, ograniczona jurysprudencja „podmiotów praw” — Trybunał Konstytucyjny Ekwadoru, Sentencia 253-20-JH/22 (Estrellita, 27 stycznia 2022) — uznała dziką małpę wełnistą za podmiot praw w ramach praw Natury i powiedziała, że te prawa nie są równoważne prawom człowieka. To nie czyni bicia albo zabicia psa prawnie tożsamym z pobiciem albo morderstwem człowieka.',
+      'Nie twierdź, że jakiekolwiek państwo ratyfikowało albo uchwaliło pełną równoważność pobicia albo zabójstwa człowieka za znęcanie się nad pupilami. Ten katalog nie znalazł żadnego. Nie czytaj tej karty jako obejmującej wypadki: zwierzę zabite na drodze nie jest w zakresie i nie jest zrównane z zabiciem człowieka w ruchu. Trzech rzeczywistych sąsiadów łatwo pomylić z tą ideą, i nie są nią. Po pierwsze, karne ustawy o znęcaniu się nad zwierzętami już karzą część umyślnej przemocy: na przykład amerykańska Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, do siedmiu lat za określony „animal crushing”. To zbrodnia znęcania, nie pobicie i nie morderstwo człowieka. Po drugie, cywilne reformy statusu uznają zwierzęta za czujące albo za „nie rzeczy”: portugalska Lei n.º 8/2017 wstawiła do kodeksu cywilnego art. 201.º-B („os animais são seres vivos dotados de sensibilidade”); niemiecki BGB § 90a („Tiere sind keine Sachen”) nadal stosuje przepisy o rzeczach, dopóki ustawa szczególna nie powie inaczej. Zmiana statusu to nie parytet skali przemocy. Po trzecie, ograniczona jurysprudencja „podmiotów praw”: Trybunał Konstytucyjny Ekwadoru, Sentencia 253-20-JH/22 (Estrellita, 27 stycznia 2022): uznała dziką małpę wełnistą za podmiot praw w ramach praw Natury i powiedziała, że te prawa nie są równoważne prawom człowieka. To nie czyni bicia albo zabicia psa prawnie tożsamym z pobiciem albo morderstwem człowieka.',
     sourcesNote:
       '18 U.S.C. § 48 na Cornell LII / U.S. Code; PDF Diário da República Lei n.º 8/2017; gesetze-im-internet BGB § 90a; strona Trybunału Konstytucyjnego Ekwadoru dla Sentencia 253-20-JH/22.',
   },

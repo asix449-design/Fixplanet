@@ -28,11 +28,11 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Canis lupus",
+          "label": "IUCN Red List: Canis lupus",
           "url": "https://www.iucnredlist.org/species/3746/226161232"
         },
         {
-          "label": "U.S. Fish and Wildlife Service — gray wolf",
+          "label": "U.S. Fish and Wildlife Service: gray wolf",
           "url": "https://www.fws.gov/species/gray-wolf-canis-lupus"
         }
       ],
@@ -69,11 +69,11 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Ursus arctos",
+          "label": "IUCN Red List: Ursus arctos",
           "url": "https://www.iucnredlist.org/species/41688/121229971"
         },
         {
-          "label": "Large Carnivore Initiative for Europe — brown bear",
+          "label": "Large Carnivore Initiative for Europe: brown bear",
           "url": "https://www.lcie.org/Large-carnivores/Brown-bear"
         }
       ],
@@ -110,11 +110,11 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Bison bison",
+          "label": "IUCN Red List: Bison bison",
           "url": "https://www.iucnredlist.org/species/2815/123789863"
         },
         {
-          "label": "U.S. Fish and Wildlife Service — American bison",
+          "label": "U.S. Fish and Wildlife Service: American bison",
           "url": "https://www.fws.gov/species/american-bison-bison-bison"
         }
       ],
@@ -151,7 +151,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Loxodonta africana",
+          "label": "IUCN Red List: Loxodonta africana",
           "url": "https://www.iucnredlist.org/species/181008073/223031019"
         },
         {
@@ -192,7 +192,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Panthera leo",
+          "label": "IUCN Red List: Panthera leo",
           "url": "https://www.iucnredlist.org/species/15951/259030422"
         }
       ],
@@ -229,7 +229,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Cervus elaphus",
+          "label": "IUCN Red List: Cervus elaphus",
           "url": "https://www.iucnredlist.org/species/55997072/142404453"
         }
       ],
@@ -266,7 +266,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Sus scrofa",
+          "label": "IUCN Red List: Sus scrofa",
           "url": "https://www.iucnredlist.org/species/41775/44141833"
         }
       ],
@@ -303,7 +303,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Castor fiber",
+          "label": "IUCN Red List: Castor fiber",
           "url": "https://www.iucnredlist.org/species/4007/197499749"
         },
         {
@@ -344,11 +344,11 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Megaptera novaeangliae",
+          "label": "IUCN Red List: Megaptera novaeangliae",
           "url": "https://www.iucnredlist.org/species/13006/50362794"
         },
         {
-          "label": "NOAA Fisheries — humpback whale",
+          "label": "NOAA Fisheries: humpback whale",
           "url": "https://www.fisheries.noaa.gov/species/humpback-whale"
         }
       ],
@@ -385,15 +385,15 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Bison bonasus",
+          "label": "IUCN Red List: Bison bonasus",
           "url": "https://www.iucnredlist.org/species/2814/45156279"
         },
         {
-          "label": "IUCN news — European bison recovering (10 Dec 2020)",
+          "label": "IUCN news: European bison recovering (10 Dec 2020)",
           "url": "https://www.iucn.org/news/species/202012/european-bison-recovering-31-species-declared-extinct-iucn-red-list"
         },
         {
-          "label": "Oryx — range-wide conservation action plan for the European bison",
+          "label": "Oryx: range-wide conservation action plan for the European bison",
           "url": "https://www.cambridge.org/core/journals/oryx/article/rangewide-conservation-action-plan-for-the-european-bison/6AC6945EF32219F45721A8443EC94141"
         }
       ],
@@ -430,19 +430,19 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Castor canadensis",
+          "label": "IUCN Red List: Castor canadensis",
           "url": "https://www.iucnredlist.org/species/4003/10308287"
         },
         {
-          "label": "Animal Diversity Web — Castor canadensis",
+          "label": "Animal Diversity Web: Castor canadensis",
           "url": "https://animaldiversity.org/accounts/Castor_canadensis/"
         },
         {
-          "label": "USDA Forest Service Region 2 — North American beaver assessment",
+          "label": "USDA Forest Service Region 2: North American beaver assessment",
           "url": "https://westernbeavers.org/wp-content/uploads/2024/02/6.-North-American-Beaver-Castor-canadensis-for-USDA-Forest-Service-stelprdb5181919.pdf"
         },
         {
-          "label": "Stanford Report — beaver rebound (11 Aug 2025)",
+          "label": "Stanford Report: beaver rebound (11 Aug 2025)",
           "url": "https://news.stanford.edu/stories/2025/08/beavers-climate-resilient-watersheds-biodiversity-research"
         },
         {
@@ -482,15 +482,15 @@
       },
       "primarySources": [
         {
-          "label": "USFWS — bald eagle",
+          "label": "USFWS: bald eagle",
           "url": "https://www.fws.gov/species/bald-eagle-haliaeetus-leucocephalus"
         },
         {
-          "label": "USFWS — Bald Eagle Population Size: 2020 Update",
+          "label": "USFWS: Bald Eagle Population Size: 2020 Update",
           "url": "https://www.fws.gov/sites/default/files/documents/2020-bald-eagle-population-size-report.pdf"
         },
         {
-          "label": "Federal Register — bald eagle delisting (2007)",
+          "label": "Federal Register: bald eagle delisting (2007)",
           "url": "https://www.fws.gov/sites/default/files/federal_register_document/07-4302.pdf"
         }
       ],
@@ -527,23 +527,23 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Ceratotherium simum",
+          "label": "IUCN Red List: Ceratotherium simum",
           "url": "https://www.iucnredlist.org/species/4185/45813880"
         },
         {
-          "label": "IUCN press release — African rhino status (7 Aug 2025)",
+          "label": "IUCN press release: African rhino status (7 Aug 2025)",
           "url": "https://iucn.org/press-release/202508/poaching-african-rhinos-down-drought-and-other-threats-drive-losses-globally"
         },
         {
-          "label": "International Rhino Foundation — white rhino",
+          "label": "International Rhino Foundation: white rhino",
           "url": "https://rhinos.org/about-rhinos/rhino-species/white-rhino/"
         },
         {
-          "label": "Pachyderm — AfRSG chair report",
+          "label": "Pachyderm: AfRSG chair report",
           "url": "https://pachydermjournal.org/index.php/pachyderm/article/view/1311"
         },
         {
-          "label": "South Africa — biodiversity management plan for the white rhinoceros",
+          "label": "South Africa: biodiversity management plan for the white rhinoceros",
           "url": "https://www.gov.za/sites/default/files/gcis_document/201512/39469gen1191.pdf"
         }
       ],
@@ -580,19 +580,19 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Oryx leucoryx",
+          "label": "IUCN Red List: Oryx leucoryx",
           "url": "https://www.iucnredlist.org/species/15569/50191626"
         },
         {
-          "label": "IUCN — A grain of hope in the desert (Arabian oryx, 2011)",
+          "label": "IUCN: A grain of hope in the desert (Arabian oryx, 2011)",
           "url": "https://iucn.org/content/a-grain-hope-desert"
         },
         {
-          "label": "IUCN SSC Antelope Specialist Group — Arabian oryx",
+          "label": "IUCN SSC Antelope Specialist Group: Arabian oryx",
           "url": "https://antelopesg.org/arabian-oryx/"
         },
         {
-          "label": "Royal Society Open Science — Oman oryx genetics (2021)",
+          "label": "Royal Society Open Science: Oman oryx genetics (2021)",
           "url": "https://royalsocietypublishing.org/doi/10.1098/rsos.210558"
         }
       ],

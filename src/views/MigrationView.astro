@@ -52,7 +52,7 @@ const humans = page.humans;
 const humanEras = getHumanMigrationEras(locale);
 const humanMapLinks = activeShelf === 'humans' ? getHumanMapLinks(locale) : [];
 const pageTitle = activeShelf
-  ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
+  ? `${page.shelves[activeShelf]}: ${page.title}: Fix Planet`
   : page.metaTitle;
 const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDescription;
 ---

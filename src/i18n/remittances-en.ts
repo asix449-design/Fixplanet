@@ -7,7 +7,7 @@ export const enRemittances: RemittanceCopy = {
     'remittances-global-flows': {
       tag: 'Flows · Low and middle income',
       title: 'Remittances to developing countries',
-      hook: 'Low- and middle-income countries received an estimated $656 billion in officially recorded remittances in 2023, and World Bank authors put the 2024 total near $685 billion — still larger than foreign direct investment and official development assistance combined.',
+      hook: 'Low- and middle-income countries received an estimated $656 billion in officially recorded remittances in 2023, and World Bank authors put the 2024 total near $685 billion: still larger than foreign direct investment and official development assistance combined.',
       figure: '656',
       unit: 'billion US dollars, 2023',
       rows: [
@@ -21,14 +21,14 @@ export const enRemittances: RemittanceCopy = {
         },
         {
           heading: 'Why it matters',
-          body: 'For many countries these flows are the largest stable source of external finance — often bigger than foreign direct investment or aid. They support household consumption, education, health, and current-account buffers when other capital flows swing.',
+          body: 'For many countries these flows are the largest stable source of external finance: often bigger than foreign direct investment or aid. They support household consumption, education, health, and current-account buffers when other capital flows swing.',
         },
         {
           heading: 'How to read it',
           body: 'These are estimates of the money sent during each calendar year. Regional growth is uneven; Migration and Development Brief 40 and the December 2024 update publish the regional tables behind the headline.',
         },
       ],
-      plate: 'Chart: low- and middle-income remittances, 2017–2023, World Bank Migration and Development Brief 40. The number is billions of US dollars.',
+      plate: 'Chart: low- and middle-income remittances, 2017-2023, World Bank Migration and Development Brief 40. The number is billions of US dollars.',
     },
     'remittances-top-recipients': {
       tag: 'Recipients · 2024 estimates',
@@ -50,7 +50,7 @@ export const enRemittances: RemittanceCopy = {
         },
         {
           heading: 'Why it matters',
-          body: 'Large absolute receipts shape national foreign-exchange markets and household incomes in the biggest origin–destination systems — especially India–Gulf/OECD, Mexico–United States, and the Philippines’ long-standing overseas-worker corridors.',
+          body: 'Large absolute receipts shape national foreign-exchange markets and household incomes in the biggest origin-destination systems: especially India-Gulf/OECD, Mexico-United States, and the Philippines’ long-standing overseas-worker corridors.',
         },
         {
           heading: 'How to read it',
@@ -62,13 +62,13 @@ export const enRemittances: RemittanceCopy = {
     'remittances-gdp-share': {
       tag: 'Dependence · 2024 estimates',
       title: 'Remittances as a share of GDP',
-      hook: 'In smaller economies remittances can dwarf other finance: Tajikistan ~45% of GDP, Tonga ~38%, then Nicaragua, Lebanon, and Samoa around 26–27% in the 2024 estimates.',
+      hook: 'In smaller economies remittances can dwarf other finance: Tajikistan ~45% of GDP, Tonga ~38%, then Nicaragua, Lebanon, and Samoa around 26-27% in the 2024 estimates.',
       figure: '47',
       unit: 'percent of GDP, Tajikistan on the 2024 map',
       rows: [
         { label: 'Tajikistan, 2024 estimate', figure: '~45% of GDP' },
         { label: 'Tonga, 2024 estimate', figure: '~38% of GDP' },
-        { label: 'Nicaragua, Lebanon, and Samoa, 2024 estimates', figure: 'about 26–27% of GDP' },
+        { label: 'Nicaragua, Lebanon, and Samoa, 2024 estimates', figure: 'about 26-27% of GDP' },
       ],
       sections: [
         {
@@ -89,7 +89,7 @@ export const enRemittances: RemittanceCopy = {
     'remittances-sending-cost': {
       tag: 'Prices · RPW',
       title: 'Cost of sending money home',
-      hook: 'Sending remittances still costs about 6.4% of the amount on a global average — more than double the Sustainable Development Goal (SDG) target of 3% — and the World Bank’s Remittance Prices Worldwide website, updated 18 August 2025, shows about 6.36%.',
+      hook: 'Sending remittances still costs about 6.4% of the amount on a global average: more than double the Sustainable Development Goal (SDG) target of 3%, and the World Bank’s Remittance Prices Worldwide website, updated 18 August 2025, shows about 6.36%.',
       figure: '6.4',
       unit: 'percent, global average, late 2023',
       rows: [
@@ -104,7 +104,7 @@ export const enRemittances: RemittanceCopy = {
         },
         {
           heading: 'Why it matters',
-          body: 'Every percentage point of fee is money that does not reach households. Digital channels are usually cheaper than non-digital ones; Sub-Saharan corridors have often been among the most expensive. The SDG 10 target is to bring the global average to 3% by 2030 — current averages remain well above that line.',
+          body: 'Every percentage point of fee is money that does not reach households. Digital channels are usually cheaper than non-digital ones; Sub-Saharan corridors have often been among the most expensive. The SDG 10 target is to bring the global average to 3% by 2030: current averages remain well above that line.',
         },
         {
           heading: 'How to read it',

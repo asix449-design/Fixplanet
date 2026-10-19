@@ -17,7 +17,7 @@ export const pl: ForestsPage = {
   filterAria: 'Działy Lasów',
   back: 'Lasy',
   tiles: {
-    satellite: 'Lipcowa zieleń koron z kosmosu, 2001–2025.',
+    satellite: 'Lipcowa zieleń koron z kosmosu, 2001-2025.',
     history: 'Roślinność epoki lodowej, biomy i ziemia po ludziach.',
     numbers: 'Definicje, źródła i reszta opublikowanego zestawu.',
     outlook: 'Długi widok, lata, które da się zmierzyć, i trzy możliwe ścieżki.',
@@ -32,11 +32,11 @@ export const pl: ForestsPage = {
     satellite: [
       'Korona lasu to zwarty okap liści i igieł. Satelity nie liczą hektarów FAO: mierzą, jak zielona jest powierzchnia. NDVI to ten indeks zieleni z odbitego światła.',
       'Na mapie świata widać pasma lasów deszczowych i tajgi. Rok wycinki w tej skali jest niemal niewidoczny. Ubytek pokrywy drzewnej w kroku około 30 metrów jest na Global Forest Watch.',
-      'Mapy to NASA MODIS Terra NDVI za lipiec, 2001–2025.',
+      'Mapy to NASA MODIS Terra NDVI za lipiec, 2001-2025.',
     ],
     history: [
       'Przed epoką satelitarną powierzchnię lasu odtwarza się z pyłków, modeli klimatu i map użytkowania ziemi. Nie ma ciągłego spisu hektarów od 10 000 p.n.e.',
-      'Pięć płyt: roślinność ostatniego maksimum lodowcowego, mapa biomów przy niedawnym klimacie oraz antromy Ellis — biomy ukształtowane przez ludzi — dla 1700, 1900 i 2000.',
+      'Pięć płyt: roślinność ostatniego maksimum lodowcowego, mapa biomów przy niedawnym klimacie oraz antromy Ellis: biomy ukształtowane przez ludzi: dla 1700, 1900 i 2000.',
     ],
     numbers: [
       'Opublikowane wielkości, każda z nazwanym źródłem i rokiem. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa podaje las jako użytkowanie ziemi. Laboratorium Uniwersytetu Maryland i Global Forest Watch kartują koronę w kroku około 30 metrów. Nienaruszone krajobrazy leśne są kartograficzną klasą dużych połaci lasu. Artykuł z 2015 roku w czasopiśmie Nature szacuje liczbę drzew. Każda liczba zachowuje definicję swojego wydawcy.',
@@ -48,7 +48,7 @@ export const pl: ForestsPage = {
   honestySatellite:
     'NASA MODIS Terra NDVI, lipiec. Zieleń koron, nie piksele Hansena. Interaktywna mapa 30 m: Global Forest Watch.',
   honestyReconstruction:
-    'Rekonstrukcje i szacunki, nie korona satelitarna. Pyłki, modele i antromy — każda płyta ma własną legendę.',
+    'Rekonstrukcje i szacunki, nie korona satelitarna. Pyłki, modele i antromy: każda płyta ma własną legendę.',
   modeSatellite: 'Satelita',
   modeReconstruction: 'Rekonstrukcja',
   fidelitySatellite: 'Satelita · zieleń koron',
@@ -58,12 +58,12 @@ export const pl: ForestsPage = {
   eraLabel: 'Epoka',
   openGfw: 'Otwórz Global Forest Watch →',
   gfwNote:
-    'Ubytek pokrywy drzewnej Hansen / GLAD University of Maryland, około 30 m, od 2001, na Global Forest Watch. Ubytek obejmuje pożar, leśnictwo i konwersję — nie tylko trwałe wylesienie.',
+    'Ubytek pokrywy drzewnej Hansen / GLAD University of Maryland, około 30 m, od 2001, na Global Forest Watch. Ubytek obejmuje pożar, leśnictwo i konwersję: nie tylko trwałe wylesienie.',
   sourceLabel: 'Źródło',
   licenseLabel: 'Licencja',
   vintageLabel: 'Rocznik',
   howToRead:
-    'Zieleń to więcej roślinności w lipcu. Czerń to woda. Beż to sucho albo goło. Porównuj pasma — Amazonię, Kongo, Sundaland, tajgę — nie jeden piksel. Płyty rekonstrukcji mają własne legendy: antromy to klasy ludzi i użytkowania ziemi, nie „procent drzew”.',
+    'Zieleń to więcej roślinności w lipcu. Czerń to woda. Beż to sucho albo goło. Porównuj pasma: Amazonię, Kongo, Sundaland, tajgę: nie jeden piksel. Płyty rekonstrukcji mają własne legendy: antromy to klasy ludzi i użytkowania ziemi, nie „procent drzew”.',
   caveats:
     'NDVI to nie powierzchnia lasu i nie las pierwotny. Uprawy i mokre lata też są zielone. Lipiec sprzyja latu na północy, więc różnica rok do roku w tej rozdzielczości jest mała. Ostatnie maksimum lodowcowe to około 18 000 lat temu, starsze i zimniejsze niż 10 000 p.n.e. Płyta biomów to analog niedawnego klimatu; w środkowym holocenie Sahara bywała bardziej zielona.',
   distinguishTitle: 'Las borealny, las tropikalny i las sadzony',
@@ -73,18 +73,18 @@ export const pl: ForestsPage = {
     'Każda liczba jest przepisana z cytowanej publikacji wraz z rokiem tej publikacji. Powierzchnia lasu, korona i liczba drzew pochodzą od własnych wydawców.',
   trendTitle: 'Długi widok, potem lata, które da się zmierzyć',
   trendLead:
-    'Wykres Ellis 12K odtwarza antromy — ziemie dzikie, kulturowe i intensywne — od 10 000 p.n.e. do 2017. To nie hektary FAO. Po 2000 liczby satelitarne są ciaśniejsze.',
+    'Wykres Ellis 12K odtwarza antromy: ziemie dzikie, kulturowe i intensywne: od 10 000 p.n.e. do 2017. To nie hektary FAO. Po 2000 liczby satelitarne są ciaśniejsze.',
   longViewCaption:
     'Erle Ellis, Anthromes 12K DGG v1, za Ellis et al. 2021, PNAS. CC BY 2.0. Mapa to ok. 2017; słupki to długa rekonstrukcja. Dzikie lasy się kurczą; uprawy, pastwiska i osiedla rosną. Celowo grubo.',
   longViewAlt:
     'Mapa antromów świata na 2017 nad słupkowym paskiem ziem dzikich, kulturowych i intensywnych od 10 000 p.n.e. do 2017',
   scenarioTitle: 'Ścieżki, nie destinacja',
   scenarioLead:
-    'Jeśli utrzyma się niedawne tempo strat tropikalnego lasu pierwotnego, ten las dalej się kurczy. Spokojniejszy rok pożarów albo prawdziwe moratorium mogą odwrócić tendencję — 2025 już to zrobił, raz. Żadna ścieżka nie jest datą, kiedy las znika.',
+    'Jeśli utrzyma się niedawne tempo strat tropikalnego lasu pierwotnego, ten las dalej się kurczy. Spokojniejszy rok pożarów albo prawdziwe moratorium mogą odwrócić tendencję: 2025 już to zrobił, raz. Żadna ścieżka nie jest datą, kiedy las znika.',
   scenarios: {
     continued: {
       title: 'Jeśli utrzyma się niedawne pasmo strat pierwotnych tropików',
-      text: 'Strata wilgotnego tropikalnego lasu pierwotnego UMD/GFW: 6,7 mln ha w 2024 (rekord pożarowy) i 4,3 mln ha w 2025 (o 36 procent mniej, wciąż ok. 46 procent powyżej dekady wcześniej). Jeśli pasmo 4–7 mln ha/rok zostanie, pozostałe pierwotne wilgotne tropiki dalej się kurczą. Pozostały zapas pierwotny GFW nie jest tu opublikowany; borealny las FAO to inna księga.',
+      text: 'Strata wilgotnego tropikalnego lasu pierwotnego UMD/GFW: 6,7 mln ha w 2024 (rekord pożarowy) i 4,3 mln ha w 2025 (o 36 procent mniej, wciąż ok. 46 procent powyżej dekady wcześniej). Jeśli pasmo 4-7 mln ha/rok zostanie, pozostałe pierwotne wilgotne tropiki dalej się kurczą. Pozostały zapas pierwotny GFW nie jest tu opublikowany; borealny las FAO to inna księga.',
     },
     slower: {
       title: 'Jeśli polityka i ogień są trzymane',
@@ -92,7 +92,7 @@ export const pl: ForestsPage = {
     },
     restore: {
       title: 'Jeśli odbudowa to las, nie deklaracja',
-      text: 'Przyrost lasu FAO (6,78 mln ha/rok, 2015–2025) już częściowo równoważy wylesienie. Plantacje i młody las wtórny mogą pchać tę liczbę bez pierwotnej struktury i gatunków. Lepsza ścieżka to mniej konwersji plus odbudowa mierzona jako ekosystem, nie jako hektar z komunikatu.',
+      text: 'Przyrost lasu FAO (6,78 mln ha/rok, 2015-2025) już częściowo równoważy wylesienie. Plantacje i młody las wtórny mogą pchać tę liczbę bez pierwotnej struktury i gatunków. Lepsza ścieżka to mniej konwersji plus odbudowa mierzona jako ekosystem, nie jako hektar z komunikatu.',
     },
   },
   worksTitle: 'Co przesunęło linię',
@@ -113,7 +113,7 @@ export const pl: ForestsPage = {
     },
     protected: {
       title: 'Las chroniony (FAO)',
-      text: 'FRA 2025: ok. 813 mln ha lasu — 20 procent — w prawnie ustanowionych obszarach chronionych (+251 mln ha od 1990). Parki na papierze bywają. Parki, które trzymają, też. Ochrona to jedno narzędzie obok reguł towarów i straży pożarnej.',
+      text: 'FRA 2025: ok. 813 mln ha lasu: 20 procent: w prawnie ustanowionych obszarach chronionych (+251 mln ha od 1990). Parki na papierze bywają. Parki, które trzymają, też. Ochrona to jedno narzędzie obok reguł towarów i straży pożarnej.',
     },
   },
   mapsLink: 'W sali Map jest też schemat Hansen / Global Forest Watch znanych frontierów strat.',
@@ -164,7 +164,7 @@ export const pl: ForestsPage = {
       label: '2001',
       title: 'Zieleń koron, lipiec 2001',
       caption:
-        'Pierwszy pełny lipiec MODIS Terra NDVI na tej stronie. Zielone pasma to roślinność, nie spis powierzchni lasu. Roczny ubytek Hansen/UMD zaczyna się w 2001 — piksele na Global Forest Watch.',
+        'Pierwszy pełny lipiec MODIS Terra NDVI na tej stronie. Zielone pasma to roślinność, nie spis powierzchni lasu. Roczny ubytek Hansen/UMD zaczyna się w 2001: piksele na Global Forest Watch.',
       imageAlt:
         'Prostokątna mapa świata, lipiec 2001: zielona roślinność na czarnych oceanach, beżowe pustynie',
     },
@@ -188,7 +188,7 @@ export const pl: ForestsPage = {
       label: '2015',
       title: 'Zieleń koron, lipiec 2015',
       caption:
-        'Środek satelitarnych lat 2010. FRA 2025 później podaje stratę netto powierzchni lasu 2015–2025: 4,12 mln ha/rok — inna, użytkowa liczba.',
+        'Środek satelitarnych lat 2010. FRA 2025 później podaje stratę netto powierzchni lasu 2015-2025: 4,12 mln ha/rok: inna, użytkowa liczba.',
       imageAlt:
         'Prostokątna mapa świata, lipiec 2015: zielona roślinność na czarnych oceanach, beżowe pustynie',
     },
@@ -204,7 +204,7 @@ export const pl: ForestsPage = {
       label: '2024',
       title: 'Zieleń koron, lipiec 2024',
       caption:
-        'GFW/UMD: 6,7 mln ha tropikalnego lasu pierwotnego w 2024 — rekord pożarowy; ok. 30 mln ha globalnego ubytku pokrywy drzewnej. Ta płyta NDVI blizn nie rysuje.',
+        'GFW/UMD: 6,7 mln ha tropikalnego lasu pierwotnego w 2024: rekord pożarowy; ok. 30 mln ha globalnego ubytku pokrywy drzewnej. Ta płyta NDVI blizn nie rysuje.',
       imageAlt:
         'Prostokątna mapa świata, lipiec 2024: zielona roślinność na czarnych oceanach, beżowe pustynie',
     },
@@ -220,7 +220,7 @@ export const pl: ForestsPage = {
       label: '~18 tys. lat',
       title: 'Roślinność ostatniego maksimum glacjalnego',
       caption:
-        'Rekonstrukcja, nie satelita. Roślinność GIS Ray & Adams 2001, ~25 000–15 000 BP (~18 000 lat temu). Lądolody, więcej pustyni, mniej lasu zwartego. To starsze i zimniejsze niż 10 000 p.n.e. Lasy wczesnego holocenu już się rozszerzały od tego minimum.',
+        'Rekonstrukcja, nie satelita. Roślinność GIS Ray & Adams 2001, ~25 000-15 000 BP (~18 000 lat temu). Lądolody, więcej pustyni, mniej lasu zwartego. To starsze i zimniejsze niż 10 000 p.n.e. Lasy wczesnego holocenu już się rozszerzały od tego minimum.',
       imageAlt:
         'Rekonstrukcja Mollweide roślinności epoki lodowej: lądolody, tundra, mniejszy las tropikalny, legenda',
     },
@@ -228,7 +228,7 @@ export const pl: ForestsPage = {
       label: 'Płyta biomów',
       title: 'Potencjalne biomy (klimat niedawny)',
       caption:
-        'Szacunek / analog — nie datowana mapa pyłkowa środkowego holocenu. Zestawiona płyta biomów Ville Koistinena (CC BY-SA). Przydatna jako „gdzie las może żyć w niedawnym klimacie”. Środkowy holocen (~6000 lat temu) często miał zieleńszą Saharę; ten rysunek tego nie pokazuje.',
+        'Szacunek / analog: nie datowana mapa pyłkowa środkowego holocenu. Zestawiona płyta biomów Ville Koistinena (CC BY-SA). Przydatna jako „gdzie las może żyć w niedawnym klimacie”. Środkowy holocen (~6000 lat temu) często miał zieleńszą Saharę; ten rysunek tego nie pokazuje.',
       imageAlt:
         'Kolorowa mapa biomów świata: tajga, las liściasty, las tropikalny, pustynie i sawanny',
     },

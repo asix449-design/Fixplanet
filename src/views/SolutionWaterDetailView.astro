@@ -14,7 +14,7 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const { item } = Astro.props;
-const title = `${item.title} — Fix Planet`;
+const title = `${item.title}: Fix Planet`;
 const image = waterEncyclopediaImageSrc(item.image);
 const waterHref = localizePath('/solutions/water', locale);
 ---

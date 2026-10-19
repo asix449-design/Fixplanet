@@ -97,7 +97,7 @@
     },
     "water-buffalo": {
       "commonName": "Ūdensbifelis",
-      "hook": "Ap 15 procentiem pasaules piena — un Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.",
+      "hook": "Ap 15 procentiem pasaules piena, un Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.",
       "imageAlt": "Mājas ūdensbifeļa bullis pie Mehsānas, Gudžarātā, Indijā",
       "what": "Ūdensbifelis (Bubalus bubalis) ir pieradinātais Āzijas bifelis, ko tur piena, gaļas un vilkšanas dēļ. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rēķina bifeļus ap 15 procentiem pasaules piena; Indijā un Pakistānā bifeļu piena ir vairāk nekā govs piena.",
       "range": "Dienvidu un Dienvidaustrumu Āzija tur lielāko daļu ganāmpulka; mazākas populācijas ir Vidusjūrā, Kaukāzā, Dienvidamerikā un tālāk. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē bifeļus kā mājlopus.",
@@ -124,12 +124,12 @@
     },
     "horse": {
       "commonName": "Zirgs",
-      "hook": "Mājas zirgi izplatījās no Rietumeirāzijas stepēm ap 2200.–2000. gadu p.m.ē., kā 2021. gadā žurnālā Nature parādīja Librado un kolēģi.",
+      "hook": "Mājas zirgi izplatījās no Rietumeirāzijas stepēm ap 2200.-2000. gadu p.m.ē., kā 2021. gadā žurnālā Nature parādīja Librado un kolēģi.",
       "imageAlt": "Balts Kamargas zirgs zālē",
-      "what": "Zirgs (Equus ferus caballus) ir mājas zirgs, uz kura jā, ko iejūdz un ko tur. Librado un kolēģu darbs ar seno ģenētisko materiālu (žurnāls Nature, 2021) liek mūsdienu mājas līnijas rašanos un izplatību Rietumeirāzijas stepēs, ar paplašināšanos ap 2200.–2000. gadu p.m.ē. Botajas zirgi Kazahstānā pieder citai līnijai.",
+      "what": "Zirgs (Equus ferus caballus) ir mājas zirgs, uz kura jā, ko iejūdz un ko tur. Librado un kolēģu darbs ar seno ģenētisko materiālu (žurnāls Nature, 2021) liek mūsdienu mājas līnijas rašanos un izplatību Rietumeirāzijas stepēs, ar paplašināšanos ap 2200.-2000. gadu p.m.ē. Botajas zirgi Kazahstānā pieder citai līnijai.",
       "range": "Tos tur visā pasaulē. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija kartē zirgus kā mājlopus. Darba, sporta un savvaļā palaistie bari dzīvo visos apdzīvotajos kontinentos.",
       "story": "Mūsdienu mājas līnija nomainīja agrākās līnijas, izplatoties kopā ar cilvēkiem. Šis datums ir 2021. gada pētījuma ģenētisks rezultāts. Darba, sporta un savvaļā palaistie bari nāk no šīs turētās līnijas.",
-      "when": "Dzīvs pieradinājums. Mūsdienu līnija: Rietumeirāzijas stepes, ap 2200.–2000. gadu p.m.ē. (Librado u.c., 2021).",
+      "when": "Dzīvs pieradinājums. Mūsdienu līnija: Rietumeirāzijas stepes, ap 2200.-2000. gadu p.m.ē. (Librado u.c., 2021).",
       "humanRole": "Mēs selekcionējām un pārvietojām tos kā transportu un darbu. Dzīvās līnijas datums nāk no 2021. gada ģenētiskā pētījuma.",
       "sources": [
         {
@@ -137,7 +137,7 @@
           "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
         },
         {
-          "label": "Librado u.c., žurnāls Nature, 2021 — Rietumeirāzijas steppju mājas zirgi (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)",
+          "label": "Librado u.c., žurnāls Nature, 2021: Rietumeirāzijas steppju mājas zirgi (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)",
           "url": "https://doi.org/10.1038/s41586-021-04018-9"
         }
       ],
@@ -170,7 +170,7 @@
         }
       ],
       "gridSource": {
-        "label": "Bergström u.c., Science, 2020 — aizvēsturisko suņu izcelsme, pilns teksts PubMed Central",
+        "label": "Bergström u.c., Science, 2020: aizvēsturisko suņu izcelsme, pilns teksts PubMed Central",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
       },
       "image": {
@@ -331,7 +331,7 @@
       "imageAlt": "Melns mājas trusis uz salmiem Hiršštetenes ziedu dārzos Vīnē, Austrijā.",
       "what": "Mājas trusi (Oryctolagus cuniculus) audzē gaļai, ādiņām kažokādām un, angoras trušu gadījumā, vilnai. Tas cēlies no Dienvideiropas un Ziemeļāfrikas savvaļas truša.",
       "range": "Trušu turēšana būros izplatījās visos Rietumeiropas laukos un pilsētu priekšpilsētās, un Eiropas koloniālā ekspansija aizveda trušus uz daudzām valstīm, kur tie iepriekš bija nezināmi, piemēram, uz Austrāliju un Jaunzēlandi. Mūsdienās truši sastopami gandrīz jebkurā klimatā. Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rokasgrāmata par truškopību raksturo piemājas trušu audzētavas kā labi piemērotas sīkzemniekiem neatkarīgi no tā, vai viņiem pieder zeme.",
-      "story": "Saskaņā ar Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rokasgrāmatu “Trusis: turēšana, veselība un ražošana” (1997) savvaļas trusi, domājams, atklāja feniķieši, kas ap 1000. gadu p.m.ē. sasniedza Spānijas krastus. Romiešu rakstnieks Varons (116.–27. g. p.m.ē.) ieteica turēt trušus leporārijos, ar akmens mūri ieskautos aplokos vai parkos, kopā ar zaķiem un citiem savvaļas dzīvniekiem medībām; truši toreiz vēl bija savvaļas dzīvnieki. Sešpadsmitajā gadsimtā jau bija zināmas vairākas šķirnes, un tā ir pirmā kontrolētas selekcijas pazīme, tāpēc pieradināšanu attiecina uz vēlajiem viduslaikiem; visticamāk, to galvenokārt paveica mūki.",
+      "story": "Saskaņā ar Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija rokasgrāmatu “Trusis: turēšana, veselība un ražošana” (1997) savvaļas trusi, domājams, atklāja feniķieši, kas ap 1000. gadu p.m.ē. sasniedza Spānijas krastus. Romiešu rakstnieks Varons (116.-27. g. p.m.ē.) ieteica turēt trušus leporārijos, ar akmens mūri ieskautos aplokos vai parkos, kopā ar zaķiem un citiem savvaļas dzīvniekiem medībām; truši toreiz vēl bija savvaļas dzīvnieki. Sešpadsmitajā gadsimtā jau bija zināmas vairākas šķirnes, un tā ir pirmā kontrolētas selekcijas pazīme, tāpēc pieradināšanu attiecina uz vēlajiem viduslaikiem; visticamāk, to galvenokārt paveica mūki.",
       "when": "Dzīvs mājas dzīvnieks. Trušu šķirnes uzskaita Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas Mājas dzīvnieku daudzveidības informācijas sistēma.",
       "humanRole": "Rupjā barība ir svarīga truša barības daļa, tāpēc truši tieši nekonkurē ar cilvēkiem par pārtiku, un efektīvās sistēmās tie 20% apēsto olbaltumvielu pārvērš ēdamā gaļā. Tāpēc tie noder lauku ģimenēm, kurām vajag vairāk dzīvnieku olbaltumvielu.",
       "sources": [

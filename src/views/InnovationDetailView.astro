@@ -12,7 +12,7 @@ const locale = resolveLocale(Astro.currentLocale);
 const page = getInnovationsPage(locale);
 const { item } = Astro.props;
 const plainChrome = item.area === 'energy' || item.area === 'ai';
-const title = plainChrome ? `${item.title}, Fix Planet` : `${item.title} — Fix Planet`;
+const title = plainChrome ? `${item.title}, Fix Planet` : `${item.title}: Fix Planet`;
 const image = innovationImageSrc(item.image);
 const backLabel = plainChrome ? page.back.replace(/^\s*←\s*/, '') : page.back;
 const naturalFigure =

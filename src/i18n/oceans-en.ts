@@ -1,7 +1,7 @@
 import type { OceansPage } from './oceans';
 
 export const en: OceansPage = {
-  metaTitle: 'Oceans — Fix Planet',
+  metaTitle: 'Oceans: Fix Planet',
   metaDescription:
     'Ocean currents, salinity, sea-surface temperature, and pollution: what they are, why they matter, and maps and numbers from named sources.',
   eyebrow: 'World Ocean',
@@ -20,7 +20,7 @@ export const en: OceansPage = {
   tiles: {
     currents: 'Surface currents and the great gyres that steer heat, salt, and life.',
     salinity: 'How salty the sea is, and why that density helps drive the overturning circulation.',
-    sst: 'The temperature of the sea surface — the standing climate, and years that run warmer or cooler.',
+    sst: 'The temperature of the sea surface: the standing climate, and years that run warmer or cooler.',
     pollution: 'Five subtropical garbage patches, oil, phytoplankton blooms, and coastal dead zones.',
     numbers: 'Heat, acidity, plastic, and hypoxia, each from a named paper.',
   },
@@ -38,18 +38,18 @@ export const en: OceansPage = {
       'The map is a 1943 teaching plate of named surface currents and ice limits. Modelled present-day surface flow is in Copernicus Marine and ESR OSCAR.',
     ],
     salinity: [
-      'Salinity is the dissolved-salt content of seawater. Open-ocean surface values are typically about 32–37 grams of salt per kilogram of water — practical salinity, numerically close to the PSU scale.',
+      'Salinity is the dissolved-salt content of seawater. Open-ocean surface values are typically about 32-37 grams of salt per kilogram of water: practical salinity, numerically close to the PSU scale.',
       'Saltier water is denser. Together with temperature, salinity sets the density that drives thermohaline circulation: the slow overturning that links surface currents to the deep ocean. Rivers, rain, and melting ice freshen the surface; evaporation and sea-ice formation make it saltier.',
-      'The figures are NASA Aquarius observations of sea-surface salinity from the 2011–2015 mission.',
+      'The figures are NASA Aquarius observations of sea-surface salinity from the 2011-2015 mission.',
     ],
     sst: [
-      'Sea-surface temperature (SST) is the temperature of the upper ocean — from a fraction of a millimetre to a few metres, depending on the sensor. It helps set evaporation, storms, marine heatwaves, and the exchange of heat and carbon with the air.',
-      'The standing pattern is warm tropics and cold polar seas, with western-boundary currents (Gulf Stream, Kuroshio) as warm filaments. Year-to-year change is easier to read as an anomaly — the departure from a long-term climatology — than on the absolute equator–pole rainbow.',
-      'The maps are NASA GHRSST MUR, a blended satellite SST analysis for 1 July, 2003–2025. Anomaly years on this page run 2020–2024.',
+      'Sea-surface temperature (SST) is the temperature of the upper ocean: from a fraction of a millimetre to a few metres, depending on the sensor. It helps set evaporation, storms, marine heatwaves, and the exchange of heat and carbon with the air.',
+      'The standing pattern is warm tropics and cold polar seas, with western-boundary currents (Gulf Stream, Kuroshio) as warm filaments. Year-to-year change is easier to read as an anomaly: the departure from a long-term climatology: than on the absolute equator-pole rainbow.',
+      'The maps are NASA GHRSST MUR, a blended satellite SST analysis for 1 July, 2003-2025. Anomaly years on this page run 2020-2024.',
     ],
     pollution: [
       'The ocean is polluted in several different ways: persistent plastics, oil from wells and ships, extra nutrients that fuel algal blooms, and the hypoxia that follows when that organic matter decays.',
-      'No single map shows all of that. The figures below are separate datasets. The first answers a common question: there are five major subtropical garbage patches — zones of higher plastic concentration in the great gyres, not floating islands. Then a closer North Pacific model, one observed oil spill, a chlorophyll-a composite, and a compilation of coastal dead zones.',
+      'No single map shows all of that. The figures below are separate datasets. The first answers a common question: there are five major subtropical garbage patches: zones of higher plastic concentration in the great gyres, not floating islands. Then a closer North Pacific model, one observed oil spill, a chlorophyll-a composite, and a compilation of coastal dead zones.',
     ],
     numbers: [
       'Published figures, each from a named source. Ocean area, heat, sea-level rise, acidity, oxygen, plastic, fisheries, coral, hypoxia, and protected-area coverage are different measurements. They should not be added into one score.',
@@ -58,9 +58,9 @@ export const en: OceansPage = {
   honestyCurrents:
     'US Army atlas plate, 1943: named surface currents and ice limits. A teaching schematic, not a satellite current field.',
   honestySalinity:
-    'NASA Aquarius, 2011–2015. Observed surface salinity in g/kg. Later satellite months: SMAP, in NASA Worldview.',
+    'NASA Aquarius, 2011-2015. Observed surface salinity in g/kg. Later satellite months: SMAP, in NASA Worldview.',
   honestySst:
-    'NASA GHRSST MUR L4, 1 July. Absolute SST is the equator–pole field; anomaly is departure from MUR climatology.',
+    'NASA GHRSST MUR L4, 1 July. Absolute SST is the equator-pole field; anomaly is departure from MUR climatology.',
   honestyPollution:
     'Five figures: five-gyre plastics (Eriksen 2014), North Pacific model (Lebreton 2018), one oil spill, chlorophyll-a, compiled hypoxia.',
   modeSst: 'Absolute SST',
@@ -92,25 +92,25 @@ export const en: OceansPage = {
   oscarNote:
     'OSCAR (Ocean Surface Current Analyses Real-time) estimates mixed-layer velocity from satellite sea-surface height, vector winds, and SST, using geostrophy, Ekman drift, and thermal wind. Daily fields at 0.25°, from 1993.',
   smapNote:
-    'The SMAP mission continues microwave sea-surface salinity after Aquarius. World Ocean Atlas 2023 is a separate in-situ climatology — bottles, CTDs, and floats, averaged over many years.',
+    'The SMAP mission continues microwave sea-surface salinity after Aquarius. World Ocean Atlas 2023 is a separate in-situ climatology: bottles, CTDs, and floats, averaged over many years.',
   numbersNote:
     'Copied from the cited papers, with vintage. Heat content is not SST; pH is chemistry, not temperature; a plastic flow is not the stock in a gyre; designated MPA area is not fully protected ocean.',
   distinguishTitle: 'What these figures measure',
   distinguish:
-    'IPCC SROCC: the ocean covers about 71 percent of Earth’s surface. IPCC AR6: it has taken up about 90 percent of the excess heat in the climate system; global mean sea level rose 3.7 mm/year in 2006–2018. Cheng et al. 2024: 0–2000 m ocean heat content in 2023 (and the 2024 update) sat at the top of the instrumental record — a heat inventory of the water column, not the SST map above. Surface pH has fallen by about 0.1 since ~1750 (IPCC AR6; NOAA PMEL). Open-ocean oxygen in the upper 1000 m fell by 0.5–3.3 percent over 1970–2010 (IPCC SROCC) — related to, not the same as, coastal hypoxic sites (Breitburg et al. 2018: >500). Jambeck et al. 2015 estimated 4.8–12.7 million tonnes of plastic entering the ocean from land in 2010 — a flow, not the mass in a gyre. FAO 2025: 35.5 percent of assessed marine stocks were overfished (2021 status). GCRMN 2020: about 14 percent of hard coral was lost from reefs in 2009–2018. Protected Planet Report 2024: 8.4 percent of marine and coastal areas in protected areas and OECMs — designated coverage, not a fully-protected share.',
+    'IPCC SROCC: the ocean covers about 71 percent of Earth’s surface. IPCC AR6: it has taken up about 90 percent of the excess heat in the climate system; global mean sea level rose 3.7 mm/year in 2006-2018. Cheng et al. 2024: 0-2000 m ocean heat content in 2023 (and the 2024 update) sat at the top of the instrumental record: a heat inventory of the water column, not the SST map above. Surface pH has fallen by about 0.1 since ~1750 (IPCC AR6; NOAA PMEL). Open-ocean oxygen in the upper 1000 m fell by 0.5-3.3 percent over 1970-2010 (IPCC SROCC): related to, not the same as, coastal hypoxic sites (Breitburg et al. 2018: >500). Jambeck et al. 2015 estimated 4.8-12.7 million tonnes of plastic entering the ocean from land in 2010: a flow, not the mass in a gyre. FAO 2025: 35.5 percent of assessed marine stocks were overfished (2021 status). GCRMN 2020: about 14 percent of hard coral was lost from reefs in 2009-2018. Protected Planet Report 2024: 8.4 percent of marine and coastal areas in protected areas and OECMs: designated coverage, not a fully-protected share.',
   pollutionKinds: {
     patches: {
       title: 'Five garbage patches',
-      lead: 'There are five major subtropical gyres with elevated floating plastic: North Pacific, South Pacific, North Atlantic, South Atlantic, and Indian Ocean. A garbage patch is a zone of higher concentration of mostly small fragments, not a solid floating island. The maps are Eriksen et al. 2014 — modelled count density (pieces/km²) by size class, from net tows and visual surveys across all five gyres. The North Pacific patch is the best studied; a western buildup near Japan is part of that same gyre, not a sixth subtropical patch. Arctic and Barents concentrations are sometimes discussed separately and are not one of these five.',
+      lead: 'There are five major subtropical gyres with elevated floating plastic: North Pacific, South Pacific, North Atlantic, South Atlantic, and Indian Ocean. A garbage patch is a zone of higher concentration of mostly small fragments, not a solid floating island. The maps are Eriksen et al. 2014: modelled count density (pieces/km²) by size class, from net tows and visual surveys across all five gyres. The North Pacific patch is the best studied; a western buildup near Japan is part of that same gyre, not a sixth subtropical patch. Arctic and Barents concentrations are sometimes discussed separately and are not one of these five.',
       caption:
-        'Eriksen et al. 2014, PLOS ONE. Modelled count density (pieces/km²) in four size classes. CC0. Sampling 2007–2013; not a satellite photo of trash islands. NOAA education materials describe the same five subtropical gyres.',
+        'Eriksen et al. 2014, PLOS ONE. Modelled count density (pieces/km²) in four size classes. CC0. Sampling 2007-2013; not a satellite photo of trash islands. NOAA education materials describe the same five subtropical gyres.',
       imageAlt:
         'Four world maps of modelled floating-plastic count density in four size classes, orange-red accumulations in five subtropical gyres',
-      seeAlso: 'Great Pacific Garbage Patch — North Pacific model ↓',
+      seeAlso: 'Great Pacific Garbage Patch: North Pacific model ↓',
     },
     plastics: {
       title: 'Great Pacific Garbage Patch',
-      lead: 'The Great Pacific Garbage Patch, between Hawaii and California, is the best-studied of the five subtropical accumulations — water with more debris in the North Pacific gyre, not a solid island. A western concentration near Japan belongs to the same gyre. Most of the plastic is small fragments. The map shows modelled mass concentration (kg/km²) for August 2015.',
+      lead: 'The Great Pacific Garbage Patch, between Hawaii and California, is the best-studied of the five subtropical accumulations: water with more debris in the North Pacific gyre, not a solid island. A western concentration near Japan belongs to the same gyre. Most of the plastic is small fragments. The map shows modelled mass concentration (kg/km²) for August 2015.',
       caption:
         'Lebreton et al. 2018, Scientific Reports. Modelled mass concentration, North Pacific, August 2015. CC BY 4.0.',
       imageAlt:
@@ -119,7 +119,7 @@ export const en: OceansPage = {
     },
     oil: {
       title: 'Oil',
-      lead: 'Crude oil at the sea surface spreads as a thin film and can be seen from space. The image is NASA Terra MODIS on 24 May 2010, during the Deepwater Horizon blowout in the Gulf of Mexico — one large spill. Operational slick reports use radar and VIIRS at NOAA NESDIS.',
+      lead: 'Crude oil at the sea surface spreads as a thin film and can be seen from space. The image is NASA Terra MODIS on 24 May 2010, during the Deepwater Horizon blowout in the Gulf of Mexico: one large spill. Operational slick reports use radar and VIIRS at NOAA NESDIS.',
       caption: 'NASA Terra MODIS. Deepwater Horizon oil slick, 24 May 2010. Public domain.',
       imageAlt:
         'Satellite view of the Gulf of Mexico with a dark oil slick south of the Mississippi Delta, May 2010',
@@ -147,12 +147,12 @@ export const en: OceansPage = {
     millionTonnes: 'million tonnes / year',
     trillion: 'trillion particles',
     sites: 'coastal sites',
-    ohc: 'record 0–2000 m OHC',
+    ohc: 'record 0-2000 m OHC',
     earthSurface: '% of Earth’s surface',
     mmYear: 'mm / year',
     oxygen: '% O₂, upper 1000 m',
     stocks: '% of stocks',
-    coral: '% of coral, 2009–18',
+    coral: '% of coral, 2009-18',
     mpa: '% of ocean, 2024',
     millionHa: 'million ha',
   },
@@ -169,7 +169,7 @@ export const en: OceansPage = {
       label: '2010',
       title: 'Absolute SST, 1 July 2010',
       caption:
-        'The same absolute MUR field. Western-boundary currents — Gulf Stream, Kuroshio — show as warm filaments. A year’s marine heatwave is clearer on the anomaly maps.',
+        'The same absolute MUR field. Western-boundary currents: Gulf Stream, Kuroshio: show as warm filaments. A year’s marine heatwave is clearer on the anomaly maps.',
       imageAlt:
         'Equirectangular world map of sea-surface temperature, 1 July 2010: red tropics, purple polar oceans, black land',
     },
@@ -177,7 +177,7 @@ export const en: OceansPage = {
       label: '2015',
       title: 'Absolute SST, 1 July 2015',
       caption:
-        '2015–16 was a strong El Niño. On an absolute map the equatorial Pacific is always warm; the event itself is on the anomaly shelf.',
+        '2015-16 was a strong El Niño. On an absolute map the equatorial Pacific is always warm; the event itself is on the anomaly shelf.',
       imageAlt:
         'Equirectangular world map of sea-surface temperature, 1 July 2015: red tropics, purple polar oceans, black land',
     },
@@ -193,7 +193,7 @@ export const en: OceansPage = {
       label: '2024',
       title: 'Absolute SST, 1 July 2024',
       caption:
-        '2023–24 sat at the top of the ocean-heat record (Cheng et al. 2024). The absolute rainbow still reads as “tropics are warm”; the anomaly mode shows the departure.',
+        '2023-24 sat at the top of the ocean-heat record (Cheng et al. 2024). The absolute rainbow still reads as “tropics are warm”; the anomaly mode shows the departure.',
       imageAlt:
         'Equirectangular world map of sea-surface temperature, 1 July 2024: red tropics, purple polar oceans, black land',
     },
@@ -217,7 +217,7 @@ export const en: OceansPage = {
       label: '2022',
       title: 'SST anomaly, 1 July 2022',
       caption:
-        'The same anomaly layer, 2022. Compare the North Atlantic and equatorial Pacific with 2023–24.',
+        'The same anomaly layer, 2022. Compare the North Atlantic and equatorial Pacific with 2023-24.',
       imageAlt:
         'Equirectangular SST anomaly map, 1 July 2022: reds and blues on black land',
     },
@@ -241,7 +241,7 @@ export const en: OceansPage = {
       label: '2011',
       title: 'Aquarius first global salinity map',
       caption:
-        'NASA Aquarius, 25 August–11 September 2011: the mission’s first global sea-surface salinity map. Microwave SSS, in g/kg. Fresher plumes at the Amazon and Ganges; saltier subtropical Atlantic.',
+        'NASA Aquarius, 25 August-11 September 2011: the mission’s first global sea-surface salinity map. Microwave SSS, in g/kg. Fresher plumes at the Amazon and Ganges; saltier subtropical Atlantic.',
       imageAlt:
         'Mollweide map of ocean surface salinity from Aquarius, 2011, purple fresh to red salty, gray land',
     },
@@ -273,23 +273,23 @@ export const en: OceansPage = {
     },
     seaLevel: {
       label: 'Sea-level rise rate',
-      text: 'Global mean sea level rose 3.7 [3.2–4.2] mm/year in 2006–2018, up from 2.3 [1.6–3.1] mm/year in 1971–2018 (IPCC AR6 WG1). Rate, not a single tide-gauge day.',
+      text: 'Global mean sea level rose 3.7 [3.2-4.2] mm/year in 2006-2018, up from 2.3 [1.6-3.1] mm/year in 1971-2018 (IPCC AR6 WG1). Rate, not a single tide-gauge day.',
     },
     ohcRecord: {
       label: 'Ocean heat content, recent peak',
-      text: 'Cheng et al. 2024 (Adv. Atmos. Sci.): 0–2000 m ocean heat content in 2023 reached a new instrumental high; 2024 updates remained at the top of the record. Heat content, not a single SST day.',
+      text: 'Cheng et al. 2024 (Adv. Atmos. Sci.): 0-2000 m ocean heat content in 2023 reached a new instrumental high; 2024 updates remained at the top of the record. Heat content, not a single SST day.',
     },
     phDrop: {
       label: 'Surface pH decline',
-      text: 'Open-ocean surface pH has fallen by about 0.1 since ~1750 — a roughly 26–30 percent increase in hydrogen-ion concentration (IPCC AR6; NOAA PMEL). Carbonate chemistry, not temperature.',
+      text: 'Open-ocean surface pH has fallen by about 0.1 since ~1750: a roughly 26-30 percent increase in hydrogen-ion concentration (IPCC AR6; NOAA PMEL). Carbonate chemistry, not temperature.',
     },
     oxygenLoss: {
       label: 'Open-ocean oxygen loss',
-      text: 'The open ocean lost 0.5–3.3 percent of dissolved oxygen in the upper 1000 m over 1970–2010; oxygen-minimum zones expanded by 3–8 percent (IPCC SROCC). Open-ocean deoxygenation, not the coastal dead-zone count.',
+      text: 'The open ocean lost 0.5-3.3 percent of dissolved oxygen in the upper 1000 m over 1970-2010; oxygen-minimum zones expanded by 3-8 percent (IPCC SROCC). Open-ocean deoxygenation, not the coastal dead-zone count.',
     },
     plasticLand: {
       label: 'Plastic from land to ocean',
-      text: 'Jambeck et al. 2015, Science: 4.8–12.7 million metric tonnes of plastic waste entered the ocean from land in 2010. A 2010 flow estimate, not the mass sitting in the Great Pacific Garbage Patch.',
+      text: 'Jambeck et al. 2015, Science: 4.8-12.7 million metric tonnes of plastic waste entered the ocean from land in 2010. A 2010 flow estimate, not the mass sitting in the Great Pacific Garbage Patch.',
     },
     plasticFloat: {
       label: 'Floating plastic particles',
@@ -297,10 +297,10 @@ export const en: OceansPage = {
     },
     overfished: {
       label: 'Marine stocks overfished',
-      text: '35.5 percent of assessed marine fishery stocks were classified as overfished; 64.5 percent were within biologically sustainable levels (FAO Review of the State of World Marine Fishery Resources 2025; status year 2021). Share of stocks, not of catch — 77.2 percent of landings still came from sustainable stocks.',
+      text: '35.5 percent of assessed marine fishery stocks were classified as overfished; 64.5 percent were within biologically sustainable levels (FAO Review of the State of World Marine Fishery Resources 2025; status year 2021). Share of stocks, not of catch: 77.2 percent of landings still came from sustainable stocks.',
     },
     coralLost: {
-      label: 'Hard coral lost, 2009–18',
+      label: 'Hard coral lost, 2009-18',
       text: 'About 14 percent of the world’s hard coral was lost from coral reefs between 2009 and 2018 (GCRMN Status of Coral Reefs of the World: 2020). Living hard-coral cover, not reef map area, and not an IPCC 1.5 °C projection.',
     },
     deadZones: {
@@ -309,11 +309,11 @@ export const en: OceansPage = {
     },
     mpaCover: {
       label: 'Marine protected area',
-      text: '8.4 percent of marine and coastal areas (8.44 percent in the figure) were in protected areas and OECMs in the Protected Planet Report 2024. Designated coverage toward 30×30 — not fully or highly protected ocean. Live WDPA totals move; this page keeps that 2024 snapshot.',
+      text: '8.4 percent of marine and coastal areas (8.44 percent in the figure) were in protected areas and OECMs in the Protected Planet Report 2024. Designated coverage toward 30×30: not fully or highly protected ocean. Live WDPA totals move; this page keeps that 2024 snapshot.',
     },
     mangroveArea: {
       label: 'Mangrove remaining (FAO)',
-      text: '15.9 million ha of mangrove forest in 2025 (FAO FRA 2025). Global net area rose in 2015–2025; that is not a claim that every mangrove coast is recovering. Blue-carbon habitat, counted as forest land use.',
+      text: '15.9 million ha of mangrove forest in 2025 (FAO FRA 2025). Global net area rose in 2015-2025; that is not a claim that every mangrove coast is recovering. Blue-carbon habitat, counted as forest land use.',
     },
   },
 };

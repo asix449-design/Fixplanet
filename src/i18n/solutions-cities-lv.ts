@@ -169,7 +169,7 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
     caption:
       'Slāpekļa dioksīda gada vidējā koncentrācija stacijās, kas iekļautas ziņojumā. Tie ir 4. kartes dati pārskatā „Gaisa kvalitātes stāvoklis Eiropā 2024”. Panelī ar atzīmi 2022 ir 3 597 stacijas: 833 ar koncentrāciju līdz 10 mikrogramiem uz kubikmetru, 2 659 virs 10 un līdz 40 ieskaitot, 105 virs 40. Panelī ar atzīmi 2023 ir 3 477 stacijas: 952, 2 440 un 85 tajās pašās klasēs. Rāmis ir no 25 grādiem rietumu garuma līdz 45 grādiem austrumu garuma un no 34 līdz 72 grādiem ziemeļu platuma, tāpēc stacijas ārpus šā rāmja nav uzzīmētas. Krasta līnija ir no Natural Earth.',
     credit:
-      'Karte pārzīmēta no Eiropas Vides aģentūras gaisa kvalitātes ziņošanas gada statistikas — mērījumiem, kas ir pamatā 4. kartei pārskatā „Gaisa kvalitātes stāvoklis Eiropā 2024”. Krasta līnija: Natural Earth, sabiedriskais īpašums.',
+      'Karte pārzīmēta no Eiropas Vides aģentūras gaisa kvalitātes ziņošanas gada statistikas: mērījumiem, kas ir pamatā 4. kartei pārskatā „Gaisa kvalitātes stāvoklis Eiropā 2024”. Krasta līnija: Natural Earth, sabiedriskais īpašums.',
     legend: [
       'Ne vairāk kā 10 mikrogrami uz kubikmetru',
       'Virs 10 un līdz 40 ieskaitot',
@@ -208,9 +208,9 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
     hook: grid['electric-buses'].fix,
     imageAlt: grid['electric-buses'].imageAlt,
     caption:
-      'Elektroautobusu pārdošana pa reģioniem, 2020.–2025. gads. Ķīna joprojām pārdod visvairāk, bet tās daļa stabiņā sarūk, jo citi reģioni aug ātrāk. Segmenti no apakšas ir Ķīna, Eiropa, Amerikas Savienotās Valstis, Indija, Latīņamerika un pārējā pasaule. 2025. gadā tie ir 40,1, 12,5, 1,8, 4,3, 3,1 un 6,1 tūkstotis autobusu (kopā 67,9 tūkstoši). Ķīnas daļa stabiņā ir 86,3 procenti 2020. gadā un 59,1 procents 2025. gadā. Vertikālā skala ir tūkstoši autobusu.',
+      'Elektroautobusu pārdošana pa reģioniem, 2020.-2025. gads. Ķīna joprojām pārdod visvairāk, bet tās daļa stabiņā sarūk, jo citi reģioni aug ātrāk. Segmenti no apakšas ir Ķīna, Eiropa, Amerikas Savienotās Valstis, Indija, Latīņamerika un pārējā pasaule. 2025. gadā tie ir 40,1, 12,5, 1,8, 4,3, 3,1 un 6,1 tūkstotis autobusu (kopā 67,9 tūkstoši). Ķīnas daļa stabiņā ir 86,3 procenti 2020. gadā un 59,1 procents 2025. gadā. Vertikālā skala ir tūkstoši autobusu.',
     credit:
-      'Grafiks pārzīmēts no Starptautiskās enerģētikas aģentūras (2026) datiem „Elektroautobusu pārdošana pa reģioniem, 2020–2025”. Krāsu atslēga šajā lapā ir tā grafika adaptācija.',
+      'Grafiks pārzīmēts no Starptautiskās enerģētikas aģentūras (2026) datiem „Elektroautobusu pārdošana pa reģioniem, 2020-2025”. Krāsu atslēga šajā lapā ir tā grafika adaptācija.',
     legend: [
       'Ķīna',
       'Eiropa',
@@ -220,7 +220,7 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
       'Pārējā pasaule',
     ],
     what: [
-      'Elektroautobusi brauc ar baterijām, ko uzlādē no elektrotīkla, galvenokārt autobusu parkos. Saskaņā ar Starptautiskās enerģētikas aģentūras ziņojumu „Pasaules elektrotransportlīdzekļu pārskats 2026” 2025. gadā 98% pasaulē pārdoto elektroautobusu bija bateriju modeļi. Bateriju modeļu vidējais nobraukums ar vienu uzlādi sasniedzis 360 km, un ar to pietiek pilsētas autobusiem, kas dienā parasti nobrauc 150–300 km.',
+      'Elektroautobusi brauc ar baterijām, ko uzlādē no elektrotīkla, galvenokārt autobusu parkos. Saskaņā ar Starptautiskās enerģētikas aģentūras ziņojumu „Pasaules elektrotransportlīdzekļu pārskats 2026” 2025. gadā 98% pasaulē pārdoto elektroautobusu bija bateriju modeļi. Bateriju modeļu vidējais nobraukums ar vienu uzlādi sasniedzis 360 km, un ar to pietiek pilsētas autobusiem, kas dienā parasti nobrauc 150-300 km.',
     ],
     why: [
       'Pilsētas autobusi visu dienu kursē pa tiem pašiem noslogotajiem maršrutiem, tāpēc dīzeļmotoru nomaiņa novērš izplūdes gāzes tieši tur, kur daudz cilvēku gaida un staigā. 2025. gadā pārdošana sasniedza gandrīz 70 tūkstošus, par 12% vairāk nekā 2024. gadā. Ķīnai no tiem bija aptuveni 60%, salīdzinot ar gandrīz 100% 2018. gadā, un gandrīz visi tur pārdotie jaunie pilsētas autobusi ir elektriski. Eiropā pārdoti vairāk nekā 12 tūkstoši elektroautobusu, bet Eiropas Savienībā bateriju modeļi veidoja vairāk nekā 55% jauno pilsētas autobusu pārdošanas. Santjago Čīlē tagad ir lielākais elektroautobusu parks starp pilsētām ārpus Ķīnas.',

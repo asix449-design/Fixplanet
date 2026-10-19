@@ -110,7 +110,7 @@
   },
   {
     "file": "salinity-aquarius-2011.jpg",
-    "title": "Aquarius first global sea-surface salinity map, 25 Aug–11 Sep 2011",
+    "title": "Aquarius first global sea-surface salinity map, 25 Aug-11 Sep 2011",
     "source": "NASA / JPL-Caltech, Aquarius mission",
     "url": "https://commons.wikimedia.org/wiki/File:Aquarius_spacecraft_first_global_salinity_map_Aug-Sep_2011.jpg",
     "license": "Public domain (NASA)",
@@ -124,7 +124,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:Aquarius_Sea_Surface_Salinity.jpg",
     "license": "Public domain (NASA)",
     "kind": "hosted-original",
-    "note": "Same mission, regional 3-D graphic — not a later year and not SMAP."
+    "note": "Same mission, regional 3-D graphic: not a later year and not SMAP."
   },
   {
     "file": "currents-gyres-1943.jpg",
@@ -187,7 +187,7 @@
   {
     "file": "ocean-acidification.jpg",
     "title": "Change in surface pH, OceanSODA-ETHZ v2025",
-    "source": "Fix Planet map from OceanSODA-ETHZ v2025. Colour is the change in surface pH (total scale) from the 1985–1989 mean to the 2020–2024 mean. Boundaries: Natural Earth 1:10m.",
+    "source": "Fix Planet map from OceanSODA-ETHZ v2025. Colour is the change in surface pH (total scale) from the 1985-1989 mean to the 2020-2024 mean. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html",
     "license": "NOAA NCEI OCADS / OceanSODA-ETHZ. Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
@@ -195,8 +195,8 @@
   },
   {
     "file": "dissolved-oxygen.jpg",
-    "title": "Dissolved oxygen minimum, 100–1000 m, World Ocean Atlas 2023",
-    "source": "Fix Planet map from NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° field, minimum between 100 m and 1000 m, 1965–2022. Boundaries: Natural Earth 1:10m.",
+    "title": "Dissolved oxygen minimum, 100-1000 m, World Ocean Atlas 2023",
+    "source": "Fix Planet map from NOAA World Ocean Atlas 2023 dissolved oxygen, annual 1° field, minimum between 100 m and 1000 m, 1965-2022. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.ncei.noaa.gov/products/world-ocean-atlas",
     "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
@@ -213,7 +213,7 @@
   },
   {
     "file": "sea-level.jpg",
-    "title": "Sea-level trend, NOAA Laboratory for Satellite Altimetry, 1992.96–2025.10",
+    "title": "Sea-level trend, NOAA Laboratory for Satellite Altimetry, 1992.96-2025.10",
     "source": "Fix Planet map from the NOAA LSA regional sea-level trend grid (TOPEX, Jason-1/2/3, Sentinel-6MF). Boundaries: Natural Earth 1:10m.",
     "url": "https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/",
     "license": "NOAA Laboratory for Satellite Altimetry. Acknowledge: Altimetry data are provided by NOAA Laboratory for Satellite Altimetry. Boundaries public domain (Natural Earth).",
@@ -231,8 +231,8 @@
   },
   {
     "file": "ocean-heat-content.jpg",
-    "title": "Ocean heat content anomaly, 0–700 m, 2025",
-    "source": "Fix Planet map from NOAA NCEI yearly ocean heat content anomaly for 0–700 m, 2025. Boundaries: Natural Earth 1:10m.",
+    "title": "Ocean heat content anomaly, 0-700 m, 2025",
+    "source": "Fix Planet map from NOAA NCEI yearly ocean heat content anomaly for 0-700 m, 2025. Boundaries: Natural Earth 1:10m.",
     "url": "https://www.ncei.noaa.gov/access/global-ocean-heat-content/",
     "license": "Public domain (NOAA). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",

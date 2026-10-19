@@ -188,7 +188,7 @@ export const reconstructionFrames: ForestFrameMeta[] = [
     sourceUrl: 'https://intarch.ac.uk/journal/issue11/rayadams_toc.html',
     license: 'CC BY 3.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/3.0/',
-    vintage: '~25,000–15,000 BP',
+    vintage: '~25,000-15,000 BP',
   },
   {
     id: 'recon-midholocene',
@@ -270,7 +270,7 @@ export const longViewImage = {
   sourceUrl: 'https://commons.wikimedia.org/wiki/File:Anthromes_map_and_timeline_(10,000_BCE_to_2017_CE).png',
   license: 'CC BY 2.0',
   licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
-  vintage: '10,000 BCE–2017',
+  vintage: '10,000 BCE-2017',
 } as const;
 
 export const forestBackdrop = {

@@ -54,9 +54,9 @@ const tabLeads = {
 } as const;
 
 const pageTitle = isHumanShelf
-  ? `${ui.wildlifePage.scientificName} — Fix Planet`
+  ? `${ui.wildlifePage.scientificName}: Fix Planet`
   : activeStatus
-    ? `${ui.wildlifePage[activeStatus]} — ${ui.wildlifePage.title} — Fix Planet`
+    ? `${ui.wildlifePage[activeStatus]}: ${ui.wildlifePage.title}: Fix Planet`
     : ui.wildlifePage.metaTitle;
 const pageDescription = isHumanShelf
   ? ui.wildlifePage.mapLead

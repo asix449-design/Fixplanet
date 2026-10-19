@@ -96,11 +96,11 @@ export const solutionMeta: SolutionMeta[] = [
     latest: true,
     sources: [
       cite(
-        'USGS Water Science School — Irrigation: drip or microirrigation',
+        'USGS Water Science School: Irrigation: drip or microirrigation',
         'https://www.usgs.gov/water-science-school/science/irrigation-drip-or-microirrigation',
       ),
       cite(
-        'FAO — Irrigation water management: drip irrigation',
+        'FAO: Irrigation water management: drip irrigation',
         'https://www.fao.org/4/s8684e/s8684e07.htm',
       ),
     ],
@@ -110,9 +110,9 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     latest: true,
     sources: [
-      cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands'),
+      cite('U.S. EPA: Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands'),
       cite(
-        'U.S. EPA — Constructed Wetlands Handbook (PDF)',
+        'U.S. EPA: Constructed Wetlands Handbook (PDF)',
         'https://www.epa.gov/sites/default/files/2015-10/documents/constructed-wetlands-handbook.pdf',
       ),
     ],
@@ -123,15 +123,15 @@ export const solutionMeta: SolutionMeta[] = [
     // Shelf note: leave the Water Corporation (WA) desalination primary. No resolving IEA desalination hub to swap in.
     sources: [
       cite(
-        'Water Corporation (WA) — Desalination',
+        'Water Corporation (WA): Desalination',
         'https://www.watercorporation.com.au/Our-water/Desalination',
       ),
       cite(
-        'Water Corporation (WA) — Perth Seawater Desalination Plant',
+        'Water Corporation (WA): Perth Seawater Desalination Plant',
         'https://www.watercorporation.com.au/Our-water/Desalination/Perth-Seawater-Desalination-Plant',
       ),
       cite(
-        'USGS Water Science School — Desalination',
+        'USGS Water Science School: Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
       ),
     ],
@@ -140,20 +140,20 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'managed-aquifer-recharge',
     tag: 'water',
     sources: [
-      cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/'),
+      cite('Orange County Water District: GWRS', 'https://www.ocwd.com/gwrs/'),
       cite(
-        'Water Corporation (WA) — Groundwater replenishment',
+        'Water Corporation (WA): Groundwater replenishment',
         'https://www.watercorporation.com.au/Our-water/Groundwater/Groundwater-replenishment',
       ),
       cite(
-        'Central Arizona Project — Recharge',
+        'Central Arizona Project: Recharge',
         'https://www.cap-az.com/water/water-supply/future-water-supplies/recharge/',
       ),
       cite(
-        'NGWA — Orange County Water District case study',
+        'NGWA: Orange County Water District case study',
         'https://www.ngwa.org/what-is-groundwater/groundwater-issues/managed-aquifer-recharge/case-studies/orange-county-water-district-california',
       ),
-      cite('USGS Circular 1405 — Artificial recharge / MAR', 'https://pubs.usgs.gov/circ/1405/'),
+      cite('USGS Circular 1405: Artificial recharge / MAR', 'https://pubs.usgs.gov/circ/1405/'),
     ],
   },
   {
@@ -242,7 +242,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Cool roofs',
+        'U.S. EPA: Cool roofs',
         'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
       ),
     ],
@@ -252,7 +252,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Permeable pavement',
+        'U.S. EPA: Permeable pavement',
         'https://www.epa.gov/soakuptherain/soak-rain-permeable-pavement',
       ),
     ],
@@ -262,7 +262,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'U.S. EPA — Trees and vegetation',
+        'U.S. EPA: Trees and vegetation',
         'https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands',
       ),
     ],
@@ -272,7 +272,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'IEA — District heating',
+        'IEA: District heating',
         'https://www.iea.org/energy-system/buildings/district-heating',
       ),
     ],
@@ -280,14 +280,14 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'lower-clinker-cement',
     tag: 'materials',
-    sources: [cite('IEA — Cement', 'https://www.iea.org/energy-system/industry/cement')],
+    sources: [cite('IEA: Cement', 'https://www.iea.org/energy-system/industry/cement')],
   },
   {
     slug: 'mass-timber',
     tag: 'materials',
     sources: [
       cite(
-        'USDA Forest Service — Forest Products Laboratory',
+        'USDA Forest Service: Forest Products Laboratory',
         'https://research.fs.usda.gov/fpl',
       ),
     ],
@@ -296,14 +296,14 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'green-steel',
     tag: 'materials',
     sources: [
-      cite('IEA — Iron and Steel', 'https://www.iea.org/energy-system/industry/iron-and-steel'),
+      cite('IEA: Iron and Steel', 'https://www.iea.org/energy-system/industry/iron-and-steel'),
       cite('HYBRIT', 'https://www.hybritdevelopment.se/'),
     ],
   },
   {
     slug: 'river-interceptors',
     tag: 'oceans',
-    sources: [cite('The Ocean Cleanup — Rivers', 'https://theoceancleanup.com/rivers/')],
+    sources: [cite('The Ocean Cleanup: Rivers', 'https://theoceancleanup.com/rivers/')],
   },
   {
     slug: 'mangrove-restoration',
@@ -313,13 +313,13 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'bycatch-reduction',
     tag: 'oceans',
-    sources: [cite('NOAA Fisheries — Bycatch', 'https://www.fisheries.noaa.gov/insight/bycatch')],
+    sources: [cite('NOAA Fisheries: Bycatch', 'https://www.fisheries.noaa.gov/insight/bycatch')],
   },
   {
     slug: 'oyster-reefs',
     tag: 'oceans',
     sources: [
-      cite('NOAA — Living shorelines', 'https://oceanservice.noaa.gov/facts/living-shoreline.html'),
+      cite('NOAA: Living shorelines', 'https://oceanservice.noaa.gov/facts/living-shoreline.html'),
     ],
   },
   {
@@ -328,7 +328,7 @@ export const solutionMeta: SolutionMeta[] = [
     latest: true,
     sources: [
       cite(
-        'World Bank / ESMAP — Mini Grids for Half a Billion People',
+        'World Bank / ESMAP: Mini Grids for Half a Billion People',
         'https://www.worldbank.org/en/topic/energy/publication/mini-grids-for-half-a-billion-people',
       ),
     ],
@@ -336,27 +336,27 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'onshore-wind',
     tag: 'energy',
-    sources: [cite('IEA — Wind', 'https://www.iea.org/energy-system/renewables/wind')],
+    sources: [cite('IEA: Wind', 'https://www.iea.org/energy-system/renewables/wind')],
   },
   {
     slug: 'heat-pumps',
     tag: 'energy',
-    sources: [cite('IEA — Heat pumps', 'https://www.iea.org/energy-system/buildings/heat-pumps')],
+    sources: [cite('IEA: Heat pumps', 'https://www.iea.org/energy-system/buildings/heat-pumps')],
   },
   {
     slug: 'rainwater-harvesting',
     tag: 'water',
     sources: [
       cite(
-        'WHO — Rainwater collection, storage and management advice sheet (PDF)',
+        'WHO: Rainwater collection, storage and management advice sheet (PDF)',
         'https://www.who.int/docs/default-source/wash-documents/sanitary-inspection-packages/rainwater-collection-storage-management-advice-sheet.pdf',
       ),
       cite(
-        'WHO — Guidelines for drinking-water quality',
+        'WHO: Guidelines for drinking-water quality',
         'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines',
       ),
       cite(
-        'WHO — Guidelines for drinking-water quality, 4th edition',
+        'WHO: Guidelines for drinking-water quality, 4th edition',
         'https://www.who.int/publications/i/item/9789241548151',
       ),
     ],
@@ -366,11 +366,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'PUB Singapore — NEWater',
+        'PUB Singapore: NEWater',
         'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater',
       ),
       cite(
-        'PUB Singapore — Our Water Story',
+        'PUB Singapore: Our Water Story',
         'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory',
       ),
     ],
@@ -380,13 +380,13 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     // Shelf note: FogQuest primary stays. The organisation says its project pages are no longer kept current (soft/stale). Do not swap the URL.
     sources: [
-      cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/'),
+      cite('FogQuest: current projects', 'https://fogquest.org/projects/current-projects/'),
       cite(
-        'Klemm et al., AMBIO 2012 — Fog as a fresh-water resource (PDF)',
+        'Klemm et al., AMBIO 2012: Fog as a fresh-water resource (PDF)',
         'https://www.fogquest.org/wp-content/uploads/2012/11/AMBIO-2012-Fog-Review-10.1007_s13280-012-0247-8.pdf',
       ),
       cite(
-        'Frontiers in Water — fog harvesting review (2021)',
+        'Frontiers in Water: fog harvesting review (2021)',
         'https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2021.675269/full',
       ),
     ],
@@ -396,11 +396,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'CSIRO — Constructed floating wetlands',
+        'CSIRO: Constructed floating wetlands',
         'https://www.csiro.au/en/research/natural-environment/water/constructed-floating-wetlands',
       ),
       cite(
-        'WetlandInfo (Queensland) — floating wetlands design summary',
+        'WetlandInfo (Queensland): floating wetlands design summary',
         'https://www.wetlandinfo.detsi.qld.gov.au/wetlands/management/treatment-systems/for-agriculture/treatment-sys-nav-page/floating-wetlands/design-summary.html',
       ),
     ],
@@ -410,11 +410,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'MIT News — passive solar-powered water desalination (2020)',
+        'MIT News: passive solar-powered water desalination (2020)',
         'https://news.mit.edu/2020/passive-solar-powered-water-desalination-0207',
       ),
       cite(
-        'USGS Water Science School — Desalination',
+        'USGS Water Science School: Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
       ),
     ],
@@ -424,12 +424,12 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'World Bank — Reducing water losses',
+        'World Bank: Reducing water losses',
         'https://www.worldbank.org/en/topic/water/brief/reducing-water-losses',
       ),
-      cite('IWA — Water Loss', 'https://iwa-network.org/projects/water-loss/'),
+      cite('IWA: Water Loss', 'https://iwa-network.org/projects/water-loss/'),
       cite(
-        'World Bank — The challenge of reducing non-revenue water',
+        'World Bank: The challenge of reducing non-revenue water',
         'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/297191468176683069/the-challenge-of-reducing-non-revenue-water-nrw-in-developing-countries-how-the-private-sector-can-help-a-look-at-performance-based-service-contracting',
       ),
     ],
@@ -439,11 +439,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'U.S. EPA — Ultraviolet Disinfection Guidance Manual (PDF)',
+        'U.S. EPA: Ultraviolet Disinfection Guidance Manual (PDF)',
         'https://www.epa.gov/system/files/documents/2022-10/ultraviolet-disinfection-guidance-manual-2006.pdf',
       ),
       cite(
-        'U.S. EPA — Long Term 2 Enhanced Surface Water Treatment Rule documents',
+        'U.S. EPA: Long Term 2 Enhanced Surface Water Treatment Rule documents',
         'https://www.epa.gov/dwreginfo/long-term-2-enhanced-surface-water-treatment-rule-documents',
       ),
     ],
@@ -453,15 +453,15 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'U.S. EPA — Onsite Non-Potable Water Reuse Resources',
+        'U.S. EPA: Onsite Non-Potable Water Reuse Resources',
         'https://www.epa.gov/waterreuse/onsite-non-potable-water-reuse-resources',
       ),
       cite(
-        'WHO — Guidelines for the safe use of wastewater, excreta and greywater',
+        'WHO: Guidelines for the safe use of wastewater, excreta and greywater',
         'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta',
       ),
       cite(
-        'U.S. EPA — Basic information about water reuse',
+        'U.S. EPA: Basic information about water reuse',
         'https://www.epa.gov/waterreuse/basic-information-about-water-reuse',
       ),
     ],
@@ -471,15 +471,15 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'water',
     sources: [
       cite(
-        'Practical Action — Sand dams',
+        'Practical Action: Sand dams',
         'https://www.practicalaction.org/knowledge-centre/resources/sand-dams/',
       ),
       cite(
-        'IWMI GRIPP — Community sand dams in Kenya',
+        'IWMI GRIPP: Community sand dams in Kenya',
         'https://gripp.iwmi.org/natural-infrastructure/water-storage/ensuring-resilience-through-community-sand-dams-in-kenya/',
       ),
       cite(
-        'Maddrell & Neal — Sand Dams: a Practical Guide (PDF)',
+        'Maddrell & Neal: Sand Dams: a Practical Guide (PDF)',
         'https://www.samsamwater.com/library/Maddrell_and_Neal_2012_Sand_Dams_a_Practical_Guide_LR.pdf',
       ),
     ],
@@ -702,7 +702,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'GSA — planted roof case studies',
+        'GSA: planted roof case studies',
         'https://www.gsa.gov/governmentwide-initiatives/federal-highperformance-buildings/highperformance-building-clearinghouse/water/planted-roof/case-studies',
       ),
     ],
@@ -710,19 +710,19 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'rain-gardens-bioswales',
     tag: 'cities',
-    sources: [cite('US EPA — types of green infrastructure', 'https://www.epa.gov/green-infrastructure/types-green-infrastructure')],
+    sources: [cite('US EPA: types of green infrastructure', 'https://www.epa.gov/green-infrastructure/types-green-infrastructure')],
   },
   {
     slug: 'cool-pavements',
     tag: 'cities',
-    sources: [cite('US EPA — cool pavements', 'https://www.epa.gov/heatislands/using-cool-pavements-reduce-heat-islands')],
+    sources: [cite('US EPA: cool pavements', 'https://www.epa.gov/heatislands/using-cool-pavements-reduce-heat-islands')],
   },
   {
     slug: 'district-cooling',
     tag: 'cities',
     sources: [
       cite(
-        'SP Group — district cooling and heating',
+        'SP Group: district cooling and heating',
         'https://www.spgroup.com.sg/sustainable-energy-solutions/district-cooling-and-heating',
       ),
     ],
@@ -732,7 +732,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'cities',
     sources: [
       cite(
-        'European Commission — energy renovation of buildings',
+        'European Commission: energy renovation of buildings',
         'https://energy.ec.europa.eu/topics/energy-efficiency/energy-performance-buildings/energy-performance-buildings-directive/energy-renovation-buildings_en',
       ),
     ],
@@ -792,7 +792,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'European Commission — Construction and demolition waste',
+        'European Commission: Construction and demolition waste',
         'https://environment.ec.europa.eu/topics/waste-and-recycling/construction-and-demolition-waste_en',
       ),
     ],
@@ -802,7 +802,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'FHWA — TechBrief: Geopolymer Concrete',
+        'FHWA: TechBrief: Geopolymer Concrete',
         'https://www.fhwa.dot.gov/pavement/concrete/pubs/hif10014/hif10014.pdf',
       ),
     ],
@@ -810,23 +810,23 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'recycled-aluminium',
     tag: 'materials',
-    sources: [cite('International Aluminium Institute — aluminium facts', 'https://international-aluminium.org/landing/aluminium-facts/')],
+    sources: [cite('International Aluminium Institute: aluminium facts', 'https://international-aluminium.org/landing/aluminium-facts/')],
   },
   {
     slug: 'hempcrete-bio-insulation',
     tag: 'materials',
-    sources: [cite('ISO 24260:2022 — hemp fibre mat and board', 'https://www.iso.org/standard/78231.html')],
+    sources: [cite('ISO 24260:2022: hemp fibre mat and board', 'https://www.iso.org/standard/78231.html')],
   },
   {
     slug: 'cement-ccus',
     tag: 'materials',
     sources: [
       cite(
-        'Global CCS Institute — Brevik CCS',
+        'Global CCS Institute: Brevik CCS',
         'https://www.globalccsinstitute.com/brevikccsfacility/',
       ),
       cite(
-        'IEA — CCUS',
+        'IEA: CCUS',
         'https://www.iea.org/energy-system/renewables-and-low-emissions/carbon-capture-utilisation-and-storage',
       ),
     ],
@@ -835,9 +835,9 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'reclaimed-asphalt-pavement',
     tag: 'materials',
     sources: [
-      cite('FHWA — Pavement Recycling', 'https://www.fhwa.dot.gov/pavement/recycling/'),
+      cite('FHWA: Pavement Recycling', 'https://www.fhwa.dot.gov/pavement/recycling/'),
       cite(
-        'FHWA — Resource Responsible Use of RAP (HIF-22-003)',
+        'FHWA: Resource Responsible Use of RAP (HIF-22-003)',
         'https://www.fhwa.dot.gov/pavement/asphalt/pubs/hif22003.pdf',
       ),
     ],
@@ -847,11 +847,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'U.S. EPA — Glass: Material-Specific Data',
+        'U.S. EPA: Glass: Material-Specific Data',
         'https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/glass-material-specific-data',
       ),
       cite(
-        'Close the Glass Loop — Performance of Packaging Glass Recycling in Europe (2024 report)',
+        'Close the Glass Loop: Performance of Packaging Glass Recycling in Europe (2024 report)',
         'https://closetheglassloop.eu/performance-of-packaging-glass-recycling-in-europe-2024-report/',
       ),
     ],
@@ -860,9 +860,9 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'mineral-wool-insulation',
     tag: 'materials',
     sources: [
-      cite('EURIMA — Benefits of mineral wool', 'https://www.eurima.org/benefits-of-mineral-wool'),
+      cite('EURIMA: Benefits of mineral wool', 'https://www.eurima.org/benefits-of-mineral-wool'),
       cite(
-        'IEA — Building envelopes',
+        'IEA: Building envelopes',
         'https://www.iea.org/energy-system/buildings/building-envelopes',
       ),
     ],
@@ -872,11 +872,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'materials',
     sources: [
       cite(
-        'World Resources Institute — Recycled copper and the energy transition',
+        'World Resources Institute: Recycled copper and the energy transition',
         'https://www.wri.org/insights/pivotal-role-recycled-copper-energy-transition',
       ),
       cite(
-        'USGS — Recycling statistics and information',
+        'USGS: Recycling statistics and information',
         'https://www.usgs.gov/centers/national-minerals-information-center/recycling-statistics-and-information',
       ),
     ],
@@ -936,7 +936,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'NOAA Fisheries — Indian River Lagoon seagrass and wetlands',
+        'NOAA Fisheries: Indian River Lagoon seagrass and wetlands',
         'https://www.fisheries.noaa.gov/feature-story/restoring-indian-river-lagoons-seagrass-meadows-and-wetlands',
       ),
     ],
@@ -944,7 +944,7 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'coral-restoration',
     tag: 'oceans',
-    sources: [cite('NOAA Fisheries — restoring coral reefs', 'https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs')],
+    sources: [cite('NOAA Fisheries: restoring coral reefs', 'https://www.fisheries.noaa.gov/national/habitat-conservation/restoring-coral-reefs')],
   },
   {
     slug: 'ghost-gear',
@@ -956,7 +956,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'UNEP — Into the Blue: kelp forests',
+        'UNEP: Into the Blue: kelp forests',
         'https://www.unep.org/resources/report/blue-securing-sustainable-future-kelp-forests',
       ),
     ],
@@ -966,7 +966,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'U.S. Fish and Wildlife Service — salt marsh keystone',
+        'U.S. Fish and Wildlife Service: salt marsh keystone',
         'https://www.fws.gov/story/2024-02/salt-marsh-keystone-coastal-conservation',
       ),
     ],
@@ -976,11 +976,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'Protected Planet — Marine protected areas',
+        'Protected Planet: Marine protected areas',
         'https://www.protectedplanet.net/en/thematic-areas/marine-protected-areas',
       ),
       cite(
-        'IUCN — Marine protected areas and climate change',
+        'IUCN: Marine protected areas and climate change',
         'https://www.iucn.org/resources/issues-brief/marine-protected-areas-and-climate-change',
       ),
       cite('Marine Protection Atlas', 'https://mpatlas.org/'),
@@ -991,11 +991,11 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'IMO — Ballast Water Management',
+        'IMO: Ballast Water Management',
         'https://www.imo.org/en/OurWork/Environment/Pages/BallastWaterManagement.aspx',
       ),
       cite(
-        'IMO — BWM Hot Topics',
+        'IMO: BWM Hot Topics',
         'https://www.imo.org/en/MediaCentre/HotTopics/Pages/BWM-Default.aspx',
       ),
     ],
@@ -1005,12 +1005,12 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'EPA — Shore Power Technology Assessment at U.S. Ports',
+        'EPA: Shore Power Technology Assessment at U.S. Ports',
         'https://www.epa.gov/ports-initiative/shore-power-technology-assessment-us-ports',
       ),
-      cite('EPA — Ports Initiative', 'https://www.epa.gov/ports-initiative'),
+      cite('EPA: Ports Initiative', 'https://www.epa.gov/ports-initiative'),
       cite(
-        'IEA — International shipping',
+        'IEA: International shipping',
         'https://www.iea.org/energy-system/transport/international-shipping',
       ),
     ],
@@ -1020,15 +1020,15 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'oceans',
     sources: [
       cite(
-        'NOAA Office of National Marine Sanctuaries — Ship strikes',
+        'NOAA Office of National Marine Sanctuaries: Ship strikes',
         'https://sanctuaries.noaa.gov/protect/shipstrike/',
       ),
       cite(
-        'NOAA Fisheries — Reducing vessel strikes to North Atlantic right whales',
+        'NOAA Fisheries: Reducing vessel strikes to North Atlantic right whales',
         'https://www.fisheries.noaa.gov/national/endangered-species-conservation/reducing-ship-strikes-north-atlantic-right-whales',
       ),
       cite(
-        'NOAA Fisheries — Understanding vessel strikes',
+        'NOAA Fisheries: Understanding vessel strikes',
         'https://www.fisheries.noaa.gov/insight/understanding-vessel-strikes',
       ),
     ],
@@ -1037,13 +1037,13 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'integrated-multi-trophic-aquaculture',
     tag: 'oceans',
     sources: [
-      cite('FAO — Aquaculture', 'https://www.fao.org/fishery/en/aquaculture'),
+      cite('FAO: Aquaculture', 'https://www.fao.org/fishery/en/aquaculture'),
       cite(
-        'FAO Fisheries and Aquaculture Technical Paper 529 — Integrated mariculture (PDF)',
+        'FAO Fisheries and Aquaculture Technical Paper 529: Integrated mariculture (PDF)',
         'https://www.fao.org/3/i4626e/i4626e.pdf',
       ),
       cite(
-        'FAO — documents card cb7670en',
+        'FAO: documents card cb7670en',
         'https://www.fao.org/documents/card/en/c/cb7670en',
       ),
     ],
@@ -1051,19 +1051,19 @@ export const solutionMeta: SolutionMeta[] = [
   {
     slug: 'utility-scale-solar',
     tag: 'energy',
-    sources: [cite('IEA — solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
+    sources: [cite('IEA: solar PV', 'https://www.iea.org/energy-system/renewables/solar-pv')],
   },
   {
     slug: 'offshore-wind',
     tag: 'energy',
-    sources: [cite('IEA — Wind', 'https://www.iea.org/energy-system/renewables/wind')],
+    sources: [cite('IEA: Wind', 'https://www.iea.org/energy-system/renewables/wind')],
   },
   {
     slug: 'grid-scale-batteries',
     tag: 'energy',
     sources: [
       cite(
-        'IEA — Batteries and Secure Energy Transitions',
+        'IEA: Batteries and Secure Energy Transitions',
         'https://www.iea.org/reports/batteries-and-secure-energy-transitions',
       ),
     ],
@@ -1073,7 +1073,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'energy',
     sources: [
       cite(
-        'IEA — The Future of Geothermal Energy',
+        'IEA: The Future of Geothermal Energy',
         'https://www.iea.org/reports/the-future-of-geothermal-energy',
       ),
     ],
@@ -1083,7 +1083,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'energy',
     sources: [
       cite(
-        'IEA — Hydropower Special Market Report (executive summary)',
+        'IEA: Hydropower Special Market Report (executive summary)',
         'https://www.iea.org/reports/hydropower-special-market-report/executive-summary',
       ),
     ],
@@ -1093,7 +1093,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'energy',
     sources: [
       cite(
-        'IEA — Hydropower',
+        'IEA: Hydropower',
         'https://www.iea.org/energy-system/renewables-and-low-emissions-fuels/hydroelectricity',
       ),
     ],
@@ -1102,9 +1102,9 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'nuclear-fission',
     tag: 'energy',
     sources: [
-      cite('IEA — Nuclear', 'https://www.iea.org/energy-system/renewables-and-low-emissions/nuclear'),
+      cite('IEA: Nuclear', 'https://www.iea.org/energy-system/renewables-and-low-emissions/nuclear'),
       cite(
-        'World Nuclear Association — Nuclear Power in the World Today',
+        'World Nuclear Association: Nuclear Power in the World Today',
         'https://world-nuclear.org/information-library/current-and-future-generation/nuclear-power-in-the-world-today',
       ),
     ],
@@ -1114,7 +1114,7 @@ export const solutionMeta: SolutionMeta[] = [
     tag: 'energy',
     sources: [
       cite(
-        'U.S. DOE — Concentrating Solar-Thermal Power',
+        'U.S. DOE: Concentrating Solar-Thermal Power',
         'https://www.energy.gov/cmei/systems/concentrating-solar-thermal-power',
       ),
     ],
@@ -1123,9 +1123,9 @@ export const solutionMeta: SolutionMeta[] = [
     slug: 'farm-biogas-power',
     tag: 'energy',
     sources: [
-      cite('U.S. EPA — AgSTAR', 'https://www.epa.gov/agstar'),
+      cite('U.S. EPA: AgSTAR', 'https://www.epa.gov/agstar'),
       cite(
-        'IEA — Biogases (Renewables 2025)',
+        'IEA: Biogases (Renewables 2025)',
         'https://www.iea.org/reports/renewables-2025/biogases',
       ),
     ],
