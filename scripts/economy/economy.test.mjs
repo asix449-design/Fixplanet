@@ -665,6 +665,10 @@ test('windows: monthly periods, the month change, and a break at a null', () => 
   assert.equal(direction(-1), 'down');
   assert.equal(formatChange(1.2, 3.45, 1, 'en'), '+1.2 (+3.5%)');
   assert.equal(formatChange(-1.2, -3.45, 1, 'ru'), '-1,2 (-3,5%)');
+  assert.equal(formatChange(1.2, 3.45, 1, 'en', true), '+1.2 (+3.5%)');
+  assert.equal(formatChange(1.2, 3.45, 1, 'en', false), '+1.2');
+  assert.equal(formatChange(-1.2, -3.45, 1, 'lv', false), '-1,2');
+  assert.equal(formatChange(0, 0, 2, 'pl', false), '0,00');
 
   const coal = [null, null, 4, 5, 1, 9];
   const coalAll = seriesWindow(['a', 'b', 'c', 'd', 'e', 'f'], coal, 'all');

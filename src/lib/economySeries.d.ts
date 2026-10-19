@@ -11,7 +11,7 @@ export function formatExact(value: number, decimals: number, locale: string): st
 export function formatSigned(value: number, decimals: number, locale: string): string;
 export function changeOf(points: readonly number[]): { abs: number; pct: number };
 export function direction(abs: number): 'up' | 'down' | 'flat';
-export function formatChange(abs: number, pct: number, decimals: number, locale: string): string;
+export function formatChange(abs: number, pct: number, decimals: number, locale: string, percent?: boolean): string;
 export function sparkPath(
   values: readonly (number | null)[],
   breaks?: readonly boolean[] | null,

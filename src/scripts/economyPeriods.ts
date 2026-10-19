@@ -66,7 +66,7 @@ function applyTile(article: Element, period: string) {
   const changeEl = article.querySelector('.economy-tile-change');
   if (changeEl) {
     changeEl.textContent = data.changeTemplate
-      .replace('{change}', formatChange(change.abs, change.pct, slot.decimals, data.locale))
+      .replace('{change}', formatChange(change.abs, change.pct, slot.decimals, data.locale, period !== 'all'))
       .replace('{date}', slot.since);
     changeEl.setAttribute('data-dir', direction(change.abs));
   }

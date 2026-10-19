@@ -150,7 +150,7 @@ export const lv = {
   },
   figures: {
     o_oil: {
-      title: "Brent nafta",
+      title: "Brent jēlnafta",
       shows: "Jaunākā Brent jēlnaftas mēneša cena Amerikas Savienoto Valstu dolāros par barelu.",
       planet: "Lielākā daļa transporta joprojām izmanto naftu, tāpēc tās cena ietekmē to, cik ātri cilvēki pāriet uz tīrāku transportu.",
       caveat: "Tā ir mēneša vidējā cena. Cena degvielas uzpildes stacijā ietver arī pārstrādi, nodokļus un piegādi. Pasaules Banka šīs cenas ņem no ārējiem piegādātājiem.",
@@ -187,13 +187,13 @@ export const lv = {
     },
     e_oil5y: {
       title: "Naftas cenas pēdējos piecos gados",
-      shows: "Brent naftas un Amerikas etalonnaftas dienas cenas Amerikas Savienoto Valstu dolāros par barelu pēdējos piecos gados.",
+      shows: "Brent jēlnaftas un Amerikas etalonnaftas dienas cenas Amerikas Savienoto Valstu dolāros par barelu pēdējos piecos gados.",
       planet: "Nafta joprojām dzen lielāko daļu automašīnu, kuģu un lidmašīnu. Piecu gadu līnija rāda, cik strauji var mainīties cena, un katra svārstība maina to, cik izdevīgi ir taupīt degvielu vai pāriet uz elektrotransportu.",
       caveat: "Tās ir jēlnaftas tirgus cenas, un cena degvielas uzpildes stacijā ietver arī pārstrādi, nodokļus un piegādi.",
     },
     e_brent_long: {
       title: "Naftas cenas kopš 1960. gada",
-      shows: "Brent naftas mēneša cena Amerikas Savienoto Valstu dolāros par barelu kopš 1960. gada.",
+      shows: "Brent jēlnaftas mēneša cena Amerikas Savienoto Valstu dolāros par barelu kopš 1960. gada.",
       planet: "Garā laikrinda rāda iepriekšējo desmitgažu cenu satricinājumus un to, kā valstis uz tiem atbildēja ar degvielas taupīšanu un jauniem enerģijas avotiem.",
       caveat: "Cenas dotas attiecīgā gada dolāros bez korekcijas pēc inflācijas, tāpēc vecās vērtības izskatās mazākas nekā mūsdienu naudā. Pasaules Banka šīs cenas ņem no ārējiem piegādātājiem.",
     },

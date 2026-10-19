@@ -102,7 +102,7 @@ function dated(template: string, date: string): string {
   return template.replace('{date}', date);
 }
 
-function present(window: { values: (number | null)[]; breaks: boolean[]; highlight: boolean; compare: number[]; since: string; latest: number; latestAt: string }, decimals: number, scale: 'month' | 'day') {
+function present(window: { values: (number | null)[]; breaks: boolean[]; highlight: boolean; compare: number[]; since: string; latest: number; latestAt: string }, decimals: number, scale: 'month' | 'day', period: (typeof PERIODS)[number]) {
   const change = changeOf(window.compare);
   const since = scale === 'day' ? formatDay(window.since, locale) : formatMonth(window.since, locale);
   const latestAt = scale === 'day' ? formatDay(window.latestAt, locale) : formatMonth(window.latestAt, locale);
@@ -116,7 +116,7 @@ function present(window: { values: (number | null)[]; breaks: boolean[]; highlig
     value: formatExact(window.latest, decimals, locale),
     raw: window.latest,
     decimals,
-    changeText: page.labels.changeSince.replace('{change}', formatChange(change.abs, change.pct, decimals, locale)).replace('{date}', since),
+    changeText: page.labels.changeSince.replace('{change}', formatChange(change.abs, change.pct, decimals, locale, period !== 'all')).replace('{date}', since),
     dir: direction(change.abs),
   };
 }
@@ -124,7 +124,7 @@ function present(window: { values: (number | null)[]; breaks: boolean[]; highlig
 function pinkTile(id: string, tileTitle: string, key: (typeof ENERGY_SERIES)[number]) {
   const series = pinkWindows(key);
   const unitKey = SERIES_UNIT[key];
-  const slots = Object.fromEntries(PERIODS.map((period) => [period, present(series.windows[period], series.decimals, 'month')]));
+  const slots = Object.fromEntries(PERIODS.map((period) => [period, present(series.windows[period], series.decimals, 'month', period)]));
   const current = slots[defaultPeriod];
   const drawn = series.windows[defaultPeriod];
   return {
@@ -150,7 +150,7 @@ function euroTile(code: 'USD' | 'GBP' | 'PLN') {
   const slots = Object.fromEntries(
     PERIODS.map((period) => {
       const window = rate.windows[period];
-      return [period, present(window, window.decimals, window.scale === 'day' ? 'day' : 'month')];
+      return [period, present(window, window.decimals, window.scale === 'day' ? 'day' : 'month', period)];
     }),
   );
   const current = slots[defaultPeriod];

@@ -58,8 +58,9 @@ export function direction(abs) {
   return 'flat';
 }
 
-export function formatChange(abs, pct, decimals, locale) {
+export function formatChange(abs, pct, decimals, locale, percent = true) {
   const body = formatSigned(abs, decimals, locale);
+  if (!percent) return body;
   return `${body} (${formatSigned(pct, 1, locale)}%)`;
 }
 
