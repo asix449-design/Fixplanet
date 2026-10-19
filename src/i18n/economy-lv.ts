@@ -140,7 +140,7 @@ export const lv = {
       tile: "Katrs avots, tā licence un tas, ko mēs mainījām.",
       title: "Avoti un metodoloģija",
       lede: "No kurienes nāk katrs skaitlis, ar kādiem nosacījumiem to drīkst izmantot un ko mēs mainījām.",
-      updates: "Kriptovalūtu cenas atjaunojam trīs reizes diennaktī. Pārējos avotus atjaunojam, kad to izdevējs publicē jaunus datus, diennakts laikā pēc publicēšanas.",
+      updates: "Avotus atjaunojam, kad to izdevējs publicē jaunus datus, diennakts laikā pēc publicēšanas.",
       method1: "Mēs ņemam datus tieši no katra avota un nepievienojam savus aprēķinus.",
       method2: "Katrs avots publicē datus pēc sava grafika, un mēs jaunus datus pārbaudām reizi dienā.",
       method3: "Izmaiņas uz kartītēm mēs aprēķinām paši no publicētajām vērtībām.",
