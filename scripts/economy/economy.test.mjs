@@ -15,6 +15,17 @@ import { DataError, HTTP_DEFAULTS, SCHEMAS, jsonFile, toJson, validateSchema } f
 import * as ecb from './ecb.mjs';
 import * as pink from './pinksheet.mjs';
 import { SOURCES, checkDirectory, payloadKey, runAll } from './pipeline.mjs';
+import {
+  changeOf,
+  chartPath,
+  chartWindows,
+  direction,
+  downsampleIndices,
+  formatChange,
+  seriesWindow,
+  sparkPath,
+  windowsFor,
+} from '../../src/lib/economySeries.mjs';
 
 HTTP_DEFAULTS.retryDelayMs = 1;
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -625,6 +636,91 @@ test('run: a damaged archive is a failed source, not a crash, and the other sour
     assert.deepEqual(out.results.map((item) => item.result), ['failed', 'unchanged']);
     assert.equal(JSON.parse(await read(dir, 'manifest.json')).datasets.wb_pink.status, 'failed');
   });
+});
+
+function ramp(n, start = 0) {
+  return Array.from({ length: n }, (_, i) => start + i);
+}
+
+test('windows: monthly periods, the month change, and a break at a null', () => {
+  const times = Array.from({ length: 80 }, (_, i) => `2000-${String((i % 12) + 1).padStart(2, '0')}`);
+  const values = ramp(80, 10);
+  values[3] = null;
+  const month = seriesWindow(times, values, 'month');
+  assert.equal(month.values.length, 13);
+  assert.equal(month.highlight, true);
+  assert.deepEqual(month.compare, [values[78], values[79]]);
+  const year = seriesWindow(times, values, 'year');
+  assert.equal(year.values.length, 13);
+  assert.deepEqual(year.compare, [values[67], values[79]]);
+  const five = seriesWindow(times, values, '5y');
+  assert.equal(five.values.length, 61);
+  const all = seriesWindow(times, values, 'all');
+  assert.equal(all.values[0], values[0]);
+  assert.equal(all.times.at(-1), times[79]);
+  const change = changeOf(month.compare);
+  assert.equal(change.abs, 1);
+  assert.equal(direction(change.abs), 'up');
+  assert.equal(direction(0), 'flat');
+  assert.equal(direction(-1), 'down');
+  assert.equal(formatChange(1.2, 3.45, 1, 'en'), '+1.2 (+3.5%)');
+  assert.equal(formatChange(-1.2, -3.45, 1, 'ru'), '-1,2 (-3,5%)');
+
+  const coal = [null, null, 4, 5, 1, 9];
+  const coalAll = seriesWindow(['a', 'b', 'c', 'd', 'e', 'f'], coal, 'all');
+  assert.deepEqual(coalAll.values, [4, 5, 1, 9]);
+  const gappy = seriesWindow(['a', 'b', 'c', 'd'], [1, null, null, 4], 'all');
+  const path = sparkPath(gappy.values, gappy.breaks);
+  assert.equal(path.indexOf('M') !== path.lastIndexOf('M'), true);
+});
+
+test('windows: daily month is 23 working days and year is 260', () => {
+  const values = ramp(300, 1);
+  const times = values.map((_, i) => `d${i}`);
+  const month = seriesWindow(times, values, 'month', 'daily');
+  assert.equal(month.values.length, 23);
+  assert.equal(month.highlight, false);
+  assert.deepEqual(month.compare, [values[277], values[299]]);
+  const year = seriesWindow(times, values, 'year', 'daily');
+  assert.equal(year.values.length, 260);
+});
+
+test('downsample: at most 120 points, and the first, last, min and max stay', () => {
+  const values = ramp(400, 0);
+  values[50] = -5;
+  values[80] = 999;
+  const idx = downsampleIndices(values.length, [values], 120);
+  assert.ok(idx.length <= 120);
+  assert.equal(idx[0], 0);
+  assert.equal(idx.at(-1), 399);
+  assert.ok(idx.includes(50));
+  assert.ok(idx.includes(80));
+  const chart = chartWindows(values.map((_, i) => `m${i}`), [values, values.map((v) => (v == null ? null : 1000 - v))]);
+  assert.ok(chart.all.times.length <= 120);
+  assert.equal(chart.all.values[0].length, chart.all.values[1].length);
+  assert.ok(chart.all.values[1].includes(1005));
+  const line = chartPath([1, null, 3], [false, true, true], 100, 40, 3);
+  assert.match(line, /^M/);
+  assert.equal((line.match(/M/g) || []).length, 2);
+});
+
+test('windows: the stored Pink Sheet uses the same cuts', async () => {
+  const pinkFile = JSON.parse(await readFile(path.join(here, '../../public/data/economy/pink-sheet.json'), 'utf8'));
+  const brent = pinkFile.series.find((item) => item.id === 'brent');
+  const coal = pinkFile.series.find((item) => item.id === 'coal_australia');
+  const times = Array.from({ length: brent.values.length }, (_, i) => {
+    const month = ((Number(pinkFile.start.slice(5, 7)) - 1 + i) % 12) + 1;
+    const year = Number(pinkFile.start.slice(0, 4)) + Math.floor((Number(pinkFile.start.slice(5, 7)) - 1 + i) / 12);
+    return `${year}-${String(month).padStart(2, '0')}`;
+  });
+  const brentAll = seriesWindow(times, brent.values, 'all');
+  assert.equal(brentAll.times[0], pinkFile.start);
+  const coalAll = seriesWindow(times, coal.values, 'all');
+  assert.equal(coalAll.times[0], '1970-01');
+  const boards = windowsFor(times, brent.values);
+  assert.equal(boards.month.values.length, 13);
+  assert.equal(boards['5y'].values.length, 61);
+  assert.equal(changeOf(boards.month.compare).abs, brent.values.at(-1) - brent.values.at(-2));
 });
 
 test('run: a manifest left behind by a killed job is repaired by the next run', async () => {
