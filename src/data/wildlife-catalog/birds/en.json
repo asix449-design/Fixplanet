@@ -1,0 +1,188 @@
+{
+  "locale": "en",
+  "shelf": "birds",
+  "cards": {
+    "california-condor": {
+      "commonName": "California condor",
+      "hook": "North America’s largest land bird. Only 23 survived in 1982; captive breeding and release have helped the species recover, and lead poisoning still kills birds in the wild.",
+      "imageAlt": "A California condor in flight at Bitter Creek National Wildlife Refuge, California, against a clear blue sky.",
+      "what": "The California condor (Gymnogyps californianus) is the largest land bird in North America. Its wingspan is about 2.9 m (9.5 feet), and an adult stands 0.9 to 1.1 m (3 to 3.5 feet) tall and weighs 8 to 11 kg (17 to 25 pounds). Condors eat carrion, such as the carcasses of deer, cattle, whales and seals, and find it by sight or by following other scavengers.",
+      "range": "Free-flying condors live in four areas: Arizona and Utah, California, the Pacific Northwest and Baja California in Mexico. Of the 392 wild birds at the end of 2025, 98 lived in Arizona and Utah, 216 in California, 25 in the Pacific Northwest and 53 in Baja California. The Pacific Northwest group is classed as experimental. Condors roost on large trees, snags, rocky outcrops and cliffs, and nest in caves and on ledges of steep rocky terrain, or in cavities and broken tops of old conifers. They forage over open grasslands, oak savanna foothills and beaches beside coastal mountains, and can fly up to 400 km (250 miles) in a day.",
+      "story": "In 1982 only 23 condors survived anywhere, and by 1987 all wild condors had been taken into a captive breeding programme. The federal government listed the species as endangered in 1967. Since 1992 the U.S. Fish and Wildlife Service has released captive-bred condors into the wild. In 2004 the first chick successfully hatched in the wild, and in 2008 more condors were flying free than living in captivity for the first time. Lead from spent ammunition remains the main cause of death in the wild: from 1992 through 2025, 161 free-flying condors died of confirmed lead poisoning.",
+      "when": "As of 31 December 2025 the world population was 607 condors (570 a year earlier): 392 in the wild and 215 in captivity. The 1996 recovery plan sets the goal of two wild, geographically separate, self-sustaining populations, each with 150 birds and at least 15 breeding pairs, and a third population kept in captivity.",
+      "humanRole": "The California Condor Recovery Program is led by the same service, with partners that include state agencies, the government of Mexico, the Yurok Tribe, zoos and non-profit groups. They breed the birds, release them and monitor them in the field. Hunters and ranchers are asked to use non-lead ammunition, because lead fragments left in carcasses poison the condors that eat them.",
+      "sources": [
+        {
+          "label": "U.S. Fish and Wildlife Service: California Condor (Gymnogyps californianus)",
+          "url": "https://www.fws.gov/species/california-condor-gymnogyps-californianus"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service: California Condor Recovery Program",
+          "url": "https://www.fws.gov/program/california-condor-recovery"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service: California Condor Recovery Program 2025 Annual Population Status (PDF)",
+          "url": "https://www.fws.gov/sites/default/files/documents/2026-02/2025-california-condor-population-status_508-compliant.pdf"
+        }
+      ],
+      "gridSource": {
+        "label": "U.S. Fish and Wildlife Service, California condor",
+        "url": "https://www.fws.gov/species/california-condor-gymnogyps-californianus"
+      },
+      "badgeText": "Recovery · western North America",
+      "statusPill": "Recovery",
+      "image": {
+        "caption": "A California condor in flight at Bitter Creek National Wildlife Refuge, California, against a clear blue sky.",
+        "credit": "Photo: U.S. Fish and Wildlife Service, Pacific Southwest Region, via Wikimedia Commons, public domain.",
+        "filePageLabel": "File page"
+      }
+    },
+    "whooping-crane": {
+      "commonName": "Whooping crane",
+      "hook": "North America’s tallest bird. Only 16 were left in 1941; the one wild flock that sustains itself is now estimated at 557 and still migrates between northern Canada and the Texas coast.",
+      "imageAlt": "A whooping crane in flight over Texas, with white body, black wingtips and a red crown against a pale sky.",
+      "what": "The whooping crane (Grus americana) is the tallest bird in North America. Its plumage is almost entirely snowy white, with black wingtips, a red crown and sparse black feathers on the cheeks. An adult stands about 1.5 m (5 feet) tall, has a wingspan of more than 2.1 m (7 feet) and weighs 6.0 to 7.8 kg (13.2 to 17.2 pounds). The name probably comes from the loud, single-note call the birds repeat when alarmed.",
+      "range": "The only remaining wild, self-sustaining population, the Aransas-Wood Buffalo population, breeds in and around Wood Buffalo National Park in the Canadian provinces of Alberta and the Northwest Territories. Each year it migrates more than 4,000 km (2,500 miles) through the Canadian prairies and the U.S. Great Plains to the mid-coast of Texas, where it winters in and near Aransas National Wildlife Refuge. Reintroduced flocks live in Wisconsin and Louisiana, and a discontinued reintroduction programme in Florida still holds birds.",
+      "story": "Shooting and the conversion of prairie to farmland cut a historical population of more than 10,000 birds to only 16 in 1941: 14 adults and 2 juveniles. Strict legal protection, habitat preservation, captive breeding and cooperation between Canada and the United States rebuilt the Aransas-Wood Buffalo population, which has grown by about 4 percent a year over the long term. In the winter of 2024 to 2025 a survey by the U.S. Fish and Wildlife Service estimated 557 whooping cranes, a record and the first estimate above 550.",
+      "when": "The whooping crane is still listed as endangered in both countries. As of January 2025 the reintroduced flocks held 149 cranes, down from 162 a year earlier. Wild-raised young join those flocks at a low rate, so their numbers depend on new releases, and adult deaths are higher there than in the Aransas-Wood Buffalo population. Wetland drainage, drought linked to climate change, and wind farms and power lines along the migration route remain threats.",
+      "humanRole": "Agencies in both countries and their partners count the birds, monitor nests, protect habitat and raise cranes in captivity for release into the reintroduced flocks. Counts on the Texas coast and in the breeding grounds in Canada show how the wild population changes from year to year.",
+      "sources": [
+        {
+          "label": "U.S. Fish and Wildlife Service: Whooping Crane (Grus americana)",
+          "url": "https://www.fws.gov/species/whooping-crane-grus-americana"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service: 2025 Wintering Whooping Crane Count (press release)",
+          "url": "https://www.fws.gov/press-release/2025-06/2025-wintering-whooping-crane-count"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service and Environment and Climate Change Canada: Whooping Crane Status, 2024 Breeding Season to 2025 Spring Migration (PDF, February 2026)",
+          "url": "https://www.fws.gov/sites/default/files/documents/2026-03/2024-2025-whcr-recovery-activities-report-w-appendices.pdf"
+        }
+      ],
+      "gridSource": {
+        "label": "U.S. Fish and Wildlife Service, 2025 wintering whooping crane count",
+        "url": "https://www.fws.gov/press-release/2025-06/2025-wintering-whooping-crane-count"
+      },
+      "badgeText": "Recovery · Canada to Texas",
+      "statusPill": "Recovery",
+      "image": {
+        "caption": "A whooping crane in flight over Texas, with white body, black wingtips and a red crown against a pale sky.",
+        "credit": "Photo: John Noll, U.S. Department of Agriculture, via Wikimedia Commons, public domain.",
+        "filePageLabel": "File page"
+      }
+    },
+    "atlantic-puffin": {
+      "commonName": "Atlantic puffin",
+      "hook": "A small seabird of the cold North Atlantic. Millions remain, but in Europe the population is estimated to have fallen by 68 percent in 50 years as seas warm and fish stocks change.",
+      "imageAlt": "An Atlantic puffin in profile, showing the orange, yellow and blue-grey bill and the white face.",
+      "what": "The Atlantic puffin (Fratercula arctica) is a seabird of the colder waters of the North Atlantic, with a wingspan of 47 to 63 cm. Its Latin name means \"little brother of the north\". It nests on grassy slopes of steep sea cliffs, in burrows dug in the ground or between rocks, and lays one egg. While feeding, a puffin can stay under water for up to one minute and dive as deep as 40 m. It can hold several small fish in its beak in one dive, and the average catch is about 10 fish per trip.",
+      "range": "Puffins breed mainly in Europe: on the coast of Brittany in France, in Ireland, the United Kingdom, Iceland, Greenland, Norway, the Faroe Islands and northern Russia. Iceland holds about 60 percent of the population. Away from the colonies they spend the months from August to early spring on the open ocean far from land, and some go as far south as the Mediterranean Sea. They hunt 100 km or more from the nesting site, and usually closer while feeding chicks.",
+      "story": "BirdLife International, a global partnership of bird conservation organisations, gives a global population of 7.4 to 8.24 million mature individuals and describes it as decreasing. In Europe the population is estimated to have fallen by 68 percent over the past 50 years. Its main threats are climate change, overfishing, marine pollution and oil spills, invasive predators, offshore energy construction, accidental catch in fishing gear and hunting for food. The guidance for the species describes climate change as the primary pressure, working on a population already stressed by overexploited prey stocks such as sand eels, sprats, herring and capelin.",
+      "when": "The International Union for Conservation of Nature lists the Atlantic puffin as Vulnerable worldwide and as Endangered in Europe. The population is still decreasing.",
+      "humanRole": "The guidance, prepared for the Agreement on the Conservation of African-Eurasian Migratory Waterbirds, recommends managing fisheries so that enough prey is left for the birds, protecting prey habitat such as sandbanks and adding marine protected areas, including in international waters. It also recommends continuing to remove invasive predators from breeding colonies where feasible, and counting colonies and beached birds to follow how many adults survive.",
+      "sources": [
+        {
+          "label": "BirdLife International DataZone: Atlantic Puffin Fratercula arctica factsheet",
+          "url": "https://datazone.birdlife.org/species/factsheet/atlantic-puffin-fratercula-arctica"
+        },
+        {
+          "label": "BirdLife International: Seabird of the month, Atlantic Puffin (6 April 2022)",
+          "url": "https://www.birdlife.org/news/2022/04/06/seabird-of-the-month-atlantic-puffin-fratercula-arctica/"
+        },
+        {
+          "label": "Agreement on the Conservation of African-Eurasian Migratory Waterbirds: Species Conservation Guidance for the Atlantic Puffin (PDF, May 2022)",
+          "url": "https://www.unep-aewa.org/sites/default/files/document/aewa_mop8_inf_16_guidance_atlantic_puffin.pdf"
+        }
+      ],
+      "gridSource": {
+        "label": "BirdLife International, Atlantic puffin",
+        "url": "https://www.birdlife.org/news/2022/04/06/seabird-of-the-month-atlantic-puffin-fratercula-arctica/"
+      },
+      "badgeText": "Seabird · North Atlantic",
+      "statusPill": "Vulnerable",
+      "image": {
+        "caption": "An Atlantic puffin in profile, showing the orange, yellow and blue-grey bill and the white face.",
+        "credit": "Photo: Andreas Trepte, via Wikimedia Commons, licence",
+        "licenseLabel": "Creative Commons Attribution-ShareAlike 2.5",
+        "filePageLabel": "File page"
+      }
+    },
+    "african-penguin": {
+      "commonName": "African penguin",
+      "hook": "A small penguin of the coasts of South Africa and Namibia. Fewer than 32,000 are left in the wild, and in November 2024 its status was raised to Critically Endangered.",
+      "imageAlt": "African penguins resting and walking on pale sand among granite boulders at Boulders Beach, Simon’s Town, South Africa.",
+      "what": "The African penguin (Spheniscus demersus) is a small, sociable penguin with tuxedo-like black and white plumage. It lives on the coasts of southern Africa and feeds mainly on sardines and anchovies.",
+      "range": "Once, millions of these birds lived along the coasts of South Africa and Namibia. Today the colonies are much smaller. Visitors see them in large groups at places such as Boulders Beach near Simon’s Town and Stony Point, but the main pressures on the birds are at sea, out of sight.",
+      "story": "About 97 percent of the population has been lost. Fewer than 32,000 birds remain in the wild, and the number of breeding pairs fell below 10,000 for the first time. The main cause is a shortage of food: commercial purse-seine fishing competes with the penguins for sardines and anchovies, and climate change is shifting where those fish are found. Young penguins search for food in increasingly unproductive areas, juvenile survival has plummeted, and adults have been reported abandoning their nests. Avian flu has also contributed, but the combined effects of fishing and climate change remain the most critical threats.",
+      "when": "In November 2024 BirdLife International, the global partnership of bird conservation organisations, reported that the International Union for Conservation of Nature had moved the African penguin from Endangered to Critically Endangered. The partnership warns that without urgent action the species could vanish from the wild in fewer than 4,000 days.",
+      "humanRole": "BirdLife South Africa, the South African member of that partnership, and the Southern African Foundation for the Conservation of Coastal Birds have filed a court case against the South African minister responsible for fisheries and the environment. They want the current closures of waters around penguin islands to purse-seine fishing, which they call biologically meaningless, replaced by zones that cover the penguins’ main feeding grounds around six major colonies while keeping the effect on the fishing industry small.",
+      "sources": [
+        {
+          "label": "BirdLife International DataZone: African Penguin Spheniscus demersus factsheet",
+          "url": "https://datazone.birdlife.org/species/factsheet/african-penguin-spheniscus-demersus"
+        },
+        {
+          "label": "BirdLife International: African Penguin on the Brink of Extinction (20 November 2024)",
+          "url": "https://www.birdlife.org/news/2024/11/20/african-penguin-on-the-brink-of-extinction/"
+        },
+        {
+          "label": "BirdLife South Africa: African Penguin newly classified as Critically Endangered as breeding pairs fall below 10,000",
+          "url": "https://www.birdlife.org.za/red-list/african-penguin/"
+        },
+        {
+          "label": "Southern African Foundation for the Conservation of Coastal Birds: About us",
+          "url": "https://sanccob.co.za/about-sanccob/"
+        }
+      ],
+      "gridSource": {
+        "label": "BirdLife International, African penguin on the brink of extinction",
+        "url": "https://www.birdlife.org/news/2024/11/20/african-penguin-on-the-brink-of-extinction/"
+      },
+      "badgeText": "Critically Endangered · southern Africa",
+      "statusPill": "Critically Endangered",
+      "image": {
+        "caption": "African penguins resting and walking on pale sand among granite boulders at Boulders Beach, Simon’s Town, South Africa.",
+        "credit": "Photo: Krigore, via Wikimedia Commons, licence",
+        "licenseLabel": "Creative Commons Attribution-ShareAlike 4.0",
+        "filePageLabel": "File page"
+      }
+    },
+    "wandering-albatross": {
+      "commonName": "Wandering albatross",
+      "hook": "A giant seabird that nests on a few Southern Ocean islands and breeds only every second year. Numbers have fallen where longline fishing is linked to lower adult survival.",
+      "imageAlt": "A wandering albatross in flight low over deep blue water east of the Tasman Peninsula, Tasmania, Australia.",
+      "what": "The wandering albatross (Diomedea exulans), sometimes called the snowy albatross, is a very large seabird of the Southern Ocean. It breeds every second year, and a nesting cycle just exceeds one year. Eggs are laid over about five weeks in December and January and hatch mostly in March, after 78 to 79 days of incubation. On South Georgia most chicks fledge in December, after 278 days in the nest.",
+      "range": "Wandering albatrosses breed on the French Crozet Islands and Kerguelen Islands, on South Africa’s Prince Edward Islands (including Marion Island), on Australia’s Macquarie Island and on South Georgia. Data submitted in 2007 gave about 8,050 breeding pairs a year. The three island groups of the Indian Ocean, Prince Edward, Crozet and Kerguelen, hold about 82 percent of the world population, and the Prince Edward Islands alone about 3,580 pairs, or 44 percent. Macquarie Island has only 5 to 10 pairs a year. All breeding sites are legally protected and access to them is restricted.",
+      "story": "The figure of about 8,050 pairs is 5 percent below the 8,500 pairs of 1998, which were thought to represent about 28,000 mature individuals and a total population of 55,000. All populations have decreased at some stage over the last 25 years, and the South Georgia population has declined continuously. Adult survival on South Georgia is the lowest of all breeding sites, 92.6 percent, down from 94 percent between 1972 and 1985. The assessment links this fall to the growth of longline fisheries aimed at species other than tuna in the mid to late 1990s. The populations of Crozet, Kerguelen and the Prince Edward Islands have increased recently.",
+      "when": "The International Union for Conservation of Nature has listed the wandering albatross as Vulnerable since 2000, and the species is on Annex 1 of the Agreement on the Conservation of Albatrosses and Petrels. That agreement’s species page still shows the status as Vulnerable. The population figures above are the most recent in the assessment, which rests on data submitted in 2007.",
+      "humanRole": "The assessment calls for confirming which areas of the ocean overlap with fisheries where effective measures against accidental catch and observer programmes are not yet in place. A three-year programme of satellite tracking of young and immature birds began in 2007 to show where they meet fishing fleets. Birds from the Prince Edward Islands and Crozet, for example, overlap with intense tuna longline fishing south of South Africa, where accidental catch rates are high.",
+      "sources": [
+        {
+          "label": "Agreement on the Conservation of Albatrosses and Petrels: Wandering Albatross Diomedea exulans species assessment (PDF)",
+          "url": "https://www.acap.aq/resources/acap-species/304-wandering-albatross/file"
+        },
+        {
+          "label": "Agreement on the Conservation of Albatrosses and Petrels: species assessments",
+          "url": "https://www.acap.aq/resources/acap-species"
+        },
+        {
+          "label": "BirdLife International DataZone: Snowy Albatross Diomedea exulans factsheet",
+          "url": "https://datazone.birdlife.org/species/factsheet/snowy-albatross-diomedea-exulans"
+        }
+      ],
+      "gridSource": {
+        "label": "Agreement on the Conservation of Albatrosses and Petrels, wandering albatross assessment",
+        "url": "https://www.acap.aq/resources/acap-species/304-wandering-albatross/file"
+      },
+      "badgeText": "Vulnerable · Southern Ocean",
+      "statusPill": "Vulnerable",
+      "image": {
+        "caption": "A wandering albatross in flight low over deep blue water east of the Tasman Peninsula, Tasmania, Australia.",
+        "credit": "Photo: JJ Harrison, via Wikimedia Commons, licence",
+        "licenseLabel": "Creative Commons Attribution-ShareAlike 3.0",
+        "filePageLabel": "File page"
+      }
+    }
+  }
+}

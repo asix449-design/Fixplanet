@@ -1,17 +1,17 @@
 ---
 import {
   isWildlifeHubKey,
-  speciesMeta,
   wildlifeHubKeys,
 } from '../../../data/wildlife';
 import { getWildlifeBySlug, otherLocales, resolveLocale } from '../../../i18n';
+import { wildlifeCardSlugs } from '../../../lib/wildlife-catalog/load';
 import WildlifeSpeciesView from '../../../views/WildlifeSpeciesView.astro';
 import WildlifeView from '../../../views/WildlifeView.astro';
 
 export function getStaticPaths() {
   return otherLocales.flatMap((locale) => [
     ...wildlifeHubKeys.map((slug) => ({ params: { locale, slug } })),
-    ...speciesMeta.map((item) => ({ params: { locale, slug: item.slug } })),
+    ...wildlifeCardSlugs().map((slug) => ({ params: { locale, slug } })),
   ]);
 }
 

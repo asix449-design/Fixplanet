@@ -326,6 +326,7 @@ const en = {
       'An atlas of the living planet, and of technologies and rules that can still repair it.',
     explore: 'Explore',
     comingSoon: 'Coming soon',
+    privacy: 'Privacy',
   },
   notFound: {
     metaTitle: 'Page not found — Fix Planet',
@@ -655,6 +656,7 @@ const ru: typeof en = {
       'Атлас живой планеты и технологий и правил, которые ещё могут её чинить.',
     explore: 'Разделы',
     comingSoon: 'Скоро',
+    privacy: 'Конфиденциальность',
   },
   notFound: {
     metaTitle: 'Страница не найдена — Fix Planet',
@@ -984,6 +986,7 @@ const pl: typeof en = {
       'Atlas żywej planety oraz technologii i reguł, które jeszcze mogą ją naprawić.',
     explore: 'Przeglądaj',
     comingSoon: 'Wkrótce',
+    privacy: 'Prywatność',
   },
   notFound: {
     metaTitle: 'Nie znaleziono strony — Fix Planet',
@@ -1313,6 +1316,7 @@ const lv: typeof en = {
       'Dzīvās planētas atlants un tehnoloģijas un noteikumi, kas to vēl var labot.',
     explore: 'Sadaļas',
     comingSoon: 'Drīzumā',
+    privacy: 'Privātums',
   },
   notFound: {
     metaTitle: 'Lapa nav atrasta — Fix Planet',

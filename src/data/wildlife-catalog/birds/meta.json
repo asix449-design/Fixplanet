@@ -1,0 +1,158 @@
+{
+  "shelf": "birds",
+  "cards": [
+    {
+      "slug": "california-condor",
+      "scientificName": "Gymnogyps californianus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "birds",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Accipitriformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "california-condor.jpg",
+        "kind": "photo",
+        "credit": "U.S. Fish and Wildlife Service, Pacific Southwest Region / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_in_flight_%2853189570917%29.jpg",
+        "width": 1280,
+        "height": 772,
+        "fit": "natural"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "whooping-crane",
+      "scientificName": "Grus americana",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "birds",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Gruiformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "whooping-crane.jpg",
+        "kind": "photo",
+        "credit": "John Noll, U.S. Department of Agriculture / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whooping_Crane_in_flight_in_Texas.jpg",
+        "width": 1280,
+        "height": 854,
+        "fit": "natural"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "atlantic-puffin",
+      "scientificName": "Fratercula arctica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "birds",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Charadriiformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "atlantic-puffin.jpg",
+        "kind": "photo",
+        "credit": "Andreas Trepte / Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlantic_Puffin_Fratercula_arctica.jpg",
+        "width": 1280,
+        "height": 914,
+        "fit": "natural"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "african-penguin",
+      "scientificName": "Spheniscus demersus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "birds",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Sphenisciformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "african-penguin.jpg",
+        "kind": "photo",
+        "credit": "Krigore / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_penguin_colony_at_Boulders_Beach.jpg",
+        "width": 1280,
+        "height": 958,
+        "fit": "natural"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "wandering-albatross",
+      "scientificName": "Diomedea exulans",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "birds",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Procellariiformes"
+      },
+      "flags": {},
+      "image": {
+        "file": "wandering-albatross.jpg",
+        "kind": "photo",
+        "credit": "JJ Harrison / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diomedea_exulans_in_flight_-_SE_Tasmania.jpg",
+        "width": 1280,
+        "height": 781,
+        "fit": "natural"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    }
+  ]
+}

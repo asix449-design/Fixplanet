@@ -1,0 +1,254 @@
+{
+  "locale": "en",
+  "shelf": "surviving",
+  "cards": {
+    "gray-wolf": {
+      "commonName": "Gray wolf",
+      "hook": "Still widespread in the far north, after vanishing from much of Europe and the United States.",
+      "imageAlt": "A gray wolf standing in snow, looking toward the camera",
+      "what": "The gray wolf is a large social canid and the wild ancestor of the domestic dog. Packs hunt ungulates and also take smaller prey. Globally the species is listed as Least Concern because large numbers remain in Canada, Russia, and Central Asia.",
+      "range": "Historically most of the Northern Hemisphere. Today the strongholds are boreal and steppe Asia, Canada, and Alaska, with recovering fragments in Europe and a few reintroduction areas in the contiguous United States and Mexico.",
+      "story": "In the last few centuries people shot, poisoned, and trapped wolves as livestock enemies. They disappeared from most of Western Europe and from almost all of the contiguous United States by the early 1900s. Legal protection and reintroductions (Yellowstone, the northern Rockies, parts of Europe) have brought some populations back. The Holocene picture — wolves across temperate forests and plains — is still only partly restored.",
+      "when": "Still here. Range and numbers contracted sharply under persecution, then rose again where hunting was limited.",
+      "humanRole": "Deliberate killing and habitat loss removed wolves from settled landscapes; later law and reintroduction put some of them back.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Canis lupus, Least Concern); recovery reviews for Europe and North America."
+    },
+    "brown-bear": {
+      "commonName": "Brown bear",
+      "hook": "A Holarctic survivor whose European range is now a scatter of mountain and forest remnants.",
+      "imageAlt": "A brown bear running across mossy ground",
+      "what": "The brown bear is the most widespread bear, from coastal salmon rivers to dry mountains. IUCN lists it as Least Concern. Size and diet vary by region; the Eurasian brown bear and the North American grizzly and Kodiak are the same species.",
+      "range": "Once across Europe, northern Asia, and western North America. Large populations remain in Russia, Scandinavia, the Carpathians, the Balkans, Alaska, and western Canada. Most of Western and Central Europe lost theirs.",
+      "story": "Hunting and the clearing of lowland forest pushed brown bears into mountains and remote taiga. A few Alpine and Pyrenean groups hang on or are being reinforced. The species is not globally rare, but the Holocene map — bears following Ice Age prey into newly opened Europe — is not the map of today.",
+      "when": "Still here. Locally extinct across much of temperate Europe; stable or increasing where people tolerate them.",
+      "humanRole": "Hunting and farmland removed bears from settled Europe; remaining populations persist on human sufferance.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Ursus arctos, Least Concern); European large-carnivore status reports."
+    },
+    "american-bison": {
+      "commonName": "American bison",
+      "hook": "From tens of millions on the Great Plains to a few hundred by the 1880s, then a managed return.",
+      "imageAlt": "An American bison standing in dry grass",
+      "what": "The American bison is a heavy grazing bovine of North American grasslands. IUCN lists it as Near Threatened. Most animals alive today are in commercial herds; conservation herds that are managed as wildlife are much smaller.",
+      "range": "Once from northern Mexico through the Great Plains into Canada. Wild or semi-wild herds now occupy scattered parks and reserves; the species no longer moves as a continental migrant.",
+      "story": "Indigenous nations hunted bison for millennia without collapsing the species. Nineteenth-century market hunting, railroads, and U.S. campaign policy reduced the plains population from an estimated tens of millions to a few hundred by the 1880s. Ranching and park herds then rebuilt numbers. The animal survived; the free-ranging ecology did not.",
+      "when": "Still here, mostly as a managed animal. IUCN Near Threatened.",
+      "humanRole": "Industrial hunting and settlement almost erased it; later ranching and reserves kept a remnant.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Bison bison, Near Threatened); historical plains-bison estimates (order-of-magnitude)."
+    },
+    "african-savanna-elephant": {
+      "commonName": "African savanna elephant",
+      "hook": "Still the largest land animal — listed Endangered in 2021 after decades of ivory and habitat loss.",
+      "imageAlt": "An African savanna elephant walking through dry bush",
+      "what": "The African savanna elephant is one of two living African elephant species, separated from the forest elephant on the IUCN Red List in 2021 and listed Endangered. It shapes woodland and grassland by browsing and by opening water.",
+      "range": "Eastern and southern Africa hold the largest remaining populations. It is gone or reduced to fragments in much of West Africa and in many former savannas.",
+      "story": "People have hunted elephants for ivory for centuries; industrial poaching in the late twentieth century, plus farms and fences, cut the range. The 2021 IUCN assessment estimated a decline of more than 60 percent over three generations. Southern African parks still hold large herds. That is survival, not the Holocene distribution.",
+      "when": "Still here, and Endangered. Numbers and range are a fraction of the Holocene picture.",
+      "humanRole": "Ivory markets and expanding settlement are the main recent pressures; both continue.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Loxodonta africana, Endangered, 2021); IUCN African Elephant Specialist Group."
+    },
+    "lion": {
+      "commonName": "Lion",
+      "hook": "Gone from Europe and almost all of Asia; surviving in African fragments and one Indian forest.",
+      "imageAlt": "A male lion lying in dry grass in Namibia",
+      "what": "The lion is a social big cat of open woodlands and savannas. IUCN lists the species as Vulnerable. Published guesses for the wild total often fall around 20,000–25,000; the figure is uncertain and regional counts disagree.",
+      "range": "Historically from southern Europe and southwest Asia across most of Africa. Today almost all wild lions live in sub-Saharan fragments. The Asiatic lion survives only in and around Gir Forest, India (on the order of 600–700 animals in recent Gujarat counts).",
+      "story": "Over the last few thousand years, and especially the last two centuries, people converted hunting ground to pasture and shot lions as threats. The Ice Age lion of Europe is long gone; the Holocene lion of North Africa and the Middle East followed. What remains is a reduced African core plus Gir.",
+      "when": "Still here, Vulnerable, on a much smaller map than after the last Ice Age.",
+      "humanRole": "Habitat conversion, prey depletion, and killing in defense of livestock drove the contraction.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Panthera leo, Vulnerable); Gujarat Forest Department Asiatic-lion censuses."
+    },
+    "red-deer": {
+      "commonName": "Red deer",
+      "hook": "A European Ice Age survivor that is now common where forestry and hunting keep it that way.",
+      "imageAlt": "A red deer stag with large antlers standing in a forest clearing",
+      "what": "The red deer is a large Eurasian cervid. IUCN lists it as Least Concern. The North American elk, or wapiti (Cervus canadensis), is a close relative with a parallel story of hunting, clearance, and later recovery in parks.",
+      "range": "Native across Europe and western Asia, with many island and mountain populations. Density now follows hunting law and forestry more than Ice Age steppe and woodland.",
+      "story": "People have hunted red deer since the Late Pleistocene. Forest clearance removed them from some lowlands; elsewhere game parks and modern forestry produced high local densities. Some island subspecies are rare. The species as a whole is not threatened — its geography is anthropogenic.",
+      "when": "Still here and, in much of Europe, numerous under management.",
+      "humanRole": "Hunting and clearance shrank some populations; later gamekeeping increased others.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Cervus elaphus, Least Concern)."
+    },
+    "wild-boar": {
+      "commonName": "Wild boar",
+      "hook": "Hunted out of some countries, then returned, and became a farmland boom species.",
+      "imageAlt": "A wild boar standing in a snowy woodland",
+      "what": "The wild boar is an adaptable omnivorous pig, ancestor of most domestic pigs. IUCN lists it as Least Concern. It roots soil, eats crops, and lives from desert fringe to forest.",
+      "range": "Native to Eurasia and North Africa. Exterminated in Britain and parts of Scandinavia, then re-established. Introduced and invasive in the Americas, Australia, and many islands.",
+      "story": "For thousands of years people hunted boar and turned forest into fields. In some regions that erased them. In the last century milder winters, maize, and fewer wolves let European numbers surge. Elsewhere releases for hunting created feral problems. Survival here is not scarcity — it is a rearranged ecology.",
+      "when": "Still here; locally extinct, then over-abundant, depending on the landscape people built.",
+      "humanRole": "We reduced it, reintroduced it, and then fed its recovery with crops and empty predator niches.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Sus scrofa, Least Concern); European population-trend reviews."
+    },
+    "european-beaver": {
+      "commonName": "Eurasian beaver",
+      "hook": "Hunted to a handful of refuges, then brought back across Europe by reintroduction.",
+      "imageAlt": "A Eurasian beaver sitting at the edge of a pond",
+      "what": "The Eurasian beaver is a large nocturnal rodent that dams streams and fells trees. IUCN lists it as Least Concern after a long collapse and a managed recovery. It is a different species from the North American beaver (Castor canadensis).",
+      "range": "Once from Britain to China along rivers and wetlands. By the early twentieth century only a few thousand survived in scattered European and Asian pockets. Reintroductions have restored it to much of Europe.",
+      "story": "Fur, castoreum, and meat drove a hunt that nearly ended the species in Europe. Legal protection and releases from the mid-twentieth century onward rebuilt numbers. The early Holocene beaver was an engineer of ice-free rivers; the beaver of today is often a reintroduction on a drained landscape.",
+      "when": "Still here, and increasing in Europe after a near miss.",
+      "humanRole": "Overhunting for fur almost finished it; later policy put it back.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Castor fiber, Least Concern); European reintroduction summaries."
+    },
+    "humpback-whale": {
+      "commonName": "Humpback whale",
+      "hook": "Industrial whaling removed more than 90 percent of most stocks; many have since rebounded.",
+      "imageAlt": "A humpback whale diving, showing its black-and-white tail flukes",
+      "what": "The humpback is a long-finned baleen whale that migrates between polar feeding grounds and tropical breeding waters. IUCN listed it as Least Concern in 2018 after several ocean-basin recoveries. Some regional stocks remain small, including the Arabian Sea population.",
+      "range": "All oceans. Breeding and feeding sites are traditional; the species is cosmopolitan as a migrant, not as a resident of every coast.",
+      "story": "Nineteenth- and twentieth-century commercial whaling cut most populations by more than 90 percent by the 1960s. The international moratorium on commercial whaling (International Whaling Commission, 1982, phased in) allowed many stocks to grow again. Ship strikes and fishing gear still kill animals.",
+      "when": "Still here. Globally Least Concern; recovery is real and incomplete.",
+      "humanRole": "Industrial hunting caused the crash; a hunting ban, not a change of habitat, allowed the rebound.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Megaptera novaeangliae, Least Concern, 2018); IWC whaling history."
+    },
+    "european-bison": {
+      "commonName": "European bison",
+      "hook": "Wiped out in the wild in the early 1900s, then rebuilt — free-living herds grew from about 1,800 animals in 2003 to 6,244 across 47 subpopulations by 2019, and IUCN moved the species from Vulnerable to Near Threatened.",
+      "imageAlt": "A European bison bull standing in an autumn forest",
+      "what": "Europe’s largest land mammal — a wild cattle relative of the American bison, not the same species. Lowland and highland lines were saved in zoos after the last wild animals were shot, then released back into forests from the 1950s onward.",
+      "range": "Europe. By 2019 free-living animals were back in forests, across 47 subpopulations. Only about eight herds are large enough for long-term genetic viability; most herds stay small and mostly isolated.",
+      "story": "This is a managed comeback after people emptied the range: captive breeding, reintroductions, and ongoing herd management. It is still conservation-dependent (small, mostly isolated herds), not an unthreatened boom like wild boar — but it is back on the landscape.",
+      "when": "IUCN (2020 assessment): free-living population ~1,800 (2003) → 6,244 (2019) in 47 herds. Status: Near Threatened, moved from Vulnerable. A later Oryx note cited roughly 6,800 free-ranging by 2020 as planning continued.",
+      "humanRole": "People shot the last wild animals. Captive breeding, releases into forests from the 1950s, and ongoing herd management put free-living herds back.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Bison bonasus, Near Threatened, 2020); IUCN news, 10 Dec 2020; Oryx range-wide conservation action plan note."
+    },
+    "north-american-beaver": {
+      "commonName": "North American beaver",
+      "hook": "Almost erased across much of its range by about 1900 for felt hats; regulated trapping and mid-century reintroductions rebuilt a continent-wide keystone — IUCN now lists it Least Concern, with modern totals commonly estimated in the tens of millions (often ~10–15 million).",
+      "imageAlt": "A North American beaver sitting on a log at the edge of a pond",
+      "what": "The New World dam-builder — same family as the Eurasian beaver already on this shelf, different species. It reshapes streams into wetlands that hold water, store carbon in ponds, and feed other wildlife.",
+      "range": "A continent-wide keystone again, restored where habitat remains, after being almost erased across much of its range. Not the Eurasian beaver (Castor fiber).",
+      "story": "People hunted it to local extinction for fur, then brought it back. Where numbers are high it is now a farmland and road-culvert conflict species — a classic “still here, then boom” Surviving story, not an Endangered rarity.",
+      "when": "By about 1900 beavers were nearly gone from many original habitats. USDA Forest Service Region 2 assessment: harvest rules, wetland protection, translocation, and natural spread restored populations where habitat remains. Modern totals are commonly estimated in the tens of millions (often ~10–15 million). A Stanford summary of recent mapping work cites a drop from rough pre-colonial 60–400 million guesses to about 10–15 million today — treat the historic ceiling as uncertain; the direction (collapse → millions again) is solid. IUCN: Least Concern.",
+      "humanRole": "The fur trade for felt hats nearly erased it. Regulated trapping and mid-century reintroductions rebuilt it.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Castor canadensis, Least Concern); Animal Diversity Web; USDA Forest Service Region 2 assessment; Stanford Report, 11 Aug 2025; Communications Earth & Environment (doi:10.1038/s43247-025-02572-y)."
+    },
+    "bald-eagle": {
+      "commonName": "Bald eagle",
+      "hook": "Down to 417 known nesting pairs in the lower 48 U.S. states in 1963. After the ban on dichlorodiphenyltrichloroethane and work under the Endangered Species Act, the U.S. Fish and Wildlife Service counted about 316,700 individuals and 71,467 occupied nests in the survey for 2018 to 2019.",
+      "imageAlt": "An adult bald eagle in flight over water, white head and tail showing",
+      "what": "North America’s fish eagle and the national symbol of the United States. It is the only eagle native solely to this continent. Adults show the white head and tail. Younger birds stay mottled brown for years.",
+      "range": "North America. The published recovery counts are for the lower 48 states.",
+      "story": "Shooting and dichlorodiphenyltrichloroethane thinned eggshells until the bird nearly vanished from the contiguous United States. Legal protection, nest-site work, and the 1972 United States ban on that insecticide reversed the crash. The species was removed from the Endangered Species Act list in 2007. It remains protected under the Bald and Golden Eagle Protection Act and the Migratory Bird Treaty Act.",
+      "when": "The U.S. Fish and Wildlife Service recorded 417 known nesting pairs in the lower 48 U.S. states in 1963, then 9,789 pairs at the 2007 delisting, then about 316,700 individuals and 71,467 occupied nests in the 2018 to 2019 data. The International Union for Conservation of Nature lists the species as Least Concern.",
+      "humanRole": "Shooting and dichlorodiphenyltrichloroethane caused the crash. The 1972 ban on that insecticide, Endangered Species Act work, and nest-site protection reversed it.",
+      "sources": [],
+      "sourcesNote": "U.S. Fish and Wildlife Service bald eagle species page; U.S. Fish and Wildlife Service Bald Eagle Population Size: 2020 Update; Federal Register delisting rule, 2007.",
+      "statusPill": "Least Concern"
+    },
+    "white-rhinoceros": {
+      "commonName": "White rhinoceros",
+      "hook": "Southern white rhinos were hunted to a single South African refuge a century ago; IUCN/TRAFFIC now put African white rhinos at about 15,752 at end-2024 — Near Threatened, and still the main living white-rhino stock.",
+      "imageAlt": "A southern white rhinoceros and calf grazing, wide square lip showing",
+      "what": "The wide-mouthed “square-lipped” grazer of African savanna. Two subspecies: southern (the recovery) and northern (functionally extinct in the wild — already told on the Endangered shelf). Almost all living white rhinos are the southern subspecies (C. s. simum).",
+      "range": "African savanna. Southern white rhinos were hunted to a single South African refuge a century ago. The northern subspecies is not this card’s hero figure.",
+      "story": "Protection and translocation from Hluhluwe–iMfolozi rebuilt southern numbers from a tiny remnant into the tens of thousands. That is a Surviving comeback. It is not the same story as Critically Endangered black, Javan, or Sumatran rhinos, and it is not the northern white remnant.",
+      "when": "IUCN press release (7 Aug 2025, citing the AfRSG/TRAFFIC CITES report): 15,752 white rhinos in Africa at end-2024 (down 11.2% from 2023 — drought, survey, and management shocks after earlier gains). IRF/public summaries still frame the long arc as “fewer than 100 in the early 1900s → tens of thousands.” IUCN Red List: Near Threatened.",
+      "humanRole": "Hunting reduced the southern subspecies to one refuge. Protection and translocation rebuilt the living stock.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Ceratotherium simum, Near Threatened); IUCN press release, 7 Aug 2025; International Rhino Foundation; Pachyderm AfRSG chair report; South Africa biodiversity management plan for the white rhinoceros."
+    },
+    "arabian-oryx": {
+      "commonName": "Arabian oryx",
+      "hook": "Declared extinct in the wild in the early 1970s, then returned from captive “world herds”; by the 2016 IUCN assessment about 1,220 animals lived wild again (850 mature), and the species became the first to move from Extinct in the Wild back to Vulnerable.",
+      "imageAlt": "An Arabian oryx standing in desert scrub at Uruq Bani Ma’arid, Saudi Arabia",
+      "what": "A white desert antelope with long, nearly straight horns — the smallest Oryx, native to Arabian Peninsula deserts and steppes.",
+      "range": "Arabian Peninsula deserts and steppes. Releases from 1980 onward put animals back in Oman, Saudi Arabia, Israel, the UAE, Jordan and related sites.",
+      "story": "Motorised hunting emptied the last wild herds. Captive breeding and releases from 1980 onward returned animals from captive “world herds.” It is still threatened (habitat, illegal hunting, small wild totals) — but it is a documented return from Extinct in the Wild, not a Critically Endangered leftover with no recovery path.",
+      "when": "Declared extinct in the wild in the early 1970s. IUCN SSC Antelope Specialist Group fact sheet (assessment 2016): about 1,220 in the wild (850 mature) and 6,000–7,000 in captivity. Status: Vulnerable — the first species to move from Extinct in the Wild back to Vulnerable. IUCN news (2011) recorded the step down from a higher threat category. Royal Society Open Science (2021) reviews Oman reintroduction genetics.",
+      "humanRole": "Motorised hunting emptied the last wild herds. Captive breeding and releases from 1980 put the species back.",
+      "sources": [],
+      "sourcesNote": "IUCN Red List (Oryx leucoryx, Vulnerable); IUCN, “A grain of hope in the desert” (2011); IUCN SSC Antelope Specialist Group fact sheet; Royal Society Open Science, 2021."
+    },
+    "iberian-lynx": {
+      "commonName": "Iberian lynx",
+      "hook": "Only 94 Iberian lynx were left in 2002, which made it the most endangered cat on Earth. The 2025 census counted 2,663 in Spain and Portugal.",
+      "imageAlt": "An Iberian lynx in profile, with tufted ears, a ruff of fur on the cheeks and a short tail with a black tip",
+      "what": "The Iberian lynx (Lynx pardinus) is a medium-sized wild cat with a spotted tawny coat, tufted ears, a ruff of fur along the cheeks and a short tail with a black tip. An adult stands about 0.5 m at the shoulder, measures about 0.9 m from nose to tail tip and weighs roughly 6 to 16 kg. It lives only in the Iberian Peninsula and depends on the wild rabbit, its main prey.",
+      "range": "In 2025 the lynx lived in 26 separate areas of Spain and Portugal, and breeding was recorded in 18 of them. Spain held 2,269 animals and Portugal 394. Inside Spain, Castilla-La Mancha had 1,051, Andalusia 885 and Extremadura 302, with smaller numbers in Murcia, Castilla y León and Madrid. The Sierra Morena mountains are the main stronghold, with 1,145. The regional government of Andalusia counts its lynx up from 457 in 2019 to 885 in 2025. The area where the lynx occurs has grown from 449 square kilometres in 2005 to at least 3,320 in 2022.",
+      "story": "During the twentieth century the Iberian lynx declined for four reasons: its Mediterranean forest was destroyed, two new viral diseases sharply reduced the number of wild rabbits, people hunted it as vermin, and many animals died on roads or drowned in wells. By 2002 only two groups were left, one around Doñana and one in the Sierra Morena mountains, with 94 lynx in total. The species was then recognised as the most endangered cat on Earth, and the International Union for Conservation of Nature rated it Critically Endangered. Spain, Portugal and the European Union began a long rescue. Landowners agreed to manage land so that rabbits could increase, breeding centres in Spain and Portugal raised lynx, and since 2010 more than 400 animals have been released into places where the species had disappeared. Portugal began its own releases in 2014. The total passed 1,000 in 2020 and 2,000 in 2023.",
+      "when": "In June 2024 the International Union for Conservation of Nature moved the Iberian lynx from Endangered to Vulnerable. Before that it was rated Critically Endangered from 2002 to 2008 and Endangered in 2015. The census published in June 2026 by the Spanish Ministry for the Ecological Transition and the Demographic Challenge counted 2,663 lynx in 2025, against 2,401 in 2024 and 1,365 in 2021. Of these, 1,711 were adults and subadults and 952 were cubs, and 542 females were breeding or holding territories. The ministry treats these figures as a minimum.",
+      "humanRole": "People first pushed the lynx to the brink, then helped it back. Agreements with landowners improved habitat and increased rabbit numbers, lynx were bred in centres in Spain and Portugal and released in new areas, and underpasses and fences were built along roads. Roads remain the greatest danger: in 2025, 212 of the 273 recorded lynx deaths happened on roads. The International Union for Conservation of Nature also names new rabbit virus outbreaks, diseases from domestic cats, poaching and climate-related changes to habitat as threats.",
+      "sources": [
+        {
+          "label": "IUCN Red List of Threatened Species: Lynx pardinus (Rodríguez 2024)",
+          "url": "https://www.iucnredlist.org/species/12520/218695618"
+        },
+        {
+          "label": "International Union for Conservation of Nature: Iberian lynx rebounding thanks to conservation action (press release, 20 June 2024)",
+          "url": "https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list"
+        },
+        {
+          "label": "IUCN Species Survival Commission Cat Specialist Group: Cat News Special Issue 17, The Iberian lynx, rescue of an iconic species (2024)",
+          "url": "https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf"
+        },
+        {
+          "label": "IUCN Species Survival Commission Cat Specialist Group: Living Species, Iberian lynx",
+          "url": "https://www.catsg.org/living-species-iberianlynx"
+        },
+        {
+          "label": "Spanish Ministry for the Ecological Transition and the Demographic Challenge: Iberian lynx census, Spain and Portugal, 2025 (PDF)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+        },
+        {
+          "label": "Spanish Ministry for the Ecological Transition and the Demographic Challenge, via Fundación Biodiversidad: The Iberian lynx population reached 2,663 specimens in 2025 (press release, 5 June 2026)",
+          "url": "https://fundacion-biodiversidad.es/en/notas_de_prensa_mite/the-iberian-lynx-population-reached-2663-specimens-in-2025/"
+        },
+        {
+          "label": "Spanish Ministry for the Ecological Transition and the Demographic Challenge: Spanish Inventory of Terrestrial Species, Lynx pardinus (species sheet, PDF)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf"
+        },
+        {
+          "label": "LIFE Iberlince: Layman report 2018 (PDF)",
+          "url": "https://www.iberlince.eu/files/images/docs/layman_eng.pdf"
+        },
+        {
+          "label": "LIFE Iberlince: History",
+          "url": "https://www.iberlince.eu/index_php/eng/project"
+        },
+        {
+          "label": "LIFE Iberlince: Iberian lynx, Ecology",
+          "url": "https://www.iberlince.eu/index_php/eng/lynx/ecology"
+        },
+        {
+          "label": "European Climate, Infrastructure and Environment Executive Agency: The comeback cat, Iberian lynx numbers up tenfold in 20 years (20 July 2021)",
+          "url": "https://cinea.ec.europa.eu/news-events/news/comeback-cat-iberian-lynx-numbers-tenfold-20-years-2021-07-20_en"
+        },
+        {
+          "label": "European Commission LIFE database: LIFE06 NAT/E/000209, Conservation and reintroduction of the Iberian lynx in Andalucia",
+          "url": "https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE06-NAT-E-000209/conservation-and-reintroduction-of-the-iberian-lynx-in-andalucia"
+        },
+        {
+          "label": "Regional Government of Andalusia (Junta de Andalucía): La Sierra Morena andaluza se mantiene como el principal núcleo de lince ibérico de la Península (3 September 2026)",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/la-sierra-morena-andaluza-se-mantiene-como-el-principal-n%C3%BAcleo-de-lince-ib%C3%A9rico-de-la-pen%C3%ADnsula/20151"
+        },
+        {
+          "label": "Institute for Nature Conservation and Forests (ICNF), Portugal: Lince-ibérico, Novidades",
+          "url": "https://areasprotegidas.icnf.pt/lince/index.php/noticias/novidades"
+        },
+        {
+          "label": "University of Michigan Museum of Zoology, Animal Diversity Web: Lynx pardinus (Spanish lynx)",
+          "url": "https://animaldiversity.org/accounts/Lynx_pardinus/"
+        }
+      ],
+      "gridSource": {
+        "label": "Spanish Ministry for the Ecological Transition and the Demographic Challenge: Iberian lynx census, Spain and Portugal, 2025 (PDF)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+      },
+      "image": {
+        "caption": "Fix Planet illustration"
+      }
+    }
+  }
+}

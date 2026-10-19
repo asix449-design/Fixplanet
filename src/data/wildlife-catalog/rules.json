@@ -1,0 +1,679 @@
+{
+  "bannedChars": [
+    "—",
+    "–",
+    "‒",
+    "―",
+    "⸺",
+    "⸻"
+  ],
+  "bannedWords": {
+    "global": [
+      "TBD",
+      "TODO",
+      "Grok",
+      "Notes for Jimmy",
+      "lorem",
+      "XXX"
+    ],
+    "scaleOnly": [
+      "estimate",
+      "width",
+      "pending"
+    ],
+    "scaleFields": [
+      "scale.heightLabel",
+      "scale.lengthLabel",
+      "scale.captionExtra",
+      "scale.credit",
+      "scale.changes",
+      "composedCaption"
+    ]
+  },
+  "aboutWord": {
+    "en": "about",
+    "ru": "около",
+    "pl": "około",
+    "lv": "apmēram"
+  },
+  "illustrationLine": {
+    "en": "Fix Planet illustration",
+    "ru": "Иллюстрация Fix Planet",
+    "pl": "Ilustracja Fix Planet",
+    "lv": "Fix Planet ilustrācija"
+  },
+  "englishStopwords": [
+    "the",
+    "and",
+    "of",
+    "with",
+    "from",
+    "which",
+    "was",
+    "were",
+    "is",
+    "are"
+  ],
+  "licences": {
+    "ok": [
+      "Public domain",
+      "CC0",
+      "CC BY 2.0",
+      "CC BY 2.5",
+      "CC BY 3.0",
+      "CC BY 3.0 AU",
+      "CC BY 4.0",
+      "CC BY-SA 2.0",
+      "CC BY-SA 2.5",
+      "CC BY-SA 3.0",
+      "CC BY-SA 4.0"
+    ],
+    "warn": [
+      "GFDL 1.2"
+    ]
+  },
+  "rounding": "half-up",
+  "cutout": {
+    "format": "webp",
+    "maxLongSidePx": 1200,
+    "quality": [
+      80,
+      86
+    ],
+    "maxKB": 120,
+    "png": false
+  },
+  "_note": "Draft of src/data/wildlife-catalog/rules.json (spec 4.3), v3.3.3. Only the status-related keys are filled here; the other keys are as printed in the spec. v3.3: iucnCategoryNames RU / PL / LV filled from Bob (2026-10-08); 'NatureServe' added to latinAllowlist (proper name rendered in RU status text, 2.11). v3.3.1: otherStatusValues (NatureServe GX..GNA + T template; US ESA E/T/PE/PT/C/XE/XN/SAE/SAT/D3A with LE/LT aliases) merged from Bob's IUCN labels file; otherStatus values render through this map in RU/PL/LV (no raw codes, C17).",
+  "latinAllowlist": [
+    "Fix Planet",
+    "Wikimedia Commons",
+    "PhyloPic",
+    "IUCN",
+    "CC BY",
+    "CC BY-SA",
+    "CC0",
+    "NatureServe"
+  ],
+  "statusAbbreviations": [
+    {
+      "id": "natureserve",
+      "level": "fail",
+      "pattern": "\\b[GNST](?:[1-5HXU]|NR|NU|NNR|NA)(?:T(?:[1-5HXU]|NR))?Q?\\b"
+    },
+    {
+      "id": "usesa",
+      "level": "fail",
+      "pattern": "\\b(?:LE|LT|PE|PT|XE|XN|SAE|SAT)\\b"
+    },
+    {
+      "id": "iucn",
+      "level": "fail",
+      "pattern": "(?<![\\p{L}\\p{N}_])(?<![\\p{L}\\p{N}]-)(?:EX|EW|CR|EN|VU|NT|LC|DD|NE)(?:_PE)?(?![\\p{L}\\p{N}_])(?!-\\p{N})"
+    },
+    {
+      "id": "single-letter",
+      "level": "warn",
+      "pattern": "(?<![\\p{L}])[TEC](?![\\p{L}])"
+    }
+  ],
+  "iucnCategoryNames": {
+    "_note": "Card forms (singular, gender-safe) supplied by Bob 2026-10-08 (/workspace/nature-catalog-iucn-labels-2026-10-08.json). sourceUrl = primary source of the locale; nameSources overrides it per code where the name comes from elsewhere; officialNames = the form as the source writes it (detail pages, glossaries); needsNativeReview lists codes whose card form is not verbatim in any source (checker: WARN, not FAIL). EN = official IUCN Red List category names (v3.1). RU: gender-free phrase or explicit noun 'вид'; PL: masculine singular agreeing with 'gatunek' (as the pl.wikipedia taxobox); LV: feminine singular agreeing with 'suga' (as the Latvian Red Book).",
+    "en": {
+      "sourceUrl": "https://www.iucnredlist.org/resources/categories-and-criteria",
+      "names": {
+        "EX": "Extinct",
+        "EW": "Extinct in the Wild",
+        "CR": "Critically Endangered",
+        "EN": "Endangered",
+        "VU": "Vulnerable",
+        "NT": "Near Threatened",
+        "LC": "Least Concern",
+        "DD": "Data Deficient",
+        "NE": "Not Evaluated"
+      }
+    },
+    "ru": {
+      "sourceUrl": "https://portals.iucn.org/library/sites/library/files/documents/RL-2001-001-Ru.pdf",
+      "suppliedBy": "bob",
+      "receivedAt": "2026-10-08",
+      "names": {
+        "EX": "Исчезнувший вид",
+        "EW": "Вид, исчезнувший в дикой природе",
+        "CR": "На грани полного исчезновения",
+        "EN": "Исчезающий вид",
+        "VU": "Уязвимый вид",
+        "NT": "В состоянии, близком к угрожаемому",
+        "LC": "Вызывает наименьшие опасения",
+        "DD": "Недостаток данных",
+        "NE": "Угроза не оценивалась"
+      },
+      "officialNames": {
+        "EX": "Исчезнувшие",
+        "EW": "Исчезнувшие в дикой природе",
+        "CR": "Находящиеся на грани полного исчезновения",
+        "EN": "Исчезающие",
+        "VU": "Уязвимые",
+        "NT": "Находящиеся в состоянии, близком к угрожаемому",
+        "LC": "Вызывающие наименьшие опасения",
+        "DD": "Недостаток данных",
+        "NE": "Неоцененные"
+      },
+      "nameSources": {
+        "NE": "https://ru.wikipedia.org/wiki/Шаблон:Охранный_статус"
+      },
+      "needsNativeReview": [],
+      "note": "Official IUCN Russian translation (v3.1, 2001), linked from iucnredlist.org other translations; card forms are singular adaptations of the official plural names. NE card form follows ru.wikipedia (\"Угроза для которых не оценивалась\")."
+    },
+    "pl": {
+      "sourceUrl": "https://panel.iop.krakow.pl/uploads/wydawnictwa_artykuly/3b904a0bd23e641f69c8f40be35324ccd670ad69.pdf",
+      "suppliedBy": "bob",
+      "receivedAt": "2026-10-08",
+      "names": {
+        "EX": "Wymarły",
+        "EW": "Wymarły na wolności",
+        "CR": "Krytycznie zagrożony",
+        "EN": "Zagrożony",
+        "VU": "Narażony",
+        "NT": "Bliski zagrożenia",
+        "LC": "Najmniejszej troski",
+        "DD": "Brak danych",
+        "NE": "Nie oszacowano"
+      },
+      "officialNames": {
+        "EX": "wymarły",
+        "EW": "wymarły na wolności",
+        "CR": "krytycznie zagrożony",
+        "EN": "zagrożony",
+        "VU": "narażony",
+        "NT": "bliski zagrożenia",
+        "LC": "najmniejszej troski",
+        "DD": "brak danych",
+        "NE": "nie oszacowano"
+      },
+      "nameSources": {
+        "EX": "https://pl.wikipedia.org/wiki/Szablon:Takson_infobox",
+        "EW": "https://pl.wikipedia.org/wiki/Czerwona_księga_gatunków_zagrożonych",
+        "DD": "https://pl.wikipedia.org/wiki/Status_ochronny",
+        "NE": "https://pl.wikipedia.org/wiki/Status_ochronny"
+      },
+      "needsNativeReview": [],
+      "note": "IUCN has no official Polish translation. CR..LC: IOP PAN national Red List 2022 (Chrońmy Przyrodę Ojczystą 78/2/2022). EX \"wymarły\" verbatim in the pl.wikipedia taxobox template, EW \"wymarłe na wolności\" (pl.wikipedia Czerwona księga gatunków zagrożonych), DD \"brak danych\" and NE \"nie oszacowano\" (pl.wikipedia Status ochronny). Do not use \"nieoceniony\" (means invaluable)."
+    },
+    "lv": {
+      "sourceUrl": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/",
+      "suppliedBy": "bob",
+      "receivedAt": "2026-10-08",
+      "names": {
+        "EX": "Izmirusi",
+        "EW": "Izmirusi savvaļā",
+        "CR": "Kritiski apdraudēta",
+        "EN": "Stipri apdraudēta",
+        "VU": "Jutīga",
+        "NT": "Gandrīz apdraudēta",
+        "LC": "Nav apdraudēta",
+        "DD": "Trūkst datu",
+        "NE": "Nav novērtēta"
+      },
+      "officialNames": {
+        "EX": "izmiris",
+        "EW": "izmiris savvaļā",
+        "CR": "kritiski apdraudēta suga",
+        "EN": "stipri apdraudēta suga",
+        "VU": "jutīga suga",
+        "NT": "gandrīz apdraudēta suga",
+        "LC": "nav apdraudēta suga",
+        "DD": "trūkst datu",
+        "NE": "nav novērtēts"
+      },
+      "nameSources": {
+        "EX": "https://lv.wikipedia.org/wiki/Aizsardzības_statuss",
+        "EW": "https://lv.wikipedia.org/wiki/Aizsardzības_statuss",
+        "DD": "https://sarkanagramata.lu.lv/",
+        "NE": "https://lv.wikipedia.org/wiki/Aizsardzības_statuss"
+      },
+      "needsNativeReview": [
+        "EW",
+        "NE"
+      ],
+      "note": "IUCN has no official Latvian translation. CR..LC: Latvian Red Book, 3rd edition 2025 (University of Latvia Institute of Biology, Nature Conservation Agency). DD \"Trūkst datu\" is the Red Book card label. The Red Book has no EX, EW or NE: these come from lv.wikipedia only (\"izmiris\", \"izmiris savvaļā\", \"nav novērtēts\") and were put in the feminine to agree with \"suga\" (Izmirusi, Izmirusi savvaļā, Nav novērtēta). The owner reviewed the EX card form with the Extinct library cards, so EX is no longer listed for native review. EW and NE still need that check."
+    }
+  },
+  "otherStatusValues": {
+    "_note": "Value names for otherStatus, rendered after the system intro (labels.systems.*.intro), never in the IUCN pill. Each entry: en/ru/pl/lv card text, source per language, needsNativeReview = languages whose text is a proposal or adaptation without a verbatim source. ru/pl 'wiki' sources are Wikipedia, not official texts. No Latvian native speaker has checked any LV text. US ESA keys follow US FWS ECOS codes; aliases map the NatureServe-style codes used in the spec (LE, LT) onto them. The source quotes are verbatim, so the ECOS ones contain ' -- '; these quotes are documentation, not card copy.",
+    "natureserve": {
+      "GX": {
+        "en": "Presumed Extinct",
+        "ru": "Полное исчезновение",
+        "pl": "Uznany za wymarłego",
+        "lv": "Uzskatāma par izmirušu",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'GX Presumed Extinct')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: 'X ... полное исчезновение таксона на указанной территории')",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Presumed Extinct (GX) ... uznany za wymarłego')",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "lv"
+        ],
+        "note": "RU wiki wording drops NatureServe's 'presumed'; a native reader may prefer 'Считается исчезнувшим видом'."
+      },
+      "GH": {
+        "en": "Possibly Extinct",
+        "ru": "Возможное исчезновение",
+        "pl": "Prawdopodobnie wymarły",
+        "lv": "Iespējams, izmirusi",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'GH Possibly Extinct')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: 'H ... возможное исчезновение таксона')",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Possibly Extinct (GH) ... prawdopodobnie wymarły')",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "lv"
+        ]
+      },
+      "G1": {
+        "en": "Critically Imperiled",
+        "ru": "В критической опасности",
+        "pl": "Krytycznie zagrożony",
+        "lv": "Kritiski apdraudēta",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'G1 Critically Imperiled')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: '1 ... таксон в критической опасности')",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Critically Imperiled (G1) ... krytycznie zagrożony')",
+          "lv": "proposal (Bob), no source found; reuses the Latvian Red Book CR term 'kritiski apdraudēta'"
+        },
+        "needsNativeReview": [
+          "lv"
+        ],
+        "note": "PL and LV G1 reuse the IUCN CR wording; it is shown only after the NatureServe intro, never in the IUCN pill."
+      },
+      "G2": {
+        "en": "Imperiled",
+        "ru": "В опасности",
+        "pl": "Zagrożony",
+        "lv": "Apdraudēta",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'G2 Imperiled')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: '2 ... таксон в опасности')",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Imperiled (G2) ... zagrożony')",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "lv"
+        ]
+      },
+      "G3": {
+        "en": "Vulnerable",
+        "ru": "В уязвимом положении",
+        "pl": "Narażony",
+        "lv": "Jutīga",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'G3 Vulnerable')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: '3 ... таксон уязвим', linked as 'Находятся в уязвимом положении'; card form is the gender-free link text)",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Vulnerable (G3) ... narażony')",
+          "lv": "proposal (Bob), no source found; reuses the Latvian Red Book VU term 'jutīga'"
+        },
+        "needsNativeReview": [
+          "lv"
+        ]
+      },
+      "G4": {
+        "en": "Apparently Secure",
+        "ru": "Вероятно, в безопасности",
+        "pl": "Przypuszczalnie bezpieczny",
+        "lv": "Visticamāk, nav apdraudēta",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'G4 Apparently Secure')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: '4 ... таксон, вероятно, в безопасности')",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Apparently Secure (G4) ... przypuszczalnie bezpieczny')",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "lv"
+        ]
+      },
+      "G5": {
+        "en": "Secure",
+        "ru": "Не под угрозой",
+        "pl": "Bezpieczny",
+        "lv": "Nav apdraudēta",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'G5 Secure')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: '5 ... таксон не под угрозой')",
+          "pl": "https://pl.wikipedia.org/wiki/Status_ochronny (wiki, verbatim: 'Secure (G5) ... bezpieczny')",
+          "lv": "proposal (Bob), no source found; reuses the Latvian Red Book LC term 'nav apdraudēta suga'"
+        },
+        "needsNativeReview": [
+          "lv"
+        ]
+      },
+      "GU": {
+        "en": "Unrankable",
+        "ru": "Неопределённый статус",
+        "pl": "Status nieokreślony",
+        "lv": "Statuss nav nosakāms",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'GU Unrankable')",
+          "ru": "https://ru.wikipedia.org/wiki/NatureServe (wiki: '? ... неопределённый статус')",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "pl",
+          "lv"
+        ]
+      },
+      "GNR": {
+        "en": "Unranked",
+        "ru": "Оценка не проводилась",
+        "pl": "Brak oceny",
+        "lv": "Nav novērtēta",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'GNR Unranked ... Global rank not yet assessed')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "GNA": {
+        "en": "Not Applicable",
+        "ru": "Оценка неприменима",
+        "pl": "Ocena nie ma zastosowania",
+        "lv": "Nav piemērojams",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories (verbatim: 'GNA Not Applicable')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "https://sarkanagramata.lu.lv/biezak-uzdotie-termini/ (verified, Latvian Red Book 2025: 'NA ( not applicable ) - nav piemērojams')"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl"
+        ]
+      },
+      "T": {
+        "en": "Subspecies rank: {rank}",
+        "ru": "Оценка подвида: {rank}",
+        "pl": "Ocena podgatunku: {rank}",
+        "lv": "Pasugas novērtējums: {rank}",
+        "source": {
+          "en": "https://www.natureserve.org/nsexplorer/about-the-data/statuses/conservation-status-categories ('T# Infraspecific Taxon (trinomial) ... subspecies or varieties ... T-rank'); template wording is Bob's",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "en",
+          "ru",
+          "pl",
+          "lv"
+        ],
+        "note": "Template for a T-rank; {rank} is the localized G-type wording of the T digit, never the code."
+      }
+    },
+    "usEsa": {
+      "E": {
+        "en": "Endangered",
+        "ru": "Исчезающий вид",
+        "pl": "Zagrożony",
+        "lv": "Stipri apdraudēta",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'E -- Endangered')",
+          "ru": "proposal (Bob), no source found; mirrors the verified law name 'Закон об исчезающих видах' (https://ru.wikipedia.org/wiki/Красная_книга)",
+          "pl": "https://pl.wikipedia.org/wiki/Endangered_Species_Act (wiki, verbatim: 'zagrożony (E)')",
+          "lv": "proposal (Bob), no source found; reuses the Latvian Red Book EN term"
+        },
+        "needsNativeReview": [
+          "ru",
+          "lv"
+        ]
+      },
+      "T": {
+        "en": "Threatened",
+        "ru": "Угрожаемый вид",
+        "pl": "Narażony",
+        "lv": "Apdraudēta",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'T -- Threatened')",
+          "ru": "proposal (Bob), no source found; 'угрожаемый' is the official IUCN Russian translation's word for 'threatened'",
+          "pl": "https://pl.wikipedia.org/wiki/Endangered_Species_Act (wiki, verbatim: 'narażony (T)')",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "lv"
+        ]
+      },
+      "PE": {
+        "en": "Proposed Endangered",
+        "ru": "Предложен к охране как исчезающий вид",
+        "pl": "Proponowany jako zagrożony",
+        "lv": "Ierosināts atzīt par stipri apdraudētu",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'PE -- Proposed Endangered')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "PT": {
+        "en": "Proposed Threatened",
+        "ru": "Предложен к охране как угрожаемый вид",
+        "pl": "Proponowany jako narażony",
+        "lv": "Ierosināts atzīt par apdraudētu",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'PT -- Proposed Threatened')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "C": {
+        "en": "Candidate",
+        "ru": "Кандидат на включение в список",
+        "pl": "Kandydat do wpisania na listę",
+        "lv": "Kandidāte iekļaušanai sarakstā",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'C -- Candidate Taxon, Ready for Proposal'; card form shortened)",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found; feminine agrees with 'suga'"
+        },
+        "needsNativeReview": [
+          "en",
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "XE": {
+        "en": "Experimental Population, Essential",
+        "ru": "Экспериментальная популяция, важная для выживания вида",
+        "pl": "Populacja eksperymentalna kluczowa dla przetrwania gatunku",
+        "lv": "Eksperimentāla populācija, būtiska sugas izdzīvošanai",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'EXPE, XE -- Experimental Population, Essential')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "XN": {
+        "en": "Experimental Population, Non-Essential",
+        "ru": "Экспериментальная популяция, не важная для выживания вида",
+        "pl": "Populacja eksperymentalna niekluczowa dla przetrwania gatunku",
+        "lv": "Eksperimentāla populācija, nebūtiska sugas izdzīvošanai",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'EXPN, XN -- Experimental Population, Non-Essential')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "SAE": {
+        "en": "Similarity of Appearance to an Endangered Taxon",
+        "ru": "Охраняется из-за сходства с исчезающим видом",
+        "pl": "Chroniony ze względu na podobieństwo do gatunku zagrożonego",
+        "lv": "Aizsargāta līdzības dēļ ar stipri apdraudētu sugu",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'SAE, E(S/A) -- Similarity of Appearance to an Endangered Taxon')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "SAT": {
+        "en": "Similarity of Appearance to a Threatened Taxon",
+        "ru": "Охраняется из-за сходства с угрожаемым видом",
+        "pl": "Chroniony ze względu na podobieństwo do gatunku narażonego",
+        "lv": "Aizsargāta līdzības dēļ ar apdraudētu sugu",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'SAT, T(S/A) -- Similarity of Appearance to a Threatened Taxon')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ]
+      },
+      "D3A": {
+        "en": "Delisted Taxon, Evidently Extinct",
+        "ru": "Исключён из списка как вымерший вид",
+        "pl": "Skreślony z listy jako wymarły",
+        "lv": "Izslēgta no saraksta kā izmirusi",
+        "source": {
+          "en": "https://ecos.fws.gov/ecp0/html/db-status.html (verbatim: 'D3A -- Delisted Taxon, Evidently Extinct')",
+          "ru": "proposal (Bob), no source found",
+          "pl": "proposal (Bob), no source found; built from pl.wikipedia 'skreślony z listy' and 'wymarły' (https://pl.wikipedia.org/wiki/Endangered_Species_Act)",
+          "lv": "proposal (Bob), no source found"
+        },
+        "needsNativeReview": [
+          "ru",
+          "pl",
+          "lv"
+        ],
+        "note": "Relevant to Extinct-shelf cards whose US listing was removed because the species went extinct."
+      }
+    },
+    "usEsaAliases": {
+      "LE": "E",
+      "LT": "T",
+      "EXPE": "XE",
+      "EXPN": "XN"
+    }
+  },
+  "numberFormat": {
+    "_note": "v3.3.3. Display unit and decimals come from the value in metres, not from the size group. One caption may mix units (e.g. '67 cm, 1.2 m'). Rounding is half-up. After rounding, promote to the next unit when the rounded figure reaches the next threshold (promoteAfterRounding: 0.996 m -> 100 cm -> 1.0 m; 9.96 mm -> 1 cm). If a millimetre figure would round to 0 at 0 decimals, use 1 decimal mm; if still 0 (< 0.05 mm), use 2 decimals mm; if still 0, C6 fails. Nothing may display as 0.",
+    "rounding": "half-up",
+    "promoteAfterRounding": true,
+    "thresholdsM": {
+      "mmMaxExclusive": 0.01,
+      "cmMaxExclusive": 1
+    },
+    "decimals": {
+      "mm": 0,
+      "mmFallback": 1,
+      "mmFallbackMax": 2,
+      "cm": 0,
+      "m": 1
+    },
+    "units": {
+      "en": {
+        "m": "m",
+        "cm": "cm",
+        "mm": "mm"
+      },
+      "ru": {
+        "m": "м",
+        "cm": "см",
+        "mm": "мм"
+      },
+      "pl": {
+        "m": "m",
+        "cm": "cm",
+        "mm": "mm"
+      },
+      "lv": {
+        "m": "m",
+        "cm": "cm",
+        "mm": "mm"
+      }
+    },
+    "decimalSeparator": {
+      "en": ".",
+      "ru": ",",
+      "pl": ",",
+      "lv": ","
+    },
+    "zeroGuard": "if the chosen unit is mm and half-up rounding at decimals.mm (0) yields 0 for a positive value, retry with mmFallback (1 decimal); if still 0 (below 0.05 mm), retry with mmFallbackMax (2 decimals); if still 0, C6 fails; nothing may display as 0"
+  },
+  "measureMethods": {
+    "proboscideanBodyLength": {
+      "_note": "v3.3.3 (Boss Bot approved 2026-10-08). SizeValue basis / caption measure for proboscideans. RU/PL/LV wording pending native review. Do not add registry methodLabels; lengthLabel here is the single source for caption spelling (C6).",
+      "appliesTo": "proboscideans (woolly mammoth; African savanna elephant live Surviving card pending Boss Bot decision)",
+      "basis": "body length without the trunk and tusks",
+      "definition": "straight-line body length from the rear of the rump (tail base) to the front of the forehead (skeleton: rostrum to tail base); trunk and tusks excluded. Height = shoulder height (hump), trunk hanging.",
+      "primarySource": "Boeskorov 2021, Arctic and Subarctic Natural Resources 26(1), DOI 10.31242/2618-9712-2021-26-1-4",
+      "support": "Naish 2025, Tetrapod Zoology (blog)",
+      "kitBodyType": "proboscidean_body_length (config/rules.yaml; checker length rule rump_forehead)",
+      "bodyType": "proboscidean",
+      "mammothNote": "Boeskorov 2021: length rostrum to tail base; skeletal shoulder-height / length index mean 0.7525 (adult East Siberian bulls, n=7); card length from height/0.7525.",
+      "scaleBasisRequired": "height",
+      "lengthLabel": {
+        "en": "Body length without the trunk and tusks",
+        "ru": "Длина тела без хобота и бивней",
+        "pl": "Długość ciała bez trąby i ciosów",
+        "lv": "Ķermeņa garums bez snuķa un ilkņiem"
+      }
+    },
+    "headBodyLength": {
+      "_note": "Body length with the tail excluded. lengthLabel is the single source for caption spelling (C6). Animals measured this way scale by height.",
+      "appliesTo": "mammals whose length is taken from the nose to the base of the tail",
+      "basis": "body length without the tail",
+      "definition": "Straight-line length from the tip of the nose to the base of the tail. The tail is excluded. The chart scales this measure by shoulder height.",
+      "primarySource": "Standard mammalogical head-and-body length, tail excluded.",
+      "scaleBasisRequired": "height",
+      "lengthLabel": {
+        "en": "Body length without the tail",
+        "ru": "Длина тела без хвоста",
+        "pl": "Długość ciała bez ogona",
+        "lv": "Ķermeņa garums bez astes"
+      }
+    }
+  }
+}

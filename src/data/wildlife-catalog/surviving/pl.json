@@ -1,0 +1,253 @@
+{
+  "locale": "pl",
+  "shelf": "surviving",
+  "cards": {
+    "gray-wolf": {
+      "commonName": "Wilk szary",
+      "hook": "Wciąż liczny na dalekiej północy, choć zniknął z dużej części Europy i Stanów Zjednoczonych.",
+      "imageAlt": "Wilk szary stoi na śniegu i patrzy w obiektyw",
+      "what": "Wilk szary to duży, stadny psowaty i dziki przodek psa. Watahy polują na kopytne i mniejszą zdobycz. IUCN uznaje gatunek za najmniejszej troski, bo duże populacje trwają w Kanadzie, Rosji i Azji Środkowej.",
+      "range": "Historycznie większość półkuli północnej. Dziś ostoją są borealna i stepowa Azja, Kanada i Alaska, z odbudowującymi się fragmentami w Europie i nielicznymi reintrodukcjamii w USA i Meksyku.",
+      "story": "W ostatnich stuleciach ludzi strzelali, truli i łapali wilki jako wrogów bydła. Do początku XX wieku zniknęły z większości Europy Zachodniej i niemal wszystkich stanów kontynentalnych USA. Ochrona i reintrodukcje (Yellowstone, północne Rockies, część Europy) przywróciły niektóre populacje. Holocenny obraz — wilki w lasach i na równinach umiarkowanych — wrócił tylko częściowo.",
+      "when": "Wciąż tu jest. Zasięg i liczebność gwałtownie się skurczyły pod presją, potem miejscami wzrosły, gdy ograniczono polowania.",
+      "humanRole": "Celowe tępienie i utrata siedlisk usunęły wilka z krajobrazów osadniczych; później prawo i reintrodukcje wróciły go w niektóre z nich.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Canis lupus, LC); przeglądy odbudowy w Europie i Ameryce Północnej."
+    },
+    "brown-bear": {
+      "commonName": "Niedźwiedź brunatny",
+      "hook": "Holarktyczny ocalały, którego europejski zasięg to dziś rozsypka górskich i leśnych resztek.",
+      "imageAlt": "Niedźwiedź brunatny biegnie po omszałym podłożu",
+      "what": "Niedźwiedź brunatny jest najszerzej rozsiedlonym niedźwiedziem — od łososiowych rzek po suche góry. IUCN: najmniejszej troski. Niedźwiedź euroazjatycki, grizzly i kodiak to jeden gatunek.",
+      "range": "Niegdyś Europa, północna Azja i zachód Ameryki Północnej. Duże populacje zostają w Rosji, Skandynawii, Karpatach, na Bałkanach, Alasce i zachodniej Kanadzie. Większość Europy Zachodniej i Środkowej swoje niedźwiedzie straciła.",
+      "story": "Polowania i karczunek nizinnych lasów wypchnęły niedźwiedzia w góry i odległą tajgę. W Alpach i Pirenejach trwają lub są wzmacniane małe grupy. Gatunek nie jest globalnie rzadki, ale mapa holocenu nie jest mapą dzisiejszą.",
+      "when": "Wciąż tu jest. Lokalnie wymarły na dużej części umiarkowanej Europy; stabilny lub rosnący tam, gdzie ludzie go tolerują.",
+      "humanRole": "Polowania i uprawa usunęły niedźwiedzia z zasiedlonej Europy; pozostałe populacje trwają za ludzkim przyzwoleniem.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Ursus arctos, LC); europejskie raporty o dużych drapieżnikach."
+    },
+    "american-bison": {
+      "commonName": "Bizon amerykański",
+      "hook": "Od dziesiątek milionów na Wielkich Równinach do kilkuset w latach 80. XIX wieku — potem zarządzany powrót.",
+      "imageAlt": "Bizon amerykański stoi w suchej trawie",
+      "what": "Bizon amerykański to ciężki przeżuwacz prerii. IUCN: bliski zagrożenia. Większość dzisiejszych zwierząt jest w stadach hodowlanych; stada ochronne są znacznie mniejsze.",
+      "range": "Niegdyś od północnego Meksyku przez Wielkie Równiny po Kanadę. Dziś rozproszone parki i rezerwaty; gatunek nie wędruje już kontynentalnie.",
+      "story": "Ludy tubylcze polowały na bizona przez tysiąclecia, nie załamując gatunku. Rynek XIX wieku, koleje i polityka USA zbiły populację prerii z szacunku rzędu dziesiątek milionów do kilkuset około 1880. Rancza i parki potem odbudowały liczebność. Zwierzę przeżyło; wolna ekologia — nie.",
+      "when": "Wciąż tu jest, głównie jako zwierzę zarządzane. IUCN: bliski zagrożenia.",
+      "humanRole": "Przemysłowe polowania i osadnictwo niemal je wymazały; później hodowla i rezerwaty utrzymały resztkę.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Bison bison, NT); historyczne szacunki bizona prerii (rząd wielkości)."
+    },
+    "african-savanna-elephant": {
+      "commonName": "Słoń afrykański sawannowy",
+      "hook": "Wciąż największe zwierzę lądowe — od 2021 roku zagrożony po dekadach kłusownictwa kości i utraty siedlisk.",
+      "imageAlt": "Słoń sawannowy idzie przez suche zarośla",
+      "what": "Słoń sawannowy to jeden z dwóch żyjących afrykańskich gatunków słoni. W 2021 IUCN ocenił go osobno od leśnego i uznał za zagrożonego. Kształtuje sawannę, łamiąc drzewa i otwierając wodę.",
+      "range": "Największe stada są we wschodniej i południowej Afryce. Na zachodzie i na wielu dawnych sawannach zniknął albo został we fragmentach.",
+      "story": "Kość słoniową brano od wieków; przemysłowe kłusownictwo końca XX wieku plus farmy i ogrodzenia ścięły zasięg. Ocena IUCN z 2021: spadek o ponad 60% w trzech pokoleniach. Parki południowej Afryki wciąż mają duże stada. To przetrwanie, nie holocenny zasięg.",
+      "when": "Wciąż tu jest i jest zagrożony. Liczebność i zasięg to ułamek obrazu holocenu.",
+      "humanRole": "Rynek kości i rozszerzanie osadnictwa to główne niedawne presje; obie trwają.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Loxodonta africana, EN, 2021); IUCN African Elephant Specialist Group."
+    },
+    "lion": {
+      "commonName": "Lew",
+      "hook": "Zniknął z Europy i niemal całej Azji; trwa we fragmentach Afryki i w jednym indyjskim lesie.",
+      "imageAlt": "Samiec lwa leży w suchej trawie Namibii",
+      "what": "Lew to stadny wielki kot otwartych lasów i sawann. IUCN: narażony. Publikowane zgadywania dzikiej liczebności często padają koło 20–25 tysięcy; liczba jest niepewna, liczenia regionalne się różnią.",
+      "range": "Historycznie od południowej Europy i południowo-zachodniej Azji przez większą część Afryki. Dziś niemal wszystkie dzikie lwy żyją we fragmentach na południe od Sahary. Lew azjatycki przetrwał tylko w Gir w Indiach (rzędu 600–700 w niedawnych spisach Gudźaratu).",
+      "story": "Przez ostatnie tysiąclecia, zwłaszcza dwa wieki, łowiska zamieniano w pastwiska, a lwy zabijano jako zagrożenie. Lew epoki lodowej w Europie dawno zniknął; za nim holocenny lew Afryki Północnej i Bliskiego Wschodu. Został okrojony rdzeń afrykański i Gir.",
+      "when": "Wciąż tu jest, narażony, na mapie dużo mniejszej niż po ostatnim zlodowaceniu.",
+      "humanRole": "Przekształcenie siedlisk, ubytek zdobyczy i odstrzał w obronie bydła ścięły zasięg.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Panthera leo, VU); spisy lwa azjatyckiego lasów Gudźaratu."
+    },
+    "red-deer": {
+      "commonName": "Jeleń szlachetny",
+      "hook": "Europejski ocalały z epoki lodowej, dziś pospolity tam, gdzie las i łowiectwo tak chcą.",
+      "imageAlt": "Byk jelenia szlachetnego z dużym porożem na leśnej polanie",
+      "what": "Jeleń szlachetny to duży euroazjatycki jeleń. IUCN: najmniejszej troski. Północnoamerykański wapiti (Cervus canadensis) to bliski krewny z podobną historią polowań, karczunku i późniejszej odbudowy w parkach.",
+      "range": "Europa i zachodnia Azja, wiele populacji wyspowych i górskich. Zagęszczenie dziś wynika z prawa łowieckiego i leśnictwa, nie ze stepu glacjalnego.",
+      "story": "Ludzie polują na jelenia od późnego plejstocenu. Karczunek lasu usunął go z części nizin; gdzie indziej parki i współczesna gospodarka leśna dały wysokie lokalne zagęszczenia. Niektóre podgatunki wyspowe są rzadkie. Gatunek jako całość nie jest zagrożony — jego geografia jest antropogeniczna.",
+      "when": "Wciąż tu jest i w dużej części Europy liczny pod zarządem.",
+      "humanRole": "Polowania i karczunek zmniejszyły jedne populacje; gospodarka łowiecka zwiększyła inne.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Cervus elaphus, LC)."
+    },
+    "wild-boar": {
+      "commonName": "Dzik",
+      "hook": "W jednych krajach wytępiony, potem wrócił — i stał się gatunkiem-eksplozją na polach.",
+      "imageAlt": "Dzik stoi w ośnieżonym lesie",
+      "what": "Dzik to plastyczny wszystkożerny świniowaty, przodek większości świń domowych. IUCN: najmniejszej troski. Ryje glebę, je plony, żyje od skraju pustyni po las.",
+      "range": "Eurazja i Afryka Północna. Wytępiony w Brytanii i części Skandynawii, potem przywrócony. Zawleczony i inwazyjny w Amerykach, Australii i na wielu wyspach.",
+      "story": "Przez tysiące lat dzika bito i las zamieniano w pola. W niektórych regionach to go starło. W ostatnim stuleciu łagodniejsze zimy, kukurydza i mniej wilków dały wzrost w Europie. Gdzie indziej wsiedlenia myśliwskie stworzyły zdziczałe problemy. Przetrwanie nie oznacza tu rzadkości — to przebudowana ekologia.",
+      "when": "Wciąż tu jest; lokalnie wymarły, potem nadliczny, zależnie od krajobrazu, który zbudowali ludzie.",
+      "humanRole": "Zmniejszyliśmy go, wsiedliliśmy i potem nakarmiliśmy plonami i pustą niszą drapieżników.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Sus scrofa, LC); europejskie przeglądy trendów."
+    },
+    "european-beaver": {
+      "commonName": "Bóbr europejski",
+      "hook": "Zepchnięty do garści ostoi, potem wrócony do Europy reintrodukcją.",
+      "imageAlt": "Bóbr europejski siedzi na brzegu stawu",
+      "what": "Bóbr europejski to duży nocny gryzoń, który tamuje strumienie i ścina drzewa. IUCN: najmniejszej troski po długim załamaniu i zarządzanej odbudowie. To inny gatunek niż bóbr kanadyjski (Castor canadensis).",
+      "range": "Niegdyś od Brytanii po Chiny wzdłuż rzek i mokradeł. Na początku XX wieku zostały tysiące w rozproszonych ostojach. Reintrodukcje wróciły go na dużą część Europy.",
+      "story": "Futro, strój bobrowy i mięso niemal skończyły gatunek w Europie. Ochrona i wsiedlenia od połowy XX wieku odbudowały liczebność. Wczesnoholoceński bóbr był inżynierem rzek po ustąpieniu lodu; dzisiejszy często jest reintrodukcją na osuszonym krajobrazie.",
+      "when": "Wciąż tu jest i w Europie rośnie po niemal całkowitym zniku.",
+      "humanRole": "Nadmierne polowania na futro niemal go skończyły; później polityka go wróciła.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Castor fiber, LC); zestawienia europejskich reintrodukcji."
+    },
+    "humpback-whale": {
+      "commonName": "Długopłetwiec",
+      "hook": "Wielorybnictwo przemysłowe zabrało ponad 90% większości stad; wiele potem odbiło.",
+      "imageAlt": "Długopłetwiec nurkuje, widać czarno-białe płetwy ogonowe",
+      "what": "Długopłetwiec to fiszbinowiec o długich płetwach piersiowych, wędrujący między polarnym żerowiskiem a tropikalnym rozrodem. IUCN uznał go za najmniejszej troski w 2018 po odbudowie w kilku basenach. Niektóre stada regionalne zostają małe, w tym w Morzu Arabskim.",
+      "range": "Wszystkie oceany. Miejsca rozrodu i żerowania są tradycyjne; gatunek jest kosmopolityczny jako wędrowiec, nie jako mieszkaniec każdego brzegu.",
+      "story": "Komercyjne wielorybnictwo XIX i XX wieku do lat 60. ścięło większość populacji o ponad 90%. Międzynarodowe moratorium (IWC, 1982, wdrażane etapami) pozwoliło wielu stadom rosnąć. Zderzenia ze statkami i sieci wciąż zabijają.",
+      "when": "Wciąż tu jest. Globalnie LC; odbudowa jest realna i niepełna.",
+      "humanRole": "Przemysłowe polowania spowodowały krach; zakaz polowań, nie zmiana siedliska, pozwolił na odbicie.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Megaptera novaeangliae, LC, 2018); historia IWC."
+    },
+    "european-bison": {
+      "commonName": "Żubr",
+      "hook": "Wytępiony na wolności na początku XX wieku, potem odbudowany — wolno żyjące stada wzrosły z około 1800 zwierząt w 2003 do 6244 w 47 subpopulacjach do 2019; IUCN przesunął gatunek z Vulnerable do Near Threatened.",
+      "imageAlt": "Byk żubra stoi w jesiennym lesie",
+      "what": "Największy ssak lądowy Europy — dziki krewniak żubra amerykańskiego, inny gatunek. Linie nizinne i górskie uratowano w zoo, potem wypuszczono do lasów od lat 50. XX w.",
+      "range": "Europa. Do 2019 wolno żyjące zwierzęta wróciły do lasów, w 47 subpopulacjach. Tylko około ośmiu stad jest dość dużych dla długiej żywotności genetycznej; większość stad zostaje mała i w większości izolowana.",
+      "story": "To zarządzany powrót po tym, jak ludzie opróżnili zasięg: hodowla w niewoli, reintrodukcje i stałe prowadzenie stad. Wciąż zależny od ochrony (małe, izolowane stada), nie beztroski boom jak dzik — ale z powrotem w krajobrazie.",
+      "when": "IUCN (ocena 2020): populacja wolno żyjąca ~1800 (2003) → 6244 (2019) w 47 stadach. Status: Near Threatened, przesunięty z Vulnerable. Późniejsza notka Oryx podawała około 6800 wolno żyjących do 2020, gdy planowanie trwało.",
+      "humanRole": "Ludzie odstrzelili ostatnie dzikie zwierzęta. Hodowla w niewoli, wypuszczenia do lasów od lat 50. i stałe prowadzenie stad wróciły wolno żyjące stada.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Bison bonasus, Near Threatened, 2020); wiadomość IUCN, 10 gru 2020; notka Oryx o planie działań na cały zasięg."
+    },
+    "north-american-beaver": {
+      "commonName": "Bóbr amerykański",
+      "hook": "Około 1900 niemal wytarty z dużej części zasięgu dla filcowych kapeluszy; regulowane odłowy i reintradukcje odbudowały kontynentalny gatunek kluczowy — IUCN: Least Concern, współczesne szacunki często ~10–15 mln.",
+      "imageAlt": "Bóbr amerykański siedzi na kłodzie przy brzegu stawu",
+      "what": "Budowniczy tam Nowego Świata — ta sama rodzina co żywy bóbr europejski, inny gatunek. Przebudowuje cieki w mokradła, które trzymają wodę, magazynują węgiel w stawach i karmią inną zwierzynę.",
+      "range": "Znów kontynentalny gatunek kluczowy tam, gdzie zostało siedlisko, po niemal całkowitym starciu z dużej części zasięgu. Nie mylić z Castor fiber.",
+      "story": "Ludzie doprowadzili go do lokalnego wymarcia dla futra, potem sprowadzili z powrotem. Tam gdzie jest dużo — konflikt z rolnictwem i przepustami. Klasyczna historia półki „wciąż tu, potem boom”, nie rzadkość ze statusu Endangered.",
+      "when": "Około 1900 bobry niemal zniknęły z wielu pierwotnych siedlisk. Ocena USDA Forest Service, region 2: reguły pozyskania, ochrona mokradeł, przesiedlenia i naturalne rozprzestrzenienie odbudowały populacje tam, gdzie siedlisko zostało. Współczesne sumy często szacuje się na dziesiątki milionów (często ~10–15 mln). Streszczenie Stanford niedawnego mapowania podaje spadek od zgrubnych przedkolonialnych zgadywań 60–400 mln do około 10–15 mln dziś — historyczny sufit traktować jako niepewny; kierunek (załamanie → znów miliony) jest solidny. IUCN: Least Concern.",
+      "humanRole": "Handel futrami na filcowe kapelusze niemal go starł. Regulowane odłowy i reintradukcje w połowie wieku go odbudowały.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Castor canadensis, Least Concern); Animal Diversity Web; ocena USDA Forest Service, region 2; Stanford Report, 11 sie 2025; Communications Earth & Environment (doi:10.1038/s43247-025-02572-y)."
+    },
+    "bald-eagle": {
+      "commonName": "Bielik amerykański",
+      "hook": "W 1963 w dolnych 48 stanach USA zostało 417 znanych par lęgowych; po zakazie DDT i pracy ESA USFWS naliczył około 316 700 osobników i 71 467 zajętych gniazd w 2018–2019.",
+      "imageAlt": "Dorosły bielik amerykański w locie nad wodą: biała głowa i ogon",
+      "what": "Orzeł rybny Ameryki Północnej i symbol narodowy USA — jedyny orzeł rodzimy wyłącznie dla tego kontynentu. Dorosłe mają białą głowę i ogon; młodsze latami zostają pstrokato brązowe.",
+      "range": "Ameryka Północna. Główne liczby odbudowy to dolne 48 stanów USA. Alaski nie wpisywano do ESA w ten sam sposób.",
+      "story": "Strzelanie i DDT przerzedzały skorupy jaj, aż ptak niemal zniknął ze stanów kontynentalnych USA. Ochrona prawna, praca przy gniazdach i zakaz DDT w USA w 1972 odwróciły krach. Zdjęty z ESA w 2007; nadal chroniony ustawą o bieliku i orle przednim oraz ustawą o traktacie ptaków wędrownych.",
+      "when": "USFWS: 417 znanych par lęgowych w dolnych 48 stanach w 1963 → 9789 par przy zdjęciu z listy w 2007 → około 316 700 osobników i 71 467 zajętych gniazd (dane 2018–2019). IUCN: Least Concern.",
+      "humanRole": "Strzelanie i DDT spowodowały krach. Zakaz DDT z 1972, praca ESA i ochrona gniazd go odwróciły.",
+      "sources": [],
+      "sourcesNote": "Strona gatunku USFWS; USFWS Bald Eagle Population Size: 2020 Update; zasada zdjęcia z listy, Federal Register, 2007."
+    },
+    "white-rhinoceros": {
+      "commonName": "Nosorożec biały",
+      "hook": "Południowe białe nosorożce sprowadzono sto lat temu do jednego schronienia w RPA; IUCN/TRAFFIC na koniec 2024 szacuje afrykańskie białe na około 15 752 — Near Threatened, wciąż główny żywy zasób gatunku.",
+      "imageAlt": "Południowy nosorożec biały z cielęciem na pastwisku; widać szeroką kwadratową wargę",
+      "what": "Szerokopyski pasący się nosorożec sawanny. Dwa podgatunki: południowy (odzysk) i północny (funkcjonalnie wymarły na wolności — już na półce Endangered). Niemal wszystkie żywe białe nosorożce to podgatunek południowy (C. s. simum).",
+      "range": "Sawanna afrykańska. Południowe białe sprowadzono sto lat temu do jednego schronienia w RPA. Podgatunek północny nie jest bohaterem tej karty.",
+      "story": "Ochrona i przesiedlenia z Hluhluwe–iMfolozi odbudowały południowe liczby z maleńkiej resztki do dziesiątek tysięcy. To powrót półki Przetrwałe. To nie ta sama historia co krytycznie zagrożone nosorożce czarny, jawajski czy sumatrzański i nie resztka północnego białego.",
+      "when": "Komunikat IUCN (7 sie 2025, za raportem AfRSG/TRAFFIC dla CITES): 15 752 białych nosorożców w Afryce na koniec 2024 (spadek o 11,2% wobec 2023 — susza, spis i wstrząsy zarządzania po wcześniejszych zyskach). Podsumowania IRF nadal trzymają długi łuk: „mniej niż 100 na początku XX wieku → dziesiątki tysięcy”. Czerwona lista IUCN: Near Threatened.",
+      "humanRole": "Polowania zbiły podgatunek południowy do jednego schronienia. Ochrona i przesiedlenia odbudowały żywy zasób.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Ceratotherium simum, Near Threatened); komunikat IUCN, 7 sie 2025; International Rhino Foundation; raport przewodniczącego AfRSG w Pachyderm; plan zarządzania bioróżnorodnością RPA."
+    },
+    "arabian-oryx": {
+      "commonName": "Oryks arabski",
+      "hook": "Na początku lat 70. uznany za wymarły na wolności, potem wrócił z hodowli; do oceny IUCN 2016 na wolności znów około 1220 (850 dorosłych) — pierwszy gatunek, który wrócił z Extinct in the Wild do Vulnerable.",
+      "imageAlt": "Oryks arabski w pustynnych zaroślach rezerwatu Uruq Bani Ma’arid w Arabii Saudyjskiej",
+      "what": "Biała pustynna antylopa z długimi, niemal prostymi rogami — najmniejszy Oryx, rodzimy dla pustyń i stepów Półwyspu Arabskiego.",
+      "range": "Pustynie i stepy Półwyspu Arabskiego. Wypuszczenia od 1980 wróciły zwierzęta do Omanu, Arabii Saudyjskiej, Izraela, ZEA, Jordanii i miejsc pokrewnych.",
+      "story": "Myślistwo zmotoryzowane opróżniło stada. Hodowla w niewoli i wypuszczenia od 1980 wróciły zwierzęta ze stad hodowlanych. Nadal zagrożony (siedlisko, nielegalne polowania, małe dzikie sumy) — ale udokumentowany powrót z Extinct in the Wild, nie CR bez ścieżki odzysku.",
+      "when": "Na początku lat 70. uznany za wymarły na wolności. Karta faktów IUCN SSC Antelope Specialist Group (ocena 2016): około 1220 na wolności (850 dorosłych) i 6000–7000 w niewoli. Status: Vulnerable — pierwszy gatunek, który wrócił z Extinct in the Wild do Vulnerable. Wiadomość IUCN (2011) zapisała zejście z wyższej kategorii zagrożenia. Royal Society Open Science (2021) omawia genetykę reintrodukcji w Omanie.",
+      "humanRole": "Myślistwo zmotoryzowane opróżniło ostatnie dzikie stada. Hodowla w niewoli i wypuszczenia od 1980 wróciły gatunek.",
+      "sources": [],
+      "sourcesNote": "Czerwona lista IUCN (Oryx leucoryx, Vulnerable); IUCN, „A grain of hope in the desert” (2011); karta faktów IUCN SSC Antelope Specialist Group; Royal Society Open Science, 2021."
+    },
+    "iberian-lynx": {
+      "commonName": "Ryś iberyjski",
+      "hook": "W 2002 roku zostały tylko 94 rysie iberyjskie, co czyniło je najbardziej zagrożonym kotem na Ziemi. Spis z 2025 roku naliczył 2663 rysie w Hiszpanii i Portugalii.",
+      "imageAlt": "Ryś iberyjski z profilu: pędzelki na uszach, kołnierz sierści na policzkach i krótki ogon z czarnym końcem",
+      "what": "Ryś iberyjski (Lynx pardinus) jest średniej wielkości dzikim kotem o cętkowanym, rdzawożółtym futrze, pędzelkach na uszach, kołnierzu sierści wzdłuż policzków i krótkim ogonie z czarnym końcem. Dorosłe zwierzę ma w kłębie około 0,5 m, od nosa do końca ogona około 0,9 m i waży mniej więcej od 6 do 16 kg. Żyje tylko na Półwyspie Iberyjskim i zależy od dzikiego królika, swojej głównej zdobyczy.",
+      "range": "W 2025 roku rysie żyły w 26 oddzielnych obszarach Hiszpanii i Portugalii, a w 18 z nich stwierdzono rozmnażanie. W Hiszpanii naliczono 2269 rysi, w Portugalii 394. W samej Hiszpanii w Kastylii-La Manchy żyło 1051, w Andaluzji 885 i w Estremadurze 302, mniej w Murcji, Kastylii i León oraz Madrycie. Główną ostoją gatunku są góry Sierra Morena, gdzie naliczono 1145. Według rządu Andaluzji liczba rysi w Andaluzji wzrosła z 457 w 2019 roku do 885 w 2025 roku. Obszar, na którym występuje ryś, powiększył się z 449 kilometrów kwadratowych w 2005 roku do co najmniej 3320 w 2022 roku.",
+      "story": "W dwudziestym wieku liczba rysi iberyjskich spadała z czterech powodów: niszczono śródziemnomorski las, dwie nowe choroby wirusowe gwałtownie zmniejszyły liczbę dzikich królików, ludzie prześladowali rysia jako szkodnika, a wiele zwierząt ginęło na drogach lub topiło się w studniach. W 2002 roku przetrwały tylko dwie grupy, jedna w okolicy Doñany i jedna w górach Sierra Morena, razem 94 rysie. Uznano wtedy gatunek za najbardziej zagrożonego kota na Ziemi, a Międzynarodowa Unia Ochrony Przyrody nadała mu kategorię krytycznie zagrożonego. Hiszpania, Portugalia i Unia Europejska rozpoczęły długą akcję ratunkową. Właściciele ziemscy zgodzili się gospodarować tak, by przybywało królików, ośrodki hodowlane w Hiszpanii i Portugalii odchowywały rysie, a od 2010 roku ponad 400 zwierząt wypuszczono tam, gdzie gatunek zniknął. Portugalia zaczęła własne wypuszczenia w 2014 roku. Liczba rysi przekroczyła 1000 w 2020 roku i 2000 w 2023 roku.",
+      "when": "W czerwcu 2024 roku Międzynarodowa Unia Ochrony Przyrody przeniosła rysia iberyjskiego z kategorii zagrożonego do kategorii narażonego. Wcześniej gatunek miał kategorię krytycznie zagrożonego od 2002 do 2008 roku i zagrożonego w 2015 roku. Spis opublikowany w czerwcu 2026 roku przez hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego naliczył w 2025 roku 2663 rysie, wobec 2401 w 2024 roku i 1365 w 2021 roku. Wśród nich 1711 było dorosłych i prawie dorosłych, a 952 młode, przy czym 542 samice rozmnażały się lub miały własne terytoria. Ministerstwo uważa te liczby za minimum.",
+      "humanRole": "Ludzie najpierw doprowadzili rysia na skraj wymarcia, a potem pomogli mu wrócić. Umowy z właścicielami ziemi poprawiły środowisko i zwiększyły liczbę królików, rysie hodowano w ośrodkach w Hiszpanii i Portugalii i wypuszczano na nowych terenach, a wzdłuż dróg zbudowano przejścia pod jezdnią i ogrodzenia. Drogi pozostają największym zagrożeniem: w 2025 roku 212 z 273 odnotowanych śmierci rysi nastąpiło na drogach. Do innych zagrożeń Międzynarodowa Unia Ochrony Przyrody zalicza nowe wybuchy chorób wirusowych królików, choroby przenoszone przez koty domowe, kłusownictwo i związane z klimatem zmiany środowiska.",
+      "sources": [
+        {
+          "label": "Czerwona lista gatunków zagrożonych Międzynarodowej Unii Ochrony Przyrody: ryś iberyjski (IUCN Red List of Threatened Species: Lynx pardinus, Rodríguez 2024)",
+          "url": "https://www.iucnredlist.org/species/12520/218695618"
+        },
+        {
+          "label": "Międzynarodowa Unia Ochrony Przyrody: Ryś iberyjski odradza się dzięki ochronie przyrody, komunikat prasowy z 20 czerwca 2024 (Iberian lynx rebounding thanks to conservation action)",
+          "url": "https://iucn.org/press-release/202406/iberian-lynx-rebounding-thanks-conservation-action-iucn-red-list"
+        },
+        {
+          "label": "Grupa Specjalistów ds. Kotowatych Komisji Przetrwania Gatunków Międzynarodowej Unii Ochrony Przyrody: Wiadomości o kotowatych, wydanie specjalne 17, Ryś iberyjski, ratowanie symbolicznego gatunku, 2024 (Cat News Special Issue 17, The Iberian lynx, rescue of an iconic species)",
+          "url": "https://www.catsg.org/_files/ugd/7a07e2_97c4f555118e4f8d9da2b51e649bca32.pdf"
+        },
+        {
+          "label": "Grupa Specjalistów ds. Kotowatych Komisji Przetrwania Gatunków Międzynarodowej Unii Ochrony Przyrody: żyjące gatunki, ryś iberyjski (Living Species, Iberian lynx)",
+          "url": "https://www.catsg.org/living-species-iberianlynx"
+        },
+        {
+          "label": "Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego: spis rysia iberyjskiego, Hiszpania i Portugalia, 2025, dokument (Censo de lince ibérico, España y Portugal, 2025)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+        },
+        {
+          "label": "Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego za pośrednictwem Fundacji Bioróżnorodności: populacja rysia iberyjskiego osiągnęła 2663 osobniki w 2025 roku, komunikat prasowy z 5 czerwca 2026 (The Iberian lynx population reached 2,663 specimens in 2025)",
+          "url": "https://fundacion-biodiversidad.es/en/notas_de_prensa_mite/the-iberian-lynx-population-reached-2663-specimens-in-2025/"
+        },
+        {
+          "label": "Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego: Hiszpański spis gatunków lądowych, ryś iberyjski, karta gatunku, dokument (Inventario Español de Especies Terrestres, Lynx pardinus)",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/ieet_mami_lynx_pardinus_tcm30-99818.pdf"
+        },
+        {
+          "label": "Projekt Unii Europejskiej na rzecz ochrony przyrody: raport dla szerokiej publiczności, 2018, dokument (LIFE Iberlince, Layman report 2018)",
+          "url": "https://www.iberlince.eu/files/images/docs/layman_eng.pdf"
+        },
+        {
+          "label": "Projekt Unii Europejskiej na rzecz ochrony przyrody: historia (LIFE Iberlince, History)",
+          "url": "https://www.iberlince.eu/index_php/eng/project"
+        },
+        {
+          "label": "Projekt Unii Europejskiej na rzecz ochrony przyrody: ryś iberyjski, ekologia (LIFE Iberlince, Iberian lynx, Ecology)",
+          "url": "https://www.iberlince.eu/index_php/eng/lynx/ecology"
+        },
+        {
+          "label": "Europejska Agencja Wykonawcza ds. Klimatu, Infrastruktury i Środowiska: Powrót kota, liczba rysi iberyjskich wzrosła dziesięciokrotnie w 20 lat, 20 lipca 2021 (The comeback cat: Iberian lynx numbers up tenfold in 20 years)",
+          "url": "https://cinea.ec.europa.eu/news-events/news/comeback-cat-iberian-lynx-numbers-tenfold-20-years-2021-07-20_en"
+        },
+        {
+          "label": "Baza danych programu Komisji Europejskiej na rzecz przyrody i klimatu: projekt ochrony i reintrodukcji rysia iberyjskiego w Andaluzji (LIFE06 NAT/E/000209, Conservation and reintroduction of the Iberian lynx in Andalucia)",
+          "url": "https://webgate.ec.europa.eu/life/publicWebsite/project/LIFE06-NAT-E-000209/conservation-and-reintroduction-of-the-iberian-lynx-in-andalucia"
+        },
+        {
+          "label": "Rząd Andaluzji (Junta de Andalucía): Andaluzyjska Sierra Morena pozostaje głównym ośrodkiem rysia iberyjskiego na półwyspie, 3 września 2026 (La Sierra Morena andaluza se mantiene como el principal núcleo de lince ibérico de la Península)",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/la-sierra-morena-andaluza-se-mantiene-como-el-principal-n%C3%BAcleo-de-lince-ib%C3%A9rico-de-la-pen%C3%ADnsula/20151"
+        },
+        {
+          "label": "Portugalski Instytut Ochrony Przyrody i Lasów (ICNF): ryś iberyjski, aktualności (Lince-ibérico, Novidades)",
+          "url": "https://areasprotegidas.icnf.pt/lince/index.php/noticias/novidades"
+        },
+        {
+          "label": "Muzeum Zoologiczne Uniwersytetu Michigan, internetowy przewodnik po różnorodności zwierząt: ryś iberyjski (Lynx pardinus, Spanish lynx)",
+          "url": "https://animaldiversity.org/accounts/Lynx_pardinus/"
+        }
+      ],
+      "gridSource": {
+        "label": "Hiszpańskie Ministerstwo Transformacji Ekologicznej i Wyzwania Demograficznego: spis rysia iberyjskiego, Hiszpania i Portugalia, 2025, dokument (Censo de lince ibérico, España y Portugal, 2025)",
+        "url": "https://www.miteco.gob.es/content/dam/miteco/es/biodiversidad/temas/inventarios-nacionales/lince/censolinceiberico2025.pdf"
+      },
+      "image": {
+        "caption": "Ilustracja Fix Planet"
+      }
+    }
+  }
+}

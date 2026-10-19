@@ -1,0 +1,435 @@
+{
+  "shelf": "insects",
+  "cards": [
+    {
+      "slug": "lord-howe-island-stick-insect",
+      "scientificName": "Dryococelus australis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Phasmida"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/6852/21426226"
+      },
+      "flags": {},
+      "image": {
+        "file": "lord-howe-island-stick-insect.jpg",
+        "kind": "photo",
+        "credit": "Granitethighs / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lord_Howe_Island_stick_insect_Dryococelus_australis_10June2011_PalmNursery.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Dryococelus australis",
+          "url": "https://www.iucnredlist.org/species/6852/21426226"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "queen-alexandras-birdwing",
+      "scientificName": "Ornithoptera alexandrae",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Lepidoptera"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15513/88565197"
+      },
+      "flags": {},
+      "image": {
+        "file": "queen-alexandras-birdwing.jpg",
+        "kind": "photo",
+        "credit": "Peter Wing / Natural History Museum, London (Wikimedia Commons)",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:010361534_Ornithoptera_alexandrae_dorsal_male.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Ornithoptera alexandrae",
+          "url": "https://www.iucnredlist.org/species/15513/88565197"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "monarch",
+      "scientificName": "Danaus plexippus plexippus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Lepidoptera"
+      },
+      "iucn": {
+        "category": "VU",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/194052138/246096271"
+      },
+      "flags": {},
+      "image": {
+        "file": "monarch.jpg",
+        "kind": "photo",
+        "credit": "jcantroot / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monarch_butterfly_on_flower.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Danaus plexippus plexippus",
+          "url": "https://www.iucnredlist.org/species/194052138/246096271"
+        },
+        {
+          "label": "IUCN Red List — Danaus plexippus",
+          "url": "https://www.iucnredlist.org/species/159971/219149911"
+        },
+        {
+          "label": "U.S. Fish and Wildlife Service — monarch",
+          "url": "https://www.fws.gov/species/monarch-danaus-plexippus"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "franklins-bumble-bee",
+      "scientificName": "Bombus franklini",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Hymenoptera"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/135295/4070259"
+      },
+      "flags": {},
+      "image": {
+        "file": "franklins-bumble-bee.jpg",
+        "kind": "photo",
+        "credit": "James P. Strange, USDA-ARS Pollinating Insect Research Unit (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bombus_franklini.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Bombus franklini",
+          "url": "https://www.iucnredlist.org/species/135295/4070259"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "american-burying-beetle",
+      "scientificName": "Nicrophorus americanus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Coleoptera"
+      },
+      "flags": {},
+      "image": {
+        "file": "american-burying-beetle.jpg",
+        "kind": "photo",
+        "credit": "USFWS Mountain-Prairie / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Burying_Beetle.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "U.S. Fish and Wildlife Service — American burying beetle",
+          "url": "https://www.fws.gov/species/american-burying-beetle-nicrophorus-americanus"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "hines-emerald",
+      "scientificName": "Somatochlora hineana",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Odonata"
+      },
+      "flags": {},
+      "image": {
+        "file": "hines-emerald.jpg",
+        "kind": "photo",
+        "credit": "Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Somatochlora_hineana.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "U.S. Fish and Wildlife Service — Hine’s emerald",
+          "url": "https://www.fws.gov/species/hines-emerald-somatochlora-hineana"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "rusty-patched-bumble-bee",
+      "scientificName": "Bombus affinis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Hymenoptera"
+      },
+      "flags": {},
+      "image": {
+        "file": "rusty-patched-bumble-bee.jpg",
+        "kind": "photo",
+        "credit": "USFWS Midwest Region / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rusty_Patched_Bumble_Bee_on_Wild_Bergamot_(28626833097).jpg"
+      },
+      "primarySources": [
+        {
+          "label": "U.S. Fish and Wildlife Service — Rusty patched bumble bee",
+          "url": "https://www.fws.gov/species/rusty-patched-bumble-bee-bombus-affinis"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "european-stag-beetle",
+      "scientificName": "Lucanus cervus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Coleoptera"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/239951016/213072777"
+      },
+      "flags": {},
+      "image": {
+        "file": "european-stag-beetle.jpg",
+        "kind": "photo",
+        "credit": "Reinhold Möller / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamberg_Hain_Hirschk%C3%A4fer_focus_stacked-20240520-RM-103648.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Lucanus cervus (Europe / EU27)",
+          "url": "https://www.iucnredlist.org/species/239951016/213072777"
+        },
+        {
+          "label": "DOI — IUCN assessment record",
+          "url": "https://doi.org/10.2305/iucn.uk.2025-2.rlts.t239951016a213072777.en"
+        },
+        {
+          "label": "EUNIS — Lucanus cervus",
+          "url": "https://eunis.eea.europa.eu/species/221"
+        },
+        {
+          "label": "JNCC — UK Habitats Directive Art.17 S1083 (2019)",
+          "url": "https://jncc.gov.uk/jncc-assets/Art17/S1083-UK-Habitats-Directive-Art17-2019.pdf"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "hermit-beetle",
+      "scientificName": "Osmoderma eremita",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Coleoptera"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15632/283806710"
+      },
+      "flags": {},
+      "image": {
+        "file": "hermit-beetle.jpg",
+        "kind": "photo",
+        "credit": "Nemracc / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osmoderma_eremita,_Urwald_Sababurg.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "IUCN Red List — Osmoderma eremita",
+          "url": "https://www.iucnredlist.org/species/15632/283806710"
+        },
+        {
+          "label": "DOI — IUCN assessment record",
+          "url": "https://doi.org/10.2305/iucn.uk.2025-2.rlts.t15632a283806710.en"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "salt-creek-tiger-beetle",
+      "scientificName": "Cicindela nevadica lincolniana",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Coleoptera"
+      },
+      "flags": {},
+      "image": {
+        "file": "salt-creek-tiger-beetle.jpg",
+        "kind": "photo",
+        "credit": "Kai243 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ellipsoptera_nevadica_lincolniana.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "U.S. Fish and Wildlife Service — Salt Creek tiger beetle",
+          "url": "https://www.fws.gov/species/salt-creek-tiger-beetle-cicindela-nevadica-lincolniana"
+        },
+        {
+          "label": "Nebraska Game and Parks — Salt Creek tiger beetle",
+          "url": "https://outdoornebraska.gov/learn/nebraska-wildlife/nebraska-animals/insects/salt-creek-tiger-beetle/"
+        },
+        {
+          "label": "USFWS — Salt Creek tiger beetle recovery plan (PDF)",
+          "url": "https://ecos.fws.gov/docs/recovery_plan/SCTB%20Signed%20Final%20Recovery%20Plan.pdf"
+        },
+        {
+          "label": "UNL — 30-year visual population estimates (open PDF)",
+          "url": "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2041&context=entomologyfacpub"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "wetapunga",
+      "scientificName": "Deinacrida heteracantha",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "insects",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Orthoptera"
+      },
+      "flags": {},
+      "image": {
+        "file": "wetapunga.jpg",
+        "kind": "photo",
+        "credit": "Shaun Lee / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_12260329.jpg"
+      },
+      "primarySources": [
+        {
+          "label": "NZTCS — Deinacrida heteracantha",
+          "url": "https://nztcs.org.nz/assessments/19134"
+        },
+        {
+          "label": "DOC — Wetapunga",
+          "url": "https://www.doc.govt.nz/nature/native-animals/invertebrates/weta/wetapunga/"
+        },
+        {
+          "label": "DOC — Best practice translocation of giant wētā (PDF)",
+          "url": "https://www.doc.govt.nz/globalassets/documents/getting-involved/translocation/translocation-best-practice-giant-weta.pdf"
+        },
+        {
+          "label": "Auckland Zoo — Bay of Islands return (2020)",
+          "url": "https://www.aucklandzoo.co.nz/news/were-returning-wetapunga-to-the-bay-of-islands-after-a-180-year-absence"
+        }
+      ],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    }
+  ]
+}

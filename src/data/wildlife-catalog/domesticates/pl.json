@@ -1,0 +1,358 @@
+{
+  "locale": "pl",
+  "shelf": "domesticates",
+  "cards": {
+    "cattle": {
+      "commonName": "Bydło",
+      "hook": "Główne bydło mięsne i mleczne świata: bydło taurynowe i zebu, które ludzie trzymają dla mleka, mięsa, skór i uciągu.",
+      "imageAlt": "Bydło herefordzkie na pastwisku",
+      "what": "Bydło to udomowione wołowate trzymane dla mleka, mięsa, skór i uciągu. Żywe bydło należy do linii taurynowej (Bos taurus) i zebu (Bos indicus). Ludzie wyhodowali je z tura (Bos primigenius) w holocenie.",
+      "range": "Na wszystkich zamieszkanych kontynentach. Zagęszczenie idzie za pastwiskiem, paszą i rynkiem mleka. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład bydła jako inwentarza.",
+      "story": "Ludzie udomowili bydło od tura w holocenie i poprowadzili stada z uprawą i handlem. Dziś to zarządzany system żywności: rasy, opasy i stada pasterskie.",
+      "when": "Żywy udomowiony gatunek, utrzymywany przez ludzi na świecie.",
+      "humanRole": "Zrobiliśmy zwierzę, roznieśliśmy je i prowadzimy stada, które karmią dużą część świata.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, bydło (Livestock Systems: Cattle)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/cattle/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, bydło",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/cattle/en/"
+      },
+      "image": {
+        "credit": "Zdjęcie: Keith Weller, Departament Rolnictwa Stanów Zjednoczonych, Wikimedia Commons",
+        "licenseLabel": "domena publiczna"
+      }
+    },
+    "chicken": {
+      "commonName": "Kura",
+      "hook": "Najliczniejszy inwentarz domowy: kur bankiwa, który stał się podstawowym ptakiem ferm na świecie.",
+      "imageAlt": "Kura domowa stoi w suchej trawie",
+      "what": "Kura (Gallus gallus domesticus) to udomowiona forma kura bankiwa. Jest najliczniejszym inwentarzem: żywych kur jest więcej niż jakiegokolwiek innego ptaka czy ssaka hodowlanego. Ludzie trzymają tego ptaka dla mięsa i jaj.",
+      "range": "Podwórka, stodoły i hale przemysłowe na wszystkich zamieszkanych kontynentach. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład kur jako inwentarza.",
+      "story": "Udomowienie w Azji dało ptaka, którego można wozić. Przemysłowa hodowla zrobiła potem linie mięsne i nieśne o krótkim, gęstym życiu. Stada wiejskie zostają obok hal przemysłowych.",
+      "when": "Żywy udomowiony gatunek i najliczniejsze zwierzę gospodarskie.",
+      "humanRole": "Wyhodowaliśmy, zamknęliśmy i liczymy je jako system żywności z mięsa i jaj.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, kury (Livestock Systems: Chickens)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/chickens/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, kury",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/chickens/en/"
+      },
+      "image": {
+        "credit": "Zdjęcie: Susulyka, Wikimedia Commons, licencja"
+      }
+    },
+    "sheep": {
+      "commonName": "Owca",
+      "hook": "Owce to zwierzęta pastwiskowe hodowane głównie dla wełny, mięsa, mleka i skór, w rasach przystosowanych do miejsc od zimnych, wilgotnych wyżyn północnej Europy po suche tereny Afryki, Azji i Australazji.",
+      "imageAlt": "Owca domowa w trawie, twarzą do kamery",
+      "what": "Owca (Ovis aries) to udomowiony mały przeżuwacz trzymany dla wełny, mięsa i mleka.",
+      "range": "Pastwiska od suchego stepu po wilgotne wzgórza umiarkowane i systemy paszowe obok. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład owiec jako inwentarza.",
+      "story": "Ludzie udomowili owcę w neolitycznym Bliskim Wschodzie i przeprowadzili ją przez kontynenty. Rasy teraz służą wełnie, mleku albo mięsu.",
+      "when": "Żywy udomowiony gatunek, hodowany dla wełny, mięsa i mleka.",
+      "humanRole": "Wyhodowaliśmy i przemieściliśmy je jako włókno i jedzenie; krajobraz, który spasają, jest nasz.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, owce (Livestock Systems: Sheep)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/sheep/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, owce",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/sheep/en/"
+      },
+      "image": {
+        "credit": "Zdjęcie: T.Voekler, Wikimedia Commons, licencja"
+      }
+    },
+    "pig": {
+      "commonName": "Świnia",
+      "hook": "Świnia domowa, Sus domesticus, hodowana dla mięsa na fermach od wiejskich chlewów po hale przemysłowe.",
+      "imageAlt": "Świnia domowa na podwórzu fermy, różowa i ciężka",
+      "what": "Świnia (Sus domesticus) to świnia domowa trzymana dla mięsa. Ludzie udomowili ją z dzika więcej niż raz, a dziś większość świń mięsnych to linie komercyjne. Świnie wiejskie i rasy lokalne zostają. Zwierzęta wypuszczone i zbiegłe utworzyły populacje zdziczałe w wielu krajach.",
+      "range": "Fermy na świecie, od wiejskich chlewów po hale przemysłowe. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje globalny rozkład świń jako inwentarza.",
+      "story": "Świnie udomawiano z dzika więcej niż raz. Dziś większość świń mięsnych to linie komercyjne. Świnie wiejskie i rasy lokalne zostają, a zwierzęta wypuszczone i zbiegłe utworzyły populacje zdziczałe w wielu krajach.",
+      "when": "Żywy udomowiony gatunek, hodowany dla mięsa.",
+      "humanRole": "Trzymamy je jako jedzenie, a zwierzęta wypuszczone i zbiegłe utworzyły populacje zdziczałe w wielu krajach.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, świnie (Livestock Systems: Pigs)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/pigs/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, świnie",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/pigs/en/"
+      },
+      "image": {
+        "credit": "Zdjęcie: Gzen92, Wikimedia Commons, licencja"
+      }
+    },
+    "water-buffalo": {
+      "commonName": "Bawół wodny",
+      "hook": "Około 15 procent światowego mleka — a w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.",
+      "imageAlt": "Domowy byk bawoli koło Mehsany, Gujarat, Indie",
+      "what": "Bawół wodny (Bubalus bubalis) to udomowiony bawół azjatycki, trzymany dla mleka, mięsa i uciągu. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa liczy bawoły na około 15 procent światowego mleka; w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.",
+      "range": "Południowa i południowo-wschodnia Azja trzyma większość stada; mniejsze populacje są w basenie Morza Śródziemnego, na Kaukazie, w Ameryce Południowej i dalej. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje bawoły jako inwentarz.",
+      "story": "Ludzie udomowili bawoła azjatyckiego i zbudowali wokół niego systemy ryżu i mleka. Typy rzeczne i bagienne różnią się mlekiem, uciągiem i mokradłami, w których żyją.",
+      "when": "Żywy udomowiony gatunek i ważny gatunek mleczny Azji Południowej.",
+      "humanRole": "Trzymamy bawoły jako zwierzęta mleczne i pociągowe w Azji Południowej i w mniejszych stadach gdzie indziej.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: mleko bawole (Buffalo milk)",
+          "url": "https://www.fao.org/dairy-production-products/dairy/buffaloes/en"
+        },
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, bawoły (Livestock Systems: Buffaloes)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: mleko bawole",
+        "url": "https://www.fao.org/dairy-production-products/dairy/buffaloes/en"
+      },
+      "image": {
+        "credit": "Zdjęcie: Yann Forget, Wikimedia Commons, licencja"
+      }
+    },
+    "horse": {
+      "commonName": "Koń",
+      "hook": "Konie domowe rozeszły się ze stepów zachodniej Eurazji około 2200–2000 p.n.e., jak pokazali Librado i współpracownicy w czasopiśmie Nature w 2021 roku.",
+      "imageAlt": "Biały koń kamargijski w trawie",
+      "what": "Koń (Equus ferus caballus) to koń domowy, na którym jeżdżą, którego zaprzęgają i którego trzymają. Praca nad dawnym materiałem genetycznym Librado i współpracowników (czasopismo Nature, 2021) kładzie powstanie i rozprzestrzenienie współczesnej linii domowej na stepy zachodniej Eurazji, z ekspansją około 2200–2000 p.n.e. Konie z Botai w Kazachstanie należą do innej linii.",
+      "range": "Trzymane na świecie. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje konie jako inwentarz. Stada robocze, sportowe i zdziczałe żyją na wszystkich zamieszkanych kontynentach.",
+      "story": "Współczesna linia domowa zastąpiła wcześniejsze linie, rozchodząc się z ludźmi. Ta data to wynik genetyczny badania z 2021 roku. Stada robocze, sportowe i zdziczałe pochodzą z tej trzymanej linii.",
+      "when": "Żywy udomowiony gatunek. Współczesna linia: stepy zachodniej Eurazji, około 2200–2000 p.n.e. (Librado i in., 2021).",
+      "humanRole": "Wyhodowaliśmy i przemieściliśmy je jako transport i pracę. Data żywej linii pochodzi z badania genetycznego z 2021 roku.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, konie (Livestock Systems: Horses)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
+        },
+        {
+          "label": "Librado i in., czasopismo Nature, 2021 — konie stepów zachodniej Eurazji (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)",
+          "url": "https://doi.org/10.1038/s41586-021-04018-9"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, konie",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
+      },
+      "image": {
+        "credit": "Zdjęcie: TwoWings, Wikimedia Commons",
+        "licenseLabel": "domena publiczna"
+      }
+    },
+    "dog": {
+      "commonName": "Pies",
+      "hook": "Pierwsze zwierzę udomowione, już genetycznie odrębne od dzisiejszych wilków, z co najmniej pięcioma liniami około 11 tysięcy lat temu.",
+      "imageAlt": "Dwa czarne labradory z obrożami w suchej trawie",
+      "what": "Pies (Canis familiaris) to pierwsze zwierzę, które ludzie udomowili. Bergström i współpracownicy (czasopismo Science, 2020) pokazują, że psy były już genetycznie odrębne od dzisiejszych wilków i że około 11 tysięcy lat temu istniało co najmniej pięć linii psów.",
+      "range": "Tam, gdzie żyją ludzie. Psy wioskowe, linie użytkowe i rasowe to jeden gatunek domowy.",
+      "story": "Psy weszły do obozowisk w późnym plejstocenie. We wczesnym holocenie były już zestawem linii, genetycznie odrębnym od dzisiejszych wilków. Późniejsza hodowla zrobiła współczesne typy.",
+      "when": "Najstarszy udomowiony gatunek. Odrębny od dzisiejszych wilków w holocenie; co najmniej pięć linii około 11 tysięcy lat temu (Bergström i in., 2020).",
+      "humanRole": "Zrobiliśmy pierwsze trzymane zwierzę: towarzysza, myśliwego i stróża.",
+      "sources": [
+        {
+          "label": "Bergström i in.: pochodzenie prehistorycznych psów (Origins and genetic legacy of prehistoric dogs), czasopismo Science, 2020, pełny tekst w PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
+        },
+        {
+          "label": "Bergström i in., czasopismo Science, 2020 (doi:10.1126/science.aba9572)",
+          "url": "https://doi.org/10.1126/science.aba9572"
+        }
+      ],
+      "gridSource": {
+        "label": "Bergström i in., Science, 2020 — pochodzenie prehistorycznych psów, pełny tekst w PubMed Central",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
+      },
+      "image": {
+        "credit": "Zdjęcie: Marco Ponepal, Wikimedia Commons, licencja"
+      }
+    },
+    "camelids": {
+      "commonName": "Wielbłądowate",
+      "hook": "Ludzie trzymają dromadery, baktriany, lamy i alpaki do transportu, włókna, mleka i mięsa, a Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa ogłosiła rok 2024 Międzynarodowym Rokiem Wielbłądowatych.",
+      "imageAlt": "Dromader z profilu",
+      "what": "Wielbłądowate, które trzymają ludzie, to dromader i baktrian (Camelus), lama (Lama glama) i alpaka (Vicugna pacos). Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa ogłosiła rok 2024 Międzynarodowym Rokiem Wielbłądowatych.",
+      "range": "Wielbłądy żyją w suchej Azji i Afryce, a teraz także w Australii. Lamy i alpaki żyją w Andach, a stada eksportowe żyją także gdzie indziej.",
+      "story": "Ludzie udomowili wielbłądy Starego Świata i andyjskie wielbłądowate jako juczne, wełniste, mleczne i mięsne zwierzęta suchych i wysokich krajów. Międzynarodowy Rok Wielbłądowatych w 2024 roku prosił rządy, by traktować te stada jako system żywności i kultury.",
+      "when": "Żywe udomowione gatunki. Międzynarodowy Rok Wielbłądowatych przypadł na 2024 rok.",
+      "humanRole": "Trzymamy wielbłądy, lamy i alpaki jako zwierzęta robocze i wełniste suchych i górskich ziem.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Międzynarodowy Rok Wielbłądowatych, 2024 (International Year of Camelids 2024)",
+          "url": "https://www.fao.org/camelids-2024/en"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Międzynarodowy Rok Wielbłądowatych, 2024",
+        "url": "https://www.fao.org/camelids-2024/en"
+      },
+      "image": {
+        "credit": "Zdjęcie: Hans Hillewaert, Wikimedia Commons, licencja"
+      }
+    },
+    "goat": {
+      "commonName": "Koza",
+      "hook": "Mały przeżuwacz, który żywi się głównie pędami i liśćmi krzewów, hodowany dla mięsa, mleka, skór i włosia w małych gospodarstwach, stadach pasterskich i wyspecjalizowanych gospodarstwach mlecznych.",
+      "imageAlt": "Brązowa koza domowa z długimi, zwisającymi uszami.",
+      "what": "Koza domowa (Capra hircus; Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa używa nazwy Capra aegagrus hircus) to mały przeżuwacz hodowany głównie dla mięsa, mleka, skór i włosia. Kozy żywią się przede wszystkim krzewami i mają bardzo urozmaiconą dietę roślinną, dzięki czemu przystosowały się do wielu różnych środowisk.",
+      "range": "Kozy są szeroko rozpowszechnione i hodowane w bardzo różnych systemach gospodarowania na całym świecie. Większość żyje w małych gospodarstwach mieszanych. Kozy są też ważną częścią stad pasterskich, a w klimacie umiarkowanym cenne zwierzęta utrzymuje się w wyspecjalizowanej produkcji mleka. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa publikuje globalne mapy liczby kóz na kilometr kwadratowy za lata 2010, 2015 i 2020.",
+      "story": "Kozy należały do pierwszych zwierząt kopytnych udomowionych przez człowieka. Dane archeologiczne datują początki udomowienia kóz na około 10 500 lat temu, w górnej dolinie Eufratu w południowo-wschodniej Anatolii. Badanie 473 dzikich kóz bezoarowych, dzikich przodków kozy domowej (Naderi i współpracownicy, czasopismo Proceedings of the National Academy of Sciences, 2008), wykazało, że niemal wszystkie dzisiejsze kozy domowe pochodzą prawdopodobnie z ośrodka udomowienia we wschodniej Anatolii, który mógł obejmować także północny i środkowy Zagros.",
+      "when": "Żywy gatunek udomowiony, hodowany na całym świecie. System Informacji o Różnorodności Zwierząt Domowych Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa gromadzi dane o rasach zwierząt gospodarskich i zagrożeniu ich wyginięciem; obejmuje około 8800 ras należących do 38 gatunków.",
+      "humanRole": "Ludzie hodują kozy dla mleka, mięsa, skór i włosia w gospodarstwach rodzinnych, w stadach wędrownych pasterzy i w gospodarstwach mlecznych.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa (FAO): systemy hodowli zwierząt, kozy (Livestock Systems: Goats)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/goats/en/"
+        },
+        {
+          "label": "Saeid Naderi i in.: proces udomowienia kozy na podstawie szeroko zakrojonej analizy mitochondrialnego DNA osobników dzikich i domowych (The goat domestication process inferred from large-scale mitochondrial DNA analysis of wild and domestic individuals), czasopismo Proceedings of the National Academy of Sciences, 2008, pełny tekst w PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2584717/"
+        },
+        {
+          "label": "FAO: System Informacji o Różnorodności Zwierząt Domowych (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, kozy",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/goats/en/"
+      },
+      "badgeText": "Hodowla · mały przeżuwacz",
+      "image": {
+        "caption": "Brązowa koza domowa z długimi, zwisającymi uszami.",
+        "credit": "Zdjęcie: Mostafameraji, Wikimedia Commons, licencja"
+      }
+    },
+    "cat": {
+      "commonName": "Kot",
+      "hook": "Domowy towarzysz i łowca szkodników, potomek bliskowschodniego żbika; jego związek z ludźmi zaczął się ponad 9000 lat temu przy spichrzach pierwszych rolników.",
+      "imageAlt": "Młody pręgowany kot w Portugalii.",
+      "what": "Kot domowy (Felis catus) żyje w domach i gospodarstwach jako towarzysz i obrońca przed szkodnikami. Pochodzi od bliskowschodniego żbika (Felis silvestris lybica).",
+      "range": "Ludzie rozwieźli koty po całym świecie, a kot domowy jest być może najliczniejszym zwierzęciem domowym na Ziemi. Koty domowe, gospodarskie, rasowe i wolno żyjące koty miejskie pochodzą od tych samych bliskowschodnich przodków.",
+      "story": "Badanie genetyczne 979 kotów domowych i żbików (Driscoll i współpracownicy, czasopismo Science, 2007) wykazało, że koty udomowiono na Bliskim Wschodzie, prawdopodobnie wraz z rozwojem osad rolniczych w Żyznym Półksiężycu, i że pochodzą od co najmniej pięciu założycieli. Starożytny materiał genetyczny (Ottoni i współpracownicy, czasopismo Nature Ecology & Evolution, 2017) pokazuje, że do puli genowej kota domowego przyczyniły się zarówno bliskowschodnie, jak i egipskie populacje żbika: rozprzestrzenianie zaczęło się w neolicie na Bliskim Wschodzie i przyspieszyło w okresie klasycznym, gdy koty egipskie rozeszły się po całym Starym Świecie morskimi i lądowymi szlakami handlowymi. Jeden z wariantów umaszczenia stał się częsty dopiero po średniowieczu, co sugeruje, że ludzie zaczęli celowo hodować koty ze względu na wygląd później niż większość innych zwierząt domowych.",
+      "when": "Żywy gatunek udomowiony, trzymany jako towarzysz na całym świecie.",
+      "humanRole": "Żbiki prawdopodobnie zamieszkały w pobliżu ludzi, polując na gryzonie w spichrzach pierwszych rolników. Później ludzie wozili koty statkami i szlakami handlowymi po całym Starym Świecie.",
+      "sources": [
+        {
+          "label": "Claudio Ottoni i in.: paleogenetyka rozprzestrzeniania się kota w świecie starożytnym (The palaeogenetics of cat dispersal in the ancient world), czasopismo Nature Ecology & Evolution, 2017",
+          "url": "https://www.nature.com/articles/s41559-017-0139"
+        },
+        {
+          "label": "Carlos A. Driscoll i in.: bliskowschodnie pochodzenie udomowienia kota (The Near Eastern Origin of Cat Domestication), czasopismo Science, 2007, pełny tekst w PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5612713/"
+        }
+      ],
+      "gridSource": {
+        "label": "Ottoni i in., czasopismo Nature Ecology & Evolution, 2017",
+        "url": "https://www.nature.com/articles/s41559-017-0139"
+      },
+      "badgeText": "Towarzysz · Bliski Wschód",
+      "image": {
+        "caption": "Młody pręgowany kot w Portugalii.",
+        "credit": "Zdjęcie: Alvesgaspar, Wikimedia Commons, licencja"
+      }
+    },
+    "donkey": {
+      "commonName": "Osioł",
+      "hook": "Zwierzę juczne udomowione w Afryce około 5000 r. p.n.e.; 99% osłów na świecie żyje w krajach o niskich i średnich dochodach.",
+      "imageAlt": "Osioł pasący się w Clovelly w hrabstwie Devon w Anglii.",
+      "what": "Osioł domowy (Equus asinus) to zwierzę robocze, które przenosi ładunki i ludzi na duże odległości, zwłaszcza na terenach półsuchych i wyżynnych. Nadal jest ważnym wsparciem dla wielu rodzin w krajach o niskich i średnich dochodach.",
+      "range": "Organizacja charytatywna Brooke, która pomaga roboczym koniom, osłom i mułom, szacuje, że na świecie żyje około 116 milionów koniowatych (osłów, koni i mułów), w tym około 36 milionów w 38 krajach o najniższych dochodach, i podaje, że 99% osłów na świecie żyje w krajach o niskich i średnich dochodach. W wielu krajach brakuje dokładnych danych o liczebności: z 36 krajów, których ostatnie spisy przeanalizowała Brooke, 22 nie liczyły koniowatych w ciągu poprzednich 10 lat.",
+      "story": "Badanie genomów 207 współczesnych i 31 dawnych osłów oraz 15 dzikich koniowatych (Todd i współpracownicy, czasopismo Science, 2022) wskazuje na jedno udomowienie w Afryce około 5000 r. p.n.e., po którym osły rozprzestrzeniły się po Afryce i Eurazji. Wcześniejsze badanie 126 osłów domowych i siedmiu dzikich osłów (Wang i współpracownicy, czasopismo Nature Communications, 2020) również wskazuje na Afrykę. Wykazało ono małą zmienność genetyczną chromosomu Y, co prawdopodobnie odzwierciedla kierowanie rozrodem przez ludzi, a także to, że nierozjaśnione czarne lub kasztanowe umaszczenie osłów domowych utrwaliło się prawdopodobnie w trakcie udomowienia.",
+      "when": "Żywy gatunek udomowiony i zwierzę robocze. Rasy osłów rejestruje System Informacji o Różnorodności Zwierząt Domowych Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa. Brooke apeluje do rządów, by zaliczały robocze osły, konie i muły do zwierząt gospodarskich, tak aby obejmowały je krajowe spisy inwentarza.",
+      "humanRole": "Osły od tysięcy lat przenoszą towary na duże odległości i nadal pomagają wielu społecznościom zarabiać na życie.",
+      "sources": [
+        {
+          "label": "Evelyn T. Todd i in.: genomowa historia i globalna ekspansja osłów domowych (The genomic history and global expansion of domestic donkeys), czasopismo Science, 2022, rekord bibliograficzny Uniwersytetu Ludwika i Maksymiliana w Monachium (DOI: 10.1126/science.abo3503)",
+          "url": "https://epub.ub.uni-muenchen.de/110811/"
+        },
+        {
+          "label": "Changfa Wang i in.: genomy osła dają nowy wgląd w udomowienie i selekcję umaszczenia (Donkey genomes provide new insights into domestication and selection for coat color), czasopismo Nature Communications, 2020, pełny tekst w PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7723042/"
+        },
+        {
+          "label": "Brooke, organizacja charytatywna: dane o zwierzętach roboczych (Data on working animals)",
+          "url": "https://www.thebrooke.org/our-work/data-working-equids"
+        }
+      ],
+      "gridSource": {
+        "label": "Todd i in., czasopismo Science, 2022",
+        "url": "https://epub.ub.uni-muenchen.de/110811/"
+      },
+      "badgeText": "Zwierzę robocze · Afryka",
+      "image": {
+        "caption": "Osioł pasący się w Clovelly w hrabstwie Devon w Anglii.",
+        "credit": "Zdjęcie: Adrian Pingstone, Wikimedia Commons",
+        "licenseLabel": "domena publiczna"
+      }
+    },
+    "duck": {
+      "commonName": "Kaczka",
+      "hook": "Kaczki hodowlane, w większości pochodzące od krzyżówek udomowionych po raz pierwszy w Azji Południowo-Wschodniej co najmniej 4000 lat temu, hodowane dla mięsa, jaj i pierza tam, gdzie jest dużo wody.",
+      "imageAlt": "Kaczki domowe na polach ryżowych koło Ubud na Bali w Indonezji.",
+      "what": "Kaczki hodowlane utrzymuje się dla mięsa, jaj i pierza. Według Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa większość kaczek hodowlanych pochodzi od krzyżówki (Anas platyrhynchos). Rasy bardzo różnią się w zależności od miejsca i od tego, czy wyhodowano je na mięso, jaja, pierze, czy do kilku celów naraz.",
+      "range": "Najwięcej kaczek jest tam, gdzie wody jest pod dostatkiem. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa odnotowuje szczególnie duże ich liczby w Bangladeszu, Chinach i Azji Południowo-Wschodniej; kaczki są też popularne w Egipcie, Nigerii i dużej części Europy, zwłaszcza w zachodniej Francji. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa publikuje globalne mapy liczby kaczek na kilometr kwadratowy za lata 2010 i 2015.",
+      "story": "Ludzie po raz pierwszy udomowili kaczki wywodzące się od krzyżówki w Azji Południowo-Wschodniej co najmniej 4000 lat temu. Dziś hoduje się je w bardzo różnych gospodarstwach: od kilku ptaków w gospodarstwie mieszanym po ogromne stada przewożone ciężarówkami na pola ryżowe, by oczyszczały je po zbiorach.",
+      "when": "Żywy gatunek udomowiony. Rasy kaczek rejestruje System Informacji o Różnorodności Zwierząt Domowych Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa.",
+      "humanRole": "Rolnicy trzymają kaczki na stawach i w gospodarstwach mieszanych, a w regionach uprawy ryżu stada żerują na polach po zbiorach.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa (FAO): systemy hodowli zwierząt, kaczki (Livestock Systems: Ducks)",
+          "url": "https://www.fao.org/livestock-systems/global-distributions/ducks/en/"
+        },
+        {
+          "label": "FAO: System Informacji o Różnorodności Zwierząt Domowych (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: systemy hodowli zwierząt, kaczki",
+        "url": "https://www.fao.org/livestock-systems/global-distributions/ducks/en/"
+      },
+      "badgeText": "Drób · Azja Południowo-Wschodnia",
+      "image": {
+        "caption": "Kaczki domowe na polach ryżowych koło Ubud na Bali w Indonezji.",
+        "credit": "Zdjęcie: Jakub Hałun, Wikimedia Commons, licencja"
+      }
+    },
+    "rabbit": {
+      "commonName": "Królik",
+      "hook": "Udomowiony do późnego średniowiecza z dzikiego królika południowej Europy i Afryki Północnej; dziś hodowany dla mięsa, futra i wełny na fermach i w przydomowych hodowlach.",
+      "imageAlt": "Czarny królik domowy na słomie w Ogrodach Kwiatowych Hirschstetten w Wiedniu w Austrii.",
+      "what": "Królik domowy (Oryctolagus cuniculus) jest hodowany dla mięsa, skórek na futra oraz, w przypadku królików angorskich, dla wełny. Pochodzi od dzikiego królika z południowej Europy i Afryki Północnej.",
+      "range": "Chów królików w klatkach rozpowszechnił się na wsi w całej Europie Zachodniej i na przedmieściach miast, a europejska ekspansja kolonialna zaniosła króliki do wielu krajów, gdzie wcześniej ich nie znano, na przykład do Australii i Nowej Zelandii. Dziś króliki żyją niemal w każdym klimacie. Podręcznik Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa o chowie królików opisuje przydomowe króliczarnie jako dobrze dopasowane do potrzeb drobnych rolników, bez względu na to, czy mają własną ziemię.",
+      "story": "Według podręcznika Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa „Królik: chów, zdrowie i produkcja” (1997) dzikiego królika odkryli prawdopodobnie Fenicjanie, którzy dotarli do wybrzeży Hiszpanii około 1000 r. p.n.e. Rzymski pisarz Warron (116–27 p.n.e.) radził trzymać króliki w leporariach, otoczonych kamiennym murem zagrodach lub parkach, razem z zającami i innymi dzikimi zwierzętami do polowań; króliki były wtedy jeszcze dzikie. W szesnastym wieku znano już kilka ras, co jest pierwszym śladem kontrolowanej hodowli, dlatego udomowienie datuje się na późne średniowiecze; zajmowali się nim prawdopodobnie głównie mnisi.",
+      "when": "Żywy gatunek udomowiony. Rasy królików rejestruje System Informacji o Różnorodności Zwierząt Domowych Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa.",
+      "humanRole": "Pasza objętościowa stanowi ważną część diety królika, więc króliki nie konkurują bezpośrednio z ludźmi o żywność, a w wydajnych systemach zamieniają 20% zjedzonego białka w jadalne mięso. Dzięki temu są przydatne dla rodzin wiejskich, którym potrzeba więcej białka zwierzęcego.",
+      "sources": [
+        {
+          "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa (FAO): „Królik: chów, zdrowie i produkcja” (The Rabbit: Husbandry, health and production), seria Produkcja i Zdrowie Zwierząt nr 21, nowe wydanie poprawione, 1997, PDF",
+          "url": "https://www.fao.org/4/t1690e/t1690e.pdf"
+        },
+        {
+          "label": "FAO: System Informacji o Różnorodności Zwierząt Domowych (DAD-IS)",
+          "url": "https://www.fao.org/dad-is/en/"
+        }
+      ],
+      "gridSource": {
+        "label": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: „Królik: chów, zdrowie i produkcja”, 1997",
+        "url": "https://www.fao.org/4/t1690e/t1690e.pdf"
+      },
+      "badgeText": "Drobny inwentarz · Europa",
+      "image": {
+        "caption": "Czarny królik domowy na słomie w Ogrodach Kwiatowych Hirschstetten w Wiedniu w Austrii.",
+        "credit": "Zdjęcie: Paul Korecky, Wikimedia Commons, licencja"
+      }
+    }
+  }
+}

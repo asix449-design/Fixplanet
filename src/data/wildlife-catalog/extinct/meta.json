@@ -1,0 +1,3254 @@
+{
+  "shelf": "extinct",
+  "cards": [
+    {
+      "slug": "spixs-macaw",
+      "scientificName": "Cyanopsitta spixii",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Psittaciformes"
+      },
+      "iucn": {
+        "category": "EW",
+        "scope": "global"
+      },
+      "flags": {
+        "extinctInWild": true
+      },
+      "image": {
+        "file": "spixs-macaw.jpg",
+        "kind": "photo",
+        "credit": "Evan Centanni / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spix%27s_Macaw_(Cyanopsitta_spixii)_at_Jurong_Bird_Park_in_Singapore.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "woolly-mammoth",
+      "scientificName": "Mammuthus primigenius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Proboscidea"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "size": {
+        "height": {
+          "value": 2.9875,
+          "unit": "m",
+          "mean": 2.9875,
+          "range": [
+            2.6,
+            3.4
+          ],
+          "basis": "shoulder height of adult males (from skeletons)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ma-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Woolly_mammoth",
+              "title": "Woolly mammoth - Wikipedia",
+              "use": "counted",
+              "range": [
+                280,
+                315
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ma-dim-h",
+              "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius",
+              "title": "Woolly Mammoth (Mammuthus primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "counted",
+              "range": [
+                260,
+                340
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 3.97,
+          "unit": "m",
+          "mean": 3.97,
+          "basis": "body length without the trunk and tusks (published skeletal shoulder height to length proportion of adult bulls, Boeskorov 2021)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "derived",
+          "derivation": {
+            "method": "body-proportion",
+            "from": "height",
+            "ratio": 0.7525,
+            "note": "Boeskorov 2021: adult East Siberian woolly mammoth bulls, skeletal shoulder height over skeletal length from the rostrum to the tail base, mean 0.7525 (index M = 75.25, n = 7, Tables 1 and 2); 298.75 / 0.7525 = 397 cm (Boeskorov 2021)"
+          },
+          "sources": [
+            {
+              "id": "ma-dim-l",
+              "url": "https://www.dimensions.com/element/woolly-mammoth-mammuthus-primigenius",
+              "title": "Woolly Mammoth (Mammuthus primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "support",
+              "range": [
+                280,
+                380
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "ma-bo-l",
+              "url": "https://cyberleninka.ru/article/n/razmery-tela-sherstistogo-mamonta-mammuthus-primigenius-blumenbach-vtoroy-poloviny-pozdnego-pleystotsena-severa-vostochnoy-sibiri",
+              "title": "Размеры тела шерстистого мамонта Mammuthus primigenius (Blumenbach) второй половины позднего плейстоцена севера Восточной Сибири",
+              "use": "derived",
+              "value": 397,
+              "unit": "cm"
+            },
+            {
+              "id": "ma-bo-pdf",
+              "url": "https://resar.elpub.ru/jour/article/download/171/136",
+              "title": "Boeskorov 2021, Arctic and Subarctic Natural Resources 26(1), journal PDF",
+              "use": "support",
+              "value": 381,
+              "unit": "cm"
+            },
+            {
+              "id": "ma-tz-l",
+              "url": "https://tetzoo.com/blog/2025/11/5/a-woolly-mammoth-primer",
+              "title": "A Woolly Mammoth Primer — Tetrapod Zoology",
+              "use": "support",
+              "value": 395,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "height",
+        "sortKey": 3.97,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/woolly-mammoth.webp",
+          "png": null,
+          "pxW": 1019,
+          "pxH": 556,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
+      "image": {
+        "file": "woolly-mammoth.jpg",
+        "kind": "photo",
+        "credit": "Flying Puffin / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woolly_mammoth.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "dodo",
+      "scientificName": "Raphus cucullatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "size": {
+        "height": {
+          "value": 0.6743,
+          "unit": "m",
+          "mean": 0.6743,
+          "range": [
+            0.62,
+            0.75
+          ],
+          "basis": "standing height, top of the head to the soles of the feet, standing upright (adult, from subfossil skeletons)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "do-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Dodo",
+              "title": "Dodo - Wikipedia",
+              "use": "counted",
+              "range": [
+                62.6,
+                75
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "do-nhm-h",
+              "url": "https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html",
+              "title": "The dodo bird: The real facts about this icon of extinction / Natural History Museum",
+              "use": "counted",
+              "value": 70,
+              "unit": "cm"
+            },
+            {
+              "id": "do-tz-h",
+              "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life",
+              "title": "The Dodo in Life , Tetrapod Zoology",
+              "use": "counted",
+              "range": [
+                62,
+                65
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "do-ox-h",
+              "url": "https://oumnh.ox.ac.uk/oxford-dodo-0",
+              "title": "The Oxford Dodo / Oxford University Museum of Natural History",
+              "use": "support",
+              "value": 100,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 0.7,
+          "unit": "m",
+          "mean": 0.7,
+          "basis": "bill tip to tail tip along the body (single estimate, Tetrapod Zoology)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "do-tz-l",
+              "url": "https://tetzoo.com/blog/2020/7/11/dodo-in-life",
+              "title": "The Dodo in Life , Tetrapod Zoology",
+              "use": "estimate",
+              "value": 70,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "height",
+        "sortKey": 0.7,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/dodo.webp",
+          "png": null,
+          "pxW": 584,
+          "pxH": 634,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
+      "image": {
+        "file": "dodo.jpg",
+        "kind": "photo",
+        "credit": "BazzaDaRambler / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oxford_Dodo_display.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "passenger-pigeon",
+      "scientificName": "Ectopistes migratorius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "passenger-pigeon.jpg",
+        "kind": "photo",
+        "credit": "James St. John / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ectopistes_migratorius_(passenger_pigeon).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "thylacine",
+      "scientificName": "Thylacinus cynocephalus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Dasyuromorphia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "size": {
+        "height": {
+          "value": 0.58,
+          "unit": "m",
+          "mean": 0.58,
+          "range": [
+            0.56,
+            0.6
+          ],
+          "basis": "shoulder height (museum specimens and records)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "th-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Thylacine",
+              "title": "Thylacine - Wikipedia",
+              "use": "counted",
+              "value": 60,
+              "unit": "cm"
+            },
+            {
+              "id": "th-dx-h",
+              "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf",
+              "title": "(PDF)",
+              "use": "counted",
+              "value": 56,
+              "unit": "cm"
+            },
+            {
+              "id": "th-adw-h",
+              "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/",
+              "title": "Thylacinus cynocephalus (Tasmanian wolf) / INFORMATION / Animal Diversity Web",
+              "use": "support",
+              "range": [
+                35,
+                60
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 1.6005,
+          "unit": "m",
+          "mean": 1.6005,
+          "range": [
+            1.182,
+            1.95
+          ],
+          "basis": "nose to tail tip (head and body plus tail)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "th-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Thylacine",
+              "title": "Thylacine - Wikipedia",
+              "use": "counted",
+              "range": [
+                150,
+                195
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "th-adw-l",
+              "url": "https://animaldiversity.org/accounts/Thylacinus_cynocephalus/",
+              "title": "Thylacinus cynocephalus (Tasmanian wolf) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "range": [
+                123,
+                195
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "th-dx-l",
+              "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf",
+              "title": "(PDF)",
+              "use": "counted",
+              "range": [
+                118.2,
+                179.1
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "th-dx-t",
+              "url": "https://media.longnow.org/files/2/REVIVE/Thylacinidae_Fauna_of_Australia_Dixon_1989.pdf",
+              "title": "(PDF)",
+              "use": "support",
+              "range": [
+                33.1,
+                61
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 1.6005,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/thylacine.webp",
+          "png": null,
+          "pxW": 1027,
+          "pxH": 428,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
+      "image": {
+        "file": "thylacine.jpg",
+        "kind": "photo",
+        "credit": "E.J. Keller (historical photograph, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacinus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "stellers-sea-cow",
+      "scientificName": "Hydrodamalis gigas",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Sirenia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "size": {
+        "height": {
+          "value": 2.125,
+          "unit": "m",
+          "mean": 2.125,
+          "range": [
+            2,
+            2.25
+          ],
+          "basis": "body depth, top of the back to the belly (single source)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sc-dim-h",
+              "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas",
+              "title": "Steller's Sea Cow (Hydrodamalis gigas) Dimensions & Drawings / Dimensions.com",
+              "use": "estimate",
+              "range": [
+                200,
+                225
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 8.1667,
+          "unit": "m",
+          "mean": 8.1667,
+          "range": [
+            7.5,
+            9.1
+          ],
+          "basis": "snout to tail tip (Steller's measurements and later estimates)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "sc-wp-l",
+              "url": "https://en.wikipedia.org/wiki/Steller%27s_sea_cow",
+              "title": "Steller's sea cow - Wikipedia",
+              "use": "counted",
+              "range": [
+                800,
+                900
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sc-dim-l",
+              "url": "https://www.dimensions.com/element/stellers-sea-cow-hydrodamalis-gigas",
+              "title": "Steller's Sea Cow (Hydrodamalis gigas) Dimensions & Drawings / Dimensions.com",
+              "use": "counted",
+              "range": [
+                790,
+                910
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "sc-adw-l",
+              "url": "https://animaldiversity.org/accounts/Hydrodamalis_gigas/",
+              "title": "Hydrodamalis gigas (Steller's sea cow) / INFORMATION / Animal Diversity Web",
+              "use": "counted",
+              "value": 750,
+              "unit": "cm"
+            },
+            {
+              "id": "sc-nhm-l",
+              "url": "https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html",
+              "title": "Steller's sea cow: the first historical extinction of marine mammal at human hands / Natural History Museum",
+              "use": "support",
+              "value": 1000,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 8.1667,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/stellers-sea-cow.webp",
+          "png": null,
+          "pxW": 1046,
+          "pxH": 310,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
+      "image": {
+        "file": "stellers-sea-cow.jpg",
+        "kind": "photo",
+        "credit": "Historical natural-history plate / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Extanstellersseacowea.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "aurochs",
+      "scientificName": "Bos primigenius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "size": {
+        "height": {
+          "value": 1.675,
+          "unit": "m",
+          "mean": 1.675,
+          "range": [
+            1.5,
+            1.8
+          ],
+          "basis": "withers height of bulls (from skeletons)",
+          "confidence": "mean_of_sources",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "au-te-h",
+              "url": "https://www.theextinctions.com/articles-1/ns0atubs8qd60o16itraa69zhw7e0w",
+              "title": "The Aurochs , The Extinctions",
+              "use": "counted",
+              "range": [
+                160,
+                180
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "au-dim-h",
+              "url": "https://www.dimensions.com/element/auroch-bos-primigenius",
+              "title": "Auroch (Bos primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "counted",
+              "range": [
+                150,
+                180
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "au-wp-h",
+              "url": "https://en.wikipedia.org/wiki/Aurochs",
+              "title": "Aurochs - Wikipedia",
+              "use": "support",
+              "value": 180,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        },
+        "length": {
+          "value": 2.96,
+          "unit": "m",
+          "mean": 2.96,
+          "range": [
+            2.67,
+            3.25
+          ],
+          "basis": "nose to tail tip (single source, basis not stated)",
+          "confidence": "estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "au-dim-l",
+              "url": "https://www.dimensions.com/element/auroch-bos-primigenius",
+              "title": "Auroch (Bos primigenius) Dimensions & Drawings / Dimensions.com",
+              "use": "estimate",
+              "range": [
+                267,
+                325
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-06"
+        }
+      },
+      "scale": {
+        "show": true,
+        "basis": "length",
+        "sortKey": 2.96,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/aurochs.webp",
+          "png": null,
+          "pxW": 887,
+          "pxH": 536,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
+      "image": {
+        "file": "aurochs.jpg",
+        "kind": "photo",
+        "credit": "Jaap Rouwenhorst / DFoidl / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurochs_reconstruction.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "great-auk",
+      "scientificName": "Pinguinus impennis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Charadriiformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "great-auk.jpg",
+        "kind": "photo",
+        "credit": "J. G. Wood (public-domain engraving, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinguinus_impennis.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "caribbean-monk-seal",
+      "scientificName": "Neomonachus tropicalis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "caribbean-monk-seal.jpg",
+        "kind": "photo",
+        "credit": "Historical engraving / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monachus_tropicalis.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "quagga",
+      "scientificName": "Equus quagga quagga",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "quagga.jpg",
+        "kind": "photo",
+        "credit": "Frederick York, c. 1870 (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quagga_photo.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "western-black-rhinoceros",
+      "scientificName": "Diceros bicornis longipes",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "western-black-rhinoceros.jpg",
+        "kind": "photo",
+        "credit": "Senckenberg Museum (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diceros_bicornis_longipes.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "baiji",
+      "scientificName": "Lipotes vexillifer",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Cetacea"
+      },
+      "iucn": {
+        "category": "CR",
+        "scope": "global"
+      },
+      "flags": {
+        "possiblyExtinct": true
+      },
+      "image": {
+        "file": "baiji.png",
+        "kind": "photo",
+        "credit": "Alessio Marrucci / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lipotes_vexillifer.png"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "moa",
+      "scientificName": "Dinornis robustus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "moa.jpg",
+        "kind": "photo",
+        "credit": "Daniel Louis Mundy, 1867 (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dinornis_robustus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "irish-elk",
+      "scientificName": "Megaloceros giganteus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "irish-elk.jpg",
+        "kind": "photo",
+        "credit": "Postdlf / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_Elk.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "smilodon",
+      "scientificName": "Smilodon fatalis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "smilodon.jpg",
+        "kind": "photo",
+        "credit": "John Cummings / Natural History Museum, London (Wikimedia Commons)",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saber-toothed_cat_(Smilodon_fatalis)_reconstruction,_Natural_History_Museum,_London,_Mammals_Gallery.JPG"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "megatherium",
+      "scientificName": "Megatherium americanum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Pilosa"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "megatherium.jpg",
+        "kind": "photo",
+        "credit": "Ballista / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Megatherium_americanum_Skeleton_NHM.JPG"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "thylacoleo",
+      "scientificName": "Thylacoleo carnifex",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Diprotodontia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "thylacoleo.jpg",
+        "kind": "photo",
+        "credit": "David Hocking / Museums Victoria (Wikimedia Commons)",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thylacoleo_carnifex_skull.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "diprotodon",
+      "scientificName": "Diprotodon optatum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Diprotodontia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "diprotodon.jpg",
+        "kind": "photo",
+        "credit": "Nobu Tamura / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diprotodon_optatum.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "haast-eagle",
+      "scientificName": "Hieraaetus moorei",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Accipitriformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "haast-eagle.jpg",
+        "kind": "photo",
+        "credit": "John Megahan / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Haasts_eagle_attacking_New_Zealand_moa.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "elephant-bird",
+      "scientificName": "Aepyornis maximus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Struthioniformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "elephant-bird.jpg",
+        "kind": "photo",
+        "credit": "Monnier (historical museum photograph, Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aepyornis_maximus.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "carolina-parakeet",
+      "scientificName": "Conuropsis carolinensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Psittaciformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "carolina-parakeet.jpg",
+        "kind": "photo",
+        "credit": "James St. John / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conuropsis_carolinensis_(Carolina_parakeet).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "falkland-islands-wolf",
+      "scientificName": "Dusicyon australis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "falkland-islands-wolf.jpg",
+        "kind": "photo",
+        "credit": "Kane Fleury / MothmanNZ / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Falkland_Island_wolf,_Dusicyon_australis_OMNZVT2369_!1pub_(cropped).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bluebuck",
+      "scientificName": "Hippotragus leucophaeus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "bluebuck.jpg",
+        "kind": "photo",
+        "credit": "Sandstein / Naturhistorisches Museum Wien (Wikimedia Commons)",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hippotragus_leucophaeus,_Naturhistorisches_Museum_Wien.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "pyrenean-ibex",
+      "scientificName": "Capra pyrenaica pyrenaica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "pyrenean-ibex.jpg",
+        "kind": "photo",
+        "credit": "Roger Culos / MHNT (Wikimedia Commons)",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capra_pyrenaica_pyrenaica_MHNT_ART_39.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "japanese-sea-lion",
+      "scientificName": "Zalophus japonicus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "japanese-sea-lion.jpg",
+        "kind": "photo",
+        "credit": "Unknown photographer, Takeshima, June 1934 (Wikimedia Commons)",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_lion_in_Takeshima,_Japan_(June_1934).jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "kauai-oo",
+      "scientificName": "Moho braccatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Passeriformes"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "kauai-oo.jpg",
+        "kind": "photo",
+        "credit": "Hiart / Bishop Museum, Honolulu (Wikimedia Commons)",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moho_braccatus_Cassin,_Bishop_Museum,_Honolulu.JPG"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "bramble-cay-melomys",
+      "scientificName": "Melomys rubicola",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Rodentia"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global"
+      },
+      "flags": {},
+      "image": {
+        "file": "bramble-cay-melomys.jpg",
+        "kind": "photo",
+        "credit": "Ian Bell, Queensland Department of Environment and Heritage Protection (Wikimedia Commons)",
+        "license": "CC BY 3.0 AU",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg"
+      },
+      "primarySources": [],
+      "provenance": {
+        "added": "2026-10-08",
+        "migratedFrom": "speciesMeta",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "huia",
+      "scientificName": "Heteralocha acutirostris",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Callaeatidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22708091/245733733",
+        "iucnTaxonId": "22708091"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1907,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "NZ"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.465,
+          "unit": "m",
+          "mean": 0.465,
+          "range": [
+            0.45,
+            0.48
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length, bill tip to tail tip (males 45 cm, females 48 cm)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-huia",
+              "url": "https://en.wikipedia.org/wiki/Huia",
+              "title": "Wikipedia: Huia",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                45,
+                48
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "huia.webp",
+        "kind": "illustration",
+        "credit": "J. G. Keulemans / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huia_Buller.jpg",
+        "width": 735,
+        "height": 920,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "New Zealand Birds Online: Huia",
+          "url": "https://www.nzbirdsonline.org.nz/species/huia"
+        },
+        {
+          "label": "Wikipedia: Huia",
+          "url": "https://en.wikipedia.org/wiki/Huia"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "laughing-owl",
+      "scientificName": "Sceloglaux albifacies",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22689496/246178545",
+        "iucnTaxonId": "22689496"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1914,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "NZ"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.3775,
+          "unit": "m",
+          "mean": 0.3775,
+          "range": [
+            0.355,
+            0.4
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-laughing-owl",
+              "url": "https://en.wikipedia.org/wiki/Laughing_owl",
+              "title": "Wikipedia: Laughing owl",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                35.5,
+                40
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "laughing-owl.webp",
+        "kind": "photo",
+        "credit": "Henry Charles Clarke Wright / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sceloglaux_albifacies_albifacies.jpg",
+        "width": 364,
+        "height": 412,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Laughing owl",
+          "url": "https://en.wikipedia.org/wiki/Laughing_owl"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "rodrigues-solitaire",
+      "scientificName": "Pezophaps solitaria",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes",
+        "family": "Columbidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22690062/261927718",
+        "iucnTaxonId": "22690062"
+      },
+      "flags": {},
+      "extinction": {
+        "period": "late 18th century",
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "AF"
+          ],
+          "oceans": [
+            "IND"
+          ],
+          "countries": [
+            "MU"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "height": {
+          "value": 0.769,
+          "unit": "m",
+          "mean": 0.769,
+          "range": [
+            0.638,
+            0.9
+          ],
+          "confidence": "range_midpoint",
+          "basis": "standing height, females 63.8 to 70 cm, males 75.7 to 90 cm",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-rodrigues-solitaire",
+              "url": "https://en.wikipedia.org/wiki/Rodrigues_solitaire",
+              "title": "Wikipedia: Rodrigues solitaire",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                63.8,
+                90
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "rodrigues-solitaire.webp",
+        "kind": "illustration",
+        "credit": "François Leguat / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leguat1891solitaire.jpg",
+        "width": 574,
+        "height": 835,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Rodrigues solitaire",
+          "url": "https://en.wikipedia.org/wiki/Rodrigues_solitaire"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "cuban-macaw",
+      "scientificName": "Ara tricolor",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22724513/194916284",
+        "iucnTaxonId": "22724513"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1864,
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "CU"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.475,
+          "unit": "m",
+          "mean": 0.475,
+          "range": [
+            0.45,
+            0.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-cuban-macaw",
+              "url": "https://en.wikipedia.org/wiki/Cuban_macaw",
+              "title": "Wikipedia: Cuban macaw",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                45,
+                50
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "cuban-macaw.webp",
+        "kind": "illustration",
+        "credit": "Jacques Barraband / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A._tricolor.jpg",
+        "width": 870,
+        "height": 1200,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Cuban macaw",
+          "url": "https://en.wikipedia.org/wiki/Cuban_macaw"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "red-rail",
+      "scientificName": "Aphanapteryx bonasia",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Gruiformes",
+        "family": "Rallidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22728884/261990244",
+        "iucnTaxonId": "22728884"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1700,
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "AF"
+          ],
+          "oceans": [
+            "IND"
+          ],
+          "countries": [
+            "MU"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.375,
+          "unit": "m",
+          "mean": 0.375,
+          "range": [
+            0.35,
+            0.4
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-red-rail",
+              "url": "https://en.wikipedia.org/wiki/Red_rail",
+              "title": "Wikipedia: Red rail",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                35,
+                40
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "red-rail.webp",
+        "kind": "illustration",
+        "credit": "Louveau / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aphanapteryx_bonasiaIbis1869P007AA.jpg",
+        "width": 740,
+        "height": 1020,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Red rail",
+          "url": "https://en.wikipedia.org/wiki/Red_rail"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "hawaii-mamo",
+      "scientificName": "Drepanis pacifica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Fringillidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22720848/243963448",
+        "iucnTaxonId": "22720848"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1898,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "oceans": [
+            "PAC"
+          ],
+          "countries": [
+            "US"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.2286,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "total length, average",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-hawaii-mamo",
+              "url": "https://en.wikipedia.org/wiki/Hawaii_mamo",
+              "title": "Wikipedia: Hawaii mamo",
+              "use": "counted",
+              "unit": "cm",
+              "value": 22.86
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "hawaii-mamo.webp",
+        "kind": "photo",
+        "credit": "Wmpearl / Wikimedia Commons",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drepanis_pacifica_(Hawaii_Mamo),_Bishop_Museum,_Honolulu.JPG",
+        "width": 1200,
+        "height": 846,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Hawaii mamo",
+          "url": "https://en.wikipedia.org/wiki/Hawaii_mamo"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "toolache-wallaby",
+      "scientificName": "Macropus greyi",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Macropodidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/12625/258669736",
+        "iucnTaxonId": "12625"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1939,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "AU"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 0.825,
+          "unit": "m",
+          "mean": 0.825,
+          "range": [
+            0.81,
+            0.84
+          ],
+          "confidence": "range_midpoint",
+          "basis": "head and body length, tail excluded (males up to 810 mm, females up to 840 mm)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-toolache-wallaby",
+              "url": "https://en.wikipedia.org/wiki/Toolache_wallaby",
+              "title": "Wikipedia: Toolache wallaby",
+              "use": "counted",
+              "unit": "mm",
+              "range": [
+                810,
+                840
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "toolache-wallaby.webp",
+        "kind": "illustration",
+        "credit": "John Gould / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macropus_greyi_-_Gould.jpg",
+        "width": 550,
+        "height": 389,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Toolache wallaby",
+          "url": "https://en.wikipedia.org/wiki/Toolache_wallaby"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "chinese-paddlefish",
+      "scientificName": "Psephurus gladius",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "fish",
+      "taxon": {
+        "class": "Chondrostei",
+        "order": "Acipenseriformes",
+        "family": "Polyodontidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/18428/146104283",
+        "iucnTaxonId": "18428"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 2003,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "freshwater"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "CN"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 3,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "body length definitively known (more than 3 m; larger claims unconfirmed)",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-chinese-paddlefish",
+              "url": "https://en.wikipedia.org/wiki/Chinese_paddlefish",
+              "title": "Wikipedia: Chinese paddlefish",
+              "use": "counted",
+              "unit": "m",
+              "value": 3
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "chinese-paddlefish.webp",
+        "kind": "photo",
+        "credit": "Alneth / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_specimen_of_Psephurus_gladius,_Museum_of_Hydrobiological_Sciences,_Wuhan_Institute_of_Hydrobiology_(4).jpg",
+        "width": 1200,
+        "height": 600,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Chinese paddlefish",
+          "url": "https://en.wikipedia.org/wiki/Chinese_paddlefish"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "atitlan-grebe",
+      "scientificName": "Podilymbus gigas",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Podicipediformes",
+        "family": "Podicipedidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22696577/221205722",
+        "iucnTaxonId": "22696577"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1989,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "freshwater"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "GT"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 0.48,
+          "unit": "m",
+          "mean": 0.48,
+          "range": [
+            0.46,
+            0.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-atitlán-grebe",
+              "url": "https://en.wikipedia.org/wiki/Atitl%C3%A1n_grebe",
+              "title": "Wikipedia: Atitlán grebe",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                46,
+                50
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "atitlan-grebe.webp",
+        "kind": "photo",
+        "credit": "SOUIL / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pato_poc.jpg",
+        "width": 400,
+        "height": 435,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Atitlán grebe",
+          "url": "https://en.wikipedia.org/wiki/Atitl%C3%A1n_grebe"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "choiseul-pigeon",
+      "scientificName": "Microgoura meeki",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes",
+        "family": "Columbidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22691086/228013744",
+        "iucnTaxonId": "22691086"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1904,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "SB"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.31,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "total length",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-choiseul-pigeon",
+              "url": "https://en.wikipedia.org/wiki/Choiseul_pigeon",
+              "title": "Wikipedia: Choiseul pigeon",
+              "use": "counted",
+              "unit": "cm",
+              "value": 31
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "choiseul-pigeon.webp",
+        "kind": "illustration",
+        "credit": "John Gerrard Keulemans / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Choiseul_Crested_Pigeon.jpg",
+        "width": 806,
+        "height": 996,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Choiseul pigeon",
+          "url": "https://en.wikipedia.org/wiki/Choiseul_pigeon"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "lord-howe-swamphen",
+      "scientificName": "Porphyrio albus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Gruiformes",
+        "family": "Rallidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22692801/230879957",
+        "iucnTaxonId": "22692801"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1834,
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "oceans": [
+            "PAC"
+          ],
+          "countries": [
+            "AU"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.455,
+          "unit": "m",
+          "mean": 0.455,
+          "range": [
+            0.36,
+            0.55
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length (two published figures, 36 cm and 55 cm)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-white-swamphen",
+              "url": "https://en.wikipedia.org/wiki/White_swamphen",
+              "title": "Wikipedia: White swamphen",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                36,
+                55
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "lord-howe-swamphen.webp",
+        "kind": "photo",
+        "credit": "Vertebrate Zoology Curator / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liverpool_white_swamphen.jpg",
+        "width": 1125,
+        "height": 1200,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: White swamphen",
+          "url": "https://en.wikipedia.org/wiki/White_swamphen"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "alaotra-grebe",
+      "scientificName": "Tachybaptus rufolavatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Podicipediformes",
+        "family": "Podicipedidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22696558/208158571",
+        "iucnTaxonId": "22696558"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 2010,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "freshwater"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "MG"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.25,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "total length",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-alaotra-grebe",
+              "url": "https://en.wikipedia.org/wiki/Alaotra_grebe",
+              "title": "Wikipedia: Alaotra grebe",
+              "use": "counted",
+              "unit": "cm",
+              "value": 25
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "alaotra-grebe.webp",
+        "kind": "photo",
+        "credit": "Totodu74 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tachybaptus_rufolavatus_-_Z%C3%BCrich_Zoo.JPG",
+        "width": 1200,
+        "height": 899,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Alaotra grebe",
+          "url": "https://en.wikipedia.org/wiki/Alaotra_grebe"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-01",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "pig-footed-bandicoot",
+      "scientificName": "Chaeropus ecaudatus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Peramelemorphia",
+        "family": "Chaeropodidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/217035752/217035836",
+        "iucnTaxonId": "217035752"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1901,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "AU"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 0.245,
+          "unit": "m",
+          "mean": 0.245,
+          "range": [
+            0.23,
+            0.26
+          ],
+          "confidence": "range_midpoint",
+          "basis": "head and body length, tail (10 to 15 cm) excluded",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-chaeropus",
+              "url": "https://en.wikipedia.org/wiki/Chaeropus",
+              "title": "Wikipedia: Chaeropus",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                23,
+                26
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "pig-footed-bandicoot.webp",
+        "kind": "illustration",
+        "credit": "John Gould / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PigFootedBandicoot.jpg",
+        "width": 756,
+        "height": 537,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Southern pig-footed bandicoot",
+          "url": "https://en.wikipedia.org/wiki/Southern_pig-footed_bandicoot"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "broad-faced-potoroo",
+      "scientificName": "Potorous platyops",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Potoroidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/18103/258661725",
+        "iucnTaxonId": "18103"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1875,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "AU"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 0.305,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "head and body length, tail (about 178 mm) excluded",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-broad-faced-potoroo",
+              "url": "https://en.wikipedia.org/wiki/Broad-faced_potoroo",
+              "title": "Wikipedia: Broad-faced potoroo",
+              "use": "counted",
+              "unit": "mm",
+              "value": 305
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "broad-faced-potoroo.webp",
+        "kind": "illustration",
+        "credit": "John Gould / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:BroadFacedPotoroo.jpg",
+        "width": 1200,
+        "height": 703,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Broad-faced potoroo",
+          "url": "https://en.wikipedia.org/wiki/Broad-faced_potoroo"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "new-zealand-grayling",
+      "scientificName": "Prototroctes oxyrhynchus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "fish",
+      "taxon": {
+        "class": "Teleostei",
+        "order": "Osmeriformes",
+        "family": "Retropinnidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/18384/20887241",
+        "iucnTaxonId": "18384"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1929,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "freshwater"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "NZ"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.375,
+          "unit": "m",
+          "mean": 0.375,
+          "range": [
+            0.3,
+            0.45
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length of mature fish",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-new-zealand-grayling",
+              "url": "https://en.wikipedia.org/wiki/New_Zealand_grayling",
+              "title": "Wikipedia: New Zealand grayling",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                30,
+                45
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "new-zealand-grayling.webp",
+        "kind": "illustration",
+        "credit": "Frank Edward Clarke / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Southern_Pacific_fishes_illustrations_by_F.E._Clarke_100_1.jpg",
+        "width": 1200,
+        "height": 421,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: New Zealand grayling",
+          "url": "https://en.wikipedia.org/wiki/New_Zealand_grayling"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "rocky-mountain-locust",
+      "scientificName": "Melanoplus spretus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "insect",
+      "taxon": {
+        "class": "Insecta",
+        "order": "Orthoptera",
+        "family": "Acrididae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/51269349/111451167",
+        "iucnTaxonId": "51269349"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1904,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "US",
+            "CA"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 0.0275,
+          "unit": "m",
+          "mean": 0.0275,
+          "range": [
+            0.02,
+            0.035
+          ],
+          "confidence": "range_midpoint",
+          "basis": "adult body length",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "animal-diversity-web:-melanoplus-spretus",
+              "url": "https://animaldiversity.org/accounts/Melanoplus_spretus/",
+              "title": "Animal Diversity Web: Melanoplus spretus",
+              "use": "counted",
+              "unit": "mm",
+              "range": [
+                20,
+                35
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "rocky-mountain-locust.webp",
+        "kind": "photo",
+        "credit": "Julius Bien / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melanoplus_spretusAnnReportAgExpStaUM1902B.jpg",
+        "width": 600,
+        "height": 280,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Rocky Mountain locust",
+          "url": "https://en.wikipedia.org/wiki/Rocky_Mountain_locust"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "mauritius-blue-pigeon",
+      "scientificName": "Alectroenas nitidissimus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Columbiformes",
+        "family": "Columbidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22691601/261969150",
+        "iucnTaxonId": "22691601"
+      },
+      "flags": {},
+      "extinction": {
+        "year": 1826,
+        "approx": false,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "AF"
+          ],
+          "oceans": [
+            "IND"
+          ],
+          "countries": [
+            "MU"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "length": {
+          "value": 0.3,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "total length",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-mauritius-blue-pigeon",
+              "url": "https://en.wikipedia.org/wiki/Mauritius_blue_pigeon",
+              "title": "Wikipedia: Mauritius blue pigeon",
+              "use": "counted",
+              "unit": "cm",
+              "value": 30
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "mauritius-blue-pigeon.webp",
+        "kind": "photo",
+        "credit": "Geni / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mauritius_Blue_Pigeon_national_museum_of_scotland.JPG",
+        "width": 913,
+        "height": 1200,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Mauritius blue pigeon",
+          "url": "https://en.wikipedia.org/wiki/Mauritius_blue_pigeon"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "palaeopropithecus",
+      "scientificName": "Palaeopropithecus ingens",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Palaeopropithecidae"
+      },
+      "iucn": {
+        "category": "EX",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-11",
+        "assessmentUrl": "https://www.iucnredlist.org/species/136532/17971784",
+        "iucnTaxonId": "136532"
+      },
+      "flags": {},
+      "extinction": {
+        "period": "possibly about 400 years ago",
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "MG"
+          ]
+        },
+        "islandEndemic": true
+      },
+      "size": {
+        "mass": {
+          "value": 49.5,
+          "unit": "kg",
+          "mean": 49.5,
+          "range": [
+            45,
+            54
+          ],
+          "confidence": "estimate",
+          "basis": "body mass, average estimate",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-palaeopropithecus",
+              "url": "https://en.wikipedia.org/wiki/Palaeopropithecus",
+              "title": "Wikipedia: Palaeopropithecus",
+              "use": "counted",
+              "unit": "kg",
+              "range": [
+                45,
+                54
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "palaeopropithecus.webp",
+        "kind": "illustration",
+        "credit": "Smokeybjb / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palaeopropithecus_ingens.jpg",
+        "width": 907,
+        "height": 1200,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Palaeopropithecus",
+          "url": "https://en.wikipedia.org/wiki/Palaeopropithecus"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "american-mastodon",
+      "scientificName": "Mammut americanum",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Proboscidea",
+        "family": "Mammutidae"
+      },
+      "flags": {},
+      "extinction": {
+        "period": "about 13,800 to 11,400 years ago",
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "NA"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "height": {
+          "value": 2.9,
+          "unit": "m",
+          "mean": 2.9,
+          "range": [
+            2.75,
+            3.05
+          ],
+          "confidence": "range_midpoint",
+          "basis": "shoulder height, adult average",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-mastodon",
+              "url": "https://en.wikipedia.org/wiki/Mastodon",
+              "title": "Wikipedia: Mastodon",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                275,
+                305
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "american-mastodon.webp",
+        "kind": "illustration",
+        "credit": "Heinrich Harder / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mastodon_color.jpg",
+        "width": 657,
+        "height": 385,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Mastodon",
+          "url": "https://en.wikipedia.org/wiki/Mastodon"
+        },
+        {
+          "label": "Faith and Surovell 2009, Proceedings of the National Academy of Sciences",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791611/"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      },
+      "extinctionPeriod": {
+        "kind": "extinct",
+        "yearsAgoRange": [
+          13800,
+          11400
+        ],
+        "basis": "calendar",
+        "approx": true,
+        "text": "about 13,800 to 11,400 years ago",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2791611/",
+        "quote": "The last appearance dates of 16 of these genera securely fall between 12,000 and 10,000 radiocarbon years ago",
+        "checkedAt": "2026-10-11",
+        "humanLink": {
+          "kind": "role",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Mastodon",
+          "quote": "Evidence has been found that Paleoindians (including those of the Clovis culture) hunted mastodons based on the finding of mastodon remains with cut marks and/or with lithic artifacts"
+        }
+      }
+    },
+    {
+      "slug": "cave-bear",
+      "scientificName": "Ursus spelaeus",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "extinct",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae"
+      },
+      "flags": {},
+      "extinction": {
+        "period": "about 24,000 years ago",
+        "approx": true,
+        "sourceIds": []
+      },
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {},
+        "former": {
+          "continents": [
+            "EU"
+          ]
+        },
+        "islandEndemic": false
+      },
+      "size": {
+        "length": {
+          "value": 2,
+          "unit": "m",
+          "confidence": "single_source",
+          "basis": "body length, upper end (\"up to 2 m\")",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "wikipedia:-cave-bear",
+              "url": "https://en.wikipedia.org/wiki/Cave_bear",
+              "title": "Wikipedia: Cave bear",
+              "use": "counted",
+              "unit": "m",
+              "value": 2
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-11"
+        }
+      },
+      "image": {
+        "file": "cave-bear.webp",
+        "kind": "illustration",
+        "credit": "Ra'ike / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teufelsh%C3%B6hle-H%C3%B6hlenb%C3%A4r-Dreiviertelprofil.jpg",
+        "width": 867,
+        "height": 710,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Wikipedia: Cave bear",
+          "url": "https://en.wikipedia.org/wiki/Cave_bear"
+        }
+      ],
+      "provenance": {
+        "batch": "extinct-cards-02",
+        "added": "2026-10-11",
+        "suppliedBy": []
+      },
+      "extinctionPeriod": {
+        "kind": "extinct",
+        "yearsAgo": 24000,
+        "basis": "calendar",
+        "approx": true,
+        "text": "about 24,000 years ago",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Cave_bear",
+        "quote": "became extinct about 24,000 years ago during the Last Glacial Maximum",
+        "checkedAt": "2026-10-11",
+        "humanLink": {
+          "kind": "role",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Cave_bear",
+          "quote": "It was concluded that human hunting and/or competition played a major role in their decline and ultimate disappearance, and that climate change was not likely to have been the dominant factor"
+        }
+      }
+    }
+  ]
+}

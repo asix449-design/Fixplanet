@@ -18,7 +18,7 @@
     "slug": "african-forest-elephant",
     "file": "african-forest-elephant.jpg",
     "commonsTitle": "African Forest Elephant.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27%C3%A9l%C3%A9phant_de_for%C3%AAt_d%27Afrique_(Loxodonta_cyclotis).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Forest_Elephant.jpg",
     "artist": "VIGNA christian",
     "license": "CC BY-SA 4.0"
   },
@@ -100,7 +100,7 @@
     "commonsTitle": "Bramble-cay-melomys.jpg",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bramble-cay-melomys.jpg",
     "artist": "Ian Bell, EHP, State of Queensland",
-    "license": "CC BY 3.0 au"
+    "license": "CC BY 3.0 AU"
   },
   {
     "slug": "brown-bear",
@@ -229,6 +229,13 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawksbill_sea_turtle_swimming.jpg",
     "artist": "Pseudopanax at English Wikipedia",
     "license": "Public domain"
+  },
+  {
+    "slug": "iberian-lynx",
+    "file": "iberian-lynx.webp",
+    "artist": "Fix Planet illustration",
+    "license": "",
+    "sourceUrl": ""
   },
   {
     "slug": "humpback-whale",
@@ -750,7 +757,7 @@
     "slug": "california-condor",
     "file": "california-condor.jpg",
     "commonsTitle": "Condor in flight (53189570917).jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_in_flight_(53189570917).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Condor_in_flight_%2853189570917%29.jpg",
     "artist": "USFWS Pacific Southwest Region",
     "license": "Public domain"
   },
@@ -788,5 +795,145 @@
     "artist": "JJ Harrison",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "slug": "huia",
+    "file": "huia.webp",
+    "artist": "J. G. Keulemans / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huia_Buller.jpg"
+  },
+  {
+    "slug": "laughing-owl",
+    "file": "laughing-owl.webp",
+    "artist": "Henry Charles Clarke Wright / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sceloglaux_albifacies_albifacies.jpg"
+  },
+  {
+    "slug": "rodrigues-solitaire",
+    "file": "rodrigues-solitaire.webp",
+    "artist": "François Leguat / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leguat1891solitaire.jpg"
+  },
+  {
+    "slug": "cuban-macaw",
+    "file": "cuban-macaw.webp",
+    "artist": "Jacques Barraband / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A._tricolor.jpg"
+  },
+  {
+    "slug": "red-rail",
+    "file": "red-rail.webp",
+    "artist": "Louveau / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aphanapteryx_bonasiaIbis1869P007AA.jpg"
+  },
+  {
+    "slug": "hawaii-mamo",
+    "file": "hawaii-mamo.webp",
+    "artist": "Wmpearl / Wikimedia Commons",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Drepanis_pacifica_(Hawaii_Mamo),_Bishop_Museum,_Honolulu.JPG"
+  },
+  {
+    "slug": "toolache-wallaby",
+    "file": "toolache-wallaby.webp",
+    "artist": "John Gould / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macropus_greyi_-_Gould.jpg"
+  },
+  {
+    "slug": "chinese-paddlefish",
+    "file": "chinese-paddlefish.webp",
+    "artist": "Alneth / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_specimen_of_Psephurus_gladius,_Museum_of_Hydrobiological_Sciences,_Wuhan_Institute_of_Hydrobiology_(4).jpg"
+  },
+  {
+    "slug": "atitlan-grebe",
+    "file": "atitlan-grebe.webp",
+    "artist": "SOUIL / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pato_poc.jpg"
+  },
+  {
+    "slug": "choiseul-pigeon",
+    "file": "choiseul-pigeon.webp",
+    "artist": "John Gerrard Keulemans / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Choiseul_Crested_Pigeon.jpg"
+  },
+  {
+    "slug": "lord-howe-swamphen",
+    "file": "lord-howe-swamphen.webp",
+    "artist": "Vertebrate Zoology Curator / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liverpool_white_swamphen.jpg"
+  },
+  {
+    "slug": "alaotra-grebe",
+    "file": "alaotra-grebe.webp",
+    "artist": "Totodu74 / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tachybaptus_rufolavatus_-_Z%C3%BCrich_Zoo.JPG"
+  },
+  {
+    "slug": "pig-footed-bandicoot",
+    "file": "pig-footed-bandicoot.webp",
+    "artist": "John Gould / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PigFootedBandicoot.jpg"
+  },
+  {
+    "slug": "broad-faced-potoroo",
+    "file": "broad-faced-potoroo.webp",
+    "artist": "John Gould / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BroadFacedPotoroo.jpg"
+  },
+  {
+    "slug": "new-zealand-grayling",
+    "file": "new-zealand-grayling.webp",
+    "artist": "Frank Edward Clarke / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Southern_Pacific_fishes_illustrations_by_F.E._Clarke_100_1.jpg"
+  },
+  {
+    "slug": "rocky-mountain-locust",
+    "file": "rocky-mountain-locust.webp",
+    "artist": "Julius Bien / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melanoplus_spretusAnnReportAgExpStaUM1902B.jpg"
+  },
+  {
+    "slug": "mauritius-blue-pigeon",
+    "file": "mauritius-blue-pigeon.webp",
+    "artist": "Geni / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mauritius_Blue_Pigeon_national_museum_of_scotland.JPG"
+  },
+  {
+    "slug": "palaeopropithecus",
+    "file": "palaeopropithecus.webp",
+    "artist": "Smokeybjb / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palaeopropithecus_ingens.jpg"
+  },
+  {
+    "slug": "american-mastodon",
+    "file": "american-mastodon.webp",
+    "artist": "Heinrich Harder / Wikimedia Commons",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mastodon_color.jpg"
+  },
+  {
+    "slug": "cave-bear",
+    "file": "cave-bear.webp",
+    "artist": "Ra'ike / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teufelsh%C3%B6hle-H%C3%B6hlenb%C3%A4r-Dreiviertelprofil.jpg"
   }
 ]
