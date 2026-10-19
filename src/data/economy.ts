@@ -2,17 +2,12 @@ import { localizePath, type Locale } from '../i18n/config';
 
 /**
  * Economy routes, sources and figure cards.
- * Nothing is published unless PUBLIC_ECONOMY_PREVIEW is "true".
- * economyReleasedPr is the last data PR whose tabs and figures are complete.
- * While economyVisible is tied to the preview switch it changes nothing: a preview build shows every tab,
- * a production build shows none. It decides what goes public only once economyVisible is switched on on its own.
+ * The section is public in a production build with no env flag: every tab is built,
+ * the Economy menu item is shown, and the pages are in the sitemap.
+ * Crypto and CoinGecko stay unpublished: no crypto page, no CoinGecko link, and no CoinGecko request.
  */
 
-export const economyVisible = import.meta.env.PUBLIC_ECONOMY_PREVIEW === 'true';
-
-export const economyReleasedPr = 3;
-
-const economyPreview = import.meta.env.PUBLIC_ECONOMY_PREVIEW === 'true';
+export const economyVisible = true;
 
 export type EconomyTabSlug =
   | 'overview'
@@ -345,12 +340,12 @@ if (!overview) {
 }
 export const overviewTab: EconomyTab = overview;
 
-export function economyTabLive(tab: { livePr: number }): boolean {
-  return economyPreview || (economyVisible && tab.livePr <= economyReleasedPr);
+export function economyTabLive(tab: { slug: EconomyTabSlug }): boolean {
+  return economyVisible && tab.slug !== 'crypto';
 }
 
-export function economyFigureLive(fig: { dataPr: number }): boolean {
-  return economyPreview || fig.dataPr <= economyReleasedPr;
+export function economyFigureLive(fig: { tab: EconomyTabSlug; source: EconomySourceId }): boolean {
+  return economyVisible && fig.tab !== 'crypto' && fig.source !== 'coingecko';
 }
 
 export function isEconomyTab(value: string | undefined): value is EconomyTabSlug {
@@ -374,7 +369,7 @@ export function economySourcesForTab(tab: EconomyTab): EconomySourceId[] {
     const fig = economyFigures[id];
     if (economyFigureLive(fig)) live.add(fig.source);
   }
-  return tab.sources.filter((id) => live.has(id));
+  return tab.sources.filter((id) => id !== 'coingecko' && live.has(id));
 }
 
 /** Credit lines with unfilled date placeholders are omitted until a data release supplies them. */
