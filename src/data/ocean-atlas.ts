@@ -57,45 +57,45 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     usesCoastline: true,
     sources: [
       cite(
-        'NCEI OCADS — OceanSODA-ETHZ v2025 (accession 0220059)',
+        'NCEI OCADS: OceanSODA-ETHZ v2025 (accession 0220059)',
         'https://www.ncei.noaa.gov/data/oceans/ncei/ocads/metadata/0220059.html',
       ),
-      cite('NOAA Ocean Acidification Program — hub', 'https://oceanacidification.noaa.gov/'),
+      cite('NOAA Ocean Acidification Program: hub', 'https://oceanacidification.noaa.gov/'),
       cite(
-        'NOAA OAP — What is ocean acidification?',
+        'NOAA OAP: What is ocean acidification?',
         'https://oceanacidification.noaa.gov/what-is-ocean-acidification/',
       ),
       cite(
-        'NOAA PMEL Carbon Program — Ocean Acidification',
+        'NOAA PMEL Carbon Program: Ocean Acidification',
         'https://www.pmel.noaa.gov/co2/story/Ocean+Acidification',
       ),
-      cite('NOAA PMEL Carbon Program — hub', 'https://www.pmel.noaa.gov/co2/'),
+      cite('NOAA PMEL Carbon Program: hub', 'https://www.pmel.noaa.gov/co2/'),
       cite(
-        'NOAA PMEL — Observations and Data',
+        'NOAA PMEL: Observations and Data',
         'https://www.pmel.noaa.gov/co2/story/Observations+and+Data',
       ),
       cite(
-        'NOAA PMEL — Hydrographic Cruises',
+        'NOAA PMEL: Hydrographic Cruises',
         'https://www.pmel.noaa.gov/co2/story/Hydrographic+Cruises',
       ),
       cite(
-        'NOAA PMEL — Consensus OA trend assessments',
+        'NOAA PMEL: Consensus OA trend assessments',
         'https://www.pmel.noaa.gov/co2/story/Reaching+Consensus+on+Assessments+of+Ocean+Acidification+Trends',
       ),
       cite(
-        'NOAA PMEL — Buoys and Autonomous Systems',
+        'NOAA PMEL: Buoys and Autonomous Systems',
         'https://www.pmel.noaa.gov/co2/story/Buoys+and+Autonomous+Systems',
       ),
       cite(
-        'NCEI — Ocean Carbon & Acidification Data System (OCADS)',
+        'NCEI: Ocean Carbon & Acidification Data System (OCADS)',
         'https://www.ncei.noaa.gov/access/oads/',
       ),
       cite(
-        'Copernicus Marine — data access (optional secondary)',
+        'Copernicus Marine: data access (optional secondary)',
         'https://marine.copernicus.eu/access-data',
       ),
       cite(
-        'Copernicus Marine — product catalogue (optional)',
+        'Copernicus Marine: product catalogue (optional)',
         'https://data.marine.copernicus.eu/products',
       ),
     ],
@@ -104,17 +104,17 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     slug: 'dissolved-oxygen',
     preview: 'dissolved-oxygen.jpg',
     detail: 'detail/dissolved-oxygen.webp',
-    sourceOrg: 'NOAA NCEI — World Ocean Atlas 2023',
+    sourceOrg: 'NOAA NCEI: World Ocean Atlas 2023',
     sourceLabel: 'NOAA WOA23',
     sourceUrl: 'https://www.ncei.noaa.gov/products/world-ocean-atlas',
     usesCoastline: true,
     sources: [
       cite(
-        'NCEI — World Ocean Atlas (product hub)',
+        'NCEI: World Ocean Atlas (product hub)',
         'https://www.ncei.noaa.gov/products/world-ocean-atlas',
       ),
       cite(
-        'NCEI — World Ocean Atlas 2023 access',
+        'NCEI: World Ocean Atlas 2023 access',
         'https://www.ncei.noaa.gov/access/world-ocean-atlas-2023/',
       ),
       cite(
@@ -122,7 +122,7 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
         'https://www.ncei.noaa.gov/access/world-ocean-atlas-2023/bin/woa23.pl',
       ),
       cite(
-        'WOA23 selector — oxygen parameter',
+        'WOA23 selector: oxygen parameter',
         'https://www.ncei.noaa.gov/access/world-ocean-atlas-2023/bin/woa23.pl?parameter=o',
       ),
       cite(
@@ -134,16 +134,16 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
         'https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DOCUMENTATION/WOA23_Product_Documentation.pdf',
       ),
       cite(
-        'WOA23 Volume 3 — Dissolved Oxygen (PDF)',
+        'WOA23 Volume 3: Dissolved Oxygen (PDF)',
         'https://www.ncei.noaa.gov/data/oceans/woa/WOA23/DOCUMENTATION/WOA23_Oxygen.pdf',
       ),
       cite('WOA23 data tree', 'https://www.ncei.noaa.gov/data/oceans/woa/WOA23/'),
       cite(
-        'IPCC SROCC — Summary for Policymakers (secondary)',
+        'IPCC SROCC: Summary for Policymakers (secondary)',
         'https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/',
       ),
       cite(
-        'IPCC SROCC — Chapter 5 Changing Ocean (secondary)',
+        'IPCC SROCC: Chapter 5 Changing Ocean (secondary)',
         'https://www.ipcc.ch/srocc/chapter/chapter-5/',
       ),
       cite('IPCC SROCC hub (secondary)', 'https://www.ipcc.ch/srocc/'),
@@ -158,24 +158,24 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     sourceUrl: 'https://noaadata.apps.nsidc.org/NOAA/G02135/',
     usesCoastline: false,
     sources: [
-      cite('NSIDC — Sea Ice Today', 'https://nsidc.org/sea-ice-today'),
+      cite('NSIDC: Sea Ice Today', 'https://nsidc.org/sea-ice-today'),
       cite(
-        'NSIDC — Sea Ice Index (daily / monthly viewer)',
+        'NSIDC: Sea Ice Index (daily / monthly viewer)',
         'https://nsidc.org/data/seaice_index',
       ),
       cite(
-        'NSIDC — Sea Ice Index data & image archive',
+        'NSIDC: Sea Ice Index data & image archive',
         'https://nsidc.org/data/seaice_index/data-and-image-archive',
       ),
-      cite('NSIDC — Sea Ice Today tools', 'https://nsidc.org/sea-ice-today/sea-ice-tools'),
-      cite('NSIDC — Sea Ice Index G02135 v3', 'https://nsidc.org/data/g02135/versions/3'),
+      cite('NSIDC: Sea Ice Today tools', 'https://nsidc.org/sea-ice-today/sea-ice-tools'),
+      cite('NSIDC: Sea Ice Index G02135 v3', 'https://nsidc.org/data/g02135/versions/3'),
       cite(
-        'NOAA/NSIDC — G02135 data FTP mirror',
+        'NOAA/NSIDC: G02135 data FTP mirror',
         'https://noaadata.apps.nsidc.org/NOAA/G02135/',
       ),
-      cite('NSIDC — Arctic Sea Ice News & Analysis', 'https://nsidc.org/arcticseaicenews/'),
+      cite('NSIDC: Arctic Sea Ice News & Analysis', 'https://nsidc.org/arcticseaicenews/'),
       cite(
-        'NSIDC — ChArctic interactive sea-ice graph',
+        'NSIDC: ChArctic interactive sea-ice graph',
         'https://nsidc.org/arcticseaicenews/charctic-interactive-sea-ice-graph/',
       ),
     ],
@@ -190,42 +190,42 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     usesCoastline: false,
     sources: [
       cite(
-        'NOAA LSA — Sea Level Rise maps',
+        'NOAA LSA: Sea Level Rise maps',
         'https://www.star.nesdis.noaa.gov/socd/lsa/SeaLevelRise/',
       ),
-      cite('NASA Sea Level Change Portal — hub', 'https://sealevel.nasa.gov/'),
+      cite('NASA Sea Level Change Portal: hub', 'https://sealevel.nasa.gov/'),
       cite(
-        'NASA — Global Mean Sea Level (vital signs)',
+        'NASA: Global Mean Sea Level (vital signs)',
         'https://sealevel.nasa.gov/vital-signs/global-mean-sea-level/',
       ),
       cite(
-        'NASA — Sea Level 101 introduction',
+        'NASA: Sea Level 101 introduction',
         'https://sealevel.nasa.gov/sea-level-101/introduction/',
       ),
-      cite('NASA — Assessment tools', 'https://sealevel.nasa.gov/tools'),
+      cite('NASA: Assessment tools', 'https://sealevel.nasa.gov/tools'),
       cite(
-        'NASA — IPCC AR6 Sea Level Projection Tool',
+        'NASA: IPCC AR6 Sea Level Projection Tool',
         'https://sealevel.nasa.gov/data_tools/17',
       ),
-      cite('NASA — Sea Level Explorer', 'https://sealevel.nasa.gov/data_tools/22/'),
+      cite('NASA: Sea Level Explorer', 'https://sealevel.nasa.gov/data_tools/22/'),
       cite(
-        'Copernicus Marine — Ocean Climate Portal / Sea Level (secondary)',
+        'Copernicus Marine: Ocean Climate Portal / Sea Level (secondary)',
         'https://marine.copernicus.eu/ocean-climate-portal/sea-level',
       ),
       cite(
-        'Copernicus Marine — Ocean Monitoring Indicators',
+        'Copernicus Marine: Ocean Monitoring Indicators',
         'https://marine.copernicus.eu/access-data/ocean-monitoring-indicators',
       ),
       cite(
-        'Copernicus Marine — Global OMI sea-level anomalies product',
+        'Copernicus Marine: Global OMI sea-level anomalies product',
         'https://data.marine.copernicus.eu/product/GLOBAL_OMI_SL_area_averaged_anomalies/description',
       ),
       cite(
-        'Copernicus Marine — Ocean Climate Portal hub',
+        'Copernicus Marine: Ocean Climate Portal hub',
         'https://marine.copernicus.eu/ocean-climate-portal',
       ),
       cite(
-        'IPCC AR6 WG1 report (global mean, about 3.7 mm/yr, 2006–2018)',
+        'IPCC AR6 WG1 report (global mean, about 3.7 mm/yr, 2006-2018)',
         'https://www.ipcc.ch/report/ar6/wg1/',
       ),
     ],
@@ -240,16 +240,16 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     usesCoastline: true,
     sources: [
       cite(
-        'NOAA Coral Reef Watch — 5 km sea-surface temperature products',
+        'NOAA Coral Reef Watch: 5 km sea-surface temperature products',
         'https://coralreefwatch.noaa.gov/product/5km/',
       ),
       cite(
-        'NOAA Coral Reef Watch — Marine Heatwave product',
+        'NOAA Coral Reef Watch: Marine Heatwave product',
         'https://www.coralreefwatch.noaa.gov/product/marine_heatwave/',
       ),
-      cite('NOAA PSL — Marine heatwaves hub', 'https://psl.noaa.gov/marine-heatwaves/'),
+      cite('NOAA PSL: Marine heatwaves hub', 'https://psl.noaa.gov/marine-heatwaves/'),
       cite(
-        'NOAA PSL — Marine heatwaves overview',
+        'NOAA PSL: Marine heatwaves overview',
         'https://psl.noaa.gov/marine-heatwaves/overview.html',
       ),
       cite(
@@ -272,20 +272,20 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     usesCoastline: false,
     sources: [
       cite(
-        'NOAA NCEI — Ocean Heat Content, Salt Content, and Sea Level Anomalies',
+        'NOAA NCEI: Ocean Heat Content, Salt Content, and Sea Level Anomalies',
         'https://www.ncei.noaa.gov/products/ocean-heat-salt-sea-level',
       ),
-      cite('NASA — Ocean heat vital signs', 'https://climate.nasa.gov/vital-signs/ocean-heat/'),
+      cite('NASA: Ocean heat vital signs', 'https://climate.nasa.gov/vital-signs/ocean-heat/'),
       cite(
-        'NASA — Ocean heat content vital signs (alternate path)',
+        'NASA: Ocean heat content vital signs (alternate path)',
         'https://climate.nasa.gov/vital-signs/ocean-heat-content/',
       ),
       cite(
-        'Climate.gov — Ocean heat content explainer',
+        'Climate.gov: Ocean heat content explainer',
         'https://www.climate.gov/news-features/understanding-climate/climate-change-ocean-heat-content',
       ),
       cite(
-        'Mercator Ocean — Ocean heat content (optional secondary)',
+        'Mercator Ocean: Ocean heat content (optional secondary)',
         'https://www.mercator-ocean.eu/en/ocean-heat-content/',
       ),
       cite('IPCC SROCC hub (assessment framing)', 'https://www.ipcc.ch/srocc/'),
@@ -301,30 +301,30 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     usesCoastline: true,
     sources: [
       cite(
-        'GCRMN — Status of Coral Reefs of the World: 2020 (report page)',
+        'GCRMN: Status of Coral Reefs of the World: 2020 (report page)',
         'https://gcrmn.net/2020-report/',
       ),
       cite(
-        'GCRMN — Status 2020 full PDF',
+        'GCRMN: Status 2020 full PDF',
         'https://gcrmn.net/wp-content/uploads/2025/08/GCRMN_Status_of_Coral_Reefs_of_the_World_2020.pdf',
       ),
-      cite('DOI — GCRMN Status 2020', 'https://doi.org/10.59387/WOTJ9184'),
+      cite('DOI: GCRMN Status 2020', 'https://doi.org/10.59387/WOTJ9184'),
       cite('GCRMN hub', 'https://gcrmn.net/'),
-      cite('ICRI — GCRMN', 'https://www.icriforum.org/gcrmn/'),
+      cite('ICRI: GCRMN', 'https://www.icriforum.org/gcrmn/'),
       cite(
-        'UNEP — Status of Coral Reefs of the World 2020',
+        'UNEP: Status of Coral Reefs of the World 2020',
         'https://www.unep.org/resources/status-coral-reefs-world-2020',
       ),
       cite(
-        'NOAA Coral Reef Watch — 5 km product',
+        'NOAA Coral Reef Watch: 5 km product',
         'https://www.coralreefwatch.noaa.gov/product/5km/',
       ),
       cite(
-        'NOAA Ocean Service — Coral bleaching facts',
+        'NOAA Ocean Service: Coral bleaching facts',
         'https://oceanservice.noaa.gov/facts/coral_bleach.html',
       ),
       cite(
-        'NOAA — Fourth global coral bleaching event (context)',
+        'NOAA: Fourth global coral bleaching event (context)',
         'https://www.noaa.gov/news-release/noaa-confirms-4th-global-coral-bleaching-event',
       ),
     ],
@@ -337,10 +337,10 @@ export const oceanAtlasMeta: OceanAtlasMeta[] = [
     sourceUrl: 'https://www.fao.org/publications/sofia/en',
     usesCoastline: false,
     sources: [
-      cite('FAO — SOFIA publications hub', 'https://www.fao.org/publications/sofia/en'),
-      cite('FAO — Fishery SOFIA entry', 'https://www.fao.org/fishery/en/sofia'),
+      cite('FAO: SOFIA publications hub', 'https://www.fao.org/publications/sofia/en'),
+      cite('FAO: Fishery SOFIA entry', 'https://www.fao.org/fishery/en/sofia'),
       cite(
-        'FAO — State of fisheries and aquaculture hub',
+        'FAO: State of fisheries and aquaculture hub',
         'https://www.fao.org/state-of-fisheries-aquaculture',
       ),
       cite('FAO Fishery hub', 'https://www.fao.org/fishery/en'),

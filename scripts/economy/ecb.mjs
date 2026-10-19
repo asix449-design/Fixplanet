@@ -5,7 +5,7 @@
  * no rounding, no unit change, no computed rates. The decimals the ECB publishes are kept per series.
  * Rates computed by us (cross rates, for example) must never be added to this file.
  */
-import { DataError, assertRange, assertStep, daysBetween, fail, httpGet, isIsoDate, sha256, todayIso } from './lib.mjs';
+import { DataError, assertRange, assertStep, daysBetween, fail, httpGet, isIsoDate, isIsoMonth, monthEndDate, monthIndex, sha256, todayIso } from './lib.mjs';
 
 export const API_BASE = 'https://data-api.ecb.europa.eu/service/data/EXR';
 export const DAILY_XML_URL = 'https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml';
@@ -229,4 +229,138 @@ export async function fetchDataset(context) {
   if (daily) cross = crossCheck(dataset, daily);
   if (cross.note) console.error(`ECB cross check: ${cross.note}`);
   return { dataset, source: { downloadUrl: csvUrl(config), sha256: sha256(csv.buffer), bytes: csv.buffer.length }, cross };
+}
+
+/** Monthly averages (EXR.M) from January 1999. Used for the 5 year and All euro windows. */
+export const MONTHLY_CONFIG = {
+  id: 'ecb_monthly',
+  file: 'ecb-fx-monthly.json',
+  base: 'EUR',
+  startPeriod: '1999-01',
+  staleAfterDays: 45,
+  stepRatio: [0.85, 1.18],
+  minimumMonths: 24,
+  currencies: CONFIG.currencies,
+};
+
+export function monthlySeriesKey(currency) {
+  return `EXR.M.${currency}.EUR.SP00.A`;
+}
+
+export function monthlyCsvUrl(config = MONTHLY_CONFIG) {
+  const codes = config.currencies.map((item) => item.id).join('+');
+  return `${API_BASE}/M.${codes}.EUR.SP00.A?startPeriod=${config.startPeriod}&format=csvdata`;
+}
+
+export function buildMonthlyDataset(rows, config = MONTHLY_CONFIG) {
+  const wanted = new Map(config.currencies.map((item) => [monthlySeriesKey(item.id), item.id]));
+  const byKey = new Map();
+  for (const row of rows) {
+    for (const column of ['KEY', 'TIME_PERIOD', 'OBS_VALUE', 'OBS_STATUS', 'CURRENCY', 'CURRENCY_DENOM', 'TITLE', 'DECIMALS', 'UNIT']) {
+      if (!(column in row)) fail(`CSV column ${column} is missing`);
+    }
+    const currency = wanted.get(row.KEY);
+    if (!currency) fail(`Unexpected series ${row.KEY}`);
+    if (row.CURRENCY !== currency || row.CURRENCY_DENOM !== config.base) fail(`Series ${row.KEY} is not ${currency} per ${config.base}`);
+    if (!isIsoMonth(row.TIME_PERIOD)) fail(`Bad month "${row.TIME_PERIOD}" in ${row.KEY}`);
+    if (!/^\d+(\.\d+)?$/.test(row.OBS_VALUE)) fail(`Bad value "${row.OBS_VALUE}" in ${row.KEY} on ${row.TIME_PERIOD}`);
+    if (row.OBS_STATUS !== 'A') fail(`Status "${row.OBS_STATUS}" in ${row.KEY} on ${row.TIME_PERIOD}, expected A (normal value)`);
+    if (!byKey.has(row.KEY)) byKey.set(row.KEY, { rows: [], title: row.TITLE, decimals: Number(row.DECIMALS), unit: row.UNIT });
+    const entry = byKey.get(row.KEY);
+    if (entry.title !== row.TITLE || entry.decimals !== Number(row.DECIMALS)) fail(`Metadata of ${row.KEY} changes between rows`);
+    entry.rows.push([row.TIME_PERIOD, Number(row.OBS_VALUE)]);
+  }
+  for (const key of wanted.keys()) if (!byKey.has(key)) fail(`Series ${key} is missing`);
+
+  for (const entry of byKey.values()) entry.rows.sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+  const first = byKey.get(monthlySeriesKey(config.currencies[0].id)).rows.map(([month]) => month);
+  const series = config.currencies.map((item) => {
+    const entry = byKey.get(monthlySeriesKey(item.id));
+    const months = entry.rows.map(([month]) => month);
+    if (months.length !== first.length || months.some((month, index) => month !== first[index])) {
+      fail(`${item.id} has different months from ${config.currencies[0].id}`);
+    }
+    return {
+      id: item.id,
+      key: monthlySeriesKey(item.id),
+      name: entry.title,
+      unit: entry.unit,
+      decimals: entry.decimals,
+      values: entry.rows.map(([, value]) => value),
+    };
+  });
+  const last = first[first.length - 1];
+  return {
+    schema: 'fixplanet.economy.dataset/1',
+    id: config.id,
+    kind: 'monthly-rates',
+    base: config.base,
+    retrievedAt: '',
+    publisherDate: monthEndDate(last),
+    dataAsOf: last,
+    start: first[0],
+    months: first,
+    series,
+  };
+}
+
+export function monthlyAgeInDays(dataset, now) {
+  return daysBetween(dataset.publisherDate, todayIso(now));
+}
+
+export function validateMonthlyDataset(dataset, previous, options = {}, config = MONTHLY_CONFIG) {
+  const { now = new Date(), acceptRevisions = false, checkFreshness = true } = options;
+  const { months } = dataset;
+  if (months.length < config.minimumMonths) fail(`Only ${months.length} months, expected at least ${config.minimumMonths}`);
+  if (dataset.dataAsOf !== months[months.length - 1]) fail('dataAsOf is not the newest month');
+  if (dataset.publisherDate !== monthEndDate(dataset.dataAsOf)) fail('publisherDate is not the first day of the month after dataAsOf');
+  if (dataset.start !== months[0]) fail('start is not the first month');
+  months.forEach((month, index) => {
+    if (!isIsoMonth(month)) fail(`Bad month ${month}`);
+    if (index > 0) {
+      const gap = monthIndex(month) - monthIndex(months[index - 1]);
+      if (gap !== 1) fail(`A gap of ${gap} months before ${month}`);
+    }
+  });
+  for (const spec of config.currencies) {
+    const item = dataset.series.find((entry) => entry.id === spec.id);
+    if (!item) fail(`Series ${spec.id} is missing`);
+    if (item.key !== monthlySeriesKey(spec.id)) fail(`${spec.id}: series key ${item.key} is not a published ECB key`);
+    if (item.values.length !== months.length) fail(`${spec.id}: ${item.values.length} values for ${months.length} months`);
+    if (!Number.isInteger(item.decimals) || item.decimals < 0 || item.decimals > 8) fail(`${spec.id}: decimals ${item.decimals} is not a whole number from 0 to 8`);
+    item.values.forEach((value, index) => {
+      assertRange(value, spec.min, spec.max, `${spec.id} ${months[index]}`);
+      // The data API returns the unrounded monthly average, so a value can have more digits
+      // than DECIMALS. The number is stored as returned. The page uses DECIMALS for display.
+      if (index > 0) assertStep(item.values[index - 1], value, config.stepRatio[0], config.stepRatio[1], `${spec.id} ${months[index]}`);
+    });
+  }
+  const age = monthlyAgeInDays(dataset, now);
+  if (age < -35) fail(`Newest month ${dataset.dataAsOf} is too far in the future`);
+  if (checkFreshness && age > config.staleAfterDays) fail(`Newest rates are from ${dataset.dataAsOf}, ${age} days old (limit ${config.staleAfterDays})`);
+
+  if (!previous) return;
+  if (dataset.dataAsOf < previous.dataAsOf) fail(`The newest month moved back from ${previous.dataAsOf} to ${dataset.dataAsOf}`);
+  const index = new Map(dataset.months.map((month, position) => [month, position]));
+  const changed = [];
+  for (const old of previous.series) {
+    const item = dataset.series.find((entry) => entry.id === old.id);
+    if (!item) fail(`Series ${old.id} disappeared`);
+    previous.months.forEach((month, position) => {
+      const at = index.get(month);
+      if (at === undefined) return;
+      if (item.values[at] !== old.values[position]) changed.push(`${old.id} ${month}`);
+    });
+  }
+  if (changed.length && !acceptRevisions) {
+    fail(`${changed.length} published rates differ from the stored ones (first ${changed[0]}); the ECB does not normally revise reference rates. Check, then run with ECONOMY_ACCEPT_REVISIONS=1`);
+  }
+}
+
+export async function fetchMonthlyDataset(context) {
+  const { fetchImpl, config = MONTHLY_CONFIG } = context;
+  const url = monthlyCsvUrl(config);
+  const csv = await httpGet(url, { fetchImpl, accept: 'text/csv', maxBytes: 8_000_000 });
+  const dataset = buildMonthlyDataset(parseCsv(csv.buffer.toString('utf8')), config);
+  return { dataset, source: { downloadUrl: url, sha256: sha256(csv.buffer), bytes: csv.buffer.length } };
 }

@@ -23,7 +23,7 @@
       },
       "primarySources": [
         {
-          "label": "FAO Livestock Systems — cattle",
+          "label": "FAO Livestock Systems: cattle",
           "url": "https://www.fao.org/livestock-systems/global-distributions/cattle/en/"
         }
       ],
@@ -55,7 +55,7 @@
       },
       "primarySources": [
         {
-          "label": "FAO Livestock Systems — chickens",
+          "label": "FAO Livestock Systems: chickens",
           "url": "https://www.fao.org/livestock-systems/global-distributions/chickens/en/"
         }
       ],
@@ -87,7 +87,7 @@
       },
       "primarySources": [
         {
-          "label": "FAO Livestock Systems — sheep",
+          "label": "FAO Livestock Systems: sheep",
           "url": "https://www.fao.org/livestock-systems/global-distributions/sheep/en/"
         }
       ],
@@ -119,7 +119,7 @@
       },
       "primarySources": [
         {
-          "label": "FAO Livestock Systems — pigs",
+          "label": "FAO Livestock Systems: pigs",
           "url": "https://www.fao.org/livestock-systems/global-distributions/pigs/en/"
         }
       ],
@@ -151,11 +151,11 @@
       },
       "primarySources": [
         {
-          "label": "FAO — buffalo milk",
+          "label": "FAO: buffalo milk",
           "url": "https://www.fao.org/dairy-production-products/dairy/buffaloes/en"
         },
         {
-          "label": "FAO Livestock Systems — buffaloes",
+          "label": "FAO Livestock Systems: buffaloes",
           "url": "https://www.fao.org/livestock-systems/global-distributions/buffaloes/en/"
         }
       ],
@@ -187,11 +187,11 @@
       },
       "primarySources": [
         {
-          "label": "FAO Livestock Systems — horses",
+          "label": "FAO Livestock Systems: horses",
           "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
         },
         {
-          "label": "Librado et al., Nature, 2021 — Western Eurasian steppe horses",
+          "label": "Librado et al., Nature, 2021: Western Eurasian steppe horses",
           "url": "https://doi.org/10.1038/s41586-021-04018-9"
         }
       ],
@@ -223,7 +223,7 @@
       },
       "primarySources": [
         {
-          "label": "Bergström et al., Science, 2020 — origins of prehistoric dogs (PMC)",
+          "label": "Bergström et al., Science, 2020: origins of prehistoric dogs (PMC)",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
         },
         {
@@ -259,7 +259,7 @@
       },
       "primarySources": [
         {
-          "label": "FAO — International Year of Camelids 2024",
+          "label": "FAO: International Year of Camelids 2024",
           "url": "https://www.fao.org/camelids-2024/en"
         }
       ],

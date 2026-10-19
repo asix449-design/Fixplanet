@@ -35,7 +35,7 @@ const activeShelf: GeoShelf | undefined =
 const items = activeShelf ? getGeoProjectsByShelf(locale, activeShelf) : getGeoProjects(locale);
 const shelfTitle = activeShelf ? page.shelves[activeShelf] : page.title;
 const pageTitle = activeShelf
-  ? `${page.shelves[activeShelf]} — ${page.title} — Fix Planet`
+  ? `${page.shelves[activeShelf]}: ${page.title}: Fix Planet`
   : page.metaTitle;
 const pageDescription = activeShelf ? page.shelfLeads[activeShelf] : page.metaDescription;
 const backdropSrc = hub ? geoHubSrc : geoSectionSrc;

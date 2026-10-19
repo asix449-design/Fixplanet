@@ -65,16 +65,16 @@ export type LawPage = {
 };
 
 const pageEn: LawPage = {
-  metaTitle: 'Law — Fix Planet',
+  metaTitle: 'Law: Fix Planet',
   metaDescription:
     'Environmental, AI-safety, and wildlife law: texts in force, bills under consideration, and proposals labeled as ideas, with citations.',
   categoryMetaTitle: {
-    ecology: 'Ecology law — Fix Planet',
-    ai: 'AI law — Fix Planet',
-    animals: 'Animal and habitat law — Fix Planet',
+    ecology: 'Ecology law: Fix Planet',
+    ai: 'AI law: Fix Planet',
+    animals: 'Animal and habitat law: Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Climate, pollution, forest, and circular-economy instruments — enacted, pending, or proposed.',
+    ecology: 'Climate, pollution, forest, and circular-economy instruments: enacted, pending, or proposed.',
     ai: 'Safety, risk, transparency, and liability rules for AI systems.',
     animals: 'Wildlife trade, endangered species, habitats, corridor bills, and one labeled companion-animal idea.',
   },
@@ -82,7 +82,7 @@ const pageEn: LawPage = {
   title: 'Law',
   lead: 'Environmental statutes, rules for high-risk AI, and instruments that protect wildlife and habitats. Each article names a jurisdiction, a citation, and whether the text is in force, still under consideration, or only an idea.',
   honesty:
-    'Not legal advice. “In force” means a statute, regulation, or treaty that already binds someone. Ideas stay labeled as ideas — including bills that died after one chamber.',
+    'Not legal advice. “In force” means a statute, regulation, or treaty that already binds someone. Ideas stay labeled as ideas: including bills that died after one chamber.',
   filterAria: 'Choose a law category',
   chooseCategory: 'Choose a field',
   tiles: {
@@ -106,7 +106,7 @@ const pageEn: LawPage = {
   imageCredit: 'Image',
   empty: 'No entries on this shelf yet.',
   heroAlt:
-    'The European Parliament hemicycle — institutional backdrop for the Law section, not a photograph of a named vote',
+    'The European Parliament hemicycle: institutional backdrop for the Law section, not a photograph of a named vote',
   hubHeroAlt:
     'Golden scales of justice on a lit circular plinth beside a bronze Lady Justice statue in a dark marble lobby at night',
   photoCredit: 'Photo: founder-supplied scales of justice.',
@@ -128,7 +128,7 @@ const pageEn: LawPage = {
     ideas: 'Ideas',
   },
   statusLeads: {
-    existing: 'Texts that are in force — a statute, regulation, directive, or treaty that already binds someone.',
+    existing: 'Texts that are in force: a statute, regulation, directive, or treaty that already binds someone.',
     pending:
       'Bills in a legislature or a formal intergovernmental negotiation. Not law yet. A first reading or an INC round is not an enactment.',
     ideas:
@@ -141,8 +141,8 @@ const pageEn: LawPage = {
     ideas:
       'Useful proposed laws that remain proposals. Some were formally filed and then withdrawn or left to lapse. Read them as proposals.',
   },
-  ideaBanner: 'This is an idea — not enacted law.',
-  pendingBanner: 'Under consideration — not enacted.',
+  ideaBanner: 'This is an idea: not enacted law.',
+  pendingBanner: 'Under consideration: not enacted.',
   aiIdeaBanner: 'This text is a proposal.',
   aiPendingBanner: 'This text is under consideration.',
   related: 'Related',
@@ -150,24 +150,24 @@ const pageEn: LawPage = {
 };
 
 const pageRu: LawPage = {
-  metaTitle: 'Право — Fix Planet',
+  metaTitle: 'Право: Fix Planet',
   metaDescription:
     'Экологическое право, безопасность ИИ и защита диких видов: действующие тексты, рассматриваемые проекты и предложения, помеченные как идеи, с цитатами.',
   categoryMetaTitle: {
-    ecology: 'Экологическое право — Fix Planet',
-    ai: 'Право ИИ — Fix Planet',
-    animals: 'Право животных и местообитаний — Fix Planet',
+    ecology: 'Экологическое право: Fix Planet',
+    ai: 'Право ИИ: Fix Planet',
+    animals: 'Право животных и местообитаний: Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Климат, загрязнение, леса и циркулярная экономика — принятые, рассматриваемые или предложенные акты.',
+    ecology: 'Климат, загрязнение, леса и циркулярная экономика: принятые, рассматриваемые или предложенные акты.',
     ai: 'Правила безопасности, риска, прозрачности и ответственности для систем ИИ.',
     animals: 'Торговля дикими видами, исчезающие виды, местообитания, коридоры и одна помеченная идея о животных-компаньонах.',
   },
   eyebrow: 'Правила для живых систем',
   title: 'Право',
-  lead: 'Экологические законы, правила для высокорискового ИИ и инструменты, которые защищают дикие виды и местообитания. В каждой статье — юрисдикция, цитата и то, действует ли текст, ещё рассматривается или это только идея.',
+  lead: 'Экологические законы, правила для высокорискового ИИ и инструменты, которые защищают дикие виды и местообитания. В каждой статье: юрисдикция, цитата и то, действует ли текст, ещё рассматривается или это только идея.',
   honesty:
-    'Не юридическая консультация. «Действует» значит закон, регламент или договор, который уже кого-то связывает. Идеи так и подписаны — в том числе законопроекты, прошедшие одну палату и умершие.',
+    'Не юридическая консультация. «Действует» значит закон, регламент или договор, который уже кого-то связывает. Идеи так и подписаны: в том числе законопроекты, прошедшие одну палату и умершие.',
   filterAria: 'Выберите область права',
   chooseCategory: 'Выберите область',
   tiles: {
@@ -191,10 +191,10 @@ const pageRu: LawPage = {
   imageCredit: 'Изображение',
   empty: 'На этой полке пока нет записей.',
   heroAlt:
-    'Полукруг Европейского парламента — институциональный фон раздела «Право», не снимок конкретного голосования',
+    'Полукруг Европейского парламента: институциональный фон раздела «Право», не снимок конкретного голосования',
   hubHeroAlt:
     'Золотые весы правосудия на подсвеченном круглом подиуме рядом с бронзовой статуей Фемиды в тёмном мраморном холле ночью',
-  photoCredit: 'Фото: снимок основателя — золотые весы правосудия.',
+  photoCredit: 'Фото: снимок основателя: золотые весы правосудия.',
   categories: {
     ecology: 'Экология',
     ai: 'ИИ',
@@ -205,7 +205,7 @@ const pageRu: LawPage = {
       'Климат, загрязнение, леса, земля и циркулярная экономика. Рядом с законами о восстановлении и чистом воздухе идут переговоры о пластике. Здесь также: глобальный договор о ртути; правила международной перевозки опасных отходов; договор о стойких органических загрязнителях; процедура предварительного обоснованного согласия для отдельных опасных химических веществ и пестицидов в торговле; региональное соглашение Латинской Америки и Карибского бассейна об экологической информации, участии и правосудии.',
     ai: 'Безопасность, риск, прозрачность и ответственность для высокорисковых и передовых систем. Отозванный текст об ответственности помечен как идея. Здесь также: договор Совета Европы об искусственном интеллекте, правах человека, демократии и верховенстве права; рекомендация по этике Организации Объединённых Наций по вопросам образования, науки и культуры (ЮНЕСКО); принципы искусственного интеллекта Организации экономического сотрудничества и развития (ОЭСР); рамочная программа управления рисками искусственного интеллекта Национального института стандартов и технологий США; и британский подход, при котором искусственный интеллект регулируют уже существующие надзорные органы.',
     animals:
-      'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете умышленной жестокости к животному-компаньону. Сначала право видов и местообитаний; карточка о компаньонах — идея, не статут.',
+      'Торговля дикими видами, списки исчезающих, сети местообитаний, живой американский законопроект о коридорах и одна явно помеченная идея о паритете умышленной жестокости к животному-компаньону. Сначала право видов и местообитаний; карточка о компаньонах: идея, не статут.',
   },
   status: {
     existing: 'Действующие',
@@ -215,7 +215,7 @@ const pageRu: LawPage = {
   statusLeads: {
     existing: 'Тексты, которые действуют: закон, регламент, директива или договор, который уже кого-то связывает.',
     pending:
-      'Законопроекты в парламенте или формальные межгосударственные переговоры. Ещё не закон. Первое чтение или раунд INC — не принятие.',
+      'Законопроекты в парламенте или формальные межгосударственные переговоры. Ещё не закон. Первое чтение или раунд INC: не принятие.',
     ideas:
       'Полезные предложенные законы, которые не действуют. Некоторые официально вносили, потом отозвали или дали умереть. Их нельзя читать как принятый закон.',
   },
@@ -226,8 +226,8 @@ const pageRu: LawPage = {
     ideas:
       'Полезные предложенные законы, которые остаются предложениями. Некоторые официально вносили, потом отозвали или оставили без движения. Читайте их как предложения.',
   },
-  ideaBanner: 'Это идея — не принятый закон.',
-  pendingBanner: 'На рассмотрении — не принято.',
+  ideaBanner: 'Это идея: не принятый закон.',
+  pendingBanner: 'На рассмотрении: не принято.',
   aiIdeaBanner: 'Этот текст остаётся предложением.',
   aiPendingBanner: 'Этот текст на рассмотрении.',
   related: 'Смежные',
@@ -235,16 +235,16 @@ const pageRu: LawPage = {
 };
 
 const pagePl: LawPage = {
-  metaTitle: 'Prawo — Fix Planet',
+  metaTitle: 'Prawo: Fix Planet',
   metaDescription:
     'Prawo środowiskowe, bezpieczeństwo SI i ochrona dzikich gatunków: teksty obowiązujące, projekty rozpatrywane i propozycje oznaczone jako idee, z cytatami.',
   categoryMetaTitle: {
-    ecology: 'Prawo ekologiczne — Fix Planet',
-    ai: 'Prawo SI — Fix Planet',
-    animals: 'Prawo zwierząt i siedlisk — Fix Planet',
+    ecology: 'Prawo ekologiczne: Fix Planet',
+    ai: 'Prawo SI: Fix Planet',
+    animals: 'Prawo zwierząt i siedlisk: Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Klimat, zanieczyszczenia, lasy i obieg zamknięty — ustawy uchwalone, procedowane albo proponowane.',
+    ecology: 'Klimat, zanieczyszczenia, lasy i obieg zamknięty: ustawy uchwalone, procedowane albo proponowane.',
     ai: 'Bezpieczeństwo, ryzyko, przejrzystość i odpowiedzialność systemów SI.',
     animals: 'Handel gatunkami, gatunki zagrożone, siedliska, projekty korytarzy i jedna oznaczona idea o zwierzętach towarzyszących.',
   },
@@ -252,7 +252,7 @@ const pagePl: LawPage = {
   title: 'Prawo',
   lead: 'Ustawy środowiskowe, reguły dla SI wysokiego ryzyka i instrumenty chroniące dzikie gatunki i siedliska. W każdym artykule: jurysdykcja, cytat i to, czy tekst obowiązuje, jest jeszcze rozpatrywany, czy to tylko idea.',
   honesty:
-    'To nie porada prawna. „Obowiązuje” znaczy ustawa, rozporządzenie albo traktat, który już kogoś wiąże. Idee zostają ideami — także projekty, które przeszły jedną izbę i padły.',
+    'To nie porada prawna. „Obowiązuje” znaczy ustawa, rozporządzenie albo traktat, który już kogoś wiąże. Idee zostają ideami: także projekty, które przeszły jedną izbę i padły.',
   filterAria: 'Wybierz dziedzinę prawa',
   chooseCategory: 'Wybierz dziedzinę',
   tiles: {
@@ -276,10 +276,10 @@ const pagePl: LawPage = {
   imageCredit: 'Zdjęcie',
   empty: 'Na tej półce nie ma jeszcze wpisów.',
   heroAlt:
-    'Hemicycle Parlamentu Europejskiego — instytucjonalne tło działu Prawo, nie zdjęcie konkretnego głosowania',
+    'Hemicycle Parlamentu Europejskiego: instytucjonalne tło działu Prawo, nie zdjęcie konkretnego głosowania',
   hubHeroAlt:
     'Złote wagi sprawiedliwości na podświetlonym okrągłym podium obok brązowego posągu Temidy w ciemnym marmurowym holu nocą',
-  photoCredit: 'Zdjęcie: zdjęcie założyciela — złote wagi sprawiedliwości.',
+  photoCredit: 'Zdjęcie: zdjęcie założyciela: złote wagi sprawiedliwości.',
   categories: {
     ecology: 'Ekologia',
     ai: 'SI',
@@ -311,8 +311,8 @@ const pagePl: LawPage = {
     ideas:
       'Użyteczne propozycje, które pozostają propozycjami. Niektóre formalnie złożono, potem wycofano albo pozostawiono bez uchwalenia. Czytaj je jako propozycje.',
   },
-  ideaBanner: 'To jest idea — nie uchwalone prawo.',
-  pendingBanner: 'Rozpatrywane — nie uchwalone.',
+  ideaBanner: 'To jest idea: nie uchwalone prawo.',
+  pendingBanner: 'Rozpatrywane: nie uchwalone.',
   aiIdeaBanner: 'Ten tekst pozostaje propozycją.',
   aiPendingBanner: 'Ten tekst jest w trakcie rozpatrywania.',
   related: 'Powiązane',
@@ -320,16 +320,16 @@ const pagePl: LawPage = {
 };
 
 const pageLv: LawPage = {
-  metaTitle: 'Tiesības — Fix Planet',
+  metaTitle: 'Tiesības: Fix Planet',
   metaDescription:
     'Vides tiesības, MI drošība un savvaļas sugu aizsardzība: spēkā esoši teksti, izskatīšanā esoši projekti un priekšlikumi, kas marķēti kā idejas, ar citātiem.',
   categoryMetaTitle: {
-    ecology: 'Ekoloģijas tiesības — Fix Planet',
-    ai: 'MI tiesības — Fix Planet',
-    animals: 'Dzīvnieku un dzīvotņu tiesības — Fix Planet',
+    ecology: 'Ekoloģijas tiesības: Fix Planet',
+    ai: 'MI tiesības: Fix Planet',
+    animals: 'Dzīvnieku un dzīvotņu tiesības: Fix Planet',
   },
   categoryMetaDescription: {
-    ecology: 'Klimats, piesārņojums, meži un aprites ekonomika — pieņemti, izskatīšanā vai ierosināti akti.',
+    ecology: 'Klimats, piesārņojums, meži un aprites ekonomika: pieņemti, izskatīšanā vai ierosināti akti.',
     ai: 'MI sistēmu drošība, risks, caurredzamība un atbildība.',
     animals: 'Savvaļas tirdzniecība, apdraudētās sugas, dzīvotnes, koridoru likumprojekti un viena marķēta ideja par kompanjondzīvniekiem.',
   },
@@ -337,7 +337,7 @@ const pageLv: LawPage = {
   title: 'Tiesības',
   lead: 'Vides likumi, noteikumi augsta riska MI un instrumenti, kas sargā savvaļas sugas un dzīvotnes. Katrā rakstā: jurisdikcija, citāts un tas, vai teksts ir spēkā, vēl izskatīšanā, vai tā ir tikai ideja.',
   honesty:
-    'Nav juridiska konsultācija. «Spēkā» nozīmē likumu, regulu vai līgumu, kas jau kādu saista. Idejas paliek idejas — arī projekti, kas izgāja vienu palātu un nomira.',
+    'Nav juridiska konsultācija. «Spēkā» nozīmē likumu, regulu vai līgumu, kas jau kādu saista. Idejas paliek idejas: arī projekti, kas izgāja vienu palātu un nomira.',
   filterAria: 'Izvēlies tiesību jomu',
   chooseCategory: 'Izvēlies jomu',
   tiles: {
@@ -361,7 +361,7 @@ const pageLv: LawPage = {
   imageCredit: 'Attēls',
   empty: 'Šajā plauktā vēl nav ierakstu.',
   heroAlt:
-    'Eiropas Parlamenta hemikikls — sadaļas Tiesības institucionālais fons, ne konkrēta balsojuma foto',
+    'Eiropas Parlamenta hemikikls: sadaļas Tiesības institucionālais fons, ne konkrēta balsojuma foto',
   hubHeroAlt:
     'Zelta taisnības svari uz apgaismota apaļa podiuma blakus bronzas Tēmisas statujai tumšā marmora vestibilā naktī',
   photoCredit: 'Foto: dibinātāja piegādāti zelta taisnības svari.',
@@ -383,7 +383,7 @@ const pageLv: LawPage = {
     ideas: 'Idejas',
   },
   statusLeads: {
-    existing: 'Teksti, kas ir spēkā — likums, regula, direktīva vai līgums, kas jau kādu saista.',
+    existing: 'Teksti, kas ir spēkā: likums, regula, direktīva vai līgums, kas jau kādu saista.',
     pending:
       'Likumprojekti parlamentā vai formālas starpvalstu sarunas. Vēl nav likums. Pirmais lasījums vai INC kārta nav pieņemšana.',
     ideas:
@@ -396,8 +396,8 @@ const pageLv: LawPage = {
     ideas:
       'Noderīgi ierosināti likumi, kas paliek priekšlikumi. Dažus formāli iesniedza, tad atsauca vai atstāja bez tālākas virzības. Lasi tos kā priekšlikumus.',
   },
-  ideaBanner: 'Šī ir ideja — ne pieņemts likums.',
-  pendingBanner: 'Izskatīšanā — nav pieņemts.',
+  ideaBanner: 'Šī ir ideja: ne pieņemts likums.',
+  pendingBanner: 'Izskatīšanā: nav pieņemts.',
   aiIdeaBanner: 'Šis teksts paliek priekšlikums.',
   aiPendingBanner: 'Šis teksts ir izskatīšanā.',
   related: 'Saistītie',

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img">
-  <title>Burned area — schematic</title>
+  <title>Burned area: schematic</title>
   <desc>Fire-scar footprints on land. Scars are burned area, not live hotspot points alone. Coastline: Natural Earth 110m land, public domain. Field is an original schematic, not an agency plate.</desc>
   <defs>
     <filter id="soft" x="-8%" y="-8%" width="116%" height="116%">

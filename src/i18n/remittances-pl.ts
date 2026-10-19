@@ -7,7 +7,7 @@ export const plRemittances: RemittanceCopy = {
     'remittances-global-flows': {
       tag: 'Przepływy · Kraje o niskim i średnim dochodzie · 2023 i szacunek na 2024',
       title: 'Przekazy pieniężne do krajów rozwijających się',
-      hook: 'Kraje o niskim i średnim dochodzie otrzymały szacunkowo 656 mld USD przekazów odnotowanych w oficjalnych statystykach w 2023 r.; według zaktualizowanego szacunku autorów Banku Światowego w 2024 r. było to około 685 mld USD — nadal więcej niż łączna wartość bezpośrednich inwestycji zagranicznych i oficjalnej pomocy rozwojowej.',
+      hook: 'Kraje o niskim i średnim dochodzie otrzymały szacunkowo 656 mld USD przekazów odnotowanych w oficjalnych statystykach w 2023 r.; według zaktualizowanego szacunku autorów Banku Światowego w 2024 r. było to około 685 mld USD: nadal więcej niż łączna wartość bezpośrednich inwestycji zagranicznych i oficjalnej pomocy rozwojowej.',
       figure: '656',
       unit: 'mld USD, 2023',
       rows: [
@@ -21,7 +21,7 @@ export const plRemittances: RemittanceCopy = {
         },
         {
           heading: 'Dlaczego to ważne',
-          body: 'Dla wielu krajów te przepływy są największym stabilnym źródłem finansowania zewnętrznego — często większym niż bezpośrednie inwestycje zagraniczne czy pomoc. Wspierają konsumpcję gospodarstw domowych, edukację i zdrowie, a gdy inne przepływy kapitału się wahają, stanowią bufor dla rachunku obrotów bieżących.',
+          body: 'Dla wielu krajów te przepływy są największym stabilnym źródłem finansowania zewnętrznego: często większym niż bezpośrednie inwestycje zagraniczne czy pomoc. Wspierają konsumpcję gospodarstw domowych, edukację i zdrowie, a gdy inne przepływy kapitału się wahają, stanowią bufor dla rachunku obrotów bieżących.',
         },
         {
           heading: 'Jak to czytać',
@@ -29,7 +29,7 @@ export const plRemittances: RemittanceCopy = {
         },
       ],
       plate:
-        'Wykres: przekazy pieniężne do krajów o niskim i średnim dochodzie, 2017–2023, Bank Światowy, „Migracja i rozwój”, nr 40. Liczba to miliardy USD.',
+        'Wykres: przekazy pieniężne do krajów o niskim i średnim dochodzie, 2017-2023, Bank Światowy, „Migracja i rozwój”, nr 40. Liczba to miliardy USD.',
     },
     'remittances-top-recipients': {
       tag: 'Odbiorcy · szacunek na 2024',
@@ -51,7 +51,7 @@ export const plRemittances: RemittanceCopy = {
         },
         {
           heading: 'Dlaczego to ważne',
-          body: 'Duże kwoty wpływów kształtują krajowe rynki walutowe i dochody gospodarstw domowych w największych układach kraj pochodzenia – kraj docelowy: zwłaszcza Indie – państwa Zatoki Perskiej i OECD, Meksyk – Stany Zjednoczone oraz długoletnie korytarze filipińskich pracowników za granicą.',
+          body: 'Duże kwoty wpływów kształtują krajowe rynki walutowe i dochody gospodarstw domowych w największych układach kraj pochodzenia - kraj docelowy: zwłaszcza Indie - państwa Zatoki Perskiej i OECD, Meksyk - Stany Zjednoczone oraz długoletnie korytarze filipińskich pracowników za granicą.',
         },
         {
           heading: 'Jak to czytać',
@@ -64,13 +64,13 @@ export const plRemittances: RemittanceCopy = {
     'remittances-gdp-share': {
       tag: 'Zależność · szacunek na 2024',
       title: 'Przekazy jako udział w PKB',
-      hook: 'W mniejszych gospodarkach przekazy mogą przewyższać inne finansowanie: Tadżykistan ~45% PKB, Tonga ~38%, dalej Nikaragua, Liban i Samoa około 26–27% w szacunkach na 2024.',
+      hook: 'W mniejszych gospodarkach przekazy mogą przewyższać inne finansowanie: Tadżykistan ~45% PKB, Tonga ~38%, dalej Nikaragua, Liban i Samoa około 26-27% w szacunkach na 2024.',
       figure: '47',
       unit: 'procent PKB, Tadżykistan na mapie 2024',
       rows: [
         { label: 'Tadżykistan, szacunek na 2024', figure: '~45% PKB' },
         { label: 'Tonga, szacunek na 2024', figure: '~38% PKB' },
-        { label: 'Nikaragua, Liban i Samoa, szacunki na 2024', figure: 'około 26–27% PKB' },
+        { label: 'Nikaragua, Liban i Samoa, szacunki na 2024', figure: 'około 26-27% PKB' },
       ],
       sections: [
         {
@@ -79,7 +79,7 @@ export const plRemittances: RemittanceCopy = {
         },
         {
           heading: 'Dlaczego to ważne',
-          body: 'Tam, gdzie przekazy stanowią dwucyfrowy odsetek PKB, finansują deficyt na rachunku obrotów bieżących, konsumpcję gospodarstw domowych, a często także stabilność finansów publicznych — w większym stopniu niż bezpośrednie inwestycje zagraniczne czy pomoc. Wstrząsy na rynkach pracy krajów przyjmujących lub w korytarzach przekazów szybko przenoszą się wtedy na popyt wewnętrzny.',
+          body: 'Tam, gdzie przekazy stanowią dwucyfrowy odsetek PKB, finansują deficyt na rachunku obrotów bieżących, konsumpcję gospodarstw domowych, a często także stabilność finansów publicznych: w większym stopniu niż bezpośrednie inwestycje zagraniczne czy pomoc. Wstrząsy na rynkach pracy krajów przyjmujących lub w korytarzach przekazów szybko przenoszą się wtedy na popyt wewnętrzny.',
         },
         {
           heading: 'Jak to czytać',
@@ -92,7 +92,7 @@ export const plRemittances: RemittanceCopy = {
     'remittances-sending-cost': {
       tag: 'Ceny · RPW',
       title: 'Koszt wysyłania pieniędzy do domu',
-      hook: 'Wysyłka przekazu nadal kosztuje średnio na świecie około 6,4% kwoty — ponad dwa razy więcej niż wynoszący 3% cel w ramach Celów Zrównoważonego Rozwoju; baza Banku Światowego o cenach przekazów pieniężnych, zaktualizowana 18 sierpnia 2025 r., podaje około 6,36%.',
+      hook: 'Wysyłka przekazu nadal kosztuje średnio na świecie około 6,4% kwoty: ponad dwa razy więcej niż wynoszący 3% cel w ramach Celów Zrównoważonego Rozwoju; baza Banku Światowego o cenach przekazów pieniężnych, zaktualizowana 18 sierpnia 2025 r., podaje około 6,36%.',
       figure: '6,4',
       unit: 'procent, średnia światowa, koniec 2023',
       rows: [

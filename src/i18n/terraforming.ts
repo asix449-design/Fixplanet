@@ -47,12 +47,12 @@ export type GeoPage = {
 };
 
 const pageEn: GeoPage = {
-  metaTitle: 'Terraforming — Fix Planet',
+  metaTitle: 'Terraforming: Fix Planet',
   metaDescription:
     'Canals, inland seas, and desert belts of trees: landscape megaprojects, plus a separate shelf of climate-intervention proposals, with sources.',
   eyebrow: 'Remaking landscapes',
   title: 'Terraforming',
-  lead: 'Canals, inland seas, walls of trees: plans to remake Earth’s surface at the scale of a country or a basin. A smaller shelf holds climate-intervention proposals — solar and marine — kept apart so the terms do not mix.',
+  lead: 'Canals, inland seas, walls of trees: plans to remake Earth’s surface at the scale of a country or a basin. A smaller shelf holds climate-intervention proposals: solar and marine: kept apart so the terms do not mix.',
   honesty:
     'Each card names a jurisdiction, years, a status, and sources. Mixed results stay mixed.',
   naming:
@@ -69,7 +69,7 @@ const pageEn: GeoPage = {
   back: '← Terraforming',
   plan: 'The plan',
   construction: 'Construction / status',
-  outcome: 'What went wrong — or only partly worked',
+  outcome: 'What went wrong, or only partly worked',
   lessons: 'Lessons',
   sourcesLabel: 'Sources',
   primarySource: 'Source',
@@ -78,15 +78,15 @@ const pageEn: GeoPage = {
   imageCredit: 'Image',
   empty: 'No cards on this shelf yet.',
   heroAlt:
-    'Split landscape: cracked drought earth on the left and mossy green hills with two rabbits on the right — founder-supplied Terraforming hub theme, not a built project',
-  photoCredit: 'Photo: founder-supplied split landscape — drought beside returning life.',
+    'Split landscape: cracked drought earth on the left and mossy green hills with two rabbits on the right: founder-supplied Terraforming hub theme, not a built project',
+  photoCredit: 'Photo: founder-supplied split landscape: drought beside returning life.',
   shelves: {
     water: 'Water & diversion',
     desert: 'Desert greening',
     climate: 'Climate intervention',
   },
   shelfLeads: {
-    all: 'Most of these schemes tried to move water or plant a dry belt. A few later ideas try to change the planet’s energy budget instead — still research.',
+    all: 'Most of these schemes tried to move water or plant a dry belt. A few later ideas try to change the planet’s energy budget instead: still research.',
     water:
       'Canals, pumps, fossil aquifers, and inland-sea dreams. Some pipes exist. Few of the climates they promised do.',
     desert:
@@ -102,21 +102,21 @@ const pageEn: GeoPage = {
     ongoing: 'Ongoing',
     research: 'Research',
   },
-  researchBanner: 'Research / proposal — not a deployed planetary fix.',
-  proposedBanner: 'Proposed — not built.',
+  researchBanner: 'Research / proposal: not a deployed planetary fix.',
+  proposedBanner: 'Proposed: not built.',
 };
 
 const pageRu: GeoPage = {
-  metaTitle: 'Терраформинг — Fix Planet',
+  metaTitle: 'Терраформинг: Fix Planet',
   metaDescription:
     'Каналы, внутренние моря и лесные пояса в пустыне: ландшафтные мегапроекты и отдельная полка климатических вмешательств, с источниками.',
   eyebrow: 'Переделка ландшафта',
   title: 'Терраформинг',
-  lead: 'Каналы, внутренние моря, стены деревьев: замыслы переделать поверхность Земли в масштабе страны или бассейна. Климатические вмешательства — солнечные и морские — стоят на отдельной полке, чтобы термины не смешивались.',
+  lead: 'Каналы, внутренние моря, стены деревьев: замыслы переделать поверхность Земли в масштабе страны или бассейна. Климатические вмешательства: солнечные и морские: стоят на отдельной полке, чтобы термины не смешивались.',
   honesty:
-    'На каждой карточке — юрисдикция, годы, статус и источники. Смешанные итоги так и написаны.',
+    'На каждой карточке: юрисдикция, годы, статус и источники. Смешанные итоги так и написаны.',
   naming:
-    'Каталог называется «Терраформинг», потому что карточки — прежде всего мегапроекты преобразования ландшафта. Климатическая геоинженерия — отдельная полка.',
+    'Каталог называется «Терраформинг», потому что карточки: прежде всего мегапроекты преобразования ландшафта. Климатическая геоинженерия: отдельная полка.',
   filterAria: 'Фильтр проектов по полке',
   chooseShelf: 'Выберите полку',
   tiles: {
@@ -129,7 +129,7 @@ const pageRu: GeoPage = {
   back: '← Терраформинг',
   plan: 'Замысел',
   construction: 'Строительство / статус',
-  outcome: 'Что пошло не так — или сработало лишь частично',
+  outcome: 'Что пошло не так, или сработало лишь частично',
   lessons: 'Уроки',
   sourcesLabel: 'Источники',
   primarySource: 'Источник',
@@ -138,17 +138,17 @@ const pageRu: GeoPage = {
   imageCredit: 'Изображение',
   empty: 'На этой полке пока нет карточек.',
   heroAlt:
-    'Расколотый пейзаж: потрескавшаяся засуха слева и мшистые зелёные холмы с двумя кроликами справа — тема хаба «Терраформинг», снимок основателя, не построенный проект',
-  photoCredit: 'Фото: снимок основателя — засуха рядом с вернувшейся жизнью.',
+    'Расколотый пейзаж: потрескавшаяся засуха слева и мшистые зелёные холмы с двумя кроликами справа: тема хаба «Терраформинг», снимок основателя, не построенный проект',
+  photoCredit: 'Фото: снимок основателя: засуха рядом с вернувшейся жизнью.',
   shelves: {
     water: 'Вода и переброски',
     desert: 'Озеленение пустынь',
     climate: 'Климатическое вмешательство',
   },
   shelfLeads: {
-    all: 'Большинство схем пытались перебросить воду или засадить сухой пояс. Несколько более поздних идей бьют уже не по ландшафту, а по энергетическому бюджету планеты — пока это исследования.',
+    all: 'Большинство схем пытались перебросить воду или засадить сухой пояс. Несколько более поздних идей бьют уже не по ландшафту, а по энергетическому бюджету планеты: пока это исследования.',
     water:
-      'Каналы, насосы, ископаемые водоносные горизонты и мечты о внутренних морях. Трубы иногда есть. Обещанного климата — почти нет.',
+      'Каналы, насосы, ископаемые водоносные горизонты и мечты о внутренних морях. Трубы иногда есть. Обещанного климата: почти нет.',
     desert:
       'Лесополосы и зелёные стены. Живой покров и цена воды значат больше, чем саженцы в пресс-релизе.',
     climate:
@@ -162,17 +162,17 @@ const pageRu: GeoPage = {
     ongoing: 'Идёт',
     research: 'Исследование',
   },
-  researchBanner: 'Исследование / предложение — не развёрнутое планетарное решение.',
-  proposedBanner: 'Предложено — не построено.',
+  researchBanner: 'Исследование / предложение: не развёрнутое планетарное решение.',
+  proposedBanner: 'Предложено: не построено.',
 };
 
 const pagePl: GeoPage = {
-  metaTitle: 'Terraformowanie — Fix Planet',
+  metaTitle: 'Terraformowanie: Fix Planet',
   metaDescription:
     'Kanały, morza śródlądowe i pasy drzew na pustyni: megaprojekty krajobrazowe i osobna półka interwencji klimatycznych, ze źródłami.',
   eyebrow: 'Przekształcanie krajobrazu',
   title: 'Terraformowanie',
-  lead: 'Kanały, morza śródlądowe, mury drzew: plany przebudowy powierzchni Ziemi w skali kraju albo basenu. Interwencje klimatyczne — słoneczne i morskie — stoją na osobnej półce, żeby pojęć nie mieszać.',
+  lead: 'Kanały, morza śródlądowe, mury drzew: plany przebudowy powierzchni Ziemi w skali kraju albo basenu. Interwencje klimatyczne: słoneczne i morskie: stoją na osobnej półce, żeby pojęć nie mieszać.',
   honesty:
     'Każda karta ma jurysdykcję, lata, status i źródła. Mieszane wyniki zostają mieszane.',
   naming:
@@ -189,7 +189,7 @@ const pagePl: GeoPage = {
   back: '← Terraformowanie',
   plan: 'Plan',
   construction: 'Budowa / status',
-  outcome: 'Co poszło nie tak — albo zadziałało tylko częściowo',
+  outcome: 'Co poszło nie tak, albo zadziałało tylko częściowo',
   lessons: 'Wnioski',
   sourcesLabel: 'Źródła',
   primarySource: 'Źródło',
@@ -198,17 +198,17 @@ const pagePl: GeoPage = {
   imageCredit: 'Zdjęcie',
   empty: 'Na tej półce nie ma jeszcze kart.',
   heroAlt:
-    'Rozdzielony krajobraz: spękana susza po lewej i mszyste zielone wzgórza z dwoma królikami po prawej — motyw huba Terraformowanie, zdjęcie założyciela, nie zbudowany projekt',
-  photoCredit: 'Zdjęcie: zdjęcie założyciela — susza obok wracającego życia.',
+    'Rozdzielony krajobraz: spękana susza po lewej i mszyste zielone wzgórza z dwoma królikami po prawej: motyw huba Terraformowanie, zdjęcie założyciela, nie zbudowany projekt',
+  photoCredit: 'Zdjęcie: zdjęcie założyciela: susza obok wracającego życia.',
   shelves: {
     water: 'Woda i przerzuty',
     desert: 'Zazielenianie pustyń',
     climate: 'Interwencja klimatyczna',
   },
   shelfLeads: {
-    all: 'Większość tych planów chciała przerzucić wodę albo obsadzić suchy pas. Kilka późniejszych idei próbuje zmienić bilans energetyczny planety — na razie badania.',
+    all: 'Większość tych planów chciała przerzucić wodę albo obsadzić suchy pas. Kilka późniejszych idei próbuje zmienić bilans energetyczny planety: na razie badania.',
     water:
-      'Kanały, pompy, kopalne wodonośne i sny o morzach w głębi lądu. Rury czasem stoją. Klimat, który obiecywano — rzadko.',
+      'Kanały, pompy, kopalne wodonośne i sny o morzach w głębi lądu. Rury czasem stoją. Klimat, który obiecywano: rzadko.',
     desert:
       'Pasy wiatrochronne i zielone mury. Przetrwała pokrywa i koszt wody znaczą więcej niż sadzonki z komunikatu.',
     climate:
@@ -222,17 +222,17 @@ const pagePl: GeoPage = {
     ongoing: 'Trwa',
     research: 'Badania',
   },
-  researchBanner: 'Badania / propozycja — nie wdrożona naprawa planety.',
-  proposedBanner: 'Zaproponowane — nie zbudowane.',
+  researchBanner: 'Badania / propozycja: nie wdrożona naprawa planety.',
+  proposedBanner: 'Zaproponowane: nie zbudowane.',
 };
 
 const pageLv: GeoPage = {
-  metaTitle: 'Terraformēšana — Fix Planet',
+  metaTitle: 'Terraformēšana: Fix Planet',
   metaDescription:
     'Kanāli, iekšzemes jūras un koku joslas tuksnesī: ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās priekšlikumiem, ar avotiem.',
   eyebrow: 'Ainavas pārveidošana',
   title: 'Terraformēšana',
-  lead: 'Kanāli, iekšzemes jūras, koku sienas: plāni pārveidot Zemes virsmu valsts vai baseina mērogā. Klimata iejaukšanās — Saules un jūras — stāv atsevišķā plauktā, lai terminus nesajauktu.',
+  lead: 'Kanāli, iekšzemes jūras, koku sienas: plāni pārveidot Zemes virsmu valsts vai baseina mērogā. Klimata iejaukšanās: Saules un jūras: stāv atsevišķā plauktā, lai terminus nesajauktu.',
   honesty:
     'Katrā kartītē ir jurisdikcija, gadi, statuss un avoti. Jaukti iznākumi paliek jaukti.',
   naming:
@@ -249,7 +249,7 @@ const pageLv: GeoPage = {
   back: '← Terraformēšana',
   plan: 'Plāns',
   construction: 'Būvniecība / statuss',
-  outcome: 'Kas nogāja greizi — vai izdevās tikai daļēji',
+  outcome: 'Kas nogāja greizi, vai izdevās tikai daļēji',
   lessons: 'Mācības',
   sourcesLabel: 'Avoti',
   primarySource: 'Avots',
@@ -258,17 +258,17 @@ const pageLv: GeoPage = {
   imageCredit: 'Attēls',
   empty: 'Šajā plauktā vēl nav kartīšu.',
   heroAlt:
-    'Sadalīta ainava: plaisājusi sausuma zeme pa kreisi un sūnu zaļi pakalni ar diviem trušiem pa labi — Terraformēšanas huba tēma, dibinātāja foto, ne uzbūvēts projekts',
-  photoCredit: 'Foto: dibinātāja piegādāta sadalīta ainava — sausums blakus atgriezušajai dzīvībai.',
+    'Sadalīta ainava: plaisājusi sausuma zeme pa kreisi un sūnu zaļi pakalni ar diviem trušiem pa labi: Terraformēšanas huba tēma, dibinātāja foto, ne uzbūvēts projekts',
+  photoCredit: 'Foto: dibinātāja piegādāta sadalīta ainava: sausums blakus atgriezušajai dzīvībai.',
   shelves: {
     water: 'Ūdens un novadīšana',
     desert: 'Tuksnešu apzaļumošana',
     climate: 'Klimata iejaukšanās',
   },
   shelfLeads: {
-    all: 'Lielākā daļa shēmu gribēja pārliet ūdeni vai apstādīt sauso joslu. Dažas vēlākas idejas mēģina mainīt planētas enerģijas bilanci — pagaidām pētījumi.',
+    all: 'Lielākā daļa shēmu gribēja pārliet ūdeni vai apstādīt sauso joslu. Dažas vēlākas idejas mēģina mainīt planētas enerģijas bilanci: pagaidām pētījumi.',
     water:
-      'Kanāli, sūkņi, fosilie ūdensnesēji un sapņi par iekšzemes jūrām. Caurules reizēm ir. Solītais klimats — reti.',
+      'Kanāli, sūkņi, fosilie ūdensnesēji un sapņi par iekšzemes jūrām. Caurules reizēm ir. Solītais klimats: reti.',
     desert:
       'Vējiaizsargjoslas un zaļās sienas. Izdzīvojušais segums un ūdens cena nozīmē vairāk nekā stādi paziņojumā.',
     climate:
@@ -282,8 +282,8 @@ const pageLv: GeoPage = {
     ongoing: 'Notiek',
     research: 'Pētījums',
   },
-  researchBanner: 'Pētījums / priekšlikums — ne ieviests planētas labojums.',
-  proposedBanner: 'Ierosināts — nav uzbūvēts.',
+  researchBanner: 'Pētījums / priekšlikums: ne ieviests planētas labojums.',
+  proposedBanner: 'Ierosināts: nav uzbūvēts.',
 };
 
 const page: Record<Locale, GeoPage> = {

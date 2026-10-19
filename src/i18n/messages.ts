@@ -22,9 +22,9 @@ const en = {
   location: 'England, UK',
   basedIn: 'Based in {location}',
   meta: {
-    defaultTitle: 'Fix Planet — Problems. Fixes. Proof.',
+    defaultTitle: 'Fix Planet: Problems. Fixes. Proof.',
     defaultDescription:
-      'An atlas of Earth systems and of technologies that can still repair them — forests, oceans, wildlife, law, and sourced maps.',
+      'An atlas of Earth systems and of technologies that can still repair them: forests, oceans, wildlife, law, and sourced maps.',
   },
   nav: {
     solutions: 'Solutions',
@@ -44,23 +44,23 @@ const en = {
     heroAria: 'Site sections',
     choosePath: 'Choose a direction',
     tagline: 'Analysis. Action. Result.',
-    globeLabel: 'Interactive Earth — drag to rotate',
+    globeLabel: 'Interactive Earth: drag to rotate',
     globeCredit: 'Earth texture: NASA Visible Earth / Blue Marble (public domain).',
     heroAlt: 'A dense star-field photograph used as the Home backdrop',
     latest: 'Latest solutions',
-    latestHeading: 'Problem–fix cards already in use.',
+    latestHeading: 'Problem-fix cards already in use.',
     viewAll: 'View all solutions →',
     featuresAria: 'What Fix Planet covers',
     tiles: {
       solutions: 'Technologies already in use: water, forests, waste, cities, materials, oceans, energy.',
-      innovations: 'Laboratories and pilots — carbon, energy, AI — and why perpetual motion fails.',
+      innovations: 'Laboratories and pilots: carbon, energy, AI, and why perpetual motion fails.',
       terraforming: 'Landscape megaprojects, and a separate shelf of climate interventions.',
       maps: 'Public maps of Earth systems and the political world.',
-      law: 'Statutes, bills, and labeled ideas — ecology, AI, animals.',
+      law: 'Statutes, bills, and labeled ideas: ecology, AI, animals.',
       wildlife: 'Species, habitats, and how they changed after people spread.',
-      migration: 'Human dispersal, historic mass movements, bird flyways, and mammal migrations — with the drivers on each card.',
+      migration: 'Human dispersal, historic mass movements, bird flyways, and mammal migrations: with the drivers on each card.',
       forests: 'What a forest is, how the canopy is mapped, and sourced numbers.',
-      oceans: 'Currents, salinity, temperature, and pollution — sourced maps of the living ocean.',
+      oceans: 'Currents, salinity, temperature, and pollution: sourced maps of the living ocean.',
       economy: "Energy and climate in money: fuel and power prices, the price of carbon, weather disaster damage, and the markets that move with them.",
       about: 'The project and the curator behind Fix Planet.',
     },
@@ -72,7 +72,7 @@ const en = {
     },
     innovations: {
       title: 'Labs, with limits',
-      text: 'Carbon, energy, and AI — plus the myths that do not belong.',
+      text: 'Carbon, energy, and AI, plus the myths that do not belong.',
     },
     maps: {
       title: 'A sourced atlas',
@@ -88,7 +88,7 @@ const en = {
     },
   },
   solutionsPage: {
-    metaTitle: 'Solutions — Fix Planet',
+    metaTitle: 'Solutions: Fix Planet',
     metaDescription:
       'Each card pairs a planetary problem with a technology already in use: water, forests, waste, cities, materials, oceans, energy.',
     eyebrow: 'Problem → Fix',
@@ -99,7 +99,7 @@ const en = {
     all: 'All',
     allKey: 'all',
     heroAlt:
-      'Five glowing laboratory flasks on a dark bench at night — yellow, cyan, green, gold, and blue reagents, with vapor rising into network diagrams and a green city',
+      'Five glowing laboratory flasks on a dark bench at night: yellow, cyan, green, gold, and blue reagents, with vapor rising into network diagrams and a green city',
     photoCredit: 'Photo: founder-supplied laboratory reagent bottles.',
     problem: 'Problem',
     fix: 'Fix',
@@ -109,7 +109,7 @@ const en = {
     what: 'What it is',
     how: 'How it works',
     whereRuns: 'Where it already runs',
-    limits: 'Limits — what it does not fix',
+    limits: 'Limits: what it does not fix',
     sourcesLabel: 'Sources',
     sourcesVerify: 'Links are for verification. The article stays on Fix Planet.',
     imageCredit: 'Image',
@@ -126,7 +126,7 @@ const en = {
       energy: 'Energy',
     } satisfies Record<TagKey, string>,
     tileLeads: {
-      all: 'Every problem–fix card on one shelf.',
+      all: 'Every problem-fix card on one shelf.',
       water:
         'Harvesting, reuse, desalination, leak control, disinfection, recharge, and living filters already in use.',
       forests:
@@ -137,12 +137,12 @@ const en = {
         'Cooler roofs, permeable streets, trees, and shared heat networks. Also here: how people move and the air they breathe, from bus rapid transit, walking and cycling networks and congestion charging to low-emission zones and electric buses.',
       materials: 'Cement, metals, timber, and recycled building materials already cutting embodied carbon.',
       oceans:
-        'Catching plastic, restoring shores, fishing with less bycatch — plus protected areas, ship rules, and water-column farms.',
+        'Catching plastic, restoring shores, fishing with less bycatch, plus protected areas, ship rules, and water-column farms.',
       energy: 'Wind, solar, hydro, nuclear, storage, and heat already running on real grids.',
     } satisfies Record<TagKey | 'all', string>,
   },
   wildlifePage: {
-    metaTitle: 'Wildlife — Fix Planet',
+    metaTitle: 'Wildlife: Fix Planet',
     metaDescription:
       'An encyclopedia of animal populations: species still here, species under threat, species already gone, insects, domesticates, and birds, plus a page on our own species.',
     eyebrow: 'Encyclopedia',
@@ -151,14 +151,14 @@ const en = {
     heroEyebrow: 'Our species',
     appearedLabel: 'Appeared',
     appeared:
-      'About 300,000 years ago in Africa. Fossils from Jebel Irhoud, Morocco, date to around 315,000 years; genetic and fossil work places the origin of Homo sapiens on that continent at about 300,000 years. Africa later lost a relatively small share of its large-mammal genera (about 18–21 percent in the usual compilations), the usual reading being that many of those animals had already lived alongside hominins.',
+      'About 300,000 years ago in Africa. Fossils from Jebel Irhoud, Morocco, date to around 315,000 years; genetic and fossil work places the origin of Homo sapiens on that continent at about 300,000 years. Africa later lost a relatively small share of its large-mammal genera (about 18-21 percent in the usual compilations), the usual reading being that many of those animals had already lived alongside hominins.',
     populationLabel: 'Population today',
     population:
       'About 8.2 billion people in 2025 (United Nations, World Population Prospects 2024, medium variant). The same revision put the mid-2024 world total at 8.2 billion. It is an official estimate, not a census of every person.',
     framing:
-      'Where people arrived as a new predator, most of the largest animals disappeared within a few thousand years. The wave is not one date — it follows us: Australia about 50,000–40,000 years ago, the Americas about 15,000–10,000, islands in the last few thousand, and it has not stopped. On continents entered for the first time, about 70–90 percent of large-animal genera vanished (animals typically 44 kg and up). That is not 90 percent of all animals on Earth. About 20,000–15,000 years is when people reached the Americas — not when our species began, and not when people reached Australia.',
+      'Where people arrived as a new predator, most of the largest animals disappeared within a few thousand years. The wave is not one date: it follows us: Australia about 50,000-40,000 years ago, the Americas about 15,000-10,000, islands in the last few thousand, and it has not stopped. On continents entered for the first time, about 70-90 percent of large-animal genera vanished (animals typically 44 kg and up). That is not 90 percent of all animals on Earth. About 20,000-15,000 years is when people reached the Americas: not when our species began, and not when people reached Australia.',
     imageAlt:
-      'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens — not a portrait of a named person',
+      'A modern adult human standing in a meadow, a respectful naturalistic figure representing Homo sapiens: not a portrait of a named person',
     scientificName: 'Homo sapiens',
     tabsAria: 'Wildlife shelves',
     chooseStatus: 'Choose a shelf',
@@ -174,7 +174,7 @@ const en = {
     birds: 'Birds',
     journeyCta: 'Migration · Humans →',
     journeyNote:
-      'The journey — routes, dates, and drivers — is told under Migration. This shelf keeps the species frame: origin, numbers, and what vanished after first arrival.',
+      'The journey: routes, dates, and drivers: is told under Migration. This shelf keeps the species frame: origin, numbers, and what vanished after first arrival.',
     tiles: {
       surviving: 'Still here, with ranges or numbers that shifted after people spread.',
       endangered: 'Species whose numbers are now low enough that they may disappear.',
@@ -193,9 +193,9 @@ const en = {
     extinctLead:
       'Gone. Most entries are clearly human-caused. A few Late Pleistocene megafauna include climate as a second, honestly stated cause.',
     insectsLead:
-      'Insects are most of animal life. This shelf is eleven named cases — a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.',
+      'Insects are most of animal life. This shelf is eleven named cases: a stick insect once written off, the world’s largest butterfly, a migrant whose listing changed with a model, two bumble bees, a carrion beetle, two European deadwood beetles, a fen dragonfly, a saline-wetland tiger beetle, and a giant wētā on predator-free islands.',
     domesticatesLead:
-      'Animals people keep — livestock, companions, and working species. The Food and Agriculture Organization of the United Nations tracks breeds worldwide in its Domestic Animal Diversity Information System. Also here: the goat, kept for meat, milk, hides and hair; the cat, kept as a companion and to control pests; the donkey, which carries loads and people; the duck, raised for meat, eggs and feathers; and the rabbit, raised for meat, fur and wool.',
+      'Animals people keep: livestock, companions, and working species. The Food and Agriculture Organization of the United Nations tracks breeds worldwide in its Domestic Animal Diversity Information System. Also here: the goat, kept for meat, milk, hides and hair; the cat, kept as a companion and to control pests; the donkey, which carries loads and people; the duck, raised for meat, eggs and feathers; and the rabbit, raised for meat, fur and wool.',
     birdsLead:
       'Five living birds and what has happened to their numbers: the California condor and the whooping crane of North America, the Atlantic puffin of the cold North Atlantic, the African penguin of the coasts of southern Africa and the wandering albatross of the Southern Ocean.',
     birdsHeadings: {
@@ -206,25 +206,25 @@ const en = {
       humanRole: 'Human role',
     },
     dadisSource:
-      'Food and Agriculture Organization of the United Nations — Domestic Animal Diversity Information System',
+      'Food and Agriculture Organization of the United Nations: Domestic Animal Diversity Information System',
     mapTitle: 'Where we went, and when',
     mapAria: 'World map of Homo sapiens dispersal with dated arrival steps',
     mapLead:
       'Large-animal loss follows this path. Percentages below are genera of large mammals, not of all animal species.',
     mapAfrica: 'Africa · origin ~300,000 years ago',
-    mapOut: 'Out of Africa · ~70,000–50,000',
-    mapAustralia: 'Australia / Sahul · ~65,000–50,000',
-    mapEurasia: 'Eurasia · ~45,000–40,000',
-    mapAmericas: 'Americas · ~20,000–15,000',
+    mapOut: 'Out of Africa · ~70,000-50,000',
+    mapAustralia: 'Australia / Sahul · ~65,000-50,000',
+    mapEurasia: 'Eurasia · ~45,000-40,000',
+    mapAmericas: 'Americas · ~20,000-15,000',
     mapIslands: 'Later islands · last few thousand years (New Zealand ~700)',
     mapLegend: 'Numbered arrival steps',
     mapPinAfrica: '~300,000 years',
-    mapPinOut: '~70–50 thousand',
-    mapPinAustralia: '~65–50 thousand',
-    mapPinEurasia: '~45–40 thousand',
-    mapPinAmericas: '~20–15 thousand',
+    mapPinOut: '~70-50 thousand',
+    mapPinAustralia: '~65-50 thousand',
+    mapPinEurasia: '~45-40 thousand',
+    mapPinAmericas: '~20-15 thousand',
     mapPinIslands: 'islands · NZ ~700 years',
-    mapLossAfrica: '~18–21% of large-mammal genera lost',
+    mapLossAfrica: '~18-21% of large-mammal genera lost',
     mapLossAustralia: '~88%',
     mapLossEurasia: '~35%',
     mapLossNorth: '~72%',
@@ -232,7 +232,7 @@ const en = {
     mapSources:
       'Arrival ranges, not exact years. Africa’s lower loss is the usual reading: animals there co-evolved with hominins. Continent percentages after Barnosky 2008 (and summaries such as Our World in Data; see also Andermann et al. 2020); Australia’s early site Madjedbebe, Clarkson et al. 2017. Human arrival fits the Late Quaternary pattern better than climate alone (Sandom et al. 2014); some species, including woolly mammoth, still need both.',
     mapBaseCredit:
-      'Base land: NASA Blue Marble Next Generation (December 2004, public domain) — cloud-free physical Earth, not a political map.',
+      'Base land: NASA Blue Marble Next Generation (December 2004, public domain): cloud-free physical Earth, not a political map.',
     cardCta: 'Read entry',
     back: 'Wildlife',
     what: 'What it is',
@@ -265,14 +265,14 @@ const en = {
     },
   },
   about: {
-    metaTitle: 'About — Fix Planet',
+    metaTitle: 'About: Fix Planet',
     metaDescription:
       'Fix Planet is curated by Aigars Abramovics: practical ways to heal water, forests, energy, waste, wildlife, and the rules that protect them.',
     eyebrow: 'The project',
     title: 'About Fix Planet',
     lead: 'A curated atlas of Earth systems and of what can still be repaired: water, forests, energy, waste, wildlife, and the rules that protect them.',
     p1: 'Fix Planet collects how those systems work and which technologies, laws, and habits already change them. Each card points to a named source.',
-    p2Before: 'We pair each problem with a technology or approach that already works — then point to proof. The project is curated by ',
+    p2Before: 'We pair each problem with a technology or approach that already works: then point to proof. The project is curated by ',
     p2After: ', an investor and writer focused on green technology and a livable future.',
     p3Before: 'Day-to-day ideas also appear on X as ',
     p3After: '.',
@@ -281,20 +281,20 @@ const en = {
     follow: 'Follow {handle} →',
     supportCta: 'Support Fix Planet →',
     supportNote:
-      'Opens a Stripe checkout in a new tab. Support for the atlas — not a tax-deductible charity donation.',
+      'Opens a Stripe checkout in a new tab. Support for the atlas: not a tax-deductible charity donation.',
   },
   stubs: {
     maps: {
       title: 'Maps',
-      metaTitle: 'Maps — Fix Planet',
-      metaDescription: 'Maps of solutions and projects around the world — coming soon.',
+      metaTitle: 'Maps: Fix Planet',
+      metaDescription: 'Maps of solutions and projects around the world: coming soon.',
       summary:
         'A map of solutions and projects will appear here. Nothing has been published in this section yet.',
     },
     law: {
       title: 'Law',
-      metaTitle: 'Law — Fix Planet',
-      metaDescription: 'Legal frameworks to protect people and planet — coming soon.',
+      metaTitle: 'Law: Fix Planet',
+      metaDescription: 'Legal frameworks to protect people and planet: coming soon.',
       summary:
         'Legal frameworks that protect people and planet will be collected here. This section is not published yet.',
     },
@@ -329,7 +329,7 @@ const en = {
     privacy: 'Privacy',
   },
   notFound: {
-    metaTitle: 'Page not found — Fix Planet',
+    metaTitle: 'Page not found: Fix Planet',
     metaDescription: 'That page does not exist on Fix Planet.',
     title: 'This page is missing',
     beforeLinks: 'The link may be out of date. Try the ',
@@ -349,9 +349,9 @@ const ru: typeof en = {
   location: 'Англия, Великобритания',
   basedIn: 'База: {location}',
   meta: {
-    defaultTitle: 'Fix Planet — Проблемы. Решения. Доказательства.',
+    defaultTitle: 'Fix Planet: Проблемы. Решения. Доказательства.',
     defaultDescription:
-      'Атлас систем Земли и технологий, которые ещё могут их чинить, — леса, океаны, дикая природа, право и карты с источниками.',
+      'Атлас систем Земли и технологий, которые ещё могут их чинить, леса, океаны, дикая природа, право и карты с источниками.',
   },
   nav: {
     solutions: 'Решения',
@@ -371,23 +371,23 @@ const ru: typeof en = {
     heroAria: 'Разделы сайта',
     choosePath: 'Выберите направление',
     tagline: 'Анализ. Действия. Результат.',
-    globeLabel: 'Интерактивная Земля — перетащите, чтобы вращать',
+    globeLabel: 'Интерактивная Земля: перетащите, чтобы вращать',
     globeCredit: 'Текстура Земли: NASA Visible Earth / Blue Marble (общественное достояние).',
-    heroAlt: 'Фотография звёздного неба — фон главной страницы',
+    heroAlt: 'Фотография звёздного неба: фон главной страницы',
     latest: 'Новые решения',
-    latestHeading: 'Карточки «проблема — решение», уже в работе.',
+    latestHeading: 'Карточки «проблема: решение», уже в работе.',
     viewAll: 'Все решения →',
     featuresAria: 'О чём Fix Planet',
     tiles: {
       solutions: 'Технологии, которые уже используют: вода, леса, отходы, города, материалы, океаны, энергия.',
-      innovations: 'Лаборатории и пилоты — углерод, энергия, ИИ — и почему вечный двигатель не работает.',
+      innovations: 'Лаборатории и пилоты: углерод, энергия, ИИ, и почему вечный двигатель не работает.',
       terraforming: 'Ландшафтные мегапроекты и отдельная полка климатических вмешательств.',
       maps: 'Открытые карты систем Земли и политического мира.',
-      law: 'Законы, законопроекты и помеченные идеи — экология, ИИ, животные.',
+      law: 'Законы, законопроекты и помеченные идеи: экология, ИИ, животные.',
       wildlife: 'Виды, места обитания и то, как они изменились после расселения людей.',
-      migration: 'Расселение человека, исторические массовые движения, пролётные пути птиц и миграции млекопитающих — с факторами на каждой карточке.',
+      migration: 'Расселение человека, исторические массовые движения, пролётные пути птиц и миграции млекопитающих: с факторами на каждой карточке.',
       forests: 'Что такое лес, как видят крону спутники, цифры с источниками.',
-      oceans: 'Течения, солёность, температура и загрязнение — карты живого океана с источниками.',
+      oceans: 'Течения, солёность, температура и загрязнение: карты живого океана с источниками.',
       economy: "Энергия и климат в деньгах: цены на топливо и электричество, цена углерода, ущерб от стихии и реакция рынков.",
       about: 'Проект и куратор Fix Planet.',
     },
@@ -399,11 +399,11 @@ const ru: typeof en = {
     },
     innovations: {
       title: 'Лаборатории, с пределами',
-      text: 'Углерод, энергия и ИИ — и мифы, которым там не место.',
+      text: 'Углерод, энергия и ИИ, и мифы, которым там не место.',
     },
     maps: {
       title: 'Атлас с источниками',
-      text: 'Конфликты, системы Земли и политический мир — у каждой карты названный источник.',
+      text: 'Конфликты, системы Земли и политический мир: у каждой карты названный источник.',
     },
     law: {
       title: 'Право, с пометками',
@@ -415,19 +415,19 @@ const ru: typeof en = {
     },
   },
   solutionsPage: {
-    metaTitle: 'Решения — Fix Planet',
+    metaTitle: 'Решения: Fix Planet',
     metaDescription:
       'Карточки «проблема → технология»: вода, леса, отходы, города, материалы, океаны и энергия.',
     eyebrow: 'Проблема → Решение',
     title: 'Решения',
-    lead: 'На каждой карточке — планетарная проблема и технология, которую уже используют. Отфильтруйте по теме и перейдите к источникам.',
+    lead: 'На каждой карточке: планетарная проблема и технология, которую уже используют. Отфильтруйте по теме и перейдите к источникам.',
     filterAria: 'Фильтр решений по теме',
     chooseTopic: 'Выберите тему',
     all: 'Все',
     allKey: 'all',
     heroAlt:
-      'Пять светящихся лабораторных колб на тёмном столе ночью — жёлтый, голубой, зелёный, золотой и синий реактивы, пар поднимается в сети и зелёный город',
-    photoCredit: 'Фото: снимок основателя — лабораторные колбы с реактивами.',
+      'Пять светящихся лабораторных колб на тёмном столе ночью: жёлтый, голубой, зелёный, золотой и синий реактивы, пар поднимается в сети и зелёный город',
+    photoCredit: 'Фото: снимок основателя: лабораторные колбы с реактивами.',
     problem: 'Проблема',
     fix: 'Решение',
     explore: 'Подробнее →',
@@ -436,7 +436,7 @@ const ru: typeof en = {
     what: 'Что это',
     how: 'Как это работает',
     whereRuns: 'Где уже работает',
-    limits: 'Ограничения — чего это не чинит',
+    limits: 'Ограничения: чего это не чинит',
     sourcesLabel: 'Источники',
     sourcesVerify: 'Ссылки для проверки. Статья остаётся на Fix Planet.',
     imageCredit: 'Изображение',
@@ -455,21 +455,21 @@ const ru: typeof en = {
     tileLeads: {
       all: 'Все карточки «проблема → решение» на одной полке.',
       water:
-        'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры — уже в деле.',
+        'Сбор, повторное использование, опреснение, борьба с утечками, обеззараживание, подпитка и живые фильтры: уже в деле.',
       forests:
         'Восстановление, агролесоводство, аккуратная рубка и огнестойкое хозяйство. Здесь также: сертификация лесов, платежи за сокращение обезлесения и деградации лесов, приближенное к природе лесопользование, обогащающие посадки в вырубленном лесу и массивная древесина для строительства.',
       waste:
         'Сортировка, переработка, органика и энергия из остаточных отходов. Пять способов сократить отходы и вернуть материалы: системы залога за тару из-под напитков, расширенная ответственность производителей за упаковку, сбор и переработка электронных отходов и литий-ионных аккумуляторов, а также способы сократить выброс съедобной еды.',
       cities:
         'Холодные крыши, проницаемые улицы, деревья и общие теплосети. Здесь же рассказано, как люди передвигаются по городу и каким воздухом дышат: скоростной автобусный транспорт, сети для пешеходов и велосипедистов, плата за въезд в перегруженные зоны, зоны низких выбросов и электробусы.',
-      materials: 'Цемент, металлы, древесина и вторичные стройматериалы — уже снижают встроенный углерод.',
+      materials: 'Цемент, металлы, древесина и вторичные стройматериалы: уже снижают встроенный углерод.',
       oceans:
-        'Перехват пластика, восстановление берегов и лов с меньшим приловом — плюс охраняемые районы, правила для судов и фермы в толще воды.',
-      energy: 'Ветер, солнце, гидро, атом, накопление и тепло — уже на реальных сетях.',
+        'Перехват пластика, восстановление берегов и лов с меньшим приловом: плюс охраняемые районы, правила для судов и фермы в толще воды.',
+      energy: 'Ветер, солнце, гидро, атом, накопление и тепло: уже на реальных сетях.',
     },
   },
   wildlifePage: {
-    metaTitle: 'Природа — Fix Planet',
+    metaTitle: 'Природа: Fix Planet',
     metaDescription:
       'Энциклопедия популяций животных: виды, которые ещё здесь, виды под угрозой, виды, которых уже нет, насекомые, доместикаты и птицы, а также страница о нашем собственном виде.',
     eyebrow: 'Энциклопедия',
@@ -478,20 +478,20 @@ const ru: typeof en = {
     heroEyebrow: 'Наш вид',
     appearedLabel: 'Появился',
     appeared:
-      'Около 300 000 лет назад в Африке. Находки из Джебель-Ирхуда в Марокко датируют примерно 315 000 лет; генетика и палеонтология помещают происхождение Homo sapiens на этот континент около 300 000 лет. Позже Африка потеряла сравнительно малую долю родов крупных млекопитающих (обычно приводят около 18–21 процента): многие из этих животных уже жили рядом с гомининами.',
+      'Около 300 000 лет назад в Африке. Находки из Джебель-Ирхуда в Марокко датируют примерно 315 000 лет; генетика и палеонтология помещают происхождение Homo sapiens на этот континент около 300 000 лет. Позже Африка потеряла сравнительно малую долю родов крупных млекопитающих (обычно приводят около 18-21 процента): многие из этих животных уже жили рядом с гомининами.',
     populationLabel: 'Численность сегодня',
     population:
       'Около 8,2 миллиарда человек в 2025 году (ООН, World Population Prospects 2024, средний вариант). Та же ревизия давала 8,2 миллиарда на середину 2024-го. Это официальная оценка, а не перепись каждого человека.',
     framing:
-      'Там, где люди пришли как новый хищник, большая часть самых крупных животных исчезла за несколько тысяч лет. Волна — не одна дата: она идёт за нами. Австралия около 50–40 тысяч лет назад, Америка около 15–10 тысяч, острова за последние несколько тысяч — и она не остановилась. На континентах, куда люди вошли впервые, исчезло около 70–90 процентов родов крупных животных (обычно от 44 кг). Это не 90 процентов всех животных Земли. Около 20 000–15 000 лет — когда люди дошли до Америки, а не когда возник наш вид и не когда люди дошли до Австралии.',
+      'Там, где люди пришли как новый хищник, большая часть самых крупных животных исчезла за несколько тысяч лет. Волна: не одна дата: она идёт за нами. Австралия около 50-40 тысяч лет назад, Америка около 15-10 тысяч, острова за последние несколько тысяч, и она не остановилась. На континентах, куда люди вошли впервые, исчезло около 70-90 процентов родов крупных животных (обычно от 44 кг). Это не 90 процентов всех животных Земли. Около 20 000-15 000 лет: когда люди дошли до Америки, а не когда возник наш вид и не когда люди дошли до Австралии.',
     imageAlt:
-      'Современный взрослый человек на лугу — спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
+      'Современный взрослый человек на лугу: спокойная натуралистичная фигура Homo sapiens, не портрет конкретного человека',
     scientificName: 'Homo sapiens',
     tabsAria: 'Разделы Природы',
     chooseStatus: 'Выберите раздел',
     hubHeroAlt:
       'Олень пьёт из тёмной горной реки на закате: хвойный лес позади и жёлтые цветы на переднем плане',
-    photoCredit: 'Фото: снимок основателя — олень пьёт из реки на закате.',
+    photoCredit: 'Фото: снимок основателя: олень пьёт из реки на закате.',
     surviving: 'Выжившие',
     endangered: 'Под угрозой',
     extinct: 'Вымершие',
@@ -501,7 +501,7 @@ const ru: typeof en = {
     birds: 'Птицы',
     journeyCta: 'Миграция · Люди →',
     journeyNote:
-      'Путь — маршруты, даты и причины — рассказан в разделе «Миграция». Эта полка остаётся рамкой вида: происхождение, численность и то, что исчезло после первого прихода.',
+      'Путь: маршруты, даты и причины: рассказан в разделе «Миграция». Эта полка остаётся рамкой вида: происхождение, численность и то, что исчезло после первого прихода.',
     tiles: {
       surviving: 'Всё ещё здесь: ареал или численность сдвинулись после расселения людей.',
       endangered: 'Виды, чья численность сейчас так мала, что они могут исчезнуть.',
@@ -518,9 +518,9 @@ const ru: typeof en = {
     endangeredLead:
       'Под угрозой сейчас, главным образом из-за людей: потеря мест, охота, прилов и климат, который мы изменили.',
     extinctLead:
-      'Исчезли. Большинство карточек — явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
+      'Исчезли. Большинство карточек: явно по вине людей. У нескольких представителей мегафауны позднего плейстоцена климат назван вторым, честно оговорённым фактором.',
     insectsLead:
-      'Насекомые — большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.',
+      'Насекомые: большая часть животной жизни. На этой полке одиннадцать названных случаев: палочник, которого уже считали вымершим, самая крупная бабочка мира, мигрант, чей статус сменился из‑за модели, два шмеля, жук-падальщик, два европейских жука гниющей древесины, стрекоза известковых болот, соляной жук-скакун и ветапунга на островах без хищников.',
     domesticatesLead:
       'Животные, которых держат люди: скот, компаньоны и рабочие виды. Продовольственная и сельскохозяйственная организация ООН ведёт учёт пород по всему миру в информационной системе по разнообразию домашних животных. Здесь также: коза, которую держат ради мяса, молока, шкур и шерсти; кошка, домашний компаньон и защита от вредителей; осёл, который перевозит грузы и людей; утка, которую разводят ради мяса, яиц и пера; и кролик, которого разводят ради мяса, меха и шерсти.',
     birdsLead:
@@ -533,33 +533,33 @@ const ru: typeof en = {
       humanRole: 'Роль человека',
     },
     dadisSource:
-      'Продовольственная и сельскохозяйственная организация ООН — информационная система по разнообразию домашних животных',
+      'Продовольственная и сельскохозяйственная организация ООН: информационная система по разнообразию домашних животных',
     mapTitle: 'Куда мы ушли и когда',
     mapAria: 'Карта расселения Homo sapiens с датированными шагами',
     mapLead:
-      'Исчезновение крупных животных идёт по этому пути. Доли ниже — роды крупных млекопитающих, а не все виды животных.',
+      'Исчезновение крупных животных идёт по этому пути. Доли ниже: роды крупных млекопитающих, а не все виды животных.',
     mapAfrica: 'Африка · происхождение ~300 000 лет назад',
-    mapOut: 'Из Африки · ~70 000–50 000',
-    mapAustralia: 'Австралия / Сахул · ~65 000–50 000',
-    mapEurasia: 'Евразия · ~45 000–40 000',
-    mapAmericas: 'Америка · ~20 000–15 000',
+    mapOut: 'Из Африки · ~70 000-50 000',
+    mapAustralia: 'Австралия / Сахул · ~65 000-50 000',
+    mapEurasia: 'Евразия · ~45 000-40 000',
+    mapAmericas: 'Америка · ~20 000-15 000',
     mapIslands: 'Позднее острова · последние несколько тысяч лет (Новая Зеландия ~700)',
     mapLegend: 'Нумерованные шаги расселения',
     mapPinAfrica: '~300 000 лет',
-    mapPinOut: '~70–50 тысяч',
-    mapPinAustralia: '~65–50 тысяч',
-    mapPinEurasia: '~45–40 тысяч',
-    mapPinAmericas: '~20–15 тысяч',
+    mapPinOut: '~70-50 тысяч',
+    mapPinAustralia: '~65-50 тысяч',
+    mapPinEurasia: '~45-40 тысяч',
+    mapPinAmericas: '~20-15 тысяч',
     mapPinIslands: 'острова · Н. Зеландия ~700 лет',
-    mapLossAfrica: 'потеряно ~18–21% родов крупных млекопитающих',
+    mapLossAfrica: 'потеряно ~18-21% родов крупных млекопитающих',
     mapLossAustralia: '~88%',
     mapLossEurasia: '~35%',
     mapLossNorth: '~72%',
     mapLossSouth: '~83%',
     mapSources:
-      'Диапазоны прихода, не точные годы. Более низкая африканская потеря — обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам — по Barnosky 2008 (и сводкам вроде Our World in Data; см. также Andermann et al. 2020); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
+      'Диапазоны прихода, не точные годы. Более низкая африканская потеря: обычное чтение: животные там эволюционировали рядом с гомининами. Доли по континентам: по Barnosky 2008 (и сводкам вроде Our World in Data; см. также Andermann et al. 2020); ранняя стоянка Маджедбебе, Clarkson et al. 2017. Приход людей лучше объясняет позднечетвертичный рисунок, чем один климат (Sandom et al. 2014); некоторым видам, включая шерстистого мамонта, нужны оба фактора.',
     mapBaseCredit:
-      'Основа суши: NASA Blue Marble Next Generation (декабрь 2004, общественное достояние) — безоблачная физическая Земля, не политическая карта.',
+      'Основа суши: NASA Blue Marble Next Generation (декабрь 2004, общественное достояние): безоблачная физическая Земля, не политическая карта.',
     cardCta: 'Читать карточку',
     back: 'Природа',
     what: 'Что это',
@@ -592,15 +592,15 @@ const ru: typeof en = {
     },
   },
   about: {
-    metaTitle: 'О проекте — Fix Planet',
+    metaTitle: 'О проекте: Fix Planet',
     metaDescription:
       'Fix Planet ведёт Aigars Abramovics: практические способы восстановить воду, леса, энергию, отходы, дикую природу и правила, которые их защищают.',
     eyebrow: 'Проект',
     title: 'О Fix Planet',
     lead: 'Курируемый атлас систем Земли и того, что ещё можно починить: вода, леса, энергия, отходы, дикая природа и правила, которые их защищают.',
-    p1: 'Fix Planet собирает, как эти системы устроены и какие технологии, законы и привычки уже их меняют. На каждой карточке — названный источник.',
+    p1: 'Fix Planet собирает, как эти системы устроены и какие технологии, законы и привычки уже их меняют. На каждой карточке: названный источник.',
     p2Before:
-      'Каждую проблему мы связываем с технологией или подходом, которые уже работают, — и указываем на доказательства. Проект ведёт ',
+      'Каждую проблему мы связываем с технологией или подходом, которые уже работают, и указываем на доказательства. Проект ведёт ',
     p2After:
       ', инвестор и автор, который занимается зелёными технологиями и будущим, в котором можно жить.',
     p3Before: 'Повседневные идеи также появляются в X как ',
@@ -611,20 +611,20 @@ const ru: typeof en = {
     follow: 'Подписаться на {handle} →',
     supportCta: 'Поддержать Fix Planet →',
     supportNote:
-      'Открывает оплату Stripe в новой вкладке. Поддержка атласа — не благотворительный взнос с налоговым вычетом.',
+      'Открывает оплату Stripe в новой вкладке. Поддержка атласа: не благотворительный взнос с налоговым вычетом.',
   },
   stubs: {
     maps: {
       title: 'Карты',
-      metaTitle: 'Карты — Fix Planet',
-      metaDescription: 'Карты решений и проектов по всему миру — скоро.',
+      metaTitle: 'Карты: Fix Planet',
+      metaDescription: 'Карты решений и проектов по всему миру: скоро.',
       summary:
         'Карта решений и проектов появится здесь. В этом разделе пока ничего не опубликовано.',
     },
     law: {
       title: 'Право',
-      metaTitle: 'Право — Fix Planet',
-      metaDescription: 'Правовые рамки для защиты людей и планеты — скоро.',
+      metaTitle: 'Право: Fix Planet',
+      metaDescription: 'Правовые рамки для защиты людей и планеты: скоро.',
       summary:
         'Здесь будут собраны правовые рамки, которые защищают людей и планету. Раздел ещё не опубликован.',
     },
@@ -642,7 +642,7 @@ const ru: typeof en = {
     metaDescription:
       'Поддержите Fix Planet через Stripe. Это поддержка атласа, не благотворительный взнос с налоговым вычетом.',
     title: 'Поддержать Fix Planet',
-    lead: 'Fix Planet — живой атлас. Поддержка держит энциклопедию открытой и независимой.',
+    lead: 'Fix Planet: живой атлас. Поддержка держит энциклопедию открытой и независимой.',
     useHeading: 'Куда идут средства',
     use: 'Время на исследования, хостинг, карты с открытой лицензией, переводы и бесплатный доступ к энциклопедии.',
     statusHeading: 'Как поддержать',
@@ -659,7 +659,7 @@ const ru: typeof en = {
     privacy: 'Конфиденциальность',
   },
   notFound: {
-    metaTitle: 'Страница не найдена — Fix Planet',
+    metaTitle: 'Страница не найдена: Fix Planet',
     metaDescription: 'Такой страницы на Fix Planet нет.',
     title: 'Этой страницы нет',
     beforeLinks: 'Ссылка могла устареть. Попробуйте ',
@@ -679,9 +679,9 @@ const pl: typeof en = {
   location: 'Anglia, Wielka Brytania',
   basedIn: 'Siedziba: {location}',
   meta: {
-    defaultTitle: 'Fix Planet — Problemy. Rozwiązania. Dowody.',
+    defaultTitle: 'Fix Planet: Problemy. Rozwiązania. Dowody.',
     defaultDescription:
-      'Atlas systemów Ziemi i technologii, które jeszcze mogą je naprawić — lasy, oceany, przyroda, prawo i mapy ze źródłami.',
+      'Atlas systemów Ziemi i technologii, które jeszcze mogą je naprawić: lasy, oceany, przyroda, prawo i mapy ze źródłami.',
   },
   nav: {
     solutions: 'Rozwiązania',
@@ -701,23 +701,23 @@ const pl: typeof en = {
     heroAria: 'Działy serwisu',
     choosePath: 'Wybierz kierunek',
     tagline: 'Analiza. Działanie. Wynik.',
-    globeLabel: 'Interaktywna Ziemia — przeciągnij, aby obrócić',
+    globeLabel: 'Interaktywna Ziemia: przeciągnij, aby obrócić',
     globeCredit: 'Tekstura Ziemi: NASA Visible Earth / Blue Marble (domena publiczna).',
     heroAlt: 'Zdjęcie gęstego nieba gwiazd jako tło strony głównej',
     latest: 'Najnowsze rozwiązania',
-    latestHeading: 'Karty problem–rozwiązanie, już w użyciu.',
+    latestHeading: 'Karty problem-rozwiązanie, już w użyciu.',
     viewAll: 'Wszystkie rozwiązania →',
     featuresAria: 'Co obejmuje Fix Planet',
     tiles: {
       solutions: 'Technologie już w użyciu: woda, lasy, odpady, miasta, materiały, oceany, energia.',
-      innovations: 'Laboratoria i pilotaże — węgiel, energia, SI — i dlaczego perpetuum mobile nie działa.',
+      innovations: 'Laboratoria i pilotaże: węgiel, energia, SI, i dlaczego perpetuum mobile nie działa.',
       terraforming: 'Megaprojekty krajobrazowe i osobna półka interwencji klimatycznych.',
       maps: 'Publiczne mapy systemów Ziemi i świata politycznego.',
-      law: 'Ustawy, projekty i oznaczone idee — ekologia, SI, zwierzęta.',
+      law: 'Ustawy, projekty i oznaczone idee: ekologia, SI, zwierzęta.',
       wildlife: 'Gatunki, siedliska i to, jak zmieniły się po rozprzestrzenieniu ludzi.',
-      migration: 'Rozprzestrzenianie ludzi, historyczne ruchy masowe, szlaki ptaków i migracje ssaków — z czynnikami na każdej karcie.',
+      migration: 'Rozprzestrzenianie ludzi, historyczne ruchy masowe, szlaki ptaków i migracje ssaków: z czynnikami na każdej karcie.',
       forests: 'Czym jest las, jak satelita widzi korony, liczby ze źródłami.',
-      oceans: 'Prądy, zasolenie, temperatura i zanieczyszczenie — mapy żywego oceanu ze źródłami.',
+      oceans: 'Prądy, zasolenie, temperatura i zanieczyszczenie: mapy żywego oceanu ze źródłami.',
       economy: "Energia i klimat w pieniądzach: ceny paliw i prądu, cena emisji dwutlenku węgla, szkody po żywiołach i rynki, które za nimi podążają.",
       about: 'Projekt i kurator Fix Planet.',
     },
@@ -729,11 +729,11 @@ const pl: typeof en = {
     },
     innovations: {
       title: 'Laboratoria, z granicami',
-      text: 'Węgiel, energia i SI — oraz mity, które tam nie należą.',
+      text: 'Węgiel, energia i SI, oraz mity, które tam nie należą.',
     },
     maps: {
       title: 'Atlas ze źródłami',
-      text: 'Konflikty, systemy Ziemi i świat polityczny — każda mapa z nazwanym źródłem.',
+      text: 'Konflikty, systemy Ziemi i świat polityczny: każda mapa z nazwanym źródłem.',
     },
     law: {
       title: 'Prawo, z etykietą',
@@ -745,7 +745,7 @@ const pl: typeof en = {
     },
   },
   solutionsPage: {
-    metaTitle: 'Rozwiązania — Fix Planet',
+    metaTitle: 'Rozwiązania: Fix Planet',
     metaDescription:
       'Karty problem → technologia: woda, lasy, odpady, miasta, materiały, oceany i energia.',
     eyebrow: 'Problem → Rozwiązanie',
@@ -756,8 +756,8 @@ const pl: typeof en = {
     all: 'Wszystkie',
     allKey: 'all',
     heroAlt:
-      'Pięć świecących kolb laboratoryjnych na ciemnym stole nocą — żółty, cyjan, zielony, złoty i niebieski odczynnik, para unosi się w sieci i zielone miasto',
-    photoCredit: 'Zdjęcie: zdjęcie założyciela — laboratoryjne kolby z odczynnikami.',
+      'Pięć świecących kolb laboratoryjnych na ciemnym stole nocą: żółty, cyjan, zielony, złoty i niebieski odczynnik, para unosi się w sieci i zielone miasto',
+    photoCredit: 'Zdjęcie: zdjęcie założyciela: laboratoryjne kolby z odczynnikami.',
     problem: 'Problem',
     fix: 'Rozwiązanie',
     explore: 'Zobacz rozwiązanie →',
@@ -766,7 +766,7 @@ const pl: typeof en = {
     what: 'Czym jest',
     how: 'Jak to działa',
     whereRuns: 'Gdzie już działa',
-    limits: 'Granice — czego to nie naprawia',
+    limits: 'Granice: czego to nie naprawia',
     sourcesLabel: 'Źródła',
     sourcesVerify: 'Linki służą weryfikacji. Artykuł zostaje na Fix Planet.',
     imageCredit: 'Zdjęcie',
@@ -785,21 +785,21 @@ const pl: typeof en = {
     tileLeads: {
       all: 'Wszystkie karty problem → rozwiązanie na jednej półce.',
       water:
-        'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry — już w użyciu.',
+        'Zbieranie, ponowne użycie, odsalanie, walka z przeciekami, dezynfekcja, zasilanie i żywe filtry: już w użyciu.',
       forests:
         'Regeneracja, agroleśnictwo, ostrożna wycinka i gospodarka ognioodporna. Znajdziesz tu także: certyfikację lasów, płatności za ograniczanie wylesiania i degradacji lasów, leśnictwo bliższe naturze, nasadzenia wzbogacające w wyciętym lesie oraz drewno konstrukcyjne wielkowymiarowe w budownictwie.',
       waste:
         'Sortowanie, recykling, organika i odzysk energii w skali miasta. Pięć sposobów na ograniczenie odpadów i odzysk materiałów: systemy kaucyjne dla opakowań po napojach, rozszerzona odpowiedzialność producenta za opakowania, zbiórka i recykling elektroodpadów oraz akumulatorów litowo-jonowych, a także sposoby ograniczenia marnowania jadalnej żywności.',
       cities:
         'Chłodne dachy, przepuszczalne ulice, drzewa i wspólne sieci ciepła. Znajdziesz tu też to, jak ludzie poruszają się po mieście i czym oddychają: szybki transport autobusowy, sieci piesze i rowerowe, opłaty kongestyjne, strefy niskiej emisji i autobusy elektryczne.',
-      materials: 'Cement, metale, drewno i wtórne materiały budowlane — już tną wbudowany węgiel.',
+      materials: 'Cement, metale, drewno i wtórne materiały budowlane: już tną wbudowany węgiel.',
       oceans:
-        'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem — oraz obszary chronione, reguły dla statków i hodowle w toni.',
-      energy: 'Wiatr, słońce, hydro, atom, magazyny i ciepło — już na prawdziwych sieciach.',
+        'Przechwytywanie plastiku, odtwarzanie brzegów i połów z mniejszym przyłowem, oraz obszary chronione, reguły dla statków i hodowle w toni.',
+      energy: 'Wiatr, słońce, hydro, atom, magazyny i ciepło: już na prawdziwych sieciach.',
     },
   },
   wildlifePage: {
-    metaTitle: 'Przyroda — Fix Planet',
+    metaTitle: 'Przyroda: Fix Planet',
     metaDescription:
       'Encyklopedia populacji zwierząt: gatunki, które wciąż tu są, gatunki zagrożone, gatunki, których już nie ma, owady, zwierzęta udomowione i ptaki, a także strona o naszym własnym gatunku.',
     eyebrow: 'Encyklopedia',
@@ -808,20 +808,20 @@ const pl: typeof en = {
     heroEyebrow: 'Nasz gatunek',
     appearedLabel: 'Pojawił się',
     appeared:
-      'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat; genetyka i paleontologia umieszczają pochodzenie Homo sapiens na tym kontynencie około 300 000 lat. Afryka później straciła stosunkowo małą część rodzajów dużych ssaków (zwykle ok. 18–21 procent): wiele z tych zwierząt żyło już obok homininów.',
+      'Około 300 000 lat temu w Afryce. Skamieniałości z Dżabal Irhud w Maroku datuje się na około 315 000 lat; genetyka i paleontologia umieszczają pochodzenie Homo sapiens na tym kontynencie około 300 000 lat. Afryka później straciła stosunkowo małą część rodzajów dużych ssaków (zwykle ok. 18-21 procent): wiele z tych zwierząt żyło już obok homininów.',
     populationLabel: 'Populacja dziś',
     population:
       'Około 8,2 miliarda ludzi w 2025 roku (ONZ, World Population Prospects 2024, wariant średni). Ta sama rewizja podała 8,2 miliarda w połowie 2024. To oficjalny szacunek, nie spis każdej osoby.',
     framing:
-      'Gdzie ludzie przyszli jako nowy drapieżnik, większość największych zwierząt zniknęła w ciągu kilku tysięcy lat. Fala nie ma jednej daty — idzie za nami: Australia ok. 50–40 tysięcy lat temu, Ameryki ok. 15–10 tysięcy, wyspy w ostatnich kilku tysiącach, i nie ustała. Na kontynentach, na które ludzie weszli po raz pierwszy, zniknęło ok. 70–90 procent rodzajów dużych zwierząt (zazwyczaj od 44 kg). To nie 90 procent wszystkich zwierząt na Ziemi. Ok. 20 000–15 000 lat to moment, gdy ludzie dotarli do Ameryk — nie początek naszego gatunku i nie przybycie do Australii.',
+      'Gdzie ludzie przyszli jako nowy drapieżnik, większość największych zwierząt zniknęła w ciągu kilku tysięcy lat. Fala nie ma jednej daty: idzie za nami: Australia ok. 50-40 tysięcy lat temu, Ameryki ok. 15-10 tysięcy, wyspy w ostatnich kilku tysiącach, i nie ustała. Na kontynentach, na które ludzie weszli po raz pierwszy, zniknęło ok. 70-90 procent rodzajów dużych zwierząt (zazwyczaj od 44 kg). To nie 90 procent wszystkich zwierząt na Ziemi. Ok. 20 000-15 000 lat to moment, gdy ludzie dotarli do Ameryk: nie początek naszego gatunku i nie przybycie do Australii.',
     imageAlt:
-      'Współczesny dorosły człowiek na łące — spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
+      'Współczesny dorosły człowiek na łące: spokojna, naturalistyczna figura Homo sapiens, nie portret konkretnej osoby',
     scientificName: 'Homo sapiens',
     tabsAria: 'Działy Przyrody',
     chooseStatus: 'Wybierz dział',
     hubHeroAlt:
       'Jeleń pijący z ciemnej górskiej rzeki o zmierzchu, z iglastym lasem w tle i żółtymi kwiatami na pierwszym planie',
-    photoCredit: 'Zdjęcie: zdjęcie założyciela — jeleń pijący z rzeki o zmierzchu.',
+    photoCredit: 'Zdjęcie: zdjęcie założyciela: jeleń pijący z rzeki o zmierzchu.',
     surviving: 'Przetrwałe',
     endangered: 'Zagrożone',
     extinct: 'Wymarłe',
@@ -831,7 +831,7 @@ const pl: typeof en = {
     birds: 'Ptaki',
     journeyCta: 'Migracja · Ludzie →',
     journeyNote:
-      'Droga — trasy, daty i przyczyny — jest w dziale Migracja. Ta półka zostaje ramą gatunku: pochodzenie, liczebność i to, co zniknęło po pierwszym przybyciu.',
+      'Droga: trasy, daty i przyczyny: jest w dziale Migracja. Ta półka zostaje ramą gatunku: pochodzenie, liczebność i to, co zniknęło po pierwszym przybyciu.',
     tiles: {
       surviving: 'Wciąż tu są: zasięg lub liczebność przesunęły się po rozprzestrzenieniu ludzi.',
       endangered: 'Gatunki, których liczebność jest dziś tak niska, że mogą zniknąć.',
@@ -863,25 +863,25 @@ const pl: typeof en = {
       humanRole: 'Rola człowieka',
     },
     dadisSource:
-      'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa — System Informacji o Różnorodności Zwierząt Domowych',
+      'Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: System Informacji o Różnorodności Zwierząt Domowych',
     mapTitle: 'Dokąd poszliśmy i kiedy',
     mapAria: 'Mapa świata rozprzestrzeniania Homo sapiens z datowanymi krokami',
     mapLead:
       'Ubytek wielkich zwierząt idzie tą drogą. Odsetki poniżej to rodzaje dużych ssaków, nie wszystkie gatunki zwierząt.',
     mapAfrica: 'Afryka · pochodzenie ~300 000 lat temu',
-    mapOut: 'Z Afryki · ~70 000–50 000',
-    mapAustralia: 'Australia / Sahul · ~65 000–50 000',
-    mapEurasia: 'Eurazja · ~45 000–40 000',
-    mapAmericas: 'Ameryki · ~20 000–15 000',
+    mapOut: 'Z Afryki · ~70 000-50 000',
+    mapAustralia: 'Australia / Sahul · ~65 000-50 000',
+    mapEurasia: 'Eurazja · ~45 000-40 000',
+    mapAmericas: 'Ameryki · ~20 000-15 000',
     mapIslands: 'Później wyspy · ostatnie kilka tysięcy lat (Nowa Zelandia ~700)',
     mapLegend: 'Ponumerowane etapy przybycia',
     mapPinAfrica: '~300 000 lat',
-    mapPinOut: '~70–50 tysięcy',
-    mapPinAustralia: '~65–50 tysięcy',
-    mapPinEurasia: '~45–40 tysięcy',
-    mapPinAmericas: '~20–15 tysięcy',
+    mapPinOut: '~70-50 tysięcy',
+    mapPinAustralia: '~65-50 tysięcy',
+    mapPinEurasia: '~45-40 tysięcy',
+    mapPinAmericas: '~20-15 tysięcy',
     mapPinIslands: 'wyspy · N. Zelandia ~700 lat',
-    mapLossAfrica: '~18–21% rodzajów dużych ssaków utraconych',
+    mapLossAfrica: '~18-21% rodzajów dużych ssaków utraconych',
     mapLossAustralia: '~88%',
     mapLossEurasia: '~35%',
     mapLossNorth: '~72%',
@@ -889,7 +889,7 @@ const pl: typeof en = {
     mapSources:
       'Zakresy przybycia, nie dokładne lata. Niższa strata Afryki to zwykły odczyt: zwierzęta ewoluowały tam obok homininów. Odsetki kontynentów za Barnosky 2008 (i streszczenia jak Our World in Data; zob. też Andermann et al. 2020); wczesne stanowisko Madjedbebe, Clarkson et al. 2017. Przybycie ludzi lepiej tłumaczy późnoczwartorzędowy wzór niż sam klimat (Sandom et al. 2014); niektóre gatunki, w tym mamut włochaty, wciąż wymagają obu.',
     mapBaseCredit:
-      'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna) — bezchmurna fizyczna Ziemia, nie mapa polityczna.',
+      'Podstawa lądu: NASA Blue Marble Next Generation (grudzień 2004, domena publiczna): bezchmurna fizyczna Ziemia, nie mapa polityczna.',
     cardCta: 'Czytaj hasło',
     back: 'Przyroda',
     what: 'Czym jest',
@@ -922,7 +922,7 @@ const pl: typeof en = {
     },
   },
   about: {
-    metaTitle: 'O projekcie — Fix Planet',
+    metaTitle: 'O projekcie: Fix Planet',
     metaDescription:
       'Fix Planet prowadzi Aigars Abramovics: praktyczne sposoby naprawy wody, lasów, energii, odpadów, przyrody i reguł, które je chronią.',
     eyebrow: 'Projekt',
@@ -930,7 +930,7 @@ const pl: typeof en = {
     lead: 'Kuratorowany atlas systemów Ziemi i tego, co jeszcze da się naprawić: woda, lasy, energia, odpady, przyroda i reguły, które je chronią.',
     p1: 'Fix Planet zbiera, jak te systemy działają i które technologie, prawa i nawyki już je zmieniają. Każda karta wskazuje nazwane źródło.',
     p2Before:
-      'Każdy problem łączymy z technologią lub podejściem, które już działa — i wskazujemy dowody. Projekt prowadzi ',
+      'Każdy problem łączymy z technologią lub podejściem, które już działa, i wskazujemy dowody. Projekt prowadzi ',
     p2After:
       ', inwestor i autor skupiony na zielonych technologiach i przyszłości, w której da się żyć.',
     p3Before: 'Codzienne idee pojawiają się też na X jako ',
@@ -941,20 +941,20 @@ const pl: typeof en = {
     follow: 'Obserwuj {handle} →',
     supportCta: 'Wesprzyj Fix Planet →',
     supportNote:
-      'Otwiera kasę Stripe w nowej karcie. Wsparcie atlasu — nie darowizna charytatywna z odliczeniem podatkowym.',
+      'Otwiera kasę Stripe w nowej karcie. Wsparcie atlasu: nie darowizna charytatywna z odliczeniem podatkowym.',
   },
   stubs: {
     maps: {
       title: 'Mapy',
-      metaTitle: 'Mapy — Fix Planet',
-      metaDescription: 'Mapy rozwiązań i projektów na całym świecie — wkrótce.',
+      metaTitle: 'Mapy: Fix Planet',
+      metaDescription: 'Mapy rozwiązań i projektów na całym świecie: wkrótce.',
       summary:
         'Tutaj pojawi się mapa rozwiązań i projektów. W tej części nie opublikowano jeszcze nic.',
     },
     law: {
       title: 'Prawo',
-      metaTitle: 'Prawo — Fix Planet',
-      metaDescription: 'Ramy prawne chroniące ludzi i planetę — wkrótce.',
+      metaTitle: 'Prawo: Fix Planet',
+      metaDescription: 'Ramy prawne chroniące ludzi i planetę: wkrótce.',
       summary:
         'Tutaj zbierzemy ramy prawne chroniące ludzi i planetę. Ta część nie jest jeszcze opublikowana.',
     },
@@ -989,7 +989,7 @@ const pl: typeof en = {
     privacy: 'Prywatność',
   },
   notFound: {
-    metaTitle: 'Nie znaleziono strony — Fix Planet',
+    metaTitle: 'Nie znaleziono strony: Fix Planet',
     metaDescription: 'Tej strony nie ma na Fix Planet.',
     title: 'Brakuje tej strony',
     beforeLinks: 'Link mógł być nieaktualny. Spróbuj ',
@@ -1009,9 +1009,9 @@ const lv: typeof en = {
   location: 'Anglija, Apvienotā Karaliste',
   basedIn: 'Bāze: {location}',
   meta: {
-    defaultTitle: 'Fix Planet — Problēmas. Risinājumi. Pierādījumi.',
+    defaultTitle: 'Fix Planet: Problēmas. Risinājumi. Pierādījumi.',
     defaultDescription:
-      'Atlants Zemes sistēmām un tehnoloģijām, kas tās vēl var labot, — meži, okeāni, savvaļa, tiesības un kartes ar avotiem.',
+      'Atlants Zemes sistēmām un tehnoloģijām, kas tās vēl var labot, meži, okeāni, savvaļa, tiesības un kartes ar avotiem.',
   },
   nav: {
     solutions: 'Risinājumi',
@@ -1031,23 +1031,23 @@ const lv: typeof en = {
     heroAria: 'Vietnes sadaļas',
     choosePath: 'Izvēlies virzienu',
     tagline: 'Analīze. Rīcība. Rezultāts.',
-    globeLabel: 'Interaktīva Zeme — velc, lai pagrieztu',
+    globeLabel: 'Interaktīva Zeme: velc, lai pagrieztu',
     globeCredit: 'Zemes tekstūra: NASA Visible Earth / Blue Marble (sabiedriskais īpašums).',
     heroAlt: 'Zvaigžņu lauka fotogrāfija kā sākumlapas fons',
     latest: 'Jaunākie risinājumi',
-    latestHeading: 'Kartītes «problēma — risinājums», jau lietošanā.',
+    latestHeading: 'Kartītes «problēma: risinājums», jau lietošanā.',
     viewAll: 'Visi risinājumi →',
     featuresAria: 'Ko aptver Fix Planet',
     tiles: {
       solutions: 'Tehnoloģijas, ko jau lieto: ūdens, meži, atkritumi, pilsētas, materiāli, okeāni, enerģija.',
-      innovations: 'Laboratorijas un izmēģinājumi — ogleklis, enerģija, MI — un kāpēc mūžīgais dzinējs neizdodas.',
+      innovations: 'Laboratorijas un izmēģinājumi: ogleklis, enerģija, MI, un kāpēc mūžīgais dzinējs neizdodas.',
       terraforming: 'Ainavu megaprojekti un atsevišķs plaukts klimata iejaukšanās.',
       maps: 'Publiskas kartes par Zemes sistēmām un politisko pasauli.',
-      law: 'Likumi, projekti un marķētas idejas — ekoloģija, MI, dzīvnieki.',
+      law: 'Likumi, projekti un marķētas idejas: ekoloģija, MI, dzīvnieki.',
       wildlife: 'Sugas, dzīvotnes un tas, kā tās mainījās pēc cilvēku izplatīšanās.',
-      migration: 'Cilvēku izplatība, vēsturiskas masu kustības, putnu lidojumu ceļi un zīdītāju migrācijas — ar dzinējspēkiem katrā kartītē.',
+      migration: 'Cilvēku izplatība, vēsturiskas masu kustības, putnu lidojumu ceļi un zīdītāju migrācijas: ar dzinējspēkiem katrā kartītē.',
       forests: 'Kas ir mežs, kā satelīts redz vainagu, skaitļi ar avotiem.',
-      oceans: 'Straumes, sāļums, temperatūra un piesārņojums — dzīvā okeāna kartes ar avotiem.',
+      oceans: 'Straumes, sāļums, temperatūra un piesārņojums: dzīvā okeāna kartes ar avotiem.',
       economy: "Enerģija un klimats naudā: degvielas un elektrības cenas, oglekļa cena, laikapstākļu katastrofu postījumi un tirgi, kas tiem seko.",
       about: 'Projekts un Fix Planet kurators.',
     },
@@ -1059,11 +1059,11 @@ const lv: typeof en = {
     },
     innovations: {
       title: 'Laboratorijas ar robežām',
-      text: 'Ogleklis, enerģija un MI — un mīti, kas tur neder.',
+      text: 'Ogleklis, enerģija un MI, un mīti, kas tur neder.',
     },
     maps: {
       title: 'Atlants ar avotiem',
-      text: 'Konflikti, Zemes sistēmas un politiskā pasaule — katrai kartei nosaukts avots.',
+      text: 'Konflikti, Zemes sistēmas un politiskā pasaule: katrai kartei nosaukts avots.',
     },
     law: {
       title: 'Tiesības ar etiķeti',
@@ -1075,7 +1075,7 @@ const lv: typeof en = {
     },
   },
   solutionsPage: {
-    metaTitle: 'Risinājumi — Fix Planet',
+    metaTitle: 'Risinājumi: Fix Planet',
     metaDescription:
       'Kartītes «problēma → tehnoloģija»: ūdens, meži, atkritumi, pilsētas, materiāli, okeāni un enerģija.',
     eyebrow: 'Problēma → Risinājums',
@@ -1086,7 +1086,7 @@ const lv: typeof en = {
     all: 'Visi',
     allKey: 'all',
     heroAlt:
-      'Piecas spīdošas laboratorijas kolbas uz tumša galda naktī — dzeltens, ciāna, zaļš, zelta un zils reaģents, tvaiks ceļas tīklos un zaļā pilsētā',
+      'Piecas spīdošas laboratorijas kolbas uz tumša galda naktī: dzeltens, ciāna, zaļš, zelta un zils reaģents, tvaiks ceļas tīklos un zaļā pilsētā',
     photoCredit: 'Foto: dibinātāja piegādātas laboratorijas reaģentu kolbas.',
     problem: 'Problēma',
     fix: 'Risinājums',
@@ -1096,7 +1096,7 @@ const lv: typeof en = {
     what: 'Kas tas ir',
     how: 'Kā tas darbojas',
     whereRuns: 'Kur tas jau darbojas',
-    limits: 'Ierobežojumi — ko tas nelabo',
+    limits: 'Ierobežojumi: ko tas nelabo',
     sourcesLabel: 'Avoti',
     sourcesVerify: 'Saites ir pārbaudei. Raksts paliek Fix Planet.',
     imageCredit: 'Attēls',
@@ -1115,21 +1115,21 @@ const lv: typeof en = {
     tileLeads: {
       all: 'Visas «problēma → risinājums» kartītes vienā plauktā.',
       water:
-        'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri — jau lietošanā.',
+        'Savākšana, atkārtota izmantošana, atsāļošana, noplūžu kontrole, dezinfekcija, uzpilde un dzīvie filtri: jau lietošanā.',
       forests:
         'Atjaunošana, agromežsaimniecība, rūpīga ciršana un ugunsdroša prakse. Šeit arī: mežu sertifikācija, maksājumi par mazāku atmežošanu un mežu degradāciju, dabai tuvāka mežsaimniecība, bagātināšanas stādījumi izcirstā mežā un masīvkoks būvniecībai.',
       waste:
         'Šķirošana, pārstrāde, organika un enerģijas atgūšana pilsētas mērogā. Pieci veidi, kā samazināt atkritumus un atgūt materiālus: depozīta sistēmas dzērienu iepakojumam, ražotāju paplašinātā atbildība par iepakojumu, elektronisko atkritumu un litija jonu akumulatoru savākšana un pārstrāde, kā arī veidi, kā samazināt ēdamas pārtikas izmešanu.',
       cities:
         'Vēsie jumti, caurlaidīgas ielas, koki un kopīgi siltumtīkli. Šeit arī par to, kā cilvēki pārvietojas pa pilsētu un kādu gaisu elpo: ātrais autobusu transports, gājēju un riteņbraucēju tīkli, maksa par iebraukšanu sastrēgumu zonās, zemas emisijas zonas un elektroautobusi.',
-      materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli — jau samazina ietverto oglekli.',
+      materials: 'Cements, metāli, koksne un otrreizējie būvmateriāli: jau samazina ietverto oglekli.',
       oceans:
-        'Plastmasas uztveršana, krastu atjaunošana un zveja ar mazāku piezveju — plus aizsargājamās teritorijas, kuģu noteikumi un audzes ūdens stabā.',
-      energy: 'Vējš, saule, hidro, kodols, uzkrāšana un siltums — jau reālos tīklos.',
+        'Plastmasas uztveršana, krastu atjaunošana un zveja ar mazāku piezveju, plus aizsargājamās teritorijas, kuģu noteikumi un audzes ūdens stabā.',
+      energy: 'Vējš, saule, hidro, kodols, uzkrāšana un siltums: jau reālos tīklos.',
     },
   },
   wildlifePage: {
-    metaTitle: 'Savvaļa — Fix Planet',
+    metaTitle: 'Savvaļa: Fix Planet',
     metaDescription:
       'Enciklopēdija par dzīvnieku populācijām: sugas, kas joprojām ir šeit, apdraudētas sugas, sugas, kuru vairs nav, kukaiņi, pieradinātie dzīvnieki un putni, kā arī lapa par mūsu pašu sugu.',
     eyebrow: 'Enciklopēdija',
@@ -1138,14 +1138,14 @@ const lv: typeof en = {
     heroEyebrow: 'Mūsu suga',
     appearedLabel: 'Parādījās',
     appeared:
-      'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem; ģenētika un paleontoloģija Homo sapiens izcelsmi liek šajā kontinentā ap 300 000 gadiem. Āfrika vēlāk zaudēja samērā mazu daļu lielo zīdītāju ģinšu (parasti ap 18–21 procentu): daudzi no šiem dzīvniekiem jau dzīvoja līdzās hominīniem.',
+      'Ap 300 000 gadiem Āfrikā. Fosīlijas no Džebel Irhūdas Marokā datē ap 315 000 gadiem; ģenētika un paleontoloģija Homo sapiens izcelsmi liek šajā kontinentā ap 300 000 gadiem. Āfrika vēlāk zaudēja samērā mazu daļu lielo zīdītāju ģinšu (parasti ap 18-21 procentu): daudzi no šiem dzīvniekiem jau dzīvoja līdzās hominīniem.',
     populationLabel: 'Skaits šodien',
     population:
       'Ap 8,2 miljardiem cilvēku 2025. gadā (ANO, World Population Prospects 2024, vidējais variants). Tā pati revīzija 2024. gada vidum deva 8,2 miljardus. Tas ir oficiāls vērtējums, ne katra cilvēka skaitīšana.',
     framing:
-      'Tur, kur cilvēki ienāca kā jauns plēsējs, lielākā daļa lielāko dzīvnieku izzuda dažu tūkstošu gadu laikā. Vilnis nav viens datums — tas iet mums līdzi: Austrālija ap 50–40 tūkstošiem gadu, Amerika ap 15–10 tūkstošiem, salas pēdējos dažos tūkstošos, un tas nav apstājies. Kontinentos, kuros cilvēki ienāca pirmo reizi, izzuda ap 70–90 procentiem lielo dzīvnieku ģinšu (parasti no 44 kg). Tas nav 90 procenti visu dzīvnieku uz Zemes. Ap 20 000–15 000 gadu ir brīdis, kad cilvēki sasniedza Ameriku — ne mūsu sugas sākums un ne ierašanās Austrālijā.',
+      'Tur, kur cilvēki ienāca kā jauns plēsējs, lielākā daļa lielāko dzīvnieku izzuda dažu tūkstošu gadu laikā. Vilnis nav viens datums: tas iet mums līdzi: Austrālija ap 50-40 tūkstošiem gadu, Amerika ap 15-10 tūkstošiem, salas pēdējos dažos tūkstošos, un tas nav apstājies. Kontinentos, kuros cilvēki ienāca pirmo reizi, izzuda ap 70-90 procentiem lielo dzīvnieku ģinšu (parasti no 44 kg). Tas nav 90 procenti visu dzīvnieku uz Zemes. Ap 20 000-15 000 gadu ir brīdis, kad cilvēki sasniedza Ameriku: ne mūsu sugas sākums un ne ierašanās Austrālijā.',
     imageAlt:
-      'Mūsdienu pieaugušais cilvēks pļavā — mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
+      'Mūsdienu pieaugušais cilvēks pļavā: mierīga, naturālistiska Homo sapiens figūra, ne konkrētas personas portrets',
     scientificName: 'Homo sapiens',
     tabsAria: 'Savvaļas sadaļas',
     chooseStatus: 'Izvēlies sadaļu',
@@ -1161,7 +1161,7 @@ const lv: typeof en = {
     birds: 'Putni',
     journeyCta: 'Migrācija · Cilvēki →',
     journeyNote:
-      'Ceļš — maršruti, datumi un iemesli — ir sadaļā Migrācija. Šis plaukts paliek sugas rāmis: izcelsme, skaits un tas, kas izzuda pēc pirmās ierašanās.',
+      'Ceļš: maršruti, datumi un iemesli: ir sadaļā Migrācija. Šis plaukts paliek sugas rāmis: izcelsme, skaits un tas, kas izzuda pēc pirmās ierašanās.',
     tiles: {
       surviving: 'Joprojām šeit: areāls vai skaits pārbīdījās pēc cilvēku izplatīšanās.',
       endangered: 'Sugas, kuru skaits tagad ir tik mazs, ka tās var izzust.',
@@ -1193,25 +1193,25 @@ const lv: typeof en = {
       humanRole: 'Cilvēka loma',
     },
     dadisSource:
-      'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija — Mājas dzīvnieku daudzveidības informācijas sistēma',
+      'Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Mājas dzīvnieku daudzveidības informācijas sistēma',
     mapTitle: 'Kur gājām un kad',
     mapAria: 'Homo sapiens izplatības pasaules karte ar datētiem soļiem',
     mapLead:
       'Lielo dzīvnieku zudums iet pa šo ceļu. Procenti zemāk ir lielo zīdītāju ģintis, ne visas dzīvnieku sugas.',
     mapAfrica: 'Āfrika · izcelsme ~300 000 gadu',
-    mapOut: 'No Āfrikas · ~70 000–50 000',
-    mapAustralia: 'Austrālija / Sahula · ~65 000–50 000',
-    mapEurasia: 'Eirāzija · ~45 000–40 000',
-    mapAmericas: 'Amerika · ~20 000–15 000',
+    mapOut: 'No Āfrikas · ~70 000-50 000',
+    mapAustralia: 'Austrālija / Sahula · ~65 000-50 000',
+    mapEurasia: 'Eirāzija · ~45 000-40 000',
+    mapAmericas: 'Amerika · ~20 000-15 000',
     mapIslands: 'Vēlāk salas · pēdējie daži tūkstoši gadu (Jaunzēlande ~700)',
     mapLegend: 'Numurēti ierašanās soļi',
     mapPinAfrica: '~300 000 gadu',
-    mapPinOut: '~70–50 tūkstoši',
-    mapPinAustralia: '~65–50 tūkstoši',
-    mapPinEurasia: '~45–40 tūkstoši',
-    mapPinAmericas: '~20–15 tūkstoši',
+    mapPinOut: '~70-50 tūkstoši',
+    mapPinAustralia: '~65-50 tūkstoši',
+    mapPinEurasia: '~45-40 tūkstoši',
+    mapPinAmericas: '~20-15 tūkstoši',
     mapPinIslands: 'salas · JZ ~700 gadi',
-    mapLossAfrica: 'zaudētas ~18–21% lielo zīdītāju ģinšu',
+    mapLossAfrica: 'zaudētas ~18-21% lielo zīdītāju ģinšu',
     mapLossAustralia: '~88%',
     mapLossEurasia: '~35%',
     mapLossNorth: '~72%',
@@ -1219,7 +1219,7 @@ const lv: typeof en = {
     mapSources:
       'Ierašanās diapazoni, ne precīzi gadi. Āfrikas mazāko zudumu parasti skaidro ar to, ka dzīvnieki tur evolūcijā jau bija līdzās hominīniem. Kontinentu procenti pēc Barnosky 2008 (un kopsavilkumiem kā Our World in Data; skat. arī Andermann et al. 2020); Austrālijas agrā vieta Madjedbebe, Clarkson et al. 2017. Cilvēku ierašanās vēlo kvartāru labāk izskaidro nekā klimats viens (Sandom et al. 2014); dažām sugām, tostarp vilnainajam mamutam, joprojām vajag abus.',
     mapBaseCredit:
-      'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums) — bez mākoņiem fiziskā Zeme, ne politiskā karte.',
+      'Sauszemes pamats: NASA Blue Marble Next Generation (2004. gada decembris, sabiedriskais īpašums): bez mākoņiem fiziskā Zeme, ne politiskā karte.',
     cardCta: 'Lasīt šķirkli',
     back: 'Savvaļa',
     what: 'Kas tas ir',
@@ -1252,7 +1252,7 @@ const lv: typeof en = {
     },
   },
   about: {
-    metaTitle: 'Par projektu — Fix Planet',
+    metaTitle: 'Par projektu: Fix Planet',
     metaDescription:
       'Fix Planet vada Aigars Abramovics: praktiski veidi, kā dziedēt ūdeni, mežus, enerģiju, atkritumus, savvaļas dabu un noteikumus, kas tos sargā.',
     eyebrow: 'Projekts',
@@ -1260,7 +1260,7 @@ const lv: typeof en = {
     lead: 'Kurēts atlants Zemes sistēmām un tam, ko vēl var salabot: ūdens, meži, enerģija, atkritumi, savvaļas daba un noteikumi, kas tos sargā.',
     p1: 'Fix Planet vāc, kā šīs sistēmas darbojas un kuras tehnoloģijas, likumi un ieradumi tās jau maina. Katrai kartītei ir nosaukts avots.',
     p2Before:
-      'Katrai problēmai mēs pievienojam tehnoloģiju vai pieeju, kas jau darbojas, — un norādām uz pierādījumiem. Projektu vada ',
+      'Katrai problēmai mēs pievienojam tehnoloģiju vai pieeju, kas jau darbojas, un norādām uz pierādījumiem. Projektu vada ',
     p2After:
       ', investors un autors, kura uzmanības centrā ir zaļās tehnoloģijas un nākotne, kurā var dzīvot.',
     p3Before: 'Ikdienas idejas parādās arī X kā ',
@@ -1271,20 +1271,20 @@ const lv: typeof en = {
     follow: 'Sekot {handle} →',
     supportCta: 'Atbalstīt Fix Planet →',
     supportNote:
-      'Atver Stripe kasi jaunā cilnē. Atbalsts atlantam — ne labdarības ziedojums ar nodokļu atvieglojumu.',
+      'Atver Stripe kasi jaunā cilnē. Atbalsts atlantam: ne labdarības ziedojums ar nodokļu atvieglojumu.',
   },
   stubs: {
     maps: {
       title: 'Kartes',
-      metaTitle: 'Kartes — Fix Planet',
-      metaDescription: 'Risinājumu un projektu kartes visā pasaulē — drīzumā.',
+      metaTitle: 'Kartes: Fix Planet',
+      metaDescription: 'Risinājumu un projektu kartes visā pasaulē: drīzumā.',
       summary:
         'Šeit parādīsies risinājumu un projektu karte. Šajā sadaļā vēl nekas nav publicēts.',
     },
     law: {
       title: 'Tiesības',
-      metaTitle: 'Tiesības — Fix Planet',
-      metaDescription: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai — drīzumā.',
+      metaTitle: 'Tiesības: Fix Planet',
+      metaDescription: 'Tiesiskais ietvars cilvēku un planētas aizsardzībai: drīzumā.',
       summary:
         'Šeit tiks savākti tiesiskie ietvari, kas sargā cilvēkus un planētu. Šī sadaļa vēl nav publicēta.',
     },
@@ -1319,7 +1319,7 @@ const lv: typeof en = {
     privacy: 'Privātums',
   },
   notFound: {
-    metaTitle: 'Lapa nav atrasta — Fix Planet',
+    metaTitle: 'Lapa nav atrasta: Fix Planet',
     metaDescription: 'Šādas lapas Fix Planet nav.',
     title: 'Šīs lapas nav',
     beforeLinks: 'Saite varētu būt novecojusi. Mēģini ',

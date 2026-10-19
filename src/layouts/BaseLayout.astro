@@ -11,6 +11,7 @@ import {
   resolveLocale,
   stripLocalePrefix,
 } from '../i18n';
+import '../styles/fonts.css';
 import '../styles/global.css';
 
 interface Props {
@@ -47,6 +48,14 @@ const {
   image = '/images/og-meadow.jpg',
   theme,
 } = Astro.props;
+
+const fontPreload = ['/fonts/inter-latin-400-normal.woff2', '/fonts/oswald-latin-700-normal.woff2'];
+if (locale === 'lv' || locale === 'pl') {
+  fontPreload.push('/fonts/inter-latin-ext-400-normal.woff2', '/fonts/oswald-latin-ext-700-normal.woff2');
+}
+if (locale === 'ru') {
+  fontPreload.push('/fonts/inter-cyrillic-400-normal.woff2', '/fonts/oswald-cyrillic-700-normal.woff2');
+}
 
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImage = new URL(image, site.url).href;
@@ -103,12 +112,11 @@ const pagePath = stripLocalePrefix(Astro.url.pathname);
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    {
+      fontPreload.map((href) => (
+        <link rel="preload" href={href} as="font" type="font/woff2" crossorigin />
+      ))
+    }
   </head>
   <body class={theme ? `theme-${theme}` : undefined}>
     <a class="skip" href="#main">{ui.skip}</a>

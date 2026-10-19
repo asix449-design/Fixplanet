@@ -17,7 +17,7 @@ export const en: ForestsPage = {
   filterAria: 'Forests sections',
   back: 'Forests',
   tiles: {
-    satellite: 'July canopy greenness from space, 2001–2025.',
+    satellite: 'July canopy greenness from space, 2001-2025.',
     history: 'Ice-age vegetation, biomes, and land after people.',
     numbers: 'Definitions, sources, and the rest of the published set.',
     outlook: 'The long view, the years we can measure, and three possible paths.',
@@ -32,11 +32,11 @@ export const en: ForestsPage = {
     satellite: [
       'The forest canopy is the closed layer of leaves and needles. Satellites do not count FAO hectares; they measure how green the surface is. NDVI is that greenness, derived from reflected light.',
       'On a world map the tropical and boreal belts stand out. A single year of clearing is almost invisible at this scale. Tree-cover loss at about 30 metres is on Global Forest Watch.',
-      'The maps are NASA MODIS Terra NDVI for July, 2001–2025.',
+      'The maps are NASA MODIS Terra NDVI for July, 2001-2025.',
     ],
     history: [
       'Before the satellite era, forest extent is reconstructed: pollen, climate models, and maps of how people used land. There is no continuous hectare census from 10,000 BCE.',
-      'Five plates: vegetation at the last glacial maximum, a map of biomes under a recent climate, and Ellis anthromes — human-shaped biomes — for 1700, 1900, and 2000.',
+      'Five plates: vegetation at the last glacial maximum, a map of biomes under a recent climate, and Ellis anthromes: human-shaped biomes: for 1700, 1900, and 2000.',
     ],
     numbers: [
       'Published figures, each with a named source and year. The Food and Agriculture Organization of the United Nations reports forest as land use. The University of Maryland laboratory and Global Forest Watch map canopy at about 30 metres. Intact forest landscapes are a mapped class of large forest patches. A 2015 paper in Nature estimates the number of trees. Each figure keeps the definition used by its publisher.',
@@ -48,7 +48,7 @@ export const en: ForestsPage = {
   honestySatellite:
     'NASA MODIS Terra NDVI, July. Canopy greenness, not Hansen tree-cover-loss pixels. Live 30 m explorer: Global Forest Watch.',
   honestyReconstruction:
-    'Reconstructions and estimates, not satellite canopy. Pollen, models, and anthromes — each plate has its own legend.',
+    'Reconstructions and estimates, not satellite canopy. Pollen, models, and anthromes: each plate has its own legend.',
   modeSatellite: 'Satellite',
   modeReconstruction: 'Reconstruction',
   fidelitySatellite: 'Satellite · canopy greenness',
@@ -58,12 +58,12 @@ export const en: ForestsPage = {
   eraLabel: 'Era',
   openGfw: 'Open Global Forest Watch →',
   gfwNote:
-    'Hansen / University of Maryland GLAD tree-cover loss, about 30 m, 2001–present, on Global Forest Watch. Loss includes fire, forestry, and conversion — not only permanent deforestation.',
+    'Hansen / University of Maryland GLAD tree-cover loss, about 30 m, 2001-present, on Global Forest Watch. Loss includes fire, forestry, and conversion: not only permanent deforestation.',
   sourceLabel: 'Source',
   licenseLabel: 'License',
   vintageLabel: 'Vintage',
   howToRead:
-    'Green is more vegetation in July. Black is water. Tan is dry or bare. Compare belts — Amazon, Congo, Sundaland, boreal — not a single pixel. Reconstruction plates use their own legends: anthromes are classes of people and land use, not “percent trees.”',
+    'Green is more vegetation in July. Black is water. Tan is dry or bare. Compare belts: Amazon, Congo, Sundaland, boreal: not a single pixel. Reconstruction plates use their own legends: anthromes are classes of people and land use, not “percent trees.”',
   caveats:
     'NDVI is not forest area and not primary forest. Crops and wet years also look green. July favors the northern summer, so year-to-year change at this resolution is small. The last glacial maximum is about 18,000 years ago, older and colder than 10,000 BCE. The biome plate is a recent-climate analogue; the mid-Holocene Sahara was often greener than it shows.',
   distinguishTitle: 'Boreal forest, tropical forest, and planted forest',
@@ -73,26 +73,26 @@ export const en: ForestsPage = {
     'Each figure is copied from the cited publication, with that publication year. Forest area, canopy, and tree counts come from their own publishers.',
   trendTitle: 'Long view, then the years we can measure',
   trendLead:
-    'The Ellis 12K chart reconstructs anthromes — wild, cultured, and intensive land — from 10,000 BCE to 2017. It is not FAO hectares. After 2000 the satellite figures are tighter.',
+    'The Ellis 12K chart reconstructs anthromes: wild, cultured, and intensive land: from 10,000 BCE to 2017. It is not FAO hectares. After 2000 the satellite figures are tighter.',
   longViewCaption:
     'Erle Ellis, Anthromes 12K DGG v1, after Ellis et al. 2021, PNAS. CC BY 2.0. Map face is ~2017; the stacked strip is the long reconstruction. Wild woodland shrinks; cropland, rangeland, and settlements grow. Coarse on purpose.',
   longViewAlt:
     'World anthrome map for 2017 above a stacked timeline of wild, cultured, and intensive land from 10,000 BCE to 2017',
   scenarioTitle: 'Paths, not fate',
   scenarioLead:
-    'If the recent rate of tropical primary loss continues, that forest keeps shrinking. A quieter fire year or a real moratorium can bend the line the other way — 2025 already did, once. Neither path is a date when forest disappears.',
+    'If the recent rate of tropical primary loss continues, that forest keeps shrinking. A quieter fire year or a real moratorium can bend the line the other way: 2025 already did, once. Neither path is a date when forest disappears.',
   scenarios: {
     continued: {
       title: 'If the recent tropical-primary band holds',
-      text: 'UMD/GFW humid-tropical primary loss was 6.7 million ha in 2024 (a fire-heavy record) and 4.3 million ha in 2025 (36 percent lower, still about 46 percent above a decade earlier). If a 4–7 million ha/year band persists, remaining primary humid tropics keep shrinking. Remaining primary area is not a single published GFW stock on this page; boreal FAO forest is a different ledger.',
+      text: 'UMD/GFW humid-tropical primary loss was 6.7 million ha in 2024 (a fire-heavy record) and 4.3 million ha in 2025 (36 percent lower, still about 46 percent above a decade earlier). If a 4-7 million ha/year band persists, remaining primary humid tropics keep shrinking. Remaining primary area is not a single published GFW stock on this page; boreal FAO forest is a different ledger.',
     },
     slower: {
       title: 'If policy and fire management hold',
-      text: 'FRA 2025 already shows slower net loss than the 1990s (4.12 vs 10.7 million ha/year). Brazil’s 2025 share of the tropical-primary drop is the usual reminder that enforcement and commodity rules can move a global total in one year. The same WRI note says fire is a new normal — a lull is not a lock.',
+      text: 'FRA 2025 already shows slower net loss than the 1990s (4.12 vs 10.7 million ha/year). Brazil’s 2025 share of the tropical-primary drop is the usual reminder that enforcement and commodity rules can move a global total in one year. The same WRI note says fire is a new normal: a lull is not a lock.',
     },
     restore: {
       title: 'If restoration is real forest, not a pledge',
-      text: 'FAO forest expansion (6.78 million ha/year, 2015–2025) already offsets part of deforestation. Plantations and young secondary stands can grow that number without restoring primary structure or species. A better path is less conversion plus restoration that is measured as ecosystem, not as a press-release hectare.',
+      text: 'FAO forest expansion (6.78 million ha/year, 2015-2025) already offsets part of deforestation. Plantations and young secondary stands can grow that number without restoring primary structure or species. A better path is less conversion plus restoration that is measured as ecosystem, not as a press-release hectare.',
     },
   },
   worksTitle: 'What has moved the line',
@@ -113,7 +113,7 @@ export const en: ForestsPage = {
     },
     protected: {
       title: 'Protected forest (FAO)',
-      text: 'FRA 2025: about 813 million ha of forest — 20 percent — sits in legally established protected areas (+251 million ha since 1990). Paper parks exist. So do parks that hold. Protection is one tool next to commodity rules and fire crews.',
+      text: 'FRA 2025: about 813 million ha of forest: 20 percent: sits in legally established protected areas (+251 million ha since 1990). Paper parks exist. So do parks that hold. Protection is one tool next to commodity rules and fire crews.',
     },
   },
   mapsLink: 'The Maps room also keeps a Hansen / Global Forest Watch schematic of well-known loss frontiers.',
@@ -164,7 +164,7 @@ export const en: ForestsPage = {
       label: '2001',
       title: 'July 2001 canopy greenness',
       caption:
-        'First full northern-summer MODIS Terra NDVI month on this page. Green belts are vegetation, not a forest-area census. Hansen/UMD annual loss starts in 2001 — those pixels are on Global Forest Watch.',
+        'First full northern-summer MODIS Terra NDVI month on this page. Green belts are vegetation, not a forest-area census. Hansen/UMD annual loss starts in 2001: those pixels are on Global Forest Watch.',
       imageAlt:
         'Equirectangular world map, July 2001: green vegetation on black oceans, tan deserts',
     },
@@ -188,7 +188,7 @@ export const en: ForestsPage = {
       label: '2015',
       title: 'July 2015 canopy greenness',
       caption:
-        'Mid-2010s satellite era. FAO FRA 2025 later puts 2015–2025 net forest-area loss at 4.12 million ha/year — a different, land-use number.',
+        'Mid-2010s satellite era. FAO FRA 2025 later puts 2015-2025 net forest-area loss at 4.12 million ha/year: a different, land-use number.',
       imageAlt:
         'Equirectangular world map, July 2015: green vegetation on black oceans, tan deserts',
     },
@@ -220,7 +220,7 @@ export const en: ForestsPage = {
       label: '~18 ka',
       title: 'Last Glacial Maximum vegetation',
       caption:
-        'Reconstruction, not satellite. Ray & Adams 2001 GIS vegetation, ~25,000–15,000 BP (~18,000 years ago). Ice sheets, more desert, less closed forest than now. This is older and colder than 10,000 BCE. Early Holocene forests were already expanding off this minimum.',
+        'Reconstruction, not satellite. Ray & Adams 2001 GIS vegetation, ~25,000-15,000 BP (~18,000 years ago). Ice sheets, more desert, less closed forest than now. This is older and colder than 10,000 BCE. Early Holocene forests were already expanding off this minimum.',
       imageAlt:
         'Mollweide reconstruction of Ice Age vegetation: ice sheets, tundra, reduced tropical forest, patterned legend',
     },
@@ -228,7 +228,7 @@ export const en: ForestsPage = {
       label: 'Biome plate',
       title: 'Potential biomes (recent climate)',
       caption:
-        'Estimate / analogue — not a dated mid-Holocene pollen map. Ville Koistinen’s compiled biome plate (CC BY-SA). Useful for where forest can live under a recent climate. Mid-Holocene (~6,000 years ago) often had a greener Sahara and shifted forest limits; this drawing does not show that.',
+        'Estimate / analogue: not a dated mid-Holocene pollen map. Ville Koistinen’s compiled biome plate (CC BY-SA). Useful for where forest can live under a recent climate. Mid-Holocene (~6,000 years ago) often had a greener Sahara and shifted forest limits; this drawing does not show that.',
       imageAlt:
         'Color-coded world biome map: taiga, temperate forest, tropical rainforest, deserts and savannas',
     },

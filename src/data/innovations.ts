@@ -103,13 +103,13 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:HellisheidiPowerStation01.jpg',
     ),
     sources: [
-      cite('Climeworks — Mammoth plant', 'https://climeworks.com/plant-mammoth'),
+      cite('Climeworks: Mammoth plant', 'https://climeworks.com/plant-mammoth'),
       cite(
-        'Climeworks — Mammoth start (8 May 2024)',
+        'Climeworks: Mammoth start (8 May 2024)',
         'https://climeworks.com/press-release/climeworks-switches-on-worlds-largest-direct-air-capture-plant-mammoth',
       ),
       cite(
-        'IEA — Direct Air Capture',
+        'IEA: Direct Air Capture',
         'https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture',
       ),
     ],
@@ -125,12 +125,12 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:North_Sea_oil_platform.jpg',
     ),
     sources: [
-      cite('Northern Lights — who we are', 'https://norlights.com/who-we-are/'),
+      cite('Northern Lights: who we are', 'https://norlights.com/who-we-are/'),
       cite(
-        'Equinor — first CO₂ volumes stored (25 Aug 2025)',
+        'Equinor: first CO₂ volumes stored (25 Aug 2025)',
         'https://www.equinor.com/news/20250825-first-co2-volumes-stored-at-northern-lights',
       ),
-      cite('CCS Norway — Longship', 'https://ccsnorway.com/'),
+      cite('CCS Norway: Longship', 'https://ccsnorway.com/'),
     ],
   },
   {
@@ -173,7 +173,7 @@ export const innovationMeta: InnovationMeta[] = [
     status: 'pilot',
     image: img(
       'coral-restoration.jpg',
-      'Fix Planet generated documentary still — branching reef, not a named restoration project',
+      'Fix Planet generated documentary still: branching reef, not a named restoration project',
       'Site asset',
       '',
     ),
@@ -195,7 +195,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Nair et al., Nature, 2012 — graphene-oxide water permeation',
+        'Nair et al., Nature, 2012: graphene-oxide water permeation',
         'https://www.nature.com/articles/nature11704',
       ),
       cite(
@@ -216,7 +216,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Yoshida et al., Science, 2016 — Ideonella sakaiensis PETase',
+        'Yoshida et al., Science, 2016: Ideonella sakaiensis PETase',
         'https://www.science.org/doi/10.1126/science.aad6359',
       ),
     ],
@@ -233,15 +233,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'dsm-firmenich — 20,000 cows, 18 months in the Netherlands',
+        'dsm-firmenich: 20,000 cows, 18 months in the Netherlands',
         'https://www.dsm-firmenich.com/en/businesses/taste-texture-health/news-events/articles/dairy/20000-cows-18-months-what-large-scale-farm-data-tells-us-about-bovaer-in-the-netherlands.html',
       ),
       cite(
-        'EUR-Lex — Regulation (EU) 2022/565 (3-NOP / Bovaer)',
+        'EUR-Lex: Regulation (EU) 2022/565 (3-NOP / Bovaer)',
         'https://eur-lex.europa.eu/eli/reg_impl/2022/565/oj',
       ),
       cite(
-        'dsm-firmenich — Bovaer US FDA review (May 2024)',
+        'dsm-firmenich: Bovaer US FDA review (May 2024)',
         'https://our-company.dsm-firmenich.com/en/our-company/news/press-releases/2024/methane-reducing-feed-ingredient-bovaer-ready-for-us-market-launch.html',
       ),
     ],
@@ -258,7 +258,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Reuters — Deep Sky delivers North America’s first DAC credits (29 June 2026)',
+        'Reuters: Deep Sky delivers North America’s first DAC credits (29 June 2026)',
         'https://www.reuters.com/sustainability/climate-energy/canadian-company-delivers-north-americas-first-direct-air-capture-carbon-credits-2026-06-29/',
       ),
       cite('Deep Sky Alpha', 'https://www.deepskyclimate.com/alpha'),
@@ -277,7 +277,7 @@ export const innovationMeta: InnovationMeta[] = [
     sources: [
       cite('Avnos', 'https://avnos.com/'),
       cite(
-        'Avnos — Project Brighton enters operations',
+        'Avnos: Project Brighton enters operations',
         'https://avnos.com/avnos-largest-hybrid-direct-air-capture-deployment-enters-operations/',
       ),
     ],
@@ -293,8 +293,8 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:TERNEUZEN_-_panoramio.jpg',
     ),
     sources: [
-      cite('Yara — news and media', 'https://www.yara.com/news-and-media/'),
-      cite('Northern Lights — who we are', 'https://norlights.com/who-we-are/'),
+      cite('Yara: news and media', 'https://www.yara.com/news-and-media/'),
+      cite('Northern Lights: who we are', 'https://norlights.com/who-we-are/'),
     ],
   },
   {
@@ -323,7 +323,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'ESA — Biomass (FutureEO)',
+        'ESA: Biomass (FutureEO)',
         'https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass',
       ),
     ],
@@ -340,15 +340,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'NatureMetrics — Nature Intelligence Platform',
+        'NatureMetrics: Nature Intelligence Platform',
         'https://naturemetrics.com/products/nature-intelligence-platform',
       ),
       cite(
-        'USGS — National Aquatic eDNA Strategy',
+        'USGS: National Aquatic eDNA Strategy',
         'https://www.usgs.gov/news/science-snippet/a-new-strategy-help-unleash-usgs-edna-capabilities',
       ),
       cite(
-        'NatureMetrics — Habitat Insights launch',
+        'NatureMetrics: Habitat Insights launch',
         'https://naturemetrics.com/news/naturemetrics-launches-habitat-insights',
       ),
     ],
@@ -365,15 +365,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Cózar et al., Nature Communications, 2024 — marine litter from space',
+        'Cózar et al., Nature Communications, 2024: marine litter from space',
         'https://www.nature.com/articles/s41467-024-48674-7',
       ),
       cite(
-        'EU JRC — Surveilling marine litter from space becomes reality (14 June 2024)',
+        'EU JRC: Surveilling marine litter from space becomes reality (14 June 2024)',
         'https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/surveilling-marine-litter-space-becomes-reality-2024-06-14_en',
       ),
       cite(
-        'ESA — Copernicus Sentinel-2',
+        'ESA: Copernicus Sentinel-2',
         'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2',
       ),
     ],
@@ -390,15 +390,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'ENCORE — Exploring Natural Capital Opportunities, Risks and Exposure',
+        'ENCORE: Exploring Natural Capital Opportunities, Risks and Exposure',
         'https://encorenature.org/en',
       ),
       cite(
-        'ENCORE — major upgrade, July 2024',
+        'ENCORE: major upgrade, July 2024',
         'https://encorenature.org/news/major-upgrade-for-encore-launches-july-2024',
       ),
       cite(
-        'TNFD — Tools Catalogue',
+        'TNFD: Tools Catalogue',
         'https://tnfd.global/assessment-guidance/tools-catalogue/',
       ),
     ],
@@ -414,13 +414,13 @@ export const innovationMeta: InnovationMeta[] = [
       'https://commons.wikimedia.org/wiki/File:PACE_Observes_Namesake_Plankton,_Aerosols,_Clouds_and_Ocean_Ecosystem_(SVS31294_-_hyperw_PACE_OCI_2024040820240408).png',
     ),
     sources: [
-      cite('NASA — PACE mission', 'https://www.nasa.gov/pace'),
+      cite('NASA: PACE mission', 'https://www.nasa.gov/pace'),
       cite(
-        'NASA — PACE launch (8 February 2024)',
+        'NASA: PACE launch (8 February 2024)',
         'https://www.nasa.gov/news-release/nasa-launches-new-climate-mission-to-study-ocean-atmosphere/',
       ),
       cite(
-        'NASA Science — PACE',
+        'NASA Science: PACE',
         'https://science.nasa.gov/mission/pace/',
       ),
     ],
@@ -438,7 +438,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite('ITER Organization', 'https://www.iter.org/'),
-      cite('ITER — FAQs', 'https://www.iter.org/faqs'),
+      cite('ITER: FAQs', 'https://www.iter.org/faqs'),
     ],
   },
   {
@@ -481,7 +481,7 @@ export const innovationMeta: InnovationMeta[] = [
       ),
       cite('Fervo Energy', 'https://fervoenergy.com/'),
       cite(
-        'Google — Project Red operational (28 Nov 2023)',
+        'Google: Project Red operational (28 Nov 2023)',
         'https://blog.google/outreach-initiatives/sustainability/google-fervo-geothermal-energy-partnership/',
       ),
     ],
@@ -852,11 +852,11 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Lam et al., Science, 2023 — GraphCast',
+        'Lam et al., Science, 2023: GraphCast',
         'https://www.science.org/doi/10.1126/science.adi2336',
       ),
       cite(
-        'Google DeepMind — GraphCast',
+        'Google DeepMind: GraphCast',
         'https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/',
       ),
     ],
@@ -873,11 +873,11 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Merchant et al., Nature, 2023 — GNoME',
+        'Merchant et al., Nature, 2023: GNoME',
         'https://www.nature.com/articles/s41586-023-06735-9',
       ),
       cite(
-        'Google DeepMind — GNoME',
+        'Google DeepMind: GNoME',
         'https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/',
       ),
     ],
@@ -894,11 +894,11 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Google DeepMind — wind-energy value (26 Feb 2019)',
+        'Google DeepMind: wind-energy value (26 Feb 2019)',
         'https://deepmind.google/blog/machine-learning-can-boost-the-value-of-wind-energy/',
       ),
       cite(
-        'IEA — Digitalisation and Energy',
+        'IEA: Digitalisation and Energy',
         'https://www.iea.org/reports/digitalisation-and-energy',
       ),
     ],
@@ -909,17 +909,17 @@ export const innovationMeta: InnovationMeta[] = [
     status: 'deployed',
     image: img(
       'alphafold-proteins.jpg',
-      'Fix Planet generated molecular ribbon — not a named AlphaFold prediction',
+      'Fix Planet generated molecular ribbon: not a named AlphaFold prediction',
       'Site asset',
       '',
     ),
     sources: [
-      cite('Google DeepMind — AlphaFold', 'https://deepmind.google/science/alphafold/'),
+      cite('Google DeepMind: AlphaFold', 'https://deepmind.google/science/alphafold/'),
       cite(
-        'Jumper et al., Nature, 2021 — AlphaFold 2',
+        'Jumper et al., Nature, 2021: AlphaFold 2',
         'https://www.nature.com/articles/s41586-021-03819-2',
       ),
-      cite('AlphaFold Database — EMBL-EBI', 'https://alphafold.ebi.ac.uk/'),
+      cite('AlphaFold Database: EMBL-EBI', 'https://alphafold.ebi.ac.uk/'),
     ],
   },
   {
@@ -928,7 +928,7 @@ export const innovationMeta: InnovationMeta[] = [
     status: 'deployed',
     image: img(
       'amp-recycling-robots.jpg',
-      'Fix Planet generated documentary still of a recycling robot on a conveyor — not an AMP Robotics press photo',
+      'Fix Planet generated documentary still of a recycling robot on a conveyor: not an AMP Robotics press photo',
       'Site asset',
       '',
     ),
@@ -948,7 +948,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Google — Willow quantum chip (9 Dec 2024)',
+        'Google: Willow quantum chip (9 Dec 2024)',
         'https://blog.google/technology/research/google-willow-quantum-chip/',
       ),
       cite('IBM Quantum', 'https://www.ibm.com/quantum'),
@@ -966,10 +966,10 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Climate TRACE — v5.10 / first-half 2026 emissions (27 Aug 2026)',
+        'Climate TRACE: v5.10 / first-half 2026 emissions (27 Aug 2026)',
         'https://climatetrace.org/news/climate-trace-data-show-marginal-increase-in-global-emissions-in-the-first-half-of-2026',
       ),
-      cite('Climate TRACE — about the coalition', 'https://climatetrace.org/about'),
+      cite('Climate TRACE: about the coalition', 'https://climatetrace.org/about'),
     ],
   },
   {
@@ -984,7 +984,7 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Google DeepMind — Introducing WeatherNext 3 (3 Sep 2026)',
+        'Google DeepMind: Introducing WeatherNext 3 (3 Sep 2026)',
         'https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/',
       ),
     ],
@@ -1001,15 +1001,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'VAST Data — The weather model that taught itself physics (AIFS 1.1)',
+        'VAST Data: The weather model that taught itself physics (AIFS 1.1)',
         'https://www.vastdata.com/blog/the-weather-model-that-taught-itself-physics',
       ),
       cite(
-        'Moldovan et al., GMD, 2026 — AIFS Single 1.1.0',
+        'Moldovan et al., GMD, 2026: AIFS Single 1.1.0',
         'https://gmd.copernicus.org/articles/19/4703/2026/',
       ),
       cite(
-        'ECMWF — AIFS version history',
+        'ECMWF: AIFS version history',
         'https://confluence.ecmwf.int/spaces/UDOC/pages/599165907/AIFS+Version+History',
       ),
     ],
@@ -1026,10 +1026,10 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'NASA Earthdata — Prithvi geospatial model (2023)',
+        'NASA Earthdata: Prithvi geospatial model (2023)',
         'https://www.earthdata.nasa.gov/news/nasa-ibm-openly-release-geospatial-ai-foundation-model-nasa-earth-observation-data',
       ),
-      cite('IBM–NASA Prithvi models', 'https://huggingface.co/ibm-nasa-geospatial'),
+      cite('IBM-NASA Prithvi models', 'https://huggingface.co/ibm-nasa-geospatial'),
     ],
   },
   {
@@ -1045,42 +1045,42 @@ export const innovationMeta: InnovationMeta[] = [
     sources: [
       cite('Vesuvius Challenge', 'https://scrollprize.org/'),
       cite(
-        'Vesuvius Challenge — 2023 Grand Prize',
+        'Vesuvius Challenge: 2023 Grand Prize',
         'https://scrollprize.org/grandprize',
       ),
       cite(
-        'Vesuvius Challenge — first complete scroll (PHerc. 1667)',
+        'Vesuvius Challenge: first complete scroll (PHerc. 1667)',
         'https://scrollprize.org/firstscroll',
       ),
-      cite('Vesuvius Challenge — FAQ', 'https://scrollprize.org/faq'),
-      cite('Vesuvius Challenge — data', 'https://scrollprize.org/data'),
-      cite('Vesuvius Challenge — prizes', 'https://scrollprize.org/prizes'),
+      cite('Vesuvius Challenge: FAQ', 'https://scrollprize.org/faq'),
+      cite('Vesuvius Challenge: data', 'https://scrollprize.org/data'),
+      cite('Vesuvius Challenge: prizes', 'https://scrollprize.org/prizes'),
       cite(
-        'arXiv:2606.29085 — complete virtual unwrapping of a rolled Herculaneum papyrus',
+        'arXiv:2606.29085: complete virtual unwrapping of a rolled Herculaneum papyrus',
         'https://arxiv.org/abs/2606.29085',
       ),
       cite(
-        'Angelotti et al., Scientific Reports, 2026 — ink detection from surface topography',
+        'Angelotti et al., Scientific Reports, 2026: ink detection from surface topography',
         'https://www.nature.com/articles/s41598-026-58467-1',
       ),
       cite(
-        'EduceLab — Vesuvius Challenge Grand Prize winners',
+        'EduceLab: Vesuvius Challenge Grand Prize winners',
         'https://educelab.engr.uky.edu/news/vesuvius-challenge-grand-prize-winners-announced',
       ),
       cite(
-        'Scroll Prize — First Title Prize ($60,000)',
+        'Scroll Prize: First Title Prize ($60,000)',
         'https://scrollprize.substack.com/p/60000-first-title-prize-awarded',
       ),
       cite(
-        'Scroll Prize — $1M Grand Prize for 2027',
+        'Scroll Prize: $1M Grand Prize for 2027',
         'https://scrollprize.substack.com/p/a-new-1m-grand-prize-for-2027',
       ),
       cite(
-        'BBC — Herculaneum scrolls (5 Feb 2024)',
+        'BBC: Herculaneum scrolls (5 Feb 2024)',
         'https://www.bbc.com/news/science-environment-68221243',
       ),
       cite(
-        'Nature news — AI reads burnt scroll (2024)',
+        'Nature news: AI reads burnt scroll (2024)',
         'https://www.nature.com/articles/d41586-024-00488-9',
       ),
     ],
@@ -1097,19 +1097,19 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'MethaneSAT — successful launch (4 Mar 2024)',
+        'MethaneSAT: successful launch (4 Mar 2024)',
         'https://www.methanesat.org/project-updates/orbit-successful-methanesat-launch-represents-groundbreaking-mission-protect',
       ),
       cite(
-        'MethaneSAT — first look at a system-wide view (2 Feb 2026)',
+        'MethaneSAT: first look at a system-wide view (2 Feb 2026)',
         'https://www.methanesat.org/project-updates/first-look-system-wide-view',
       ),
       cite(
-        'Varon et al., Atmos. Chem. Phys. 26, 5961–5980 (2026)',
+        'Varon et al., Atmos. Chem. Phys. 26, 5961-5980 (2026)',
         'https://acp.copernicus.org/articles/26/5961/2026/',
       ),
       cite(
-        'MethaneSAT — anomaly investigation (6 Nov 2025)',
+        'MethaneSAT: anomaly investigation (6 Nov 2025)',
         'https://www.methanesat.org/project-updates/results-anomaly-investigation-loss-communication-methanesat',
       ),
     ],
@@ -1126,19 +1126,19 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Earth Fire Alliance — first three operational FireSats reach orbit (7 Jul 2026)',
+        'Earth Fire Alliance: first three operational FireSats reach orbit (7 Jul 2026)',
         'https://earthfirealliance.org/news-article/earth-fire-alliances-first-three-operational-firesats-reach-orbit/',
       ),
       cite(
-        'Google Research — FireSat',
+        'Google Research: FireSat',
         'https://sites.research.google/gr/wildfires/firesat/',
       ),
       cite(
-        'Google — FireSat announcement (16 Sep 2024)',
+        'Google: FireSat announcement (16 Sep 2024)',
         'https://blog.google/company-news/outreach-and-initiatives/sustainability/google-ai-wildfire-detection/',
       ),
       cite(
-        'Muon Space — operational launch (7 Jul 2026)',
+        'Muon Space: operational launch (7 Jul 2026)',
         'https://www.muonspace.com/muon-space-deploys-first-three-operational-firesat-satellites-for-earth-fire-alliance/',
       ),
     ],
@@ -1155,16 +1155,16 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Nearing et al., Nature — global flood prediction (20 Mar 2024)',
+        'Nearing et al., Nature: global flood prediction (20 Mar 2024)',
         'https://www.nature.com/articles/s41586-024-07145-1',
       ),
       cite(
-        'Google — expanding flood forecasting coverage (11 Nov 2024)',
+        'Google: expanding flood forecasting coverage (11 Nov 2024)',
         'https://blog.google/innovation-and-ai/products/expanding-flood-forecasting-coverage-helping-partners/',
       ),
       cite('Flood Hub', 'https://g.co/floodhub'),
       cite(
-        'Google Research — floods',
+        'Google Research: floods',
         'https://sites.research.google/floods/',
       ),
     ],
@@ -1181,15 +1181,15 @@ export const innovationMeta: InnovationMeta[] = [
     ),
     sources: [
       cite(
-        'Google DeepMind — AlphaEarth Foundations (30 Jul 2025)',
+        'Google DeepMind: AlphaEarth Foundations (30 Jul 2025)',
         'https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/',
       ),
       cite(
-        'Earth Engine — Satellite Embedding V1 annual',
+        'Earth Engine: Satellite Embedding V1 annual',
         'https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL',
       ),
       cite(
-        'arXiv 2507.22291 — AlphaEarth Foundations',
+        'arXiv 2507.22291: AlphaEarth Foundations',
         'https://arxiv.org/abs/2507.22291',
       ),
     ],

@@ -18,7 +18,7 @@ const en: Record<string, SolutionCopy> = {
     problemTitle: 'River & coastal pollution',
     fixTitle: 'Constructed wetlands',
     problem: 'Nutrients and sewage in rivers feed algal blooms that starve fish of oxygen.',
-    fix: 'Constructed wetlands treat water as a living filter — reeds, microbes, and shallow flow.',
+    fix: 'Constructed wetlands treat water as a living filter: reeds, microbes, and shallow flow.',
     imageAlt: 'Constructed wetland with reeds, clear shallow water, and a wooden boardwalk',
   },
   'sustainable-forestry': {
@@ -55,7 +55,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'River interceptor barriers',
     problem:
       'Rivers carry most recognizable plastic to the sea after rain. Once the litter is offshore, collection is slower and more expensive than stopping it in the channel.',
-    fix: 'Floating booms and river interceptors hold litter at a barrier so it can be lifted out. The Ocean Cleanup’s Interceptor is one named, produced family of these systems; many cities also use simpler booms. A barrier is a catcher at a choke point — not a substitute for collection upstream or for making less plastic.',
+    fix: 'Floating booms and river interceptors hold litter at a barrier so it can be lifted out. The Ocean Cleanup’s Interceptor is one named, produced family of these systems; many cities also use simpler booms. A barrier is a catcher at a choke point: not a substitute for collection upstream or for making less plastic.',
     imageAlt: 'Floating river boom with yellow buoys holding back plastic bottles and litter',
   },
   'solar-microgrids': {
@@ -78,7 +78,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Managed aquifer recharge',
     problem:
       'Wells drop when cities and farms take groundwater faster than rain puts it back. Empty aquifers mean dry taps, sinking land, and no reserve in drought.',
-    fix: 'Managed aquifer recharge puts treated stormwater, river water, or recycled wastewater into basins and wells so the ground store refills. Orange County’s Groundwater Replenishment System, Perth’s recycling scheme, and spreading grounds in Arizona already run at city scale. The pictured Bolivar site in South Australia was a recycled-water aquifer storage-and-recovery trial of the same class. It needs clean source water, the right geology, and years of monitoring — it is not a new river.',
+    fix: 'Managed aquifer recharge puts treated stormwater, river water, or recycled wastewater into basins and wells so the ground store refills. Orange County’s Groundwater Replenishment System, Perth’s recycling scheme, and spreading grounds in Arizona already run at city scale. The pictured Bolivar site in South Australia was a recycled-water aquifer storage-and-recovery trial of the same class. It needs clean source water, the right geology, and years of monitoring: it is not a new river.',
     imageAlt:
       'Pipes, a pump, and a labeled container at the Bolivar recycled-water aquifer storage and recovery trial in South Australia',
   },
@@ -166,7 +166,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Mass timber and CLT',
     problem:
       'Mid-rise buildings usually mean steel and concrete, both carbon-heavy to make. Wood was long limited to small houses by fire codes.',
-    fix: 'Cross-laminated timber and related mass-timber panels are already used in mid-rise buildings in Europe, Canada, and a growing U.S. market — including projects such as Brock Commons in Vancouver and Nordic offices. Carbon stays stored only if the forest is not stripped and the building lasts. Fire, moisture, and honest forest sourcing are the real constraints — not a cartoon of wooden skyscrapers replacing all concrete.',
+    fix: 'Cross-laminated timber and related mass-timber panels are already used in mid-rise buildings in Europe, Canada, and a growing U.S. market: including projects such as Brock Commons in Vancouver and Nordic offices. Carbon stays stored only if the forest is not stripped and the building lasts. Fire, moisture, and honest forest sourcing are the real constraints: not a cartoon of wooden skyscrapers replacing all concrete.',
     imageAlt: 'Mass-timber columns and beams of a mid-rise building under construction in Helsinki',
   },
   'green-steel': {
@@ -174,7 +174,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Scrap furnaces and hydrogen iron',
     problem:
       'Making iron in a coal-fired blast furnace is one of the largest industrial CO₂ sources. The world still needs steel for rails, machines, and frames.',
-    fix: 'Melting scrap in an electric-arc furnace is the proven lower-carbon path where scrap and clean power exist. Hydrogen-based direct reduced iron — SSAB’s HYBRIT plant in Sweden is a serious industrial trial — is beginning, not a global swap. Scrap is limited, hydrogen is scarce, and most tonnes still come from coal.',
+    fix: 'Melting scrap in an electric-arc furnace is the proven lower-carbon path where scrap and clean power exist. Hydrogen-based direct reduced iron: SSAB’s HYBRIT plant in Sweden is a serious industrial trial: is beginning, not a global swap. Scrap is limited, hydrogen is scarce, and most tonnes still come from coal.',
     imageAlt: 'Interior of an electric-arc furnace hall with a circular furnace lid, pipes, and walkways',
   },
   'mangrove-restoration': {
@@ -198,7 +198,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Oyster reefs and living shorelines',
     problem:
       'Dredged oyster beds and bulkheaded shores leave mud and waves with nothing to break them. Water gets murkier; the edge eats itself.',
-    fix: 'Rebuilding oyster reefs and planting living shorelines — marsh, shell, and reef structures — is underway in Chesapeake Bay, parts of the U.S. Gulf, and New York Harbor. Oysters filter locally and the structure can slow erosion. These are estuary projects, still rebuilding from a historic collapse — not a global seafood miracle.',
+    fix: 'Rebuilding oyster reefs and planting living shorelines: marsh, shell, and reef structures: is underway in Chesapeake Bay, parts of the U.S. Gulf, and New York Harbor. Oysters filter locally and the structure can slow erosion. These are estuary projects, still rebuilding from a historic collapse: not a global seafood miracle.',
     imageAlt: 'An intertidal oyster reef of clustered shells breaking the surface beside marsh grass',
   },
   'onshore-wind': {
@@ -230,7 +230,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Reclaimed wastewater / NEWater',
     problem:
       'A dense city can use more freshwater than its reservoirs and imports can reliably supply. Treated used water is then discarded to the sea while taps stay at risk in drought.',
-    fix: 'Singapore’s PUB recycles treated used water through micro- or ultrafiltration (or a membrane bioreactor), reverse osmosis, and ultraviolet disinfection — branded NEWater. PUB says four plants are in operation. Most of the water goes to industry and cooling; in dry periods some is blended into reservoirs and treated again before it becomes tap water. Reuse needs tight treatment and public trust. It does not make a city independent of catching rain or using less.',
+    fix: 'Singapore’s PUB recycles treated used water through micro- or ultrafiltration (or a membrane bioreactor), reverse osmosis, and ultraviolet disinfection: branded NEWater. PUB says four plants are in operation. Most of the water goes to industry and cooling; in dry periods some is blended into reservoirs and treated again before it becomes tap water. Reuse needs tight treatment and public trust. It does not make a city independent of catching rain or using less.',
     imageAlt: 'Blue microfiltration vessels and pipes labeled Microfiltration System at Bedok NEWater Factory',
   },
   'fog-harvesting': {
@@ -254,15 +254,15 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Solar still / passive solar desalination',
     problem:
       'Coastal and island households can have seawater and sunlight but no power for a reverse-osmosis plant. Hauling or boiling water is the daily fallback.',
-    fix: 'A solar still evaporates saline water under a transparent cover and condenses the vapour as freshwater — an old, small-scale method. In 2020 MIT and Shanghai Jiao Tong University demonstrated a multi-stage passive still on an MIT rooftop that reused condensation heat between layers. That work is a research prototype, not a municipal plant. Still output follows sun and area; it does not replace membrane desalination for a city.',
+    fix: 'A solar still evaporates saline water under a transparent cover and condenses the vapour as freshwater: an old, small-scale method. In 2020 MIT and Shanghai Jiao Tong University demonstrated a multi-stage passive still on an MIT rooftop that reused condensation heat between layers. That work is a research prototype, not a municipal plant. Still output follows sun and area; it does not replace membrane desalination for a city.',
     imageAlt: 'A rooftop solar still in Cairo with an insulated duct loop around a dark evaporator box',
   },
   'non-revenue-water-reduction': {
     problemTitle: 'Treated water lost in the pipes before the meter',
     fixTitle: 'Non-revenue water / DMA leak reduction',
     problem:
-      'Utilities produce drinking water that never reaches a billed tap — leaks, theft, and bad meters waste the catchments already under stress.',
-    fix: 'Utilities cut physical and commercial losses with district metered areas, pressure management, and active leak detection — saving water already treated. Distinct from drip irrigation (farm) and from rain gardens (street runoff).',
+      'Utilities produce drinking water that never reaches a billed tap: leaks, theft, and bad meters waste the catchments already under stress.',
+    fix: 'Utilities cut physical and commercial losses with district metered areas, pressure management, and active leak detection: saving water already treated. Distinct from drip irrigation (farm) and from rain gardens (street runoff).',
     imageAlt:
       'A technician listens for a leak on a street water main in Saint-Maurice-de-Beynost with a correlator and a ground microphone',
   },
@@ -271,7 +271,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'UV disinfection',
     problem:
       'Clear-looking water can still carry Cryptosporidium and other microbes that chlorine alone does not always stop.',
-    fix: 'Ultraviolet light inactivates microbes in drinking-water plants without adding a chemical residual — standard under U.S. EPA LT2 guidance when reactors are validated. Not a desalination membrane and not a wetland filter.',
+    fix: 'Ultraviolet light inactivates microbes in drinking-water plants without adding a chemical residual: standard under U.S. EPA LT2 guidance when reactors are validated. Not a desalination membrane and not a wetland filter.',
     imageAlt:
       'Pipe gallery inside the Sooke River Road ultraviolet disinfection plant in British Columbia, a drinking-water works',
   },
@@ -280,7 +280,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Onsite greywater reuse',
     problem:
       'Buildings send lightly used sink and shower water to the sewer while toilets and irrigation still take potable supply.',
-    fix: 'Treated greywater from sinks, showers, and laundry reused on-site for toilets or irrigation at building or district scale — EPA’s onsite non-potable reuse track. Distinct from Singapore NEWater (municipal full reclaim) and from rooftop rainwater harvesting.',
+    fix: 'Treated greywater from sinks, showers, and laundry reused on-site for toilets or irrigation at building or district scale: EPA’s onsite non-potable reuse track. Distinct from Singapore NEWater (municipal full reclaim) and from rooftop rainwater harvesting.',
     imageAlt:
       'Onsite greywater treatment: settling tanks with a grease trap, a planted bed, and storage tanks',
   },
@@ -289,7 +289,7 @@ const en: Record<string, SolutionCopy> = {
     fixTitle: 'Sand dams',
     problem:
       'Seasonal sandy rivers run for days then leave dryland villages walking hours for water while the bed looks empty.',
-    fix: 'A low masonry wall across a seasonal sandy river traps sand; water is stored in the pores of the sand bank — low-evaporation dryland storage already used in Kenya and elsewhere. Distinct from managed aquifer recharge (basins/wells) and from rooftop rainwater harvesting.',
+    fix: 'A low masonry wall across a seasonal sandy river traps sand; water is stored in the pores of the sand bank: low-evaporation dryland storage already used in Kenya and elsewhere. Distinct from managed aquifer recharge (basins/wells) and from rooftop rainwater harvesting.',
     imageAlt:
       'Diagram of a sand dam: a low wall across a sandy riverbed, with water stored in the sand and a hand pump on the bank',
   },
@@ -408,14 +408,14 @@ const ru: Record<string, SolutionCopy> = {
     problemTitle: 'Нехватка пресной воды',
     fixTitle: 'Капельное орошение',
     problem: 'В засушливых регионах большая часть поливной воды уходит на испарение и сток.',
-    fix: 'Капельное орошение подаёт воду к корню — меньше потерь, выше урожай.',
+    fix: 'Капельное орошение подаёт воду к корню: меньше потерь, выше урожай.',
     imageAlt: 'Молодой кукурузный росток в сухой почве, который поливает чёрная капельная лента',
   },
   'constructed-wetlands': {
     problemTitle: 'Загрязнение рек и побережий',
     fixTitle: 'Искусственные водно-болотные угодья',
     problem: 'Питательные вещества и сточные воды в реках кормят цветение водорослей, из-за которого рыбе не хватает кислорода.',
-    fix: 'Искусственные водно-болотные угодья чистят воду как живой фильтр — камыш, микробы и мелкий поток.',
+    fix: 'Искусственные водно-болотные угодья чистят воду как живой фильтр: камыш, микробы и мелкий поток.',
     imageAlt: 'Искусственное болото с камышом, прозрачной мелкой водой и деревянным настилом',
   },
   'sustainable-forestry': {
@@ -444,7 +444,7 @@ const ru: Record<string, SolutionCopy> = {
   'lower-clinker-cement': {
     problemTitle: 'Выбросы цемента',
     fixTitle: 'Цементы с меньшим содержанием клинкера',
-    problem: 'Обычный цемент — один из главных источников CO₂ в мире.',
+    problem: 'Обычный цемент: один из главных источников CO₂ в мире.',
     fix: 'Цементы с меньшим содержанием клинкера (например, смеси с прокалённой глиной и известняком) снижают выбросы в промышленных масштабах.',
     imageAlt: 'Цементный завод с кучами светлого порошка, щебня и песка',
   },
@@ -453,7 +453,7 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Речные барьеры-перехватчики',
     problem:
       'После дождя реки несут в море большую часть ещё узнаваемого пластика. Когда мусор уже в открытой воде, собирать его медленнее и дороже, чем остановить в русле.',
-    fix: 'Плавающие боны и речные перехватчики держат мусор у барьера, чтобы его можно было поднять. Interceptor компании The Ocean Cleanup — одно именное, серийное семейство таких систем; многие города ставят и более простые боны. Барьер — это ловушка в узком месте, а не замена сбора выше по течению и не повод производить меньше пластика.',
+    fix: 'Плавающие боны и речные перехватчики держат мусор у барьера, чтобы его можно было поднять. Interceptor компании The Ocean Cleanup: одно именное, серийное семейство таких систем; многие города ставят и более простые боны. Барьер: это ловушка в узком месте, а не замена сбора выше по течению и не повод производить меньше пластика.',
     imageAlt: 'Плавающий речной бон с жёлтыми буями, удерживающий пластиковые бутылки и мусор',
   },
   'solar-microgrids': {
@@ -468,15 +468,15 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Опреснение обратным осмосом',
     problem:
       'Город может стоять у моря и всё равно остаться без питьевой воды. Засуха, истощённые реки и рост спроса бьют по кранам первыми.',
-    fix: 'Станции обратного осмоса продавливают морскую воду через мембраны и уже поят города в Израиле, Испании, Австралии, странах Залива и Калифорнии. Связка с ветром или солнцем снижает ископаемый счёт за электричество. Энергия всё равно нужна, рассол надо разбавлять, и опреснение — не разрешение тратить пресную воду в глубине суши.',
+    fix: 'Станции обратного осмоса продавливают морскую воду через мембраны и уже поят города в Израиле, Испании, Австралии, странах Залива и Калифорнии. Связка с ветром или солнцем снижает ископаемый счёт за электричество. Энергия всё равно нужна, рассол надо разбавлять, и опреснение: не разрешение тратить пресную воду в глубине суши.',
     imageAlt: 'Станция опреснения морской воды в Перте за оградой, под голубым небом',
   },
   'managed-aquifer-recharge': {
     problemTitle: 'Пустеющие подземные воды',
     fixTitle: 'Управляемое восполнение водоносных горизонтов',
     problem:
-      'Скважины падают, когда города и поля забирают грунтовые воды быстрее, чем их возвращает дождь. Пустой горизонт — это сухие краны, просадка земли и нет запаса в засуху.',
-    fix: 'Управляемое восполнение (MAR) подаёт очищенный ливень, речную или оборотную воду в бассейны и скважины, чтобы подземный склад снова наполнился. Система пополнения подземных вод округа Ориндж, оборотная схема Перта и поля инфильтрации в Аризоне уже работают в городском масштабе. Снимок — испытательный участок Bolivar в Южной Австралии: закачка оборотной воды в горизонт того же класса. Нужны чистый источник, подходящая геология и годы наблюдений — это не новая река.',
+      'Скважины падают, когда города и поля забирают грунтовые воды быстрее, чем их возвращает дождь. Пустой горизонт: это сухие краны, просадка земли и нет запаса в засуху.',
+    fix: 'Управляемое восполнение (MAR) подаёт очищенный ливень, речную или оборотную воду в бассейны и скважины, чтобы подземный склад снова наполнился. Система пополнения подземных вод округа Ориндж, оборотная схема Перта и поля инфильтрации в Аризоне уже работают в городском масштабе. Снимок: испытательный участок Bolivar в Южной Австралии: закачка оборотной воды в горизонт того же класса. Нужны чистый источник, подходящая геология и годы наблюдений: это не новая река.',
     imageAlt:
       'Насос, трубы и подписанный контейнер на опытном участке закачки оборотной воды в водоносный горизонт Bolivar, Южная Австралия',
   },
@@ -547,8 +547,8 @@ const ru: Record<string, SolutionCopy> = {
     problemTitle: 'Горячие голые улицы',
     fixTitle: 'Городской древесный полог',
     problem:
-      'Твёрдые поверхности и отсутствие тени делают кварталы жарче окрестной сельской местности — особенно там, где планировка оставила мало деревьев.',
-    fix: 'Уличные и парковые деревья, которые сажают и считают как долю полога, охлаждают воздух и мостовую на тех кварталах, где они есть. Нью-Йорк и Мельбурн ведут именные программы полога и следят за покрытием. Деревьям нужны вода, место и годы. Слоган «миллион деревьев» без учёта приживаемости — озеленение, а не климатическая инфраструктура.',
+      'Твёрдые поверхности и отсутствие тени делают кварталы жарче окрестной сельской местности: особенно там, где планировка оставила мало деревьев.',
+    fix: 'Уличные и парковые деревья, которые сажают и считают как долю полога, охлаждают воздух и мостовую на тех кварталах, где они есть. Нью-Йорк и Мельбурн ведут именные программы полога и следят за покрытием. Деревьям нужны вода, место и годы. Слоган «миллион деревьев» без учёта приживаемости: озеленение, а не климатическая инфраструктура.',
     imageAlt: 'Жилая улица, полностью закрытая сомкнутым пологом зрелых деревьев',
   },
   'district-heating': {
@@ -556,23 +556,23 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Теплосети на бросовом тепле',
     problem:
       'Отдельные газовые котлы тратят тепло, которое электростанции, мусоросжигатели и промышленность уже выбрасывают. Города всё ещё жгут топливо в каждом подвале.',
-    fix: 'Изолированные трубы несут горячую воду от ТЭЦ, мусоросжигателей, дата-центров и заводов в здания. Копенгаген (в том числе тепло с Amager Bakke), Стокгольм, Париж и крупные китайские системы уже так работают. Копать сеть дорого, а климатический выигрыш зависит от источника: бросовое тепло и чистая энергия помогают; угольная ТЭЦ — всё ещё уголь.',
+    fix: 'Изолированные трубы несут горячую воду от ТЭЦ, мусоросжигателей, дата-центров и заводов в здания. Копенгаген (в том числе тепло с Amager Bakke), Стокгольм, Париж и крупные китайские системы уже так работают. Копать сеть дорого, а климатический выигрыш зависит от источника: бросовое тепло и чистая энергия помогают; угольная ТЭЦ: всё ещё уголь.',
     imageAlt: 'Мусоросжигательный завод Amager Bakke в Копенгагене за водой, пар из трубы',
   },
   'mass-timber': {
     problemTitle: 'Средняя этажность из стали и бетона',
     fixTitle: 'Массивная древесина и CLT',
     problem:
-      'Средняя этажность обычно означает сталь и бетон — оба углеродоёмки в производстве. Дерево долго держали в малых домах противопожарные нормы.',
-    fix: 'Клееные панели CLT и родственная массивная древесина уже стоят в среднеэтажных зданиях Европы, Канады и растущего рынка США — в том числе Brock Commons в Ванкувере и северные офисы. Углерод остаётся в здании, только если лес не сведён и дом служит долго. Огонь, влага и честный источник леса — настоящие ограничения, а не мультфильм о деревянных небоскрёбах вместо всего бетона.',
+      'Средняя этажность обычно означает сталь и бетон: оба углеродоёмки в производстве. Дерево долго держали в малых домах противопожарные нормы.',
+    fix: 'Клееные панели CLT и родственная массивная древесина уже стоят в среднеэтажных зданиях Европы, Канады и растущего рынка США: в том числе Brock Commons в Ванкувере и северные офисы. Углерод остаётся в здании, только если лес не сведён и дом служит долго. Огонь, влага и честный источник леса: настоящие ограничения, а не мультфильм о деревянных небоскрёбах вместо всего бетона.',
     imageAlt: 'Колонны и балки из массивной древесины среднеэтажного здания на стройке в Хельсинки',
   },
   'green-steel': {
     problemTitle: 'Сталь доменной печи',
     fixTitle: 'Лом в дуге и водородное железо',
     problem:
-      'Выплавка железа в угольной доменной печи — один из крупнейших промышленных источников CO₂. Миру по-прежнему нужна сталь для рельсов, машин и каркасов.',
-    fix: 'Плавка лома в электродуговой печи — проверенный менее углеродный путь там, где есть лом и чистая энергия. Прямое восстановление железа водородом — промышленный опыт HYBRIT компании SSAB в Швеции — только начинается, это не мировая замена. Лома мало, водорода мало, и большинство тонн всё ещё из угля.',
+      'Выплавка железа в угольной доменной печи: один из крупнейших промышленных источников CO₂. Миру по-прежнему нужна сталь для рельсов, машин и каркасов.',
+    fix: 'Плавка лома в электродуговой печи: проверенный менее углеродный путь там, где есть лом и чистая энергия. Прямое восстановление железа водородом: промышленный опыт HYBRIT компании SSAB в Швеции: только начинается, это не мировая замена. Лома мало, водорода мало, и большинство тонн всё ещё из угля.',
     imageAlt: 'Цех электродуговой печи: круглая крышка печи, трубы и площадки',
   },
   'mangrove-restoration': {
@@ -588,7 +588,7 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Селективные орудия лова',
     problem:
       'Тралы, яруса и жаберные сети ловят черепах, дельфинов, морских птиц и молодь, которых никто не собирался выгружать. Прилов может опустошить вид, пока целевой запас ещё выглядит нормально.',
-    fix: 'Черепашьи исключающие устройства в креветочных тралах, круговые крючки, отпугивающие птиц стропы и акустические пингеры обязательны или обычны в ряде промыслов и сокращают конкретный прилов там, где есть контроль. Снасть — не морской заповедник. Она не работает при слабых правилах или неверном месте лова.',
+    fix: 'Черепашьи исключающие устройства в креветочных тралах, круговые крючки, отпугивающие птиц стропы и акустические пингеры обязательны или обычны в ряде промыслов и сокращают конкретный прилов там, где есть контроль. Снасть: не морской заповедник. Она не работает при слабых правилах или неверном месте лова.',
     imageAlt: 'Логгерхед уплывает от креветочного трала, пройдя устройство исключения черепах',
   },
   'oyster-reefs': {
@@ -596,15 +596,15 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Устричные рифы и живые берега',
     problem:
       'Вычерпанные устричные банки и вертикальные набережные оставляют ил и волну без преграды. Вода мутнеет; кромка съедает сама себя.',
-    fix: 'Восстановление устричных рифов и посадка живых берегов — марш, ракушка, рифовые блоки — идёт в Чесапикском заливе, части Мексиканского залива США и гавани Нью-Йорка. Устрицы фильтруют локально, структура может замедлить размыв. Это проекты эстуариев, ещё восстанавливающиеся после исторического обвала — не мировое чудо морепродуктов.',
+    fix: 'Восстановление устричных рифов и посадка живых берегов: марш, ракушка, рифовые блоки: идёт в Чесапикском заливе, части Мексиканского залива США и гавани Нью-Йорка. Устрицы фильтруют локально, структура может замедлить размыв. Это проекты эстуариев, ещё восстанавливающиеся после исторического обвала: не мировое чудо морепродуктов.',
     imageAlt: 'Литоральный устричный риф из сросшихся раковин у поверхности рядом с маршевой травой',
   },
   'onshore-wind': {
     problemTitle: 'Ископаемое электричество',
     fixTitle: 'Наземный ветер в сети',
     problem:
-      'Уголь и газ всё ещё задают ритм многим энергосистемам. Электричество — главный рычаг национальных выбросов там, где сеть грязная.',
-    fix: 'Наземный ветер — обычная инфраструктура: Китай, Европа, США, Индия и Бразилия уже держат крупные парки. Нужны линии, резерв или накопители и честный выбор площадки для живой природы и соседей. Это не круглосуточная мощность само по себе и не чистит сеть, которая продолжает строить уголь без улавливания.',
+      'Уголь и газ всё ещё задают ритм многим энергосистемам. Электричество: главный рычаг национальных выбросов там, где сеть грязная.',
+    fix: 'Наземный ветер: обычная инфраструктура: Китай, Европа, США, Индия и Бразилия уже держат крупные парки. Нужны линии, резерв или накопители и честный выбор площадки для живой природы и соседей. Это не круглосуточная мощность само по себе и не чистит сеть, которая продолжает строить уголь без улавливания.',
     imageAlt: 'Ряды белых наземных ветряков по пустынной равнине к дальним горам',
   },
   'heat-pumps': {
@@ -612,14 +612,14 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Тепловые насосы для зданий',
     problem:
       'Отопление и горячая вода всё ещё жгут газ или мазут в большей части Европы, Северной Америки и умеренной Азии. Здания всю зиму выпускают это тепло.',
-    fix: 'Воздушные и грунтовые тепловые насосы — обычный комплект отопления в Норвегии, Швеции и Финляндии и распространяются по ЕС. Холодоустойчивые модели работают ниже нуля. Нужны приличная оболочка здания, сеть, которая выдержит зимнюю нагрузку, и хладагенты как химикаты, а не лозунги.',
+    fix: 'Воздушные и грунтовые тепловые насосы: обычный комплект отопления в Норвегии, Швеции и Финляндии и распространяются по ЕС. Холодоустойчивые модели работают ниже нуля. Нужны приличная оболочка здания, сеть, которая выдержит зимнюю нагрузку, и хладагенты как химикаты, а не лозунги.',
     imageAlt: 'Наружный блок воздушного теплового насоса у кирпичной стены в падающем снегу',
   },
   'rainwater-harvesting': {
     problemTitle: 'Сухие краны у мокрой крыши',
     fixTitle: 'Сбор дождевой воды',
     problem:
-      'Дома и общественные здания сбрасывают дождь в желоба, пока скважины и цистерны не справляются. Во многих городах крыша — ближайший водосбор, но открытые бочки плодят комаров, а первая грязная струя попадает в запас.',
+      'Дома и общественные здания сбрасывают дождь в желоба, пока скважины и цистерны не справляются. Во многих городах крыша: ближайший водосбор, но открытые бочки плодят комаров, а первая грязная струя попадает в запас.',
     fix: 'Санитарные рекомендации ВОЗ рассматривают сбор с крыши и закрытое хранение как бытовой источник, которому всё равно нужны отвод первой струи, закрытый бак и регулярная чистка. Метод обычен в сухих и муссонных климатах. Это не новая река: выход следует за крышей и дождём, а плохо содержимое хранилище может сделать людей больными.',
     imageAlt: 'Закрытая каменная цистерна для дождевой воды на сухой земле в Индии'
   },
@@ -628,7 +628,7 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Оборотные сточные воды / NEWater',
     problem:
       'Плотный город может тратить больше пресной воды, чем надёжно дают водохранилища и импорт. Очищенные стоки тогда сбрасывают в море, а краны в засуху остаются под угрозой.',
-    fix: 'Сингапурское PUB пропускает очищенные стоки через микро- или ультрафильтрацию (или мембранный биореактор), обратный осмос и ультрафиолетовое обеззараживание — это NEWater. PUB сообщает о четырёх работающих заводах. Большая часть воды идёт промышленности и охлаждению; в сухие периоды часть смешивают с сырой водой водохранилищ и снова очищают до водопроводной. Нужны жёсткая очистка и доверие людей. Оборот не делает город независимым от дождя и экономии.',
+    fix: 'Сингапурское PUB пропускает очищенные стоки через микро- или ультрафильтрацию (или мембранный биореактор), обратный осмос и ультрафиолетовое обеззараживание: это NEWater. PUB сообщает о четырёх работающих заводах. Большая часть воды идёт промышленности и охлаждению; в сухие периоды часть смешивают с сырой водой водохранилищ и снова очищают до водопроводной. Нужны жёсткая очистка и доверие людей. Оборот не делает город независимым от дождя и экономии.',
     imageAlt: 'Синие сосуды микрофильтрации и трубы с табличкой Microfiltration System на заводе NEWater в Бедоке'
   },
   'fog-harvesting': {
@@ -644,23 +644,23 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Искусственные плавучие водно-болотные угодья',
     problem:
       'Ливневые бассейны и лагуны сточных вод копят питательные вещества и водоросли. Наземному болоту нужны площадь и изменение паводкового объёма. У многих существующих прудов нет ни того ни другого.',
-    fix: 'Искусственные плавучие угодья — понтонные модули, корни растений которых висят в воде и держат биоплёнки, забирающие питательные вещества и частицы. CSIRO описывает их как недавнюю дооснастку для ливня и стоков и испытывает системы на лагуне в Коус на острове Филлип и на городском канале в Солсбери, Южная Австралия. Это пилоты, а не замена очистным, и растения надо снимать, иначе накопленное вернётся в воду.',
+    fix: 'Искусственные плавучие угодья: понтонные модули, корни растений которых висят в воде и держат биоплёнки, забирающие питательные вещества и частицы. CSIRO описывает их как недавнюю дооснастку для ливня и стоков и испытывает системы на лагуне в Коус на острове Филлип и на городском канале в Солсбери, Южная Австралия. Это пилоты, а не замена очистным, и растения надо снимать, иначе накопленное вернётся в воду.',
     imageAlt: 'Плавучее болото Сенканг в Сингапуре: засаженная полоса посреди водоёма, мост и высотки дальше'
   },
   'solar-still': {
     problemTitle: 'Солёная вода и солнце без сети',
     fixTitle: 'Солнечный дистиллятор / пассивное опреснение',
     problem:
-      'Прибрежные и островные хозяйства могут иметь морскую воду и солнце, но не электричество для станции обратного осмоса. Возить или кипятить воду — ежедневный запасной путь.',
-    fix: 'Солнечный дистиллятор испаряет солёную воду под прозрачной крышкой и конденсирует пар в пресную — старый маломасштабный метод. В 2020 году MIT и Шанхайский университет транспорта показали многоступенчатый пассивный дистиллятор на крыше MIT, который повторно использует тепло конденсации между слоями. Это исследовательский прототип, а не городской завод. Выход следует за солнцем и площадью; он не заменяет мембранное опреснение для города.',
+      'Прибрежные и островные хозяйства могут иметь морскую воду и солнце, но не электричество для станции обратного осмоса. Возить или кипятить воду: ежедневный запасной путь.',
+    fix: 'Солнечный дистиллятор испаряет солёную воду под прозрачной крышкой и конденсирует пар в пресную: старый маломасштабный метод. В 2020 году MIT и Шанхайский университет транспорта показали многоступенчатый пассивный дистиллятор на крыше MIT, который повторно использует тепло конденсации между слоями. Это исследовательский прототип, а не городской завод. Выход следует за солнцем и площадью; он не заменяет мембранное опреснение для города.',
     imageAlt: 'Солнечный дистиллятор на крыше в Каире с изолированным воздуховодом вокруг тёмного испарителя'
   },
   'non-revenue-water-reduction': {
     problemTitle: 'Очищенная вода теряется в трубах до счётчика',
     fixTitle: 'Снижение потерь (NRW) / DMA',
     problem:
-      'Коммунальные службы готовят питьевую воду, которая не доходит до оплачиваемого крана — утечки, хищения и неисправные счётчики тратят воду водосборов, которые и так под нагрузкой.',
-    fix: 'Районы учёта (DMA), давление и поиск утечек — экономия уже подготовленной воды. Не капельный полив и не дождевые сады на улице.',
+      'Коммунальные службы готовят питьевую воду, которая не доходит до оплачиваемого крана: утечки, хищения и неисправные счётчики тратят воду водосборов, которые и так под нагрузкой.',
+    fix: 'Районы учёта (DMA), давление и поиск утечек: экономия уже подготовленной воды. Не капельный полив и не дождевые сады на улице.',
     imageAlt:
       'Техник слушает утечку на уличной водопроводной магистрали в Сен-Морис-де-Бейно коррелятором и наземным микрофоном',
   },
@@ -669,12 +669,12 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'УФ-обеззараживание питьевой воды',
     problem:
       'Прозрачная на вид вода всё ещё может нести Cryptosporidium и другие микробы, которых один хлор не всегда останавливает.',
-    fix: 'Ультрафиолет обеззараживает воду на станции без химического остатка — обычная практика при валидации реакторов (EPA LT2). Не мембрана опреснения и не болото-фильтр.',
+    fix: 'Ультрафиолет обеззараживает воду на станции без химического остатка: обычная практика при валидации реакторов (EPA LT2). Не мембрана опреснения и не болото-фильтр.',
     imageAlt:
       'Трубный зал ультрафиолетовой станции обеззараживания питьевой воды на Sooke River Road в Британской Колумбии',
   },
   'onsite-greywater-reuse': {
-    problemTitle: 'Питьевая вода один раз — и в канализацию из дома',
+    problemTitle: 'Питьевая вода один раз, и в канализацию из дома',
     fixTitle: 'Серая вода на месте (здание)',
     problem:
       'Здания отправляют слегка использованную воду из раковин и душа в канализацию, пока унитазы и полив всё ещё берут питьевую.',
@@ -687,7 +687,7 @@ const ru: Record<string, SolutionCopy> = {
     fixTitle: 'Песчаные плотины (sand dams)',
     problem:
       'Сезонные песчаные реки текут несколько дней, а потом оставляют деревни в сухих землях, которым до воды идти часами, хотя русло выглядит пустым.',
-    fix: 'Низкая кладка поперёк песчаного русла копит песок; вода держится в порах — сухое хранилище уже в Кении и других засушливых местах. Не MAR и не бочка с крыши.',
+    fix: 'Низкая кладка поперёк песчаного русла копит песок; вода держится в порах: сухое хранилище уже в Кении и других засушливых местах. Не MAR и не бочка с крыши.',
     imageAlt:
       'Схема песчаной плотины: низкая стенка поперёк песчаного русла, вода в порах песка и ручной насос на берегу',
   },
@@ -806,7 +806,7 @@ const pl: Record<string, SolutionCopy> = {
     problemTitle: 'Niedobór słodkiej wody',
     fixTitle: 'Nawadnianie kropelkowe',
     problem: 'W suchych regionach większość wody irygacyjnej ucieka przez parowanie i spływ.',
-    fix: 'Nawadnianie kropelkowe dostarcza wodę do korzenia — mniej strat, wyższy plon.',
+    fix: 'Nawadnianie kropelkowe dostarcza wodę do korzenia: mniej strat, wyższy plon.',
     imageAlt: 'Młoda kukurydza w suchej glebie podlewana czarną linią kroplującą',
   },
   'constructed-wetlands': {
@@ -851,7 +851,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Rzeczne bariery przechwytujące',
     problem:
       'Po deszczu rzeki niosą do morza większość jeszcze rozpoznawalnego plastiku. Gdy śmieci są już na otwartej wodzie, zbiórka jest wolniejsza i droższa niż zatrzymanie ich w korycie.',
-    fix: 'Pływające zapory i rzeczne interceptory trzymają śmieci przy barierze, żeby można je było wyciągnąć. Interceptor The Ocean Cleanup to jedna nazwana, produkowana rodzina takich systemów; wiele miast stawia też prostsze zapory. Bariera to łapka w przewężeniu — nie zastępuje zbiórki w górze rzeki ani mniejszej ilości plastiku.',
+    fix: 'Pływające zapory i rzeczne interceptory trzymają śmieci przy barierze, żeby można je było wyciągnąć. Interceptor The Ocean Cleanup to jedna nazwana, produkowana rodzina takich systemów; wiele miast stawia też prostsze zapory. Bariera to łapka w przewężeniu: nie zastępuje zbiórki w górze rzeki ani mniejszej ilości plastiku.',
     imageAlt: 'Pływająca zapora rzeczna z żółtymi bojami, zatrzymująca butelki i śmieci',
   },
   'solar-microgrids': {
@@ -874,7 +874,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Sterowane zasilanie warstw wodonośnych',
     problem:
       'Studnie opadają, gdy miasta i pola biorą wodę gruntową szybciej, niż deszcz ją zwraca. Pusta warstwa to suche krany, osiadanie gruntu i brak zapasu w suszy.',
-    fix: 'Sterowane zasilanie (MAR) podaje oczyszczoną wodę deszczową, rzeczną lub odzyskaną do basenów i studni, żeby podziemny magazyn się napełnił. System uzupełniania wód gruntowych w Orange County, schemat recyklingu w Perth i pola infiltracji w Arizonie już działają w skali miasta. Na zdjęciu — próbny teren Bolivar w Australii Południowej: zatłaczanie wody odzyskanej do warstwy tego samego typu. Potrzeba czystego źródła, właściwej geologii i lat monitoringu — to nie nowa rzeka.',
+    fix: 'Sterowane zasilanie (MAR) podaje oczyszczoną wodę deszczową, rzeczną lub odzyskaną do basenów i studni, żeby podziemny magazyn się napełnił. System uzupełniania wód gruntowych w Orange County, schemat recyklingu w Perth i pola infiltracji w Arizonie już działają w skali miasta. Na zdjęciu: próbny teren Bolivar w Australii Południowej: zatłaczanie wody odzyskanej do warstwy tego samego typu. Potrzeba czystego źródła, właściwej geologii i lat monitoringu: to nie nowa rzeka.',
     imageAlt:
       'Pompa, rury i opisany kontener na terenie próby zatłaczania wody odzyskanej do warstwy wodonośnej Bolivar, Australia Południowa',
   },
@@ -945,7 +945,7 @@ const pl: Record<string, SolutionCopy> = {
     problemTitle: 'Gorące, nagie ulice',
     fixTitle: 'Miejski parasol drzew',
     problem:
-      'Twarde powierzchnie i brak cienia robią dzielnice gorętszymi niż okolica — zwłaszcza tam, gdzie dawne planowanie zostawiło mało drzew.',
+      'Twarde powierzchnie i brak cienia robią dzielnice gorętszymi niż okolica: zwłaszcza tam, gdzie dawne planowanie zostawiło mało drzew.',
     fix: 'Drzewa uliczne i parkowe, sadzone i mierzone jako udział korony, chłodzą powietrze i nawierzchnię na kwartałach, które je mają. Nowy Jork i Melbourne prowadzą nazwane programy korony i śledzą pokrycie. Drzewa potrzebują wody, miejsca i lat. Slogan „milion drzew” bez liczenia przeżycia to zieleń, nie infrastruktura klimatyczna.',
     imageAlt: 'Ulica mieszkaniowa całkowicie zacieniona przez gęstą, splatającą się koronę dojrzałych drzew',
   },
@@ -961,8 +961,8 @@ const pl: Record<string, SolutionCopy> = {
     problemTitle: 'Średnia wysokość ze stali i betonu',
     fixTitle: 'Drewno klejone i CLT',
     problem:
-      'Budynki średniej wysokości zwykle oznaczają stal i beton — oba węglowo ciężkie w produkcji. Drewno długo trzymały w małych domach przepisy pożarowe.',
-    fix: 'Płyty CLT i pokrewne drewno klejone warstwowo już stoją w budynkach średniej wysokości w Europie, Kanadzie i rosnącym rynku USA — w tym Brock Commons w Vancouver i biura nordyckie. Węgiel zostaje w budynku tylko jeśli las nie jest ogołocony, a dom trwa. Ogień, wilgoć i uczciwe źródło drewna to prawdziwe ograniczenia — nie kreskówka drewnianych wieżowców zamiast całego betonu.',
+      'Budynki średniej wysokości zwykle oznaczają stal i beton: oba węglowo ciężkie w produkcji. Drewno długo trzymały w małych domach przepisy pożarowe.',
+    fix: 'Płyty CLT i pokrewne drewno klejone warstwowo już stoją w budynkach średniej wysokości w Europie, Kanadzie i rosnącym rynku USA: w tym Brock Commons w Vancouver i biura nordyckie. Węgiel zostaje w budynku tylko jeśli las nie jest ogołocony, a dom trwa. Ogień, wilgoć i uczciwe źródło drewna to prawdziwe ograniczenia: nie kreskówka drewnianych wieżowców zamiast całego betonu.',
     imageAlt: 'Słupy i belki z drewna klejonego średniowysokiego budynku w budowie w Helsinkach',
   },
   'green-steel': {
@@ -970,7 +970,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Złom w piecu łukowym i żelazo wodorowe',
     problem:
       'Wytop żelaza w wielkim piecu opalanym węglem to jedno z największych przemysłowych źródeł CO₂. Świat nadal potrzebuje stali na szyny, maszyny i ramy.',
-    fix: 'Topienie złomu w piecu łukowym to sprawdzona, mniej węglowa ścieżka tam, gdzie jest złom i czysta energia. Bezpośrednia redukcja żelaza wodorem — przemysłowa próba HYBRIT firmy SSAB w Szwecji — dopiero się zaczyna, to nie globalna zamiana. Złomu jest mało, wodoru mało, a większość ton wciąż pochodzi z węgla.',
+    fix: 'Topienie złomu w piecu łukowym to sprawdzona, mniej węglowa ścieżka tam, gdzie jest złom i czysta energia. Bezpośrednia redukcja żelaza wodorem: przemysłowa próba HYBRIT firmy SSAB w Szwecji: dopiero się zaczyna, to nie globalna zamiana. Złomu jest mało, wodoru mało, a większość ton wciąż pochodzi z węgla.',
     imageAlt: 'Hala pieca łukowego: okrągła pokrywa pieca, rury i pomosty',
   },
   'mangrove-restoration': {
@@ -994,7 +994,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Rafy ostrygowe i żywe brzegi',
     problem:
       'Wybagrowane ławice ostryg i pionowe nabrzeża zostawiają muł i falę bez przeszkody. Woda mętnieje; krawędź zjada samą siebie.',
-    fix: 'Odbudowa raf ostrygowych i sadzenie żywych brzegów — trzcina, muszla, bloki rafowe — trwa w zatoce Chesapeake, części Zatoki Meksykańskiej USA i porcie Nowego Jorku. Ostrygi filtrują lokalnie, a struktura może spowolnić erozję. To projekty estuariów, wciąż odbudowywane po historycznym załamaniu — nie globalny cud owoców morza.',
+    fix: 'Odbudowa raf ostrygowych i sadzenie żywych brzegów: trzcina, muszla, bloki rafowe: trwa w zatoce Chesapeake, części Zatoki Meksykańskiej USA i porcie Nowego Jorku. Ostrygi filtrują lokalnie, a struktura może spowolnić erozję. To projekty estuariów, wciąż odbudowywane po historycznym załamaniu: nie globalny cud owoców morza.',
     imageAlt: 'Międzypływowa rafa ostrygowa ze zlepionych muszli wystająca z wody obok trawy bagiennej',
   },
   'onshore-wind': {
@@ -1026,7 +1026,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Odzyskane ścieki / NEWater',
     problem:
       'Gęste miasto może zużyć więcej słodkiej wody, niż niezawodnie dają zbiorniki i import. Oczyszczone ścieki wtedy idą do morza, a krany w suszy zostają zagrożone.',
-    fix: 'Singapurskie PUB przepuszcza oczyszczone ścieki przez mikro- lub ultrafiltrację (albo bioreaktor membranowy), odwróconą osmozę i dezynfekcję ultrafioletową — to NEWater. PUB podaje, że pracują cztery zakłady. Większość wody idzie do przemysłu i chłodzenia; w suche okresy część miesza się z surową wodą zbiorników i znów oczyszcza do kranu. Potrzeba ścisłego oczyszczania i zaufania ludzi. Odzysk nie uniezależnia miasta od deszczu i oszczędzania.',
+    fix: 'Singapurskie PUB przepuszcza oczyszczone ścieki przez mikro- lub ultrafiltrację (albo bioreaktor membranowy), odwróconą osmozę i dezynfekcję ultrafioletową: to NEWater. PUB podaje, że pracują cztery zakłady. Większość wody idzie do przemysłu i chłodzenia; w suche okresy część miesza się z surową wodą zbiorników i znów oczyszcza do kranu. Potrzeba ścisłego oczyszczania i zaufania ludzi. Odzysk nie uniezależnia miasta od deszczu i oszczędzania.',
     imageAlt: 'Niebieskie naczynia mikrofiltracji i rury z tablicą Microfiltration System w zakładzie NEWater w Bedok'
   },
   'fog-harvesting': {
@@ -1050,15 +1050,15 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Destylator słoneczny / bierne odsalanie',
     problem:
       'Nadbrzeżne i wyspiarskie gospodarstwa mogą mieć wodę morską i słońce, ale nie prąd dla zakładu odwróconej osmozy. Wożenie albo gotowanie wody to codzienny zapasowy plan.',
-    fix: 'Destylator słoneczny odparowuje wodę słoną pod przezroczystą pokrywą i skrapla parę jako słodką — stara, małoskalowa metoda. W 2020 r. MIT i Shanghai Jiao Tong University pokazały wielostopniowy bierny destylator na dachu MIT, który ponownie używał ciepła skraplania między warstwami. To prototyp badawczy, nie zakład miejski. Plon idzie za słońcem i powierzchnią; nie zastępuje odsalania membranowego dla miasta.',
+    fix: 'Destylator słoneczny odparowuje wodę słoną pod przezroczystą pokrywą i skrapla parę jako słodką: stara, małoskalowa metoda. W 2020 r. MIT i Shanghai Jiao Tong University pokazały wielostopniowy bierny destylator na dachu MIT, który ponownie używał ciepła skraplania między warstwami. To prototyp badawczy, nie zakład miejski. Plon idzie za słońcem i powierzchnią; nie zastępuje odsalania membranowego dla miasta.',
     imageAlt: 'Dachowy destylator słoneczny w Kairze z izolowanym przewodem wokół ciemnego parownika'
   },
   'non-revenue-water-reduction': {
     problemTitle: 'Uzdatniona woda ginie w rurach przed wodomierzem',
     fixTitle: 'Redukcja strat wody (NRW) / DMA',
     problem:
-      'Wodociągi produkują wodę pitną, która nigdy nie dociera do opomiarowanego kranu — przecieki, kradzież i złe wodomierze marnują wodę zlewni, które już są pod presją.',
-    fix: 'Strefy DMA, ciśnienie i aktywne wykrywanie przecieków — oszczędność wody już uzdatnionej. To nie nawadnianie kropelkowe ani ogrody deszczowe.',
+      'Wodociągi produkują wodę pitną, która nigdy nie dociera do opomiarowanego kranu: przecieki, kradzież i złe wodomierze marnują wodę zlewni, które już są pod presją.',
+    fix: 'Strefy DMA, ciśnienie i aktywne wykrywanie przecieków: oszczędność wody już uzdatnionej. To nie nawadnianie kropelkowe ani ogrody deszczowe.',
     imageAlt:
       'Technik nasłuchuje przecieku na ulicznej magistrali wodociągowej w Saint-Maurice-de-Beynost korelatorem i mikrofonem gruntowym',
   },
@@ -1067,9 +1067,9 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Dezynfekcja UV (woda pitna)',
     problem:
       'Woda, która wygląda na czystą, wciąż może nieść Cryptosporidium i inne mikroby, których sam chlor nie zawsze zatrzymuje.',
-    fix: 'Światło UV unieszkodliwia drobnoustroje w zakładzie bez trwałego środka chemicznego — standard przy walidacji (EPA LT2). To nie odsalanie ani mokradło.',
+    fix: 'Światło UV unieszkodliwia drobnoustroje w zakładzie bez trwałego środka chemicznego: standard przy walidacji (EPA LT2). To nie odsalanie ani mokradło.',
     imageAlt:
-      'Galeria rur w zakładzie dezynfekcji UV przy Sooke River Road w Kolumbii Brytyjskiej — zakład wody pitnej',
+      'Galeria rur w zakładzie dezynfekcji UV przy Sooke River Road w Kolumbii Brytyjskiej: zakład wody pitnej',
   },
   'onsite-greywater-reuse': {
     problemTitle: 'Woda pitna użyta raz i spuszczona z budynku',
@@ -1085,7 +1085,7 @@ const pl: Record<string, SolutionCopy> = {
     fixTitle: 'Tamy piaskowe (sand dams)',
     problem:
       'Sezonowe piaszczyste rzeki płyną kilka dni, a potem zostawiają suche wsie, które po wodę idą godzinami, choć koryto wygląda na puste.',
-    fix: 'Niski mur w poprzek piaszczystego koryta zatrzymuje piasek; woda siedzi w porach — magazyn dla suchych terenów (Kenya i inne). To nie MAR ani deszczówka z dachu.',
+    fix: 'Niski mur w poprzek piaszczystego koryta zatrzymuje piasek; woda siedzi w porach: magazyn dla suchych terenów (Kenya i inne). To nie MAR ani deszczówka z dachu.',
     imageAlt:
       'Schemat tamy piaskowej: niski mur w poprzek piaszczystego koryta, woda w porach piasku i ręczna pompa na brzegu',
   },
@@ -1204,7 +1204,7 @@ const lv: Record<string, SolutionCopy> = {
     problemTitle: 'Saldūdens trūkums',
     fixTitle: 'Pilienveida apūdeņošana',
     problem: 'Sausajos reģionos lielākā daļa apūdeņošanas ūdens zūd iztvaikošanā un notecē.',
-    fix: 'Pilienveida apūdeņošana nogādā ūdeni pie saknes — mazāk zudumu, lielāka raža.',
+    fix: 'Pilienveida apūdeņošana nogādā ūdeni pie saknes: mazāk zudumu, lielāka raža.',
     imageAlt: 'Jauns kukurūzas augs sausā augsnē, ko laista melna pilienu līnija',
   },
   'constructed-wetlands': {
@@ -1249,7 +1249,7 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Upes uztvērējbarjeras',
     problem:
       'Pēc lietus upes nes uz jūru lielāko daļu vēl atpazīstamas plastmasas. Kad atkritumi jau ir atklātā ūdenī, vākt tos ir lēnāk un dārgāk nekā apturēt gultnē.',
-    fix: 'Peldošie bumi un upes uztvērēji tur atkritumus pie barjeras, lai tos varētu izcelt. The Ocean Cleanup Interceptor ir viena nosaukta, ražota šādu sistēmu saime; daudzas pilsētas liek arī vienkāršākus bumus. Barjera ir ķērājs sašaurinājumā — nevis augšteces vākšanas vai mazākas plastmasas aizstājējs.',
+    fix: 'Peldošie bumi un upes uztvērēji tur atkritumus pie barjeras, lai tos varētu izcelt. The Ocean Cleanup Interceptor ir viena nosaukta, ražota šādu sistēmu saime; daudzas pilsētas liek arī vienkāršākus bumus. Barjera ir ķērājs sašaurinājumā: nevis augšteces vākšanas vai mazākas plastmasas aizstājējs.',
     imageAlt: 'Peldošs upes bums ar dzeltenām bojām, kas aiztur plastmasas pudeles un atkritumus',
   },
   'solar-microgrids': {
@@ -1272,7 +1272,7 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Vadīta ūdensnesēja papildināšana',
     problem:
       'Akas krīt, kad pilsētas un lauki ņem gruntsūdeni ātrāk, nekā lietus to atdod. Tukšs ūdensnesējs nozīmē sausus krānus, grimstošu zemi un nav rezerves sausumā.',
-    fix: 'Vadīta ūdensnesēja papildināšana (MAR) padod attīrītu lietus, upes vai reciklētu ūdeni baseinos un akās, lai pazemes krājums atkal piepildītos. Orange County gruntsūdeņu papildināšanas sistēma, Pērtas reciklēšanas shēma un infiltrācijas lauki Arizonā jau strādā pilsētas mērogā. Attēlā — Bolivar izmēģinājums Dienvidaustrālijā: reciklēta ūdens iesūknēšana ūdensnesējā tā paša veida. Vajag tīru avotu, piemērotu ģeoloģiju un gadu monitoringu — tas nav jauna upe.',
+    fix: 'Vadīta ūdensnesēja papildināšana (MAR) padod attīrītu lietus, upes vai reciklētu ūdeni baseinos un akās, lai pazemes krājums atkal piepildītos. Orange County gruntsūdeņu papildināšanas sistēma, Pērtas reciklēšanas shēma un infiltrācijas lauki Arizonā jau strādā pilsētas mērogā. Attēlā: Bolivar izmēģinājums Dienvidaustrālijā: reciklēta ūdens iesūknēšana ūdensnesējā tā paša veida. Vajag tīru avotu, piemērotu ģeoloģiju un gadu monitoringu: tas nav jauna upe.',
     imageAlt:
       'Sūknis, caurules un parakstīts konteiners Bolivar reciklētā ūdens iesūknēšanas izmēģinājumā Dienvidaustrālijā',
   },
@@ -1343,7 +1343,7 @@ const lv: Record<string, SolutionCopy> = {
     problemTitle: 'Karstas, kailas ielas',
     fixTitle: 'Pilsētas koku vainags',
     problem:
-      'Cietās virsmas un trūkstošā ēna padara kvartālus karstākus par apkārtējiem laukiem — īpaši tur, kur plānošana atstāja maz koku.',
+      'Cietās virsmas un trūkstošā ēna padara kvartālus karstākus par apkārtējiem laukiem: īpaši tur, kur plānošana atstāja maz koku.',
     fix: 'Ielu un parka koki, ko stāda un mēra kā vainaga daļu, dzesē gaisu un segumu tajos kvartālos, kur tie ir. Ņujorka un Melburna vada nosauktas vainaga programmas un seko pārklājumam. Kokiem vajag ūdeni, vietu un gadus. Sauklis «miljons koku» bez izdzīvošanas skaita ir apstādījumi, nevis klimata infrastruktūra.',
     imageAlt: 'Dzīvojamā iela, ko pilnībā noēno blīvs, savijies pieaugušu koku vainags',
   },
@@ -1359,8 +1359,8 @@ const lv: Record<string, SolutionCopy> = {
     problemTitle: 'Vidēja stāvu ēkas no tērauda un betona',
     fixTitle: 'Masīvkoksne un CLT',
     problem:
-      'Vidēja stāvu ēkas parasti nozīmē tēraudu un betonu — abi oglekļa ziņā smagi ražošanā. Koku ilgi turēja mazās mājās ugunsdrošības noteikumi.',
-    fix: 'Krustām līmētie CLT paneļi un radniecīgā masīvkoksne jau stāv vidēja stāvu ēkās Eiropā, Kanādā un augošajā ASV tirgū — tostarp Brock Commons Vankūverā un ziemeļu birojos. Ogleklis paliek ēkā tikai tad, ja mežs nav nolaupīts un ēka kalpo ilgi. Uguns, mitrums un godīgs meža avots ir īstie ierobežojumi — ne karikatūra par koka debesskrāpjiem visu betona vietā.',
+      'Vidēja stāvu ēkas parasti nozīmē tēraudu un betonu: abi oglekļa ziņā smagi ražošanā. Koku ilgi turēja mazās mājās ugunsdrošības noteikumi.',
+    fix: 'Krustām līmētie CLT paneļi un radniecīgā masīvkoksne jau stāv vidēja stāvu ēkās Eiropā, Kanādā un augošajā ASV tirgū: tostarp Brock Commons Vankūverā un ziemeļu birojos. Ogleklis paliek ēkā tikai tad, ja mežs nav nolaupīts un ēka kalpo ilgi. Uguns, mitrums un godīgs meža avots ir īstie ierobežojumi: ne karikatūra par koka debesskrāpjiem visu betona vietā.',
     imageAlt: 'Masīvkoksnes kolonnas un sijas vidēja stāvu ēkai celtniecībā Helsinkos',
   },
   'green-steel': {
@@ -1368,7 +1368,7 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Lūžņi lokā un ūdeņraža dzelzs',
     problem:
       'Dzelzs kausēšana ogļu domnā ir viens no lielākajiem rūpnieciskajiem CO₂ avotiem. Pasaulei joprojām vajag tēraudu sliedēm, mašīnām un rāmjiem.',
-    fix: 'Lūžņu kausēšana elektroloka krāsnī ir pārbaudītais mazāk oglekļa ceļš tur, kur ir lūžņi un tīra enerģija. Tiešā dzelzs redukcija ar ūdeņradi — SSAB HYBRIT rūpnieciskais izmēģinājums Zviedrijā — tikai sākas, tas nav globāla maiņa. Lūžņu ir maz, ūdeņraža maz, un lielākā daļa tonnu joprojām nāk no oglēm.',
+    fix: 'Lūžņu kausēšana elektroloka krāsnī ir pārbaudītais mazāk oglekļa ceļš tur, kur ir lūžņi un tīra enerģija. Tiešā dzelzs redukcija ar ūdeņradi: SSAB HYBRIT rūpnieciskais izmēģinājums Zviedrijā: tikai sākas, tas nav globāla maiņa. Lūžņu ir maz, ūdeņraža maz, un lielākā daļa tonnu joprojām nāk no oglēm.',
     imageAlt: 'Elektroloka krāsns cehs: apaļš krāsns vāks, caurules un laipas',
   },
   'mangrove-restoration': {
@@ -1392,8 +1392,8 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Austeru rifi un dzīvie krasti',
     problem:
       'Izbagarētās austeru sēkļi un vertikālās krastmalas atstāj dūņas un viļņus bez šķēršļa. Ūdens kļūst duļķains; mala ēd pati sevi.',
-    fix: 'Austeru rifu atjaunošana un dzīvo krastu stādīšana — marša, čaula, rifu bloki — notiek Chesapeake līcī, daļā ASV Meksikas līča un Ņujorkas ostā. Austeres filtrē lokāli, un struktūra var palēnināt eroziju. Tie ir estuāru projekti, kas joprojām atjaunojas pēc vēsturiska sabrukuma — ne globāls jūras velšu brīnums.',
-    imageAlt: 'Paisuma–bēguma austeru rifs no saaugušām čaulām pie virsmas blakus marša zālei',
+    fix: 'Austeru rifu atjaunošana un dzīvo krastu stādīšana: marša, čaula, rifu bloki: notiek Chesapeake līcī, daļā ASV Meksikas līča un Ņujorkas ostā. Austeres filtrē lokāli, un struktūra var palēnināt eroziju. Tie ir estuāru projekti, kas joprojām atjaunojas pēc vēsturiska sabrukuma: ne globāls jūras velšu brīnums.',
+    imageAlt: 'Paisuma-bēguma austeru rifs no saaugušām čaulām pie virsmas blakus marša zālei',
   },
   'onshore-wind': {
     problemTitle: 'Fosilā elektrība',
@@ -1424,7 +1424,7 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Reģenerēti notekūdeņi / NEWater',
     problem:
       'Blīva pilsēta var iztērēt vairāk saldūdens, nekā droši dod ūdenskrātuves un imports. Attīrītos notekūdeņus tad laiž jūrā, bet krāni sausumā paliek apdraudēti.',
-    fix: 'Singapūras PUB laiž attīrītos notekūdeņus caur mikro- vai ultrafiltrāciju (vai membrānu bioreaktoru), reverso osmozi un ultravioleto dezinfekciju — tas ir NEWater. PUB saka, ka darbojas četras stacijas. Lielākā daļa ūdens iet rūpniecībai un dzesēšanai; sausos periodos daļu sajauc ar ūdenskrātuvju jēlūdeni un atkal attīra līdz krāna ūdenim. Vajag stingru attīrīšanu un cilvēku uzticību. Atkārtota izmantošana nepadara pilsētu neatkarīgu no lietus un taupīšanas.',
+    fix: 'Singapūras PUB laiž attīrītos notekūdeņus caur mikro- vai ultrafiltrāciju (vai membrānu bioreaktoru), reverso osmozi un ultravioleto dezinfekciju: tas ir NEWater. PUB saka, ka darbojas četras stacijas. Lielākā daļa ūdens iet rūpniecībai un dzesēšanai; sausos periodos daļu sajauc ar ūdenskrātuvju jēlūdeni un atkal attīra līdz krāna ūdenim. Vajag stingru attīrīšanu un cilvēku uzticību. Atkārtota izmantošana nepadara pilsētu neatkarīgu no lietus un taupīšanas.',
     imageAlt: 'Zilas mikrofiltrācijas tvertnes un caurules ar uzrakstu Microfiltration System Bedok NEWater stacijā'
   },
   'fog-harvesting': {
@@ -1448,15 +1448,15 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Saules destilators / pasīvā atsāļošana',
     problem:
       'Piekrastes un salu saimniecībām var būt jūras ūdens un saule, bet nav elektrības reversās osmozes stacijai. Ūdens vešana vai vārīšana ir ikdienas rezerves ceļš.',
-    fix: 'Saules destilators iztvaicē sāļūdeni zem caurspīdīga vāka un kondensē tvaiku par saldūdeni — sena, maza mēroga metode. 2020. gadā MIT un Šanhajas Dzjaotunas universitāte parādīja daudzpakāpju pasīvo destilatoru uz MIT jumta, kas atkārtoti izmanto kondensācijas siltumu starp slāņiem. Tas ir pētniecības prototips, ne pilsētas rūpnīca. Iznākums seko saulei un laukumam; tas neaizstāj membrānu atsāļošanu pilsētai.',
+    fix: 'Saules destilators iztvaicē sāļūdeni zem caurspīdīga vāka un kondensē tvaiku par saldūdeni: sena, maza mēroga metode. 2020. gadā MIT un Šanhajas Dzjaotunas universitāte parādīja daudzpakāpju pasīvo destilatoru uz MIT jumta, kas atkārtoti izmanto kondensācijas siltumu starp slāņiem. Tas ir pētniecības prototips, ne pilsētas rūpnīca. Iznākums seko saulei un laukumam; tas neaizstāj membrānu atsāļošanu pilsētai.',
     imageAlt: 'Jumta saules destilators Kairā ar izolētu gaisa vadu ap tumšu iztvaicētāju'
   },
   'non-revenue-water-reduction': {
     problemTitle: 'Attīrītais ūdens pazūd caurulēs pirms skaitītāja',
     fixTitle: 'Neieņēmumu ūdens / DMA noplūžu samazināšana',
     problem:
-      'Ūdenssaimniecības sagatavo dzeramo ūdeni, kas nekad nesasniedz apmaksātu krānu — noplūdes, zādzības un slikti skaitītāji tērē sateces ūdeni, kas jau ir zem slodzes.',
-    fix: 'DMA zonas, spiediena vadība un noplūžu meklēšana — ietaupa jau sagatavotu ūdeni. Nav pilienveida apūdeņošana un nav lietus dārzi.',
+      'Ūdenssaimniecības sagatavo dzeramo ūdeni, kas nekad nesasniedz apmaksātu krānu: noplūdes, zādzības un slikti skaitītāji tērē sateces ūdeni, kas jau ir zem slodzes.',
+    fix: 'DMA zonas, spiediena vadība un noplūžu meklēšana: ietaupa jau sagatavotu ūdeni. Nav pilienveida apūdeņošana un nav lietus dārzi.',
     imageAlt:
       'Tehniķis klausās noplūdi ielas ūdensvadā Saint-Maurice-de-Beynost ar korelātoru un zemes mikrofonu',
   },
@@ -1465,12 +1465,12 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'UV dezinfekcija (dzeramais ūdens)',
     problem:
       'Ūdens, kas izskatās dzidrs, joprojām var nest Cryptosporidium un citus mikrobus, kurus hlors viens pats ne vienmēr aptur.',
-    fix: 'Ultravioletais starojums inaktivē mikrobus stacijā bez ķīmiska atlikuma — ierasta prakse ar validētiem reaktoriem (EPA LT2). Nav atsāļošana un nav mitrājs.',
+    fix: 'Ultravioletais starojums inaktivē mikrobus stacijā bez ķīmiska atlikuma: ierasta prakse ar validētiem reaktoriem (EPA LT2). Nav atsāļošana un nav mitrājs.',
     imageAlt:
-      'Cauruļu zāle Sooke River Road ultravioletās dezinfekcijas stacijā Britu Kolumbijā — dzeramā ūdens iekārta',
+      'Cauruļu zāle Sooke River Road ultravioletās dezinfekcijas stacijā Britu Kolumbijā: dzeramā ūdens iekārta',
   },
   'onsite-greywater-reuse': {
-    problemTitle: 'Dzeramais ūdens vienreiz — un no ēkas kanalizācijā',
+    problemTitle: 'Dzeramais ūdens vienreiz, un no ēkas kanalizācijā',
     fixTitle: 'Pelēkais ūdens uz vietas (ēka)',
     problem:
       'Ēkas sūta viegli lietotu izlietnes un dušas ūdeni kanalizācijā, kamēr tualetes un laistīšana joprojām ņem dzeramo ūdeni.',
@@ -1483,7 +1483,7 @@ const lv: Record<string, SolutionCopy> = {
     fixTitle: 'Smilšu dambji (sand dams)',
     problem:
       'Sezonālas smilšainas upes tek dažas dienas un tad atstāj sauszemes ciemus, kuriem pēc ūdens jāiet stundām, lai gan gultne izskatās tukša.',
-    fix: 'Zems mūra dambis pāri smilšainai gultnei aiztur smiltis; ūdens glabājas porās — sauszemes krātuve jau Kenijā u.c. Nav MAR un nav jumta lietusūdens.',
+    fix: 'Zems mūra dambis pāri smilšainai gultnei aiztur smiltis; ūdens glabājas porās: sauszemes krātuve jau Kenijā u.c. Nav MAR un nav jumta lietusūdens.',
     imageAlt:
       'Smilšu dambja shēma: zema siena pāri smilšainai gultnei, ūdens smilšu porās un rokas sūknis krastā',
   },

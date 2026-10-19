@@ -1,0 +1,170 @@
+---
+import type { Locale } from '../i18n/config';
+import {
+  CHART_H,
+  CHART_W,
+  chartPath,
+  formatExact,
+  formatMonth,
+  lastIndex,
+  monthAt,
+  pinkChart,
+  pinkSeries,
+  storedDecimals,
+} from '../lib/economyData';
+
+interface Props {
+  title: string;
+  shows: string;
+  unit: string;
+  series: { key: string; label: string }[];
+  locale: Locale;
+  period: 'month' | 'year' | '5y' | 'all';
+  labels: {
+    source: string;
+    latestReading: string;
+    lowest: string;
+    highest: string;
+    month: string;
+    table: string;
+    estimate: string;
+  };
+}
+
+const { title, shows, unit, series, locale, period, labels } = Astro.props;
+
+/** The workbook marks the two newest monthly averages of Japanese liquefied gas as estimates. */
+const ESTIMATED_TAIL: Record<string, number> = { lng_japan: 2 };
+
+const chart = pinkChart(series.map((item) => item.key));
+const full = series.map((item) => ({ ...item, ...pinkSeries(item.key) }));
+const start = chart.start;
+const fmt = (v: number) => formatExact(v, storedDecimals(v), locale);
+
+function extreme(values: (number | null)[], times: string[], pick: (a: number, b: number) => boolean) {
+  let at = -1;
+  values.forEach((v, i) => {
+    if (v != null && (at < 0 || pick(v, values[at] as number))) at = i;
+  });
+  return { value: fmt(values[at] as number), month: formatMonth(times[at], locale) };
+}
+
+const slots = Object.fromEntries(
+  (['month', 'year', '5y', 'all'] as const).map((id) => {
+    const window = chart.windows[id];
+    const nums = window.values.flatMap((row) => row.filter((v): v is number => v != null));
+    const top = Math.max(...nums, 0);
+    return [
+      id,
+      {
+        series: window.values,
+        breaks: window.breaks,
+        top,
+        topText: fmt(top),
+        fromYear: window.times[0]?.slice(0, 4) ?? '',
+        toYear: window.times[window.times.length - 1]?.slice(0, 4) ?? '',
+        ranges: window.values.map((values) => ({
+          low: extreme(values, window.times, (a, b) => a < b).value,
+          lowMonth: extreme(values, window.times, (a, b) => a < b).month,
+          high: extreme(values, window.times, (a, b) => a > b).value,
+          highMonth: extreme(values, window.times, (a, b) => a > b).month,
+        })),
+      },
+    ];
+  }),
+);
+
+const shown = slots[period];
+const lines = shown.series.map((values, index) => chartPath(values, shown.breaks[index], CHART_W, CHART_H, shown.top));
+const to = Math.max(...full.map((item) => lastIndex(item.values)));
+const reading = labels.latestReading.replace('{date}', formatMonth(monthAt(start, to), locale));
+const recent = Array.from({ length: 12 }, (_, k) => to - k).filter((i) => i >= 0);
+const estimated = (key: string, values: (number | null)[], i: number) => {
+  const tail = ESTIMATED_TAIL[key] ?? 0;
+  const last = lastIndex(values);
+  return tail > 0 && i <= last && i > last - tail;
+};
+const payload = { periods: slots };
+---
+
+<figure class="forest-stat economy-chart" data-period={period}>
+  <h3>{title}</h3>
+  <p class="economy-tile-unit">{unit}</p>
+  <div class="economy-chart-plot">
+    <span class="economy-chart-top">{shown.topText}</span>
+    <svg viewBox={`0 0 ${CHART_W} ${CHART_H}`} preserveAspectRatio="none" role="img" aria-label={shows}>
+      <line class="economy-chart-base" x1="0" y1={CHART_H} x2={CHART_W} y2={CHART_H} vector-effect="non-scaling-stroke"></line>
+      {lines.map((d, i) => <path class={`economy-line economy-line-${i + 1}`} d={d} vector-effect="non-scaling-stroke"></path>)}
+    </svg>
+    <span class="economy-chart-zero">{fmt(0)}</span>
+    <p class="economy-chart-years"><span>{shown.fromYear}</span><span>{shown.toYear}</span></p>
+  </div>
+  {
+    full.length > 1 && (
+      <ul class="economy-legend">
+        {full.map((item, i) => (
+          <li>
+            <span class={`economy-swatch economy-line-${i + 1}`} aria-hidden="true"></span>
+            {item.label}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <figcaption>{shows}</figcaption>
+  <p class="economy-tile-date">{reading}</p>
+  <table class="economy-chart-range">
+    <thead>
+      <tr>
+        <td></td>
+        <th scope="col">{labels.lowest}</th>
+        <th scope="col">{labels.highest}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        shown.ranges.map((range, index) => (
+          <tr>
+            <th scope="row">{full[index].label}</th>
+            <td>
+              {range.low} <span class="economy-cell-date">{range.lowMonth}</span>
+            </td>
+            <td>
+              {range.high} <span class="economy-cell-date">{range.highMonth}</span>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+  <details class="economy-chart-table">
+    <summary>{labels.table}</summary>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">{labels.month}</th>
+          {full.map((item) => <th scope="col">{item.label}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          recent.map((i) => (
+            <tr>
+              <th scope="row">{formatMonth(monthAt(start, i), locale)}</th>
+              {full.map((item) => {
+                const v = item.values[i];
+                return (
+                  <td>
+                    {v == null ? '' : fmt(v)}
+                    {v != null && estimated(item.key, item.values, i) && <span class="economy-estimate">{labels.estimate}</span>}
+                  </td>
+                );
+              })}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </details>
+  <script type="application/json" class="economy-chart-data" is:inline set:html={JSON.stringify(payload)}></script>
+</figure>

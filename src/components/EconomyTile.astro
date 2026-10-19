@@ -1,0 +1,37 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  raw: number;
+  value: string;
+  unitShort: string;
+  unitLong: string;
+  changeText: string;
+  dir: 'up' | 'down' | 'flat';
+  path: string;
+  tail: string;
+  highlight: boolean;
+  sparkLabel: string;
+  periodText: string;
+  payload: unknown;
+}
+
+const { id, title, raw, value, unitShort, unitLong, changeText, dir, path, tail, highlight, sparkLabel, periodText, payload } = Astro.props;
+---
+
+<article class="economy-tile" data-series={id}>
+  <h3>{title}</h3>
+  <p class="economy-tile-value">
+    <data value={raw}>{value}</data> <span class="economy-tile-unit" title={unitLong}>{unitShort}</span>
+  </p>
+  <p class="economy-tile-change" data-dir={dir}>{changeText}</p>
+  <svg class="economy-spark" viewBox="0 0 120 32" preserveAspectRatio="none" role="img" aria-label={sparkLabel}>
+    <path d={path} vector-effect="non-scaling-stroke"></path>
+    {highlight && tail && <path class="economy-spark-tail" d={tail} vector-effect="non-scaling-stroke"></path>}
+  </svg>
+  <p class="economy-tile-date">{periodText}</p>
+  <script type="application/json" class="economy-tile-data" is:inline set:html={JSON.stringify(payload)}></script>
+</article>
+<script>
+  import '../scripts/economyPeriods';
+</script>

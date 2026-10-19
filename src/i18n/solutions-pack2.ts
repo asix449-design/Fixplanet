@@ -12,7 +12,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Green roofs',
       problem:
         'Conventional roofs dump rain into sewers and bake in the sun. In a dense city that adds runoff and heat when there is no soil left at street level.',
-      fix: 'A planted roof holds growing medium and vegetation over a waterproof membrane. GSA lists more than 80 federal buildings with green roofs — about 2.2 million square feet — including the U.S. Coast Guard Headquarters in Washington, DC (557,000 square feet). GSA says a planted roof can last two or three times longer than a bare membrane, cut heat-island load, and add insulation. It still needs a sound structure, drainage, and upkeep. A sedum mat is not a park, and it does not replace street trees or sewers.',
+      fix: 'A planted roof holds growing medium and vegetation over a waterproof membrane. GSA lists more than 80 federal buildings with green roofs: about 2.2 million square feet: including the U.S. Coast Guard Headquarters in Washington, DC (557,000 square feet). GSA says a planted roof can last two or three times longer than a bare membrane, cut heat-island load, and add insulation. It still needs a sound structure, drainage, and upkeep. A sedum mat is not a park, and it does not replace street trees or sewers.',
       imageAlt: 'Aerial view of a planted roof with circular paths on a white downtown building among Chicago high-rises',
     },
     'rain-gardens-bioswales': {
@@ -20,14 +20,14 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Rain gardens and bioswales',
       problem:
         'When lots and roads are sealed, rain hits hard surfaces and races into pipes, carrying oil, sediment, and nutrients. Sewers overflow; streams spike.',
-      fix: 'EPA treats rain gardens and bioswales as types of green infrastructure. A rain garden is a shallow planted basin that collects roof and street runoff and filters it through soil, sand, or gravel. A bioswale is a linear vegetated channel that slows and treats water as it moves — useful along roads. They are not levees. Large storms still need overflow to a drain. They clog or drown plants if they are not designed and maintained.',
+      fix: 'EPA treats rain gardens and bioswales as types of green infrastructure. A rain garden is a shallow planted basin that collects roof and street runoff and filters it through soil, sand, or gravel. A bioswale is a linear vegetated channel that slows and treats water as it moves: useful along roads. They are not levees. Large storms still need overflow to a drain. They clog or drown plants if they are not designed and maintained.',
       imageAlt: 'A planted street bioswale and curb extension with cutouts catching runoff beside parked cars',
     },
     'cool-pavements': {
       problemTitle: "Streets that store the day's heat",
       fixTitle: 'Cool pavements',
       problem:
-        'Dark asphalt soaks up sun and then heats the air and the stormwater that runs off it. EPA cites an Arizona pilot in which conventional paving reached 152°F at midday while cooler surfaces stayed 10–16°F lower.',
+        'Dark asphalt soaks up sun and then heats the air and the stormwater that runs off it. EPA cites an Arizona pilot in which conventional paving reached 152°F at midday while cooler surfaces stayed 10-16°F lower.',
       fix: 'EPA uses “cool pavement” for materials that reflect more sun, hold water so it can evaporate, or are otherwise modified to stay cooler than ordinary asphalt. Existing concrete and asphalt mixes, coatings, and grass paving all count. There is no official U.S. labeling program, and the kit is less mature than cool roofs. A lighter street is not a substitute for shade trees, and it is distinct from permeable pavement laid mainly for drainage.',
       imageAlt: 'Highway workers installing tie bars in a freshly placed light-colored concrete pavement slab',
     },
@@ -36,7 +36,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'District cooling',
       problem:
         'In hot, dense districts each building often keeps its own chiller plant. That wastes space, energy, and maintenance on equipment that sits idle much of the day.',
-      fix: 'District cooling makes chilled water in a central plant and pipes it to many buildings. SP Group, Singapore’s largest operator, runs Marina Bay — which it calls the world’s largest underground district cooling network — with no supply disruptions since 2006 and 28 buildings served (a planned expansion to 50 by 2030). SP also cites industrial plants and Tengah, a public-housing township with rooftop modular chillers. The climate win depends on the power and the water source. A chilled-water pipe is not a reason to keep leaking envelopes.',
+      fix: 'District cooling makes chilled water in a central plant and pipes it to many buildings. SP Group, Singapore’s largest operator, runs Marina Bay: which it calls the world’s largest underground district cooling network: with no supply disruptions since 2006 and 28 buildings served (a planned expansion to 50 by 2030). SP also cites industrial plants and Tengah, a public-housing township with rooftop modular chillers. The climate win depends on the power and the water source. A chilled-water pipe is not a reason to keep leaking envelopes.',
       imageAlt: 'KLCC District Cooling building in Kuala Lumpur at night, with the Petronas Towers behind a white plant hall',
     },
     'building-renovation-epbd': {
@@ -51,7 +51,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       problemTitle: 'Virgin stone while demolition rubble is dumped',
       fixTitle: 'Recycled aggregate',
       problem:
-        'Construction and demolition debris — soil, stone, concrete, brick, ceramics — is often Ireland’s largest waste stream. Virgin quarry rock still fills roads while that rubble goes to landfill.',
+        'Construction and demolition debris: soil, stone, concrete, brick, ceramics: is often Ireland’s largest waste stream. Virgin quarry rock still fills roads while that rubble goes to landfill.',
       fix: 'Ireland’s EPA published national end-of-waste criteria for recycled aggregates in 2023. Clean crushed material can leave the waste regime and be sold as a product for general fill, roads, railway ballast, and other non-structural uses. A public register lists authorised producers. The criteria do not turn every mixed demolition pile into structural concrete. Contaminants stay waste. Recycling rubble is not a license to demolish faster.',
       imageAlt: 'Open-air stockpiles of crushed recycled aggregate beside a materials yard',
     },
@@ -60,7 +60,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Geopolymer and alkali-activated binders',
       problem:
         'Ordinary Portland cement needs a kiln that calcines limestone. That chemistry releases CO₂ even before the fuel is burned. Demand for concrete is still measured in gigatonnes.',
-      fix: 'A 2024 perspective in the Journal of the American Ceramic Society treats geopolymers and alkali-activated materials as binders made from aluminosilicate precursors — metakaolin, fly ash, slag — reacted with alkaline (or, less often, acid) activators instead of Portland clinker. Civil engineers often use the names loosely. The authors say life-cycle results are often better than Portland cement but not always, especially when sodium silicate and heat curing dominate. Precursors such as coal fly ash and blast-furnace slag are becoming scarcer. Codes, leaching tests, and worker safety for strong alkalis still limit everyday pours. This is not a drop-in bag of ordinary cement.',
+      fix: 'A 2024 perspective in the Journal of the American Ceramic Society treats geopolymers and alkali-activated materials as binders made from aluminosilicate precursors: metakaolin, fly ash, slag: reacted with alkaline (or, less often, acid) activators instead of Portland clinker. Civil engineers often use the names loosely. The authors say life-cycle results are often better than Portland cement but not always, especially when sodium silicate and heat curing dominate. Precursors such as coal fly ash and blast-furnace slag are becoming scarcer. Codes, leaching tests, and worker safety for strong alkalis still limit everyday pours. This is not a drop-in bag of ordinary cement.',
       imageAlt: 'Two dishes of blast-furnace slag: a pale ground powder and coarser granulated slag beside a ruler',
     },
     'recycled-aluminium': {
@@ -68,7 +68,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Recycled and secondary aluminium',
       problem:
         'Primary aluminium starts from bauxite and a power-hungry smelter. Scrap that could be remelted is still landfilled or exported as mixed waste.',
-      fix: 'The International Aluminium Institute says aluminium can be recycled repeatedly without losing its properties, and that about 75% of all aluminium ever produced is still in use. IAI figures for 2019 put primary energy at 186 GJ per tonne versus 8.3 GJ for recycled metal — about 95% less. For 2022 it reports 15.1 tonnes of CO₂e per tonne of primary metal versus 0.52 for recycled metal (gate-to-gate). Those are industry numbers. Recycling still needs collection, sorting, and a furnace. It does not make extra cans a climate strategy.',
+      fix: 'The International Aluminium Institute says aluminium can be recycled repeatedly without losing its properties, and that about 75% of all aluminium ever produced is still in use. IAI figures for 2019 put primary energy at 186 GJ per tonne versus 8.3 GJ for recycled metal: about 95% less. For 2022 it reports 15.1 tonnes of CO₂e per tonne of primary metal versus 0.52 for recycled metal (gate-to-gate). Those are industry numbers. Recycling still needs collection, sorting, and a furnace. It does not make extra cans a climate strategy.',
       imageAlt: 'A red collection bin filled with used beverage cans and tins gathered for metal recycling',
     },
     'hempcrete-bio-insulation': {
@@ -76,7 +76,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Hemp fibre insulation and hempcrete',
       problem:
         'Much building insulation is mineral wool or plastic foam. Those products work, but they start from mined or fossil feedstocks and do little with agricultural fibre.',
-      fix: 'ISO 24260:2022 specifies factory-made hemp-fibre mats and boards for building insulation — products that are more than 50% hemp fibre by mass, with or without other natural fibre and a polymer balance. Hempcrete (hemp-lime) is a related but different bio-composite: hurd plus a lime binder, used as non-structural infill, not as a substitute for a concrete frame. The ISO document is a product specification, not a carbon score. Hemp insulation still needs dry detailing and a structure that can carry the wall.',
+      fix: 'ISO 24260:2022 specifies factory-made hemp-fibre mats and boards for building insulation: products that are more than 50% hemp fibre by mass, with or without other natural fibre and a polymer balance. Hempcrete (hemp-lime) is a related but different bio-composite: hurd plus a lime binder, used as non-structural infill, not as a substitute for a concrete frame. The ISO document is a product specification, not a carbon score. Hemp insulation still needs dry detailing and a structure that can carry the wall.',
       imageAlt: 'Close-up of a hempcrete wall: pale lime binder packed around short hemp hurd chips',
     },
     'cement-ccus': {
@@ -84,7 +84,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Cement-plant CO₂ capture (CCUS)',
       problem:
         'Heidelberg Materials notes that about two thirds of a cement kiln’s direct CO₂ comes from calcining limestone. That gas is chemistry, not just the burner. Lower-clinker blends help; they do not zero the stack.',
-      fix: 'Carbon capture, transport, and storage is the company’s stated path for the rest. At Brevik, Norway, Heidelberg commissioned what it calls the world’s first industrial-scale cement CCS plant in June 2025. DREAM, at Rezzato–Mazzano in Italy, is a planned hybrid capture project (oxyfuel plus amine) selected for the EU Innovation Fund; a final investment decision still depends on Italian CCS rules, incentives, and the Ravenna storage pipeline. Capture is not an excuse to pour more concrete. DREAM is a funded project, not a running Italian plant.',
+      fix: 'Carbon capture, transport, and storage is the company’s stated path for the rest. At Brevik, Norway, Heidelberg commissioned what it calls the world’s first industrial-scale cement CCS plant in June 2025. DREAM, at Rezzato-Mazzano in Italy, is a planned hybrid capture project (oxyfuel plus amine) selected for the EU Innovation Fund; a final investment decision still depends on Italian CCS rules, incentives, and the Ravenna storage pipeline. Capture is not an excuse to pour more concrete. DREAM is a funded project, not a running Italian plant.',
       imageAlt: 'Insulated duct and towers at Heidelberg Materials’ Brevik cement carbon-capture plant under a grey sky',
     },
     'seagrass-restoration': {
@@ -108,14 +108,14 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Ghost-gear recovery',
       problem:
         'Abandoned, lost, or discarded fishing gear (ALDFG) keeps trapping animals and snagging habitat after the vessel has gone. It is a gear problem, not only a bottle problem.',
-      fix: 'The Global Ghost Gear Initiative is a cross-sector alliance — industry, governments, NGOs, researchers — that maps, reports, and funds retrieval and prevention. Its North American Net Collection Initiative is a transboundary project across the western United States, Mexico, and Canada. A cleaned beach is not a fishery reform. Prevention (marking, retrieval rules, port reception) matters as much as diving for nets.',
+      fix: 'The Global Ghost Gear Initiative is a cross-sector alliance: industry, governments, NGOs, researchers: that maps, reports, and funds retrieval and prevention. Its North American Net Collection Initiative is a transboundary project across the western United States, Mexico, and Canada. A cleaned beach is not a fishery reform. Prevention (marking, retrieval rules, port reception) matters as much as diving for nets.',
       imageAlt: 'An EPA diver in Puget Sound lifting a mass of abandoned fishing net from the seabed',
     },
     'kelp-farming': {
       problemTitle: 'Lost kelp forests and unmanaged harvest',
       fixTitle: 'Kelp forests and seaweed culture',
       problem:
-        'Kelp forests — UNEP calls them the most extensive marine vegetated ecosystem — are stressed by warming, heatwaves, poor water quality, and unregulated harvest. Coastal fisheries and shorelines lose the structure.',
+        'Kelp forests: UNEP calls them the most extensive marine vegetated ecosystem: are stressed by warming, heatwaves, poor water quality, and unregulated harvest. Coastal fisheries and shorelines lose the structure.',
       fix: 'UNEP’s 2023 synthesis Into the Blue reviews science and management: protect and restore wild forests, and treat harvest as an activity that needs stock assessment and adaptive rules. Seaweed and kelp farming is a related, growing use of the same algae, not a substitute for a wild forest. Farms need siting, biosecurity, and native species. A rope of kelp is not an offset for a cleared reef.',
       imageAlt: 'Satellite view of rectangular seaweed-farm plots in coastal water among South Korean islands',
     },
@@ -124,7 +124,7 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Salt-marsh restoration',
       problem:
         'Atlantic salt marshes buffer storms, filter water, and hold peat. They were ditched for farming and mosquitoes and are now overtopped as seas rise. The saltmarsh sparrow nests nowhere else and is losing ground.',
-      fix: 'The U.S. Fish and Wildlife Service’s Salt Marsh Keystone Initiative (announced 2024) coordinates restoration along the Atlantic Coast, building on Hurricane Sandy work: runnels to drain perched water, undoing old ditches, and realigning marshes. FWS notes that healthy marsh peat can store carbon much faster than terrestrial forests — “up to 50 times” is the Service’s phrasing. A runnel is local hydrology, not a seawall, and it will not outrun sea-level rise if the upland is walled off.',
+      fix: 'The U.S. Fish and Wildlife Service’s Salt Marsh Keystone Initiative (announced 2024) coordinates restoration along the Atlantic Coast, building on Hurricane Sandy work: runnels to drain perched water, undoing old ditches, and realigning marshes. FWS notes that healthy marsh peat can store carbon much faster than terrestrial forests: “up to 50 times” is the Service’s phrasing. A runnel is local hydrology, not a seawall, and it will not outrun sea-level rise if the upland is walled off.',
       imageAlt: 'An excavator working a tidal channel through Spartina marsh at Seatuck National Wildlife Refuge',
     },
     'utility-scale-solar': {
@@ -148,15 +148,15 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Grid-scale batteries',
       problem:
         'Wind and solar output does not follow the evening peak. Without storage or flexible plants, grids curtail midday power and fire gas after sunset.',
-      fix: 'IEA’s grid-scale storage work treats utility batteries as short-duration flexibility: they shift energy across hours, supply fast balancing, and can ease some network upgrades. IEA’s Electricity 2026 analysis reports 63 GW of utility-scale battery additions in 2024 and 124 GW installed, with project costs falling about 40% that year to around USD 150/kWh — IEA’s figures. Batteries are not seasonal storage. Duration, minerals, and interconnection still bind. A container of cells is not a pumped-storage lake.',
+      fix: 'IEA’s grid-scale storage work treats utility batteries as short-duration flexibility: they shift energy across hours, supply fast balancing, and can ease some network upgrades. IEA’s Electricity 2026 analysis reports 63 GW of utility-scale battery additions in 2024 and 124 GW installed, with project costs falling about 40% that year to around USD 150/kWh: IEA’s figures. Batteries are not seasonal storage. Duration, minerals, and interconnection still bind. A container of cells is not a pumped-storage lake.',
       imageAlt: 'Overhead view of the Tehachapi Energy Storage Project: white battery halls beside a California substation',
     },
     geothermal: {
       problemTitle: 'Heat underfoot used in only a few countries',
       fixTitle: 'Geothermal heat and power',
       problem:
-        'Conventional geothermal is still a niche. IEA says it meets less than 1% of global energy demand and is concentrated in places with volcanic or fault-hosted heat — the United States, Iceland, Indonesia, Türkiye, Kenya, and Italy.',
-      fix: 'IEA’s 2024 Future of Geothermal Energy report and news note that horizontal drilling and fracturing adapted from oil and gas could open deeper heat in many more countries. IEA says next-generation geothermal could meet 15% of global electricity-demand growth to 2050 if costs keep falling — up to 800 GW in that framing — and that conventional plants already supply firm power and district heat where the resource is easy. Next-generation projects remain early and capital-heavy. A steam field is not a license to ignore induced seismicity or water use.',
+        'Conventional geothermal is still a niche. IEA says it meets less than 1% of global energy demand and is concentrated in places with volcanic or fault-hosted heat: the United States, Iceland, Indonesia, Türkiye, Kenya, and Italy.',
+      fix: 'IEA’s 2024 Future of Geothermal Energy report and news note that horizontal drilling and fracturing adapted from oil and gas could open deeper heat in many more countries. IEA says next-generation geothermal could meet 15% of global electricity-demand growth to 2050 if costs keep falling: up to 800 GW in that framing, and that conventional plants already supply firm power and district heat where the resource is easy. Next-generation projects remain early and capital-heavy. A steam field is not a license to ignore induced seismicity or water use.',
       imageAlt: 'Nesjavellir geothermal power plant in Iceland: steam pipes and halls on a mossy lava field by a lake',
     },
     'pumped-hydro': {
@@ -164,77 +164,77 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       fixTitle: 'Pumped-storage hydropower',
       problem:
         'Batteries cover hours. Grids with a lot of wind and solar also need longer, cheaper bulk storage. Few technologies move that much energy.',
-      fix: 'Pumped storage lifts water to an upper reservoir and runs it down through turbines when power is scarce. IEA’s Hydropower Special Market Report calls the flexibility of reservoirs and pumped plants unmatched, and forecasts pumped storage as 30% of net hydropower additions through 2030. IEA estimated existing conventional reservoirs can store about 1,500 TWh in one cycle — far more energy than today’s pumped fleet or batteries. New plants need two basins, years of permitting, and a market that pays for storage, not only kilowatt-hours. Pumping is not a new river.',
+      fix: 'Pumped storage lifts water to an upper reservoir and runs it down through turbines when power is scarce. IEA’s Hydropower Special Market Report calls the flexibility of reservoirs and pumped plants unmatched, and forecasts pumped storage as 30% of net hydropower additions through 2030. IEA estimated existing conventional reservoirs can store about 1,500 TWh in one cycle: far more energy than today’s pumped fleet or batteries. New plants need two basins, years of permitting, and a market that pays for storage, not only kilowatt-hours. Pumping is not a new river.',
       imageAlt: 'The tree-lined upper reservoir of Bath County Pumped Storage Station held in a mountain bowl',
     },
     hydropower: {
       problemTitle: 'Fossil baseload where rivers already run turbines',
       fixTitle: 'Conventional hydropower',
       problem: 'Fossil baseload where rivers already run turbines',
-      fix: 'Dam and run-of-river plants that generate electricity today — the largest renewable power source worldwide — distinct from pumped-storage, which stores power rather than harvesting river flow.',
+      fix: 'Dam and run-of-river plants that generate electricity today: the largest renewable power source worldwide: distinct from pumped-storage, which stores power rather than harvesting river flow.',
       imageAlt: 'Three Gorges Dam on the Yangtze: the concrete dam wall and spillway with the reservoir upstream',
     },
     'nuclear-fission': {
       problemTitle: 'Firm power still burned from coal and gas',
       fixTitle: 'Nuclear fission (operating fleet)',
       problem: 'Firm power still burned from coal and gas',
-      fix: 'Light-water and other commercial reactors already on the grid — decades of operating experience. This card is the running fleet, not a lab SMR pitch (SMR belongs on Innovations if at all).',
+      fix: 'Light-water and other commercial reactors already on the grid: decades of operating experience. This card is the running fleet, not a lab SMR pitch (SMR belongs on Innovations if at all).',
       imageAlt: 'Cattenom nuclear power plant: four operating reactor units and cooling towers beside the Moselle',
     },
     'concentrating-solar-power': {
       problemTitle: 'Daytime sun with no cheap evening storage on site',
       fixTitle: 'Concentrating solar-thermal power',
       problem: 'Daytime sun with no cheap evening storage on site',
-      fix: 'Mirrors concentrate sunlight onto a receiver to make high-temperature heat for turbines — often with molten-salt storage. Already running in Spain, US Southwest, MENA, China, South Africa. Not the same as Utility-scale solar PV.',
+      fix: 'Mirrors concentrate sunlight onto a receiver to make high-temperature heat for turbines: often with molten-salt storage. Already running in Spain, US Southwest, MENA, China, South Africa. Not the same as Utility-scale solar PV.',
       imageAlt: 'Gemasolar thermosolar plant in Spain: a central tower surrounded by a circular field of heliostat mirrors',
     },
     'farm-biogas-power': {
       problemTitle: 'Manure methane and diesel gensets on livestock farms',
       fixTitle: 'Farm biogas to power',
       problem: 'Manure methane and diesel gensets on livestock farms',
-      fix: 'Anaerobic digesters on farms capture manure biogas for engines or CHP — electricity and heat already in use (US EPA AgSTAR and peers). Distinct from Solutions→Waste Anaerobic digesters (municipal food waste) and from landfill-gas cards.',
+      fix: 'Anaerobic digesters on farms capture manure biogas for engines or CHP: electricity and heat already in use (US EPA AgSTAR and peers). Distinct from Solutions→Waste Anaerobic digesters (municipal food waste) and from landfill-gas cards.',
       imageAlt: 'Two white biogas domes of the plant at Great Thorns Farm near Swaffham, seen across a grass field',
     },
     'reclaimed-asphalt-pavement': {
       problemTitle: 'Virgin aggregate and bitumen for every resurfacing',
       fixTitle: 'Reclaimed asphalt pavement (RAP)',
       problem: 'Virgin aggregate and bitumen for every resurfacing',
-      fix: 'Milled road asphalt crushed and fed back into new hot-mix — reusing both stone and binder. FHWA treats RAP as ordinary pavement practice when mix design and QC are done right; not the same as recycled concrete aggregate on this shelf.',
+      fix: 'Milled road asphalt crushed and fed back into new hot-mix: reusing both stone and binder. FHWA treats RAP as ordinary pavement practice when mix design and QC are done right; not the same as recycled concrete aggregate on this shelf.',
       imageAlt: 'Red Wirtgen W 1500 cold-milling machine parked on a Berlin street',
     },
     'glass-cullet': {
       problemTitle: 'Furnaces melting virgin batch while bottles go to landfill',
       fixTitle: 'Container glass cullet',
       problem: 'Furnaces melting virgin batch while bottles go to landfill',
-      fix: 'Sorted crushed container glass remelted into new bottles and jars — closed-loop packaging material, not fibreglass scrap. Distinct from Waste PET bottle-to-bottle and from Ocean Cleanup plastics cards.',
+      fix: 'Sorted crushed container glass remelted into new bottles and jars: closed-loop packaging material, not fibreglass scrap. Distinct from Waste PET bottle-to-bottle and from Ocean Cleanup plastics cards.',
       imageAlt: 'Mixed-colour crushed container-glass cullet on a white surface beside a euro coin',
     },
     'mineral-wool-insulation': {
       problemTitle: 'Heat leaking through thin walls and roofs',
       fixTitle: 'Mineral wool insulation',
       problem: 'Heat leaking through thin walls and roofs',
-      fix: 'Stone wool and glass wool batts/boards already standard in European renovation and new-build envelopes — cuts heating demand for decades. Distinct from Hemp fibre insulation and hempcrete on this shelf (bio-aggregate / hemp mat, not mineral melt fibre).',
+      fix: 'Stone wool and glass wool batts/boards already standard in European renovation and new-build envelopes: cuts heating demand for decades. Distinct from Hemp fibre insulation and hempcrete on this shelf (bio-aggregate / hemp mat, not mineral melt fibre).',
       imageAlt: 'Mineral wool insulation boards and rolls in white, yellow, brown, and green',
     },
     'recycled-copper': {
       problemTitle: 'Primary copper mining for grids and motors that could take scrap',
       fixTitle: 'Recycled copper',
       problem: 'Primary copper mining for grids and motors that could take scrap',
-      fix: 'Post-consumer and fabrication scrap remelted into new copper with far less energy than ore — already a large share of supply. Distinct from Recycled and secondary aluminium and from steel scrap on the hydrogen-iron card.',
+      fix: 'Post-consumer and fabrication scrap remelted into new copper with far less energy than ore: already a large share of supply. Distinct from Recycled and secondary aluminium and from steel scrap on the hydrogen-iron card.',
       imageAlt: 'Bundle of stripped copper wire scrap on bare ground in Santa Clara del Cobre',
     },
     'marine-protected-areas': {
       problemTitle: 'Seas mapped for use, not for places where fishing and mining stop',
       fixTitle: 'Marine protected areas',
       problem: 'Seas mapped for use, not for places where fishing and mining stop',
-      fix: 'Designated ocean zones with clear no-take or limited-use rules, tracked in global MPA databases — buying time for fish, habitats, and coastal people when enforcement is real. Not the same as planting coral or seagrass on this shelf.',
+      fix: 'Designated ocean zones with clear no-take or limited-use rules, tracked in global MPA databases: buying time for fish, habitats, and coastal people when enforcement is real. Not the same as planting coral or seagrass on this shelf.',
       imageAlt: 'Mooring-buoy team of the Florida Keys National Marine Sanctuary working from a small boat',
     },
     'ballast-water-management': {
       problemTitle: 'Invasive species hitchhiking in ship ballast tanks',
       fixTitle: 'Ballast water management',
       problem: 'Invasive species hitchhiking in ship ballast tanks',
-      fix: 'Treat or exchange ballast under the IMO Ballast Water Management Convention so tanks do not seed foreign coasts — filters, UV, and chemical systems on the ship, not a mangrove or seagrass project. Distinct from ghost-gear recovery on this shelf.',
+      fix: 'Treat or exchange ballast under the IMO Ballast Water Management Convention so tanks do not seed foreign coasts: filters, UV, and chemical systems on the ship, not a mangrove or seagrass project. Distinct from ghost-gear recovery on this shelf.',
       imageAlt: 'Tugboat Boss discharging ballast water in Brofjorden, Sweden, before departure',
     },
     'shore-power': {
@@ -248,14 +248,14 @@ export const pack2: Record<Locale, Record<string, SolutionCopy>> = {
       problemTitle: 'Ship strikes on whales in busy coastal lanes',
       fixTitle: 'Vessel speed reduction for whales',
       problem: 'Ship strikes on whales in busy coastal lanes',
-      fix: 'Seasonal slow-downs and recommended routes cut lethal strikes — NOAA sanctuaries and fisheries programs document the practice for North Atlantic right whales and other species. Distinct from selective fishing gear (bycatch in nets) on this shelf.',
+      fix: 'Seasonal slow-downs and recommended routes cut lethal strikes: NOAA sanctuaries and fisheries programs document the practice for North Atlantic right whales and other species. Distinct from selective fishing gear (bycatch in nets) on this shelf.',
       imageAlt: 'North Atlantic right whale at the surface in Stellwagen Bank National Marine Sanctuary, NOAA',
     },
     'integrated-multi-trophic-aquaculture': {
       problemTitle: 'Single-species cages without partners that eat the waste',
       fixTitle: 'Integrated multi-trophic aquaculture',
       problem: 'Single-species cages without partners that eat the waste',
-      fix: 'Farm fish with extractive partners — shellfish and seaweed that take up uneaten feed and nutrients — so one lease yields protein and cleans water. FAO documents IMTA practice; distinct from live Kelp forests and seaweed culture alone and from Waste black-soldier-fly processing.',
+      fix: 'Farm fish with extractive partners: shellfish and seaweed that take up uneaten feed and nutrients: so one lease yields protein and cleans water. FAO documents IMTA practice; distinct from live Kelp forests and seaweed culture alone and from Waste black-soldier-fly processing.',
       imageAlt: 'Blue mussels grown at an integrated multi-trophic aquaculture site in the Bay of Fundy, Canada',
     },
   },

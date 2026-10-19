@@ -147,7 +147,7 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
       'A World Bank review of road pricing reports that in London the number of cars on the streets fell by about a third in the first year, and delays caused by congestion fell by 30%. During the Stockholm trial, traffic into and out of the city centre fell by 20% and public transport use rose by 7%; in the referendum that followed, 53% of voters backed the charge. Singapore\'s area licence scheme of 1975 cut traffic in the charged zone by 45%.',
     ],
     read: [
-      'Results depend on what the money pays for and on the choices drivers have. In London\'s 2007–08 financial year, £112 million of the £137 million net revenue from the charge went to better bus services. Early gains can fade: average speeds in central London rose from 14.6 to 17.6 km/h after the charge began, then fell back to about 15 km/h by 2006. The review estimates that without the charge they would have been around 11 km/h.',
+      'Results depend on what the money pays for and on the choices drivers have. In London\'s 2007-08 financial year, £112 million of the £137 million net revenue from the charge went to better bus services. Early gains can fade: average speeds in central London rose from 14.6 to 17.6 km/h after the charge began, then fell back to about 15 km/h by 2006. The review estimates that without the charge they would have been around 11 km/h.',
     ],
     limits: [
       'It needs clear exemptions, working enforcement and visible reinvestment in public transport. A charge with no alternatives only pushes the problem to the edge of the zone.',
@@ -207,12 +207,12 @@ export const detail: Record<CitiesEncyclopediaSlug, CitiesDetailCopy> = {
     hook: grid['electric-buses'].fix,
     imageAlt: grid['electric-buses'].imageAlt,
     caption:
-      'Electric bus sales by region, 2020–2025. China still sells the most, but its share of the column shrinks as other regions grow. Segments from the bottom are China, Europe, the United States, India, Latin America and the rest of the world. In 2025 they are 40.1, 12.5, 1.8, 4.3, 3.1 and 6.1 thousand buses (67.9 thousand in all). China’s share of the column is 86.3 percent in 2020 and 59.1 percent in 2025. The upright scale is thousands of buses.',
+      'Electric bus sales by region, 2020-2025. China still sells the most, but its share of the column shrinks as other regions grow. Segments from the bottom are China, Europe, the United States, India, Latin America and the rest of the world. In 2025 they are 40.1, 12.5, 1.8, 4.3, 3.1 and 6.1 thousand buses (67.9 thousand in all). China’s share of the column is 86.3 percent in 2020 and 59.1 percent in 2025. The upright scale is thousands of buses.',
     credit:
       'Chart redrawn from IEA (2026), Electric bus sales by region, 2020-2025. The colour key on this page is an adaptation of that chart.',
     legend: ['China', 'Europe', 'United States', 'India', 'Latin America', 'Rest of world'],
     what: [
-      'Electric buses run on batteries charged from the grid, largely at bus depots. According to the IEA\'s Global EV Outlook 2026, battery-electric models made up 98% of the electric buses sold worldwide in 2025. The average range of battery bus models has reached 360 km, enough for city buses, which typically travel 150–300 km a day.',
+      'Electric buses run on batteries charged from the grid, largely at bus depots. According to the IEA\'s Global EV Outlook 2026, battery-electric models made up 98% of the electric buses sold worldwide in 2025. The average range of battery bus models has reached 360 km, enough for city buses, which typically travel 150-300 km a day.',
     ],
     why: [
       'City buses run the same crowded routes all day, so replacing diesel engines removes exhaust exactly where many people wait and walk. Sales reached almost 70,000 in 2025, up 12% on 2024. China accounted for about 60% of them, down from nearly 100% in 2018, and almost all new city buses sold there are electric. Europe sold more than 12,000, and in the European Union battery-electric models took over 55% of new city-bus sales. Santiago in Chile now has the largest electric bus fleet of any city outside China.',

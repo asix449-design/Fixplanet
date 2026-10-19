@@ -62,14 +62,14 @@ function img(
 export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
   {
     slug: 'drip-irrigation',
-    image: img('drip-irrigation.jpg', 'Fix Planet generated documentary still — drip line on a young crop, not a named farm', 'Site asset', ''),
+    image: img('drip-irrigation.jpg', 'Fix Planet generated documentary still: drip line on a young crop, not a named farm', 'Site asset', ''),
     sources: [
       cite(
-        'USGS Water Science School — Irrigation: drip or microirrigation',
+        'USGS Water Science School: Irrigation: drip or microirrigation',
         'https://www.usgs.gov/water-science-school/science/irrigation-drip-or-microirrigation',
       ),
       cite(
-        'FAO — Irrigation water management: drip irrigation',
+        'FAO: Irrigation water management: drip irrigation',
         'https://www.fao.org/4/s8684e/s8684e07.htm',
       ),
     ],
@@ -78,14 +78,14 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'constructed-wetlands',
     image: img(
       'constructed-wetlands.jpg',
-      'Fix Planet generated documentary still — reed wetland and boardwalk, not a named project',
+      'Fix Planet generated documentary still: reed wetland and boardwalk, not a named project',
       'Site asset',
       '',
     ),
     sources: [
-      cite('U.S. EPA — Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands'),
+      cite('U.S. EPA: Constructed wetlands', 'https://www.epa.gov/wetlands/constructed-wetlands'),
       cite(
-        'U.S. EPA — Constructed Wetlands Handbook (PDF)',
+        'U.S. EPA: Constructed Wetlands Handbook (PDF)',
         'https://www.epa.gov/sites/default/files/2015-10/documents/constructed-wetlands-handbook.pdf',
       ),
     ],
@@ -95,21 +95,21 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     // Shelf note: leave the Water Corporation (WA) desalination primary. No resolving IEA desalination hub to swap in.
     image: img(
       'membrane-desalination.jpg',
-      'Calistemon — Perth Seawater Desalination Plant, September 2020',
+      'Calistemon: Perth Seawater Desalination Plant, September 2020',
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Perth_Seawater_Desalination_Plant,_September_2020_02.jpg',
     ),
     sources: [
       cite(
-        'Water Corporation (WA) — Desalination',
+        'Water Corporation (WA): Desalination',
         'https://www.watercorporation.com.au/Our-water/Desalination',
       ),
       cite(
-        'Water Corporation (WA) — Perth Seawater Desalination Plant',
+        'Water Corporation (WA): Perth Seawater Desalination Plant',
         'https://www.watercorporation.com.au/Our-water/Desalination/Perth-Seawater-Desalination-Plant',
       ),
       cite(
-        'USGS Water Science School — Desalination',
+        'USGS Water Science School: Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
       ),
     ],
@@ -118,26 +118,26 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'managed-aquifer-recharge',
     image: img(
       'managed-aquifer-recharge.jpg',
-      'Bob Schuster, CSIRO — Bolivar recycled-water aquifer storage and recovery trial, 2002',
+      'Bob Schuster, CSIRO: Bolivar recycled-water aquifer storage and recovery trial, 2002',
       'CC BY 3.0',
       'https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_3711_Bolivar_Recycled_Water_Aquifer_Storage_Recovery_Trial_site_on_the_Adelaide_Plains_SA_2002.jpg',
     ),
     sources: [
-      cite('Orange County Water District — GWRS', 'https://www.ocwd.com/gwrs/'),
+      cite('Orange County Water District: GWRS', 'https://www.ocwd.com/gwrs/'),
       cite(
-        'Water Corporation (WA) — Groundwater replenishment',
+        'Water Corporation (WA): Groundwater replenishment',
         'https://www.watercorporation.com.au/Our-water/Groundwater/Groundwater-replenishment',
       ),
       cite(
-        'Central Arizona Project — Recharge',
+        'Central Arizona Project: Recharge',
         'https://www.cap-az.com/water/water-supply/future-water-supplies/recharge/',
       ),
       cite(
-        'NGWA — Orange County Water District case study',
+        'NGWA: Orange County Water District case study',
         'https://www.ngwa.org/what-is-groundwater/groundwater-issues/managed-aquifer-recharge/case-studies/orange-county-water-district-california',
       ),
       cite(
-        'USGS Circular 1405 — Artificial recharge / MAR',
+        'USGS Circular 1405: Artificial recharge / MAR',
         'https://pubs.usgs.gov/circ/1405/',
       ),
     ],
@@ -146,21 +146,21 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'rainwater-harvesting',
     image: img(
       'rainwater-harvesting.jpg',
-      'Spiritualfade — rainwater harvesting tank, India',
+      'Spiritualfade: rainwater harvesting tank, India',
       'Public domain',
       'https://commons.wikimedia.org/wiki/File:Rainwater_harvesting_tank,_India.jpg',
     ),
     sources: [
       cite(
-        'WHO — Rainwater collection, storage and management advice sheet (PDF)',
+        'WHO: Rainwater collection, storage and management advice sheet (PDF)',
         'https://www.who.int/docs/default-source/wash-documents/sanitary-inspection-packages/rainwater-collection-storage-management-advice-sheet.pdf',
       ),
       cite(
-        'WHO — Guidelines for drinking-water quality',
+        'WHO: Guidelines for drinking-water quality',
         'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines',
       ),
       cite(
-        'WHO — Guidelines for drinking-water quality, 4th edition',
+        'WHO: Guidelines for drinking-water quality, 4th edition',
         'https://www.who.int/publications/i/item/9789241548151',
       ),
     ],
@@ -169,17 +169,17 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'newater-reclaimed-wastewater',
     image: img(
       'newater-reclaimed-wastewater.jpg',
-      'Z22 — microfiltration system at Bedok NEWater Factory',
+      'Z22: microfiltration system at Bedok NEWater Factory',
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Microfiltration_system_at_Bedok_NEWater_Factory.jpg',
     ),
     sources: [
       cite(
-        'PUB Singapore — NEWater',
+        'PUB Singapore: NEWater',
         'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory/NEWater',
       ),
       cite(
-        'PUB Singapore — Our Water Story',
+        'PUB Singapore: Our Water Story',
         'https://www.pub.gov.sg/Public/WaterLoop/OurWaterStory',
       ),
     ],
@@ -189,18 +189,18 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     // Shelf note: FogQuest primary stays. The organisation says its project pages are no longer kept current (soft/stale). Do not swap the URL.
     image: img(
       'fog-harvesting.jpg',
-      'Pontificia Universidad Católica de Chile — fog collector at Alto Patache',
+      'Pontificia Universidad Católica de Chile: fog collector at Alto Patache',
       'CC BY-SA 2.0',
       'https://commons.wikimedia.org/wiki/File:Atrapanieblas_en_Alto_Patache.jpg',
     ),
     sources: [
-      cite('FogQuest — current projects', 'https://fogquest.org/projects/current-projects/'),
+      cite('FogQuest: current projects', 'https://fogquest.org/projects/current-projects/'),
       cite(
-        'Klemm et al., AMBIO 2012 — Fog as a fresh-water resource (PDF)',
+        'Klemm et al., AMBIO 2012: Fog as a fresh-water resource (PDF)',
         'https://www.fogquest.org/wp-content/uploads/2012/11/AMBIO-2012-Fog-Review-10.1007_s13280-012-0247-8.pdf',
       ),
       cite(
-        'Frontiers in Water — fog harvesting review (2021)',
+        'Frontiers in Water: fog harvesting review (2021)',
         'https://www.frontiersin.org/journals/water/articles/10.3389/frwa.2021.675269/full',
       ),
     ],
@@ -209,17 +209,17 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'constructed-floating-wetlands',
     image: img(
       'constructed-floating-wetlands.jpg',
-      'Nigos — Sengkang Floating Wetland from Anchorvale Bridge',
+      'Nigos: Sengkang Floating Wetland from Anchorvale Bridge',
       'CC BY-SA 4.0',
       'https://commons.wikimedia.org/wiki/File:Sengkang_Floating_Wetland_from_Anchorvale_Bridge.jpg',
     ),
     sources: [
       cite(
-        'CSIRO — Constructed floating wetlands',
+        'CSIRO: Constructed floating wetlands',
         'https://www.csiro.au/en/research/natural-environment/water/constructed-floating-wetlands',
       ),
       cite(
-        'WetlandInfo (Queensland) — floating wetlands design summary',
+        'WetlandInfo (Queensland): floating wetlands design summary',
         'https://www.wetlandinfo.detsi.qld.gov.au/wetlands/management/treatment-systems/for-agriculture/treatment-sys-nav-page/floating-wetlands/design-summary.html',
       ),
     ],
@@ -228,17 +228,17 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'solar-still',
     image: img(
       'solar-still.jpg',
-      'Z. S. Abdel-Rehim, A. Lashine — rooftop solar still, Cairo',
+      'Z. S. Abdel-Rehim, A. Lashine: rooftop solar still, Cairo',
       'CC BY 4.0',
       'https://commons.wikimedia.org/wiki/File:Photograph-picture-of-the-solar-still-combined-with-air-conditioning-system-in-side-view-Cairo-Egypt.jpg',
     ),
     sources: [
       cite(
-        'MIT News — passive solar-powered water desalination (2020)',
+        'MIT News: passive solar-powered water desalination (2020)',
         'https://news.mit.edu/2020/passive-solar-powered-water-desalination-0207',
       ),
       cite(
-        'USGS Water Science School — Desalination',
+        'USGS Water Science School: Desalination',
         'https://www.usgs.gov/special-topics/water-science-school/science/desalination',
       ),
     ],
@@ -247,18 +247,18 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'non-revenue-water-reduction',
     image: img(
       'non-revenue-water-reduction.jpg',
-      'Benoît Prieur — acoustic leak search with a Hydreka MicroCorr, Saint-Maurice-de-Beynost, April 2019',
+      'Benoît Prieur: acoustic leak search with a Hydreka MicroCorr, Saint-Maurice-de-Beynost, April 2019',
       'CC0',
       'https://commons.wikimedia.org/wiki/File:Recherche_d%27une_fuite_d%27eau_%C3%A0_l%27aide_d%27un_Hydreka_MicroCorr,_Mont%C3%A9e_de_la_Paroche_%C3%A0_Saint-Maurice-de-Beynost_(avril_2019).jpg',
     ),
     sources: [
       cite(
-        'World Bank — Reducing water losses',
+        'World Bank: Reducing water losses',
         'https://www.worldbank.org/en/topic/water/brief/reducing-water-losses',
       ),
-      cite('IWA — Water Loss', 'https://iwa-network.org/projects/water-loss/'),
+      cite('IWA: Water Loss', 'https://iwa-network.org/projects/water-loss/'),
       cite(
-        'World Bank — The challenge of reducing non-revenue water',
+        'World Bank: The challenge of reducing non-revenue water',
         'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/297191468176683069/the-challenge-of-reducing-non-revenue-water-nrw-in-developing-countries-how-the-private-sector-can-help-a-look-at-performance-based-service-contracting',
       ),
     ],
@@ -267,17 +267,17 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'uv-disinfection',
     image: img(
       'uv-disinfection.jpg',
-      'Kiwibirdman — Sooke River Road ultraviolet disinfection plant, British Columbia',
+      'Kiwibirdman: Sooke River Road ultraviolet disinfection plant, British Columbia',
       'CC BY 3.0',
       'https://commons.wikimedia.org/wiki/File:%5ENew%5E_Sooke_River_Road_UV_Disinfection_Plant_-_panoramio.jpg',
     ),
     sources: [
       cite(
-        'U.S. EPA — Ultraviolet Disinfection Guidance Manual (PDF)',
+        'U.S. EPA: Ultraviolet Disinfection Guidance Manual (PDF)',
         'https://www.epa.gov/system/files/documents/2022-10/ultraviolet-disinfection-guidance-manual-2006.pdf',
       ),
       cite(
-        'U.S. EPA — Long Term 2 Enhanced Surface Water Treatment Rule documents',
+        'U.S. EPA: Long Term 2 Enhanced Surface Water Treatment Rule documents',
         'https://www.epa.gov/dwreginfo/long-term-2-enhanced-surface-water-treatment-rule-documents',
       ),
     ],
@@ -286,21 +286,21 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'onsite-greywater-reuse',
     image: img(
       'onsite-greywater-reuse.jpg',
-      'SuSanA Secretariat — onsite greywater treatment: settling tanks, a planted bed, and storage tanks',
+      'SuSanA Secretariat: onsite greywater treatment: settling tanks, a planted bed, and storage tanks',
       'CC BY 2.0',
       'https://commons.wikimedia.org/wiki/File:Greywater_treatement_steps_(3110373058).jpg',
     ),
     sources: [
       cite(
-        'U.S. EPA — Onsite Non-Potable Water Reuse Resources',
+        'U.S. EPA: Onsite Non-Potable Water Reuse Resources',
         'https://www.epa.gov/waterreuse/onsite-non-potable-water-reuse-resources',
       ),
       cite(
-        'WHO — Guidelines for the safe use of wastewater, excreta and greywater',
+        'WHO: Guidelines for the safe use of wastewater, excreta and greywater',
         'https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta',
       ),
       cite(
-        'U.S. EPA — Basic information about water reuse',
+        'U.S. EPA: Basic information about water reuse',
         'https://www.epa.gov/waterreuse/basic-information-about-water-reuse',
       ),
     ],
@@ -309,21 +309,21 @@ export const waterEncyclopediaMeta: WaterEncyclopediaMeta[] = [
     slug: 'sand-dams',
     image: img(
       'sand-dams.jpg',
-      'Iangrahamneal — diagram of a sand dam: a low wall, stored sand, and a hand pump',
+      'Iangrahamneal: diagram of a sand dam: a low wall, stored sand, and a hand pump',
       'CC BY-SA 3.0',
       'https://commons.wikimedia.org/wiki/File:Sand_dam_illustration_3.jpg',
     ),
     sources: [
       cite(
-        'Practical Action — Sand dams',
+        'Practical Action: Sand dams',
         'https://www.practicalaction.org/knowledge-centre/resources/sand-dams/',
       ),
       cite(
-        'IWMI GRIPP — Community sand dams in Kenya',
+        'IWMI GRIPP: Community sand dams in Kenya',
         'https://gripp.iwmi.org/natural-infrastructure/water-storage/ensuring-resilience-through-community-sand-dams-in-kenya/',
       ),
       cite(
-        'Maddrell & Neal — Sand Dams: a Practical Guide (PDF)',
+        'Maddrell & Neal: Sand Dams: a Practical Guide (PDF)',
         'https://www.samsamwater.com/library/Maddrell_and_Neal_2012_Sand_Dams_a_Practical_Guide_LR.pdf',
       ),
     ],

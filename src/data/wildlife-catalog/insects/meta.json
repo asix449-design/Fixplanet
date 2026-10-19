@@ -28,7 +28,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Dryococelus australis",
+          "label": "IUCN Red List: Dryococelus australis",
           "url": "https://www.iucnredlist.org/species/6852/21426226"
         }
       ],
@@ -65,7 +65,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Ornithoptera alexandrae",
+          "label": "IUCN Red List: Ornithoptera alexandrae",
           "url": "https://www.iucnredlist.org/species/15513/88565197"
         }
       ],
@@ -102,15 +102,15 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Danaus plexippus plexippus",
+          "label": "IUCN Red List: Danaus plexippus plexippus",
           "url": "https://www.iucnredlist.org/species/194052138/246096271"
         },
         {
-          "label": "IUCN Red List — Danaus plexippus",
+          "label": "IUCN Red List: Danaus plexippus",
           "url": "https://www.iucnredlist.org/species/159971/219149911"
         },
         {
-          "label": "U.S. Fish and Wildlife Service — monarch",
+          "label": "U.S. Fish and Wildlife Service: monarch",
           "url": "https://www.fws.gov/species/monarch-danaus-plexippus"
         }
       ],
@@ -147,7 +147,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Bombus franklini",
+          "label": "IUCN Red List: Bombus franklini",
           "url": "https://www.iucnredlist.org/species/135295/4070259"
         }
       ],
@@ -179,7 +179,7 @@
       },
       "primarySources": [
         {
-          "label": "U.S. Fish and Wildlife Service — American burying beetle",
+          "label": "U.S. Fish and Wildlife Service: American burying beetle",
           "url": "https://www.fws.gov/species/american-burying-beetle-nicrophorus-americanus"
         }
       ],
@@ -211,7 +211,7 @@
       },
       "primarySources": [
         {
-          "label": "U.S. Fish and Wildlife Service — Hine’s emerald",
+          "label": "U.S. Fish and Wildlife Service: Hine’s emerald",
           "url": "https://www.fws.gov/species/hines-emerald-somatochlora-hineana"
         }
       ],
@@ -243,7 +243,7 @@
       },
       "primarySources": [
         {
-          "label": "U.S. Fish and Wildlife Service — Rusty patched bumble bee",
+          "label": "U.S. Fish and Wildlife Service: Rusty patched bumble bee",
           "url": "https://www.fws.gov/species/rusty-patched-bumble-bee-bombus-affinis"
         }
       ],
@@ -280,19 +280,19 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Lucanus cervus (Europe / EU27)",
+          "label": "IUCN Red List: Lucanus cervus (Europe / EU27)",
           "url": "https://www.iucnredlist.org/species/239951016/213072777"
         },
         {
-          "label": "DOI — IUCN assessment record",
+          "label": "DOI: IUCN assessment record",
           "url": "https://doi.org/10.2305/iucn.uk.2025-2.rlts.t239951016a213072777.en"
         },
         {
-          "label": "EUNIS — Lucanus cervus",
+          "label": "EUNIS: Lucanus cervus",
           "url": "https://eunis.eea.europa.eu/species/221"
         },
         {
-          "label": "JNCC — UK Habitats Directive Art.17 S1083 (2019)",
+          "label": "JNCC: UK Habitats Directive Art.17 S1083 (2019)",
           "url": "https://jncc.gov.uk/jncc-assets/Art17/S1083-UK-Habitats-Directive-Art17-2019.pdf"
         }
       ],
@@ -329,11 +329,11 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Osmoderma eremita",
+          "label": "IUCN Red List: Osmoderma eremita",
           "url": "https://www.iucnredlist.org/species/15632/283806710"
         },
         {
-          "label": "DOI — IUCN assessment record",
+          "label": "DOI: IUCN assessment record",
           "url": "https://doi.org/10.2305/iucn.uk.2025-2.rlts.t15632a283806710.en"
         }
       ],
@@ -365,19 +365,19 @@
       },
       "primarySources": [
         {
-          "label": "U.S. Fish and Wildlife Service — Salt Creek tiger beetle",
+          "label": "U.S. Fish and Wildlife Service: Salt Creek tiger beetle",
           "url": "https://www.fws.gov/species/salt-creek-tiger-beetle-cicindela-nevadica-lincolniana"
         },
         {
-          "label": "Nebraska Game and Parks — Salt Creek tiger beetle",
+          "label": "Nebraska Game and Parks: Salt Creek tiger beetle",
           "url": "https://outdoornebraska.gov/learn/nebraska-wildlife/nebraska-animals/insects/salt-creek-tiger-beetle/"
         },
         {
-          "label": "USFWS — Salt Creek tiger beetle recovery plan (PDF)",
+          "label": "USFWS: Salt Creek tiger beetle recovery plan (PDF)",
           "url": "https://ecos.fws.gov/docs/recovery_plan/SCTB%20Signed%20Final%20Recovery%20Plan.pdf"
         },
         {
-          "label": "UNL — 30-year visual population estimates (open PDF)",
+          "label": "UNL: 30-year visual population estimates (open PDF)",
           "url": "https://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=2041&context=entomologyfacpub"
         }
       ],
@@ -409,19 +409,19 @@
       },
       "primarySources": [
         {
-          "label": "NZTCS — Deinacrida heteracantha",
+          "label": "NZTCS: Deinacrida heteracantha",
           "url": "https://nztcs.org.nz/assessments/19134"
         },
         {
-          "label": "DOC — Wetapunga",
+          "label": "DOC: Wetapunga",
           "url": "https://www.doc.govt.nz/nature/native-animals/invertebrates/weta/wetapunga/"
         },
         {
-          "label": "DOC — Best practice translocation of giant wētā (PDF)",
+          "label": "DOC: Best practice translocation of giant wētā (PDF)",
           "url": "https://www.doc.govt.nz/globalassets/documents/getting-involved/translocation/translocation-best-practice-giant-weta.pdf"
         },
         {
-          "label": "Auckland Zoo — Bay of Islands return (2020)",
+          "label": "Auckland Zoo: Bay of Islands return (2020)",
           "url": "https://www.aucklandzoo.co.nz/news/were-returning-wetapunga-to-the-bay-of-islands-after-a-180-year-absence"
         }
       ],

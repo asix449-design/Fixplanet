@@ -69,11 +69,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     coverage: 'schematic',
     nearest: false,
     sourceShort: 'Bergström 2020',
-    sourceOrg: 'Bergström et al., Science, 2020 — Late Pleistocene expansion',
+    sourceOrg: 'Bergström et al., Science, 2020: Late Pleistocene expansion',
     sourceUrl: 'https://www.science.org/doi/10.1126/science.aay5012',
     license: 'Site schematic on NASA Blue Marble (public domain)',
     licenseUrl: 'https://earthobservatory.nasa.gov/images/7373/december-blue-marble',
-    vintage: '~70,000–50,000 years ago',
+    vintage: '~70,000-50,000 years ago',
   },
   {
     id: 'sahul',
@@ -82,11 +82,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     coverage: 'schematic',
     nearest: false,
     sourceShort: 'Clarkson 2017',
-    sourceOrg: 'Clarkson et al., Nature, 2017 — Madjedbebe',
+    sourceOrg: 'Clarkson et al., Nature, 2017: Madjedbebe',
     sourceUrl: 'https://www.nature.com/articles/nature22968',
     license: 'Site schematic on NASA Blue Marble (public domain)',
     licenseUrl: 'https://earthobservatory.nasa.gov/images/7373/december-blue-marble',
-    vintage: '~65,000–50,000 years ago',
+    vintage: '~65,000-50,000 years ago',
   },
   {
     id: 'americas',
@@ -95,11 +95,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     coverage: 'schematic',
     nearest: false,
     sourceShort: 'Pedersen 2016',
-    sourceOrg: 'Pedersen et al., PNAS, 2016 — ice-free corridor timing',
+    sourceOrg: 'Pedersen et al., PNAS, 2016: ice-free corridor timing',
     sourceUrl: 'https://www.pnas.org/doi/10.1073/pnas.1518482113',
     license: 'Site schematic on NASA Blue Marble (public domain)',
     licenseUrl: 'https://earthobservatory.nasa.gov/images/7373/december-blue-marble',
-    vintage: '~16,000–11,000 years ago (working window)',
+    vintage: '~16,000-11,000 years ago (working window)',
   },
   {
     id: 'neolithic',
@@ -112,12 +112,12 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateHeight: 1211,
     sourceShort: 'Gronenborn 2021',
     sourceOrg:
-      'Gronenborn, Horejs, Börner & Ober — expansion of farming in western Eurasia, 9600–4000 BCE',
+      'Gronenborn, Horejs, Börner & Ober: expansion of farming in western Eurasia, 9600-4000 BCE',
     sourceUrl:
       'https://commons.wikimedia.org/wiki/File:Expansion_of_farming_in_western_Eurasia,_9600%E2%80%934000_BCE.png',
     license: 'CC BY 4.0',
     licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
-    vintage: '~9600–4000 BCE (western Eurasia)',
+    vintage: '~9600-4000 BCE (western Eurasia)',
   },
   {
     id: 'bantu',
@@ -127,11 +127,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     nearest: false,
     mapForthcoming: true,
     sourceShort: 'Grollemund 2015',
-    sourceOrg: 'Grollemund et al., PNAS, 2015 — Bantu expansion through the rainforest',
+    sourceOrg: 'Grollemund et al., PNAS, 2015: Bantu expansion through the rainforest',
     sourceUrl: 'https://www.pnas.org/doi/10.1073/pnas.1503793112',
     license: 'Site schematic on NASA Blue Marble (public domain)',
     licenseUrl: 'https://earthobservatory.nasa.gov/images/7373/december-blue-marble',
-    vintage: 'Split ~6000–4000 years ago; southward waves ~3500–3000 years ago into the 1st millennium CE',
+    vintage: 'Split ~6000-4000 years ago; southward waves ~3500-3000 years ago into the 1st millennium CE',
   },
   {
     id: 'austronesian',
@@ -143,7 +143,7 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateWidth: 1920,
     plateHeight: 775,
     sourceShort: 'Bellwood / Benton',
-    sourceOrg: 'Pavljenko after Bellwood et al. 2011 / Benton et al. 2012 — Austronesian dispersal',
+    sourceOrg: 'Pavljenko after Bellwood et al. 2011 / Benton et al. 2012: Austronesian dispersal',
     sourceUrl:
       'https://commons.wikimedia.org/wiki/File:Chronological_dispersal_of_Austronesian_people_across_the_Pacific.svg',
     license: 'CC BY-SA 4.0',
@@ -160,11 +160,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateWidth: 1674,
     plateHeight: 906,
     sourceShort: 'Haak 2015',
-    sourceOrg: 'Haak et al., Nature, 2015 — steppe migration into Europe; Yamnaya horizon plate by Krakkos',
+    sourceOrg: 'Haak et al., Nature, 2015: steppe migration into Europe; Yamnaya horizon plate by Krakkos',
     sourceUrl: 'https://www.nature.com/articles/nature14317',
     license: 'Map: CC BY-SA 4.0 (Krakkos). Paper: Nature',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
-    vintage: 'Yamnaya horizon ~3300–2600 BCE; related movements into the 3rd–2nd millennium BCE',
+    vintage: 'Yamnaya horizon ~3300-2600 BCE; related movements into the 3rd-2nd millennium BCE',
   },
   {
     id: 'migration-period',
@@ -176,11 +176,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateWidth: 1920,
     plateHeight: 1358,
     sourceShort: 'MapMaster',
-    sourceOrg: 'MapMaster — invasions of the Roman Empire, 100–500 CE',
+    sourceOrg: 'MapMaster: invasions of the Roman Empire, 100-500 CE',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png',
     license: 'CC BY-SA 2.5',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.5/',
-    vintage: '100–500 CE (schematic)',
+    vintage: '100-500 CE (schematic)',
     greatMigrationsLink: true,
   },
   {
@@ -193,11 +193,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateWidth: 1920,
     plateHeight: 881,
     sourceShort: 'DieBuche',
-    sourceOrg: 'DieBuche — expansion of the caliphate, 622–750 CE (Wikimedia Commons, public domain)',
+    sourceOrg: 'DieBuche: expansion of the caliphate, 622-750 CE (Wikimedia Commons, public domain)',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_expansion_of_Caliphate.svg',
     license: 'Public domain',
     licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
-    vintage: '622–750 CE',
+    vintage: '622-750 CE',
   },
   {
     id: 'mongol',
@@ -209,11 +209,11 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateWidth: 1280,
     plateHeight: 1280,
     sourceShort: 'Ali Zifan',
-    sourceOrg: 'Ali Zifan — Mongol Empire at greatest extent (Wikimedia Commons)',
+    sourceOrg: 'Ali Zifan: Mongol Empire at greatest extent (Wikimedia Commons)',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mongol_Empire_(greatest_extent).svg',
     license: 'CC BY-SA 4.0',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
-    vintage: 'c. 1206–1294 CE',
+    vintage: 'c. 1206-1294 CE',
   },
   {
     id: 'atlantic-slave',
@@ -230,7 +230,7 @@ export const humanEventMeta: HumanEventMeta[] = [
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:African_Slave_Trade.png',
     license: 'CC BY-SA 4.0',
     licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
-    vintage: 'c. 1500–1860s CE',
+    vintage: 'c. 1500-1860s CE',
   },
   {
     id: 'european-emigration',
@@ -243,70 +243,70 @@ export const humanEventMeta: HumanEventMeta[] = [
     plateHeight: 1429,
     sourceShort: 'Minard 1862',
     sourceOrg:
-      'Charles Joseph Minard — worldwide emigrants in 1858 (published 1862). One-year flow, not a century census',
+      'Charles Joseph Minard: worldwide emigrants in 1858 (published 1862). One-year flow, not a century census',
     sourceUrl:
       'https://commons.wikimedia.org/wiki/File:Charles_Joseph_Minard_-_%C3%89migrants_du_Globe.jpg',
     license: 'Public domain',
     licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/',
-    vintage: '1858 (one year); mass emigration ~1840–1914',
+    vintage: '1858 (one year); mass emigration ~1840-1914',
   },
 ];
 
 export const humanEventSources: PrimarySource[] = [
   cite(
-    'Bergström et al., Science, 2020 — origins and expansion of modern humans',
+    'Bergström et al., Science, 2020: origins and expansion of modern humans',
     'https://www.science.org/doi/10.1126/science.aay5012',
   ),
   cite(
-    'Clarkson et al., Nature, 2017 — Madjedbebe, Australia, ~65,000 years',
+    'Clarkson et al., Nature, 2017: Madjedbebe, Australia, ~65,000 years',
     'https://www.nature.com/articles/nature22968',
   ),
   cite(
-    'Pedersen et al., PNAS, 2016 — ice-free corridor too late for the first Americans',
+    'Pedersen et al., PNAS, 2016: ice-free corridor too late for the first Americans',
     'https://www.pnas.org/doi/10.1073/pnas.1518482113',
   ),
   cite(
-    'Gronenborn, Horejs, Börner & Ober — expansion of farming in western Eurasia, 9600–4000 BCE (CC BY 4.0)',
+    'Gronenborn, Horejs, Börner & Ober: expansion of farming in western Eurasia, 9600-4000 BCE (CC BY 4.0)',
     'https://commons.wikimedia.org/wiki/File:Expansion_of_farming_in_western_Eurasia,_9600%E2%80%934000_BCE.png',
   ),
   cite(
-    'Lazaridis et al., Nature, 2016 — genomic history of the Near East (farmer ancestry)',
+    'Lazaridis et al., Nature, 2016: genomic history of the Near East (farmer ancestry)',
     'https://www.nature.com/articles/nature19310',
   ),
   cite(
-    'Grollemund et al., PNAS, 2015 — Bantu expansion through the Central African rainforest',
+    'Grollemund et al., PNAS, 2015: Bantu expansion through the Central African rainforest',
     'https://www.pnas.org/doi/10.1073/pnas.1503793112',
   ),
   cite(
-    'Patin et al., Science, 2017 — dispersals of Bantu-speaking populations',
+    'Patin et al., Science, 2017: dispersals of Bantu-speaking populations',
     'https://www.science.org/doi/10.1126/science.aal1988',
   ),
   cite(
-    'Bellwood et al. 2011 / Benton et al. 2012 — Austronesian chronological dispersal',
+    'Bellwood et al. 2011 / Benton et al. 2012: Austronesian chronological dispersal',
     'https://commons.wikimedia.org/wiki/File:Chronological_dispersal_of_Austronesian_people_across_the_Pacific.svg',
   ),
   cite(
-    'Haak et al., Nature, 2015 — massive migration from the steppe into Europe',
+    'Haak et al., Nature, 2015: massive migration from the steppe into Europe',
     'https://www.nature.com/articles/nature14317',
   ),
   cite(
-    'Anthony, The Horse, the Wheel, and Language, 2007 — archaeological Yamnaya context (not a racial map)',
+    'Anthony, The Horse, the Wheel, and Language, 2007: archaeological Yamnaya context (not a racial map)',
     'https://press.princeton.edu/books/paperback/9780691292595/the-horse-the-wheel-and-language',
   ),
   cite(
-    'MapMaster after Cornell & Matthews and others — invasions of the Roman Empire',
+    'MapMaster after Cornell & Matthews and others: invasions of the Roman Empire',
     'https://commons.wikimedia.org/wiki/File:Invasions_of_the_Roman_Empire_1.png',
   ),
   cite(
-    'Kennedy, The Great Arab Conquests, 2007 — 7th–8th c. expansions as war and settlement, not a census',
+    'Kennedy, The Great Arab Conquests, 2007: 7th-8th c. expansions as war and settlement, not a census',
     'https://www.weidenfeldandnicolson.co.uk/titles/hugh-kennedy/the-great-arab-conquests/9780297866169/',
   ),
   cite(
-    'DieBuche, Wikimedia Commons — expansion of the caliphate 622–750 CE (public domain)',
+    'DieBuche, Wikimedia Commons: expansion of the caliphate 622-750 CE (public domain)',
     'https://commons.wikimedia.org/wiki/File:Map_of_expansion_of_Caliphate.svg',
   ),
   cite(
-    'Jackson, The Mongols and the West, 1221–1410 — conquest, flight, and resettlement',
+    'Jackson, The Mongols and the West, 1221-1410: conquest, flight, and resettlement',
     'https://www.routledge.com/The-Mongols-and-the-West-1221-1410/Jackson/p/book/9781138848689',
   ),
   cite(
@@ -314,15 +314,15 @@ export const humanEventSources: PrimarySource[] = [
     'https://www.slavevoyages.org/',
   ),
   cite(
-    'Hatton & Williamson, The Age of Mass Migration, 1998 — 19th–early 20th c. Atlantic emigration',
+    'Hatton & Williamson, The Age of Mass Migration, 1998: 19th-early 20th c. Atlantic emigration',
     'https://academic.oup.com/book/10169',
   ),
   cite(
-    'Minard, 1862 — worldwide emigrants in the year 1858 (one-year flow map, public domain)',
+    'Minard, 1862: worldwide emigrants in the year 1858 (one-year flow map, public domain)',
     'https://commons.wikimedia.org/wiki/File:Charles_Joseph_Minard_-_%C3%89migrants_du_Globe.jpg',
   ),
   cite(
-    'IPCC AR6 WGI — glacial–interglacial climate, ice sheets, and sea level (Pleistocene context)',
+    'IPCC AR6 WGI: glacial-interglacial climate, ice sheets, and sea level (Pleistocene context)',
     'https://www.ipcc.ch/report/ar6/wg1/',
   ),
 ];

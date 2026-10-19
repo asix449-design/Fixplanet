@@ -98,15 +98,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'UNFCCC — The Paris Agreement',
+        label: 'UNFCCC: The Paris Agreement',
         url: 'https://unfccc.int/process-and-meetings/the-paris-agreement',
       },
       {
-        label: 'UNFCCC — Paris Agreement (English PDF)',
+        label: 'UNFCCC: Paris Agreement (English PDF)',
         url: 'https://unfccc.int/sites/default/files/english_paris_agreement.pdf',
       },
       {
-        label: 'UN Treaty Depositary — Paris Agreement',
+        label: 'UN Treaty Depositary: Paris Agreement',
         url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-7-d&chapter=27&clang=_en',
       },
     ],
@@ -124,15 +124,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Ozone Secretariat — Montreal Protocol',
+        label: 'Ozone Secretariat: Montreal Protocol',
         url: 'https://ozone.unep.org/treaties/montreal-protocol',
       },
       {
-        label: 'Ozone Secretariat — Amendments (incl. Kigali)',
+        label: 'Ozone Secretariat: Amendments (incl. Kigali)',
         url: 'https://ozone.unep.org/treaties/montreal-protocol/amendments',
       },
       {
-        label: 'UN Treaty Depositary — Kigali Amendment',
+        label: 'UN Treaty Depositary: Kigali Amendment',
         url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-2-f&chapter=27&clang=_en',
       },
     ],
@@ -150,11 +150,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'EUR-Lex — Regulation (EU) 2023/1115',
+        label: 'EUR-Lex: Regulation (EU) 2023/1115',
         url: 'https://eur-lex.europa.eu/eli/reg/2023/1115/oj',
       },
       {
-        label: 'European Commission — Deforestation-free products',
+        label: 'European Commission: Deforestation-free products',
         url: 'https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en',
       },
     ],
@@ -172,15 +172,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'European Commission — EU ETS hub',
+        label: 'European Commission: EU ETS hub',
         url: 'https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en',
       },
       {
-        label: 'European Commission — What is the EU ETS',
+        label: 'European Commission: What is the EU ETS',
         url: 'https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets/what-eu-ets_en',
       },
       {
-        label: 'EUR-Lex — Directive 2003/87/EC',
+        label: 'EUR-Lex: Directive 2003/87/EC',
         url: 'https://eur-lex.europa.eu/eli/dir/2003/87/oj',
       },
     ],
@@ -198,19 +198,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'EUR-Lex — Regulation (EU) 2024/1991',
+        label: 'EUR-Lex: Regulation (EU) 2024/1991',
         url: 'https://eur-lex.europa.eu/eli/reg/2024/1991/oj',
       },
       {
-        label: 'European Commission — Nature Restoration Law',
+        label: 'European Commission: Nature Restoration Law',
         url: 'https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-law_en',
       },
       {
-        label: 'Commission news — entry into force, 15 August 2024',
+        label: 'Commission news: entry into force, 15 August 2024',
         url: 'https://environment.ec.europa.eu/news/nature-restoration-law-enters-force-2024-08-15_en',
       },
       {
-        label: 'Commission news — draft national plans, 1 September 2026',
+        label: 'Commission news: draft national plans, 1 September 2026',
         url: 'https://environment.ec.europa.eu/news/eu-countries-submit-draft-plans-restoring-nature-2026-09-01_en',
       },
     ],
@@ -228,15 +228,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'EPA — Clean Air Act overview',
+        label: 'EPA: Clean Air Act overview',
         url: 'https://www.epa.gov/clean-air-act-overview',
       },
       {
-        label: 'EPA — Benefits and Costs of the Clean Air Act 1990–2020 (Second Prospective)',
+        label: 'EPA: Benefits and Costs of the Clean Air Act 1990-2020 (Second Prospective)',
         url: 'https://www.epa.gov/clean-air-act-overview/benefits-and-costs-clean-air-act-1990-2020-second-prospective-study',
       },
       {
-        label: 'U.S. Code — 42 U.S.C. § 7401 et seq.',
+        label: 'U.S. Code: 42 U.S.C. § 7401 et seq.',
         url: 'https://www.law.cornell.edu/uscode/text/42/chapter-85',
       },
     ],
@@ -254,11 +254,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'EUR-Lex — Directive (EU) 2019/904',
+        label: 'EUR-Lex: Directive (EU) 2019/904',
         url: 'https://eur-lex.europa.eu/eli/dir/2019/904/oj',
       },
       {
-        label: 'European Commission — single-use plastics',
+        label: 'European Commission: single-use plastics',
         url: 'https://environment.ec.europa.eu/topics/plastics/single-use-plastics_en',
       },
     ],
@@ -276,15 +276,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'FONAFIFO — Payment for Environmental Services',
+        label: 'FONAFIFO: Payment for Environmental Services',
         url: 'https://www.fonafifo.go.cr/en/servicios/pago-de-servicios-ambientales',
       },
       {
-        label: 'UNFCCC — Costa Rica PES programme',
+        label: 'UNFCCC: Costa Rica PES programme',
         url: 'https://unfccc.int/climate-action/momentum-for-change/financing-for-climate-friendly-investment/payments-for-environmental-services-program',
       },
       {
-        label: 'FAOLEX — Forestry Law No. 7575',
+        label: 'FAOLEX: Forestry Law No. 7575',
         url: 'https://www.fao.org/faolex/results/details/en/c/LEX-FAOC012074/',
       },
     ],
@@ -302,7 +302,7 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'FAOLEX PDF — Постановление президента Туркменистана, 9 ноября 1992 г.',
+        label: 'FAOLEX PDF: Постановление президента Туркменистана, 9 ноября 1992 г.',
         url: 'http://faolex.fao.org/docs/pdf/tuk80588.pdf',
       },
       {
@@ -324,19 +324,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'lex.uz — ЗРУ-916 of 29 February 2024 (Russian)',
+        label: 'lex.uz: ЗРУ-916 of 29 February 2024 (Russian)',
         url: 'https://lex.uz/ru/docs/6822342',
       },
       {
-        label: 'lex.uz — O‘RQ-916 of 29 February 2024 (Uzbek)',
+        label: 'lex.uz: O‘RQ-916 of 29 February 2024 (Uzbek)',
         url: 'https://lex.uz/docs/-6822348',
       },
       {
-        label: 'lex.uz — Law on the protection and use of flora, Article 49¹ (as amended)',
+        label: 'lex.uz: Law on the protection and use of flora, Article 49¹ (as amended)',
         url: 'https://lex.uz/docs/3030360',
       },
       {
-        label: 'UzDaily — Senate consideration of the same amending law',
+        label: 'UzDaily: Senate consideration of the same amending law',
         url: 'https://www.uzdaily.uz/en/uzbekistan-increases-penalties-for-illegal-tree-cutting/',
       },
     ],
@@ -354,19 +354,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Convention on Biological Diversity — text of the Convention',
+        label: 'Convention on Biological Diversity: text of the Convention',
         url: 'https://www.cbd.int/convention/text',
       },
       {
-        label: 'Convention on Biological Diversity — English text (PDF)',
+        label: 'Convention on Biological Diversity: English text (PDF)',
         url: 'https://www.cbd.int/doc/legal/cbd-en.pdf',
       },
       {
-        label: 'Convention on Biological Diversity — convention page',
+        label: 'Convention on Biological Diversity: convention page',
         url: 'https://www.cbd.int/convention/',
       },
       {
-        label: 'Convention on Biological Diversity — secretariat',
+        label: 'Convention on Biological Diversity: secretariat',
         url: 'https://www.cbd.int/',
       },
     ],
@@ -384,20 +384,20 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Convention on Biological Diversity — Kunming-Montreal Global Biodiversity Framework',
+        label: 'Convention on Biological Diversity: Kunming-Montreal Global Biodiversity Framework',
         url: 'https://www.cbd.int/gbf',
       },
       {
-        label: 'Convention on Biological Diversity — Decision 15/4 (English PDF)',
+        label: 'Convention on Biological Diversity: Decision 15/4 (English PDF)',
         url: 'https://www.cbd.int/doc/decisions/cop-15/cop-15-dec-04-en.pdf',
       },
       {
-        label: 'Convention on Biological Diversity — 2030 targets',
+        label: 'Convention on Biological Diversity: 2030 targets',
         url: 'https://www.cbd.int/gbf/targets',
       },
       {
         label:
-          'Convention on Biological Diversity — text adopted at the 15th Conference of the Parties',
+          'Convention on Biological Diversity: text adopted at the 15th Conference of the Parties',
         url: 'https://www.cbd.int/article/cop15-final-text-kunming-montreal-gbf-221222',
       },
     ],
@@ -415,19 +415,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'UNESCO — Convention on Wetlands (depositary)',
+        label: 'UNESCO: Convention on Wetlands (depositary)',
         url: 'https://www.unesco.org/en/legal-affairs/convention-wetlands-international-importance-especially-waterfowl-habitat',
       },
       {
-        label: 'UN Treaty Series — Ramsar Convention, English text (Volume 996, I-14583)',
+        label: 'UN Treaty Series: Ramsar Convention, English text (Volume 996, I-14583)',
         url: 'https://treaties.un.org/doc/Publication/UNTS/Volume%20996/volume-996-I-14583-English.pdf',
       },
       {
-        label: 'UN Treaty Collection — Ramsar Convention',
+        label: 'UN Treaty Collection: Ramsar Convention',
         url: 'https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280104c20',
       },
       {
-        label: 'InforMEA — Ramsar Convention',
+        label: 'InforMEA: Ramsar Convention',
         url: 'https://www.informea.org/en/treaties/ramsar',
       },
     ],
@@ -445,15 +445,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'UN Treaty Collection — Aarhus Convention (XXVII-13)',
+        label: 'UN Treaty Collection: Aarhus Convention (XXVII-13)',
         url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-13&chapter=27&clang=_en',
       },
       {
-        label: 'UN Treaty Collection — Aarhus Convention text (No. 37770)',
+        label: 'UN Treaty Collection: Aarhus Convention text (No. 37770)',
         url: 'https://treaties.un.org/doc/Treaties/1998/06/19980625%2008-35%20AM/37770-En.pdf',
       },
       {
-        label: 'InforMEA — Aarhus Convention',
+        label: 'InforMEA: Aarhus Convention',
         url: 'https://www.informea.org/en/treaties/aarhus-convention',
       },
     ],
@@ -471,19 +471,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'United Nations — Agreement on biodiversity beyond national jurisdiction',
+        label: 'United Nations: Agreement on biodiversity beyond national jurisdiction',
         url: 'https://www.un.org/bbnjagreement/en',
       },
       {
-        label: 'United Nations — Agreement on biodiversity beyond national jurisdiction, English text',
+        label: 'United Nations: Agreement on biodiversity beyond national jurisdiction, English text',
         url: 'https://www.un.org/bbnjagreement/sites/default/files/2024-08/Text%20of%20the%20Agreement%20in%20English.pdf',
       },
       {
-        label: 'UN Treaty Collection — Agreement on biodiversity beyond national jurisdiction (XXI-10)',
+        label: 'UN Treaty Collection: Agreement on biodiversity beyond national jurisdiction (XXI-10)',
         url: 'https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXI-10&chapter=21&clang=_en',
       },
       {
-        label: 'International Maritime Organization — the high seas biodiversity agreement enters into force',
+        label: 'International Maritime Organization: the high seas biodiversity agreement enters into force',
         url: 'https://www.imo.org/en/mediacentre/pressbriefings/pages/imo-welcomes-entry-into-force-bbnj.aspx',
       },
     ],
@@ -651,7 +651,7 @@ export const lawMeta: LawMeta[] = [
     slug: 'un-plastics-treaty',
     category: 'ecology',
     status: 'pending',
-    year: '2022–',
+    year: '2022-',
     image: img(
       'un-plastics-treaty.jpg',
       'Ville Oksanen',
@@ -660,7 +660,7 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'UNEP — INC on plastic pollution',
+        label: 'UNEP: INC on plastic pollution',
         url: 'https://www.unep.org/inc-plastic-pollution',
       },
       {
@@ -668,7 +668,7 @@ export const lawMeta: LawMeta[] = [
         url: 'https://wedocs.unep.org/bitstream/handle/20.500.11822/39812/OEWG_PP_1_INF_1_UNEA%20resolution.pdf',
       },
       {
-        label: 'UN News — INC-5.2 Geneva adjourned without consensus (August 2025)',
+        label: 'UN News: INC-5.2 Geneva adjourned without consensus (August 2025)',
         url: 'https://www.ungeneva.org/en/news-media/news/2025/08/109610/plastic-pollution-treaty-talks-adjourn-countries-want-remain-table',
       },
     ],
@@ -677,7 +677,7 @@ export const lawMeta: LawMeta[] = [
     slug: 'rome-statute-ecocide',
     category: 'ecology',
     status: 'ideas',
-    year: '2021–',
+    year: '2021-',
     image: img(
       'rome-statute-ecocide.jpg',
       'OSeveno',
@@ -686,11 +686,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Stop Ecocide Foundation — Independent Expert Panel definition (June 2021)',
+        label: 'Stop Ecocide Foundation: Independent Expert Panel definition (June 2021)',
         url: 'https://www.stopecocide.earth/legal-definition',
       },
       {
-        label: 'ICC Assembly of States Parties — Working Group on Amendments report (2025)',
+        label: 'ICC Assembly of States Parties: Working Group on Amendments report (2025)',
         url: 'https://asp.icc-cpi.int/sites/default/files/asp_docs/ICC-ASP-24-26-ENG.pdf',
       },
       {
@@ -825,7 +825,7 @@ export const lawMeta: LawMeta[] = [
     slug: 'ai-civil-liability',
     category: 'ai',
     status: 'ideas',
-    year: '2022–2025',
+    year: '2022-2025',
     image: img(
       'ai-civil-liability.jpg',
       'David Hillas',
@@ -1024,15 +1024,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'CITES — text of the Convention',
+        label: 'CITES: text of the Convention',
         url: 'https://cites.org/eng/disc/text.php',
       },
       {
-        label: 'CITES — what is CITES',
+        label: 'CITES: what is CITES',
         url: 'https://cites.org/eng/disc/what.php',
       },
       {
-        label: 'UN Treaty Collection — CITES',
+        label: 'UN Treaty Collection: CITES',
         url: 'https://treaties.un.org/pages/showDetails.aspx?objid=08000002800f5ead',
       },
     ],
@@ -1050,15 +1050,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'U.S. Fish and Wildlife Service — Endangered Species Act',
+        label: 'U.S. Fish and Wildlife Service: Endangered Species Act',
         url: 'https://www.fws.gov/law/endangered-species-act',
       },
       {
-        label: 'FWS — endangered species program',
+        label: 'FWS: endangered species program',
         url: 'https://www.fws.gov/program/endangered-species',
       },
       {
-        label: 'U.S. Code — 16 U.S.C. § 1531 et seq.',
+        label: 'U.S. Code: 16 U.S.C. § 1531 et seq.',
         url: 'https://www.law.cornell.edu/uscode/text/16/chapter-35',
       },
     ],
@@ -1076,15 +1076,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'EUR-Lex — Council Directive 92/43/EEC',
+        label: 'EUR-Lex: Council Directive 92/43/EEC',
         url: 'https://eur-lex.europa.eu/eli/dir/1992/43/oj',
       },
       {
-        label: 'European Commission — Habitats Directive',
+        label: 'European Commission: Habitats Directive',
         url: 'https://environment.ec.europa.eu/topics/nature-and-biodiversity/habitats-directive_en',
       },
       {
-        label: 'EUR-Lex — Birds Directive 2009/147/EC',
+        label: 'EUR-Lex: Birds Directive 2009/147/EC',
         url: 'https://eur-lex.europa.eu/eli/dir/2009/147/oj',
       },
     ],
@@ -1102,11 +1102,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Kenya Law — Wildlife Conservation and Management Act, Cap. 376',
+        label: 'Kenya Law: Wildlife Conservation and Management Act, Cap. 376',
         url: 'https://new.kenyalaw.org/akn/ke/act/2013/47/eng@2022-12-31',
       },
       {
-        label: 'FAOLEX — Act No. 47 of 2013',
+        label: 'FAOLEX: Act No. 47 of 2013',
         url: 'https://www.fao.org/faolex/results/details/en/c/LEX-FAOC134375/',
       },
     ],
@@ -1124,15 +1124,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'CMS — Convention text',
+        label: 'CMS: Convention text',
         url: 'https://www.cms.int/en/convention-text',
       },
       {
-        label: 'CMS — home',
+        label: 'CMS: home',
         url: 'https://www.cms.int/',
       },
       {
-        label: 'CMS — Convention text',
+        label: 'CMS: Convention text',
         url: 'https://www.cms.int/en/page/convention-text',
       },
     ],
@@ -1150,15 +1150,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'European Commission — Birds Directive',
+        label: 'European Commission: Birds Directive',
         url: 'https://environment.ec.europa.eu/topics/nature-and-biodiversity/birds-directive_en',
       },
       {
-        label: 'EUR-Lex — Directive 2009/147/EC',
+        label: 'EUR-Lex: Directive 2009/147/EC',
         url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009L0147',
       },
       {
-        label: 'EUR-Lex — HTML text',
+        label: 'EUR-Lex: HTML text',
         url: 'https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0147',
       },
     ],
@@ -1176,19 +1176,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Council of Europe — Bern Convention hub',
+        label: 'Council of Europe: Bern Convention hub',
         url: 'https://www.coe.int/en/web/bern-convention',
       },
       {
-        label: 'CoE — Treaty 104 detail',
+        label: 'CoE: Treaty 104 detail',
         url: 'https://www.coe.int/en/web/conventions/full-list?module=treaty-detail&treatynum=104',
       },
       {
-        label: 'CoE — Treaty 104',
+        label: 'CoE: Treaty 104',
         url: 'https://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/104',
       },
       {
-        label: 'CoE — Convention text PDF',
+        label: 'CoE: Convention text PDF',
         url: 'https://rm.coe.int/1680078aff',
       },
     ],
@@ -1206,19 +1206,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'NOAA Fisheries — MMPA',
+        label: 'NOAA Fisheries: MMPA',
         url: 'https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-protection-act',
       },
       {
-        label: 'U.S. FWS — MMPA',
+        label: 'U.S. FWS: MMPA',
         url: 'https://www.fws.gov/law/marine-mammal-protection-act',
       },
       {
-        label: 'Marine Mammal Commission — MMPA',
+        label: 'Marine Mammal Commission: MMPA',
         url: 'https://www.mmc.gov/about-the-commission/our-mission/marine-mammal-protection-act/',
       },
       {
-        label: 'GovInfo — MMPA compiled PDF',
+        label: 'GovInfo: MMPA compiled PDF',
         url: 'https://www.govinfo.gov/content/pkg/COMPS-1675/pdf/COMPS-1675.pdf',
       },
     ],
@@ -1236,11 +1236,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'U.S. FWS — Lacey Act',
+        label: 'U.S. FWS: Lacey Act',
         url: 'https://www.fws.gov/law/lacey-act',
       },
       {
-        label: 'NOAA Fisheries — laws and policies',
+        label: 'NOAA Fisheries: laws and policies',
         url: 'https://www.fisheries.noaa.gov/topic/laws-policies/marine-mammal-protection-act',
       },
     ],
@@ -1258,11 +1258,11 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Congress.gov — H.R. 8438, 119th Congress',
+        label: 'Congress.gov: H.R. 8438, 119th Congress',
         url: 'https://www.congress.gov/bill/119th-congress/house-bill/8438',
       },
       {
-        label: 'GovInfo — introduced text',
+        label: 'GovInfo: introduced text',
         url: 'https://www.govinfo.gov/app/details/BILLS-119hr8438ih',
       },
     ],
@@ -1271,7 +1271,7 @@ export const lawMeta: LawMeta[] = [
     slug: 'recovering-americas-wildlife',
     category: 'animals',
     status: 'ideas',
-    year: '2021–',
+    year: '2021-',
     image: img(
       'recovering-americas-wildlife.jpg',
       'Jack Dykinga',
@@ -1280,15 +1280,15 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'Congress.gov — H.R. 2773, 117th Congress (passed House, not enacted)',
+        label: 'Congress.gov: H.R. 2773, 117th Congress (passed House, not enacted)',
         url: 'https://www.congress.gov/bill/117th-congress/house-bill/2773',
       },
       {
-        label: 'Congress.gov — S.1149, 118th Congress (introduced, not enacted)',
+        label: 'Congress.gov: S.1149, 118th Congress (introduced, not enacted)',
         url: 'https://www.congress.gov/bill/118th-congress/senate-bill/1149',
       },
       {
-        label: 'National Wildlife Federation — 2026 RAWA briefing',
+        label: 'National Wildlife Federation: 2026 RAWA briefing',
         url: 'https://www.nwf.org/Home/Educational-Resources/Reports/2026/Recovering-Americas-Wildlife-Unleashing-State-and-Tribal-Conservation-Solutions',
       },
     ],
@@ -1306,19 +1306,19 @@ export const lawMeta: LawMeta[] = [
     ),
     sources: [
       {
-        label: 'U.S. Code — 18 U.S.C. § 48 (PACT Act; animal crushing, not human assault or homicide)',
+        label: 'U.S. Code: 18 U.S.C. § 48 (PACT Act; animal crushing, not human assault or homicide)',
         url: 'https://www.law.cornell.edu/uscode/text/18/48',
       },
       {
-        label: 'Diário da República — Lei n.º 8/2017 (Portugal civil-status reform)',
+        label: 'Diário da República: Lei n.º 8/2017 (Portugal civil-status reform)',
         url: 'https://files.diariodarepublica.pt/1s/2017/03/04500/0114501149.pdf',
       },
       {
-        label: 'gesetze-im-internet — BGB § 90a Tiere',
+        label: 'gesetze-im-internet: BGB § 90a Tiere',
         url: 'https://www.gesetze-im-internet.de/bgb/__90a.html',
       },
       {
-        label: 'Corte Constitucional del Ecuador — Sentencia 253-20-JH/22 (Estrellita)',
+        label: 'Corte Constitucional del Ecuador: Sentencia 253-20-JH/22 (Estrellita)',
         url: 'https://www.corteconstitucional.gob.ec/sentencia-253-20-jh-22/',
       },
     ],
@@ -1355,7 +1355,7 @@ export function lawDetailPath(slug: string): string {
 
 export const lawSectionImage = {
   file: 'law-section-bg.jpg',
-  credit: 'Diliff — European Parliament hemicycle, Strasbourg',
+  credit: 'Diliff: European Parliament hemicycle, Strasbourg',
   license: 'CC BY-SA 3.0',
   sourceUrl:
     'https://commons.wikimedia.org/wiki/File:European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg',

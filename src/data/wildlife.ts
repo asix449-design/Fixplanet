@@ -107,7 +107,7 @@ export type Species = SpeciesMeta & SpeciesCopy;
 
 export const humanHeroImage: ImageCredit = {
   file: 'homo-sapiens.png',
-  credit: 'Generated naturalistic figure for Fix Planet — not a portrait of a named person',
+  credit: 'Generated naturalistic figure for Fix Planet: not a portrait of a named person',
   license: 'Site asset',
   sourceUrl: '',
 };

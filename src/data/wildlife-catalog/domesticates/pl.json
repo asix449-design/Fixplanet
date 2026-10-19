@@ -97,7 +97,7 @@
     },
     "water-buffalo": {
       "commonName": "Bawół wodny",
-      "hook": "Około 15 procent światowego mleka — a w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.",
+      "hook": "Około 15 procent światowego mleka: a w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.",
       "imageAlt": "Domowy byk bawoli koło Mehsany, Gujarat, Indie",
       "what": "Bawół wodny (Bubalus bubalis) to udomowiony bawół azjatycki, trzymany dla mleka, mięsa i uciągu. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa liczy bawoły na około 15 procent światowego mleka; w Indiach i Pakistanie mleka bawolego jest więcej niż krowiego.",
       "range": "Południowa i południowo-wschodnia Azja trzyma większość stada; mniejsze populacje są w basenie Morza Śródziemnego, na Kaukazie, w Ameryce Południowej i dalej. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje bawoły jako inwentarz.",
@@ -124,12 +124,12 @@
     },
     "horse": {
       "commonName": "Koń",
-      "hook": "Konie domowe rozeszły się ze stepów zachodniej Eurazji około 2200–2000 p.n.e., jak pokazali Librado i współpracownicy w czasopiśmie Nature w 2021 roku.",
+      "hook": "Konie domowe rozeszły się ze stepów zachodniej Eurazji około 2200-2000 p.n.e., jak pokazali Librado i współpracownicy w czasopiśmie Nature w 2021 roku.",
       "imageAlt": "Biały koń kamargijski w trawie",
-      "what": "Koń (Equus ferus caballus) to koń domowy, na którym jeżdżą, którego zaprzęgają i którego trzymają. Praca nad dawnym materiałem genetycznym Librado i współpracowników (czasopismo Nature, 2021) kładzie powstanie i rozprzestrzenienie współczesnej linii domowej na stepy zachodniej Eurazji, z ekspansją około 2200–2000 p.n.e. Konie z Botai w Kazachstanie należą do innej linii.",
+      "what": "Koń (Equus ferus caballus) to koń domowy, na którym jeżdżą, którego zaprzęgają i którego trzymają. Praca nad dawnym materiałem genetycznym Librado i współpracowników (czasopismo Nature, 2021) kładzie powstanie i rozprzestrzenienie współczesnej linii domowej na stepy zachodniej Eurazji, z ekspansją około 2200-2000 p.n.e. Konie z Botai w Kazachstanie należą do innej linii.",
       "range": "Trzymane na świecie. Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa mapuje konie jako inwentarz. Stada robocze, sportowe i zdziczałe żyją na wszystkich zamieszkanych kontynentach.",
       "story": "Współczesna linia domowa zastąpiła wcześniejsze linie, rozchodząc się z ludźmi. Ta data to wynik genetyczny badania z 2021 roku. Stada robocze, sportowe i zdziczałe pochodzą z tej trzymanej linii.",
-      "when": "Żywy udomowiony gatunek. Współczesna linia: stepy zachodniej Eurazji, około 2200–2000 p.n.e. (Librado i in., 2021).",
+      "when": "Żywy udomowiony gatunek. Współczesna linia: stepy zachodniej Eurazji, około 2200-2000 p.n.e. (Librado i in., 2021).",
       "humanRole": "Wyhodowaliśmy i przemieściliśmy je jako transport i pracę. Data żywej linii pochodzi z badania genetycznego z 2021 roku.",
       "sources": [
         {
@@ -137,7 +137,7 @@
           "url": "https://www.fao.org/livestock-systems/global-distributions/horses/en/"
         },
         {
-          "label": "Librado i in., czasopismo Nature, 2021 — konie stepów zachodniej Eurazji (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)",
+          "label": "Librado i in., czasopismo Nature, 2021: konie stepów zachodniej Eurazji (The origins and spread of domestic horses from the Western Eurasian steppes; doi:10.1038/s41586-021-04018-9)",
           "url": "https://doi.org/10.1038/s41586-021-04018-9"
         }
       ],
@@ -170,7 +170,7 @@
         }
       ],
       "gridSource": {
-        "label": "Bergström i in., Science, 2020 — pochodzenie prehistorycznych psów, pełny tekst w PubMed Central",
+        "label": "Bergström i in., Science, 2020: pochodzenie prehistorycznych psów, pełny tekst w PubMed Central",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7116352/"
       },
       "image": {
@@ -331,7 +331,7 @@
       "imageAlt": "Czarny królik domowy na słomie w Ogrodach Kwiatowych Hirschstetten w Wiedniu w Austrii.",
       "what": "Królik domowy (Oryctolagus cuniculus) jest hodowany dla mięsa, skórek na futra oraz, w przypadku królików angorskich, dla wełny. Pochodzi od dzikiego królika z południowej Europy i Afryki Północnej.",
       "range": "Chów królików w klatkach rozpowszechnił się na wsi w całej Europie Zachodniej i na przedmieściach miast, a europejska ekspansja kolonialna zaniosła króliki do wielu krajów, gdzie wcześniej ich nie znano, na przykład do Australii i Nowej Zelandii. Dziś króliki żyją niemal w każdym klimacie. Podręcznik Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa o chowie królików opisuje przydomowe króliczarnie jako dobrze dopasowane do potrzeb drobnych rolników, bez względu na to, czy mają własną ziemię.",
-      "story": "Według podręcznika Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa „Królik: chów, zdrowie i produkcja” (1997) dzikiego królika odkryli prawdopodobnie Fenicjanie, którzy dotarli do wybrzeży Hiszpanii około 1000 r. p.n.e. Rzymski pisarz Warron (116–27 p.n.e.) radził trzymać króliki w leporariach, otoczonych kamiennym murem zagrodach lub parkach, razem z zającami i innymi dzikimi zwierzętami do polowań; króliki były wtedy jeszcze dzikie. W szesnastym wieku znano już kilka ras, co jest pierwszym śladem kontrolowanej hodowli, dlatego udomowienie datuje się na późne średniowiecze; zajmowali się nim prawdopodobnie głównie mnisi.",
+      "story": "Według podręcznika Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa „Królik: chów, zdrowie i produkcja” (1997) dzikiego królika odkryli prawdopodobnie Fenicjanie, którzy dotarli do wybrzeży Hiszpanii około 1000 r. p.n.e. Rzymski pisarz Warron (116-27 p.n.e.) radził trzymać króliki w leporariach, otoczonych kamiennym murem zagrodach lub parkach, razem z zającami i innymi dzikimi zwierzętami do polowań; króliki były wtedy jeszcze dzikie. W szesnastym wieku znano już kilka ras, co jest pierwszym śladem kontrolowanej hodowli, dlatego udomowienie datuje się na późne średniowiecze; zajmowali się nim prawdopodobnie głównie mnisi.",
       "when": "Żywy gatunek udomowiony. Rasy królików rejestruje System Informacji o Różnorodności Zwierząt Domowych Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa.",
       "humanRole": "Pasza objętościowa stanowi ważną część diety królika, więc króliki nie konkurują bezpośrednio z ludźmi o żywność, a w wydajnych systemach zamieniają 20% zjedzonego białka w jadalne mięso. Dzięki temu są przydatne dla rodzin wiejskich, którym potrzeba więcej białka zwierzęcego.",
       "sources": [

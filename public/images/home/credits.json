@@ -2,7 +2,7 @@
   {
     "slug": "green-city-future-bg",
     "file": "green-city-future-bg.jpg",
-    "artist": "Fix Planet home theme — solarpunk green city of the future (vertical forests, river valley, launch beam, planet), generated site asset after user reference",
+    "artist": "Fix Planet home theme: solarpunk green city of the future (vertical forests, river valley, launch beam, planet), generated site asset after user reference",
     "license": "Site theme asset",
     "sourceUrl": ""
   },
@@ -16,14 +16,14 @@
   {
     "slug": "earth-day",
     "file": "earth-day.jpg",
-    "artist": "NASA Visible Earth / Blue Marble — land surface, shallow water, and shaded topography (2048×1024)",
+    "artist": "NASA Visible Earth / Blue Marble: land surface, shallow water, and shaded topography (2048×1024)",
     "license": "Public domain (NASA)",
     "sourceUrl": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography"
   },
   {
     "slug": "earth-globe-still",
     "file": "earth-globe-still.png",
-    "artist": "Orthographic still of the Home globe — NASA Blue Marble day texture, no clouds or city lights",
+    "artist": "Orthographic still of the Home globe: NASA Blue Marble day texture, no clouds or city lights",
     "license": "Public domain texture (NASA Visible Earth / Blue Marble)",
     "sourceUrl": "https://visibleearth.nasa.gov/images/57752/blue-marble-land-surface-shallow-water-and-shaded-topography"
   }

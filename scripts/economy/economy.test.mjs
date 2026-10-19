@@ -15,6 +15,17 @@ import { DataError, HTTP_DEFAULTS, SCHEMAS, jsonFile, toJson, validateSchema } f
 import * as ecb from './ecb.mjs';
 import * as pink from './pinksheet.mjs';
 import { SOURCES, checkDirectory, payloadKey, runAll } from './pipeline.mjs';
+import {
+  changeOf,
+  chartPath,
+  chartWindows,
+  direction,
+  downsampleIndices,
+  formatChange,
+  seriesWindow,
+  sparkPath,
+  windowsFor,
+} from '../../src/lib/economySeries.mjs';
 
 HTTP_DEFAULTS.retryDelayMs = 1;
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -625,6 +636,144 @@ test('run: a damaged archive is a failed source, not a crash, and the other sour
     assert.deepEqual(out.results.map((item) => item.result), ['failed', 'unchanged']);
     assert.equal(JSON.parse(await read(dir, 'manifest.json')).datasets.wb_pink.status, 'failed');
   });
+});
+
+function ramp(n, start = 0) {
+  return Array.from({ length: n }, (_, i) => start + i);
+}
+
+test('windows: monthly periods, the month change, and a break at a null', () => {
+  const times = Array.from({ length: 80 }, (_, i) => `2000-${String((i % 12) + 1).padStart(2, '0')}`);
+  const values = ramp(80, 10);
+  values[3] = null;
+  const month = seriesWindow(times, values, 'month');
+  assert.equal(month.values.length, 13);
+  assert.equal(month.highlight, true);
+  assert.deepEqual(month.compare, [values[78], values[79]]);
+  const year = seriesWindow(times, values, 'year');
+  assert.equal(year.values.length, 13);
+  assert.deepEqual(year.compare, [values[67], values[79]]);
+  const five = seriesWindow(times, values, '5y');
+  assert.equal(five.values.length, 61);
+  const all = seriesWindow(times, values, 'all');
+  assert.equal(all.values[0], values[0]);
+  assert.equal(all.times.at(-1), times[79]);
+  const change = changeOf(month.compare);
+  assert.equal(change.abs, 1);
+  assert.equal(direction(change.abs), 'up');
+  assert.equal(direction(0), 'flat');
+  assert.equal(direction(-1), 'down');
+  assert.equal(formatChange(1.2, 3.45, 1, 'en'), '+1.2 (+3.5%)');
+  assert.equal(formatChange(-1.2, -3.45, 1, 'ru'), '-1,2 (-3,5%)');
+  assert.equal(formatChange(1.2, 3.45, 1, 'en', true), '+1.2 (+3.5%)');
+  assert.equal(formatChange(1.2, 3.45, 1, 'en', false), '+1.2');
+  assert.equal(formatChange(-1.2, -3.45, 1, 'lv', false), '-1,2');
+  assert.equal(formatChange(0, 0, 2, 'pl', false), '0,00');
+
+  const coal = [null, null, 4, 5, 1, 9];
+  const coalAll = seriesWindow(['a', 'b', 'c', 'd', 'e', 'f'], coal, 'all');
+  assert.deepEqual(coalAll.values, [4, 5, 1, 9]);
+  const gappy = seriesWindow(['a', 'b', 'c', 'd'], [1, null, null, 4], 'all');
+  const path = sparkPath(gappy.values, gappy.breaks);
+  assert.equal(path.indexOf('M') !== path.lastIndexOf('M'), true);
+});
+
+test('windows: daily month is 23 working days and year is 260', () => {
+  const values = ramp(300, 1);
+  const times = values.map((_, i) => `d${i}`);
+  const month = seriesWindow(times, values, 'month', 'daily');
+  assert.equal(month.values.length, 23);
+  assert.equal(month.highlight, false);
+  assert.deepEqual(month.compare, [values[277], values[299]]);
+  const year = seriesWindow(times, values, 'year', 'daily');
+  assert.equal(year.values.length, 260);
+});
+
+test('downsample: at most 120 points, and the first, last, min and max stay', () => {
+  const values = ramp(400, 0);
+  values[50] = -5;
+  values[80] = 999;
+  const idx = downsampleIndices(values.length, [values], 120);
+  assert.ok(idx.length <= 120);
+  assert.equal(idx[0], 0);
+  assert.equal(idx.at(-1), 399);
+  assert.ok(idx.includes(50));
+  assert.ok(idx.includes(80));
+  const chart = chartWindows(values.map((_, i) => `m${i}`), [values, values.map((v) => (v == null ? null : 1000 - v))]);
+  assert.ok(chart.all.times.length <= 120);
+  assert.equal(chart.all.values[0].length, chart.all.values[1].length);
+  assert.ok(chart.all.values[1].includes(1005));
+  const line = chartPath([1, null, 3], [false, true, true], 100, 40, 3);
+  assert.match(line, /^M/);
+  assert.equal((line.match(/M/g) || []).length, 2);
+});
+
+function monthlyFixture(count = 4, end = '2026-09') {
+  const header = 'KEY,FREQ,CURRENCY,CURRENCY_DENOM,EXR_TYPE,EXR_SUFFIX,TIME_PERIOD,OBS_VALUE,OBS_STATUS,DECIMALS,TITLE,TITLE_COMPL,UNIT';
+  const specs = [
+    ['USD', 1.1, 4, 'US dollar/Euro'],
+    ['GBP', 0.85, 5, 'Pound sterling/Euro'],
+    ['PLN', 4.3, 4, 'Polish zloty/Euro'],
+  ];
+  const endIndex = Number(end.slice(0, 4)) * 12 + Number(end.slice(5, 7)) - 1;
+  const lines = [header];
+  for (const [code, base, decimals, title] of specs) {
+    for (let i = 0; i < count; i += 1) {
+      const index = endIndex - (count - 1 - i);
+      const month = `${Math.floor(index / 12)}-${String((index % 12) + 1).padStart(2, '0')}`;
+      const value = (base + i * 0.01).toFixed(decimals);
+      lines.push(`EXR.M.${code}.EUR.SP00.A,M,${code},EUR,SP00,A,${month},${value},A,${decimals},${title} ECB reference exchange rate,"x",${code}`);
+    }
+  }
+  return lines.join('\n');
+}
+
+const MONTHLY_TEST = { ...ecb.MONTHLY_CONFIG, minimumMonths: 3 };
+
+test('ecb monthly: averages become a dataset and refuse gaps and jumps', () => {
+  const dataset = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture()), MONTHLY_TEST);
+  assert.equal(dataset.kind, 'monthly-rates');
+  assert.equal(dataset.id, 'ecb_monthly');
+  assert.equal(dataset.dataAsOf, '2026-09');
+  assert.equal(dataset.publisherDate, '2026-10-01');
+  assert.equal(dataset.series[0].key, 'EXR.M.USD.EUR.SP00.A');
+  assert.equal(dataset.series[1].decimals, 5);
+  ecb.validateMonthlyDataset(dataset, null, { now: NOW }, MONTHLY_TEST);
+  const long = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture(12)), MONTHLY_TEST);
+  long.retrievedAt = '2026-10-05T06:40:00.000Z';
+  assert.deepEqual(validateSchema(long, SCHEMAS.monthlyRates), []);
+  const jumped = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture().replace('4.3300', '5.2000')), MONTHLY_TEST);
+  rejects(() => ecb.validateMonthlyDataset(jumped, null, { now: NOW }, MONTHLY_TEST), /jump from/);
+  const gapped = ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture().replaceAll('2026-08', '2026-10')), MONTHLY_TEST);
+  rejects(() => ecb.validateMonthlyDataset(gapped, null, { now: NOW }, MONTHLY_TEST), /gap of/);
+  rejects(() => ecb.buildMonthlyDataset(ecb.parseCsv(monthlyFixture().replace('2026-07', '2026-07-01')), MONTHLY_TEST), /Bad month/);
+});
+
+test('windows: the stored Pink Sheet uses the same cuts', async () => {
+  const pinkFile = JSON.parse(await readFile(path.join(here, '../../public/data/economy/pink-sheet.json'), 'utf8'));
+  const brent = pinkFile.series.find((item) => item.id === 'brent');
+  const coal = pinkFile.series.find((item) => item.id === 'coal_australia');
+  const times = Array.from({ length: brent.values.length }, (_, i) => {
+    const month = ((Number(pinkFile.start.slice(5, 7)) - 1 + i) % 12) + 1;
+    const year = Number(pinkFile.start.slice(0, 4)) + Math.floor((Number(pinkFile.start.slice(5, 7)) - 1 + i) / 12);
+    return `${year}-${String(month).padStart(2, '0')}`;
+  });
+  const brentAll = seriesWindow(times, brent.values, 'all');
+  assert.equal(brentAll.times[0], pinkFile.start);
+  const coalAll = seriesWindow(times, coal.values, 'all');
+  assert.equal(coalAll.times[0], '1970-01');
+  const boards = windowsFor(times, brent.values);
+  assert.equal(boards.month.values.length, 13);
+  assert.equal(boards['5y'].values.length, 61);
+  assert.equal(changeOf(boards.month.compare).abs, brent.values.at(-1) - brent.values.at(-2));
+});
+
+test('companies: the server template does not name TradingView', async () => {
+  const quote = await readFile(path.join(here, '../../src/components/EconomyQuote.astro'), 'utf8');
+  const view = await readFile(path.join(here, '../../src/views/EconomyView.astro'), 'utf8');
+  assert.equal(quote.includes('tradingview.com'), false);
+  assert.equal(view.includes('tradingview.com'), false);
+  assert.match(await readFile(path.join(here, '../../src/scripts/economyQuotes.ts'), 'utf8'), /s3\.tradingview\.com/);
 });
 
 test('run: a manifest left behind by a killed job is repaired by the next run', async () => {

@@ -41,7 +41,7 @@ const artHeight = map.detail ? 3600 : rich ? 1080 : 800;
 const backdropSrc = oceanFrameSrc(oceanBackdrop.file);
 const pageTitle = rich
   ? `${map.title}, ${oceans.title}, Fix Planet`
-  : `${map.title} — ${oceans.title} — Fix Planet`;
+  : `${map.title}: ${oceans.title}: Fix Planet`;
 const urlPattern = /(https?:\/\/[^\s)]+)/g;
 const creditParts = map.credit ? map.credit.split(urlPattern) : [];
 ---

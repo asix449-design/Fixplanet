@@ -2,7 +2,7 @@
  * Refresh public/data/economy/*.json from the economy sources.
  * Run: node scripts/fetch-economy.mjs [--only wb_pink,ecb] [--dir path]
  *
- * Sources: World Bank Pink Sheet (monthly) and ECB euro reference rates (daily).
+ * Sources: World Bank Pink Sheet (monthly), ECB euro reference rates (daily) and ECB monthly averages.
  * A source is written only after every check passes; otherwise its previous good file stays
  * and the manifest records the failure. Exit code 1 when any source failed.
  * Set ECONOMY_ACCEPT_REVISIONS=1 to accept a changed history after reading the failed run.

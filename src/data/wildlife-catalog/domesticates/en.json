@@ -12,11 +12,11 @@
       "when": "A living domesticate, maintained by people worldwide.",
       "humanRole": "We made the animal, spread it, and now run the herds that feed much of the world.",
       "sources": [],
-      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems — cattle."
+      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems: cattle."
     },
     "chicken": {
       "commonName": "Chicken",
-      "hook": "The most abundant domestic livestock — a junglefowl turned into the world’s default farm bird.",
+      "hook": "The most abundant domestic livestock: a junglefowl turned into the world’s default farm bird.",
       "imageAlt": "A domestic chicken standing in dry grass",
       "what": "The chicken (Gallus gallus domesticus) is the domestic form of the red junglefowl. It is the most abundant domestic livestock: more individual chickens are alive than any other farmed bird or mammal. People keep this bird for meat and eggs.",
       "range": "Villages, barns, and industrial houses on every inhabited continent. The Food and Agriculture Organization of the United Nations maps the global distribution of chickens as livestock.",
@@ -24,7 +24,7 @@
       "when": "A living domesticate, and the most numerous farm animal.",
       "humanRole": "We bred, housed, and counted them as a food system of meat and eggs.",
       "sources": [],
-      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems — chickens."
+      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems: chickens."
     },
     "sheep": {
       "commonName": "Sheep",
@@ -36,7 +36,7 @@
       "when": "A living domesticate, raised for wool, meat, and milk.",
       "humanRole": "We bred and moved them as fibre and food; the landscape they graze is one we made.",
       "sources": [],
-      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems — sheep."
+      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems: sheep."
     },
     "pig": {
       "commonName": "Pig",
@@ -48,11 +48,11 @@
       "when": "A living domesticate, raised for meat.",
       "humanRole": "We keep them as food, and released or escaped animals have formed feral populations in many countries.",
       "sources": [],
-      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems — pigs."
+      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems: pigs."
     },
     "water-buffalo": {
       "commonName": "Water buffalo",
-      "hook": "About 15 percent of the world’s milk — and in India and Pakistan, more buffalo milk than cow milk.",
+      "hook": "About 15 percent of the world’s milk, and in India and Pakistan, more buffalo milk than cow milk.",
       "imageAlt": "A domestic water buffalo bull near Mehsana, Gujarat, India",
       "what": "The water buffalo (Bubalus bubalis) is the domestic Asian buffalo, kept for milk, meat, and draft. The Food and Agriculture Organization of the United Nations puts buffaloes at about 15 percent of world milk; in India and Pakistan buffalo milk exceeds cow milk.",
       "range": "South and Southeast Asia hold most of the herd; smaller populations live in the Mediterranean, the Caucasus, South America, and elsewhere. The Food and Agriculture Organization of the United Nations maps buffaloes as livestock.",
@@ -60,19 +60,19 @@
       "when": "A living domesticate, and a major dairy species in South Asia.",
       "humanRole": "We keep buffaloes as milk and draft animals in South Asia and in smaller herds elsewhere.",
       "sources": [],
-      "sourcesNote": "Food and Agriculture Organization of the United Nations, buffalo dairy page and Livestock Systems — buffaloes."
+      "sourcesNote": "Food and Agriculture Organization of the United Nations, buffalo dairy page and Livestock Systems: buffaloes."
     },
     "horse": {
       "commonName": "Horse",
-      "hook": "Domestic horses spread from the Western Eurasian steppes around 2200–2000 BC, according to Librado and colleagues in Nature, 2021.",
+      "hook": "Domestic horses spread from the Western Eurasian steppes around 2200-2000 BC, according to Librado and colleagues in Nature, 2021.",
       "imageAlt": "A white Camargue horse standing in grass",
-      "what": "The horse (Equus ferus caballus) is the domestic horse people ride, drive, and keep. Work on ancient genetic material by Librado and colleagues (Nature, 2021) places the rise and spread of the modern domestic lineage on the Western Eurasian steppes, expanding around 2200–2000 BC. Horses from Botai in Kazakhstan belong to another lineage.",
+      "what": "The horse (Equus ferus caballus) is the domestic horse people ride, drive, and keep. Work on ancient genetic material by Librado and colleagues (Nature, 2021) places the rise and spread of the modern domestic lineage on the Western Eurasian steppes, expanding around 2200-2000 BC. Horses from Botai in Kazakhstan belong to another lineage.",
       "range": "Kept worldwide. The Food and Agriculture Organization of the United Nations maps horses as livestock. Working, sport, and feral herds live on every inhabited continent.",
       "story": "The modern domestic lineage replaced earlier lineages as it spread with people. That date is a genetic result from a 2021 study. Working, sport, and feral herds descend from that kept lineage.",
-      "when": "A living domesticate. Modern lineage: Western Eurasian steppes, around 2200–2000 BC (Librado and colleagues, 2021).",
+      "when": "A living domesticate. Modern lineage: Western Eurasian steppes, around 2200-2000 BC (Librado and colleagues, 2021).",
       "humanRole": "We bred and moved them as transport and work. The date of the living lineage comes from a 2021 genetic study.",
       "sources": [],
-      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems — horses; Librado and colleagues, Nature, 2021 (doi:10.1038/s41586-021-04018-9)."
+      "sourcesNote": "Food and Agriculture Organization of the United Nations, Livestock Systems: horses; Librado and colleagues, Nature, 2021 (doi:10.1038/s41586-021-04018-9)."
     },
     "dog": {
       "commonName": "Dog",
@@ -228,7 +228,7 @@
       "imageAlt": "A black domestic rabbit on straw at the Hirschstetten flower gardens in Vienna, Austria.",
       "what": "The domestic rabbit (Oryctolagus cuniculus) is raised for meat, for skins used as fur and, in Angora rabbits, for wool. It descends from the wild rabbit of southern Europe and North Africa.",
       "range": "Rabbit keeping in hutches spread across rural western Europe and into city suburbs, and European colonial expansion took rabbits to many countries where they had been unknown, such as Australia and New Zealand. Rabbits are now found in almost every climate. The rabbit manual of the Food and Agriculture Organization of the United Nations (FAO) describes backyard rabbitries as well suited to small farmers, with or without land of their own.",
-      "story": "According to the FAO manual The Rabbit: Husbandry, health and production (1997), Phoenicians who reached the coast of Spain about 1000 BCE are thought to have discovered the wild rabbit. The Roman writer Varro (116–27 BCE) suggested keeping rabbits in leporaria, stone-walled pens or parks shared with hares and other wild animals for hunting; rabbits were still not domesticated then. Several breeds were known in the sixteenth century, the first sign of controlled breeding, so domestication is traced to the late Middle Ages, probably mainly the work of monks.",
+      "story": "According to the FAO manual The Rabbit: Husbandry, health and production (1997), Phoenicians who reached the coast of Spain about 1000 BCE are thought to have discovered the wild rabbit. The Roman writer Varro (116-27 BCE) suggested keeping rabbits in leporaria, stone-walled pens or parks shared with hares and other wild animals for hunting; rabbits were still not domesticated then. Several breeds were known in the sixteenth century, the first sign of controlled breeding, so domestication is traced to the late Middle Ages, probably mainly the work of monks.",
       "when": "A living domesticate. FAO's Domestic Animal Diversity Information System (DAD-IS) records rabbit breeds.",
       "humanRole": "Fibrous feed is an important part of a rabbit's diet, so rabbits do not compete directly with people for food, and in efficient systems they turn 20% of the protein they eat into edible meat. This makes them useful to rural families who need more animal protein.",
       "sources": [

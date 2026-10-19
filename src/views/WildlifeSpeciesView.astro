@@ -13,7 +13,7 @@ const locale = resolveLocale(Astro.currentLocale);
 const ui = getUi(locale);
 const { species } = Astro.props;
 const scopeLabel = globalScopeLabel(locale, species.iucnScope);
-const title = `${species.commonName} — Fix Planet`;
+const title = `${species.commonName}: Fix Planet`;
 const image = wildlifeImageSrc(species.image);
 const clickableSources = species.sourcesList?.length
   ? species.sourcesList

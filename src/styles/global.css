@@ -910,6 +910,23 @@ a.solution-card:hover {
   font-size: 0.9rem;
 }
 
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.95rem;
+}
+
+.hub-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hub-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hub-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 @media (max-width: 1100px) {
   .nav {
@@ -2099,16 +2116,6 @@ a.map-card:hover {
   scroll-margin-top: calc(var(--header-h) + 12px);
 }
 
-.hub-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.95rem;
-}
-
-.hub-grid-5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -2119,14 +2126,6 @@ a.map-card:hover {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-.hub-grid-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.hub-grid-2 {
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .hub-tile {
@@ -5048,7 +5047,6 @@ a.map-card:hover {
   border-radius: 999px;
   padding: 0.4rem 0.85rem;
   font-size: 0.9rem;
-  font-weight: 600;
   text-decoration: none;
 }
 
@@ -5067,4 +5065,335 @@ a.map-card:hover {
 
 .economy-disclaimer {
   margin-top: 2rem;
+}
+
+.economy-board,
+.economy-charts {
+  display: grid;
+  gap: 1.2rem;
+  margin: 1.2rem 0 1rem;
+}
+
+.economy-board {
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.economy-tile p,
+.economy-chart p {
+  margin: 0 0 0.55rem;
+}
+
+.economy-tile-unit,
+.economy-tile-date,
+.economy-tile-source,
+.economy-chart figcaption,
+.economy-cell-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.economy-rates {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 0.6rem;
+}
+
+.economy-rates div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.economy-rates dd {
+  margin: 0;
+  color: var(--lime);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.economy-tile-caveat,
+.economy-chart-table {
+  margin: 0 0 0.6rem;
+}
+
+.economy-tile-caveat summary,
+.economy-chart-table summary {
+  cursor: pointer;
+}
+
+.economy-chart {
+  margin: 0;
+}
+
+.economy-chart-plot {
+  position: relative;
+  margin: 0 0 0.6rem;
+  padding: 1.3rem 0 0;
+}
+
+.economy-chart-plot svg {
+  display: block;
+  width: 100%;
+  height: clamp(160px, 30vw, 260px);
+}
+
+.economy-chart-top,
+.economy-chart-zero {
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.economy-chart-top {
+  top: 0;
+}
+
+.economy-chart-zero {
+  bottom: 1.6rem;
+}
+
+.economy-chart-years {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.economy-chart-base {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.economy-line {
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.economy-line-1 {
+  stroke: var(--lime);
+  background: var(--lime);
+}
+
+.economy-line-2 {
+  stroke: var(--flare);
+  background: var(--flare);
+}
+
+.economy-line-3 {
+  stroke: var(--cream);
+  background: var(--cream);
+}
+
+.economy-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin: 0 0 0.6rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.economy-swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.2rem;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.economy-chart table {
+  width: 100%;
+  margin: 0 0 0.6rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.economy-chart th,
+.economy-chart td {
+  padding: 0.25rem 0.4rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.economy-cell-date {
+  display: block;
+}
+
+.economy-estimate {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.economy-stale {
+  font-size: 0.9rem;
+}
+
+.economy-stale {
+  color: var(--flare);
+}
+
+.economy-label {
+  color: var(--muted);
+}
+
+.economy-pill {
+  background: rgba(192, 255, 0, 0.12);
+  color: var(--lime);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  font-size: 0.82rem;
+}
+
+/* Economy: hub grid breakpoints after the base .hub-grid rule */
+@media (max-width: 1024px) {
+  .economy-main .hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .economy-main .hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Economy: let grid items and text shrink */
+.economy-board > *,
+.economy-charts > *,
+.economy-stack > * {
+  min-width: 0;
+}
+
+.economy-main {
+  overflow-wrap: anywhere;
+}
+
+.economy-chart table {
+  table-layout: fixed;
+}
+
+.economy-chart th,
+.economy-chart td {
+  hyphens: auto;
+}
+
+/* Site header on narrow phones: the language switch is already in the menu */
+@media (max-width: 480px) {
+  .header-inner {
+    gap: 0.6rem;
+  }
+
+  .header-tools .lang-switch-bar {
+    display: none;
+  }
+}
+
+.economy-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  gap: 0.9rem;
+}
+
+.economy-tile {
+  min-width: 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(192, 255, 0, 0.16);
+  border-radius: var(--radius);
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.economy-tile h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.economy-tile-value {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--lime);
+}
+
+.economy-tile-unit {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.economy-tile-change[data-dir='up']::before {
+  content: '▲ ';
+}
+
+.economy-tile-change[data-dir='down']::before {
+  content: '▼ ';
+}
+
+.economy-spark {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  margin: 0.4rem 0;
+}
+
+.economy-spark path {
+  fill: none;
+  stroke: var(--lime);
+  stroke-width: 1.5;
+}
+
+.economy-periods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.9rem;
+}
+
+.economy-periods button,
+.economy-quote-load,
+.economy-quote-all {
+  border: 1px solid rgba(192, 255, 0, 0.28);
+  background: transparent;
+  color: var(--cream);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.economy-periods button[aria-pressed='true'] {
+  background: var(--lime);
+  color: var(--black);
+}
+
+.economy-periods button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.economy-quote,
+.economy-quote-frame {
+  min-width: 0;
+  width: 100%;
+}
+
+.economy-quote-frame {
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 640px) {
+  .economy-board {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .economy-board {
+    grid-template-columns: 1fr;
+  }
 }

@@ -28,7 +28,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Phocoena sinus",
+          "label": "IUCN Red List: Phocoena sinus",
           "url": "https://www.iucnredlist.org/species/17028/214541137"
         },
         {
@@ -169,7 +169,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Panthera tigris",
+          "label": "IUCN Red List: Panthera tigris",
           "url": "https://www.iucnredlist.org/species/15955/214862019"
         }
       ],
@@ -206,7 +206,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Pongo abelii",
+          "label": "IUCN Red List: Pongo abelii",
           "url": "https://www.iucnredlist.org/species/121097935/259045437"
         }
       ],
@@ -362,7 +362,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Diceros bicornis",
+          "label": "IUCN Red List: Diceros bicornis",
           "url": "https://www.iucnredlist.org/species/6557/152728945"
         },
         {
@@ -403,7 +403,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Loxodonta cyclotis",
+          "label": "IUCN Red List: Loxodonta cyclotis",
           "url": "https://www.iucnredlist.org/species/181007989/204404464"
         }
       ],
@@ -440,7 +440,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Gorilla beringei beringei",
+          "label": "IUCN Red List: Gorilla beringei beringei",
           "url": "https://www.iucnredlist.org/species/39999/17989719"
         },
         {
@@ -481,7 +481,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Panthera pardus orientalis",
+          "label": "IUCN Red List: Panthera pardus orientalis",
           "url": "https://www.iucnredlist.org/species/15957/5333757"
         }
       ],
@@ -517,7 +517,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Eretmochelys imbricata",
+          "label": "IUCN Red List: Eretmochelys imbricata",
           "url": "https://www.iucnredlist.org/species/8005/12881238"
         }
       ],
@@ -587,7 +587,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Rhinoceros sondaicus",
+          "label": "IUCN Red List: Rhinoceros sondaicus",
           "url": "https://www.iucnredlist.org/species/19495/18493900"
         }
       ],
@@ -746,7 +746,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Dicerorhinus sumatrensis",
+          "label": "IUCN Red List: Dicerorhinus sumatrensis",
           "url": "https://www.iucnredlist.org/species/6553/18493355"
         }
       ],
@@ -783,7 +783,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Pseudoryx nghetinhensis",
+          "label": "IUCN Red List: Pseudoryx nghetinhensis",
           "url": "https://www.iucnredlist.org/species/18597/166485696"
         },
         {
@@ -854,11 +854,11 @@
       },
       "primarySources": [
         {
-          "label": "New Zealand Department of Conservation — Kākāpō",
+          "label": "New Zealand Department of Conservation: Kākāpō",
           "url": "https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kakapo/"
         },
         {
-          "label": "IUCN Red List — Strigops habroptilus",
+          "label": "IUCN Red List: Strigops habroptilus",
           "url": "https://www.iucnredlist.org/species/22685245/129751169"
         }
       ],
@@ -895,7 +895,7 @@
       },
       "primarySources": [
         {
-          "label": "IUCN Red List — Ambystoma mexicanum",
+          "label": "IUCN Red List: Ambystoma mexicanum",
           "url": "https://www.iucnredlist.org/species/1095/53947343"
         }
       ],

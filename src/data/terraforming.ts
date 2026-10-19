@@ -85,7 +85,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'bradfield-scheme',
     shelf: 'water',
     status: 'proposed',
-    years: '1938–',
+    years: '1938-',
     image: img(
       'bradfield-scheme.jpg',
       'Dicklyon',
@@ -94,15 +94,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'CSIRO — The Bradfield Scheme Assessment',
+        label: 'CSIRO: The Bradfield Scheme Assessment',
         url: 'https://www.csiro.au/en/research/natural-environment/water/water-resource-assessment/the-bradfield-scheme-assessment',
       },
       {
-        label: 'CSIRO (2021) — Historic Bradfield scheme summary',
+        label: 'CSIRO (2021): Historic Bradfield scheme summary',
         url: 'https://www.csiro.au/-/media/LWF/Images/Bradfield/20-00418_LW_REPORT_BradfieldSchemeSummary_Historic_WEB_210521_FINAL.pdf',
       },
       {
-        label: 'ABC News (2019) — Why Bradfield has been rejected',
+        label: 'ABC News (2019): Why Bradfield has been rejected',
         url: 'https://www.abc.net.au/news/2019-06-18/fact-file-bradfield-scheme-drought-relief/11216616',
       },
     ],
@@ -111,7 +111,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'toshka-new-valley',
     shelf: 'water',
     status: 'partial',
-    years: '1997–',
+    years: '1997-',
     image: img(
       'toshka-new-valley.jpg',
       'NASA Johnson Space Center (ISS072-E-574769)',
@@ -120,15 +120,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Ahram Online (2021) — Toshka revival; original 540,000 feddans; stop 2008',
+        label: 'Ahram Online (2021): Toshka revival; original 540,000 feddans; stop 2008',
         url: 'https://english.ahram.org.eg/NewsContent/1/1235/452144/Egypt/Urban--Transport/President-Sisi-inaugurates-land-reclamation-projec.aspx',
       },
       {
-        label: 'Water (2023) — Toshka groundwater model and drawdown limits',
+        label: 'Water (2023): Toshka groundwater model and drawdown limits',
         url: 'https://doi.org/10.3390/w15122183',
       },
       {
-        label: 'Sultan et al. (2023) — GRACE groundwater depletion over Egypt',
+        label: 'Sultan et al. (2023): GRACE groundwater depletion over Egypt',
         url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10119068/',
       },
     ],
@@ -137,7 +137,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'great-man-made-river',
     shelf: 'water',
     status: 'built-struggling',
-    years: '1983–',
+    years: '1983-',
     image: img(
       'great-man-made-river.jpg',
       'Victor Korniyenko',
@@ -146,15 +146,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'UNDP (2026) — National Water Security Strategy for Libya',
+        label: 'UNDP (2026): National Water Security Strategy for Libya',
         url: 'https://www.undp.org/sites/g/files/zskgke326/files/2026-04/undp-ly-national-water-security-2026.pdf',
       },
       {
-        label: 'IGRAC — Nubian Sandstone Aquifer System',
+        label: 'IGRAC: Nubian Sandstone Aquifer System',
         url: 'https://www.un-igrac.org/special-project/nsas',
       },
       {
-        label: 'FAO AQUASTAT — country water profiles',
+        label: 'FAO AQUASTAT: country water profiles',
         url: 'https://www.fao.org/aquastat/en/countries-and-basins/country-profiles',
       },
     ],
@@ -163,7 +163,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'aral-sea-diversion',
     shelf: 'water',
     status: 'failed',
-    years: '1960s–',
+    years: '1960s-',
     image: img(
       'aral-sea-diversion.jpg',
       'NASA Earth Observatory',
@@ -172,15 +172,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'NASA Earth Observatory — World of Change: Shrinking Aral Sea',
+        label: 'NASA Earth Observatory: World of Change: Shrinking Aral Sea',
         url: 'https://earthobservatory.nasa.gov/world-of-change/AralSea',
       },
       {
-        label: 'World Bank — Syr Darya Control and Northern Aral Sea Project',
+        label: 'World Bank: Syr Darya Control and Northern Aral Sea Project',
         url: 'https://projects.worldbank.org/en/projects-operations/project-detail/P046045',
       },
       {
-        label: 'The Diplomat (2026) — North Aral recovery and southern dust',
+        label: 'The Diplomat (2026): North Aral recovery and southern dust',
         url: 'https://thediplomat.com/2026/04/why-the-aral-seas-restoration-matters-beyond-central-asia/',
       },
     ],
@@ -189,7 +189,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'qattara-depression',
     shelf: 'water',
     status: 'proposed',
-    years: '1916–2026',
+    years: '1916-2026',
     image: img(
       'qattara-depression.jpg',
       'cheesy42',
@@ -198,11 +198,11 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Ahram Online (2026) — Egypt scraps Qattara seawater scheme',
+        label: 'Ahram Online (2026): Egypt scraps Qattara seawater scheme',
         url: 'https://english.ahram.org.eg/NewsContent/1/1235/567838/Egypt/Urban--Transport/Egypt-deems-Qattara-Depression-seawater-unfeasible.aspx',
       },
       {
-        label: 'Nature (1975) — After the dam the depression?',
+        label: 'Nature (1975): After the dam the depression?',
         url: 'https://doi.org/10.1038/255570a0',
       },
     ],
@@ -211,7 +211,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'south-north-water-transfer',
     shelf: 'water',
     status: 'ongoing',
-    years: '2002–',
+    years: '2002-',
     image: img(
       'south-north-water-transfer.jpg',
       'Windmemories',
@@ -220,15 +220,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Zhang (2016) — Engineering review of SNWDP routes and start dates',
+        label: 'Zhang (2016): Engineering review of SNWDP routes and start dates',
         url: 'https://doi.org/10.1016/J.ENG.2016.03.022',
       },
       {
-        label: 'Water (2025) — Review: costs, displacement, western route unbuilt',
+        label: 'Water (2025): Review: costs, displacement, western route unbuilt',
         url: 'https://www.mdpi.com/2073-4441/17/22/3275',
       },
       {
-        label: 'China Daily (2023) — Western route still planning',
+        label: 'China Daily (2023): Western route still planning',
         url: 'https://www.chinadaily.com.cn/a/202309/12/WS64fff7fea310d2dce4bb54f9.html',
       },
     ],
@@ -237,7 +237,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'siberian-river-reversal',
     shelf: 'water',
     status: 'proposed',
-    years: '1949–1986',
+    years: '1949-1986',
     image: img(
       'siberian-river-reversal.jpg',
       'Summ',
@@ -246,15 +246,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'UPI (15 Aug 1986) — Soviets scrap river diversion project',
+        label: 'UPI (15 Aug 1986): Soviets scrap river diversion project',
         url: 'https://www.upi.com/Archives/1986/08/15/Soviets-scrap-river-diversion-project/7500524462400/',
       },
       {
-        label: 'Ward (2013) — Birth, death, and rebirth of Sibaral',
+        label: 'Ward (2013): Birth, death, and rebirth of Sibaral',
         url: 'https://src-h.slav.hokudai.ac.jp/jcrees/2013Osaka/61Ward.pdf',
       },
       {
-        label: 'Davydov (1949/1972 translation) — Yenisey–Ob–Aral–Caspian scheme',
+        label: 'Davydov (1949/1972 translation): Yenisey-Ob-Aral-Caspian scheme',
         url: 'https://doi.org/10.1080/00385417.1972.10770368',
       },
     ],
@@ -263,7 +263,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'jonglei-canal',
     shelf: 'water',
     status: 'failed',
-    years: '1978–1984',
+    years: '1978-1984',
     image: img(
       'jonglei-canal.jpg',
       'Karen Conniff / CGIAR Challenge Program on Water and Food',
@@ -272,15 +272,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'AP (2022) — Opposition to a Jonglei revival; incomplete canal',
+        label: 'AP (2022): Opposition to a Jonglei revival; incomplete canal',
         url: 'https://apnews.com/article/climate-floods-sudan-environment-wetlands-f1a327f23d51bb0b8abe0671ddd5f82e',
       },
       {
-        label: 'NASA Earth Observatory — The Sudd Swamp',
+        label: 'NASA Earth Observatory: The Sudd Swamp',
         url: 'https://earthobservatory.nasa.gov/images/7739/the-sudd-swamp',
       },
       {
-        label: 'Howell, Lock & Cobb, eds. (1988) — The Jonglei Canal (Cambridge)',
+        label: 'Howell, Lock & Cobb, eds. (1988): The Jonglei Canal (Cambridge)',
         url: 'https://doi.org/10.1017/CBO9780511753022',
       },
     ],
@@ -289,7 +289,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'three-north-shelterbelt',
     shelf: 'desert',
     status: 'ongoing',
-    years: '1978–2050',
+    years: '1978-2050',
     image: img(
       'three-north-shelterbelt.jpg',
       'FreyGruppe',
@@ -298,11 +298,11 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Annual Review — Great Green Walls (2023)',
+        label: 'Annual Review: Great Green Walls (2023)',
         url: 'https://doi.org/10.1146/annurev-environ-112321-111102',
       },
       {
-        label: 'Zheng et al. (2024) — Three-North Protective Forest Program 1978–2022',
+        label: 'Zheng et al. (2024): Three-North Protective Forest Program 1978-2022',
         url: 'https://doi.org/10.1007/s11427-024-2705-4',
       },
     ],
@@ -311,7 +311,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'africa-great-green-wall',
     shelf: 'desert',
     status: 'partial',
-    years: '2007–',
+    years: '2007-',
     image: img(
       'africa-great-green-wall.jpg',
       'European Space Agency',
@@ -320,11 +320,11 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'UNCCD — Great Green Wall',
+        label: 'UNCCD: Great Green Wall',
         url: 'https://www.unccd.int/our-work/ggwi',
       },
       {
-        label: 'UNCCD (2020) — Great Green Wall Implementation Status and Way Ahead to 2030',
+        label: 'UNCCD (2020): Great Green Wall Implementation Status and Way Ahead to 2030',
         url: 'https://www.unccd.int/resources/publications/great-green-wall-implementation-status-and-way-ahead-2030',
       },
     ],
@@ -333,7 +333,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'saudi-green-initiative',
     shelf: 'desert',
     status: 'ongoing',
-    years: '2021–',
+    years: '2021-',
     image: img(
       'saudi-green-initiative.jpg',
       'O.V.E.R.V.I.E.W. (Flickr)',
@@ -342,15 +342,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Vision 2030 — Saudi Green Initiative',
+        label: 'Vision 2030: Saudi Green Initiative',
         url: 'https://www.vision2030.gov.sa/en/explore/programs/saudi-green-initiative',
       },
       {
-        label: 'SPA / MEWA (2026) — official 1 million ha / 159 million trees claim',
+        label: 'SPA / MEWA (2026): official 1 million ha / 159 million trees claim',
         url: 'https://www.mewa.gov.sa/en/MediaCenter/News/Pages/News14482020.aspx',
       },
       {
-        label: 'FAO AQUASTAT — country water profiles (non-renewable groundwater context)',
+        label: 'FAO AQUASTAT: country water profiles (non-renewable groundwater context)',
         url: 'https://www.fao.org/aquastat/en/countries-and-basins/country-profiles',
       },
     ],
@@ -359,7 +359,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'loess-plateau-rehabilitation',
     shelf: 'desert',
     status: 'partial',
-    years: '1994–2005',
+    years: '1994-2005',
     image: img(
       'loess-plateau-rehabilitation.jpg',
       '螺钉',
@@ -368,15 +368,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'World Bank — Loess Plateau case study (PDF)',
+        label: 'World Bank: Loess Plateau case study (PDF)',
         url: 'https://documents1.worldbank.org/curated/en/142661468762366534/pdf/307770CHA0Loess0Plateau01see0also0307591.pdf',
       },
       {
-        label: 'World Bank — Loess Plateau Watershed Rehabilitation Project (P003608)',
+        label: 'World Bank: Loess Plateau Watershed Rehabilitation Project (P003608)',
         url: 'https://projects.worldbank.org/en/projects-operations/project-detail/P003608',
       },
       {
-        label: 'World Bank — Second Loess Plateau Watershed Rehabilitation Project (P056216)',
+        label: 'World Bank: Second Loess Plateau Watershed Rehabilitation Project (P056216)',
         url: 'https://projects.worldbank.org/en/projects-operations/project-detail/P056216',
       },
     ],
@@ -385,7 +385,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'jordan-badia-restoration',
     shelf: 'desert',
     status: 'partial',
-    years: '2013–',
+    years: '2013-',
     image: img(
       'jordan-badia-restoration.jpg',
       'Iainsimpsonstewart',
@@ -394,15 +394,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'UNCC — Claim 5000304 Badia rangeland restoration',
+        label: 'UNCC: Claim 5000304 Badia rangeland restoration',
         url: 'https://uncc.un.org/en/what-we-did/follow-up-programme-environmental-awards/claim-5000304-cooperative-rangeland-restoration',
       },
       {
-        label: 'UNCC — Follow-up Programme for Environmental Awards',
+        label: 'UNCC: Follow-up Programme for Environmental Awards',
         url: 'https://uncc.un.org/en/what-we-did/follow-programme-environmental-awards',
       },
       {
-        label: 'ICARDA — Watershed restoration in Badia areas of Jordan',
+        label: 'ICARDA: Watershed restoration in Badia areas of Jordan',
         url: 'https://icarda.org/research/projects/watershed-restoration-badia-areas-jordan',
       },
     ],
@@ -411,7 +411,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'stratospheric-aerosol-injection',
     shelf: 'climate',
     status: 'research',
-    years: '1990s–',
+    years: '1990s-',
     image: img(
       'stratospheric-aerosol-injection.jpg',
       'Dave Harlow, USGS',
@@ -420,15 +420,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'IPCC AR6 WG I — Solar Radiation Modification (Ch. 4 / Cross-Chapter Box)',
+        label: 'IPCC AR6 WG I: Solar Radiation Modification (Ch. 4 / Cross-Chapter Box)',
         url: 'https://www.ipcc.ch/report/ar6/wg1/',
       },
       {
-        label: 'Harvard SCoPEx — project terminated (March 2024)',
+        label: 'Harvard SCoPEx: project terminated (March 2024)',
         url: 'https://geoengineering.environment.harvard.edu/scopex-announcement',
       },
       {
-        label: 'MIT Technology Review (2024) — Harvard halted SCoPEx',
+        label: 'MIT Technology Review (2024): Harvard halted SCoPEx',
         url: 'https://www.technologyreview.com/2024/03/18/1089879/harvard-halts-its-long-planned-atmospheric-geoengineering-experiment/',
       },
     ],
@@ -437,7 +437,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'ocean-fertilization',
     shelf: 'climate',
     status: 'research',
-    years: '1993–',
+    years: '1993-',
     image: img(
       'ocean-fertilization.jpg',
       'NASA',
@@ -446,11 +446,11 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Boyd et al., Nature (2000) — IronEx / Southern Ocean iron experiments',
+        label: 'Boyd et al., Nature (2000): IronEx / Southern Ocean iron experiments',
         url: 'https://www.nature.com/articles/35037500',
       },
       {
-        label: 'Martin et al. (2013) — LOHAFEX: production rose, export flux did not',
+        label: 'Martin et al. (2013): LOHAFEX: production rose, export flux did not',
         url: 'https://doi.org/10.1002/gbc.20077',
       },
     ],
@@ -459,7 +459,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'marine-cloud-brightening',
     shelf: 'climate',
     status: 'research',
-    years: '1990–',
+    years: '1990-',
     image: img(
       'marine-cloud-brightening.jpg',
       'MODIS Land Rapid Response Team, NASA GSFC',
@@ -468,15 +468,15 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'Latham et al. (2012) — Marine cloud brightening review',
+        label: 'Latham et al. (2012): Marine cloud brightening review',
         url: 'https://doi.org/10.1098/rsta.2012.0086',
       },
       {
-        label: 'University of Washington — Marine Cloud Brightening Research Program',
+        label: 'University of Washington: Marine Cloud Brightening Research Program',
         url: 'https://atmos.uw.edu/faculty-and-research/marine-cloud-brightening-program/',
       },
       {
-        label: 'RRAP / Southern Cross University — reef MCB field campaigns',
+        label: 'RRAP / Southern Cross University: reef MCB field campaigns',
         url: 'https://gbrrestoration.org/program/cooling-and-shading/',
       },
     ],
@@ -485,7 +485,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'cirrus-cloud-thinning',
     shelf: 'climate',
     status: 'research',
-    years: '2010s–',
+    years: '2010s-',
     image: img(
       'cirrus-cloud-thinning.jpg',
       'MODIS Land Rapid Response Team, NASA GSFC',
@@ -494,19 +494,19 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'IPCC AR6 WG I — Chapter 4 (SRM / radiation proposals incl. CCT)',
+        label: 'IPCC AR6 WG I: Chapter 4 (SRM / radiation proposals incl. CCT)',
         url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/',
       },
       {
-        label: 'IPCC AR6 WG I — Chapter 4 PDF',
+        label: 'IPCC AR6 WG I: Chapter 4 PDF',
         url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter04.pdf',
       },
       {
-        label: 'NOAA CSL — State of the Science Fact Sheet: Solar Radiation Modification (July 2024)',
+        label: 'NOAA CSL: State of the Science Fact Sheet: Solar Radiation Modification (July 2024)',
         url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
       },
       {
-        label: 'Gasparini et al. (2017) — ACP (cirrus seeding proxies in models)',
+        label: 'Gasparini et al. (2017): ACP (cirrus seeding proxies in models)',
         url: 'https://acp.copernicus.org/articles/17/4871/2017/',
       },
     ],
@@ -515,7 +515,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'surface-albedo-modification',
     shelf: 'climate',
     status: 'research',
-    years: '1990s–',
+    years: '1990s-',
     image: img(
       'surface-albedo-modification.jpg',
       'Anthony Delanoix',
@@ -524,19 +524,19 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'U.S. EPA — Using Cool Roofs to Reduce Heat Islands',
+        label: 'U.S. EPA: Using Cool Roofs to Reduce Heat Islands',
         url: 'https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands',
       },
       {
-        label: 'IPCC AR6 WG III — Chapter 9 Buildings (PDF)',
+        label: 'IPCC AR6 WG III: Chapter 9 Buildings (PDF)',
         url: 'https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter09.pdf',
       },
       {
-        label: 'NOAA CSL — SRM State of the Science Fact Sheet (July 2024; lists surface albedo enhancement)',
+        label: 'NOAA CSL: SRM State of the Science Fact Sheet (July 2024; lists surface albedo enhancement)',
         url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
       },
       {
-        label: 'NASEM — Reflecting Sunlight (research agenda & governance; catalog)',
+        label: 'NASEM: Reflecting Sunlight (research agenda & governance; catalog)',
         url: 'https://nap.nationalacademies.org/catalog/25762/reflecting-sunlight-recommendations-for-solar-geoengineering-research-and-research-governance',
       },
     ],
@@ -545,7 +545,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'ocean-alkalinity-enhancement',
     shelf: 'climate',
     status: 'research',
-    years: '2010s–',
+    years: '2010s-',
     image: img(
       'ocean-alkalinity-enhancement.jpg',
       'Hendee / NOAA',
@@ -554,19 +554,19 @@ export const geoMeta: GeoMeta[] = [
     ),
     sources: [
       {
-        label: 'NOAA Ocean Acidification Program — Carbon Dioxide Removal',
+        label: 'NOAA Ocean Acidification Program: Carbon Dioxide Removal',
         url: 'https://oceanacidification.noaa.gov/carbon-dioxide-removal/',
       },
       {
-        label: 'NOAA / NOPP — Marine CDR research awards overview',
+        label: 'NOAA / NOPP: Marine CDR research awards overview',
         url: 'https://oceanacidification.noaa.gov/fy23-nopp-mcdr-awards/',
       },
       {
-        label: 'National Academies — A Research Strategy for Ocean-based CDR (catalog)',
+        label: 'National Academies: A Research Strategy for Ocean-based CDR (catalog)',
         url: 'https://nap.nationalacademies.org/catalog/26278/a-research-strategy-for-ocean-based-carbon-dioxide-removal-and-sequestration',
       },
       {
-        label: 'NOAA Science Advisory Board — Draft CDR Research Strategy PDF',
+        label: 'NOAA Science Advisory Board: Draft CDR Research Strategy PDF',
         url: 'https://sciencecouncil.noaa.gov/wp-content/uploads/2022/09/Clean-copy-of-Draft-CDR-Research-Strategy.pdf',
       },
     ],
@@ -575,7 +575,7 @@ export const geoMeta: GeoMeta[] = [
     slug: 'glacial-climate-intervention',
     shelf: 'climate',
     status: 'research',
-    years: '2024–',
+    years: '2024-',
     image: img(
       'glacial-climate-intervention.jpg',
       'NASA ICE / James Yungel',
@@ -588,7 +588,7 @@ export const geoMeta: GeoMeta[] = [
         url: 'https://epic.awi.de/id/eprint/60129/1/Glacial_Climate_Intervention_White_Paper_6.4.24_FINAL2.pdf',
       },
       {
-        label: 'Moore et al. / survey — Interventions to conserve the frozen North (Climatic Change, 2024)',
+        label: 'Moore et al. / survey: Interventions to conserve the frozen North (Climatic Change, 2024)',
         url: 'https://link.springer.com/article/10.1007/s10584-024-03705-6',
       },
       {
@@ -596,7 +596,7 @@ export const geoMeta: GeoMeta[] = [
         url: 'https://doi.org/10.1007/s10584-024-03705-6',
       },
       {
-        label: 'NOAA CSL — SRM SoS (context: SRM ≠ ice-sheet engineering)',
+        label: 'NOAA CSL: SRM SoS (context: SRM ≠ ice-sheet engineering)',
         url: 'https://csl.noaa.gov/factsheets/SRMsos.pdf',
       },
     ],
@@ -637,7 +637,7 @@ export function geoDetailPath(slug: string): string {
 export const geoSectionImage = {
   file: 'geoengineering-section-bg.jpg',
   credit:
-    'NASA Johnson Space Center Earth Science and Image Analysis Laboratory — Toshka Lakes, southern Egypt (STS-103)',
+    'NASA Johnson Space Center Earth Science and Image Analysis Laboratory: Toshka Lakes, southern Egypt (STS-103)',
   license: 'Public domain',
   sourceUrl:
     'https://commons.wikimedia.org/wiki/File:Toshka_Lakes,_Southern_Egypt_(1008_-_sts103-712-7_lrg).jpg',
@@ -648,7 +648,7 @@ export const geoSectionSrc = `/images/geoengineering/${geoSectionImage.file}`;
 /** Hub-only hero. Shelf pages keep `geoSectionImage`. */
 export const geoHubBackdrop = {
   file: 'terraforming-hub-bg.jpg',
-  credit: 'Founder-supplied split landscape — drought beside returning life',
+  credit: 'Founder-supplied split landscape: drought beside returning life',
   license: 'Site asset',
   width: 1280,
   height: 720,

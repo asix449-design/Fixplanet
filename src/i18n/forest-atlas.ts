@@ -266,7 +266,7 @@ const pl = {
     blurb:
       'Jak wysokie jest piętro koron lasu według lidaru z orbity: średnia wysokość wierzchołka na siatce około 1 kilometra.',
     detailShort:
-      'GEDI L3 (ORNL DAAC 1952) — siatkowe metryki powierzchni, w tym średnia wysokość koron RH100 (~1 km, ok. ±52° szerokości). Dane i dokumentacja są publikowane w NASA Earthdata, w przeglądarce ORNL DAAC oraz na gedi.umd.edu. Warstwa pokazuje strukturę i wysokość koron, a nie utratę powierzchni i nie biomasę nadziemną.',
+      'GEDI L3 (ORNL DAAC 1952): siatkowe metryki powierzchni, w tym średnia wysokość koron RH100 (~1 km, ok. ±52° szerokości). Dane i dokumentacja są publikowane w NASA Earthdata, w przeglądarce ORNL DAAC oraz na gedi.umd.edu. Warstwa pokazuje strukturę i wysokość koron, a nie utratę powierzchni i nie biomasę nadziemną.',
   },
   'aboveground-biomass': {
     title: 'Biomasa nadziemna',
@@ -274,7 +274,7 @@ const pl = {
     blurb:
       'Gęstość biomasy nadziemnej z lidaru, w tonach na hektar na siatce.',
     detailShort:
-      'GEDI L4B (ORNL DAAC 2299) — siatkowa gęstość biomasy nadziemnej (AGBD). To gęstość biomasy na siatce, inna metryka niż ogólny zapas węgla w statystykach. Otworzyć Earthdata / dsviewer / przewodnik.',
+      'GEDI L4B (ORNL DAAC 2299): siatkowa gęstość biomasy nadziemnej (AGBD). To gęstość biomasy na siatce, inna metryka niż ogólny zapas węgla w statystykach. Otworzyć Earthdata / dsviewer / przewodnik.',
   },
   'burned-area': {
     title: 'Areał spalenisk',
@@ -290,7 +290,7 @@ const pl = {
     blurb:
       'Strefy klimatyczne i ekologiczne do sprawozdawczości leśnej: podział lądu według klimatu i ekologii.',
     detailShort:
-      'GEZ (drugie wydanie / 2010) — klasy dla FRA. Dane i dokumentacja są publikowane w katalogu FAO, w PDF ap861e, w Open Knowledge i na stronie FRA. GEZ tworzy klimatyczno-ekologiczne ramy dla statystyk leśnych; jej klasy różnią się od rekonstrukcji biomów oraz warstw stanu lasów.',
+      'GEZ (drugie wydanie / 2010): klasy dla FRA. Dane i dokumentacja są publikowane w katalogu FAO, w PDF ap861e, w Open Knowledge i na stronie FRA. GEZ tworzy klimatyczno-ekologiczne ramy dla statystyk leśnych; jej klasy różnią się od rekonstrukcji biomów oraz warstw stanu lasów.',
   },
   'planted-forests': {
     title: 'Lasy sadzone',
@@ -333,7 +333,7 @@ const lv = {
     blurb:
       'Cik augsts ir meža vainagu stāvs pēc kosmiskā lidara mērījuma: vidējais vainaga augšas augstums uz režģa apmēram 1 kilometra.',
     detailShort:
-      'GEDI L3 (ORNL DAAC 1952) — režģa virsmas metriki, tostarp vidējais vainagu augstums RH100 (~1 km, aptuveni ±52° platuma). Dati un dokumentācija ir publicēti NASA Earthdata, ORNL DAAC datu skatītājā un vietnē gedi.umd.edu. Slānis rāda vainagu struktūru un augstumu, ne platības zudumu un ne virszemes biomasu.',
+      'GEDI L3 (ORNL DAAC 1952): režģa virsmas metriki, tostarp vidējais vainagu augstums RH100 (~1 km, aptuveni ±52° platuma). Dati un dokumentācija ir publicēti NASA Earthdata, ORNL DAAC datu skatītājā un vietnē gedi.umd.edu. Slānis rāda vainagu struktūru un augstumu, ne platības zudumu un ne virszemes biomasu.',
   },
   'aboveground-biomass': {
     title: 'Virszemes biomasa',
@@ -341,7 +341,7 @@ const lv = {
     blurb:
       'Virszemes biomasas blīvums no lidara, tonnās uz hektāru uz režģa.',
     detailShort:
-      'GEDI L4B (ORNL DAAC 2299) — režģa virszemes biomasas blīvums (AGBD). Tas ir biomasas blīvums uz režģa, cita metrika nekā kopējais oglekļa krājums statistikā. Atvērt Earthdata / dsviewer / ceļvedi.',
+      'GEDI L4B (ORNL DAAC 2299): režģa virszemes biomasas blīvums (AGBD). Tas ir biomasas blīvums uz režģa, cita metrika nekā kopējais oglekļa krājums statistikā. Atvērt Earthdata / dsviewer / ceļvedi.',
   },
   'burned-area': {
     title: 'Izdegušās platības',
@@ -357,7 +357,7 @@ const lv = {
     blurb:
       'Klimata un ekoloģiskās zonas meža ziņošanai: sauszemes iedalījums pēc klimata un ekoloģijas.',
     detailShort:
-      'GEZ (otrais izdevums / 2010) — klases FRA vajadzībām. Dati un dokumentācija ir publicēti FAO katalogā, PDF ap861e, Open Knowledge un FRA vietnē. GEZ veido klimatiski ekoloģisku ietvaru mežu statistikai; tās klases atšķiras no biomu rekonstrukcijām un mežu stāvokļa slāņiem.',
+      'GEZ (otrais izdevums / 2010): klases FRA vajadzībām. Dati un dokumentācija ir publicēti FAO katalogā, PDF ap861e, Open Knowledge un FRA vietnē. GEZ veido klimatiski ekoloģisku ietvaru mežu statistikai; tās klases atšķiras no biomu rekonstrukcijām un mežu stāvokļa slāņiem.',
   },
   'planted-forests': {
     title: 'Stādītie meži',

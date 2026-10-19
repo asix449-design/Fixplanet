@@ -1,0 +1,20 @@
+---
+interface Props {
+  name: string;
+  symbol: string;
+  locale: string;
+  loadLabel: string;
+}
+
+const { name, symbol, locale, loadLabel } = Astro.props;
+---
+
+<article class="forest-stat economy-quote" data-symbol={symbol} data-name={name} data-locale={locale}>
+  <h3>{name}</h3>
+  <p class="economy-tile-unit">{symbol}</p>
+  <button class="economy-quote-load" type="button">{loadLabel}</button>
+  <div class="economy-quote-frame"></div>
+</article>
+<script>
+  import '../scripts/economyQuotes';
+</script>

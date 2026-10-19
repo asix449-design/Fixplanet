@@ -16,7 +16,7 @@ interface Props {
 const locale = resolveLocale(Astro.currentLocale);
 const page = getLawPage(locale);
 const { item } = Astro.props;
-const title = `${item.title} — Fix Planet`;
+const title = `${item.title}: Fix Planet`;
 const image = lawImageSrc(item.image);
 const categoryHref = localizePath(lawCategoryPath(item.category), locale);
 const birdsHref = localizePath(lawDetailPath('birds-directive'), locale);

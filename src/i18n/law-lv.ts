@@ -3,7 +3,7 @@ import type { LawCopy } from '../data/law';
 export const lv: Record<string, LawCopy> = {
   'paris-agreement': {
     title: 'Parīzes nolīgums',
-    hook: 'Galvenais spēkā esošais klimata līgums. Saista puses ar NDC un mērķi «krietni zem 2°C / tiekties uz 1,5°C» — nevis globālu emisiju griestu tekstā.',
+    hook: 'Galvenais spēkā esošais klimata līgums. Saista puses ar NDC un mērķi «krietni zem 2°C / tiekties uz 1,5°C»: nevis globālu emisiju griestu tekstā.',
     imageAlt:
       'Fransuā Olands, Lorāns Fabius un Ban Kimuns aplaudē COP21 skatuvē pēc Parīzes nolīguma pieņemšanas',
     jurisdiction: 'ANO Vispārējā konvencija par klimata pārmaiņām (puses)',
@@ -12,34 +12,34 @@ export const lv: Record<string, LawCopy> = {
       'Parīzes nolīgums UNFCCC ietvaros; pieņemts 2015. gada 12. decembrī (COP21); stājās spēkā 2016. gada 4. novembrī',
     yearStatus: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016.',
     what: 'Juridiski saistošs līgums pie UNFCCC: NDC, pārskati, globālā izvērtēšana; temperatūras mērķi, adaptācija, finansējums, piesaistītāji (tostarp meži).',
-    where: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016. Pušu saraksts — ANO depozitārijs / UNFCCC.',
+    where: 'Pieņemts Parīzē 12.12.2015; spēkā no 04.11.2016. Pušu saraksts: ANO depozitārijs / UNFCCC.',
     effects:
-      'Iecerētais efekts: savietot nacionālos klimata plānus vienā līguma arhitektūrā, piecu gadu ambīciju ciklu un iestrādāt 1,5°C daudzpusējās tiesībās. Iznākumi atkarīgi no NDC satura un iekšējās īstenošanas — līgums pats neaizver elektrostaciju.',
+      'Iecerētais efekts: savietot nacionālos klimata plānus vienā līguma arhitektūrā, piecu gadu ambīciju ciklu un iestrādāt 1,5°C daudzpusējās tiesībās. Iznākumi atkarīgi no NDC satura un iekšējās īstenošanas: līgums pats neaizver elektrostaciju.',
     caveats: 'NDC saturu nosaka valstis; līgums pats neaizver elektrostaciju. Nejauc ar Kioto protokolu.',
     sourcesNote: 'Tie paši trīs URL: UNFCCC lapa; nolīguma angļu PDF; ANO depozitārijs.',
   },
   'montreal-protocol': {
     title: 'Monreālas protokols par ozona slāni noārdošām vielām',
-    hook: 'Ozona līgums, kas reāli samazināja ODS ražošanu un tirdzniecību. Kigali vēlāk pievienoja HFC klimata dēļ — tā pati Monreālas mašīna, ne otrs UNFCCC.',
+    hook: 'Ozona līgums, kas reāli samazināja ODS ražošanu un tirdzniecību. Kigali vēlāk pievienoja HFC klimata dēļ: tā pati Monreālas mašīna, ne otrs UNFCCC.',
     imageAlt:
-      'NASA vizualizācija ar zemu ozonu virs Antarktīdas — ozona caurums, kura dēļ rakstīts Monreālas protokols',
+      'NASA vizualizācija ar zemu ozonu virs Antarktīdas: ozona caurums, kura dēļ rakstīts Monreālas protokols',
     jurisdiction: 'Monreālas protokola puses (UNEP ozona sekretariāts)',
     officialName: 'Monreālas protokols par ozona slāni noārdošām vielām',
     citation:
       'Monreālas protokols (1987, ar grozījumiem); Kigali grozījums 2016. gada 15. oktobrī; HFC kontrole no 2019. gada 1. janvāra pusēm, kurām grozījums stājies spēkā',
     yearStatus: 'Protokols no 1987. Kigali spēkā no 01.01.2019 pēc ratifikācijas sliekšņiem.',
-    what: 'ODS samazināšanas grafiki, tirdzniecības ierobežojumi, pārskati, Daudzpusējais fonds; Kigali — pakāpeniska HFC samazināšana.',
+    what: 'ODS samazināšanas grafiki, tirdzniecības ierobežojumi, pārskati, Daudzpusējais fonds; Kigali: pakāpeniska HFC samazināšana.',
     where: 'Gandrīz universāla dalība; Kigali spēkā no 01.01.2019 pēc ratifikācijas sliekšņiem.',
     effects:
-      'Dokumentētie protokola panākumi ir ODS izslēgšanas grafiki un ozona slāņa atjaunošanās rādītāji (sekretariāta / WMO–UNEP izvērtējumi, ne mārketings). Kigali iecerētais klimata ieguvums ir novērstā HFC sasilšana; izpilde seko nacionālajiem samazināšanas grafikiem.',
+      'Dokumentētie protokola panākumi ir ODS izslēgšanas grafiki un ozona slāņa atjaunošanās rādītāji (sekretariāta / WMO-UNEP izvērtējumi, ne mārketings). Kigali iecerētais klimata ieguvums ir novērstā HFC sasilšana; izpilde seko nacionālajiem samazināšanas grafikiem.',
     caveats: 'Ozona panākumi ≠ CO₂/metāna kontrole (tas ir Parīze/UNFCCC). Nekartē kā «galveno klimata līgumu».',
-    sourcesNote: 'Tie paši trīs URL: ozona sekretariāts — protokols un grozījumi; ANO depozitārijs — Kigali.',
+    sourcesNote: 'Tie paši trīs URL: ozona sekretariāts: protokols un grozījumi; ANO depozitārijs: Kigali.',
   },
   'eu-deforestation-regulation': {
     title: 'ES regula par produktiem bez mežu izciršanas (EUDR)',
     hook: 'ES tirgus noteikums: uzskaitītajām precēm jābūt bez mežu izciršanas un likumīgām. Pieņemta 2023; galvenie pienākumi no 2026. gada beigām / 2027. gada vidus pēc operatora lieluma. Tas nav ANO mežu līgums.',
     imageAlt:
-      'Eļļas palmu plantācija ap palikušu lietusmeža fragmentu Borneo — preces un meža mala, ko sedz ES noteikums',
+      'Eļļas palmu plantācija ap palikušu lietusmeža fragmentu Borneo: preces un meža mala, ko sedz ES noteikums',
     jurisdiction: 'Eiropas Savienība',
     officialName: 'Regula par produktiem, kas nav saistīti ar mežu izciršanu',
     citation: 'Regula (ES) 2023/1115 (2023. gada 31. maijs) par produktiem, kas nav saistīti ar mežu izciršanu',
@@ -49,62 +49,62 @@ export const lv: Record<string, LawCopy> = {
     where:
       'Regula spēkā; piemērošana lielajiem/vidējiem no 30.12.2026, mikro/mazajiem no 30.06.2027 (ar atrunām bijušajiem EUTR). Nelikt «izskatīšanā».',
     effects:
-      'Statūtu mērķi: mazināt ES pieprasījuma dzīto mežu izciršanu/degradāciju un saistītās emisijas un bioloģiskās daudzveidības zudumu. Komisijas ietekmes novērtējuma emisiju aplēses — iecerētas/modelētas, ne izmērīti 2026. gada iznākumi.',
+      'Statūtu mērķi: mazināt ES pieprasījuma dzīto mežu izciršanu/degradāciju un saistītās emisijas un bioloģiskās daudzveidības zudumu. Komisijas ietekmes novērtējuma emisiju aplēses: iecerētas/modelētas, ne izmērīti 2026. gada iznākumi.',
     caveats: 'Noplūde citos tirgos; atlikšana ≠ «jau bloķē visu šodien».',
-    sourcesNote: 'Tie paši divi URL: EUR-Lex — Regula (ES) 2023/1115; Komisijas lapa par produktiem bez mežu izciršanas.',
+    sourcesNote: 'Tie paši divi URL: EUR-Lex: Regula (ES) 2023/1115; Komisijas lapa par produktiem bez mežu izciršanas.',
   },
   'eu-ets': {
     title: 'ES emisiju kvotu tirdzniecības sistēma (EU ETS)',
-    hook: 'ES cap-and-trade lielajiem emitētājiem. Sarūkošs kvotu griesti, izsoles un tirgus stabilitātes rezerve — ne mājsaimniecības oglekļa nodoklis un ne pats Parīzes nolīgums.',
+    hook: 'ES cap-and-trade lielajiem emitētājiem. Sarūkošs kvotu griesti, izsoles un tirgus stabilitātes rezerve: ne mājsaimniecības oglekļa nodoklis un ne pats Parīzes nolīgums.',
     imageAlt:
-      'Niderausemas lignīta elektrostacija Vācijā — liels stacionārs emitētājs tāda veida, kādu aptver EU ETS',
+      'Niderausemas lignīta elektrostacija Vācijā: liels stacionārs emitētājs tāda veida, kādu aptver EU ETS',
     jurisdiction: 'Eiropas Savienība',
     officialName: 'ES emisiju kvotu tirdzniecības sistēma',
     citation: 'Direktīva 2003/87/EK (ar grozījumiem) par siltumnīcefekta gāzu emisiju kvotu tirdzniecības sistēmu',
-    yearStatus: 'Spēkā ES; pamats — Direktīva 2003/87/EK ar grozījumiem.',
+    yearStatus: 'Spēkā ES; pamats: Direktīva 2003/87/EK ar grozījumiem.',
     what: 'Kvotu tirgus aptvertajām iekārtām (un aviācijai / tālākiem sektoriem pēc grozījumiem); kvotu nodošana pret verificētām emisijām.',
-    where: 'Spēkā ES; pamats — Direktīva 2003/87/EK ar grozījumiem.',
+    where: 'Spēkā ES; pamats: Direktīva 2003/87/EK ar grozījumiem.',
     effects:
-      'Iecerētais: uzlikt cenu aptvertajām SEG emisijām un tās samazināt zem krītoša griesta. Dokumentētie sistēmas iznākumi ir EEA/Komisijas ETS ziņojumos — tonnas no turienes, ne izdomātas.',
-    caveats: 'Ne visa ekonomika; ne Parīze un ne EUDR. Tonnu skaitļi — tikai no EEA/Komisijas ziņojumiem.',
-    sourcesNote: 'Tie paši trīs URL: Komisijas EU ETS centrs; lapa «What is the EU ETS»; EUR-Lex — Direktīva 2003/87/EK.',
+      'Iecerētais: uzlikt cenu aptvertajām SEG emisijām un tās samazināt zem krītoša griesta. Dokumentētie sistēmas iznākumi ir EEA/Komisijas ETS ziņojumos: tonnas no turienes, ne izdomātas.',
+    caveats: 'Ne visa ekonomika; ne Parīze un ne EUDR. Tonnu skaitļi: tikai no EEA/Komisijas ziņojumiem.',
+    sourcesNote: 'Tie paši trīs URL: Komisijas EU ETS centrs; lapa «What is the EU ETS»; EUR-Lex: Direktīva 2003/87/EK.',
   },
   'nature-restoration': {
     title: 'ES dabas atjaunošanas likums',
-    hook: 'Saistoša atjaunošanas regula — nevis stratēģijas dokuments. Valstu projektu plāniem bija jābūt līdz 2026. gada 1. septembrim; Komisija tos vērtē.',
+    hook: 'Saistoša atjaunošanas regula: nevis stratēģijas dokuments. Valstu projektu plāniem bija jābūt līdz 2026. gada 1. septembrim; Komisija tos vērtē.',
     imageAlt:
-      'Kūdras purvs ar atklātu ūdeni un zemu veģetāciju — tāds mitrājs, ko sedz ES atjaunošanas mērķi',
+      'Kūdras purvs ar atklātu ūdeni un zemu veģetāciju: tāds mitrājs, ko sedz ES atjaunošanas mērķi',
     jurisdiction: 'Eiropas Savienība',
     officialName: 'Nature Restoration Regulation',
     citation:
       'Regulation (EU) 2024/1991 of the European Parliament and of the Council of 24 June 2024 on nature restoration',
     yearStatus: 'Pieņemta 2024. gada 24. jūnijā. Spēkā kopš 2024. gada 18. augusta.',
-    what: 'Regula nosaka Savienības mēroga atjaunošanas pienākumus. Dalībvalstīm kopīgi jāievieš atjaunošanas pasākumi vismaz 20 procentos ES sauszemes un jūras platību līdz 2030. gadam un visās ekosistēmās, kam vajadzīga atjaunošana, līdz 2050. gadam. Tā pievieno termiņotus mērķus Dzīvotņu direktīvas I pielikuma dzīvotņu tipiem, kūdrājiem, upēm, pilsētu zaļumam, lauksaimniecības ekosistēmām, mežiem un jūras dzīvotnēm — papildus, ne vietā, Putnu un Dzīvotņu direktīvām.',
+    what: 'Regula nosaka Savienības mēroga atjaunošanas pienākumus. Dalībvalstīm kopīgi jāievieš atjaunošanas pasākumi vismaz 20 procentos ES sauszemes un jūras platību līdz 2030. gadam un visās ekosistēmās, kam vajadzīga atjaunošana, līdz 2050. gadam. Tā pievieno termiņotus mērķus Dzīvotņu direktīvas I pielikuma dzīvotņu tipiem, kūdrājiem, upēm, pilsētu zaļumam, lauksaimniecības ekosistēmām, mežiem un jūras dzīvotnēm: papildus, ne vietā, Putnu un Dzīvotņu direktīvām.',
     where: 'Piemērojas tieši katrā ES dalībvalstī. Katrai līdz 2026. gada 1. septembrim bija jānosūta Komisijai nacionālā atjaunošanas plāna projekts. Komisija un Eiropas Vides aģentūra tad izvērtē projektus; galīgie plāni seko pēc Komisijas piezīmēm. Implementing Regulation (EU) 2025/912 noteica vienotu plāna formātu.',
-    effects: 'Iecerētais efekts ir apgriezt ekosistēmu lejupslīdi, uzkrāt vairāk oglekļa augsnēs un mitrājos un mazināt daļu katastrofu un ūdens drošības risku. Tie ir statūtu mērķi, ne izmērīti 2024.–2026. gada iznākumi. Likums ir pārāk jauns pabeigtai izvērtēšanai, cik hektāru zem tā patiešām atjaunoti.',
+    effects: 'Iecerētais efekts ir apgriezt ekosistēmu lejupslīdi, uzkrāt vairāk oglekļa augsnēs un mitrājos un mazināt daļu katastrofu un ūdens drošības risku. Tie ir statūtu mērķi, ne izmērīti 2024.-2026. gada iznākumi. Likums ir pārāk jauns pabeigtai izvērtēšanai, cik hektāru zem tā patiešām atjaunoti.',
     caveats: 'Regula nav atjaunots kūdrājs. Izpilde sēž nacionālajos plānos, budžetos un zemes lietojuma cīņās. Teksts bija politiski strīdīgs. Tas neatceļ Natura 2000 noteikumus un pats par sevi neaptur pārveidi ārpus atjaunošanas vietām.',
     sourcesNote:
       'Pamatteksts EUR-Lex; Komisijas lapas par likumu un par stāšanos spēkā (2024. gada 18. augusts); Komisijas piezīme, ka plānu projektiem bija jābūt līdz 2026. gada 1. septembrim.',
   },
   'clean-air-act': {
     title: 'ASV tīrā gaisa likums',
-    hook: 'Galvenais ASV gaisa piesārņojuma statūts. Parasti citētais avots ir EPA pašu recenzētie izmaksu–ieguvumu pētījumi — ne sauklis.',
+    hook: 'Galvenais ASV gaisa piesārņojuma statūts. Parasti citētais avots ir EPA pašu recenzētie izmaksu-ieguvumu pētījumi: ne sauklis.',
     imageAlt: 'Amerikas Savienoto Valstu Kapitolija rietumu fasāde, kur Kongress raksta un groza federālos statūtus',
     jurisdiction: 'Amerikas Savienotās Valstis',
     officialName: 'Clean Air Act',
     citation: '42 U.S.C. § 7401 et seq. (1970; major amendments 1977 and 1990)',
     yearStatus: 'Pieņemts 1970. gadā. Joprojām spēkā, ar vēlākiem grozījumiem.',
-    what: 'Likums prasa nacionālos atmosfēras gaisa kvalitātes standartus, štatu īstenošanas plānus, atļaujas jauniem un pārveidotiem avotiem, mobilo avotu kontroli un — pēc 1990. gada — skābo lietu griestu un tirdzniecības programmu un stingrākus toksisko vielu noteikumus. Tas ir piesārņojuma statūts, ne visaptverošs klimata likums, lai gan uz tā būvēti daži siltumnīcasgāzu noteikumi.',
+    what: 'Likums prasa nacionālos atmosfēras gaisa kvalitātes standartus, štatu īstenošanas plānus, atļaujas jauniem un pārveidotiem avotiem, mobilo avotu kontroli un: pēc 1990. gada: skābo lietu griestu un tirdzniecības programmu un stingrākus toksisko vielu noteikumus. Tas ir piesārņojuma statūts, ne visaptverošs klimata likums, lai gan uz tā būvēti daži siltumnīcasgāzu noteikumi.',
     where: 'ASV federālās tiesības, ko īsteno EPA un štati. Ārpus ASV jurisdikcijas nepiemērojas.',
     effects: 'EPA Otrais perspektīvais pētījums (2011), ko prasa 1990. gada grozījumu 812. pants, lēsa, ka šie grozījumi novērsīs ap 230 000 priekšlaicīgu nāvju 2020. gadā un ka centrālā ieguvumu aplēse pārsniegs izmaksas vairāk nekā 30 pret 1. Tie ir modeļa rezultāti pret bāzes līniju bez grozījumiem, ne nosauktu cilvēku skaitīšana.',
     caveats: 'Ieguvumi ir aplēsti, ne novēroti viens pret vienu. Daži apgabali joprojām nesasniedz standartus. Tiesvedība un politiskie cikli maina noteikumus. Neuztver likumu kā pabeigtu klimata instrumentu vai kā pierādījumu, ka katrs vietējais gaisa baseins ir tīrs.',
     sourcesNote:
-      'EPA Clean Air Act pārskats; EPA “Benefits and Costs of the Clean Air Act 1990–2020, the Second Prospective Study”; ASV Kodeksa 85. nodaļa.',
+      'EPA Clean Air Act pārskats; EPA “Benefits and Costs of the Clean Air Act 1990-2020, the Second Prospective Study”; ASV Kodeksa 85. nodaļa.',
   },
   'single-use-plastics': {
     title: 'ES vienreizlietojamās plastmasas direktīva',
-    hook: 'Īsts produktu aizliegums un patēriņa samazināšanas noteikums uzskaitītam izstrādājumu kopumam — ne globāls polimēru ražošanas griests.',
-    imageAlt: 'Savāktas PET pudeles — tāds vienreizlietojamais iepakojums, ko Direktīva skar tikai daļēji',
+    hook: 'Īsts produktu aizliegums un patēriņa samazināšanas noteikums uzskaitītam izstrādājumu kopumam: ne globāls polimēru ražošanas griests.',
+    imageAlt: 'Savāktas PET pudeles: tāds vienreizlietojamais iepakojums, ko Direktīva skar tikai daļēji',
     jurisdiction: 'Eiropas Savienība',
     officialName: 'Single-Use Plastics Directive',
     citation:
@@ -112,59 +112,59 @@ export const lv: Record<string, LawCopy> = {
     yearStatus: 'Spēkā kopš 2019. gada 2. jūlija. Dalībvalstīm pamata tirgus ierobežojumi bija jātransponē līdz 2021. gada 3. jūlijam.',
     what: 'Direktīva aizliedz laist ES tirgū noteiktus uzskaitītus vienreizlietojamus plastmasas izstrādājumus (tostarp vates kociņus, galda piederumus, šķīvjus, salmiņus, maisītājus un oksonoārdāmo plastmasu). Tā arī prasa patēriņa samazinājumu daļai krūzīšu un pārtikas trauku, paplašinātās ražotāja atbildības noteikumus, marķējumu un atsevišķas savākšanas mērķus plastmasas pudelēm.',
     where: 'ES dalībvalstis, caur nacionālajiem transponēšanas likumiem. Aktā norādīta EEZ nozīme. Tas nav ANO līgums un nesaista valstis ārpus ES.',
-    effects: 'Iecerētais efekts ir samazināt jūras un citu vides noplūdi no produktiem, kas dominē daļā Eiropas pludmales atkritumu uzskaišu. Tas pamatojums ir pašā Direktīvā. Nenolasiet no šīs lapas konkrētu globālu tonnāžas kritumu pēc 2021. gada — nacionālā īstenošana un aizstāšana atšķiras, un šis katalogs neizdomā vienu procentu.',
+    effects: 'Iecerētais efekts ir samazināt jūras un citu vides noplūdi no produktiem, kas dominē daļā Eiropas pludmales atkritumu uzskaišu. Tas pamatojums ir pašā Direktīvā. Nenolasiet no šīs lapas konkrētu globālu tonnāžas kritumu pēc 2021. gada: nacionālā īstenošana un aizstāšana atšķiras, un šis katalogs neizdomā vienu procentu.',
     caveats: 'Uzskaitīto izstrādājumu aizliegums nav polimēru ražošanas griests. Aizstājēji (cita plastmasa, papīrs vai „bio” materiāli) var pārbīdīt problēmu. Transponēšanas kvalitāte atšķiras. Iepakojuma noteikumus kopš tā laika atjauninājuši vēlāki ES akti, tostarp 2025. gada iepakojuma regula, kas groza šo Direktīvu.',
     sourcesNote: 'EUR-Lex oficiālais teksts; Komisijas vienreizlietojamās plastmasas temata lapa.',
   },
   'costa-rica-pes': {
-    title: 'Kostarika — maksa par vides pakalpojumiem',
+    title: 'Kostarika: maksa par vides pakalpojumiem',
     hook: '1996. gada meža likums, kas maksā zemes īpašniekiem par stāvošu mežu. Tas ir viens instruments, ne vienīgais iemesls, kāpēc vainags atgriezās.',
-    imageAlt: 'Monteverdes mākoņu mežs Kostarikā — tāds segums, ko PSA programma maksā aizsargāt',
+    imageAlt: 'Monteverdes mākoņu mežs Kostarikā: tāds segums, ko PSA programma maksā aizsargāt',
     jurisdiction: 'Kostarika',
     officialName: 'Pago por Servicios Ambientales (PSA), under the Forestry Law',
     citation: 'Forestry Law No. 7575 (1996); PSA administered by FONAFIFO',
     yearStatus: 'Likums 7575 pieņemts 1996. gadā. PSA programma darbojas no 1990. gadu beigām un joprojām ir atvērta līgumiem.',
     what: 'Kostarikas Meža likums radīja tiesisku pamatu maksāt privātiem zemes īpašniekiem par četriem nosauktiem vides pakalpojumiem: siltumnīcasgāzu mazināšanu, ūdens aizsardzību, bioloģisko daudzveidību un ainavas skaistumu. FONAFIFO, nacionālais mežsaimniecības finansēšanas fonds, vada līgumus par meža aizsardzību, apmežošanu, dabisko atjaunošanos un agromežsaimniecību. Degvielas nodoklis ir statūtu finansējuma avots, ko apraksta FONAFIFO.',
     where: 'Kostarika, uz atbilstošām privātām un dažām citām zemēm, kas iestājas PSA līgumā. Tas ir nacionāls likums, ne reģionāls līgums.',
-    effects: 'Iecerētais efekts ir padarīt stāvošu mežu naudas vērtu. UNFCCC un FONAFIFO rāda PSA kā mehānismu, kas maksā par aizsardzību un apmežošanu. Kostarikas vēlākā meža seguma atjaunošanās bija vairāku cēloņu — tostarp agrāka ekstensīvās liellopu audzēšanas sabrukuma — dēļ, tāpēc šī lapa nepiešķir PSA vienai ne hektāru kopsummu, ne atjaunošanās procentu.',
+    effects: 'Iecerētais efekts ir padarīt stāvošu mežu naudas vērtu. UNFCCC un FONAFIFO rāda PSA kā mehānismu, kas maksā par aizsardzību un apmežošanu. Kostarikas vēlākā meža seguma atjaunošanās bija vairāku cēloņu: tostarp agrāka ekstensīvās liellopu audzēšanas sabrukuma: dēļ, tāpēc šī lapa nepiešķir PSA vienai ne hektāru kopsummu, ne atjaunošanās procentu.',
     caveats: 'Maksājumi atkarīgi no budžeta un no tā, kas prot iziet pieteikumu. Programma var labvēlīgi izturēties pret zemi ar īpašuma titulu. Tas nav aizliegums visai atmežošanai un nav modelis, ko nokopē katrā valstī bez nodokļu bāzes un kadastra.',
     sourcesNote: 'FONAFIFO PSA lapa; UNFCCC Momentum for Change apraksts; FAOLEX ieraksts par Likumu 7575.',
   },
   'turkmenistan-two-trees': {
-    title: 'Turkmenistāna — divi koki gadā',
+    title: 'Turkmenistāna: divi koki gadā',
     hook: '1992. gada prezidenta dekrēts, ne Tadžikistānas statūts un ne «trīs koki». Divu koku rinda ir pilsoniskā pienākuma valoda; operatīvie panti organizē kampaņas.',
     imageAlt:
-      'Apzaļumots prospekts Ašhabadā — pilsētas zaļums tāda veida, kādu 1992. gada dekrēts mēģina organizēt, ne tā gada stādīšanas mēneša fotogrāfija',
+      'Apzaļumots prospekts Ašhabadā: pilsētas zaļums tāda veida, kādu 1992. gada dekrēts mēģina organizēt, ne tā gada stādīšanas mēneša fotogrāfija',
     jurisdiction: 'Turkmenistāna',
     officialName: 'On the development of horticulture and greening in Turkmenistan',
     citation:
       'Постановление Президента Туркменистана «О развитии садоводства и озеленении в Туркменистане», 9 November 1992',
     yearStatus:
       'Prezidenta dekrēts (постановление), 1992. gada 9. novembris. FAOLEX/UNEP LEAP norāda spēkā stāšanos no oficiālās publikācijas; atsevišķu dekrēta numuru nedod.',
-    what: 'Preambulā teikts, ka katra Turkmenistānas pilsoņa pienākums ir katru gadu iestādīt divus kokus — vienu par godu jaundzimušam pilsonim, otru mirušā piemiņai. Operatīvie panti tad izsludina ikgadējos rudens un pavasara stādīšanas mēnešus, uzdod velajatu, Ašhabadas un etrapu hjakimiem organizēt masveida stādījumus (arī gar nosauktiem ceļiem) un prasa, lai dabas apsaimniekošanas ministrija piegādā stādāmo materiālu. Tas ir prezidenta постановление, ne Medžlisa likums un ne kriminālkodekss tiem, kas koku neiestāda.',
+    what: 'Preambulā teikts, ka katra Turkmenistānas pilsoņa pienākums ir katru gadu iestādīt divus kokus: vienu par godu jaundzimušam pilsonim, otru mirušā piemiņai. Operatīvie panti tad izsludina ikgadējos rudens un pavasara stādīšanas mēnešus, uzdod velajatu, Ašhabadas un etrapu hjakimiem organizēt masveida stādījumus (arī gar nosauktiem ceļiem) un prasa, lai dabas apsaimniekošanas ministrija piegādā stādāmo materiālu. Tas ir prezidenta постановление, ne Medžlisa likums un ne kriminālkodekss tiem, kas koku neiestāda.',
     where: 'Turkmenistāna. Vēlākas valsts stādīšanas kampaņas (piemēram, Kopetdaga parku dekrēti 1998. gadā vai vēlākas nacionālās meža programmas darbības) ir atsevišķi akti. Šī kartīte ir tikai par 1992. gada tekstu.',
     effects: 'Iecerētais efekts: atdzīvināt dārzkopību un organizēt sezonālu masveida stādīšanu ar publisku stādu piegādi. Šī lapa neizdomā izpildes rādītājus, ieaugšanas rādītājus vai hektāru kopsummu, kas piedēvēta 1992. gada dekrētam.',
-    caveats: 'Pilsoniskā pienākuma valoda preambulā nav tas pats, kas individuāli vajāta kvota. FAOLEX atzīmē, ka atsauces numurs nav pieejams. Nepārdēvē to par «iestādi trīs kokus», par Tadžikistānas personīgo kvotu vai par Filipīnu izlaiduma likumprojektu — tās ir citas vai nepārbaudītas stāsti.',
+    caveats: 'Pilsoniskā pienākuma valoda preambulā nav tas pats, kas individuāli vajāta kvota. FAOLEX atzīmē, ka atsauces numurs nav pieejams. Nepārdēvē to par «iestādi trīs kokus», par Tadžikistānas personīgo kvotu vai par Filipīnu izlaiduma likumprojektu: tās ir citas vai nepārbaudītas stāsti.',
     sourcesNote:
       'Primārais krievu teksts FAOLEX (tuk80588.pdf); UNEP LEAP kataloga kopsavilkums tam pašam dekrētam.',
   },
   'uzbekistan-compensatory-planting': {
-    title: 'Uzbekistāna — 100 stādi par nelikumīgu ciršanu',
-    hook: '2024. gada likums: vismaz simts stādu pēc vērtīga, ārpus meža fonda esoša koka nelikumīgas nociršanas. Sods un kopšanas pienākums — ne ikgadēja pilsoņa kvota.',
+    title: 'Uzbekistāna: 100 stādi par nelikumīgu ciršanu',
+    hook: '2024. gada likums: vismaz simts stādu pēc vērtīga, ārpus meža fonda esoša koka nelikumīgas nociršanas. Sods un kopšanas pienākums: ne ikgadēja pilsoņa kvota.',
     imageAlt:
-      'Ziedoši aprikožu koki Taškentas ielā — pilsētas koki tāda veida, kādus aizsargā flora likuma grozījums, ne konkrētas lietas fotogrāfija',
+      'Ziedoši aprikožu koki Taškentas ielā: pilsētas koki tāda veida, kādus aizsargā flora likuma grozījums, ne konkrētas lietas fotogrāfija',
     jurisdiction: 'Uzbekistāna',
     officialName: 'Par augu valsts aizsardzību un izmantošanu (ar grozījumiem)',
     citation:
       'Uzbekistānas Republikas likums Nr. ЗРУ-916 / O‘RQ-916 (2024. gada 29. februāris), kas ievieto 49.¹ pantu likumā «Par augu valsts aizsardzību un izmantošanu» (Nr. 543-I, 1997. gada 26. decembris, redakcijā ЗРУ-409, 2016. gada 21. septembris)',
     yearStatus:
-      'Likumdošanas palāta 2023. gada 21. novembrī; Senāts 2023. gada 20. decembrī; parakstīts 2024. gada 29. februārī. Oficiālā publikācija 2024. gada 1. martā (nacionālā datubāze Nr. 03/24/916/0167). 49.¹ pants no publikācijas. 49.² pants par finansiālām sankcijām — pēc trim mēnešiem.',
-    what: '49.¹ pants, ko ievieto ЗРУ-916, nosaka: ja vērtīgas koku vai krūmu sugas, kas nav valsts meža fondā, tiek nelikumīgi nocirstas vai iznīcinātas, pārkāpējam pēc Ekoloģijas, vides aizsardzības un klimata pārmaiņu ministrijas lēmuma par saviem līdzekļiem jaiestāda vismaz simts stādu, kas pēc vērtības nav sliktāki par nocirstajiem, par katru šādu koku vai krūmu. Stāda ciršanas vietā; ja zemes nepietiek, pārējais — citā vietā tajā pašā administratīvi teritoriālajā vienībā. Kopšana — trīs gadi. 49.² pants juridiskajām personām pievieno naudas sodus no 100 līdz 300 bāzes aprēķina vienībām. Tas pats likums paaugstināja arī daļu administratīvā kodeksa sodu. Tas ir kompensācijas pienākums pēc pārkāpuma, ne ikgadēja stādīšanas kvota katram pilsonim.',
+      'Likumdošanas palāta 2023. gada 21. novembrī; Senāts 2023. gada 20. decembrī; parakstīts 2024. gada 29. februārī. Oficiālā publikācija 2024. gada 1. martā (nacionālā datubāze Nr. 03/24/916/0167). 49.¹ pants no publikācijas. 49.² pants par finansiālām sankcijām: pēc trim mēnešiem.',
+    what: '49.¹ pants, ko ievieto ЗРУ-916, nosaka: ja vērtīgas koku vai krūmu sugas, kas nav valsts meža fondā, tiek nelikumīgi nocirstas vai iznīcinātas, pārkāpējam pēc Ekoloģijas, vides aizsardzības un klimata pārmaiņu ministrijas lēmuma par saviem līdzekļiem jaiestāda vismaz simts stādu, kas pēc vērtības nav sliktāki par nocirstajiem, par katru šādu koku vai krūmu. Stāda ciršanas vietā; ja zemes nepietiek, pārējais: citā vietā tajā pašā administratīvi teritoriālajā vienībā. Kopšana: trīs gadi. 49.² pants juridiskajām personām pievieno naudas sodus no 100 līdz 300 bāzes aprēķina vienībām. Tas pats likums paaugstināja arī daļu administratīvā kodeksa sodu. Tas ir kompensācijas pienākums pēc pārkāpuma, ne ikgadēja stādīšanas kvota katram pilsonim.',
     where: 'Uzbekistāna, vērtīgiem kokiem un krūmiem ārpus valsts meža fonda. Pats akts nepārraksta meža fonda noteikumus. Nacionālais apzaļumošanas projekts «Yashil Makon», minēts ЗРУ-916 preambulā, ir atsevišķa programma.',
     effects:
       'Iecerētie efekti, kā raksta pats grozījumu likums: atturēt nelikumīgu ciršanu, palielināt atbildību un vienādot piemērošanu. Šī lapa neizdomā 49.¹ panta ietvaros iestādīto stādu skaitu vai ieaugšanas rādītāju.',
     caveats:
-      '«Vismaz simts» attiecas uz vērtīgu, ārpus meža fonda esošu koku nelikumīgu ciršanu vai iznīcināšanu — ne uz katru koku valstī un ne kā ikgadēju pilsoņa pienākumu. Nesajauc to ar Turkmenistānas 1992. gada divu koku dekrētu, ar Tadžikistānas personīgo kvotu (šajā katalogā nav verificēta tāda statūta) vai ar Filipīnu izlaiduma likumprojektu. Vērtības, sugu, vietas un termiņu kārtību var noteikt Ministru kabinets; tie nav šī panta teksts.',
+      '«Vismaz simts» attiecas uz vērtīgu, ārpus meža fonda esošu koku nelikumīgu ciršanu vai iznīcināšanu: ne uz katru koku valstī un ne kā ikgadēju pilsoņa pienākumu. Nesajauc to ar Turkmenistānas 1992. gada divu koku dekrētu, ar Tadžikistānas personīgo kvotu (šajā katalogā nav verificēta tāda statūta) vai ar Filipīnu izlaiduma likumprojektu. Vērtības, sugu, vietas un termiņu kārtību var noteikt Ministru kabinets; tie nav šī panta teksts.',
     sourcesNote:
       'ЗРУ-916 primārais teksts lex.uz (krievu un uzbeku); konsolidētā flora likuma lapa ar 49.¹ pantu; UzDaily angļu piezīme par tā paša likuma izskatīšanu Senātā.',
   },
@@ -184,29 +184,29 @@ export const lv: Record<string, LawCopy> = {
     where:
       'Attiecas uz pusēm, kas konvenciju ratificējušas vai tai pievienojušās. Spēkā no 1993. gada 29. decembra. Depozitārijs ir Apvienoto Nāciju Organizācijas ģenerālsekretārs. Pušu saraksts mainās. Aktuālo uzskaiti ved konvencijas sekretariāts un Apvienoto Nāciju Organizācijas Līgumu krājums.',
     effects:
-      'Iecerētais efekts: ierakstīt bioloģisko daudzveidību saistošās daudzpusējās tiesībās līdzās klimata un ozona līgumiem, virzīt valstu stratēģijas un rīcības plānus un dot vietu vēlākiem protokoliem un Kuņminas–Monreālas ietvaram. Iznākums atkarīgs no valsts pasākumiem. Pats konvencijas teksts neiežogo rezervātu.',
+      'Iecerētais efekts: ierakstīt bioloģisko daudzveidību saistošās daudzpusējās tiesībās līdzās klimata un ozona līgumiem, virzīt valstu stratēģijas un rīcības plānus un dot vietu vēlākiem protokoliem un Kuņminas-Monreālas ietvaram. Iznākums atkarīgs no valsts pasākumiem. Pats konvencijas teksts neiežogo rezervātu.',
     caveats:
-      'Konvencija neizsniedz atļaujas savvaļas sugu tirdzniecībai. To dara atsevišķs līgums, Konvencija par starptautisko tirdzniecību ar apdraudētajām savvaļas dzīvnieku un augu sugām. Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars pieņemts kā šīs konvencijas Pušu konferences lēmums. Amerikas Savienotās Valstis konvenciju ir parakstījušas, bet nav to ratificējušas.',
+      'Konvencija neizsniedz atļaujas savvaļas sugu tirdzniecībai. To dara atsevišķs līgums, Konvencija par starptautisko tirdzniecību ar apdraudētajām savvaļas dzīvnieku un augu sugām. Kuņminas-Monreālas globālais bioloģiskās daudzveidības ietvars pieņemts kā šīs konvencijas Pušu konferences lēmums. Amerikas Savienotās Valstis konvenciju ir parakstījušas, bet nav to ratificējušas.',
     sourcesNote:
       'Konvencijas teksts sekretariāta vietnē; konvencijas teksts angļu valodā; lapa par konvenciju; sekretariāta sākumlapa.',
   },
   'kunming-montreal-gbf': {
-    title: 'Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars',
+    title: 'Kuņminas-Monreālas globālais bioloģiskās daudzveidības ietvars',
     hook: 'Pašreizējais pasaules bioloģiskās daudzveidības plāns Bioloģiskās daudzveidības konvencijas ietvaros. Četri mērķi līdz 2050. gadam un divdesmit trīs mērķi līdz 2030. gadam, tostarp plaši citētais nodoms aizsargāt vismaz 30 procentus sauszemes un jūras. To pieņēma kā Pušu konferences lēmumu, nevis kā otru bioloģiskās daudzveidības līgumu.',
     imageAlt:
       'Sekla koraļļu rifa Floridā: jūras vēdekļi un sīkas zivis, jūras dzīvība, uz kuru vērsta teritoriju aizsardzība',
     jurisdiction:
       'Starptautisks (Bioloģiskās daudzveidības konvencijas puses, kas īsteno lēmumu 15/4)',
-    officialName: 'Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars',
+    officialName: 'Kuņminas-Monreālas globālais bioloģiskās daudzveidības ietvars',
     citation:
-      'Kuņminas–Monreālas globālais bioloģiskās daudzveidības ietvars; Bioloģiskās daudzveidības konvencijas 15. pušu konferences lēmums 15/4, pieņemts 2022. gada 19. decembrī Monreālā',
+      'Kuņminas-Monreālas globālais bioloģiskās daudzveidības ietvars; Bioloģiskās daudzveidības konvencijas 15. pušu konferences lēmums 15/4, pieņemts 2022. gada 19. decembrī Monreālā',
     yearStatus:
       'Pieņemts 2022. gada 19. decembrī 15. pušu konferences otrajā daļā Monreālā (lēmums 15/4). Tas ir lēmums konvencijas ietvaros, nevis atsevišķi ratificējams līgums.',
-    what: 'Lēmums 15/4 pieņem Kuņminas–Monreālas globālo bioloģiskās daudzveidības ietvaru kā ceļu, kā šajā desmitgadē īstenot konvenciju. Tajā ir redzējums 2050. gadam: dzīve saskaņā ar dabu, četri mērķi 2050. gadam un 23 rīcības mērķi 2030. gadam. Trešo mērķi par teritoriju aizsardzību bieži īsi raksta kā vismaz 30 procentu sauszemes un jūras aizsardzību. Tās pašas sanāksmes pavadošie lēmumi aptver novērošanu, plānošanu, ziņošanu, pārskatīšanu, finanses un atbalstu valstīm darbā.',
+    what: 'Lēmums 15/4 pieņem Kuņminas-Monreālas globālo bioloģiskās daudzveidības ietvaru kā ceļu, kā šajā desmitgadē īstenot konvenciju. Tajā ir redzējums 2050. gadam: dzīve saskaņā ar dabu, četri mērķi 2050. gadam un 23 rīcības mērķi 2030. gadam. Trešo mērķi par teritoriju aizsardzību bieži īsi raksta kā vismaz 30 procentu sauszemes un jūras aizsardzību. Tās pašas sanāksmes pavadošie lēmumi aptver novērošanu, plānošanu, ziņošanu, pārskatīšanu, finanses un atbalstu valstīm darbā.',
     where:
       'Tas darbojas caur konvencijas pušu valsts mērķiem un stratēģijām. Pieņemts Monreālā 2022. gada 19. decembrī kā lēmums 15/4. Tas ir Pušu konferences lēmums Bioloģiskās daudzveidības konvencijas ietvaros, nevis atsevišķi ratificējams līgums. Pirmais kopējā progresa pasaules pārskats ir 17. pušu konferences darba kārtībā, procesā, kas paredzēts 2026. gadam.',
     effects:
-      'Iecerētais efekts: aizstāt beigušos 2010.–2020. gada mērķus, ko sauc par Aiči mērķiem, ar skaidrāku 2030. gada mērķu kopu, salāgot valstu bioloģiskās daudzveidības plānus un radīt novērošanas un pārskata ciklu. Izpilde atkarīga no valsts tiesībām, naudas un no tā, kuras sauszemes un jūras platības valstis norāda. Pats lēmuma teksts nerada aizsargājamu teritoriju.',
+      'Iecerētais efekts: aizstāt beigušos 2010.-2020. gada mērķus, ko sauc par Aiči mērķiem, ar skaidrāku 2030. gada mērķu kopu, salāgot valstu bioloģiskās daudzveidības plānus un radīt novērošanas un pārskata ciklu. Izpilde atkarīga no valsts tiesībām, naudas un no tā, kuras sauszemes un jūras platības valstis norāda. Pats lēmuma teksts nerada aizsargājamu teritoriju.',
     caveats:
       'Ietvars nav atsevišķs līgums un neaizstāj konvencijas tekstu. 30 procentu skaitlis trešajā mērķī ir kopīgs mērķis līdz 2030. gadam, nevis zīme, ka pasaule jau aizsargā 30 procentus sauszemes un jūras. Precīzs mērķu formulējums ir lēmumā 15/4 un konvencijas sekretariāta ietvara lapā.',
     sourcesNote:
@@ -295,8 +295,8 @@ export const lv: Record<string, LawCopy> = {
   },
   'rome-statute-ecocide': {
     title: 'Ekocīds kā Romas statūta noziegums',
-    hook: 'Ierosināts piektais SKT noziegums. Statūtā tā nav. Dažas valstis ir rakstījušas nacionālus ekocīda sastāvus — tas nav tas pats.',
-    imageAlt: 'Starptautiskās Krimināltiesas ēka Hāgā — tiesa, kuras Statūtu šī ideja gribētu grozīt',
+    hook: 'Ierosināts piektais SKT noziegums. Statūtā tā nav. Dažas valstis ir rakstījušas nacionālus ekocīda sastāvus: tas nav tas pats.',
+    imageAlt: 'Starptautiskās Krimināltiesas ēka Hāgā: tiesa, kuras Statūtu šī ideja gribētu grozīt',
     jurisdiction: 'Priekšlikums Starptautiskās Krimināltiesas Dalībvalstu asamblejai',
     officialName: 'Proposed amendment to add “ecocide” as a crime under the Rome Statute',
     citation:
@@ -306,7 +306,7 @@ export const lv: Record<string, LawCopy> = {
     what: '2021. gada panelis definēja ekocīdu, projektā, kā pretlikumīgas vai vieglprātīgas darbības, izdarītas ar zināšanām par būtisku iespējamību, ka radīsies smags un vienlaikus plašs vai ilgtermiņa vides kaitējums. Ideja ir pievienot to kā piekto noziegumu blakus genocīdam, noziegumiem pret cilvēci, kara noziegumiem un agresijai. Romas statūta grozīšanai vajag lielu Dalībvalstu vairākumu un tad ratifikācijas.',
     where: 'Nekur kā SKT tiesības. Atsevišķi nacionāli sastāvi (piemēram, Beļģijas 2024. gada ekocīda noziegums vai vēlāki nacionālie statūti) piemērojas tikai tajās valstīs. Tie nerada SKT jurisdikciju.',
     effects: 'Iecerētais efekts: personiska kriminālatbildība par vissmagāko vides iznīcināšanu un atturošs signāls. SKT judikatūras par patstāvīgu ekocīda apsūdzību nav, jo nozieguma Statūtā nav.',
-    caveats: 'Šī kartīte ir ideja, ne statūts, kas spēkā Tiesā. Kampaņas definīcija nav pieņemts pants. Nacionālos ekocīda likumus vērts vērot — un tie nav šis priekšlikums.',
+    caveats: 'Šī kartīte ir ideja, ne statūts, kas spēkā Tiesā. Kampaņas definīcija nav pieņemts pants. Nacionālos ekocīda likumus vērts vērot, un tie nav šis priekšlikums.',
     sourcesNote:
       'Stop Ecocide juridiskās definīcijas lapa; SKT Asamblejas Grozījumu darba grupas ziņojums (ICC-ASP-24-26); Romas statūta teksts spēkā esošajā redakcijā.',
   },
@@ -492,7 +492,7 @@ export const lv: Record<string, LawCopy> = {
   cites: {
     title: 'CITES',
     hook: 'Globālā savvaļas tirdzniecības konvencija. Tā regulē uzskaitītās sugas tirdzniecībā. Tas nav dzīvotņu likums.',
-    imageAlt: 'Āfrikas ziloņi — taksons, kas jau sen saistīts ar CITES pielikumu sarakstiem un ziloņkaula kontroli',
+    imageAlt: 'Āfrikas ziloņi: taksons, kas jau sen saistīts ar CITES pielikumu sarakstiem un ziloņkaula kontroli',
     jurisdiction: 'Starptautiska (173+ puses; aktuālais saraksts cites.org)',
     officialName: 'Convention on International Trade in Endangered Species of Wild Fauna and Flora',
     citation: 'Signed 3 March 1973, Washington, D.C.; entered into force 1 July 1975',
@@ -505,7 +505,7 @@ export const lv: Record<string, LawCopy> = {
   },
   'endangered-species-act': {
     title: 'ASV apdraudēto sugu likums',
-    hook: 'ASV pamata statūts uzskaitītajām sugām un to kritiskajām dzīvotnēm — saraksti, „take” aizliegumi un federālo iestāžu pienākumi.',
+    hook: 'ASV pamata statūts uzskaitītajām sugām un to kritiskajām dzīvotnēm: saraksti, „take” aizliegumi un federālo iestāžu pienākumi.',
     imageAlt: 'Baltgalvas ērglis, suga, kas reiz bija ESA sarakstā un vēlāk noņemta pēc dokumentētas atjaunošanās',
     jurisdiction: 'Amerikas Savienotās Valstis',
     officialName: 'Endangered Species Act of 1973',
@@ -520,7 +520,7 @@ export const lv: Record<string, LawCopy> = {
   'habitats-directive': {
     title: 'ES Dzīvotņu direktīva',
     hook: 'Natura 2000 juridiskais mugurkauls uz sauszemes un jūrā, kopā ar Putnu direktīvu.',
-    imageAlt: 'Belovežas mežs ES pusē pie Polijas robežas — dzīvotnes tips, ko Direktīva ir domāta saglabāt',
+    imageAlt: 'Belovežas mežs ES pusē pie Polijas robežas: dzīvotnes tips, ko Direktīva ir domāta saglabāt',
     jurisdiction: 'Eiropas Savienība',
     officialName: 'Habitats Directive',
     citation: 'Council Directive 92/43/EEC of 21 May 1992 on the conservation of natural habitats and of wild fauna and flora',
@@ -535,22 +535,22 @@ export const lv: Record<string, LawCopy> = {
     title: 'Kenijas savvaļas saglabāšanas un pārvaldības likums',
     hook: 'Pašreizējais Kenijas savvaļas statūts: sabiedriska īpašumtiesība uz savvaļas dzīvniekiem, parki un konservācijas, soda shēma par nogalināšanu un tirdzniecību.',
     imageAlt:
-      'Savannas ziloņi Amboseli nacionālajā parkā Kenijā — savvaļas dzīvnieki, ko 2013. gada likums ir rakstīts pārvaldīt, ne nosaukta lietas fotogrāfija',
+      'Savannas ziloņi Amboseli nacionālajā parkā Kenijā: savvaļas dzīvnieki, ko 2013. gada likums ir rakstīts pārvaldīt, ne nosaukta lietas fotogrāfija',
     jurisdiction: 'Kenija',
     officialName: 'Wildlife Conservation and Management Act',
     citation: 'Act No. 47 of 2013, now Cap. 376; assented 24 December 2013, commenced 10 January 2014',
     yearStatus: 'Spēkā kopš 2014. gada 10. janvāra, ar vēlākiem grozījumiem.',
     what: 'Likums nostiprina savvaļu Kenijas tautai, ko valsts tur uzticībā. Tas nosaka Kenijas savvaļas dienestu, nacionālos parkus un rezervātus, kopienu un privātās konservācijas, sugu sarakstus un pārkāpumus par nogalināšanu, ķeršanu vai tirdzniecību pretēji Likumam. Tas ir saglabāšanas un pārvaldības statūts, tostarp ilgtspējīgas izmantošanas valoda, ne importēts lauksaimniecības dzīvnieku kampaņas likums.',
     where: 'Kenija, tostarp aizsargājamās teritorijas un savvaļa uz citas zemes, kā Likums paredz.',
-    effects: 'Iecerētie efekti: mūsdienīgs tiesisks ietvars pēc vecākā 1976. gada likuma, vieta konservācijām un stingrāki rakstīti sodi par malumedniecību un tirdzniecību. Iznākumi uz zemes joprojām atkarīgi no izpildes, kopienu darījumiem un ziloņkaula un krūmāju gaļas tirdzniecības. Šī lapa neizdomā nacionālu ziloņu atjaunošanās procentu 2013.–2026. gadam.',
-    caveats: 'Cilvēku–savvaļas konflikts un kompensāciju strīdi ir iebūvēti Kenijas savvaļas politikā. Statūts nav reindžers. Starptautiskās tirdzniecības noteikumi joprojām iet caur CITES īstenošanas regulām.',
+    effects: 'Iecerētie efekti: mūsdienīgs tiesisks ietvars pēc vecākā 1976. gada likuma, vieta konservācijām un stingrāki rakstīti sodi par malumedniecību un tirdzniecību. Iznākumi uz zemes joprojām atkarīgi no izpildes, kopienu darījumiem un ziloņkaula un krūmāju gaļas tirdzniecības. Šī lapa neizdomā nacionālu ziloņu atjaunošanās procentu 2013.-2026. gadam.',
+    caveats: 'Cilvēku-savvaļas konflikts un kompensāciju strīdi ir iebūvēti Kenijas savvaļas politikā. Statūts nav reindžers. Starptautiskās tirdzniecības noteikumi joprojām iet caur CITES īstenošanas regulām.',
     sourcesNote: 'Kenya Law oficiālais teksts (Cap. 376); FAOLEX ieraksts par Act No. 47 of 2013.',
   },
   'cms-bonn-convention': {
-    title: 'CMS — Bonnas konvencija',
-    hook: 'ANO līgums dzīvniekiem, kas cikliski šķērso robežas. I pielikums — stingra aizsardzība; II — areāla valstu vienošanās. Tas nav CITES un nav valsts biotopu likums.',
+    title: 'CMS: Bonnas konvencija',
+    hook: 'ANO līgums dzīvniekiem, kas cikliski šķērso robežas. I pielikums: stingra aizsardzība; II: areāla valstu vienošanās. Tas nav CITES un nav valsts biotopu likums.',
     imageAlt:
-      'Gnu kustībā caur Serengeti zāli — pārrobežu migrācija, kādu Bonnas konvencija lūdz saskaņot areāla valstīm',
+      'Gnu kustībā caur Serengeti zāli: pārrobežu migrācija, kādu Bonnas konvencija lūdz saskaņot areāla valstīm',
     jurisdiction: 'Starptautisks (Konvencijas Puses)',
     officialName: 'Konvencija par migrējošo savvaļas dzīvnieku sugu aizsardzību',
     citation:
@@ -566,14 +566,14 @@ export const lv: Record<string, LawCopy> = {
   },
   'birds-directive': {
     title: 'ES Putnu direktīva',
-    hook: 'Pirmā ES dabas direktīva. Aizsargā visus dabiski sastopamos savvaļas putnus un veido SPA Natura 2000 — pāris ar Biotopu direktīvu.',
+    hook: 'Pirmā ES dabas direktīva. Aizsargā visus dabiski sastopamos savvaļas putnus un veido SPA Natura 2000: pāris ar Biotopu direktīvu.',
     imageAlt:
-      'Jūras ērglis virs ūdens Svolvērā, Norvēģijā — savvaļas Eiropas putns, kādu Putnu direktīva prasa dalībvalstīm aizsargāt',
+      'Jūras ērglis virs ūdens Svolvērā, Norvēģijā: savvaļas Eiropas putns, kādu Putnu direktīva prasa dalībvalstīm aizsargāt',
     jurisdiction: 'Eiropas Savienība',
     officialName: 'Direktīva 2009/147/EK par savvaļas putnu aizsardzību',
     citation: 'Direktīva 2009/147/EK (kodificēta; sākotnēji 79/409/EEK, 1979) par savvaļas putnu aizsardzību',
     yearStatus:
-      'Sākotnējā direktīva 79/409/EEK (1979). Spēkā esošais kodificētais teksts — 2009/147/EK. Piemēro dalībvalstīs. 2026. gada vienkāršošanas konsultācija nav atcelšana.',
+      'Sākotnējā direktīva 79/409/EEK (1979). Spēkā esošais kodificētais teksts: 2009/147/EK. Piemēro dalībvalstīs. 2026. gada vienkāršošanas konsultācija nav atcelšana.',
     what: 'Aizliegumi nogalināt, ķert un iznīcināt ligzdas; SPA I pielikumam un citiem migrantiem; daļa no Natura 2000.',
     where: 'Spēkā; teksts 2009/147/EK. 2026. gada vienkāršošanas konsultācija nav atcelšana.',
     effects:
@@ -583,9 +583,9 @@ export const lv: Record<string, LawCopy> = {
   },
   'bern-convention': {
     title: 'Bernes konvencija',
-    hook: 'Eiropas Padomes līgums par savvaļas dabu un biotopiem. Stingri aizsargāto sugu saraksti un Pastāvīgā komiteja — paneiropiska, nav tas pats, kas ES Putnu un Biotopu direktīvas.',
+    hook: 'Eiropas Padomes līgums par savvaļas dabu un biotopiem. Stingri aizsargāto sugu saraksti un Pastāvīgā komiteja: paneiropiska, nav tas pats, kas ES Putnu un Biotopu direktīvas.',
     imageAlt:
-      'Alpu kalnu kaza augstkalnu pļavā Šveices Alpos — Eiropas savvaļa, kādu Bernes konvencija iekļauj aizsardzībā',
+      'Alpu kalnu kaza augstkalnu pļavā Šveices Alpos: Eiropas savvaļa, kādu Bernes konvencija iekļauj aizsardzībā',
     jurisdiction: 'Eiropas Padome (Puses; atvērta arī ārpus EP pēc līguma noteikumiem)',
     officialName: 'Konvencija par Eiropas savvaļas dabas un dabisko biotopu aizsardzību',
     citation:
@@ -601,7 +601,7 @@ export const lv: Record<string, LawCopy> = {
   'marine-mammal-protection-act': {
     title: 'ASV Jūras zīdītāju aizsardzības likums (MMPA)',
     hook: 'ASV federālais likums, kas kopumā aizliedz jūras zīdītāju ņemšanu ASV ūdeņos un ASV personām. Plašāks par vien ESA sarakstu.',
-    imageAlt: 'Kuprvalis un mazulis zem ūdens — jūras zīdītāji, ko sedz ASV ņemšanas moratorijs',
+    imageAlt: 'Kuprvalis un mazulis zem ūdens: jūras zīdītāji, ko sedz ASV ņemšanas moratorijs',
     jurisdiction: 'Amerikas Savienotās Valstis',
     officialName: 'Marine Mammal Protection Act of 1972',
     citation: 'Marine Mammal Protection Act of 1972, 16 U.S.C. § 1361 et seq. (ar grozījumiem)',
@@ -609,18 +609,18 @@ export const lv: Record<string, LawCopy> = {
     what: 'Moratorijs uz „take” un importu ar izņēmumiem; krājumu novērtējumi; NOAA, FWS un MMC lomas.',
     where: 'ASV federālās tiesības kopš 1972. gada; grozījumi 1992. un 1994. gadā.',
     effects:
-      'Iecerētais efekts: apturēt jūras zīdītāju krājumu noplicināšanu kā ekosistēmas daļu, prasīt parādīt, ka ņemšana krājumu nekaitēs, un atbalstīt izskalošanās reaģēšanu. Krājumu statuss pa sugām atšķiras — likums ir ietvars, ne atjaunošanās apliecība.',
+      'Iecerētais efekts: apturēt jūras zīdītāju krājumu noplicināšanu kā ekosistēmas daļu, prasīt parādīt, ka ņemšana krājumu nekaitēs, un atbalstīt izskalošanās reaģēšanu. Krājumu statuss pa sugām atšķiras: likums ir ietvars, ne atjaunošanās apliecība.',
     caveats: 'Tas nav ESA: suga var būt zem abiem aktiem. Nav CITES vai tikai vaļu konvencija.',
     sourcesNote: 'NOAA Fisheries, ASV Zivju un savvaļas dienesta un Jūras zīdītāju komisijas lapas; apkopotais teksts GovInfo.',
   },
   'lacey-act': {
     title: 'Leisija likums (Lacey Act)',
-    hook: 'ASV likums, kas padara par federālu noziegumu tirdzniecību ar savvaļas dzīvniekiem, zivīm vai augiem, kas iegūti, pārkāpjot ASV, štata vai ārvalsts tiesības — pastiprinātājs blakus CITES, ne otrs CITES saraksts.',
+    hook: 'ASV likums, kas padara par federālu noziegumu tirdzniecību ar savvaļas dzīvniekiem, zivīm vai augiem, kas iegūti, pārkāpjot ASV, štata vai ārvalsts tiesības: pastiprinātājs blakus CITES, ne otrs CITES saraksts.',
     imageAlt:
-      'Sakrauts konfiscēts ziloņa ziloņkauls noliktavā pirms iznīcināšanas — nelikumīgs savvaļas produkts, kādu Leisija likums ir rakstīts neielaist ASV tirdzniecībā',
+      'Sakrauts konfiscēts ziloņa ziloņkauls noliktavā pirms iznīcināšanas: nelikumīgs savvaļas produkts, kādu Leisija likums ir rakstīts neielaist ASV tirdzniecībā',
     jurisdiction: 'Amerikas Savienotās Valstis',
     officialName: 'Lacey Act',
-    citation: 'Lacey Act, 16 U.S.C. §§ 3371–3378 (no 1900; grozījumi savvaļas tirdzniecībā, t.sk. 1981)',
+    citation: 'Lacey Act, 16 U.S.C. §§ 3371-3378 (no 1900; grozījumi savvaļas tirdzniecībā, t.sk. 1981)',
     yearStatus: 'No 1900. gada. Grozījumi savvaļas tirdzniecībā, tostarp 1981. gadā. Joprojām spēkā.',
     what: 'Aizliegums tirgot, ja pārkāpts pamata likums; nepatiesa marķēšana. 2008. gada lauksaimniecības likums attiecināja likumu uz augiem un kokmateriālu produktiem.',
     where: 'ASV federālās tiesības no 1900. gada; grozījumi tostarp 1981. gadā.',
@@ -632,13 +632,13 @@ export const lv: Record<string, LawCopy> = {
   'wildlife-corridors-act': {
     title: 'ASV savvaļas koridoru likumprojekts (2026)',
     hook: 'Palātas likumprojekts dzīvotņu sasaistes kartēšanai un finansēšanai. Iesniegts. Nav pieņemts.',
-    imageAlt: 'Apzaļumota savvaļas pāreja — tāds krustojums, ko koridoru likumprojekti mēģina legalizēt un finansēt',
+    imageAlt: 'Apzaļumota savvaļas pāreja: tāds krustojums, ko koridoru likumprojekti mēģina legalizēt un finansēt',
     jurisdiction: 'Amerikas Savienotās Valstis (ierosināts federāls likumprojekts)',
     officialName: 'Wildlife Corridors and Habitat Connectivity Conservation Act of 2026',
     citation: 'H.R. 8438, 119th Congress; introduced 22 April 2026 by Rep. Donald S. Beyer and cosponsors',
     yearStatus:
       'Izskatīšanā. Iesniegts un nodots Palātas Dabas resursu, Lauksaimniecības, Transporta un infrastruktūras un Bruņoto spēku komitejām. Nav pieņemts; nav parakstīts.',
-    what: 'Iesniegtais teksts uzdotu federālajai zinātnei kartēt koridorus, uzlabot sadarbību uz federālās zemes un ūdens un izveidot grantu programmu koridoru darbam uz nefederālās zemes — tostarp norādītu līdzekļu rezervāciju lielo medījumu migrācijas ceļiem. Autorizācijas iesniegtajā tekstā ir priekšlikumi, ne piešķirti dolāri.',
+    what: 'Iesniegtais teksts uzdotu federālajai zinātnei kartēt koridorus, uzlabot sadarbību uz federālās zemes un ūdens un izveidot grantu programmu koridoru darbam uz nefederālās zemes: tostarp norādītu līdzekļu rezervāciju lielo medījumu migrācijas ceļiem. Autorizācijas iesniegtajā tekstā ir priekšlikumi, ne piešķirti dolāri.',
     where: 'Piemērotos, ja pieņemtu, kā ASV federālās tiesības. Līdz tam tas nepiemērojas nekur.',
     effects: 'Iecerētais efekts: uzskatīt sasaisti par aizsardzības objektu ar karti un budžeta rindu. Pieņemta 2026. gada koridoru akta, ko izvērtēt, nav.',
     caveats: 'Nodošana komitejā nav balsojums zālē. Iepriekšējie koridoru likumprojekti agrākos Kongresos arī nekļuva par likumu. Neapraksti pārejas, ko jau uzcēluši štati vai Parks Canada, it kā šis likumprojekts tās būvētu.',
@@ -647,15 +647,15 @@ export const lv: Record<string, LawCopy> = {
   'recovering-americas-wildlife': {
     title: 'Amerikas savvaļas atjaunošanas likums',
     hook: 'Atkārtots finansējuma priekšlikums štatu un cilšu sugām ar lielāko saglabāšanas vajadzību. Palāta to reiz pieņēma. Tas nekad nav kļuvis par likumu.',
-    imageAlt: 'Amerikas bizoni atklātā ganībā — atjaunota ikona, ne apgalvojums, ka RAWA finansēja šo baru',
+    imageAlt: 'Amerikas bizoni atklātā ganībā: atjaunota ikona, ne apgalvojums, ka RAWA finansēja šo baru',
     jurisdiction: 'Amerikas Savienotās Valstis (atkārtots priekšlikums)',
     officialName: 'Recovering America’s Wildlife Act (various bill numbers)',
     citation:
-      'e.g. H.R. 2773, 117th Congress (passed House 14 June 2022, 231–190; died in the Senate); later reintroductions including S.1149, 118th Congress',
+      'e.g. H.R. 2773, 117th Congress (passed House 14 June 2022, 231-190; died in the Senate); later reintroductions including S.1149, 118th Congress',
     yearStatus:
       'Ideja / atkārtots nepieņemts likumprojekts. Nav spēkā. 2026. gadā tas palika kampaņa un uzmetuma vingrinājums, ne parakstīts statūts. Jebkuru jaunu Kongresu pārbaudi congress.gov, pirms svaigu numuru uzskati par dzīvu.',
-    what: 'Versijas sūtītu lielas, mērķētas summas — ap miljardu dolāru gadā 2022. gada Palātas pieņemtajā tekstā — štatu zivju un savvaļas aģentūrām un ciltīm, lai īstenotu State Wildlife Action Plans un atjaunotu sugas, pirms tām vajadzīgs ESA ārkārtas saraksts. Tā ir finansējuma konstrukcija, ne jauns sarakstu statūts.',
-    where: 'Nekur kā likums. Ja pieņemtu, tā būtu ASV federālā apropriāciju arhitektūra, piesaistīta Pittman–Robertson stila kontiem.',
+    what: 'Versijas sūtītu lielas, mērķētas summas: ap miljardu dolāru gadā 2022. gada Palātas pieņemtajā tekstā: štatu zivju un savvaļas aģentūrām un ciltīm, lai īstenotu State Wildlife Action Plans un atjaunotu sugas, pirms tām vajadzīgs ESA ārkārtas saraksts. Tā ir finansējuma konstrukcija, ne jauns sarakstu statūts.',
+    where: 'Nekur kā likums. Ja pieņemtu, tā būtu ASV federālā apropriāciju arhitektūra, piesaistīta Pittman-Robertson stila kontiem.',
     effects: 'Iecerētais efekts: finansēt proaktīvu saglabāšanu, lai mazāk sugu nonāktu līdz ESA. Aizstāvji joprojām publicē šo argumentu. RAWA izdevumu reģistra nav, jo RAWA nav.',
     caveats: 'Šī kartīte ir ideja, pat ja teksts reiz izgāja vienu palātu. Palātas balsojums nav likums. Neliec RAWA uz Spēkā plaukta. Neizdomā 2026. gada publiskā likuma numuru.',
     sourcesNote:
@@ -663,22 +663,22 @@ export const lv: Record<string, LawCopy> = {
   },
   'companion-animal-homicide-parity': {
     title: 'Tīšas cietsirdības pret kompanjondzīvnieku paritāte',
-    hook: 'Ierosināts noteikums: tīša sišana, spīdzināšana vai sadistisks kaitējums sunim vai kaķim — kompanjonam — tiktu tiesāta tajā pašā kriminālajā skalā kā atbilstošais noziegums pret cilvēku. Negadījumi un ceļa pārbraukšana ir ārpus tvēruma. Neviena valsts to nav pieņēmusi. Šī kartīte ir ideja.',
+    hook: 'Ierosināts noteikums: tīša sišana, spīdzināšana vai sadistisks kaitējums sunim vai kaķim: kompanjonam: tiktu tiesāta tajā pašā kriminālajā skalā kā atbilstošais noziegums pret cilvēku. Negadījumi un ceļa pārbraukšana ir ārpus tvēruma. Neviena valsts to nav pieņēmusi. Šī kartīte ir ideja.',
     imageAlt:
-      'Svītrains kaķis uz akmens mūra un zeltains suns aiz tā Mosteirosā, Azoru salās — kompanjondzīvnieki, ne nosauktas lietas fotogrāfija',
+      'Svītrains kaķis uz akmens mūra un zeltains suns aiz tā Mosteirosā, Azoru salās: kompanjondzīvnieki, ne nosauktas lietas fotogrāfija',
     jurisdiction: 'Ideja (nav pieņemošas jurisdikcijas)',
     officialName: 'Proposed intentional companion-animal cruelty-parity rule (not a filed statute)',
     citation:
       'Catalog idea. Nearest real instruments: 18 U.S.C. § 48 (PACT Act); Portugal Lei n.º 8/2017; German BGB § 90a; Ecuador Constitutional Court Sentencia 253-20-JH/22',
     yearStatus:
       'Ideja / priekšlikums. Nav pieņemts. Nav izskatīšanā nosauktā parlamentā. Neviena jurisdikcija nav ierakstījusi pilnu uzbrukuma vai slepkavības ekvivalenci par tīšu cietsirdību pret kompanjondzīvnieku.',
-    what: 'Ideja ir soda skalas noteikums tikai tīšai vardarbībai. Tīša sišana, spīdzināšana vai cits sadistisks kaitējums sunim vai kaķim — kompanjonam — stāvētu tajā pašā noziegumu kāpnē kā atbilstošais noziegums pret cilvēku — uzbrukums, spīdzināšana vai smags miesas bojājums; un, ja tīšais nodarījums nogalina, slepkavības analogs. Tas nav atsevišķs zema tarifa cietsirdības pret dzīvniekiem sastāvs. Tas ir morāls un redakcionāls priekšlikums, ne teksts, ko būtu pieņēmis kāds parlaments. Nejaušs kaitējums ir ārpus idejas: kaķa, suņa vai jenota notriešana uz ceļa nav jāuzskata par cilvēka transportlīdzekļa slepkavību. Parastie attaisnojumi, kas jau pastāv krimināltiesībās — galējā nepieciešamība, likumīga veterinārā eitanāzija, nepieciešamā aizstāvēšanās — tāpat būtu jāuzraksta. Šī kartīte tos neraksta.',
+    what: 'Ideja ir soda skalas noteikums tikai tīšai vardarbībai. Tīša sišana, spīdzināšana vai cits sadistisks kaitējums sunim vai kaķim: kompanjonam: stāvētu tajā pašā noziegumu kāpnē kā atbilstošais noziegums pret cilvēku: uzbrukums, spīdzināšana vai smags miesas bojājums; un, ja tīšais nodarījums nogalina, slepkavības analogs. Tas nav atsevišķs zema tarifa cietsirdības pret dzīvniekiem sastāvs. Tas ir morāls un redakcionāls priekšlikums, ne teksts, ko būtu pieņēmis kāds parlaments. Nejaušs kaitējums ir ārpus idejas: kaķa, suņa vai jenota notriešana uz ceļa nav jāuzskata par cilvēka transportlīdzekļa slepkavību. Parastie attaisnojumi, kas jau pastāv krimināltiesībās: galējā nepieciešamība, likumīga veterinārā eitanāzija, nepieciešamā aizstāvēšanās: tāpat būtu jāuzraksta. Šī kartīte tos neraksta.',
     where:
       'Nekur kā likums. Daudzās valstīs tīša cietsirdība pret kompanjondzīvnieku jau var būt smags noziegums pēc cietsirdības pret dzīvniekiem statūtiem. Šie sastāvi dzīvo dzīvnieku aizsardzības vai īpašo noziegumu nodaļās. Tie nav uzbrukuma vai slepkavības tituls, un maksimālie sodi parasti ir krietni zemāki par vardarbības pret cilvēku skalu. Civilkodeksi, kas sauc dzīvniekus par jūtīgiem vai „ne lietām”, maina īpašuma valodu. Tie nepārraksta uzbrukuma vai slepkavības pantu.',
     effects:
       'Tikai iecerētais efekts: spēcīgāks atturējums no tīšas cietsirdības pret kompanjondzīvniekiem un publisks signāls, ka tie nav izmetama manta. Iznākuma statistikas nav, jo statūta nav.',
     caveats:
-      'Neapgalvo, ka kāda valsts ir ratificējusi vai pieņēmusi pilnu uzbrukuma vai slepkavības ekvivalenci par cietsirdību pret mājdzīvniekiem. Šis katalogs nevienu neatrada. Nelasi šo kartīti kā tādu, kas aptver negadījumus: ceļa pārbraukšana nav tvērumā un nav pielīdzināta cilvēka nogalināšanai satiksmē. Trīs reālus kaimiņus viegli sajaukt ar šo ideju — un tie nav tā. Pirmkārt, kriminālie cietsirdības pret dzīvniekiem statūti jau soda daļu tīšas vardarbības — piemēram, ASV Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, līdz septiņiem gadiem par norādīto „animal crushing”. Tā ir cietsirdības felonija, ne uzbrukums un ne slepkavība. Otrkārt, civiltiesiskā statusa reformas atzīst dzīvniekus par jūtīgiem vai „ne lietām”: Portugāles Lei n.º 8/2017 Civilkodeksā ielika 201.º-B. pantu („os animais são seres vivos dotados de sensibilidade”); Vācijas BGB § 90a („Tiere sind keine Sachen”) joprojām piemēro lietu noteikumus, ja īpašs likums nesaka citādi. Statusa maiņa nav vardarbības skalas paritāte. Treškārt, ierobežota „tiesību subjektu” judikatūra — Ekvadoras Konstitucionālā tiesa, Sentencia 253-20-JH/22 (Estrellita, 2022. gada 27. janvāris) — atzina savvaļas vilnaino pērtiķi par tiesību subjektu Dabas tiesību ietvarā un teica, ka šīs tiesības nav līdzvērtīgas cilvēka tiesībām. Tas nepadara suņa sišanu vai nogalināšanu juridiski identisku cilvēka piekaušanai vai slepkavībai.',
+      'Neapgalvo, ka kāda valsts ir ratificējusi vai pieņēmusi pilnu uzbrukuma vai slepkavības ekvivalenci par cietsirdību pret mājdzīvniekiem. Šis katalogs nevienu neatrada. Nelasi šo kartīti kā tādu, kas aptver negadījumus: ceļa pārbraukšana nav tvērumā un nav pielīdzināta cilvēka nogalināšanai satiksmē. Trīs reālus kaimiņus viegli sajaukt ar šo ideju, un tie nav tā. Pirmkārt, kriminālie cietsirdības pret dzīvniekiem statūti jau soda daļu tīšas vardarbības: piemēram, ASV Preventing Animal Cruelty and Torture Act, 18 U.S.C. § 48, līdz septiņiem gadiem par norādīto „animal crushing”. Tā ir cietsirdības felonija, ne uzbrukums un ne slepkavība. Otrkārt, civiltiesiskā statusa reformas atzīst dzīvniekus par jūtīgiem vai „ne lietām”: Portugāles Lei n.º 8/2017 Civilkodeksā ielika 201.º-B. pantu („os animais são seres vivos dotados de sensibilidade”); Vācijas BGB § 90a („Tiere sind keine Sachen”) joprojām piemēro lietu noteikumus, ja īpašs likums nesaka citādi. Statusa maiņa nav vardarbības skalas paritāte. Treškārt, ierobežota „tiesību subjektu” judikatūra: Ekvadoras Konstitucionālā tiesa, Sentencia 253-20-JH/22 (Estrellita, 2022. gada 27. janvāris): atzina savvaļas vilnaino pērtiķi par tiesību subjektu Dabas tiesību ietvarā un teica, ka šīs tiesības nav līdzvērtīgas cilvēka tiesībām. Tas nepadara suņa sišanu vai nogalināšanu juridiski identisku cilvēka piekaušanai vai slepkavībai.',
     sourcesNote:
       '18 U.S.C. § 48 Cornell LII / U.S. Code; Diário da República PDF Lei n.º 8/2017; gesetze-im-internet BGB § 90a; Ekvadoras Konstitucionālās tiesas lapa par Sentencia 253-20-JH/22.',
   },

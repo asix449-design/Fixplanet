@@ -144,6 +144,70 @@
           "count": 260
         }
       ]
+    },
+    "ecb_monthly": {
+      "file": "ecb-fx-monthly.json",
+      "title": "Euro foreign exchange reference rates, monthly averages",
+      "frequency": "monthly",
+      "staleAfterDays": 45,
+      "source": {
+        "organisation": "European Central Bank",
+        "name": "Euro foreign exchange reference rates, monthly (ECB Data Portal dataflow EXR)",
+        "page": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+        "termsUrls": ["https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html", "https://data.ecb.europa.eu/help/api/data"],
+        "downloadUrl": "https://data-api.ecb.europa.eu/service/data/EXR/M.USD+GBP+PLN.EUR.SP00.A?startPeriod=1999-01&format=csvdata"
+      },
+      "licence": {
+        "name": "ECB reuse policy for statistics of the European System of Central Banks",
+        "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+        "terms": "Free reuse on the condition that the source is quoted (\"Source: ECB statistics.\") and the statistics, metadata included, are not modified. The reference rates are published for information only."
+      },
+      "attribution": {
+        "credit": "Source: ECB statistics.",
+        "edition": null
+      },
+      "modified": false,
+      "changes": ["Layout only: the months are listed once and each currency has one list of values in the same order.", "Each value is the number the ECB data API returns for that month. The API gives the unrounded average, which can have more digits than the DECIMALS field on the series. The page shows the number of decimals the ECB publishes. Nothing is converted, and Fix Planet adds no rate of its own."],
+      "publisherDate": "2026-10-01",
+      "dataAsOf": "2026-09",
+      "retrievedAt": "2026-10-19T09:33:19.976Z",
+      "status": "ok",
+      "consecutiveFailures": 0,
+      "lastError": null,
+      "lastFailureAt": null,
+      "checksums": {
+        "algorithm": "sha256",
+        "output": "67bf57837ed6c8cf5952138e2c6f4f60f60c7a6e9423dc00fb511cffb62cabb4",
+        "outputBytes": 19692,
+        "source": "c4f463259786111e08ec20b6e42d106693961f4c72b4be2030e405a93fc28002",
+        "sourceBytes": 217644
+      },
+      "series": [
+        {
+          "id": "USD",
+          "name": "US dollar/Euro ECB reference exchange rate",
+          "unit": "USD",
+          "first": "1999-01",
+          "last": "2026-09",
+          "count": 333
+        },
+        {
+          "id": "GBP",
+          "name": "Pound sterling/Euro ECB reference exchange rate",
+          "unit": "GBP",
+          "first": "1999-01",
+          "last": "2026-09",
+          "count": 333
+        },
+        {
+          "id": "PLN",
+          "name": "Polish zloty/Euro ECB reference exchange rate",
+          "unit": "PLN",
+          "first": "1999-01",
+          "last": "2026-09",
+          "count": 333
+        }
+      ]
     }
   }
 }
