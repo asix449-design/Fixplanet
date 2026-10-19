@@ -76,7 +76,7 @@ export const lv: Record<string, MapCopy> = {
     cardMeta: `${eia} · pierādītās rezerves · 2023`,
     hook: 'Cik daudz ogļu katra valsts pieskaita pierādītajām rezervēm, proti, ogles, ko zināmās atradnes var dot pie šodienas cenām un tehnoloģijām.',
     description:
-      `${eia}, Amerikas Savienoto Valstu Enerģētikas ministrijas statistikas iestāde, publicē starptautiskus enerģētikas datus, tostarp katras valsts pierādītās ogļu rezerves tonnās. Our World in Data publicē šo datu rindu par 2008.–2023. gadu, pēdējo reizi atjauninātu 2026. gada 30. jūnijā. Pierādītās rezerves ir daudzumi, ko saskaņā ar ģeoloģisko un inženiertehnisko informāciju nākotnē var iegūt no zināmām atradnēm pie esošajiem ekonomiskajiem un ekspluatācijas apstākļiem.`,
+      `${eia}, Amerikas Savienoto Valstu Enerģētikas ministrijas statistikas iestāde, publicē starptautiskus enerģētikas datus, tostarp katras valsts pierādītās ogļu rezerves tonnās. Our World in Data publicē šo datu rindu par 2008.-2023. gadu, pēdējo reizi atjauninātu 2026. gada 30. jūnijā. Pierādītās rezerves ir daudzumi, ko saskaņā ar ģeoloģisko un inženiertehnisko informāciju nākotnē var iegūt no zināmām atradnēm pie esošajiem ekonomiskajiem un ekspluatācijas apstākļiem.`,
     whyOnShelf:
       'Rezerves rāda, cik daudz ogļu valsts vēl var iegūt un sadedzināt. 2023. gadā lielākās pierādītās rezerves bija Amerikas Savienotajās Valstīs (apmēram 248 miljardi tonnu), Krievijā (apmēram 162 miljardi), Ķīnā (apmēram 157 miljardi), Austrālijā (apmēram 150 miljardi) un Indijā (apmēram 128 miljardi). Kopā šīm piecām valstīm piederēja apmēram 72% no pasaules kopsummas, kas bija apmēram 1 166 miljardi tonnu.',
     howToRead:
@@ -159,7 +159,7 @@ export const lv: Record<string, MapCopy> = {
     ),
     sources: [
       cite(
-        `${usgs}: pasaules kartes par kritiski svarīgo minerālu ieguvi 2023. gadā, informatīvā lapa, 2025. gada augusts (Global Maps of Critical Mineral Production in 2023, Fact Sheet 2025–3038)`,
+        `${usgs}: pasaules kartes par kritiski svarīgo minerālu ieguvi 2023. gadā, informatīvā lapa, 2025. gada augusts (Global Maps of Critical Mineral Production in 2023, Fact Sheet 2025-3038)`,
         'https://pubs.usgs.gov/publication/fs20253038',
       ),
       cite(

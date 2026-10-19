@@ -29,7 +29,7 @@
     "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
     "url": "https://github.com/aourednik/historical-basemaps",
     "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
-    "note": "Eve of Constantine — majority pagan; Christianity as eastern urban minority, not empire fill. Americas unmapped."
+    "note": "Eve of Constantine: majority pagan; Christianity as eastern urban minority, not empire fill. Americas unmapped."
   },
   {
     "file": "y0400.png",
@@ -85,7 +85,7 @@
     "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
     "url": "https://github.com/aourednik/historical-basemaps",
     "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
-    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Maghreb–Libya–Egypt–Near East belt); Christian Europe expanding; Americas unmapped."
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Maghreb-Libya-Egypt-Near East belt); Christian Europe expanding; Americas unmapped."
   },
   {
     "file": "y1100.png",
@@ -109,7 +109,7 @@
     "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
     "url": "https://github.com/aourednik/historical-basemaps",
     "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
-    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Mamluk Egypt–Syria, Maghreb–Libya, Anatolia fringe, Granada pocket); Americas indigenous local traditions (Aztec Mesoamerica + Andes + other)."
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; Islam (Mamluk Egypt-Syria, Maghreb-Libya, Anatolia fringe, Granada pocket); Americas indigenous local traditions (Aztec Mesoamerica + Andes + other)."
   },
   {
     "file": "y1400.png",
@@ -149,7 +149,7 @@
     "source": "Religion fills © Fix Planet schematic reconstruction; basemap historical-basemaps (GPL-3.0)",
     "url": "https://github.com/aourednik/historical-basemaps",
     "license": "Religion fills © Fix Planet schematic; basemap GPL-3.0 (no © Fix Planet on GPL geometry)",
-    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; South America nearly monolithic Catholic; North America Christian east–center; Russia Orthodoxy to the Pacific; Africa still pockets (Ethiopia, Kongo, Angola/Mozambique, Cape, tiny Freetown); Australia Aboriginal with NSW speck at Sydney from 1788."
+    "note": "Religion schematic © Fix Planet. Historical basemap GPL-3.0. Land clip Natural Earth. Not a census; South America nearly monolithic Catholic; North America Christian east-center; Russia Orthodoxy to the Pacific; Africa still pockets (Ethiopia, Kongo, Angola/Mozambique, Cape, tiny Freetown); Australia Aboriginal with NSW speck at Sydney from 1788."
   },
   {
     "file": "y0001.png",
@@ -157,7 +157,7 @@
     "source": "Élisée Reclus, L’Homme et la Terre (1905)",
     "url": "https://commons.wikimedia.org/wiki/File:Planche_VI_-_Principales_religions_de_l%27ancien_monde_-_liv3-ch09.png",
     "license": "Public domain",
-    "note": "Museum companion for year 1 — not the schematic shelf card. 1905 scholarly reconstruction of ancient Old-World religions. Seas recolored toward the Borders atlas palette; religion fills unchanged."
+    "note": "Museum companion for year 1: not the schematic shelf card. 1905 scholarly reconstruction of ancient Old-World religions. Seas recolored toward the Borders atlas palette; religion fills unchanged."
   },
   {
     "file": "y0600.png",
@@ -165,7 +165,7 @@
     "source": "Geuiwogbil after Atlas of World History; Wikimedia Commons",
     "url": "https://commons.wikimedia.org/wiki/File:Spread_of_Christianity_to_AD_600_-_Atlas_of_World_History.png",
     "license": "CC BY-SA 3.0",
-    "note": "Process companion of one tradition in Afro-Eurasia — not the 600 multi-religion schematic. Not a census of all religions."
+    "note": "Process companion of one tradition in Afro-Eurasia, not the 600 multi-religion schematic. Not a census of all religions."
   },
   {
     "file": "y0820.png",
@@ -209,10 +209,10 @@
   },
   {
     "file": "y1943.jpg",
-    "title": "Religions — Atlas of World Maps (1943)",
+    "title": "Religions: Atlas of World Maps (1943)",
     "source": "U.S. Army Service Forces",
     "url": "https://commons.wikimedia.org/wiki/File:Religions_10.jpg",
     "license": "Public domain (U.S. government work)",
-    "note": "Wartime intelligence atlas plate. Used as the nearest dated world sheet for the 2000 step — not a 2000 survey."
+    "note": "Wartime intelligence atlas plate. Used as the nearest dated world sheet for the 2000 step, not a 2000 survey."
   }
 ]

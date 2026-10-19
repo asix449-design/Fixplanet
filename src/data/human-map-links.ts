@@ -24,7 +24,7 @@ export type HumanMapLinkMeta = {
 
 /** Cartetika listed these maps — attribution only, not a primary paper. */
 export const cartetikaRoundup = cite(
-  'Cartetika — maps of early human migrations',
+  'Cartetika: maps of early human migrations',
   'https://cartetika.ru/tpost/xbc3v1db01-karti-rannih-migratsii-lyudei',
 );
 
@@ -43,7 +43,7 @@ export const humanMapLinkMeta: readonly HumanMapLinkMeta[] = [
       },
     ],
     source: cite(
-      'California Academy of Sciences — Human Odyssey',
+      'California Academy of Sciences: Human Odyssey',
       'https://www.calacademy.org/exhibits/human-odyssey',
     ),
   },
@@ -57,7 +57,7 @@ export const humanMapLinkMeta: readonly HumanMapLinkMeta[] = [
       },
     ],
     source: cite(
-      'Wikipedia — List of human evolution fossils',
+      'Wikipedia: List of human evolution fossils',
       'https://en.wikipedia.org/wiki/List_of_human_evolution_fossils',
     ),
   },
@@ -79,7 +79,7 @@ export const humanMapLinkMeta: readonly HumanMapLinkMeta[] = [
       },
     ],
     source: cite(
-      'Atlas of Human Evolution — interactive maps covering ~7 million years',
+      'Atlas of Human Evolution: interactive maps covering ~7 million years',
       'http://atlasofhumanevolution.com/Maps.asp',
     ),
   },

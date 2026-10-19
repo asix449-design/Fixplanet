@@ -21,7 +21,7 @@ const artWidth = map.detail ? 7200 : (map.previewWidth ?? 1600);
 const artHeight = map.detail ? 3600 : (map.previewHeight ?? 800);
 const heads = map.sectionHeads;
 const frameStyle = map.frameColor ? `background:${map.frameColor}` : undefined;
-const title = `${map.title} — Fix Planet`;
+const title = `${map.title}: Fix Planet`;
 ---
 
 <BaseLayout title={title} description={map.hook} image={preview}>

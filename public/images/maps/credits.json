@@ -27,7 +27,7 @@
   },
   {
     "file": "earth-at-night.jpg",
-    "title": "Night Lights 2012 — flat map (VIIRS DNB land/ocean/ice), cropped for the catalog",
+    "title": "Night Lights 2012: flat map (VIIRS DNB land/ocean/ice), cropped for the catalog",
     "source": "NASA Earth Observatory / Suomi NPP VIIRS",
     "url": "https://visibleearth.nasa.gov/images/79765/night-lights-2012-flat-map",
     "direct": "https://eoimages.gsfc.nasa.gov/images/imagerecords/79000/79765/dnb_land_ocean_ice.2012.3600x1800.jpg",
@@ -233,8 +233,8 @@
   },
   {
     "file": "forest-cover-loss.jpg",
-    "title": "Share of 30 m pixels with tree-cover loss, Hansen GFC 2001–2024",
-    "source": "Fix Planet map from Hansen Global Forest Change v1.12 lossyear tiles, share of 30 m pixels lost 2001–2024 on a 0.02° grid. Boundaries: Natural Earth 1:10m.",
+    "title": "Share of 30 m pixels with tree-cover loss, Hansen GFC 2001-2024",
+    "source": "Fix Planet map from Hansen Global Forest Change v1.12 lossyear tiles, share of 30 m pixels lost 2001-2024 on a 0.02° grid. Boundaries: Natural Earth 1:10m.",
     "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2024-v1.12/",
     "license": "CC BY 4.0 (Hansen / UMD / Google / USGS / NASA). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
@@ -351,7 +351,7 @@
   {
     "file": "borders/y1100.png",
     "title": "World in 1100 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1100.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1100.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1100.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
@@ -360,7 +360,7 @@
   {
     "file": "borders/y1300.png",
     "title": "World in 1300 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1300.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1300.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1300.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
@@ -378,7 +378,7 @@
   {
     "file": "borders/y1400.png",
     "title": "World in 1400 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1400.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1400.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1400.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
@@ -387,11 +387,11 @@
   {
     "file": "borders/y1500.png",
     "title": "World in 1500 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1500.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1500.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1500.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
-    "note": "History of borders, exact year 1500. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. No Spain after 1492 — Iberian footholds are missing and not drawn. Not world_1492. Not © Fix Planet geometry."
+    "note": "History of borders, exact year 1500. Reconstructed by Fix Planet from open GeoJSON (fills + large polity labels). Modern Natural Earth coastlines; schematic / WIP borders. Corresponding Source: github.com/aourednik/historical-basemaps. No Spain after 1492: Iberian footholds are missing and not drawn. Not world_1492. Not © Fix Planet geometry."
   },
   {
     "file": "borders/y1648.png",
@@ -405,7 +405,7 @@
   {
     "file": "borders/y1700.png",
     "title": "World in 1700 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1700.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1700.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1700.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
@@ -414,7 +414,7 @@
   {
     "file": "borders/y1800.png",
     "title": "World in 1800 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1800.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1800.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1800.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
@@ -423,7 +423,7 @@
   {
     "file": "borders/y1900.png",
     "title": "World in 1900 CE (Fix Planet render of aourednik GeoJSON)",
-    "source": "Historical basemaps © André Ourednik et al. — geojson/world_1900.geojson",
+    "source": "Historical basemaps © André Ourednik et al., geojson/world_1900.geojson",
     "url": "https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1900.geojson",
     "license": "GPL-3.0",
     "kind": "fix-planet-render",
@@ -468,7 +468,7 @@
   {
     "file": "disputed-breakaway-areas.jpg",
     "title": "Admin 0 breakaway and disputed areas (catalog render)",
-    "source": "Natural Earth 10m cultural vectors — Admin 0 breakaway, disputed areas",
+    "source": "Natural Earth 10m cultural vectors: Admin 0 breakaway, disputed areas",
     "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-breakaway-disputed-areas/",
     "license": "Public domain (Natural Earth)",
     "kind": "fix-planet-render",
@@ -477,7 +477,7 @@
   {
     "file": "states-provinces.jpg",
     "title": "Admin 1 states and provinces (catalog render)",
-    "source": "Natural Earth cultural vectors — Admin 1 states, provinces (small-scale outlines)",
+    "source": "Natural Earth cultural vectors: Admin 1 states, provinces (small-scale outlines)",
     "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
     "license": "Public domain (Natural Earth)",
     "kind": "fix-planet-render",
@@ -486,7 +486,7 @@
   {
     "file": "land-boundary-lines.jpg",
     "title": "Admin 0 land boundary lines (catalog render)",
-    "source": "Natural Earth 10m cultural vectors — Admin 0 boundary lines, land",
+    "source": "Natural Earth 10m cultural vectors: Admin 0 boundary lines, land",
     "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-boundary-lines/",
     "license": "Public domain (Natural Earth)",
     "kind": "fix-planet-render",
@@ -499,7 +499,7 @@
     "url": "https://commons.wikimedia.org/wiki/File:Ethnologue_18_linguistic_diversity_index_BlankMap-World6.svg",
     "license": "CC BY-SA 3.0",
     "kind": "hosted-original",
-    "note": "Country choropleth of linguistic diversity from Ethnologue 18. Magnitude/diversity preview — not the Glottolog family map and not a printed living-language total."
+    "note": "Country choropleth of linguistic diversity from Ethnologue 18. Magnitude/diversity preview, not the Glottolog family map and not a printed living-language total."
   },
   {
     "file": "endangered-languages-unesco.jpg",
@@ -512,7 +512,7 @@
   },
   {
     "file": "wals-language-structures.jpg",
-    "title": "WALS feature 1A — Consonant inventories",
+    "title": "WALS feature 1A: Consonant inventories",
     "source": "WALS Online (Dryer & Haspelmath / Max Planck EVA); Maddieson, Consonant Inventories; Natural Earth land",
     "url": "https://wals.info/feature/1A",
     "license": "CC BY 4.0 (WALS); land public domain (Natural Earth)",
@@ -553,7 +553,7 @@
     "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
     "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "Score 0–5. Grey land has no decline score. Not the WHYMAP aquifer-environment map."
+    "note": "Score 0-5. Grey land has no decline score. Not the WHYMAP aquifer-environment map."
   },
   {
     "file": "global-lakes-hydrolakes.jpg",
@@ -580,7 +580,7 @@
     "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
     "license": "CC BY 4.0 (World Resources Institute). Boundaries public domain (Natural Earth).",
     "kind": "rendered-from-source",
-    "note": "Score 0–5 for riverine flood risk. Not an Aqueduct Floods inundation-depth raster."
+    "note": "Score 0-5 for riverine flood risk. Not an Aqueduct Floods inundation-depth raster."
   },
   {
     "file": "intact-forest-landscapes.jpg",
@@ -679,7 +679,7 @@
     "url": "https://human-settlement.emergency.copernicus.eu/ghs_smod2023.php",
     "license": "CC BY 4.0 (European Commission). Boundaries: Natural Earth",
     "kind": "data",
-    "note": "Red urban centre (30), orange towns (21–23), olive rural (11–13). No numeric bar. 2020 is the latest satellite-based epoch in R2023A. The 2025 and 2030 epochs are model projections and are not this plate."
+    "note": "Red urban centre (30), orange towns (21-23), olive rural (11-13). No numeric bar. 2020 is the latest satellite-based epoch in R2023A. The 2025 and 2030 epochs are model projections and are not this plate."
   },
   {
     "file": "built-up-surface.jpg",

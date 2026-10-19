@@ -18,7 +18,7 @@ export const lv: Record<string, MapCopy> = {
     cardMeta: '“Pasaules cietumu pārskata” dati, ieslodzītie uz 100 000 cilvēku.',
     hook: 'Cik cilvēku katrā valstī atrodas cietumā uz katriem 100 000 iedzīvotāju, ieskaitot apcietinātos pirms tiesas, pēc datubāzes “Pasaules cietumu pārskats”.',
     description:
-      '“Pasaules cietumu pārskats” ir bezmaksas tiešsaistes datubāze par pasaules ieslodzījuma sistēmām. To uztur Noziedzības un tieslietu politikas pētniecības institūts Birkbeck koledžā, Londonas Universitātē. Datubāze sarindo valstis pēc ieslodzījuma līmeņa: visu ieslodzīto skaita, ieskaitot apcietinātos pirms tiesas, uz 100 000 iedzīvotāju. Bezpeļņas statistikas vietne Our World in Data (“Mūsu pasaule datos”) šo pašu datu rindu rāda pasaules kartē (dati par 1993.–2026. gadu).',
+      '“Pasaules cietumu pārskats” ir bezmaksas tiešsaistes datubāze par pasaules ieslodzījuma sistēmām. To uztur Noziedzības un tieslietu politikas pētniecības institūts Birkbeck koledžā, Londonas Universitātē. Datubāze sarindo valstis pēc ieslodzījuma līmeņa: visu ieslodzīto skaita, ieskaitot apcietinātos pirms tiesas, uz 100 000 iedzīvotāju. Bezpeļņas statistikas vietne Our World in Data (“Mūsu pasaule datos”) šo pašu datu rindu rāda pasaules kartē (dati par 1993.-2026. gadu).',
     whyOnShelf:
       'Rādītājs parāda, cik plaši valsts izmanto brīvības atņemšanu. Sarakstā, kurā ir 224 ieslodzījuma sistēmas, augstākais līmenis ir Salvadorā: 1659 uz 100 000 cilvēku, tālāk seko Kuba (794), Turkmenistāna (aptuveni 576) un Amerikas Savienotās Valstis (542).',
     howToRead:
@@ -81,9 +81,9 @@ export const lv: Record<string, MapCopy> = {
     title: 'Narkotiku kontrabandas plūsmas',
     cardMeta:
       'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja “Pasaules narkotiku ziņojums” 2026, maršrutu kartes pēc ziņotajiem narkotiku izņemšanas gadījumiem.',
-    hook: 'Galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi starp pasaules reģioniem Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja kartēs, kas sastādītas pēc 2021.–2024. gadā ziņotajiem izņemšanas gadījumiem.',
+    hook: 'Galvenie kokaīna, heroīna un metamfetamīna kontrabandas ceļi starp pasaules reģioniem Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja kartēs, kas sastādītas pēc 2021.-2024. gadā ziņotajiem izņemšanas gadījumiem.',
     description:
-      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja “Pasaules narkotiku ziņojumam” 2026 ir statistiskais pielikums ar trim pasaules kartēm, kurās parādītas galvenās metamfetamīna, kokaīna un heroīna kontrabandas plūsmas. Katra karte apkopo narkotiku izņemšanas gadījumus, par kuriem ziņots 2021.–2024. gadā. Papildu kartes rāda galvenās izbraukšanas vai tranzīta valstis un galvenās galamērķa valstis katrai narkotikai, bet pielikuma tabulās ir dati par audzēšanu, ražošanu, izņemšanu, cenām un tīrību.',
+      'Apvienoto Nāciju Organizācijas Narkotiku un noziedzības biroja “Pasaules narkotiku ziņojumam” 2026 ir statistiskais pielikums ar trim pasaules kartēm, kurās parādītas galvenās metamfetamīna, kokaīna un heroīna kontrabandas plūsmas. Katra karte apkopo narkotiku izņemšanas gadījumus, par kuriem ziņots 2021.-2024. gadā. Papildu kartes rāda galvenās izbraukšanas vai tranzīta valstis un galvenās galamērķa valstis katrai narkotikai, bet pielikuma tabulās ir dati par audzēšanu, ražošanu, izņemšanu, cenām un tīrību.',
     whyOnShelf:
       'Kartes rāda, kā narkotikas ceļo no ražošanas reģioniem caur tranzīta mezgliem uz patēriņa tirgiem. Piemērs ir Eiropa: Eiropas Savienības Narkotiku aģentūra ziņo, ka Eiropas Savienības valstis 2024. gadā izņēma 330 tonnas kokaīna pēc rekordlielajām 419 tonnām 2023. gadā; visvairāk izņēma Spānija (124 tonnas) un Francija (53,5 tonnas).',
     howToRead:
@@ -93,8 +93,8 @@ export const lv: Record<string, MapCopy> = {
     licenseNote: realMapCredit('lv', 'drug-trafficking-flows') ?? '',
     imageAlt:
       'Kolonnas ar izņemto kokaīnu no 2014. līdz 2024. gadam, astoņas krāsu joslas un gadi, bez valstu nosaukumiem attēlā',
-    caption: 'Izņemtais kokaīns 27 Eiropas Savienības valstīs, Norvēģijā un Turcijā 2014.–2024. gadā, tonnās, pa valstīm.',
-    figureTitle: 'Izņemtais kokaīns Eiropā, 2014.–2024.',
+    caption: 'Izņemtais kokaīns 27 Eiropas Savienības valstīs, Norvēģijā un Turcijā 2014.-2024. gadā, tonnās, pa valstīm.',
+    figureTitle: 'Izņemtais kokaīns Eiropā, 2014.-2024.',
     sectionHeads: heads,
     legend: [
       {
@@ -125,15 +125,15 @@ export const lv: Record<string, MapCopy> = {
         'https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2026-annex.html',
       ),
       cite(
-        'UNODC: galvenās kokaīna kontrabandas plūsmas pēc ziņotajiem izņemšanas gadījumiem, 2021–2024, karte PDF formātā (Main cocaine trafficking flows as described in reported seizures)',
+        'UNODC: galvenās kokaīna kontrabandas plūsmas pēc ziņotajiem izņemšanas gadījumiem, 2021-2024, karte PDF formātā (Main cocaine trafficking flows as described in reported seizures)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/04_Main_cocaine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'UNODC: galvenās heroīna kontrabandas plūsmas pēc ziņotajiem izņemšanas gadījumiem, 2021–2024, karte PDF formātā (Main heroin trafficking flows)',
+        'UNODC: galvenās heroīna kontrabandas plūsmas pēc ziņotajiem izņemšanas gadījumiem, 2021-2024, karte PDF formātā (Main heroin trafficking flows)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/07_Main_heroin_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
-        'UNODC: galvenās metamfetamīna kontrabandas plūsmas pēc ziņotajiem izņemšanas gadījumiem, 2021–2024, karte PDF formātā (Main methamphetamine trafficking flows)',
+        'UNODC: galvenās metamfetamīna kontrabandas plūsmas pēc ziņotajiem izņemšanas gadījumiem, 2021-2024, karte PDF formātā (Main methamphetamine trafficking flows)',
         'https://www.unodc.org/documents/data-and-analysis/WDR_2026/Annex/01_Main_methamphetamine_trafficking_flows_as_described_in_reported_seizures_2021-2024.pdf',
       ),
       cite(
@@ -145,7 +145,7 @@ export const lv: Record<string, MapCopy> = {
         'https://www.euda.europa.eu/publications/european-drug-report/2026/cocaine_en',
       ),
       cite(
-        'EUDA: izņemtā kokaīna daudzuma tendences tonnās, 2014–2024 (tabula EDR26-Cocaine-6, CSV)',
+        'EUDA: izņemtā kokaīna daudzuma tendences tonnās, 2014-2024 (tabula EDR26-Cocaine-6, CSV)',
         'https://www.euda.europa.eu/sites/default/files/data/data-nodes/33313/versions/56/edr2026-cocaine-table-8_en.csv',
       ),
     ],
@@ -381,7 +381,7 @@ export const lv: Record<string, MapCopy> = {
         'https://datacatalog.worldbank.org/search/dataset/0038026/worldwide-governance-indicators',
       ),
       cite(
-        'Pasaules Banka: pārvaldības aplēses un vērtējumi, 1996–2025, Excel fails (WGI 2026 Governance Estimates and Scores)',
+        'Pasaules Banka: pārvaldības aplēses un vērtējumi, 1996-2025, Excel fails (WGI 2026 Governance Estimates and Scores)',
         'https://datacatalogfiles.worldbank.org/ddh-published/0038026/DR0095947/WGI%202026%20Governance%20Estimates%20and%20Scores%20%281996-2025%29.xlsx',
       ),
     ],

@@ -73,7 +73,7 @@ export const pl: Record<string, MapCopy> = {
     cardMeta: 'Amerykańska Agencja Informacji Energetycznej · zasoby udokumentowane · 2023',
     hook: 'Ile węgla każdy kraj zalicza do zasobów udokumentowanych, czyli węgla, który znane złoża mogą dać przy dzisiejszych cenach i technologiach.',
     description:
-      'Amerykańska Agencja Informacji Energetycznej, urząd statystyczny Departamentu Energii Stanów Zjednoczonych, publikuje międzynarodowe dane energetyczne, w tym udokumentowane zasoby węgla każdego kraju w tonach. Our World in Data udostępnia ten szereg za lata 2008–2023, ostatnio zaktualizowany 30 czerwca 2026 r. Zasoby udokumentowane to ilości, które według danych geologicznych i inżynierskich można w przyszłości wydobyć ze znanych złóż przy istniejących warunkach ekonomicznych i eksploatacyjnych.',
+      'Amerykańska Agencja Informacji Energetycznej, urząd statystyczny Departamentu Energii Stanów Zjednoczonych, publikuje międzynarodowe dane energetyczne, w tym udokumentowane zasoby węgla każdego kraju w tonach. Our World in Data udostępnia ten szereg za lata 2008-2023, ostatnio zaktualizowany 30 czerwca 2026 r. Zasoby udokumentowane to ilości, które według danych geologicznych i inżynierskich można w przyszłości wydobyć ze znanych złóż przy istniejących warunkach ekonomicznych i eksploatacyjnych.',
     whyOnShelf:
       'Zasoby pokazują, ile węgla kraj może jeszcze wydobyć i spalić. W 2023 r. największe zasoby udokumentowane miały Stany Zjednoczone (około 248 miliardów ton), Rosja (około 162 miliardów), Chiny (około 157 miliardów), Australia (około 150 miliardów) i Indie (około 128 miliardów). Razem te pięć krajów miało około 72% światowej sumy, wynoszącej około 1 166 miliardów ton.',
     howToRead:
@@ -156,7 +156,7 @@ export const pl: Record<string, MapCopy> = {
     ),
     sources: [
       cite(
-        'Służba Geologiczna Stanów Zjednoczonych: globalne mapy produkcji minerałów krytycznych w 2023 r., arkusz informacyjny, sierpień 2025 (Global Maps of Critical Mineral Production in 2023, Fact Sheet 2025–3038)',
+        'Służba Geologiczna Stanów Zjednoczonych: globalne mapy produkcji minerałów krytycznych w 2023 r., arkusz informacyjny, sierpień 2025 (Global Maps of Critical Mineral Production in 2023, Fact Sheet 2025-3038)',
         'https://pubs.usgs.gov/publication/fs20253038',
       ),
       cite(
@@ -176,7 +176,7 @@ export const pl: Record<string, MapCopy> = {
     description:
       'Rozdział o metalach ziem rzadkich w „Przeglądzie surowców mineralnych 2025”, roczniku Służby Geologicznej Stanów Zjednoczonych, szacuje światowe wydobycie na około 376 000 ton w przeliczeniu na tlenki metali ziem rzadkich w 2023 r. i około 390 000 ton w 2024 r. Przeliczenie na tlenki metali ziem rzadkich to wspólna jednostka, która pozwala sumować różne pierwiastki tej grupy. Światowe zasoby przekraczają 90 milionów ton. Zestawienie obejmuje lantanowce i itr, a pomija większość skandu.',
     whyOnShelf:
-      'Metale ziem rzadkich trafiają do magnesów trwałych, katalizatorów, ceramiki i szkła, stopów oraz proszków polerskich. Kwota wydobycia Chin wzrosła z 255 000 do 270 000 ton, około 69% światowej sumy w 2024 r., a Chiny mają też największe zasoby, 44 miliony ton. Stany Zjednoczone wyprodukowały w 2024 r. około 45 000 ton w koncentratach mineralnych, a mimo to około 80% zużywanych związków i metali ziem rzadkich pochodziło z importu. W latach 2020–2023 70% tego importu przypadło na Chiny, 13% na Malezję, 6% na Japonię i 5% na Estonię.',
+      'Metale ziem rzadkich trafiają do magnesów trwałych, katalizatorów, ceramiki i szkła, stopów oraz proszków polerskich. Kwota wydobycia Chin wzrosła z 255 000 do 270 000 ton, około 69% światowej sumy w 2024 r., a Chiny mają też największe zasoby, 44 miliony ton. Stany Zjednoczone wyprodukowały w 2024 r. około 45 000 ton w koncentratach mineralnych, a mimo to około 80% zużywanych związków i metali ziem rzadkich pochodziło z importu. W latach 2020-2023 70% tego importu przypadło na Chiny, 13% na Malezję, 6% na Japonię i 5% na Estonię.',
     howToRead:
       'Mapa pokazuje szacowane wydobycie w 2024 r., w tonach w przeliczeniu na tlenki metali ziem rzadkich. Im ciemniejszy kolor, tym większe wydobycie. Po Chinach największymi producentami były Stany Zjednoczone, Mjanma (31 000 ton) oraz Australia, Nigeria i Tajlandia (po 13 000 ton). Brazylia ma drugie co do wielkości zasoby, 21 milionów ton, ale w 2024 r. wydobyła tylko 20 ton.',
     caveats:

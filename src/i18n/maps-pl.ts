@@ -4,7 +4,7 @@ import { cite } from '../data/sources';
 export const pl: Record<string, MapCopy> = {
   'armed-conflict-events': {
     title: 'Zdarzenia przemocy politycznej',
-    hook: 'Gdzie zarejestrowano starcia zbrojne i protesty — nie wyrok, kto ma rację.',
+    hook: 'Gdzie zarejestrowano starcia zbrojne i protesty, nie wyrok, kto ma rację.',
     description:
       'ACLED zbiera geolokalizowane doniesienia o bitwach, wybuchach, przemocy wobec cywilów, zamieszkach i protestach. Publiczny pulpit i Conflict Watchlist pokazują niedawne wzory. Ta karta jest wejściem do żywego zbioru, nie kopią każdego punktu.',
     howToRead:
@@ -32,53 +32,53 @@ export const pl: Record<string, MapCopy> = {
   },
   'global-peace-index': {
     title: 'Globalny indeks pokoju (GPI)',
-    hook: 'Ranking pokojowości krajów od Institute for Economics & Peace — złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
+    hook: 'Ranking pokojowości krajów od Institute for Economics & Peace: złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
     description: 'GPI (IEP / Vision of Humanity) porównuje kraje złożonym indeksem pokoju.',
     whyOnShelf: 'Inny obiekt niż ACLED (zdarzenia) i UCDP (zgony bojowe).',
-    howToRead: 'Kolor — pasmo rankingu, nie wyrok sądu. Otwierać mapę i raport GPI.',
+    howToRead: 'Kolor: pasmo rankingu, nie wyrok sądu. Otwierać mapę i raport GPI.',
     caveats: 'Złożony wynik, nie pinezki zdarzeń ACLED i nie werdykt «kto ma rację».',
-    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    licenseNote: 'Podgląd: przegląd Fix Planet, nie oficjalna grafika wydawcy.',
     imageAlt:
-      'Przegląd Fix Planet: zieleń — pasmo bardziej pokojowe, czerwień — mniej pokojowe, szara ziemia bez klasy. To nie grafika Vision of Humanity i nie wyniki GPI.',
+      'Przegląd Fix Planet: zieleń: pasmo bardziej pokojowe, czerwień, mniej pokojowe, szara ziemia bez klasy. To nie grafika Vision of Humanity i nie wyniki GPI.',
   },
   'fragile-states-index': {
     title: 'Indeks państw kruchych (FSI)',
-    hook: 'Oceny kruchości państw według nacisku i spójności — ryzyko kruchości, nie ofiary bojowe i nie ranking pokoju.',
-    description: 'FSI (Fund for Peace) — porównawcza skala nacisku na państwo i spójności.',
+    hook: 'Oceny kruchości państw według nacisku i spójności, ryzyko kruchości, nie ofiary bojowe i nie ranking pokoju.',
+    description: 'FSI (Fund for Peace): porównawcza skala nacisku na państwo i spójności.',
     whyOnShelf: 'Nie mapa zdarzeń ACLED i nie GPI.',
     howToRead: 'Patrzeć methodology i global data.',
     caveats: 'Wysoki wynik ≠ wyrok i ≠ prognoza wojny na jutro.',
-    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    licenseNote: 'Podgląd: przegląd Fix Planet, nie oficjalna grafika wydawcy.',
     imageAlt:
-      'Przegląd Fix Planet: ciemniej — wyższa kruchość na tym schemacie, jaśniej — niższa, średni ton bez klasy. To nie mapa Fund for Peace i nie wyniki FSI.',
+      'Przegląd Fix Planet: ciemniej: wyższa kruchość na tym schemacie, jaśniej, niższa, średni ton bez klasy. To nie mapa Fund for Peace i nie wyniki FSI.',
   },
   'military-expenditure-sipri': {
     title: 'Wydatki wojskowe (SIPRI)',
-    hook: 'Porównywalne serie wydatków wojskowych krajów od SIPRI — budżety i obciążenie, nie pinezki zdarzeń i nie katalog uzbrojenia.',
-    description: 'Milex (SIPRI) — wydatki, nie «kto zaczął wojnę» i nie liczba ofiar UCDP.',
+    hook: 'Porównywalne serie wydatków wojskowych krajów od SIPRI, budżety i obciążenie, nie pinezki zdarzeń i nie katalog uzbrojenia.',
+    description: 'Milex (SIPRI): wydatki, nie «kto zaczął wojnę» i nie liczba ofiar UCDP.',
     whyOnShelf: 'Nie mylić z bazą transferów broni SIPRI.',
     howToRead:
-      'Interaktywny milex.sipri.org w sprawdzeniu nie odpowiedział — opierać się na sipri.org/databases/milex i fact sheet.',
+      'Interaktywny milex.sipri.org w sprawdzeniu nie odpowiedział, opierać się na sipri.org/databases/milex i fact sheet.',
     caveats: 'Wysokie wydatki ≠ agresor.',
-    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+    licenseNote: 'Podgląd: przegląd Fix Planet, nie oficjalna grafika wydawcy.',
     imageAlt:
-      'Przegląd Fix Planet: ciemniejszy błękit — wyższy poziom wydatków wojskowych, jaśniejszy ląd bez klasy. To nie okładka rocznika SIPRI i nie liczby Milex.',
+      'Przegląd Fix Planet: ciemniejszy błękit, wyższy poziom wydatków wojskowych, jaśniejszy ląd bez klasy. To nie okładka rocznika SIPRI i nie liczby Milex.',
   },
   'conflict-barometer-hiik': {
     title: 'Barometr konfliktów (HIIK)',
-    hook: 'Roczna intensywność konfliktów według krajów i regionów od HIIK — klasy intensywności, nie pinezki zdarzeń i nie sumy ofiar.',
+    hook: 'Roczna intensywność konfliktów według krajów i regionów od HIIK, klasy intensywności, nie pinezki zdarzeń i nie sumy ofiar.',
     description: 'Conflict Barometer (HIIK) koduje intensywność konfliktów politycznych za rok.',
     whyOnShelf: 'Inny obiekt niż ACLED i UCDP.',
     howToRead: 'Otwierać aktualny PDF i mapy HIIK.',
     caveats:
-      'Klasa intensywności ≠ rezolucja ONZ. Zamiana na mapę misji pokojowych ONZ niepotrzebna — HIIK odpowiada 200.',
-    licenseNote: 'Podgląd — przegląd Fix Planet, nie oficjalna grafika wydawcy.',
+      'Klasa intensywności ≠ rezolucja ONZ. Zamiana na mapę misji pokojowych ONZ niepotrzebna: HIIK odpowiada 200.',
+    licenseNote: 'Podgląd: przegląd Fix Planet, nie oficjalna grafika wydawcy.',
     imageAlt:
-      'Przegląd Fix Planet: głęboka czerwień — orientacja natężenia wojny, pomarańcz — inna przemoc, szara ziemia bez klasy. To nie okładka HIIK i nie pinezki ACLED.',
+      'Przegląd Fix Planet: głęboka czerwień: orientacja natężenia wojny, pomarańcz, inna przemoc, szara ziemia bez klasy. To nie okładka HIIK i nie pinezki ACLED.',
   },
   'language-families': {
     title: 'Rodziny językowe świata',
-    hook: 'Lingwistyczna mapa spokrewnionych języków — przybliżenie geografii etnolingwistycznej, nie spis ludów.',
+    hook: 'Lingwistyczna mapa spokrewnionych języków: przybliżenie geografii etnolingwistycznej, nie spis ludów.',
     description:
       'Glottolog Instytutu Maxa Plancka klasyfikuje języki świata i pokazuje je na mapie. WALS to pokrewny naukowy atlas cech strukturalnych. Oba dotyczą języków, nie politycznej etniczności.',
     howToRead:
@@ -86,15 +86,15 @@ export const pl: Record<string, MapCopy> = {
     caveats:
       'Mapy etnolingwistyczne są sporne. Granice kolonialne, przymusowa asymilacja i samoidentyfikacja przecinają drzewa języków. To szkic naukowy wspólnot mowy, nigdy twierdzenie o krwi, lojalności czy terytorium.',
     licenseNote:
-      'Treści Glottolog zwykle są CC BY. Interaktywna mapa jest ich — otwórz ją. Komercyjnego atlasu Ethnologue nie hostujemy.',
+      'Treści Glottolog zwykle są CC BY. Interaktywna mapa jest ich: otwórz ją. Komercyjnego atlasu Ethnologue nie hostujemy.',
     imageAlt:
       'Kolorowa mapa świata rodzin językowych: turkusowy indoeuropejski, pomarańczowy afroazjatycki, zielony nigero-kongijski, magenta chińsko-tybetański, bordowy austronezyjski',
   },
   'world-religions': {
     title: 'Skład religijny według krajów',
-    hook: 'Szacunki Pew, jak ludzie określają swoją religię — przynależność, nie pobożność i nie mapa „cywilizacji”.',
+    hook: 'Szacunki Pew, jak ludzie określają swoją religię: przynależność, nie pobożność i nie mapa „cywilizacji”.',
     description:
-      'Pew Research Center publikuje szacunki składu religijnego krajów (chrześcijanie, muzułmanie, hinduiści, buddyści, żydzi, religie ludowe, osoby bez afiliacji i inni), w tym opracowanie 2010–2050. To szacunki identyfikacji z ankiet i spisów.',
+      'Pew Research Center publikuje szacunki składu religijnego krajów (chrześcijanie, muzułmanie, hinduiści, buddyści, żydzi, religie ludowe, osoby bez afiliacji i inni), w tym opracowanie 2010-2050. To szacunki identyfikacji z ankiet i spisów.',
     howToRead:
       'Etykieta większości w kraju to szacunek statystyczny. Mniejszości i tak tam mieszkają. „Bez afiliacji” to nie jedna kultura. Granice państw słabo trzymają wiarę. Korzystaj z tabel Pew, nie z hasła.',
     caveats:
@@ -107,7 +107,7 @@ export const pl: Record<string, MapCopy> = {
   'homicide-rates': {
     title: 'Wskaźniki umyślnych zabójstw',
     cardMeta:
-      'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości oraz Our World in Data, 2019–2023.',
+      'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości oraz Our World in Data, 2019-2023.',
     gridSource: {
       label: 'Biuro Narodów Zjednoczonych ds. Narkotyków i Przestępczości, badanie umyślnych zabójstw',
       url: 'https://www.unodc.org/unodc/en/data-and-analysis/global-study-on-homicide.html',
@@ -120,7 +120,7 @@ export const pl: Record<string, MapCopy> = {
     caveats:
       'Niedorejestrowanie, definicje prawne i braki lat różnią się. Zgony w konflikcie liczy osobno Uppsalski program danych o konfliktach. Miniatura pokazuje wskaźniki krajów.',
     licenseNote:
-      'Produkty statystyczne Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości zwykle można używać z przypisaniem. Wykresy Our World in Data zwykle są na licencji Creative Commons – uznanie autorstwa. Otwórz ich mapę, żeby zobaczyć aktualną warstwę.',
+      'Produkty statystyczne Biura Narodów Zjednoczonych ds. Narkotyków i Przestępczości zwykle można używać z przypisaniem. Wykresy Our World in Data zwykle są na licencji Creative Commons, uznanie autorstwa. Otwórz ich mapę, żeby zobaczyć aktualną warstwę.',
     imageAlt:
       'Mapa Our World in Data wskaźników zabójstw: żółto-pomarańczowy ląd, ciemniejsza czerwień w części Ameryki Łacińskiej i południowej Afryki',
     sources: [
@@ -145,7 +145,7 @@ export const pl: Record<string, MapCopy> = {
     },
     hook: 'Oceny krajów dla rynków przestępczych, aktorów i odporności: ekspercka mapa cieplna przestępczości zorganizowanej.',
     description:
-      'Globalna inicjatywa przeciwko transnarodowej przestępczości zorganizowanej ocenia 193 państwa członkowskie Organizacji Narodów Zjednoczonych pod względem przestępczości — rynków i aktorów — oraz odporności. Publiczne narzędzie to ocindex.net. Edycja 2025 jest trzecia; rok oceny to 2024. Ta karta prowadzi do tego eksperckiego kompozytu.',
+      'Globalna inicjatywa przeciwko transnarodowej przestępczości zorganizowanej ocenia 193 państwa członkowskie Organizacji Narodów Zjednoczonych pod względem przestępczości, rynków i aktorów, oraz odporności. Publiczne narzędzie to ocindex.net. Edycja 2025 jest trzecia; rok oceny to 2024. Ta karta prowadzi do tego eksperckiego kompozytu.',
     whyOnShelf:
       'Przestępczość zorganizowana i odporność opisują rynki, aktorów i zdolność państwa do przeciwdziałania.',
     howToRead:
@@ -153,7 +153,7 @@ export const pl: Record<string, MapCopy> = {
     caveats:
       'To ocena ekspercka, nie spis przestępstw. Definicje i gęstość dowodów się różnią. Wynik rynku i wskaźnik zabójstw liczy się osobno.',
     licenseNote:
-      'Zdjęcie: Philippe Alès, kontenerowiec w Hawrze (licencja Creative Commons – uznanie autorstwa i na tych samych warunkach, wersja 3.0). Mapa cieplna indeksu jest na ocindex.net.',
+      'Zdjęcie: Philippe Alès, kontenerowiec w Hawrze (licencja Creative Commons, uznanie autorstwa i na tych samych warunkach, wersja 3.0). Mapa cieplna indeksu jest na ocindex.net.',
     imageAlt:
       'Kontenerowiec i suwnice w Hawrze. Na zdjęciu jest port, a mapa cieplna Globalnego indeksu przestępczości zorganizowanej jest opublikowana osobno.',
   },
@@ -170,11 +170,11 @@ export const pl: Record<string, MapCopy> = {
     whyOnShelf:
       'Postrzegana korupcja w sektorze publicznym pokazuje ryzyko rządzenia według ankiet ekspertów i biznesu.',
     howToRead:
-      'Wynik to kompozyt percepcji. Etykieta roku to rok edycji indeksu (tu 2025), niekoniecznie rok kalendarzowy każdej ankiety. Wyżej znaczy czyściej. Porównujcie bliskie edycje; zmiana o jeden–dwa punkty bywa szumem. Oficjalne wyniki są na stronie Transparency International; interaktywna mapa jest u Our World in Data.',
+      'Wynik to kompozyt percepcji. Etykieta roku to rok edycji indeksu (tu 2025), niekoniecznie rok kalendarzowy każdej ankiety. Wyżej znaczy czyściej. Porównujcie bliskie edycje; zmiana o jeden-dwa punkty bywa szumem. Oficjalne wyniki są na stronie Transparency International; interaktywna mapa jest u Our World in Data.',
     caveats:
       'Brak kraju oznacza, że pozostaje on poza rankingiem. Doświadczenie łapówek w gospodarstwach to inny szereg. Miniatura pokazuje wyniki indeksu.',
     licenseNote:
-      'Hostujemy przyciętą mapę krajową indeksu 2025 z Wikimedia Commons (Cnscrptr i ConnerMiner, licencja Creative Commons – uznanie autorstwa i na tych samych warunkach, wersja 4.0) na podstawie danych Transparency International. Our World in Data publikuje indeks jako otwartą mapę (licencja Creative Commons – uznanie autorstwa). Edycja jest na stronie Transparency International za 2025 rok.',
+      'Hostujemy przyciętą mapę krajową indeksu 2025 z Wikimedia Commons (Cnscrptr i ConnerMiner, licencja Creative Commons: uznanie autorstwa i na tych samych warunkach, wersja 4.0) na podstawie danych Transparency International. Our World in Data publikuje indeks jako otwartą mapę (licencja Creative Commons, uznanie autorstwa). Edycja jest na stronie Transparency International za 2025 rok.',
     imageAlt:
       'Mapa świata według Indeksu percepcji korupcji 2025: chłodniejsza zieleń tam, gdzie postrzegana korupcja jest niższa, cieplejsza czerwień tam, gdzie wyższa',
   },
@@ -196,19 +196,19 @@ export const pl: Record<string, MapCopy> = {
     caveats:
       'Wykrycie to nie spis. Przepływy transgraniczne w raporcie to wykryte wzory, nie pełny inwentarz szlaków.',
     licenseNote:
-      'Zdjęcie: Vladimir Platonow / Agência Brasil (licencja Creative Commons – uznanie autorstwa, wersja 3.0, Brazylia). Chrystus Odkupiciel podświetlony na niebiesko przeciw handlowi ludźmi, 28 lipca 2014.',
+      'Zdjęcie: Vladimir Platonow / Agência Brasil (licencja Creative Commons, uznanie autorstwa, wersja 3.0, Brazylia). Chrystus Odkupiciel podświetlony na niebiesko przeciw handlowi ludźmi, 28 lipca 2014.',
     imageAlt:
       'Chrystus Odkupiciel w Rio de Janeiro podświetlony na niebiesko przeciw handlowi ludźmi.',
   },
   'air-quality-pm25': {
     title: 'Zanieczyszczenie pyłem PM2.5',
-    hook: 'Drobne cząstki na zewnątrz, które szkodzą płucom i sercu — z satelitów, modeli i stacji, nie „na węch”.',
+    hook: 'Drobne cząstki na zewnątrz, które szkodzą płucom i sercu: z satelitów, modeli i stacji, nie „na węch”.',
     description:
       'WHO publikuje wytyczne jakości powietrza i bazę narażenia. Our World in Data mapuje PM2.5 ważone ludnością. Instrumenty NASA (MODIS, VIIRS i pokrewne) obserwują aerozole, z których składa się te szacunki. Karta prowadzi do tych publicznych warstw.',
     howToRead:
       'Ciemniejsze lub wyższe wartości zwykle oznaczają wyższe średnioroczne PM2.5. Miasta mogą być znacznie gorsze niż średnia kraju. Dym w pomieszczeniach i ozon to osobne problemy. Wytyczna WHO (5 µg/m³ rocznie) to punkt odniesienia zdrowotny, nie wszędzie limit prawny.',
     caveats:
-      'Mieszanki satelita–model wygładzają lokalne szczyty. Stacje naziemne są nierówne. Burze pyłowe i sezony pożarów dają krótkie skoki. Nie wymyślamy tu rankingu krajów.',
+      'Mieszanki satelita-model wygładzają lokalne szczyty. Stacje naziemne są nierówne. Burze pyłowe i sezony pożarów dają krótkie skoki. Nie wymyślamy tu rankingu krajów.',
     licenseNote:
       'Obrazy NASA są w domenie publicznej. Materiały WHO i OWID można cytować; OWID zwykle CC BY. Interaktywną warstwę otwórz na mapie OWID o zanieczyszczeniu powietrza.',
     imageAlt:
@@ -216,7 +216,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'co2-emissions': {
     title: 'Terytorialne emisje CO₂',
-    hook: 'Dwutlenek węgla z paliw kopalnych i przemysłu według kraju produkcji — szereg Global Carbon Project.',
+    hook: 'Dwutlenek węgla z paliw kopalnych i przemysłu według kraju produkcji, szereg Global Carbon Project.',
     description:
       'Global Carbon Project szacuje terytorialne CO₂ z węgla, ropy, gazu i cementu. Our World in Data mapuje sumy i stawki na osobę, a także omawia rachunki konsumpcyjne (skorygowane o handel).',
     howToRead:
@@ -231,12 +231,12 @@ export const pl: Record<string, MapCopy> = {
   'consumption-co2-emissions': {
     title: 'Emisje CO₂ według konsumpcji',
     cardMeta: 'Global Carbon Project · OWID · z korektą handlu',
-    hook: 'Dwutlenek węgla przypisany do kraju konsumpcji dóbr i usług — inwentarz terytorialny skorygowany o handel, nie druga mapa produkcji.',
+    hook: 'Dwutlenek węgla przypisany do kraju konsumpcji dóbr i usług, inwentarz terytorialny skorygowany o handel, nie druga mapa produkcji.',
     description:
       'Emisje konsumpcyjne (trade-adjusted) CO₂ od GCP / OWID. Inny obiekt niż żywa mapa emisji terytorialnych.',
     whyOnShelf: 'Inny obiekt niż żywa mapa emisji terytorialnych. Nie druga mapa produkcji.',
     howToRead:
-      'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. Otwierać mapę OWID; podgląd — przegląd Fix Planet.',
+      'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. Otwierać mapę OWID; podgląd: przegląd Fix Planet.',
     caveats: 'Wysoki wynik ≠ werdykt moralny i ≠ PM2.5. To nie mapa produkcji i nie mapa PM2.5.',
     licenseNote:
       'Podgląd to przegląd Fix Planet, nie oficjalna grafika OWID. Atrybucja: Global Carbon Project / Our World in Data (CC BY). Otwierać mapę OWID.',
@@ -246,7 +246,7 @@ export const pl: Record<string, MapCopy> = {
   'nitrogen-dioxide-no2': {
     title: 'Dwutlenek azotu (NO₂)',
     cardMeta: 'Copernicus Sentinel-5P · TROPOMI · średnia 2024',
-    hook: 'Satelitarna kolumna dwutlenku azotu nad miastami, przemysłem i żeglugą — zanieczyszczenie ze spalania, nie to samo co masa PM2.5.',
+    hook: 'Satelitarna kolumna dwutlenku azotu nad miastami, przemysłem i żeglugą: zanieczyszczenie ze spalania, nie to samo co masa PM2.5.',
     description:
       'Troposferyczny NO₂ z TROPOMI / Sentinel-5P. Płyta to średnia roczna 2024: średnia dwunastu miesięcznych siatek KNMI/TEMIS. Inny obiekt niż żywa mapa PM2.5.',
     whyOnShelf: 'Inny obiekt niż żywa mapa PM2.5. Zanieczyszczenie ze spalania, nie masa cząstek.',
@@ -256,17 +256,17 @@ export const pl: Record<string, MapCopy> = {
     licenseNote:
       'Podgląd to przegląd Fix Planet średniej rocznej kolumny NO₂ za 2024, nie kadr marketingowy ESA ani TEMIS. Atrybucja: Copernicus Sentinel-5P / TROPOMI i KNMI/TEMIS.',
     imageAlt:
-      'Przegląd Fix Planet: bursztynowe kolumny dwutlenku azotu nad miastami, przemysłem i żeglugą — nie choropleth PM2.5 i nie kadr ESA',
+      'Przegląd Fix Planet: bursztynowe kolumny dwutlenku azotu nad miastami, przemysłem i żeglugą, nie choropleth PM2.5 i nie kadr ESA',
   },
   'mismanaged-plastic-waste': {
     title: 'Niekontrolowane odpady plastikowe',
     cardMeta: 'OWID · Meijer et al. 2021',
-    hook: 'Plastik niepoddany recyklingowi, spaleniu ani szczelnemu składowaniu — ryzyko wycieku do rzek i wybrzeży, nie zdjęcie śmieci na plaży.',
+    hook: 'Plastik niepoddany recyklingowi, spaleniu ani szczelnemu składowaniu: ryzyko wycieku do rzek i wybrzeży, nie zdjęcie śmieci na plaży.',
     description:
       'Mismanaged plastic waste według OWID (Meijer et al. 2021, tekst na PMC). Inny obiekt niż CO₂ i PM2.5.',
     whyOnShelf: 'Inny obiekt niż CO₂ i PM2.5. To odpady, nie emisje i nie masa cząstek.',
     howToRead:
-      'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Otwierać mapę OWID; podgląd — przegląd Fix Planet.',
+      'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Otwierać mapę OWID; podgląd: przegląd Fix Planet.',
     caveats:
       'Duża masa często idzie za ludnością i słabą infrastrukturą, nie za «charakterem kraju». Nie zdjęcie śmieci na plaży.',
     licenseNote:
@@ -277,12 +277,12 @@ export const pl: Record<string, MapCopy> = {
   'methane-emissions': {
     title: 'Emisje metanu (CH₄)',
     cardMeta: 'EDGAR JRC · OWID · CH₄',
-    hook: 'Krajowe i siatkowe mapy metanu z paliw kopalnych, rolnictwa i odpadów — inny gaz cieplarniany niż żywe mapy CO₂.',
+    hook: 'Krajowe i siatkowe mapy metanu z paliw kopalnych, rolnictwa i odpadów: inny gaz cieplarniany niż żywe mapy CO₂.',
     description: 'CH₄ według EDGAR / OWID (+ IMEO dla zmierzonych pióropuszy). Nie CO₂ i nie PM2.5.',
     whyOnShelf:
       'Nie CO₂ i nie PM2.5. Inny gaz cieplarniany niż mapy dwutlenku węgla. To nie karta Climate TRACE z półki Innovations.',
     howToRead:
-      'Inwentarz ≠ pinezka satelitarna. Otwierać mapę OWID i EDGAR_2025_GHG; podgląd — przegląd Fix Planet.',
+      'Inwentarz ≠ pinezka satelitarna. Otwierać mapę OWID i EDGAR_2025_GHG; podgląd, przegląd Fix Planet.',
     caveats: 'Inwentarz ≠ pinezka satelitarna. Nie terytorialne i nie konsumpcyjne CO₂.',
     licenseNote:
       'Podgląd to przegląd Fix Planet, nie zdjęcie flary i nie oficjalny kadr EDGAR ani OWID. Atrybucja: EDGAR (JRC) / Our World in Data. IMEO Eye on Methane to zmierzone pióropusze, nie zamiennik inwentarza.',
@@ -290,7 +290,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'oil-gas-reserves': {
     title: 'Ropa i gaz na świecie',
-    cardMeta: 'Amerykańska Agencja Informacji Energetycznej · ropa i gaz ziemny · 2023–2024',
+    cardMeta: 'Amerykańska Agencja Informacji Energetycznej · ropa i gaz ziemny · 2023-2024',
     hook: 'Złoża, rezerwy i handel ropą oraz gazem ziemnym według Amerykańskiej Agencji Informacji Energetycznej.',
     description:
       'Amerykańska Agencja Informacji Energetycznej publikuje międzynarodowe statystyki, analizy krajów oraz mapy ropy i gazu. Oceny Służby Geologicznej Stanów Zjednoczonych opisują nieodkryte zasoby, które da się wydobyć technicznie. Szeregi obejmują złoża, rezerwy i przepływy handlowe.',
@@ -373,7 +373,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'forest-cover-loss': {
     title: 'Utrata pokrywy drzewnej',
-    hook: 'Hansen / Global Forest Watch: gdzie zniknęła korona drzew — karczunek, pożar i pozyskanie, nie tylko „wylesienie puszczy”.',
+    hook: 'Hansen / Global Forest Watch: gdzie zniknęła korona drzew, karczunek, pożar i pozyskanie, nie tylko „wylesienie puszczy”.',
     description:
       'Hansen i zespół z University of Maryland mapują roczną utratę pokrywy drzewnej z Landsata. Global Forest Watch (WRI) serwuje warstwę. Obserwacje NASA stoją za tymi samymi satelitami. Utrata to zmiana korony, nie automatycznie zamiana lasu pierwotnego.',
     howToRead:
@@ -387,11 +387,11 @@ export const pl: Record<string, MapCopy> = {
   },
   'protected-areas': {
     title: 'Obszary chronione',
-    hook: 'WDPA / Protected Planet: parki, rezerwaty i inne wielokąty — pokrycie na papierze, nie zawsze ochrona w terenie.',
+    hook: 'WDPA / Protected Planet: parki, rezerwaty i inne wielokąty: pokrycie na papierze, nie zawsze ochrona w terenie.',
     description:
       'World Database on Protected Areas, prowadzona przez UNEP-WCMC i IUCN i pokazywana na Protected Planet, to globalny spis lądowych i morskich obszarów chronionych. To standardowa warstwa, na którą powołują się rządy i badacze.',
     howToRead:
-      'Zielony wielokąt to zgłoszona ranga (kategorie IUCN I–VI i inne środki). Nakładki, papierowe parki i brakujące terytoria rdzenne są częste. Powierzchnia ochrony to nie to samo co nienaruszony habitat.',
+      'Zielony wielokąt to zgłoszona ranga (kategorie IUCN I-VI i inne środki). Nakładki, papierowe parki i brakujące terytoria rdzenne są częste. Powierzchnia ochrony to nie to samo co nienaruszony habitat.',
     caveats:
       'Sprawozdawczość się spóźnia. Jedne kraje wpisują prawie wszystko, inne mało. Polowania, drogi i kopalnie bywają wewnątrz linii. Warstwy uzupełniające (OECM, ziemie rdzenne) są niekompletne.',
     licenseNote:
@@ -401,7 +401,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'water-stress': {
     title: 'Stres wodny',
-    hook: 'WRI Aqueduct: gdzie popyt na wodę jest wysoki względem dostępnego odpływu — model, nie dziennik studni.',
+    hook: 'WRI Aqueduct: gdzie popyt na wodę jest wysoki względem dostępnego odpływu, model, nie dziennik studni.',
     description:
       'Atlas ryzyka wodnego Aqueduct World Resources Institute modeluje bazowy stres wodny i pokrewne ryzyka (wyczerpanie, powódź, susza) w skali zlewni. Wersja 4 (2023) to aktualny publiczny atlas.',
     howToRead:
@@ -415,7 +415,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'population-density': {
     title: 'Gęstość zaludnienia',
-    hook: 'Gdzie ludzie mieszkają, na siatce: NASA SEDAC GPW i WorldPop — modele dopasowane do spisów, nie liczenie każdej ulicy.',
+    hook: 'Gdzie ludzie mieszkają, na siatce: NASA SEDAC GPW i WorldPop, modele dopasowane do spisów, nie liczenie każdej ulicy.',
     description:
       'Gridded Population of the World (SEDAC / CIESIN) i WorldPop rozkładają liczby ze spisów na siatkę ze zmiennymi satelitarnymi. Prognozy ludności ONZ dają krajowe sumy, do których siatki często się wyrównuje. Światła nocne (zob. Ziemia w nocy) to jasność, nie spis.',
     howToRead:
@@ -429,7 +429,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'earth-at-night': {
     title: 'Ziemia w nocy',
-    hook: 'NASA Black Marble: światła miast i flary z orbity — obraz elektryfikowanego osadnictwa.',
+    hook: 'NASA Black Marble: światła miast i flary z orbity, obraz elektryfikowanego osadnictwa.',
     description:
       'Płaska mapa świateł nocnych VIIRS z 2012 składa bezchmurne obserwacje Suomi NPP. Późniejsze produkty Black Marble ten widok doprecyzowują. Światła znaczą miasta, drogi i część flar przemysłowych; ciemny ląd i tak może być gęsto zaludniony.',
     howToRead:
@@ -443,7 +443,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'global-river-basins': {
     title: 'Globalne zlewnie rzeczne',
-    hook: 'Zagnieżdżone poligony subzlewni dla całej planety (poziomy Pfafstettera) — hydrograficzna mapa bazowa, nie indeks presji.',
+    hook: 'Zagnieżdżone poligony subzlewni dla całej planety (poziomy Pfafstettera), hydrograficzna mapa bazowa, nie indeks presji.',
     description:
       'HydroBASINS z HydroSHEDS to globalny zestaw hierarchicznie zagnieżdżonych zlewni wyciągnięty z hydrografii wysokościowej HydroSHEDS w 15 sekundach łuku. Dwanaście poziomów Pfafstettera idzie od zlewni kontynentalnych do małych subzlewni (około miliona poligonów na najdrobniejszym podziale). To warstwa „kto dokąd spływa”, nie model popytu i podaży. WRI Aqueduct (karta Presja na wodę) to atlas ryzyka. Hub HydroSHEDS jest na hydrosheds.org.',
     howToRead:
@@ -453,11 +453,11 @@ export const pl: Record<string, MapCopy> = {
     licenseNote:
       'HydroBASINS jest rozprowadzany do użytku naukowego, edukacyjnego i komercyjnego na licencji HydroSHEDS (cytujcie Lehner & Grill 2013). Podgląd to wybór zlewni Hidromundi Babelii (CC BY-SA 4.0), nie figura produktowa HydroSHEDS.',
     imageAlt:
-      'Mapa świata z wyborem zlewni rzecznych w pastelowych poligonach na jasnoniebieskim oceanie — baza hydrograficzna, nie indeks presji na wodę',
+      'Mapa świata z wyborem zlewni rzecznych w pastelowych poligonach na jasnoniebieskim oceanie, baza hydrograficzna, nie indeks presji na wodę',
   },
   'freshwater-aquastat': {
     title: 'Zasoby wody słodkiej (AQUASTAT)',
-    hook: 'Krajowe odnawialne zasoby i pobory z globalnego systemu informacji wodnej FAO — statystyka i profile krajów, nie jeden raster presji.',
+    hook: 'Krajowe odnawialne zasoby i pobory z globalnego systemu informacji wodnej FAO, statystyka i profile krajów, nie jeden raster presji.',
     description:
       'FAO AQUASTAT zbiera odnawialne zasoby wodne, pobory i statystykę nawodnień oraz profile krajów i zlewni. To księga krajowych rachunków wodnych, nie basenowy model ryzyka i nie dziennik studni. Nie mylcie z WRI Aqueduct (karta Presja na wodę) ani z mapą poziomu wód gruntowych. IGRAC to inny produkt, nie ta karta.',
     howToRead:
@@ -471,9 +471,9 @@ export const pl: Record<string, MapCopy> = {
   },
   'exclusive-economic-zones': {
     title: 'Wyłączne strefy ekonomiczne',
-    hook: 'Morskie poligony WSE — kto zgłasza który pas oceanu. Uzupełnia granice lądowe; nie druga warstwa państw.',
+    hook: 'Morskie poligony WSE: kto zgłasza który pas oceanu. Uzupełnia granice lądowe; nie druga warstwa państw.',
     description:
-      'Wyłączna strefa ekonomiczna to zwykle pas do 200 mil morskich od linii podstawowej, gdzie państwo ma suwerenne prawa do zasobów w wodzie i na dnie. Marine Regions (Flanders Marine Institute) publikuje globalną bazę WSE — zwykłe publiczne odniesienie. To jurysdykcja morska, nie druga mapa państw Natural Earth admin-0. Hub Marine Regions jest na marineregions.org.',
+      'Wyłączna strefa ekonomiczna to zwykle pas do 200 mil morskich od linii podstawowej, gdzie państwo ma suwerenne prawa do zasobów w wodzie i na dnie. Marine Regions (Flanders Marine Institute) publikuje globalną bazę WSE, zwykłe publiczne odniesienie. To jurysdykcja morska, nie druga mapa państw Natural Earth admin-0. Hub Marine Regions jest na marineregions.org.',
     howToRead:
       'Niebieski pas oceanu to roszczenie albo linia traktatu, czasem z nachodzeniem. Morze pełne leży dalej. Sporne WSE rysuje się jednym sposobem, żeby w ogóle narysować mapę. Aktualne poligony są na Marine Regions. Podgląd to schemat WSE świata z Commons, nie zrzut ich bazy.',
     caveats:
@@ -481,117 +481,117 @@ export const pl: Record<string, MapCopy> = {
     licenseNote:
       'Dane WSE Marine Regions zwykle są CC BY 4.0 (cytujcie Flanders Marine Institute). Podgląd to schemat światowych WSE / wód terytorialnych B1mbo na Commons (CC BY-SA 3.0 CL), na podstawie granic morskich VLIZ.',
     imageAlt:
-      'Kontur świata z ciemnoniebieskim pasem morskim wokół wybrzeży i wysp — wyłączne strefy ekonomiczne, nie granice lądowe',
+      'Kontur świata z ciemnoniebieskim pasem morskim wokół wybrzeży i wysp, wyłączne strefy ekonomiczne, nie granice lądowe',
   },
   'living-languages-count': {
     title: 'Liczba żywych języków',
-    hook: 'Publiczny przegląd Ethnologue o tym, ile żywych języków się liczy — karta skali obok mapy rodzin Glottolog, nie drugi atlas rodzin.',
+    hook: 'Publiczny przegląd Ethnologue o tym, ile żywych języków się liczy: karta skali obok mapy rodzin Glottolog, nie drugi atlas rodzin.',
     description:
       'Ethnologue (SIL International) publikuje publiczny przegląd liczby żywych języków na swojej liście. Ta suma się rusza, gdy zmienia się ISO 639-3 i gdy języki są przeklasyfikowywane jako żywe albo wymarłe. Ta karta jest o rozmiarze tego inwentarza, nie o drugiej mapie rodzin językowych. Glottolog zostaje mapą rodzin na tej półce.',
     howToRead:
-      'Żywa liczba jest na stronie przeglądu Ethnologue. Nie drukujemy tu liczby w nagłówku, bo strona jest źródłem ewidencji, a liczba się zmienia. Podgląd to starszy choropleth indeksu różnorodności językowej Ethnologue — ciemniej tam, gdzie wiele języków dzieli kraj — nie atlas drzewa rodzin i nie spis ludów.',
+      'Żywa liczba jest na stronie przeglądu Ethnologue. Nie drukujemy tu liczby w nagłówku, bo strona jest źródłem ewidencji, a liczba się zmienia. Podgląd to starszy choropleth indeksu różnorodności językowej Ethnologue: ciemniej tam, gdzie wiele języków dzieli kraj, nie atlas drzewa rodzin i nie spis ludów.',
     caveats:
       '„Język” to decyzja naukowa i polityczna. Granice kolonialne tną wspólnoty mowy. Nie czytajcie odcienia jako etnosu, lojalności ani terytorium. Nie klonujcie tej karty jako drugiego Glottologu.',
     licenseNote:
-      'Tekst przeglądu należy do Ethnologue. Podgląd to mapa indeksu różnorodności językowej Ethnologue 18 z Wikimedia (cmglee, CC BY-SA 3.0) — krajowy choropleth różnorodności, nie rodziny Glottolog i nie grafika bieżącego wydania Ethnologue.',
+      'Tekst przeglądu należy do Ethnologue. Podgląd to mapa indeksu różnorodności językowej Ethnologue 18 z Wikimedia (cmglee, CC BY-SA 3.0): krajowy choropleth różnorodności, nie rodziny Glottolog i nie grafika bieżącego wydania Ethnologue.',
     imageAlt:
-      'Zielony choropleth różnorodności językowej według krajów: ciemniejsza zieleń tam, gdzie wiele języków dzieli państwo, bledsza tam, gdzie mało — nie atlas rodzin językowych',
+      'Zielony choropleth różnorodności językowej według krajów: ciemniejsza zieleń tam, gdzie wiele języków dzieli państwo, bledsza tam, gdzie mało, nie atlas rodzin językowych',
   },
   'disputed-breakaway-areas': {
     title: 'Sporne i odłączone terytoria',
-    hook: 'Poligony, które Natural Earth oznacza jako odłączone lub sporne — roboczy zestaw kartografa dla spornego lądu, nie wyrok sądu i nie druga warstwa państw świata.',
+    hook: 'Poligony, które Natural Earth oznacza jako odłączone lub sporne, roboczy zestaw kartografa dla spornego lądu, nie wyrok sądu i nie druga warstwa państw świata.',
     description:
-      'Warstwa Admin 0 – Breakaway, disputed areas. Ta sama rodzina public domain co karta państw, ale inny obiekt: sporne / specjalne poligony, nie zwykłe wypełnienie admin-0. Nie czytać jako uznanie państwa. EEZ zostaje morskie; tu ląd.',
+      'Warstwa Admin 0: Breakaway, disputed areas. Ta sama rodzina public domain co karta państw, ale inny obiekt: sporne / specjalne poligony, nie zwykłe wypełnienie admin-0. Nie czytać jako uznanie państwa. EEZ zostaje morskie; tu ląd.',
     howToRead: 'Nie czytać jako uznanie państwa. EEZ zostaje morskie; tu ląd.',
     caveats:
       'Natural Earth oznacza te poligony jako odłączone lub sporne, żeby w ogóle narysować mapę. To wybór kartograficzny, nie uznanie państwa i nie wyrok sądu. Nie scalać tej warstwy z kartą państw jako drugiego wypełnienia admin-0.',
     licenseNote:
-      'Natural Earth jest w domenie publicznej. Miniatura przekolorowuje tylko poligony Admin 0 – Breakaway, disputed areas. Miniatura to kartografia, nie wyrok sądu.',
+      'Natural Earth jest w domenie publicznej. Miniatura przekolorowuje tylko poligony Admin 0: Breakaway, disputed areas. Miniatura to kartografia, nie wyrok sądu.',
     imageAlt:
-      'Mapa świata z kremowym lądem i jasnoniebieskim oceanem; koralowe poligony zaznaczają tylko sporne i odłączone terytoria Natural Earth — nie drugie wypełnienie państw i nie wyrok sądu',
+      'Mapa świata z kremowym lądem i jasnoniebieskim oceanem; koralowe poligony zaznaczają tylko sporne i odłączone terytoria Natural Earth, nie drugie wypełnienie państw i nie wyrok sądu',
   },
   'states-provinces': {
     title: 'Stany i prowincje',
-    hook: 'Wewnętrzne jednostki pierwszego rzędu (stany, prowincje, obwody…) — linie administracyjne wewnątrz państw, nie drugi atlas granic suwerennych i nie EEZ.',
+    hook: 'Wewnętrzne jednostki pierwszego rzędu (stany, prowincje, obwody…): linie administracyjne wewnątrz państw, nie drugi atlas granic suwerennych i nie EEZ.',
     description:
-      'Warstwa Admin 1. Uzupełnia kartę państw: wewnątrz kraju, nie suwerenność i nie morze. Uogólnienie do map małoskalowych; nie GADM. Natural Earth — ta sama licencja co żywa karta krajów.',
-    howToRead: 'Uogólnienie do map małoskalowych; nie GADM. Natural Earth — ta sama licencja co żywa karta krajów.',
+      'Warstwa Admin 1. Uzupełnia kartę państw: wewnątrz kraju, nie suwerenność i nie morze. Uogólnienie do map małoskalowych; nie GADM. Natural Earth: ta sama licencja co żywa karta krajów.',
+    howToRead: 'Uogólnienie do map małoskalowych; nie GADM. Natural Earth: ta sama licencja co żywa karta krajów.',
     caveats:
       'Nazwy i granice prowincji się zmieniają. Natural Earth uogólnia jednostki pierwszego rzędu do map małoskalowych. To nie GADM i nie spis samorządów.',
     licenseNote:
       'Natural Earth jest w domenie publicznej. Miniatura pokazuje kontury stanów i prowincji Admin 1. Miniatura to kartografia, nie wyrok sądu.',
     imageAlt:
-      'Mapa świata wewnętrznych jednostek pierwszego rzędu cienkimi konturami — stany, prowincje, obwody — nie choropleth państw i nie strefy morskie',
+      'Mapa świata wewnętrznych jednostek pierwszego rzędu cienkimi konturami: stany, prowincje, obwody, nie choropleth państw i nie strefy morskie',
   },
   'land-boundary-lines': {
     title: 'Linie granic lądowych',
-    hook: 'Międzynarodowe granice lądowe jako linie — krawędź między poligonami, nie wypełnienie państw i nie morskie limity EEZ.',
+    hook: 'Międzynarodowe granice lądowe jako linie: krawędź między poligonami, nie wypełnienie państw i nie morskie limity EEZ.',
     description:
-      'Liniowa warstwa granic przy admin-0. Uzupełnia wypełnienie państw; nie EEZ i nie sporne poligony. Te same zastrzeżenia o spornych odcinkach — linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
+      'Liniowa warstwa granic przy admin-0. Uzupełnia wypełnienie państw; nie EEZ i nie sporne poligony. Te same zastrzeżenia o spornych odcinkach, linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
     howToRead:
-      'Te same zastrzeżenia o spornych odcinkach — linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
+      'Te same zastrzeżenia o spornych odcinkach, linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
     caveats:
       'Niektóre odcinki granic lądowych są sporne; Natural Earth dokumentuje ten wybór. Linia na małej skali to nadal wybór kartograficzny, nie kataster ONZ.',
     licenseNote:
       'Natural Earth jest w domenie publicznej. Miniatura to liniowa warstwa granic lądowych Admin 0. Miniatura to kartografia, nie wyrok sądu.',
     imageAlt:
-      'Mapa świata międzynarodowych granic lądowych ciemnymi liniami na jasnym lądzie — geometria liniowa, nie wypełnienie państw i nie limity morskie',
+      'Mapa świata międzynarodowych granic lądowych ciemnymi liniami na jasnym lądzie, geometria liniowa, nie wypełnienie państw i nie limity morskie',
   },
   'endangered-languages-unesco': {
     title: 'Języki zagrożone (Atlas UNESCO)',
-    hook: 'Języki, które UNESCO uznała za narażone lub ginące — atlas zagrożenia, nie spis ludów i nie druga mapa rodzin.',
+    hook: 'Języki, które UNESCO uznała za narażone lub ginące: atlas zagrożenia, nie spis ludów i nie druga mapa rodzin.',
     description:
-      'Wydanie Moseley 2010 (~2500 języków, stopnie zagrożenia według przekazu międzypokoleniowego). Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych) — inne pytanie: kogo UNESCO uznała za zagrożone. Nie czytać jako mapy etnicznej ani wyroku sądu.',
+      'Wydanie Moseley 2010 (~2500 języków, stopnie zagrożenia według przekazu międzypokoleniowego). Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych), inne pytanie: kogo UNESCO uznała za zagrożone. Nie czytać jako mapy etnicznej ani wyroku sądu.',
     whyOnShelf:
-      'Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych) — inne pytanie: kogo UNESCO uznała za zagrożone.',
+      'Obok Glottolog (pokrewieństwo) i Ethnologue (liczba żywych), inne pytanie: kogo UNESCO uznała za zagrożone.',
     howToRead: 'Nie czytać jako mapy etnicznej ani wyroku sądu.',
     caveats: 'Języki ≠ ludy ≠ państwa. Nie czytać jako mapy etnicznej ani wyroku sądu.',
     licenseNote:
-      'UNESCO / Moseley (red.) 2010. Podgląd to schemat stopni zagrożenia Atlasu (narażony → wymarły) na konturze świata w domenie publicznej — nie choropleth etniczny i nie drugie drzewo rodzin Glottolog. Cytujcie wydanie UNESDOC.',
+      'UNESCO / Moseley (red.) 2010. Podgląd to schemat stopni zagrożenia Atlasu (narażony → wymarły) na konturze świata w domenie publicznej, nie choropleth etniczny i nie drugie drzewo rodzin Glottolog. Cytujcie wydanie UNESDOC.',
     imageAlt:
-      'Schematyczna mapa świata z pinezkami stopni zagrożenia Atlasu UNESCO od narażonego (żółty) do wymarłego (czarny) — nie spis ludów i nie mapa rodzin językowych',
+      'Schematyczna mapa świata z pinezkami stopni zagrożenia Atlasu UNESCO od narażonego (żółty) do wymarłego (czarny), nie spis ludów i nie mapa rodzin językowych',
   },
   'wals-language-structures': {
     title: 'Światowy atlas struktur językowych (WALS)',
-    hook: 'Cechy strukturalne języków — fonetyka, szyk wyrazów, gramatyka — z gramatyk opisowych. Typologia, nie etniczność i nie drzewo rodzin.',
+    hook: 'Cechy strukturalne języków: fonetyka, szyk wyrazów, gramatyka, z gramatyk opisowych. Typologia, nie etniczność i nie drzewo rodzin.',
     description:
-      'Baza WALS Online (MPI EVA). Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują. Kolor na mapie cechy — kod w próbie, nie «naród» i nie państwo.',
+      'Baza WALS Online (MPI EVA). Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują. Kolor na mapie cechy: kod w próbie, nie «naród» i nie państwo.',
     whyOnShelf: 'Glottolog = pokrewieństwo; WALS = które cechy strukturalne gdzie występują.',
-    howToRead: 'Kolor na mapie cechy — kod w próbie, nie «naród» i nie państwo.',
-    caveats: 'Języki ≠ ludy ≠ państwa. Kolor — kod w próbie, nie «naród» i nie państwo.',
+    howToRead: 'Kolor na mapie cechy: kod w próbie, nie «naród» i nie państwo.',
+    caveats: 'Języki ≠ ludy ≠ państwa. Kolor: kod w próbie, nie «naród» i nie państwo.',
     licenseNote:
-      'Dane WALS Online są CC BY 4.0 (Dryer & Haspelmath / Instytut Maxa Plancka). Podgląd przerysowuje cechę 1A, zasób spółgłosek (Maddieson), z wydania CLDF — mapa typologii strukturalnej, nie rodziny Glottolog i nie pinezki zagrożenia UNESCO.',
+      'Dane WALS Online są CC BY 4.0 (Dryer & Haspelmath / Instytut Maxa Plancka). Podgląd przerysowuje cechę 1A, zasób spółgłosek (Maddieson), z wydania CLDF: mapa typologii strukturalnej, nie rodziny Glottolog i nie pinezki zagrożenia UNESCO.',
     imageAlt:
-      'Mapa WALS Online rozmiaru inwentarza spółgłoskowego: kolorowe punkty w miejscach odniesienia języków od małego (niebieski) do dużego (czerwony) — typologia, nie etniczność i nie drzewo rodzin',
+      'Mapa WALS Online rozmiaru inwentarza spółgłoskowego: kolorowe punkty w miejscach odniesienia języków od małego (niebieski) do dużego (czerwony), typologia, nie etniczność i nie drzewo rodzin',
   },
   'language-areas-asher-moseley': {
     title: 'Obszary językowe (Asher & Moseley)',
-    hook: 'Otwarte poligony obszarów z atlasu Asher & Moseley, powiązane z Glottocode — powierzchnie, nie punkty Glottolog, i nadal nie spis ludów.',
+    hook: 'Otwarte poligony obszarów z atlasu Asher & Moseley, powiązane z Glottocode: powierzchnie, nie punkty Glottolog, i nadal nie spis ludów.',
     description: '~6992 poligonów; punkty Glottolog ≠ obszary. Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
     whyOnShelf: 'Punkty Glottolog ≠ obszary.',
     howToRead: 'Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
     caveats: 'Języki ≠ ludy ≠ państwa. Czytać jako uogólnienie atlasu, nie suwerenność i nie «krew».',
     licenseNote:
-      'Poligony obszarów z Glottography/asher2007world (CC BY 4.0), zdigitalizowane z Asher & Moseley i powiązane z Glottocode; cytujcie Ranacher et al., Scientific Data 2025. Podgląd to próbka powierzchni z arkuszy tradycyjnych / czasu kontaktu — nie choropleth rodzin Glottolog i nie spis ludów.',
+      'Poligony obszarów z Glottography/asher2007world (CC BY 4.0), zdigitalizowane z Asher & Moseley i powiązane z Glottocode; cytujcie Ranacher et al., Scientific Data 2025. Podgląd to próbka powierzchni z arkuszy tradycyjnych / czasu kontaktu, nie choropleth rodzin Glottolog i nie spis ludów.',
     imageAlt:
-      'Próbka poligonów obszarów językowych zdigitalizowanych z atlasu Asher & Moseley i powiązanych z Glottocode — powierzchnie, nie punkty Glottolog i nie spis ludów',
+      'Próbka poligonów obszarów językowych zdigitalizowanych z atlasu Asher & Moseley i powiązanych z Glottocode, powierzchnie, nie punkty Glottolog i nie spis ludów',
   },
   'endangered-languages-project': {
     title: 'Katalog Endangered Languages Project',
-    hook: 'Żywy katalog i mapa języków zagrożonych z zasobami dla społeczności — inne spojrzenie na zagrożenie obok Atlasu UNESCO 2010, nie drugi Glottolog.',
+    hook: 'Żywy katalog i mapa języków zagrożonych z zasobami dla społeczności, inne spojrzenie na zagrożenie obok Atlasu UNESCO 2010, nie drugi Glottolog.',
     description:
       'Nonprofit ELP: katalog, mapa, witalność, biblioteka zasobów. Nie mylić z wydaniem UNESCO 2010 i nie czytać jako mapy etnicznej/politycznej.',
     whyOnShelf: 'Nie mylić z wydaniem UNESCO 2010.',
     howToRead: 'Nie mylić z wydaniem UNESCO 2010 i nie czytać jako mapy etnicznej/politycznej.',
     caveats: 'Języki ≠ ludy ≠ państwa. Nie czytać jako mapy etnicznej/politycznej.',
     licenseNote:
-      'Endangered Languages Project. Podgląd to schemat żywego katalogu — inny niż stopnie Atlasu UNESCO i pinezki Ethnologue EGIDS, i nie mapa polityczna.',
+      'Endangered Languages Project. Podgląd to schemat żywego katalogu: inny niż stopnie Atlasu UNESCO i pinezki Ethnologue EGIDS, i nie mapa polityczna.',
     imageAlt:
-      'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project — pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
+      'Schematyczna mapa katalogu języków zagrożonych w barwach Endangered Languages Project, pinezki witalności, nie Atlas UNESCO 2010 i nie drugi Glottolog',
   },
   'groundwater-whymap': {
     title: 'Spadek zwierciadła wód podziemnych',
-    hook: 'Gdzie Aqueduct 4.0 ocenia opadanie zwierciadła wód podziemnych — wynik ryzyka zlewni, nie mapa warstw wodonośnych WHYMAP i nie dziennik studni.',
+    hook: 'Gdzie Aqueduct 4.0 ocenia opadanie zwierciadła wód podziemnych, wynik ryzyka zlewni, nie mapa warstw wodonośnych WHYMAP i nie dziennik studni.',
     description:
       'WRI Aqueduct 4.0 podaje bazowy wskaźnik spadku zwierciadła wód podziemnych dla podzlewni, w skali od 0 do 5. To modelowany spadek, nie mapa środowisk WHYMAP i nie wynik stresu wodnego z sąsiedniej karty.',
     whyOnShelf:
@@ -607,7 +607,7 @@ export const pl: Record<string, MapCopy> = {
   },
   'global-lakes-hydrolakes': {
     title: 'Globalne jeziora (HydroLAKES)',
-    hook: 'Poligony brzegów ~1,4 mln jezior i zbiorników ≥10 ha — inwentarz jezior, nie zlewnie i nie indeks stresu.',
+    hook: 'Poligony brzegów ~1,4 mln jezior i zbiorników ≥10 ha: inwentarz jezior, nie zlewnie i nie indeks stresu.',
     description:
       'Ta sama rodzina HydroSHEDS co HydroBASINS, ale obiekt = brzeg jeziora/zbiornika. Nie mapa mokradeł (GLWD) i nie jakość wody.',
     whyOnShelf: 'Ta sama rodzina HydroSHEDS co HydroBASINS, ale obiekt = brzeg jeziora/zbiornika.',
@@ -617,11 +617,11 @@ export const pl: Record<string, MapCopy> = {
     licenseNote:
       'Podgląd to przegląd Fix Planet znanych okręgów jeziornych, nie figura produktowa HydroSHEDS i nie drugie wypełnienie zlewni. Pobranie jest na stronie HydroLAKES. Cytujcie Messager et al. 2016.',
     imageAlt:
-      'Mapa świata z ciemnoniebieskimi punktami jezior i zbiorników w znanych okręgach jeziornych — inwentarz brzegów, nie zlewnie rzeczne',
+      'Mapa świata z ciemnoniebieskimi punktami jezior i zbiorników w znanych okręgach jeziornych, inwentarz brzegów, nie zlewnie rzeczne',
   },
   'lakes-wetlands-glwd': {
     title: 'Jeziora i mokradła (GLWD v2)',
-    hook: 'Śródlądowe wody świata w 33 klasach zbiorników i mokradeł — bagna, torfowiska, wody okresowe i więcej, nie druga warstwa brzegów HydroLAKES.',
+    hook: 'Śródlądowe wody świata w 33 klasach zbiorników i mokradeł, bagna, torfowiska, wody okresowe i więcej, nie druga warstwa brzegów HydroLAKES.',
     description:
       'GLWD v2 (~15″, do ~18,2 mln km²). HydroLAKES = brzegi ≥10 ha; GLWD = szersze klasy mokradeł. Nie lista Ramsar i nie stres wodny.',
     whyOnShelf: 'HydroLAKES = brzegi ≥10 ha; GLWD = szersze klasy mokradeł.',
@@ -630,11 +630,11 @@ export const pl: Record<string, MapCopy> = {
     licenseNote:
       'Podgląd to przegląd Fix Planet klas wód śródlądowych (woda otwarta, bagno, torf, woda okresowa), nie figura produktowa HydroSHEDS i nie druga warstwa brzegów HydroLAKES. GLWD v2 jest CC BY 4.0 (cytujcie Lehner et al. 2025). Strona produktu jest na HydroSHEDS.',
     imageAlt:
-      'Mapa świata z turkusową wodą otwartą, zielonymi bagnami, brązowym torfem i złotą wodą okresową — klasy mokradeł, nie brzegi jezior',
+      'Mapa świata z turkusową wodą otwartą, zielonymi bagnami, brązowym torfem i złotą wodą okresową, klasy mokradeł, nie brzegi jezior',
   },
   'flood-hazard-aqueduct': {
     title: 'Ryzyko powodzi rzecznych',
-    hook: 'Bazowe ryzyko powodzi rzecznych Aqueduct 4.0 — wynik od 0 do 5, nie stres wodny i nie mapa głębokości zalania.',
+    hook: 'Bazowe ryzyko powodzi rzecznych Aqueduct 4.0: wynik od 0 do 5, nie stres wodny i nie mapa głębokości zalania.',
     description:
       'Mapa to bazowy wynik ryzyka powodzi rzecznych WRI Aqueduct 4.0 dla podzlewni, od 0 do 5. To wynik modelu, nie głębokość wody. Narzędzie Aqueduct Floods publikuje głębokość zalania według okresu powrotu dla rzek i wybrzeża; tych rastrów tu nie ma.',
     whyOnShelf: 'Stres wodny porównuje popyt z odpływem. Ta karta to osobny wynik Aqueduct dla ryzyka powodzi rzecznych.',
@@ -649,21 +649,21 @@ export const pl: Record<string, MapCopy> = {
   },
   'intact-forest-landscapes': {
     title: 'Nienaruszone krajobrazy leśne (IFL)',
-    hook: 'Nienaruszone krajobrazy leśne w 2020 roku — dzika mozaika leśna zespołu IFL, nie roczne piksele Hansena i nie granice parków.',
+    hook: 'Nienaruszone krajobrazy leśne w 2020 roku: dzika mozaika leśna zespołu IFL, nie roczne piksele Hansena i nie granice parków.',
     description:
       'Nienaruszone krajobrazy leśne (IFL) to duże mozaiki lasu bez wykrytej przemysłowej infrastruktury. Ta płyta to zasięg 2020 roku od zespołu IFL (UMD GLAD i partnerzy), CC BY 4.0. Ten sam zespół publikuje też lata 2000, 2013, 2016 i 2025. Metoda: Potapov et al., Science Advances 2017.',
     howToRead:
-      'Zielona łatka to poligon IFL w warstwie 2020 — nie plantacja i nie granica parku. Różnica między opublikowanymi latami to fragmentacja albo przemysłowe wejście; może różnić się od sum utraty koron Hansena.',
+      'Zielona łatka to poligon IFL w warstwie 2020: nie plantacja i nie granica parku. Różnica między opublikowanymi latami to fragmentacja albo przemysłowe wejście; może różnić się od sum utraty koron Hansena.',
     caveats:
       'IFL to klasa dzikiej mozaiki o minimalnej wielkości (około 500 km² bez wykrytej infrastruktury przemysłowej), nie cały las pierwotny i nie zapas węgla. Las może być pierwotny i nadal nie być IFL, jeśli drogi albo zręby go tną. Granice przesuwają się między latami aktualizacji. Drobne albo podokapowe użytkowanie satelita może pominąć.',
     licenseNote:
       'Mapa to zasięg Intact Forest Landscapes z 2020 roku (IFL Mapping Team, CC BY 4.0). Późniejsze aktualizacje sięgają 2025 roku; ta płyta to warstwa 2020. Cytujcie zespół IFL i Potapov et al. 2017. Pliki są na intactforests.org i w Zenodo.',
     imageAlt:
-      'Ciemna mapa świata z jasnozielonymi blokami dzikiego lasu w Amazonii, Kotlinie Konga, borealnej Kanadzie i Syberii oraz na Nowej Gwinei — nienaruszone krajobrazy, nie roczne piksele utraty koron',
+      'Ciemna mapa świata z jasnozielonymi blokami dzikiego lasu w Amazonii, Kotlinie Konga, borealnej Kanadzie i Syberii oraz na Nowej Gwinei, nienaruszone krajobrazy, nie roczne piksele utraty koron',
   },
   'mangrove-extent': {
     title: 'Zasięg namorzyn',
-    hook: 'Global Mangrove Watch, wersja 3, zasięg 2020 — las pływowy, nie śródlądowy Hansen i nie parki WDPA.',
+    hook: 'Global Mangrove Watch, wersja 3, zasięg 2020: las pływowy, nie śródlądowy Hansen i nie parki WDPA.',
     description:
       'Mapa to zasięg Global Mangrove Watch wersji 3 na rok 2020: udział pikseli namorzynu na siatce 0,02° (Bunting et al., CC BY 4.0). Późniejsze wersje, w tym roczny szereg v4.1 od 1985 do 2025, publikują JAXA i Zenodo. Ta płyta to zasięg v3 z 2020 roku, nie ten późniejszy szereg.',
     howToRead:
@@ -677,31 +677,31 @@ export const pl: Record<string, MapCopy> = {
   },
   'primary-humid-tropical-forests': {
     title: 'Pierwotne wilgotne lasy tropikalne',
-    hook: 'Mapa UMD GLAD 30 m — zasięg pierwotnych wilgotnych lasów tropikalnych na 2001 (Turubanova et al.) — baza pierwotności, nie roczne straty Hansena i nie reguły wielkości IFL.',
+    hook: 'Mapa UMD GLAD 30 m: zasięg pierwotnych wilgotnych lasów tropikalnych na 2001 (Turubanova et al.), baza pierwotności, nie roczne straty Hansena i nie reguły wielkości IFL.',
     description:
       'Warstwa bazowa 2001. UMD GLAD zmapował pierwotny wilgotny las tropikalny w 30 m z Landsata: las, który nie został całkowicie wycięty w zapisie użytym do tej bazy. Kontynentalne GeoTIFF-y i kolekcja Earth Engine są publiczne. Metoda: Turubanova et al., Environmental Research Letters 2018 (DOI 10.1088/1748-9326/aacd1c). Tylko wilgotne tropiki.',
     howToRead:
       'Piksel 1 to pierwotny wilgotny las tropikalny na mapie 2001; 0 to inny ląd albo woda. Straty po 2001 zwykle czyta się z Hansen / Global Forest Watch. Sama warstwa 2001 nie jest mapą zasięgu 2025.',
     caveats:
-      'Tylko wilgotne tropiki — nie pierwotny las borealny i nie las suchy. Las wtórny po wycięciu jest poza klasą pierwotną 2001. Błędy klasyfikacji bywają na krawędziach i w złożonej mozaice. Plantacje założone przed logiką bazy mogą mylić lokalny odczyt — czytaj noty GLAD.',
+      'Tylko wilgotne tropiki, nie pierwotny las borealny i nie las suchy. Las wtórny po wycięciu jest poza klasą pierwotną 2001. Błędy klasyfikacji bywają na krawędziach i w złożonej mozaice. Plantacje założone przed logiką bazy mogą mylić lokalny odczyt, czytaj noty GLAD.',
     licenseNote:
       'Warstwy są na stronie zbioru GLAD i w katalogu Google Earth Engine. Podgląd to schemat Fix Planet pasa wilgotnych tropików, nie GeoTIFF 30 m. Cytuj Turubanova et al. 2018 i UMD GLAD.',
     imageAlt:
-      'Mapa świata z nasyconym zielonym pasem pierwotnego wilgotnego lasu tropikalnego w Amazonii, Kongu i Azji Południowo-Wschodniej na bazie 2001 — nie las borealny i nie roczna utrata koron',
+      'Mapa świata z nasyconym zielonym pasem pierwotnego wilgotnego lasu tropikalnego w Amazonii, Kongu i Azji Południowo-Wschodniej na bazie 2001: nie las borealny i nie roczna utrata koron',
   },
   'forest-landscape-integrity': {
     title: 'Wskaźnik integralności krajobrazów leśnych (FLII)',
-    hook: 'Ciągła ocena integralności lasów Grantham et al. (~2019) — antropogeniczna modyfikacja i łączność, nie sam Hansen i nie pokrycie WDPA.',
+    hook: 'Ciągła ocena integralności lasów Grantham et al. (~2019): antropogeniczna modyfikacja i łączność, nie sam Hansen i nie pokrycie WDPA.',
     description:
-      'Wskaźnik integralności krajobrazów leśnych (FLII) składa zasięg lasu, zmapowane presje człowieka, wnioskowane presje towarzyszące i utratę łączności w ciągłą ocenę 0–10 dla lasów świata (Grantham et al., Nature Communications 2020). Około 40% pozostałych lasów wpadło w ilustracyjne pasmo wysokiej integralności; tylko część tego pasma leży w obszarach chronionych.',
+      'Wskaźnik integralności krajobrazów leśnych (FLII) składa zasięg lasu, zmapowane presje człowieka, wnioskowane presje towarzyszące i utratę łączności w ciągłą ocenę 0-10 dla lasów świata (Grantham et al., Nature Communications 2020). Około 40% pozostałych lasów wpadło w ilustracyjne pasmo wysokiej integralności; tylko część tego pasma leży w obszarach chronionych.',
     howToRead:
-      'Wysoki wynik to niższa modelowana antropogeniczna modyfikacja w skali krajobrazu — nie „nietknięte na zawsze” i nie gęstość węgla. Niski wynik może nadal być pod koroną. FLII to nie IFL i nie data utraty koron. Cięcia niska / średnia / wysoka są ilustracją; produktem jest wynik ciągły.',
+      'Wysoki wynik to niższa modelowana antropogeniczna modyfikacja w skali krajobrazu, nie „nietknięte na zawsze” i nie gęstość węgla. Niski wynik może nadal być pod koroną. FLII to nie IFL i nie data utraty koron. Cięcia niska / średnia / wysoka są ilustracją; produktem jest wynik ciągły.',
     caveats:
       'FLII to indeks modelowy około 300 m, circa początek 2019, nie roczna aktualizacja 2025 w oryginalnym artykule. To nie zastępstwo ekologii terenowej ani mapa ziem rdzennych. Lokalne wagi mogą różnić się od globalnego domyślnego. Polowania i degradację podszytu częściowo wnioskuje się z dostępności.',
     licenseNote:
       'Artykuł jest w Nature Communications. Rastry są na stronie pobierania Forest Landscape Integrity. Podgląd to schemat Fix Planet pasm integralności, nie raster autorów. Cytuj Grantham et al. 2020.',
     imageAlt:
-      'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las — nie data utraty koron',
+      'Mapa świata ze skalą integralności lasu: ciemnozielone odległe masywy, złoty środek i pomarańczowy silnie zmieniony las, nie data utraty koron',
   },
   'world-population': {
     title: 'Ludność świata',
