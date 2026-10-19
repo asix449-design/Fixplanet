@@ -4,6 +4,10 @@ import type { Locale } from '../i18n/config';
 import { chartWindows, lastIndex, storedDecimals, windowsFor } from './economySeries.mjs';
 
 export {
+  CHART_H,
+  CHART_W,
+  SPARK_H,
+  SPARK_W,
   changeOf,
   chartPath,
   chartWindows,
@@ -96,12 +100,13 @@ export function ecbWindows(code: string) {
   return {
     value: daily.value,
     decimals: daily.decimals,
+    monthlyDecimals: monthSeries.decimals,
     date: daily.date,
     windows: {
-      month: { ...dailyWindows.month, scale: 'day' as const },
-      year: { ...dailyWindows.year, scale: 'day' as const },
-      '5y': { ...monthWindows['5y'], scale: 'month' as const },
-      all: { ...monthWindows.all, scale: 'month' as const },
+      month: { ...dailyWindows.month, scale: 'day' as const, decimals: series.decimals },
+      year: { ...dailyWindows.year, scale: 'day' as const, decimals: series.decimals },
+      '5y': { ...monthWindows['5y'], scale: 'month' as const, decimals: monthSeries.decimals },
+      all: { ...monthWindows.all, scale: 'month' as const, decimals: monthSeries.decimals },
     },
   };
 }

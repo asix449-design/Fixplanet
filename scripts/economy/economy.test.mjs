@@ -764,6 +764,14 @@ test('windows: the stored Pink Sheet uses the same cuts', async () => {
   assert.equal(changeOf(boards.month.compare).abs, brent.values.at(-1) - brent.values.at(-2));
 });
 
+test('companies: the server template does not name TradingView', async () => {
+  const quote = await readFile(path.join(here, '../../src/components/EconomyQuote.astro'), 'utf8');
+  const view = await readFile(path.join(here, '../../src/views/EconomyView.astro'), 'utf8');
+  assert.equal(quote.includes('tradingview.com'), false);
+  assert.equal(view.includes('tradingview.com'), false);
+  assert.match(await readFile(path.join(here, '../../src/scripts/economyQuotes.ts'), 'utf8'), /s3\.tradingview\.com/);
+});
+
 test('run: a manifest left behind by a killed job is repaired by the next run', async () => {
   await withTempDir(async (dir) => {
     await run(dir, network());

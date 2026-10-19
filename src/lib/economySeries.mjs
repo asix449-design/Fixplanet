@@ -4,6 +4,10 @@
  */
 
 export const PERIODS = ['month', 'year', '5y', 'all'];
+export const CHART_W = 800;
+export const CHART_H = 240;
+export const SPARK_W = 120;
+export const SPARK_H = 32;
 
 const TAGS = { en: 'en-GB', ru: 'ru-RU', pl: 'pl-PL', lv: 'lv-LV' };
 

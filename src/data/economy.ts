@@ -378,6 +378,17 @@ export function economySourcesForTab(tab: EconomyTab): EconomySourceId[] {
 }
 
 /** Credit lines with unfilled date placeholders are omitted until a data release supplies them. */
+export const economyCompanies = [
+  { id: 'exxon', name: 'Exxon', symbol: 'NYSE:XOM' },
+  { id: 'chevron', name: 'Chevron', symbol: 'NYSE:CVX' },
+  { id: 'nextera', name: 'NextEra', symbol: 'NYSE:NEE' },
+  { id: 'first-solar', name: 'First Solar', symbol: 'NASDAQ:FSLR' },
+  { id: 'shell', name: 'Shell', symbol: 'LSE:SHEL' },
+  { id: 'bp', name: 'BP', symbol: 'LSE:BP.' },
+  { id: 'totalenergies', name: 'TotalEnergies', symbol: 'EURONEXT:TTE' },
+  { id: 'equinor', name: 'Equinor', symbol: 'OSL:EQNR' },
+] as const;
+
 export function economyCreditReady(credit: string): boolean {
   return !credit.includes('{publicationDate}') && !credit.includes('{accessDate}');
 }

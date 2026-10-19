@@ -1,9 +1,11 @@
 ---
 import EconomyEnergyChart from '../components/EconomyEnergyChart.astro';
-import EconomyLiveTile from '../components/EconomyLiveTile.astro';
+import EconomyQuote from '../components/EconomyQuote.astro';
+import EconomyTile from '../components/EconomyTile.astro';
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import {
+  economyCompanies,
   economyCreditReady,
   economyFigureLive,
   economyFigures,
@@ -12,11 +14,26 @@ import {
   economyTabPath,
   economyTabs,
   liveEconomyTabs,
+  type EconomyFigureId,
   type EconomySourceId,
   type EconomyTabSlug,
 } from '../data/economy';
 import { getEconomyPage, resolveLocale } from '../i18n';
-import { ecbRate, economyStaleSince, formatDay, formatExact, formatMonth, pinkSeries, storedDecimals } from '../lib/economyData';
+import {
+  changeOf,
+  direction,
+  ecbRate,
+  ecbWindows,
+  economyStaleSince,
+  formatChange,
+  formatDay,
+  formatExact,
+  formatMonth,
+  pinkSeries,
+  pinkWindows,
+  sparkPath,
+  sparkTail,
+} from '../lib/economyData';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 interface Props {
@@ -28,38 +45,44 @@ interface CreditPart {
   href?: string;
 }
 
+const PERIODS = ['month', 'year', '5y', 'all'] as const;
+type PeriodId = (typeof PERIODS)[number];
+const ENERGY_SERIES = ['brent', 'gas_us', 'gas_europe', 'lng_japan', 'coal_australia'] as const;
+const MOVED_FIGURES: EconomyFigureId[] = ['o_oil', 'o_gas', 'o_coal', 'o_euro', 'e_brent_long', 'e_gas_regions', 'e_coal', 's_quotes'];
+
 const { slug } = Astro.props;
 const locale = resolveLocale(Astro.currentLocale);
 const page = getEconomyPage(locale);
 const tab = economyTabs.find((item) => item.slug === slug);
-if (!tab) {
-  throw new Error(`Unknown economy tab: ${slug}`);
-}
+if (!tab) throw new Error(`Unknown economy tab: ${slug}`);
 
 const copy = page.tabs[slug];
 const isHub = slug === 'overview';
-const title = slug === 'overview' ? page.meta.title : page.tabs[slug].metaTitle;
-const description = slug === 'overview' ? page.meta.description : page.tabs[slug].metaDescription;
+const title = 'metaTitle' in copy ? copy.metaTitle : page.meta.title;
+const description = 'metaDescription' in copy ? copy.metaDescription : page.meta.description;
+const lede = 'lede' in copy ? copy.lede : '';
 const updates = 'updates' in copy ? copy.updates : undefined;
 const privacy = slug === 'companies' ? page.tabs.companies.privacy : undefined;
-const methods =
-  slug === 'sources'
-    ? [page.tabs.sources.method1, page.tabs.sources.method2, page.tabs.sources.method3]
-    : [];
+const methods = slug === 'sources' ? [page.tabs.sources.method1, page.tabs.sources.method2, page.tabs.sources.method3] : [];
 const liveFigureIds = tab.figures.filter((id) => economyFigureLive(economyFigures[id]));
 const sourceIds = economySourcesForTab(tab);
 const tabs = liveEconomyTabs();
 const hubTiles = tabs.filter((item) => item.slug !== 'overview');
-
-/* Overview and Energy are number boards. Data is read only here, inside the page render, so a production build
-   (no Economy pages) never touches the data files. */
 const boardTab = slug === 'overview' || slug === 'energy';
+const defaultPeriod: PeriodId = slug === 'energy' ? '5y' : 'year';
+
 const SERIES_UNIT: Record<string, keyof typeof page.units> = {
   brent: 'usd_bbl',
   gas_us: 'usd_mmbtu',
   gas_europe: 'usd_mmbtu',
   lng_japan: 'usd_mmbtu',
   coal_australia: 'usd_mt',
+};
+
+const SHORT_UNIT: Record<string, keyof typeof page.unitsShort> = {
+  usd_bbl: 'oil',
+  usd_mmbtu: 'gas',
+  usd_mt: 'coal',
 };
 
 function fill(template: string, key: string, value: string): string {
@@ -75,41 +98,95 @@ function seriesName(key: string): string {
   return page.series[key as keyof typeof page.series];
 }
 
+function dated(template: string, date: string): string {
+  return template.replace('{date}', date);
+}
+
+function present(window: { values: (number | null)[]; breaks: boolean[]; highlight: boolean; compare: number[]; since: string; latest: number; latestAt: string }, decimals: number, scale: 'month' | 'day') {
+  const change = changeOf(window.compare);
+  const since = scale === 'day' ? formatDay(window.since, locale) : formatMonth(window.since, locale);
+  const latestAt = scale === 'day' ? formatDay(window.latestAt, locale) : formatMonth(window.latestAt, locale);
+  return {
+    values: window.values,
+    breaks: window.breaks,
+    highlight: window.highlight,
+    compare: window.compare,
+    since,
+    dateLine: dated(scale === 'day' ? page.labels.dayRate : page.labels.monthAverage, latestAt),
+    value: formatExact(window.latest, decimals, locale),
+    raw: window.latest,
+    decimals,
+    changeText: page.labels.changeSince.replace('{change}', formatChange(change.abs, change.pct, decimals, locale)).replace('{date}', since),
+    dir: direction(change.abs),
+  };
+}
+
+function pinkTile(id: string, tileTitle: string, key: (typeof ENERGY_SERIES)[number]) {
+  const series = pinkWindows(key);
+  const unitKey = SERIES_UNIT[key];
+  const slots = Object.fromEntries(PERIODS.map((period) => [period, present(series.windows[period], series.decimals, 'month')]));
+  const current = slots[defaultPeriod];
+  const drawn = series.windows[defaultPeriod];
+  return {
+    id,
+    title: tileTitle,
+    raw: current.raw,
+    value: current.value,
+    unitShort: page.unitsShort[SHORT_UNIT[unitKey]],
+    unitLong: page.units[unitKey],
+    changeText: current.changeText,
+    dir: current.dir,
+    path: sparkPath(drawn.values, drawn.breaks),
+    tail: sparkTail(drawn.values),
+    highlight: drawn.highlight,
+    sparkLabel: tileTitle,
+    periodText: current.dateLine,
+    payload: { changeTemplate: page.labels.changeSince, locale, periods: slots },
+  };
+}
+
+function euroTile(code: 'USD' | 'GBP' | 'PLN') {
+  const rate = ecbWindows(code);
+  const slots = Object.fromEntries(
+    PERIODS.map((period) => {
+      const window = rate.windows[period];
+      return [period, present(window, window.decimals, window.scale === 'day' ? 'day' : 'month')];
+    }),
+  );
+  const current = slots[defaultPeriod];
+  const drawn = rate.windows[defaultPeriod];
+  const tileTitle = seriesName(code);
+  return {
+    id: `euro-${code}`,
+    title: tileTitle,
+    raw: current.raw,
+    value: current.value,
+    unitShort: page.unitsShort.euro,
+    unitLong: page.units.per_euro,
+    changeText: current.changeText,
+    dir: current.dir,
+    path: sparkPath(drawn.values, drawn.breaks),
+    tail: sparkTail(drawn.values),
+    highlight: drawn.highlight,
+    sparkLabel: tileTitle,
+    periodText: current.dateLine,
+    payload: { changeTemplate: page.labels.changeSince, locale, periods: slots },
+  };
+}
+
 const tiles =
   slug === 'overview'
-    ? liveFigureIds.map((id) => {
-        const fig = economyFigures[id];
-        const figCopy = page.figures[id];
-        const base = {
-          title: figCopy.title,
-          planet: figCopy.planet,
-          caveat: figCopy.caveat,
-          caveatLabel: page.labels.caveat,
-          sourceLabel: page.labels.source,
-          sourceName: organisation(fig.source),
-          sourceUrl: fig.url,
-        };
-        if (fig.source === 'ecb' && fig.seriesKeys) {
-          const rates = fig.seriesKeys.map((code) => ({ code, ...ecbRate(code) }));
-          return {
-            ...base,
-            unit: page.units.per_euro,
-            rows: rates.map((r) => ({ label: seriesName(r.code), value: formatExact(r.value, r.decimals, locale) })),
-            dateLine: fill(page.labels.latestReading, 'date', formatDay(rates[0].date, locale)),
-          };
-        }
-        if (fig.source === 'wb_pink' && fig.seriesKey) {
-          const s = pinkSeries(fig.seriesKey);
-          return {
-            ...base,
-            value: formatExact(s.latest, storedDecimals(s.latest), locale),
-            unit: page.units[SERIES_UNIT[fig.seriesKey]],
-            dateLine: fill(page.labels.latestReading, 'date', formatMonth(s.month, locale)),
-          };
-        }
-        throw new Error(`Overview figure ${id} has no data binding`);
-      })
-    : [];
+    ? [
+        pinkTile('o_oil', page.figures.o_oil.title, 'brent'),
+        pinkTile('o_gas', page.figures.o_gas.title, 'gas_europe'),
+        pinkTile('o_coal', page.figures.o_coal.title, 'coal_australia'),
+        euroTile('USD'),
+        euroTile('GBP'),
+        euroTile('PLN'),
+      ]
+    : slug === 'energy'
+      ? ENERGY_SERIES.map((key) => pinkTile(key, seriesName(key), key))
+      : [];
 
 const charts =
   slug === 'energy'
@@ -117,32 +194,34 @@ const charts =
         const fig = economyFigures[id];
         const keys = fig.seriesKeys ?? (fig.seriesKey ? [fig.seriesKey] : []);
         if (keys.length === 0) throw new Error(`Energy figure ${id} has no data binding`);
-        return { id, fig, keys };
+        return { id, keys };
       })
     : [];
 
 const staleNotices = boardTab
-  ? sourceIds.flatMap((id) => {
-      if (id !== 'wb_pink' && id !== 'ecb') return [];
+  ? (slug === 'energy' ? (['wb_pink'] as const) : (['wb_pink', 'ecb', 'ecb_monthly'] as const)).flatMap((id) => {
       const since = economyStaleSince(id);
       if (!since) return [];
-      return [fill(page.labels.staleNotice, 'date', id === 'ecb' ? formatDay(since, locale) : formatMonth(since, locale))];
+      const formatted = id === 'ecb' ? formatDay(since, locale) : formatMonth(since, locale);
+      return [fill(page.labels.staleNotice, 'date', formatted)];
     })
   : [];
 
 const sourceLines: Partial<Record<EconomySourceId, string>> = {};
-if (boardTab && sourceIds.includes('wb_pink')) {
+if (slug === 'sources' && sourceIds.includes('wb_pink')) {
   const published = fill(page.labels.publishedOn, 'date', formatDay(pinkSeries('brent').publisherDate, locale));
   sourceLines.wb_pink = fill(fill(page.labels.sourceLineChanged, 'list', page.sources.wb_pink.name), 'updated', published);
 }
-if (boardTab && sourceIds.includes('ecb')) {
+if (slug === 'sources' && sourceIds.includes('ecb')) {
   const published = fill(page.labels.publishedOn, 'date', formatDay(ecbRate('USD').date, locale));
   sourceLines.ecb = fill(fill(page.labels.sourceLineUnmodified, 'list', page.sources.ecb.name), 'updated', published);
 }
 
+const movedFigures = slug === 'sources' ? MOVED_FIGURES.filter((id) => economyFigureLive(economyFigures[id])) : [];
+
 function tileText(tabSlug: EconomyTabSlug): string {
-  if (tabSlug === 'overview') return '';
-  return page.tabs[tabSlug].tile;
+  const item = page.tabs[tabSlug];
+  return 'tile' in item ? item.tile : '';
 }
 
 function creditParts(credit: string, links: Record<string, string> | undefined): CreditPart[] {
@@ -170,6 +249,11 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
   }
   return parts;
 }
+
+const boardList = boardTab ? page.boardLists[slug] : '';
+const boardParts = creditParts(boardList, { 'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/' });
+const [boardHead, boardRest = ''] = page.labels.boardSources.split('{list}');
+const [boardMid, boardTail = ''] = boardRest.split('{sources}');
 ---
 
 <BaseLayout title={title} description={description}>
@@ -183,12 +267,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
         </div>
       </header>
     ) : (
-      <ShelfHeader
-        backHref={economyTabPath('overview', locale)}
-        backLabel={page.back}
-        title={copy.title}
-        lede={copy.lede}
-      >
+      <ShelfHeader backHref={economyTabPath('overview', locale)} backLabel={page.back} title={copy.title} lede={lede}>
         {privacy && <p class="shelf-page-lede">{privacy}</p>}
       </ShelfHeader>
     )
@@ -199,22 +278,71 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
       <nav class="economy-tabs" aria-label={page.hub.tabsAria}>
         {
           tabs.map((item) => (
-            <a
-              href={economyTabPath(item.slug, locale)}
-              aria-current={item.slug === slug ? 'page' : undefined}
-            >
+            <a href={economyTabPath(item.slug, locale)} aria-current={item.slug === slug ? 'page' : undefined}>
               {page.tabs[item.slug].name}
             </a>
           ))
         }
       </nav>
 
-      {isHub && (
-        <>
-          <h2>{page.tabs.overview.title}</h2>
-          <p>{page.tabs.overview.lede}</p>
-        </>
-      )}
+      {staleNotices.map((notice) => <p class="economy-stale">{notice}</p>)}
+
+      {
+        boardTab && (
+          <div class="economy-periods" role="group" aria-label={page.labels.periodAria}>
+            {PERIODS.map((period) => (
+              <button type="button" data-period={period} aria-pressed={period === defaultPeriod ? 'true' : 'false'}>
+                {page.labels.periods[period]}
+              </button>
+            ))}
+          </div>
+        )
+      }
+
+      {
+        tiles.length > 0 && (
+          <div class="economy-board">
+            {tiles.map((tile) => (
+              <EconomyTile {...tile} />
+            ))}
+          </div>
+        )
+      }
+
+      {
+        charts.length > 0 && (
+          <div class="economy-charts">
+            {charts.map(({ id, keys }) => (
+              <EconomyEnergyChart
+                title={page.figures[id].title}
+                shows={page.figures[id].shows}
+                unit={page.units[SERIES_UNIT[keys[0]]]}
+                series={keys.map((key) => ({ key, label: seriesName(key) }))}
+                locale={locale}
+                period={defaultPeriod}
+                labels={page.labels}
+              />
+            ))}
+          </div>
+        )
+      }
+
+      {
+        slug === 'companies' && (
+          <>
+            <p>
+              <button class="economy-quote-all" type="button">{page.labels.loadAll}</button>
+            </p>
+            <div class="economy-stack">
+              {economyCompanies.map((company) => (
+                <EconomyQuote name={company.name} symbol={company.symbol} locale={locale} loadLabel={page.labels.loadChart} />
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      {methods.map((paragraph) => <p>{paragraph}</p>)}
 
       {
         !boardTab && updates && (
@@ -225,62 +353,21 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
       }
 
       {
-        methods.map((paragraph) => (
-          <p>{paragraph}</p>
-        ))
-      }
-
-      {staleNotices.map((notice) => <p class="economy-stale">{notice}</p>)}
-
-      {
-        tiles.length > 0 && (
-          <div class="economy-board">
-            {tiles.map((tile) => (
-              <EconomyLiveTile {...tile} />
+        movedFigures.length > 0 && (
+          <div class="economy-stack">
+            {movedFigures.map((id) => (
+              <details class="forest-stat">
+                <summary>{page.figures[id].title}</summary>
+                <p>{page.figures[id].planet}</p>
+                <p>{page.figures[id].caveat}</p>
+              </details>
             ))}
           </div>
         )
       }
 
       {
-        charts.length > 0 && (
-          <div class="economy-charts">
-            {charts.map(({ id, fig, keys }) => (
-              <EconomyEnergyChart
-                title={page.figures[id].title}
-                shows={page.figures[id].shows}
-                planet={page.figures[id].planet}
-                caveat={page.figures[id].caveat}
-                unit={page.units[SERIES_UNIT[keys[0]]]}
-                series={keys.map((key) => ({ key, label: seriesName(key) }))}
-                locale={locale}
-                labels={page.labels}
-                sourceName={organisation(fig.source)}
-                sourceUrl={fig.url}
-              />
-            ))}
-          </div>
-        )
-      }
-
-      {
-        boardTab && (
-          <p class="economy-not-advice">
-            <a href="#economy-disclaimer">{page.labels.notAdvice}</a>
-          </p>
-        )
-      }
-
-      {
-        boardTab && updates && (
-          <p>
-            <span class="economy-pill">{page.labels.updates}</span> {updates}
-          </p>
-        )
-      }
-
-      {
-        !boardTab && liveFigureIds.length > 0 && (
+        !boardTab && slug !== 'companies' && slug !== 'sources' && liveFigureIds.length > 0 && (
           <div class="forest-stat-grid">
             {liveFigureIds.map((id) => {
               const fig = economyFigures[id];
@@ -300,9 +387,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
                   </p>
                   <p class="wildlife-sources">
                     <span class="economy-label">{page.labels.source}:</span>{' '}
-                    <a href={fig.url} rel="noopener noreferrer">
-                      {sourceCopy.name}
-                    </a>
+                    <a href={fig.url} rel="noopener noreferrer">{sourceCopy.name}</a>
                   </p>
                 </article>
               );
@@ -312,29 +397,23 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
       }
 
       {
-        sourceIds.length > 0 && (
+        slug === 'sources' && sourceIds.length > 0 && (
           <section>
             <h2>{page.labels.sources}</h2>
             <div class="economy-stack">
               {sourceIds.map((id) => {
                 const meta = economySources[id];
                 const sourceCopy = page.sources[id];
-                const parts = economyCreditReady(meta.credit)
-                  ? creditParts(meta.credit, meta.creditLinks)
-                  : [];
+                const parts = economyCreditReady(meta.credit) ? creditParts(meta.credit, meta.creditLinks) : [];
                 return (
                   <article class="forest-stat">
                     <h3>
-                      <a href={meta.url} rel="noopener noreferrer">
-                        {sourceCopy.name}
-                      </a>
+                      <a href={meta.url} rel="noopener noreferrer">{sourceCopy.name}</a>
                     </h3>
                     <p>
                       <span class="economy-label">{page.labels.licence}:</span>{' '}
                       {meta.licenceUrl ? (
-                        <a href={meta.licenceUrl} rel="noopener noreferrer">
-                          {sourceCopy.licence}
-                        </a>
+                        <a href={meta.licenceUrl} rel="noopener noreferrer">{sourceCopy.licence}</a>
                       ) : (
                         sourceCopy.licence
                       )}
@@ -344,9 +423,7 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
                         <span class="economy-label">{page.labels.credit}:</span>{' '}
                         {parts.map((part) =>
                           part.href ? (
-                            <a href={part.href} rel="noopener noreferrer">
-                              {part.text}
-                            </a>
+                            <a href={part.href} rel="noopener noreferrer">{part.text}</a>
                           ) : (
                             part.text
                           ),
@@ -367,21 +444,33 @@ function creditParts(credit: string, links: Record<string, string> | undefined):
         isHub && hubTiles.length > 0 && (
           <div class="hub-grid">
             {hubTiles.map((item) => (
-              <HubTile
-                href={economyTabPath(item.slug, locale)}
-                icon={item.icon}
-                title={page.tabs[item.slug].name}
-                text={tileText(item.slug)}
-              />
+              <HubTile href={economyTabPath(item.slug, locale)} icon={item.icon} title={page.tabs[item.slug].name} text={tileText(item.slug)} />
             ))}
           </div>
+        )
+      }
+
+      {
+        boardTab && (
+          <p class="economy-board-sources">
+            {boardHead}
+            {boardParts.map((part) =>
+              part.href ? (
+                <a href={part.href} rel="noopener noreferrer">{part.text}</a>
+              ) : (
+                part.text
+              ),
+            )}
+            {boardMid}
+            <a href={economyTabPath('sources', locale)}>{page.tabs.sources.name}</a>
+            {boardTail}
+          </p>
         )
       }
 
       <aside id="economy-disclaimer" class="wildlife-copy-card economy-disclaimer">
         <h2>{page.disclaimer.title}</h2>
         <p>{page.disclaimer.body}</p>
-        <p>{page.disclaimer.nonCommercial}</p>
       </aside>
     </div>
   </div>
