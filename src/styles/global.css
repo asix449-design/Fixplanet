@@ -5250,3 +5250,36 @@ a.map-card:hover {
   padding: 0.25rem 0.7rem;
   font-size: 0.82rem;
 }
+
+/* Economy: hub grid breakpoints after the base .hub-grid rule */
+@media (max-width: 1024px) {
+  .economy-main .hub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .economy-main .hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Economy: let grid items and text shrink */
+.economy-board > *,
+.economy-charts > *,
+.economy-stack > * {
+  min-width: 0;
+}
+
+.economy-main {
+  overflow-wrap: anywhere;
+}
+
+.economy-chart table {
+  table-layout: fixed;
+}
+
+.economy-chart th,
+.economy-chart td {
+  hyphens: auto;
+}
