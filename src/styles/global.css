@@ -5282,3 +5282,14 @@ a.map-card:hover {
 .economy-chart td {
   hyphens: auto;
 }
+
+/* Site header on narrow phones: the language switch is already in the menu */
+@media (max-width: 480px) {
+  .header-inner {
+    gap: 0.6rem;
+  }
+
+  .header-tools .lang-switch-bar {
+    display: none;
+  }
+}
