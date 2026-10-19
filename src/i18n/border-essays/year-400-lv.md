@@ -71,4 +71,4 @@ Kas nāks uzreiz pēc tam:
 - 451: kauja Katalaunu laukos ar Atilu;
 - 476: Rietumos nepaliks sava imperatora.
 
-400. gadā Rietumos vēl var teikt „mēs esam Roma” un gandrīz tam noticēt. Konstantinopoles mūri noturēsies. Romas mūri neizturēs.
+400. gadā Rietumos vēl var teikt „mēs esam Roma” un gandrīz tam noticēt. Konstantinopoles mūri noturēsies. Romas mūri neiztūrēs.

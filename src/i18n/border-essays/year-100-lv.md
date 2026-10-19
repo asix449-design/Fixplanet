@@ -62,4 +62,4 @@ Kas nāks pēc tam, jau III gadsimtā:
 - 220: oficiālas Haņu beigas;
 - 284: Diokletiāns sāks salīmēt Romu no jauna, jau kā citu mašīnu.
 
-II gadsimtu atceras pēc Trajāna kolonnas, Adriāna vaļa un Marka Aurēlija grāmatiņas. Vērts atcerēties arī mēri, un Komodu, un Dzeltenos lakatus. Apmetums bija teicams. Mūris zem tā neizturēs.
+II gadsimtu atceras pēc Trajāna kolonnas, Adriāna vaļa un Marka Aurēlija grāmatiņas. Vērts atcerēties arī mēri, un Komodu, un Dzeltenos lakatus. Apmetums bija teicams. Mūris zem tā neiztūrēs.

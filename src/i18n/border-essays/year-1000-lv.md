@@ -66,4 +66,4 @@ Kas būs tālāk:
 - 1071: Mancikerta, selčuki sit Bizantiju;
 - 1096: Pirmais krusta karš.
 
-1000. gadā Eiropa atcerējās apaļu ciparu. Pārējā pasaule to nodzīvoja kā parastu. Svētais nenotika. Notika kas cits: Atlantijas rietumu malā kāds ieraudzīja vīnogas un nosauca zemi par Vinlandi. Tad šī vieta uz divsimt gadiem izkrita no atmiņas. Karte jau bija lielāka, nekā domāja Romā. Vienkārši Roma par to neuzzināja.
+1000. gads Eiropai palika atmiņā kā apaļais skaitlis. Pārējā pasaule to nodzīvoja kā parastu. Svētais nenotika. Notika kas cits: Atlantijas rietumu malā kāds ieraudzīja vīnogas un nosauca zemi par Vinlandi. Tad šī vieta uz divsimt gadiem izkrita no atmiņas. Karte jau bija lielāka, nekā domāja Romā. Vienkārši Roma par to neuzzināja.
