@@ -407,6 +407,318 @@
           }
         ]
       }
+    },
+    "asian-elephant": {
+      "commonName": "Słoń indyjski",
+      "hook": "Największe zwierzę lądowe Azji, leśny olbrzym o małych uszach i kopulastej głowie.",
+      "imageAlt": "Samiec słonia indyjskiego z długimi białymi ciosami idzie przez zielone zarośla",
+      "what": "Słoń indyjski (Elephas maximus) jest największym zwierzęciem lądowym Azji. Ma mniejsze uszy niż słonie afrykańskie, głowę z dwoma wypukłościami i jeden palcowaty wyrostek na końcu trąby, a ciosy ma zwykle tylko samiec. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Lasy i łąki Azji Południowej i Południowo-Wschodniej, od Indii i Sri Lanki po Borneo i Sumatrę.",
+      "story": "Ludzie oswajają słonie indyjskie i pracują z nimi od czasów starożytnych, a wiele z nich nadal żyje przy świątyniach, w obozach i przy wyrębie lasu. Dzikie stada potrzebują rozległych lasów, które pola, drogi i miasta dzielą na coraz mniejsze płaty.",
+      "when": "Dziś zagrożony, dzikie stada przetrwały w rozproszonych lasach.",
+      "humanRole": "Zagraża mu utrata i rozdrobnienie lasów, konflikty z rolnikami oraz kłusownictwo dla kości słoniowej.",
+      "sources": [
+        {
+          "label": "Wijayanto i współautorzy, 2021, czasopismo Biodiversitas: wymiary ciała słoni sumatrzańskich (Wijayanto et al. 2021, Biodiversitas 22(7): body measurements of Sumatran elephants)",
+          "url": "https://smujo.id/biodiv/article/download/8437/4926/44067"
+        },
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Słoń indyjski (Animal Diversity Web: Elephas maximus)",
+          "url": "https://animaldiversity.org/accounts/Elephas_maximus/"
+        },
+        {
+          "label": "Wikipedia: Słoń indyjski (Wikipedia: Asian elephant)",
+          "url": "https://en.wikipedia.org/wiki/Asian_elephant"
+        }
+      ]
+    },
+    "african-wild-dog": {
+      "commonName": "Likaon pstry",
+      "hook": "Długonogi, cętkowany myśliwy afrykańskiej sawanny, który żyje i poluje w watahach.",
+      "imageAlt": "Likaon pstry o plamistym futrze i białym końcu ogona biegnie po piasku",
+      "what": "Likaon pstry (Lycaon pictus) to smukły, długonogi dziki pies Afryki o dużych okrągłych uszach i futrze w czarne, brązowe, żółte i białe plamy, u każdego zwierzęcia innym wzorem. Na każdej łapie ma cztery palce. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Sawanny, łąki i widne lasy Afryki na południe od Sahary, dziś rozproszone obszary głównie na wschodzie i południu.",
+      "story": "Likaony żyją w watahach, w których rozmnaża się jedna para, a szczenięta karmi cała grupa. Watahy wędrują po ogromnych obszarach, więc często opuszczają parki narodowe i spotykają ludzi, bydło i drogi.",
+      "when": "Dziś zagrożony, zniknął z większości dawnego zasięgu.",
+      "humanRole": "Zagraża mu kurczenie się i rozdrobnienie siedlisk, zabijanie przez hodowców, śmierć na drogach oraz choroby od psów domowych.",
+      "sources": [
+        {
+          "label": "Organizacja African Wild Dog Conservancy: fakty o likaonie (African Wild Dog Conservancy: Facts)",
+          "url": "https://www.awdconservancy.org/facts.html"
+        },
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Likaon pstry (Animal Diversity Web: Lycaon pictus)",
+          "url": "https://animaldiversity.org/accounts/Lycaon_pictus/"
+        },
+        {
+          "label": "Wikipedia: Likaon pstry (Wikipedia: African wild dog)",
+          "url": "https://en.wikipedia.org/wiki/African_wild_dog"
+        }
+      ]
+    },
+    "ethiopian-wolf": {
+      "commonName": "Kaberu etiopski",
+      "hook": "Smukły rudy drapieżnik Wyżyny Abisyńskiej, który poluje na gryzonie na otwartych górskich łąkach.",
+      "imageAlt": "Kaberu etiopski o rudym futrze i białym gardle idzie wśród niskich srebrzystych krzewinek",
+      "what": "Kaberu etiopski (Canis simensis), zwany też wilkiem etiopskim, to smukły, długonogi drapieżnik o rudawym futrze, białym gardle i piersi oraz długim, wąskim pysku. Żyje tylko w górach Etiopii i żywi się głównie gryzoniami. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Wysokogórskie łąki i wrzosowiska Wyżyny Abisyńskiej w Etiopii.",
+      "story": "Kaberu żyją w rodzinnych grupach na wspólnym terytorium, ale na gryzonie polują zwykle w pojedynkę. Te, które przetrwały, żyją w małych, oddzielonych od siebie grupach górskich.",
+      "when": "Dziś zagrożony, przetrwał w kilku pasmach górskich.",
+      "humanRole": "Zagraża mu wścieklizna i nosówka od psów domowych oraz pola uprawne i wypas na wysokogórskich łąkach.",
+      "sources": [
+        {
+          "label": "Brytyjska fundacja ochrony wilków: Kaberu etiopski (UK Wolf Conservation Trust: The Ethiopian Wolf)",
+          "url": "https://ukwct.org.uk/files/ethiopian.pdf"
+        },
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Kaberu etiopski (Animal Diversity Web: Canis simensis)",
+          "url": "https://animaldiversity.org/accounts/Canis_simensis/"
+        },
+        {
+          "label": "Wikipedia: Kaberu etiopski (Wikipedia: Ethiopian wolf)",
+          "url": "https://en.wikipedia.org/wiki/Ethiopian_wolf"
+        }
+      ]
+    },
+    "malayan-tapir": {
+      "commonName": "Tapir czaprakowy",
+      "hook": "Czarno-biały leśny olbrzym z krótką trąbką i białym czaprakiem na grzbiecie.",
+      "imageAlt": "Tapir czaprakowy z czarnym przodem, białym środkiem i czarnymi tylnymi nogami idzie po piasku",
+      "what": "Tapir czaprakowy (Tapirus indicus) jest największym z tapirów, ciężkim roślinożercą z krótką, giętką trąbką utworzoną z nosa i górnej wargi. Dorosłe są czarne z przodu i z tyłu, z szerokim białym czaprakiem pośrodku, a młode są brązowe w jasne pasy i cętki. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Lasy tropikalne Mjanmy, Tajlandii, Malezji i Sumatry.",
+      "story": "Żyje samotnie i żeruje nocą na liściach, pędach i owocach, często w pobliżu wody. Wyrazisty wzór rozmywa jego zarys w ciemnym lesie.",
+      "when": "Dziś zagrożony, bo jego lasy się kurczą.",
+      "humanRole": "Zagraża mu wycinanie nizinnych lasów pod plantacje i pola, polowania oraz śmierć na drogach.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Tapir czaprakowy (Animal Diversity Web: Tapirus indicus)",
+          "url": "https://animaldiversity.org/accounts/Tapirus_indicus/"
+        },
+        {
+          "label": "Wikipedia: Tapir czaprakowy (Wikipedia: Malayan tapir)",
+          "url": "https://en.wikipedia.org/wiki/Malayan_tapir"
+        }
+      ]
+    },
+    "bairds-tapir": {
+      "commonName": "Tapir panamski",
+      "hook": "Największy rodzimy ssak lądowy tropikalnej Ameryki, płochliwy roślinożerca z krótką trąbką.",
+      "imageAlt": "Samica tapira panamskiego z pasiastym młodym stoi na skraju leśnej ścieżki",
+      "what": "Tapir panamski (Tapirus bairdii) to ciężki, ciemnobrązowy roślinożerca z krótką, mięsistą trąbką, uszami obrzeżonymi bielą i jasnymi wargami. Młode rodzą się w jasne pasy i cętki. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Lasy deszczowe, lasy mgliste i bagna od południowego Meksyku przez Amerykę Środkową po Panamę.",
+      "story": "Zjada liście, gałązki i owoce, a z odchodami roznosi nasiona wielu leśnych roślin. Samica rodzi zwykle jedno młode po ciąży trwającej ponad rok.",
+      "when": "Dziś zagrożony, a jego liczebność wciąż spada.",
+      "humanRole": "Zagraża mu wycinanie lasów pod pola i pastwiska, polowania oraz śmierć na drogach.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Tapir panamski (Animal Diversity Web: Tapirus bairdii)",
+          "url": "https://animaldiversity.org/accounts/Tapirus_bairdii/"
+        },
+        {
+          "label": "Wikipedia: Tapir panamski (Wikipedia: Baird's tapir)",
+          "url": "https://en.wikipedia.org/wiki/Baird%27s_tapir"
+        }
+      ]
+    },
+    "okapi": {
+      "commonName": "Okapi leśne",
+      "hook": "Płochliwy leśny krewny żyrafy z prążkami jak u zebry na nogach.",
+      "imageAlt": "Okapi o ciemnobrązowym ciele i pręgowanych białych nogach stoi na trawie",
+      "what": "Okapi leśne (Okapia johnstoni) jest najbliższym żyjącym krewnym żyrafy, leśnym zwierzęciem o aksamitnym, ciemnym rudobrązowym futrze, biało-brązowo pręgowanych nogach i długim ciemnym języku. Samce mają krótkie różki pokryte skórą. Międzynarodowa Unia Ochrony Przyrody uznaje je za gatunek zagrożony.",
+      "range": "Gęste lasy deszczowe północno-wschodniej części Demokratycznej Republiki Konga i nigdzie więcej.",
+      "story": "Naukowcy w Europie poznali okapi dopiero w ubiegłym stuleciu. Żyje samotnie, objada liście w nasłonecznionych lukach lasu i na wolności bardzo trudno je zobaczyć.",
+      "when": "Dziś zagrożone, a jego liczebność wciąż spada.",
+      "humanRole": "Zagrażają mu polowania dla mięsa i skór, górnictwo, wyrąb lasu i konflikty zbrojne.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Okapi leśne (San Diego Zoo Wildlife Alliance Library: Okapi fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/okapi/characteristics"
+        },
+        {
+          "label": "Wikipedia: Okapi leśne (Wikipedia: Okapi)",
+          "url": "https://en.wikipedia.org/wiki/Okapi"
+        }
+      ]
+    },
+    "grevys-zebra": {
+      "commonName": "Zebra pręgowana",
+      "hook": "Największy dziki przedstawiciel rodziny koniowatych, z wąskimi pręgami, białym brzuchem i okrągłymi uszami.",
+      "imageAlt": "Zebra pręgowana z wąskimi czarno-białymi pręgami i dużymi okrągłymi uszami stoi w suchych zaroślach",
+      "what": "Zebra pręgowana (Equus grevyi) jest największą żyjącą zebrą i największym dzikim przedstawicielem rodziny koniowatych. Ma wąskie, gęste pręgi, biały brzuch i duże, zaokrąglone uszy. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek zagrożony.",
+      "range": "Suche łąki i zarośla północnej Kenii i południowej Etiopii.",
+      "story": "W przeciwieństwie do innych zebr nie tworzy stałych grup rodzinnych. Samce strzegą terytoriów przy wodzie i pastwiskach, a klacze ze źrebiętami przechodzą między nimi.",
+      "when": "Dziś zagrożona, zostało ich znacznie mniej niż dawniej.",
+      "humanRole": "Zagraża jej utrata pastwisk i wody na rzecz bydła, susze i dawne polowania dla skór.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Zebra pręgowana (San Diego Zoo Wildlife Alliance Library: Grévy's zebra fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/grevyszebra/characteristics"
+        },
+        {
+          "label": "Wikipedia: Zebra pręgowana (Wikipedia: Grévy's zebra)",
+          "url": "https://en.wikipedia.org/wiki/Gr%C3%A9vy%27s_zebra"
+        }
+      ]
+    },
+    "pygmy-hippopotamus": {
+      "commonName": "Hipopotamek karłowaty",
+      "hook": "Mały, płochliwy hipopotam lasów Afryki Zachodniej, który za dnia kryje się na bagnach.",
+      "imageAlt": "Hipopotamek karłowaty o lśniącej ciemnej skórze stoi na ziemi",
+      "what": "Hipopotamek karłowaty (Choeropsis liberiensis) to mały leśny hipopotam o lśniącej ciemnej skórze, małej głowie i dłuższych nogach niż jego wielki krewny. Jego skóra wydziela czerwonawą ciecz, która chroni przed słońcem. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Nizinne lasy i bagna Afryki Zachodniej, głównie w Liberii, z mniejszymi grupami w Sierra Leone, Gwinei i Wybrzeżu Kości Słoniowej.",
+      "story": "Żyje samotnie lub w parach, za dnia odpoczywa w wodzie lub wilgotnych zagłębieniach, a nocą wychodzi żerować na liściach, paprociach i opadłych owocach wzdłuż leśnych ścieżek.",
+      "when": "Dziś zagrożony, na wolności widuje się go rzadko.",
+      "humanRole": "Zagraża mu wyrąb lasu, górnictwo, rolnictwo w jego lasach i polowania na dziczyznę.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Hipopotamek karłowaty (Animal Diversity Web: Choeropsis liberiensis)",
+          "url": "https://animaldiversity.org/accounts/Hexaprotodon_liberiensis/"
+        },
+        {
+          "label": "Wikipedia: Hipopotamek karłowaty (Wikipedia: Pygmy hippopotamus)",
+          "url": "https://en.wikipedia.org/wiki/Pygmy_hippopotamus"
+        }
+      ]
+    },
+    "red-panda": {
+      "commonName": "Pandka ruda",
+      "hook": "Rdzawoczerwony mieszkaniec drzew himalajskich lasów z puszystym, pierścieniowanym ogonem.",
+      "imageAlt": "Pandka ruda o rdzawym futrze i pierścieniowanym ogonie na gałęzi",
+      "what": "Pandka ruda (Ailurus fulgens) to nadrzewny ssak wielkości kota o rdzawym futrze, białym pyszczku z czerwonawymi pasami pod oczami i długim, pierścieniowanym ogonie. Mimo nazwy nie jest bliską krewną pandy wielkiej. Żywi się głównie liśćmi bambusa. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek zagrożony.",
+      "range": "Górskie lasy z bambusem w Nepalu, Indiach, Bhutanie, Mjanmie i południowo-zachodnich Chinach.",
+      "story": "Prawie całe życie spędza na drzewach, a w chłodzie śpi zwinięta, owinięta ogonem. Bambus daje mało energii, więc porusza się powoli i przez większość dnia odpoczywa.",
+      "when": "Dziś zagrożona, bo jej lasy kurczą się i dzielą.",
+      "humanRole": "Zagraża jej utrata i rozdrobnienie lasów, kłusownictwo i odłów na handel zwierzętami domowymi.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Pandka ruda (San Diego Zoo Wildlife Alliance Library: Red panda fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/redpanda/characteristics"
+        },
+        {
+          "label": "Wikipedia: Pandka ruda (Wikipedia: Red panda)",
+          "url": "https://en.wikipedia.org/wiki/Red_panda"
+        }
+      ]
+    },
+    "bonobo": {
+      "commonName": "Szympans karłowaty",
+      "hook": "Smukła małpa człekokształtna z lasów Konga, jeden z dwóch najbliższych żyjących krewnych człowieka.",
+      "imageAlt": "Szympans karłowaty o długiej czarnej sierści wśród zielonych liści",
+      "what": "Szympans karłowaty, czyli bonobo (Pan paniscus), to małpa człekokształtna o czarnej twarzy, długiej, cienkiej czarnej sierści i długich nogach, smuklejsza od szympansa zwyczajnego. Razem z nim jest najbliższym żyjącym krewnym człowieka. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Nizinne lasy deszczowe na południe od rzeki Kongo w Demokratycznej Republice Konga i nigdzie więcej.",
+      "story": "Bonobo żyją w dużych grupach, w których wiele zależy od samic, a napięcia często łagodzą przyjaznym dotykiem. Badacze widzieli, jak zjadają pewne liście, które pomagają im w walce z pasożytami jelitowymi.",
+      "when": "Dziś zagrożony, a jego liczebność wciąż spada.",
+      "humanRole": "Zagrażają mu polowania na dziczyznę, wycinanie lasów i wojny na obszarze jego występowania.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Szympans karłowaty (San Diego Zoo Wildlife Alliance Library: Bonobo fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/bonobo/characteristics"
+        },
+        {
+          "label": "Wikipedia: Szympans karłowaty (Wikipedia: Bonobo)",
+          "url": "https://en.wikipedia.org/wiki/Bonobo"
+        }
+      ]
+    },
+    "tasmanian-devil": {
+      "commonName": "Diabeł tasmański",
+      "hook": "Największy żyjący drapieżny torbacz, krępy czarny padlinożerca z Tasmanii o potężnym ugryzieniu.",
+      "imageAlt": "Diabeł tasmański o czarnym futrze i białej plamie na piersi",
+      "what": "Diabeł tasmański (Sarcophilus harrisii) to krępy torbacz o czarnym futrze, wielkości małego psa, często z białymi plamami na piersi i zadzie. Masywna głowa i silne szczęki pozwalają mu miażdżyć kości. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Lasy, zadrzewienia i tereny rolnicze na całej wyspie Tasmanii w Australii.",
+      "story": "Diabły polują na małe zwierzęta, ale częściej jedzą padlinę, a przy jednym posiłku może się z hałasem zebrać kilka osobników. Na kontynencie australijskim zniknęły dawno temu i przetrwały tylko na Tasmanii.",
+      "when": "Dziś zagrożony, po szybkim spadku liczebności w ostatnich dziesięcioleciach.",
+      "humanRole": "Zaraźliwy nowotwór pyska zabił większość diabłów, a śmierć na drogach i utrata zarośli pogłębiają straty.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Diabeł tasmański (San Diego Zoo Wildlife Alliance Library: Tasmanian devil fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/tasmaniandevil/characteristics"
+        },
+        {
+          "label": "Wikipedia: Diabeł tasmański (Wikipedia: Tasmanian devil)",
+          "url": "https://en.wikipedia.org/wiki/Tasmanian_devil"
+        }
+      ]
+    },
+    "gharial": {
+      "commonName": "Gawial gangesowy",
+      "hook": "Rybożerny krokodyl indyjskich rzek z niezwykle długim i cienkim pyskiem.",
+      "imageAlt": "Samiec gawiala gangesowego z długim wąskim pyskiem i naroślą na jego końcu",
+      "what": "Gawial gangesowy (Gavialis gangeticus) jest jednym z najdłuższych krokodyli, z bardzo długim, wąskim pyskiem pełnym ostrych zębów do łowienia ryb. Dorosłym samcom na końcu pyska wyrasta okrągła narośl. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek krytycznie zagrożony.",
+      "range": "Duże, piaszczyste rzeki północnych Indii i Nepalu, takie jak Czambal i Girwa.",
+      "story": "Gawiale rzadko wychodzą z wody, chyba że by wygrzać się i złożyć jaja na piaszczystych łachach, bo ich nogi są zbyt słabe na ląd. Narośl na pysku samca pomaga mu wydawać brzęczące dźwięki i puszczać bańki podczas zalotów.",
+      "when": "Dziś krytycznie zagrożony, przetrwał na kilku odcinkach rzek.",
+      "humanRole": "Zagrażają mu tamy, wydobycie piasku, topienie się w sieciach rybackich i znikanie piaszczystych łach do gniazdowania.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Gawial gangesowy (San Diego Zoo Wildlife Alliance Library: Gharial fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/gharial/characteristics"
+        },
+        {
+          "label": "Wikipedia: Gawial gangesowy (Wikipedia: Gharial)",
+          "url": "https://en.wikipedia.org/wiki/Gharial"
+        }
+      ]
+    },
+    "komodo-dragon": {
+      "commonName": "Waran z Komodo",
+      "hook": "Największa żyjąca jaszczurka, ciężki myśliwy kilku małych wysp Indonezji.",
+      "imageAlt": "Waran z Komodo o szorstkich szarobrązowych łuskach na ziemi",
+      "what": "Waran z Komodo (Varanus komodoensis) jest największą żyjącą jaszczurką, ciężkim waranem o szorstkich łuskach, silnych nogach i długim, umięśnionym ogonie. Młode są zielone w żółte i czarne pasy, a dorosłe matowo brązowe lub szaroczerwone. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Suche łąki i lasy wysp Komodo, Rinca, Flores i kilku sąsiednich wysp Indonezji.",
+      "story": "Warany z Komodo czatują na jelenie, świnie i bawoły, a także jedzą padlinę, którą wyczuwają z daleka. Młode spędzają wczesne życie na drzewach, z dala od dorosłych.",
+      "when": "Dziś zagrożony, żyje tylko na kilku wyspach.",
+      "humanRole": "Zagraża mu utrata siedlisk na Flores, kłusownictwo na jego ofiary i podnoszenie się morza wskutek ocieplenia klimatu.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Waran z Komodo (San Diego Zoo Wildlife Alliance Library: Komodo dragon fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/komododragon/characteristics"
+        },
+        {
+          "label": "Wikipedia: Waran z Komodo (Wikipedia: Komodo dragon)",
+          "url": "https://en.wikipedia.org/wiki/Komodo_dragon"
+        }
+      ]
+    },
+    "philippine-eagle": {
+      "commonName": "Małpożer",
+      "hook": "Jeden z największych i najsilniejszych orłów, czubaty leśny łowca Filipin.",
+      "imageAlt": "Małpożer z nastroszonym czubem, jasną piersią i hakowatym dziobem",
+      "what": "Małpożer (Pithecophaga jefferyi), zwany też orłem filipińskim, jest jednym z największych orłów świata, z nastroszonym czubem, brązowym grzbietem, białym spodem ciała i wysokim, łukowatym, szaroniebieskim dziobem. Poluje w starych lasach deszczowych na lotokoty, małpy i inne zwierzęta i jest ptakiem narodowym Filipin. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek krytycznie zagrożony.",
+      "range": "Stare lasy deszczowe wysp Mindanao, Luzon, Samar i Leyte na Filipinach.",
+      "story": "Para wychowuje pisklę powoli i karmi je przez wiele miesięcy, więc liczebność rośnie bardzo powoli. Każda para potrzebuje dużego obszaru starego lasu, by znaleźć dość zdobyczy.",
+      "when": "Dziś krytycznie zagrożony, zostało bardzo niewiele par.",
+      "humanRole": "Zagraża mu wycinanie nizinnych lasów deszczowych, odstrzał i chwytanie w pułapki.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Małpożer (Animal Diversity Web: Pithecophaga jefferyi)",
+          "url": "https://animaldiversity.org/accounts/Pithecophaga_jefferyi/"
+        },
+        {
+          "label": "Wikipedia: Małpożer (Wikipedia: Philippine eagle)",
+          "url": "https://en.wikipedia.org/wiki/Philippine_eagle"
+        }
+      ]
+    },
+    "great-indian-bustard": {
+      "commonName": "Drop indyjski",
+      "hook": "Jeden z najcięższych latających ptaków, wysoki drop indyjskich stepów.",
+      "imageAlt": "Drop indyjski z długą białą szyją, czarną czapeczką i brązowym grzbietem w suchej trawie",
+      "what": "Drop indyjski (Ardeotis nigriceps) to duży, długonogi ptak naziemny z białą szyją, czarną czapeczką na głowie i brązowym grzbietem. Ma około metra wzrostu i należy do najcięższych ptaków zdolnych do lotu. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek krytycznie zagrożony.",
+      "range": "Suche stepy i półpustynie zachodnich i środkowych Indii, głównie w Radżastanie.",
+      "story": "Samce nadymają worek gardłowy i wydają głuche, dudniące głosy, by zwabić samice. Ciężkie i mało zwrotne w locie dropie często rozbijają się o linie energetyczne, które przecinają dziś ich stepy.",
+      "when": "Dziś krytycznie zagrożony, zostało bardzo niewiele ptaków.",
+      "humanRole": "Na skraj zagłady doprowadziły go zderzenia z liniami energetycznymi, zamiana stepów w pola i dawne polowania.",
+      "sources": [
+        {
+          "label": "Międzynarodowa Unia Ochrony Przyrody: Duże ptaki przegrywają w zatłoczonym świecie (International Union for Conservation of Nature: Big birds lose out in a crowded world)",
+          "url": "https://iucn.org/content/big-birds-lose-out-a-crowded-world"
+        },
+        {
+          "label": "Wikipedia: Drop indyjski (Wikipedia: Great Indian bustard)",
+          "url": "https://en.wikipedia.org/wiki/Great_Indian_bustard"
+        }
+      ]
     }
   }
 }
