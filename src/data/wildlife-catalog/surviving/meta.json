@@ -657,6 +657,1133 @@
         "migratedFrom": "speciesMeta",
         "suppliedBy": []
       }
+    },
+    {
+      "slug": "black-footed-ferret",
+      "scientificName": "Mustela nigripes",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Mustelidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/14020/45200314",
+        "iucnTaxonId": "14020"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "US",
+            "CA",
+            "MX"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.49,
+          "unit": "m",
+          "mean": 0.49,
+          "range": [
+            0.38,
+            0.6
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "mn-adw-hb",
+              "url": "https://animaldiversity.org/accounts/Mustela_nigripes/",
+              "title": "Animal Diversity Web: Mustela nigripes",
+              "use": "counted",
+              "unit": "mm",
+              "range": [
+                380,
+                600
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "black-footed-ferret.webp",
+        "kind": "photo",
+        "credit": "laiet17 / Wikimedia Commons",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mustela_nigripes_179581105.jpg",
+        "width": 867,
+        "height": 604,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Mustela nigripes",
+          "url": "https://animaldiversity.org/accounts/Mustela_nigripes/"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Black-footed ferret",
+          "url": "https://nationalzoo.si.edu/animals/black-footed-ferret"
+        },
+        {
+          "label": "Black footed Ferret Recovery Implementation Team: Conservation history",
+          "url": "https://www.blackfootedferret.org/conservation-history.html"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "golden-lion-tamarin",
+      "scientificName": "Leontopithecus rosalia",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Callitrichidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/11506/192327291",
+        "iucnTaxonId": "11506"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "SA"
+          ],
+          "countries": [
+            "BR"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.2525,
+          "unit": "m",
+          "mean": 0.2525,
+          "range": [
+            0.225,
+            0.28
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "lr-denver-hb",
+              "url": "https://www.denverzoo.org/wp-content/uploads/2018/09/GLT.pdf",
+              "title": "Denver Zoo: Golden lion tamarin fact sheet",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                22.5,
+                28
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "golden-lion-tamarin.webp",
+        "kind": "photo",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leontopithecus_rosalia_-_Copenhagen_Zoo_-_DSC09082.JPG",
+        "width": 581,
+        "height": 867,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Denver Zoo: Golden lion tamarin fact sheet",
+          "url": "https://www.denverzoo.org/wp-content/uploads/2018/09/GLT.pdf"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Golden lion tamarin",
+          "url": "https://nationalzoo.si.edu/animals/golden-lion-tamarin"
+        },
+        {
+          "label": "Golden Lion Tamarin Association (Associação Mico Leão Dourado): Annual Report 2023",
+          "url": "https://micoleao.org.br/wp-content/uploads/2024/04/Annual-Report-2023_VFINAL_IG_ID.pdf"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "scimitar-horned-oryx",
+      "scientificName": "Oryx dammah",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/15568/197393805",
+        "iucnTaxonId": "15568"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AF"
+          ],
+          "countries": [
+            "TD"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 1.7,
+          "unit": "m",
+          "mean": 1.7,
+          "confidence": "single_source",
+          "basis": "body length (average)",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "od-adw-bl",
+              "url": "https://animaldiversity.org/accounts/Oryx_dammah/",
+              "title": "Animal Diversity Web: Oryx dammah",
+              "use": "counted",
+              "unit": "m",
+              "value": 1.7
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "scimitar-horned-oryx.webp",
+        "kind": "photo",
+        "credit": "Chrumps / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oryx_dammah_2.jpg",
+        "width": 867,
+        "height": 576,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Oryx dammah",
+          "url": "https://animaldiversity.org/accounts/Oryx_dammah/"
+        },
+        {
+          "label": "Sahara Conservation: the scimitar horned oryx downlisted from Extinct in the Wild to Endangered",
+          "url": "https://saharaconservation.org/news/milestone-the-scimitar-horned-oryx-downlisted-from-extinct-in-the-wild-to-endangered-by-iucn/"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Scimitar oryx",
+          "url": "https://nationalzoo.si.edu/animals/scimitar-horned-oryx"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "przewalskis-horse",
+      "scientificName": "Equus ferus przewalskii",
+      "rank": "subspecies",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Equidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/41763/97204950",
+        "iucnTaxonId": "41763"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "MN",
+            "CN",
+            "KZ"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 2.1,
+          "unit": "m",
+          "mean": 2.1,
+          "confidence": "single_source",
+          "basis": "body length without the tail (average; tail given separately)",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ep-sdzg-bl",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/przewalskishorse/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Przewalski's horse fact sheet",
+              "use": "counted",
+              "unit": "m",
+              "value": 2.1
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "przewalskis-horse.webp",
+        "kind": "photo",
+        "credit": "IAEA Imagebank / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Przewalski%27s_Horse_(02710137).jpg",
+        "width": 1020,
+        "height": 680,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Przewalski's horse fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/przewalskishorse/characteristics"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Przewalski's horse",
+          "url": "https://nationalzoo.si.edu/animals/przewalskis-horse"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "saiga",
+      "scientificName": "Saiga tatarica",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/19832/233712210",
+        "iucnTaxonId": "19832"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS",
+            "EU"
+          ],
+          "countries": [
+            "KZ",
+            "RU",
+            "MN"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 1.25,
+          "unit": "m",
+          "mean": 1.25,
+          "range": [
+            1.0,
+            1.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "st-adw-bl",
+              "url": "https://animaldiversity.org/accounts/Saiga_tatarica/",
+              "title": "Animal Diversity Web: Saiga tatarica",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                1.0,
+                1.5
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "saiga.webp",
+        "kind": "photo",
+        "credit": "Andrey Giljov / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg",
+        "width": 1200,
+        "height": 1017,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Saiga tatarica",
+          "url": "https://animaldiversity.org/accounts/Saiga_tatarica/"
+        },
+        {
+          "label": "Wildlife Conservation Society: Saiga antelope reclassified from Critically Endangered to Near Threatened",
+          "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/21627/Unprecedented-Conservation-Triumph-Saiga-Antelope-Reclassified-From-Critically-Endangered-to-Near-Threatened-in-the-IUCN-Red-List-of-Threatened-Species.aspx"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "alpine-ibex",
+      "scientificName": "Capra ibex",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/42397/219261343",
+        "iucnTaxonId": "42397"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "EU"
+          ],
+          "countries": [
+            "IT",
+            "CH"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 1.35,
+          "unit": "m",
+          "mean": 1.35,
+          "range": [
+            1.3,
+            1.4
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ci-adw-bl",
+              "url": "https://animaldiversity.org/accounts/Capra_ibex/",
+              "title": "Animal Diversity Web: Capra ibex",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                1.3,
+                1.4
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "alpine-ibex.webp",
+        "kind": "photo",
+        "credit": "Giles Laurent / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:003_Wild_Alpine_Ibex_Sunset_Creux_du_Van_Mont_Racine_Photo_by_Giles_Laurent.jpg",
+        "width": 800,
+        "height": 1200,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Capra ibex",
+          "url": "https://animaldiversity.org/accounts/Capra_ibex/"
+        },
+        {
+          "label": "Gran Paradiso National Park: Lo stambecco (the Alpine ibex)",
+          "url": "https://www.pngp.it/natura-e-ricerca/fauna/praterie-e-ambienti-rocciosi/lo-stambecco"
+        },
+        {
+          "label": "Canton of St. Gallen: Unterlagen zur Ausbildung Steinwildjagd (training notes on the Alpine ibex)",
+          "url": "https://www.sg.ch/umwelt-natur/jagd-fischerei/jagd/alte-seiten-abteilung-jagd/steinwildkurs-kursunterlagen1/_jcr_content/Par/sgch_downloadlist/DownloadListPar/sgch_download_1704448656.ocFile/Unterlagen%20zur%20Ausbildung%20Steinwildjagd.pdf"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "northern-elephant-seal",
+      "scientificName": "Mirounga angustirostris",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/13581/45227116",
+        "iucnTaxonId": "13581"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "marine",
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "US",
+            "MX"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 4.5,
+          "unit": "m",
+          "mean": 4.5,
+          "range": [
+            4.0,
+            5.0
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length, nose to tail tip (adult males)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ma-adw-tl",
+              "url": "https://animaldiversity.org/accounts/Mirounga_angustirostris/",
+              "title": "Animal Diversity Web: Mirounga angustirostris",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                4.0,
+                5.0
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "northern-elephant-seal.webp",
+        "kind": "photo",
+        "credit": "Mike Baird / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mating_scene_with_elevated_Alpha_Male._Elephant_Seals_of_Piedras_Blancas.jpg",
+        "width": 1020,
+        "height": 816,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Mirounga angustirostris",
+          "url": "https://animaldiversity.org/accounts/Mirounga_angustirostris/"
+        },
+        {
+          "label": "NOAA Fisheries: Northern elephant seal",
+          "url": "https://www.fisheries.noaa.gov/species/northern-elephant-seal"
+        },
+        {
+          "label": "NOAA Fisheries: Northern elephant seal, California breeding stock, stock assessment report 2021",
+          "url": "https://media.fisheries.noaa.gov/2022-08/2021-NorthernElephant-California%20Breeding%20Stock.pdf"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "indian-rhinoceros",
+      "scientificName": "Rhinoceros unicornis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Rhinocerotidae"
+      },
+      "iucn": {
+        "category": "VU",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/19496/18494149",
+        "iucnTaxonId": "19496"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "IN",
+            "NP"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 3.75,
+          "unit": "m",
+          "mean": 3.75,
+          "range": [
+            3.7,
+            3.8
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail (adult males)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "ru-adw-bl",
+              "url": "https://animaldiversity.org/accounts/Rhinoceros_unicornis/",
+              "title": "Animal Diversity Web: Rhinoceros unicornis",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                3.7,
+                3.8
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "indian-rhinoceros.webp",
+        "kind": "photo",
+        "credit": "Charles J. Sharp / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_rhinoceros_(Rhinoceros_unicornis)_1.jpg",
+        "width": 670,
+        "height": 867,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Rhinoceros unicornis",
+          "url": "https://animaldiversity.org/accounts/Rhinoceros_unicornis/"
+        },
+        {
+          "label": "International Rhino Foundation: State of the Rhino 2025",
+          "url": "https://rhinos.org/wp-content/uploads/2025/09/State-of-the-Rhino-2025-v4.pdf"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "sea-otter",
+      "scientificName": "Enhydra lutris",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Mustelidae"
+      },
+      "iucn": {
+        "category": "EN",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/7750/219377647",
+        "iucnTaxonId": "7750"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "marine"
+        ],
+        "current": {
+          "continents": [
+            "AS",
+            "NA"
+          ],
+          "countries": [
+            "RU",
+            "JP",
+            "US",
+            "CA"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 1.35,
+          "unit": "m",
+          "mean": 1.35,
+          "range": [
+            1.2,
+            1.5
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length, nose to tail tip (adult males)",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "el-adw-tl",
+              "url": "https://animaldiversity.org/accounts/Enhydra_lutris/",
+              "title": "Animal Diversity Web: Enhydra lutris",
+              "use": "counted",
+              "unit": "m",
+              "range": [
+                1.2,
+                1.5
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "sea-otter.webp",
+        "kind": "photo",
+        "credit": "Dave Bezaire & Susi Havens-Bezaire / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_Otters.jpg",
+        "width": 867,
+        "height": 576,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Enhydra lutris",
+          "url": "https://animaldiversity.org/accounts/Enhydra_lutris/"
+        },
+        {
+          "label": "Marine Mammal Commission: Southern sea otter",
+          "url": "https://www.mmc.gov/priority-topics/species-of-concern/southern-sea-otter/"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "american-alligator",
+      "scientificName": "Alligator mississippiensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "reptile",
+      "taxon": {
+        "class": "Crocodylia",
+        "family": "Alligatoridae"
+      },
+      "iucn": {
+        "category": "LC",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/46583/3009637",
+        "iucnTaxonId": "46583"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "freshwater",
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "NA"
+          ],
+          "countries": [
+            "US"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 3.658,
+          "unit": "m",
+          "mean": 3.658,
+          "confidence": "single_source",
+          "basis": "total length, nose to tail tip (adult males, size at which growth stops)",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "am-adw-tl",
+              "url": "https://animaldiversity.org/accounts/Alligator_mississippiensis/",
+              "title": "Animal Diversity Web: Alligator mississippiensis",
+              "use": "counted",
+              "unit": "cm",
+              "value": 365.8
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "american-alligator.webp",
+        "kind": "photo",
+        "credit": "Postdlf / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Alligator.jpg",
+        "width": 469,
+        "height": 626,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Alligator mississippiensis",
+          "url": "https://animaldiversity.org/accounts/Alligator_mississippiensis/"
+        },
+        {
+          "label": "Federal Register, 4 June 1987, volume 52, page 21059: reclassification of the American alligator",
+          "url": "https://www.govinfo.gov/content/pkg/FR-1987-06-04/pdf/FR-1987-06-04.pdf"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "giant-panda",
+      "scientificName": "Ailuropoda melanoleuca",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [],
+      "group": "mammal",
+      "taxon": {
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae"
+      },
+      "iucn": {
+        "category": "VU",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/712/121745669",
+        "iucnTaxonId": "712"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "AS"
+          ],
+          "countries": [
+            "CN"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 1.5,
+          "unit": "m",
+          "mean": 1.5,
+          "range": [
+            1.2,
+            1.8
+          ],
+          "confidence": "range_midpoint",
+          "basis": "body length without the tail",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "am-sdzg-hb",
+              "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/characteristics",
+              "title": "San Diego Zoo Wildlife Alliance Library: Giant panda fact sheet",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                120,
+                180
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "giant-panda.webp",
+        "kind": "photo",
+        "credit": "J. Patrick Fischer / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG",
+        "width": 1020,
+        "height": 680,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Giant panda fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/characteristics"
+        },
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Giant panda population and conservation",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/population"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
+    },
+    {
+      "slug": "nene",
+      "scientificName": "Branta sandvicensis",
+      "rank": "species",
+      "parentSpecies": null,
+      "primaryShelf": "surviving",
+      "tags": [
+        "birds"
+      ],
+      "group": "bird",
+      "taxon": {
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae"
+      },
+      "primaryShelfOverride": {
+        "reason": "Near Threatened bird kept on Surviving for its rescue story (about 30 wild birds in the 1950s); tagged birds"
+      },
+      "iucn": {
+        "category": "NT",
+        "scope": "global",
+        "verifiedVia": "gbif",
+        "checkedAt": "2026-10-20",
+        "assessmentUrl": "https://www.iucnredlist.org/species/22679929/194369606",
+        "iucnTaxonId": "22679929"
+      },
+      "flags": {},
+      "range": {
+        "realm": [
+          "terrestrial"
+        ],
+        "current": {
+          "continents": [
+            "OC"
+          ],
+          "countries": [
+            "US"
+          ]
+        }
+      },
+      "size": {
+        "length": {
+          "value": 0.595,
+          "unit": "m",
+          "mean": 0.595,
+          "range": [
+            0.53,
+            0.66
+          ],
+          "confidence": "range_midpoint",
+          "basis": "total length, nose to tail tip",
+          "approx": false,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "bs-adw-tl",
+              "url": "https://animaldiversity.org/accounts/Branta_sandvicensis/",
+              "title": "Animal Diversity Web: Branta sandvicensis",
+              "use": "counted",
+              "unit": "cm",
+              "range": [
+                53,
+                66
+              ]
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "image": {
+        "file": "nene.webp",
+        "kind": "photo",
+        "credit": "Brenda Zaun of U.S. Fish and Wildlife Service Headquarters / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Branta_sandvicensis_-Kilauea_Point_National_Wildlife_Refuge,_Hawaii,_USA-8.jpg",
+        "width": 765,
+        "height": 1020,
+        "noText": true
+      },
+      "primarySources": [
+        {
+          "label": "Animal Diversity Web: Branta sandvicensis",
+          "url": "https://animaldiversity.org/accounts/Branta_sandvicensis/"
+        },
+        {
+          "label": "Hawaiʻi Department of Land and Natural Resources: Nēnē",
+          "url": "https://dlnr.hawaii.gov/wildlife/birds/nene/"
+        },
+        {
+          "label": "Nēnē.org: Population data (Nēnē Recovery Action Group statewide count, 2025)",
+          "url": "https://nene.org/data/population"
+        }
+      ],
+      "provenance": {
+        "batch": "surviving-02",
+        "added": "2026-10-20",
+        "suppliedBy": []
+      }
     }
   ]
 }

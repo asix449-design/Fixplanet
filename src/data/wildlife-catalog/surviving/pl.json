@@ -248,6 +248,270 @@
       "image": {
         "caption": "Ilustracja Fix Planet"
       }
+    },
+    "black-footed-ferret": {
+      "commonName": "Tchórz czarnołapy",
+      "hook": "Jedyny rodzimy tchórz Ameryki Północnej, uznany kiedyś za wymarłego i uratowany od ostatnich dzikich zwierząt.",
+      "imageAlt": "Tchórz czarnołapy z ciemną maską na pysku wygląda zza suchej trawy",
+      "what": "Tchórz czarnołapy (Mustela nigripes) to smukły drapieżnik prerii Ameryki Północnej o jasnym płowym futrze, czarnej masce wokół oczu i czarnych łapach. Większość jego pożywienia stanowią pieski preriowe, a mieszka w ich norach. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Dawniej Wielkie Równiny od południowej Kanady po północny Meksyk, dziś miejsca ponownego wsiedlenia w Wyoming, Dakocie Południowej, Montanie i Arizonie.",
+      "story": "Tchórza czarnołapego uznawano za wymarłego, aż w 1981 roku pies z rancza koło Meeteetse w Wyoming przyniósł do domu martwe zwierzę. Tę ostatnią dziką kolonię dotknęły potem dżuma i nosówka, a w latach 1985 do 1987 odłowiono ocalałe tchórze, by rozpocząć hodowlę. Od tamtej pory młode tchórze wypuszcza się na wolność, dotąd około 4500.",
+      "when": "Dziś zagrożony, na wolności żyje tylko tam, gdzie go wypuszczono.",
+      "humanRole": "Zagraża mu zanikanie kolonii piesków preriowych, które dają mu pożywienie i schronienie, oraz dżuma i nosówka.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Tchórz czarnołapy (Animal Diversity Web: Mustela nigripes)",
+          "url": "https://animaldiversity.org/accounts/Mustela_nigripes/"
+        },
+        {
+          "label": "Narodowe Zoo Instytutu Smithsona: Tchórz czarnołapy (Smithsonian's National Zoo and Conservation Biology Institute: Black-footed ferret)",
+          "url": "https://nationalzoo.si.edu/animals/black-footed-ferret"
+        },
+        {
+          "label": "Zespół odbudowy populacji tchórza czarnołapego: historia ochrony (Black footed Ferret Recovery Implementation Team: Conservation history)",
+          "url": "https://www.blackfootedferret.org/conservation-history.html"
+        }
+      ]
+    },
+    "golden-lion-tamarin": {
+      "commonName": "Marmozeta lwia",
+      "hook": "Maleńka złota małpka nadmorskich lasów Brazylii, odbudowana z około dwustu zwierząt.",
+      "imageAlt": "Marmozeta lwia z lśniącą pomarańczową grzywą siedzi na gałęzi",
+      "what": "Marmozeta lwia (Leontopithecus rosalia) to mała małpa o długim, jaskrawym rudozłotym futrze i grzywie wokół pyska. Żyje w grupach rodzinnych wysoko w koronach drzew, a długimi palcami z pazurowatymi paznokciami szuka owadów w korze i liściach. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek zagrożony.",
+      "range": "Nizinne nadmorskie lasy atlantyckie w stanie Rio de Janeiro w Brazylii.",
+      "story": "Na początku lat 1970. na wolności zostało tylko około dwustu marmozet lwich. W 1972 roku Narodowe Zoo Instytutu Smithsona zebrało biologów z Europy, Ameryki i Brazylii, by je ratować, a później urodzone w ogrodach zoologicznych zwierzęta wróciły do Brazylii. Spis zakończony w 2023 roku naliczył na wolności około 4800 zwierząt, najwięcej w historii pomiarów.",
+      "when": "Dziś zagrożona, w 2003 roku przeniesiona z gatunków krytycznie zagrożonych.",
+      "humanRole": "Na skraj zagłady doprowadziły ją wycinka lasów pod trzcinę cukrową, kawę, pastwiska, wyrąb i miasta oraz odłów na sprzedaż.",
+      "sources": [
+        {
+          "label": "Zoo w Denver: Marmozeta lwia (Denver Zoo: Golden lion tamarin fact sheet)",
+          "url": "https://www.denverzoo.org/wp-content/uploads/2018/09/GLT.pdf"
+        },
+        {
+          "label": "Narodowe Zoo Instytutu Smithsona: Marmozeta lwia (Smithsonian's National Zoo and Conservation Biology Institute: Golden lion tamarin)",
+          "url": "https://nationalzoo.si.edu/animals/golden-lion-tamarin"
+        },
+        {
+          "label": "Stowarzyszenie na rzecz marmozety lwiej (Associação Mico Leão Dourado): raport roczny za 2023 rok (Golden Lion Tamarin Association (Associação Mico Leão Dourado): Annual Report 2023)",
+          "url": "https://micoleao.org.br/wp-content/uploads/2024/04/Annual-Report-2023_VFINAL_IG_ID.pdf"
+        }
+      ]
+    },
+    "scimitar-horned-oryx": {
+      "commonName": "Oryks szablorogi",
+      "hook": "Pustynna antylopa o szablastych rogach, która zniknęła z wolności i wróciła do Czadu.",
+      "imageAlt": "Biały oryks szablorogi z rudobrązową szyją i długimi rogami zagiętymi do tyłu",
+      "what": "Oryks szablorogi (Oryx dammah) to pustynna antylopa o białej sierści, rudobrązowej szyi i piersi oraz długich rogach wygiętych do tyłu jak szabla. Rogi mają zarówno samce, jak i samice. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Suche trawiaste równiny na południowym skraju Sahary, dziś znów na wolności w dużym rezerwacie w Czadzie.",
+      "story": "Nadmierne polowania, susza i utrata pastwisk na rzecz bydła wytępiły oryksa szablorogiego na wolności i przez lata przetrwał tylko w niewoli. Od 2016 roku Abu Zabi i Czad przywróciły naturze w Czadzie 285 oryksów z hodowli, a do 2023 roku dzikie stada urosły do ponad 600 zwierząt.",
+      "when": "Zagrożony od grudnia 2023 roku, gdy przeniesiono go z gatunków wymarłych na wolności.",
+      "humanRole": "Polowania, susza i bydło zjadające jego pastwiska wytępiły go na wolności.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Oryks szablorogi (Animal Diversity Web: Oryx dammah)",
+          "url": "https://animaldiversity.org/accounts/Oryx_dammah/"
+        },
+        {
+          "label": "Organizacja Ochrony Sahary: oryks szablorogi przeniesiony z wymarłych na wolności do zagrożonych (Sahara Conservation: the scimitar horned oryx downlisted from Extinct in the Wild to Endangered)",
+          "url": "https://saharaconservation.org/news/milestone-the-scimitar-horned-oryx-downlisted-from-extinct-in-the-wild-to-endangered-by-iucn/"
+        },
+        {
+          "label": "Narodowe Zoo Instytutu Smithsona: Oryks szablorogi (Smithsonian's National Zoo and Conservation Biology Institute: Scimitar oryx)",
+          "url": "https://nationalzoo.si.edu/animals/scimitar-horned-oryx"
+        }
+      ]
+    },
+    "przewalskis-horse": {
+      "commonName": "Koń Przewalskiego",
+      "hook": "Ostatni prawdziwie dziki koń, uratowany w ogrodach zoologicznych i przywrócony stepom Azji.",
+      "imageAlt": "Krępy piaskowobrązowy koń Przewalskiego z krótką, sterczącą ciemną grzywą stoi na trawie",
+      "what": "Koń Przewalskiego (Equus ferus przewalskii) to krępy dziki koń azjatyckich stepów, mniejszy od większości koni domowych, z grubą krótką szyją i krótką, sterczącą ciemną grzywą, którą co roku zrzuca. Międzynarodowa Unia Ochrony Przyrody ocenia cały gatunek konia dzikiego, do którego należy, i uznaje go za gatunek zagrożony.",
+      "range": "Stepy i półpustynie Mongolii, północnych Chin i Kazachstanu, w miejscach ponownego wsiedlenia.",
+      "story": "Konie Przewalskiego zniknęły z wolności, a w 1945 roku na świecie zostało mniej niż 20 koni zdolnych do rozrodu. Wszystkie z około 1900 żyjących dziś koni pochodzą od 14 zwierząt schwytanych w latach 1910 do 1960. Od tamtej pory stada z ogrodów zoologicznych wróciły do Mongolii, Chin i Kazachstanu.",
+      "when": "Dziś zagrożony, na wolności znów żyje tylko tam, gdzie przywrócono stada.",
+      "humanRole": "Z wolności wyparły go rywalizacja z ludźmi i ich bydłem oraz zmiany w środowisku.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Koń Przewalskiego (San Diego Zoo Wildlife Alliance Library: Przewalski's horse fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/przewalskishorse/characteristics"
+        },
+        {
+          "label": "Narodowe Zoo Instytutu Smithsona: Koń Przewalskiego (Smithsonian's National Zoo and Conservation Biology Institute: Przewalski's horse)",
+          "url": "https://nationalzoo.si.edu/animals/przewalskis-horse"
+        }
+      ]
+    },
+    "saiga": {
+      "commonName": "Suhak stepowy",
+      "hook": "Stepowa antylopa z dużym, miękkim, opadającym nosem, uratowana w Kazachstanie.",
+      "imageAlt": "Suhak stepowy z dużym opadającym nosem stoi w suchej stepowej trawie",
+      "what": "Suhak stepowy (Saiga tatarica) to niewielka antylopa suchych stepów z dużym, miękkim nosem opadającym nad pyskiem. Rogi mają tylko samce, są jasne i pierścieniowane. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek bliski zagrożenia.",
+      "range": "Suche stepy i półpustynie Azji Środkowej, głównie Kazachstan, mniejsze stada w Kałmucji w Rosji i w Mongolii.",
+      "story": "Stada suhaków gwałtownie się skurczyły i w 2005 roku w Kazachstanie zostało ich tylko około 39 000. Przez prawie dwadzieścia lat Kazachstan, sąsiednie kraje, naukowcy i organizacje ochrony przyrody zwalczali kłusownictwo, wzmacniali przestrzeganie prawa i tworzyli duże nowe obszary chronione, a stada urosły tam do ponad 1,9 miliona.",
+      "when": "Bliski zagrożenia od grudnia 2023 roku, gdy przeniesiono go z gatunków krytycznie zagrożonych.",
+      "humanRole": "Nadal zagrażają mu kłusownictwo, nielegalny handel, choroby, zmiana klimatu oraz nowe drogi, koleje i ogrodzenia.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Suhak stepowy (Animal Diversity Web: Saiga tatarica)",
+          "url": "https://animaldiversity.org/accounts/Saiga_tatarica/"
+        },
+        {
+          "label": "Towarzystwo Ochrony Dzikiej Przyrody: suhak przeniesiony z krytycznie zagrożonych do bliskich zagrożenia (Wildlife Conservation Society: Saiga antelope reclassified from Critically Endangered to Near Threatened)",
+          "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/21627/Unprecedented-Conservation-Triumph-Saiga-Antelope-Reclassified-From-Critically-Endangered-to-Near-Threatened-in-the-IUCN-Red-List-of-Threatened-Species.aspx"
+        }
+      ]
+    },
+    "alpine-ibex": {
+      "commonName": "Koziorożec alpejski",
+      "hook": "Dzika górska koza Alp, uratowana z mniej niż 100 zwierząt w jednej włoskiej dolinie.",
+      "imageAlt": "Koziorożec alpejski z długimi zakrzywionymi rogami stoi na skalistej grani o zachodzie słońca",
+      "what": "Koziorożec alpejski (Capra ibex) to krzepka dzika koza wysokich Alp o brązowej lub szarej sierści. Samce są znacznie cięższe od samic, mają brodę i długie, zakrzywione rogi, a po stromych skałach łatwo wspinają się obie płcie. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek najmniejszej troski.",
+      "range": "Strome skaliste zbocza i alpejskie łąki Alp.",
+      "story": "Polowania z bronią palną prawie wytępiły koziorożca alpejskiego, a ostatniego dzikiego koziorożca w Szwajcarii zastrzelono w 1809 roku. Pod koniec dziewiętnastego wieku mniej niż 100 zwierząt przetrwało w górach Gran Paradiso we Włoszech. W 1911 roku Szwajcaria wypuściła pierwsze pięć koziorożców, a dziś żyje ich tam około 18 000, a w całych Alpach około 40 000.",
+      "when": "Dziś najmniejszej troski, po ponad stu latach ochrony i wypuszczeń.",
+      "humanRole": "Polowania prawie go wytępiły, a wszystkie dzisiejsze koziorożce pochodzą z małej grupy, więc mają niewielką różnorodność genetyczną.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Koziorożec alpejski (Animal Diversity Web: Capra ibex)",
+          "url": "https://animaldiversity.org/accounts/Capra_ibex/"
+        },
+        {
+          "label": "Park Narodowy Gran Paradiso: koziorożec alpejski (Gran Paradiso National Park: Lo stambecco (the Alpine ibex))",
+          "url": "https://www.pngp.it/natura-e-ricerca/fauna/praterie-e-ambienti-rocciosi/lo-stambecco"
+        },
+        {
+          "label": "Kanton St. Gallen: materiały szkoleniowe o koziorożcu alpejskim (Canton of St. Gallen: Unterlagen zur Ausbildung Steinwildjagd (training notes on the Alpine ibex))",
+          "url": "https://www.sg.ch/umwelt-natur/jagd-fischerei/jagd/alte-seiten-abteilung-jagd/steinwildkurs-kursunterlagen1/_jcr_content/Par/sgch_downloadlist/DownloadListPar/sgch_download_1704448656.ocFile/Unterlagen%20zur%20Ausbildung%20Steinwildjagd.pdf"
+        }
+      ]
+    },
+    "northern-elephant-seal": {
+      "commonName": "Mirunga północna",
+      "hook": "Olbrzymia foka, na którą polowano, aż uznano ją za wymarłą, a dziś znów tłoczy się na plażach Pacyfiku.",
+      "imageAlt": "Mirungi północne leżą na piaszczystej plaży, a wśród nich podnosi się duży samiec",
+      "what": "Mirunga północna (Mirounga angustirostris) to ogromna foka północno wschodniego Pacyfiku. Dorosłe samce są kilka razy cięższe od samic i mają duży, mięsisty nos, który potrafią nadymać. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek najmniejszej troski.",
+      "range": "Wody przybrzeżne i plaże północno wschodniego Pacyfiku, rozmnaża się w Kalifornii i w Kalifornii Dolnej w Meksyku.",
+      "story": "Polowania w dziewiętnastym wieku zabiły tyle mirung północnych, że uznano je za wymarłe. Kilkaset przetrwało w Meksyku i od nich pochodzą wszystkie żyjące dziś mirungi północne. Pod ochroną stada znów urosły, a w samej Kalifornii w 2013 roku było ich około 187 000.",
+      "when": "Dziś najmniejszej troski, znów rozmnaża się na plażach Stanów Zjednoczonych i Meksyku.",
+      "humanRole": "Polowania prawie ją wytępiły, a dziś zagrażają jej sieci rybackie, w które się zaplątuje, oraz zderzenia ze statkami.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Mirunga północna (Animal Diversity Web: Mirounga angustirostris)",
+          "url": "https://animaldiversity.org/accounts/Mirounga_angustirostris/"
+        },
+        {
+          "label": "Narodowa Służba Oceaniczna i Atmosferyczna Stanów Zjednoczonych: mirunga północna (NOAA Fisheries: Northern elephant seal)",
+          "url": "https://www.fisheries.noaa.gov/species/northern-elephant-seal"
+        },
+        {
+          "label": "Narodowa Służba Oceaniczna i Atmosferyczna Stanów Zjednoczonych: raport o kalifornijskiej populacji mirungi północnej za 2021 rok (NOAA Fisheries: Northern elephant seal, California breeding stock, stock assessment report 2021)",
+          "url": "https://media.fisheries.noaa.gov/2022-08/2021-NorthernElephant-California%20Breeding%20Stock.pdf"
+        }
+      ]
+    },
+    "indian-rhinoceros": {
+      "commonName": "Nosorożec indyjski",
+      "hook": "Jednorogi olbrzym w skórze przypominającej pancerz, odbudowany z mniej niż 100 zwierząt.",
+      "imageAlt": "Nosorożec indyjski z głębokimi fałdami skóry i jednym rogiem stoi w trawie",
+      "what": "Nosorożec indyjski (Rhinoceros unicornis) to ogromny szarobrązowy nosorożec z głębokimi fałdami skóry, przez które wygląda, jakby nosił pancerz. Na pysku ma jeden róg. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek narażony.",
+      "range": "Łąki i równiny zalewowe rzek w północno wschodnich Indiach i południowym Nepalu, głównie w parkach narodowych.",
+      "story": "W ciągu ostatnich stu lat liczba nosorożców indyjskich wzrosła z mniej niż 100 do ponad 4000. W marcu 2025 roku było ich 4075, w tym 3323 w Indiach i 752 w Nepalu, czemu pomogły lepsze siedliska i korytarze ekologiczne.",
+      "when": "Dziś narażony, w parkach nadal pilnie strzeżony.",
+      "humanRole": "Polowania i kłusownictwo dla rogu oraz zamiana łąk w pola doprowadziły go kiedyś na skraj wymarcia.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Nosorożec indyjski (Animal Diversity Web: Rhinoceros unicornis)",
+          "url": "https://animaldiversity.org/accounts/Rhinoceros_unicornis/"
+        },
+        {
+          "label": "Międzynarodowa Fundacja Nosorożców: stan nosorożców w 2025 roku (International Rhino Foundation: State of the Rhino 2025)",
+          "url": "https://rhinos.org/wp-content/uploads/2025/09/State-of-the-Rhino-2025-v4.pdf"
+        }
+      ]
+    },
+    "sea-otter": {
+      "commonName": "Kałan morski",
+      "hook": "Zwierzę o najgęstszym futrze na świecie, z powodu tego futra prawie wytępione.",
+      "imageAlt": "Dwa kałany morskie unoszą się na plecach na spokojnej wodzie",
+      "what": "Kałan morski (Enhydra lutris) to duża morska wydra północnego Pacyfiku. Nie ma warstwy tłuszczu, a ciepło zapewnia mu najgęstsze futro spośród wszystkich ssaków. Je, leżąc na plecach na wodzie, i często rozbija muszle kamieniem. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek zagrożony.",
+      "range": "Płytkie wody przybrzeżne północnego Pacyfiku, od Rosji i Japonii przez Alaskę po Kanadę, z osobną grupą w środkowej Kalifornii.",
+      "story": "Zanim w połowie osiemnastego wieku zaczął się handel futrami, kałanów było około 150 000 do 300 000. Myśliwi zabili ich tak wiele, że gdy w 1911 roku traktat zakazał polowań, zostało tylko kilka tysięcy. W Kalifornii przetrwała kolonia około 50 kałanów, która do 1972 roku urosła do ponad 1000, a do 2019 roku do 2962.",
+      "when": "Dziś zagrożony, ponad sto lat po zakazie polowań.",
+      "humanRole": "Prawie wytępiły go polowania dla futra w osiemnastym i dziewiętnastym wieku.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Kałan morski (Animal Diversity Web: Enhydra lutris)",
+          "url": "https://animaldiversity.org/accounts/Enhydra_lutris/"
+        },
+        {
+          "label": "Komisja Ssaków Morskich Stanów Zjednoczonych: kałan kalifornijski (Marine Mammal Commission: Southern sea otter)",
+          "url": "https://www.mmc.gov/priority-topics/species-of-concern/southern-sea-otter/"
+        }
+      ]
+    },
+    "american-alligator": {
+      "commonName": "Aligator missisipski",
+      "hook": "Bagienny olbrzym, kiedyś uznany za zagrożonego, a dziś znów pospolity na południu Stanów Zjednoczonych.",
+      "imageAlt": "Aligator missisipski odpoczywa na skraju wody, widać jego ciemny grzbiet",
+      "what": "Aligator missisipski (Alligator mississippiensis) to duży, ciemny krokodyl bagien, rzek i jezior południowo wschodnich Stanów Zjednoczonych. Ogon stanowi połowę długości jego ciała. Międzynarodowa Unia Ochrony Przyrody uznaje go za gatunek najmniejszej troski.",
+      "range": "Słodkowodne mokradła południowo wschodnich Stanów Zjednoczonych, od Karoliny Północnej po Florydę i na zachód po środkowy Teksas.",
+      "story": "Z powodu słabo uregulowanych polowań Stany Zjednoczone w 1967 roku uznały aligatora missisipskiego za gatunek zagrożony w całym zasięgu. Pod ochroną federalną i stanową szybko się odrodził, a w 1987 roku rząd stwierdził, że biologicznie nie jest już zagrożony. Na liście pozostaje tylko dlatego, że przypomina rzadkiego krokodyla amerykańskiego, aby chronić także jego.",
+      "when": "Dziś najmniejszej troski, około dwudziestu lat po uznaniu za zagrożonego.",
+      "humanRole": "Słabo uregulowane polowania zmniejszały jego liczebność, aż w 1967 roku objęto go ochroną.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Aligator missisipski (Animal Diversity Web: Alligator mississippiensis)",
+          "url": "https://animaldiversity.org/accounts/Alligator_mississippiensis/"
+        },
+        {
+          "label": "Rejestr Federalny Stanów Zjednoczonych, 4 czerwca 1987: zmiana kategorii ochronnej aligatora missisipskiego (Federal Register, 4 June 1987, volume 52, page 21059: reclassification of the American alligator)",
+          "url": "https://www.govinfo.gov/content/pkg/FR-1987-06-04/pdf/FR-1987-06-04.pdf"
+        }
+      ]
+    },
+    "giant-panda": {
+      "commonName": "Panda wielka",
+      "hook": "Czarno biały miłośnik bambusa z Chin, w 2016 roku przeniesiony z gatunków zagrożonych.",
+      "imageAlt": "Panda wielka siedzi wśród zieleni i żuje bambus",
+      "what": "Panda wielka (Ailuropoda melanoleuca) to czarno biały niedźwiedź górskich lasów środkowych Chin, który żywi się bambusem. Ma silne szczęki i szerokie płaskie zęby do żucia twardych łodyg, a powiększona kość nadgarstka działa jak kciuk i pomaga je trzymać. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek narażony.",
+      "range": "Lasy bambusowe w górach Minshan, Qinling i Qionglai oraz sąsiednich pasmach środkowych Chin.",
+      "story": "Chiny liczą dzikie pandy mniej więcej co dziesięć lat od lat 1970. Ostatnie spisy wykazały na wolności od 1800 do 2060 pand, a wraz ze wzrostem liczebności Międzynarodowa Unia Ochrony Przyrody w 2016 roku przeniosła pandę wielką z gatunków zagrożonych do narażonych.",
+      "when": "Narażona od 2016 roku, liczba dzikich pand powoli rośnie.",
+      "humanRole": "Wycinka i rozdrobnienie lasów pod pola, drogi, zapory i miasta dzielą wiele pand na małe, odcięte od siebie grupy.",
+      "sources": [
+        {
+          "label": "Biblioteka zoo w San Diego: Panda wielka (San Diego Zoo Wildlife Alliance Library: Giant panda fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/characteristics"
+        },
+        {
+          "label": "Biblioteka zoo w San Diego: liczebność i ochrona, panda wielka (San Diego Zoo Wildlife Alliance Library: Giant panda population and conservation)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/population"
+        }
+      ]
+    },
+    "nene": {
+      "commonName": "Bernikla hawajska",
+      "hook": "Własna gęś Hawajów, odbudowana z około 30 dzikich ptaków.",
+      "imageAlt": "Bernikla hawajska z czarną głową, kremowymi policzkami i prążkowaną płową szyją stoi na trawie",
+      "what": "Bernikla hawajska (Branta sandvicensis) żyje tylko na Wyspach Hawajskich. Ma czarną twarz i ciemię, kremowe policzki i płową szyję w czarne pasemka. Długie nogi i palce tylko częściowo spięte błoną ułatwiają jej chodzenie po lawie. Międzynarodowa Unia Ochrony Przyrody uznaje ją za gatunek bliski zagrożenia.",
+      "range": "Łąki, zarośla i lawowe zbocza Wysp Hawajskich, dziś głównie na Kauaʻi, wyspie Hawaiʻi i Maui.",
+      "story": "Polowania, utrata siedlisk i sprowadzone drapieżniki, takie jak mangusty, zmniejszyły liczbę dzikich bernikli hawajskich do zaledwie 30 ptaków w latach 1950. Hodowla w niewoli, ostoje chronione przed drapieżnikami i wypuszczenia na kilku wyspach przywróciły je naturze, a spis z 2025 roku wykazał w całym stanie około 4300 ptaków.",
+      "when": "Dziś bliska zagrożenia, większość ptaków żyje na Kauaʻi.",
+      "humanRole": "Szczury, koty, psy i mangusty wciąż zabijają bernikle, a wiele ginie pod kołami samochodów.",
+      "sources": [
+        {
+          "label": "Serwis Animal Diversity Web Uniwersytetu Michigan: Bernikla hawajska (Animal Diversity Web: Branta sandvicensis)",
+          "url": "https://animaldiversity.org/accounts/Branta_sandvicensis/"
+        },
+        {
+          "label": "Departament Ziemi i Zasobów Naturalnych Hawajów: bernikla hawajska (Hawaiʻi Department of Land and Natural Resources: Nēnē)",
+          "url": "https://dlnr.hawaii.gov/wildlife/birds/nene/"
+        },
+        {
+          "label": "Serwis o berniklach hawajskich: dane o liczebności za 2025 rok (Nēnē.org: Population data (Nēnē Recovery Action Group statewide count, 2025))",
+          "url": "https://nene.org/data/population"
+        }
+      ]
     }
   }
 }

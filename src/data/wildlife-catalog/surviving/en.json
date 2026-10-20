@@ -249,6 +249,270 @@
       "image": {
         "caption": "Fix Planet illustration"
       }
+    },
+    "black-footed-ferret": {
+      "commonName": "Black-footed ferret",
+      "hook": "North America's only native ferret, once thought extinct and saved from a last few wild animals.",
+      "imageAlt": "A black-footed ferret with a dark mask peering out over dry grass",
+      "what": "The black-footed ferret (Mustela nigripes) is a slim weasel of the North American prairie with a pale buff coat, a black mask across the eyes and black feet. Prairie dogs make up most of its food, and it lives in their burrows. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Once the Great Plains from southern Canada to northern Mexico, now reintroduced colonies in Wyoming, South Dakota, Montana and Arizona.",
+      "story": "Black-footed ferrets were thought to be extinct until a ranch dog brought a dead one home near Meeteetse, Wyoming, in 1981. That last wild colony was then hit by plague and distemper, and between 1985 and 1987 the survivors were caught to start a breeding programme. Young ferrets from the programme have been released ever since, about 4,500 so far.",
+      "when": "Endangered now, living wild only where it has been released.",
+      "humanRole": "Loss of the prairie dog colonies it needs for food and shelter, and the diseases plague and distemper, threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Mustela nigripes",
+          "url": "https://animaldiversity.org/accounts/Mustela_nigripes/"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Black-footed ferret",
+          "url": "https://nationalzoo.si.edu/animals/black-footed-ferret"
+        },
+        {
+          "label": "Black footed Ferret Recovery Implementation Team: Conservation history",
+          "url": "https://www.blackfootedferret.org/conservation-history.html"
+        }
+      ]
+    },
+    "golden-lion-tamarin": {
+      "commonName": "Golden lion tamarin",
+      "hook": "A tiny golden monkey of Brazil's coastal forest, brought back from about two hundred animals.",
+      "imageAlt": "A golden lion tamarin with a shining orange mane sitting on a branch",
+      "what": "The golden lion tamarin (Leontopithecus rosalia) is a small monkey with long, bright reddish gold fur and a mane around its face. It lives in family groups high in the trees and uses long fingers with claw like nails to search bark and leaves for insects. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Lowland Atlantic coastal forest in the state of Rio de Janeiro, Brazil.",
+      "story": "By the early 1970s only about two hundred golden lion tamarins were left in the wild. In 1972 the Smithsonian's National Zoo brought biologists from Europe, America and Brazil together to save them, and zoo bred tamarins were later returned to Brazil. A census finished in 2023 counted about 4,800 in the wild, the most ever recorded.",
+      "when": "Endangered now, after being moved up from Critically Endangered in 2003.",
+      "humanRole": "Forest clearing for sugar cane, coffee, cattle, logging and towns, and capture for the pet trade, pushed it to the brink.",
+      "sources": [
+        {
+          "label": "Denver Zoo: Golden lion tamarin fact sheet",
+          "url": "https://www.denverzoo.org/wp-content/uploads/2018/09/GLT.pdf"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Golden lion tamarin",
+          "url": "https://nationalzoo.si.edu/animals/golden-lion-tamarin"
+        },
+        {
+          "label": "Golden Lion Tamarin Association (Associação Mico Leão Dourado): Annual Report 2023",
+          "url": "https://micoleao.org.br/wp-content/uploads/2024/04/Annual-Report-2023_VFINAL_IG_ID.pdf"
+        }
+      ]
+    },
+    "scimitar-horned-oryx": {
+      "commonName": "Scimitar oryx",
+      "hook": "A desert antelope with sabre curved horns, once gone from the wild and now back in Chad.",
+      "imageAlt": "A white scimitar oryx with a reddish brown neck and long backward curving horns",
+      "what": "The scimitar oryx (Oryx dammah) is a desert antelope with a white coat, a reddish brown neck and chest and long horns that curve back like a sabre. Both males and females carry horns. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Dry grassland on the southern edge of the Sahara, today wild again in a large reserve in Chad.",
+      "story": "Overhunting, drought and the loss of grazing to livestock wiped the scimitar oryx out of the wild, and for years it survived only in captivity. Since 2016 Abu Dhabi and Chad have returned captive bred oryx to the wild in Chad, 285 animals in all, and by 2023 the wild herds had grown to more than 600.",
+      "when": "Endangered since December 2023, when it was moved from Extinct in the Wild to Endangered.",
+      "humanRole": "Hunting, drought and livestock that ate its grazing drove it out of the wild.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Oryx dammah",
+          "url": "https://animaldiversity.org/accounts/Oryx_dammah/"
+        },
+        {
+          "label": "Sahara Conservation: the scimitar horned oryx downlisted from Extinct in the Wild to Endangered",
+          "url": "https://saharaconservation.org/news/milestone-the-scimitar-horned-oryx-downlisted-from-extinct-in-the-wild-to-endangered-by-iucn/"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Scimitar oryx",
+          "url": "https://nationalzoo.si.edu/animals/scimitar-horned-oryx"
+        }
+      ]
+    },
+    "przewalskis-horse": {
+      "commonName": "Przewalski's horse",
+      "hook": "The last truly wild horse, saved in zoos and returned to the steppes of Asia.",
+      "imageAlt": "A stocky sandy brown Przewalski's horse with a short upright dark mane standing on grass",
+      "what": "Przewalski's horse (Equus ferus przewalskii) is a stocky wild horse of the Asian steppe, smaller than most domestic horses, with a thick short neck and a short, upright dark mane that it sheds every year. The International Union for Conservation of Nature assesses the whole wild horse species, to which it belongs, and lists it as Endangered.",
+      "range": "Grassland and semi desert steppe of Mongolia, northern China and Kazakhstan, at reintroduction sites.",
+      "story": "Przewalski's horses vanished from the wild, and by 1945 fewer than 20 breeding horses were left in the world. Every one of the roughly 1,900 alive today descends from 14 horses caught between 1910 and 1960. Zoo bred herds have since been returned to Mongolia, China and Kazakhstan.",
+      "when": "Endangered now, wild again only where herds were returned.",
+      "humanRole": "Competition with people and their livestock, and changes in its environment, pushed it out of the wild.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Przewalski's horse fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/przewalskishorse/characteristics"
+        },
+        {
+          "label": "Smithsonian's National Zoo and Conservation Biology Institute: Przewalski's horse",
+          "url": "https://nationalzoo.si.edu/animals/przewalskis-horse"
+        }
+      ]
+    },
+    "saiga": {
+      "commonName": "Saiga",
+      "hook": "A steppe antelope with a big soft drooping nose, brought back in Kazakhstan.",
+      "imageAlt": "A saiga antelope with a large drooping nose standing in dry steppe grass",
+      "what": "The saiga (Saiga tatarica) is a small antelope of the dry steppe with a large, soft nose that droops over its mouth. Only males carry horns, which are pale and ringed. The International Union for Conservation of Nature lists it as Near Threatened.",
+      "range": "Dry steppe and semi desert of Central Asia, mainly Kazakhstan, with smaller herds in Kalmykia in Russia and in Mongolia.",
+      "story": "Saiga herds crashed, and in 2005 only about 39,000 were left in Kazakhstan. Nearly two decades of work by Kazakhstan, its neighbours, scientists and conservation groups followed, with patrols against poaching, stronger law enforcement and large new protected areas, and the herds there grew to more than 1.9 million.",
+      "when": "Near Threatened since December 2023, when it was moved up from Critically Endangered.",
+      "humanRole": "Poaching, illegal trade, disease, climate change and new roads, railways and fences still threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Saiga tatarica",
+          "url": "https://animaldiversity.org/accounts/Saiga_tatarica/"
+        },
+        {
+          "label": "Wildlife Conservation Society: Saiga antelope reclassified from Critically Endangered to Near Threatened",
+          "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/21627/Unprecedented-Conservation-Triumph-Saiga-Antelope-Reclassified-From-Critically-Endangered-to-Near-Threatened-in-the-IUCN-Red-List-of-Threatened-Species.aspx"
+        }
+      ]
+    },
+    "alpine-ibex": {
+      "commonName": "Alpine ibex",
+      "hook": "A wild mountain goat of the Alps, saved from fewer than 100 animals in one Italian valley.",
+      "imageAlt": "An Alpine ibex with long curved horns standing on a rocky ridge at sunset",
+      "what": "The Alpine ibex (Capra ibex) is a sturdy wild goat of the high Alps with a brown to grey coat. Males are much heavier than females, grow a beard and carry long, curved horns, and both sexes climb steep rock with ease. The International Union for Conservation of Nature lists it as Least Concern.",
+      "range": "Steep rocky slopes and alpine meadows of the Alps.",
+      "story": "Hunting with firearms nearly wiped out the Alpine ibex, and the last wild ibex in Switzerland was shot in 1809. Fewer than 100 survived in the Gran Paradiso mountains in Italy at the end of the nineteenth century. Switzerland released its first five ibex in 1911, and today about 18,000 live there and about 40,000 across the Alps.",
+      "when": "Least Concern now, after more than a century of protection and releases.",
+      "humanRole": "Hunting nearly wiped it out, and all of today's ibex come from a small group, so they carry little genetic variety.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Capra ibex",
+          "url": "https://animaldiversity.org/accounts/Capra_ibex/"
+        },
+        {
+          "label": "Gran Paradiso National Park: Lo stambecco (the Alpine ibex)",
+          "url": "https://www.pngp.it/natura-e-ricerca/fauna/praterie-e-ambienti-rocciosi/lo-stambecco"
+        },
+        {
+          "label": "Canton of St. Gallen: Unterlagen zur Ausbildung Steinwildjagd (training notes on the Alpine ibex)",
+          "url": "https://www.sg.ch/umwelt-natur/jagd-fischerei/jagd/alte-seiten-abteilung-jagd/steinwildkurs-kursunterlagen1/_jcr_content/Par/sgch_downloadlist/DownloadListPar/sgch_download_1704448656.ocFile/Unterlagen%20zur%20Ausbildung%20Steinwildjagd.pdf"
+        }
+      ]
+    },
+    "northern-elephant-seal": {
+      "commonName": "Northern elephant seal",
+      "hook": "A giant seal hunted until it was thought extinct, now crowding Pacific beaches again.",
+      "imageAlt": "Northern elephant seals lying on a sandy beach with a big male rearing up among them",
+      "what": "The northern elephant seal (Mirounga angustirostris) is a huge seal of the eastern North Pacific. Adult males are several times heavier than females and have a large, fleshy nose that they can inflate. The International Union for Conservation of Nature lists it as Least Concern.",
+      "range": "Coastal waters and beaches of the eastern North Pacific, breeding in California and in Baja California, Mexico.",
+      "story": "Commercial sealing in the nineteenth century killed so many northern elephant seals that they were thought to be extinct. A few hundred survived in Mexico, and every northern elephant seal alive today descends from them. Under protection the herds grew again, and the California population alone was about 187,000 in 2013.",
+      "when": "Least Concern now, breeding again on beaches in the United States and Mexico.",
+      "humanRole": "Commercial sealing nearly wiped it out, and today entanglement in fishing gear and collisions with boats threaten it.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Mirounga angustirostris",
+          "url": "https://animaldiversity.org/accounts/Mirounga_angustirostris/"
+        },
+        {
+          "label": "NOAA Fisheries: Northern elephant seal",
+          "url": "https://www.fisheries.noaa.gov/species/northern-elephant-seal"
+        },
+        {
+          "label": "NOAA Fisheries: Northern elephant seal, California breeding stock, stock assessment report 2021",
+          "url": "https://media.fisheries.noaa.gov/2022-08/2021-NorthernElephant-California%20Breeding%20Stock.pdf"
+        }
+      ]
+    },
+    "indian-rhinoceros": {
+      "commonName": "Indian rhinoceros",
+      "hook": "A one horned giant in armour like skin, brought back from fewer than 100 animals.",
+      "imageAlt": "An Indian rhinoceros with deep skin folds and a single horn standing in grass",
+      "what": "The Indian rhinoceros (Rhinoceros unicornis), also called the greater one horned rhinoceros, is a huge grey brown rhino with deep folds of skin that make it look as if it wears armour. It has a single horn on its snout. The International Union for Conservation of Nature lists it as Vulnerable.",
+      "range": "Grasslands and river floodplains of northeastern India and southern Nepal, mostly inside national parks.",
+      "story": "In the past hundred years the Indian rhinoceros has recovered from fewer than 100 animals to more than 4,000. In March 2025 there were 4,075, with 3,323 in India and 752 in Nepal, helped by better habitat and wildlife corridors.",
+      "when": "Vulnerable now, and still guarded closely in its parks.",
+      "humanRole": "Hunting and poaching for its horn, and the loss of its grassland to farms, once brought it close to extinction.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Rhinoceros unicornis",
+          "url": "https://animaldiversity.org/accounts/Rhinoceros_unicornis/"
+        },
+        {
+          "label": "International Rhino Foundation: State of the Rhino 2025",
+          "url": "https://rhinos.org/wp-content/uploads/2025/09/State-of-the-Rhino-2025-v4.pdf"
+        }
+      ]
+    },
+    "sea-otter": {
+      "commonName": "Sea otter",
+      "hook": "The otter with the thickest fur of any animal, hunted almost to the end for it.",
+      "imageAlt": "Two sea otters floating on their backs in calm water",
+      "what": "The sea otter (Enhydra lutris) is a large marine otter of the North Pacific. It has no blubber and keeps warm with the densest fur of any mammal. It floats on its back to eat and often cracks shellfish open with a stone. The International Union for Conservation of Nature lists it as Endangered.",
+      "range": "Shallow coastal waters of the North Pacific, from Russia and Japan through Alaska to Canada, with a separate group in central California.",
+      "story": "Before the fur trade began in the middle of the eighteenth century, there were about 150,000 to 300,000 sea otters. Hunters killed so many that only a few thousand were left when a treaty banned the hunt in 1911. In California a colony of about 50 survived, and it had grown to more than 1,000 by 1972 and to 2,962 by 2019.",
+      "when": "Endangered now, more than a century after the hunt was banned.",
+      "humanRole": "Hunting for its fur in the eighteenth and nineteenth centuries nearly wiped it out.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Enhydra lutris",
+          "url": "https://animaldiversity.org/accounts/Enhydra_lutris/"
+        },
+        {
+          "label": "Marine Mammal Commission: Southern sea otter",
+          "url": "https://www.mmc.gov/priority-topics/species-of-concern/southern-sea-otter/"
+        }
+      ]
+    },
+    "american-alligator": {
+      "commonName": "American alligator",
+      "hook": "A swamp giant once listed as endangered, now common again across the American South.",
+      "imageAlt": "An American alligator resting at the edge of the water with its dark back showing",
+      "what": "The American alligator (Alligator mississippiensis) is a large, dark crocodilian of the swamps, rivers and lakes of the southeastern United States. Its tail makes up half of its length. The International Union for Conservation of Nature lists it as Least Concern.",
+      "range": "Freshwater wetlands of the southeastern United States, from North Carolina to Florida and west to central Texas.",
+      "story": "Poorly regulated hunting led the United States to list the American alligator as endangered across its whole range in 1967. Under federal and state protection it recovered quickly, and in 1987 the government found it was no longer biologically endangered or threatened. It stays on the list only because it looks like the rare American crocodile, so that the crocodile is protected too.",
+      "when": "Least Concern now, about twenty years after it was listed as endangered.",
+      "humanRole": "Poorly regulated hunting pushed it down until protection began in 1967.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Alligator mississippiensis",
+          "url": "https://animaldiversity.org/accounts/Alligator_mississippiensis/"
+        },
+        {
+          "label": "Federal Register, 4 June 1987, volume 52, page 21059: reclassification of the American alligator",
+          "url": "https://www.govinfo.gov/content/pkg/FR-1987-06-04/pdf/FR-1987-06-04.pdf"
+        }
+      ]
+    },
+    "giant-panda": {
+      "commonName": "Giant panda",
+      "hook": "China's black and white bamboo eater, moved out of the Endangered category in 2016.",
+      "imageAlt": "A giant panda sitting among green plants and chewing on bamboo",
+      "what": "The giant panda (Ailuropoda melanoleuca) is a black and white bear of the mountain forests of central China that lives on bamboo. It has strong jaws and broad flat teeth for chewing tough stems, and an enlarged wrist bone works like a thumb to hold them. The International Union for Conservation of Nature lists it as Vulnerable.",
+      "range": "Bamboo forests in the Minshan, Qinling and Qionglai mountains and nearby ranges of central China.",
+      "story": "China has surveyed its wild pandas about every ten years since the 1970s. The latest surveys found about 1,800 to 2,060 in the wild, and as the numbers grew the International Union for Conservation of Nature moved the giant panda from Endangered to Vulnerable in 2016.",
+      "when": "Vulnerable since 2016, with wild numbers slowly rising.",
+      "humanRole": "Loss and breakup of its forests by farms, roads, dams and towns leave many pandas in small groups cut off from each other.",
+      "sources": [
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Giant panda fact sheet",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/characteristics"
+        },
+        {
+          "label": "San Diego Zoo Wildlife Alliance Library: Giant panda population and conservation",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/population"
+        }
+      ]
+    },
+    "nene": {
+      "commonName": "Nēnē",
+      "hook": "Hawaiʻi's own goose, brought back from about 30 wild birds.",
+      "imageAlt": "A nēnē goose with a black head, cream cheeks and a streaked buff neck standing on grass",
+      "what": "The nēnē (Branta sandvicensis), or Hawaiian goose, lives only in the Hawaiian Islands. It has a black face and crown, cream cheeks and a buff neck with black streaks. Its long legs and only partly webbed toes suit walking on lava. The International Union for Conservation of Nature lists it as Near Threatened.",
+      "range": "Grassland, shrubland and lava slopes of the Hawaiian Islands, today mostly on Kauaʻi, Hawaiʻi Island and Maui.",
+      "story": "Hunting, the loss of its habitat and introduced predators such as mongooses cut the nēnē down to as few as 30 wild birds by the 1950s. Captive breeding, sanctuaries that keep predators out and releases on several islands brought it back, and the 2025 statewide count found about 4,300 birds.",
+      "when": "Near Threatened now, with most birds on Kauaʻi.",
+      "humanRole": "Rats, cats, dogs and mongooses still kill nēnē, and many are hit by cars.",
+      "sources": [
+        {
+          "label": "Animal Diversity Web: Branta sandvicensis",
+          "url": "https://animaldiversity.org/accounts/Branta_sandvicensis/"
+        },
+        {
+          "label": "Hawaiʻi Department of Land and Natural Resources: Nēnē",
+          "url": "https://dlnr.hawaii.gov/wildlife/birds/nene/"
+        },
+        {
+          "label": "Nēnē.org: Population data (Nēnē Recovery Action Group statewide count, 2025)",
+          "url": "https://nene.org/data/population"
+        }
+      ]
     }
   }
 }

@@ -248,6 +248,270 @@
       "image": {
         "caption": "Fix Planet ilustrācija"
       }
+    },
+    "black-footed-ferret": {
+      "commonName": "Melnkāju sesks",
+      "hook": "Vienīgais Ziemeļamerikas vietējais sesks, ko reiz uzskatīja par izmirušu un izglāba no pēdējiem savvaļas dzīvniekiem.",
+      "imageAlt": "Melnkāju sesks ar tumšu masku uz purna lūkojas pāri sausai zālei",
+      "what": "Melnkāju sesks (Mustela nigripes) ir slaids Ziemeļamerikas prēriju plēsējs ar gaiši dzeltenbrūnu kažoku, melnu masku ap acīm un melnām kājām. Lielāko daļu tā barības veido prēriju sunīši, un tas dzīvo to alās. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Agrāk Lielie līdzenumi no Kanādas dienvidiem līdz Meksikas ziemeļiem, tagad atkārtotas izlaišanas vietas Vaiomingā, Dienviddakotā, Montānā un Arizonā.",
+      "story": "Melnkāju seskus uzskatīja par izmirušiem, līdz 1981. gadā rančo suns pie Mītītsī Vaiomingā atnesa mājās beigtu dzīvnieku. Šo pēdējo savvaļas koloniju pēc tam skāra mēris un suņu mēris, un no 1985. līdz 1987. gadam izdzīvojušos seskus noķēra, lai sāktu audzēšanu. Kopš tā laika jaunos seskus izlaiž savvaļā, līdz šim apmēram 4500.",
+      "when": "Tagad stipri apdraudēts, savvaļā dzīvo tikai tur, kur to izlaida.",
+      "humanRole": "To apdraud prēriju sunīšu koloniju izzušana, kas tam dod barību un patvērumu, kā arī mēris un suņu mēris.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Melnkāju sesks (Animal Diversity Web: Mustela nigripes)",
+          "url": "https://animaldiversity.org/accounts/Mustela_nigripes/"
+        },
+        {
+          "label": "Smitsona institūta Nacionālais zoodārzs: Melnkāju sesks (Smithsonian's National Zoo and Conservation Biology Institute: Black-footed ferret)",
+          "url": "https://nationalzoo.si.edu/animals/black-footed-ferret"
+        },
+        {
+          "label": "Melnkāju seska atjaunošanas grupa: aizsardzības vēsture (Black footed Ferret Recovery Implementation Team: Conservation history)",
+          "url": "https://www.blackfootedferret.org/conservation-history.html"
+        }
+      ]
+    },
+    "golden-lion-tamarin": {
+      "commonName": "Zeltainais lauvpērtiķis",
+      "hook": "Sīks zeltains pērtiķis no Brazīlijas piekrastes mežiem, atjaunots no apmēram divsimt dzīvniekiem.",
+      "imageAlt": "Zeltainais lauvpērtiķis ar mirdzošām oranžām krēpēm sēž uz zara",
+      "what": "Zeltainais lauvpērtiķis (Leontopithecus rosalia) ir mazs pērtiķis ar garu, spilgti sarkanīgi zeltainu kažoku un krēpēm ap seju. Tas dzīvo ģimenes grupās augstu kokos un ar gariem pirkstiem ar nagiem līdzīgiem nagiem meklē kukaiņus mizā un lapās. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Atlantijas piekrastes zemieņu meži Riodežaneiro štatā Brazīlijā.",
+      "story": "Līdz 1970. gadu sākumam savvaļā bija palikuši tikai apmēram divsimt zeltaino lauvpērtiķu. 1972. gadā Smitsona institūta Nacionālais zoodārzs sapulcēja biologus no Eiropas, Amerikas un Brazīlijas, lai tos glābtu, un vēlāk zoodārzos dzimušos dzīvniekus atgrieza Brazīlijā. 2023. gadā pabeigtajā uzskaitē savvaļā saskaitīja apmēram 4800 dzīvnieku, vairāk nekā jebkad agrāk.",
+      "when": "Tagad stipri apdraudēts, 2003. gadā pārcelts no kritiski apdraudēto sugu kategorijas.",
+      "humanRole": "Līdz iznīcības robežai to noveda mežu izciršana cukurniedru, kafijas, ganību, mežizstrādes un pilsētu dēļ, kā arī ķeršana pārdošanai.",
+      "sources": [
+        {
+          "label": "Denveras zoodārzs: Zeltainais lauvpērtiķis (Denver Zoo: Golden lion tamarin fact sheet)",
+          "url": "https://www.denverzoo.org/wp-content/uploads/2018/09/GLT.pdf"
+        },
+        {
+          "label": "Smitsona institūta Nacionālais zoodārzs: Zeltainais lauvpērtiķis (Smithsonian's National Zoo and Conservation Biology Institute: Golden lion tamarin)",
+          "url": "https://nationalzoo.si.edu/animals/golden-lion-tamarin"
+        },
+        {
+          "label": "Zeltainā lauvpērtiķa asociācija (Associação Mico Leão Dourado): 2023. gada pārskats (Golden Lion Tamarin Association (Associação Mico Leão Dourado): Annual Report 2023)",
+          "url": "https://micoleao.org.br/wp-content/uploads/2024/04/Annual-Report-2023_VFINAL_IG_ID.pdf"
+        }
+      ]
+    },
+    "scimitar-horned-oryx": {
+      "commonName": "Oryx dammah",
+      "hook": "Tuksneša antilope ar zobenveida ragiem, kas izzuda savvaļā un atgriezās Čadā.",
+      "imageAlt": "Balta antilope ar sarkanbrūnu kaklu un gariem atpakaļ izliektiem ragiem",
+      "what": "Šī antilope (Oryx dammah) ir tuksneša antilope ar baltu spalvu, sarkanbrūnu kaklu un krūtīm un gariem ragiem, kas izliekti atpakaļ kā zobens. Ragi ir gan tēviņiem, gan mātītēm. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Sausi zālāji Sahāras dienvidu malā, tagad atkal savvaļā lielā rezervātā Čadā.",
+      "story": "Pārmērīgas medības, sausums un mājlopi, kas aizņēma ganības, iznīcināja šo antilopi savvaļā, un gadiem ilgi tā izdzīvoja tikai nebrīvē. Kopš 2016. gada Abū Dabī un Čada Čadas dabā atgrieza 285 nebrīvē audzētas antilopes, un līdz 2023. gadam savvaļas ganāmpulki pieauga līdz vairāk nekā 600 dzīvniekiem.",
+      "when": "Stipri apdraudēta kopš 2023. gada decembra, kad to pārcēla no savvaļā izmirušo sugu kategorijas.",
+      "humanRole": "Medības, sausums un mājlopi, kas noēda tās ganības, to iznīcināja savvaļā.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Oryx dammah (Animal Diversity Web: Oryx dammah)",
+          "url": "https://animaldiversity.org/accounts/Oryx_dammah/"
+        },
+        {
+          "label": "Sahāras aizsardzības organizācija: Oryx dammah pārcelts no savvaļā izmirušajām uz stipri apdraudētajām sugām (Sahara Conservation: the scimitar horned oryx downlisted from Extinct in the Wild to Endangered)",
+          "url": "https://saharaconservation.org/news/milestone-the-scimitar-horned-oryx-downlisted-from-extinct-in-the-wild-to-endangered-by-iucn/"
+        },
+        {
+          "label": "Smitsona institūta Nacionālais zoodārzs: Oryx dammah (Smithsonian's National Zoo and Conservation Biology Institute: Scimitar oryx)",
+          "url": "https://nationalzoo.si.edu/animals/scimitar-horned-oryx"
+        }
+      ]
+    },
+    "przewalskis-horse": {
+      "commonName": "Prževaļska zirgs",
+      "hook": "Pēdējais patiesi savvaļas zirgs, izglābts zoodārzos un atgriezts Āzijas stepēs.",
+      "imageAlt": "Drukns smilšu brūns Prževaļska zirgs ar īsām, stāvām tumšām krēpēm stāv zālē",
+      "what": "Prževaļska zirgs (Equus ferus przewalskii) ir drukns Āzijas stepju savvaļas zirgs, mazāks par vairumu mājas zirgu, ar resnu, īsu kaklu un īsām, stāvām tumšām krēpēm, kuras tas katru gadu nomet. Starptautiskā dabas aizsardzības savienība vērtē visu savvaļas zirga sugu, pie kuras tas pieder, un to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Mongolijas, Ķīnas ziemeļu daļas un Kazahstānas stepes un pustuksneši, atkārtotas izlaišanas vietās.",
+      "story": "Prževaļska zirgi savvaļā izzuda, un 1945. gadā pasaulē bija palikuši mazāk nekā 20 vairoties spējīgi zirgi. Visi apmēram 1900 šodien dzīvie zirgi cēlušies no 14 dzīvniekiem, kas noķerti no 1910. līdz 1960. gadam. Kopš tā laika zoodārzu ganāmpulki atgriezti Mongolijā, Ķīnā un Kazahstānā.",
+      "when": "Tagad stipri apdraudēts, savvaļā atkal dzīvo tikai tur, kur atgriezti ganāmpulki.",
+      "humanRole": "No savvaļas to izspieda sāncensība ar cilvēkiem un viņu lopiem un pārmaiņas vidē.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Prževaļska zirgs (San Diego Zoo Wildlife Alliance Library: Przewalski's horse fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/przewalskishorse/characteristics"
+        },
+        {
+          "label": "Smitsona institūta Nacionālais zoodārzs: Prževaļska zirgs (Smithsonian's National Zoo and Conservation Biology Institute: Przewalski's horse)",
+          "url": "https://nationalzoo.si.edu/animals/przewalskis-horse"
+        }
+      ]
+    },
+    "saiga": {
+      "commonName": "Saiga",
+      "hook": "Stepju antilope ar lielu, mīkstu, nokarenu degunu, izglābta Kazahstānā.",
+      "imageAlt": "Saiga ar lielu nokarenu degunu stāv sausā stepes zālē",
+      "what": "Saiga (Saiga tatarica) ir neliela sauso stepju antilope ar lielu, mīkstu degunu, kas nokarājas pār muti. Ragi ir tikai tēviņiem, tie ir gaiši un gredzenoti. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «gandrīz apdraudēta suga».",
+      "range": "Centrālāzijas sausās stepes un pustuksneši, galvenokārt Kazahstāna, mazāki ganāmpulki Kalmikijā Krievijā un Mongolijā.",
+      "story": "Saigu ganāmpulki strauji saruka, un 2005. gadā Kazahstānā bija palikušas tikai apmēram 39 000. Gandrīz divdesmit gadus Kazahstāna, kaimiņvalstis, zinātnieki un dabas aizsardzības organizācijas cīnījās pret malumedniecību, stiprināja likumu ievērošanu un veidoja lielas jaunas aizsargājamās teritorijas, un ganāmpulki tur pieauga līdz vairāk nekā 1,9 miljoniem.",
+      "when": "Gandrīz apdraudēta kopš 2023. gada decembra, kad to pārcēla no kritiski apdraudēto sugu kategorijas.",
+      "humanRole": "To joprojām apdraud malumedniecība, nelegāla tirdzniecība, slimības, klimata pārmaiņas un jauni ceļi, dzelzceļi un žogi.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Saiga (Animal Diversity Web: Saiga tatarica)",
+          "url": "https://animaldiversity.org/accounts/Saiga_tatarica/"
+        },
+        {
+          "label": "Savvaļas dzīvnieku aizsardzības biedrība: saigu pārceļ no kritiski apdraudētajām uz gandrīz apdraudētajām sugām (Wildlife Conservation Society: Saiga antelope reclassified from Critically Endangered to Near Threatened)",
+          "url": "https://newsroom.wcs.org/News-Releases/articleType/ArticleView/articleId/21627/Unprecedented-Conservation-Triumph-Saiga-Antelope-Reclassified-From-Critically-Endangered-to-Near-Threatened-in-the-IUCN-Red-List-of-Threatened-Species.aspx"
+        }
+      ]
+    },
+    "alpine-ibex": {
+      "commonName": "Alpu kalnu kaza",
+      "hook": "Alpu savvaļas kalnu kaza, izglābta no mazāk nekā 100 dzīvniekiem vienā Itālijas ielejā.",
+      "imageAlt": "Alpu kalnu kaza ar gariem, izliektiem ragiem stāv uz klinšaini kores saulrietā",
+      "what": "Alpu kalnu kaza (Capra ibex) ir spēcīga augsto Alpu savvaļas kaza ar brūnu vai pelēku spalvu. Tēviņi ir daudz smagāki par mātītēm, tiem ir bārda un gari, izliekti ragi, un pa stāvām klintīm viegli kāpj abi dzimumi. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «nav apdraudēta suga».",
+      "range": "Alpu stāvas klinšainas nogāzes un Alpu pļavas.",
+      "story": "Medības ar šaujamieročiem gandrīz iznīcināja Alpu kalnu kazas, un pēdējo savvaļas kazu Šveicē nošāva 1809. gadā. Deviņpadsmitā gadsimta beigās mazāk nekā 100 dzīvnieku izdzīvoja Gran Paradiso kalnos Itālijā. 1911. gadā Šveice izlaida pirmās piecas kazas, un tagad tur dzīvo apmēram 18 000, bet visās Alpās apmēram 40 000.",
+      "when": "Tagad nav apdraudēta, pēc vairāk nekā gadsimta aizsardzības un izlaišanas.",
+      "humanRole": "Medības to gandrīz iznīcināja, un visas mūsdienu kazas cēlušās no nelielas grupas, tāpēc to ģenētiskā daudzveidība ir maza.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Alpu kalnu kaza (Animal Diversity Web: Capra ibex)",
+          "url": "https://animaldiversity.org/accounts/Capra_ibex/"
+        },
+        {
+          "label": "Gran Paradiso nacionālais parks: Alpu kalnu kaza (Gran Paradiso National Park: Lo stambecco (the Alpine ibex))",
+          "url": "https://www.pngp.it/natura-e-ricerca/fauna/praterie-e-ambienti-rocciosi/lo-stambecco"
+        },
+        {
+          "label": "Sanktgallenes kantons: mācību materiāli par Alpu kalnu kazu (Canton of St. Gallen: Unterlagen zur Ausbildung Steinwildjagd (training notes on the Alpine ibex))",
+          "url": "https://www.sg.ch/umwelt-natur/jagd-fischerei/jagd/alte-seiten-abteilung-jagd/steinwildkurs-kursunterlagen1/_jcr_content/Par/sgch_downloadlist/DownloadListPar/sgch_download_1704448656.ocFile/Unterlagen%20zur%20Ausbildung%20Steinwildjagd.pdf"
+        }
+      ]
+    },
+    "northern-elephant-seal": {
+      "commonName": "Ziemeļu ziloņronis",
+      "hook": "Milzīgs ronis, ko medīja, līdz to uzskatīja par izmirušu, bet tagad tas atkal pārpilda Klusā okeāna pludmales.",
+      "imageAlt": "Ziemeļu ziloņroņi guļ smilšainā pludmalē, un starp tiem paceļas liels tēviņš",
+      "what": "Ziemeļu ziloņronis (Mirounga angustirostris) ir milzīgs Klusā okeāna ziemeļaustrumu daļas ronis. Pieaugušie tēviņi ir vairākas reizes smagāki par mātītēm, un tiem ir liels, gaļīgs deguns, ko tie spēj piepūst. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «nav apdraudēta suga».",
+      "range": "Klusā okeāna ziemeļaustrumu daļas piekrastes ūdeņi un pludmales, vairojas Kalifornijā un Lejaskalifornijā Meksikā.",
+      "story": "Roņu medības deviņpadsmitajā gadsimtā nogalināja tik daudz ziemeļu ziloņroņu, ka tos uzskatīja par izmirušiem. Daži simti izdzīvoja Meksikā, un no tiem cēlušies visi šodien dzīvie ziemeļu ziloņroņi. Aizsardzībā bari atkal pieauga, un tikai Kalifornijā vien 2013. gadā to bija apmēram 187 000.",
+      "when": "Tagad nav apdraudēts, atkal vairojas pludmalēs Amerikas Savienotajās Valstīs un Meksikā.",
+      "humanRole": "Medības to gandrīz iznīcināja, un tagad to apdraud sapīšanās zvejas rīkos un sadursmes ar kuģiem.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Ziemeļu ziloņronis (Animal Diversity Web: Mirounga angustirostris)",
+          "url": "https://animaldiversity.org/accounts/Mirounga_angustirostris/"
+        },
+        {
+          "label": "Amerikas Savienoto Valstu Nacionālā okeāna un atmosfēras pārvalde: Ziemeļu ziloņronis (NOAA Fisheries: Northern elephant seal)",
+          "url": "https://www.fisheries.noaa.gov/species/northern-elephant-seal"
+        },
+        {
+          "label": "Amerikas Savienoto Valstu Nacionālā okeāna un atmosfēras pārvalde: ziņojums par ziemeļu ziloņroņa Kalifornijas populāciju, 2021 (NOAA Fisheries: Northern elephant seal, California breeding stock, stock assessment report 2021)",
+          "url": "https://media.fisheries.noaa.gov/2022-08/2021-NorthernElephant-California%20Breeding%20Stock.pdf"
+        }
+      ]
+    },
+    "indian-rhinoceros": {
+      "commonName": "Indijas degunradzis",
+      "hook": "Vienradzis milzis ar bruņām līdzīgu ādu, atjaunots no mazāk nekā 100 dzīvniekiem.",
+      "imageAlt": "Indijas degunradzis ar dziļām ādas krokām un vienu ragu stāv zālē",
+      "what": "Indijas degunradzis (Rhinoceros unicornis) ir milzīgs pelēkbrūns degunradzis ar dziļām ādas krokām, kuru dēļ tas izskatās kā bruņās. Uz purna tam ir viens rags. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «jutīga suga».",
+      "range": "Indijas ziemeļaustrumu un Nepālas dienvidu zālāji un upju palienes, galvenokārt nacionālajos parkos.",
+      "story": "Pēdējo simt gadu laikā Indijas degunradžu skaits pieaudzis no mazāk nekā 100 līdz vairāk nekā 4000. 2025. gada martā to bija 4075, no tiem 3323 Indijā un 752 Nepālā, un to veicināja labākas dzīvotnes un ekoloģiskie koridori.",
+      "when": "Tagad jutīga suga, parkos joprojām rūpīgi apsargāts.",
+      "humanRole": "Medības un malumedniecība raga dēļ, kā arī zālāju pārvēršana laukos to reiz noveda līdz izmiršanas robežai.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Indijas degunradzis (Animal Diversity Web: Rhinoceros unicornis)",
+          "url": "https://animaldiversity.org/accounts/Rhinoceros_unicornis/"
+        },
+        {
+          "label": "Starptautiskais degunradžu fonds: degunradžu stāvoklis 2025. gadā (International Rhino Foundation: State of the Rhino 2025)",
+          "url": "https://rhinos.org/wp-content/uploads/2025/09/State-of-the-Rhino-2025-v4.pdf"
+        }
+      ]
+    },
+    "sea-otter": {
+      "commonName": "Kalāns",
+      "hook": "Dzīvnieks ar visbiezāko kažoku pasaulē, kura dēļ to gandrīz iznīcināja.",
+      "imageAlt": "Divi kalāni peld uz muguras mierīgā ūdenī",
+      "what": "Kalāns (Enhydra lutris) ir liels Klusā okeāna ziemeļu daļas jūras ūdrs. Tam nav tauku slāņa, un to silda visbiezākais kažoks starp visiem zīdītājiem. Tas ēd, guļot uz muguras ūdenī, un bieži atver gliemežvākus ar akmeni. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «stipri apdraudēta suga».",
+      "range": "Klusā okeāna ziemeļu daļas seklie piekrastes ūdeņi no Krievijas un Japānas caur Aļasku līdz Kanādai, ar atsevišķu grupu Kalifornijas centrālajā daļā.",
+      "story": "Pirms astoņpadsmitā gadsimta vidū sākās kažokādu tirdzniecība, kalānu bija apmēram 150 000 līdz 300 000. Mednieki nogalināja tik daudz, ka 1911. gadā, kad līgums aizliedza medības, bija palikuši tikai daži tūkstoši. Kalifornijā izdzīvoja apmēram 50 kalānu kolonija, kas līdz 1972. gadam pieauga līdz vairāk nekā 1000 un līdz 2019. gadam līdz 2962.",
+      "when": "Tagad stipri apdraudēts, vairāk nekā gadsimtu pēc medību aizlieguma.",
+      "humanRole": "To gandrīz iznīcināja medības kažokādu dēļ astoņpadsmitajā un deviņpadsmitajā gadsimtā.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Kalāns (Animal Diversity Web: Enhydra lutris)",
+          "url": "https://animaldiversity.org/accounts/Enhydra_lutris/"
+        },
+        {
+          "label": "Amerikas Savienoto Valstu Jūras zīdītāju komisija: Kalifornijas kalāns (Marine Mammal Commission: Southern sea otter)",
+          "url": "https://www.mmc.gov/priority-topics/species-of-concern/southern-sea-otter/"
+        }
+      ]
+    },
+    "american-alligator": {
+      "commonName": "Alligator mississippiensis",
+      "hook": "Purvu milzis, kas reiz bija atzīts par apdraudētu, bet tagad atkal ir bieži sastopams Amerikas dienvidos.",
+      "imageAlt": "Aligators atpūšas ūdens malā, redzama tā tumšā mugura",
+      "what": "Šis aligators (Alligator mississippiensis) ir liels, tumšs krokodils, kas dzīvo Amerikas Savienoto Valstu dienvidaustrumu purvos, upēs un ezeros. Aste veido pusi no tā garuma. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «nav apdraudēta suga».",
+      "range": "Amerikas Savienoto Valstu dienvidaustrumu saldūdens mitrāji no Ziemeļkarolīnas līdz Floridai un rietumos līdz Teksasas centrālajai daļai.",
+      "story": "Slikti regulētu medību dēļ Amerikas Savienotās Valstis 1967. gadā šo aligatoru visā tā areālā iekļāva apdraudēto sugu sarakstā. Federālās un štatu aizsardzības laikā tas ātri atjaunojās, un 1987. gadā valdība atzina, ka bioloģiski tas vairs nav apdraudēts. Sarakstā tas paliek tikai tāpēc, ka ir līdzīgs retajam Amerikas krokodilam, lai aizsargātu arī to.",
+      "when": "Tagad nav apdraudēts, apmēram divdesmit gadus pēc tam, kad to atzina par apdraudētu.",
+      "humanRole": "Slikti regulētas medības samazināja tā skaitu, līdz 1967. gadā sākās aizsardzība.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Alligator mississippiensis (Animal Diversity Web: Alligator mississippiensis)",
+          "url": "https://animaldiversity.org/accounts/Alligator_mississippiensis/"
+        },
+        {
+          "label": "Amerikas Savienoto Valstu Federālais reģistrs, 1987. gada 4. jūnijs: aligatora (Alligator mississippiensis) aizsardzības kategorijas maiņa (Federal Register, 4 June 1987, volume 52, page 21059: reclassification of the American alligator)",
+          "url": "https://www.govinfo.gov/content/pkg/FR-1987-06-04/pdf/FR-1987-06-04.pdf"
+        }
+      ]
+    },
+    "giant-panda": {
+      "commonName": "Lielā panda",
+      "hook": "Ķīnas melnbaltais bambusa ēdājs, 2016. gadā pārcelts ārpus stipri apdraudēto sugu kategorijas.",
+      "imageAlt": "Lielā panda sēž zaļumos un košļā bambusu",
+      "what": "Lielā panda (Ailuropoda melanoleuca) ir melnbalts lācis, kas dzīvo Ķīnas centrālās daļas kalnu mežos un pārtiek no bambusa. Tai ir spēcīgi žokļi un plati, plakani zobi cieto stiebru košļāšanai, un palielināts plaukstas locītavas kauls darbojas kā īkšķis, ar ko tos turēt. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «jutīga suga».",
+      "range": "Bambusa meži Miņšaņas, Cjiņlina un Cjunlaja kalnos un tuvējās grēdās Ķīnas centrālajā daļā.",
+      "story": "Ķīna savvaļas pandas uzskaita apmēram reizi desmit gados kopš 1970. gadiem. Jaunākajās uzskaitēs savvaļā saskaitīja no 1800 līdz 2060 pandām, un, skaitam pieaugot, Starptautiskā dabas aizsardzības savienība 2016. gadā lielo pandu pārcēla no stipri apdraudēto uz jutīgo sugu kategoriju.",
+      "when": "Jutīga suga kopš 2016. gada, savvaļas pandu skaits lēnām pieaug.",
+      "humanRole": "Mežu izciršana un sadrumstalošana lauku, ceļu, aizsprostu un pilsētu dēļ sadala daudzas pandas mazās, viena no otras nošķirtās grupās.",
+      "sources": [
+        {
+          "label": "Sandjego zoodārza bibliotēka: Lielā panda (San Diego Zoo Wildlife Alliance Library: Giant panda fact sheet)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/characteristics"
+        },
+        {
+          "label": "Sandjego zoodārza bibliotēka: skaits un aizsardzība, Lielā panda (San Diego Zoo Wildlife Alliance Library: Giant panda population and conservation)",
+          "url": "https://ielc.libguides.com/sdzg/factsheets/giantpanda/population"
+        }
+      ]
+    },
+    "nene": {
+      "commonName": "Havaju zoss",
+      "hook": "Havaju salu pašu zoss, atjaunota no apmēram 30 savvaļas putniem.",
+      "imageAlt": "Havaju zoss ar melnu galvu, krēmkrāsas vaigiem un svītrotu, gaiši brūnu kaklu stāv zālē",
+      "what": "Havaju zoss (Branta sandvicensis) dzīvo tikai Havaju salās. Tai ir melna seja un pakausis, krēmkrāsas vaigi un gaiši brūns kakls ar melnām svītrām. Garās kājas un tikai daļēji ar peldplēvi savienotie pirksti palīdz tai staigāt pa lavu. Starptautiskā dabas aizsardzības savienība to iekļauj kategorijā «gandrīz apdraudēta suga».",
+      "range": "Havaju salu zālāji, krūmāji un lavas nogāzes, tagad galvenokārt Kauai, Havaju salā un Maui.",
+      "story": "Medības, dzīvotņu zudums un ievesti plēsēji, piemēram, mangusti, līdz 1950. gadiem samazināja savvaļas Havaju zosu skaitu līdz 30 putniem. Audzēšana nebrīvē, no plēsējiem pasargāti liegumi un izlaišana vairākās salās tās atguva, un 2025. gada uzskaitē visā štatā saskaitīja apmēram 4300 putnu.",
+      "when": "Tagad gandrīz apdraudēta, lielākā daļa putnu dzīvo Kauai.",
+      "humanRole": "Žurkas, kaķi, suņi un mangusti joprojām nogalina Havaju zosis, un daudzas iet bojā zem automašīnām.",
+      "sources": [
+        {
+          "label": "Mičiganas Universitātes vietne Animal Diversity Web: Havaju zoss (Animal Diversity Web: Branta sandvicensis)",
+          "url": "https://animaldiversity.org/accounts/Branta_sandvicensis/"
+        },
+        {
+          "label": "Havaju Zemes un dabas resursu departaments: Havaju zoss (Hawaiʻi Department of Land and Natural Resources: Nēnē)",
+          "url": "https://dlnr.hawaii.gov/wildlife/birds/nene/"
+        },
+        {
+          "label": "Vietne par Havaju zosi: skaita dati par 2025. gadu (Nēnē.org: Population data (Nēnē Recovery Action Group statewide count, 2025))",
+          "url": "https://nene.org/data/population"
+        }
+      ]
     }
   }
 }
