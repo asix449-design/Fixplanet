@@ -162,6 +162,7 @@ function publicStrings(card, copy) {
     add('scale.captionExtra', copy.scale.captionExtra, 'scale');
     add('scale.credit', copy.scale.credit, 'source');
     add('scale.changes', copy.scale.changes, 'scale');
+    add('scale.estimate.label', copy.scale.estimate?.label, 'scale');
     for (const [i, src] of (copy.scale.sources || []).entries()) add(`scale.sources.${i}.label`, src.label, 'source');
   }
   for (const breed of Object.values(copy.breeds || {})) {
@@ -219,6 +220,78 @@ export function checkCatalogue({ registry, rules, fileShelves, legacyShelves, re
   }
 
   checkRemovedSlugs(findings, allShelves, repoRoot);
+  findings.push(...checkReconstructionLabels(registry, rules, allShelves));
+  return findings;
+}
+
+function placeholderFree(text) {
+  return String(text).replace(/\{[a-zA-Z]+\}/g, ' ');
+}
+
+function aboutBefore(caption, word, token) {
+  const at = caption.indexOf(token);
+  if (at < 0 || !word) return false;
+  return wholeWord(caption.slice(0, at), word);
+}
+
+/**
+ * R6: track labels in every locale, with the about word before {h} and {l}.
+ * R8: dash, banned-word, and script lints on those strings and on estimate labels.
+ */
+function checkReconstructionLabels(registry, rules, allShelves) {
+  const findings = [];
+  for (const loc of LOCALES) {
+    const tracks = registry.scaleLabels?.[loc]?.tracks;
+    const rec = tracks?.reconstruction;
+    if (!tracks?.exact?.title || !rec?.title || !rec.badge || !rec.badgeHint || !rec.lead || !rec.caption || !rec.estimateLine || !rec.range) {
+      push(findings, { rule: 'R6', slug: '*', locale: loc, field: 'scaleLabels.tracks', message: 'tracks missing in this locale' });
+      continue;
+    }
+    const about = rules.aboutWord?.[loc];
+    if (!aboutBefore(rec.caption, about, '{h}') || !aboutBefore(rec.caption, about, '{l}')) {
+      push(findings, { rule: 'R6', slug: '*', locale: loc, field: 'scaleLabels.tracks.reconstruction.caption', message: 'caption must put the about word before {h} and {l}' });
+    }
+    const rows = [
+      ['scaleLabels.tracks.exact.title', tracks.exact.title],
+      ['scaleLabels.tracks.reconstruction.title', rec.title],
+      ['scaleLabels.tracks.reconstruction.badge', rec.badge],
+      ['scaleLabels.tracks.reconstruction.badgeHint', rec.badgeHint],
+      ['scaleLabels.tracks.reconstruction.lead', rec.lead],
+      ['scaleLabels.tracks.reconstruction.caption', rec.caption],
+      ['scaleLabels.tracks.reconstruction.estimateLine', rec.estimateLine],
+      ['scaleLabels.tracks.reconstruction.range', rec.range],
+    ];
+    for (const [field, text] of rows) {
+      const shown = placeholderFree(text);
+      const n = bannedCharCount(shown, rules.bannedChars || []);
+      if (n) push(findings, { rule: 'R8', slug: '*', locale: loc, field, count: n, message: 'banned character in track label' });
+      scanBannedWords(findings, rules, '*', loc, field, shown, true, 'R8');
+      if (loc !== 'en') {
+        const scriptRow = { field, text: shown, kind: 'scale' };
+        const before = findings.length;
+        checkScript(findings, { scientificName: '', taxon: {} }, rules, loc, scriptRow);
+        for (let i = before; i < findings.length; i++) findings[i].rule = 'R8';
+      }
+    }
+  }
+  for (const shelf of Object.values(allShelves)) {
+    for (const card of shelf.meta.cards) {
+      for (const loc of LOCALES) {
+        const label = shelf.copy[loc]?.cards?.[card.slug]?.scale?.estimate?.label;
+        if (!label) continue;
+        const field = 'scale.estimate.label';
+        const n = bannedCharCount(label, rules.bannedChars || []);
+        if (n) push(findings, { rule: 'R8', slug: card.slug, locale: loc, field, count: n, message: 'banned character in estimate label' });
+        scanBannedWords(findings, rules, card.slug, loc, field, label, true, 'R8');
+        if (loc !== 'en') {
+          const scriptRow = { field, text: label.replace(/\([^)]*\)/g, ' '), kind: 'scale' };
+          const before = findings.length;
+          checkScript(findings, card, rules, loc, scriptRow);
+          for (let i = before; i < findings.length; i++) findings[i].rule = 'R8';
+        }
+      }
+    }
+  }
   return findings;
 }
 
@@ -305,13 +378,14 @@ function checkLead(findings, slug, loc, text) {
   }
 }
 
-function scanBannedWords(findings, rules, slug, loc, field, text, scale) {
+function scanBannedWords(findings, rules, slug, loc, field, text, scale, rule = 'C2') {
   for (const word of rules.bannedWords?.global || []) {
-    if (wholeWord(text, word)) push(findings, { rule: 'C2', slug, locale: loc, field, message: `banned word ${word}` });
+    if (wholeWord(text, word)) push(findings, { rule, slug, locale: loc, field, message: `banned word ${word}` });
   }
   if (scale) {
     for (const word of rules.bannedWords?.scaleOnly || []) {
-      if (wholeWord(text, word)) push(findings, { rule: 'C2', slug, locale: loc, field, message: `scale banned word ${word}` });
+      if (word.toLowerCase() === 'estimate' && field.endsWith('estimateLine')) continue;
+      if (wholeWord(text, word)) push(findings, { rule, slug, locale: loc, field, message: `scale banned word ${word}` });
     }
   }
 }
@@ -390,18 +464,24 @@ function checkCard(findings, card, shelf, ctx) {
   void legacy;
 }
 
+function scriptSurface(row) {
+  if (row.field === 'scale.estimate.label') return row.text.replace(/\([^)]*\)/g, ' ');
+  return row.text;
+}
+
 function checkScript(findings, card, rules, loc, row) {
+  const text = scriptSurface(row);
   if (loc === 'ru') {
     if (row.kind === 'prose' || row.kind === 'scale') {
       const allow = allowedLatin(card, rules);
-      const stray = latinTokens(row.text).filter((w) => !allow.has(w.toLowerCase()));
+      const stray = latinTokens(text).filter((w) => !allow.has(w.toLowerCase()));
       if (stray.length) {
         push(findings, { rule: 'C3', slug: card.slug, locale: loc, field: row.field, count: stray.length, message: `Latin: ${stray.slice(0, 4).join(', ')}` });
       }
-    } else if (!/[\u0400-\u04FF]/.test(row.text)) {
+    } else if (!/[\u0400-\u04FF]/.test(text)) {
       push(findings, { rule: 'C3', slug: card.slug, locale: loc, field: row.field, message: 'RU source field has no Cyrillic word' });
     }
-  } else if (/[\u0400-\u04FF]/.test(row.text)) {
+  } else if (/[\u0400-\u04FF]/.test(text)) {
     push(findings, { rule: 'C3', slug: card.slug, locale: loc, field: row.field, message: 'Cyrillic in PL/LV' });
   }
 }

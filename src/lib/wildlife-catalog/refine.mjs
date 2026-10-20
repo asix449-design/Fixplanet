@@ -155,6 +155,19 @@ export function attachBaseline(legacyShelves, baseline) {
   return legacyShelves;
 }
 
+/** reconstruction when height or the shelf horizontal measure is a reconstruction; otherwise exact. */
+export function sizeTrack(card, shelfCfg) {
+  const horizontal = shelfCfg?.scale?.horizontal || 'length';
+  if (card.size?.height?.kind === 'reconstruction' || card.size?.[horizontal]?.kind === 'reconstruction') return 'reconstruction';
+  return 'exact';
+}
+
+export function scaleTrackFindings(card, shelfCfg) {
+  const findings = [];
+  if (card?.scale) checkScale(findings, card, shelfCfg);
+  return findings;
+}
+
 function checkScale(findings, card, shelfCfg) {
   const horizontal = shelfCfg?.scale?.horizontal || 'length';
   const eligible = !!(card.size?.height && card.size?.[horizontal] && card.scale?.image);
@@ -166,6 +179,14 @@ function checkScale(findings, card, shelfCfg) {
   }
   if (card.scale.show === false && eligible) {
     fail(findings, 'S8', `${card.slug} show:false while scale data is complete`, { slug: card.slug, field: 'scale.show' });
+  }
+  const declared = card.scale.track || 'exact';
+  const computed = sizeTrack(card, shelfCfg);
+  if (card.scale.show && declared !== computed) {
+    fail(findings, 'R3', `${card.slug} scale.track ${declared} != ${computed}`, { slug: card.slug, field: 'scale.track' });
+  }
+  if (declared === 'reconstruction' && computed !== 'reconstruction') {
+    fail(findings, 'R4', `${card.slug} reconstruction track needs a reconstruction measure`, { slug: card.slug, field: 'scale.track' });
   }
 }
 

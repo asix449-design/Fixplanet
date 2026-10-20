@@ -1,8 +1,10 @@
+import path from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { CardMeta, LOCALES, Registry } from '../../src/lib/wildlife-catalog/schema.mjs';
 import { composeScaleCaption, formatMeasure, splitGroup } from '../../src/lib/wildlife-catalog/format.mjs';
 import { compilePatterns, scanText } from '../../src/lib/wildlife-catalog/c17.mjs';
 import { c16Issues, checkDuplicateSlugs, checkLabelPlaceholders, duplicateSourceUrls, normalizeSourceUrl } from '../../src/lib/wildlife-catalog/checks.mjs';
-import { s14Names } from '../../src/lib/wildlife-catalog/refine.mjs';
+import { s14Names, scaleTrackFindings } from '../../src/lib/wildlife-catalog/refine.mjs';
 import { toSpecies } from '../../src/lib/wildlife-catalog/adapter.mjs';
 
 function assert(ok, message) {
@@ -65,6 +67,7 @@ export function runSelfTests(catalog, live) {
   assert(SV.safeParse(derived).success, 'published derived figure must parse');
   assert(!SV.safeParse({ ...derived, derivation: { ...derived.derivation, method: 'image-ratio' } }).success, 'image-ratio is rejected');
   assert(!SV.safeParse({ ...derived, derivation: { ...derived.derivation, note: '   ' } }).success, 'blank derivation note is rejected');
+  runPlantedReconstructionCases(SV);
 
   const scale = {
     enabled: true, unit: 'm', decimals: 1, horizontal: 'length',
@@ -213,5 +216,90 @@ export function runSelfTests(catalog, live) {
     }
     const catalogueCards = Object.values(cardShelves).reduce((sum, shelf) => sum + shelf.meta.cards.length, 0);
     assert(cards === catalogueCards * LOCALES.length, `round trip covered ${cards} locale cards`);
+  }
+}
+
+/** R1 no quote, R2 approx false, R3 track exact on a reconstruction, R5 derivation on a reconstruction. */
+export function runPlantedReconstructionCases(SV) {
+  const cardShape = CardMeta.innerType().shape;
+  const sizeValue = SV || cardShape.size.unwrap().shape.length.unwrap();
+  const source = {
+    id: 'r', url: 'https://example.org/r', title: 'Skeletal reconstruction',
+    use: 'reconstruction', value: 3.5, unit: 'm',
+  };
+  const published = {
+    value: 3.5, unit: 'm', basis: 'bill tip to tail tip',
+    confidence: 'published_reconstruction', approx: true, kind: 'reconstruction',
+    reconstruction: {
+      method: 'skeletal-reconstruction',
+      estimateSource: {
+        id: 'r', url: 'https://example.org/r', title: 'Skeletal reconstruction',
+        quote: 'Reconstructed length 3.5 m',
+      },
+      measure: 'bill tip to tail tip',
+      uncertainty: 'The source does not state the posture of the measured length',
+    },
+    sources: [source],
+    suppliedBy: 'bob', checked: '2026-10-20',
+  };
+  assert(sizeValue.safeParse(published).success, 'published reconstruction must parse');
+
+  const noQuote = structuredClone(published);
+  delete noQuote.reconstruction.estimateSource.quote;
+  const r1 = sizeValue.safeParse(noQuote);
+  assert(!r1.success, 'R1 reconstruction without a quote fails');
+  assert(r1.error.issues.some((issue) => /quote/i.test(issue.message) || issue.path.includes('quote')), 'R1 names the missing quote');
+
+  const r2 = sizeValue.safeParse({ ...published, approx: false });
+  assert(!r2.success, 'R2 reconstruction with approx false fails');
+  assert(r2.error.issues.some((issue) => /approx/i.test(issue.message)), 'R2 names approx');
+
+  const r5 = sizeValue.safeParse({
+    ...published,
+    derivation: { method: 'body-proportion', note: 'not allowed on a reconstruction' },
+  });
+  assert(!r5.success, 'R5 derivation on a reconstruction fails');
+  assert(r5.error.issues.some((issue) => /derivation/i.test(issue.message)), 'R5 names derivation');
+
+  const shelf = { scale: { horizontal: 'length' } };
+  const mismatched = {
+    slug: 'planted-moa',
+    size: {
+      height: { kind: 'measured', value: 2, unit: 'm' },
+      length: { kind: 'reconstruction', value: 3.5, unit: 'm' },
+    },
+    scale: { show: true, track: 'exact', basis: 'length', image: { webp: '/images/wildlife/size-scale/moa.webp' } },
+  };
+  const r3 = scaleTrackFindings(mismatched, shelf);
+  assert(r3.some((item) => item.rule === 'R3'), 'R3 track exact on a reconstruction card fails');
+  assert(!r3.some((item) => item.rule === 'R4'), 'R3 plant does not raise R4');
+
+  const matched = { ...mismatched, scale: { ...mismatched.scale, track: 'reconstruction' } };
+  const ok = scaleTrackFindings(matched, shelf);
+  assert(!ok.some((item) => item.rule === 'R3' || item.rule === 'R4'), 'matching reconstruction track passes');
+}
+
+const isDirect = process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
+if (isDirect) {
+  const { createServer } = await import('vite');
+  const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+  const server = await createServer({
+    server: { middlewareMode: true },
+    appType: 'custom',
+    logLevel: 'error',
+    configFile: path.join(repoRoot, 'astro.config.mjs'),
+  });
+  try {
+    const mod = await server.ssrLoadModule('/src/lib/wildlife-catalog/load.ts');
+    const i18n = await server.ssrLoadModule('/src/i18n/wildlife.ts');
+    const catalog = mod.loadWildlifeCatalog();
+    const live = Object.fromEntries(LOCALES.map((loc) => [loc, i18n.getWildlifeSpecies(loc)]));
+    runSelfTests(catalog, live);
+    console.log('selftest PASS');
+  } catch (error) {
+    console.error(error instanceof Error ? error.stack || error.message : error);
+    process.exitCode = 1;
+  } finally {
+    await server.close();
   }
 }

@@ -886,6 +886,29 @@
         "assessmentUrl": "https://www.iucnredlist.org/species/1095/53947343"
       },
       "flags": {},
+      "size": {
+        "length": {
+          "value": 0.23,
+          "unit": "m",
+          "mean": 0.23,
+          "basis": "average adult length (Animal Diversity Web data field)",
+          "confidence": "single_source",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "am-adw-l",
+              "url": "https://animaldiversity.org/accounts/Ambystoma_mexicanum/",
+              "title": "Animal Diversity Web: Ambystoma mexicanum",
+              "use": "counted",
+              "value": 23,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
       "image": {
         "file": "axolotl.jpg",
         "kind": "photo",
@@ -1257,6 +1280,47 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "length": {
+          "value": 0.96,
+          "unit": "m",
+          "mean": 0.96,
+          "range": [
+            0.45,
+            1.47
+          ],
+          "basis": "total body length, nose to tail tip, fully grown animals",
+          "confidence": "range_midpoint",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "mc-adw-l",
+              "url": "https://animaldiversity.org/accounts/Manis_crassicaudata/",
+              "title": "Animal Diversity Web: Manis crassicaudata",
+              "use": "counted",
+              "range": [
+                45,
+                147
+              ],
+              "unit": "cm"
+            },
+            {
+              "id": "mc-pmc-l",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824598/",
+              "title": "Updates on the Morphometric Characterization of Indian Pangolin (Manis crassicaudata) in Sri Lanka",
+              "use": "support",
+              "range": [
+                137,
+                177
+              ],
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
       "image": {
         "file": "indian-pangolin.jpg",
         "kind": "photo",

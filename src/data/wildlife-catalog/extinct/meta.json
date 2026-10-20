@@ -935,6 +935,93 @@
         "scope": "global"
       },
       "flags": {},
+      "size": {
+        "height": {
+          "value": 2.0,
+          "unit": "m",
+          "mean": 2.0,
+          "basis": "back height of an adult female, upper value (from skeletons)",
+          "confidence": "single_source",
+          "approx": true,
+          "kind": "measured",
+          "sources": [
+            {
+              "id": "mo-nzbo-h",
+              "url": "https://www.nzbirdsonline.org.nz/species/south-island-giant-moa",
+              "title": "South Island giant moa / Moa nunui / New Zealand Birds Online",
+              "use": "counted",
+              "value": 200,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        },
+        "length": {
+          "value": 3.5,
+          "unit": "m",
+          "mean": 3.5,
+          "basis": "bill tip to tail tip of a published skeletal reconstruction of an adult female",
+          "confidence": "published_reconstruction",
+          "approx": true,
+          "kind": "reconstruction",
+          "reconstruction": {
+            "method": "skeletal-reconstruction",
+            "estimateSource": {
+              "id": "mo-hart-l",
+              "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/",
+              "title": "Skeletal Drawing (Scott Hartman): Dinornis robustus",
+              "author": "Scott Hartman",
+              "year": 2022,
+              "quote": "Reconstructed length ~3.5 m (11 feet)"
+            },
+            "measure": "bill tip to tail tip",
+            "uncertainty": "Hartman gives the reconstructed length without saying the posture; the same page gives about 3.5 m as how high a female could stretch its head. Sex and specimen of the drawing are a female (page text: 'The same female South Island giant moa'). Second cited source: New Zealand Birds Online identification length up to 360 cm for females (use: counted); the figure shown is Hartman's 3.5 m (estimateSource).",
+            "range": null
+          },
+          "sources": [
+            {
+              "id": "mo-hart-l",
+              "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/",
+              "title": "Skeletal Drawing (Scott Hartman): Dinornis robustus",
+              "use": "reconstruction",
+              "value": 3.5,
+              "unit": "m"
+            },
+            {
+              "id": "mo-nzbo-l",
+              "url": "https://www.nzbirdsonline.org.nz/species/south-island-giant-moa",
+              "title": "South Island giant moa / Moa nunui / New Zealand Birds Online",
+              "use": "counted",
+              "value": 360,
+              "unit": "cm"
+            }
+          ],
+          "suppliedBy": "bob",
+          "checked": "2026-10-20"
+        }
+      },
+      "scale": {
+        "show": true,
+        "track": "reconstruction",
+        "basis": "length",
+        "sortKey": 3.5,
+        "sizeGroup": null,
+        "order": null,
+        "image": {
+          "webp": "/images/wildlife/size-scale/moa.webp",
+          "png": null,
+          "pxW": 968,
+          "pxH": 571,
+          "kind": "illustration",
+          "author": null,
+          "license": null,
+          "licenseUrl": null,
+          "sourceUrl": null,
+          "changed": false
+        },
+        "silhouette": null
+      },
       "image": {
         "file": "moa.jpg",
         "kind": "photo",

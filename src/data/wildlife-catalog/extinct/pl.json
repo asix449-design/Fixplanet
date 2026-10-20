@@ -276,7 +276,26 @@
       "when": "Wymarłe około XV wieku, po kolonizacji ludzkiej: nie w głębokiej przeszłości.",
       "humanRole": "Nadmierne polowania i palenie lasu przez pierwszych ludzi na wyspach z naiwną megafauną.",
       "sources": [],
-      "sourcesNote": "Holdaway i Jacomb 2000 oraz późniejsze syntezy radiowęglowe; zapisy muzealne Dinornis robustus."
+      "sourcesNote": "Holdaway i Jacomb 2000 oraz późniejsze syntezy radiowęglowe; zapisy muzealne Dinornis robustus.",
+      "scale": {
+        "heightLabel": "Wysokość grzbietu",
+        "lengthLabel": "Od dzioba do końca ogona",
+        "captionExtra": "Ten ptak został wytępiony przez polowania pierwszych mieszkańców Nowej Zelandii.",
+        "estimate": {
+          "label": "Scott Hartman, rekonstrukcja szkieletu moa olbrzymiej z Wyspy Południowej (Scott Hartman, Skeletal Drawing: Dinornis robustus)",
+          "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+        },
+        "sources": [
+          {
+            "label": "Ptaki Nowej Zelandii w internecie: moa olbrzymia z Wyspy Południowej (New Zealand Birds Online: South Island giant moa)",
+            "url": "https://www.nzbirdsonline.org.nz/species/south-island-giant-moa"
+          },
+          {
+            "label": "Scott Hartman, rekonstrukcja szkieletu moa olbrzymiej z Wyspy Południowej (Scott Hartman, Skeletal Drawing: Dinornis robustus)",
+            "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+          }
+        ]
+      }
     },
     "irish-elk": {
       "commonName": "Jeleń olbrzymi",

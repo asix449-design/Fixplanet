@@ -276,7 +276,26 @@
       "when": "Вымерли примерно к 1400-м, после колонизации людьми: не в глубокой древности.",
       "humanRole": "Перепромысел и выжигание леса первыми людьми на островах с наивной мегафауной.",
       "sources": [],
-      "sourcesNote": "Holdaway & Jacomb, 2000, и более поздние радиоуглеродные сводки; музейные записи Dinornis robustus."
+      "sourcesNote": "Holdaway & Jacomb, 2000, и более поздние радиоуглеродные сводки; музейные записи Dinornis robustus.",
+      "scale": {
+        "heightLabel": "Высота по спине",
+        "lengthLabel": "От клюва до кончика хвоста",
+        "captionExtra": "Эту птицу истребила охота первых жителей Новой Зеландии.",
+        "estimate": {
+          "label": "Скотт Хартман, скелетная реконструкция южноостровного гигантского моа (Scott Hartman, Skeletal Drawing: Dinornis robustus)",
+          "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+        },
+        "sources": [
+          {
+            "label": "Птицы Новой Зеландии в интернете: южноостровной гигантский моа (New Zealand Birds Online: South Island giant moa)",
+            "url": "https://www.nzbirdsonline.org.nz/species/south-island-giant-moa"
+          },
+          {
+            "label": "Скотт Хартман, скелетная реконструкция южноостровного гигантского моа (Scott Hartman, Skeletal Drawing: Dinornis robustus)",
+            "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+          }
+        ]
+      }
     },
     "irish-elk": {
       "commonName": "Большерогий олень",
