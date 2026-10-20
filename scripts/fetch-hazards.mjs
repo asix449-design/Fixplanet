@@ -14,7 +14,9 @@ import {
   GDACS_URL,
   USGS_VOLCANO_URL,
   USGS_WEEK_URL,
+  GDACS_WILDFIRE_DAYS,
   dedupeCyclones,
+  dedupeWildfires,
   emptySnapshot,
   eonetCategoryUrl,
   gdacsTypedUrl,
@@ -92,12 +94,16 @@ const snapshot = emptySnapshot(fetchedAt);
 
 const today = fetchedAt.slice(0, 10);
 const floodFrom = new Date(Date.parse(fetchedAt) - 28 * 86400000).toISOString().slice(0, 10);
-const [usgs, gdacs, gdacsFloods, gdacsDroughts, storms, volcanoes, wildfires, floods, droughts, firmsRaw, usgsVolcanoes, nhc] =
+const fireFrom = new Date(Date.parse(fetchedAt) - GDACS_WILDFIRE_DAYS * 86400000)
+  .toISOString()
+  .slice(0, 10);
+const [usgs, gdacs, gdacsFloods, gdacsDroughts, gdacsFires, storms, volcanoes, wildfires, floods, droughts, firmsRaw, usgsVolcanoes, nhc] =
   await Promise.all([
     tryStep('USGS', () => getJson(USGS_WEEK_URL)),
     tryStep('GDACS', () => getJson(GDACS_URL)),
     tryStep('GDACS floods', () => getJson(gdacsTypedUrl('FL', floodFrom, today))),
     tryStep('GDACS droughts', () => getJson(gdacsTypedUrl('DR', `${today.slice(0, 4)}-01-01`, today))),
+    tryStep('GDACS wildfires', () => getJson(gdacsTypedUrl('WF', fireFrom, today))),
     tryStep('EONET storms', () => getJson(eonetCategoryUrl('severeStorms'))),
     tryStep('EONET volcanoes', () => getJson(eonetCategoryUrl('volcanoes'))),
     tryStep('EONET wildfires', () => getJson(eonetCategoryUrl('wildfires'))),
@@ -170,9 +176,13 @@ snapshot.layers.droughts = {
   fetchedAt,
   events: [...droughtEvents, ...eonetDroughts.events],
 };
+const gdacsFireEvents = gdacsFires
+  ? parseGdacs(gdacsFires, fetchedAt, { keepPastWildfires: true }).wildfires
+  : previousSource('wildfires', 'GDACS');
+
 snapshot.layers.wildfires = {
   fetchedAt,
-  events: [...kept('wildfires', 'GDACS'), ...eonetFires.events],
+  events: dedupeWildfires([...gdacsFireEvents, ...eonetFires.events]),
 };
 
 if (firmsRaw) {

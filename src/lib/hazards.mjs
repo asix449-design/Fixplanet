@@ -81,6 +81,10 @@ export const LAYER_SOURCES = {
 
 /** EONET wildfires older than this are left off the live globe. */
 export const WILDFIRE_MAX_AGE_DAYS = 30;
+/** Typed GDACS wildfire search window, in days. The open event list hides these fires. */
+export const GDACS_WILDFIRE_DAYS = 21;
+/** GDACS point within this distance of an EONET fire, with overlapping dates, is the same fire. */
+export const WILDFIRE_DEDUPE_KM = 25;
 /** VIIRS confidence words kept in the snapshot. */
 export const FIRMS_CONFIDENCE = new Set(['nominal', 'high']);
 /** One kept hot spot per cell of this size, in degrees. */
@@ -214,7 +218,8 @@ export function parseUsgs(collection, fetchedAt = new Date().toISOString()) {
   return { fetchedAt, events };
 }
 
-export function parseGdacs(collection, fetchedAt = new Date().toISOString()) {
+export function parseGdacs(collection, fetchedAt = new Date().toISOString(), options = {}) {
+  const keepPastWildfires = options.keepPastWildfires === true;
   const buckets = {
     cyclones: [],
     floods: [],
@@ -228,6 +233,7 @@ export function parseGdacs(collection, fetchedAt = new Date().toISOString()) {
     if (!layer) continue;
     if (
       layer !== 'droughts' &&
+      !(keepPastWildfires && layer === 'wildfires') &&
       props.iscurrent != null &&
       String(props.iscurrent) !== 'true'
     ) {
@@ -242,7 +248,7 @@ export function parseGdacs(collection, fetchedAt = new Date().toISOString()) {
       wind != null && wind > 0 && /km\/h/i.test(String(severity.severityunit || ''))
         ? Math.round(wind)
         : undefined;
-    buckets[layer].push({
+    const event = {
       id: `gdacs-${props.eventtype}-${props.eventid}-${props.episodeid}`,
       layer,
       title: String(props.name || props.eventname || props.htmldescription || 'GDACS')
@@ -255,7 +261,12 @@ export function parseGdacs(collection, fetchedAt = new Date().toISOString()) {
       windKmh,
       url: httpsUrl(props.url?.report || props.url?.details),
       source: 'GDACS',
-    });
+    };
+    if (layer === 'wildfires') {
+      const until = toIso(props.todate);
+      if (until) event.until = until;
+    }
+    buckets[layer].push(event);
   }
   for (const list of Object.values(buckets)) {
     list.sort((a, b) => Date.parse(b.time) - Date.parse(a.time));
@@ -592,6 +603,68 @@ export async function loadNhcSnapshot(fetchedAt, fetchJson) {
   }
   await Promise.all(jobs);
   return assembleNhc(groups, fetchedAt);
+}
+
+function fireNameKey(title) {
+  return String(title || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function sameFireName(left, right) {
+  if (!left || !right) return false;
+  if (left === right) return true;
+  const short = left.length <= right.length ? left : right;
+  const long = left.length <= right.length ? right : left;
+  return short.length >= 8 && long.includes(short);
+}
+
+function fireSpan(event) {
+  const start = Date.parse(event.time);
+  if (!Number.isFinite(start)) return null;
+  let end = Date.parse(event.until || event.time);
+  if (!Number.isFinite(end)) end = start;
+  if (event.until && /T00:00:00(?:\.000)?Z$/.test(event.until)) end += 86400000 - 1;
+  return start <= end ? [start, end] : [end, start];
+}
+
+function datesOverlap(left, right) {
+  const a = fireSpan(left);
+  const b = fireSpan(right);
+  if (!a || !b) return false;
+  return a[0] <= b[1] && b[0] <= a[1];
+}
+
+function haversineKm(left, right) {
+  const rad = (deg) => (deg * Math.PI) / 180;
+  const dLat = rad(right.lat - left.lat);
+  const dLon = rad(right.lon - left.lon);
+  const lat1 = rad(left.lat);
+  const lat2 = rad(right.lat);
+  const h =
+    Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.min(1, Math.sqrt(h)));
+}
+
+/** Drop a GDACS wildfire that repeats an EONET fire by name, or by place and date. */
+export function dedupeWildfires(events) {
+  const eonet = events.filter((event) => event.layer === 'wildfires' && event.source === 'EONET');
+  if (!eonet.length) return events;
+  const names = eonet.map((event) => fireNameKey(event.title));
+  return events.filter((event) => {
+    if (event.layer !== 'wildfires' || event.source !== 'GDACS') return true;
+    const name = fireNameKey(event.title);
+    for (let i = 0; i < eonet.length; i += 1) {
+      if (sameFireName(name, names[i])) return false;
+      const other = eonet[i];
+      if (!datesOverlap(event, other)) continue;
+      if (haversineKm(event, other) <= WILDFIRE_DEDUPE_KM) return false;
+    }
+    return true;
+  });
 }
 
 /** Drop EONET and NHC storms whose name is already on a GDACS cyclone. */

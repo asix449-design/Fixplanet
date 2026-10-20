@@ -4,11 +4,13 @@ import {
   FEED_LIMIT,
   FIRMS_FEED_LIMIT,
   GDACS_URL,
+  GDACS_WILDFIRE_DAYS,
   LAYER_COLOR,
   LAYER_IDS,
   USGS_VOLCANO_URL,
   USGS_WEEK_URL,
   dedupeCyclones,
+  dedupeWildfires,
   droughtTileUrl,
   emptySnapshot,
   eonetCategoryUrl,
@@ -681,7 +683,8 @@ export function mountHazardGlobe(root) {
     const fetchedAt = new Date(now).toISOString();
     const today = fetchedAt.slice(0, 10);
     const floodFrom = new Date(now - 28 * 86400000).toISOString().slice(0, 10);
-    const [usgs, gdacs, gdacsFloods, gdacsDroughts, eonetPayloads, usgsVolcanoes, nhc] = await Promise.all([
+    const fireFrom = new Date(now - GDACS_WILDFIRE_DAYS * 86400000).toISOString().slice(0, 10);
+    const [usgs, gdacs, gdacsFloods, gdacsDroughts, gdacsFires, eonetPayloads, usgsVolcanoes, nhc] = await Promise.all([
       loadOrFail(USGS_WEEK_URL).catch(() => {
         failures.push('USGS');
         return null;
@@ -692,6 +695,7 @@ export function mountHazardGlobe(root) {
       }),
       loadOrFail(gdacsTypedUrl('FL', floodFrom, today)).catch(() => null),
       loadOrFail(gdacsTypedUrl('DR', `${today.slice(0, 4)}-01-01`, today)).catch(() => null),
+      loadOrFail(gdacsTypedUrl('WF', fireFrom, today)).catch(() => null),
       Promise.all(
         EONET_LAYERS.map(([category]) =>
           loadOrFail(eonetCategoryUrl(category)).then((json) => json.events || []),
@@ -714,10 +718,18 @@ export function mountHazardGlobe(root) {
     if (usgs) next.layers.earthquakes = parseUsgs(usgs, fetchedAt);
     if (gdacs) {
       const layers = parseGdacs(gdacs, fetchedAt);
-      for (const id of ['cyclones', 'floods', 'volcanoes', 'droughts', 'wildfires']) {
+      for (const id of ['cyclones', 'floods', 'volcanoes', 'droughts']) {
         next.layers[id].fetchedAt = fetchedAt;
         next.layers[id].events = replaceSource(next.layers[id].events, 'GDACS', layers[id]);
       }
+    }
+    if (gdacsFires) {
+      next.layers.wildfires.fetchedAt = fetchedAt;
+      next.layers.wildfires.events = replaceSource(
+        next.layers.wildfires.events,
+        'GDACS',
+        parseGdacs(gdacsFires, fetchedAt, { keepPastWildfires: true }).wildfires,
+      );
     }
     if (gdacsFloods) {
       next.layers.floods.fetchedAt = fetchedAt;
@@ -758,6 +770,7 @@ export function mountHazardGlobe(root) {
       next.layers.cyclones.events = replaceSource(next.layers.cyclones.events, 'NHC', nhc.events);
     }
     next.layers.cyclones.events = dedupeCyclones(next.layers.cyclones.events);
+    next.layers.wildfires.events = dedupeWildfires(next.layers.wildfires.events);
     next.fetchedAt = fetchedAt;
     applySnapshot(next);
     if (failures.length) snapshotNote.hidden = false;
