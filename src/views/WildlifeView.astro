@@ -43,7 +43,9 @@ const isHumanShelf = activeShelf === 'homo-sapiens';
 
 const species = activeStatus ? getWildlifeByStatus(locale, activeStatus) : [];
 const catalogScale =
-  activeStatus === 'endangered' || activeStatus === 'extinct' ? hasCatalogScale(activeStatus) : false;
+  activeStatus === 'endangered' || activeStatus === 'extinct'
+    ? hasCatalogScale(activeStatus) || hasCatalogScale(activeStatus, 'reconstruction')
+    : false;
 const tabLeads = {
   surviving: ui.wildlifePage.survivingLead,
   endangered: ui.wildlifePage.endangeredLead,

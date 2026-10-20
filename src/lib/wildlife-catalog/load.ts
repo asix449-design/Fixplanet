@@ -8,6 +8,7 @@ import {
   MeasureMethods,
   MetaFile,
   NumberFormat,
+  ReconstructionRules,
   Registry,
   StatusLabels,
 } from './schema.mjs';
@@ -47,6 +48,7 @@ export function loadWildlifeCatalog() {
   IucnCategoryNames.parse(Object.fromEntries(LOCALES.map((loc) => [loc, rules.iucnCategoryNames[loc]])));
   NumberFormat.parse(rules.numberFormat);
   MeasureMethods.parse(rules.measureMethods);
+  if (rules.reconstruction != null) ReconstructionRules.parse(rules.reconstruction);
   const statusLabels = StatusLabels.parse(readJson('status-labels.json'));
   const baseline = readJson('legacy-baseline.json');
   const groups = readJson('legacy-groups.json');

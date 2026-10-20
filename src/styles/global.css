@@ -4915,6 +4915,34 @@ a.map-card:hover {
 
 .size-scale-caption {
   margin: 0 0 0.45rem;
+  overflow-wrap: break-word;
+}
+
+.size-scale-badge {
+  display: inline-block;
+  margin: 0 0 0.45rem;
+  padding: 0.08rem 0.45rem;
+  border: 1px dashed #b9b9b0;
+  border-radius: 2px;
+  color: #c5c5bc;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.size-scale-figure.is-reconstruction .size-scale-plot {
+  outline: 1px dashed rgba(201, 201, 192, 0.9);
+  outline-offset: 2px;
+}
+
+.size-scale-estimate {
+  margin: 0.15rem 0 0.45rem;
+  color: #d5d5cc;
+  overflow-wrap: anywhere;
+}
+
+.size-scale-estimate a {
+  color: inherit;
 }
 
 .size-scale-credit {

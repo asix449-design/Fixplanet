@@ -1,6 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { z } from 'astro/zod';
 
 export const LOCALES = /** @type {const} */ (['en', 'ru', 'pl', 'lv']);
+
+function reconstructionMethods() {
+  const fromSource = fileURLToPath(new URL('../../data/wildlife-catalog/rules.json', import.meta.url));
+  const fromCwd = path.join(process.cwd(), 'src/data/wildlife-catalog/rules.json');
+  const file = fs.existsSync(fromSource) ? fromSource : fromCwd;
+  const rules = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const methods = rules.reconstruction?.allowedMethods;
+  if (Array.isArray(methods) && methods.length > 0) return methods;
+  return ['skeletal-reconstruction', 'life-model', 'allometric-estimate', 'museum-statement'];
+}
+
+const RECON_METHODS = reconstructionMethods();
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const https = z.string().url().startsWith('https://');
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
@@ -47,6 +62,17 @@ export const Shelf = z.object({
 }).strict().refine((s) => s.enabled || !s.cards || !!s.mergeInto, 'disabled card shelf needs mergeInto')
   .refine((s) => !(s.statusDisplay === 'none' && s.statusRequired), 'statusDisplay none cannot be combined with statusRequired');
 
+const TrackExact = z.object({ title: z.string().min(1) }).strict();
+const TrackReconstruction = z.object({
+  title: z.string().min(1),
+  badge: z.string().min(1),
+  badgeHint: z.string().min(1),
+  lead: z.string().min(1),
+  caption: z.string().min(1).refine((t) => t.includes('{h}') && t.includes('{l}'), 'needs {h} and {l}'),
+  estimateLine: z.string().min(1).refine((t) => t.includes('{source}'), 'needs {source}'),
+  range: z.string().min(1),
+}).strict();
+
 export const Registry = z.object({
   version: z.literal(1),
   hub: z.object({ labels: perLocale(z.object({ name: z.string() }).strict()) }).strict(),
@@ -54,6 +80,7 @@ export const Registry = z.object({
     small: z.string(), medium: z.string(), large: z.string(),
     subgroup: z.string().refine((t) => t.includes('{group}') && t.includes('{i}'), 'needs {group} and {i}'),
     subgroupLong: z.string().refine((t) => t.includes('{group}') && t.includes('{i}'), 'needs {group} and {i}').optional(),   // v3.3: long form for headings / screen readers ("Средние, часть 1")
+    tracks: z.object({ exact: TrackExact, reconstruction: TrackReconstruction }).strict().optional(),
   }).strict()),
   options: z.object({
     breeds: z.enum(['cards', 'variants']),
@@ -70,7 +97,7 @@ const pair = z.tuple([z.number().positive(), z.number().positive()]);
 
 const SizeSource = z.object({
   id: z.string(), url: https, title: z.string(),
-  use: z.enum(['counted', 'support', 'excluded', 'estimate', 'derived']),
+  use: z.enum(['counted', 'support', 'excluded', 'estimate', 'derived', 'reconstruction']),
   value: z.number().positive().optional(),
   range: pair.optional(),
   unit: SrcUnit,
@@ -83,15 +110,29 @@ const sizeValue = (unit) => z.object({
   mean: z.number().positive().optional(),
   range: pair.optional(),
   basis: z.string().min(3),
-  confidence: z.enum(['range_midpoint', 'mean_of_sources', 'single_source', 'estimate']),
+  confidence: z.enum(['range_midpoint', 'mean_of_sources', 'single_source', 'estimate', 'published_reconstruction']),
   approx: z.boolean(),
-  kind: z.enum(['measured', 'derived']),
+  kind: z.enum(['measured', 'derived', 'reconstruction']),
   derivation: z.object({
     method: z.enum(['body-proportion', 'unit-conversion']),   // published proportion or source only; no image-ratio
     from: z.enum(['height', 'length', 'wingspan', 'mass']).optional(),
     ratio: z.number().positive().optional(),
     note: z.string().trim().min(1),
   }).strict().nullish(),
+  reconstruction: z.object({
+    method: z.enum(RECON_METHODS),
+    estimateSource: z.object({
+      id: z.string().min(1),
+      url: https,
+      title: z.string().min(1),
+      author: z.string().optional(),
+      year: z.number().int().optional(),
+      quote: z.string().min(1),
+    }).strict(),
+    measure: z.string().min(3),
+    uncertainty: z.string().min(3),
+    range: pair.nullish(),
+  }).strict().optional(),
   sources: z.array(SizeSource).default([]),
   suppliedBy: z.string(),
   checked: isoDate,
@@ -103,6 +144,14 @@ const sizeValue = (unit) => z.object({
        'single-source, estimated or derived figure must be approx');
   need(v.kind !== 'measured' || v.sources.some((s) => s.use === 'counted' || s.use === 'estimate'),
        'measured figure needs a counted or estimate source');
+  const recon = v.kind === 'reconstruction';
+  need(!recon || !!v.reconstruction, 'reconstruction figure needs a reconstruction block');
+  need(!recon || v.approx === true, 'reconstruction figure must be approx');
+  need(!recon || v.confidence === 'published_reconstruction', 'reconstruction confidence must be published_reconstruction');
+  need(!recon || v.derivation == null, 'reconstruction figure cannot have a derivation');
+  need(recon || !v.reconstruction, 'reconstruction block is only for kind reconstruction');
+  need(!recon || !v.reconstruction || v.sources.some((s) => s.use === 'reconstruction' && s.url === v.reconstruction.estimateSource.url),
+       'reconstruction figure needs a source with use reconstruction and the estimate source url');
 });
 
 /* ---------- geography ---------- */
@@ -198,6 +247,7 @@ export const CardMeta = z.object({
   }).strict().optional(),
   scale: z.object({
     show: z.boolean(),
+    track: z.enum(['exact', 'reconstruction']).default('exact'),
     basis: z.enum(['height', 'length']),
     sortKey: z.number().positive(),
     sizeGroup: z.enum(['small', 'medium', 'large']).nullish(),
@@ -337,7 +387,17 @@ export const MetaFile = z.object({ shelf: slug, cards: z.array(CardMeta) }).stri
 const ScaleCopy = z.object({
   heightLabel: z.string().min(1), lengthLabel: z.string().min(1),
   captionExtra: z.string().optional(), credit: z.string().optional(), changes: z.string().optional(),
+  estimate: Link.optional(),
   sources: z.array(Link).min(1),
+}).strict();
+
+export const ReconstructionRules = z.object({
+  allowedMethods: z.array(z.enum(RECON_METHODS)).min(1),
+  approxRequired: z.literal(true),
+  minEstimateSources: z.number().int().positive(),
+  ownImageMeasurementAllowed: z.literal(false),
+  humanCauseRequired: z.literal(true),
+  _note: z.string().optional(),
 }).strict();
 
 const EditorialNameSource = z.object({

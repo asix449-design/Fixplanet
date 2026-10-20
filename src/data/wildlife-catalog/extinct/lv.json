@@ -279,7 +279,26 @@
       "when": "Izmira ap 1400. gadiem pēc cilvēku kolonizācijas: ne senā dziļā pagātnē.",
       "humanRole": "Pārmedīšana un meža dedzināšana no pirmajiem cilvēkiem salās ar naivu megafaunu.",
       "sources": [],
-      "sourcesNote": "Holdaway & Jacomb 2000 un vēlākās radiogļūdeņa sintēzes; muzeja ieraksti Dinornis robustus."
+      "sourcesNote": "Holdaway & Jacomb 2000 un vēlākās radiogļūdeņa sintēzes; muzeja ieraksti Dinornis robustus.",
+      "scale": {
+        "heightLabel": "Muguras augstums",
+        "lengthLabel": "No knābja līdz astes galam",
+        "captionExtra": "Šo putnu iznīdēja Jaunzēlandes pirmo iedzīvotāju medības.",
+        "estimate": {
+          "label": "Skots Hārtmens, Dienvidu salas milzu moa skeleta rekonstrukcija (Scott Hartman, Skeletal Drawing: Dinornis robustus)",
+          "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+        },
+        "sources": [
+          {
+            "label": "Jaunzēlandes putni tīmeklī: Dienvidu salas milzu moa (New Zealand Birds Online: South Island giant moa)",
+            "url": "https://www.nzbirdsonline.org.nz/species/south-island-giant-moa"
+          },
+          {
+            "label": "Skots Hārtmens, Dienvidu salas milzu moa skeleta rekonstrukcija (Scott Hartman, Skeletal Drawing: Dinornis robustus)",
+            "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+          }
+        ]
+      }
     },
     "irish-elk": {
       "commonName": "Milzu briedis",

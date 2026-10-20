@@ -675,5 +675,18 @@
         "lv": "Ķermeņa garums bez astes"
       }
     }
+  },
+  "reconstruction": {
+    "allowedMethods": [
+      "skeletal-reconstruction",
+      "life-model",
+      "allometric-estimate",
+      "museum-statement"
+    ],
+    "approxRequired": true,
+    "minEstimateSources": 1,
+    "ownImageMeasurementAllowed": false,
+    "humanCauseRequired": true,
+    "_note": "Aigars 2026-10-19: reconstructions only for animals lost because of humans; a cited estimate source with a quote; every reconstructed number says about; own strip under each shelf's scale, never on the exact scale; a sculptor's model alone is not a source."
   }
 }

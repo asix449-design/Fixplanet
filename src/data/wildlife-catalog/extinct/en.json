@@ -271,7 +271,26 @@
       "when": "Extinct by about the 1400s, after human colonisation: not a deep-time disappearance.",
       "humanRole": "Overhunting and firing of forest by the first people on islands with naive megafauna.",
       "sources": [],
-      "sourcesNote": "Holdaway & Jacomb 2000 and later radiocarbon syntheses; museum records for Dinornis robustus."
+      "sourcesNote": "Holdaway & Jacomb 2000 and later radiocarbon syntheses; museum records for Dinornis robustus.",
+      "scale": {
+        "heightLabel": "Back height",
+        "lengthLabel": "Bill to tail tip",
+        "captionExtra": "This bird was hunted to extinction by the first people of New Zealand.",
+        "estimate": {
+          "label": "Scott Hartman, Skeletal Drawing: Dinornis robustus",
+          "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+        },
+        "sources": [
+          {
+            "label": "New Zealand Birds Online: South Island giant moa",
+            "url": "https://www.nzbirdsonline.org.nz/species/south-island-giant-moa"
+          },
+          {
+            "label": "Scott Hartman, Skeletal Drawing: Dinornis robustus",
+            "url": "https://www.skeletaldrawing.com/theropods/dinornis-robustus/"
+          }
+        ]
+      }
     },
     "irish-elk": {
       "commonName": "Irish elk",

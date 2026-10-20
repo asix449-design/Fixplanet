@@ -22,28 +22,84 @@
       "medium": "Medium",
       "large": "Large",
       "subgroup": "{group} {i}",
-      "subgroupLong": "{group}, part {i}"
+      "subgroupLong": "{group}, part {i}",
+      "tracks": {
+        "exact": {
+          "title": "Measured sizes"
+        },
+        "reconstruction": {
+          "title": "Size reconstructions",
+          "badge": "Reconstruction",
+          "badgeHint": "Approximate size, not an exact measurement",
+          "lead": "For these animals no exact measurements exist. The sizes shown are approximate reconstructions made by scientists from bones and models, and each one names its source.",
+          "caption": "{heightLabel} about {h}, {lengthLabel} about {l}",
+          "estimateLine": "Estimate: {source}",
+          "range": "from {a} to {b}"
+        }
+      }
     },
     "ru": {
       "small": "Мелкие",
       "medium": "Средние",
       "large": "Крупные",
       "subgroup": "{group} {i}",
-      "subgroupLong": "{group}, часть {i}"
+      "subgroupLong": "{group}, часть {i}",
+      "tracks": {
+        "exact": {
+          "title": "Измеренные размеры"
+        },
+        "reconstruction": {
+          "title": "Реконструкции размеров",
+          "badge": "Реконструкция",
+          "badgeHint": "Приблизительный размер, не точное измерение",
+          "lead": "Для этих животных точных измерений нет. Показанные размеры являются приблизительными реконструкциями учёных по костям и моделям, у каждой указан источник.",
+          "caption": "{heightLabel} около {h}, {lengthLabel} около {l}",
+          "estimateLine": "Оценка: {source}",
+          "range": "от {a} до {b}"
+        }
+      }
     },
     "pl": {
       "small": "Małe",
       "medium": "Średnie",
       "large": "Duże",
       "subgroup": "{group} {i}",
-      "subgroupLong": "{group}, część {i}"
+      "subgroupLong": "{group}, część {i}",
+      "tracks": {
+        "exact": {
+          "title": "Zmierzone rozmiary"
+        },
+        "reconstruction": {
+          "title": "Rekonstrukcje rozmiarów",
+          "badge": "Rekonstrukcja",
+          "badgeHint": "Przybliżony rozmiar, nie dokładny pomiar",
+          "lead": "Dla tych zwierząt nie ma dokładnych pomiarów. Podane rozmiary to przybliżone rekonstrukcje naukowców na podstawie kości i modeli, a przy każdej podano źródło.",
+          "caption": "{heightLabel} około {h}, {lengthLabel} około {l}",
+          "estimateLine": "Szacunek: {source}",
+          "range": "od {a} do {b}"
+        }
+      }
     },
     "lv": {
       "small": "Mazie",
       "medium": "Vidējie",
       "large": "Lielie",
       "subgroup": "{group} {i}",
-      "subgroupLong": "{group}, {i}. daļa"
+      "subgroupLong": "{group}, {i}. daļa",
+      "tracks": {
+        "exact": {
+          "title": "Izmērītie izmēri"
+        },
+        "reconstruction": {
+          "title": "Izmēru rekonstrukcijas",
+          "badge": "Rekonstrukcija",
+          "badgeHint": "Aptuvens izmērs, nevis precīzs mērījums",
+          "lead": "Šiem dzīvniekiem nav precīzu mērījumu. Parādītie izmēri ir aptuvenas zinātnieku rekonstrukcijas pēc kauliem un modeļiem, un pie katras norādīts avots.",
+          "caption": "{heightLabel} apmēram {h}, {lengthLabel} apmēram {l}",
+          "estimateLine": "Aprēķins: {source}",
+          "range": "no {a} līdz {b}"
+        }
+      }
     }
   },
   "options": {

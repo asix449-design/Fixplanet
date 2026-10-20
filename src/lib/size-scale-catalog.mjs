@@ -316,7 +316,24 @@ function mount(root) {
   }
 
   function announcement(animal, position) {
+    if (animal.liveFromCaption) return `${animal.name}, ${position}. ${animal.caption}`;
     return `${animal.name}, ${position}. ${animal.heightLabel} ${animal.heightText}. ${animal.lengthLabel} ${animal.lengthText}.`;
+  }
+
+  function fillEstimate(animal) {
+    const estimateEl = root.querySelector('[data-estimate]');
+    if (!estimateEl) return;
+    estimateEl.replaceChildren();
+    if (!animal.estimate?.href) {
+      estimateEl.hidden = true;
+      return;
+    }
+    estimateEl.hidden = false;
+    const link = document.createElement('a');
+    link.href = animal.estimate.href;
+    link.rel = 'noopener noreferrer';
+    link.textContent = animal.estimate.label || '';
+    estimateEl.append(link);
   }
 
   function fillSources(animal) {
@@ -401,6 +418,7 @@ function mount(root) {
       nameEl.textContent = animal.name;
     }
     captionEl.textContent = animal.caption;
+    fillEstimate(animal);
     fillCredit(animal);
     hLabel.textContent = animal.heightLabel;
     lLabel.textContent = animal.lengthLabel;

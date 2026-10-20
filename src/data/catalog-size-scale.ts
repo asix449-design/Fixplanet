@@ -67,6 +67,7 @@ export type CatalogScaleAnimal = {
   heightText: string;
   lengthText: string;
   sources: CatalogScaleSource[];
+  estimate?: { href: string; label: string };
   photo: CatalogScaleGeom & { webp: string; png: string };
 };
 
@@ -75,7 +76,7 @@ export type CatalogScaleGroup = {
   label: string;
   positionPattern: string;
   animals: CatalogScaleAnimal[];
-  clientAnimals: Array<Omit<CatalogScaleAnimal, 'slug'> & { sil: CatalogScaleGeom; silhouetteCredit: string }>;
+  clientAnimals: Array<Omit<CatalogScaleAnimal, 'slug'> & { sil: CatalogScaleGeom; silhouetteCredit: string; liveFromCaption?: boolean }>;
 };
 
 export type CatalogScaleView = {
@@ -89,18 +90,32 @@ export type CatalogScaleView = {
   prev: string;
   next: string;
   sourcesLabel: string;
+  badge?: string;
+  badgeHint?: string;
   groups: CatalogScaleGroup[];
+};
+
+export type ScaleTrack = 'exact' | 'reconstruction';
+
+type SizeMetric = {
+  value?: number;
+  mean?: number;
+  unit?: string;
+  kind?: string;
+  range?: [number, number] | null;
+  basis?: string;
 };
 
 type ShelfCard = {
   slug: string;
   scientificName?: string;
   size?: {
-    height?: { value?: number; mean?: number; unit?: string };
-    length?: { value?: number; mean?: number; unit?: string; basis?: string };
+    height?: SizeMetric;
+    length?: SizeMetric;
   };
   scale?: {
     show?: boolean;
+    track?: ScaleTrack;
     basis?: string;
     sortKey?: number;
     sizeGroup?: string | null;
@@ -125,6 +140,7 @@ type CopyCard = {
     captionExtra?: string;
     credit?: string;
     changes?: string;
+    estimate?: { label: string; url: string };
     sources?: { label: string; url: string }[];
   };
 };
@@ -140,8 +156,24 @@ type RegistryScale = {
   maxPerGroup?: number;
 };
 
+type ReconstructionLabels = {
+  title: string;
+  badge: string;
+  badgeHint: string;
+  lead: string;
+  caption: string;
+  estimateLine: string;
+  range: string;
+};
+
 type RegistryFile = {
-  scaleLabels: Record<Locale, { small: string; medium: string; large: string; subgroup: string }>;
+  scaleLabels: Record<Locale, {
+    small: string;
+    medium: string;
+    large: string;
+    subgroup: string;
+    tracks?: { exact?: { title?: string }; reconstruction?: ReconstructionLabels };
+  }>;
   shelves: { id: string; scale?: RegistryScale }[];
 };
 
@@ -223,15 +255,35 @@ function chunkLabel(name: string, labels: { subgroup?: string }, index: number, 
 
 type Method = { basis?: string; scaleBasisRequired?: string };
 
-export function hasCatalogScale(shelf: string): boolean {
+function cardTrack(card: ShelfCard): ScaleTrack {
+  return card.scale?.track === 'reconstruction' ? 'reconstruction' : 'exact';
+}
+
+function rangeMetres(metric: SizeMetric | undefined): [number, number] | null {
+  const range = metric?.range;
+  if (!range || range.length !== 2 || !(range[0] > 0) || !(range[1] > 0)) return null;
+  const factor = metric?.unit === 'mm' ? 0.001 : 1;
+  return [range[0] * factor, range[1] * factor];
+}
+
+function reconstructionFigure(metric: SizeMetric | undefined, point: string, locale: Locale, numberFormat: RulesFile['numberFormat'], rangeTemplate: string): string {
+  const range = rangeMetres(metric);
+  if (!range) return point;
+  const a = formatMeasure(range[0], locale, numberFormat);
+  const b = formatMeasure(range[1], locale, numberFormat);
+  if (!a || !b) return point;
+  return rangeTemplate.replaceAll('{a}', a).replaceAll('{b}', b);
+}
+
+export function hasCatalogScale(shelf: string, track: ScaleTrack = 'exact'): boolean {
   if (!isScaleShelf(shelf)) return false;
   const spec = registry().shelves.find((item) => item.id === shelf);
   if (!spec?.scale?.enabled) return false;
-  return (shelves()[shelf]?.meta.cards || []).some((card) => card.scale?.show && card.scale.image?.webp);
+  return (shelves()[shelf]?.meta.cards || []).some((card) => card.scale?.show && card.scale.image?.webp && cardTrack(card) === track);
 }
 
-export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel: string): CatalogScaleView | null {
-  if (!hasCatalogScale(shelf) || !isScaleShelf(shelf)) return null;
+export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel: string, track: ScaleTrack = 'exact'): CatalogScaleView | null {
+  if (!hasCatalogScale(shelf, track) || !isScaleShelf(shelf)) return null;
   const spec = registry().shelves.find((item) => item.id === shelf);
   const scale = spec?.scale;
   if (!scale?.enabled) return null;
@@ -243,8 +295,11 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
   const numberFormat = ruleFile.numberFormat;
   const illustration = ruleFile.illustrationLine?.[locale] || ruleFile.illustrationLine?.en || '';
 
+  const trackLabels = labels.tracks?.reconstruction;
+  if (track === 'reconstruction' && !trackLabels) return null;
+
   const rows = bundle.meta.cards
-    .filter((card) => card.scale?.show && card.scale.image?.webp && card.scale.image.pxW && card.scale.image.pxH)
+    .filter((card) => card.scale?.show && card.scale.image?.webp && card.scale.image.pxW && card.scale.image.pxH && cardTrack(card) === track)
     .map((card) => {
       const copy = bundle.copy[locale]?.cards?.[card.slug] ?? bundle.copy.en?.cards?.[card.slug];
       if (!copy?.scale) return null;
@@ -260,6 +315,22 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
       const photoGeom = geom(image.pxW, image.pxH, image.pxH, mPerUnit);
       const filePage = image.sourceUrl || '';
       const credit = copy.scale.credit?.trim() || (image.kind === 'illustration' ? illustration : '');
+      const heightCaption = track === 'reconstruction' && trackLabels
+        ? reconstructionFigure(card.size?.height, heightText, locale, numberFormat, trackLabels.range)
+        : heightText;
+      const lengthCaption = track === 'reconstruction' && trackLabels
+        ? reconstructionFigure(card.size?.length, lengthText, locale, numberFormat, trackLabels.range)
+        : lengthText;
+      const caption = track === 'reconstruction' && trackLabels
+        ? [trackLabels.caption
+          .replaceAll('{heightLabel}', copy.scale.heightLabel)
+          .replaceAll('{h}', heightCaption)
+          .replaceAll('{lengthLabel}', copy.scale.lengthLabel)
+          .replaceAll('{l}', lengthCaption), copy.scale.captionExtra].filter(Boolean).join(' ')
+        : composeScaleCaption(copy.scale.heightLabel, heightText, copy.scale.lengthLabel, lengthText, copy.scale.captionExtra);
+      const estimate = track === 'reconstruction' && trackLabels && copy.scale.estimate
+        ? { href: copy.scale.estimate.url, label: trackLabels.estimateLine.replaceAll('{source}', copy.scale.estimate.label) }
+        : undefined;
       return {
         sortKey,
         order: card.scale?.order ?? 0,
@@ -268,7 +339,7 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
           slug: card.slug,
           name: copy.commonName,
           nameItalic: copy.commonName === card.scientificName,
-          caption: composeScaleCaption(copy.scale.heightLabel, heightText, copy.scale.lengthLabel, lengthText, copy.scale.captionExtra),
+          caption,
           credit,
           licenceHref: image.licenseUrl || '',
           filePageHref: filePage,
@@ -280,6 +351,7 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
           heightText,
           lengthText,
           sources: (copy.scale.sources || []).map((source) => ({ href: source.url, label: source.label })),
+          estimate,
           photo: { ...photoGeom, webp: image.webp, png: image.png || image.webp },
         } satisfies CatalogScaleAnimal,
       };
@@ -311,6 +383,7 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
         animals,
         clientAnimals: animals.map(({ slug: _slug, ...animal }) => ({
           ...animal,
+          liveFromCaption: track === 'reconstruction',
           silhouetteCredit: animal.credit,
           sil: {
             vbW: animal.photo.vbW,
@@ -329,8 +402,10 @@ export function getCatalogSizeScale(shelf: string, locale: Locale, sourcesLabel:
   if (!groups.length) return null;
 
   return {
-    title: shared.section_title,
-    lead: shared.section_lead,
+    title: track === 'reconstruction' && trackLabels ? trackLabels.title : (labels.tracks?.exact?.title || shared.section_title),
+    lead: track === 'reconstruction' && trackLabels ? trackLabels.lead : shared.section_lead,
+    badge: track === 'reconstruction' ? trackLabels?.badge : undefined,
+    badgeHint: track === 'reconstruction' ? trackLabels?.badgeHint : undefined,
     height: shared.height,
     length: shared.length,
     unit: shared.unit_short,
