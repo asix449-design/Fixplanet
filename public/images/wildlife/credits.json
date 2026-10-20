@@ -1040,5 +1040,89 @@
     "artist": "Original: SVKMBFLY; this edit: MPF / Wikimedia Commons",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ardeotis_nigriceps,_Desert_National_Park,_Rajasthan,_India_1.jpg"
+  },
+  {
+    "slug": "black-footed-ferret",
+    "file": "black-footed-ferret.webp",
+    "artist": "laiet17 / Wikimedia Commons",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mustela_nigripes_179581105.jpg"
+  },
+  {
+    "slug": "golden-lion-tamarin",
+    "file": "golden-lion-tamarin.webp",
+    "artist": "Daderot / Wikimedia Commons",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leontopithecus_rosalia_-_Copenhagen_Zoo_-_DSC09082.JPG"
+  },
+  {
+    "slug": "scimitar-horned-oryx",
+    "file": "scimitar-horned-oryx.webp",
+    "artist": "Chrumps / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oryx_dammah_2.jpg"
+  },
+  {
+    "slug": "przewalskis-horse",
+    "file": "przewalskis-horse.webp",
+    "artist": "IAEA Imagebank / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Przewalski%27s_Horse_(02710137).jpg"
+  },
+  {
+    "slug": "saiga",
+    "file": "saiga.webp",
+    "artist": "Andrey Giljov / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg"
+  },
+  {
+    "slug": "alpine-ibex",
+    "file": "alpine-ibex.webp",
+    "artist": "Giles Laurent / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:003_Wild_Alpine_Ibex_Sunset_Creux_du_Van_Mont_Racine_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "slug": "northern-elephant-seal",
+    "file": "northern-elephant-seal.webp",
+    "artist": "Mike Baird / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mating_scene_with_elevated_Alpha_Male._Elephant_Seals_of_Piedras_Blancas.jpg"
+  },
+  {
+    "slug": "indian-rhinoceros",
+    "file": "indian-rhinoceros.webp",
+    "artist": "Charles J. Sharp / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_rhinoceros_(Rhinoceros_unicornis)_1.jpg"
+  },
+  {
+    "slug": "sea-otter",
+    "file": "sea-otter.webp",
+    "artist": "Dave Bezaire & Susi Havens-Bezaire / Wikimedia Commons",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_Otters.jpg"
+  },
+  {
+    "slug": "american-alligator",
+    "file": "american-alligator.webp",
+    "artist": "Postdlf / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Alligator.jpg"
+  },
+  {
+    "slug": "giant-panda",
+    "file": "giant-panda.webp",
+    "artist": "J. Patrick Fischer / Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG"
+  },
+  {
+    "slug": "nene",
+    "file": "nene.webp",
+    "artist": "Brenda Zaun of U.S. Fish and Wildlife Service Headquarters / Wikimedia Commons",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Branta_sandvicensis_-Kilauea_Point_National_Wildlife_Refuge,_Hawaii,_USA-8.jpg"
   }
 ]
