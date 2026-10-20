@@ -12,6 +12,7 @@
     "fetch:economy": "node scripts/fetch-economy.mjs",
     "check:economy": "node scripts/check-economy.mjs",
     "test:economy": "node --test scripts/economy/economy.test.mjs",
+    "test:hazards": "node --test scripts/hazards.test.mjs",
     "preview": "astro preview --host",
     "astro": "astro"
   },

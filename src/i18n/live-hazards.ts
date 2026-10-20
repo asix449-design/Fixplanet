@@ -107,7 +107,7 @@ const creditsEn: HazardCredit[] = [
     text: `Fire data: National Aeronautics and Space Administration, Fire Information for Resource Management System, open data. ${firmsAck}`,
   },
   {
-    name: 'Global Disaster Alert and Coordination System',
+    name: 'GDACS, Global Disaster Alert and Coordination System',
     href: href.gdacs,
     license: 'Public domain',
     licenseHref: href.nhcLicense,
@@ -139,7 +139,7 @@ const creditsEn: HazardCredit[] = [
     href: href.gdacs,
     license: 'Copernicus notice',
     licenseHref: href.copernicusLicense,
-    text: 'Named fire data: Global Disaster Alert and Coordination System, based on the Global Wildfire Information System, and the National Aeronautics and Space Administration Earth Observatory Natural Event Tracker. Generated using Copernicus Emergency Management Service information, 2026.',
+    text: 'Named fire data: GDACS, Global Disaster Alert and Coordination System, based on the Global Wildfire Information System, and the National Aeronautics and Space Administration Earth Observatory Natural Event Tracker. Generated using Copernicus Emergency Management Service information, 2026.',
   },
   {
     name: 'OpenFreeMap',
@@ -225,7 +225,7 @@ const pageEn: LiveHazardsPage = {
     droughts:
       'The coloured shading shows how much drier than normal the soil is, from the Global Drought Observatory of the Copernicus programme.',
     wildfires:
-      'Each dot is a named fire reported by the Global Disaster Alert and Coordination System or the NASA Earth Observatory Natural Event Tracker.',
+      'Each dot is a named fire reported by GDACS, Global Disaster Alert and Coordination System, or the NASA Earth Observatory Natural Event Tracker.',
   },
   droughtEurope: 'Europe drought indicator',
   droughtEuropeCaption:
@@ -235,7 +235,7 @@ const pageEn: LiveHazardsPage = {
   alerts: { Red: 'Red', Orange: 'Orange', Yellow: 'Yellow', Green: 'Green' },
   sources: {
     USGS: 'U.S. Geological Survey',
-    GDACS: 'Global Disaster Alert and Coordination System',
+    GDACS: 'GDACS, Global Disaster Alert and Coordination System',
     EONET: 'NASA Earth Observatory Natural Event Tracker',
     FIRMS: 'Fire Information for Resource Management System',
     NHC: 'National Hurricane Center',
