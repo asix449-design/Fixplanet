@@ -2,6 +2,7 @@ import type { ForestNumberSlug } from '../data/forest-atlas';
 import { cite, type PrimarySource } from '../data/sources';
 import type { Locale } from './config';
 import type { ForestAtlasCopy } from './forest-atlas';
+import { forestNumberLeftovers } from './forest-numbers-leftovers';
 
 const fraHub = 'https://www.fao.org/forest-resources-assessment/past-assessments/fra-2025/en';
 const fraPdf = 'https://www.fao.org/3/cd6709en/cd6709en.pdf';
@@ -43,7 +44,7 @@ function fraSources(labels: [string, string, string, string, string], photoUrl: 
   ];
 }
 
-const en: Record<ForestNumberSlug, ForestAtlasCopy> = {
+const en = {
   'forest-remaining': {
     title: 'Forest remaining',
     meta: 'Global Forest Resources Assessment 2025 · 4.14 billion hectares · 32 percent of land',
@@ -140,7 +141,7 @@ const en: Record<ForestNumberSlug, ForestAtlasCopy> = {
   },
 };
 
-const ru: Record<ForestNumberSlug, ForestAtlasCopy> = {
+const ru = {
   'forest-remaining': {
     title: 'Лес, который остался',
     meta: 'Глобальная оценка лесных ресурсов 2025 года · 4,14 миллиарда гектаров · 32 процента суши',
@@ -316,7 +317,7 @@ const ru: Record<ForestNumberSlug, ForestAtlasCopy> = {
   },
 };
 
-const pl: Record<ForestNumberSlug, ForestAtlasCopy> = {
+const pl = {
   'forest-remaining': {
     title: 'Las, który został',
     meta: 'Globalna Ocena Zasobów Leśnych 2025 · 4,14 miliarda hektarów · 32 procent lądu',
@@ -492,7 +493,7 @@ const pl: Record<ForestNumberSlug, ForestAtlasCopy> = {
   },
 };
 
-const lv: Record<ForestNumberSlug, ForestAtlasCopy> = {
+const lv = {
   'forest-remaining': {
     title: 'Mežs, kas palicis',
     meta: 'Globālais meža resursu novērtējums 2025 · 4,14 miljardi hektāru · 32 procenti sauszemes',
@@ -669,8 +670,8 @@ const lv: Record<ForestNumberSlug, ForestAtlasCopy> = {
 };
 
 export const forestNumberCopy: Record<Locale, Record<ForestNumberSlug, ForestAtlasCopy>> = {
-  en,
-  ru,
-  pl,
-  lv,
+  en: { ...en, ...forestNumberLeftovers.en },
+  ru: { ...ru, ...forestNumberLeftovers.ru },
+  pl: { ...pl, ...forestNumberLeftovers.pl },
+  lv: { ...lv, ...forestNumberLeftovers.lv },
 };

@@ -24,6 +24,8 @@ export type ForestAtlasCopy = {
   sourceLabel?: string;
   /** Localized numbered sources. Falls back to the English meta list. */
   sources?: PrimarySource[];
+  /** Commons file page. Shown when it is not already the licence link. */
+  imagePageUrl?: string;
 };
 
 export type ForestAtlasEntry = ForestAtlasMeta & ForestAtlasCopy;
@@ -34,6 +36,7 @@ export type ForestAtlasChrome = {
   openSource: string;
   schematic: string;
   layersAria: string;
+  imagePage: string;
 };
 
 /** Section headings. Map plates in RU, PL and LV still use the short detail only. */
@@ -72,10 +75,10 @@ export function forestAtlasSections(locale: Locale) {
 
 /** Hub lede. The last sentence is the Numbers doorway line. */
 export const forestAtlasHubLede: Record<Locale, string> = {
-  en: 'Figures from the Food and Agriculture Organization of the United Nations, satellite greenness, reconstructions, and outlooks, plus planted forests, forest carbon stock, tree cover, peatlands, canopy height, aboveground biomass density, burned area, and ecological zones. Each layer names its publisher and what the layer measures. Five headline figures now open their own pages: forest remaining, primary forest, net forest-area loss, tropical primary forest loss and the number of trees alive.',
-  ru: 'Цифры Продовольственной и сельскохозяйственной организации Объединённых Наций, спутниковая зелень, реконструкции и перспективы, а также посаженные леса, запас углерода в лесах, древесный покров, торфяники, высота полога, плотность надземной биомассы, площадь гарей и экологические зоны. У каждого слоя указаны издатель и то, что слой измеряет. Пять главных показателей теперь открываются на отдельных страницах: лес, который остался, первичные леса, чистая потеря площади леса, потеря тропического первичного леса и число живых деревьев.',
-  pl: 'Liczby Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, zieleń z satelity, rekonstrukcje i perspektywy, oraz lasy sadzone, zapas węgla w lasach, pokrycie drzewami, torfowiska, wysokość koron, gęstość biomasy nadziemnej, areał spalenisk i strefy ekologiczne. Przy każdej warstwie podany jest wydawca i to, co warstwa mierzy. Pięć głównych wskaźników ma teraz własne strony: las, który został, lasy pierwotne, strata netto powierzchni lasu, utrata tropikalnego lasu pierwotnego i liczba żywych drzew.',
-  lv: 'Skaitļi no Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas, satelītu zaļums, rekonstrukcijas un nākotnes skati, kā arī stādītie meži, meža oglekļa krājums, koku segums, kūdrāji, vainagu augstums, virszemes biomasas blīvums, izdegušās platības un ekoloģiskās zonas. Katram slānim norādīts izdevējs un tas, ko slānis mēra. Piecus galvenos rādītājus tagad var atvērt atsevišķās lapās: mežs, kas palicis, primārie meži, neto meža platības zudums, tropu primārā meža zudums un dzīvo koku skaits.',
+  en: 'Figures from the Food and Agriculture Organization of the United Nations, satellite greenness, reconstructions, and outlooks, plus planted forests, forest carbon stock, tree cover, peatlands, canopy height, aboveground biomass density, burned area, and ecological zones. Each layer names its publisher and what the layer measures. The headline figures now open their own pages.',
+  ru: 'Цифры Продовольственной и сельскохозяйственной организации Объединённых Наций, спутниковая зелень, реконструкции и перспективы, а также посаженные леса, запас углерода в лесах, древесный покров, торфяники, высота полога, плотность надземной биомассы, площадь гарей и экологические зоны. У каждого слоя указаны издатель и то, что слой измеряет. Главные показатели теперь открываются на отдельных страницах.',
+  pl: 'Liczby Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa, zieleń z satelity, rekonstrukcje i perspektywy, oraz lasy sadzone, zapas węgla w lasach, pokrycie drzewami, torfowiska, wysokość koron, gęstość biomasy nadziemnej, areał spalenisk i strefy ekologiczne. Przy każdej warstwie podany jest wydawca i to, co warstwa mierzy. Główne wskaźniki mają teraz własne strony.',
+  lv: 'Skaitļi no Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas, satelītu zaļums, rekonstrukcijas un nākotnes skati, kā arī stādītie meži, meža oglekļa krājums, koku segums, kūdrāji, vainagu augstums, virszemes biomasas blīvums, izdegušās platības un ekoloģiskās zonas. Katram slānim norādīts izdevējs un tas, ko slānis mēra. Galvenos rādītājus tagad var atvērt atsevišķās lapās.',
 };
 
 const chrome: Record<Locale, ForestAtlasChrome> = {
@@ -85,6 +88,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Open the source',
     schematic: 'Schematic after the named source. Open the source for the current layer.',
     layersAria: 'Forest measurements',
+    imagePage: 'Image page',
   },
   ru: {
     badge: 'Схема',
@@ -92,6 +96,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Открыть источник',
     schematic: 'Схема по названному источнику. Актуальный слой есть в источнике.',
     layersAria: 'Измерения лесов',
+    imagePage: 'Страница изображения',
   },
   pl: {
     badge: 'Schemat',
@@ -99,6 +104,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Otwórz źródło',
     schematic: 'Schemat według nazwanego źródła. Aktualna warstwa jest w źródle.',
     layersAria: 'Pomiary lasów',
+    imagePage: 'Strona obrazu',
   },
   lv: {
     badge: 'Shēma',
@@ -106,6 +112,7 @@ const chrome: Record<Locale, ForestAtlasChrome> = {
     openSource: 'Atvērt avotu',
     schematic: 'Shēma pēc nosauktā avota. Aktuālais slānis ir avotā.',
     layersAria: 'Meža mērījumi',
+    imagePage: 'Attēla lapa',
   },
 };
 
