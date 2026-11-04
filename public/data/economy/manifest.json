@@ -20,23 +20,23 @@
       },
       "attribution": {
         "credit": "World Bank Commodity Markets (Pink Sheet), CC BY 4.0",
-        "edition": "October 2026"
+        "edition": "November 2026"
       },
       "modified": true,
       "changes": ["Five series are taken from the sheet Monthly Prices: Crude oil, Brent; Natural gas, US; Natural gas, Europe; Liquefied natural gas, Japan; Coal, Australian. All other series are left out.", "Month labels such as 2026M09 are written as 2026-09, and the values of each series are listed from the first month of the file.", "Cells the workbook marks as missing are stored as null.", "Values are the numbers in the workbook, in the units the workbook gives. Nothing is rounded or converted in the data file; rounding for display is done on the page."],
-      "publisherDate": "2026-10-02",
-      "dataAsOf": "2026-09",
-      "retrievedAt": "2026-10-05T04:18:35.781Z",
+      "publisherDate": "2026-11-03",
+      "dataAsOf": "2026-10",
+      "retrievedAt": "2026-11-04T14:51:34.000Z",
       "status": "ok",
       "consecutiveFailures": 0,
       "lastError": null,
       "lastFailureAt": null,
       "checksums": {
         "algorithm": "sha256",
-        "output": "1b0c07f3e1604335c3b1e7a29da68d93fd86a199fa10e1017818b663c8937686",
-        "outputBytes": 24843,
-        "source": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
-        "sourceBytes": 586099
+        "output": "401d7b0f401f9b29fe8513e19bc3e2ac8789da658eb1ccb9a4e6f8863dfef71a",
+        "outputBytes": 24874,
+        "source": "3c8d9d8dbb48342fdbf24777c39a8ce8964cc2fd0958f72f6779e6e4ad99cde2",
+        "sourceBytes": 587760
       },
       "series": [
         {
@@ -44,40 +44,40 @@
           "name": "Crude oil, Brent",
           "unit": "$/bbl",
           "first": "1960-01",
-          "last": "2026-09",
-          "count": 801
+          "last": "2026-10",
+          "count": 802
         },
         {
           "id": "gas_us",
           "name": "Natural gas, US",
           "unit": "$/mmbtu",
           "first": "1960-01",
-          "last": "2026-09",
-          "count": 801
+          "last": "2026-10",
+          "count": 802
         },
         {
           "id": "gas_europe",
           "name": "Natural gas, Europe",
           "unit": "$/mmbtu",
           "first": "1960-01",
-          "last": "2026-09",
-          "count": 801
+          "last": "2026-10",
+          "count": 802
         },
         {
           "id": "lng_japan",
           "name": "Liquefied natural gas, Japan",
           "unit": "$/mmbtu",
           "first": "1977-01",
-          "last": "2026-09",
-          "count": 597
+          "last": "2026-10",
+          "count": 598
         },
         {
           "id": "coal_australia",
           "name": "Coal, Australian",
           "unit": "$/mt",
           "first": "1970-01",
-          "last": "2026-09",
-          "count": 681
+          "last": "2026-10",
+          "count": 682
         }
       ]
     },
@@ -104,43 +104,43 @@
       },
       "modified": false,
       "changes": ["Layout only: the dates are listed once and each currency has one list of values in the same order.", "Values, decimals and series titles are as published by the ECB. Nothing is rounded, converted or computed. Rates computed by Fix Planet (cross rates, for example) never go into this file."],
-      "publisherDate": "2026-11-02",
-      "dataAsOf": "2026-11-02",
-      "retrievedAt": "2026-11-02T16:30:42.344Z",
+      "publisherDate": "2026-11-03",
+      "dataAsOf": "2026-11-03",
+      "retrievedAt": "2026-11-04T14:51:34.000Z",
       "status": "ok",
       "consecutiveFailures": 0,
       "lastError": null,
       "lastFailureAt": null,
       "checksums": {
         "algorithm": "sha256",
-        "output": "7be56eabc2bea8a01e96115a779ea09b5c80cf3c2d7612c738755a8634f66f29",
-        "outputBytes": 10708,
-        "source": "54319c8fa43b22251b03f66db0137694af71b7d842aff7f42ba251b242175a6f",
-        "sourceBytes": 166742
+        "output": "b3cf068af8cdb1b0e9a52e99dbf72bccecce4ad28517b759a1f939a053ddb415",
+        "outputBytes": 10710,
+        "source": "7086f5cd032e133ff66d871ae89a8ee683c9d340e4e973c59bb152d4cdb36c04",
+        "sourceBytes": 166744
       },
       "series": [
         {
           "id": "USD",
           "name": "US dollar/Euro ECB reference exchange rate",
           "unit": "USD",
-          "first": "2025-10-27",
-          "last": "2026-11-02",
+          "first": "2025-10-28",
+          "last": "2026-11-03",
           "count": 260
         },
         {
           "id": "GBP",
           "name": "Pound sterling/Euro ECB reference exchange rate",
           "unit": "GBP",
-          "first": "2025-10-27",
-          "last": "2026-11-02",
+          "first": "2025-10-28",
+          "last": "2026-11-03",
           "count": 260
         },
         {
           "id": "PLN",
           "name": "Polish zloty/Euro ECB reference exchange rate",
           "unit": "PLN",
-          "first": "2025-10-27",
-          "last": "2026-11-02",
+          "first": "2025-10-28",
+          "last": "2026-11-03",
           "count": 260
         }
       ]
