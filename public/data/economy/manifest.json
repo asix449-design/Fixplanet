@@ -104,43 +104,43 @@
       },
       "modified": false,
       "changes": ["Layout only: the dates are listed once and each currency has one list of values in the same order.", "Values, decimals and series titles are as published by the ECB. Nothing is rounded, converted or computed. Rates computed by Fix Planet (cross rates, for example) never go into this file."],
-      "publisherDate": "2026-11-03",
-      "dataAsOf": "2026-11-03",
-      "retrievedAt": "2026-11-04T14:51:34.000Z",
+      "publisherDate": "2026-11-04",
+      "dataAsOf": "2026-11-04",
+      "retrievedAt": "2026-11-05T14:56:54.211Z",
       "status": "ok",
       "consecutiveFailures": 0,
       "lastError": null,
       "lastFailureAt": null,
       "checksums": {
         "algorithm": "sha256",
-        "output": "b3cf068af8cdb1b0e9a52e99dbf72bccecce4ad28517b759a1f939a053ddb415",
-        "outputBytes": 10710,
-        "source": "7086f5cd032e133ff66d871ae89a8ee683c9d340e4e973c59bb152d4cdb36c04",
-        "sourceBytes": 166744
+        "output": "6a37750a95f5ebe6a0ba141c09c54722ee41f2d05d0f1d8061fc4bf3e7839dc0",
+        "outputBytes": 10711,
+        "source": "716f6bf797e95d6e488c157e36816f149178141ede30ece9c9df1670c12bf7a9",
+        "sourceBytes": 166745
       },
       "series": [
         {
           "id": "USD",
           "name": "US dollar/Euro ECB reference exchange rate",
           "unit": "USD",
-          "first": "2025-10-28",
-          "last": "2026-11-03",
+          "first": "2025-10-29",
+          "last": "2026-11-04",
           "count": 260
         },
         {
           "id": "GBP",
           "name": "Pound sterling/Euro ECB reference exchange rate",
           "unit": "GBP",
-          "first": "2025-10-28",
-          "last": "2026-11-03",
+          "first": "2025-10-29",
+          "last": "2026-11-04",
           "count": 260
         },
         {
           "id": "PLN",
           "name": "Polish zloty/Euro ECB reference exchange rate",
           "unit": "PLN",
-          "first": "2025-10-28",
-          "last": "2026-11-03",
+          "first": "2025-10-29",
+          "last": "2026-11-04",
           "count": 260
         }
       ]
