@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "slug": "green-india-funded",
+      "tab": "reported",
+      "order": 1,
+      "value": 155130,
+      "qualifier": null,
+      "unit": "ha",
+      "period": "2015-16 to 2023-24",
+      "image": {
+        "src": "/images/value-scales/desert/india-thar-jojoba.webp",
+        "pxW": 862,
+        "pxH": 592,
+        "author": "LRBurdak",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GreeningdesertTharIndia.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://moef.gov.in/uploads/2023/05/Annual-Report-English-2023-24.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "algeria-green-dam-planted",
+      "tab": "reported",
+      "order": 2,
+      "value": 160000,
+      "qualifier": "about",
+      "unit": "ha",
+      "period": "by 1995",
+      "image": {
+        "src": "/images/value-scales/desert/algeria-green-dam.webp",
+        "pxW": 1080,
+        "pxH": 608,
+        "author": "رمزي زودة",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barrage_vert_Merouana.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.crstra.dz/telechargement/publications/internationales/2019/khaouani.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "kubuqi-restored",
+      "tab": "reported",
+      "order": 3,
+      "value": 500000,
+      "qualifier": "more_than",
+      "unit": "ha",
+      "period": "2025",
+      "image": {
+        "src": "/images/value-scales/desert/kubuqi-dunes.webp",
+        "pxW": 1200,
+        "pxH": 795,
+        "author": "Popolon",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kubuqi.dunes_et_stupa.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.unccd.int/news-stories/stories/desertification-recovery-lessons-kubuqi-forum",
+        "https://catalogue.unccd.int/1132_Review_Kubuqi_ecological_restoration_2015.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "kp-billion-tree-tsunami",
+      "tab": "reported",
+      "order": 4,
+      "value": 600000,
+      "qualifier": null,
+      "unit": "ha",
+      "period": "since 2014, reported 2022",
+      "image": {
+        "src": "/images/value-scales/desert/pakistan-murree-pines.webp",
+        "pxW": 707,
+        "pxH": 530,
+        "author": "Najafali05",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_roxburghii,_Murree_hill_station,_Pakistan.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.unccd.int/sites/default/files/national-reports/2022/PAK/UNCCD%20National%20Report%202022%20PAK.pdf",
+        "https://iucn.org/our-work/projects/third-party-monitoring-ten-billion-tree-tsunami-programme-tbttp-consortium-iucn"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "algeria-green-dam-design",
+      "tab": "planned",
+      "order": 5,
+      "value": 3000000,
+      "qualifier": null,
+      "unit": "ha",
+      "period": "1970",
+      "image": {
+        "src": "/images/value-scales/desert/algeria-green-dam.webp",
+        "pxW": 1080,
+        "pxH": 608,
+        "author": "رمزي زودة",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barrage_vert_Merouana.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.oss-online.org/sites/default/files/2022-11/OSS-Muraille-verteNI3_En.pdf",
+        "https://www.foret-mediterraneenne.org/upload/biblio/FORET_MED_2017_3_299-302.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "green-india-aim",
+      "tab": "planned",
+      "order": 6,
+      "value": 5000000,
+      "qualifier": null,
+      "unit": "ha",
+      "period": "2011",
+      "image": {
+        "src": "/images/value-scales/desert/india-thar-jojoba.webp",
+        "pxW": 862,
+        "pxH": 592,
+        "author": "LRBurdak",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GreeningdesertTharIndia.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://moef.gov.in/uploads/2017/08/Revised%20Mission%20Document.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "ethiopia-green-legacy-plan",
+      "tab": "planned",
+      "order": 7,
+      "value": 6500000,
+      "qualifier": null,
+      "unit": "ha",
+      "period": "2019",
+      "image": {
+        "src": "/images/value-scales/desert/ethiopia-nursery.webp",
+        "pxW": 636,
+        "pxH": 477,
+        "author": "Cunningchrisw",
+        "licence": "CC BY-SA 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ethiopia_nursery_.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.bbc.co.uk/news/world-africa-50813726",
+        "https://reliefweb.int/report/ethiopia/ethiopia-iom-participates-planting-world-record-breaking-353-million-trees-one-day",
+        "https://www.ena.et/web/eng/w/eng_3779338"
+      ],
+      "linkTo": null
+    }
+  ]
+}

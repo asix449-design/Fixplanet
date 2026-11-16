@@ -5431,3 +5431,140 @@ a.map-card:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.value-scale .size-scale-y-title {
+  margin-left: 0;
+}
+
+.value-scale .size-scale-baseline {
+  position: static;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+.value-scale-tabs {
+  margin-top: 0.2rem;
+}
+
+.value-scale-board {
+  padding: 0;
+}
+
+.value-scale-plot {
+  position: relative;
+}
+
+.value-scale-track,
+.value-scale-labels {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.7rem;
+  width: 100%;
+  padding-inline: 0.75rem;
+}
+
+.value-scale-track {
+  padding-top: 0.85rem;
+}
+
+.value-scale-labels {
+  align-items: flex-start;
+  padding-bottom: 0.75rem;
+}
+
+.value-scale-col {
+  flex: var(--weight) 1 0;
+  min-width: 0;
+}
+
+.value-scale-square {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: rgba(192, 255, 0, 0.38);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  appearance: none;
+}
+
+.value-scale-square img,
+.value-scale-tint {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.value-scale-tint {
+  background: rgba(192, 255, 0, 0.5);
+}
+
+.value-scale-square.is-selected::after,
+.value-scale-square:focus-visible::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 3px var(--lime);
+}
+
+.value-scale-square:focus-visible::after {
+  box-shadow: inset 0 0 0 3px #f4f4f0, inset 0 0 0 6px var(--lime);
+}
+
+.value-scale-chart:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 4px;
+}
+
+.value-scale-under {
+  margin: 0.4rem 0 0;
+  text-align: center;
+}
+
+.value-scale-number {
+  display: block;
+  color: #f4f4f0;
+  font-size: clamp(0.62rem, 1.6vw, 0.82rem);
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.value-scale-col.is-selected .value-scale-number {
+  color: var(--lime);
+}
+
+.value-scale-qualifier {
+  display: block;
+  min-height: 1.15em;
+  margin-top: 0.12rem;
+  color: #d9d9d0;
+  font-size: 0.72rem;
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.value-scale-line {
+  margin: 0.15rem 0 0.55rem;
+  font-size: 1.12rem;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: break-word;
+}
+
+.value-scale-detail {
+  margin: 0 0 0.75rem;
+  overflow-wrap: break-word;
+}

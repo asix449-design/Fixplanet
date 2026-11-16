@@ -1,0 +1,32 @@
+{
+  "scales": [
+    {
+      "id": "desert-greening",
+      "unit": "ha",
+      "shape": "area-square",
+      "tabs": [
+        "reported",
+        "planned"
+      ],
+      "defaultTab": "reported",
+      "numberFormat": {
+        "en": {
+          "thousands": ",",
+          "decimal": "."
+        },
+        "ru": {
+          "thousands": " ",
+          "decimal": ","
+        },
+        "pl": {
+          "thousands": " ",
+          "decimal": ","
+        },
+        "lv": {
+          "thousands": " ",
+          "decimal": ","
+        }
+      }
+    }
+  ]
+}

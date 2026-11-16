@@ -1,0 +1,254 @@
+---
+import { resolveLocale } from '../i18n';
+import { getValueScale, type ValueScaleItem } from '../lib/value-scale/load';
+
+interface Props {
+  id: string;
+}
+
+const locale = resolveLocale(Astro.currentLocale);
+const scale = getValueScale(Astro.props.id, locale);
+const sectionId = `value-scale-${scale.id}`;
+
+function position(pattern: string, n: number, total: number): string {
+  return pattern.replaceAll('{n}', String(n)).replaceAll('{total}', String(total));
+}
+
+function liveText(item: ValueScaleItem, place: string): string {
+  return `${item.name}. ${place}. ${item.valueLine}`;
+}
+---
+
+<section
+  class="section section-hub-follow size-scale-section value-scale"
+  id={sectionId}
+  aria-labelledby={`${sectionId}-heading`}
+  data-value-scale-root
+  data-default-tab={scale.defaultTab}
+  data-shape={scale.shape}
+>
+  <div class="wrap wildlife-list-panel geo-list-panel size-scale-panel">
+    <h2 id={`${sectionId}-heading`}>{scale.title}</h2>
+    <p class="size-scale-lead">{scale.lead}</p>
+
+    {
+      scale.tabs.length > 1 && (
+        <div class="size-scale-nav value-scale-tabs" role="tablist" aria-label={scale.title} data-value-switch>
+          {
+            scale.tabs.map((tab) => {
+              const selected = tab.id === scale.defaultTab;
+              return (
+                <button
+                  class:list={['filter-btn', { 'is-active': selected }]}
+                  type="button"
+                  role="tab"
+                  id={`${sectionId}-tab-${tab.id}`}
+                  aria-selected={selected ? 'true' : 'false'}
+                  aria-controls={`${sectionId}-panel-${tab.id}`}
+                  tabindex={selected ? 0 : -1}
+                  data-group={tab.id}
+                >
+                  {tab.label}
+                </button>
+              );
+            })
+          }
+        </div>
+      )
+    }
+
+    {
+      scale.tabs.map((tab) => {
+        const first = tab.items[0];
+        const initialPosition = position(scale.position, 1, tab.items.length);
+        const initialLive = liveText(first, initialPosition);
+        const configJson = JSON.stringify(tab.items.map((item) => ({
+          slug: item.slug,
+          name: item.name,
+          valueLine: item.valueLine,
+          hook: item.hook,
+          detail: item.detail,
+          caption: item.caption,
+          creditBefore: item.creditBefore,
+          licenceLabel: item.licenceLabel,
+          creditAfter: item.creditAfter,
+          licenceHref: item.licenceHref,
+          sources: item.sources,
+        }))).replace(/</g, '\\u003c');
+        const open = tab.id === scale.defaultTab;
+        return (
+          <div
+            class="size-scale-stage"
+            id={`${sectionId}-panel-${tab.id}`}
+            role="tabpanel"
+            aria-labelledby={`${sectionId}-tab-${tab.id}`}
+            data-value-scale
+            data-value-group={tab.id}
+            data-position-pattern={scale.position}
+            data-index="0"
+            hidden={open ? undefined : true}
+          >
+            <figure class="size-scale-figure">
+              <div
+                class="size-scale-chart value-scale-chart"
+                data-chart
+                tabindex="0"
+                role="group"
+                aria-labelledby={`${sectionId}-heading`}
+                aria-describedby={`${sectionId}-hint-${tab.id}`}
+              >
+                <p class="size-scale-y-title">
+                  <span>{scale.axisLabel}</span>
+                </p>
+                <div class="size-scale-board value-scale-board">
+                  <div class="value-scale-plot">
+                    <div class="value-scale-track">
+                      {
+                        tab.items.map((item, index) => (
+                          <div class="value-scale-col" style={`--weight:${item.weight}`}>
+                            <button
+                              class:list={['value-scale-square', { 'is-selected': index === 0 }]}
+                              type="button"
+                              data-item
+                              data-slug={item.slug}
+                              data-value={item.value}
+                              aria-pressed={index === 0 ? 'true' : 'false'}
+                              aria-label={`${item.name}. ${item.valueLine}`}
+                            >
+                              {
+                                item.image ? (
+                                  <img
+                                    src={item.image.src}
+                                    alt=""
+                                    width={item.image.pxW}
+                                    height={item.image.pxH}
+                                    loading={index === 0 && open ? 'eager' : 'lazy'}
+                                    decoding="async"
+                                  />
+                                ) : (
+                                  <span class="value-scale-tint"></span>
+                                )
+                              }
+                            </button>
+                          </div>
+                        ))
+                      }
+                    </div>
+                    <div class="size-scale-baseline"></div>
+                  </div>
+                  <div class="value-scale-labels">
+                    {
+                      tab.items.map((item, index) => (
+                        <div class:list={['value-scale-col', { 'is-selected': index === 0 }]} style={`--weight:${item.weight}`} data-label>
+                          <p class="value-scale-under">
+                            <span class="value-scale-number">{item.formattedValue}</span>
+                            <span class="value-scale-qualifier">{item.qualifierLabel}</span>
+                          </p>
+                        </div>
+                      ))
+                    }
+                  </div>
+                </div>
+              </div>
+
+              <figcaption class="size-scale-caption-block">
+                <p class="size-scale-position" data-position>{initialPosition}</p>
+                <h3 class="size-scale-name" data-name>{first.name}</h3>
+                <p class="value-scale-line" data-value-line>{first.valueLine}</p>
+                <p class="size-scale-caption" data-hook>{first.hook}</p>
+                <p class="value-scale-detail" data-detail>{first.detail}</p>
+                <p class="size-scale-caption" data-caption>{first.caption}</p>
+                <p class="size-scale-credit" data-credit>
+                  {
+                    first.licenceLabel ? (
+                      <>
+                        {first.creditBefore}<a href={first.licenceHref} rel="noopener noreferrer">{first.licenceLabel}</a>{first.creditAfter}
+                      </>
+                    ) : (
+                      `${first.creditBefore}${first.licenceLabel}${first.creditAfter}`
+                    )
+                  }
+                </p>
+                <details class="size-scale-sources">
+                  <summary>{scale.sourcesLabel}</summary>
+                  <ul data-sources>
+                    {
+                      first.sources.map((source) => (
+                        <li>
+                          {source.href ? (
+                            <a href={source.href} rel="noopener noreferrer">{source.label}</a>
+                          ) : (
+                            source.label
+                          )}
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </details>
+              </figcaption>
+            </figure>
+
+            <div class="size-scale-nav">
+              <button class="size-scale-btn" type="button" data-dir="-1" disabled>{scale.prev}</button>
+              <button class="size-scale-btn" type="button" data-dir="1" disabled={tab.items.length < 2}>{scale.next}</button>
+            </div>
+            <label class="visually-hidden" for={`${sectionId}-range-${tab.id}`}>{scale.title}</label>
+            <input
+              id={`${sectionId}-range-${tab.id}`}
+              class="size-scale-range"
+              type="range"
+              min="0"
+              max={tab.items.length - 1}
+              value="0"
+              step="1"
+              data-range
+              aria-valuetext={initialLive}
+            />
+            <p class="size-scale-hint" id={`${sectionId}-hint-${tab.id}`}>{scale.hint}</p>
+            <p class="visually-hidden" aria-live="polite" data-live>{initialLive}</p>
+            <script type="application/json" is:inline data-value-config set:html={configJson}></script>
+          </div>
+        );
+      })
+    }
+
+    <noscript>
+      {
+        scale.tabs.map((tab) => (
+          <div>
+            <p>{tab.label}</p>
+            <ol class="size-scale-fallback">
+              {
+                tab.items.map((item, index) => (
+                  <li>
+                    <p>{position(scale.position, index + 1, tab.items.length)}</p>
+                    <p>{item.name}</p>
+                    <p>{item.valueLine}</p>
+                    <p>{item.hook}</p>
+                    <p>{item.detail}</p>
+                    <p>{item.caption}</p>
+                    <p>
+                      {
+                        item.licenceLabel ? (
+                          <>
+                            {item.creditBefore}<a href={item.licenceHref} rel="noopener noreferrer">{item.licenceLabel}</a>{item.creditAfter}
+                          </>
+                        ) : (
+                          `${item.creditBefore}${item.licenceLabel}${item.creditAfter}`
+                        )
+                      }
+                    </p>
+                  </li>
+                ))
+              }
+            </ol>
+          </div>
+        ))
+      }
+    </noscript>
+  </div>
+</section>
+
+<script>
+  import '../lib/value-scale/stage.mjs';
+</script>

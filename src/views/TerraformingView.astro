@@ -2,6 +2,7 @@
 import TerraformingCard from '../components/TerraformingCard.astro';
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
+import ValueScale from '../components/ValueScale.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   geoHub,
@@ -86,6 +87,8 @@ const backdropHeight = hub ? geoHubBackdrop.height : 1280;
       />
     )
   }
+
+  {!hub && activeShelf === 'desert' && <ValueScale id="desert-greening" />}
 
   {
     !hub && (
