@@ -2,6 +2,7 @@
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
 import SolutionCard from '../components/SolutionCard.astro';
+import ValueScale from '../components/ValueScale.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {
   isSolutionTag,
@@ -141,6 +142,15 @@ const pageTitle = hub
           </div>
         </div>
       </section>
+    )
+  }
+
+  {
+    !hub && activeTag === 'cities' && (
+      <>
+        <ValueScale id="cities-cooling" />
+        <ValueScale id="cities-rain" />
+      </>
     )
   }
 </BaseLayout>

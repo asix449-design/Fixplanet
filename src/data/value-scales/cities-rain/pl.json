@@ -1,0 +1,55 @@
+{
+  "title": "Ile deszczu nie trafia do kanalizacji",
+  "lead": "Drzewa, nawierzchnie przepuszczalne, ogrody deszczowe i zielone dachy zatrzymują deszcz tam, gdzie spadł, więc mniej wody trafia do kanalizacji i rzek. Każdy pasek pokazuje, ile procent deszczu albo spływu zostaje zatrzymane. Większość liczb to przedziały, bo wynik zależy od konstrukcji, gruntu i siły deszczu. Wszystkie pochodzą z wytycznych Agencji Ochrony Środowiska Stanów Zjednoczonych.",
+  "axisLabel": "Ile procent deszczu zostaje zatrzymane",
+  "tabs": {
+    "main": "Ile deszczu nie trafia do kanalizacji"
+  },
+  "items": {
+    "urban-trees-rainfall": {
+      "name": "Drzewa miejskie i deszcz",
+      "valueLine": "15 do 27 procent rocznych opadów",
+      "hook": "Drzewa w mieście mogą przyjąć 15 do 27 procent deszczu, który spada w ciągu roku, więc z dachów i ulic spływa mniej wody.",
+      "detail": "Liście łapią deszcz, zanim spadnie na ziemię, a korzenie i gleba wchłaniają resztę. Drzewa oczyszczają też spływającą wodę z nawozów, pestycydów i innych zanieczyszczeń.",
+      "caption": "Ulica wybrukowana cegłą w Savannah w stanie Georgia w Stanach Zjednoczonych, gdzie duże drzewa schodzą się nad drogą.",
+      "credit": "Zdjęcie: Michael Stokes, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa 2.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Korzyści z drzew i roślinności"
+      ]
+    },
+    "permeable-pavement": {
+      "name": "Nawierzchnia przepuszczalna",
+      "valueLine": "o 25 do 100 procent mniej wody opadowej",
+      "hook": "Nawierzchnia przepuszczająca wodę zmniejszała w badaniach spływ wody opadowej o 25 do 100 procent, zależnie od konstrukcji i gruntu pod spodem.",
+      "detail": "Deszcz przesiąka przez porowaty asfalt, porowaty beton albo kostkę ze żwirem w spoinach do warstwy tłucznia, a stamtąd do gruntu albo drenażu. Taka nawierzchnia sprawdza się na parkingach, chodnikach, podjazdach i spokojnych ulicach. Drobny brud może ją zatkać, więc trzeba ją regularnie czyścić, i nie jest przeznaczona do ciężkiego i szybkiego ruchu.",
+      "caption": "Pokaz, w którym woda wylana na płytę porowatej nawierzchni przesiąka przez nią, zdjęcie z 7 października 2012 roku.",
+      "credit": "Zdjęcie: Lombroso, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Najlepsza praktyka gospodarowania wodami opadowymi: nawierzchnie przepuszczalne (grudzień 2021)"
+      ]
+    },
+    "rain-gardens": {
+      "name": "Ogrody deszczowe",
+      "valueLine": "średnio o 56 do 89 procent mniej spływu",
+      "hook": "Obniżone rabaty zbierające deszcz z dachów i ulic zmniejszały spływ średnio o 56 procent z rurą drenażową i o 89 procent bez niej.",
+      "detail": "Ogród deszczowy przez krótki czas zatrzymuje wodę i przepuszcza ją przez glebę, piasek albo żwir, które przy okazji ją oczyszczają. Zwykle potrzebuje 5 do 10 procent powierzchni utwardzonej, z której spływa do niego woda. Tak samo działają długie rowy z roślinnością wzdłuż dróg, którymi płynie woda deszczowa.",
+      "caption": "Dwa rowy z roślinnością na wodę deszczową obok domów, bliższy jeszcze w budowie, dalszy już zarośnięty.",
+      "credit": "Zdjęcie: Duk, za pośrednictwem Wikimedia Commons, domena publiczna. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Najlepsza praktyka gospodarowania wodami opadowymi: bioretencja (ogrody deszczowe) (grudzień 2021)",
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Rodzaje zielonej infrastruktury"
+      ]
+    },
+    "green-roof-runoff": {
+      "name": "Zielone dachy i deszcz",
+      "valueLine": "o 60 do 100 procent mniej spływu",
+      "hook": "Zielone dachy mogą zmniejszyć spływ deszczu z dachu o 60 do 100 procent.",
+      "detail": "Podłoże i rośliny zatrzymują deszcz i oddają go powoli. Zielony dach zatrzymuje więcej z lekkiego deszczu niż z ulewy, więc wynik zależy od tego, jak pada w miejscu, gdzie powstał.",
+      "caption": "Zielony dach ratusza w Chicago w Stanach Zjednoczonych, widok z góry, zdjęcie z 8 lipca 2008 roku.",
+      "credit": "Zdjęcie: TonyTheTiger, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Zielone dachy przeciw miejskim wyspom ciepła"
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "title": "How much rain stays out of the drains",
+  "lead": "Trees, soft paving, rain gardens and planted roofs hold rain where it falls, so less of it rushes into sewers and rivers. Each bar shows the percent of rain or runoff held back. Most figures are ranges, because the result depends on the design, the soil and how heavy the rain is. All of them come from guidance by the United States Environmental Protection Agency.",
+  "axisLabel": "Percent of rain held back",
+  "tabs": {
+    "main": "How much rain stays out of the drains"
+  },
+  "items": {
+    "urban-trees-rainfall": {
+      "name": "Urban trees and rain",
+      "valueLine": "15 to 27 percent of yearly rain taken in",
+      "hook": "City trees can take in 15 to 27 percent of the rain that falls in a year, so less of it runs off roofs and streets.",
+      "detail": "Leaves catch rain before it lands, and roots and soil soak up more. Trees also filter fertilisers, pesticides and other pollutants from the water that does run off.",
+      "caption": "A brick street in Savannah, Georgia, in the United States, where large trees meet over the road.",
+      "credit": "Photo: Michael Stokes, via Wikimedia Commons, licence Creative Commons Attribution 2.0. Resized.",
+      "sources": [
+        "United States Environmental Protection Agency: Benefits of Trees and Vegetation"
+      ]
+    },
+    "permeable-pavement": {
+      "name": "Permeable pavement",
+      "valueLine": "25 to 100 percent less stormwater",
+      "hook": "Paving that lets water through has cut stormwater by 25 to 100 percent in studies, depending on the design and the ground below.",
+      "detail": "Rain soaks through porous asphalt, porous concrete or pavers with gravel joints into a bed of crushed stone, and from there into the soil or a drain. It suits car parks, footpaths, driveways and quiet streets. Fine dirt can clog it, so the surface needs regular cleaning, and it is not meant for heavy, fast traffic.",
+      "caption": "A demonstration in which water poured onto a slab of porous paving drips through it, photographed on 7 October 2012.",
+      "credit": "Photo: Lombroso, via Wikimedia Commons, licence Creative Commons Attribution-ShareAlike 3.0. Resized.",
+      "sources": [
+        "United States Environmental Protection Agency: Stormwater Best Management Practice: Permeable Pavements (December 2021)"
+      ]
+    },
+    "rain-gardens": {
+      "name": "Rain gardens",
+      "valueLine": "56 to 89 percent less runoff on average",
+      "hook": "Sunken planted beds that collect rain from roofs and streets reduced runoff by 56 percent on average when fitted with a drain pipe, and by 89 percent without one.",
+      "detail": "A rain garden holds water for a short time and lets it soak through soil, sand or gravel, which also removes pollutants. It usually needs 5 to 10 percent of the paved area that drains into it. Long planted channels along roads, called bioswales, work the same way as the water flows through them.",
+      "caption": "Two planted channels for rainwater beside houses, the near one still being built and the far one grown in.",
+      "credit": "Photo: Duk, via Wikimedia Commons, public domain. Resized.",
+      "sources": [
+        "United States Environmental Protection Agency: Stormwater Best Management Practice: Bioretention (Rain Gardens) (December 2021)",
+        "United States Environmental Protection Agency: Types of Green Infrastructure"
+      ]
+    },
+    "green-roof-runoff": {
+      "name": "Green roofs and rain",
+      "valueLine": "60 to 100 percent less runoff",
+      "hook": "Green roofs can reduce the rain running off them by 60 to 100 percent.",
+      "detail": "The soil and plants hold rain and release it slowly. A green roof catches more of a light shower than of a heavy storm, so the result depends on how rain falls where it is built.",
+      "caption": "Planted roof of Chicago City Hall in the United States, seen from above, photographed on 8 July 2008.",
+      "credit": "Photo: TonyTheTiger, via Wikimedia Commons, licence Creative Commons Attribution-ShareAlike 3.0. Resized.",
+      "sources": [
+        "United States Environmental Protection Agency: Using Green Roofs to Reduce Heat Islands"
+      ]
+    }
+  }
+}

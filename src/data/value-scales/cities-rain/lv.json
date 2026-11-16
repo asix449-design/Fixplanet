@@ -1,0 +1,55 @@
+{
+  "title": "Cik daudz lietus neieplūst kanalizācijā",
+  "lead": "Koki, caurlaidīgs segums, lietus dārzi un zaļie jumti aiztur lietu tur, kur tas nolija, tāpēc kanalizācijā un upēs nonāk mazāk ūdens. Katra josla rāda, cik procentu lietus vai noteces tiek aizturēts. Lielākā daļa skaitļu ir diapazoni, jo rezultāts atkarīgs no konstrukcijas, grunts un lietus stipruma. Visi tie ņemti no Amerikas Savienoto Valstu Vides aizsardzības aģentūras vadlīnijām.",
+  "axisLabel": "Cik procentu lietus aiztur",
+  "tabs": {
+    "main": "Cik daudz lietus neieplūst kanalizācijā"
+  },
+  "items": {
+    "urban-trees-rainfall": {
+      "name": "Pilsētas koki un lietus",
+      "valueLine": "15 līdz 27 procenti gada nokrišņu",
+      "hook": "Pilsētas koki var uzņemt 15 līdz 27 procentus gadā nolijušā lietus, tāpēc no jumtiem un ielām notek mazāk ūdens.",
+      "detail": "Lapas notver lietu, pirms tas nokrīt zemē, bet saknes un augsne uzsūc pārējo. Koki arī attīra noteces ūdeni no mēslojuma, pesticīdiem un citiem piesārņotājiem.",
+      "caption": "Ar ķieģeļiem bruģēta iela Savannā, Džordžijas štatā Amerikas Savienotajās Valstīs, kur lieli koki sakļaujas virs ceļa.",
+      "credit": "Foto: Michael Stokes, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi» 2.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Koku un augu ieguvumi"
+      ]
+    },
+    "permeable-pavement": {
+      "name": "Caurlaidīgs segums",
+      "valueLine": "par 25 līdz 100 procentiem mazāk lietus ūdens noteces",
+      "hook": "Segums, kas laiž cauri ūdeni, pētījumos samazināja lietus ūdens noteci par 25 līdz 100 procentiem atkarībā no konstrukcijas un grunts zem tā.",
+      "detail": "Lietus iesūcas caur porainu asfaltu, porainu betonu vai bruģakmeņiem ar granti šuvēs šķembu slānī, un no turienes gruntī vai drenāžā. Šāds segums der stāvvietām, ietvēm, iebrauktuvēm un klusām ielām. Smalki netīrumi to var aizsprostot, tāpēc virsma regulāri jātīra, un tas nav paredzēts smagai un ātrai satiksmei.",
+      "caption": "Demonstrācija, kurā ūdens, uzliets uz porainā seguma plāksnes, iesūcas tai cauri, fotografēts 2012. gada 7. oktobrī.",
+      "credit": "Foto: Lombroso, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Lietus ūdens apsaimniekošanas labākā prakse: caurlaidīgi segumi (2021. gada decembris)"
+      ]
+    },
+    "rain-gardens": {
+      "name": "Lietus dārzi",
+      "valueLine": "vidēji par 56 līdz 89 procentiem mazāk noteces",
+      "hook": "Padziļinātas apstādījumu dobes, kas savāc lietu no jumtiem un ielām, samazināja noteci vidēji par 56 procentiem ar drenāžas cauruli un par 89 procentiem bez tās.",
+      "detail": "Lietus dārzs īslaicīgi aiztur ūdeni un laiž to cauri augsnei, smiltīm vai grantij, kas to arī attīra no piesārņojuma. Parasti tam vajag 5 līdz 10 procentus no cietā seguma platības, no kuras tajā notek ūdens. Tāpat darbojas gari apzaļumoti grāvji gar ceļiem, pa kuriem plūst lietus ūdens.",
+      "caption": "Divi apzaļumoti grāvji lietus ūdenim pie mājām, tuvākais vēl tiek būvēts, tālākais jau ieaudzis.",
+      "credit": "Foto: Duk, ar Wikimedia Commons starpniecību, publiskais īpašums. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Lietus ūdens apsaimniekošanas labākā prakse: bioaizture (lietus dārzi) (2021. gada decembris)",
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļās infrastruktūras veidi"
+      ]
+    },
+    "green-roof-runoff": {
+      "name": "Zaļie jumti un lietus",
+      "valueLine": "par 60 līdz 100 procentiem mazāk noteces",
+      "hook": "Zaļie jumti var samazināt lietus ūdens noteci no jumta par 60 līdz 100 procentiem.",
+      "detail": "Augsne un augi aiztur lietu un atdod to lēnām. Zaļais jumts aiztur vairāk no neliela lietus nekā no lietusgāzes, tāpēc rezultāts atkarīgs no tā, kā līst vietā, kur tas uzbūvēts.",
+      "caption": "Čikāgas pilsētas domes apzaļumotais jumts Amerikas Savienotajās Valstīs, skats no augšas, fotografēts 2008. gada 8. jūlijā.",
+      "credit": "Foto: TonyTheTiger, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļie jumti pret pilsētu siltuma salām"
+      ]
+    }
+  }
+}
