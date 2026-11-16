@@ -31,7 +31,7 @@
     "green-roof-air": {
       "name": "Green roofs, air nearby",
       "valueLine": "up to 11 °C cooler air nearby",
-      "hook": "A planted roof can cool the air around it by up to 11 °C, or 20 °F, the agency reports.",
+      "hook": "A planted roof can cool the air around it by up to 11 °C, the agency reports.",
       "detail": "A green roof is a layer of plants and growing soil on top of a waterproof layer. The plants shade the roof and give off water, which draws heat from the air. The agency also reports that green roofs can cut a building's cooling load by 70 percent.",
       "caption": "Planted roof of Chicago City Hall in the United States, seen from above, photographed on 8 July 2008.",
       "credit": "Photo: TonyTheTiger, via Wikimedia Commons, licence Creative Commons Attribution-ShareAlike 3.0. Resized.",
@@ -42,7 +42,7 @@
     "green-roof-surface": {
       "name": "Green roofs, roof surface",
       "valueLine": "surface can be 31 °C cooler",
-      "hook": "The surface of a green roof can be 31 °C, or 56 °F, cooler than the surface of a conventional roof.",
+      "hook": "The surface of a green roof can be 31 °C, cooler than the surface of a conventional roof.",
       "detail": "This is the largest difference on this scale, because it compares the roof surface itself, where a dark roof in full sun gets hottest. Light roofs with shallow soil and hardy plants need little care. Deeper roofs with shrubs and trees need a stronger structure and regular upkeep.",
       "caption": "Planted roof of Chicago City Hall in the United States, seen from above, photographed on 8 July 2008.",
       "credit": "Photo: TonyTheTiger, via Wikimedia Commons, licence Creative Commons Attribution-ShareAlike 3.0. Resized.",
