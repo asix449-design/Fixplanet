@@ -1,0 +1,54 @@
+{
+  "title": "Par cik vēsāka var būt pilsēta",
+  "lead": "Koki, gaiši jumti un jumti ar augiem padara pilsētu mazāk karstu. Katra josla rāda, par cik Celsija grādiem ir vēsāks, salīdzinot ar parastu jumtu vai pilsētas daļu bez zaļuma. Lielākā daļa skaitļu ir diapazoni vai augšējās robežas, jo rezultāts atkarīgs no klimata, konstrukcijas un kopšanas. Visi tie ņemti no Amerikas Savienoto Valstu Vides aizsardzības aģentūras vadlīnijām.",
+  "axisLabel": "Par cik Celsija grādiem vēsāks",
+  "tabs": {
+    "main": "Par cik vēsāka var būt pilsēta"
+  },
+  "items": {
+    "cool-roof-indoor": {
+      "name": "Vēsie jumti",
+      "valueLine": "par 1,2 līdz 3,3 °C zemāka augstākā temperatūra mājā",
+      "hook": "Mājās bez gaisa kondicionētāja jumts, kas atstaro saules gaismu, var pazemināt augstāko temperatūru telpās par 1,2 līdz 3,3 °C.",
+      "detail": "Vēss jumts atstaro vairāk saules enerģijas nekā tumšs, pateicoties gaišam pārklājumam, membrānai, dakstiņiem vai šindeļiem. Mājās ar gaisa kondicionētāju, pēc aģentūras datiem, tas var samazināt maksimālo dzesēšanas pieprasījumu par 11 līdz 27 procentiem. Aukstā klimatā tas ziemā var nedaudz palielināt apkures vajadzību, bet aģentūra norāda, ka vasaras ietaupījums to parasti atsver.",
+      "caption": "Balti pakāpjveida jumti mājai Bermudu salu krastā, fotografēti 1994. gada maijā.",
+      "credit": "Foto: Acroterion, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Vēsie jumti pret pilsētu siltuma salām"
+      ]
+    },
+    "urban-forest-cooling": {
+      "name": "Koki un parki pilsētā",
+      "valueLine": "vidēji par 1,6 °C vēsāks",
+      "hook": "308 pētījumu pārskats atklāja, ka pilsētu meži vidēji ir par 1,6 °C vēsāki nekā pilsētas daļas bez zaļuma.",
+      "detail": "Koki atvēsina gaisu divējādi: ēna neļauj saulei sasildīt zemi, un lapas iztvaiko ūdeni, kas atņem gaisam siltumu. Aģentūra norāda, ka apkaimēs ar mazāk kokiem ir karstāk, un pēc viena tās minēta pētījuma tur biežāk dzīvo cilvēki ar zemākiem ienākumiem.",
+      "caption": "Ar ķieģeļiem bruģēta iela Savannā, Džordžijas štatā Amerikas Savienotajās Valstīs, kur lieli koki sakļaujas virs ceļa.",
+      "credit": "Foto: Michael Stokes, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi» 2.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Koku un augu ieguvumi"
+      ]
+    },
+    "green-roof-air": {
+      "name": "Zaļie jumti, gaiss apkārt",
+      "valueLine": "gaiss apkārt vēsāks līdz pat 11 °C",
+      "hook": "Jumts ar augiem var atvēsināt apkārtējo gaisu līdz pat 11 °C, ziņo aģentūra.",
+      "detail": "Zaļais jumts ir augu un augsnes slānis virs ūdensnecaurlaidīga slāņa. Augi noēno jumtu un iztvaiko ūdeni, atņemot gaisam siltumu. Aģentūra arī ziņo, ka zaļais jumts var samazināt ēkas dzesēšanas slodzi par 70 procentiem.",
+      "caption": "Čikāgas pilsētas domes apzaļumotais jumts Amerikas Savienotajās Valstīs, skats no augšas, fotografēts 2008. gada 8. jūlijā.",
+      "credit": "Foto: TonyTheTiger, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļie jumti pret pilsētu siltuma salām"
+      ]
+    },
+    "green-roof-surface": {
+      "name": "Zaļie jumti, jumta virsma",
+      "valueLine": "virsma var būt par 31 °C vēsāka",
+      "hook": "Zaļā jumta virsma var būt par 31 °C vēsāka nekā parasta jumta virsma.",
+      "detail": "Šī ir lielākā atšķirība šajā skalā, jo salīdzina pašu jumta virsmu, bet tumšs jumts pilnā saulē sakarst visvairāk. Viegliem jumtiem ar plānu augsnes kārtu un izturīgiem augiem vajag maz kopšanas. Dziļākiem jumtiem ar krūmiem un kokiem vajag stiprāku konstrukciju un pastāvīgu kopšanu.",
+      "caption": "Čikāgas pilsētas domes apzaļumotais jumts Amerikas Savienotajās Valstīs, skats no augšas, fotografēts 2008. gada 8. jūlijā.",
+      "credit": "Foto: TonyTheTiger, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Amerikas Savienoto Valstu Vides aizsardzības aģentūra: Zaļie jumti pret pilsētu siltuma salām"
+      ]
+    }
+  }
+}

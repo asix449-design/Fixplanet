@@ -17,6 +17,14 @@ function position(pattern: string, n: number, total: number): string {
 function liveText(item: ValueScaleItem, place: string): string {
   return `${item.name}. ${place}. ${item.valueLine}`;
 }
+
+function figureText(spanLabel: string, unit: string): string {
+  return unit === '%' ? `${spanLabel}%` : `${spanLabel} ${unit}`;
+}
+
+function share(part: number): string {
+  return `${(part * 100).toFixed(4)}%`;
+}
 ---
 
 <section
@@ -80,8 +88,8 @@ function liveText(item: ValueScaleItem, place: string): string {
           <div
             class="size-scale-stage"
             id={`${sectionId}-panel-${tab.id}`}
-            role="tabpanel"
-            aria-labelledby={`${sectionId}-tab-${tab.id}`}
+            role={scale.tabs.length > 1 ? 'tabpanel' : undefined}
+            aria-labelledby={scale.tabs.length > 1 ? `${sectionId}-tab-${tab.id}` : `${sectionId}-heading`}
             data-value-scale
             data-value-group={tab.id}
             data-position-pattern={scale.position}
@@ -101,13 +109,20 @@ function liveText(item: ValueScaleItem, place: string): string {
                   <span>{scale.axisLabel}</span>
                 </p>
                 <div class="size-scale-board value-scale-board">
-                  <div class="value-scale-plot">
-                    <div class="value-scale-track">
-                      {
-                        tab.items.map((item, index) => (
-                          <div class="value-scale-col" style={`--weight:${item.weight}`}>
+                  {
+                    scale.shape === 'bar' ? (
+                      <div class="value-scale-bars">
+                        <div class="value-scale-bar-scale" aria-hidden="true">
+                          <span></span>
+                          <span class="value-scale-bar-ends">
+                            <span>0</span>
+                            <span>{figureText(scale.axisMaxLabel, scale.unit)}</span>
+                          </span>
+                        </div>
+                        {
+                          tab.items.map((item, index) => (
                             <button
-                              class:list={['value-scale-square', { 'is-selected': index === 0, 'is-outline': item.mark === 'outline' }]}
+                              class:list={['value-scale-bar', { 'is-selected': index === 0 }]}
                               type="button"
                               data-item
                               data-slug={item.slug}
@@ -115,39 +130,109 @@ function liveText(item: ValueScaleItem, place: string): string {
                               aria-pressed={index === 0 ? 'true' : 'false'}
                               aria-label={`${item.name}. ${item.valueLine}`}
                             >
-                              {
-                                item.image ? (
-                                  <img
-                                    src={item.image.src}
-                                    alt=""
-                                    width={item.image.pxW}
-                                    height={item.image.pxH}
-                                    loading={index === 0 && open ? 'eager' : 'lazy'}
-                                    decoding="async"
-                                  />
-                                ) : (
-                                  <span class="value-scale-tint"></span>
-                                )
-                              }
+                              <span class="value-scale-bar-photo">
+                                {
+                                  item.image ? (
+                                    <img
+                                      src={item.image.src}
+                                      alt=""
+                                      width={item.image.pxW}
+                                      height={item.image.pxH}
+                                      loading={index === 0 && open ? 'eager' : 'lazy'}
+                                      decoding="async"
+                                    />
+                                  ) : (
+                                    <span class="value-scale-tint"></span>
+                                  )
+                                }
+                              </span>
+                              <span class="value-scale-bar-body">
+                                <span class="value-scale-bar-copy">
+                                  <span class="value-scale-bar-name">{item.name}</span>
+                                  <span class="value-scale-bar-figure" data-label>{figureText(item.spanLabel, scale.unit)}</span>
+                                </span>
+                                <span class:list={['value-scale-bar-track', { 'is-marks': item.markTicks.length > 0 }]} aria-hidden="true">
+                                  {
+                                    item.markTicks.length === 0 && (
+                                      <span
+                                        class:list={['value-scale-bar-solid', { 'is-full': item.bandShare === 0 }]}
+                                        style={`width:${share(item.solidShare)}`}
+                                      />
+                                    )
+                                  }
+                                  {
+                                    item.bandShare > 0 && (
+                                      <span
+                                        class="value-scale-bar-band"
+                                        style={`left:${share(item.solidShare)};width:${share(item.bandShare)}`}
+                                      />
+                                    )
+                                  }
+                                  {
+                                    item.markTicks.map((tick) => (
+                                      <span class="value-scale-bar-mark" style={`left:${share(tick.share)}`}>
+                                        <span>{tick.label}</span>
+                                      </span>
+                                    ))
+                                  }
+                                </span>
+                              </span>
                             </button>
+                          ))
+                        }
+                      </div>
+                    ) : (
+                      <>
+                        <div class="value-scale-plot">
+                          <div class="value-scale-track">
+                            {
+                              tab.items.map((item, index) => (
+                                <div class="value-scale-col" style={`--weight:${item.weight}`}>
+                                  <button
+                                    class:list={['value-scale-square', { 'is-selected': index === 0, 'is-outline': item.mark === 'outline' }]}
+                                    type="button"
+                                    data-item
+                                    data-slug={item.slug}
+                                    data-value={item.value}
+                                    aria-pressed={index === 0 ? 'true' : 'false'}
+                                    aria-label={`${item.name}. ${item.valueLine}`}
+                                  >
+                                    {
+                                      item.image ? (
+                                        <img
+                                          src={item.image.src}
+                                          alt=""
+                                          width={item.image.pxW}
+                                          height={item.image.pxH}
+                                          loading={index === 0 && open ? 'eager' : 'lazy'}
+                                          decoding="async"
+                                        />
+                                      ) : (
+                                        <span class="value-scale-tint"></span>
+                                      )
+                                    }
+                                  </button>
+                                </div>
+                              ))
+                            }
                           </div>
-                        ))
-                      }
-                    </div>
-                    <div class="size-scale-baseline"></div>
-                  </div>
-                  <div class="value-scale-labels">
-                    {
-                      tab.items.map((item, index) => (
-                        <div class:list={['value-scale-col', { 'is-selected': index === 0 }]} style={`--weight:${item.weight}`} data-label>
-                          <p class="value-scale-under">
-                            <span class="value-scale-number">{item.formattedValue}</span>
-                            <span class="value-scale-qualifier">{item.qualifierLabel}</span>
-                          </p>
+                          <div class="size-scale-baseline"></div>
                         </div>
-                      ))
-                    }
-                  </div>
+                        <div class="value-scale-labels">
+                          {
+                            tab.items.map((item, index) => (
+                              <div class:list={['value-scale-col', { 'is-selected': index === 0 }]} style={`--weight:${item.weight}`} data-label>
+                                <p class="value-scale-under">
+                                  <span class="value-scale-number">{item.formattedValue}</span>
+                                  <span class="value-scale-qualifier">{item.qualifierLabel}</span>
+                                </p>
+                              </div>
+                            ))
+                          }
+                        </div>
+                      </>
+                    )
+                  }
                 </div>
               </div>
 

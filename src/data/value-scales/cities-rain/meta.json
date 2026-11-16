@@ -1,0 +1,104 @@
+{
+  "unit": "%",
+  "shape": "bar",
+  "axisMax": 100,
+  "items": [
+    {
+      "slug": "urban-trees-rainfall",
+      "tab": "main",
+      "order": 1,
+      "value": 15,
+      "valueHigh": 27,
+      "qualifier": null,
+      "unit": "%",
+      "period": "page updated 15 May 2026",
+      "image": {
+        "src": "/images/value-scales/cities/savannah-tree-street.webp",
+        "pxW": 707,
+        "pxH": 470,
+        "author": "Michael Stokes",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_shaded_brick_street_in_Savannah_Georgia_USA,_Feb_2018.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/heatislands/benefits-trees-and-vegetation"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "permeable-pavement",
+      "tab": "main",
+      "order": 2,
+      "value": 25,
+      "valueHigh": 100,
+      "qualifier": null,
+      "unit": "%",
+      "period": "December 2021",
+      "image": {
+        "src": "/images/value-scales/cities/permeable-paving-demo.webp",
+        "pxW": 786,
+        "pxH": 590,
+        "author": "Lombroso",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demonstration_experiment_of_the_permeable_paving_(2012.10.07).jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/system/files/documents/2021-11/bmp-permeable-pavements.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "rain-gardens",
+      "tab": "main",
+      "order": 3,
+      "value": 56,
+      "marks": [56, 89],
+      "qualifier": null,
+      "unit": "%",
+      "period": "December 2021",
+      "image": {
+        "src": "/images/value-scales/cities/bioswale.webp",
+        "pxW": 707,
+        "pxH": 415,
+        "author": "Duk",
+        "licence": "public domain",
+        "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bioswale.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/system/files/documents/2021-11/bmp-bioretention-rain-gardens.pdf",
+        "https://www.epa.gov/green-infrastructure/types-green-infrastructure"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "green-roof-runoff",
+      "tab": "main",
+      "order": 4,
+      "value": 60,
+      "valueHigh": 100,
+      "qualifier": null,
+      "unit": "%",
+      "period": "page updated 28 September 2026",
+      "image": {
+        "src": "/images/value-scales/cities/chicago-city-hall-green-roof.webp",
+        "pxW": 972,
+        "pxH": 729,
+        "author": "TonyTheTiger",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20080708_Chicago_City_Hall_Green_Roof.JPG",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/heatislands/using-green-roofs-reduce-heat-islands"
+      ],
+      "linkTo": null
+    }
+  ]
+}

@@ -55,6 +55,32 @@
           "decimal": ","
         }
       }
+    },
+    {
+      "id": "cities-cooling",
+      "unit": "°C",
+      "shape": "bar",
+      "tabs": ["main"],
+      "defaultTab": "main",
+      "numberFormat": {
+        "en": { "thousands": ",", "decimal": "." },
+        "ru": { "thousands": " ", "decimal": "," },
+        "pl": { "thousands": " ", "decimal": "," },
+        "lv": { "thousands": " ", "decimal": "," }
+      }
+    },
+    {
+      "id": "cities-rain",
+      "unit": "%",
+      "shape": "bar",
+      "tabs": ["main"],
+      "defaultTab": "main",
+      "numberFormat": {
+        "en": { "thousands": ",", "decimal": "." },
+        "ru": { "thousands": " ", "decimal": "," },
+        "pl": { "thousands": " ", "decimal": "," },
+        "lv": { "thousands": " ", "decimal": "," }
+      }
     }
   ]
 }

@@ -1,0 +1,54 @@
+{
+  "title": "O ile chłodniejsze może być miasto",
+  "lead": "Drzewa, jasne dachy i dachy z roślinami sprawiają, że miasto mniej się nagrzewa. Każdy pasek pokazuje, o ile stopni Celsjusza jest chłodniej w porównaniu ze zwykłym dachem albo częścią miasta bez zieleni. Większość liczb to przedziały albo wartości maksymalne, bo wynik zależy od klimatu, konstrukcji i utrzymania. Wszystkie pochodzą z wytycznych Agencji Ochrony Środowiska Stanów Zjednoczonych.",
+  "axisLabel": "O ile stopni Celsjusza chłodniej",
+  "tabs": {
+    "main": "O ile chłodniejsze może być miasto"
+  },
+  "items": {
+    "cool-roof-indoor": {
+      "name": "Chłodne dachy",
+      "valueLine": "o 1,2 do 3,3 °C niższa najwyższa temperatura w domu",
+      "hook": "W domach bez klimatyzacji dach odbijający światło słoneczne może obniżyć najwyższą temperaturę w pomieszczeniach o 1,2 do 3,3 °C.",
+      "detail": "Chłodny dach odbija więcej energii słonecznej niż ciemny dzięki jasnej powłoce, membranie, dachówce albo gontowi. W domach z klimatyzacją, według agencji, może obniżyć szczytowe zapotrzebowanie na chłodzenie o 11 do 27 procent. W zimnym klimacie może nieco zwiększyć zimą koszty ogrzewania, ale zdaniem agencji letnie oszczędności zwykle to przewyższają.",
+      "caption": "Białe schodkowe dachy domu na wybrzeżu Bermudów, zdjęcie z maja 1994 roku.",
+      "credit": "Zdjęcie: Acroterion, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Chłodne dachy przeciw miejskim wyspom ciepła"
+      ]
+    },
+    "urban-forest-cooling": {
+      "name": "Drzewa i parki w mieście",
+      "valueLine": "średnio o 1,6 °C chłodniej",
+      "hook": "Przegląd 308 badań wykazał, że lasy miejskie są średnio o 1,6 °C chłodniejsze niż części miasta bez zieleni.",
+      "detail": "Drzewa chłodzą powietrze na dwa sposoby: cień chroni ziemię przed słońcem, a liście odparowują wodę, co zabiera ciepło z powietrza. Agencja zauważa, że w dzielnicach z mniejszą liczbą drzew jest goręcej, a według jednego z cytowanych badań częściej mieszkają tam ludzie o niższych dochodach.",
+      "caption": "Ulica wybrukowana cegłą w Savannah w stanie Georgia w Stanach Zjednoczonych, gdzie duże drzewa schodzą się nad drogą.",
+      "credit": "Zdjęcie: Michael Stokes, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa 2.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Korzyści z drzew i roślinności"
+      ]
+    },
+    "green-roof-air": {
+      "name": "Zielone dachy, powietrze obok",
+      "valueLine": "powietrze obok chłodniejsze nawet o 11 °C",
+      "hook": "Dach porośnięty roślinami może schłodzić otaczające go powietrze nawet o 11 °C, podaje agencja.",
+      "detail": "Zielony dach to warstwa roślin i podłoża ułożona na warstwie wodoszczelnej. Rośliny zacieniają dach i odparowują wodę, zabierając ciepło z powietrza. Agencja podaje też, że zielony dach może zmniejszyć zapotrzebowanie budynku na chłodzenie o 70 procent.",
+      "caption": "Zielony dach ratusza w Chicago w Stanach Zjednoczonych, widok z góry, zdjęcie z 8 lipca 2008 roku.",
+      "credit": "Zdjęcie: TonyTheTiger, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Zielone dachy przeciw miejskim wyspom ciepła"
+      ]
+    },
+    "green-roof-surface": {
+      "name": "Zielone dachy, powierzchnia dachu",
+      "valueLine": "powierzchnia może być o 31 °C chłodniejsza",
+      "hook": "Powierzchnia zielonego dachu może być o 31 °C chłodniejsza od powierzchni zwykłego dachu.",
+      "detail": "To największa różnica na tej skali, bo porównuje się samą powierzchnię dachu, a ciemny dach w pełnym słońcu nagrzewa się najmocniej. Lekkie dachy z cienką warstwą podłoża i odpornymi roślinami wymagają niewiele pracy. Głębsze dachy z krzewami i drzewami potrzebują mocniejszej konstrukcji i stałej opieki.",
+      "caption": "Zielony dach ratusza w Chicago w Stanach Zjednoczonych, widok z góry, zdjęcie z 8 lipca 2008 roku.",
+      "credit": "Zdjęcie: TonyTheTiger, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Agencja Ochrony Środowiska Stanów Zjednoczonych: Zielone dachy przeciw miejskim wyspom ciepła"
+      ]
+    }
+  }
+}

@@ -47,12 +47,25 @@ const chrome: Record<Locale, {
   },
 };
 
-const qualifierWords: Record<Locale, Record<'about' | 'more_than', string>> = {
-  en: { about: 'about', more_than: 'more than' },
-  ru: { about: 'около', more_than: 'более' },
-  pl: { about: 'około', more_than: 'ponad' },
-  lv: { about: 'aptuveni', more_than: 'vairāk nekā' },
+type Qualifier = 'about' | 'more_than' | 'up_to' | 'can_be';
+
+const qualifierWords: Record<Locale, Record<Qualifier, string>> = {
+  en: { about: 'about', more_than: 'more than', up_to: 'up to', can_be: 'can be' },
+  ru: { about: 'около', more_than: 'более', up_to: 'до', can_be: 'может быть' },
+  pl: { about: 'około', more_than: 'ponad', up_to: 'nawet o', can_be: 'może być' },
+  lv: { about: 'aptuveni', more_than: 'vairāk nekā', up_to: 'līdz pat', can_be: 'var būt' },
 };
+
+const rangeWord: Record<Locale, string> = {
+  en: 'to',
+  ru: 'до',
+  pl: 'do',
+  lv: 'līdz',
+};
+
+function isQualifier(value: string | null): value is Qualifier {
+  return value === 'about' || value === 'more_than' || value === 'up_to' || value === 'can_be';
+}
 
 const licencePhrases = [
   'Creative Commons Attribution-ShareAlike 4.0',
@@ -110,7 +123,7 @@ type MetaItem = {
   tab: string;
   order: number;
   value: number;
-  qualifier: 'about' | 'more_than' | null;
+  qualifier: Qualifier | null;
   unit: string;
   period: string;
   image: MetaImage | null;
@@ -118,6 +131,18 @@ type MetaItem = {
   linkTo: string | null;
   /** A different measure drawn as a lighter outlined square. Omitted on solid marks. */
   mark?: 'outline' | null;
+  /** High end of a bar range band. Omitted on a single value. */
+  valueHigh?: number | null;
+  /** Separate readings on one bar, drawn as marks rather than a band. */
+  marks?: number[] | null;
+};
+
+type MetaFile = {
+  items: MetaItem[];
+  unit?: string;
+  shape?: string;
+  /** Right end of a bar axis. Omitted on area squares. */
+  axisMax?: number;
 };
 
 type CopyItem = {
@@ -159,6 +184,14 @@ export type ValueScaleItem = {
   image: { src: string; pxW: number; pxH: number } | null;
   linkTo: string | null;
   mark: 'outline' | null;
+  /** Compact figure for a bar row, without the unit. Same digits as formattedValue on an area square. */
+  spanLabel: string;
+  /** Share of the axis drawn solid, from zero to the low end. Zero on area squares and on mark bars. */
+  solidShare: number;
+  /** Share of the axis drawn as the lighter range band. Zero when there is no range. */
+  bandShare: number;
+  /** Tick positions for separate readings on one bar. */
+  markTicks: { label: string; share: number }[];
 };
 
 export type ValueScaleTab = {
@@ -180,6 +213,8 @@ export type ValueScaleView = {
   hint: string;
   position: string;
   sourcesLabel: string;
+  /** Formatted right end of a bar axis. Empty on an area square. */
+  axisMaxLabel: string;
   tabs: ValueScaleTab[];
 };
 
@@ -232,9 +267,10 @@ function assertNumberFormat(format: NumberFormat, locale: string, id: string): v
 }
 
 function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
-  if (entry.shape !== 'area-square') {
+  if (entry.shape !== 'area-square' && entry.shape !== 'bar') {
     throw new Error(`Value scale ${entry.id} uses unsupported shape ${entry.shape}`);
   }
+  const bar = entry.shape === 'bar';
   if (!entry.tabs.length) throw new Error(`Value scale ${entry.id} has no tabs`);
   if (!entry.tabs.includes(entry.defaultTab)) {
     throw new Error(`Value scale ${entry.id} default tab ${entry.defaultTab} is not in its tab list`);
@@ -242,7 +278,16 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
   for (const code of locales) assertNumberFormat(entry.numberFormat[code], code, entry.id);
 
   const dir = path.join(DATA_ROOT, entry.id);
-  const meta = readJson<{ items: MetaItem[] }>(path.join(dir, 'meta.json'));
+  const meta = readJson<MetaFile>(path.join(dir, 'meta.json'));
+  if (bar) {
+    if (!(typeof meta.axisMax === 'number' && meta.axisMax > 0)) {
+      throw new Error(`Value scale ${entry.id} needs a positive axis max`);
+    }
+    if (meta.unit !== entry.unit || meta.shape !== entry.shape) {
+      throw new Error(`Value scale ${entry.id} meta does not match the registry`);
+    }
+  }
+  const axisMax = bar ? (meta.axisMax as number) : 0;
   const copy = readJson<CopyFile>(path.join(dir, `${locale}.json`));
   if (!copy.title || !copy.lead || !copy.axisLabel) {
     throw new Error(`Value scale ${entry.id} copy is incomplete for ${locale}`);
@@ -258,8 +303,36 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
     seen.add(item.slug);
     if (!byTab.has(item.tab)) throw new Error(`Value scale ${entry.id} item ${item.slug} uses unknown tab ${item.tab}`);
     if (!(item.value > 0)) throw new Error(`Value scale ${entry.id} item ${item.slug} needs a positive value`);
-    if (item.qualifier !== null && item.qualifier !== 'about' && item.qualifier !== 'more_than') {
+    if (item.qualifier !== null && !isQualifier(item.qualifier)) {
       throw new Error(`Value scale ${entry.id} item ${item.slug} has qualifier ${item.qualifier}`);
+    }
+    const high = item.valueHigh ?? null;
+    const marks = item.marks ?? null;
+    if (!bar && (high != null || (marks != null && marks.length > 0))) {
+      throw new Error(`Value scale ${entry.id} item ${item.slug} uses a bar range on an area square`);
+    }
+    if (bar) {
+      if (item.value > axisMax) throw new Error(`Value scale ${entry.id} item ${item.slug} is above the axis`);
+      if (high != null && marks != null) {
+        throw new Error(`Value scale ${entry.id} item ${item.slug} has both a band and marks`);
+      }
+      if (high != null && (!(high > item.value) || high > axisMax)) {
+        throw new Error(`Value scale ${entry.id} item ${item.slug} has a bad range`);
+      }
+      if (marks != null) {
+        if (marks.length < 2) throw new Error(`Value scale ${entry.id} item ${item.slug} needs two marks`);
+        for (let i = 0; i < marks.length; i += 1) {
+          if (!(marks[i] > 0) || marks[i] > axisMax || (i > 0 && !(marks[i] > marks[i - 1]))) {
+            throw new Error(`Value scale ${entry.id} item ${item.slug} has a bad mark`);
+          }
+        }
+        if (item.value !== marks[0]) {
+          throw new Error(`Value scale ${entry.id} item ${item.slug} value must be the low mark`);
+        }
+      }
+      if ((item.qualifier === 'up_to' || item.qualifier === 'can_be') && (high != null || marks != null)) {
+        throw new Error(`Value scale ${entry.id} item ${item.slug} qualifier does not apply to a range`);
+      }
     }
     if (item.mark != null && item.mark !== 'outline') {
       throw new Error(`Value scale ${entry.id} item ${item.slug} has mark ${item.mark}`);
@@ -289,6 +362,27 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
     }
     const credit = text.credit ? splitCredit(text.credit, licenceHref) : { before: '', label: '', after: '' };
     const words = qualifierWords[locale];
+    const format = entry.numberFormat[locale];
+    const formattedValue = formatScaleValue(item.value, format);
+    let spanLabel = formattedValue;
+    let solidShare = 0;
+    let bandShare = 0;
+    let markTicks: ValueScaleItem['markTicks'] = [];
+    if (bar) {
+      if (marks != null) {
+        spanLabel = marks.map((n) => formatScaleValue(n, format)).join(` ${rangeWord[locale]} `);
+        markTicks = marks.map((n) => ({ label: formatScaleValue(n, format), share: n / axisMax }));
+      } else if (high != null) {
+        spanLabel = `${formattedValue} ${rangeWord[locale]} ${formatScaleValue(high, format)}`;
+        solidShare = item.value / axisMax;
+        bandShare = (high - item.value) / axisMax;
+      } else {
+        if (item.qualifier === 'up_to' || item.qualifier === 'can_be') {
+          spanLabel = `${words[item.qualifier]} ${formattedValue}`;
+        }
+        solidShare = item.value / axisMax;
+      }
+    }
     byTab.get(item.tab)?.push({
       slug: item.slug,
       name: text.name,
@@ -302,12 +396,16 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
       licenceHref,
       sources: text.sources.map((label, index) => ({ label, href: item.sources[index] })),
       value: item.value,
-      formattedValue: formatScaleValue(item.value, entry.numberFormat[locale]),
+      formattedValue,
       qualifierLabel: item.qualifier ? words[item.qualifier] : '',
       weight: Math.sqrt(item.value),
       image,
       linkTo: item.linkTo,
       mark: item.mark === 'outline' ? 'outline' : null,
+      spanLabel,
+      solidShare,
+      bandShare,
+      markTicks,
     });
   }
 
@@ -316,6 +414,13 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
     const items = byTab.get(id) ?? [];
     if (!label) throw new Error(`Value scale ${entry.id} is missing the ${locale} label for tab ${id}`);
     if (!items.length) throw new Error(`Value scale ${entry.id} tab ${id} has no items`);
+    if (bar) {
+      for (let i = 1; i < items.length; i += 1) {
+        if (items[i].value < items[i - 1].value) {
+          throw new Error(`Value scale ${entry.id} tab ${id} is not ordered by the low end`);
+        }
+      }
+    }
     return { id, label, items };
   });
 
@@ -333,6 +438,7 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
     hint: ui.hint,
     position: ui.position,
     sourcesLabel: ui.sources,
+    axisMaxLabel: bar ? formatScaleValue(axisMax, entry.numberFormat[locale]) : '',
     tabs,
   };
 }

@@ -1,0 +1,100 @@
+{
+  "unit": "°C",
+  "shape": "bar",
+  "axisMax": 35,
+  "items": [
+    {
+      "slug": "cool-roof-indoor",
+      "tab": "main",
+      "order": 1,
+      "value": 1.2,
+      "valueHigh": 3.3,
+      "qualifier": null,
+      "unit": "°C",
+      "period": "page updated 18 June 2026",
+      "image": {
+        "src": "/images/value-scales/cities/bermuda-white-roof.webp",
+        "pxW": 972,
+        "pxH": 611,
+        "author": "Acroterion",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bermuda_roof.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/heatislands/using-cool-roofs-reduce-heat-islands"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "urban-forest-cooling",
+      "tab": "main",
+      "order": 2,
+      "value": 1.6,
+      "qualifier": null,
+      "unit": "°C",
+      "period": "page updated 15 May 2026",
+      "image": {
+        "src": "/images/value-scales/cities/savannah-tree-street.webp",
+        "pxW": 707,
+        "pxH": 470,
+        "author": "Michael Stokes",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_shaded_brick_street_in_Savannah_Georgia_USA,_Feb_2018.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/heatislands/benefits-trees-and-vegetation"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "green-roof-air",
+      "tab": "main",
+      "order": 3,
+      "value": 11,
+      "qualifier": "up_to",
+      "unit": "°C",
+      "period": "page updated 28 September 2026",
+      "image": {
+        "src": "/images/value-scales/cities/chicago-city-hall-green-roof.webp",
+        "pxW": 972,
+        "pxH": 729,
+        "author": "TonyTheTiger",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20080708_Chicago_City_Hall_Green_Roof.JPG",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/heatislands/using-green-roofs-reduce-heat-islands"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "green-roof-surface",
+      "tab": "main",
+      "order": 4,
+      "value": 31,
+      "qualifier": "can_be",
+      "unit": "°C",
+      "period": "page updated 28 September 2026",
+      "image": {
+        "src": "/images/value-scales/cities/chicago-city-hall-green-roof.webp",
+        "pxW": 972,
+        "pxH": 729,
+        "author": "TonyTheTiger",
+        "licence": "CC BY-SA 3.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20080708_Chicago_City_Hall_Green_Roof.JPG",
+        "changed": true
+      },
+      "sources": [
+        "https://www.epa.gov/heatislands/using-green-roofs-reduce-heat-islands"
+      ],
+      "linkTo": null
+    }
+  ]
+}
