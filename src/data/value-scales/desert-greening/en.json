@@ -1,0 +1,93 @@
+{
+  "title": "Desert greening in hectares",
+  "lead": "Each mark is an area of land. The first tab shows what programmes report as planted, funded or restored so far. The second shows the areas the plans set out to cover. Hectares on paper and living trees on the ground are different measures, so every entry says what it counts.",
+  "axisLabel": "Area, hectares",
+  "tabs": {
+    "reported": "Reported so far",
+    "planned": "Planned"
+  },
+  "items": {
+    "green-india-funded": {
+      "name": "Green India Mission, India",
+      "valueLine": "155,130 hectares funded for plantations, 2015-16 to 2023-24",
+      "hook": "Money for plantations on 155,130 hectares went to 17 states and 1 union territory between 2015-16 and 2023-24.",
+      "detail": "India's Ministry of Environment, Forest and Climate Change released about 8.4 billion rupees for plantations in forest and non-forest areas and for livelihood work. The annual report counts the area funded and gives no survival rate. The mission's original aim of 5 million hectares is on the Planned tab.",
+      "caption": "Jojoba plantation in the Thar Desert, India, photographed in 2006.",
+      "credit": "Photo: LRBurdak, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 3.0. Resized.",
+      "sources": [
+        "Ministry of Environment, Forest and Climate Change of India, Annual Report 2023-24, section on the National Mission for a Green India"
+      ]
+    },
+    "algeria-green-dam-planted": {
+      "name": "Green Dam, Algeria",
+      "valueLine": "about 160,000 hectares planted by 1995",
+      "hook": "About 160,000 hectares had been planted out of the 3 million in the design, according to an assessment from 1995.",
+      "detail": "The figure comes from Bensaid (1995), cited in a 2019 satellite study of the Moudjbara forest in Djelfa province by Khaouani, Hirche and Salamani. At Moudjbara the planted stands grew from about 6,500 hectares in 1987 to about 8,500 hectares in 2016, while cropland rose from 1.29 percent to 12 percent of the study area.",
+      "caption": "Forest on hills near Merouana in Batna province, Algeria, photographed in 2015.",
+      "credit": "Photo: رمزي زودة, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 3.0. Resized.",
+      "sources": [
+        "Khaouani, Hirche and Salamani (2019), Ecological dynamics of the Green Dam by remote sensing: the case of Moudjbara (Djelfa, central Algeria), International Journal of Sciences and Research"
+      ]
+    },
+    "kubuqi-restored": {
+      "name": "Kubuqi Desert, China",
+      "valueLine": "more than 500,000 hectares restored, 2025",
+      "hook": "More than half a million hectares have been restored in the Kubuqi Desert in Inner Mongolia, according to the United Nations Convention to Combat Desertification.",
+      "detail": "Work began in 1988, led by the Elion Resources Group with local governments and herders. A 2015 review by the United Nations Environment Programme, funded by the Elion Foundation, cites more than 5,000 square kilometres afforested, the same area, and names the effect of tree water use on groundwater as the largest uncertainty.",
+      "caption": "Sand dunes and steppe in the Kubuqi Desert, Inner Mongolia, photographed in 2015.",
+      "credit": "Photo: Popolon, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 4.0. Resized.",
+      "sources": [
+        "United Nations Convention to Combat Desertification (18 September 2025), From desertification to recovery: Lessons from the Kubuqi Forum",
+        "United Nations Environment Programme (2015), Review of the Kubuqi Ecological Restoration Project: A Desert Green Economy Pilot Initiative"
+      ]
+    },
+    "kp-billion-tree-tsunami": {
+      "name": "Billion Tree Tsunami, Khyber Pakhtunkhwa, Pakistan",
+      "valueLine": "600,000 hectares (6,000 square kilometres) planted since 2014",
+      "hook": "One billion trees were planted on 6,000 square kilometres of degraded forest land and barren land in Khyber Pakhtunkhwa province from 2014, Pakistan reported in 2022.",
+      "detail": "The figure comes from Pakistan's own 2022 report to the United Nations Convention to Combat Desertification. The provincial programme led to the national Ten Billion Tree Tsunami Programme, begun in 2016. Since 2020 the International Union for Conservation of Nature, the Food and Agriculture Organization of the United Nations and the World Wide Fund for Nature Pakistan have worked together on independent monitoring of the programme.",
+      "caption": "Chir pine trees at Murree hill station, Pakistan, photographed in 2016. The photo was taken in Murree, in Punjab province, not in Khyber Pakhtunkhwa.",
+      "credit": "Photo: Najafali05, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 4.0. Resized.",
+      "sources": [
+        "United Nations Convention to Combat Desertification, Pakistan National Report 2022",
+        "International Union for Conservation of Nature, Third Party Monitoring of Ten Billion Tree Tsunami Programme by Consortium of IUCN, FAO and WWF"
+      ]
+    },
+    "algeria-green-dam-design": {
+      "name": "Green Dam, Algeria (design)",
+      "valueLine": "3 million hectares in the design, 1970",
+      "hook": "A belt about 1,500 kilometres long and 20 kilometres wide, from the Moroccan border to the Tunisian border, between the 200 and 300 millimetre rainfall lines.",
+      "detail": "President Houari Boumediene announced the programme in 1970. For its first decade the army and the forestry service planted Aleppo pine alone. When those stands matured, about 100,000 hectares proved vulnerable to the pine processionary caterpillar, and trees died back on soils with a limestone crust.",
+      "caption": "Forest on hills near Merouana in Batna province, Algeria, photographed in 2015.",
+      "credit": "Photo: رمزي زودة, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 3.0. Resized.",
+      "sources": [
+        "Sahara and Sahel Observatory (2008), The Great Green Wall Initiative of the Sahara and the Sahel, introductory note, section on the Green Dam experience in Algeria",
+        "Nedjma Rahmani (2017), Climate change adaptation strategy: the experience of the Green Dam in Algeria, Forêt méditerranéenne"
+      ]
+    },
+    "green-india-aim": {
+      "name": "Green India Mission, India (original aim)",
+      "valueLine": "5 million hectares, aim set in 2011",
+      "hook": "The mission began with the aim of increasing forest or tree cover on 5 million hectares and improving the quality of forest cover on another 5 million.",
+      "detail": "The revised mission document for 2021 to 2030 sets 1 million hectares under the mission itself. It also counts 11.22 million hectares of afforestation from 2015-16 to 2020-21 under all central and state schemes together, the mission among them.",
+      "caption": "Jojoba plantation in the Thar Desert, India, photographed in 2006.",
+      "credit": "Photo: LRBurdak, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 3.0. Resized.",
+      "sources": [
+        "Ministry of Environment, Forest and Climate Change of India, National Mission for a Green India, Mission Document (revised)"
+      ]
+    },
+    "ethiopia-green-legacy-plan": {
+      "name": "Green Legacy, Ethiopia",
+      "valueLine": "6.5 million hectares of land planned for planting, 2019",
+      "hook": "In 2019 the government planned to plant trees on 6.5 million hectares of rural land, the British Broadcasting Corporation reported.",
+      "detail": "On 29 July 2019 the government reported 353,633,660 seedlings planted in 12 hours. In December 2023 the Ministry of Agriculture reported 32.5 billion seedlings planted since 2019 and said about 85 percent of the 7.5 billion from the previous rainy season had survived. These updates count seedlings, not hectares, so Ethiopia has no entry on the first tab.",
+      "caption": "Tree seedlings in plastic bags under a thatched shade in a nursery in Ethiopia, photographed in 2011.",
+      "credit": "Photo: Cunningchrisw, Wikimedia Commons. Licence: Creative Commons Attribution-ShareAlike 4.0. Resized.",
+      "sources": [
+        "British Broadcasting Corporation (20 December 2019), Did Ethiopia plant four billion trees this year?",
+        "International Organization for Migration, on ReliefWeb (2 August 2019), Ethiopia: IOM Participates in Planting of World Record-breaking 353 Million Trees in One Day",
+        "Ethiopian News Agency (26 December 2023), About 85 Percent of Last Year's 7.5 Billion Seedlings Survived"
+      ]
+    }
+  }
+}

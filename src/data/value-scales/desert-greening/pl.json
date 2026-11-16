@@ -1,0 +1,93 @@
+{
+  "title": "Zazielenianie pustyń w hektarach",
+  "lead": "Każdy znacznik to powierzchnia ziemi. Pierwsza karta pokazuje, co programy podają jako już obsadzone, sfinansowane albo odtworzone. Druga pokazuje powierzchnie, które plany miały objąć. Hektary na papierze i żywe drzewa w terenie to różne miary, dlatego przy każdym wpisie podano, co dokładnie liczy.",
+  "axisLabel": "Powierzchnia, hektary",
+  "tabs": {
+    "reported": "Według sprawozdań",
+    "planned": "Według planów"
+  },
+  "items": {
+    "green-india-funded": {
+      "name": "Misja Zielone Indie, Indie",
+      "valueLine": "155 130 hektarów sfinansowanych pod nasadzenia, lata budżetowe od 2015-16 do 2023-24",
+      "hook": "Pieniądze na nasadzenia na 155 130 hektarach trafiły do 17 stanów i 1 terytorium związkowego w latach budżetowych od 2015-16 do 2023-24.",
+      "detail": "Ministerstwo Środowiska, Lasów i Zmian Klimatu Indii przekazało około 8,4 miliarda rupii na nasadzenia na terenach leśnych i nieleśnych oraz na wsparcie utrzymania mieszkańców. Raport roczny liczy sfinansowaną powierzchnię i nie podaje przeżywalności. Pierwotny cel misji, 5 milionów hektarów, jest na karcie Według planów.",
+      "caption": "Plantacja jojoby na pustyni Thar w Indiach, zdjęcie z 2006 roku.",
+      "credit": "Zdjęcie: LRBurdak, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Ministerstwo Środowiska, Lasów i Zmian Klimatu Indii, raport roczny 2023-24, rozdział o Krajowej Misji Zielone Indie"
+      ]
+    },
+    "algeria-green-dam-planted": {
+      "name": "Zielona Tama, Algieria",
+      "valueLine": "około 160 000 hektarów obsadzonych do 1995 roku",
+      "hook": "Do 1995 roku obsadzono około 160 000 hektarów z 3 milionów zapisanych w projekcie, według ówczesnej oceny.",
+      "detail": "Liczba pochodzi z pracy Bensaida (1995), cytowanej w badaniu satelitarnym lasu Mudżbara w prowincji Dżilfa, które Khaouani, Hirche i Salamani opublikowali w 2019 roku. W Mudżbarze nasadzenia urosły z około 6 500 hektarów w 1987 roku do około 8 500 hektarów w 2016 roku, a udział pól uprawnych na badanym obszarze wzrósł z 1,29 do 12 procent.",
+      "caption": "Las na wzgórzach koło Merouany w prowincji Batna w Algierii, zdjęcie z 2015 roku.",
+      "credit": "Zdjęcie: رمزي زودة, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Khaouani, Hirche i Salamani (2019), Dynamika ekologiczna Zielonej Tamy w ujęciu teledetekcji: przypadek Mudżbary (Dżilfa, środkowa Algieria)"
+      ]
+    },
+    "kubuqi-restored": {
+      "name": "Pustynia Kubuqi, Chiny",
+      "valueLine": "ponad 500 000 hektarów odtworzonych, 2025 rok",
+      "hook": "Na pustyni Kubuqi w Mongolii Wewnętrznej odtworzono ponad pół miliona hektarów, podaje Konwencja Narodów Zjednoczonych w sprawie zwalczania pustynnienia.",
+      "detail": "Prace ruszyły w 1988 roku pod kierunkiem grupy Elion Resources Group, razem z władzami lokalnymi i pasterzami. Przegląd Programu Narodów Zjednoczonych do spraw Środowiska z 2015 roku, sfinansowany przez Elion Foundation, podaje ponad 5 000 kilometrów kwadratowych zalesień, czyli tę samą powierzchnię, i za największą niewiadomą uznaje wpływ podlewania drzew na wody gruntowe.",
+      "caption": "Wydmy i step na pustyni Kubuqi w Mongolii Wewnętrznej, zdjęcie z 2015 roku.",
+      "credit": "Zdjęcie: Popolon, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 4.0. Zmniejszono.",
+      "sources": [
+        "Konwencja Narodów Zjednoczonych w sprawie zwalczania pustynnienia (18 września 2025), Od pustynnienia do odbudowy: lekcje z forum w Kubuqi",
+        "Program Narodów Zjednoczonych do spraw Środowiska (2015), Przegląd projektu odbudowy ekologicznej Kubuqi: pilotażowa inicjatywa zielonej gospodarki pustyni"
+      ]
+    },
+    "kp-billion-tree-tsunami": {
+      "name": "Tsunami miliarda drzew, Chajber Pasztunchwa, Pakistan",
+      "valueLine": "600 000 hektarów (6 000 kilometrów kwadratowych) obsadzonych od 2014 roku",
+      "hook": "Od 2014 roku w prowincji Chajber Pasztunchwa posadzono miliard drzew na 6 000 kilometrów kwadratowych zdegradowanych gruntów leśnych i nieużytków, podał Pakistan w 2022 roku.",
+      "detail": "Liczba pochodzi z własnego raportu Pakistanu z 2022 roku dla Konwencji Narodów Zjednoczonych w sprawie zwalczania pustynnienia. Program prowincji dał początek krajowemu programowi Tsunami dziesięciu miliardów drzew, rozpoczętemu w 2016 roku. Od 2020 roku Międzynarodowa Unia Ochrony Przyrody, Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa oraz Światowy Fundusz na rzecz Przyrody, Pakistan, wspólnie prowadzą niezależny monitoring programu.",
+      "caption": "Sosny himalajskie w górskiej miejscowości Murree w Pakistanie, zdjęcie z 2016 roku. Zdjęcie zrobiono w Murree w prowincji Pendżab, a nie w Chajber Pasztunchwa.",
+      "credit": "Zdjęcie: Najafali05, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 4.0. Zmniejszono.",
+      "sources": [
+        "Konwencja Narodów Zjednoczonych w sprawie zwalczania pustynnienia, raport krajowy Pakistanu 2022",
+        "Międzynarodowa Unia Ochrony Przyrody, niezależny monitoring programu Tsunami dziesięciu miliardów drzew przez konsorcjum trzech organizacji"
+      ]
+    },
+    "algeria-green-dam-design": {
+      "name": "Zielona Tama, Algieria (projekt)",
+      "valueLine": "3 miliony hektarów w projekcie, 1970 rok",
+      "hook": "Pas długości około 1 500 kilometrów i szerokości 20 kilometrów, od granicy z Marokiem do granicy z Tunezją, między liniami opadów 200 i 300 milimetrów rocznie.",
+      "detail": "Prezydent Houari Boumediene ogłosił program w 1970 roku. Przez pierwszą dekadę wojsko i służba leśna sadziły wyłącznie sosnę alepską. Gdy te drzewostany dorosły, około 100 000 hektarów okazało się podatnych na korowódkę sosnówkę, a na glebach ze skorupą wapienną drzewa zamierały.",
+      "caption": "Las na wzgórzach koło Merouany w prowincji Batna w Algierii, zdjęcie z 2015 roku.",
+      "credit": "Zdjęcie: رمزي زودة, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Obserwatorium Sahary i Sahelu (2008), Inicjatywa Wielkiego Zielonego Muru Sahary i Sahelu, nota wprowadzająca, część o doświadczeniu Zielonej Tamy w Algierii",
+        "Nedjma Rahmani (2017), Strategia adaptacji do zmiany klimatu: doświadczenie Zielonej Tamy w Algierii, czasopismo „Las śródziemnomorski”"
+      ]
+    },
+    "green-india-aim": {
+      "name": "Misja Zielone Indie, Indie (pierwotny cel)",
+      "valueLine": "5 milionów hektarów, cel z 2011 roku",
+      "hook": "Misja zaczynała się od celu zwiększenia pokrywy leśnej lub zadrzewień na 5 milionach hektarów i poprawy jakości lasów na kolejnych 5 milionach.",
+      "detail": "Zaktualizowany dokument misji na lata 2021 do 2030 wyznacza 1 milion hektarów w ramach samej misji. Podaje też 11,22 miliona hektarów zalesień w latach budżetowych od 2015-16 do 2020-21 we wszystkich programach centralnych i stanowych razem, w tym w misji.",
+      "caption": "Plantacja jojoby na pustyni Thar w Indiach, zdjęcie z 2006 roku.",
+      "credit": "Zdjęcie: LRBurdak, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 3.0. Zmniejszono.",
+      "sources": [
+        "Ministerstwo Środowiska, Lasów i Zmian Klimatu Indii, Krajowa Misja Zielone Indie, dokument misji (zaktualizowany)"
+      ]
+    },
+    "ethiopia-green-legacy-plan": {
+      "name": "Zielone Dziedzictwo, Etiopia",
+      "valueLine": "6,5 miliona hektarów ziemi zaplanowanej pod nasadzenia, 2019 rok",
+      "hook": "W 2019 roku rząd planował sadzić drzewa na 6,5 miliona hektarów terenów wiejskich, podała Brytyjska Korporacja Nadawcza.",
+      "detail": "29 lipca 2019 roku rząd ogłosił 353 633 660 sadzonek posadzonych w 12 godzin. W grudniu 2023 roku ministerstwo rolnictwa podało 32,5 miliarda sadzonek od 2019 roku i poinformowało, że przyjęło się około 85 procent z 7,5 miliarda sadzonek z poprzedniej pory deszczowej. Te dane liczą sadzonki, a nie hektary, dlatego Etiopii nie ma na pierwszej karcie.",
+      "caption": "Sadzonki w plastikowych workach pod strzechą w szkółce w Etiopii, zdjęcie z 2011 roku.",
+      "credit": "Zdjęcie: Cunningchrisw, Wikimedia Commons. Licencja: Creative Commons Uznanie autorstwa na tych samych warunkach 4.0. Zmniejszono.",
+      "sources": [
+        "Brytyjska Korporacja Nadawcza (20 grudnia 2019), Czy Etiopia posadziła w tym roku cztery miliardy drzew?",
+        "Międzynarodowa Organizacja do spraw Migracji, w serwisie ReliefWeb (2 sierpnia 2019), Etiopia: organizacja bierze udział w rekordowym sadzeniu 353 milionów drzew w jeden dzień",
+        "Etiopska Agencja Informacyjna (26 grudnia 2023), Przyjęło się około 85 procent z 7,5 miliarda sadzonek z ubiegłego roku"
+      ]
+    }
+  }
+}

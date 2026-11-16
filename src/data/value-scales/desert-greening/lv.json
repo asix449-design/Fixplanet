@@ -1,0 +1,93 @@
+{
+  "title": "Tuksnešu apzaļumošana hektāros",
+  "lead": "Katra atzīme ir zemes platība. Pirmajā cilnē ir tas, ko programmas min kā jau apstādītu, finansētu vai atjaunotu. Otrajā ir platības, ko plāni paredzēja aptvert. Hektāri uz papīra un dzīvi koki zemē ir dažādi mērījumi, tāpēc pie katra ieraksta teikts, ko tieši tas skaita.",
+  "axisLabel": "Platība, hektāri",
+  "tabs": {
+    "reported": "Pēc pārskatiem",
+    "planned": "Pēc plāniem"
+  },
+  "items": {
+    "green-india-funded": {
+      "name": "Zaļās Indijas misija, Indija",
+      "valueLine": "155 130 hektāru finansēti stādījumiem, no 2015-16 līdz 2023-24 finanšu gadam",
+      "hook": "Naudu stādījumiem 155 130 hektāru platībā no 2015-16 līdz 2023-24 finanšu gadam saņēma 17 štati un 1 savienības teritorija.",
+      "detail": "Indijas Vides, meža un klimata pārmaiņu ministrija piešķīra aptuveni 8,4 miljardus rūpiju stādījumiem meža un ārpusmeža teritorijās un iedzīvotāju iztikas darbiem. Gada pārskats skaita finansēto platību un neuzrāda, cik koku ieaugušies. Misijas sākotnējais mērķis, 5 miljoni hektāru, ir cilnē Pēc plāniem.",
+      "caption": "Jojobas plantācija Tara tuksnesī Indijā, fotogrāfija no 2006. gada.",
+      "credit": "Foto: LRBurdak, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Indijas Vides, meža un klimata pārmaiņu ministrija, 2023-24 gada pārskats, sadaļa par Nacionālo Zaļās Indijas misiju"
+      ]
+    },
+    "algeria-green-dam-planted": {
+      "name": "Zaļais dambis, Alžīrija",
+      "valueLine": "aptuveni 160 000 hektāru apstādīti līdz 1995. gadam",
+      "hook": "Līdz 1995. gadam bija apstādīti aptuveni 160 000 hektāru no projektā paredzētajiem 3 miljoniem, liecina tā laika novērtējums.",
+      "detail": "Skaitlis ņemts no Bensaida darba (1995), uz kuru atsaucas Khaouani, Hirche un Salamani 2019. gada satelītpētījums par Mudžbaras mežu Dželfas provincē. Mudžbarā stādījumi palielinājās no aptuveni 6 500 hektāriem 1987. gadā līdz aptuveni 8 500 hektāriem 2016. gadā, bet aramzemes daļa pētījuma teritorijā pieauga no 1,29 līdz 12 procentiem.",
+      "caption": "Mežs pakalnos pie Meruānas Batnas provincē, Alžīrijā, fotogrāfija no 2015. gada.",
+      "credit": "Foto: رمزي زودة, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Khaouani, Hirche un Salamani (2019), Zaļā dambja ekoloģiskā dinamika pēc tālizpētes datiem: Mudžbaras piemērs (Dželfa, Alžīrijas centrālā daļa)"
+      ]
+    },
+    "kubuqi-restored": {
+      "name": "Kubuqi tuksnesis, Ķīna",
+      "valueLine": "vairāk nekā 500 000 hektāru atjaunoti, 2025. gads",
+      "hook": "Kubuqi tuksnesī Iekšējā Mongolijā atjaunoti vairāk nekā pusmiljons hektāru, ziņo Apvienoto Nāciju Organizācijas Konvencija par cīņu pret pārtuksnešošanos.",
+      "detail": "Darbi sākās 1988. gadā, tos vadīja uzņēmumu grupa Elion Resources Group kopā ar vietējām pašvaldībām un lopkopjiem. Apvienoto Nāciju Organizācijas Vides programmas 2015. gada pārskats, ko finansēja Elion Foundation, min vairāk nekā 5 000 kvadrātkilometru apmežošanas, tas ir, to pašu platību, un par lielāko nezināmo sauc koku laistīšanas ietekmi uz gruntsūdeņiem.",
+      "caption": "Smilšu kāpas un stepe Kubuqi tuksnesī Iekšējā Mongolijā, fotogrāfija no 2015. gada.",
+      "credit": "Foto: Popolon, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 4.0. Samazināts izmērs.",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Konvencija par cīņu pret pārtuksnešošanos (2025. gada 18. septembris), No pārtuksnešošanās līdz atjaunošanai: mācības no Kubuqi foruma",
+        "Apvienoto Nāciju Organizācijas Vides programma (2015), Kubuqi ekoloģiskās atjaunošanas projekta pārskats: tuksneša zaļās ekonomikas izmēģinājuma iniciatīva"
+      ]
+    },
+    "kp-billion-tree-tsunami": {
+      "name": "Miljarda koku cunami, Haibara Pahtunhva, Pakistāna",
+      "valueLine": "600 000 hektāru (6 000 kvadrātkilometru) apstādīti kopš 2014. gada",
+      "hook": "Kopš 2014. gada Haibara Pahtunhvas provincē iestādīts miljards koku 6 000 kvadrātkilometru degradētu mežu zemju un neapaugušu zemju platībā, 2022. gadā ziņoja Pakistāna.",
+      "detail": "Skaitlis ņemts no Pakistānas pašas 2022. gada ziņojuma Apvienoto Nāciju Organizācijas Konvencijai par cīņu pret pārtuksnešošanos. Provinces programma deva ierosmi valsts programmai Desmit miljardu koku cunami, kas sākās 2016. gadā. Kopš 2020. gada Starptautiskā dabas aizsardzības savienība, Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija un Pasaules Dabas fonds Pakistānā kopā veic programmas neatkarīgu uzraudzību.",
+      "caption": "Himalaju priedes Murri kalnu kūrortā Pakistānā, fotogrāfija no 2016. gada. Foto uzņemts Murri, Pendžābas provincē, nevis Haibara Pahtunhvā.",
+      "credit": "Foto: Najafali05, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 4.0. Samazināts izmērs.",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Konvencija par cīņu pret pārtuksnešošanos, Pakistānas 2022. gada nacionālais ziņojums",
+        "Starptautiskā dabas aizsardzības savienība, programmas Desmit miljardu koku cunami neatkarīgā uzraudzība, ko veic triju organizāciju konsorcijs"
+      ]
+    },
+    "algeria-green-dam-design": {
+      "name": "Zaļais dambis, Alžīrija (projekts)",
+      "valueLine": "3 miljoni hektāru projektā, 1970. gads",
+      "hook": "Josla aptuveni 1 500 kilometru garumā un 20 kilometru platumā no Marokas robežas līdz Tunisijas robežai, starp 200 un 300 milimetru gada nokrišņu līnijām.",
+      "detail": "Prezidents Huari Bumedjēns programmu izsludināja 1970. gadā. Pirmo desmitgadi armija un mežu dienests stādīja tikai Alepo priedi. Kad šie stādījumi izauga, aptuveni 100 000 hektāru izrādījās neaizsargāti pret priežu procesiju vērpēju, bet augsnēs ar kaļķainu garozu koki nokalta.",
+      "caption": "Mežs pakalnos pie Meruānas Batnas provincē, Alžīrijā, fotogrāfija no 2015. gada.",
+      "credit": "Foto: رمزي زودة, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Sahāras un Sahela observatorija (2008), Sahāras un Sahela Lielā zaļā mūra iniciatīva, ievada piezīme, sadaļa par Zaļā dambja pieredzi Alžīrijā",
+        "Nedžma Rahmani (2017), Pielāgošanās klimata pārmaiņām stratēģija: Zaļā dambja pieredze Alžīrijā, žurnāls «Vidusjūras mežs»"
+      ]
+    },
+    "green-india-aim": {
+      "name": "Zaļās Indijas misija, Indija (sākotnējais mērķis)",
+      "valueLine": "5 miljoni hektāru, 2011. gada mērķis",
+      "hook": "Misija sākās ar mērķi palielināt meža vai koku segumu 5 miljonos hektāru un uzlabot meža kvalitāti vēl 5 miljonos.",
+      "detail": "Atjauninātais misijas dokuments laikposmam no 2021. līdz 2030. gadam paredz 1 miljonu hektāru pašas misijas ietvaros. Tas arī uzrāda 11,22 miljonus hektāru apmežošanas no 2015-16 līdz 2020-21 finanšu gadam visās centrālajās un štatu programmās kopā, ieskaitot misiju.",
+      "caption": "Jojobas plantācija Tara tuksnesī Indijā, fotogrāfija no 2006. gada.",
+      "credit": "Foto: LRBurdak, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0. Samazināts izmērs.",
+      "sources": [
+        "Indijas Vides, meža un klimata pārmaiņu ministrija, Nacionālā Zaļās Indijas misija, misijas dokuments (atjaunināts)"
+      ]
+    },
+    "ethiopia-green-legacy-plan": {
+      "name": "Zaļais mantojums, Etiopija",
+      "valueLine": "6,5 miljoni hektāru zemes plānoti stādīšanai, 2019. gads",
+      "hook": "2019. gadā valdība plānoja stādīt kokus 6,5 miljonos hektāru lauku zemes, ziņoja Lielbritānijas apraides korporācija.",
+      "detail": "2019. gada 29. jūlijā valdība paziņoja par 353 633 660 stādiem, kas iestādīti 12 stundās. 2023. gada decembrī Lauksaimniecības ministrija ziņoja par 32,5 miljardiem stādu kopš 2019. gada un teica, ka ieaugušies aptuveni 85 procenti no 7,5 miljardiem iepriekšējās lietus sezonas stādu. Šie dati skaita stādus, nevis hektārus, tāpēc pirmajā cilnē Etiopijas nav.",
+      "caption": "Koku stādi plastmasas maisiņos zem salmu nojumes kokaudzētavā Etiopijā, fotogrāfija no 2011. gada.",
+      "credit": "Foto: Cunningchrisw, Vikikrātuve. Licence: Creative Commons «Ar autora norādi, tādos pašos noteikumos» 4.0. Samazināts izmērs.",
+      "sources": [
+        "Lielbritānijas apraides korporācija (2019. gada 20. decembris), Vai Etiopija šogad iestādīja četrus miljardus koku?",
+        "Starptautiskā Migrācijas organizācija, vietnē ReliefWeb (2019. gada 2. augusts), Etiopija: organizācija piedalās rekordlielā 353 miljonu koku stādīšanā vienā dienā",
+        "Etiopijas ziņu aģentūra (2023. gada 26. decembris), Ieaugušies aptuveni 85 procenti no pagājušā gada 7,5 miljardiem stādu"
+      ]
+    }
+  }
+}
