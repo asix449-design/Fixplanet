@@ -3,6 +3,7 @@ import ForestAtlasCard from '../components/ForestAtlasCard.astro';
 import ForestRelated from '../components/ForestRelated.astro';
 import HubTile from '../components/HubTile.astro';
 import ShelfHeader from '../components/ShelfHeader.astro';
+import ValueScale from '../components/ValueScale.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { forestAtlasPath } from '../data/forest-atlas';
 import {
@@ -314,6 +315,11 @@ const pageTitle = activePanel
           {page.leads.numbers.map((para) => <p>{para}</p>)}
         </div>
         <p class="source-note">{page.numbersNote}</p>
+      </div>
+    </div>
+    <ValueScale id="forests-numbers" />
+    <div class="wrap">
+      <div class="wildlife-list-panel forests-panel">
         <div class="forest-stat-grid">
           {
             stats.map((stat) => (

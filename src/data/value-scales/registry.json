@@ -27,6 +27,34 @@
           "decimal": ","
         }
       }
+    },
+    {
+      "id": "forests-numbers",
+      "unit": "million ha",
+      "shape": "area-square",
+      "tabs": [
+        "total",
+        "yearly"
+      ],
+      "defaultTab": "total",
+      "numberFormat": {
+        "en": {
+          "thousands": ",",
+          "decimal": "."
+        },
+        "ru": {
+          "thousands": " ",
+          "decimal": ","
+        },
+        "pl": {
+          "thousands": " ",
+          "decimal": ","
+        },
+        "lv": {
+          "thousands": " ",
+          "decimal": ","
+        }
+      }
     }
   ]
 }

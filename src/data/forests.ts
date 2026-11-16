@@ -1,5 +1,6 @@
 import type { ForestAtlasSlug } from './forest-atlas';
 import type { HubIconName } from './hub';
+import forestsNumbersMeta from './value-scales/forests-numbers/meta.json';
 
 export const forestPanelKeys = [
   'satellite',
@@ -293,13 +294,50 @@ export const forestHubBackdrop = {
 } as const;
 
 /**
+ * Headline numbers that also sit on the forests value scale.
+ * The scale meta is the figure. These helpers only keep the tile spelling.
+ */
+function forestsScaleMillions(slug: string): number {
+  const item = forestsNumbersMeta.items.find((row) => row.slug === slug);
+  if (!item || !(item.value > 0)) {
+    throw new Error(`Forests tile is missing a scale value for ${slug}`);
+  }
+  return item.value;
+}
+
+function forestsTileMillions(slug: string): string {
+  const value = forestsScaleMillions(slug);
+  const raw = Number.isInteger(value)
+    ? value.toFixed(0)
+    : value.toFixed(8).replace(/(\.\d*?)0+$/, '$1').replace(/\.$/, '');
+  const [intPart, fracPart] = raw.split('.');
+  const grouped = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return fracPart ? `${grouped}.${fracPart}` : grouped;
+}
+
+/** 4,140 million hectares is the same stock the tile shows as 4.14 billion. */
+function forestsTileBillions(slug: string): string {
+  const millions = forestsScaleMillions(slug);
+  if (!Number.isInteger(millions) || millions % 10 !== 0) {
+    throw new Error(`Forest area ${millions} million ha is not a whole tenth of a billion`);
+  }
+  const tenths = millions / 10;
+  const whole = Math.trunc(tenths / 100);
+  const frac = tenths % 100;
+  if (frac === 0) return String(whole);
+  const fracText = String(frac).padStart(2, '0').replace(/0+$/, '');
+  return `${whole}.${fracText}`;
+}
+
+/**
  * Published figures only. Do not invent hectare counts or a single “forests gone on DATE”.
  * FAO forest (land use) ≠ Hansen/GFW tree cover (canopy ≥ ~5 m, 30 m pixels).
+ * Tiles that repeat a forests-numbers mark read that mark, so the two cannot drift.
  */
 export const forestStats: ForestStatMeta[] = [
   {
     id: 'remaining',
-    value: '4.14',
+    value: forestsTileBillions('forest-area-2025'),
     unitKey: 'billionHa',
     vintage: '2025',
     sourceShort: 'FRA 2025',
@@ -344,7 +382,7 @@ export const forestStats: ForestStatMeta[] = [
   },
   {
     id: 'deforestationSince1990',
-    value: '489',
+    value: forestsTileMillions('deforested-1990-2025'),
     unitKey: 'millionHa',
     vintage: '1990 to 2025',
     sourceShort: 'FRA 2025',
@@ -353,7 +391,7 @@ export const forestStats: ForestStatMeta[] = [
   },
   {
     id: 'netLossRecent',
-    value: '4.12',
+    value: forestsTileMillions('net-loss-2015-2025'),
     unitKey: 'millionHaYear',
     vintage: '2015 to 2025',
     sourceShort: 'FRA 2025',
@@ -362,7 +400,7 @@ export const forestStats: ForestStatMeta[] = [
   },
   {
     id: 'grossDeforestation',
-    value: '10.9',
+    value: forestsTileMillions('gross-deforestation-2015-2025'),
     unitKey: 'millionHaYear',
     vintage: '2015 to 2025',
     sourceShort: 'FRA 2025',
@@ -371,7 +409,7 @@ export const forestStats: ForestStatMeta[] = [
   },
   {
     id: 'tropicalPrimary2024',
-    value: '6.7',
+    value: forestsTileMillions('tropical-primary-loss-2024'),
     unitKey: 'millionHa',
     vintage: '2024',
     sourceShort: 'WRI 2024',
@@ -407,7 +445,7 @@ export const forestStats: ForestStatMeta[] = [
   },
   {
     id: 'intactLandscapes',
-    value: '1,086',
+    value: forestsTileMillions('ifl-remaining-2025'),
     unitKey: 'millionHa',
     vintage: '2025',
     sourceShort: 'Potapov / IFL 2025',

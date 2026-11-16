@@ -1,0 +1,103 @@
+{
+  "title": "Pasaules meži hektāros",
+  "lead": "Pirmajā cilnē redzams, cik daudz meža ir un cik daudz tā zudis vairāku desmitgažu laikā. Otrajā redzams, cik daudz izzūd viena gada laikā. Katra atzīme ir platība, un jo lielāks kvadrāts, jo vairāk zemes tas aptver.",
+  "axisLabel": "Platība, miljoni hektāru",
+  "tabs": {
+    "total": "Cik daudz meža",
+    "yearly": "Zaudēts gadā"
+  },
+  "items": {
+    "ifl-lost-2000-2025": {
+      "name": "Neskartais mežs, zaudēts kopš 2000. gada",
+      "valueLine": "194,7 miljoni hektāru, no 2000. līdz 2025. gadam",
+      "hook": "No 2000. līdz 2025. gadam pasaule zaudēja 194,7 miljonus hektāru neskartu meža ainavu, 15,2 procentus to platības, gandrīz tikpat, cik aizņem Meksikas sauszeme.",
+      "detail": "Neskarta meža ainava ir liela, nepārtraukta dabisku ekosistēmu teritorija meža zonā bez nozīmīgas cilvēka darbības pazīmēm, vismaz 50 000 hektāru liela. Vidēji gadā zuda 8,1 miljons hektāru: pirms 2013. gada aptuveni 7 miljoni gadā, pēc 2020. gada aptuveni 10 miljoni gadā. Tas ir aptuveni 22 000 hektāru dienā.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Neskarto meža ainavu kartēšanas grupa: Pasaules neskartās meža ainavas, no 2000. līdz 2025. gadam, galvenie secinājumi (2025)",
+        "Neskarto meža ainavu kartēšanas grupa: Neskarto meža ainavu koncepcija un definīcija (2025)"
+      ]
+    },
+    "deforested-1990-2025": {
+      "name": "Mežu izciršana kopš 1990. gada",
+      "valueLine": "489 miljoni hektāru, no 1990. līdz 2025. gadam",
+      "hook": "No 1990. līdz 2025. gadam mežu izciršanas dēļ zaudēti aptuveni 489 miljoni hektāru meža, ziņo Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija.",
+      "detail": "Mežu izciršana šeit nozīmē meža pārvēršanu citā zemes izmantošanas veidā, piemēram, tīrumos vai apbūvē. 88 procenti no tās notika tropos. Jaunais mežs no stādīšanas un dabiskas apaugšanas tiek skaitīts atsevišķi, tāpēc meža platības neto zudums tajos pašos gados ir mazāks.",
+      "caption": "Izcirsta un nodedzināta meža zeme pie Apuī Amazonasas štatā Brazīlijā, 2020. gada augusts, tālāk stāv mežs.",
+      "credit": "Foto: Bruno Kelly, Amazônia Real, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi» 2.0. Samazināts izmērs.",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Globālais meža resursu novērtējums 2025, galvenais ziņojums (2025)"
+      ]
+    },
+    "ifl-remaining-2025": {
+      "name": "Neskartais mežs 2025. gadā",
+      "valueLine": "1 086 miljoni hektāru, 2025. gads",
+      "hook": "2025. gadā bija palikuši 1 086 miljoni hektāru neskartu meža ainavu, 8,4 procenti Zemes sauszemes, ko neklāj ledus.",
+      "detail": "Šajās ainavās ir 21 procents pasaules koku seguma. Vairāk nekā 90 procenti to platības atrodas 11 valstīs: Amerikas Savienotajās Valstīs, Brazīlijā, Čīlē, Indonēzijā, Kanādā, Kolumbijā, Kongo Demokrātiskajā Republikā, Krievijā, Papua-Jaungvinejā, Peru un Venecuēlā. Lielākie masīvi ir Amazones un Kongo baseinos un ziemeļu boreālajos mežos.",
+      "caption": "Skats no gaisa uz Amazones lietusmežu Brazīlijā, 2009. gada 9. septembris: nepārtraukts zaļš vainagu jumols un plata brūna upe.",
+      "credit": "Foto: lubasi, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi, tādos pašos noteikumos» 2.0. Samazināts izmērs.",
+      "sources": [
+        "Neskarto meža ainavu kartēšanas grupa: Pasaules neskartās meža ainavas, no 2000. līdz 2025. gadam, galvenie secinājumi (2025)"
+      ]
+    },
+    "forest-area-2025": {
+      "name": "Visi pasaules meži",
+      "valueLine": "4 140 miljoni hektāru (4,14 miljardi), 2025. gads",
+      "hook": "Meži aizņem 4,14 miljardus hektāru, 32 procentus sauszemes, tas ir, aptuveni pushektāru uz katru cilvēku.",
+      "detail": "Globālais meža resursu novērtējums 2025 aptver 236 valstis un teritorijas. Gandrīz puse pasaules mežu aug tropos. Pārējie šīs cilnes kvadrāti stāv blakus šim salīdzinājumam.",
+      "caption": "Tropu lietusmežs Khaosokā Taizemes dienvidos, tālāk miglaini pakalni, fotogrāfija no 2011. gada.",
+      "credit": "Foto: Vyacheslav Argenberg, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi» 4.0. Samazināts izmērs.",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Pasaules mežu izciršana palēninās, bet meži paliek zem spiediena, liecina organizācijas ziņojums (2025. gada 21. oktobris)"
+      ]
+    },
+    "net-loss-2015-2025": {
+      "name": "Meža neto zudums gadā",
+      "valueLine": "4,12 miljoni hektāru gadā, no 2015. līdz 2025. gadam",
+      "hook": "Atņemot jauno mežu no izcirstā, pasaule no 2015. līdz 2025. gadam zaudēja 4,12 miljonus hektāru gadā, salīdzinot ar 10,7 miljoniem gadā 20. gadsimta 90. gados.",
+      "detail": "Neto zudums ir mežu izciršana mīnus meža platības pieaugums. No 2015. līdz 2025. gadam mežs stādīšanas un dabiskas apaugšanas dēļ paplašinājās par 6,78 miljoniem hektāru gadā, bet izcirsti tika 10,9 miljoni hektāru gadā. Abas daļas novērtē atsevišķi, un daudzām valstīm datu trūkst, tāpēc novērtējuma autori iesaka tās vērtēt piesardzīgi.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Pasaules mežu izciršana palēninās, bet meži paliek zem spiediena, liecina organizācijas ziņojums (2025. gada 21. oktobris)"
+      ]
+    },
+    "tropical-primary-loss-2024": {
+      "name": "Tropu pirmatnējais mežs, zaudēts 2024. gadā",
+      "valueLine": "6,7 miljoni hektāru 2024. gadā",
+      "hook": "2024. gadā tropi zaudēja 6,7 miljonus hektāru pirmatnējā lietusmeža, gandrīz Panamas platību un vairāk nekā jebkurā citā gadā vismaz divās desmitgadēs.",
+      "detail": "Skaitlis iegūts no Merilendas Universitātes satelītdatiem, un to publicēja Pasaules resursu institūts. Pirmo reizi galvenais cēlonis bija ugunsgrēki, kas izraisīja gandrīz pusi zaudējumu, bet uz Brazīliju attiecās 42 procenti. Šis skaitlis mēra koku seguma zudumu, kas redzams satelītattēlos, arī ugunī bojā gājušu mežu. Tā ir cita metode nekā Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācijas zemes izmantošanas dati pie citām atzīmēm.",
+      "caption": "Izcirtums Amazones priekškalnēs Kolumbijā, 2023. gada 5. jūnijs: stāva nogāze ar izcirstu un nodedzinātu joslu, apdeguši stumbri uz kailas zemes un biezs mežs apkārt.",
+      "credit": "Foto: Biodiego88, ar Wikimedia Commons starpniecību, licence Creative Commons «Ar autora norādi» 4.0. Samazināts izmērs.",
+      "sources": [
+        "Pasaules resursu institūts, Pasaules mežu pārskats: Cik daudz meža tika zaudēts 2024. gadā? (2025. gada 21. maijs)",
+        "Pasaules resursu institūts: Paziņojums: Pasaules mežu zudums 2024. gadā uzlauza rekordus masīvu ugunsgrēku dēļ (2025. gada 21. maijs)"
+      ]
+    },
+    "gross-deforestation-2015-2025": {
+      "name": "Gadā izcirstais mežs, no 2015. līdz 2025. gadam",
+      "valueLine": "10,9 miljoni hektāru gadā, no 2015. līdz 2025. gadam",
+      "hook": "No 2015. līdz 2025. gadam aptuveni 10,9 miljoni hektāru meža gadā tika pārvērsti tīrumos, ceļos, pilsētās un citām vajadzībām.",
+      "detail": "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija ziņo, ka mežu izciršana palēninājusies visos pasaules reģionos, bet joprojām sauc šo tempu par pārāk augstu. No 2000. līdz 2015. gadam temps bija 13,6 miljoni hektāru gadā.",
+      "caption": "Izcirsts laukums mežainā kalna nogāzē, melnbalta fotogrāfija no Ziemeļkaskāžu Nacionālā parka kompleksa muzeja kolekcijas Amerikas Savienotajās Valstīs.",
+      "credit": "Foto: Amerikas Savienoto Valstu Nacionālo parku dienests, ar Wikimedia Commons starpniecību, publiskais īpašums. Samazināts izmērs.",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Pasaules mežu izciršana palēninās, bet meži paliek zem spiediena, liecina organizācijas ziņojums (2025. gada 21. oktobris)",
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Globālais meža resursu novērtējums 2025, galvenais ziņojums (2025)"
+      ]
+    },
+    "gross-deforestation-1990-2000": {
+      "name": "Gadā izcirstais mežs, no 1990. līdz 2000. gadam",
+      "valueLine": "17,6 miljoni hektāru gadā, no 1990. līdz 2000. gadam",
+      "hook": "20. gadsimta 90. gados aptuveni 17,6 miljoni hektāru meža gadā tika pārvērsti citām vajadzībām, tas ir ātrākais temps no trim novērtējuma periodiem.",
+      "detail": "Blakus atzīmei par 2015. līdz 2025. gadu redzams, cik ļoti izciršana palēninājusies. Lielākā daļa no tās toreiz, tāpat kā tagad, notika tropos.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Pasaules mežu izciršana palēninās, bet meži paliek zem spiediena, liecina organizācijas ziņojums (2025. gada 21. oktobris)",
+        "Apvienoto Nāciju Organizācijas Pārtikas un lauksaimniecības organizācija: Globālais meža resursu novērtējums 2025, galvenais ziņojums (2025)"
+      ]
+    }
+  }
+}

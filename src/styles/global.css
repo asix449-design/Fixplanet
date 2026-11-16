@@ -5568,3 +5568,16 @@ a.map-card:hover {
   margin: 0 0 0.75rem;
   overflow-wrap: break-word;
 }
+
+.value-scale-square.is-outline img {
+  opacity: 0.78;
+}
+
+.value-scale-square.is-outline::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  z-index: 1;
+  pointer-events: none;
+  border: 2px dashed rgba(244, 244, 240, 0.92);
+}

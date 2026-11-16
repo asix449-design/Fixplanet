@@ -107,7 +107,7 @@ function liveText(item: ValueScaleItem, place: string): string {
                         tab.items.map((item, index) => (
                           <div class="value-scale-col" style={`--weight:${item.weight}`}>
                             <button
-                              class:list={['value-scale-square', { 'is-selected': index === 0 }]}
+                              class:list={['value-scale-square', { 'is-selected': index === 0, 'is-outline': item.mark === 'outline' }]}
                               type="button"
                               data-item
                               data-slug={item.slug}
@@ -157,8 +157,8 @@ function liveText(item: ValueScaleItem, place: string): string {
                 <p class="value-scale-line" data-value-line>{first.valueLine}</p>
                 <p class="size-scale-caption" data-hook>{first.hook}</p>
                 <p class="value-scale-detail" data-detail>{first.detail}</p>
-                <p class="size-scale-caption" data-caption>{first.caption}</p>
-                <p class="size-scale-credit" data-credit>
+                <p class="size-scale-caption" data-caption hidden={!first.caption}>{first.caption}</p>
+                <p class="size-scale-credit" data-credit hidden={!first.creditBefore && !first.licenceLabel && !first.creditAfter}>
                   {
                     first.licenceLabel ? (
                       <>
@@ -226,18 +226,22 @@ function liveText(item: ValueScaleItem, place: string): string {
                     <p>{item.valueLine}</p>
                     <p>{item.hook}</p>
                     <p>{item.detail}</p>
-                    <p>{item.caption}</p>
-                    <p>
-                      {
-                        item.licenceLabel ? (
-                          <>
-                            {item.creditBefore}<a href={item.licenceHref} rel="noopener noreferrer">{item.licenceLabel}</a>{item.creditAfter}
-                          </>
-                        ) : (
-                          `${item.creditBefore}${item.licenceLabel}${item.creditAfter}`
-                        )
-                      }
-                    </p>
+                    {item.caption && <p>{item.caption}</p>}
+                    {
+                      (item.creditBefore || item.licenceLabel || item.creditAfter) && (
+                        <p>
+                          {
+                            item.licenceLabel ? (
+                              <>
+                                {item.creditBefore}<a href={item.licenceHref} rel="noopener noreferrer">{item.licenceLabel}</a>{item.creditAfter}
+                              </>
+                            ) : (
+                              `${item.creditBefore}${item.licenceLabel}${item.creditAfter}`
+                            )
+                          }
+                        </p>
+                      )
+                    }
                   </li>
                 ))
               }
