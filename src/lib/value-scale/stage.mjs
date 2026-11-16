@@ -44,7 +44,10 @@ function mount(root) {
   }
 
   function fillCredit(item) {
+    const empty = !item.creditBefore && !item.licenceLabel && !item.creditAfter;
+    creditEl.hidden = empty;
     creditEl.replaceChildren();
+    if (empty) return;
     if (!item.licenceLabel || !item.licenceHref) {
       creditEl.textContent = `${item.creditBefore || ''}${item.licenceLabel || ''}${item.creditAfter || ''}`;
       return;
@@ -88,7 +91,8 @@ function mount(root) {
     valueEl.textContent = item.valueLine;
     hookEl.textContent = item.hook;
     detailEl.textContent = item.detail;
-    captionEl.textContent = item.caption;
+    captionEl.hidden = !item.caption;
+    captionEl.textContent = item.caption || '';
     fillCredit(item);
     fillSources(item);
     positionEl.textContent = position;

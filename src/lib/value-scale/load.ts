@@ -63,6 +63,22 @@ const licencePhrases = [
   'Creative Commons Uznanie autorstwa na tych samych warunkach 3.0',
   'Creative Commons «Ar autora norādi, tādos pašos noteikumos» 4.0',
   'Creative Commons «Ar autora norādi, tādos pašos noteikumos» 3.0',
+  'Creative Commons Attribution-ShareAlike 2.0',
+  'Creative Commons Attribution 4.0',
+  'Creative Commons Attribution 2.0',
+  'Creative Commons «Атрибуция, на тех же условиях» 2.0',
+  'Creative Commons «Атрибуция» 4.0',
+  'Creative Commons «Атрибуция» 2.0',
+  'Creative Commons Uznanie autorstwa na tych samych warunkach 2.0',
+  'Creative Commons Uznanie autorstwa 4.0',
+  'Creative Commons Uznanie autorstwa 2.0',
+  'Creative Commons «Ar autora norādi, tādos pašos noteikumos» 2.0',
+  'Creative Commons «Ar autora norādi» 4.0',
+  'Creative Commons «Ar autora norādi» 2.0',
+  'public domain',
+  'общественное достояние',
+  'domena publiczna',
+  'publiskais īpašums',
 ];
 
 type NumberFormat = { thousands: string; decimal: string };
@@ -100,6 +116,8 @@ type MetaItem = {
   image: MetaImage | null;
   sources: string[];
   linkTo: string | null;
+  /** A different measure drawn as a lighter outlined square. Omitted on solid marks. */
+  mark?: 'outline' | null;
 };
 
 type CopyItem = {
@@ -140,6 +158,7 @@ export type ValueScaleItem = {
   weight: number;
   image: { src: string; pxW: number; pxH: number } | null;
   linkTo: string | null;
+  mark: 'outline' | null;
 };
 
 export type ValueScaleTab = {
@@ -242,8 +261,11 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
     if (item.qualifier !== null && item.qualifier !== 'about' && item.qualifier !== 'more_than') {
       throw new Error(`Value scale ${entry.id} item ${item.slug} has qualifier ${item.qualifier}`);
     }
+    if (item.mark != null && item.mark !== 'outline') {
+      throw new Error(`Value scale ${entry.id} item ${item.slug} has mark ${item.mark}`);
+    }
     const text = copy.items[item.slug];
-    if (!text?.name || !text.valueLine || !text.hook || !text.detail || !text.caption || !text.credit) {
+    if (!text?.name || !text.valueLine || !text.hook || !text.detail || text.caption == null || text.credit == null) {
       throw new Error(`Value scale ${entry.id} is missing ${locale} copy for ${item.slug}`);
     }
     if (!Array.isArray(text.sources) || text.sources.length !== item.sources.length) {
@@ -252,6 +274,9 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
     let image: ValueScaleItem['image'] = null;
     let licenceHref = '';
     if (item.image) {
+      if (!text.caption || !text.credit) {
+        throw new Error(`Value scale ${entry.id} photo for ${item.slug} needs a caption and a credit in ${locale}`);
+      }
       if (!item.image.src || !(item.image.pxW > 0) || !(item.image.pxH > 0) || !item.image.licenceUrl) {
         throw new Error(`Value scale ${entry.id} image for ${item.slug} is incomplete`);
       }
@@ -259,8 +284,10 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
       if (!existsSync(file)) throw new Error(`Value scale image is missing: ${item.image.src}`);
       image = { src: item.image.src, pxW: item.image.pxW, pxH: item.image.pxH };
       licenceHref = item.image.licenceUrl;
+    } else if (text.caption || text.credit) {
+      throw new Error(`Value scale ${entry.id} item ${item.slug} has a caption or credit without a photo in ${locale}`);
     }
-    const credit = splitCredit(text.credit, licenceHref);
+    const credit = text.credit ? splitCredit(text.credit, licenceHref) : { before: '', label: '', after: '' };
     const words = qualifierWords[locale];
     byTab.get(item.tab)?.push({
       slug: item.slug,
@@ -280,6 +307,7 @@ function loadScale(entry: RegistryScale, locale: Locale): ValueScaleView {
       weight: Math.sqrt(item.value),
       image,
       linkTo: item.linkTo,
+      mark: item.mark === 'outline' ? 'outline' : null,
     });
   }
 

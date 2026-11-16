@@ -1,0 +1,166 @@
+{
+  "items": [
+    {
+      "slug": "ifl-lost-2000-2025",
+      "tab": "total",
+      "order": 1,
+      "value": 194.7,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "2000 to 2025",
+      "image": null,
+      "sources": [
+        "https://intactforests.org/world.map.html",
+        "https://intactforests.org/concept.html"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "deforested-1990-2025",
+      "tab": "total",
+      "order": 2,
+      "value": 489,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "1990 to 2025",
+      "image": {
+        "src": "/images/value-scales/forests/apui-cleared-2020.webp",
+        "pxW": 786,
+        "pxH": 524,
+        "author": "Bruno Kelly, Amazônia Real",
+        "licence": "CC BY 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Desmatamento_e_Queimadas_2020_(50223713453).jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.fao.org/3/cd6709en/cd6709en.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "ifl-remaining-2025",
+      "tab": "total",
+      "order": 3,
+      "value": 1086,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "2025",
+      "image": {
+        "src": "/images/value-scales/forests/amazon-aerial.webp",
+        "pxW": 874,
+        "pxH": 537,
+        "author": "lubasi",
+        "licence": "CC BY-SA 2.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://intactforests.org/world.map.html"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "forest-area-2025",
+      "tab": "total",
+      "order": 4,
+      "value": 4140,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "2025",
+      "image": {
+        "src": "/images/value-scales/forests/khao-sok-rainforest.webp",
+        "pxW": 874,
+        "pxH": 583,
+        "author": "Vyacheslav Argenberg",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khao_Sok_primary_tropical_rainforest,_southern_Thailand.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "net-loss-2015-2025",
+      "tab": "yearly",
+      "order": 5,
+      "value": 4.12,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "2015 to 2025",
+      "image": null,
+      "sources": [
+        "https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "tropical-primary-loss-2024",
+      "tab": "yearly",
+      "order": 6,
+      "value": 6.7,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "2024",
+      "mark": "outline",
+      "image": {
+        "src": "/images/value-scales/forests/colombia-foothills-clearing.webp",
+        "pxW": 972,
+        "pxH": 648,
+        "author": "Biodiego88",
+        "licence": "CC BY 4.0",
+        "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deforestaci%C3%B3n_piedemonte_amazonico.jpg",
+        "changed": true
+      },
+      "sources": [
+        "https://gfr.wri.org/global-tree-cover-loss-data-2024",
+        "https://www.wri.org/news/release-global-forest-loss-shatters-records-2024-fueled-massive-fires"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "gross-deforestation-2015-2025",
+      "tab": "yearly",
+      "order": 7,
+      "value": 10.9,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "2015 to 2025",
+      "image": {
+        "src": "/images/value-scales/forests/north-cascades-clearcut.webp",
+        "pxW": 708,
+        "pxH": 873,
+        "author": "National Park Service of the United States",
+        "licence": "Public domain",
+        "licenceUrl": "https://creativecommons.org/publicdomain/mark/1.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clearcut_surrounded_by_dense_forest_(9cd273c3-31c3-4c11-9c15-20833afe5e7f).tif",
+        "changed": true
+      },
+      "sources": [
+        "https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en",
+        "https://www.fao.org/3/cd6709en/cd6709en.pdf"
+      ],
+      "linkTo": null
+    },
+    {
+      "slug": "gross-deforestation-1990-2000",
+      "tab": "yearly",
+      "order": 8,
+      "value": 17.6,
+      "qualifier": null,
+      "unit": "million ha",
+      "period": "1990 to 2000",
+      "image": null,
+      "sources": [
+        "https://www.fao.org/newsroom/detail/global-deforestation-slows--but-forests-remain-under-pressure--fao-report-shows/en",
+        "https://www.fao.org/3/cd6709en/cd6709en.pdf"
+      ],
+      "linkTo": null
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "title": "Lasy świata w hektarach",
+  "lead": "Pierwsza karta pokazuje, ile jest lasów i ile ubyło ich w ciągu kilku dekad. Druga pokazuje, ile znika w jednym roku. Każdy znacznik to powierzchnia, a im większy kwadrat, tym więcej ziemi obejmuje.",
+  "axisLabel": "Powierzchnia, miliony hektarów",
+  "tabs": {
+    "total": "Ile jest lasu",
+    "yearly": "Utracone w rok"
+  },
+  "items": {
+    "ifl-lost-2000-2025": {
+      "name": "Nienaruszony las utracony od 2000 roku",
+      "valueLine": "194,7 miliona hektarów, od 2000 do 2025 roku",
+      "hook": "W latach 2000 do 2025 świat stracił 194,7 miliona hektarów nienaruszonych krajobrazów leśnych, 15,2 procent ich powierzchni, prawie tyle, ile zajmuje ląd Meksyku.",
+      "detail": "Nienaruszony krajobraz leśny to duży, ciągły obszar naturalnych ekosystemów w strefie lasów bez śladów znaczącej działalności człowieka, o powierzchni co najmniej 50 000 hektarów. Średnio ubywało 8,1 miliona hektarów rocznie: około 7 milionów rocznie przed 2013 rokiem i około 10 milionów rocznie po 2020 roku. To około 22 000 hektarów dziennie.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Zespół mapowania nienaruszonych krajobrazów leśnych: Nienaruszone krajobrazy leśne świata, od 2000 do 2025 roku, główne ustalenia (2025)",
+        "Zespół mapowania nienaruszonych krajobrazów leśnych: Koncepcja i definicja nienaruszonych krajobrazów leśnych (2025)"
+      ]
+    },
+    "deforested-1990-2025": {
+      "name": "Wylesienie od 1990 roku",
+      "valueLine": "489 milionów hektarów, od 1990 do 2025 roku",
+      "hook": "W latach 1990 do 2025 przez wylesianie ubyło około 489 milionów hektarów lasu, podaje Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa.",
+      "detail": "Wylesienie oznacza tu zamianę lasu na inny sposób użytkowania ziemi, na przykład pola albo zabudowę. 88 procent przypadło na tropiki. Nowe lasy z nasadzeń i naturalnego zarastania liczone są osobno, dlatego ubytek netto powierzchni lasów w tych samych latach jest mniejszy.",
+      "caption": "Wykarczowany i spalony teren leśny w pobliżu Apuí w stanie Amazonas w Brazylii, sierpień 2020 roku, dalej stoi las.",
+      "credit": "Zdjęcie: Bruno Kelly, Amazônia Real, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa 2.0. Zmniejszono.",
+      "sources": [
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Globalna Ocena Zasobów Leśnych 2025, raport główny (2025)"
+      ]
+    },
+    "ifl-remaining-2025": {
+      "name": "Nienaruszony las w 2025 roku",
+      "valueLine": "1 086 milionów hektarów, 2025 rok",
+      "hook": "W 2025 roku zostało 1 086 milionów hektarów nienaruszonych krajobrazów leśnych, 8,4 procent wolnego od lodu lądu Ziemi.",
+      "detail": "Na te krajobrazy przypada 21 procent światowej pokrywy drzew. Ponad 90 procent ich powierzchni leży w 11 krajach: Brazylii, Chile, Demokratycznej Republice Konga, Indonezji, Kanadzie, Kolumbii, Papui-Nowej Gwinei, Peru, Rosji, Stanach Zjednoczonych i Wenezueli. Największe obszary leżą w dorzeczach Amazonki i Konga oraz w północnych lasach borealnych.",
+      "caption": "Widok z lotu ptaka na las deszczowy Amazonii w Brazylii, 9 września 2009 roku: zwarty zielony okap i szeroka brunatna rzeka.",
+      "credit": "Zdjęcie: lubasi, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa na tych samych warunkach 2.0. Zmniejszono.",
+      "sources": [
+        "Zespół mapowania nienaruszonych krajobrazów leśnych: Nienaruszone krajobrazy leśne świata, od 2000 do 2025 roku, główne ustalenia (2025)"
+      ]
+    },
+    "forest-area-2025": {
+      "name": "Wszystkie lasy świata",
+      "valueLine": "4 140 milionów hektarów (4,14 miliarda), 2025 rok",
+      "hook": "Lasy zajmują 4,14 miliarda hektarów, 32 procent lądów, czyli około pół hektara na każdego człowieka.",
+      "detail": "Globalna Ocena Zasobów Leśnych 2025 obejmuje 236 krajów i terytoriów. Prawie połowa lasów świata rośnie w tropikach. Pozostałe kwadraty na tej karcie stoją obok tego dla porównania.",
+      "caption": "Tropikalny las deszczowy w Khao Sok w południowej Tajlandii, dalej wzgórza we mgle, zdjęcie z 2011 roku.",
+      "credit": "Zdjęcie: Vyacheslav Argenberg, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa 4.0. Zmniejszono.",
+      "sources": [
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Światowe wylesianie zwalnia, ale lasy pozostają pod presją, wynika z raportu organizacji (21 października 2025)"
+      ]
+    },
+    "net-loss-2015-2025": {
+      "name": "Ubytek lasu netto w ciągu roku",
+      "valueLine": "4,12 miliona hektarów rocznie, od 2015 do 2025 roku",
+      "hook": "Po odjęciu nowych lasów od wyciętych świat tracił w latach 2015 do 2025 po 4,12 miliona hektarów rocznie, wobec 10,7 miliona rocznie w latach 90.",
+      "detail": "Ubytek netto to wylesienie minus przyrost lasów. W latach 2015 do 2025 lasy przybywały dzięki nasadzeniom i naturalnemu zarastaniu na 6,78 miliona hektarów rocznie, a wycinano 10,9 miliona hektarów rocznie. Obie części szacuje się osobno, a dla wielu krajów brakuje danych, dlatego autorzy oceny zalecają ostrożność.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Światowe wylesianie zwalnia, ale lasy pozostają pod presją, wynika z raportu organizacji (21 października 2025)"
+      ]
+    },
+    "tropical-primary-loss-2024": {
+      "name": "Tropikalny las pierwotny utracony w 2024 roku",
+      "valueLine": "6,7 miliona hektarów w 2024 roku",
+      "hook": "W 2024 roku tropiki straciły 6,7 miliona hektarów pierwotnego lasu deszczowego, prawie powierzchnię Panamy i więcej niż w jakimkolwiek innym roku od co najmniej dwóch dekad.",
+      "detail": "Liczba pochodzi z danych satelitarnych Uniwersytetu Maryland, opublikowanych przez Instytut Zasobów Światowych. Po raz pierwszy główną przyczyną były pożary, odpowiedzialne za prawie połowę strat, a na Brazylię przypadło 42 procent. Ta liczba mierzy utratę pokrywy drzew widoczną na zdjęciach satelitarnych, w tym las zabity przez ogień. To inna metoda niż dane Organizacji Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa o użytkowaniu ziemi przy innych znacznikach.",
+      "caption": "Wycinka na amazońskim przedgórzu w Kolumbii, 5 czerwca 2023 roku: stromy stok z wyciętym i spalonym pasem, poczerniałe pnie na gołej ziemi i gęsty las dookoła.",
+      "credit": "Zdjęcie: Biodiego88, za pośrednictwem Wikimedia Commons, licencja Creative Commons Uznanie autorstwa 4.0. Zmniejszono.",
+      "sources": [
+        "Instytut Zasobów Światowych, Przegląd Lasów Świata: Ile lasu utracono w 2024 roku? (21 maja 2025)",
+        "Instytut Zasobów Światowych: Komunikat: Światowa utrata lasów pobiła rekordy w 2024 roku z powodu ogromnych pożarów (21 maja 2025)"
+      ]
+    },
+    "gross-deforestation-2015-2025": {
+      "name": "Las wycinany w ciągu roku, 2015 do 2025",
+      "valueLine": "10,9 miliona hektarów rocznie, od 2015 do 2025 roku",
+      "hook": "W latach 2015 do 2025 około 10,9 miliona hektarów lasu rocznie zamieniano na pola, drogi, miasta i inne cele.",
+      "detail": "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa podaje, że wylesianie zwolniło we wszystkich regionach świata, ale nadal uznaje to tempo za zbyt wysokie. W latach 2000 do 2015 wynosiło ono 13,6 miliona hektarów rocznie.",
+      "caption": "Wycięty płat na zalesionym zboczu górskim, czarno-białe zdjęcie z kolekcji muzealnej kompleksu Parku Narodowego Północnych Gór Kaskadowych w Stanach Zjednoczonych.",
+      "credit": "Zdjęcie: Służba Parków Narodowych Stanów Zjednoczonych, za pośrednictwem Wikimedia Commons, domena publiczna. Zmniejszono.",
+      "sources": [
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Światowe wylesianie zwalnia, ale lasy pozostają pod presją, wynika z raportu organizacji (21 października 2025)",
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Globalna Ocena Zasobów Leśnych 2025, raport główny (2025)"
+      ]
+    },
+    "gross-deforestation-1990-2000": {
+      "name": "Las wycinany w ciągu roku, 1990 do 2000",
+      "valueLine": "17,6 miliona hektarów rocznie, od 1990 do 2000 roku",
+      "hook": "W latach 90. około 17,6 miliona hektarów lasu rocznie zamieniano na inne cele, to najszybsze tempo z trzech okresów w ocenie.",
+      "detail": "Obok znacznika dla lat 2015 do 2025 widać, jak bardzo zwolniła wycinka. Większość z niej wtedy, tak jak dziś, przypadała na tropiki.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Światowe wylesianie zwalnia, ale lasy pozostają pod presją, wynika z raportu organizacji (21 października 2025)",
+        "Organizacja Narodów Zjednoczonych do spraw Wyżywienia i Rolnictwa: Globalna Ocena Zasobów Leśnych 2025, raport główny (2025)"
+      ]
+    }
+  }
+}

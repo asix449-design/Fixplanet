@@ -1,0 +1,103 @@
+{
+  "title": "The world's forests in hectares",
+  "lead": "The first tab shows how much forest there is and how much has gone over several decades. The second shows how much disappears in a single year. Each mark is an area, and the larger the square, the more land it covers.",
+  "axisLabel": "Area, million hectares",
+  "tabs": {
+    "total": "How much forest",
+    "yearly": "Lost in one year"
+  },
+  "items": {
+    "ifl-lost-2000-2025": {
+      "name": "Intact forest lost since 2000",
+      "valueLine": "194.7 million hectares, 2000 to 2025",
+      "hook": "Between 2000 and 2025 the world lost 194.7 million hectares of intact forest landscapes, 15.2 percent of their area and nearly the land area of Mexico.",
+      "detail": "An intact forest landscape is a large, unbroken expanse of natural ecosystems in the forest zone with no signs of significant human activity, at least 50,000 hectares in size. The average loss was 8.1 million hectares a year, rising from 7 million a year before 2013 to 10 million a year after 2020. That is about 22,000 hectares a day.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Intact Forest Landscapes mapping team: World's Intact Forest Landscapes, from 2000 to 2025, key findings (2025)",
+        "Intact Forest Landscapes mapping team: Intact Forest Landscapes concept and definition (2025)"
+      ]
+    },
+    "deforested-1990-2025": {
+      "name": "Deforestation since 1990",
+      "valueLine": "489 million hectares, 1990 to 2025",
+      "hook": "About 489 million hectares of forest were lost to deforestation between 1990 and 2025, according to the Food and Agriculture Organization of the United Nations.",
+      "detail": "Deforestation here means forest turned into another land use, such as farmland or infrastructure. 88 percent of it took place in the tropics. New forest from planting and natural spread is counted separately, so the net loss of forest area over the same years is smaller.",
+      "caption": "Cleared and burned forest land near Apuí in the state of Amazonas, Brazil, photographed in August 2020, with standing forest beyond.",
+      "credit": "Photo: Bruno Kelly, Amazônia Real, via Wikimedia Commons, licence Creative Commons Attribution 2.0. Resized.",
+      "sources": [
+        "Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, main report (2025)"
+      ]
+    },
+    "ifl-remaining-2025": {
+      "name": "Intact forest left in 2025",
+      "valueLine": "1,086 million hectares, 2025",
+      "hook": "1,086 million hectares of intact forest landscapes remained in 2025, 8.4 percent of the Earth's ice-free land.",
+      "detail": "These landscapes hold 21 percent of the world's tree cover. More than 90 percent of the area lies in 11 countries: Brazil, Canada, Chile, Colombia, the Democratic Republic of the Congo, Indonesia, Papua New Guinea, Peru, Russia, the United States and Venezuela. The largest tracts are in the Amazon and Congo basins and in the northern boreal forests.",
+      "caption": "Aerial view of the Amazon rainforest in Brazil, photographed on 9 September 2009: an unbroken green canopy with a wide brown river winding through it.",
+      "credit": "Photo: lubasi, via Wikimedia Commons, licence Creative Commons Attribution-ShareAlike 2.0. Resized.",
+      "sources": [
+        "Intact Forest Landscapes mapping team: World's Intact Forest Landscapes, from 2000 to 2025, key findings (2025)"
+      ]
+    },
+    "forest-area-2025": {
+      "name": "All the world's forests",
+      "valueLine": "4,140 million hectares (4.14 billion), 2025",
+      "hook": "Forests cover 4.14 billion hectares, 32 percent of the world's land, or about half a hectare for every person.",
+      "detail": "The Global Forest Resources Assessment 2025 covers 236 countries and areas. Nearly half of the world's forests are in the tropics. On this tab the other squares sit beside this one for scale.",
+      "caption": "Tropical rainforest in Khao Sok, southern Thailand, with misty hills beyond, photographed in 2011.",
+      "credit": "Photo: Vyacheslav Argenberg, via Wikimedia Commons, licence Creative Commons Attribution 4.0. Resized.",
+      "sources": [
+        "Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)"
+      ]
+    },
+    "net-loss-2015-2025": {
+      "name": "Net forest loss each year",
+      "valueLine": "4.12 million hectares a year, 2015 to 2025",
+      "hook": "Once new forest is subtracted from forest cleared, the world lost 4.12 million hectares a year in 2015 to 2025, down from 10.7 million a year in the 1990s.",
+      "detail": "Net loss is deforestation minus forest expansion. In 2015 to 2025 forests spread by planting and natural regrowth on 6.78 million hectares a year, against 10.9 million hectares a year cleared. Both parts are estimated separately and many countries lack data on them, so the assessment asks readers to treat them with caution.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)"
+      ]
+    },
+    "tropical-primary-loss-2024": {
+      "name": "Tropical primary forest lost in 2024",
+      "valueLine": "6.7 million hectares in 2024",
+      "hook": "The tropics lost 6.7 million hectares of primary rainforest in 2024, nearly the size of Panama and more than in any other year in at least two decades.",
+      "detail": "The figure comes from satellite data of the University of Maryland, published by the World Resources Institute. For the first time fire was the largest cause, behind almost half of the loss, and Brazil accounted for 42 percent. This figure measures tree cover loss seen from satellites, including forest killed by fire. That is a different method from the land use figures of the Food and Agriculture Organization of the United Nations on the other marks.",
+      "caption": "A forest clearing in the Amazon foothills of Colombia, photographed on 5 June 2023: a steep hillside with a patch cleared and burned, felled blackened trunks on bare ground and dense forest around it.",
+      "credit": "Photo: Biodiego88, via Wikimedia Commons, licence Creative Commons Attribution 4.0. Resized.",
+      "sources": [
+        "World Resources Institute, Global Forest Review: How much forest was lost in 2024? (21 May 2025)",
+        "World Resources Institute: RELEASE: Global Forest Loss Shatters Records in 2024, Fueled by Massive Fires (21 May 2025)"
+      ]
+    },
+    "gross-deforestation-2015-2025": {
+      "name": "Forest cleared each year, 2015 to 2025",
+      "valueLine": "10.9 million hectares a year, 2015 to 2025",
+      "hook": "In 2015 to 2025 about 10.9 million hectares of forest a year were turned into farmland, roads, towns and other uses.",
+      "detail": "The Food and Agriculture Organization of the United Nations reports that deforestation slowed in every region of the world and still calls this pace too high. In 2000 to 2015 the rate was 13.6 million hectares a year.",
+      "caption": "A cleared patch on a forested mountainside, black and white photograph from the museum collection of the North Cascades National Park Service Complex, United States.",
+      "credit": "Photo: National Park Service of the United States, via Wikimedia Commons, public domain. Resized.",
+      "sources": [
+        "Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)",
+        "Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, main report (2025)"
+      ]
+    },
+    "gross-deforestation-1990-2000": {
+      "name": "Forest cleared each year, 1990 to 2000",
+      "valueLine": "17.6 million hectares a year, 1990 to 2000",
+      "hook": "In the 1990s about 17.6 million hectares of forest a year were cleared for other uses, the fastest of the three periods in the assessment.",
+      "detail": "Set beside the mark for 2015 to 2025, this shows how far the pace of clearing has fallen. Most of the clearing then, as now, was in the tropics.",
+      "caption": "",
+      "credit": "",
+      "sources": [
+        "Food and Agriculture Organization of the United Nations: Global deforestation slows, but forests remain under pressure, FAO report shows (21 October 2025)",
+        "Food and Agriculture Organization of the United Nations: Global Forest Resources Assessment 2025, main report (2025)"
+      ]
+    }
+  }
+}
